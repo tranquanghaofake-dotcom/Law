@@ -50,7 +50,13 @@ def cmd_collect(demo=False):
             for it in rows:
                 if is_near_duplicate(it["text"], recent):
                     continue
-                if db.insert_item(con, it["platform"], it["url"], it["author"], it["text"], it["engagement"], fingerprint(it["text"])):
+                item_id = db.insert_item(con, it["platform"], it["url"], it["author"], it["text"], it["engagement"], fingerprint(it["text"]))
+                if item_id:
+                    if it.get("manual"):
+                        from pipeline.scorer import decide
+                        res = dict(it["manual"])
+                        res["status"] = decide(res)
+                        db.update_item_score(con, item_id, res)
                     recent.append(it["text"])
                     n += 1
             print(f"[collect] {name}: +{n} (đã lọc trùng từ {len(rows)})")

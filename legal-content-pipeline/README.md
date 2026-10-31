@@ -55,7 +55,7 @@ Scriptwriter **chỉ được phép** dùng điều luật có trong kho — đ�
    # LAW: Bộ luật Dân sự 2015 | SOURCE: https://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=...
    ```
    rồi dán nguyên văn bên dưới. Pipeline tự cắt theo `Điều N.`.
-3. Làm tương tự cho BLLĐ 2019, BLHS (bản hợp nhất), BLTTHS 2015, NĐ 21/2021, NĐ 12/2022. Danh sách trong `data/laws/README.md`.
+3. Làm tương tự cho BLLĐ, BLHS, BLTTHS (đều dùng **bản hợp nhất mới nhất**), NĐ 21/2021, NĐ 283/2026 (thay NĐ 12/2022), NĐ 282/2025 (thay NĐ 144/2021). Danh sách trong `data/laws/README.md`.
 4. **Xóa** `data/laws/_mau.txt`, chạy `python run.py init`.
 
 Văn bản QPPL không được bảo hộ quyền tác giả (Điều 15 Luật SHTT), dùng nguyên văn là hợp pháp.
@@ -63,6 +63,12 @@ Văn bản QPPL không được bảo hộ quyền tác giả (Điều 15 Luật
 ## 5. Bật từng nguồn thu thập
 
 Sửa `config.yaml` → `sources.<tên>.enabled: true` và điền key vào `.env`.
+
+### 5.0 Bảng curation thủ công — bật sẵn, nguồn chính theo Brief
+Brief mục 5: curation 15 phút/ngày, **không scrape tự động**. Ghi câu hỏi vào `data/curation/TikTok-Phap-Ly_Curation_v1.csv` (giữ nguyên tiêu đề cột), chấm 3 cột 0/1 như thường lệ.
+- `collect` chỉ nạp dòng `trang_thai = chua` có `link_goc` thật (dòng mẫu `https://...` bị bỏ qua).
+- Trích đoạn > 40 từ bị từ chối kèm cảnh báo — sửa trong CSV, không tự cắt (tránh làm sai ý, Brief mục 3.1).
+- Điểm bạn chấm được giữ nguyên, không gọi LLM chấm lại; `can_cu_du_kien` được đưa vào truy vấn RAG.
 
 ### 5.1 Inbound (Google Form) — bật sẵn, nguồn tốt nhất về dài hạn
 1. Tạo Google Form 1 câu hỏi dài "Gửi câu hỏi pháp lý ẩn danh" (không thu email). Gắn link vào bio TikTok.

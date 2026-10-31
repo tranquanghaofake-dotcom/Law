@@ -66,16 +66,16 @@ def now() -> str:
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
 
 
-def insert_item(con, platform, url, author, text, engagement, fingerprint) -> bool:
-    """Trả về True nếu chèn mới, False nếu trùng."""
+def insert_item(con, platform, url, author, text, engagement, fingerprint):
+    """Trả về id nếu chèn mới, None nếu trùng."""
     try:
-        con.execute(
+        cur = con.execute(
             "INSERT INTO items(fingerprint, platform, url, author, text, engagement, collected_at) VALUES (?,?,?,?,?,?,?)",
             (fingerprint, platform, url, author, text, engagement, now()),
         )
-        return True
+        return cur.lastrowid
     except sqlite3.IntegrityError:
-        return False
+        return None
 
 
 def items(con, status=None, limit=200):

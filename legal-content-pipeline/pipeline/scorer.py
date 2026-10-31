@@ -49,8 +49,21 @@ def _system():
     return SYSTEM.format(audience=CFG["audience"], pillars=pillars)
 
 
-def score_pending(limit: int = 50):
+def decide(res: dict) -> str:
+    """Áp ngưỡng chọn trong config.yaml. Dùng chung cho điểm LLM và điểm chấm tay ở bảng curation."""
     sel = CFG["selection"]
+    for k in ("viral", "audience", "confident"):
+        res[k] = int(bool(res.get(k, 0)))
+    total = res["viral"] + res["audience"] + res["confident"]
+    ok = res.get("is_question", True) and res.get("pillar") != "NONE" and total >= sel["min_total"]
+    if sel["require_confident"] and not res["confident"]:
+        ok = False
+    if res.get("risk_flags"):
+        ok = ok and not ({"ten_that", "vu_dang_xet_xu", "nhay_cam"} & set(res["risk_flags"]))
+    return "selected" if ok else "rejected"
+
+
+def score_pending(limit: int = 50):
     with db.connect() as con:
         rows = db.items(con, status="new", limit=limit)
         print(f"[score] {len(rows)} item cần chấm")
@@ -61,15 +74,7 @@ def score_pending(limit: int = 50):
             except Exception as e:
                 print(f"[score] lỗi item {r['id']}: {e}")
                 continue
-            for k in ("viral", "audience", "confident"):
-                res[k] = int(bool(res.get(k, 0)))
-            total = res["viral"] + res["audience"] + res["confident"]
-            ok = res.get("is_question", True) and res.get("pillar") != "NONE" and total >= sel["min_total"]
-            if sel["require_confident"] and not res["confident"]:
-                ok = False
-            if res.get("risk_flags"):
-                ok = ok and not ({"ten_that", "vu_dang_xet_xu", "nhay_cam"} & set(res["risk_flags"]))
-            res["status"] = "selected" if ok else "rejected"
+            res["status"] = decide(res)
             res["pillar"] = res.get("pillar", "NONE")
             db.update_item_score(con, r["id"], res)
         con.commit()

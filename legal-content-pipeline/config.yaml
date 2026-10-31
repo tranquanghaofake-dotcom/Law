@@ -19,7 +19,11 @@ selection:
   require_confident: true
 
 # ---- Nguồn thu thập ----
+# Brief mục 5: curation thủ công là nguồn chính, không scrape tự động. Bật threads/reddit/youtube = đổi chính sách Brief.
 sources:
+  curation:
+    enabled: true           # bảng curation chấm tay (TikTok-Phap-Ly_Curation_v1.csv), điểm giữ nguyên
+    path: "data/curation"
   threads:
     enabled: false          # bật khi có THREADS_ACCESS_TOKEN
     keywords: ["đặt cọc", "giữ lương", "thử việc", "cho vay", "chuyển khoản nhầm", "lừa đảo", "nghỉ việc", "hợp đồng"]
