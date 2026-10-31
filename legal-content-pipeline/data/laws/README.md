@@ -17,11 +17,12 @@ Pipeline tự cắt theo dòng bắt đầu bằng `Điều N.`.
 
 ## Bộ tối thiểu nên có (theo 3 trụ)
 - `bo-luat-dan-su-2015.txt`
-- `bo-luat-lao-dong-2019.txt`
+- `bo-luat-lao-dong-2019-hop-nhat.txt` (Văn bản hợp nhất 18/VBHN-VPQH ngày 12/02/2026)
 - `bo-luat-hinh-su-2015-hop-nhat.txt` (Văn bản hợp nhất 135/VBHN-VPQH ngày 05/9/2025 — đã gồm Luật 12/2017/QH14, Luật 59/2024/QH15 và Luật 86/2025/QH15)
-- `bo-luat-to-tung-hinh-su-2015.txt`
+- `bo-luat-to-tung-hinh-su-2015-hop-nhat.txt` (bản hợp nhất mới nhất, đã gồm Luật 99/2025/QH15 — VBHN 17/VBHN-VPQH năm 2026)
 - `nghi-dinh-21-2021.txt` (bảo đảm thực hiện nghĩa vụ)
-- `nghi-dinh-12-2022.txt` (xử phạt hành chính lao động)
+- `nghi-dinh-283-2026.txt` (xử phạt hành chính lao động, BHXH — thay NĐ 12/2022 từ 10/9/2026)
+- `nghi-dinh-282-2025.txt` (xử phạt hành chính an ninh, trật tự — thay NĐ 144/2021 từ 15/12/2025; cần cho trụ T3)
 - `luat-bhxh-2024.txt`
 
 File `_mau.txt` chỉ để chạy demo — **xóa khi đã có văn bản thật**.

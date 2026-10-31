@@ -5,7 +5,8 @@ Phiên bản 1 · 31/10/2026
 - Các "câu hỏi" dưới đây là **câu hỏi mẫu** viết theo dạng rất phổ biến trên Threads/Facebook. Khi curation có câu hỏi thật, thay vào khối [TRÍCH] và ghi nguồn; giữ nguyên phần căn cứ.
 - Căn cứ đã được chọn ở mức mình chắc, nhưng **bạn vẫn phải tự kiểm tra lại nguyên văn và hiệu lực** trước khi quay — đây là kỹ năng nghề, và kênh đứng tên bạn.
 - Mỗi kịch bản ~200–230 từ ≈ 60–75 giây đọc với tốc độ vừa. Chữ in đậm = hiện text trên màn hình.
-- Viết tắt: BLDS = Bộ luật Dân sự 2015; BLLĐ = Bộ luật Lao động 2019; BLHS = Bộ luật Hình sự 2015 (sđ 2017).
+- Viết tắt: BLDS = Bộ luật Dân sự 2015; BLLĐ = Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH năm 2026); BLHS = Bộ luật Hình sự 2015 (sđ 2017, 2024, 2025 — VBHN 135/VBHN-VPQH năm 2025); BLTTHS = Bộ luật Tố tụng hình sự 2015 (sđ 2025).
+- Rà soát căn cứ lần 1: 31/10/2026 — chi tiết và nguồn ở `TikTok-Phap-Ly_Report_v1.md`. Chỗ ghi **[KIỂM TRA]** là chưa đối chiếu được nguyên văn, bắt buộc tra trước khi quay.
 
 **Disclaimer cuối mọi video (đọc nhanh + chữ nhỏ):** *Mình là sinh viên Luật, đây là thông tin chung, không phải tư vấn cho trường hợp cụ thể.*
 
@@ -35,7 +36,7 @@ Nhưng có một điểm: khoản tiền đó có phải là "cọc" không? **�
 
 **Căn cứ:** **Điều 48 BLLĐ 2019**: khi chấm dứt hợp đồng, trong **14 ngày làm việc** hai bên phải thanh toán đầy đủ các khoản liên quan, trường hợp đặc biệt cũng **không quá 30 ngày**. "Tìm được người mới" không phải trường hợp đặc biệt. Ngoài ra **Điều 94 BLLĐ** buộc trả lương đầy đủ, đúng hạn; **Điều 17 BLLĐ** cấm doanh nghiệp buộc người lao động bảo đảm bằng tiền.
 
-**Kết luận:** Bước 1: gửi email/tin nhắn yêu cầu thanh toán, nêu Điều 48, cho thời hạn 7 ngày — để có chứng cứ. Bước 2: không trả → gửi đơn đến Phòng Lao động – Thương binh và Xã hội nơi công ty đóng trụ sở, hoặc khởi kiện tại Tòa án (tranh chấp tiền lương **không bắt buộc** hòa giải trước, **Điều 188 BLLĐ**). Chi phí gần như bằng 0, và công ty thường trả ngay khi nhận được đơn.
+**Kết luận:** Bước 1: gửi email/tin nhắn yêu cầu thanh toán, nêu Điều 48, cho thời hạn 7 ngày — để có chứng cứ. Bước 2: không trả → gửi đơn đến **Sở Nội vụ** tỉnh/thành nơi công ty đóng trụ sở (Sở Lao động – Thương binh và Xã hội đã hợp nhất vào Sở Nội vụ). Bước 3: muốn ra Tòa thì tranh chấp tiền lương **phải qua hòa giải viên lao động trước** (**Điều 188 BLLĐ**); hòa giải không thành, hoặc quá 5 ngày làm việc mà không được hòa giải, mới khởi kiện. Chi phí gần như bằng 0, và công ty thường trả ngay khi nhận được đơn.
 
 **CTA:** 10 câu về chấm dứt hợp đồng lao động — link bio.
 
@@ -115,9 +116,9 @@ Ngược lại: người chuyển nhầm cho bạn **không có quyền** bắt 
 
 **[TRÍCH]:** *"Chuyển 2 triệu mua điện thoại cũ qua Facebook, người bán block. Công an có nhận đơn vụ nhỏ không?"*
 
-**Căn cứ:** **Điều 174 BLHS** tội lừa đảo chiếm đoạt tài sản, cấu thành từ **2 triệu đồng** trở lên; dưới 2 triệu vẫn xử nếu thuộc một số trường hợp (đã bị phạt hành chính, gây ảnh hưởng xấu…). Dưới mức này thì xử phạt hành chính theo **Nghị định 144/2021**. Về thủ tục, **Điều 144 và 145 BLTTHS**: mọi tố giác đều **phải được tiếp nhận**, cơ quan không được từ chối vì "vụ nhỏ".
+**Căn cứ:** **Điều 174 BLHS** tội lừa đảo chiếm đoạt tài sản, cấu thành từ **2 triệu đồng** trở lên; dưới 2 triệu vẫn xử nếu thuộc một số trường hợp (đã bị phạt hành chính, gây ảnh hưởng xấu…). Dưới mức này thì xử phạt hành chính theo **Nghị định 282/2025/NĐ-CP** (thay Nghị định 144/2021 từ 15/12/2025) **[KIỂM TRA số điều]**. Về thủ tục, **Điều 144 và 145 BLTTHS**: mọi tố giác đều **phải được tiếp nhận**, cơ quan không được từ chối vì "vụ nhỏ".
 
-**Kết luận:** Gom: ảnh trang bán, tin nhắn, lịch sử chuyển khoản, số tài khoản nhận tiền. Nộp đơn tố giác tại Công an xã/phường nơi bạn ở — họ phải nhận và chuyển đúng thẩm quyền. Đồng thời báo ngân hàng số tài khoản đó. Một mình bạn 2 triệu là nhỏ; cộng 50 người cùng tài khoản nhận tiền thì đó là một vụ án.
+**Kết luận:** Gom: ảnh trang bán, tin nhắn, lịch sử chuyển khoản, số tài khoản nhận tiền. Nộp đơn tố giác tại Công an cấp xã (xã, phường, đặc khu) nơi bạn ở — họ phải nhận và chuyển đúng thẩm quyền. Đồng thời báo ngân hàng số tài khoản đó. Một mình bạn 2 triệu là nhỏ; cộng 50 người cùng tài khoản nhận tiền thì đó là một vụ án.
 
 ---
 
@@ -127,9 +128,9 @@ Ngược lại: người chuyển nhầm cho bạn **không có quyền** bắt 
 
 **[TRÍCH]:** *"Công ty ký với mình hợp đồng cộng tác viên, làm full-time 8 tiếng, chấm công, có quản lý. Vậy có được đóng bảo hiểm không?"*
 
-**Căn cứ:** **Khoản 1 Điều 13 BLLĐ**: thỏa thuận có nội dung **việc làm có trả công, tiền lương và sự quản lý, điều hành, giám sát** của một bên thì **được coi là hợp đồng lao động**, dù hai bên gọi bằng tên gì. Ba dấu hiệu: làm việc có trả lương + chịu quản lý + theo giờ/nội quy. Đã là hợp đồng lao động thì công ty phải đóng BHXH, BHYT, BHTN cho bạn (**Luật BHXH**), trả lương làm thêm, cho nghỉ phép năm.
+**Căn cứ:** **Khoản 1 Điều 13 BLLĐ**: thỏa thuận có nội dung **việc làm có trả công, tiền lương và sự quản lý, điều hành, giám sát** của một bên thì **được coi là hợp đồng lao động**, dù hai bên gọi bằng tên gì. Ba dấu hiệu: làm việc có trả lương + chịu quản lý + theo giờ/nội quy. Đã là hợp đồng lao động thì công ty phải đóng BHXH, BHYT, BHTN cho bạn (**Luật BHXH 2024**), trả lương làm thêm, cho nghỉ phép năm.
 
-**Kết luận:** Giữ bảng chấm công, lịch làm việc, tin nhắn giao việc. Yêu cầu ký đúng hợp đồng lao động; từ chối thì khiếu nại đến Thanh tra lao động. Cộng tác viên thật là người tự chủ công việc, không ai chấm công họ.
+**Kết luận:** Giữ bảng chấm công, lịch làm việc, tin nhắn giao việc. Yêu cầu ký đúng hợp đồng lao động; từ chối thì gửi đơn đến **Sở Nội vụ** nơi công ty đóng trụ sở. Cộng tác viên thật là người tự chủ công việc, không ai chấm công họ.
 
 ---
 
@@ -139,9 +140,9 @@ Ngược lại: người chuyển nhầm cho bạn **không có quyền** bắt 
 
 **[TRÍCH]:** *"Công ty yêu cầu nộp bằng đại học bản gốc và cọc 5 triệu mới được đi làm. Bình thường không?"*
 
-**Căn cứ:** **Điều 17 BLLĐ 2019** cấm người sử dụng lao động: (1) **giữ bản chính** giấy tờ tùy thân, văn bằng, chứng chỉ; (2) **yêu cầu bảo đảm bằng tiền** hoặc tài sản khác cho việc thực hiện hợp đồng. Vi phạm bị phạt tiền và **buộc trả lại** giấy tờ, tiền (**Nghị định 12/2022/NĐ-CP, Điều 9**).
+**Căn cứ:** **Điều 17 BLLĐ 2019** cấm người sử dụng lao động: (1) **giữ bản chính** giấy tờ tùy thân, văn bằng, chứng chỉ; (2) **yêu cầu bảo đảm bằng tiền** hoặc tài sản khác cho việc thực hiện hợp đồng. Vi phạm bị phạt tiền và **buộc trả lại** giấy tờ, tiền (**Nghị định 283/2026/NĐ-CP**, thay Nghị định 12/2022 từ 10/9/2026 — **[KIỂM TRA số điều]**, nguồn thứ cấp ghi điểm a khoản 2 Điều 15).
 
-**Kết luận:** Chưa nộp: từ chối, chỉ nộp **bản sao công chứng**. Đã nộp: yêu cầu trả lại bằng văn bản; không trả → khiếu nại Thanh tra Sở LĐ-TB&XH, kèm biên nhận hoặc tin nhắn chứng minh đã nộp. Một công ty đòi giữ bằng gốc thường còn những điều khác sai — cân nhắc cả nơi làm việc.
+**Kết luận:** Chưa nộp: từ chối, chỉ nộp **bản sao có chứng thực**. Đã nộp: yêu cầu trả lại bằng văn bản; không trả → gửi đơn đến **Sở Nội vụ** nơi công ty đóng trụ sở, kèm biên nhận hoặc tin nhắn chứng minh đã nộp. Một công ty đòi giữ bằng gốc thường còn những điều khác sai — cân nhắc cả nơi làm việc.
 
 ---
 
