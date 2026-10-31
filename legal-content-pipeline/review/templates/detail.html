@@ -1,0 +1,40 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><title>#{{s.id}} {{s.title}}</title>
+<style>
+body{font-family:system-ui,sans-serif;max-width:900px;margin:2rem auto;padding:0 1rem;color:#222}
+textarea{width:100%;min-height:90px;font:inherit;padding:.5rem}label{display:block;margin-top:1rem;font-weight:600}
+.cite{background:#fff8e1;border-left:4px solid #f0b400;padding:.5rem .8rem;margin:.4rem 0}
+.warn{background:#fdecea;border-left:4px solid #d93025;padding:.5rem .8rem}
+button{padding:.6rem 1.2rem;margin-right:.5rem;font:inherit}.ok{background:#1a7f37;color:#fff}.no{background:#d93025;color:#fff}
+.meta{color:#666;font-size:.85rem}.card{border:1px solid #ddd;border-radius:6px;padding:.5rem .8rem;margin:.4rem 0;font-size:.9rem}
+</style></head><body>
+<p><a href="/">← danh sách</a></p>
+<h2>#{{s.id}} · {{s.pillar}} · {{s.title}}</h2>
+<p class="meta">Nguồn: {{s.item_platform}} · <a href="{{s.item_url}}" target="_blank" rel="noopener">bài gốc</a> · tác giả: {{s.item_author}} (che khi lên video) · {{s.word_count}} từ</p>
+
+<div class="warn"><b>Checklist trước khi duyệt:</b> (1) mở từng điều luật bên dưới, đối chiếu <u>số điều, văn bản, năm, con số</u>;
+(2) văn bản còn hiệu lực?; (3) trích đoạn ≤ 40 từ, không tên riêng; (4) kết luận có 2–3 bước hành động; (5) không phán "có tội".</div>
+
+<h3>Căn cứ ({{s.citations_list|length}})</h3>
+{% for c in s.citations_list %}
+<div class="cite"><b>Điều {{c.article}} {{c.law}} {{c.year}}</b>{% if c.source %} — <a href="{{c.source}}" target="_blank" rel="noopener">văn bản gốc</a>{% endif %}<br><i>{{c.excerpt}}</i></div>
+{% endfor %}
+
+<form method="post">
+<label>Trích đoạn (cố định)</label><div class="card">"{{s.quote}}"</div>
+<label>Hook</label><textarea name="hook">{{s.hook}}</textarea>
+<label>Căn cứ (lời đọc)</label><textarea name="basis" style="min-height:160px">{{s.basis}}</textarea>
+<label>Kết luận + hành động</label><textarea name="conclusion" style="min-height:120px">{{s.conclusion}}</textarea>
+<label>CTA</label><textarea name="cta" style="min-height:50px">{{s.cta}}</textarea>
+<label>Ghi chú duyệt</label><textarea name="note" style="min-height:50px">{{s.review_note or ''}}</textarea>
+<p style="margin-top:1rem">
+ <button class="ok" name="action" value="approve">✔ Duyệt → render</button>
+ <button name="action" value="save">Lưu sửa</button>
+ <button class="no" name="action" value="reject">✖ Loại</button>
+</p>
+</form>
+
+<h3>Thẻ web sinh kèm ({{s.cards_list|length}})</h3>
+{% for c in s.cards_list %}
+<div class="card"><b>[{{c.type}}]</b> {{c.front or c.question}}{% if c.options %}<br>{% for o in c.options %}{{loop.index0}}. {{o}}<br>{% endfor %}→ đáp án {{c.answer}}: {{c.explain}}{% else %}<br>→ {{c.back}}{% endif %}<br><span class="meta">{{c.citation}}</span></div>
+{% endfor %}
+</body></html>

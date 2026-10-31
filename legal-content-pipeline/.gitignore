@@ -1,0 +1,9 @@
+.env
+data/pipeline.db
+data/law_index.json
+data/laws/*.txt
+!data/laws/_mau.txt
+out/
+__pycache__/
+.venv/
+*.pyc

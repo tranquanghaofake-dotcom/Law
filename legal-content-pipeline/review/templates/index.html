@@ -1,0 +1,21 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><title>Duyệt kịch bản</title>
+<style>
+body{font-family:system-ui,sans-serif;max-width:900px;margin:2rem auto;padding:0 1rem;color:#222}
+a{color:#0b5fff}.tabs a{margin-right:1rem}.tabs .on{font-weight:700}
+.card{border:1px solid #ddd;border-radius:8px;padding:.8rem 1rem;margin:.6rem 0}
+.meta{color:#666;font-size:.85rem}.pill{background:#eef;border-radius:4px;padding:0 .4rem;font-size:.8rem}
+</style></head><body>
+<h2>Cổng duyệt — 10 phút/ngày</h2>
+<p class="tabs">
+ <a class="{{'on' if status=='pending'}}" href="/?status=pending">Chờ duyệt ({{counts.pending}})</a>
+ <a class="{{'on' if status=='approved'}}" href="/?status=approved">Đã duyệt ({{counts.approved}})</a>
+ <a class="{{'on' if status=='rejected'}}" href="/?status=rejected">Loại ({{counts.rejected}})</a>
+</p>
+{% for r in rows %}
+<div class="card">
+ <div><span class="pill">{{r.pillar}}</span> <a href="/s/{{r.id}}"><b>#{{r.id}} {{r.title}}</b></a></div>
+ <div>{{r.hook}}</div>
+ <div class="meta">{{r.word_count}} từ · nguồn: {{r.item_platform}} · {{r.created_at}}{% if r.review_note %} · ghi chú: {{r.review_note}}{% endif %}</div>
+</div>
+{% else %}<p>Không có kịch bản nào. Chạy <code>python run.py daily</code>.</p>{% endfor %}
+</body></html>
