@@ -1,0 +1,139 @@
+{
+  "id": "pldc-vi-pham-phap-luat",
+  "group": "pldc",
+  "title": "Vi phạm pháp luật & trách nhiệm pháp lý",
+  "subtitle": "Dấu hiệu, các loại lỗi, tuổi chịu trách nhiệm hình sự và hành chính",
+  "updated": "2026-10-31",
+  "questions": [
+    {
+      "q": "Dấu hiệu nào sau đây KHÔNG phải dấu hiệu bắt buộc của mọi vi phạm pháp luật?",
+      "options": [
+        "Là hành vi trái pháp luật",
+        "Có lỗi của chủ thể",
+        "Gây ra thiệt hại về vật chất",
+        "Do chủ thể có năng lực trách nhiệm pháp lý thực hiện"
+      ],
+      "answer": 2,
+      "explain": "Vi phạm pháp luật là hành vi trái pháp luật, có lỗi, do chủ thể có năng lực trách nhiệm pháp lý thực hiện. Nhiều vi phạm không gây thiệt hại vật chất (ví dụ vượt đèn đỏ khi đường vắng) nhưng vẫn là vi phạm.",
+      "basis": "Lý luận chung về Nhà nước và pháp luật",
+      "url": ""
+    },
+    {
+      "q": "A nghĩ trong đầu về việc trộm xe của hàng xóm nhưng không làm gì. A có vi phạm pháp luật không?",
+      "options": [
+        "Có, vì đã có ý định phạm tội",
+        "Có, nếu kể với người khác",
+        "Không, vì vi phạm pháp luật phải là hành vi (hành động hoặc không hành động)",
+        "Chỉ vi phạm đạo đức, bị xử phạt hành chính"
+      ],
+      "answer": 2,
+      "explain": "Pháp luật chỉ điều chỉnh hành vi. Suy nghĩ, ý định chưa thể hiện ra bằng hành vi thì không phải vi phạm pháp luật.",
+      "basis": "Lý luận chung về Nhà nước và pháp luật",
+      "url": ""
+    },
+    {
+      "q": "Người thực hiện nhận thức rõ hành vi của mình là nguy hiểm cho xã hội, thấy trước hậu quả và mong muốn hậu quả xảy ra. Đây là lỗi gì?",
+      "options": [
+        "Cố ý trực tiếp",
+        "Cố ý gián tiếp",
+        "Vô ý vì quá tự tin",
+        "Vô ý do cẩu thả"
+      ],
+      "answer": 0,
+      "explain": "Điểm phân biệt của cố ý trực tiếp là \"mong muốn hậu quả xảy ra\". Cố ý gián tiếp thì không mong muốn nhưng có ý thức để mặc cho hậu quả xảy ra.",
+      "basis": "Khoản 1 Điều 10 BLHS 2015",
+      "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Bo-luat-hinh-su-2015-296661.aspx?anchor=dieu_10"
+    },
+    {
+      "q": "B giăng dây điện quanh vườn để chống trộm, biết người đi qua có thể bị điện giật nhưng mặc kệ. Một người bị giật chết. Lỗi của B là gì?",
+      "options": [
+        "Cố ý trực tiếp",
+        "Cố ý gián tiếp",
+        "Vô ý vì quá tự tin",
+        "Không có lỗi vì chỉ muốn chống trộm"
+      ],
+      "answer": 1,
+      "explain": "B thấy trước hậu quả có thể xảy ra, không mong muốn nhưng có ý thức để mặc cho hậu quả xảy ra, nên đây là lỗi cố ý gián tiếp. Mục đích \"chống trộm\" không loại trừ lỗi.",
+      "basis": "Khoản 2 Điều 10 BLHS 2015",
+      "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Bo-luat-hinh-su-2015-296661.aspx?anchor=dieu_10"
+    },
+    {
+      "q": "Tài xế thấy có thể va chạm với người đi bộ nhưng tin rằng mình phanh kịp, và rồi gây tai nạn. Đây là lỗi gì?",
+      "options": [
+        "Cố ý gián tiếp",
+        "Vô ý do cẩu thả",
+        "Vô ý vì quá tự tin",
+        "Sự kiện bất ngờ"
+      ],
+      "answer": 2,
+      "explain": "Vô ý vì quá tự tin: thấy trước hành vi có thể gây hậu quả nhưng cho rằng hậu quả sẽ không xảy ra hoặc có thể ngăn ngừa được. Vô ý do cẩu thả là không thấy trước hậu quả, dù phải thấy trước và có thể thấy trước.",
+      "basis": "Điều 11 BLHS 2015",
+      "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Bo-luat-hinh-su-2015-296661.aspx?anchor=dieu_11"
+    },
+    {
+      "q": "Theo BLHS hiện hành, người từ bao nhiêu tuổi phải chịu trách nhiệm hình sự về mọi tội phạm (trừ những tội Bộ luật quy định khác)?",
+      "options": [
+        "Từ đủ 14 tuổi",
+        "Từ đủ 16 tuổi",
+        "Từ đủ 18 tuổi",
+        "Từ đủ 12 tuổi"
+      ],
+      "answer": 1,
+      "explain": "Người từ đủ 16 tuổi trở lên phải chịu trách nhiệm hình sự về mọi tội phạm, trừ những tội phạm mà Bộ luật có quy định khác.",
+      "basis": "Khoản 1 Điều 12 BLHS 2015 (sđ 2017)",
+      "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Bo-luat-hinh-su-2015-296661.aspx?anchor=dieu_12"
+    },
+    {
+      "q": "Người từ đủ 14 tuổi đến dưới 16 tuổi chịu trách nhiệm hình sự trong trường hợp nào?",
+      "options": [
+        "Về mọi tội phạm",
+        "Chỉ về tội phạm ít nghiêm trọng",
+        "Về tội phạm rất nghiêm trọng, đặc biệt nghiêm trọng thuộc các điều được liệt kê tại khoản 2 Điều 12",
+        "Không bao giờ chịu trách nhiệm hình sự"
+      ],
+      "answer": 2,
+      "explain": "Nhóm tuổi này chỉ chịu trách nhiệm hình sự khi thỏa cả hai điều kiện: tội phạm rất nghiêm trọng hoặc đặc biệt nghiêm trọng, và thuộc danh sách điều luật liệt kê (giết người, cố ý gây thương tích, cướp, trộm cắp…).",
+      "basis": "Khoản 2 Điều 12 BLHS 2015 (sđ 2017)",
+      "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Bo-luat-hinh-su-2015-296661.aspx?anchor=dieu_12"
+    },
+    {
+      "q": "Một bạn 15 tuổi thực hiện một vi phạm hành chính do VÔ Ý. Bạn đó có bị xử phạt vi phạm hành chính không?",
+      "options": [
+        "Có, như người thành niên",
+        "Không, vì người từ đủ 14 đến dưới 16 tuổi chỉ bị xử phạt về vi phạm hành chính do cố ý",
+        "Có, nhưng cha mẹ phải nộp phạt gấp đôi",
+        "Bị truy cứu trách nhiệm hình sự thay thế"
+      ],
+      "answer": 1,
+      "explain": "Người từ đủ 14 tuổi đến dưới 16 tuổi chỉ bị xử phạt về vi phạm hành chính do cố ý; người từ đủ 16 tuổi trở lên bị xử phạt về mọi vi phạm hành chính.",
+      "basis": "Điểm a khoản 1 Điều 5 Luật Xử lý vi phạm hành chính",
+      "url": "https://thuvienphapluat.vn/van-ban/Vi-pham-hanh-chinh/Luat-xu-ly-vi-pham-hanh-chinh-2012-142766.aspx?anchor=dieu_5"
+    },
+    {
+      "q": "Một hành vi vi phạm hành chính bị xử phạt bao nhiêu lần?",
+      "options": [
+        "Mỗi cơ quan phát hiện được xử phạt một lần",
+        "Tối đa hai lần",
+        "Tùy mức độ thiệt hại",
+        "Chỉ bị xử phạt một lần"
+      ],
+      "answer": 3,
+      "explain": "Nguyên tắc: một hành vi vi phạm hành chính chỉ bị xử phạt một lần. Nhiều người cùng thực hiện một hành vi thì mỗi người đều bị xử phạt; một người thực hiện nhiều hành vi thì bị xử phạt về từng hành vi.",
+      "basis": "Điểm d khoản 1 Điều 3 Luật Xử lý vi phạm hành chính",
+      "url": "https://thuvienphapluat.vn/van-ban/Vi-pham-hanh-chinh/Luat-xu-ly-vi-pham-hanh-chinh-2012-142766.aspx?anchor=dieu_3"
+    },
+    {
+      "q": "Theo cách phân loại phổ biến trong giáo trình, vi phạm pháp luật gồm những loại nào?",
+      "options": [
+        "Hình sự, hành chính, dân sự, kỷ luật",
+        "Hình sự, dân sự, đạo đức, tôn giáo",
+        "Cố ý, vô ý, bất ngờ, bất khả kháng",
+        "Nghiêm trọng, ít nghiêm trọng, đặc biệt nghiêm trọng"
+      ],
+      "answer": 0,
+      "explain": "Tương ứng là bốn loại trách nhiệm pháp lý: hình sự, hành chính, dân sự, kỷ luật. Phương án D là cách phân loại tội phạm (Điều 9 BLHS), không phải phân loại vi phạm pháp luật nói chung.",
+      "basis": "Lý luận chung về Nhà nước và pháp luật",
+      "url": ""
+    }
+  ]
+}
