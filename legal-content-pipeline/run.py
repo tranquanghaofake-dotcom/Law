@@ -6,7 +6,9 @@
   python run.py score                # chấm điểm item mới (LLM)
   python run.py write                # soạn kịch bản cho item 'selected' (LLM + RAG)
   python run.py review               # mở giao diện duyệt http://127.0.0.1:8765
-  python run.py render               # render kịch bản đã duyệt (MoneyPrinterTurbo)
+  python run.py import-md <file.md>  # nhập kịch bản viết tay (định dạng docs/TikTok-Phap-Ly_Script_v1.md) để duyệt
+  python run.py render               # dựng kịch bản đã duyệt: bộ ảnh TikTok (carousel) hoặc video MPT
+  python run.py export-web           # đưa câu trắc nghiệm của kịch bản đã duyệt lên web/ và dựng lại catalog
   python run.py publish              # xuất hàng đợi đăng / gọi TikTok API
   python run.py mark-published <id>
   python run.py daily                # collect → score → write (chạy bằng cron)
@@ -96,6 +98,13 @@ def main():
     elif cmd == "render":
         from pipeline.render import render_approved
         render_approved(wait="--nowait" not in sys.argv)
+    elif cmd == "import-md":
+        from pipeline.importmd import import_markdown
+        db.init()
+        import_markdown(sys.argv[2])
+    elif cmd == "export-web":
+        from pipeline.webexport import export_web
+        export_web()
     elif cmd == "publish":
         from pipeline.publish import publish_queue
         publish_queue()

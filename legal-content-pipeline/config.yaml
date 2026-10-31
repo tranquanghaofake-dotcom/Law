@@ -19,21 +19,22 @@ selection:
   require_confident: true
 
 # ---- Nguồn thu thập ----
-# Brief mục 5: curation thủ công là nguồn chính, không scrape tự động. Bật threads/reddit/youtube = đổi chính sách Brief.
+# Curation tay vẫn là nguồn chính; từ 31/10/2026 bật thêm API chính thức (Threads, Reddit, YouTube) — collector nào
+# chưa có key/token trong .env sẽ tự bỏ qua. Reddit: free tier dành cho mục đích phi thương mại, đọc Data API Terms.
 sources:
   curation:
     enabled: true           # bảng curation chấm tay (TikTok-Phap-Ly_Curation_v1.csv), điểm giữ nguyên
     path: "data/curation"
   threads:
-    enabled: false          # bật khi có THREADS_ACCESS_TOKEN
+    enabled: true           # cần THREADS_ACCESS_TOKEN; tìm theo từ khóa cần App Review của Meta
     keywords: ["đặt cọc", "giữ lương", "thử việc", "cho vay", "chuyển khoản nhầm", "lừa đảo", "nghỉ việc", "hợp đồng"]
   reddit:
-    enabled: false          # bật khi có REDDIT_CLIENT_ID/SECRET
+    enabled: true           # cần REDDIT_CLIENT_ID/SECRET
     subreddits: ["VietNam", "vozforums"]
     keywords: ["luật", "hợp đồng", "công ty", "cọc", "vay"]
     limit: 50
   youtube:
-    enabled: false          # bật khi có YOUTUBE_API_KEY
+    enabled: true           # cần YOUTUBE_API_KEY + channel_ids bên dưới
     channel_ids: []         # ID kênh luật lớn (UC...), comment dưới video của họ là mỏ câu hỏi
     max_videos_per_channel: 5
     max_comments_per_video: 100
@@ -52,13 +53,23 @@ llm:
   model: "gpt-4o-mini"      # đổi theo nhà cung cấp; Ollama: "qwen2.5:14b"
   temperature: 0.3
 
-# ---- Render (MoneyPrinterTurbo REST API) ----
+# ---- Dựng nội dung ----
 render:
+  mode: "carousel"          # carousel = bộ ảnh TikTok dạng lướt (mặc định); mpt = video qua MoneyPrinterTurbo
   mpt_base_url: "http://localhost:8080"
   voice_name: "vi-VN-HoaiMyNeural"   # Edge TTS, miễn phí
   video_aspect: "9:16"
   subtitle_enabled: true
   bgm: true
+
+carousel:
+  author: "Trần Quang Hào · SV Luật Kinh tế"   # hiện trên đầu mỗi ảnh nếu chưa có handle
+  handle: ""                # vd "@tenkenh" — đặt khi đã có kênh TikTok
+  default_cta: "Luyện 10 câu về chủ đề này ở link bio."
+  disclaimer: "Mình là sinh viên Luật. Đây là thông tin chung, không phải tư vấn pháp lý cho trường hợp cụ thể."
+
+web:
+  dir: "../web"             # thư mục web trắc nghiệm (so với legal-content-pipeline/)
 
 # ---- Đăng ----
 publish:

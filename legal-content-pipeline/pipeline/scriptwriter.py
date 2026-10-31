@@ -18,6 +18,8 @@ QUY TẮC CỨNG:
 3. Phần quote: giữ nguyên trích đoạn được cấp, không thêm tên riêng.
 4. Kết luận phải có 2–3 bước hành động cụ thể.
 5. Không khẳng định "người này có tội". Không nhắc tên thật, tên công ty.
+6. "cards": đúng 10 câu trắc nghiệm cho web luyện tập, mỗi câu 4 phương án, chỉ 1 đáp án đúng ("answer" là chỉ số 0–3,
+   phân bố đều các vị trí), "explain" ≤ 2 câu, "citation" ghi điểm/khoản/điều + văn bản lấy từ CĂN CỨ ĐƯỢC CUNG CẤP.
 
 Trả về JSON:
 {{
@@ -30,8 +32,7 @@ Trả về JSON:
  "cta": "1 câu CTA về web, nhắc chủ đề thẻ",
  "citations": [{{"article":"328","law":"Bộ luật Dân sự","year":"2015","excerpt":"<=1 câu nguyên văn"}}],
  "cards": [
-   {{"type":"cloze","front":"Điều ... : ... {{{{c1::...}}}} ...","back":"...","citation":"Điều ... BLDS 2015"}},
-   {{"type":"mcq","question":"mini tình huống 1-2 câu","options":["A","B","C","D"],"answer":0,"explain":"...","citation":"..."}}
+   {{"type":"mcq","question":"mini tình huống 1-2 câu","options":["...","...","...","..."],"answer":2,"explain":"...","citation":"Khoản 2 Điều 328 BLDS 2015"}}
  ]
 }}
 Chỉ trả JSON."""

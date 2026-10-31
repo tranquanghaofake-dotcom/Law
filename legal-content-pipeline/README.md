@@ -1,13 +1,13 @@
 # legal-content-pipeline
 
-Tự động hóa 90% quy trình: **thu thập câu hỏi pháp lý thật → chấm điểm theo trụ → soạn kịch bản có căn cứ (RAG trên văn bản luật) → BẠN DUYỆT 10 phút/ngày → render video → hàng đợi đăng → sinh thẻ cho web học Luật.**
+Tự động hóa quy trình: **thu thập câu hỏi pháp lý thật → chấm điểm theo trụ → soạn kịch bản có căn cứ (RAG trên văn bản luật) → BẠN DUYỆT 10 phút/ngày → dựng bộ ảnh TikTok dạng lướt → hàng đợi đăng → 10 câu trắc nghiệm lên web luyện tập (`../web`).**
 
 Chỉ dùng API chính thức hoặc nguồn công khai được phép. Không dùng cookie tài khoản cá nhân, không cào Facebook.
 
 ```
-collect ──► score (LLM) ──► write (LLM + RAG) ──► [REVIEW: bạn] ──► render (MoneyPrinterTurbo) ──► publish
+collect ──► score (LLM) ──► write (LLM + RAG) ──► [REVIEW: bạn] ──► render (carousel ảnh) ──► publish
    │                                                   │
- Threads API · Reddit API · YouTube API · RSS · Form     └──► thẻ cloze/MCQ cho web (out/*.cards.json)
+ Curation tay · Threads · Reddit · YouTube · RSS · Form  └──► export-web: 10 câu trắc nghiệm/video → ../web
 ```
 
 ---
@@ -88,7 +88,7 @@ Brief mục 5: curation 15 phút/ngày, **không scrape tự động**. Ghi câu
 ### 5.4 Reddit API
 1. https://www.reddit.com/prefs/apps → create app → type **script** → lấy client_id (dưới tên app) và secret.
 2. `.env`: `REDDIT_CLIENT_ID`, `REDDIT_CLIENT_SECRET`, `REDDIT_USER_AGENT`.
-3. **Lưu ý ToS**: free tier dành cho mục đích phi thương mại. Kênh có mục đích thương hiệu/kiếm tiền nằm ở vùng xám — đọc Reddit Data API Terms và tự quyết; mình để `enabled: false` mặc định.
+3. **Lưu ý ToS**: free tier dành cho mục đích phi thương mại. Kênh có mục đích thương hiệu/kiếm tiền nằm ở vùng xám — đọc Reddit Data API Terms. Collector đang bật nhưng tự bỏ qua khi `.env` chưa có key.
 
 ### 5.5 YouTube Data API (chính thống, miễn phí, 10.000 unit/ngày)
 1. https://console.cloud.google.com → New project → APIs & Services → Enable **YouTube Data API v3** → Credentials → API key.
@@ -100,8 +100,9 @@ Brief mục 5: curation 15 phút/ngày, **không scrape tự động**. Ghi câu
 ```bash
 python run.py daily     # collect → score → write (3–10 phút tùy LLM)
 python run.py review    # bạn duyệt 10 phút: đối chiếu căn cứ, sửa lời, bấm Duyệt/Loại
-python run.py render    # gửi kịch bản đã duyệt sang MoneyPrinterTurbo (xem mục 7)
-python run.py publish   # xuất out/publish_queue.csv (caption + hashtag + đường dẫn video)
+python run.py render    # dựng bộ ảnh TikTok cho kịch bản đã duyệt → out/carousel/script_XXXX/ (xem mục 7)
+python run.py export-web  # đưa 10 câu trắc nghiệm của mỗi kịch bản đã duyệt lên ../web (xem mục 9)
+python run.py publish   # xuất out/publish_queue.csv (caption + hashtag + thư mục ảnh)
 python run.py mark-published <id>   # sau khi đăng tay
 ```
 
@@ -114,7 +115,17 @@ Hoặc n8n (self-host): Schedule → Execute Command `python run.py daily` → T
 
 **Checklist duyệt (hiện ngay trong giao diện):** mở từng điều luật, đối chiếu số điều/văn bản/năm/con số; còn hiệu lực?; trích đoạn ≤ 40 từ, không tên riêng; 2–3 bước hành động; không phán "có tội". Đây là 10% không tự động — và là thứ giữ uy tín kênh.
 
-## 7. Render video — MoneyPrinterTurbo
+## 7. Dựng nội dung — bộ ảnh TikTok dạng lướt (mặc định)
+`render.mode: carousel` — không cần Docker hay API key. Mỗi kịch bản đã duyệt thành 5–8 ảnh 1080×1920 trong `out/carousel/script_XXXX/` kèm `caption.txt`:
+bìa (hook) → "Có bạn hỏi" (ẩn danh) → nguyên văn điều luật (nếu có) → "Luật nói gì?" → "Bạn nên làm gì?" → CTA + disclaimer.
+- Chữ trong `**...**` được tô màu nhấn — dùng cho số điều luật, con số quan trọng.
+- Kịch bản còn dấu **[KIỂM TRA]** bị từ chối dựng. Tra nguyên văn, sửa trong giao diện duyệt, rồi chạy lại `render`.
+- Màu nền theo trụ, tên kênh/disclaimer chỉnh trong `config.yaml → carousel`. Font Be Vietnam Pro (OFL) nằm trong `assets/fonts/`.
+- Đăng: TikTok → "+" → chọn nhiều ảnh theo thứ tự 01, 02… → dán `caption.txt` → thêm nhạc trong TikTok.
+
+Kịch bản viết tay (vd `docs/TikTok-Phap-Ly_Script_v1.md`) nhập bằng `python run.py import-md <file>` để đi qua cùng cổng duyệt và bộ dựng.
+
+### 7.1 Tùy chọn: video qua MoneyPrinterTurbo (`render.mode: mpt`)
 ```bash
 git clone https://github.com/harry0703/MoneyPrinterTurbo.git
 cd MoneyPrinterTurbo && cp config.example.toml config.toml
@@ -131,8 +142,10 @@ Nếu API MPT đổi tên trường theo phiên bản → mở http://localhost:
 - `publish.mode: queue` (mặc định): mở `out/publish_queue.csv`, đăng/lên lịch trong TikTok Studio, rồi `mark-published`.
 - `publish.mode: tiktok`: TikTok Content Posting API (Direct Post). Cần: đăng ký app tại developers.tiktok.com → scope `video.publish` → **app audit** (trước audit chỉ đăng được private). Code hiện có bước `init`; bước upload chunk làm theo docs. Thực tế: queue + lên lịch trong TikTok Studio là đủ cho 1 video/ngày.
 
-## 9. Thẻ cho web học Luật
-Mỗi kịch bản sinh kèm thẻ (`cloze` nguyên văn điều luật, `mcq` mini-tình huống) → `out/script_XXXX.cards.json` sau khi render, hoặc đọc trực tiếp bảng `scripts.cards` trong `data/pipeline.db`. Import vào web (kar-dots/Nibomo) bằng script chuyển đổi — mỗi thẻ đã có `citation` để liên kết ngược về điều luật và video.
+## 9. Câu trắc nghiệm cho web luyện tập
+Scriptwriter sinh kèm **10 câu trắc nghiệm** cho mỗi kịch bản (4 phương án, giải thích, căn cứ). Bạn kiểm tra chúng ngay trong giao diện duyệt.
+`python run.py export-web` ghi mỗi kịch bản đã duyệt thành `../web/data/sets/video-XXXX.json` và dựng lại catalog — CTA "luyện 10 câu ở link bio" dẫn đúng bộ đó.
+Bộ viết tay trong `web/data/sets/` không bị ghi đè. Cách đưa web lên mạng: xem `../web/README.md`.
 
 ## 10. Nâng cấp khi cần
 | Khi nào | Làm gì |
@@ -159,9 +172,11 @@ pipeline/
   rag/         ingest.py (cắt theo Điều) retriever.py (BM25)
   scorer.py    chấm 3 cột + cờ rủi ro
   scriptwriter.py  5 khối + citations + cards
-  render.py    MoneyPrinterTurbo API
+  carousel.py  bộ ảnh TikTok dạng lướt (mặc định)     render.py  chọn carousel / MoneyPrinterTurbo
+  importmd.py  nhập kịch bản viết tay                   webexport.py  câu trắc nghiệm → ../web
   publish.py   queue / TikTok API
 review/app.py  FastAPI, cổng duyệt
 data/laws/     văn bản luật (.txt)   data/inbound/  CSV câu hỏi gửi về
-out/           kịch bản, thẻ, hàng đợi đăng
+assets/fonts/  Be Vietnam Pro (OFL)
+out/           carousel/, hàng đợi đăng
 ```

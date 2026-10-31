@@ -13,7 +13,8 @@ HASHTAGS = {"T1": "#phapluat #hopdong #datcoc", "T2": "#phapluat #laodong #dilam
 
 
 def caption(s):
-    cites = ", ".join(f"Điều {c['article']} {c['law']} {c['year']}" for c in json.loads(s["citations"] or "[]"))
+    cites = ", ".join(" ".join(x for x in (f"Điều {c.get('article', '')}", c.get("law", ""), str(c.get("year", ""))) if x.strip())
+                      for c in json.loads(s["citations"] or "[]"))
     return f"{s['hook']}\nCăn cứ: {cites}\nLuyện 10 câu ở link bio. {HASHTAGS.get(s['pillar'], '#phapluat')}\n(Không phải tư vấn pháp lý)"
 
 
@@ -26,9 +27,9 @@ def publish_queue():
             path = OUT_DIR / "publish_queue.csv"
             with open(path, "w", newline="", encoding="utf-8-sig") as f:
                 w = csv.writer(f)
-                w.writerow(["script_id", "title", "video_path", "caption"])
+                w.writerow(["script_id", "title", "media_path", "caption"])
                 for s in rows:
-                    w.writerow([s["id"], s["title"], s["rendered_path"] or "(chưa render)", caption(s)])
+                    w.writerow([s["id"], s["title"], s["rendered_path"] or "(chưa dựng)", caption(s)])
             print(f"[publish] hàng đợi → {path}. Sau khi đăng tay, chạy: python run.py mark-published <id>")
             return
         token = env("TIKTOK_ACCESS_TOKEN")

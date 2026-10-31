@@ -1,4 +1,5 @@
-"""Gửi kịch bản đã duyệt sang MoneyPrinterTurbo (REST API) để render video 9:16 với Edge TTS vi-VN.
+"""Dựng kịch bản đã duyệt. render.mode = carousel (mặc định): bộ ảnh TikTok dạng lướt, xem pipeline/carousel.py.
+render.mode = mpt: gửi sang MoneyPrinterTurbo (REST API) để render video 9:16 với Edge TTS vi-VN.
 MPT: https://github.com/harry0703/MoneyPrinterTurbo — chạy `docker compose up` rồi API ở :8080.
 API có thể đổi theo phiên bản; nếu lỗi, xem http://localhost:8080/docs và chỉnh payload bên dưới."""
 import json
@@ -32,7 +33,21 @@ def _payload(s):
     }
 
 
+def render_carousels():
+    from .carousel import render_script
+    with db.connect() as con:
+        rows = [s for s in db.scripts(con, review_status="approved") if not s["rendered_path"]]
+        print(f"[render] {len(rows)} kịch bản đã duyệt chưa dựng (carousel)")
+        for s in rows:
+            folder = render_script(dict(s))
+            if folder:
+                con.execute("UPDATE scripts SET rendered_path=? WHERE id=?", (str(folder), s["id"]))
+        con.commit()
+
+
 def render_approved(wait: bool = True):
+    if CFG["render"].get("mode", "carousel") == "carousel":
+        return render_carousels()
     base = CFG["render"]["mpt_base_url"].rstrip("/")
     with db.connect() as con:
         rows = [s for s in db.scripts(con, review_status="approved") if not s["rendered_path"]]
