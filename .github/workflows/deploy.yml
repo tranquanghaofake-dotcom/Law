@@ -38,7 +38,7 @@ jobs:
         env:
           # Trang nằm tại https://<user>.github.io/Law/ nên mọi đường dẫn phải bắt đầu bằng /Law/
           BASE_PATH: /${{ github.event.repository.name }}/
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with: { path: apps/web/dist }
 
   deploy:
