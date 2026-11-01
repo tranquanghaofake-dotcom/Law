@@ -3,6 +3,9 @@
   import { settings, loadSettings } from '$lib/store/settings.svelte';
   import Shell from '$lib/ui/Shell.svelte';
   import Home from './routes/Home.svelte';
+  import Subjects from './routes/Subjects.svelte';
+  import Subject from './routes/Subject.svelte';
+  import Quizzes from './routes/Quizzes.svelte';
   import Lesson from './routes/Lesson.svelte';
   import Review from './routes/Review.svelte';
   import Quiz10 from './routes/Quiz10.svelte';
@@ -10,8 +13,7 @@
   import Settings from './routes/Settings.svelte';
   import { storage } from '$lib/store/status.svelte';
 
-  // subjects/subject/quizzes tạm trỏ Home cho tới Task 4 (route riêng).
-  const views = { home: Home, subjects: Home, subject: Home, quizzes: Home, lesson: Lesson, review: Review, quiz: Quiz10, profile: Profile, settings: Settings } as const;
+  const views = { home: Home, subjects: Subjects, subject: Subject, quizzes: Quizzes, lesson: Lesson, review: Review, quiz: Quiz10, profile: Profile, settings: Settings } as const;
   const View = $derived(views[route.name]);
   // Trong phiên học shell ẩn hoàn toàn: một màn một việc (spec §2.4).
   const inSession = $derived(route.name === 'lesson' || route.name === 'review' || route.name === 'quiz');
