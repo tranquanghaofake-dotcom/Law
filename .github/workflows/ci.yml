@@ -1,0 +1,38 @@
+# CI cho mọi nhánh và pull request. Mục tiêu: < 2 phút, một job, cache npm.
+# Không chạy Playwright ở đây (xem e2e.yml) để PR không phải chờ cài trình duyệt.
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches-ignore: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: Nội dung · kiểu · test · build
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - name: Kiểm tra nội dung luật (schema + tham chiếu)
+        run: npm run content
+      - name: Kiểm tra kiểu (tsc + svelte-check)
+        run: npm run check
+      - name: Unit test (vitest)
+        run: npm test
+      - name: Build như trên Pages
+        run: npm run build
+        env:
+          BASE_PATH: /${{ github.event.repository.name }}/
