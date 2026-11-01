@@ -1,0 +1,25 @@
+{
+  "id": "bao-ve-hien-phap", "subject": "hien-phap", "chapter": "khai-quat",
+  "term": "Trách nhiệm bảo vệ Hiến pháp",
+  "definition": "Quốc hội, các cơ quan của Quốc hội, Chủ tịch nước, Chính phủ, Tòa án nhân dân, Viện kiểm sát nhân dân, các cơ quan khác của Nhà nước và toàn thể Nhân dân có trách nhiệm bảo vệ Hiến pháp. Cơ chế bảo vệ Hiến pháp do luật định.",
+  "plain": "Việt Nam không có Tòa án Hiến pháp riêng. Bảo vệ Hiến pháp là trách nhiệm chung của mọi cơ quan nhà nước và toàn dân; cách thức cụ thể (ví dụ Quốc hội bãi bỏ văn bản trái Hiến pháp) do luật quy định.",
+  "example": "Ủy ban thường vụ Quốc hội đình chỉ việc thi hành văn bản của Chính phủ trái Hiến pháp và trình Quốc hội quyết định bãi bỏ (khoản 4 Điều 74, khoản 10 Điều 70); công dân phát hiện văn bản trái Hiến pháp có quyền kiến nghị cơ quan có thẩm quyền xem xét.",
+  "source": { "kind": "statute", "cite": "Khoản 2 Điều 119 Hiến pháp 2013", "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801" },
+  "checked": "2026-11-01",
+  "confusables": ["hieu-luc-phap-ly-toi-cao", "sua-doi-hien-phap"],
+  "keywords": ["toàn thể Nhân dân", "cơ chế bảo vệ Hiến pháp do luật định", "không có Tòa án Hiến pháp"],
+  "items": [
+    { "type": "mcq", "level": 1, "q": "Theo khoản 2 Điều 119 Hiến pháp 2013, chủ thể nào có trách nhiệm bảo vệ Hiến pháp?", "options": ["Quốc hội, các cơ quan của Quốc hội, Chủ tịch nước, Chính phủ, Tòa án, Viện kiểm sát, các cơ quan khác của Nhà nước và toàn thể Nhân dân", "Chỉ Tòa án Hiến pháp", "Chỉ Quốc hội", "Chỉ Chủ tịch nước và Chính phủ"], "answer": 0, "explain": "Khoản 2 Điều 119 liệt kê rộng: mọi cơ quan nhà nước và toàn thể Nhân dân.", "source": { "kind": "statute", "cite": "Khoản 2 Điều 119 Hiến pháp 2013" } },
+    { "type": "mcq", "level": 1, "q": "Cơ chế bảo vệ Hiến pháp ở Việt Nam được quy định ở đâu?", "options": ["Do luật định", "Do Hiến pháp quy định chi tiết", "Do nghị định của Chính phủ", "Do Tòa án Hiến pháp tự quy định"], "answer": 0, "explain": "Nguyên văn: \"Cơ chế bảo vệ Hiến pháp do luật định.\" Hiến pháp chỉ nêu nguyên tắc.", "source": { "kind": "statute", "cite": "Khoản 2 Điều 119 Hiến pháp 2013" } },
+    { "type": "pair", "level": 2, "left": "Trách nhiệm bảo vệ Hiến pháp", "right": "Hiệu lực pháp lý cao nhất", "cases": [
+      { "text": "Nghĩa vụ của toàn thể Nhân dân và mọi cơ quan nhà nước.", "answer": "left" },
+      { "text": "Thuộc tính khiến mọi văn bản pháp luật khác phải phù hợp với Hiến pháp.", "answer": "right" },
+      { "text": "Quy định tại khoản 2 Điều 119, cơ chế cụ thể do luật định.", "answer": "left" }
+    ], "explain": "Khoản 1 Điều 119 nói về vị trí của Hiến pháp (cao nhất); khoản 2 nói về trách nhiệm bảo vệ nó." },
+    { "type": "cloze", "level": 3, "text": "Các cơ quan khác của Nhà nước và {{toàn thể Nhân dân}} có trách nhiệm bảo vệ Hiến pháp. Cơ chế bảo vệ Hiến pháp do {{luật}} định.", "bank_extra": ["Tòa án Hiến pháp", "nghị định"] },
+    { "type": "cloze", "level": 3, "text": "Mọi hành vi {{vi phạm Hiến pháp}} đều bị xử lý.", "bank_extra": ["vi phạm hành chính", "trái đạo đức"], "source": { "kind": "statute", "cite": "Khoản 1 Điều 119 Hiến pháp 2013" } },
+    { "type": "truefalse", "level": 4, "statement": "Việt Nam có Tòa án Hiến pháp độc lập để phán quyết về tính hợp hiến của luật.", "answer": false, "explain": "Sai. Hiến pháp 2013 không thiết lập Tòa án Hiến pháp; trách nhiệm bảo vệ Hiến pháp thuộc mọi cơ quan nhà nước và toàn dân, cơ chế do luật định (khoản 2 Điều 119)." },
+    { "type": "case", "level": 4, "q": "Một sinh viên phát hiện thông tư của một bộ có nội dung trái Hiến pháp. Theo khoản 2 Điều 119, nhận định nào đúng?", "options": ["Sinh viên không liên quan vì bảo vệ Hiến pháp là việc của cơ quan nhà nước", "Sinh viên, với tư cách là một phần của Nhân dân, có trách nhiệm bảo vệ Hiến pháp và có thể kiến nghị cơ quan có thẩm quyền xử lý", "Sinh viên có quyền tự tuyên bố thông tư vô hiệu", "Chỉ Tòa án mới được nhận phản ánh này"], "answer": 1, "explain": "Toàn thể Nhân dân có trách nhiệm bảo vệ Hiến pháp; cách thức là kiến nghị cơ quan có thẩm quyền theo cơ chế luật định, không tự tuyên vô hiệu.", "source": { "kind": "statute", "cite": "Khoản 2 Điều 119 Hiến pháp 2013" } },
+    { "type": "recall", "level": 5, "q": "Nêu đặc điểm của cơ chế bảo vệ Hiến pháp ở Việt Nam theo Hiến pháp 2013.", "model": "Bảo vệ Hiến pháp là trách nhiệm của mọi cơ quan nhà nước (Quốc hội, Chủ tịch nước, Chính phủ, Tòa án, Viện kiểm sát…) và toàn thể Nhân dân; không có Tòa án Hiến pháp chuyên trách; cơ chế cụ thể do luật định, trong đó Quốc hội giữ vai trò giám sát tối cao và bãi bỏ văn bản trái Hiến pháp (khoản 2 Điều 119, Điều 70).", "keywords": ["toàn thể Nhân dân", "do luật định", "giám sát tối cao", "không có Tòa án Hiến pháp"] }
+  ]
+}

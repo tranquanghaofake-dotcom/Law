@@ -1,0 +1,139 @@
+{
+  "id": "chuyen-khoan-nham",
+  "group": "hinh-su",
+  "title": "Chuyển khoản nhầm",
+  "subtitle": "Tiền lạ vào tài khoản: phải làm gì, khi nào thành tội?",
+  "updated": "2026-10-31",
+  "questions": [
+    {
+      "q": "Tài khoản của bạn nhận 10 triệu do người lạ chuyển nhầm. Theo Bộ luật Dân sự, bạn có nghĩa vụ gì?",
+      "options": [
+        "Hoàn trả cho chủ sở hữu",
+        "Được giữ vì tiền đã vào tài khoản của mình",
+        "Chỉ hoàn trả nếu người chuyển chứng minh được lỗi của ngân hàng",
+        "Được giữ một nửa làm phí giữ hộ"
+      ],
+      "answer": 0,
+      "explain": "Người chiếm hữu, sử dụng tài sản của người khác mà không có căn cứ pháp luật thì phải hoàn trả cho chủ sở hữu. Tiền vào tài khoản bạn do nhầm lẫn không làm phát sinh quyền sở hữu của bạn.",
+      "basis": "Khoản 1 Điều 579 BLDS 2015",
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_579"
+    },
+    {
+      "q": "Nếu bạn cố tình không trả lại 10 triệu chuyển nhầm sau khi chủ sở hữu yêu cầu, bạn có thể bị truy cứu tội gì?",
+      "options": [
+        "Tội trộm cắp tài sản",
+        "Tội lừa đảo chiếm đoạt tài sản",
+        "Tội lạm dụng tín nhiệm chiếm đoạt tài sản",
+        "Tội chiếm giữ trái phép tài sản"
+      ],
+      "answer": 3,
+      "explain": "Cố tình không trả lại tài sản bị giao nhầm trị giá từ 10 triệu đồng, sau khi chủ sở hữu, người quản lý hợp pháp hoặc cơ quan có trách nhiệm yêu cầu nhận lại, là hành vi của tội chiếm giữ trái phép tài sản.",
+      "basis": "Khoản 1 Điều 176 BLHS 2015 (sđ 2017)",
+      "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Bo-luat-hinh-su-2015-296661.aspx?anchor=dieu_176"
+    },
+    {
+      "q": "Với tài sản thông thường (không phải di vật, cổ vật), tội chiếm giữ trái phép tài sản đặt ra khi giá trị tài sản từ bao nhiêu?",
+      "options": [
+        "Từ 2 triệu đồng",
+        "Từ 4 triệu đồng",
+        "Từ 10 triệu đồng",
+        "Từ 50 triệu đồng"
+      ],
+      "answer": 2,
+      "explain": "Ngưỡng là tài sản trị giá từ 10 triệu đồng; dưới 10 triệu đồng chỉ cấu thành tội nếu tài sản là di vật, cổ vật.",
+      "basis": "Khoản 1 Điều 176 BLHS 2015 (sđ 2017)",
+      "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Bo-luat-hinh-su-2015-296661.aspx?anchor=dieu_176"
+    },
+    {
+      "q": "Yếu tố nào biến \"nghĩa vụ trả lại tiền\" thành dấu hiệu của tội chiếm giữ trái phép tài sản?",
+      "options": [
+        "Đã lỡ tiêu số tiền",
+        "Cố tình không trả lại sau khi chủ sở hữu, người quản lý hợp pháp hoặc cơ quan có trách nhiệm yêu cầu nhận lại",
+        "Không báo ngân hàng trong 24 giờ",
+        "Tiền nằm trong tài khoản quá 7 ngày"
+      ],
+      "answer": 1,
+      "explain": "Điều luật nhấn mạnh hành vi \"cố tình không trả lại\" và thời điểm \"sau khi ... yêu cầu được nhận lại tài sản\". Vì vậy, chủ động hợp tác hoàn trả là cách tự bảo vệ quan trọng nhất.",
+      "basis": "Khoản 1 Điều 176 BLHS 2015 (sđ 2017)",
+      "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Bo-luat-hinh-su-2015-296661.aspx?anchor=dieu_176"
+    },
+    {
+      "q": "Một người gọi điện xưng là \"người chuyển nhầm\" và yêu cầu bạn chuyển lại vào một tài khoản KHÁC. Cách làm an toàn là gì?",
+      "options": [
+        "Chuyển ngay để tránh rắc rối",
+        "Chuyển một nửa trước, nửa còn lại sau",
+        "Chỉ hoàn trả qua ngân hàng hoặc về đúng tài khoản đã chuyển cho bạn",
+        "Rút tiền mặt đưa trực tiếp cho người đó"
+      ],
+      "answer": 2,
+      "explain": "Nghĩa vụ hoàn trả là hoàn trả cho chủ sở hữu, và người gọi điện chưa chắc là chủ sở hữu. Đòi chuyển sang tài khoản khác là kịch bản lừa đảo quen thuộc. Hãy liên hệ ngân hàng để tra soát và hoàn trả đúng nơi.",
+      "basis": "Khoản 1 Điều 579 BLDS 2015",
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_579"
+    },
+    {
+      "q": "Bạn nhận nhầm 5 triệu đồng và không trả. Khẳng định nào đúng?",
+      "options": [
+        "Không có nghĩa vụ gì vì dưới 10 triệu",
+        "Vẫn phải hoàn trả theo Bộ luật Dân sự; chưa đủ ngưỡng 10 triệu của tội chiếm giữ trái phép tài sản",
+        "Chắc chắn bị phạt tù",
+        "Người chuyển nhầm mất quyền đòi lại vì lỗi là của họ"
+      ],
+      "answer": 1,
+      "explain": "Nghĩa vụ hoàn trả dân sự không phụ thuộc số tiền hay lỗi của người chuyển. Ngưỡng 10 triệu chỉ dùng để xác định trách nhiệm hình sự theo Điều 176. Người chuyển vẫn có quyền khởi kiện đòi lại.",
+      "basis": "Khoản 1 Điều 579 BLDS 2015; khoản 1 Điều 176 BLHS 2015",
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_579"
+    },
+    {
+      "q": "Theo Điều 579 BLDS, nếu không tìm được chủ sở hữu của tài sản mà mình đang chiếm hữu không có căn cứ pháp luật thì phải làm gì?",
+      "options": [
+        "Được giữ lại làm của mình",
+        "Chia đôi với người tìm được",
+        "Sau 01 năm thì thành tài sản của mình",
+        "Giao cho cơ quan nhà nước có thẩm quyền"
+      ],
+      "answer": 3,
+      "explain": "Nếu không tìm được chủ sở hữu, chủ thể có quyền khác đối với tài sản thì phải giao cho cơ quan nhà nước có thẩm quyền (trừ trường hợp xác lập quyền sở hữu theo thời hiệu tại Điều 236). Với tiền chuyển khoản, ngân hàng là đầu mối tìm ra người chuyển.",
+      "basis": "Khoản 1 Điều 579 BLDS 2015",
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_579"
+    },
+    {
+      "q": "Việc nên làm đầu tiên khi phát hiện một khoản tiền lạ vào tài khoản là gì?",
+      "options": [
+        "Báo ngân hàng, giữ nguyên tiền, lưu ảnh chụp giao dịch",
+        "Chuyển sang tài khoản khác cho an toàn",
+        "Đăng lên mạng xã hội kèm số tài khoản người chuyển để tìm chủ",
+        "Chờ xem có ai đòi không rồi tính"
+      ],
+      "answer": 0,
+      "explain": "Giữ nguyên tiền và báo ngân hàng giúp bạn chứng minh thiện chí hoàn trả. Đăng công khai số tài khoản, tên người chuyển có thể làm lộ dữ liệu cá nhân của người khác.",
+      "basis": "Khoản 1 Điều 579 BLDS 2015",
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_579"
+    },
+    {
+      "q": "Khung hình phạt ở khoản 1 của tội chiếm giữ trái phép tài sản là gì?",
+      "options": [
+        "Phạt tù từ 02 năm đến 07 năm",
+        "Phạt tiền từ 10 đến 50 triệu đồng, cải tạo không giam giữ đến 02 năm hoặc phạt tù từ 03 tháng đến 02 năm",
+        "Chỉ bị phạt tiền",
+        "Phạt tù từ 01 năm đến 05 năm"
+      ],
+      "answer": 1,
+      "explain": "Khoản 1 quy định phạt tiền từ 10.000.000 đồng đến 50.000.000 đồng, phạt cải tạo không giam giữ đến 02 năm hoặc phạt tù từ 03 tháng đến 02 năm. Mức phạt tù từ 01 đến 05 năm là của khoản 2 (tài sản từ 200 triệu đồng hoặc bảo vật quốc gia).",
+      "basis": "Điều 176 BLHS 2015 (sđ 2017)",
+      "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Bo-luat-hinh-su-2015-296661.aspx?anchor=dieu_176"
+    },
+    {
+      "q": "Bạn đã lỡ tiêu 10 triệu chuyển nhầm và chưa có đủ tiền trả ngay. Cách xử lý đúng là gì?",
+      "options": [
+        "Chặn liên lạc với người chuyển",
+        "Khẳng định đó là tiền của mình",
+        "Đổi sang số tài khoản khác",
+        "Chủ động liên hệ, thừa nhận và thỏa thuận lộ trình hoàn trả, lưu lại trao đổi"
+      ],
+      "answer": 3,
+      "explain": "Nghĩa vụ hoàn trả vẫn còn. Chủ động thỏa thuận hoàn trả là chứng cứ quan trọng cho thấy bạn không \"cố tình không trả lại\", khác hẳn với việc né tránh sau khi đã bị yêu cầu.",
+      "basis": "Khoản 1 Điều 579 BLDS 2015; khoản 1 Điều 176 BLHS 2015",
+      "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Bo-luat-hinh-su-2015-296661.aspx?anchor=dieu_176"
+    }
+  ]
+}

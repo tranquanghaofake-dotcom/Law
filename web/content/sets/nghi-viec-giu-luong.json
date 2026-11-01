@@ -1,0 +1,139 @@
+{
+  "id": "nghi-viec-giu-luong",
+  "group": "lao-dong",
+  "title": "Nghỉ việc & giữ lương",
+  "subtitle": "Báo trước bao lâu, công ty phải trả lương trong mấy ngày, kiện thế nào?",
+  "updated": "2026-10-31",
+  "questions": [
+    {
+      "q": "Bạn làm việc theo hợp đồng lao động không xác định thời hạn và muốn nghỉ. Phải báo trước cho công ty ít nhất bao lâu?",
+      "options": [
+        "03 ngày làm việc",
+        "30 ngày",
+        "45 ngày",
+        "60 ngày"
+      ],
+      "answer": 2,
+      "explain": "Với hợp đồng không xác định thời hạn, người lao động phải báo trước ít nhất 45 ngày (trừ một số ngành nghề, công việc đặc thù do Chính phủ quy định).",
+      "basis": "Điểm a khoản 1 Điều 35 BLLĐ 2019",
+      "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Bo-Luat-lao-dong-2019-333670.aspx?anchor=dieu_35"
+    },
+    {
+      "q": "Hợp đồng lao động xác định thời hạn 24 tháng. Muốn nghỉ, bạn phải báo trước ít nhất bao lâu?",
+      "options": [
+        "30 ngày",
+        "45 ngày",
+        "03 ngày làm việc",
+        "Không cần báo trước"
+      ],
+      "answer": 0,
+      "explain": "Hợp đồng xác định thời hạn từ 12 tháng đến 36 tháng: báo trước ít nhất 30 ngày.",
+      "basis": "Điểm b khoản 1 Điều 35 BLLĐ 2019",
+      "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Bo-Luat-lao-dong-2019-333670.aspx?anchor=dieu_35"
+    },
+    {
+      "q": "Hợp đồng lao động xác định thời hạn 6 tháng. Muốn nghỉ, bạn phải báo trước ít nhất bao lâu?",
+      "options": [
+        "30 ngày",
+        "15 ngày",
+        "45 ngày",
+        "03 ngày làm việc"
+      ],
+      "answer": 3,
+      "explain": "Hợp đồng xác định thời hạn dưới 12 tháng: báo trước ít nhất 03 ngày làm việc.",
+      "basis": "Điểm c khoản 1 Điều 35 BLLĐ 2019",
+      "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Bo-Luat-lao-dong-2019-333670.aspx?anchor=dieu_35"
+    },
+    {
+      "q": "Công ty liên tục trả lương chậm và không đủ. Bạn có được nghỉ việc ngay mà không cần báo trước không?",
+      "options": [
+        "Không, vẫn phải báo trước như bình thường",
+        "Có, đây là một trường hợp được nghỉ không cần báo trước",
+        "Chỉ khi chậm lương trên 6 tháng",
+        "Chỉ khi có quyết định của Tòa án"
+      ],
+      "answer": 1,
+      "explain": "Người lao động được đơn phương chấm dứt hợp đồng không cần báo trước nếu không được trả đủ lương hoặc trả lương không đúng thời hạn (trừ trường hợp bất khả kháng theo khoản 4 Điều 97). Hãy giữ bảng lương, sao kê làm chứng cứ.",
+      "basis": "Điểm b khoản 2 Điều 35 BLLĐ 2019",
+      "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Bo-Luat-lao-dong-2019-333670.aspx?anchor=dieu_35"
+    },
+    {
+      "q": "Sau khi chấm dứt hợp đồng lao động, trong trường hợp thông thường hai bên phải thanh toán đầy đủ các khoản tiền liên quan trong thời hạn nào?",
+      "options": [
+        "07 ngày",
+        "14 ngày làm việc",
+        "30 ngày làm việc",
+        "Đến kỳ trả lương tiếp theo"
+      ],
+      "answer": 1,
+      "explain": "Trong 14 ngày làm việc kể từ ngày chấm dứt hợp đồng, hai bên có trách nhiệm thanh toán đầy đủ; chỉ một số trường hợp luật liệt kê mới được kéo dài, nhưng không quá 30 ngày.",
+      "basis": "Khoản 1 Điều 48 BLLĐ 2019",
+      "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Bo-Luat-lao-dong-2019-333670.aspx?anchor=dieu_48"
+    },
+    {
+      "q": "Công ty nói sẽ giữ lương tháng cuối \"đến khi tìm được người thay thế\". Lý do này có được kéo dài thời hạn thanh toán không?",
+      "options": [
+        "Có, nếu nội quy công ty quy định",
+        "Có, tối đa 30 ngày",
+        "Không, đây không phải trường hợp luật cho phép kéo dài",
+        "Có, nếu người lao động chưa bàn giao xong"
+      ],
+      "answer": 2,
+      "explain": "Chỉ được kéo dài (tối đa 30 ngày) khi: công ty chấm dứt hoạt động; thay đổi cơ cấu, công nghệ hoặc vì lý do kinh tế; chia, tách, hợp nhất, sáp nhập, bán, cho thuê, chuyển đổi loại hình doanh nghiệp…; hoặc do thiên tai, hỏa hoạn, địch họa, dịch bệnh nguy hiểm. \"Chưa tìm được người thay\" không nằm trong danh sách.",
+      "basis": "Khoản 1 Điều 48 BLLĐ 2019",
+      "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Bo-Luat-lao-dong-2019-333670.aspx?anchor=dieu_48"
+    },
+    {
+      "q": "Khi chấm dứt hợp đồng, công ty có trách nhiệm gì với sổ BHXH và bản chính giấy tờ đã giữ của bạn?",
+      "options": [
+        "Được giữ lại thêm 01 năm",
+        "Chỉ trả khi bạn ký cam kết không làm cho đối thủ",
+        "Chuyển thẳng cho công ty mới của bạn",
+        "Hoàn thành thủ tục xác nhận thời gian đóng BHXH, BHTN và trả lại bản chính giấy tờ đã giữ"
+      ],
+      "answer": 3,
+      "explain": "Người sử dụng lao động phải hoàn thành thủ tục xác nhận thời gian đóng bảo hiểm xã hội, bảo hiểm thất nghiệp và trả lại cùng với bản chính giấy tờ khác nếu đã giữ của người lao động. (Việc giữ bản chính văn bằng, giấy tờ tùy thân vốn đã bị cấm.)",
+      "basis": "Điểm a khoản 3 Điều 48; khoản 1 Điều 17 BLLĐ 2019",
+      "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Bo-Luat-lao-dong-2019-333670.aspx?anchor=dieu_48"
+    },
+    {
+      "q": "Bạn tranh chấp với công ty về tiền lương chưa được trả. Muốn khởi kiện ra Tòa, trước hết phải làm gì?",
+      "options": [
+        "Không cần thủ tục gì, nộp đơn kiện ngay",
+        "Phải qua hòa giải của hòa giải viên lao động",
+        "Phải có xác nhận của công an",
+        "Phải có đơn của công đoàn"
+      ],
+      "answer": 1,
+      "explain": "Tranh chấp lao động cá nhân phải qua hòa giải viên lao động trước khi yêu cầu Hội đồng trọng tài lao động hoặc Tòa án, trừ các trường hợp luật liệt kê (sa thải, bị đơn phương chấm dứt, bồi thường, trợ cấp khi chấm dứt hợp đồng, BHXH-BHYT-BHTN…). Tiền lương không thuộc các ngoại lệ. Hòa giải không thành, hoặc quá 05 ngày làm việc mà không được hòa giải, thì mới khởi kiện.",
+      "basis": "Khoản 1, khoản 2, khoản 7 Điều 188 BLLĐ 2019",
+      "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Bo-Luat-lao-dong-2019-333670.aspx?anchor=dieu_188"
+    },
+    {
+      "q": "Thời hiệu yêu cầu hòa giải viên lao động hòa giải tranh chấp lao động cá nhân là bao lâu?",
+      "options": [
+        "06 tháng kể từ ngày phát hiện hành vi vi phạm",
+        "09 tháng",
+        "01 năm",
+        "03 năm"
+      ],
+      "answer": 0,
+      "explain": "Thời hiệu yêu cầu hòa giải viên là 06 tháng; yêu cầu Hội đồng trọng tài lao động là 09 tháng; yêu cầu Tòa án là 01 năm, đều tính từ ngày phát hiện ra hành vi mà bên tranh chấp cho rằng quyền lợi của mình bị vi phạm. Đừng để quá lâu.",
+      "basis": "Điều 190 BLLĐ 2019",
+      "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Bo-Luat-lao-dong-2019-333670.aspx?anchor=dieu_190"
+    },
+    {
+      "q": "Bạn làm 3 năm, đã đóng bảo hiểm thất nghiệp đủ cả 3 năm, rồi nghỉ việc đúng luật. Công ty có phải trả trợ cấp thôi việc cho 3 năm đó không?",
+      "options": [
+        "Có, mỗi năm nửa tháng lương",
+        "Có, mỗi năm 01 tháng lương",
+        "Không, vì thời gian đã đóng bảo hiểm thất nghiệp bị trừ khi tính trợ cấp thôi việc",
+        "Chỉ khi công ty đồng ý"
+      ],
+      "answer": 2,
+      "explain": "Thời gian làm việc để tính trợ cấp thôi việc là tổng thời gian làm việc thực tế trừ đi thời gian đã tham gia bảo hiểm thất nghiệp và thời gian đã được chi trả trợ cấp thôi việc, mất việc làm. Đóng BHTN đủ 3 năm thì phần trợ cấp thôi việc cho 3 năm đó bằng 0; bạn được hưởng chế độ bảo hiểm thất nghiệp nếu đủ điều kiện.",
+      "basis": "Khoản 1, khoản 2 Điều 46 BLLĐ 2019",
+      "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Bo-Luat-lao-dong-2019-333670.aspx?anchor=dieu_46"
+    }
+  ]
+}

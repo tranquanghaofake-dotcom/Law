@@ -1,0 +1,27 @@
+{
+  "id": "hien-phap",
+  "subject": "hien-phap",
+  "chapter": "khai-quat",
+  "term": "Hiến pháp",
+  "definition": "Hiến pháp là luật cơ bản của nước Cộng hòa xã hội chủ nghĩa Việt Nam, có hiệu lực pháp lý cao nhất.",
+  "plain": "Hiến pháp là \"luật mẹ\": đặt nền cho mọi luật khác về tổ chức nhà nước, quyền con người và quyền công dân. Luật nào trái Hiến pháp thì không được tồn tại.",
+  "example": "Quốc hội muốn ban hành một luật hạn chế quyền tự do đi lại thì luật đó phải phù hợp với Điều 23 Hiến pháp; nếu trái, luật phải bị sửa hoặc bãi bỏ.",
+  "source": { "kind": "statute", "cite": "Khoản 1 Điều 119 Hiến pháp 2013", "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801" },
+  "checked": "2026-11-01",
+  "confusables": ["hieu-luc-phap-ly-toi-cao"],
+  "keywords": ["luật cơ bản", "hiệu lực pháp lý cao nhất", "Điều 119"],
+  "items": [
+    { "type": "mcq", "level": 1, "q": "Theo Hiến pháp 2013, Hiến pháp được định nghĩa là gì?", "options": ["Luật cơ bản của Nhà nước, có hiệu lực pháp lý cao nhất", "Văn bản do Chính phủ ban hành để điều hành đất nước", "Tập hợp mọi luật do Quốc hội thông qua", "Bản tuyên ngôn chính trị không có giá trị bắt buộc"], "answer": 0, "explain": "Khoản 1 Điều 119: Hiến pháp là luật cơ bản, có hiệu lực pháp lý cao nhất. Hiến pháp do Quốc hội làm và sửa đổi, không phải Chính phủ.", "source": { "kind": "statute", "cite": "Khoản 1 Điều 119 Hiến pháp 2013" } },
+    { "type": "mcq", "level": 1, "q": "Cơ quan nào có quyền làm Hiến pháp và sửa đổi Hiến pháp?", "options": ["Quốc hội", "Chính phủ", "Chủ tịch nước", "Tòa án nhân dân tối cao"], "answer": 0, "explain": "Khoản 1 Điều 70: Quốc hội làm Hiến pháp và sửa đổi Hiến pháp. Thủ tục sửa đổi quy định tại Điều 120.", "source": { "kind": "statute", "cite": "Khoản 1 Điều 70 Hiến pháp 2013" } },
+    { "type": "pair", "level": 2, "left": "Hiến pháp", "right": "Hiệu lực pháp lý cao nhất", "cases": [
+      { "text": "Khái niệm chỉ chính văn bản \"luật cơ bản\" của Nhà nước.", "answer": "left" },
+      { "text": "Thuộc tính khiến mọi văn bản pháp luật khác phải phù hợp với nó.", "answer": "right" },
+      { "text": "Do Quốc hội làm và sửa đổi với ít nhất hai phần ba tổng số đại biểu tán thành.", "answer": "left" }
+    ], "explain": "Hiến pháp là văn bản; hiệu lực pháp lý cao nhất là thuộc tính của văn bản đó (khoản 1 Điều 119)." },
+    { "type": "cloze", "level": 3, "text": "Hiến pháp là {{luật cơ bản}} của nước Cộng hòa xã hội chủ nghĩa Việt Nam, có {{hiệu lực pháp lý cao nhất}}.", "bank_extra": ["văn bản hành chính", "hiệu lực ngang luật"], "synonyms": { "luật cơ bản": ["đạo luật cơ bản"] } },
+    { "type": "cloze", "level": 3, "text": "Mọi văn bản pháp luật khác phải {{phù hợp}} với Hiến pháp.", "bank_extra": ["độc lập", "cao hơn"] },
+    { "type": "case", "level": 4, "q": "Một nghị định của Chính phủ quy định trái với một điều của Hiến pháp. Theo Hiến pháp 2013, hệ quả pháp lý là gì?", "options": ["Nghị định vẫn có hiệu lực vì ban hành sau Hiến pháp", "Nghị định phải phù hợp với Hiến pháp; nội dung trái Hiến pháp bị xử lý", "Hiến pháp phải được sửa cho phù hợp với nghị định", "Hai văn bản cùng có hiệu lực, áp dụng văn bản nào cũng được"], "answer": 1, "explain": "Khoản 1 Điều 119: mọi văn bản pháp luật khác phải phù hợp với Hiến pháp; mọi hành vi vi phạm Hiến pháp đều bị xử lý. Thứ bậc hiệu lực không phụ thuộc thời điểm ban hành.", "source": { "kind": "statute", "cite": "Khoản 1 Điều 119 Hiến pháp 2013" } },
+    { "type": "truefalse", "level": 4, "statement": "Hiến pháp có hiệu lực pháp lý ngang với các bộ luật do Quốc hội thông qua.", "answer": false, "explain": "Sai. Hiến pháp có hiệu lực pháp lý cao nhất; các bộ luật, luật đều phải phù hợp với Hiến pháp (khoản 1 Điều 119)." },
+    { "type": "recall", "level": 5, "q": "Vì sao nói Hiến pháp là \"luật cơ bản\" của Nhà nước?", "model": "Vì Hiến pháp quy định những vấn đề nền tảng nhất: chế độ chính trị, quyền con người, quyền và nghĩa vụ cơ bản của công dân, tổ chức bộ máy nhà nước; và có hiệu lực pháp lý cao nhất nên mọi văn bản pháp luật khác phải phù hợp với Hiến pháp (Điều 119).", "keywords": ["nền tảng", "quyền con người", "bộ máy nhà nước", "hiệu lực pháp lý cao nhất"] }
+  ]
+}
