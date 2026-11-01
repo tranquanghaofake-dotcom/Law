@@ -79,7 +79,7 @@
   <div role="tabpanel" class="profile-grid">
     <section class="card wide shelf-card">
       <p class="kicker">Tủ sách</p>
-      <p class="muted small">Mỗi môn là một cuốn sách luật. Sách đậm dần theo số khái niệm thuần thục và được đóng dấu son khi bạn thuần thục toàn bộ môn.</p>
+      <p class="muted small">Mỗi chương là một cuốn sách. Sách lên cấp khi mọi khái niệm của chương đạt bậc 3 (bìa mềm), bậc 5 (bìa cứng), bậc 6 (bìa da mạ vàng). Sách dùng để thăng chức.</p>
       <Bookshelf size="large" />
     </section>
     <section class="card profile">
@@ -93,10 +93,10 @@
       <WeekDots days={week} />
     </section>
     <section class="card">
-      <p class="kicker">Phẩm hàm theo môn</p>
+      <p class="kicker">Thuần thục theo môn</p>
       <ul class="plain-list grade-list">
         {#each subjects as x (x.id)}
-          <li><a href={hashFor('subject', { subject: x.id })}><b>{x.title}</b> · {x.s.grade ?? 'Chưa có phẩm'}</a>
+          <li><a href={hashFor('subject', { subject: x.id })}><b>{x.title}</b> · {x.s.percent}%</a>
             <span class="bar" aria-hidden="true"><span style="width:{x.s.percent}%"></span></span>
             <span class="muted small">{x.s.mastered}/{x.s.total} khái niệm bậc ≥ 5</span></li>
         {:else}<li class="muted">Chưa có môn nào.</li>{/each}

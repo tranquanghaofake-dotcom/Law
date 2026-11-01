@@ -617,3 +617,15 @@ h1 { text-wrap: balance; }
 .rail-block .streak-card, .profile .streak-card { margin: 4px 0 10px; }
 .streak .streak-card.mini { display: inline-block; vertical-align: middle; width: 44px; margin-right: 6px; }
 .flame.cold .streak-card { filter: saturate(.6); }
+
+/* ---- Tủ sách theo chương ---- */
+.book .spine { color: var(--muted); }
+.book.ghost a:hover, .book.ghost a:focus-visible { transform: translateY(-3px); }
+.shelf-count { margin: 14px 4px 0; }
+.bookcase { display: grid; gap: 18px; }
+.case-label { margin: 0 0 6px; display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline; }
+.bookcase .shelf.large { padding-bottom: 12px; }
+.bookcase .shelf.large .shelf-row { gap: 4px; padding: 0 10px; flex-wrap: nowrap; overflow-x: auto; overflow-y: visible; padding-top: 10px; }
+.bookcase .shelf.large .book { width: auto; }
+.bookcase .spine { width: clamp(20px, 6vw, 30px); height: auto; }
+.legend-books { margin: 0; }

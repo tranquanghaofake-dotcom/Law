@@ -87,7 +87,7 @@
       {#each rows as r (r.subject.id)}
         <li><a class="subject-row" href={hashFor('subject', { subject: r.subject.id })}>
           <SubjectArt name={artFor(r.subject.id)} class="row-art" />
-          <span class="title"><b>{r.subject.title}</b>{#if r.grade}<span class="chip">{r.grade}</span>{/if}</span>
+          <span class="title"><b>{r.subject.title}</b></span>
           <span class="bar" aria-hidden="true"><span style="width:{r.total ? (r.mastered / r.total) * 100 : 0}%"></span></span>
           <span class="muted small">{r.mastered}/{r.total} thuần thục</span>
           <span class="arrow" aria-hidden="true">→</span>

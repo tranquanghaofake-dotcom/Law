@@ -48,7 +48,7 @@
   $effect(() => { void route.params.subject; load(); });
   $effect(() => {
     if (!subject || !summary) return;
-    return setRail(SubjectRail, { subjectId: subject.id, due, nextGrade: summary.nextGrade, needForNext: summary.needForNext, difficult });
+    return setRail(SubjectRail, { subjectId: subject.id, due, difficult });
   });
 </script>
 
@@ -60,7 +60,7 @@
   <nav class="crumbs small muted" aria-label="Vị trí"><a href={hashFor('subjects')}>Môn học</a> › {subject.title}</nav>
   <header class="subject-head">
     <SubjectArt name={artFor(subject.id)} class="head-art" />
-    <h1>{subject.title} {#if summary.grade}<span class="chip">{summary.grade}</span>{/if}</h1>
+    <h1>{subject.title}</h1>
     <p class="muted">Thuần thục <b>{summary.percent}%</b> · {summary.mastered}/{summary.total} khái niệm · {summary.chapters} chương · {summary.lessons} đợt</p>
     <div class="bar" aria-hidden="true"><span style="width:{summary.percent}%"></span></div>
     <div class="row">
