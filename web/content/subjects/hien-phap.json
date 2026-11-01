@@ -1,0 +1,14 @@
+{
+  "id": "hien-phap",
+  "title": "Luật Hiến pháp",
+  "short": "Hiến pháp",
+  "chapters": [
+    {
+      "id": "khai-quat",
+      "title": "Khái quát về Hiến pháp",
+      "lessons": [
+        { "id": "hp-1", "title": "Hiến pháp là gì", "concepts": ["hien-phap", "hieu-luc-phap-ly-toi-cao"] }
+      ]
+    }
+  ]
+}
