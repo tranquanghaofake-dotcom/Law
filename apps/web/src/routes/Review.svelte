@@ -36,11 +36,11 @@
 </script>
 
 {#if error}
-  <section class="card"><p class="muted">Không tải được dữ liệu: {error}</p><a class="btn ghost" href="#/">Về trang chủ</a></section>
+  <section class="card"><p class="muted">Không tải được dữ liệu: {error}</p><a class="btn ghost" href="#/">Về Hôm nay</a></section>
 {:else if empty}
   <section class="card"><h1>Ôn hôm nay</h1><p>Chưa có gì cần ôn{subjectId ? ' trong môn này' : ''}. Học mới một đợt rồi quay lại nhé.</p>{#if subjectId}<a class="btn primary" href={hashFor('subject', { subject: subjectId })}>Về môn</a>{:else}<a class="btn primary" href="#/">Về Hôm nay</a>{/if}</section>
 {:else if !data}
   <p class="loading">Đang tải…</p>
 {:else}
-  <SessionView steps={data.steps} concepts={data.concepts} levels={data.levels} />
+  <SessionView steps={data.steps} concepts={data.concepts} levels={data.levels} title="Ôn hôm nay" />
 {/if}

@@ -1,6 +1,6 @@
 # Luyện Luật — Thiết kế lại layout & điều hướng (đợt nâng cấp 1)
 
-Phiên bản 1.0 · 01/11/2026 · Trạng thái: **chờ Hào duyệt**
+Phiên bản 1.0 · 01/11/2026 · Trạng thái: **đã triển khai** (PR #9, #10 và PR 3; sai khác ghi ở sổ kế hoạch `docs/plans/2026-11-01-layout-redesign.md`)
 Tác giả: Claude soạn theo yêu cầu của Trần Quang Hào. Ngôn ngữ: tiếng Việt, giữ thuật ngữ tiếng Anh.
 Kế thừa: `2026-11-01-luyen-luat-web-design.md` (spec gốc, mục 5 UI/UX). Spec này **thay thế mục 5.2** của spec gốc về cấu trúc màn hình; không đổi engine, nội dung, bảng màu.
 

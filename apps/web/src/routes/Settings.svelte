@@ -4,12 +4,11 @@
   import { storage } from '$lib/store/status.svelte';
   import { tts } from '$lib/fx/tts.svelte';
   import { sfx } from '$lib/fx/sfx';
-  document.title = 'Cài đặt · Luyện Luật';
   const ttsOk = $derived(tts.available);
 </script>
 
 <section class="card settings">
-  <h1>Cài đặt</h1>
+  <h2 style="margin-top:0">Cài đặt</h2>
   {#if !storage.available}<p class="muted">⚠ Trình duyệt đang chặn lưu trữ (chế độ riêng tư?). Tiến độ sẽ không được lưu.</p>{/if}
   <label class="setting"><span>Âm thanh</span><input type="checkbox" checked={settings.sound} onchange={(e) => { saveSetting('sound', e.currentTarget.checked); if (e.currentTarget.checked) sfx.play('select'); }} /></label>
   <label class="setting"><span>Đọc đáp án (giọng vi-VN của trình duyệt)</span><input type="checkbox" checked={settings.tts} onchange={(e) => saveSetting('tts', e.currentTarget.checked)} /></label>

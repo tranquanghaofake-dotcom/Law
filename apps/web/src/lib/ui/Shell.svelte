@@ -30,9 +30,9 @@
           <span class="ico" aria-hidden="true">{n.icon}</span><span class="lbl">{n.label}</span></a></li>
       {/each}
     </ul>
-    <a class="me" href="#/toi" aria-label={`Chuỗi ${header.streak} ngày, bậc ${info.rank} cấp ${info.tier}, ${header.xp} XP`}>
-      <span class="flame" class:cold={header.streak === 0}><span aria-hidden="true">🔥</span>{header.streak}</span>
-      <span class="rank"><span class="seal" aria-hidden="true">§</span><span>{info.rank}</span><span class="tier">{info.tier}</span></span>
+    <a class="me" href="#/toi">
+      <span class="flame" class:cold={header.streak === 0}><span aria-hidden="true">🔥</span><span class="sr-only">Chuỗi </span>{header.streak}<span class="sr-only"> ngày,</span></span>
+      <span class="rank"><span class="seal" aria-hidden="true">§</span><span>{info.rank}</span> <span class="tier">{info.tier}</span></span>
       {#if info.nextXp}<span class="xp-line muted">còn {info.nextXp - header.xp} XP tới {RANKS[info.index + 1].name}</span>{/if}
     </a>
   </nav>

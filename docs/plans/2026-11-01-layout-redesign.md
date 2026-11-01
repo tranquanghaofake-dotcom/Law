@@ -204,3 +204,14 @@ Test `Shell.test.ts` (Testing Library): render `Shell` với `active: 'subject'`
 - [ ] **Bước 2:** Chạy skill `design:accessibility-review` trên 4 ảnh 1280 px + 390 px; sửa tương phản/focus nếu có.
 - [ ] **Bước 3:** `npm run ci`, e2e, shots; đính ảnh 7 màn × 390/1280 vào PR.
 - [ ] **Bước 4:** Commit `docs: cập nhật README/spec sau khi triển khai layout`; mở **PR 3** `feat/layout-profile-session`.
+
+## Kết quả triển khai (01/11/2026)
+
+Đã xong cả 10 task qua PR #9, #10 và PR 3. Sai khác so với plan (đã chấp nhận):
+- Rail phải nhận nội dung qua store `rail.svelte.ts` (`setRail`) thay vì prop snippet.
+- Sidebar `position: fixed` mép trái thay vì cột grid, để không nhảy vị trí giữa trang có/không rail.
+- Local nav chương ở trang Môn là hàng chip (chỉ hiện khi ≥ 2 chương), không phải cột trái sticky.
+- Dải đợt trên điện thoại là component riêng `LessonStrip` đặt dưới thanh phiên (chỉ trong phiên học đợt).
+- Bước a11y thay bằng e2e `axe-core` (serious/critical = 0) ở 6 trang × 390/1280 px; thêm token `--accent-text` cho chữ màu son đạt AA.
+- CI chỉ chạy trên pull request; dependabot gộp major, không tự bump `ts-fsrs`.
+Còn hoãn: đợt `{3,0}` hiện "ĐỢT MỚI" thay vì "TIẾP TỤC" (cần sửa spec §3.1); phút ước lượng chưa trần 20 bước; thẻ kiểm tra nhanh khi mọi đề 10/10.

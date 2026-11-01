@@ -2,19 +2,15 @@
   // Rail phải của trang Hôm nay (≥ 1440 px): chuỗi tuần, bậc, hẹn ôn ngày mai, dòng pháp lý (spec §3.4).
   import { header } from './header.svelte';
   import { rankFor, RANKS } from '$lib/game/rank';
+  import WeekDots from './WeekDots.svelte';
   let { week, dueTomorrow }: { week: boolean[]; dueTomorrow: number } = $props();
   const info = $derived(rankFor(header.xp));
-  const DAYS = ['T2', 'T3', 'T4', 'T5', 'T6', 'T7', 'CN'];
-  // week[6] = hôm nay; nhãn theo thứ thực tế
-  const labels = $derived.by(() => { const today = (new Date().getDay() + 6) % 7; return week.map((_, i) => DAYS[(today - 6 + i + 7) % 7]); });
 </script>
 
 <section class="rail-block">
   <p class="kicker">Chuỗi</p>
   <p class="rail-big"><span aria-hidden="true">🔥</span> {header.streak} <span class="muted small">ngày</span></p>
-  <ol class="week" aria-label="7 ngày gần nhất">
-    {#each week as on, i (i)}<li class:on title={labels[i]}><span class="dot" aria-hidden="true"></span><span class="small">{labels[i]}</span></li>{/each}
-  </ol>
+  <WeekDots days={week} />
 </section>
 <section class="rail-block">
   <p class="kicker">Bậc khoa cử</p>

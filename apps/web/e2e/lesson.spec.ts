@@ -60,12 +60,20 @@ test('phiên học pass 1: intro → trắc nghiệm → lưu ngay → kết th�
   }
   await expect(page.locator('.session-end')).toBeVisible();
   await expect(page.locator('.session-end')).toContainText('XP');
-  await expect(page.getByRole('button', { name: 'Về trang chủ' })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Về Hôm nay' })).toBeVisible();
 });
 
-test('cột đợt ẩn trên điện thoại', async ({ page }) => {
+test('cột đợt thành dải chip trên điện thoại; desktop có cột, không dải; không tab bar trong phiên', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto(B + '#/hoc/hien-phap/hp-1');
   await expect(page.getByRole('article', { name: 'Thẻ giới thiệu khái niệm' })).toBeVisible();
   await expect(page.locator('.lesson-panel')).toBeHidden();
+  await expect(page.locator('.lesson-strip')).toBeVisible();
+  await expect(page.locator('.lesson-strip li')).toHaveCount(5);
+  await expect(page.locator('.tabbar')).toHaveCount(0);
+  await expect(page.locator('.session-bar .title')).toBeHidden(); // < 480 px ẩn tên
+  await page.setViewportSize({ width: 1280, height: 800 });
+  await expect(page.locator('.lesson-panel')).toBeVisible();
+  await expect(page.locator('.lesson-strip')).toBeHidden();
+  await expect(page.locator('.session-bar .title')).toHaveText('Hiến pháp là gì');
 });
