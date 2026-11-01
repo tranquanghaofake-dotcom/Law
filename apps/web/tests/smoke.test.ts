@@ -5,6 +5,7 @@ import App from '../src/App.svelte';
 describe('khung ứng dụng', () => {
   it('hiển thị tên thương hiệu', () => {
     render(App);
-    expect(screen.getByText(/Luyện Luật/)).toBeTruthy();
+    // topbar (mobile) và sidenav (desktop) đều mang tên; CSS quyết định cái nào hiển thị
+    expect(screen.getAllByText(/Luyện Luật/).length).toBeGreaterThanOrEqual(1);
   });
 });

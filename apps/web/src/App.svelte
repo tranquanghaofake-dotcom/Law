@@ -1,19 +1,21 @@
 <script lang="ts">
   import { route } from '$lib/router.svelte';
   import { settings, loadSettings } from '$lib/store/settings.svelte';
-  import RankBadge from '$lib/ui/RankBadge.svelte';
-  import StreakFlame from '$lib/ui/StreakFlame.svelte';
+  import Shell from '$lib/ui/Shell.svelte';
   import Home from './routes/Home.svelte';
+  import Subjects from './routes/Subjects.svelte';
+  import Subject from './routes/Subject.svelte';
+  import Quizzes from './routes/Quizzes.svelte';
   import Lesson from './routes/Lesson.svelte';
   import Review from './routes/Review.svelte';
   import Quiz10 from './routes/Quiz10.svelte';
   import Profile from './routes/Profile.svelte';
   import Settings from './routes/Settings.svelte';
-  import { header } from '$lib/ui/header.svelte';
   import { storage } from '$lib/store/status.svelte';
 
-  const views = { home: Home, lesson: Lesson, review: Review, quiz: Quiz10, profile: Profile, settings: Settings } as const;
+  const views = { home: Home, subjects: Subjects, subject: Subject, quizzes: Quizzes, lesson: Lesson, review: Review, quiz: Quiz10, profile: Profile, settings: Settings } as const;
   const View = $derived(views[route.name]);
+  // Trong phiên học shell ẩn hoàn toàn: một màn một việc (spec §2.4).
   const inSession = $derived(route.name === 'lesson' || route.name === 'review' || route.name === 'quiz');
 
   $effect(() => {
@@ -24,22 +26,15 @@
   loadSettings();
 </script>
 
-<header class="top">
-  <a class="brand" href="#/"><span class="mark" aria-hidden="true">§</span> Luyện Luật</a>
-  {#if !inSession}
-    <nav class="meta" aria-label="Tiến độ">
-      <StreakFlame count={header.streak} />
-      <RankBadge xp={header.xp} />
-      <a class="rank" href="#/cai-dat" aria-label="Cài đặt" title="Cài đặt">⚙</a>
-    </nav>
+{#if inSession}
+  {#if !storage.available}
+    <p class="banner" role="alert">⚠ Trình duyệt đang chặn lưu trữ (chế độ riêng tư?). Bạn vẫn học được nhưng tiến độ sẽ mất khi đóng tab.</p>
   {/if}
-</header>
-{#if !storage.available}
-  <p class="banner" role="alert">⚠ Trình duyệt đang chặn lưu trữ (chế độ riêng tư?). Bạn vẫn học được nhưng tiến độ sẽ mất khi đóng tab.</p>
+  <main class="layout" class:with-aside={route.name === 'lesson' || route.name === 'review'} id="main" tabindex="-1">
+    <View />
+  </main>
+{:else}
+  <Shell active={route.name}>
+    <View />
+  </Shell>
 {/if}
-<main class="layout" class:with-aside={route.name === 'lesson' || route.name === 'review'} id="main" tabindex="-1">
-  <View />
-</main>
-<footer class="foot muted" style="max-width:1100px;margin:24px auto;padding:0 16px;font-size:13px">
-  <p><strong>Thông tin pháp luật chung, không phải tư vấn pháp lý.</strong> Nội dung do Trần Quang Hào, sinh viên Luật Kinh tế, biên soạn từ văn bản pháp luật hiện hành; luôn đối chiếu nguyên văn trước khi áp dụng cho trường hợp cụ thể.</p>
-</footer>

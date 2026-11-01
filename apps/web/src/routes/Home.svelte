@@ -1,82 +1,103 @@
 <script lang="ts">
+  // Trang Hôm nay = state router: một thẻ hành động, môn đang học, một thẻ kiểm tra nhanh (spec §3).
   import type { ContentIndex, Level, Subject } from '$lib/content/types';
-  import { loadIndex, loadSubject } from '$lib/content/loader';
+  import { loadIndex, loadSubject, loadConcepts } from '$lib/content/loader';
   import { repo } from '$lib/store/progress-repo';
   import { stats } from '$lib/store/stats';
+  import { LuyenLuatDB } from '$lib/store/db';
   import { gradeFor } from '$lib/game/rank';
-  import SubjectPath from '$lib/ui/SubjectPath.svelte';
+  import { localDay } from '$lib/game/streak';
+  import { hashFor } from '$lib/router.svelte';
   import { GROUPS, sortGroups } from '$lib/ui/groups';
+  import { knownConcepts, pickHeroState, type HeroState } from '$lib/ui/today';
+  import { setRail } from '$lib/ui/rail.svelte';
+  import HeroCard from '$lib/ui/HeroCard.svelte';
+  import HomeRail from '$lib/ui/HomeRail.svelte';
 
+  type Row = { subject: Subject; grade: string | null; mastered: number; total: number };
   let index = $state<ContentIndex | null>(null);
-  let subjects = $state<Subject[]>([]);
-  let levels = $state<Record<string, Level>>({});
-  let grades = $state<Record<string, string | null>>({});
-  let due = $state(0);
-  let best = $state<Record<string, number | null>>({});
+  let hero = $state<HeroState | null>(null);
+  let rows = $state<Row[]>([]);
+  let quick = $state<{ set: ContentIndex['sets'][number]; best: number | null } | null>(null);
+  let week = $state<boolean[]>(Array(7).fill(false));
+  let dueTomorrow = $state(0);
   let error = $state('');
 
   async function load() {
     try {
-      document.title = 'Luyện Luật';
-      index = await loadIndex();
-      subjects = await Promise.all(index.subjects.map((s) => loadSubject(s.id)));
+      document.title = 'Hôm nay · Luyện Luật';
+      const idx = await loadIndex();
+      index = idx;
+      await stats.ensureV1Migrated(idx);
+      const subjects = await Promise.all(idx.subjects.map((s) => loadSubject(s.id)));
       const all = await repo.all();
-      levels = Object.fromEntries(all.map((p) => [p.conceptId, p.level]));
-      for (const s of subjects) {
-        const ids = s.chapters.flatMap((c) => c.lessons.flatMap((l) => l.concepts));
-        const mastered = ids.filter((id) => (levels[id] ?? 0) >= 5).length;
-        grades[s.id] = ids.length ? gradeFor(mastered / ids.length) : null;
+      const levels = Object.fromEntries(all.map((p) => [p.conceptId, p.level])) as Record<string, Level>;
+
+      const known = knownConcepts(subjects);
+      const due = (await repo.due(new Date())).filter((p) => known.has(p.conceptId)); // bỏ tiến độ của khái niệm đã xoá
+      const terms: Record<string, string> = {};
+      if (due.length) {
+        const bySubject = new Map<string, string[]>();
+        for (const p of due.slice(0, 3)) bySubject.set(p.subject, [...(bySubject.get(p.subject) ?? []), p.conceptId]);
+        for (const [sid, ids] of bySubject) { try { for (const c of await loadConcepts(sid, ids)) terms[c.id] = c.term; } catch { /* file lỗi: giữ slug */ } }
       }
-      due = (await repo.due(new Date())).length;
-      // nhập điểm cao nhất từ web v1 (localStorage) một lần
-      for (const set of index.sets) {
-        let b = await stats.best(set.id);
-        if (b == null) {
-          try {
-            const old = localStorage.getItem(`best:${set.id}`);
-            if (old != null) { b = Number(JSON.parse(old)); await stats.setBest(set.id, b); localStorage.removeItem(`best:${set.id}`); }
-          } catch { /* bỏ qua */ }
-        }
-        best[set.id] = b;
-      }
+      hero = pickHeroState({ due: due.map((p) => ({ conceptId: p.conceptId, term: terms[p.conceptId] })), subjects, levels });
+
+      const started = new Set(all.filter((p) => p.level > 0 && known.has(p.conceptId)).map((p) => p.subject));
+      rows = subjects
+        .filter((s) => started.size === 0 || started.has(s.id))
+        .map((s) => { const ids = s.chapters.flatMap((c) => c.lessons.flatMap((l) => l.concepts)); const mastered = ids.filter((id) => (levels[id] ?? 0) >= 5).length; return { subject: s, grade: ids.length ? gradeFor(mastered / ids.length) : null, mastered, total: ids.length }; });
+
+      // một thẻ kiểm tra nhanh: đề chưa đạt điểm tối đa gần nhất, không thì đề đầu tiên
+      const sets = sortGroups([...new Map(idx.sets.map((s) => [s.group, idx.sets.filter((x) => x.group === s.group)])).entries()]).flatMap(([, v]) => v);
+      let pick = sets[0] ?? null; let pickBest: number | null = null;
+      for (const set of sets) { const b = await stats.best(set.id); if (b == null || b < set.count) { pick = set; pickBest = b; break; } }
+      quick = pick ? { set: pick, best: pickBest } : null;
+
+      // rail: 7 ngày có phiên, hẹn ôn ngày mai
+      try {
+        const db = new LuyenLuatDB();
+        const since = Date.now() - 7 * 86400_000;
+        const days = new Set((await db.reviews.where('at').above(since).toArray()).map((r) => localDay(new Date(r.at))));
+        week = Array.from({ length: 7 }, (_, i) => days.has(localDay(new Date(Date.now() - (6 - i) * 86400_000))));
+      } catch { /* chế độ riêng tư */ }
+      const tomorrow = new Date(); tomorrow.setDate(tomorrow.getDate() + 1); tomorrow.setHours(23, 59, 59, 999);
+      dueTomorrow = (await repo.due(tomorrow)).length;
     } catch (e) { error = (e as Error).message; }
   }
   load();
-  const groups = $derived.by(() => {
-    const m = new Map<string, ContentIndex['sets']>();
-    for (const s of index?.sets ?? []) m.set(s.group, [...(m.get(s.group) ?? []), s]);
-    return sortGroups([...m.entries()]);
-  });
+  $effect(() => setRail(HomeRail, { week, dueTomorrow }));
 </script>
 
 {#if error}
-  <section class="card"><p class="muted">Không tải được dữ liệu ({error}). Nếu mở file trực tiếp, hãy chạy <code>npm run dev</code> trong thư mục web/.</p></section>
-{:else if !index}
+  <section class="card"><p class="muted">Không tải được dữ liệu ({error}). Nếu mở file trực tiếp, hãy chạy <code>npm run dev</code> ở gốc repo.</p></section>
+{:else if !index || !hero}
   <p class="loading">Đang tải…</p>
 {:else}
-  <section class="hero">
-    <h1>Nhớ luật như nhớ tên bạn.</h1>
-    <p class="muted">Học từng khái niệm qua 6 bậc: gặp, nhận biết, phân biệt, điền, tình huống, tự trả lời. Ôn đúng lúc sắp quên.</p>
-  </section>
-  <a class="card today {due ? 'has-due' : ''}" href={due ? '#/on' : '#/'} aria-label={due ? `Ôn hôm nay ${due} khái niệm` : 'Chưa có gì cần ôn'}>
-    <span class="kicker">Ôn hôm nay</span>
-    {#if due}<span class="big">{due}</span><span>khái niệm đang chờ. Vào ôn →</span>
-    {:else}<span class="big">0</span><span>Chưa có gì cần ôn — học mới nào.</span>{/if}
-  </a>
-  {#each subjects as s (s.id)}
-    <SubjectPath subject={s} {levels} grade={grades[s.id] ?? null} />
-  {/each}
-  <h2 class="section-title"><b>Luyện đề 10 câu</b> kiểm tra nhanh</h2>
-  {#each groups as [g, sets] (g)}
-    <p class="kicker">{GROUPS[g] ?? g}</p>
-    <div class="sets">
-      {#each sets as set (set.id)}
-        <a class="set" href="#/bo/{encodeURIComponent(set.id)}">
-          <div><span class="chip">{GROUPS[set.group] ?? set.group}</span><h3>{set.title}</h3></div>
-          <span class="meta">{#if best[set.id] != null}<span class="best">{best[set.id]}/{set.count}</span>điểm cao nhất{:else}{set.count} câu{/if}</span>
-          <p>{set.subtitle}</p>
-        </a>
+  <HeroCard state={hero} />
+
+  {#if rows.length}
+    <h2 class="section-title"><b>Môn đang học</b></h2>
+    <ul class="subject-rows">
+      {#each rows as r (r.subject.id)}
+        <li><a class="subject-row" href={hashFor('subject', { subject: r.subject.id })}>
+          <span class="title"><b>{r.subject.title}</b>{#if r.grade}<span class="chip">{r.grade}</span>{/if}</span>
+          <span class="bar" aria-hidden="true"><span style="width:{r.total ? (r.mastered / r.total) * 100 : 0}%"></span></span>
+          <span class="muted small">{r.mastered}/{r.total} thuần thục</span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a></li>
       {/each}
+    </ul>
+  {/if}
+
+  {#if quick}
+    <h2 class="section-title"><b>Kiểm tra nhanh</b> <a class="more" href={hashFor('quizzes')}>Tất cả đề →</a></h2>
+    <div class="sets one">
+      <a class="set" href={hashFor('quiz', { id: quick.set.id })}>
+        <div><span class="chip">{GROUPS[quick.set.group] ?? quick.set.group}</span><h3>{quick.set.title}</h3></div>
+        <span class="meta">{#if quick.best != null}<span class="best">{quick.best}/{quick.set.count}</span>điểm cao nhất{:else}{quick.set.count} câu{/if}</span>
+        <p>{quick.set.subtitle}</p>
+      </a>
     </div>
-  {/each}
+  {/if}
 {/if}

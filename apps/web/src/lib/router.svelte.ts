@@ -1,4 +1,4 @@
-export type RouteName = 'home' | 'lesson' | 'review' | 'quiz' | 'profile' | 'settings';
+export type RouteName = 'home' | 'subjects' | 'subject' | 'quizzes' | 'lesson' | 'review' | 'quiz' | 'profile' | 'settings';
 export type Route = { name: RouteName; params: Record<string, string> };
 
 const HOME: Route = { name: 'home', params: {} };
@@ -8,7 +8,9 @@ export function parseHash(hash: string): Route {
   const [a, b, c] = segs;
   if (a === 'bo' && b) return { name: 'quiz', params: { id: b } };
   if (a === 'hoc' && b && c) return { name: 'lesson', params: { subject: b, lesson: c } };
-  if (a === 'on') return { name: 'review', params: {} };
+  if (a === 'on') return { name: 'review', params: b ? { subject: b } : {} };
+  if (a === 'mon') return b ? { name: 'subject', params: { subject: b } } : { name: 'subjects', params: {} };
+  if (a === 'luyen-de') return { name: 'quizzes', params: {} };
   if (a === 'toi') return { name: 'profile', params: {} };
   if (a === 'cai-dat') return { name: 'settings', params: {} };
   return HOME;
@@ -19,7 +21,10 @@ export function hashFor(name: RouteName, params: Record<string, string> = {}): s
   switch (name) {
     case 'quiz': return `#/bo/${e(params.id)}`;
     case 'lesson': return `#/hoc/${e(params.subject)}/${e(params.lesson)}`;
-    case 'review': return '#/on';
+    case 'review': return params.subject ? `#/on/${e(params.subject)}` : '#/on';
+    case 'subjects': return '#/mon';
+    case 'subject': return `#/mon/${e(params.subject)}`;
+    case 'quizzes': return '#/luyen-de';
     case 'profile': return '#/toi';
     case 'settings': return '#/cai-dat';
     default: return '#/';

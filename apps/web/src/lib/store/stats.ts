@@ -1,4 +1,5 @@
 import type { StreakState } from '$lib/game/streak';
+import type { ContentIndex } from '$lib/content/types';
 import { LuyenLuatDB } from './db';
 
 const mem = new Map<string, unknown>();
@@ -36,5 +37,23 @@ export const stats = {
   },
   best: (setId: string) => get<number | null>(`best:${setId}`, null),
   setBest: (setId: string, score: number) => set(`best:${setId}`, score),
+  /** Nhập điểm cao nhất từ web v1 (localStorage `best:<id>`) một lần rồi xoá khỏi localStorage. */
+  async migrateV1Best(index: ContentIndex): Promise<void> {
+    if (typeof localStorage === 'undefined') return;
+    for (const set of index.sets) {
+      try {
+        const old = localStorage.getItem(`best:${set.id}`);
+        if (old == null) continue;
+        if ((await stats.best(set.id)) == null) await stats.setBest(set.id, Number(JSON.parse(old)));
+        localStorage.removeItem(`best:${set.id}`);
+      } catch { /* bỏ qua giá trị hỏng */ }
+    }
+  },
+  /** Gọi ở mọi trang đọc `best` (Hôm nay, Luyện đề): chạy migrateV1Best đúng một lần cho cả phiên. */
+  ensureV1Migrated(index: ContentIndex): Promise<void> {
+    migrated ??= stats.migrateV1Best(index);
+    return migrated;
+  },
   get, set,
 };
+let migrated: Promise<void> | undefined;
