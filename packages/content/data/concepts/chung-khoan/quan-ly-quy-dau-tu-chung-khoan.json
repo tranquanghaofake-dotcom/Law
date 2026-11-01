@@ -1,0 +1,113 @@
+{
+ "id": "quan-ly-quy-dau-tu-chung-khoan",
+ "subject": "chung-khoan",
+ "chapter": "c7-quan-ly-quy-giam-sat",
+ "term": "Quản lý quỹ đầu tư chứng khoán (nghiệp vụ)",
+ "definition": "Quản lý quỹ đầu tư chứng khoán là hoạt động quản lý trong việc mua, bán, nắm giữ chứng khoán và các tài sản khác của quỹ đầu tư chứng khoán.",
+ "plain": "Đối tượng được quản lý là TÀI SẢN CỦA QUỸ (tiền chung của nhiều nhà đầu tư). Công ty quản lý quỹ quyết định mua, bán, nắm giữ theo Điều lệ quỹ và hợp đồng với ngân hàng giám sát; nhà đầu tư không can thiệp hằng ngày. Khác \"quản lý danh mục\": quản lý tiền của TỪNG nhà đầu tư riêng theo ủy thác.",
+ "example": "Quản lý quỹ mở 2.000 tỷ của hàng nghìn nhà đầu tư là quản lý quỹ; quản lý riêng 300 tỷ cho một quỹ hưu trí theo hợp đồng ủy thác là quản lý danh mục.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 36 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quan-ly-danh-muc-dau-tu",
+  "nghiep-vu-cong-ty-quan-ly-quy",
+  "quy-dau-tu-chung-khoan"
+ ],
+ "keywords": [
+  "tài sản của quỹ",
+  "mua, bán, nắm giữ"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 36 Điều 4, quản lý quỹ đầu tư chứng khoán là hoạt động quản lý tài sản của ai?",
+   "options": [
+    "Quỹ đầu tư chứng khoán",
+    "Từng nhà đầu tư theo ủy thác",
+    "Công ty chứng khoán",
+    "Ngân hàng giám sát"
+   ],
+   "answer": 0,
+   "explain": "Khoản 36 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 36 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai thực hiện nghiệp vụ quản lý quỹ đầu tư chứng khoán?",
+   "options": [
+    "Công ty quản lý quỹ đầu tư chứng khoán",
+    "Ngân hàng giám sát",
+    "Công ty chứng khoán",
+    "Ủy ban Chứng khoán Nhà nước"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 73.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 73 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quản lý quỹ",
+   "right": "Quản lý danh mục",
+   "cases": [
+    {
+     "text": "Quản lý tài sản chung của quỹ đầu tư chứng khoán",
+     "answer": "left"
+    },
+    {
+     "text": "Quản lý theo ủy thác của từng nhà đầu tư",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 35 và 36 Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quản lý quỹ đầu tư chứng khoán là hoạt động quản lý trong việc mua, bán, {{nắm giữ}} chứng khoán và các tài sản khác của {{quỹ đầu tư chứng khoán}}.",
+   "bank_extra": [
+    "môi giới",
+    "khách hàng cá nhân"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công ty quản lý quỹ thực hiện quản lý quỹ theo Luật Chứng khoán, Điều lệ quỹ và hợp đồng ký với {{ngân hàng giám sát}}.",
+   "bank_extra": [
+    "Sở giao dịch",
+    "công ty kiểm toán"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Trong nghiệp vụ quản lý quỹ, nhà đầu tư góp vốn vào quỹ được trực tiếp quyết định từng giao dịch mua bán.",
+   "answer": false,
+   "explain": "Sai. Nhà đầu tư không kiểm soát hằng ngày quyết định đầu tư (khoản 37 Điều 4); công ty quản lý quỹ quyết định."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Định nghĩa nghiệp vụ quản lý quỹ đầu tư chứng khoán và phân biệt với quản lý danh mục.",
+   "model": "Quản lý quỹ là hoạt động quản lý việc mua, bán, nắm giữ chứng khoán và tài sản khác của quỹ đầu tư chứng khoán (khoản 36 Điều 4). Quản lý danh mục là quản lý theo ủy thác của từng nhà đầu tư (khoản 35). Cả hai do công ty quản lý quỹ thực hiện.",
+   "keywords": [
+    "tài sản của quỹ",
+    "mua, bán, nắm giữ",
+    "ủy thác của từng nhà đầu tư"
+   ]
+  }
+ ]
+}

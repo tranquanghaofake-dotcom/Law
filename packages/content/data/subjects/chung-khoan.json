@@ -170,6 +170,34 @@
           ]
         }
       ]
+    },
+    {
+      "id": "c7-quan-ly-quy-giam-sat",
+      "title": "Chương VII. Công ti quản lí quỹ đầu tư chứng khoán và ngân hàng giám sát",
+      "lessons": [
+        {
+          "id": "ck7-1",
+          "title": "Công ty quản lý quỹ: nghiệp vụ, điều kiện, nghĩa vụ",
+          "concepts": [
+            "nghiep-vu-cong-ty-quan-ly-quy",
+            "quan-ly-quy-dau-tu-chung-khoan",
+            "quan-ly-danh-muc-dau-tu",
+            "dieu-kien-cong-ty-quan-ly-quy",
+            "nghia-vu-cong-ty-quan-ly-quy"
+          ]
+        },
+        {
+          "id": "ck7-2",
+          "title": "Ngân hàng giám sát và quan hệ với nhà đầu tư quỹ",
+          "concepts": [
+            "ngan-hang-giam-sat",
+            "nghia-vu-ngan-hang-giam-sat",
+            "han-che-ngan-hang-giam-sat",
+            "dai-hoi-nha-dau-tu",
+            "thay-the-cong-ty-quan-ly-quy-ngan-hang-giam-sat"
+          ]
+        }
+      ]
     }
   ]
 }

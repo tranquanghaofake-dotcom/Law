@@ -1,0 +1,124 @@
+{
+ "id": "ngan-hang-giam-sat",
+ "subject": "chung-khoan",
+ "chapter": "c7-quan-ly-quy-giam-sat",
+ "term": "Ngân hàng giám sát",
+ "definition": "Ngân hàng giám sát là ngân hàng thương mại có Giấy chứng nhận đăng ký hoạt động lưu ký chứng khoán do Ủy ban Chứng khoán Nhà nước cấp, thực hiện các dịch vụ lưu ký và giám sát việc quản lý quỹ đại chúng, công ty đầu tư chứng khoán.",
+ "plain": "Cơ chế \"hai chìa khóa\": công ty quản lý quỹ RA QUYẾT ĐỊNH đầu tư nhưng KHÔNG GIỮ tài sản; ngân hàng giám sát GIỮ tài sản (lưu ký) và GIÁM SÁT công ty quản lý quỹ có làm đúng luật, đúng Điều lệ không. Nhờ vậy công ty quản lý quỹ khó \"ôm tiền bỏ trốn\". Ngân hàng giám sát bắt buộc với quỹ đại chúng, công ty đầu tư chứng khoán (đại chúng); quỹ thành viên dùng ngân hàng lưu ký.",
+ "example": "Công ty quản lý quỹ ra lệnh chuyển 50 tỷ của quỹ vào tài khoản một công ty lạ không có trong danh mục đầu tư hợp lệ: ngân hàng giám sát chỉ thu, chi theo yêu cầu HỢP PHÁP (điểm d khoản 2 Điều 116) nên phải từ chối và báo cáo Ủy ban.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 116 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nghia-vu-ngan-hang-giam-sat",
+  "han-che-ngan-hang-giam-sat",
+  "nghia-vu-cong-ty-quan-ly-quy"
+ ],
+ "keywords": [
+  "ngân hàng thương mại",
+  "Giấy chứng nhận đăng ký hoạt động lưu ký",
+  "lưu ký và giám sát",
+  "hai chìa khóa"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 1 Điều 116, ngân hàng giám sát phải là chủ thể nào?",
+   "options": [
+    "Ngân hàng thương mại có Giấy chứng nhận đăng ký hoạt động lưu ký chứng khoán do Ủy ban cấp",
+    "Bất kỳ công ty chứng khoán nào",
+    "Ngân hàng Nhà nước Việt Nam",
+    "Công ty quản lý quỹ khác"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 116.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 116 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ngân hàng giám sát giám sát việc quản lý của chủ thể nào?",
+   "options": [
+    "Quỹ đại chúng, công ty đầu tư chứng khoán",
+    "Mọi công ty niêm yết",
+    "Sở giao dịch chứng khoán",
+    "Công ty chứng khoán"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 116.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 116 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Công ty quản lý quỹ",
+   "right": "Ngân hàng giám sát",
+   "cases": [
+    {
+     "text": "Ra quyết định đầu tư tài sản của quỹ",
+     "answer": "left"
+    },
+    {
+     "text": "Lưu ký, bảo quản tài sản của quỹ đại chúng",
+     "answer": "right"
+    },
+    {
+     "text": "Giám sát việc tuân thủ Luật và Điều lệ quỹ",
+     "answer": "right"
+    },
+    {
+     "text": "Xác định giá trị tài sản ròng",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 90, 106, 116."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ngân hàng giám sát là {{ngân hàng thương mại}} có Giấy chứng nhận đăng ký hoạt động {{lưu ký}} chứng khoán do Ủy ban Chứng khoán Nhà nước cấp.",
+   "bank_extra": [
+    "công ty chứng khoán",
+    "môi giới"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ngân hàng giám sát thực hiện các dịch vụ lưu ký và {{giám sát}} việc quản lý quỹ đại chúng, công ty đầu tư chứng khoán.",
+   "bank_extra": [
+    "bảo lãnh",
+    "định giá cổ phiếu"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Ngân hàng giám sát và công ty quản lý quỹ có thể là cùng một chủ thể.",
+   "answer": false,
+   "explain": "Sai. Mô hình đòi hỏi tách bạch; Điều 117 còn cấm ngân hàng giám sát là người có liên quan hoặc có quan hệ sở hữu, vay, cho vay với công ty quản lý quỹ."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm và vai trò của ngân hàng giám sát.",
+   "model": "Ngân hàng thương mại có Giấy chứng nhận đăng ký hoạt động lưu ký chứng khoán do Ủy ban cấp, thực hiện lưu ký và giám sát việc quản lý quỹ đại chúng, công ty đầu tư chứng khoán (khoản 1 Điều 116). Vai trò: giữ tài sản tách biệt, giám sát công ty quản lý quỹ tuân thủ luật và Điều lệ, thu chi theo yêu cầu hợp pháp, xác nhận báo cáo, NAV, báo cáo Ủy ban khi phát hiện vi phạm.",
+   "keywords": [
+    "ngân hàng thương mại",
+    "lưu ký",
+    "giám sát",
+    "quỹ đại chúng"
+   ]
+  }
+ ]
+}

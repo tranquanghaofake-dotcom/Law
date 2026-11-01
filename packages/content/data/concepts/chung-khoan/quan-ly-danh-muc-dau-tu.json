@@ -1,0 +1,124 @@
+{
+ "id": "quan-ly-danh-muc-dau-tu",
+ "subject": "chung-khoan",
+ "chapter": "c7-quan-ly-quy-giam-sat",
+ "term": "Quản lý danh mục đầu tư chứng khoán",
+ "definition": "Quản lý danh mục đầu tư chứng khoán là hoạt động quản lý theo ủy thác của từng nhà đầu tư trong việc mua, bán, nắm giữ chứng khoán và các tài sản khác của nhà đầu tư.",
+ "plain": "Nhà đầu tư (thường là tổ chức hoặc cá nhân giàu) ký hợp đồng ủy thác để công ty quản lý quỹ đầu tư hộ tài sản CỦA RIÊNG mình. Tài sản ủy thác vẫn là của khách: công ty phải lưu ký toàn bộ, tách biệt tới từng khách hàng và với tài sản của công ty (khoản 4 Điều 90); không được cam kết lợi nhuận (khoản 1 Điều 91).",
+ "example": "Một công ty bảo hiểm ủy thác 1.000 tỷ cho công ty quản lý quỹ B đầu tư trái phiếu theo hạn mức rủi ro trong hợp đồng: B quản lý danh mục, tài sản lưu ký tách biệt đứng tên công ty bảo hiểm.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 35 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quan-ly-quy-dau-tu-chung-khoan",
+  "nghia-vu-cong-ty-quan-ly-quy"
+ ],
+ "keywords": [
+  "ủy thác",
+  "từng nhà đầu tư",
+  "tài sản của nhà đầu tư"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 35 Điều 4, quản lý danh mục đầu tư chứng khoán được thực hiện trên cơ sở nào?",
+   "options": [
+    "Ủy thác của từng nhà đầu tư",
+    "Quyết định của Đại hội nhà đầu tư quỹ",
+    "Chỉ định của Ủy ban Chứng khoán",
+    "Quy chế của Sở giao dịch"
+   ],
+   "answer": 0,
+   "explain": "Khoản 35 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 35 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tài sản của khách hàng ủy thác trên tài khoản lưu ký của công ty quản lý quỹ thuộc sở hữu của ai?",
+   "options": [
+    "Khách hàng ủy thác",
+    "Công ty quản lý quỹ",
+    "Ngân hàng lưu ký",
+    "Đồng sở hữu"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 88.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 88 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quản lý danh mục",
+   "right": "Tư vấn đầu tư",
+   "cases": [
+    {
+     "text": "Công ty trực tiếp mua, bán, nắm giữ tài sản theo ủy thác",
+     "answer": "left"
+    },
+    {
+     "text": "Công ty đưa khuyến nghị, khách hàng tự quyết định",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 35 và 32 Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quản lý danh mục đầu tư chứng khoán là hoạt động quản lý theo {{ủy thác}} của {{từng nhà đầu tư}} trong việc mua, bán, nắm giữ chứng khoán và tài sản khác của nhà đầu tư.",
+   "bank_extra": [
+    "chỉ định",
+    "quỹ đại chúng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Khi quản lý tài sản ủy thác, công ty quản lý quỹ phải {{lưu ký}} toàn bộ tài sản ủy thác và bảo đảm nguyên tắc độc lập, tách biệt tới từng khách hàng.",
+   "bank_extra": [
+    "bán lại",
+    "gộp"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Công ty quản lý quỹ C dùng tạm cổ phiếu của khách ủy thác D để cầm cố vay tiền cho chính công ty. Nhận định nào đúng?",
+   "options": [
+    "Vi phạm: tài sản ủy thác là của D, phải tách biệt với tài sản công ty",
+    "Hợp pháp nếu trả lại trong 30 ngày",
+    "Hợp pháp vì C đang quản lý tài sản",
+    "Hợp pháp nếu Ủy ban không phản đối"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 88; khoản 4 Điều 90.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 90 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Định nghĩa quản lý danh mục đầu tư chứng khoán và nêu nghĩa vụ đối với tài sản ủy thác.",
+   "model": "Quản lý theo ủy thác của từng nhà đầu tư việc mua, bán, nắm giữ chứng khoán và tài sản khác của nhà đầu tư (khoản 35 Điều 4). Tài sản ủy thác là của khách hàng (khoản 2 Điều 88); công ty phải lưu ký toàn bộ, độc lập và tách biệt tới từng khách hàng và với tài sản công ty (khoản 4 Điều 90).",
+   "keywords": [
+    "ủy thác",
+    "từng nhà đầu tư",
+    "lưu ký toàn bộ",
+    "tách biệt"
+   ]
+  }
+ ]
+}

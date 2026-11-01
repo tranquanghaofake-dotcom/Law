@@ -1,0 +1,120 @@
+{
+ "id": "dai-hoi-nha-dau-tu",
+ "subject": "chung-khoan",
+ "chapter": "c7-quan-ly-quy-giam-sat",
+ "term": "Đại hội nhà đầu tư quỹ đầu tư chứng khoán",
+ "definition": "Đại hội nhà đầu tư quỹ đầu tư chứng khoán bao gồm tất cả các nhà đầu tư, là cơ quan quyết định cao nhất của quỹ đầu tư chứng khoán.",
+ "plain": "Đại hội nhà đầu tư giống Đại hội đồng cổ đông của một công ty. Đây là nơi nhà đầu tư \"cầm\" quyền lực với công ty quản lý quỹ và ngân hàng giám sát: có quyền thay đổi hai chủ thể này, thay đổi mức phí trả cho họ, bắt họ xuất trình sổ sách, xử lý vi phạm gây tổn thất cho quỹ. Đại hội còn bầu Ban đại diện quỹ, sửa Điều lệ, quyết định giải thể, sáp nhập quỹ. Họp hằng năm hoặc bất thường.",
+ "example": "Quỹ mở M thua lỗ kéo dài vì công ty quản lý quỹ đầu tư trái chính sách đã công bố. Đại hội nhà đầu tư họp bất thường, quyết định thay công ty quản lý quỹ và yêu cầu xuất trình sổ sách giao dịch.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 102 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quyen-nha-dau-tu-quy",
+  "thay-the-cong-ty-quan-ly-quy-ngan-hang-giam-sat",
+  "ngan-hang-giam-sat"
+ ],
+ "keywords": [
+  "cơ quan quyết định cao nhất",
+  "thay đổi công ty quản lý quỹ, ngân hàng giám sát",
+  "bầu Ban đại diện quỹ",
+  "hằng năm hoặc bất thường"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Cơ quan quyết định cao nhất của quỹ đầu tư chứng khoán là gì?",
+   "options": [
+    "Đại hội nhà đầu tư",
+    "Ban đại diện quỹ",
+    "Hội đồng quản trị công ty quản lý quỹ",
+    "Ngân hàng giám sát"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 102.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 102 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai có quyền quyết định thay đổi công ty quản lý quỹ, ngân hàng giám sát?",
+   "options": [
+    "Đại hội nhà đầu tư",
+    "Ủy ban Chứng khoán Nhà nước",
+    "Chính công ty quản lý quỹ",
+    "Sở giao dịch chứng khoán"
+   ],
+   "answer": 0,
+   "explain": "Điểm c khoản 2 Điều 102.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 102 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Đại hội nhà đầu tư",
+   "right": "Ban đại diện quỹ",
+   "cases": [
+    {
+     "text": "Bầu, miễn nhiệm Chủ tịch và thành viên Ban đại diện",
+     "answer": "left"
+    },
+    {
+     "text": "Đại diện cho quyền lợi của nhà đầu tư giữa hai kỳ đại hội, từ 03 đến 11 thành viên",
+     "answer": "right"
+    },
+    {
+     "text": "Quyết định giải thể, sáp nhập quỹ",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 102 và Điều 109."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đại hội nhà đầu tư quỹ đầu tư chứng khoán bao gồm {{tất cả các nhà đầu tư}}, là cơ quan quyết định {{cao nhất}} của quỹ.",
+   "bank_extra": [
+    "các nhà đầu tư lớn",
+    "tư vấn"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đại hội nhà đầu tư được triệu tập {{hằng năm}} hoặc bất thường.",
+   "bank_extra": [
+    "hằng quý",
+    "05 năm một lần"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Đại hội nhà đầu tư có quyền yêu cầu công ty quản lý quỹ và ngân hàng giám sát xuất trình sổ sách, giấy tờ giao dịch.",
+   "answer": true,
+   "explain": "Đúng. Điểm e khoản 2 Điều 102."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày địa vị và quyền hạn chính của Đại hội nhà đầu tư quỹ đầu tư chứng khoán.",
+   "model": "Gồm tất cả nhà đầu tư, là cơ quan quyết định cao nhất của quỹ (khoản 1 Điều 102). Quyền: bầu, miễn nhiệm Ban đại diện; quyết định thay đổi chính sách đầu tư, thay đổi công ty quản lý quỹ, ngân hàng giám sát, mức phí; sửa Điều lệ; chia, tách, hợp nhất, sáp nhập, giải thể quỹ; yêu cầu xuất trình sổ sách; thông qua báo cáo, chọn kiểm toán; xử lý vi phạm. Họp hằng năm hoặc bất thường.",
+   "keywords": [
+    "cao nhất",
+    "Ban đại diện",
+    "thay đổi công ty quản lý quỹ",
+    "giải thể"
+   ]
+  }
+ ]
+}
