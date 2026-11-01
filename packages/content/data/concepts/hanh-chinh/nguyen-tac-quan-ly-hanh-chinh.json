@@ -1,0 +1,115 @@
+{
+ "id": "nguyen-tac-quan-ly-hanh-chinh",
+ "subject": "hanh-chinh",
+ "chapter": "v4",
+ "term": "Các nguyên tắc cơ bản trong quản lý hành chính nhà nước",
+ "definition": "Nguyên tắc quản lý hành chính nhà nước là những tư tưởng chủ đạo, có tính chất bắt buộc chung, làm nền tảng cho tổ chức và hoạt động quản lý hành chính nhà nước. Các nguyên tắc thường được chia thành hai nhóm: nhóm nguyên tắc chính trị – xã hội và nhóm nguyên tắc tổ chức – kỹ thuật.",
+ "plain": "Nhóm CHÍNH TRỊ – XÃ HỘI: Đảng lãnh đạo; nhân dân tham gia quản lý; tập trung dân chủ (Điều 8 Hiến pháp 2013); bình đẳng giữa các dân tộc; pháp chế xã hội chủ nghĩa. Nhóm TỔ CHỨC – KỸ THUẬT: quản lý theo ngành kết hợp với theo địa giới hành chính (lãnh thổ); phân biệt quản lý nhà nước về kinh tế với quản lý sản xuất kinh doanh của doanh nghiệp; quản lý theo ngành kết hợp với theo chức năng. Nhiều nguyên tắc đã được luật hóa, ví dụ Điều 5 Luật Tổ chức Chính phủ 2025 (tập trung dân chủ, cấp dưới phục tùng cấp trên, phân quyền, phân cấp).",
+ "example": "Bộ Y tế quản lý thống nhất ngành y tế (theo ngành) đồng thời Sở Y tế chịu sự chỉ đạo của UBND cấp tỉnh (theo lãnh thổ): nguyên tắc kết hợp quản lý theo ngành với theo lãnh thổ.",
+ "source": {
+  "kind": "textbook",
+  "cite": "Giáo trình Luật Hành chính Việt Nam, Trường Đại học Luật Hà Nội; đề cương Luật Hành chính vấn đề 4 — tóm lược quan điểm học thuật phổ biến, chưa đối chiếu nguyên văn"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quan-ly-hanh-chinh-nha-nuoc",
+  "nguyen-tac-to-chuc-chinh-phu",
+  "phuong-phap-quan-ly-hanh-chinh"
+ ],
+ "keywords": [
+  "chính trị – xã hội",
+  "tổ chức – kỹ thuật",
+  "tập trung dân chủ",
+  "ngành kết hợp lãnh thổ"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nguyên tắc nào thuộc nhóm tổ chức – kỹ thuật?",
+   "options": [
+    "Kết hợp quản lý theo ngành với quản lý theo địa giới hành chính",
+    "Đảng lãnh đạo",
+    "Nhân dân tham gia quản lý",
+    "Bình đẳng giữa các dân tộc"
+   ],
+   "answer": 0,
+   "explain": "Học thuyết.",
+   "source": {
+    "kind": "statute",
+    "cite": "Học thuyết x"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nguyên tắc tập trung dân chủ được ghi nhận ở đâu?",
+   "options": [
+    "Điều 8 Hiến pháp 2013 và luật tổ chức bộ máy",
+    "Chỉ trong giáo trình",
+    "Bộ luật Dân sự",
+    "Không được ghi nhận"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 8 Hiến pháp 2013; khoản 1 Điều 5 Luật Tổ chức Chính phủ 2025.",
+   "source": {
+    "kind": "statute",
+    "cite": "Học thuyết x"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Nhóm chính trị – xã hội",
+   "right": "Nhóm tổ chức – kỹ thuật",
+   "cases": [
+    {
+     "text": "Pháp chế xã hội chủ nghĩa",
+     "answer": "left"
+    },
+    {
+     "text": "Phân biệt quản lý nhà nước về kinh tế với quản lý sản xuất kinh doanh",
+     "answer": "right"
+    }
+   ],
+   "explain": "Học thuyết."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nguyên tắc quản lý hành chính nhà nước chia thành nhóm nguyên tắc {{chính trị – xã hội}} và nhóm nguyên tắc {{tổ chức – kỹ thuật}}.",
+   "bank_extra": [
+    "dân sự",
+    "thương mại"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quản lý theo {{ngành}} kết hợp với quản lý theo địa giới {{hành chính}}.",
+   "bank_extra": [
+    "nhiệm kỳ",
+    "tôn giáo"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Các nguyên tắc quản lý hành chính nhà nước không có giá trị bắt buộc.",
+   "answer": false,
+   "explain": "Sai. Đó là tư tưởng chủ đạo có tính bắt buộc chung; nhiều nguyên tắc đã được Hiến pháp, luật ghi nhận."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Kể các nhóm nguyên tắc cơ bản trong quản lý hành chính nhà nước.",
+   "model": "Chính trị – xã hội: Đảng lãnh đạo, nhân dân tham gia quản lý, tập trung dân chủ, bình đẳng dân tộc, pháp chế XHCN; tổ chức – kỹ thuật: kết hợp quản lý theo ngành với lãnh thổ, phân biệt quản lý nhà nước về kinh tế với sản xuất kinh doanh, kết hợp theo ngành với theo chức năng.",
+   "keywords": [
+    "chính trị – xã hội",
+    "tập trung dân chủ",
+    "tổ chức – kỹ thuật",
+    "ngành"
+   ]
+  }
+ ]
+}

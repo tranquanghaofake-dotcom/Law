@@ -1,0 +1,116 @@
+{
+ "id": "nguyen-tac-thi-hanh-cong-vu",
+ "subject": "hanh-chinh",
+ "chapter": "v9",
+ "term": "Nguyên tắc trong thi hành công vụ",
+ "definition": "Tuân thủ Hiến pháp và pháp luật. Tôn trọng, bảo đảm, bảo vệ quyền con người, quyền công dân, bảo vệ lợi ích của Nhà nước, quyền và lợi ích hợp pháp của tổ chức và cá nhân. Công khai, minh bạch, đúng thẩm quyền và có sự kiểm tra, giám sát. Bảo đảm tính hệ thống, thống nhất, liên tục, thông suốt, chuyên nghiệp, hiện đại và hiệu quả. Bảo đảm thứ bậc hành chính và sự phối hợp chặt chẽ.",
+ "plain": "Năm nguyên tắc thi hành công vụ (Điều 2) khác với bảy nguyên tắc QUẢN LÝ cán bộ, công chức (Điều 3: Đảng lãnh đạo, Nhà nước quản lý; kết hợp tiêu chuẩn chức danh, vị trí việc làm, biên chế; tập trung dân chủ; đánh giá theo kết quả, hiệu quả; thống nhất liên thông trong hệ thống chính trị; bình đẳng giới; ưu tiên người dân tộc thiểu số).",
+ "example": "Công chức một phòng địa chính tự ý ký giấy xác nhận vượt thẩm quyền: vi phạm nguyên tắc \"đúng thẩm quyền\" (khoản 3 Điều 2).",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 2 Luật Cán bộ, công chức 2025 (80/2025/QH15)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Luat-Can-bo-cong-chuc-2025-so-80-2025-QH15-649688.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "can-bo-cong-chuc",
+  "nguyen-tac-to-chuc-chinh-phu"
+ ],
+ "keywords": [
+  "tuân thủ Hiến pháp và pháp luật",
+  "công khai, minh bạch, đúng thẩm quyền",
+  "thứ bậc hành chính",
+  "chuyên nghiệp, hiện đại"
+ ],
+ "note": "Luật Cán bộ, công chức 80/2025/QH15 có hiệu lực từ 01/7/2025, thay thế Luật Cán bộ, công chức 22/2008/QH12; bỏ cấp huyện, chỉ còn trung ương, cấp tỉnh, cấp xã.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nguyên tắc nào thuộc nguyên tắc trong thi hành công vụ (Điều 2 Luật Cán bộ, công chức 2025)?",
+   "options": [
+    "Công khai, minh bạch, đúng thẩm quyền và có sự kiểm tra, giám sát",
+    "Ưu tiên người có thâm niên",
+    "Bí mật mọi hoạt động",
+    "Lợi ích cơ quan trên hết"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 2.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 2 Luật Cán bộ, công chức 2025 (80/2025/QH15)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nguyên tắc \"thực hiện bình đẳng giới\" thuộc nhóm nào trong Luật Cán bộ, công chức 2025?",
+   "options": [
+    "Nguyên tắc quản lý cán bộ, công chức (Điều 3)",
+    "Nguyên tắc thi hành công vụ (Điều 2)",
+    "Nghĩa vụ của công dân",
+    "Không được quy định"
+   ],
+   "answer": 0,
+   "explain": "Khoản 6 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 3 Luật Cán bộ, công chức 2025 (80/2025/QH15)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Nguyên tắc thi hành công vụ (Điều 2)",
+   "right": "Nguyên tắc quản lý cán bộ, công chức (Điều 3)",
+   "cases": [
+    {
+     "text": "Bảo đảm thứ bậc hành chính và sự phối hợp chặt chẽ",
+     "answer": "left"
+    },
+    {
+     "text": "Kết hợp tiêu chuẩn chức danh, vị trí việc làm và chỉ tiêu biên chế",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 2, 3."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công khai, minh bạch, đúng {{thẩm quyền}} và có sự kiểm tra, {{giám sát}}.",
+   "bank_extra": [
+    "quan hệ",
+    "báo cáo"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bảo đảm {{thứ bậc hành chính}} và sự phối hợp chặt chẽ.",
+   "bank_extra": [
+    "quyền lợi riêng",
+    "thâm niên"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tôn trọng, bảo đảm, bảo vệ quyền con người, quyền công dân là một nguyên tắc trong thi hành công vụ.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 2."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các nguyên tắc trong thi hành công vụ.",
+   "model": "Tuân thủ Hiến pháp, pháp luật; tôn trọng, bảo vệ quyền con người, quyền công dân, lợi ích Nhà nước, tổ chức, cá nhân; công khai, minh bạch, đúng thẩm quyền, có kiểm tra, giám sát; hệ thống, thống nhất, liên tục, chuyên nghiệp, hiệu quả; thứ bậc hành chính và phối hợp chặt chẽ (Điều 2).",
+   "keywords": [
+    "Hiến pháp",
+    "quyền con người",
+    "đúng thẩm quyền",
+    "thứ bậc hành chính"
+   ]
+  }
+ ]
+}

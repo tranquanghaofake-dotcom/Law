@@ -1,0 +1,119 @@
+{
+ "id": "phuong-phap-quan-ly-hanh-chinh",
+ "subject": "hanh-chinh",
+ "chapter": "v5",
+ "term": "Hình thức và phương pháp quản lý hành chính nhà nước",
+ "definition": "Hình thức quản lý hành chính nhà nước là sự biểu hiện ra bên ngoài của hoạt động quản lý, gồm: ban hành văn bản quy phạm, ban hành văn bản áp dụng pháp luật, thực hiện những hoạt động khác mang tính pháp lý và áp dụng biện pháp tổ chức – tác nghiệp. Phương pháp quản lý hành chính nhà nước là cách thức chủ thể quản lý tác động lên đối tượng quản lý, gồm thuyết phục, cưỡng chế, phương pháp hành chính và phương pháp kinh tế.",
+ "plain": "HÌNH THỨC = \"làm gì\" (ra văn bản, cấp giấy phép, tổ chức hội nghị…); PHƯƠNG PHÁP = \"tác động bằng cách nào\". THUYẾT PHỤC là phương pháp cơ bản, đi trước; CƯỠNG CHẾ hỗ trợ khi thuyết phục không hiệu quả (cưỡng chế hành chính, kỷ luật, hình sự, dân sự). PHƯƠNG PHÁP HÀNH CHÍNH: tác động trực tiếp bằng mệnh lệnh; PHƯƠNG PHÁP KINH TẾ: tác động gián tiếp qua lợi ích vật chất (thuế, tín dụng, thưởng, phạt tiền).",
+ "example": "Để giảm ùn tắc, thành phố vừa tuyên truyền (thuyết phục), vừa xử phạt vi phạm (cưỡng chế), vừa giảm phí gửi xe ở ngoại vi (phương pháp kinh tế).",
+ "source": {
+  "kind": "textbook",
+  "cite": "Giáo trình Luật Hành chính Việt Nam, Trường Đại học Luật Hà Nội; đề cương Luật Hành chính vấn đề 5 — tóm lược quan điểm học thuật phổ biến, chưa đối chiếu nguyên văn"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nguyen-tac-quan-ly-hanh-chinh",
+  "quyet-dinh-hanh-chinh",
+  "cuong-che-thi-hanh-xu-phat"
+ ],
+ "keywords": [
+  "văn bản quy phạm, áp dụng pháp luật",
+  "thuyết phục là cơ bản",
+  "cưỡng chế hỗ trợ",
+  "phương pháp kinh tế tác động gián tiếp"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Phương pháp quản lý nào được coi là cơ bản, áp dụng trước?",
+   "options": [
+    "Thuyết phục",
+    "Cưỡng chế",
+    "Phương pháp kinh tế",
+    "Phương pháp hành chính"
+   ],
+   "answer": 0,
+   "explain": "Học thuyết.",
+   "source": {
+    "kind": "statute",
+    "cite": "Học thuyết x"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Việc Nhà nước dùng chính sách thuế để định hướng hành vi doanh nghiệp là phương pháp nào?",
+   "options": [
+    "Phương pháp kinh tế",
+    "Cưỡng chế",
+    "Thuyết phục",
+    "Phương pháp hành chính"
+   ],
+   "answer": 0,
+   "explain": "Học thuyết: tác động gián tiếp qua lợi ích vật chất.",
+   "source": {
+    "kind": "statute",
+    "cite": "Học thuyết x"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hình thức quản lý",
+   "right": "Phương pháp quản lý",
+   "cases": [
+    {
+     "text": "Ban hành văn bản áp dụng pháp luật",
+     "answer": "left"
+    },
+    {
+     "text": "Cưỡng chế",
+     "answer": "right"
+    },
+    {
+     "text": "Tổ chức – tác nghiệp",
+     "answer": "left"
+    }
+   ],
+   "explain": "Học thuyết."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Phương pháp quản lý hành chính nhà nước gồm thuyết phục, {{cưỡng chế}}, phương pháp hành chính và phương pháp {{kinh tế}}.",
+   "bank_extra": [
+    "hòa giải",
+    "dân sự"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Phương pháp hành chính tác động {{trực tiếp}} bằng mệnh lệnh; phương pháp kinh tế tác động {{gián tiếp}} qua lợi ích vật chất.",
+   "bank_extra": [
+    "gián tiếp",
+    "trực tiếp"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Cưỡng chế là phương pháp chủ yếu, luôn áp dụng trước thuyết phục.",
+   "answer": false,
+   "explain": "Sai. Thuyết phục là phương pháp cơ bản; cưỡng chế chỉ áp dụng khi thuyết phục không hiệu quả."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Phân biệt hình thức và phương pháp quản lý hành chính nhà nước.",
+   "model": "Hình thức là biểu hiện bên ngoài của hoạt động quản lý (ban hành văn bản quy phạm, văn bản áp dụng pháp luật, hoạt động pháp lý khác, tổ chức – tác nghiệp); phương pháp là cách thức tác động (thuyết phục, cưỡng chế, hành chính, kinh tế).",
+   "keywords": [
+    "văn bản",
+    "tổ chức – tác nghiệp",
+    "thuyết phục",
+    "cưỡng chế"
+   ]
+  }
+ ]
+}

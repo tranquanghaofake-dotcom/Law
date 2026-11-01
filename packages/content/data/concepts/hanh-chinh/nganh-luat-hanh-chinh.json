@@ -1,0 +1,114 @@
+{
+ "id": "nganh-luat-hanh-chinh",
+ "subject": "hanh-chinh",
+ "chapter": "v2",
+ "term": "Ngành luật hành chính: đối tượng và phương pháp điều chỉnh",
+ "definition": "Luật hành chính là ngành luật bao gồm tổng thể các quy phạm pháp luật điều chỉnh những quan hệ xã hội phát sinh trong quá trình quản lý hành chính nhà nước. Phương pháp điều chỉnh đặc trưng của luật hành chính là phương pháp mệnh lệnh – phục tùng, xuất phát từ sự bất bình đẳng giữa các bên trong quan hệ quản lý.",
+ "plain": "Đối tượng điều chỉnh: quan hệ quản lý hình thành khi (1) cơ quan hành chính nhà nước thực hiện hoạt động chấp hành – điều hành; (2) cơ quan nhà nước khác xây dựng, củng cố chế độ công tác nội bộ; (3) cá nhân, tổ chức được trao quyền quản lý trong trường hợp luật định. Phương pháp MỆNH LỆNH – PHỤC TÙNG (quyền uy – phục tùng): một bên nhân danh Nhà nước ra mệnh lệnh đơn phương, bên kia phải phục tùng; phương pháp thỏa thuận được dùng hạn chế (ví dụ hợp đồng hành chính). Khác luật dân sự: bình đẳng, thỏa thuận.",
+ "example": "Cảnh sát giao thông yêu cầu người lái xe dừng xe kiểm tra: quan hệ quản lý theo phương pháp mệnh lệnh – phục tùng, người lái xe không thể \"thương lượng\".",
+ "source": {
+  "kind": "textbook",
+  "cite": "Giáo trình Luật Hành chính Việt Nam, Trường Đại học Luật Hà Nội; đề cương Luật Hành chính vấn đề 2 — tóm lược quan điểm học thuật phổ biến, chưa đối chiếu nguyên văn"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quan-ly-hanh-chinh-nha-nuoc",
+  "quan-he-phap-luat-hanh-chinh"
+ ],
+ "keywords": [
+  "quan hệ phát sinh trong quản lý hành chính",
+  "mệnh lệnh – phục tùng",
+  "bất bình đẳng",
+  "khác luật dân sự"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Phương pháp điều chỉnh đặc trưng của luật hành chính là gì?",
+   "options": [
+    "Mệnh lệnh – phục tùng",
+    "Bình đẳng – thỏa thuận",
+    "Tự định đoạt",
+    "Hòa giải"
+   ],
+   "answer": 0,
+   "explain": "Học thuyết.",
+   "source": {
+    "kind": "statute",
+    "cite": "Học thuyết x"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đối tượng điều chỉnh của luật hành chính là gì?",
+   "options": [
+    "Quan hệ xã hội phát sinh trong quá trình quản lý hành chính nhà nước",
+    "Quan hệ tài sản giữa các chủ thể bình đẳng",
+    "Quan hệ lao động",
+    "Quan hệ hôn nhân"
+   ],
+   "answer": 0,
+   "explain": "Học thuyết.",
+   "source": {
+    "kind": "statute",
+    "cite": "Học thuyết x"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Luật hành chính",
+   "right": "Luật dân sự",
+   "cases": [
+    {
+     "text": "Mệnh lệnh – phục tùng",
+     "answer": "left"
+    },
+    {
+     "text": "Bình đẳng, tự nguyện, thỏa thuận",
+     "answer": "right"
+    }
+   ],
+   "explain": "Học thuyết; Điều 3 BLDS 2015."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Luật hành chính điều chỉnh những quan hệ xã hội phát sinh trong quá trình {{quản lý hành chính nhà nước}}.",
+   "bank_extra": [
+    "kinh doanh thương mại",
+    "tố tụng dân sự"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Phương pháp điều chỉnh đặc trưng của luật hành chính là phương pháp {{mệnh lệnh}} – {{phục tùng}}.",
+   "bank_extra": [
+    "thỏa thuận",
+    "bình đẳng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Phương pháp thỏa thuận hoàn toàn không được sử dụng trong luật hành chính.",
+   "answer": false,
+   "explain": "Sai. Phương pháp chủ đạo là mệnh lệnh – phục tùng, nhưng thỏa thuận vẫn được dùng hạn chế (ví dụ ban hành văn bản liên tịch, hợp đồng hành chính)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày đối tượng và phương pháp điều chỉnh của luật hành chính.",
+   "model": "Đối tượng: quan hệ xã hội phát sinh trong quản lý hành chính nhà nước (hoạt động chấp hành – điều hành; công tác nội bộ của cơ quan nhà nước; hoạt động của chủ thể được trao quyền); phương pháp đặc trưng: mệnh lệnh – phục tùng, thỏa thuận ở mức hạn chế.",
+   "keywords": [
+    "quản lý hành chính",
+    "chấp hành – điều hành",
+    "mệnh lệnh – phục tùng",
+    "thỏa thuận"
+   ]
+  }
+ ]
+}

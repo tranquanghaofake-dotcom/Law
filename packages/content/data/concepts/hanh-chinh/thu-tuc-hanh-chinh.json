@@ -1,0 +1,114 @@
+{
+ "id": "thu-tuc-hanh-chinh",
+ "subject": "hanh-chinh",
+ "chapter": "v6",
+ "term": "Thủ tục hành chính",
+ "definition": "Thủ tục hành chính là trình tự, cách thức thực hiện, hồ sơ và yêu cầu, điều kiện do cơ quan nhà nước, người có thẩm quyền quy định để giải quyết một công việc cụ thể liên quan đến cá nhân, tổ chức.",
+ "plain": "Định nghĩa này là định nghĩa pháp lý tại khoản 1 Điều 3 Nghị định 63/2010/NĐ-CP về kiểm soát thủ tục hành chính (đã được sửa đổi nhiều lần, có Văn bản hợp nhất 2/VBHN-VPCP năm 2025; đang có dự thảo nghị định thay thế) — chưa đối chiếu nguyên văn bản hợp nhất. Bộ phận tạo thành: tên thủ tục, trình tự, cách thức, hồ sơ, thời hạn, đối tượng, cơ quan thực hiện, kết quả, phí/lệ phí, mẫu đơn, yêu cầu điều kiện. Yêu cầu: đơn giản, dễ hiểu, công khai, minh bạch; thực hiện qua bộ phận một cửa, dịch vụ công trực tuyến.",
+ "example": "Thủ tục đăng ký khai sinh: hồ sơ (tờ khai, giấy chứng sinh), cơ quan (UBND cấp xã), thời hạn (Luật Hộ tịch quy định giải quyết ngay khi nhận đủ giấy tờ hợp lệ), kết quả (giấy khai sinh).",
+ "source": {
+  "kind": "textbook",
+  "cite": "Nghị định 63/2010/NĐ-CP về kiểm soát thủ tục hành chính, khoản 1 Điều 3 (dẫn theo giáo trình Luật Hành chính Việt Nam, ĐH Luật Hà Nội; đề cương vấn đề 6) — chưa đối chiếu nguyên văn văn bản hợp nhất"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quyet-dinh-hanh-chinh",
+  "phuong-phap-quan-ly-hanh-chinh"
+ ],
+ "keywords": [
+  "trình tự, cách thức",
+  "hồ sơ, yêu cầu, điều kiện",
+  "công việc cụ thể",
+  "cá nhân, tổ chức"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thủ tục hành chính nhằm giải quyết điều gì?",
+   "options": [
+    "Một công việc cụ thể liên quan đến cá nhân, tổ chức",
+    "Tranh chấp dân sự",
+    "Vụ án hình sự",
+    "Việc ban hành luật"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 3 Nghị định 63/2010/NĐ-CP (chưa đối chiếu nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Học thuyết x"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Bộ phận nào KHÔNG phải bộ phận tạo thành thủ tục hành chính?",
+   "options": [
+    "Bản án của Tòa án",
+    "Hồ sơ",
+    "Thời hạn giải quyết",
+    "Cơ quan thực hiện"
+   ],
+   "answer": 0,
+   "explain": "Học thuyết; Nghị định 63/2010/NĐ-CP.",
+   "source": {
+    "kind": "statute",
+    "cite": "Học thuyết x"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thủ tục hành chính",
+   "right": "Thủ tục tố tụng",
+   "cases": [
+    {
+     "text": "Giải quyết công việc cụ thể của cá nhân, tổ chức tại cơ quan hành chính",
+     "answer": "left"
+    },
+    {
+     "text": "Giải quyết vụ án tại Tòa án",
+     "answer": "right"
+    }
+   ],
+   "explain": "Học thuyết."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thủ tục hành chính là {{trình tự}}, cách thức thực hiện, hồ sơ và yêu cầu, {{điều kiện}} do cơ quan nhà nước, người có thẩm quyền quy định.",
+   "bank_extra": [
+    "bản án",
+    "hình phạt"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thủ tục hành chính để giải quyết một công việc {{cụ thể}} liên quan đến {{cá nhân, tổ chức}}.",
+   "bank_extra": [
+    "chung",
+    "Quốc hội"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thủ tục hành chính chỉ do Quốc hội quy định.",
+   "answer": false,
+   "explain": "Sai. Do cơ quan nhà nước, người có thẩm quyền quy định (luật, nghị định, thông tư…), theo nguyên tắc kiểm soát thủ tục hành chính."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm và bộ phận tạo thành của thủ tục hành chính.",
+   "model": "Trình tự, cách thức thực hiện, hồ sơ, yêu cầu, điều kiện do cơ quan nhà nước, người có thẩm quyền quy định để giải quyết công việc cụ thể của cá nhân, tổ chức; gồm tên, trình tự, cách thức, hồ sơ, thời hạn, đối tượng, cơ quan thực hiện, kết quả, phí, lệ phí.",
+   "keywords": [
+    "trình tự",
+    "hồ sơ",
+    "công việc cụ thể",
+    "thời hạn"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,139 @@
+{
+  "id": "hanh-chinh-de-3",
+  "group": "hanh-chinh",
+  "title": "Đề kiểm tra Luật Hành chính – Quyết định hành chính, bộ máy, công vụ, khiếu nại, tố cáo",
+  "subtitle": "10 câu theo đề cương HLU, vấn đề 7–9 và 15",
+  "updated": "2026-11-01",
+  "questions": [
+    {
+      "q": "Quyết định hành chính theo Luật Tố tụng hành chính có đặc điểm nào?",
+      "options": [
+        "Áp dụng nhiều lần cho mọi chủ thể",
+        "Về vấn đề cụ thể, áp dụng một lần đối với một hoặc một số đối tượng cụ thể",
+        "Do Tòa án ban hành",
+        "Luôn là văn bản quy phạm pháp luật"
+      ],
+      "answer": 1,
+      "explain": "Khoản 1 Điều 3.",
+      "basis": "Điều 3 Luật Tố tụng hành chính (VBHN 13/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Vi-pham-hanh-chinh/Van-ban-hop-nhat-13-VBHN-VPQH-2026-Luat-To-tung-hanh-chinh-696357.aspx"
+    },
+    {
+      "q": "Cơ quan hành chính không thực hiện nhiệm vụ, công vụ theo quy định của pháp luật là gì?",
+      "options": [
+        "Hành vi hành chính",
+        "Quyết định hành chính",
+        "Vi phạm hình sự",
+        "Không phải đối tượng điều chỉnh"
+      ],
+      "answer": 0,
+      "explain": "Khoản 3 Điều 3.",
+      "basis": "Điều 3 Luật Tố tụng hành chính (VBHN 13/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Vi-pham-hanh-chinh/Van-ban-hop-nhat-13-VBHN-VPQH-2026-Luat-To-tung-hanh-chinh-696357.aspx"
+    },
+    {
+      "q": "Chính phủ là cơ quan nào?",
+      "options": [
+        "Cơ quan quyền lực nhà nước cao nhất",
+        "Cơ quan hành chính nhà nước cao nhất, thực hiện quyền hành pháp, là cơ quan chấp hành của Quốc hội",
+        "Cơ quan xét xử cao nhất",
+        "Cơ quan kiểm sát"
+      ],
+      "answer": 1,
+      "explain": "Khoản 1 Điều 1.",
+      "basis": "Điều 1 Luật Tổ chức Chính phủ 2025 (63/2025/QH15)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Luat-To-chuc-Chinh-phu-2025-so-63-2025-QH15-639242.aspx"
+    },
+    {
+      "q": "Cơ cấu tổ chức của Chính phủ gồm những gì?",
+      "options": [
+        "Các Bộ, cơ quan ngang Bộ",
+        "Các Bộ và UBND cấp tỉnh",
+        "Quốc hội và các Bộ",
+        "Các Tòa án"
+      ],
+      "answer": 0,
+      "explain": "Khoản 2 Điều 2.",
+      "basis": "Điều 2 Luật Tổ chức Chính phủ 2025 (63/2025/QH15)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Luat-To-chuc-Chinh-phu-2025-so-63-2025-QH15-639242.aspx"
+    },
+    {
+      "q": "Người được bầu cử giữ chức vụ theo nhiệm kỳ trong cơ quan nhà nước cấp tỉnh, trong biên chế, hưởng lương ngân sách là ai?",
+      "options": [
+        "Công chức",
+        "Viên chức",
+        "Cán bộ",
+        "Người lao động"
+      ],
+      "answer": 2,
+      "explain": "Khoản 1 Điều 1.",
+      "basis": "Điều 1 Luật Cán bộ, công chức 2025 (80/2025/QH15)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Luat-Can-bo-cong-chuc-2025-so-80-2025-QH15-649688.aspx"
+    },
+    {
+      "q": "Công chức được hình thành bằng cách nào?",
+      "options": [
+        "Bầu cử theo nhiệm kỳ",
+        "Tuyển dụng vào vị trí việc làm",
+        "Ký hợp đồng làm việc tại đơn vị sự nghiệp",
+        "Chỉ định không thời hạn"
+      ],
+      "answer": 1,
+      "explain": "Khoản 2 Điều 1.",
+      "basis": "Điều 1 Luật Cán bộ, công chức 2025 (80/2025/QH15)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Luat-Can-bo-cong-chuc-2025-so-80-2025-QH15-649688.aspx"
+    },
+    {
+      "q": "Nguyên tắc nào là nguyên tắc trong thi hành công vụ?",
+      "options": [
+        "Công khai, minh bạch, đúng thẩm quyền và có sự kiểm tra, giám sát",
+        "Ưu tiên lợi ích cơ quan",
+        "Giữ bí mật mọi hoạt động",
+        "Tuân theo ý kiến thủ trưởng trên pháp luật"
+      ],
+      "answer": 0,
+      "explain": "Khoản 3 Điều 2.",
+      "basis": "Điều 2 Luật Cán bộ, công chức 2025 (80/2025/QH15)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Luat-Can-bo-cong-chuc-2025-so-80-2025-QH15-649688.aspx"
+    },
+    {
+      "q": "Thời hiệu khiếu nại là bao lâu?",
+      "options": [
+        "30 ngày",
+        "60 ngày",
+        "90 ngày",
+        "01 năm"
+      ],
+      "answer": 2,
+      "explain": "Điều 9.",
+      "basis": "Điều 9 Luật Khiếu nại (VBHN 28/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-28-VBHN-VPQH-2026-Luat-Khieu-nai-697698.aspx"
+    },
+    {
+      "q": "Không đồng ý với quyết định giải quyết khiếu nại lần đầu, người khiếu nại có thể làm gì?",
+      "options": [
+        "Khiếu nại lần hai hoặc khởi kiện vụ án hành chính",
+        "Chỉ có thể tố cáo",
+        "Không còn quyền nào",
+        "Yêu cầu Quốc hội giải quyết"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 7.",
+      "basis": "Điều 7 Luật Khiếu nại (VBHN 28/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-28-VBHN-VPQH-2026-Luat-Khieu-nai-697698.aspx"
+    },
+    {
+      "q": "Ai là người tố cáo theo Luật Tố cáo?",
+      "options": [
+        "Cá nhân thực hiện việc tố cáo",
+        "Cơ quan, tổ chức, cá nhân",
+        "Chỉ cán bộ, công chức",
+        "Chỉ doanh nghiệp"
+      ],
+      "answer": 0,
+      "explain": "Khoản 4 Điều 2.",
+      "basis": "Điều 2 Luật Tố cáo (VBHN 29/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-29-VBHN-VPQH-2026-Luat-To-cao-697699.aspx"
+    }
+  ]
+}

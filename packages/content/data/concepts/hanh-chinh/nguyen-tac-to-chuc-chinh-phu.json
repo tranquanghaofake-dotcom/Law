@@ -1,0 +1,116 @@
+{
+ "id": "nguyen-tac-to-chuc-chinh-phu",
+ "subject": "hanh-chinh",
+ "chapter": "v8",
+ "term": "Chính phủ – cơ quan hành chính nhà nước cao nhất",
+ "definition": "Chính phủ là cơ quan hành chính nhà nước cao nhất của nước Cộng hòa xã hội chủ nghĩa Việt Nam, thực hiện quyền hành pháp, là cơ quan chấp hành của Quốc hội. Chính phủ chịu trách nhiệm trước Quốc hội và báo cáo công tác trước Quốc hội, Ủy ban Thường vụ Quốc hội, Chủ tịch nước. (…) Tuân thủ Hiến pháp và pháp luật, quản lý xã hội bằng Hiến pháp và pháp luật, thực hiện nguyên tắc tập trung dân chủ; bảo đảm bình đẳng giới.",
+ "plain": "Hệ thống cơ quan hành chính nhà nước: CHÍNH PHỦ (thẩm quyền chung, cao nhất) → BỘ, CƠ QUAN NGANG BỘ (thẩm quyền chuyên môn) → UBND cấp tỉnh, cấp xã (thẩm quyền chung ở địa phương; từ 01/7/2025 chính quyền địa phương hai cấp theo Luật Tổ chức chính quyền địa phương 72/2025/QH15) → cơ quan chuyên môn thuộc UBND. Đặc điểm cơ quan hành chính: thực hiện hoạt động CHẤP HÀNH – ĐIỀU HÀNH, hệ thống thống nhất từ trung ương tới cơ sở, cấp dưới phục tùng cấp trên (khoản 2 Điều 5).",
+ "example": "Chính phủ ban hành nghị định hướng dẫn luật (chấp hành) và chỉ đạo các Bộ, UBND cấp tỉnh triển khai (điều hành); Chính phủ báo cáo công tác trước Quốc hội.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 1; khoản 1 Điều 5 Luật Tổ chức Chính phủ 2025 (63/2025/QH15)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Luat-To-chuc-Chinh-phu-2025-so-63-2025-QH15-639242.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quyet-dinh-hanh-chinh",
+  "can-bo-cong-chuc",
+  "quan-ly-hanh-chinh-nha-nuoc"
+ ],
+ "keywords": [
+  "cơ quan hành chính nhà nước cao nhất",
+  "quyền hành pháp",
+  "cơ quan chấp hành của Quốc hội",
+  "tập trung dân chủ"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chính phủ là cơ quan gì theo Luật Tổ chức Chính phủ 2025?",
+   "options": [
+    "Cơ quan hành chính nhà nước cao nhất, thực hiện quyền hành pháp, là cơ quan chấp hành của Quốc hội",
+    "Cơ quan quyền lực nhà nước cao nhất",
+    "Cơ quan xét xử",
+    "Cơ quan lập pháp"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 1.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 1 Luật Tổ chức Chính phủ 2025 (63/2025/QH15)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chính phủ chịu trách nhiệm trước cơ quan nào?",
+   "options": [
+    "Quốc hội",
+    "Chủ tịch nước",
+    "Tòa án nhân dân tối cao",
+    "Mặt trận Tổ quốc"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 1.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 1 Luật Tổ chức Chính phủ 2025 (63/2025/QH15)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Chính phủ",
+   "right": "Quốc hội",
+   "cases": [
+    {
+     "text": "Thực hiện quyền hành pháp",
+     "answer": "left"
+    },
+    {
+     "text": "Cơ quan quyền lực nhà nước cao nhất",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 1 Luật Tổ chức Chính phủ; Hiến pháp 2013."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chính phủ là cơ quan hành chính nhà nước {{cao nhất}}, thực hiện quyền {{hành pháp}}, là cơ quan chấp hành của Quốc hội.",
+   "bank_extra": [
+    "duy nhất",
+    "lập pháp"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chính phủ chịu trách nhiệm trước {{Quốc hội}} và báo cáo công tác trước Quốc hội, Ủy ban Thường vụ Quốc hội, {{Chủ tịch nước}}.",
+   "bank_extra": [
+    "Thủ tướng",
+    "Tòa án"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chính phủ là cơ quan chấp hành của Quốc hội.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 1."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu vị trí, chức năng của Chính phủ và nguyên tắc tổ chức, hoạt động cơ bản.",
+   "model": "Chính phủ là cơ quan hành chính nhà nước cao nhất, thực hiện quyền hành pháp, là cơ quan chấp hành của Quốc hội, chịu trách nhiệm trước Quốc hội (Điều 1); tuân thủ Hiến pháp, pháp luật, tập trung dân chủ, cấp dưới phục tùng cấp trên (Điều 5).",
+   "keywords": [
+    "hành chính nhà nước cao nhất",
+    "hành pháp",
+    "chấp hành",
+    "tập trung dân chủ"
+   ]
+  }
+ ]
+}

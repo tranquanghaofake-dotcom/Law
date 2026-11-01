@@ -1,8 +1,152 @@
 {
   "id": "hanh-chinh",
-  "title": "Luật Hành chính (vi phạm và trách nhiệm hành chính)",
+  "title": "Luật Hành chính",
   "short": "Hành chính",
   "chapters": [
+    {
+      "id": "v1",
+      "title": "Vấn đề 1. Quản lí hành chính nhà nước",
+      "lessons": [
+        {
+          "id": "hc1",
+          "title": "Quản lí hành chính nhà nước",
+          "concepts": [
+            "quan-ly-hanh-chinh-nha-nuoc"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v2",
+      "title": "Vấn đề 2. Ngành luật hành chính Việt Nam",
+      "lessons": [
+        {
+          "id": "hc2",
+          "title": "Ngành luật hành chính Việt Nam",
+          "concepts": [
+            "nganh-luat-hanh-chinh"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v3",
+      "title": "Vấn đề 3. Quy phạm và quan hệ pháp luật hành chính",
+      "lessons": [
+        {
+          "id": "hc3",
+          "title": "Quy phạm và quan hệ pháp luật hành chính",
+          "concepts": [
+            "quan-he-phap-luat-hanh-chinh"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v4",
+      "title": "Vấn đề 4. Các nguyên tắc cơ bản trong quản lí hành chính nhà nước",
+      "lessons": [
+        {
+          "id": "hc4",
+          "title": "Các nguyên tắc cơ bản trong quản lí hành chính nhà nước",
+          "concepts": [
+            "nguyen-tac-quan-ly-hanh-chinh"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v5",
+      "title": "Vấn đề 5. Hình thức và phương pháp quản lí hành chính nhà nước",
+      "lessons": [
+        {
+          "id": "hc5",
+          "title": "Hình thức và phương pháp quản lí hành chính nhà nước",
+          "concepts": [
+            "phuong-phap-quan-ly-hanh-chinh"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v6",
+      "title": "Vấn đề 6. Thủ tục hành chính",
+      "lessons": [
+        {
+          "id": "hc6",
+          "title": "Thủ tục hành chính",
+          "concepts": [
+            "thu-tuc-hanh-chinh"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v7",
+      "title": "Vấn đề 7. Quyết định hành chính",
+      "lessons": [
+        {
+          "id": "hc7",
+          "title": "Quyết định hành chính",
+          "concepts": [
+            "quyet-dinh-hanh-chinh"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v8",
+      "title": "Vấn đề 8. Địa vị pháp lí hành chính của cơ quan hành chính nhà nước",
+      "lessons": [
+        {
+          "id": "hc8",
+          "title": "Địa vị pháp lí hành chính của cơ quan hành chính nhà nước",
+          "concepts": [
+            "nguyen-tac-to-chuc-chinh-phu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v9",
+      "title": "Vấn đề 9. Địa vị pháp lí hành chính của cán bộ, công chức, viên chức",
+      "lessons": [
+        {
+          "id": "hc9",
+          "title": "Địa vị pháp lí hành chính của cán bộ, công chức, viên chức",
+          "concepts": [
+            "can-bo-cong-chuc",
+            "nguyen-tac-thi-hanh-cong-vu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v10",
+      "title": "Vấn đề 10. Quy chế pháp lí hành chính của các tổ chức xã hội",
+      "lessons": [
+        {
+          "id": "hc10",
+          "title": "Quy chế pháp lí hành chính của các tổ chức xã hội",
+          "concepts": [
+            "to-chuc-xa-hoi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v11",
+      "title": "Vấn đề 11. Quy chế pháp lí hành chính của công dân, người nước ngoài",
+      "lessons": [
+        {
+          "id": "hc11",
+          "title": "Quy chế pháp lí hành chính của công dân, người nước ngoài",
+          "concepts": [
+            "cong-dan-nguoi-nuoc-ngoai-hanh-chinh"
+          ]
+        }
+      ]
+    },
     {
       "id": "v12",
       "title": "Vấn đề 12. Vi phạm hành chính",
@@ -51,6 +195,20 @@
             "bien-phap-xu-ly-hanh-chinh",
             "giao-duc-tai-xa",
             "truong-giao-duong"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v15",
+      "title": "Vấn đề 15. Những biện pháp pháp lí bảo đảm pháp chế trong quản lí hành chính nhà nước",
+      "lessons": [
+        {
+          "id": "hc15",
+          "title": "Những biện pháp pháp lí bảo đảm pháp chế trong quản lí hành chính nhà nước",
+          "concepts": [
+            "khieu-nai",
+            "to-cao"
           ]
         }
       ]

@@ -1,0 +1,115 @@
+{
+ "id": "quan-ly-hanh-chinh-nha-nuoc",
+ "subject": "hanh-chinh",
+ "chapter": "v1",
+ "term": "Quản lý hành chính nhà nước",
+ "definition": "Quản lý hành chính nhà nước là hoạt động chấp hành và điều hành, được thực hiện chủ yếu bởi các cơ quan hành chính nhà nước, trên cơ sở luật và để thi hành luật, nhằm tổ chức và chỉ đạo thực hiện các mặt của đời sống kinh tế, văn hóa, xã hội và hành chính – chính trị.",
+ "plain": "Hai mặt: CHẤP HÀNH (thực hiện luật, nghị quyết của cơ quan quyền lực) và ĐIỀU HÀNH (tổ chức, chỉ đạo trực tiếp đối tượng quản lý). Đặc điểm thường nêu: tính quyền lực nhà nước (mệnh lệnh đơn phương, bảo đảm bằng cưỡng chế); tính dưới luật; tính chủ động, sáng tạo; tính liên tục, ổn định; chủ thể chủ yếu là cơ quan hành chính nhà nước, cán bộ, công chức, ngoài ra còn tổ chức, cá nhân được trao quyền. Phân biệt quản lý nhà nước (nghĩa rộng — cả lập pháp, tư pháp) với quản lý hành chính nhà nước (hoạt động hành pháp).",
+ "example": "UBND cấp tỉnh ban hành kế hoạch triển khai Luật Đất đai (chấp hành) và chỉ đạo Sở Nông nghiệp và Môi trường kiểm tra việc sử dụng đất (điều hành).",
+ "source": {
+  "kind": "textbook",
+  "cite": "Giáo trình Luật Hành chính Việt Nam, Trường Đại học Luật Hà Nội; đề cương Luật Hành chính vấn đề 1 — tóm lược quan điểm học thuật phổ biến, chưa đối chiếu nguyên văn"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nganh-luat-hanh-chinh",
+  "nguyen-tac-to-chuc-chinh-phu",
+  "nguyen-tac-quan-ly-hanh-chinh"
+ ],
+ "keywords": [
+  "chấp hành và điều hành",
+  "trên cơ sở luật, để thi hành luật",
+  "tính quyền lực nhà nước",
+  "cơ quan hành chính nhà nước"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Bản chất của quản lý hành chính nhà nước theo khoa học luật hành chính là gì?",
+   "options": [
+    "Hoạt động chấp hành và điều hành",
+    "Hoạt động lập pháp",
+    "Hoạt động xét xử",
+    "Hoạt động kinh doanh của Nhà nước"
+   ],
+   "answer": 0,
+   "explain": "Học thuyết.",
+   "source": {
+    "kind": "statute",
+    "cite": "Học thuyết x"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chủ thể chủ yếu của quản lý hành chính nhà nước là ai?",
+   "options": [
+    "Cơ quan hành chính nhà nước",
+    "Quốc hội",
+    "Tòa án nhân dân",
+    "Viện kiểm sát nhân dân"
+   ],
+   "answer": 0,
+   "explain": "Học thuyết.",
+   "source": {
+    "kind": "statute",
+    "cite": "Học thuyết x"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Chấp hành",
+   "right": "Điều hành",
+   "cases": [
+    {
+     "text": "Thực hiện luật, nghị quyết của cơ quan quyền lực nhà nước",
+     "answer": "left"
+    },
+    {
+     "text": "Tổ chức, chỉ đạo trực tiếp đối tượng bị quản lý",
+     "answer": "right"
+    }
+   ],
+   "explain": "Học thuyết."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quản lý hành chính nhà nước là hoạt động {{chấp hành}} và {{điều hành}}.",
+   "bank_extra": [
+    "lập pháp",
+    "xét xử"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quản lý hành chính nhà nước được thực hiện trên cơ sở {{luật}} và để thi hành luật, mang tính {{dưới luật}}.",
+   "bank_extra": [
+    "tập quán",
+    "trên luật"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quản lý hành chính nhà nước chỉ do Chính phủ thực hiện.",
+   "answer": false,
+   "explain": "Sai. Chủ thể chủ yếu là hệ thống cơ quan hành chính nhà nước các cấp và cán bộ, công chức; tổ chức, cá nhân được trao quyền cũng có thể thực hiện."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm và đặc điểm của quản lý hành chính nhà nước.",
+   "model": "Hoạt động chấp hành và điều hành, chủ yếu do cơ quan hành chính nhà nước thực hiện trên cơ sở luật và để thi hành luật; mang tính quyền lực nhà nước, dưới luật, chủ động sáng tạo, liên tục.",
+   "keywords": [
+    "chấp hành",
+    "điều hành",
+    "dưới luật",
+    "quyền lực nhà nước"
+   ]
+  }
+ ]
+}
