@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { POSTS, BRANCHES, careerState, satisfies, totalNeed, type Post } from '$lib/game/career';
+import { POSTS, BRANCHES, careerState, satisfies, totalNeed, promotionToCelebrate, type Post } from '$lib/game/career';
 import { FIELDS, FUTURE_FIELDS, type Field } from '$lib/game/fields';
 import type { BookLevel } from '$lib/game/books';
 
@@ -63,5 +63,21 @@ describe('thăng chức theo bộ máy nhà nước', () => {
     const nx = s.next['xet-xu'];
     expect(nx?.post.id).toBe('thu-ky-toa-an');
     expect(FUTURE_FIELDS.length).toBeGreaterThan(0);
+  });
+});
+
+describe('màn nhận chức (chức mới chưa xem)', () => {
+  it('lần đầu chưa có danh sách đã xem: không mừng, coi mọi chức hiện có là đã xem', () => {
+    expect(promotionToCelebrate(new Set(['xa-cong-chuc']), null)).toBeNull();
+  });
+  it('chức mới chưa xem: trả về chức cao nhất trong số chưa xem', () => {
+    const lo = POSTS.find((p) => p.tier === 'co-so')!;
+    const hi = POSTS.find((p) => p.tier === 'tinh')!;
+    expect(promotionToCelebrate(new Set([lo.id, hi.id]), [])?.id).toBe(hi.id);
+    expect(promotionToCelebrate(new Set([lo.id, hi.id]), [hi.id])?.id).toBe(lo.id);
+  });
+  it('đã xem hết: không mừng', () => {
+    const lo = POSTS.find((p) => p.tier === 'co-so')!;
+    expect(promotionToCelebrate(new Set([lo.id]), [lo.id])).toBeNull();
   });
 });
