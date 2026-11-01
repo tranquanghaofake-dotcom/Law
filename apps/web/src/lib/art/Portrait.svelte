@@ -8,10 +8,14 @@
   // cầu vai kiểm sát là dải đỏ trơn. `avatar.outfit` là trang phục đã giải theo chức danh.
   import type { Avatar } from '$lib/game/wardrobe';
   import type { EmblemName } from './registry';
-  import Emblem from './Emblem.svelte';
+  import BookSpine from './BookSpine.svelte';
+  import type { BookScheme } from '$lib/ui/shelf';
+  import type { BookLevel } from '$lib/game/books';
   import { ring } from './kit';
-  let { avatar, title = 'Công dân', accent = '#3f9e63', emblems = ['sach-hp', 'quyen-nguoi', 'can-can', 'lang-xa'], books = 0, booksTop = 0 }:
-    { avatar: Avatar; title?: string; accent?: string; emblems?: EmblemName[]; books?: number; booksTop?: number; scene?: string } = $props();
+  type ShelfBook = { key: string; scheme: BookScheme; level: BookLevel; label: string };
+  let { avatar, title = 'Công dân', subtitle = '', accent = '#3f9e63', books = [], medals = 0 }:
+    { avatar: Avatar; title?: string; subtitle?: string; accent?: string; books?: ShelfBook[]; medals?: number; emblems?: EmblemName[]; scene?: string } = $props();
+  const RIB = [['#c0392b', '#e8c45a', '#c0392b'], ['#1f4e9e', '#ffffff', '#1f4e9e'], ['#3f9e63', '#e8c45a', '#3f9e63'], ['#e8c45a', '#c0392b', '#e8c45a'], ['#7a44b8', '#ffffff', '#7a44b8'], ['#c0392b', '#1f4e9e', '#c0392b']];
   const uid = `sh${++seq}`;
   const o = $derived(avatar.outfit);
   const L = '#2a201b';
@@ -42,26 +46,22 @@
     <path d="M70 22v456M330 22v456" stroke="#26262b" stroke-width="2" />
     <rect x="22" y="22" width="356" height="456" rx="4" fill="none" stroke="url(#{uid}-gold)" stroke-width="1.5" opacity=".6" />
     <!-- hốc giữa có đèn hắt -->
-    <rect x="118" y="146" width="164" height="262" rx="3" fill="url(#{uid}-niche)" />
-    <rect x="118" y="146" width="164" height="262" rx="3" fill="none" stroke="#f5c76a" stroke-width="3" opacity=".55" filter="url(#{uid}-glow)" />
-    <rect x="118" y="146" width="164" height="262" rx="3" fill="none" stroke="url(#{uid}-gold)" stroke-width="1.6" />
+    <rect x="62" y="98" width="276" height="350" rx="4" fill="url(#{uid}-niche)" />
+    <rect x="62" y="98" width="276" height="350" rx="4" fill="none" stroke="#f5c76a" stroke-width="3" opacity=".5" filter="url(#{uid}-glow)" />
+    <rect x="62" y="98" width="276" height="350" rx="4" fill="none" stroke="url(#{uid}-gold)" stroke-width="1.6" />
     {#if avatar.effect === 'trong-dong' || avatar.effect === 'khung-vang' || avatar.effect === 'hat-sang'}
       <g class="sun-spin" opacity=".35"><path d={ring(200, 250, 62, 74, 40)} fill="#c99a4a" /><circle cx="200" cy="250" r="56" fill="none" stroke="#c99a4a" stroke-width="2" stroke-dasharray="2 6" /></g>
     {/if}
     <!-- đèn rọi trần -->
-    <rect x="186" y="22" width="28" height="20" rx="3" fill="#8f8f96" stroke={L} stroke-width="1.5" />
-    <rect x="190" y="40" width="20" height="10" rx="2" fill="#c8c8cc" stroke={L} stroke-width="1.5" />
-    <path d="M190 50L120 408h160L210 50z" fill="url(#{uid}-cone)" opacity={avatar.effect === 'khong' ? 0.45 : 0.85} />
-    <circle cx="200" cy="52" r="5" fill="#fff4cc" filter="url(#{uid}-glow)" />
+    <rect x="188" y="98" width="24" height="12" rx="2" fill="#8f8f96" stroke={L} stroke-width="1.5" />
+    <rect x="191" y="108" width="18" height="7" rx="2" fill="#c8c8cc" stroke={L} stroke-width="1.5" />
+    <path d="M192 114L66 446h268L208 114z" fill="url(#{uid}-cone)" opacity={avatar.effect === 'khong' ? 0.45 : 0.85} />
+    <circle cx="200" cy="116" r="4" fill="#fff4cc" filter="url(#{uid}-glow)" />
     <!-- biển tên -->
-    <rect x="86" y="62" width="228" height="62" rx="3" fill="#0c0c0e" stroke="url(#{uid}-gold)" stroke-width="2.5" />
-    <rect x="92" y="68" width="216" height="50" rx="2" fill="none" stroke="url(#{uid}-gold)" stroke-width=".8" opacity=".7" />
-    <!-- khung ảnh hai bên -->
-    {#each [[34, 150], [34, 262], [292, 150], [292, 262]] as [x, y], i (i)}
-      <rect x={x} y={y} width="74" height="92" rx="2" fill="#0d0d0f" stroke="url(#{uid}-gold)" stroke-width="2" />
-      <rect x={x + 7} y={y + 7} width="60" height="78" fill="#f1e8d6" stroke={L} stroke-width="1" />
-    {/each}
-    <!-- móc + bộ đồ -->
+    <rect x="78" y="24" width="244" height="68" rx="3" fill="#0c0c0e" stroke="url(#{uid}-gold)" stroke-width="2.5" />
+    <rect x="84" y="30" width="232" height="56" rx="2" fill="none" stroke="url(#{uid}-gold)" stroke-width=".8" opacity=".7" />
+    <!-- móc + bộ đồ (phóng to 1,2 lần quanh hốc giữa) -->
+    <g transform="translate(-24 -66) scale(1.12)">
     <path d="M200 160q8 0 8 7q0 6-8 9" fill="none" stroke="#c8c8cc" stroke-width="3" />
     <path d="M200 176l-58 22h116z" fill="#8a5a3a" stroke={L} stroke-width="2" />
     <g stroke={L} stroke-width="2.2">
@@ -94,46 +94,56 @@
         <path d="M178 192l20 50l-28-14l-8-34zM222 192l-20 50l28-14l8-34z" fill={G.dark} stroke-width="2" />
         <path d="M200 242v124" fill="none" stroke-width="1.4" /><g fill={L} stroke="none"><circle cx="200" cy="282" r="2.6" /><circle cx="200" cy="308" r="2.6" /></g>
         <path d="M222 252h18" stroke-width="2.4" /><path d="M224 252l4-6l4 6" fill="#fff" stroke-width="1.2" />
-        {#if o === 'ks-thu-dong'}<g fill="#c0392b" stroke-width="1.8"><path d="M140 202l28-6l2 10l-28 6zM260 202l-28-6l-2 10l28 6z" /></g>{/if}
         {#if o === 'vest-den'}<circle cx="176" cy="238" r="5" fill="#e8c45a" stroke-width="1.6" />{/if}
       {:else if o === 'ks-xuan-he'}
         <path d="M178 192l22 20l22-20l-4 18l-18-6l-18 6z" fill={G.body} />
         <path d="M200 212v152" fill="none" stroke-width="1.4" /><g fill={L} stroke="none">{#each [240, 268, 296, 324] as y (y)}<circle cx="200" cy={y} r="2" />{/each}</g>
-        <g fill="#c0392b" stroke-width="1.8"><path d="M140 200l28-6l2 10l-28 6zM260 200l-28-6l-2 10l28 6z" /></g>
         <rect x="164" y="232" width="26" height="24" rx="2" fill={G.body} stroke-width="1.6" /><rect x="210" y="232" width="26" height="24" rx="2" fill={G.body} stroke-width="1.6" />
         <rect x="212" y="222" width="24" height="7" rx="1.5" fill="#25324f" stroke-width="1.4" />
       {/if}
       {#if avatar.accessory === 'huy-hieu'}<circle cx="178" cy="240" r="6" fill="#e8c45a" stroke-width="1.6" /><circle cx="178" cy="240" r="2.4" fill={accent} stroke="none" />{/if}
       {#if avatar.accessory === 'but'}<path d="M226 236l3-18l4 1l-3 18z" fill="#e8c45a" stroke-width="1.4" />{/if}
-    </g>
-    <!-- bục trái: phụ kiện -->
-    <rect x="36" y="412" width="76" height="54" fill="url(#{uid}-marble)" stroke={L} stroke-width="1.5" /><rect x="32" y="404" width="84" height="10" fill="#4a4a52" stroke={L} stroke-width="1.5" />
-    <g stroke={L} stroke-width="1.8">
-      {#if avatar.accessory === 'kinh'}
-        <g fill="none" stroke="#e8c45a" stroke-width="2.4"><circle cx="60" cy="392" r="9" /><circle cx="86" cy="392" r="9" /><path d="M69 391h8M51 388l-8-4M95 388l8-4" /></g>
-      {:else if avatar.accessory === 'cap'}
-        <rect x="46" y="370" width="58" height="34" rx="4" fill="#9a6b3f" /><path d="M64 370v-6h22v6M46 384h58" fill="none" /><rect x="70" y="380" width="10" height="8" rx="1.5" fill="#e8c45a" />
-      {:else if avatar.accessory === 'so'}
-        <rect x="44" y="388" width="64" height="14" rx="2" fill="#1f4e9e" /><rect x="48" y="374" width="58" height="14" rx="2" fill="#f1db8a" /><rect x="46" y="360" width="62" height="14" rx="2" fill="#7a2a1c" />
-        <path d="M52 381h10M50 367h10M52 395h10" stroke="#e8c45a" stroke-width="2" />
-      {:else}
-        <path d="M74 360v40M56 368h36M56 368l-7 14h14zM92 368l-7 14h14zM66 400h16" fill="none" stroke="#e8c45a" stroke-width="2.4" /><circle cx="74" cy="358" r="3" fill="#e8c45a" />
+      <!-- cầu vai to (kiểm sát: nền đỏ, viền chỉ vàng, không sao/biểu tượng) -->
+      {#if o === 'ks-xuan-he' || o === 'ks-thu-dong'}
+        <g fill="#c0392b" stroke="#e8c45a" stroke-width="1.6"><path d="M132 200l36-9l6 10l-3 7l-36 8z" /><path d="M268 200l-36-9l-6 10l3 7l36 8z" /></g>
+        <g fill="#e8c45a" stroke={L} stroke-width=".8"><circle cx="170" cy="200" r="2.4" /><circle cx="230" cy="200" r="2.4" /></g>
+      {/if}
+      <!-- huân chương: dải ruy băng + huy chương tròn (mẫu chung, không theo huân chương thật) -->
+      {#if medals > 0 && o !== 'thuong-phuc'}
+        {#each RIB.slice(0, Math.min(medals, 6)) as r, k (k)}
+          {@const bx = 160 + (k % 3) * 9}
+          {@const by = 226 + Math.floor(k / 3) * 5}
+          <g stroke={L} stroke-width=".6"><rect x={bx} y={by} width="3" height="4" fill={r[0]} /><rect x={bx + 3} y={by} width="3" height="4" fill={r[1]} /><rect x={bx + 6} y={by} width="3" height="4" fill={r[2]} /></g>
+        {/each}
+        {#if medals >= 3}
+          {#each [0, 1].slice(0, medals >= 5 ? 2 : 1) as k (k)}
+            <g stroke={L} stroke-width="1"><path d="M{163 + k * 12} 238h8l-1 9h-6z" fill={RIB[k][0]} /><circle cx={167 + k * 12} cy="252" r="5.5" fill="#e8c45a" /><circle cx={167 + k * 12} cy="252" r="2.4" fill="#c99a4a" stroke="none" /></g>
+          {/each}
+        {/if}
       {/if}
     </g>
-    <!-- bục phải: giấy khen -->
-    <rect x="288" y="412" width="76" height="54" fill="url(#{uid}-marble)" stroke={L} stroke-width="1.5" /><rect x="284" y="404" width="84" height="10" fill="#4a4a52" stroke={L} stroke-width="1.5" />
-    <rect x="290" y="358" width="72" height="44" fill="#fffaf0" stroke="url(#{uid}-gold)" stroke-width="3" />
-    <circle cx="350" cy="392" r="5" fill="#c0392b" stroke="#e8c45a" stroke-width="1.4" />
-    <!-- sàn hốc giữa: bục nhỏ -->
-    <rect x="150" y="408" width="100" height="14" fill="#4a4a52" stroke={L} stroke-width="1.5" /><rect x="156" y="422" width="88" height="44" fill="url(#{uid}-marble)" stroke={L} stroke-width="1.5" />
+    </g>
+    <!-- kệ kính trưng sách: mặt kính + cạnh gỗ, phụ kiện ở hai đầu kệ -->
+    <rect x="30" y="448" width="340" height="6" fill="#e9eef2" opacity=".35" stroke="url(#{uid}-gold)" stroke-width="1" />
+    <rect x="30" y="454" width="340" height="24" fill="url(#{uid}-marble)" stroke={L} stroke-width="1.5" />
+    <path d="M30 460h340" stroke="url(#{uid}-gold)" stroke-width="1" opacity=".6" />
+    <g stroke={L} stroke-width="1.8">
+      {#if avatar.accessory === 'kinh'}
+        <g fill="none" stroke="#e8c45a" stroke-width="2.4"><circle cx="46" cy="440" r="8" /><circle cx="70" cy="440" r="8" /><path d="M54 439h8M38 436l-6-4M78 436l6-4" /></g>
+      {:else if avatar.accessory === 'cap'}
+        <rect x="34" y="420" width="50" height="28" rx="4" fill="#9a6b3f" /><path d="M49 420v-6h20v6M34 432h50" fill="none" /><rect x="54" y="428" width="10" height="8" rx="1.5" fill="#e8c45a" />
+      {/if}
+      <path d="M352 404v44M332 412h40M332 412l-8 15h16zM372 412l-8 15h16zM342 448h20" fill="none" stroke="#e8c45a" stroke-width="2.4" /><circle cx="352" cy="402" r="3" fill="#e8c45a" />
+    </g>
     {#if avatar.effect === 'hat-sang'}<g fill="#fff6c8">{#each sparks as [x, y], i (i)}<circle class="spark" cx={x} cy={y} r="2.2" style="animation-delay:{i * 0.4}s" />{/each}</g>{/if}
     {#if avatar.effect === 'khung-vang' || avatar.effect === 'hat-sang'}<rect x="6" y="6" width="388" height="488" rx="12" fill="none" stroke="url(#{uid}-gold)" stroke-width="5" />{/if}
   </svg>
   <!-- chữ và huy hiệu đặt bằng HTML để tự xuống dòng, co chữ -->
   <p class="sc-plaque" style="--len:{title.length}">{title}</p>
-  {#each emblems.slice(0, 4) as e, i (i)}
-    <span class="sc-frame f{i}"><Emblem name={e} size={48} /></span>
-  {/each}
-  <p class="sc-cert"><b>GIẤY KHEN</b><span>{books} sách · {booksTop} cấp 3</span></p>
+  {#if subtitle}<p class="sc-sub">{subtitle}</p>{/if}
+  <ul class="sc-books" aria-hidden="true">
+    {#each books as b (b.key)}<li><BookSpine scheme={b.scheme} level={b.level} label={b.label} w={22} h={74} /></li>{/each}
+    {#each Array(Math.max(0, 6 - books.length)) as _, i (i)}<li class="ghost"><span></span></li>{/each}
+  </ul>
   <span class="sc-glass" aria-hidden="true"></span>
 </div>

@@ -6,6 +6,7 @@
   import { DEFAULT_AVATAR, NAMES, sanitize, unlocked, resolveOutfit, type Avatar } from '$lib/game/wardrobe';
   import type { ArtName, EmblemName } from '$lib/art/registry';
   import { shelf, refreshShelf } from './shelf.svelte';
+  import { schemeFor } from './shelf';
   import { career, setBranch } from './career.svelte';
   import { LuyenLuatDB } from '$lib/store/db';
 
@@ -18,6 +19,10 @@
   const scene = $derived<ArtName>(t.post?.id === 'chu-tich-nuoc' ? 'quoc-hoi' : career.branch === 'hanh-phap' && t.tier && t.tier !== 'co-so' ? 'ngo-mon' : SCENE[career.branch]);
 
   const EMB: Record<string, EmblemName[]> = { 'hanh-phap': ['lang-xa', 'tru-so', 'an-trien', 'sach-hp'], 'lap-phap': ['hom-phieu', 'nghi-truong', 'cuon-lap-hien', 'quyen-nguoi'], 'xet-xu': ['can-can', 'sach-hp', 'quyen-nguoi', 'bo-luat-cu'], 'kiem-sat': ['can-can', 'an-trien', 'kinh-lup', 'sach-hp'] };
+  const earned = $derived(shelf.books.filter((b) => b.level > 0));
+  const ROMAN = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII', 'XIII', 'XIV'];
+  const display = $derived([...earned].sort((a, b) => b.level - a.level || (b.at ?? '').localeCompare(a.at ?? '')).slice(0, 10)
+    .map((b) => ({ key: b.key, level: b.level, label: `${b.subjectShort} ${ROMAN[b.index] ?? b.index}`, scheme: schemeFor(b.subject, shelf.subjects.findIndex((x) => x.id === b.subject)) })));
   const ACCENT: Record<string, string> = { 'hanh-phap': '#3f9e63', 'lap-phap': '#c0392b', 'xet-xu': '#2b3f74', 'kiem-sat': '#2c6fb7' };
   const accent = $derived(t.post?.id === 'chu-tich-nuoc' ? '#c99a2e' : ACCENT[career.branch]);
   let raw = $state<Avatar>({ ...DEFAULT_AVATAR });
@@ -35,7 +40,7 @@
 <section class="card wide career">
   <div class="career-grid">
     <div class="career-portrait">
-      <Portrait avatar={drawn} {accent} title={t.title} emblems={EMB[career.branch]} books={shelf.books.filter((b) => b.level > 0).length} booksTop={shelf.books.filter((b) => b.level === 3).length} />
+      <Portrait avatar={drawn} {accent} title={t.title} subtitle={`${earned.length} sách · ${earned.filter((b) => b.level === 3).length} cấp 3`} books={display} medals={cs.achieved.size} />
       <div class="plaque">
         <p class="kicker">{t.tier ? TIER_NAMES[t.tier] : 'Khởi đầu'}</p>
         <p class="plaque-title">{t.title}</p>
