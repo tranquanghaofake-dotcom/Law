@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Glyph from '$lib/art/Glyph.svelte';
   import SubjectArt from '$lib/art/SubjectArt.svelte';
   import { PAGE_ART } from '$lib/art/registry';
   // Hồ sơ: hai tab Tổng quan (#/toi) · Cài đặt (#/cai-dat) (spec §5.2).
@@ -66,7 +67,7 @@
 </header>
 <div class="tabs" role="tablist" aria-label="Hồ sơ">
   <a role="tab" href={hashFor('profile')} aria-selected={!onSettings} class:on={!onSettings}>Tổng quan</a>
-  <a role="tab" href={hashFor('settings')} aria-selected={onSettings} class:on={onSettings}>⚙ Cài đặt</a>
+  <a role="tab" href={hashFor('settings')} aria-selected={onSettings} class:on={onSettings}><Glyph name="gear" size={16} /> Cài đặt</a>
 </div>
 
 {#if onSettings}
@@ -79,7 +80,7 @@
       <div class="bar" aria-hidden="true"><span style="width:{rank.progress * 100}%"></span></div>
       {#if rank.nextXp}<p class="muted small">còn {rank.nextXp - xp} XP tới {RANKS[rank.index + 1].name}</p>{/if}
       <p class="kicker" style="margin-top:16px">Chuỗi ngày</p>
-      <p>🔥 <b>{streak.count}</b> ngày · dài nhất {streak.longest} · bùa giữ chuỗi {streak.freezes}/2</p>
+      <p class="streak-line"><Glyph name="flame" /> <b>{streak.count}</b> ngày · dài nhất {streak.longest} · bùa giữ chuỗi {streak.freezes}/2</p>
       <WeekDots days={week} />
     </section>
     <section class="card">

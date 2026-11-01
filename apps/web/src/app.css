@@ -391,11 +391,11 @@ body::before {
 .art .s-line:not([class*="f-"]) { fill: none; }
 .art .s-thin { stroke-width: 1; } .art .s-bold { stroke-width: 3; } .art .s-paper { stroke: var(--card); }
 
-/* Dải sóng nước ngăn mục */
+/* Dải sóng nước ngăn mục: bán nguyệt đồng tâm + chấm giữa, đường kẻ chân */
 .waves {
-  clear: both; height: 14px; margin: 18px 0 4px; background: color-mix(in srgb, var(--accent) 55%, var(--line));
-  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='14' fill='none' stroke='black' stroke-width='1.3'%3E%3Cpath d='M1 14a13 13 0 0 1 26 0M6 14a8 8 0 0 1 16 0M11 14a3 3 0 0 1 6 0'/%3E%3C/svg%3E") 0 100% / 28px 14px repeat-x;
-          mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='14' fill='none' stroke='black' stroke-width='1.3'%3E%3Cpath d='M1 14a13 13 0 0 1 26 0M6 14a8 8 0 0 1 16 0M11 14a3 3 0 0 1 6 0'/%3E%3C/svg%3E") 0 100% / 28px 14px repeat-x;
+  clear: both; height: 18px; margin: 18px 0 6px; background: color-mix(in srgb, var(--accent) 55%, var(--line));
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='16' fill='none' stroke='black' stroke-width='1.2'%3E%3Cpath d='M1 16a15 15 0 0 1 30 0M5.5 16a10.5 10.5 0 0 1 21 0M10 16a6 6 0 0 1 12 0'/%3E%3Ccircle cx='16' cy='14.5' r='1.3' fill='black' stroke='none'/%3E%3C/svg%3E") 0 0 / 32px 16px repeat-x, linear-gradient(#000, #000) 0 100% / 100% 1px no-repeat;
+          mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='16' fill='none' stroke='black' stroke-width='1.2'%3E%3Cpath d='M1 16a15 15 0 0 1 30 0M5.5 16a10.5 10.5 0 0 1 21 0M10 16a6 6 0 0 1 12 0'/%3E%3Ccircle cx='16' cy='14.5' r='1.3' fill='black' stroke='none'/%3E%3C/svg%3E") 0 0 / 32px 16px repeat-x, linear-gradient(#000, #000) 0 100% / 100% 1px no-repeat;
 }
 
 /* Khung: viền kép bên trong + bốn góc thước thợ (như khung tranh, cửa đình) */
@@ -455,3 +455,19 @@ body::before {
 /* Tranh nhỏ ở đầu thẻ bộ đề */
 .set:has(.set-art) .meta { grid-row: 2 / span 2; }
 .set .set-art { grid-column: 1 / -1; grid-row: 1; width: 100%; height: 86px; margin: -4px 0 6px; padding-bottom: 6px; border-bottom: 3px double var(--line); }
+
+/* ---- Tinh chỉnh đồng bộ (đợt 2): góc vuông vức thay viên thuốc, icon nét căn dòng ---- */
+.chip { border-radius: 3px; letter-spacing: .02em; }
+.lesson-strip li, .word, .local-nav a, .filter { border-radius: 4px; }
+.concept-tools input[type="search"] { border-radius: 6px; }
+.speak { border-radius: 6px; display: inline-grid; place-items: center; color: var(--muted); }
+.speak:hover { color: var(--ink); border-color: var(--accent); }
+.filter[aria-pressed="true"] { box-shadow: inset 0 0 0 2px var(--ink), inset 0 0 0 3px color-mix(in srgb, var(--paper) 40%, transparent); }
+.bar, .session-bar .progress { border-radius: 2px; }
+.bar span, .session-bar .progress span { border-radius: 2px; }
+.glyph { display: inline-block; vertical-align: -3px; flex: none; }
+.flame .glyph { color: var(--accent-text); } .flame.cold .glyph { color: var(--muted); }
+.rail-big .glyph { vertical-align: -4px; color: var(--accent-text); }
+.streak .glyph, .streak-line .glyph { color: var(--accent-text); }
+.tabs a .glyph { vertical-align: -2px; }
+.subject-row, .set, .lesson-row, .lesson-panel li, .concept-entry, .rail-block, .opt, .feedback { border-radius: 6px; }
