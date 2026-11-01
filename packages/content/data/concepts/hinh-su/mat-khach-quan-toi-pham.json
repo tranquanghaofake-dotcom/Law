@@ -1,0 +1,115 @@
+{
+ "id": "mat-khach-quan-toi-pham",
+ "subject": "hinh-su",
+ "chapter": "v6",
+ "term": "Mặt khách quan của tội phạm và hành vi khách quan",
+ "definition": "Mặt khách quan của tội phạm là mặt bên ngoài của tội phạm, bao gồm những biểu hiện của tội phạm diễn ra hoặc tồn tại bên ngoài thế giới khách quan. Hành vi khách quan là xử sự của con người có tính nguy hiểm cho xã hội, được thực hiện có ý thức và ý chí, và trái pháp luật hình sự.",
+ "plain": "Nội dung mặt khách quan: HÀNH VI khách quan (dấu hiệu bắt buộc của mọi CTTP), HẬU QUẢ nguy hiểm cho xã hội, QUAN HỆ NHÂN QUẢ giữa hành vi và hậu quả (bắt buộc với CTTP vật chất), và biểu hiện khác: công cụ, phương tiện, phương pháp, thủ đoạn, thời gian, địa điểm, hoàn cảnh. Ba đặc điểm của hành vi khách quan: NGUY HIỂM cho xã hội; CÓ Ý THỨC VÀ Ý CHÍ (phản xạ không điều khiển được, bị cưỡng bức về thân thể không phải hành vi); TRÁI PHÁP LUẬT HÌNH SỰ. Hai hình thức: HÀNH ĐỘNG (làm việc luật cấm) và KHÔNG HÀNH ĐỘNG (không làm việc phải làm dù có đủ điều kiện, như tội không cứu giúp người đang ở trong tình trạng nguy hiểm đến tính mạng — Điều 132 BLHS).",
+ "example": "Người mẹ không cho con nhỏ ăn dẫn đến con chết: hành vi khách quan ở dạng KHÔNG HÀNH ĐỘNG; giữa việc không cho ăn và cái chết có quan hệ nhân quả.",
+ "source": {
+  "kind": "textbook",
+  "cite": "Giáo trình Luật Hình sự Việt Nam (Phần chung), Trường Đại học Luật Hà Nội; đề cương Luật Hình sự 1 vấn đề 6 — tóm lược quan điểm học thuật phổ biến, chưa đối chiếu nguyên văn"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "cau-thanh-toi-pham",
+  "khach-the-toi-pham",
+  "co-y-pham-toi"
+ ],
+ "keywords": [
+  "mặt bên ngoài",
+  "hành vi, hậu quả, quan hệ nhân quả",
+  "có ý thức và ý chí",
+  "hành động – không hành động"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Dấu hiệu nào của mặt khách quan là bắt buộc trong mọi cấu thành tội phạm?",
+   "options": [
+    "Hành vi khách quan",
+    "Hậu quả",
+    "Công cụ, phương tiện",
+    "Địa điểm phạm tội"
+   ],
+   "answer": 0,
+   "explain": "Học thuyết: không có hành vi thì không có tội phạm.",
+   "source": {
+    "kind": "statute",
+    "cite": "Học thuyết BLHS"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Xử sự nào KHÔNG phải hành vi khách quan theo luật hình sự?",
+   "options": [
+    "Cử động do bị người khác cưỡng bức về thân thể, không làm chủ được",
+    "Không cứu giúp người đang nguy hiểm dù có điều kiện",
+    "Dùng dao đâm người",
+    "Lừa đảo qua mạng"
+   ],
+   "answer": 0,
+   "explain": "Hành vi phải có ý thức và ý chí.",
+   "source": {
+    "kind": "statute",
+    "cite": "Học thuyết BLHS"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hành động",
+   "right": "Không hành động",
+   "cases": [
+    {
+     "text": "Làm việc pháp luật cấm",
+     "answer": "left"
+    },
+    {
+     "text": "Không làm việc pháp luật buộc phải làm dù có đủ điều kiện",
+     "answer": "right"
+    }
+   ],
+   "explain": "Học thuyết; Điều 132 BLHS."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Mặt khách quan của tội phạm là mặt {{bên ngoài}} của tội phạm, bao gồm những biểu hiện diễn ra hoặc tồn tại bên ngoài thế giới {{khách quan}}.",
+   "bank_extra": [
+    "bên trong",
+    "chủ quan"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hành vi khách quan có tính nguy hiểm cho xã hội, được thực hiện có {{ý thức và ý chí}}, và {{trái pháp luật hình sự}}.",
+   "bank_extra": [
+    "động cơ, mục đích",
+    "hợp đạo đức"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hậu quả nguy hiểm cho xã hội là dấu hiệu bắt buộc trong mọi cấu thành tội phạm.",
+   "answer": false,
+   "explain": "Sai. Chỉ bắt buộc trong cấu thành tội phạm vật chất; cấu thành hình thức chỉ cần hành vi."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày nội dung mặt khách quan và đặc điểm của hành vi khách quan.",
+   "model": "Mặt khách quan là mặt bên ngoài gồm hành vi khách quan, hậu quả, quan hệ nhân quả và biểu hiện khác (công cụ, phương tiện, thủ đoạn, thời gian, địa điểm); hành vi khách quan nguy hiểm cho xã hội, có ý thức và ý chí, trái pháp luật hình sự; dưới dạng hành động hoặc không hành động.",
+   "keywords": [
+    "hành vi",
+    "hậu quả",
+    "quan hệ nhân quả",
+    "ý chí"
+   ]
+  }
+ ]
+}

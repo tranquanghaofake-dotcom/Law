@@ -47,6 +47,45 @@
       ]
     },
     {
+      "id": "v4",
+      "title": "Vấn đề 4. Các yếu tố của tội phạm và cấu thành tội phạm",
+      "lessons": [
+        {
+          "id": "hs4",
+          "title": "Các yếu tố của tội phạm và cấu thành tội phạm",
+          "concepts": [
+            "cau-thanh-toi-pham"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v5",
+      "title": "Vấn đề 5. Khách thể của tội phạm",
+      "lessons": [
+        {
+          "id": "hs5",
+          "title": "Khách thể của tội phạm",
+          "concepts": [
+            "khach-the-toi-pham"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v6",
+      "title": "Vấn đề 6. Mặt khách quan của tội phạm",
+      "lessons": [
+        {
+          "id": "hs6",
+          "title": "Mặt khách quan của tội phạm",
+          "concepts": [
+            "mat-khach-quan-toi-pham"
+          ]
+        }
+      ]
+    },
+    {
       "id": "v7",
       "title": "Vấn đề 7. Chủ thể của tội phạm",
       "lessons": [
@@ -159,6 +198,21 @@
           "concepts": [
             "an-treo",
             "xoa-an-tich"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v15",
+      "title": "Vấn đề 15. Trách nhiệm hình sự của người dưới 18 tuổi phạm tội",
+      "lessons": [
+        {
+          "id": "hs15",
+          "title": "Trách nhiệm hình sự của người dưới 18 tuổi phạm tội",
+          "concepts": [
+            "nguoi-chua-thanh-nien-pham-toi",
+            "xu-ly-chuyen-huong",
+            "hinh-phat-nguoi-chua-thanh-nien"
           ]
         }
       ]

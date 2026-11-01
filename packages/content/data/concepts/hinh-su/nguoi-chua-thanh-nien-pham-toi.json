@@ -1,0 +1,118 @@
+{
+ "id": "nguoi-chua-thanh-nien-pham-toi",
+ "subject": "hinh-su",
+ "chapter": "v15",
+ "term": "Người chưa thành niên phạm tội và nguyên tắc áp dụng hình phạt",
+ "definition": "Người chưa thành niên phạm tội là người phạm tội theo quy định của Bộ luật Hình sự trong độ tuổi từ đủ 14 tuổi đến dưới 18 tuổi. (…) Tòa án chỉ áp dụng hình phạt đối với người chưa thành niên phạm tội nếu xét thấy việc áp dụng biện pháp xử lý chuyển hướng không bảo đảm hiệu quả giáo dục, phòng ngừa. Trường hợp phải áp dụng hình phạt thì ưu tiên áp dụng hình phạt cảnh cáo, phạt tiền, cải tạo không giam giữ, hình phạt tù nhưng cho hưởng án treo. Không xử phạt tù chung thân hoặc tử hình đối với người chưa thành niên phạm tội. (…) Không áp dụng hình phạt bổ sung đối với người chưa thành niên phạm tội.",
+ "plain": "Độ tuổi: từ ĐỦ 14 đến DƯỚI 18 (tuổi chịu TNHS vẫn theo Điều 12 BLHS). Nguyên tắc: hình phạt chủ yếu nhằm GIÁO DỤC; ƯU TIÊN XỬ LÝ CHUYỂN HƯỚNG ở mọi giai đoạn (Điều 11); hình phạt chỉ khi chuyển hướng không hiệu quả, ưu tiên hình phạt không tước tự do; KHÔNG tù chung thân, tử hình; KHÔNG hình phạt bổ sung; mức án nhẹ hơn người thành niên, thời hạn thích hợp ngắn nhất (khoản 5). Án của người từ đủ 14 đến dưới 16 tuổi KHÔNG tính để xác định tái phạm (khoản 7).",
+ "example": "A 17 tuổi phạm tội giết người, khung hình phạt có tử hình: Tòa án không được xử tử hình hay tù chung thân với A, cũng không áp dụng hình phạt bổ sung như cấm cư trú.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 3; khoản 2, 3, 6 Điều 12 Luật Tư pháp người chưa thành niên 2024 (59/2024/QH15)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Luat-Tu-phap-nguoi-chua-thanh-nien-2024-so-59-2024-QH15-606865.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "xu-ly-chuyen-huong",
+  "hinh-phat-nguoi-chua-thanh-nien",
+  "tuoi-chiu-trach-nhiem-hinh-su",
+  "hinh-phat"
+ ],
+ "keywords": [
+  "từ đủ 14 tuổi đến dưới 18 tuổi",
+  "ưu tiên xử lý chuyển hướng",
+  "không tù chung thân, tử hình",
+  "không hình phạt bổ sung"
+ ],
+ "note": "Từ 01/01/2026, Luật Tư pháp người chưa thành niên 59/2024/QH15 có hiệu lực và bãi bỏ Chương XII Bộ luật Hình sự (Điều 90–107) về người dưới 18 tuổi phạm tội (điểm a khoản 1 Điều 177). Giáo trình, đề cương cũ dẫn Điều 90–107 BLHS là đã hết hiệu lực.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người chưa thành niên phạm tội theo Luật Tư pháp người chưa thành niên là người ở độ tuổi nào?",
+   "options": [
+    "Từ đủ 14 tuổi đến dưới 18 tuổi",
+    "Từ đủ 16 tuổi đến dưới 18 tuổi",
+    "Dưới 16 tuổi",
+    "Từ đủ 12 tuổi đến dưới 18 tuổi"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 3 Luật Tư pháp người chưa thành niên 2024 (59/2024/QH15)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hình phạt nào KHÔNG được áp dụng đối với người chưa thành niên phạm tội?",
+   "options": [
+    "Tù chung thân",
+    "Cảnh cáo",
+    "Phạt tiền",
+    "Cải tạo không giam giữ"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 12.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 12 Luật Tư pháp người chưa thành niên 2024 (59/2024/QH15)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Người chưa thành niên phạm tội",
+   "right": "Người thành niên phạm tội",
+   "cases": [
+    {
+     "text": "Không áp dụng hình phạt bổ sung",
+     "answer": "left"
+    },
+    {
+     "text": "Có thể bị tử hình",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 12 Luật Tư pháp người chưa thành niên; BLHS."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Không xử phạt tù {{chung thân}} hoặc {{tử hình}} đối với người chưa thành niên phạm tội.",
+   "bank_extra": [
+    "có thời hạn",
+    "cảnh cáo"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Trường hợp phải áp dụng hình phạt thì ưu tiên áp dụng hình phạt cảnh cáo, phạt tiền, cải tạo không giam giữ, hình phạt tù nhưng cho hưởng {{án treo}}.",
+   "bank_extra": [
+    "tha tù trước thời hạn",
+    "đặc xá"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người chưa thành niên phạm tội vẫn có thể bị áp dụng hình phạt bổ sung là phạt tiền.",
+   "answer": false,
+   "explain": "Sai. Khoản 6 Điều 12: không áp dụng hình phạt bổ sung đối với người chưa thành niên phạm tội."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các nguyên tắc áp dụng hình phạt đối với người chưa thành niên phạm tội.",
+   "model": "Chỉ áp dụng hình phạt khi biện pháp xử lý chuyển hướng không bảo đảm hiệu quả; ưu tiên cảnh cáo, phạt tiền, cải tạo không giam giữ, tù cho hưởng án treo; không tù chung thân, tử hình; mức án nhẹ hơn, ngắn nhất; không hình phạt bổ sung (Điều 12).",
+   "keywords": [
+    "xử lý chuyển hướng",
+    "án treo",
+    "tử hình",
+    "hình phạt bổ sung"
+   ]
+  }
+ ]
+}
