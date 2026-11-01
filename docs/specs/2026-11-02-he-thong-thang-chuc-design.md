@@ -151,6 +151,23 @@ Hào thấy thẻ nền son và chân dung nét mảnh chưa đẹp, gửi 2 m�
 - **Thẻ chuyên cần → thẻ đen kim loại:** nền đen nhám, hoa văn chìm sen + mây; viền hai đường kèm dải hoạ tiết sóng; 27 ký hoạ trong huy chương nhỏ chạy quanh viền (sáng theo chiều kim đồng hồ từ giữa cạnh trên); huy hiệu vàng kim trong bầu dục; số "NGÀY CHUỖI" và "KỶ LỤC" (4 chữ số) thay tên chủ thẻ; màu lửa là màu nhũ (đỏ đồng, lam, tím, bạch kim, đen viền vàng, holographic chuyển động); vệt sáng lướt mỗi 7 giây.
 - **Chân dung → chibi nét dày:** thẻ trắng bo góc trên nền màu nhánh (hành pháp xanh lá, lập pháp đỏ, xét xử xanh đêm, kiểm sát xanh dương, Chủ tịch nước vàng); đầu to, nét đen 3,4 px, mắt tròn có đốm sáng, má hồng, màu phẳng; trụ sở theo nhánh vẽ cùng nét, tô nhạt phía sau; sao ✦ lấp lánh ở nền "Hạt sáng".
 
+### 3.8 Thẻ trơn và chibi toàn thân, trang phục theo chức danh thật (Hào, 02/11/2026)
+- **Thẻ:** thẻ trơn bo tròn, không khung viền. 27 ký hoạ ẩn mờ trên nền, rải theo xoắn ốc tỉ lệ vàng ở dải giữa thẻ, không đè chữ ở bốn góc; sáng dần theo ngày; quầng màu lửa đậm dần. Logo: bông sen 8 cánh ôm cán cân. Rê chuột: thẻ nghiêng 3D + vệt sáng theo con trỏ (tự viết; học kỹ thuật biến CSS theo con trỏ của `simeydotme/pokemon-cards-css` (GPL-3.0, không chép mã) và `vanilla-tilt.js` (MIT, không thêm thư viện)).
+- **Chân dung:** chibi toàn thân, nét nâu `#3d2f2c`, mắt to có tròng chuyển màu + 2 đốm sáng, má hồng chuyển màu, tóc có mảng sáng; 3 kiểu tóc (ngắn, dài, buộc).
+- **Trang phục gắn với chức danh đang hiển thị** (`outfitFor` trong `game/wardrobe.ts`, có test). Người học chọn "Theo chức vụ" (mặc định), "Thường phục", hoặc "Áo dài" (mở ở cấp tỉnh).
+
+| Chức danh | Trang phục | Căn cứ |
+|---|---|---|
+| Công dân | thường phục (áo len, quần) | — |
+| Công chức xã, Đại biểu HĐND xã, Thư ký Tòa án, Thẩm tra viên | công sở: sơ mi trắng, quần tối, thẻ đeo cổ | không có đồng phục riêng (trang phục làm việc TAND theo TT 06/2025/TT-TANDTC — chưa đọc nguyên văn mẫu) |
+| Hành pháp, lập pháp cấp tỉnh | vest xanh than | — |
+| Trung ương, lãnh đạo, Chủ tịch nước | vest đen, cà vạt đỏ, huy hiệu cài áo cách điệu | — |
+| Thẩm phán trở lên | áo choàng dài tay màu đen | NQ 1214/2016/UBTVQH13 khoản 2 Điều 13; QĐ 1738/QĐ-TANDTC (23/11/2017); kiểu dáng theo QĐ 210/QĐ-TANDTC 2017 (chưa đọc) |
+| Kiểm tra viên, Kiểm sát viên | sơ mi xanh dương, quần xanh đen, cầu vai đỏ trơn, biển tên trơn | gam xanh dương, cấp hiệu nền đỏ (NQ UBTVQH về trang phục ngành Kiểm sát thông qua 12/1/2026, hiệu lực 1/3/2026 — **chưa tra số hiệu**) |
+| Viện trưởng VKSND cấp tỉnh/tối cao | áo khoác thu đông xanh đen, cầu vai đỏ trơn | như trên |
+
+Không vẽ Quốc huy, sao, vạch cấp hiệu hay biểu tượng ngành thật.
+
 ## 4. Dữ liệu
 - Store mới (IndexedDB): `books` (chapterId → cấp cao nhất, ngày đạt), `career` (nhánh đang chọn, chức danh đã đạt), `card` (kỷ lục màu). Migration từ dữ liệu cũ: tính sách từ `progress` hiện có. XP vẫn giữ, chỉ hiển thị phụ.
 - `game/rank.ts` (khoa cử, phẩm hàm) **giữ file và test, không còn hiển thị**. XP vẫn cộng và hiện phụ ở Hồ sơ. Bậc 6 đổi tên **Tinh thông**.

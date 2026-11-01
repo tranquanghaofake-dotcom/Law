@@ -591,27 +591,31 @@ h1 { text-wrap: balance; }
 /* Lưu ý pháp lý: chỉ ở trang Hồ sơ */
 .legal-note { margin: 28px 0 8px; padding-top: 14px; border-top: 1px solid var(--line); line-height: 1.6; }
 
-/* ---- Thẻ chuyên cần: thẻ đen kim loại ---- */
-.streak-card { display: block; width: 100%; height: auto; border-radius: 16px; box-shadow: 0 14px 34px rgba(0, 0, 0, .35), 0 2px 6px rgba(0, 0, 0, .25); }
-.streak-card.mini { width: 54px; border-radius: 4px; box-shadow: 0 1px 3px rgba(0, 0, 0, .4); flex: none; }
-.streak-card .cg-head { font: 800 40px/1 var(--font-ui); letter-spacing: .14em; }
-.streak-card .cg-sub { font: 600 20px/1 var(--font-ui); letter-spacing: .3em; }
-.streak-card .cg-num { font: 700 54px/1 "Be Vietnam Pro", var(--font-ui); letter-spacing: .06em; }
-.streak-card .cg-cap { font: 600 17px/1 var(--font-ui); letter-spacing: .16em; }
-.streak-card .cg-meta { font: 700 22px/1 var(--font-ui); letter-spacing: .04em; }
-.streak-card .cg-capb { font: 800 17px/1 var(--font-ui); letter-spacing: .12em; }
-.cg-sheen { animation: cgsheen 7s ease-in-out infinite; }
-@keyframes cgsheen { 0%, 55% { transform: rotate(18deg) translateX(0); } 100% { transform: rotate(18deg) translateX(1500px); } }
-.cg-glyph.now { animation: cgnow 1.6s ease-in-out infinite alternate; }
-.cg-burst { animation: cgburst 2.4s ease-in-out infinite alternate; }
-@keyframes cgnow { from { opacity: .65; } to { opacity: 1; } }
-@keyframes cgburst { from { opacity: .08; } to { opacity: .3; } }
+/* ---- Thẻ chuyên cần: thẻ trơn, ký hoạ ẩn trên nền, nghiêng 3D theo chuột ---- */
+.sc-wrap { position: relative; display: block; width: 100%; border-radius: 4.7% / 7.4%; perspective: 900px; transform: perspective(900px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)); transition: transform .5s cubic-bezier(.2, .8, .2, 1), box-shadow .5s ease; box-shadow: 0 14px 30px rgba(0, 0, 0, .28), 0 2px 6px rgba(0, 0, 0, .2); will-change: transform; }
+.sc-wrap.on { transition: transform .08s linear, box-shadow .3s ease; box-shadow: 0 24px 44px rgba(0, 0, 0, .35), 0 4px 10px rgba(0, 0, 0, .25); }
+.sc-wrap.mini { display: inline-block; width: 54px; flex: none; border-radius: 5px; box-shadow: 0 1px 3px rgba(0, 0, 0, .4); transform: none; }
+.streak-card { display: block; width: 100%; height: auto; border-radius: inherit; }
+.sc-glare { position: absolute; inset: 0; border-radius: inherit; pointer-events: none; mix-blend-mode: soft-light; opacity: 0; transition: opacity .4s ease;
+  background: radial-gradient(circle at var(--mx) var(--my), rgba(255, 255, 255, .55), rgba(255, 255, 255, 0) 45%), linear-gradient(115deg, transparent 30%, rgba(255, 240, 200, .18) calc(var(--mx) * .6 + 20%), transparent 70%); }
+.sc-wrap.on .sc-glare { opacity: 1; }
+.streak-card .cg-head { font: 800 30px/1 var(--font-ui); letter-spacing: .26em; }
+.streak-card .cg-sub { font: 600 15px/1 var(--font-ui); letter-spacing: .24em; fill: #a8a29a; }
+.streak-card .cg-tier { font: 700 26px/1 var(--font-display); letter-spacing: .04em; }
+.streak-card .cg-num { font: 600 46px/1 var(--font-ui); letter-spacing: .14em; font-variant-numeric: tabular-nums; }
+.cg-glyph { transition: opacity .6s ease; }
+.cg-glyph.now path { animation: cgnow 1.8s ease-in-out infinite alternate; }
+.cg-logo { transition: filter .6s ease; }
+.sc-wrap.on .cg-glyph.lit path { stroke-width: 1.45; }
+.cg-burst { mix-blend-mode: soft-light; animation: cgburst 3s ease-in-out infinite alternate; }
+@keyframes cgnow { from { opacity: .55; } to { opacity: 1; } }
+@keyframes cgburst { from { opacity: .12; } to { opacity: .35; } }
 
 .flame { gap: 6px; }
-.flame .streak-card.mini { width: 40px; }
-.sidenav .me .flame .streak-card.mini { width: 46px; }
-.rail-block .streak-card, .profile .streak-card { margin: 4px 0 10px; }
-.streak .streak-card.mini { display: inline-block; vertical-align: middle; width: 44px; margin-right: 6px; }
+.flame .sc-wrap.mini { width: 40px; }
+.sidenav .me .flame .sc-wrap.mini { width: 46px; }
+.rail-block .sc-wrap, .profile .sc-wrap { margin: 4px 0 12px; }
+.streak .sc-wrap.mini { vertical-align: middle; width: 44px; margin-right: 6px; }
 .flame.cold .streak-card { filter: saturate(.6); }
 
 /* ---- Tủ sách theo chương ---- */

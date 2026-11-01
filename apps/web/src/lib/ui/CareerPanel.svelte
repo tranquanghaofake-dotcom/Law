@@ -3,7 +3,7 @@
   import Portrait from '$lib/art/Portrait.svelte';
   import { BRANCHES, BRANCH_NAMES, POSTS, TIER_NAMES, careerState, displayTitle, type Branch } from '$lib/game/career';
   import { FIELD_NAMES, type Field } from '$lib/game/fields';
-  import { DEFAULT_AVATAR, NAMES, sanitize, unlocked, type Avatar } from '$lib/game/wardrobe';
+  import { DEFAULT_AVATAR, NAMES, sanitize, unlocked, resolveOutfit, type Avatar } from '$lib/game/wardrobe';
   import type { ArtName } from '$lib/art/registry';
   import { shelf, refreshShelf } from './shelf.svelte';
   import { career, setBranch } from './career.svelte';
@@ -21,8 +21,9 @@
   const accent = $derived(t.post?.id === 'chu-tich-nuoc' ? '#c99a2e' : ACCENT[career.branch]);
   let raw = $state<Avatar>({ ...DEFAULT_AVATAR });
   const av = $derived(sanitize(raw, cs.achieved));
+  const drawn = $derived({ ...av, outfit: resolveOutfit(av.outfit, t.post) });
   const un = $derived(unlocked(cs.achieved));
-  const ALL = { outfit: ['so-mi', 'vest', 'ao-choang', 'dong-phuc-ks', 'ao-dai'], hair: ['ngan', 'dai'], accessory: ['khong', 'kinh', 'but', 'so', 'cap', 'huy-hieu'], effect: ['khong', 'nang', 'trong-dong', 'khung-vang', 'hat-sang'] } as const;
+  const ALL = { outfit: ['theo-chuc-vu', 'thuong-phuc', 'ao-dai'], hair: ['ngan', 'dai', 'buoc'], accessory: ['khong', 'kinh', 'but', 'so', 'cap', 'huy-hieu'], effect: ['khong', 'nang', 'trong-dong', 'khung-vang', 'hat-sang'] } as const;
   const GROUP: Record<keyof Avatar, string> = { outfit: 'Trang phục', hair: 'Tóc', accessory: 'Phụ kiện', effect: 'Nền' };
   function db() { try { return typeof indexedDB === 'undefined' ? null : new LuyenLuatDB(); } catch { return null; } }
   (async () => { try { const row = await db()?.settings.get('avatar'); if (row?.value) raw = { ...DEFAULT_AVATAR, ...(row.value as Avatar) }; } catch { /* bỏ qua */ } })();
@@ -33,7 +34,7 @@
 <section class="card wide career">
   <div class="career-grid">
     <div class="career-portrait">
-      <Portrait avatar={av} {scene} {accent} />
+      <Portrait avatar={drawn} {scene} {accent} />
       <div class="plaque">
         <p class="kicker">{t.tier ? TIER_NAMES[t.tier] : 'Khởi đầu'}</p>
         <p class="plaque-title">{t.title}</p>
