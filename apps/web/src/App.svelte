@@ -5,6 +5,7 @@
   import Home from './routes/Home.svelte';
   import Subjects from './routes/Subjects.svelte';
   import Subject from './routes/Subject.svelte';
+  import Concepts from './routes/Concepts.svelte';
   import Quizzes from './routes/Quizzes.svelte';
   import Lesson from './routes/Lesson.svelte';
   import Review from './routes/Review.svelte';
@@ -12,7 +13,7 @@
   import Profile from './routes/Profile.svelte';
   import { storage } from '$lib/store/status.svelte';
 
-  const views = { home: Home, subjects: Subjects, subject: Subject, quizzes: Quizzes, lesson: Lesson, review: Review, quiz: Quiz10, profile: Profile, settings: Profile } as const;
+  const views = { home: Home, subjects: Subjects, subject: Subject, concepts: Concepts, quizzes: Quizzes, lesson: Lesson, review: Review, quiz: Quiz10, profile: Profile, settings: Profile } as const;
   const View = $derived(views[route.name]);
   // Trong phiên học shell ẩn hoàn toàn: một màn một việc (spec §2.4).
   const inSession = $derived(route.name === 'lesson' || route.name === 'review' || route.name === 'quiz');

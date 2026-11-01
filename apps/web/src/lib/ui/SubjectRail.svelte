@@ -1,7 +1,7 @@
 <script lang="ts">
   // Rail phải trang môn (≥ 1440): ôn của môn, phẩm kế tiếp, khái niệm khó (spec §4.2).
   import { hashFor } from '$lib/router.svelte';
-  let { subjectId, due, nextGrade, needForNext, difficult }: { subjectId: string; due: number; nextGrade: string | null; needForNext: number; difficult: string[] } = $props();
+  let { subjectId, due, nextGrade, needForNext, difficult }: { subjectId: string; due: number; nextGrade: string | null; needForNext: number; difficult: { id: string; term: string }[] } = $props();
 </script>
 
 <section class="rail-block">
@@ -18,6 +18,6 @@
 {#if difficult.length}
   <section class="rail-block">
     <p class="kicker">Khái niệm khó</p>
-    <ul class="plain-list">{#each difficult as t (t)}<li>{t}</li>{/each}</ul>
+    <ul class="plain-list">{#each difficult as d (d.id)}<li><a href={hashFor('concepts', { subject: subjectId, concept: d.id })}>{d.term}</a></li>{/each}</ul>
   </section>
 {/if}

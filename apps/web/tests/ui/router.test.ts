@@ -26,6 +26,12 @@ describe('parseHash', () => {
     expect(parseHash('#/on/hien-phap')).toEqual({ name: 'review', params: { subject: 'hien-phap' } });
     expect(parseHash('#/on')).toEqual({ name: 'review', params: {} });
   });
+  it('#/mon/<id>/khai-niem[/<khái niệm>] → danh mục khái niệm', () => {
+    expect(parseHash('#/mon/hien-phap/khai-niem')).toEqual({ name: 'concepts', params: { subject: 'hien-phap' } });
+    expect(parseHash('#/mon/hien-phap/khai-niem/chu-quyen-nhan-dan')).toEqual({ name: 'concepts', params: { subject: 'hien-phap', concept: 'chu-quyen-nhan-dan' } });
+    expect(hashFor('concepts', { subject: 'hien-phap' })).toBe('#/mon/hien-phap/khai-niem');
+    expect(hashFor('concepts', { subject: 'hien-phap', concept: 'a' })).toBe('#/mon/hien-phap/khai-niem/a');
+  });
   it('hashFor đảo ngược parseHash cho route mới', () => {
     for (const h of ['#/mon', '#/mon/hien-phap', '#/luyen-de', '#/on/hien-phap']) {
       const r = parseHash(h);

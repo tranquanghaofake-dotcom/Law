@@ -77,3 +77,26 @@ test('cột đợt thành dải chip trên điện thoại; desktop có cột, k
   await expect(page.locator('.lesson-strip')).toBeHidden();
   await expect(page.locator('.session-bar .title')).toHaveText('Hiến pháp là gì');
 });
+
+test('trả lời sai → màn kết thúc có "Xem lại câu sai", bấm tên khái niệm mở danh mục đúng mục', async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto(B + '#/hoc/hien-phap/hp-1');
+  let wrongDone = false;
+  for (let i = 0; i < 30; i++) {
+    await page.locator('.session-end, .question, article[aria-label="Thẻ giới thiệu khái niệm"]').first().waitFor();
+    if (await page.locator('.session-end').isVisible()) break;
+    if (await page.getByRole('button', { name: /Đã hiểu/ }).isVisible()) { await page.getByRole('button', { name: /Đã hiểu/ }).click(); continue; }
+    const q = (await page.locator('.question').textContent())!.trim();
+    const t = await page.locator('.opt').allTextContents();
+    const right = t.findIndex((x) => x.includes(correctOf(q)));
+    await page.locator('.opt').nth(wrongDone ? right : (right + 1) % t.length).click();
+    wrongDone = true;
+    await page.getByRole('button', { name: /Câu tiếp|Xem kết quả/ }).click();
+  }
+  const mistakes = page.locator('.mistakes');
+  await expect(mistakes).toContainText('Xem lại câu sai (1)');
+  await expect(mistakes).toContainText('Đáp án:');
+  await mistakes.locator('.kicker a').click();
+  await expect(page).toHaveURL(/#\/mon\/hien-phap\/khai-niem\/[a-z-]+$/);
+  await expect(page.locator('.concept-entry.open .quote')).toBeVisible();
+});

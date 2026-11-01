@@ -61,7 +61,7 @@ test('axe-core: không có vi phạm serious/critical ở các trang có shell (
   const axePath = require.resolve('axe-core/axe.min.js');
   for (const [w, h] of [[390, 844], [1280, 800]]) {
     await page.setViewportSize({ width: w, height: h });
-    for (const hash of ['#/', '#/mon', '#/mon/hien-phap', '#/luyen-de', '#/toi', '#/cai-dat']) {
+    for (const hash of ['#/', '#/mon', '#/mon/hien-phap', '#/mon/hien-phap/khai-niem/chu-quyen-nhan-dan', '#/luyen-de', '#/toi', '#/cai-dat']) {
       await page.goto(B + hash);
       await page.locator('main h1, main .hero-card').first().waitFor();
       await page.addScriptTag({ path: axePath });

@@ -22,12 +22,12 @@
             <a href={hashFor('lesson', { subject: subject.id, lesson: l.id })} onclick={(e) => onclick(e, st)}>{l.title}</a>
             {#if st === 'current'}<span class="next-tag">TIẾP THEO CHO BẠN</span>{:else if st === 'done'}<span class="muted small">✓ đã qua</span>{/if}
           </div>
-          <div class="cells" role="list" aria-label="Bậc từng khái niệm của đợt {l.title}">
+          <ul class="cells" aria-label="Bậc từng khái niệm của đợt {l.title}">
             {#each l.concepts as c (c)}
               {@const lv = levels[c] ?? 0}
-              <span role="listitem" class="cell-item" title="{terms[c] ?? c} · bậc {lv} · {LEVEL_NAMES[lv]}" aria-label="{terms[c] ?? c}: bậc {lv}, {LEVEL_NAMES[lv]}"><span class="cell lv{lv}" aria-hidden="true"></span><span class="cell-term" aria-hidden="true">{terms[c] ?? c}</span></span>
+              <li><a class="cell-item" href={hashFor('concepts', { subject: subject.id, concept: c })} title="{terms[c] ?? c} · bậc {lv} · {LEVEL_NAMES[lv]}" aria-label="{terms[c] ?? c}: bậc {lv}, {LEVEL_NAMES[lv]}"><span class="cell lv{lv}" aria-hidden="true"></span><span class="cell-term" aria-hidden="true">{terms[c] ?? c}</span></a></li>
             {/each}
-          </div>
+          </ul>
         </li>
       {/each}
     </ol>

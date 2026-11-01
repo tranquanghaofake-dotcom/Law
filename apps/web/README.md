@@ -30,7 +30,7 @@ src/lib/store/     Dexie (IndexedDB), kho tiến độ, stats, cài đặt
 src/lib/game/      XP, bậc khoa cử, phẩm hàm, chuỗi ngày
 src/lib/fx/        âm thanh (Kenney, CC0), confetti, nền lộ dần, TTS, rung
 src/lib/ui/        thẻ bài tập (7 loại), phản hồi, cột đợt, màn kết thúc
-src/routes/        Home (#/), Subjects (#/mon), Subject (#/mon/:môn), Quizzes (#/luyen-de), Quiz10 (#/bo/:id),
+src/routes/        Home (#/), Subjects (#/mon), Subject (#/mon/:môn), Concepts (#/mon/:môn/khai-niem[/:khái niệm] — danh mục, tìm không dấu, ★), Quizzes (#/luyen-de), Quiz10 (#/bo/:id),
                    Lesson (#/hoc/:môn/:đợt), Review (#/on, #/on/:môn), Profile (#/toi, #/cai-dat → tab Cài đặt)
 src/lib/ui/        Shell (sidebar/rail/tab bar 4 mục), HeroCard, MasteryGrid, rail phải theo trang (rail.svelte.ts)
 static/            icon, âm thanh, tranh nền, redirect /web/ cũ

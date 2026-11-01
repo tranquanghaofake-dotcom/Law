@@ -95,7 +95,7 @@
   {#if hard.length}
     <h2 class="section-title"><b>Khái niệm khó</b> <span class="small">sai ≥ 3 lần liền</span></h2>
     <ul class="hard-list">
-      {#each hard as h (h.id)}<li><a href={hashFor('subject', { subject: h.subject })}>{h.term}</a></li>{/each}
+      {#each hard as h (h.id)}<li><a href={hashFor('concepts', { subject: h.subject, concept: h.id })}>{h.term}</a></li>{/each}
     </ul>
   {/if}
 

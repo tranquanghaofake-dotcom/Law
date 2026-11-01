@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import type { Level } from '$lib/content/types';
 import type { Step } from '$lib/engine/session';
-import { answer, createRunner, next, summary } from '$lib/engine/runner';
+import { answer, createRunner, mistakes, next, summary } from '$lib/engine/runner';
 
 const mcq = (id: string): Step => ({ conceptId: id, level: 1, item: { type: 'mcq', level: 1, q: 'q', options: ['1', '2', '3', '4'], answer: 0, explain: 'e' } });
 const steps = [mcq('a'), mcq('b'), mcq('c')];
@@ -36,5 +36,11 @@ describe('runner', () => {
     expect(r.xpGained).toBe(0);
     expect(r.levelUp).toBe(false);
     expect(r.state.results[0].levelAfter).toBe(0);
+  });
+  it('mistakes: chỉ các bước trả lời sai, đúng thứ tự, kèm item', () => {
+    let s = createRunner(steps, levels);
+    for (const ok of [false, true, false]) s = next(answer(s, { correct: ok, elapsedMs: 1000 }).state);
+    expect(mistakes(s).map((m) => m.conceptId)).toEqual(['a', 'c']);
+    expect(mistakes(s)[0].item.type).toBe('mcq');
   });
 });

@@ -51,3 +51,8 @@ export function summary(s: RunnerState): { correct: number; total: number; xp: n
   const levelUps = [...final.entries()].filter(([, v]) => v.to > v.from).map(([conceptId, v]) => ({ conceptId, to: v.to }));
   return { correct: scored.filter((r) => r.correct).length, total: scored.length, xp: s.xp, levelUps };
 }
+
+/** Các bước trả lời sai (không tính intro), theo thứ tự: dùng cho màn "Xem lại câu sai". */
+export function mistakes(s: RunnerState): Step[] {
+  return s.results.flatMap((r, k) => (!r.correct && s.steps[k] && s.steps[k].item.type !== 'intro' ? [s.steps[k]] : []));
+}

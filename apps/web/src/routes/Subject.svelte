@@ -15,7 +15,7 @@
   let levels = $state<Record<string, Level>>({});
   let terms = $state<Record<string, string>>({});
   let due = $state(0);
-  let difficult = $state<string[]>([]);
+  let difficult = $state<{ id: string; term: string }[]>([]);
   let error = $state('');
 
   const summary = $derived(subject ? subjectSummary(subject, levels) : null);
@@ -35,7 +35,7 @@
       const t: Record<string, string> = {};
       for (const r of loaded) if (r.status === 'fulfilled') for (const c of r.value) t[c.id] = c.term;
       terms = t;
-      difficult = hard.map((id) => t[id] ?? id);
+      difficult = hard.map((id) => ({ id, term: t[id] ?? id }));
       subject = s;
       document.title = `${s.title} · Luyện Luật`;
     } catch (e) { error = (e as Error).message; }
@@ -59,6 +59,7 @@
     <div class="bar" aria-hidden="true"><span style="width:{summary.percent}%"></span></div>
     <div class="row">
       {#if due}<a class="btn ghost" href={hashFor('review', { subject: subject.id })}>Ôn {due} khái niệm của môn</a>{/if}
+      <a class="btn ghost" href={hashFor('concepts', { subject: subject.id })}>Danh mục khái niệm</a>
       {#if next}<a class="btn primary" href={hashFor('lesson', { subject: subject.id, lesson: next.id })}>Học đợt tiếp → {next.title}</a>{/if}
     </div>
   </header>
