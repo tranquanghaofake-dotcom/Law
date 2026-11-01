@@ -46,7 +46,8 @@
   const groups = $derived.by(() => {
     const m = new Map<string, ContentIndex['sets']>();
     for (const s of index?.sets ?? []) m.set(s.group, [...(m.get(s.group) ?? []), s]);
-    return [...m.entries()];
+    const order = Object.keys(GROUPS);
+    return [...m.entries()].sort((a, b) => (order.indexOf(a[0]) + 99) % 100 - (order.indexOf(b[0]) + 99) % 100);
   });
 </script>
 

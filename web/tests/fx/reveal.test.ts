@@ -12,3 +12,15 @@ describe('createReveal', () => {
     expect(r.tiles.every(Boolean)).toBe(true);
   });
 });
+
+import { render } from '@testing-library/svelte';
+import Reveal from '$lib/ui/Reveal.svelte';
+
+describe('Reveal.svelte', () => {
+  it('số ô vẽ luôn phủ kín lưới cols×rows (không hở ô)', () => {
+    const r = createReveal(12);
+    const { container } = render(Reveal, { props: { reveal: r, src: 'x.webp', cols: 5 } });
+    expect(container.querySelectorAll('.tile').length).toBe(15);
+    expect(container.querySelectorAll('.tile.open').length).toBe(0);
+  });
+});

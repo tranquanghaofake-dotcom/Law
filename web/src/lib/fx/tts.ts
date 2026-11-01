@@ -25,8 +25,8 @@ export function createTts(): Tts {
         synth.cancel();
         const u = new SpeechSynthesisUtterance(text);
         u.lang = 'vi-VN';
-        u.voice = voice;
         u.rate = 1;
+        try { u.voice = voice; } catch { /* một số trình duyệt không cho gán voice: vẫn đọc theo lang */ }
         synth.speak(u);
       } catch { /* trình duyệt chặn: bỏ qua */ }
     },

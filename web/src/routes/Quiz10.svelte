@@ -95,7 +95,7 @@
 {:else}
   <div class="session-bar">
     <a class="exit" href="#/" aria-label="Về trang chủ">←</a>
-    <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax={qs.length} aria-valuenow={i}><span style="width:{(i / qs.length) * 100}%"></span></div>
+    <div class="progress" role="progressbar" aria-label="Tiến độ bộ câu hỏi" aria-valuemin="0" aria-valuemax={qs.length} aria-valuenow={i}><span style="width:{(i / qs.length) * 100}%"></span></div>
     <span class="count">{i + 1}/{qs.length}</span>
   </div>
   <article class="card question-card" aria-label="Câu hỏi trắc nghiệm">

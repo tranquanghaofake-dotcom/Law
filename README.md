@@ -1,8 +1,10 @@
 # Luyện Luật
 
-Web học luật cho sinh viên: luyện khái niệm theo từng chương, chấm ngay, có giải thích và căn cứ điều luật.
+Web học luật cho sinh viên: học từng khái niệm qua 6 bậc ghi nhớ (gặp → nhận biết → phân biệt → điền chỗ trống → tình huống → tự trả lời), ôn đúng lúc sắp quên (FSRS), có căn cứ điều luật gốc, bậc khoa cử và chuỗi ngày.
 
-**👉 Vào làm bài:** mở thư mục [`web/`](web/) (hướng dẫn chạy trong [`web/README.md`](web/README.md)). Khi đã đưa lên Cloudflare Pages, link công khai sẽ được ghi tại đây.
+**👉 Vào làm bài:** ứng dụng nằm trong [`web/`](web/) (hướng dẫn chạy và triển khai trong [`web/README.md`](web/README.md)). Khi đã đưa lên Cloudflare Pages, link công khai sẽ được ghi tại đây.
+
+Môn hiện có: **Luật Hiến pháp** (chương 1, 10 khái niệm) và 5 bộ luyện đề 10 câu (Pháp luật đại cương, Dân sự, Lao động, Hình sự).
 
 ## Trong repo
 - [`web/`](web/) — mã nguồn web (HTML/CSS/JS tĩnh) và dữ liệu câu hỏi `web/data/sets/*.json`.
@@ -11,8 +13,8 @@ Web học luật cho sinh viên: luyện khái niệm theo từng chương, ch�
 
 ## Chạy thử trên máy
 ```bash
-cd web && python -m http.server 8000
+cd web && npm install && npm run dev
 ```
-Mở http://localhost:8000.
+Mở http://localhost:5173.
 
 *Nội dung là thông tin pháp luật chung, không phải tư vấn pháp lý.*
