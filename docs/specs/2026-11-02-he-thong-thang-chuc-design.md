@@ -182,7 +182,7 @@ Không vẽ Quốc huy, sao, vạch cấp hiệu hay biểu tượng ngành th�
 
 - **Bộ đồ**: thử ảnh AI tạo trong Figma rồi **Hào loại** (không dùng ảnh AI). Thay bằng **bản vẽ kỹ thuật** (technical flat) trong `art/GarmentFlat.svelte`: mặt trước, nét mảnh đều, đường may nét đứt, tô một màu phẳng; vẽ nửa trái rồi lật gương. Không quân hàm, cấp hiệu, Quốc huy, huân chương thật; cầu vai kiểm sát là dải đỏ trơn viền chỉ vàng. **Bỏ huân chương trên áo dân sự** (sai thực tế). Áo dài bày trên ma-nơ-canh thay vì treo móc.
 - **Tủ** (`art/Portrait`): biển đồng ghi chức danh, ô kính nền sáng chứa bản vẽ, bục gỗ bày sách và phụ kiện, đều dựng bằng HTML/CSS. Hiệu ứng nền phủ lên ảnh.
-- **Nền thẻ** (`art/StreakCard`): ba dải vân mây kiểu chạm đình làng/sơn son thiếp vàng. Mỗi đầu mây cuộn xoắn ôm một ký hoạ, có lọn xoắn con; đuôi mây là ba nét song song luồn dưới đầu kế tiếp và tràn ra mép thẻ, kèm một lớp xoắn lớn rất mờ. Dải giữa chừa chỗ logo (10 + 8 + 9 = 27 đầu mây).
+- **Nền thẻ** (`art/StreakCard`): thử vân mây kiểu đình làng, **Hào loại**. Chốt **doodle nét đơn phủ kín**: 27 doodle pháp luật (khung 64×64, `art/cardGlyphs.ts`) xếp 4 hàng so le 7 + 6 + 6 + 8, hai hàng giữa chừa chỗ logo; khe trống lấp hình phụ nhỏ (chấm, sao, xoắn, §); nét rung nhẹ bằng `feTurbulence` cho cảm giác vẽ tay. Doodle sáng dần theo ngày từ giữa ra.
 - Chưa kiểm chứng: mẫu cầu vai kiểm sát theo nghị quyết UBTVQH thông qua 12/1/2026 (chưa tìm được số hiệu).
 
 ## 4. Dữ liệu
