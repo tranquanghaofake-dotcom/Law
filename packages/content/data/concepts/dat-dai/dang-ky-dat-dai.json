@@ -1,0 +1,115 @@
+{
+ "id": "dang-ky-dat-dai",
+ "subject": "dat-dai",
+ "chapter": "v4",
+ "term": "Đăng ký đất đai",
+ "definition": "Đăng ký đất đai là bắt buộc đối với người sử dụng đất và người được giao đất để quản lý. Tài sản gắn liền với đất là nhà ở, công trình xây dựng được đăng ký theo yêu cầu của chủ sở hữu. Đăng ký đất đai, tài sản gắn liền với đất bao gồm đăng ký lần đầu và đăng ký biến động, được thực hiện bằng hình thức đăng ký trên giấy hoặc đăng ký điện tử và có giá trị pháp lý như nhau.",
+ "plain": "Đăng ký ĐẤT ĐAI là BẮT BUỘC; đăng ký TÀI SẢN gắn liền với đất (nhà ở, công trình) theo YÊU CẦU của chủ sở hữu. Hai loại: LẦN ĐẦU và BIẾN ĐỘNG (chuyển nhượng, thế chấp, đổi tên…). Hình thức GIẤY hoặc ĐIỆN TỬ, giá trị pháp lý NHƯ NHAU (mới 2024). Đã kê khai đăng ký thì được ghi vào hồ sơ địa chính, xem xét cấp Giấy chứng nhận nếu đủ điều kiện. Chuyển quyền sử dụng đất phải làm thủ tục ĐĂNG KÝ BIẾN ĐỘNG (Điều 133).",
+ "example": "Mua đất xong phải làm thủ tục đăng ký biến động để cập nhật người sử dụng đất mới vào hồ sơ địa chính và Giấy chứng nhận.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1–3 Điều 131 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Van-ban-hop-nhat-44-VBHN-VPQH-2026-Luat-Dat-dai-699655.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "giay-chung-nhan",
+  "dieu-kien-thuc-hien-quyen"
+ ],
+ "keywords": [
+  "bắt buộc với người sử dụng đất",
+  "tài sản theo yêu cầu",
+  "lần đầu và biến động",
+  "giấy hoặc điện tử như nhau"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đăng ký đất đai có bắt buộc không?",
+   "options": [
+    "Bắt buộc đối với người sử dụng đất và người được giao đất để quản lý",
+    "Tự nguyện",
+    "Chỉ bắt buộc với doanh nghiệp",
+    "Chỉ khi chuyển nhượng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 131.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 131 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đăng ký điện tử có giá trị pháp lý thế nào so với đăng ký trên giấy?",
+   "options": [
+    "Như nhau",
+    "Thấp hơn",
+    "Cao hơn",
+    "Chỉ có giá trị tham khảo"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 131.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 131 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Bắt buộc đăng ký",
+   "right": "Đăng ký theo yêu cầu",
+   "cases": [
+    {
+     "text": "Quyền sử dụng đất",
+     "answer": "left"
+    },
+    {
+     "text": "Nhà ở gắn liền với đất",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 131."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đăng ký đất đai là {{bắt buộc}} đối với người sử dụng đất; tài sản gắn liền với đất được đăng ký theo {{yêu cầu}} của chủ sở hữu.",
+   "bank_extra": [
+    "tự nguyện",
+    "quyết định"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đăng ký đất đai bao gồm đăng ký lần đầu và đăng ký {{biến động}}.",
+   "bank_extra": [
+    "bổ sung",
+    "tạm thời"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Đăng ký nhà ở gắn liền với đất là bắt buộc như đăng ký đất đai.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 131: tài sản gắn liền với đất đăng ký theo yêu cầu của chủ sở hữu."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày nguyên tắc đăng ký đất đai, tài sản gắn liền với đất.",
+   "model": "Đăng ký đất đai bắt buộc với người sử dụng đất, người được giao đất để quản lý; tài sản gắn liền với đất đăng ký theo yêu cầu; gồm đăng ký lần đầu, biến động; trên giấy hoặc điện tử có giá trị như nhau (Điều 131).",
+   "keywords": [
+    "bắt buộc",
+    "yêu cầu",
+    "biến động",
+    "điện tử"
+   ]
+  }
+ ]
+}

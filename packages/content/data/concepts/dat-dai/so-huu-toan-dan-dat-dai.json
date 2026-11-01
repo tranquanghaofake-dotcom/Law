@@ -1,0 +1,115 @@
+{
+ "id": "so-huu-toan-dan-dat-dai",
+ "subject": "dat-dai",
+ "chapter": "v2",
+ "term": "Sở hữu toàn dân về đất đai",
+ "definition": "Đất đai thuộc sở hữu toàn dân do Nhà nước đại diện chủ sở hữu và thống nhất quản lý. Nhà nước trao quyền sử dụng đất cho người sử dụng đất theo quy định của Luật này.",
+ "plain": "Ba tầng: TOÀN DÂN là chủ sở hữu; NHÀ NƯỚC ĐẠI DIỆN chủ sở hữu và THỐNG NHẤT QUẢN LÝ; NGƯỜI SỬ DỤNG ĐẤT có QUYỀN SỬ DỤNG ĐẤT (một loại quyền tài sản, Điều 115 BLDS). Cơ sở Hiến pháp: Điều 53, 54 Hiến pháp 2013. Hệ quả: không có \"sở hữu tư nhân về đất\"; cá nhân chỉ chuyển nhượng QUYỀN SỬ DỤNG ĐẤT, không \"bán đất\" theo nghĩa pháp lý.",
+ "example": "Người dân thường nói \"mua đất\", nhưng về pháp lý là nhận chuyển nhượng quyền sử dụng đất; đất vẫn thuộc sở hữu toàn dân.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 12 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Van-ban-hop-nhat-44-VBHN-VPQH-2026-Luat-Dat-dai-699655.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quyen-nha-nuoc-dai-dien-chu-so-huu",
+  "nguoi-su-dung-dat"
+ ],
+ "keywords": [
+  "sở hữu toàn dân",
+  "Nhà nước đại diện chủ sở hữu",
+  "thống nhất quản lý",
+  "trao quyền sử dụng đất"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai là chủ sở hữu đất đai ở Việt Nam?",
+   "options": [
+    "Toàn dân, do Nhà nước đại diện chủ sở hữu",
+    "Nhà nước",
+    "Người có sổ đỏ",
+    "Ủy ban nhân dân xã"
+   ],
+   "answer": 0,
+   "explain": "Điều 12.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 12 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nhà nước trao cho người sử dụng đất quyền gì?",
+   "options": [
+    "Quyền sử dụng đất",
+    "Quyền sở hữu đất",
+    "Quyền định đoạt đất đai",
+    "Quyền thu hồi đất"
+   ],
+   "answer": 0,
+   "explain": "Điều 12.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 12 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Toàn dân",
+   "right": "Người sử dụng đất",
+   "cases": [
+    {
+     "text": "Chủ sở hữu đất đai",
+     "answer": "left"
+    },
+    {
+     "text": "Có quyền sử dụng đất được Nhà nước trao",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 12."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đất đai thuộc sở hữu {{toàn dân}} do Nhà nước {{đại diện chủ sở hữu}} và thống nhất quản lý.",
+   "bank_extra": [
+    "tư nhân",
+    "cho thuê"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhà nước trao {{quyền sử dụng đất}} cho người sử dụng đất theo quy định của Luật này.",
+   "bank_extra": [
+    "quyền sở hữu đất",
+    "quyền định đoạt"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người có Giấy chứng nhận là chủ sở hữu mảnh đất.",
+   "answer": false,
+   "explain": "Sai. Đất thuộc sở hữu toàn dân; người có Giấy chứng nhận có quyền sử dụng đất (Điều 12)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày chế độ sở hữu toàn dân về đất đai.",
+   "model": "Đất đai thuộc sở hữu toàn dân, do Nhà nước đại diện chủ sở hữu và thống nhất quản lý; Nhà nước trao quyền sử dụng đất cho người sử dụng đất (Điều 12; Điều 53 Hiến pháp 2013).",
+   "keywords": [
+    "sở hữu toàn dân",
+    "đại diện chủ sở hữu",
+    "thống nhất quản lý",
+    "quyền sử dụng đất"
+   ]
+  }
+ ]
+}

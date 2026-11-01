@@ -1,0 +1,115 @@
+{
+ "id": "pham-vi-dieu-chinh-luat-dat-dai",
+ "subject": "dat-dai",
+ "chapter": "v1",
+ "term": "Phạm vi điều chỉnh của Luật Đất đai",
+ "definition": "Luật này quy định về chế độ sở hữu đất đai, quyền hạn và trách nhiệm của Nhà nước đại diện chủ sở hữu toàn dân về đất đai và thống nhất quản lý về đất đai, chế độ quản lý và sử dụng đất đai, quyền và nghĩa vụ của công dân, người sử dụng đất đối với đất đai thuộc lãnh thổ của nước Cộng hòa xã hội chủ nghĩa Việt Nam.",
+ "plain": "Ngành luật đất đai điều chỉnh quan hệ SỞ HỮU, QUẢN LÝ và SỬ DỤNG đất đai. Hai phương pháp: MỆNH LỆNH – HÀNH CHÍNH (Nhà nước giao đất, thu hồi…) và BÌNH ĐẲNG – THỎA THUẬN (chuyển nhượng, thuê lại quyền sử dụng đất). Luật Đất đai 31/2024/QH15 thay thế Luật Đất đai 2013, có hiệu lực 01/8/2024 (sớm hơn dự kiến 01/01/2025 theo Luật 43/2024/QH15). Đề cương HLU trong Drive soạn theo Luật Đất đai 2013 (đã hết hiệu lực từ 01/8/2024); nội dung ở đây theo Luật Đất đai 2024 hiện hành.",
+ "example": "Tranh chấp ranh giới đất giữa hai hộ, thủ tục cấp sổ đỏ, việc Nhà nước thu hồi đất làm đường cao tốc đều thuộc phạm vi điều chỉnh của Luật Đất đai.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 1 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Van-ban-hop-nhat-44-VBHN-VPQH-2026-Luat-Dat-dai-699655.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "so-huu-toan-dan-dat-dai",
+  "nguoi-su-dung-dat"
+ ],
+ "keywords": [
+  "chế độ sở hữu đất đai",
+  "Nhà nước đại diện chủ sở hữu",
+  "quản lý và sử dụng đất đai",
+  "quyền và nghĩa vụ người sử dụng đất"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Luật Đất đai 2024 có hiệu lực từ ngày nào?",
+   "options": [
+    "01/8/2024",
+    "01/01/2025",
+    "01/7/2024",
+    "01/01/2024"
+   ],
+   "answer": 0,
+   "explain": "Theo VBHN 44/VBHN-VPQH 2026: Luật 31/2024/QH15 có hiệu lực từ 01/8/2024.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 1 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Luật Đất đai quy định về những nội dung nào?",
+   "options": [
+    "Chế độ sở hữu, quản lý, sử dụng đất đai; quyền, nghĩa vụ người sử dụng đất",
+    "Chỉ thủ tục cấp sổ đỏ",
+    "Chỉ giá đất",
+    "Kinh doanh bất động sản"
+   ],
+   "answer": 0,
+   "explain": "Điều 1.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 1 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quan hệ hành chính về đất đai",
+   "right": "Quan hệ bình đẳng về quyền sử dụng đất",
+   "cases": [
+    {
+     "text": "Nhà nước thu hồi đất",
+     "answer": "left"
+    },
+    {
+     "text": "Hai hộ chuyển nhượng quyền sử dụng đất",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 1."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Luật này quy định về chế độ {{sở hữu}} đất đai, quyền hạn và trách nhiệm của Nhà nước {{đại diện chủ sở hữu}} toàn dân về đất đai.",
+   "bank_extra": [
+    "tư hữu",
+    "chủ sở hữu tư nhân"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Luật Đất đai quy định quyền và nghĩa vụ của công dân, {{người sử dụng đất}} đối với đất đai.",
+   "bank_extra": [
+    "chủ sở hữu đất",
+    "người thuê nhà"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Luật Đất đai 2013 hiện vẫn là văn bản áp dụng chính cho quan hệ đất đai.",
+   "answer": false,
+   "explain": "Sai. Luật Đất đai 2013 đã được thay thế bởi Luật Đất đai 31/2024/QH15 (hiệu lực 01/8/2024)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày phạm vi điều chỉnh của Luật Đất đai 2024.",
+   "model": "Quy định chế độ sở hữu đất đai, quyền hạn, trách nhiệm của Nhà nước đại diện chủ sở hữu toàn dân và thống nhất quản lý, chế độ quản lý và sử dụng đất đai, quyền và nghĩa vụ của công dân, người sử dụng đất (Điều 1).",
+   "keywords": [
+    "sở hữu",
+    "đại diện chủ sở hữu",
+    "quản lý",
+    "người sử dụng đất"
+   ]
+  }
+ ]
+}

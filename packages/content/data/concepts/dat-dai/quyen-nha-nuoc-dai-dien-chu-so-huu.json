@@ -1,0 +1,120 @@
+{
+ "id": "quyen-nha-nuoc-dai-dien-chu-so-huu",
+ "subject": "dat-dai",
+ "chapter": "v2",
+ "term": "Quyền của Nhà nước là đại diện chủ sở hữu về đất đai",
+ "definition": "1. Quyết định quy hoạch sử dụng đất. 2. Quyết định mục đích sử dụng đất thông qua quy hoạch sử dụng đất, kế hoạch sử dụng đất, giao đất, cho thuê đất, công nhận quyền sử dụng đất và cho phép chuyển mục đích sử dụng đất. 3. Quy định hạn mức sử dụng đất gồm hạn mức giao đất nông nghiệp, hạn mức giao đất ở, hạn mức công nhận đất ở và hạn mức nhận chuyển quyền sử dụng đất nông nghiệp. 4. Quyết định thời hạn sử dụng đất. 5. Quyết định thu hồi đất. 6. Quyết định trưng dụng đất.",
+ "plain": "Nhà nước thực hiện quyền chủ sở hữu bằng: QUY HOẠCH; quyết định MỤC ĐÍCH sử dụng; HẠN MỨC; THỜI HẠN; THU HỒI, TRƯNG DỤNG; GIAO ĐẤT, CHO THUÊ (có/không thu tiền); CÔNG NHẬN quyền; GIÁ ĐẤT (nguyên tắc, bảng giá, giá cụ thể); CHÍNH SÁCH TÀI CHÍNH, điều tiết giá trị tăng thêm. Phân biệt THU HỒI (chấm dứt quyền sử dụng) với TRƯNG DỤNG (sử dụng có thời hạn trong tình trạng khẩn cấp, quốc phòng…).",
+ "example": "Ủy ban nhân dân cấp tỉnh quyết định hạn mức giao đất ở tại địa phương theo khung của luật — đây là thực hiện quyền \"quy định hạn mức sử dụng đất\" của Nhà nước.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1–6 Điều 13 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Van-ban-hop-nhat-44-VBHN-VPQH-2026-Luat-Dat-dai-699655.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "so-huu-toan-dan-dat-dai",
+  "thu-hoi-dat",
+  "quy-hoach-su-dung-dat"
+ ],
+ "keywords": [
+  "quy hoạch",
+  "mục đích sử dụng",
+  "hạn mức, thời hạn",
+  "thu hồi, trưng dụng"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quyền nào thuộc Nhà nước với tư cách đại diện chủ sở hữu đất đai?",
+   "options": [
+    "Quyết định thu hồi đất",
+    "Chuyển nhượng quyền sử dụng đất của cá nhân",
+    "Thế chấp quyền sử dụng đất của doanh nghiệp",
+    "Thừa kế quyền sử dụng đất"
+   ],
+   "answer": 0,
+   "explain": "Khoản 5 Điều 13.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 13 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nhà nước quyết định mục đích sử dụng đất thông qua những công cụ nào?",
+   "options": [
+    "Quy hoạch, kế hoạch sử dụng đất, giao đất, cho thuê đất, công nhận quyền và cho phép chuyển mục đích",
+    "Chỉ quy hoạch",
+    "Chỉ cấp Giấy chứng nhận",
+    "Thông qua giá đất"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 13.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 13 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quyền của Nhà nước (Điều 13)",
+   "right": "Quyền của người sử dụng đất",
+   "cases": [
+    {
+     "text": "Quyết định trưng dụng đất",
+     "answer": "left"
+    },
+    {
+     "text": "Chuyển nhượng quyền sử dụng đất",
+     "answer": "right"
+    },
+    {
+     "text": "Quyết định thời hạn sử dụng đất",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 13, 27."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhà nước quyết định {{quy hoạch}} sử dụng đất; quyết định thu hồi đất; quyết định {{trưng dụng}} đất.",
+   "bank_extra": [
+    "mua bán",
+    "tịch thu"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhà nước quy định {{hạn mức}} sử dụng đất gồm hạn mức giao đất nông nghiệp, hạn mức giao đất ở.",
+   "bank_extra": [
+    "giá bán",
+    "thuế"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Trưng dụng đất và thu hồi đất là một.",
+   "answer": false,
+   "explain": "Sai. Khoản 5, 6 Điều 13 tách hai quyền; trưng dụng là sử dụng có thời hạn trong trường hợp đặc biệt, thu hồi là thu lại quyền sử dụng đất."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các quyền của Nhà nước là đại diện chủ sở hữu về đất đai.",
+   "model": "Quyết định quy hoạch; quyết định mục đích sử dụng; quy định hạn mức; quyết định thời hạn; quyết định thu hồi, trưng dụng; giao đất, cho thuê đất; công nhận quyền; định giá đất; chính sách tài chính về đất đai… (Điều 13).",
+   "keywords": [
+    "quy hoạch",
+    "hạn mức",
+    "thu hồi",
+    "giá đất"
+   ]
+  }
+ ]
+}

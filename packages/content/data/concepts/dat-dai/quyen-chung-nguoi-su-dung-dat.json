@@ -1,0 +1,115 @@
+{
+ "id": "quyen-chung-nguoi-su-dung-dat",
+ "subject": "dat-dai",
+ "chapter": "v6",
+ "term": "Quyền chung của người sử dụng đất",
+ "definition": "1. Được cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất khi có đủ điều kiện theo quy định của pháp luật về đất đai. 2. Hưởng thành quả lao động, kết quả đầu tư trên đất sử dụng hợp pháp. (…) 5. Được Nhà nước bảo hộ khi người khác xâm phạm quyền, lợi ích hợp pháp về đất đai của mình. 6. Được quyền chuyển mục đích sử dụng đất theo quy định của Luật này và quy định khác của pháp luật có liên quan. 7. Được bồi thường, hỗ trợ, tái định cư khi Nhà nước thu hồi đất theo quy định của Luật này. 8. Khiếu nại, tố cáo, khởi kiện về những hành vi vi phạm quyền sử dụng đất hợp pháp của mình và những hành vi khác vi phạm pháp luật về đất đai.",
+ "plain": "Quyền chung (mọi người sử dụng đất): được CẤP GIẤY CHỨNG NHẬN; HƯỞNG THÀNH QUẢ; được Nhà nước HƯỚNG DẪN, BẢO HỘ; CHUYỂN MỤC ĐÍCH; được BỒI THƯỜNG khi thu hồi; KHIẾU NẠI, TỐ CÁO, KHỞI KIỆN. Quyền RIÊNG (chuyển đổi, chuyển nhượng, cho thuê, thừa kế, tặng cho, thế chấp, góp vốn) phụ thuộc vào LOẠI CHỦ THỂ và HÌNH THỨC giao, thuê đất (Điều 27 trở đi) và điều kiện tại Điều 45. Nghĩa vụ chung: Điều 31.",
+ "example": "Người được cấp đất nông nghiệp bị hàng xóm lấn ranh: có quyền yêu cầu Nhà nước bảo hộ và khởi kiện.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, 2, 5–8 Điều 26 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Van-ban-hop-nhat-44-VBHN-VPQH-2026-Luat-Dat-dai-699655.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "dieu-kien-thuc-hien-quyen",
+  "nguoi-su-dung-dat"
+ ],
+ "keywords": [
+  "được cấp Giấy chứng nhận",
+  "hưởng thành quả lao động",
+  "được bồi thường khi thu hồi",
+  "khiếu nại, tố cáo, khởi kiện"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quyền nào là quyền chung của người sử dụng đất theo Điều 26?",
+   "options": [
+    "Được bồi thường, hỗ trợ, tái định cư khi Nhà nước thu hồi đất",
+    "Được miễn mọi nghĩa vụ tài chính",
+    "Được tự ý chuyển mục đích không cần phép",
+    "Được sở hữu đất"
+   ],
+   "answer": 0,
+   "explain": "Khoản 7 Điều 26.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 26 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quyền chuyển mục đích sử dụng đất của người sử dụng đất được thực hiện thế nào?",
+   "options": [
+    "Theo quy định của Luật Đất đai và pháp luật có liên quan",
+    "Tự do không cần thủ tục",
+    "Chỉ khi có đồng ý của hàng xóm",
+    "Không có quyền này"
+   ],
+   "answer": 0,
+   "explain": "Khoản 6 Điều 26.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 6 Điều 26 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quyền chung (Điều 26)",
+   "right": "Quyền phụ thuộc hình thức sử dụng đất",
+   "cases": [
+    {
+     "text": "Khiếu nại, khởi kiện vi phạm",
+     "answer": "left"
+    },
+    {
+     "text": "Chuyển nhượng quyền sử dụng đất",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 26, 27, 45."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người sử dụng đất được {{hưởng thành quả}} lao động, kết quả đầu tư trên đất sử dụng hợp pháp; được Nhà nước {{bảo hộ}} khi người khác xâm phạm quyền, lợi ích hợp pháp về đất đai.",
+   "bank_extra": [
+    "nộp thay",
+    "tịch thu"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người sử dụng đất có quyền khiếu nại, tố cáo, {{khởi kiện}} về hành vi vi phạm quyền sử dụng đất hợp pháp của mình.",
+   "bank_extra": [
+    "xử phạt",
+    "cưỡng chế"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi người sử dụng đất đều được chuyển nhượng quyền sử dụng đất như nhau.",
+   "answer": false,
+   "explain": "Sai. Quyền chuyển nhượng phụ thuộc hình thức sử dụng đất và điều kiện Điều 45; Điều 26 chỉ là quyền chung."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các quyền chung của người sử dụng đất.",
+   "model": "Được cấp Giấy chứng nhận khi đủ điều kiện; hưởng thành quả lao động, kết quả đầu tư; hưởng lợi ích khi Nhà nước cải tạo đất nông nghiệp; được hướng dẫn, bảo hộ; chuyển mục đích theo luật; được bồi thường khi thu hồi; khiếu nại, tố cáo, khởi kiện (Điều 26).",
+   "keywords": [
+    "Giấy chứng nhận",
+    "thành quả",
+    "bồi thường",
+    "khởi kiện"
+   ]
+  }
+ ]
+}

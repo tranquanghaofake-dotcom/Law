@@ -1,0 +1,115 @@
+{
+ "id": "gia-dat",
+ "subject": "dat-dai",
+ "chapter": "v5",
+ "term": "Giá đất và tiền sử dụng đất",
+ "definition": "Giá đất là giá trị của quyền sử dụng đất tính bằng tiền trên một đơn vị diện tích đất. (…) Tiền sử dụng đất là số tiền mà người sử dụng đất phải trả cho Nhà nước khi được Nhà nước giao đất có thu tiền sử dụng đất, cho phép chuyển mục đích sử dụng đất hoặc các trường hợp sử dụng đất mà phải nộp tiền sử dụng đất theo quy định của pháp luật.",
+ "plain": "Giá đất = giá trị QUYỀN SỬ DỤNG ĐẤT trên một đơn vị diện tích. Hai loại do Nhà nước quyết định: BẢNG GIÁ ĐẤT (bảng giá lần đầu theo luật mới áp dụng từ 01/01/2026, sau đó điều chỉnh hằng năm — Điều 159; Luật 2024 bỏ khung giá đất) và GIÁ ĐẤT CỤ THỂ (cho từng trường hợp: bồi thường, tính tiền sử dụng đất khi giao đất…). Nghĩa vụ tài chính: TIỀN SỬ DỤNG ĐẤT (giao đất có thu tiền, chuyển mục đích), TIỀN THUÊ ĐẤT, thuế, phí, lệ phí. Nguyên văn VBHN thiếu dấu cách sau dấu phẩy ở khoản 44 (\"đất,cho phép\") — được chuẩn hóa khi đối chiếu.",
+ "example": "Chuyển 100 m² đất vườn sang đất ở: người sử dụng đất phải nộp tiền sử dụng đất cho Nhà nước theo quy định.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 19, khoản 44 Điều 3 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Van-ban-hop-nhat-44-VBHN-VPQH-2026-Luat-Dat-dai-699655.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nguyen-tac-dinh-gia-dat",
+  "nguyen-tac-boi-thuong-khi-thu-hoi"
+ ],
+ "keywords": [
+  "giá trị quyền sử dụng đất",
+  "trên một đơn vị diện tích",
+  "tiền sử dụng đất",
+  "chuyển mục đích"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Giá đất là gì theo khoản 19 Điều 3?",
+   "options": [
+    "Giá trị của quyền sử dụng đất tính bằng tiền trên một đơn vị diện tích đất",
+    "Giá trị của đất đai thuộc sở hữu tư nhân",
+    "Thuế sử dụng đất",
+    "Giá thuê nhà"
+   ],
+   "answer": 0,
+   "explain": "Khoản 19 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 19 Điều 3 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người sử dụng đất phải nộp tiền sử dụng đất khi nào?",
+   "options": [
+    "Được giao đất có thu tiền, được cho phép chuyển mục đích sử dụng đất hoặc trường hợp luật quy định",
+    "Khi thuê đất trả hằng năm",
+    "Khi thừa kế quyền sử dụng đất",
+    "Khi cho người khác mượn đất"
+   ],
+   "answer": 0,
+   "explain": "Khoản 44 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 44 Điều 3 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tiền sử dụng đất",
+   "right": "Tiền thuê đất",
+   "cases": [
+    {
+     "text": "Nộp khi được giao đất có thu tiền",
+     "answer": "left"
+    },
+    {
+     "text": "Nộp khi được Nhà nước cho thuê đất",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 44, 45 Điều 3."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Giá đất là giá trị của {{quyền sử dụng đất}} tính bằng tiền trên một đơn vị {{diện tích}} đất.",
+   "bank_extra": [
+    "quyền sở hữu",
+    "khối lượng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tiền sử dụng đất phải trả khi được Nhà nước cho phép {{chuyển mục đích}} sử dụng đất.",
+   "bank_extra": [
+    "thế chấp",
+    "cho thuê lại"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Giá đất là giá trị của quyền sở hữu đất của tư nhân.",
+   "answer": false,
+   "explain": "Sai. Khoản 19 Điều 3: giá trị của quyền sử dụng đất."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm giá đất và tiền sử dụng đất.",
+   "model": "Giá đất là giá trị của quyền sử dụng đất tính bằng tiền trên một đơn vị diện tích (khoản 19 Điều 3); tiền sử dụng đất là tiền người sử dụng đất trả Nhà nước khi được giao đất có thu tiền, chuyển mục đích hoặc trường hợp phải nộp theo luật (khoản 44).",
+   "keywords": [
+    "quyền sử dụng đất",
+    "diện tích",
+    "giao đất có thu tiền",
+    "chuyển mục đích"
+   ]
+  }
+ ]
+}

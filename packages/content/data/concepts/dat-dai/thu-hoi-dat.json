@@ -1,0 +1,115 @@
+{
+ "id": "thu-hoi-dat",
+ "subject": "dat-dai",
+ "chapter": "v3",
+ "term": "Thu hồi đất vì lợi ích quốc gia, công cộng",
+ "definition": "Nhà nước thu hồi đất là việc cơ quan nhà nước có thẩm quyền ban hành quyết định thu lại quyền sử dụng đất của người sử dụng đất hoặc thu lại đất của người đang sử dụng đất hoặc thu lại đất đang được Nhà nước giao quản lý. (…) Nhà nước thu hồi đất trong trường hợp thật cần thiết để thực hiện dự án phát triển kinh tế - xã hội vì lợi ích quốc gia, công cộng nhằm phát huy nguồn lực đất đai, nâng cao hiệu quả sử dụng đất, phát triển hạ tầng kinh tế - xã hội theo hướng hiện đại, thực hiện chính sách an sinh xã hội, bảo vệ môi trường và bảo tồn di sản văn hóa trong trường hợp sau đây:",
+ "plain": "Bốn nhóm căn cứ thu hồi: QUỐC PHÒNG, AN NINH (Điều 78); PHÁT TRIỂN KINH TẾ – XÃ HỘI VÌ LỢI ÍCH QUỐC GIA, CÔNG CỘNG (Điều 79 — liệt kê cụ thể 31 trường hợp, \"thật cần thiết\"); DO VI PHẠM pháp luật đất đai (Điều 81); CHẤM DỨT sử dụng theo pháp luật, tự nguyện trả lại, nguy cơ đe dọa tính mạng (Điều 82). Luật 2024 LIỆT KÊ CỤ THỂ dự án được thu hồi thay vì quy định chung như Luật 2013. Thu hồi theo Điều 78, 79 thì được BỒI THƯỜNG, HỖ TRỢ, TÁI ĐỊNH CƯ.",
+ "example": "Nhà nước thu hồi đất của các hộ dân để làm đường cao tốc (công trình giao thông, khoản 1 Điều 79): người có đất bị thu hồi được bồi thường, hỗ trợ, tái định cư.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 35 Điều 3, đoạn mở đầu Điều 79 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Van-ban-hop-nhat-44-VBHN-VPQH-2026-Luat-Dat-dai-699655.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nguyen-tac-boi-thuong-khi-thu-hoi",
+  "quyen-nha-nuoc-dai-dien-chu-so-huu"
+ ],
+ "keywords": [
+  "quyết định thu lại quyền sử dụng đất",
+  "thật cần thiết",
+  "lợi ích quốc gia, công cộng",
+  "các trường hợp liệt kê"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nhà nước thu hồi đất để phát triển kinh tế – xã hội vì lợi ích quốc gia, công cộng khi nào?",
+   "options": [
+    "Trong trường hợp thật cần thiết, thuộc các trường hợp liệt kê tại Điều 79",
+    "Bất cứ khi nào nhà đầu tư đề nghị",
+    "Khi giá đất tăng",
+    "Khi người dân không nộp thuế"
+   ],
+   "answer": 0,
+   "explain": "Điều 79.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 79 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nhà nước thu hồi đất là gì?",
+   "options": [
+    "Việc cơ quan có thẩm quyền ban hành quyết định thu lại quyền sử dụng đất hoặc thu lại đất",
+    "Việc mua lại đất theo giá thị trường",
+    "Việc trưng dụng đất có thời hạn",
+    "Việc đấu giá quyền sử dụng đất"
+   ],
+   "answer": 0,
+   "explain": "Khoản 35 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 35 Điều 3 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thu hồi vì lợi ích quốc gia, công cộng (Điều 79)",
+   "right": "Thu hồi do vi phạm (Điều 81)",
+   "cases": [
+    {
+     "text": "Làm đường cao tốc",
+     "answer": "left"
+    },
+    {
+     "text": "Người sử dụng đất không đưa đất vào sử dụng theo thời hạn luật định",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 79, 81."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhà nước thu hồi đất là việc cơ quan nhà nước có thẩm quyền ban hành quyết định thu lại {{quyền sử dụng đất}} của người sử dụng đất. Nhà nước thu hồi đất trong trường hợp {{thật cần thiết}} để thực hiện dự án vì lợi ích quốc gia, công cộng.",
+   "bank_extra": [
+    "quyền sở hữu nhà",
+    "có lợi nhuận"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thu hồi đất vì lợi ích quốc gia, công cộng nhằm thực hiện chính sách an sinh xã hội, bảo vệ môi trường và bảo tồn {{di sản văn hóa}}.",
+   "bank_extra": [
+    "tài sản tư nhân",
+    "doanh nghiệp"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo Luật Đất đai 2024, Nhà nước được thu hồi đất cho mọi dự án kinh doanh nếu nhà đầu tư đề nghị.",
+   "answer": false,
+   "explain": "Sai. Điều 79 chỉ cho thu hồi trong trường hợp thật cần thiết và thuộc danh mục liệt kê."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm thu hồi đất và điều kiện thu hồi đất để phát triển kinh tế – xã hội vì lợi ích quốc gia, công cộng.",
+   "model": "Thu hồi đất là việc cơ quan có thẩm quyền ra quyết định thu lại quyền sử dụng đất hoặc thu lại đất (khoản 35 Điều 3); Nhà nước thu hồi trong trường hợp thật cần thiết để thực hiện dự án vì lợi ích quốc gia, công cộng thuộc các trường hợp liệt kê (Điều 79).",
+   "keywords": [
+    "thu lại",
+    "thật cần thiết",
+    "lợi ích quốc gia",
+    "liệt kê"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,116 @@
+{
+ "id": "dieu-kien-thuc-hien-quyen",
+ "subject": "dat-dai",
+ "chapter": "v6",
+ "term": "Điều kiện thực hiện quyền chuyển nhượng, thế chấp… quyền sử dụng đất",
+ "definition": "Người sử dụng đất được thực hiện các quyền chuyển đổi, chuyển nhượng, cho thuê, cho thuê lại, thừa kế, tặng cho quyền sử dụng đất; thế chấp, góp vốn bằng quyền sử dụng đất khi có đủ các điều kiện sau đây: (…) b) Đất không có tranh chấp hoặc tranh chấp đã được giải quyết bởi cơ quan nhà nước có thẩm quyền, bản án, quyết định của Tòa án, quyết định hoặc phán quyết của Trọng tài đã có hiệu lực pháp luật; c) Quyền sử dụng đất không bị kê biên, áp dụng biện pháp khác để bảo đảm thi hành án theo quy định của pháp luật thi hành án dân sự; d) Trong thời hạn sử dụng đất; đ) Quyền sử dụng đất không bị áp dụng biện pháp khẩn cấp tạm thời theo quy định của pháp luật.",
+ "plain": "Năm điều kiện: (a) CÓ GIẤY CHỨNG NHẬN (trừ thừa kế, dồn điền đổi thửa, tặng cho Nhà nước…); (b) KHÔNG TRANH CHẤP hoặc tranh chấp đã giải quyết xong; (c) KHÔNG BỊ KÊ BIÊN thi hành án; (d) TRONG THỜI HẠN sử dụng đất; (đ) KHÔNG BỊ ÁP DỤNG BIỆN PHÁP KHẨN CẤP TẠM THỜI. Ngoài khoản 1, còn điều kiện riêng theo từng trường hợp (khoản 3 Điều 45). Hợp đồng chuyển nhượng, tặng cho, thế chấp, góp vốn phải CÔNG CHỨNG, CHỨNG THỰC theo khoản 3 Điều 27 (trừ trường hợp luật quy định khác); sau đó đăng ký biến động (Điều 133).",
+ "example": "Mảnh đất đang bị Tòa án áp dụng biện pháp khẩn cấp tạm thời cấm chuyển dịch: chủ đất không được chuyển nhượng dù có sổ đỏ.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 45 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Van-ban-hop-nhat-44-VBHN-VPQH-2026-Luat-Dat-dai-699655.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quyen-chung-nguoi-su-dung-dat",
+  "giay-chung-nhan",
+  "dang-ky-dat-dai"
+ ],
+ "keywords": [
+  "có Giấy chứng nhận",
+  "không tranh chấp",
+  "không bị kê biên",
+  "trong thời hạn sử dụng đất"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Điều kiện nào KHÔNG thuộc khoản 1 Điều 45 để chuyển nhượng quyền sử dụng đất?",
+   "options": [
+    "Người nhận chuyển nhượng phải có hộ khẩu tại địa phương",
+    "Đất không có tranh chấp",
+    "Quyền sử dụng đất không bị kê biên",
+    "Trong thời hạn sử dụng đất"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 45.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 45 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trường hợp nào không bắt buộc có Giấy chứng nhận khi thực hiện quyền?",
+   "options": [
+    "Thừa kế quyền sử dụng đất",
+    "Chuyển nhượng",
+    "Thế chấp",
+    "Góp vốn"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 45.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 45 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Đủ điều kiện chuyển nhượng",
+   "right": "Không đủ điều kiện",
+   "cases": [
+    {
+     "text": "Có sổ đỏ, không tranh chấp, còn thời hạn",
+     "answer": "left"
+    },
+    {
+     "text": "Đất đang bị kê biên để thi hành án",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 45."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quyền sử dụng đất không bị {{kê biên}}, áp dụng biện pháp khác để bảo đảm thi hành án; đất không bị áp dụng biện pháp {{khẩn cấp tạm thời}}.",
+   "bank_extra": [
+    "thế chấp",
+    "hành chính"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người sử dụng đất được thực hiện quyền khi đất còn trong {{thời hạn}} sử dụng đất.",
+   "bank_extra": [
+    "hạn mức",
+    "quy hoạch"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Đất đang có tranh chấp chưa được giải quyết vẫn được chuyển nhượng nếu có sổ đỏ.",
+   "answer": false,
+   "explain": "Sai. Điểm b khoản 1 Điều 45: đất không có tranh chấp hoặc tranh chấp đã được giải quyết."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày điều kiện thực hiện quyền chuyển nhượng, thế chấp… quyền sử dụng đất.",
+   "model": "Có Giấy chứng nhận (trừ một số trường hợp như thừa kế); đất không tranh chấp hoặc đã giải quyết; không bị kê biên thi hành án; trong thời hạn sử dụng đất; không bị áp dụng biện pháp khẩn cấp tạm thời (khoản 1 Điều 45).",
+   "keywords": [
+    "Giấy chứng nhận",
+    "tranh chấp",
+    "kê biên",
+    "thời hạn"
+   ]
+  }
+ ]
+}

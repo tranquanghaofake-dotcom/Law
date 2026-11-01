@@ -1,0 +1,116 @@
+{
+ "id": "quy-hoach-su-dung-dat",
+ "subject": "dat-dai",
+ "chapter": "v3",
+ "term": "Quy hoạch sử dụng đất",
+ "definition": "Quy hoạch sử dụng đất là việc phân bổ chỉ tiêu sử dụng đất và khoanh vùng đất đai cho các mục đích phát triển kinh tế - xã hội, quốc phòng, an ninh, bảo vệ môi trường và thích ứng với biến đổi khí hậu trên cơ sở tiềm năng đất đai và nhu cầu sử dụng đất của các ngành, lĩnh vực đối với từng đơn vị hành chính cho thời kỳ xác định.",
+ "plain": "Quy hoạch là CĂN CỨ để giao đất, cho thuê, thu hồi, chuyển mục đích. Hai nội dung: PHÂN BỔ CHỈ TIÊU và KHOANH VÙNG đất đai; theo từng ĐƠN VỊ HÀNH CHÍNH, cho THỜI KỲ XÁC ĐỊNH. Hệ thống: quy hoạch quốc gia, tỉnh, huyện (cấp huyện đã kết thúc hoạt động từ 01/7/2025 — cần tra văn bản sửa đổi về cấp quy hoạch sau sắp xếp chính quyền hai cấp), quốc phòng, an ninh. Kế hoạch sử dụng đất là chia quy hoạch theo thời gian thực hiện.",
+ "example": "Khu đất nông nghiệp được quy hoạch thành khu dân cư: chủ sử dụng có căn cứ xin chuyển mục đích sang đất ở, phù hợp kế hoạch sử dụng đất hằng năm.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 36 Điều 3 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Van-ban-hop-nhat-44-VBHN-VPQH-2026-Luat-Dat-dai-699655.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quyen-nha-nuoc-dai-dien-chu-so-huu",
+  "thu-hoi-dat",
+  "giao-dat-cho-thue-dat"
+ ],
+ "keywords": [
+  "phân bổ chỉ tiêu sử dụng đất",
+  "khoanh vùng đất đai",
+  "từng đơn vị hành chính",
+  "thời kỳ xác định"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quy hoạch sử dụng đất là gì?",
+   "options": [
+    "Việc phân bổ chỉ tiêu sử dụng đất và khoanh vùng đất đai cho các mục đích trong thời kỳ xác định",
+    "Việc cấp Giấy chứng nhận",
+    "Việc định giá đất",
+    "Việc thu thuế đất"
+   ],
+   "answer": 0,
+   "explain": "Khoản 36 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 36 Điều 3 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quy hoạch sử dụng đất được lập đối với phạm vi nào?",
+   "options": [
+    "Từng đơn vị hành chính cho thời kỳ xác định",
+    "Từng thửa đất",
+    "Từng hộ gia đình",
+    "Toàn cầu"
+   ],
+   "answer": 0,
+   "explain": "Khoản 36 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 36 Điều 3 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quy hoạch sử dụng đất",
+   "right": "Giao đất",
+   "cases": [
+    {
+     "text": "Phân bổ chỉ tiêu, khoanh vùng",
+     "answer": "left"
+    },
+    {
+     "text": "Quyết định trao quyền sử dụng cho chủ thể cụ thể",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 3."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quy hoạch sử dụng đất là việc phân bổ {{chỉ tiêu}} sử dụng đất và {{khoanh vùng}} đất đai cho các mục đích.",
+   "bank_extra": [
+    "giá",
+    "đấu giá"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quy hoạch sử dụng đất bao gồm mục đích bảo vệ môi trường và thích ứng với biến đổi {{khí hậu}}.",
+   "bank_extra": [
+    "kinh tế",
+    "dân số"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quy hoạch sử dụng đất được lập cho từng thửa đất của mỗi hộ dân.",
+   "answer": false,
+   "explain": "Sai. Khoản 36 Điều 3: đối với từng đơn vị hành chính."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm quy hoạch sử dụng đất.",
+   "model": "Là việc phân bổ chỉ tiêu sử dụng đất và khoanh vùng đất đai cho mục đích phát triển kinh tế – xã hội, quốc phòng, an ninh, bảo vệ môi trường, thích ứng biến đổi khí hậu trên cơ sở tiềm năng đất đai và nhu cầu sử dụng đất đối với từng đơn vị hành chính cho thời kỳ xác định (khoản 36 Điều 3).",
+   "keywords": [
+    "chỉ tiêu",
+    "khoanh vùng",
+    "đơn vị hành chính",
+    "thời kỳ"
+   ]
+  }
+ ]
+}

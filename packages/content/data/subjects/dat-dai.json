@@ -1,0 +1,122 @@
+{
+  "id": "dat-dai",
+  "title": "Luật Đất đai",
+  "short": "Đất đai",
+  "chapters": [
+    {
+      "id": "v1",
+      "title": "Vấn đề 1. Những vấn đề lí luận chung về ngành luật đất đai",
+      "lessons": [
+        {
+          "id": "dd1",
+          "title": "Những vấn đề lí luận chung về ngành luật đất đai",
+          "concepts": [
+            "pham-vi-dieu-chinh-luat-dat-dai",
+            "phan-loai-dat",
+            "nguoi-su-dung-dat"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v2",
+      "title": "Vấn đề 2. Chế độ sở hữu toàn dân về đất đai",
+      "lessons": [
+        {
+          "id": "dd2",
+          "title": "Chế độ sở hữu toàn dân về đất đai",
+          "concepts": [
+            "so-huu-toan-dan-dat-dai",
+            "quyen-nha-nuoc-dai-dien-chu-so-huu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v3",
+      "title": "Vấn đề 3. Quy hoạch, kế hoạch sử dụng đất và giao đất, cho thuê đất, thu hồi đất",
+      "lessons": [
+        {
+          "id": "dd3",
+          "title": "Quy hoạch, kế hoạch sử dụng đất và giao đất, cho thuê đất, thu hồi đất",
+          "concepts": [
+            "quy-hoach-su-dung-dat",
+            "giao-dat-cho-thue-dat",
+            "thu-hoi-dat",
+            "nguyen-tac-boi-thuong-khi-thu-hoi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v4",
+      "title": "Vấn đề 4. Đăng ký đất đai, cấp Giấy chứng nhận",
+      "lessons": [
+        {
+          "id": "dd4",
+          "title": "Đăng ký đất đai, cấp Giấy chứng nhận",
+          "concepts": [
+            "dang-ky-dat-dai",
+            "giay-chung-nhan"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v5",
+      "title": "Vấn đề 5. Giá đất và các nghĩa vụ tài chính về đất đai",
+      "lessons": [
+        {
+          "id": "dd5",
+          "title": "Giá đất và các nghĩa vụ tài chính về đất đai",
+          "concepts": [
+            "gia-dat",
+            "nguyen-tac-dinh-gia-dat"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v6",
+      "title": "Vấn đề 6. Địa vị pháp lí của người sử dụng đất",
+      "lessons": [
+        {
+          "id": "dd6",
+          "title": "Địa vị pháp lí của người sử dụng đất",
+          "concepts": [
+            "quyen-chung-nguoi-su-dung-dat",
+            "dieu-kien-thuc-hien-quyen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v7",
+      "title": "Vấn đề 7. Chế độ pháp lí các loại đất",
+      "lessons": [
+        {
+          "id": "dd7",
+          "title": "Chế độ pháp lí các loại đất",
+          "concepts": [
+            "dat-su-dung-on-dinh-lau-dai",
+            "han-muc-giao-dat-nong-nghiep"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v8",
+      "title": "Vấn đề 8. Giải quyết tranh chấp đất đai",
+      "lessons": [
+        {
+          "id": "dd8",
+          "title": "Giải quyết tranh chấp đất đai",
+          "concepts": [
+            "hoa-giai-tranh-chap-dat-dai",
+            "tham-quyen-giai-quyet-tranh-chap-dat-dai"
+          ]
+        }
+      ]
+    }
+  ]
+}
