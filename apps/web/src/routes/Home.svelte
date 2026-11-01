@@ -12,9 +12,9 @@
   import { setRail } from '$lib/ui/rail.svelte';
   import HeroCard from '$lib/ui/HeroCard.svelte';
   import HomeRail from '$lib/ui/HomeRail.svelte';
-  import Waves from '$lib/art/Waves.svelte';
   import Vignette from '$lib/art/Vignette.svelte';
-  import { vignetteFor } from '$lib/art/registry';
+  import { vignetteFor, artFor } from '$lib/art/registry';
+  import SubjectArt from '$lib/art/SubjectArt.svelte';
 
   type Row = { subject: Subject; grade: string | null; mastered: number; total: number };
   let index = $state<ContentIndex | null>(null);
@@ -80,13 +80,13 @@
   <p class="loading">Đang tải…</p>
 {:else}
   <HeroCard state={hero} />
-  <Waves />
 
   {#if rows.length}
     <h2 class="section-title"><b>Môn đang học</b></h2>
     <ul class="subject-rows">
       {#each rows as r (r.subject.id)}
         <li><a class="subject-row" href={hashFor('subject', { subject: r.subject.id })}>
+          <SubjectArt name={artFor(r.subject.id)} class="row-art" />
           <span class="title"><b>{r.subject.title}</b>{#if r.grade}<span class="chip">{r.grade}</span>{/if}</span>
           <span class="bar" aria-hidden="true"><span style="width:{r.total ? (r.mastered / r.total) * 100 : 0}%"></span></span>
           <span class="muted small">{r.mastered}/{r.total} thuần thục</span>
