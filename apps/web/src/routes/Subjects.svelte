@@ -1,26 +1,38 @@
 <script lang="ts">
-  // Danh sách môn (tạm, Task 6 hoàn thiện theo spec §4.1).
-  import type { ContentIndex } from '$lib/content/types';
-  import { loadIndex } from '$lib/content/loader';
+  // Danh sách môn có nội dung (spec §4.1).
+  import type { Level, Subject } from '$lib/content/types';
+  import { loadIndex, loadSubject } from '$lib/content/loader';
+  import { repo } from '$lib/store/progress-repo';
   import { hashFor } from '$lib/router.svelte';
-  let index = $state<ContentIndex | null>(null);
+  import { subjectSummary, type SubjectSummary } from '$lib/ui/subjectSummary';
+
+  let items = $state<{ subject: Subject; s: SubjectSummary }[] | null>(null);
   let error = $state('');
   document.title = 'Môn học · Luyện Luật';
-  loadIndex().then((i) => (index = i)).catch((e: Error) => (error = e.message));
+  (async () => {
+    try {
+      const index = await loadIndex();
+      const subs = await Promise.all(index.subjects.filter((s) => (index.conceptCount[s.id] ?? 0) > 0).map((s) => loadSubject(s.id)));
+      const levels = Object.fromEntries((await repo.all()).map((p) => [p.conceptId, p.level])) as Record<string, Level>;
+      items = subs.map((subject) => ({ subject, s: subjectSummary(subject, levels) }));
+    } catch (e) { error = (e as Error).message; }
+  })();
 </script>
 
 <h1>Môn học</h1>
+<p class="muted">Mỗi môn chia thành chương → đợt 4–5 khái niệm. Học theo thứ tự đợt; ôn khi lịch gọi.</p>
 {#if error}
   <section class="card"><p class="muted">Không tải được dữ liệu: {error}</p></section>
-{:else if !index}
+{:else if !items}
   <p class="loading">Đang tải…</p>
 {:else}
-  <div class="sets">
-    {#each index.subjects.filter((s) => (index?.conceptCount[s.id] ?? 0) > 0) as s (s.id)}
-      <a class="set" href={hashFor('subject', { subject: s.id })}>
-        <div><span class="chip">{s.short}</span><h3>{s.title}</h3></div>
-        <span class="meta">{index.conceptCount[s.id]} khái niệm</span>
-        <p>Vào môn →</p>
+  <div class="subject-cards">
+    {#each items as { subject, s } (subject.id)}
+      <a class="card subject-card" href={hashFor('subject', { subject: subject.id })}>
+        <span class="title"><b>{subject.title}</b>{#if s.grade}<span class="chip">{s.grade}</span>{/if}</span>
+        <span class="muted small">{s.chapters} chương · {s.lessons} đợt · {s.total} khái niệm</span>
+        <span class="bar" aria-hidden="true"><span style="width:{s.percent}%"></span></span>
+        <span class="small">Thuần thục {s.percent}% · Vào môn →</span>
       </a>
     {/each}
   </div>
