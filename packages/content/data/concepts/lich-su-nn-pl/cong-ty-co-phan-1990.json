@@ -1,0 +1,123 @@
+{
+ "id": "cong-ty-co-phan-1990",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c8-hien-dai",
+ "term": "Công ty TNHH và công ty cổ phần theo Luật Công ty 1990",
+ "definition": "Công ty trách nhiệm hữu hạn là công ty trong đó: 1- Phần vốn góp của tất cả các thành viên phải được đóng đủ ngay khi thành lập công ty. (…) Công ty không được phép phát hành bất kỳ một loại chứng khoán nào; (…) Công ty cổ phần là công ty trong đó: 1- Số thành viên gọi là cổ đông mà công ty phải có trong suốt thời gian hoạt động ít nhất là bảy; 2- Vốn điều lệ của công ty được chia thành nhiều phần bằng nhau gọi là cổ phần.",
+ "plain": "Luật Công ty 1990 có HAI loại công ty. CÔNG TY TNHH: vốn góp đóng đủ ngay khi thành lập; KHÔNG được phát hành chứng khoán; chuyển nhượng vốn cho người ngoài cần thành viên đại diện ít nhất 3/4 vốn điều lệ đồng ý. CÔNG TY CỔ PHẦN: ít nhất BẢY cổ đông; vốn chia thành CỔ PHẦN bằng nhau; được phát hành cổ phiếu, trái phiếu (khi được UBND tỉnh cho phép). Đây là nền móng pháp lý cho thị trường chứng khoán sau này (sàn giao dịch đầu tiên hoạt động năm 2000). So sánh: Luật Doanh nghiệp hiện hành chỉ yêu cầu công ty cổ phần tối thiểu 3 cổ đông.",
+ "example": "Năm 1992, nhóm 5 người muốn lập công ty cổ phần thì chưa đủ điều kiện (cần ít nhất 7 cổ đông theo Điều 30); họ có thể lập công ty TNHH nhưng công ty này không được phát hành cổ phiếu.",
+ "source": {
+  "kind": "primary",
+  "cite": "Luật Công ty 1990, Điều 25 và Điều 30",
+  "url": "https://vbpl.vn/en/van-ban/chi-tiet/luat-cong-ty-so-khong-so--1817"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "luat-cong-ty-1990"
+ ],
+ "keywords": [
+  "TNHH không phát hành chứng khoán",
+  "cổ phần: ít nhất bảy cổ đông",
+  "cổ phần bằng nhau",
+  "Điều 25, 30"
+ ],
+ "note": "Luật Công ty 1990 đã hết hiệu lực (được thay bằng Luật Doanh nghiệp 1999); hiện hành là Luật Doanh nghiệp 59/2020/QH14 (đã được sửa đổi). Học để hiểu lịch sử.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 30 Luật Công ty 1990, công ty cổ phần phải có ít nhất bao nhiêu cổ đông?",
+   "options": [
+    "Bảy",
+    "Ba",
+    "Hai",
+    "Mười một"
+   ],
+   "answer": 0,
+   "explain": "Điều 30. Luật Doanh nghiệp hiện hành yêu cầu tối thiểu 3.",
+   "source": {
+    "kind": "primary",
+    "cite": "Luật Công ty 1990, Điều 30"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 25 Luật Công ty 1990, công ty TNHH có được phát hành chứng khoán không?",
+   "options": [
+    "Không được phát hành bất kỳ loại chứng khoán nào",
+    "Được phát hành cổ phiếu",
+    "Được phát hành trái phiếu không giới hạn",
+    "Chỉ được phát hành khi có 12 thành viên"
+   ],
+   "answer": 0,
+   "explain": "Điều 25.",
+   "source": {
+    "kind": "primary",
+    "cite": "Luật Công ty 1990, Điều 25"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Công ty TNHH (1990)",
+   "right": "Công ty cổ phần (1990)",
+   "cases": [
+    {
+     "text": "Không được phát hành bất kỳ loại chứng khoán nào",
+     "answer": "left"
+    },
+    {
+     "text": "Vốn điều lệ chia thành nhiều phần bằng nhau gọi là cổ phần",
+     "answer": "right"
+    },
+    {
+     "text": "Phần vốn góp phải đóng đủ ngay khi thành lập",
+     "answer": "left"
+    },
+    {
+     "text": "Phải có ít nhất bảy cổ đông",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 25, 30 Luật Công ty 1990."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công ty cổ phần phải có trong suốt thời gian hoạt động ít nhất là {{bảy}} cổ đông; vốn điều lệ chia thành nhiều phần bằng nhau gọi là {{cổ phần}}.",
+   "bank_extra": [
+    "ba",
+    "phần vốn góp"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công ty trách nhiệm hữu hạn không được phép phát hành bất kỳ một loại {{chứng khoán}} nào.",
+   "bank_extra": [
+    "hóa đơn",
+    "hợp đồng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo Luật Công ty 1990, công ty cổ phần chỉ cần tối thiểu ba cổ đông.",
+   "answer": false,
+   "explain": "Sai. Điều 30 Luật Công ty 1990 yêu cầu ít nhất bảy cổ đông; con số tối thiểu ba là của Luật Doanh nghiệp hiện hành."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "So sánh công ty TNHH và công ty cổ phần theo Luật Công ty 1990.",
+   "model": "Công ty TNHH: vốn đóng đủ khi thành lập, không được phát hành chứng khoán, chuyển nhượng vốn cho người ngoài cần thành viên đại diện ít nhất 3/4 vốn điều lệ đồng ý (Điều 25). Công ty cổ phần: ít nhất bảy cổ đông, vốn chia thành cổ phần bằng nhau, được phát hành cổ phiếu, trái phiếu khi được phép (Điều 30, 34). Cả hai đều chịu trách nhiệm hữu hạn (Điều 2).",
+   "keywords": [
+    "TNHH",
+    "không phát hành chứng khoán",
+    "bảy cổ đông",
+    "cổ phần"
+   ]
+  }
+ ]
+}

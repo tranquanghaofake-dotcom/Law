@@ -1,0 +1,122 @@
+{
+ "id": "hngd-1959-nguyen-tac",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c8-hien-dai",
+ "term": "Luật Hôn nhân và gia đình 1959: các nguyên tắc cơ bản",
+ "definition": "Nhà nước bảo đảm việc thực hiện đầy đủ chế độ hôn nhân tự do và tiến bộ, một vợ một chồng, nam nữ bình đẳng, bảo vệ quyền lợi của phụ nữ và con cái (…). Xoá bỏ những tàn tích còn lại của chế độ hôn nhân phong kiến cưỡng ép, trọng nam khinh nữ, coi rẻ quyền lợi của con cái. (…) Cấm tảo hôn, cưỡng ép kết hôn, cản trở hôn nhân tự do, yêu sách của cải trong việc cưới hỏi, đánh đập hoặc ngược đãi vợ. Cấm lấy vợ lẽ.",
+ "plain": "Luật HNGĐ 1959 là đạo luật đầu tiên về hôn nhân gia đình của nước Việt Nam dân chủ cộng hòa (áp dụng ở miền Bắc). Bốn nguyên tắc: hôn nhân TỰ DO, TIẾN BỘ; MỘT VỢ MỘT CHỒNG (cấm lấy vợ lẽ, khác hẳn pháp luật phong kiến cho phép đa thê); NAM NỮ BÌNH ĐẲNG; BẢO VỆ quyền lợi phụ nữ và con cái. Luật xóa bỏ tàn tích hôn nhân phong kiến (cưỡng ép, trọng nam khinh nữ). So sánh: Quốc triều hình luật còn thừa nhận vợ cả, vợ lẽ, nàng hầu.",
+ "example": "Một gia đình năm 1960 ép con gái 16 tuổi lấy chồng theo sắp đặt và đòi nhà trai nhiều sính lễ: vi phạm cấm tảo hôn, cưỡng ép kết hôn và yêu sách của cải (Điều 3).",
+ "source": {
+  "kind": "primary",
+  "cite": "Luật Hôn nhân và gia đình 1959, Điều 1, 2, 3",
+  "url": "https://vbpl.vn/en/van-ban/chi-tiet/luat-hon-nhan-va-gia-dinh-so-khong-so--887"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hngd-1959-ket-hon-ly-hon",
+  "sac-lenh-97-dan-luat",
+  "bao-ve-nguoi-yeu-the-qthl"
+ ],
+ "keywords": [
+  "29/12/1959",
+  "tự do, tiến bộ",
+  "một vợ một chồng",
+  "nam nữ bình đẳng",
+  "cấm lấy vợ lẽ"
+ ],
+ "note": "Luật Hôn nhân và gia đình 1959 đã hết hiệu lực; hiện hành là Luật Hôn nhân và gia đình 52/2014/QH13. Học để hiểu lịch sử.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 3 Luật HNGĐ 1959, hành vi nào bị cấm?",
+   "options": [
+    "Lấy vợ lẽ",
+    "Kết hôn khi đủ tuổi",
+    "Ly hôn thuận tình",
+    "Nhận con nuôi"
+   ],
+   "answer": 0,
+   "explain": "Điều 3: \"Cấm lấy vợ lẽ.\"",
+   "source": {
+    "kind": "primary",
+    "cite": "Luật HNGĐ 1959, Điều 3"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Điều 1 Luật HNGĐ 1959 bảo đảm chế độ hôn nhân nào?",
+   "options": [
+    "Tự do và tiến bộ, một vợ một chồng, nam nữ bình đẳng",
+    "Do cha mẹ sắp đặt",
+    "Một chồng nhiều vợ",
+    "Theo tập quán từng địa phương"
+   ],
+   "answer": 0,
+   "explain": "Điều 1.",
+   "source": {
+    "kind": "primary",
+    "cite": "Luật HNGĐ 1959, Điều 1"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quốc triều hình luật (Hậu Lê)",
+   "right": "Luật HNGĐ 1959",
+   "cases": [
+    {
+     "text": "Thừa nhận vợ cả, vợ lẽ, nàng hầu",
+     "answer": "left"
+    },
+    {
+     "text": "Cấm lấy vợ lẽ, một vợ một chồng",
+     "answer": "right"
+    },
+    {
+     "text": "Con vợ lẽ, nàng hầu hưởng phần kém hơn",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 388 Quốc triều hình luật; Điều 1, 3 Luật HNGĐ 1959."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhà nước bảo đảm chế độ hôn nhân tự do và tiến bộ, {{một vợ một chồng}}, nam nữ {{bình đẳng}}.",
+   "bank_extra": [
+    "đa thê",
+    "phụ thuộc"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Xoá bỏ những tàn tích còn lại của chế độ hôn nhân {{phong kiến}} cưỡng ép, trọng nam khinh nữ.",
+   "bank_extra": [
+    "tư sản",
+    "thuộc địa"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Luật HNGĐ 1959 vẫn cho phép người đàn ông lấy vợ lẽ nếu vợ cả đồng ý.",
+   "answer": false,
+   "explain": "Sai. Điều 3: \"Cấm lấy vợ lẽ\", không có ngoại lệ."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày các nguyên tắc cơ bản của Luật HNGĐ 1959.",
+   "model": "Hôn nhân tự do, tiến bộ; một vợ một chồng; nam nữ bình đẳng; bảo vệ quyền lợi phụ nữ và con cái (Điều 1); xóa bỏ tàn tích hôn nhân phong kiến (Điều 2); cấm tảo hôn, cưỡng ép kết hôn, yêu sách của cải, ngược đãi vợ, cấm lấy vợ lẽ (Điều 3).",
+   "keywords": [
+    "tự do",
+    "một vợ một chồng",
+    "bình đẳng",
+    "cấm lấy vợ lẽ"
+   ]
+  }
+ ]
+}

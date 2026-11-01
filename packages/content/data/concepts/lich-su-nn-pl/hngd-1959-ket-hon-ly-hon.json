@@ -1,0 +1,117 @@
+{
+ "id": "hngd-1959-ket-hon-ly-hon",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c8-hien-dai",
+ "term": "Luật Hôn nhân và gia đình 1959: kết hôn, ly hôn",
+ "definition": "Con gái từ 18 tuổi trở lên, con trai từ 20 tuổi trở lên mới được kết hôn. (…) Việc kết hôn phải được Uỷ ban hành chính cơ sở nơi trú quán của bên người con trai hoặc bên người con gái công nhận và ghi vào sổ kết hôn. Mọi nghi thức kết hôn khác đều không có giá trị về mặt pháp luật. (…) Trong trường hợp người vợ có thai, chồng chỉ có thể xin ly hôn sau khi vợ đã sinh đẻ được một năm. Điều hạn chế này không áp dụng đối với việc xin ly hôn của người vợ.",
+ "plain": "Điều kiện kết hôn: TỰ NGUYỆN (Điều 4), TUỔI: nữ từ 18, nam từ 20 (Điều 6); không đang có vợ, có chồng. Hình thức: ĐĂNG KÝ tại Ủy ban hành chính cơ sở; nghi lễ khác (cưới theo phong tục) KHÔNG có giá trị pháp lý (Điều 11). Đây là mốc xác lập nguyên tắc \"hôn nhân phải đăng ký\". Ly hôn do Tòa án nhân dân giải quyết, trước hết phải hòa giải (Điều 26); bảo vệ phụ nữ: chồng không được xin ly hôn khi vợ có thai và đến khi con được một năm (Điều 27). Chia tài sản khi ly hôn: lao động trong gia đình được coi như lao động sản xuất (Điều 29). Các quy định này còn được kế thừa trong luật hiện hành.",
+ "example": "Ngày nay, khoản 3 Điều 51 Luật HNGĐ 2014 cũng hạn chế quyền yêu cầu ly hôn của người chồng khi vợ đang có thai, sinh con hoặc nuôi con dưới 12 tháng tuổi: kế thừa tư tưởng Điều 27 Luật 1959.",
+ "source": {
+  "kind": "primary",
+  "cite": "Luật Hôn nhân và gia đình 1959, Điều 6, 11, 27",
+  "url": "https://vbpl.vn/en/van-ban/chi-tiet/luat-hon-nhan-va-gia-dinh-so-khong-so--887"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hngd-1959-nguyen-tac",
+  "sac-lenh-97-dan-luat"
+ ],
+ "keywords": [
+  "nữ 18, nam 20",
+  "đăng ký tại Ủy ban hành chính",
+  "nghi thức khác không có giá trị pháp lý",
+  "hạn chế quyền ly hôn của chồng"
+ ],
+ "note": "Luật Hôn nhân và gia đình 1959 đã hết hiệu lực; hiện hành là Luật Hôn nhân và gia đình 52/2014/QH13. Học để hiểu lịch sử.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 6 Luật HNGĐ 1959, tuổi kết hôn là bao nhiêu?",
+   "options": [
+    "Con gái từ 18 tuổi, con trai từ 20 tuổi",
+    "Cả hai từ 18 tuổi",
+    "Con gái từ 16, con trai từ 18",
+    "Cả hai từ 20 tuổi"
+   ],
+   "answer": 0,
+   "explain": "Điều 6.",
+   "source": {
+    "kind": "primary",
+    "cite": "Luật HNGĐ 1959, Điều 6"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 11 Luật HNGĐ 1959, nghi thức kết hôn nào có giá trị pháp lý?",
+   "options": [
+    "Được Ủy ban hành chính cơ sở công nhận và ghi vào sổ kết hôn",
+    "Lễ cưới theo phong tục",
+    "Lễ tại nhà thờ, chùa",
+    "Hai bên tự thỏa thuận"
+   ],
+   "answer": 0,
+   "explain": "Điều 11.",
+   "source": {
+    "kind": "primary",
+    "cite": "Luật HNGĐ 1959, Điều 11"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Người chồng (vợ đang có thai)",
+   "right": "Người vợ (đang có thai)",
+   "cases": [
+    {
+     "text": "Chỉ có thể xin ly hôn sau khi vợ sinh đẻ được một năm",
+     "answer": "left"
+    },
+    {
+     "text": "Không bị hạn chế quyền xin ly hôn",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 27 Luật HNGĐ 1959."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Việc kết hôn phải được Uỷ ban hành chính cơ sở công nhận và ghi vào {{sổ kết hôn}}. Mọi nghi thức kết hôn khác đều không có giá trị về mặt {{pháp luật}}.",
+   "bank_extra": [
+    "gia phả",
+    "đạo đức"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Khi ly hôn, lao động trong {{gia đình}} được kể như lao động sản xuất.",
+   "bank_extra": [
+    "nhà máy",
+    "hợp tác xã"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo Luật HNGĐ 1959, khi người vợ có thai, cả vợ và chồng đều không được xin ly hôn.",
+   "answer": false,
+   "explain": "Sai. Điều 27 chỉ hạn chế người chồng; \"điều hạn chế này không áp dụng đối với việc xin ly hôn của người vợ\"."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quy định về kết hôn và ly hôn trong Luật HNGĐ 1959.",
+   "model": "Kết hôn tự nguyện (Điều 4), nữ từ 18, nam từ 20 (Điều 6), phải đăng ký tại Ủy ban hành chính cơ sở, nghi thức khác không có giá trị pháp lý (Điều 11). Ly hôn: điều tra, hòa giải, Tòa án xét xử (Điều 26); chồng không được xin ly hôn khi vợ có thai đến khi con được một năm (Điều 27); chia tài sản theo công sức, lao động gia đình được tính như lao động sản xuất (Điều 29).",
+   "keywords": [
+    "18, 20 tuổi",
+    "đăng ký",
+    "Tòa án",
+    "Điều 27",
+    "lao động gia đình"
+   ]
+  }
+ ]
+}
