@@ -1,0 +1,116 @@
+{
+ "id": "tu-y-nua-chung-cham-dut",
+ "subject": "hinh-su",
+ "chapter": "v9",
+ "term": "Tự ý nửa chừng chấm dứt việc phạm tội",
+ "definition": "Tự ý nửa chừng chấm dứt việc phạm tội là tự mình không thực hiện tội phạm đến cùng, tuy không có gì ngăn cản. Người tự ý nửa chừng chấm dứt việc phạm tội được miễn trách nhiệm hình sự về tội định phạm; nếu hành vi thực tế đã thực hiện có đủ yếu tố cấu thành của một tội khác, thì người đó phải chịu trách nhiệm hình sự về tội này.",
+ "plain": "Điều kiện: (1) TỰ MÌNH dừng lại (tự nguyện); (2) KHÔNG CÓ GÌ NGĂN CẢN; (3) dừng lại khi tội phạm CHƯA HOÀN THÀNH (ở giai đoạn chuẩn bị hoặc chưa đạt chưa hoàn thành). Hậu quả: được MIỄN TNHS về TỘI ĐỊNH PHẠM; nhưng nếu hành vi đã làm cấu thành tội khác thì chịu TNHS tội đó. Đây là chính sách khuyến khích người phạm tội dừng lại.",
+ "example": "A mang súng (không có giấy phép) đến nhà B định giết B, đến nơi tự thấy hối hận và bỏ về dù không ai ngăn: A được miễn TNHS tội giết người, nhưng vẫn có thể chịu TNHS tội tàng trữ trái phép vũ khí quân dụng.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 16 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "pham-toi-chua-dat",
+  "chuan-bi-pham-toi",
+  "dong-pham"
+ ],
+ "keywords": [
+  "tự mình",
+  "không có gì ngăn cản",
+  "miễn TNHS về tội định phạm",
+  "tội khác"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người tự ý nửa chừng chấm dứt việc phạm tội được hưởng gì?",
+   "options": [
+    "Miễn TNHS về tội định phạm",
+    "Miễn TNHS về mọi hành vi",
+    "Giảm một nửa hình phạt",
+    "Không được hưởng gì"
+   ],
+   "answer": 0,
+   "explain": "Điều 16.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 16 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nếu hành vi thực tế đã thực hiện cấu thành một tội khác thì người tự ý nửa chừng chấm dứt việc phạm tội thế nào?",
+   "options": [
+    "Phải chịu TNHS về tội khác đó",
+    "Được miễn toàn bộ TNHS",
+    "Chịu TNHS về tội định phạm",
+    "Chỉ bị xử phạt hành chính"
+   ],
+   "answer": 0,
+   "explain": "Đoạn 2 Điều 16.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 16 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tự ý nửa chừng chấm dứt",
+   "right": "Không phải tự ý nửa chừng",
+   "cases": [
+    {
+     "text": "Tự bỏ dở việc trộm vì thương gia đình nạn nhân",
+     "answer": "left"
+    },
+    {
+     "text": "Bỏ chạy vì nghe tiếng còi công an",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 16."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tự ý nửa chừng chấm dứt việc phạm tội là tự mình không thực hiện tội phạm đến cùng, tuy {{không có gì}} ngăn cản. Người đó được miễn trách nhiệm hình sự về tội {{định phạm}}.",
+   "bank_extra": [
+    "có người",
+    "đã hoàn thành"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nếu hành vi thực tế đã thực hiện có đủ yếu tố cấu thành của một {{tội khác}}, thì người đó phải chịu trách nhiệm hình sự về tội này.",
+   "bank_extra": [
+    "vi phạm hành chính",
+    "tội định phạm"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người dừng lại vì thấy camera an ninh và sợ bị phát hiện là tự ý nửa chừng chấm dứt việc phạm tội.",
+   "answer": false,
+   "explain": "Sai. Dừng lại vì trở ngại khách quan (sợ bị phát hiện) không phải \"tuy không có gì ngăn cản\" (Điều 16); đây thường là phạm tội chưa đạt."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày điều kiện và hậu quả pháp lý của tự ý nửa chừng chấm dứt việc phạm tội.",
+   "model": "Tự mình không thực hiện tội phạm đến cùng, tuy không có gì ngăn cản; được miễn TNHS về tội định phạm; nếu hành vi đã thực hiện cấu thành tội khác thì chịu TNHS về tội đó (Điều 16).",
+   "keywords": [
+    "tự mình",
+    "không có gì ngăn cản",
+    "miễn TNHS",
+    "tội khác"
+   ]
+  }
+ ]
+}

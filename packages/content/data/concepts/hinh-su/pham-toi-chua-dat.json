@@ -1,0 +1,114 @@
+{
+ "id": "pham-toi-chua-dat",
+ "subject": "hinh-su",
+ "chapter": "v9",
+ "term": "Phạm tội chưa đạt",
+ "definition": "Phạm tội chưa đạt là cố ý thực hiện tội phạm nhưng không thực hiện được đến cùng vì những nguyên nhân ngoài ý muốn của người phạm tội. Người phạm tội chưa đạt phải chịu trách nhiệm hình sự về tội phạm chưa đạt.",
+ "plain": "Ba dấu hiệu: (1) ĐÃ BẮT ĐẦU THỰC HIỆN hành vi khách quan; (2) KHÔNG THỰC HIỆN ĐƯỢC ĐẾN CÙNG (tội phạm chưa hoàn thành); (3) do NGUYÊN NHÂN NGOÀI Ý MUỐN. Chỉ có ở lỗi cố ý (trực tiếp). Mọi trường hợp phạm tội chưa đạt đều chịu TNHS (khác chuẩn bị). Quyết định hình phạt theo Điều 57.",
+ "example": "A cạy cửa nhà B để trộm thì bị bảo vệ phát hiện, bắt giữ: A phạm tội trộm cắp tài sản chưa đạt.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 15 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "chuan-bi-pham-toi",
+  "tu-y-nua-chung-cham-dut"
+ ],
+ "keywords": [
+  "cố ý thực hiện tội phạm",
+  "không thực hiện được đến cùng",
+  "nguyên nhân ngoài ý muốn"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Yếu tố phân biệt phạm tội chưa đạt với tự ý nửa chừng chấm dứt việc phạm tội là gì?",
+   "options": [
+    "Phạm tội chưa đạt dừng lại vì nguyên nhân ngoài ý muốn",
+    "Phạm tội chưa đạt chưa bắt đầu thực hiện tội phạm",
+    "Tự ý nửa chừng dừng lại vì bị ngăn cản",
+    "Không có sự khác nhau"
+   ],
+   "answer": 0,
+   "explain": "Điều 15, 16.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 15, Điều 16 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người phạm tội chưa đạt chịu trách nhiệm hình sự thế nào?",
+   "options": [
+    "Chịu TNHS về tội phạm chưa đạt",
+    "Được miễn TNHS",
+    "Chỉ chịu TNHS nếu tội đặc biệt nghiêm trọng",
+    "Chịu TNHS như tội hoàn thành, không giảm"
+   ],
+   "answer": 0,
+   "explain": "Đoạn 2 Điều 15.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 15 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Phạm tội chưa đạt",
+   "right": "Tự ý nửa chừng chấm dứt",
+   "cases": [
+    {
+     "text": "Đang móc túi thì bị công an bắt quả tang",
+     "answer": "left"
+    },
+    {
+     "text": "Đang cạy cửa thì tự thấy hối hận, bỏ về dù không ai ngăn",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 15, 16."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Phạm tội chưa đạt là {{cố ý}} thực hiện tội phạm nhưng không thực hiện được đến cùng vì những nguyên nhân {{ngoài ý muốn}} của người phạm tội.",
+   "bank_extra": [
+    "vô ý",
+    "theo ý muốn"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người phạm tội chưa đạt phải chịu trách nhiệm hình sự về tội phạm {{chưa đạt}}.",
+   "bank_extra": [
+    "hoàn thành",
+    "chuẩn bị"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Phạm tội chưa đạt có thể xảy ra với lỗi vô ý.",
+   "answer": false,
+   "explain": "Sai. Điều 15: phạm tội chưa đạt là \"cố ý\" thực hiện tội phạm."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm và dấu hiệu của phạm tội chưa đạt.",
+   "model": "Phạm tội chưa đạt là cố ý thực hiện tội phạm nhưng không thực hiện được đến cùng vì nguyên nhân ngoài ý muốn; người phạm tội chưa đạt chịu TNHS về tội phạm chưa đạt (Điều 15).",
+   "keywords": [
+    "cố ý",
+    "không đến cùng",
+    "ngoài ý muốn",
+    "chịu TNHS"
+   ]
+  }
+ ]
+}

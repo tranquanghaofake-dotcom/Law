@@ -1,0 +1,119 @@
+{
+ "id": "khong-co-nang-luc-trach-nhiem-hinh-su",
+ "subject": "hinh-su",
+ "chapter": "v7",
+ "term": "Tình trạng không có năng lực trách nhiệm hình sự",
+ "definition": "Người thực hiện hành vi nguy hiểm cho xã hội trong khi đang mắc bệnh tâm thần, một bệnh khác làm mất khả năng nhận thức hoặc khả năng điều khiển hành vi của mình, thì không phải chịu trách nhiệm hình sự.",
+ "plain": "Hai dấu hiệu: Y HỌC (mắc bệnh tâm thần hoặc bệnh khác) và TÂM LÝ (mất khả năng nhận thức HOẶC điều khiển hành vi). Đây là trường hợp loại trừ TNHS (Chương IV). Người này có thể bị áp dụng biện pháp tư pháp BẮT BUỘC CHỮA BỆNH (Điều 49). Phân biệt: mất khả năng do DÙNG RƯỢU, BIA, CHẤT KÍCH THÍCH thì VẪN chịu TNHS (Điều 13) vì tự đặt mình vào tình trạng đó.",
+ "example": "Người bệnh tâm thần phân liệt đang lên cơn, không nhận thức được hành vi, đánh người gây thương tích: không phải chịu TNHS nhưng có thể bị bắt buộc chữa bệnh. Người say rượu đánh người thì vẫn chịu TNHS.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 21 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tuoi-chiu-trach-nhiem-hinh-su",
+  "phong-ve-chinh-dang"
+ ],
+ "keywords": [
+  "bệnh tâm thần",
+  "mất khả năng nhận thức hoặc điều khiển hành vi",
+  "không phải chịu TNHS",
+  "rượu, bia vẫn chịu TNHS"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người phạm tội trong tình trạng mất khả năng điều khiển hành vi do say rượu thì sao?",
+   "options": [
+    "Vẫn phải chịu trách nhiệm hình sự",
+    "Không phải chịu trách nhiệm hình sự",
+    "Được miễn hình phạt",
+    "Chỉ bị xử phạt hành chính"
+   ],
+   "answer": 0,
+   "explain": "Điều 13.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 13 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người thực hiện hành vi nguy hiểm khi đang mắc bệnh tâm thần làm mất khả năng nhận thức thì thế nào?",
+   "options": [
+    "Không phải chịu trách nhiệm hình sự",
+    "Chịu TNHS nhưng được giảm nhẹ",
+    "Chịu TNHS như người bình thường",
+    "Phải chịu hình phạt bổ sung"
+   ],
+   "answer": 0,
+   "explain": "Điều 21.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 21 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Không phải chịu TNHS",
+   "right": "Vẫn phải chịu TNHS",
+   "cases": [
+    {
+     "text": "Đang lên cơn tâm thần, mất khả năng nhận thức",
+     "answer": "left"
+    },
+    {
+     "text": "Say rượu mất khả năng điều khiển hành vi",
+     "answer": "right"
+    },
+    {
+     "text": "Dùng ma túy rồi gây án",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 13, 21."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người thực hiện hành vi nguy hiểm cho xã hội trong khi đang mắc bệnh {{tâm thần}}, một bệnh khác làm mất khả năng nhận thức hoặc khả năng {{điều khiển hành vi}} của mình, thì không phải chịu trách nhiệm hình sự.",
+   "bank_extra": [
+    "cảm cúm",
+    "ngôn ngữ"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người phạm tội trong tình trạng mất khả năng nhận thức do dùng rượu, bia hoặc chất kích thích mạnh khác thì {{vẫn phải}} chịu trách nhiệm hình sự.",
+   "bank_extra": [
+    "không phải",
+    "được miễn"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người mất năng lực TNHS do bệnh tâm thần sẽ không bị áp dụng bất kỳ biện pháp nào.",
+   "answer": false,
+   "explain": "Sai. Không phải chịu TNHS (Điều 21) nhưng có thể bị bắt buộc chữa bệnh (điểm c khoản 1 Điều 46, Điều 49)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày tình trạng không có năng lực trách nhiệm hình sự và phân biệt với phạm tội do dùng rượu, bia.",
+   "model": "Người thực hiện hành vi nguy hiểm khi mắc bệnh tâm thần hoặc bệnh khác làm mất khả năng nhận thức hoặc điều khiển hành vi thì không chịu TNHS (Điều 21); có thể bị bắt buộc chữa bệnh; còn mất khả năng do rượu, bia, chất kích thích thì vẫn chịu TNHS (Điều 13).",
+   "keywords": [
+    "bệnh tâm thần",
+    "nhận thức",
+    "điều khiển hành vi",
+    "rượu, bia"
+   ]
+  }
+ ]
+}

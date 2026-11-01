@@ -1,0 +1,120 @@
+{
+ "id": "khai-niem-toi-pham",
+ "subject": "hinh-su",
+ "chapter": "v3",
+ "term": "Khái niệm tội phạm",
+ "definition": "Tội phạm là hành vi nguy hiểm cho xã hội được quy định trong Bộ luật Hình sự, do người có năng lực trách nhiệm hình sự hoặc pháp nhân thương mại thực hiện một cách cố ý hoặc vô ý, xâm phạm độc lập, chủ quyền, thống nhất, toàn vẹn lãnh thổ Tổ quốc, xâm phạm chế độ chính trị, chế độ kinh tế, nền văn hoá, quốc phòng, an ninh, trật tự, an toàn xã hội, quyền, lợi ích hợp pháp của tổ chức, xâm phạm quyền con người, quyền, lợi ích hợp pháp của công dân, xâm phạm những lĩnh vực khác của trật tự pháp luật xã hội chủ nghĩa mà theo quy định của Bộ luật này phải bị xử lý hình sự. Những hành vi tuy có dấu hiệu của tội phạm nhưng tính chất nguy hiểm cho xã hội không đáng kể thì không phải là tội phạm và được xử lý bằng các biện pháp khác.",
+ "plain": "Bốn dấu hiệu của tội phạm (theo giáo trình): (1) TÍNH NGUY HIỂM CHO XÃ HỘI (dấu hiệu cơ bản, quyết định); (2) TÍNH CÓ LỖI (cố ý hoặc vô ý); (3) TÍNH TRÁI PHÁP LUẬT HÌNH SỰ (được quy định trong BLHS); (4) TÍNH PHẢI CHỊU HÌNH PHẠT. Khoản 2: hành vi có dấu hiệu tội phạm nhưng nguy hiểm KHÔNG ĐÁNG KỂ thì không phải tội phạm.",
+ "example": "Lấy một gói bánh trị giá vài nghìn đồng, không thuộc trường hợp đặc biệt: có dấu hiệu trộm cắp nhưng tính nguy hiểm không đáng kể, thường xử lý hành chính.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 8 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "phan-loai-toi-pham",
+  "co-y-pham-toi",
+  "co-so-trach-nhiem-hinh-su"
+ ],
+ "keywords": [
+  "nguy hiểm cho xã hội",
+  "được quy định trong Bộ luật Hình sự",
+  "có lỗi",
+  "không đáng kể"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hành vi có dấu hiệu tội phạm nhưng tính chất nguy hiểm cho xã hội không đáng kể thì sao?",
+   "options": [
+    "Không phải là tội phạm, được xử lý bằng biện pháp khác",
+    "Vẫn là tội phạm ít nghiêm trọng",
+    "Được miễn hình phạt",
+    "Bị phạt cảnh cáo"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 8.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 8 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chủ thể thực hiện tội phạm theo khoản 1 Điều 8 gồm ai?",
+   "options": [
+    "Người có năng lực trách nhiệm hình sự hoặc pháp nhân thương mại",
+    "Mọi cá nhân, pháp nhân",
+    "Chỉ công dân Việt Nam",
+    "Cơ quan nhà nước"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 8.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 8 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tội phạm",
+   "right": "Không phải tội phạm",
+   "cases": [
+    {
+     "text": "Hành vi nguy hiểm được Bộ luật Hình sự quy định, có lỗi",
+     "answer": "left"
+    },
+    {
+     "text": "Hành vi có dấu hiệu tội phạm nhưng nguy hiểm không đáng kể",
+     "answer": "right"
+    },
+    {
+     "text": "Hành vi phòng vệ chính đáng",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 8, 22."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tội phạm là hành vi {{nguy hiểm}} cho xã hội được quy định trong Bộ luật Hình sự, do người có năng lực trách nhiệm hình sự hoặc pháp nhân thương mại thực hiện một cách cố ý hoặc {{vô ý}}.",
+   "bank_extra": [
+    "trái đạo đức",
+    "ngẫu nhiên"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Những hành vi tuy có dấu hiệu của tội phạm nhưng tính chất nguy hiểm cho xã hội {{không đáng kể}} thì không phải là tội phạm.",
+   "bank_extra": [
+    "rất lớn",
+    "chưa xác định"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi hành vi có dấu hiệu tội phạm đều là tội phạm.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 8 loại trừ hành vi có tính nguy hiểm cho xã hội không đáng kể."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Phân tích khái niệm và các dấu hiệu của tội phạm.",
+   "model": "Tội phạm là hành vi nguy hiểm cho xã hội được quy định trong BLHS, do người có năng lực TNHS hoặc pháp nhân thương mại thực hiện cố ý hoặc vô ý, xâm phạm các quan hệ được bảo vệ (khoản 1 Điều 8); dấu hiệu: tính nguy hiểm cho xã hội, tính có lỗi, tính trái pháp luật hình sự, tính phải chịu hình phạt; nguy hiểm không đáng kể thì không phải tội phạm (khoản 2).",
+   "keywords": [
+    "nguy hiểm cho xã hội",
+    "có lỗi",
+    "trái pháp luật hình sự",
+    "không đáng kể"
+   ]
+  }
+ ]
+}

@@ -21,6 +21,7 @@ Mọi `definition` kiểu `statute` là **nguyên văn** điều/khoản của v
 | Hậu Hán thư, quyển 24, Mã Viện liệt truyện (chữ Hán) | https://zh.wikisource.org/zh-hant/後漢書/卷24 | 01/11/2026 | Phạm vi công cộng; bản dịch tiếng Việt do người soạn. |
 | Bộ luật Dân sự 2015, Bộ luật Lao động 2019, Bộ luật Hình sự 2015 (hợp nhất) | thuvienphapluat.vn / vbpl.vn | 31/10/2026 | Dùng cho 5 bộ 10 câu trong `sets/` (kế thừa từ web v1). |
 | Bộ luật Dân sự 91/2015/QH13 (hiệu lực 01/01/2017) | https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx (vbpl.vn chặn reCAPTCHA) | 01/11/2026 | Toàn văn 689 điều: `laws/blds-2015.txt`. Môn Luật Dân sự 1 (24 khái niệm, 2 đề kiểm tra) theo đề cương LDS1 HLU (Drive). Trích theo bản gốc 2015; chưa thấy văn bản sửa đổi các điều đã dùng trong nguồn — cần đối chiếu lại trên vbpl.vn. |
+| Bộ luật Hình sự 100/2015/QH13, sửa đổi bởi Luật 12/2017/QH14 (hiệu lực 01/01/2018) và Luật 86/2025/QH15 (hiệu lực 01/7/2025) — VBHN 135/VBHN-VPQH ngày 05/9/2025 | https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx | 01/11/2026 | Toàn văn: `laws/blhs-vbhn-2025.txt` (đã bỏ số chú thích [n]). Chương XII (người dưới 18 tuổi phạm tội, Điều 90–107) và Điều 317 hiển thị "được bãi bỏ" trong VBHN. Chưa kiểm tra văn bản sửa đổi sau 05/9/2025. Môn Luật Hình sự 1: 28 khái niệm, 2 đề kiểm tra. |
 
 Bản text toàn văn Hiến pháp dùng khi soạn thẻ và kiểm tra tự động: `web/content/laws/hien-phap-2013.txt` (nguyên văn từ vbpl.vn, không thuộc phạm vi bảo hộ quyền tác giả).
 
@@ -32,5 +33,6 @@ Bản text toàn văn Hiến pháp dùng khi soạn thẻ và kiểm tra tự đ
 | Lịch sử NN&PL Việt Nam | Giáo trình Lịch sử nhà nước và pháp luật, ĐH Luật Hà Nội, NXB Tư pháp 2025 (TS. Trần Hồng Nhung chủ biên), Phần thứ hai, chương 5–8 | Chia chương; mục lục lấy từ http://tuanhsl.blogspot.com/2025/10/giao-trinh-lich-su-nha-nuoc-va-phap-luat.html |
 | Luật Chứng khoán | Giáo trình Luật Chứng khoán, ĐH Luật Hà Nội, NXB CAND 2021 (TS. Phạm Thị Giang Thu chủ biên), 10 chương | Chia chương; mục lục theo https://luatminhkhue.vn/giao-trinh-luat-chung-khoan-truong-dai-hoc-luat-ha-noi.aspx |
 | Luật Dân sự 1 | Đề cương học phần Luật Dân sự 1, ĐH Luật Hà Nội (Drive HLU/KÌ II NĂM I/LUẬT DÂN SỰ), 13 vấn đề | Chia 13 vấn đề; nội dung khái niệm lấy nguyên văn BLDS 2015. |
+| Luật Hình sự 1 | Đề cương học phần Luật Hình sự 1 (3 TC), ĐH Luật Hà Nội (Drive HLU/KI I NAM II/LUẬT HS1), 15 vấn đề | Làm 11 vấn đề có căn cứ điều luật; bỏ vấn đề 4–6 (yếu tố, khách thể, mặt khách quan — thuần học thuật, cần giáo trình) và vấn đề 15 (Chương XII BLHS đã bãi bỏ, cần luật riêng về tư pháp người chưa thành niên). |
 
 Khái niệm `kind: textbook` là **tóm lược quan điểm phổ biến**, ghi rõ "chưa đối chiếu nguyên văn giáo trình" cho tới khi Hào đối chiếu với sách in.

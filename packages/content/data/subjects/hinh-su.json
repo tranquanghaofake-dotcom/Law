@@ -1,0 +1,167 @@
+{
+  "id": "hinh-su",
+  "title": "Luật Hình sự 1",
+  "short": "Hình sự 1",
+  "chapters": [
+    {
+      "id": "v1",
+      "title": "Vấn đề 1. Khái niệm, nhiệm vụ và các nguyên tắc của luật hình sự Việt Nam",
+      "lessons": [
+        {
+          "id": "hs1",
+          "title": "Khái niệm, nhiệm vụ và các nguyên tắc của luật hình sự Việt Nam",
+          "concepts": [
+            "nhiem-vu-bo-luat-hinh-su",
+            "co-so-trach-nhiem-hinh-su"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v2",
+      "title": "Vấn đề 2. Nguồn và hiệu lực của luật hình sự Việt Nam",
+      "lessons": [
+        {
+          "id": "hs2",
+          "title": "Nguồn và hiệu lực của luật hình sự Việt Nam",
+          "concepts": [
+            "hieu-luc-theo-lanh-tho",
+            "hieu-luc-ngoai-lanh-tho",
+            "hieu-luc-theo-thoi-gian"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v3",
+      "title": "Vấn đề 3. Tội phạm",
+      "lessons": [
+        {
+          "id": "hs3",
+          "title": "Tội phạm",
+          "concepts": [
+            "khai-niem-toi-pham",
+            "phan-loai-toi-pham"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v7",
+      "title": "Vấn đề 7. Chủ thể của tội phạm",
+      "lessons": [
+        {
+          "id": "hs7",
+          "title": "Chủ thể của tội phạm",
+          "concepts": [
+            "tuoi-chiu-trach-nhiem-hinh-su",
+            "khong-co-nang-luc-trach-nhiem-hinh-su"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v8",
+      "title": "Vấn đề 8. Mặt chủ quan của tội phạm",
+      "lessons": [
+        {
+          "id": "hs8",
+          "title": "Mặt chủ quan của tội phạm",
+          "concepts": [
+            "co-y-pham-toi",
+            "vo-y-pham-toi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v9",
+      "title": "Vấn đề 9. Các giai đoạn thực hiện tội phạm",
+      "lessons": [
+        {
+          "id": "hs9",
+          "title": "Các giai đoạn thực hiện tội phạm",
+          "concepts": [
+            "chuan-bi-pham-toi",
+            "pham-toi-chua-dat",
+            "tu-y-nua-chung-cham-dut"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v10",
+      "title": "Vấn đề 10. Đồng phạm",
+      "lessons": [
+        {
+          "id": "hs10",
+          "title": "Đồng phạm",
+          "concepts": [
+            "dong-pham",
+            "che-giau-toi-pham"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v11",
+      "title": "Vấn đề 11. Các căn cứ hợp pháp của hành vi gây thiệt hại",
+      "lessons": [
+        {
+          "id": "hs11",
+          "title": "Các căn cứ hợp pháp của hành vi gây thiệt hại",
+          "concepts": [
+            "phong-ve-chinh-dang",
+            "tinh-the-cap-thiet"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v12",
+      "title": "Vấn đề 12. Trách nhiệm hình sự và hình phạt; hệ thống hình phạt và các biện pháp tư pháp",
+      "lessons": [
+        {
+          "id": "hs12",
+          "title": "Trách nhiệm hình sự và hình phạt; hệ thống hình phạt và các biện pháp tư pháp",
+          "concepts": [
+            "hinh-phat",
+            "he-thong-hinh-phat",
+            "tu-hinh",
+            "bien-phap-tu-phap",
+            "thoi-hieu-truy-cuu-trach-nhiem-hinh-su",
+            "mien-trach-nhiem-hinh-su"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v13",
+      "title": "Vấn đề 13. Quyết định hình phạt",
+      "lessons": [
+        {
+          "id": "hs13",
+          "title": "Quyết định hình phạt",
+          "concepts": [
+            "can-cu-quyet-dinh-hinh-phat",
+            "tai-pham"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v14",
+      "title": "Vấn đề 14. Các chế định liên quan đến chấp hành hình phạt",
+      "lessons": [
+        {
+          "id": "hs14",
+          "title": "Các chế định liên quan đến chấp hành hình phạt",
+          "concepts": [
+            "an-treo",
+            "xoa-an-tich"
+          ]
+        }
+      ]
+    }
+  ]
+}

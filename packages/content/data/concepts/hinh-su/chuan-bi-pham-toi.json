@@ -1,0 +1,116 @@
+{
+ "id": "chuan-bi-pham-toi",
+ "subject": "hinh-su",
+ "chapter": "v9",
+ "term": "Chuẩn bị phạm tội",
+ "definition": "Chuẩn bị phạm tội là tìm kiếm, sửa soạn công cụ, phương tiện hoặc tạo ra những điều kiện khác để thực hiện tội phạm hoặc thành lập, tham gia nhóm tội phạm, trừ trường hợp thành lập hoặc tham gia nhóm tội phạm quy định tại Điều 109, điểm a khoản 2 Điều 113 hoặc điểm a khoản 2 Điều 299 của Bộ luật này.",
+ "plain": "Hành vi chuẩn bị: TÌM KIẾM, SỬA SOẠN công cụ, phương tiện, TẠO ĐIỀU KIỆN khác, hoặc THÀNH LẬP, THAM GIA NHÓM TỘI PHẠM. Không phải mọi chuẩn bị đều bị xử lý: người từ đủ 16 tuổi chỉ chịu TNHS khi chuẩn bị các tội liệt kê ở khoản 2 (như giết người 123, cố ý gây thương tích 134, cướp 168, bắt cóc nhằm chiếm đoạt tài sản 169…); người từ đủ 14 đến dưới 16 chỉ khi chuẩn bị tội giết người (123), cướp tài sản (168) (khoản 3).",
+ "example": "A mua dao, theo dõi giờ đi làm của B để giết B nhưng bị phát hiện trước khi ra tay: A chuẩn bị phạm tội giết người, phải chịu TNHS.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 14 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "pham-toi-chua-dat",
+  "tu-y-nua-chung-cham-dut"
+ ],
+ "keywords": [
+  "tìm kiếm, sửa soạn công cụ",
+  "tạo ra điều kiện khác",
+  "thành lập, tham gia nhóm tội phạm",
+  "chỉ tội được liệt kê"
+ ],
+ "note": "Điều 14 được sửa đổi, bổ sung bởi Luật 12/2017/QH14 (hiệu lực 01/01/2018); câu chữ trên theo VBHN 135/VBHN-VPQH 2025.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người từ đủ 14 đến dưới 16 tuổi chuẩn bị phạm tội nào thì phải chịu TNHS?",
+   "options": [
+    "Tội giết người (Điều 123), tội cướp tài sản (Điều 168)",
+    "Mọi tội rất nghiêm trọng",
+    "Tội trộm cắp tài sản",
+    "Không tội nào"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 14.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 14 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hành vi nào là chuẩn bị phạm tội?",
+   "options": [
+    "Sửa soạn công cụ để thực hiện tội phạm",
+    "Đã thực hiện xong hành vi khách quan",
+    "Che giấu tang vật sau khi phạm tội",
+    "Không tố giác tội phạm"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 14.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 14 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Chuẩn bị phạm tội",
+   "right": "Phạm tội chưa đạt",
+   "cases": [
+    {
+     "text": "Mua dao để chuẩn bị giết người",
+     "answer": "left"
+    },
+    {
+     "text": "Đã đâm nạn nhân nhưng nạn nhân được cấp cứu kịp",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 14, 15."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chuẩn bị phạm tội là tìm kiếm, sửa soạn {{công cụ}}, phương tiện hoặc tạo ra những điều kiện khác để thực hiện tội phạm hoặc thành lập, tham gia {{nhóm tội phạm}}.",
+   "bank_extra": [
+    "chứng cứ",
+    "tổ chức xã hội"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người từ đủ 14 tuổi đến dưới 16 tuổi chuẩn bị phạm tội quy định tại Điều 123, Điều {{168}} thì phải chịu trách nhiệm hình sự.",
+   "bank_extra": [
+    "173",
+    "134"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi hành vi chuẩn bị phạm tội đều phải chịu trách nhiệm hình sự.",
+   "answer": false,
+   "explain": "Sai. Chỉ chuẩn bị các tội liệt kê ở khoản 2, 3 Điều 14."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm chuẩn bị phạm tội và TNHS của người chuẩn bị phạm tội.",
+   "model": "Chuẩn bị phạm tội là tìm kiếm, sửa soạn công cụ, phương tiện, tạo điều kiện khác để thực hiện tội phạm hoặc thành lập, tham gia nhóm tội phạm (khoản 1 Điều 14); chỉ chịu TNHS khi chuẩn bị các tội liệt kê ở khoản 2; người từ đủ 14 đến dưới 16 chỉ với Điều 123, 168 (khoản 3).",
+   "keywords": [
+    "công cụ, phương tiện",
+    "nhóm tội phạm",
+    "liệt kê",
+    "Điều 123, 168"
+   ]
+  }
+ ]
+}

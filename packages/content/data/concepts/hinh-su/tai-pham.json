@@ -1,0 +1,115 @@
+{
+ "id": "tai-pham",
+ "subject": "hinh-su",
+ "chapter": "v13",
+ "term": "Tái phạm và tái phạm nguy hiểm",
+ "definition": "Tái phạm là trường hợp đã bị kết án, chưa được xóa án tích mà lại thực hiện hành vi phạm tội do cố ý hoặc thực hiện hành vi phạm tội về tội phạm rất nghiêm trọng, tội phạm đặc biệt nghiêm trọng do vô ý. Những trường hợp sau đây được coi là tái phạm nguy hiểm: a) Đã bị kết án về tội phạm rất nghiêm trọng, tội phạm đặc biệt nghiêm trọng do cố ý, chưa được xóa án tích mà lại thực hiện hành vi phạm tội về tội phạm rất nghiêm trọng, tội phạm đặc biệt nghiêm trọng do cố ý; b) Đã tái phạm, chưa được xóa án tích mà lại thực hiện hành vi phạm tội do cố ý.",
+ "plain": "TÁI PHẠM: (1) đã bị kết án, CHƯA ĐƯỢC XÓA ÁN TÍCH; (2) lại phạm tội DO CỐ Ý, hoặc phạm tội RẤT NGHIÊM TRỌNG, ĐẶC BIỆT NGHIÊM TRỌNG DO VÔ Ý. TÁI PHẠM NGUY HIỂM: (a) án cũ rất nghiêm trọng/đặc biệt nghiêm trọng do cố ý + tội mới rất nghiêm trọng/đặc biệt nghiêm trọng do cố ý; (b) đã tái phạm, chưa xóa án tích, lại phạm tội do cố ý. Tái phạm, tái phạm nguy hiểm là TÌNH TIẾT TĂNG NẶNG (điểm h khoản 1 Điều 52) hoặc tình tiết định khung ở nhiều tội.",
+ "example": "A bị kết án về tội trộm cắp năm 2023, chưa được xóa án tích, năm 2026 lại cố ý gây thương tích: A tái phạm. Nếu A từng tái phạm mà chưa xóa án tích, lại cố ý phạm tội: tái phạm nguy hiểm.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 53 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "xoa-an-tich",
+  "can-cu-quyet-dinh-hinh-phat"
+ ],
+ "keywords": [
+  "chưa được xóa án tích",
+  "lại phạm tội do cố ý",
+  "rất nghiêm trọng do vô ý",
+  "tái phạm nguy hiểm"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người đã bị kết án, chưa được xóa án tích, lại phạm tội ít nghiêm trọng do vô ý thì có phải tái phạm không?",
+   "options": [
+    "Không",
+    "Có",
+    "Có, là tái phạm nguy hiểm",
+    "Tùy Tòa án"
+   ],
+   "answer": 0,
+   "explain": "Điều 53: tội do vô ý chỉ tính khi là tội rất nghiêm trọng, đặc biệt nghiêm trọng.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 53 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trường hợp nào là tái phạm nguy hiểm?",
+   "options": [
+    "Đã tái phạm, chưa được xóa án tích mà lại phạm tội do cố ý",
+    "Đã được xóa án tích lại phạm tội",
+    "Phạm tội lần đầu nhưng gây hậu quả lớn",
+    "Phạm nhiều tội cùng lúc"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 2 Điều 53.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 53 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tái phạm",
+   "right": "Không phải tái phạm",
+   "cases": [
+    {
+     "text": "Chưa xóa án tích, lại cố ý phạm tội trộm cắp",
+     "answer": "left"
+    },
+    {
+     "text": "Đã được xóa án tích, sau đó lại phạm tội",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 53."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tái phạm là trường hợp đã bị kết án, chưa được {{xóa án tích}} mà lại thực hiện hành vi phạm tội do {{cố ý}}.",
+   "bank_extra": [
+    "đặc xá",
+    "vô ý"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đã tái phạm, chưa được xóa án tích mà lại thực hiện hành vi phạm tội do cố ý được coi là tái phạm {{nguy hiểm}}.",
+   "bank_extra": [
+    "thông thường",
+    "nhẹ"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người đã được xóa án tích mà lại phạm tội vẫn bị coi là tái phạm.",
+   "answer": false,
+   "explain": "Sai. Điều kiện tái phạm là \"chưa được xóa án tích\" (khoản 1 Điều 53)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Phân biệt tái phạm và tái phạm nguy hiểm.",
+   "model": "Tái phạm: đã bị kết án, chưa được xóa án tích lại phạm tội do cố ý hoặc tội rất nghiêm trọng, đặc biệt nghiêm trọng do vô ý; tái phạm nguy hiểm: án cũ rất nghiêm trọng, đặc biệt nghiêm trọng do cố ý chưa xóa án tích lại phạm tội rất nghiêm trọng, đặc biệt nghiêm trọng do cố ý, hoặc đã tái phạm chưa xóa án tích lại phạm tội do cố ý (Điều 53).",
+   "keywords": [
+    "chưa được xóa án tích",
+    "cố ý",
+    "rất nghiêm trọng",
+    "tái phạm nguy hiểm"
+   ]
+  }
+ ]
+}

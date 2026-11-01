@@ -1,0 +1,120 @@
+{
+ "id": "mien-trach-nhiem-hinh-su",
+ "subject": "hinh-su",
+ "chapter": "v12",
+ "term": "Căn cứ miễn trách nhiệm hình sự",
+ "definition": "Người phạm tội được miễn trách nhiệm hình sự khi có một trong những căn cứ sau đây: a) Khi tiến hành điều tra, truy tố hoặc xét xử, do có sự thay đổi chính sách, pháp luật làm cho hành vi phạm tội không còn nguy hiểm cho xã hội nữa; b) Khi có quyết định đại xá.",
+ "plain": "Hai nhóm: BẮT BUỘC miễn (\"được miễn\", khoản 1): thay đổi chính sách, pháp luật làm hành vi không còn nguy hiểm; có quyết định ĐẠI XÁ. CÓ THỂ miễn (\"có thể được miễn\", khoản 2): chuyển biến tình hình; mắc bệnh hiểm nghèo; tự thú, lập công lớn… Khoản 3: tội nghiêm trọng do vô ý hoặc tội ít nghiêm trọng gây thiệt hại tính mạng, sức khỏe, danh dự, tài sản, đã khắc phục và được người bị hại tự nguyện HÒA GIẢI, đề nghị miễn. Phân biệt ĐẠI XÁ (Quốc hội, miễn TNHS) với ĐẶC XÁ (Chủ tịch nước, tha tù trước thời hạn).",
+ "example": "A vô ý gây thương tích cho B (tội ít nghiêm trọng), A đã bồi thường đầy đủ, B tự nguyện hòa giải và đề nghị miễn TNHS cho A: A có thể được miễn TNHS (khoản 3 Điều 29).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 29 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "thoi-hieu-truy-cuu-trach-nhiem-hinh-su",
+  "hinh-phat"
+ ],
+ "keywords": [
+  "được miễn",
+  "có thể được miễn",
+  "đại xá",
+  "hòa giải"
+ ],
+ "note": "Điều 29 được sửa đổi, bổ sung bởi Luật 12/2017/QH14 (hiệu lực 01/01/2018); câu chữ trên theo VBHN 135/VBHN-VPQH 2025.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Căn cứ nào thuộc trường hợp người phạm tội ĐƯỢC (bắt buộc) miễn TNHS?",
+   "options": [
+    "Có quyết định đại xá",
+    "Người phạm tội mắc bệnh hiểm nghèo",
+    "Người bị hại đề nghị miễn",
+    "Người phạm tội lập công lớn"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 1 Điều 29; các phương án khác thuộc trường hợp \"có thể được miễn\".",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 29 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khoản 3 Điều 29 áp dụng với loại tội nào?",
+   "options": [
+    "Tội phạm nghiêm trọng do vô ý hoặc tội phạm ít nghiêm trọng",
+    "Mọi tội phạm",
+    "Chỉ tội rất nghiêm trọng",
+    "Chỉ tội xâm phạm an ninh quốc gia"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 29.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 29 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Được miễn TNHS (khoản 1)",
+   "right": "Có thể được miễn TNHS (khoản 2)",
+   "cases": [
+    {
+     "text": "Có quyết định đại xá",
+     "answer": "left"
+    },
+    {
+     "text": "Mắc bệnh hiểm nghèo không còn khả năng gây nguy hiểm",
+     "answer": "right"
+    },
+    {
+     "text": "Thay đổi pháp luật làm hành vi không còn nguy hiểm",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 29."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người phạm tội được miễn trách nhiệm hình sự khi có sự thay đổi {{chính sách, pháp luật}} làm cho hành vi phạm tội không còn nguy hiểm cho xã hội nữa hoặc khi có quyết định {{đại xá}}.",
+   "bank_extra": [
+    "tình hình kinh tế",
+    "đặc xá"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người phạm tội có thể được miễn TNHS khi người bị hại tự nguyện {{hòa giải}} và đề nghị miễn TNHS trong trường hợp khoản 3 Điều 29.",
+   "bank_extra": [
+    "khởi kiện",
+    "tố cáo"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Đặc xá là căn cứ để miễn trách nhiệm hình sự theo khoản 1 Điều 29.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 29 quy định đại xá; đặc xá là tha tù trước thời hạn cho người đang chấp hành án."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày các căn cứ miễn trách nhiệm hình sự.",
+   "model": "Được miễn: thay đổi chính sách, pháp luật làm hành vi không còn nguy hiểm; có quyết định đại xá (khoản 1); có thể được miễn: chuyển biến tình hình, bệnh hiểm nghèo, tự thú, lập công lớn (khoản 2); tội nghiêm trọng do vô ý hoặc ít nghiêm trọng, đã khắc phục, người bị hại hòa giải đề nghị miễn (khoản 3 Điều 29).",
+   "keywords": [
+    "đại xá",
+    "chính sách, pháp luật",
+    "bệnh hiểm nghèo",
+    "hòa giải"
+   ]
+  }
+ ]
+}

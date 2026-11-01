@@ -1,0 +1,115 @@
+{
+ "id": "xoa-an-tich",
+ "subject": "hinh-su",
+ "chapter": "v14",
+ "term": "Đương nhiên được xóa án tích",
+ "definition": "Người bị kết án đương nhiên được xóa án tích, nếu từ khi chấp hành xong hình phạt chính hoặc hết thời gian thử thách án treo, người đó đã chấp hành xong hình phạt bổ sung, các quyết định khác của bản án và không thực hiện hành vi phạm tội mới trong thời hạn sau đây: a) 01 năm trong trường hợp bị phạt cảnh cáo, phạt tiền, cải tạo không giam giữ, phạt tù nhưng được hưởng án treo; b) 02 năm trong trong trường hợp bị phạt tù đến 05 năm; c) 03 năm trong trường hợp bị phạt tù từ trên 05 năm đến 15 năm; d) 05 năm trong trường hợp bị phạt tù từ trên 15 năm, tù chung thân hoặc tử hình nhưng đã được giảm án.",
+ "plain": "Xóa án tích = coi như chưa bị kết án. Ba hình thức: ĐƯƠNG NHIÊN (Điều 70), THEO QUYẾT ĐỊNH CỦA TÒA ÁN (Điều 71, với tội an ninh quốc gia Chương XIII, tội phá hoại hòa bình… Chương XXVI), TRONG TRƯỜNG HỢP ĐẶC BIỆT (Điều 72). Đương nhiên xóa án tích: đã chấp hành xong hình phạt chính/thời gian thử thách, hình phạt bổ sung, quyết định khác, không phạm tội mới trong 01 – 02 – 03 – 05 năm tùy mức án. Câu chữ \"trong trong\" ở điểm b là nguyên văn VBHN.",
+ "example": "A bị phạt 2 năm tù, chấp hành xong năm 2023, đã nộp án phí, không phạm tội mới: đến năm 2025 A đương nhiên được xóa án tích.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 2 Điều 70 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tai-pham",
+  "an-treo"
+ ],
+ "keywords": [
+  "đương nhiên được xóa án tích",
+  "chấp hành xong hình phạt chính",
+  "không thực hiện hành vi phạm tội mới",
+  "01, 02, 03, 05 năm"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người bị phạt tù 4 năm, đã chấp hành xong, sau bao lâu không phạm tội mới thì đương nhiên được xóa án tích?",
+   "options": [
+    "02 năm",
+    "01 năm",
+    "03 năm",
+    "05 năm"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 2 Điều 70.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 70 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người được hưởng án treo đương nhiên được xóa án tích sau bao lâu kể từ khi hết thời gian thử thách?",
+   "options": [
+    "01 năm",
+    "02 năm",
+    "03 năm",
+    "Ngay khi hết thời gian thử thách"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 2 Điều 70.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 70 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thời hạn 03 năm",
+   "right": "Thời hạn 05 năm",
+   "cases": [
+    {
+     "text": "Phạt tù từ trên 05 năm đến 15 năm",
+     "answer": "left"
+    },
+    {
+     "text": "Tù chung thân đã được giảm án",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 2 Điều 70."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người bị kết án đương nhiên được xóa án tích nếu đã chấp hành xong hình phạt bổ sung, các quyết định khác của bản án và không thực hiện hành vi phạm tội {{mới}}; {{01}} năm trong trường hợp bị phạt cảnh cáo, phạt tiền.",
+   "bank_extra": [
+    "cũ",
+    "02"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đương nhiên được xóa án tích không áp dụng đối với người bị kết án về các tội quy định tại Chương {{XIII}} và Chương XXVI.",
+   "bank_extra": [
+    "XIV",
+    "XXI"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người bị kết án về tội xâm phạm an ninh quốc gia cũng đương nhiên được xóa án tích.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 70 loại trừ tội tại Chương XIII và Chương XXVI; các trường hợp này xóa án tích theo quyết định của Tòa án (Điều 71)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày điều kiện đương nhiên được xóa án tích.",
+   "model": "Áp dụng với người bị kết án không phải về tội Chương XIII, XXVI; đã chấp hành xong hình phạt chính hoặc hết thời gian thử thách án treo, chấp hành xong hình phạt bổ sung, quyết định khác, không phạm tội mới trong 01 năm (cảnh cáo, phạt tiền, cải tạo không giam giữ, án treo), 02 năm (tù đến 05 năm), 03 năm (trên 05 đến 15 năm), 05 năm (trên 15 năm, chung thân, tử hình đã giảm) (Điều 70).",
+   "keywords": [
+    "chấp hành xong",
+    "không phạm tội mới",
+    "01 năm",
+    "05 năm"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,139 @@
+{
+  "id": "hinh-su-de-2",
+  "group": "hinh-su",
+  "title": "Đề kiểm tra Hình sự 1 – Đồng phạm, loại trừ TNHS, hình phạt",
+  "subtitle": "10 câu theo đề cương HLU, vấn đề 10–14",
+  "updated": "2026-11-01",
+  "questions": [
+    {
+      "q": "A cho B mượn xe máy để B đi cướp, hai bên đã bàn trước. A là ai trong vụ án?",
+      "options": [
+        "Người giúp sức",
+        "Người thực hành",
+        "Người tổ chức",
+        "Người che giấu tội phạm"
+      ],
+      "answer": 0,
+      "explain": "Khoản 3 Điều 17: tạo điều kiện vật chất.",
+      "basis": "Điều 17 BLHS (VBHN 135/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+    },
+    {
+      "q": "C không hứa hẹn trước, sau khi biết D giết người đã giấu con dao cho D. C có phải là đồng phạm không?",
+      "options": [
+        "Không, C có thể phạm tội che giấu tội phạm",
+        "Có, C là người giúp sức",
+        "Có, C là người thực hành",
+        "C không phải chịu trách nhiệm gì"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 18.",
+      "basis": "Điều 18 BLHS (VBHN 135/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+    },
+    {
+      "q": "Kẻ trộm đã bỏ chạy ra xa và không còn đe dọa, chủ nhà đuổi theo đánh trọng thương. Hành vi của chủ nhà là gì?",
+      "options": [
+        "Không phải phòng vệ chính đáng vì hành vi xâm phạm đã chấm dứt",
+        "Phòng vệ chính đáng",
+        "Tình thế cấp thiết",
+        "Sự kiện bất ngờ"
+      ],
+      "answer": 0,
+      "explain": "Phòng vệ chính đáng chống trả người \"đang có hành vi xâm phạm\" (khoản 1 Điều 22).",
+      "basis": "Điều 22 BLHS (VBHN 135/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+    },
+    {
+      "q": "Phá cửa kính ô tô người khác để cứu em bé bị bỏ quên trong xe nắng nóng là trường hợp nào?",
+      "options": [
+        "Tình thế cấp thiết",
+        "Phòng vệ chính đáng",
+        "Tội hủy hoại tài sản",
+        "Vượt quá giới hạn phòng vệ"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 23: gây thiệt hại nhỏ hơn thiệt hại cần ngăn ngừa.",
+      "basis": "Điều 23 BLHS (VBHN 135/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+    },
+    {
+      "q": "Đối với một tội phạm, Tòa án có thể tuyên đồng thời hai hình phạt chính không?",
+      "options": [
+        "Không, chỉ một hình phạt chính",
+        "Có",
+        "Có nếu tội đặc biệt nghiêm trọng",
+        "Có nếu Viện kiểm sát đề nghị"
+      ],
+      "answer": 0,
+      "explain": "Khoản 3 Điều 32.",
+      "basis": "Điều 32 BLHS (VBHN 135/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+    },
+    {
+      "q": "Bị cáo nữ đang nuôi con 20 tháng tuổi khi xét xử. Có được tuyên tử hình không?",
+      "options": [
+        "Không",
+        "Có",
+        "Có nếu phạm tội ma túy",
+        "Có nhưng hoãn thi hành"
+      ],
+      "answer": 0,
+      "explain": "Khoản 2 Điều 40.",
+      "basis": "Điều 40 BLHS (VBHN 135/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+    },
+    {
+      "q": "Tội phạm đặc biệt nghiêm trọng có thời hiệu truy cứu TNHS là bao lâu (khi không thuộc Điều 28)?",
+      "options": [
+        "20 năm",
+        "15 năm",
+        "30 năm",
+        "Không có thời hiệu"
+      ],
+      "answer": 0,
+      "explain": "Điểm d khoản 2 Điều 27.",
+      "basis": "Điều 27 BLHS (VBHN 135/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+    },
+    {
+      "q": "A từng bị kết án về tội trộm cắp, chưa được xóa án tích, nay vô ý gây tai nạn giao thông thuộc tội ít nghiêm trọng. A có tái phạm không?",
+      "options": [
+        "Không",
+        "Có",
+        "Có, tái phạm nguy hiểm",
+        "Tùy giá trị thiệt hại"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 53: tội do vô ý chỉ tính khi là rất nghiêm trọng, đặc biệt nghiêm trọng.",
+      "basis": "Điều 53 BLHS (VBHN 135/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+    },
+    {
+      "q": "Tòa án xử phạt bị cáo 4 năm tù. Có thể cho hưởng án treo không?",
+      "options": [
+        "Không, vì án treo chỉ khi phạt tù không quá 03 năm",
+        "Có",
+        "Có nếu bị cáo bồi thường",
+        "Có nếu bị cáo dưới 18 tuổi"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 65.",
+      "basis": "Điều 65 BLHS (VBHN 135/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+    },
+    {
+      "q": "Người bị phạt tù 10 năm, đã chấp hành xong mọi phần của bản án, không phạm tội mới. Sau bao lâu đương nhiên được xóa án tích?",
+      "options": [
+        "03 năm",
+        "02 năm",
+        "05 năm",
+        "01 năm"
+      ],
+      "answer": 0,
+      "explain": "Điểm c khoản 2 Điều 70: tù từ trên 05 năm đến 15 năm.",
+      "basis": "Điều 70 BLHS (VBHN 135/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+    }
+  ]
+}

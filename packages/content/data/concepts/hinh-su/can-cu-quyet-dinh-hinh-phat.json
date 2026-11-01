@@ -1,0 +1,119 @@
+{
+ "id": "can-cu-quyet-dinh-hinh-phat",
+ "subject": "hinh-su",
+ "chapter": "v13",
+ "term": "Căn cứ quyết định hình phạt",
+ "definition": "Khi quyết định hình phạt, Tòa án căn cứ vào quy định của Bộ luật này, cân nhắc tính chất và mức độ nguy hiểm cho xã hội của hành vi phạm tội, nhân thân người phạm tội, các tình tiết giảm nhẹ và tăng nặng trách nhiệm hình sự. Khi quyết định áp dụng hình phạt tiền, ngoài căn cứ quy định tại khoản 1 Điều này, Tòa án căn cứ vào tình hình tài sản, khả năng thi hành của người phạm tội.",
+ "plain": "Bốn căn cứ: (1) QUY ĐỊNH CỦA BLHS (phần chung và khung hình phạt phần các tội phạm); (2) TÍNH CHẤT, MỨC ĐỘ NGUY HIỂM của hành vi; (3) NHÂN THÂN người phạm tội; (4) TÌNH TIẾT GIẢM NHẸ (Điều 51) và TĂNG NẶNG (Điều 52). Với phạt tiền: thêm tình hình tài sản, khả năng thi hành. Trường hợp đặc biệt: quyết định hình phạt dưới mức thấp nhất của khung (Điều 54) khi có ít nhất hai tình tiết giảm nhẹ tại khoản 1 Điều 51; tổng hợp hình phạt nhiều tội (Điều 55).",
+ "example": "Hai người cùng phạm tội trộm cắp tài sản cùng giá trị nhưng một người tái phạm, một người phạm tội lần đầu, đã bồi thường: Tòa án có thể tuyên mức phạt khác nhau.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 50 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tai-pham",
+  "he-thong-hinh-phat"
+ ],
+ "keywords": [
+  "quy định của Bộ luật này",
+  "tính chất, mức độ nguy hiểm",
+  "nhân thân",
+  "tình tiết giảm nhẹ, tăng nặng"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khi quyết định hình phạt tiền, Tòa án căn cứ thêm vào yếu tố nào?",
+   "options": [
+    "Tình hình tài sản, khả năng thi hành của người phạm tội",
+    "Ý kiến của người bị hại",
+    "Thu nhập trung bình của địa phương",
+    "Nghề nghiệp của gia đình"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 50.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 50 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tòa án có thể quyết định hình phạt dưới mức thấp nhất của khung khi người phạm tội có ít nhất bao nhiêu tình tiết giảm nhẹ tại khoản 1 Điều 51?",
+   "options": [
+    "Hai",
+    "Một",
+    "Ba",
+    "Năm"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 54.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 54 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tình tiết giảm nhẹ",
+   "right": "Tình tiết tăng nặng",
+   "cases": [
+    {
+     "text": "Người phạm tội tự nguyện bồi thường thiệt hại",
+     "answer": "left"
+    },
+    {
+     "text": "Phạm tội có tổ chức",
+     "answer": "right"
+    },
+    {
+     "text": "Tái phạm nguy hiểm",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 51, 52."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Khi quyết định hình phạt, Tòa án cân nhắc tính chất và mức độ nguy hiểm cho xã hội của hành vi phạm tội, {{nhân thân}} người phạm tội, các tình tiết {{giảm nhẹ}} và tăng nặng trách nhiệm hình sự.",
+   "bank_extra": [
+    "nghề nghiệp",
+    "khách quan"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Khi quyết định áp dụng hình phạt tiền, Tòa án căn cứ vào tình hình {{tài sản}}, khả năng thi hành của người phạm tội.",
+   "bank_extra": [
+    "học vấn",
+    "sức khỏe"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tòa án chỉ căn cứ vào giá trị thiệt hại để quyết định hình phạt.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 50 nêu nhiều căn cứ: quy định của Bộ luật, tính chất, mức độ nguy hiểm, nhân thân, tình tiết giảm nhẹ, tăng nặng."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày các căn cứ quyết định hình phạt.",
+   "model": "Quy định của Bộ luật Hình sự; tính chất, mức độ nguy hiểm cho xã hội của hành vi; nhân thân người phạm tội; tình tiết giảm nhẹ và tăng nặng (khoản 1 Điều 50); với phạt tiền thêm tình hình tài sản, khả năng thi hành (khoản 2).",
+   "keywords": [
+    "quy định của Bộ luật",
+    "nguy hiểm cho xã hội",
+    "nhân thân",
+    "giảm nhẹ và tăng nặng"
+   ]
+  }
+ ]
+}

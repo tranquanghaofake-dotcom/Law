@@ -1,0 +1,114 @@
+{
+ "id": "hinh-phat",
+ "subject": "hinh-su",
+ "chapter": "v12",
+ "term": "Khái niệm hình phạt",
+ "definition": "Hình phạt là biện pháp cưỡng chế nghiêm khắc nhất của Nhà nước được quy định trong Bộ luật này, do Tòa án quyết định áp dụng đối với người hoặc pháp nhân thương mại phạm tội nhằm tước bỏ hoặc hạn chế quyền, lợi ích của người, pháp nhân thương mại đó.",
+ "plain": "Đặc điểm: (1) NGHIÊM KHẮC NHẤT trong các biện pháp cưỡng chế nhà nước; (2) chỉ được quy định trong BỘ LUẬT HÌNH SỰ; (3) chỉ TÒA ÁN quyết định (bằng bản án); (4) chỉ áp dụng với NGƯỜI hoặc PHÁP NHÂN THƯƠNG MẠI PHẠM TỘI; (5) TƯỚC BỎ hoặc HẠN CHẾ quyền, lợi ích. Mục đích (Điều 31): trừng trị, giáo dục, phòng ngừa. Phân biệt với BIỆN PHÁP TƯ PHÁP (Điều 46) và xử phạt hành chính.",
+ "example": "Phạt tiền trong bản án hình sự (hình phạt) khác với phạt tiền do công an giao thông quyết định (xử phạt vi phạm hành chính).",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 30 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "he-thong-hinh-phat",
+  "bien-phap-tu-phap"
+ ],
+ "keywords": [
+  "cưỡng chế nghiêm khắc nhất",
+  "Tòa án quyết định",
+  "tước bỏ hoặc hạn chế quyền, lợi ích"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chủ thể duy nhất có quyền quyết định áp dụng hình phạt là ai?",
+   "options": [
+    "Tòa án",
+    "Viện kiểm sát",
+    "Cơ quan điều tra",
+    "Ủy ban nhân dân"
+   ],
+   "answer": 0,
+   "explain": "Điều 30.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 30 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hình phạt áp dụng đối với chủ thể nào?",
+   "options": [
+    "Người hoặc pháp nhân thương mại phạm tội",
+    "Mọi người vi phạm pháp luật",
+    "Người vi phạm hành chính",
+    "Người thân của người phạm tội"
+   ],
+   "answer": 0,
+   "explain": "Điều 30.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 30 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hình phạt",
+   "right": "Xử phạt vi phạm hành chính",
+   "cases": [
+    {
+     "text": "Do Tòa án quyết định trong bản án",
+     "answer": "left"
+    },
+    {
+     "text": "Do cảnh sát giao thông lập biên bản, ra quyết định",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 30."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hình phạt là biện pháp cưỡng chế {{nghiêm khắc nhất}} của Nhà nước, do {{Tòa án}} quyết định áp dụng đối với người hoặc pháp nhân thương mại phạm tội.",
+   "bank_extra": [
+    "nhẹ nhất",
+    "Viện kiểm sát"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hình phạt nhằm tước bỏ hoặc {{hạn chế}} quyền, lợi ích của người, pháp nhân thương mại phạm tội.",
+   "bank_extra": [
+    "mở rộng",
+    "bảo vệ"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hình phạt có thể được quy định trong nghị định của Chính phủ.",
+   "answer": false,
+   "explain": "Sai. Điều 30: hình phạt được quy định trong Bộ luật Hình sự."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm và đặc điểm của hình phạt.",
+   "model": "Hình phạt là biện pháp cưỡng chế nghiêm khắc nhất của Nhà nước, quy định trong Bộ luật Hình sự, do Tòa án quyết định áp dụng đối với người hoặc pháp nhân thương mại phạm tội, nhằm tước bỏ hoặc hạn chế quyền, lợi ích của họ (Điều 30).",
+   "keywords": [
+    "nghiêm khắc nhất",
+    "Bộ luật Hình sự",
+    "Tòa án",
+    "tước bỏ hoặc hạn chế"
+   ]
+  }
+ ]
+}

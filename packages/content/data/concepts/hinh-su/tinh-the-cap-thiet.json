@@ -1,0 +1,115 @@
+{
+ "id": "tinh-the-cap-thiet",
+ "subject": "hinh-su",
+ "chapter": "v11",
+ "term": "Tình thế cấp thiết",
+ "definition": "Tình thế cấp thiết là tình thế của người vì muốn tránh gây thiệt hại cho quyền, lợi ích hợp pháp của mình, của người khác hoặc lợi ích của Nhà nước, của cơ quan, tổ chức mà không còn cách nào khác là phải gây một thiệt hại nhỏ hơn thiệt hại cần ngăn ngừa. Hành vi gây thiệt hại trong tình thế cấp thiết không phải là tội phạm. Trong trường hợp thiệt hại gây ra rõ ràng vượt quá yêu cầu của tình thế cấp thiết, thì người gây thiệt hại đó phải chịu trách nhiệm hình sự.",
+ "plain": "Điều kiện: (1) có NGUY CƠ thiệt hại THỰC TẾ, ĐANG HIỆN HỮU (thiên tai, hỏa hoạn, súc vật, con người…); (2) KHÔNG CÒN CÁCH NÀO KHÁC; (3) thiệt hại gây ra NHỎ HƠN thiệt hại cần ngăn ngừa. Khác phòng vệ chính đáng: thiệt hại thường gây cho NGƯỜI THỨ BA hoặc lợi ích khác, và bắt buộc thiệt hại gây ra nhỏ hơn. Vượt quá yêu cầu → chịu TNHS. Các trường hợp loại trừ TNHS khác: sự kiện bất ngờ (20), bắt giữ người phạm tội (24), rủi ro khoa học (25), thi hành mệnh lệnh (26).",
+ "example": "Xe tải mất phanh, tài xế đánh lái đâm vào hàng rào nhà dân để tránh đâm vào đám đông đang đứng chờ đèn đỏ: tình thế cấp thiết.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 23 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "phong-ve-chinh-dang",
+  "khong-co-nang-luc-trach-nhiem-hinh-su"
+ ],
+ "keywords": [
+  "không còn cách nào khác",
+  "thiệt hại nhỏ hơn",
+  "không phải là tội phạm",
+  "vượt quá yêu cầu"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Điều kiện về thiệt hại trong tình thế cấp thiết là gì?",
+   "options": [
+    "Thiệt hại gây ra phải nhỏ hơn thiệt hại cần ngăn ngừa",
+    "Thiệt hại gây ra bằng thiệt hại cần ngăn ngừa",
+    "Không giới hạn thiệt hại",
+    "Thiệt hại phải dưới 2 triệu đồng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 23.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 23 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hành vi gây thiệt hại trong tình thế cấp thiết có phải tội phạm không?",
+   "options": [
+    "Không",
+    "Có, nhưng được giảm nhẹ",
+    "Có nếu gây thiệt hại cho người khác",
+    "Tùy Tòa án quyết định"
+   ],
+   "answer": 0,
+   "explain": "Đoạn 2 khoản 1 Điều 23.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 23 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tình thế cấp thiết",
+   "right": "Gây thiệt hại khi bắt giữ người phạm tội",
+   "cases": [
+    {
+     "text": "Phá cửa xe người khác để cứu đứa trẻ bị nhốt trong xe nắng nóng",
+     "answer": "left"
+    },
+    {
+     "text": "Dùng vũ lực cần thiết khống chế kẻ trộm đang bỏ chạy",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 23, 24."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tình thế cấp thiết là tình thế mà {{không còn cách nào khác}} là phải gây một thiệt hại {{nhỏ hơn}} thiệt hại cần ngăn ngừa.",
+   "bank_extra": [
+    "có nhiều cách",
+    "lớn hơn"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Trường hợp thiệt hại gây ra {{rõ ràng}} vượt quá yêu cầu của tình thế cấp thiết thì người gây thiệt hại phải chịu TNHS.",
+   "bank_extra": [
+    "có thể",
+    "không"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Trong tình thế cấp thiết, được gây thiệt hại lớn hơn thiệt hại cần ngăn ngừa nếu không còn cách nào khác.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 23: phải gây thiệt hại nhỏ hơn thiệt hại cần ngăn ngừa."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày điều kiện của tình thế cấp thiết và phân biệt với phòng vệ chính đáng.",
+   "model": "Tình thế cấp thiết: vì tránh thiệt hại cho lợi ích hợp pháp mà không còn cách nào khác phải gây thiệt hại nhỏ hơn thiệt hại cần ngăn ngừa; không phải tội phạm; vượt quá yêu cầu thì chịu TNHS (Điều 23). Khác phòng vệ: thiệt hại có thể gây cho người thứ ba, bắt buộc thiệt hại nhỏ hơn.",
+   "keywords": [
+    "không còn cách nào khác",
+    "nhỏ hơn",
+    "không phải tội phạm",
+    "vượt quá"
+   ]
+  }
+ ]
+}

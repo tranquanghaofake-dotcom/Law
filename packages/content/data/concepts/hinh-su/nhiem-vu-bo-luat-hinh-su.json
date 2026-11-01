@@ -1,0 +1,115 @@
+{
+ "id": "nhiem-vu-bo-luat-hinh-su",
+ "subject": "hinh-su",
+ "chapter": "v1",
+ "term": "Nhiệm vụ của Bộ luật Hình sự",
+ "definition": "Bộ luật Hình sự có nhiệm vụ bảo vệ chủ quyền quốc gia, an ninh của đất nước, bảo vệ chế độ xã hội chủ nghĩa, quyền con người, quyền công dân, bảo vệ quyền bình đẳng giữa đồng bào các dân tộc, bảo vệ lợi ích của Nhà nước, tổ chức, bảo vệ trật tự pháp luật, chống mọi hành vi phạm tội; giáo dục mọi người ý thức tuân theo pháp luật, phòng ngừa và đấu tranh chống tội phạm. Bộ luật này quy định về tội phạm và hình phạt.",
+ "plain": "Ba nhóm nhiệm vụ: BẢO VỆ (chủ quyền, an ninh, chế độ, quyền con người, quyền công dân…), GIÁO DỤC (ý thức tuân theo pháp luật), PHÒNG NGỪA và ĐẤU TRANH chống tội phạm. Đối tượng điều chỉnh của luật hình sự là quan hệ xã hội phát sinh giữa Nhà nước và người (pháp nhân thương mại) phạm tội; phương pháp điều chỉnh là QUYỀN UY. Nội dung: Bộ luật quy định về TỘI PHẠM và HÌNH PHẠT.",
+ "example": "Việc Bộ luật Hình sự quy định tội trộm cắp tài sản vừa bảo vệ quyền sở hữu, vừa răn đe, giáo dục người khác không phạm tội.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 1 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "co-so-trach-nhiem-hinh-su",
+  "khai-niem-toi-pham"
+ ],
+ "keywords": [
+  "bảo vệ",
+  "giáo dục",
+  "phòng ngừa, đấu tranh",
+  "tội phạm và hình phạt"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Bộ luật Hình sự quy định về nội dung gì theo Điều 1?",
+   "options": [
+    "Tội phạm và hình phạt",
+    "Vi phạm hành chính và xử phạt",
+    "Thủ tục điều tra, truy tố, xét xử",
+    "Bồi thường thiệt hại ngoài hợp đồng"
+   ],
+   "answer": 0,
+   "explain": "Đoạn 2 Điều 1; thủ tục tố tụng thuộc Bộ luật Tố tụng hình sự.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 1 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nhiệm vụ nào KHÔNG được nêu trong Điều 1 Bộ luật Hình sự?",
+   "options": [
+    "Điều chỉnh quan hệ hợp đồng giữa các doanh nghiệp",
+    "Bảo vệ quyền con người, quyền công dân",
+    "Giáo dục mọi người ý thức tuân theo pháp luật",
+    "Phòng ngừa và đấu tranh chống tội phạm"
+   ],
+   "answer": 0,
+   "explain": "Quan hệ hợp đồng thuộc luật dân sự, thương mại.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 1 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Bộ luật Hình sự",
+   "right": "Bộ luật Tố tụng hình sự",
+   "cases": [
+    {
+     "text": "Quy định tội phạm và hình phạt",
+     "answer": "left"
+    },
+    {
+     "text": "Quy định trình tự điều tra, truy tố, xét xử",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 1 Bộ luật Hình sự."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bộ luật Hình sự có nhiệm vụ giáo dục mọi người ý thức tuân theo pháp luật, {{phòng ngừa}} và đấu tranh chống {{tội phạm}}.",
+   "bank_extra": [
+    "xử phạt",
+    "vi phạm hành chính"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bộ luật này quy định về tội phạm và {{hình phạt}}.",
+   "bank_extra": [
+    "biện pháp hành chính",
+    "bồi thường"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Bộ luật Hình sự quy định cả trình tự, thủ tục khởi tố, điều tra vụ án hình sự.",
+   "answer": false,
+   "explain": "Sai. Bộ luật Hình sự quy định tội phạm và hình phạt (Điều 1); thủ tục do Bộ luật Tố tụng hình sự quy định."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu nhiệm vụ của Bộ luật Hình sự.",
+   "model": "Bảo vệ chủ quyền quốc gia, an ninh, chế độ xã hội chủ nghĩa, quyền con người, quyền công dân, quyền bình đẳng giữa các dân tộc, lợi ích Nhà nước, tổ chức, trật tự pháp luật, chống mọi hành vi phạm tội; giáo dục ý thức tuân theo pháp luật, phòng ngừa và đấu tranh chống tội phạm (Điều 1).",
+   "keywords": [
+    "bảo vệ",
+    "quyền con người",
+    "giáo dục",
+    "phòng ngừa"
+   ]
+  }
+ ]
+}

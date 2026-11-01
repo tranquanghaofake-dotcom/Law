@@ -1,0 +1,115 @@
+{
+ "id": "thoi-hieu-truy-cuu-trach-nhiem-hinh-su",
+ "subject": "hinh-su",
+ "chapter": "v12",
+ "term": "Thời hiệu truy cứu trách nhiệm hình sự",
+ "definition": "Thời hiệu truy cứu trách nhiệm hình sự là thời hạn do Bộ luật này quy định mà khi hết thời hạn đó thì người phạm tội không bị truy cứu trách nhiệm hình sự. Thời hiệu truy cứu trách nhiệm hình sự được quy định như sau: a) 05 năm đối với tội phạm ít nghiêm trọng; b) 10 năm đối với tội phạm nghiêm trọng; c) 15 năm đối với tội phạm rất nghiêm trọng; d) 20 năm đối với tội phạm đặc biệt nghiêm trọng.",
+ "plain": "Bốn mốc 05 – 10 – 15 – 20 năm theo bốn loại tội (Điều 9). Tính TỪ NGÀY TỘI PHẠM ĐƯỢC THỰC HIỆN. TÍNH LẠI khi: phạm tội mới có mức cao nhất của khung trên 01 năm tù (tính từ ngày phạm tội mới); cố tình trốn tránh và đã có quyết định truy nã (tính từ khi đầu thú hoặc bị bắt) (khoản 3). KHÔNG áp dụng thời hiệu với tội xâm phạm an ninh quốc gia, tội phá hoại hòa bình, tội tham ô, nhận hối lộ ở khung nặng… (Điều 28).",
+ "example": "A trộm cắp tài sản (khoản 1 Điều 173, ít nghiêm trọng) năm 2020, không phạm tội mới, không bị truy nã: đến năm 2025 hết thời hiệu 05 năm, A không bị truy cứu TNHS.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 27 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "phan-loai-toi-pham",
+  "mien-trach-nhiem-hinh-su"
+ ],
+ "keywords": [
+  "05, 10, 15, 20 năm",
+  "từ ngày tội phạm được thực hiện",
+  "tính lại",
+  "truy nã"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thời hiệu truy cứu TNHS đối với tội phạm rất nghiêm trọng là bao lâu?",
+   "options": [
+    "15 năm",
+    "10 năm",
+    "20 năm",
+    "05 năm"
+   ],
+   "answer": 0,
+   "explain": "Điểm c khoản 2 Điều 27.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 27 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thời hiệu truy cứu TNHS được tính từ khi nào?",
+   "options": [
+    "Từ ngày tội phạm được thực hiện",
+    "Từ ngày tội phạm bị phát hiện",
+    "Từ ngày khởi tố vụ án",
+    "Từ ngày có đơn tố giác"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 27.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 27 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thời hiệu 05 năm",
+   "right": "Thời hiệu 20 năm",
+   "cases": [
+    {
+     "text": "Tội phạm ít nghiêm trọng",
+     "answer": "left"
+    },
+    {
+     "text": "Tội phạm đặc biệt nghiêm trọng",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 2 Điều 27."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thời hiệu truy cứu TNHS là thời hạn mà khi hết thời hạn đó thì người phạm tội {{không bị}} truy cứu TNHS; {{10}} năm đối với tội phạm nghiêm trọng.",
+   "bank_extra": [
+    "vẫn bị",
+    "07"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người phạm tội cố tình trốn tránh và đã có quyết định {{truy nã}} thì thời hiệu tính lại kể từ khi người đó ra đầu thú hoặc bị bắt giữ.",
+   "bank_extra": [
+    "khởi tố",
+    "tạm giam"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thời hiệu truy cứu TNHS được áp dụng cho mọi tội phạm, không có ngoại lệ.",
+   "answer": false,
+   "explain": "Sai. Điều 28 quy định các tội không áp dụng thời hiệu (tội xâm phạm an ninh quốc gia, tội phá hoại hòa bình…)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quy định về thời hiệu truy cứu trách nhiệm hình sự.",
+   "model": "Là thời hạn luật quy định mà hết thời hạn thì không bị truy cứu TNHS; 05 năm (ít nghiêm trọng), 10 năm (nghiêm trọng), 15 năm (rất nghiêm trọng), 20 năm (đặc biệt nghiêm trọng); tính từ ngày tội phạm được thực hiện; tính lại khi phạm tội mới trên 01 năm tù hoặc trốn tránh có truy nã (Điều 27).",
+   "keywords": [
+    "05 năm",
+    "20 năm",
+    "ngày tội phạm được thực hiện",
+    "tính lại"
+   ]
+  }
+ ]
+}

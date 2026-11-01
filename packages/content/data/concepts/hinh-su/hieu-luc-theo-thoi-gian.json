@@ -1,0 +1,118 @@
+{
+ "id": "hieu-luc-theo-thoi-gian",
+ "subject": "hinh-su",
+ "chapter": "v2",
+ "term": "Hiệu lực về thời gian và hiệu lực hồi tố",
+ "definition": "Điều luật được áp dụng đối với một hành vi phạm tội là điều luật đang có hiệu lực thi hành tại thời điểm mà hành vi phạm tội được thực hiện. (…) Điều luật xóa bỏ một tội phạm, một hình phạt, một tình tiết tăng nặng, quy định một hình phạt nhẹ hơn, một tình tiết giảm nhẹ mới hoặc mở rộng phạm vi áp dụng án treo, miễn trách nhiệm hình sự, loại trừ trách nhiệm hình sự, miễn hình phạt, giảm hình phạt, tha tù trước thời hạn có điều kiện, xóa án tích và quy định khác có lợi cho người phạm tội, thì được áp dụng đối với hành vi phạm tội đã thực hiện trước khi điều luật đó có hiệu lực thi hành.",
+ "plain": "Nguyên tắc chung: áp dụng điều luật CÓ HIỆU LỰC TẠI THỜI ĐIỂM THỰC HIỆN HÀNH VI. KHÔNG HỒI TỐ điều luật bất lợi (tội mới, hình phạt nặng hơn, tình tiết tăng nặng mới… — khoản 2). CÓ HỒI TỐ điều luật CÓ LỢI cho người phạm tội (khoản 3). Ví dụ thực tế: Luật 86/2025/QH15 bỏ hình phạt tử hình ở một số tội (hiệu lực 01/7/2025) được áp dụng có lợi cho người phạm tội trước đó.",
+ "example": "Một người phạm tội năm 2024 với tội mà khi đó có hình phạt tử hình; từ 01/7/2025 luật bỏ hình phạt tử hình ở tội đó: khi xét xử, Tòa án áp dụng quy định mới có lợi.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 3 Điều 7 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hieu-luc-theo-lanh-tho",
+  "tu-hinh"
+ ],
+ "keywords": [
+  "thời điểm thực hiện hành vi",
+  "không hồi tố điều luật bất lợi",
+  "hồi tố điều luật có lợi"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Điều luật quy định một tình tiết giảm nhẹ mới có được áp dụng với hành vi phạm tội đã thực hiện trước khi điều luật có hiệu lực không?",
+   "options": [
+    "Có, vì có lợi cho người phạm tội",
+    "Không, vì luật không có hiệu lực hồi tố",
+    "Chỉ khi Viện kiểm sát đề nghị",
+    "Chỉ khi chưa khởi tố"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 7.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 7 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Điều luật quy định một tội phạm mới có được áp dụng với hành vi thực hiện trước khi điều luật có hiệu lực không?",
+   "options": [
+    "Không",
+    "Có",
+    "Có nếu hậu quả nghiêm trọng",
+    "Có nếu chưa hết thời hiệu"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 7.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 7 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Có hiệu lực hồi tố",
+   "right": "Không có hiệu lực hồi tố",
+   "cases": [
+    {
+     "text": "Điều luật quy định hình phạt nhẹ hơn",
+     "answer": "left"
+    },
+    {
+     "text": "Điều luật quy định tình tiết tăng nặng mới",
+     "answer": "right"
+    },
+    {
+     "text": "Điều luật mở rộng phạm vi áp dụng án treo",
+     "answer": "left"
+    }
+   ],
+   "explain": "Khoản 2, 3 Điều 7."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Điều luật được áp dụng đối với một hành vi phạm tội là điều luật đang có hiệu lực thi hành tại thời điểm mà hành vi phạm tội được {{thực hiện}}.",
+   "bank_extra": [
+    "xét xử",
+    "phát hiện"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quy định có lợi cho người phạm tội thì được áp dụng đối với hành vi phạm tội đã thực hiện {{trước khi}} điều luật đó có hiệu lực thi hành.",
+   "bank_extra": [
+    "sau khi",
+    "cùng lúc"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Điều luật hạn chế phạm vi áp dụng án treo được áp dụng với hành vi phạm tội đã thực hiện trước khi điều luật có hiệu lực.",
+   "answer": false,
+   "explain": "Sai. Đây là quy định không có lợi, không được hồi tố (khoản 2 Điều 7)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày hiệu lực về thời gian của Bộ luật Hình sự.",
+   "model": "Áp dụng điều luật có hiệu lực tại thời điểm thực hiện hành vi phạm tội (khoản 1); điều luật bất lợi không áp dụng với hành vi trước khi có hiệu lực (khoản 2); điều luật có lợi được áp dụng hồi tố (khoản 3) (Điều 7).",
+   "keywords": [
+    "thời điểm thực hiện",
+    "không có lợi",
+    "có lợi",
+    "hồi tố"
+   ]
+  }
+ ]
+}

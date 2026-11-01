@@ -1,0 +1,115 @@
+{
+ "id": "phong-ve-chinh-dang",
+ "subject": "hinh-su",
+ "chapter": "v11",
+ "term": "Phòng vệ chính đáng",
+ "definition": "Phòng vệ chính đáng là hành vi của người vì bảo vệ quyền hoặc lợi ích chính đáng của mình, của người khác hoặc lợi ích của Nhà nước, của cơ quan, tổ chức mà chống trả lại một cách cần thiết người đang có hành vi xâm phạm các lợi ích nói trên. Phòng vệ chính đáng không phải là tội phạm. Vượt quá giới hạn phòng vệ chính đáng là hành vi chống trả rõ ràng quá mức cần thiết, không phù hợp với tính chất và mức độ nguy hiểm cho xã hội của hành vi xâm hại. Người có hành vi vượt quá giới hạn phòng vệ chính đáng phải chịu trách nhiệm hình sự theo quy định của Bộ luật này.",
+ "plain": "Điều kiện: (1) CÓ HÀNH VI XÂM PHẠM lợi ích chính đáng đang diễn ra (THỰC TẾ, ĐANG XẢY RA); (2) chống trả nhằm vào CHÍNH NGƯỜI XÂM PHẠM; (3) chống trả CẦN THIẾT. Vượt quá: chống trả RÕ RÀNG QUÁ MỨC CẦN THIẾT → chịu TNHS (tình tiết giảm nhẹ; có tội danh riêng như giết người do vượt quá giới hạn phòng vệ chính đáng, Điều 126). Phân biệt TÌNH THẾ CẤP THIẾT (Điều 23): gây thiệt hại cho người thứ ba/lợi ích khác để tránh thiệt hại lớn hơn.",
+ "example": "Kẻ cướp cầm dao tấn công, A giằng dao và đâm lại một nhát vào tay để thoát thân: phòng vệ chính đáng. Nếu kẻ cướp đã bỏ chạy mà A đuổi theo đâm chết thì không còn là phòng vệ.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 22 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tinh-the-cap-thiet",
+  "khong-co-nang-luc-trach-nhiem-hinh-su"
+ ],
+ "keywords": [
+  "đang có hành vi xâm phạm",
+  "chống trả cần thiết",
+  "không phải là tội phạm",
+  "rõ ràng quá mức cần thiết"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Vượt quá giới hạn phòng vệ chính đáng là gì?",
+   "options": [
+    "Hành vi chống trả rõ ràng quá mức cần thiết, không phù hợp với tính chất, mức độ nguy hiểm của hành vi xâm hại",
+    "Mọi hành vi gây thương tích cho người tấn công",
+    "Hành vi chống trả sau khi kẻ tấn công đã bỏ đi",
+    "Hành vi gây thiệt hại cho người thứ ba"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 22.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 22 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người vượt quá giới hạn phòng vệ chính đáng có phải chịu TNHS không?",
+   "options": [
+    "Có",
+    "Không",
+    "Chỉ khi gây chết người",
+    "Chỉ bị xử lý kỷ luật"
+   ],
+   "answer": 0,
+   "explain": "Đoạn 2 khoản 2 Điều 22.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 22 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Phòng vệ chính đáng",
+   "right": "Tình thế cấp thiết",
+   "cases": [
+    {
+     "text": "Chống trả lại chính người đang tấn công mình",
+     "answer": "left"
+    },
+    {
+     "text": "Phá cửa nhà hàng xóm để dập lửa cứu người",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 22, 23."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Phòng vệ chính đáng là hành vi chống trả lại một cách {{cần thiết}} người đang có hành vi xâm phạm các lợi ích chính đáng. Phòng vệ chính đáng {{không phải}} là tội phạm.",
+   "bank_extra": [
+    "tối đa",
+    "luôn luôn"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Vượt quá giới hạn phòng vệ chính đáng là hành vi chống trả {{rõ ràng}} quá mức cần thiết.",
+   "bank_extra": [
+    "có thể",
+    "hơi"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người có quyền phòng vệ chính đáng để bảo vệ lợi ích của người khác, không chỉ của mình.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 22: bảo vệ quyền, lợi ích chính đáng của mình, của người khác, của Nhà nước, cơ quan, tổ chức."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày điều kiện phòng vệ chính đáng và vượt quá giới hạn phòng vệ chính đáng.",
+   "model": "Phòng vệ chính đáng là chống trả cần thiết người đang có hành vi xâm phạm lợi ích chính đáng của mình, người khác, Nhà nước, cơ quan, tổ chức; không phải tội phạm; vượt quá là chống trả rõ ràng quá mức cần thiết, phải chịu TNHS (Điều 22).",
+   "keywords": [
+    "đang xâm phạm",
+    "cần thiết",
+    "không phải tội phạm",
+    "quá mức cần thiết"
+   ]
+  }
+ ]
+}
