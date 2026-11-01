@@ -1,0 +1,115 @@
+{
+ "id": "thiet-hai-tinh-mang",
+ "subject": "dan-su-2",
+ "chapter": "v12",
+ "term": "Thiệt hại do tính mạng bị xâm phạm",
+ "definition": "Thiệt hại do tính mạng bị xâm phạm bao gồm: a) Thiệt hại do sức khỏe bị xâm phạm theo quy định tại Điều 590 của Bộ luật này; b) Chi phí hợp lý cho việc mai táng; c) Tiền cấp dưỡng cho những người mà người bị thiệt hại có nghĩa vụ cấp dưỡng; d) Thiệt hại khác do luật quy định.",
+ "plain": "Thiệt hại VẬT CHẤT: chi phí cứu chữa trước khi chết (Điều 590); MAI TÁNG hợp lý; CẤP DƯỠNG cho người mà người chết có nghĩa vụ cấp dưỡng; thiệt hại khác. TỔN THẤT TINH THẦN (khoản 2): cho người thân thích HÀNG THỪA KẾ THỨ NHẤT (không có thì người trực tiếp nuôi dưỡng, được nuôi dưỡng); mức do thỏa thuận, không thỏa thuận được thì TỐI ĐA 100 LẦN MỨC LƯƠNG CƠ SỞ cho một người bị xâm phạm tính mạng.",
+ "example": "Tài xế gây tai nạn làm chết người: phải bồi thường viện phí cấp cứu, chi phí mai táng, tiền cấp dưỡng cho con nhỏ của nạn nhân, và khoản bù đắp tinh thần cho vợ, con, cha mẹ nạn nhân.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 591 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nguyen-tac-boi-thuong",
+  "can-cu-boi-thuong-thiet-hai"
+ ],
+ "keywords": [
+  "chi phí mai táng",
+  "tiền cấp dưỡng",
+  "tổn thất tinh thần",
+  "100 lần mức lương cơ sở"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Mức bù đắp tổn thất tinh thần tối đa khi không thỏa thuận được cho một người có tính mạng bị xâm phạm là bao nhiêu?",
+   "options": [
+    "Không quá 100 lần mức lương cơ sở",
+    "Không quá 50 lần",
+    "Không quá 10 lần",
+    "Không giới hạn"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 591.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 591 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khoản bù đắp tổn thất tinh thần trước hết dành cho ai?",
+   "options": [
+    "Người thân thích thuộc hàng thừa kế thứ nhất của người bị thiệt hại",
+    "Bạn bè của người bị thiệt hại",
+    "Nhà nước",
+    "Người gây thiệt hại"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 591.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 591 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thiệt hại vật chất (khoản 1)",
+   "right": "Tổn thất tinh thần (khoản 2)",
+   "cases": [
+    {
+     "text": "Chi phí mai táng hợp lý",
+     "answer": "left"
+    },
+    {
+     "text": "Khoản tiền bù đắp cho vợ, con nạn nhân",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 591."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thiệt hại do tính mạng bị xâm phạm gồm chi phí hợp lý cho việc {{mai táng}}; tiền {{cấp dưỡng}} cho những người mà người bị thiệt hại có nghĩa vụ cấp dưỡng.",
+   "bank_extra": [
+    "du lịch",
+    "thưởng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Mức bồi thường tổn thất tinh thần tối đa không quá một trăm lần mức {{lương cơ sở}}.",
+   "bank_extra": [
+    "lương tối thiểu vùng",
+    "thu nhập trung bình"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tổn thất tinh thần khi tính mạng bị xâm phạm được chi trả cho bất kỳ ai quen biết người bị thiệt hại.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 591: người thân thích hàng thừa kế thứ nhất; không có thì người trực tiếp nuôi dưỡng, được nuôi dưỡng."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày các khoản thiệt hại do tính mạng bị xâm phạm.",
+   "model": "Thiệt hại do sức khỏe bị xâm phạm (Điều 590), chi phí mai táng hợp lý, tiền cấp dưỡng, thiệt hại khác (khoản 1 Điều 591); khoản bù đắp tổn thất tinh thần cho hàng thừa kế thứ nhất, tối đa 100 lần mức lương cơ sở nếu không thỏa thuận được (khoản 2).",
+   "keywords": [
+    "mai táng",
+    "cấp dưỡng",
+    "tinh thần",
+    "100 lần"
+   ]
+  }
+ ]
+}

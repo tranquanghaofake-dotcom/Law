@@ -1,0 +1,115 @@
+{
+ "id": "hop-dong",
+ "subject": "dan-su-2",
+ "chapter": "v5",
+ "term": "Hợp đồng",
+ "definition": "Hợp đồng là sự thỏa thuận giữa các bên về việc xác lập, thay đổi hoặc chấm dứt quyền, nghĩa vụ dân sự.",
+ "plain": "Bản chất: SỰ THỎA THUẬN (thống nhất ý chí) giữa các bên. Hợp đồng là một loại giao dịch dân sự (Điều 116), nên phải đáp ứng điều kiện có hiệu lực (Điều 117). Phân loại (Điều 402): song vụ – đơn vụ; chính – phụ; vì lợi ích người thứ ba; có điều kiện. Giao kết qua ĐỀ NGHỊ và CHẤP NHẬN đề nghị (Điều 386, 393). Thời điểm giao kết: khi bên đề nghị nhận được chấp nhận (Điều 400).",
+ "example": "Hai người thỏa thuận bán chiếc xe máy với giá 15 triệu: hợp đồng mua bán (song vụ). Hợp đồng tặng cho không điều kiện: đơn vụ.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 385 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hop-dong-theo-mau",
+  "phat-vi-pham",
+  "mua-ban-tai-san"
+ ],
+ "keywords": [
+  "sự thỏa thuận",
+  "xác lập, thay đổi, chấm dứt",
+  "song vụ, đơn vụ"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hợp đồng là gì theo Điều 385?",
+   "options": [
+    "Sự thỏa thuận giữa các bên về việc xác lập, thay đổi hoặc chấm dứt quyền, nghĩa vụ dân sự",
+    "Ý chí đơn phương của một bên",
+    "Quyết định của cơ quan nhà nước",
+    "Văn bản có công chứng"
+   ],
+   "answer": 0,
+   "explain": "Điều 385.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 385 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hợp đồng mà mỗi bên đều có nghĩa vụ đối với nhau gọi là gì?",
+   "options": [
+    "Hợp đồng song vụ",
+    "Hợp đồng đơn vụ",
+    "Hợp đồng phụ",
+    "Hợp đồng có điều kiện"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 402.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 402 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hợp đồng song vụ",
+   "right": "Hợp đồng đơn vụ",
+   "cases": [
+    {
+     "text": "Mua bán tài sản",
+     "answer": "left"
+    },
+    {
+     "text": "Tặng cho tài sản không điều kiện",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 402."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hợp đồng là sự {{thỏa thuận}} giữa các bên về việc xác lập, thay đổi hoặc {{chấm dứt}} quyền, nghĩa vụ dân sự.",
+   "bank_extra": [
+    "mệnh lệnh",
+    "tạm hoãn"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hợp đồng là sự thỏa thuận về quyền, nghĩa vụ {{dân sự}}.",
+   "bank_extra": [
+    "hành chính",
+    "hình sự"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hợp đồng chỉ có hiệu lực khi được lập thành văn bản.",
+   "answer": false,
+   "explain": "Sai. Hợp đồng là sự thỏa thuận; hình thức chỉ bắt buộc khi luật quy định (khoản 2 Điều 117, Điều 119)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm hợp đồng và một số loại hợp đồng chủ yếu.",
+   "model": "Hợp đồng là sự thỏa thuận giữa các bên về xác lập, thay đổi, chấm dứt quyền, nghĩa vụ dân sự (Điều 385); gồm song vụ, đơn vụ, chính, phụ, vì lợi ích người thứ ba, có điều kiện (Điều 402).",
+   "keywords": [
+    "thỏa thuận",
+    "xác lập",
+    "song vụ",
+    "đơn vụ"
+   ]
+  }
+ ]
+}

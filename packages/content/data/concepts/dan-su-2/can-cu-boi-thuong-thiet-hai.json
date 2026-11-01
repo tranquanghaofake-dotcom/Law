@@ -1,0 +1,116 @@
+{
+ "id": "can-cu-boi-thuong-thiet-hai",
+ "subject": "dan-su-2",
+ "chapter": "v11",
+ "term": "Căn cứ phát sinh trách nhiệm bồi thường thiệt hại ngoài hợp đồng",
+ "definition": "Người nào có hành vi xâm phạm tính mạng, sức khỏe, danh dự, nhân phẩm, uy tín, tài sản, quyền, lợi ích hợp pháp khác của người khác mà gây thiệt hại thì phải bồi thường, trừ trường hợp Bộ luật này, luật khác có liên quan quy định khác. Người gây thiệt hại không phải chịu trách nhiệm bồi thường thiệt hại trong trường hợp thiệt hại phát sinh là do sự kiện bất khả kháng hoặc hoàn toàn do lỗi của bên bị thiệt hại, trừ trường hợp có thỏa thuận khác hoặc luật có quy định khác. Trường hợp tài sản gây thiệt hại thì chủ sở hữu, người chiếm hữu tài sản phải chịu trách nhiệm bồi thường thiệt hại, trừ trường hợp thiệt hại phát sinh theo quy định tại khoản 2 Điều này.",
+ "plain": "Điểm mới BLDS 2015: KHÔNG CÒN yêu cầu chứng minh LỖI là điều kiện chung. Các yếu tố: (1) có HÀNH VI XÂM PHẠM; (2) có THIỆT HẠI thực tế; (3) MỐI QUAN HỆ NHÂN QUẢ. Miễn trách nhiệm: BẤT KHẢ KHÁNG hoặc HOÀN TOÀN DO LỖI của bên bị thiệt hại. Tài sản gây thiệt hại: CHỦ SỞ HỮU, NGƯỜI CHIẾM HỮU bồi thường. Lỗi vẫn quan trọng ở mức giảm bồi thường (khoản 2 Điều 585), hỗn hợp lỗi (khoản 4).",
+ "example": "Cây trong vườn nhà A đổ do mục gốc làm hỏng ô tô của B đỗ bên đường: A (chủ sở hữu cây) phải bồi thường (khoản 3 Điều 584, Điều 604).",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 584 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nguyen-tac-boi-thuong",
+  "trach-nhiem-do-vi-pham-nghia-vu",
+  "nguon-nguy-hiem-cao-do"
+ ],
+ "keywords": [
+  "hành vi xâm phạm",
+  "gây thiệt hại",
+  "bất khả kháng",
+  "hoàn toàn do lỗi bên bị thiệt hại"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người gây thiệt hại không phải bồi thường trong trường hợp nào theo khoản 2 Điều 584?",
+   "options": [
+    "Thiệt hại do sự kiện bất khả kháng hoặc hoàn toàn do lỗi của bên bị thiệt hại",
+    "Người gây thiệt hại nghèo",
+    "Thiệt hại dưới 1 triệu",
+    "Người gây thiệt hại không cố ý"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 584.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 584 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tài sản gây thiệt hại thì ai chịu trách nhiệm bồi thường?",
+   "options": [
+    "Chủ sở hữu, người chiếm hữu tài sản",
+    "Nhà nước",
+    "Người bị thiệt hại tự chịu",
+    "Người bán tài sản"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 584.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 584 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Phải bồi thường",
+   "right": "Không phải bồi thường",
+   "cases": [
+    {
+     "text": "Va chạm xe do đi sai làn gây thương tích",
+     "answer": "left"
+    },
+    {
+     "text": "Thiệt hại hoàn toàn do người bị hại tự lao vào",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 584."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người nào có hành vi xâm phạm tính mạng, sức khỏe, danh dự, nhân phẩm, uy tín, tài sản của người khác mà gây {{thiệt hại}} thì phải {{bồi thường}}.",
+   "bank_extra": [
+    "tranh chấp",
+    "xin lỗi"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người gây thiệt hại không phải chịu trách nhiệm nếu thiệt hại do sự kiện {{bất khả kháng}}.",
+   "bank_extra": [
+    "bất ngờ",
+    "ngẫu nhiên"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo BLDS 2015, người bị thiệt hại luôn phải chứng minh lỗi của người gây thiệt hại mới được bồi thường.",
+   "answer": false,
+   "explain": "Sai. Điều 584 không đặt lỗi là điều kiện chung; chỉ loại trừ bất khả kháng, lỗi hoàn toàn của bên bị thiệt hại."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày căn cứ phát sinh trách nhiệm bồi thường thiệt hại ngoài hợp đồng.",
+   "model": "Có hành vi xâm phạm tính mạng, sức khỏe, danh dự, nhân phẩm, uy tín, tài sản, quyền lợi hợp pháp gây thiệt hại thì phải bồi thường (khoản 1); không bồi thường khi bất khả kháng hoặc hoàn toàn do lỗi bên bị thiệt hại (khoản 2); tài sản gây thiệt hại thì chủ sở hữu, người chiếm hữu bồi thường (khoản 3 Điều 584).",
+   "keywords": [
+    "hành vi xâm phạm",
+    "thiệt hại",
+    "bất khả kháng",
+    "chủ sở hữu"
+   ]
+  }
+ ]
+}

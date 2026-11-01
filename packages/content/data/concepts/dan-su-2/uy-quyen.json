@@ -1,0 +1,114 @@
+{
+ "id": "uy-quyen",
+ "subject": "dan-su-2",
+ "chapter": "v9",
+ "term": "Hợp đồng ủy quyền",
+ "definition": "Hợp đồng ủy quyền là sự thỏa thuận giữa các bên, theo đó bên được ủy quyền có nghĩa vụ thực hiện công việc nhân danh bên ủy quyền, bên ủy quyền chỉ phải trả thù lao nếu có thỏa thuận hoặc pháp luật có quy định.",
+ "plain": "Đặc trưng: bên được ủy quyền hành động NHÂN DANH bên ủy quyền (cơ sở của đại diện theo ủy quyền, Điều 138); có thể CÓ hoặc KHÔNG CÓ THÙ LAO. Thời hạn: theo thỏa thuận, luật; không có thì 01 NĂM kể từ ngày xác lập (Điều 563). Đơn phương chấm dứt (Điều 569): có thù lao thì phải bồi thường; không thù lao thì có thể chấm dứt bất cứ lúc nào nhưng phải báo trước hợp lý.",
+ "example": "Anh A ủy quyền cho luật sư B nhân danh A tham gia tố tụng, có trả thù lao: hợp đồng ủy quyền có thù lao.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 562 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "dich-vu",
+  "hop-dong"
+ ],
+ "keywords": [
+  "nhân danh bên ủy quyền",
+  "thù lao nếu có thỏa thuận",
+  "thời hạn 01 năm nếu không thỏa thuận"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trong hợp đồng ủy quyền, bên được ủy quyền thực hiện công việc nhân danh ai?",
+   "options": [
+    "Bên ủy quyền",
+    "Chính mình",
+    "Người thứ ba",
+    "Nhà nước"
+   ],
+   "answer": 0,
+   "explain": "Điều 562.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 562 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Không có thỏa thuận và luật không quy định thì hợp đồng ủy quyền có hiệu lực bao lâu?",
+   "options": [
+    "01 năm kể từ ngày xác lập việc ủy quyền",
+    "06 tháng",
+    "05 năm",
+    "Vô thời hạn"
+   ],
+   "answer": 0,
+   "explain": "Điều 563.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 563 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hợp đồng ủy quyền",
+   "right": "Hợp đồng dịch vụ",
+   "cases": [
+    {
+     "text": "Bên làm nhân danh bên kia giao dịch với người thứ ba",
+     "answer": "left"
+    },
+    {
+     "text": "Bên làm thực hiện công việc nhân danh chính mình",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 513, 562."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bên được ủy quyền có nghĩa vụ thực hiện công việc {{nhân danh}} bên ủy quyền, bên ủy quyền chỉ phải trả {{thù lao}} nếu có thỏa thuận hoặc pháp luật có quy định.",
+   "bank_extra": [
+    "thay mặt Nhà nước",
+    "tiền phạt"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hợp đồng ủy quyền là sự {{thỏa thuận}} giữa các bên.",
+   "bank_extra": [
+    "ý chí đơn phương",
+    "quyết định"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hợp đồng ủy quyền luôn phải có thù lao.",
+   "answer": false,
+   "explain": "Sai. Điều 562: chỉ trả thù lao nếu có thỏa thuận hoặc pháp luật quy định."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm hợp đồng ủy quyền.",
+   "model": "Là thỏa thuận theo đó bên được ủy quyền thực hiện công việc nhân danh bên ủy quyền, bên ủy quyền chỉ trả thù lao nếu có thỏa thuận hoặc pháp luật quy định (Điều 562); thời hạn theo thỏa thuận, luật, mặc định 01 năm (Điều 563).",
+   "keywords": [
+    "nhân danh",
+    "thù lao",
+    "thỏa thuận",
+    "01 năm"
+   ]
+  }
+ ]
+}

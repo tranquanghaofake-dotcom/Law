@@ -1,0 +1,115 @@
+{
+ "id": "nang-luc-chiu-trach-nhiem-boi-thuong",
+ "subject": "dan-su-2",
+ "chapter": "v12",
+ "term": "Năng lực chịu trách nhiệm bồi thường thiệt hại của cá nhân",
+ "definition": "Người từ đủ mười tám tuổi trở lên gây thiệt hại thì phải tự bồi thường. Người chưa đủ mười lăm tuổi gây thiệt hại mà còn cha, mẹ thì cha, mẹ phải bồi thường toàn bộ thiệt hại; nếu tài sản của cha, mẹ không đủ để bồi thường mà con chưa thành niên gây thiệt hại có tài sản riêng thì lấy tài sản đó để bồi thường phần còn thiếu, trừ trường hợp quy định tại Điều 599 của Bộ luật này. Người từ đủ mười lăm tuổi đến chưa đủ mười tám tuổi gây thiệt hại thì phải bồi thường bằng tài sản của mình; nếu không đủ tài sản để bồi thường thì cha, mẹ phải bồi thường phần còn thiếu bằng tài sản của mình.",
+ "plain": "Ba mốc: TỪ ĐỦ 18: tự bồi thường; DƯỚI 15: CHA MẸ bồi thường toàn bộ, thiếu thì lấy tài sản riêng của con; TỪ ĐỦ 15 ĐẾN DƯỚI 18: CON bồi thường bằng tài sản của mình trước, thiếu thì CHA MẸ bù. Người được giám hộ (khoản 3): người giám hộ dùng tài sản của người được giám hộ; không đủ thì người giám hộ bồi thường, trừ khi chứng minh không có lỗi. Ngoại lệ Điều 599: gây thiệt hại khi đang ở trường học, bệnh viện… do nơi đó quản lý.",
+ "example": "Em A 16 tuổi đi xe đạp điện va quệt làm hỏng xe máy của người khác: A bồi thường bằng tài sản riêng (nếu có), không đủ thì cha mẹ bù phần còn thiếu.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 586 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nguyen-tac-boi-thuong",
+  "can-cu-boi-thuong-thiet-hai"
+ ],
+ "keywords": [
+  "đủ 18 tự bồi thường",
+  "dưới 15 cha mẹ bồi thường toàn bộ",
+  "15 đến dưới 18 tài sản của mình trước",
+  "cha mẹ bù phần thiếu"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người chưa đủ 15 tuổi gây thiệt hại mà còn cha mẹ thì ai bồi thường trước?",
+   "options": [
+    "Cha, mẹ bồi thường toàn bộ",
+    "Chính người đó",
+    "Nhà trường",
+    "Nhà nước"
+   ],
+   "answer": 0,
+   "explain": "Đoạn 1 khoản 2 Điều 586.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 586 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người từ đủ 15 đến dưới 18 tuổi gây thiệt hại bồi thường thế nào?",
+   "options": [
+    "Bằng tài sản của mình; không đủ thì cha mẹ bù phần còn thiếu",
+    "Cha mẹ bồi thường toàn bộ ngay",
+    "Không phải bồi thường",
+    "Nhà nước bồi thường"
+   ],
+   "answer": 0,
+   "explain": "Đoạn 2 khoản 2 Điều 586.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 586 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Cha mẹ bồi thường trước",
+   "right": "Con bồi thường trước bằng tài sản riêng",
+   "cases": [
+    {
+     "text": "Con 12 tuổi làm vỡ kính nhà hàng xóm",
+     "answer": "left"
+    },
+    {
+     "text": "Con 17 tuổi có tài sản riêng gây tai nạn",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 586."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người chưa đủ {{mười lăm}} tuổi gây thiệt hại mà còn cha, mẹ thì cha, mẹ phải bồi thường {{toàn bộ}} thiệt hại.",
+   "bank_extra": [
+    "mười tám",
+    "một nửa"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người từ đủ {{mười tám}} tuổi trở lên gây thiệt hại thì phải tự bồi thường.",
+   "bank_extra": [
+    "mười sáu",
+    "hai mươi"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người 16 tuổi gây thiệt hại thì cha mẹ luôn phải bồi thường toàn bộ.",
+   "answer": false,
+   "explain": "Sai. Đoạn 2 khoản 2 Điều 586: con bồi thường bằng tài sản của mình trước, cha mẹ bù phần thiếu."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày năng lực chịu trách nhiệm bồi thường thiệt hại của cá nhân.",
+   "model": "Từ đủ 18 tuổi tự bồi thường; dưới 15 tuổi cha mẹ bồi thường toàn bộ, thiếu thì lấy tài sản riêng của con; từ đủ 15 đến dưới 18 bồi thường bằng tài sản của mình, thiếu thì cha mẹ bù; người giám hộ dùng tài sản của người được giám hộ (Điều 586).",
+   "keywords": [
+    "18 tuổi",
+    "15 tuổi",
+    "cha mẹ",
+    "giám hộ"
+   ]
+  }
+ ]
+}

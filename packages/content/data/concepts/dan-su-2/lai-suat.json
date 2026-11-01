@@ -1,0 +1,115 @@
+{
+ "id": "lai-suat",
+ "subject": "dan-su-2",
+ "chapter": "v7",
+ "term": "Lãi suất trong hợp đồng vay",
+ "definition": "Lãi suất vay do các bên thỏa thuận. Trường hợp các bên có thỏa thuận về lãi suất thì lãi suất theo thỏa thuận không được vượt quá 20%/năm của khoản tiền vay, trừ trường hợp luật khác có liên quan quy định khác. (…) Trường hợp lãi suất theo thỏa thuận vượt quá lãi suất giới hạn được quy định tại khoản này thì mức lãi suất vượt quá không có hiệu lực. Trường hợp các bên có thỏa thuận về việc trả lãi, nhưng không xác định rõ lãi suất và có tranh chấp về lãi suất thì lãi suất được xác định bằng 50% mức lãi suất giới hạn quy định tại khoản 1 Điều này tại thời điểm trả nợ.",
+ "plain": "Trần lãi suất: 20%/NĂM (trừ luật khác, như Luật Các tổ chức tín dụng cho vay của tổ chức tín dụng). Vượt trần → PHẦN VƯỢT không có hiệu lực (không vô hiệu cả hợp đồng). Có thỏa thuận trả lãi nhưng không rõ mức → 50% trần = 10%/năm tại thời điểm trả nợ. Cho vay lãi nặng có thể bị truy cứu tội cho vay lãi nặng trong giao dịch dân sự (Điều 201 BLHS) khi lãi gấp 05 lần mức cao nhất trong BLDS trở lên và thu lợi bất chính đáng kể.",
+ "example": "Cho vay 100 triệu lãi 5%/tháng (60%/năm): phần lãi vượt 20%/năm không có hiệu lực; người vay chỉ phải trả tối đa 20%/năm.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 468 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "vay-tai-san",
+  "trach-nhiem-do-vi-pham-nghia-vu"
+ ],
+ "keywords": [
+  "20%/năm",
+  "phần vượt không có hiệu lực",
+  "50% mức giới hạn",
+  "trừ luật khác"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Lãi suất thỏa thuận trong hợp đồng vay dân sự không được vượt quá bao nhiêu?",
+   "options": [
+    "20%/năm của khoản tiền vay",
+    "10%/năm",
+    "150% lãi suất cơ bản",
+    "Không giới hạn"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 468.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 468 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Có thỏa thuận trả lãi nhưng không xác định rõ lãi suất và có tranh chấp thì lãi suất là bao nhiêu?",
+   "options": [
+    "50% mức lãi suất giới hạn tại thời điểm trả nợ",
+    "20%/năm",
+    "0%",
+    "Lãi suất ngân hàng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 468.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 468 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Có hiệu lực",
+   "right": "Không có hiệu lực",
+   "cases": [
+    {
+     "text": "Thỏa thuận lãi 15%/năm",
+     "answer": "left"
+    },
+    {
+     "text": "Phần lãi vượt 20%/năm",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 468."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Lãi suất theo thỏa thuận không được vượt quá {{20%}}/năm của khoản tiền vay; mức lãi suất vượt quá không có {{hiệu lực}}.",
+   "bank_extra": [
+    "10%",
+    "giá trị pháp lý ưu tiên"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Không xác định rõ lãi suất thì lãi suất được xác định bằng {{50%}} mức lãi suất giới hạn.",
+   "bank_extra": [
+    "100%",
+    "150%"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thỏa thuận lãi suất vượt 20%/năm làm toàn bộ hợp đồng vay vô hiệu.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 468: chỉ mức lãi suất vượt quá không có hiệu lực."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quy định về lãi suất trong hợp đồng vay theo BLDS 2015.",
+   "model": "Lãi suất do các bên thỏa thuận, không vượt 20%/năm trừ luật khác quy định; phần vượt không có hiệu lực (khoản 1 Điều 468); thỏa thuận trả lãi nhưng không rõ mức thì bằng 50% mức giới hạn tại thời điểm trả nợ (khoản 2).",
+   "keywords": [
+    "thỏa thuận",
+    "20%/năm",
+    "vượt quá",
+    "50%"
+   ]
+  }
+ ]
+}

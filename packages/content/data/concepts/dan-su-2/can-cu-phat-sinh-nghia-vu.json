@@ -1,0 +1,120 @@
+{
+ "id": "can-cu-phat-sinh-nghia-vu",
+ "subject": "dan-su-2",
+ "chapter": "v1",
+ "term": "Căn cứ phát sinh nghĩa vụ",
+ "definition": "Nghĩa vụ phát sinh từ căn cứ sau đây: 1. Hợp đồng. 2. Hành vi pháp lý đơn phương. 3. Thực hiện công việc không có ủy quyền. 4. Chiếm hữu, sử dụng tài sản hoặc được lợi về tài sản không có căn cứ pháp luật. 5. Gây thiệt hại do hành vi trái pháp luật. 6. Căn cứ khác do pháp luật quy định.",
+ "plain": "Sáu căn cứ: HỢP ĐỒNG (phổ biến nhất); HÀNH VI PHÁP LÝ ĐƠN PHƯƠNG (hứa thưởng, thi có giải); THỰC HIỆN CÔNG VIỆC KHÔNG CÓ ỦY QUYỀN; CHIẾM HỮU, SỬ DỤNG, ĐƯỢC LỢI KHÔNG CÓ CĂN CỨ PHÁP LUẬT; GÂY THIỆT HẠI do hành vi trái pháp luật (bồi thường ngoài hợp đồng); CĂN CỨ KHÁC do luật định. Ba căn cứ 3–5 là \"nghĩa vụ ngoài hợp đồng\" (vấn đề 10–13).",
+ "example": "Chuyển khoản nhầm 5 triệu vào tài khoản người lạ: người nhận có nghĩa vụ hoàn trả vì được lợi về tài sản không có căn cứ pháp luật (khoản 4 Điều 275, Điều 579).",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 275 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nghia-vu",
+  "nghia-vu-hoan-tra",
+  "can-cu-boi-thuong-thiet-hai"
+ ],
+ "keywords": [
+  "hợp đồng",
+  "hành vi pháp lý đơn phương",
+  "được lợi không có căn cứ pháp luật",
+  "gây thiệt hại trái pháp luật"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người nhận được tiền chuyển khoản nhầm phải trả lại dựa trên căn cứ phát sinh nghĩa vụ nào?",
+   "options": [
+    "Được lợi về tài sản không có căn cứ pháp luật",
+    "Hợp đồng",
+    "Hành vi pháp lý đơn phương",
+    "Thực hiện công việc không có ủy quyền"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 275.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 275 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hứa thưởng cho người tìm được đồ thất lạc làm phát sinh nghĩa vụ từ căn cứ nào?",
+   "options": [
+    "Hành vi pháp lý đơn phương",
+    "Hợp đồng",
+    "Gây thiệt hại",
+    "Chiếm hữu không có căn cứ"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 275; Điều 570.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 275 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Nghĩa vụ theo hợp đồng",
+   "right": "Nghĩa vụ ngoài hợp đồng",
+   "cases": [
+    {
+     "text": "Trả tiền thuê nhà theo thỏa thuận",
+     "answer": "left"
+    },
+    {
+     "text": "Bồi thường do gây tai nạn",
+     "answer": "right"
+    },
+    {
+     "text": "Hoàn trả tài sản nhận nhầm",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 275."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nghĩa vụ phát sinh từ hợp đồng, {{hành vi pháp lý đơn phương}}, thực hiện công việc không có ủy quyền, chiếm hữu, sử dụng tài sản hoặc được lợi về tài sản không có căn cứ pháp luật, gây thiệt hại do hành vi {{trái pháp luật}}.",
+   "bank_extra": [
+    "quyết định hành chính",
+    "hợp pháp"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nghĩa vụ còn có thể phát sinh từ căn cứ khác do {{pháp luật}} quy định.",
+   "bank_extra": [
+    "tập quán",
+    "đạo đức"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi nghĩa vụ dân sự đều phát sinh từ hợp đồng.",
+   "answer": false,
+   "explain": "Sai. Điều 275 có sáu căn cứ."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các căn cứ phát sinh nghĩa vụ.",
+   "model": "Hợp đồng; hành vi pháp lý đơn phương; thực hiện công việc không có ủy quyền; chiếm hữu, sử dụng, được lợi về tài sản không có căn cứ pháp luật; gây thiệt hại do hành vi trái pháp luật; căn cứ khác do pháp luật quy định (Điều 275).",
+   "keywords": [
+    "hợp đồng",
+    "đơn phương",
+    "không có căn cứ",
+    "gây thiệt hại"
+   ]
+  }
+ ]
+}

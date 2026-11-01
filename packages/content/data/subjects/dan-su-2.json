@@ -1,0 +1,189 @@
+{
+  "id": "dan-su-2",
+  "title": "Luật Dân sự 2",
+  "short": "Dân sự 2",
+  "chapters": [
+    {
+      "id": "v1",
+      "title": "Vấn đề 1. Khái niệm chung về nghĩa vụ",
+      "lessons": [
+        {
+          "id": "dsb1",
+          "title": "Khái niệm chung về nghĩa vụ",
+          "concepts": [
+            "nghia-vu",
+            "can-cu-phat-sinh-nghia-vu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v2",
+      "title": "Vấn đề 2. Xác lập, thực hiện, chấm dứt nghĩa vụ và trách nhiệm dân sự",
+      "lessons": [
+        {
+          "id": "dsb2",
+          "title": "Xác lập, thực hiện, chấm dứt nghĩa vụ và trách nhiệm dân sự",
+          "concepts": [
+            "trach-nhiem-do-vi-pham-nghia-vu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v3",
+      "title": "Vấn đề 3. Quy định chung về bảo đảm thực hiện nghĩa vụ",
+      "lessons": [
+        {
+          "id": "dsb3",
+          "title": "Quy định chung về bảo đảm thực hiện nghĩa vụ",
+          "concepts": [
+            "bien-phap-bao-dam"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v4",
+      "title": "Vấn đề 4. Các biện pháp bảo đảm thực hiện nghĩa vụ",
+      "lessons": [
+        {
+          "id": "dsb4",
+          "title": "Các biện pháp bảo đảm thực hiện nghĩa vụ",
+          "concepts": [
+            "cam-co",
+            "the-chap",
+            "dat-coc",
+            "bao-lanh"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v5",
+      "title": "Vấn đề 5. Quy định chung về hợp đồng",
+      "lessons": [
+        {
+          "id": "dsb5",
+          "title": "Quy định chung về hợp đồng",
+          "concepts": [
+            "hop-dong",
+            "hop-dong-theo-mau",
+            "phat-vi-pham"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v6",
+      "title": "Vấn đề 6. Hợp đồng chuyển quyền sở hữu tài sản",
+      "lessons": [
+        {
+          "id": "dsb6",
+          "title": "Hợp đồng chuyển quyền sở hữu tài sản",
+          "concepts": [
+            "mua-ban-tai-san",
+            "tang-cho"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v7",
+      "title": "Vấn đề 7. Hợp đồng chuyển quyền sở hữu tài sản (tiếp)",
+      "lessons": [
+        {
+          "id": "dsb7",
+          "title": "Hợp đồng chuyển quyền sở hữu tài sản (tiếp)",
+          "concepts": [
+            "vay-tai-san",
+            "lai-suat"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v8",
+      "title": "Vấn đề 8. Hợp đồng chuyển quyền sử dụng tài sản",
+      "lessons": [
+        {
+          "id": "dsb8",
+          "title": "Hợp đồng chuyển quyền sử dụng tài sản",
+          "concepts": [
+            "thue-tai-san"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v9",
+      "title": "Vấn đề 9. Hợp đồng có đối tượng là công việc",
+      "lessons": [
+        {
+          "id": "dsb9",
+          "title": "Hợp đồng có đối tượng là công việc",
+          "concepts": [
+            "dich-vu",
+            "uy-quyen"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v10",
+      "title": "Vấn đề 10. Nghĩa vụ ngoài hợp đồng",
+      "lessons": [
+        {
+          "id": "dsb10",
+          "title": "Nghĩa vụ ngoài hợp đồng",
+          "concepts": [
+            "thuc-hien-cong-viec-khong-uy-quyen",
+            "nghia-vu-hoan-tra"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v11",
+      "title": "Vấn đề 11. Quy định chung về bồi thường thiệt hại ngoài hợp đồng",
+      "lessons": [
+        {
+          "id": "dsb11",
+          "title": "Quy định chung về bồi thường thiệt hại ngoài hợp đồng",
+          "concepts": [
+            "can-cu-boi-thuong-thiet-hai",
+            "nguyen-tac-boi-thuong"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v12",
+      "title": "Vấn đề 12. Bồi thường thiệt hại do hành vi của con người gây ra",
+      "lessons": [
+        {
+          "id": "dsb12",
+          "title": "Bồi thường thiệt hại do hành vi của con người gây ra",
+          "concepts": [
+            "nang-luc-chiu-trach-nhiem-boi-thuong",
+            "thiet-hai-tinh-mang"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v13",
+      "title": "Vấn đề 13. Bồi thường thiệt hại do tài sản gây ra",
+      "lessons": [
+        {
+          "id": "dsb13",
+          "title": "Bồi thường thiệt hại do tài sản gây ra",
+          "concepts": [
+            "nguon-nguy-hiem-cao-do",
+            "suc-vat-gay-thiet-hai"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+ "id": "suc-vat-gay-thiet-hai",
+ "subject": "dan-su-2",
+ "chapter": "v13",
+ "term": "Bồi thường thiệt hại do súc vật gây ra",
+ "definition": "Chủ sở hữu súc vật phải bồi thường thiệt hại do súc vật gây ra cho người khác. Người chiếm hữu, sử dụng súc vật phải bồi thường thiệt hại trong thời gian chiếm hữu, sử dụng súc vật, trừ trường hợp có thỏa thuận khác. Trường hợp người thứ ba hoàn toàn có lỗi làm cho súc vật gây thiệt hại cho người khác thì người thứ ba phải bồi thường thiệt hại; nếu người thứ ba và chủ sở hữu cùng có lỗi thì phải liên đới bồi thường thiệt hại.",
+ "plain": "Chủ thể bồi thường: CHỦ SỞ HỮU; NGƯỜI CHIẾM HỮU, SỬ DỤNG trong thời gian chiếm hữu; NGƯỜI THỨ BA hoàn toàn có lỗi; LIÊN ĐỚI nếu cùng có lỗi. Bị chiếm hữu trái luật: người chiếm hữu trái luật bồi thường (khoản 3). Súc vật THẢ RÔNG theo tập quán: bồi thường theo tập quán nhưng không trái pháp luật, đạo đức (khoản 4). Phân biệt THÚ DỮ (nguồn nguy hiểm cao độ, Điều 601).",
+ "example": "Chó nhà A cắn người đi đường: A (chủ sở hữu) phải bồi thường. Nếu B cố tình trêu chọc làm chó cắn C thì B bồi thường; A cũng có lỗi (không xích chó) thì liên đới.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 603 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nguon-nguy-hiem-cao-do",
+  "can-cu-boi-thuong-thiet-hai"
+ ],
+ "keywords": [
+  "chủ sở hữu súc vật",
+  "người chiếm hữu, sử dụng",
+  "người thứ ba hoàn toàn có lỗi",
+  "liên đới"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người thứ ba hoàn toàn có lỗi làm súc vật gây thiệt hại cho người khác thì ai bồi thường?",
+   "options": [
+    "Người thứ ba",
+    "Chủ sở hữu súc vật",
+    "Người bị thiệt hại tự chịu",
+    "Nhà nước"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 603.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 603 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người thứ ba và chủ sở hữu cùng có lỗi làm súc vật gây thiệt hại thì sao?",
+   "options": [
+    "Liên đới bồi thường thiệt hại",
+    "Chỉ chủ sở hữu bồi thường",
+    "Chỉ người thứ ba bồi thường",
+    "Không ai bồi thường"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 603.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 603 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Chủ sở hữu bồi thường",
+   "right": "Người thứ ba bồi thường",
+   "cases": [
+    {
+     "text": "Chó nhà tự sổng xích cắn người",
+     "answer": "left"
+    },
+    {
+     "text": "Người lạ cố tình kích động con bò lao vào người khác, chủ không có lỗi",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 603."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chủ sở hữu {{súc vật}} phải bồi thường thiệt hại do súc vật gây ra; nếu người thứ ba và chủ sở hữu cùng có lỗi thì phải {{liên đới}} bồi thường.",
+   "bank_extra": [
+    "thú dữ",
+    "riêng rẽ"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người chiếm hữu, sử dụng súc vật phải bồi thường thiệt hại trong thời gian {{chiếm hữu, sử dụng}} súc vật.",
+   "bank_extra": [
+    "sở hữu",
+    "mua bán"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chủ sở hữu súc vật luôn phải bồi thường, kể cả khi người thứ ba hoàn toàn có lỗi.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 603: người thứ ba hoàn toàn có lỗi thì người thứ ba bồi thường."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày trách nhiệm bồi thường thiệt hại do súc vật gây ra.",
+   "model": "Chủ sở hữu bồi thường; người chiếm hữu, sử dụng bồi thường trong thời gian chiếm hữu (khoản 1); người thứ ba hoàn toàn có lỗi thì bồi thường, cùng có lỗi với chủ sở hữu thì liên đới (khoản 2); chiếm hữu trái luật; thả rông theo tập quán (Điều 603).",
+   "keywords": [
+    "chủ sở hữu",
+    "chiếm hữu",
+    "người thứ ba",
+    "liên đới"
+   ]
+  }
+ ]
+}

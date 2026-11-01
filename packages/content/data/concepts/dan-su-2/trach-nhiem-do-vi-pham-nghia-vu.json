@@ -1,0 +1,116 @@
+{
+ "id": "trach-nhiem-do-vi-pham-nghia-vu",
+ "subject": "dan-su-2",
+ "chapter": "v2",
+ "term": "Trách nhiệm dân sự do vi phạm nghĩa vụ",
+ "definition": "Bên có nghĩa vụ mà vi phạm nghĩa vụ thì phải chịu trách nhiệm dân sự đối với bên có quyền. Vi phạm nghĩa vụ là việc bên có nghĩa vụ không thực hiện nghĩa vụ đúng thời hạn, thực hiện không đầy đủ nghĩa vụ hoặc thực hiện không đúng nội dung của nghĩa vụ. Trường hợp bên có nghĩa vụ không thực hiện đúng nghĩa vụ do sự kiện bất khả kháng thì không phải chịu trách nhiệm dân sự, trừ trường hợp có thỏa thuận khác hoặc pháp luật có quy định khác.",
+ "plain": "Ba dạng vi phạm: KHÔNG ĐÚNG THỜI HẠN, KHÔNG ĐẦY ĐỦ, KHÔNG ĐÚNG NỘI DUNG. Miễn trách nhiệm: SỰ KIỆN BẤT KHẢ KHÁNG (khách quan, không thể lường trước, không thể khắc phục — khoản 1 Điều 156); HOÀN TOÀN DO LỖI CỦA BÊN CÓ QUYỀN (khoản 3). Hình thức trách nhiệm: buộc thực hiện đúng nghĩa vụ, bồi thường thiệt hại, phạt vi phạm (nếu thỏa thuận), trả lãi chậm trả (Điều 357).",
+ "example": "Bên bán giao hàng chậm 10 ngày vì lũ lụt bất ngờ phá hủy tuyến đường duy nhất: có thể được miễn trách nhiệm do sự kiện bất khả kháng.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 351 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nghia-vu",
+  "phat-vi-pham",
+  "nguyen-tac-boi-thuong"
+ ],
+ "keywords": [
+  "không đúng thời hạn",
+  "không đầy đủ",
+  "không đúng nội dung",
+  "bất khả kháng"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Bên có nghĩa vụ được miễn trách nhiệm dân sự khi nào?",
+   "options": [
+    "Vi phạm do sự kiện bất khả kháng (trừ khi có thỏa thuận hoặc luật quy định khác)",
+    "Khi vi phạm lần đầu",
+    "Khi giá trị nhỏ",
+    "Khi bên có quyền chưa nhắc nhở"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 351.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 351 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nếu nghĩa vụ không thực hiện được hoàn toàn do lỗi của bên có quyền thì sao?",
+   "options": [
+    "Bên có nghĩa vụ không phải chịu trách nhiệm dân sự",
+    "Hai bên chịu trách nhiệm như nhau",
+    "Bên có nghĩa vụ vẫn phải bồi thường",
+    "Hợp đồng vô hiệu"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 351.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 351 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Vi phạm nghĩa vụ",
+   "right": "Được miễn trách nhiệm",
+   "cases": [
+    {
+     "text": "Giao hàng thiếu số lượng không lý do",
+     "answer": "left"
+    },
+    {
+     "text": "Không giao được hàng do động đất phá hủy kho",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 351."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Vi phạm nghĩa vụ là việc bên có nghĩa vụ không thực hiện nghĩa vụ đúng {{thời hạn}}, thực hiện không {{đầy đủ}} nghĩa vụ hoặc thực hiện không đúng nội dung của nghĩa vụ.",
+   "bank_extra": [
+    "địa điểm",
+    "công khai"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bên có nghĩa vụ không thực hiện đúng nghĩa vụ do sự kiện {{bất khả kháng}} thì không phải chịu trách nhiệm dân sự.",
+   "bank_extra": [
+    "bất ngờ",
+    "chủ quan"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Bên vi phạm nghĩa vụ do bất khả kháng vẫn luôn phải bồi thường.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 351: không phải chịu trách nhiệm, trừ khi có thỏa thuận hoặc luật quy định khác."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày trách nhiệm dân sự do vi phạm nghĩa vụ và các trường hợp miễn trách nhiệm.",
+   "model": "Vi phạm nghĩa vụ (không đúng thời hạn, không đầy đủ, không đúng nội dung) thì chịu trách nhiệm dân sự (khoản 1 Điều 351); miễn khi do bất khả kháng (khoản 2) hoặc hoàn toàn do lỗi của bên có quyền (khoản 3).",
+   "keywords": [
+    "thời hạn",
+    "không đầy đủ",
+    "bất khả kháng",
+    "lỗi của bên có quyền"
+   ]
+  }
+ ]
+}

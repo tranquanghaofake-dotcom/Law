@@ -1,0 +1,115 @@
+{
+ "id": "bao-lanh",
+ "subject": "dan-su-2",
+ "chapter": "v4",
+ "term": "Bảo lãnh",
+ "definition": "Bảo lãnh là việc người thứ ba (sau đây gọi là bên bảo lãnh) cam kết với bên có quyền (sau đây gọi là bên nhận bảo lãnh) sẽ thực hiện nghĩa vụ thay cho bên có nghĩa vụ (sau đây gọi là bên được bảo lãnh), nếu khi đến thời hạn thực hiện nghĩa vụ mà bên được bảo lãnh không thực hiện hoặc thực hiện không đúng nghĩa vụ. Các bên có thể thỏa thuận về việc bên bảo lãnh chỉ phải thực hiện nghĩa vụ thay cho bên được bảo lãnh trong trường hợp bên được bảo lãnh không có khả năng thực hiện nghĩa vụ bảo lãnh.",
+ "plain": "Ba chủ thể: BÊN BẢO LÃNH (người thứ ba), BÊN NHẬN BẢO LÃNH (bên có quyền), BÊN ĐƯỢC BẢO LÃNH (bên có nghĩa vụ). Biện pháp ĐỐI NHÂN: dựa vào cam kết, tài sản chung của bên bảo lãnh. Nghĩa vụ bảo lãnh phát sinh khi ĐẾN HẠN mà bên được bảo lãnh không thực hiện hoặc thực hiện không đúng; có thể thỏa thuận chỉ bảo lãnh khi bên được bảo lãnh KHÔNG CÓ KHẢ NĂNG thực hiện. Sau khi thực hiện thay, bên bảo lãnh có quyền yêu cầu bên được bảo lãnh hoàn trả (Điều 340).",
+ "example": "Bố cam kết với ngân hàng: nếu con không trả nợ đúng hạn thì bố trả thay — bố là bên bảo lãnh.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 335 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "bien-phap-bao-dam",
+  "the-chap"
+ ],
+ "keywords": [
+  "người thứ ba",
+  "cam kết thực hiện thay",
+  "đến thời hạn",
+  "không có khả năng thực hiện"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trong bảo lãnh, bên bảo lãnh là ai?",
+   "options": [
+    "Người thứ ba cam kết thực hiện nghĩa vụ thay cho bên có nghĩa vụ",
+    "Bên có quyền",
+    "Bên có nghĩa vụ",
+    "Công chứng viên"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 335.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 335 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khi nào bên bảo lãnh phải thực hiện nghĩa vụ thay?",
+   "options": [
+    "Khi đến thời hạn mà bên được bảo lãnh không thực hiện hoặc thực hiện không đúng nghĩa vụ",
+    "Ngay khi ký hợp đồng bảo lãnh",
+    "Khi bên nhận bảo lãnh muốn",
+    "Sau 10 năm"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 335.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 335 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Bên bảo lãnh",
+   "right": "Bên được bảo lãnh",
+   "cases": [
+    {
+     "text": "Người cam kết trả nợ thay",
+     "answer": "left"
+    },
+    {
+     "text": "Người vay tiền",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 335."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bảo lãnh là việc người {{thứ ba}} cam kết với bên có quyền sẽ thực hiện nghĩa vụ {{thay}} cho bên có nghĩa vụ.",
+   "bank_extra": [
+    "thứ hai",
+    "cùng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Các bên có thể thỏa thuận bên bảo lãnh chỉ thực hiện nghĩa vụ khi bên được bảo lãnh không có {{khả năng}} thực hiện nghĩa vụ.",
+   "bank_extra": [
+    "thiện chí",
+    "ý định"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Bên bảo lãnh luôn phải trả nợ ngay khi bên được bảo lãnh vay tiền.",
+   "answer": false,
+   "explain": "Sai. Chỉ khi đến hạn mà bên được bảo lãnh không thực hiện hoặc thực hiện không đúng (khoản 1 Điều 335)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm bảo lãnh.",
+   "model": "Bảo lãnh là việc người thứ ba (bên bảo lãnh) cam kết với bên có quyền (bên nhận bảo lãnh) thực hiện nghĩa vụ thay cho bên có nghĩa vụ (bên được bảo lãnh) nếu đến hạn bên này không thực hiện hoặc thực hiện không đúng; có thể thỏa thuận chỉ khi bên được bảo lãnh không có khả năng thực hiện (Điều 335).",
+   "keywords": [
+    "người thứ ba",
+    "thay",
+    "đến thời hạn",
+    "không có khả năng"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "id": "nguyen-tac-boi-thuong",
+ "subject": "dan-su-2",
+ "chapter": "v11",
+ "term": "Nguyên tắc bồi thường thiệt hại",
+ "definition": "Thiệt hại thực tế phải được bồi thường toàn bộ và kịp thời. Các bên có thể thỏa thuận về mức bồi thường, hình thức bồi thường bằng tiền, bằng hiện vật hoặc thực hiện một công việc, phương thức bồi thường một lần hoặc nhiều lần, trừ trường hợp pháp luật có quy định khác. Người chịu trách nhiệm bồi thường thiệt hại có thể được giảm mức bồi thường nếu không có lỗi hoặc có lỗi vô ý và thiệt hại quá lớn so với khả năng kinh tế của mình.",
+ "plain": "Năm nguyên tắc: (1) TOÀN BỘ và KỊP THỜI; tự do thỏa thuận mức, hình thức, phương thức; (2) GIẢM MỨC khi không có lỗi hoặc lỗi vô ý VÀ thiệt hại quá lớn so với khả năng kinh tế; (3) THAY ĐỔI mức bồi thường khi không còn phù hợp; (4) bên bị thiệt hại CÓ LỖI thì không được bồi thường phần do lỗi của mình; (5) không được bồi thường nếu thiệt hại do KHÔNG ÁP DỤNG BIỆN PHÁP CẦN THIẾT ngăn chặn, hạn chế.",
+ "example": "Sinh viên vô ý làm cháy nhà hàng xóm gây thiệt hại 2 tỷ, thu nhập rất thấp: Tòa án có thể giảm mức bồi thường (khoản 2 Điều 585).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 585 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "can-cu-boi-thuong-thiet-hai",
+  "nang-luc-chiu-trach-nhiem-boi-thuong"
+ ],
+ "keywords": [
+  "toàn bộ và kịp thời",
+  "thỏa thuận mức, hình thức",
+  "giảm mức bồi thường",
+  "lỗi vô ý, thiệt hại quá lớn"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người gây thiệt hại có thể được giảm mức bồi thường khi nào?",
+   "options": [
+    "Không có lỗi hoặc có lỗi vô ý và thiệt hại quá lớn so với khả năng kinh tế",
+    "Khi có lỗi cố ý",
+    "Khi bị hại giàu có",
+    "Khi thiệt hại nhỏ"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 585.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 585 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nguyên tắc chung về bồi thường thiệt hại thực tế là gì?",
+   "options": [
+    "Bồi thường toàn bộ và kịp thời",
+    "Bồi thường một nửa",
+    "Bồi thường theo khả năng",
+    "Bồi thường sau khi xét xử hình sự"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 585.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 585 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Có thể được giảm mức bồi thường",
+   "right": "Không được giảm theo khoản 2",
+   "cases": [
+    {
+     "text": "Vô ý gây cháy, thiệt hại quá lớn so với thu nhập",
+     "answer": "left"
+    },
+    {
+     "text": "Cố ý đập phá tài sản người khác",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 2 Điều 585."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thiệt hại thực tế phải được bồi thường {{toàn bộ}} và {{kịp thời}}.",
+   "bank_extra": [
+    "một phần",
+    "khi có điều kiện"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Các bên có thể thỏa thuận hình thức bồi thường bằng tiền, bằng {{hiện vật}} hoặc thực hiện một công việc.",
+   "bank_extra": [
+    "lời xin lỗi",
+    "án treo"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người cố ý gây thiệt hại có thể được giảm mức bồi thường theo khoản 2 Điều 585 vì nghèo.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 chỉ áp dụng khi không có lỗi hoặc có lỗi vô ý."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày các nguyên tắc bồi thường thiệt hại ngoài hợp đồng.",
+   "model": "Thiệt hại thực tế bồi thường toàn bộ, kịp thời, được thỏa thuận mức, hình thức, phương thức; giảm mức khi không có lỗi hoặc lỗi vô ý và thiệt hại quá lớn; thay đổi mức khi không còn phù hợp; bên bị thiệt hại có lỗi không được bồi thường phần lỗi của mình; không bồi thường phần do không áp dụng biện pháp ngăn chặn (Điều 585).",
+   "keywords": [
+    "toàn bộ",
+    "kịp thời",
+    "giảm mức",
+    "lỗi"
+   ]
+  }
+ ]
+}

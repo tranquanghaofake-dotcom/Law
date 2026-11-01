@@ -1,0 +1,118 @@
+{
+ "id": "nghia-vu",
+ "subject": "dan-su-2",
+ "chapter": "v1",
+ "term": "Nghĩa vụ",
+ "definition": "Nghĩa vụ là việc mà theo đó, một hoặc nhiều chủ thể (sau đây gọi chung là bên có nghĩa vụ) phải chuyển giao vật, chuyển giao quyền, trả tiền hoặc giấy tờ có giá, thực hiện công việc hoặc không được thực hiện công việc nhất định vì lợi ích của một hoặc nhiều chủ thể khác (sau đây gọi chung là bên có quyền).",
+ "plain": "Quan hệ nghĩa vụ có hai bên: BÊN CÓ NGHĨA VỤ và BÊN CÓ QUYỀN. Đối tượng của nghĩa vụ (Điều 276): tài sản, công việc phải thực hiện hoặc không được thực hiện — phải XÁC ĐỊNH ĐƯỢC. Năm dạng hành vi: chuyển giao VẬT, chuyển giao QUYỀN, TRẢ TIỀN/giấy tờ có giá, THỰC HIỆN công việc, KHÔNG THỰC HIỆN công việc. Đây là quan hệ \"đối nhân\": bên có quyền chỉ yêu cầu được bên có nghĩa vụ cụ thể.",
+ "example": "A vay B 50 triệu: A là bên có nghĩa vụ trả tiền, B là bên có quyền. Cam kết không tiết lộ bí mật kinh doanh là nghĩa vụ \"không được thực hiện công việc nhất định\".",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 274 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "can-cu-phat-sinh-nghia-vu",
+  "trach-nhiem-do-vi-pham-nghia-vu"
+ ],
+ "keywords": [
+  "bên có nghĩa vụ, bên có quyền",
+  "chuyển giao vật, quyền, trả tiền",
+  "thực hiện hoặc không thực hiện công việc"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Cam kết không xây nhà cao quá 3 tầng để không che tầm nhìn của hàng xóm là dạng nghĩa vụ nào?",
+   "options": [
+    "Không được thực hiện công việc nhất định",
+    "Chuyển giao vật",
+    "Trả tiền",
+    "Chuyển giao quyền"
+   ],
+   "answer": 0,
+   "explain": "Điều 274.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 274 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai là bên có quyền trong quan hệ nghĩa vụ?",
+   "options": [
+    "Chủ thể được hưởng lợi ích từ việc thực hiện nghĩa vụ",
+    "Chủ thể phải chuyển giao vật",
+    "Cơ quan nhà nước",
+    "Người làm chứng"
+   ],
+   "answer": 0,
+   "explain": "Điều 274.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 274 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Nghĩa vụ làm",
+   "right": "Nghĩa vụ không làm",
+   "cases": [
+    {
+     "text": "Giao hàng đúng hạn",
+     "answer": "left"
+    },
+    {
+     "text": "Không cạnh tranh trong 2 năm sau khi bán cửa hàng",
+     "answer": "right"
+    },
+    {
+     "text": "Sửa xe cho khách",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 274."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nghĩa vụ là việc bên có nghĩa vụ phải chuyển giao vật, chuyển giao {{quyền}}, trả tiền hoặc giấy tờ có giá, thực hiện công việc hoặc {{không được thực hiện}} công việc nhất định vì lợi ích của bên có quyền.",
+   "bank_extra": [
+    "danh dự",
+    "được tự do thực hiện"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nghĩa vụ được thực hiện vì {{lợi ích}} của một hoặc nhiều chủ thể khác.",
+   "bank_extra": [
+    "nghĩa vụ",
+    "quyền lực"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Nghĩa vụ dân sự chỉ có thể là nghĩa vụ chuyển giao tài sản.",
+   "answer": false,
+   "explain": "Sai. Điều 274 gồm cả thực hiện hoặc không thực hiện công việc nhất định."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm nghĩa vụ theo Bộ luật Dân sự 2015.",
+   "model": "Nghĩa vụ là việc một hoặc nhiều chủ thể (bên có nghĩa vụ) phải chuyển giao vật, chuyển giao quyền, trả tiền hoặc giấy tờ có giá, thực hiện hoặc không được thực hiện công việc nhất định vì lợi ích của chủ thể khác (bên có quyền) (Điều 274).",
+   "keywords": [
+    "bên có nghĩa vụ",
+    "bên có quyền",
+    "chuyển giao",
+    "công việc"
+   ]
+  }
+ ]
+}

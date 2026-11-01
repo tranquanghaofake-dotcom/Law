@@ -1,0 +1,116 @@
+{
+ "id": "phat-vi-pham",
+ "subject": "dan-su-2",
+ "chapter": "v5",
+ "term": "Phạt vi phạm hợp đồng",
+ "definition": "Phạt vi phạm là sự thỏa thuận giữa các bên trong hợp đồng, theo đó bên vi phạm nghĩa vụ phải nộp một khoản tiền cho bên bị vi phạm. Mức phạt vi phạm do các bên thỏa thuận, trừ trường hợp luật liên quan có quy định khác. Các bên có thể thỏa thuận về việc bên vi phạm nghĩa vụ chỉ phải chịu phạt vi phạm mà không phải bồi thường thiệt hại hoặc vừa phải chịu phạt vi phạm và vừa phải bồi thường thiệt hại. Trường hợp các bên có thỏa thuận về phạt vi phạm nhưng không thỏa thuận về việc vừa phải chịu phạt vi phạm và vừa phải bồi thường thiệt hại thì bên vi phạm nghĩa vụ chỉ phải chịu phạt vi phạm.",
+ "plain": "Phạt vi phạm chỉ có khi CÁC BÊN THỎA THUẬN. Mức phạt: BLDS không giới hạn (luật khác có thể giới hạn: Luật Thương mại 2005 tối đa 8% giá trị phần nghĩa vụ vi phạm, Điều 301). Quan hệ với bồi thường: có thỏa thuận phạt nhưng KHÔNG thỏa thuận \"vừa phạt vừa bồi thường\" → CHỈ CHỊU PHẠT. Khác Luật Thương mại: bên bị vi phạm có quyền áp dụng cả phạt và bồi thường (Điều 307 LTM).",
+ "example": "Hợp đồng dân sự ghi \"chậm giao hàng phạt 20 triệu\", không ghi gì về bồi thường: bên chậm giao chỉ chịu phạt 20 triệu, dù thiệt hại thực tế lớn hơn.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 418 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "trach-nhiem-do-vi-pham-nghia-vu",
+  "dat-coc",
+  "hop-dong"
+ ],
+ "keywords": [
+  "sự thỏa thuận",
+  "mức phạt do các bên thỏa thuận",
+  "chỉ chịu phạt vi phạm",
+  "vừa phạt vừa bồi thường"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hợp đồng dân sự có thỏa thuận phạt vi phạm nhưng không thỏa thuận về việc vừa phạt vừa bồi thường. Bên vi phạm chịu gì?",
+   "options": [
+    "Chỉ phải chịu phạt vi phạm",
+    "Vừa chịu phạt vừa bồi thường",
+    "Chỉ bồi thường thiệt hại",
+    "Không chịu gì"
+   ],
+   "answer": 0,
+   "explain": "Đoạn 2 khoản 3 Điều 418.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 418 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Mức phạt vi phạm theo BLDS do ai xác định?",
+   "options": [
+    "Các bên thỏa thuận, trừ trường hợp luật liên quan có quy định khác",
+    "Luôn tối đa 8%",
+    "Tòa án ấn định",
+    "Không được vượt quá 5%"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 418.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 418 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Phạt vi phạm",
+   "right": "Bồi thường thiệt hại",
+   "cases": [
+    {
+     "text": "Chỉ áp dụng khi các bên có thỏa thuận",
+     "answer": "left"
+    },
+    {
+     "text": "Phải chứng minh thiệt hại thực tế",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 418, 360."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Phạt vi phạm là sự {{thỏa thuận}} giữa các bên trong hợp đồng, theo đó bên vi phạm nghĩa vụ phải nộp một khoản {{tiền}} cho bên bị vi phạm.",
+   "bank_extra": [
+    "quyết định",
+    "tài sản bất kỳ"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Có thỏa thuận phạt vi phạm nhưng không thỏa thuận vừa phạt vừa bồi thường thì bên vi phạm chỉ phải chịu {{phạt vi phạm}}.",
+   "bank_extra": [
+    "bồi thường",
+    "cả hai"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo BLDS 2015, mức phạt vi phạm tối đa là 8% giá trị phần nghĩa vụ bị vi phạm.",
+   "answer": false,
+   "explain": "Sai. BLDS để các bên thỏa thuận (khoản 2 Điều 418); mức 8% là của Luật Thương mại 2005."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quy định về phạt vi phạm và mối quan hệ với bồi thường thiệt hại.",
+   "model": "Phạt vi phạm là thỏa thuận trong hợp đồng buộc bên vi phạm nộp một khoản tiền; mức phạt do các bên thỏa thuận trừ luật khác quy định; có thể thỏa thuận chỉ phạt hoặc vừa phạt vừa bồi thường; nếu không thỏa thuận về việc vừa phạt vừa bồi thường thì chỉ chịu phạt (Điều 418).",
+   "keywords": [
+    "thỏa thuận",
+    "mức phạt",
+    "chỉ chịu phạt",
+    "bồi thường"
+   ]
+  }
+ ]
+}
