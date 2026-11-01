@@ -1,0 +1,114 @@
+{
+ "id": "chat-van",
+ "subject": "hien-phap",
+ "chapter": "c7-quoc-hoi",
+ "term": "Quyền chất vấn của đại biểu Quốc hội",
+ "definition": "Người bị chất vấn phải trả lời trước Quốc hội tại kỳ họp hoặc tại phiên họp Ủy ban thường vụ Quốc hội trong thời gian giữa hai kỳ họp Quốc hội; trong trường hợp cần thiết, Quốc hội, Ủy ban thường vụ Quốc hội cho trả lời bằng văn bản.",
+ "plain": "Chất vấn là hỏi để buộc người có trách nhiệm GIẢI TRÌNH, khác \"hỏi thông tin\" thông thường. Đối tượng (khoản 1 Điều 80): Chủ tịch nước, Chủ tịch Quốc hội, Thủ tướng, Bộ trưởng và thành viên khác của Chính phủ, Chánh án Tòa án nhân dân tối cao, Viện trưởng Viện kiểm sát nhân dân tối cao, Tổng Kiểm toán nhà nước. Người bị chất vấn bắt buộc phải trả lời, tại kỳ họp hoặc phiên họp Ủy ban thường vụ giữa hai kỳ họp, có thể bằng văn bản khi cần thiết.",
+ "example": "Phiên chất vấn tại kỳ họp Quốc hội: đại biểu hỏi Bộ trưởng Bộ Giáo dục về việc thiếu giáo viên; Bộ trưởng phải trả lời trực tiếp trước Quốc hội.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 2 Điều 80 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "dai-bieu-quoc-hoi",
+  "bo-phieu-tin-nhiem"
+ ],
+ "keywords": [
+  "bắt buộc trả lời",
+  "tại kỳ họp hoặc phiên họp Ủy ban thường vụ",
+  "bằng văn bản khi cần thiết"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chủ thể nào KHÔNG thuộc đối tượng bị chất vấn theo khoản 1 Điều 80?",
+   "options": [
+    "Chủ tịch Ủy ban nhân dân tỉnh",
+    "Chủ tịch nước",
+    "Thủ tướng Chính phủ",
+    "Tổng Kiểm toán nhà nước"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 80 không nêu Chủ tịch Ủy ban nhân dân tỉnh (người này bị chất vấn bởi đại biểu Hội đồng nhân dân).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 80 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Giữa hai kỳ họp Quốc hội, người bị chất vấn trả lời ở đâu?",
+   "options": [
+    "Tại phiên họp Ủy ban thường vụ Quốc hội",
+    "Trên báo chí",
+    "Tại trụ sở Mặt trận Tổ quốc",
+    "Không phải trả lời"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 80.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 80 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Chất vấn",
+   "right": "Yêu cầu cung cấp thông tin",
+   "cases": [
+    {
+     "text": "Người bị hỏi phải trả lời trước Quốc hội hoặc Ủy ban thường vụ",
+     "answer": "left"
+    },
+    {
+     "text": "Người đứng đầu cơ quan trả lời trong thời hạn luật định",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 2, 3 Điều 80."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người bị chất vấn phải trả lời trước Quốc hội tại {{kỳ họp}} hoặc tại phiên họp {{Ủy ban thường vụ Quốc hội}} trong thời gian giữa hai kỳ họp.",
+   "bank_extra": [
+    "hội nghị",
+    "Chính phủ"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Trong trường hợp cần thiết, Quốc hội, Ủy ban thường vụ Quốc hội cho trả lời bằng {{văn bản}}.",
+   "bank_extra": [
+    "điện thoại",
+    "tin nhắn"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Đại biểu Quốc hội có quyền chất vấn Chủ tịch nước.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 80."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quyền chất vấn của đại biểu Quốc hội theo Điều 80.",
+   "model": "Đại biểu chất vấn Chủ tịch nước, Chủ tịch Quốc hội, Thủ tướng, Bộ trưởng và thành viên khác của Chính phủ, Chánh án Tòa án nhân dân tối cao, Viện trưởng Viện kiểm sát nhân dân tối cao, Tổng Kiểm toán nhà nước (khoản 1). Người bị chất vấn trả lời tại kỳ họp hoặc phiên họp Ủy ban thường vụ giữa hai kỳ họp; khi cần thiết trả lời bằng văn bản (khoản 2).",
+   "keywords": [
+    "Thủ tướng",
+    "Chủ tịch nước",
+    "kỳ họp",
+    "Ủy ban thường vụ"
+   ]
+  }
+ ]
+}

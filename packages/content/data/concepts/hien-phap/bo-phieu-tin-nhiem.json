@@ -1,0 +1,119 @@
+{
+ "id": "bo-phieu-tin-nhiem",
+ "subject": "hien-phap",
+ "chapter": "c7-quoc-hoi",
+ "term": "Bỏ phiếu tín nhiệm",
+ "definition": "Bỏ phiếu tín nhiệm đối với người giữ chức vụ do Quốc hội bầu hoặc phê chuẩn;",
+ "plain": "Bỏ phiếu tín nhiệm là công cụ giám sát mạnh nhất của Quốc hội: áp dụng với người do Quốc hội bầu hoặc phê chuẩn (Chủ tịch nước, Thủ tướng, Bộ trưởng, Chánh án Tòa án nhân dân tối cao…). Phân biệt với \"lấy phiếu tín nhiệm\" (định kỳ, mức tín nhiệm cao/tín nhiệm/tín nhiệm thấp, do Luật Tổ chức Quốc hội và nghị quyết của Quốc hội quy định): bỏ phiếu tín nhiệm là bước có thể dẫn tới miễn nhiệm.",
+ "example": "Một Bộ trưởng có nhiều sai phạm trong điều hành bị Quốc hội đưa ra bỏ phiếu tín nhiệm; nếu kết quả không đạt mức tín nhiệm theo ngưỡng do Luật Tổ chức Quốc hội quy định thì cơ quan đã giới thiệu người đó trình Quốc hội miễn nhiệm.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 8 Điều 70 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "vi-tri-quoc-hoi",
+  "chat-van",
+  "bo-truong-trach-nhiem"
+ ],
+ "keywords": [
+  "người do Quốc hội bầu hoặc phê chuẩn",
+  "giám sát tối cao",
+  "khác lấy phiếu tín nhiệm"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quốc hội bỏ phiếu tín nhiệm đối với ai theo khoản 8 Điều 70?",
+   "options": [
+    "Người giữ chức vụ do Quốc hội bầu hoặc phê chuẩn",
+    "Mọi cán bộ, công chức",
+    "Chủ tịch Ủy ban nhân dân cấp xã",
+    "Thẩm phán Tòa án nhân dân cấp tỉnh"
+   ],
+   "answer": 0,
+   "explain": "Khoản 8 Điều 70.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 8 Điều 70 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Bỏ phiếu tín nhiệm thuộc chức năng nào của Quốc hội?",
+   "options": [
+    "Giám sát tối cao",
+    "Lập pháp",
+    "Lập hiến",
+    "Quyết định ngân sách"
+   ],
+   "answer": 0,
+   "explain": "Điều 69 và khoản 8 Điều 70.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 69 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Được Quốc hội bỏ phiếu tín nhiệm",
+   "right": "Không thuộc đối tượng",
+   "cases": [
+    {
+     "text": "Bộ trưởng do Quốc hội phê chuẩn",
+     "answer": "left"
+    },
+    {
+     "text": "Chánh án Tòa án nhân dân tối cao do Quốc hội bầu",
+     "answer": "left"
+    },
+    {
+     "text": "Giám đốc sở của một tỉnh",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 7, 8 Điều 70."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quốc hội {{bỏ phiếu tín nhiệm}} đối với người giữ chức vụ do Quốc hội {{bầu}} hoặc phê chuẩn.",
+   "bank_extra": [
+    "bổ nhiệm",
+    "chỉ định"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bỏ phiếu tín nhiệm thể hiện chức năng {{giám sát tối cao}} của Quốc hội.",
+   "bank_extra": [
+    "lập hiến",
+    "điều hành"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quốc hội có thể bỏ phiếu tín nhiệm đối với Chủ tịch Ủy ban nhân dân tỉnh.",
+   "answer": false,
+   "explain": "Sai. Chủ tịch Ủy ban nhân dân tỉnh do Hội đồng nhân dân tỉnh bầu, không phải người do Quốc hội bầu hoặc phê chuẩn."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quyền bỏ phiếu tín nhiệm của Quốc hội và phân biệt với lấy phiếu tín nhiệm.",
+   "model": "Quốc hội bỏ phiếu tín nhiệm đối với người giữ chức vụ do Quốc hội bầu hoặc phê chuẩn (khoản 8 Điều 70), là công cụ giám sát tối cao, có thể dẫn tới miễn nhiệm. Lấy phiếu tín nhiệm là đánh giá định kỳ theo mức độ, quy định tại luật và nghị quyết của Quốc hội.",
+   "keywords": [
+    "bầu hoặc phê chuẩn",
+    "giám sát tối cao",
+    "miễn nhiệm",
+    "lấy phiếu tín nhiệm"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "id": "chu-tich-nuoc-quan-he-co-quan",
+ "subject": "hien-phap",
+ "chapter": "c8-chu-tich-nuoc",
+ "term": "Quan hệ của Chủ tịch nước với Ủy ban thường vụ Quốc hội và Chính phủ",
+ "definition": "Chủ tịch nước có quyền tham dự phiên họp của Uỷ ban thường vụ Quốc hội, phiên họp của Chính phủ. Chủ tịch nước có quyền yêu cầu Chính phủ họp bàn về vấn đề mà Chủ tịch nước xét thấy cần thiết để thực hiện nhiệm vụ, quyền hạn của Chủ tịch nước.",
+ "plain": "Chủ tịch nước là cầu nối giữa các nhánh quyền lực: được dự phiên họp Ủy ban thường vụ Quốc hội và Chính phủ, được yêu cầu Chính phủ họp bàn. Chính phủ báo cáo công tác trước Chủ tịch nước (Điều 94). Đây không phải quan hệ \"cấp trên chỉ đạo trực tiếp\" Chính phủ: Chính phủ chịu trách nhiệm trước Quốc hội.",
+ "example": "Trước thềm một chuyến thăm cấp nhà nước, Chủ tịch nước yêu cầu Chính phủ họp bàn để chuẩn bị các thỏa thuận hợp tác kinh tế sẽ ký kết.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 90 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "chu-tich-nuoc-vi-tri",
+  "chinh-phu-vi-tri",
+  "uy-ban-thuong-vu-quoc-hoi"
+ ],
+ "keywords": [
+  "tham dự phiên họp",
+  "yêu cầu Chính phủ họp bàn",
+  "Chính phủ báo cáo công tác trước Chủ tịch nước"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chủ tịch nước có quyền tham dự phiên họp của cơ quan nào theo Điều 90?",
+   "options": [
+    "Ủy ban thường vụ Quốc hội và Chính phủ",
+    "Tòa án nhân dân tối cao",
+    "Hội đồng nhân dân tỉnh",
+    "Ban chấp hành Trung ương"
+   ],
+   "answer": 0,
+   "explain": "Điều 90.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 90 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chính phủ chịu trách nhiệm trước cơ quan nào?",
+   "options": [
+    "Quốc hội",
+    "Chủ tịch nước",
+    "Ủy ban thường vụ Quốc hội",
+    "Mặt trận Tổ quốc"
+   ],
+   "answer": 0,
+   "explain": "Điều 94: chịu trách nhiệm trước Quốc hội; báo cáo công tác trước Quốc hội, Ủy ban thường vụ, Chủ tịch nước.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 94 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Chịu trách nhiệm trước",
+   "right": "Chỉ báo cáo công tác trước",
+   "cases": [
+    {
+     "text": "Chính phủ đối với Quốc hội",
+     "answer": "left"
+    },
+    {
+     "text": "Chính phủ đối với Chủ tịch nước",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 94."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chủ tịch nước có quyền yêu cầu {{Chính phủ}} họp bàn về vấn đề mà Chủ tịch nước xét thấy {{cần thiết}}.",
+   "bank_extra": [
+    "Quốc hội",
+    "khẩn cấp"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Phó Chủ tịch nước giữ quyền Chủ tịch nước khi Chủ tịch nước không làm việc được trong thời gian {{dài}}.",
+   "bank_extra": [
+    "ngắn",
+    "một tuần"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chính phủ chịu trách nhiệm trước Chủ tịch nước.",
+   "answer": false,
+   "explain": "Sai. Chính phủ chịu trách nhiệm trước Quốc hội; chỉ báo cáo công tác trước Chủ tịch nước (Điều 94)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày mối quan hệ giữa Chủ tịch nước với Ủy ban thường vụ Quốc hội và Chính phủ.",
+   "model": "Chủ tịch nước có quyền dự phiên họp của Ủy ban thường vụ và của Chính phủ; yêu cầu Chính phủ họp bàn vấn đề cần thiết (Điều 90); đề nghị xem xét lại pháp lệnh (khoản 1 Điều 88). Chính phủ báo cáo công tác trước Chủ tịch nước nhưng chịu trách nhiệm trước Quốc hội (Điều 94).",
+   "keywords": [
+    "tham dự phiên họp",
+    "yêu cầu họp bàn",
+    "báo cáo công tác",
+    "Quốc hội"
+   ]
+  }
+ ]
+}

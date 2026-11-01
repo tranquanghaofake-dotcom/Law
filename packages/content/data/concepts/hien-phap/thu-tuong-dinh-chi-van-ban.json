@@ -1,0 +1,119 @@
+{
+ "id": "thu-tuong-dinh-chi-van-ban",
+ "subject": "hien-phap",
+ "chapter": "c9-chinh-phu",
+ "term": "Quyền đình chỉ, bãi bỏ văn bản của Thủ tướng",
+ "definition": "Đình chỉ việc thi hành hoặc bãi bỏ văn bản của Bộ trưởng, Thủ trưởng cơ quan ngang bộ, Ủy ban nhân dân, Chủ tịch Ủy ban nhân dân tỉnh, thành phố trực thuộc trung ương trái với Hiến pháp, luật và văn bản của cơ quan nhà nước cấp trên;",
+ "plain": "Thủ tướng là \"người gác cổng\" pháp chế trong hệ thống hành chính: được ĐÌNH CHỈ HOẶC BÃI BỎ văn bản trái luật của Bộ trưởng, Ủy ban nhân dân, Chủ tịch Ủy ban nhân dân tỉnh. Riêng với NGHỊ QUYẾT của Hội đồng nhân dân tỉnh (cơ quan quyền lực địa phương), Thủ tướng chỉ được ĐÌNH CHỈ và đề nghị Ủy ban thường vụ Quốc hội bãi bỏ, không tự bãi bỏ.",
+ "example": "Hội đồng nhân dân tỉnh X ban hành nghị quyết thu một khoản phí trái luật: Thủ tướng đình chỉ thi hành và đề nghị Ủy ban thường vụ Quốc hội bãi bỏ; Thủ tướng không tự bãi bỏ nghị quyết này.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 4 Điều 98 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "thu-tuong-chinh-phu",
+  "van-ban-chinh-phu",
+  "uy-ban-thuong-vu-quoc-hoi"
+ ],
+ "keywords": [
+  "đình chỉ hoặc bãi bỏ",
+  "văn bản của Bộ trưởng, Ủy ban nhân dân",
+  "nghị quyết Hội đồng nhân dân tỉnh chỉ đình chỉ"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thủ tướng được làm gì với văn bản trái luật của Chủ tịch Ủy ban nhân dân tỉnh?",
+   "options": [
+    "Đình chỉ việc thi hành hoặc bãi bỏ",
+    "Chỉ được kiến nghị",
+    "Chỉ được báo cáo Quốc hội",
+    "Không có quyền"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 98.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 98 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Với nghị quyết trái luật của Hội đồng nhân dân tỉnh, Thủ tướng có quyền gì?",
+   "options": [
+    "Đình chỉ việc thi hành và đề nghị Ủy ban thường vụ Quốc hội bãi bỏ",
+    "Tự bãi bỏ ngay",
+    "Không có quyền gì",
+    "Chuyển Tòa án xét xử"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 98.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 98 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thủ tướng được bãi bỏ",
+   "right": "Thủ tướng chỉ được đình chỉ",
+   "cases": [
+    {
+     "text": "Văn bản trái luật của Bộ trưởng",
+     "answer": "left"
+    },
+    {
+     "text": "Nghị quyết trái luật của Hội đồng nhân dân tỉnh",
+     "answer": "right"
+    },
+    {
+     "text": "Văn bản trái luật của Chủ tịch Ủy ban nhân dân tỉnh",
+     "answer": "left"
+    }
+   ],
+   "explain": "Khoản 4 Điều 98."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thủ tướng {{đình chỉ}} việc thi hành hoặc {{bãi bỏ}} văn bản của Bộ trưởng trái với Hiến pháp, luật.",
+   "bank_extra": [
+    "ban hành",
+    "sửa đổi"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ủy ban thường vụ Quốc hội có quyền bãi bỏ nghị quyết của {{Hội đồng nhân dân}} tỉnh trái với Hiến pháp, luật.",
+   "bank_extra": [
+    "Ủy ban nhân dân",
+    "Mặt trận Tổ quốc"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thủ tướng có quyền bãi bỏ nghị quyết của Hội đồng nhân dân tỉnh trái luật.",
+   "answer": false,
+   "explain": "Sai. Thủ tướng chỉ đình chỉ và đề nghị Ủy ban thường vụ Quốc hội bãi bỏ (khoản 4 Điều 98; khoản 7 Điều 74)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quyền đình chỉ, bãi bỏ văn bản của Thủ tướng.",
+   "model": "Thủ tướng đình chỉ thi hành hoặc bãi bỏ văn bản của Bộ trưởng, Thủ trưởng cơ quan ngang bộ, Ủy ban nhân dân, Chủ tịch Ủy ban nhân dân tỉnh trái Hiến pháp, luật, văn bản cấp trên; đình chỉ nghị quyết trái luật của Hội đồng nhân dân tỉnh và đề nghị Ủy ban thường vụ Quốc hội bãi bỏ (khoản 4 Điều 98).",
+   "keywords": [
+    "đình chỉ",
+    "bãi bỏ",
+    "Hội đồng nhân dân tỉnh",
+    "Ủy ban thường vụ"
+   ]
+  }
+ ]
+}

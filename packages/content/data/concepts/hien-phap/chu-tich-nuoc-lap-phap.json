@@ -1,0 +1,115 @@
+{
+ "id": "chu-tich-nuoc-lap-phap",
+ "subject": "hien-phap",
+ "chapter": "c8-chu-tich-nuoc",
+ "term": "Quyền hạn của Chủ tịch nước trong lĩnh vực lập pháp",
+ "definition": "Công bố Hiến pháp, luật, pháp lệnh; đề nghị Uỷ ban thường vụ Quốc hội xem xét lại pháp lệnh trong thời hạn mười ngày, kể từ ngày pháp lệnh được thông qua, nếu pháp lệnh đó vẫn được Uỷ ban thường vụ Quốc hội biểu quyết tán thành mà Chủ tịch nước vẫn không nhất trí thì Chủ tịch nước trình Quốc hội quyết định tại kỳ họp gần nhất;",
+ "plain": "Chủ tịch nước KHÔNG có quyền phủ quyết LUẬT (khác tổng thống Mỹ). Với luật: chỉ công bố. Với PHÁP LỆNH của Ủy ban thường vụ: được đề nghị xem xét lại trong 10 ngày; Ủy ban thường vụ vẫn tán thành mà Chủ tịch nước vẫn không nhất trí thì Chủ tịch nước trình Quốc hội quyết định tại kỳ họp gần nhất. Đây là cơ chế kiểm soát quyền lực nhẹ giữa Chủ tịch nước và Ủy ban thường vụ.",
+ "example": "Ủy ban thường vụ Quốc hội thông qua một pháp lệnh ngày 01/3; Chủ tịch nước thấy chưa phù hợp, có thể đề nghị xem xét lại đến hết ngày 11/3. Nếu Ủy ban thường vụ vẫn giữ nguyên thì Chủ tịch nước trình Quốc hội quyết định ở kỳ họp gần nhất.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 88 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "bieu-quyet-thong-qua-luat",
+  "uy-ban-thuong-vu-quoc-hoi",
+  "chu-tich-nuoc-vi-tri"
+ ],
+ "keywords": [
+  "công bố Hiến pháp, luật, pháp lệnh",
+  "xem xét lại pháp lệnh trong 10 ngày",
+  "không có quyền phủ quyết luật"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chủ tịch nước được đề nghị xem xét lại loại văn bản nào?",
+   "options": [
+    "Pháp lệnh của Ủy ban thường vụ Quốc hội",
+    "Luật của Quốc hội",
+    "Hiến pháp",
+    "Nghị quyết của Quốc hội"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 88.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 88 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thời hạn Chủ tịch nước đề nghị xem xét lại pháp lệnh là bao lâu?",
+   "options": [
+    "Mười ngày kể từ ngày pháp lệnh được thông qua",
+    "Mười lăm ngày",
+    "Ba mươi ngày",
+    "Bảy ngày"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 88.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 88 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Luật",
+   "right": "Pháp lệnh",
+   "cases": [
+    {
+     "text": "Chủ tịch nước chỉ công bố, không được đề nghị xem xét lại",
+     "answer": "left"
+    },
+    {
+     "text": "Chủ tịch nước được đề nghị Ủy ban thường vụ xem xét lại trong 10 ngày",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 88."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chủ tịch nước công bố Hiến pháp, luật, pháp lệnh; đề nghị Ủy ban thường vụ Quốc hội xem xét lại {{pháp lệnh}} trong thời hạn {{mười}} ngày.",
+   "bank_extra": [
+    "luật",
+    "mười lăm"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nếu Ủy ban thường vụ vẫn tán thành pháp lệnh mà Chủ tịch nước vẫn không nhất trí thì Chủ tịch nước trình {{Quốc hội}} quyết định tại kỳ họp gần nhất.",
+   "bank_extra": [
+    "Chính phủ",
+    "Tòa án"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chủ tịch nước có quyền phủ quyết luật đã được Quốc hội thông qua.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 88 chỉ cho Chủ tịch nước đề nghị xem xét lại PHÁP LỆNH; với luật, Chủ tịch nước công bố."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quyền hạn của Chủ tịch nước trong lĩnh vực lập pháp.",
+   "model": "Công bố Hiến pháp, luật, pháp lệnh; đề nghị Ủy ban thường vụ xem xét lại pháp lệnh trong 10 ngày; nếu Ủy ban thường vụ vẫn tán thành mà Chủ tịch nước không nhất trí thì trình Quốc hội quyết định tại kỳ họp gần nhất (khoản 1 Điều 88); có quyền trình dự án luật (Điều 84). Không có quyền phủ quyết luật.",
+   "keywords": [
+    "công bố",
+    "pháp lệnh",
+    "mười ngày",
+    "trình Quốc hội"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,120 @@
+{
+ "id": "thu-tuong-chinh-phu",
+ "subject": "hien-phap",
+ "chapter": "c9-chinh-phu",
+ "term": "Thủ tướng Chính phủ",
+ "definition": "Thủ tướng Chính phủ là người đứng đầu Chính phủ, chịu trách nhiệm trước Quốc hội về hoạt động của Chính phủ và những nhiệm vụ được giao; báo cáo công tác của Chính phủ, Thủ tướng Chính phủ trước Quốc hội, Ủy ban thường vụ Quốc hội, Chủ tịch nước.",
+ "plain": "Thủ tướng: do Quốc hội bầu trong số đại biểu Quốc hội (theo đề nghị của Chủ tịch nước); đứng đầu Chính phủ; lãnh đạo hệ thống hành chính từ trung ương đến địa phương; trình Quốc hội phê chuẩn Phó Thủ tướng, Bộ trưởng; bổ nhiệm Thứ trưởng; phê chuẩn việc bầu và quyết định điều động, cách chức Chủ tịch Ủy ban nhân dân tỉnh; đình chỉ, bãi bỏ văn bản trái luật của Bộ trưởng, Ủy ban nhân dân tỉnh.",
+ "example": "Thủ tướng đình chỉ thi hành một quyết định của Chủ tịch Ủy ban nhân dân tỉnh trái luật về thu phí, theo khoản 4 Điều 98.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 2 Điều 95 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "chinh-phu-vi-tri",
+  "co-cau-chinh-phu",
+  "chu-tich-nuoc-vi-tri"
+ ],
+ "keywords": [
+  "đứng đầu Chính phủ",
+  "Quốc hội bầu trong số đại biểu",
+  "lãnh đạo hệ thống hành chính",
+  "chịu trách nhiệm trước Quốc hội"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thủ tướng Chính phủ được bầu như thế nào?",
+   "options": [
+    "Do Quốc hội bầu trong số đại biểu Quốc hội",
+    "Do Chủ tịch nước bổ nhiệm",
+    "Do Nhân dân bầu trực tiếp",
+    "Do Chính phủ bầu"
+   ],
+   "answer": 0,
+   "explain": "Điều 98.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 98 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai bổ nhiệm Thứ trưởng?",
+   "options": [
+    "Thủ tướng Chính phủ",
+    "Chủ tịch nước",
+    "Quốc hội",
+    "Bộ trưởng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 98.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 98 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thủ tướng",
+   "right": "Chủ tịch nước",
+   "cases": [
+    {
+     "text": "Bổ nhiệm, miễn nhiệm Thứ trưởng",
+     "answer": "left"
+    },
+    {
+     "text": "Bổ nhiệm Bộ trưởng căn cứ nghị quyết Quốc hội",
+     "answer": "right"
+    },
+    {
+     "text": "Trình Quốc hội phê chuẩn đề nghị bổ nhiệm Bộ trưởng",
+     "answer": "left"
+    }
+   ],
+   "explain": "Khoản 2 Điều 88; khoản 3 Điều 98."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thủ tướng Chính phủ là người {{đứng đầu}} Chính phủ, chịu trách nhiệm trước {{Quốc hội}} về hoạt động của Chính phủ.",
+   "bank_extra": [
+    "phó",
+    "Chủ tịch nước"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thủ tướng lãnh đạo và chịu trách nhiệm về hoạt động của hệ thống {{hành chính nhà nước}} từ trung ương đến địa phương.",
+   "bank_extra": [
+    "tư pháp",
+    "kiểm sát"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thủ tướng có quyền đình chỉ việc thi hành văn bản trái Hiến pháp của Ủy ban nhân dân tỉnh.",
+   "answer": true,
+   "explain": "Đúng. Khoản 4 Điều 98."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày vị trí và quyền hạn chính của Thủ tướng Chính phủ.",
+   "model": "Đứng đầu Chính phủ, chịu trách nhiệm trước Quốc hội, báo cáo trước Quốc hội, Ủy ban thường vụ, Chủ tịch nước (khoản 2 Điều 95); do Quốc hội bầu trong số đại biểu. Quyền hạn: lãnh đạo Chính phủ; lãnh đạo hệ thống hành chính; trình Quốc hội phê chuẩn Phó Thủ tướng, Bộ trưởng; bổ nhiệm Thứ trưởng; phê chuẩn, điều động, cách chức Chủ tịch Ủy ban nhân dân tỉnh; đình chỉ, bãi bỏ văn bản trái luật (Điều 98).",
+   "keywords": [
+    "đứng đầu Chính phủ",
+    "Quốc hội bầu",
+    "hệ thống hành chính",
+    "Thứ trưởng"
+   ]
+  }
+ ]
+}

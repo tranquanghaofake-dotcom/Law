@@ -1,0 +1,119 @@
+{
+ "id": "nhiem-ky-chinh-phu",
+ "subject": "hien-phap",
+ "chapter": "c9-chinh-phu",
+ "term": "Nhiệm kỳ của Chính phủ",
+ "definition": "Nhiệm kỳ của Chính phủ theo nhiệm kỳ của Quốc hội. Khi Quốc hội hết nhiệm kỳ, Chính phủ tiếp tục làm nhiệm vụ cho đến khi Quốc hội khoá mới thành lập Chính phủ.",
+ "plain": "Chính phủ do Quốc hội thành lập nên nhiệm kỳ gắn với nhiệm kỳ Quốc hội (5 năm). Nguyên tắc liên tục: hết nhiệm kỳ Quốc hội, Chính phủ cũ vẫn điều hành cho đến khi Quốc hội khóa mới thành lập Chính phủ mới (bầu Thủ tướng, phê chuẩn thành viên), tránh \"khoảng trống hành pháp\".",
+ "example": "Sau bầu cử, trong thời gian từ khi Quốc hội khóa cũ hết nhiệm kỳ đến kỳ họp thứ nhất của Quốc hội khóa mới, Chính phủ nhiệm kỳ cũ vẫn tiếp tục điều hành đất nước.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 97 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nhiem-ky-quoc-hoi",
+  "chu-tich-nuoc-bau-nhiem-ky",
+  "chinh-phu-vi-tri"
+ ],
+ "keywords": [
+  "theo nhiệm kỳ Quốc hội",
+  "tiếp tục làm nhiệm vụ",
+  "Quốc hội khóa mới thành lập Chính phủ"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nhiệm kỳ của Chính phủ được xác định thế nào?",
+   "options": [
+    "Theo nhiệm kỳ của Quốc hội",
+    "Bốn năm",
+    "Theo nhiệm kỳ của Chủ tịch nước",
+    "Không giới hạn"
+   ],
+   "answer": 0,
+   "explain": "Điều 97.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 97 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khi Quốc hội hết nhiệm kỳ, Chính phủ làm gì?",
+   "options": [
+    "Tiếp tục làm nhiệm vụ cho đến khi Quốc hội khóa mới thành lập Chính phủ",
+    "Giải tán ngay",
+    "Giao quyền cho Chủ tịch nước",
+    "Giao quyền cho Ủy ban thường vụ"
+   ],
+   "answer": 0,
+   "explain": "Điều 97.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 97 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Theo nhiệm kỳ Quốc hội",
+   "right": "Khác",
+   "cases": [
+    {
+     "text": "Nhiệm kỳ của Chính phủ",
+     "answer": "left"
+    },
+    {
+     "text": "Nhiệm kỳ của Chủ tịch nước",
+     "answer": "left"
+    },
+    {
+     "text": "Nhiệm kỳ của Thẩm phán do luật định",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 87, 97."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhiệm kỳ của Chính phủ theo nhiệm kỳ của {{Quốc hội}}.",
+   "bank_extra": [
+    "Chủ tịch nước",
+    "Đảng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Khi Quốc hội hết nhiệm kỳ, Chính phủ {{tiếp tục}} làm nhiệm vụ cho đến khi Quốc hội khóa mới thành lập Chính phủ.",
+   "bank_extra": [
+    "chấm dứt",
+    "tạm dừng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chính phủ có nhiệm kỳ riêng, độc lập với nhiệm kỳ của Quốc hội.",
+   "answer": false,
+   "explain": "Sai. Điều 97: nhiệm kỳ của Chính phủ theo nhiệm kỳ của Quốc hội."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quy định về nhiệm kỳ của Chính phủ.",
+   "model": "Nhiệm kỳ của Chính phủ theo nhiệm kỳ của Quốc hội; khi Quốc hội hết nhiệm kỳ, Chính phủ tiếp tục làm nhiệm vụ cho đến khi Quốc hội khóa mới thành lập Chính phủ (Điều 97). Bảo đảm tính liên tục của hoạt động hành pháp.",
+   "keywords": [
+    "theo nhiệm kỳ Quốc hội",
+    "tiếp tục",
+    "khóa mới",
+    "liên tục"
+   ]
+  }
+ ]
+}

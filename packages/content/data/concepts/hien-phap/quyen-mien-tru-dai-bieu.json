@@ -1,0 +1,114 @@
+{
+ "id": "quyen-mien-tru-dai-bieu",
+ "subject": "hien-phap",
+ "chapter": "c7-quoc-hoi",
+ "term": "Quyền miễn trừ của đại biểu Quốc hội",
+ "definition": "Không được bắt, giam, giữ, khởi tố đại biểu Quốc hội nếu không có sự đồng ý của Quốc hội hoặc trong thời gian Quốc hội không họp, không có sự đồng ý của Uỷ ban thường vụ Quốc hội; trong trường hợp đại biểu Quốc hội phạm tội quả tang mà bị tạm giữ thì cơ quan tạm giữ phải lập tức báo cáo để Quốc hội hoặc Uỷ ban thường vụ Quốc hội xem xét, quyết định.",
+ "plain": "Bảo đảm để đại biểu hoạt động độc lập, không bị gây áp lực bằng biện pháp tố tụng. Đây KHÔNG phải miễn trách nhiệm: đại biểu vẫn bị xử lý nếu phạm tội, nhưng cơ quan tố tụng phải có sự đồng ý của Quốc hội (hoặc Ủy ban thường vụ khi Quốc hội không họp). Ngoại lệ: phạm tội quả tang thì được tạm giữ ngay, rồi lập tức báo cáo.",
+ "example": "Cơ quan điều tra muốn khởi tố một đại biểu Quốc hội vì sai phạm khi còn làm lãnh đạo doanh nghiệp: phải xin ý kiến và được Ủy ban thường vụ Quốc hội đồng ý (nếu Quốc hội không họp) trước khi khởi tố.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 81 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "dai-bieu-quoc-hoi",
+  "uy-ban-thuong-vu-quoc-hoi"
+ ],
+ "keywords": [
+  "không bắt, giam, giữ, khởi tố",
+  "đồng ý của Quốc hội hoặc Ủy ban thường vụ",
+  "phạm tội quả tang"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Muốn khởi tố đại biểu Quốc hội trong thời gian Quốc hội không họp, cần sự đồng ý của ai?",
+   "options": [
+    "Ủy ban thường vụ Quốc hội",
+    "Chủ tịch nước",
+    "Viện trưởng Viện kiểm sát nhân dân tối cao",
+    "Thủ tướng Chính phủ"
+   ],
+   "answer": 0,
+   "explain": "Điều 81.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 81 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trường hợp nào đại biểu Quốc hội có thể bị tạm giữ trước khi có sự đồng ý?",
+   "options": [
+    "Phạm tội quả tang",
+    "Bị tố giác qua điện thoại",
+    "Bị báo chí phản ánh",
+    "Không có trường hợp nào"
+   ],
+   "answer": 0,
+   "explain": "Điều 81: phạm tội quả tang mà bị tạm giữ thì cơ quan tạm giữ lập tức báo cáo.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 81 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quốc hội đang họp",
+   "right": "Quốc hội không họp",
+   "cases": [
+    {
+     "text": "Khởi tố đại biểu cần sự đồng ý của Quốc hội",
+     "answer": "left"
+    },
+    {
+     "text": "Khởi tố đại biểu cần sự đồng ý của Ủy ban thường vụ Quốc hội",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 81."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Không được bắt, giam, giữ, {{khởi tố}} đại biểu Quốc hội nếu không có sự đồng ý của {{Quốc hội}} hoặc Ủy ban thường vụ Quốc hội khi Quốc hội không họp.",
+   "bank_extra": [
+    "xử phạt hành chính",
+    "Chính phủ"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Trường hợp đại biểu Quốc hội phạm tội {{quả tang}} mà bị tạm giữ thì cơ quan tạm giữ phải lập tức báo cáo.",
+   "bank_extra": [
+    "nghiêm trọng",
+    "lần đầu"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quyền miễn trừ có nghĩa đại biểu Quốc hội không bao giờ bị truy cứu trách nhiệm hình sự.",
+   "answer": false,
+   "explain": "Sai. Đại biểu vẫn có thể bị truy cứu nếu Quốc hội hoặc Ủy ban thường vụ đồng ý; quyền miễn trừ chỉ là bảo đảm về thủ tục."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày nội dung và ý nghĩa quyền miễn trừ của đại biểu Quốc hội.",
+   "model": "Không được bắt, giam, giữ, khởi tố đại biểu nếu không có sự đồng ý của Quốc hội, hoặc của Ủy ban thường vụ khi Quốc hội không họp; phạm tội quả tang bị tạm giữ thì cơ quan tạm giữ lập tức báo cáo để xem xét, quyết định (Điều 81). Ý nghĩa: bảo đảm đại biểu hoạt động độc lập; không phải miễn trách nhiệm.",
+   "keywords": [
+    "khởi tố",
+    "đồng ý của Quốc hội",
+    "Ủy ban thường vụ",
+    "quả tang"
+   ]
+  }
+ ]
+}

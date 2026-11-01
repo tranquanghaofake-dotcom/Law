@@ -1,0 +1,124 @@
+{
+ "id": "dai-bieu-quoc-hoi",
+ "subject": "hien-phap",
+ "chapter": "c7-quoc-hoi",
+ "term": "Đại biểu Quốc hội",
+ "definition": "Đại biểu Quốc hội là người đại diện cho ý chí, nguyện vọng của Nhân dân ở đơn vị bầu cử ra mình và của Nhân dân cả nước.",
+ "plain": "Đại biểu đại diện HAI tầng: cử tri ở đơn vị bầu ra mình VÀ Nhân dân cả nước (không chỉ \"lo cho địa phương\"). Nghĩa vụ: liên hệ chặt chẽ, chịu giám sát của cử tri, tiếp xúc và báo cáo với cử tri, phản ánh trung thực ý kiến cử tri. Quyền: chất vấn, yêu cầu cung cấp thông tin, trình dự án luật, được bảo đảm quyền miễn trừ (Điều 81).",
+ "example": "Đại biểu Quốc hội bầu ở tỉnh A khi biểu quyết luật thuế vẫn phải cân nhắc lợi ích của cả nước, không chỉ của tỉnh A.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 79 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quyen-mien-tru-dai-bieu",
+  "chat-van",
+  "bai-nhiem-dai-bieu"
+ ],
+ "keywords": [
+  "đơn vị bầu cử ra mình",
+  "Nhân dân cả nước",
+  "tiếp xúc cử tri",
+  "chịu sự giám sát của cử tri"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 1 Điều 79, đại biểu Quốc hội đại diện cho ai?",
+   "options": [
+    "Ý chí, nguyện vọng của Nhân dân ở đơn vị bầu cử ra mình và của Nhân dân cả nước",
+    "Chỉ Nhân dân ở đơn vị bầu cử ra mình",
+    "Chỉ tổ chức giới thiệu mình ứng cử",
+    "Chỉ Đảng viên"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 79.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 79 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nghĩa vụ nào của đại biểu Quốc hội đối với cử tri được nêu tại khoản 2 Điều 79?",
+   "options": [
+    "Thực hiện chế độ tiếp xúc và báo cáo với cử tri",
+    "Nộp thuế thay cho cử tri",
+    "Bảo đảm việc làm cho cử tri",
+    "Giải quyết mọi tranh chấp của cử tri"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 79.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 79 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quyền của đại biểu Quốc hội",
+   "right": "Nghĩa vụ của đại biểu Quốc hội",
+   "cases": [
+    {
+     "text": "Chất vấn Thủ tướng Chính phủ",
+     "answer": "left"
+    },
+    {
+     "text": "Chịu sự giám sát của cử tri",
+     "answer": "right"
+    },
+    {
+     "text": "Trình dự án luật trước Quốc hội",
+     "answer": "left"
+    },
+    {
+     "text": "Báo cáo với cử tri về hoạt động của đại biểu",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 79, 80, 84."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đại biểu Quốc hội là người đại diện cho ý chí, nguyện vọng của Nhân dân ở {{đơn vị bầu cử}} ra mình và của Nhân dân {{cả nước}}.",
+   "bank_extra": [
+    "địa phương",
+    "tỉnh"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đại biểu Quốc hội liên hệ chặt chẽ với cử tri, chịu sự {{giám sát}} của cử tri.",
+   "bank_extra": [
+    "quản lý",
+    "bảo trợ"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Đại biểu Quốc hội chỉ đại diện cho cử tri ở đơn vị bầu cử ra mình.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 79: đại diện cả Nhân dân ở đơn vị bầu cử ra mình và Nhân dân cả nước."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày vị trí và nghĩa vụ của đại biểu Quốc hội đối với cử tri.",
+   "model": "Đại biểu đại diện ý chí, nguyện vọng của Nhân dân ở đơn vị bầu cử và Nhân dân cả nước (khoản 1 Điều 79); liên hệ chặt chẽ, chịu giám sát của cử tri; thu thập, phản ánh trung thực ý kiến cử tri; tiếp xúc, báo cáo với cử tri; trả lời yêu cầu, kiến nghị của cử tri; phổ biến, vận động Nhân dân thực hiện Hiến pháp, pháp luật.",
+   "keywords": [
+    "đơn vị bầu cử",
+    "cả nước",
+    "giám sát của cử tri",
+    "tiếp xúc"
+   ]
+  }
+ ]
+}

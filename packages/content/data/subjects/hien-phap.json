@@ -105,6 +105,90 @@
           ]
         }
       ]
+    },
+    {
+      "id": "c7-quoc-hoi",
+      "title": "Chương 7. Quốc hội nước CHXHCN Việt Nam",
+      "lessons": [
+        {
+          "id": "hp-7a",
+          "title": "Vị trí, nhiệm kỳ và cơ cấu tổ chức của Quốc hội",
+          "concepts": [
+            "vi-tri-quoc-hoi",
+            "nhiem-ky-quoc-hoi",
+            "uy-ban-thuong-vu-quoc-hoi",
+            "hoi-dong-dan-toc-uy-ban",
+            "bo-phieu-tin-nhiem"
+          ]
+        },
+        {
+          "id": "hp-7b",
+          "title": "Đại biểu Quốc hội và hoạt động lập pháp",
+          "concepts": [
+            "dai-bieu-quoc-hoi",
+            "chat-van",
+            "quyen-mien-tru-dai-bieu",
+            "quyen-trinh-du-an-luat",
+            "bieu-quyet-thong-qua-luat"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c8-chu-tich-nuoc",
+      "title": "Chương 8. Chủ tịch nước nước CHXHCN Việt Nam",
+      "lessons": [
+        {
+          "id": "hp-8a",
+          "title": "Vị trí và quyền hạn của Chủ tịch nước",
+          "concepts": [
+            "chu-tich-nuoc-vi-tri",
+            "chu-tich-nuoc-bau-nhiem-ky",
+            "chu-tich-nuoc-lap-phap",
+            "chu-tich-nuoc-nhan-su",
+            "chu-tich-nuoc-quoc-tich-khen-thuong"
+          ]
+        },
+        {
+          "id": "hp-8b",
+          "title": "Quốc phòng, đối ngoại và quan hệ với các cơ quan",
+          "concepts": [
+            "chu-tich-nuoc-quoc-phong",
+            "hoi-dong-quoc-phong-an-ninh",
+            "chu-tich-nuoc-doi-ngoai",
+            "chu-tich-nuoc-quan-he-co-quan",
+            "pho-chu-tich-nuoc"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c9-chinh-phu",
+      "title": "Chương 9. Chính phủ nước CHXHCN Việt Nam",
+      "lessons": [
+        {
+          "id": "hp-9a",
+          "title": "Vị trí, cơ cấu và nhiệm vụ của Chính phủ",
+          "concepts": [
+            "chinh-phu-vi-tri",
+            "co-cau-chinh-phu",
+            "nhiem-vu-chinh-phu",
+            "nhiem-ky-chinh-phu",
+            "chinh-phu-mat-tran"
+          ]
+        },
+        {
+          "id": "hp-9b",
+          "title": "Thủ tướng, Phó Thủ tướng, Bộ trưởng và văn bản",
+          "concepts": [
+            "thu-tuong-chinh-phu",
+            "pho-thu-tuong",
+            "bo-truong-trach-nhiem",
+            "thu-tuong-dinh-chi-van-ban",
+            "van-ban-chinh-phu"
+          ]
+        }
+      ]
     }
   ]
 }

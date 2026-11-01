@@ -1,0 +1,114 @@
+{
+ "id": "hoi-dong-quoc-phong-an-ninh",
+ "subject": "hien-phap",
+ "chapter": "c8-chu-tich-nuoc",
+ "term": "Hội đồng quốc phòng và an ninh",
+ "definition": "Hội đồng quốc phòng và an ninh gồm Chủ tịch, Phó Chủ tịch và các Ủy viên. Danh sách thành viên Hội đồng quốc phòng và an ninh do Chủ tịch nước trình Quốc hội phê chuẩn. Hội đồng quốc phòng và an ninh làm việc theo chế độ tập thể và quyết định theo đa số.",
+ "plain": "Hội đồng do Chủ tịch nước làm Chủ tịch; thành viên do Quốc hội phê chuẩn theo đề nghị của Chủ tịch nước; làm việc tập thể. Nhiệm vụ: trình Quốc hội (hoặc Ủy ban thường vụ nếu Quốc hội không họp được) quyết định tình trạng chiến tranh; động viên mọi lực lượng để bảo vệ Tổ quốc; thực hiện nhiệm vụ, quyền hạn đặc biệt do Quốc hội giao khi có chiến tranh.",
+ "example": "Khi đất nước bị xâm lược và Quốc hội không thể họp, Hội đồng quốc phòng và an ninh trình Ủy ban thường vụ Quốc hội quyết định tình trạng chiến tranh.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 89 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "chu-tich-nuoc-quoc-phong",
+  "uy-ban-thuong-vu-quoc-hoi"
+ ],
+ "keywords": [
+  "tập thể, đa số",
+  "Chủ tịch nước trình Quốc hội phê chuẩn",
+  "tình trạng chiến tranh"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hội đồng quốc phòng và an ninh làm việc theo chế độ nào?",
+   "options": [
+    "Tập thể, quyết định theo đa số",
+    "Thủ trưởng",
+    "Một người quyết định",
+    "Đồng thuận tuyệt đối"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 89.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 89 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khi Quốc hội không thể họp được, Hội đồng quốc phòng và an ninh trình cơ quan nào quyết định tình trạng chiến tranh?",
+   "options": [
+    "Ủy ban thường vụ Quốc hội",
+    "Chính phủ",
+    "Chủ tịch nước",
+    "Bộ Quốc phòng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 89.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 89 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hội đồng quốc phòng và an ninh",
+   "right": "Chủ tịch nước",
+   "cases": [
+    {
+     "text": "Trình Quốc hội quyết định tình trạng chiến tranh",
+     "answer": "left"
+    },
+    {
+     "text": "Công bố quyết định tuyên bố tình trạng chiến tranh",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 88, 89."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Danh sách thành viên Hội đồng quốc phòng và an ninh do {{Chủ tịch nước}} trình {{Quốc hội}} phê chuẩn.",
+   "bank_extra": [
+    "Thủ tướng",
+    "Chính phủ"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hội đồng quốc phòng và an ninh làm việc theo chế độ tập thể và quyết định theo {{đa số}}.",
+   "bank_extra": [
+    "đồng thuận",
+    "ý kiến Chủ tịch"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hội đồng quốc phòng và an ninh do Thủ tướng Chính phủ làm Chủ tịch.",
+   "answer": false,
+   "explain": "Sai. Chủ tịch nước giữ chức Chủ tịch Hội đồng quốc phòng và an ninh (khoản 5 Điều 88)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày cơ cấu, nguyên tắc và nhiệm vụ của Hội đồng quốc phòng và an ninh.",
+   "model": "Gồm Chủ tịch (Chủ tịch nước), Phó Chủ tịch, Ủy viên; danh sách do Chủ tịch nước trình Quốc hội phê chuẩn; làm việc tập thể, quyết định theo đa số. Nhiệm vụ: trình Quốc hội (hoặc Ủy ban thường vụ) quyết định tình trạng chiến tranh; động viên mọi lực lượng bảo vệ Tổ quốc; thực hiện nhiệm vụ đặc biệt do Quốc hội giao khi có chiến tranh (Điều 89).",
+   "keywords": [
+    "Chủ tịch nước",
+    "tập thể",
+    "tình trạng chiến tranh",
+    "động viên"
+   ]
+  }
+ ]
+}

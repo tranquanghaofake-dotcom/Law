@@ -1,0 +1,120 @@
+{
+ "id": "nhiem-vu-chinh-phu",
+ "subject": "hien-phap",
+ "chapter": "c9-chinh-phu",
+ "term": "Nhiệm vụ, quyền hạn của Chính phủ",
+ "definition": "Tổ chức thi hành Hiến pháp, luật, nghị quyết của Quốc hội, pháp lệnh, nghị quyết của Ủy ban thường vụ Quốc hội, lệnh, quyết định của Chủ tịch nước;",
+ "plain": "Điều 96 có 8 nhóm nhiệm vụ. Nổi bật: (1) tổ chức thi hành Hiến pháp, luật; (2) đề xuất chính sách, trình dự án luật, dự án ngân sách; (3) thống nhất quản lý kinh tế, văn hóa, xã hội, quốc phòng, an ninh, đối ngoại; (4) trình Quốc hội thành lập, bãi bỏ bộ, điều chỉnh địa giới tỉnh; (5) thống nhất quản lý nền hành chính quốc gia, cán bộ, công chức, phòng chống tham nhũng; (6) bảo vệ quyền con người, quyền công dân; (7) ký điều ước nhân danh Chính phủ; (8) phối hợp với Mặt trận.",
+ "example": "Quốc hội thông qua luật mới, Chính phủ ban hành nghị định quy định chi tiết và chỉ đạo các bộ, địa phương triển khai: đó là nhiệm vụ \"tổ chức thi hành\" tại khoản 1 Điều 96.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 96 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "chinh-phu-vi-tri",
+  "van-ban-chinh-phu",
+  "thu-tuong-chinh-phu"
+ ],
+ "keywords": [
+  "tổ chức thi hành Hiến pháp, luật",
+  "thống nhất quản lý",
+  "trình dự án luật, ngân sách",
+  "quản lý nền hành chính quốc gia"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nhiệm vụ đầu tiên được liệt kê tại khoản 1 Điều 96 là gì?",
+   "options": [
+    "Tổ chức thi hành Hiến pháp, luật, nghị quyết của Quốc hội, pháp lệnh, lệnh, quyết định của Chủ tịch nước",
+    "Làm luật",
+    "Xét xử vụ án",
+    "Giám sát tối cao"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 96.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 96 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Việc thành lập, bãi bỏ bộ do Chính phủ làm gì?",
+   "options": [
+    "Trình Quốc hội quyết định",
+    "Tự quyết định",
+    "Trình Chủ tịch nước quyết định",
+    "Trình Ủy ban thường vụ quyết định"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 96; khoản 9 Điều 70.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 96 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Chính phủ",
+   "right": "Quốc hội",
+   "cases": [
+    {
+     "text": "Thống nhất quản lý nền hành chính quốc gia",
+     "answer": "left"
+    },
+    {
+     "text": "Quyết định dự toán ngân sách nhà nước",
+     "answer": "right"
+    },
+    {
+     "text": "Trình dự án ngân sách nhà nước",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 70, 96."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chính phủ tổ chức {{thi hành}} Hiến pháp, luật, nghị quyết của Quốc hội; {{thống nhất}} quản lý nền hành chính quốc gia.",
+   "bank_extra": [
+    "ban hành",
+    "phân tán"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chính phủ bảo vệ quyền và lợi ích của Nhà nước và xã hội, quyền {{con người}}, quyền công dân.",
+   "bank_extra": [
+    "sở hữu",
+    "dân tộc"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chính phủ có quyền tự quyết định điều chỉnh địa giới hành chính tỉnh.",
+   "answer": false,
+   "explain": "Sai. Chính phủ trình Quốc hội quyết định (khoản 4 Điều 96; khoản 9 Điều 70)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Kể các nhóm nhiệm vụ, quyền hạn chính của Chính phủ theo Điều 96.",
+   "model": "Tổ chức thi hành Hiến pháp, luật; đề xuất chính sách, trình dự án luật, ngân sách; thống nhất quản lý kinh tế, văn hóa, xã hội, quốc phòng, an ninh, đối ngoại; trình Quốc hội thành lập, bãi bỏ bộ, điều chỉnh địa giới tỉnh; thống nhất quản lý nền hành chính quốc gia, cán bộ, công chức, phòng chống tham nhũng; bảo vệ quyền con người, quyền công dân; đàm phán, ký điều ước; phối hợp với Mặt trận.",
+   "keywords": [
+    "thi hành",
+    "trình dự án luật",
+    "thống nhất quản lý",
+    "quyền con người"
+   ]
+  }
+ ]
+}

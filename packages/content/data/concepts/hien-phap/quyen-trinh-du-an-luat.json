@@ -1,0 +1,117 @@
+{
+ "id": "quyen-trinh-du-an-luat",
+ "subject": "hien-phap",
+ "chapter": "c7-quoc-hoi",
+ "term": "Quyền trình dự án luật",
+ "definition": "Chủ tịch nước, Ủy ban thường vụ Quốc hội, Hội đồng dân tộc, Ủy ban của Quốc hội, Chính phủ, Tòa án nhân dân tối cao, Viện kiểm sát nhân dân tối cao, Kiểm toán nhà nước, Ủy ban trung ương Mặt trận Tổ quốc Việt Nam và cơ quan trung ương của tổ chức thành viên của Mặt trận có quyền trình dự án luật trước Quốc hội, trình dự án pháp lệnh trước Ủy ban thường vụ Quốc hội. Đại biểu Quốc hội có quyền trình kiến nghị về luật, pháp lệnh và dự án luật, dự án pháp lệnh trước Quốc hội, Ủy ban thường vụ Quốc hội.",
+ "plain": "Quyền \"sáng kiến lập pháp\": ai được đưa dự án luật vào Quốc hội. Thực tế phần lớn dự án luật do Chính phủ trình. Đại biểu Quốc hội có quyền trình cả kiến nghị về luật lẫn dự án luật. Mặt trận Tổ quốc và tổ chức thành viên cũng có quyền này. Phân biệt: dự án LUẬT trình Quốc hội; dự án PHÁP LỆNH trình Ủy ban thường vụ Quốc hội.",
+ "example": "Tòa án nhân dân tối cao trình dự án Luật Tổ chức Tòa án nhân dân sửa đổi trước Quốc hội: đúng quyền tại khoản 1 Điều 84.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 84 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "uy-ban-thuong-vu-quoc-hoi",
+  "bieu-quyet-thong-qua-luat",
+  "hoi-dong-dan-toc-uy-ban"
+ ],
+ "keywords": [
+  "sáng kiến lập pháp",
+  "dự án luật trước Quốc hội",
+  "dự án pháp lệnh trước Ủy ban thường vụ",
+  "đại biểu Quốc hội"
+ ],
+ "note": "Nghị quyết 203/2025/QH15 (hiệu lực 16/6/2025) sửa khoản 1 Điều 84. Chủ thể thuộc hệ thống Mặt trận có quyền trình dự án luật được ghi thành \"Ủy ban trung ương Mặt trận Tổ quốc Việt Nam và cơ quan trung ương của tổ chức thành viên của Mặt trận\", gắn với việc sắp xếp các tổ chức chính trị - xã hội vào Mặt trận năm 2025. Giáo trình in trước 2025 trích theo câu chữ cũ.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chủ thể nào KHÔNG có quyền trình dự án luật trước Quốc hội theo Điều 84?",
+   "options": [
+    "Ủy ban nhân dân tỉnh",
+    "Chính phủ",
+    "Kiểm toán nhà nước",
+    "Đại biểu Quốc hội"
+   ],
+   "answer": 0,
+   "explain": "Điều 84 không nêu Ủy ban nhân dân tỉnh.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 84 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Dự án pháp lệnh được trình trước cơ quan nào?",
+   "options": [
+    "Ủy ban thường vụ Quốc hội",
+    "Quốc hội tại kỳ họp",
+    "Chính phủ",
+    "Chủ tịch nước"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 84.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 84 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Dự án luật",
+   "right": "Dự án pháp lệnh",
+   "cases": [
+    {
+     "text": "Trình trước Quốc hội",
+     "answer": "left"
+    },
+    {
+     "text": "Trình trước Ủy ban thường vụ Quốc hội",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 84."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chủ tịch nước, Ủy ban thường vụ Quốc hội, Chính phủ, Tòa án nhân dân tối cao, Viện kiểm sát nhân dân tối cao, Kiểm toán nhà nước, Ủy ban trung ương {{Mặt trận Tổ quốc Việt Nam}}… có quyền trình dự án luật trước {{Quốc hội}}.",
+   "bank_extra": [
+    "Hội đồng nhân dân",
+    "Chính phủ"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đại biểu Quốc hội có quyền trình {{kiến nghị về luật}}, pháp lệnh và dự án luật, dự án pháp lệnh.",
+   "bank_extra": [
+    "nghị định",
+    "quyết định"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Đại biểu Quốc hội chỉ được trình kiến nghị về luật, không được trình dự án luật.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 84: đại biểu có quyền trình cả kiến nghị về luật, pháp lệnh và dự án luật, dự án pháp lệnh."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các chủ thể có quyền trình dự án luật theo Điều 84 Hiến pháp.",
+   "model": "Chủ tịch nước, Ủy ban thường vụ Quốc hội, Hội đồng dân tộc, Ủy ban của Quốc hội, Chính phủ, Tòa án nhân dân tối cao, Viện kiểm sát nhân dân tối cao, Kiểm toán nhà nước, Ủy ban trung ương Mặt trận Tổ quốc Việt Nam và cơ quan trung ương của tổ chức thành viên của Mặt trận (dự án luật trước Quốc hội, dự án pháp lệnh trước Ủy ban thường vụ); đại biểu Quốc hội trình kiến nghị và dự án.",
+   "keywords": [
+    "Chính phủ",
+    "Mặt trận Tổ quốc",
+    "đại biểu Quốc hội",
+    "pháp lệnh"
+   ]
+  }
+ ]
+}

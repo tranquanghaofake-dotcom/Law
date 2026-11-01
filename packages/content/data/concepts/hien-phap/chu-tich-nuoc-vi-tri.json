@@ -1,0 +1,123 @@
+{
+ "id": "chu-tich-nuoc-vi-tri",
+ "subject": "hien-phap",
+ "chapter": "c8-chu-tich-nuoc",
+ "term": "Vị trí của Chủ tịch nước",
+ "definition": "Chủ tịch nước là người đứng đầu Nhà nước, thay mặt nước Cộng hoà xã hội chủ nghĩa Việt Nam về đối nội và đối ngoại.",
+ "plain": "Chủ tịch nước là nguyên thủ quốc gia: đứng đầu NHÀ NƯỚC (không phải đứng đầu Chính phủ như ở chế độ tổng thống). Chủ tịch nước có quyền hạn ở cả lập pháp (công bố luật, đề nghị xem xét lại pháp lệnh), hành pháp (đề nghị bầu Thủ tướng, bổ nhiệm Bộ trưởng theo nghị quyết Quốc hội), tư pháp (đề nghị bầu Chánh án, bổ nhiệm Thẩm phán Tòa án nhân dân tối cao, đặc xá) và quốc phòng, đối ngoại.",
+ "example": "Khi một nguyên thủ nước ngoài thăm chính thức Việt Nam, Chủ tịch nước là người đón tiếp với tư cách thay mặt Nhà nước về đối ngoại; còn Thủ tướng đứng đầu Chính phủ điều hành công việc hành chính.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 86 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "chu-tich-nuoc-bau-nhiem-ky",
+  "thu-tuong-chinh-phu",
+  "vi-tri-quoc-hoi"
+ ],
+ "keywords": [
+  "người đứng đầu Nhà nước",
+  "thay mặt về đối nội và đối ngoại",
+  "nguyên thủ quốc gia"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 86 Hiến pháp 2013, Chủ tịch nước là ai?",
+   "options": [
+    "Người đứng đầu Nhà nước, thay mặt nước CHXHCN Việt Nam về đối nội và đối ngoại",
+    "Người đứng đầu Chính phủ",
+    "Người đứng đầu Quốc hội",
+    "Người đứng đầu hệ thống Tòa án"
+   ],
+   "answer": 0,
+   "explain": "Điều 86.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 86 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người đứng đầu Chính phủ là ai?",
+   "options": [
+    "Thủ tướng Chính phủ",
+    "Chủ tịch nước",
+    "Chủ tịch Quốc hội",
+    "Phó Chủ tịch nước"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 95.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 95 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Chủ tịch nước",
+   "right": "Thủ tướng Chính phủ",
+   "cases": [
+    {
+     "text": "Người đứng đầu Nhà nước",
+     "answer": "left"
+    },
+    {
+     "text": "Người đứng đầu Chính phủ",
+     "answer": "right"
+    },
+    {
+     "text": "Thống lĩnh lực lượng vũ trang nhân dân",
+     "answer": "left"
+    },
+    {
+     "text": "Lãnh đạo hệ thống hành chính nhà nước từ trung ương đến địa phương",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 86, 88, 95, 98."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chủ tịch nước là người đứng đầu {{Nhà nước}}, thay mặt nước Cộng hoà xã hội chủ nghĩa Việt Nam về {{đối nội}} và đối ngoại.",
+   "bank_extra": [
+    "Chính phủ",
+    "kinh tế"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chủ tịch nước ban hành {{lệnh}}, quyết định để thực hiện nhiệm vụ, quyền hạn của mình.",
+   "bank_extra": [
+    "nghị định",
+    "thông tư"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chủ tịch nước là người đứng đầu Chính phủ.",
+   "answer": false,
+   "explain": "Sai. Chủ tịch nước đứng đầu Nhà nước (Điều 86); Thủ tướng đứng đầu Chính phủ (khoản 2 Điều 95)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày vị trí pháp lý của Chủ tịch nước.",
+   "model": "Chủ tịch nước là người đứng đầu Nhà nước, thay mặt nước CHXHCN Việt Nam về đối nội và đối ngoại (Điều 86); do Quốc hội bầu trong số đại biểu Quốc hội, chịu trách nhiệm và báo cáo công tác trước Quốc hội (Điều 87); ban hành lệnh, quyết định (Điều 91).",
+   "keywords": [
+    "đứng đầu Nhà nước",
+    "đối nội và đối ngoại",
+    "Quốc hội bầu",
+    "lệnh, quyết định"
+   ]
+  }
+ ]
+}
