@@ -10,11 +10,11 @@ const norm = (s: string) => s.normalize('NFC').replace(/\(…\)/g, ' ').replace(
 
 describe('nội dung Luật Thương mại 1', () => {
   it('mọi khái niệm hợp lệ, nguồn statute, có recall và 2 cloze', () => {
-    expect(files.length).toBe(24);
+    expect(files.length).toBe(25);
     for (const f of files) {
       const c = conceptSchema.parse(JSON.parse(readFileSync(join(dir, f), 'utf8')));
       expect(c.source.kind).toBe('statute');
-      expect(c.source.cite).toMatch(/(Luật Doanh nghiệp 2020 \(VBHN 67\/VBHN-VPQH 2025\)|Luật Hợp tác xã 2023 \(VBHN 101\/VBHN-VPQH 2026\)|Luật Phục hồi, phá sản 2025 \(142\/2025\/QH15\))$/);
+      expect(c.source.cite).toMatch(/(Luật Doanh nghiệp 2020 \(VBHN 67\/VBHN-VPQH 2025\)|Luật Hợp tác xã 2023 \(VBHN 101\/VBHN-VPQH 2026\)|Luật Phục hồi, phá sản 2025 \(142\/2025\/QH15\)|Nghị định 168\/2025\/NĐ-CP về đăng ký doanh nghiệp)$/);
       expect(c.source.url).toMatch(/^https:\/\/thuvienphapluat\.vn\//);
       expect(c.checked).toBe('2026-11-01');
       expect(c.items.filter((i) => i.type === 'recall').length).toBe(1);
@@ -29,7 +29,7 @@ describe('nội dung Luật Thương mại 1', () => {
     }
   });
   it('definition xuất hiện nguyên văn trong văn bản luật (từng câu)', () => {
-    const LAWS: [string, string][] = [["Luật Hợp tác xã", "lhtx-vbhn-2026.txt"], ["Luật Phục hồi, phá sản", "lphps-2025.txt"]];
+    const LAWS: [string, string][] = [["Luật Hợp tác xã", "lhtx-vbhn-2026.txt"], ["Luật Phục hồi, phá sản", "lphps-2025.txt"], ["Nghị định 168/2025", "nd168-2025.txt"]];
     const cache: Record<string, string> = {};
     const lawFor = (cite: string) => { const hit = LAWS.find(([k]) => cite.includes(k)); const file = hit ? hit[1] : 'ldn-vbhn-2025.txt'; return (cache[file] ??= norm(readFileSync(join(root, 'laws', file), 'utf8'))); };
     for (const f of files) {
