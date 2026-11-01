@@ -4,10 +4,10 @@
   import { loadIndex, loadSubject, loadConcepts } from '$lib/content/loader';
   import { repo } from '$lib/store/progress-repo';
   import { stats } from '$lib/store/stats';
-  import { gradeFor } from '$lib/game/rank';
+  import { subjectSummary } from '$lib/ui/subjectSummary';
   import { weekFlags, weekStart } from '$lib/ui/week';
   import { hashFor } from '$lib/router.svelte';
-  import { GROUPS, groupSets } from '$lib/ui/groups';
+  import { GROUPS, pickQuickQuiz } from '$lib/ui/groups';
   import { knownConcepts, pickHeroState, type HeroState } from '$lib/ui/today';
   import { setRail } from '$lib/ui/rail.svelte';
   import HeroCard from '$lib/ui/HeroCard.svelte';
@@ -45,13 +45,12 @@
       const started = new Set(all.filter((p) => p.level > 0 && known.has(p.conceptId)).map((p) => p.subject));
       rows = subjects
         .filter((s) => started.size === 0 || started.has(s.id))
-        .map((s) => { const ids = s.chapters.flatMap((c) => c.lessons.flatMap((l) => l.concepts)); const mastered = ids.filter((id) => (levels[id] ?? 0) >= 5).length; return { subject: s, grade: ids.length ? gradeFor(mastered / ids.length) : null, mastered, total: ids.length }; });
+        .map((s) => { const x = subjectSummary(s, levels); return { subject: s, grade: x.grade, mastered: x.mastered, total: x.total }; });
 
-      // một thẻ kiểm tra nhanh: đề chưa đạt điểm tối đa gần nhất, không thì đề đầu tiên
-      const sets = groupSets(idx.sets).flatMap(([, v]) => v);
-      let pick = sets[0] ?? null; let pickBest: number | null = null;
-      for (const set of sets) { const b = await stats.best(set.id); if (b == null || b < set.count) { pick = set; pickBest = b; break; } }
-      quick = pick ? { set: pick, best: pickBest } : null;
+      // một thẻ kiểm tra nhanh: đề chưa đạt điểm tối đa đầu tiên, không thì đề đầu (spec §3.3)
+      const best: Record<string, number | null> = {};
+      for (const set of idx.sets) best[set.id] = await stats.best(set.id);
+      quick = pickQuickQuiz(idx.sets, best);
 
       // rail: 7 ngày có phiên, hẹn ôn ngày mai
       week = weekFlags(await repo.reviewDays(weekStart()));

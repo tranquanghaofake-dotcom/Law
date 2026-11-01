@@ -31,7 +31,7 @@ export function currentLesson(subject: Subject, levels: Record<string, Level>): 
   return lessonsOf(subject).find((l) => !isLessonDone(l, levels)) ?? null;
 }
 
-/** Đợt dở: chưa xong nhưng đã có khái niệm ở bậc 1–2. */
+/** Đợt dở: chưa xong nhưng đã có ít nhất một khái niệm được học (bậc ≥ 1). */
 export function inProgressLesson(subject: Subject, levels: Record<string, Level>): Lesson | null {
-  return lessonsOf(subject).find((l) => !isLessonDone(l, levels) && l.concepts.some((c) => { const v = levels[c] ?? 0; return v >= 1 && v < LESSON_DONE_LEVEL; })) ?? null;
+  return lessonsOf(subject).find((l) => !isLessonDone(l, levels) && l.concepts.some((c) => (levels[c] ?? 0) >= 1)) ?? null;
 }

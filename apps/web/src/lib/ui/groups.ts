@@ -18,3 +18,11 @@ export function groupSets<T extends { group: string }>(sets: T[]): [string, T[]]
   for (const s of sets) m.set(s.group, [...(m.get(s.group) ?? []), s]);
   return sortGroups([...m.entries()]);
 }
+
+/** Thẻ "Kiểm tra nhanh" ở Hôm nay: đề đầu tiên (theo thứ tự nhóm) chưa đạt tối đa; nếu đạt hết thì đề đầu, kèm điểm. */
+export function pickQuickQuiz<T extends { id: string; group: string; count: number }>(sets: T[], best: Record<string, number | null | undefined>): { set: T; best: number | null } | null {
+  const ordered = groupSets(sets).flatMap(([, v]) => v);
+  if (!ordered.length) return null;
+  const set = ordered.find((s) => best[s.id] == null || (best[s.id] as number) < s.count) ?? ordered[0];
+  return { set, best: best[set.id] ?? null };
+}

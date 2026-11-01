@@ -94,7 +94,7 @@ Nguyên tắc: thẻ đầu tiên trả lời "tôi quay lại để làm gì"; 
 | Ưu tiên | Điều kiện | Nội dung thẻ | Nút |
 |---|---|---|---|
 | 1 | `due > 0` | kicker **ÔN HÔM NAY** · số to `12` · "khái niệm sắp quên · ~4 phút" · tối đa 3 chip tên khái niệm | **Ôn ngay →** (`#/on`) |
-| 2 | có đợt dở: ≥ 1 khái niệm trong đợt có bậc 1–2 và chưa phải mọi khái niệm ≥ 3 | kicker **TIẾP TỤC** · "Luật Hiến pháp › Hiến pháp là gì" · thanh `2/5` | **Học tiếp →** (`#/hoc/...`) |
+| 2 | có đợt dở: ≥ 1 khái niệm trong đợt đã học (bậc ≥ 1) và chưa phải mọi khái niệm ≥ 3 (sửa 01/11: trước ghi "bậc 1–2", khiến đợt {3, 0} hiện ĐỢT MỚI) | kicker **TIẾP TỤC** · "Luật Hiến pháp › Hiến pháp là gì" · thanh `2/5` | **Học tiếp →** (`#/hoc/...`) |
 | 3 | đã học ≥ 1 khái niệm, không due, không dở | kicker **ĐỢT MỚI** · tên đợt kế tiếp (đợt `current` theo thuật toán `SubjectPath`) · "5 khái niệm · ~6 phút" | **Bắt đầu →** |
 | 4 | chưa có tiến độ nào | kicker **BẮT ĐẦU** · một câu: "Mỗi khái niệm đi qua 6 bậc: gặp → nhận biết → phân biệt → điền → tình huống → tự trả lời." · tên môn + đợt đầu | **Học đợt đầu tiên →** |
 

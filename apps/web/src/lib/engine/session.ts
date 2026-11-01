@@ -80,7 +80,10 @@ export function buildLearnSession(concepts: Concept[], levels: Record<string, Le
 }
 
 /** Ôn: mỗi khái niệm 1 bước ở bậc hiện tại (bậc 6 → ngẫu nhiên 1–5), tối đa `max`. */
-export function buildReviewSession(concepts: Concept[], levels: Record<string, Level>, rng: () => number, max = 20): Step[] {
+/** Số bước tối đa của một phiên ôn. */
+export const REVIEW_MAX_STEPS = 20;
+
+export function buildReviewSession(concepts: Concept[], levels: Record<string, Level>, rng: () => number, max = REVIEW_MAX_STEPS): Step[] {
   return shuffle(concepts, rng)
     .slice(0, max)
     .map((c) => {

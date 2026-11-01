@@ -15,10 +15,11 @@ describe('lessonStates', () => {
     expect(lessonStates(subject, { a: 3, b: 3 })).toEqual({ 'hp-1': 'done', 'hp-2': 'current' });
     expect(lessonStates(subject, {})).toEqual({ 'hp-1': 'current', 'hp-2': 'locked' });
   });
-  it('inProgressLesson: có khái niệm bậc 1–2 và chưa xong', () => {
+  it('inProgressLesson: đã học ít nhất 1 khái niệm và chưa xong', () => {
     expect(inProgressLesson(subject, { a: 1 })?.id).toBe('hp-1');
     expect(inProgressLesson(subject, {})).toBeNull();
     expect(inProgressLesson(subject, { a: 3, b: 3 })).toBeNull();
+    expect(inProgressLesson(subject, { a: 3 })?.id).toBe('hp-1'); // đã bắt đầu, chưa xong
   });
   it('currentLesson: đợt đầu khi chưa học; null khi học hết', () => {
     expect(currentLesson(subject, {})?.id).toBe('hp-1');
