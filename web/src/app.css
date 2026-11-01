@@ -37,3 +37,52 @@ button { font: inherit; color: inherit; }
 .mark { display: inline-grid; place-items: center; width: 30px; height: 30px; border-radius: 9px; background: var(--ink); color: var(--paper); font-size: 18px; margin-right: 6px; }
 .layout { max-width: 1100px; margin: 0 auto; padding: 8px 16px 32px; outline: none; }
 .loading { color: var(--muted); text-align: center; padding: 32px 0; }
+
+/* ---- Layout: 1 cột; ≥1024 px hai cột (thẻ 720 + cột đợt 320); ≥1440 px tối đa 1100 ---- */
+.layout { display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px; align-items: start; }
+.layout > .aside { display: none; }
+@media (min-width: 1024px) {
+  .layout.with-aside { grid-template-columns: minmax(0, 720px) 320px; gap: 32px; justify-content: center; }
+  .layout.with-aside > .aside { display: block; position: sticky; top: 16px; }
+}
+@media (min-width: 1440px) {
+  .layout, .top { max-width: 1100px; }
+}
+
+/* ---- Giảm chuyển động ---- */
+.reduced-motion *, .reduced-motion *::before, .reduced-motion *::after { animation: none !important; transition: none !important; }
+@media (prefers-reduced-motion: reduce) {
+  :root:not(.motion-on) *, :root:not(.motion-on) *::before, :root:not(.motion-on) *::after { animation: none !important; transition: none !important; }
+}
+
+/* ---- Thành phần chung ---- */
+.card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; box-shadow: var(--shadow); }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 10px 18px; border-radius: 12px; border: 1px solid transparent; background: var(--ink); color: var(--paper); font-weight: 600; cursor: pointer; text-decoration: none; }
+.btn:hover { filter: brightness(1.08); }
+.btn:focus-visible, .opt:focus-visible, a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.btn.ghost { background: transparent; color: var(--ink); border-color: var(--line); }
+.btn.primary { background: var(--accent); color: var(--accent-ink); }
+.btn:disabled { opacity: .5; cursor: default; }
+.muted { color: var(--muted); }
+.quote { font-family: var(--font-quote); font-size: 18px; line-height: 1.6; border-left: 3px solid var(--seal); padding-left: 14px; margin: 12px 0; }
+.chip { display: inline-block; font-size: 12px; font-weight: 600; padding: 2px 8px; border-radius: 999px; background: color-mix(in srgb, var(--accent) 16%, transparent); color: var(--accent); }
+h1 { font-size: clamp(26px, 6vw, 34px); line-height: 1.2; letter-spacing: -.02em; font-weight: 800; margin: 8px 0; }
+h2 { font-size: 20px; font-weight: 700; margin: 24px 0 10px; }
+.section-title { display: flex; align-items: baseline; gap: 8px; margin: 28px 0 10px; font-size: 14px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.section-title b { color: var(--ink); }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* ---- Header ---- */
+.top .meta { display: flex; align-items: center; gap: 14px; }
+.flame { display: inline-flex; align-items: center; gap: 4px; font-weight: 700; color: var(--accent); text-decoration: none; }
+.flame.cold { color: var(--muted); }
+.rank { display: inline-flex; align-items: center; gap: 6px; font-weight: 600; font-size: 14px; text-decoration: none; }
+.rank .seal { display: inline-grid; place-items: center; width: 26px; height: 26px; border-radius: 6px; background: var(--seal); color: #fff; font-size: 12px; font-weight: 800; transform: rotate(-6deg); }
+.rank .tier { color: var(--muted); font-size: 12px; }
+
+/* ---- Thanh phiên ---- */
+.session-bar { display: flex; align-items: center; gap: 12px; margin: 4px 0 14px; }
+.session-bar .progress { flex: 1; height: 8px; background: var(--line); border-radius: 999px; overflow: hidden; }
+.session-bar .progress span { display: block; height: 100%; background: var(--accent); transition: width .25s ease; }
+.session-bar .exit { background: none; border: 1px solid var(--line); border-radius: 10px; padding: 6px 10px; cursor: pointer; }
+.session-bar .count { font-size: 13px; color: var(--muted); min-width: 48px; text-align: right; }
