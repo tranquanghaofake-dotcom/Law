@@ -8,6 +8,7 @@
   import { storage } from '$lib/store/status.svelte';
   import StreakFlame from './StreakFlame.svelte';
   import RankBadge from './RankBadge.svelte';
+  import Icon from '$lib/art/Icon.svelte';
 
   let { active, children }: { active: RouteName; children: Snippet } = $props();
   const current = $derived(activeNav(active));
@@ -27,7 +28,7 @@
     <ul>
       {#each NAV as n (n.name)}
         <li><a class="item" class:on={current === n.name} href={n.href} aria-current={current === n.name ? 'page' : undefined}>
-          <span class="ico" aria-hidden="true">{n.icon}</span><span class="lbl">{n.label}</span></a></li>
+          <span class="ico"><Icon name={n.name} /></span><span class="lbl">{n.label}</span></a></li>
       {/each}
     </ul>
     <a class="me" href="#/toi">
@@ -55,7 +56,7 @@
   <nav class="tabbar" aria-label="Điều hướng chính">
     {#each NAV as n (n.name)}
       <a class:on={current === n.name} href={n.href} aria-current={current === n.name ? 'page' : undefined}>
-        <span class="ico" aria-hidden="true">{n.icon}</span><span class="lbl">{n.label}</span></a>
+        <span class="ico"><Icon name={n.name} /></span><span class="lbl">{n.label}</span></a>
     {/each}
   </nav>
 </div>

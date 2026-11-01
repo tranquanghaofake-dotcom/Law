@@ -1,11 +1,17 @@
 <script lang="ts">
   import type { HeroState } from './today';
   import { hashFor } from '$lib/router.svelte';
+  import SubjectArt from '$lib/art/SubjectArt.svelte';
+  import { artFor, PAGE_ART } from '$lib/art/registry';
   let { state }: { state: HeroState } = $props();
+  // Ôn chung → gác Văn Miếu; đã học hết → vịnh núi đá (nghỉ); đang học một môn → hình của môn đó.
+  const art = $derived('subject' in state ? artFor(state.subject.id) : state.kind === 'due' ? PAGE_ART.due : PAGE_ART.done);
   const lessonHref = (s: Extract<HeroState, { lesson: unknown }>) => hashFor('lesson', { subject: s.subject.id, lesson: s.lesson.id });
 </script>
 
-<section class="card hero-card {state.kind}" aria-labelledby="hero-kicker">
+<section class="card frame hero-card {state.kind}" aria-labelledby="hero-kicker">
+  <SubjectArt name={art} class="hero-art" />
+  <div class="hero-body">
   {#if state.kind === 'due'}
     <p class="kicker" id="hero-kicker">ÔN HÔM NAY</p>
     <p class="headline"><span class="big">{state.count}</span><span>khái niệm sắp quên · ~{state.minutes} phút</span></p>
@@ -31,4 +37,5 @@
     <p class="headline"><b>Bạn đã học hết các đợt hiện có.</b></p>
     <p class="muted">Lịch ôn sẽ gọi bạn khi khái niệm sắp quên. <a href={hashFor('subjects')}>Xem môn →</a></p>
   {/if}
+  </div>
 </section>
