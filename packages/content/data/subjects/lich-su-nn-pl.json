@@ -67,6 +67,18 @@
             "thai-thuong-hoang",
             "hinh-thu-thoi-tran"
           ]
+        },
+        {
+          "id": "ls6-4",
+          "title": "Pháp luật thời Hậu Lê: Quốc triều hình luật",
+          "concepts": [
+            "ngu-hinh-qthl",
+            "thap-ac-qthl",
+            "bat-nghi-qthl",
+            "chuoc-toi-gia-tre-qthl",
+            "huong-hoa-qthl",
+            "bao-ve-nguoi-yeu-the-qthl"
+          ]
         }
       ]
     }

@@ -1,0 +1,123 @@
+{
+ "id": "chuoc-toi-gia-tre-qthl",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c6-trung-dai",
+ "term": "Người già, trẻ em, người tàn tật phạm tội (Điều 16) và tự thú",
+ "definition": "Những người từ 70 tuổi trở lên, 15 tuổi trở xuống cùng những người bị phế tật, phạm từ tội lưu trở xuống đều cho chuộc bằng tiền, phạm tội thập ác thì không theo luật này. (…) Từ 90 tuổi trở lên, 7 tuổi trở xuống dầu có bị tội chết cũng không hành hình, nếu có kẻ nào xui xiểm thì bắt tội kẻ xui xiểm",
+ "plain": "Điều 16 phân tầng trách nhiệm theo tuổi và sức khỏe: (1) 70 tuổi trở lên, 15 tuổi trở xuống, người phế tật: phạm tội từ lưu trở xuống được CHUỘC bằng tiền (trừ thập ác); (2) 80 tuổi trở lên, 10 tuổi trở xuống, người ác tật: phạm tội chết thì tâu vua xét định, một số tội được chuộc, ngoài ra không bắt tội; (3) 90 tuổi trở lên, 7 tuổi trở xuống: dù tội chết cũng KHÔNG hành hình, bắt tội kẻ xui xiểm. Điều 18: phạm tội chưa bị phát giác mà TỰ THÚ thì được tha tội. Đây là các quy định NHÂN ĐẠO, kế thừa chiếu chuộc tội năm 1042 thời Lý; có thể liên hệ với chính sách xử lý người chưa thành niên, người cao tuổi phạm tội trong luật hình sự hiện đại.",
+ "example": "Kẻ xúi một đứa trẻ 6 tuổi đi ăn trộm: đứa trẻ không bị hành hình, kẻ xui xiểm bị bắt tội (Điều 16).",
+ "source": {
+  "kind": "primary",
+  "cite": "Quốc triều hình luật, Điều 16 (bản dịch Nguyễn Ngọc Nhuận, Nguyễn Tá Nhí; bản điện tử, chưa đối chiếu bản in)",
+  "url": "https://luatduonggia.com/wp-content/uploads/2024/03/QUOC-TRIEU-HINH-LUAT.pdf"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "chuoc-toi-thap-ac",
+  "bat-nghi-qthl",
+  "thap-ac-qthl"
+ ],
+ "keywords": [
+  "70 tuổi, 15 tuổi",
+  "80 tuổi, 10 tuổi",
+  "90 tuổi, 7 tuổi",
+  "chuộc bằng tiền",
+  "bắt tội kẻ xui xiểm",
+  "tự thú được tha"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 16, người từ 90 tuổi trở lên, 7 tuổi trở xuống phạm tội chết thì xử thế nào?",
+   "options": [
+    "Không hành hình; nếu có kẻ xui xiểm thì bắt tội kẻ xui xiểm",
+    "Xử chém như thường",
+    "Được chuộc bằng tiền",
+    "Giảm xuống tội lưu"
+   ],
+   "answer": 0,
+   "explain": "Điều 16.",
+   "source": {
+    "kind": "primary",
+    "cite": "Quốc triều hình luật, Điều 16"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 18, phạm tội chưa bị phát giác mà tự thú trước thì sao?",
+   "options": [
+    "Được tha tội",
+    "Được giảm một bậc",
+    "Vẫn xử như thường",
+    "Bị tăng nặng"
+   ],
+   "answer": 0,
+   "explain": "Điều 18.",
+   "source": {
+    "kind": "primary",
+    "cite": "Quốc triều hình luật, Điều 18"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Từ 70 tuổi, 15 tuổi trở xuống (tội lưu trở xuống)",
+   "right": "Từ 90 tuổi, 7 tuổi trở xuống",
+   "cases": [
+    {
+     "text": "Cho chuộc bằng tiền",
+     "answer": "left"
+    },
+    {
+     "text": "Dù tội chết cũng không hành hình",
+     "answer": "right"
+    },
+    {
+     "text": "Không áp dụng nếu phạm thập ác",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 16."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Những người từ {{70}} tuổi trở lên, {{15}} tuổi trở xuống cùng những người bị phế tật, phạm từ tội lưu trở xuống đều cho chuộc bằng tiền.",
+   "bank_extra": [
+    "60",
+    "16"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nếu có kẻ nào {{xui xiểm}} thì bắt tội kẻ xui xiểm.",
+   "bank_extra": [
+    "che giấu",
+    "làm chứng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo Điều 16, người 75 tuổi phạm tội thập ác vẫn được chuộc bằng tiền.",
+   "answer": false,
+   "explain": "Sai. \"phạm tội thập ác thì không theo luật này\"."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quy định của Quốc triều hình luật về người già, trẻ em, người tàn tật phạm tội.",
+   "model": "Điều 16: 70 tuổi trở lên, 15 tuổi trở xuống, phế tật phạm tội lưu trở xuống được chuộc (trừ thập ác); 80 tuổi, 10 tuổi trở xuống, ác tật phạm tội chết thì tâu vua xét định; 90 tuổi, 7 tuổi trở xuống không hành hình, bắt tội kẻ xui xiểm. Điều 18: tự thú trước khi bị phát giác được tha tội. Thể hiện tính nhân đạo, kế thừa thời Lý.",
+   "keywords": [
+    "70 tuổi",
+    "90 tuổi",
+    "chuộc",
+    "xui xiểm",
+    "tự thú"
+   ]
+  }
+ ]
+}
