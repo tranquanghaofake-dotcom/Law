@@ -1,0 +1,139 @@
+{
+  "id": "thuong-mai-1-de-1",
+  "group": "thuong-mai",
+  "title": "Đề kiểm tra Thương mại 1 – Loại hình doanh nghiệp",
+  "subtitle": "10 câu theo đề cương HLU, vấn đề 1–5",
+  "updated": "2026-11-01",
+  "questions": [
+    {
+      "q": "Loại hình doanh nghiệp nào KHÔNG có tư cách pháp nhân?",
+      "options": [
+        "Công ty hợp danh",
+        "Doanh nghiệp tư nhân",
+        "Công ty TNHH một thành viên",
+        "Công ty cổ phần"
+      ],
+      "answer": 1,
+      "explain": "Điều 177, 74, 111 quy định các công ty có tư cách pháp nhân; Điều 188 không quy định tư cách pháp nhân cho doanh nghiệp tư nhân (chủ chịu trách nhiệm vô hạn, không có tài sản độc lập).",
+      "basis": "Điều 188 Luật Doanh nghiệp (VBHN 67/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+    },
+    {
+      "q": "Chủ doanh nghiệp tư nhân chịu trách nhiệm thế nào?",
+      "options": [
+        "Trong phạm vi vốn đầu tư",
+        "Bằng toàn bộ tài sản của mình",
+        "Trong phạm vi vốn điều lệ",
+        "Không chịu"
+      ],
+      "answer": 1,
+      "explain": "Khoản 1 Điều 188.",
+      "basis": "Điều 188 Luật Doanh nghiệp (VBHN 67/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+    },
+    {
+      "q": "Thành viên hợp danh phải là ai?",
+      "options": [
+        "Tổ chức",
+        "Cá nhân",
+        "Doanh nghiệp nhà nước",
+        "Bất kỳ ai"
+      ],
+      "answer": 1,
+      "explain": "Điểm b khoản 1 Điều 177.",
+      "basis": "Điều 177 Luật Doanh nghiệp (VBHN 67/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+    },
+    {
+      "q": "Thành viên góp vốn trong công ty hợp danh chịu trách nhiệm thế nào?",
+      "options": [
+        "Vô hạn",
+        "Trong phạm vi số vốn đã cam kết góp",
+        "Liên đới với thành viên hợp danh",
+        "Không chịu"
+      ],
+      "answer": 1,
+      "explain": "Điểm c khoản 1 Điều 177.",
+      "basis": "Điều 177 Luật Doanh nghiệp (VBHN 67/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+    },
+    {
+      "q": "Công ty TNHH hai thành viên trở lên có tối đa bao nhiêu thành viên?",
+      "options": [
+        "30",
+        "50",
+        "100",
+        "Không giới hạn"
+      ],
+      "answer": 1,
+      "explain": "Khoản 1 Điều 46.",
+      "basis": "Điều 46 Luật Doanh nghiệp (VBHN 67/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+    },
+    {
+      "q": "Thời hạn góp đủ vốn của thành viên công ty TNHH kể từ ngày được cấp Giấy chứng nhận là bao lâu?",
+      "options": [
+        "30 ngày",
+        "90 ngày",
+        "06 tháng",
+        "01 năm"
+      ],
+      "answer": 1,
+      "explain": "Khoản 2 Điều 47.",
+      "basis": "Điều 47 Luật Doanh nghiệp (VBHN 67/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+    },
+    {
+      "q": "Chủ sở hữu công ty TNHH một thành viên có thể là ai?",
+      "options": [
+        "Chỉ cá nhân",
+        "Một tổ chức hoặc một cá nhân",
+        "Hai cá nhân",
+        "Chỉ Nhà nước"
+      ],
+      "answer": 1,
+      "explain": "Khoản 1 Điều 74.",
+      "basis": "Điều 74 Luật Doanh nghiệp (VBHN 67/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+    },
+    {
+      "q": "Công ty cổ phần cần tối thiểu bao nhiêu cổ đông?",
+      "options": [
+        "02",
+        "03",
+        "05",
+        "07"
+      ],
+      "answer": 1,
+      "explain": "Điểm b khoản 1 Điều 111.",
+      "basis": "Điều 111 Luật Doanh nghiệp (VBHN 67/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+    },
+    {
+      "q": "Loại cổ phần nào công ty cổ phần bắt buộc phải có?",
+      "options": [
+        "Ưu đãi cổ tức",
+        "Phổ thông",
+        "Ưu đãi biểu quyết",
+        "Ưu đãi hoàn lại"
+      ],
+      "answer": 1,
+      "explain": "Khoản 1 Điều 114.",
+      "basis": "Điều 114 Luật Doanh nghiệp (VBHN 67/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+    },
+    {
+      "q": "Trong 03 năm đầu, cổ đông sáng lập bán cổ phần phổ thông cho người ngoài cần điều kiện gì?",
+      "options": [
+        "Không cần",
+        "Được Đại hội đồng cổ đông chấp thuận",
+        "Được Giám đốc đồng ý",
+        "Bị cấm tuyệt đối"
+      ],
+      "answer": 1,
+      "explain": "Khoản 3 Điều 120.",
+      "basis": "Điều 120 Luật Doanh nghiệp (VBHN 67/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+    }
+  ]
+}

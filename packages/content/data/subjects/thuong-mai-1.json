@@ -1,0 +1,142 @@
+{
+  "id": "thuong-mai-1",
+  "title": "Luật Thương mại 1 (Luật Doanh nghiệp)",
+  "short": "Thương mại 1",
+  "chapters": [
+    {
+      "id": "v1",
+      "title": "Vấn đề 1. Thương nhân và hoạt động thương mại; khái niệm doanh nghiệp",
+      "lessons": [
+        {
+          "id": "tma1",
+          "title": "Thương nhân và hoạt động thương mại; khái niệm doanh nghiệp",
+          "concepts": [
+            "doanh-nghiep"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v2",
+      "title": "Vấn đề 2. Bản chất pháp lí của doanh nghiệp tư nhân và hộ kinh doanh",
+      "lessons": [
+        {
+          "id": "tma2",
+          "title": "Bản chất pháp lí của doanh nghiệp tư nhân và hộ kinh doanh",
+          "concepts": [
+            "doanh-nghiep-tu-nhan"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v3",
+      "title": "Vấn đề 3. Bản chất pháp lí của công ty hợp danh",
+      "lessons": [
+        {
+          "id": "tma3",
+          "title": "Bản chất pháp lí của công ty hợp danh",
+          "concepts": [
+            "cong-ty-hop-danh"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v4",
+      "title": "Vấn đề 4. Bản chất pháp lí của công ty trách nhiệm hữu hạn",
+      "lessons": [
+        {
+          "id": "tma4",
+          "title": "Bản chất pháp lí của công ty trách nhiệm hữu hạn",
+          "concepts": [
+            "cong-ty-tnhh-hai-thanh-vien",
+            "cong-ty-tnhh-mot-thanh-vien"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v5",
+      "title": "Vấn đề 5. Bản chất pháp lí của công ty cổ phần",
+      "lessons": [
+        {
+          "id": "tma5",
+          "title": "Bản chất pháp lí của công ty cổ phần",
+          "concepts": [
+            "cong-ty-co-phan",
+            "co-phan",
+            "co-dong-sang-lap"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v6",
+      "title": "Vấn đề 6. Thành lập doanh nghiệp",
+      "lessons": [
+        {
+          "id": "tma6",
+          "title": "Thành lập doanh nghiệp",
+          "concepts": [
+            "thanh-lap-quan-ly-doanh-nghiep"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v7",
+      "title": "Vấn đề 7. Quy chế pháp lí về tổ chức quản lí doanh nghiệp",
+      "lessons": [
+        {
+          "id": "tma7",
+          "title": "Quy chế pháp lí về tổ chức quản lí doanh nghiệp",
+          "concepts": [
+            "nguoi-quan-ly-doanh-nghiep",
+            "chu-so-huu-huong-loi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v8",
+      "title": "Vấn đề 8. Tổ chức lại, giải thể doanh nghiệp",
+      "lessons": [
+        {
+          "id": "tma8",
+          "title": "Tổ chức lại, giải thể doanh nghiệp",
+          "concepts": [
+            "to-chuc-lai-doanh-nghiep",
+            "giai-the-doanh-nghiep"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v9",
+      "title": "Vấn đề 9. Một số vấn đề pháp lí đặc thù về doanh nghiệp nhà nước",
+      "lessons": [
+        {
+          "id": "tma9",
+          "title": "Một số vấn đề pháp lí đặc thù về doanh nghiệp nhà nước",
+          "concepts": [
+            "doanh-nghiep-nha-nuoc"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v10",
+      "title": "Vấn đề 10. Một số vấn đề pháp lí về nhóm công ty",
+      "lessons": [
+        {
+          "id": "tma10",
+          "title": "Một số vấn đề pháp lí về nhóm công ty",
+          "concepts": [
+            "cong-ty-me-con"
+          ]
+        }
+      ]
+    }
+  ]
+}

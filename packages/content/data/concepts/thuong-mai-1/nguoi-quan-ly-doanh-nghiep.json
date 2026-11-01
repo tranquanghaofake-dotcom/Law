@@ -1,0 +1,119 @@
+{
+ "id": "nguoi-quan-ly-doanh-nghiep",
+ "subject": "thuong-mai-1",
+ "chapter": "v7",
+ "term": "Người quản lý doanh nghiệp",
+ "definition": "Người quản lý doanh nghiệp là người quản lý doanh nghiệp tư nhân và người quản lý công ty, bao gồm chủ doanh nghiệp tư nhân, thành viên hợp danh, Chủ tịch Hội đồng thành viên, thành viên Hội đồng thành viên, Chủ tịch công ty, Chủ tịch Hội đồng quản trị, thành viên Hội đồng quản trị, Giám đốc hoặc Tổng giám đốc và cá nhân giữ chức danh quản lý khác theo quy định tại Điều lệ công ty.",
+ "plain": "Người quản lý theo loại hình: DNTN (chủ DNTN); HỢP DANH (thành viên hợp danh); TNHH (Chủ tịch, thành viên Hội đồng thành viên, Chủ tịch công ty, Giám đốc/Tổng giám đốc); CỔ PHẦN (Chủ tịch, thành viên HĐQT, Giám đốc/Tổng giám đốc); và chức danh quản lý khác theo Điều lệ. Lưu ý: KIỂM SOÁT VIÊN không phải người quản lý theo định nghĩa này. Người quản lý có NGHĨA VỤ trung thành, cẩn trọng, tránh xung đột lợi ích (Điều 71, 165).",
+ "example": "Tổng giám đốc công ty cổ phần là người quản lý doanh nghiệp; Trưởng ban kiểm soát thì không thuộc định nghĩa này.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 24 Điều 4 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "chu-so-huu-huong-loi",
+  "thanh-lap-quan-ly-doanh-nghiep"
+ ],
+ "keywords": [
+  "chủ DNTN, thành viên hợp danh",
+  "Hội đồng thành viên, Hội đồng quản trị",
+  "Giám đốc, Tổng giám đốc",
+  "chức danh khác theo Điều lệ"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chức danh nào là người quản lý doanh nghiệp theo khoản 24 Điều 4?",
+   "options": [
+    "Thành viên Hội đồng quản trị",
+    "Cổ đông phổ thông nhỏ",
+    "Nhân viên kế toán",
+    "Kiểm toán viên độc lập"
+   ],
+   "answer": 0,
+   "explain": "Khoản 24 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 24 Điều 4 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ngoài các chức danh luật liệt kê, ai còn có thể là người quản lý doanh nghiệp?",
+   "options": [
+    "Cá nhân giữ chức danh quản lý khác theo quy định tại Điều lệ công ty",
+    "Mọi người lao động",
+    "Khách hàng lớn",
+    "Ngân hàng cho vay"
+   ],
+   "answer": 0,
+   "explain": "Khoản 24 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 24 Điều 4 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Người quản lý doanh nghiệp",
+   "right": "Không thuộc định nghĩa",
+   "cases": [
+    {
+     "text": "Chủ tịch Hội đồng thành viên",
+     "answer": "left"
+    },
+    {
+     "text": "Thành viên góp vốn công ty hợp danh",
+     "answer": "right"
+    },
+    {
+     "text": "Giám đốc",
+     "answer": "left"
+    }
+   ],
+   "explain": "Khoản 24 Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người quản lý doanh nghiệp bao gồm chủ doanh nghiệp tư nhân, thành viên {{hợp danh}}, Chủ tịch Hội đồng thành viên, Chủ tịch Hội đồng quản trị, {{Giám đốc}} hoặc Tổng giám đốc.",
+   "bank_extra": [
+    "góp vốn",
+    "Kế toán trưởng bắt buộc"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người quản lý còn gồm cá nhân giữ chức danh quản lý khác theo quy định tại {{Điều lệ}} công ty.",
+   "bank_extra": [
+    "hợp đồng lao động",
+    "nội quy"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi cổ đông của công ty cổ phần đều là người quản lý doanh nghiệp.",
+   "answer": false,
+   "explain": "Sai. Khoản 24 Điều 4 chỉ liệt kê các chức danh quản lý."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm người quản lý doanh nghiệp.",
+   "model": "Là người quản lý doanh nghiệp tư nhân và công ty: chủ DNTN, thành viên hợp danh, Chủ tịch, thành viên Hội đồng thành viên, Chủ tịch công ty, Chủ tịch, thành viên HĐQT, Giám đốc/Tổng giám đốc và chức danh quản lý khác theo Điều lệ (khoản 24 Điều 4).",
+   "keywords": [
+    "chủ DNTN",
+    "hợp danh",
+    "Hội đồng quản trị",
+    "Điều lệ"
+   ]
+  }
+ ]
+}

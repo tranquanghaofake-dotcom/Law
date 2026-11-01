@@ -1,0 +1,115 @@
+{
+ "id": "cong-ty-tnhh-mot-thanh-vien",
+ "subject": "thuong-mai-1",
+ "chapter": "v4",
+ "term": "Công ty trách nhiệm hữu hạn một thành viên",
+ "definition": "Công ty trách nhiệm hữu hạn một thành viên là doanh nghiệp do một tổ chức hoặc một cá nhân làm chủ sở hữu (sau đây gọi là chủ sở hữu công ty). Chủ sở hữu công ty chịu trách nhiệm về các khoản nợ và nghĩa vụ tài sản khác của công ty trong phạm vi số vốn điều lệ của công ty. Công ty trách nhiệm hữu hạn một thành viên có tư cách pháp nhân kể từ ngày được cấp Giấy chứng nhận đăng ký doanh nghiệp. Công ty trách nhiệm hữu hạn một thành viên không được phát hành cổ phần, trừ trường hợp để chuyển đổi thành công ty cổ phần.",
+ "plain": "MỘT chủ sở hữu (tổ chức HOẶC cá nhân); trách nhiệm HỮU HẠN trong VỐN ĐIỀU LỆ; CÓ tư cách pháp nhân; không phát hành cổ phần (trừ để chuyển đổi), được phát hành TRÁI PHIẾU. So với DNTN: cùng một chủ nhưng TNHH một thành viên chỉ chịu trách nhiệm hữu hạn và có tài sản tách bạch. Chủ sở hữu phải TÁCH BIỆT tài sản cá nhân với tài sản công ty (Điều 77).",
+ "example": "Chị A lập công ty TNHH một thành viên vốn điều lệ 2 tỷ: nếu công ty phá sản, chị chỉ mất 2 tỷ vốn đã góp, tài sản riêng không bị dùng trả nợ công ty (nếu đã tách bạch).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1–3 Điều 74 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "cong-ty-tnhh-hai-thanh-vien",
+  "doanh-nghiep-tu-nhan"
+ ],
+ "keywords": [
+  "một tổ chức hoặc một cá nhân làm chủ",
+  "trong phạm vi vốn điều lệ",
+  "tư cách pháp nhân",
+  "không phát hành cổ phần"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chủ sở hữu công ty TNHH một thành viên có thể là ai?",
+   "options": [
+    "Một tổ chức hoặc một cá nhân",
+    "Chỉ cá nhân",
+    "Chỉ tổ chức",
+    "Hai cá nhân"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 74.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 74 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Công ty TNHH một thành viên có được phát hành trái phiếu không?",
+   "options": [
+    "Có, theo quy định của luật",
+    "Không",
+    "Chỉ khi chuyển đổi",
+    "Chỉ trái phiếu chuyển đổi"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 74.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 74 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Công ty TNHH một thành viên",
+   "right": "Doanh nghiệp tư nhân",
+   "cases": [
+    {
+     "text": "Chủ có thể là tổ chức",
+     "answer": "left"
+    },
+    {
+     "text": "Chủ chỉ là cá nhân, trách nhiệm vô hạn",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 74, 188."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công ty TNHH một thành viên là doanh nghiệp do một {{tổ chức}} hoặc một cá nhân làm chủ sở hữu; chủ sở hữu chịu trách nhiệm trong phạm vi số {{vốn điều lệ}}.",
+   "bank_extra": [
+    "hộ gia đình",
+    "tài sản riêng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công ty TNHH một thành viên không được phát hành {{cổ phần}}, trừ trường hợp để chuyển đổi thành công ty cổ phần.",
+   "bank_extra": [
+    "trái phiếu",
+    "hóa đơn"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chủ sở hữu công ty TNHH một thành viên chịu trách nhiệm vô hạn như chủ doanh nghiệp tư nhân.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 74: trong phạm vi vốn điều lệ."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày đặc điểm pháp lý của công ty TNHH một thành viên.",
+   "model": "Do một tổ chức hoặc một cá nhân làm chủ; chủ sở hữu chịu trách nhiệm trong phạm vi vốn điều lệ (khoản 1); có tư cách pháp nhân (khoản 2); không phát hành cổ phần trừ để chuyển đổi (khoản 3); được phát hành trái phiếu (khoản 4 Điều 74).",
+   "keywords": [
+    "một tổ chức hoặc cá nhân",
+    "vốn điều lệ",
+    "pháp nhân",
+    "cổ phần"
+   ]
+  }
+ ]
+}

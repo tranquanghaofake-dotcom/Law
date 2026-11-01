@@ -1,0 +1,119 @@
+{
+ "id": "to-chuc-lai-doanh-nghiep",
+ "subject": "thuong-mai-1",
+ "chapter": "v8",
+ "term": "Tổ chức lại doanh nghiệp: chia, tách, hợp nhất, sáp nhập",
+ "definition": "Công ty trách nhiệm hữu hạn, công ty cổ phần có thể chia các tài sản, quyền và nghĩa vụ, thành viên, cổ đông của công ty hiện có (sau đây gọi là công ty bị chia) để thành lập hai hoặc nhiều công ty mới. (…) Hai hoặc một số công ty (sau đây gọi là công ty bị hợp nhất) có thể hợp nhất thành một công ty mới (sau đây gọi là công ty hợp nhất), đồng thời chấm dứt tồn tại của các công ty bị hợp nhất. (…) Một hoặc một số công ty (sau đây gọi là công ty bị sáp nhập) có thể sáp nhập vào một công ty khác (sau đây gọi là công ty nhận sáp nhập) bằng cách chuyển toàn bộ tài sản, quyền, nghĩa vụ và lợi ích hợp pháp sang công ty nhận sáp nhập, đồng thời chấm dứt sự tồn tại của công ty bị sáp nhập.",
+ "plain": "Bốn hình thức + chuyển đổi loại hình: CHIA (công ty bị chia CHẤM DỨT, lập 2+ công ty mới); TÁCH (công ty bị tách VẪN TỒN TẠI, lập thêm công ty mới — Điều 199); HỢP NHẤT (các công ty CHẤM DỨT, lập MỘT công ty MỚI); SÁP NHẬP (công ty bị sáp nhập CHẤM DỨT, nhập vào công ty nhận sáp nhập CÒN TỒN TẠI). Chia, tách chỉ áp dụng cho TNHH, cổ phần. Nếu thuộc ngưỡng phải tuân thủ thủ tục thông báo tập trung kinh tế theo Luật Cạnh tranh.",
+ "example": "Công ty A tách bộ phận logistics thành công ty B mới, A vẫn tiếp tục hoạt động: đây là TÁCH công ty, không phải CHIA.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 198, khoản 1 Điều 200, khoản 1 Điều 201 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "giai-the-doanh-nghiep",
+  "cong-ty-me-con"
+ ],
+ "keywords": [
+  "chia: công ty bị chia chấm dứt",
+  "tách: công ty bị tách vẫn tồn tại",
+  "hợp nhất: lập công ty mới",
+  "sáp nhập: nhập vào công ty khác"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hai công ty hợp lại thành một công ty mới và cùng chấm dứt tồn tại. Đây là hình thức nào?",
+   "options": [
+    "Hợp nhất",
+    "Sáp nhập",
+    "Chia",
+    "Tách"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 200.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 200 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hình thức tổ chức lại nào mà công ty ban đầu vẫn tiếp tục tồn tại?",
+   "options": [
+    "Tách công ty",
+    "Chia công ty",
+    "Hợp nhất",
+    "Bị sáp nhập"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 199.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 199 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Công ty ban đầu chấm dứt",
+   "right": "Công ty ban đầu vẫn tồn tại",
+   "cases": [
+    {
+     "text": "Công ty bị chia",
+     "answer": "left"
+    },
+    {
+     "text": "Công ty bị tách",
+     "answer": "right"
+    },
+    {
+     "text": "Công ty bị sáp nhập",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 198–201."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công ty bị {{sáp nhập}} chuyển toàn bộ tài sản, quyền, nghĩa vụ sang công ty nhận sáp nhập, đồng thời {{chấm dứt}} sự tồn tại.",
+   "bank_extra": [
+    "chia",
+    "mở rộng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công ty trách nhiệm hữu hạn, công ty cổ phần có thể {{chia}} các tài sản, quyền và nghĩa vụ, thành viên, cổ đông để thành lập hai hoặc nhiều công ty mới.",
+   "bank_extra": [
+    "bán",
+    "cho thuê"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Sau khi sáp nhập, cả công ty bị sáp nhập và công ty nhận sáp nhập đều chấm dứt tồn tại.",
+   "answer": false,
+   "explain": "Sai. Chỉ công ty bị sáp nhập chấm dứt; công ty nhận sáp nhập vẫn tồn tại (khoản 1 Điều 201)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Phân biệt chia, tách, hợp nhất, sáp nhập công ty.",
+   "model": "Chia: công ty bị chia chấm dứt, lập 2+ công ty mới (Điều 198); tách: công ty bị tách vẫn tồn tại, lập công ty mới (Điều 199); hợp nhất: các công ty chấm dứt, lập một công ty mới (Điều 200); sáp nhập: công ty bị sáp nhập chấm dứt, nhập vào công ty nhận sáp nhập (Điều 201).",
+   "keywords": [
+    "chia",
+    "tách",
+    "hợp nhất",
+    "sáp nhập"
+   ]
+  }
+ ]
+}

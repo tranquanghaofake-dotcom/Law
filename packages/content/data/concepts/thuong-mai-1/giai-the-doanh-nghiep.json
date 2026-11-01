@@ -1,0 +1,115 @@
+{
+ "id": "giai-the-doanh-nghiep",
+ "subject": "thuong-mai-1",
+ "chapter": "v8",
+ "term": "Các trường hợp giải thể doanh nghiệp",
+ "definition": "Doanh nghiệp bị giải thể trong trường hợp sau đây: a) Kết thúc thời hạn hoạt động đã ghi trong Điều lệ công ty mà không có quyết định gia hạn; b) Theo nghị quyết, quyết định của chủ doanh nghiệp đối với doanh nghiệp tư nhân, của Hội đồng thành viên đối với công ty hợp danh, của Hội đồng thành viên, chủ sở hữu công ty đối với công ty trách nhiệm hữu hạn, của Đại hội đồng cổ đông đối với công ty cổ phần; c) Công ty không còn đủ số lượng thành viên, cổ đông tối thiểu theo quy định của Luật này trong thời hạn 06 tháng liên tục mà không làm thủ tục chuyển đổi loại hình doanh nghiệp;",
+ "plain": "Các trường hợp: HẾT THỜI HẠN hoạt động không gia hạn; TỰ NGUYỆN theo quyết định của chủ sở hữu, Hội đồng thành viên, ĐHĐCĐ; KHÔNG ĐỦ SỐ THÀNH VIÊN TỐI THIỂU trong 06 THÁNG liên tục mà không chuyển đổi; BỊ THU HỒI Giấy chứng nhận đăng ký doanh nghiệp (trừ trường hợp Luật Quản lý thuế có quy định khác). ĐIỀU KIỆN giải thể (khoản 2): bảo đảm THANH TOÁN HẾT các khoản nợ, nghĩa vụ tài sản và không trong quá trình giải quyết tranh chấp. Không thanh toán được nợ → PHÁ SẢN (Luật Phục hồi, phá sản), không phải giải thể.",
+ "example": "Công ty cổ phần chỉ còn 2 cổ đông trong 7 tháng liên tục mà không chuyển đổi sang công ty TNHH: thuộc trường hợp giải thể (điểm c khoản 1 Điều 207).",
+ "source": {
+  "kind": "statute",
+  "cite": "Điểm a–c khoản 1 Điều 207 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "to-chuc-lai-doanh-nghiep",
+  "cong-ty-co-phan"
+ ],
+ "keywords": [
+  "hết thời hạn hoạt động",
+  "tự nguyện theo quyết định",
+  "không đủ số thành viên tối thiểu 06 tháng",
+  "bị thu hồi Giấy chứng nhận"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Công ty không còn đủ số thành viên tối thiểu trong bao lâu liên tục mà không chuyển đổi loại hình thì phải giải thể?",
+   "options": [
+    "06 tháng",
+    "03 tháng",
+    "12 tháng",
+    "01 tháng"
+   ],
+   "answer": 0,
+   "explain": "Điểm c khoản 1 Điều 207.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 207 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Doanh nghiệp không thể thanh toán hết các khoản nợ thì xử lý thế nào?",
+   "options": [
+    "Không đủ điều kiện giải thể; có thể thuộc thủ tục phá sản",
+    "Vẫn giải thể bình thường",
+    "Nhà nước trả nợ thay",
+    "Tự động chấm dứt"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 207.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 207 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Giải thể tự nguyện",
+   "right": "Giải thể bắt buộc",
+   "cases": [
+    {
+     "text": "Đại hội đồng cổ đông quyết định giải thể",
+     "answer": "left"
+    },
+    {
+     "text": "Bị thu hồi Giấy chứng nhận đăng ký doanh nghiệp",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 207."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Doanh nghiệp bị giải thể khi kết thúc {{thời hạn hoạt động}} đã ghi trong Điều lệ mà không có quyết định gia hạn; hoặc không còn đủ số lượng thành viên, cổ đông tối thiểu trong thời hạn {{06 tháng}} liên tục.",
+   "bank_extra": [
+    "thời hạn vay",
+    "03 tháng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công ty cổ phần giải thể theo nghị quyết của {{Đại hội đồng cổ đông}}.",
+   "bank_extra": [
+    "Ban kiểm soát",
+    "Giám đốc"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Doanh nghiệp đang nợ không trả được vẫn có thể giải thể theo thủ tục giải thể thông thường.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 207: chỉ giải thể khi bảo đảm thanh toán hết nợ; không trả được nợ thì thuộc phá sản."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các trường hợp giải thể doanh nghiệp.",
+   "model": "Hết thời hạn hoạt động không gia hạn; theo quyết định của chủ sở hữu, Hội đồng thành viên, ĐHĐCĐ; không đủ số thành viên, cổ đông tối thiểu trong 06 tháng liên tục mà không chuyển đổi; bị thu hồi Giấy chứng nhận đăng ký doanh nghiệp…; điều kiện: thanh toán hết nợ (Điều 207).",
+   "keywords": [
+    "thời hạn hoạt động",
+    "tự nguyện",
+    "06 tháng",
+    "thu hồi"
+   ]
+  }
+ ]
+}

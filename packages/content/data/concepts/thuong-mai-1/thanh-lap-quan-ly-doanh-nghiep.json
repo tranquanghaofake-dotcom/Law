@@ -1,0 +1,120 @@
+{
+ "id": "thanh-lap-quan-ly-doanh-nghiep",
+ "subject": "thuong-mai-1",
+ "chapter": "v6",
+ "term": "Quyền thành lập và quản lý doanh nghiệp",
+ "definition": "Tổ chức, cá nhân có quyền thành lập và quản lý doanh nghiệp tại Việt Nam theo quy định của Luật này, trừ trường hợp quy định tại khoản 2 Điều này. Tổ chức, cá nhân sau đây không có quyền thành lập và quản lý doanh nghiệp tại Việt Nam: a) Cơ quan nhà nước, đơn vị lực lượng vũ trang nhân dân sử dụng tài sản nhà nước để thành lập doanh nghiệp kinh doanh thu lợi riêng cho cơ quan, đơn vị mình; b) Cán bộ, công chức, viên chức theo quy định của Luật Cán bộ, công chức và Luật Viên chức, trừ trường hợp được thực hiện theo quy định của pháp luật về khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số quốc gia;",
+ "plain": "Nguyên tắc: MỌI tổ chức, cá nhân có quyền thành lập, quản lý doanh nghiệp, TRỪ khoản 2: cơ quan nhà nước dùng tài sản nhà nước kinh doanh thu lợi riêng; CÁN BỘ, CÔNG CHỨC, VIÊN CHỨC (ngoại lệ mới theo pháp luật khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số — bổ sung 2025); sĩ quan, quân nhân, công an; lãnh đạo DNNN; NGƯỜI CHƯA THÀNH NIÊN, người hạn chế, mất năng lực hành vi; người đang bị truy cứu TNHS, chấp hành án, bị cấm hành nghề… Phân biệt quyền THÀNH LẬP, QUẢN LÝ (khoản 2) với quyền GÓP VỐN, MUA CỔ PHẦN (khoản 3: rộng hơn).",
+ "example": "Một giảng viên đại học công lập (viên chức) muốn làm giám đốc công ty thương mại: không được, trừ trường hợp theo pháp luật về khoa học, công nghệ, đổi mới sáng tạo; nhưng vẫn có thể mua cổ phần (góp vốn) nếu luật chuyên ngành không cấm.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, điểm a, b khoản 2 Điều 17 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "doanh-nghiep",
+  "nguoi-quan-ly-doanh-nghiep"
+ ],
+ "keywords": [
+  "mọi tổ chức, cá nhân có quyền thành lập",
+  "cán bộ, công chức, viên chức không có quyền",
+  "người chưa thành niên",
+  "khác quyền góp vốn"
+ ],
+ "note": "Điểm b khoản 2 Điều 17 (ngoại lệ khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số) theo VBHN 67/VBHN-VPQH 2025, gồm sửa đổi của Luật 76/2025/QH15 (hiệu lực 01/7/2025) — chưa đối chiếu chú thích từng điểm.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai KHÔNG có quyền thành lập và quản lý doanh nghiệp tại Việt Nam (trừ ngoại lệ)?",
+   "options": [
+    "Cán bộ, công chức, viên chức",
+    "Sinh viên đủ 18 tuổi",
+    "Người nước ngoài",
+    "Doanh nghiệp tư nhân thành lập chi nhánh"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 2 Điều 17.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 17 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ngoại lệ cho cán bộ, công chức, viên chức thành lập, quản lý doanh nghiệp được bổ sung theo pháp luật về lĩnh vực nào?",
+   "options": [
+    "Khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số quốc gia",
+    "Thương mại điện tử",
+    "Bất động sản",
+    "Ngân hàng"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 2 Điều 17.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 17 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Có quyền thành lập, quản lý",
+   "right": "Không có quyền thành lập, quản lý",
+   "cases": [
+    {
+     "text": "Cá nhân đủ 18 tuổi, đủ năng lực hành vi",
+     "answer": "left"
+    },
+    {
+     "text": "Người chưa thành niên",
+     "answer": "right"
+    },
+    {
+     "text": "Sĩ quan quân đội tại ngũ",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 17."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tổ chức, cá nhân có quyền {{thành lập}} và quản lý doanh nghiệp tại Việt Nam, trừ trường hợp quy định tại khoản 2; cán bộ, công chức, viên chức {{không có quyền}} thành lập và quản lý doanh nghiệp (trừ ngoại lệ).",
+   "bank_extra": [
+    "giải thể",
+    "có quyền"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Cơ quan nhà nước sử dụng {{tài sản nhà nước}} để thành lập doanh nghiệp kinh doanh thu lợi riêng cho cơ quan mình thì không có quyền thành lập doanh nghiệp.",
+   "bank_extra": [
+    "tài sản tư",
+    "vốn vay"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Cán bộ, công chức được tự do thành lập doanh nghiệp tư nhân để kinh doanh.",
+   "answer": false,
+   "explain": "Sai. Điểm b khoản 2 Điều 17: không có quyền, trừ ngoại lệ theo pháp luật về khoa học, công nghệ, đổi mới sáng tạo, chuyển đổi số."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quyền thành lập, quản lý doanh nghiệp và các đối tượng bị cấm.",
+   "model": "Tổ chức, cá nhân có quyền thành lập, quản lý doanh nghiệp (khoản 1); không có quyền: cơ quan nhà nước dùng tài sản nhà nước thu lợi riêng; cán bộ, công chức, viên chức (trừ ngoại lệ); sĩ quan, quân nhân, công an; lãnh đạo DNNN; người chưa thành niên, hạn chế, mất năng lực hành vi; người bị truy cứu TNHS… (khoản 2 Điều 17).",
+   "keywords": [
+    "thành lập",
+    "công chức",
+    "chưa thành niên",
+    "tài sản nhà nước"
+   ]
+  }
+ ]
+}

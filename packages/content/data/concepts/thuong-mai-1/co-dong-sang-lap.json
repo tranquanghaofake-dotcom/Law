@@ -1,0 +1,115 @@
+{
+ "id": "co-dong-sang-lap",
+ "subject": "thuong-mai-1",
+ "chapter": "v5",
+ "term": "Cổ phần phổ thông của cổ đông sáng lập",
+ "definition": "Công ty cổ phần mới thành lập phải có ít nhất 03 cổ đông sáng lập. (…) Các cổ đông sáng lập phải cùng nhau đăng ký mua ít nhất 20% tổng số cổ phần phổ thông được quyền chào bán khi đăng ký thành lập doanh nghiệp. Trong thời hạn 03 năm kể từ ngày công ty được cấp Giấy chứng nhận đăng ký doanh nghiệp, cổ phần phổ thông của cổ đông sáng lập được tự do chuyển nhượng cho cổ đông sáng lập khác và chỉ được chuyển nhượng cho người không phải là cổ đông sáng lập nếu được sự chấp thuận của Đại hội đồng cổ đông.",
+ "plain": "Ba quy tắc: ít nhất 03 CỔ ĐÔNG SÁNG LẬP (công ty mới thành lập); cùng đăng ký mua ít nhất 20% cổ phần phổ thông được quyền chào bán; HẠN CHẾ CHUYỂN NHƯỢNG 03 NĂM: tự do giữa các cổ đông sáng lập, chuyển cho người ngoài phải được ĐHĐCĐ chấp thuận (cổ đông dự định chuyển nhượng không được biểu quyết). Hạn chế không áp dụng với cổ phần mua thêm sau đăng ký, cổ phần chuyển nhượng do thừa kế, thực hiện bản án… (khoản 4).",
+ "example": "Một cổ đông sáng lập muốn bán cổ phần cho người ngoài sau 1 năm thành lập công ty: phải được Đại hội đồng cổ đông chấp thuận.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1–3 Điều 120 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "cong-ty-co-phan",
+  "co-phan"
+ ],
+ "keywords": [
+  "ít nhất 03 cổ đông sáng lập",
+  "ít nhất 20% cổ phần phổ thông",
+  "hạn chế chuyển nhượng 03 năm",
+  "Đại hội đồng cổ đông chấp thuận"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trong 03 năm đầu, cổ đông sáng lập chuyển nhượng cổ phần phổ thông cho người không phải cổ đông sáng lập cần điều kiện gì?",
+   "options": [
+    "Được Đại hội đồng cổ đông chấp thuận",
+    "Được Hội đồng quản trị đồng ý",
+    "Không cần điều kiện",
+    "Bị cấm tuyệt đối"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 120.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 120 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Các cổ đông sáng lập phải cùng đăng ký mua ít nhất bao nhiêu phần trăm cổ phần phổ thông được quyền chào bán?",
+   "options": [
+    "20%",
+    "10%",
+    "50%",
+    "30%"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 120.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 120 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tự do chuyển nhượng (trong 03 năm)",
+   "right": "Cần ĐHĐCĐ chấp thuận (trong 03 năm)",
+   "cases": [
+    {
+     "text": "Chuyển cho cổ đông sáng lập khác",
+     "answer": "left"
+    },
+    {
+     "text": "Chuyển cho người ngoài",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 3 Điều 120."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công ty cổ phần mới thành lập phải có ít nhất {{03}} cổ đông sáng lập; các cổ đông sáng lập phải cùng nhau đăng ký mua ít nhất {{20%}} tổng số cổ phần phổ thông được quyền chào bán.",
+   "bank_extra": [
+    "05",
+    "50%"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Trong thời hạn {{03 năm}} kể từ ngày được cấp Giấy chứng nhận, cổ phần phổ thông của cổ đông sáng lập bị hạn chế chuyển nhượng cho người ngoài.",
+   "bank_extra": [
+    "01 năm",
+    "05 năm"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Cổ đông sáng lập bị cấm chuyển nhượng cổ phần cho cổ đông sáng lập khác trong 03 năm đầu.",
+   "answer": false,
+   "explain": "Sai. Khoản 3 Điều 120: được tự do chuyển nhượng cho cổ đông sáng lập khác."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quy định về cổ phần phổ thông của cổ đông sáng lập.",
+   "model": "Công ty cổ phần mới thành lập phải có ít nhất 03 cổ đông sáng lập (khoản 1); cùng đăng ký mua ít nhất 20% cổ phần phổ thông được chào bán (khoản 2); trong 03 năm, tự do chuyển nhượng cho cổ đông sáng lập khác, chuyển cho người ngoài phải được ĐHĐCĐ chấp thuận (khoản 3 Điều 120).",
+   "keywords": [
+    "03 cổ đông sáng lập",
+    "20%",
+    "03 năm",
+    "Đại hội đồng cổ đông"
+   ]
+  }
+ ]
+}

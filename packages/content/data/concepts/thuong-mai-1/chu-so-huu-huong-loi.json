@@ -1,0 +1,116 @@
+{
+ "id": "chu-so-huu-huong-loi",
+ "subject": "thuong-mai-1",
+ "chapter": "v7",
+ "term": "Chủ sở hữu hưởng lợi của doanh nghiệp",
+ "definition": "Chủ sở hữu hưởng lợi của doanh nghiệp có tư cách pháp nhân (sau đây gọi là chủ sở hữu hưởng lợi của doanh nghiệp) là cá nhân có quyền sở hữu trên thực tế vốn điều lệ hoặc có quyền chi phối đối với doanh nghiệp đó, trừ trường hợp người đại diện chủ sở hữu trực tiếp tại doanh nghiệp do Nhà nước nắm giữ 100% vốn điều lệ và người đại diện phần vốn nhà nước tại công ty cổ phần, công ty trách nhiệm hữu hạn hai thành viên trở lên theo quy định của pháp luật về quản lý và đầu tư vốn nhà nước tại doanh nghiệp.",
+ "plain": "KHÁI NIỆM MỚI do Luật 76/2025/QH15 bổ sung (hiệu lực 01/7/2025) — phục vụ minh bạch, PHÒNG CHỐNG RỬA TIỀN (khuyến nghị FATF). Là CÁ NHÂN sở hữu TRÊN THỰC TẾ vốn điều lệ hoặc có QUYỀN CHI PHỐI (không phải người đứng tên danh nghĩa). Doanh nghiệp có nghĩa vụ thu thập, lưu giữ và cung cấp thông tin về chủ sở hữu hưởng lợi khi đăng ký doanh nghiệp. Loại trừ: người đại diện phần vốn nhà nước.",
+ "example": "Ông A nhờ người thân đứng tên 90% vốn công ty nhưng thực tế ông A bỏ vốn và quyết định mọi việc: ông A là chủ sở hữu hưởng lợi của công ty.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 35 Điều 4 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nguoi-quan-ly-doanh-nghiep",
+  "doanh-nghiep"
+ ],
+ "keywords": [
+  "cá nhân",
+  "sở hữu trên thực tế vốn điều lệ",
+  "quyền chi phối",
+  "minh bạch, phòng chống rửa tiền"
+ ],
+ "note": "Khoản 35 Điều 4 được bổ sung bởi Luật 76/2025/QH15 (hiệu lực 01/7/2025); câu chữ theo VBHN 67/VBHN-VPQH 2025.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chủ sở hữu hưởng lợi của doanh nghiệp là ai?",
+   "options": [
+    "Cá nhân có quyền sở hữu trên thực tế vốn điều lệ hoặc có quyền chi phối doanh nghiệp",
+    "Mọi cổ đông đứng tên",
+    "Người đại diện theo pháp luật",
+    "Ngân hàng cho vay"
+   ],
+   "answer": 0,
+   "explain": "Khoản 35 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 35 Điều 4 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khái niệm chủ sở hữu hưởng lợi được bổ sung bởi văn bản nào?",
+   "options": [
+    "Luật 76/2025/QH15 sửa đổi Luật Doanh nghiệp",
+    "Luật Doanh nghiệp 2014",
+    "Bộ luật Dân sự 2015",
+    "Luật Đầu tư 2020"
+   ],
+   "answer": 0,
+   "explain": "VBHN 67/VBHN-VPQH 2025.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 35 Điều 4 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Chủ sở hữu hưởng lợi",
+   "right": "Không phải chủ sở hữu hưởng lợi",
+   "cases": [
+    {
+     "text": "Cá nhân thực tế bỏ vốn, chi phối công ty dù không đứng tên",
+     "answer": "left"
+    },
+    {
+     "text": "Người đại diện phần vốn nhà nước tại công ty cổ phần",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 35 Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chủ sở hữu hưởng lợi là {{cá nhân}} có quyền sở hữu {{trên thực tế}} vốn điều lệ hoặc có quyền chi phối đối với doanh nghiệp.",
+   "bank_extra": [
+    "tổ chức",
+    "trên danh nghĩa"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chủ sở hữu hưởng lợi áp dụng với doanh nghiệp có tư cách {{pháp nhân}}.",
+   "bank_extra": [
+    "thương nhân",
+    "nhà nước"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chủ sở hữu hưởng lợi luôn là người đứng tên trên Giấy chứng nhận đăng ký doanh nghiệp.",
+   "answer": false,
+   "explain": "Sai. Là người sở hữu trên thực tế hoặc có quyền chi phối, có thể khác người đứng tên."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm chủ sở hữu hưởng lợi của doanh nghiệp và ý nghĩa.",
+   "model": "Là cá nhân có quyền sở hữu trên thực tế vốn điều lệ hoặc có quyền chi phối doanh nghiệp có tư cách pháp nhân, trừ người đại diện phần vốn nhà nước (khoản 35 Điều 4, bổ sung bởi Luật 76/2025/QH15); nhằm minh bạch, phòng chống rửa tiền.",
+   "keywords": [
+    "cá nhân",
+    "trên thực tế",
+    "chi phối",
+    "minh bạch"
+   ]
+  }
+ ]
+}
