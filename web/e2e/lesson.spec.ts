@@ -1,10 +1,10 @@
 import { expect, test } from '@playwright/test';
-import { readFileSync } from 'node:fs';
+import { readdirSync, readFileSync } from 'node:fs';
 
-const concept = JSON.parse(readFileSync('content/concepts/hien-phap/hien-phap.json', 'utf8'));
-const concept2 = JSON.parse(readFileSync('content/concepts/hien-phap/hieu-luc-phap-ly-toi-cao.json', 'utf8'));
+const dir = 'content/concepts/hien-phap';
+const concepts = readdirSync(dir).filter((f) => f.endsWith('.json')).map((f) => JSON.parse(readFileSync(`${dir}/${f}`, 'utf8')));
 const correctOf = (q: string) => {
-  for (const c of [concept, concept2]) for (const it of c.items) if (it.q === q && 'options' in it) return it.options[it.answer] as string;
+  for (const c of concepts) for (const it of c.items) if (it.q === q && 'options' in it) return it.options[it.answer] as string;
   throw new Error('không tìm thấy câu ' + q);
 };
 
@@ -27,9 +27,12 @@ test('phiên học pass 1: intro → trắc nghiệm → lưu ngay → kết th�
   // intro đầu tiên
   await expect(page.getByRole('article', { name: 'Thẻ giới thiệu khái niệm' })).toBeVisible();
   await expect(page.locator('.lesson-panel')).toBeVisible();
-  await page.getByRole('button', { name: /Đã hiểu/ }).click();
-  await expect(page.getByRole('article', { name: 'Thẻ giới thiệu khái niệm' })).toBeVisible();
-  await page.getByRole('button', { name: /Đã hiểu/ }).click();
+  // đi qua các intro cho tới câu trắc nghiệm đầu tiên
+  for (let i = 0; i < 5; i++) {
+    await page.locator('.question, article[aria-label="Thẻ giới thiệu khái niệm"]').first().waitFor();
+    if (await page.locator('.question').isVisible()) break;
+    await page.getByRole('button', { name: /Đã hiểu/ }).click();
+  }
   // trắc nghiệm 1: trả lời đúng bằng phím số
   const q1 = await page.locator('.question').textContent();
   const opts = page.locator('.opt');
@@ -44,7 +47,7 @@ test('phiên học pass 1: intro → trắc nghiệm → lưu ngay → kết th�
   // vào lại: pass vẫn là 1 vì khái niệm còn lại ở bậc 0
   await expect(page.getByRole('article', { name: 'Thẻ giới thiệu khái niệm' })).toBeVisible();
   // chạy hết phiên
-  for (let i = 0; i < 12; i++) {
+  for (let i = 0; i < 30; i++) {
     await page.locator('.session-end, .question, article[aria-label="Thẻ giới thiệu khái niệm"]').first().waitFor();
     if (await page.locator('.session-end').isVisible()) break;
     if (await page.getByRole('button', { name: /Đã hiểu/ }).isVisible()) { await page.getByRole('button', { name: /Đã hiểu/ }).click(); continue; }
