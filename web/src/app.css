@@ -132,3 +132,8 @@ kbd { font: 600 11px/1 var(--font-ui); background: rgba(255,255,255,.18); border
 .feedback p { margin: 0 0 8px; }
 .feedback .btn { margin-top: 8px; width: 100%; }
 @keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+/* ---- Nền lộ dần ---- */
+.reveal { position: fixed; inset: 0; z-index: -1; background-size: cover; background-position: center; display: grid; grid-template-columns: repeat(var(--cols), 1fr); grid-template-rows: repeat(var(--rows), 1fr); pointer-events: none; }
+.reveal .tile { background: var(--paper); transition: opacity .5s ease; opacity: 1; }
+.reveal .tile.open { opacity: .35; }
