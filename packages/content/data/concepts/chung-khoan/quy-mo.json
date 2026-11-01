@@ -1,0 +1,119 @@
+{
+ "id": "quy-mo",
+ "subject": "chung-khoan",
+ "chapter": "c6-quy-dau-tu",
+ "term": "Quỹ mở",
+ "definition": "Quỹ mở là quỹ đại chúng mà chứng chỉ quỹ đã chào bán ra công chúng phải được mua lại theo yêu cầu của nhà đầu tư.",
+ "plain": "Đặc trưng của quỹ mở là \"rút tiền được\": nhà đầu tư bán lại chứng chỉ quỹ cho chính quỹ (qua công ty quản lý quỹ) theo giá trị tài sản ròng, với tần suất ghi trong Điều lệ. Quỹ cũng liên tục phát hành thêm. Vì phải sẵn sàng trả tiền, quỹ mở không được đầu tư vào bất động sản (điểm d khoản 1 Điều 110) và chứng chỉ quỹ mở không bắt buộc niêm yết.",
+ "example": "Bạn mua chứng chỉ quỹ mở cổ phiếu qua app, 6 tháng sau cần tiền: đặt lệnh bán lại cho quỹ vào kỳ giao dịch kế tiếp và nhận tiền theo NAV/đơn vị của ngày đó.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 39 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quy-dong",
+  "quy-dai-chung",
+  "gia-tri-tai-san-rong"
+ ],
+ "keywords": [
+  "mua lại theo yêu cầu",
+  "phát hành thêm",
+  "không đầu tư bất động sản"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đặc điểm của quỹ mở theo khoản 39 Điều 4 là gì?",
+   "options": [
+    "Chứng chỉ quỹ phải được mua lại theo yêu cầu của nhà đầu tư",
+    "Chứng chỉ quỹ không được mua lại theo yêu cầu",
+    "Chỉ dành cho nhà đầu tư chuyên nghiệp",
+    "Phải niêm yết trên Sở giao dịch"
+   ],
+   "answer": 0,
+   "explain": "Khoản 39 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 39 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trường hợp nào công ty quản lý quỹ KHÔNG phải mua lại chứng chỉ quỹ mở?",
+   "options": [
+    "Do bất khả kháng không thể thực hiện việc mua lại",
+    "Khi thị trường giảm mạnh",
+    "Khi nhà đầu tư lỗ",
+    "Khi công ty quản lý quỹ thiếu nhân sự"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 111; phải báo cáo Ủy ban trong 24 giờ và tiếp tục mua lại khi sự kiện chấm dứt.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 111 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quỹ mở",
+   "right": "Quỹ đóng",
+   "cases": [
+    {
+     "text": "Mua lại chứng chỉ quỹ theo yêu cầu của nhà đầu tư",
+     "answer": "left"
+    },
+    {
+     "text": "Không mua lại theo yêu cầu, nhà đầu tư bán trên sàn",
+     "answer": "right"
+    },
+    {
+     "text": "Không được đầu tư vào bất động sản",
+     "answer": "left"
+    }
+   ],
+   "explain": "Khoản 39, 40 Điều 4; điểm d khoản 1 Điều 110."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quỹ mở là quỹ đại chúng mà chứng chỉ quỹ đã chào bán ra công chúng phải được {{mua lại}} theo yêu cầu của {{nhà đầu tư}}.",
+   "bank_extra": [
+    "niêm yết",
+    "ngân hàng giám sát"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Khi tạm dừng mua lại chứng chỉ quỹ mở do sự kiện bất khả kháng, công ty quản lý quỹ phải báo cáo Ủy ban trong thời hạn {{24 giờ}}.",
+   "bank_extra": [
+    "07 ngày",
+    "30 ngày"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quỹ mở được dùng vốn để đầu tư vào bất động sản tối đa 10% tổng tài sản.",
+   "answer": false,
+   "explain": "Sai. Mức 10% áp dụng cho quỹ ĐÓNG; quỹ mở không được đầu tư vốn vào bất động sản (điểm d khoản 1 Điều 110)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày đặc điểm pháp lý của quỹ mở.",
+   "model": "Quỹ đại chúng mà chứng chỉ quỹ phải được mua lại theo yêu cầu nhà đầu tư (khoản 39 Điều 4); công ty quản lý quỹ thay mặt quỹ mua lại và phát hành thêm theo tần suất ghi trong Điều lệ; được tạm dừng mua lại khi bất khả kháng hoặc không xác định được NAV, báo cáo Ủy ban trong 24 giờ (Điều 111); không đầu tư bất động sản.",
+   "keywords": [
+    "mua lại",
+    "phát hành thêm",
+    "24 giờ",
+    "bất động sản"
+   ]
+  }
+ ]
+}

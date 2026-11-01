@@ -1,0 +1,120 @@
+{
+ "id": "quy-thanh-vien",
+ "subject": "chung-khoan",
+ "chapter": "c6-quy-dau-tu",
+ "term": "Quỹ thành viên",
+ "definition": "Quỹ thành viên là quỹ đầu tư chứng khoán có số thành viên tham gia góp vốn từ 02 đến 99 thành viên và chỉ bao gồm thành viên là nhà đầu tư chứng khoán chuyên nghiệp.",
+ "plain": "Quỹ thành viên là \"quỹ riêng\" cho nhà đầu tư chuyên nghiệp: thành lập trên cơ sở hợp đồng góp vốn, vốn góp tối thiểu 50 tỷ, 02–99 thành viên, do 01 công ty quản lý quỹ quản lý, tài sản lưu ký tại 01 ngân hàng lưu ký độc lập. Không chào bán ra công chúng nên chỉ cần báo cáo, không cần đăng ký với Ủy ban.",
+ "example": "Ba ngân hàng và hai công ty bảo hiểm góp 200 tỷ thành lập một quỹ do công ty quản lý quỹ X quản lý: đó là quỹ thành viên.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 41 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quy-dau-tu-chung-khoan",
+  "quy-dai-chung",
+  "nha-dau-tu-chung-khoan-chuyen-nghiep"
+ ],
+ "keywords": [
+  "02 đến 99 thành viên",
+  "nhà đầu tư chuyên nghiệp",
+  "50 tỷ",
+  "hợp đồng góp vốn"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quỹ thành viên có bao nhiêu thành viên góp vốn?",
+   "options": [
+    "Từ 02 đến 99",
+    "Từ 100 trở lên",
+    "Từ 01 đến 50",
+    "Không giới hạn"
+   ],
+   "answer": 0,
+   "explain": "Khoản 41 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 41 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Vốn góp tối thiểu để thành lập quỹ thành viên là bao nhiêu?",
+   "options": [
+    "50 tỷ đồng",
+    "10 tỷ đồng",
+    "30 tỷ đồng",
+    "100 tỷ đồng"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 2 Điều 113.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 113 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quỹ thành viên",
+   "right": "Quỹ đại chúng",
+   "cases": [
+    {
+     "text": "Thành lập trên cơ sở hợp đồng góp vốn",
+     "answer": "left"
+    },
+    {
+     "text": "Ít nhất 100 nhà đầu tư không chuyên nghiệp",
+     "answer": "right"
+    },
+    {
+     "text": "Chỉ gồm nhà đầu tư chứng khoán chuyên nghiệp",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 108, 113; khoản 41 Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quỹ thành viên có từ {{02}} đến {{99}} thành viên góp vốn và chỉ bao gồm nhà đầu tư chứng khoán chuyên nghiệp.",
+   "bank_extra": [
+    "10",
+    "100"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tài sản của quỹ thành viên được lưu ký tại 01 {{ngân hàng lưu ký}} độc lập với công ty quản lý quỹ.",
+   "bank_extra": [
+    "công ty chứng khoán",
+    "Sở giao dịch"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Một cá nhân không phải nhà đầu tư chuyên nghiệp có thể góp vốn vào quỹ thành viên nếu góp từ 1 tỷ đồng.",
+   "answer": false,
+   "explain": "Sai. Quỹ thành viên chỉ bao gồm thành viên là nhà đầu tư chứng khoán chuyên nghiệp (khoản 41 Điều 4, điểm b khoản 2 Điều 113)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm và điều kiện thành lập quỹ thành viên.",
+   "model": "Quỹ đầu tư chứng khoán có 02–99 thành viên, chỉ gồm nhà đầu tư chứng khoán chuyên nghiệp (khoản 41 Điều 4); thành lập trên cơ sở hợp đồng góp vốn; vốn tối thiểu 50 tỷ; do 01 công ty quản lý quỹ quản lý; tài sản lưu ký tại 01 ngân hàng lưu ký độc lập (Điều 113); thành lập phải báo cáo Ủy ban (khoản 2 Điều 100).",
+   "keywords": [
+    "02 đến 99",
+    "chuyên nghiệp",
+    "50 tỷ",
+    "ngân hàng lưu ký"
+   ]
+  }
+ ]
+}

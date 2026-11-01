@@ -1,0 +1,115 @@
+{
+ "id": "cong-ty-dau-tu-chung-khoan",
+ "subject": "chung-khoan",
+ "chapter": "c6-quy-dau-tu",
+ "term": "Công ty đầu tư chứng khoán",
+ "definition": "Công ty đầu tư chứng khoán là quỹ đầu tư chứng khoán được tổ chức theo loại hình công ty cổ phần để đầu tư chứng khoán. Công ty đầu tư chứng khoán có hai hình thức là công ty đầu tư chứng khoán riêng lẻ và công ty đầu tư chứng khoán đại chúng.",
+ "plain": "Bản chất là một QUỸ nhưng khoác \"áo\" công ty cổ phần: nhà đầu tư là cổ đông, có pháp nhân riêng. Đừng nhầm với công ty chứng khoán (kinh doanh dịch vụ môi giới, tự doanh…) hay công ty quản lý quỹ (quản lý tiền của quỹ). Cần giấy phép của Ủy ban, vốn tối thiểu 50 tỷ; bản đại chúng phải tuân thủ hạn chế đầu tư như quỹ đại chúng và lưu ký tài sản tại 01 ngân hàng giám sát.",
+ "example": "Một công ty cổ phần được Ủy ban cấp phép, huy động 80 tỷ từ cổ đông chỉ để đầu tư cổ phiếu, thuê công ty quản lý quỹ quản lý danh mục: đó là công ty đầu tư chứng khoán.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 114 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quy-dau-tu-chung-khoan",
+  "hinh-thuc-cong-ty-chung-khoan",
+  "han-che-quy-dai-chung"
+ ],
+ "keywords": [
+  "quỹ dưới dạng công ty cổ phần",
+  "riêng lẻ và đại chúng",
+  "vốn tối thiểu 50 tỷ"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 1 Điều 114, công ty đầu tư chứng khoán là gì?",
+   "options": [
+    "Quỹ đầu tư chứng khoán được tổ chức theo loại hình công ty cổ phần để đầu tư chứng khoán",
+    "Công ty chứng khoán chuyên tự doanh",
+    "Công ty quản lý quỹ",
+    "Công ty niêm yết trên Sở giao dịch"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 114.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 114 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Vốn tối thiểu để được cấp giấy phép thành lập công ty đầu tư chứng khoán là bao nhiêu?",
+   "options": [
+    "50 tỷ đồng",
+    "10 tỷ đồng",
+    "30 tỷ đồng",
+    "100 tỷ đồng"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 115.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 115 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Công ty đầu tư chứng khoán",
+   "right": "Công ty chứng khoán",
+   "cases": [
+    {
+     "text": "Bản chất là quỹ đầu tư, dùng vốn cổ đông để đầu tư chứng khoán",
+     "answer": "left"
+    },
+    {
+     "text": "Cung cấp dịch vụ môi giới, tự doanh, bảo lãnh, tư vấn",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 72 và Điều 114."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công ty đầu tư chứng khoán có hai hình thức là công ty đầu tư chứng khoán {{riêng lẻ}} và công ty đầu tư chứng khoán {{đại chúng}}.",
+   "bank_extra": [
+    "tư nhân",
+    "nhà nước"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tài sản của công ty đầu tư chứng khoán đại chúng phải được lưu ký tại 01 {{ngân hàng giám sát}}.",
+   "bank_extra": [
+    "công ty chứng khoán",
+    "Sở giao dịch"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Công ty đầu tư chứng khoán đăng ký doanh nghiệp trước rồi mới xin giấy phép của Ủy ban Chứng khoán Nhà nước.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 114: sau khi được Ủy ban cấp giấy phép mới đăng ký doanh nghiệp."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm, hình thức và điều kiện cấp phép công ty đầu tư chứng khoán.",
+   "model": "Quỹ đầu tư chứng khoán tổ chức theo loại hình công ty cổ phần để đầu tư chứng khoán; hai hình thức: riêng lẻ và đại chúng (Điều 114). Ủy ban cấp giấy phép rồi mới đăng ký doanh nghiệp. Điều kiện: vốn tối thiểu 50 tỷ; tự quản lý vốn thì Tổng giám đốc, nhân viên nghiệp vụ có chứng chỉ hành nghề. Bản đại chúng tuân thủ hạn chế đầu tư Điều 110, định giá Điều 106, lưu ký tại 01 ngân hàng giám sát (Điều 115).",
+   "keywords": [
+    "công ty cổ phần",
+    "riêng lẻ",
+    "đại chúng",
+    "50 tỷ"
+   ]
+  }
+ ]
+}

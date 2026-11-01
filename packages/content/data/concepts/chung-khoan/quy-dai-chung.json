@@ -1,0 +1,128 @@
+{
+ "id": "quy-dai-chung",
+ "subject": "chung-khoan",
+ "chapter": "c6-quy-dau-tu",
+ "term": "Quỹ đại chúng",
+ "definition": "Quỹ đại chúng là quỹ đầu tư chứng khoán thực hiện chào bán chứng chỉ quỹ ra công chúng. (…) Quỹ đại chúng được thành lập khi đáp ứng các điều kiện sau đây: a) Có ít nhất 100 nhà đầu tư, không kể nhà đầu tư chứng khoán chuyên nghiệp mua chứng chỉ quỹ, trừ quỹ hoán đổi danh mục; b) Tổng giá trị chứng chỉ quỹ đã bán đạt ít nhất là 50 tỷ đồng.",
+ "plain": "Quỹ đại chúng huy động vốn từ công chúng nên được bảo vệ chặt: công ty quản lý quỹ huy động trong 90 ngày; quỹ chỉ thành lập khi có ít nhất 100 nhà đầu tư (không kể chuyên nghiệp) và bán được ít nhất 50 tỷ; tiền góp bị phong tỏa dưới sự kiểm soát của ngân hàng giám sát. Không đạt thì hoàn tiền trong 15 ngày, công ty quản lý quỹ chịu mọi chi phí. Có Ban đại diện quỹ (03–11 thành viên, ít nhất 2/3 độc lập).",
+ "example": "Đợt huy động quỹ mở X kết thúc với 45 tỷ từ 300 nhà đầu tư: chưa đạt 50 tỷ nên quỹ không được thành lập; công ty quản lý quỹ phải hoàn tiền cho nhà đầu tư trong 15 ngày.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 38 Điều 4, khoản 1 Điều 108 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quy-dau-tu-chung-khoan",
+  "quy-mo",
+  "quy-dong",
+  "han-che-quy-dai-chung"
+ ],
+ "keywords": [
+  "chào bán ra công chúng",
+  "100 nhà đầu tư",
+  "50 tỷ đồng",
+  "90 ngày"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quỹ đại chúng được thành lập khi tổng giá trị chứng chỉ quỹ đã bán đạt tối thiểu bao nhiêu?",
+   "options": [
+    "50 tỷ đồng",
+    "10 tỷ đồng",
+    "30 tỷ đồng",
+    "100 tỷ đồng"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 1 Điều 108.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 108 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Công ty quản lý quỹ huy động vốn cho quỹ đại chúng trong thời hạn bao lâu kể từ ngày Giấy chứng nhận chào bán có hiệu lực?",
+   "options": [
+    "90 ngày",
+    "30 ngày",
+    "60 ngày",
+    "12 tháng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 108.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 108 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Huy động thành công",
+   "right": "Huy động không thành công",
+   "cases": [
+    {
+     "text": "Có ít nhất 100 nhà đầu tư không chuyên nghiệp và bán được từ 50 tỷ đồng",
+     "answer": "left"
+    },
+    {
+     "text": "Hoàn trả mọi khoản tiền cho nhà đầu tư trong 15 ngày",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1, 3 Điều 108."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quỹ đại chúng được thành lập khi có ít nhất {{100}} nhà đầu tư, không kể nhà đầu tư chứng khoán chuyên nghiệp, và tổng giá trị chứng chỉ quỹ đã bán đạt ít nhất {{50 tỷ}} đồng.",
+   "bank_extra": [
+    "50",
+    "10 tỷ"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ban đại diện quỹ đại chúng có từ 03 đến 11 thành viên, trong đó ít nhất {{hai phần ba}} là thành viên độc lập.",
+   "bank_extra": [
+    "một nửa",
+    "một phần ba"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Huy động vốn quỹ đại chúng không đạt điều kiện. Ai chịu chi phí phát sinh từ đợt huy động?",
+   "options": [
+    "Công ty quản lý quỹ đầu tư chứng khoán",
+    "Các nhà đầu tư theo tỷ lệ góp",
+    "Ngân hàng giám sát",
+    "Ủy ban Chứng khoán Nhà nước"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 108.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 108 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm và điều kiện thành lập quỹ đại chúng.",
+   "model": "Quỹ đại chúng là quỹ đầu tư chứng khoán chào bán chứng chỉ quỹ ra công chúng (khoản 38 Điều 4). Huy động trong 90 ngày; thành lập khi có ít nhất 100 nhà đầu tư (không kể chuyên nghiệp, trừ quỹ ETF) và bán được từ 50 tỷ đồng; tiền phong tỏa dưới sự kiểm soát của ngân hàng giám sát; không đạt thì hoàn tiền trong 15 ngày, công ty quản lý quỹ chịu chi phí (Điều 108).",
+   "keywords": [
+    "ra công chúng",
+    "100 nhà đầu tư",
+    "50 tỷ",
+    "phong tỏa",
+    "15 ngày"
+   ]
+  }
+ ]
+}

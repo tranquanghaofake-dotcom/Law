@@ -142,6 +142,34 @@
           ]
         }
       ]
+    },
+    {
+      "id": "c6-quy-dau-tu",
+      "title": "Chương VI. Pháp luật về quỹ đầu tư chứng khoán và công ti đầu tư chứng khoán",
+      "lessons": [
+        {
+          "id": "ck6-1",
+          "title": "Quỹ đầu tư chứng khoán và các loại quỹ",
+          "concepts": [
+            "quy-dau-tu-chung-khoan",
+            "quy-dai-chung",
+            "quy-mo",
+            "quy-dong",
+            "quy-thanh-vien"
+          ]
+        },
+        {
+          "id": "ck6-2",
+          "title": "ETF, quyền nhà đầu tư, hạn chế đầu tư, NAV và công ty đầu tư chứng khoán",
+          "concepts": [
+            "quy-hoan-doi-danh-muc",
+            "quyen-nha-dau-tu-quy",
+            "han-che-quy-dai-chung",
+            "gia-tri-tai-san-rong",
+            "cong-ty-dau-tu-chung-khoan"
+          ]
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,124 @@
+{
+ "id": "quy-dong",
+ "subject": "chung-khoan",
+ "chapter": "c6-quy-dau-tu",
+ "term": "Quỹ đóng",
+ "definition": "Quỹ đóng là quỹ đại chúng mà chứng chỉ quỹ đã chào bán ra công chúng không được mua lại theo yêu cầu của nhà đầu tư.",
+ "plain": "Nhà đầu tư quỹ đóng muốn thoát vốn thì bán chứng chỉ quỹ cho người khác trên sàn (chứng chỉ quỹ đóng phải niêm yết). Vì vốn ổn định, quỹ đóng được đầu tư tối đa 10% tài sản vào bất động sản (quỹ đầu tư bất động sản thì khác). Tăng vốn, đổi thời hạn hoạt động của quỹ đóng phải được Ủy ban chấp thuận; chứng chỉ quỹ đóng phát hành thêm ưu tiên nhà đầu tư hiện hữu qua quyền mua (Điều 112).",
+ "example": "Bạn nắm chứng chỉ của một quỹ đóng đang niêm yết trên HOSE và muốn rút vốn: bạn đặt lệnh bán chứng chỉ quỹ trên sàn như bán cổ phiếu cho nhà đầu tư khác; quỹ không mua lại theo yêu cầu của bạn.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 40 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quy-mo",
+  "quy-hoan-doi-danh-muc"
+ ],
+ "keywords": [
+  "không mua lại theo yêu cầu",
+  "niêm yết",
+  "tăng vốn cần Ủy ban chấp thuận"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 40 Điều 4, quỹ đóng khác quỹ mở ở điểm nào?",
+   "options": [
+    "Chứng chỉ quỹ không được mua lại theo yêu cầu của nhà đầu tư",
+    "Không chào bán ra công chúng",
+    "Chỉ có nhà đầu tư chuyên nghiệp",
+    "Không có công ty quản lý quỹ"
+   ],
+   "answer": 0,
+   "explain": "Khoản 40 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 40 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chứng chỉ quỹ đóng phát hành thêm được phát hành cho ai trước?",
+   "options": [
+    "Nhà đầu tư hiện hữu, thông qua quyền mua được chuyển nhượng",
+    "Nhà đầu tư nước ngoài",
+    "Công ty quản lý quỹ",
+    "Ngân hàng giám sát"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 112; nhà đầu tư hiện hữu không mua hết thì phát hành cho nhà đầu tư bên ngoài.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 112 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quỹ đóng",
+   "right": "Quỹ mở",
+   "cases": [
+    {
+     "text": "Tối đa 10% tổng giá trị tài sản đầu tư vào bất động sản (trừ quỹ bất động sản)",
+     "answer": "left"
+    },
+    {
+     "text": "Không được đầu tư vào bất động sản",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điểm d khoản 1 Điều 110."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quỹ đóng là quỹ đại chúng mà chứng chỉ quỹ đã chào bán ra công chúng {{không được}} mua lại theo yêu cầu của nhà đầu tư.",
+   "bank_extra": [
+    "bắt buộc",
+    "luôn được"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Gia hạn thời hạn hoạt động của quỹ đóng đòi hỏi giá trị tài sản ròng tại kỳ định giá gần nhất không thấp hơn {{50 tỷ}} đồng.",
+   "bank_extra": [
+    "10 tỷ",
+    "100 tỷ"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Quỹ đóng Q muốn tăng vốn. Lợi nhuận năm trước của quỹ âm. Ủy ban có chấp thuận không?",
+   "options": [
+    "Không, vì lợi nhuận năm liền trước phải là số dương",
+    "Có, nếu Đại hội nhà đầu tư thông qua",
+    "Có, vì tăng vốn giúp quỹ phục hồi",
+    "Có, nếu công ty quản lý quỹ bảo lãnh"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 1 Điều 112.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 112 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày đặc điểm của quỹ đóng và điều kiện tăng vốn quỹ đóng.",
+   "model": "Quỹ đại chúng không mua lại chứng chỉ quỹ theo yêu cầu (khoản 40 Điều 4); chứng chỉ quỹ niêm yết để nhà đầu tư bán trên sàn. Tăng vốn cần Ủy ban chấp thuận và: Điều lệ có quy định; lợi nhuận năm liền trước dương; công ty quản lý quỹ không bị xử phạt về chứng khoán trong 02 năm; Đại hội nhà đầu tư thông qua; ưu tiên phát hành cho nhà đầu tư hiện hữu (Điều 112).",
+   "keywords": [
+    "không mua lại",
+    "niêm yết",
+    "lợi nhuận dương",
+    "nhà đầu tư hiện hữu"
+   ]
+  }
+ ]
+}

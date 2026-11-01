@@ -1,0 +1,131 @@
+{
+ "id": "han-che-quy-dai-chung",
+ "subject": "chung-khoan",
+ "chapter": "c6-quy-dau-tu",
+ "term": "Hạn chế đầu tư của quỹ đại chúng",
+ "definition": "Đầu tư vào chứng khoán của 01 tổ chức phát hành quá 10% tổng giá trị chứng khoán đang lưu hành của tổ chức đó, trừ trái phiếu Chính phủ; c) Đầu tư quá 20% tổng giá trị tài sản của quỹ đại chúng vào chứng khoán đang lưu hành của 01 tổ chức phát hành, trừ trái phiếu Chính phủ; (…) e) Cho vay hoặc bảo lãnh cho bất kỳ khoản vay nào;",
+ "plain": "Tiền của quỹ đại chúng là tiền công chúng, nên luật buộc đa dạng hóa và cấm dùng sai mục đích: không mua chứng chỉ quỹ của chính mình; không nắm quá 10% chứng khoán đang lưu hành của 01 tổ chức; không dồn quá 20% tài sản quỹ vào 01 tổ chức; không quá 30% vào một nhóm công ty liên quan; không cho vay, bảo lãnh; không vay (trừ vay ngắn hạn tối đa 5% giá trị tài sản ròng). Vượt hạn mức vì giá biến động thì phải điều chỉnh trong 03 tháng.",
+ "example": "Quỹ cổ phiếu Z có tài sản 1.000 tỷ, muốn mua 250 tỷ cổ phiếu của một ngân hàng: vượt mức 20% tổng giá trị tài sản (200 tỷ), không được phép.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 110 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quy-dai-chung",
+  "quy-mo",
+  "quy-dong"
+ ],
+ "keywords": [
+  "10% chứng khoán của 01 tổ chức",
+  "20% tài sản quỹ",
+  "30% nhóm công ty",
+  "không cho vay, bảo lãnh"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quỹ đại chúng không được đầu tư quá bao nhiêu tổng giá trị tài sản của quỹ vào chứng khoán của 01 tổ chức phát hành (trừ trái phiếu Chính phủ)?",
+   "options": [
+    "20%",
+    "10%",
+    "30%",
+    "49%"
+   ],
+   "answer": 0,
+   "explain": "Điểm c khoản 1 Điều 110.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 110 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hoạt động nào quỹ đại chúng bị cấm tuyệt đối theo Điều 110?",
+   "options": [
+    "Cho vay hoặc bảo lãnh cho bất kỳ khoản vay nào",
+    "Mua trái phiếu Chính phủ",
+    "Mua cổ phiếu niêm yết",
+    "Gửi tiền ngân hàng"
+   ],
+   "answer": 0,
+   "explain": "Điểm e khoản 1 Điều 110.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 110 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "10%",
+   "right": "20%",
+   "cases": [
+    {
+     "text": "Tối đa sở hữu chứng khoán đang lưu hành của 01 tổ chức phát hành",
+     "answer": "left"
+    },
+    {
+     "text": "Tối đa tổng giá trị tài sản quỹ đầu tư vào 01 tổ chức phát hành",
+     "answer": "right"
+    },
+    {
+     "text": "Tối đa tài sản quỹ đóng đầu tư vào bất động sản",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điểm b, c, d khoản 1 Điều 110."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quỹ đại chúng không được đầu tư quá {{30%}} tổng giá trị tài sản vào các công ty trong cùng một nhóm công ty có quan hệ sở hữu với nhau.",
+   "bank_extra": [
+    "20%",
+    "50%"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Khi vượt hạn mức đầu tư do biến động giá, công ty quản lý quỹ phải điều chỉnh danh mục trong thời hạn {{03 tháng}}.",
+   "bank_extra": [
+    "07 ngày",
+    "12 tháng"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Quỹ đại chúng dùng tiền quỹ mua lại chứng chỉ quỹ của chính mình trên sàn để \"đỡ giá\". Nhận định nào đúng?",
+   "options": [
+    "Vi phạm điểm a khoản 1 Điều 110: cấm đầu tư vào chứng chỉ quỹ của chính quỹ đó",
+    "Hợp pháp vì giúp ổn định giá",
+    "Hợp pháp nếu dưới 10% tài sản",
+    "Hợp pháp nếu Ban đại diện quỹ đồng ý"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 110.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 110 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Kể các hạn chế đầu tư chính của quỹ đại chúng theo Điều 110.",
+   "model": "Không đầu tư vào chứng chỉ quỹ của chính quỹ; không quá 10% chứng khoán đang lưu hành của 01 tổ chức; không quá 20% tài sản quỹ vào 01 tổ chức (trừ trái phiếu Chính phủ); quỹ đóng tối đa 10% vào bất động sản, quỹ mở không đầu tư bất động sản; không quá 30% vào nhóm công ty liên quan; không cho vay, bảo lãnh; không vay trừ vay ngắn hạn tối đa 5% NAV; vượt mức phải điều chỉnh trong 03 tháng.",
+   "keywords": [
+    "10%",
+    "20%",
+    "30%",
+    "cho vay",
+    "03 tháng"
+   ]
+  }
+ ]
+}

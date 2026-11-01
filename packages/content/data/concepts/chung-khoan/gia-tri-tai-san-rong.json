@@ -1,0 +1,116 @@
+{
+ "id": "gia-tri-tai-san-rong",
+ "subject": "chung-khoan",
+ "chapter": "c6-quy-dau-tu",
+ "term": "Giá trị tài sản ròng (NAV) của quỹ",
+ "definition": "Việc xác định giá trị tài sản ròng trên một đơn vị quỹ đầu tư chứng khoán do công ty quản lý quỹ đầu tư chứng khoán thực hiện và được ngân hàng giám sát xác nhận; việc xác nhận giá trị tài sản ròng đối với quỹ thành viên do ngân hàng giám sát hoặc ngân hàng lưu ký thực hiện.",
+ "plain": "NAV là \"giá trị thật\" của một đơn vị quỹ: tổng tài sản trừ nợ, chia cho số đơn vị. Công ty quản lý quỹ tính, ngân hàng giám sát xác nhận (hai lớp kiểm soát). Chứng khoán niêm yết định giá theo giá đóng cửa hoặc giá trung bình ngày giao dịch gần nhất; NAV phải công bố định kỳ. NAV xuống dưới 10 tỷ liên tục 06 tháng là một căn cứ giải thể quỹ (điểm đ khoản 1 Điều 104).",
+ "example": "Quỹ mở có tài sản ròng 120 tỷ, 10 triệu đơn vị quỹ: NAV/đơn vị = 12.000 đồng. Nhà đầu tư bán lại quỹ mở theo mức NAV này (trừ phí).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 106 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quy-mo",
+  "quyen-nha-dau-tu-quy",
+  "quy-dau-tu-chung-khoan"
+ ],
+ "keywords": [
+  "công ty quản lý quỹ xác định",
+  "ngân hàng giám sát xác nhận",
+  "giá đóng cửa",
+  "dưới 10 tỷ trong 06 tháng"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai xác định giá trị tài sản ròng trên một đơn vị quỹ đại chúng?",
+   "options": [
+    "Công ty quản lý quỹ, được ngân hàng giám sát xác nhận",
+    "Ủy ban Chứng khoán Nhà nước",
+    "Sở giao dịch chứng khoán",
+    "Đại hội nhà đầu tư"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 106.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 106 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chứng khoán niêm yết trong danh mục quỹ được định giá theo nguyên tắc nào?",
+   "options": [
+    "Giá đóng cửa hoặc giá trung bình của ngày giao dịch gần nhất trước ngày định giá",
+    "Giá mua ban đầu",
+    "Giá do công ty quản lý quỹ tự đặt",
+    "Mệnh giá"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 2 Điều 106.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 106 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Công ty quản lý quỹ",
+   "right": "Ngân hàng giám sát",
+   "cases": [
+    {
+     "text": "Xác định giá trị tài sản ròng",
+     "answer": "left"
+    },
+    {
+     "text": "Xác nhận giá trị tài sản ròng",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 106."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Giá trị tài sản ròng trên một đơn vị quỹ do {{công ty quản lý quỹ}} xác định và được {{ngân hàng giám sát}} xác nhận.",
+   "bank_extra": [
+    "Sở giao dịch",
+    "công ty chứng khoán"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quỹ đầu tư chứng khoán giải thể khi giá trị tài sản ròng xuống dưới {{10 tỷ}} đồng liên tục trong {{06 tháng}}.",
+   "bank_extra": [
+    "50 tỷ",
+    "12 tháng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Giá trị tài sản ròng của quỹ đầu tư chứng khoán phải được công bố công khai định kỳ.",
+   "answer": true,
+   "explain": "Đúng. Khoản 3 Điều 106."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quy định về xác định giá trị tài sản ròng của quỹ đầu tư chứng khoán.",
+   "model": "Công ty quản lý quỹ xác định NAV/đơn vị, ngân hàng giám sát xác nhận (quỹ thành viên: ngân hàng giám sát hoặc ngân hàng lưu ký). Nguyên tắc: chứng khoán niêm yết theo giá đóng cửa hoặc trung bình ngày gần nhất; không giao dịch trên 15 ngày hoặc tài sản khác theo phương pháp trong Điều lệ; tài sản bằng tiền theo sổ kế toán. NAV công bố định kỳ (Điều 106).",
+   "keywords": [
+    "công ty quản lý quỹ",
+    "ngân hàng giám sát",
+    "giá đóng cửa",
+    "công bố"
+   ]
+  }
+ ]
+}

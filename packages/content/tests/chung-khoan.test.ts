@@ -10,7 +10,7 @@ const norm = (s: string) => s.normalize('NFC').replace(/\(…\)/g, ' ').replace(
 
 describe('nội dung Luật Chứng khoán', () => {
   it('mọi khái niệm hợp lệ, nguồn statute trỏ VBHN trên vbpl.vn, có recall và 2 cloze', () => {
-    expect(files.length).toBe(50);
+    expect(files.length).toBe(60);
     for (const f of files) {
       const c = conceptSchema.parse(JSON.parse(readFileSync(join(dir, f), 'utf8')));
       expect(c.source.kind).toBe('statute');

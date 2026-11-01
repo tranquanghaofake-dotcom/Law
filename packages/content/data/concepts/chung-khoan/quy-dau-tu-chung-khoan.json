@@ -1,0 +1,119 @@
+{
+ "id": "quy-dau-tu-chung-khoan",
+ "subject": "chung-khoan",
+ "chapter": "c6-quy-dau-tu",
+ "term": "Quỹ đầu tư chứng khoán",
+ "definition": "Quỹ đầu tư chứng khoán là quỹ hình thành từ vốn góp của nhà đầu tư với mục đích thu lợi nhuận từ việc đầu tư vào chứng khoán hoặc vào các tài sản khác, kể cả bất động sản, trong đó nhà đầu tư không có quyền kiểm soát hằng ngày đối với việc ra quyết định đầu tư của quỹ.",
+ "plain": "Dấu hiệu nhận diện quỹ: (1) tiền góp của nhiều nhà đầu tư; (2) mục đích sinh lời từ đầu tư chứng khoán hoặc tài sản khác; (3) nhà đầu tư KHÔNG kiểm soát hằng ngày quyết định đầu tư: việc đó giao cho công ty quản lý quỹ. Quỹ gồm quỹ đại chúng (quỹ mở, quỹ đóng) và quỹ thành viên (Điều 99).",
+ "example": "Nhóm 5 người bạn góp tiền và cùng họp hằng tuần để chọn cổ phiếu: không phải quỹ đầu tư chứng khoán, vì chính họ kiểm soát hằng ngày quyết định đầu tư và không có công ty quản lý quỹ.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 37 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quy-dai-chung",
+  "quy-thanh-vien",
+  "chung-chi-quy"
+ ],
+ "keywords": [
+  "vốn góp của nhà đầu tư",
+  "thu lợi nhuận",
+  "không kiểm soát hằng ngày"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đặc điểm nào phân biệt quỹ đầu tư chứng khoán theo khoản 37 Điều 4?",
+   "options": [
+    "Nhà đầu tư không có quyền kiểm soát hằng ngày đối với việc ra quyết định đầu tư của quỹ",
+    "Nhà đầu tư trực tiếp quyết định từng giao dịch",
+    "Quỹ chỉ được đầu tư vào trái phiếu Chính phủ",
+    "Quỹ không có mục đích lợi nhuận"
+   ],
+   "answer": 0,
+   "explain": "Khoản 37 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 37 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 99, quỹ đầu tư chứng khoán gồm những loại nào?",
+   "options": [
+    "Quỹ đại chúng và quỹ thành viên",
+    "Quỹ mở và quỹ thành viên",
+    "Quỹ ngân hàng và quỹ bảo hiểm",
+    "Quỹ nhà nước và quỹ tư nhân"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 99; quỹ đại chúng gồm quỹ mở và quỹ đóng (khoản 2).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 99 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quỹ đại chúng",
+   "right": "Quỹ thành viên",
+   "cases": [
+    {
+     "text": "Chào bán chứng chỉ quỹ ra công chúng",
+     "answer": "left"
+    },
+    {
+     "text": "Từ 02 đến 99 thành viên, chỉ gồm nhà đầu tư chứng khoán chuyên nghiệp",
+     "answer": "right"
+    },
+    {
+     "text": "Gồm quỹ mở và quỹ đóng",
+     "answer": "left"
+    }
+   ],
+   "explain": "Khoản 38, 41 Điều 4; Điều 99."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quỹ đầu tư chứng khoán là quỹ hình thành từ {{vốn góp}} của nhà đầu tư với mục đích thu lợi nhuận, trong đó nhà đầu tư không có quyền {{kiểm soát hằng ngày}} đối với việc ra quyết định đầu tư của quỹ.",
+   "bank_extra": [
+    "vốn vay",
+    "biểu quyết"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quỹ đầu tư chứng khoán có thể đầu tư vào chứng khoán hoặc các tài sản khác, kể cả {{bất động sản}}.",
+   "bank_extra": [
+    "tiền ảo",
+    "ngoại hối phái sinh"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Việc thành lập quỹ đại chúng phải đăng ký với Ủy ban Chứng khoán Nhà nước; quỹ thành viên chỉ phải báo cáo Ủy ban.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 và khoản 2 Điều 100."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Định nghĩa quỹ đầu tư chứng khoán và nêu các loại hình quỹ.",
+   "model": "Quỹ hình thành từ vốn góp của nhà đầu tư nhằm thu lợi nhuận từ đầu tư vào chứng khoán hoặc tài sản khác (kể cả bất động sản), nhà đầu tư không kiểm soát hằng ngày quyết định đầu tư (khoản 37 Điều 4). Gồm quỹ đại chúng (quỹ mở, quỹ đóng) và quỹ thành viên (Điều 99).",
+   "keywords": [
+    "vốn góp",
+    "không kiểm soát hằng ngày",
+    "quỹ đại chúng",
+    "quỹ thành viên"
+   ]
+  }
+ ]
+}
