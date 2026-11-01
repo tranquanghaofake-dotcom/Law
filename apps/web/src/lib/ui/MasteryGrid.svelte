@@ -4,6 +4,8 @@
   import { hashFor } from '$lib/router.svelte';
   import { LEVEL_NAMES } from '$lib/game/levels';
   import type { LessonSt } from './lessonState';
+  import Emblem from '$lib/art/Emblem.svelte';
+  import { emblemFor } from '$lib/art/registry';
   let { subject, levels, terms, states }: { subject: Subject; levels: Record<string, Level>; terms: Record<string, string>; states: Record<string, LessonSt> } = $props();
 
   function onclick(e: MouseEvent, st: LessonSt) {
@@ -13,7 +15,7 @@
 
 <div class="mastery">
   {#each subject.chapters as ch (ch.id)}
-    <p class="kicker chapter" id="chapter-{ch.id}">{ch.title}{#if ch.advanced} <span class="advanced-tag" title="Ngoài giáo trình">Nâng cao</span>{/if}</p>
+    <p class="kicker chapter" id="chapter-{ch.id}"><Emblem name={emblemFor(subject.id, ch.id)} size={42} /><span class="chapter-title">{ch.title}</span>{#if ch.advanced} <span class="advanced-tag" title="Ngoài giáo trình">Nâng cao</span>{/if}</p>
     <ol class="lesson-rows">
       {#each ch.lessons as l (l.id)}
         {@const st = states[l.id] ?? 'locked'}

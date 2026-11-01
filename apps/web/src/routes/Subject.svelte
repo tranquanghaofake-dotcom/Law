@@ -11,7 +11,10 @@
   import LevelLegend from '$lib/ui/LevelLegend.svelte';
   import SubjectRail from '$lib/ui/SubjectRail.svelte';
   import SubjectArt from '$lib/art/SubjectArt.svelte';
-  import { artFor } from '$lib/art/registry';
+  import { artFor, emblemFor } from '$lib/art/registry';
+  import Emblem from '$lib/art/Emblem.svelte';
+  /** Nhãn ngắn cho mục lục chương: "Chương 7. Quốc hội…" → "Chương 7"; "Nâng cao: …" → "Nâng cao". */
+  const shortTitle = (t: string) => t.split(/[.:]/)[0].trim();
 
   let subject = $state<Subject | null>(null);
   let levels = $state<Record<string, Level>>({});
@@ -68,7 +71,7 @@
   </header>
   {#if subject.chapters.length > 1}
     <nav class="local-nav small" aria-label="Chương trong môn">
-      {#each subject.chapters as ch (ch.id)}<a href="#chapter-{ch.id}" onclick={(e) => { e.preventDefault(); document.getElementById(`chapter-${ch.id}`)?.scrollIntoView({ behavior: 'smooth' }); }}>{ch.title}</a>{/each}
+      {#each subject.chapters as ch (ch.id)}<a href="#chapter-{ch.id}" title={ch.title} onclick={(e) => { e.preventDefault(); document.getElementById(`chapter-${ch.id}`)?.scrollIntoView({ behavior: 'smooth' }); }}><Emblem name={emblemFor(subject.id, ch.id)} size={26} /><span>{shortTitle(ch.title)}</span></a>{/each}
     </nav>
   {/if}
   <LevelLegend />

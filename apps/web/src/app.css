@@ -575,3 +575,14 @@ h1 { text-wrap: balance; }
 .shelf.large .book-cap { white-space: normal; text-align: center; width: 100%; }
 @media (max-width: 479px) { .shelf.large .shelf-row { gap: 2px; padding: 0 4px; } .shelf.large .bookend svg { width: 26px; height: 42px; } }
 .shelf-card { overflow: hidden; }
+
+/* Huy hiệu chương ở trang môn */
+.mastery .chapter { display: flex; align-items: center; gap: 12px; margin: 28px 0 12px; color: var(--ink); letter-spacing: .04em; line-height: 1.4; }
+.mastery .chapter .emblem { flex: none; }
+.mastery .chapter .chapter-title { flex: 1; min-width: 0; }
+.mastery .chapter .advanced-tag { flex: none; }
+
+/* Mục lục chương: chip huy hiệu + nhãn ngắn */
+.local-nav { gap: 6px; }
+.local-nav a { display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px 3px 3px; background: var(--card); font-weight: 600; white-space: nowrap; }
+.local-nav a:hover { border-color: var(--accent); }

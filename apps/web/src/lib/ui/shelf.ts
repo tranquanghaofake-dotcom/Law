@@ -9,7 +9,7 @@ export type Book = { id: string; title: string; short: string; percent: number; 
 /** Số ô tối thiểu trên kệ (ô trống vẽ khung "sắp có" cho kệ không trơ trọi). */
 export const SHELF_MIN = 4;
 
-const FIXED: Record<string, BookScheme> = { 'hien-phap': 'vang' };
+const FIXED: Record<string, BookScheme> = { 'hien-phap': 'vang', 'chung-khoan': 'xanh', 'lich-su-nn-pl': 'dem' };
 const CYCLE: BookScheme[] = ['xanh', 'dem', 'vang'];
 
 /** Bộ màu bìa (cách điệu theo dòng sách luật in trong nước): Hiến pháp vàng; môn khác xoay vòng theo vị trí. */
