@@ -8,4 +8,4 @@ Mọi `definition` kiểu `statute` là **nguyên văn** điều/khoản của v
 | Nghị quyết 203/2025/QH15 sửa đổi, bổ sung một số điều của Hiến pháp | https://vbpl.vn/van-ban/chi-tiet/178314 | 01/11/2026 | Dùng làm ví dụ cho thủ tục sửa đổi Hiến pháp. |
 | Bộ luật Dân sự 2015, Bộ luật Lao động 2019, Bộ luật Hình sự 2015 (hợp nhất) | thuvienphapluat.vn / vbpl.vn | 31/10/2026 | Dùng cho 5 bộ 10 câu trong `sets/` (kế thừa từ web v1). |
 
-Bản text toàn văn Hiến pháp dùng khi soạn thẻ: `archive/legal-content-pipeline/data/laws/hien-phap-2013.txt`.
+Bản text toàn văn Hiến pháp dùng khi soạn thẻ và kiểm tra tự động: `web/content/laws/hien-phap-2013.txt` (nguyên văn từ vbpl.vn, không thuộc phạm vi bảo hộ quyền tác giả).
