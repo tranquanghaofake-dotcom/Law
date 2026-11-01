@@ -1,0 +1,119 @@
+{
+ "id": "tam-ngung-dinh-chi-giao-dich-so",
+ "subject": "chung-khoan",
+ "chapter": "c3-thi-truong-giao-dich",
+ "term": "Tạm ngừng, đình chỉ hoạt động giao dịch của Sở giao dịch",
+ "definition": "Ủy ban Chứng khoán Nhà nước thực hiện tạm ngừng, đình chỉ một phần hoặc toàn bộ hoạt động giao dịch của Sở giao dịch chứng khoán Việt Nam và công ty con trong trường hợp sau đây: a) Khi xảy ra chiến tranh, thảm họa tự nhiên, biến động lớn của nền kinh tế, sự cố hệ thống giao dịch hoặc các sự kiện bất khả kháng khác làm ảnh hưởng đến hoạt động giao dịch bình thường của thị trường giao dịch chứng khoán;",
+ "plain": "\"Đóng cửa sàn\" là thẩm quyền của Ủy ban Chứng khoán Nhà nước, không phải của Sở. Hai nhóm căn cứ: sự kiện bất khả kháng (chiến tranh, thảm họa, sự cố hệ thống…) và thị trường biến động bất thường hoặc cần bảo vệ nhà đầu tư. Khắc phục xong thì Ủy ban khôi phục giao dịch.",
+ "example": "Hệ thống giao dịch gặp sự cố nghẽn lệnh nghiêm trọng cả buổi sáng: Ủy ban có thể tạm ngừng hoạt động giao dịch của Sở (sự cố hệ thống giao dịch, điểm a khoản 1 Điều 49) và khôi phục khi đã khắc phục.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 49 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quyen-nghia-vu-so-giao-dich",
+  "so-giao-dich-chung-khoan-viet-nam"
+ ],
+ "keywords": [
+  "Ủy ban Chứng khoán Nhà nước",
+  "bất khả kháng",
+  "biến động bất thường",
+  "khôi phục"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chủ thể nào có thẩm quyền tạm ngừng toàn bộ hoạt động giao dịch của Sở giao dịch chứng khoán Việt Nam?",
+   "options": [
+    "Ủy ban Chứng khoán Nhà nước",
+    "Tổng giám đốc Sở giao dịch",
+    "Bộ trưởng Bộ Tài chính",
+    "Công ty chứng khoán lớn nhất"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 49.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 49 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Căn cứ nào được nêu tại khoản 1 Điều 49 để tạm ngừng hoạt động giao dịch của Sở?",
+   "options": [
+    "Sự cố hệ thống giao dịch",
+    "Một công ty niêm yết chậm công bố thông tin",
+    "Một nhà đầu tư bị thua lỗ lớn",
+    "Giá một mã cổ phiếu giảm sàn"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 49 nêu sự cố hệ thống giao dịch cùng chiến tranh, thảm họa tự nhiên, biến động lớn của nền kinh tế, sự kiện bất khả kháng. Biến động của một mã do Sở xử lý (Điều 46).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 49 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tạm ngừng, đình chỉ (khoản 1)",
+   "right": "Khôi phục (khoản 2)",
+   "cases": [
+    {
+     "text": "Khi xảy ra chiến tranh, thảm họa tự nhiên",
+     "answer": "left"
+    },
+    {
+     "text": "Khi nguyên nhân dẫn đến việc tạm ngừng đã được khắc phục",
+     "answer": "right"
+    },
+    {
+     "text": "Khi thị trường có biến động bất thường",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 49."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ủy ban Chứng khoán Nhà nước thực hiện tạm ngừng, đình chỉ {{một phần hoặc toàn bộ}} hoạt động giao dịch của Sở khi xảy ra chiến tranh, thảm họa tự nhiên, biến động lớn của nền kinh tế, {{sự cố hệ thống giao dịch}} hoặc sự kiện bất khả kháng khác.",
+   "bank_extra": [
+    "vĩnh viễn",
+    "khiếu nại của nhà đầu tư"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Khi nguyên nhân dẫn đến việc tạm ngừng được khắc phục, Ủy ban Chứng khoán Nhà nước thực hiện việc {{khôi phục}} hoạt động giao dịch.",
+   "bank_extra": [
+    "giải thể",
+    "cổ phần hóa"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tổng giám đốc Sở giao dịch chứng khoán Việt Nam có quyền đình chỉ toàn bộ hoạt động giao dịch của Sở khi xảy ra thảm họa.",
+   "answer": false,
+   "explain": "Sai. Thẩm quyền này thuộc Ủy ban Chứng khoán Nhà nước (khoản 1 Điều 49). Sở chỉ tạm ngừng, đình chỉ giao dịch một hoặc một số chứng khoán (điểm d khoản 1 Điều 46)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày thẩm quyền và căn cứ tạm ngừng, đình chỉ, khôi phục hoạt động giao dịch của Sở giao dịch chứng khoán Việt Nam.",
+   "model": "Ủy ban Chứng khoán Nhà nước tạm ngừng, đình chỉ một phần hoặc toàn bộ hoạt động giao dịch của Sở và công ty con khi: (a) chiến tranh, thảm họa tự nhiên, biến động lớn của nền kinh tế, sự cố hệ thống, bất khả kháng; (b) thị trường biến động bất thường hoặc cần bảo vệ nhà đầu tư, ổn định thị trường. Khắc phục xong thì Ủy ban khôi phục.",
+   "keywords": [
+    "Ủy ban Chứng khoán Nhà nước",
+    "bất khả kháng",
+    "biến động bất thường",
+    "khôi phục"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,124 @@
+{
+ "id": "phuong-thuc-giao-dich-chung-khoan",
+ "subject": "chung-khoan",
+ "chapter": "c3-thi-truong-giao-dich",
+ "term": "Phương thức giao dịch chứng khoán niêm yết, đăng ký giao dịch",
+ "definition": "Chứng khoán niêm yết, đăng ký giao dịch được tổ chức giao dịch theo phương thức khớp lệnh tập trung, phương thức giao dịch thỏa thuận và phương thức giao dịch khác quy định tại Quy chế giao dịch chứng khoán của Sở giao dịch chứng khoán Việt Nam. Chứng khoán niêm yết, đăng ký giao dịch không được giao dịch bên ngoài hệ thống giao dịch chứng khoán do Sở giao dịch chứng khoán Việt Nam và công ty con tổ chức, trừ trường hợp giao dịch không mang tính chất mua bán hoặc giao dịch khác không thể thực hiện được thông qua hệ thống giao dịch chứng khoán.",
+ "plain": "Khớp lệnh tập trung: hệ thống tự ghép lệnh mua và bán theo giá, thời gian (như khi đặt lệnh trên app). Giao dịch thỏa thuận: hai bên tự thỏa thuận giá, khối lượng rồi thực hiện qua hệ thống (thường là lô lớn). Dù cách nào, chứng khoán niêm yết, đăng ký giao dịch phải đi qua hệ thống, không được \"mua bán tay\" bên ngoài, trừ ngoại lệ như thừa kế, tặng cho.",
+ "example": "Hai người bạn thỏa thuận mua bán 10.000 cổ phiếu niêm yết bằng hợp đồng viết tay, trả tiền mặt: không hợp lệ, phải thực hiện giao dịch thỏa thuận qua hệ thống. Nhưng con nhận thừa kế cổ phiếu của cha (không mang tính chất mua bán) thì được chuyển quyền sở hữu ngoài hệ thống.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 50 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "he-thong-giao-dich-chung-khoan",
+  "doc-quyen-to-chuc-thi-truong-giao-dich"
+ ],
+ "keywords": [
+  "khớp lệnh tập trung",
+  "giao dịch thỏa thuận",
+  "không giao dịch ngoài hệ thống"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 1 Điều 50, chứng khoán niêm yết, đăng ký giao dịch được giao dịch theo phương thức nào?",
+   "options": [
+    "Khớp lệnh tập trung, giao dịch thỏa thuận và phương thức khác theo Quy chế giao dịch của Sở",
+    "Chỉ khớp lệnh tập trung",
+    "Chỉ giao dịch thỏa thuận ngoài sàn",
+    "Đấu giá công khai do Ủy ban tổ chức"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 50.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 50 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trường hợp nào chứng khoán niêm yết được chuyển quyền sở hữu bên ngoài hệ thống giao dịch?",
+   "options": [
+    "Giao dịch không mang tính chất mua bán, như thừa kế",
+    "Hai bên tự thỏa thuận giá cao hơn thị trường",
+    "Người bán cần tiền gấp",
+    "Người mua là người thân của người bán"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 50: ngoại lệ là giao dịch không mang tính chất mua bán hoặc không thể thực hiện qua hệ thống (Bộ trưởng Bộ Tài chính quy định chi tiết).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 50 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Khớp lệnh tập trung",
+   "right": "Giao dịch thỏa thuận",
+   "cases": [
+    {
+     "text": "Hệ thống tự ghép lệnh mua, bán của nhiều nhà đầu tư",
+     "answer": "left"
+    },
+    {
+     "text": "Hai bên tự thống nhất giá, khối lượng rồi thực hiện qua hệ thống",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 50; chi tiết tại Quy chế giao dịch của Sở."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chứng khoán niêm yết, đăng ký giao dịch được giao dịch theo phương thức {{khớp lệnh tập trung}}, phương thức giao dịch {{thỏa thuận}} và phương thức khác.",
+   "bank_extra": [
+    "đấu thầu",
+    "ủy thác"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Việc kết nối giao dịch chứng khoán với Sở giao dịch chứng khoán nước ngoài do {{Thủ tướng Chính phủ}} quyết định.",
+   "bank_extra": [
+    "Quốc hội",
+    "Tổng giám đốc Sở"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "A và B ký hợp đồng mua bán 50.000 cổ phiếu đang niêm yết trên HOSE, thanh toán chuyển khoản, không qua công ty chứng khoán. Nhận định nào đúng?",
+   "options": [
+    "Trái khoản 2 Điều 50 vì đây là giao dịch mua bán phải thực hiện qua hệ thống giao dịch",
+    "Hợp pháp vì là thỏa thuận dân sự tự nguyện",
+    "Hợp pháp nếu có công chứng",
+    "Hợp pháp vì giá trị dưới 1 tỷ đồng"
+   ],
+   "answer": 0,
+   "explain": "Giao dịch mang tính chất mua bán chứng khoán niêm yết phải qua hệ thống (có thể dùng phương thức giao dịch thỏa thuận).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 50 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quy định về phương thức giao dịch chứng khoán niêm yết, đăng ký giao dịch.",
+   "model": "Giao dịch theo phương thức khớp lệnh tập trung, giao dịch thỏa thuận, phương thức khác theo Quy chế của Sở (khoản 1 Điều 50). Không được giao dịch ngoài hệ thống, trừ giao dịch không mang tính chất mua bán hoặc không thể thực hiện qua hệ thống (khoản 2). Loại chứng khoán, phương thức, hệ thống mới phải được Ủy ban chấp thuận (khoản 3).",
+   "keywords": [
+    "khớp lệnh tập trung",
+    "thỏa thuận",
+    "ngoài hệ thống",
+    "không mang tính chất mua bán"
+   ]
+  }
+ ]
+}

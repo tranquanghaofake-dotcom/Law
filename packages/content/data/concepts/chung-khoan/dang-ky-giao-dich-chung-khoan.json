@@ -1,0 +1,114 @@
+{
+ "id": "dang-ky-giao-dich-chung-khoan",
+ "subject": "chung-khoan",
+ "chapter": "c3-thi-truong-giao-dich",
+ "term": "Đăng ký giao dịch chứng khoán",
+ "definition": "Đăng ký giao dịch là việc đưa chứng khoán vào giao dịch trên hệ thống giao dịch cho chứng khoán chưa niêm yết.",
+ "plain": "Đăng ký giao dịch là con đường cho chứng khoán chưa đủ điều kiện niêm yết nhưng vẫn phải giao dịch có tổ chức, minh bạch, ví dụ cổ phiếu công ty đại chúng nhỏ, doanh nghiệp nhà nước mới cổ phần hóa. Trên thực tế đó là sàn UPCoM do Sở giao dịch chứng khoán Hà Nội vận hành. Mục lục giáo trình xếp nội dung này vào phần \"thị trường giao dịch phi tập trung\".",
+ "example": "Một tổng công ty nhà nước vừa cổ phần hóa, chưa đủ điều kiện lên HOSE: cổ phiếu được đăng ký giao dịch trên UPCoM để nhà đầu tư mua bán qua công ty chứng khoán.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 25 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "niem-yet-chung-khoan",
+  "he-thong-giao-dich-chung-khoan"
+ ],
+ "keywords": [
+  "chưa niêm yết",
+  "hệ thống giao dịch cho chứng khoán chưa niêm yết",
+  "UPCoM"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 25 Điều 4, đăng ký giao dịch là gì?",
+   "options": [
+    "Đưa chứng khoán vào giao dịch trên hệ thống giao dịch cho chứng khoán chưa niêm yết",
+    "Đưa chứng khoán đủ điều kiện vào hệ thống cho chứng khoán niêm yết",
+    "Ghi nhận thông tin người sở hữu chứng khoán",
+    "Đăng ký mở tài khoản giao dịch"
+   ],
+   "answer": 0,
+   "explain": "Khoản 25 Điều 4. Lưu ý phân biệt với \"đăng ký chứng khoán\" (khoản 33): ghi nhận thông tin tổ chức phát hành, chứng khoán, người sở hữu.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 25 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khái niệm nào dễ nhầm nhất với \"đăng ký giao dịch\"?",
+   "options": [
+    "Đăng ký chứng khoán (khoản 33 Điều 4)",
+    "Bảo lãnh phát hành",
+    "Tự doanh chứng khoán",
+    "Quỹ mở"
+   ],
+   "answer": 0,
+   "explain": "Đăng ký chứng khoán là ghi nhận thông tin về tổ chức phát hành, chứng khoán và người sở hữu; đăng ký giao dịch là đưa chứng khoán chưa niêm yết vào giao dịch.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 33 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Đăng ký giao dịch",
+   "right": "Đăng ký chứng khoán",
+   "cases": [
+    {
+     "text": "Đưa chứng khoán chưa niêm yết vào giao dịch",
+     "answer": "left"
+    },
+    {
+     "text": "Ghi nhận thông tin về tổ chức phát hành, chứng khoán và người sở hữu",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 25 và khoản 33 Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đăng ký giao dịch là việc đưa chứng khoán vào giao dịch trên hệ thống giao dịch cho chứng khoán {{chưa niêm yết}}.",
+   "bank_extra": [
+    "đã niêm yết",
+    "phái sinh"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đăng ký chứng khoán là việc ghi nhận thông tin về tổ chức phát hành, chứng khoán của tổ chức phát hành và {{người sở hữu}} chứng khoán.",
+   "bank_extra": [
+    "người môi giới",
+    "ngân hàng giám sát"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chứng khoán đăng ký giao dịch được mua bán tự do bên ngoài hệ thống của Sở giao dịch.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 50: chứng khoán niêm yết, ĐĂNG KÝ GIAO DỊCH không được giao dịch bên ngoài hệ thống do Sở và công ty con tổ chức, trừ giao dịch không mang tính chất mua bán hoặc không thể thực hiện qua hệ thống."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Phân biệt niêm yết, đăng ký giao dịch và đăng ký chứng khoán.",
+   "model": "Niêm yết: đưa chứng khoán đủ điều kiện niêm yết vào hệ thống cho chứng khoán niêm yết (khoản 24). Đăng ký giao dịch: đưa chứng khoán vào hệ thống cho chứng khoán chưa niêm yết (khoản 25). Đăng ký chứng khoán: ghi nhận thông tin tổ chức phát hành, chứng khoán, người sở hữu (khoản 33).",
+   "keywords": [
+    "niêm yết",
+    "chưa niêm yết",
+    "ghi nhận thông tin",
+    "người sở hữu"
+   ]
+  }
+ ]
+}

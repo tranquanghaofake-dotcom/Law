@@ -58,6 +58,34 @@
           ]
         }
       ]
+    },
+    {
+      "id": "c3-thi-truong-giao-dich",
+      "title": "Chương III. Pháp luật về tổ chức và hoạt động của thị trường giao dịch chứng khoán",
+      "lessons": [
+        {
+          "id": "ck3-1",
+          "title": "Sở giao dịch chứng khoán Việt Nam",
+          "concepts": [
+            "doc-quyen-to-chuc-thi-truong-giao-dich",
+            "so-giao-dich-chung-khoan-viet-nam",
+            "quyen-nghia-vu-so-giao-dich",
+            "thanh-vien-so-giao-dich-chung-khoan",
+            "tam-ngung-dinh-chi-giao-dich-so"
+          ]
+        },
+        {
+          "id": "ck3-2",
+          "title": "Niêm yết, đăng ký giao dịch và giao dịch chứng khoán",
+          "concepts": [
+            "niem-yet-chung-khoan",
+            "dang-ky-giao-dich-chung-khoan",
+            "he-thong-giao-dich-chung-khoan",
+            "phuong-thuc-giao-dich-chung-khoan",
+            "nha-dau-tu-nuoc-ngoai-tren-ttck"
+          ]
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,130 @@
+{
+ "id": "quyen-nghia-vu-so-giao-dich",
+ "subject": "chung-khoan",
+ "chapter": "c3-thi-truong-giao-dich",
+ "term": "Quyền và nghĩa vụ của Sở giao dịch chứng khoán Việt Nam",
+ "definition": "Ban hành các quy chế về niêm yết chứng khoán, giao dịch chứng khoán, công bố thông tin, thành viên của Sở giao dịch chứng khoán Việt Nam và các quy chế nghiệp vụ khác liên quan đến tổ chức và hoạt động thị trường giao dịch chứng khoán sau khi được Ủy ban Chứng khoán Nhà nước chấp thuận; b) Tổ chức, vận hành thị trường giao dịch chứng khoán; c) Cảnh báo, kiểm soát, hạn chế giao dịch chứng khoán theo quy định của pháp luật và quy chế của Sở giao dịch chứng khoán Việt Nam;",
+ "plain": "Sở giao dịch vừa \"chạy chợ\" vừa \"giữ trật tự chợ\": ban hành quy chế (sau khi Ủy ban chấp thuận), vận hành hệ thống, đưa chứng khoán vào diện cảnh báo, kiểm soát, hạn chế, tạm ngừng giao dịch một mã, chấp thuận hoặc hủy niêm yết, xử lý vi phạm theo quy chế. Nghĩa vụ trung tâm: bảo đảm giao dịch công khai, công bằng, trật tự, an toàn, hiệu quả.",
+ "example": "Một mã cổ phiếu tăng trần 10 phiên liền không có thông tin hỗ trợ: Sở giao dịch có thể đưa vào diện cảnh báo hoặc tạm ngừng giao dịch mã đó (điểm c, d khoản 1 Điều 46). Đây là việc của Sở, khác với việc Ủy ban tạm ngừng toàn bộ hoạt động của Sở (Điều 49).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 46 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "so-giao-dich-chung-khoan-viet-nam",
+  "tam-ngung-dinh-chi-giao-dich-so"
+ ],
+ "keywords": [
+  "ban hành quy chế",
+  "cảnh báo, kiểm soát, hạn chế",
+  "tạm ngừng giao dịch một chứng khoán",
+  "công khai, công bằng, trật tự"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Sở giao dịch chứng khoán Việt Nam ban hành quy chế niêm yết, giao dịch sau khi được ai chấp thuận?",
+   "options": [
+    "Ủy ban Chứng khoán Nhà nước",
+    "Thủ tướng Chính phủ",
+    "Quốc hội",
+    "Hiệp hội kinh doanh chứng khoán"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 46.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 46 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quyền nào sau đây thuộc Sở giao dịch chứng khoán Việt Nam theo khoản 1 Điều 46?",
+   "options": [
+    "Chấp thuận, hủy bỏ tư cách thành viên của Sở",
+    "Cấp giấy phép thành lập công ty chứng khoán",
+    "Cấp Giấy chứng nhận đăng ký chào bán ra công chúng",
+    "Ban hành nghị định về chứng khoán"
+   ],
+   "answer": 0,
+   "explain": "Điểm e khoản 1 Điều 46. Cấp phép công ty chứng khoán, cấp Giấy chứng nhận chào bán là thẩm quyền của Ủy ban Chứng khoán Nhà nước.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 46 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Sở giao dịch (Điều 46)",
+   "right": "Ủy ban Chứng khoán Nhà nước (Điều 49)",
+   "cases": [
+    {
+     "text": "Tạm ngừng giao dịch một hoặc một số chứng khoán có biến động bất thường",
+     "answer": "left"
+    },
+    {
+     "text": "Tạm ngừng một phần hoặc toàn bộ hoạt động giao dịch của Sở khi có chiến tranh, thảm họa",
+     "answer": "right"
+    },
+    {
+     "text": "Đưa chứng khoán vào diện cảnh báo, kiểm soát",
+     "answer": "left"
+    }
+   ],
+   "explain": "Phân biệt cấp độ: Sở xử lý từng mã; Ủy ban xử lý cả Sở."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Sở giao dịch chứng khoán Việt Nam có quyền cảnh báo, {{kiểm soát}}, {{hạn chế}} giao dịch chứng khoán theo quy định của pháp luật và quy chế của Sở.",
+   "bank_extra": [
+    "khuyến khích",
+    "bảo lãnh"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Sở giao dịch chứng khoán Việt Nam có nghĩa vụ bảo đảm hoạt động giao dịch được tiến hành công khai, {{công bằng}}, trật tự, an toàn và hiệu quả.",
+   "bank_extra": [
+    "bí mật",
+    "tập trung"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Hai công ty chứng khoán là thành viên của Sở tranh chấp về một giao dịch. Họ có thể yêu cầu Sở làm gì?",
+   "options": [
+    "Làm trung gian hòa giải theo yêu cầu của thành viên",
+    "Ra bản án buộc một bên bồi thường",
+    "Thu hồi giấy phép của bên vi phạm",
+    "Chuyển hồ sơ sang Quốc hội"
+   ],
+   "answer": 0,
+   "explain": "Điểm h khoản 1 Điều 46: Sở làm trung gian hòa giải theo yêu cầu của thành viên khi phát sinh tranh chấp liên quan đến hoạt động giao dịch chứng khoán.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 46 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Kể các quyền chính của Sở giao dịch chứng khoán Việt Nam theo khoản 1 Điều 46.",
+   "model": "Ban hành quy chế (sau khi Ủy ban chấp thuận); tổ chức, vận hành thị trường; cảnh báo, kiểm soát, hạn chế giao dịch; tạm ngừng, đình chỉ giao dịch một hoặc một số chứng khoán; chấp thuận, thay đổi, hủy bỏ niêm yết, đăng ký giao dịch; chấp thuận, hủy bỏ tư cách thành viên; cung cấp dịch vụ; làm trung gian hòa giải; kiểm tra, xử lý vi phạm theo quy chế.",
+   "keywords": [
+    "quy chế",
+    "vận hành",
+    "cảnh báo",
+    "niêm yết",
+    "trung gian hòa giải"
+   ]
+  }
+ ]
+}

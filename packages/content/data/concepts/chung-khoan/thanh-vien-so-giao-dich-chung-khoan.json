@@ -1,0 +1,115 @@
+{
+ "id": "thanh-vien-so-giao-dich-chung-khoan",
+ "subject": "chung-khoan",
+ "chapter": "c3-thi-truong-giao-dich",
+ "term": "Thành viên của Sở giao dịch chứng khoán Việt Nam",
+ "definition": "Thành viên của Sở giao dịch chứng khoán Việt Nam bao gồm: a) Thành viên giao dịch là công ty chứng khoán được Sở giao dịch chứng khoán Việt Nam chấp thuận trở thành thành viên giao dịch; b) Thành viên giao dịch đặc biệt là ngân hàng thương mại, chi nhánh ngân hàng nước ngoài và các tổ chức khác được Sở giao dịch chứng khoán Việt Nam chấp thuận trở thành thành viên giao dịch đặc biệt.",
+ "plain": "Nhà đầu tư cá nhân không đặt lệnh trực tiếp vào Sở mà phải qua thành viên giao dịch, tức công ty chứng khoán. Thành viên giao dịch đặc biệt (ngân hàng thương mại…) thường tham gia mảng trái phiếu Chính phủ. Thành viên được dùng hệ thống, nhận thông tin, đề nghị hòa giải; đổi lại chịu sự giám sát của Sở.",
+ "example": "Bạn mở tài khoản ở một công ty chứng khoán và đặt lệnh trên app; công ty chứng khoán (thành viên giao dịch) chuyển lệnh vào hệ thống của Sở để khớp.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 47 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "so-giao-dich-chung-khoan-viet-nam",
+  "phuong-thuc-giao-dich-chung-khoan"
+ ],
+ "keywords": [
+  "thành viên giao dịch",
+  "công ty chứng khoán",
+  "thành viên giao dịch đặc biệt",
+  "ngân hàng thương mại"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thành viên giao dịch của Sở giao dịch chứng khoán Việt Nam là chủ thể nào?",
+   "options": [
+    "Công ty chứng khoán được Sở chấp thuận",
+    "Mọi nhà đầu tư có tài khoản",
+    "Công ty niêm yết",
+    "Công ty quản lý quỹ"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 47.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 47 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ngân hàng thương mại có thể trở thành loại thành viên nào của Sở?",
+   "options": [
+    "Thành viên giao dịch đặc biệt",
+    "Thành viên giao dịch",
+    "Thành viên lưu ký",
+    "Thành viên niêm yết"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 1 Điều 47.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 47 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thành viên giao dịch",
+   "right": "Thành viên giao dịch đặc biệt",
+   "cases": [
+    {
+     "text": "Công ty chứng khoán",
+     "answer": "left"
+    },
+    {
+     "text": "Ngân hàng thương mại, chi nhánh ngân hàng nước ngoài",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 47."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thành viên giao dịch là {{công ty chứng khoán}} được Sở giao dịch chứng khoán Việt Nam chấp thuận; thành viên giao dịch đặc biệt là {{ngân hàng thương mại}}, chi nhánh ngân hàng nước ngoài và các tổ chức khác.",
+   "bank_extra": [
+    "công ty niêm yết",
+    "quỹ đầu tư"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thành viên của Sở có nghĩa vụ chịu sự {{giám sát}} của Sở giao dịch chứng khoán Việt Nam và công ty con.",
+   "bank_extra": [
+    "bảo lãnh",
+    "kiểm toán"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Nhà đầu tư cá nhân có thể trở thành thành viên giao dịch của Sở giao dịch chứng khoán Việt Nam để tự đặt lệnh.",
+   "answer": false,
+   "explain": "Sai. Thành viên giao dịch là công ty chứng khoán; thành viên giao dịch đặc biệt là ngân hàng thương mại và tổ chức khác (khoản 1 Điều 47). Cá nhân giao dịch qua công ty chứng khoán."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các loại thành viên của Sở giao dịch chứng khoán Việt Nam và quyền cơ bản của họ.",
+   "model": "Thành viên giao dịch (công ty chứng khoán) và thành viên giao dịch đặc biệt (ngân hàng thương mại, chi nhánh ngân hàng nước ngoài, tổ chức khác) được Sở chấp thuận. Quyền: sử dụng hệ thống, dịch vụ; nhận thông tin thị trường; đề nghị Sở hòa giải; đề xuất, kiến nghị. Nghĩa vụ: chịu giám sát, công bố thông tin, hỗ trợ thành viên khác.",
+   "keywords": [
+    "công ty chứng khoán",
+    "ngân hàng thương mại",
+    "sử dụng hệ thống",
+    "giám sát"
+   ]
+  }
+ ]
+}
