@@ -52,9 +52,6 @@
     <aside class="rail" aria-label="Thông tin thêm"><Rail {...railProps} /></aside>
   {/if}
 
-  <footer class="foot muted">
-    <p><strong>Thông tin pháp luật chung, không phải tư vấn pháp lý.</strong> Nội dung do Trần Quang Hào, sinh viên Luật Kinh tế, biên soạn từ văn bản pháp luật (hiện hành và đã hết hiệu lực), sử liệu và giáo trình; luôn đối chiếu nguyên văn và tình trạng hiệu lực trước khi áp dụng cho trường hợp cụ thể.</p>
-  </footer>
 
   <nav class="tabbar" aria-label="Điều hướng chính">
     {#each NAV as n (n.name)}

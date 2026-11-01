@@ -586,3 +586,6 @@ h1 { text-wrap: balance; }
 .local-nav { gap: 6px; }
 .local-nav a { display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px 3px 3px; background: var(--card); font-weight: 600; white-space: nowrap; }
 .local-nav a:hover { border-color: var(--accent); }
+
+/* Lưu ý pháp lý: chỉ ở trang Hồ sơ */
+.legal-note { margin: 28px 0 8px; padding-top: 14px; border-top: 1px solid var(--line); line-height: 1.6; }
