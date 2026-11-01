@@ -5,6 +5,8 @@
   import { repo } from '$lib/store/progress-repo';
   import { hashFor } from '$lib/router.svelte';
   import { subjectSummary, type SubjectSummary } from '$lib/ui/subjectSummary';
+  import SubjectArt from '$lib/art/SubjectArt.svelte';
+  import { artFor } from '$lib/art/registry';
 
   let items = $state<{ subject: Subject; s: SubjectSummary }[] | null>(null);
   let error = $state('');
@@ -28,7 +30,8 @@
 {:else}
   <div class="subject-cards">
     {#each items as { subject, s } (subject.id)}
-      <a class="card subject-card" href={hashFor('subject', { subject: subject.id })}>
+      <a class="card frame subject-card" href={hashFor('subject', { subject: subject.id })}>
+        <SubjectArt name={artFor(subject.id)} class="card-art" />
         <span class="title"><b>{subject.title}</b>{#if s.grade}<span class="chip">{s.grade}</span>{/if}</span>
         <span class="muted small">{s.chapters} chương · {s.lessons} đợt · {s.total} khái niệm</span>
         <span class="bar" aria-hidden="true"><span style="width:{s.percent}%"></span></span>

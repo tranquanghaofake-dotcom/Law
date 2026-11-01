@@ -12,6 +12,7 @@
   import { setRail } from '$lib/ui/rail.svelte';
   import HeroCard from '$lib/ui/HeroCard.svelte';
   import HomeRail from '$lib/ui/HomeRail.svelte';
+  import Waves from '$lib/art/Waves.svelte';
 
   type Row = { subject: Subject; grade: string | null; mastered: number; total: number };
   let index = $state<ContentIndex | null>(null);
@@ -77,6 +78,7 @@
   <p class="loading">Đang tải…</p>
 {:else}
   <HeroCard state={hero} />
+  <Waves />
 
   {#if rows.length}
     <h2 class="section-title"><b>Môn đang học</b></h2>
