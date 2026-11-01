@@ -1,0 +1,115 @@
+{
+ "id": "nganh-luat-hien-phap",
+ "subject": "hien-phap",
+ "chapter": "c1-nhung-van-de-chung",
+ "term": "Ngành luật Hiến pháp",
+ "definition": "Luật Hiến pháp là ngành luật chủ đạo trong hệ thống pháp luật Việt Nam, gồm tổng thể các quy phạm pháp luật điều chỉnh những quan hệ xã hội cơ bản và quan trọng nhất, gắn với việc xác định chế độ chính trị, quyền con người, quyền và nghĩa vụ cơ bản của công dân, chính sách cơ bản về kinh tế, xã hội, văn hóa, giáo dục, khoa học, công nghệ, môi trường, quốc phòng, an ninh, và tổ chức, hoạt động của bộ máy nhà nước.",
+ "plain": "Ba ý cần nắm: (1) Luật Hiến pháp là NGÀNH LUẬT CHỦ ĐẠO: các ngành luật khác phải phù hợp với nó. (2) Điều chỉnh những quan hệ xã hội CƠ BẢN, QUAN TRỌNG NHẤT. (3) Phân biệt \"ngành luật Hiến pháp\" (hệ thống quy phạm), \"khoa học luật Hiến pháp\" (hệ thống tri thức, quan điểm) và \"môn học Luật Hiến pháp\" (chương trình đào tạo). Hiến pháp là nguồn quan trọng nhất của ngành luật này nhưng không phải nguồn duy nhất.",
+ "example": "Luật Tổ chức Quốc hội chứa nhiều quy phạm luật Hiến pháp dù không phải là Hiến pháp: ngành luật Hiến pháp rộng hơn văn bản Hiến pháp.",
+ "source": {
+  "kind": "textbook",
+  "cite": "Giáo trình Luật Hiến pháp (mục lục 11 chương do Hào cung cấp), Chương 1 \"Những vấn đề chung về Hiến pháp\" — tóm lược quan điểm học thuật phổ biến, chưa đối chiếu nguyên văn"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "doi-tuong-dieu-chinh-luat-hien-phap",
+  "nguon-luat-hien-phap",
+  "hien-phap"
+ ],
+ "keywords": [
+  "ngành luật chủ đạo",
+  "quan hệ xã hội cơ bản, quan trọng nhất",
+  "ngành luật – khoa học – môn học"
+ ],
+ "note": "Thẻ dạng tóm lược quan điểm học thuật, chưa đối chiếu nguyên văn giáo trình; cần Hào đối chiếu trang 1–9 của sách.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Vị trí của ngành luật Hiến pháp trong hệ thống pháp luật Việt Nam là gì?",
+   "options": [
+    "Ngành luật chủ đạo",
+    "Ngành luật thứ yếu",
+    "Ngang hàng luật dân sự, không có vị trí đặc biệt",
+    "Chỉ là một chế định của luật hành chính"
+   ],
+   "answer": 0,
+   "explain": "Quan điểm phổ biến của giáo trình.",
+   "source": {
+    "kind": "textbook",
+    "cite": "Giáo trình Luật Hiến pháp (mục lục 11 chương do Hào cung cấp), Chương 1 \"Những vấn đề chung về Hiến pháp\" — tóm lược quan điểm học thuật phổ biến, chưa đối chiếu nguyên văn"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Phân biệt nào sau đây đúng?",
+   "options": [
+    "Ngành luật Hiến pháp là hệ thống quy phạm; khoa học luật Hiến pháp là hệ thống tri thức, quan điểm",
+    "Ngành luật Hiến pháp và văn bản Hiến pháp là một",
+    "Khoa học luật Hiến pháp là văn bản do Quốc hội ban hành",
+    "Môn học Luật Hiến pháp là một nguồn luật"
+   ],
+   "answer": 0,
+   "explain": "Phân biệt ngành luật – khoa học – môn học.",
+   "source": {
+    "kind": "textbook",
+    "cite": "Giáo trình Luật Hiến pháp (mục lục 11 chương do Hào cung cấp), Chương 1 \"Những vấn đề chung về Hiến pháp\" — tóm lược quan điểm học thuật phổ biến, chưa đối chiếu nguyên văn"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Ngành luật Hiến pháp",
+   "right": "Khoa học luật Hiến pháp",
+   "cases": [
+    {
+     "text": "Tổng thể các quy phạm pháp luật",
+     "answer": "left"
+    },
+    {
+     "text": "Hệ thống quan điểm, học thuyết, tri thức",
+     "answer": "right"
+    }
+   ],
+   "explain": "Quan điểm phổ biến."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Luật Hiến pháp là ngành luật {{chủ đạo}}, điều chỉnh những quan hệ xã hội {{cơ bản}} và quan trọng nhất.",
+   "bank_extra": [
+    "phụ trợ",
+    "thứ yếu"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hiến pháp là nguồn quan trọng nhất của ngành luật Hiến pháp nhưng không phải nguồn {{duy nhất}}.",
+   "bank_extra": [
+    "chính thức",
+    "hợp pháp"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Ngành luật Hiến pháp chỉ gồm các quy phạm trong văn bản Hiến pháp.",
+   "answer": false,
+   "explain": "Sai. Còn có quy phạm trong các luật tổ chức bộ máy, luật bầu cử, luật quốc tịch…"
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm và vị trí của ngành luật Hiến pháp.",
+   "model": "Ngành luật chủ đạo, tổng thể quy phạm điều chỉnh quan hệ xã hội cơ bản, quan trọng nhất về chế độ chính trị, quyền con người, quyền công dân, chính sách cơ bản và tổ chức bộ máy nhà nước; phân biệt với khoa học luật Hiến pháp và môn học; Hiến pháp là nguồn quan trọng nhất nhưng không duy nhất.",
+   "keywords": [
+    "ngành luật chủ đạo",
+    "quan hệ xã hội cơ bản",
+    "bộ máy nhà nước",
+    "khoa học luật Hiến pháp"
+   ]
+  }
+ ]
+}

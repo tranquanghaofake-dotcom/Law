@@ -1,0 +1,115 @@
+{
+ "id": "tu-do-kinh-doanh",
+ "subject": "hien-phap",
+ "chapter": "c4-quyen-con-nguoi",
+ "term": "Quyền tự do kinh doanh",
+ "definition": "Mọi người có quyền tự do kinh doanh trong những ngành nghề mà pháp luật không cấm.",
+ "plain": "Điều 33 hiến định nguyên tắc \"được làm những gì pháp luật không cấm\" trong kinh doanh, chủ thể là \"MỌI NGƯỜI\". Hiến pháp 1992 (Điều 57) chỉ ghi công dân có quyền tự do kinh doanh theo quy định của pháp luật. Quyền này được cụ thể hóa trong Luật Doanh nghiệp, Luật Đầu tư; hạn chế chỉ bằng luật theo khoản 2 Điều 14. Tiến trình lịch sử: Luật Công ty 1990 (xin phép) → Luật Doanh nghiệp 1999 (đăng ký) → Điều 33 Hiến pháp 2013.",
+ "example": "Một người muốn mở dịch vụ mới chưa có trong danh mục ngành nghề nào: nếu pháp luật không cấm thì người đó có quyền kinh doanh (Điều 33).",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 33 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "binh-dang-truoc-phap-luat",
+  "kinh-te-thi-truong-dinh-huong-xhcn",
+  "quyen-con-nguoi-quyen-cong-dan"
+ ],
+ "keywords": [
+  "mọi người",
+  "tự do kinh doanh",
+  "ngành nghề pháp luật không cấm"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 33 Hiến pháp 2013, mọi người có quyền tự do kinh doanh trong phạm vi nào?",
+   "options": [
+    "Những ngành nghề mà pháp luật không cấm",
+    "Chỉ những ngành nghề được Nhà nước cho phép",
+    "Chỉ ngành nghề có giấy phép",
+    "Mọi ngành nghề không giới hạn"
+   ],
+   "answer": 0,
+   "explain": "Điều 33.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 33 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nguyên tắc nào được thể hiện ở Điều 33 Hiến pháp 2013?",
+   "options": [
+    "Được làm những gì pháp luật không cấm",
+    "Chỉ được làm những gì pháp luật cho phép",
+    "Nhà nước độc quyền kinh doanh",
+    "Kinh doanh phải xin phép"
+   ],
+   "answer": 0,
+   "explain": "Điều 33.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 33 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Luật Công ty 1990",
+   "right": "Hiến pháp 2013 (Điều 33)",
+   "cases": [
+    {
+     "text": "Thành lập công ty phải xin phép UBND tỉnh",
+     "answer": "left"
+    },
+    {
+     "text": "Mọi người tự do kinh doanh ngành nghề pháp luật không cấm",
+     "answer": "right"
+    }
+   ],
+   "explain": "Tiến trình pháp luật về tự do kinh doanh."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "{{Mọi người}} có quyền tự do kinh doanh trong những ngành nghề mà pháp luật {{không cấm}}.",
+   "bank_extra": [
+    "Mọi doanh nghiệp",
+    "cho phép"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quyền tự do kinh doanh chỉ có thể bị hạn chế theo quy định của {{luật}} (khoản 2 Điều 14).",
+   "bank_extra": [
+    "nghị định",
+    "quyết định"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo Hiến pháp 2013, người dân chỉ được kinh doanh những ngành nghề có trong danh mục Nhà nước cho phép.",
+   "answer": false,
+   "explain": "Sai. Điều 33: được kinh doanh trong những ngành nghề pháp luật không cấm."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quyền tự do kinh doanh theo Hiến pháp 2013.",
+   "model": "Mọi người có quyền tự do kinh doanh trong những ngành nghề pháp luật không cấm (Điều 33); thể hiện nguyên tắc được làm những gì pháp luật không cấm; chỉ hạn chế bằng luật (khoản 2 Điều 14); cụ thể hóa trong Luật Doanh nghiệp, Luật Đầu tư.",
+   "keywords": [
+    "mọi người",
+    "tự do kinh doanh",
+    "không cấm",
+    "luật"
+   ]
+  }
+ ]
+}

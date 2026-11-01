@@ -4,6 +4,23 @@
   "short": "Hiến pháp",
   "chapters": [
     {
+      "id": "c1-nhung-van-de-chung",
+      "title": "Chương 1. Những vấn đề chung về Hiến pháp",
+      "lessons": [
+        {
+          "id": "hp-0",
+          "title": "Ngành luật Hiến pháp: đối tượng, phương pháp, nguồn, quan hệ pháp luật",
+          "concepts": [
+            "nganh-luat-hien-phap",
+            "doi-tuong-dieu-chinh-luat-hien-phap",
+            "phuong-phap-dieu-chinh-luat-hien-phap",
+            "nguon-luat-hien-phap",
+            "quan-he-phap-luat-hien-phap"
+          ]
+        }
+      ]
+    },
+    {
       "id": "c2-khai-niem-dac-trung",
       "title": "Chương 2. Khái niệm, đặc trưng Hiến pháp và lịch sử lập hiến",
       "lessons": [
@@ -56,6 +73,16 @@
           "title": "Quyền con người và quyền công dân",
           "concepts": [
             "quyen-con-nguoi-quyen-cong-dan"
+          ]
+        },
+        {
+          "id": "hp-4b",
+          "title": "Một số quyền con người, quyền công dân cụ thể",
+          "concepts": [
+            "binh-dang-truoc-phap-luat",
+            "bat-kha-xam-pham-than-the",
+            "quyen-rieng-tu",
+            "tu-do-kinh-doanh"
           ]
         }
       ]

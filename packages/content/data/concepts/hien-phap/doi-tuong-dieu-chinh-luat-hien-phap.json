@@ -1,0 +1,120 @@
+{
+ "id": "doi-tuong-dieu-chinh-luat-hien-phap",
+ "subject": "hien-phap",
+ "chapter": "c1-nhung-van-de-chung",
+ "term": "Đối tượng điều chỉnh của ngành luật Hiến pháp",
+ "definition": "Đối tượng điều chỉnh của ngành luật Hiến pháp là những quan hệ xã hội cơ bản và quan trọng nhất, gắn với việc xác định chế độ chính trị, quan hệ giữa Nhà nước và công dân, các chính sách cơ bản về kinh tế, xã hội, văn hóa, quốc phòng, an ninh, đối ngoại, và tổ chức, hoạt động của bộ máy nhà nước.",
+ "plain": "Theo cách trình bày phổ biến, đối tượng điều chỉnh chia thành các nhóm quan hệ tương ứng với các chương của Hiến pháp: chế độ chính trị; quyền con người, quyền và nghĩa vụ cơ bản của công dân; kinh tế, xã hội, văn hóa, giáo dục, khoa học, công nghệ, môi trường; bảo vệ Tổ quốc; tổ chức bộ máy nhà nước (Quốc hội, Chủ tịch nước, Chính phủ, Tòa án, Viện kiểm sát, chính quyền địa phương, các thiết chế độc lập). Đặc điểm: đây là những quan hệ NỀN TẢNG, các ngành luật khác cụ thể hóa tiếp.",
+ "example": "Quan hệ giữa Quốc hội và Chính phủ (Chính phủ báo cáo công tác trước Quốc hội) là quan hệ thuộc đối tượng điều chỉnh của luật Hiến pháp; còn quan hệ mua bán giữa hai cá nhân thuộc luật dân sự.",
+ "source": {
+  "kind": "textbook",
+  "cite": "Giáo trình Luật Hiến pháp (mục lục 11 chương do Hào cung cấp), Chương 1 \"Những vấn đề chung về Hiến pháp\" — tóm lược quan điểm học thuật phổ biến, chưa đối chiếu nguyên văn"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nganh-luat-hien-phap",
+  "phuong-phap-dieu-chinh-luat-hien-phap",
+  "quan-he-phap-luat-hien-phap"
+ ],
+ "keywords": [
+  "quan hệ xã hội cơ bản",
+  "chế độ chính trị",
+  "Nhà nước – công dân",
+  "tổ chức bộ máy nhà nước"
+ ],
+ "note": "Thẻ dạng tóm lược quan điểm học thuật, chưa đối chiếu nguyên văn giáo trình; cần Hào đối chiếu trang 1–9 của sách.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quan hệ nào thuộc đối tượng điều chỉnh của ngành luật Hiến pháp?",
+   "options": [
+    "Quan hệ giữa Quốc hội và Chính phủ trong việc báo cáo công tác",
+    "Hợp đồng mua bán nhà giữa hai cá nhân",
+    "Quan hệ lao động giữa doanh nghiệp và người lao động",
+    "Quan hệ cho vay giữa ngân hàng và khách hàng"
+   ],
+   "answer": 0,
+   "explain": "Quan hệ tổ chức bộ máy nhà nước thuộc luật Hiến pháp.",
+   "source": {
+    "kind": "textbook",
+    "cite": "Giáo trình Luật Hiến pháp (mục lục 11 chương do Hào cung cấp), Chương 1 \"Những vấn đề chung về Hiến pháp\" — tóm lược quan điểm học thuật phổ biến, chưa đối chiếu nguyên văn"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đặc điểm của các quan hệ xã hội thuộc đối tượng điều chỉnh của luật Hiến pháp là gì?",
+   "options": [
+    "Cơ bản và quan trọng nhất, mang tính nền tảng",
+    "Chỉ là quan hệ tài sản",
+    "Chỉ phát sinh trong tố tụng",
+    "Chỉ giữa các cá nhân với nhau"
+   ],
+   "answer": 0,
+   "explain": "Quan điểm phổ biến.",
+   "source": {
+    "kind": "textbook",
+    "cite": "Giáo trình Luật Hiến pháp (mục lục 11 chương do Hào cung cấp), Chương 1 \"Những vấn đề chung về Hiến pháp\" — tóm lược quan điểm học thuật phổ biến, chưa đối chiếu nguyên văn"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thuộc đối tượng luật Hiến pháp",
+   "right": "Thuộc ngành luật khác",
+   "cases": [
+    {
+     "text": "Bầu cử đại biểu Quốc hội",
+     "answer": "left"
+    },
+    {
+     "text": "Quốc tịch Việt Nam",
+     "answer": "left"
+    },
+    {
+     "text": "Hợp đồng thuê nhà",
+     "answer": "right"
+    }
+   ],
+   "explain": "Bầu cử, quốc tịch là quan hệ cơ bản giữa Nhà nước và công dân."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đối tượng điều chỉnh của luật Hiến pháp là những quan hệ xã hội {{cơ bản}} và quan trọng nhất, trong đó có quan hệ giữa {{Nhà nước}} và công dân.",
+   "bank_extra": [
+    "thứ yếu",
+    "doanh nghiệp"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quan hệ trong tổ chức và hoạt động của {{bộ máy nhà nước}} thuộc đối tượng điều chỉnh của luật Hiến pháp.",
+   "bank_extra": [
+    "doanh nghiệp",
+    "gia đình"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quan hệ về quốc tịch thuộc đối tượng điều chỉnh của ngành luật Hiến pháp.",
+   "answer": true,
+   "explain": "Đúng. Đó là lý do giáo trình có chương 5 Quốc tịch."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày đối tượng điều chỉnh của ngành luật Hiến pháp.",
+   "model": "Những quan hệ xã hội cơ bản, quan trọng nhất về: chế độ chính trị; quan hệ Nhà nước – công dân (quyền con người, quyền và nghĩa vụ cơ bản, quốc tịch, bầu cử); chính sách cơ bản về kinh tế, xã hội, văn hóa, quốc phòng, an ninh; tổ chức, hoạt động của bộ máy nhà nước.",
+   "keywords": [
+    "quan hệ xã hội cơ bản",
+    "chế độ chính trị",
+    "Nhà nước – công dân",
+    "bộ máy nhà nước"
+   ]
+  }
+ ]
+}

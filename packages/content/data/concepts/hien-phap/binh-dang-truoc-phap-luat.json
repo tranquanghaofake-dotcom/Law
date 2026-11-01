@@ -1,0 +1,113 @@
+{
+ "id": "binh-dang-truoc-phap-luat",
+ "subject": "hien-phap",
+ "chapter": "c4-quyen-con-nguoi",
+ "term": "Quyền bình đẳng trước pháp luật",
+ "definition": "Mọi người đều bình đẳng trước pháp luật. Không ai bị phân biệt đối xử trong đời sống chính trị, dân sự, kinh tế, văn hóa, xã hội.",
+ "plain": "Hiến pháp 2013 dùng chủ thể \"MỌI NGƯỜI\" (Hiến pháp 1992 dùng \"mọi công dân\"): mở rộng bảo vệ cho cả người nước ngoài, người không quốc tịch. Hai vế: bình đẳng TRƯỚC PHÁP LUẬT (pháp luật áp dụng như nhau) và KHÔNG BỊ PHÂN BIỆT ĐỐI XỬ trong mọi lĩnh vực. Điều 26 bổ sung bình đẳng giới; Điều 5 bình đẳng giữa các dân tộc.",
+ "example": "Hai người cùng vi phạm giao thông như nhau, một người là cán bộ, một người là nông dân: phải bị xử lý như nhau theo pháp luật.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 16 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quyen-con-nguoi-quyen-cong-dan",
+  "bat-kha-xam-pham-than-the"
+ ],
+ "keywords": [
+  "mọi người",
+  "bình đẳng trước pháp luật",
+  "không bị phân biệt đối xử"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Điều 16 Hiến pháp 2013 dùng chủ thể nào cho quyền bình đẳng trước pháp luật?",
+   "options": [
+    "Mọi người",
+    "Mọi công dân",
+    "Chỉ đảng viên",
+    "Chỉ người thành niên"
+   ],
+   "answer": 0,
+   "explain": "Điều 16: \"Mọi người đều bình đẳng trước pháp luật\".",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 16 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 2 Điều 16, không ai bị phân biệt đối xử trong những lĩnh vực nào?",
+   "options": [
+    "Chính trị, dân sự, kinh tế, văn hóa, xã hội",
+    "Chỉ chính trị",
+    "Chỉ kinh tế",
+    "Chỉ trong tố tụng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 16.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 16 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hiến pháp 1992",
+   "right": "Hiến pháp 2013",
+   "cases": [
+    {
+     "text": "\"Mọi công dân đều bình đẳng trước pháp luật\"",
+     "answer": "left"
+    },
+    {
+     "text": "\"Mọi người đều bình đẳng trước pháp luật\"",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 52 Hiến pháp 1992; Điều 16 Hiến pháp 2013."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "{{Mọi người}} đều bình đẳng trước pháp luật. Không ai bị {{phân biệt đối xử}} trong đời sống chính trị, dân sự, kinh tế, văn hóa, xã hội.",
+   "bank_extra": [
+    "Mọi công dân",
+    "ưu tiên"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Không ai bị phân biệt đối xử trong đời sống chính trị, {{dân sự}}, kinh tế, văn hóa, xã hội.",
+   "bank_extra": [
+    "quân sự",
+    "tôn giáo"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo Điều 16 Hiến pháp 2013, quyền bình đẳng trước pháp luật chỉ dành cho công dân Việt Nam.",
+   "answer": false,
+   "explain": "Sai. Chủ thể là \"mọi người\"."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quyền bình đẳng trước pháp luật theo Hiến pháp 2013.",
+   "model": "Mọi người đều bình đẳng trước pháp luật; không ai bị phân biệt đối xử trong đời sống chính trị, dân sự, kinh tế, văn hóa, xã hội (Điều 16); chủ thể mở rộng từ \"công dân\" (1992) thành \"mọi người\" (2013).",
+   "keywords": [
+    "mọi người",
+    "bình đẳng",
+    "phân biệt đối xử"
+   ]
+  }
+ ]
+}

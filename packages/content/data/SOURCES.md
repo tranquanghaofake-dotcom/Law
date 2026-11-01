@@ -26,7 +26,7 @@ Bản text toàn văn Hiến pháp dùng khi soạn thẻ và kiểm tra tự đ
 
 | Môn | Giáo trình | Dùng để |
 |---|---|---|
-| Luật Hiến pháp | Mục lục 11 chương do Hào cung cấp (ảnh chụp, 01/11/2026) | Chia chương. Chưa rõ tên sách/nhà xuất bản — cần Hào bổ sung. |
+| Luật Hiến pháp | Mục lục 11 chương do Hào cung cấp (ảnh chụp, 01/11/2026; ảnh lần 2 có số trang: chương 1 tr.1, chương 11 tr.180) | Chia chương. Chưa rõ tên sách/nhà xuất bản — cần Hào bổ sung. Chương 1 làm dạng tóm lược học thuật, chưa đối chiếu trang 1–9. |
 | Lịch sử NN&PL Việt Nam | Giáo trình Lịch sử nhà nước và pháp luật, ĐH Luật Hà Nội, NXB Tư pháp 2025 (TS. Trần Hồng Nhung chủ biên), Phần thứ hai, chương 5–8 | Chia chương; mục lục lấy từ http://tuanhsl.blogspot.com/2025/10/giao-trinh-lich-su-nha-nuoc-va-phap-luat.html |
 | Luật Chứng khoán | Giáo trình Luật Chứng khoán, ĐH Luật Hà Nội, NXB CAND 2021 (TS. Phạm Thị Giang Thu chủ biên), 10 chương | Chia chương; mục lục theo https://luatminhkhue.vn/giao-trinh-luat-chung-khoan-truong-dai-hoc-luat-ha-noi.aspx |
 

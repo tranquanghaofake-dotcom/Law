@@ -1,0 +1,116 @@
+{
+ "id": "phuong-phap-dieu-chinh-luat-hien-phap",
+ "subject": "hien-phap",
+ "chapter": "c1-nhung-van-de-chung",
+ "term": "Phương pháp điều chỉnh của ngành luật Hiến pháp",
+ "definition": "Ngành luật Hiến pháp sử dụng chủ yếu phương pháp xác lập những nguyên tắc chung có tính định hướng, cùng các phương pháp cho phép, bắt buộc và nghiêm cấm để điều chỉnh các quan hệ xã hội thuộc đối tượng của nó.",
+ "plain": "Theo giáo trình: (1) phương pháp XÁC LẬP NGUYÊN TẮC CHUNG: nhiều quy phạm luật Hiến pháp chỉ nêu nguyên tắc, định hướng, không có chế tài cụ thể, các ngành luật khác cụ thể hóa (ví dụ \"Nhà nước bảo đảm quyền con người\"); (2) phương pháp CHO PHÉP (trao quyền: công dân có quyền bầu cử); (3) BẮT BUỘC (nghĩa vụ: nộp thuế theo luật định, Điều 47); (4) NGHIÊM CẤM (Không ai bị bắt nếu không có quyết định của Tòa án, phê chuẩn của Viện kiểm sát, trừ quả tang, khoản 2 Điều 20). Quy phạm luật Hiến pháp thường thiếu bộ phận chế tài, được bảo đảm bằng chế tài của các ngành luật khác.",
+ "example": "Điều 47 \"Mọi người có nghĩa vụ nộp thuế theo luật định\" là ví dụ phương pháp bắt buộc; còn mức thuế, chế tài trốn thuế do luật thuế, luật hình sự quy định.",
+ "source": {
+  "kind": "textbook",
+  "cite": "Giáo trình Luật Hiến pháp (mục lục 11 chương do Hào cung cấp), Chương 1 \"Những vấn đề chung về Hiến pháp\" — tóm lược quan điểm học thuật phổ biến, chưa đối chiếu nguyên văn"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "doi-tuong-dieu-chinh-luat-hien-phap",
+  "quan-he-phap-luat-hien-phap"
+ ],
+ "keywords": [
+  "xác lập nguyên tắc chung",
+  "cho phép",
+  "bắt buộc",
+  "nghiêm cấm",
+  "thường thiếu chế tài"
+ ],
+ "note": "Thẻ dạng tóm lược quan điểm học thuật, chưa đối chiếu nguyên văn giáo trình; cần Hào đối chiếu trang 1–9 của sách.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Phương pháp điều chỉnh đặc thù của ngành luật Hiến pháp là gì?",
+   "options": [
+    "Xác lập những nguyên tắc chung có tính định hướng",
+    "Thỏa thuận, bình đẳng giữa các bên",
+    "Mệnh lệnh – phục tùng tuyệt đối",
+    "Hòa giải"
+   ],
+   "answer": 0,
+   "explain": "Quan điểm phổ biến của giáo trình.",
+   "source": {
+    "kind": "textbook",
+    "cite": "Giáo trình Luật Hiến pháp (mục lục 11 chương do Hào cung cấp), Chương 1 \"Những vấn đề chung về Hiến pháp\" — tóm lược quan điểm học thuật phổ biến, chưa đối chiếu nguyên văn"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quy định \"Mọi người có nghĩa vụ nộp thuế theo luật định\" (Điều 47 Hiến pháp 2013) thể hiện phương pháp nào?",
+   "options": [
+    "Bắt buộc",
+    "Cho phép",
+    "Nghiêm cấm",
+    "Thỏa thuận"
+   ],
+   "answer": 0,
+   "explain": "Quy định nghĩa vụ.",
+   "source": {
+    "kind": "textbook",
+    "cite": "Giáo trình Luật Hiến pháp (mục lục 11 chương do Hào cung cấp), Chương 1 \"Những vấn đề chung về Hiến pháp\" — tóm lược quan điểm học thuật phổ biến, chưa đối chiếu nguyên văn"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Phương pháp cho phép",
+   "right": "Phương pháp nghiêm cấm",
+   "cases": [
+    {
+     "text": "Công dân có quyền bầu cử",
+     "answer": "left"
+    },
+    {
+     "text": "Không ai bị bắt nếu không có quyết định của Tòa án, phê chuẩn của Viện kiểm sát, trừ quả tang",
+     "answer": "right"
+    }
+   ],
+   "explain": "Ví dụ từ Hiến pháp 2013."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ngành luật Hiến pháp sử dụng chủ yếu phương pháp xác lập những {{nguyên tắc chung}}; ngoài ra có phương pháp cho phép, bắt buộc và {{nghiêm cấm}}.",
+   "bank_extra": [
+    "thỏa thuận",
+    "hòa giải"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quy phạm luật Hiến pháp thường thiếu bộ phận {{chế tài}}.",
+   "bank_extra": [
+    "giả định",
+    "quy định"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi quy phạm luật Hiến pháp đều có đủ ba bộ phận giả định, quy định, chế tài.",
+   "answer": false,
+   "explain": "Sai. Nhiều quy phạm luật Hiến pháp chỉ nêu nguyên tắc, thiếu chế tài."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày phương pháp điều chỉnh của ngành luật Hiến pháp.",
+   "model": "Chủ yếu là xác lập nguyên tắc chung có tính định hướng; kết hợp phương pháp cho phép (trao quyền), bắt buộc (đặt nghĩa vụ), nghiêm cấm; quy phạm thường thiếu chế tài, được bảo đảm bởi chế tài các ngành luật khác.",
+   "keywords": [
+    "nguyên tắc chung",
+    "cho phép",
+    "bắt buộc",
+    "nghiêm cấm"
+   ]
+  }
+ ]
+}

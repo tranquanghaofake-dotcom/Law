@@ -8,13 +8,17 @@ const dir = join(root, 'concepts', 'hien-phap');
 const files = readdirSync(dir).filter((f) => f.endsWith('.json'));
 
 describe('nội dung Luật Hiến pháp', () => {
-  it('có 92 khái niệm hợp lệ, nguồn statute trỏ vbpl.vn (Hiến pháp cũ chưa có bản tiếng Việt trên vbpl thì trỏ thuvienphapluat.vn), ngày đối chiếu 2026-11-01', () => {
-    expect(files.length).toBe(92);
+  it('có 101 khái niệm hợp lệ; nguồn statute trỏ vbpl.vn (Hiến pháp cũ chưa có bản tiếng Việt trên vbpl thì trỏ thuvienphapluat.vn); chương 1 được dùng nguồn textbook ghi rõ chưa đối chiếu, ngày đối chiếu 2026-11-01', () => {
+    expect(files.length).toBe(101);
     for (const f of files) {
       const c = conceptSchema.parse(JSON.parse(readFileSync(join(dir, f), 'utf8')));
+      if (c.chapter === 'c1-nhung-van-de-chung' && c.source.kind === 'textbook') {
+        expect(c.source.cite).toMatch(/chưa đối chiếu nguyên văn/);
+      } else {
       expect(c.source.kind).toBe('statute');
       const old = /Hiến pháp (1946|1959|1992)\b/.test(c.source.cite);
       expect(c.source.url).toMatch(old ? /^https:\/\/thuvienphapluat\.vn\// : /^https:\/\/vbpl\.vn\//);
+      }
       expect(c.checked).toBe('2026-11-01');
       expect(c.items.filter((i) => i.type === 'recall').length).toBe(1);
       expect(c.items.filter((i) => i.type === 'cloze').length).toBe(2);
@@ -22,7 +26,7 @@ describe('nội dung Luật Hiến pháp', () => {
   });
   it('môn chia chương theo mục lục giáo trình, mỗi khái niệm nằm đúng chương, confusables nằm trong cùng môn', () => {
     const s = subjectSchema.parse(JSON.parse(readFileSync(join(root, 'subjects', 'hien-phap.json'), 'utf8')));
-    expect(s.chapters.map((c) => c.id)).toEqual(['c2-khai-niem-dac-trung', 'c3-che-do-chinh-tri', 'c4-quyen-con-nguoi', 'c5-quoc-tich', 'c6-bau-cu', 'c7-quoc-hoi', 'c8-chu-tich-nuoc', 'c9-chinh-phu', 'c10-toa-an-vien-kiem-sat', 'c11-chinh-quyen-dia-phuong', 'nang-cao']);
+    expect(s.chapters.map((c) => c.id)).toEqual(['c1-nhung-van-de-chung', 'c2-khai-niem-dac-trung', 'c3-che-do-chinh-tri', 'c4-quyen-con-nguoi', 'c5-quoc-tich', 'c6-bau-cu', 'c7-quoc-hoi', 'c8-chu-tich-nuoc', 'c9-chinh-phu', 'c10-toa-an-vien-kiem-sat', 'c11-chinh-quyen-dia-phuong', 'nang-cao']);
     for (const ch of s.chapters) for (const l of ch.lessons) for (const id of l.concepts) {
       expect(JSON.parse(readFileSync(join(dir, `${id}.json`), 'utf8')).chapter).toBe(ch.id);
     }
@@ -44,6 +48,7 @@ describe('nguyên văn (I6)', () => {
   it('mọi definition kiểu statute xuất hiện nguyên văn trong văn bản nguồn (Hiến pháp hiện hành hoặc cũ, Luật Quốc tịch, Luật Bầu cử, theo cite)', () => {
     for (const f of files) {
       const c = JSON.parse(readFileSync(join(dir, f), 'utf8'));
+      if (c.source.kind !== 'statute') continue;
       const src = /Hiến pháp (1946|1959|1980|1992)\b/.test(c.source.cite) ? ls : /Luật Quốc tịch/.test(c.source.cite) ? qt : /Luật Bầu cử/.test(c.source.cite) ? bc : lawN;
       for (const part of norm(c.definition.replace(/\(…\)/g, ' ')).split(/(?<=[.;:])\s+/)) {
         expect(src, `${f}: "${part}"`).toContain(part);

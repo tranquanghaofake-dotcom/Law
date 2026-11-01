@@ -1,0 +1,116 @@
+{
+ "id": "bat-kha-xam-pham-than-the",
+ "subject": "hien-phap",
+ "chapter": "c4-quyen-con-nguoi",
+ "term": "Quyền sống và quyền bất khả xâm phạm về thân thể",
+ "definition": "Mọi người có quyền sống. Tính mạng con người được pháp luật bảo hộ. Không ai bị tước đoạt tính mạng trái luật. (…) Không ai bị bắt nếu không có quyết định của Toà án nhân dân, quyết định hoặc phê chuẩn của Viện kiểm sát nhân dân, trừ trường hợp phạm tội quả tang. Việc bắt, giam, giữ người do luật định.",
+ "plain": "Điều 19 lần đầu hiến định QUYỀN SỐNG. Điều 20: bất khả xâm phạm về thân thể; không bị tra tấn, bạo lực, nhục hình; KHÔNG AI BỊ BẮT nếu không có quyết định của Tòa án, quyết định hoặc phê chuẩn của Viện kiểm sát, TRỪ PHẠM TỘI QUẢ TANG; việc bắt, giam, giữ do LUẬT định; quyền hiến mô, bộ phận cơ thể, hiến xác (khoản 3). So sánh lịch sử: Sắc lệnh 13 năm 1946 đã cấm ban tư pháp xã bắt giữ người trừ khi có trát của thẩm phán hoặc quả tang.",
+ "example": "Cán bộ xã giữ một người qua đêm tại trụ sở để \"làm việc\" khi không có quyết định của cơ quan có thẩm quyền và không phải quả tang: vi phạm khoản 2 Điều 20.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 19, khoản 2 Điều 20 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "binh-dang-truoc-phap-luat",
+  "quyen-rieng-tu",
+  "quyen-con-nguoi-quyen-cong-dan"
+ ],
+ "keywords": [
+  "quyền sống",
+  "bất khả xâm phạm thân thể",
+  "không bị bắt nếu không có quyết định Tòa án, Viện kiểm sát",
+  "trừ quả tang"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 2 Điều 20 Hiến pháp 2013, trường hợp nào được bắt người mà không cần quyết định của Tòa án hay phê chuẩn của Viện kiểm sát?",
+   "options": [
+    "Phạm tội quả tang",
+    "Có đơn tố cáo",
+    "Theo yêu cầu của Chủ tịch UBND xã",
+    "Khi nghi ngờ"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 20.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 20 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quyền nào được Điều 19 Hiến pháp 2013 ghi nhận?",
+   "options": [
+    "Quyền sống",
+    "Quyền tự do kinh doanh",
+    "Quyền bầu cử",
+    "Quyền khiếu nại"
+   ],
+   "answer": 0,
+   "explain": "Điều 19.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 19 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Điều 19",
+   "right": "Điều 20",
+   "cases": [
+    {
+     "text": "Không ai bị tước đoạt tính mạng trái luật",
+     "answer": "left"
+    },
+    {
+     "text": "Không bị tra tấn, bạo lực, truy bức, nhục hình",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 19, 20 Hiến pháp 2013."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Không ai bị bắt nếu không có quyết định của {{Toà án nhân dân}}, quyết định hoặc phê chuẩn của Viện kiểm sát nhân dân, trừ trường hợp phạm tội {{quả tang}}.",
+   "bank_extra": [
+    "Ủy ban nhân dân",
+    "nghiêm trọng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Mọi người có quyền sống. Tính mạng con người được pháp luật {{bảo hộ}}.",
+   "bank_extra": [
+    "quản lý",
+    "hạn chế"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo Hiến pháp 2013, việc bắt, giam, giữ người do luật định.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 20."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quyền sống và quyền bất khả xâm phạm về thân thể theo Hiến pháp 2013.",
+   "model": "Mọi người có quyền sống, không bị tước đoạt tính mạng trái luật (Điều 19); bất khả xâm phạm thân thể, không bị tra tấn, nhục hình (khoản 1 Điều 20); không ai bị bắt nếu không có quyết định của Tòa án, quyết định hoặc phê chuẩn của Viện kiểm sát, trừ quả tang; bắt, giam, giữ do luật định (khoản 2); quyền hiến mô, xác (khoản 3).",
+   "keywords": [
+    "quyền sống",
+    "thân thể",
+    "Tòa án, Viện kiểm sát",
+    "quả tang"
+   ]
+  }
+ ]
+}
