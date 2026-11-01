@@ -17,6 +17,17 @@
             "trung-cau-y-dan-hien-phap",
             "bao-ve-hien-phap"
           ]
+        },
+        {
+          "id": "hp-2b",
+          "title": "Lịch sử lập hiến Việt Nam",
+          "concepts": [
+            "hien-phap-1946",
+            "hien-phap-1959",
+            "hien-phap-1980",
+            "hien-phap-1992",
+            "ke-thua-lap-hien"
+          ]
         }
       ]
     },

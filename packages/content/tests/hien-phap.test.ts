@@ -8,12 +8,13 @@ const dir = join(root, 'concepts', 'hien-phap');
 const files = readdirSync(dir).filter((f) => f.endsWith('.json'));
 
 describe('nội dung Luật Hiến pháp', () => {
-  it('có 81 khái niệm hợp lệ, nguồn statute trỏ vbpl.vn, ngày đối chiếu 2026-11-01', () => {
-    expect(files.length).toBe(81);
+  it('có 86 khái niệm hợp lệ, nguồn statute trỏ vbpl.vn (Hiến pháp cũ chưa có bản tiếng Việt trên vbpl thì trỏ thuvienphapluat.vn), ngày đối chiếu 2026-11-01', () => {
+    expect(files.length).toBe(86);
     for (const f of files) {
       const c = conceptSchema.parse(JSON.parse(readFileSync(join(dir, f), 'utf8')));
       expect(c.source.kind).toBe('statute');
-      expect(c.source.url).toMatch(/^https:\/\/vbpl\.vn\//);
+      const old = /Hiến pháp (1946|1959|1992)\b/.test(c.source.cite);
+      expect(c.source.url).toMatch(old ? /^https:\/\/thuvienphapluat\.vn\// : /^https:\/\/vbpl\.vn\//);
       expect(c.checked).toBe('2026-11-01');
       expect(c.items.filter((i) => i.type === 'recall').length).toBe(1);
       expect(c.items.filter((i) => i.type === 'cloze').length).toBe(2);
@@ -39,10 +40,11 @@ describe('nguyên văn (I6)', () => {
   const lawN = norm(law);
   const qt = norm(readFileSync(join(root, 'laws', 'quoc-tich-vbhn-2025.txt'), 'utf8'));
   const bc = norm(readFileSync(join(root, 'laws', 'bau-cu-vbhn-2026.txt'), 'utf8'));
-  it('mọi definition kiểu statute xuất hiện nguyên văn trong văn bản nguồn (Hiến pháp, Luật Quốc tịch hoặc Luật Bầu cử, theo cite)', () => {
+  const ls = norm(readFileSync(join(root, 'laws', 'hien-phap-lich-su.txt'), 'utf8'));
+  it('mọi definition kiểu statute xuất hiện nguyên văn trong văn bản nguồn (Hiến pháp hiện hành hoặc cũ, Luật Quốc tịch, Luật Bầu cử, theo cite)', () => {
     for (const f of files) {
       const c = JSON.parse(readFileSync(join(dir, f), 'utf8'));
-      const src = /Luật Quốc tịch/.test(c.source.cite) ? qt : /Luật Bầu cử/.test(c.source.cite) ? bc : lawN;
+      const src = /Hiến pháp (1946|1959|1980|1992)\b/.test(c.source.cite) ? ls : /Luật Quốc tịch/.test(c.source.cite) ? qt : /Luật Bầu cử/.test(c.source.cite) ? bc : lawN;
       for (const part of norm(c.definition.replace(/\(…\)/g, ' ')).split(/(?<=[.;:])\s+/)) {
         expect(src, `${f}: "${part}"`).toContain(part);
       }

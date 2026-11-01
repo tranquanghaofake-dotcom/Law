@@ -1,0 +1,121 @@
+{
+ "id": "hien-phap-1959",
+ "subject": "hien-phap",
+ "chapter": "c2-khai-niem-dac-trung",
+ "term": "Hiến pháp 1959",
+ "definition": "Tất cả quyền lực trong nước Việt Nam dân chủ cộng hoà đều thuộc về nhân dân. Nhân dân sử dụng quyền lực của mình thông qua Quốc hội và Hội đồng nhân dân các cấp do nhân dân bầu ra và chịu trách nhiệm trước nhân dân. Quốc hội, Hội đồng nhân dân các cấp và các cơ quan Nhà nước khác đều thực hành nguyên tắc tập trung dân chủ.",
+ "plain": "Quốc hội khóa I, kỳ họp thứ 11 thông qua ngày 31/12/1959, với danh nghĩa SỬA ĐỔI Hiến pháp 1946 \"cho thích hợp với tình hình và nhiệm vụ mới\" (đưa miền Bắc lên chủ nghĩa xã hội, đấu tranh thống nhất nước nhà). Lời nói đầu xác định Nhà nước dân chủ nhân dân, \"dựa trên nền tảng liên minh công nông, do giai cấp công nhân lãnh đạo\". Lần đầu hiến định nguyên tắc TẬP TRUNG DÂN CHỦ; dùng tên \"Quốc hội\" (cơ quan quyền lực Nhà nước cao nhất), \"Hội đồng Chính phủ\" (cơ quan chấp hành, hành chính cao nhất); bỏ thủ tục phúc quyết: chỉ Quốc hội có quyền sửa đổi Hiến pháp.",
+ "example": "So sánh: Hiến pháp 1946 nói \"quyền binh\" thuộc \"toàn thể nhân dân… không phân biệt giai cấp\"; Hiến pháp 1959 nói \"quyền lực\" thuộc về nhân dân, thực hiện qua Quốc hội và Hội đồng nhân dân, theo nguyên tắc tập trung dân chủ.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 4 Hiến pháp 1959",
+  "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Hien-phap-1959-Viet-Nam-Dan-Chu-Cong-Hoa-36855.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hien-phap-1946",
+  "hien-phap-1980"
+ ],
+ "keywords": [
+  "31/12/1959",
+  "sửa đổi Hiến pháp 1946",
+  "tập trung dân chủ",
+  "liên minh công nông",
+  "Hội đồng Chính phủ"
+ ],
+ "note": "Hiến pháp đã hết hiệu lực; học để hiểu lịch sử lập hiến, không áp dụng như luật hiện hành.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hiến pháp 1959 lần đầu ghi nhận nguyên tắc tổ chức nào cho Quốc hội, Hội đồng nhân dân và các cơ quan Nhà nước khác?",
+   "options": [
+    "Tập trung dân chủ",
+    "Tam quyền phân lập",
+    "Pháp quyền xã hội chủ nghĩa",
+    "Phân quyền địa phương"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 4 Hiến pháp 1959.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 4 Hiến pháp 1959"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 71 Hiến pháp 1959, cơ quan hành chính Nhà nước cao nhất có tên gọi là gì?",
+   "options": [
+    "Hội đồng Chính phủ",
+    "Hội đồng Bộ trưởng",
+    "Nội các",
+    "Chính phủ"
+   ],
+   "answer": 0,
+   "explain": "Điều 71 Hiến pháp 1959. Hội đồng Bộ trưởng là tên theo Hiến pháp 1980; Nội các theo Hiến pháp 1946.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 71 Hiến pháp 1959"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hiến pháp 1946",
+   "right": "Hiến pháp 1959",
+   "cases": [
+    {
+     "text": "Quyền binh thuộc về toàn thể nhân dân, không phân biệt giai cấp",
+     "answer": "left"
+    },
+    {
+     "text": "Nhà nước dân chủ nhân dân dựa trên liên minh công nông, do giai cấp công nhân lãnh đạo",
+     "answer": "right"
+    },
+    {
+     "text": "Nhân dân sử dụng quyền lực qua Quốc hội và Hội đồng nhân dân, theo nguyên tắc tập trung dân chủ",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều thứ 1 Hiến pháp 1946; Lời nói đầu, Điều 4 Hiến pháp 1959."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tất cả quyền lực trong nước Việt Nam dân chủ cộng hoà đều thuộc về {{nhân dân}}; các cơ quan Nhà nước đều thực hành nguyên tắc {{tập trung dân chủ}}.",
+   "bank_extra": [
+    "giai cấp công nhân",
+    "phân quyền"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hiến pháp 1959 được Quốc hội khóa I thông qua ngày {{31/12/1959}}.",
+   "bank_extra": [
+    "9/11/1946",
+    "18/12/1980"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hiến pháp 1959 giữ thủ tục đưa việc sửa đổi Hiến pháp ra toàn dân phúc quyết như Hiến pháp 1946.",
+   "answer": false,
+   "explain": "Sai. Điều 112 Hiến pháp 1959: chỉ có Quốc hội mới có quyền sửa đổi Hiến pháp, cần ít nhất hai phần ba tổng số đại biểu tán thành."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày hoàn cảnh ra đời và điểm mới cơ bản của Hiến pháp 1959.",
+   "model": "Quốc hội khóa I thông qua ngày 31/12/1959, sửa đổi Hiến pháp 1946 cho phù hợp nhiệm vụ xây dựng chủ nghĩa xã hội ở miền Bắc, đấu tranh thống nhất; Nhà nước dân chủ nhân dân dựa trên liên minh công nông, do giai cấp công nhân lãnh đạo; quyền lực thuộc về nhân dân, thực hiện qua Quốc hội, Hội đồng nhân dân; nguyên tắc tập trung dân chủ (Điều 4); Quốc hội là cơ quan quyền lực Nhà nước cao nhất; chỉ Quốc hội sửa đổi Hiến pháp (Điều 112).",
+   "keywords": [
+    "31/12/1959",
+    "liên minh công nông",
+    "tập trung dân chủ",
+    "Quốc hội"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,125 @@
+{
+ "id": "hien-phap-1980",
+ "subject": "hien-phap",
+ "chapter": "c2-khai-niem-dac-trung",
+ "term": "Hiến pháp 1980",
+ "definition": "Đảng cộng sản Việt Nam, đội tiên phong và bộ tham mưu chiến đấu của giai cấp công nhân Việt Nam, được vũ trang bằng học thuyết Mác - Lênin, là lực lượng duy nhất lãnh đạo Nhà nước, lãnh đạo xã hội; là nhân tố chủ yếu quyết định mọi thắng lợi của cách mạng Việt Nam.",
+ "plain": "Quốc hội khóa VI, kỳ họp thứ 7 thông qua ngày 18/12/1980: Hiến pháp của thời kỳ cả nước thống nhất, quá độ lên chủ nghĩa xã hội (quốc hiệu Cộng hoà xã hội chủ nghĩa Việt Nam). Đặc điểm: lần đầu hiến định vai trò lãnh đạo của Đảng (Điều 4); Nhà nước \"chuyên chính vô sản\" (Điều 2); cơ chế kế hoạch hóa tập trung. Bộ máy có HỘI ĐỒNG NHÀ NƯỚC, vừa là cơ quan thường trực của Quốc hội vừa là \"Chủ tịch tập thể\" (Điều 98), và HỘI ĐỒNG BỘ TRƯỞNG là Chính phủ (Điều 104).",
+ "example": "Năm 1980 không có chức danh Chủ tịch nước cá nhân như 1946, 1959, 1992: chức năng nguyên thủ do Hội đồng Nhà nước tập thể đảm nhận. Hiến pháp 1992 khôi phục chế định Chủ tịch nước (Điều 101) và Ủy ban thường vụ Quốc hội.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 4 Hiến pháp 1980",
+  "url": "https://vbpl.vn/en/van-ban/chi-tiet/hien-phap-nam-1980--1534"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hien-phap-1959",
+  "hien-phap-1992"
+ ],
+ "keywords": [
+  "18/12/1980",
+  "Đảng lãnh đạo (Điều 4)",
+  "chuyên chính vô sản",
+  "Hội đồng Nhà nước – Chủ tịch tập thể",
+  "Hội đồng Bộ trưởng"
+ ],
+ "note": "Hiến pháp đã hết hiệu lực; học để hiểu lịch sử lập hiến, không áp dụng như luật hiện hành.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 98 Hiến pháp 1980, Hội đồng Nhà nước có vị trí gì?",
+   "options": [
+    "Cơ quan cao nhất hoạt động thường xuyên của Quốc hội, là Chủ tịch tập thể của nước",
+    "Cơ quan hành chính Nhà nước cao nhất",
+    "Cơ quan xét xử cao nhất",
+    "Cơ quan tư vấn của Đảng"
+   ],
+   "answer": 0,
+   "explain": "Điều 98 Hiến pháp 1980.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 98 Hiến pháp 1980"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Bản Hiến pháp nào lần đầu ghi nhận vai trò lãnh đạo Nhà nước, xã hội của Đảng Cộng sản Việt Nam bằng một điều riêng?",
+   "options": [
+    "Hiến pháp 1980 (Điều 4)",
+    "Hiến pháp 1946",
+    "Hiến pháp 1959",
+    "Hiến pháp 2013"
+   ],
+   "answer": 0,
+   "explain": "Điều 4 Hiến pháp 1980. Hiến pháp 1959 chỉ nhắc Đảng lao động Việt Nam ở Lời nói đầu.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 4 Hiến pháp 1980"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hiến pháp 1980",
+   "right": "Hiến pháp 1992",
+   "cases": [
+    {
+     "text": "Hội đồng Nhà nước là Chủ tịch tập thể",
+     "answer": "left"
+    },
+    {
+     "text": "Chủ tịch nước là người đứng đầu Nhà nước",
+     "answer": "right"
+    },
+    {
+     "text": "Hội đồng Bộ trưởng là Chính phủ",
+     "answer": "left"
+    },
+    {
+     "text": "Phát triển kinh tế hàng hoá nhiều thành phần theo cơ chế thị trường",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 98, 104 Hiến pháp 1980; Điều 15, 101 Hiến pháp 1992."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đảng cộng sản Việt Nam (…) là lực lượng {{duy nhất}} lãnh đạo Nhà nước, lãnh đạo xã hội.",
+   "bank_extra": [
+    "chủ yếu",
+    "tạm thời"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hội đồng Nhà nước là cơ quan cao nhất hoạt động thường xuyên của Quốc hội, là {{Chủ tịch tập thể}} của nước Cộng hoà xã hội chủ nghĩa Việt Nam.",
+   "bank_extra": [
+    "Chính phủ",
+    "Tòa án"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo Hiến pháp 1980, Chính phủ được gọi là Hội đồng Bộ trưởng.",
+   "answer": true,
+   "explain": "Đúng. Điều 104 Hiến pháp 1980: \"Hội đồng bộ trưởng là Chính phủ của nước Cộng hoà xã hội chủ nghĩa Việt Nam\"."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày hoàn cảnh ra đời và đặc điểm bộ máy nhà nước theo Hiến pháp 1980.",
+   "model": "Quốc hội khóa VI thông qua ngày 18/12/1980, sau thống nhất đất nước; Nhà nước chuyên chính vô sản (Điều 2); Đảng là lực lượng duy nhất lãnh đạo Nhà nước, xã hội (Điều 4); Hội đồng Nhà nước là cơ quan thường xuyên của Quốc hội, Chủ tịch tập thể (Điều 98); Hội đồng Bộ trưởng là Chính phủ (Điều 104); mang dấu ấn cơ chế tập trung, bao cấp.",
+   "keywords": [
+    "18/12/1980",
+    "Điều 4",
+    "Hội đồng Nhà nước",
+    "Hội đồng Bộ trưởng"
+   ]
+  }
+ ]
+}

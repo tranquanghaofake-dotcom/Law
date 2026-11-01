@@ -1,0 +1,122 @@
+{
+ "id": "hien-phap-1992",
+ "subject": "hien-phap",
+ "chapter": "c2-khai-niem-dac-trung",
+ "term": "Hiến pháp 1992",
+ "definition": "Nhà nước phát triển nền kinh tế hàng hoá nhiều thành phần theo cơ chế thị trường có sự quản lý của Nhà nước, theo định hướng xã hội chủ nghĩa.",
+ "plain": "Quốc hội khóa VIII, kỳ họp thứ 11 thông qua ngày 15/4/1992: Hiến pháp của thời kỳ ĐỔI MỚI. Điểm mới: kinh tế hàng hóa nhiều thành phần theo cơ chế thị trường (Điều 15); Nhà nước \"của nhân dân, do nhân dân, vì nhân dân\" (Điều 2); lần đầu dùng thuật ngữ \"quyền con người\" (Điều 50); khôi phục Chủ tịch nước cá nhân (Điều 101), Ủy ban thường vụ Quốc hội; Hội đồng Bộ trưởng đổi lại thành Chính phủ. Năm 2001 được sửa đổi, bổ sung bởi Nghị quyết 51/2001/QH10 (bổ sung \"Nhà nước pháp quyền xã hội chủ nghĩa\"). Hết hiệu lực khi Hiến pháp 2013 có hiệu lực (01/01/2014).",
+ "example": "Doanh nghiệp tư nhân, công ty cổ phần được phát triển hợp hiến từ Hiến pháp 1992: nền tảng cho Luật Doanh nghiệp, Luật Chứng khoán sau này.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 15 Hiến pháp 1992",
+  "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Hien-phap-1992-cong-hoa-xa-hoi-chu-nghia-Viet-nam-38238.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hien-phap-1980",
+  "ke-thua-lap-hien"
+ ],
+ "keywords": [
+  "15/4/1992",
+  "Đổi mới",
+  "kinh tế hàng hoá nhiều thành phần",
+  "quyền con người (Điều 50)",
+  "sửa đổi 2001"
+ ],
+ "note": "Hiến pháp đã hết hiệu lực; học để hiểu lịch sử lập hiến, không áp dụng như luật hiện hành. Nghị quyết 51/2001/QH10 sửa đổi, bổ sung một số điều; câu chữ trích ở đây là bản gốc năm 1992.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hiến pháp 1992 được Quốc hội thông qua ngày nào?",
+   "options": [
+    "15/4/1992",
+    "18/12/1980",
+    "28/11/2013",
+    "25/12/2001"
+   ],
+   "answer": 0,
+   "explain": "Quốc hội khóa VIII, kỳ họp thứ 11 thông qua ngày 15/4/1992. Ngày 25/12/2001 là ngày Quốc hội thông qua Nghị quyết 51/2001/QH10 sửa đổi Hiến pháp 1992.",
+   "source": {
+    "kind": "statute",
+    "cite": "Hiến pháp 1992"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Bản Hiến pháp nào lần đầu sử dụng thuật ngữ \"quyền con người\"?",
+   "options": [
+    "Hiến pháp 1992 (Điều 50)",
+    "Hiến pháp 1946",
+    "Hiến pháp 1959",
+    "Hiến pháp 1980"
+   ],
+   "answer": 0,
+   "explain": "Điều 50 Hiến pháp 1992; Hiến pháp 2013 phát triển thành Chương II \"Quyền con người, quyền và nghĩa vụ cơ bản của công dân\".",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 50 Hiến pháp 1992"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hiến pháp 1992 (bản gốc)",
+   "right": "Hiến pháp 2013",
+   "cases": [
+    {
+     "text": "Các quyền con người được thể hiện ở các quyền công dân",
+     "answer": "left"
+    },
+    {
+     "text": "Quyền con người, quyền công dân chỉ có thể bị hạn chế theo quy định của luật trong trường hợp cần thiết",
+     "answer": "right"
+    },
+    {
+     "text": "Kinh tế hàng hoá nhiều thành phần theo cơ chế thị trường",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 15, 50 Hiến pháp 1992; khoản 2 Điều 14 Hiến pháp 2013."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhà nước phát triển nền kinh tế {{hàng hoá nhiều thành phần}} theo {{cơ chế thị trường}} có sự quản lý của Nhà nước, theo định hướng xã hội chủ nghĩa.",
+   "bank_extra": [
+    "kế hoạch hóa tập trung",
+    "tự cấp tự túc"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhà nước Cộng hoà xã hội chủ nghĩa Việt Nam là Nhà nước của {{nhân dân}}, do nhân dân, vì nhân dân.",
+   "bank_extra": [
+    "giai cấp công nhân",
+    "Đảng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hiến pháp 1992 vẫn còn hiệu lực song song với Hiến pháp 2013.",
+   "answer": false,
+   "explain": "Sai. Hiến pháp 2013 có hiệu lực từ 01/01/2014 và thay thế Hiến pháp 1992 (đã sửa đổi năm 2001)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày hoàn cảnh ra đời và điểm mới cơ bản của Hiến pháp 1992.",
+   "model": "Quốc hội khóa VIII thông qua ngày 15/4/1992, thể chế hóa đường lối Đổi mới; kinh tế hàng hóa nhiều thành phần theo cơ chế thị trường (Điều 15); Nhà nước của nhân dân, do nhân dân, vì nhân dân (Điều 2); lần đầu ghi nhận quyền con người (Điều 50); khôi phục Chủ tịch nước, Ủy ban thường vụ Quốc hội, Chính phủ; sửa đổi năm 2001 (Nghị quyết 51/2001/QH10); hết hiệu lực từ 01/01/2014.",
+   "keywords": [
+    "15/4/1992",
+    "Đổi mới",
+    "cơ chế thị trường",
+    "quyền con người",
+    "2001"
+   ]
+  }
+ ]
+}
