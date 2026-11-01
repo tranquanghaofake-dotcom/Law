@@ -1,0 +1,115 @@
+{
+ "id": "nghia-vu-chung-minh",
+ "subject": "to-tung-dan-su",
+ "chapter": "v4",
+ "term": "Nghĩa vụ chứng minh",
+ "definition": "Đương sự có quyền và nghĩa vụ chủ động thu thập, giao nộp chứng cứ cho Tòa án và chứng minh cho yêu cầu của mình là có căn cứ và hợp pháp. (…) Tòa án có trách nhiệm hỗ trợ đương sự trong việc thu thập chứng cứ và chỉ tiến hành thu thập, xác minh chứng cứ trong những trường hợp do Bộ luật này quy định.",
+ "plain": "\"AI YÊU CẦU, NGƯỜI ĐÓ CHỨNG MINH\": đương sự CHỦ ĐỘNG thu thập, giao nộp chứng cứ. Tòa án chỉ HỖ TRỢ và chỉ tự thu thập trong trường hợp luật định. Ngoại lệ đảo nghĩa vụ chứng minh (khoản 1 Điều 91): NGƯỜI TIÊU DÙNG không phải chứng minh lỗi của doanh nghiệp; NGƯỜI LAO ĐỘNG không giao nộp được vì tài liệu do người sử dụng lao động giữ thì người sử dụng lao động phải cung cấp; người sử dụng lao động phải chứng minh khi đơn phương chấm dứt, sa thải. Không phải chứng minh (Điều 92): tình tiết mọi người đều biết, đã được bản án hiệu lực xác định, văn bản công chứng, chứng thực…",
+ "example": "Người mua điện thoại bị nổ pin kiện cửa hàng: không phải chứng minh lỗi của cửa hàng; cửa hàng phải chứng minh mình không có lỗi (điểm a khoản 1 Điều 91).",
+ "source": {
+  "kind": "statute",
+  "cite": "Đoạn 1 khoản 1, khoản 2 Điều 6 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thu-tuc-To-tung/Van-ban-hop-nhat-21-VBHN-VPQH-2026-Bo-luat-To-dung-dan-su-696578.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "chung-cu",
+  "duong-su"
+ ],
+ "keywords": [
+  "chủ động thu thập, giao nộp chứng cứ",
+  "chứng minh yêu cầu có căn cứ",
+  "Tòa án hỗ trợ",
+  "ngoại lệ người tiêu dùng, người lao động"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai có nghĩa vụ chủ động thu thập, giao nộp chứng cứ trong tố tụng dân sự?",
+   "options": [
+    "Đương sự",
+    "Tòa án",
+    "Viện kiểm sát",
+    "Công an"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 6.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 6 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người tiêu dùng khởi kiện có phải chứng minh lỗi của tổ chức kinh doanh không?",
+   "options": [
+    "Không, tổ chức kinh doanh phải chứng minh mình không có lỗi",
+    "Có",
+    "Chỉ khi thiệt hại lớn",
+    "Chỉ khi có luật sư"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 91.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 91 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Phải chứng minh",
+   "right": "Không phải chứng minh",
+   "cases": [
+    {
+     "text": "Nguyên đơn đòi nợ phải chứng minh có khoản vay",
+     "answer": "left"
+    },
+    {
+     "text": "Tình tiết đã được bản án có hiệu lực xác định",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 91, 92."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đương sự có quyền và nghĩa vụ chủ động thu thập, giao nộp {{chứng cứ}} cho Tòa án và chứng minh cho yêu cầu của mình là có {{căn cứ}} và hợp pháp.",
+   "bank_extra": [
+    "đơn thư",
+    "tiền án phí"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tòa án có trách nhiệm {{hỗ trợ}} đương sự trong việc thu thập chứng cứ.",
+   "bank_extra": [
+    "thay thế",
+    "cấm"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Trong tố tụng dân sự, Tòa án có nghĩa vụ chủ yếu thu thập chứng cứ thay cho đương sự.",
+   "answer": false,
+   "explain": "Sai. Khoản 1, 2 Điều 6: đương sự chủ động; Tòa án chỉ hỗ trợ và thu thập trong trường hợp luật định."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày nguyên tắc cung cấp chứng cứ và chứng minh trong tố tụng dân sự.",
+   "model": "Đương sự có quyền, nghĩa vụ chủ động thu thập, giao nộp chứng cứ, chứng minh yêu cầu có căn cứ, hợp pháp (khoản 1 Điều 6); Tòa án hỗ trợ và chỉ thu thập trong trường hợp luật định (khoản 2); ngoại lệ người tiêu dùng, người lao động (Điều 91).",
+   "keywords": [
+    "chủ động",
+    "chứng minh",
+    "hỗ trợ",
+    "người tiêu dùng"
+   ]
+  }
+ ]
+}

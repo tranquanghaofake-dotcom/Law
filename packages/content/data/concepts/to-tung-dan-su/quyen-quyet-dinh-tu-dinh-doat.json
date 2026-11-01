@@ -1,0 +1,116 @@
+{
+ "id": "quyen-quyet-dinh-tu-dinh-doat",
+ "subject": "to-tung-dan-su",
+ "chapter": "v1",
+ "term": "Quyền quyết định và tự định đoạt của đương sự",
+ "definition": "Đương sự có quyền quyết định việc khởi kiện, yêu cầu Tòa án có thẩm quyền giải quyết vụ việc dân sự. Tòa án chỉ thụ lý giải quyết vụ việc dân sự khi có đơn khởi kiện, đơn yêu cầu của đương sự và chỉ giải quyết trong phạm vi đơn khởi kiện, đơn yêu cầu đó. Trong quá trình giải quyết vụ việc dân sự, đương sự có quyền chấm dứt, thay đổi yêu cầu của mình hoặc thoả thuận với nhau một cách tự nguyện, không vi phạm điều cấm của luật và không trái đạo đức xã hội.",
+ "plain": "Nguyên tắc ĐẶC TRƯNG của tố tụng dân sự (khác hình sự): Tòa án KHÔNG TỰ KHỞI XƯỚNG; chỉ thụ lý khi CÓ ĐƠN; chỉ giải quyết TRONG PHẠM VI ĐƠN (không xử vượt yêu cầu). Đương sự có quyền RÚT, THAY ĐỔI yêu cầu, THỎA THUẬN (hòa giải thành) — giới hạn bởi điều cấm của luật và đạo đức xã hội.",
+ "example": "Nguyên đơn chỉ đòi tiền gốc 100 triệu, không đòi lãi: Tòa án không được tự tuyên buộc trả thêm tiền lãi.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 5 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thu-tuc-To-tung/Van-ban-hop-nhat-21-VBHN-VPQH-2026-Bo-luat-To-dung-dan-su-696578.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quyen-yeu-cau-toa-an-bao-ve",
+  "nghia-vu-chung-minh",
+  "hoa-giai-trong-to-tung-dan-su"
+ ],
+ "keywords": [
+  "quyền quyết định việc khởi kiện",
+  "chỉ thụ lý khi có đơn",
+  "trong phạm vi đơn",
+  "chấm dứt, thay đổi, thỏa thuận"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tòa án thụ lý giải quyết vụ việc dân sự khi nào?",
+   "options": [
+    "Khi có đơn khởi kiện, đơn yêu cầu của đương sự",
+    "Khi phát hiện vi phạm",
+    "Khi Viện kiểm sát yêu cầu",
+    "Bất cứ khi nào thấy cần"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 5.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 5 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tòa án có được giải quyết vượt quá phạm vi đơn khởi kiện không?",
+   "options": [
+    "Không, chỉ giải quyết trong phạm vi đơn",
+    "Có nếu có lợi cho nguyên đơn",
+    "Có nếu phát hiện thêm vi phạm",
+    "Có nếu được Chánh án đồng ý"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 5.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 5 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quyền tự định đoạt của đương sự",
+   "right": "Không thuộc quyền này",
+   "cases": [
+    {
+     "text": "Rút yêu cầu khởi kiện",
+     "answer": "left"
+    },
+    {
+     "text": "Thỏa thuận trái điều cấm của luật",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 5."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tòa án chỉ thụ lý giải quyết vụ việc dân sự khi có {{đơn khởi kiện}}, đơn yêu cầu của đương sự và chỉ giải quyết trong {{phạm vi}} đơn đó.",
+   "bank_extra": [
+    "quyết định",
+    "thời hạn"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đương sự có quyền chấm dứt, thay đổi yêu cầu hoặc {{thoả thuận}} với nhau một cách tự nguyện.",
+   "bank_extra": [
+    "khiếu nại",
+    "tố cáo"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tòa án có thể tự khởi xướng vụ án dân sự khi phát hiện tranh chấp.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 5: chỉ thụ lý khi có đơn khởi kiện, đơn yêu cầu."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày nguyên tắc quyền quyết định và tự định đoạt của đương sự.",
+   "model": "Đương sự quyết định việc khởi kiện, yêu cầu; Tòa án chỉ thụ lý khi có đơn và chỉ giải quyết trong phạm vi đơn (khoản 1); đương sự có quyền chấm dứt, thay đổi yêu cầu, thỏa thuận tự nguyện, không vi phạm điều cấm, không trái đạo đức (khoản 2 Điều 5).",
+   "keywords": [
+    "có đơn",
+    "phạm vi đơn",
+    "thay đổi yêu cầu",
+    "thỏa thuận"
+   ]
+  }
+ ]
+}

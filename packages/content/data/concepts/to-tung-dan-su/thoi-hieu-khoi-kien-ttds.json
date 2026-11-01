@@ -1,0 +1,115 @@
+{
+ "id": "thoi-hieu-khoi-kien-ttds",
+ "subject": "to-tung-dan-su",
+ "chapter": "v5",
+ "term": "Thời hiệu khởi kiện trong tố tụng dân sự",
+ "definition": "Thời hiệu khởi kiện, thời hiệu yêu cầu giải quyết việc dân sự được thực hiện theo quy định của Bộ luật Dân sự. Tòa án chỉ áp dụng quy định về thời hiệu theo yêu cầu áp dụng thời hiệu của một bên hoặc các bên với điều kiện yêu cầu này phải được đưa ra trước khi Tòa án cấp sơ thẩm ra bản án, quyết định giải quyết vụ việc. Người được hưởng lợi từ việc áp dụng thời hiệu có quyền từ chối áp dụng thời hiệu, trừ trường hợp việc từ chối đó nhằm mục đích trốn tránh thực hiện nghĩa vụ.",
+ "plain": "BLTTDS dẫn chiếu thời hiệu theo BLDS (và luật chuyên ngành: lao động Điều 190 BLLĐ, thương mại Điều 319 LTM). Tòa án chỉ áp dụng khi CÓ YÊU CẦU, đưa ra TRƯỚC KHI SƠ THẨM ra bản án, quyết định — thống nhất với khoản 2 Điều 149 BLDS. Người hưởng lợi có quyền TỪ CHỐI áp dụng, trừ nhằm TRỐN TRÁNH NGHĨA VỤ. Hết thời hiệu và có yêu cầu áp dụng → Tòa án ĐÌNH CHỈ giải quyết vụ án (điểm e khoản 1 Điều 217).",
+ "example": "Bị đơn yêu cầu áp dụng thời hiệu ngay tại phiên họp kiểm tra chứng cứ trước khi xét xử sơ thẩm: hợp lệ, Tòa án xem xét; nếu yêu cầu lần đầu ở phúc thẩm thì không được chấp nhận.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 184 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thu-tuc-To-tung/Van-ban-hop-nhat-21-VBHN-VPQH-2026-Bo-luat-To-dung-dan-su-696578.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "bien-phap-khan-cap-tam-thoi",
+  "quyen-quyet-dinh-tu-dinh-doat"
+ ],
+ "keywords": [
+  "theo Bộ luật Dân sự",
+  "chỉ áp dụng theo yêu cầu",
+  "trước khi sơ thẩm ra bản án",
+  "quyền từ chối áp dụng thời hiệu"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thời hiệu khởi kiện vụ án dân sự được thực hiện theo quy định của văn bản nào (theo Điều 184)?",
+   "options": [
+    "Bộ luật Dân sự",
+    "Bộ luật Tố tụng dân sự tự quy định riêng",
+    "Luật Tổ chức Tòa án",
+    "Nghị quyết của Quốc hội"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 184.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 184 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người được hưởng lợi từ việc áp dụng thời hiệu có quyền từ chối không?",
+   "options": [
+    "Có, trừ khi nhằm trốn tránh thực hiện nghĩa vụ",
+    "Không",
+    "Chỉ khi được Tòa án cho phép",
+    "Chỉ trong vụ án lao động"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 184.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 184 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hợp lệ",
+   "right": "Không được chấp nhận",
+   "cases": [
+    {
+     "text": "Yêu cầu áp dụng thời hiệu trước khi sơ thẩm ra bản án",
+     "answer": "left"
+    },
+    {
+     "text": "Yêu cầu áp dụng thời hiệu lần đầu ở phúc thẩm",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 184."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tòa án chỉ áp dụng quy định về thời hiệu theo {{yêu cầu}} của một bên hoặc các bên, đưa ra trước khi Tòa án cấp {{sơ thẩm}} ra bản án, quyết định.",
+   "bank_extra": [
+    "ý kiến",
+    "phúc thẩm"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người được hưởng lợi từ việc áp dụng thời hiệu có quyền {{từ chối}} áp dụng thời hiệu.",
+   "bank_extra": [
+    "buộc",
+    "kháng nghị"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tòa án phải tự động áp dụng thời hiệu khi phát hiện đã hết thời hiệu.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 184: chỉ áp dụng theo yêu cầu."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quy định về thời hiệu khởi kiện trong BLTTDS.",
+   "model": "Thời hiệu theo BLDS (khoản 1 Điều 184); Tòa án chỉ áp dụng theo yêu cầu, đưa ra trước khi sơ thẩm ra bản án, quyết định; người hưởng lợi có quyền từ chối, trừ nhằm trốn tránh nghĩa vụ (khoản 2).",
+   "keywords": [
+    "Bộ luật Dân sự",
+    "yêu cầu",
+    "sơ thẩm",
+    "từ chối"
+   ]
+  }
+ ]
+}

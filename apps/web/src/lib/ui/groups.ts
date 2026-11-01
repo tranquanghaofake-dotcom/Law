@@ -1,4 +1,4 @@
-export const GROUPS: Record<string, string> = { pldc: 'Pháp luật đại cương', 'dan-su': 'Luật Dân sự', 'lao-dong': 'Luật Lao động', 'hinh-su': 'Luật Hình sự', 'hien-phap': 'Luật Hiến pháp', 'canh-tranh': 'Luật Cạnh tranh', 'so-huu-tri-tue': 'Luật Sở hữu trí tuệ', 'thuong-mai': 'Luật Thương mại', 'dat-dai': 'Luật Đất đai' };
+export const GROUPS: Record<string, string> = { pldc: 'Pháp luật đại cương', 'dan-su': 'Luật Dân sự', 'lao-dong': 'Luật Lao động', 'hinh-su': 'Luật Hình sự', 'hien-phap': 'Luật Hiến pháp', 'canh-tranh': 'Luật Cạnh tranh', 'so-huu-tri-tue': 'Luật Sở hữu trí tuệ', 'thuong-mai': 'Luật Thương mại', 'dat-dai': 'Luật Đất đai', 'to-tung-dan-su': 'Luật Tố tụng dân sự' };
 
 /** Sắp nhóm theo thứ tự GROUPS; nhóm không có trong GROUPS xếp cuối, giữ thứ tự xuất hiện. */
 export function sortGroups<T>(entries: [string, T][]): [string, T][] {

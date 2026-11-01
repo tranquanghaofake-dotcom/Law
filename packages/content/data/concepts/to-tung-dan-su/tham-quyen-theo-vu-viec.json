@@ -1,0 +1,115 @@
+{
+ "id": "tham-quyen-theo-vu-viec",
+ "subject": "to-tung-dan-su",
+ "chapter": "v2",
+ "term": "Thẩm quyền theo vụ việc: tranh chấp dân sự thuộc thẩm quyền Tòa án",
+ "definition": "1. Tranh chấp về quốc tịch Việt Nam giữa cá nhân với cá nhân. (…) 3. Tranh chấp về giao dịch dân sự, hợp đồng dân sự. 4. Tranh chấp về quyền sở hữu trí tuệ, chuyển giao công nghệ, trừ trường hợp quy định tại khoản 2 Điều 30 của Bộ luật này. 5. Tranh chấp về thừa kế tài sản. 6. Tranh chấp về bồi thường thiệt hại ngoài hợp đồng.",
+ "plain": "Thẩm quyền xét theo BA bình diện: THEO VỤ VIỆC (loại việc Tòa án giải quyết: dân sự Điều 26–27, hôn nhân gia đình 28–29, kinh doanh thương mại 30–31, lao động 32–33); THEO CẤP (khu vực hay tỉnh, Điều 35–38); THEO LÃNH THỔ (Điều 39–40). Phân biệt: tranh chấp SỞ HỮU TRÍ TUỆ giữa cá nhân, tổ chức có ĐĂNG KÝ KINH DOANH và đều VÌ MỤC ĐÍCH LỢI NHUẬN là tranh chấp kinh doanh, thương mại (khoản 2 Điều 30).",
+ "example": "Tranh chấp chia di sản thừa kế giữa các anh em là tranh chấp dân sự theo khoản 5 Điều 26.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, 3–6 Điều 26 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thu-tuc-To-tung/Van-ban-hop-nhat-21-VBHN-VPQH-2026-Bo-luat-To-dung-dan-su-696578.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tham-quyen-theo-cap",
+  "tham-quyen-theo-lanh-tho"
+ ],
+ "keywords": [
+  "tranh chấp dân sự",
+  "giao dịch, hợp đồng dân sự",
+  "thừa kế",
+  "bồi thường ngoài hợp đồng"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tranh chấp về thừa kế tài sản thuộc loại tranh chấp nào?",
+   "options": [
+    "Tranh chấp về dân sự (khoản 5 Điều 26)",
+    "Tranh chấp hành chính",
+    "Tranh chấp kinh doanh, thương mại",
+    "Tranh chấp lao động"
+   ],
+   "answer": 0,
+   "explain": "Khoản 5 Điều 26.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 26 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tranh chấp quyền sở hữu trí tuệ giữa hai công ty cùng vì mục đích lợi nhuận thuộc loại nào?",
+   "options": [
+    "Tranh chấp kinh doanh, thương mại (khoản 2 Điều 30)",
+    "Tranh chấp dân sự",
+    "Tranh chấp hành chính",
+    "Không thuộc thẩm quyền Tòa án"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 26; khoản 2 Điều 30.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 26, Điều 30 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tranh chấp dân sự (Điều 26)",
+   "right": "Không phải tranh chấp dân sự",
+   "cases": [
+    {
+     "text": "Bồi thường thiệt hại ngoài hợp đồng",
+     "answer": "left"
+    },
+    {
+     "text": "Tranh chấp về kỷ luật sa thải",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 26, 32."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tranh chấp về giao dịch dân sự, {{hợp đồng}} dân sự; tranh chấp về {{thừa kế}} tài sản thuộc thẩm quyền của Tòa án.",
+   "bank_extra": [
+    "quyết định hành chính",
+    "thuế"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tranh chấp về quốc tịch Việt Nam giữa {{cá nhân với cá nhân}} thuộc thẩm quyền Tòa án.",
+   "bank_extra": [
+    "cá nhân với Nhà nước",
+    "tổ chức với Nhà nước"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi tranh chấp về sở hữu trí tuệ đều là tranh chấp dân sự.",
+   "answer": false,
+   "explain": "Sai. Khoản 4 Điều 26 trừ trường hợp khoản 2 Điều 30 (giữa chủ thể kinh doanh vì lợi nhuận)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày các bình diện xác định thẩm quyền của Tòa án và một số tranh chấp dân sự theo Điều 26.",
+   "model": "Thẩm quyền theo vụ việc, theo cấp, theo lãnh thổ; tranh chấp dân sự gồm: quốc tịch giữa cá nhân với cá nhân, quyền sở hữu, hợp đồng dân sự, sở hữu trí tuệ (trừ khoản 2 Điều 30), thừa kế, bồi thường ngoài hợp đồng… (Điều 26).",
+   "keywords": [
+    "vụ việc",
+    "cấp",
+    "lãnh thổ",
+    "thừa kế"
+   ]
+  }
+ ]
+}

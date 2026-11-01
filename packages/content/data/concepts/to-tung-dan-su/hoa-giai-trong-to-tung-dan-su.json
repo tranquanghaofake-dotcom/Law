@@ -1,0 +1,115 @@
+{
+ "id": "hoa-giai-trong-to-tung-dan-su",
+ "subject": "to-tung-dan-su",
+ "chapter": "v7",
+ "term": "Hòa giải trong tố tụng dân sự",
+ "definition": "Tòa án có trách nhiệm tiến hành hòa giải và tạo điều kiện thuận lợi để các đương sự thoả thuận với nhau về việc giải quyết vụ việc dân sự theo quy định của Bộ luật này. (…) Việc hòa giải được tiến hành theo các nguyên tắc sau đây: a) Tôn trọng sự tự nguyện thoả thuận của các đương sự, không được dùng vũ lực hoặc đe dọa dùng vũ lực, bắt buộc các đương sự phải thoả thuận không phù hợp với ý chí của mình; b) Nội dung thoả thuận giữa các đương sự không vi phạm điều cấm của luật, không trái đạo đức xã hội.",
+ "plain": "Hòa giải là NGUYÊN TẮC (Điều 10) và là THỦ TỤC BẮT BUỘC trong giai đoạn chuẩn bị xét xử sơ thẩm (Điều 205), TRỪ vụ án KHÔNG ĐƯỢC hòa giải (Điều 206: đòi bồi thường gây thiệt hại tài sản Nhà nước, giao dịch vi phạm điều cấm…), KHÔNG TIẾN HÀNH ĐƯỢC (Điều 207: bị đơn cố tình vắng mặt…), thủ tục RÚT GỌN. Nguyên tắc: TỰ NGUYỆN, nội dung KHÔNG VI PHẠM ĐIỀU CẤM, không trái đạo đức. Hòa giải thành → Tòa án ra quyết định công nhận sự thỏa thuận (sau 07 ngày). Phân biệt: hòa giải, đối thoại TẠI TÒA ÁN theo Luật Hòa giải, đối thoại tại Tòa án 2020 (trước khi thụ lý).",
+ "example": "Trong phiên hòa giải, bị đơn đồng ý trả nợ dần trong 6 tháng, nguyên đơn chấp nhận: lập biên bản hòa giải thành; hết 07 ngày không ai thay đổi ý kiến, Tòa án ra quyết định công nhận sự thỏa thuận.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 10; khoản 2 Điều 205 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thu-tuc-To-tung/Van-ban-hop-nhat-21-VBHN-VPQH-2026-Bo-luat-To-dung-dan-su-696578.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quyen-quyet-dinh-tu-dinh-doat",
+  "an-phi-so-tham"
+ ],
+ "keywords": [
+  "Tòa án có trách nhiệm hòa giải",
+  "tự nguyện thỏa thuận",
+  "không vi phạm điều cấm",
+  "trừ vụ án không được hòa giải"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nguyên tắc hòa giải theo khoản 2 Điều 205 gồm những gì?",
+   "options": [
+    "Tôn trọng sự tự nguyện thỏa thuận; nội dung không vi phạm điều cấm của luật, không trái đạo đức xã hội",
+    "Bắt buộc các bên phải thỏa thuận",
+    "Thẩm phán quyết định nội dung thỏa thuận",
+    "Hòa giải bí mật không lập biên bản"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 205.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 205 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Vụ án nào KHÔNG phải tiến hành hòa giải theo khoản 1 Điều 205?",
+   "options": [
+    "Vụ án được giải quyết theo thủ tục rút gọn",
+    "Vụ án tranh chấp hợp đồng vay",
+    "Vụ án ly hôn",
+    "Vụ án thừa kế"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 205.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 205 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Phải hòa giải",
+   "right": "Không hòa giải",
+   "cases": [
+    {
+     "text": "Tranh chấp hợp đồng mua bán thông thường",
+     "answer": "left"
+    },
+    {
+     "text": "Vụ án giải quyết theo thủ tục rút gọn",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 205, 206, 207."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Việc hòa giải phải tôn trọng sự {{tự nguyện}} thoả thuận của các đương sự; nội dung thoả thuận không vi phạm {{điều cấm}} của luật.",
+   "bank_extra": [
+    "bắt buộc",
+    "tập quán"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tòa án có trách nhiệm tiến hành {{hòa giải}} và tạo điều kiện thuận lợi để các đương sự thỏa thuận với nhau.",
+   "bank_extra": [
+    "xét xử nhanh",
+    "cưỡng chế"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thẩm phán được buộc các đương sự phải thỏa thuận theo phương án Thẩm phán cho là hợp lý.",
+   "answer": false,
+   "explain": "Sai. Điểm a khoản 2 Điều 205: không được bắt buộc đương sự thỏa thuận trái ý chí."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày nguyên tắc và phạm vi hòa giải trong tố tụng dân sự.",
+   "model": "Tòa án có trách nhiệm hòa giải (Điều 10); trong thời hạn chuẩn bị xét xử sơ thẩm phải hòa giải, trừ vụ án không được hòa giải, không hòa giải được, thủ tục rút gọn (khoản 1 Điều 205); nguyên tắc tự nguyện, không vi phạm điều cấm, không trái đạo đức (khoản 2).",
+   "keywords": [
+    "trách nhiệm",
+    "tự nguyện",
+    "điều cấm",
+    "rút gọn"
+   ]
+  }
+ ]
+}

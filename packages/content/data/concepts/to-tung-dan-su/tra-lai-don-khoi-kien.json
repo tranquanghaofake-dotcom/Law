@@ -1,0 +1,115 @@
+{
+ "id": "tra-lai-don-khoi-kien",
+ "subject": "to-tung-dan-su",
+ "chapter": "v7",
+ "term": "Trả lại đơn khởi kiện",
+ "definition": "Thẩm phán trả lại đơn khởi kiện trong các trường hợp sau đây: a) Người khởi kiện không có quyền khởi kiện theo quy định tại Điều 186 và Điều 187 của Bộ luật này hoặc không có đủ năng lực hành vi tố tụng dân sự; b) Chưa có đủ điều kiện khởi kiện theo quy định của pháp luật. Chưa có đủ điều kiện khởi kiện là trường hợp pháp luật có quy định về các điều kiện khởi kiện nhưng người khởi kiện đã khởi kiện đến Tòa án khi còn thiếu một trong các điều kiện đó;",
+ "plain": "Căn cứ chính: KHÔNG CÓ QUYỀN KHỞI KIỆN hoặc thiếu năng lực hành vi tố tụng; CHƯA ĐỦ ĐIỀU KIỆN KHỞI KIỆN (ví dụ tranh chấp ai có quyền sử dụng đất chưa hòa giải tại UBND cấp xã); sự việc ĐÃ ĐƯỢC GIẢI QUYẾT bằng bản án, quyết định có hiệu lực (trừ một số vụ ly hôn, nuôi con, cấp dưỡng…); hết thời hạn mà không nộp TẠM ỨNG ÁN PHÍ; KHÔNG THUỘC THẨM QUYỀN Tòa án; không sửa đổi, bổ sung đơn theo yêu cầu… Đương sự có quyền KHIẾU NẠI, Viện kiểm sát KIẾN NGHỊ quyết định trả lại đơn (Điều 194).",
+ "example": "Hai hộ tranh chấp ranh giới đất nộp đơn thẳng ra Tòa mà chưa hòa giải tại UBND xã: Thẩm phán có thể trả lại đơn vì chưa đủ điều kiện khởi kiện (khoản 2 Điều 235 Luật Đất đai 2024).",
+ "source": {
+  "kind": "statute",
+  "cite": "Điểm a, b khoản 1 Điều 192 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thu-tuc-To-tung/Van-ban-hop-nhat-21-VBHN-VPQH-2026-Bo-luat-To-dung-dan-su-696578.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quyen-yeu-cau-toa-an-bao-ve",
+  "tham-quyen-theo-cap"
+ ],
+ "keywords": [
+  "không có quyền khởi kiện",
+  "chưa có đủ điều kiện khởi kiện",
+  "sự việc đã được giải quyết",
+  "khiếu nại, kiến nghị"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trường hợp nào Thẩm phán trả lại đơn khởi kiện?",
+   "options": [
+    "Chưa có đủ điều kiện khởi kiện theo quy định của pháp luật",
+    "Bị đơn vắng mặt",
+    "Vụ án phức tạp",
+    "Nguyên đơn không có luật sư"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 1 Điều 192.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 192 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "\"Chưa có đủ điều kiện khởi kiện\" được hiểu là gì?",
+   "options": [
+    "Pháp luật có quy định điều kiện khởi kiện nhưng người khởi kiện khởi kiện khi còn thiếu một trong các điều kiện đó",
+    "Không có chứng cứ",
+    "Đã hết thời hiệu",
+    "Nguyên đơn chưa đủ 18 tuổi"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 1 Điều 192.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 192 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Căn cứ trả lại đơn",
+   "right": "Không phải căn cứ trả lại đơn",
+   "cases": [
+    {
+     "text": "Người khởi kiện không có quyền khởi kiện",
+     "answer": "left"
+    },
+    {
+     "text": "Bị đơn không đồng ý với yêu cầu",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 192."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thẩm phán trả lại đơn khởi kiện khi người khởi kiện không có {{quyền khởi kiện}} hoặc không có đủ năng lực hành vi {{tố tụng dân sự}}.",
+   "bank_extra": [
+    "tài sản",
+    "hình sự"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chưa có đủ {{điều kiện khởi kiện}} là trường hợp pháp luật có quy định điều kiện nhưng người khởi kiện còn thiếu một trong các điều kiện đó.",
+   "bank_extra": [
+    "chứng cứ",
+    "thời hiệu"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hết thời hiệu khởi kiện là căn cứ để Thẩm phán trả lại đơn khởi kiện theo BLTTDS 2015.",
+   "answer": false,
+   "explain": "Sai. Hết thời hiệu (khi có yêu cầu áp dụng) là căn cứ đình chỉ giải quyết vụ án (Điều 217), không phải trả lại đơn."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu một số căn cứ trả lại đơn khởi kiện.",
+   "model": "Người khởi kiện không có quyền khởi kiện hoặc thiếu năng lực hành vi tố tụng; chưa đủ điều kiện khởi kiện; sự việc đã được giải quyết bằng bản án, quyết định có hiệu lực; không nộp tạm ứng án phí; không thuộc thẩm quyền… (khoản 1 Điều 192).",
+   "keywords": [
+    "quyền khởi kiện",
+    "điều kiện khởi kiện",
+    "đã được giải quyết",
+    "tạm ứng án phí"
+   ]
+  }
+ ]
+}
