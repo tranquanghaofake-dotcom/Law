@@ -1,0 +1,117 @@
+{
+ "id": "blds-1995",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c8-hien-dai",
+ "term": "Bộ luật Dân sự 1995: bộ luật dân sự đầu tiên",
+ "definition": "Bộ luật dân sự có nhiệm vụ bảo vệ quyền, lợi ích hợp pháp của cá nhân, tổ chức, lợi ích của Nhà nước, lợi ích công cộng, bảo đảm sự bình đẳng và an toàn pháp lý trong quan hệ dân sự, góp phần tạo điều kiện đáp ứng các nhu cầu vật chất và tinh thần của nhân dân, thúc đẩy sự phát triển kinh tế- xã hội.",
+ "plain": "Bộ luật Dân sự 1995 (thông qua 28/10/1995, hiệu lực 01/7/1996) là BỘ LUẬT DÂN SỰ ĐẦU TIÊN của nước CHXHCN Việt Nam, pháp điển hóa pháp luật dân sự sau gần 50 năm kể từ khi tạm dùng dân luật cũ (Sắc lệnh 47) và sửa đổi (Sắc lệnh 97/SL). Bộ luật thể chế hóa kinh tế thị trường thời Đổi mới: ghi nhận các nguyên tắc tự do thỏa thuận, bình đẳng, thiện chí, trung thực; quy định chuyển quyền sử dụng đất (thừa nhận theo Luật Đất đai 1993); có phần về quyền tác giả, quyền sở hữu công nghiệp. Bị thay thế bởi Bộ luật Dân sự 2005, rồi Bộ luật Dân sự 2015 hiện hành.",
+ "example": "Chuỗi ôn tập dân luật: Sắc lệnh 47 (1945) tạm giữ dân luật cũ → Sắc lệnh 97/SL (1950) sửa dân luật → Bộ luật Dân sự 1995 → 2005 → 2015.",
+ "source": {
+  "kind": "primary",
+  "cite": "Bộ luật Dân sự 1995, Điều 1",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-Dan-su-1995-44-L-CTN-39391.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nguyen-tac-blds-1995",
+  "sac-lenh-97-dan-luat",
+  "sac-lenh-47-luat-cu"
+ ],
+ "keywords": [
+  "28/10/1995",
+  "hiệu lực 01/7/1996",
+  "bộ luật dân sự đầu tiên",
+  "bình đẳng và an toàn pháp lý"
+ ],
+ "note": "Bộ luật Dân sự 1995 có hiệu lực từ 01/7/1996, đã hết hiệu lực (thay bằng Bộ luật Dân sự 2005); hiện hành là Bộ luật Dân sự 91/2015/QH13. Học để hiểu lịch sử.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Bộ luật Dân sự 1995 có hiệu lực từ ngày nào?",
+   "options": [
+    "01/7/1996",
+    "28/10/1995",
+    "01/01/2006",
+    "01/01/2017"
+   ],
+   "answer": 0,
+   "explain": "Thông qua 28/10/1995; hiệu lực 01/7/1996.",
+   "source": {
+    "kind": "primary",
+    "cite": "Bộ luật Dân sự 1995"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 1 BLDS 1995, Bộ luật dân sự bảo đảm điều gì trong quan hệ dân sự?",
+   "options": [
+    "Sự bình đẳng và an toàn pháp lý",
+    "Quyền ưu tiên của Nhà nước",
+    "Sự can thiệp hành chính",
+    "Lợi ích của tập thể trên hết"
+   ],
+   "answer": 0,
+   "explain": "Điều 1.",
+   "source": {
+    "kind": "primary",
+    "cite": "Bộ luật Dân sự 1995, Điều 1"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Sắc lệnh 97/SL (1950)",
+   "right": "Bộ luật Dân sự 1995",
+   "cases": [
+    {
+     "text": "Sửa đổi một số quy lệ trong dân luật cũ",
+     "answer": "left"
+    },
+    {
+     "text": "Bộ luật dân sự đầu tiên pháp điển hóa toàn diện",
+     "answer": "right"
+    }
+   ],
+   "explain": "Hai mốc của pháp luật dân sự Việt Nam."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bộ luật dân sự bảo đảm sự {{bình đẳng}} và {{an toàn pháp lý}} trong quan hệ dân sự.",
+   "bank_extra": [
+    "phụ thuộc",
+    "ưu tiên"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bộ luật Dân sự 1995 được Quốc hội thông qua ngày {{28/10/1995}}.",
+   "bank_extra": [
+    "01/7/1996",
+    "14/6/2005"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Bộ luật Dân sự 1995 là bộ luật dân sự đầu tiên của nước Cộng hòa xã hội chủ nghĩa Việt Nam.",
+   "answer": true,
+   "explain": "Đúng; trước đó pháp luật dân sự nằm rải rác hoặc tạm dùng dân luật cũ."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày vị trí và ý nghĩa của Bộ luật Dân sự 1995.",
+   "model": "Thông qua 28/10/1995, hiệu lực 01/7/1996; bộ luật dân sự đầu tiên của nước CHXHCN Việt Nam; nhiệm vụ bảo vệ quyền, lợi ích hợp pháp, bảo đảm bình đẳng, an toàn pháp lý (Điều 1); thể chế hóa kinh tế thị trường; thay thế bởi BLDS 2005 và BLDS 2015.",
+   "keywords": [
+    "1995",
+    "bộ luật dân sự đầu tiên",
+    "bình đẳng",
+    "an toàn pháp lý"
+   ]
+  }
+ ]
+}

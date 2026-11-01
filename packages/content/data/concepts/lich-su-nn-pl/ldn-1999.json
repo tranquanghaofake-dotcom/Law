@@ -1,0 +1,121 @@
+{
+ "id": "ldn-1999",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c8-hien-dai",
+ "term": "Luật Doanh nghiệp 1999: từ \"xin phép\" sang \"đăng ký\"",
+ "definition": "Theo quy định của pháp luật, doanh nghiệp được tự chủ đăng ký và thực hiện kinh doanh các ngành, nghề không thuộc đối tượng quy định tại các khoản 2, 3 và 4 Điều này. (…) Cơ quan đăng ký kinh doanh không có quyền yêu cầu người thành lập doanh nghiệp nộp thêm các giấy tờ, hồ sơ khác ngoài hồ sơ quy định tại Luật này đối với từng loại hình doanh nghiệp.",
+ "plain": "Luật Doanh nghiệp 1999 (hiệu lực 01/01/2000) thay thế Luật Công ty và Luật Doanh nghiệp tư nhân 1990. Bước ngoặt: BỎ thủ tục XIN PHÉP thành lập (Luật Công ty 1990 bắt buộc xin phép UBND tỉnh), chuyển sang ĐĂNG KÝ KINH DOANH tại cơ quan đăng ký kinh doanh; doanh nghiệp TỰ CHỦ đăng ký ngành, nghề không bị cấm; cơ quan đăng ký không được đòi thêm giấy tờ ngoài luật. Thường được đánh giá là hiện thực hóa quyền tự do kinh doanh \"được làm những gì pháp luật không cấm\" (về sau ghi vào Điều 33 Hiến pháp 2013). Sau luật này, Chính phủ bãi bỏ hàng loạt giấy phép trái luật (Quyết định 19/2000/QĐ-TTg). Luật còn quy định công ty cổ phần với cổ đông chịu trách nhiệm hữu hạn và có quyền phát hành chứng khoán.",
+ "example": "Năm 1992 (Luật Công ty 1990): muốn lập công ty phải xin giấy phép thành lập của UBND tỉnh rồi mới đăng ký. Năm 2000 (Luật Doanh nghiệp 1999): chỉ cần nộp đủ hồ sơ đăng ký kinh doanh; cơ quan đăng ký không được đòi thêm giấy tờ ngoài luật.",
+ "source": {
+  "kind": "primary",
+  "cite": "Luật Doanh nghiệp 1999 (13/1999/QH10), khoản 1 Điều 6 và khoản 2 Điều 12",
+  "url": "https://vbpl.vn/en/van-ban/chi-tiet/luat-doanh-nghiep-so-13-1999-qh10--7040"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "luat-cong-ty-1990",
+  "cong-ty-co-phan-1990"
+ ],
+ "keywords": [
+  "12/6/1999",
+  "hiệu lực 01/01/2000",
+  "bỏ xin phép thành lập",
+  "tự chủ đăng ký ngành, nghề",
+  "không được đòi thêm giấy tờ"
+ ],
+ "note": "Luật Doanh nghiệp 1999 có hiệu lực từ 01/01/2000, đã hết hiệu lực (thay bằng Luật Doanh nghiệp 2005); hiện hành là Luật Doanh nghiệp 59/2020/QH14 (đã được sửa đổi). Học để hiểu lịch sử.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Điểm đổi mới căn bản của Luật Doanh nghiệp 1999 so với Luật Công ty 1990 về thủ tục thành lập là gì?",
+   "options": [
+    "Bỏ xin phép thành lập, chỉ đăng ký kinh doanh",
+    "Bắt buộc xin phép Thủ tướng",
+    "Phải có ít nhất bảy thành viên",
+    "Phải được Trọng tài kinh tế chấp thuận"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1, 2 Điều 12 Luật Doanh nghiệp 1999; Điều 14 Luật Công ty 1990.",
+   "source": {
+    "kind": "primary",
+    "cite": "Luật Doanh nghiệp 1999, Điều 12"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 2 Điều 12 Luật Doanh nghiệp 1999, cơ quan đăng ký kinh doanh có được yêu cầu nộp thêm giấy tờ ngoài hồ sơ luật quy định không?",
+   "options": [
+    "Không có quyền yêu cầu",
+    "Được yêu cầu tùy ý",
+    "Được yêu cầu nếu UBND đồng ý",
+    "Chỉ với công ty cổ phần"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 12.",
+   "source": {
+    "kind": "primary",
+    "cite": "Luật Doanh nghiệp 1999, Điều 12"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Luật Công ty 1990",
+   "right": "Luật Doanh nghiệp 1999",
+   "cases": [
+    {
+     "text": "Phải xin phép UBND tỉnh trước khi đăng ký kinh doanh",
+     "answer": "left"
+    },
+    {
+     "text": "Nộp hồ sơ đăng ký kinh doanh, không phải xin phép thành lập",
+     "answer": "right"
+    },
+    {
+     "text": "Công ty cổ phần cần ít nhất bảy cổ đông",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 14, 30 Luật Công ty 1990; Điều 12 Luật Doanh nghiệp 1999."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Doanh nghiệp được {{tự chủ}} đăng ký và thực hiện kinh doanh các ngành, nghề không thuộc đối tượng bị {{cấm}} hoặc hạn chế.",
+   "bank_extra": [
+    "xin phép",
+    "khuyến khích"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Luật Doanh nghiệp 1999 có hiệu lực từ ngày {{01/01/2000}}.",
+   "bank_extra": [
+    "15/4/1991",
+    "01/7/2006"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo Luật Doanh nghiệp 1999, người thành lập doanh nghiệp vẫn phải xin giấy phép thành lập của UBND tỉnh.",
+   "answer": false,
+   "explain": "Sai. Luật 1999 bỏ thủ tục xin phép thành lập, chỉ còn đăng ký kinh doanh (Điều 12)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày ý nghĩa của Luật Doanh nghiệp 1999 trong tiến trình Đổi mới.",
+   "model": "Thay Luật Công ty và Luật Doanh nghiệp tư nhân 1990; hiệu lực 01/01/2000; bỏ cơ chế xin phép thành lập, chuyển sang đăng ký kinh doanh; doanh nghiệp tự chủ đăng ký ngành, nghề không bị cấm (Điều 6); cơ quan đăng ký không được đòi thêm giấy tờ ngoài luật (Điều 12); hiện thực hóa quyền tự do kinh doanh, thúc đẩy doanh nghiệp tư nhân phát triển.",
+   "keywords": [
+    "xin phép",
+    "đăng ký kinh doanh",
+    "tự chủ",
+    "tự do kinh doanh"
+   ]
+  }
+ ]
+}
