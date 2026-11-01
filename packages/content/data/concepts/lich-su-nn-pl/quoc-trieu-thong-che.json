@@ -1,0 +1,126 @@
+{
+ "id": "quoc-trieu-thong-che",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c6-trung-dai",
+ "term": "Quốc triều thông chế và hình phạt đồ thời Trần (1230)",
+ "definition": "Mùa xuân, tháng 3, khảo xét các luật lệ của triều trước, soạn thành Quốc triều thông chế và sửa đổi hình luật lễ nghi, gồm 20 quyển. Định bị đồ có mức độ khác nhau: Loại bị đồ làm Cảo điền hoành thì thích vào mặt 6 chữ (…). Loại bị đồ làm Lao thành binh thì thích vào cổ 4 chữ, bắt dọn cỏ ở Phượng Thành, thành Thăng Long, lệ vào quân Tứ sương.",
+ "plain": "Năm 1230, Trần Thái Tông cho khảo xét luật lệ triều trước (nhà Lý), soạn QUỐC TRIỀU THÔNG CHẾ và sửa đổi hình luật, lễ nghi, gồm 20 quyển: cho thấy nhà Trần KẾ THỪA pháp luật nhà Lý có chọn lọc. Cùng năm định hình phạt ĐỒ (lao dịch khổ sai) có mức khác nhau: Cảo điền hoành (thích 6 chữ vào mặt, cày ruộng công, nộp thóc) và Lao thành binh (thích 4 chữ vào cổ, dọn cỏ thành Thăng Long). Hình phạt kèm thích chữ để đánh dấu người phạm tội. Văn bản Quốc triều thông chế không còn.",
+ "example": "Hình phạt \"đồ\" thời Trần vừa trừng trị vừa tận dụng sức lao động của người phạm tội (cày ruộng công, nộp thóc). Đó là đặc điểm thực dụng của pháp luật phong kiến.",
+ "source": {
+  "kind": "primary",
+  "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển V (bản dịch Viện KHXH Việt Nam, NXB KHXH 1993), Kỷ nhà Trần, Thái Tông, năm 1230, tờ 6a",
+  "url": "https://thpthiephoa1.edu.vn/wp-content/uploads/Dai-viet-su-ki-toan-thu.pdf"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hinh-thu-1042",
+  "hinh-thu-thoi-tran",
+  "chuoc-toi-thap-ac"
+ ],
+ "keywords": [
+  "1230",
+  "Quốc triều thông chế",
+  "20 quyển",
+  "kế thừa luật triều trước",
+  "đồ: Cảo điền hoành, Lao thành binh"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Năm 1230, nhà Trần soạn bộ sách pháp luật nào theo Toàn thư?",
+   "options": [
+    "Quốc triều thông chế",
+    "Hình thư",
+    "Quốc triều hình luật",
+    "Hồng Đức thiện chính thư"
+   ],
+   "answer": 0,
+   "explain": "Toàn thư năm 1230. Hình thư (1042) thuộc nhà Lý.",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển V, tờ 6a"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Loại bị đồ \"Cảo điền hoành\" thời Trần phải làm gì?",
+   "options": [
+    "Thích 6 chữ vào mặt, ở Cảo xã cày ruộng công, nộp thóc",
+    "Thích 4 chữ vào cổ, dọn cỏ ở Phượng Thành",
+    "Bị lưu đày ra biên giới",
+    "Nộp tiền chuộc"
+   ],
+   "answer": 0,
+   "explain": "Toàn thư năm 1230; dọn cỏ Phượng Thành là loại Lao thành binh.",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển V, tờ 6a"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Cảo điền hoành",
+   "right": "Lao thành binh",
+   "cases": [
+    {
+     "text": "Thích vào mặt 6 chữ",
+     "answer": "left"
+    },
+    {
+     "text": "Thích vào cổ 4 chữ",
+     "answer": "right"
+    },
+    {
+     "text": "Cày ruộng công, mỗi năm nộp 300 thăng thóc",
+     "answer": "left"
+    },
+    {
+     "text": "Dọn cỏ ở Phượng Thành, lệ vào quân Tứ sương",
+     "answer": "right"
+    }
+   ],
+   "explain": "Toàn thư năm 1230."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Khảo xét các luật lệ của triều trước, soạn thành {{Quốc triều thông chế}} và sửa đổi hình luật lễ nghi, gồm {{20}} quyển.",
+   "bank_extra": [
+    "Hình thư",
+    "10"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Loại bị đồ làm Lao thành binh thì thích vào {{cổ}} 4 chữ.",
+   "bank_extra": [
+    "tay",
+    "lưng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Việc \"khảo xét các luật lệ của triều trước\" cho thấy nhà Trần có kế thừa pháp luật nhà Lý.",
+   "answer": true,
+   "explain": "Đúng. Đây là cách hiểu phổ biến dựa trên câu chữ Toàn thư năm 1230."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày hoạt động lập pháp năm 1230 của nhà Trần.",
+   "model": "Năm 1230, Trần Thái Tông khảo xét luật lệ triều trước, soạn Quốc triều thông chế, sửa đổi hình luật lễ nghi, gồm 20 quyển (kế thừa có chọn lọc pháp luật nhà Lý); định hình phạt đồ nhiều mức: Cảo điền hoành (thích 6 chữ vào mặt, cày ruộng công, nộp thóc), Lao thành binh (thích 4 chữ vào cổ, dọn cỏ thành Thăng Long). Văn bản nay không còn.",
+   "keywords": [
+    "1230",
+    "Quốc triều thông chế",
+    "20 quyển",
+    "đồ",
+    "thích chữ"
+   ]
+  }
+ ]
+}

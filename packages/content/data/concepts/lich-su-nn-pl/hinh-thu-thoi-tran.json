@@ -1,0 +1,122 @@
+{
+ "id": "hinh-thu-thoi-tran",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c6-trung-dai",
+ "term": "Hình thư và Hoàng triều đại điển thời Trần (1341)",
+ "definition": "Sai Trương Hán Siêu, Nguyễn Trung Ngạn làm biên soạn bộ Hoàng triều đại điển và khảo soạn bộ Hình thư để ban hành.",
+ "plain": "Năm 1341, khi Dụ Tông lên ngôi (6 tuổi), Thượng hoàng Minh Tông sai hai nhà nho Trương Hán Siêu, Nguyễn Trung Ngạn soạn HOÀNG TRIỀU ĐẠI ĐIỂN (điển chế, tổ chức triều đình) và khảo soạn HÌNH THƯ (luật hình) để ban hành. Đây là lần pháp điển hóa lớn thứ hai thời Trần sau Quốc triều thông chế (1230). Cả hai bộ sách đều KHÔNG còn. Lưu ý không nhầm với Hình thư thời Lý (1042).",
+ "example": "Sơ đồ ôn tập: Lý – Hình thư (1042); Trần – Quốc triều thông chế (1230), Hình thư (1341); Hậu Lê – Quốc triều hình luật; Nguyễn – Hoàng Việt luật lệ (1815).",
+ "source": {
+  "kind": "primary",
+  "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển VII (bản dịch Viện KHXH Việt Nam, NXB KHXH 1993), Kỷ nhà Trần, Hiến Tông – Dụ Tông, năm 1341, tờ 10b–11a",
+  "url": "https://thpthiephoa1.edu.vn/wp-content/uploads/Dai-viet-su-ki-toan-thu.pdf"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hinh-thu-1042",
+  "quoc-trieu-thong-che",
+  "thai-thuong-hoang"
+ ],
+ "keywords": [
+  "1341",
+  "Trương Hán Siêu, Nguyễn Trung Ngạn",
+  "Hoàng triều đại điển",
+  "Hình thư",
+  "không còn"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Năm 1341, ai được giao biên soạn Hoàng triều đại điển và khảo soạn Hình thư?",
+   "options": [
+    "Trương Hán Siêu, Nguyễn Trung Ngạn",
+    "Lê Văn Hưu, Ngô Sĩ Liên",
+    "Trần Thủ Độ, Trần Quốc Tuấn",
+    "Nguyễn Trãi, Lê Lợi"
+   ],
+   "answer": 0,
+   "explain": "Toàn thư năm 1341.",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển VII, tờ 11a"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hình thư thời Trần được soạn năm nào?",
+   "options": [
+    "1341",
+    "1042",
+    "1230",
+    "1483"
+   ],
+   "answer": 0,
+   "explain": "Năm 1341. 1042 là Hình thư thời Lý; 1230 là Quốc triều thông chế.",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển VII, tờ 11a"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hình thư thời Lý",
+   "right": "Hình thư thời Trần",
+   "cases": [
+    {
+     "text": "Ban hành năm 1042, triều Lý Thái Tông",
+     "answer": "left"
+    },
+    {
+     "text": "Khảo soạn năm 1341, do Trương Hán Siêu, Nguyễn Trung Ngạn",
+     "answer": "right"
+    },
+    {
+     "text": "Sau khi ban hành đổi niên hiệu Minh Đạo",
+     "answer": "left"
+    }
+   ],
+   "explain": "Toàn thư năm 1042 và 1341."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Sai Trương Hán Siêu, Nguyễn Trung Ngạn biên soạn bộ {{Hoàng triều đại điển}} và khảo soạn bộ {{Hình thư}} để ban hành.",
+   "bank_extra": [
+    "Quốc triều thông chế",
+    "Quốc triều hình luật"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Năm 1341, vua Dụ Tông lên ngôi khi mới {{6}} tuổi.",
+   "bank_extra": [
+    "16",
+    "10"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hình thư thời Trần còn lưu giữ đầy đủ đến nay.",
+   "answer": false,
+   "explain": "Sai. Hình thư thời Trần (cũng như Quốc triều thông chế) không còn; chỉ biết qua ghi chép của sử."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày hoạt động lập pháp thời Trần.",
+   "model": "Năm 1230 soạn Quốc triều thông chế, sửa đổi hình luật lễ nghi (20 quyển), định hình phạt đồ; năm 1237 quy định hình thức chúc thư, văn khế; năm 1341 Thượng hoàng sai Trương Hán Siêu, Nguyễn Trung Ngạn soạn Hoàng triều đại điển và khảo soạn Hình thư. Các bộ luật nay không còn.",
+   "keywords": [
+    "1230",
+    "Quốc triều thông chế",
+    "1237",
+    "1341",
+    "Hình thư"
+   ]
+  }
+ ]
+}

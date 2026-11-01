@@ -1,0 +1,117 @@
+{
+ "id": "muoi-hai-lo-1242",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c6-trung-dai",
+ "term": "Hành chính địa phương thời Trần: 12 lộ, xã quan",
+ "definition": "Mùa xuân, tháng 2, chia nước làm 12 lộ. Đặt chức an phủ, trấn phủ, có 2 viên chánh, phó để cai trị. Các xã, sách thì đặt chức đại, tiểu tư xã. Từ ngũ phẩm trở lên là đại tư xã, từ lục phẩm trở xuống là tiểu tư xã.",
+ "plain": "Năm 1242, nhà Trần chia nước làm 12 LỘ (thời Lý là 24 lộ), đứng đầu là An phủ sứ hoặc Trấn phủ sứ, mỗi nơi có 2 viên chánh, phó. Điểm mới quan trọng: nhà nước đặt quan ở cấp XÃ (đại tư xã, tiểu tư xã, gọi chung là \"xã quan\"), quan có phẩm hàm do triều đình cử. Như vậy chính quyền trung ương với xuống tận làng xã. Cùng năm làm sổ hộ khẩu, phân loại đinh nam để quản lý thuế, binh dịch.",
+ "example": "So sánh: nhà Lý chia 24 lộ (1010); nhà Trần chia 12 lộ (1242) và đặt xã quan; nhà Hậu Lê thời Lê Thánh Tông chia 13 đạo thừa tuyên.",
+ "source": {
+  "kind": "primary",
+  "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển V (bản dịch Viện KHXH Việt Nam, NXB KHXH 1993), Kỷ nhà Trần, Thái Tông, năm 1242, tờ 13a",
+  "url": "https://thpthiephoa1.edu.vn/wp-content/uploads/Dai-viet-su-ki-toan-thu.pdf"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hai-muoi-bon-lo",
+  "quoc-trieu-thong-che"
+ ],
+ "keywords": [
+  "1242",
+  "12 lộ",
+  "an phủ, trấn phủ",
+  "đại tư xã, tiểu tư xã",
+  "xã quan"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Năm 1242, nhà Trần chia nước làm bao nhiêu lộ?",
+   "options": [
+    "12 lộ",
+    "24 lộ",
+    "13 đạo",
+    "10 đạo"
+   ],
+   "answer": 0,
+   "explain": "Toàn thư năm 1242. 24 lộ là thời Lý (1010).",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển V, tờ 13a"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quan chức đặt ở cấp xã thời Trần gọi là gì?",
+   "options": [
+    "Đại tư xã, tiểu tư xã",
+    "Lạc tướng, Bồ chính",
+    "Thái thú",
+    "An phủ sứ"
+   ],
+   "answer": 0,
+   "explain": "\"Các xã, sách thì đặt chức đại, tiểu tư xã.\"",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển V, tờ 13a"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Đại tư xã",
+   "right": "Tiểu tư xã",
+   "cases": [
+    {
+     "text": "Quan từ ngũ phẩm trở lên",
+     "answer": "left"
+    },
+    {
+     "text": "Quan từ lục phẩm trở xuống",
+     "answer": "right"
+    }
+   ],
+   "explain": "Toàn thư năm 1242."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chia nước làm {{12}} lộ. Đặt chức {{an phủ}}, trấn phủ, có 2 viên chánh, phó để cai trị.",
+   "bank_extra": [
+    "24",
+    "thái thú"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Các xã, sách thì đặt chức đại, tiểu {{tư xã}}.",
+   "bank_extra": [
+    "lạc tướng",
+    "bồ chính"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thời Trần, triều đình đã cử quan có phẩm hàm xuống cai quản cấp xã.",
+   "answer": true,
+   "explain": "Đúng. Năm 1242 đặt đại tư xã (ngũ phẩm trở lên), tiểu tư xã (lục phẩm trở xuống)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày cải cách hành chính địa phương năm 1242 thời Trần.",
+   "model": "Năm 1242 chia nước làm 12 lộ, đặt An phủ, Trấn phủ (chánh, phó) cai trị; ở xã đặt đại tư xã (ngũ phẩm trở lên), tiểu tư xã (lục phẩm trở xuống), gọi là xã quan; làm sổ hộ khẩu. Ý nghĩa: tăng cường quản lý của trung ương xuống tận làng xã.",
+   "keywords": [
+    "1242",
+    "12 lộ",
+    "An phủ",
+    "tư xã",
+    "xã quan"
+   ]
+  }
+ ]
+}
