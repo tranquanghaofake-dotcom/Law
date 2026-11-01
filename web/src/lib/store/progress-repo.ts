@@ -2,6 +2,7 @@ import type { Level } from '$lib/content/types';
 import { isDue, newCard, ratingFor, review } from '$lib/engine/fsrs';
 import { nextLevel } from '$lib/engine/progress';
 import { LuyenLuatDB, type ConceptProgress, type ReviewRow } from './db';
+import { storage } from './status.svelte';
 
 export type { ConceptProgress };
 
@@ -44,6 +45,19 @@ function applyRecord(prev: ConceptProgress | undefined, p: RecordInput): { next:
   return { next, row };
 }
 
+type ExportFile = { v: number; concepts?: ConceptProgress[]; reviews?: ReviewRow[]; stats?: { key: string; value: unknown }[]; settings?: { key: string; value: unknown }[] };
+
+/** Kiểm tra file xuất trước khi ghi: sai định dạng thì ném lỗi, KHÔNG đụng dữ liệu hiện có. */
+export function parseExport(json: string): ExportFile {
+  const d = JSON.parse(json) as Partial<ExportFile>;
+  if (!d || typeof d !== 'object' || d.v !== 1) throw new Error('File không đúng định dạng Luyện Luật (thiếu v=1).');
+  for (const c of d.concepts ?? []) {
+    if (typeof c.conceptId !== 'string' || typeof c.subject !== 'string' || typeof c.level !== 'number' || !c.card || c.card.due == null)
+      throw new Error(`Khái niệm '${(c as { conceptId?: string }).conceptId ?? '?'}' trong file thiếu trường bắt buộc.`);
+  }
+  return d as ExportFile;
+}
+
 function memoryRepo(): ProgressRepo {
   const s: Store = { concepts: new Map(), reviews: [] };
   const list = (subject?: string) => [...s.concepts.values()].filter((c) => !subject || c.subject === subject);
@@ -63,8 +77,8 @@ function memoryRepo(): ProgressRepo {
     async reviewCount() { return s.reviews.length; },
     async exportAll() { return JSON.stringify({ v: 1, concepts: list(), reviews: s.reviews }); },
     async importAll(json) {
-      const d = JSON.parse(json) as { concepts: ConceptProgress[]; reviews: ReviewRow[] };
-      s.concepts = new Map(d.concepts.map((c) => [c.conceptId, c]));
+      const d = parseExport(json);
+      s.concepts = new Map((d.concepts ?? []).map((c) => [c.conceptId, c]));
       s.reviews = d.reviews ?? [];
     },
     async clear() { s.concepts.clear(); s.reviews = []; },
@@ -99,7 +113,7 @@ function dexieRepo(db: LuyenLuatDB): ProgressRepo {
       return JSON.stringify({ v: 1, concepts, reviews, stats, settings });
     },
     async importAll(json) {
-      const d = JSON.parse(json) as { concepts?: ConceptProgress[]; reviews?: ReviewRow[]; stats?: { key: string; value: unknown }[]; settings?: { key: string; value: unknown }[] };
+      const d = parseExport(json);
       await db.transaction('rw', db.concepts, db.reviews, db.stats, db.settings, async () => {
         if (d.concepts) await db.concepts.bulkPut(d.concepts.map((c) => ({ ...c, card: { ...c.card, due: new Date(c.card.due), last_review: c.card.last_review ? new Date(c.card.last_review) : undefined } })));
         if (d.reviews) await db.reviews.bulkPut(d.reviews);
@@ -111,9 +125,21 @@ function dexieRepo(db: LuyenLuatDB): ProgressRepo {
   };
 }
 
+/** Lỗi cho thấy IndexedDB không dùng được (bị chặn, không có API); lỗi khác là lỗi dữ liệu → ném ra ngoài. */
+const OPEN_FAILURES = new Set(['OpenFailedError', 'MissingAPIError', 'InvalidStateError', 'SecurityError', 'UnknownError', 'DatabaseClosedError']);
+function isStorageFailure(err: unknown): boolean {
+  const name = (err as { name?: string } | null)?.name ?? '';
+  const inner = (err as { inner?: { name?: string } } | null)?.inner?.name ?? '';
+  return OPEN_FAILURES.has(name) || OPEN_FAILURES.has(inner);
+}
+
+function hasIndexedDB(): boolean {
+  try { return typeof indexedDB !== 'undefined' && indexedDB !== null; } catch { return false; }
+}
+
 /** Tạo kho tiến độ; tự chuyển sang bộ nhớ nếu IndexedDB không dùng được. */
 export function createRepo(name = 'luyen-luat'): ProgressRepo {
-  if (typeof indexedDB === 'undefined' || indexedDB === null) return memoryRepo();
+  if (!hasIndexedDB()) { storage.available = false; return memoryRepo(); }
   try {
     const db = new LuyenLuatDB(name);
     const real = dexieRepo(db);
@@ -137,9 +163,10 @@ export function createRepo(name = 'luyen-luat'): ProgressRepo {
       try {
         return await fn();
       } catch (err) {
-        if (target === real) {
+        if (target === real && isStorageFailure(err)) {
           console.warn('[luyen-luat] IndexedDB không dùng được, chuyển sang bộ nhớ tạm:', err);
           target = mem;
+          storage.available = false;
           return fn();
         }
         throw err;
@@ -147,6 +174,7 @@ export function createRepo(name = 'luyen-luat'): ProgressRepo {
     }
     return proxy;
   } catch {
+    storage.available = false;
     return memoryRepo();
   }
 }

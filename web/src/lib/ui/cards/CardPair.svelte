@@ -24,7 +24,7 @@
       else {
         finished = true;
         const wrong = marks.filter((m) => !m).length;
-        onanswer({ correct: wrong === 0, elapsedMs: Date.now() - start, chosen: `${marks.length - wrong}/${marks.length}` });
+        onanswer({ correct: wrong === 0, elapsedMs: Math.round((Date.now() - start) / cases.length), chosen: `${marks.length - wrong}/${marks.length}` });
       }
     }, 450);
   }

@@ -198,3 +198,5 @@ kbd { font: 600 11px/1 var(--font-ui); background: rgba(255,255,255,.18); border
 .levels .n { font-size: 12px; font-weight: 700; }
 .settings .setting { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--line); }
 .settings select, .settings input[type="range"] { font: inherit; }
+
+.banner { max-width: 1100px; margin: 0 auto 8px; padding: 10px 16px; border-radius: 12px; background: var(--bad-bg); color: var(--ink); border: 1px solid var(--bad); font-size: 14px; }

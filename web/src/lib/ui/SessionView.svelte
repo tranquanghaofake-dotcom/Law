@@ -1,6 +1,6 @@
 <script lang="ts">
   import type { Concept, Level } from '$lib/content/types';
-  import type { Step } from '$lib/engine/session';
+  import { clozeModeFor, type Step } from '$lib/engine/session';
   import { answer as runAnswer, createRunner, next as runNext, summary, type RunnerState } from '$lib/engine/runner';
   import { repo } from '$lib/store/progress-repo';
   import { stats } from '$lib/store/stats';
@@ -11,7 +11,7 @@
   import { sfx } from '$lib/fx/sfx';
   import { burst } from '$lib/fx/confetti';
   import { buzz } from '$lib/fx/haptics';
-  import { tts } from '$lib/fx/tts';
+  import { tts } from '$lib/fx/tts.svelte';
   import { createReveal } from '$lib/fx/reveal.svelte';
   import { refreshHeader } from '$lib/ui/header.svelte';
   import { cardFor, type AnswerResult } from '$lib/ui/cards';
@@ -30,7 +30,7 @@
   // svelte-ignore state_referenced_locally
   let run = $state<RunnerState>(createRunner(steps, levels));
   // svelte-ignore state_referenced_locally
-  const reveal = createReveal(Math.max(12, steps.length));
+  const reveal = createReveal(Math.max(12, steps.filter((s) => s.item.type !== 'intro').length));
   let result = $state<AnswerResult | null>(null);
   let ended = $state<null | { streak: number; streakEvent: StreakEvent; rankBefore: RankInfo; rankAfter: RankInfo; dueTomorrow: number }>(null);
   let confirmExit = $state(false);
@@ -42,7 +42,8 @@
   const Card = $derived(step ? cardFor(step.item) : null);
   const confusableTerms = $derived(concept ? concept.confusables.map((id) => concepts.find((c) => c.id === id)?.term ?? id) : []);
   const speak = $derived(settings.tts && tts.available ? (t: string) => tts.speak(t) : undefined);
-  const clozeMode = $derived((run.levels[step?.conceptId] ?? 0) <= 3 ? 'bank' : 'type');
+  // chốt chế độ cloze theo bậc lúc BẮT ĐẦU bước (không đổi khi đang xem phản hồi)
+  const clozeMode = $derived.by(() => { const i = run.i; return clozeModeFor((run.results[i] ? run.results[i].levelBefore : run.levels[run.steps[i]?.conceptId]) ?? 0); });
 
   sfx.preload();
 

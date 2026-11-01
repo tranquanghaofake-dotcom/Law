@@ -6,6 +6,7 @@
   const start = Date.now();
   let text = $state('');
   let revealed = $state(false);
+  let thinkMs = 0; // thời gian viết bài, tính tới lúc Xem đáp án (không tính lúc đọc đáp án và tự chấm)
   let graded = $state(false);
   const grade = $derived(gradeRecall(text, item.keywords));
 
@@ -26,11 +27,11 @@
   // từ khóa trúng theo normalize nhưng tô theo nguyên văn: so khớp không phân biệt hoa thường
   const hitSegments = $derived(segments(text, grade.hits.filter((h) => normalize(text).includes(normalize(h)))));
 
-  function reveal() { revealed = true; }
+  function reveal() { thinkMs = Date.now() - start; revealed = true; }
   function self(g: 'dung' | 'gan' | 'sai') {
     if (graded) return;
     graded = true;
-    onanswer({ correct: g !== 'sai', elapsedMs: Date.now() - start, selfGrade: g, chosen: text });
+    onanswer({ correct: g !== 'sai', elapsedMs: thinkMs, selfGrade: g, chosen: text });
   }
 </script>
 

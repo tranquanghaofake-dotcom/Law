@@ -14,8 +14,8 @@ export const settings: Settings = $state({ ...DEFAULT_SETTINGS });
 
 let db: LuyenLuatDB | null = null;
 function getDb(): LuyenLuatDB | null {
-  if (typeof indexedDB === 'undefined') return null;
   try {
+    if (typeof indexedDB === 'undefined') return null;
     db ??= new LuyenLuatDB();
     return db;
   } catch {

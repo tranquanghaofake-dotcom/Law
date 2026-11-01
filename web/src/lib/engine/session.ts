@@ -36,8 +36,22 @@ export function pickItem(concept: Concept, level: Level, rng: () => number): Ite
   return pool[0];
 }
 
-function stageSteps(concepts: Concept[], level: Level, rng: () => number): Step[] {
-  return shuffle(concepts, rng).map((c) => ({ conceptId: c.id, item: pickItem(c, level, rng), level }));
+/** Bậc của bước cho một khái niệm: không thấp hơn bậc hiện tại của nó (đợt lẫn bậc không kéo khái niệm cao về thấp). */
+function stepLevel(stage: Level, current: Level): Level {
+  return (current > stage ? current : stage) as Level;
+}
+
+function stageSteps(concepts: Concept[], stage: Level, levels: Record<string, Level>, rng: () => number): Step[] {
+  return shuffle(concepts, rng).map((c) => {
+    const level = stepLevel(stage, (levels[c.id] ?? 0) as Level);
+    const item = pickItem(c, level, rng);
+    return { conceptId: c.id, item, level: level === 6 ? item.level : level }; // bậc 6 → bậc thật của item đã chọn
+  });
+}
+
+/** Chế độ cloze: lần đầu (bậc < 3) chọn từ ngân hàng; đã qua bậc 3 thì gõ (spec 2.2). */
+export function clozeModeFor(level: Level): 'bank' | 'type' {
+  return level >= 3 ? 'type' : 'bank';
 }
 
 /**
@@ -52,13 +66,17 @@ export function buildLearnSession(concepts: Concept[], levels: Record<string, Le
     const blockSize = order.length <= 3 ? order.length : order.length === 4 ? 2 : 3;
     for (let i = 0; i < order.length; i += blockSize) {
       const block = order.slice(i, i + blockSize);
-      for (const c of block) steps.push({ conceptId: c.id, item: { type: 'intro' }, level: 0 });
-      for (const c of shuffle(block, rng)) steps.push({ conceptId: c.id, item: pickItem(c, 1, rng), level: 1 });
+      for (const c of block) if ((levels[c.id] ?? 0) === 0) steps.push({ conceptId: c.id, item: { type: 'intro' }, level: 0 });
+      for (const c of shuffle(block, rng)) {
+        const level = stepLevel(1, (levels[c.id] ?? 0) as Level);
+        const item = pickItem(c, level, rng);
+        steps.push({ conceptId: c.id, item, level: level === 6 ? item.level : level });
+      }
     }
     return steps;
   }
   const [a, b]: [Level, Level] = pass === 2 ? [2, 3] : [4, 5];
-  return [...stageSteps(concepts, a, rng), ...stageSteps(concepts, b, rng)];
+  return [...stageSteps(concepts, a, levels, rng), ...stageSteps(concepts, b, levels, rng)];
 }
 
 /** Ôn: mỗi khái niệm 1 bước ở bậc hiện tại (bậc 6 → ngẫu nhiên 1–5), tối đa `max`. */

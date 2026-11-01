@@ -31,3 +31,22 @@ describe('nội dung Luật Hiến pháp', () => {
     }
   });
 });
+
+describe('nguyên văn (I6)', () => {
+  const law = readFileSync(join(root, '..', '..', 'archive', 'legal-content-pipeline', 'data', 'laws', 'hien-phap-2013.txt'), 'utf8');
+  const norm = (s: string) => s.normalize('NFC').replace(/\\\./g, '.').replace(/\s+/g, ' ').replace(/hoà/g, 'hòa').replace(/Hoà/g, 'Hòa').trim();
+  const lawN = norm(law);
+  it('mọi definition kiểu statute xuất hiện nguyên văn trong toàn văn Hiến pháp (từng câu)', () => {
+    for (const f of files) {
+      const c = JSON.parse(readFileSync(join(dir, f), 'utf8'));
+      for (const sentence of norm(c.definition).split(/(?<=\.)\s+/)) {
+        expect(lawN, `${f}: "${sentence}"`).toContain(sentence);
+      }
+    }
+  });
+  it('ví dụ về bảo vệ Hiến pháp không gán cho UBTVQH quyền bãi bỏ văn bản của Chính phủ', () => {
+    const c = JSON.parse(readFileSync(join(dir, 'bao-ve-hien-phap.json'), 'utf8'));
+    expect(c.example).not.toMatch(/thường vụ Quốc hội đình chỉ, bãi bỏ/);
+    expect(c.example).toMatch(/Điều 74/);
+  });
+});

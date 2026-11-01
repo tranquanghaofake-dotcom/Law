@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import type { Concept, Level } from '$lib/content/types';
-import { buildLearnSession, buildReviewSession, passFor, pickItem } from '$lib/engine/session';
+import { buildLearnSession, buildReviewSession, clozeModeFor, passFor, pickItem } from '$lib/engine/session';
 
 function concept(id: string): Concept {
   return {
@@ -72,5 +72,22 @@ describe('pickItem', () => {
     const c = concept('z');
     c.items = c.items.filter((i) => i.level !== 5);
     expect(pickItem(c, 5, rng).level).toBe(4);
+  });
+});
+
+describe('đợt có bậc lẫn lộn (I3)', () => {
+  it('khái niệm bậc cao không nhận intro và không bị kéo về bậc thấp', () => {
+    const lv = { a: 0, b: 3, c: 0, d: 0, e: 6 } as Record<string, Level>;
+    const steps = buildLearnSession(concepts, lv, rng);
+    expect(steps.filter((s) => s.item.type === 'intro').map((s) => s.conceptId).sort()).toEqual(['a', 'c', 'd']);
+    expect(steps.find((s) => s.conceptId === 'b' && s.item.type !== 'intro')!.level).toBe(3);
+    const e = steps.find((s) => s.conceptId === 'e')!;
+    expect(e.level).toBeGreaterThanOrEqual(1);
+    expect(e.level).toBeLessThanOrEqual(5);
+  });
+  it('clozeModeFor: bậc < 3 ngân hàng từ, từ bậc 3 gõ', () => {
+    expect(clozeModeFor(2)).toBe('bank');
+    expect(clozeModeFor(3)).toBe('type');
+    expect(clozeModeFor(6)).toBe('type');
   });
 });

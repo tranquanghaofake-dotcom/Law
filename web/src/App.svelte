@@ -10,6 +10,7 @@
   import Profile from './routes/Profile.svelte';
   import Settings from './routes/Settings.svelte';
   import { header } from '$lib/ui/header.svelte';
+  import { storage } from '$lib/store/status.svelte';
 
   const views = { home: Home, lesson: Lesson, review: Review, quiz: Quiz10, profile: Profile, settings: Settings } as const;
   const View = $derived(views[route.name]);
@@ -33,6 +34,9 @@
     </nav>
   {/if}
 </header>
+{#if !storage.available}
+  <p class="banner" role="alert">⚠ Trình duyệt đang chặn lưu trữ (chế độ riêng tư?). Bạn vẫn học được nhưng tiến độ sẽ mất khi đóng tab.</p>
+{/if}
 <main class="layout" class:with-aside={route.name === 'lesson' || route.name === 'review'} id="main" tabindex="-1">
   <View />
 </main>

@@ -6,18 +6,20 @@ const PREFERRED = ['HoaiMy', 'NamMinh', 'Linh', 'Vietnam', 'Việt'];
 export function createTts(): Tts {
   const synth: SpeechSynthesis | undefined = typeof speechSynthesis !== 'undefined' ? speechSynthesis : undefined;
   let voice: SpeechSynthesisVoice | null = null;
+  const st = $state({ available: false });
 
   function pick(): void {
     if (!synth) return;
     const vi = synth.getVoices().filter((v) => v.lang.toLowerCase().startsWith('vi'));
     voice = vi.find((v) => PREFERRED.some((p) => v.name.includes(p))) ?? vi[0] ?? null;
+    st.available = !!voice;
   }
   pick();
   // Chrome nạp danh sách giọng bất đồng bộ.
   synth?.addEventListener?.('voiceschanged', pick);
 
   return {
-    get available() { return !!voice; },
+    get available() { return st.available; },
     refresh: pick,
     speak(text) {
       if (!synth || !voice) return;

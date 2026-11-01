@@ -5,8 +5,8 @@ import type { StreakState } from '$lib/game/streak';
 export const header = $state({ xp: 0, streak: 0 });
 
 export async function refreshHeader(): Promise<void> {
-  if (typeof indexedDB === 'undefined') return;
   try {
+    if (typeof indexedDB === 'undefined') return;
     const db = new LuyenLuatDB();
     const [xp, streak] = await Promise.all([db.stats.get('xp'), db.stats.get('streak')]);
     header.xp = Number(xp?.value ?? 0);

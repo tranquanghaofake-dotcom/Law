@@ -1,16 +1,16 @@
 <script lang="ts">
   import { settings, saveSetting } from '$lib/store/settings.svelte';
   import { repo } from '$lib/store/progress-repo';
-  import { tts } from '$lib/fx/tts';
+  import { storage } from '$lib/store/status.svelte';
+  import { tts } from '$lib/fx/tts.svelte';
   import { sfx } from '$lib/fx/sfx';
   document.title = 'Cài đặt · Luyện Luật';
-  let ttsOk = $state(tts.available);
-  $effect(() => { const t = setInterval(() => { tts.refresh(); ttsOk = tts.available; }, 500); const stop = setTimeout(() => clearInterval(t), 3000); return () => { clearInterval(t); clearTimeout(stop); }; });
+  const ttsOk = $derived(tts.available);
 </script>
 
 <section class="card settings">
   <h1>Cài đặt</h1>
-  {#if !repo.available}<p class="muted">⚠ Trình duyệt đang chặn lưu trữ (chế độ riêng tư?). Tiến độ sẽ không được lưu.</p>{/if}
+  {#if !storage.available}<p class="muted">⚠ Trình duyệt đang chặn lưu trữ (chế độ riêng tư?). Tiến độ sẽ không được lưu.</p>{/if}
   <label class="setting"><span>Âm thanh</span><input type="checkbox" checked={settings.sound} onchange={(e) => { saveSetting('sound', e.currentTarget.checked); if (e.currentTarget.checked) sfx.play('select'); }} /></label>
   <label class="setting"><span>Đọc đáp án (giọng vi-VN của trình duyệt)</span><input type="checkbox" checked={settings.tts} onchange={(e) => saveSetting('tts', e.currentTarget.checked)} /></label>
   {#if ttsOk}<button class="btn ghost" type="button" onclick={() => tts.speak('Hiến pháp là luật cơ bản của nước Cộng hòa xã hội chủ nghĩa Việt Nam.')}>Nghe thử</button>

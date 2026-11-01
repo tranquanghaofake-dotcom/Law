@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it, vi } from 'vitest';
-import { createTts } from '$lib/fx/tts';
+import { createTts } from '$lib/fx/tts.svelte';
 
 function fakeSynth(voices: { lang: string; name: string }[]) {
   const speak = vi.fn();
@@ -39,5 +39,18 @@ describe('tts', () => {
     const tts = createTts();
     expect(tts.available).toBe(false);
     expect(() => tts.speak('x')).not.toThrow();
+  });
+});
+
+describe('tts — reactive khi voiceschanged (I5)', () => {
+  it('available chuyển true sau khi danh sách giọng nạp muộn', () => {
+    let voices: any[] = [];
+    let handler: (() => void) | null = null;
+    (globalThis as any).speechSynthesis = { getVoices: () => voices, speak: vi.fn(), cancel: vi.fn(), addEventListener: (_: string, h: () => void) => { handler = h; } };
+    const tts = createTts();
+    expect(tts.available).toBe(false);
+    voices = [{ lang: 'vi-VN', name: 'Linh' }];
+    handler!();
+    expect(tts.available).toBe(true);
   });
 });

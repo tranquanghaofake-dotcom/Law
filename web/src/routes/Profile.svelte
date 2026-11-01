@@ -2,6 +2,7 @@
   import type { ContentIndex, Level } from '$lib/content/types';
   import { loadIndex, loadSubject } from '$lib/content/loader';
   import { repo } from '$lib/store/progress-repo';
+  import { storage } from '$lib/store/status.svelte';
   import { stats, EMPTY_STREAK } from '$lib/store/stats';
   import { gradeFor, rankFor, RANKS } from '$lib/game/rank';
   import type { StreakState } from '$lib/game/streak';
@@ -79,5 +80,5 @@
     <label class="btn ghost">Nhập dữ liệu<input type="file" accept="application/json" class="sr-only" onchange={importData} /></label>
   </div>
   {#if msg}<p role="status">{msg}</p>{/if}
-  {#if !repo.available}<p class="muted">⚠ Trình duyệt đang chặn lưu trữ: tiến độ sẽ mất khi đóng tab.</p>{/if}
+  {#if !storage.available}<p class="muted">⚠ Trình duyệt đang chặn lưu trữ: tiến độ sẽ mất khi đóng tab.</p>{/if}
 </section>

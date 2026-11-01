@@ -1,5 +1,6 @@
 import { beforeEach, describe, expect, it } from 'vitest';
 import { IDBFactory } from 'fake-indexeddb';
+import Dexie from 'dexie';
 import { createRepo } from '$lib/store/progress-repo';
 
 const now = new Date('2026-11-01T08:00:00Z');
@@ -60,5 +61,35 @@ describe('progress repo (không có IndexedDB)', () => {
     expect(repo.available).toBe(false);
     expect(p.level).toBe(1);
     expect(await repo.levels(['a'])).toEqual({ a: 1 });
+  });
+});
+
+describe('progress repo — fallback chỉ khi IndexedDB không mở được (C1/I2)', () => {
+  it('importAll file hỏng → ném lỗi, KHÔNG chuyển sang bộ nhớ, dữ liệu cũ còn', async () => {
+    (globalThis as any).indexedDB = new IDBFactory();
+    const repo = createRepo('t7');
+    await repo.record({ conceptId: 'a', subject: 'hp', correct: true, elapsedMs: 3000, now });
+    await expect(repo.importAll('không phải json')).rejects.toThrow();
+    await expect(repo.importAll(JSON.stringify({ concepts: [{ conceptId: 'x' }] }))).rejects.toThrow();
+    expect(repo.available).toBe(true);
+    expect((await repo.get('a'))?.level).toBe(1);
+    await repo.record({ conceptId: 'b', subject: 'hp', correct: true, elapsedMs: 3000, now });
+    // ghi mới vẫn vào IndexedDB: repo khác cùng tên DB đọc được
+    expect((await createRepo('t7').get('b'))?.level).toBe(1);
+  });
+  it('open() thất bại lúc chạy → chuyển sang bộ nhớ và storage.available=false', async () => {
+    const f = new IDBFactory();
+    f.open = (() => { throw new DOMException('blocked', 'SecurityError'); }) as any;
+    (globalThis as any).indexedDB = f;
+    const saved = Dexie.dependencies.indexedDB;
+    Dexie.dependencies.indexedDB = f as any; // Dexie giữ tham chiếu indexedDB lúc nạp module
+    const { storage } = await import('$lib/store/status.svelte');
+    storage.available = true;
+    const repo = createRepo('t8');
+    const p = await repo.record({ conceptId: 'a', subject: 'hp', correct: true, elapsedMs: 3000, now });
+    expect(p.level).toBe(1);
+    expect(repo.available).toBe(false);
+    expect(storage.available).toBe(false);
+    Dexie.dependencies.indexedDB = saved;
   });
 });

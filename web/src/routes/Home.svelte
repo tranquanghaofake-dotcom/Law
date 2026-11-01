@@ -5,8 +5,7 @@
   import { stats } from '$lib/store/stats';
   import { gradeFor } from '$lib/game/rank';
   import SubjectPath from '$lib/ui/SubjectPath.svelte';
-
-  const GROUPS: Record<string, string> = { pldc: 'Pháp luật đại cương', 'dan-su': 'Luật Dân sự', 'lao-dong': 'Luật Lao động', 'hinh-su': 'Luật Hình sự', 'hien-phap': 'Luật Hiến pháp' };
+  import { GROUPS, sortGroups } from '$lib/ui/groups';
 
   let index = $state<ContentIndex | null>(null);
   let subjects = $state<Subject[]>([]);
@@ -46,8 +45,7 @@
   const groups = $derived.by(() => {
     const m = new Map<string, ContentIndex['sets']>();
     for (const s of index?.sets ?? []) m.set(s.group, [...(m.get(s.group) ?? []), s]);
-    const order = Object.keys(GROUPS);
-    return [...m.entries()].sort((a, b) => (order.indexOf(a[0]) + 99) % 100 - (order.indexOf(b[0]) + 99) % 100);
+    return sortGroups([...m.entries()]);
   });
 </script>
 
