@@ -86,3 +86,49 @@ h2 { font-size: 20px; font-weight: 700; margin: 24px 0 10px; }
 .session-bar .progress span { display: block; height: 100%; background: var(--accent); transition: width .25s ease; }
 .session-bar .exit { background: none; border: 1px solid var(--line); border-radius: 10px; padding: 6px 10px; cursor: pointer; }
 .session-bar .count { font-size: 13px; color: var(--muted); min-width: 48px; text-align: right; }
+
+/* ---- Thẻ bài tập ---- */
+.kicker { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 0 0 8px; font-weight: 600; }
+.concept-card .term { font-size: 28px; margin: 0 0 8px; display: flex; align-items: center; gap: 10px; }
+.concept-card .plain { font-size: 17px; margin: 8px 0; }
+.concept-card .example { color: var(--muted); margin: 8px 0 12px; }
+.source { font-size: 13px; }
+.speak { background: none; border: 1px solid var(--line); border-radius: 999px; width: 34px; height: 34px; cursor: pointer; font-size: 15px; }
+.question { font-size: 19px; font-weight: 600; line-height: 1.45; margin: 0 0 16px; }
+.options { display: grid; gap: 10px; }
+.options.two { grid-template-columns: 1fr 1fr; }
+.options.three { grid-template-columns: repeat(3, 1fr); }
+.opt { display: flex; align-items: center; gap: 12px; text-align: left; min-height: 48px; padding: 12px 14px; border-radius: 12px; border: 1px solid var(--line); background: var(--card); cursor: pointer; transition: transform .12s ease, border-color .12s ease, background .12s ease; }
+.opt:hover:not(:disabled) { border-color: var(--accent); transform: translateY(-1px); }
+.opt .key { display: inline-grid; place-items: center; width: 26px; height: 26px; border-radius: 7px; background: var(--paper); color: var(--muted); font-size: 12px; font-weight: 700; flex: none; }
+.opt.correct { border-color: var(--ok); background: var(--ok-bg); animation: pop .35s ease; }
+.opt.wrong { border-color: var(--bad); background: var(--bad-bg); animation: shake .35s ease; }
+.opt.dim { opacity: .45; }
+.opt:disabled { cursor: default; }
+@keyframes pop { 0% { transform: scale(1); } 40% { transform: scale(1.03); } 100% { transform: scale(1); } }
+@keyframes shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-6px); } 75% { transform: translateX(6px); } }
+.marks { margin: 12px 0 0; letter-spacing: 4px; }
+.marks .ok { color: var(--ok); } .marks .bad { color: var(--bad); }
+.cloze-text { line-height: 2; }
+.blank, .blank-input { display: inline-block; min-width: 90px; margin: 0 2px; padding: 2px 10px; border-radius: 8px; border: 1px dashed var(--muted); background: var(--paper); font: inherit; color: inherit; vertical-align: baseline; }
+.blank.filled { border-style: solid; border-color: var(--accent); cursor: pointer; }
+.blank-input { border-style: solid; border-color: var(--line); max-width: 100%; }
+.blank.correct, .blank-input.correct { border-color: var(--ok); background: var(--ok-bg); }
+.blank.wrong, .blank-input.wrong { border-color: var(--bad); background: var(--bad-bg); }
+.bank { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 16px; }
+.word { padding: 8px 14px; border-radius: 999px; border: 1px solid var(--line); background: var(--card); cursor: pointer; }
+.word:disabled { opacity: .35; cursor: default; }
+.recall textarea { width: 100%; font: inherit; padding: 12px; border-radius: 12px; border: 1px solid var(--line); background: var(--paper); color: inherit; resize: vertical; margin-bottom: 12px; }
+.recall mark { background: color-mix(in srgb, var(--ok) 25%, transparent); color: inherit; border-radius: 3px; padding: 0 2px; }
+.kw.ok { color: var(--ok); font-weight: 600; } .kw.bad { color: var(--bad); text-decoration: line-through; }
+kbd { font: 600 11px/1 var(--font-ui); background: rgba(255,255,255,.18); border-radius: 4px; padding: 3px 5px; margin-left: 4px; }
+.btn.primary kbd { background: rgba(0,0,0,.12); }
+
+/* ---- Phản hồi ---- */
+.feedback { margin-top: 16px; padding: 16px; border-radius: var(--radius); border: 1px solid var(--line); background: var(--card); animation: rise .3s ease; }
+.feedback.ok { border-color: var(--ok); } .feedback.bad { border-color: var(--bad); }
+.feedback .verdict { font-weight: 700; margin: 0 0 8px; display: flex; align-items: center; gap: 10px; }
+.feedback.ok .verdict { color: var(--ok); } .feedback.bad .verdict { color: var(--bad); }
+.feedback p { margin: 0 0 8px; }
+.feedback .btn { margin-top: 8px; width: 100%; }
+@keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
