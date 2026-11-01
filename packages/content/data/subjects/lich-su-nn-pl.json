@@ -1,0 +1,174 @@
+{
+  "id": "lich-su-nn-pl",
+  "title": "Lịch sử Nhà nước và Pháp luật Việt Nam",
+  "short": "LSNN&PL",
+  "chapters": [
+    {
+      "id": "c5-co-dai",
+      "title": "Chương 5. Nhà nước và pháp luật Việt Nam thời kì cổ đại (từ nguồn gốc đến thế kỉ X)",
+      "lessons": [
+        {
+          "id": "ls5-1",
+          "title": "Nhà nước và pháp luật Văn Lang – Âu Lạc",
+          "concepts": [
+            "dieu-kien-ra-doi-nha-nuoc-van-lang",
+            "nha-nuoc-van-lang",
+            "lac-hau-lac-tuong-bo-chinh",
+            "nha-nuoc-au-lac",
+            "phap-luat-van-lang-au-lac"
+          ]
+        },
+        {
+          "id": "ls5-2",
+          "title": "Thời kì Bắc thuộc (179 TCN – 938)",
+          "concepts": [
+            "chinh-quyen-do-ho-quan-huyen",
+            "chinh-sach-dong-hoa",
+            "khoi-nghia-hai-ba-trung",
+            "nha-nuoc-van-xuan",
+            "chinh-quyen-tu-chu-ho-khuc"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c6-trung-dai",
+      "title": "Chương 6. Nhà nước và pháp luật Việt Nam thời kì trung đại (thế kỉ X – XIX)",
+      "lessons": [
+        {
+          "id": "ls6-1",
+          "title": "Nhà nước và pháp luật thời Ngô – Đinh – Tiền Lê",
+          "concepts": [
+            "ngo-quyen-xung-vuong",
+            "dinh-dai-co-viet",
+            "quan-che-nha-dinh",
+            "phap-luat-nha-dinh",
+            "tien-le-dinh-luat-le"
+          ]
+        },
+        {
+          "id": "ls6-2",
+          "title": "Nhà nước và pháp luật thời Lý",
+          "concepts": [
+            "dinh-do-thang-long",
+            "hai-muoi-bon-lo",
+            "lau-chuong-kien-tung",
+            "hinh-thu-1042",
+            "chuoc-toi-thap-ac"
+          ]
+        },
+        {
+          "id": "ls6-3",
+          "title": "Nhà nước và pháp luật thời Trần",
+          "concepts": [
+            "quoc-trieu-thong-che",
+            "chuc-thu-van-khe-1237",
+            "muoi-hai-lo-1242",
+            "thai-thuong-hoang",
+            "hinh-thu-thoi-tran"
+          ]
+        },
+        {
+          "id": "ls6-4",
+          "title": "Pháp luật thời Hậu Lê: Quốc triều hình luật",
+          "concepts": [
+            "ngu-hinh-qthl",
+            "thap-ac-qthl",
+            "bat-nghi-qthl",
+            "chuoc-toi-gia-tre-qthl",
+            "huong-hoa-qthl",
+            "bao-ve-nguoi-yeu-the-qthl"
+          ]
+        },
+        {
+          "id": "ls6-5",
+          "title": "Bộ máy nhà nước thời Lê Thánh Tông",
+          "concepts": [
+            "luc-bo-1466",
+            "thua-tuyen-1466",
+            "hoang-trieu-quan-che-1471",
+            "luc-khoa-giam-sat"
+          ]
+        },
+        {
+          "id": "ls6-6",
+          "title": "Nhà nước và pháp luật thời Nguyễn (tóm lược giáo trình)",
+          "concepts": [
+            "bo-may-nha-nguyen",
+            "minh-mang-cai-cach-tinh",
+            "hoang-viet-luat-le",
+            "quoc-trieu-hinh-luat-vs-hoang-viet"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c7-can-dai",
+      "title": "Chương 7. Nhà nước và pháp luật Việt Nam thời kì cận đại (1884–1945)",
+      "lessons": [
+        {
+          "id": "ls7-1",
+          "title": "Bộ máy cai trị thời Pháp thuộc (tóm lược giáo trình)",
+          "concepts": [
+            "che-do-bao-ho-ba-ky",
+            "lien-bang-dong-duong"
+          ]
+        },
+        {
+          "id": "ls7-2",
+          "title": "Pháp luật thời Pháp thuộc (qua Sắc lệnh 47)",
+          "concepts": [
+            "phap-luat-thoi-phap-thuoc-dan-luat",
+            "phap-luat-thoi-phap-thuoc-hinh-luat"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c8-hien-dai",
+      "title": "Chương 8. Nhà nước và pháp luật Việt Nam thời kì hiện đại (1945 đến nay)",
+      "lessons": [
+        {
+          "id": "ls8-1",
+          "title": "Pháp luật giai đoạn 1945–1954",
+          "concepts": [
+            "sac-lenh-47-luat-cu",
+            "sac-lenh-63-chinh-quyen",
+            "sac-lenh-13-toa-an",
+            "sac-lenh-97-dan-luat",
+            "sac-lenh-97-khe-uoc"
+          ]
+        },
+        {
+          "id": "ls8-2",
+          "title": "Pháp luật 1954–1990: hôn nhân gia đình và doanh nghiệp",
+          "concepts": [
+            "hngd-1959-nguyen-tac",
+            "hngd-1959-ket-hon-ly-hon",
+            "luat-cong-ty-1990",
+            "cong-ty-co-phan-1990"
+          ]
+        },
+        {
+          "id": "ls8-3",
+          "title": "Pháp luật 1985–1987: hình sự và đất đai",
+          "concepts": [
+            "blhs-1985",
+            "toi-pham-1985",
+            "luat-dat-dai-1987",
+            "cam-mua-ban-dat-1987"
+          ]
+        },
+        {
+          "id": "ls8-4",
+          "title": "Pháp luật thời Đổi mới sau 1990: dân sự và doanh nghiệp",
+          "concepts": [
+            "blds-1995",
+            "nguyen-tac-blds-1995",
+            "ldn-1999"
+          ]
+        }
+      ]
+    }
+  ]
+}

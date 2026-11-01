@@ -1,0 +1,123 @@
+{
+ "id": "chu-tich-nuoc-nhan-su",
+ "subject": "hien-phap",
+ "chapter": "c8-chu-tich-nuoc",
+ "term": "Quyền hạn của Chủ tịch nước về nhân sự hành pháp và tư pháp",
+ "definition": "Đề nghị Quốc hội bầu, miễn nhiệm, bãi nhiệm Phó Chủ tịch nước, Thủ tướng Chính phủ; căn cứ vào nghị quyết của Quốc hội, bổ nhiệm, miễn nhiệm, cách chức Phó Thủ tướng Chính phủ, Bộ trưởng và thành viên khác của Chính phủ;",
+ "plain": "Mô hình \"đề nghị – phê chuẩn – bổ nhiệm\": Chủ tịch nước ĐỀ NGHỊ Quốc hội bầu Thủ tướng, Chánh án Tòa án nhân dân tối cao, Viện trưởng Viện kiểm sát nhân dân tối cao; Thủ tướng đề nghị và Quốc hội phê chuẩn Bộ trưởng, rồi Chủ tịch nước CĂN CỨ nghị quyết Quốc hội để BỔ NHIỆM. Chủ tịch nước cũng bổ nhiệm Thẩm phán Tòa án nhân dân tối cao theo nghị quyết Quốc hội.",
+ "example": "Sau khi Quốc hội phê chuẩn đề nghị bổ nhiệm Bộ trưởng Bộ Tài chính, Chủ tịch nước ký quyết định bổ nhiệm. Chủ tịch nước không tự ý bổ nhiệm Bộ trưởng khi chưa có nghị quyết của Quốc hội.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 2 Điều 88 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "chu-tich-nuoc-vi-tri",
+  "thu-tuong-chinh-phu",
+  "co-cau-chinh-phu"
+ ],
+ "keywords": [
+  "đề nghị Quốc hội bầu Thủ tướng",
+  "căn cứ nghị quyết Quốc hội bổ nhiệm Bộ trưởng",
+  "Chánh án, Viện trưởng"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai đề nghị Quốc hội bầu Thủ tướng Chính phủ?",
+   "options": [
+    "Chủ tịch nước",
+    "Ủy ban thường vụ Quốc hội",
+    "Mặt trận Tổ quốc",
+    "Chính phủ nhiệm kỳ trước"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 88.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 88 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Bộ trưởng được bổ nhiệm theo trình tự nào?",
+   "options": [
+    "Thủ tướng trình Quốc hội phê chuẩn; Chủ tịch nước căn cứ nghị quyết của Quốc hội bổ nhiệm",
+    "Chủ tịch nước tự bổ nhiệm",
+    "Thủ tướng tự bổ nhiệm",
+    "Quốc hội bầu trực tiếp không qua đề nghị"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 98 và khoản 2 Điều 88.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 88 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quốc hội bầu (theo đề nghị Chủ tịch nước)",
+   "right": "Chủ tịch nước bổ nhiệm (căn cứ nghị quyết Quốc hội)",
+   "cases": [
+    {
+     "text": "Thủ tướng Chính phủ",
+     "answer": "left"
+    },
+    {
+     "text": "Bộ trưởng",
+     "answer": "right"
+    },
+    {
+     "text": "Chánh án Tòa án nhân dân tối cao",
+     "answer": "left"
+    },
+    {
+     "text": "Thẩm phán Tòa án nhân dân tối cao",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 2, 3 Điều 88."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chủ tịch nước đề nghị Quốc hội bầu, miễn nhiệm, bãi nhiệm Phó Chủ tịch nước, {{Thủ tướng Chính phủ}}; căn cứ vào nghị quyết của Quốc hội, bổ nhiệm, miễn nhiệm, cách chức Phó Thủ tướng, {{Bộ trưởng}}.",
+   "bank_extra": [
+    "Chủ tịch Quốc hội",
+    "Thứ trưởng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chủ tịch nước đề nghị Quốc hội bầu, miễn nhiệm, bãi nhiệm Chánh án Tòa án nhân dân tối cao, {{Viện trưởng Viện kiểm sát nhân dân tối cao}}.",
+   "bank_extra": [
+    "Bộ trưởng Bộ Tư pháp",
+    "Tổng Thanh tra Chính phủ"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chủ tịch nước có quyền tự bổ nhiệm Bộ trưởng mà không cần nghị quyết của Quốc hội.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 88: bổ nhiệm \"căn cứ vào nghị quyết của Quốc hội\"."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quyền hạn của Chủ tịch nước về nhân sự trong bộ máy hành pháp, tư pháp.",
+   "model": "Đề nghị Quốc hội bầu, miễn nhiệm, bãi nhiệm Phó Chủ tịch nước, Thủ tướng, Chánh án Tòa án nhân dân tối cao, Viện trưởng Viện kiểm sát nhân dân tối cao; căn cứ nghị quyết Quốc hội bổ nhiệm, miễn nhiệm, cách chức Phó Thủ tướng, Bộ trưởng, thành viên Chính phủ, Thẩm phán Tòa án nhân dân tối cao; bổ nhiệm Phó Chánh án, Phó Viện trưởng… (khoản 2, 3 Điều 88).",
+   "keywords": [
+    "đề nghị",
+    "Thủ tướng",
+    "căn cứ nghị quyết",
+    "bổ nhiệm"
+   ]
+  }
+ ]
+}

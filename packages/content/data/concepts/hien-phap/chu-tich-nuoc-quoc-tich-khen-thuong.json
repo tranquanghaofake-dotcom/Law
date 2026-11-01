@@ -1,0 +1,116 @@
+{
+ "id": "chu-tich-nuoc-quoc-tich-khen-thuong",
+ "subject": "hien-phap",
+ "chapter": "c8-chu-tich-nuoc",
+ "term": "Chủ tịch nước quyết định về quốc tịch, khen thưởng, đặc xá",
+ "definition": "Quyết định tặng thưởng huân chương, huy chương, các giải thưởng nhà nước, danh hiệu vinh dự nhà nước; quyết định cho nhập quốc tịch, thôi quốc tịch, trở lại quốc tịch hoặc tước quốc tịch Việt Nam;",
+ "plain": "Liên kết với chương 5: mọi quyết định cho nhập, thôi, trở lại hoặc tước quốc tịch Việt Nam đều do Chủ tịch nước ký (Luật Quốc tịch chỉ quy định thủ tục). Chủ tịch nước cũng quyết định đặc xá (khoản 3 Điều 88). Phân biệt ĐẶC XÁ (Chủ tịch nước quyết định, tha tù trước thời hạn cho người cụ thể) với ĐẠI XÁ (Quốc hội quyết định, khoản 11 Điều 70, miễn trách nhiệm cho cả một loại tội).",
+ "example": "Một cầu thủ nước ngoài xin nhập quốc tịch Việt Nam: hồ sơ qua Sở Tư pháp, Bộ Tư pháp, nhưng quyết định cuối cùng cho nhập quốc tịch là của Chủ tịch nước.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 4 Điều 88 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nhap-quoc-tich-viet-nam",
+  "tuoc-quoc-tich-viet-nam",
+  "chu-tich-nuoc-vi-tri"
+ ],
+ "keywords": [
+  "nhập, thôi, trở lại, tước quốc tịch",
+  "huân chương",
+  "đặc xá",
+  "khác đại xá"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai quyết định cho nhập quốc tịch Việt Nam?",
+   "options": [
+    "Chủ tịch nước",
+    "Bộ trưởng Bộ Tư pháp",
+    "Thủ tướng Chính phủ",
+    "Chủ tịch Ủy ban nhân dân tỉnh"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 88.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 88 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đại xá do cơ quan nào quyết định?",
+   "options": [
+    "Quốc hội",
+    "Chủ tịch nước",
+    "Tòa án nhân dân tối cao",
+    "Chính phủ"
+   ],
+   "answer": 0,
+   "explain": "Khoản 11 Điều 70. Đặc xá do Chủ tịch nước quyết định (khoản 3 Điều 88).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 11 Điều 70 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Đặc xá",
+   "right": "Đại xá",
+   "cases": [
+    {
+     "text": "Do Chủ tịch nước quyết định",
+     "answer": "left"
+    },
+    {
+     "text": "Do Quốc hội quyết định",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 3 Điều 88; khoản 11 Điều 70."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chủ tịch nước quyết định cho nhập quốc tịch, thôi quốc tịch, trở lại quốc tịch hoặc {{tước}} quốc tịch Việt Nam; quyết định tặng thưởng {{huân chương}}, huy chương.",
+   "bank_extra": [
+    "cấp",
+    "bằng khen"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chủ tịch nước quyết định {{đặc xá}}; Quốc hội quyết định {{đại xá}}.",
+   "bank_extra": [
+    "ân xá",
+    "giảm án"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Bộ trưởng Bộ Tư pháp ký quyết định cho thôi quốc tịch Việt Nam.",
+   "answer": false,
+   "explain": "Sai. Khoản 4 Điều 88: Chủ tịch nước quyết định; Bộ Tư pháp chỉ thẩm định, trình."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các quyền của Chủ tịch nước về quốc tịch, khen thưởng và đặc xá; phân biệt đặc xá với đại xá.",
+   "model": "Chủ tịch nước quyết định tặng thưởng huân chương, huy chương, giải thưởng, danh hiệu; quyết định cho nhập, thôi, trở lại, tước quốc tịch (khoản 4 Điều 88); quyết định đặc xá (khoản 3). Đại xá do Quốc hội quyết định (khoản 11 Điều 70).",
+   "keywords": [
+    "quốc tịch",
+    "huân chương",
+    "đặc xá",
+    "đại xá"
+   ]
+  }
+ ]
+}

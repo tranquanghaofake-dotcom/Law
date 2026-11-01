@@ -1,0 +1,119 @@
+{
+ "id": "thoi-quoc-tich-viet-nam",
+ "subject": "hien-phap",
+ "chapter": "c5-quoc-tich",
+ "term": "Thôi quốc tịch Việt Nam",
+ "definition": "Công dân Việt Nam có đơn xin thôi quốc tịch Việt Nam để nhập quốc tịch nước ngoài thì có thể được thôi quốc tịch Việt Nam. (…) Cán bộ, công chức và những người đang phục vụ trong lực lượng vũ trang nhân dân Việt Nam không được thôi quốc tịch Việt Nam.",
+ "plain": "Thôi quốc tịch là việc TỰ NGUYỆN xin chấm dứt quốc tịch (thường để nhập quốc tịch nước khác), khác TƯỚC quốc tịch (chế tài). Có 3 mức: được thôi; CHƯA được thôi (đang nợ thuế hoặc nghĩa vụ tài sản, đang bị truy cứu hình sự, đang chấp hành bản án, đang bị tạm giam, đang bị áp dụng biện pháp xử lý hành chính); KHÔNG được thôi (phương hại lợi ích quốc gia; cán bộ, công chức, lực lượng vũ trang).",
+ "example": "Anh T đang bị truy cứu trách nhiệm hình sự ở Việt Nam, xin thôi quốc tịch để nhập quốc tịch Canada: CHƯA được thôi (điểm b khoản 2 Điều 27) cho đến khi hết tình trạng đó.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 4 Điều 27 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-53-vbhn-vpqh-quoc-tich-viet-nam--179993"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tuoc-quoc-tich-viet-nam",
+  "tro-lai-quoc-tich"
+ ],
+ "keywords": [
+  "tự nguyện",
+  "chưa được thôi",
+  "không được thôi",
+  "cán bộ, công chức, lực lượng vũ trang"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chủ thể nào KHÔNG được thôi quốc tịch Việt Nam theo khoản 4 Điều 27?",
+   "options": [
+    "Cán bộ, công chức và người đang phục vụ trong lực lượng vũ trang nhân dân",
+    "Sinh viên du học",
+    "Người kinh doanh ở nước ngoài",
+    "Người đã nghỉ hưu"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 27.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 27 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trường hợp nào thuộc diện CHƯA được thôi quốc tịch Việt Nam?",
+   "options": [
+    "Đang nợ thuế đối với Nhà nước",
+    "Đang làm việc cho công ty nước ngoài",
+    "Đã kết hôn với người nước ngoài",
+    "Đang sống ở nước ngoài"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 2 Điều 27.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 27 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Chưa được thôi",
+   "right": "Không được thôi",
+   "cases": [
+    {
+     "text": "Đang bị tạm giam để chờ thi hành án",
+     "answer": "left"
+    },
+    {
+     "text": "Đang là sĩ quan quân đội tại ngũ",
+     "answer": "right"
+    },
+    {
+     "text": "Việc thôi làm phương hại đến lợi ích quốc gia",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 2, 3, 4 Điều 27."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công dân Việt Nam có đơn xin thôi quốc tịch Việt Nam để {{nhập quốc tịch nước ngoài}} thì có thể được thôi quốc tịch Việt Nam.",
+   "bank_extra": [
+    "du lịch",
+    "kinh doanh"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người xin thôi quốc tịch {{chưa được}} thôi nếu đang bị truy cứu trách nhiệm hình sự.",
+   "bank_extra": [
+    "không bao giờ được",
+    "đương nhiên được"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thôi quốc tịch và tước quốc tịch đều là căn cứ mất quốc tịch Việt Nam.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1, 2 Điều 26: được thôi quốc tịch, bị tước quốc tịch đều là căn cứ mất quốc tịch."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Phân biệt các trường hợp được thôi, chưa được thôi, không được thôi quốc tịch Việt Nam.",
+   "model": "Được thôi: công dân có đơn xin thôi để nhập quốc tịch nước ngoài (khoản 1). Chưa được thôi: nợ thuế hoặc nghĩa vụ tài sản; bị truy cứu hình sự; chấp hành bản án; bị tạm giam chờ thi hành án; chấp hành biện pháp đưa vào cơ sở giáo dục, chữa bệnh, trường giáo dưỡng (khoản 2). Không được thôi: phương hại lợi ích quốc gia (khoản 3); cán bộ, công chức, lực lượng vũ trang (khoản 4).",
+   "keywords": [
+    "nhập quốc tịch nước ngoài",
+    "chưa được thôi",
+    "không được thôi",
+    "cán bộ, công chức"
+   ]
+  }
+ ]
+}

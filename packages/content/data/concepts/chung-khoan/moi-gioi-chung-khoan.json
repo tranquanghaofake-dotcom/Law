@@ -1,0 +1,115 @@
+{
+ "id": "moi-gioi-chung-khoan",
+ "subject": "chung-khoan",
+ "chapter": "c8-kinh-doanh-chung-khoan",
+ "term": "Môi giới chứng khoán",
+ "definition": "Môi giới chứng khoán là việc làm trung gian thực hiện mua, bán chứng khoán cho khách hàng.",
+ "plain": "Môi giới làm TRUNG GIAN, đứng tên khách hàng, ăn phí; không chịu lãi lỗ thay khách. Đây là nghiệp vụ \"gốc\": phải có môi giới mới được tự doanh (khoản 2 Điều 72), mới được đăng ký lưu ký (khoản 2 Điều 57), và mới được cung cấp các dịch vụ như giao dịch trực tuyến, cho vay ký quỹ, ứng trước tiền bán (khoản 1 Điều 86).",
+ "example": "Bạn đặt lệnh mua 1.000 cổ phiếu qua app công ty chứng khoán X; X chuyển lệnh vào sàn và thu phí giao dịch 0,15%: X đang làm môi giới.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 29 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tu-doanh-chung-khoan",
+  "dich-vu-cho-vay-ky-quy",
+  "kinh-doanh-chung-khoan"
+ ],
+ "keywords": [
+  "trung gian",
+  "cho khách hàng",
+  "nghiệp vụ gốc"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 29 Điều 4, môi giới chứng khoán là gì?",
+   "options": [
+    "Làm trung gian thực hiện mua, bán chứng khoán cho khách hàng",
+    "Mua, bán chứng khoán cho chính công ty",
+    "Cam kết mua chứng khoán của tổ chức phát hành để bán lại",
+    "Đưa ra khuyến nghị đầu tư"
+   ],
+   "answer": 0,
+   "explain": "Khoản 29 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 29 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nghiệp vụ nào là điều kiện để công ty chứng khoán được cấp phép tự doanh?",
+   "options": [
+    "Môi giới chứng khoán",
+    "Tư vấn đầu tư",
+    "Bảo lãnh phát hành",
+    "Quản lý danh mục"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 72.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 72 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Môi giới",
+   "right": "Tự doanh",
+   "cases": [
+    {
+     "text": "Giao dịch cho khách hàng, khách hàng chịu lãi lỗ",
+     "answer": "left"
+    },
+    {
+     "text": "Công ty mua, bán chứng khoán cho chính mình",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 29 và 30 Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Môi giới chứng khoán là việc làm {{trung gian}} thực hiện mua, bán chứng khoán cho {{khách hàng}}.",
+   "bank_extra": [
+    "chủ sở hữu",
+    "công ty"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công ty chứng khoán được đăng ký hoạt động lưu ký chứng khoán khi được cấp phép nghiệp vụ {{môi giới}} chứng khoán.",
+   "bank_extra": [
+    "tự doanh",
+    "tư vấn"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Công ty chứng khoán làm môi giới phải chịu khoản lỗ của khách hàng khi giá cổ phiếu giảm.",
+   "answer": false,
+   "explain": "Sai. Môi giới chỉ làm trung gian (khoản 29 Điều 4); khách hàng tự chịu rủi ro (khoản 4 Điều 5)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Định nghĩa môi giới chứng khoán và nêu vai trò \"nghiệp vụ gốc\" của nó.",
+   "model": "Môi giới là làm trung gian thực hiện mua, bán chứng khoán cho khách hàng (khoản 29 Điều 4). Là điều kiện để được cấp phép tự doanh (Điều 72), đăng ký lưu ký (Điều 57), cung cấp dịch vụ giao dịch trực tuyến, cho vay mua chứng khoán, ứng trước tiền bán (khoản 1 Điều 86).",
+   "keywords": [
+    "trung gian",
+    "khách hàng",
+    "tự doanh",
+    "lưu ký"
+   ]
+  }
+ ]
+}

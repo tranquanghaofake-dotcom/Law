@@ -1,0 +1,129 @@
+{
+ "id": "giao-dich-noi-gian",
+ "subject": "chung-khoan",
+ "chapter": "c10-xu-ly-vi-pham",
+ "term": "Giao dịch nội gián",
+ "definition": "Sử dụng thông tin nội bộ để mua, bán chứng khoán cho chính mình hoặc cho người khác; tiết lộ, cung cấp thông tin nội bộ hoặc tư vấn cho người khác mua, bán chứng khoán trên cơ sở thông tin nội bộ.",
+ "plain": "Ba dạng bị cấm: tự dùng thông tin nội bộ để giao dịch (cho mình hoặc người khác); tiết lộ, cung cấp thông tin nội bộ; \"mách nước\" cho người khác giao dịch dựa trên thông tin nội bộ. Áp dụng với BẤT KỲ AI nắm thông tin nội bộ. Ngoài phạt hành chính (mức tối đa 10 lần khoản thu trái pháp luật), hành vi có thể bị truy cứu theo Bộ luật Hình sự (tội sử dụng thông tin nội bộ để mua bán chứng khoán).",
+ "example": "Giám đốc tài chính biết công ty sắp trúng hợp đồng lớn, nhắn em trai \"mua ngay mã này đi\": dù giám đốc không tự mua, hành vi tiết lộ và tư vấn dựa trên thông tin nội bộ đã vi phạm khoản 2 Điều 12.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 2 Điều 12 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "thong-tin-noi-bo",
+  "nguoi-noi-bo",
+  "muc-phat-tien-chung-khoan"
+ ],
+ "keywords": [
+  "sử dụng thông tin nội bộ",
+  "tiết lộ, cung cấp",
+  "tư vấn dựa trên thông tin nội bộ"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hành vi nào thuộc khoản 2 Điều 12 (giao dịch nội gián)?",
+   "options": [
+    "Tư vấn cho người khác mua chứng khoán trên cơ sở thông tin nội bộ",
+    "Mua cổ phiếu sau khi công ty công bố kết quả kinh doanh",
+    "Phân tích báo cáo tài chính đã công bố",
+    "Đặt lệnh mua theo khuyến nghị công khai của công ty chứng khoán"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 12.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 12 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Mức phạt tiền tối đa với hành vi tại khoản 2 Điều 12 (đối với tổ chức) được tính thế nào?",
+   "options": [
+    "10 lần khoản thu trái pháp luật có được từ hành vi vi phạm (hoặc mức 03 tỷ nếu cao hơn)",
+    "Cố định 100 triệu đồng",
+    "5 lần vốn điều lệ",
+    "Không bị phạt tiền"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 132.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 132 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Giao dịch nội gián",
+   "right": "Thao túng thị trường",
+   "cases": [
+    {
+     "text": "Dùng thông tin chưa công bố để mua trước",
+     "answer": "left"
+    },
+    {
+     "text": "Mua bán qua lại giữa các tài khoản trong nhóm để tạo cung cầu giả tạo",
+     "answer": "right"
+    },
+    {
+     "text": "Tiết lộ thông tin nội bộ cho người thân",
+     "answer": "left"
+    }
+   ],
+   "explain": "Khoản 2, 3 Điều 12; khoản 49 Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nghiêm cấm sử dụng thông tin {{nội bộ}} để mua, bán chứng khoán cho chính mình hoặc cho {{người khác}}.",
+   "bank_extra": [
+    "công khai",
+    "tổ chức phát hành"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nghiêm cấm tiết lộ, cung cấp thông tin nội bộ hoặc {{tư vấn}} cho người khác mua, bán chứng khoán trên cơ sở thông tin nội bộ.",
+   "bank_extra": [
+    "khen thưởng",
+    "bảo lãnh"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Luật sư được thuê tư vấn thương vụ sáp nhập (chưa công bố) của công ty niêm yết A. Luật sư mua cổ phiếu A qua tài khoản của mẹ. Nhận định nào đúng?",
+   "options": [
+    "Vi phạm khoản 2 Điều 12: sử dụng thông tin nội bộ để mua chứng khoán cho người khác",
+    "Không vi phạm vì luật sư không phải người nội bộ",
+    "Không vi phạm vì tài khoản đứng tên mẹ",
+    "Chỉ vi phạm đạo đức nghề luật sư"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 12 áp dụng với mọi người sử dụng thông tin nội bộ, kể cả mua \"cho người khác\".",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 12 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày các hành vi giao dịch nội gián bị cấm và hậu quả pháp lý.",
+   "model": "Sử dụng thông tin nội bộ để mua, bán chứng khoán cho mình hoặc người khác; tiết lộ, cung cấp thông tin nội bộ; tư vấn người khác giao dịch trên cơ sở thông tin nội bộ (khoản 2 Điều 12). Hậu quả: phạt hành chính tối đa 10 lần khoản thu trái pháp luật (tổ chức; cá nhân bằng 1/2), có thể bị truy cứu hình sự, bồi thường thiệt hại (Điều 132).",
+   "keywords": [
+    "sử dụng thông tin nội bộ",
+    "tiết lộ",
+    "tư vấn",
+    "10 lần"
+   ]
+  }
+ ]
+}

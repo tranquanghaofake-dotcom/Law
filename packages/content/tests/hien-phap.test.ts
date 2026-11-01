@@ -8,22 +8,28 @@ const dir = join(root, 'concepts', 'hien-phap');
 const files = readdirSync(dir).filter((f) => f.endsWith('.json'));
 
 describe('nội dung Luật Hiến pháp', () => {
-  it('có 10 khái niệm hợp lệ, nguồn statute trỏ vbpl.vn, ngày đối chiếu 2026-11-01', () => {
-    expect(files.length).toBe(10);
+  it('có 101 khái niệm hợp lệ; nguồn statute trỏ vbpl.vn (Hiến pháp cũ chưa có bản tiếng Việt trên vbpl thì trỏ thuvienphapluat.vn); chương 1 được dùng nguồn textbook ghi rõ chưa đối chiếu, ngày đối chiếu 2026-11-01', () => {
+    expect(files.length).toBe(101);
     for (const f of files) {
       const c = conceptSchema.parse(JSON.parse(readFileSync(join(dir, f), 'utf8')));
+      if (c.chapter === 'c1-nhung-van-de-chung' && c.source.kind === 'textbook') {
+        expect(c.source.cite).toMatch(/chưa đối chiếu nguyên văn/);
+      } else {
       expect(c.source.kind).toBe('statute');
-      expect(c.source.url).toMatch(/^https:\/\/vbpl\.vn\//);
+      const old = /Hiến pháp (1946|1959|1992)\b/.test(c.source.cite);
+      expect(c.source.url).toMatch(old ? /^https:\/\/thuvienphapluat\.vn\// : /^https:\/\/vbpl\.vn\//);
+      }
       expect(c.checked).toBe('2026-11-01');
       expect(c.items.filter((i) => i.type === 'recall').length).toBe(1);
       expect(c.items.filter((i) => i.type === 'cloze').length).toBe(2);
     }
   });
-  it('môn có 2 đợt, mỗi đợt 5 khái niệm, confusables nằm trong cùng môn', () => {
+  it('môn chia chương theo mục lục giáo trình, mỗi khái niệm nằm đúng chương, confusables nằm trong cùng môn', () => {
     const s = subjectSchema.parse(JSON.parse(readFileSync(join(root, 'subjects', 'hien-phap.json'), 'utf8')));
-    const lessons = s.chapters.flatMap((c) => c.lessons);
-    expect(lessons.length).toBe(2);
-    for (const l of lessons) expect(l.concepts.length).toBe(5);
+    expect(s.chapters.map((c) => c.id)).toEqual(['c1-nhung-van-de-chung', 'c2-khai-niem-dac-trung', 'c3-che-do-chinh-tri', 'c4-quyen-con-nguoi', 'c5-quoc-tich', 'c6-bau-cu', 'c7-quoc-hoi', 'c8-chu-tich-nuoc', 'c9-chinh-phu', 'c10-toa-an-vien-kiem-sat', 'c11-chinh-quyen-dia-phuong', 'nang-cao']);
+    for (const ch of s.chapters) for (const l of ch.lessons) for (const id of l.concepts) {
+      expect(JSON.parse(readFileSync(join(dir, `${id}.json`), 'utf8')).chapter).toBe(ch.id);
+    }
     const ids = new Set(files.map((f) => f.replace('.json', '')));
     for (const f of files) {
       const c = JSON.parse(readFileSync(join(dir, f), 'utf8'));
@@ -36,11 +42,16 @@ describe('nguyên văn (I6)', () => {
   const law = readFileSync(join(root, 'laws', 'hien-phap-2013.txt'), 'utf8');
   const norm = (s: string) => s.normalize('NFC').replace(/\\\./g, '.').replace(/\s+/g, ' ').replace(/hoà/g, 'hòa').replace(/Hoà/g, 'Hòa').trim();
   const lawN = norm(law);
-  it('mọi definition kiểu statute xuất hiện nguyên văn trong toàn văn Hiến pháp (từng câu)', () => {
+  const qt = norm(readFileSync(join(root, 'laws', 'quoc-tich-vbhn-2025.txt'), 'utf8'));
+  const bc = norm(readFileSync(join(root, 'laws', 'bau-cu-vbhn-2026.txt'), 'utf8'));
+  const ls = norm(readFileSync(join(root, 'laws', 'hien-phap-lich-su.txt'), 'utf8'));
+  it('mọi definition kiểu statute xuất hiện nguyên văn trong văn bản nguồn (Hiến pháp hiện hành hoặc cũ, Luật Quốc tịch, Luật Bầu cử, theo cite)', () => {
     for (const f of files) {
       const c = JSON.parse(readFileSync(join(dir, f), 'utf8'));
-      for (const sentence of norm(c.definition).split(/(?<=\.)\s+/)) {
-        expect(lawN, `${f}: "${sentence}"`).toContain(sentence);
+      if (c.source.kind !== 'statute') continue;
+      const src = /Hiến pháp (1946|1959|1980|1992)\b/.test(c.source.cite) ? ls : /Luật Quốc tịch/.test(c.source.cite) ? qt : /Luật Bầu cử/.test(c.source.cite) ? bc : lawN;
+      for (const part of norm(c.definition.replace(/\(…\)/g, ' ')).split(/(?<=[.;:])\s+/)) {
+        expect(src, `${f}: "${part}"`).toContain(part);
       }
     }
   });

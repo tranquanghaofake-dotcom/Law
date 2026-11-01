@@ -1,0 +1,113 @@
+{
+ "id": "he-thong-giao-dich-chung-khoan",
+ "subject": "chung-khoan",
+ "chapter": "c3-thi-truong-giao-dich",
+ "term": "Hệ thống giao dịch chứng khoán",
+ "definition": "Hệ thống giao dịch chứng khoán bao gồm hệ thống giao dịch cho chứng khoán niêm yết và hệ thống giao dịch cho chứng khoán chưa niêm yết, do Sở giao dịch chứng khoán Việt Nam và công ty con của Sở giao dịch chứng khoán Việt Nam (sau đây gọi là Sở giao dịch chứng khoán Việt Nam và công ty con) tổ chức, vận hành.",
+ "plain": "Một hệ thống, hai \"nhánh\": nhánh cho chứng khoán niêm yết và nhánh cho chứng khoán chưa niêm yết (đăng ký giao dịch). Cả hai do Sở giao dịch chứng khoán Việt Nam và công ty con vận hành. Đây là \"hạ tầng\"; còn \"thị trường giao dịch chứng khoán\" (khoản 27) là khái niệm rộng hơn về nơi, cách tập hợp lệnh.",
+ "example": "Lệnh mua cổ phiếu VNM (niêm yết HOSE) và lệnh mua cổ phiếu trên UPCoM đều đi vào hệ thống giao dịch chứng khoán, nhưng ở hai nhánh khác nhau.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 26 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "niem-yet-chung-khoan",
+  "dang-ky-giao-dich-chung-khoan"
+ ],
+ "keywords": [
+  "niêm yết và chưa niêm yết",
+  "Sở giao dịch chứng khoán Việt Nam và công ty con"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hệ thống giao dịch chứng khoán gồm những hệ thống nào?",
+   "options": [
+    "Hệ thống cho chứng khoán niêm yết và hệ thống cho chứng khoán chưa niêm yết",
+    "Chỉ hệ thống cho chứng khoán niêm yết",
+    "Hệ thống của từng công ty chứng khoán",
+    "Hệ thống lưu ký và hệ thống thanh toán"
+   ],
+   "answer": 0,
+   "explain": "Khoản 26 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 26 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai tổ chức, vận hành hệ thống giao dịch chứng khoán?",
+   "options": [
+    "Sở giao dịch chứng khoán Việt Nam và công ty con",
+    "Tổng công ty lưu ký và bù trừ chứng khoán Việt Nam",
+    "Ủy ban Chứng khoán Nhà nước",
+    "Các ngân hàng thương mại"
+   ],
+   "answer": 0,
+   "explain": "Khoản 26 Điều 4. Tổng công ty lưu ký và bù trừ phụ trách đăng ký, lưu ký, bù trừ, thanh toán (chương IV giáo trình).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 26 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hệ thống cho chứng khoán niêm yết",
+   "right": "Hệ thống cho chứng khoán chưa niêm yết",
+   "cases": [
+    {
+     "text": "Cổ phiếu đã niêm yết trên HOSE",
+     "answer": "left"
+    },
+    {
+     "text": "Cổ phiếu đăng ký giao dịch trên UPCoM",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 24, 25, 26 Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hệ thống giao dịch chứng khoán bao gồm hệ thống giao dịch cho chứng khoán {{niêm yết}} và hệ thống giao dịch cho chứng khoán {{chưa niêm yết}}.",
+   "bank_extra": [
+    "phái sinh",
+    "lưu ký"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hệ thống giao dịch chứng khoán do Sở giao dịch chứng khoán Việt Nam và {{công ty con}} tổ chức, vận hành.",
+   "bank_extra": [
+    "công ty chứng khoán",
+    "Ủy ban Chứng khoán Nhà nước"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Việc đưa vào vận hành hệ thống giao dịch mới phải được Ủy ban Chứng khoán Nhà nước chấp thuận.",
+   "answer": true,
+   "explain": "Đúng. Khoản 3 Điều 50."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Hệ thống giao dịch chứng khoán gồm những gì, ai vận hành, khác gì với thị trường giao dịch chứng khoán?",
+   "model": "Gồm hệ thống cho chứng khoán niêm yết và hệ thống cho chứng khoán chưa niêm yết, do Sở giao dịch chứng khoán Việt Nam và công ty con tổ chức, vận hành (khoản 26 Điều 4). Thị trường giao dịch chứng khoán (khoản 27) là địa điểm hoặc hình thức trao đổi thông tin để tập hợp lệnh mua, bán.",
+   "keywords": [
+    "niêm yết",
+    "chưa niêm yết",
+    "Sở giao dịch chứng khoán Việt Nam",
+    "tập hợp lệnh"
+   ]
+  }
+ ]
+}

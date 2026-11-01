@@ -1,0 +1,121 @@
+{
+ "id": "luat-dat-dai-1987",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c8-hien-dai",
+ "term": "Luật Đất đai 1987: sở hữu toàn dân và giao đất",
+ "definition": "Đất đai thuộc sở hữu toàn dân, do Nhà nước thống nhất quản lý. Nhà nước giao đất cho các nông trường, lâm trường, hợp tác xã, tập đoàn sản xuất nông nghiệp, lâm nghiệp, xí nghiệp, đơn vị vũ trang nhân dân, cơ quan nhà nước, tổ chức xã hội và cá nhân-dưới đây gọi là người sử dụng đất-để sử dụng ổn định, lâu dài.",
+ "plain": "Luật Đất đai 1987 (thông qua 29/12/1987) là luật đất đai đầu tiên của nước CHXHCN Việt Nam, cụ thể hóa Hiến pháp 1980 (đất đai thuộc sở hữu toàn dân). Nhà nước THỐNG NHẤT QUẢN LÝ và GIAO ĐẤT cho tổ chức, cá nhân sử dụng ổn định, lâu dài. Người sử dụng chỉ có QUYỀN SỬ DỤNG, không có quyền sở hữu đất. Đây là nền tảng của chế độ \"sở hữu toàn dân, Nhà nước đại diện chủ sở hữu\" vẫn duy trì đến nay (Điều 53 Hiến pháp 2013).",
+ "example": "Năm 1988, một hộ nông dân được Nhà nước giao đất trồng lúa để sử dụng ổn định, lâu dài; hộ có quyền sử dụng nhưng không phải chủ sở hữu mảnh đất.",
+ "source": {
+  "kind": "primary",
+  "cite": "Luật Đất đai 1987, Điều 1",
+  "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Luat-Dat-dai-1987-3-LCT-HDNN8-37467.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "cam-mua-ban-dat-1987",
+  "sac-lenh-97-khe-uoc"
+ ],
+ "keywords": [
+  "29/12/1987",
+  "sở hữu toàn dân",
+  "Nhà nước thống nhất quản lý",
+  "giao đất",
+  "ổn định, lâu dài"
+ ],
+ "note": "Luật Đất đai 1987 đã hết hiệu lực (thay bằng Luật Đất đai 1993); hiện hành là Luật Đất đai 31/2024/QH15. Học để hiểu lịch sử.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 1 Luật Đất đai 1987, đất đai thuộc sở hữu của ai?",
+   "options": [
+    "Toàn dân, do Nhà nước thống nhất quản lý",
+    "Người sử dụng đất",
+    "Hợp tác xã",
+    "Ủy ban nhân dân xã"
+   ],
+   "answer": 0,
+   "explain": "Điều 1.",
+   "source": {
+    "kind": "primary",
+    "cite": "Luật Đất đai 1987, Điều 1"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Luật Đất đai 1987 được Quốc hội thông qua ngày nào?",
+   "options": [
+    "29/12/1987",
+    "14/7/1993",
+    "26/11/2003",
+    "18/01/2024"
+   ],
+   "answer": 0,
+   "explain": "Quốc hội khóa VIII, kỳ họp thứ 2.",
+   "source": {
+    "kind": "primary",
+    "cite": "Luật Đất đai 1987"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Nhà nước (theo Luật Đất đai 1987)",
+   "right": "Người sử dụng đất (theo Luật Đất đai 1987)",
+   "cases": [
+    {
+     "text": "Thống nhất quản lý đất đai",
+     "answer": "left"
+    },
+    {
+     "text": "Được giao đất để sử dụng ổn định, lâu dài",
+     "answer": "right"
+    },
+    {
+     "text": "Giao đất cho tổ chức, cá nhân",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 1 Luật Đất đai 1987."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đất đai thuộc sở hữu {{toàn dân}}, do Nhà nước {{thống nhất quản lý}}.",
+   "bank_extra": [
+    "tư nhân",
+    "giao khoán"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhà nước giao đất cho người sử dụng đất để sử dụng {{ổn định, lâu dài}}.",
+   "bank_extra": [
+    "tạm thời 5 năm",
+    "vĩnh viễn như chủ sở hữu"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo Luật Đất đai 1987, cá nhân được Nhà nước giao đất trở thành chủ sở hữu mảnh đất đó.",
+   "answer": false,
+   "explain": "Sai. Đất đai thuộc sở hữu toàn dân; người được giao đất chỉ là người sử dụng đất."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày chế độ sở hữu và giao đất theo Luật Đất đai 1987.",
+   "model": "Đất đai thuộc sở hữu toàn dân, Nhà nước thống nhất quản lý; Nhà nước giao đất cho nông trường, lâm trường, hợp tác xã, cơ quan, tổ chức, cá nhân sử dụng ổn định, lâu dài, có thời hạn hoặc tạm thời (Điều 1); người sử dụng chỉ có quyền sử dụng; nền tảng cho chế độ đất đai hiện nay.",
+   "keywords": [
+    "sở hữu toàn dân",
+    "thống nhất quản lý",
+    "giao đất",
+    "quyền sử dụng"
+   ]
+  }
+ ]
+}

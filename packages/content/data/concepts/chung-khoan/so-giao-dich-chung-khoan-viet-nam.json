@@ -1,0 +1,118 @@
+{
+ "id": "so-giao-dich-chung-khoan-viet-nam",
+ "subject": "chung-khoan",
+ "chapter": "c3-thi-truong-giao-dich",
+ "term": "Sở giao dịch chứng khoán Việt Nam",
+ "definition": "Sở giao dịch chứng khoán Việt Nam là doanh nghiệp được thành lập và hoạt động theo quy định của Luật này và Luật Doanh nghiệp, do Nhà nước nắm giữ trên 50% vốn điều lệ hoặc tổng số cổ phần có quyền biểu quyết.",
+ "plain": "Sở giao dịch là DOANH NGHIỆP do Nhà nước nắm giữ trên 50% vốn điều lệ, không phải cơ quan nhà nước. Thủ tướng quyết định thành lập, mô hình, công ty con; Bộ trưởng Bộ Tài chính phê chuẩn Điều lệ và nhân sự chủ chốt; Ủy ban Chứng khoán Nhà nước quản lý, giám sát.",
+ "example": "Sở giao dịch chứng khoán Việt Nam được thành lập theo Quyết định 37/2020/QĐ-TTg (hiệu lực 20/02/2021), theo mô hình công ty mẹ là công ty TNHH một thành viên do Nhà nước nắm giữ 100% vốn điều lệ; Sở giao dịch chứng khoán Hà Nội (HNX) và TP. Hồ Chí Minh (HOSE) là công ty con. Khi bạn đặt lệnh mua cổ phiếu niêm yết, lệnh được khớp trên hệ thống do các đơn vị này vận hành.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 43 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "doc-quyen-to-chuc-thi-truong-giao-dich",
+  "thanh-vien-so-giao-dich-chung-khoan"
+ ],
+ "keywords": [
+  "doanh nghiệp",
+  "Nhà nước nắm giữ trên 50%",
+  "Thủ tướng Chính phủ quyết định thành lập"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 1 Điều 43, Sở giao dịch chứng khoán Việt Nam có địa vị pháp lý là gì?",
+   "options": [
+    "Doanh nghiệp do Nhà nước nắm giữ trên 50% vốn điều lệ hoặc tổng số cổ phần có quyền biểu quyết",
+    "Cơ quan thuộc Bộ Tài chính",
+    "Đơn vị sự nghiệp công lập",
+    "Tổ chức xã hội - nghề nghiệp"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 43.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 43 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai quyết định thành lập, giải thể Sở giao dịch chứng khoán Việt Nam?",
+   "options": [
+    "Thủ tướng Chính phủ, theo đề nghị của Bộ trưởng Bộ Tài chính",
+    "Quốc hội",
+    "Chủ tịch Ủy ban Chứng khoán Nhà nước",
+    "Đại hội đồng cổ đông của Sở"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 43.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 43 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thủ tướng Chính phủ",
+   "right": "Bộ trưởng Bộ Tài chính",
+   "cases": [
+    {
+     "text": "Quyết định thành lập, giải thể, mô hình hoạt động của Sở giao dịch",
+     "answer": "left"
+    },
+    {
+     "text": "Phê chuẩn hoặc ban hành Điều lệ Sở giao dịch",
+     "answer": "right"
+    },
+    {
+     "text": "Quyết định cơ cấu tổ chức quản lý của Sở giao dịch",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 43, 44, 45."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Sở giao dịch chứng khoán Việt Nam là {{doanh nghiệp}} do Nhà nước nắm giữ trên {{50%}} vốn điều lệ hoặc tổng số cổ phần có quyền biểu quyết.",
+   "bank_extra": [
+    "cơ quan nhà nước",
+    "65%"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Điều lệ Sở giao dịch chứng khoán Việt Nam được {{Bộ trưởng Bộ Tài chính}} phê chuẩn hoặc ban hành.",
+   "bank_extra": [
+    "Thủ tướng Chính phủ",
+    "Chủ tịch nước"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Sở giao dịch chứng khoán Việt Nam là cơ quan quản lý nhà nước về chứng khoán.",
+   "answer": false,
+   "explain": "Sai. Sở là doanh nghiệp (khoản 1 Điều 43) và chịu sự quản lý, giám sát của Ủy ban Chứng khoán Nhà nước (khoản 3 Điều 43)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày địa vị pháp lý của Sở giao dịch chứng khoán Việt Nam.",
+   "model": "Là doanh nghiệp thành lập, hoạt động theo Luật Chứng khoán và Luật Doanh nghiệp, Nhà nước nắm giữ trên 50% vốn điều lệ hoặc cổ phần có quyền biểu quyết; Thủ tướng quyết định thành lập, mô hình, công ty con; Bộ trưởng Bộ Tài chính phê chuẩn Điều lệ; chịu quản lý, giám sát của Ủy ban Chứng khoán Nhà nước; duy nhất được tổ chức thị trường giao dịch cùng công ty con.",
+   "keywords": [
+    "doanh nghiệp",
+    "trên 50%",
+    "Thủ tướng",
+    "Ủy ban Chứng khoán Nhà nước"
+   ]
+  }
+ ]
+}

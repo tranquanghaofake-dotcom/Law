@@ -1,0 +1,119 @@
+{
+ "id": "quy-hoan-doi-danh-muc",
+ "subject": "chung-khoan",
+ "chapter": "c6-quy-dau-tu",
+ "term": "Quỹ hoán đổi danh mục (ETF)",
+ "definition": "Quỹ hoán đổi danh mục là quỹ mở hình thành từ việc tiếp nhận, hoán đổi danh mục chứng khoán cơ cấu lấy chứng chỉ quỹ. Chứng chỉ quỹ hoán đổi danh mục được niêm yết và giao dịch trên hệ thống giao dịch cho chứng khoán niêm yết.",
+ "plain": "ETF lai giữa quỹ mở và cổ phiếu: về bản chất là quỹ mở, nhưng nhà đầu tư lớn đổi một \"rổ\" chứng khoán cơ cấu lấy lô chứng chỉ quỹ (và ngược lại); nhà đầu tư nhỏ mua bán chứng chỉ ETF trên sàn như cổ phiếu. Thường mô phỏng một chỉ số như VN30. ETF được miễn điều kiện \"ít nhất 100 nhà đầu tư\" khi thành lập (điểm a khoản 1 Điều 108).",
+ "example": "Bạn mua 100 chứng chỉ quỹ ETF mô phỏng VN30 trên app như mua cổ phiếu; một tổ chức lớn có thể nộp rổ 30 cổ phiếu VN30 theo tỷ lệ để đổi lấy lô chứng chỉ quỹ.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 42 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quy-mo",
+  "quy-dong",
+  "niem-yet-chung-khoan"
+ ],
+ "keywords": [
+  "quỹ mở",
+  "hoán đổi danh mục chứng khoán cơ cấu",
+  "niêm yết"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quỹ hoán đổi danh mục thuộc loại quỹ nào?",
+   "options": [
+    "Quỹ mở",
+    "Quỹ đóng",
+    "Quỹ thành viên",
+    "Công ty đầu tư chứng khoán"
+   ],
+   "answer": 0,
+   "explain": "Khoản 42 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 42 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chứng chỉ quỹ hoán đổi danh mục được giao dịch ở đâu?",
+   "options": [
+    "Trên hệ thống giao dịch cho chứng khoán niêm yết",
+    "Chỉ giao dịch thỏa thuận ngoài sàn",
+    "Chỉ qua công ty quản lý quỹ",
+    "Trên UPCoM"
+   ],
+   "answer": 0,
+   "explain": "Khoản 42 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 42 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quỹ ETF",
+   "right": "Quỹ mở thông thường",
+   "cases": [
+    {
+     "text": "Chứng chỉ quỹ niêm yết, mua bán trên sàn",
+     "answer": "left"
+    },
+    {
+     "text": "Hình thành từ hoán đổi danh mục chứng khoán cơ cấu",
+     "answer": "left"
+    },
+    {
+     "text": "Nhà đầu tư bán lại chứng chỉ quỹ trực tiếp cho quỹ theo kỳ giao dịch",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 39, 42 Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quỹ hoán đổi danh mục là quỹ mở hình thành từ việc tiếp nhận, hoán đổi danh mục {{chứng khoán cơ cấu}} lấy {{chứng chỉ quỹ}}.",
+   "bank_extra": [
+    "bất động sản",
+    "cổ phiếu ưu đãi"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Điều kiện có ít nhất 100 nhà đầu tư khi thành lập quỹ đại chúng không áp dụng cho quỹ {{hoán đổi danh mục}}.",
+   "bank_extra": [
+    "đóng",
+    "thành viên"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chứng chỉ quỹ hoán đổi danh mục phải được niêm yết.",
+   "answer": true,
+   "explain": "Đúng. Khoản 42 Điều 4; khoản 1 Điều 48 cũng liệt kê chứng chỉ quỹ hoán đổi danh mục phải niêm yết, đăng ký giao dịch."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm và đặc điểm của quỹ hoán đổi danh mục.",
+   "model": "Quỹ mở hình thành từ việc tiếp nhận, hoán đổi danh mục chứng khoán cơ cấu lấy chứng chỉ quỹ; chứng chỉ quỹ niêm yết và giao dịch trên hệ thống cho chứng khoán niêm yết (khoản 42 Điều 4); miễn điều kiện 100 nhà đầu tư khi thành lập (Điều 108).",
+   "keywords": [
+    "quỹ mở",
+    "hoán đổi",
+    "chứng khoán cơ cấu",
+    "niêm yết"
+   ]
+  }
+ ]
+}

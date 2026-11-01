@@ -1,0 +1,123 @@
+{
+ "id": "bat-nghi-qthl",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c6-trung-dai",
+ "term": "Bát nghị trong Quốc triều hình luật",
+ "definition": "Phàm những người thuộc vào tám điều nghị xét giảm tội trên này, mà phạm vào tử tội, thì các quan nghị án phải khai rõ tội trạng và hình phạt nên xử thế nào, làm thành bản tâu, dâng lên vua để vua xét định (…). Từ tội lưu trở xuống thì được giảm một bậc, nếu phạm tội thập ác thì không theo luật này.",
+ "plain": "BÁT NGHỊ (Điều 3) là 8 diện người được xem xét giảm tội: nghị THÂN (họ hàng nhà vua), nghị CỐ (người cũ theo vua lâu), nghị HIỀN (đức hạnh lớn), nghị NĂNG (tài năng lớn), nghị CÔNG (công huân lớn), nghị QUÝ (quan từ tam phẩm trở lên), nghị CẦN (cần cù), nghị TÂN (con cháu các triều trước). Điều 4: phạm tử tội thì quan nghị án tâu vua xét định, cơ quan nghị án không tự quyết; từ tội lưu trở xuống giảm một bậc; trừ thập ác. Bát nghị thể hiện rõ tính ĐẲNG CẤP, ưu đãi tầng lớp quý tộc, quan lại.",
+ "example": "Một quan tam phẩm (nghị quý) phạm tội lưu có thể được giảm xuống đồ; nhưng nếu phạm mưu phản (thập ác) thì không được giảm.",
+ "source": {
+  "kind": "primary",
+  "cite": "Quốc triều hình luật, Điều 4 (tám diện tại Điều 3) (bản dịch Nguyễn Ngọc Nhuận, Nguyễn Tá Nhí; bản điện tử, chưa đối chiếu bản in)",
+  "url": "https://luatduonggia.com/wp-content/uploads/2024/03/QUOC-TRIEU-HINH-LUAT.pdf"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "thap-ac-qthl",
+  "chuoc-toi-gia-tre-qthl"
+ ],
+ "keywords": [
+  "tám diện",
+  "nghị thân, cố, hiền, năng, công, quý, cần, tân",
+  "tâu vua xét định",
+  "giảm một bậc",
+  "trừ thập ác"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 4 Quốc triều hình luật, người thuộc bát nghị phạm tội từ lưu trở xuống thì được hưởng gì?",
+   "options": [
+    "Được giảm một bậc",
+    "Được miễn hoàn toàn",
+    "Được giảm ba bậc",
+    "Không được ưu đãi"
+   ],
+   "answer": 0,
+   "explain": "Điều 4.",
+   "source": {
+    "kind": "primary",
+    "cite": "Quốc triều hình luật, Điều 4"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "\"Nghị quý\" theo Điều 3 áp dụng cho ai?",
+   "options": [
+    "Quan viên có chức sự từ tam phẩm trở lên",
+    "Họ tôn thất",
+    "Con cháu các triều trước",
+    "Người cần cù chăm chỉ"
+   ],
+   "answer": 0,
+   "explain": "Điều 3, khoản 6.",
+   "source": {
+    "kind": "primary",
+    "cite": "Quốc triều hình luật, Điều 3"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Người thuộc bát nghị phạm tử tội",
+   "right": "Người thuộc bát nghị phạm tội lưu trở xuống",
+   "cases": [
+    {
+     "text": "Quan nghị án làm bản tâu để vua xét định",
+     "answer": "left"
+    },
+    {
+     "text": "Được giảm một bậc",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người thuộc bát nghị phạm tử tội thì làm thành bản tâu, dâng lên {{vua}} để vua xét định. Từ tội lưu trở xuống thì được giảm {{một bậc}}.",
+   "bank_extra": [
+    "quan đại thần",
+    "hai bậc"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nghị {{tân}}, là những con cháu các triều trước.",
+   "bank_extra": [
+    "thân",
+    "cố"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Bát nghị phản ánh đặc điểm nào của pháp luật thời Hậu Lê?",
+   "options": [
+    "Tính đẳng cấp: ưu đãi quý tộc, quan lại, người có công; đồng thời bảo vệ vương quyền bằng ngoại lệ thập ác",
+    "Bình đẳng tuyệt đối trước pháp luật",
+    "Chỉ ưu đãi người nghèo",
+    "Xóa bỏ hoàn toàn quyền xét xử của vua"
+   ],
+   "answer": 0,
+   "explain": "Đánh giá phổ biến của giáo trình dựa trên Điều 3, 4."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày chế định bát nghị trong Quốc triều hình luật.",
+   "model": "Điều 3 quy định 8 diện: nghị thân, nghị cố, nghị hiền, nghị năng, nghị công, nghị quý, nghị cần, nghị tân. Điều 4: phạm tử tội thì quan nghị án làm bản tâu để vua xét định; từ tội lưu trở xuống giảm một bậc; trừ tội thập ác. Thể hiện tính đẳng cấp và quyền xét xử tối cao của vua.",
+   "keywords": [
+    "tám diện",
+    "tâu vua",
+    "giảm một bậc",
+    "thập ác",
+    "đẳng cấp"
+   ]
+  }
+ ]
+}

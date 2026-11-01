@@ -1,0 +1,117 @@
+{
+ "id": "doc-quyen-to-chuc-thi-truong-giao-dich",
+ "subject": "chung-khoan",
+ "chapter": "c3-thi-truong-giao-dich",
+ "term": "Chủ thể tổ chức thị trường giao dịch chứng khoán",
+ "definition": "Ngoài Sở giao dịch chứng khoán Việt Nam và công ty con, không tổ chức, cá nhân nào được phép tổ chức và vận hành thị trường giao dịch chứng khoán.",
+ "plain": "Chỉ Sở giao dịch chứng khoán Việt Nam và các công ty con (Sở giao dịch chứng khoán TP. Hồ Chí Minh – HOSE, Sở giao dịch chứng khoán Hà Nội – HNX) được tổ chức thị trường giao dịch chứng khoán. Sàn tự lập để mua bán \"cổ phần\" hay \"chứng khoán\" ngoài hệ thống này là trái luật.",
+ "example": "Một công ty lập website cho người dùng đặt lệnh mua bán cổ phần chưa niêm yết của nhiều doanh nghiệp, tự khớp lệnh và thu phí: đây là tự tổ chức thị trường giao dịch chứng khoán, trái khoản 2 Điều 42.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 2 Điều 42 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "so-giao-dich-chung-khoan-viet-nam",
+  "phuong-thuc-giao-dich-chung-khoan"
+ ],
+ "keywords": [
+  "Sở giao dịch chứng khoán Việt Nam và công ty con",
+  "không tổ chức, cá nhân nào khác"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 2 Điều 42, ai được phép tổ chức và vận hành thị trường giao dịch chứng khoán?",
+   "options": [
+    "Sở giao dịch chứng khoán Việt Nam và công ty con",
+    "Mọi công ty chứng khoán",
+    "Ủy ban Chứng khoán Nhà nước",
+    "Ngân hàng Nhà nước Việt Nam"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 42: ngoài Sở giao dịch chứng khoán Việt Nam và công ty con, không ai được tổ chức, vận hành thị trường giao dịch chứng khoán.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 42 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Sở giao dịch chứng khoán Việt Nam và công ty con được tổ chức thị trường giao dịch cho loại chứng khoán nào?",
+   "options": [
+    "Cả chứng khoán đủ điều kiện niêm yết, chưa đủ điều kiện niêm yết, chứng khoán phái sinh…",
+    "Chỉ chứng khoán đủ điều kiện niêm yết",
+    "Chỉ trái phiếu Chính phủ",
+    "Chỉ chứng khoán phái sinh"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 42 liệt kê rộng: chứng khoán đủ điều kiện niêm yết, của doanh nghiệp nhà nước cổ phần hóa, của doanh nghiệp chưa đủ điều kiện niêm yết, của doanh nghiệp khởi nghiệp sáng tạo, phái sinh…",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 42 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Được tổ chức thị trường giao dịch",
+   "right": "Không được tổ chức thị trường giao dịch",
+   "cases": [
+    {
+     "text": "Sở giao dịch chứng khoán Hà Nội (công ty con)",
+     "answer": "left"
+    },
+    {
+     "text": "Công ty chứng khoán tự lập sàn khớp lệnh riêng",
+     "answer": "right"
+    },
+    {
+     "text": "Ủy ban Chứng khoán Nhà nước",
+     "answer": "right"
+    }
+   ],
+   "explain": "Ủy ban Chứng khoán Nhà nước quản lý, giám sát (khoản 3 Điều 43), không tổ chức thị trường."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ngoài Sở giao dịch chứng khoán Việt Nam và {{công ty con}}, không tổ chức, cá nhân nào được phép tổ chức và {{vận hành}} thị trường giao dịch chứng khoán.",
+   "bank_extra": [
+    "chi nhánh",
+    "giám sát"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Sở giao dịch chứng khoán Việt Nam và công ty con chịu sự quản lý và giám sát của {{Ủy ban Chứng khoán Nhà nước}}.",
+   "bank_extra": [
+    "Ngân hàng Nhà nước",
+    "Bộ Kế hoạch và Đầu tư"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Công ty chứng khoán được tự tổ chức thị trường giao dịch để khớp lệnh cổ phiếu chưa niêm yết cho khách hàng.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 42 dành riêng việc tổ chức, vận hành thị trường giao dịch chứng khoán cho Sở giao dịch chứng khoán Việt Nam và công ty con."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Ai được tổ chức thị trường giao dịch chứng khoán ở Việt Nam và cho những loại chứng khoán nào?",
+   "model": "Chỉ Sở giao dịch chứng khoán Việt Nam và công ty con (khoản 2 Điều 42), cho: chứng khoán đủ điều kiện niêm yết; chứng khoán của doanh nghiệp nhà nước cổ phần hóa; chứng khoán của doanh nghiệp chưa đủ điều kiện niêm yết; của doanh nghiệp khởi nghiệp sáng tạo; chứng khoán phái sinh và loại khác (khoản 1 Điều 42).",
+   "keywords": [
+    "Sở giao dịch chứng khoán Việt Nam",
+    "công ty con",
+    "niêm yết",
+    "phái sinh"
+   ]
+  }
+ ]
+}

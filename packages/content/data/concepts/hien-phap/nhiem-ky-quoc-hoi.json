@@ -1,0 +1,120 @@
+{
+ "id": "nhiem-ky-quoc-hoi",
+ "subject": "hien-phap",
+ "chapter": "c7-quoc-hoi",
+ "term": "Nhiệm kỳ Quốc hội",
+ "definition": "Nhiệm kỳ của mỗi khoá Quốc hội là năm năm. Sáu mươi ngày trước khi Quốc hội hết nhiệm kỳ, Quốc hội khoá mới phải được bầu xong.",
+ "plain": "Nhiệm kỳ 5 năm; khóa mới phải bầu xong 60 ngày trước khi khóa cũ hết nhiệm kỳ (để không có \"khoảng trống quyền lực\"). Trường hợp đặc biệt, Quốc hội có thể rút ngắn hoặc kéo dài nhiệm kỳ nếu ít nhất 2/3 tổng số đại biểu tán thành, theo đề nghị của Ủy ban thường vụ Quốc hội; kéo dài không quá 12 tháng, trừ trường hợp chiến tranh. Nhiệm kỳ Chủ tịch nước, Chính phủ theo nhiệm kỳ Quốc hội.",
+ "example": "Nếu cần tổ chức bầu cử khóa mới sớm hơn vì một yêu cầu đặc biệt (ví dụ sắp xếp lại bộ máy), Ủy ban thường vụ Quốc hội đề nghị và Quốc hội quyết định rút ngắn nhiệm kỳ khi có ít nhất 2/3 tổng số đại biểu tán thành (khoản 3 Điều 71).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 71 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "vi-tri-quoc-hoi",
+  "bieu-quyet-thong-qua-luat",
+  "chu-tich-nuoc-bau-nhiem-ky"
+ ],
+ "keywords": [
+  "năm năm",
+  "60 ngày",
+  "2/3 để rút ngắn, kéo dài",
+  "không quá 12 tháng"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nhiệm kỳ của mỗi khóa Quốc hội là bao lâu?",
+   "options": [
+    "Năm năm",
+    "Bốn năm",
+    "Sáu năm",
+    "Bảy năm"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 71.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 71 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Việc kéo dài nhiệm kỳ Quốc hội (ngoài trường hợp chiến tranh) được tối đa bao lâu?",
+   "options": [
+    "Không quá mười hai tháng",
+    "Không quá sáu tháng",
+    "Không quá hai năm",
+    "Không giới hạn"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 71.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 71 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quá nửa tổng số đại biểu",
+   "right": "Ít nhất hai phần ba tổng số đại biểu",
+   "cases": [
+    {
+     "text": "Thông qua luật thông thường",
+     "answer": "left"
+    },
+    {
+     "text": "Rút ngắn hoặc kéo dài nhiệm kỳ Quốc hội",
+     "answer": "right"
+    },
+    {
+     "text": "Bãi nhiệm đại biểu Quốc hội",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 3 Điều 71; khoản 1 Điều 85."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhiệm kỳ của mỗi khoá Quốc hội là {{năm}} năm. {{Sáu mươi}} ngày trước khi Quốc hội hết nhiệm kỳ, Quốc hội khoá mới phải được bầu xong.",
+   "bank_extra": [
+    "bốn",
+    "Chín mươi"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quốc hội quyết định rút ngắn hoặc kéo dài nhiệm kỳ theo đề nghị của {{Ủy ban thường vụ Quốc hội}}.",
+   "bank_extra": [
+    "Chính phủ",
+    "Chủ tịch nước"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quốc hội có thể kéo dài nhiệm kỳ của mình nếu quá nửa tổng số đại biểu tán thành.",
+   "answer": false,
+   "explain": "Sai. Khoản 3 Điều 71: cần ít nhất hai phần ba tổng số đại biểu."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quy định về nhiệm kỳ Quốc hội.",
+   "model": "Nhiệm kỳ 5 năm; khóa mới bầu xong 60 ngày trước khi hết nhiệm kỳ; trường hợp đặc biệt, ít nhất 2/3 tổng số đại biểu tán thành thì Quốc hội rút ngắn hoặc kéo dài nhiệm kỳ theo đề nghị Ủy ban thường vụ Quốc hội; kéo dài không quá 12 tháng, trừ trường hợp chiến tranh (Điều 71).",
+   "keywords": [
+    "năm năm",
+    "60 ngày",
+    "hai phần ba",
+    "12 tháng"
+   ]
+  }
+ ]
+}

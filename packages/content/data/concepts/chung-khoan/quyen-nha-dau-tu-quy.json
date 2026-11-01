@@ -1,0 +1,118 @@
+{
+ "id": "quyen-nha-dau-tu-quy",
+ "subject": "chung-khoan",
+ "chapter": "c6-quy-dau-tu",
+ "term": "Quyền của nhà đầu tư tham gia quỹ đầu tư chứng khoán",
+ "definition": "Hưởng lợi từ hoạt động đầu tư của quỹ đầu tư chứng khoán tương ứng với tỷ lệ vốn góp; b) Hưởng các lợi ích và tài sản được chia hợp pháp từ việc thanh lý tài sản quỹ đầu tư chứng khoán; c) Yêu cầu công ty quản lý quỹ đầu tư chứng khoán mua lại chứng chỉ quỹ mở; d) Khởi kiện công ty quản lý quỹ đầu tư chứng khoán, ngân hàng giám sát hoặc tổ chức liên quan nếu tổ chức này vi phạm quyền, lợi ích hợp pháp của mình; đ) Thực hiện quyền của mình thông qua Đại hội nhà đầu tư;",
+ "plain": "Nhà đầu tư quỹ không điều hành hằng ngày nhưng có quyền: hưởng lợi theo tỷ lệ góp, nhận tài sản khi thanh lý, đòi mua lại (quỹ mở), khởi kiện công ty quản lý quỹ hoặc ngân hàng giám sát, biểu quyết tại Đại hội nhà đầu tư (bầu Ban đại diện, quyết định giải thể…). Nghĩa vụ: chấp hành quyết định của Đại hội nhà đầu tư, thanh toán đủ tiền mua chứng chỉ quỹ.",
+ "example": "Công ty quản lý quỹ dùng tiền quỹ mua cổ phiếu của công ty sân sau, gây thiệt hại: nhà đầu tư có quyền khởi kiện công ty quản lý quỹ (điểm d khoản 1 Điều 101).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 101 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quy-dau-tu-chung-khoan",
+  "gia-tri-tai-san-rong"
+ ],
+ "keywords": [
+  "tỷ lệ vốn góp",
+  "khởi kiện",
+  "Đại hội nhà đầu tư"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nhà đầu tư quỹ đầu tư chứng khoán thực hiện quyền của mình thông qua cơ quan nào?",
+   "options": [
+    "Đại hội nhà đầu tư",
+    "Hội đồng quản trị công ty quản lý quỹ",
+    "Ngân hàng giám sát",
+    "Ủy ban Chứng khoán Nhà nước"
+   ],
+   "answer": 0,
+   "explain": "Điểm đ khoản 1 Điều 101.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 101 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nhà đầu tư có quyền khởi kiện chủ thể nào nếu bị vi phạm quyền lợi?",
+   "options": [
+    "Công ty quản lý quỹ, ngân hàng giám sát hoặc tổ chức liên quan",
+    "Chỉ Ủy ban Chứng khoán Nhà nước",
+    "Chỉ Sở giao dịch",
+    "Không được khởi kiện vì đã ủy thác"
+   ],
+   "answer": 0,
+   "explain": "Điểm d khoản 1 Điều 101.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 101 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quyền",
+   "right": "Nghĩa vụ",
+   "cases": [
+    {
+     "text": "Hưởng lợi tương ứng với tỷ lệ vốn góp",
+     "answer": "left"
+    },
+    {
+     "text": "Chấp hành quyết định của Đại hội nhà đầu tư",
+     "answer": "right"
+    },
+    {
+     "text": "Thanh toán đủ tiền mua chứng chỉ quỹ",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1, 2 Điều 101."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhà đầu tư được hưởng lợi từ hoạt động đầu tư của quỹ tương ứng với tỷ lệ {{vốn góp}}.",
+   "bank_extra": [
+    "số năm nắm giữ",
+    "số phiếu bầu"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhà đầu tư có quyền yêu cầu công ty quản lý quỹ mua lại chứng chỉ quỹ {{mở}}.",
+   "bank_extra": [
+    "đóng",
+    "thành viên"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Nhà đầu tư quỹ được trực tiếp ra lệnh cho công ty quản lý quỹ mua bán từng cổ phiếu hằng ngày.",
+   "answer": false,
+   "explain": "Sai. Nhà đầu tư không kiểm soát hằng ngày quyết định đầu tư (khoản 37 Điều 4); họ thực hiện quyền qua Đại hội nhà đầu tư."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Kể các quyền và nghĩa vụ của nhà đầu tư tham gia quỹ đầu tư chứng khoán.",
+   "model": "Quyền: hưởng lợi theo tỷ lệ vốn góp; hưởng tài sản khi thanh lý quỹ; yêu cầu mua lại chứng chỉ quỹ mở; khởi kiện công ty quản lý quỹ, ngân hàng giám sát; thực hiện quyền qua Đại hội nhà đầu tư; chuyển nhượng chứng chỉ quỹ theo Điều lệ. Nghĩa vụ: chấp hành quyết định Đại hội nhà đầu tư; thanh toán đủ tiền mua (Điều 101).",
+   "keywords": [
+    "tỷ lệ vốn góp",
+    "mua lại",
+    "khởi kiện",
+    "Đại hội nhà đầu tư"
+   ]
+  }
+ ]
+}

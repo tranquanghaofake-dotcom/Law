@@ -1,0 +1,116 @@
+{
+ "id": "kiem-toan-nha-nuoc",
+ "subject": "hien-phap",
+ "chapter": "nang-cao",
+ "term": "Kiểm toán nhà nước",
+ "definition": "Kiểm toán nhà nước là cơ quan do Quốc hội thành lập, hoạt động độc lập và chỉ tuân theo pháp luật, thực hiện kiểm toán việc quản lý, sử dụng tài chính, tài sản công. Tổng Kiểm toán nhà nước là người đứng đầu Kiểm toán nhà nước, do Quốc hội bầu.",
+ "plain": "Hiến pháp 2013 lần đầu hiến định Kiểm toán nhà nước (Chương X \"Hội đồng bầu cử quốc gia, Kiểm toán nhà nước\", cùng với Hội đồng bầu cử quốc gia). Đặc điểm: do QUỐC HỘI thành lập; hoạt động ĐỘC LẬP, CHỈ TUÂN THEO PHÁP LUẬT; kiểm toán việc quản lý, sử dụng TÀI CHÍNH, TÀI SẢN CÔNG. Tổng Kiểm toán do Quốc hội bầu, chịu trách nhiệm, báo cáo trước Quốc hội (giữa hai kỳ họp: Ủy ban thường vụ Quốc hội). Kiểm toán nhà nước là công cụ giúp Quốc hội giám sát việc chi tiêu ngân sách, kiểm soát quyền lực nhà nước.",
+ "example": "Kết quả kiểm toán phát hiện một bộ chi sai mục đích vốn đầu tư công; Tổng Kiểm toán báo cáo trước Quốc hội, là căn cứ để Quốc hội chất vấn, giám sát.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 118 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hoi-dong-bau-cu-quoc-gia",
+  "ngan-sach-nha-nuoc",
+  "vi-tri-quoc-hoi"
+ ],
+ "keywords": [
+  "do Quốc hội thành lập",
+  "độc lập, chỉ tuân theo pháp luật",
+  "tài chính, tài sản công",
+  "Tổng Kiểm toán do Quốc hội bầu"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 118 Hiến pháp 2013, Kiểm toán nhà nước do cơ quan nào thành lập?",
+   "options": [
+    "Quốc hội",
+    "Chính phủ",
+    "Chủ tịch nước",
+    "Bộ Tài chính"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 118.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 118 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tổng Kiểm toán nhà nước chịu trách nhiệm và báo cáo trước ai trong thời gian Quốc hội không họp?",
+   "options": [
+    "Ủy ban thường vụ Quốc hội",
+    "Chính phủ",
+    "Chủ tịch nước",
+    "Thủ tướng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 118.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 118 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hội đồng bầu cử quốc gia",
+   "right": "Kiểm toán nhà nước",
+   "cases": [
+    {
+     "text": "Tổ chức bầu cử đại biểu Quốc hội",
+     "answer": "left"
+    },
+    {
+     "text": "Kiểm toán việc quản lý, sử dụng tài chính, tài sản công",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 117, 118 Hiến pháp 2013 (Chương X)."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Kiểm toán nhà nước là cơ quan do Quốc hội thành lập, hoạt động {{độc lập}} và chỉ tuân theo {{pháp luật}}.",
+   "bank_extra": [
+    "phụ thuộc",
+    "Chính phủ"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Kiểm toán nhà nước thực hiện kiểm toán việc quản lý, sử dụng tài chính, {{tài sản công}}.",
+   "bank_extra": [
+    "tài sản tư",
+    "vốn doanh nghiệp tư nhân"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Kiểm toán nhà nước là cơ quan thuộc Chính phủ.",
+   "answer": false,
+   "explain": "Sai. Kiểm toán nhà nước do Quốc hội thành lập, hoạt động độc lập (khoản 1 Điều 118)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày địa vị pháp lý của Kiểm toán nhà nước theo Hiến pháp 2013.",
+   "model": "Cơ quan do Quốc hội thành lập, hoạt động độc lập, chỉ tuân theo pháp luật, kiểm toán việc quản lý, sử dụng tài chính, tài sản công (khoản 1 Điều 118); Tổng Kiểm toán do Quốc hội bầu, nhiệm kỳ do luật định, báo cáo trước Quốc hội, giữa hai kỳ họp trước Ủy ban thường vụ Quốc hội (khoản 2); tổ chức cụ thể do luật định (khoản 3).",
+   "keywords": [
+    "Quốc hội",
+    "độc lập",
+    "tài chính công",
+    "Tổng Kiểm toán"
+   ]
+  }
+ ]
+}

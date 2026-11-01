@@ -1,0 +1,115 @@
+{
+ "id": "quyen-rieng-tu",
+ "subject": "hien-phap",
+ "chapter": "c4-quyen-con-nguoi",
+ "term": "Quyền bất khả xâm phạm về đời sống riêng tư",
+ "definition": "Mọi người có quyền bất khả xâm phạm về đời sống riêng tư, bí mật cá nhân và bí mật gia đình; có quyền bảo vệ danh dự, uy tín của mình. Thông tin về đời sống riêng tư, bí mật cá nhân, bí mật gia đình được pháp luật bảo đảm an toàn. Mọi người có quyền bí mật thư tín, điện thoại, điện tín và các hình thức trao đổi thông tin riêng tư khác.",
+ "plain": "Điều 21 bảo vệ: đời sống riêng tư, bí mật cá nhân, bí mật gia đình; danh dự, uy tín; AN TOÀN THÔNG TIN riêng tư; bí mật thư tín, điện thoại, điện tín và \"các hình thức trao đổi thông tin riêng tư khác\" (bao gồm tin nhắn, email). Không ai được bóc mở, kiểm soát, thu giữ trái luật. Đây là cơ sở hiến định của pháp luật về bảo vệ dữ liệu cá nhân (Luật Bảo vệ dữ liệu cá nhân 91/2025/QH15).",
+ "example": "Một người tự ý đọc và đăng tin nhắn riêng của người khác lên mạng xã hội: xâm phạm quyền bí mật trao đổi thông tin riêng tư (khoản 2 Điều 21).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 21 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "bat-kha-xam-pham-than-the",
+  "quyen-con-nguoi-quyen-cong-dan"
+ ],
+ "keywords": [
+  "đời sống riêng tư",
+  "bí mật cá nhân, gia đình",
+  "bí mật thư tín, điện thoại",
+  "không bóc mở, thu giữ trái luật"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 2 Điều 21, quyền bí mật áp dụng với những hình thức nào?",
+   "options": [
+    "Thư tín, điện thoại, điện tín và các hình thức trao đổi thông tin riêng tư khác",
+    "Chỉ thư tay",
+    "Chỉ điện thoại cố định",
+    "Chỉ thư của cơ quan nhà nước"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 21.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 21 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thông tin về đời sống riêng tư, bí mật cá nhân được Hiến pháp bảo đảm như thế nào?",
+   "options": [
+    "Được pháp luật bảo đảm an toàn",
+    "Được công khai theo yêu cầu của bất kỳ ai",
+    "Không được bảo vệ",
+    "Chỉ bảo vệ với người nổi tiếng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 21.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 21 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Khoản 1 Điều 21",
+   "right": "Khoản 2 Điều 21",
+   "cases": [
+    {
+     "text": "Bảo vệ danh dự, uy tín",
+     "answer": "left"
+    },
+    {
+     "text": "Bí mật thư tín, điện thoại, điện tín",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 21 Hiến pháp 2013."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Mọi người có quyền bất khả xâm phạm về đời sống {{riêng tư}}, bí mật cá nhân và bí mật {{gia đình}}.",
+   "bank_extra": [
+    "công cộng",
+    "kinh doanh"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Không ai được bóc mở, kiểm soát, thu giữ {{trái luật}} thư tín, điện thoại, điện tín của người khác.",
+   "bank_extra": [
+    "công khai",
+    "tạm thời"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tin nhắn qua ứng dụng điện thoại thuộc phạm vi \"các hình thức trao đổi thông tin riêng tư khác\" được bảo vệ theo khoản 2 Điều 21.",
+   "answer": true,
+   "explain": "Đúng theo cách hiểu phổ biến."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quyền bất khả xâm phạm về đời sống riêng tư theo Hiến pháp 2013.",
+   "model": "Mọi người có quyền bất khả xâm phạm về đời sống riêng tư, bí mật cá nhân, gia đình, bảo vệ danh dự, uy tín; thông tin riêng tư được bảo đảm an toàn (khoản 1); quyền bí mật thư tín, điện thoại, điện tín, trao đổi thông tin riêng tư khác; không ai được bóc mở, kiểm soát, thu giữ trái luật (khoản 2).",
+   "keywords": [
+    "riêng tư",
+    "bí mật",
+    "thư tín",
+    "trái luật"
+   ]
+  }
+ ]
+}

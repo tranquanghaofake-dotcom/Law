@@ -1,0 +1,124 @@
+{
+ "id": "chat-van-hoi-dong-nhan-dan",
+ "subject": "hien-phap",
+ "chapter": "c11-chinh-quyen-dia-phuong",
+ "term": "Quyền chất vấn của đại biểu Hội đồng nhân dân",
+ "definition": "Đại biểu Hội đồng nhân dân có quyền chất vấn Chủ tịch Ủy ban nhân dân, các thành viên khác của Uỷ ban nhân dân, Chánh án Toà án nhân dân, Viện trưởng Viện kiểm sát nhân dân và Thủ trưởng cơ quan thuộc Uỷ ban nhân dân. Người bị chất vấn phải trả lời trước Hội đồng nhân dân.",
+ "plain": "Đối tượng bị chất vấn ở địa phương: Chủ tịch và thành viên Ủy ban nhân dân, Chánh án Tòa án, Viện trưởng Viện kiểm sát (cùng cấp), Thủ trưởng cơ quan thuộc Ủy ban nhân dân (giám đốc sở…). Người bị chất vấn bắt buộc trả lời trước Hội đồng nhân dân. Đại biểu còn có quyền kiến nghị với cơ quan, tổ chức ở địa phương; người đứng đầu phải tiếp đại biểu, xem xét, giải quyết kiến nghị.",
+ "example": "Tại kỳ họp Hội đồng nhân dân tỉnh, đại biểu chất vấn Giám đốc Sở Y tế về tình trạng thiếu thuốc tại bệnh viện tỉnh; Giám đốc Sở phải trả lời trước Hội đồng nhân dân.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 2 Điều 115 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "chat-van",
+  "dai-bieu-hoi-dong-nhan-dan",
+  "uy-ban-nhan-dan"
+ ],
+ "keywords": [
+  "Chủ tịch, thành viên Ủy ban nhân dân",
+  "Chánh án, Viện trưởng",
+  "Thủ trưởng cơ quan thuộc Ủy ban nhân dân",
+  "trả lời trước Hội đồng nhân dân"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đại biểu Hội đồng nhân dân có quyền chất vấn ai?",
+   "options": [
+    "Chủ tịch Ủy ban nhân dân, thành viên Ủy ban nhân dân, Chánh án, Viện trưởng, Thủ trưởng cơ quan thuộc Ủy ban nhân dân",
+    "Thủ tướng Chính phủ",
+    "Chủ tịch nước",
+    "Bộ trưởng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 115.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 115 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người bị đại biểu Hội đồng nhân dân chất vấn phải trả lời ở đâu?",
+   "options": [
+    "Trước Hội đồng nhân dân",
+    "Trước Mặt trận Tổ quốc",
+    "Trên báo chí",
+    "Trước Ủy ban nhân dân"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 115.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 115 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Đại biểu Hội đồng nhân dân chất vấn",
+   "right": "Đại biểu Quốc hội chất vấn",
+   "cases": [
+    {
+     "text": "Giám đốc Sở Tài chính tỉnh",
+     "answer": "left"
+    },
+    {
+     "text": "Bộ trưởng Bộ Tài chính",
+     "answer": "right"
+    },
+    {
+     "text": "Chánh án Tòa án nhân dân tỉnh",
+     "answer": "left"
+    },
+    {
+     "text": "Chánh án Tòa án nhân dân tối cao",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 80, 115."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đại biểu Hội đồng nhân dân có quyền chất vấn {{Chủ tịch Ủy ban nhân dân}}, Chánh án Tòa án nhân dân, Viện trưởng Viện kiểm sát nhân dân. Người bị chất vấn phải trả lời trước {{Hội đồng nhân dân}}.",
+   "bank_extra": [
+    "Thủ tướng",
+    "Quốc hội"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đại biểu Hội đồng nhân dân có quyền chất vấn {{Thủ trưởng}} cơ quan thuộc Ủy ban nhân dân.",
+   "bank_extra": [
+    "nhân viên",
+    "phó phòng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Đại biểu Hội đồng nhân dân tỉnh có quyền chất vấn Thủ tướng Chính phủ.",
+   "answer": false,
+   "explain": "Sai. Thủ tướng là đối tượng chất vấn của đại biểu Quốc hội (Điều 80), không thuộc khoản 2 Điều 115."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quyền chất vấn của đại biểu Hội đồng nhân dân.",
+   "model": "Đại biểu Hội đồng nhân dân chất vấn Chủ tịch Ủy ban nhân dân, thành viên khác của Ủy ban nhân dân, Chánh án Tòa án nhân dân, Viện trưởng Viện kiểm sát nhân dân và Thủ trưởng cơ quan thuộc Ủy ban nhân dân; người bị chất vấn phải trả lời trước Hội đồng nhân dân; đại biểu có quyền kiến nghị với cơ quan, tổ chức ở địa phương (khoản 2 Điều 115).",
+   "keywords": [
+    "Chủ tịch Ủy ban nhân dân",
+    "Chánh án",
+    "Viện trưởng",
+    "trả lời trước Hội đồng nhân dân"
+   ]
+  }
+ ]
+}

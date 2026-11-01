@@ -1,0 +1,114 @@
+{
+ "id": "luu-ky-chung-khoan",
+ "subject": "chung-khoan",
+ "chapter": "c4-dang-ky-luu-ky",
+ "term": "Lưu ký chứng khoán",
+ "definition": "Lưu ký chứng khoán là việc nhận ký gửi, bảo quản, chuyển giao chứng khoán cho khách hàng, giúp khách hàng thực hiện các quyền liên quan đến chứng khoán lưu ký.",
+ "plain": "Lưu ký giống \"gửi giữ\" chứng khoán: ngày nay chủ yếu là bút toán điện tử trên tài khoản lưu ký. Chứng khoán công ty đại chúng, niêm yết, đăng ký giao dịch phải lưu ký tập trung tại Tổng công ty TRƯỚC khi giao dịch. Nhà đầu tư lưu ký qua thành viên lưu ký (công ty chứng khoán, ngân hàng).",
+ "example": "Bạn có sổ cổ đông giấy của một công ty vừa lên sàn: muốn bán qua app thì phải làm thủ tục lưu ký cổ phiếu vào tài khoản ở công ty chứng khoán trước.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 34 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "dang-ky-chung-khoan",
+  "thanh-vien-luu-ky-bu-tru"
+ ],
+ "keywords": [
+  "ký gửi, bảo quản, chuyển giao",
+  "lưu ký tập trung",
+  "trước khi giao dịch"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 34 Điều 4, lưu ký chứng khoán gồm những hoạt động nào?",
+   "options": [
+    "Nhận ký gửi, bảo quản, chuyển giao chứng khoán, giúp khách hàng thực hiện quyền",
+    "Ghi nhận thông tin người sở hữu",
+    "Làm trung gian mua bán chứng khoán",
+    "Cam kết mua chứng khoán phát hành để bán lại"
+   ],
+   "answer": 0,
+   "explain": "Khoản 34 Điều 4. Phương án 2 là đăng ký chứng khoán, 3 là môi giới, 4 là bảo lãnh phát hành.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 34 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chứng khoán niêm yết phải được lưu ký tập trung tại Tổng công ty vào thời điểm nào?",
+   "options": [
+    "Trước khi thực hiện giao dịch",
+    "Trong vòng 1 năm sau khi niêm yết",
+    "Khi có tranh chấp",
+    "Không bắt buộc"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 62 (trừ trường hợp khác do Bộ trưởng Bộ Tài chính quy định).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 62 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Lưu ký chứng khoán",
+   "right": "Bảo lãnh phát hành",
+   "cases": [
+    {
+     "text": "Bảo quản, chuyển giao chứng khoán cho khách hàng",
+     "answer": "left"
+    },
+    {
+     "text": "Cam kết nhận mua chứng khoán của tổ chức phát hành để bán lại",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 34 và khoản 31 Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Lưu ký chứng khoán là việc nhận {{ký gửi}}, {{bảo quản}}, chuyển giao chứng khoán cho khách hàng.",
+   "bank_extra": [
+    "môi giới",
+    "phát hành"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tổng công ty lưu ký và bù trừ thực hiện quản lý chứng khoán {{riêng biệt}} cho từng thành viên lưu ký.",
+   "bank_extra": [
+    "chung",
+    "gộp"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tổng công ty lưu ký và bù trừ thực hiện đăng ký biện pháp bảo đảm đối với chứng khoán đã đăng ký tập trung.",
+   "answer": true,
+   "explain": "Đúng. Khoản 3 Điều 62."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Định nghĩa lưu ký chứng khoán và nêu quy định về lưu ký tập trung.",
+   "model": "Lưu ký là nhận ký gửi, bảo quản, chuyển giao chứng khoán cho khách hàng, giúp khách hàng thực hiện quyền (khoản 34 Điều 4). Chứng khoán của công ty đại chúng, niêm yết, đăng ký giao dịch phải lưu ký tập trung tại Tổng công ty trước khi giao dịch; quản lý riêng biệt cho từng thành viên lưu ký; Tổng công ty đăng ký biện pháp bảo đảm (Điều 62).",
+   "keywords": [
+    "ký gửi",
+    "bảo quản",
+    "lưu ký tập trung",
+    "trước khi giao dịch"
+   ]
+  }
+ ]
+}

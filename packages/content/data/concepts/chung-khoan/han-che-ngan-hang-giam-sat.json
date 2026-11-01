@@ -1,0 +1,119 @@
+{
+ "id": "han-che-ngan-hang-giam-sat",
+ "subject": "chung-khoan",
+ "chapter": "c7-quan-ly-quy-giam-sat",
+ "term": "Hạn chế đối với ngân hàng giám sát",
+ "definition": "Ngân hàng giám sát, thành viên Hội đồng quản trị, người điều hành và nhân viên của ngân hàng giám sát làm nhiệm vụ giám sát hoạt động và bảo quản tài sản của quỹ đại chúng, công ty đầu tư chứng khoán không được là người có liên quan hoặc có quan hệ sở hữu, vay hoặc cho vay với công ty quản lý quỹ, công ty đầu tư chứng khoán và ngược lại.",
+ "plain": "Người giám sát phải ĐỘC LẬP với người bị giám sát. Ngân hàng giám sát (và người của ngân hàng làm nhiệm vụ giám sát) không được là người có liên quan, không có quan hệ sở hữu, vay, cho vay với công ty quản lý quỹ; cũng không được làm đối tác mua, bán tài sản của quỹ mình giám sát (khoản 2).",
+ "example": "Ngân hàng H sở hữu 40% vốn công ty quản lý quỹ K: H không được làm ngân hàng giám sát cho các quỹ đại chúng do K quản lý.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 117 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "ngan-hang-giam-sat",
+  "nghia-vu-ngan-hang-giam-sat"
+ ],
+ "keywords": [
+  "độc lập",
+  "không là người có liên quan",
+  "không sở hữu, vay, cho vay",
+  "không làm đối tác mua bán"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ngân hàng giám sát không được có quan hệ nào với công ty quản lý quỹ mà mình giám sát?",
+   "options": [
+    "Là người có liên quan hoặc có quan hệ sở hữu, vay, cho vay",
+    "Ký hợp đồng giám sát",
+    "Trao đổi báo cáo định kỳ",
+    "Đối chiếu sổ kế toán"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 117.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 117 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ngân hàng giám sát có được làm đối tác mua tài sản do quỹ đại chúng mà mình giám sát bán ra không?",
+   "options": [
+    "Không",
+    "Có, nếu giá thị trường",
+    "Có, nếu Ban đại diện quỹ đồng ý",
+    "Có, nếu dưới 5% tài sản quỹ"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 117.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 117 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Được phép",
+   "right": "Bị cấm",
+   "cases": [
+    {
+     "text": "Ký hợp đồng giám sát với công ty quản lý quỹ",
+     "answer": "left"
+    },
+    {
+     "text": "Cho công ty quản lý quỹ đang được mình giám sát vay vốn",
+     "answer": "right"
+    },
+    {
+     "text": "Mua lại trái phiếu từ quỹ mình đang giám sát",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 116, 117."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ngân hàng giám sát không được là người có liên quan hoặc có quan hệ {{sở hữu}}, vay hoặc {{cho vay}} với công ty quản lý quỹ.",
+   "bank_extra": [
+    "tư vấn",
+    "hợp tác"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ngân hàng giám sát không được là {{đối tác mua, bán}} trong giao dịch mua, bán tài sản của quỹ đại chúng.",
+   "bank_extra": [
+    "người lưu ký",
+    "người xác nhận"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hạn chế tại Điều 117 chỉ áp dụng cho ngân hàng giám sát với tư cách pháp nhân, không áp dụng cho nhân viên.",
+   "answer": false,
+   "explain": "Sai. Điều 117 áp dụng cả thành viên Hội đồng quản trị, người điều hành và nhân viên làm nhiệm vụ giám sát, bảo quản tài sản."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các hạn chế đối với ngân hàng giám sát và lý do.",
+   "model": "Ngân hàng giám sát, thành viên Hội đồng quản trị, người điều hành, nhân viên làm nhiệm vụ giám sát không được là người có liên quan, có quan hệ sở hữu, vay, cho vay với công ty quản lý quỹ, công ty đầu tư chứng khoán và ngược lại; không được là đối tác mua, bán tài sản của quỹ (Điều 117). Lý do: bảo đảm tính độc lập của người giám sát.",
+   "keywords": [
+    "người có liên quan",
+    "sở hữu, vay, cho vay",
+    "đối tác mua, bán",
+    "độc lập"
+   ]
+  }
+ ]
+}

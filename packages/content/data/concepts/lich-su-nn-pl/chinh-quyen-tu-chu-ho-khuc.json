@@ -1,0 +1,127 @@
+{
+ "id": "chinh-quyen-tu-chu-ho-khuc",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c5-co-dai",
+ "term": "Chính quyền tự chủ họ Khúc, Dương Đình Nghệ",
+ "definition": "người Giao Châu là Khúc Hạo chiếm giữ châu trị, xưng là Tiết độ sứ, có ý mưu đồ lẫn nhau. (…) Hạo chết, Khúc Thừa Mỹ lên thay. (…) Lý Khắc Chính ở lại giữ Giao Châu, bị tướng của Khúc Hạo là Dương Đình Nghệ người Ái Châu đánh đuổi.",
+ "plain": "Cuối thời Đường, người Việt giành quyền tự chủ nhưng VẪN DÙNG DANH NGHĨA chức quan phương Bắc: Tiết độ sứ (Tĩnh Hải quân). Đây là chính quyền tự chủ \"trong khung\" đô hộ: thực quyền thuộc người Việt, hình thức vẫn là một trấn của phương Bắc. Nhiều sách sử hiện đại chép Khúc Thừa Dụ tự xưng Tiết độ sứ năm 905. Đoạn Toàn thư trích ở đây chỉ ghi Khúc Hạo, con trai ông. Các sách sử đời sau còn chép Khúc Hạo cải cách hành chính, thuế khóa. Nội dung này giáo trình trình bày theo nguồn khác, cần đối chiếu sách. Họ Khúc, Dương Đình Nghệ (931–937), rồi Ngô Quyền (938) là chặng chuyển tiếp từ tự chủ sang độc lập.",
+ "example": "So sánh: Khúc Hạo \"xưng là Tiết độ sứ\" (chức quan của nhà Đường) còn Ngô Quyền năm 939 \"bắt đầu xưng vương, đặt trăm quan\": từ tự chủ trong danh nghĩa phương Bắc sang nhà nước độc lập.",
+ "source": {
+  "kind": "primary",
+  "cite": "Đại Việt sử ký toàn thư, Ngoại kỷ, quyển V (bản dịch Viện KHXH Việt Nam, NXB KHXH 1993), Kỷ Nam Bắc phân tranh, tờ 17b–18b",
+  "url": "https://thpthiephoa1.edu.vn/wp-content/uploads/Dai-viet-su-ki-toan-thu.pdf"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "ngo-quyen-xung-vuong",
+  "nha-nuoc-van-xuan",
+  "chinh-quyen-do-ho-quan-huyen"
+ ],
+ "keywords": [
+  "Khúc Hạo",
+  "Tiết độ sứ",
+  "tự chủ",
+  "Dương Đình Nghệ"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Toàn thư, Khúc Hạo chiếm giữ châu trị và xưng là gì?",
+   "options": [
+    "Tiết độ sứ",
+    "Hoàng đế",
+    "Vương",
+    "Thái thú"
+   ],
+   "answer": 0,
+   "explain": "\"Khúc Hạo chiếm giữ châu trị, xưng là Tiết độ sứ\".",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Ngoại kỷ, quyển V, tờ 17b"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai là tướng của Khúc Hạo đánh đuổi Lý Khắc Chính của Nam Hán?",
+   "options": [
+    "Dương Đình Nghệ",
+    "Ngô Quyền",
+    "Kiều Công Tiễn",
+    "Đinh Công Trứ"
+   ],
+   "answer": 0,
+   "explain": "\"bị tướng của Khúc Hạo là Dương Đình Nghệ người Ái Châu đánh đuổi\".",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Ngoại kỷ, quyển V, tờ 18a"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tự chủ (danh nghĩa phương Bắc)",
+   "right": "Độc lập (xưng vương, đế)",
+   "cases": [
+    {
+     "text": "Khúc Hạo xưng Tiết độ sứ",
+     "answer": "left"
+    },
+    {
+     "text": "Ngô Quyền xưng vương, đặt trăm quan",
+     "answer": "right"
+    },
+    {
+     "text": "Khúc Thừa Mỹ xin nhà Lương trao tiết việt",
+     "answer": "left"
+    }
+   ],
+   "explain": "Toàn thư, Ngoại kỷ quyển V."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người Giao Châu là {{Khúc Hạo}} chiếm giữ châu trị, xưng là {{Tiết độ sứ}}.",
+   "bank_extra": [
+    "Ngô Quyền",
+    "Hoàng đế"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Vua Hán bảo tả hữu: \"Dân Giao Chỉ hay làm loạn, chỉ có thể {{ràng buộc}} (ki mi) mà thôi\".",
+   "bank_extra": [
+    "đồng hóa",
+    "cai trị trực tiếp"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Vì sao gọi chính quyền họ Khúc là \"tự chủ\" mà chưa phải nhà nước độc lập hoàn toàn?",
+   "options": [
+    "Người Việt nắm thực quyền nhưng vẫn mang danh nghĩa chức Tiết độ sứ của triều đình phương Bắc",
+    "Vì họ Khúc là người phương Bắc",
+    "Vì họ Khúc không có quân đội",
+    "Vì Toàn thư không chép về họ Khúc"
+   ],
+   "answer": 0,
+   "explain": "Khúc Hạo \"xưng là Tiết độ sứ\"; Khúc Thừa Mỹ còn xin nhà Lương \"trao tiết việt\": hình thức vẫn lệ thuộc."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày tính chất chính quyền tự chủ thời họ Khúc, Dương Đình Nghệ.",
+   "model": "Cuối Đường, Khúc Hạo chiếm châu trị, xưng Tiết độ sứ; Khúc Thừa Mỹ xin nhà Lương trao tiết việt, bị Nam Hán bắt; Dương Đình Nghệ đánh đuổi quân Nam Hán, xưng Tiết độ sứ. Thực quyền thuộc người Việt nhưng danh nghĩa vẫn là chức quan phương Bắc. Đây là bước chuyển sang độc lập với Ngô Quyền năm 938–939.",
+   "keywords": [
+    "Khúc Hạo",
+    "Tiết độ sứ",
+    "tự chủ",
+    "Dương Đình Nghệ",
+    "Ngô Quyền"
+   ]
+  }
+ ]
+}

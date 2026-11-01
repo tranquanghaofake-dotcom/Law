@@ -1,0 +1,127 @@
+{
+ "id": "dieu-kien-co-dong-cong-ty-chung-khoan",
+ "subject": "chung-khoan",
+ "chapter": "c5-cong-ty-chung-khoan",
+ "term": "Điều kiện về cơ cấu cổ đông của công ty chứng khoán",
+ "definition": "Điều kiện về cơ cấu cổ đông, thành viên góp vốn bao gồm: a) Có tối thiểu 02 cổ đông sáng lập, thành viên góp vốn là tổ chức. (…) b) Tổng tỷ lệ vốn góp của các tổ chức tối thiểu là 65% vốn điều lệ, trong đó các tổ chức là doanh nghiệp bảo hiểm, ngân hàng thương mại sở hữu tối thiểu là 30% vốn điều lệ.",
+ "plain": "Luật muốn công ty chứng khoán có \"xương sống\" là tổ chức tài chính vững: ít nhất 02 cổ đông sáng lập là tổ chức; tổ chức nắm tối thiểu 65% vốn điều lệ, trong đó doanh nghiệp bảo hiểm, ngân hàng thương mại nắm tối thiểu 30%. Thêm chống sở hữu chéo: ai sở hữu từ 10% một công ty chứng khoán thì (cùng người có liên quan) không sở hữu trên 5% công ty chứng khoán khác (điểm c khoản 2).",
+ "example": "Ba cá nhân giàu có muốn tự góp 100% vốn lập công ty chứng khoán: không đủ điều kiện, vì phải có tối thiểu 02 cổ đông sáng lập là tổ chức và tổ chức nắm tối thiểu 65% vốn điều lệ.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 3 Điều 74 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hinh-thuc-cong-ty-chung-khoan",
+  "dieu-kien-nhan-su-cong-ty-chung-khoan",
+  "han-che-cong-ty-chung-khoan"
+ ],
+ "keywords": [
+  "02 cổ đông sáng lập là tổ chức",
+  "65% vốn điều lệ",
+  "30% bảo hiểm, ngân hàng",
+  "10% – 5%"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tổng tỷ lệ vốn góp của các tổ chức trong công ty chứng khoán tối thiểu là bao nhiêu?",
+   "options": [
+    "65% vốn điều lệ",
+    "51% vốn điều lệ",
+    "30% vốn điều lệ",
+    "100% vốn điều lệ"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 3 Điều 74.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 74 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Doanh nghiệp bảo hiểm, ngân hàng thương mại phải sở hữu tối thiểu bao nhiêu vốn điều lệ công ty chứng khoán?",
+   "options": [
+    "30%",
+    "65%",
+    "10%",
+    "5%"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 3 Điều 74.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 74 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Từ 10%",
+   "right": "Trên 5%",
+   "cases": [
+    {
+     "text": "Mức sở hữu tại một công ty chứng khoán khiến cổ đông bị hạn chế sở hữu ở công ty chứng khoán khác",
+     "answer": "left"
+    },
+    {
+     "text": "Mức sở hữu tối đa (cùng người có liên quan) tại công ty chứng khoán khác",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điểm c khoản 2 Điều 74: sở hữu từ 10% một công ty thì không sở hữu trên 5% công ty khác."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công ty chứng khoán phải có tối thiểu {{02}} cổ đông sáng lập, thành viên góp vốn là {{tổ chức}}.",
+   "bank_extra": [
+    "05",
+    "cá nhân"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tổng tỷ lệ vốn góp của các tổ chức tối thiểu là {{65%}} vốn điều lệ, trong đó doanh nghiệp bảo hiểm, ngân hàng thương mại sở hữu tối thiểu là {{30%}}.",
+   "bank_extra": [
+    "51%",
+    "20%"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Tập đoàn C sở hữu 12% vốn điều lệ công ty chứng khoán D. Công ty con của C (người có liên quan) muốn mua 8% vốn công ty chứng khoán E. Có hợp lệ không?",
+   "options": [
+    "Không, vì C và người có liên quan không được sở hữu trên 5% vốn điều lệ của công ty chứng khoán khác",
+    "Có, vì công ty con là pháp nhân độc lập",
+    "Có, nếu E chưa niêm yết",
+    "Có, vì 8% dưới 10%"
+   ],
+   "answer": 0,
+   "explain": "Điểm c khoản 2 Điều 74 tính cả người có liên quan.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 74 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu điều kiện về cổ đông và cơ cấu cổ đông khi thành lập công ty chứng khoán.",
+   "model": "Cổ đông cá nhân không thuộc diện cấm thành lập, quản lý doanh nghiệp; cổ đông tổ chức có tư cách pháp nhân, có lãi 02 năm liền trước, báo cáo tài chính kiểm toán chấp nhận toàn phần; sở hữu từ 10% một công ty thì cùng người có liên quan không sở hữu trên 5% công ty khác. Cơ cấu: tối thiểu 02 cổ đông sáng lập là tổ chức; tổ chức nắm tối thiểu 65%, trong đó bảo hiểm, ngân hàng tối thiểu 30% (Điều 74).",
+   "keywords": [
+    "02 tổ chức",
+    "65%",
+    "30%",
+    "10%",
+    "5%"
+   ]
+  }
+ ]
+}

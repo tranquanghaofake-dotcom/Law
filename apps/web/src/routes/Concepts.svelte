@@ -105,6 +105,7 @@
               <blockquote class="quote">{c.definition}</blockquote>
               <p>{c.plain}</p>
               <p class="muted"><b>Ví dụ:</b> {c.example}</p>
+              {#if c.note}<p class="note small"><b>Cập nhật luật:</b> {c.note}</p>{/if}
               {#if c.confusables.length}
                 <p class="small">Dễ nhầm với:
                   {#each c.confusables as id, k (id)}{#if k}{', '}{/if}{#if byId[id]}<a href={hashFor('concepts', { subject: subject.id, concept: id })}>{termOf(id)}</a>{:else}{termOf(id)}{/if}{/each}

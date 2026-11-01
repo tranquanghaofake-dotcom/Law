@@ -1,0 +1,115 @@
+{
+ "id": "tu-van-dau-tu-chung-khoan",
+ "subject": "chung-khoan",
+ "chapter": "c8-kinh-doanh-chung-khoan",
+ "term": "Tư vấn đầu tư chứng khoán",
+ "definition": "Tư vấn đầu tư chứng khoán là việc cung cấp cho khách hàng kết quả phân tích, báo cáo phân tích và đưa ra khuyến nghị liên quan đến việc mua, bán, nắm giữ chứng khoán.",
+ "plain": "Tư vấn = phân tích + khuyến nghị; KHÁCH HÀNG tự quyết định. Đây là nghiệp vụ chung của cả công ty chứng khoán và công ty quản lý quỹ, và là nghiệp vụ duy nhất chi nhánh công ty chứng khoán nước ngoài tại Việt Nam được làm (khoản 7 Điều 86). Khuyến nghị phải phù hợp khả năng chịu rủi ro của khách (khoản 6 Điều 89); không được bảo đảm lợi nhuận (khoản 1 Điều 91).",
+ "example": "Công ty chứng khoán gửi khách báo cáo phân tích ngành ngân hàng kèm khuyến nghị \"MUA\" một mã cổ phiếu: đó là tư vấn đầu tư. Khách tự quyết định có mua hay không.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 32 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quan-ly-danh-muc-dau-tu",
+  "moi-gioi-chung-khoan",
+  "nghia-vu-cong-ty-chung-khoan"
+ ],
+ "keywords": [
+  "phân tích, khuyến nghị",
+  "khách hàng tự quyết định",
+  "nghiệp vụ chung"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 32 Điều 4, tư vấn đầu tư chứng khoán là gì?",
+   "options": [
+    "Cung cấp kết quả phân tích, báo cáo phân tích và khuyến nghị liên quan đến mua, bán, nắm giữ chứng khoán",
+    "Trực tiếp mua, bán chứng khoán thay khách hàng",
+    "Cam kết lợi nhuận cho khách hàng",
+    "Mua chứng khoán cho chính công ty"
+   ],
+   "answer": 0,
+   "explain": "Khoản 32 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 32 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chi nhánh công ty chứng khoán nước ngoài tại Việt Nam được thực hiện nghiệp vụ nào?",
+   "options": [
+    "Chỉ tư vấn đầu tư chứng khoán",
+    "Cả bốn nghiệp vụ",
+    "Chỉ môi giới",
+    "Môi giới và tự doanh"
+   ],
+   "answer": 0,
+   "explain": "Khoản 7 Điều 86.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 7 Điều 86 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tư vấn đầu tư",
+   "right": "Quản lý danh mục",
+   "cases": [
+    {
+     "text": "Khách hàng tự quyết định mua, bán",
+     "answer": "left"
+    },
+    {
+     "text": "Công ty trực tiếp quyết định mua, bán theo ủy thác",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 32 và 35 Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tư vấn đầu tư chứng khoán là việc cung cấp kết quả phân tích, báo cáo phân tích và đưa ra {{khuyến nghị}} liên quan đến việc mua, bán, {{nắm giữ}} chứng khoán.",
+   "bank_extra": [
+    "cam kết",
+    "phát hành"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Khuyến nghị, tư vấn đầu tư phải phù hợp với tình hình tài chính, mục tiêu đầu tư và khả năng chấp nhận {{rủi ro}} của từng khách hàng.",
+   "bank_extra": [
+    "thuế",
+    "lãi suất"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tư vấn đầu tư chứng khoán là nghiệp vụ mà cả công ty chứng khoán và công ty quản lý quỹ đều được thực hiện.",
+   "answer": true,
+   "explain": "Đúng. Điểm d khoản 1 Điều 72 và điểm c khoản 1 Điều 73."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Định nghĩa tư vấn đầu tư chứng khoán và các ràng buộc khi tư vấn.",
+   "model": "Cung cấp cho khách hàng kết quả phân tích, báo cáo phân tích và khuyến nghị về mua, bán, nắm giữ chứng khoán (khoản 32 Điều 4). Ràng buộc: khuyến nghị phù hợp tình hình tài chính, mục tiêu, khả năng chịu rủi ro của khách (khoản 6 Điều 89); không bảo đảm lợi nhuận (khoản 1 Điều 91); ký hợp đồng bằng văn bản.",
+   "keywords": [
+    "phân tích",
+    "khuyến nghị",
+    "phù hợp",
+    "không bảo đảm lợi nhuận"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,116 @@
+{
+ "id": "so-huu-toan-dan",
+ "subject": "hien-phap",
+ "chapter": "nang-cao",
+ "term": "Sở hữu toàn dân đối với đất đai, tài nguyên",
+ "definition": "Đất đai, tài nguyên nước, tài nguyên khoáng sản, nguồn lợi ở vùng biển, vùng trời, tài nguyên thiên nhiên khác và các tài sản do Nhà nước đầu tư, quản lý là tài sản công thuộc sở hữu toàn dân do Nhà nước đại diện chủ sở hữu và thống nhất quản lý.",
+ "plain": "Điều 53 phân biệt ba vai trò: TOÀN DÂN là chủ sở hữu; NHÀ NƯỚC là ĐẠI DIỆN chủ sở hữu và thống nhất quản lý. Đối tượng: đất đai, nước, khoáng sản, nguồn lợi vùng biển, vùng trời, tài nguyên khác và tài sản do Nhà nước đầu tư, quản lý (tài sản công). Kế thừa chế độ sở hữu toàn dân về đất đai từ Hiến pháp 1980 và Luật Đất đai 1987; Hiến pháp 2013 bổ sung cụm \"Nhà nước đại diện chủ sở hữu\".",
+ "example": "Một người tìm thấy mỏ khoáng sản trên đất mình đang sử dụng: khoáng sản vẫn thuộc sở hữu toàn dân do Nhà nước đại diện chủ sở hữu, không thuộc người sử dụng đất.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 53 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quyen-su-dung-dat-thu-hoi",
+  "kinh-te-thi-truong-dinh-huong-xhcn",
+  "ngan-sach-nha-nuoc"
+ ],
+ "keywords": [
+  "sở hữu toàn dân",
+  "Nhà nước đại diện chủ sở hữu",
+  "thống nhất quản lý",
+  "tài sản công"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 53 Hiến pháp 2013, ai là đại diện chủ sở hữu đối với đất đai?",
+   "options": [
+    "Nhà nước",
+    "Người sử dụng đất",
+    "Ủy ban nhân dân xã",
+    "Quốc hội"
+   ],
+   "answer": 0,
+   "explain": "Điều 53: \"do Nhà nước đại diện chủ sở hữu và thống nhất quản lý\".",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 53 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đối tượng nào thuộc sở hữu toàn dân theo Điều 53?",
+   "options": [
+    "Tài nguyên nước, khoáng sản, nguồn lợi vùng biển, vùng trời",
+    "Nhà ở riêng của công dân",
+    "Vốn góp của cổ đông",
+    "Thu nhập hợp pháp của cá nhân"
+   ],
+   "answer": 0,
+   "explain": "Điều 53.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 53 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Toàn dân",
+   "right": "Nhà nước",
+   "cases": [
+    {
+     "text": "Chủ sở hữu đất đai, tài nguyên",
+     "answer": "left"
+    },
+    {
+     "text": "Đại diện chủ sở hữu và thống nhất quản lý",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 53."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đất đai, tài nguyên nước, tài nguyên khoáng sản (…) là tài sản công thuộc sở hữu {{toàn dân}} do Nhà nước {{đại diện chủ sở hữu}} và thống nhất quản lý.",
+   "bank_extra": [
+    "tập thể",
+    "chủ sở hữu duy nhất"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Các tài sản do Nhà nước đầu tư, quản lý là {{tài sản công}}.",
+   "bank_extra": [
+    "tài sản tư",
+    "tài sản chung hợp nhất"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo Hiến pháp 2013, người được giao đất trở thành chủ sở hữu đất đai.",
+   "answer": false,
+   "explain": "Sai. Đất đai thuộc sở hữu toàn dân (Điều 53); người sử dụng đất có quyền sử dụng (khoản 2 Điều 54)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày chế độ sở hữu toàn dân theo Điều 53 Hiến pháp 2013.",
+   "model": "Đất đai, nước, khoáng sản, nguồn lợi vùng biển, vùng trời, tài nguyên thiên nhiên khác và tài sản do Nhà nước đầu tư, quản lý là tài sản công thuộc sở hữu toàn dân; Nhà nước đại diện chủ sở hữu và thống nhất quản lý.",
+   "keywords": [
+    "sở hữu toàn dân",
+    "đại diện chủ sở hữu",
+    "thống nhất quản lý",
+    "tài sản công"
+   ]
+  }
+ ]
+}

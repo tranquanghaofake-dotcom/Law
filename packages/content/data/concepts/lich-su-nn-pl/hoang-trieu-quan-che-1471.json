@@ -1,0 +1,118 @@
+{
+ "id": "hoang-trieu-quan-che-1471",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c6-trung-dai",
+ "term": "Hoàng triều quan chế (1471)",
+ "definition": "Ngày 26, hiệu định Hoàng triều quan chế. Vua dụ các quan viên văn võ và trăm họ rằng: \"Đất đai bờ cõi ngày nay so với trước kia khác nhau nhiều lắm, không thể không thân hành nắm quyền chế tác, làm trọn đạo biến thông\". Ở trong, quân vệ đông đúc thì năm phủ chia nhau nắm giữ, việc công bề bộn thì sáu bộ bàn nhau mà làm.",
+ "plain": "Năm 1471 (Hồng Đức năm thứ 2), Lê Thánh Tông ban HOÀNG TRIỀU QUAN CHẾ, quy định toàn diện hệ thống quan chức. Lời dụ cho thấy: vua \"THÂN HÀNH NẮM QUYỀN CHẾ TÁC\" (tự mình nắm quyền đặt ra luật lệ, quan chế), tức là quân chủ chuyên chế tập quyền cao độ. Bộ máy trung ương có năm phủ (quân sự), sáu bộ (hành chính), sáu khoa (giám sát), sáu tự (thừa hành), Thông chính sứ ty, Ngự sử đài. Ở địa phương có thừa ty, đô ty, phủ, châu, huyện. Nguyên tắc: các cơ quan \"liên quan với nhau, ràng buộc lẫn nhau\".",
+ "example": "Lời dụ kết: \"một khi phép tắc đã định ra, phải kính cẩn duy trì và thực hiện\". Đây là ý thức đề cao tính ổn định, tuân thủ của pháp chế phong kiến.",
+ "source": {
+  "kind": "primary",
+  "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển XII (bản dịch Viện KHXH Việt Nam, NXB KHXH 1993), Kỷ nhà Lê, Thánh Tông, năm 1471, tờ 66a–67a",
+  "url": "https://thpthiephoa1.edu.vn/wp-content/uploads/Dai-viet-su-ki-toan-thu.pdf"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "luc-bo-1466",
+  "luc-khoa-giam-sat",
+  "thua-tuyen-1466"
+ ],
+ "keywords": [
+  "1471",
+  "Hoàng triều quan chế",
+  "thân hành nắm quyền chế tác",
+  "năm phủ, sáu bộ, sáu khoa, sáu tự",
+  "ràng buộc lẫn nhau"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hoàng triều quan chế được hiệu định năm nào?",
+   "options": [
+    "1471",
+    "1466",
+    "1483",
+    "1428"
+   ],
+   "answer": 0,
+   "explain": "Toàn thư, Hồng Đức năm thứ 2 (1471).",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển XII, tờ 66a"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Câu \"không thể không thân hành nắm quyền chế tác\" trong lời dụ năm 1471 thể hiện điều gì?",
+   "options": [
+    "Vua trực tiếp nắm quyền đặt ra luật lệ, quan chế (tập quyền cao độ)",
+    "Vua giao quyền lập pháp cho triều thần",
+    "Vua chia quyền với các địa phương",
+    "Vua thoái vị"
+   ],
+   "answer": 0,
+   "explain": "Cách hiểu phổ biến dựa trên lời dụ.",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển XII, tờ 66b"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Năm phủ",
+   "right": "Sáu khoa",
+   "cases": [
+    {
+     "text": "Chia nhau nắm giữ quân vệ",
+     "answer": "left"
+    },
+    {
+     "text": "Xét bác trăm ty",
+     "answer": "right"
+    }
+   ],
+   "explain": "Lời dụ năm 1471."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quân vệ đông đúc thì {{năm phủ}} chia nhau nắm giữ, việc công bề bộn thì {{sáu bộ}} bàn nhau mà làm.",
+   "bank_extra": [
+    "sáu khoa",
+    "mười ba thừa ty"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "{{Ngự sử}} án để hặc tâu các quan làm bậy, soi xét ẩn khuất cho dân.",
+   "bank_extra": [
+    "Thượng thư",
+    "Tri phủ"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo lời dụ năm 1471, các cơ quan trong bộ máy \"liên quan với nhau, ràng buộc lẫn nhau\".",
+   "answer": true,
+   "explain": "Đúng. Toàn thư năm 1471."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày nội dung cơ bản của Hoàng triều quan chế năm 1471.",
+   "model": "Năm 1471 Lê Thánh Tông hiệu định Hoàng triều quan chế; vua thân hành nắm quyền chế tác; trung ương có năm phủ (quân sự), sáu bộ (hành chính), sáu khoa (giám sát), sáu tự (thừa hành), Thông chính ty, Ngự sử đài; địa phương có 13 thừa ty, đô ty, phủ, châu, huyện; các cơ quan ràng buộc, kiềm chế lẫn nhau; tập quyền cao độ.",
+   "keywords": [
+    "1471",
+    "chế tác",
+    "sáu bộ",
+    "sáu khoa",
+    "ràng buộc"
+   ]
+  }
+ ]
+}

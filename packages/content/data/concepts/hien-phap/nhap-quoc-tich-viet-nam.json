@@ -1,0 +1,131 @@
+{
+ "id": "nhap-quoc-tich-viet-nam",
+ "subject": "hien-phap",
+ "chapter": "c5-quoc-tich",
+ "term": "Nhập quốc tịch Việt Nam",
+ "definition": "Công dân nước ngoài và người không quốc tịch có đơn xin nhập quốc tịch Việt Nam thì có thể được nhập quốc tịch Việt Nam, nếu có đủ các điều kiện sau đây: a) Có năng lực hành vi dân sự đầy đủ theo quy định của pháp luật Việt Nam, trừ trường hợp là người chưa thành niên xin nhập quốc tịch Việt Nam theo cha hoặc mẹ, người chưa thành niên có cha hoặc mẹ là công dân Việt Nam; (…) đ) Thời gian thường trú ở Việt Nam từ 05 năm trở lên tính đến thời điểm xin nhập quốc tịch Việt Nam;",
+ "plain": "Điều kiện chung: năng lực hành vi dân sự đầy đủ; tuân thủ Hiến pháp, pháp luật, tôn trọng văn hóa; biết tiếng Việt; đang thường trú; thường trú từ 05 năm; có khả năng bảo đảm cuộc sống. Người có vợ, chồng, con đẻ là công dân Việt Nam được miễn 3 điều kiện (tiếng Việt, 05 năm, bảo đảm cuộc sống); người có cha mẹ đẻ, ông bà là công dân Việt Nam, có công lao đặc biệt, có lợi cho Nhà nước, người chưa thành niên nhập theo cha mẹ được miễn thêm điều kiện đang thường trú. Chủ tịch nước quyết định cho nhập quốc tịch và cho phép giữ quốc tịch nước ngoài.",
+ "example": "Anh M người Pháp lấy vợ Việt Nam, sống ở Việt Nam 2 năm, chưa thạo tiếng Việt: vẫn có thể được nhập quốc tịch Việt Nam vì được miễn các điều kiện về tiếng Việt, 05 năm thường trú và bảo đảm cuộc sống (khoản 2 Điều 19); nếu đáp ứng điều kiện, có thể được Chủ tịch nước cho giữ quốc tịch Pháp.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 19 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-53-vbhn-vpqh-quoc-tich-viet-nam--179993"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tro-lai-quoc-tich",
+  "nguyen-tac-mot-quoc-tich",
+  "nguoi-khong-quoc-tich"
+ ],
+ "keywords": [
+  "05 năm thường trú",
+  "biết tiếng Việt",
+  "miễn điều kiện khi có vợ, chồng, con là công dân",
+  "Chủ tịch nước quyết định"
+ ],
+ "note": "Luật 79/2025/QH15 (hiệu lực 01/7/2025) sửa toàn bộ Điều 19 (điều kiện, các trường hợp được miễn điều kiện, tên gọi, việc giữ quốc tịch nước ngoài). Giáo trình in trước 2025 trình bày theo Điều 19 cũ, cần đối chiếu từng điểm.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thời gian thường trú tối thiểu ở Việt Nam để nhập quốc tịch theo điều kiện chung là bao lâu?",
+   "options": [
+    "05 năm",
+    "03 năm",
+    "10 năm",
+    "02 năm"
+   ],
+   "answer": 0,
+   "explain": "Điểm đ khoản 1 Điều 19.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 19 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người xin nhập quốc tịch có vợ hoặc chồng là công dân Việt Nam được miễn những điều kiện nào?",
+   "options": [
+    "Biết tiếng Việt, thường trú từ 05 năm, khả năng bảo đảm cuộc sống",
+    "Mọi điều kiện",
+    "Chỉ điều kiện biết tiếng Việt",
+    "Không được miễn điều kiện nào"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 19: miễn điểm c, đ, e khoản 1.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 19 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Điều kiện chung (khoản 1 Điều 19)",
+   "right": "Không phải điều kiện nhập quốc tịch",
+   "cases": [
+    {
+     "text": "Biết tiếng Việt đủ để hòa nhập cộng đồng",
+     "answer": "left"
+    },
+    {
+     "text": "Có khả năng bảo đảm cuộc sống tại Việt Nam",
+     "answer": "left"
+    },
+    {
+     "text": "Có bằng đại học tại Việt Nam",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 19."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người xin nhập quốc tịch phải biết {{tiếng Việt}} đủ để hòa nhập vào cộng đồng và có thời gian thường trú ở Việt Nam từ {{05 năm}} trở lên.",
+   "bank_extra": [
+    "tiếng Anh",
+    "10 năm"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người xin nhập quốc tịch Việt Nam được giữ quốc tịch nước ngoài nếu đáp ứng điều kiện và được {{Chủ tịch nước}} cho phép.",
+   "bank_extra": [
+    "Bộ trưởng Bộ Tư pháp",
+    "Thủ tướng"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Bà L (quốc tịch Thái Lan) có mẹ đẻ là công dân Việt Nam, đang sống ở Thái Lan, không biết tiếng Việt, xin nhập quốc tịch Việt Nam. Điều kiện nào bà được miễn?",
+   "options": [
+    "Biết tiếng Việt, đang thường trú, thường trú từ 05 năm, khả năng bảo đảm cuộc sống",
+    "Chỉ điều kiện biết tiếng Việt",
+    "Mọi điều kiện kể cả năng lực hành vi dân sự",
+    "Không được miễn điều kiện nào"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 3 Điều 19: miễn các điểm c, d, đ, e khoản 1.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 19 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các điều kiện nhập quốc tịch Việt Nam và các trường hợp được miễn.",
+   "model": "Điều kiện (khoản 1 Điều 19): năng lực hành vi dân sự đầy đủ (trừ người chưa thành niên theo cha mẹ hoặc có cha mẹ là công dân Việt Nam); tuân thủ Hiến pháp, pháp luật, tôn trọng văn hóa; biết tiếng Việt; đang thường trú; thường trú từ 05 năm; bảo đảm cuộc sống. Miễn c, đ, e: có vợ, chồng, con đẻ là công dân Việt Nam. Miễn c, d, đ, e: có cha mẹ đẻ hoặc ông bà là công dân Việt Nam, có công lao đặc biệt, có lợi cho Nhà nước, người chưa thành niên theo cha mẹ. Phải có tên Việt Nam (có thể ghép tên nếu giữ quốc tịch nước ngoài); không nhập nếu phương hại lợi ích quốc gia; giữ quốc tịch nước ngoài do Chủ tịch nước cho phép.",
+   "keywords": [
+    "05 năm",
+    "tiếng Việt",
+    "miễn",
+    "Chủ tịch nước"
+   ]
+  }
+ ]
+}

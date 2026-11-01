@@ -1,0 +1,117 @@
+{
+ "id": "nguyen-tac-blds-1995",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c8-hien-dai",
+ "term": "Các nguyên tắc cơ bản của Bộ luật Dân sự 1995",
+ "definition": "Quyền tự do cam kết, thoả thuận phù hợp với quy định của pháp luật trong việc xác lập quyền, nghĩa vụ dân sự được pháp luật bảo đảm. (…) Mọi cam kết, thoả thuận hợp pháp có hiệu lực bắt buộc thực hiện đối với các bên. (…) Trong trường hợp pháp luật không quy định và các bên không có thoả thuận, thì có thể áp dụng tập quán hoặc quy định tương tự của pháp luật, nhưng không được trái với những nguyên tắc quy định trong Bộ luật này.",
+ "plain": "BLDS 1995 dành Chương I cho các NGUYÊN TẮC CƠ BẢN (Điều 2–14): tôn trọng lợi ích Nhà nước, công cộng; tuân thủ pháp luật; tôn trọng đạo đức, truyền thống; bảo vệ quyền nhân thân, quyền sở hữu; TỰ DO, TỰ NGUYỆN cam kết, thỏa thuận (Điều 7); BÌNH ĐẲNG (Điều 8); THIỆN CHÍ, TRUNG THỰC (Điều 9); chịu trách nhiệm dân sự; HÒA GIẢI; và ÁP DỤNG TẬP QUÁN, ÁP DỤNG TƯƠNG TỰ PHÁP LUẬT (Điều 14) khi luật không quy định. So với Sắc lệnh 97/SL (1950), tự do khế ước được đề cao hơn, phù hợp kinh tế thị trường.",
+ "example": "Khác biệt cần nhớ: luật dân sự cho áp dụng tương tự pháp luật khi luật không quy định (Điều 14 BLDS 1995), còn luật hình sự cấm (chỉ hành vi luật quy định mới là tội, Điều 2 BLHS 1985).",
+ "source": {
+  "kind": "primary",
+  "cite": "Bộ luật Dân sự 1995, Điều 7 và Điều 14",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-Dan-su-1995-44-L-CTN-39391.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "blds-1995",
+  "sac-lenh-97-khe-uoc",
+  "blhs-1985"
+ ],
+ "keywords": [
+  "tự do, tự nguyện cam kết, thỏa thuận",
+  "bình đẳng",
+  "thiện chí, trung thực",
+  "áp dụng tập quán, tương tự pháp luật"
+ ],
+ "note": "Bộ luật Dân sự 1995 có hiệu lực từ 01/7/1996, đã hết hiệu lực (thay bằng Bộ luật Dân sự 2005); hiện hành là Bộ luật Dân sự 91/2015/QH13. Học để hiểu lịch sử.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 14 BLDS 1995, khi pháp luật không quy định và các bên không có thỏa thuận thì áp dụng gì?",
+   "options": [
+    "Tập quán hoặc quy định tương tự của pháp luật, không trái các nguyên tắc của Bộ luật",
+    "Án lệ nước ngoài",
+    "Ý kiến của Ủy ban nhân dân",
+    "Không giải quyết"
+   ],
+   "answer": 0,
+   "explain": "Điều 14.",
+   "source": {
+    "kind": "primary",
+    "cite": "Bộ luật Dân sự 1995, Điều 14"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 7 BLDS 1995, cam kết, thỏa thuận hợp pháp có hiệu lực như thế nào?",
+   "options": [
+    "Bắt buộc thực hiện đối với các bên",
+    "Chỉ có giá trị tham khảo",
+    "Chỉ có hiệu lực khi được công chứng",
+    "Do Tòa án quyết định có hiệu lực hay không"
+   ],
+   "answer": 0,
+   "explain": "Điều 7.",
+   "source": {
+    "kind": "primary",
+    "cite": "Bộ luật Dân sự 1995, Điều 7"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Luật dân sự (BLDS 1995)",
+   "right": "Luật hình sự (BLHS 1985)",
+   "cases": [
+    {
+     "text": "Được áp dụng tập quán, tương tự pháp luật khi luật không quy định",
+     "answer": "left"
+    },
+    {
+     "text": "Chỉ hành vi được luật quy định mới là tội phạm",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 14 BLDS 1995; Điều 2 BLHS 1985."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Mọi cam kết, thoả thuận {{hợp pháp}} có hiệu lực {{bắt buộc thực hiện}} đối với các bên.",
+   "bank_extra": [
+    "miệng",
+    "tham khảo"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Trong trường hợp pháp luật không quy định và các bên không có thoả thuận, thì có thể áp dụng {{tập quán}} hoặc quy định tương tự của pháp luật.",
+   "bank_extra": [
+    "án lệ nước ngoài",
+    "ý chí của Tòa án"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo Điều 8 BLDS 1995, có thể đối xử khác nhau trong quan hệ dân sự dựa trên hoàn cảnh kinh tế của các bên.",
+   "answer": false,
+   "explain": "Sai. Điều 8 cấm lấy lý do khác biệt về dân tộc, giới tính, hoàn cảnh kinh tế… để đối xử không bình đẳng."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các nguyên tắc cơ bản của Bộ luật Dân sự 1995.",
+   "model": "Tôn trọng lợi ích Nhà nước, công cộng và người khác; tuân thủ pháp luật; tôn trọng đạo đức, truyền thống; bảo vệ quyền nhân thân, quyền sở hữu; tự do, tự nguyện cam kết, thỏa thuận (Điều 7); bình đẳng (Điều 8); thiện chí, trung thực (Điều 9); chịu trách nhiệm dân sự; hòa giải; áp dụng tập quán, tương tự pháp luật (Điều 14).",
+   "keywords": [
+    "tự do thỏa thuận",
+    "bình đẳng",
+    "thiện chí, trung thực",
+    "tập quán"
+   ]
+  }
+ ]
+}

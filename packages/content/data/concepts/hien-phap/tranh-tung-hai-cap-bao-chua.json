@@ -1,0 +1,115 @@
+{
+ "id": "tranh-tung-hai-cap-bao-chua",
+ "subject": "hien-phap",
+ "chapter": "c10-toa-an-vien-kiem-sat",
+ "term": "Tranh tụng, hai cấp xét xử và quyền bào chữa",
+ "definition": "Nguyên tắc tranh tụng trong xét xử được bảo đảm. Chế độ xét xử sơ thẩm, phúc thẩm được bảo đảm. Quyền bào chữa của bị can, bị cáo, quyền bảo vệ lợi ích hợp pháp của đương sự được bảo đảm.",
+ "plain": "Ba bảo đảm tố tụng do Hiến pháp 2013 hiến định: TRANH TỤNG (các bên bình đẳng đưa chứng cứ, tranh luận; Tòa phán quyết dựa trên kết quả tranh tụng; tranh tụng lần đầu được ghi vào Hiến pháp năm 2013); HAI CẤP xét xử (sơ thẩm, phúc thẩm: bản án sơ thẩm có thể bị kháng cáo, kháng nghị); quyền BÀO CHỮA của bị can, bị cáo và quyền bảo vệ lợi ích hợp pháp của đương sự.",
+ "example": "Bị cáo không đồng ý bản án sơ thẩm có quyền kháng cáo để Tòa án cấp trên xét xử phúc thẩm; ở cả hai cấp, bị cáo có quyền nhờ luật sư bào chữa.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 5–7 Điều 103 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "xet-xu-cong-khai-tap-the",
+  "doc-lap-xet-xu",
+  "quyen-con-nguoi-quyen-cong-dan"
+ ],
+ "keywords": [
+  "tranh tụng",
+  "sơ thẩm, phúc thẩm",
+  "quyền bào chữa"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chế độ xét xử nào được Hiến pháp bảo đảm theo khoản 6 Điều 103?",
+   "options": [
+    "Sơ thẩm, phúc thẩm",
+    "Chỉ sơ thẩm",
+    "Ba cấp xét xử",
+    "Chỉ giám đốc thẩm"
+   ],
+   "answer": 0,
+   "explain": "Khoản 6 Điều 103.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 6 Điều 103 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nguyên tắc nào trong xét xử được bảo đảm theo khoản 5 Điều 103?",
+   "options": [
+    "Tranh tụng",
+    "Thẩm vấn một chiều",
+    "Suy đoán có tội",
+    "Xét xử vắng mặt"
+   ],
+   "answer": 0,
+   "explain": "Khoản 5 Điều 103.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 5 Điều 103 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quyền bào chữa",
+   "right": "Quyền bảo vệ lợi ích hợp pháp của đương sự",
+   "cases": [
+    {
+     "text": "Bị can, bị cáo trong vụ án hình sự",
+     "answer": "left"
+    },
+    {
+     "text": "Nguyên đơn, bị đơn trong vụ án dân sự",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 7 Điều 103."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nguyên tắc {{tranh tụng}} trong xét xử được bảo đảm. Chế độ xét xử sơ thẩm, {{phúc thẩm}} được bảo đảm.",
+   "bank_extra": [
+    "thẩm vấn",
+    "giám đốc thẩm"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quyền {{bào chữa}} của bị can, bị cáo được bảo đảm.",
+   "bank_extra": [
+    "im lặng tuyệt đối",
+    "miễn trừ"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hiến pháp 2013 bảo đảm chế độ xét xử ba cấp: sơ thẩm, phúc thẩm, giám đốc thẩm.",
+   "answer": false,
+   "explain": "Sai. Khoản 6 Điều 103 bảo đảm chế độ xét xử sơ thẩm, phúc thẩm (hai cấp). Giám đốc thẩm, tái thẩm là thủ tục xem xét lại bản án đã có hiệu lực, không phải một cấp xét xử."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày các bảo đảm tố tụng tại khoản 5–7 Điều 103 Hiến pháp.",
+   "model": "Bảo đảm nguyên tắc tranh tụng trong xét xử (khoản 5); bảo đảm chế độ xét xử sơ thẩm, phúc thẩm (khoản 6); bảo đảm quyền bào chữa của bị can, bị cáo và quyền bảo vệ lợi ích hợp pháp của đương sự (khoản 7).",
+   "keywords": [
+    "tranh tụng",
+    "sơ thẩm, phúc thẩm",
+    "bào chữa",
+    "đương sự"
+   ]
+  }
+ ]
+}

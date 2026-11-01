@@ -1,0 +1,124 @@
+{
+ "id": "chuc-thu-van-khe-1237",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c6-trung-dai",
+ "term": "Hình thức chúc thư, văn khế thời Trần (1237)",
+ "definition": "Mùa xuân, tháng giêng, xuống [chiếu] rằng: khi làm giấy tờ về chúc thư, văn khế ruộng đất và vay mượn tiền bạc thì người làm chứng in tay ở 3 dòng trước, người bán in tay ở 4 dòng sau.",
+ "plain": "Chiếu năm 1237 quy định HÌNH THỨC của giao dịch dân sự: chúc thư (di chúc), văn khế ruộng đất (hợp đồng mua bán) và vay mượn tiền bạc phải lập thành giấy tờ, có NGƯỜI LÀM CHỨNG và điểm chỉ (in tay) theo vị trí quy định. Đây là bằng chứng sớm về quy định hình thức hợp đồng, di chúc trong pháp luật Việt Nam: quan hệ dân sự (ruộng đất tư, vay nợ) đã phát triển, cần chứng cứ để giải quyết tranh chấp. Có thể liên hệ với yêu cầu về hình thức giao dịch trong pháp luật dân sự hiện đại.",
+ "example": "Một người bán ruộng thời Trần lập văn khế: người làm chứng in tay ở 3 dòng đầu, người bán in tay ở 4 dòng cuối. Thiếu các dấu tay này thì văn khế khó được công nhận khi có tranh chấp.",
+ "source": {
+  "kind": "primary",
+  "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển V (bản dịch Viện KHXH Việt Nam, NXB KHXH 1993), Kỷ nhà Trần, Thái Tông, năm 1237, tờ 9b",
+  "url": "https://thpthiephoa1.edu.vn/wp-content/uploads/Dai-viet-su-ki-toan-thu.pdf"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quoc-trieu-thong-che",
+  "lau-chuong-kien-tung"
+ ],
+ "keywords": [
+  "1237",
+  "chúc thư",
+  "văn khế ruộng đất",
+  "vay mượn",
+  "người làm chứng",
+  "in tay"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chiếu năm 1237 quy định hình thức cho những loại giấy tờ nào?",
+   "options": [
+    "Chúc thư, văn khế ruộng đất và vay mượn tiền bạc",
+    "Đơn kiện hình sự",
+    "Sổ hộ tịch",
+    "Văn bằng thi cử"
+   ],
+   "answer": 0,
+   "explain": "Toàn thư năm 1237.",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển V, tờ 9b"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo chiếu năm 1237, người làm chứng in tay ở đâu trên văn khế?",
+   "options": [
+    "Ở 3 dòng trước",
+    "Ở 4 dòng sau",
+    "Ở giữa văn bản",
+    "Không phải in tay"
+   ],
+   "answer": 0,
+   "explain": "\"người làm chứng in tay ở 3 dòng trước, người bán in tay ở 4 dòng sau\".",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển V, tờ 9b"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Người làm chứng",
+   "right": "Người bán",
+   "cases": [
+    {
+     "text": "In tay ở 3 dòng trước",
+     "answer": "left"
+    },
+    {
+     "text": "In tay ở 4 dòng sau",
+     "answer": "right"
+    }
+   ],
+   "explain": "Chiếu năm 1237."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Khi làm giấy tờ về {{chúc thư}}, văn khế ruộng đất và vay mượn tiền bạc thì người làm chứng {{in tay}} ở 3 dòng trước.",
+   "bank_extra": [
+    "bản án",
+    "đóng dấu"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người bán in tay ở {{4}} dòng sau.",
+   "bank_extra": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Quy định năm 1237 phản ánh điều gì về xã hội và pháp luật thời Trần?",
+   "options": [
+    "Giao dịch dân sự về ruộng đất, vay nợ, thừa kế đã phổ biến; nhà nước quy định hình thức, chứng cứ để hạn chế tranh chấp",
+    "Nhà nước cấm mua bán ruộng đất",
+    "Pháp luật thời Trần chỉ có luật hình",
+    "Mọi giao dịch đều phải do quan lập"
+   ],
+   "answer": 0,
+   "explain": "Đánh giá dựa trên câu chữ chiếu năm 1237."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quy định năm 1237 về hình thức chúc thư, văn khế và ý nghĩa của nó.",
+   "model": "Chiếu năm 1237 quy định chúc thư, văn khế ruộng đất, vay mượn tiền bạc phải lập giấy tờ; người làm chứng in tay ở 3 dòng trước, người bán in tay ở 4 dòng sau. Ý nghĩa: quy định hình thức, chứng cứ cho giao dịch dân sự; cho thấy sở hữu tư về ruộng đất và quan hệ vay nợ, thừa kế phát triển.",
+   "keywords": [
+    "1237",
+    "chúc thư",
+    "văn khế",
+    "làm chứng",
+    "in tay"
+   ]
+  }
+ ]
+}

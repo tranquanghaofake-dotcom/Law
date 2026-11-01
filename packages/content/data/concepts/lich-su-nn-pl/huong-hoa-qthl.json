@@ -1,0 +1,120 @@
+{
+ "id": "huong-hoa-qthl",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c6-trung-dai",
+ "term": "Hương hỏa và thừa kế theo pháp luật trong Quốc triều hình luật",
+ "definition": "Cha mẹ mất cả, có ruộng đất, chưa kịp để lại chúc thư, mà anh em chị em tự chia nhau, thì lấy một phần hai mươi số ruộng đất làm phần hương hỏa, giao cho người con trai trưởng giữ, còn thì chia nhau. Phần con của vợ lẽ, nàng hầu, thì phải kém.",
+ "plain": "HƯƠNG HỎA là phần tài sản (thường là ruộng đất) dành cho việc thờ cúng tổ tiên. Khi cha mẹ chết không có chúc thư (thừa kế theo pháp luật), lấy 1/20 ruộng đất làm hương hỏa giao con trai trưởng, phần còn lại các con (cả con trai và CON GÁI: \"anh em chị em\") chia nhau; con vợ lẽ, nàng hầu được ít hơn. Điều 391: không có con trai trưởng thì CON GÁI TRƯỞNG giữ hương hỏa. Đây là điểm tiến bộ, đặc sắc Việt Nam so với luật Trung Hoa: con gái có quyền thừa kế, thậm chí giữ hương hỏa. Các điều 374–376 còn quy định chia điền sản giữa vợ chồng, chú ý phần riêng của người vợ.",
+ "example": "Gia đình có ba người con (một con trai trưởng, hai con gái), cha mẹ chết không để chúc thư, có 20 mẫu ruộng: 1 mẫu làm hương hỏa giao con trai trưởng; 19 mẫu còn lại anh chị em chia nhau.",
+ "source": {
+  "kind": "primary",
+  "cite": "Quốc triều hình luật, Điều 388 (bản dịch Nguyễn Ngọc Nhuận, Nguyễn Tá Nhí; bản điện tử, chưa đối chiếu bản in)",
+  "url": "https://luatduonggia.com/wp-content/uploads/2024/03/QUOC-TRIEU-HINH-LUAT.pdf"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "chuc-thu-van-khe-1237",
+  "bao-ve-nguoi-yeu-the-qthl"
+ ],
+ "keywords": [
+  "hương hỏa",
+  "1/20",
+  "con trai trưởng",
+  "con gái trưởng (Điều 391)",
+  "con gái được thừa kế"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 388, phần hương hỏa khi cha mẹ chết không có chúc thư là bao nhiêu?",
+   "options": [
+    "Một phần hai mươi số ruộng đất",
+    "Một nửa số ruộng đất",
+    "Một phần ba",
+    "Toàn bộ ruộng đất"
+   ],
+   "answer": 0,
+   "explain": "Điều 388.",
+   "source": {
+    "kind": "primary",
+    "cite": "Quốc triều hình luật, Điều 388"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 391, nếu không có con trai trưởng thì ai giữ hương hỏa?",
+   "options": [
+    "Con gái trưởng",
+    "Người trưởng họ",
+    "Con vợ lẽ",
+    "Quan sở tại"
+   ],
+   "answer": 0,
+   "explain": "Điều 391 (lệnh năm 1517).",
+   "source": {
+    "kind": "primary",
+    "cite": "Quốc triều hình luật, Điều 391"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Điều 388",
+   "right": "Điều 391",
+   "cases": [
+    {
+     "text": "Hương hỏa giao cho con trai trưởng giữ",
+     "answer": "left"
+    },
+    {
+     "text": "Không có con trai trưởng thì dùng con gái trưởng",
+     "answer": "right"
+    },
+    {
+     "text": "Phần con của vợ lẽ, nàng hầu thì phải kém",
+     "answer": "left"
+    }
+   ],
+   "explain": "Quốc triều hình luật."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Lấy {{một phần hai mươi}} số ruộng đất làm phần hương hỏa, giao cho người con {{trai trưởng}} giữ.",
+   "bank_extra": [
+    "một phần ba",
+    "gái út"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người giữ hương hỏa có con trai trưởng thì dùng con trai trưởng, không có con trai trưởng thì dùng {{con gái trưởng}}.",
+   "bank_extra": [
+    "cháu nội",
+    "người trưởng họ"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo Quốc triều hình luật, con gái hoàn toàn không được hưởng thừa kế ruộng đất của cha mẹ.",
+   "answer": false,
+   "explain": "Sai. Điều 388 cho \"anh em chị em\" cùng chia; Điều 391 còn cho con gái trưởng giữ hương hỏa khi không có con trai trưởng."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày chế định hương hỏa và điểm tiến bộ về quyền thừa kế của con gái trong Quốc triều hình luật.",
+   "model": "Điều 388: cha mẹ chết không có chúc thư, lấy 1/20 ruộng đất làm hương hỏa giao con trai trưởng, còn lại anh em chị em chia nhau, con vợ lẽ, nàng hầu phần kém hơn. Điều 391: không có con trai trưởng thì con gái trưởng giữ hương hỏa. Điểm tiến bộ: con gái được thừa kế, có thể giữ hương hỏa, khác luật Trung Hoa.",
+   "keywords": [
+    "1/20",
+    "con trai trưởng",
+    "con gái trưởng",
+    "thừa kế"
+   ]
+  }
+ ]
+}

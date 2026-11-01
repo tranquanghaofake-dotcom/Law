@@ -1,0 +1,131 @@
+{
+ "id": "nghia-vu-ngan-hang-giam-sat",
+ "subject": "chung-khoan",
+ "chapter": "c7-quan-ly-quy-giam-sat",
+ "term": "Nghĩa vụ của ngân hàng giám sát",
+ "definition": "Thực hiện lưu ký tài sản của quỹ đại chúng, công ty đầu tư chứng khoán; quản lý tách biệt tài sản của quỹ đại chúng, công ty đầu tư chứng khoán và các tài sản khác của ngân hàng giám sát; c) Giám sát để bảo đảm công ty quản lý quỹ đầu tư chứng khoán quản lý quỹ đại chúng, Tổng giám đốc (Giám đốc) công ty đầu tư chứng khoán quản lý tài sản của công ty đầu tư chứng khoán tuân thủ quy định của Luật này và Điều lệ quỹ đầu tư chứng khoán, Điều lệ công ty đầu tư chứng khoán;",
+ "plain": "Các nghĩa vụ xoay quanh 3 chữ: GIỮ (lưu ký, tách biệt tài sản quỹ với tài sản ngân hàng), CHI (thu, chi, chuyển giao tài sản theo yêu cầu hợp pháp của công ty quản lý quỹ), CANH (giám sát tuân thủ, xác nhận báo cáo, đối chiếu sổ sách định kỳ, báo cáo Ủy ban khi phát hiện vi phạm).",
+ "example": "Khi đối chiếu sổ sách định kỳ, ngân hàng giám sát phát hiện công ty quản lý quỹ ghi khống giá một tài sản để nâng NAV: ngân hàng không xác nhận báo cáo và phải báo cáo Ủy ban Chứng khoán Nhà nước.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 2 Điều 116 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "ngan-hang-giam-sat",
+  "han-che-ngan-hang-giam-sat",
+  "gia-tri-tai-san-rong"
+ ],
+ "keywords": [
+  "lưu ký, tách biệt",
+  "giám sát tuân thủ",
+  "thu chi theo yêu cầu hợp pháp",
+  "báo cáo Ủy ban"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khi phát hiện công ty quản lý quỹ vi phạm Điều lệ quỹ, ngân hàng giám sát phải làm gì?",
+   "options": [
+    "Báo cáo Ủy ban Chứng khoán Nhà nước",
+    "Tự xử phạt công ty quản lý quỹ",
+    "Giải thể quỹ ngay",
+    "Không có nghĩa vụ gì"
+   ],
+   "answer": 0,
+   "explain": "Điểm g khoản 2 Điều 116.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 116 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ngân hàng giám sát thực hiện thu, chi tài sản của quỹ theo yêu cầu nào?",
+   "options": [
+    "Yêu cầu hợp pháp của công ty quản lý quỹ",
+    "Mọi yêu cầu của công ty quản lý quỹ",
+    "Yêu cầu của bất kỳ nhà đầu tư nào",
+    "Yêu cầu của Sở giao dịch"
+   ],
+   "answer": 0,
+   "explain": "Điểm d khoản 2 Điều 116.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 116 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Nghĩa vụ ngân hàng giám sát",
+   "right": "Không phải nghĩa vụ ngân hàng giám sát",
+   "cases": [
+    {
+     "text": "Định kỳ đối chiếu sổ kế toán, báo cáo tài chính của quỹ cùng công ty quản lý quỹ",
+     "answer": "left"
+    },
+    {
+     "text": "Xác nhận báo cáo liên quan đến quỹ đại chúng",
+     "answer": "left"
+    },
+    {
+     "text": "Tự chọn cổ phiếu để quỹ đầu tư",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 2 Điều 116."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ngân hàng giám sát phải quản lý {{tách biệt}} tài sản của quỹ đại chúng và các tài sản khác của {{ngân hàng giám sát}}.",
+   "bank_extra": [
+    "gộp chung",
+    "công ty chứng khoán"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ngân hàng giám sát giám sát việc tuân thủ chế độ báo cáo và {{công bố thông tin}} của công ty quản lý quỹ.",
+   "bank_extra": [
+    "tuyển dụng",
+    "trả lương"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Ngân hàng giám sát G biết công ty quản lý quỹ đầu tư vượt hạn mức 20% vào một tổ chức nhưng im lặng vì là khách hàng lớn. G vi phạm gì?",
+   "options": [
+    "Nghĩa vụ giám sát tuân thủ và báo cáo Ủy ban khi phát hiện vi phạm",
+    "Không vi phạm vì không phải người ra quyết định đầu tư",
+    "Chỉ vi phạm đạo đức, không vi phạm luật",
+    "Vi phạm nghĩa vụ ưu tiên lệnh khách hàng"
+   ],
+   "answer": 0,
+   "explain": "Điểm c, g khoản 2 Điều 116.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 116 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Kể các nghĩa vụ chính của ngân hàng giám sát theo khoản 2 Điều 116.",
+   "model": "Lưu ký tài sản quỹ đại chúng, công ty đầu tư chứng khoán, quản lý tách biệt; giám sát công ty quản lý quỹ tuân thủ Luật và Điều lệ; thu, chi, chuyển giao tài sản theo yêu cầu hợp pháp; xác nhận báo cáo; giám sát báo cáo, công bố thông tin; báo cáo Ủy ban khi phát hiện vi phạm; định kỳ đối chiếu sổ sách.",
+   "keywords": [
+    "lưu ký",
+    "tách biệt",
+    "giám sát",
+    "yêu cầu hợp pháp",
+    "báo cáo Ủy ban"
+   ]
+  }
+ ]
+}

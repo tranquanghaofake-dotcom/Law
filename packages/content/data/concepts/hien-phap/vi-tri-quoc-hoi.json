@@ -1,0 +1,124 @@
+{
+ "id": "vi-tri-quoc-hoi",
+ "subject": "hien-phap",
+ "chapter": "c7-quoc-hoi",
+ "term": "Vị trí, chức năng của Quốc hội",
+ "definition": "Quốc hội là cơ quan đại biểu cao nhất của Nhân dân, cơ quan quyền lực nhà nước cao nhất của nước Cộng hoà xã hội chủ nghĩa Việt Nam. Quốc hội thực hiện quyền lập hiến, quyền lập pháp, quyết định các vấn đề quan trọng của đất nước và giám sát tối cao đối với hoạt động của Nhà nước.",
+ "plain": "Hai tính chất: cơ quan ĐẠI BIỂU cao nhất (do Nhân dân bầu, thay mặt Nhân dân) và cơ quan QUYỀN LỰC nhà nước cao nhất. Ba chức năng: lập hiến, lập pháp; quyết định vấn đề quan trọng; giám sát tối cao. Lưu ý: \"cao nhất\" không có nghĩa Quốc hội làm thay các cơ quan khác: quyền hành pháp thuộc Chính phủ, quyền tư pháp thuộc Tòa án (Điều 2 Hiến pháp: phân công, phối hợp, kiểm soát).",
+ "example": "Quốc hội thông qua Luật Đất đai (lập pháp), quyết định dự toán ngân sách (vấn đề quan trọng), chất vấn Bộ trưởng (giám sát tối cao); nhưng Quốc hội không trực tiếp xét xử một vụ án tranh chấp đất đai.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 69 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quyen-luc-nha-nuoc-thong-nhat",
+  "uy-ban-thuong-vu-quoc-hoi",
+  "chinh-phu-vi-tri"
+ ],
+ "keywords": [
+  "đại biểu cao nhất",
+  "quyền lực nhà nước cao nhất",
+  "lập hiến, lập pháp",
+  "giám sát tối cao"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 69 Hiến pháp 2013, Quốc hội có vị trí pháp lý như thế nào?",
+   "options": [
+    "Cơ quan đại biểu cao nhất của Nhân dân, cơ quan quyền lực nhà nước cao nhất",
+    "Cơ quan hành chính nhà nước cao nhất",
+    "Cơ quan xét xử cao nhất",
+    "Cơ quan đứng đầu Nhà nước"
+   ],
+   "answer": 0,
+   "explain": "Điều 69. Hành chính cao nhất là Chính phủ (Điều 94); xét xử là Tòa án (Điều 102); đứng đầu Nhà nước là Chủ tịch nước (Điều 86).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 69 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chức năng nào KHÔNG thuộc Quốc hội theo Điều 69?",
+   "options": [
+    "Thực hiện quyền hành pháp",
+    "Lập hiến, lập pháp",
+    "Quyết định các vấn đề quan trọng của đất nước",
+    "Giám sát tối cao"
+   ],
+   "answer": 0,
+   "explain": "Quyền hành pháp do Chính phủ thực hiện (Điều 94).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 69 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quốc hội",
+   "right": "Chính phủ",
+   "cases": [
+    {
+     "text": "Cơ quan quyền lực nhà nước cao nhất",
+     "answer": "left"
+    },
+    {
+     "text": "Cơ quan hành chính nhà nước cao nhất",
+     "answer": "right"
+    },
+    {
+     "text": "Thực hiện quyền lập pháp",
+     "answer": "left"
+    },
+    {
+     "text": "Thực hiện quyền hành pháp",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 69 và Điều 94."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quốc hội là cơ quan {{đại biểu}} cao nhất của Nhân dân, cơ quan {{quyền lực nhà nước}} cao nhất.",
+   "bank_extra": [
+    "hành chính",
+    "tư pháp"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quốc hội thực hiện quyền lập hiến, quyền lập pháp, quyết định các vấn đề quan trọng của đất nước và {{giám sát tối cao}} đối với hoạt động của Nhà nước.",
+   "bank_extra": [
+    "xét xử",
+    "điều hành"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Vì là cơ quan quyền lực nhà nước cao nhất nên Quốc hội có quyền trực tiếp xét xử các vụ án quan trọng.",
+   "answer": false,
+   "explain": "Sai. Quyền tư pháp thuộc Tòa án nhân dân (Điều 102); Quốc hội lập pháp, quyết định vấn đề quan trọng, giám sát tối cao."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày vị trí và chức năng của Quốc hội theo Điều 69 Hiến pháp 2013.",
+   "model": "Vị trí: cơ quan đại biểu cao nhất của Nhân dân, cơ quan quyền lực nhà nước cao nhất. Chức năng: lập hiến, lập pháp; quyết định các vấn đề quan trọng của đất nước; giám sát tối cao đối với hoạt động của Nhà nước.",
+   "keywords": [
+    "đại biểu cao nhất",
+    "quyền lực nhà nước cao nhất",
+    "lập hiến, lập pháp",
+    "giám sát tối cao"
+   ]
+  }
+ ]
+}

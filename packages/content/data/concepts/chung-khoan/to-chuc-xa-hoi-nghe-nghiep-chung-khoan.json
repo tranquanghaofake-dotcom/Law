@@ -1,0 +1,118 @@
+{
+ "id": "to-chuc-xa-hoi-nghe-nghiep-chung-khoan",
+ "subject": "chung-khoan",
+ "chapter": "c9-quan-ly-nha-nuoc",
+ "term": "Tổ chức xã hội - nghề nghiệp về chứng khoán",
+ "definition": "Tổ chức xã hội - nghề nghiệp về chứng khoán được thành lập, hoạt động theo quy định của pháp luật về hội, có trách nhiệm tuân thủ quy định của pháp luật về chứng khoán và thị trường chứng khoán và chịu sự giám sát của Ủy ban Chứng khoán Nhà nước.",
+ "plain": "Đây là kênh \"tự quản\" của giới nghề (ví dụ hiệp hội kinh doanh chứng khoán): thành lập theo pháp luật về hội, ban hành bộ quy tắc đạo đức nghề nghiệp SAU KHI được Ủy ban chấp thuận, phối hợp phổ biến pháp luật cho hội viên. Không phải cơ quan nhà nước và không có quyền xử phạt hành chính.",
+ "example": "Hiệp hội các công ty chứng khoán soạn bộ quy tắc đạo đức nghề nghiệp cho nhân viên môi giới; bộ quy tắc chỉ được ban hành sau khi Ủy ban Chứng khoán Nhà nước chấp thuận.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 10 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "uy-ban-chung-khoan-nha-nuoc",
+  "nguoi-hanh-nghe-chung-khoan"
+ ],
+ "keywords": [
+  "pháp luật về hội",
+  "quy tắc đạo đức nghề nghiệp",
+  "Ủy ban giám sát"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tổ chức xã hội - nghề nghiệp về chứng khoán được thành lập theo pháp luật nào?",
+   "options": [
+    "Pháp luật về hội",
+    "Luật Doanh nghiệp",
+    "Luật Tổ chức Chính phủ",
+    "Luật Các tổ chức tín dụng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 10.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 10 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Bộ quy tắc đạo đức nghề nghiệp của tổ chức xã hội - nghề nghiệp được ban hành khi nào?",
+   "options": [
+    "Sau khi được Ủy ban Chứng khoán Nhà nước chấp thuận",
+    "Khi hội viên biểu quyết, không cần ai chấp thuận",
+    "Sau khi Quốc hội thông qua",
+    "Sau khi Sở giao dịch phê duyệt"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 10.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 10 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tổ chức xã hội - nghề nghiệp",
+   "right": "Ủy ban Chứng khoán Nhà nước",
+   "cases": [
+    {
+     "text": "Ban hành bộ quy tắc đạo đức nghề nghiệp cho hội viên",
+     "answer": "left"
+    },
+    {
+     "text": "Xử phạt vi phạm hành chính",
+     "answer": "right"
+    },
+    {
+     "text": "Giám sát tổ chức xã hội - nghề nghiệp",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 9 và Điều 10."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tổ chức xã hội - nghề nghiệp về chứng khoán chịu sự {{giám sát}} của {{Ủy ban Chứng khoán Nhà nước}}.",
+   "bank_extra": [
+    "bảo lãnh",
+    "Sở giao dịch"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tổ chức xã hội - nghề nghiệp ban hành bộ quy tắc {{đạo đức nghề nghiệp}} sau khi được Ủy ban chấp thuận.",
+   "bank_extra": [
+    "xử phạt",
+    "niêm yết"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tổ chức xã hội - nghề nghiệp về chứng khoán có quyền xử phạt hành chính công ty chứng khoán hội viên.",
+   "answer": false,
+   "explain": "Sai. Xử phạt hành chính là thẩm quyền của Ủy ban (điểm g khoản 1 Điều 9); tổ chức xã hội - nghề nghiệp chỉ ban hành quy tắc đạo đức, phổ biến pháp luật."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày địa vị và vai trò của tổ chức xã hội - nghề nghiệp về chứng khoán.",
+   "model": "Thành lập, hoạt động theo pháp luật về hội; tuân thủ pháp luật chứng khoán; chịu sự giám sát của Ủy ban. Vai trò: ban hành bộ quy tắc đạo đức nghề nghiệp sau khi Ủy ban chấp thuận; phối hợp tuyên truyền, phổ biến pháp luật chứng khoán đến hội viên (Điều 10).",
+   "keywords": [
+    "pháp luật về hội",
+    "giám sát",
+    "đạo đức nghề nghiệp",
+    "phổ biến pháp luật"
+   ]
+  }
+ ]
+}

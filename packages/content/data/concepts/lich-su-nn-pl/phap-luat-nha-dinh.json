@@ -1,0 +1,116 @@
+{
+ "id": "phap-luat-nha-dinh",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c6-trung-dai",
+ "term": "Pháp luật thời Đinh: \"vạc dầu, cũi hổ\"",
+ "definition": "Vua muốn dùng uy chế ngự thiên hạ, bèn đặt vạc lớn ở sân triều, nuôi hổ dữ trong cũi, hạ lệnh rằng: \"Kẻ nào trái phép phải chịu tội bỏ vạc dầu, cho hổ ăn\". Mọi người đều sợ phục, không ai dám phạm.",
+ "plain": "Thời Ngô – Đinh – Tiền Lê chưa thấy sử chép một bộ luật thành văn. Pháp luật chủ yếu là MỆNH LỆNH của nhà vua và tập quán. Hình phạt rất hà khắc, mang tính răn đe (\"dùng uy chế ngự thiên hạ\"). Đây là đặc điểm của nhà nước mới thống nhất sau loạn 12 sứ quân, cần củng cố quyền lực trung ương. Phải đến năm 1042 nhà Lý mới ban hành Hình thư (sẽ học ở các mục sau).",
+ "example": "Lệnh \"Kẻ nào trái phép phải chịu tội bỏ vạc dầu, cho hổ ăn\" là ví dụ điển hình cho nguyên tắc dùng hình phạt nghiêm khắc để răn đe (trọng hình) ở giai đoạn đầu nhà nước phong kiến.",
+ "source": {
+  "kind": "primary",
+  "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển I (bản dịch Viện KHXH Việt Nam, NXB KHXH 1993), Kỷ nhà Đinh, tờ 2b",
+  "url": "https://thpthiephoa1.edu.vn/wp-content/uploads/Dai-viet-su-ki-toan-thu.pdf"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "dinh-dai-co-viet",
+  "tien-le-dinh-luat-le",
+  "phap-luat-van-lang-au-lac"
+ ],
+ "keywords": [
+  "dùng uy chế ngự",
+  "vạc dầu, cũi hổ",
+  "mệnh lệnh nhà vua",
+  "hình phạt hà khắc"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Toàn thư, Đinh Tiên Hoàng đặt vạc lớn, nuôi hổ dữ nhằm mục đích gì?",
+   "options": [
+    "Dùng uy chế ngự thiên hạ",
+    "Tế lễ trời đất",
+    "Trang trí cung điện",
+    "Huấn luyện quân sĩ"
+   ],
+   "answer": 0,
+   "explain": "\"Vua muốn dùng uy chế ngự thiên hạ, bèn đặt vạc lớn ở sân triều, nuôi hổ dữ trong cũi\".",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển I, tờ 2b"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đặc điểm nổi bật của pháp luật thời Đinh qua đoạn sử liệu về vạc dầu, cũi hổ là gì?",
+   "options": [
+    "Hình phạt hà khắc, mang tính răn đe",
+    "Pháp luật thành văn hoàn chỉnh",
+    "Đề cao nhân đạo, khoan hồng",
+    "Chịu ảnh hưởng luật La Mã"
+   ],
+   "answer": 0,
+   "explain": "Đây là cách đánh giá phổ biến của giáo trình dựa trên sử liệu.",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển I, tờ 2b"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thời Đinh (968)",
+   "right": "Thời Lý (1042)",
+   "cases": [
+    {
+     "text": "Lệnh \"trái phép phải chịu tội bỏ vạc dầu, cho hổ ăn\"",
+     "answer": "left"
+    },
+    {
+     "text": "Ban hành Hình thư",
+     "answer": "right"
+    }
+   ],
+   "explain": "Toàn thư: năm 968 (Đinh); năm 1042 nhà Lý ban Hình thư."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Kẻ nào trái phép phải chịu tội bỏ {{vạc dầu}}, cho {{hổ}} ăn.",
+   "bank_extra": [
+    "ngục tối",
+    "voi"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Vua muốn dùng {{uy}} chế ngự thiên hạ.",
+   "bank_extra": [
+    "đức",
+    "lễ"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo sử liệu, nhà Đinh đã ban hành một bộ luật thành văn hoàn chỉnh.",
+   "answer": false,
+   "explain": "Sai. Toàn thư không chép bộ luật nào thời Đinh; pháp luật chủ yếu là mệnh lệnh của vua, hình phạt hà khắc. Bộ luật thành văn đầu tiên được sử chép là Hình thư thời Lý (1042)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu đặc điểm pháp luật thời Đinh qua sử liệu.",
+   "model": "Toàn thư chép Đinh Tiên Hoàng muốn dùng uy chế ngự thiên hạ, đặt vạc dầu, nuôi hổ, ra lệnh kẻ trái phép bị bỏ vạc dầu, cho hổ ăn; pháp luật chủ yếu là mệnh lệnh nhà vua, tập quán; chưa có bộ luật thành văn; hình phạt hà khắc, răn đe để củng cố quyền lực sau loạn 12 sứ quân.",
+   "keywords": [
+    "uy",
+    "vạc dầu",
+    "mệnh lệnh",
+    "hà khắc"
+   ]
+  }
+ ]
+}

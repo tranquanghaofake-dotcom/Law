@@ -1,0 +1,118 @@
+{
+ "id": "ke-thua-lap-hien",
+ "subject": "hien-phap",
+ "chapter": "c2-khai-niem-dac-trung",
+ "term": "Hiến pháp 2013 và tính kế thừa lập hiến",
+ "definition": "Thể chế hóa Cương lĩnh xây dựng đất nước trong thời kỳ quá độ lên chủ nghĩa xã hội, kế thừa Hiến pháp năm 1946, Hiến pháp năm 1959, Hiến pháp năm 1980 và Hiến pháp năm 1992, Nhân dân Việt Nam xây dựng, thi hành và bảo vệ Hiến pháp này vì mục tiêu dân giàu, nước mạnh, dân chủ, công bằng, văn minh.",
+ "plain": "Hiến pháp 2013 do Quốc hội khóa XIII, kỳ họp thứ 6 thông qua ngày 28/11/2013, hiệu lực từ 01/01/2014. Lời nói đầu khẳng định KẾ THỪA cả 4 bản trước và chủ thể \"Nhân dân Việt Nam xây dựng, thi hành và bảo vệ Hiến pháp\". Năm bản Hiến pháp: 1946 (Hiến pháp đầu tiên, dân chủ cộng hòa), 1959 (xây dựng chủ nghĩa xã hội ở miền Bắc), 1980 (cả nước thống nhất, cơ chế tập trung), 1992 (Đổi mới), 2013 (hoàn thiện nhà nước pháp quyền, quyền con người). Hiến pháp 2013 được sửa đổi bởi Nghị quyết 203/2025/QH15.",
+ "example": "Mẹo nhớ mốc: 1946 – Hiến pháp đầu tiên; 1959 – sửa 1946; 1980 – sau thống nhất; 1992 – Đổi mới; 2013 – hiện hành (sửa đổi 2025).",
+ "source": {
+  "kind": "statute",
+  "cite": "Lời nói đầu Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hien-phap-1946",
+  "hien-phap-1992",
+  "hien-phap"
+ ],
+ "keywords": [
+  "kế thừa",
+  "năm bản Hiến pháp",
+  "Nhân dân xây dựng, thi hành, bảo vệ",
+  "28/11/2013"
+ ],
+ "note": "Nghị quyết 203/2025/QH15 (hiệu lực 16/6/2025) sửa đổi một số điều Hiến pháp 2013 (Điều 9, 10, 84, 110, 111); Lời nói đầu không thay đổi.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Lời nói đầu Hiến pháp 2013 nêu Hiến pháp này kế thừa những bản Hiến pháp nào?",
+   "options": [
+    "1946, 1959, 1980 và 1992",
+    "Chỉ 1946 và 1992",
+    "Chỉ 1992",
+    "1959, 1980 và 1992"
+   ],
+   "answer": 0,
+   "explain": "Lời nói đầu Hiến pháp 2013.",
+   "source": {
+    "kind": "statute",
+    "cite": "Lời nói đầu Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai là chủ thể \"xây dựng, thi hành và bảo vệ Hiến pháp\" theo Lời nói đầu Hiến pháp 2013?",
+   "options": [
+    "Nhân dân Việt Nam",
+    "Quốc hội",
+    "Đảng Cộng sản Việt Nam",
+    "Chính phủ"
+   ],
+   "answer": 0,
+   "explain": "Lời nói đầu Hiến pháp 2013.",
+   "source": {
+    "kind": "statute",
+    "cite": "Lời nói đầu Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hiến pháp 1946",
+   "right": "Hiến pháp 2013",
+   "cases": [
+    {
+     "text": "Bản Hiến pháp đầu tiên",
+     "answer": "left"
+    },
+    {
+     "text": "Đang có hiệu lực, sửa đổi năm 2025",
+     "answer": "right"
+    }
+   ],
+   "explain": "Lịch sử lập hiến Việt Nam."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hiến pháp 2013 kế thừa Hiến pháp năm 1946, Hiến pháp năm {{1959}}, Hiến pháp năm 1980 và Hiến pháp năm {{1992}}.",
+   "bank_extra": [
+    "1975",
+    "2001"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhân dân Việt Nam xây dựng, thi hành và bảo vệ Hiến pháp này vì mục tiêu dân giàu, nước mạnh, {{dân chủ}}, công bằng, văn minh.",
+   "bank_extra": [
+    "tự do",
+    "hạnh phúc"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Việt Nam đã có năm bản Hiến pháp: 1946, 1959, 1980, 1992 và 2013.",
+   "answer": true,
+   "explain": "Đúng. Lần sửa đổi năm 2001 (Hiến pháp 1992) và năm 2025 (Hiến pháp 2013) là sửa đổi, bổ sung, không phải bản Hiến pháp mới."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Khái quát lịch sử lập hiến Việt Nam qua năm bản Hiến pháp.",
+   "model": "1946: Hiến pháp đầu tiên, dân chủ cộng hòa, đoàn kết toàn dân; 1959: sửa đổi 1946, Nhà nước dân chủ nhân dân, tập trung dân chủ; 1980: sau thống nhất, Đảng lãnh đạo (Điều 4), Hội đồng Nhà nước; 1992: Đổi mới, kinh tế thị trường, quyền con người, sửa đổi 2001; 2013: kế thừa bốn bản trước, hoàn thiện quyền con người, nhà nước pháp quyền; sửa đổi năm 2025.",
+   "keywords": [
+    "1946",
+    "1959",
+    "1980",
+    "1992",
+    "2013"
+   ]
+  }
+ ]
+}

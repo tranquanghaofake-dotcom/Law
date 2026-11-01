@@ -1,0 +1,287 @@
+{
+  "id": "chung-khoan",
+  "title": "Luật Chứng khoán",
+  "short": "Chứng khoán",
+  "chapters": [
+    {
+      "id": "c1-khai-niem",
+      "title": "Chương I. Khái niệm về luật chứng khoán",
+      "lessons": [
+        {
+          "id": "ck1-1",
+          "title": "Chứng khoán và các loại chứng khoán cơ bản",
+          "concepts": [
+            "chung-khoan",
+            "co-phieu",
+            "trai-phieu",
+            "chung-chi-quy",
+            "quyen-mua-co-phan"
+          ]
+        },
+        {
+          "id": "ck1-2",
+          "title": "Chứng quyền, phái sinh, thị trường và Luật Chứng khoán",
+          "concepts": [
+            "chung-quyen",
+            "chung-khoan-phai-sinh",
+            "thi-truong-giao-dich-chung-khoan",
+            "pham-vi-dieu-chinh-luat-chung-khoan",
+            "nguyen-tac-hoat-dong-chung-khoan"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c2-chao-ban",
+      "title": "Chương II. Pháp luật về chào bán chứng khoán",
+      "lessons": [
+        {
+          "id": "ck2-1",
+          "title": "Chào bán ra công chúng: khái niệm và điều kiện",
+          "concepts": [
+            "chao-ban-ra-cong-chung",
+            "menh-gia-chung-khoan",
+            "dieu-kien-chao-ban-co-phieu-lan-dau",
+            "ban-cao-bach",
+            "dang-ky-chao-ban-ra-cong-chung"
+          ]
+        },
+        {
+          "id": "ck2-2",
+          "title": "Phân phối, đình chỉ, hủy bỏ và chào bán riêng lẻ",
+          "concepts": [
+            "phan-phoi-chung-khoan",
+            "dinh-chi-huy-bo-chao-ban",
+            "chao-ban-rieng-le",
+            "nha-dau-tu-chung-khoan-chuyen-nghiep",
+            "dieu-kien-chao-ban-rieng-le-cong-ty-dai-chung"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c3-thi-truong-giao-dich",
+      "title": "Chương III. Pháp luật về tổ chức và hoạt động của thị trường giao dịch chứng khoán",
+      "lessons": [
+        {
+          "id": "ck3-1",
+          "title": "Sở giao dịch chứng khoán Việt Nam",
+          "concepts": [
+            "doc-quyen-to-chuc-thi-truong-giao-dich",
+            "so-giao-dich-chung-khoan-viet-nam",
+            "quyen-nghia-vu-so-giao-dich",
+            "thanh-vien-so-giao-dich-chung-khoan",
+            "tam-ngung-dinh-chi-giao-dich-so"
+          ]
+        },
+        {
+          "id": "ck3-2",
+          "title": "Niêm yết, đăng ký giao dịch và giao dịch chứng khoán",
+          "concepts": [
+            "niem-yet-chung-khoan",
+            "dang-ky-giao-dich-chung-khoan",
+            "he-thong-giao-dich-chung-khoan",
+            "phuong-thuc-giao-dich-chung-khoan",
+            "nha-dau-tu-nuoc-ngoai-tren-ttck"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c4-dang-ky-luu-ky",
+      "title": "Chương IV. Pháp luật về đăng kí, lưu kí, bù trừ và thanh toán chứng khoán",
+      "lessons": [
+        {
+          "id": "ck4-1",
+          "title": "Tổng công ty lưu ký và bù trừ; đăng ký, lưu ký chứng khoán",
+          "concepts": [
+            "tong-cong-ty-luu-ky-bu-tru",
+            "dang-ky-chung-khoan",
+            "so-dang-ky-ngay-dang-ky-cuoi-cung",
+            "luu-ky-chung-khoan",
+            "thanh-vien-luu-ky-bu-tru"
+          ]
+        },
+        {
+          "id": "ck4-2",
+          "title": "Bù trừ, thanh toán và bảo vệ tài sản nhà đầu tư",
+          "concepts": [
+            "bu-tru-thanh-toan-giao-dich",
+            "chuyen-quyen-so-huu-chung-khoan",
+            "bao-ve-tai-san-khach-hang",
+            "quy-ho-tro-thanh-toan-quy-bu-tru",
+            "ngan-hang-thanh-toan"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c5-cong-ty-chung-khoan",
+      "title": "Chương V. Pháp luật về tổ chức và hoạt động của công ti chứng khoán",
+      "lessons": [
+        {
+          "id": "ck5-1",
+          "title": "Thành lập công ty chứng khoán: hình thức, nghiệp vụ, điều kiện",
+          "concepts": [
+            "hinh-thuc-cong-ty-chung-khoan",
+            "nghiep-vu-cong-ty-chung-khoan",
+            "dieu-kien-co-dong-cong-ty-chung-khoan",
+            "dieu-kien-nhan-su-cong-ty-chung-khoan",
+            "han-che-cong-ty-chung-khoan"
+          ]
+        },
+        {
+          "id": "ck5-2",
+          "title": "Hoạt động, an toàn tài chính, thu hồi giấy phép, giải thể, phá sản",
+          "concepts": [
+            "quan-ly-tai-san-khach-hang-ctck",
+            "nghia-vu-cong-ty-chung-khoan",
+            "an-toan-tai-chinh-cong-ty-chung-khoan",
+            "thu-hoi-giay-phep-cong-ty-chung-khoan",
+            "giai-the-pha-san-cong-ty-chung-khoan"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c6-quy-dau-tu",
+      "title": "Chương VI. Pháp luật về quỹ đầu tư chứng khoán và công ti đầu tư chứng khoán",
+      "lessons": [
+        {
+          "id": "ck6-1",
+          "title": "Quỹ đầu tư chứng khoán và các loại quỹ",
+          "concepts": [
+            "quy-dau-tu-chung-khoan",
+            "quy-dai-chung",
+            "quy-mo",
+            "quy-dong",
+            "quy-thanh-vien"
+          ]
+        },
+        {
+          "id": "ck6-2",
+          "title": "ETF, quyền nhà đầu tư, hạn chế đầu tư, NAV và công ty đầu tư chứng khoán",
+          "concepts": [
+            "quy-hoan-doi-danh-muc",
+            "quyen-nha-dau-tu-quy",
+            "han-che-quy-dai-chung",
+            "gia-tri-tai-san-rong",
+            "cong-ty-dau-tu-chung-khoan"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c7-quan-ly-quy-giam-sat",
+      "title": "Chương VII. Công ti quản lí quỹ đầu tư chứng khoán và ngân hàng giám sát",
+      "lessons": [
+        {
+          "id": "ck7-1",
+          "title": "Công ty quản lý quỹ: nghiệp vụ, điều kiện, nghĩa vụ",
+          "concepts": [
+            "nghiep-vu-cong-ty-quan-ly-quy",
+            "quan-ly-quy-dau-tu-chung-khoan",
+            "quan-ly-danh-muc-dau-tu",
+            "dieu-kien-cong-ty-quan-ly-quy",
+            "nghia-vu-cong-ty-quan-ly-quy"
+          ]
+        },
+        {
+          "id": "ck7-2",
+          "title": "Ngân hàng giám sát và quan hệ với nhà đầu tư quỹ",
+          "concepts": [
+            "ngan-hang-giam-sat",
+            "nghia-vu-ngan-hang-giam-sat",
+            "han-che-ngan-hang-giam-sat",
+            "dai-hoi-nha-dau-tu",
+            "thay-the-cong-ty-quan-ly-quy-ngan-hang-giam-sat"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c8-kinh-doanh-chung-khoan",
+      "title": "Chương VIII. Pháp luật điều chỉnh hoạt động kinh doanh chứng khoán",
+      "lessons": [
+        {
+          "id": "ck8-1",
+          "title": "Các nghiệp vụ kinh doanh chứng khoán",
+          "concepts": [
+            "kinh-doanh-chung-khoan",
+            "moi-gioi-chung-khoan",
+            "tu-doanh-chung-khoan",
+            "bao-lanh-phat-hanh-chung-khoan",
+            "tu-van-dau-tu-chung-khoan"
+          ]
+        },
+        {
+          "id": "ck8-2",
+          "title": "Dịch vụ, chấp thuận và người hành nghề chứng khoán",
+          "concepts": [
+            "dich-vu-cho-vay-ky-quy",
+            "hoat-dong-phai-duoc-uy-ban-chap-thuan",
+            "nguoi-hanh-nghe-chung-khoan",
+            "chung-chi-hanh-nghe-chung-khoan",
+            "trach-nhiem-nguoi-hanh-nghe"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c9-quan-ly-nha-nuoc",
+      "title": "Chương IX. Quản lí nhà nước về chứng khoán và thị trường chứng khoán",
+      "lessons": [
+        {
+          "id": "ck9-1",
+          "title": "Cơ quan quản lý nhà nước và chính sách",
+          "concepts": [
+            "quan-ly-nha-nuoc-chung-khoan",
+            "uy-ban-chung-khoan-nha-nuoc",
+            "bien-phap-bao-dam-an-ninh-thi-truong",
+            "to-chuc-xa-hoi-nghe-nghiep-chung-khoan",
+            "chinh-sach-phat-trien-thi-truong"
+          ]
+        },
+        {
+          "id": "ck9-2",
+          "title": "Công ty đại chúng và công bố thông tin",
+          "concepts": [
+            "cong-ty-dai-chung",
+            "doi-tuong-cong-bo-thong-tin",
+            "nguyen-tac-cong-bo-thong-tin",
+            "cong-bo-thong-tin-co-dong-lon",
+            "nguoi-noi-bo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c10-xu-ly-vi-pham",
+      "title": "Chương X. Pháp luật về xử lí vi phạm và giải quyết tranh chấp trong lĩnh vực chứng khoán và thị trường chứng khoán",
+      "lessons": [
+        {
+          "id": "ck10-1",
+          "title": "Hành vi bị nghiêm cấm: nội gián, thao túng",
+          "concepts": [
+            "hanh-vi-bi-nghiem-cam",
+            "thong-tin-noi-bo",
+            "giao-dich-noi-gian",
+            "thao-tung-thi-truong",
+            "cho-muon-tai-khoan-dung-ten-ho"
+          ]
+        },
+        {
+          "id": "ck10-2",
+          "title": "Thanh tra, xử lý vi phạm, giải quyết tranh chấp",
+          "concepts": [
+            "thanh-tra-chung-khoan",
+            "quyen-han-uy-ban-trong-thanh-tra",
+            "xu-ly-vi-pham-chung-khoan",
+            "muc-phat-tien-chung-khoan",
+            "giai-quyet-tranh-chap-chung-khoan"
+          ]
+        }
+      ]
+    }
+  ]
+}

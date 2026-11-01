@@ -1,0 +1,130 @@
+{
+ "id": "tuoc-quoc-tich-viet-nam",
+ "subject": "hien-phap",
+ "chapter": "c5-quoc-tich",
+ "term": "Tước quốc tịch Việt Nam",
+ "definition": "Công dân Việt Nam cư trú ở nước ngoài có thể bị tước quốc tịch Việt Nam, nếu có hành vi gây phương hại nghiêm trọng đến nền độc lập dân tộc, đến sự nghiệp xây dựng và bảo vệ Tổ quốc Việt Nam hoặc đến uy tín của nước Cộng hòa xã hội chủ nghĩa Việt Nam.",
+ "plain": "Tước quốc tịch là CHẾ TÀI, ngoại lệ của nguyên tắc \"công dân không bị tước quốc tịch\" (Điều 2). Chỉ áp dụng với: (1) công dân CƯ TRÚ Ở NƯỚC NGOÀI; hoặc (2) người đã NHẬP quốc tịch Việt Nam dù ở trong hay ngoài nước; khi có hành vi gây phương hại NGHIÊM TRỌNG đến độc lập dân tộc, xây dựng và bảo vệ Tổ quốc, uy tín Nhà nước. Công dân Việt Nam gốc đang cư trú trong nước không bị tước quốc tịch.",
+ "example": "Một công dân Việt Nam gốc đang sống ở Hà Nội phạm tội nghiêm trọng: bị xử lý hình sự, KHÔNG bị tước quốc tịch, vì khoản 1 Điều 31 chỉ áp dụng với công dân cư trú ở nước ngoài (hoặc người đã nhập quốc tịch).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 31 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-53-vbhn-vpqh-quoc-tich-viet-nam--179993"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quyen-co-quoc-tich",
+  "thoi-quoc-tich-viet-nam",
+  "tro-lai-quoc-tich"
+ ],
+ "keywords": [
+  "cư trú ở nước ngoài",
+  "người đã nhập quốc tịch",
+  "phương hại nghiêm trọng",
+  "chế tài"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đối tượng nào có thể bị tước quốc tịch Việt Nam theo Điều 31?",
+   "options": [
+    "Công dân Việt Nam cư trú ở nước ngoài và người đã nhập quốc tịch Việt Nam có hành vi phương hại nghiêm trọng",
+    "Mọi công dân phạm tội",
+    "Công dân nợ thuế",
+    "Cán bộ, công chức vi phạm kỷ luật"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1, 2 Điều 31.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 31 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Căn cứ để tước quốc tịch là hành vi gây phương hại nghiêm trọng đến điều gì?",
+   "options": [
+    "Nền độc lập dân tộc, sự nghiệp xây dựng và bảo vệ Tổ quốc hoặc uy tín của Nhà nước",
+    "Lợi ích của một doanh nghiệp",
+    "Trật tự giao thông",
+    "Quyền lợi của một cá nhân"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 31.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 31 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tước quốc tịch",
+   "right": "Thôi quốc tịch",
+   "cases": [
+    {
+     "text": "Chế tài do hành vi phương hại nghiêm trọng",
+     "answer": "left"
+    },
+    {
+     "text": "Tự nguyện xin để nhập quốc tịch nước ngoài",
+     "answer": "right"
+    },
+    {
+     "text": "Phải sau ít nhất 5 năm mới được xem xét cho trở lại",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 27, 31; khoản 3 Điều 23."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công dân Việt Nam {{cư trú ở nước ngoài}} có thể bị tước quốc tịch nếu có hành vi gây phương hại {{nghiêm trọng}} đến nền độc lập dân tộc…",
+   "bank_extra": [
+    "đang cư trú trong nước",
+    "nhỏ"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người đã {{nhập}} quốc tịch Việt Nam dù cư trú ở trong hoặc ngoài lãnh thổ Việt Nam cũng có thể bị tước quốc tịch nếu có hành vi tại khoản 1 Điều 31.",
+   "bank_extra": [
+    "trở lại",
+    "thôi"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Ông Q là người nước ngoài đã nhập quốc tịch Việt Nam, đang sống ở TP. Hồ Chí Minh, có hành vi gây phương hại nghiêm trọng đến uy tín Nhà nước. Ông Q có thể bị tước quốc tịch không?",
+   "options": [
+    "Có, vì người đã nhập quốc tịch có thể bị tước dù cư trú trong nước",
+    "Không, vì đang cư trú trong nước",
+    "Không, vì công dân không bị tước quốc tịch",
+    "Chỉ khi ông Q ra nước ngoài"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 31.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 31 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày căn cứ tước quốc tịch Việt Nam.",
+   "model": "Công dân Việt Nam cư trú ở nước ngoài có hành vi gây phương hại nghiêm trọng đến nền độc lập dân tộc, sự nghiệp xây dựng và bảo vệ Tổ quốc hoặc uy tín Nhà nước (khoản 1 Điều 31); người đã nhập quốc tịch Việt Nam có hành vi đó, dù cư trú trong hay ngoài nước (khoản 2). Đây là ngoại lệ của nguyên tắc công dân không bị tước quốc tịch (Điều 2).",
+   "keywords": [
+    "cư trú ở nước ngoài",
+    "đã nhập quốc tịch",
+    "phương hại nghiêm trọng",
+    "ngoại lệ"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,128 @@
+{
+ "id": "dieu-kien-ra-doi-nha-nuoc-van-lang",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c5-co-dai",
+ "term": "Điều kiện và yếu tố thúc đẩy nhà nước Văn Lang ra đời",
+ "definition": "Nhà nước Văn Lang ra đời trên cơ sở sự phát triển kinh tế (nông nghiệp lúa nước, kĩ thuật đồng thau) và sự phân hóa xã hội; nhu cầu trị thủy, làm thủy lợi và nhu cầu chống ngoại xâm là những yếu tố thúc đẩy quá trình đó diễn ra sớm hơn.",
+ "plain": "Theo lí luận Mác – Lênin, nhà nước ra đời khi có tư hữu và phân hóa giai cấp. Với Văn Lang, phần lớn nhà nghiên cứu cho rằng sự phân hóa mới ở mức sơ khai. Nhà nước hình thành sớm còn vì hai nhu cầu \"công\": trị thủy (đắp đê, chống lũ cho nông nghiệp lúa nước) và chống ngoại xâm. Hai nhu cầu này đòi hỏi một tổ chức có quyền lực chung, quy mô lớn.",
+ "example": "Phân biệt \"điều kiện\" (cái phải có: kinh tế và phân hóa xã hội) với \"yếu tố thúc đẩy\" (làm quá trình nhanh hơn: trị thủy, chống ngoại xâm). Đề thi hay hỏi vì sao nhà nước Việt cổ ra đời sớm dù phân hóa giai cấp chưa sâu sắc.",
+ "source": {
+  "kind": "textbook",
+  "cite": "Giáo trình Lịch sử nhà nước và pháp luật, Trường ĐH Luật Hà Nội, NXB Tư pháp 2025, Chương 5, mục 1.1 \"Điều kiện và yếu tố thúc đẩy nhà nước ra đời\" (tóm lược theo quan điểm phổ biến; chưa đối chiếu nguyên văn giáo trình)"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nha-nuoc-van-lang",
+  "phap-luat-van-lang-au-lac"
+ ],
+ "keywords": [
+  "nông nghiệp lúa nước",
+  "phân hóa xã hội",
+  "trị thủy",
+  "chống ngoại xâm"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Yếu tố nào thường được coi là yếu tố THÚC ĐẨY (không phải điều kiện kinh tế – xã hội) sự ra đời sớm của nhà nước Văn Lang?",
+   "options": [
+    "Nhu cầu trị thủy và chống ngoại xâm",
+    "Sự xuất hiện chế độ tư hữu ruộng đất phát triển cao",
+    "Sự ra đời của chữ viết",
+    "Sự du nhập của Nho giáo"
+   ],
+   "answer": 0,
+   "explain": "Quan điểm phổ biến: trị thủy (thủy lợi) và chống ngoại xâm là yếu tố thúc đẩy; điều kiện là kinh tế và phân hóa xã hội.",
+   "source": {
+    "kind": "textbook",
+    "cite": "Giáo trình Lịch sử nhà nước và pháp luật, Trường ĐH Luật Hà Nội, NXB Tư pháp 2025, Chương 5, mục 1.1"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nền kinh tế chủ đạo làm cơ sở cho sự ra đời của nhà nước Văn Lang là gì?",
+   "options": [
+    "Nông nghiệp trồng lúa nước",
+    "Thương mại đường biển",
+    "Du mục chăn nuôi",
+    "Khai thác mỏ quy mô lớn"
+   ],
+   "answer": 0,
+   "explain": "Nông nghiệp lúa nước cùng kĩ thuật đồng thau là cơ sở kinh tế; đồng thời đặt ra nhu cầu trị thủy.",
+   "source": {
+    "kind": "textbook",
+    "cite": "Giáo trình Lịch sử nhà nước và pháp luật, Trường ĐH Luật Hà Nội, NXB Tư pháp 2025, Chương 5, mục 1.1"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Điều kiện",
+   "right": "Yếu tố thúc đẩy",
+   "cases": [
+    {
+     "text": "Sự phát triển nông nghiệp lúa nước, kĩ thuật đồng thau",
+     "answer": "left"
+    },
+    {
+     "text": "Nhu cầu đắp đê, làm thủy lợi",
+     "answer": "right"
+    },
+    {
+     "text": "Sự phân hóa xã hội",
+     "answer": "left"
+    },
+    {
+     "text": "Nhu cầu chống ngoại xâm",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều kiện là cái nền phải có; yếu tố thúc đẩy làm nhà nước ra đời sớm hơn."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ngoài cơ sở kinh tế và phân hóa xã hội, nhu cầu {{trị thủy}} và nhu cầu {{chống ngoại xâm}} thúc đẩy nhà nước Văn Lang ra đời sớm.",
+   "bank_extra": [
+    "buôn bán",
+    "truyền giáo"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Cơ sở kinh tế của nhà nước Văn Lang là nông nghiệp {{lúa nước}} và kĩ thuật {{đồng thau}}.",
+   "bank_extra": [
+    "du canh",
+    "sắt luyện thép"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Câu hỏi thi: \"Nhà nước Văn Lang ra đời khi mâu thuẫn giai cấp đã gay gắt, không thể điều hòa.\" Hướng trả lời phù hợp với quan điểm phổ biến là gì?",
+   "options": [
+    "Chưa chính xác: phân hóa xã hội mới sơ khai; nhà nước ra đời sớm do được thúc đẩy bởi nhu cầu trị thủy và chống ngoại xâm",
+    "Đúng hoàn toàn, vì mọi nhà nước đều ra đời như vậy",
+    "Sai, vì Văn Lang không phải là nhà nước",
+    "Đúng, vì Văn Lang có hệ thống pháp luật thành văn hoàn chỉnh"
+   ],
+   "answer": 0,
+   "explain": "Nhận định áp nguyên mô hình \"mâu thuẫn giai cấp gay gắt\" là chưa sát với Văn Lang. Cần nêu đồng thời điều kiện kinh tế – xã hội và hai yếu tố thúc đẩy đặc thù."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Phân tích điều kiện và yếu tố thúc đẩy sự ra đời của nhà nước Văn Lang.",
+   "model": "Điều kiện: kinh tế nông nghiệp lúa nước và kĩ thuật đồng thau phát triển, có sản phẩm dư thừa; xã hội phân hóa (dù còn sơ khai). Yếu tố thúc đẩy: nhu cầu trị thủy, làm thủy lợi cho nông nghiệp và nhu cầu chống ngoại xâm, đòi hỏi một tổ chức quyền lực chung, nên nhà nước ra đời sớm.",
+   "keywords": [
+    "lúa nước",
+    "phân hóa",
+    "trị thủy",
+    "chống ngoại xâm"
+   ]
+  }
+ ]
+}

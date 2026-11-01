@@ -1,0 +1,115 @@
+{
+ "id": "thanh-tra-chung-khoan",
+ "subject": "chung-khoan",
+ "chapter": "c10-xu-ly-vi-pham",
+ "term": "Thanh tra chứng khoán",
+ "definition": "Thanh tra chứng khoán là thanh tra chuyên ngành về chứng khoán và thị trường chứng khoán. (…) Thanh tra chứng khoán chịu sự chỉ đạo trực tiếp của Chủ tịch Ủy ban Chứng khoán Nhà nước và hướng dẫn về nghiệp vụ của Thanh tra Bộ Tài chính, hoạt động theo quy định của pháp luật về thanh tra và quy định của Luật này.",
+ "plain": "Thanh tra chứng khoán thuộc hệ thống Ủy ban: Chánh thanh tra, Phó Chánh thanh tra, thanh tra viên; thanh tra, kiểm tra việc chấp hành pháp luật; xử phạt hành chính theo thẩm quyền hoặc kiến nghị Chủ tịch Ủy ban xử phạt. Khi thanh tra, Ủy ban còn được yêu cầu ngân hàng cung cấp thông tin giao dịch tài khoản và doanh nghiệp viễn thông cung cấp dữ liệu cuộc gọi đối với dấu hiệu hành vi bị cấm tại Điều 12 (Điều 130).",
+ "example": "Nghi ngờ một nhóm thao túng giá, Ủy ban (được Chủ tịch Ủy ban phê duyệt bằng văn bản) yêu cầu ngân hàng cung cấp sao kê dòng tiền và nhà mạng cung cấp lịch sử cuộc gọi giữa các tài khoản liên quan.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 3 Điều 129 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quyen-han-uy-ban-trong-thanh-tra",
+  "xu-ly-vi-pham-chung-khoan",
+  "uy-ban-chung-khoan-nha-nuoc"
+ ],
+ "keywords": [
+  "thanh tra chuyên ngành",
+  "Chủ tịch Ủy ban chỉ đạo trực tiếp",
+  "Thanh tra Bộ Tài chính hướng dẫn nghiệp vụ"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thanh tra chứng khoán chịu sự chỉ đạo trực tiếp của ai?",
+   "options": [
+    "Chủ tịch Ủy ban Chứng khoán Nhà nước",
+    "Tổng Thanh tra Chính phủ",
+    "Bộ trưởng Bộ Công an",
+    "Tổng giám đốc Sở giao dịch"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 129.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 129 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thanh tra chứng khoán là loại thanh tra gì?",
+   "options": [
+    "Thanh tra chuyên ngành",
+    "Thanh tra hành chính",
+    "Thanh tra nhân dân",
+    "Kiểm toán nội bộ"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 129.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 129 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thanh tra chứng khoán",
+   "right": "Thanh tra Bộ Tài chính",
+   "cases": [
+    {
+     "text": "Chịu sự chỉ đạo trực tiếp của Chủ tịch Ủy ban",
+     "answer": "left"
+    },
+    {
+     "text": "Hướng dẫn về nghiệp vụ cho thanh tra chứng khoán",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 3 Điều 129."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thanh tra chứng khoán là thanh tra {{chuyên ngành}} về chứng khoán và thị trường chứng khoán.",
+   "bank_extra": [
+    "hành chính",
+    "nhân dân"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thanh tra chứng khoán xử phạt vi phạm hành chính theo thẩm quyền hoặc {{kiến nghị}} Chủ tịch Ủy ban quyết định xử phạt.",
+   "bank_extra": [
+    "tự quyết",
+    "bỏ qua"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thanh tra chứng khoán có Chánh thanh tra, các Phó Chánh thanh tra và các Thanh tra viên.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 129."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày tổ chức và nhiệm vụ của thanh tra chứng khoán.",
+   "model": "Thanh tra chuyên ngành về chứng khoán; có Chánh thanh tra, Phó Chánh thanh tra, Thanh tra viên; chịu chỉ đạo trực tiếp của Chủ tịch Ủy ban, hướng dẫn nghiệp vụ của Thanh tra Bộ Tài chính. Nhiệm vụ: thanh tra, kiểm tra việc chấp hành pháp luật chứng khoán; xử phạt hành chính theo thẩm quyền hoặc kiến nghị Chủ tịch Ủy ban; phối hợp phòng ngừa, phát hiện, xử lý vi phạm (Điều 129).",
+   "keywords": [
+    "chuyên ngành",
+    "Chủ tịch Ủy ban",
+    "Thanh tra Bộ Tài chính",
+    "xử phạt"
+   ]
+  }
+ ]
+}

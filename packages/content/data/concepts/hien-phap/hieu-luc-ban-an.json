@@ -1,0 +1,114 @@
+{
+ "id": "hieu-luc-ban-an",
+ "subject": "hien-phap",
+ "chapter": "c10-toa-an-vien-kiem-sat",
+ "term": "Hiệu lực của bản án, quyết định của Tòa án",
+ "definition": "Bản án, quyết định của Toà án nhân dân có hiệu lực pháp luật phải được cơ quan, tổ chức, cá nhân tôn trọng; cơ quan, tổ chức, cá nhân hữu quan phải nghiêm chỉnh chấp hành.",
+ "plain": "Hai cấp độ nghĩa vụ: MỌI cơ quan, tổ chức, cá nhân phải TÔN TRỌNG; người HỮU QUAN (đương sự, cơ quan thi hành án…) phải NGHIÊM CHỈNH CHẤP HÀNH. Chỉ áp dụng với bản án, quyết định ĐÃ CÓ HIỆU LỰC PHÁP LUẬT (hết thời hạn kháng cáo, kháng nghị hoặc đã xét xử phúc thẩm). Đây là bảo đảm để quyền tư pháp có thực quyền.",
+ "example": "Bản án buộc công ty A trả nợ đã có hiệu lực; A không tự nguyện trả thì cơ quan thi hành án dân sự cưỡng chế. Một cơ quan hành chính không được \"phớt lờ\" bản án vì cho rằng chưa hợp lý.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 106 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "toa-an-vi-tri",
+  "toa-an-nhan-dan-toi-cao"
+ ],
+ "keywords": [
+  "có hiệu lực pháp luật",
+  "tôn trọng",
+  "nghiêm chỉnh chấp hành"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Bản án của Tòa án phải được tôn trọng khi nào theo Điều 106?",
+   "options": [
+    "Khi đã có hiệu lực pháp luật",
+    "Ngay khi tuyên án sơ thẩm dù đang bị kháng cáo",
+    "Khi được Viện kiểm sát đồng ý",
+    "Khi được báo chí đăng tải"
+   ],
+   "answer": 0,
+   "explain": "Điều 106.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 106 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai phải nghiêm chỉnh chấp hành bản án đã có hiệu lực?",
+   "options": [
+    "Cơ quan, tổ chức, cá nhân hữu quan",
+    "Chỉ bị cáo",
+    "Chỉ Tòa án",
+    "Chỉ cơ quan công an"
+   ],
+   "answer": 0,
+   "explain": "Điều 106.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 106 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Phải tôn trọng",
+   "right": "Phải nghiêm chỉnh chấp hành",
+   "cases": [
+    {
+     "text": "Mọi cơ quan, tổ chức, cá nhân",
+     "answer": "left"
+    },
+    {
+     "text": "Cơ quan, tổ chức, cá nhân hữu quan",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 106."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bản án, quyết định của Tòa án nhân dân có hiệu lực pháp luật phải được cơ quan, tổ chức, cá nhân {{tôn trọng}}; cơ quan, tổ chức, cá nhân hữu quan phải nghiêm chỉnh {{chấp hành}}.",
+   "bank_extra": [
+    "xem xét",
+    "tham khảo"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nghĩa vụ chấp hành chỉ áp dụng với bản án đã có {{hiệu lực pháp luật}}.",
+   "bank_extra": [
+    "chữ ký Chánh án",
+    "sự đồng ý của đương sự"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Ủy ban nhân dân có thể không thi hành bản án đã có hiệu lực nếu thấy bản án chưa phù hợp với thực tế địa phương.",
+   "answer": false,
+   "explain": "Sai. Điều 106: cơ quan, tổ chức, cá nhân hữu quan phải nghiêm chỉnh chấp hành; muốn xem xét lại phải theo thủ tục giám đốc thẩm, tái thẩm."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quy định của Hiến pháp về hiệu lực của bản án, quyết định của Tòa án.",
+   "model": "Bản án, quyết định của Tòa án nhân dân có hiệu lực pháp luật phải được cơ quan, tổ chức, cá nhân tôn trọng; cơ quan, tổ chức, cá nhân hữu quan phải nghiêm chỉnh chấp hành (Điều 106).",
+   "keywords": [
+    "hiệu lực pháp luật",
+    "tôn trọng",
+    "hữu quan",
+    "chấp hành"
+   ]
+  }
+ ]
+}

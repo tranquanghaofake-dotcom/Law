@@ -1,0 +1,124 @@
+{
+ "id": "so-dang-ky-ngay-dang-ky-cuoi-cung",
+ "subject": "chung-khoan",
+ "chapter": "c4-dang-ky-luu-ky",
+ "term": "Sổ đăng ký người sở hữu chứng khoán và ngày đăng ký cuối cùng",
+ "definition": "Tổng công ty lưu ký và bù trừ chứng khoán Việt Nam phải lập và lưu giữ Sổ đăng ký người sở hữu chứng khoán đối với các chứng khoán đã đăng ký tập trung tại Tổng công ty lưu ký và bù trừ chứng khoán Việt Nam. (…) Chỉ những người có tên trên Sổ đăng ký người sở hữu chứng khoán lập tại ngày đăng ký cuối cùng theo thông báo của công ty đại chúng, tổ chức phát hành mới được nhận các quyền phát sinh liên quan đến chứng khoán mà mình sở hữu.",
+ "plain": "Muốn nhận cổ tức, quyền mua cổ phần, quyền dự họp thì phải có tên trên danh sách người sở hữu \"chốt\" tại ngày đăng ký cuối cùng. Vì thanh toán mất vài ngày làm việc, nhà đầu tư phải mua trước ngày giao dịch không hưởng quyền; mua sau đó thì người bán vẫn hưởng.",
+ "example": "Công ty W thông báo ngày đăng ký cuối cùng để trả cổ tức là 15/6. Bạn mua cổ phiếu nhưng đến 15/6 chưa có tên trên Sổ đăng ký: cổ tức đợt này thuộc về người bán.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 4, khoản 5 Điều 61 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "dang-ky-chung-khoan",
+  "chuyen-quyen-so-huu-chung-khoan"
+ ],
+ "keywords": [
+  "Sổ đăng ký người sở hữu",
+  "ngày đăng ký cuối cùng",
+  "quyền phát sinh"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai lập và lưu giữ Sổ đăng ký người sở hữu chứng khoán đối với chứng khoán đăng ký tập trung?",
+   "options": [
+    "Tổng công ty lưu ký và bù trừ chứng khoán Việt Nam",
+    "Công ty chứng khoán của từng nhà đầu tư",
+    "Sở giao dịch chứng khoán Việt Nam",
+    "Hội đồng quản trị công ty phát hành"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 61.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 61 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai được nhận các quyền phát sinh (cổ tức, quyền mua) liên quan đến chứng khoán?",
+   "options": [
+    "Người có tên trên Sổ đăng ký người sở hữu lập tại ngày đăng ký cuối cùng",
+    "Người mua chứng khoán trước ngày trả cổ tức",
+    "Người nắm giữ lâu nhất",
+    "Người được Hội đồng quản trị chỉ định"
+   ],
+   "answer": 0,
+   "explain": "Khoản 5 Điều 61.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 5 Điều 61 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Có tên trên Sổ tại ngày đăng ký cuối cùng",
+   "right": "Không có tên trên Sổ tại ngày đăng ký cuối cùng",
+   "cases": [
+    {
+     "text": "Được nhận cổ tức đợt đó",
+     "answer": "left"
+    },
+    {
+     "text": "Không được nhận quyền phát sinh của đợt đó",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 5 Điều 61."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chỉ những người có tên trên Sổ đăng ký người sở hữu chứng khoán lập tại {{ngày đăng ký cuối cùng}} mới được nhận các quyền phát sinh liên quan đến chứng khoán mà mình sở hữu.",
+   "bank_extra": [
+    "ngày giao dịch đầu tiên",
+    "ngày phát hành"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tổng công ty lưu ký và bù trừ thực hiện lập danh sách, tính toán và {{phân bổ quyền}} cho người sở hữu chứng khoán theo tỷ lệ do công ty đại chúng thông báo.",
+   "bank_extra": [
+    "thu phí",
+    "bảo lãnh"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "X bán cổ phiếu Y vào ngày 13/6; cổ phiếu được chuyển khỏi tài khoản của X vào 16/6. Ngày đăng ký cuối cùng để trả cổ tức là 15/6. Ai nhận cổ tức?",
+   "options": [
+    "X, vì tại ngày đăng ký cuối cùng X vẫn có tên trên Sổ đăng ký",
+    "Người mua, vì đã đặt lệnh trước ngày 15/6",
+    "Chia đôi giữa hai người",
+    "Không ai, vì đang trong thời gian chuyển nhượng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 5 Điều 61 lấy tên trên Sổ tại ngày đăng ký cuối cùng; quyền sở hữu chỉ chuyển khi ghi sổ trên tài khoản lưu ký (khoản 2 Điều 64).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 5 Điều 61 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Giải thích vai trò của Sổ đăng ký người sở hữu chứng khoán và ngày đăng ký cuối cùng.",
+   "model": "Tổng công ty lưu ký và bù trừ lập, lưu giữ Sổ đăng ký người sở hữu đối với chứng khoán đăng ký tập trung; lập danh sách, tính toán, phân bổ quyền theo tỷ lệ công ty thông báo. Chỉ người có tên trên Sổ lập tại ngày đăng ký cuối cùng mới nhận quyền phát sinh (cổ tức, quyền mua, quyền dự họp).",
+   "keywords": [
+    "Sổ đăng ký",
+    "ngày đăng ký cuối cùng",
+    "phân bổ quyền",
+    "cổ tức"
+   ]
+  }
+ ]
+}

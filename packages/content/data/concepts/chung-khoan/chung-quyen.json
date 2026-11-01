@@ -1,0 +1,118 @@
+{
+ "id": "chung-quyen",
+ "subject": "chung-khoan",
+ "chapter": "c1-khai-niem",
+ "term": "Chứng quyền",
+ "definition": "Chứng quyền là loại chứng khoán được phát hành cùng với việc phát hành trái phiếu hoặc cổ phiếu ưu đãi, cho phép người sở hữu chứng quyền được quyền mua một số cổ phiếu phổ thông nhất định theo mức giá đã được xác định trước trong khoảng thời gian xác định.",
+ "plain": "Chứng quyền là \"phần thưởng kèm theo\" để trái phiếu hoặc cổ phiếu ưu đãi dễ bán hơn: người mua được thêm quyền mua cổ phiếu phổ thông với giá chốt trước. Khác chứng quyền có bảo đảm (khoản 6), loại do công ty chứng khoán phát hành và có tài sản bảo đảm.",
+ "example": "Công ty D phát hành trái phiếu kèm chứng quyền: mỗi trái phiếu kèm 10 chứng quyền, mỗi chứng quyền được mua 1 cổ phiếu phổ thông D giá 20.000 đồng trong 2 năm.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 5 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quyen-mua-co-phan",
+  "chung-khoan-phai-sinh"
+ ],
+ "keywords": [
+  "phát hành cùng trái phiếu hoặc cổ phiếu ưu đãi",
+  "cổ phiếu phổ thông",
+  "giá xác định trước"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 5 Điều 4, chứng quyền được phát hành cùng với việc phát hành loại chứng khoán nào?",
+   "options": [
+    "Trái phiếu hoặc cổ phiếu ưu đãi",
+    "Chứng chỉ quỹ",
+    "Cổ phiếu phổ thông",
+    "Hợp đồng tương lai"
+   ],
+   "answer": 0,
+   "explain": "Chứng quyền \"được phát hành cùng với việc phát hành trái phiếu hoặc cổ phiếu ưu đãi\".",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 5 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chứng quyền cho phép người sở hữu mua loại chứng khoán nào?",
+   "options": [
+    "Cổ phiếu phổ thông",
+    "Cổ phiếu ưu đãi",
+    "Trái phiếu chuyển đổi",
+    "Chứng chỉ quỹ"
+   ],
+   "answer": 0,
+   "explain": "Quyền mua một số CỔ PHIẾU PHỔ THÔNG nhất định theo giá xác định trước.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 5 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Chứng quyền",
+   "right": "Chứng quyền có bảo đảm",
+   "cases": [
+    {
+     "text": "Phát hành cùng trái phiếu hoặc cổ phiếu ưu đãi",
+     "answer": "left"
+    },
+    {
+     "text": "Do công ty chứng khoán phát hành, có tài sản bảo đảm",
+     "answer": "right"
+    },
+    {
+     "text": "Có thể là quyền mua hoặc quyền bán chứng khoán cơ sở",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 5 và khoản 6 Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chứng quyền cho phép người sở hữu được quyền mua một số {{cổ phiếu phổ thông}} nhất định theo mức giá đã được xác định trước trong {{khoảng thời gian xác định}}.",
+   "bank_extra": [
+    "cổ phiếu ưu đãi",
+    "thời hạn không giới hạn"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chứng quyền có bảo đảm do {{công ty chứng khoán}} phát hành.",
+   "bank_extra": [
+    "công ty cổ phần",
+    "quỹ đầu tư"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chứng quyền (khoản 5 Điều 4) và chứng quyền có bảo đảm (khoản 6 Điều 4) là cùng một loại chứng khoán.",
+   "answer": false,
+   "explain": "Sai. Chứng quyền đi kèm trái phiếu/cổ phiếu ưu đãi của tổ chức phát hành; chứng quyền có bảo đảm do công ty chứng khoán phát hành, có tài sản bảo đảm, có thể là quyền mua hoặc quyền bán."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Định nghĩa chứng quyền theo khoản 5 Điều 4 và nêu một điểm khác với chứng quyền có bảo đảm.",
+   "model": "Chứng quyền là loại chứng khoán được phát hành cùng với việc phát hành trái phiếu hoặc cổ phiếu ưu đãi, cho phép người sở hữu được quyền mua một số cổ phiếu phổ thông nhất định theo mức giá xác định trước trong khoảng thời gian xác định. Chứng quyền có bảo đảm do công ty chứng khoán phát hành và có tài sản bảo đảm.",
+   "keywords": [
+    "trái phiếu hoặc cổ phiếu ưu đãi",
+    "cổ phiếu phổ thông",
+    "giá xác định trước",
+    "công ty chứng khoán"
+   ]
+  }
+ ]
+}

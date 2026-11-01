@@ -1,0 +1,116 @@
+{
+ "id": "hoi-dong-bau-cu-quoc-gia",
+ "subject": "hien-phap",
+ "chapter": "c6-bau-cu",
+ "term": "Hội đồng bầu cử quốc gia",
+ "definition": "Hội đồng bầu cử quốc gia là cơ quan do Quốc hội thành lập, có nhiệm vụ tổ chức bầu cử đại biểu Quốc hội; chỉ đạo và hướng dẫn công tác bầu cử đại biểu Hội đồng nhân dân các cấp.",
+ "plain": "Hiến pháp 2013 lần đầu hiến định Hội đồng bầu cử quốc gia (Chương X, cùng Kiểm toán nhà nước). Do Quốc hội thành lập, có 15–21 thành viên (đại diện Ủy ban Thường vụ Quốc hội, Chính phủ, Ủy ban trung ương Mặt trận Tổ quốc…); Chủ tịch do Quốc hội bầu; hoạt động tập thể, quyết định theo đa số; chịu trách nhiệm trước Quốc hội. Nhiệm vụ: TỔ CHỨC bầu cử đại biểu Quốc hội; CHỈ ĐẠO, HƯỚNG DẪN bầu cử Hội đồng nhân dân.",
+ "example": "Trong một cuộc bầu cử toàn quốc, Hội đồng bầu cử quốc gia ấn định số đơn vị bầu cử đại biểu Quốc hội ở từng tỉnh và xác nhận tư cách người trúng cử đại biểu Quốc hội; còn việc tổ chức bầu Hội đồng nhân dân xã do Ủy ban bầu cử ở xã thực hiện dưới sự chỉ đạo, hướng dẫn của Hội đồng.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 117 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nguyen-tac-bau-cu",
+  "don-vi-bau-cu",
+  "hiep-thuong-gioi-thieu-ung-cu"
+ ],
+ "keywords": [
+  "do Quốc hội thành lập",
+  "tổ chức bầu cử đại biểu Quốc hội",
+  "chỉ đạo, hướng dẫn bầu cử Hội đồng nhân dân",
+  "15 đến 21 thành viên"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 1 Điều 117 Hiến pháp 2013, Hội đồng bầu cử quốc gia do cơ quan nào thành lập?",
+   "options": [
+    "Quốc hội",
+    "Chính phủ",
+    "Ủy ban Thường vụ Quốc hội",
+    "Mặt trận Tổ quốc Việt Nam"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 117.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 117 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hội đồng bầu cử quốc gia có bao nhiêu thành viên theo Luật Bầu cử?",
+   "options": [
+    "Từ mười lăm đến hai mươi mốt thành viên",
+    "Từ năm đến chín thành viên",
+    "Đúng mười một thành viên",
+    "Không giới hạn"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 12 Luật Bầu cử.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 12 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Bầu cử đại biểu Quốc hội",
+   "right": "Bầu cử đại biểu Hội đồng nhân dân",
+   "cases": [
+    {
+     "text": "Hội đồng bầu cử quốc gia trực tiếp tổ chức",
+     "answer": "left"
+    },
+    {
+     "text": "Hội đồng bầu cử quốc gia chỉ đạo, hướng dẫn",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 117 Hiến pháp 2013."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hội đồng bầu cử quốc gia là cơ quan do {{Quốc hội}} thành lập, có nhiệm vụ {{tổ chức}} bầu cử đại biểu Quốc hội.",
+   "bank_extra": [
+    "Chính phủ",
+    "giám sát"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hội đồng bầu cử quốc gia hoạt động theo chế độ {{tập thể}}, quyết định theo đa số.",
+   "bank_extra": [
+    "thủ trưởng",
+    "luân phiên"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hội đồng bầu cử quốc gia chịu trách nhiệm trước Chính phủ.",
+   "answer": false,
+   "explain": "Sai. Điều 13 Luật Bầu cử: chịu trách nhiệm trước Quốc hội, báo cáo trước Quốc hội, Ủy ban Thường vụ Quốc hội."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày địa vị pháp lý, cơ cấu và nhiệm vụ của Hội đồng bầu cử quốc gia.",
+   "model": "Cơ quan do Quốc hội thành lập; tổ chức bầu cử đại biểu Quốc hội, chỉ đạo, hướng dẫn bầu cử đại biểu Hội đồng nhân dân (khoản 1 Điều 117 Hiến pháp). Gồm Chủ tịch, Phó Chủ tịch, Ủy viên, 15–21 thành viên (Điều 12 Luật Bầu cử); Chủ tịch do Quốc hội bầu. Hoạt động tập thể, quyết định theo đa số; chịu trách nhiệm trước Quốc hội (Điều 13).",
+   "keywords": [
+    "Quốc hội thành lập",
+    "tổ chức",
+    "chỉ đạo, hướng dẫn",
+    "tập thể"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,129 @@
+{
+ "id": "bieu-quyet-thong-qua-luat",
+ "subject": "hien-phap",
+ "chapter": "c7-quoc-hoi",
+ "term": "Biểu quyết thông qua luật, nghị quyết của Quốc hội",
+ "definition": "Luật, nghị quyết của Quốc hội phải được quá nửa tổng số đại biểu Quốc hội biểu quyết tán thành; trường hợp làm Hiến pháp, sửa đổi Hiến pháp, quyết định rút ngắn hoặc kéo dài nhiệm kỳ của Quốc hội, bãi nhiệm đại biểu Quốc hội phải được ít nhất hai phần ba tổng số đại biểu Quốc hội biểu quyết tán thành.",
+ "plain": "Hai ngưỡng tính trên TỔNG SỐ đại biểu (không phải số có mặt): quá 1/2 cho luật, nghị quyết thông thường; ít nhất 2/3 cho 4 việc hệ trọng: làm, sửa Hiến pháp; rút ngắn, kéo dài nhiệm kỳ; bãi nhiệm đại biểu. Luật, pháp lệnh phải công bố chậm nhất 15 ngày kể từ khi thông qua (khoản 2), trừ khi Chủ tịch nước đề nghị xem xét lại pháp lệnh.",
+ "example": "Quốc hội có 500 đại biểu, 450 có mặt. Một luật được 240 phiếu tán thành: chưa thông qua, vì chưa quá nửa TỔNG SỐ đại biểu (phải từ 251 trở lên).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 85 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "sua-doi-hien-phap",
+  "nhiem-ky-quoc-hoi",
+  "quyen-trinh-du-an-luat"
+ ],
+ "keywords": [
+  "quá nửa tổng số đại biểu",
+  "hai phần ba tổng số đại biểu",
+  "công bố chậm nhất 15 ngày"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Luật thông thường phải được bao nhiêu đại biểu tán thành?",
+   "options": [
+    "Quá nửa tổng số đại biểu Quốc hội",
+    "Quá nửa số đại biểu có mặt",
+    "Hai phần ba tổng số đại biểu",
+    "Ba phần tư tổng số đại biểu"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 85.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 85 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trường hợp nào cần ít nhất hai phần ba tổng số đại biểu Quốc hội tán thành?",
+   "options": [
+    "Bãi nhiệm đại biểu Quốc hội",
+    "Thông qua luật thuế",
+    "Thông qua dự toán ngân sách",
+    "Thông qua nghị quyết về kỳ họp"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 85.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 85 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quá nửa tổng số đại biểu",
+   "right": "Ít nhất hai phần ba tổng số đại biểu",
+   "cases": [
+    {
+     "text": "Thông qua Luật Đất đai",
+     "answer": "left"
+    },
+    {
+     "text": "Sửa đổi Hiến pháp",
+     "answer": "right"
+    },
+    {
+     "text": "Kéo dài nhiệm kỳ Quốc hội",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 85."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Luật, nghị quyết của Quốc hội phải được {{quá nửa}} tổng số đại biểu tán thành; làm, sửa đổi Hiến pháp phải được ít nhất {{hai phần ba}} tổng số đại biểu tán thành.",
+   "bank_extra": [
+    "một phần ba",
+    "ba phần tư"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Luật, pháp lệnh phải được công bố chậm nhất là {{mười lăm}} ngày, kể từ ngày được thông qua.",
+   "bank_extra": [
+    "ba mươi",
+    "bảy"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Quốc hội 480 đại biểu biểu quyết bãi nhiệm một đại biểu: 300 tán thành. Kết quả?",
+   "options": [
+    "Không thông qua, vì 300 chưa đạt hai phần ba tổng số (320)",
+    "Thông qua, vì quá nửa tổng số",
+    "Thông qua, vì quá nửa số có mặt",
+    "Phải trưng cầu ý dân"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 85: bãi nhiệm đại biểu cần ít nhất 2/3 tổng số: 2/3 × 480 = 320.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 85 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các ngưỡng biểu quyết của Quốc hội theo Điều 85.",
+   "model": "Luật, nghị quyết: quá nửa tổng số đại biểu. Làm, sửa đổi Hiến pháp; rút ngắn, kéo dài nhiệm kỳ Quốc hội; bãi nhiệm đại biểu: ít nhất 2/3 tổng số đại biểu. Pháp lệnh, nghị quyết Ủy ban thường vụ: quá nửa tổng số thành viên. Luật, pháp lệnh công bố chậm nhất 15 ngày kể từ khi thông qua.",
+   "keywords": [
+    "quá nửa",
+    "hai phần ba",
+    "tổng số",
+    "15 ngày"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,127 @@
+{
+ "id": "chuoc-toi-thap-ac",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c6-trung-dai",
+ "term": "Chế định chuộc tội và tội thập ác thời Lý",
+ "definition": "Tháng 11, xuống chiếu cho những người từ 70 tuổi trở lên, 80 tuổi trở xuống, từ 10 tuổi trở lên, 15 tuổi trở xuống và những người ốm yếu cho đến các thân thuộc nhà vua từ hạng Đại công trở lên phạm tội thì cho chuộc [bằng tiền] nếu phạm tội thập ác thì không được theo lệ này.",
+ "plain": "CHUỘC TỘI là nộp tiền thay cho chịu hình phạt. Năm 1042, nhà Lý cho chuộc với: người già (70–80 tuổi), trẻ (10–15 tuổi), người ốm yếu (thể hiện tính nhân đạo) và thân thuộc nhà vua từ hạng \"Đại công\" trở lên (đặc quyền đẳng cấp). Ngoại lệ: tội THẬP ÁC (mười tội nặng nhất, xâm phạm vua, nhà nước, luân thường) thì không được chuộc. Năm 1071 \"định tiền chuộc tội theo thứ bậc khác nhau\". Chế định chuộc tội và thập ác về sau được Quốc triều hình luật (Hậu Lê) kế thừa, quy định chi tiết.",
+ "example": "Một người 75 tuổi phạm tội thường thời Lý có thể nộp tiền chuộc; nhưng nếu phạm tội mưu phản (thuộc thập ác) thì không được chuộc.",
+ "source": {
+  "kind": "primary",
+  "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển II (bản dịch Viện KHXH Việt Nam, NXB KHXH 1993), Kỷ nhà Lý, Thái Tông, năm 1042, tờ 31a",
+  "url": "https://thpthiephoa1.edu.vn/wp-content/uploads/Dai-viet-su-ki-toan-thu.pdf"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hinh-thu-1042",
+  "phap-luat-nha-dinh"
+ ],
+ "keywords": [
+  "chuộc tội",
+  "70–80 tuổi, 10–15 tuổi",
+  "thân thuộc nhà vua",
+  "thập ác không được chuộc",
+  "1071 định tiền chuộc"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo chiếu năm 1042, trường hợp nào KHÔNG được chuộc tội?",
+   "options": [
+    "Phạm tội thập ác",
+    "Người 75 tuổi phạm tội",
+    "Trẻ 12 tuổi phạm tội",
+    "Người ốm yếu phạm tội"
+   ],
+   "answer": 0,
+   "explain": "\"nếu phạm tội thập ác thì không được theo lệ này\".",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển II, tờ 31a"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Năm 1071, nhà Lý quy định gì về chuộc tội?",
+   "options": [
+    "Định tiền chuộc tội theo thứ bậc khác nhau",
+    "Bãi bỏ chuộc tội",
+    "Chỉ cho quý tộc chuộc tội",
+    "Cho chuộc cả tội thập ác"
+   ],
+   "answer": 0,
+   "explain": "Toàn thư năm 1071.",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển III, tờ 5b"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Được chuộc theo chiếu 1042",
+   "right": "Không được chuộc",
+   "cases": [
+    {
+     "text": "Người từ 70 đến 80 tuổi phạm tội thường",
+     "answer": "left"
+    },
+    {
+     "text": "Thân thuộc nhà vua từ hạng Đại công trở lên phạm tội thường",
+     "answer": "left"
+    },
+    {
+     "text": "Bất kỳ ai phạm tội thập ác",
+     "answer": "right"
+    }
+   ],
+   "explain": "Chiếu tháng 11 năm 1042."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Những người từ 70 tuổi trở lên, 80 tuổi trở xuống, từ {{10}} tuổi trở lên, {{15}} tuổi trở xuống (…) phạm tội thì cho chuộc.",
+   "bank_extra": [
+    "16",
+    "18"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nếu phạm tội {{thập ác}} thì không được theo lệ này.",
+   "bank_extra": [
+    "trộm cắp",
+    "đánh nhau"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Chế định chuộc tội năm 1042 phản ánh những đặc điểm nào của pháp luật thời Lý?",
+   "options": [
+    "Vừa có tính nhân đạo (người già, trẻ, ốm yếu) vừa bảo vệ đặc quyền đẳng cấp (thân thuộc nhà vua), đồng thời nghiêm trị tội thập ác",
+    "Chỉ có tính nhân đạo, không có tính đẳng cấp",
+    "Chỉ bảo vệ quý tộc",
+    "Bình đẳng tuyệt đối trước pháp luật"
+   ],
+   "answer": 0,
+   "explain": "Đánh giá phổ biến của giáo trình dựa trên câu chữ chiếu năm 1042."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày chế định chuộc tội thời Lý và ý nghĩa của nó.",
+   "model": "Chiếu năm 1042 cho người 70–80 tuổi, 10–15 tuổi, người ốm yếu và thân thuộc nhà vua từ hạng Đại công trở lên được chuộc tội bằng tiền, trừ tội thập ác; năm 1071 định tiền chuộc theo thứ bậc. Ý nghĩa: tính nhân đạo, tính đẳng cấp, bảo vệ nhà vua và chế độ qua việc loại trừ thập ác; được Quốc triều hình luật kế thừa.",
+   "keywords": [
+    "chuộc tội",
+    "thập ác",
+    "nhân đạo",
+    "đẳng cấp",
+    "1071"
+   ]
+  }
+ ]
+}

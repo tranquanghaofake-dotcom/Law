@@ -1,0 +1,119 @@
+{
+ "id": "nguyen-tac-cong-bo-thong-tin",
+ "subject": "chung-khoan",
+ "chapter": "c9-quan-ly-nha-nuoc",
+ "term": "Nguyên tắc công bố thông tin",
+ "definition": "Việc công bố thông tin phải đầy đủ, chính xác, kịp thời. Đối tượng công bố thông tin phải chịu trách nhiệm trước pháp luật về nội dung thông tin công bố. Trường hợp có thay đổi nội dung thông tin đã công bố, đối tượng công bố thông tin phải công bố kịp thời, đầy đủ nội dung thay đổi và lý do thay đổi so với thông tin đã công bố trước đó.",
+ "plain": "Ba chữ vàng: ĐẦY ĐỦ – CHÍNH XÁC – KỊP THỜI. Người công bố chịu trách nhiệm về nội dung; sửa thông tin thì phải công bố cả lý do thay đổi; khi công bố phải đồng thời báo cáo Ủy ban và nơi chứng khoán niêm yết, đăng ký giao dịch; tổ chức công bố qua người đại diện theo pháp luật hoặc người được ủy quyền công bố thông tin.",
+ "example": "Công ty P công bố lợi nhuận quý 1.000 tỷ, một tuần sau sửa còn 300 tỷ: phải công bố kịp thời nội dung thay đổi VÀ lý do thay đổi (khoản 2 Điều 119); nếu sai lệch có chủ ý còn có thể bị xử lý vì công bố thông tin sai sự thật.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 119 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "doi-tuong-cong-bo-thong-tin",
+  "nguyen-tac-hoat-dong-chung-khoan"
+ ],
+ "keywords": [
+  "đầy đủ, chính xác, kịp thời",
+  "chịu trách nhiệm về nội dung",
+  "công bố lý do thay đổi",
+  "đồng thời báo cáo Ủy ban"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Việc công bố thông tin phải bảo đảm những yêu cầu nào theo khoản 1 Điều 119?",
+   "options": [
+    "Đầy đủ, chính xác, kịp thời",
+    "Ngắn gọn, hấp dẫn, có lợi cho công ty",
+    "Chỉ cần chính xác",
+    "Bí mật cho đến khi Ủy ban cho phép"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 119.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 119 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khi công bố thông tin, đối tượng công bố phải đồng thời báo cáo ai?",
+   "options": [
+    "Ủy ban Chứng khoán Nhà nước và tổ chức nơi chứng khoán niêm yết, đăng ký giao dịch",
+    "Chỉ Hội đồng quản trị",
+    "Chỉ cổ đông lớn",
+    "Bộ Công an"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 119.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 119 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Đúng nguyên tắc",
+   "right": "Sai nguyên tắc",
+   "cases": [
+    {
+     "text": "Sửa số liệu đã công bố và nêu rõ lý do thay đổi",
+     "answer": "left"
+    },
+    {
+     "text": "Sửa số liệu đã công bố mà không giải thích",
+     "answer": "right"
+    },
+    {
+     "text": "Công bố thông tin qua người được ủy quyền công bố thông tin",
+     "answer": "left"
+    }
+   ],
+   "explain": "Khoản 2, 4 Điều 119."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Việc công bố thông tin phải {{đầy đủ}}, {{chính xác}}, kịp thời.",
+   "bank_extra": [
+    "ngắn gọn",
+    "có lợi"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Việc công bố thông tin của tổ chức phải do người {{đại diện theo pháp luật}} hoặc người được ủy quyền công bố thông tin thực hiện.",
+   "bank_extra": [
+    "kế toán trưởng",
+    "cổ đông bất kỳ"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Đối tượng công bố thông tin không phải chịu trách nhiệm về nội dung nếu đã báo cáo Ủy ban.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 119: đối tượng công bố phải chịu trách nhiệm trước pháp luật về nội dung thông tin công bố."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các nguyên tắc công bố thông tin theo Điều 119.",
+   "model": "Đầy đủ, chính xác, kịp thời; đối tượng công bố chịu trách nhiệm về nội dung; thay đổi thì công bố kịp thời nội dung và lý do thay đổi; đồng thời báo cáo Ủy ban và nơi niêm yết, đăng ký giao dịch; tổ chức công bố qua người đại diện theo pháp luật hoặc người được ủy quyền; lưu giữ thông tin đã công bố.",
+   "keywords": [
+    "đầy đủ, chính xác, kịp thời",
+    "chịu trách nhiệm",
+    "lý do thay đổi",
+    "báo cáo Ủy ban"
+   ]
+  }
+ ]
+}

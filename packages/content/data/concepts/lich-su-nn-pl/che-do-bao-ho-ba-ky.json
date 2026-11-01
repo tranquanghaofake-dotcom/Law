@@ -1,0 +1,127 @@
+{
+ "id": "che-do-bao-ho-ba-ky",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c7-can-dai",
+ "term": "Hiệp ước 1884 và chế độ cai trị ở ba kỳ",
+ "definition": "Hiệp ước Patenôtre (Giáp Thân) ký ngày 6/6/1884 giữa triều Nguyễn và Pháp xác lập chế độ bảo hộ của Pháp; lãnh thổ Việt Nam bị chia thành ba kỳ với chế độ cai trị khác nhau: Nam Kỳ là thuộc địa, Bắc Kỳ là xứ bảo hộ, Trung Kỳ là xứ bảo hộ do triều Nguyễn trực tiếp quản lý dưới sự kiểm soát của Pháp.",
+ "plain": "Hiệp ước 1884 đánh dấu việc nhà Nguyễn mất độc lập, thừa nhận sự bảo hộ của Pháp; đây là mốc mở đầu chương 7. Chính sách \"chia để trị\": NAM KỲ (đã mất trước đó qua các hòa ước 1862, 1874) là THUỘC ĐỊA, cai trị trực tiếp, áp dụng nhiều luật Pháp; BẮC KỲ là xứ BẢO HỘ, quyền thực tế thuộc người Pháp (Thống sứ); TRUNG KỲ là xứ bảo hộ, triều đình Nguyễn vẫn tồn tại nhưng quyền thực tế thuộc Khâm sứ Pháp. Hệ quả pháp lý: ba kỳ có ba hệ thống pháp luật khác nhau. Sắc lệnh 47 năm 1945 phải tạm giữ luật riêng của từng kỳ.",
+ "example": "Một người sinh ở Sài Gòn năm 1930 chịu chế độ thuộc địa, áp dụng nhiều luật Pháp; người cùng thời ở Huế chịu chế độ bảo hộ, áp dụng luật do triều Nguyễn ban hành dưới sự kiểm soát của Pháp.",
+ "source": {
+  "kind": "textbook",
+  "cite": "Giáo trình Lịch sử nhà nước và pháp luật Việt Nam, Trường ĐH Luật Hà Nội 2025, Chương 7 — tóm lược quan điểm phổ biến, chưa đối chiếu nguyên văn"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "lien-bang-dong-duong",
+  "phap-luat-thoi-phap-thuoc-dan-luat",
+  "phap-luat-thoi-phap-thuoc-hinh-luat"
+ ],
+ "keywords": [
+  "6/6/1884",
+  "bảo hộ",
+  "Nam Kỳ thuộc địa",
+  "Bắc Kỳ, Trung Kỳ bảo hộ",
+  "chia để trị"
+ ],
+ "note": "Thẻ dạng tóm lược giáo trình, chưa có trích nguyên văn Hiệp ước 1884 hay sắc lệnh của chính quyền Pháp; cần đối chiếu sách in.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo cách chia của thực dân Pháp, Nam Kỳ có chế độ gì?",
+   "options": [
+    "Thuộc địa",
+    "Bảo hộ",
+    "Tự trị",
+    "Nhượng địa"
+   ],
+   "answer": 0,
+   "explain": "Nam Kỳ là thuộc địa; Bắc Kỳ, Trung Kỳ là xứ bảo hộ.",
+   "source": {
+    "kind": "textbook",
+    "cite": "Giáo trình Lịch sử nhà nước và pháp luật Việt Nam, Trường ĐH Luật Hà Nội 2025, Chương 7 — tóm lược quan điểm phổ biến, chưa đối chiếu nguyên văn"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hiệp ước Patenôtre được ký năm nào?",
+   "options": [
+    "1884",
+    "1862",
+    "1874",
+    "1887"
+   ],
+   "answer": 0,
+   "explain": "Ký ngày 6/6/1884.",
+   "source": {
+    "kind": "textbook",
+    "cite": "Giáo trình Lịch sử nhà nước và pháp luật Việt Nam, Trường ĐH Luật Hà Nội 2025, Chương 7 — tóm lược quan điểm phổ biến, chưa đối chiếu nguyên văn"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thuộc địa",
+   "right": "Bảo hộ",
+   "cases": [
+    {
+     "text": "Nam Kỳ",
+     "answer": "left"
+    },
+    {
+     "text": "Bắc Kỳ",
+     "answer": "right"
+    },
+    {
+     "text": "Trung Kỳ, triều Nguyễn vẫn tồn tại",
+     "answer": "right"
+    }
+   ],
+   "explain": "Theo trình bày phổ biến của giáo trình."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hiệp ước 1884 chia Việt Nam thành ba kỳ: Nam Kỳ là {{thuộc địa}}, Bắc Kỳ và Trung Kỳ là xứ {{bảo hộ}}.",
+   "bank_extra": [
+    "tự trị",
+    "liên bang"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chính sách chia Việt Nam thành ba kỳ với chế độ khác nhau thể hiện chính sách \"chia để {{trị}}\".",
+   "bank_extra": [
+    "quản",
+    "đồng hóa"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Vì sao sau năm 1945 Sắc lệnh 47 phải quy định riêng luật áp dụng cho Bắc bộ, Trung bộ và Nam bộ?",
+   "options": [
+    "Vì thời Pháp thuộc ba kỳ có chế độ cai trị và hệ thống pháp luật khác nhau",
+    "Vì ba kỳ có ba ngôn ngữ khác nhau",
+    "Vì Hiến pháp 1946 chia nước thành ba quốc gia",
+    "Vì chỉ Nam bộ có tòa án"
+   ],
+   "answer": 0,
+   "explain": "Hệ quả của chế độ chia ba kỳ thời Pháp thuộc."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày chế độ cai trị của Pháp ở Việt Nam sau Hiệp ước 1884.",
+   "model": "Hiệp ước Patenôtre (6/6/1884) xác lập chế độ bảo hộ; chia Việt Nam thành ba kỳ: Nam Kỳ thuộc địa (cai trị trực tiếp), Bắc Kỳ bảo hộ, Trung Kỳ bảo hộ, triều Nguyễn tồn tại nhưng quyền thực tế thuộc Pháp; chính sách chia để trị; hệ quả là ba hệ thống pháp luật khác nhau.",
+   "keywords": [
+    "1884",
+    "thuộc địa",
+    "bảo hộ",
+    "ba kỳ"
+   ]
+  }
+ ]
+}

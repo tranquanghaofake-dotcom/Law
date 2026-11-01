@@ -1,0 +1,119 @@
+{
+ "id": "quyen-bau-cu-ung-cu",
+ "subject": "hien-phap",
+ "chapter": "c6-bau-cu",
+ "term": "Quyền bầu cử và quyền ứng cử",
+ "definition": "Công dân đủ mười tám tuổi trở lên có quyền bầu cử và đủ hai mươi mốt tuổi trở lên có quyền ứng cử vào Quốc hội, Hội đồng nhân dân. Việc thực hiện các quyền này do luật định.",
+ "plain": "Tuổi bầu cử 18, tuổi ứng cử 21, tính đến ngày bầu cử được công bố (Điều 2 Luật Bầu cử). Đây là quyền chính trị của CÔNG DÂN (người nước ngoài không có). Đủ tuổi chưa đủ: người ứng cử còn phải đáp ứng tiêu chuẩn đại biểu theo Luật Tổ chức Quốc hội, Luật Tổ chức chính quyền địa phương (Điều 3) và không thuộc trường hợp không được ứng cử (Điều 37).",
+ "example": "Bạn sinh ngày 20/5/2008, ngày bầu cử là 15/3/2026: chưa đủ 18 tuổi tính đến ngày bầu cử nên chưa có quyền bầu cử lần này.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 27 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nguyen-tac-bau-cu",
+  "truong-hop-khong-duoc-ung-cu",
+  "danh-sach-cu-tri"
+ ],
+ "keywords": [
+  "18 tuổi bầu cử",
+  "21 tuổi ứng cử",
+  "tính đến ngày bầu cử được công bố"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 27 Hiến pháp 2013, công dân đủ bao nhiêu tuổi có quyền ứng cử vào Quốc hội, Hội đồng nhân dân?",
+   "options": [
+    "21 tuổi",
+    "18 tuổi",
+    "25 tuổi",
+    "20 tuổi"
+   ],
+   "answer": 0,
+   "explain": "Điều 27 Hiến pháp 2013.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 27 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tuổi bầu cử, ứng cử được tính đến thời điểm nào theo Luật Bầu cử?",
+   "options": [
+    "Ngày bầu cử được công bố",
+    "Ngày lập danh sách cử tri",
+    "Ngày nộp hồ sơ ứng cử",
+    "Ngày 01/01 năm bầu cử"
+   ],
+   "answer": 0,
+   "explain": "Điều 2 Luật Bầu cử: \"Tính đến ngày bầu cử được công bố\".",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 2 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "18 tuổi",
+   "right": "21 tuổi",
+   "cases": [
+    {
+     "text": "Tuổi có quyền bầu cử",
+     "answer": "left"
+    },
+    {
+     "text": "Tuổi có quyền ứng cử",
+     "answer": "right"
+    },
+    {
+     "text": "Tuổi có quyền biểu quyết khi trưng cầu ý dân",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 27, 29 Hiến pháp 2013."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công dân đủ {{mười tám}} tuổi trở lên có quyền bầu cử và đủ {{hai mươi mốt}} tuổi trở lên có quyền ứng cử vào Quốc hội, Hội đồng nhân dân.",
+   "bank_extra": [
+    "hai mươi",
+    "hai mươi lăm"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người ứng cử đại biểu Quốc hội phải đáp ứng các tiêu chuẩn của đại biểu Quốc hội quy định tại Luật {{Tổ chức Quốc hội}}.",
+   "bank_extra": [
+    "Bầu cử",
+    "Cán bộ, công chức"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người nước ngoài thường trú lâu năm tại Việt Nam có quyền bầu cử đại biểu Hội đồng nhân dân.",
+   "answer": false,
+   "explain": "Sai. Quyền bầu cử, ứng cử thuộc về công dân Việt Nam (Điều 27 Hiến pháp; Điều 2 Luật Bầu cử)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quy định về quyền bầu cử, ứng cử của công dân.",
+   "model": "Công dân đủ 18 tuổi có quyền bầu cử, đủ 21 tuổi có quyền ứng cử vào Quốc hội, Hội đồng nhân dân; việc thực hiện do luật định (Điều 27 Hiến pháp). Tuổi tính đến ngày bầu cử được công bố (Điều 2 Luật Bầu cử). Người ứng cử phải đạt tiêu chuẩn theo Luật Tổ chức Quốc hội hoặc Luật Tổ chức chính quyền địa phương (Điều 3) và không thuộc trường hợp không được ứng cử (Điều 37).",
+   "keywords": [
+    "18 tuổi",
+    "21 tuổi",
+    "ngày bầu cử được công bố",
+    "tiêu chuẩn"
+   ]
+  }
+ ]
+}

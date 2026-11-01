@@ -1,0 +1,119 @@
+{
+ "id": "chu-tich-nuoc-quoc-phong",
+ "subject": "hien-phap",
+ "chapter": "c8-chu-tich-nuoc",
+ "term": "Chủ tịch nước thống lĩnh lực lượng vũ trang",
+ "definition": "Thống lĩnh lực lượng vũ trang nhân dân, giữ chức Chủ tịch Hội đồng quốc phòng và an ninh; quyết định phong, thăng, giáng, tước quân hàm cấp tướng, chuẩn đô đốc, phó đô đốc, đô đốc hải quân; bổ nhiệm, miễn nhiệm, cách chức Tổng tham mưu trưởng, Chủ nhiệm Tổng cục chính trị Quân đội nhân dân Việt Nam;",
+ "plain": "Chủ tịch nước là \"tổng tư lệnh tối cao\" theo nghĩa hiến định: thống lĩnh lực lượng vũ trang, Chủ tịch Hội đồng quốc phòng và an ninh (hội đồng làm việc tập thể, quyết định theo đa số, danh sách thành viên do Chủ tịch nước trình Quốc hội phê chuẩn). Về tình trạng chiến tranh, tình trạng khẩn cấp: Chủ tịch nước CÔNG BỐ căn cứ nghị quyết của Quốc hội hoặc Ủy ban thường vụ; chỉ khi Ủy ban thường vụ không thể họp, Chủ tịch nước mới tự công bố tình trạng khẩn cấp.",
+ "example": "Khi xảy ra thiên tai nghiêm trọng và Ủy ban thường vụ Quốc hội đã ra nghị quyết ban bố tình trạng khẩn cấp, Chủ tịch nước ra lệnh công bố tình trạng khẩn cấp ở địa phương đó.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 5 Điều 88 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "chu-tich-nuoc-vi-tri",
+  "uy-ban-thuong-vu-quoc-hoi"
+ ],
+ "keywords": [
+  "thống lĩnh lực lượng vũ trang",
+  "Chủ tịch Hội đồng quốc phòng và an ninh",
+  "quân hàm cấp tướng",
+  "công bố tình trạng khẩn cấp"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai giữ chức Chủ tịch Hội đồng quốc phòng và an ninh?",
+   "options": [
+    "Chủ tịch nước",
+    "Thủ tướng Chính phủ",
+    "Bộ trưởng Bộ Quốc phòng",
+    "Chủ tịch Quốc hội"
+   ],
+   "answer": 0,
+   "explain": "Khoản 5 Điều 88.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 5 Điều 88 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Danh sách thành viên Hội đồng quốc phòng và an ninh do ai trình Quốc hội phê chuẩn?",
+   "options": [
+    "Chủ tịch nước",
+    "Thủ tướng",
+    "Bộ trưởng Bộ Quốc phòng",
+    "Ủy ban thường vụ Quốc hội"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 89.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 89 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Chủ tịch nước quyết định",
+   "right": "Chủ tịch nước công bố căn cứ nghị quyết",
+   "cases": [
+    {
+     "text": "Phong, thăng quân hàm cấp tướng",
+     "answer": "left"
+    },
+    {
+     "text": "Tuyên bố tình trạng chiến tranh",
+     "answer": "right"
+    },
+    {
+     "text": "Bổ nhiệm Tổng tham mưu trưởng",
+     "answer": "left"
+    }
+   ],
+   "explain": "Khoản 5 Điều 88."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chủ tịch nước {{thống lĩnh}} lực lượng vũ trang nhân dân, giữ chức Chủ tịch Hội đồng {{quốc phòng và an ninh}}.",
+   "bank_extra": [
+    "chỉ huy",
+    "kinh tế - xã hội"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hội đồng quốc phòng và an ninh làm việc theo chế độ {{tập thể}} và quyết định theo đa số.",
+   "bank_extra": [
+    "thủ trưởng",
+    "luân phiên"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chủ tịch nước có thể tự công bố tình trạng khẩn cấp trong mọi trường hợp mà không cần nghị quyết của Ủy ban thường vụ Quốc hội.",
+   "answer": false,
+   "explain": "Sai. Chủ tịch nước công bố căn cứ nghị quyết Ủy ban thường vụ; chỉ khi Ủy ban thường vụ không thể họp được thì mới tự công bố (khoản 5 Điều 88)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quyền hạn của Chủ tịch nước trong lĩnh vực quốc phòng, an ninh.",
+   "model": "Thống lĩnh lực lượng vũ trang, Chủ tịch Hội đồng quốc phòng và an ninh; phong, thăng, giáng, tước quân hàm cấp tướng, đô đốc; bổ nhiệm Tổng tham mưu trưởng, Chủ nhiệm Tổng cục chính trị; căn cứ nghị quyết Quốc hội hoặc Ủy ban thường vụ công bố tình trạng chiến tranh; căn cứ nghị quyết Ủy ban thường vụ ra lệnh động viên, công bố tình trạng khẩn cấp; Ủy ban thường vụ không họp được thì tự công bố (khoản 5 Điều 88).",
+   "keywords": [
+    "thống lĩnh",
+    "Hội đồng quốc phòng và an ninh",
+    "quân hàm",
+    "tình trạng khẩn cấp"
+   ]
+  }
+ ]
+}

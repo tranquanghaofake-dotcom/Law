@@ -1,0 +1,115 @@
+{
+ "id": "thai-thuong-hoang",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c6-trung-dai",
+ "term": "Chế độ Thái thượng hoàng thời Trần",
+ "definition": "Tháng 2, ngày 24, vua nhường ngôi cho Hoàng thái tử Hoảng, lui ở Bắc Cung. (…) Gia pháp họ Trần lại khác thế: con đã lớn thì cho nối ngôi chính, còn cha lui ở cung Thánh Từ, xưng là Thượng hoàng, cùng trông coi chính sự.",
+ "plain": "Chế độ THÁI THƯỢNG HOÀNG là đặc điểm riêng của bộ máy nhà Trần. Vua cha còn sống đã nhường ngôi cho con, lên làm Thượng hoàng và CÙNG TRÔNG COI CHÍNH SỰ. Thực tế Thượng hoàng nắm quyền quyết định lớn. Mục đích: bảo đảm chuyển giao quyền lực êm thấm, tránh tranh chấp ngôi vua, đào tạo vua mới. Ví dụ năm 1341, Dụ Tông lên ngôi mới 6 tuổi; chính Thượng hoàng (Minh Tông) sai Trương Hán Siêu, Nguyễn Trung Ngạn soạn luật.",
+ "example": "Ngô Sĩ Liên nhận xét về vua Hiến Tông: \"công việc trong nước đều do Thượng hoàng giữ cả\", cho thấy quyền lực thực tế của Thượng hoàng.",
+ "source": {
+  "kind": "primary",
+  "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển V (bản dịch Viện KHXH Việt Nam, NXB KHXH 1993), Kỷ nhà Trần, Thái Tông, năm 1258, tờ 24a–24b",
+  "url": "https://thpthiephoa1.edu.vn/wp-content/uploads/Dai-viet-su-ki-toan-thu.pdf"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hinh-thu-thoi-tran",
+  "dinh-dai-co-viet"
+ ],
+ "keywords": [
+  "Thượng hoàng",
+  "nhường ngôi khi còn sống",
+  "cùng trông coi chính sự",
+  "gia pháp họ Trần"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Toàn thư, \"gia pháp họ Trần\" về ngôi vua là gì?",
+   "options": [
+    "Con đã lớn thì cho nối ngôi chính, cha lui làm Thượng hoàng, cùng trông coi chính sự",
+    "Cha chết con nối, anh chết em thay",
+    "Vua do triều thần bầu",
+    "Ngôi vua truyền cho con gái trưởng"
+   ],
+   "answer": 0,
+   "explain": "Lời Ngô Sĩ Liên năm 1258.",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển V, tờ 24b"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Năm 1258, Trần Thái Tông nhường ngôi cho ai?",
+   "options": [
+    "Hoàng thái tử Hoảng (Trần Thánh Tông)",
+    "Trần Hưng Đạo",
+    "Trần Thủ Độ",
+    "Lý Chiêu Hoàng"
+   ],
+   "answer": 0,
+   "explain": "Toàn thư năm 1258.",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển V, tờ 24a"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Phép thường từ Hạ Vũ (theo Ngô Sĩ Liên)",
+   "right": "Gia pháp họ Trần",
+   "cases": [
+    {
+     "text": "Cha chết con nối, anh chết em thay",
+     "answer": "left"
+    },
+    {
+     "text": "Cha còn sống đã nhường ngôi, làm Thượng hoàng cùng trông coi chính sự",
+     "answer": "right"
+    }
+   ],
+   "explain": "Lời bàn của Ngô Sĩ Liên năm 1258."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Con đã lớn thì cho nối ngôi chính, còn cha lui ở cung Thánh Từ, xưng là {{Thượng hoàng}}, cùng trông coi {{chính sự}}.",
+   "bank_extra": [
+    "Thái tử",
+    "quân sự"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Năm 1258, vua nhường ngôi cho Hoàng thái tử Hoảng, lui ở {{Bắc Cung}}.",
+   "bank_extra": [
+    "Hoa Lư",
+    "Tây Đô"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo chế độ Thái thượng hoàng, vua cha sau khi nhường ngôi hoàn toàn không tham gia chính sự.",
+   "answer": false,
+   "explain": "Sai. Toàn thư: Thượng hoàng \"cùng trông coi chính sự\"; năm 1341 Thượng hoàng còn trực tiếp sai soạn Hình thư."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày chế độ Thái thượng hoàng thời Trần và ý nghĩa của nó.",
+   "model": "Vua cha còn sống nhường ngôi cho con đã lớn, lui làm Thượng hoàng ở cung Thánh Từ, cùng trông coi chính sự (Toàn thư năm 1258); thực quyền lớn thuộc Thượng hoàng (năm 1341 Thượng hoàng sai soạn Hình thư khi Dụ Tông mới 6 tuổi). Ý nghĩa: chuyển giao quyền lực ổn định, tránh tranh ngôi, củng cố quyền lực dòng họ Trần.",
+   "keywords": [
+    "Thượng hoàng",
+    "nhường ngôi",
+    "cùng trông coi chính sự",
+    "ổn định"
+   ]
+  }
+ ]
+}

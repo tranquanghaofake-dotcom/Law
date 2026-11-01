@@ -23,4 +23,4 @@
   <p class="kicker">Hẹn ôn ngày mai</p>
   <p class="rail-big">{dueTomorrow} <span class="muted small">khái niệm</span></p>
 </section>
-<p class="muted small legal"><strong>Thông tin pháp luật chung, không phải tư vấn pháp lý.</strong> Nội dung do Trần Quang Hào, sinh viên Luật Kinh tế, biên soạn từ văn bản pháp luật hiện hành; luôn đối chiếu nguyên văn trước khi áp dụng cho trường hợp cụ thể.</p>
+<p class="muted small legal"><strong>Thông tin pháp luật chung, không phải tư vấn pháp lý.</strong> Nội dung do Trần Quang Hào, sinh viên Luật Kinh tế, biên soạn từ văn bản pháp luật (hiện hành và đã hết hiệu lực), sử liệu và giáo trình; luôn đối chiếu nguyên văn và tình trạng hiệu lực trước khi áp dụng cho trường hợp cụ thể.</p>

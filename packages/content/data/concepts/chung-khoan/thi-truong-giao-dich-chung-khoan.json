@@ -1,0 +1,114 @@
+{
+ "id": "thi-truong-giao-dich-chung-khoan",
+ "subject": "chung-khoan",
+ "chapter": "c1-khai-niem",
+ "term": "Thị trường giao dịch chứng khoán",
+ "definition": "Thị trường giao dịch chứng khoán là địa điểm hoặc hình thức trao đổi thông tin để tập hợp lệnh mua, bán và giao dịch chứng khoán.",
+ "plain": "Thị trường không nhất thiết là một \"cái sàn\" vật lý: chỉ cần có nơi hoặc cách thức tập hợp lệnh mua, bán. Về lý luận, thị trường chứng khoán thường được chia thành thị trường sơ cấp (phát hành, chào bán lần đầu) và thứ cấp (mua bán lại); khoản 27 nói về nơi giao dịch, tức thị trường thứ cấp.",
+ "example": "Hệ thống giao dịch của Sở giao dịch chứng khoán Việt Nam và công ty con (HOSE, HNX) là thị trường giao dịch chứng khoán; app của công ty chứng khoán chỉ là kênh chuyển lệnh vào đó.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 27 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nguyen-tac-hoat-dong-chung-khoan",
+  "chung-khoan"
+ ],
+ "keywords": [
+  "địa điểm hoặc hình thức",
+  "tập hợp lệnh mua, bán",
+  "thị trường thứ cấp"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 27 Điều 4, thị trường giao dịch chứng khoán là gì?",
+   "options": [
+    "Địa điểm hoặc hình thức trao đổi thông tin để tập hợp lệnh mua, bán và giao dịch chứng khoán",
+    "Trụ sở của Ủy ban Chứng khoán Nhà nước",
+    "Nơi doanh nghiệp chào bán chứng khoán lần đầu",
+    "Tổng giá trị vốn hóa của các công ty niêm yết"
+   ],
+   "answer": 0,
+   "explain": "Định nghĩa nhấn vào chức năng: tập hợp lệnh mua, bán; có thể là địa điểm hoặc chỉ là hình thức.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 27 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 26 Điều 4, hệ thống giao dịch chứng khoán do ai tổ chức, vận hành?",
+   "options": [
+    "Sở giao dịch chứng khoán Việt Nam và công ty con",
+    "Ủy ban Chứng khoán Nhà nước",
+    "Các công ty chứng khoán",
+    "Ngân hàng Nhà nước Việt Nam"
+   ],
+   "answer": 0,
+   "explain": "Khoản 26 Điều 4: do Sở giao dịch chứng khoán Việt Nam và công ty con tổ chức, vận hành.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 26 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Niêm yết chứng khoán",
+   "right": "Đăng ký giao dịch",
+   "cases": [
+    {
+     "text": "Đưa chứng khoán có đủ điều kiện niêm yết vào hệ thống giao dịch cho chứng khoán niêm yết",
+     "answer": "left"
+    },
+    {
+     "text": "Đưa chứng khoán vào hệ thống giao dịch cho chứng khoán chưa niêm yết",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 24 và khoản 25 Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thị trường giao dịch chứng khoán là {{địa điểm}} hoặc {{hình thức}} trao đổi thông tin để tập hợp lệnh mua, bán và giao dịch chứng khoán.",
+   "bank_extra": [
+    "cơ quan",
+    "doanh nghiệp"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Việc đưa chứng khoán vào giao dịch trên hệ thống giao dịch cho chứng khoán chưa niêm yết gọi là {{đăng ký giao dịch}}.",
+   "bank_extra": [
+    "niêm yết",
+    "lưu ký"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo khoản 27 Điều 4, thị trường giao dịch chứng khoán bắt buộc phải là một địa điểm vật lý.",
+   "answer": false,
+   "explain": "Sai. Luật dùng \"địa điểm HOẶC hình thức trao đổi thông tin\", nên giao dịch trực tuyến qua hệ thống điện tử vẫn là thị trường giao dịch chứng khoán."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Định nghĩa thị trường giao dịch chứng khoán và phân biệt niêm yết với đăng ký giao dịch.",
+   "model": "Thị trường giao dịch chứng khoán là địa điểm hoặc hình thức trao đổi thông tin để tập hợp lệnh mua, bán và giao dịch chứng khoán (khoản 27 Điều 4). Niêm yết: đưa chứng khoán đủ điều kiện vào hệ thống cho chứng khoán niêm yết; đăng ký giao dịch: đưa vào hệ thống cho chứng khoán chưa niêm yết.",
+   "keywords": [
+    "địa điểm hoặc hình thức",
+    "tập hợp lệnh",
+    "niêm yết",
+    "chưa niêm yết"
+   ]
+  }
+ ]
+}

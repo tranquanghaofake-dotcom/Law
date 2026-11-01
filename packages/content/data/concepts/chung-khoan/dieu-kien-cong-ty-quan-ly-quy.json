@@ -1,0 +1,124 @@
+{
+ "id": "dieu-kien-cong-ty-quan-ly-quy",
+ "subject": "chung-khoan",
+ "chapter": "c7-quan-ly-quy-giam-sat",
+ "term": "Điều kiện cấp phép công ty quản lý quỹ",
+ "definition": "Tổng tỷ lệ vốn góp của các tổ chức tối thiểu là 65% vốn điều lệ, trong đó các tổ chức là ngân hàng thương mại, doanh nghiệp bảo hiểm, công ty chứng khoán sở hữu tối thiểu là 30% vốn điều lệ. (…) Có Tổng giám đốc (Giám đốc), tối thiểu 05 nhân viên có chứng chỉ hành nghề quản lý quỹ và tối thiểu 01 nhân viên kiểm soát tuân thủ.",
+ "plain": "Gần giống công ty chứng khoán (02 cổ đông sáng lập là tổ chức; tổ chức nắm 65%; quy tắc 10%–5%), nhưng có 3 điểm khác hay ra thi: nhóm 30% gồm cả CÔNG TY CHỨNG KHOÁN (không chỉ ngân hàng, bảo hiểm); cần tối thiểu 05 nhân viên có chứng chỉ quản lý quỹ; Tổng giám đốc cần tối thiểu 04 năm kinh nghiệm (công ty chứng khoán: 02 năm).",
+ "example": "Công ty chứng khoán E và một ngân hàng góp tổng 40% vốn để lập công ty quản lý quỹ, các tổ chức khác góp thêm 30%: đáp ứng điều kiện 65% tổ chức và 30% từ ngân hàng, bảo hiểm, công ty chứng khoán.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điểm b khoản 3, khoản 5 Điều 75 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "dieu-kien-co-dong-cong-ty-chung-khoan",
+  "dieu-kien-nhan-su-cong-ty-chung-khoan",
+  "nghiep-vu-cong-ty-quan-ly-quy"
+ ],
+ "keywords": [
+  "65% tổ chức",
+  "30% gồm cả công ty chứng khoán",
+  "05 nhân viên chứng chỉ quản lý quỹ",
+  "Tổng giám đốc 04 năm"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Công ty quản lý quỹ cần tối thiểu bao nhiêu nhân viên có chứng chỉ hành nghề quản lý quỹ?",
+   "options": [
+    "05",
+    "03",
+    "02",
+    "10"
+   ],
+   "answer": 0,
+   "explain": "Khoản 5 Điều 75.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 5 Điều 75 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tổng giám đốc công ty quản lý quỹ cần tối thiểu bao nhiêu năm kinh nghiệm?",
+   "options": [
+    "04 năm",
+    "02 năm",
+    "03 năm",
+    "05 năm"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 5 Điều 75 (công ty chứng khoán chỉ cần 02 năm).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 5 Điều 75 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Công ty quản lý quỹ (Điều 75)",
+   "right": "Công ty chứng khoán (Điều 74)",
+   "cases": [
+    {
+     "text": "Nhóm sở hữu tối thiểu 30% gồm ngân hàng, bảo hiểm, công ty chứng khoán",
+     "answer": "left"
+    },
+    {
+     "text": "Nhóm sở hữu tối thiểu 30% gồm bảo hiểm, ngân hàng thương mại",
+     "answer": "right"
+    },
+    {
+     "text": "Tổng giám đốc tối thiểu 04 năm kinh nghiệm",
+     "answer": "left"
+    },
+    {
+     "text": "Tổng giám đốc tối thiểu 02 năm kinh nghiệm",
+     "answer": "right"
+    }
+   ],
+   "explain": "So sánh Điều 74 và Điều 75."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công ty quản lý quỹ phải có tối thiểu {{05}} nhân viên có chứng chỉ hành nghề quản lý quỹ; Tổng giám đốc có tối thiểu {{04 năm}} kinh nghiệm.",
+   "bank_extra": [
+    "03",
+    "02 năm"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Trong công ty quản lý quỹ, ngân hàng thương mại, doanh nghiệp bảo hiểm, {{công ty chứng khoán}} sở hữu tối thiểu là 30% vốn điều lệ.",
+   "bank_extra": [
+    "quỹ đầu tư",
+    "công ty kiểm toán"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Điều kiện cổ đông tổ chức sở hữu tối thiểu 65% vốn điều lệ áp dụng cho cả công ty chứng khoán và công ty quản lý quỹ.",
+   "answer": true,
+   "explain": "Đúng. Điểm b khoản 3 Điều 74 và điểm b khoản 3 Điều 75."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "So sánh điều kiện cấp phép công ty quản lý quỹ với công ty chứng khoán.",
+   "model": "Giống: vốn góp bằng Đồng Việt Nam, vốn tối thiểu do Chính phủ quy định; tối thiểu 02 cổ đông sáng lập là tổ chức; tổ chức nắm tối thiểu 65%; quy tắc sở hữu 10%–5%; 01 nhân viên kiểm soát tuân thủ. Khác: nhóm 30% của công ty quản lý quỹ gồm cả công ty chứng khoán; tối thiểu 05 nhân viên có chứng chỉ quản lý quỹ; Tổng giám đốc 04 năm kinh nghiệm (công ty chứng khoán: 03 nhân viên mỗi nghiệp vụ, 02 năm).",
+   "keywords": [
+    "65%",
+    "30%",
+    "05 nhân viên",
+    "04 năm"
+   ]
+  }
+ ]
+}

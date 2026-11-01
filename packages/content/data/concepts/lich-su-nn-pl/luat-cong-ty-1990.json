@@ -1,0 +1,117 @@
+{
+ "id": "luat-cong-ty-1990",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c8-hien-dai",
+ "term": "Luật Công ty 1990: khái niệm công ty và tự do kinh doanh",
+ "definition": "Công ty trách nhiệm hữu hạn và công ty cổ phần, gọi chung là công ty, là doanh nghiệp trong đó các thành viên cùng góp vốn, cùng chia nhau lợi nhuận, cùng chịu lỗ tương ứng với phần vốn góp và chỉ chịu trách nhiệm về các khoản nợ của công ty trong phạm vi phần vốn của mình góp vào công ty. (…) Nhà nước công nhận sự tồn tại lâu dài và phát triển của công ty, thừa nhận sự bình đẳng trước pháp luật của công ty với các doanh nghiệp khác và tính sinh lợi hợp pháp của việc kinh doanh.",
+ "plain": "Luật Công ty (thông qua 21/12/1990, hiệu lực 15/4/1991) cùng Luật Doanh nghiệp tư nhân 1990 là những đạo luật đầu tiên thời ĐỔI MỚI về doanh nghiệp ngoài quốc doanh, thể chế hóa đường lối \"kinh tế hàng hóa nhiều thành phần\". Điểm cốt lõi: TRÁCH NHIỆM HỮU HẠN (thành viên chỉ chịu trách nhiệm trong phạm vi vốn góp); Nhà nước CÔNG NHẬN sự tồn tại lâu dài, BÌNH ĐẲNG với doanh nghiệp khác và TÍNH SINH LỢI HỢP PHÁP của kinh doanh; công ty có quyền TỰ DO KINH DOANH trong khuôn khổ pháp luật. Khi đó thành lập công ty vẫn phải XIN PHÉP Ủy ban nhân dân tỉnh rồi mới đăng ký kinh doanh (cơ chế \"xin – cho\", về sau Luật Doanh nghiệp 1999 bỏ).",
+ "example": "Năm 1991, ba người góp vốn lập công ty TNHH: nếu công ty nợ quá khả năng trả, mỗi người chỉ mất phần vốn đã góp, không phải lấy tài sản riêng ra trả nợ thay công ty (Điều 2).",
+ "source": {
+  "kind": "primary",
+  "cite": "Luật Công ty 1990, Điều 2 và Điều 4",
+  "url": "https://vbpl.vn/en/van-ban/chi-tiet/luat-cong-ty-so-khong-so--1817"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "cong-ty-co-phan-1990",
+  "sac-lenh-97-khe-uoc"
+ ],
+ "keywords": [
+  "21/12/1990",
+  "trách nhiệm hữu hạn",
+  "tính sinh lợi hợp pháp",
+  "tự do kinh doanh",
+  "xin phép thành lập"
+ ],
+ "note": "Luật Công ty 1990 đã hết hiệu lực (được thay bằng Luật Doanh nghiệp 1999); hiện hành là Luật Doanh nghiệp 59/2020/QH14 (đã được sửa đổi). Học để hiểu lịch sử.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 2 Luật Công ty 1990, thành viên công ty chịu trách nhiệm về nợ của công ty trong phạm vi nào?",
+   "options": [
+    "Phần vốn của mình góp vào công ty",
+    "Toàn bộ tài sản cá nhân",
+    "Gấp đôi phần vốn góp",
+    "Không chịu trách nhiệm"
+   ],
+   "answer": 0,
+   "explain": "Điều 2.",
+   "source": {
+    "kind": "primary",
+    "cite": "Luật Công ty 1990, Điều 2"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Luật Công ty 1990 có hiệu lực từ ngày nào?",
+   "options": [
+    "15/4/1991",
+    "21/12/1990",
+    "01/01/2000",
+    "01/7/2015"
+   ],
+   "answer": 0,
+   "explain": "Điều 46 Luật Công ty 1990.",
+   "source": {
+    "kind": "primary",
+    "cite": "Luật Công ty 1990, Điều 46"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Luật Công ty 1990",
+   "right": "Pháp luật hiện hành (Luật Doanh nghiệp)",
+   "cases": [
+    {
+     "text": "Phải xin phép UBND tỉnh rồi mới đăng ký kinh doanh",
+     "answer": "left"
+    },
+    {
+     "text": "Đăng ký doanh nghiệp tại cơ quan đăng ký kinh doanh, không cần xin phép thành lập",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 14, 17 Luật Công ty 1990."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhà nước thừa nhận sự {{bình đẳng}} trước pháp luật của công ty với các doanh nghiệp khác và tính {{sinh lợi hợp pháp}} của việc kinh doanh.",
+   "bank_extra": [
+    "ưu tiên",
+    "phi lợi nhuận"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Trong khuôn khổ pháp luật, công ty có quyền {{tự do kinh doanh}} và chủ động trong mọi hoạt động kinh doanh.",
+   "bank_extra": [
+    "độc quyền",
+    "miễn thuế"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo Luật Công ty 1990, thành viên công ty phải chịu trách nhiệm vô hạn bằng toàn bộ tài sản của mình.",
+   "answer": false,
+   "explain": "Sai. Điều 2: chỉ chịu trách nhiệm trong phạm vi phần vốn góp (trách nhiệm hữu hạn)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày ý nghĩa của Luật Công ty 1990 trong lịch sử pháp luật Việt Nam.",
+   "model": "Luật Công ty 1990 (hiệu lực 15/4/1991) thể chế hóa kinh tế nhiều thành phần thời Đổi mới; ghi nhận công ty TNHH, công ty cổ phần với chế độ trách nhiệm hữu hạn (Điều 2); Nhà nước công nhận sự tồn tại lâu dài, bình đẳng và tính sinh lợi hợp pháp, quyền tự do kinh doanh (Điều 4); vẫn còn cơ chế xin phép thành lập.",
+   "keywords": [
+    "Đổi mới",
+    "trách nhiệm hữu hạn",
+    "sinh lợi hợp pháp",
+    "tự do kinh doanh"
+   ]
+  }
+ ]
+}

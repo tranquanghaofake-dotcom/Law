@@ -1,0 +1,120 @@
+{
+ "id": "nghiep-vu-cong-ty-quan-ly-quy",
+ "subject": "chung-khoan",
+ "chapter": "c7-quan-ly-quy-giam-sat",
+ "term": "Nghiệp vụ kinh doanh của công ty quản lý quỹ",
+ "definition": "Công ty quản lý quỹ đầu tư chứng khoán được thực hiện các nghiệp vụ kinh doanh sau đây: a) Quản lý quỹ đầu tư chứng khoán; b) Quản lý danh mục đầu tư chứng khoán; c) Tư vấn đầu tư chứng khoán. Các nghiệp vụ kinh doanh quy định tại khoản 1 Điều này được cấp chung trong Giấy phép thành lập và hoạt động kinh doanh chứng khoán của công ty quản lý quỹ đầu tư chứng khoán.",
+ "plain": "Công ty quản lý quỹ là \"người cầm lái\" tiền của quỹ và của khách ủy thác. Ba nghiệp vụ được cấp CHUNG một lần trong giấy phép (khác công ty chứng khoán: từng nghiệp vụ, có bậc thang). Công ty quản lý quỹ không được môi giới, tự doanh hay bảo lãnh phát hành.",
+ "example": "Công ty quản lý quỹ A quản lý 3 quỹ mở, nhận ủy thác quản lý danh mục 500 tỷ của một công ty bảo hiểm và tư vấn đầu tư cho một doanh nghiệp: cả ba hoạt động đều nằm trong giấy phép của A.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 73 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quan-ly-quy-dau-tu-chung-khoan",
+  "quan-ly-danh-muc-dau-tu",
+  "nghiep-vu-cong-ty-chung-khoan"
+ ],
+ "keywords": [
+  "quản lý quỹ",
+  "quản lý danh mục",
+  "tư vấn đầu tư",
+  "cấp chung"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nghiệp vụ nào KHÔNG thuộc công ty quản lý quỹ theo Điều 73?",
+   "options": [
+    "Môi giới chứng khoán",
+    "Quản lý quỹ đầu tư chứng khoán",
+    "Quản lý danh mục đầu tư chứng khoán",
+    "Tư vấn đầu tư chứng khoán"
+   ],
+   "answer": 0,
+   "explain": "Môi giới là nghiệp vụ của công ty chứng khoán (Điều 72).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 73 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Các nghiệp vụ của công ty quản lý quỹ được cấp phép thế nào?",
+   "options": [
+    "Cấp chung trong Giấy phép thành lập và hoạt động kinh doanh chứng khoán",
+    "Cấp riêng từng nghiệp vụ theo bậc thang",
+    "Không cần cấp phép",
+    "Do Sở giao dịch chấp thuận"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 73.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 73 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Công ty quản lý quỹ",
+   "right": "Công ty chứng khoán",
+   "cases": [
+    {
+     "text": "Ba nghiệp vụ được cấp chung trong giấy phép",
+     "answer": "left"
+    },
+    {
+     "text": "Phải có môi giới mới được tự doanh",
+     "answer": "right"
+    },
+    {
+     "text": "Quản lý danh mục đầu tư chứng khoán",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 72 và Điều 73."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công ty quản lý quỹ được thực hiện các nghiệp vụ: quản lý {{quỹ đầu tư}} chứng khoán, quản lý {{danh mục đầu tư}} chứng khoán và tư vấn đầu tư chứng khoán.",
+   "bank_extra": [
+    "môi giới",
+    "tự doanh"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Các nghiệp vụ của công ty quản lý quỹ được cấp {{chung}} trong Giấy phép thành lập và hoạt động kinh doanh chứng khoán.",
+   "bank_extra": [
+    "riêng",
+    "tuần tự"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Công ty quản lý quỹ được thực hiện nghiệp vụ bảo lãnh phát hành chứng khoán.",
+   "answer": false,
+   "explain": "Sai. Bảo lãnh phát hành là nghiệp vụ của công ty chứng khoán (Điều 72); công ty quản lý quỹ chỉ có ba nghiệp vụ tại Điều 73."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các nghiệp vụ kinh doanh của công ty quản lý quỹ và so sánh với công ty chứng khoán.",
+   "model": "Quản lý quỹ đầu tư chứng khoán, quản lý danh mục đầu tư chứng khoán, tư vấn đầu tư chứng khoán; cấp chung trong giấy phép (Điều 73). Công ty chứng khoán: môi giới, tự doanh, bảo lãnh phát hành, tư vấn; cấp riêng, có bậc thang (Điều 72). Tư vấn là nghiệp vụ chung của cả hai.",
+   "keywords": [
+    "quản lý quỹ",
+    "quản lý danh mục",
+    "tư vấn",
+    "cấp chung"
+   ]
+  }
+ ]
+}

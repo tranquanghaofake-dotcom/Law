@@ -1,0 +1,131 @@
+{
+ "id": "thao-tung-thi-truong",
+ "subject": "chung-khoan",
+ "chapter": "c10-xu-ly-vi-pham",
+ "term": "Thao túng thị trường chứng khoán",
+ "definition": "Thao túng thị trường chứng khoán là việc thực hiện một trong các hành vi sau đây: a) Sử dụng một hoặc nhiều tài khoản giao dịch của mình hoặc của người khác hoặc thông đồng liên tục mua, bán chứng khoán nhằm tạo ra cung, cầu giả tạo; b) Đặt lệnh mua và bán cùng loại chứng khoán trong cùng ngày giao dịch hoặc thông đồng với nhau giao dịch mua, bán chứng khoán mà không dẫn đến chuyển nhượng thực sự quyền sở hữu hoặc quyền sở hữu chỉ luân chuyển giữa các thành viên trong nhóm nhằm tạo giá chứng khoán, cung cầu giả tạo;",
+ "plain": "Thao túng = tạo ra cung, cầu hoặc giá GIẢ TẠO. Sáu dạng: (a) dùng nhiều tài khoản, thông đồng mua bán liên tục; (b) mua bán \"vòng tròn\" không chuyển quyền sở hữu thật; (c) mua hoặc bán khối lượng chi phối lúc mở cửa, đóng cửa; (d) cấu kết, lôi kéo người khác đặt lệnh liên tục; (đ) mua trước rồi lên báo, mạng \"hô\" mã đó để đẩy giá; (e) tung tin đồn sai sự thật, thông tin sai lệch. Cho mượn tài khoản, đứng tên hộ dẫn đến thao túng cũng bị cấm (khoản 6 Điều 12).",
+ "example": "Một \"KOL\" mua 1 triệu cổ phiếu Z, sau đó livestream khen Z sắp tăng gấp đôi để người xem mua theo, rồi bán ra kiếm lời: thuộc điểm đ khoản 49 Điều 4.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 49 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "giao-dich-noi-gian",
+  "hanh-vi-bi-nghiem-cam",
+  "muc-phat-tien-chung-khoan"
+ ],
+ "keywords": [
+  "cung cầu giả tạo",
+  "nhiều tài khoản, thông đồng",
+  "mua bán vòng tròn",
+  "hô hào sau khi nắm giữ"
+ ],
+ "note": "Luật 56/2024/QH15 (hiệu lực 01/01/2025) bổ sung khoản 49 Điều 4 (định nghĩa thao túng thị trường chứng khoán) và sửa khoản 3 Điều 12 thành \"Thực hiện hành vi thao túng thị trường chứng khoán\". Giáo trình 2021 trình bày các hành vi thao túng theo khoản 3 Điều 12 bản 2019, cần đối chiếu với khoản 49 Điều 4 hiện hành.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Dấu hiệu chung của hành vi thao túng thị trường chứng khoán là gì?",
+   "options": [
+    "Tạo ra cung, cầu hoặc giá chứng khoán giả tạo",
+    "Mua bán với khối lượng lớn bất kỳ",
+    "Đầu tư dài hạn vào một mã",
+    "Bán khống hợp pháp"
+   ],
+   "answer": 0,
+   "explain": "Khoản 49 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 49 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hành vi nào thuộc điểm đ khoản 49 Điều 4?",
+   "options": [
+    "Đưa ra ý kiến qua phương tiện thông tin đại chúng về một chứng khoán sau khi đã giao dịch, nắm giữ vị thế nhằm tạo ảnh hưởng đến giá",
+    "Viết báo cáo phân tích khi không nắm giữ cổ phiếu",
+    "Công bố thông tin định kỳ đúng hạn",
+    "Đặt một lệnh mua lớn duy nhất trong ngày"
+   ],
+   "answer": 0,
+   "explain": "Khoản 49 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 49 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thao túng",
+   "right": "Giao dịch bình thường",
+   "cases": [
+    {
+     "text": "Mua bán qua lại giữa các tài khoản trong nhóm, quyền sở hữu không chuyển thực sự",
+     "answer": "left"
+    },
+    {
+     "text": "Mua cổ phiếu sau khi đọc báo cáo tài chính công khai",
+     "answer": "right"
+    },
+    {
+     "text": "Liên tục bán khối lượng chi phối lúc đóng cửa để ép giá",
+     "answer": "left"
+    }
+   ],
+   "explain": "Khoản 49 Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thao túng gồm việc sử dụng một hoặc nhiều tài khoản giao dịch hoặc {{thông đồng}} liên tục mua, bán chứng khoán nhằm tạo ra cung, cầu {{giả tạo}}.",
+   "bank_extra": [
+    "ủy thác",
+    "thực"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Liên tục mua hoặc bán chứng khoán với khối lượng chi phối vào thời điểm {{mở cửa}} hoặc {{đóng cửa}} thị trường nhằm thao túng giá là hành vi thao túng.",
+   "bank_extra": [
+    "giữa phiên",
+    "nghỉ trưa"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Anh B cho người quen mượn 10 tài khoản chứng khoán. Người quen dùng các tài khoản này mua bán qua lại để đẩy giá một mã. Anh B có vi phạm không?",
+   "options": [
+    "Có, khoản 6 Điều 12 cấm cho mượn tài khoản để giao dịch dẫn đến hành vi thao túng",
+    "Không, vì anh B không tự giao dịch",
+    "Không, vì tài khoản là tài sản của anh B",
+    "Chỉ vi phạm nếu anh B nhận tiền"
+   ],
+   "answer": 0,
+   "explain": "Khoản 6 Điều 12.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 6 Điều 12 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Định nghĩa thao túng thị trường chứng khoán và nêu các dạng hành vi.",
+   "model": "Thực hiện một trong các hành vi (khoản 49 Điều 4): (a) dùng một hoặc nhiều tài khoản, thông đồng liên tục mua bán tạo cung cầu giả tạo; (b) mua bán không chuyển quyền sở hữu thực sự hoặc luân chuyển trong nhóm; (c) mua, bán khối lượng chi phối lúc mở cửa, đóng cửa; (d) cấu kết, lôi kéo người khác đặt lệnh liên tục; (đ) đưa ý kiến trên truyền thông sau khi đã nắm vị thế; (e) tung tin đồn sai, thông tin sai lệch.",
+   "keywords": [
+    "cung cầu giả tạo",
+    "thông đồng",
+    "mở cửa, đóng cửa",
+    "tin đồn"
+   ]
+  }
+ ]
+}

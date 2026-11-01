@@ -1,0 +1,131 @@
+{
+ "id": "dieu-kien-chao-ban-rieng-le-cong-ty-dai-chung",
+ "subject": "chung-khoan",
+ "chapter": "c2-chao-ban",
+ "term": "Điều kiện chào bán cổ phiếu riêng lẻ của công ty đại chúng",
+ "definition": "(…) b) Đối tượng tham gia đợt chào bán chỉ bao gồm nhà đầu tư chiến lược, nhà đầu tư chứng khoán chuyên nghiệp theo quy định tại khoản 1 Điều 11 của Luật này đối với đợt chào bán cổ phiếu, trái phiếu chuyển đổi hoặc nhà đầu tư chiến lược, nhà đầu tư chứng khoán chuyên nghiệp theo quy định tại khoản 1a và khoản 1b Điều 11 của Luật này đối với đợt chào bán trái phiếu kèm chứng quyền; (…) d) Các đợt chào bán cổ phiếu riêng lẻ, trái phiếu chuyển đổi riêng lẻ, trái phiếu kèm chứng quyền riêng lẻ phải cách nhau ít nhất 06 tháng kể từ ngày kết thúc đợt chào bán gần nhất; (…)",
+ "plain": "Công ty đại chúng chào bán riêng lẻ phải: có quyết định của Đại hội đồng cổ đông; chỉ bán cho nhà đầu tư chiến lược hoặc nhà đầu tư chuyên nghiệp; cổ phiếu bị hạn chế chuyển nhượng tối thiểu 03 năm (chiến lược) hoặc 01 năm (chuyên nghiệp); các đợt cách nhau ít nhất 06 tháng; tuân thủ tỷ lệ sở hữu nước ngoài. Mục đích là ngăn \"lách\" chào bán ra công chúng.",
+ "example": "Công ty đại chúng P phát hành riêng lẻ cho nhà đầu tư chiến lược Q vào tháng 3/2026. Q không được bán lại số cổ phiếu này trước tháng 3/2029 (trừ theo bản án, quyết định của Tòa án, Trọng tài hoặc thừa kế); P không được mở đợt riêng lẻ tiếp theo trước tháng 9/2026.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 31 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "chao-ban-rieng-le",
+  "nha-dau-tu-chung-khoan-chuyen-nghiep"
+ ],
+ "keywords": [
+  "nhà đầu tư chiến lược",
+  "03 năm và 01 năm",
+  "cách nhau 06 tháng",
+  "Đại hội đồng cổ đông"
+ ],
+ "note": "Luật 56/2024/QH15 (hiệu lực 01/01/2025) sửa điểm a, b, c khoản 1 và khoản 2 Điều 31 (đối tượng mua, hạn chế chuyển nhượng, trái phiếu doanh nghiệp riêng lẻ chỉ giao dịch giữa nhà đầu tư chuyên nghiệp), đồng thời bổ sung Điều 31a (Ủy ban được đình chỉ đợt chào bán riêng lẻ tối đa 60 ngày) và Điều 31b (hủy bỏ đợt chào bán riêng lẻ). Phần liên quan đến nhà đầu tư chuyên nghiệp mua trái phiếu doanh nghiệp riêng lẻ có hiệu lực từ 01/01/2026. Đọc giáo trình 2021 phần này phải đối chiếu luật hiện hành.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Cổ phiếu chào bán riêng lẻ của công ty đại chúng bị hạn chế chuyển nhượng tối thiểu bao lâu đối với nhà đầu tư chiến lược?",
+   "options": [
+    "03 năm",
+    "01 năm",
+    "06 tháng",
+    "05 năm"
+   ],
+   "answer": 0,
+   "explain": "Điểm c khoản 1 Điều 31: tối thiểu 03 năm với nhà đầu tư chiến lược, 01 năm với nhà đầu tư chứng khoán chuyên nghiệp.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 31 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Các đợt chào bán cổ phiếu riêng lẻ của công ty đại chúng phải cách nhau ít nhất bao lâu?",
+   "options": [
+    "06 tháng",
+    "03 tháng",
+    "12 tháng",
+    "01 tháng"
+   ],
+   "answer": 0,
+   "explain": "Điểm d khoản 1 Điều 31.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 31 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Nhà đầu tư chiến lược",
+   "right": "Nhà đầu tư chứng khoán chuyên nghiệp",
+   "cases": [
+    {
+     "text": "Hạn chế chuyển nhượng tối thiểu 03 năm",
+     "answer": "left"
+    },
+    {
+     "text": "Hạn chế chuyển nhượng tối thiểu 01 năm",
+     "answer": "right"
+    },
+    {
+     "text": "Được Đại hội đồng cổ đông lựa chọn theo tiêu chí năng lực tài chính, công nghệ, cam kết hợp tác ít nhất 03 năm",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điểm c khoản 1 Điều 31; khoản 17 Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Việc chuyển nhượng cổ phiếu chào bán riêng lẻ bị hạn chế tối thiểu là {{03 năm}} đối với nhà đầu tư chiến lược và tối thiểu là {{01 năm}} đối với nhà đầu tư chứng khoán chuyên nghiệp.",
+   "bank_extra": [
+    "06 tháng",
+    "05 năm"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đợt chào bán cổ phiếu riêng lẻ của công ty đại chúng phải có quyết định của {{Đại hội đồng cổ đông}} thông qua phương án phát hành và sử dụng số tiền thu được.",
+   "bank_extra": [
+    "Tổng giám đốc",
+    "Ủy ban Chứng khoán Nhà nước"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Công ty đại chúng R muốn chào bán riêng lẻ cổ phiếu cho 15 cá nhân là người thân ban giám đốc, không ai là nhà đầu tư chuyên nghiệp hay chiến lược. Có hợp pháp không?",
+   "options": [
+    "Không, vì đối tượng tham gia chỉ gồm nhà đầu tư chiến lược và nhà đầu tư chứng khoán chuyên nghiệp",
+    "Có, vì dưới 100 nhà đầu tư nên là chào bán riêng lẻ",
+    "Có, nếu Hội đồng quản trị đồng ý",
+    "Có, nếu giá bán bằng mệnh giá"
+   ],
+   "answer": 0,
+   "explain": "Dù dưới 100 người (thỏa khoản 20 Điều 4), công ty ĐẠI CHÚNG còn phải đáp ứng điểm b khoản 1 Điều 31 về đối tượng tham gia.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 31 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các điều kiện chào bán cổ phiếu riêng lẻ của công ty đại chúng theo khoản 1 Điều 31.",
+   "model": "(a) Quyết định của Đại hội đồng cổ đông về phương án phát hành, sử dụng vốn, tiêu chí nhà đầu tư, số lượng, giá; (b) chỉ nhà đầu tư chiến lược, nhà đầu tư chứng khoán chuyên nghiệp; (c) hạn chế chuyển nhượng 03 năm (chiến lược), 01 năm (chuyên nghiệp); (d) các đợt cách nhau ít nhất 06 tháng; (đ) tuân thủ tỷ lệ sở hữu nước ngoài.",
+   "keywords": [
+    "Đại hội đồng cổ đông",
+    "chiến lược",
+    "03 năm",
+    "06 tháng",
+    "sở hữu nước ngoài"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,116 @@
+{
+ "id": "chu-tich-nuoc-bau-nhiem-ky",
+ "subject": "hien-phap",
+ "chapter": "c8-chu-tich-nuoc",
+ "term": "Bầu, trách nhiệm và nhiệm kỳ của Chủ tịch nước",
+ "definition": "Chủ tịch nước do Quốc hội bầu trong số đại biểu Quốc hội. Chủ tịch nước chịu trách nhiệm và báo cáo công tác trước Quốc hội. Nhiệm kỳ của Chủ tịch nước theo nhiệm kỳ của Quốc hội.",
+ "plain": "Ba ý: (1) phải là ĐẠI BIỂU QUỐC HỘI, do Quốc hội bầu (không do dân bầu trực tiếp); (2) chịu trách nhiệm, báo cáo trước Quốc hội (Quốc hội có thể bãi nhiệm, bỏ phiếu tín nhiệm); (3) nhiệm kỳ theo Quốc hội, hết nhiệm kỳ vẫn làm việc đến khi khóa mới bầu Chủ tịch nước mới. Sau khi được bầu phải tuyên thệ trung thành với Tổ quốc, Nhân dân và Hiến pháp (khoản 7 Điều 70).",
+ "example": "Người không phải đại biểu Quốc hội không thể được bầu làm Chủ tịch nước, dù có uy tín đến đâu.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 87 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "chu-tich-nuoc-vi-tri",
+  "nhiem-ky-quoc-hoi",
+  "pho-chu-tich-nuoc"
+ ],
+ "keywords": [
+  "Quốc hội bầu",
+  "trong số đại biểu Quốc hội",
+  "báo cáo trước Quốc hội",
+  "nhiệm kỳ theo Quốc hội"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chủ tịch nước được bầu như thế nào?",
+   "options": [
+    "Do Quốc hội bầu trong số đại biểu Quốc hội",
+    "Do Nhân dân bầu trực tiếp",
+    "Do Chính phủ đề cử",
+    "Do Mặt trận Tổ quốc hiệp thương chỉ định"
+   ],
+   "answer": 0,
+   "explain": "Điều 87.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 87 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chủ tịch nước chịu trách nhiệm và báo cáo công tác trước cơ quan nào?",
+   "options": [
+    "Quốc hội",
+    "Chính phủ",
+    "Ủy ban thường vụ Quốc hội",
+    "Mặt trận Tổ quốc"
+   ],
+   "answer": 0,
+   "explain": "Điều 87.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 87 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Chủ tịch nước",
+   "right": "Chính phủ",
+   "cases": [
+    {
+     "text": "Chịu trách nhiệm và báo cáo công tác trước Quốc hội",
+     "answer": "left"
+    },
+    {
+     "text": "Báo cáo công tác trước Quốc hội, Ủy ban thường vụ Quốc hội, Chủ tịch nước",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 87 và Điều 94."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chủ tịch nước do {{Quốc hội}} bầu trong số {{đại biểu Quốc hội}}.",
+   "bank_extra": [
+    "Nhân dân",
+    "đảng viên"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhiệm kỳ của Chủ tịch nước theo nhiệm kỳ của {{Quốc hội}}.",
+   "bank_extra": [
+    "Chính phủ",
+    "Đảng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Khi Quốc hội hết nhiệm kỳ, Chủ tịch nước thôi làm nhiệm vụ ngay lập tức.",
+   "answer": false,
+   "explain": "Sai. Điều 87: Chủ tịch nước tiếp tục làm nhiệm vụ cho đến khi Quốc hội khóa mới bầu ra Chủ tịch nước."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quy định về bầu, trách nhiệm và nhiệm kỳ của Chủ tịch nước.",
+   "model": "Do Quốc hội bầu trong số đại biểu Quốc hội; chịu trách nhiệm và báo cáo công tác trước Quốc hội; nhiệm kỳ theo nhiệm kỳ Quốc hội, hết nhiệm kỳ tiếp tục làm việc đến khi khóa mới bầu Chủ tịch nước (Điều 87); tuyên thệ sau khi được bầu (khoản 7 Điều 70).",
+   "keywords": [
+    "Quốc hội bầu",
+    "đại biểu Quốc hội",
+    "báo cáo trước Quốc hội",
+    "nhiệm kỳ"
+   ]
+  }
+ ]
+}

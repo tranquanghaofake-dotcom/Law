@@ -1,0 +1,121 @@
+{
+ "id": "nha-nuoc-van-lang",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c5-co-dai",
+ "term": "Nhà nước Văn Lang",
+ "definition": "Hùng Vương lên ngôi, đặt quốc hiệu là Văn Lang (…), chia nước làm 15 bộ (…); còn bộ gọi là Văn Lang là nơi vua đóng đô.",
+ "plain": "Văn Lang được coi là nhà nước đầu tiên của người Việt, đứng đầu là Hùng Vương, kinh đô ở Phong Châu. Lãnh thổ chia thành các \"bộ\"; bộ Văn Lang là nơi vua đóng đô. Đây là nhà nước sơ khai: bộ máy đơn giản, quyền lực còn gắn với quan hệ dòng họ, cha truyền con nối.",
+ "example": "Toàn thư ghi 15 bộ nhưng chỉ kể tên 14 (Giao Chỉ, Chu Diên, Vũ Ninh… Cửu Đức) và nói thêm bộ Văn Lang là nơi vua đóng đô. Khi đọc sử liệu cần chú ý những chỗ không khớp như vậy thay vì học thuộc con số.",
+ "source": {
+  "kind": "primary",
+  "cite": "Đại Việt sử ký toàn thư, Ngoại kỷ, quyển I (bản dịch Viện KHXH Việt Nam, NXB KHXH 1993), Kỷ Hồng Bàng thị, tờ 3a"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "lac-hau-lac-tuong-bo-chinh",
+  "nha-nuoc-au-lac"
+ ],
+ "keywords": [
+  "Hùng Vương",
+  "Phong Châu",
+  "15 bộ"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Đại Việt sử ký toàn thư, Hùng Vương đặt quốc hiệu là gì?",
+   "options": [
+    "Văn Lang",
+    "Âu Lạc",
+    "Vạn Xuân",
+    "Đại Cồ Việt"
+   ],
+   "answer": 0,
+   "explain": "Toàn thư, Kỷ Hồng Bàng thị: \"Hùng Vương lên ngôi, đặt quốc hiệu là Văn Lang\". Âu Lạc là quốc hiệu thời An Dương Vương.",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Ngoại kỷ, quyển I (bản dịch Viện KHXH Việt Nam, NXB KHXH 1993), tờ 3a"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Toàn thư, Hùng Vương chia nước Văn Lang làm bao nhiêu bộ?",
+   "options": [
+    "15 bộ",
+    "12 bộ",
+    "13 bộ",
+    "18 bộ"
+   ],
+   "answer": 0,
+   "explain": "Toàn thư ghi \"chia nước làm 15 bộ\". (Lưu ý: văn bản chỉ kể tên 14 bộ cùng bộ Văn Lang là nơi vua đóng đô.)",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Ngoại kỷ, quyển I (bản dịch Viện KHXH Việt Nam, NXB KHXH 1993), tờ 3a"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Văn Lang",
+   "right": "Âu Lạc",
+   "cases": [
+    {
+     "text": "Đứng đầu là Hùng Vương",
+     "answer": "left"
+    },
+    {
+     "text": "Đứng đầu là An Dương Vương (Thục Phán)",
+     "answer": "right"
+    },
+    {
+     "text": "Gắn với thành Cổ Loa (Loa Thành)",
+     "answer": "right"
+    },
+    {
+     "text": "Kinh đô ở Phong Châu",
+     "answer": "left"
+    }
+   ],
+   "explain": "Văn Lang: Hùng Vương, Phong Châu. Âu Lạc: An Dương Vương, Phong Khê/Cổ Loa."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hùng Vương lên ngôi, đặt quốc hiệu là {{Văn Lang}}, chia nước làm {{15}} bộ.",
+   "bank_extra": [
+    "Âu Lạc",
+    "12"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Kinh đô của nhà nước Văn Lang là {{Phong Châu}}.",
+   "bank_extra": [
+    "Cổ Loa",
+    "Hoa Lư"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo Toàn thư, nhà nước Văn Lang do An Dương Vương đứng đầu.",
+   "answer": false,
+   "explain": "Sai. Văn Lang do Hùng Vương đứng đầu; An Dương Vương (Thục Phán) thôn tính Văn Lang rồi đổi quốc hiệu là Âu Lạc."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày những thông tin cơ bản về nhà nước Văn Lang theo Đại Việt sử ký toàn thư.",
+   "model": "Hùng Vương lên ngôi, đặt quốc hiệu Văn Lang, đóng đô ở Phong Châu, chia nước làm 15 bộ (bộ Văn Lang là nơi vua đóng đô); các đời vua đều gọi là Hùng Vương; bộ máy gồm Lạc Hầu, Lạc Tướng, Bồ Chính, chức vị cha truyền con nối.",
+   "keywords": [
+    "Hùng Vương",
+    "Văn Lang",
+    "Phong Châu",
+    "15 bộ"
+   ]
+  }
+ ]
+}

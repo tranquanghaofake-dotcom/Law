@@ -1,0 +1,114 @@
+{
+ "id": "chao-ban-rieng-le",
+ "subject": "chung-khoan",
+ "chapter": "c2-chao-ban",
+ "term": "Chào bán chứng khoán riêng lẻ",
+ "definition": "Chào bán chứng khoán riêng lẻ là việc chào bán chứng khoán không thuộc trường hợp quy định tại điểm a khoản 19 Điều này và theo một trong các phương thức sau đây: a) Chào bán cho dưới 100 nhà đầu tư, không kể nhà đầu tư chứng khoán chuyên nghiệp; b) Chỉ chào bán cho nhà đầu tư chứng khoán chuyên nghiệp.",
+ "plain": "Riêng lẻ = không quảng cáo đại chúng VÀ (dưới 100 nhà đầu tư thường, hoặc chỉ bán cho nhà đầu tư chuyên nghiệp). Thủ tục nhẹ hơn ra công chúng nhưng bị đổi lại bằng hạn chế chuyển nhượng và giới hạn người mua (Điều 31).",
+ "example": "Công ty đại chúng phát hành riêng lẻ 5 triệu cổ phiếu cho 3 quỹ đầu tư và 1 nhà đầu tư chiến lược: số cổ phiếu này bị hạn chế chuyển nhượng 01 năm (với nhà đầu tư chuyên nghiệp) hoặc 03 năm (với nhà đầu tư chiến lược).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 20 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "chao-ban-ra-cong-chung",
+  "dieu-kien-chao-ban-rieng-le-cong-ty-dai-chung"
+ ],
+ "keywords": [
+  "không qua phương tiện thông tin đại chúng",
+  "dưới 100 nhà đầu tư",
+  "chỉ nhà đầu tư chuyên nghiệp"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 20 Điều 4, chào bán riêng lẻ phải KHÔNG thuộc trường hợp nào?",
+   "options": [
+    "Chào bán thông qua phương tiện thông tin đại chúng",
+    "Chào bán cho nhà đầu tư chiến lược",
+    "Chào bán cho dưới 100 nhà đầu tư",
+    "Chào bán cho nhà đầu tư chứng khoán chuyên nghiệp"
+   ],
+   "answer": 0,
+   "explain": "Khoản 20 loại trừ điểm a khoản 19: chào bán thông qua phương tiện thông tin đại chúng.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 20 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chào bán chứng khoán riêng lẻ của tổ chức phát hành KHÔNG phải công ty đại chúng thực hiện theo luật nào?",
+   "options": [
+    "Luật Doanh nghiệp và quy định khác của pháp luật có liên quan",
+    "Chỉ Luật Chứng khoán",
+    "Luật Các tổ chức tín dụng",
+    "Bộ luật Dân sự"
+   ],
+   "answer": 0,
+   "explain": "Điều 30 Luật Chứng khoán dẫn chiếu sang Luật Doanh nghiệp.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 30 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Công ty đại chúng chào bán riêng lẻ",
+   "right": "Công ty không phải đại chúng chào bán riêng lẻ",
+   "cases": [
+    {
+     "text": "Áp dụng điều kiện tại Điều 31 Luật Chứng khoán",
+     "answer": "left"
+    },
+    {
+     "text": "Thực hiện theo Luật Doanh nghiệp (Điều 30)",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 30 và Điều 31."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chào bán chứng khoán riêng lẻ gồm: chào bán cho {{dưới 100}} nhà đầu tư, không kể nhà đầu tư chứng khoán chuyên nghiệp; hoặc chỉ chào bán cho nhà đầu tư chứng khoán {{chuyên nghiệp}}.",
+   "bank_extra": [
+    "từ 100",
+    "nước ngoài"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chào bán chứng khoán riêng lẻ của tổ chức phát hành không phải là công ty đại chúng thực hiện theo quy định của Luật {{Doanh nghiệp}}.",
+   "bank_extra": [
+    "Đầu tư",
+    "Chứng khoán"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Một công ty quảng cáo đợt bán cổ phần trên báo nhưng chỉ có 20 người mua thì vẫn là chào bán riêng lẻ.",
+   "answer": false,
+   "explain": "Sai. Đã dùng phương tiện thông tin đại chúng (điểm a khoản 19) thì là chào bán ra công chúng; khoản 20 loại trừ trường hợp này khỏi chào bán riêng lẻ, không phụ thuộc số người mua thực tế."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Định nghĩa chào bán chứng khoán riêng lẻ và phân biệt với chào bán ra công chúng.",
+   "model": "Chào bán riêng lẻ: không thông qua phương tiện thông tin đại chúng và (a) chào bán cho dưới 100 nhà đầu tư, không kể nhà đầu tư chứng khoán chuyên nghiệp, hoặc (b) chỉ chào bán cho nhà đầu tư chứng khoán chuyên nghiệp (khoản 20 Điều 4). Ra công chúng: thông tin đại chúng, hoặc từ 100 nhà đầu tư, hoặc nhà đầu tư không xác định.",
+   "keywords": [
+    "thông tin đại chúng",
+    "dưới 100",
+    "chuyên nghiệp",
+    "ra công chúng"
+   ]
+  }
+ ]
+}

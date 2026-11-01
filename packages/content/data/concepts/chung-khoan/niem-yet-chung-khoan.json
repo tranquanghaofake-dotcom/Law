@@ -1,0 +1,133 @@
+{
+ "id": "niem-yet-chung-khoan",
+ "subject": "chung-khoan",
+ "chapter": "c3-thi-truong-giao-dich",
+ "term": "Niêm yết chứng khoán",
+ "definition": "Niêm yết chứng khoán là việc đưa chứng khoán có đủ điều kiện niêm yết vào giao dịch trên hệ thống giao dịch cho chứng khoán niêm yết.",
+ "plain": "Niêm yết là \"lên sàn chính\" (HOSE, HNX) khi đáp ứng điều kiện do Chính phủ quy định. Chứng khoán đã chào bán ra công chúng, cổ phiếu công ty đại chúng, chứng chỉ quỹ đóng, chứng chỉ quỹ ETF, chứng quyền có bảo đảm, hợp đồng tương lai, quyền chọn phải được niêm yết hoặc đăng ký giao dịch (khoản 1 Điều 48).",
+ "example": "Công ty T chào bán cổ phiếu ra công chúng thành công: trong 30 ngày phải hoàn thiện hồ sơ niêm yết hoặc đăng ký giao dịch (khoản 2 Điều 29). Nếu đủ điều kiện niêm yết thì lên HOSE/HNX; chưa đủ thì đăng ký giao dịch trên UPCoM.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 24 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "dang-ky-giao-dich-chung-khoan",
+  "he-thong-giao-dich-chung-khoan"
+ ],
+ "keywords": [
+  "đủ điều kiện niêm yết",
+  "hệ thống giao dịch cho chứng khoán niêm yết",
+  "khoản 1 Điều 48"
+ ],
+ "note": "Luật 56/2024/QH15 (hiệu lực 01/01/2025) bãi bỏ khoản 3 Điều 48 Luật Chứng khoán 2019 (theo chú thích của VBHN 102/VBHN-VPQH). Đọc giáo trình 2021 phần niêm yết cần đối chiếu với Điều 48 hiện hành.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 24 Điều 4, niêm yết chứng khoán là gì?",
+   "options": [
+    "Đưa chứng khoán có đủ điều kiện niêm yết vào giao dịch trên hệ thống giao dịch cho chứng khoán niêm yết",
+    "Đưa chứng khoán vào giao dịch trên hệ thống cho chứng khoán chưa niêm yết",
+    "Ghi nhận thông tin người sở hữu chứng khoán",
+    "Chào bán chứng khoán ra công chúng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 24 Điều 4. Phương án 2 là đăng ký giao dịch (khoản 25); phương án 3 là đăng ký chứng khoán (khoản 33).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 24 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Loại nào sau đây PHẢI được niêm yết, đăng ký giao dịch theo khoản 1 Điều 48?",
+   "options": [
+    "Cổ phiếu của công ty đại chúng",
+    "Cổ phần của công ty cổ phần chưa đại chúng",
+    "Phần vốn góp trong công ty TNHH",
+    "Trái phiếu doanh nghiệp riêng lẻ của công ty chưa đại chúng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 48: chứng khoán đã chào bán ra công chúng, cổ phiếu của công ty đại chúng, chứng chỉ quỹ đóng, chứng chỉ quỹ hoán đổi danh mục, chứng quyền có bảo đảm, hợp đồng tương lai, hợp đồng quyền chọn.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 48 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Niêm yết",
+   "right": "Đăng ký giao dịch",
+   "cases": [
+    {
+     "text": "Chứng khoán có đủ điều kiện niêm yết",
+     "answer": "left"
+    },
+    {
+     "text": "Hệ thống giao dịch cho chứng khoán chưa niêm yết",
+     "answer": "right"
+    },
+    {
+     "text": "Sàn HOSE, HNX",
+     "answer": "left"
+    },
+    {
+     "text": "Sàn UPCoM",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 24 và khoản 25 Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Niêm yết chứng khoán là việc đưa chứng khoán có đủ điều kiện {{niêm yết}} vào giao dịch trên hệ thống giao dịch cho chứng khoán {{niêm yết}}.",
+   "bank_extra": [
+    "chào bán",
+    "chưa niêm yết"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Điều kiện niêm yết chứng khoán, việc phân bảng niêm yết do {{Chính phủ}} quy định.",
+   "bank_extra": [
+    "Quốc hội",
+    "Sở giao dịch chứng khoán"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Công ty đại chúng U có cổ phiếu nhưng chưa đủ điều kiện niêm yết. Theo khoản 1 Điều 48, U phải làm gì với cổ phiếu của mình?",
+   "options": [
+    "Đăng ký giao dịch trên hệ thống giao dịch cho chứng khoán chưa niêm yết",
+    "Không cần làm gì vì chưa đủ điều kiện niêm yết",
+    "Bắt buộc niêm yết dù chưa đủ điều kiện",
+    "Chỉ được giao dịch ngoài hệ thống"
+   ],
+   "answer": 0,
+   "explain": "Cổ phiếu công ty đại chúng phải được niêm yết HOẶC đăng ký giao dịch (khoản 1 Điều 48); chưa đủ điều kiện niêm yết thì đăng ký giao dịch (khoản 25 Điều 4).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 48 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Định nghĩa niêm yết chứng khoán và nêu các loại chứng khoán phải niêm yết, đăng ký giao dịch.",
+   "model": "Niêm yết là đưa chứng khoán có đủ điều kiện niêm yết vào giao dịch trên hệ thống giao dịch cho chứng khoán niêm yết (khoản 24 Điều 4). Phải niêm yết, đăng ký giao dịch: chứng khoán đã chào bán ra công chúng, cổ phiếu công ty đại chúng, chứng chỉ quỹ đóng, chứng chỉ quỹ hoán đổi danh mục, chứng quyền có bảo đảm, hợp đồng tương lai, hợp đồng quyền chọn (khoản 1 Điều 48).",
+   "keywords": [
+    "đủ điều kiện niêm yết",
+    "công ty đại chúng",
+    "chứng chỉ quỹ đóng",
+    "hợp đồng tương lai"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,112 @@
+{
+ "id": "thong-tin-noi-bo",
+ "subject": "chung-khoan",
+ "chapter": "c10-xu-ly-vi-pham",
+ "term": "Thông tin nội bộ",
+ "definition": "Thông tin nội bộ là thông tin liên quan đến công ty đại chúng, tổ chức niêm yết, tổ chức đăng ký giao dịch, quỹ đại chúng, công ty đầu tư chứng khoán đại chúng chưa được công bố mà nếu được công bố có thể ảnh hưởng lớn đến giá chứng khoán của tổ chức này.",
+ "plain": "Hai dấu hiệu: (1) CHƯA được công bố; (2) nếu công bố có thể ẢNH HƯỞNG LỚN đến giá chứng khoán. Ví dụ: kết quả kinh doanh đột biến chưa công bố, sắp sáp nhập, sắp bị thanh tra. Khi đã công bố công khai thì không còn là thông tin nội bộ. Đừng nhầm với \"người nội bộ\" (khoản 45): thông tin nội bộ có thể lọt ra ngoài người nội bộ (ví dụ luật sư, kiểm toán viên, người thân).",
+ "example": "Kiểm toán viên của công ty Y biết Y sẽ báo lỗ lớn, thông tin chưa công bố: đây là thông tin nội bộ. Nếu kiểm toán viên bán cổ phiếu Y trước khi thông tin được công bố là giao dịch nội gián, dù kiểm toán viên không phải người nội bộ của Y.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 44 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "giao-dich-noi-gian",
+  "nguoi-noi-bo"
+ ],
+ "keywords": [
+  "chưa được công bố",
+  "ảnh hưởng lớn đến giá"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đặc điểm nào là điều kiện để một thông tin là thông tin nội bộ theo khoản 44 Điều 4?",
+   "options": [
+    "Chưa được công bố và nếu công bố có thể ảnh hưởng lớn đến giá chứng khoán",
+    "Do người nội bộ nói ra",
+    "Được ghi trong báo cáo thường niên",
+    "Liên quan đến bất kỳ doanh nghiệp nào"
+   ],
+   "answer": 0,
+   "explain": "Khoản 44 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 44 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thông tin nội bộ liên quan đến những tổ chức nào theo khoản 44 Điều 4?",
+   "options": [
+    "Công ty đại chúng, tổ chức niêm yết, tổ chức đăng ký giao dịch, quỹ đại chúng, công ty đầu tư chứng khoán đại chúng",
+    "Chỉ ngân hàng thương mại",
+    "Chỉ công ty chứng khoán",
+    "Mọi doanh nghiệp tư nhân"
+   ],
+   "answer": 0,
+   "explain": "Khoản 44 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 44 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thông tin nội bộ",
+   "right": "Không còn là thông tin nội bộ",
+   "cases": [
+    {
+     "text": "Kế hoạch sáp nhập chưa công bố của công ty niêm yết",
+     "answer": "left"
+    },
+    {
+     "text": "Kết quả kinh doanh quý đã đăng trên website Sở giao dịch",
+     "answer": "right"
+    }
+   ],
+   "explain": "Dấu hiệu \"chưa được công bố\"."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thông tin nội bộ là thông tin {{chưa được công bố}} mà nếu được công bố có thể ảnh hưởng {{lớn}} đến giá chứng khoán của tổ chức.",
+   "bank_extra": [
+    "đã kiểm toán",
+    "nhỏ"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thông tin nội bộ liên quan đến công ty đại chúng, tổ chức niêm yết, tổ chức đăng ký giao dịch, quỹ {{đại chúng}}…",
+   "bank_extra": [
+    "thành viên",
+    "tư nhân"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chỉ người nội bộ mới có thể nắm giữ thông tin nội bộ.",
+   "answer": false,
+   "explain": "Sai. Định nghĩa thông tin nội bộ (khoản 44) không gắn với chủ thể; người ngoài (kiểm toán, luật sư, người thân) cũng có thể biết, và khoản 2 Điều 12 cấm bất kỳ ai sử dụng, tiết lộ."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Định nghĩa thông tin nội bộ và phân biệt với người nội bộ.",
+   "model": "Thông tin liên quan đến công ty đại chúng, tổ chức niêm yết, đăng ký giao dịch, quỹ đại chúng, công ty đầu tư chứng khoán đại chúng chưa được công bố mà nếu công bố có thể ảnh hưởng lớn đến giá chứng khoán (khoản 44 Điều 4). Người nội bộ (khoản 45) là người giữ vị trí quản trị, điều hành; thông tin nội bộ có thể đến tay cả người ngoài.",
+   "keywords": [
+    "chưa được công bố",
+    "ảnh hưởng lớn",
+    "người nội bộ"
+   ]
+  }
+ ]
+}

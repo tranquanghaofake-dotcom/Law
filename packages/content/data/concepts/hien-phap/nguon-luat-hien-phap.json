@@ -1,0 +1,120 @@
+{
+ "id": "nguon-luat-hien-phap",
+ "subject": "hien-phap",
+ "chapter": "c1-nhung-van-de-chung",
+ "term": "Nguồn của ngành luật Hiến pháp",
+ "definition": "Nguồn của ngành luật Hiến pháp là các văn bản quy phạm pháp luật có chứa quy phạm luật Hiến pháp, trong đó Hiến pháp là nguồn cơ bản và quan trọng nhất; ngoài ra có các luật, nghị quyết của Quốc hội, pháp lệnh, nghị quyết của Ủy ban thường vụ Quốc hội và một số văn bản khác có chứa quy phạm luật Hiến pháp.",
+ "plain": "Thứ tự nguồn theo giáo trình: HIẾN PHÁP (nguồn chủ yếu, hiệu lực cao nhất); các LUẬT về tổ chức bộ máy nhà nước (Luật Tổ chức Quốc hội, Luật Tổ chức Chính phủ, Luật Tổ chức Tòa án nhân dân, Luật Tổ chức chính quyền địa phương…), Luật Bầu cử, Luật Quốc tịch, Luật Trưng cầu ý dân…; NGHỊ QUYẾT của Quốc hội (ví dụ Nghị quyết 203/2025/QH15 sửa đổi Hiến pháp); pháp lệnh, nghị quyết của Ủy ban thường vụ Quốc hội; một số văn bản dưới luật khác. Tiêu chí: văn bản đó có chứa QUY PHẠM LUẬT HIẾN PHÁP hay không, không phụ thuộc tên gọi.",
+ "example": "Luật Quốc tịch Việt Nam và Luật Bầu cử đại biểu Quốc hội và đại biểu Hội đồng nhân dân (đã dùng ở chương 5, 6) đều là nguồn của ngành luật Hiến pháp.",
+ "source": {
+  "kind": "textbook",
+  "cite": "Giáo trình Luật Hiến pháp (mục lục 11 chương do Hào cung cấp), Chương 1 \"Những vấn đề chung về Hiến pháp\" — tóm lược quan điểm học thuật phổ biến, chưa đối chiếu nguyên văn"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nganh-luat-hien-phap",
+  "hieu-luc-phap-ly-toi-cao",
+  "hien-phap"
+ ],
+ "keywords": [
+  "Hiến pháp là nguồn quan trọng nhất",
+  "luật tổ chức bộ máy",
+  "nghị quyết của Quốc hội",
+  "có chứa quy phạm luật Hiến pháp"
+ ],
+ "note": "Thẻ dạng tóm lược quan điểm học thuật, chưa đối chiếu nguyên văn giáo trình; cần Hào đối chiếu trang 1–9 của sách.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nguồn quan trọng nhất của ngành luật Hiến pháp là gì?",
+   "options": [
+    "Hiến pháp",
+    "Bộ luật Dân sự",
+    "Án lệ",
+    "Tập quán"
+   ],
+   "answer": 0,
+   "explain": "Quan điểm phổ biến.",
+   "source": {
+    "kind": "textbook",
+    "cite": "Giáo trình Luật Hiến pháp (mục lục 11 chương do Hào cung cấp), Chương 1 \"Những vấn đề chung về Hiến pháp\" — tóm lược quan điểm học thuật phổ biến, chưa đối chiếu nguyên văn"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Văn bản nào sau đây là nguồn của ngành luật Hiến pháp?",
+   "options": [
+    "Luật Quốc tịch Việt Nam",
+    "Bộ luật Lao động",
+    "Luật Thương mại",
+    "Bộ luật Dân sự"
+   ],
+   "answer": 0,
+   "explain": "Luật Quốc tịch điều chỉnh quan hệ cơ bản giữa Nhà nước và công dân.",
+   "source": {
+    "kind": "textbook",
+    "cite": "Giáo trình Luật Hiến pháp (mục lục 11 chương do Hào cung cấp), Chương 1 \"Những vấn đề chung về Hiến pháp\" — tóm lược quan điểm học thuật phổ biến, chưa đối chiếu nguyên văn"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Nguồn của luật Hiến pháp",
+   "right": "Không phải nguồn của luật Hiến pháp",
+   "cases": [
+    {
+     "text": "Luật Tổ chức Quốc hội",
+     "answer": "left"
+    },
+    {
+     "text": "Luật Bầu cử đại biểu Quốc hội và đại biểu HĐND",
+     "answer": "left"
+    },
+    {
+     "text": "Hợp đồng mua bán giữa hai công ty",
+     "answer": "right"
+    }
+   ],
+   "explain": "Tiêu chí: có chứa quy phạm luật Hiến pháp."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hiến pháp là nguồn {{cơ bản}} và quan trọng nhất của ngành luật Hiến pháp; ngoài ra có các luật về tổ chức {{bộ máy nhà nước}}.",
+   "bank_extra": [
+    "phụ",
+    "doanh nghiệp"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tiêu chí xác định nguồn luật Hiến pháp là văn bản có chứa {{quy phạm luật Hiến pháp}} hay không.",
+   "bank_extra": [
+    "chữ ký Chủ tịch nước",
+    "tên gọi Hiến pháp"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Nghị quyết của Quốc hội có thể là nguồn của ngành luật Hiến pháp.",
+   "answer": true,
+   "explain": "Đúng. Ví dụ Nghị quyết 203/2025/QH15 sửa đổi, bổ sung một số điều của Hiến pháp."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày nguồn của ngành luật Hiến pháp.",
+   "model": "Văn bản quy phạm pháp luật có chứa quy phạm luật Hiến pháp: Hiến pháp (nguồn cơ bản, quan trọng nhất); luật tổ chức bộ máy nhà nước, luật bầu cử, quốc tịch, trưng cầu ý dân; nghị quyết của Quốc hội; pháp lệnh, nghị quyết của Ủy ban thường vụ Quốc hội; một số văn bản khác.",
+   "keywords": [
+    "Hiến pháp",
+    "luật tổ chức",
+    "nghị quyết",
+    "quy phạm luật Hiến pháp"
+   ]
+  }
+ ]
+}

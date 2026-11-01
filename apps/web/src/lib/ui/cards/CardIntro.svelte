@@ -23,6 +23,7 @@
   <blockquote class="quote">{concept.definition}</blockquote>
   <p class="plain">{concept.plain}</p>
   <p class="example"><b>Ví dụ:</b> {concept.example}</p>
+  {#if concept.note}<p class="note"><b>Cập nhật luật:</b> {concept.note}</p>{/if}
   <p class="source muted">Nguồn: {concept.source.cite}{#if concept.source.url} · <a href={concept.source.url} target="_blank" rel="noopener">Xem văn bản</a>{/if}</p>
   <button class="btn primary" type="button" onclick={ok}>Đã hiểu <kbd>↵</kbd></button>
 </article>

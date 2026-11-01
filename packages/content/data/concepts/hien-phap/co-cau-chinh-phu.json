@@ -1,0 +1,123 @@
+{
+ "id": "co-cau-chinh-phu",
+ "subject": "hien-phap",
+ "chapter": "c9-chinh-phu",
+ "term": "Cơ cấu và chế độ làm việc của Chính phủ",
+ "definition": "Chính phủ gồm Thủ tướng Chính phủ, các Phó Thủ tướng Chính phủ, các Bộ trưởng và Thủ trưởng cơ quan ngang bộ. Cơ cấu, số lượng thành viên Chính phủ do Quốc hội quyết định. Chính phủ làm việc theo chế độ tập thể, quyết định theo đa số.",
+ "plain": "Thành viên Chính phủ: Thủ tướng, Phó Thủ tướng, Bộ trưởng, Thủ trưởng cơ quan ngang bộ (Thứ trưởng không phải thành viên Chính phủ). Quốc hội quyết định cơ cấu, số lượng thành viên và thành lập, bãi bỏ bộ. Chế độ làm việc kết hợp: TẬP THỂ (Chính phủ quyết định theo đa số) và trách nhiệm CÁ NHÂN (Thủ tướng, Bộ trưởng chịu trách nhiệm cá nhân về lĩnh vực).",
+ "example": "Năm 2025, Quốc hội quyết định cơ cấu tổ chức Chính phủ mới với số bộ, cơ quan ngang bộ giảm sau sắp xếp: đúng thẩm quyền Quốc hội quyết định cơ cấu, thành lập, bãi bỏ bộ (khoản 1 Điều 95, khoản 9 Điều 70).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 95 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "chinh-phu-vi-tri",
+  "thu-tuong-chinh-phu",
+  "bo-truong-trach-nhiem"
+ ],
+ "keywords": [
+  "Thủ tướng, Phó Thủ tướng, Bộ trưởng, Thủ trưởng cơ quan ngang bộ",
+  "Quốc hội quyết định cơ cấu",
+  "tập thể, đa số"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai KHÔNG phải thành viên Chính phủ theo khoản 1 Điều 95?",
+   "options": [
+    "Thứ trưởng",
+    "Phó Thủ tướng",
+    "Bộ trưởng",
+    "Thủ trưởng cơ quan ngang bộ"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 95.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 95 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Cơ quan nào quyết định cơ cấu, số lượng thành viên Chính phủ?",
+   "options": [
+    "Quốc hội",
+    "Thủ tướng",
+    "Chủ tịch nước",
+    "Ủy ban thường vụ Quốc hội"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 95.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 95 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thành viên Chính phủ",
+   "right": "Không phải thành viên Chính phủ",
+   "cases": [
+    {
+     "text": "Thủ trưởng cơ quan ngang bộ",
+     "answer": "left"
+    },
+    {
+     "text": "Thứ trưởng Bộ Tài chính",
+     "answer": "right"
+    },
+    {
+     "text": "Phó Thủ tướng",
+     "answer": "left"
+    },
+    {
+     "text": "Chủ tịch Ủy ban nhân dân tỉnh",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 95."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chính phủ gồm Thủ tướng Chính phủ, các {{Phó Thủ tướng}} Chính phủ, các Bộ trưởng và {{Thủ trưởng cơ quan ngang bộ}}.",
+   "bank_extra": [
+    "Thứ trưởng",
+    "Chủ tịch tỉnh"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chính phủ làm việc theo chế độ {{tập thể}}, quyết định theo {{đa số}}.",
+   "bank_extra": [
+    "thủ trưởng",
+    "đồng thuận"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thủ tướng có quyền tự quyết định số lượng bộ trong Chính phủ.",
+   "answer": false,
+   "explain": "Sai. Cơ cấu, số lượng thành viên Chính phủ do Quốc hội quyết định (khoản 1 Điều 95)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày cơ cấu và chế độ làm việc của Chính phủ.",
+   "model": "Chính phủ gồm Thủ tướng, các Phó Thủ tướng, Bộ trưởng, Thủ trưởng cơ quan ngang bộ; cơ cấu, số lượng thành viên do Quốc hội quyết định; làm việc theo chế độ tập thể, quyết định theo đa số (khoản 1 Điều 95), kết hợp trách nhiệm cá nhân của Thủ tướng và Bộ trưởng.",
+   "keywords": [
+    "Thủ tướng",
+    "Bộ trưởng",
+    "Quốc hội quyết định",
+    "tập thể"
+   ]
+  }
+ ]
+}

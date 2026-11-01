@@ -1,0 +1,116 @@
+{
+ "id": "van-ban-chinh-phu",
+ "subject": "hien-phap",
+ "chapter": "c9-chinh-phu",
+ "term": "Văn bản pháp luật của Chính phủ, Thủ tướng, Bộ trưởng",
+ "definition": "Chính phủ, Thủ tướng Chính phủ, Bộ trưởng, Thủ trưởng cơ quan ngang bộ ban hành văn bản pháp luật để thực hiện nhiệm vụ, quyền hạn của mình, kiểm tra việc thi hành các văn bản đó và xử lý các văn bản trái pháp luật theo quy định của luật.",
+ "plain": "Hình thức văn bản (theo Luật Ban hành văn bản quy phạm pháp luật): Chính phủ ban hành NGHỊ ĐỊNH; Thủ tướng ban hành QUYẾT ĐỊNH; Bộ trưởng ban hành THÔNG TƯ. Kèm nghĩa vụ kiểm tra việc thi hành và xử lý văn bản trái pháp luật. Văn bản của Chính phủ, Thủ tướng trái Hiến pháp có thể bị Ủy ban thường vụ đình chỉ và Quốc hội bãi bỏ (khoản 10 Điều 70, khoản 4 Điều 74).",
+ "example": "Luật mới giao Chính phủ quy định chi tiết: Chính phủ ban hành nghị định; Bộ trưởng ban hành thông tư hướng dẫn nghiệp vụ.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 100 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nhiem-vu-chinh-phu",
+  "bao-ve-hien-phap",
+  "thu-tuong-chinh-phu"
+ ],
+ "keywords": [
+  "nghị định",
+  "quyết định của Thủ tướng",
+  "thông tư",
+  "kiểm tra, xử lý văn bản trái pháp luật"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 100, chủ thể nào có quyền ban hành văn bản pháp luật?",
+   "options": [
+    "Chính phủ, Thủ tướng, Bộ trưởng, Thủ trưởng cơ quan ngang bộ",
+    "Chỉ Chính phủ",
+    "Chỉ Thủ tướng",
+    "Thứ trưởng"
+   ],
+   "answer": 0,
+   "explain": "Điều 100.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 100 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Cơ quan nào có quyền bãi bỏ văn bản của Chính phủ trái Hiến pháp?",
+   "options": [
+    "Quốc hội",
+    "Tòa án nhân dân tối cao",
+    "Bộ Tư pháp",
+    "Mặt trận Tổ quốc"
+   ],
+   "answer": 0,
+   "explain": "Khoản 10 Điều 70; Ủy ban thường vụ có quyền đình chỉ (khoản 4 Điều 74).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 10 Điều 70 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Đình chỉ thi hành",
+   "right": "Bãi bỏ",
+   "cases": [
+    {
+     "text": "Ủy ban thường vụ Quốc hội đối với văn bản của Chính phủ trái Hiến pháp",
+     "answer": "left"
+    },
+    {
+     "text": "Quốc hội đối với văn bản của Chính phủ trái Hiến pháp",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 10 Điều 70; khoản 4 Điều 74."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chính phủ, Thủ tướng, Bộ trưởng ban hành văn bản pháp luật, {{kiểm tra}} việc thi hành các văn bản đó và {{xử lý}} các văn bản trái pháp luật.",
+   "bank_extra": [
+    "công bố",
+    "khen thưởng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thủ tướng {{đình chỉ}} việc thi hành hoặc bãi bỏ văn bản của Bộ trưởng trái Hiến pháp, luật.",
+   "bank_extra": [
+    "ban hành",
+    "giải thích"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Văn bản do Bộ trưởng ban hành không bị cơ quan cấp trên kiểm tra.",
+   "answer": false,
+   "explain": "Sai. Thủ tướng có quyền đình chỉ, bãi bỏ văn bản trái luật của Bộ trưởng (khoản 4 Điều 98); Chính phủ, Thủ tướng, Bộ trưởng phải kiểm tra, xử lý văn bản trái pháp luật (Điều 100)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày thẩm quyền ban hành và cơ chế kiểm soát văn bản pháp luật của Chính phủ, Thủ tướng, Bộ trưởng.",
+   "model": "Chính phủ, Thủ tướng, Bộ trưởng, Thủ trưởng cơ quan ngang bộ ban hành văn bản pháp luật, kiểm tra việc thi hành và xử lý văn bản trái pháp luật (Điều 100). Kiểm soát: Thủ tướng đình chỉ, bãi bỏ văn bản trái luật của Bộ trưởng, Ủy ban nhân dân tỉnh (khoản 4 Điều 98); Ủy ban thường vụ đình chỉ, Quốc hội bãi bỏ văn bản của Chính phủ, Thủ tướng trái Hiến pháp, luật.",
+   "keywords": [
+    "ban hành",
+    "kiểm tra",
+    "đình chỉ",
+    "bãi bỏ"
+   ]
+  }
+ ]
+}

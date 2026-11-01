@@ -1,0 +1,122 @@
+{
+ "id": "quan-che-nha-dinh",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c6-trung-dai",
+ "term": "Quan chế và quân đội thời Đinh",
+ "definition": "Bắt đầu quy định cấp bật văn võ, tăng đạo. Lấy Nguyễn Bặc làm Định quốc công, Lưu cơ làm Đô hộ phủ sĩ sư, Lê Hoàn làm Thập đạo tướng quân (…). Muà xuân, tháng hai, quy định về quân mười đạo: mỗi đạo có 10 quân, 1 quân 10 lữ, 1 lữ 10 tốt, 1 tốt 10 ngũ, 1 ngũ 10 người",
+ "plain": "Năm 971 nhà Đinh lần đầu quy định CẤP BẬC VĂN, VÕ và TĂNG, ĐẠO (quan chức Phật giáo, Đạo giáo). Chức danh tiêu biểu: Định quốc công (Nguyễn Bặc), Đô hộ phủ sĩ sư (Lưu Cơ, thường được hiểu là quan coi việc hình án), Thập đạo tướng quân (Lê Hoàn, chỉ huy quân đội). Năm 974 tổ chức quân \"mười đạo\" theo hệ thập phân. Cách hiểu \"đạo\" là đơn vị quân sự hay hành chính còn có ý kiến khác nhau. Toàn thư nói rõ năm 1002 nhà Tiền Lê \"đổi mười đạo làm lộ, phủ, châu\". Bộ máy còn đơn giản, mang nặng tính quân sự.",
+ "example": "Lê Hoàn giữ chức Thập đạo tướng quân thời Đinh, nắm quân đội. Đó là cơ sở để năm 980 ông được tôn lên ngôi, lập nhà Tiền Lê.",
+ "source": {
+  "kind": "primary",
+  "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển I (bản dịch Viện KHXH Việt Nam, NXB KHXH 1993), Kỷ nhà Đinh, tờ 3b–4a",
+  "url": "https://thpthiephoa1.edu.vn/wp-content/uploads/Dai-viet-su-ki-toan-thu.pdf"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "dinh-dai-co-viet",
+  "tien-le-dinh-luat-le",
+  "ngo-quyen-xung-vuong"
+ ],
+ "keywords": [
+  "971",
+  "cấp bậc văn võ, tăng đạo",
+  "Định quốc công",
+  "Đô hộ phủ sĩ sư",
+  "Thập đạo tướng quân",
+  "quân mười đạo"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Toàn thư, năm 971 Lê Hoàn được giao chức gì?",
+   "options": [
+    "Thập đạo tướng quân",
+    "Định quốc công",
+    "Đô hộ phủ sĩ sư",
+    "Tăng thống"
+   ],
+   "answer": 0,
+   "explain": "\"Lê Hoàn làm Thập đạo tướng quân\".",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển I, tờ 3b"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo quy định năm 974, một \"lữ\" gồm bao nhiêu \"tốt\"?",
+   "options": [
+    "10 tốt",
+    "5 tốt",
+    "100 tốt",
+    "12 tốt"
+   ],
+   "answer": 0,
+   "explain": "\"1 lữ 10 tốt\": tổ chức theo hệ thập phân.",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển I, tờ 4a"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Nguyễn Bặc",
+   "right": "Lê Hoàn",
+   "cases": [
+    {
+     "text": "Định quốc công",
+     "answer": "left"
+    },
+    {
+     "text": "Thập đạo tướng quân",
+     "answer": "right"
+    },
+    {
+     "text": "Năm 980 được tôn lên ngôi, lập nhà Tiền Lê",
+     "answer": "right"
+    }
+   ],
+   "explain": "Toàn thư năm 971 và năm 980."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Năm 971, bắt đầu quy định cấp bật {{văn võ}}, tăng đạo; lấy Nguyễn Bặc làm {{Định quốc công}}.",
+   "bank_extra": [
+    "quân dân",
+    "Thập đạo tướng quân"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quy định về quân mười đạo: mỗi đạo có 10 quân, 1 quân 10 {{lữ}}, 1 lữ 10 tốt.",
+   "bank_extra": [
+    "ngũ",
+    "đội"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Toàn thư ghi năm 971 nhà Đinh quy định cấp bậc cho cả tăng, đạo (Phật giáo, Đạo giáo).",
+   "answer": true,
+   "explain": "Đúng. \"Bắt đầu quy định cấp bật văn võ, tăng đạo\", có Tăng thống, Tăng lục, Sùng chân uy nghi."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày tổ chức quan chế, quân đội thời Đinh theo Toàn thư.",
+   "model": "Năm 971 quy định cấp bậc văn võ, tăng đạo: Nguyễn Bặc là Định quốc công, Lưu Cơ là Đô hộ phủ sĩ sư, Lê Hoàn là Thập đạo tướng quân, có chức tăng quan; năm 974 tổ chức quân mười đạo theo hệ thập phân (đạo – quân – lữ – tốt – ngũ). Bộ máy đơn giản, nặng tính quân sự.",
+   "keywords": [
+    "971",
+    "văn võ, tăng đạo",
+    "Thập đạo tướng quân",
+    "mười đạo"
+   ]
+  }
+ ]
+}

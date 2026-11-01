@@ -1,0 +1,119 @@
+{
+ "id": "thay-the-cong-ty-quan-ly-quy-ngan-hang-giam-sat",
+ "subject": "chung-khoan",
+ "chapter": "c7-quan-ly-quy-giam-sat",
+ "term": "Mất công ty quản lý quỹ hoặc ngân hàng giám sát: thay thế hay giải thể quỹ",
+ "definition": "Công ty quản lý quỹ đầu tư chứng khoán bị thu hồi Giấy phép thành lập và hoạt động kinh doanh chứng khoán hoặc bị giải thể, phá sản mà Ban đại diện quỹ đầu tư chứng khoán không xác lập được công ty quản lý quỹ đầu tư chứng khoán thay thế trong thời hạn 02 tháng kể từ ngày phát sinh sự kiện;",
+ "plain": "Quỹ cần đủ \"hai chìa khóa\". Nếu mất công ty quản lý quỹ (thu hồi giấy phép, giải thể, phá sản) hoặc mất ngân hàng giám sát (thu hồi giấy chứng nhận, giải thể, phá sản, chấm dứt hợp đồng) mà không tìm được người thay thế trong 02 tháng thì quỹ phải giải thể. Khi giải thể, tiền thanh lý trả theo thứ tự: nghĩa vụ với Nhà nước, khoản phải trả cho công ty quản lý quỹ, ngân hàng giám sát và khoản khác, cuối cùng chia cho nhà đầu tư theo tỷ lệ góp.",
+ "example": "Công ty quản lý quỹ L bị thu hồi giấy phép ngày 01/3. Đến 01/5 Ban đại diện quỹ vẫn chưa chọn được công ty thay thế: quỹ thuộc trường hợp giải thể; trong 30 ngày phải triệu tập Đại hội nhà đầu tư thông qua phương án giải thể.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điểm c khoản 1 Điều 104 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "ngan-hang-giam-sat",
+  "nghiep-vu-cong-ty-quan-ly-quy",
+  "gia-tri-tai-san-rong"
+ ],
+ "keywords": [
+  "02 tháng",
+  "Ban đại diện quỹ",
+  "thứ tự thanh toán khi giải thể"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ban đại diện quỹ có bao lâu để xác lập công ty quản lý quỹ thay thế trước khi quỹ phải giải thể?",
+   "options": [
+    "02 tháng",
+    "30 ngày",
+    "06 tháng",
+    "12 tháng"
+   ],
+   "answer": 0,
+   "explain": "Điểm c khoản 1 Điều 104.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 104 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khi giải thể quỹ, khoản nào được thanh toán TRƯỚC TIÊN từ tiền thanh lý?",
+   "options": [
+    "Nghĩa vụ tài chính với Nhà nước",
+    "Phần chia cho nhà đầu tư",
+    "Khoản phải trả cho công ty quản lý quỹ",
+    "Phí cho Sở giao dịch"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 104: (a) Nhà nước, (b) công ty quản lý quỹ, ngân hàng giám sát, khoản khác, (c) nhà đầu tư.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 104 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Căn cứ giải thể quỹ (Điều 104)",
+   "right": "Không phải căn cứ giải thể quỹ",
+   "cases": [
+    {
+     "text": "Ngân hàng giám sát bị giải thể mà không có ngân hàng thay thế trong 02 tháng",
+     "answer": "left"
+    },
+    {
+     "text": "Giá trị tài sản ròng dưới 10 tỷ đồng liên tục 06 tháng",
+     "answer": "left"
+    },
+    {
+     "text": "Giá chứng chỉ quỹ giảm 20% trong một tháng",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 104."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quỹ giải thể khi công ty quản lý quỹ bị thu hồi giấy phép mà Ban đại diện quỹ không xác lập được công ty thay thế trong thời hạn {{02 tháng}}.",
+   "bank_extra": [
+    "15 ngày",
+    "01 năm"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Phần còn lại sau khi thanh toán nghĩa vụ với Nhà nước và các khoản phải trả được chia cho nhà đầu tư tương ứng với {{tỷ lệ góp vốn}}.",
+   "bank_extra": [
+    "số năm nắm giữ",
+    "số phiếu biểu quyết"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Khi công ty quản lý quỹ bị giải thể, quỹ đầu tư chứng khoán do công ty đó quản lý đương nhiên giải thể ngay lập tức.",
+   "answer": false,
+   "explain": "Sai. Quỹ chỉ giải thể nếu Ban đại diện quỹ không xác lập được công ty quản lý quỹ thay thế trong 02 tháng (điểm c khoản 1 Điều 104)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày hậu quả pháp lý khi quỹ mất công ty quản lý quỹ hoặc ngân hàng giám sát.",
+   "model": "Nếu công ty quản lý quỹ bị thu hồi giấy phép, giải thể, phá sản, hoặc ngân hàng giám sát bị thu hồi giấy chứng nhận, giải thể, phá sản, chấm dứt hợp đồng, mà không xác lập được chủ thể thay thế trong 02 tháng thì quỹ giải thể (điểm c, d khoản 1 Điều 104). Trong 30 ngày triệu tập Đại hội nhà đầu tư thông qua phương án giải thể; thanh toán: Nhà nước, công ty quản lý quỹ, ngân hàng giám sát và khoản khác, rồi nhà đầu tư theo tỷ lệ góp.",
+   "keywords": [
+    "02 tháng",
+    "thay thế",
+    "Đại hội nhà đầu tư",
+    "tỷ lệ góp vốn"
+   ]
+  }
+ ]
+}

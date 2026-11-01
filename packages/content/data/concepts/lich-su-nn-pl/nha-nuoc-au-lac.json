@@ -1,0 +1,114 @@
+{
+ "id": "nha-nuoc-au-lac",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c5-co-dai",
+ "term": "Nhà nước Âu Lạc",
+ "definition": "Vua đã thôn tính được nước Văn Lang, đổi quốc hiệu là Âu Lạc. (…) Bấy giờ Thục Vương đắp thành ở Việt Thường, rộng nghìn trượng, cuốn tròn như hình con ốc, cho nên gọi là Loa Thành.",
+ "plain": "Âu Lạc kế tục Văn Lang. Toàn thư chép Thục Phán (An Dương Vương) thôn tính Văn Lang và đổi quốc hiệu vào năm 257 TCN, đóng đô ở Phong Khê (Cổ Loa). Về tổ chức, Âu Lạc cơ bản giữ mô hình Văn Lang nhưng quyền lực trung ương mạnh hơn, thể hiện qua việc huy động sức người xây thành Cổ Loa và tổ chức quân đội (nỏ).",
+ "example": "Thành Cổ Loa (Đông Anh, Hà Nội) với nhiều vòng thành xoáy ốc là dấu tích vật chất cho thấy nhà nước đủ sức huy động lao động lớn, điều mà một liên minh bộ lạc lỏng lẻo khó làm được.",
+ "source": {
+  "kind": "primary",
+  "cite": "Đại Việt sử ký toàn thư, Ngoại kỷ, quyển I (bản dịch Viện KHXH Việt Nam, NXB KHXH 1993), Kỷ Thục, An Dương Vương, tờ 6a"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nha-nuoc-van-lang",
+  "lac-hau-lac-tuong-bo-chinh"
+ ],
+ "keywords": [
+  "An Dương Vương",
+  "Thục Phán",
+  "Cổ Loa",
+  "257 TCN"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Toàn thư, ai đổi quốc hiệu Văn Lang thành Âu Lạc?",
+   "options": [
+    "An Dương Vương (Thục Phán)",
+    "Hùng Vương thứ 18",
+    "Triệu Đà",
+    "Lạc Long Quân"
+   ],
+   "answer": 0,
+   "explain": "Kỷ Thục: \"Vua đã thôn tính được nước Văn Lang, đổi quốc hiệu là Âu Lạc.\"",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Ngoại kỷ, quyển I (bản dịch Viện KHXH Việt Nam, NXB KHXH 1993), tờ 6a"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Toàn thư ghi An Dương Vương đóng đô ở đâu?",
+   "options": [
+    "Phong Khê (nay là thành Cổ Loa)",
+    "Phong Châu",
+    "Hoa Lư",
+    "Mê Linh"
+   ],
+   "answer": 0,
+   "explain": "\"đóng đô ở Phong Khê (nay là thành Cổ Loa)\".",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Ngoại kỷ, quyển I (bản dịch Viện KHXH Việt Nam, NXB KHXH 1993), tờ 6a"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Phong Châu",
+   "right": "Phong Khê (Cổ Loa)",
+   "cases": [
+    {
+     "text": "Kinh đô thời Hùng Vương",
+     "answer": "left"
+    },
+    {
+     "text": "Kinh đô thời An Dương Vương",
+     "answer": "right"
+    }
+   ],
+   "explain": "Văn Lang đóng đô Phong Châu; Âu Lạc đóng đô Phong Khê, nơi có Loa Thành."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Vua đã thôn tính được nước Văn Lang, đổi quốc hiệu là {{Âu Lạc}}.",
+   "bank_extra": [
+    "Vạn Xuân",
+    "Nam Việt"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thục Vương đắp thành cuốn tròn như hình con ốc, cho nên gọi là {{Loa Thành}}.",
+   "bank_extra": [
+    "Thăng Long",
+    "Đại La"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo Toàn thư, năm thứ 1 An Dương Vương (năm thôn tính Văn Lang) tương ứng năm 257 TCN.",
+   "answer": true,
+   "explain": "Đúng. Toàn thư ghi \"Giáp Thìn, năm thứ 1 [257 TCN]\"."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày sự ra đời và đặc điểm nổi bật của nhà nước Âu Lạc.",
+   "model": "Thục Phán (An Dương Vương) thôn tính Văn Lang, đổi quốc hiệu Âu Lạc (Toàn thư ghi năm 257 TCN), đóng đô Phong Khê (Cổ Loa), xây Loa Thành. Âu Lạc kế thừa mô hình Văn Lang, quyền lực trung ương mạnh hơn, quân sự phát triển.",
+   "keywords": [
+    "Thục Phán",
+    "Âu Lạc",
+    "Cổ Loa",
+    "kế thừa Văn Lang"
+   ]
+  }
+ ]
+}

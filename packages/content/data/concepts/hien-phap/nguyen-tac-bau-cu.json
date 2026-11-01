@@ -1,0 +1,129 @@
+{
+ "id": "nguyen-tac-bau-cu",
+ "subject": "hien-phap",
+ "chapter": "c6-bau-cu",
+ "term": "Nguyên tắc bầu cử",
+ "definition": "Việc bầu cử đại biểu Quốc hội và đại biểu Hội đồng nhân dân được tiến hành theo nguyên tắc phổ thông, bình đẳng, trực tiếp và bỏ phiếu kín.",
+ "plain": "Bốn nguyên tắc, mỗi nguyên tắc trả lời một câu hỏi: PHỔ THÔNG (ai được bầu? mọi công dân đủ tuổi, không phân biệt dân tộc, giới tính, tôn giáo, tài sản…); BÌNH ĐẲNG (mỗi cử tri một phiếu cho mỗi cấp, giá trị phiếu như nhau); TRỰC TIẾP (cử tri tự mình bầu, không qua đại cử tri, không nhờ bầu thay); BỎ PHIẾU KÍN (không ai được xem phiếu khi cử tri viết). Luật Bầu cử nhắc lại tại Điều 1 và cụ thể hóa tại Điều 69.",
+ "example": "Ông A nhờ con trai đi bầu thay vì bận việc: vi phạm nguyên tắc trực tiếp (khoản 2 Điều 69 Luật Bầu cử). Nhưng cụ bà khiếm thị nhờ người viết hộ phiếu và tự bỏ vào hòm thì hợp pháp (khoản 3 Điều 69).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 7 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quyen-bau-cu-ung-cu",
+  "nguyen-tac-bo-phieu"
+ ],
+ "keywords": [
+  "phổ thông",
+  "bình đẳng",
+  "trực tiếp",
+  "bỏ phiếu kín"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 1 Điều 7 Hiến pháp 2013, bầu cử được tiến hành theo những nguyên tắc nào?",
+   "options": [
+    "Phổ thông, bình đẳng, trực tiếp và bỏ phiếu kín",
+    "Phổ thông, tự nguyện, gián tiếp và công khai",
+    "Bình đẳng, tự do, công khai và trực tiếp",
+    "Dân chủ, tập trung, công khai và minh bạch"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 7 Hiến pháp 2013; Điều 1 Luật Bầu cử.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 7 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quy định \"mỗi cử tri có quyền bỏ một phiếu bầu đại biểu Quốc hội\" thể hiện rõ nhất nguyên tắc nào?",
+   "options": [
+    "Bình đẳng",
+    "Phổ thông",
+    "Bỏ phiếu kín",
+    "Trực tiếp"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 69 Luật Bầu cử: mỗi cử tri một phiếu cho mỗi cấp, giá trị như nhau.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 69 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Nguyên tắc trực tiếp",
+   "right": "Nguyên tắc bỏ phiếu kín",
+   "cases": [
+    {
+     "text": "Cử tri phải tự mình đi bầu, không được nhờ người khác bầu thay",
+     "answer": "left"
+    },
+    {
+     "text": "Khi cử tri viết phiếu, không ai được xem, kể cả thành viên Tổ bầu cử",
+     "answer": "right"
+    },
+    {
+     "text": "Người viết hộ phải bảo đảm bí mật phiếu bầu",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 2, 3, 5 Điều 69 Luật Bầu cử."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Việc bầu cử được tiến hành theo nguyên tắc {{phổ thông}}, bình đẳng, {{trực tiếp}} và bỏ phiếu kín.",
+   "bank_extra": [
+    "tự nguyện",
+    "gián tiếp"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Khi cử tri viết phiếu bầu, không ai được {{xem}}, kể cả thành viên Tổ bầu cử.",
+   "bank_extra": [
+    "nhắc",
+    "đếm"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Tổ bầu cử mang hòm phiếu phụ đến bệnh viện cho cử tri đang điều trị. Việc này có vi phạm nguyên tắc trực tiếp không?",
+   "options": [
+    "Không, vì cử tri vẫn tự mình nhận phiếu và bầu; luật cho phép mang hòm phiếu phụ",
+    "Có, vì cử tri không đến phòng bỏ phiếu",
+    "Có, vì Tổ bầu cử đã can thiệp",
+    "Không, vì cử tri ốm đau được miễn bầu cử"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 69 Luật Bầu cử.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 69 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày nội dung bốn nguyên tắc bầu cử.",
+   "model": "Phổ thông: mọi công dân đủ 18 tuổi đều có quyền bầu cử, không phân biệt (trừ trường hợp luật định). Bình đẳng: mỗi cử tri một phiếu cho mỗi cấp, giá trị như nhau. Trực tiếp: cử tri tự mình bầu, không bầu thay (trừ viết hộ, hòm phiếu phụ). Bỏ phiếu kín: không ai được xem phiếu khi cử tri viết (khoản 1 Điều 7 Hiến pháp; Điều 1, 69 Luật Bầu cử).",
+   "keywords": [
+    "phổ thông",
+    "bình đẳng",
+    "trực tiếp",
+    "bỏ phiếu kín"
+   ]
+  }
+ ]
+}

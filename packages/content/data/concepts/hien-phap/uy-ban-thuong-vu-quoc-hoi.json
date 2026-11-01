@@ -1,0 +1,134 @@
+{
+ "id": "uy-ban-thuong-vu-quoc-hoi",
+ "subject": "hien-phap",
+ "chapter": "c7-quoc-hoi",
+ "term": "Ủy ban thường vụ Quốc hội",
+ "definition": "Ủy ban thường vụ Quốc hội là cơ quan thường trực của Quốc hội. Ủy ban thường vụ Quốc hội gồm Chủ tịch Quốc hội, các Phó Chủ tịch Quốc hội và các Ủy viên. Số thành viên Ủy ban thường vụ Quốc hội do Quốc hội quyết định. Thành viên Ủy ban thường vụ Quốc hội không thể đồng thời là thành viên Chính phủ.",
+ "plain": "Quốc hội chỉ họp 2 kỳ mỗi năm, nên cần cơ quan THƯỜNG TRỰC làm việc giữa hai kỳ họp. Ủy ban thường vụ ra pháp lệnh khi được giao, GIẢI THÍCH Hiến pháp, luật, pháp lệnh, giám sát, đình chỉ văn bản trái Hiến pháp của Chính phủ (rồi trình Quốc hội bãi bỏ), quyết định tổng động viên, ban bố tình trạng khẩn cấp… Thành viên Ủy ban thường vụ không được kiêm thành viên Chính phủ (bảo đảm giám sát độc lập).",
+ "example": "Khi có cách hiểu khác nhau về một điều luật, Ủy ban thường vụ Quốc hội ra nghị quyết giải thích luật (khoản 2 Điều 74), không phải Tòa án hay Chính phủ.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1–3 Điều 73 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "vi-tri-quoc-hoi",
+  "bao-ve-hien-phap",
+  "quyen-trinh-du-an-luat"
+ ],
+ "keywords": [
+  "cơ quan thường trực",
+  "pháp lệnh",
+  "giải thích Hiến pháp, luật",
+  "không đồng thời là thành viên Chính phủ"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 1 Điều 73, Ủy ban thường vụ Quốc hội là gì?",
+   "options": [
+    "Cơ quan thường trực của Quốc hội",
+    "Cơ quan hành chính cao nhất",
+    "Cơ quan tham mưu của Chủ tịch nước",
+    "Ủy ban lâm thời của Quốc hội"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 73.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 73 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Cơ quan nào có thẩm quyền giải thích Hiến pháp, luật, pháp lệnh?",
+   "options": [
+    "Ủy ban thường vụ Quốc hội",
+    "Tòa án nhân dân tối cao",
+    "Chính phủ",
+    "Bộ Tư pháp"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 74.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 74 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Ủy ban thường vụ Quốc hội",
+   "right": "Quốc hội",
+   "cases": [
+    {
+     "text": "Ra pháp lệnh về vấn đề được Quốc hội giao",
+     "answer": "left"
+    },
+    {
+     "text": "Làm luật và sửa đổi luật",
+     "answer": "right"
+    },
+    {
+     "text": "Ban bố tình trạng khẩn cấp",
+     "answer": "left"
+    },
+    {
+     "text": "Quyết định đại xá",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 70 và Điều 74."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ủy ban thường vụ Quốc hội là cơ quan {{thường trực}} của Quốc hội; thành viên không thể đồng thời là thành viên {{Chính phủ}}.",
+   "bank_extra": [
+    "tham mưu",
+    "Tòa án"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ủy ban thường vụ Quốc hội ra {{pháp lệnh}} về những vấn đề được Quốc hội giao; giải thích Hiến pháp, luật, pháp lệnh.",
+   "bank_extra": [
+    "nghị định",
+    "thông tư"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Một Bộ trưởng được đề cử làm Ủy viên Ủy ban thường vụ Quốc hội nhưng vẫn muốn giữ chức Bộ trưởng. Có được không?",
+   "options": [
+    "Không, thành viên Ủy ban thường vụ Quốc hội không thể đồng thời là thành viên Chính phủ",
+    "Có, nếu Thủ tướng đồng ý",
+    "Có, vì Bộ trưởng cũng là đại biểu Quốc hội",
+    "Có, trong nhiệm kỳ đầu"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 73.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 73 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày vị trí, cơ cấu và một số nhiệm vụ quan trọng của Ủy ban thường vụ Quốc hội.",
+   "model": "Cơ quan thường trực của Quốc hội; gồm Chủ tịch, các Phó Chủ tịch Quốc hội và Ủy viên; số thành viên do Quốc hội quyết định; không kiêm thành viên Chính phủ (Điều 73). Nhiệm vụ: chuẩn bị, triệu tập kỳ họp; ra pháp lệnh; giải thích Hiến pháp, luật, pháp lệnh; giám sát; đình chỉ văn bản trái Hiến pháp của Chính phủ và trình Quốc hội bãi bỏ; tổng động viên, tình trạng khẩn cấp (Điều 74).",
+   "keywords": [
+    "thường trực",
+    "pháp lệnh",
+    "giải thích",
+    "không kiêm thành viên Chính phủ"
+   ]
+  }
+ ]
+}

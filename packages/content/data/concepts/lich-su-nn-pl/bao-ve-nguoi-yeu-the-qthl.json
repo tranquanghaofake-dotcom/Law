@@ -1,0 +1,115 @@
+{
+ "id": "bao-ve-nguoi-yeu-the-qthl",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c6-trung-dai",
+ "term": "Bảo vệ người yếu thế và phụ nữ trong Quốc triều hình luật",
+ "definition": "Những người góa vợ, góa chồng, mồ côi, và người tàn tật nặng, nghèo khổ không có người thân thích để nương tựa, không thể tự mình mưu sống được, quan sở tại phải thu nuôi họ, mà lại bỏ rơi họ thì xử phạt đánh 50 roi, biếm một tư.",
+ "plain": "Quốc triều hình luật có nhiều quy định bảo vệ nhóm yếu thế, được giới nghiên cứu đánh giá là giá trị nhân văn nổi bật. Điều 295: quan sở tại phải thu nuôi người góa, mồ côi, tàn tật nặng không nơi nương tựa; bỏ rơi họ thì bị phạt. Về phụ nữ, Điều 308: chồng bỏ lửng vợ 5 tháng không đi lại (vợ có con thì 1 năm) thì MẤT VỢ: người vợ được giải phóng khỏi hôn nhân, trừ trường hợp chồng đi xa vì việc quan. Cùng với quyền thừa kế của con gái (Điều 388, 391), các quy định này cho thấy pháp luật Hậu Lê dù chịu ảnh hưởng Nho giáo vẫn có nét riêng tôn trọng phụ nữ.",
+ "example": "Người vợ có chồng bỏ đi biệt tăm 5 tháng (chưa có con) trình quan sở tại, có xã quan làm chứng: theo Điều 308 người chồng mất vợ, người vợ có thể lấy chồng khác. Nếu chồng cũ ngăn cản thì bị phạt.",
+ "source": {
+  "kind": "primary",
+  "cite": "Quốc triều hình luật, Điều 295 (bản dịch Nguyễn Ngọc Nhuận, Nguyễn Tá Nhí; bản điện tử, chưa đối chiếu bản in)",
+  "url": "https://luatduonggia.com/wp-content/uploads/2024/03/QUOC-TRIEU-HINH-LUAT.pdf"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "huong-hoa-qthl",
+  "chuoc-toi-gia-tre-qthl"
+ ],
+ "keywords": [
+  "quan sở tại phải thu nuôi",
+  "góa, mồ côi, tàn tật",
+  "bỏ lửng vợ 5 tháng",
+  "mất vợ"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 295, ai có trách nhiệm thu nuôi người góa, mồ côi, tàn tật nặng không nơi nương tựa?",
+   "options": [
+    "Quan sở tại",
+    "Người trưởng họ",
+    "Nhà chùa",
+    "Không ai"
+   ],
+   "answer": 0,
+   "explain": "Điều 295.",
+   "source": {
+    "kind": "primary",
+    "cite": "Quốc triều hình luật, Điều 295"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 308, chồng bỏ lửng vợ (chưa có con) bao lâu không đi lại thì mất vợ?",
+   "options": [
+    "5 tháng",
+    "1 năm",
+    "3 năm",
+    "1 tháng"
+   ],
+   "answer": 0,
+   "explain": "Điều 308: 5 tháng; nếu vợ đã có con thì hạn một năm.",
+   "source": {
+    "kind": "primary",
+    "cite": "Quốc triều hình luật, Điều 308"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Vợ chưa có con",
+   "right": "Vợ đã có con",
+   "cases": [
+    {
+     "text": "Chồng bỏ lửng 5 tháng thì mất vợ",
+     "answer": "left"
+    },
+    {
+     "text": "Cho hạn một năm",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 308."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quan sở tại phải thu nuôi họ, mà lại bỏ rơi họ thì xử phạt đánh {{50}} roi, biếm {{một tư}}.",
+   "bank_extra": [
+    "100",
+    "ba tư"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Phàm chồng đã bỏ lửng vợ {{5 tháng}} không đi lại thì mất vợ.",
+   "bank_extra": [
+    "3 năm",
+    "10 ngày"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo Điều 308, chồng đi xa vì việc quan quá 5 tháng cũng bị mất vợ.",
+   "answer": false,
+   "explain": "Sai. \"Vì việc quan phải đi xa thì không theo luật này\"."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu một số quy định thể hiện tính nhân đạo, bảo vệ người yếu thế và phụ nữ trong Quốc triều hình luật.",
+   "model": "Điều 295: quan sở tại phải thu nuôi người góa, mồ côi, tàn tật nặng không nơi nương tựa, bỏ rơi thì bị phạt 50 roi, biếm một tư. Điều 308: chồng bỏ lửng vợ 5 tháng (có con thì 1 năm) thì mất vợ, trừ đi việc quan. Điều 388, 391: con gái được thừa kế, giữ hương hỏa. Điều 16: chính sách với người già, trẻ em.",
+   "keywords": [
+    "quan sở tại thu nuôi",
+    "Điều 308",
+    "mất vợ",
+    "con gái thừa kế"
+   ]
+  }
+ ]
+}

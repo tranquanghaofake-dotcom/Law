@@ -1,0 +1,115 @@
+{
+ "id": "chinh-phu-vi-tri",
+ "subject": "hien-phap",
+ "chapter": "c9-chinh-phu",
+ "term": "Vị trí, chức năng của Chính phủ",
+ "definition": "Chính phủ là cơ quan hành chính nhà nước cao nhất của nước Cộng hoà xã hội chủ nghĩa Việt Nam, thực hiện quyền hành pháp, là cơ quan chấp hành của Quốc hội.",
+ "plain": "Ba tính chất: (1) cơ quan HÀNH CHÍNH nhà nước cao nhất (đứng đầu hệ thống hành chính đến Ủy ban nhân dân các cấp); (2) thực hiện quyền HÀNH PHÁP (Hiến pháp 2013 lần đầu ghi nhận rõ); (3) cơ quan CHẤP HÀNH của Quốc hội (tổ chức thi hành luật, nghị quyết của Quốc hội). Chính phủ chịu trách nhiệm trước Quốc hội; báo cáo công tác trước Quốc hội, Ủy ban thường vụ, Chủ tịch nước.",
+ "example": "Quốc hội thông qua Luật Giao thông; Chính phủ ban hành nghị định hướng dẫn, chỉ đạo các bộ, Ủy ban nhân dân tổ chức thực hiện: đó là vai trò chấp hành và hành pháp.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 94 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "vi-tri-quoc-hoi",
+  "co-cau-chinh-phu",
+  "thu-tuong-chinh-phu"
+ ],
+ "keywords": [
+  "hành chính nhà nước cao nhất",
+  "quyền hành pháp",
+  "cơ quan chấp hành của Quốc hội"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 94 Hiến pháp 2013, Chính phủ là gì?",
+   "options": [
+    "Cơ quan hành chính nhà nước cao nhất, thực hiện quyền hành pháp, là cơ quan chấp hành của Quốc hội",
+    "Cơ quan quyền lực nhà nước cao nhất",
+    "Cơ quan đứng đầu Nhà nước",
+    "Cơ quan thường trực của Quốc hội"
+   ],
+   "answer": 0,
+   "explain": "Điều 94.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 94 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chính phủ thực hiện quyền nào trong ba quyền lập pháp, hành pháp, tư pháp?",
+   "options": [
+    "Hành pháp",
+    "Lập pháp",
+    "Tư pháp",
+    "Lập hiến"
+   ],
+   "answer": 0,
+   "explain": "Điều 94; khoản 3 Điều 2.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 94 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Cơ quan chấp hành của Quốc hội",
+   "right": "Cơ quan hành chính nhà nước cao nhất",
+   "cases": [
+    {
+     "text": "Tổ chức thi hành luật, nghị quyết của Quốc hội",
+     "answer": "left"
+    },
+    {
+     "text": "Lãnh đạo công tác của Ủy ban nhân dân các cấp",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 94, 96."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chính phủ là cơ quan {{hành chính nhà nước}} cao nhất, thực hiện quyền {{hành pháp}}, là cơ quan chấp hành của Quốc hội.",
+   "bank_extra": [
+    "quyền lực nhà nước",
+    "tư pháp"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chính phủ chịu trách nhiệm trước {{Quốc hội}} và báo cáo công tác trước Quốc hội, Ủy ban thường vụ Quốc hội, Chủ tịch nước.",
+   "bank_extra": [
+    "Chủ tịch nước",
+    "Đảng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chính phủ là cơ quan chấp hành của Chủ tịch nước.",
+   "answer": false,
+   "explain": "Sai. Điều 94: Chính phủ là cơ quan chấp hành của Quốc hội."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày vị trí, chức năng của Chính phủ theo Điều 94 Hiến pháp 2013.",
+   "model": "Chính phủ là cơ quan hành chính nhà nước cao nhất, thực hiện quyền hành pháp, là cơ quan chấp hành của Quốc hội; chịu trách nhiệm trước Quốc hội; báo cáo công tác trước Quốc hội, Ủy ban thường vụ, Chủ tịch nước.",
+   "keywords": [
+    "hành chính nhà nước cao nhất",
+    "hành pháp",
+    "chấp hành của Quốc hội",
+    "chịu trách nhiệm"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,125 @@
+{
+ "id": "tu-doanh-chung-khoan",
+ "subject": "chung-khoan",
+ "chapter": "c8-kinh-doanh-chung-khoan",
+ "term": "Tự doanh chứng khoán",
+ "definition": "Tự doanh chứng khoán là việc công ty chứng khoán mua, bán chứng khoán cho chính mình.",
+ "plain": "Tự doanh = công ty chứng khoán đầu tư bằng tiền của mình, trên tài khoản tự doanh, tự chịu lãi lỗ. Vì dễ xung đột lợi ích với khách hàng, luật bắt buộc ưu tiên lệnh của khách trước lệnh tự doanh (khoản 5 Điều 89) và chỉ cấp tự doanh cho công ty đã có môi giới. Công ty có tự doanh còn được đầu tư, góp vốn, phát hành, chào bán các sản phẩm tài chính (khoản 2 Điều 86).",
+ "example": "Bộ phận tự doanh của công ty chứng khoán Y mua 2 triệu cổ phiếu ngân hàng bằng vốn của Y; nếu giá giảm, Y chịu lỗ, khách hàng không liên quan.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 30 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "moi-gioi-chung-khoan",
+  "bao-lanh-phat-hanh-chung-khoan",
+  "nghia-vu-cong-ty-chung-khoan"
+ ],
+ "keywords": [
+  "cho chính mình",
+  "tài khoản tự doanh",
+  "ưu tiên lệnh khách hàng"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 30 Điều 4, tự doanh chứng khoán là gì?",
+   "options": [
+    "Công ty chứng khoán mua, bán chứng khoán cho chính mình",
+    "Làm trung gian mua, bán cho khách",
+    "Quản lý tài sản theo ủy thác",
+    "Cam kết mua chứng khoán phát hành để bán lại"
+   ],
+   "answer": 0,
+   "explain": "Khoản 30 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 30 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Công ty chứng khoán có nghiệp vụ tự doanh được giao dịch trên tài khoản nào?",
+   "options": [
+    "Tài khoản tự doanh chứng khoán",
+    "Tài khoản của khách hàng",
+    "Tài khoản ký quỹ của khách hàng",
+    "Tài khoản của Sở giao dịch"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 86.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 86 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tự doanh",
+   "right": "Bảo lãnh phát hành",
+   "cases": [
+    {
+     "text": "Mua, bán chứng khoán cho chính mình trên thị trường",
+     "answer": "left"
+    },
+    {
+     "text": "Cam kết với tổ chức phát hành nhận mua chứng khoán để bán lại hoặc phân phối",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 30, 31 Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tự doanh chứng khoán là việc {{công ty chứng khoán}} mua, bán chứng khoán cho {{chính mình}}.",
+   "bank_extra": [
+    "nhà đầu tư cá nhân",
+    "khách hàng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công ty chứng khoán chỉ được cấp phép nghiệp vụ bảo lãnh phát hành khi đã được cấp phép nghiệp vụ {{tự doanh}}.",
+   "bank_extra": [
+    "môi giới",
+    "tư vấn"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Nhân viên công ty chứng khoán biết khách hàng lớn sắp đặt lệnh mua mạnh mã X, liền cho bộ phận tự doanh mua X trước để hưởng chênh lệch. Vi phạm gì?",
+   "options": [
+    "Vi phạm nghĩa vụ ưu tiên lệnh khách hàng và ngăn xung đột lợi ích (khoản 1, 5 Điều 89)",
+    "Không vi phạm vì tự doanh là hợp pháp",
+    "Chỉ vi phạm nội quy công ty",
+    "Vi phạm quy định về mệnh giá"
+   ],
+   "answer": 0,
+   "explain": "Hành vi \"chạy trước lệnh\" khách hàng.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 5 Điều 89 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Định nghĩa tự doanh chứng khoán và các ràng buộc pháp lý đối với nghiệp vụ này.",
+   "model": "Tự doanh là việc công ty chứng khoán mua, bán chứng khoán cho chính mình (khoản 30 Điều 4), giao dịch trên tài khoản tự doanh (khoản 2 Điều 86). Ràng buộc: chỉ cấp khi đã có môi giới (Điều 72); ưu tiên lệnh khách hàng; kiểm soát xung đột lợi ích (Điều 89).",
+   "keywords": [
+    "chính mình",
+    "tài khoản tự doanh",
+    "môi giới",
+    "ưu tiên lệnh"
+   ]
+  }
+ ]
+}

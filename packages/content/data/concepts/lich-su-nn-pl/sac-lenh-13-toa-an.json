@@ -1,0 +1,117 @@
+{
+ "id": "sac-lenh-13-toa-an",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c8-hien-dai",
+ "term": "Sắc lệnh 13 (1946): tổ chức tòa án",
+ "definition": "Ban tư pháp xã không có quyền tịch thu tài sản của ai. Cũng không có quyền bắt bớ, giam giữ ai trừ khi có trát nã của một thẩm phán, hay khi thấy người phạm tội quả tang. (…) Về dân sự và thương sự, Chánh án xử một mình. Những khi xử các việc tiểu hình, phải có thêm hai viên Phụ thẩm Nhân dân góp ý kiến.",
+ "plain": "Sắc lệnh 13 tổ chức hệ thống tòa án đầu tiên của nước Việt Nam dân chủ cộng hòa: BAN TƯ PHÁP XÃ (hòa giải, phạt vi cảnh), TÒA ÁN SƠ CẤP (ở quận, huyện, phủ, châu), TÒA ÁN ĐỆ NHỊ CẤP (ở tỉnh và các thành phố lớn), TÒA THƯỢNG THẨM (xử phúc thẩm). Điểm mới: có PHỤ THẨM NHÂN DÂN tham gia xét xử (tiền thân của Hội thẩm nhân dân hiện nay, Điều 103 Hiến pháp 2013). Có bảo đảm quyền con người: ban tư pháp xã không được bắt, giam người trừ khi có trát của thẩm phán hoặc quả tang, bắt phải giải lên tòa trong 24 giờ.",
+ "example": "Năm 1946, một vụ trộm vặt (tiểu hình) ở tòa đệ nhị cấp được xử bởi Chánh án cùng hai Phụ thẩm nhân dân; còn vụ tranh chấp dân sự thì Chánh án xử một mình.",
+ "source": {
+  "kind": "primary",
+  "cite": "Sắc lệnh số 13 ngày 24/01/1946 tổ chức các toà án và các ngạch thẩm phán, Điều thứ 4 và Điều thứ 17",
+  "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Sac-lenh-13-to-chuc-toa-an-ngach-tham-phan-35940.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "sac-lenh-63-chinh-quyen",
+  "sac-lenh-47-luat-cu"
+ ],
+ "keywords": [
+  "24/01/1946",
+  "ban tư pháp xã",
+  "tòa sơ cấp, đệ nhị cấp",
+  "Phụ thẩm nhân dân",
+  "không bắt bớ trừ có trát hoặc quả tang"
+ ],
+ "note": "Văn bản đã hết hiệu lực; học để hiểu lịch sử pháp luật.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều thứ 17 Sắc lệnh 13 (1946), khi tòa đệ nhị cấp xử việc tiểu hình thì có thêm ai tham gia?",
+   "options": [
+    "Hai viên Phụ thẩm nhân dân",
+    "Một Kiểm sát viên",
+    "Hội đồng nhân dân tỉnh",
+    "Ủy ban hành chính xã"
+   ],
+   "answer": 0,
+   "explain": "Điều thứ 17 Sắc lệnh 13.",
+   "source": {
+    "kind": "primary",
+    "cite": "Sắc lệnh 13 ngày 24/01/1946, Điều thứ 17"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều thứ 4 Sắc lệnh 13, ban tư pháp xã chỉ được bắt giữ người khi nào?",
+   "options": [
+    "Có trát nã của thẩm phán hoặc người phạm tội quả tang",
+    "Khi Chủ tịch xã quyết định",
+    "Khi có đơn tố cáo",
+    "Bất cứ lúc nào"
+   ],
+   "answer": 0,
+   "explain": "Điều thứ 4 Sắc lệnh 13.",
+   "source": {
+    "kind": "primary",
+    "cite": "Sắc lệnh 13, Điều thứ 4"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tòa án sơ cấp (1946)",
+   "right": "Tòa án đệ nhị cấp (1946)",
+   "cases": [
+    {
+     "text": "Đặt ở mỗi quận (phủ, huyện, châu)",
+     "answer": "left"
+    },
+    {
+     "text": "Đặt ở mỗi tỉnh và Hà Nội, Hải Phòng, Sài Gòn - Chợ Lớn",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều thứ 7, 12 Sắc lệnh 13."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Về dân sự và thương sự, Chánh án xử {{một mình}}. Những khi xử các việc tiểu hình, phải có thêm hai viên {{Phụ thẩm Nhân dân}} góp ý kiến.",
+   "bank_extra": [
+    "tập thể",
+    "Kiểm sát viên"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ở mỗi quận (phủ, huyện, châu) có một Toà án {{sơ cấp}}.",
+   "bank_extra": [
+    "đệ nhị cấp",
+    "thượng thẩm"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Phụ thẩm nhân dân theo Sắc lệnh 13 năm 1946 là tiền thân của Hội thẩm nhân dân hiện nay.",
+   "answer": true,
+   "explain": "Đúng theo cách đánh giá phổ biến; Hiến pháp 2013 (Điều 103) quy định Hội thẩm tham gia xét xử sơ thẩm."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày tổ chức tòa án theo Sắc lệnh 13 năm 1946.",
+   "model": "Ban tư pháp xã (hòa giải, phạt vi cảnh, không được bắt giữ trừ có trát hoặc quả tang); tòa án sơ cấp ở quận, huyện; tòa án đệ nhị cấp ở tỉnh và thành phố lớn; tòa thượng thẩm xử phúc thẩm; có Phụ thẩm nhân dân tham gia xử việc hình.",
+   "keywords": [
+    "ban tư pháp xã",
+    "sơ cấp",
+    "đệ nhị cấp",
+    "Phụ thẩm nhân dân"
+   ]
+  }
+ ]
+}

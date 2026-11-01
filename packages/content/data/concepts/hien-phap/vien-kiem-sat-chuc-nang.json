@@ -1,0 +1,118 @@
+{
+ "id": "vien-kiem-sat-chuc-nang",
+ "subject": "hien-phap",
+ "chapter": "c10-toa-an-vien-kiem-sat",
+ "term": "Viện kiểm sát nhân dân: chức năng và nhiệm vụ",
+ "definition": "Viện kiểm sát nhân dân thực hành quyền công tố, kiểm sát hoạt động tư pháp. (…) Viện kiểm sát nhân dân có nhiệm vụ bảo vệ pháp luật, bảo vệ quyền con người, quyền công dân, bảo vệ chế độ xã hội chủ nghĩa, bảo vệ lợi ích của Nhà nước, quyền và lợi ích hợp pháp của tổ chức, cá nhân, góp phần bảo đảm pháp luật được chấp hành nghiêm chỉnh và thống nhất.",
+ "plain": "Hai chức năng: (1) THỰC HÀNH QUYỀN CÔNG TỐ (nhân danh Nhà nước buộc tội người phạm tội: phê chuẩn quyết định khởi tố, truy tố, giữ quyền công tố tại phiên tòa); (2) KIỂM SÁT HOẠT ĐỘNG TƯ PHÁP (kiểm tra tính hợp pháp của điều tra, xét xử, thi hành án…). Nhiệm vụ trung tâm: BẢO VỆ PHÁP LUẬT (Tòa án: bảo vệ công lý). Viện kiểm sát không xét xử.",
+ "example": "Kiểm sát viên đọc cáo trạng tại phiên tòa hình sự (thực hành quyền công tố) và kiểm sát việc Tòa án tuân thủ thủ tục tố tụng (kiểm sát hoạt động tư pháp).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 3 Điều 107 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "toa-an-vi-tri",
+  "lanh-dao-tap-trung-vien-kiem-sat"
+ ],
+ "keywords": [
+  "thực hành quyền công tố",
+  "kiểm sát hoạt động tư pháp",
+  "bảo vệ pháp luật"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chức năng của Viện kiểm sát nhân dân theo khoản 1 Điều 107 là gì?",
+   "options": [
+    "Thực hành quyền công tố, kiểm sát hoạt động tư pháp",
+    "Xét xử các vụ án",
+    "Điều tra mọi tội phạm",
+    "Quản lý hành chính tư pháp"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 107.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 107 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nhiệm vụ đầu tiên của Viện kiểm sát nêu tại khoản 3 Điều 107 là gì?",
+   "options": [
+    "Bảo vệ pháp luật",
+    "Bảo vệ công lý",
+    "Bảo vệ an ninh quốc gia",
+    "Bảo vệ tài sản công"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 107.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 107 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thực hành quyền công tố",
+   "right": "Kiểm sát hoạt động tư pháp",
+   "cases": [
+    {
+     "text": "Đọc cáo trạng, buộc tội bị cáo tại phiên tòa",
+     "answer": "left"
+    },
+    {
+     "text": "Kiểm tra tính hợp pháp của việc tạm giữ, tạm giam",
+     "answer": "right"
+    },
+    {
+     "text": "Quyết định truy tố bị can ra trước Tòa án",
+     "answer": "left"
+    }
+   ],
+   "explain": "Khoản 1 Điều 107."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Viện kiểm sát nhân dân thực hành quyền {{công tố}}, kiểm sát hoạt động {{tư pháp}}.",
+   "bank_extra": [
+    "tư pháp",
+    "hành chính"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Viện kiểm sát nhân dân có nhiệm vụ bảo vệ {{pháp luật}}, góp phần bảo đảm pháp luật được chấp hành nghiêm chỉnh và thống nhất.",
+   "bank_extra": [
+    "công lý",
+    "Đảng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Viện kiểm sát nhân dân có quyền ra bản án đối với bị cáo.",
+   "answer": false,
+   "explain": "Sai. Xét xử thuộc Tòa án (Điều 102); Viện kiểm sát thực hành quyền công tố và kiểm sát hoạt động tư pháp (Điều 107)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày chức năng và nhiệm vụ của Viện kiểm sát nhân dân theo Điều 107.",
+   "model": "Chức năng: thực hành quyền công tố, kiểm sát hoạt động tư pháp (khoản 1). Hệ thống gồm Viện kiểm sát nhân dân tối cao và các Viện kiểm sát khác do luật định (khoản 2). Nhiệm vụ: bảo vệ pháp luật, quyền con người, quyền công dân, chế độ xã hội chủ nghĩa, lợi ích Nhà nước, quyền và lợi ích hợp pháp của tổ chức, cá nhân, góp phần bảo đảm pháp luật được chấp hành nghiêm chỉnh, thống nhất (khoản 3).",
+   "keywords": [
+    "công tố",
+    "kiểm sát hoạt động tư pháp",
+    "bảo vệ pháp luật",
+    "thống nhất"
+   ]
+  }
+ ]
+}

@@ -86,13 +86,15 @@ export const conceptSchema = z.object({
   checked: dateYmd,
   confusables: z.array(slug),
   keywords: z.array(z.string().min(1)),
+  // Ghi chú khi luật hiện hành đã khác giáo trình (giáo trình là kim chỉ nam, luật mới ghi kèm).
+  note: z.string().min(1).optional(),
   items: z.array(itemSchema).refine((items) => items.some((i) => i.level === 1), { message: 'thiếu item bậc 1 (mcq)' })
     .refine((items) => items.some((i) => i.level === 3), { message: 'thiếu item bậc 3 (cloze)' })
     .refine((items) => items.some((i) => i.level === 4), { message: 'thiếu item bậc 4 (case hoặc truefalse)' }),
 });
 
 export const lessonSchema = z.object({ id: slug, title: z.string().min(1), concepts: z.array(slug).min(1) });
-export const chapterSchema = z.object({ id: slug, title: z.string().min(1), lessons: z.array(lessonSchema).min(1) });
+export const chapterSchema = z.object({ id: slug, title: z.string().min(1), advanced: z.boolean().optional(), lessons: z.array(lessonSchema).min(1) });
 export const subjectSchema = z.object({ id: slug, title: z.string().min(1), short: z.string().min(1), chapters: z.array(chapterSchema).min(1) });
 
 export const quizQuestionSchema = z.object({

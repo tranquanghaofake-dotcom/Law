@@ -1,0 +1,116 @@
+{
+ "id": "lien-bang-dong-duong",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c7-can-dai",
+ "term": "Liên bang Đông Dương và bộ máy cai trị của Pháp",
+ "definition": "Năm 1887, Pháp thành lập Liên bang Đông Dương, đứng đầu là Toàn quyền Đông Dương; ở Việt Nam, Nam Kỳ do Thống đốc, Bắc Kỳ do Thống sứ, Trung Kỳ do Khâm sứ người Pháp đứng đầu.",
+ "plain": "LIÊN BANG ĐÔNG DƯƠNG (thành lập năm 1887; Lào sáp nhập sau) gồm ba kỳ của Việt Nam và Campuchia, Lào. TOÀN QUYỀN ĐÔNG DƯƠNG là người đứng đầu, nắm quyền hành pháp và lập quy, chịu trách nhiệm trước chính phủ Pháp. Ở từng kỳ: THỐNG ĐỐC Nam Kỳ (thuộc địa), THỐNG SỨ Bắc Kỳ, KHÂM SỨ Trung Kỳ (giám sát triều Nguyễn). Dưới là bộ máy cấp tỉnh do Công sứ (ở xứ bảo hộ) hoặc Chủ tỉnh (ở Nam Kỳ) người Pháp đứng đầu, kết hợp với quan lại người Việt. Bộ máy kết hợp cai trị trực tiếp và gián tiếp, mọi quyền lực thực tế thuộc người Pháp. Sắc lệnh 47 năm 1945 còn nhắc \"nghị định của nguyên Toàn quyền Đông Dương\", \"nguyên Thống sứ Bắc kỳ\": đây là các nguồn luật của thời kỳ này.",
+ "example": "Bộ Dân luật Bắc kỳ được ban bố bằng nghị định của Thống sứ Bắc kỳ (30/3/1931) và nghị định của Toàn quyền Đông Dương (1/4/1931): cho thấy Toàn quyền, Thống sứ có quyền ban hành văn bản có giá trị luật.",
+ "source": {
+  "kind": "textbook",
+  "cite": "Giáo trình Lịch sử nhà nước và pháp luật Việt Nam, Trường ĐH Luật Hà Nội 2025, Chương 7 — tóm lược quan điểm phổ biến, chưa đối chiếu nguyên văn"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "che-do-bao-ho-ba-ky",
+  "phap-luat-thoi-phap-thuoc-dan-luat"
+ ],
+ "keywords": [
+  "1887",
+  "Toàn quyền Đông Dương",
+  "Thống đốc Nam Kỳ",
+  "Thống sứ Bắc Kỳ",
+  "Khâm sứ Trung Kỳ"
+ ],
+ "note": "Thẻ dạng tóm lược giáo trình, chưa có trích nguyên văn Hiệp ước 1884 hay sắc lệnh của chính quyền Pháp; cần đối chiếu sách in.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người đứng đầu Liên bang Đông Dương là ai?",
+   "options": [
+    "Toàn quyền Đông Dương",
+    "Khâm sứ Trung Kỳ",
+    "Thống đốc Nam Kỳ",
+    "Vua triều Nguyễn"
+   ],
+   "answer": 0,
+   "explain": "Theo trình bày phổ biến của giáo trình.",
+   "source": {
+    "kind": "textbook",
+    "cite": "Giáo trình Lịch sử nhà nước và pháp luật Việt Nam, Trường ĐH Luật Hà Nội 2025, Chương 7 — tóm lược quan điểm phổ biến, chưa đối chiếu nguyên văn"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người Pháp đứng đầu bộ máy cai trị ở Trung Kỳ có chức danh gì?",
+   "options": [
+    "Khâm sứ",
+    "Thống sứ",
+    "Thống đốc",
+    "Công sứ"
+   ],
+   "answer": 0,
+   "explain": "Trung Kỳ: Khâm sứ; Bắc Kỳ: Thống sứ; Nam Kỳ: Thống đốc.",
+   "source": {
+    "kind": "textbook",
+    "cite": "Giáo trình Lịch sử nhà nước và pháp luật Việt Nam, Trường ĐH Luật Hà Nội 2025, Chương 7 — tóm lược quan điểm phổ biến, chưa đối chiếu nguyên văn"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Bắc Kỳ",
+   "right": "Nam Kỳ",
+   "cases": [
+    {
+     "text": "Thống sứ đứng đầu",
+     "answer": "left"
+    },
+    {
+     "text": "Thống đốc đứng đầu",
+     "answer": "right"
+    }
+   ],
+   "explain": "Theo trình bày phổ biến của giáo trình."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đứng đầu Liên bang Đông Dương là {{Toàn quyền}}; đứng đầu Trung Kỳ là {{Khâm sứ}}.",
+   "bank_extra": [
+    "Thống đốc",
+    "Tổng đốc"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Liên bang Đông Dương được thành lập năm {{1887}}.",
+   "bank_extra": [
+    "1884",
+    "1945"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thời Pháp thuộc, quyền lực thực tế ở Trung Kỳ hoàn toàn thuộc vua Nguyễn.",
+   "answer": false,
+   "explain": "Sai. Triều Nguyễn tồn tại nhưng quyền lực thực tế thuộc Khâm sứ và bộ máy Pháp."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày tổ chức bộ máy cai trị của Pháp ở Đông Dương.",
+   "model": "Năm 1887 lập Liên bang Đông Dương, đứng đầu là Toàn quyền; ở Việt Nam: Thống đốc Nam Kỳ, Thống sứ Bắc Kỳ, Khâm sứ Trung Kỳ; cấp tỉnh có Công sứ hoặc Chủ tỉnh người Pháp, kết hợp quan lại người Việt; Toàn quyền, Thống sứ ban hành nghị định có giá trị luật; quyền lực thực tế thuộc người Pháp.",
+   "keywords": [
+    "1887",
+    "Toàn quyền",
+    "Thống sứ",
+    "Khâm sứ"
+   ]
+  }
+ ]
+}

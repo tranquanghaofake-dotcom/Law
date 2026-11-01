@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { conceptSchema } from '../src/schema';
+import { chapterSchema, conceptSchema } from '../src/schema';
 
 const base = {
   id: 'tai-san', subject: 'dan-su', chapter: 'tai-san', term: 'Tài sản',
@@ -35,5 +35,19 @@ describe('conceptSchema', () => {
   it('từ chối khái niệm thiếu item bậc 3', () => {
     const bad = { ...base, items: [base.items[0], base.items[2]] };
     expect(conceptSchema.safeParse(bad).success).toBe(false);
+  });
+});
+
+describe('mở rộng cho bộ đề theo giáo trình', () => {
+  it('khái niệm chấp nhận trường note (cập nhật luật so với giáo trình)', () => {
+    expect(conceptSchema.safeParse({ ...base, note: 'Luật 56/2024/QH15 đã sửa điểm này.' }).success).toBe(true);
+  });
+  it('từ chối note rỗng', () => {
+    expect(conceptSchema.safeParse({ ...base, note: '' }).success).toBe(false);
+  });
+  it('chương chấp nhận cờ advanced (mục Nâng cao, ngoài giáo trình)', () => {
+    const ch = { id: 'nang-cao', title: 'Nâng cao', advanced: true, lessons: [{ id: 'nc-1', title: 'x', concepts: ['a'] }] };
+    expect(chapterSchema.safeParse(ch).success).toBe(true);
+    expect(chapterSchema.safeParse({ ...ch, advanced: 'có' }).success).toBe(false);
   });
 });

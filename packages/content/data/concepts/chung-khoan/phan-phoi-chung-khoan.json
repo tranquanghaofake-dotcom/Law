@@ -1,0 +1,129 @@
+{
+ "id": "phan-phoi-chung-khoan",
+ "subject": "chung-khoan",
+ "chapter": "c2-chao-ban",
+ "term": "Phân phối chứng khoán chào bán ra công chúng",
+ "definition": "Tổ chức phát hành, tổ chức bảo lãnh phát hành hoặc tổ chức đại lý phải phân phối chứng khoán công bằng, công khai và bảo đảm thời hạn đăng ký mua chứng khoán cho nhà đầu tư tối thiểu là 20 ngày; trừ trường hợp chứng khoán chào bán là chứng quyền có bảo đảm, thời hạn này phải được ghi trong Bản thông báo phát hành.",
+ "plain": "Sau khi có Giấy chứng nhận và đã công bố, đợt chào bán bước vào phân phối. Các mốc cần nhớ: đăng ký mua tối thiểu 20 ngày; hoàn thành phân phối trong 90 ngày (gia hạn tối đa 30 ngày); tiền mua để trong tài khoản phong tỏa; báo cáo kết quả trong 10 ngày; giao chứng khoán cho người mua trong 30 ngày. Nếu đăng ký mua vượt số được phép thì phân bổ theo tỷ lệ đăng ký.",
+ "example": "Đợt IPO 10 triệu cổ phiếu có nhà đầu tư đăng ký mua 20 triệu: mỗi người chỉ được phân bổ 50% số đăng ký, không được ưu tiên người quen của ban lãnh đạo.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 2 Điều 26 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "dang-ky-chao-ban-ra-cong-chung",
+  "ban-cao-bach"
+ ],
+ "keywords": [
+  "20 ngày",
+  "90 ngày",
+  "tài khoản phong tỏa",
+  "phân bổ theo tỷ lệ"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thời hạn đăng ký mua chứng khoán cho nhà đầu tư (trừ chứng quyền có bảo đảm) tối thiểu là bao lâu?",
+   "options": [
+    "20 ngày",
+    "10 ngày",
+    "30 ngày",
+    "90 ngày"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 26.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 26 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tổ chức phát hành phải hoàn thành phân phối chứng khoán trong thời hạn nào kể từ ngày Giấy chứng nhận có hiệu lực?",
+   "options": [
+    "90 ngày, có thể được gia hạn tối đa 30 ngày",
+    "30 ngày, không được gia hạn",
+    "60 ngày, gia hạn tối đa 60 ngày",
+    "12 tháng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 26.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 26 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Phân phối",
+   "right": "Sau phân phối",
+   "cases": [
+    {
+     "text": "Tiền mua chứng khoán chuyển vào tài khoản phong tỏa",
+     "answer": "left"
+    },
+    {
+     "text": "Báo cáo kết quả đợt chào bán cho Ủy ban trong 10 ngày",
+     "answer": "right"
+    },
+    {
+     "text": "Chuyển giao chứng khoán cho người mua trong 30 ngày",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 3, 5, 6 Điều 26."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tổ chức phát hành phải hoàn thành việc phân phối chứng khoán trong thời hạn {{90 ngày}}; Ủy ban Chứng khoán Nhà nước có thể gia hạn nhưng tối đa không quá {{30 ngày}}.",
+   "bank_extra": [
+    "60 ngày",
+    "90 ngày nữa"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tiền mua chứng khoán phải được chuyển vào tài khoản {{phong tỏa}} mở tại ngân hàng cho đến khi hoàn tất đợt chào bán.",
+   "bank_extra": [
+    "thanh toán",
+    "của tổng giám đốc"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Đợt chào bán 1 triệu cổ phiếu có 4 triệu cổ phiếu được đăng ký mua. Nhà đầu tư K đăng ký 40.000 cổ phiếu. K được phân bổ bao nhiêu?",
+   "options": [
+    "10.000 cổ phiếu (theo tỷ lệ 1/4)",
+    "40.000 cổ phiếu vì đăng ký sớm",
+    "0 vì phải bốc thăm",
+    "Tùy tổ chức phát hành quyết định"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 26: đăng ký vượt số được phép thì phân phối tương ứng tỷ lệ đăng ký mua của từng nhà đầu tư: 1/4 × 40.000 = 10.000.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 26 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các mốc thời hạn trong phân phối chứng khoán chào bán ra công chúng theo Điều 26.",
+   "model": "Đăng ký mua tối thiểu 20 ngày; hoàn thành phân phối trong 90 ngày kể từ khi Giấy chứng nhận có hiệu lực, gia hạn tối đa 30 ngày; các đợt cách nhau không quá 12 tháng; báo cáo kết quả trong 10 ngày; chuyển giao chứng khoán trong 30 ngày; tiền để trong tài khoản phong tỏa.",
+   "keywords": [
+    "20 ngày",
+    "90 ngày",
+    "10 ngày",
+    "tài khoản phong tỏa"
+   ]
+  }
+ ]
+}

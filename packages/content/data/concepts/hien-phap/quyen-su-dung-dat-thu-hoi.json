@@ -1,0 +1,116 @@
+{
+ "id": "quyen-su-dung-dat-thu-hoi",
+ "subject": "hien-phap",
+ "chapter": "nang-cao",
+ "term": "Quyền sử dụng đất, thu hồi và trưng dụng đất",
+ "definition": "Tổ chức, cá nhân được Nhà nước giao đất, cho thuê đất, công nhận quyền sử dụng đất. Người sử dụng đất được chuyển quyền sử dụng đất, thực hiện các quyền và nghĩa vụ theo quy định của luật. Quyền sử dụng đất được pháp luật bảo hộ. Nhà nước thu hồi đất do tổ chức, cá nhân đang sử dụng trong trường hợp thật cần thiết do luật định vì mục đích quốc phòng, an ninh; phát triển kinh tế - xã hội vì lợi ích quốc gia, công cộng. Việc thu hồi đất phải công khai, minh bạch và được bồi thường theo quy định của pháp luật.",
+ "plain": "Ba hình thức xác lập quyền sử dụng đất: GIAO đất, CHO THUÊ đất, CÔNG NHẬN quyền sử dụng đất. Người sử dụng được CHUYỂN quyền sử dụng đất (khác hẳn Luật Đất đai 1987 cấm mua bán đất). THU HỒI đất chỉ khi \"thật cần thiết do luật định\", vì quốc phòng, an ninh hoặc phát triển kinh tế – xã hội vì lợi ích quốc gia, công cộng; phải công khai, minh bạch, BỒI THƯỜNG. TRƯNG DỤNG đất (khoản 4) là sử dụng có thời hạn trong tình huống quốc phòng, khẩn cấp, thiên tai, không phải thu hồi.",
+ "example": "Nhà nước thu hồi đất của một hộ dân để làm đường cao tốc: phải là trường hợp luật định, công khai, minh bạch và bồi thường. Còn khi lũ lụt, chính quyền tạm trưng dụng đất làm nơi sơ tán là trưng dụng, không phải thu hồi.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 2, khoản 3 Điều 54 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "so-huu-toan-dan",
+  "kinh-te-thi-truong-dinh-huong-xhcn"
+ ],
+ "keywords": [
+  "giao, cho thuê, công nhận",
+  "chuyển quyền sử dụng đất",
+  "thu hồi: thật cần thiết, luật định, bồi thường",
+  "trưng dụng"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 3 Điều 54, việc thu hồi đất phải đáp ứng yêu cầu gì?",
+   "options": [
+    "Công khai, minh bạch và được bồi thường theo quy định của pháp luật",
+    "Chỉ cần quyết định của Chủ tịch UBND xã",
+    "Không cần bồi thường nếu vì lợi ích công cộng",
+    "Phải có sự đồng ý của mọi hộ dân"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 54.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 54 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 2 Điều 54, tổ chức, cá nhân có quyền sử dụng đất qua những hình thức nào?",
+   "options": [
+    "Được Nhà nước giao đất, cho thuê đất, công nhận quyền sử dụng đất",
+    "Mua đất từ Nhà nước như mua tài sản",
+    "Chiếm hữu ngay tình đủ 30 năm",
+    "Thừa kế quyền sở hữu đất"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 54.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 54 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thu hồi đất",
+   "right": "Trưng dụng đất",
+   "cases": [
+    {
+     "text": "Vì phát triển kinh tế - xã hội vì lợi ích quốc gia, công cộng, có bồi thường",
+     "answer": "left"
+    },
+    {
+     "text": "Trong tình trạng chiến tranh, khẩn cấp, phòng, chống thiên tai",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 3, 4 Điều 54."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người sử dụng đất được {{chuyển quyền sử dụng đất}}, thực hiện các quyền và nghĩa vụ theo quy định của luật. Quyền sử dụng đất được pháp luật {{bảo hộ}}.",
+   "bank_extra": [
+    "bán quyền sở hữu",
+    "hạn chế"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhà nước thu hồi đất trong trường hợp {{thật cần thiết}} do luật định.",
+   "bank_extra": [
+    "có đơn đề nghị",
+    "tùy nghi"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo Hiến pháp 2013, Nhà nước có thể thu hồi đất vì bất kỳ mục đích nào mà không phải bồi thường.",
+   "answer": false,
+   "explain": "Sai. Chỉ trong trường hợp thật cần thiết do luật định, vì mục đích được liệt kê, phải công khai, minh bạch, bồi thường (khoản 3 Điều 54)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quy định của Hiến pháp 2013 về quyền sử dụng đất và thu hồi đất.",
+   "model": "Đất đai là tài nguyên đặc biệt (khoản 1); giao, cho thuê, công nhận quyền sử dụng đất, người sử dụng được chuyển quyền, quyền sử dụng đất được bảo hộ (khoản 2); thu hồi đất khi thật cần thiết do luật định vì quốc phòng, an ninh, phát triển kinh tế - xã hội vì lợi ích quốc gia, công cộng, công khai, minh bạch, bồi thường (khoản 3); trưng dụng trong tình huống đặc biệt (khoản 4).",
+   "keywords": [
+    "giao, cho thuê",
+    "chuyển quyền",
+    "thu hồi",
+    "bồi thường",
+    "trưng dụng"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,117 @@
+{
+ "id": "toi-pham-1985",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c8-hien-dai",
+ "term": "Khái niệm và phân loại tội phạm trong Bộ luật Hình sự 1985",
+ "definition": "1- Tội phạm là hành vi nguy hiểm cho xã hội được quy định trong Bộ luật hình sự, do người có năng lực trách nhiệm hình sự thực hiện một cách cố ý hoặc vô ý (…). 2- Tội phạm nghiêm trọng là tội phạm gây nguy hại lớn cho xã hội mà mức cao nhất của khung hình phạt đối với tội ấy là trên năm năm tù, tù chung thân hoặc tử hình. Những tội phạm khác là tội phạm ít nghiêm trọng.",
+ "plain": "Điều 8 nêu 4 dấu hiệu của tội phạm: (1) hành vi NGUY HIỂM cho xã hội; (2) được QUY ĐỊNH trong Bộ luật hình sự; (3) do người có NĂNG LỰC trách nhiệm hình sự thực hiện; (4) có LỖI (cố ý hoặc vô ý). Phân loại thành HAI loại: tội NGHIÊM TRỌNG (khung cao nhất trên 5 năm tù, chung thân hoặc tử hình) và tội ÍT NGHIÊM TRỌNG. Pháp luật hiện hành (Điều 9 Bộ luật Hình sự 2015) chia BỐN loại: ít nghiêm trọng, nghiêm trọng, rất nghiêm trọng, đặc biệt nghiêm trọng.",
+ "example": "Một tội có khung hình phạt cao nhất là 3 năm tù: theo BLHS 1985 là tội ít nghiêm trọng; theo BLHS 2015 cũng là tội ít nghiêm trọng (khung cao nhất đến 3 năm tù).",
+ "source": {
+  "kind": "primary",
+  "cite": "Bộ luật Hình sự 1985, Điều 8",
+  "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Bo-luat-Hinh-su-1985-17-LCT-HDNN7-37003.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "blhs-1985",
+  "thap-ac-qthl"
+ ],
+ "keywords": [
+  "hành vi nguy hiểm cho xã hội",
+  "năng lực trách nhiệm hình sự",
+  "cố ý hoặc vô ý",
+  "hai loại tội phạm",
+  "trên năm năm tù"
+ ],
+ "note": "Bộ luật Hình sự 1985 có hiệu lực từ 01/01/1986, đã hết hiệu lực (thay bằng Bộ luật Hình sự 1999); hiện hành là Bộ luật Hình sự 100/2015/QH13 (đã được sửa đổi). Học để hiểu lịch sử.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 8 Bộ luật Hình sự 1985, tội phạm được chia thành mấy loại?",
+   "options": [
+    "Hai loại: nghiêm trọng và ít nghiêm trọng",
+    "Bốn loại",
+    "Ba loại",
+    "Năm loại"
+   ],
+   "answer": 0,
+   "explain": "Điều 8 khoản 2. BLHS 2015 chia bốn loại.",
+   "source": {
+    "kind": "primary",
+    "cite": "Bộ luật Hình sự 1985, Điều 8"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo BLHS 1985, tội phạm nghiêm trọng là tội có mức cao nhất của khung hình phạt như thế nào?",
+   "options": [
+    "Trên năm năm tù, tù chung thân hoặc tử hình",
+    "Trên ba năm tù",
+    "Trên mười năm tù",
+    "Từ hai năm tù trở lên"
+   ],
+   "answer": 0,
+   "explain": "Điều 8 khoản 2.",
+   "source": {
+    "kind": "primary",
+    "cite": "Bộ luật Hình sự 1985, Điều 8"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "BLHS 1985",
+   "right": "BLHS 2015",
+   "cases": [
+    {
+     "text": "Chia tội phạm thành 2 loại",
+     "answer": "left"
+    },
+    {
+     "text": "Chia tội phạm thành 4 loại",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 8 BLHS 1985; Điều 9 BLHS 2015."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tội phạm là hành vi {{nguy hiểm cho xã hội}} được quy định trong Bộ luật hình sự, do người có {{năng lực trách nhiệm hình sự}} thực hiện một cách cố ý hoặc vô ý.",
+   "bank_extra": [
+    "trái đạo đức",
+    "năng lực pháp luật"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Những tội phạm khác (không phải nghiêm trọng) là tội phạm {{ít nghiêm trọng}}.",
+   "bank_extra": [
+    "đặc biệt nghiêm trọng",
+    "vi phạm hành chính"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo BLHS 1985, hành vi nguy hiểm cho xã hội nhưng không được quy định trong Bộ luật hình sự vẫn là tội phạm.",
+   "answer": false,
+   "explain": "Sai. Dấu hiệu \"được quy định trong Bộ luật hình sự\" là bắt buộc (Điều 8, Điều 2)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm và phân loại tội phạm theo Bộ luật Hình sự 1985.",
+   "model": "Tội phạm là hành vi nguy hiểm cho xã hội, được quy định trong Bộ luật hình sự, do người có năng lực trách nhiệm hình sự thực hiện cố ý hoặc vô ý, xâm phạm các quan hệ xã hội được bảo vệ (Điều 8 khoản 1). Hai loại: nghiêm trọng (khung cao nhất trên 5 năm tù, chung thân, tử hình) và ít nghiêm trọng (khoản 2). BLHS 2015 chia 4 loại.",
+   "keywords": [
+    "nguy hiểm cho xã hội",
+    "năng lực trách nhiệm hình sự",
+    "nghiêm trọng",
+    "ít nghiêm trọng"
+   ]
+  }
+ ]
+}

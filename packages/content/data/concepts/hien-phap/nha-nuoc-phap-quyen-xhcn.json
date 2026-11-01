@@ -1,25 +1,135 @@
 {
-  "id": "nha-nuoc-phap-quyen-xhcn", "subject": "hien-phap", "chapter": "khai-quat",
-  "term": "Nhà nước pháp quyền xã hội chủ nghĩa",
-  "definition": "Nhà nước Cộng hòa xã hội chủ nghĩa Việt Nam là nhà nước pháp quyền xã hội chủ nghĩa của Nhân dân, do Nhân dân, vì Nhân dân.",
-  "plain": "Nhà nước pháp quyền là nhà nước mà chính nó cũng phải tuân theo pháp luật: tổ chức và hoạt động trên cơ sở Hiến pháp và luật, Hiến pháp tối thượng, quyền con người được bảo đảm. \"Của dân, do dân, vì dân\" là định hướng xã hội chủ nghĩa của mô hình này.",
-  "example": "Cơ quan thuế muốn thu một loại thuế mới phải có luật của Quốc hội cho phép (khoản 4 Điều 70); không thể tự đặt ra khoản thu bằng công văn.",
-  "source": { "kind": "statute", "cite": "Khoản 1 Điều 2 Hiến pháp 2013", "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801" },
-  "checked": "2026-11-01",
-  "confusables": ["chu-quyen-nhan-dan", "hieu-luc-phap-ly-toi-cao"],
-  "keywords": ["pháp quyền", "của Nhân dân, do Nhân dân, vì Nhân dân", "thượng tôn pháp luật"],
-  "items": [
-    { "type": "mcq", "level": 1, "q": "Khoản 1 Điều 2 Hiến pháp 2013 xác định Nhà nước Việt Nam là nhà nước gì?", "options": ["Nhà nước pháp quyền xã hội chủ nghĩa của Nhân dân, do Nhân dân, vì Nhân dân", "Nhà nước chuyên chính vô sản", "Nhà nước liên bang xã hội chủ nghĩa", "Nhà nước pháp quyền tư sản"], "answer": 0, "explain": "Nguyên văn khoản 1 Điều 2.", "source": { "kind": "statute", "cite": "Khoản 1 Điều 2 Hiến pháp 2013" } },
-    { "type": "mcq", "level": 1, "q": "Đặc trưng cốt lõi của \"pháp quyền\" là gì?", "options": ["Nhà nước tổ chức và hoạt động trên cơ sở Hiến pháp và pháp luật; chính Nhà nước cũng bị ràng buộc bởi pháp luật", "Nhà nước có quyền ban hành mọi loại văn bản mà không bị giới hạn", "Pháp luật chỉ ràng buộc công dân, không ràng buộc cơ quan nhà nước", "Tòa án đứng trên Hiến pháp"], "answer": 0, "explain": "Pháp quyền = thượng tôn pháp luật, kể cả đối với Nhà nước; Hiến pháp có hiệu lực pháp lý cao nhất (Điều 119) là trụ cột của nguyên tắc này.", "source": { "kind": "statute", "cite": "Khoản 1 Điều 2, Điều 119 Hiến pháp 2013" } },
-    { "type": "pair", "level": 2, "left": "Nhà nước pháp quyền XHCN", "right": "Chủ quyền Nhân dân", "cases": [
-      { "text": "Nhấn mạnh Nhà nước phải hoạt động trong khuôn khổ Hiến pháp và pháp luật.", "answer": "left" },
-      { "text": "Nhấn mạnh Nhân dân là chủ thể tối cao của quyền lực nhà nước.", "answer": "right" },
-      { "text": "Khẳng định tính chất \"của Nhân dân, do Nhân dân, vì Nhân dân\" của mô hình nhà nước.", "answer": "left" }
-    ], "explain": "Khoản 1 Điều 2 mô tả MÔ HÌNH nhà nước (pháp quyền XHCN); khoản 2 Điều 2 mô tả NGUỒN GỐC quyền lực (Nhân dân)." },
-    { "type": "cloze", "level": 3, "text": "Nhà nước Cộng hòa xã hội chủ nghĩa Việt Nam là nhà nước {{pháp quyền}} xã hội chủ nghĩa của Nhân dân, do Nhân dân, {{vì Nhân dân}}.", "bank_extra": ["chuyên chính", "vì Nhà nước"] },
-    { "type": "cloze", "level": 3, "text": "Trong nhà nước pháp quyền, Nhà nước tổ chức và hoạt động trên cơ sở {{Hiến pháp}} và pháp luật.", "bank_extra": ["nghị quyết", "mệnh lệnh"] },
-    { "type": "case", "level": 4, "q": "Ủy ban nhân dân một phường ra thông báo cấm người dân trong phường bán hàng online, dù không có luật hay văn bản cấp trên nào cho phép hạn chế như vậy. Xét theo nguyên tắc nhà nước pháp quyền và khoản 2 Điều 14, nhận định nào đúng?", "options": ["Hợp pháp vì chính quyền địa phương có quyền quản lý địa bàn", "Trái nguyên tắc pháp quyền: hạn chế quyền công dân chỉ có thể theo quy định của luật, cơ quan nhà nước không được tự đặt ra", "Hợp pháp nếu đa số người dân trong phường đồng ý", "Chỉ trái pháp luật nếu có người khởi kiện"], "answer": 1, "explain": "Nhà nước pháp quyền đòi hỏi mọi cơ quan hoạt động trong khuôn khổ pháp luật; quyền công dân chỉ bị hạn chế theo quy định của LUẬT (khoản 2 Điều 14).", "source": { "kind": "statute", "cite": "Khoản 1 Điều 2; khoản 2 Điều 14 Hiến pháp 2013" } },
-    { "type": "truefalse", "level": 4, "statement": "Trong nhà nước pháp quyền, pháp luật chỉ ràng buộc công dân, còn cơ quan nhà nước đứng ngoài sự ràng buộc đó.", "answer": false, "explain": "Sai. Bản chất của pháp quyền là Nhà nước cũng bị ràng buộc bởi Hiến pháp và pháp luật; mọi hành vi vi phạm Hiến pháp đều bị xử lý (Điều 119)." },
-    { "type": "recall", "level": 5, "q": "Nêu ba đặc trưng của nhà nước pháp quyền xã hội chủ nghĩa Việt Nam theo Hiến pháp 2013.", "model": "Một là Hiến pháp và pháp luật giữ vị trí tối thượng, Nhà nước tổ chức và hoạt động theo Hiến pháp và pháp luật (Điều 2, Điều 119); hai là quyền lực nhà nước thuộc về Nhân dân, thống nhất nhưng có phân công, phối hợp, kiểm soát (Điều 2); ba là quyền con người, quyền công dân được công nhận, tôn trọng, bảo vệ, bảo đảm (Điều 14).", "keywords": ["Hiến pháp", "quyền lực nhà nước", "quyền con người", "kiểm soát"] }
-  ]
+ "id": "nha-nuoc-phap-quyen-xhcn",
+ "subject": "hien-phap",
+ "chapter": "c3-che-do-chinh-tri",
+ "term": "Nhà nước pháp quyền xã hội chủ nghĩa",
+ "definition": "Nhà nước Cộng hòa xã hội chủ nghĩa Việt Nam là nhà nước pháp quyền xã hội chủ nghĩa của Nhân dân, do Nhân dân, vì Nhân dân.",
+ "plain": "Nhà nước pháp quyền là nhà nước mà chính nó cũng phải tuân theo pháp luật: tổ chức và hoạt động trên cơ sở Hiến pháp và luật, Hiến pháp tối thượng, quyền con người được bảo đảm. \"Của dân, do dân, vì dân\" là định hướng xã hội chủ nghĩa của mô hình này.",
+ "example": "Cơ quan thuế muốn thu một loại thuế mới phải có luật của Quốc hội cho phép (khoản 4 Điều 70); không thể tự đặt ra khoản thu bằng công văn.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 2 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "chu-quyen-nhan-dan",
+  "hieu-luc-phap-ly-toi-cao"
+ ],
+ "keywords": [
+  "pháp quyền",
+  "của Nhân dân, do Nhân dân, vì Nhân dân",
+  "thượng tôn pháp luật"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khoản 1 Điều 2 Hiến pháp 2013 xác định Nhà nước Việt Nam là nhà nước gì?",
+   "options": [
+    "Nhà nước pháp quyền xã hội chủ nghĩa của Nhân dân, do Nhân dân, vì Nhân dân",
+    "Nhà nước chuyên chính vô sản",
+    "Nhà nước liên bang xã hội chủ nghĩa",
+    "Nhà nước pháp quyền tư sản"
+   ],
+   "answer": 0,
+   "explain": "Nguyên văn khoản 1 Điều 2.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 2 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đặc trưng cốt lõi của \"pháp quyền\" là gì?",
+   "options": [
+    "Nhà nước tổ chức và hoạt động trên cơ sở Hiến pháp và pháp luật; chính Nhà nước cũng bị ràng buộc bởi pháp luật",
+    "Nhà nước có quyền ban hành mọi loại văn bản mà không bị giới hạn",
+    "Pháp luật chỉ ràng buộc công dân, không ràng buộc cơ quan nhà nước",
+    "Tòa án đứng trên Hiến pháp"
+   ],
+   "answer": 0,
+   "explain": "Pháp quyền = thượng tôn pháp luật, kể cả đối với Nhà nước; Hiến pháp có hiệu lực pháp lý cao nhất (Điều 119) là trụ cột của nguyên tắc này.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 2, Điều 119 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Nhà nước pháp quyền XHCN",
+   "right": "Chủ quyền Nhân dân",
+   "cases": [
+    {
+     "text": "Nhấn mạnh Nhà nước phải hoạt động trong khuôn khổ Hiến pháp và pháp luật.",
+     "answer": "left"
+    },
+    {
+     "text": "Nhấn mạnh Nhân dân là chủ thể tối cao của quyền lực nhà nước.",
+     "answer": "right"
+    },
+    {
+     "text": "Khẳng định tính chất \"của Nhân dân, do Nhân dân, vì Nhân dân\" của mô hình nhà nước.",
+     "answer": "left"
+    }
+   ],
+   "explain": "Khoản 1 Điều 2 mô tả MÔ HÌNH nhà nước (pháp quyền XHCN); khoản 2 Điều 2 mô tả NGUỒN GỐC quyền lực (Nhân dân)."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhà nước Cộng hòa xã hội chủ nghĩa Việt Nam là nhà nước {{pháp quyền}} xã hội chủ nghĩa của Nhân dân, do Nhân dân, {{vì Nhân dân}}.",
+   "bank_extra": [
+    "chuyên chính",
+    "vì Nhà nước"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Trong nhà nước pháp quyền, Nhà nước tổ chức và hoạt động trên cơ sở {{Hiến pháp}} và pháp luật.",
+   "bank_extra": [
+    "nghị quyết",
+    "mệnh lệnh"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Ủy ban nhân dân một phường ra thông báo cấm người dân trong phường bán hàng online, dù không có luật hay văn bản cấp trên nào cho phép hạn chế như vậy. Xét theo nguyên tắc nhà nước pháp quyền và khoản 2 Điều 14, nhận định nào đúng?",
+   "options": [
+    "Hợp pháp vì chính quyền địa phương có quyền quản lý địa bàn",
+    "Trái nguyên tắc pháp quyền: hạn chế quyền công dân chỉ có thể theo quy định của luật, cơ quan nhà nước không được tự đặt ra",
+    "Hợp pháp nếu đa số người dân trong phường đồng ý",
+    "Chỉ trái pháp luật nếu có người khởi kiện"
+   ],
+   "answer": 1,
+   "explain": "Nhà nước pháp quyền đòi hỏi mọi cơ quan hoạt động trong khuôn khổ pháp luật; quyền công dân chỉ bị hạn chế theo quy định của LUẬT (khoản 2 Điều 14).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 2; khoản 2 Điều 14 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Trong nhà nước pháp quyền, pháp luật chỉ ràng buộc công dân, còn cơ quan nhà nước đứng ngoài sự ràng buộc đó.",
+   "answer": false,
+   "explain": "Sai. Bản chất của pháp quyền là Nhà nước cũng bị ràng buộc bởi Hiến pháp và pháp luật; mọi hành vi vi phạm Hiến pháp đều bị xử lý (Điều 119)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu ba đặc trưng của nhà nước pháp quyền xã hội chủ nghĩa Việt Nam theo Hiến pháp 2013.",
+   "model": "Một là Hiến pháp và pháp luật giữ vị trí tối thượng, Nhà nước tổ chức và hoạt động theo Hiến pháp và pháp luật (Điều 2, Điều 119); hai là quyền lực nhà nước thuộc về Nhân dân, thống nhất nhưng có phân công, phối hợp, kiểm soát (Điều 2); ba là quyền con người, quyền công dân được công nhận, tôn trọng, bảo vệ, bảo đảm (Điều 14).",
+   "keywords": [
+    "Hiến pháp",
+    "quyền lực nhà nước",
+    "quyền con người",
+    "kiểm soát"
+   ]
+  }
+ ]
 }

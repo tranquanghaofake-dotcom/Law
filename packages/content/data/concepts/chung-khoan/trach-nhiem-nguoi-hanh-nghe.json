@@ -1,0 +1,128 @@
+{
+ "id": "trach-nhiem-nguoi-hanh-nghe",
+ "subject": "chung-khoan",
+ "chapter": "c8-kinh-doanh-chung-khoan",
+ "term": "Hành vi người hành nghề chứng khoán không được thực hiện",
+ "definition": "Người hành nghề chứng khoán không được thực hiện các hành vi sau đây: a) Đồng thời làm việc cho từ 02 công ty chứng khoán, công ty quản lý quỹ đầu tư chứng khoán, chi nhánh công ty chứng khoán và công ty quản lý quỹ nước ngoài tại Việt Nam, công ty đầu tư chứng khoán trở lên; b) Mở, quản lý tài khoản giao dịch chứng khoán tại công ty chứng khoán nơi mình không làm việc, trừ trường hợp công ty chứng khoán nơi mình đang làm việc không có nghiệp vụ môi giới chứng khoán;",
+ "plain": "Ba điều cấm với người hành nghề: không làm cùng lúc cho 02 công ty trở lên; không mở, quản lý tài khoản giao dịch ở công ty chứng khoán khác nơi mình làm (để công ty mình giám sát được giao dịch cá nhân, chống xung đột lợi ích); không vượt phạm vi ủy quyền của công ty. Vi phạm thì bị thu hồi chứng chỉ vĩnh viễn (khoản 3, 4 Điều 97). Người hành nghề còn phải tham gia tập huấn pháp luật, sản phẩm mới.",
+ "example": "Môi giới Y làm ở công ty chứng khoán A nhưng mở tài khoản cá nhân ở công ty chứng khoán B để \"giao dịch kín\": vi phạm điểm b khoản 2 Điều 98 (trừ khi A không có nghiệp vụ môi giới), có thể bị thu hồi chứng chỉ vĩnh viễn.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 2 Điều 98 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nguoi-hanh-nghe-chung-khoan",
+  "chung-chi-hanh-nghe-chung-khoan"
+ ],
+ "keywords": [
+  "không làm cho 02 công ty",
+  "không mở tài khoản ở công ty khác",
+  "không vượt phạm vi ủy quyền"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người hành nghề chứng khoán được mở tài khoản giao dịch ở công ty chứng khoán khác nơi mình làm việc khi nào?",
+   "options": [
+    "Khi công ty nơi mình làm việc không có nghiệp vụ môi giới chứng khoán",
+    "Khi được người thân đứng tên",
+    "Khi số dư dưới 100 triệu đồng",
+    "Không bao giờ"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 2 Điều 98.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 98 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hậu quả khi người hành nghề vi phạm khoản 2 Điều 98?",
+   "options": [
+    "Bị thu hồi chứng chỉ và không được cấp lại",
+    "Chỉ bị nhắc nhở",
+    "Bị đình chỉ hành nghề 01 tháng",
+    "Không có hậu quả pháp lý"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 3 và khoản 4 Điều 97.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 97 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Được phép",
+   "right": "Bị cấm",
+   "cases": [
+    {
+     "text": "Tham gia tập huấn do Ủy ban, Sở giao dịch tổ chức",
+     "answer": "left"
+    },
+    {
+     "text": "Đồng thời làm việc cho 02 công ty chứng khoán",
+     "answer": "right"
+    },
+    {
+     "text": "Thực hiện giao dịch vượt phạm vi ủy quyền của công ty",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 2, 3 Điều 98."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người hành nghề chứng khoán không được đồng thời làm việc cho từ {{02}} công ty chứng khoán trở lên; không được thực hiện hành vi vượt quá phạm vi {{ủy quyền}} của công ty.",
+   "bank_extra": [
+    "03",
+    "tư vấn"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người hành nghề chứng khoán phải tham gia các khóa {{tập huấn}} về pháp luật chứng khoán, hệ thống giao dịch, loại chứng khoán mới.",
+   "bank_extra": [
+    "du lịch",
+    "ngoại ngữ"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Môi giới Z làm chính thức ở công ty chứng khoán A, buổi tối nhận làm \"cộng tác viên môi giới\" cho công ty chứng khoán B. Nhận định nào đúng?",
+   "options": [
+    "Vi phạm điểm a khoản 2 Điều 98, có thể bị thu hồi chứng chỉ vĩnh viễn",
+    "Hợp pháp vì ngoài giờ làm việc",
+    "Hợp pháp nếu A đồng ý",
+    "Hợp pháp nếu không ký hợp đồng lao động với B"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 2 Điều 98; khoản 3, 4 Điều 97.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 98 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các hành vi người hành nghề chứng khoán không được thực hiện và hậu quả.",
+   "model": "Không đồng thời làm cho từ 02 công ty chứng khoán, công ty quản lý quỹ, chi nhánh nước ngoài, công ty đầu tư chứng khoán; không mở, quản lý tài khoản ở công ty chứng khoán khác nơi mình làm (trừ khi công ty mình không có môi giới); không vượt phạm vi ủy quyền (khoản 2 Điều 98). Vi phạm: thu hồi chứng chỉ, không được cấp lại (Điều 97).",
+   "keywords": [
+    "02 công ty",
+    "tài khoản",
+    "phạm vi ủy quyền",
+    "thu hồi"
+   ]
+  }
+ ]
+}

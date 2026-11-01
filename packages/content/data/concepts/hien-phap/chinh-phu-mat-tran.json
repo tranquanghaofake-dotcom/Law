@@ -1,0 +1,114 @@
+{
+ "id": "chinh-phu-mat-tran",
+ "subject": "hien-phap",
+ "chapter": "c9-chinh-phu",
+ "term": "Quan hệ giữa Chính phủ với Mặt trận Tổ quốc và Nhân dân",
+ "definition": "Chủ tịch Ủy ban trung ương Mặt trận Tổ quốc Việt Nam và người đứng đầu cơ quan trung ương của tổ chức chính trị - xã hội được mời tham dự phiên họp của Chính phủ khi bàn các vấn đề có liên quan.",
+ "plain": "Chính phủ không làm việc \"khép kín\": phối hợp với Mặt trận Tổ quốc và tổ chức chính trị - xã hội (khoản 8 Điều 96); mời Chủ tịch Ủy ban trung ương Mặt trận dự phiên họp khi bàn vấn đề liên quan (Điều 101); Thủ tướng, Bộ trưởng báo cáo trước Nhân dân qua phương tiện thông tin đại chúng về vấn đề quan trọng (khoản 6 Điều 98, khoản 2 Điều 99).",
+ "example": "Khi Chính phủ họp bàn về chính sách hỗ trợ người lao động bị mất việc, Chủ tịch Ủy ban trung ương Mặt trận Tổ quốc và người đứng đầu Tổng Liên đoàn Lao động được mời dự.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 101 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nhiem-vu-chinh-phu",
+  "hiep-thuong-gioi-thieu-ung-cu"
+ ],
+ "keywords": [
+  "mời dự phiên họp",
+  "phối hợp với Mặt trận",
+  "báo cáo trước Nhân dân"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai được mời tham dự phiên họp Chính phủ khi bàn vấn đề có liên quan theo Điều 101?",
+   "options": [
+    "Chủ tịch Ủy ban trung ương Mặt trận Tổ quốc Việt Nam và người đứng đầu cơ quan trung ương của tổ chức chính trị - xã hội",
+    "Chủ tịch các tập đoàn kinh tế",
+    "Đại sứ nước ngoài",
+    "Chủ tịch Hội đồng nhân dân tỉnh"
+   ],
+   "answer": 0,
+   "explain": "Điều 101.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 101 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thủ tướng thực hiện chế độ báo cáo trước Nhân dân bằng cách nào theo khoản 6 Điều 98?",
+   "options": [
+    "Thông qua các phương tiện thông tin đại chúng",
+    "Qua thư riêng gửi từng hộ dân",
+    "Qua Tòa án",
+    "Không phải báo cáo"
+   ],
+   "answer": 0,
+   "explain": "Khoản 6 Điều 98.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 6 Điều 98 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Được mời dự phiên họp Chính phủ khi bàn vấn đề liên quan",
+   "right": "Có quyền dự phiên họp Chính phủ",
+   "cases": [
+    {
+     "text": "Chủ tịch Ủy ban trung ương Mặt trận Tổ quốc",
+     "answer": "left"
+    },
+    {
+     "text": "Chủ tịch nước",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 90, 101."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chủ tịch Ủy ban trung ương {{Mặt trận Tổ quốc Việt Nam}} được mời tham dự phiên họp của {{Chính phủ}} khi bàn các vấn đề có liên quan.",
+   "bank_extra": [
+    "Hội đồng nhân dân",
+    "Quốc hội"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chính phủ {{phối hợp}} với Ủy ban trung ương Mặt trận Tổ quốc Việt Nam trong việc thực hiện nhiệm vụ, quyền hạn của mình.",
+   "bank_extra": [
+    "lãnh đạo",
+    "chỉ đạo"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chủ tịch Ủy ban trung ương Mặt trận Tổ quốc là thành viên Chính phủ.",
+   "answer": false,
+   "explain": "Sai. Chỉ được mời dự phiên họp khi bàn vấn đề liên quan (Điều 101); thành viên Chính phủ theo khoản 1 Điều 95."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày mối quan hệ giữa Chính phủ với Mặt trận Tổ quốc, tổ chức chính trị - xã hội và Nhân dân.",
+   "model": "Chính phủ phối hợp với Ủy ban trung ương Mặt trận và cơ quan trung ương của tổ chức chính trị - xã hội (khoản 8 Điều 96); mời Chủ tịch Ủy ban trung ương Mặt trận, người đứng đầu tổ chức chính trị - xã hội dự phiên họp khi bàn vấn đề liên quan (Điều 101); Thủ tướng, Bộ trưởng báo cáo trước Nhân dân về vấn đề quan trọng (Điều 98, 99).",
+   "keywords": [
+    "phối hợp",
+    "mời dự phiên họp",
+    "Mặt trận Tổ quốc",
+    "báo cáo trước Nhân dân"
+   ]
+  }
+ ]
+}

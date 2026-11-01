@@ -1,0 +1,119 @@
+{
+ "id": "thanh-vien-luu-ky-bu-tru",
+ "subject": "chung-khoan",
+ "chapter": "c4-dang-ky-luu-ky",
+ "term": "Thành viên lưu ký và thành viên bù trừ",
+ "definition": "Thành viên lưu ký là công ty chứng khoán, ngân hàng thương mại, chi nhánh ngân hàng nước ngoài được Ủy ban Chứng khoán Nhà nước cấp Giấy chứng nhận đăng ký hoạt động lưu ký chứng khoán và được Tổng công ty lưu ký và bù trừ chứng khoán Việt Nam chấp thuận trở thành thành viên lưu ký;",
+ "plain": "Hai \"cửa\" vào Tổng công ty: thành viên lưu ký (giữ chứng khoán, thanh toán cho khách) và thành viên bù trừ (bù trừ, thanh toán giao dịch, đặc biệt với phái sinh). Cả hai đều là công ty chứng khoán hoặc ngân hàng, cần hai lớp chấp thuận: Ủy ban cấp giấy chứng nhận, Tổng công ty chấp thuận tư cách thành viên. Công ty chứng khoán có nghiệp vụ môi giới thì được đăng ký lưu ký (khoản 2 Điều 57).",
+ "example": "Ngân hàng X muốn làm lưu ký chứng khoán: cần giấy phép có hoạt động lưu ký, đáp ứng tỷ lệ an toàn vốn, có lãi năm gần nhất, có trang thiết bị (khoản 1 Điều 57), rồi được Ủy ban cấp giấy chứng nhận và Tổng công ty chấp thuận.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điểm a khoản 1 Điều 56 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "luu-ky-chung-khoan",
+  "tong-cong-ty-luu-ky-bu-tru"
+ ],
+ "keywords": [
+  "thành viên lưu ký",
+  "thành viên bù trừ",
+  "hai lớp chấp thuận"
+ ],
+ "note": "Luật 56/2024/QH15 (hiệu lực 01/01/2025) sửa điểm a khoản 4 Điều 56: khi bù trừ, thanh toán giao dịch chứng khoán phái sinh, thành viên bù trừ là ngân hàng thương mại, chi nhánh ngân hàng nước ngoài chỉ được bù trừ, thanh toán giao dịch cho chính mình (không làm cho khách hàng). Giáo trình 2021 chưa có giới hạn này.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chủ thể nào có thể trở thành thành viên lưu ký?",
+   "options": [
+    "Công ty chứng khoán, ngân hàng thương mại, chi nhánh ngân hàng nước ngoài",
+    "Mọi doanh nghiệp có vốn trên 100 tỷ",
+    "Công ty niêm yết",
+    "Nhà đầu tư cá nhân chuyên nghiệp"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 56.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 56 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Công ty chứng khoán được đăng ký hoạt động lưu ký khi nào?",
+   "options": [
+    "Khi được cấp phép thực hiện nghiệp vụ môi giới chứng khoán",
+    "Khi có vốn điều lệ trên 10.000 tỷ",
+    "Khi đã niêm yết",
+    "Khi được Sở giao dịch chấp thuận"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 57.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 57 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thành viên lưu ký",
+   "right": "Thành viên bù trừ",
+   "cases": [
+    {
+     "text": "Được Ủy ban cấp Giấy chứng nhận đăng ký hoạt động lưu ký chứng khoán",
+     "answer": "left"
+    },
+    {
+     "text": "Được Ủy ban cấp Giấy chứng nhận đủ điều kiện cung cấp dịch vụ bù trừ, thanh toán",
+     "answer": "right"
+    },
+    {
+     "text": "Cung cấp dịch vụ lưu ký và thanh toán giao dịch cho khách hàng",
+     "answer": "left"
+    }
+   ],
+   "explain": "Khoản 1, 2 Điều 56."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thành viên lưu ký được {{Ủy ban Chứng khoán Nhà nước}} cấp Giấy chứng nhận đăng ký hoạt động lưu ký và được {{Tổng công ty lưu ký và bù trừ}} chấp thuận trở thành thành viên.",
+   "bank_extra": [
+    "Sở giao dịch chứng khoán",
+    "Ngân hàng Nhà nước"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ngân hàng thương mại đăng ký lưu ký phải hoạt động kinh doanh có lãi trong {{năm gần nhất}}.",
+   "bank_extra": [
+    "03 năm liên tục",
+    "05 năm"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thành viên lưu ký của Tổng công ty lưu ký và bù trừ chỉ có thể là công ty chứng khoán.",
+   "answer": false,
+   "explain": "Sai. Còn có ngân hàng thương mại, chi nhánh ngân hàng nước ngoài (điểm a khoản 1 Điều 56)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Phân biệt thành viên lưu ký và thành viên bù trừ của Tổng công ty lưu ký và bù trừ.",
+   "model": "Cả hai đều là công ty chứng khoán, ngân hàng thương mại, chi nhánh ngân hàng nước ngoài. Thành viên lưu ký: Ủy ban cấp Giấy chứng nhận đăng ký hoạt động lưu ký, Tổng công ty chấp thuận; cung cấp dịch vụ lưu ký, thanh toán cho khách hàng. Thành viên bù trừ: Ủy ban cấp Giấy chứng nhận đủ điều kiện cung cấp dịch vụ bù trừ, thanh toán, Tổng công ty chấp thuận; thực hiện bù trừ, thanh toán giao dịch.",
+   "keywords": [
+    "lưu ký",
+    "bù trừ",
+    "Ủy ban",
+    "Tổng công ty chấp thuận"
+   ]
+  }
+ ]
+}

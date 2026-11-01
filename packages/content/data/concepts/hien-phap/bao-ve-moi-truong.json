@@ -1,0 +1,115 @@
+{
+ "id": "bao-ve-moi-truong",
+ "subject": "hien-phap",
+ "chapter": "nang-cao",
+ "term": "Bảo vệ môi trường trong Hiến pháp",
+ "definition": "Nhà nước có chính sách bảo vệ môi trường; quản lý, sử dụng hiệu quả, bền vững các nguồn tài nguyên thiên nhiên; bảo tồn thiên nhiên, đa dạng sinh học; chủ động phòng, chống thiên tai, ứng phó với biến đổi khí hậu. (…) Tổ chức, cá nhân gây ô nhiễm môi trường, làm suy kiệt tài nguyên thiên nhiên và suy giảm đa dạng sinh học phải bị xử lý nghiêm và có trách nhiệm khắc phục, bồi thường thiệt hại.",
+ "plain": "Hiến pháp 2013 nâng tầm bảo vệ môi trường: Nhà nước có chính sách bảo vệ môi trường, phát triển bền vững, ứng phó BIẾN ĐỔI KHÍ HẬU; khuyến khích năng lượng mới, năng lượng tái tạo (khoản 2); nguyên tắc \"NGƯỜI GÂY Ô NHIỄM PHẢI TRẢ TIỀN\": tổ chức, cá nhân gây ô nhiễm phải bị xử lý nghiêm, khắc phục, bồi thường (khoản 3). Song song, Điều 43 ghi nhận quyền được sống trong môi trường trong lành và nghĩa vụ bảo vệ môi trường của mọi người.",
+ "example": "Một nhà máy xả thải gây chết cá hàng loạt trên sông: theo khoản 3 Điều 63, nhà máy phải bị xử lý nghiêm, khắc phục ô nhiễm và bồi thường thiệt hại cho người dân.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 3 Điều 63 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "so-huu-toan-dan",
+  "quyen-con-nguoi-quyen-cong-dan"
+ ],
+ "keywords": [
+  "bảo vệ môi trường",
+  "biến đổi khí hậu",
+  "năng lượng tái tạo",
+  "gây ô nhiễm phải khắc phục, bồi thường"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 3 Điều 63, tổ chức, cá nhân gây ô nhiễm môi trường phải chịu trách nhiệm gì?",
+   "options": [
+    "Bị xử lý nghiêm, khắc phục, bồi thường thiệt hại",
+    "Chỉ bị nhắc nhở",
+    "Được miễn trách nhiệm nếu là doanh nghiệp nhà nước",
+    "Chỉ nộp phí bảo vệ môi trường"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 63.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 63 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 2 Điều 63, Nhà nước khuyến khích phát triển loại năng lượng nào?",
+   "options": [
+    "Năng lượng mới, năng lượng tái tạo",
+    "Năng lượng than đá",
+    "Chỉ năng lượng hạt nhân",
+    "Không quy định"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 63.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 63 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Điều 43 (quyền, nghĩa vụ)",
+   "right": "Điều 63 (trách nhiệm Nhà nước)",
+   "cases": [
+    {
+     "text": "Mọi người có quyền được sống trong môi trường trong lành",
+     "answer": "left"
+    },
+    {
+     "text": "Nhà nước chủ động phòng, chống thiên tai, ứng phó với biến đổi khí hậu",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 43, 63 Hiến pháp 2013."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhà nước chủ động phòng, chống thiên tai, ứng phó với {{biến đổi khí hậu}}; bảo tồn thiên nhiên, {{đa dạng sinh học}}.",
+   "bank_extra": [
+    "toàn cầu hóa",
+    "tăng trưởng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tổ chức, cá nhân gây ô nhiễm môi trường phải bị xử lý nghiêm và có trách nhiệm khắc phục, {{bồi thường}} thiệt hại.",
+   "bank_extra": [
+    "công khai",
+    "xin lỗi"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hiến pháp 2013 có quy định về ứng phó với biến đổi khí hậu.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 63."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quy định của Hiến pháp 2013 về bảo vệ môi trường.",
+   "model": "Nhà nước có chính sách bảo vệ môi trường, sử dụng bền vững tài nguyên, bảo tồn đa dạng sinh học, phòng chống thiên tai, ứng phó biến đổi khí hậu (khoản 1); khuyến khích năng lượng mới, tái tạo (khoản 2); người gây ô nhiễm phải bị xử lý, khắc phục, bồi thường (khoản 3); Điều 43: quyền sống trong môi trường trong lành.",
+   "keywords": [
+    "môi trường",
+    "biến đổi khí hậu",
+    "tái tạo",
+    "bồi thường"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,129 @@
+{
+ "id": "muc-phat-tien-chung-khoan",
+ "subject": "chung-khoan",
+ "chapter": "c10-xu-ly-vi-pham",
+ "term": "Mức phạt tiền tối đa trong lĩnh vực chứng khoán",
+ "definition": "Mức phạt tiền tối đa trong xử phạt vi phạm hành chính đối với các hành vi vi phạm khác trong lĩnh vực chứng khoán là 03 tỷ đồng. Mức phạt tiền tối đa quy định tại khoản 3 và khoản 4 Điều này được áp dụng đối với tổ chức; cá nhân thực hiện cùng hành vi vi phạm thì mức phạt tiền tối đa bằng một phần hai mức phạt tiền tối đa đối với tổ chức.",
+ "plain": "Hai mức: (1) với giao dịch nội gián, thao túng (khoản 2, 3 Điều 12): tối đa 10 LẦN khoản thu trái pháp luật; nếu không có khoản thu hoặc 10 lần vẫn thấp hơn 03 tỷ thì áp dụng mức 03 tỷ; (2) các vi phạm khác: tối đa 03 TỶ. Đây là mức với TỔ CHỨC; cá nhân tối đa bằng 1/2. Mức cụ thể cho từng hành vi do Chính phủ quy định.",
+ "example": "Cá nhân A thao túng giá, thu lợi bất chính 2 tỷ: mức tối đa với tổ chức là 10 × 2 tỷ = 20 tỷ; với cá nhân A tối đa là 10 tỷ (1/2).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 4, khoản 5 Điều 132 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "xu-ly-vi-pham-chung-khoan",
+  "thao-tung-thi-truong",
+  "giao-dich-noi-gian"
+ ],
+ "keywords": [
+  "10 lần khoản thu trái pháp luật",
+  "03 tỷ đồng",
+  "cá nhân bằng 1/2 tổ chức"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Mức phạt tiền tối đa đối với các vi phạm hành chính \"khác\" trong lĩnh vực chứng khoán (với tổ chức) là bao nhiêu?",
+   "options": [
+    "03 tỷ đồng",
+    "01 tỷ đồng",
+    "05 tỷ đồng",
+    "10 tỷ đồng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 132.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 132 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Mức phạt tiền tối đa đối với cá nhân so với tổ chức cùng hành vi?",
+   "options": [
+    "Bằng một phần hai",
+    "Bằng nhau",
+    "Gấp đôi",
+    "Bằng một phần mười"
+   ],
+   "answer": 0,
+   "explain": "Khoản 5 Điều 132.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 5 Điều 132 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tối đa 10 lần khoản thu trái pháp luật",
+   "right": "Tối đa 03 tỷ đồng",
+   "cases": [
+    {
+     "text": "Giao dịch nội gián (khoản 2 Điều 12)",
+     "answer": "left"
+    },
+    {
+     "text": "Thao túng thị trường (khoản 3 Điều 12)",
+     "answer": "left"
+    },
+    {
+     "text": "Chậm công bố thông tin định kỳ",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 3, 4 Điều 132."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Mức phạt tiền tối đa với hành vi tại khoản 2 và khoản 3 Điều 12 là {{10 lần}} khoản thu trái pháp luật; với các vi phạm khác là {{03 tỷ}} đồng.",
+   "bank_extra": [
+    "5 lần",
+    "01 tỷ"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Cá nhân thực hiện cùng hành vi vi phạm thì mức phạt tiền tối đa bằng {{một phần hai}} mức phạt tiền tối đa đối với tổ chức.",
+   "bank_extra": [
+    "gấp đôi",
+    "một phần ba"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Công ty B công bố thông tin sai lệch (không phải giao dịch nội gián hay thao túng), không có khoản thu trái pháp luật. Mức phạt tiền tối đa có thể áp dụng cho B là bao nhiêu?",
+   "options": [
+    "03 tỷ đồng",
+    "10 lần khoản thu trái pháp luật",
+    "1,5 tỷ đồng",
+    "Không giới hạn"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 132; B là tổ chức nên áp dụng mức đầy đủ.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 132 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quy định về mức phạt tiền tối đa trong lĩnh vực chứng khoán (Điều 132).",
+   "model": "Giao dịch nội gián, thao túng (khoản 2, 3 Điều 12): tối đa 10 lần khoản thu trái pháp luật; không có khoản thu hoặc thấp hơn 03 tỷ thì áp dụng 03 tỷ. Vi phạm khác: tối đa 03 tỷ. Mức trên áp dụng cho tổ chức; cá nhân bằng 1/2. Chính phủ quy định mức cụ thể.",
+   "keywords": [
+    "10 lần",
+    "03 tỷ",
+    "tổ chức",
+    "một phần hai"
+   ]
+  }
+ ]
+}

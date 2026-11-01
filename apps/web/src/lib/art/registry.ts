@@ -7,6 +7,8 @@ export const VIGNETTE_NAMES: readonly VignetteName[] = ['quan-he', 'vi-pham', 'd
 
 const SUBJECT_ART: Record<string, ArtName> = {
   'hien-phap': 'quoc-hoi',
+  'lich-su-nn-pl': 'ngo-mon',
+  'chung-khoan': 'tam-quan',
 };
 
 /** Tranh đầu trang cho các màn ngoài môn (spec ngôn ngữ hình khối §2). */

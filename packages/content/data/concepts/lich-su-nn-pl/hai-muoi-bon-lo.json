@@ -1,0 +1,120 @@
+{
+ "id": "hai-muoi-bon-lo",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c6-trung-dai",
+ "term": "Hành chính địa phương thời Lý: 24 lộ",
+ "definition": "Đổi 10 đạo làm 24 lộ, châu Hoan, châu Ái làm trại.",
+ "plain": "Năm 1010, nhà Lý chia cả nước thành 24 LỘ; vùng xa (châu Hoan – Nghệ An, châu Ái – Thanh Hóa) gọi là TRẠI. Dưới lộ có phủ, huyện, hương, giáp (theo các nguồn khác và cách trình bày của giáo trình). Lưu ý sử liệu: Toàn thư đã chép năm 1002 nhà Tiền Lê \"đổi mười đạo làm lộ, phủ, châu\", đến năm 1010 lại chép \"đổi 10 đạo làm 24 lộ\". Khi làm bài nên nêu cả hai mốc, không tự suy diễn lý do.",
+ "example": "Thuật ngữ \"trại\" thời Lý chỉ vùng xa kinh đô (Hoan, Ái), khác với \"trại\" thời Trần dùng để phân biệt \"kinh\" và \"trại\" trong thi cử.",
+ "source": {
+  "kind": "primary",
+  "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển II (bản dịch Viện KHXH Việt Nam, NXB KHXH 1993), Kỷ nhà Lý, Thái Tổ, năm 1010, tờ 4b",
+  "url": "https://thpthiephoa1.edu.vn/wp-content/uploads/Dai-viet-su-ki-toan-thu.pdf"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tien-le-dinh-luat-le",
+  "dinh-do-thang-long",
+  "quan-che-nha-dinh"
+ ],
+ "keywords": [
+  "24 lộ",
+  "trại",
+  "châu Hoan, châu Ái",
+  "1010"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Toàn thư, năm 1010 nhà Lý chia lại đơn vị hành chính như thế nào?",
+   "options": [
+    "Đổi 10 đạo làm 24 lộ, châu Hoan, châu Ái làm trại",
+    "Chia cả nước làm 12 đạo",
+    "Chia làm 13 đạo thừa tuyên",
+    "Chia làm 9 quận"
+   ],
+   "answer": 0,
+   "explain": "Toàn thư năm 1010. 13 đạo thừa tuyên là thời Lê Thánh Tông; 9 quận là thời thuộc Hán.",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển II, tờ 4b"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thời Lý, châu Hoan và châu Ái được gọi là gì?",
+   "options": [
+    "Trại",
+    "Lộ",
+    "Đạo",
+    "Phủ"
+   ],
+   "answer": 0,
+   "explain": "\"châu Hoan, châu Ái làm trại\".",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển II, tờ 4b"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Năm 1002 (Tiền Lê)",
+   "right": "Năm 1010 (Lý)",
+   "cases": [
+    {
+     "text": "Đổi mười đạo làm lộ, phủ, châu",
+     "answer": "left"
+    },
+    {
+     "text": "Đổi 10 đạo làm 24 lộ",
+     "answer": "right"
+    },
+    {
+     "text": "Châu Hoan, châu Ái làm trại",
+     "answer": "right"
+    }
+   ],
+   "explain": "Toàn thư, Bản kỷ quyển I (1002) và quyển II (1010)."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đổi 10 đạo làm {{24}} lộ, châu Hoan, châu Ái làm {{trại}}.",
+   "bank_extra": [
+    "12",
+    "phủ"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đơn vị hành chính lớn nhất thời Lý là {{lộ}}.",
+   "bank_extra": [
+    "đạo thừa tuyên",
+    "tỉnh"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Toàn thư chép việc đổi \"mười đạo\" ở cả năm 1002 và năm 1010.",
+   "answer": true,
+   "explain": "Đúng. Năm 1002: \"đổi mười đạo làm lộ, phủ, châu\"; năm 1010: \"Đổi 10 đạo làm 24 lộ\". Cần nêu cả hai mốc khi trình bày."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày tổ chức hành chính địa phương thời Lý theo Toàn thư.",
+   "model": "Năm 1010 nhà Lý đổi 10 đạo làm 24 lộ, châu Hoan, châu Ái (vùng xa) làm trại; dưới lộ có các cấp phủ, huyện, hương (theo giáo trình). Toàn thư cũng chép năm 1002 nhà Tiền Lê đã đổi mười đạo làm lộ, phủ, châu.",
+   "keywords": [
+    "24 lộ",
+    "trại",
+    "1010",
+    "1002"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,130 @@
+{
+ "id": "quoc-tich-theo-huyet-thong",
+ "subject": "hien-phap",
+ "chapter": "c5-quoc-tich",
+ "term": "Quốc tịch do sinh ra (nguyên tắc huyết thống)",
+ "definition": "Trẻ em sinh ra trong hoặc ngoài lãnh thổ Việt Nam mà khi sinh ra có cha mẹ đều là công dân Việt Nam thì có quốc tịch Việt Nam.",
+ "plain": "Việt Nam chủ yếu theo nguyên tắc HUYẾT THỐNG (quốc tịch theo cha mẹ), không theo nơi sinh: cha mẹ đều là công dân Việt Nam thì con có quốc tịch Việt Nam dù sinh ở đâu. Cha hoặc mẹ là công dân Việt Nam còn người kia không quốc tịch (hoặc mẹ Việt Nam, cha không rõ) thì con có quốc tịch Việt Nam. Nếu người kia là công dân nước ngoài thì cha mẹ thỏa thuận chọn quốc tịch khi khai sinh. Nguyên tắc NƠI SINH chỉ dùng bổ trợ (Điều 17, 18) để tránh không quốc tịch.",
+ "example": "Hai vợ chồng người Việt sinh con tại Nhật: con có quốc tịch Việt Nam (Điều 15), dù sinh ngoài lãnh thổ Việt Nam.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 15 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-53-vbhn-vpqh-quoc-tich-viet-nam--179993"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nguoi-khong-quoc-tich",
+  "nhap-quoc-tich-viet-nam",
+  "cong-dan-viet-nam"
+ ],
+ "keywords": [
+  "huyết thống",
+  "trong hoặc ngoài lãnh thổ",
+  "cha mẹ thỏa thuận chọn quốc tịch"
+ ],
+ "note": "Luật 79/2025/QH15 (hiệu lực 01/7/2025) sửa khoản 2 Điều 16 (trường hợp trẻ em có cha hoặc mẹ là công dân Việt Nam, người kia là công dân nước ngoài: thỏa thuận lựa chọn quốc tịch khi làm thủ tục khai sinh). Giáo trình in trước 2025 trình bày theo khoản 2 Điều 16 cũ, cần đối chiếu câu chữ.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trẻ em có cha mẹ đều là công dân Việt Nam, sinh ra ở nước ngoài thì có quốc tịch gì theo Luật Quốc tịch Việt Nam?",
+   "options": [
+    "Quốc tịch Việt Nam",
+    "Không có quốc tịch Việt Nam vì sinh ở nước ngoài",
+    "Phải nhập quốc tịch Việt Nam",
+    "Tùy cha mẹ chọn"
+   ],
+   "answer": 0,
+   "explain": "Điều 15: sinh ra trong hoặc ngoài lãnh thổ Việt Nam.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 15 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trẻ em sinh ra có cha là công dân Việt Nam, mẹ là công dân nước ngoài thì quốc tịch xác định thế nào?",
+   "options": [
+    "Có quốc tịch Việt Nam nếu cha mẹ thỏa thuận chọn quốc tịch Việt Nam khi khai sinh; sinh ở Việt Nam mà không thỏa thuận được thì có quốc tịch Việt Nam",
+    "Luôn có quốc tịch của mẹ",
+    "Luôn có hai quốc tịch",
+    "Không có quốc tịch cho đến 18 tuổi"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 16 (sửa đổi bởi Luật 79/2025/QH15).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 16 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Nguyên tắc huyết thống",
+   "right": "Nguyên tắc nơi sinh (bổ trợ)",
+   "cases": [
+    {
+     "text": "Cha mẹ đều là công dân Việt Nam, con sinh ở Pháp có quốc tịch Việt Nam",
+     "answer": "left"
+    },
+    {
+     "text": "Trẻ em sinh ra ở Việt Nam có cha mẹ không quốc tịch thường trú tại Việt Nam có quốc tịch Việt Nam",
+     "answer": "right"
+    },
+    {
+     "text": "Trẻ bị bỏ rơi được tìm thấy ở Việt Nam có quốc tịch Việt Nam",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 15, 17, 18."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Trẻ em sinh ra {{trong hoặc ngoài}} lãnh thổ Việt Nam mà khi sinh ra có cha mẹ đều là {{công dân Việt Nam}} thì có quốc tịch Việt Nam.",
+   "bank_extra": [
+    "chỉ trong",
+    "người gốc Việt"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Trẻ sơ sinh bị bỏ rơi, trẻ em được tìm thấy trên lãnh thổ Việt Nam mà không rõ {{cha mẹ}} là ai thì có quốc tịch Việt Nam.",
+   "bank_extra": [
+    "nơi sinh",
+    "tên"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Mẹ là công dân Việt Nam, cha là công dân Hàn Quốc; con sinh tại Hà Nội; khi khai sinh cha mẹ không thống nhất chọn quốc tịch. Theo luật hiện hành, con có quốc tịch Việt Nam không?",
+   "options": [
+    "Có, vì sinh trên lãnh thổ Việt Nam mà cha mẹ không thỏa thuận được",
+    "Không, vì cha là người nước ngoài",
+    "Không, phải chờ con 18 tuổi tự chọn",
+    "Có hai quốc tịch"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 16 (sửa đổi bởi Luật 79/2025/QH15).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 16 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày cách xác định quốc tịch Việt Nam do sinh ra theo Luật Quốc tịch.",
+   "model": "Cha mẹ đều là công dân Việt Nam: con có quốc tịch Việt Nam dù sinh ở đâu (Điều 15). Cha hoặc mẹ là công dân Việt Nam, người kia không quốc tịch hoặc mẹ Việt Nam cha không rõ: có quốc tịch Việt Nam (khoản 1 Điều 16); người kia là công dân nước ngoài: theo thỏa thuận khi khai sinh; sinh ở Việt Nam mà không thỏa thuận được thì có quốc tịch Việt Nam (khoản 2 Điều 16). Bổ trợ nơi sinh: cha mẹ không quốc tịch thường trú tại Việt Nam (Điều 17); trẻ bị bỏ rơi (Điều 18).",
+   "keywords": [
+    "huyết thống",
+    "thỏa thuận",
+    "không quốc tịch",
+    "bỏ rơi"
+   ]
+  }
+ ]
+}

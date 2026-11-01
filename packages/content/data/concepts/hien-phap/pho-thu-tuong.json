@@ -1,0 +1,120 @@
+{
+ "id": "pho-thu-tuong",
+ "subject": "hien-phap",
+ "chapter": "c9-chinh-phu",
+ "term": "Phó Thủ tướng Chính phủ",
+ "definition": "Phó Thủ tướng Chính phủ giúp Thủ tướng Chính phủ làm nhiệm vụ theo sự phân công của Thủ tướng Chính phủ và chịu trách nhiệm trước Thủ tướng Chính phủ về nhiệm vụ được phân công.",
+ "plain": "Phó Thủ tướng: thành viên Chính phủ, do Thủ tướng trình Quốc hội phê chuẩn và Chủ tịch nước bổ nhiệm; giúp Thủ tướng theo lĩnh vực được phân công; chịu trách nhiệm trước Thủ tướng. Khi Thủ tướng vắng mặt, một Phó Thủ tướng được Thủ tướng ỦY NHIỆM thay mặt lãnh đạo công tác Chính phủ. Phân biệt: Phó Chủ tịch nước giữ quyền Chủ tịch nước theo Hiến pháp; Phó Thủ tướng thay Thủ tướng khi được ủy nhiệm.",
+ "example": "Thủ tướng đi công tác nước ngoài, ủy nhiệm Phó Thủ tướng thường trực chủ trì phiên họp Chính phủ thường kỳ.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 3 Điều 95 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "thu-tuong-chinh-phu",
+  "co-cau-chinh-phu",
+  "pho-chu-tich-nuoc"
+ ],
+ "keywords": [
+  "giúp Thủ tướng",
+  "theo sự phân công",
+  "chịu trách nhiệm trước Thủ tướng",
+  "được ủy nhiệm khi Thủ tướng vắng mặt"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Phó Thủ tướng chịu trách nhiệm trước ai về nhiệm vụ được phân công?",
+   "options": [
+    "Thủ tướng Chính phủ",
+    "Chủ tịch nước",
+    "Ủy ban thường vụ Quốc hội",
+    "Bộ trưởng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 95.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 95 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khi Thủ tướng vắng mặt, ai thay mặt lãnh đạo công tác của Chính phủ?",
+   "options": [
+    "Một Phó Thủ tướng được Thủ tướng ủy nhiệm",
+    "Chủ tịch nước",
+    "Bộ trưởng Bộ Nội vụ",
+    "Chủ tịch Quốc hội"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 95.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 95 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Phó Thủ tướng",
+   "right": "Phó Chủ tịch nước",
+   "cases": [
+    {
+     "text": "Giúp Thủ tướng theo sự phân công, chịu trách nhiệm trước Thủ tướng",
+     "answer": "left"
+    },
+    {
+     "text": "Giữ quyền khi khuyết người đứng đầu theo Hiến pháp",
+     "answer": "right"
+    },
+    {
+     "text": "Do Quốc hội bầu trong số đại biểu Quốc hội",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 3 Điều 95; Điều 92, 93."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Phó Thủ tướng giúp Thủ tướng làm nhiệm vụ theo sự {{phân công}} của Thủ tướng và chịu trách nhiệm trước {{Thủ tướng}} về nhiệm vụ được phân công.",
+   "bank_extra": [
+    "bổ nhiệm",
+    "Quốc hội"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Khi Thủ tướng vắng mặt, một Phó Thủ tướng được Thủ tướng {{ủy nhiệm}} thay mặt Thủ tướng lãnh đạo công tác của Chính phủ.",
+   "bank_extra": [
+    "bầu",
+    "chỉ định tạm"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Phó Thủ tướng là thành viên Chính phủ.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 95."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày vị trí và trách nhiệm của Phó Thủ tướng.",
+   "model": "Phó Thủ tướng là thành viên Chính phủ; giúp Thủ tướng theo sự phân công; chịu trách nhiệm trước Thủ tướng về nhiệm vụ được phân công; khi Thủ tướng vắng mặt, một Phó Thủ tướng được ủy nhiệm thay mặt lãnh đạo công tác Chính phủ (khoản 3 Điều 95); do Thủ tướng trình Quốc hội phê chuẩn, Chủ tịch nước bổ nhiệm.",
+   "keywords": [
+    "thành viên Chính phủ",
+    "phân công",
+    "trách nhiệm trước Thủ tướng",
+    "ủy nhiệm"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,121 @@
+{
+ "id": "chung-chi-hanh-nghe-chung-khoan",
+ "subject": "chung-khoan",
+ "chapter": "c8-kinh-doanh-chung-khoan",
+ "term": "Chứng chỉ hành nghề chứng khoán",
+ "definition": "Chứng chỉ hành nghề chứng khoán bao gồm các loại sau đây: a) Chứng chỉ hành nghề môi giới chứng khoán; b) Chứng chỉ hành nghề phân tích tài chính; c) Chứng chỉ hành nghề quản lý quỹ.",
+ "plain": "Ba loại chứng chỉ, cấp cho cá nhân có năng lực hành vi dân sự đầy đủ, trình độ đại học trở lên, có chuyên môn chứng khoán, đạt kỳ thi sát hạch. Bị thu hồi khi không còn đủ điều kiện, vi phạm hành vi bị cấm (Điều 12) hoặc khoản 2 Điều 98, hoặc không hành nghề 03 năm liên tục. Thu hồi vì vi phạm Điều 12 hay khoản 2 Điều 98 thì KHÔNG được cấp lại.",
+ "example": "Anh W có chứng chỉ môi giới, bị thu hồi vì tham gia thao túng giá (hành vi bị cấm tại Điều 12): anh vĩnh viễn không được cấp lại chứng chỉ hành nghề (khoản 4 Điều 97).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 97 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nguoi-hanh-nghe-chung-khoan",
+  "trach-nhiem-nguoi-hanh-nghe",
+  "dieu-kien-nhan-su-cong-ty-chung-khoan"
+ ],
+ "keywords": [
+  "môi giới, phân tích tài chính, quản lý quỹ",
+  "đại học trở lên",
+  "thi sát hạch",
+  "03 năm không hành nghề"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Loại nào KHÔNG phải chứng chỉ hành nghề chứng khoán theo khoản 1 Điều 97?",
+   "options": [
+    "Chứng chỉ hành nghề kiểm toán",
+    "Chứng chỉ hành nghề môi giới chứng khoán",
+    "Chứng chỉ hành nghề phân tích tài chính",
+    "Chứng chỉ hành nghề quản lý quỹ"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 97 có ba loại.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 97 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Không hành nghề chứng khoán liên tục bao lâu thì bị thu hồi chứng chỉ?",
+   "options": [
+    "03 năm",
+    "01 năm",
+    "02 năm",
+    "05 năm"
+   ],
+   "answer": 0,
+   "explain": "Điểm c khoản 3 Điều 97.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 97 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Được cấp lại sau khi bị thu hồi",
+   "right": "Không được cấp lại",
+   "cases": [
+    {
+     "text": "Bị thu hồi vì không hành nghề 03 năm liên tục",
+     "answer": "left"
+    },
+    {
+     "text": "Bị thu hồi vì vi phạm hành vi bị cấm tại Điều 12",
+     "answer": "right"
+    },
+    {
+     "text": "Bị thu hồi vì làm việc cùng lúc cho 02 công ty chứng khoán",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 3, 4 Điều 97; điểm a khoản 2 Điều 98."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chứng chỉ hành nghề chứng khoán gồm: chứng chỉ hành nghề {{môi giới}} chứng khoán, chứng chỉ hành nghề {{phân tích tài chính}} và chứng chỉ hành nghề quản lý quỹ.",
+   "bank_extra": [
+    "kế toán",
+    "luật sư"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người được cấp chứng chỉ hành nghề chứng khoán phải có trình độ từ {{đại học}} trở lên.",
+   "bank_extra": [
+    "trung cấp",
+    "thạc sĩ"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người bị thu hồi chứng chỉ hành nghề vì vi phạm hành vi bị cấm tại Điều 12 được cấp lại sau 05 năm.",
+   "answer": false,
+   "explain": "Sai. Khoản 4 Điều 97: không được cấp lại."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các loại chứng chỉ hành nghề chứng khoán, điều kiện cấp và trường hợp thu hồi.",
+   "model": "Ba loại: môi giới, phân tích tài chính, quản lý quỹ. Điều kiện: năng lực hành vi dân sự đầy đủ, không bị truy cứu hình sự hoặc cấm hành nghề; đại học trở lên; có chuyên môn chứng khoán; đạt kỳ thi sát hạch. Thu hồi: không còn đủ điều kiện; vi phạm Điều 12 hoặc khoản 2 Điều 98 (không được cấp lại); không hành nghề 03 năm liên tục (Điều 97).",
+   "keywords": [
+    "môi giới",
+    "phân tích tài chính",
+    "quản lý quỹ",
+    "sát hạch",
+    "03 năm"
+   ]
+  }
+ ]
+}

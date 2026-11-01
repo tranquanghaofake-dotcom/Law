@@ -1,0 +1,125 @@
+{
+ "id": "chung-khoan-phai-sinh",
+ "subject": "chung-khoan",
+ "chapter": "c1-khai-niem",
+ "term": "Chứng khoán phái sinh",
+ "definition": "Chứng khoán phái sinh là công cụ tài chính dưới dạng hợp đồng, bao gồm hợp đồng quyền chọn, hợp đồng tương lai, hợp đồng kỳ hạn, trong đó xác nhận quyền, nghĩa vụ của các bên đối với việc thanh toán tiền, chuyển giao số lượng tài sản cơ sở nhất định theo mức giá đã được xác định trong khoảng thời gian hoặc vào ngày đã xác định trong tương lai.",
+ "plain": "Phái sinh là hợp đồng mà giá trị \"phái sinh\" (bắt nguồn) từ một tài sản khác gọi là tài sản cơ sở, ví dụ chỉ số VN30. Các bên chốt giá hôm nay cho việc thanh toán hoặc giao tài sản trong tương lai.",
+ "example": "Hợp đồng tương lai chỉ số VN30 đáo hạn tháng sau: bạn cam kết \"mua\" chỉ số ở mức 1.300 điểm; đến hạn, nếu chỉ số là 1.350 thì bạn được thanh toán phần chênh lệch.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 9 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "chung-khoan",
+  "chung-quyen"
+ ],
+ "keywords": [
+  "hợp đồng",
+  "tài sản cơ sở",
+  "quyền chọn, tương lai, kỳ hạn"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 9 Điều 4, chứng khoán phái sinh là gì?",
+   "options": [
+    "Công cụ tài chính dưới dạng hợp đồng",
+    "Giấy tờ xác nhận phần vốn cổ phần",
+    "Giấy tờ xác nhận phần nợ",
+    "Phần vốn góp của quỹ đầu tư"
+   ],
+   "answer": 0,
+   "explain": "Khoản 9 Điều 4: \"công cụ tài chính dưới dạng hợp đồng\".",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 9 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Loại nào KHÔNG được liệt kê là chứng khoán phái sinh tại khoản 9 Điều 4?",
+   "options": [
+    "Hợp đồng bảo lãnh phát hành",
+    "Hợp đồng quyền chọn",
+    "Hợp đồng tương lai",
+    "Hợp đồng kỳ hạn"
+   ],
+   "answer": 0,
+   "explain": "Ba loại: quyền chọn, tương lai, kỳ hạn. Bảo lãnh phát hành là một nghiệp vụ kinh doanh chứng khoán (khoản 31), không phải chứng khoán phái sinh.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 9 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hợp đồng tương lai",
+   "right": "Hợp đồng kỳ hạn",
+   "cases": [
+    {
+     "text": "Chứng khoán phái sinh niêm yết",
+     "answer": "left"
+    },
+    {
+     "text": "Chứng khoán phái sinh giao dịch thỏa thuận",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 12 và khoản 13 Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chứng khoán phái sinh bao gồm hợp đồng {{quyền chọn}}, hợp đồng {{tương lai}}, hợp đồng kỳ hạn.",
+   "bank_extra": [
+    "bảo lãnh",
+    "vay"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tài sản cơ sở của chứng khoán phái sinh là chứng khoán, {{chỉ số chứng khoán}} hoặc tài sản khác theo quy định của Chính phủ.",
+   "bank_extra": [
+    "lãi suất ngân hàng",
+    "tỷ giá vàng"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Hai người ký thỏa thuận riêng: một tháng sau A bán cho B 1.000 cổ phiếu X với giá 30.000 đồng, không qua sàn. Theo khoản 9 và khoản 13 Điều 4, thỏa thuận này gần nhất với loại nào?",
+   "options": [
+    "Hợp đồng kỳ hạn (giao dịch thỏa thuận)",
+    "Hợp đồng tương lai (niêm yết)",
+    "Chứng chỉ quỹ",
+    "Quyền mua cổ phần"
+   ],
+   "answer": 0,
+   "explain": "Cam kết mua/bán tài sản cơ sở theo giá xác định vào ngày xác định trong tương lai, giao dịch thỏa thuận → hợp đồng kỳ hạn (khoản 13). Hợp đồng tương lai là loại niêm yết (khoản 12).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 13 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Định nghĩa chứng khoán phái sinh và kể ba loại theo khoản 9 Điều 4.",
+   "model": "Chứng khoán phái sinh là công cụ tài chính dưới dạng hợp đồng (hợp đồng quyền chọn, hợp đồng tương lai, hợp đồng kỳ hạn), xác nhận quyền, nghĩa vụ của các bên đối với việc thanh toán tiền, chuyển giao số lượng tài sản cơ sở nhất định theo mức giá đã xác định trong khoảng thời gian hoặc vào ngày đã xác định trong tương lai.",
+   "keywords": [
+    "hợp đồng",
+    "quyền chọn",
+    "tương lai",
+    "kỳ hạn",
+    "tài sản cơ sở"
+   ]
+  }
+ ]
+}

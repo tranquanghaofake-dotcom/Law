@@ -1,0 +1,116 @@
+{
+ "id": "nhiem-vu-chinh-quyen-dia-phuong",
+ "subject": "hien-phap",
+ "chapter": "c11-chinh-quyen-dia-phuong",
+ "term": "Nhiệm vụ của chính quyền địa phương và phân định thẩm quyền",
+ "definition": "Chính quyền địa phương tổ chức và bảo đảm việc thi hành Hiến pháp và pháp luật tại địa phương; quyết định các vấn đề của địa phương do luật định; chịu sự kiểm tra, giám sát của cơ quan nhà nước cấp trên. Nhiệm vụ, quyền hạn của chính quyền địa phương được xác định trên cơ sở phân định thẩm quyền giữa các cơ quan nhà nước ở trung ương và địa phương và của mỗi cấp chính quyền địa phương.",
+ "plain": "Ba vai trò: thi hành Hiến pháp, pháp luật ở địa phương; tự QUYẾT ĐỊNH vấn đề địa phương do luật định; chịu kiểm tra, giám sát của cấp trên. Nguyên tắc PHÂN ĐỊNH THẨM QUYỀN giữa trung ương và địa phương, giữa các cấp (nền tảng của phân cấp, phân quyền). Cấp trên có thể ỦY QUYỀN/giao nhiệm vụ cho chính quyền địa phương kèm điều kiện bảo đảm (khoản 3).",
+ "example": "Luật giao chính quyền cấp tỉnh quyết định một số chính sách hỗ trợ đặc thù cho người dân trên địa bàn: đó là \"quyết định các vấn đề của địa phương do luật định\".",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 112 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "cap-chinh-quyen-dia-phuong",
+  "hoi-dong-nhan-dan",
+  "uy-ban-nhan-dan"
+ ],
+ "keywords": [
+  "thi hành Hiến pháp, pháp luật",
+  "quyết định vấn đề địa phương",
+  "phân định thẩm quyền",
+  "kiểm tra, giám sát của cấp trên"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nhiệm vụ, quyền hạn của chính quyền địa phương được xác định trên cơ sở nào?",
+   "options": [
+    "Phân định thẩm quyền giữa trung ương và địa phương và của mỗi cấp chính quyền địa phương",
+    "Ý chí của Chủ tịch Ủy ban nhân dân",
+    "Thỏa thuận giữa các địa phương",
+    "Quyết định của Mặt trận Tổ quốc"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 112.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 112 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khi được giao thực hiện nhiệm vụ của cơ quan nhà nước cấp trên, chính quyền địa phương được bảo đảm điều gì?",
+   "options": [
+    "Các điều kiện bảo đảm thực hiện nhiệm vụ đó",
+    "Được miễn kiểm tra",
+    "Được tự quyết ngân sách trung ương",
+    "Không bảo đảm gì"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 112.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 112 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Chính quyền địa phương được",
+   "right": "Chính quyền địa phương phải",
+   "cases": [
+    {
+     "text": "Quyết định các vấn đề của địa phương do luật định",
+     "answer": "left"
+    },
+    {
+     "text": "Chịu sự kiểm tra, giám sát của cơ quan nhà nước cấp trên",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 112."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chính quyền địa phương tổ chức và bảo đảm việc {{thi hành}} Hiến pháp và pháp luật tại địa phương; chịu sự kiểm tra, {{giám sát}} của cơ quan nhà nước cấp trên.",
+   "bank_extra": [
+    "ban hành",
+    "chỉ huy"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhiệm vụ, quyền hạn của chính quyền địa phương được xác định trên cơ sở {{phân định thẩm quyền}} giữa trung ương và địa phương.",
+   "bank_extra": [
+    "thỏa thuận",
+    "xin - cho"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chính quyền địa phương được quyết định mọi vấn đề của địa phương mà không cần luật quy định.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 112: quyết định các vấn đề của địa phương \"do luật định\"."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày nhiệm vụ của chính quyền địa phương theo Điều 112.",
+   "model": "Tổ chức, bảo đảm thi hành Hiến pháp, pháp luật tại địa phương; quyết định vấn đề địa phương do luật định; chịu kiểm tra, giám sát của cấp trên (khoản 1); nhiệm vụ, quyền hạn xác định trên cơ sở phân định thẩm quyền trung ương – địa phương và giữa các cấp (khoản 2); có thể được giao nhiệm vụ của cấp trên kèm điều kiện bảo đảm (khoản 3).",
+   "keywords": [
+    "thi hành",
+    "quyết định",
+    "phân định thẩm quyền",
+    "kiểm tra, giám sát"
+   ]
+  }
+ ]
+}

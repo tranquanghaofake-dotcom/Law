@@ -1,0 +1,119 @@
+{
+ "id": "pho-chu-tich-nuoc",
+ "subject": "hien-phap",
+ "chapter": "c8-chu-tich-nuoc",
+ "term": "Phó Chủ tịch nước",
+ "definition": "Phó Chủ tịch nước do Quốc hội bầu trong số đại biểu Quốc hội. Phó Chủ tịch nước giúp Chủ tịch nước thực hiện nhiệm vụ và có thể được Chủ tịch nước uỷ nhiệm thay Chủ tịch nước thực hiện một số nhiệm vụ.",
+ "plain": "Phó Chủ tịch nước: do Quốc hội bầu trong số đại biểu Quốc hội (theo đề nghị của Chủ tịch nước); giúp việc và được ủy nhiệm một số nhiệm vụ. Hai trường hợp GIỮ QUYỀN Chủ tịch nước (Điều 93): Chủ tịch nước không làm việc được trong thời gian dài; hoặc khuyết Chủ tịch nước (giữ quyền đến khi Quốc hội bầu Chủ tịch nước mới).",
+ "example": "Khi Chủ tịch nước thôi chức giữa nhiệm kỳ, Phó Chủ tịch nước giữ quyền Chủ tịch nước cho đến khi Quốc hội bầu Chủ tịch nước mới (Điều 93).",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 92 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "chu-tich-nuoc-bau-nhiem-ky",
+  "chu-tich-nuoc-vi-tri"
+ ],
+ "keywords": [
+  "Quốc hội bầu",
+  "ủy nhiệm",
+  "giữ quyền Chủ tịch nước",
+  "khuyết Chủ tịch nước"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trong trường hợp khuyết Chủ tịch nước, ai giữ quyền Chủ tịch nước?",
+   "options": [
+    "Phó Chủ tịch nước",
+    "Chủ tịch Quốc hội",
+    "Thủ tướng Chính phủ",
+    "Chánh án Tòa án nhân dân tối cao"
+   ],
+   "answer": 0,
+   "explain": "Điều 93.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 93 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Phó Chủ tịch nước do ai bầu?",
+   "options": [
+    "Quốc hội, trong số đại biểu Quốc hội",
+    "Chủ tịch nước bổ nhiệm",
+    "Ủy ban thường vụ Quốc hội",
+    "Nhân dân bầu trực tiếp"
+   ],
+   "answer": 0,
+   "explain": "Điều 92.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 92 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Ủy nhiệm",
+   "right": "Giữ quyền Chủ tịch nước",
+   "cases": [
+    {
+     "text": "Chủ tịch nước giao Phó Chủ tịch nước thay mình thực hiện một số nhiệm vụ",
+     "answer": "left"
+    },
+    {
+     "text": "Chủ tịch nước không làm việc được trong thời gian dài",
+     "answer": "right"
+    },
+    {
+     "text": "Khuyết Chủ tịch nước",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 92, 93."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Phó Chủ tịch nước do {{Quốc hội}} bầu trong số đại biểu Quốc hội; có thể được Chủ tịch nước {{ủy nhiệm}} thay Chủ tịch nước thực hiện một số nhiệm vụ.",
+   "bank_extra": [
+    "Chính phủ",
+    "bổ nhiệm"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Trong trường hợp khuyết Chủ tịch nước thì Phó Chủ tịch nước giữ quyền Chủ tịch nước cho đến khi Quốc hội bầu ra {{Chủ tịch nước mới}}.",
+   "bank_extra": [
+    "Thủ tướng mới",
+    "Quốc hội khóa mới"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Khi khuyết Chủ tịch nước, Chủ tịch Quốc hội đương nhiên giữ quyền Chủ tịch nước.",
+   "answer": false,
+   "explain": "Sai. Điều 93: Phó Chủ tịch nước giữ quyền Chủ tịch nước."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày vị trí và các trường hợp Phó Chủ tịch nước giữ quyền Chủ tịch nước.",
+   "model": "Phó Chủ tịch nước do Quốc hội bầu trong số đại biểu Quốc hội, giúp Chủ tịch nước, có thể được ủy nhiệm một số nhiệm vụ (Điều 92). Giữ quyền Chủ tịch nước khi Chủ tịch nước không làm việc được trong thời gian dài, hoặc khi khuyết Chủ tịch nước cho đến khi Quốc hội bầu Chủ tịch nước mới (Điều 93).",
+   "keywords": [
+    "Quốc hội bầu",
+    "ủy nhiệm",
+    "giữ quyền",
+    "khuyết"
+   ]
+  }
+ ]
+}

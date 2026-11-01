@@ -1,0 +1,116 @@
+{
+ "id": "quan-he-phap-luat-hien-phap",
+ "subject": "hien-phap",
+ "chapter": "c1-nhung-van-de-chung",
+ "term": "Quan hệ pháp luật Hiến pháp",
+ "definition": "Quan hệ pháp luật Hiến pháp là những quan hệ xã hội thuộc đối tượng điều chỉnh của ngành luật Hiến pháp, được các quy phạm luật Hiến pháp điều chỉnh, trong đó các chủ thể có quyền và nghĩa vụ do luật Hiến pháp quy định.",
+ "plain": "Đặc điểm theo giáo trình: CHỦ THỂ đặc biệt, có những chủ thể chỉ xuất hiện trong luật Hiến pháp: Nhân dân, Quốc hội, Chủ tịch nước, Chính phủ, đại biểu Quốc hội, cử tri, Mặt trận Tổ quốc, đơn vị bầu cử, cộng đồng các dân tộc. Có những quan hệ chung (phát sinh từ chính quy phạm Hiến pháp mà không cần sự kiện pháp lý cụ thể, như quan hệ giữa Nhà nước và mọi công dân về quyền bất khả xâm phạm thân thể) và quan hệ cụ thể (quan hệ bầu cử giữa cử tri và tổ bầu cử). Cơ sở phát sinh: quy phạm luật Hiến pháp và sự kiện pháp lý.",
+ "example": "Cử tri đi bỏ phiếu ở khu vực bỏ phiếu là quan hệ pháp luật Hiến pháp cụ thể giữa cử tri và tổ bầu cử; chủ thể \"cử tri\", \"tổ bầu cử\" không xuất hiện trong quan hệ dân sự thông thường.",
+ "source": {
+  "kind": "textbook",
+  "cite": "Giáo trình Luật Hiến pháp (mục lục 11 chương do Hào cung cấp), Chương 1 \"Những vấn đề chung về Hiến pháp\" — tóm lược quan điểm học thuật phổ biến, chưa đối chiếu nguyên văn"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "doi-tuong-dieu-chinh-luat-hien-phap",
+  "phuong-phap-dieu-chinh-luat-hien-phap",
+  "chu-quyen-nhan-dan"
+ ],
+ "keywords": [
+  "chủ thể đặc biệt",
+  "Nhân dân, Quốc hội, cử tri",
+  "quan hệ chung và quan hệ cụ thể",
+  "quy phạm và sự kiện pháp lý"
+ ],
+ "note": "Thẻ dạng tóm lược quan điểm học thuật, chưa đối chiếu nguyên văn giáo trình; cần Hào đối chiếu trang 1–9 của sách.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chủ thể nào chỉ đặc trưng cho quan hệ pháp luật Hiến pháp?",
+   "options": [
+    "Nhân dân, Quốc hội, cử tri, đơn vị bầu cử",
+    "Người bán, người mua",
+    "Người lao động, người sử dụng lao động",
+    "Bị cáo, người bị hại"
+   ],
+   "answer": 0,
+   "explain": "Quan điểm phổ biến.",
+   "source": {
+    "kind": "textbook",
+    "cite": "Giáo trình Luật Hiến pháp (mục lục 11 chương do Hào cung cấp), Chương 1 \"Những vấn đề chung về Hiến pháp\" — tóm lược quan điểm học thuật phổ biến, chưa đối chiếu nguyên văn"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quan hệ giữa cử tri và tổ bầu cử khi bỏ phiếu là loại quan hệ pháp luật Hiến pháp nào?",
+   "options": [
+    "Quan hệ cụ thể",
+    "Quan hệ chung",
+    "Không phải quan hệ pháp luật",
+    "Quan hệ dân sự"
+   ],
+   "answer": 0,
+   "explain": "Phát sinh từ sự kiện pháp lý cụ thể (cuộc bầu cử).",
+   "source": {
+    "kind": "textbook",
+    "cite": "Giáo trình Luật Hiến pháp (mục lục 11 chương do Hào cung cấp), Chương 1 \"Những vấn đề chung về Hiến pháp\" — tóm lược quan điểm học thuật phổ biến, chưa đối chiếu nguyên văn"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quan hệ pháp luật Hiến pháp chung",
+   "right": "Quan hệ pháp luật Hiến pháp cụ thể",
+   "cases": [
+    {
+     "text": "Giữa Nhà nước và mọi công dân về quyền bất khả xâm phạm thân thể",
+     "answer": "left"
+    },
+    {
+     "text": "Giữa cử tri A và tổ bầu cử khu vực X",
+     "answer": "right"
+    }
+   ],
+   "explain": "Phân loại phổ biến của giáo trình."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quan hệ pháp luật Hiến pháp có những chủ thể đặc biệt như {{Nhân dân}}, Quốc hội, {{cử tri}}.",
+   "bank_extra": [
+    "doanh nghiệp",
+    "người tiêu dùng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Cơ sở phát sinh quan hệ pháp luật Hiến pháp là quy phạm luật Hiến pháp và {{sự kiện pháp lý}}.",
+   "bank_extra": [
+    "hợp đồng",
+    "tập quán"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quan hệ pháp luật Hiến pháp chỉ phát sinh giữa các cá nhân với nhau.",
+   "answer": false,
+   "explain": "Sai. Chủ thể thường là Nhà nước, cơ quan nhà nước, Nhân dân, cử tri, đại biểu…"
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm và đặc điểm của quan hệ pháp luật Hiến pháp.",
+   "model": "Là quan hệ xã hội thuộc đối tượng luật Hiến pháp được quy phạm luật Hiến pháp điều chỉnh; chủ thể đặc biệt (Nhân dân, Quốc hội, Chủ tịch nước, cử tri, đại biểu, đơn vị bầu cử…); gồm quan hệ chung và quan hệ cụ thể; phát sinh từ quy phạm và sự kiện pháp lý.",
+   "keywords": [
+    "chủ thể đặc biệt",
+    "cử tri",
+    "quan hệ chung",
+    "sự kiện pháp lý"
+   ]
+  }
+ ]
+}

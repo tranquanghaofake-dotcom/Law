@@ -1,25 +1,135 @@
 {
-  "id": "chu-quyen-nhan-dan", "subject": "hien-phap", "chapter": "khai-quat",
-  "term": "Chủ quyền Nhân dân (tất cả quyền lực nhà nước thuộc về Nhân dân)",
-  "definition": "Nước Cộng hòa xã hội chủ nghĩa Việt Nam do Nhân dân làm chủ; tất cả quyền lực nhà nước thuộc về Nhân dân mà nền tảng là liên minh giữa giai cấp công nhân với giai cấp nông dân và đội ngũ trí thức.",
-  "plain": "Nguồn gốc của mọi quyền lực nhà nước là Nhân dân. Nhà nước chỉ là người được Nhân dân trao quyền; Nhân dân thực hiện quyền lực trực tiếp (bầu cử, trưng cầu ý dân) và gián tiếp qua Quốc hội, Hội đồng nhân dân.",
-  "example": "Cử tri bầu đại biểu Quốc hội; Quốc hội do dân bầu mới có quyền làm luật. Nếu một cơ quan tự cho mình quyền lực không do Nhân dân trao thì trái với nguyên tắc này.",
-  "source": { "kind": "statute", "cite": "Khoản 2 Điều 2 Hiến pháp 2013", "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801" },
-  "checked": "2026-11-01",
-  "confusables": ["nha-nuoc-phap-quyen-xhcn", "quyen-luc-nha-nuoc-thong-nhat"],
-  "keywords": ["Nhân dân làm chủ", "tất cả quyền lực nhà nước thuộc về Nhân dân", "liên minh công nhân, nông dân, trí thức"],
-  "items": [
-    { "type": "mcq", "level": 1, "q": "Theo khoản 2 Điều 2 Hiến pháp 2013, tất cả quyền lực nhà nước thuộc về ai?", "options": ["Nhân dân", "Quốc hội", "Đảng Cộng sản Việt Nam", "Chính phủ"], "answer": 0, "explain": "Quyền lực nhà nước thuộc về Nhân dân; Quốc hội chỉ là cơ quan đại biểu cao nhất của Nhân dân thực hiện quyền lực đó.", "source": { "kind": "statute", "cite": "Khoản 2 Điều 2 Hiến pháp 2013" } },
-    { "type": "mcq", "level": 1, "q": "Nền tảng của quyền lực Nhân dân theo Hiến pháp 2013 là gì?", "options": ["Liên minh giữa giai cấp công nhân với giai cấp nông dân và đội ngũ trí thức", "Liên minh giữa Nhà nước và doanh nghiệp", "Hệ thống các cơ quan nhà nước từ trung ương đến địa phương", "Khối đại đoàn kết các tôn giáo"], "answer": 0, "explain": "Nguyên văn khoản 2 Điều 2: nền tảng là liên minh giữa giai cấp công nhân với giai cấp nông dân và đội ngũ trí thức.", "source": { "kind": "statute", "cite": "Khoản 2 Điều 2 Hiến pháp 2013" } },
-    { "type": "pair", "level": 2, "left": "Chủ quyền Nhân dân", "right": "Quyền lực nhà nước thống nhất", "cases": [
-      { "text": "Trả lời câu hỏi: quyền lực nhà nước TỪ ĐÂU mà có?", "answer": "left" },
-      { "text": "Trả lời câu hỏi: quyền lực nhà nước được TỔ CHỨC THỰC HIỆN như thế nào giữa các cơ quan?", "answer": "right" },
-      { "text": "Cử tri đi bầu đại biểu Quốc hội là biểu hiện trực tiếp của nguyên tắc này.", "answer": "left" }
-    ], "explain": "Khoản 2 Điều 2 nói về nguồn gốc quyền lực (Nhân dân); khoản 3 Điều 2 nói về cách tổ chức quyền lực (thống nhất, phân công, phối hợp, kiểm soát)." },
-    { "type": "cloze", "level": 3, "text": "Nước Cộng hòa xã hội chủ nghĩa Việt Nam do {{Nhân dân}} làm chủ; tất cả {{quyền lực nhà nước}} thuộc về Nhân dân.", "bank_extra": ["Quốc hội", "quyền lập pháp"] },
-    { "type": "cloze", "level": 3, "text": "Nền tảng là liên minh giữa giai cấp {{công nhân}} với giai cấp {{nông dân}} và đội ngũ {{trí thức}}.", "bank_extra": ["doanh nhân", "công chức"] },
-    { "type": "case", "level": 4, "q": "Một cơ quan nhà nước ban hành quyết định với lý lẽ \"quyền lực này là của riêng cơ quan chúng tôi, không phải do ai trao\". Lập luận này trái với nguyên tắc nào của Hiến pháp 2013?", "options": ["Nguyên tắc tất cả quyền lực nhà nước thuộc về Nhân dân", "Nguyên tắc Hiến pháp có hiệu lực pháp lý cao nhất", "Nguyên tắc Đảng lãnh đạo Nhà nước và xã hội", "Nguyên tắc bảo vệ Hiến pháp"], "answer": 0, "explain": "Mọi quyền lực nhà nước đều do Nhân dân trao; không cơ quan nào có quyền lực \"tự thân\" (khoản 2 Điều 2).", "source": { "kind": "statute", "cite": "Khoản 2 Điều 2 Hiến pháp 2013" } },
-    { "type": "truefalse", "level": 4, "statement": "Theo Hiến pháp 2013, Quốc hội là chủ thể sở hữu tất cả quyền lực nhà nước.", "answer": false, "explain": "Sai. Chủ thể của quyền lực nhà nước là Nhân dân; Quốc hội là cơ quan đại biểu cao nhất của Nhân dân, thực hiện quyền lực do Nhân dân trao (khoản 2 Điều 2, Điều 69)." },
-    { "type": "recall", "level": 5, "q": "Nhân dân thực hiện quyền lực nhà nước bằng những cách nào? Nêu căn cứ.", "model": "Nhân dân thực hiện quyền lực nhà nước bằng dân chủ trực tiếp (bầu cử, trưng cầu ý dân) và bằng dân chủ đại diện thông qua Quốc hội, Hội đồng nhân dân và các cơ quan khác của Nhà nước; cơ sở là nguyên tắc tất cả quyền lực nhà nước thuộc về Nhân dân (khoản 2 Điều 2, Điều 6 Hiến pháp 2013).", "keywords": ["dân chủ trực tiếp", "dân chủ đại diện", "Quốc hội", "Hội đồng nhân dân"] }
-  ]
+ "id": "chu-quyen-nhan-dan",
+ "subject": "hien-phap",
+ "chapter": "c3-che-do-chinh-tri",
+ "term": "Chủ quyền Nhân dân (tất cả quyền lực nhà nước thuộc về Nhân dân)",
+ "definition": "Nước Cộng hòa xã hội chủ nghĩa Việt Nam do Nhân dân làm chủ; tất cả quyền lực nhà nước thuộc về Nhân dân mà nền tảng là liên minh giữa giai cấp công nhân với giai cấp nông dân và đội ngũ trí thức.",
+ "plain": "Nguồn gốc của mọi quyền lực nhà nước là Nhân dân. Nhà nước chỉ là người được Nhân dân trao quyền; Nhân dân thực hiện quyền lực trực tiếp (bầu cử, trưng cầu ý dân) và gián tiếp qua Quốc hội, Hội đồng nhân dân.",
+ "example": "Cử tri bầu đại biểu Quốc hội; Quốc hội do dân bầu mới có quyền làm luật. Nếu một cơ quan tự cho mình quyền lực không do Nhân dân trao thì trái với nguyên tắc này.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 2 Điều 2 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nha-nuoc-phap-quyen-xhcn",
+  "quyen-luc-nha-nuoc-thong-nhat"
+ ],
+ "keywords": [
+  "Nhân dân làm chủ",
+  "tất cả quyền lực nhà nước thuộc về Nhân dân",
+  "liên minh công nhân, nông dân, trí thức"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 2 Điều 2 Hiến pháp 2013, tất cả quyền lực nhà nước thuộc về ai?",
+   "options": [
+    "Nhân dân",
+    "Quốc hội",
+    "Đảng Cộng sản Việt Nam",
+    "Chính phủ"
+   ],
+   "answer": 0,
+   "explain": "Quyền lực nhà nước thuộc về Nhân dân; Quốc hội chỉ là cơ quan đại biểu cao nhất của Nhân dân thực hiện quyền lực đó.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 2 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nền tảng của quyền lực Nhân dân theo Hiến pháp 2013 là gì?",
+   "options": [
+    "Liên minh giữa giai cấp công nhân với giai cấp nông dân và đội ngũ trí thức",
+    "Liên minh giữa Nhà nước và doanh nghiệp",
+    "Hệ thống các cơ quan nhà nước từ trung ương đến địa phương",
+    "Khối đại đoàn kết các tôn giáo"
+   ],
+   "answer": 0,
+   "explain": "Nguyên văn khoản 2 Điều 2: nền tảng là liên minh giữa giai cấp công nhân với giai cấp nông dân và đội ngũ trí thức.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 2 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Chủ quyền Nhân dân",
+   "right": "Quyền lực nhà nước thống nhất",
+   "cases": [
+    {
+     "text": "Trả lời câu hỏi: quyền lực nhà nước TỪ ĐÂU mà có?",
+     "answer": "left"
+    },
+    {
+     "text": "Trả lời câu hỏi: quyền lực nhà nước được TỔ CHỨC THỰC HIỆN như thế nào giữa các cơ quan?",
+     "answer": "right"
+    },
+    {
+     "text": "Cử tri đi bầu đại biểu Quốc hội là biểu hiện trực tiếp của nguyên tắc này.",
+     "answer": "left"
+    }
+   ],
+   "explain": "Khoản 2 Điều 2 nói về nguồn gốc quyền lực (Nhân dân); khoản 3 Điều 2 nói về cách tổ chức quyền lực (thống nhất, phân công, phối hợp, kiểm soát)."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nước Cộng hòa xã hội chủ nghĩa Việt Nam do {{Nhân dân}} làm chủ; tất cả {{quyền lực nhà nước}} thuộc về Nhân dân.",
+   "bank_extra": [
+    "Quốc hội",
+    "quyền lập pháp"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nền tảng là liên minh giữa giai cấp {{công nhân}} với giai cấp {{nông dân}} và đội ngũ {{trí thức}}.",
+   "bank_extra": [
+    "doanh nhân",
+    "công chức"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Một cơ quan nhà nước ban hành quyết định với lý lẽ \"quyền lực này là của riêng cơ quan chúng tôi, không phải do ai trao\". Lập luận này trái với nguyên tắc nào của Hiến pháp 2013?",
+   "options": [
+    "Nguyên tắc tất cả quyền lực nhà nước thuộc về Nhân dân",
+    "Nguyên tắc Hiến pháp có hiệu lực pháp lý cao nhất",
+    "Nguyên tắc Đảng lãnh đạo Nhà nước và xã hội",
+    "Nguyên tắc bảo vệ Hiến pháp"
+   ],
+   "answer": 0,
+   "explain": "Mọi quyền lực nhà nước đều do Nhân dân trao; không cơ quan nào có quyền lực \"tự thân\" (khoản 2 Điều 2).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 2 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo Hiến pháp 2013, Quốc hội là chủ thể sở hữu tất cả quyền lực nhà nước.",
+   "answer": false,
+   "explain": "Sai. Chủ thể của quyền lực nhà nước là Nhân dân; Quốc hội là cơ quan đại biểu cao nhất của Nhân dân, thực hiện quyền lực do Nhân dân trao (khoản 2 Điều 2, Điều 69)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nhân dân thực hiện quyền lực nhà nước bằng những cách nào? Nêu căn cứ.",
+   "model": "Nhân dân thực hiện quyền lực nhà nước bằng dân chủ trực tiếp (bầu cử, trưng cầu ý dân) và bằng dân chủ đại diện thông qua Quốc hội, Hội đồng nhân dân và các cơ quan khác của Nhà nước; cơ sở là nguyên tắc tất cả quyền lực nhà nước thuộc về Nhân dân (khoản 2 Điều 2, Điều 6 Hiến pháp 2013).",
+   "keywords": [
+    "dân chủ trực tiếp",
+    "dân chủ đại diện",
+    "Quốc hội",
+    "Hội đồng nhân dân"
+   ]
+  }
+ ]
 }

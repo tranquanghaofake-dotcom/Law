@@ -1,0 +1,125 @@
+{
+ "id": "sac-lenh-63-chinh-quyen",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c8-hien-dai",
+ "term": "Sắc lệnh 63/SL (1945): chính quyền nhân dân địa phương",
+ "definition": "Để thực hiện chính quyền nhân dân địa phương trong nước Việt Nam, sẽ đặt hai thứ cơ quan: Hội đồng nhân dân và Uỷ ban hành chính. Hội đồng nhân dân do dân bầu ra theo lối phổ thông và trực tiếp đầu phiếu là cơ quan thay mặt cho dân. Uỷ ban hành chính do các Hội đồng nhân dân bầu ra là cơ quan hành chính vừa thay mặt cho dân vừa đại diện cho Chính phủ.",
+ "plain": "Sắc lệnh 63/SL là văn bản đầu tiên tổ chức chính quyền địa phương của nước Việt Nam dân chủ cộng hòa. Hai loại cơ quan: HỘI ĐỒNG NHÂN DÂN (dân bầu, phổ thông, trực tiếp) và ỦY BAN HÀNH CHÍNH (do HĐND bầu, vừa thay mặt dân vừa đại diện Chính phủ). Chỉ cấp XÃ và TỈNH có cả HĐND và UBHC; cấp HUYỆN và KỲ chỉ có UBHC. Có cơ chế cử tri bãi miễn, bỏ phiếu tín nhiệm (Điều 7, 18). Mô hình này được Hiến pháp 1946 ghi nhận. Ủy ban hành chính tiền thân của Ủy ban nhân dân hiện nay (Điều 114 Hiến pháp 2013).",
+ "example": "Năm 1946, ở cấp huyện chỉ có Ủy ban hành chính huyện do hội viên các Hội đồng nhân dân xã bầu, không có Hội đồng nhân dân huyện.",
+ "source": {
+  "kind": "primary",
+  "cite": "Sắc lệnh số 63/SL ngày 22/11/1945 về tổ chức các Hội đồng nhân dân và Uỷ ban hành chính, Điều thứ 1 (vbpl.vn: hết hiệu lực toàn bộ)",
+  "url": "https://vbpl.vn/en/van-ban/chi-tiet/sac-lenh-so-63-sl-ve-viec-to-chuc-cac-hoi-dong-nhan-dan-va-uy-ban-hanh-chinh--757"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "sac-lenh-13-toa-an",
+  "sac-lenh-47-luat-cu"
+ ],
+ "keywords": [
+  "22/11/1945",
+  "Hội đồng nhân dân",
+  "Ủy ban hành chính",
+  "xã và tỉnh có HĐND",
+  "huyện, kỳ chỉ có UBHC"
+ ],
+ "note": "Văn bản đã hết hiệu lực; học để hiểu lịch sử pháp luật.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều thứ 1 Sắc lệnh 63/SL, cấp nào có cả Hội đồng nhân dân và Ủy ban hành chính?",
+   "options": [
+    "Xã và tỉnh",
+    "Huyện và kỳ",
+    "Tất cả các cấp",
+    "Chỉ cấp tỉnh"
+   ],
+   "answer": 0,
+   "explain": "Điều thứ 1 Sắc lệnh 63/SL.",
+   "source": {
+    "kind": "primary",
+    "cite": "Sắc lệnh 63/SL ngày 22/11/1945, Điều thứ 1"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Sắc lệnh 63/SL, Ủy ban hành chính có tính chất gì?",
+   "options": [
+    "Cơ quan hành chính vừa thay mặt cho dân vừa đại diện cho Chính phủ",
+    "Cơ quan xét xử",
+    "Cơ quan quyền lực cao nhất",
+    "Cơ quan tư vấn"
+   ],
+   "answer": 0,
+   "explain": "Điều thứ 1 Sắc lệnh 63/SL.",
+   "source": {
+    "kind": "primary",
+    "cite": "Sắc lệnh 63/SL, Điều thứ 1"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Có cả HĐND và UBHC (1945)",
+   "right": "Chỉ có UBHC (1945)",
+   "cases": [
+    {
+     "text": "Cấp xã",
+     "answer": "left"
+    },
+    {
+     "text": "Cấp tỉnh",
+     "answer": "left"
+    },
+    {
+     "text": "Cấp huyện",
+     "answer": "right"
+    },
+    {
+     "text": "Cấp kỳ",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều thứ 1 Sắc lệnh 63/SL."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hội đồng nhân dân do dân bầu ra theo lối {{phổ thông}} và {{trực tiếp}} đầu phiếu là cơ quan thay mặt cho dân.",
+   "bank_extra": [
+    "hạn chế",
+    "gián tiếp"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ủy ban hành chính do các {{Hội đồng nhân dân}} bầu ra.",
+   "bank_extra": [
+    "Chính phủ",
+    "cử tri"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo Sắc lệnh 63/SL, cấp huyện có Hội đồng nhân dân huyện.",
+   "answer": false,
+   "explain": "Sai. Cấp huyện và kỳ chỉ có Ủy ban hành chính (Điều thứ 1)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày tổ chức chính quyền địa phương theo Sắc lệnh 63/SL năm 1945.",
+   "model": "Đặt hai loại cơ quan: Hội đồng nhân dân (dân bầu phổ thông, trực tiếp, thay mặt dân) và Ủy ban hành chính (do HĐND bầu, vừa thay mặt dân vừa đại diện Chính phủ); xã và tỉnh có cả HĐND và UBHC, huyện và kỳ chỉ có UBHC; có cơ chế bỏ phiếu tín nhiệm, bãi miễn.",
+   "keywords": [
+    "Hội đồng nhân dân",
+    "Ủy ban hành chính",
+    "xã, tỉnh",
+    "huyện, kỳ"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,116 @@
+{
+ "id": "uy-ban-nhan-dan",
+ "subject": "hien-phap",
+ "chapter": "c11-chinh-quyen-dia-phuong",
+ "term": "Ủy ban nhân dân",
+ "definition": "Uỷ ban nhân dân ở cấp chính quyền địa phương do Hội đồng nhân dân cùng cấp bầu là cơ quan chấp hành của Hội đồng nhân dân, cơ quan hành chính nhà nước ở địa phương, chịu trách nhiệm trước Hội đồng nhân dân và cơ quan hành chính nhà nước cấp trên.",
+ "plain": "Ủy ban nhân dân có \"hai tư cách\" và \"hai chiều trách nhiệm\": vừa là cơ quan CHẤP HÀNH của Hội đồng nhân dân (thực hiện nghị quyết của Hội đồng nhân dân, chịu trách nhiệm trước Hội đồng nhân dân), vừa là cơ quan HÀNH CHÍNH nhà nước ở địa phương (nằm trong hệ thống hành chính do Chính phủ đứng đầu, chịu trách nhiệm trước cơ quan hành chính cấp trên). Tương tự quan hệ Chính phủ – Quốc hội ở trung ương.",
+ "example": "Ủy ban nhân dân xã vừa tổ chức thực hiện nghị quyết của Hội đồng nhân dân xã về xây dựng đường giao thông, vừa thực hiện chỉ đạo của Ủy ban nhân dân tỉnh.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 114 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hoi-dong-nhan-dan",
+  "chinh-phu-vi-tri",
+  "thu-tuong-dinh-chi-van-ban"
+ ],
+ "keywords": [
+  "do Hội đồng nhân dân cùng cấp bầu",
+  "cơ quan chấp hành của Hội đồng nhân dân",
+  "cơ quan hành chính nhà nước ở địa phương",
+  "hai chiều trách nhiệm"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ủy ban nhân dân do ai bầu?",
+   "options": [
+    "Hội đồng nhân dân cùng cấp",
+    "Nhân dân địa phương",
+    "Ủy ban nhân dân cấp trên",
+    "Thủ tướng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 114.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 114 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ủy ban nhân dân chịu trách nhiệm trước ai?",
+   "options": [
+    "Hội đồng nhân dân và cơ quan hành chính nhà nước cấp trên",
+    "Chỉ Hội đồng nhân dân",
+    "Chỉ Chính phủ",
+    "Chỉ Nhân dân địa phương"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 114.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 114 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tư cách cơ quan chấp hành của Hội đồng nhân dân",
+   "right": "Tư cách cơ quan hành chính nhà nước ở địa phương",
+   "cases": [
+    {
+     "text": "Tổ chức thực hiện nghị quyết của Hội đồng nhân dân",
+     "answer": "left"
+    },
+    {
+     "text": "Thực hiện nhiệm vụ do cơ quan nhà nước cấp trên giao",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 2 Điều 114."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ủy ban nhân dân là cơ quan {{chấp hành}} của Hội đồng nhân dân, cơ quan {{hành chính nhà nước}} ở địa phương.",
+   "bank_extra": [
+    "giám sát",
+    "quyền lực nhà nước"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ủy ban nhân dân tổ chức việc thi hành Hiến pháp và pháp luật ở địa phương; tổ chức thực hiện {{nghị quyết}} của Hội đồng nhân dân.",
+   "bank_extra": [
+    "bản án",
+    "pháp lệnh"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Ủy ban nhân dân là cơ quan quyền lực nhà nước ở địa phương.",
+   "answer": false,
+   "explain": "Sai. Cơ quan quyền lực ở địa phương là Hội đồng nhân dân (Điều 113); Ủy ban nhân dân là cơ quan chấp hành, cơ quan hành chính (Điều 114)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày vị trí, tính chất và nhiệm vụ của Ủy ban nhân dân theo Điều 114.",
+   "model": "Ủy ban nhân dân do Hội đồng nhân dân cùng cấp bầu; là cơ quan chấp hành của Hội đồng nhân dân, cơ quan hành chính nhà nước ở địa phương; chịu trách nhiệm trước Hội đồng nhân dân và cơ quan hành chính cấp trên (khoản 1). Tổ chức thi hành Hiến pháp, pháp luật ở địa phương; thực hiện nghị quyết Hội đồng nhân dân và nhiệm vụ cấp trên giao (khoản 2).",
+   "keywords": [
+    "Hội đồng nhân dân bầu",
+    "chấp hành",
+    "hành chính",
+    "cấp trên"
+   ]
+  }
+ ]
+}

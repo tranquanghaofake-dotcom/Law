@@ -1,0 +1,126 @@
+{
+ "id": "dinh-do-thang-long",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c6-trung-dai",
+ "term": "Nhà Lý dời đô về Thăng Long (1010)",
+ "definition": "Vua thấy thành Hoa Lư ẩm thấp chật hẹp, không đủ làm chỗ ở của đế vương, muốn dời đi nơi khác (…). Mùa thu, tháng 7, vua từ thành Hoa Lư, dời đô ra kinh phủ ở thành Đại La, tạm đỗ thuyền dưới thành, có rồng vàng hiện lên ở thuyền ngự, nhân đó đổi tên thành gọi là thành Thăng Long.",
+ "plain": "Lý Công Uẩn (Lý Thái Tổ) lên ngôi năm 1009, năm 1010 ban \"chiếu dời đô\" từ Hoa Lư về Đại La, đổi tên là THĂNG LONG. Chiếu viện dẫn việc dời đô của nhà Thương, nhà Chu, chê nhà Đinh, Lê \"theo ý riêng\" mà vận số ngắn, đề cao nguyên tắc \"trên kính mệnh trời, dưới theo ý dân\". Ý nghĩa với lịch sử nhà nước: chuyển từ kinh đô quân sự, phòng thủ (Hoa Lư) sang trung tâm chính trị, kinh tế ở đồng bằng, thể hiện nhà nước trung ương tập quyền đã vững. Năm 1054, nhà Lý đặt quốc hiệu ĐẠI VIỆT.",
+ "example": "Chiếu dời đô là một văn bản của nhà vua (chiếu), là một loại nguồn pháp luật thời phong kiến bên cạnh luật, lệnh, sắc, chỉ.",
+ "source": {
+  "kind": "primary",
+  "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển II (bản dịch Viện KHXH Việt Nam, NXB KHXH 1993), Kỷ nhà Lý, Thái Tổ, năm 1010, tờ 2a–3a",
+  "url": "https://thpthiephoa1.edu.vn/wp-content/uploads/Dai-viet-su-ki-toan-thu.pdf"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "dinh-dai-co-viet",
+  "hai-muoi-bon-lo",
+  "hinh-thu-1042"
+ ],
+ "keywords": [
+  "1010",
+  "chiếu dời đô",
+  "Hoa Lư → Đại La",
+  "Thăng Long",
+  "Đại Việt (1054)"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Toàn thư, năm 1010 Lý Thái Tổ dời đô từ đâu về đâu?",
+   "options": [
+    "Từ Hoa Lư về thành Đại La (đổi tên Thăng Long)",
+    "Từ Cổ Loa về Hoa Lư",
+    "Từ Thăng Long về Tây Đô",
+    "Từ Mê Linh về Long Biên"
+   ],
+   "answer": 0,
+   "explain": "Toàn thư năm 1010.",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển II, tờ 2a–3a"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nhà Lý đặt quốc hiệu Đại Việt vào năm nào theo Toàn thư?",
+   "options": [
+    "1054",
+    "1010",
+    "1042",
+    "968"
+   ],
+   "answer": 0,
+   "explain": "Năm 1054, khi Thánh Tông lên ngôi: \"Đặt quốc hiệu là Đại Việt\".",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển II, tờ 39b"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hoa Lư",
+   "right": "Thăng Long",
+   "cases": [
+    {
+     "text": "Kinh đô thời Đinh, Tiền Lê",
+     "answer": "left"
+    },
+    {
+     "text": "Kinh đô từ năm 1010",
+     "answer": "right"
+    },
+    {
+     "text": "Bị chiếu dời đô chê là \"ẩm thấp chật hẹp\"",
+     "answer": "left"
+    },
+    {
+     "text": "Được khen \"ở giữa khu vực trời đất, được thế rồng cuộn hổ ngồi\"",
+     "answer": "right"
+    }
+   ],
+   "explain": "Chiếu dời đô năm 1010."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Vua từ thành {{Hoa Lư}}, dời đô ra kinh phủ ở thành {{Đại La}}, nhân đó đổi tên thành gọi là thành Thăng Long.",
+   "bank_extra": [
+    "Cổ Loa",
+    "Tây Đô"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chiếu dời đô nêu: trên kính {{mệnh trời}}, dưới theo {{ý dân}}.",
+   "bank_extra": [
+    "ý vua",
+    "phép nước"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quốc hiệu Đại Việt được đặt ngay khi Lý Thái Tổ dời đô năm 1010.",
+   "answer": false,
+   "explain": "Sai. Toàn thư chép quốc hiệu Đại Việt đặt năm 1054 (Lý Thánh Tông lên ngôi)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày nội dung và ý nghĩa của việc dời đô năm 1010.",
+   "model": "Lý Thái Tổ thấy Hoa Lư ẩm thấp chật hẹp, ban chiếu dời đô: viện dẫn Thương, Chu, chê Đinh, Lê theo ý riêng; khen Đại La ở giữa trời đất, thế rồng cuộn hổ ngồi; tháng 7 năm 1010 dời đô, đổi tên Thăng Long. Ý nghĩa: chuyển trung tâm chính trị về đồng bằng, khẳng định nhà nước trung ương tập quyền vững mạnh; năm 1054 đặt quốc hiệu Đại Việt.",
+   "keywords": [
+    "1010",
+    "Hoa Lư",
+    "Đại La",
+    "Thăng Long",
+    "tập quyền"
+   ]
+  }
+ ]
+}

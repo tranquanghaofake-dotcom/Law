@@ -1,0 +1,120 @@
+{
+ "id": "nguyen-tac-bo-phieu",
+ "subject": "hien-phap",
+ "chapter": "c6-bau-cu",
+ "term": "Nguyên tắc bỏ phiếu",
+ "definition": "Mỗi cử tri có quyền bỏ một phiếu bầu đại biểu Quốc hội và bỏ một phiếu bầu đại biểu Hội đồng nhân dân tương ứng với mỗi cấp Hội đồng nhân dân. Cử tri phải tự mình đi bầu cử, không được nhờ người khác bầu cử thay, trừ trường hợp quy định tại khoản 3 và khoản 4 Điều này; khi bầu cử phải xuất trình thẻ cử tri.",
+ "plain": "Điều 69 là \"nguyên tắc bầu cử phiên bản hành động\": một phiếu cho mỗi cấp (bình đẳng); tự mình đi bầu, xuất trình thẻ cử tri (trực tiếp); ngoại lệ hợp pháp: không tự viết được thì nhờ viết hộ nhưng phải TỰ bỏ phiếu (khuyết tật không tự bỏ được thì nhờ bỏ); ốm đau, già yếu thì Tổ bầu cử mang hòm phiếu phụ đến; không ai được xem khi cử tri viết phiếu (bỏ phiếu kín); viết hỏng được đổi phiếu.",
+ "example": "Trong gia đình, người con cầm thẻ cử tri của cả nhà đi bầu thay cho bố mẹ: sai khoản 2 Điều 69. Thực tế \"bầu hộ\" này là vi phạm phổ biến cần tránh.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 69 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/luat-bau-cu-dai-bieu-quoc-hoi-va-dai-bieu-hoi-dong-nhan-dan-so-85-2015-qh13--70812"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nguyen-tac-bau-cu",
+  "danh-sach-cu-tri"
+ ],
+ "keywords": [
+  "một phiếu mỗi cấp",
+  "tự mình đi bầu",
+  "viết hộ nhưng tự bỏ phiếu",
+  "hòm phiếu phụ"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Cử tri không tự viết được phiếu bầu thì làm thế nào theo khoản 3 Điều 69?",
+   "options": [
+    "Nhờ người khác viết hộ nhưng phải tự mình bỏ phiếu",
+    "Nhờ người khác đi bầu thay",
+    "Được miễn bầu cử",
+    "Tổ bầu cử viết thay và bỏ phiếu"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 69.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 69 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khi bầu cử, cử tri phải xuất trình giấy tờ gì theo khoản 2 Điều 69?",
+   "options": [
+    "Thẻ cử tri",
+    "Giấy khai sinh",
+    "Sổ hộ khẩu",
+    "Bằng lái xe"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 69.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 69 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hợp pháp",
+   "right": "Vi phạm",
+   "cases": [
+    {
+     "text": "Cử tri ốm nặng bầu qua hòm phiếu phụ tại nhà",
+     "answer": "left"
+    },
+    {
+     "text": "Con cầm thẻ cử tri của bố mẹ đi bầu thay",
+     "answer": "right"
+    },
+    {
+     "text": "Cử tri viết hỏng phiếu và xin đổi phiếu khác",
+     "answer": "left"
+    }
+   ],
+   "explain": "Khoản 2, 4, 6 Điều 69."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Cử tri phải {{tự mình}} đi bầu cử, không được nhờ người khác bầu cử thay; khi bầu cử phải xuất trình {{thẻ cử tri}}.",
+   "bank_extra": [
+    "cùng gia đình",
+    "giấy mời"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nếu viết hỏng, cử tri có quyền {{đổi}} phiếu bầu khác.",
+   "bank_extra": [
+    "hủy",
+    "giữ"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thành viên Tổ bầu cử được xem cử tri viết phiếu để hướng dẫn cho đúng.",
+   "answer": false,
+   "explain": "Sai. Khoản 5 Điều 69: khi cử tri viết phiếu, không ai được xem, kể cả thành viên Tổ bầu cử."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày các nguyên tắc bỏ phiếu theo Điều 69 Luật Bầu cử.",
+   "model": "Mỗi cử tri một phiếu cho đại biểu Quốc hội và một phiếu cho mỗi cấp Hội đồng nhân dân; tự mình đi bầu, xuất trình thẻ cử tri; không tự viết được thì nhờ viết hộ nhưng tự bỏ phiếu, khuyết tật thì nhờ bỏ; ốm đau, già yếu, tạm giam thì Tổ bầu cử mang hòm phiếu phụ; không ai được xem khi cử tri viết phiếu; viết hỏng được đổi; đóng dấu \"Đã bỏ phiếu\" vào thẻ cử tri.",
+   "keywords": [
+    "một phiếu",
+    "tự mình",
+    "viết hộ",
+    "hòm phiếu phụ",
+    "không ai được xem"
+   ]
+  }
+ ]
+}

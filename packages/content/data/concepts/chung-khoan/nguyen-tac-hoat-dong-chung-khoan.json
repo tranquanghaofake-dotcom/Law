@@ -1,0 +1,129 @@
+{
+ "id": "nguyen-tac-hoat-dong-chung-khoan",
+ "subject": "chung-khoan",
+ "chapter": "c1-khai-niem",
+ "term": "Nguyên tắc hoạt động về chứng khoán và thị trường chứng khoán",
+ "definition": "1. Tôn trọng quyền sở hữu, quyền khác đối với tài sản trong hoạt động về chứng khoán và thị trường chứng khoán; quyền tự do giao dịch, đầu tư, kinh doanh và cung cấp dịch vụ về chứng khoán của tổ chức, cá nhân. 2. Công bằng, công khai, minh bạch. 3. Bảo vệ quyền và lợi ích hợp pháp của nhà đầu tư. 4. Tự chịu trách nhiệm về rủi ro.",
+ "plain": "Bốn nguyên tắc là \"kim chỉ nam\" để giải thích mọi quy định cụ thể. Công khai, minh bạch là lý do có nghĩa vụ công bố thông tin; bảo vệ nhà đầu tư là lý do cấm thao túng, giao dịch nội gián; tự chịu rủi ro nghĩa là Nhà nước không bảo đảm lãi cho ai.",
+ "example": "Bạn mua cổ phiếu theo \"tin đồn\" rồi thua lỗ: theo nguyên tắc tự chịu trách nhiệm về rủi ro, bạn không thể đòi Nhà nước bồi thường. Nhưng nếu tin đồn do người khác cố tình tung ra để thao túng giá, hành vi đó vi phạm nguyên tắc công bằng, minh bạch và bị xử lý.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 5 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "thi-truong-giao-dich-chung-khoan",
+  "pham-vi-dieu-chinh-luat-chung-khoan"
+ ],
+ "keywords": [
+  "công bằng, công khai, minh bạch",
+  "bảo vệ nhà đầu tư",
+  "tự chịu trách nhiệm về rủi ro"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Điều 5 Luật Chứng khoán 2019 quy định bao nhiêu nguyên tắc hoạt động về chứng khoán và thị trường chứng khoán?",
+   "options": [
+    "4",
+    "3",
+    "5",
+    "6"
+   ],
+   "answer": 0,
+   "explain": "Bốn nguyên tắc: tôn trọng quyền sở hữu và quyền tự do giao dịch…; công bằng, công khai, minh bạch; bảo vệ quyền và lợi ích hợp pháp của nhà đầu tư; tự chịu trách nhiệm về rủi ro.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 5 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nguyên tắc nào sau đây KHÔNG có trong Điều 5?",
+   "options": [
+    "Nhà nước bảo đảm lợi nhuận tối thiểu cho nhà đầu tư",
+    "Công bằng, công khai, minh bạch",
+    "Bảo vệ quyền và lợi ích hợp pháp của nhà đầu tư",
+    "Tự chịu trách nhiệm về rủi ro"
+   ],
+   "answer": 0,
+   "explain": "Không có nguyên tắc Nhà nước bảo đảm lợi nhuận; ngược lại, khoản 4 Điều 5 là tự chịu trách nhiệm về rủi ro.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 5 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Công bằng, công khai, minh bạch",
+   "right": "Tự chịu trách nhiệm về rủi ro",
+   "cases": [
+    {
+     "text": "Cơ sở của nghĩa vụ công bố thông tin của công ty đại chúng",
+     "answer": "left"
+    },
+    {
+     "text": "Nhà đầu tư thua lỗ do biến động giá không được Nhà nước bù",
+     "answer": "right"
+    },
+    {
+     "text": "Cấm dùng thông tin nội bộ để giao dịch trước người khác",
+     "answer": "left"
+    }
+   ],
+   "explain": "Mỗi quy định cụ thể đều truy về một nguyên tắc ở Điều 5."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hoạt động về chứng khoán và thị trường chứng khoán phải bảo đảm công bằng, {{công khai}}, {{minh bạch}}.",
+   "bank_extra": [
+    "bí mật",
+    "tập trung"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nguyên tắc thứ tư tại Điều 5 Luật Chứng khoán 2019 là tự chịu trách nhiệm về {{rủi ro}}.",
+   "bank_extra": [
+    "lợi nhuận",
+    "thuế"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Một nhà đầu tư thua lỗ 40% vì giá cổ phiếu giảm theo thị trường chung, rồi khởi kiện đòi Ủy ban Chứng khoán Nhà nước bồi thường. Nguyên tắc nào là căn cứ chính để bác yêu cầu này?",
+   "options": [
+    "Tự chịu trách nhiệm về rủi ro",
+    "Bảo vệ quyền và lợi ích hợp pháp của nhà đầu tư",
+    "Công bằng, công khai, minh bạch",
+    "Tôn trọng quyền tự do giao dịch"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 5. Bảo vệ nhà đầu tư (khoản 3) là bảo vệ khỏi vi phạm như thao túng, gian lận, không phải bảo đảm không lỗ.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 5 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Kể bốn nguyên tắc hoạt động về chứng khoán và thị trường chứng khoán theo Điều 5 Luật Chứng khoán 2019.",
+   "model": "(1) Tôn trọng quyền sở hữu, quyền khác đối với tài sản; quyền tự do giao dịch, đầu tư, kinh doanh và cung cấp dịch vụ về chứng khoán; (2) công bằng, công khai, minh bạch; (3) bảo vệ quyền và lợi ích hợp pháp của nhà đầu tư; (4) tự chịu trách nhiệm về rủi ro.",
+   "keywords": [
+    "quyền sở hữu",
+    "tự do giao dịch",
+    "minh bạch",
+    "bảo vệ",
+    "rủi ro"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,113 @@
+{
+ "id": "chung-chi-quy",
+ "subject": "chung-khoan",
+ "chapter": "c1-khai-niem",
+ "term": "Chứng chỉ quỹ",
+ "definition": "Chứng chỉ quỹ là loại chứng khoán xác nhận quyền sở hữu của nhà đầu tư đối với một phần vốn góp của quỹ đầu tư chứng khoán.",
+ "plain": "Nhiều nhà đầu tư góp tiền vào một quỹ, quỹ do công ty quản lý quỹ đầu tư hộ. Chứng chỉ quỹ cho biết bạn sở hữu bao nhiêu phần trong \"rổ tiền chung\" đó, không phải cổ phần của công ty quản lý quỹ.",
+ "example": "Bạn mua 1.000 đơn vị chứng chỉ quỹ mở của một quỹ cổ phiếu: bạn sở hữu một phần vốn góp của quỹ, còn công ty quản lý quỹ chỉ là bên quản lý, bạn không phải cổ đông của công ty đó.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 4 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "trai-phieu",
+  "co-phieu"
+ ],
+ "keywords": [
+  "vốn góp",
+  "quỹ đầu tư chứng khoán",
+  "quyền sở hữu"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chứng chỉ quỹ xác nhận quyền sở hữu của nhà đầu tư đối với gì?",
+   "options": [
+    "Một phần vốn góp của quỹ đầu tư chứng khoán",
+    "Một phần vốn cổ phần của công ty quản lý quỹ",
+    "Một phần nợ của ngân hàng giám sát",
+    "Toàn bộ danh mục của quỹ"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 4: một phần vốn góp của QUỸ, không phải của công ty quản lý quỹ.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chứng chỉ quỹ thuộc nhóm nào trong khoản 1 Điều 4?",
+   "options": [
+    "Điểm a, cùng cổ phiếu và trái phiếu",
+    "Điểm b, cùng chứng quyền",
+    "Điểm c, chứng khoán phái sinh",
+    "Điểm d, loại do Chính phủ quy định"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 4: cổ phiếu, trái phiếu, chứng chỉ quỹ.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Chứng chỉ quỹ",
+   "right": "Cổ phiếu",
+   "cases": [
+    {
+     "text": "Phần vốn góp của quỹ đầu tư chứng khoán",
+     "answer": "left"
+    },
+    {
+     "text": "Phần vốn cổ phần của tổ chức phát hành",
+     "answer": "right"
+    }
+   ],
+   "explain": "Hai loại đều xác nhận quyền \"sở hữu\", nhưng đối tượng khác nhau: quỹ đầu tư và công ty phát hành."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chứng chỉ quỹ là loại chứng khoán xác nhận quyền sở hữu của nhà đầu tư đối với một phần {{vốn góp}} của {{quỹ đầu tư chứng khoán}}.",
+   "bank_extra": [
+    "vốn cổ phần",
+    "công ty quản lý quỹ"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Cổ phiếu, trái phiếu và {{chứng chỉ quỹ}} cùng được liệt kê tại điểm a khoản 1 Điều 4.",
+   "bank_extra": [
+    "chứng quyền",
+    "chứng chỉ lưu ký"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người mua chứng chỉ quỹ trở thành cổ đông của công ty quản lý quỹ.",
+   "answer": false,
+   "explain": "Sai. Chứng chỉ quỹ xác nhận quyền sở hữu một phần vốn góp của quỹ đầu tư chứng khoán (khoản 4 Điều 4); công ty quản lý quỹ là chủ thể khác."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Định nghĩa chứng chỉ quỹ và nêu điểm khác với cổ phiếu.",
+   "model": "Chứng chỉ quỹ là loại chứng khoán xác nhận quyền sở hữu của nhà đầu tư đối với một phần vốn góp của quỹ đầu tư chứng khoán (khoản 4 Điều 4). Cổ phiếu xác nhận quyền đối với một phần vốn cổ phần của tổ chức phát hành.",
+   "keywords": [
+    "vốn góp",
+    "quỹ đầu tư chứng khoán",
+    "vốn cổ phần"
+   ]
+  }
+ ]
+}

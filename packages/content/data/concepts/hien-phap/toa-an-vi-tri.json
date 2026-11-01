@@ -1,0 +1,123 @@
+{
+ "id": "toa-an-vi-tri",
+ "subject": "hien-phap",
+ "chapter": "c10-toa-an-vien-kiem-sat",
+ "term": "Tòa án nhân dân: vị trí, chức năng, nhiệm vụ",
+ "definition": "Tòa án nhân dân là cơ quan xét xử của nước Cộng hoà xã hội chủ nghĩa Việt Nam, thực hiện quyền tư pháp. (…) Tòa án nhân dân có nhiệm vụ bảo vệ công lý, bảo vệ quyền con người, quyền công dân, bảo vệ chế độ xã hội chủ nghĩa, bảo vệ lợi ích của Nhà nước, quyền và lợi ích hợp pháp của tổ chức, cá nhân.",
+ "plain": "Hiến pháp 2013 lần đầu khẳng định Tòa án \"thực hiện quyền tư pháp\" và nhiệm vụ \"bảo vệ công lý\". Chỉ Tòa án mới XÉT XỬ (ra bản án). Hệ thống gồm Tòa án nhân dân tối cao và \"các Tòa án khác do luật định\". Cấu trúc cụ thể do Luật Tổ chức Tòa án nhân dân quy định và đã thay đổi năm 2025 cùng việc sắp xếp đơn vị hành chính; khi học chi tiết cần đối chiếu luật này.",
+ "example": "Tranh chấp hợp đồng giữa hai công ty: Tòa án ra bản án phân xử. Ủy ban nhân dân hay Viện kiểm sát không có quyền \"xử\" tranh chấp này.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 3 Điều 102 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "vien-kiem-sat-chuc-nang",
+  "doc-lap-xet-xu",
+  "vi-tri-quoc-hoi"
+ ],
+ "keywords": [
+  "cơ quan xét xử",
+  "quyền tư pháp",
+  "bảo vệ công lý"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 1 Điều 102 Hiến pháp 2013, Tòa án nhân dân thực hiện quyền nào?",
+   "options": [
+    "Quyền tư pháp",
+    "Quyền hành pháp",
+    "Quyền lập pháp",
+    "Quyền công tố"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 102. Quyền công tố thuộc Viện kiểm sát (Điều 107).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 102 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nhiệm vụ đầu tiên của Tòa án nhân dân theo khoản 3 Điều 102 là gì?",
+   "options": [
+    "Bảo vệ công lý",
+    "Bảo vệ pháp luật",
+    "Thực hành quyền công tố",
+    "Quản lý hành chính"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 102; \"bảo vệ pháp luật\" là nhiệm vụ của Viện kiểm sát (khoản 3 Điều 107).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 102 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tòa án nhân dân",
+   "right": "Viện kiểm sát nhân dân",
+   "cases": [
+    {
+     "text": "Cơ quan xét xử, thực hiện quyền tư pháp",
+     "answer": "left"
+    },
+    {
+     "text": "Thực hành quyền công tố, kiểm sát hoạt động tư pháp",
+     "answer": "right"
+    },
+    {
+     "text": "Nhiệm vụ bảo vệ công lý",
+     "answer": "left"
+    },
+    {
+     "text": "Nhiệm vụ bảo vệ pháp luật",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 102 và Điều 107."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tòa án nhân dân là cơ quan {{xét xử}} của nước Cộng hoà xã hội chủ nghĩa Việt Nam, thực hiện quyền {{tư pháp}}.",
+   "bank_extra": [
+    "điều tra",
+    "hành pháp"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tòa án nhân dân có nhiệm vụ bảo vệ {{công lý}}, bảo vệ quyền con người, quyền công dân.",
+   "bank_extra": [
+    "pháp chế",
+    "trật tự"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Viện kiểm sát nhân dân là cơ quan thực hiện quyền tư pháp theo khoản 1 Điều 102 Hiến pháp.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 102 trao quyền tư pháp cho Tòa án nhân dân; Viện kiểm sát thực hành quyền công tố, kiểm sát hoạt động tư pháp."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày vị trí, chức năng và nhiệm vụ của Tòa án nhân dân theo Điều 102 Hiến pháp.",
+   "model": "Tòa án nhân dân là cơ quan xét xử, thực hiện quyền tư pháp (khoản 1); gồm Tòa án nhân dân tối cao và các Tòa án khác do luật định (khoản 2); nhiệm vụ bảo vệ công lý, quyền con người, quyền công dân, chế độ xã hội chủ nghĩa, lợi ích Nhà nước, quyền và lợi ích hợp pháp của tổ chức, cá nhân (khoản 3).",
+   "keywords": [
+    "cơ quan xét xử",
+    "quyền tư pháp",
+    "bảo vệ công lý",
+    "quyền con người"
+   ]
+  }
+ ]
+}

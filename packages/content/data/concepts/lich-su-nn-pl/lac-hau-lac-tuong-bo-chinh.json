@@ -1,0 +1,125 @@
+{
+ "id": "lac-hau-lac-tuong-bo-chinh",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c5-co-dai",
+ "term": "Bộ máy nhà nước Văn Lang: Lạc hầu, Lạc tướng, Bồ chính",
+ "definition": "Đặt tướng văn gọi là Lạc Hầu, tướng võ gọi là Lạc Tướng (…). Con trai vua gọi là Quan Lang, con gái vua gọi là Mị Nương. Quan coi việc gọi là Bồ Chính, đời đời cha truyền con nối, gọi là phụ đạo.",
+ "plain": "Sử liệu chỉ ghi tên chức danh. Cách hiểu phổ biến của giới sử học, pháp sử: bộ máy có ba cấp. Ở trung ương là Hùng Vương, giúp việc có Lạc hầu. Mỗi bộ do một Lạc tướng đứng đầu. Ở chiềng chạ (công xã nông thôn) là Bồ chính. Chức vị cha truyền con nối cho thấy nhà nước còn mang dấu ấn thị tộc, bộ lạc.",
+ "example": "Một cách nhớ: \"Hầu văn, Tướng võ, Bồ chính coi việc làng\". Quan Lang và Mị Nương là danh xưng con vua, không phải chức quan cai trị.",
+ "source": {
+  "kind": "primary",
+  "cite": "Đại Việt sử ký toàn thư, Ngoại kỷ, quyển I (bản dịch Viện KHXH Việt Nam, NXB KHXH 1993), Kỷ Hồng Bàng thị, tờ 3a"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nha-nuoc-van-lang",
+  "nha-nuoc-au-lac"
+ ],
+ "keywords": [
+  "Lạc Hầu – tướng văn",
+  "Lạc Tướng – tướng võ",
+  "Bồ Chính",
+  "cha truyền con nối"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Toàn thư, tướng văn thời Hùng Vương gọi là gì?",
+   "options": [
+    "Lạc Hầu",
+    "Lạc Tướng",
+    "Bồ Chính",
+    "Quan Lang"
+   ],
+   "answer": 0,
+   "explain": "\"Đặt tướng văn gọi là Lạc Hầu, tướng võ gọi là Lạc Tướng\".",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Ngoại kỷ, quyển I (bản dịch Viện KHXH Việt Nam, NXB KHXH 1993), tờ 3a"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Danh xưng \"Mị Nương\" trong Toàn thư dùng để chỉ ai?",
+   "options": [
+    "Con gái vua",
+    "Vợ vua",
+    "Nữ quan coi việc trong cung",
+    "Người đứng đầu một bộ"
+   ],
+   "answer": 0,
+   "explain": "\"Con trai vua gọi là Quan Lang, con gái vua gọi là Mị Nương.\"",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Ngoại kỷ, quyển I (bản dịch Viện KHXH Việt Nam, NXB KHXH 1993), tờ 3a"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Lạc Hầu",
+   "right": "Lạc Tướng",
+   "cases": [
+    {
+     "text": "Tướng văn",
+     "answer": "left"
+    },
+    {
+     "text": "Tướng võ",
+     "answer": "right"
+    },
+    {
+     "text": "Theo cách hiểu phổ biến, đứng đầu các bộ",
+     "answer": "right"
+    }
+   ],
+   "explain": "Toàn thư: tướng văn = Lạc Hầu, tướng võ = Lạc Tướng. Việc Lạc tướng đứng đầu bộ là cách hiểu học thuật, không phải câu chữ của Toàn thư."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đặt tướng văn gọi là {{Lạc Hầu}}, tướng võ gọi là {{Lạc Tướng}}.",
+   "bank_extra": [
+    "Bồ Chính",
+    "Quan Lang"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quan coi việc gọi là {{Bồ Chính}}, đời đời {{cha truyền con nối}}, gọi là phụ đạo.",
+   "bank_extra": [
+    "Lạc Hầu",
+    "do vua bổ nhiệm"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Một bạn viết: \"Theo Toàn thư, Lạc tướng là người đứng đầu các bộ.\" Nhận xét nào chính xác nhất?",
+   "options": [
+    "Toàn thư chỉ ghi Lạc Tướng là tướng võ; việc Lạc tướng đứng đầu bộ là cách giải thích của giới nghiên cứu",
+    "Hoàn toàn đúng nguyên văn Toàn thư",
+    "Sai, vì Toàn thư ghi Lạc tướng là tướng văn",
+    "Sai, vì người đứng đầu bộ là Mị Nương"
+   ],
+   "answer": 0,
+   "explain": "Phân biệt nguồn sử liệu (câu chữ Toàn thư) với quan điểm học thuật giải thích sử liệu. Khi làm bài, ghi rõ đâu là sử liệu, đâu là nhận định."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày tổ chức bộ máy nhà nước Văn Lang (sử liệu và cách hiểu phổ biến).",
+   "model": "Sử liệu (Toàn thư): tướng văn là Lạc Hầu, tướng võ là Lạc Tướng, quan coi việc là Bồ Chính, cha truyền con nối (phụ đạo); con trai vua là Quan Lang, con gái vua là Mị Nương. Cách hiểu phổ biến: ba cấp gồm trung ương (Hùng Vương, Lạc hầu), bộ (Lạc tướng), chiềng chạ (Bồ chính); còn dấu ấn thị tộc.",
+   "keywords": [
+    "Lạc Hầu",
+    "Lạc Tướng",
+    "Bồ Chính",
+    "cha truyền con nối",
+    "ba cấp"
+   ]
+  }
+ ]
+}

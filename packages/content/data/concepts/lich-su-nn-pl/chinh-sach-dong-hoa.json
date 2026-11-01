@@ -1,0 +1,126 @@
+{
+ "id": "chinh-sach-dong-hoa",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c5-co-dai",
+ "term": "Chính sách đồng hóa thời Bắc thuộc",
+ "definition": "Tích Quang người quận Hán Trung, khi ở Giao Chỉ, lấy lễ nghĩa dạy dân. (…) Phong tục văn minh của đất Lĩnh Nam bắt đầu từ hai thái thú ấy.",
+ "plain": "Toàn thư (sử quan phong kiến, chịu ảnh hưởng Nho giáo) ca ngợi hai Thái thú Tích Quang (Giao Chỉ) và Nhâm Diên (Cửu Chân) vì dạy \"lễ nghĩa\", dạy cày cấy, tổ chức cưới hỏi theo lễ. Giáo trình pháp sử hiện đại nhìn đây là CHÍNH SÁCH ĐỒNG HÓA: truyền bá lễ giáo, phong tục, pháp luật phương Bắc nhằm thay đổi tập quán bản địa. Phải phân biệt câu chữ của sử liệu với cách đánh giá của người nghiên cứu.",
+ "example": "Câu \"Phong tục văn minh của đất Lĩnh Nam bắt đầu từ hai thái thú ấy\" là nhận xét của sử quan theo quan điểm Nho giáo, không phải kết luận khách quan về trình độ văn hóa của người Việt cổ.",
+ "source": {
+  "kind": "primary",
+  "cite": "Đại Việt sử ký toàn thư, Ngoại kỷ, quyển III (bản dịch Viện KHXH Việt Nam, NXB KHXH 1993), Kỷ thuộc Tây Hán, tờ 1a–1b",
+  "url": "https://thpthiephoa1.edu.vn/wp-content/uploads/Dai-viet-su-ki-toan-thu.pdf"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "chinh-quyen-do-ho-quan-huyen",
+  "phap-luat-van-lang-au-lac",
+  "khoi-nghia-hai-ba-trung"
+ ],
+ "keywords": [
+  "Tích Quang",
+  "Nhâm Diên",
+  "lễ nghĩa",
+  "đồng hóa"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Toàn thư, Thái thú Tích Quang ở Giao Chỉ đã làm gì?",
+   "options": [
+    "Lấy lễ nghĩa dạy dân",
+    "Ban hành luật hình riêng cho người Việt",
+    "Bãi bỏ chức Lạc tướng",
+    "Chia Giao Chỉ thành hai châu"
+   ],
+   "answer": 0,
+   "explain": "\"Tích Quang… khi ở Giao Chỉ, lấy lễ nghĩa dạy dân.\"",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Ngoại kỷ, quyển III, tờ 1a–1b"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nhâm Diên làm Thái thú quận nào?",
+   "options": [
+    "Cửu Chân",
+    "Giao Chỉ",
+    "Nhật Nam",
+    "Hợp Phố"
+   ],
+   "answer": 0,
+   "explain": "\"Lại lấy Nhâm Diên làm Thái thú Cửu Chân.\"",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Ngoại kỷ, quyển III, tờ 1b"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Câu chữ sử liệu (Toàn thư)",
+   "right": "Đánh giá của giáo trình hiện đại",
+   "cases": [
+    {
+     "text": "\"Lấy lễ nghĩa dạy dân\"",
+     "answer": "left"
+    },
+    {
+     "text": "Chính sách đồng hóa văn hóa, pháp luật",
+     "answer": "right"
+    },
+    {
+     "text": "\"Phong tục văn minh của đất Lĩnh Nam bắt đầu từ hai thái thú ấy\"",
+     "answer": "left"
+    }
+   ],
+   "explain": "Phân biệt sử liệu với nhận định học thuật."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tích Quang (…) khi ở Giao Chỉ, lấy {{lễ nghĩa}} dạy dân.",
+   "bank_extra": [
+    "pháp luật",
+    "binh pháp"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Dân nghèo không có sính lễ cưới vợ, Diên bảo các trưởng lại trở xuống bớt {{bổng lộc}} ra để giúp đỡ.",
+   "bank_extra": [
+    "ruộng đất",
+    "thuế má"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Một bạn viết trong bài thi: \"Theo Toàn thư, người Việt trước thời Tích Quang chưa có văn minh, vì vậy chính sách của nhà Hán là tiến bộ.\" Nhận xét nào phù hợp nhất?",
+   "options": [
+    "Đã đồng nhất quan điểm Nho giáo của sử quan với sự thật lịch sử; cần nêu đó là chính sách đồng hóa và đánh giá có phê phán",
+    "Hoàn toàn đúng vì Toàn thư ghi như vậy",
+    "Sai vì Toàn thư không nhắc Tích Quang",
+    "Đúng vì nhà Hán không có ý đồ đồng hóa"
+   ],
+   "answer": 0,
+   "explain": "Khi dùng sử liệu phải đặt trong quan điểm của người viết sử."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày chính sách đồng hóa thời Bắc thuộc qua ví dụ Tích Quang, Nhâm Diên.",
+   "model": "Toàn thư chép Tích Quang lấy lễ nghĩa dạy dân Giao Chỉ, Nhâm Diên dạy dân Cửu Chân cày cấy, tổ chức cưới hỏi; sử quan khen \"phong tục văn minh bắt đầu từ hai thái thú\". Dưới góc độ pháp sử, đây là chính sách đồng hóa: truyền bá lễ giáo, phong tục, pháp luật phương Bắc để thay đổi tập quán bản địa, phục vụ cai trị lâu dài.",
+   "keywords": [
+    "Tích Quang",
+    "Nhâm Diên",
+    "lễ nghĩa",
+    "đồng hóa"
+   ]
+  }
+ ]
+}

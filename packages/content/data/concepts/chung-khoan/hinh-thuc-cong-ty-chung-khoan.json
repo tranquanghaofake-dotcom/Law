@@ -1,0 +1,114 @@
+{
+ "id": "hinh-thuc-cong-ty-chung-khoan",
+ "subject": "chung-khoan",
+ "chapter": "c5-cong-ty-chung-khoan",
+ "term": "Công ty chứng khoán: hình thức pháp lý và thẩm quyền cấp phép",
+ "definition": "Ủy ban Chứng khoán Nhà nước có thẩm quyền cấp, cấp lại, điều chỉnh, thu hồi Giấy phép thành lập và hoạt động kinh doanh chứng khoán cho công ty chứng khoán, công ty quản lý quỹ đầu tư chứng khoán, chi nhánh công ty chứng khoán và công ty quản lý quỹ nước ngoài tại Việt Nam. (…) Công ty chứng khoán, công ty quản lý quỹ đầu tư chứng khoán được tổ chức dưới hình thức công ty trách nhiệm hữu hạn hoặc công ty cổ phần theo quy định của Luật Doanh nghiệp.",
+ "plain": "Công ty chứng khoán là doanh nghiệp kinh doanh có điều kiện. Thứ tự là \"giấy phép trước, đăng ký doanh nghiệp sau\": phải có Giấy phép thành lập và hoạt động kinh doanh chứng khoán của Ủy ban, rồi mới đăng ký doanh nghiệp theo Luật Doanh nghiệp (khoản 1 Điều 71). Chỉ được tổ chức dưới dạng công ty TNHH hoặc công ty cổ phần, không được là doanh nghiệp tư nhân hay công ty hợp danh.",
+ "example": "Một nhóm nhà đầu tư muốn mở \"công ty hợp danh chứng khoán\": không được, vì khoản 2 Điều 71 chỉ cho phép công ty TNHH hoặc công ty cổ phần.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 70, khoản 2 Điều 71 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nghiep-vu-cong-ty-chung-khoan",
+  "dieu-kien-co-dong-cong-ty-chung-khoan"
+ ],
+ "keywords": [
+  "Ủy ban Chứng khoán Nhà nước cấp phép",
+  "TNHH hoặc cổ phần",
+  "giấy phép trước, đăng ký doanh nghiệp sau"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Cơ quan nào cấp Giấy phép thành lập và hoạt động kinh doanh chứng khoán cho công ty chứng khoán?",
+   "options": [
+    "Ủy ban Chứng khoán Nhà nước",
+    "Sở Kế hoạch và Đầu tư (Cơ quan đăng ký kinh doanh)",
+    "Sở giao dịch chứng khoán Việt Nam",
+    "Ngân hàng Nhà nước"
+   ],
+   "answer": 0,
+   "explain": "Điều 70.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 70 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Công ty chứng khoán được tổ chức dưới hình thức nào?",
+   "options": [
+    "Công ty trách nhiệm hữu hạn hoặc công ty cổ phần",
+    "Doanh nghiệp tư nhân",
+    "Công ty hợp danh",
+    "Hợp tác xã"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 71.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 71 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Trước",
+   "right": "Sau",
+   "cases": [
+    {
+     "text": "Được cấp Giấy phép thành lập và hoạt động kinh doanh chứng khoán",
+     "answer": "left"
+    },
+    {
+     "text": "Đăng ký doanh nghiệp theo Luật Doanh nghiệp",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 71: \"Sau khi được cấp Giấy phép… phải đăng ký doanh nghiệp\"."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công ty chứng khoán được tổ chức dưới hình thức công ty {{trách nhiệm hữu hạn}} hoặc công ty {{cổ phần}}.",
+   "bank_extra": [
+    "hợp danh",
+    "tư nhân"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Sau khi được cấp Giấy phép thành lập và hoạt động kinh doanh chứng khoán, công ty chứng khoán phải {{đăng ký doanh nghiệp}} theo Luật Doanh nghiệp.",
+   "bank_extra": [
+    "niêm yết",
+    "đăng ký giao dịch"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Công ty chứng khoán có thể đăng ký doanh nghiệp trước rồi mới xin giấy phép kinh doanh chứng khoán.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 71: SAU khi được cấp giấy phép mới đăng ký doanh nghiệp."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày hình thức pháp lý và thủ tục pháp lý cơ bản để thành lập công ty chứng khoán.",
+   "model": "Ủy ban Chứng khoán Nhà nước cấp, cấp lại, điều chỉnh, thu hồi Giấy phép thành lập và hoạt động kinh doanh chứng khoán (Điều 70). Sau khi có giấy phép mới đăng ký doanh nghiệp theo Luật Doanh nghiệp; hình thức là công ty TNHH hoặc công ty cổ phần (Điều 71).",
+   "keywords": [
+    "Ủy ban Chứng khoán Nhà nước",
+    "giấy phép",
+    "đăng ký doanh nghiệp",
+    "TNHH hoặc cổ phần"
+   ]
+  }
+ ]
+}

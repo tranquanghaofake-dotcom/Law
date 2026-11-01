@@ -1,0 +1,119 @@
+{
+ "id": "phap-luat-van-lang-au-lac",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c5-co-dai",
+ "term": "Pháp luật thời Văn Lang – Âu Lạc (\"Việt luật\")",
+ "definition": "條奏越律與漢律駁者十餘事，與越人申明舊制以約束之 — [Mã Viện] tâu rằng luật Việt khác với luật Hán hơn mười điều, rồi cùng người Việt nói rõ chế độ cũ để ràng buộc họ.",
+ "plain": "Ghi chép năm 43 của sử nhà Hán cho thấy người Lạc Việt có \"Việt luật\", khác luật Hán hơn mười điều. Phần lớn nhà nghiên cứu cho rằng đó chủ yếu là tập quán pháp (luật tục bất thành văn) hình thành từ thời Văn Lang – Âu Lạc. Có hay không luật thành văn thời này vẫn là vấn đề tranh luận học thuật, chưa có sử liệu khẳng định.",
+ "example": "Nguồn này là sử Trung Quốc ghi thời Bắc thuộc (sau khởi nghĩa Hai Bà Trưng). Nó được dùng như bằng chứng gián tiếp cho pháp luật Âu Lạc, chứ không phải văn bản luật của Âu Lạc còn lại đến nay.",
+ "source": {
+  "kind": "primary",
+  "cite": "Hậu Hán thư, quyển 24, Mã Viện liệt truyện (nguyên văn chữ Hán; bản dịch tiếng Việt do người soạn)",
+  "url": "https://zh.wikisource.org/zh-hant/%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B724"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "dieu-kien-ra-doi-nha-nuoc-van-lang",
+  "nha-nuoc-au-lac"
+ ],
+ "keywords": [
+  "Việt luật",
+  "tập quán pháp",
+  "Hậu Hán thư",
+  "hơn mười điều"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Sử liệu nào ghi nhận người Lạc Việt có \"Việt luật\" khác luật Hán?",
+   "options": [
+    "Hậu Hán thư, Mã Viện liệt truyện",
+    "Quốc triều hình luật",
+    "Hoàng Việt luật lệ",
+    "Đại Việt sử ký toàn thư, Bản kỷ nhà Lý"
+   ],
+   "answer": 0,
+   "explain": "Hậu Hán thư quyển 24: \"條奏越律與漢律駁者十餘事\" (tâu rằng luật Việt khác luật Hán hơn mười điều).",
+   "source": {
+    "kind": "primary",
+    "cite": "Hậu Hán thư, quyển 24"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo quan điểm phổ biến, pháp luật thời Văn Lang – Âu Lạc chủ yếu tồn tại dưới hình thức nào?",
+   "options": [
+    "Tập quán pháp (luật tục)",
+    "Bộ luật thành văn do vua ban hành",
+    "Án lệ của triều đình",
+    "Điều ước với nhà Hán"
+   ],
+   "answer": 0,
+   "explain": "Chưa có sử liệu về luật thành văn; \"Việt luật\" được hiểu chủ yếu là tập quán pháp.",
+   "source": {
+    "kind": "textbook",
+    "cite": "Giáo trình Lịch sử nhà nước và pháp luật, Trường ĐH Luật Hà Nội, NXB Tư pháp 2025, Chương 5, mục 1.3"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Sử liệu",
+   "right": "Nhận định học thuật",
+   "cases": [
+    {
+     "text": "Hậu Hán thư ghi luật Việt khác luật Hán hơn mười điều",
+     "answer": "left"
+    },
+    {
+     "text": "\"Việt luật\" chủ yếu là tập quán pháp",
+     "answer": "right"
+    },
+    {
+     "text": "Âu Lạc có thể đã có luật thành văn",
+     "answer": "right"
+    }
+   ],
+   "explain": "Phân biệt điều sử liệu ghi với điều nhà nghiên cứu suy ra từ sử liệu."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hậu Hán thư ghi Mã Viện tâu rằng luật Việt khác với luật Hán hơn {{mười}} điều.",
+   "bank_extra": [
+    "ba",
+    "một trăm"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Pháp luật thời Văn Lang – Âu Lạc chủ yếu là {{tập quán pháp}}.",
+   "bank_extra": [
+    "luật thành văn",
+    "án lệ"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Ngày nay vẫn còn văn bản bộ luật thành văn của nhà nước Âu Lạc.",
+   "answer": false,
+   "explain": "Sai. Không còn văn bản luật nào của Âu Lạc; hiểu biết về \"Việt luật\" chủ yếu dựa vào ghi chép gián tiếp như Hậu Hán thư."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày hiểu biết về pháp luật thời Văn Lang – Âu Lạc và nguồn sử liệu chứng minh.",
+   "model": "Pháp luật chủ yếu là tập quán pháp. Bằng chứng gián tiếp: Hậu Hán thư (Mã Viện liệt truyện) ghi luật Việt khác luật Hán hơn mười điều; Mã Viện phải \"nói rõ chế độ cũ\" để ràng buộc người Việt. Việc có luật thành văn hay không còn tranh luận.",
+   "keywords": [
+    "tập quán pháp",
+    "Hậu Hán thư",
+    "hơn mười điều",
+    "tranh luận"
+   ]
+  }
+ ]
+}

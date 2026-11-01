@@ -1,0 +1,113 @@
+{
+ "id": "nha-dau-tu-nuoc-ngoai-tren-ttck",
+ "subject": "chung-khoan",
+ "chapter": "c3-thi-truong-giao-dich",
+ "term": "Nhà đầu tư nước ngoài trên thị trường chứng khoán Việt Nam",
+ "definition": "Nhà đầu tư nước ngoài, tổ chức kinh tế có vốn đầu tư nước ngoài khi tham gia đầu tư, hoạt động trên thị trường chứng khoán Việt Nam tuân thủ quy định về tỷ lệ sở hữu nước ngoài, điều kiện, trình tự, thủ tục đầu tư theo quy định của pháp luật về chứng khoán và thị trường chứng khoán.",
+ "plain": "Nhà đầu tư nước ngoài được tham gia nhưng bị giới hạn \"room\": tỷ lệ sở hữu nước ngoài tối đa ở từng công ty, theo ngành nghề, do Chính phủ quy định chi tiết. Khi room đã đầy, nhà đầu tư nước ngoài không mua thêm được cổ phiếu đó trên sàn.",
+ "example": "Một ngân hàng thương mại niêm yết đã chạm tỷ lệ sở hữu nước ngoài tối đa: quỹ ngoại muốn mua thêm phải chờ nhà đầu tư nước ngoài khác bán ra.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 51 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nguyen-tac-hoat-dong-chung-khoan",
+  "pham-vi-dieu-chinh-luat-chung-khoan"
+ ],
+ "keywords": [
+  "tỷ lệ sở hữu nước ngoài",
+  "room ngoại",
+  "Chính phủ quy định chi tiết"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khi tham gia thị trường chứng khoán Việt Nam, nhà đầu tư nước ngoài phải tuân thủ quy định nào theo khoản 1 Điều 51?",
+   "options": [
+    "Tỷ lệ sở hữu nước ngoài, điều kiện, trình tự, thủ tục đầu tư",
+    "Chỉ được mua trái phiếu Chính phủ",
+    "Phải thành lập công ty tại Việt Nam",
+    "Phải có quốc tịch Việt Nam"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 51.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 51 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai quy định chi tiết tỷ lệ sở hữu nước ngoài trên thị trường chứng khoán?",
+   "options": [
+    "Chính phủ",
+    "Sở giao dịch chứng khoán Việt Nam",
+    "Hội đồng quản trị từng công ty",
+    "Bộ trưởng Bộ Công Thương"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 51.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 51 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Nhà đầu tư nước ngoài",
+   "right": "Nhà đầu tư trong nước",
+   "cases": [
+    {
+     "text": "Bị giới hạn tỷ lệ sở hữu tối đa tại công ty đại chúng",
+     "answer": "left"
+    },
+    {
+     "text": "Không bị giới hạn \"room ngoại\"",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 51; điểm đ khoản 1 Điều 31 cũng buộc chào bán riêng lẻ tuân thủ tỷ lệ sở hữu nước ngoài."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhà đầu tư nước ngoài tham gia thị trường chứng khoán Việt Nam tuân thủ quy định về {{tỷ lệ sở hữu nước ngoài}}, điều kiện, trình tự, thủ tục đầu tư.",
+   "bank_extra": [
+    "tỷ giá hối đoái",
+    "lãi suất cơ bản"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Việc chào bán cổ phiếu riêng lẻ của công ty đại chúng phải đáp ứng quy định về tỷ lệ sở hữu của nhà đầu tư {{nước ngoài}}.",
+   "bank_extra": [
+    "chiến lược",
+    "cá nhân"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Pháp luật Việt Nam cấm nhà đầu tư nước ngoài mua cổ phiếu niêm yết.",
+   "answer": false,
+   "explain": "Sai. Nhà đầu tư nước ngoài được tham gia, nhưng phải tuân thủ tỷ lệ sở hữu nước ngoài và điều kiện, thủ tục (Điều 51)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nhà đầu tư nước ngoài tham gia thị trường chứng khoán Việt Nam phải tuân thủ những gì?",
+   "model": "Tuân thủ quy định về tỷ lệ sở hữu nước ngoài, điều kiện, trình tự, thủ tục đầu tư theo pháp luật chứng khoán (khoản 1 Điều 51); Chính phủ quy định chi tiết (khoản 2). Chào bán riêng lẻ của công ty đại chúng cũng phải tuân thủ tỷ lệ sở hữu nước ngoài (điểm đ khoản 1 Điều 31).",
+   "keywords": [
+    "tỷ lệ sở hữu nước ngoài",
+    "điều kiện, trình tự, thủ tục",
+    "Chính phủ"
+   ]
+  }
+ ]
+}

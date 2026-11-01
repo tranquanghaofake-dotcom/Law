@@ -1,0 +1,115 @@
+{
+ "id": "xu-ly-vi-pham-chung-khoan",
+ "subject": "chung-khoan",
+ "chapter": "c10-xu-ly-vi-pham",
+ "term": "Các hình thức xử lý vi phạm pháp luật chứng khoán",
+ "definition": "Tổ chức, cá nhân có hành vi vi phạm quy định của Luật này và quy định khác của pháp luật có liên quan đến hoạt động chứng khoán và thị trường chứng khoán thì tùy theo tính chất, mức độ vi phạm mà bị xử phạt hành chính hoặc bị truy cứu trách nhiệm hình sự; nếu gây thiệt hại thì phải bồi thường theo quy định của pháp luật.",
+ "plain": "Ba loại trách nhiệm: HÀNH CHÍNH (Ủy ban, Thanh tra chứng khoán xử phạt), HÌNH SỰ (Tòa án; Bộ luật Hình sự 2015 có các tội trong lĩnh vực chứng khoán như cố ý công bố thông tin sai lệch hoặc che giấu thông tin, sử dụng thông tin nội bộ để mua bán chứng khoán, thao túng thị trường chứng khoán), DÂN SỰ (bồi thường thiệt hại). Có thể áp dụng đồng thời hình sự hoặc hành chính với bồi thường.",
+ "example": "Nhóm thao túng giá gây thiệt hại cho nhà đầu tư: có thể bị truy cứu hình sự về tội thao túng thị trường chứng khoán và đồng thời phải bồi thường cho người bị thiệt hại.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 132 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "muc-phat-tien-chung-khoan",
+  "giai-quyet-tranh-chap-chung-khoan",
+  "hanh-vi-bi-nghiem-cam"
+ ],
+ "keywords": [
+  "xử phạt hành chính",
+  "truy cứu trách nhiệm hình sự",
+  "bồi thường thiệt hại"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 1 Điều 132, tổ chức, cá nhân vi phạm pháp luật chứng khoán có thể chịu những trách nhiệm nào?",
+   "options": [
+    "Xử phạt hành chính hoặc truy cứu trách nhiệm hình sự; nếu gây thiệt hại thì bồi thường",
+    "Chỉ xử phạt hành chính",
+    "Chỉ bồi thường dân sự",
+    "Chỉ bị nhắc nhở"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 132.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 132 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai có thẩm quyền xử phạt vi phạm hành chính trong lĩnh vực chứng khoán theo khoản 6 Điều 132?",
+   "options": [
+    "Chủ tịch Ủy ban, Chánh Thanh tra, Trưởng đoàn thanh tra chuyên ngành chứng khoán",
+    "Tổng giám đốc Sở giao dịch",
+    "Chủ tịch hiệp hội kinh doanh chứng khoán",
+    "Tòa án nhân dân"
+   ],
+   "answer": 0,
+   "explain": "Khoản 6 Điều 132.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 6 Điều 132 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Trách nhiệm hành chính",
+   "right": "Trách nhiệm hình sự",
+   "cases": [
+    {
+     "text": "Do Chủ tịch Ủy ban Chứng khoán quyết định xử phạt",
+     "answer": "left"
+    },
+    {
+     "text": "Do Tòa án xét xử theo Bộ luật Hình sự",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 132."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Vi phạm pháp luật chứng khoán tùy tính chất, mức độ mà bị xử phạt {{hành chính}} hoặc bị truy cứu trách nhiệm {{hình sự}}; nếu gây thiệt hại thì phải bồi thường.",
+   "bank_extra": [
+    "kỷ luật",
+    "dân sự"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chính phủ quy định thẩm quyền, mức phạt và {{hình thức xử phạt}} đối với từng hành vi vi phạm hành chính trong lĩnh vực chứng khoán.",
+   "bank_extra": [
+    "mức lương",
+    "phí giao dịch"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người đã bị xử phạt hành chính về hành vi vi phạm chứng khoán thì không phải bồi thường thiệt hại cho nhà đầu tư.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 132: nếu gây thiệt hại thì phải bồi thường, độc lập với việc xử phạt."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày các hình thức trách nhiệm pháp lý đối với vi phạm pháp luật chứng khoán.",
+   "model": "Tùy tính chất, mức độ: xử phạt hành chính (theo Luật Chứng khoán và pháp luật xử lý vi phạm hành chính; thẩm quyền: Chủ tịch Ủy ban, Chánh Thanh tra, Trưởng đoàn thanh tra) hoặc truy cứu trách nhiệm hình sự; gây thiệt hại thì bồi thường (Điều 132).",
+   "keywords": [
+    "hành chính",
+    "hình sự",
+    "bồi thường",
+    "Chủ tịch Ủy ban"
+   ]
+  }
+ ]
+}

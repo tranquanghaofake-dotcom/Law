@@ -1,0 +1,120 @@
+{
+ "id": "nghia-vu-cong-ty-quan-ly-quy",
+ "subject": "chung-khoan",
+ "chapter": "c7-quan-ly-quy-giam-sat",
+ "term": "Nghĩa vụ của công ty quản lý quỹ",
+ "definition": "Thực hiện hoạt động quản lý quỹ đầu tư chứng khoán, quản lý danh mục đầu tư chứng khoán theo quy định của Luật này, Điều lệ quỹ đầu tư chứng khoán, hợp đồng ký với khách hàng ủy thác đầu tư và hợp đồng ký với ngân hàng giám sát. (…) Khi quản lý tài sản ủy thác, công ty quản lý quỹ đầu tư chứng khoán phải lưu ký toàn bộ tài sản ủy thác, bảo đảm nguyên tắc độc lập và tách biệt tới từng khách hàng ủy thác, tách biệt tài sản ủy thác và tài sản của công ty quản lý quỹ đầu tư chứng khoán.",
+ "plain": "Công ty quản lý quỹ gánh gần hết nghĩa vụ của công ty chứng khoán (kiểm soát nội bộ, chứng chỉ hành nghề, hợp đồng văn bản, ưu tiên lệnh khách hàng, tìm hiểu khách hàng… theo khoản 1 Điều 90 dẫn chiếu Điều 89), cộng thêm: quản lý đúng Điều lệ quỹ và hợp đồng; xác định NAV; lưu ký và tách biệt toàn bộ tài sản ủy thác.",
+ "example": "Điều lệ quỹ trái phiếu F chỉ cho đầu tư trái phiếu xếp hạng tín nhiệm cao, nhưng công ty quản lý quỹ dồn tiền vào cổ phiếu đầu cơ: vi phạm khoản 2 Điều 90; ngân hàng giám sát phải báo cáo Ủy ban (điểm g khoản 2 Điều 116).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 2, khoản 4 Điều 90 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quan-ly-danh-muc-dau-tu",
+  "ngan-hang-giam-sat",
+  "gia-tri-tai-san-rong"
+ ],
+ "keywords": [
+  "đúng Điều lệ quỹ và hợp đồng",
+  "xác định NAV",
+  "lưu ký toàn bộ tài sản ủy thác",
+  "tách biệt"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Công ty quản lý quỹ thực hiện quản lý quỹ theo những căn cứ nào?",
+   "options": [
+    "Luật Chứng khoán, Điều lệ quỹ, hợp đồng với khách hàng ủy thác và hợp đồng với ngân hàng giám sát",
+    "Chỉ ý chí của Tổng giám đốc",
+    "Chỉ chỉ đạo của Sở giao dịch",
+    "Chỉ quyết định của Hội đồng quản trị công ty"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 90.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 90 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Công ty quản lý quỹ phải xử lý tài sản ủy thác thế nào?",
+   "options": [
+    "Lưu ký toàn bộ, độc lập và tách biệt tới từng khách hàng, tách biệt với tài sản công ty",
+    "Gộp chung để tối ưu đầu tư",
+    "Giữ tại két sắt công ty",
+    "Chuyển cho Sở giao dịch giữ"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 90.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 90 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Nghĩa vụ riêng của công ty quản lý quỹ (Điều 90)",
+   "right": "Nghĩa vụ chung dẫn chiếu Điều 89",
+   "cases": [
+    {
+     "text": "Xác định giá trị tài sản ròng của quỹ",
+     "answer": "left"
+    },
+    {
+     "text": "Ưu tiên thực hiện lệnh của khách hàng trước lệnh của công ty",
+     "answer": "right"
+    },
+    {
+     "text": "Lưu ký toàn bộ tài sản ủy thác",
+     "answer": "left"
+    }
+   ],
+   "explain": "Khoản 1 Điều 90 dẫn chiếu các khoản 1, 2, 4, 5, 6, 7, 8, 9, 10, 12 Điều 89."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Khi quản lý tài sản ủy thác, công ty quản lý quỹ phải lưu ký {{toàn bộ}} tài sản ủy thác, bảo đảm nguyên tắc {{độc lập}} và tách biệt tới từng khách hàng ủy thác.",
+   "bank_extra": [
+    "một phần",
+    "tập trung"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công ty quản lý quỹ thực hiện việc xác định {{giá trị tài sản ròng}} của quỹ theo Điều 106.",
+   "bank_extra": [
+    "giá trị sổ sách",
+    "vốn điều lệ"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Công ty quản lý quỹ không phải tuân thủ nghĩa vụ ưu tiên lệnh của khách hàng vì không phải công ty chứng khoán.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 90 buộc tuân thủ khoản 5 Điều 89 (ưu tiên lệnh khách hàng) cùng nhiều nghĩa vụ khác."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các nghĩa vụ chính của công ty quản lý quỹ theo Điều 90.",
+   "model": "Tuân thủ các nghĩa vụ tại khoản 1, 2, 4, 5, 6, 7, 8, 9, 10, 12 Điều 89; quản lý quỹ, danh mục theo Luật, Điều lệ quỹ, hợp đồng ủy thác, hợp đồng với ngân hàng giám sát; xác định NAV theo Điều 106; lưu ký toàn bộ tài sản ủy thác, độc lập và tách biệt tới từng khách hàng.",
+   "keywords": [
+    "Điều lệ quỹ",
+    "hợp đồng",
+    "giá trị tài sản ròng",
+    "tách biệt"
+   ]
+  }
+ ]
+}

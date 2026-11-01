@@ -1,0 +1,118 @@
+{
+ "id": "pham-vi-dieu-chinh-luat-chung-khoan",
+ "subject": "chung-khoan",
+ "chapter": "c1-khai-niem",
+ "term": "Phạm vi điều chỉnh của Luật Chứng khoán",
+ "definition": "Luật này quy định các hoạt động về chứng khoán và thị trường chứng khoán; quyền và nghĩa vụ của tổ chức, cá nhân trong lĩnh vực chứng khoán; tổ chức thị trường chứng khoán; quản lý nhà nước về chứng khoán và thị trường chứng khoán.",
+ "plain": "Điều 1 cho biết Luật Chứng khoán \"phủ\" bốn nhóm quan hệ: hoạt động (chào bán, niêm yết, giao dịch…), quyền và nghĩa vụ của các chủ thể, tổ chức thị trường, và quản lý nhà nước..",
+ "example": "Việc Ủy ban Chứng khoán Nhà nước xử phạt một công ty chậm công bố thông tin thuộc nhóm \"quản lý nhà nước\"; việc công ty chứng khoán khớp lệnh cho khách thuộc nhóm \"hoạt động về chứng khoán\".",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 1 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nguyen-tac-hoat-dong-chung-khoan",
+  "chung-khoan"
+ ],
+ "keywords": [
+  "hoạt động về chứng khoán",
+  "tổ chức thị trường",
+  "quản lý nhà nước"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nội dung nào KHÔNG thuộc phạm vi điều chỉnh nêu tại Điều 1 Luật Chứng khoán 2019?",
+   "options": [
+    "Hoạt động cho vay tiêu dùng của ngân hàng thương mại",
+    "Hoạt động về chứng khoán và thị trường chứng khoán",
+    "Tổ chức thị trường chứng khoán",
+    "Quản lý nhà nước về chứng khoán và thị trường chứng khoán"
+   ],
+   "answer": 0,
+   "explain": "Cho vay tiêu dùng thuộc pháp luật về tổ chức tín dụng, không thuộc Điều 1 Luật Chứng khoán.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 1 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 3, hoạt động về chứng khoán phải tuân thủ những quy định nào?",
+   "options": [
+    "Luật Chứng khoán và quy định khác của pháp luật có liên quan",
+    "Chỉ Luật Chứng khoán",
+    "Chỉ quy chế của Sở giao dịch chứng khoán",
+    "Chỉ điều lệ công ty"
+   ],
+   "answer": 0,
+   "explain": "Điều 3: \"phải tuân thủ quy định của Luật này và quy định khác của pháp luật có liên quan\".",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 3 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Đối tượng áp dụng (Điều 2)",
+   "right": "Phạm vi điều chỉnh (Điều 1)",
+   "cases": [
+    {
+     "text": "Tổ chức, cá nhân nước ngoài tham gia đầu tư trên thị trường chứng khoán Việt Nam",
+     "answer": "left"
+    },
+    {
+     "text": "Tổ chức thị trường chứng khoán",
+     "answer": "right"
+    },
+    {
+     "text": "Cơ quan quản lý nhà nước về chứng khoán",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 1 trả lời \"luật điều chỉnh việc gì\"; Điều 2 trả lời \"luật áp dụng cho ai\"."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Luật Chứng khoán quy định các hoạt động về chứng khoán và thị trường chứng khoán; quyền và nghĩa vụ của tổ chức, cá nhân trong lĩnh vực chứng khoán; {{tổ chức thị trường chứng khoán}}; {{quản lý nhà nước}} về chứng khoán và thị trường chứng khoán.",
+   "bank_extra": [
+    "kinh doanh bảo hiểm",
+    "tín dụng ngân hàng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đối tượng áp dụng của Luật Chứng khoán gồm cả tổ chức, cá nhân {{nước ngoài}} tham gia đầu tư chứng khoán trên thị trường chứng khoán Việt Nam.",
+   "bank_extra": [
+    "không cư trú",
+    "được Chính phủ chỉ định"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Luật Chứng khoán 2019 chỉ áp dụng cho tổ chức, cá nhân Việt Nam.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 2: áp dụng cho cả tổ chức, cá nhân nước ngoài tham gia đầu tư chứng khoán và hoạt động trên thị trường chứng khoán Việt Nam."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu bốn nhóm nội dung thuộc phạm vi điều chỉnh của Luật Chứng khoán 2019.",
+   "model": "(1) Hoạt động về chứng khoán và thị trường chứng khoán; (2) quyền và nghĩa vụ của tổ chức, cá nhân trong lĩnh vực chứng khoán; (3) tổ chức thị trường chứng khoán; (4) quản lý nhà nước về chứng khoán và thị trường chứng khoán (Điều 1).",
+   "keywords": [
+    "hoạt động",
+    "quyền và nghĩa vụ",
+    "tổ chức thị trường",
+    "quản lý nhà nước"
+   ]
+  }
+ ]
+}

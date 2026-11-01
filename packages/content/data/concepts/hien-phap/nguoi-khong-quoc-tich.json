@@ -1,0 +1,114 @@
+{
+ "id": "nguoi-khong-quoc-tich",
+ "subject": "hien-phap",
+ "chapter": "c5-quoc-tich",
+ "term": "Người không quốc tịch",
+ "definition": "Người không quốc tịch là người không có quốc tịch Việt Nam và cũng không có quốc tịch nước ngoài.",
+ "plain": "Người không quốc tịch không được nhà nước nào bảo hộ, nên luật quốc tịch các nước tìm cách hạn chế tình trạng này. Luật Việt Nam cho trẻ em sinh ra trên lãnh thổ Việt Nam có cha mẹ là người không quốc tịch nhưng thường trú tại Việt Nam được có quốc tịch Việt Nam (Điều 17), và cho người không quốc tịch được xin nhập quốc tịch Việt Nam (Điều 19). Phân biệt với \"quốc tịch nước ngoài\" (khoản 1 Điều 3).",
+ "example": "Vợ chồng K sống lâu năm ở Việt Nam, không có quốc tịch nước nào, có nơi thường trú tại Việt Nam. Con của họ sinh ra ở Việt Nam có quốc tịch Việt Nam (khoản 1 Điều 17).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 2 Điều 3 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-53-vbhn-vpqh-quoc-tich-viet-nam--179993"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quyen-co-quoc-tich",
+  "quoc-tich-theo-huyet-thong",
+  "nhap-quoc-tich-viet-nam"
+ ],
+ "keywords": [
+  "không có quốc tịch Việt Nam",
+  "không có quốc tịch nước ngoài"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 2 Điều 3 Luật Quốc tịch, người không quốc tịch là ai?",
+   "options": [
+    "Người không có quốc tịch Việt Nam và cũng không có quốc tịch nước ngoài",
+    "Người không có hộ chiếu",
+    "Người đang định cư ở nước ngoài",
+    "Người có hai quốc tịch"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 3 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trẻ em sinh ra trên lãnh thổ Việt Nam có cha mẹ đều là người không quốc tịch thì có quốc tịch Việt Nam khi nào?",
+   "options": [
+    "Khi cha mẹ có nơi thường trú tại Việt Nam",
+    "Trong mọi trường hợp",
+    "Khi được Chủ tịch nước cho phép",
+    "Không bao giờ"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 17.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 17 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Người không quốc tịch",
+   "right": "Người có quốc tịch nước ngoài",
+   "cases": [
+    {
+     "text": "Không có quốc tịch Việt Nam và cũng không có quốc tịch nước ngoài",
+     "answer": "left"
+    },
+    {
+     "text": "Có quốc tịch của một nước khác không phải Việt Nam",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1, 2 Điều 3."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người không quốc tịch là người không có quốc tịch {{Việt Nam}} và cũng không có quốc tịch {{nước ngoài}}.",
+   "bank_extra": [
+    "gốc",
+    "tạm thời"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quốc tịch nước ngoài là quốc tịch của một nước khác không phải là quốc tịch {{Việt Nam}}.",
+   "bank_extra": [
+    "ASEAN",
+    "gốc"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người không quốc tịch không được xin nhập quốc tịch Việt Nam.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 19: công dân nước ngoài VÀ người không quốc tịch có đơn thì có thể được nhập quốc tịch Việt Nam nếu đủ điều kiện."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Định nghĩa người không quốc tịch và nêu các quy định hạn chế tình trạng không quốc tịch trong Luật Quốc tịch.",
+   "model": "Người không có quốc tịch Việt Nam và cũng không có quốc tịch nước ngoài (khoản 2 Điều 3). Hạn chế: trẻ em sinh ra ở Việt Nam có cha mẹ không quốc tịch thường trú tại Việt Nam có quốc tịch Việt Nam (Điều 17); trẻ bị bỏ rơi, tìm thấy ở Việt Nam có quốc tịch Việt Nam (Điều 18); người không quốc tịch được xin nhập quốc tịch (Điều 19).",
+   "keywords": [
+    "không có quốc tịch Việt Nam",
+    "không có quốc tịch nước ngoài",
+    "thường trú",
+    "nhập quốc tịch"
+   ]
+  }
+ ]
+}

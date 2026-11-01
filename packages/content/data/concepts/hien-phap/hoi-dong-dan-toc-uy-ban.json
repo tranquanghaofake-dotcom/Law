@@ -1,0 +1,119 @@
+{
+ "id": "hoi-dong-dan-toc-uy-ban",
+ "subject": "hien-phap",
+ "chapter": "c7-quoc-hoi",
+ "term": "Hội đồng dân tộc và các Ủy ban của Quốc hội",
+ "definition": "Ủy ban của Quốc hội thẩm tra dự án luật, kiến nghị về luật, dự án khác và báo cáo được Quốc hội hoặc Ủy ban thường vụ Quốc hội giao; thực hiện quyền giám sát trong phạm vi nhiệm vụ, quyền hạn do luật định; kiến nghị những vấn đề thuộc phạm vi hoạt động của Ủy ban.",
+ "plain": "Các cơ quan chuyên môn của Quốc hội: Hội đồng dân tộc (công tác dân tộc; Chính phủ phải lấy ý kiến khi ban hành quy định thực hiện chính sách dân tộc) và các Ủy ban (Pháp luật, Kinh tế, Tài chính - Ngân sách…). Việc chính: THẨM TRA dự án luật trước khi trình Quốc hội và giám sát theo lĩnh vực. Chủ tịch Hội đồng dân tộc, Chủ nhiệm Ủy ban do Quốc hội bầu. Ngoài ra có Ủy ban lâm thời khi cần (Điều 78).",
+ "example": "Dự án luật do Chính phủ trình phải được một Ủy ban của Quốc hội được phân công (theo lĩnh vực) thẩm tra trước khi Quốc hội thảo luận, biểu quyết.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 2 Điều 76 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "uy-ban-thuong-vu-quoc-hoi",
+  "quyen-trinh-du-an-luat"
+ ],
+ "keywords": [
+  "thẩm tra dự án luật",
+  "giám sát theo lĩnh vực",
+  "Hội đồng dân tộc",
+  "Ủy ban lâm thời"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nhiệm vụ chính của Ủy ban của Quốc hội theo khoản 2 Điều 76 là gì?",
+   "options": [
+    "Thẩm tra dự án luật, kiến nghị về luật, dự án khác và báo cáo được giao; giám sát trong phạm vi do luật định",
+    "Ban hành nghị định",
+    "Xét xử vụ án hành chính",
+    "Bổ nhiệm Bộ trưởng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 76.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 76 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai bầu Chủ tịch Hội đồng dân tộc?",
+   "options": [
+    "Quốc hội",
+    "Ủy ban thường vụ Quốc hội",
+    "Chính phủ",
+    "Mặt trận Tổ quốc"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 75; Phó Chủ tịch, Ủy viên do Ủy ban thường vụ phê chuẩn.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 75 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hội đồng dân tộc",
+   "right": "Ủy ban của Quốc hội",
+   "cases": [
+    {
+     "text": "Giám sát việc thi hành chính sách dân tộc",
+     "answer": "left"
+    },
+    {
+     "text": "Do Quốc hội quyết định thành lập, giải thể",
+     "answer": "right"
+    },
+    {
+     "text": "Chính phủ phải lấy ý kiến khi ban hành quy định thực hiện chính sách dân tộc",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 75, 76."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ủy ban của Quốc hội {{thẩm tra}} dự án luật, kiến nghị về luật được Quốc hội hoặc Ủy ban thường vụ Quốc hội giao.",
+   "bank_extra": [
+    "ban hành",
+    "xét xử"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Khi cần thiết, Quốc hội thành lập Ủy ban {{lâm thời}} để nghiên cứu, thẩm tra một dự án hoặc điều tra về một vấn đề nhất định.",
+   "bank_extra": [
+    "thường trực",
+    "vĩnh viễn"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Việc thành lập, giải thể Ủy ban của Quốc hội do Ủy ban thường vụ Quốc hội quyết định.",
+   "answer": false,
+   "explain": "Sai. Khoản 3 Điều 76: do Quốc hội quyết định."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày tổ chức và nhiệm vụ của Hội đồng dân tộc và các Ủy ban của Quốc hội.",
+   "model": "Hội đồng dân tộc: Chủ tịch do Quốc hội bầu; nghiên cứu, kiến nghị về công tác dân tộc, giám sát chính sách dân tộc; Chính phủ lấy ý kiến khi ban hành quy định về chính sách dân tộc (Điều 75). Ủy ban: Chủ nhiệm do Quốc hội bầu; thẩm tra dự án luật, báo cáo; giám sát theo lĩnh vực; Quốc hội quyết định thành lập, giải thể (Điều 76). Ủy ban lâm thời khi cần (Điều 78).",
+   "keywords": [
+    "Hội đồng dân tộc",
+    "thẩm tra",
+    "giám sát",
+    "lâm thời"
+   ]
+  }
+ ]
+}

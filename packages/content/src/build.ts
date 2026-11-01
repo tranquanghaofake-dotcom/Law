@@ -67,7 +67,9 @@ export function buildContent(root: string, outDir: string = root): { errors: str
   for (const s of subjects) {
     const map = concepts.get(s.id) ?? new Map<string, Concept>();
     for (const ch of s.chapters) for (const l of ch.lessons) for (const cid of l.concepts) {
-      if (!map.has(cid)) errors.push(`subjects/${s.id}.json: đợt '${l.id}' tham chiếu khái niệm '${cid}' không tồn tại trong concepts/${s.id}/`);
+      const c = map.get(cid);
+      if (!c) errors.push(`subjects/${s.id}.json: đợt '${l.id}' tham chiếu khái niệm '${cid}' không tồn tại trong concepts/${s.id}/`);
+      else if (c.chapter !== ch.id) errors.push(`concepts/${s.id}/${cid}.json: chapter '${c.chapter}' nhưng đang nằm trong chương '${ch.id}'`);
     }
     for (const c of map.values()) for (const x of c.confusables) {
       if (!map.has(x)) errors.push(`concepts/${s.id}/${c.id}.json: confusables '${x}' không tồn tại`);

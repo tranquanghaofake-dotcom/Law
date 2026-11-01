@@ -1,0 +1,114 @@
+{
+ "id": "chu-tich-nuoc-doi-ngoai",
+ "subject": "hien-phap",
+ "chapter": "c8-chu-tich-nuoc",
+ "term": "Quyền hạn đối ngoại của Chủ tịch nước",
+ "definition": "Tiếp nhận đại sứ đặc mệnh toàn quyền của nước ngoài; căn cứ vào nghị quyết của Ủy ban thường vụ Quốc hội, bổ nhiệm, miễn nhiệm; quyết định cử, triệu hồi đại sứ đặc mệnh toàn quyền của Cộng hòa xã hội chủ nghĩa Việt Nam; phong hàm, cấp đại sứ;",
+ "plain": "Thay mặt Nhà nước về đối ngoại: tiếp nhận đại sứ nước ngoài (nhận quốc thư); bổ nhiệm đại sứ Việt Nam căn cứ nghị quyết Ủy ban thường vụ Quốc hội; quyết định đàm phán, ký điều ước quốc tế nhân danh Nhà nước; trình Quốc hội phê chuẩn điều ước quan trọng. Chính phủ tổ chức đàm phán, ký điều ước nhân danh Nhà nước theo ỦY QUYỀN của Chủ tịch nước (khoản 7 Điều 96).",
+ "example": "Đại sứ mới của một nước đến Hà Nội trình quốc thư lên Chủ tịch nước: thể hiện quyền \"tiếp nhận đại sứ đặc mệnh toàn quyền của nước ngoài\".",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 6 Điều 88 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "chu-tich-nuoc-vi-tri",
+  "nhiem-vu-chinh-phu"
+ ],
+ "keywords": [
+  "tiếp nhận đại sứ",
+  "bổ nhiệm đại sứ căn cứ nghị quyết Ủy ban thường vụ",
+  "điều ước quốc tế nhân danh Nhà nước"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chủ tịch nước bổ nhiệm đại sứ đặc mệnh toàn quyền của Việt Nam căn cứ vào văn bản nào?",
+   "options": [
+    "Nghị quyết của Ủy ban thường vụ Quốc hội",
+    "Nghị quyết của Chính phủ",
+    "Quyết định của Bộ Ngoại giao",
+    "Nghị quyết của Quốc hội tại kỳ họp"
+   ],
+   "answer": 0,
+   "explain": "Khoản 6 Điều 88; khoản 12 Điều 74.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 6 Điều 88 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chính phủ tổ chức đàm phán, ký điều ước quốc tế nhân danh Nhà nước trên cơ sở nào?",
+   "options": [
+    "Theo ủy quyền của Chủ tịch nước",
+    "Theo quyết định riêng của Thủ tướng",
+    "Theo nghị quyết của Mặt trận Tổ quốc",
+    "Không cần ủy quyền"
+   ],
+   "answer": 0,
+   "explain": "Khoản 7 Điều 96.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 7 Điều 96 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Chủ tịch nước",
+   "right": "Ủy ban thường vụ Quốc hội",
+   "cases": [
+    {
+     "text": "Tiếp nhận đại sứ đặc mệnh toàn quyền nước ngoài",
+     "answer": "left"
+    },
+    {
+     "text": "Phê chuẩn đề nghị bổ nhiệm, miễn nhiệm đại sứ đặc mệnh toàn quyền của Việt Nam",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 6 Điều 88; khoản 12 Điều 74."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chủ tịch nước {{tiếp nhận}} đại sứ đặc mệnh toàn quyền của nước ngoài; căn cứ vào nghị quyết của {{Ủy ban thường vụ Quốc hội}}, bổ nhiệm, miễn nhiệm đại sứ Việt Nam.",
+   "bank_extra": [
+    "bổ nhiệm",
+    "Chính phủ"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chủ tịch nước phong {{hàm}}, cấp đại sứ.",
+   "bank_extra": [
+    "quân hàm",
+    "học hàm"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chính phủ được ký điều ước quốc tế nhân danh Nhà nước mà không cần ủy quyền của Chủ tịch nước.",
+   "answer": false,
+   "explain": "Sai. Khoản 7 Điều 96: Chính phủ tổ chức đàm phán, ký điều ước nhân danh Nhà nước theo ủy quyền của Chủ tịch nước."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quyền hạn đối ngoại của Chủ tịch nước.",
+   "model": "Tiếp nhận đại sứ nước ngoài; căn cứ nghị quyết Ủy ban thường vụ bổ nhiệm, miễn nhiệm, cử, triệu hồi đại sứ Việt Nam; phong hàm, cấp đại sứ; quyết định đàm phán, ký điều ước quốc tế nhân danh Nhà nước; trình Quốc hội phê chuẩn điều ước quan trọng (khoản 6 Điều 88). Chính phủ ký điều ước nhân danh Nhà nước theo ủy quyền (khoản 7 Điều 96).",
+   "keywords": [
+    "tiếp nhận đại sứ",
+    "Ủy ban thường vụ",
+    "điều ước quốc tế",
+    "ủy quyền"
+   ]
+  }
+ ]
+}

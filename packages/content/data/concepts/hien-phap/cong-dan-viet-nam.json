@@ -1,0 +1,118 @@
+{
+ "id": "cong-dan-viet-nam",
+ "subject": "hien-phap",
+ "chapter": "c5-quoc-tich",
+ "term": "Công dân Việt Nam (Điều 17 Hiến pháp)",
+ "definition": "Công dân nước Cộng hòa xã hội chủ nghĩa Việt Nam là người có quốc tịch Việt Nam. Công dân Việt Nam không thể bị trục xuất, giao nộp cho nhà nước khác.",
+ "plain": "Hiến pháp lấy QUỐC TỊCH làm tiêu chí duy nhất xác định ai là công dân: có quốc tịch Việt Nam là công dân, không phụ thuộc nơi cư trú, dân tộc, tôn giáo. Từ tư cách công dân phát sinh quyền, nghĩa vụ cơ bản ở Chương II Hiến pháp. Khoản 2 là bảo đảm quan trọng: Nhà nước không trục xuất, không giao nộp công dân mình cho nước khác; người nước ngoài thì có thể bị trục xuất.",
+ "example": "Một người Việt định cư ở Đức 20 năm, chưa mất quốc tịch Việt Nam, vẫn là công dân Việt Nam. Nếu nước ngoài yêu cầu Việt Nam giao nộp người này để xét xử, Việt Nam không giao nộp theo khoản 2 Điều 17 Hiến pháp.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 17 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quoc-tich-viet-nam",
+  "quyen-con-nguoi-quyen-cong-dan"
+ ],
+ "keywords": [
+  "người có quốc tịch Việt Nam",
+  "không bị trục xuất",
+  "không bị giao nộp"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 1 Điều 17 Hiến pháp 2013, công dân Việt Nam là ai?",
+   "options": [
+    "Người có quốc tịch Việt Nam",
+    "Người sinh ra trên lãnh thổ Việt Nam",
+    "Người thường trú tại Việt Nam",
+    "Người có cha mẹ là người Việt"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 17: tiêu chí là quốc tịch.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 17 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khoản 2 Điều 17 Hiến pháp 2013 bảo đảm điều gì cho công dân Việt Nam?",
+   "options": [
+    "Không thể bị trục xuất, giao nộp cho nhà nước khác",
+    "Không bao giờ bị tước quốc tịch",
+    "Được miễn mọi nghĩa vụ khi ở nước ngoài",
+    "Được có nhiều quốc tịch tùy ý"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 17.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 17 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Công dân Việt Nam",
+   "right": "Người nước ngoài",
+   "cases": [
+    {
+     "text": "Không thể bị trục xuất khỏi Việt Nam",
+     "answer": "left"
+    },
+    {
+     "text": "Có thể bị trục xuất theo pháp luật",
+     "answer": "right"
+    },
+    {
+     "text": "Được Nhà nước bảo hộ khi ở nước ngoài",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 17, 18 Hiến pháp 2013."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công dân nước Cộng hòa xã hội chủ nghĩa Việt Nam là người có {{quốc tịch}} Việt Nam.",
+   "bank_extra": [
+    "hộ khẩu",
+    "căn cước"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công dân Việt Nam không thể bị {{trục xuất}}, {{giao nộp}} cho nhà nước khác.",
+   "bank_extra": [
+    "xét xử",
+    "khen thưởng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo Hiến pháp 2013, người Việt Nam đang định cư ở nước ngoài thì không còn là công dân Việt Nam.",
+   "answer": false,
+   "explain": "Sai. Tiêu chí là quốc tịch (khoản 1 Điều 17), không phải nơi cư trú; người định cư ở nước ngoài chưa mất quốc tịch Việt Nam vẫn là công dân Việt Nam."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quy định của Điều 17 Hiến pháp 2013 về công dân Việt Nam.",
+   "model": "Công dân Việt Nam là người có quốc tịch Việt Nam (khoản 1); công dân Việt Nam không thể bị trục xuất, giao nộp cho nhà nước khác (khoản 2); công dân ở nước ngoài được Nhà nước bảo hộ (khoản 3). Quốc tịch là tiêu chí duy nhất.",
+   "keywords": [
+    "quốc tịch",
+    "trục xuất",
+    "giao nộp",
+    "bảo hộ"
+   ]
+  }
+ ]
+}

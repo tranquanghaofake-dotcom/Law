@@ -1,0 +1,119 @@
+{
+ "id": "ngu-hinh-qthl",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c6-trung-dai",
+ "term": "Ngũ hình trong Quốc triều hình luật",
+ "definition": "I. Xuy hình (Đánh roi) có năm bậc (…). II. Trượng hình (Đánh trượng), có năm bậc (…). III. Đồ hình, có ba bậc: (…) IV. Lưu hình, có ba bậc: Từ châu gần đến châu xa, chia làm ba bậc, tùy theo tội mà tăng giảm. V. Tử hình, có ba bậc: Từ tội thắt cổ (giảo), chém, đến tội, lăng trì, chia làm ba bậc: thắt cổ, chém là một bậc; chém bêu đầu (khiêu) là một bậc; lăng trì là một bậc, tùy theo tội mà tăng giảm.",
+ "plain": "Quốc triều hình luật (thường gọi là Bộ luật Hồng Đức) là bộ luật tổng hợp tiêu biểu thời Hậu Lê; bản còn lại gồm 13 chương, 722 điều (cách chia quyển khác nhau tùy bản in). Bộ luật được hoàn thiện qua nhiều đời vua (có lệnh thời Lê Thánh Tông, Lê Tương Dực, Lê Chiêu Tông), và thường gắn với niên hiệu Hồng Đức (1470–1497) của Lê Thánh Tông. Điều 1 quy định NGŨ HÌNH (5 hình phạt chính) từ nhẹ đến nặng: XUY (đánh roi, 10–50 roi, 5 bậc); TRƯỢNG (đánh trượng, 60–100 trượng, 5 bậc, chỉ đàn ông chịu); ĐỒ (làm khổ sai, 3 bậc); LƯU (đày đi xa: châu gần, châu ngoài, châu xa); TỬ (thắt cổ, chém; chém bêu đầu; lăng trì). Ngoài ngũ hình còn hình phạt khác như biếm (hạ chức), phạt tiền, thích chữ. Mô hình ngũ hình tiếp thu từ luật Trung Hoa nhưng có điều chỉnh (ví dụ phân biệt hình phạt cho nam và nữ).",
+ "example": "Mẹo nhớ thứ tự: Xuy – Trượng – Đồ – Lưu – Tử (roi → gậy → khổ sai → đày → chết).",
+ "source": {
+  "kind": "primary",
+  "cite": "Quốc triều hình luật, Điều 1 (bản dịch Nguyễn Ngọc Nhuận, Nguyễn Tá Nhí; bản điện tử, chưa đối chiếu bản in)",
+  "url": "https://luatduonggia.com/wp-content/uploads/2024/03/QUOC-TRIEU-HINH-LUAT.pdf"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "thap-ac-qthl",
+  "quoc-trieu-thong-che",
+  "chuoc-toi-gia-tre-qthl"
+ ],
+ "keywords": [
+  "xuy",
+  "trượng",
+  "đồ",
+  "lưu",
+  "tử",
+  "722 điều"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 1 Quốc triều hình luật, hình phạt xuy (đánh roi) có bao nhiêu bậc?",
+   "options": [
+    "5 bậc, từ 10 đến 50 roi",
+    "3 bậc, từ 60 đến 100 roi",
+    "5 bậc, từ 60 đến 100 trượng",
+    "3 bậc"
+   ],
+   "answer": 0,
+   "explain": "Điều 1: xuy hình 10–50 roi, 5 bậc; trượng hình 60–100 trượng, 5 bậc.",
+   "source": {
+    "kind": "primary",
+    "cite": "Quốc triều hình luật, Điều 1"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ba bậc của tử hình theo Điều 1 Quốc triều hình luật là gì?",
+   "options": [
+    "Thắt cổ, chém; chém bêu đầu; lăng trì",
+    "Bắn, chém, treo cổ",
+    "Thắt cổ; lưu đày; đồ",
+    "Chém; đánh trượng; đánh roi"
+   ],
+   "answer": 0,
+   "explain": "Điều 1, mục V.",
+   "source": {
+    "kind": "primary",
+    "cite": "Quốc triều hình luật, Điều 1"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Đồ hình",
+   "right": "Lưu hình",
+   "cases": [
+    {
+     "text": "Bị bắt làm việc khổ sai (tượng phường binh, chủng điền binh…)",
+     "answer": "left"
+    },
+    {
+     "text": "Bị đày đi châu gần, châu ngoài, châu xa",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 1, mục III, IV."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Lưu hình, có ba bậc: Từ châu gần đến {{châu xa}}, chia làm {{ba}} bậc.",
+   "bank_extra": [
+    "kinh thành",
+    "năm"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Trượng hình (Đánh trượng), có năm bậc: Từ {{60}} đến 100 trượng.",
+   "bank_extra": [
+    "10",
+    "50"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thứ tự ngũ hình từ nhẹ đến nặng là xuy, trượng, đồ, lưu, tử.",
+   "answer": true,
+   "explain": "Đúng. Điều 1 Quốc triều hình luật."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày hệ thống ngũ hình trong Quốc triều hình luật.",
+   "model": "Điều 1 quy định 5 hình phạt chính: xuy (đánh roi 10–50 roi, 5 bậc); trượng (60–100 trượng, 5 bậc, chỉ áp dụng với nam); đồ (khổ sai, 3 bậc); lưu (đày châu gần, châu ngoài, châu xa); tử (thắt cổ, chém; chém bêu đầu; lăng trì). Ngoài ra có biếm, phạt tiền, thích chữ. Mô hình tiếp thu luật Trung Hoa có điều chỉnh.",
+   "keywords": [
+    "xuy",
+    "trượng",
+    "đồ",
+    "lưu",
+    "tử"
+   ]
+  }
+ ]
+}

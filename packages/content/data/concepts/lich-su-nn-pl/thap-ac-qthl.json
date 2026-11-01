@@ -1,0 +1,125 @@
+{
+ "id": "thap-ac-qthl",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c6-trung-dai",
+ "term": "Thập ác trong Quốc triều hình luật",
+ "definition": "1. Mưu phản, là mưu mô làm nguy đến xã tắc. 2. Mưu đại nghịch, là mưu phá hủy tông miếu, lăng tẩm và cung điện nhà vua. 3. Mưu chống đối, là mưu phản nước theo giặc. 4. Ác nghịch, là đánh và mưu giết ông bà, cha mẹ, bác, chú, thím, cô, anh, chị, em, ông bà ngoại, ông bà cha mẹ chồng. (…) 7. Bất hiếu, là tố cáo, rủa mắng ông bà, cha mẹ, trái lời cha mẹ dạy bảo; nuôi nấng thiếu thốn (…).",
+ "plain": "THẬP ÁC là mười tội nặng nhất: mưu phản, mưu đại nghịch, mưu chống đối (mưu bạn), ác nghịch, bất đạo, đại bất kính, bất hiếu, bất mục, bất nghĩa, nội loạn. Có thể chia hai nhóm. Nhóm xâm phạm NHÀ VUA, NHÀ NƯỚC: mưu phản, mưu đại nghịch, mưu chống đối, đại bất kính. Nhóm xâm phạm LUÂN THƯỜNG, gia đình theo Nho giáo: ác nghịch, bất hiếu, bất mục, nội loạn… Người phạm thập ác KHÔNG được hưởng các ưu đãi: bát nghị (Điều 4), chuộc tội (Điều 16). Chế định này đã có mầm từ thời Lý (chiếu năm 1042).",
+ "example": "Một con đánh cha (ác nghịch) dù 75 tuổi cũng không được chuộc theo Điều 16, vì đây là tội thập ác.",
+ "source": {
+  "kind": "primary",
+  "cite": "Quốc triều hình luật, Điều 2 (bản dịch Nguyễn Ngọc Nhuận, Nguyễn Tá Nhí; bản điện tử, chưa đối chiếu bản in)",
+  "url": "https://luatduonggia.com/wp-content/uploads/2024/03/QUOC-TRIEU-HINH-LUAT.pdf"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "ngu-hinh-qthl",
+  "bat-nghi-qthl",
+  "chuoc-toi-thap-ac"
+ ],
+ "keywords": [
+  "mười tội ác",
+  "mưu phản",
+  "bất hiếu",
+  "không được bát nghị, chuộc tội"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 2 Quốc triều hình luật, \"mưu phản\" là gì?",
+   "options": [
+    "Mưu mô làm nguy đến xã tắc",
+    "Mưu phản nước theo giặc",
+    "Mưu phá hủy tông miếu, cung điện",
+    "Đánh và mưu giết ông bà, cha mẹ"
+   ],
+   "answer": 0,
+   "explain": "Điều 2, khoản 1. \"Mưu phản nước theo giặc\" là mưu chống đối (khoản 3).",
+   "source": {
+    "kind": "primary",
+    "cite": "Quốc triều hình luật, Điều 2"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hành vi \"rủa mắng ông bà, cha mẹ, trái lời cha mẹ dạy bảo\" thuộc tội nào trong thập ác?",
+   "options": [
+    "Bất hiếu",
+    "Bất mục",
+    "Ác nghịch",
+    "Nội loạn"
+   ],
+   "answer": 0,
+   "explain": "Điều 2, khoản 7.",
+   "source": {
+    "kind": "primary",
+    "cite": "Quốc triều hình luật, Điều 2"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Xâm phạm vua, nhà nước",
+   "right": "Xâm phạm luân thường, gia đình",
+   "cases": [
+    {
+     "text": "Mưu đại nghịch",
+     "answer": "left"
+    },
+    {
+     "text": "Đại bất kính",
+     "answer": "left"
+    },
+    {
+     "text": "Ác nghịch",
+     "answer": "right"
+    },
+    {
+     "text": "Bất hiếu",
+     "answer": "right"
+    }
+   ],
+   "explain": "Cách phân nhóm phổ biến của giáo trình dựa trên Điều 2."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Mưu phản, là mưu mô làm nguy đến {{xã tắc}}. Mưu chống đối, là mưu phản nước theo {{giặc}}.",
+   "bank_extra": [
+    "gia đình",
+    "vua"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Mưu đại nghịch, là mưu phá hủy {{tông miếu}}, lăng tẩm và cung điện nhà vua.",
+   "bank_extra": [
+    "đình làng",
+    "chùa chiền"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người thuộc diện bát nghị phạm tội thập ác vẫn được giảm một bậc theo Điều 4.",
+   "answer": false,
+   "explain": "Sai. Điều 4: \"nếu phạm tội thập ác thì không theo luật này\"."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày chế định thập ác trong Quốc triều hình luật và ý nghĩa của nó.",
+   "model": "Điều 2 quy định 10 tội nặng nhất: mưu phản, mưu đại nghịch, mưu chống đối, ác nghịch, bất đạo, đại bất kính, bất hiếu, bất mục, bất nghĩa, nội loạn; bảo vệ vương quyền và luân thường Nho giáo; người phạm thập ác bị loại khỏi ưu đãi bát nghị, chuộc tội.",
+   "keywords": [
+    "mưu phản",
+    "bất hiếu",
+    "vương quyền",
+    "luân thường",
+    "không được chuộc"
+   ]
+  }
+ ]
+}

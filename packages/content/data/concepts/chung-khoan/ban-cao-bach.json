@@ -1,0 +1,114 @@
+{
+ "id": "ban-cao-bach",
+ "subject": "chung-khoan",
+ "chapter": "c2-chao-ban",
+ "term": "Bản cáo bạch",
+ "definition": "Bản cáo bạch là tài liệu hoặc dữ liệu điện tử công khai những thông tin chính xác, trung thực, khách quan liên quan đến việc chào bán hoặc niêm yết chứng khoán của tổ chức phát hành.",
+ "plain": "Bản cáo bạch là \"hồ sơ bệnh án\" của đợt chào bán: thông tin về tổ chức phát hành, đợt chào bán, rủi ro, kế hoạch dùng tiền. Nhà đầu tư dựa vào đó để quyết định mua, nên thông tin sai lệch trong bản cáo bạch là căn cứ để đình chỉ, hủy bỏ đợt chào bán và xử lý trách nhiệm.",
+ "example": "Trước khi mua cổ phiếu IPO, bạn đọc mục \"các yếu tố rủi ro\" trong bản cáo bạch. Phân phối chỉ được thực hiện sau khi tổ chức phát hành bảo đảm người mua tiếp cận được bản cáo bạch (khoản 1 Điều 26).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 23 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "dang-ky-chao-ban-ra-cong-chung",
+  "phan-phoi-chung-khoan"
+ ],
+ "keywords": [
+  "chính xác, trung thực, khách quan",
+  "chào bán hoặc niêm yết",
+  "tài liệu hoặc dữ liệu điện tử"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 23 Điều 4, bản cáo bạch công khai thông tin liên quan đến việc gì?",
+   "options": [
+    "Chào bán hoặc niêm yết chứng khoán của tổ chức phát hành",
+    "Thanh tra công ty chứng khoán",
+    "Giải thể quỹ đầu tư",
+    "Xử phạt vi phạm hành chính"
+   ],
+   "answer": 0,
+   "explain": "Khoản 23 Điều 4: \"liên quan đến việc chào bán hoặc niêm yết chứng khoán\".",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 23 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trong thời gian Ủy ban Chứng khoán Nhà nước xem xét hồ sơ, tổ chức phát hành được dùng thông tin gì để thăm dò thị trường?",
+   "options": [
+    "Chỉ thông tin trong Bản cáo bạch đã gửi Ủy ban, nêu rõ ngày phát hành và giá bán là dự kiến",
+    "Mọi thông tin quảng cáo tự soạn",
+    "Cam kết lợi nhuận tối thiểu cho nhà đầu tư",
+    "Không được dùng bất kỳ thông tin nào"
+   ],
+   "answer": 0,
+   "explain": "Điều 24: chỉ được sử dụng trung thực, chính xác các thông tin trong Bản cáo bạch đã gửi Ủy ban; ngày phát hành, giá bán phải nêu là dự kiến.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 24 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Bản cáo bạch",
+   "right": "Bản thông báo phát hành",
+   "cases": [
+    {
+     "text": "Công khai thông tin về tổ chức phát hành, đợt chào bán, rủi ro",
+     "answer": "left"
+    },
+    {
+     "text": "Công bố trên 01 tờ báo điện tử hoặc báo in trong 03 số liên tiếp sau khi Giấy chứng nhận có hiệu lực",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 23 Điều 4; khoản 3 Điều 25."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bản cáo bạch là tài liệu hoặc dữ liệu điện tử công khai những thông tin {{chính xác}}, trung thực, {{khách quan}} liên quan đến việc chào bán hoặc niêm yết chứng khoán của tổ chức phát hành.",
+   "bank_extra": [
+    "bí mật",
+    "dự đoán"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Việc phân phối chứng khoán chỉ được thực hiện sau khi tổ chức phát hành bảo đảm người mua chứng khoán tiếp cận {{Bản cáo bạch}}.",
+   "bank_extra": [
+    "Điều lệ công ty",
+    "báo cáo thường niên"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Bản cáo bạch chỉ được lập dưới dạng văn bản giấy.",
+   "answer": false,
+   "explain": "Sai. Khoản 23 Điều 4: \"tài liệu hoặc dữ liệu điện tử\"."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Định nghĩa bản cáo bạch và nêu vai trò của nó trong chào bán ra công chúng.",
+   "model": "Bản cáo bạch là tài liệu hoặc dữ liệu điện tử công khai thông tin chính xác, trung thực, khách quan liên quan đến việc chào bán hoặc niêm yết chứng khoán của tổ chức phát hành (khoản 23 Điều 4). Vai trò: căn cứ để nhà đầu tư quyết định; chỉ được phân phối khi người mua tiếp cận được bản cáo bạch; chỉ được dùng thông tin trong bản cáo bạch để thăm dò thị trường.",
+   "keywords": [
+    "chính xác, trung thực, khách quan",
+    "chào bán hoặc niêm yết",
+    "tiếp cận",
+    "thăm dò thị trường"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,118 @@
+{
+ "id": "chinh-sach-phat-trien-thi-truong",
+ "subject": "chung-khoan",
+ "chapter": "c9-quan-ly-nha-nuoc",
+ "term": "Chính sách phát triển thị trường chứng khoán",
+ "definition": "Nhà nước có chính sách khuyến khích, tạo điều kiện thuận lợi để tổ chức, cá nhân trong nước, nước ngoài tham gia đầu tư và hoạt động trên thị trường chứng khoán nhằm huy động các nguồn vốn trung hạn và dài hạn cho đầu tư phát triển. Nhà nước có chính sách quản lý, giám sát bảo đảm thị trường chứng khoán hoạt động công bằng, công khai, minh bạch, an toàn và hiệu quả.",
+ "plain": "Vai trò kinh tế của thị trường chứng khoán: kênh huy động vốn TRUNG HẠN VÀ DÀI HẠN cho đầu tư phát triển (bổ sung cho kênh tín dụng ngân hàng). Nhà nước vừa khuyến khích (trong nước và nước ngoài), vừa quản lý, giám sát để thị trường công bằng, công khai, minh bạch, an toàn, hiệu quả; đồng thời đầu tư hạ tầng công nghệ, nhân lực, phổ biến kiến thức.",
+ "example": "Một doanh nghiệp cần 1.000 tỷ cho nhà máy hoạt động 20 năm: thay vì vay ngắn hạn ngân hàng, có thể phát hành cổ phiếu hoặc trái phiếu dài hạn trên thị trường chứng khoán, đúng mục tiêu tại khoản 1 Điều 6.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 6 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nguyen-tac-hoat-dong-chung-khoan",
+  "quan-ly-nha-nuoc-chung-khoan"
+ ],
+ "keywords": [
+  "vốn trung hạn và dài hạn",
+  "khuyến khích trong nước, nước ngoài",
+  "công bằng, công khai, minh bạch, an toàn, hiệu quả"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 1 Điều 6, thị trường chứng khoán nhằm huy động nguồn vốn gì?",
+   "options": [
+    "Vốn trung hạn và dài hạn cho đầu tư phát triển",
+    "Chỉ vốn ngắn hạn",
+    "Vốn cho chi tiêu thường xuyên của Nhà nước",
+    "Ngoại tệ cho dự trữ quốc gia"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 6.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 6 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chính sách quản lý, giám sát của Nhà nước nhằm bảo đảm thị trường chứng khoán hoạt động thế nào?",
+   "options": [
+    "Công bằng, công khai, minh bạch, an toàn và hiệu quả",
+    "Tăng trưởng giá cổ phiếu liên tục",
+    "Chỉ phục vụ doanh nghiệp nhà nước",
+    "Hạn chế nhà đầu tư nước ngoài"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 6.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 6 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Chính sách phát triển (Điều 6)",
+   "right": "Nguyên tắc hoạt động (Điều 5)",
+   "cases": [
+    {
+     "text": "Huy động vốn trung hạn và dài hạn cho đầu tư phát triển",
+     "answer": "left"
+    },
+    {
+     "text": "Tự chịu trách nhiệm về rủi ro",
+     "answer": "right"
+    },
+    {
+     "text": "Đầu tư hiện đại hóa hạ tầng công nghệ thông tin cho thị trường",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 5 và Điều 6."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhà nước khuyến khích tổ chức, cá nhân tham gia thị trường chứng khoán nhằm huy động các nguồn vốn {{trung hạn}} và {{dài hạn}} cho đầu tư phát triển.",
+   "bank_extra": [
+    "ngắn hạn",
+    "không kỳ hạn"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhà nước có chính sách khuyến khích tổ chức, cá nhân trong nước và {{nước ngoài}} tham gia đầu tư trên thị trường chứng khoán.",
+   "bank_extra": [
+    "chỉ trong nước",
+    "nhà nước"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Điều 6 chỉ khuyến khích nhà đầu tư trong nước tham gia thị trường chứng khoán.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 6 khuyến khích cả tổ chức, cá nhân trong nước và nước ngoài."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu nội dung chính sách phát triển thị trường chứng khoán theo Điều 6.",
+   "model": "Khuyến khích, tạo điều kiện cho tổ chức, cá nhân trong nước, nước ngoài tham gia nhằm huy động vốn trung hạn, dài hạn cho đầu tư phát triển; quản lý, giám sát bảo đảm thị trường công bằng, công khai, minh bạch, an toàn, hiệu quả; đầu tư hạ tầng công nghệ, nguồn nhân lực, tuyên truyền phổ biến kiến thức.",
+   "keywords": [
+    "trung hạn và dài hạn",
+    "nước ngoài",
+    "minh bạch",
+    "hạ tầng"
+   ]
+  }
+ ]
+}

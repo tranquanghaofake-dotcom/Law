@@ -1,0 +1,121 @@
+{
+ "id": "tong-cong-ty-luu-ky-bu-tru",
+ "subject": "chung-khoan",
+ "chapter": "c4-dang-ky-luu-ky",
+ "term": "Tổng công ty lưu ký và bù trừ chứng khoán Việt Nam",
+ "definition": "Tổng công ty lưu ký và bù trừ chứng khoán Việt Nam là doanh nghiệp được thành lập và hoạt động theo quy định của Luật này và Luật Doanh nghiệp, do Nhà nước nắm giữ trên 50% vốn điều lệ hoặc tổng số cổ phần có quyền biểu quyết.",
+ "plain": "Nếu Sở giao dịch là nơi \"khớp lệnh\" thì Tổng công ty lưu ký và bù trừ (VSDC) là nơi \"ghi sổ và giao nhận\": đăng ký người sở hữu, giữ chứng khoán, bù trừ và thanh toán sau khi khớp lệnh. Địa vị pháp lý giống Sở giao dịch: doanh nghiệp, Nhà nước nắm trên 50% vốn, Thủ tướng quyết định thành lập, chịu quản lý, giám sát của Ủy ban Chứng khoán Nhà nước. Trước đây là Trung tâm lưu ký chứng khoán (khoản 6 Điều 135 Luật Chứng khoán).",
+ "example": "Bạn mua 1.000 cổ phiếu trên app: Sở giao dịch khớp lệnh; sau đó VSDC bù trừ, chuyển cổ phiếu vào tài khoản lưu ký của bạn và ghi nhận bạn là người sở hữu.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 52 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "dang-ky-chung-khoan",
+  "luu-ky-chung-khoan",
+  "bu-tru-thanh-toan-giao-dich"
+ ],
+ "keywords": [
+  "doanh nghiệp",
+  "Nhà nước nắm trên 50%",
+  "đăng ký, lưu ký, bù trừ, thanh toán"
+ ],
+ "note": "Luật 56/2024/QH15 (hiệu lực 01/01/2025) bổ sung khoản 4 Điều 55: Tổng công ty được thành lập công ty con và giao cho công ty con thực hiện một số quyền, nghĩa vụ sau khi Bộ Tài chính chấp thuận. Luật cũng thêm cụm \"và công ty con\" vào các quy định về quản lý, giám sát, tạm ngừng hoạt động (Điều 52, 68). Giáo trình 2021 chưa có.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 1 Điều 52, Tổng công ty lưu ký và bù trừ chứng khoán Việt Nam có địa vị pháp lý là gì?",
+   "options": [
+    "Doanh nghiệp do Nhà nước nắm giữ trên 50% vốn điều lệ hoặc tổng số cổ phần có quyền biểu quyết",
+    "Cơ quan thuộc Ủy ban Chứng khoán Nhà nước",
+    "Đơn vị thuộc Ngân hàng Nhà nước",
+    "Công ty con của Sở giao dịch chứng khoán Việt Nam"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 52.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 52 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tổng công ty lưu ký và bù trừ chứng khoán Việt Nam và công ty con chịu sự quản lý, giám sát của ai?",
+   "options": [
+    "Ủy ban Chứng khoán Nhà nước",
+    "Sở giao dịch chứng khoán Việt Nam",
+    "Ngân hàng Nhà nước Việt Nam",
+    "Bộ Công Thương"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 52.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 52 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Sở giao dịch chứng khoán Việt Nam",
+   "right": "Tổng công ty lưu ký và bù trừ",
+   "cases": [
+    {
+     "text": "Tổ chức, vận hành hệ thống giao dịch, khớp lệnh",
+     "answer": "left"
+    },
+    {
+     "text": "Lập Sổ đăng ký người sở hữu chứng khoán",
+     "answer": "right"
+    },
+    {
+     "text": "Bù trừ, xác định nghĩa vụ thanh toán tiền và chứng khoán",
+     "answer": "right"
+    }
+   ],
+   "explain": "Chương IV và Chương V Luật Chứng khoán."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tổng công ty lưu ký và bù trừ chứng khoán Việt Nam là {{doanh nghiệp}} do Nhà nước nắm giữ trên {{50%}} vốn điều lệ hoặc tổng số cổ phần có quyền biểu quyết.",
+   "bank_extra": [
+    "cơ quan nhà nước",
+    "30%"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thủ tướng Chính phủ quyết định thành lập Tổng công ty lưu ký và bù trừ chứng khoán Việt Nam theo đề nghị của {{Bộ trưởng Bộ Tài chính}}.",
+   "bank_extra": [
+    "Chủ tịch Quốc hội",
+    "Thống đốc Ngân hàng Nhà nước"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tổng công ty lưu ký và bù trừ chứng khoán Việt Nam là bộ phận của Sở giao dịch chứng khoán Việt Nam.",
+   "answer": false,
+   "explain": "Sai. Đây là doanh nghiệp độc lập (khoản 1 Điều 52), do Thủ tướng quyết định thành lập, phối hợp với Sở giao dịch nhưng không trực thuộc."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày địa vị pháp lý và chức năng của Tổng công ty lưu ký và bù trừ chứng khoán Việt Nam.",
+   "model": "Doanh nghiệp theo Luật Chứng khoán và Luật Doanh nghiệp, Nhà nước nắm trên 50% vốn điều lệ; Thủ tướng quyết định thành lập theo đề nghị Bộ trưởng Bộ Tài chính; chịu quản lý, giám sát của Ủy ban Chứng khoán Nhà nước. Chức năng: đăng ký, lưu ký, bù trừ, thanh toán chứng khoán; lập Sổ đăng ký người sở hữu; quản lý quỹ hỗ trợ thanh toán, quỹ bù trừ.",
+   "keywords": [
+    "doanh nghiệp",
+    "trên 50%",
+    "Ủy ban Chứng khoán Nhà nước",
+    "lưu ký",
+    "bù trừ"
+   ]
+  }
+ ]
+}

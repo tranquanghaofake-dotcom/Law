@@ -1,0 +1,128 @@
+{
+ "id": "han-che-cong-ty-chung-khoan",
+ "subject": "chung-khoan",
+ "chapter": "c5-cong-ty-chung-khoan",
+ "term": "Hạn chế đối với công ty chứng khoán",
+ "definition": "Không được đưa ra nhận định hoặc bảo đảm với khách hàng về mức thu nhập hoặc lợi nhuận đạt được trên khoản đầu tư của mình hoặc bảo đảm khách hàng không bị thua lỗ, trừ trường hợp đầu tư vào chứng khoán có thu nhập cố định. Không được tiết lộ thông tin về khách hàng, trừ trường hợp được khách hàng đồng ý hoặc theo yêu cầu của cơ quan có thẩm quyền.",
+ "plain": "Câu \"cam kết lãi 2%/tháng, không lỗ\" của môi giới là trái luật (trừ chứng khoán thu nhập cố định như trái phiếu). Công ty còn phải giữ bí mật thông tin khách hàng, không làm nhà đầu tư hiểu nhầm về giá, không cho người khác mượn danh nghĩa. Cổ đông sáng lập không được chuyển nhượng cổ phần trong 03 năm kể từ khi được cấp phép (trừ chuyển nhượng giữa các cổ đông sáng lập với nhau).",
+ "example": "Nhân viên môi giới nhắn tin cho khách: \"Vào mã này em đảm bảo lãi 30% trong 3 tháng, lỗ em chịu\". Đây là hành vi bị cấm theo khoản 1 Điều 91.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 91 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nghia-vu-cong-ty-chung-khoan",
+  "quan-ly-tai-san-khach-hang-ctck"
+ ],
+ "keywords": [
+  "không bảo đảm lợi nhuận",
+  "không tiết lộ thông tin khách hàng",
+  "cổ đông sáng lập 03 năm"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Công ty chứng khoán được bảo đảm mức thu nhập cho khách hàng trong trường hợp nào?",
+   "options": [
+    "Đầu tư vào chứng khoán có thu nhập cố định",
+    "Khách hàng là nhà đầu tư chuyên nghiệp",
+    "Khách hàng ký cam kết chịu rủi ro",
+    "Không bao giờ"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 91: ngoại lệ duy nhất là chứng khoán có thu nhập cố định.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 91 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Cổ đông sáng lập công ty chứng khoán không được chuyển nhượng cổ phần trong bao lâu kể từ ngày được cấp giấy phép?",
+   "options": [
+    "03 năm",
+    "01 năm",
+    "05 năm",
+    "06 tháng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 91 (trừ chuyển nhượng giữa các cổ đông sáng lập).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 91 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Được phép",
+   "right": "Bị cấm",
+   "cases": [
+    {
+     "text": "Tiết lộ thông tin khách hàng theo yêu cầu của cơ quan có thẩm quyền",
+     "answer": "left"
+    },
+    {
+     "text": "Cam kết khách hàng không bị thua lỗ khi mua cổ phiếu",
+     "answer": "right"
+    },
+    {
+     "text": "Cho tổ chức khác dùng danh nghĩa công ty để kinh doanh chứng khoán",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1, 2, 5 Điều 91."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công ty chứng khoán không được bảo đảm khách hàng không bị {{thua lỗ}}, trừ trường hợp đầu tư vào chứng khoán có {{thu nhập cố định}}.",
+   "bank_extra": [
+    "thuế",
+    "biến động giá"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công ty chứng khoán không được tiết lộ thông tin về khách hàng, trừ trường hợp được khách hàng {{đồng ý}} hoặc theo yêu cầu của cơ quan có thẩm quyền.",
+   "bank_extra": [
+    "ủy quyền miệng",
+    "yêu cầu của đối thủ"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Công ty chứng khoán F được cấp phép tháng 1/2025. Tháng 6/2026, một cổ đông sáng lập muốn bán toàn bộ cổ phần cho một nhà đầu tư bên ngoài. Có được không?",
+   "options": [
+    "Không, vì chưa hết 03 năm kể từ ngày được cấp giấy phép",
+    "Có, vì đã quá 01 năm",
+    "Có, nếu Đại hội đồng cổ đông đồng ý",
+    "Có, nếu giá chuyển nhượng bằng mệnh giá"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 91: chỉ được chuyển nhượng cho cổ đông sáng lập khác trong 03 năm.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 91 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các hạn chế chính đối với công ty chứng khoán theo Điều 91.",
+   "model": "Không nhận định, bảo đảm lợi nhuận hay bảo đảm không lỗ (trừ chứng khoán thu nhập cố định); không tiết lộ thông tin khách hàng (trừ khi khách đồng ý hoặc cơ quan có thẩm quyền yêu cầu); không làm nhà đầu tư hiểu nhầm về giá; cổ đông sáng lập không chuyển nhượng trong 03 năm; kinh doanh bằng danh nghĩa của chính mình; không góp vốn, mua cổ phần công ty chứng khoán khác trừ hợp nhất, sáp nhập hoặc không quá 5%.",
+   "keywords": [
+    "bảo đảm lợi nhuận",
+    "thông tin khách hàng",
+    "03 năm",
+    "danh nghĩa"
+   ]
+  }
+ ]
+}

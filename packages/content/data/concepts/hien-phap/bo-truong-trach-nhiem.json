@@ -1,0 +1,116 @@
+{
+ "id": "bo-truong-trach-nhiem",
+ "subject": "hien-phap",
+ "chapter": "c9-chinh-phu",
+ "term": "Bộ trưởng và chế độ trách nhiệm",
+ "definition": "Bộ trưởng, Thủ trưởng cơ quan ngang bộ chịu trách nhiệm cá nhân trước Thủ tướng Chính phủ, Chính phủ và Quốc hội về ngành, lĩnh vực được phân công phụ trách, cùng các thành viên khác của Chính phủ chịu trách nhiệm tập thể về hoạt động của Chính phủ.",
+ "plain": "Bộ trưởng chịu HAI loại trách nhiệm: CÁ NHÂN (trước Thủ tướng, Chính phủ và Quốc hội về ngành mình phụ trách) và TẬP THỂ (cùng thành viên Chính phủ về hoạt động chung). Bộ trưởng vừa là thành viên Chính phủ vừa là người đứng đầu bộ, quản lý nhà nước về ngành, lĩnh vực trên phạm vi cả nước (Điều 99), báo cáo trước Nhân dân về vấn đề quan trọng.",
+ "example": "Ngành y tế xảy ra sai phạm lớn trong mua sắm: Bộ trưởng Bộ Y tế chịu trách nhiệm cá nhân, có thể bị chất vấn, bỏ phiếu tín nhiệm trước Quốc hội.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 4 Điều 95 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "co-cau-chinh-phu",
+  "chat-van",
+  "bo-phieu-tin-nhiem"
+ ],
+ "keywords": [
+  "trách nhiệm cá nhân",
+  "trách nhiệm tập thể",
+  "đứng đầu bộ",
+  "quản lý ngành, lĩnh vực"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Bộ trưởng chịu trách nhiệm cá nhân trước những chủ thể nào?",
+   "options": [
+    "Thủ tướng, Chính phủ và Quốc hội",
+    "Chỉ Thủ tướng",
+    "Chỉ Chủ tịch nước",
+    "Chỉ Ủy ban thường vụ Quốc hội"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 95.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 95 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Bộ trưởng báo cáo công tác trước ai theo khoản 2 Điều 99?",
+   "options": [
+    "Chính phủ, Thủ tướng; và báo cáo trước Nhân dân về vấn đề quan trọng",
+    "Chủ tịch nước",
+    "Tòa án nhân dân tối cao",
+    "Mặt trận Tổ quốc"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 99.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 99 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Trách nhiệm cá nhân của Bộ trưởng",
+   "right": "Trách nhiệm tập thể",
+   "cases": [
+    {
+     "text": "Về ngành, lĩnh vực được phân công phụ trách",
+     "answer": "left"
+    },
+    {
+     "text": "Về hoạt động chung của Chính phủ",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 4 Điều 95."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bộ trưởng chịu trách nhiệm {{cá nhân}} về ngành, lĩnh vực được phân công, cùng các thành viên khác của Chính phủ chịu trách nhiệm {{tập thể}} về hoạt động của Chính phủ.",
+   "bank_extra": [
+    "liên đới",
+    "hành chính"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bộ trưởng, Thủ trưởng cơ quan ngang bộ là thành viên Chính phủ và là người {{đứng đầu}} bộ, cơ quan ngang bộ.",
+   "bank_extra": [
+    "tham mưu",
+    "giúp việc"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Bộ trưởng chỉ chịu trách nhiệm trước Thủ tướng, không chịu trách nhiệm trước Quốc hội.",
+   "answer": false,
+   "explain": "Sai. Khoản 4 Điều 95: chịu trách nhiệm cá nhân trước Thủ tướng, Chính phủ và Quốc hội."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày vị trí và chế độ trách nhiệm của Bộ trưởng.",
+   "model": "Bộ trưởng là thành viên Chính phủ, đứng đầu bộ, quản lý nhà nước về ngành, lĩnh vực (Điều 99); chịu trách nhiệm cá nhân trước Thủ tướng, Chính phủ và Quốc hội về ngành, lĩnh vực; cùng thành viên khác chịu trách nhiệm tập thể về hoạt động của Chính phủ (khoản 4 Điều 95); báo cáo trước Chính phủ, Thủ tướng và trước Nhân dân.",
+   "keywords": [
+    "thành viên Chính phủ",
+    "trách nhiệm cá nhân",
+    "trách nhiệm tập thể",
+    "Quốc hội"
+   ]
+  }
+ ]
+}

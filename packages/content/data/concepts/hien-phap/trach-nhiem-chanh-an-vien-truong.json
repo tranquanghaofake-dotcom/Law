@@ -1,0 +1,123 @@
+{
+ "id": "trach-nhiem-chanh-an-vien-truong",
+ "subject": "hien-phap",
+ "chapter": "c10-toa-an-vien-kiem-sat",
+ "term": "Trách nhiệm của Chánh án Tòa án nhân dân tối cao và Viện trưởng Viện kiểm sát nhân dân tối cao",
+ "definition": "Chánh án Toà án nhân dân tối cao chịu trách nhiệm và báo cáo công tác trước Quốc hội; trong thời gian Quốc hội không họp, chịu trách nhiệm và báo cáo công tác trước Ủy ban thường vụ Quốc hội, Chủ tịch nước. (…) Viện trưởng Viện kiểm sát nhân dân tối cao chịu trách nhiệm và báo cáo công tác trước Quốc hội; trong thời gian Quốc hội không họp, chịu trách nhiệm và báo cáo công tác trước Ủy ban thường vụ Quốc hội, Chủ tịch nước.",
+ "plain": "Cả Chánh án Tòa án nhân dân tối cao và Viện trưởng Viện kiểm sát nhân dân tối cao: do Quốc hội bầu theo đề nghị của Chủ tịch nước; nhiệm kỳ theo Quốc hội; chịu trách nhiệm, báo cáo trước Quốc hội, giữa hai kỳ họp thì trước Ủy ban thường vụ Quốc hội, Chủ tịch nước; có thể bị chất vấn, bỏ phiếu tín nhiệm. Thẩm phán, Kiểm sát viên: bổ nhiệm, nhiệm kỳ do luật định.",
+ "example": "Tại kỳ họp cuối năm, Chánh án Tòa án nhân dân tối cao và Viện trưởng Viện kiểm sát nhân dân tối cao trình bày báo cáo công tác trước Quốc hội và trả lời chất vấn của đại biểu.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 2 Điều 105, khoản 2 Điều 108 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "toa-an-nhan-dan-toi-cao",
+  "vien-kiem-sat-chuc-nang",
+  "chat-van"
+ ],
+ "keywords": [
+  "báo cáo trước Quốc hội",
+  "giữa hai kỳ họp: Ủy ban thường vụ, Chủ tịch nước",
+  "nhiệm kỳ theo Quốc hội"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trong thời gian Quốc hội không họp, Chánh án Tòa án nhân dân tối cao báo cáo công tác trước ai?",
+   "options": [
+    "Ủy ban thường vụ Quốc hội, Chủ tịch nước",
+    "Chính phủ",
+    "Thủ tướng",
+    "Bộ trưởng Bộ Tư pháp"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 105.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 105 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nhiệm kỳ của Viện trưởng Viện kiểm sát nhân dân tối cao được xác định thế nào?",
+   "options": [
+    "Theo nhiệm kỳ của Quốc hội",
+    "Năm năm độc lập với Quốc hội",
+    "Mười năm",
+    "Do Chủ tịch nước quyết định"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 108.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 108 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Theo nhiệm kỳ của Quốc hội",
+   "right": "Do luật định",
+   "cases": [
+    {
+     "text": "Nhiệm kỳ Chánh án Tòa án nhân dân tối cao",
+     "answer": "left"
+    },
+    {
+     "text": "Nhiệm kỳ Thẩm phán",
+     "answer": "right"
+    },
+    {
+     "text": "Nhiệm kỳ Viện trưởng Viện kiểm sát nhân dân tối cao",
+     "answer": "left"
+    },
+    {
+     "text": "Nhiệm kỳ Kiểm sát viên",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 105, 108."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chánh án Tòa án nhân dân tối cao chịu trách nhiệm và báo cáo công tác trước {{Quốc hội}}; trong thời gian Quốc hội không họp, trước Ủy ban thường vụ Quốc hội, {{Chủ tịch nước}}.",
+   "bank_extra": [
+    "Chính phủ",
+    "Thủ tướng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Việc bổ nhiệm, phê chuẩn, miễn nhiệm, cách chức, nhiệm kỳ của Thẩm phán do {{luật}} định.",
+   "bank_extra": [
+    "Chánh án",
+    "Chủ tịch nước tùy ý"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chánh án Tòa án nhân dân tối cao báo cáo công tác trước Chính phủ.",
+   "answer": false,
+   "explain": "Sai. Báo cáo trước Quốc hội; giữa hai kỳ họp trước Ủy ban thường vụ Quốc hội, Chủ tịch nước (khoản 2 Điều 105). Tòa án không trực thuộc Chính phủ."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày chế độ trách nhiệm, báo cáo và nhiệm kỳ của Chánh án Tòa án nhân dân tối cao, Viện trưởng Viện kiểm sát nhân dân tối cao.",
+   "model": "Cả hai do Quốc hội bầu (theo đề nghị Chủ tịch nước), nhiệm kỳ theo Quốc hội; chịu trách nhiệm và báo cáo trước Quốc hội, giữa hai kỳ họp trước Ủy ban thường vụ Quốc hội, Chủ tịch nước (Điều 105, 108). Thẩm phán, Kiểm sát viên do luật định.",
+   "keywords": [
+    "Quốc hội",
+    "Ủy ban thường vụ",
+    "Chủ tịch nước",
+    "nhiệm kỳ"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "id": "dai-bieu-hoi-dong-nhan-dan",
+ "subject": "hien-phap",
+ "chapter": "c11-chinh-quyen-dia-phuong",
+ "term": "Đại biểu Hội đồng nhân dân",
+ "definition": "Đại biểu Hội đồng nhân dân là người đại diện cho ý chí, nguyện vọng của Nhân dân địa phương; liên hệ chặt chẽ với cử tri, chịu sự giám sát của cử tri, thực hiện chế độ tiếp xúc, báo cáo với cử tri về hoạt động của mình và của Hội đồng nhân dân, trả lời những yêu cầu, kiến nghị của cử tri; xem xét, đôn đốc việc giải quyết khiếu nại, tố cáo.",
+ "plain": "Khác đại biểu Quốc hội (đại diện cả Nhân dân cả nước), đại biểu Hội đồng nhân dân đại diện Nhân dân ĐỊA PHƯƠNG. Nghĩa vụ: tiếp xúc, báo cáo cử tri; trả lời kiến nghị; đôn đốc giải quyết khiếu nại, tố cáo; vận động Nhân dân thực hiện pháp luật. Quyền: chất vấn Chủ tịch Ủy ban nhân dân, thành viên Ủy ban nhân dân, Chánh án, Viện trưởng cùng cấp; kiến nghị với cơ quan, tổ chức ở địa phương (khoản 2).",
+ "example": "Đại biểu Hội đồng nhân dân xã nhận được đơn khiếu nại của cử tri về việc cấp giấy chứng nhận quyền sử dụng đất chậm; đại biểu có trách nhiệm xem xét, đôn đốc cơ quan có thẩm quyền giải quyết.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 115 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "dai-bieu-quoc-hoi",
+  "hoi-dong-nhan-dan",
+  "chat-van-hoi-dong-nhan-dan"
+ ],
+ "keywords": [
+  "đại diện Nhân dân địa phương",
+  "tiếp xúc, báo cáo cử tri",
+  "đôn đốc giải quyết khiếu nại, tố cáo"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 1 Điều 115, đại biểu Hội đồng nhân dân đại diện cho ai?",
+   "options": [
+    "Ý chí, nguyện vọng của Nhân dân địa phương",
+    "Nhân dân cả nước",
+    "Ủy ban nhân dân",
+    "Mặt trận Tổ quốc"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 115; khác đại biểu Quốc hội (khoản 1 Điều 79).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 115 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nghĩa vụ nào của đại biểu Hội đồng nhân dân liên quan đến khiếu nại, tố cáo?",
+   "options": [
+    "Xem xét, đôn đốc việc giải quyết khiếu nại, tố cáo",
+    "Trực tiếp ra quyết định giải quyết khiếu nại",
+    "Xét xử khiếu nại",
+    "Không có nghĩa vụ"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 115.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 115 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Đại biểu Hội đồng nhân dân",
+   "right": "Đại biểu Quốc hội",
+   "cases": [
+    {
+     "text": "Đại diện ý chí, nguyện vọng của Nhân dân địa phương",
+     "answer": "left"
+    },
+    {
+     "text": "Đại diện Nhân dân ở đơn vị bầu cử và Nhân dân cả nước",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 79, 115."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đại biểu Hội đồng nhân dân là người đại diện cho ý chí, nguyện vọng của Nhân dân {{địa phương}}; chịu sự {{giám sát}} của cử tri.",
+   "bank_extra": [
+    "cả nước",
+    "quản lý"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đại biểu Hội đồng nhân dân xem xét, {{đôn đốc}} việc giải quyết khiếu nại, tố cáo.",
+   "bank_extra": [
+    "tự quyết định",
+    "xét xử"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Đại biểu Hội đồng nhân dân có nghĩa vụ báo cáo với cử tri về hoạt động của mình và của Hội đồng nhân dân.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 115."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày vị trí và nghĩa vụ của đại biểu Hội đồng nhân dân.",
+   "model": "Đại diện ý chí, nguyện vọng của Nhân dân địa phương; liên hệ chặt chẽ, chịu giám sát của cử tri; tiếp xúc, báo cáo cử tri; trả lời yêu cầu, kiến nghị; xem xét, đôn đốc giải quyết khiếu nại, tố cáo; vận động Nhân dân thực hiện Hiến pháp, pháp luật (khoản 1 Điều 115).",
+   "keywords": [
+    "Nhân dân địa phương",
+    "giám sát của cử tri",
+    "tiếp xúc",
+    "khiếu nại, tố cáo"
+   ]
+  }
+ ]
+}

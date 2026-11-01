@@ -1,0 +1,126 @@
+{
+ "id": "nha-nuoc-van-xuan",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c5-co-dai",
+ "term": "Nhà nước Vạn Xuân (Tiền Lý)",
+ "definition": "Mùa xuân, tháng giêng, vua nhân thắng giặc, tự xưng là Nam Việt Đế, lên ngôi, đặt niên hiệu, lập trăm quan, dựng quốc hiệu là Vạn Xuân, ý mong cho xã tắc truyền đến muôn đời vậy. Dựng điện Vạn Thọ làm nơi triều hội.",
+ "plain": "Lý Bí khởi binh, đuổi Thứ sử Tiêu Tư (Toàn thư chép vào năm 541), năm 544 lên ngôi, xưng \"Nam Việt Đế\". Đây là lần đầu người Việt xưng ĐẾ (ngang hàng hoàng đế phương Bắc), đặt NIÊN HIỆU riêng (Thiên Đức), QUỐC HIỆU riêng (Vạn Xuân) và lập TRĂM QUAN, có triều đình (điện Vạn Thọ). Về pháp sử, đây là bước tiến về hình thức nhà nước độc lập so với chính quyền Trưng Vương. Nhà nước tồn tại đến khi Trần Bá Tiên đánh bại (548), sau đó Triệu Việt Vương, Hậu Lý Nam Đế kế tục đến năm 602.",
+ "example": "Chính Toàn thư ở Kỷ nhà Đinh có chú: sử cũ cho rằng niên hiệu bắt đầu từ Đinh Tiên Hoàng, \"nhưng Lý Nam Đế [trước đó] đã đặt niên hiệu là Thiên Đức\".",
+ "source": {
+  "kind": "primary",
+  "cite": "Đại Việt sử ký toàn thư, Ngoại kỷ, quyển IV (bản dịch Viện KHXH Việt Nam, NXB KHXH 1993), Kỷ nhà Tiền Lý, tờ 15b",
+  "url": "https://thpthiephoa1.edu.vn/wp-content/uploads/Dai-viet-su-ki-toan-thu.pdf"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "khoi-nghia-hai-ba-trung",
+  "dinh-dai-co-viet",
+  "ngo-quyen-xung-vuong"
+ ],
+ "keywords": [
+  "Lý Bí",
+  "Nam Việt Đế",
+  "Vạn Xuân",
+  "niên hiệu Thiên Đức",
+  "trăm quan"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Lý Bí lên ngôi xưng hiệu gì theo Toàn thư?",
+   "options": [
+    "Nam Việt Đế",
+    "Vạn Thắng Vương",
+    "Tiền Ngô Vương",
+    "Đại Thắng Minh Hoàng Đế"
+   ],
+   "answer": 0,
+   "explain": "\"tự xưng là Nam Việt Đế, lên ngôi\". Vạn Thắng Vương, Đại Thắng Minh Hoàng Đế là của Đinh Bộ Lĩnh.",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Ngoại kỷ, quyển IV, tờ 15b"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quốc hiệu Vạn Xuân thể hiện mong muốn gì theo Toàn thư?",
+   "options": [
+    "Xã tắc truyền đến muôn đời",
+    "Thống nhất với phương Bắc",
+    "Mở rộng lãnh thổ về phía Nam",
+    "Tôn sùng Phật giáo"
+   ],
+   "answer": 0,
+   "explain": "\"dựng quốc hiệu là Vạn Xuân, ý mong cho xã tắc truyền đến muôn đời vậy\".",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Ngoại kỷ, quyển IV, tờ 15b"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Có ở nhà nước Vạn Xuân (theo Toàn thư)",
+   "right": "Không phải của Vạn Xuân",
+   "cases": [
+    {
+     "text": "Đặt niên hiệu",
+     "answer": "left"
+    },
+    {
+     "text": "Lập trăm quan",
+     "answer": "left"
+    },
+    {
+     "text": "Quốc hiệu Đại Cồ Việt",
+     "answer": "right"
+    },
+    {
+     "text": "Định đô ở Hoa Lư",
+     "answer": "right"
+    }
+   ],
+   "explain": "Đại Cồ Việt, Hoa Lư thuộc nhà Đinh (968)."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Vua tự xưng là {{Nam Việt Đế}}, lên ngôi, đặt niên hiệu, lập trăm quan, dựng quốc hiệu là {{Vạn Xuân}}.",
+   "bank_extra": [
+    "Đại Cồ Việt",
+    "Nam Việt Vương"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Dựng điện {{Vạn Thọ}} làm nơi triều hội.",
+   "bank_extra": [
+    "Kính Thiên",
+    "Càn Nguyên"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo chú thích của chính Toàn thư, Lý Nam Đế đã đặt niên hiệu (Thiên Đức) trước Đinh Tiên Hoàng.",
+   "answer": true,
+   "explain": "Đúng. Toàn thư, Bản kỷ quyển I, năm 970: \"Nhưng Lý Nam Đế [trước đó] đã đặt niên hiệu là Thiên Đức [544-548]\"."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày sự ra đời và ý nghĩa của nhà nước Vạn Xuân.",
+   "model": "Lý Bí khởi nghĩa đuổi Thứ sử Tiêu Tư; năm 544 xưng Nam Việt Đế, đặt niên hiệu Thiên Đức, quốc hiệu Vạn Xuân, lập trăm quan, dựng điện Vạn Thọ; lần đầu người Việt xưng đế, có triều đình, quốc hiệu, niên hiệu riêng, khẳng định ý thức độc lập, ngang hàng với phương Bắc.",
+   "keywords": [
+    "Lý Bí",
+    "Nam Việt Đế",
+    "Vạn Xuân",
+    "niên hiệu",
+    "trăm quan"
+   ]
+  }
+ ]
+}

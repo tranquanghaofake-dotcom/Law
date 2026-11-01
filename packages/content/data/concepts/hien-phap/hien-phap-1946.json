@@ -1,0 +1,127 @@
+{
+ "id": "hien-phap-1946",
+ "subject": "hien-phap",
+ "chapter": "c2-khai-niem-dac-trung",
+ "term": "Hiến pháp 1946",
+ "definition": "Nước Việt Nam là một nước dân chủ cộng hoà. Tất cả quyền binh trong nước là của toàn thể nhân dân Việt Nam, không phân biệt nòi giống, gái trai, giàu nghèo, giai cấp, tôn giáo.",
+ "plain": "Bản Hiến pháp ĐẦU TIÊN, do Quốc hội khóa I thông qua ngày 9/11/1946 (kỳ họp thứ hai). Gồm Lời nói đầu, 7 chương, 70 điều. Lời nói đầu nêu ba nguyên tắc: đoàn kết toàn dân; đảm bảo các quyền tự do dân chủ; thực hiện chính quyền mạnh mẽ và sáng suốt của nhân dân. Bộ máy: Nghị viện nhân dân (cơ quan có quyền cao nhất), Chính phủ (Chủ tịch nước, Phó Chủ tịch, Nội các), Hội đồng nhân dân và Ủy ban hành chính, cơ quan tư pháp. Sửa đổi Hiến pháp phải đưa ra toàn dân PHÚC QUYẾT (Điều thứ 70). Do kháng chiến toàn quốc bùng nổ, Hiến pháp không được chính thức công bố, nhưng tinh thần của nó được thực hiện trên thực tế.",
+ "example": "Câu \"không phân biệt nòi giống, gái trai, giàu nghèo, giai cấp, tôn giáo\" cho thấy Hiến pháp 1946 xây dựng chính quyền dựa trên khối đoàn kết toàn dân, khác với Hiến pháp 1959 về sau nhấn mạnh \"liên minh công nông, do giai cấp công nhân lãnh đạo\".",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều thứ 1 Hiến pháp 1946",
+  "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Hien-phap-1946-Viet-Nam-Dan-Chu-Cong-Hoa-36134.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hien-phap-1959",
+  "ke-thua-lap-hien",
+  "trung-cau-y-dan-hien-phap"
+ ],
+ "keywords": [
+  "bản Hiến pháp đầu tiên",
+  "9/11/1946",
+  "dân chủ cộng hoà",
+  "ba nguyên tắc",
+  "toàn dân phúc quyết"
+ ],
+ "note": "Hiến pháp đã hết hiệu lực; học để hiểu lịch sử lập hiến, không áp dụng như luật hiện hành.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hiến pháp 1946 được Quốc hội thông qua ngày nào?",
+   "options": [
+    "9/11/1946",
+    "2/9/1945",
+    "6/1/1946",
+    "19/12/1946"
+   ],
+   "answer": 0,
+   "explain": "Hiến pháp đầu tiên thông qua ngày 9/11/1946. 2/9/1945 là ngày Tuyên ngôn độc lập; 6/1/1946 là ngày Tổng tuyển cử.",
+   "source": {
+    "kind": "statute",
+    "cite": "Hiến pháp 1946"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều thứ 22 Hiến pháp 1946, cơ quan có quyền cao nhất của nước Việt Nam dân chủ cộng hoà là cơ quan nào?",
+   "options": [
+    "Nghị viện nhân dân",
+    "Chính phủ",
+    "Chủ tịch nước",
+    "Ban thường vụ"
+   ],
+   "answer": 0,
+   "explain": "Điều thứ 22: \"Nghị viện nhân dân là cơ quan có quyền cao nhất\".",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều thứ 22 Hiến pháp 1946"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hiến pháp 1946",
+   "right": "Hiến pháp 1959",
+   "cases": [
+    {
+     "text": "Nghị viện nhân dân",
+     "answer": "left"
+    },
+    {
+     "text": "Quốc hội là cơ quan quyền lực Nhà nước cao nhất",
+     "answer": "right"
+    },
+    {
+     "text": "Sửa đổi Hiến pháp phải đưa ra toàn dân phúc quyết",
+     "answer": "left"
+    },
+    {
+     "text": "Chỉ có Quốc hội mới có quyền sửa đổi Hiến pháp",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều thứ 22, 70 Hiến pháp 1946; Điều 43, 112 Hiến pháp 1959."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nước Việt Nam là một nước {{dân chủ cộng hoà}}. Tất cả quyền binh trong nước là của {{toàn thể nhân dân Việt Nam}}.",
+   "bank_extra": [
+    "xã hội chủ nghĩa",
+    "giai cấp công nhân"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Lời nói đầu Hiến pháp 1946 nêu nguyên tắc: Đoàn kết toàn dân; Đảm bảo các quyền {{tự do dân chủ}}; Thực hiện chính quyền mạnh mẽ và sáng suốt của {{nhân dân}}.",
+   "bank_extra": [
+    "tư hữu",
+    "Chính phủ"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo Hiến pháp 1946, những điều sửa đổi Hiến pháp sau khi Nghị viện ưng chuẩn phải đưa ra toàn dân phúc quyết.",
+   "answer": true,
+   "explain": "Đúng. Điểm c Điều thứ 70 Hiến pháp 1946."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày hoàn cảnh ra đời và nội dung cơ bản của Hiến pháp 1946.",
+   "model": "Bản Hiến pháp đầu tiên, Quốc hội khóa I thông qua ngày 9/11/1946; Lời nói đầu nêu ba nguyên tắc (đoàn kết toàn dân; đảm bảo quyền tự do dân chủ; chính quyền mạnh mẽ, sáng suốt của nhân dân); chính thể dân chủ cộng hoà, quyền binh thuộc về toàn thể nhân dân (Điều thứ 1); Nghị viện nhân dân là cơ quan có quyền cao nhất; sửa đổi phải đưa ra toàn dân phúc quyết (Điều thứ 70); không chính thức công bố do kháng chiến.",
+   "keywords": [
+    "9/11/1946",
+    "ba nguyên tắc",
+    "dân chủ cộng hoà",
+    "Nghị viện nhân dân",
+    "phúc quyết"
+   ]
+  }
+ ]
+}

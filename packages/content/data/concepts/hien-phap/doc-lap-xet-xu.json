@@ -1,0 +1,115 @@
+{
+ "id": "doc-lap-xet-xu",
+ "subject": "hien-phap",
+ "chapter": "c10-toa-an-vien-kiem-sat",
+ "term": "Nguyên tắc độc lập xét xử",
+ "definition": "Thẩm phán, Hội thẩm xét xử độc lập và chỉ tuân theo pháp luật; nghiêm cấm cơ quan, tổ chức, cá nhân can thiệp vào việc xét xử của Thẩm phán, Hội thẩm.",
+ "plain": "Hai vế: (1) Thẩm phán, Hội thẩm độc lập, chỉ tuân theo pháp luật (không theo chỉ đạo của ai, kể cả Chánh án hay Tòa án cấp trên trong một vụ cụ thể); (2) nghiêm cấm mọi cơ quan, tổ chức, cá nhân can thiệp. Độc lập xét xử là cốt lõi của nhà nước pháp quyền và quyền được xét xử công bằng.",
+ "example": "Một lãnh đạo địa phương gọi điện \"đề nghị\" Thẩm phán xử nhẹ cho người quen: đây là hành vi can thiệp bị nghiêm cấm (khoản 2 Điều 103).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 2 Điều 103 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hoi-tham-tham-gia-xet-xu",
+  "toa-an-vi-tri",
+  "nha-nuoc-phap-quyen-xhcn"
+ ],
+ "keywords": [
+  "độc lập",
+  "chỉ tuân theo pháp luật",
+  "nghiêm cấm can thiệp"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 2 Điều 103, khi xét xử Thẩm phán, Hội thẩm tuân theo điều gì?",
+   "options": [
+    "Chỉ tuân theo pháp luật",
+    "Chỉ đạo của Chánh án",
+    "Ý kiến của Viện kiểm sát",
+    "Ý kiến của chính quyền địa phương"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 103.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 103 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai bị nghiêm cấm can thiệp vào việc xét xử của Thẩm phán, Hội thẩm?",
+   "options": [
+    "Mọi cơ quan, tổ chức, cá nhân",
+    "Chỉ đương sự",
+    "Chỉ báo chí",
+    "Chỉ luật sư"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 103.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 103 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Phù hợp nguyên tắc độc lập xét xử",
+   "right": "Vi phạm",
+   "cases": [
+    {
+     "text": "Thẩm phán ra phán quyết theo pháp luật và chứng cứ tại phiên tòa",
+     "answer": "left"
+    },
+    {
+     "text": "Cơ quan cấp trên chỉ đạo mức án cho một vụ cụ thể",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 2 Điều 103."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thẩm phán, Hội thẩm xét xử {{độc lập}} và chỉ tuân theo {{pháp luật}}.",
+   "bank_extra": [
+    "tập trung",
+    "chỉ thị"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nghiêm cấm cơ quan, tổ chức, cá nhân {{can thiệp}} vào việc xét xử của Thẩm phán, Hội thẩm.",
+   "bank_extra": [
+    "theo dõi",
+    "giám sát"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chánh án được chỉ đạo Thẩm phán về mức án trong một vụ án cụ thể.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 103: Thẩm phán xét xử độc lập, chỉ tuân theo pháp luật; nghiêm cấm can thiệp."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày nội dung và ý nghĩa nguyên tắc độc lập xét xử.",
+   "model": "Thẩm phán, Hội thẩm xét xử độc lập và chỉ tuân theo pháp luật; nghiêm cấm cơ quan, tổ chức, cá nhân can thiệp (khoản 2 Điều 103). Ý nghĩa: bảo đảm xét xử khách quan, công bằng, bảo vệ công lý, là trụ cột của nhà nước pháp quyền.",
+   "keywords": [
+    "độc lập",
+    "chỉ tuân theo pháp luật",
+    "can thiệp",
+    "công lý"
+   ]
+  }
+ ]
+}

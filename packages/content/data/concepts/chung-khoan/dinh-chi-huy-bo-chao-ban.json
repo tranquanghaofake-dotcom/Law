@@ -1,0 +1,120 @@
+{
+ "id": "dinh-chi-huy-bo-chao-ban",
+ "subject": "chung-khoan",
+ "chapter": "c2-chao-ban",
+ "term": "Đình chỉ và hủy bỏ chào bán chứng khoán ra công chúng",
+ "definition": "Ủy ban Chứng khoán Nhà nước có quyền đình chỉ chào bán chứng khoán ra công chúng tối đa là 60 ngày trong các trường hợp sau đây: a) Hồ sơ đăng ký chào bán chứng khoán ra công chúng có thông tin sai lệch, bỏ sót nội dung quan trọng có thể ảnh hưởng tới quyết định đầu tư và gây thiệt hại cho nhà đầu tư; b) Việc phân phối chứng khoán không thực hiện đúng quy định tại Điều 26 của Luật này.",
+ "plain": "Đình chỉ là \"tạm dừng\" để sửa sai (tối đa 60 ngày). Hủy bỏ là \"chấm dứt\" đợt chào bán: khi hết hạn đình chỉ mà không khắc phục, khi IPO không bán đủ 15% (10%) cho 100 nhà đầu tư, khi chào bán thêm không huy động đủ vốn cho dự án… Khi hủy bỏ, tổ chức phát hành phải thu hồi chứng khoán và hoàn tiền trong 15 ngày, quá hạn phải bồi thường.",
+ "example": "Đợt IPO của công ty S chỉ bán được 8% cổ phiếu có quyền biểu quyết cho nhà đầu tư không phải cổ đông lớn (vốn điều lệ 200 tỷ): Ủy ban hủy bỏ đợt chào bán (điểm b khoản 1 Điều 28); S phải hoàn tiền cho người mua trong 15 ngày.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 27 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "phan-phoi-chung-khoan",
+  "dang-ky-chao-ban-ra-cong-chung"
+ ],
+ "keywords": [
+  "đình chỉ tối đa 60 ngày",
+  "hủy bỏ",
+  "hoàn tiền trong 15 ngày"
+ ],
+ "note": "Luật 56/2024/QH15 (hiệu lực 01/01/2025) bổ sung điểm d, đ khoản 1 Điều 28 (hủy bỏ khi phát hiện vi phạm sau khi kết thúc đợt chào bán) và khoản 2a (không hủy bỏ khi cổ phiếu đã niêm yết, đăng ký giao dịch). Giáo trình 2021 chưa có.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ủy ban Chứng khoán Nhà nước được đình chỉ chào bán chứng khoán ra công chúng tối đa bao lâu?",
+   "options": [
+    "60 ngày",
+    "30 ngày",
+    "90 ngày",
+    "6 tháng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 27.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 27 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trường hợp nào dẫn tới HỦY BỎ (không chỉ đình chỉ) đợt chào bán ra công chúng?",
+   "options": [
+    "Hết thời hạn đình chỉ mà không khắc phục được thiếu sót",
+    "Phát hiện hồ sơ có thông tin sai lệch lần đầu",
+    "Phân phối chưa đúng Điều 26 và đang khắc phục",
+    "Tổ chức phát hành xin gia hạn phân phối"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 28. Thông tin sai lệch, phân phối sai lúc đầu là căn cứ đình chỉ (khoản 1 Điều 27).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 28 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Đình chỉ",
+   "right": "Hủy bỏ",
+   "cases": [
+    {
+     "text": "Tối đa 60 ngày, khắc phục xong thì tiếp tục chào bán",
+     "answer": "left"
+    },
+    {
+     "text": "Thu hồi chứng khoán, hoàn tiền cho nhà đầu tư trong 15 ngày, quá hạn phải bồi thường",
+     "answer": "right"
+    },
+    {
+     "text": "IPO không đạt tỷ lệ tối thiểu bán cho 100 nhà đầu tư không phải cổ đông lớn",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 27 và Điều 28."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ủy ban Chứng khoán Nhà nước có quyền {{đình chỉ}} chào bán chứng khoán ra công chúng tối đa là {{60 ngày}}.",
+   "bank_extra": [
+    "hủy bỏ",
+    "90 ngày"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Khi đợt chào bán bị hủy bỏ, tổ chức phát hành phải hoàn trả tiền cho nhà đầu tư trong thời hạn {{15 ngày}}; hết thời hạn này phải {{bồi thường thiệt hại}}.",
+   "bank_extra": [
+    "30 ngày",
+    "nộp phạt"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Cổ phiếu chào bán ra công chúng đã được đưa vào niêm yết thì vẫn có thể bị hủy bỏ đợt chào bán.",
+   "answer": false,
+   "explain": "Sai. Khoản 2a Điều 28 (bổ sung bởi Luật 56/2024/QH15): cổ phiếu đã đưa vào niêm yết hoặc đăng ký giao dịch thì không hủy bỏ."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Phân biệt đình chỉ và hủy bỏ chào bán chứng khoán ra công chúng.",
+   "model": "Đình chỉ (Điều 27): Ủy ban tạm dừng tối đa 60 ngày khi hồ sơ sai lệch, bỏ sót thông tin quan trọng hoặc phân phối sai Điều 26; khắc phục xong thì tiếp tục. Hủy bỏ (Điều 28): hết hạn đình chỉ không khắc phục, IPO không đạt tỷ lệ bán cho 100 nhà đầu tư, chào bán thêm không huy động đủ vốn dự án, phát hiện vi phạm sau khi kết thúc…; thu hồi, hoàn tiền trong 15 ngày, quá hạn bồi thường; không hủy bỏ khi cổ phiếu đã niêm yết, đăng ký giao dịch.",
+   "keywords": [
+    "60 ngày",
+    "khắc phục",
+    "hoàn tiền",
+    "15 ngày",
+    "niêm yết"
+   ]
+  }
+ ]
+}

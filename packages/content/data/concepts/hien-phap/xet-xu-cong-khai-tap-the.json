@@ -1,0 +1,118 @@
+{
+ "id": "xet-xu-cong-khai-tap-the",
+ "subject": "hien-phap",
+ "chapter": "c10-toa-an-vien-kiem-sat",
+ "term": "Xét xử công khai và xét xử tập thể",
+ "definition": "Tòa án nhân dân xét xử công khai. Trong trường hợp đặc biệt cần giữ bí mật nhà nước, thuần phong, mỹ tục của dân tộc, bảo vệ người chưa thành niên hoặc giữ bí mật đời tư theo yêu cầu chính đáng của đương sự, Tòa án nhân dân có thể xét xử kín. Tòa án nhân dân xét xử tập thể và quyết định theo đa số, trừ trường hợp xét xử theo thủ tục rút gọn.",
+ "plain": "Công khai là nguyên tắc; xét xử KÍN là ngoại lệ trong 4 trường hợp: bí mật nhà nước, thuần phong mỹ tục, bảo vệ người chưa thành niên, bí mật đời tư theo yêu cầu chính đáng. Lưu ý: xử kín nhưng bản án vẫn phải tuyên công khai (theo luật tố tụng). Xét xử TẬP THỂ (Hội đồng xét xử), quyết định theo ĐA SỐ, trừ thủ tục rút gọn.",
+ "example": "Vụ án xâm hại tình dục người dưới 18 tuổi: Tòa án có thể xét xử kín để bảo vệ người chưa thành niên.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 3, khoản 4 Điều 103 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hoi-tham-tham-gia-xet-xu",
+  "tranh-tung-hai-cap-bao-chua"
+ ],
+ "keywords": [
+  "công khai",
+  "xét xử kín ngoại lệ",
+  "tập thể, đa số"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trường hợp nào Tòa án có thể xét xử kín theo khoản 3 Điều 103?",
+   "options": [
+    "Cần bảo vệ người chưa thành niên",
+    "Bị cáo là người nổi tiếng",
+    "Vụ án có nhiều nhà báo theo dõi",
+    "Bị cáo yêu cầu vì sợ mất uy tín"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 103.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 103 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hội đồng xét xử quyết định theo nguyên tắc nào?",
+   "options": [
+    "Tập thể, theo đa số",
+    "Theo ý kiến Chủ tọa",
+    "Theo ý kiến Kiểm sát viên",
+    "Đồng thuận tuyệt đối"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 103.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 103 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Xét xử công khai",
+   "right": "Có thể xét xử kín",
+   "cases": [
+    {
+     "text": "Vụ án trộm cắp tài sản thông thường",
+     "answer": "left"
+    },
+    {
+     "text": "Vụ án liên quan bí mật nhà nước",
+     "answer": "right"
+    },
+    {
+     "text": "Vụ ly hôn đương sự yêu cầu giữ bí mật đời tư chính đáng",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 3 Điều 103."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tòa án nhân dân xét xử {{công khai}}; xét xử {{tập thể}} và quyết định theo đa số.",
+   "bank_extra": [
+    "bí mật",
+    "cá nhân"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tòa án có thể xét xử kín để giữ bí mật {{đời tư}} theo yêu cầu chính đáng của đương sự.",
+   "bank_extra": [
+    "kinh doanh",
+    "gia đình Thẩm phán"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Xét xử kín là nguyên tắc chung của Tòa án nhân dân.",
+   "answer": false,
+   "explain": "Sai. Nguyên tắc là xét xử công khai; xét xử kín chỉ là ngoại lệ trong các trường hợp đặc biệt (khoản 3 Điều 103)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày nguyên tắc xét xử công khai và xét xử tập thể.",
+   "model": "Tòa án xét xử công khai; trường hợp đặc biệt (bí mật nhà nước, thuần phong mỹ tục, bảo vệ người chưa thành niên, bí mật đời tư theo yêu cầu chính đáng) có thể xét xử kín (khoản 3 Điều 103). Xét xử tập thể và quyết định theo đa số, trừ thủ tục rút gọn (khoản 4).",
+   "keywords": [
+    "công khai",
+    "xét xử kín",
+    "tập thể",
+    "đa số"
+   ]
+  }
+ ]
+}

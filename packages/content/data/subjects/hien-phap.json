@@ -4,11 +4,309 @@
   "short": "Hiến pháp",
   "chapters": [
     {
-      "id": "khai-quat",
-      "title": "Khái quát về Hiến pháp",
+      "id": "c1-nhung-van-de-chung",
+      "title": "Chương 1. Những vấn đề chung về Hiến pháp",
       "lessons": [
-        { "id": "hp-1", "title": "Hiến pháp là gì", "concepts": ["hien-phap", "hieu-luc-phap-ly-toi-cao", "chu-quyen-nhan-dan", "nha-nuoc-phap-quyen-xhcn", "quyen-luc-nha-nuoc-thong-nhat"] },
-        { "id": "hp-2", "title": "Sửa đổi và bảo vệ Hiến pháp", "concepts": ["sua-doi-hien-phap", "trung-cau-y-dan-hien-phap", "bao-ve-hien-phap", "dang-cong-san-lanh-dao", "quyen-con-nguoi-quyen-cong-dan"] }
+        {
+          "id": "hp-0",
+          "title": "Ngành luật Hiến pháp: đối tượng, phương pháp, nguồn, quan hệ pháp luật",
+          "concepts": [
+            "nganh-luat-hien-phap",
+            "doi-tuong-dieu-chinh-luat-hien-phap",
+            "phuong-phap-dieu-chinh-luat-hien-phap",
+            "nguon-luat-hien-phap",
+            "quan-he-phap-luat-hien-phap"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c2-khai-niem-dac-trung",
+      "title": "Chương 2. Khái niệm, đặc trưng Hiến pháp và lịch sử lập hiến",
+      "lessons": [
+        {
+          "id": "hp-1",
+          "title": "Hiến pháp: khái niệm, hiệu lực, sửa đổi và bảo vệ",
+          "concepts": [
+            "hien-phap",
+            "hieu-luc-phap-ly-toi-cao",
+            "sua-doi-hien-phap",
+            "trung-cau-y-dan-hien-phap",
+            "bao-ve-hien-phap"
+          ]
+        },
+        {
+          "id": "hp-2b",
+          "title": "Lịch sử lập hiến Việt Nam",
+          "concepts": [
+            "hien-phap-1946",
+            "hien-phap-1959",
+            "hien-phap-1980",
+            "hien-phap-1992",
+            "ke-thua-lap-hien"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c3-che-do-chinh-tri",
+      "title": "Chương 3. Chế độ chính trị",
+      "lessons": [
+        {
+          "id": "hp-2",
+          "title": "Chủ quyền Nhân dân, Đảng lãnh đạo, Nhà nước pháp quyền",
+          "concepts": [
+            "chu-quyen-nhan-dan",
+            "dang-cong-san-lanh-dao",
+            "nha-nuoc-phap-quyen-xhcn",
+            "quyen-luc-nha-nuoc-thong-nhat"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c4-quyen-con-nguoi",
+      "title": "Chương 4. Quyền con người, quyền và nghĩa vụ cơ bản của công dân",
+      "lessons": [
+        {
+          "id": "hp-3",
+          "title": "Quyền con người và quyền công dân",
+          "concepts": [
+            "quyen-con-nguoi-quyen-cong-dan"
+          ]
+        },
+        {
+          "id": "hp-4b",
+          "title": "Một số quyền con người, quyền công dân cụ thể",
+          "concepts": [
+            "binh-dang-truoc-phap-luat",
+            "bat-kha-xam-pham-than-the",
+            "quyen-rieng-tu",
+            "tu-do-kinh-doanh"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c5-quoc-tich",
+      "title": "Chương 5. Quốc tịch",
+      "lessons": [
+        {
+          "id": "hp-5a",
+          "title": "Quốc tịch, công dân và nguyên tắc một quốc tịch",
+          "concepts": [
+            "cong-dan-viet-nam",
+            "quoc-tich-viet-nam",
+            "nguyen-tac-mot-quoc-tich",
+            "quyen-co-quoc-tich",
+            "nguoi-khong-quoc-tich"
+          ]
+        },
+        {
+          "id": "hp-5b",
+          "title": "Có, nhập, trở lại, thôi và bị tước quốc tịch",
+          "concepts": [
+            "quoc-tich-theo-huyet-thong",
+            "nhap-quoc-tich-viet-nam",
+            "tro-lai-quoc-tich",
+            "thoi-quoc-tich-viet-nam",
+            "tuoc-quoc-tich-viet-nam"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c6-bau-cu",
+      "title": "Chương 6. Chế độ bầu cử",
+      "lessons": [
+        {
+          "id": "hp-6a",
+          "title": "Nguyên tắc bầu cử, quyền bầu cử và ứng cử",
+          "concepts": [
+            "nguyen-tac-bau-cu",
+            "nguyen-tac-bo-phieu",
+            "quyen-bau-cu-ung-cu",
+            "truong-hop-khong-duoc-ung-cu",
+            "danh-sach-cu-tri",
+            "bai-nhiem-dai-bieu"
+          ]
+        },
+        {
+          "id": "hp-6b",
+          "title": "Tổ chức bầu cử và xác định kết quả",
+          "concepts": [
+            "hoi-dong-bau-cu-quoc-gia",
+            "ngay-bau-cu",
+            "don-vi-bau-cu",
+            "hiep-thuong-gioi-thieu-ung-cu",
+            "xac-dinh-nguoi-trung-cu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c7-quoc-hoi",
+      "title": "Chương 7. Quốc hội nước CHXHCN Việt Nam",
+      "lessons": [
+        {
+          "id": "hp-7a",
+          "title": "Vị trí, nhiệm kỳ và cơ cấu tổ chức của Quốc hội",
+          "concepts": [
+            "vi-tri-quoc-hoi",
+            "nhiem-ky-quoc-hoi",
+            "uy-ban-thuong-vu-quoc-hoi",
+            "hoi-dong-dan-toc-uy-ban",
+            "bo-phieu-tin-nhiem"
+          ]
+        },
+        {
+          "id": "hp-7b",
+          "title": "Đại biểu Quốc hội và hoạt động lập pháp",
+          "concepts": [
+            "dai-bieu-quoc-hoi",
+            "chat-van",
+            "quyen-mien-tru-dai-bieu",
+            "quyen-trinh-du-an-luat",
+            "bieu-quyet-thong-qua-luat"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c8-chu-tich-nuoc",
+      "title": "Chương 8. Chủ tịch nước nước CHXHCN Việt Nam",
+      "lessons": [
+        {
+          "id": "hp-8a",
+          "title": "Vị trí và quyền hạn của Chủ tịch nước",
+          "concepts": [
+            "chu-tich-nuoc-vi-tri",
+            "chu-tich-nuoc-bau-nhiem-ky",
+            "chu-tich-nuoc-lap-phap",
+            "chu-tich-nuoc-nhan-su",
+            "chu-tich-nuoc-quoc-tich-khen-thuong"
+          ]
+        },
+        {
+          "id": "hp-8b",
+          "title": "Quốc phòng, đối ngoại và quan hệ với các cơ quan",
+          "concepts": [
+            "chu-tich-nuoc-quoc-phong",
+            "hoi-dong-quoc-phong-an-ninh",
+            "chu-tich-nuoc-doi-ngoai",
+            "chu-tich-nuoc-quan-he-co-quan",
+            "pho-chu-tich-nuoc"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c9-chinh-phu",
+      "title": "Chương 9. Chính phủ nước CHXHCN Việt Nam",
+      "lessons": [
+        {
+          "id": "hp-9a",
+          "title": "Vị trí, cơ cấu và nhiệm vụ của Chính phủ",
+          "concepts": [
+            "chinh-phu-vi-tri",
+            "co-cau-chinh-phu",
+            "nhiem-vu-chinh-phu",
+            "nhiem-ky-chinh-phu",
+            "chinh-phu-mat-tran"
+          ]
+        },
+        {
+          "id": "hp-9b",
+          "title": "Thủ tướng, Phó Thủ tướng, Bộ trưởng và văn bản",
+          "concepts": [
+            "thu-tuong-chinh-phu",
+            "pho-thu-tuong",
+            "bo-truong-trach-nhiem",
+            "thu-tuong-dinh-chi-van-ban",
+            "van-ban-chinh-phu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c10-toa-an-vien-kiem-sat",
+      "title": "Chương 10. Tòa án nhân dân và Viện kiểm sát nhân dân",
+      "lessons": [
+        {
+          "id": "hp-10a",
+          "title": "Tòa án nhân dân và nguyên tắc xét xử",
+          "concepts": [
+            "toa-an-vi-tri",
+            "hoi-tham-tham-gia-xet-xu",
+            "doc-lap-xet-xu",
+            "xet-xu-cong-khai-tap-the",
+            "tranh-tung-hai-cap-bao-chua"
+          ]
+        },
+        {
+          "id": "hp-10b",
+          "title": "Tòa án tối cao, bản án và Viện kiểm sát",
+          "concepts": [
+            "toa-an-nhan-dan-toi-cao",
+            "hieu-luc-ban-an",
+            "vien-kiem-sat-chuc-nang",
+            "lanh-dao-tap-trung-vien-kiem-sat",
+            "trach-nhiem-chanh-an-vien-truong"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c11-chinh-quyen-dia-phuong",
+      "title": "Chương 11. Chính quyền địa phương",
+      "lessons": [
+        {
+          "id": "hp-11a",
+          "title": "Đơn vị hành chính và cấp chính quyền",
+          "concepts": [
+            "don-vi-hanh-chinh-hai-cap",
+            "don-vi-hanh-chinh-kinh-te-dac-biet",
+            "thanh-lap-giai-the-dvhc",
+            "cap-chinh-quyen-dia-phuong",
+            "nhiem-vu-chinh-quyen-dia-phuong"
+          ]
+        },
+        {
+          "id": "hp-11b",
+          "title": "Hội đồng nhân dân, Ủy ban nhân dân",
+          "concepts": [
+            "hoi-dong-nhan-dan",
+            "uy-ban-nhan-dan",
+            "dai-bieu-hoi-dong-nhan-dan",
+            "chat-van-hoi-dong-nhan-dan",
+            "chinh-quyen-dia-phuong-mat-tran"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nang-cao",
+      "title": "Nâng cao: Chế độ kinh tế, đất đai, tài chính, môi trường và Kiểm toán nhà nước",
+      "advanced": true,
+      "lessons": [
+        {
+          "id": "hp-nc-1",
+          "title": "Kinh tế, sở hữu toàn dân, đất đai",
+          "concepts": [
+            "kinh-te-thi-truong-dinh-huong-xhcn",
+            "so-huu-toan-dan",
+            "quyen-su-dung-dat-thu-hoi"
+          ]
+        },
+        {
+          "id": "hp-nc-2",
+          "title": "Ngân sách, môi trường, Kiểm toán nhà nước",
+          "concepts": [
+            "ngan-sach-nha-nuoc",
+            "bao-ve-moi-truong",
+            "kiem-toan-nha-nuoc"
+          ]
+        }
       ]
     }
   ]

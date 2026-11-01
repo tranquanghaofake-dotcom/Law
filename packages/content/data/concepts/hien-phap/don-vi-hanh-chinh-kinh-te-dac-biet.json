@@ -1,0 +1,113 @@
+{
+ "id": "don-vi-hanh-chinh-kinh-te-dac-biet",
+ "subject": "hien-phap",
+ "chapter": "c11-chinh-quyen-dia-phuong",
+ "term": "Đơn vị hành chính - kinh tế đặc biệt",
+ "definition": "Đơn vị hành chính - kinh tế đặc biệt do Quốc hội thành lập. (…) Chính quyền địa phương ở đơn vị hành chính - kinh tế đặc biệt do Quốc hội quy định khi thành lập đơn vị hành chính - kinh tế đặc biệt đó.",
+ "plain": "Đơn vị hành chính - kinh tế đặc biệt (thường gọi \"đặc khu kinh tế\") do QUỐC HỘI thành lập; mô hình chính quyền ở đó cũng do Quốc hội quy định ngay khi thành lập (khoản 3 Điều 111 mới). Cần phân biệt với \"đặc khu\" trong cấp hành chính dưới tỉnh theo Luật Tổ chức chính quyền địa phương 2025 (đơn vị hành chính ở hải đảo cùng cấp xã).",
+ "example": "Nếu Quốc hội ra nghị quyết thành lập một đơn vị hành chính - kinh tế đặc biệt, chính nghị quyết đó sẽ quy định chính quyền địa phương ở đơn vị này được tổ chức thế nào.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 2 Điều 110, khoản 3 Điều 111 Hiến pháp 2013 (sửa đổi bởi NQ 203/2025/QH15)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "don-vi-hanh-chinh-hai-cap",
+  "cap-chinh-quyen-dia-phuong"
+ ],
+ "keywords": [
+  "Quốc hội thành lập",
+  "chính quyền do Quốc hội quy định khi thành lập"
+ ],
+ "note": "Nghị quyết 203/2025/QH15 (hiệu lực 16/6/2025) bổ sung khoản 3 Điều 111: chính quyền địa phương ở đơn vị hành chính - kinh tế đặc biệt do Quốc hội quy định khi thành lập. Bản 2013 gộp đơn vị này vào khoản 2 Điều 111 (\"tổ chức phù hợp với đặc điểm… đơn vị hành chính - kinh tế đặc biệt do luật định\").",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Cơ quan nào thành lập đơn vị hành chính - kinh tế đặc biệt?",
+   "options": [
+    "Quốc hội",
+    "Chính phủ",
+    "Ủy ban thường vụ Quốc hội",
+    "Hội đồng nhân dân tỉnh"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 110.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 110 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chính quyền địa phương ở đơn vị hành chính - kinh tế đặc biệt do ai quy định?",
+   "options": [
+    "Quốc hội, khi thành lập đơn vị đó",
+    "Thủ tướng",
+    "Chủ tịch nước",
+    "Hội đồng nhân dân tỉnh"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 111 (mới).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 111 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quốc hội quyết định",
+   "right": "Ủy ban thường vụ Quốc hội quyết định (theo Điều 74 bản 2013)",
+   "cases": [
+    {
+     "text": "Thành lập đơn vị hành chính - kinh tế đặc biệt",
+     "answer": "left"
+    },
+    {
+     "text": "Thành lập, giải thể đơn vị hành chính dưới tỉnh",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 2 Điều 110; khoản 8 Điều 74."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đơn vị hành chính - kinh tế đặc biệt do {{Quốc hội}} thành lập.",
+   "bank_extra": [
+    "Chính phủ",
+    "Thủ tướng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chính quyền địa phương ở đơn vị hành chính - kinh tế đặc biệt do Quốc hội quy định khi {{thành lập}} đơn vị đó.",
+   "bank_extra": [
+    "giải thể",
+    "quy hoạch"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chính phủ có thẩm quyền thành lập đơn vị hành chính - kinh tế đặc biệt.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 110: do Quốc hội thành lập."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quy định về đơn vị hành chính - kinh tế đặc biệt trong Hiến pháp hiện hành.",
+   "model": "Đơn vị hành chính - kinh tế đặc biệt do Quốc hội thành lập (khoản 2 Điều 110); chính quyền địa phương ở đó do Quốc hội quy định khi thành lập (khoản 3 Điều 111, bổ sung bởi Nghị quyết 203/2025/QH15).",
+   "keywords": [
+    "Quốc hội",
+    "thành lập",
+    "chính quyền địa phương"
+   ]
+  }
+ ]
+}

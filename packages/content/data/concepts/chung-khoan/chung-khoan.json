@@ -1,0 +1,130 @@
+{
+ "id": "chung-khoan",
+ "subject": "chung-khoan",
+ "chapter": "c1-khai-niem",
+ "term": "Chứng khoán",
+ "definition": "Chứng khoán là tài sản, bao gồm các loại sau đây: a) Cổ phiếu, trái phiếu, chứng chỉ quỹ; b) Chứng quyền, chứng quyền có bảo đảm, quyền mua cổ phần, chứng chỉ lưu ký; c) Chứng khoán phái sinh; d) Các loại chứng khoán khác do Chính phủ quy định.",
+ "plain": "Luật không định nghĩa chứng khoán bằng đặc điểm mà bằng cách xếp nó vào \"tài sản\" rồi liệt kê từng loại. Vì là tài sản nên chứng khoán chịu cả quy định về quyền sở hữu của Bộ luật Dân sự. Danh sách để ngỏ ở điểm d: Chính phủ có thể bổ sung loại mới.",
+ "example": "Cổ phiếu VNM bạn mua trên app, chứng chỉ quỹ mở, hợp đồng tương lai chỉ số VN30 đều là chứng khoán. Sổ tiết kiệm ngân hàng thì không: nó không nằm trong danh sách khoản 1 Điều 4.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "co-phieu",
+  "trai-phieu",
+  "chung-khoan-phai-sinh"
+ ],
+ "keywords": [
+  "tài sản",
+  "liệt kê",
+  "Chính phủ quy định loại khác"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 1 Điều 4 Luật Chứng khoán 2019, chứng khoán được xác định là gì?",
+   "options": [
+    "Tài sản",
+    "Giấy tờ có giá do ngân hàng phát hành",
+    "Hợp đồng dân sự giữa các nhà đầu tư",
+    "Quyền tài sản phát sinh từ hợp đồng vay"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 4: \"Chứng khoán là tài sản, bao gồm các loại sau đây…\". Luật định danh trước (tài sản) rồi liệt kê.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Loại nào sau đây KHÔNG được liệt kê là chứng khoán tại khoản 1 Điều 4?",
+   "options": [
+    "Sổ tiết kiệm ngân hàng",
+    "Chứng chỉ lưu ký",
+    "Quyền mua cổ phần",
+    "Chứng quyền có bảo đảm"
+   ],
+   "answer": 0,
+   "explain": "Chứng chỉ lưu ký, quyền mua cổ phần, chứng quyền có bảo đảm cùng ở điểm b khoản 1. Sổ tiết kiệm là giấy tờ ghi nhận tiền gửi, không có trong danh sách.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Điểm a khoản 1 Điều 4",
+   "right": "Điểm b khoản 1 Điều 4",
+   "cases": [
+    {
+     "text": "Cổ phiếu, trái phiếu, chứng chỉ quỹ",
+     "answer": "left"
+    },
+    {
+     "text": "Chứng quyền, quyền mua cổ phần, chứng chỉ lưu ký",
+     "answer": "right"
+    },
+    {
+     "text": "Chứng quyền có bảo đảm",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điểm a: ba loại \"truyền thống\"; điểm b: các loại gắn với quyền mua/bán hoặc lưu ký; điểm c: phái sinh; điểm d: loại khác do Chính phủ quy định."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chứng khoán là {{tài sản}}, bao gồm cổ phiếu, trái phiếu, chứng chỉ quỹ; chứng quyền, chứng quyền có bảo đảm, quyền mua cổ phần, chứng chỉ lưu ký; chứng khoán phái sinh.",
+   "bank_extra": [
+    "giấy tờ có giá",
+    "quyền tài sản"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ngoài các loại được liệt kê, chứng khoán còn gồm các loại chứng khoán khác do {{Chính phủ}} quy định.",
+   "bank_extra": [
+    "Quốc hội",
+    "Ủy ban Chứng khoán Nhà nước"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Một công ty phát hành \"phiếu góp vốn dự án\" hứa chia lãi và tự gọi đó là chứng khoán. Loại phiếu này chưa thuộc danh sách khoản 1 Điều 4 và chưa được Chính phủ quy định. Nhận định nào đúng?",
+   "options": [
+    "Không thể coi là chứng khoán theo Luật Chứng khoán chỉ vì doanh nghiệp tự gọi tên như vậy",
+    "Là chứng khoán vì có hứa chia lãi",
+    "Là chứng khoán vì doanh nghiệp có quyền tự đặt tên",
+    "Là chứng khoán nếu được bán cho trên 100 người"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 4 xác định chứng khoán bằng danh sách; loại mới phải do Chính phủ quy định (điểm d). Tên gọi do doanh nghiệp đặt không làm phát sinh tư cách chứng khoán.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu định nghĩa và các nhóm chứng khoán theo khoản 1 Điều 4 Luật Chứng khoán 2019.",
+   "model": "Chứng khoán là tài sản, gồm: (a) cổ phiếu, trái phiếu, chứng chỉ quỹ; (b) chứng quyền, chứng quyền có bảo đảm, quyền mua cổ phần, chứng chỉ lưu ký; (c) chứng khoán phái sinh; (d) loại khác do Chính phủ quy định.",
+   "keywords": [
+    "tài sản",
+    "cổ phiếu",
+    "chứng quyền",
+    "phái sinh",
+    "Chính phủ"
+   ]
+  }
+ ]
+}

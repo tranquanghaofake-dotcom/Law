@@ -1,0 +1,118 @@
+{
+ "id": "ngan-hang-thanh-toan",
+ "subject": "chung-khoan",
+ "chapter": "c4-dang-ky-luu-ky",
+ "term": "Ngân hàng thanh toán",
+ "definition": "Ngân hàng thanh toán là Ngân hàng Nhà nước Việt Nam hoặc ngân hàng thương mại thực hiện cung cấp dịch vụ thanh toán tiền cho các giao dịch chứng khoán trên hệ thống giao dịch chứng khoán.",
+ "plain": "Phần \"tiền\" của giao dịch chứng khoán chạy qua ngân hàng thanh toán. Ngân hàng thương mại muốn được Ủy ban chọn làm ngân hàng thanh toán phải rất lớn và an toàn: vốn điều lệ trên 10.000 tỷ, có lãi 02 năm gần nhất, kết nối hệ thống với Tổng công ty và Ngân hàng Nhà nước, lưu dữ liệu ít nhất 10 năm. Thanh toán chứng khoán phải tách biệt với hoạt động thanh toán khác của ngân hàng.",
+ "example": "Tiền mua cổ phiếu của các công ty chứng khoán được chuyển qua ngân hàng thanh toán do Ủy ban lựa chọn; ngân hàng phải hạch toán tách biệt dòng tiền này với tiền gửi thông thường.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 69 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "bu-tru-thanh-toan-giao-dich",
+  "thanh-vien-luu-ky-bu-tru"
+ ],
+ "keywords": [
+  "Ngân hàng Nhà nước hoặc ngân hàng thương mại",
+  "vốn điều lệ trên 10.000 tỷ",
+  "tách biệt"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 1 Điều 69, ngân hàng thanh toán có thể là chủ thể nào?",
+   "options": [
+    "Ngân hàng Nhà nước Việt Nam hoặc ngân hàng thương mại",
+    "Chỉ ngân hàng thương mại nhà nước",
+    "Mọi tổ chức tín dụng",
+    "Công ty tài chính"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 69.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 69 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ngân hàng thương mại phải có vốn điều lệ tối thiểu bao nhiêu để được chọn làm ngân hàng thanh toán?",
+   "options": [
+    "Trên 10.000 tỷ đồng",
+    "Trên 3.000 tỷ đồng",
+    "Trên 1.000 tỷ đồng",
+    "Trên 30.000 tỷ đồng"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 2 Điều 69.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 69 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Điều kiện làm ngân hàng thanh toán",
+   "right": "Không phải điều kiện",
+   "cases": [
+    {
+     "text": "Hoạt động kinh doanh có lãi trong 02 năm gần nhất",
+     "answer": "left"
+    },
+    {
+     "text": "Lưu giữ số liệu thanh toán ít nhất 10 năm",
+     "answer": "left"
+    },
+    {
+     "text": "Đã niêm yết trên Sở giao dịch",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 2 Điều 69."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ngân hàng thương mại được chọn làm ngân hàng thanh toán phải có vốn điều lệ trên {{10.000 tỷ}} đồng và hoạt động kinh doanh có lãi trong {{02 năm}} gần nhất.",
+   "bank_extra": [
+    "1.000 tỷ",
+    "05 năm"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ngân hàng thanh toán phải tổ chức việc thanh toán cho giao dịch chứng khoán {{tách biệt}} với hoạt động thanh toán khác của ngân hàng.",
+   "bank_extra": [
+    "gộp chung",
+    "song song"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Ngân hàng thương mại tự đăng ký là trở thành ngân hàng thanh toán, không cần ai lựa chọn.",
+   "answer": false,
+   "explain": "Sai. Ngân hàng thương mại được Ủy ban Chứng khoán Nhà nước LỰA CHỌN khi đáp ứng các điều kiện tại khoản 2 Điều 69; Chính phủ quy định hồ sơ, thủ tục."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm và điều kiện của ngân hàng thanh toán theo Điều 69.",
+   "model": "Ngân hàng thanh toán là Ngân hàng Nhà nước hoặc ngân hàng thương mại cung cấp dịch vụ thanh toán tiền cho giao dịch chứng khoán. Ngân hàng thương mại được Ủy ban lựa chọn khi: có giấy phép; vốn điều lệ trên 10.000 tỷ; có lãi 02 năm gần nhất; đáp ứng tỷ lệ an toàn vốn; có hệ thống kết nối với Tổng công ty và Ngân hàng Nhà nước; lưu dữ liệu ít nhất 10 năm, cung cấp trong 48 giờ.",
+   "keywords": [
+    "Ngân hàng Nhà nước",
+    "10.000 tỷ",
+    "02 năm",
+    "10 năm"
+   ]
+  }
+ ]
+}

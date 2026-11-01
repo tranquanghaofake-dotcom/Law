@@ -1,0 +1,118 @@
+{
+ "id": "quan-ly-nha-nuoc-chung-khoan",
+ "subject": "chung-khoan",
+ "chapter": "c9-quan-ly-nha-nuoc",
+ "term": "Cơ quan quản lý nhà nước về chứng khoán",
+ "definition": "Chính phủ thống nhất quản lý nhà nước về chứng khoán và thị trường chứng khoán. Bộ Tài chính chịu trách nhiệm trước Chính phủ thực hiện quản lý nhà nước về chứng khoán và thị trường chứng khoán và có các nhiệm vụ, quyền hạn sau đây:",
+ "plain": "Ba tầng: Chính phủ thống nhất quản lý → Bộ Tài chính chịu trách nhiệm trước Chính phủ (trình chiến lược, ban hành văn bản, chỉ đạo Ủy ban) → Ủy ban Chứng khoán Nhà nước (thuộc Bộ Tài chính) trực tiếp quản lý, giám sát thị trường. Các bộ khác phối hợp; Ủy ban nhân dân các cấp quản lý tại địa phương.",
+ "example": "Chiến lược phát triển thị trường chứng khoán do Bộ Tài chính trình Thủ tướng ban hành; còn việc cấp giấy phép cho một công ty chứng khoán cụ thể là việc của Ủy ban Chứng khoán Nhà nước.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 8 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "uy-ban-chung-khoan-nha-nuoc",
+  "bien-phap-bao-dam-an-ninh-thi-truong"
+ ],
+ "keywords": [
+  "Chính phủ thống nhất quản lý",
+  "Bộ Tài chính chịu trách nhiệm",
+  "Ủy ban Chứng khoán Nhà nước"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Cơ quan nào thống nhất quản lý nhà nước về chứng khoán và thị trường chứng khoán?",
+   "options": [
+    "Chính phủ",
+    "Bộ Tài chính",
+    "Ủy ban Chứng khoán Nhà nước",
+    "Ngân hàng Nhà nước"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 8.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 8 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Cơ quan nào chịu trách nhiệm trước Chính phủ thực hiện quản lý nhà nước về chứng khoán?",
+   "options": [
+    "Bộ Tài chính",
+    "Ủy ban Chứng khoán Nhà nước",
+    "Sở giao dịch chứng khoán Việt Nam",
+    "Bộ Công Thương"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 8.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 8 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Bộ Tài chính",
+   "right": "Ủy ban Chứng khoán Nhà nước",
+   "cases": [
+    {
+     "text": "Trình Chính phủ, Thủ tướng ban hành chiến lược phát triển thị trường chứng khoán",
+     "answer": "left"
+    },
+    {
+     "text": "Cấp, thu hồi giấy phép, chứng chỉ hành nghề chứng khoán",
+     "answer": "right"
+    },
+    {
+     "text": "Chỉ đạo việc thực hiện chiến lược, chính sách phát triển thị trường",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 8 và Điều 9."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "{{Chính phủ}} thống nhất quản lý nhà nước về chứng khoán; {{Bộ Tài chính}} chịu trách nhiệm trước Chính phủ thực hiện quản lý nhà nước về chứng khoán.",
+   "bank_extra": [
+    "Quốc hội",
+    "Bộ Kế hoạch và Đầu tư"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ủy ban nhân dân các cấp có trách nhiệm thực hiện quản lý nhà nước về chứng khoán tại {{địa phương}}.",
+   "bank_extra": [
+    "trung ương",
+    "nước ngoài"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Ủy ban Chứng khoán Nhà nước là cơ quan thống nhất quản lý nhà nước về chứng khoán.",
+   "answer": false,
+   "explain": "Sai. Chính phủ thống nhất quản lý (khoản 1 Điều 8); Ủy ban là cơ quan thuộc Bộ Tài chính, tham mưu và trực tiếp quản lý, giám sát (Điều 9)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày hệ thống cơ quan quản lý nhà nước về chứng khoán và thị trường chứng khoán.",
+   "model": "Chính phủ thống nhất quản lý; Bộ Tài chính chịu trách nhiệm trước Chính phủ (trình chiến lược, chính sách; ban hành hoặc trình ban hành văn bản; chỉ đạo Ủy ban); Ủy ban Chứng khoán Nhà nước thuộc Bộ Tài chính trực tiếp quản lý, giám sát; các bộ, cơ quan ngang bộ phối hợp; Ủy ban nhân dân các cấp quản lý tại địa phương (Điều 8, 9).",
+   "keywords": [
+    "Chính phủ",
+    "Bộ Tài chính",
+    "Ủy ban Chứng khoán Nhà nước",
+    "Ủy ban nhân dân"
+   ]
+  }
+ ]
+}
