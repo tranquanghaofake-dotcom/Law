@@ -1,6 +1,6 @@
 # Luyện Luật — Kế hoạch thiết kế web học khái niệm luật
 
-Phiên bản 1 · 01/11/2026 · Trạng thái: **chờ duyệt** (chưa code phần mới)
+Phiên bản 1.1 · 01/11/2026 · Trạng thái: **đã duyệt** (5 quyết định mục 11 đã chốt ngày 01/11/2026)
 Tác giả: Claude soạn theo yêu cầu của Trần Quang Hào. Ngôn ngữ: tiếng Việt, giữ thuật ngữ tiếng Anh.
 
 ---
@@ -13,7 +13,9 @@ Tác giả: Claude soạn theo yêu cầu của Trần Quang Hào. Ngôn ngữ: 
 
 **Khác biệt so với 7 web trắc nghiệm luật hiện có đã khảo sát** (dethitracnghiem.vn, baitaptracnghiem.com, vietjack, vndoc, detracnghiem.com, tracnghiemcongchuc.com, aigiaoduc.thuvienphapluat.vn): họ bán **đề**; mình cho **hệ thống nhớ** theo khái niệm + liên kết thẳng tới điều luật gốc + cảm giác chơi game. Không web nào trong số đó có spaced repetition, bậc ghi nhớ, hay phản hồi đa giác quan.
 
-**Đề xuất kỹ thuật (cần bạn chốt, mục 11):** Vite + Svelte 5 + TypeScript, dữ liệu JSON trong repo, tiến độ lưu IndexedDB (local-first), deploy Cloudflare Pages như hiện tại. Giai đoạn 2 thêm Supabase (đăng nhập Google, bảng xếp hạng, đồng bộ chuỗi).
+**Kỹ thuật (đã chốt):** Vite + Svelte 5 + TypeScript, dữ liệu JSON trong repo, tiến độ lưu IndexedDB (local-first), deploy Cloudflare Pages như hiện tại. Giai đoạn 2 thêm Supabase (đăng nhập Google, bảng xếp hạng, đồng bộ chuỗi).
+
+**Môn đầu (đã chốt):** **Luật Hiến pháp** và **Lịch sử nhà nước và pháp luật**. Hệ quả quan trọng: môn lịch sử không có "điều luật hiện hành" làm căn cứ, nên trường `basis` đổi thành `source` tổng quát (điều luật hiện hành *hoặc* sử liệu/giáo trình), và thẻ bậc 3–4 cho môn lịch sử dùng dạng *mốc thời gian*, *sắp thứ tự*, *ghép triều đại ↔ bộ luật* thay cho tình huống áp dụng (xem 2.2 và 3.3).
 
 **Những giả định của bạn cần sửa lại (nêu thẳng theo yêu cầu):**
 1. Brief cũ ghi "fork từ kar-dots" — **không tìm thấy repo này** trên GitHub. Bỏ.
@@ -59,6 +61,12 @@ Mỗi bậc là một *loại bài tập* khó dần. Khái niệm chỉ lên b�
 | 4 | **Tình huống** | Mini-case 2–3 câu, trắc nghiệm áp dụng (dạng đề thi thật). Giải thích theo mẫu *căn cứ → phân tích → kết luận*. | Đúng/sai. |
 | 5 | **Tự trả lời** | Câu hỏi mở ("Phân biệt X và Y", "Khi nào Z không áp dụng?"). Người học gõ 1–3 câu → hiện đáp án mẫu + **3–5 từ khóa bắt buộc** được tô sáng trong bài của họ → tự chấm *Đúng / Gần đúng / Sai*. Giai đoạn 3: thêm nút "Nhờ AI chấm" (Claude API). | Từ khóa + tự chấm. |
 | 6 | **Thuần thục** | Không có bài riêng; khái niệm vào vòng **ôn FSRS**, mỗi lần ôn chọn ngẫu nhiên bậc 1–5. | FSRS rating. |
+
+**Biến thể cho môn Lịch sử nhà nước và pháp luật** (không có luật hiện hành để "áp dụng"):
+- Bậc 2 *Phân biệt*: ghép đôi *triều đại ↔ bộ luật ↔ đặc điểm* (Lý – Hình thư; Lê sơ – Quốc triều hình luật; Nguyễn – Hoàng Việt luật lệ), hoặc *nhà nước phương Đông ↔ phương Tây cổ đại*.
+- Bậc 3 *Điền chỗ trống*: điền năm, tên bộ luật, tên cơ quan; thêm dạng **sắp thứ tự** sự kiện/triều đại (kéo thả trên PC, bấm chọn thứ tự trên điện thoại).
+- Bậc 4 *Tình huống* → *Nhận định đúng/sai có giải thích* và *so sánh* ("Điểm khác của Quốc triều hình luật so với luật nhà Đường là gì?"), đúng với dạng đề thi môn này.
+- `source` ghi giáo trình + trang hoặc sử liệu gốc (Đại Việt sử ký toàn thư, văn bản Quốc triều hình luật bản dịch) thay cho điều luật.
 
 **Nhịp học bạn mô tả được giữ nguyên:** lần học đầu = bậc 0 + 1 cho cả 4–5 khái niệm; lần 2 (hôm sau) = bậc 2 + 3; lần 3 = bậc 4 + 5. Sau đó chỉ còn ôn. Một phiên ≈ 5–8 phút, 15–25 lượt trả lời.
 
@@ -119,7 +127,9 @@ Mỗi bậc là một *loại bài tập* khó dần. Khái niệm chỉ lên b�
   "definition": "Tài sản là vật, tiền, giấy tờ có giá và quyền tài sản.",   // nguyên văn khoản 1 Điều 105
   "plain": "Nói đơn giản: mọi thứ có giá trị mà pháp luật cho phép bạn sở hữu, kể cả quyền đòi nợ.",
   "example": "Chiếc xe máy, 5 triệu trong tài khoản, sổ tiết kiệm và quyền đòi bạn trả nợ đều là tài sản.",
-  "basis": "Khoản 1 Điều 105 BLDS 2015", "url": "https://vbpl.vn/...", "checked": "2026-10-31",
+  "source": { "kind": "statute", "cite": "Khoản 1 Điều 105 BLDS 2015", "url": "https://vbpl.vn/..." },
+  // môn lịch sử: { "kind": "textbook", "cite": "Giáo trình LSNN&PL Việt Nam, ĐH Luật Hà Nội, tr. 215" } hoặc { "kind": "primary", "cite": "Quốc triều hình luật, Điều 1" }
+  "checked": "2026-10-31",
   "confusables": ["quyen-tai-san", "vat"],
   "keywords": ["vật", "tiền", "giấy tờ có giá", "quyền tài sản"],
   "items": [
@@ -130,15 +140,18 @@ Mỗi bậc là một *loại bài tập* khó dần. Khái niệm chỉ lên b�
     { "type": "recall", "level": 5, "q": "Vì sao quyền đòi nợ được coi là tài sản?", "model": "...", "keywords": ["quyền tài sản", "trị giá được bằng tiền", "Điều 115"] }
   ] }
 ```
-Bộ 10 câu hiện có (`web/data/sets/*.json`) **giữ nguyên định dạng**, chỉ thêm `concept` cho từng câu khi có.
+Loại thẻ bổ sung cho môn lịch sử: `"type": "order"` (sắp thứ tự, `items` + `answer` là thứ tự đúng), `"type": "match"` (ghép đôi, `pairs`), `"type": "truefalse"` (nhận định đúng/sai + giải thích). Bộ 10 câu hiện có (`web/data/sets/*.json`) **giữ nguyên định dạng**, chỉ thêm `concept` cho từng câu khi có.
 
-### 3.4 Lộ trình nội dung
-| Thứ tự | Môn | Lý do |
+### 3.4 Lộ trình nội dung (đã chốt ngày 01/11/2026)
+| Thứ tự | Môn | Ghi chú |
 |---|---|---|
-| 1 | **Pháp luật đại cương** (≈ 8 chương, 60–80 khái niệm) | Mọi sinh viên đều học → thị trường lớn nhất; 2 bộ đã có. |
-| 2 | **Luật Dân sự 1** (chủ thể, tài sản, giao dịch, đại diện, thời hạn/thời hiệu) | Bạn lấy ví dụ *Tài sản*; bộ Đặt cọc đã có. |
-| 3 | Luật Lao động, Luật Hình sự phần chung | Hai bộ đã có; đúng trụ "đi làm" và "có bị đi tù không". |
-| 4+ | Luật Doanh nghiệp, Thương mại | Đúng chuyên ngành Luật Kinh tế của bạn. |
+| 1 | **Luật Hiến pháp** (Hiến pháp 2013 và các luật tổ chức: Quốc hội, Chính phủ, Tòa án, Viện kiểm sát, Chính quyền địa phương; quyền con người, quyền công dân; chế độ bầu cử) | Có văn bản hiện hành trên vbpl.vn → mô hình "căn cứ điều luật" dùng được trọn vẹn. Lưu ý đối chiếu **Hiến pháp sửa đổi 2025** và Luật Tổ chức chính quyền địa phương mới (bỏ cấp huyện) — nhiều giáo trình cũ đã lạc hậu. |
+| 2 | **Lịch sử nhà nước và pháp luật** (Việt Nam trước, Thế giới sau) | Không có luật hiện hành; dùng `source` kiểu giáo trình/sử liệu; thẻ dạng mốc thời gian, sắp thứ tự, ghép đôi (2.2). |
+| 3 | Pháp luật đại cương | 2 bộ đã có; nhiều khái niệm trùng với Hiến pháp (nhà nước, pháp luật, quy phạm) → tái dùng thẻ. |
+| 4 | Luật Dân sự 1, Lao động, Hình sự phần chung | 3 bộ đã có. |
+| 5+ | Luật Doanh nghiệp, Thương mại | Đúng chuyên ngành Luật Kinh tế. |
+
+**Kim chỉ nam nội dung:** mục lục và cách phân chương của giáo trình **ĐH Luật Hà Nội** và **ĐH Luật TP.HCM** làm khung; bạn gửi thêm giáo trình/slide/đề cương của trường bạn qua Google Drive; Claude so sánh ba nguồn, lập dàn khái niệm hợp nhất, bạn tinh chỉnh. Định nghĩa, ví dụ, câu hỏi **tự viết**, không chép giáo trình (3.1).
 
 ---
 
@@ -341,15 +354,17 @@ Mỗi giai đoạn theo quy trình: spec → `writing-plans` → TDD → review 
 
 ---
 
-## 11. Năm quyết định cần bạn chốt
+## 11. Năm quyết định (đã chốt 01/11/2026)
 
-1. **Stack:** Vite + Svelte 5 + TypeScript (đề xuất) — hay giữ vanilla JS?
-2. **Thang bậc:** khoa cử (Tú tài → Trạng nguyên) làm thang chính + cửu phẩm theo môn (đề xuất) — hay quân hàm?
-3. **Môn đầu tiên:** Pháp luật đại cương (đề xuất, thị trường lớn) — hay Luật Dân sự (đúng ví dụ *Tài sản* của bạn)?
-4. **Backend giai đoạn 2:** Supabase (đề xuất, có Auth Google sẵn) — hay Cloudflare D1 + Workers (cùng nhà với Pages)?
-5. **Tài liệu nguồn:** bạn bỏ giáo trình/slide/đề cương PLĐC vào một thư mục Google Drive để tôi lập dàn khái niệm — hay tôi lập dàn từ mục lục giáo trình phổ biến (ĐH Luật Hà Nội, ĐH Luật TP.HCM) rồi bạn chỉnh?
+| # | Câu hỏi | Quyết định của Hào |
+|---|---|---|
+| 1 | Stack | **Vite + Svelte 5 + TypeScript** |
+| 2 | Thang bậc | **Khoa cử** (Tú tài → Trạng nguyên) thang chính + **cửu phẩm** theo môn |
+| 3 | Môn đầu | **Luật Hiến pháp** và **Lịch sử nhà nước và pháp luật** |
+| 4 | Backend G2 | **Supabase** |
+| 5 | Tài liệu nguồn | Claude tự lập dàn từ giáo trình **ĐH Luật Hà Nội + ĐH Luật TP.HCM**; Hào gửi thêm giáo trình/slide trường mình; so sánh và tinh chỉnh |
 
-Trả lời 5 điểm này (hoặc "đồng ý hết") là tôi chuyển sang `writing-plans` cho G1a.
+Bước tiếp theo: kế hoạch triển khai G1a tại `docs/superpowers/plans/`.
 
 ---
 
