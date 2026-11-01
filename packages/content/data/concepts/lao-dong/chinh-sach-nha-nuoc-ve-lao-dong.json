@@ -1,0 +1,115 @@
+{
+ "id": "chinh-sach-nha-nuoc-ve-lao-dong",
+ "subject": "lao-dong",
+ "chapter": "v1",
+ "term": "Chính sách của Nhà nước về lao động (cơ sở nguyên tắc luật lao động)",
+ "definition": "Bảo đảm quyền và lợi ích hợp pháp, chính đáng của người lao động, người làm việc không có quan hệ lao động; khuyến khích những thỏa thuận bảo đảm cho người lao động có điều kiện thuận lợi hơn so với quy định của pháp luật về lao động. Bảo đảm quyền và lợi ích hợp pháp của người sử dụng lao động, quản lý lao động đúng pháp luật, dân chủ, công bằng, văn minh và nâng cao trách nhiệm xã hội.",
+ "plain": "Đề cương HLU yêu cầu nắm 4 nguyên tắc cơ bản của luật lao động; cách trình bày phổ biến (chưa đối chiếu nguyên văn giáo trình), thể hiện qua Điều 4: (1) BẢO VỆ NGƯỜI LAO ĐỘNG; (2) BẢO VỆ quyền, lợi ích hợp pháp của NGƯỜI SỬ DỤNG LAO ĐỘNG; (3) kết hợp hài hòa chính sách kinh tế và chính sách xã hội; (4) tôn trọng, phù hợp với tiêu chuẩn lao động quốc tế. Điểm then chốt: pháp luật đặt MỨC SÀN, khuyến khích thỏa thuận CÓ LỢI HƠN cho người lao động.",
+ "example": "Thỏa ước lao động tập thể quy định nghỉ hằng năm 15 ngày (cao hơn mức 12 ngày của luật): được khuyến khích vì có lợi hơn cho người lao động.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 4 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-125-VBHN-VPQH-2025-Bo-luat-Lao-dong-so-45-2019-QH14-672381.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "pham-vi-dieu-chinh-luat-lao-dong",
+  "thoa-uoc-lao-dong-tap-the"
+ ],
+ "keywords": [
+  "bảo vệ người lao động",
+  "thỏa thuận có lợi hơn",
+  "quyền của người sử dụng lao động",
+  "trách nhiệm xã hội"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nhà nước khuyến khích loại thỏa thuận nào theo khoản 1 Điều 4?",
+   "options": [
+    "Thỏa thuận bảo đảm cho người lao động điều kiện thuận lợi hơn quy định của pháp luật",
+    "Thỏa thuận giảm lương dưới mức tối thiểu",
+    "Thỏa thuận không đóng bảo hiểm xã hội",
+    "Thỏa thuận làm thêm không giới hạn"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 4 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chính sách của Nhà nước có bảo đảm quyền lợi của người sử dụng lao động không?",
+   "options": [
+    "Có, theo khoản 2 Điều 4",
+    "Không, chỉ bảo vệ người lao động",
+    "Chỉ với doanh nghiệp nhà nước",
+    "Chỉ khi có tranh chấp"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 4 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Bảo vệ người lao động",
+   "right": "Bảo vệ người sử dụng lao động",
+   "cases": [
+    {
+     "text": "Khuyến khích thỏa thuận có lợi hơn cho người lao động",
+     "answer": "left"
+    },
+    {
+     "text": "Quản lý lao động đúng pháp luật, dân chủ, công bằng",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhà nước khuyến khích những thỏa thuận bảo đảm cho người lao động có điều kiện {{thuận lợi hơn}} so với quy định của pháp luật về lao động; bảo đảm quyền của người sử dụng lao động, quản lý lao động đúng pháp luật, dân chủ, {{công bằng}}, văn minh.",
+   "bank_extra": [
+    "kém hơn",
+    "tập trung"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chính sách của Nhà nước bảo đảm quyền và lợi ích hợp pháp của cả người làm việc không có {{quan hệ lao động}}.",
+   "bank_extra": [
+    "hộ khẩu",
+    "bằng cấp"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi thỏa thuận khác với Bộ luật Lao động đều vô hiệu.",
+   "answer": false,
+   "explain": "Sai. Thỏa thuận có lợi hơn cho người lao động được khuyến khích (khoản 1 Điều 4)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các nguyên tắc cơ bản của luật lao động gắn với Điều 4.",
+   "model": "Bảo vệ quyền, lợi ích của người lao động, khuyến khích thỏa thuận có lợi hơn; bảo đảm quyền, lợi ích hợp pháp của người sử dụng lao động; kết hợp chính sách kinh tế – xã hội; phù hợp tiêu chuẩn lao động quốc tế (Điều 4; giáo trình).",
+   "keywords": [
+    "bảo vệ người lao động",
+    "có lợi hơn",
+    "người sử dụng lao động",
+    "tiêu chuẩn quốc tế"
+   ]
+  }
+ ]
+}

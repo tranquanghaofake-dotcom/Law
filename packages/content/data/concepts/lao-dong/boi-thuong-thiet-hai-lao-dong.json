@@ -1,0 +1,115 @@
+{
+ "id": "boi-thuong-thiet-hai-lao-dong",
+ "subject": "lao-dong",
+ "chapter": "v7",
+ "term": "Bồi thường thiệt hại (trách nhiệm vật chất)",
+ "definition": "Người lao động làm hư hỏng dụng cụ, thiết bị hoặc có hành vi khác gây thiệt hại tài sản của người sử dụng lao động thì phải bồi thường theo quy định của pháp luật hoặc nội quy lao động của người sử dụng lao động. Trường hợp người lao động gây thiệt hại không nghiêm trọng do sơ suất với giá trị không quá 10 tháng lương tối thiểu vùng do Chính phủ công bố được áp dụng tại nơi người lao động làm việc thì người lao động phải bồi thường nhiều nhất là 03 tháng tiền lương và bị khấu trừ hằng tháng vào lương theo quy định tại khoản 3 Điều 102 của Bộ luật này.",
+ "plain": "Trách nhiệm vật chất có ĐẶC THÙ so với bồi thường dân sự: thiệt hại KHÔNG NGHIÊM TRỌNG, do SƠ SUẤT, giá trị ≤ 10 THÁNG LƯƠNG TỐI THIỂU VÙNG → bồi thường TỐI ĐA 03 THÁNG LƯƠNG, khấu trừ hằng tháng (không quá 30% lương thực trả sau khi trích nộp bảo hiểm, khoản 3 Điều 102). Làm MẤT tài sản, tiêu hao vật tư quá định mức: bồi thường một phần hoặc toàn bộ theo thời giá thị trường hoặc hợp đồng trách nhiệm; thiên tai, sự kiện bất khả kháng thì không phải bồi thường (khoản 2).",
+ "example": "Nhân viên sơ ý làm rơi vỡ máy chiếu trị giá 15 triệu (dưới 10 tháng lương tối thiểu vùng): bồi thường tối đa 03 tháng lương, khấu trừ dần vào lương.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 129 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-125-VBHN-VPQH-2025-Bo-luat-Lao-dong-so-45-2019-QH14-672381.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "ky-luat-lao-dong",
+  "tien-luong"
+ ],
+ "keywords": [
+  "sơ suất, không nghiêm trọng",
+  "10 tháng lương tối thiểu vùng",
+  "tối đa 03 tháng tiền lương",
+  "khấu trừ hằng tháng"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người lao động gây thiệt hại không nghiêm trọng do sơ suất, giá trị không quá 10 tháng lương tối thiểu vùng thì bồi thường tối đa bao nhiêu?",
+   "options": [
+    "03 tháng tiền lương",
+    "Toàn bộ thiệt hại",
+    "06 tháng tiền lương",
+    "01 tháng tiền lương"
+   ],
+   "answer": 0,
+   "explain": "Đoạn 2 khoản 1 Điều 129.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 129 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người lao động làm mất tài sản do thiên tai, sự kiện bất khả kháng dù đã áp dụng mọi biện pháp cần thiết thì sao?",
+   "options": [
+    "Không phải bồi thường",
+    "Bồi thường toàn bộ",
+    "Bồi thường một nửa",
+    "Bị sa thải"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 129.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 129 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Bồi thường tối đa 03 tháng lương",
+   "right": "Bồi thường theo thời giá thị trường hoặc hợp đồng trách nhiệm",
+   "cases": [
+    {
+     "text": "Sơ suất làm hư hỏng thiết bị giá trị nhỏ",
+     "answer": "left"
+    },
+    {
+     "text": "Làm mất tài sản được giao",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 129."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Trường hợp gây thiệt hại không nghiêm trọng do {{sơ suất}} với giá trị không quá 10 tháng lương tối thiểu vùng thì người lao động phải bồi thường nhiều nhất là {{03}} tháng tiền lương.",
+   "bank_extra": [
+    "cố ý",
+    "06"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Khoản bồi thường được khấu trừ {{hằng tháng}} vào lương.",
+   "bank_extra": [
+    "một lần",
+    "hằng năm"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người lao động sơ suất làm hỏng thiết bị trị giá nhỏ luôn phải bồi thường toàn bộ giá trị thiệt hại.",
+   "answer": false,
+   "explain": "Sai. Đoạn 2 khoản 1 Điều 129: tối đa 03 tháng tiền lương."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày trách nhiệm bồi thường thiệt hại của người lao động.",
+   "model": "Làm hư hỏng dụng cụ, thiết bị, gây thiệt hại tài sản thì bồi thường theo pháp luật, nội quy; sơ suất, không nghiêm trọng, ≤ 10 tháng lương tối thiểu vùng thì tối đa 03 tháng lương, khấu trừ hằng tháng (khoản 1); làm mất tài sản bồi thường theo thời giá, hợp đồng trách nhiệm; bất khả kháng thì không bồi thường (khoản 2 Điều 129).",
+   "keywords": [
+    "sơ suất",
+    "10 tháng",
+    "03 tháng",
+    "khấu trừ"
+   ]
+  }
+ ]
+}

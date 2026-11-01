@@ -1,0 +1,115 @@
+{
+ "id": "thoi-gio-lam-viec",
+ "subject": "lao-dong",
+ "chapter": "v6",
+ "term": "Thời giờ làm việc bình thường và làm thêm giờ",
+ "definition": "Thời giờ làm việc bình thường không quá 08 giờ trong 01 ngày và không quá 48 giờ trong 01 tuần. (…) Thời gian làm thêm giờ là khoảng thời gian làm việc ngoài thời giờ làm việc bình thường theo quy định của pháp luật, thỏa ước lao động tập thể hoặc nội quy lao động.",
+ "plain": "Bình thường: tối đa 08 GIỜ/NGÀY, 48 GIỜ/TUẦN (theo tuần: tối đa 10 giờ/ngày); khuyến khích tuần 40 giờ. Làm thêm giờ (khoản 2 Điều 107): phải được NGƯỜI LAO ĐỘNG ĐỒNG Ý; không quá 50% giờ bình thường/ngày (hoặc tổng 12 giờ/ngày nếu theo tuần); không quá 40 GIỜ/THÁNG; không quá 200 GIỜ/NĂM, một số ngành nghề tối đa 300 GIỜ/NĂM (khoản 3). Lưu ý: mức 40 giờ/tháng theo VBHN 2025; các quy định tạm thời nới trần làm thêm giờ trong giai đoạn phục hồi sau dịch đã hết thời hạn, cần tra văn bản hiện hành nếu có quy định mới.",
+ "example": "Công nhân dệt may làm 8 giờ/ngày, được bố trí làm thêm 3 giờ/ngày suốt 20 ngày (60 giờ/tháng): vượt giới hạn 40 giờ/tháng.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 105, khoản 1 Điều 107 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-125-VBHN-VPQH-2025-Bo-luat-Lao-dong-so-45-2019-QH14-672381.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nghi-hang-nam",
+  "tien-luong"
+ ],
+ "keywords": [
+  "08 giờ/ngày, 48 giờ/tuần",
+  "người lao động đồng ý",
+  "40 giờ/tháng",
+  "200 hoặc 300 giờ/năm"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thời giờ làm việc bình thường tối đa trong một tuần là bao nhiêu?",
+   "options": [
+    "48 giờ",
+    "40 giờ",
+    "44 giờ",
+    "60 giờ"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 105.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 105 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Điều kiện bắt buộc đầu tiên để sử dụng người lao động làm thêm giờ là gì?",
+   "options": [
+    "Phải được sự đồng ý của người lao động",
+    "Phải được Sở Lao động cho phép",
+    "Phải trả gấp 5 lần lương",
+    "Phải có quyết định của công đoàn"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 2 Điều 107.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 107 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tối đa 200 giờ/năm",
+   "right": "Tối đa 300 giờ/năm",
+   "cases": [
+    {
+     "text": "Công việc văn phòng thông thường",
+     "answer": "left"
+    },
+    {
+     "text": "Sản xuất, gia công hàng dệt, may, da, giày xuất khẩu",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 2, 3 Điều 107."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thời giờ làm việc bình thường không quá {{08}} giờ trong 01 ngày và không quá {{48}} giờ trong 01 tuần.",
+   "bank_extra": [
+    "10",
+    "40"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Số giờ làm thêm không quá {{40}} giờ trong 01 tháng.",
+   "bank_extra": [
+    "60",
+    "30"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người sử dụng lao động có quyền buộc người lao động làm thêm giờ mà không cần họ đồng ý trong mọi trường hợp.",
+   "answer": false,
+   "explain": "Sai. Điểm a khoản 2 Điều 107 yêu cầu sự đồng ý; chỉ một số trường hợp đặc biệt tại Điều 108 người lao động không được từ chối."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quy định về thời giờ làm việc bình thường và làm thêm giờ.",
+   "model": "Bình thường không quá 08 giờ/ngày, 48 giờ/tuần (Điều 105); làm thêm giờ là thời gian ngoài giờ bình thường; điều kiện: người lao động đồng ý, không quá 50% giờ bình thường/ngày, 40 giờ/tháng, 200 giờ/năm, một số ngành tối đa 300 giờ/năm (Điều 107).",
+   "keywords": [
+    "08 giờ",
+    "48 giờ",
+    "đồng ý",
+    "40 giờ"
+   ]
+  }
+ ]
+}

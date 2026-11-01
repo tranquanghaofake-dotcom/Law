@@ -1,0 +1,139 @@
+{
+  "id": "lao-dong-de-2",
+  "group": "lao-dong",
+  "title": "Đề kiểm tra Luật Lao động – Điều kiện lao động, kỷ luật, tranh chấp, đình công",
+  "subtitle": "10 câu theo đề cương HLU, vấn đề 4–9",
+  "updated": "2026-11-01",
+  "questions": [
+    {
+      "q": "Tổ chức đại diện người lao động tại cơ sở gồm những tổ chức nào?",
+      "options": [
+        "Chỉ công đoàn cơ sở",
+        "Công đoàn cơ sở và tổ chức của người lao động tại doanh nghiệp",
+        "Phòng nhân sự",
+        "Hội đồng quản trị"
+      ],
+      "answer": 1,
+      "explain": "Khoản 3 Điều 3.",
+      "basis": "Điều 3 BLLĐ 2019 (VBHN 125/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-125-VBHN-VPQH-2025-Bo-luat-Lao-dong-so-45-2019-QH14-672381.aspx"
+    },
+    {
+      "q": "Người sử dụng lao động phải tổ chức đối thoại định kỳ tại nơi làm việc ít nhất bao lâu một lần?",
+      "options": [
+        "06 tháng",
+        "01 năm",
+        "02 năm",
+        "03 tháng"
+      ],
+      "answer": 1,
+      "explain": "Điểm a khoản 2 Điều 63.",
+      "basis": "Điều 63 BLLĐ 2019 (VBHN 125/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-125-VBHN-VPQH-2025-Bo-luat-Lao-dong-so-45-2019-QH14-672381.aspx"
+    },
+    {
+      "q": "Thỏa ước lao động tập thể quy định thưởng thấp hơn mức luật bắt buộc. Nội dung đó thế nào?",
+      "options": [
+        "Có hiệu lực vì các bên đã thỏa thuận",
+        "Không được trái với quy định của pháp luật",
+        "Có hiệu lực nếu Sở Lao động đồng ý",
+        "Có hiệu lực 1 năm"
+      ],
+      "answer": 1,
+      "explain": "Khoản 2 Điều 75.",
+      "basis": "Điều 75 BLLĐ 2019 (VBHN 125/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-125-VBHN-VPQH-2025-Bo-luat-Lao-dong-so-45-2019-QH14-672381.aspx"
+    },
+    {
+      "q": "Thời giờ làm việc bình thường tối đa trong một ngày (tính theo ngày) là bao nhiêu?",
+      "options": [
+        "08 giờ",
+        "10 giờ",
+        "12 giờ",
+        "09 giờ"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 105.",
+      "basis": "Điều 105 BLLĐ 2019 (VBHN 125/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-125-VBHN-VPQH-2025-Bo-luat-Lao-dong-so-45-2019-QH14-672381.aspx"
+    },
+    {
+      "q": "Làm thêm giờ vào ngày nghỉ hằng tuần được trả ít nhất bao nhiêu phần trăm?",
+      "options": [
+        "150%",
+        "200%",
+        "300%",
+        "100%"
+      ],
+      "answer": 1,
+      "explain": "Điểm b khoản 1 Điều 98.",
+      "basis": "Điều 98 BLLĐ 2019 (VBHN 125/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-125-VBHN-VPQH-2025-Bo-luat-Lao-dong-so-45-2019-QH14-672381.aspx"
+    },
+    {
+      "q": "Người làm việc bình thường đủ 12 tháng được nghỉ hằng năm bao nhiêu ngày làm việc?",
+      "options": [
+        "10",
+        "12",
+        "14",
+        "16"
+      ],
+      "answer": 1,
+      "explain": "Điểm a khoản 1 Điều 113.",
+      "basis": "Điều 113 BLLĐ 2019 (VBHN 125/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-125-VBHN-VPQH-2025-Bo-luat-Lao-dong-so-45-2019-QH14-672381.aspx"
+    },
+    {
+      "q": "Công ty trừ 200 nghìn lương mỗi lần nhân viên đi muộn thay cho xử lý kỷ luật. Việc này thế nào?",
+      "options": [
+        "Hợp pháp nếu có trong nội quy",
+        "Bị cấm: phạt tiền, cắt lương thay việc xử lý kỷ luật",
+        "Hợp pháp nếu nhân viên ký đồng ý",
+        "Hợp pháp với doanh nghiệp tư nhân"
+      ],
+      "answer": 1,
+      "explain": "Khoản 2 Điều 127.",
+      "basis": "Điều 127 BLLĐ 2019 (VBHN 125/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-125-VBHN-VPQH-2025-Bo-luat-Lao-dong-so-45-2019-QH14-672381.aspx"
+    },
+    {
+      "q": "Nhân viên sơ suất làm hỏng máy in trị giá 8 triệu (dưới 10 tháng lương tối thiểu vùng). Bồi thường tối đa bao nhiêu?",
+      "options": [
+        "Toàn bộ 8 triệu",
+        "03 tháng tiền lương",
+        "01 tháng tiền lương",
+        "Không phải bồi thường"
+      ],
+      "answer": 1,
+      "explain": "Đoạn 2 khoản 1 Điều 129 (mức tối đa; nếu thiệt hại thấp hơn thì không vượt quá thiệt hại thực tế).",
+      "basis": "Điều 129 BLLĐ 2019 (VBHN 125/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-125-VBHN-VPQH-2025-Bo-luat-Lao-dong-so-45-2019-QH14-672381.aspx"
+    },
+    {
+      "q": "Tranh chấp về việc bị sa thải có bắt buộc phải qua hòa giải viên lao động trước khi khởi kiện không?",
+      "options": [
+        "Bắt buộc",
+        "Không bắt buộc",
+        "Chỉ khi người lao động là nữ",
+        "Chỉ khi công ty có công đoàn"
+      ],
+      "answer": 1,
+      "explain": "Điểm a khoản 1 Điều 188.",
+      "basis": "Điều 188 BLLĐ 2019 (VBHN 125/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-125-VBHN-VPQH-2025-Bo-luat-Lao-dong-so-45-2019-QH14-672381.aspx"
+    },
+    {
+      "q": "Đình công được tiến hành trong trường hợp nào theo Điều 199?",
+      "options": [
+        "Tranh chấp tập thể về quyền bất kỳ",
+        "Tranh chấp tập thể về lợi ích khi hòa giải không thành hoặc hết thời hạn hòa giải…",
+        "Tranh chấp cá nhân về lương",
+        "Phản đối chính sách thuế"
+      ],
+      "answer": 1,
+      "explain": "Điều 199.",
+      "basis": "Điều 199 BLLĐ 2019 (VBHN 125/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-125-VBHN-VPQH-2025-Bo-luat-Lao-dong-so-45-2019-QH14-672381.aspx"
+    }
+  ]
+}

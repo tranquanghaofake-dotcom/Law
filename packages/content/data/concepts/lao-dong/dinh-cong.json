@@ -1,0 +1,115 @@
+{
+ "id": "dinh-cong",
+ "subject": "lao-dong",
+ "chapter": "v9",
+ "term": "Đình công",
+ "definition": "Đình công là sự ngừng việc tạm thời, tự nguyện và có tổ chức của người lao động nhằm đạt được yêu cầu trong quá trình giải quyết tranh chấp lao động và do tổ chức đại diện người lao động có quyền thương lượng tập thể là một bên tranh chấp lao động tập thể tổ chức và lãnh đạo.",
+ "plain": "Dấu hiệu: NGỪNG VIỆC TẠM THỜI, TỰ NGUYỆN, CÓ TỔ CHỨC; nhằm đạt YÊU CẦU trong quá trình GIẢI QUYẾT TRANH CHẤP LAO ĐỘNG; do TỔ CHỨC ĐẠI DIỆN NGƯỜI LAO ĐỘNG có quyền thương lượng tập thể là một bên tranh chấp tổ chức, lãnh đạo. Chỉ được đình công với TRANH CHẤP TẬP THỂ VỀ LỢI ÍCH khi hòa giải không thành, hết thời hạn hòa giải, hoặc trọng tài không giải quyết, người sử dụng lao động không thực hiện quyết định trọng tài (Điều 199). Phân biệt: LÃN CÔNG (vẫn ở nơi làm việc nhưng làm chậm), ngừng việc tự phát không có tổ chức đại diện lãnh đạo.",
+ "example": "Công nhân tự phát nghỉ việc đồng loạt, không có công đoàn hay tổ chức đại diện lãnh đạo: không phải đình công theo Điều 198 (và nếu được coi là đình công thì bất hợp pháp theo khoản 2 Điều 204).",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 198 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-125-VBHN-VPQH-2025-Bo-luat-Lao-dong-so-45-2019-QH14-672381.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "dinh-cong-bat-hop-phap",
+  "tranh-chap-lao-dong",
+  "thuong-luong-tap-the"
+ ],
+ "keywords": [
+  "ngừng việc tạm thời, tự nguyện, có tổ chức",
+  "trong quá trình giải quyết tranh chấp",
+  "tổ chức đại diện có quyền thương lượng tập thể"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai có quyền tổ chức và lãnh đạo đình công?",
+   "options": [
+    "Tổ chức đại diện người lao động có quyền thương lượng tập thể là một bên tranh chấp lao động tập thể",
+    "Bất kỳ nhóm người lao động nào",
+    "Người sử dụng lao động",
+    "Ủy ban nhân dân cấp huyện"
+   ],
+   "answer": 0,
+   "explain": "Điều 198.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 198 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đình công được tiến hành nhằm mục đích gì?",
+   "options": [
+    "Đạt được yêu cầu trong quá trình giải quyết tranh chấp lao động",
+    "Phản đối chính sách nhà nước",
+    "Bày tỏ quan điểm chính trị",
+    "Gây thiệt hại cho doanh nghiệp"
+   ],
+   "answer": 0,
+   "explain": "Điều 198.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 198 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Đình công",
+   "right": "Không phải đình công",
+   "cases": [
+    {
+     "text": "Công đoàn tổ chức ngừng việc sau khi hòa giải tranh chấp về lợi ích không thành",
+     "answer": "left"
+    },
+    {
+     "text": "Công nhân tự phát bỏ về, không có tổ chức đại diện lãnh đạo",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 198, 199."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đình công là sự ngừng việc {{tạm thời}}, tự nguyện và có tổ chức của người lao động nhằm đạt được yêu cầu trong quá trình giải quyết {{tranh chấp lao động}}.",
+   "bank_extra": [
+    "vĩnh viễn",
+    "vụ án hình sự"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đình công do tổ chức đại diện người lao động có quyền {{thương lượng tập thể}} là một bên tranh chấp lao động tập thể tổ chức và lãnh đạo.",
+   "bank_extra": [
+    "khởi kiện",
+    "xử phạt"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi cuộc ngừng việc tập thể của người lao động đều là đình công hợp pháp.",
+   "answer": false,
+   "explain": "Sai. Phải đáp ứng dấu hiệu Điều 198 và không thuộc các trường hợp bất hợp pháp tại Điều 204."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm và dấu hiệu của đình công.",
+   "model": "Đình công là sự ngừng việc tạm thời, tự nguyện, có tổ chức của người lao động nhằm đạt yêu cầu trong quá trình giải quyết tranh chấp lao động, do tổ chức đại diện người lao động có quyền thương lượng tập thể là một bên tranh chấp tập thể tổ chức và lãnh đạo (Điều 198).",
+   "keywords": [
+    "tạm thời",
+    "tự nguyện",
+    "có tổ chức",
+    "thương lượng tập thể"
+   ]
+  }
+ ]
+}

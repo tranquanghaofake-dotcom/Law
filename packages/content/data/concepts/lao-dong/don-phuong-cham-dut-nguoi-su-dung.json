@@ -1,0 +1,115 @@
+{
+ "id": "don-phuong-cham-dut-nguoi-su-dung",
+ "subject": "lao-dong",
+ "chapter": "v3",
+ "term": "Quyền đơn phương chấm dứt hợp đồng của người sử dụng lao động",
+ "definition": "Người sử dụng lao động có quyền đơn phương chấm dứt hợp đồng lao động trong trường hợp sau đây: a) Người lao động thường xuyên không hoàn thành công việc theo hợp đồng lao động được xác định theo tiêu chí đánh giá mức độ hoàn thành công việc trong quy chế của người sử dụng lao động.",
+ "plain": "Khác người lao động, người sử dụng lao động CHỈ được đơn phương chấm dứt khi có CĂN CỨ LUẬT ĐỊNH (khoản 1 Điều 36): thường xuyên không hoàn thành công việc (theo quy chế); ốm đau, tai nạn điều trị lâu (12 tháng/06 tháng/quá nửa thời hạn) chưa hồi phục; thiên tai, hỏa hoạn, dịch bệnh… buộc giảm chỗ làm; không có mặt sau thời hạn tạm hoãn; đủ tuổi nghỉ hưu; TỰ Ý BỎ VIỆC 05 NGÀY LÀM VIỆC LIÊN TỤC trở lên không lý do chính đáng; cung cấp thông tin không trung thực. Phải báo trước (45/30/03 ngày), trừ trường hợp bỏ việc 05 ngày và không có mặt sau tạm hoãn.",
+ "example": "Công ty cho anh B nghỉ việc chỉ vì \"không hợp văn hóa công ty\" mà không thuộc căn cứ Điều 36: đơn phương chấm dứt trái pháp luật, công ty phải nhận B trở lại và bồi thường theo Điều 41.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điểm a khoản 1 Điều 36 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-125-VBHN-VPQH-2025-Bo-luat-Lao-dong-so-45-2019-QH14-672381.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "don-phuong-cham-dut-nguoi-lao-dong",
+  "sa-thai"
+ ],
+ "keywords": [
+  "căn cứ luật định",
+  "thường xuyên không hoàn thành công việc",
+  "tự ý bỏ việc 05 ngày liên tục",
+  "báo trước"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người lao động tự ý bỏ việc không có lý do chính đáng bao nhiêu ngày làm việc liên tục thì người sử dụng lao động được đơn phương chấm dứt hợp đồng?",
+   "options": [
+    "Từ 05 ngày làm việc liên tục trở lên",
+    "03 ngày",
+    "10 ngày",
+    "30 ngày"
+   ],
+   "answer": 0,
+   "explain": "Điểm e khoản 1 Điều 36.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 36 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Căn cứ \"thường xuyên không hoàn thành công việc\" được xác định dựa trên đâu?",
+   "options": [
+    "Tiêu chí đánh giá trong quy chế của người sử dụng lao động",
+    "Ý kiến cá nhân của giám đốc",
+    "Đánh giá của đồng nghiệp",
+    "Quyết định của Sở Lao động"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 36.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điểm a khoản 1 Điều 36 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Người lao động đơn phương chấm dứt",
+   "right": "Người sử dụng lao động đơn phương chấm dứt",
+   "cases": [
+    {
+     "text": "Không cần lý do, chỉ cần báo trước",
+     "answer": "left"
+    },
+    {
+     "text": "Phải có một trong các căn cứ luật định",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 35, 36."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người sử dụng lao động có quyền đơn phương chấm dứt hợp đồng khi người lao động {{thường xuyên}} không hoàn thành công việc theo hợp đồng, xác định theo tiêu chí trong {{quy chế}} của người sử dụng lao động.",
+   "bank_extra": [
+    "đôi khi",
+    "nội quy cá nhân"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quy chế đánh giá mức độ hoàn thành công việc phải tham khảo ý kiến tổ chức đại diện người lao động tại {{cơ sở}}.",
+   "bank_extra": [
+    "cấp tỉnh",
+    "Bộ Lao động"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người sử dụng lao động có quyền đơn phương chấm dứt hợp đồng lao động không cần lý do như người lao động.",
+   "answer": false,
+   "explain": "Sai. Người sử dụng lao động chỉ được đơn phương chấm dứt khi có căn cứ tại khoản 1 Điều 36."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các căn cứ người sử dụng lao động được đơn phương chấm dứt hợp đồng lao động.",
+   "model": "Thường xuyên không hoàn thành công việc theo quy chế; ốm đau, tai nạn điều trị dài ngày chưa hồi phục; thiên tai, hỏa hoạn, dịch bệnh buộc giảm chỗ làm; không có mặt sau thời hạn tạm hoãn; đủ tuổi nghỉ hưu; tự ý bỏ việc 05 ngày làm việc liên tục; cung cấp thông tin không trung thực (khoản 1 Điều 36).",
+   "keywords": [
+    "không hoàn thành công việc",
+    "ốm đau",
+    "05 ngày",
+    "tuổi nghỉ hưu"
+   ]
+  }
+ ]
+}

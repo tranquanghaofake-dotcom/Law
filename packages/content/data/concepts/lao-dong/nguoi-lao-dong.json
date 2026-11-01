@@ -1,0 +1,119 @@
+{
+ "id": "nguoi-lao-dong",
+ "subject": "lao-dong",
+ "chapter": "v2",
+ "term": "Người lao động và người sử dụng lao động",
+ "definition": "Người lao động là người làm việc cho người sử dụng lao động theo thỏa thuận, được trả lương và chịu sự quản lý, điều hành, giám sát của người sử dụng lao động. Độ tuổi lao động tối thiểu của người lao động là đủ 15 tuổi, trừ trường hợp quy định tại Mục 1 Chương XI của Bộ luật này. Người sử dụng lao động là doanh nghiệp, cơ quan, tổ chức, hợp tác xã, hộ gia đình, cá nhân có thuê mướn, sử dụng người lao động làm việc cho mình theo thỏa thuận; trường hợp người sử dụng lao động là cá nhân thì phải có năng lực hành vi dân sự đầy đủ.",
+ "plain": "Ba dấu hiệu người lao động: làm việc THEO THỎA THUẬN, ĐƯỢC TRẢ LƯƠNG, CHỊU SỰ QUẢN LÝ, ĐIỀU HÀNH, GIÁM SÁT. Độ tuổi tối thiểu: đủ 15 tuổi (ngoại lệ lao động chưa thành niên, Mục 1 Chương XI: dưới 15 tuổi làm công việc nhẹ theo danh mục). Người sử dụng lao động có thể là doanh nghiệp, cơ quan, tổ chức, HỢP TÁC XÃ, HỘ GIA ĐÌNH, CÁ NHÂN (cá nhân phải có năng lực hành vi dân sự đầy đủ).",
+ "example": "Gia đình thuê người giúp việc theo thỏa thuận, trả lương hằng tháng: hộ gia đình là người sử dụng lao động, người giúp việc là người lao động.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 3 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-125-VBHN-VPQH-2025-Bo-luat-Lao-dong-so-45-2019-QH14-672381.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quan-he-lao-dong",
+  "hop-dong-lao-dong"
+ ],
+ "keywords": [
+  "theo thỏa thuận",
+  "được trả lương",
+  "quản lý, điều hành, giám sát",
+  "đủ 15 tuổi"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Độ tuổi lao động tối thiểu của người lao động (trừ ngoại lệ) là bao nhiêu?",
+   "options": [
+    "Đủ 15 tuổi",
+    "Đủ 18 tuổi",
+    "Đủ 16 tuổi",
+    "Đủ 13 tuổi"
+   ],
+   "answer": 0,
+   "explain": "Đoạn 2 khoản 1 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 3 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Cá nhân là người sử dụng lao động phải đáp ứng điều kiện gì?",
+   "options": [
+    "Có năng lực hành vi dân sự đầy đủ",
+    "Có đăng ký kinh doanh",
+    "Đủ 21 tuổi",
+    "Có tài sản trên 1 tỷ đồng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 3 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Có thể là người sử dụng lao động",
+   "right": "Không đúng",
+   "cases": [
+    {
+     "text": "Hộ gia đình thuê người giúp việc",
+     "answer": "left"
+    },
+    {
+     "text": "Hợp tác xã",
+     "answer": "left"
+    },
+    {
+     "text": "Cá nhân 14 tuổi thuê người làm",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 2 Điều 3."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người lao động là người làm việc cho người sử dụng lao động theo thỏa thuận, được {{trả lương}} và chịu sự quản lý, điều hành, {{giám sát}} của người sử dụng lao động.",
+   "bank_extra": [
+    "tặng thưởng",
+    "bảo trợ"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Trường hợp người sử dụng lao động là cá nhân thì phải có năng lực hành vi dân sự {{đầy đủ}}.",
+   "bank_extra": [
+    "một phần",
+    "hạn chế"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hộ gia đình không thể là người sử dụng lao động.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 3 liệt kê hộ gia đình."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm người lao động và người sử dụng lao động.",
+   "model": "Người lao động: làm việc cho người sử dụng lao động theo thỏa thuận, được trả lương, chịu quản lý, điều hành, giám sát; độ tuổi tối thiểu đủ 15 (khoản 1). Người sử dụng lao động: doanh nghiệp, cơ quan, tổ chức, hợp tác xã, hộ gia đình, cá nhân thuê mướn, sử dụng lao động theo thỏa thuận; cá nhân phải có năng lực hành vi dân sự đầy đủ (khoản 2 Điều 3).",
+   "keywords": [
+    "thỏa thuận",
+    "trả lương",
+    "giám sát",
+    "đủ 15 tuổi"
+   ]
+  }
+ ]
+}

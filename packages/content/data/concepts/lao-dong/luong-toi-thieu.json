@@ -1,0 +1,115 @@
+{
+ "id": "luong-toi-thieu",
+ "subject": "lao-dong",
+ "chapter": "v6",
+ "term": "Mức lương tối thiểu",
+ "definition": "Mức lương tối thiểu là mức lương thấp nhất được trả cho người lao động làm công việc giản đơn nhất trong điều kiện lao động bình thường nhằm bảo đảm mức sống tối thiểu của người lao động và gia đình họ, phù hợp với điều kiện phát triển kinh tế - xã hội. Mức lương tối thiểu được xác lập theo vùng, ấn định theo tháng, giờ.",
+ "plain": "Lương tối thiểu là \"MỨC SÀN\": công việc GIẢN ĐƠN NHẤT, điều kiện BÌNH THƯỜNG, bảo đảm MỨC SỐNG TỐI THIỂU của người lao động VÀ GIA ĐÌNH. Xác lập THEO VÙNG (4 vùng), ấn định THEO THÁNG, GIỜ. Chính phủ quyết định, công bố trên cơ sở khuyến nghị của HỘI ĐỒNG TIỀN LƯƠNG QUỐC GIA (khoản 4). BLLĐ 2019 bỏ \"lương tối thiểu ngành\". Mức cụ thể do nghị định từng thời kỳ quy định — tra nghị định hiện hành.",
+ "example": "Doanh nghiệp tại Hà Nội (vùng I) trả lương cho nhân viên tạp vụ không được thấp hơn mức lương tối thiểu tháng của vùng I do Chính phủ công bố.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 91 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-125-VBHN-VPQH-2025-Bo-luat-Lao-dong-so-45-2019-QH14-672381.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tien-luong",
+  "thoi-gio-lam-viec"
+ ],
+ "keywords": [
+  "công việc giản đơn nhất",
+  "mức sống tối thiểu",
+  "theo vùng",
+  "theo tháng, giờ"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Mức lương tối thiểu được xác lập theo tiêu chí nào?",
+   "options": [
+    "Theo vùng, ấn định theo tháng, giờ",
+    "Theo ngành",
+    "Theo từng doanh nghiệp",
+    "Theo trình độ học vấn"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 91.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 91 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Cơ quan nào quyết định và công bố mức lương tối thiểu?",
+   "options": [
+    "Chính phủ, trên cơ sở khuyến nghị của Hội đồng tiền lương quốc gia",
+    "Quốc hội",
+    "Tổng Liên đoàn Lao động",
+    "Ủy ban nhân dân cấp tỉnh"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 91.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 91 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Mức lương tối thiểu",
+   "right": "Tiền lương",
+   "cases": [
+    {
+     "text": "Mức thấp nhất cho công việc giản đơn nhất",
+     "answer": "left"
+    },
+    {
+     "text": "Số tiền trả theo thỏa thuận gồm mức lương, phụ cấp, khoản bổ sung",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 90, 91."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Mức lương tối thiểu là mức lương thấp nhất được trả cho người lao động làm công việc {{giản đơn nhất}} trong điều kiện lao động bình thường; được xác lập theo {{vùng}}.",
+   "bank_extra": [
+    "phức tạp nhất",
+    "ngành"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Mức lương tối thiểu nhằm bảo đảm mức sống tối thiểu của người lao động và {{gia đình}} họ.",
+   "bank_extra": [
+    "doanh nghiệp",
+    "đồng nghiệp"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo BLLĐ 2019, mức lương tối thiểu được xác lập theo ngành.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 91: theo vùng, ấn định theo tháng, giờ."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm và cách xác lập mức lương tối thiểu.",
+   "model": "Mức lương thấp nhất cho công việc giản đơn nhất, điều kiện bình thường, bảo đảm mức sống tối thiểu của người lao động và gia đình (khoản 1); xác lập theo vùng, ấn định theo tháng, giờ (khoản 2); Chính phủ quyết định theo khuyến nghị Hội đồng tiền lương quốc gia (khoản 4 Điều 91).",
+   "keywords": [
+    "giản đơn nhất",
+    "mức sống tối thiểu",
+    "vùng",
+    "Hội đồng tiền lương quốc gia"
+   ]
+  }
+ ]
+}

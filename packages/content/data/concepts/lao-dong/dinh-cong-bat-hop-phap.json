@@ -1,0 +1,115 @@
+{
+ "id": "dinh-cong-bat-hop-phap",
+ "subject": "lao-dong",
+ "chapter": "v9",
+ "term": "Trường hợp đình công bất hợp pháp",
+ "definition": "1. Không thuộc trường hợp được đình công quy định tại Điều 199 của Bộ luật này. 2. Không do tổ chức đại diện người lao động có quyền tổ chức và lãnh đạo đình công. 3. Vi phạm các quy định về trình tự, thủ tục tiến hành đình công theo quy định của Bộ luật này. 4. Khi tranh chấp lao động tập thể đang được cơ quan, tổ chức, cá nhân có thẩm quyền giải quyết theo quy định của Bộ luật này. 5. Tiến hành đình công trong trường hợp không được đình công quy định tại Điều 209 của Bộ luật này. 6. Khi đã có quyết định hoãn hoặc ngừng đình công của cơ quan có thẩm quyền theo quy định tại Điều 210 của Bộ luật này.",
+ "plain": "Sáu trường hợp bất hợp pháp: (1) không thuộc trường hợp được đình công (Điều 199: chỉ tranh chấp tập thể VỀ LỢI ÍCH sau hòa giải, trọng tài không thành…); (2) không do tổ chức đại diện CÓ QUYỀN lãnh đạo; (3) vi phạm TRÌNH TỰ, THỦ TỤC (lấy ý kiến, thông báo trước ít nhất 05 ngày làm việc…); (4) tranh chấp ĐANG ĐƯỢC GIẢI QUYẾT; (5) tại nơi KHÔNG ĐƯỢC ĐÌNH CÔNG (Điều 209: nơi mà đình công có thể đe dọa quốc phòng, an ninh, trật tự công cộng, sức khỏe con người; Chính phủ ban hành danh mục); (6) đã có QUYẾT ĐỊNH HOÃN, NGỪNG.",
+ "example": "Công đoàn tổ chức đình công khi Hội đồng trọng tài lao động đang trong thời hạn giải quyết tranh chấp: đình công bất hợp pháp (khoản 4 Điều 204).",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 204 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-125-VBHN-VPQH-2025-Bo-luat-Lao-dong-so-45-2019-QH14-672381.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "dinh-cong",
+  "tranh-chap-lao-dong"
+ ],
+ "keywords": [
+  "không thuộc trường hợp được đình công",
+  "vi phạm trình tự, thủ tục",
+  "đang được giải quyết",
+  "nơi không được đình công"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đình công khi tranh chấp lao động tập thể đang được cơ quan có thẩm quyền giải quyết thì sao?",
+   "options": [
+    "Là đình công bất hợp pháp",
+    "Là đình công hợp pháp",
+    "Được Tòa án công nhận",
+    "Chỉ bị nhắc nhở"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 204.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 204 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trường hợp nào KHÔNG thuộc Điều 204?",
+   "options": [
+    "Đình công do tổ chức đại diện có quyền lãnh đạo, đúng trình tự, sau khi hòa giải tranh chấp về lợi ích không thành",
+    "Không do tổ chức đại diện có quyền lãnh đạo",
+    "Vi phạm trình tự, thủ tục",
+    "Đã có quyết định ngừng đình công"
+   ],
+   "answer": 0,
+   "explain": "Phương án 1 là trường hợp được đình công (Điều 199).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 199, Điều 204 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Đình công bất hợp pháp",
+   "right": "Không thuộc Điều 204",
+   "cases": [
+    {
+     "text": "Đình công tại đơn vị thuộc danh mục không được đình công",
+     "answer": "left"
+    },
+    {
+     "text": "Đình công đúng trình tự sau khi hòa giải về lợi ích không thành",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 199, 204, 209."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đình công bất hợp pháp khi không do tổ chức đại diện người lao động có quyền {{tổ chức và lãnh đạo}} đình công, hoặc vi phạm quy định về {{trình tự, thủ tục}}.",
+   "bank_extra": [
+    "tài trợ",
+    "địa điểm"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Khi đã có quyết định {{hoãn hoặc ngừng}} đình công của cơ quan có thẩm quyền mà vẫn đình công thì đình công bất hợp pháp.",
+   "bank_extra": [
+    "khen thưởng",
+    "ủng hộ"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Đình công để giải quyết tranh chấp lao động tập thể về quyền là trường hợp được đình công theo Điều 199.",
+   "answer": false,
+   "explain": "Sai. Điều 199 chỉ cho tổ chức đại diện người lao động là bên tranh chấp tập thể về lợi ích tiến hành đình công; không thuộc Điều 199 thì bất hợp pháp (khoản 1 Điều 204)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các trường hợp đình công bất hợp pháp.",
+   "model": "Không thuộc trường hợp được đình công (Điều 199); không do tổ chức đại diện có quyền lãnh đạo; vi phạm trình tự, thủ tục; khi tranh chấp đang được giải quyết; tại nơi không được đình công (Điều 209); khi đã có quyết định hoãn, ngừng đình công (Điều 210) (Điều 204).",
+   "keywords": [
+    "Điều 199",
+    "tổ chức đại diện",
+    "trình tự, thủ tục",
+    "hoãn hoặc ngừng"
+   ]
+  }
+ ]
+}

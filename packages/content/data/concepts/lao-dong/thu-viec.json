@@ -1,0 +1,115 @@
+{
+ "id": "thu-viec",
+ "subject": "lao-dong",
+ "chapter": "v3",
+ "term": "Thời gian thử việc",
+ "definition": "Thời gian thử việc do hai bên thỏa thuận căn cứ vào tính chất và mức độ phức tạp của công việc nhưng chỉ được thử việc một lần đối với một công việc và bảo đảm điều kiện sau đây: 1. Không quá 180 ngày đối với công việc của người quản lý doanh nghiệp theo quy định của Luật Doanh nghiệp, Luật Quản lý, sử dụng vốn nhà nước đầu tư vào sản xuất, kinh doanh tại doanh nghiệp; 2. Không quá 60 ngày đối với công việc có chức danh nghề nghiệp cần trình độ chuyên môn, kỹ thuật từ cao đẳng trở lên; 3. Không quá 30 ngày đối với công việc có chức danh nghề nghiệp cần trình độ chuyên môn, kỹ thuật trung cấp, công nhân kỹ thuật, nhân viên nghiệp vụ; 4. Không quá 06 ngày làm việc đối với công việc khác.",
+ "plain": "Chỉ thử việc MỘT LẦN cho một công việc. Mốc: 180 ngày (người quản lý doanh nghiệp), 60 ngày (cao đẳng trở lên), 30 ngày (trung cấp, công nhân kỹ thuật, nhân viên nghiệp vụ), 06 ngày làm việc (công việc khác). Tiền lương thử việc ít nhất 85% mức lương của công việc đó (Điều 26). Không áp dụng thử việc với hợp đồng dưới 01 tháng (khoản 3 Điều 24). Trong thời gian thử việc, mỗi bên có quyền hủy bỏ hợp đồng thử việc hoặc hợp đồng lao động đã giao kết mà không cần báo trước, không phải bồi thường (khoản 2 Điều 27).",
+ "example": "Công ty tuyển kỹ sư (tốt nghiệp đại học) với thời gian thử việc 90 ngày: vi phạm vì tối đa 60 ngày.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 25 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-125-VBHN-VPQH-2025-Bo-luat-Lao-dong-so-45-2019-QH14-672381.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hop-dong-lao-dong",
+  "loai-hop-dong-lao-dong"
+ ],
+ "keywords": [
+  "chỉ thử việc một lần",
+  "180 ngày quản lý",
+  "60 ngày cao đẳng trở lên",
+  "06 ngày làm việc"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thời gian thử việc tối đa đối với công việc cần trình độ cao đẳng trở lên là bao lâu?",
+   "options": [
+    "60 ngày",
+    "30 ngày",
+    "90 ngày",
+    "180 ngày"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 25.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 25 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Một công việc được thử việc tối đa mấy lần?",
+   "options": [
+    "Một lần",
+    "Hai lần",
+    "Ba lần",
+    "Không giới hạn"
+   ],
+   "answer": 0,
+   "explain": "Điều 25.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 25 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tối đa 180 ngày",
+   "right": "Tối đa 30 ngày",
+   "cases": [
+    {
+     "text": "Công việc của người quản lý doanh nghiệp",
+     "answer": "left"
+    },
+    {
+     "text": "Công việc của công nhân kỹ thuật",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 25."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thời gian thử việc chỉ được thử việc {{một lần}} đối với một công việc; không quá {{180}} ngày đối với công việc của người quản lý doanh nghiệp.",
+   "bank_extra": [
+    "hai lần",
+    "90"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Không quá 06 {{ngày làm việc}} đối với công việc khác.",
+   "bank_extra": [
+    "tháng",
+    "tuần"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người sử dụng lao động có thể cho người lao động thử việc hai lần với cùng một công việc nếu lần đầu chưa đạt.",
+   "answer": false,
+   "explain": "Sai. Điều 25: chỉ được thử việc một lần đối với một công việc."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quy định về thời gian thử việc.",
+   "model": "Do hai bên thỏa thuận, chỉ thử việc một lần cho một công việc; không quá 180 ngày (người quản lý doanh nghiệp), 60 ngày (cao đẳng trở lên), 30 ngày (trung cấp, công nhân kỹ thuật, nhân viên nghiệp vụ), 06 ngày làm việc (công việc khác) (Điều 25).",
+   "keywords": [
+    "một lần",
+    "180 ngày",
+    "60 ngày",
+    "06 ngày làm việc"
+   ]
+  }
+ ]
+}

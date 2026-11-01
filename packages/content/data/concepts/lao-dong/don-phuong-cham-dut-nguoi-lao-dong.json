@@ -1,0 +1,120 @@
+{
+ "id": "don-phuong-cham-dut-nguoi-lao-dong",
+ "subject": "lao-dong",
+ "chapter": "v3",
+ "term": "Quyền đơn phương chấm dứt hợp đồng của người lao động",
+ "definition": "Người lao động có quyền đơn phương chấm dứt hợp đồng lao động nhưng phải báo trước cho người sử dụng lao động như sau: a) Ít nhất 45 ngày nếu làm việc theo hợp đồng lao động không xác định thời hạn; b) Ít nhất 30 ngày nếu làm việc theo hợp đồng lao động xác định thời hạn có thời hạn từ 12 tháng đến 36 tháng; c) Ít nhất 03 ngày làm việc nếu làm việc theo hợp đồng lao động xác định thời hạn có thời hạn dưới 12 tháng;",
+ "plain": "Điểm mới lớn của BLLĐ 2019: người lao động ĐƠN PHƯƠNG CHẤM DỨT KHÔNG CẦN LÝ DO, chỉ cần BÁO TRƯỚC: 45 ngày (không xác định thời hạn), 30 ngày (12–36 tháng), 03 ngày làm việc (dưới 12 tháng). KHÔNG CẦN BÁO TRƯỚC (khoản 2) khi: không được bố trí đúng công việc, địa điểm; không được trả đủ lương, đúng hạn; bị ngược đãi, cưỡng bức lao động; bị quấy rối tình dục; lao động nữ mang thai phải nghỉ; đủ tuổi nghỉ hưu; người sử dụng lao động cung cấp thông tin không trung thực.",
+ "example": "Chị A làm theo hợp đồng không xác định thời hạn, muốn nghỉ để chuyển công ty khác: chị không cần nêu lý do, nhưng phải báo trước ít nhất 45 ngày. Nếu công ty nợ lương 2 tháng thì chị được nghỉ ngay, không cần báo trước.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 35 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-125-VBHN-VPQH-2025-Bo-luat-Lao-dong-so-45-2019-QH14-672381.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "don-phuong-cham-dut-nguoi-su-dung",
+  "loai-hop-dong-lao-dong",
+  "tro-cap-thoi-viec"
+ ],
+ "keywords": [
+  "không cần lý do",
+  "báo trước 45 ngày",
+  "30 ngày",
+  "03 ngày làm việc"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người lao động làm hợp đồng không xác định thời hạn muốn đơn phương chấm dứt thì phải báo trước ít nhất bao lâu?",
+   "options": [
+    "45 ngày",
+    "30 ngày",
+    "60 ngày",
+    "03 ngày làm việc"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 35.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 35 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trường hợp nào người lao động được đơn phương chấm dứt hợp đồng KHÔNG cần báo trước?",
+   "options": [
+    "Bị quấy rối tình dục tại nơi làm việc",
+    "Muốn chuyển sang công ty khác lương cao hơn",
+    "Muốn đi du lịch dài ngày",
+    "Muốn học thạc sĩ"
+   ],
+   "answer": 0,
+   "explain": "Điểm d khoản 2 Điều 35.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 35 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Phải báo trước",
+   "right": "Không cần báo trước",
+   "cases": [
+    {
+     "text": "Nghỉ để chuyển việc khác",
+     "answer": "left"
+    },
+    {
+     "text": "Không được trả đủ lương đúng hạn",
+     "answer": "right"
+    },
+    {
+     "text": "Bị cưỡng bức lao động",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 35."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người lao động có quyền đơn phương chấm dứt hợp đồng lao động nhưng phải báo trước ít nhất {{45}} ngày nếu làm việc theo hợp đồng không xác định thời hạn; ít nhất {{03}} ngày làm việc nếu hợp đồng xác định thời hạn dưới 12 tháng.",
+   "bank_extra": [
+    "60",
+    "07"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ít nhất {{30}} ngày nếu làm việc theo hợp đồng lao động xác định thời hạn có thời hạn từ 12 tháng đến 36 tháng.",
+   "bank_extra": [
+    "15",
+    "45"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo BLLĐ 2019, người lao động phải có lý do chính đáng mới được đơn phương chấm dứt hợp đồng lao động.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 35 chỉ yêu cầu báo trước, không đòi hỏi lý do."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quyền đơn phương chấm dứt hợp đồng lao động của người lao động.",
+   "model": "Có quyền đơn phương chấm dứt, chỉ cần báo trước 45 ngày (không xác định thời hạn), 30 ngày (12–36 tháng), 03 ngày làm việc (dưới 12 tháng) (khoản 1 Điều 35); không cần báo trước khi không được bố trí đúng việc, không được trả đủ lương, bị ngược đãi, quấy rối tình dục… (khoản 2).",
+   "keywords": [
+    "báo trước",
+    "45 ngày",
+    "không cần báo trước",
+    "quấy rối tình dục"
+   ]
+  }
+ ]
+}

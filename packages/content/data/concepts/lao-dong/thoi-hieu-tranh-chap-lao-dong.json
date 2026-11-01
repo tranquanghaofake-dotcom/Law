@@ -1,0 +1,115 @@
+{
+ "id": "thoi-hieu-tranh-chap-lao-dong",
+ "subject": "lao-dong",
+ "chapter": "v8",
+ "term": "Thời hiệu yêu cầu giải quyết tranh chấp lao động cá nhân",
+ "definition": "Thời hiệu yêu cầu hòa giải viên lao động thực hiện hòa giải tranh chấp lao động cá nhân là 06 tháng kể từ ngày phát hiện ra hành vi mà bên tranh chấp cho rằng quyền và lợi ích hợp pháp của mình bị vi phạm. Thời hiệu yêu cầu Hội đồng trọng tài lao động giải quyết tranh chấp lao động cá nhân là 09 tháng kể từ ngày phát hiện ra hành vi mà bên tranh chấp cho rằng quyền và lợi ích hợp pháp của mình bị vi phạm. Thời hiệu yêu cầu Tòa án giải quyết tranh chấp lao động cá nhân là 01 năm kể từ ngày phát hiện ra hành vi mà bên tranh chấp cho rằng quyền và lợi ích hợp pháp của mình bị vi phạm.",
+ "plain": "Ba mốc theo cơ quan: HÒA GIẢI VIÊN 06 THÁNG; HỘI ĐỒNG TRỌNG TÀI 09 THÁNG; TÒA ÁN 01 NĂM — đều tính TỪ NGÀY PHÁT HIỆN hành vi vi phạm. Thời gian có sự kiện BẤT KHẢ KHÁNG, TRỞ NGẠI KHÁCH QUAN không tính vào thời hiệu (khoản 4). Lưu ý: một số tranh chấp được khởi kiện thẳng ra Tòa không qua hòa giải (như bị sa thải, đơn phương chấm dứt hợp đồng, bồi thường… khoản 1 Điều 188).",
+ "example": "Anh B bị sa thải ngày 01/3/2026, cho rằng trái luật: anh có thể khởi kiện thẳng ra Tòa án (không bắt buộc hòa giải), trong thời hiệu 01 năm từ ngày phát hiện vi phạm.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1–3 Điều 190 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-125-VBHN-VPQH-2025-Bo-luat-Lao-dong-so-45-2019-QH14-672381.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tranh-chap-lao-dong",
+  "sa-thai"
+ ],
+ "keywords": [
+  "06 tháng hòa giải viên",
+  "09 tháng trọng tài",
+  "01 năm Tòa án",
+  "từ ngày phát hiện hành vi vi phạm"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thời hiệu yêu cầu Tòa án giải quyết tranh chấp lao động cá nhân là bao lâu?",
+   "options": [
+    "01 năm",
+    "06 tháng",
+    "09 tháng",
+    "03 năm"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 190.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 190 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thời hiệu yêu cầu Hội đồng trọng tài lao động giải quyết tranh chấp lao động cá nhân là bao lâu?",
+   "options": [
+    "09 tháng",
+    "06 tháng",
+    "01 năm",
+    "02 năm"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 190.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 190 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "06 tháng",
+   "right": "01 năm",
+   "cases": [
+    {
+     "text": "Yêu cầu hòa giải viên lao động hòa giải",
+     "answer": "left"
+    },
+    {
+     "text": "Yêu cầu Tòa án giải quyết",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 190."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thời hiệu yêu cầu hòa giải viên lao động là {{06}} tháng; yêu cầu Hội đồng trọng tài lao động là {{09}} tháng kể từ ngày phát hiện ra hành vi vi phạm.",
+   "bank_extra": [
+    "03",
+    "12"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thời hiệu yêu cầu Tòa án giải quyết tranh chấp lao động cá nhân là {{01 năm}} kể từ ngày phát hiện ra hành vi vi phạm.",
+   "bank_extra": [
+    "02 năm",
+    "06 tháng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thời hiệu yêu cầu giải quyết tranh chấp lao động cá nhân tính từ ngày ký hợp đồng lao động.",
+   "answer": false,
+   "explain": "Sai. Tính từ ngày phát hiện ra hành vi mà bên tranh chấp cho rằng quyền, lợi ích bị vi phạm (Điều 190)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày thời hiệu yêu cầu giải quyết tranh chấp lao động cá nhân.",
+   "model": "Hòa giải viên lao động 06 tháng; Hội đồng trọng tài lao động 09 tháng; Tòa án 01 năm, kể từ ngày phát hiện hành vi vi phạm (khoản 1–3 Điều 190); thời gian bất khả kháng, trở ngại khách quan không tính (khoản 4).",
+   "keywords": [
+    "06 tháng",
+    "09 tháng",
+    "01 năm",
+    "phát hiện"
+   ]
+  }
+ ]
+}

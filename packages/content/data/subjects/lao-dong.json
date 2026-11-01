@@ -1,0 +1,140 @@
+{
+  "id": "lao-dong",
+  "title": "Luật Lao động",
+  "short": "Lao động",
+  "chapters": [
+    {
+      "id": "v1",
+      "title": "Vấn đề 1. Khái niệm luật lao động Việt Nam",
+      "lessons": [
+        {
+          "id": "ld1",
+          "title": "Khái niệm luật lao động Việt Nam",
+          "concepts": [
+            "pham-vi-dieu-chinh-luat-lao-dong",
+            "chinh-sach-nha-nuoc-ve-lao-dong"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v2",
+      "title": "Vấn đề 2. Quan hệ pháp luật lao động",
+      "lessons": [
+        {
+          "id": "ld2",
+          "title": "Quan hệ pháp luật lao động",
+          "concepts": [
+            "quan-he-lao-dong",
+            "nguoi-lao-dong"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v3",
+      "title": "Vấn đề 3. Hợp đồng lao động",
+      "lessons": [
+        {
+          "id": "ld3",
+          "title": "Hợp đồng lao động",
+          "concepts": [
+            "hop-dong-lao-dong",
+            "loai-hop-dong-lao-dong",
+            "thu-viec",
+            "don-phuong-cham-dut-nguoi-lao-dong",
+            "don-phuong-cham-dut-nguoi-su-dung",
+            "tro-cap-thoi-viec"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v4",
+      "title": "Vấn đề 4. Đại diện các bên trong quan hệ lao động",
+      "lessons": [
+        {
+          "id": "ld4",
+          "title": "Đại diện các bên trong quan hệ lao động",
+          "concepts": [
+            "to-chuc-dai-dien-nguoi-lao-dong"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v5",
+      "title": "Vấn đề 5. Đối thoại xã hội, thương lượng tập thể và thỏa ước lao động tập thể",
+      "lessons": [
+        {
+          "id": "ld5",
+          "title": "Đối thoại xã hội, thương lượng tập thể và thỏa ước lao động tập thể",
+          "concepts": [
+            "doi-thoai-tai-noi-lam-viec",
+            "thuong-luong-tap-the",
+            "thoa-uoc-lao-dong-tap-the"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v6",
+      "title": "Vấn đề 6. Điều kiện lao động và điều kiện sử dụng lao động",
+      "lessons": [
+        {
+          "id": "ld6",
+          "title": "Điều kiện lao động và điều kiện sử dụng lao động",
+          "concepts": [
+            "tien-luong",
+            "luong-toi-thieu",
+            "thoi-gio-lam-viec",
+            "nghi-hang-nam"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v7",
+      "title": "Vấn đề 7. Kỷ luật lao động, trách nhiệm vật chất",
+      "lessons": [
+        {
+          "id": "ld7",
+          "title": "Kỷ luật lao động, trách nhiệm vật chất",
+          "concepts": [
+            "ky-luat-lao-dong",
+            "sa-thai",
+            "boi-thuong-thiet-hai-lao-dong"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v8",
+      "title": "Vấn đề 8. Tranh chấp lao động và giải quyết tranh chấp lao động",
+      "lessons": [
+        {
+          "id": "ld8",
+          "title": "Tranh chấp lao động và giải quyết tranh chấp lao động",
+          "concepts": [
+            "tranh-chap-lao-dong",
+            "thoi-hieu-tranh-chap-lao-dong"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v9",
+      "title": "Vấn đề 9. Đình công và giải quyết đình công",
+      "lessons": [
+        {
+          "id": "ld9",
+          "title": "Đình công và giải quyết đình công",
+          "concepts": [
+            "dinh-cong",
+            "dinh-cong-bat-hop-phap"
+          ]
+        }
+      ]
+    }
+  ]
+}

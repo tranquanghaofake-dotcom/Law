@@ -1,0 +1,116 @@
+{
+ "id": "tien-luong",
+ "subject": "lao-dong",
+ "chapter": "v6",
+ "term": "Tiền lương",
+ "definition": "Tiền lương là số tiền mà người sử dụng lao động trả cho người lao động theo thỏa thuận để thực hiện công việc, bao gồm mức lương theo công việc hoặc chức danh, phụ cấp lương và các khoản bổ sung khác. Mức lương theo công việc hoặc chức danh không được thấp hơn mức lương tối thiểu. Người sử dụng lao động phải bảo đảm trả lương bình đẳng, không phân biệt giới tính đối với người lao động làm công việc có giá trị như nhau.",
+ "plain": "Ba bộ phận: MỨC LƯƠNG theo công việc hoặc chức danh, PHỤ CẤP LƯƠNG, CÁC KHOẢN BỔ SUNG KHÁC. Nguyên tắc: theo THỎA THUẬN; mức lương không thấp hơn LƯƠNG TỐI THIỂU; TRẢ LƯƠNG BÌNH ĐẲNG nam nữ cho công việc có giá trị như nhau (Công ước ILO số 100). Làm thêm giờ ngày thường ít nhất 150%, ngày nghỉ hằng tuần 200%, ngày lễ, Tết 300% (Điều 98).",
+ "example": "Lương cơ bản 10 triệu, phụ cấp trách nhiệm 1 triệu, phụ cấp xăng xe 500 nghìn theo thỏa thuận: các khoản này đều thuộc tiền lương theo Điều 90 (trừ các khoản luật loại trừ).",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 90 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-125-VBHN-VPQH-2025-Bo-luat-Lao-dong-so-45-2019-QH14-672381.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "luong-toi-thieu",
+  "thoi-gio-lam-viec",
+  "tro-cap-thoi-viec"
+ ],
+ "keywords": [
+  "theo thỏa thuận",
+  "mức lương, phụ cấp, khoản bổ sung",
+  "không thấp hơn lương tối thiểu",
+  "bình đẳng giới"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tiền lương theo Điều 90 bao gồm những bộ phận nào?",
+   "options": [
+    "Mức lương theo công việc hoặc chức danh, phụ cấp lương và các khoản bổ sung khác",
+    "Chỉ mức lương cơ bản",
+    "Lương và tiền thưởng cuối năm",
+    "Lương và bảo hiểm xã hội"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 90.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 90 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Mức lương theo công việc hoặc chức danh có được thấp hơn mức lương tối thiểu không?",
+   "options": [
+    "Không",
+    "Có nếu người lao động đồng ý",
+    "Có trong thời gian thử việc",
+    "Có với doanh nghiệp nhỏ"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 90.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 90 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thuộc tiền lương (Điều 90)",
+   "right": "Nguyên tắc trả lương",
+   "cases": [
+    {
+     "text": "Phụ cấp lương",
+     "answer": "left"
+    },
+    {
+     "text": "Trả lương bình đẳng, không phân biệt giới tính",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 90."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tiền lương là số tiền người sử dụng lao động trả cho người lao động theo {{thỏa thuận}} để thực hiện công việc; mức lương theo công việc hoặc chức danh không được thấp hơn mức lương {{tối thiểu}}.",
+   "bank_extra": [
+    "quyết định",
+    "trung bình"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người sử dụng lao động phải bảo đảm trả lương bình đẳng, không phân biệt {{giới tính}} đối với người lao động làm công việc có giá trị như nhau.",
+   "bank_extra": [
+    "tuổi tác",
+    "quê quán"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người sử dụng lao động được trả lương cho lao động nữ thấp hơn lao động nam làm cùng công việc có giá trị như nhau.",
+   "answer": false,
+   "explain": "Sai. Khoản 3 Điều 90."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm và nguyên tắc trả lương.",
+   "model": "Tiền lương là số tiền trả theo thỏa thuận để thực hiện công việc, gồm mức lương theo công việc hoặc chức danh, phụ cấp lương, khoản bổ sung khác; mức lương không thấp hơn lương tối thiểu; trả lương bình đẳng không phân biệt giới tính (Điều 90).",
+   "keywords": [
+    "thỏa thuận",
+    "phụ cấp",
+    "tối thiểu",
+    "bình đẳng"
+   ]
+  }
+ ]
+}

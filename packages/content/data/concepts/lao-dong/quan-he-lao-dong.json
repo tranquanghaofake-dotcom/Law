@@ -1,0 +1,114 @@
+{
+ "id": "quan-he-lao-dong",
+ "subject": "lao-dong",
+ "chapter": "v2",
+ "term": "Quan hệ lao động",
+ "definition": "Quan hệ lao động là quan hệ xã hội phát sinh trong việc thuê mướn, sử dụng lao động, trả lương giữa người lao động, người sử dụng lao động, các tổ chức đại diện của các bên, cơ quan nhà nước có thẩm quyền. Quan hệ lao động bao gồm quan hệ lao động cá nhân và quan hệ lao động tập thể.",
+ "plain": "Hai loại: CÁ NHÂN (giữa một người lao động và người sử dụng lao động, căn cứ hợp đồng lao động) và TẬP THỂ (giữa tổ chức đại diện người lao động với người sử dụng lao động hoặc tổ chức đại diện của họ: đối thoại, thương lượng, thỏa ước, đình công). Đặc điểm quan trọng nhất của quan hệ pháp luật lao động cá nhân: SỰ PHỤ THUỘC PHÁP LÝ (quản lý, điều hành, giám sát) — phân biệt với hợp đồng dịch vụ dân sự.",
+ "example": "Nhân viên ký hợp đồng lao động với công ty: quan hệ lao động cá nhân. Công đoàn cơ sở thương lượng với công ty về tăng lương chung: quan hệ lao động tập thể.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 5 Điều 3 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-125-VBHN-VPQH-2025-Bo-luat-Lao-dong-so-45-2019-QH14-672381.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nguoi-lao-dong",
+  "hop-dong-lao-dong"
+ ],
+ "keywords": [
+  "thuê mướn, sử dụng lao động, trả lương",
+  "cá nhân và tập thể",
+  "sự phụ thuộc pháp lý"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quan hệ lao động gồm những loại nào theo khoản 5 Điều 3?",
+   "options": [
+    "Quan hệ lao động cá nhân và quan hệ lao động tập thể",
+    "Quan hệ công vụ và quan hệ dân sự",
+    "Quan hệ hợp đồng và quan hệ hành chính",
+    "Chỉ quan hệ lao động cá nhân"
+   ],
+   "answer": 0,
+   "explain": "Khoản 5 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 5 Điều 3 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quan hệ lao động phát sinh trong việc gì?",
+   "options": [
+    "Thuê mướn, sử dụng lao động, trả lương",
+    "Mua bán hàng hóa",
+    "Thu thuế",
+    "Xét xử vụ án"
+   ],
+   "answer": 0,
+   "explain": "Khoản 5 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 5 Điều 3 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quan hệ lao động cá nhân",
+   "right": "Quan hệ lao động tập thể",
+   "cases": [
+    {
+     "text": "Một nhân viên ký hợp đồng với công ty",
+     "answer": "left"
+    },
+    {
+     "text": "Công đoàn cơ sở ký thỏa ước với công ty",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 5 Điều 3."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quan hệ lao động là quan hệ xã hội phát sinh trong việc thuê mướn, sử dụng lao động, {{trả lương}}; bao gồm quan hệ lao động cá nhân và quan hệ lao động {{tập thể}}.",
+   "bank_extra": [
+    "thu thuế",
+    "hành chính"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người làm việc không có quan hệ lao động là người làm việc không trên cơ sở thuê mướn bằng {{hợp đồng lao động}}.",
+   "bank_extra": [
+    "hợp đồng mua bán",
+    "quyết định hành chính"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Cơ quan nhà nước có thẩm quyền không thể là chủ thể tham gia quan hệ lao động theo khoản 5 Điều 3.",
+   "answer": false,
+   "explain": "Sai. Khoản 5 Điều 3 nêu cả cơ quan nhà nước có thẩm quyền."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm quan hệ lao động và phân loại.",
+   "model": "Quan hệ xã hội phát sinh trong việc thuê mướn, sử dụng lao động, trả lương giữa người lao động, người sử dụng lao động, tổ chức đại diện các bên, cơ quan nhà nước có thẩm quyền; gồm quan hệ lao động cá nhân và tập thể (khoản 5 Điều 3); đặc trưng là sự phụ thuộc pháp lý.",
+   "keywords": [
+    "thuê mướn",
+    "trả lương",
+    "cá nhân",
+    "tập thể"
+   ]
+  }
+ ]
+}

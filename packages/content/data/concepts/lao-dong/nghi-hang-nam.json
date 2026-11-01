@@ -1,0 +1,115 @@
+{
+ "id": "nghi-hang-nam",
+ "subject": "lao-dong",
+ "chapter": "v6",
+ "term": "Nghỉ hằng năm",
+ "definition": "Người lao động làm việc đủ 12 tháng cho một người sử dụng lao động thì được nghỉ hằng năm, hưởng nguyên lương theo hợp đồng lao động như sau: a) 12 ngày làm việc đối với người làm công việc trong điều kiện bình thường; b) 14 ngày làm việc đối với người lao động chưa thành niên, lao động là người khuyết tật, người làm nghề, công việc nặng nhọc, độc hại, nguy hiểm; c) 16 ngày làm việc đối với người làm nghề, công việc đặc biệt nặng nhọc, độc hại, nguy hiểm.",
+ "plain": "Mức nghỉ: 12 – 14 – 16 ngày làm việc, HƯỞNG NGUYÊN LƯƠNG. Cứ đủ 05 NĂM làm việc thì tăng thêm 01 ngày (Điều 114). Chưa đủ 12 tháng: theo tỷ lệ số tháng làm việc. Thôi việc, mất việc mà chưa nghỉ hết: được THANH TOÁN TIỀN LƯƠNG những ngày chưa nghỉ (khoản 3). Có thể thỏa thuận nghỉ nhiều lần hoặc GỘP TỐI ĐA 03 NĂM một lần (khoản 4).",
+ "example": "Anh A làm văn phòng 3 năm, nghỉ việc khi còn 5 ngày phép năm chưa nghỉ: công ty phải trả tiền lương cho 5 ngày đó.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 113 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-125-VBHN-VPQH-2025-Bo-luat-Lao-dong-so-45-2019-QH14-672381.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "thoi-gio-lam-viec",
+  "tien-luong"
+ ],
+ "keywords": [
+  "12, 14, 16 ngày làm việc",
+  "hưởng nguyên lương",
+  "thanh toán ngày chưa nghỉ",
+  "gộp tối đa 03 năm"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người làm công việc trong điều kiện bình thường, đủ 12 tháng, được nghỉ hằng năm bao nhiêu ngày?",
+   "options": [
+    "12 ngày làm việc",
+    "14 ngày làm việc",
+    "10 ngày làm việc",
+    "16 ngày làm việc"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 113.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 113 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người lao động chưa thành niên được nghỉ hằng năm bao nhiêu ngày (đủ 12 tháng)?",
+   "options": [
+    "14 ngày làm việc",
+    "12 ngày làm việc",
+    "16 ngày làm việc",
+    "18 ngày làm việc"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 1 Điều 113.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 113 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "14 ngày làm việc",
+   "right": "16 ngày làm việc",
+   "cases": [
+    {
+     "text": "Lao động là người khuyết tật",
+     "answer": "left"
+    },
+    {
+     "text": "Nghề đặc biệt nặng nhọc, độc hại, nguy hiểm",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 113."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người lao động làm việc đủ {{12}} tháng cho một người sử dụng lao động thì được nghỉ hằng năm, hưởng {{nguyên lương}} theo hợp đồng lao động.",
+   "bank_extra": [
+    "06",
+    "một nửa lương"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người làm nghề, công việc đặc biệt nặng nhọc, độc hại, nguy hiểm được nghỉ hằng năm {{16}} ngày làm việc.",
+   "bank_extra": [
+    "14",
+    "20"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người lao động thôi việc mà chưa nghỉ hết ngày nghỉ hằng năm thì mất quyền đối với những ngày đó.",
+   "answer": false,
+   "explain": "Sai. Khoản 3 Điều 113: được thanh toán tiền lương cho những ngày chưa nghỉ."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày chế độ nghỉ hằng năm.",
+   "model": "Đủ 12 tháng được nghỉ hưởng nguyên lương 12 ngày (bình thường), 14 ngày (chưa thành niên, khuyết tật, nặng nhọc, độc hại), 16 ngày (đặc biệt nặng nhọc) (khoản 1 Điều 113); chưa đủ 12 tháng tính theo tỷ lệ; thôi việc chưa nghỉ được thanh toán; có thể gộp tối đa 03 năm.",
+   "keywords": [
+    "12 ngày",
+    "nguyên lương",
+    "thanh toán",
+    "03 năm"
+   ]
+  }
+ ]
+}

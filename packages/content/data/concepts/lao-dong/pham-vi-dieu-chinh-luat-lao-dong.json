@@ -1,0 +1,119 @@
+{
+ "id": "pham-vi-dieu-chinh-luat-lao-dong",
+ "subject": "lao-dong",
+ "chapter": "v1",
+ "term": "Phạm vi điều chỉnh của Bộ luật Lao động",
+ "definition": "Bộ luật Lao động quy định tiêu chuẩn lao động; quyền, nghĩa vụ, trách nhiệm của người lao động, người sử dụng lao động, tổ chức đại diện người lao động tại cơ sở, tổ chức đại diện người sử dụng lao động trong quan hệ lao động và các quan hệ khác liên quan trực tiếp đến quan hệ lao động; quản lý nhà nước về lao động.",
+ "plain": "Luật lao động điều chỉnh hai nhóm: (1) QUAN HỆ LAO ĐỘNG (cá nhân và tập thể) — nhóm chính; (2) CÁC QUAN HỆ LIÊN QUAN TRỰC TIẾP đến quan hệ lao động (việc làm, học nghề, bồi thường, bảo hiểm xã hội, tranh chấp, quản lý nhà nước…). Phương pháp điều chỉnh: THỎA THUẬN (là chủ yếu), MỆNH LỆNH, và sự tham gia của CÔNG ĐOÀN, tổ chức đại diện. Không điều chỉnh quan hệ của cán bộ, công chức (luật riêng).",
+ "example": "Hợp đồng giữa công ty và nhân viên kế toán thuộc phạm vi Bộ luật Lao động; quan hệ công tác của một công chức ủy ban nhân dân thì chủ yếu do Luật Cán bộ, công chức điều chỉnh.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 1 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-125-VBHN-VPQH-2025-Bo-luat-Lao-dong-so-45-2019-QH14-672381.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quan-he-lao-dong",
+  "chinh-sach-nha-nuoc-ve-lao-dong"
+ ],
+ "keywords": [
+  "tiêu chuẩn lao động",
+  "quan hệ lao động",
+  "quan hệ liên quan trực tiếp",
+  "quản lý nhà nước về lao động"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Bộ luật Lao động quy định những nội dung nào theo Điều 1?",
+   "options": [
+    "Tiêu chuẩn lao động; quyền, nghĩa vụ các chủ thể trong quan hệ lao động và quan hệ liên quan trực tiếp; quản lý nhà nước về lao động",
+    "Chế độ công vụ của công chức",
+    "Thủ tục giải quyết vụ án dân sự",
+    "Hợp đồng dịch vụ dân sự"
+   ],
+   "answer": 0,
+   "explain": "Điều 1.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 1 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chủ thể nào được nêu trong phạm vi điều chỉnh của Bộ luật Lao động?",
+   "options": [
+    "Tổ chức đại diện người lao động tại cơ sở",
+    "Viện kiểm sát nhân dân",
+    "Hội đồng nhân dân",
+    "Tòa án quân sự"
+   ],
+   "answer": 0,
+   "explain": "Điều 1.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 1 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thuộc phạm vi Bộ luật Lao động",
+   "right": "Không thuộc chủ yếu",
+   "cases": [
+    {
+     "text": "Quan hệ giữa doanh nghiệp và người lao động làm theo hợp đồng lao động",
+     "answer": "left"
+    },
+    {
+     "text": "Quan hệ công vụ của công chức",
+     "answer": "right"
+    },
+    {
+     "text": "Quản lý nhà nước về lao động",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 1, Điều 2."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bộ luật Lao động quy định {{tiêu chuẩn lao động}}; quyền, nghĩa vụ, trách nhiệm của các chủ thể trong quan hệ lao động và các quan hệ khác liên quan trực tiếp; {{quản lý nhà nước}} về lao động.",
+   "bank_extra": [
+    "thủ tục tố tụng",
+    "quản lý hành chính công"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bộ luật Lao động điều chỉnh cả các quan hệ khác liên quan {{trực tiếp}} đến quan hệ lao động.",
+   "bank_extra": [
+    "gián tiếp",
+    "xa"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Bộ luật Lao động chỉ điều chỉnh quan hệ giữa người lao động và người sử dụng lao động.",
+   "answer": false,
+   "explain": "Sai. Còn điều chỉnh quan hệ của tổ chức đại diện các bên, quan hệ liên quan trực tiếp và quản lý nhà nước về lao động (Điều 1)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày phạm vi điều chỉnh của Bộ luật Lao động 2019.",
+   "model": "Quy định tiêu chuẩn lao động; quyền, nghĩa vụ, trách nhiệm của người lao động, người sử dụng lao động, tổ chức đại diện các bên trong quan hệ lao động và các quan hệ liên quan trực tiếp; quản lý nhà nước về lao động (Điều 1).",
+   "keywords": [
+    "tiêu chuẩn lao động",
+    "quan hệ lao động",
+    "liên quan trực tiếp",
+    "quản lý nhà nước"
+   ]
+  }
+ ]
+}

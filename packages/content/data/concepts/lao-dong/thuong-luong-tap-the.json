@@ -1,0 +1,116 @@
+{
+ "id": "thuong-luong-tap-the",
+ "subject": "lao-dong",
+ "chapter": "v5",
+ "term": "Thương lượng tập thể",
+ "definition": "Thương lượng tập thể là việc đàm phán, thỏa thuận giữa một bên là một hoặc nhiều tổ chức đại diện người lao động với một bên là một hoặc nhiều người sử dụng lao động hoặc tổ chức đại diện người sử dụng lao động nhằm xác lập điều kiện lao động, quy định về mối quan hệ giữa các bên và xây dựng quan hệ lao động tiến bộ, hài hòa và ổn định.",
+ "plain": "Chủ thể: bên TỔ CHỨC ĐẠI DIỆN NGƯỜI LAO ĐỘNG (không phải từng người lao động) và bên NGƯỜI SỬ DỤNG LAO ĐỘNG hoặc tổ chức đại diện của họ. Mục đích: XÁC LẬP ĐIỀU KIỆN LAO ĐỘNG, quy định quan hệ giữa các bên, xây dựng quan hệ lao động tiến bộ, hài hòa, ổn định. Kết quả thành công thường là THỎA ƯỚC LAO ĐỘNG TẬP THỂ; thất bại có thể dẫn đến tranh chấp lao động tập thể về lợi ích, đình công.",
+ "example": "Công đoàn cơ sở đàm phán với ban giám đốc về tăng lương 8%, thêm ngày nghỉ, chế độ ăn ca: đây là thương lượng tập thể.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 65 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-125-VBHN-VPQH-2025-Bo-luat-Lao-dong-so-45-2019-QH14-672381.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "doi-thoai-tai-noi-lam-viec",
+  "thoa-uoc-lao-dong-tap-the",
+  "dinh-cong"
+ ],
+ "keywords": [
+  "đàm phán, thỏa thuận",
+  "tổ chức đại diện người lao động",
+  "xác lập điều kiện lao động",
+  "tiến bộ, hài hòa, ổn định"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Bên người lao động trong thương lượng tập thể là ai?",
+   "options": [
+    "Một hoặc nhiều tổ chức đại diện người lao động",
+    "Từng người lao động riêng lẻ",
+    "Cơ quan quản lý lao động",
+    "Hội đồng trọng tài lao động"
+   ],
+   "answer": 0,
+   "explain": "Điều 65.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 65 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Mục đích của thương lượng tập thể là gì?",
+   "options": [
+    "Xác lập điều kiện lao động, quy định quan hệ giữa các bên, xây dựng quan hệ lao động tiến bộ, hài hòa, ổn định",
+    "Xử lý kỷ luật lao động",
+    "Giải quyết tranh chấp cá nhân",
+    "Thành lập công đoàn"
+   ],
+   "answer": 0,
+   "explain": "Điều 65.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 65 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thương lượng tập thể",
+   "right": "Hợp đồng lao động cá nhân",
+   "cases": [
+    {
+     "text": "Công đoàn đàm phán với công ty về điều kiện chung",
+     "answer": "left"
+    },
+    {
+     "text": "Một nhân viên thỏa thuận mức lương riêng",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 13, 65."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thương lượng tập thể là việc {{đàm phán}}, thỏa thuận giữa tổ chức đại diện người lao động với người sử dụng lao động nhằm xác lập {{điều kiện lao động}}.",
+   "bank_extra": [
+    "xử lý",
+    "kỷ luật lao động"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thương lượng tập thể nhằm xây dựng quan hệ lao động tiến bộ, {{hài hòa}} và ổn định.",
+   "bank_extra": [
+    "cạnh tranh",
+    "tạm thời"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Một người lao động đơn lẻ có thể tự mình tiến hành thương lượng tập thể với người sử dụng lao động.",
+   "answer": false,
+   "explain": "Sai. Điều 65: bên người lao động là tổ chức đại diện người lao động."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm thương lượng tập thể.",
+   "model": "Là việc đàm phán, thỏa thuận giữa một hoặc nhiều tổ chức đại diện người lao động với một hoặc nhiều người sử dụng lao động hoặc tổ chức đại diện của họ nhằm xác lập điều kiện lao động, quy định quan hệ giữa các bên, xây dựng quan hệ lao động tiến bộ, hài hòa, ổn định (Điều 65).",
+   "keywords": [
+    "đàm phán",
+    "tổ chức đại diện",
+    "điều kiện lao động",
+    "hài hòa"
+   ]
+  }
+ ]
+}

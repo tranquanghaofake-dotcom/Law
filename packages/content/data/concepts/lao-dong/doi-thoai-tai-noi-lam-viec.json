@@ -1,0 +1,115 @@
+{
+ "id": "doi-thoai-tai-noi-lam-viec",
+ "subject": "lao-dong",
+ "chapter": "v5",
+ "term": "Đối thoại tại nơi làm việc",
+ "definition": "Đối thoại tại nơi làm việc là việc chia sẻ thông tin, tham khảo, thảo luận, trao đổi ý kiến giữa người sử dụng lao động với người lao động hoặc tổ chức đại diện người lao động về những vấn đề liên quan đến quyền, lợi ích và mối quan tâm của các bên tại nơi làm việc nhằm tăng cường sự hiểu biết, hợp tác, cùng nỗ lực hướng tới giải pháp các bên cùng có lợi. Người sử dụng lao động phải tổ chức đối thoại tại nơi làm việc trong trường hợp sau đây: a) Định kỳ ít nhất 01 năm một lần; b) Khi có yêu cầu của một hoặc các bên;",
+ "plain": "Đối thoại là CHIA SẺ THÔNG TIN, THAM KHẢO, THẢO LUẬN — không nhất thiết đi đến thỏa thuận (khác thương lượng tập thể). Bắt buộc tổ chức: ĐỊNH KỲ ÍT NHẤT 01 NĂM/LẦN; khi một hoặc các bên YÊU CẦU; khi có vụ việc như cho thôi việc do thay đổi cơ cấu (Điều 42), sáp nhập (Điều 44), xây dựng thang lương (Điều 93), nội quy (Điều 118)… Chính phủ quy định chi tiết (Nghị định 145/2020/NĐ-CP).",
+ "example": "Công ty chuẩn bị ban hành nội quy lao động mới: công ty phải tổ chức đối thoại, tham khảo ý kiến tổ chức đại diện người lao động.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 63 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-125-VBHN-VPQH-2025-Bo-luat-Lao-dong-so-45-2019-QH14-672381.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "thuong-luong-tap-the",
+  "to-chuc-dai-dien-nguoi-lao-dong"
+ ],
+ "keywords": [
+  "chia sẻ thông tin, tham khảo",
+  "định kỳ ít nhất 01 năm",
+  "khi có yêu cầu",
+  "các bên cùng có lợi"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người sử dụng lao động phải tổ chức đối thoại định kỳ tại nơi làm việc ít nhất bao lâu một lần?",
+   "options": [
+    "01 năm một lần",
+    "03 tháng một lần",
+    "06 tháng một lần",
+    "02 năm một lần"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 2 Điều 63.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 63 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Mục đích của đối thoại tại nơi làm việc là gì?",
+   "options": [
+    "Tăng cường hiểu biết, hợp tác, hướng tới giải pháp các bên cùng có lợi",
+    "Xử lý kỷ luật người lao động",
+    "Giải quyết tranh chấp tại Tòa án",
+    "Quyết định đình công"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 63.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 63 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Đối thoại tại nơi làm việc",
+   "right": "Thương lượng tập thể",
+   "cases": [
+    {
+     "text": "Chia sẻ thông tin, tham khảo, trao đổi ý kiến",
+     "answer": "left"
+    },
+    {
+     "text": "Đàm phán, thỏa thuận nhằm xác lập điều kiện lao động",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 63, 65."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đối thoại tại nơi làm việc là việc chia sẻ thông tin, {{tham khảo}}, thảo luận, trao đổi ý kiến; người sử dụng lao động phải tổ chức định kỳ ít nhất {{01}} năm một lần.",
+   "bank_extra": [
+    "bắt buộc",
+    "02"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đối thoại hướng tới giải pháp các bên cùng có {{lợi}}.",
+   "bank_extra": [
+    "trách nhiệm",
+    "nghĩa vụ"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Đối thoại tại nơi làm việc chỉ được tổ chức khi có tranh chấp lao động.",
+   "answer": false,
+   "explain": "Sai. Phải tổ chức định kỳ, khi có yêu cầu và các trường hợp luật định (khoản 2 Điều 63)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm và các trường hợp phải tổ chức đối thoại tại nơi làm việc.",
+   "model": "Là việc chia sẻ thông tin, tham khảo, thảo luận, trao đổi ý kiến giữa người sử dụng lao động với người lao động hoặc tổ chức đại diện về quyền, lợi ích, mối quan tâm, hướng tới giải pháp cùng có lợi (khoản 1); bắt buộc định kỳ ít nhất 01 năm/lần, khi có yêu cầu, khi có vụ việc luật định (khoản 2 Điều 63).",
+   "keywords": [
+    "chia sẻ thông tin",
+    "01 năm",
+    "yêu cầu",
+    "cùng có lợi"
+   ]
+  }
+ ]
+}

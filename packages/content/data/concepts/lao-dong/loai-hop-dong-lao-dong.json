@@ -1,0 +1,115 @@
+{
+ "id": "loai-hop-dong-lao-dong",
+ "subject": "lao-dong",
+ "chapter": "v3",
+ "term": "Loại hợp đồng lao động",
+ "definition": "Hợp đồng lao động phải được giao kết theo một trong các loại sau đây: a) Hợp đồng lao động không xác định thời hạn là hợp đồng mà trong đó hai bên không xác định thời hạn, thời điểm chấm dứt hiệu lực của hợp đồng; b) Hợp đồng lao động xác định thời hạn là hợp đồng mà trong đó hai bên xác định thời hạn, thời điểm chấm dứt hiệu lực của hợp đồng trong thời gian không quá 36 tháng kể từ thời điểm có hiệu lực của hợp đồng.",
+ "plain": "BLLĐ 2019 chỉ còn HAI LOẠI: KHÔNG XÁC ĐỊNH THỜI HẠN và XÁC ĐỊNH THỜI HẠN (tối đa 36 tháng); bỏ hợp đồng mùa vụ dưới 12 tháng của BLLĐ 2012. Hết hạn mà vẫn làm việc: trong 30 ngày phải ký hợp đồng mới; quá 30 ngày không ký → thành hợp đồng không xác định thời hạn; hợp đồng xác định thời hạn chỉ được ký thêm 01 LẦN, sau đó phải ký không xác định thời hạn (trừ ngoại lệ) (khoản 2).",
+ "example": "A ký hợp đồng 12 tháng, hết hạn ký tiếp 24 tháng; hết hợp đồng thứ hai mà A vẫn làm việc: công ty phải ký hợp đồng không xác định thời hạn.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 20 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-125-VBHN-VPQH-2025-Bo-luat-Lao-dong-so-45-2019-QH14-672381.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hop-dong-lao-dong",
+  "don-phuong-cham-dut-nguoi-lao-dong"
+ ],
+ "keywords": [
+  "không xác định thời hạn",
+  "xác định thời hạn tối đa 36 tháng",
+  "30 ngày",
+  "chỉ ký thêm 01 lần"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hợp đồng lao động xác định thời hạn có thời hạn tối đa bao lâu?",
+   "options": [
+    "36 tháng",
+    "24 tháng",
+    "12 tháng",
+    "60 tháng"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 1 Điều 20.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 20 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hết hạn hợp đồng xác định thời hạn, người lao động vẫn làm việc, quá 30 ngày hai bên không ký hợp đồng mới thì sao?",
+   "options": [
+    "Hợp đồng trở thành hợp đồng lao động không xác định thời hạn",
+    "Hợp đồng chấm dứt",
+    "Tự động gia hạn 12 tháng",
+    "Người lao động phải nghỉ việc"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 2 Điều 20.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 20 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hợp đồng không xác định thời hạn",
+   "right": "Hợp đồng xác định thời hạn",
+   "cases": [
+    {
+     "text": "Không xác định thời điểm chấm dứt hiệu lực",
+     "answer": "left"
+    },
+    {
+     "text": "Thời hạn không quá 36 tháng",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 20."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hợp đồng lao động xác định thời hạn là hợp đồng mà hai bên xác định thời hạn, thời điểm chấm dứt hiệu lực trong thời gian không quá {{36}} tháng. Nếu hết thời hạn {{30}} ngày kể từ ngày hợp đồng hết hạn mà không ký mới thì thành hợp đồng không xác định thời hạn.",
+   "bank_extra": [
+    "48",
+    "60"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Trường hợp hai bên ký hợp đồng mới là hợp đồng xác định thời hạn thì cũng chỉ được ký thêm {{01}} lần.",
+   "bank_extra": [
+    "02",
+    "03"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Bộ luật Lao động 2019 vẫn có hợp đồng lao động theo mùa vụ dưới 12 tháng là một loại riêng.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 20 chỉ có hai loại: không xác định thời hạn và xác định thời hạn."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày các loại hợp đồng lao động và hệ quả khi hết hạn mà người lao động vẫn làm việc.",
+   "model": "Hai loại: không xác định thời hạn; xác định thời hạn không quá 36 tháng (khoản 1 Điều 20). Hết hạn vẫn làm: trong 30 ngày phải ký hợp đồng mới; quá 30 ngày thành không xác định thời hạn; xác định thời hạn chỉ ký thêm 01 lần (khoản 2).",
+   "keywords": [
+    "không xác định thời hạn",
+    "36 tháng",
+    "30 ngày",
+    "01 lần"
+   ]
+  }
+ ]
+}

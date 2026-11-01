@@ -1,0 +1,116 @@
+{
+ "id": "thoa-uoc-lao-dong-tap-the",
+ "subject": "lao-dong",
+ "chapter": "v5",
+ "term": "Thỏa ước lao động tập thể",
+ "definition": "Thỏa ước lao động tập thể là thỏa thuận đạt được thông qua thương lượng tập thể và được các bên ký kết bằng văn bản. Thỏa ước lao động tập thể bao gồm thỏa ước lao động tập thể doanh nghiệp, thỏa ước lao động tập thể ngành, thỏa ước lao động tập thể có nhiều doanh nghiệp và các thỏa ước lao động tập thể khác. Nội dung thỏa ước lao động tập thể không được trái với quy định của pháp luật; khuyến khích có lợi hơn cho người lao động so với quy định của pháp luật.",
+ "plain": "Bản chất \"LUẬT CỦA DOANH NGHIỆP\": vừa có tính HỢP ĐỒNG (thỏa thuận) vừa có tính QUY PHẠM (áp dụng cho mọi người lao động trong phạm vi). Bốn loại: DOANH NGHIỆP, NGÀNH, CÓ NHIỀU DOANH NGHIỆP, KHÁC. Hình thức: BẰNG VĂN BẢN. Nội dung: không trái pháp luật, khuyến khích CÓ LỢI HƠN. Hợp đồng lao động không được thấp hơn thỏa ước; quyền lợi trong hợp đồng thấp hơn thì phải sửa đổi theo thỏa ước.",
+ "example": "Thỏa ước doanh nghiệp quy định thưởng Tết tối thiểu 1 tháng lương: mọi người lao động trong doanh nghiệp đều được hưởng, kể cả người vào làm sau khi ký thỏa ước.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 75 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-125-VBHN-VPQH-2025-Bo-luat-Lao-dong-so-45-2019-QH14-672381.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "thuong-luong-tap-the",
+  "chinh-sach-nha-nuoc-ve-lao-dong",
+  "hop-dong-lao-dong"
+ ],
+ "keywords": [
+  "thông qua thương lượng tập thể",
+  "bằng văn bản",
+  "doanh nghiệp, ngành, nhiều doanh nghiệp",
+  "có lợi hơn"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thỏa ước lao động tập thể phải được ký kết dưới hình thức nào?",
+   "options": [
+    "Bằng văn bản",
+    "Bằng lời nói",
+    "Bằng hành vi",
+    "Không bắt buộc hình thức"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 75.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 75 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Loại nào KHÔNG được liệt kê là thỏa ước lao động tập thể tại khoản 1 Điều 75?",
+   "options": [
+    "Thỏa ước lao động tập thể quốc gia bắt buộc",
+    "Thỏa ước lao động tập thể doanh nghiệp",
+    "Thỏa ước lao động tập thể ngành",
+    "Thỏa ước lao động tập thể có nhiều doanh nghiệp"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 75.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 75 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thỏa ước lao động tập thể",
+   "right": "Hợp đồng lao động",
+   "cases": [
+    {
+     "text": "Ký giữa tổ chức đại diện người lao động và người sử dụng lao động",
+     "answer": "left"
+    },
+    {
+     "text": "Ký giữa từng người lao động và người sử dụng lao động",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 13, 75."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thỏa ước lao động tập thể là thỏa thuận đạt được thông qua {{thương lượng tập thể}} và được các bên ký kết bằng {{văn bản}}.",
+   "bank_extra": [
+    "đối thoại",
+    "lời nói"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nội dung thỏa ước lao động tập thể không được trái với quy định của pháp luật; khuyến khích có lợi {{hơn}} cho người lao động.",
+   "bank_extra": [
+    "kém",
+    "bằng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thỏa ước lao động tập thể có thể quy định mức lương thấp hơn mức lương tối thiểu nếu hai bên đồng ý.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 75: nội dung không được trái pháp luật; lương không thấp hơn mức tối thiểu (khoản 2 Điều 90)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm, phân loại và yêu cầu nội dung của thỏa ước lao động tập thể.",
+   "model": "Là thỏa thuận đạt được qua thương lượng tập thể, ký bằng văn bản; gồm thỏa ước doanh nghiệp, ngành, có nhiều doanh nghiệp, khác (khoản 1 Điều 75); nội dung không trái pháp luật, khuyến khích có lợi hơn cho người lao động (khoản 2).",
+   "keywords": [
+    "thương lượng tập thể",
+    "văn bản",
+    "doanh nghiệp, ngành",
+    "có lợi hơn"
+   ]
+  }
+ ]
+}

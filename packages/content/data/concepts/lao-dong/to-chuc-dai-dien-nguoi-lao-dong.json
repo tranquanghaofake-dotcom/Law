@@ -1,0 +1,115 @@
+{
+ "id": "to-chuc-dai-dien-nguoi-lao-dong",
+ "subject": "lao-dong",
+ "chapter": "v4",
+ "term": "Tổ chức đại diện người lao động tại cơ sở",
+ "definition": "Tổ chức đại diện người lao động tại cơ sở là tổ chức được thành lập trên cơ sở tự nguyện của người lao động tại một đơn vị sử dụng lao động nhằm mục đích bảo vệ quyền và lợi ích hợp pháp, chính đáng của người lao động trong quan hệ lao động thông qua thương lượng tập thể hoặc các hình thức khác theo quy định của pháp luật về lao động. Tổ chức đại diện người lao động tại cơ sở bao gồm công đoàn cơ sở và tổ chức của người lao động tại doanh nghiệp.",
+ "plain": "Điểm mới BLLĐ 2019: ngoài CÔNG ĐOÀN CƠ SỞ, người lao động được thành lập, gia nhập TỔ CHỨC CỦA NGƯỜI LAO ĐỘNG TẠI DOANH NGHIỆP (phải đăng ký với cơ quan nhà nước có thẩm quyền, Điều 172) — thực hiện cam kết CPTPP, EVFTA và Công ước ILO số 98. Đặc điểm: thành lập TỰ NGUYỆN, tại MỘT đơn vị sử dụng lao động, mục đích BẢO VỆ quyền lợi người lao động qua THƯƠNG LƯỢNG TẬP THỂ.",
+ "example": "Tại công ty X đã có công đoàn cơ sở, một nhóm công nhân vẫn có quyền thành lập tổ chức của người lao động tại doanh nghiệp nếu đáp ứng điều kiện, thủ tục đăng ký.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 3 Điều 3 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-125-VBHN-VPQH-2025-Bo-luat-Lao-dong-so-45-2019-QH14-672381.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "thuong-luong-tap-the",
+  "doi-thoai-tai-noi-lam-viec"
+ ],
+ "keywords": [
+  "tự nguyện",
+  "công đoàn cơ sở",
+  "tổ chức của người lao động tại doanh nghiệp",
+  "thương lượng tập thể"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tổ chức đại diện người lao động tại cơ sở gồm những tổ chức nào?",
+   "options": [
+    "Công đoàn cơ sở và tổ chức của người lao động tại doanh nghiệp",
+    "Chỉ công đoàn cơ sở",
+    "Hội đồng quản trị và ban kiểm soát",
+    "Phòng nhân sự của doanh nghiệp"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 3 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tổ chức đại diện người lao động tại cơ sở được thành lập trên cơ sở nào?",
+   "options": [
+    "Tự nguyện của người lao động tại một đơn vị sử dụng lao động",
+    "Quyết định của người sử dụng lao động",
+    "Chỉ định của Ủy ban nhân dân",
+    "Bắt buộc theo luật"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 3 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tổ chức đại diện người lao động",
+   "right": "Tổ chức đại diện người sử dụng lao động",
+   "cases": [
+    {
+     "text": "Công đoàn cơ sở",
+     "answer": "left"
+    },
+    {
+     "text": "Tổ chức đại diện, bảo vệ quyền lợi của doanh nghiệp trong quan hệ lao động",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 3, 4 Điều 3."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tổ chức đại diện người lao động tại cơ sở được thành lập trên cơ sở {{tự nguyện}} của người lao động, nhằm bảo vệ quyền và lợi ích của người lao động thông qua {{thương lượng tập thể}} hoặc hình thức khác.",
+   "bank_extra": [
+    "bắt buộc",
+    "khởi kiện"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tổ chức đại diện người lao động tại cơ sở bao gồm {{công đoàn cơ sở}} và tổ chức của người lao động tại doanh nghiệp.",
+   "bank_extra": [
+    "ban giám đốc",
+    "hội đồng thành viên"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo BLLĐ 2019, công đoàn cơ sở là tổ chức đại diện người lao động duy nhất tại doanh nghiệp.",
+   "answer": false,
+   "explain": "Sai. Khoản 3 Điều 3: còn có tổ chức của người lao động tại doanh nghiệp."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm tổ chức đại diện người lao động tại cơ sở.",
+   "model": "Tổ chức thành lập trên cơ sở tự nguyện của người lao động tại một đơn vị sử dụng lao động, nhằm bảo vệ quyền, lợi ích hợp pháp của người lao động qua thương lượng tập thể hoặc hình thức khác; gồm công đoàn cơ sở và tổ chức của người lao động tại doanh nghiệp (khoản 3 Điều 3).",
+   "keywords": [
+    "tự nguyện",
+    "bảo vệ quyền",
+    "thương lượng tập thể",
+    "công đoàn cơ sở"
+   ]
+  }
+ ]
+}

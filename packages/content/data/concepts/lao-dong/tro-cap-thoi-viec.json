@@ -1,0 +1,115 @@
+{
+ "id": "tro-cap-thoi-viec",
+ "subject": "lao-dong",
+ "chapter": "v3",
+ "term": "Trợ cấp thôi việc",
+ "definition": "Khi hợp đồng lao động chấm dứt theo quy định tại các khoản 1, 2, 3, 4, 6, 7, 9 và 10 Điều 34 của Bộ luật này thì người sử dụng lao động có trách nhiệm trả trợ cấp thôi việc cho người lao động đã làm việc thường xuyên cho mình từ đủ 12 tháng trở lên, mỗi năm làm việc được trợ cấp một nửa tháng tiền lương, trừ trường hợp đủ điều kiện hưởng lương hưu theo quy định của pháp luật về bảo hiểm xã hội và trường hợp quy định tại điểm e khoản 1 Điều 36 của Bộ luật này.",
+ "plain": "Điều kiện: làm việc thường xuyên TỪ ĐỦ 12 THÁNG; mức: MỖI NĂM = NỬA THÁNG LƯƠNG. Không được hưởng khi: đủ điều kiện hưởng lương hưu; TỰ Ý BỎ VIỆC 05 ngày liên tục (điểm e khoản 1 Điều 36). Thời gian tính = thời gian làm thực tế TRỪ thời gian đã đóng BẢO HIỂM THẤT NGHIỆP và thời gian đã được chi trả (khoản 2). Tiền lương tính = bình quân 06 THÁNG liền kề trước khi thôi việc (khoản 3). Phân biệt TRỢ CẤP MẤT VIỆC LÀM (Điều 47: mỗi năm 01 tháng lương, ít nhất 02 tháng).",
+ "example": "Chị C làm 5 năm, nhưng 4 năm đã đóng bảo hiểm thất nghiệp; nghỉ việc đúng luật: chị chỉ được trợ cấp thôi việc cho 1 năm còn lại = nửa tháng lương bình quân 6 tháng cuối.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 46 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-125-VBHN-VPQH-2025-Bo-luat-Lao-dong-so-45-2019-QH14-672381.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "don-phuong-cham-dut-nguoi-lao-dong",
+  "tien-luong"
+ ],
+ "keywords": [
+  "đủ 12 tháng",
+  "mỗi năm nửa tháng lương",
+  "trừ thời gian đóng bảo hiểm thất nghiệp",
+  "bình quân 06 tháng"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Mức trợ cấp thôi việc cho mỗi năm làm việc là bao nhiêu?",
+   "options": [
+    "Một nửa tháng tiền lương",
+    "Một tháng tiền lương",
+    "Hai tháng tiền lương",
+    "Một phần tư tháng tiền lương"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 46.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 46 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tiền lương để tính trợ cấp thôi việc là gì?",
+   "options": [
+    "Tiền lương bình quân của 06 tháng liền kề trước khi thôi việc",
+    "Tiền lương tháng cuối cùng",
+    "Lương tối thiểu vùng",
+    "Tiền lương bình quân cả quá trình làm việc"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 46.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 46 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Được trợ cấp thôi việc",
+   "right": "Không được trợ cấp thôi việc",
+   "cases": [
+    {
+     "text": "Hết hạn hợp đồng, làm việc thường xuyên 3 năm",
+     "answer": "left"
+    },
+    {
+     "text": "Tự ý bỏ việc 05 ngày làm việc liên tục không lý do",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 46."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người lao động đã làm việc thường xuyên từ đủ {{12}} tháng trở lên, mỗi năm làm việc được trợ cấp {{một nửa}} tháng tiền lương.",
+   "bank_extra": [
+    "06",
+    "hai"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thời gian làm việc để tính trợ cấp thôi việc trừ đi thời gian người lao động đã tham gia bảo hiểm {{thất nghiệp}}.",
+   "bank_extra": [
+    "y tế",
+    "nhân thọ"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người lao động bị chấm dứt hợp đồng vì tự ý bỏ việc 05 ngày làm việc liên tục vẫn được trợ cấp thôi việc.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 46 loại trừ trường hợp điểm e khoản 1 Điều 36."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày điều kiện và cách tính trợ cấp thôi việc.",
+   "model": "Chấm dứt theo các khoản luật định của Điều 34, làm việc thường xuyên từ đủ 12 tháng; mỗi năm nửa tháng lương; trừ trường hợp đủ điều kiện hưởng lương hưu và tự ý bỏ việc (khoản 1 Điều 46); thời gian tính trừ thời gian đóng bảo hiểm thất nghiệp; lương bình quân 06 tháng liền kề (khoản 2, 3).",
+   "keywords": [
+    "12 tháng",
+    "nửa tháng lương",
+    "bảo hiểm thất nghiệp",
+    "06 tháng"
+   ]
+  }
+ ]
+}

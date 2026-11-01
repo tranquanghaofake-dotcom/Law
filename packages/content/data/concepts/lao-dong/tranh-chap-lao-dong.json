@@ -1,0 +1,115 @@
+{
+ "id": "tranh-chap-lao-dong",
+ "subject": "lao-dong",
+ "chapter": "v8",
+ "term": "Tranh chấp lao động",
+ "definition": "Tranh chấp lao động là tranh chấp về quyền và nghĩa vụ, lợi ích phát sinh giữa các bên trong quá trình xác lập, thực hiện hoặc chấm dứt quan hệ lao động; tranh chấp giữa các tổ chức đại diện người lao động với nhau; tranh chấp phát sinh từ quan hệ có liên quan trực tiếp đến quan hệ lao động.",
+ "plain": "Ba nhóm tranh chấp (mở rộng so với BLLĐ 2012): giữa các bên trong quan hệ lao động; giữa CÁC TỔ CHỨC ĐẠI DIỆN NGƯỜI LAO ĐỘNG với nhau; từ quan hệ LIÊN QUAN TRỰC TIẾP. Phân loại: CÁ NHÂN và TẬP THỂ; tập thể gồm VỀ QUYỀN (khác nhau trong hiểu và thực hiện pháp luật, thỏa ước, nội quy…) và VỀ LỢI ÍCH (yêu cầu xác lập điều kiện lao động mới). Thẩm quyền giải quyết tranh chấp cá nhân: hòa giải viên lao động, Hội đồng trọng tài lao động, Tòa án (Điều 187).",
+ "example": "Công ty không trả lương làm thêm giờ đúng luật cho cả phân xưởng, công đoàn yêu cầu trả đúng: tranh chấp lao động tập thể về quyền. Công đoàn yêu cầu tăng lương 10% cao hơn luật: tranh chấp tập thể về lợi ích.",
+ "source": {
+  "kind": "statute",
+  "cite": "Đoạn 1 khoản 1 Điều 179 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-125-VBHN-VPQH-2025-Bo-luat-Lao-dong-so-45-2019-QH14-672381.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "thoi-hieu-tranh-chap-lao-dong",
+  "dinh-cong"
+ ],
+ "keywords": [
+  "quyền và nghĩa vụ, lợi ích",
+  "cá nhân và tập thể",
+  "về quyền, về lợi ích",
+  "tổ chức đại diện với nhau"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tranh chấp giữa hai tổ chức đại diện người lao động với nhau có phải tranh chấp lao động không?",
+   "options": [
+    "Có, theo khoản 1 Điều 179",
+    "Không, là tranh chấp dân sự",
+    "Không, là tranh chấp hành chính",
+    "Chỉ khi có đình công"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 179.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 179 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tranh chấp lao động tập thể về quyền phát sinh khi nào?",
+   "options": [
+    "Có sự khác nhau trong việc hiểu và thực hiện quy định của pháp luật lao động, thỏa ước, nội quy",
+    "Công đoàn yêu cầu tăng lương cao hơn luật",
+    "Hai người lao động cãi nhau",
+    "Người lao động đòi bồi thường cá nhân"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 179.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 179 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tranh chấp tập thể về quyền",
+   "right": "Tranh chấp tập thể về lợi ích",
+   "cases": [
+    {
+     "text": "Công ty không trả lương làm thêm giờ theo luật cho cả xưởng",
+     "answer": "left"
+    },
+    {
+     "text": "Công đoàn đòi thêm ngày nghỉ ngoài luật trong thương lượng",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 179."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tranh chấp lao động là tranh chấp về quyền và nghĩa vụ, {{lợi ích}} phát sinh giữa các bên trong quá trình xác lập, thực hiện hoặc {{chấm dứt}} quan hệ lao động.",
+   "bank_extra": [
+    "danh dự",
+    "tạm hoãn"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tranh chấp lao động bao gồm cả tranh chấp phát sinh từ quan hệ có liên quan {{trực tiếp}} đến quan hệ lao động.",
+   "bank_extra": [
+    "gián tiếp",
+    "xa"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tranh chấp lao động chỉ là tranh chấp giữa người lao động và người sử dụng lao động.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 179 còn gồm tranh chấp giữa các tổ chức đại diện người lao động và từ quan hệ liên quan trực tiếp."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm và phân loại tranh chấp lao động.",
+   "model": "Là tranh chấp về quyền, nghĩa vụ, lợi ích giữa các bên trong xác lập, thực hiện, chấm dứt quan hệ lao động; giữa các tổ chức đại diện người lao động; từ quan hệ liên quan trực tiếp (khoản 1 Điều 179); gồm tranh chấp cá nhân và tập thể (về quyền, về lợi ích).",
+   "keywords": [
+    "quyền và nghĩa vụ",
+    "lợi ích",
+    "cá nhân",
+    "tập thể"
+   ]
+  }
+ ]
+}

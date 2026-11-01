@@ -1,0 +1,119 @@
+{
+ "id": "sa-thai",
+ "subject": "lao-dong",
+ "chapter": "v7",
+ "term": "Áp dụng hình thức sa thải",
+ "definition": "Hình thức xử lý kỷ luật sa thải được người sử dụng lao động áp dụng trong trường hợp sau đây: 1. Người lao động có hành vi trộm cắp, tham ô, đánh bạc, cố ý gây thương tích, sử dụng ma tuý tại nơi làm việc;",
+ "plain": "Sa thải là hình thức NẶNG NHẤT, chỉ áp dụng trong 4 nhóm trường hợp: (1) trộm cắp, tham ô, đánh bạc, cố ý gây thương tích, sử dụng ma túy TẠI NƠI LÀM VIỆC; (2) tiết lộ bí mật kinh doanh, công nghệ, xâm phạm sở hữu trí tuệ, gây thiệt hại nghiêm trọng, QUẤY RỐI TÌNH DỤC tại nơi làm việc được quy định trong nội quy; (3) đang bị kéo dài thời hạn nâng lương hoặc cách chức mà TÁI PHẠM khi chưa xóa kỷ luật; (4) tự ý bỏ việc 05 NGÀY CỘNG DỒN/30 ngày hoặc 20 NGÀY CỘNG DỒN/365 ngày không lý do chính đáng. Phân biệt với đơn phương chấm dứt khi bỏ việc 05 ngày LIÊN TỤC (Điều 36).",
+ "example": "Nhân viên kho lấy trộm hàng của công ty tại kho hàng: công ty có thể sa thải theo khoản 1 Điều 125, sau khi thực hiện đúng trình tự xử lý kỷ luật (Điều 122).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 125 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-125-VBHN-VPQH-2025-Bo-luat-Lao-dong-so-45-2019-QH14-672381.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "ky-luat-lao-dong",
+  "don-phuong-cham-dut-nguoi-su-dung"
+ ],
+ "keywords": [
+  "trộm cắp, tham ô tại nơi làm việc",
+  "quấy rối tình dục",
+  "tái phạm khi chưa xóa kỷ luật",
+  "bỏ việc 05 ngày cộng dồn trong 30 ngày"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hành vi nào là căn cứ sa thải theo khoản 1 Điều 125?",
+   "options": [
+    "Sử dụng ma túy tại nơi làm việc",
+    "Đi làm muộn một lần",
+    "Không hoàn thành chỉ tiêu một tháng",
+    "Nghỉ ốm có giấy xác nhận"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 125.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 125 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người lao động tự ý bỏ việc bao nhiêu ngày cộng dồn trong thời hạn 30 ngày (không lý do chính đáng) thì có thể bị sa thải?",
+   "options": [
+    "05 ngày",
+    "03 ngày",
+    "10 ngày",
+    "20 ngày"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 125.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 125 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Có thể sa thải",
+   "right": "Không đủ căn cứ sa thải",
+   "cases": [
+    {
+     "text": "Đánh bạc tại nơi làm việc",
+     "answer": "left"
+    },
+    {
+     "text": "Nghỉ 2 ngày do thân nhân ốm có xác nhận",
+     "answer": "right"
+    },
+    {
+     "text": "Tái phạm khi đang bị kỷ luật cách chức",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 125."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Sa thải được áp dụng khi người lao động có hành vi trộm cắp, {{tham ô}}, đánh bạc, cố ý gây thương tích, sử dụng ma túy tại {{nơi làm việc}}.",
+   "bank_extra": [
+    "lãng phí",
+    "nhà riêng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người lao động bị xử lý kỷ luật kéo dài thời hạn nâng lương hoặc cách chức mà {{tái phạm}} trong thời gian chưa xóa kỷ luật thì có thể bị sa thải.",
+   "bank_extra": [
+    "xin nghỉ",
+    "khiếu nại"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người lao động bị khiển trách mà tái phạm thì bị sa thải ngay.",
+   "answer": false,
+   "explain": "Sai. Khoản 3 Điều 125 chỉ áp dụng khi tái phạm trong thời gian đang bị kéo dài thời hạn nâng lương hoặc cách chức."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các trường hợp được áp dụng hình thức sa thải.",
+   "model": "Trộm cắp, tham ô, đánh bạc, cố ý gây thương tích, sử dụng ma túy tại nơi làm việc; tiết lộ bí mật kinh doanh, xâm phạm sở hữu trí tuệ, gây thiệt hại nghiêm trọng, quấy rối tình dục quy định trong nội quy; tái phạm khi đang bị kéo dài nâng lương hoặc cách chức; tự ý bỏ việc 05 ngày cộng dồn/30 ngày hoặc 20 ngày/365 ngày (Điều 125).",
+   "keywords": [
+    "trộm cắp",
+    "quấy rối tình dục",
+    "tái phạm",
+    "05 ngày cộng dồn"
+   ]
+  }
+ ]
+}

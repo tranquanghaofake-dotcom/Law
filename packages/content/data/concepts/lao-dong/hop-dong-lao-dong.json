@@ -1,0 +1,116 @@
+{
+ "id": "hop-dong-lao-dong",
+ "subject": "lao-dong",
+ "chapter": "v3",
+ "term": "Hợp đồng lao động",
+ "definition": "Hợp đồng lao động là sự thỏa thuận giữa người lao động và người sử dụng lao động về việc làm có trả công, tiền lương, điều kiện lao động, quyền và nghĩa vụ của mỗi bên trong quan hệ lao động. Trường hợp hai bên thỏa thuận bằng tên gọi khác nhưng có nội dung thể hiện về việc làm có trả công, tiền lương và sự quản lý, điều hành, giám sát của một bên thì được coi là hợp đồng lao động.",
+ "plain": "Đặc trưng: (1) SỰ PHỤ THUỘC PHÁP LÝ của người lao động; (2) đối tượng là VIỆC LÀM CÓ TRẢ CÔNG; (3) người lao động phải TỰ MÌNH thực hiện; (4) thực hiện LIÊN TỤC trong thời gian nhất định. Điểm mới BLLĐ 2019: \"trọng nội dung hơn tên gọi\" — hợp đồng tên \"cộng tác viên\", \"dịch vụ\" nhưng có việc làm trả lương và sự quản lý, giám sát thì VẪN là hợp đồng lao động. Trước khi nhận vào làm việc phải giao kết hợp đồng (khoản 2).",
+ "example": "Công ty ký \"hợp đồng cộng tác viên\" với A, nhưng A làm toàn thời gian, chấm công, nhận lương tháng và chịu sự điều hành của trưởng phòng: đây là hợp đồng lao động, A được hưởng đầy đủ quyền của người lao động.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 13 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-125-VBHN-VPQH-2025-Bo-luat-Lao-dong-so-45-2019-QH14-672381.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "loai-hop-dong-lao-dong",
+  "quan-he-lao-dong",
+  "thu-viec"
+ ],
+ "keywords": [
+  "sự thỏa thuận",
+  "việc làm có trả công",
+  "quản lý, điều hành, giám sát",
+  "tên gọi khác"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hợp đồng mang tên \"hợp đồng dịch vụ\" nhưng có nội dung về việc làm có trả lương và sự quản lý, giám sát của một bên thì được coi là gì?",
+   "options": [
+    "Hợp đồng lao động",
+    "Hợp đồng dịch vụ dân sự",
+    "Hợp đồng vô hiệu",
+    "Hợp đồng thương mại"
+   ],
+   "answer": 0,
+   "explain": "Đoạn 2 khoản 1 Điều 13.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 13 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người sử dụng lao động phải giao kết hợp đồng lao động khi nào?",
+   "options": [
+    "Trước khi nhận người lao động vào làm việc",
+    "Sau 2 tháng làm việc",
+    "Khi người lao động yêu cầu",
+    "Sau khi hết thử việc mới bắt buộc"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 13.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 13 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hợp đồng lao động",
+   "right": "Hợp đồng dịch vụ dân sự",
+   "cases": [
+    {
+     "text": "Chịu sự quản lý, điều hành, giám sát của bên thuê",
+     "answer": "left"
+    },
+    {
+     "text": "Bên làm dịch vụ tự quyết định cách thực hiện, chỉ giao kết quả",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 13 BLLĐ; Điều 513 BLDS."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hợp đồng lao động là sự {{thỏa thuận}} giữa người lao động và người sử dụng lao động về việc làm có {{trả công}}, tiền lương, điều kiện lao động, quyền và nghĩa vụ của mỗi bên.",
+   "bank_extra": [
+    "mệnh lệnh",
+    "tình nguyện"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Trường hợp hai bên thỏa thuận bằng tên gọi khác nhưng có nội dung về việc làm có trả công và sự quản lý, điều hành, {{giám sát}} của một bên thì được coi là hợp đồng lao động.",
+   "bank_extra": [
+    "hợp tác",
+    "tư vấn"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chỉ văn bản có tiêu đề \"Hợp đồng lao động\" mới được coi là hợp đồng lao động.",
+   "answer": false,
+   "explain": "Sai. Đoạn 2 khoản 1 Điều 13: xét theo nội dung, không theo tên gọi."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm và dấu hiệu nhận diện hợp đồng lao động theo BLLĐ 2019.",
+   "model": "Là thỏa thuận giữa người lao động và người sử dụng lao động về việc làm có trả công, tiền lương, điều kiện lao động, quyền, nghĩa vụ; hợp đồng tên gọi khác nhưng có việc làm trả công và sự quản lý, điều hành, giám sát thì vẫn là hợp đồng lao động (khoản 1 Điều 13); phải giao kết trước khi nhận vào làm (khoản 2).",
+   "keywords": [
+    "thỏa thuận",
+    "trả công",
+    "giám sát",
+    "tên gọi khác"
+   ]
+  }
+ ]
+}

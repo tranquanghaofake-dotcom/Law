@@ -1,0 +1,119 @@
+{
+ "id": "ky-luat-lao-dong",
+ "subject": "lao-dong",
+ "chapter": "v7",
+ "term": "Kỷ luật lao động và hình thức xử lý",
+ "definition": "Kỷ luật lao động là những quy định về việc tuân theo thời gian, công nghệ và điều hành sản xuất, kinh doanh do người sử dụng lao động ban hành trong nội quy lao động và do pháp luật quy định. (…) 1. Khiển trách. 2. Kéo dài thời hạn nâng lương không quá 06 tháng. 3. Cách chức. 4. Sa thải.",
+ "plain": "Kỷ luật lao động gồm quy định về TUÂN THEO THỜI GIAN, CÔNG NGHỆ, ĐIỀU HÀNH sản xuất, kinh doanh, nằm trong NỘI QUY LAO ĐỘNG và PHÁP LUẬT. Bốn hình thức (Điều 124), từ nhẹ đến nặng: KHIỂN TRÁCH; KÉO DÀI THỜI HẠN NÂNG LƯƠNG ≤ 06 THÁNG; CÁCH CHỨC; SA THẢI. Hành vi bị cấm khi xử lý (Điều 127): xâm phạm sức khỏe, danh dự; PHẠT TIỀN, CẮT LƯƠNG thay cho kỷ luật; xử lý hành vi không quy định trong nội quy.",
+ "example": "Công ty trừ 500 nghìn lương của nhân viên đi muộn thay vì xử lý kỷ luật: vi phạm, vì phạt tiền, cắt lương thay việc xử lý kỷ luật bị cấm (Điều 127).",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 117, Điều 124 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-125-VBHN-VPQH-2025-Bo-luat-Lao-dong-so-45-2019-QH14-672381.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "sa-thai",
+  "boi-thuong-thiet-hai-lao-dong"
+ ],
+ "keywords": [
+  "tuân theo thời gian, công nghệ, điều hành",
+  "nội quy lao động",
+  "khiển trách, kéo dài nâng lương, cách chức, sa thải",
+  "cấm phạt tiền, cắt lương"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hình thức nào KHÔNG phải là hình thức xử lý kỷ luật lao động theo Điều 124?",
+   "options": [
+    "Phạt tiền",
+    "Khiển trách",
+    "Cách chức",
+    "Sa thải"
+   ],
+   "answer": 0,
+   "explain": "Điều 124; phạt tiền, cắt lương thay xử lý kỷ luật bị cấm (Điều 127).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 124 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hình thức kéo dài thời hạn nâng lương tối đa bao lâu?",
+   "options": [
+    "Không quá 06 tháng",
+    "Không quá 12 tháng",
+    "Không quá 03 tháng",
+    "Không quá 24 tháng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 124.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 124 Bộ luật Lao động 2019 (VBHN 125/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hình thức xử lý kỷ luật hợp pháp",
+   "right": "Hành vi bị cấm",
+   "cases": [
+    {
+     "text": "Khiển trách",
+     "answer": "left"
+    },
+    {
+     "text": "Cắt lương thay cho xử lý kỷ luật",
+     "answer": "right"
+    },
+    {
+     "text": "Cách chức",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 124, 127."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Kỷ luật lao động là những quy định về việc tuân theo thời gian, {{công nghệ}} và điều hành sản xuất, kinh doanh do người sử dụng lao động ban hành trong {{nội quy lao động}} và do pháp luật quy định.",
+   "bank_extra": [
+    "tài chính",
+    "hợp đồng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Các hình thức xử lý kỷ luật lao động: khiển trách; kéo dài thời hạn nâng lương không quá {{06}} tháng; cách chức; sa thải.",
+   "bank_extra": [
+    "12",
+    "03"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người sử dụng lao động có thể phạt tiền người lao động vi phạm nội quy thay cho xử lý kỷ luật.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 127 cấm phạt tiền, cắt lương thay việc xử lý kỷ luật lao động."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm kỷ luật lao động và các hình thức xử lý.",
+   "model": "Kỷ luật lao động là quy định về tuân theo thời gian, công nghệ, điều hành sản xuất kinh doanh trong nội quy lao động và pháp luật (Điều 117); hình thức: khiển trách, kéo dài thời hạn nâng lương không quá 06 tháng, cách chức, sa thải (Điều 124).",
+   "keywords": [
+    "nội quy lao động",
+    "khiển trách",
+    "cách chức",
+    "sa thải"
+   ]
+  }
+ ]
+}
