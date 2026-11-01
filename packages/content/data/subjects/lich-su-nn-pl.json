@@ -103,6 +103,28 @@
       ]
     },
     {
+      "id": "c7-can-dai",
+      "title": "Chương 7. Nhà nước và pháp luật Việt Nam thời kì cận đại (1884–1945)",
+      "lessons": [
+        {
+          "id": "ls7-1",
+          "title": "Bộ máy cai trị thời Pháp thuộc (tóm lược giáo trình)",
+          "concepts": [
+            "che-do-bao-ho-ba-ky",
+            "lien-bang-dong-duong"
+          ]
+        },
+        {
+          "id": "ls7-2",
+          "title": "Pháp luật thời Pháp thuộc (qua Sắc lệnh 47)",
+          "concepts": [
+            "phap-luat-thoi-phap-thuoc-dan-luat",
+            "phap-luat-thoi-phap-thuoc-hinh-luat"
+          ]
+        }
+      ]
+    },
+    {
       "id": "c8-hien-dai",
       "title": "Chương 8. Nhà nước và pháp luật Việt Nam thời kì hiện đại (1945 đến nay)",
       "lessons": [

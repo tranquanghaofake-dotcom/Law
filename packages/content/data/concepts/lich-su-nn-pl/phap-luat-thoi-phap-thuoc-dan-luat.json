@@ -1,0 +1,118 @@
+{
+ "id": "phap-luat-thoi-phap-thuoc-dan-luat",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c7-can-dai",
+ "term": "Dân luật thời Pháp thuộc: Bộ Dân luật Bắc kỳ, Trung kỳ",
+ "definition": "Bộ Dân luật ban bố tại Bắc bộ do nghị định của nguyên Thống sứ Bắc kỳ ngày 30 tháng 3 năm 1931 và nghị định của nguyên Toàn quyền Đông Dương ngày 1 tháng 4 năm 1931 (…). Bộ Dân luật ban bố tại Trung bộ do những Dụ ngày 13 tháng 7 năm 1936, 8 tháng 1 năm 1938, 28 tháng 9 năm 1939 (…). Tại Nam bộ các luật hộ vẫn giữ nguyên như cũ.",
+ "plain": "Chính Sắc lệnh 47 (1945) cho biết hệ thống dân luật thời Pháp thuộc gồm ba khối. BẮC KỲ: Bộ Dân luật Bắc kỳ (thường gọi Dân luật Bắc kỳ 1931), ban bố bằng nghị định của Thống sứ và Toàn quyền. TRUNG KỲ: Bộ Dân luật Trung kỳ (thường gọi Hoàng Việt Trung kỳ hộ luật), ban bố bằng Dụ của vua Nguyễn trong các năm 1936–1939. NAM KỲ: \"luật hộ vẫn giữ nguyên như cũ\", theo giáo trình là các văn bản dân luật của Pháp áp dụng ở Nam Kỳ (như Dân luật giản yếu 1883). Đặc điểm: chịu ảnh hưởng Bộ luật Dân sự Pháp (1804), kết hợp một phần tập quán Việt Nam. Văn bản ở xứ bảo hộ Trung Kỳ vẫn ban hành dưới hình thức Dụ của vua.",
+ "example": "Văn bản ban hành dân luật cho thấy địa vị khác nhau của ba kỳ: ở Bắc Kỳ là nghị định của Thống sứ người Pháp; ở Trung Kỳ là Dụ của vua Nguyễn; ở Nam Kỳ là luật lệ thuộc địa.",
+ "source": {
+  "kind": "primary",
+  "cite": "Sắc lệnh số 47 ngày 10/10/1945, Điều thứ 2, 3, 4",
+  "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Sac-lenh-so-47-giu-tam-thoi-luat-le-hien-hanh-Bac-Trung-Nam-bo-ban-hanh-nhung-bo-luat-phap-duy-nhat-toan-quoc-35893.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "phap-luat-thoi-phap-thuoc-hinh-luat",
+  "sac-lenh-47-luat-cu",
+  "che-do-bao-ho-ba-ky"
+ ],
+ "keywords": [
+  "Dân luật Bắc kỳ 1931",
+  "Dân luật Trung kỳ 1936–1939",
+  "Nam Kỳ: luật hộ giữ như cũ",
+  "nghị định Thống sứ, Toàn quyền",
+  "Dụ của vua"
+ ],
+ "note": "Các bộ luật nêu ở đây đã hết hiệu lực; Sắc lệnh 47 chỉ tạm giữ chúng sau năm 1945.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều thứ 2 Sắc lệnh 47, Bộ Dân luật Bắc kỳ được ban bố bằng văn bản nào?",
+   "options": [
+    "Nghị định của Thống sứ Bắc kỳ (30/3/1931) và nghị định của Toàn quyền Đông Dương (1/4/1931)",
+    "Dụ của vua Bảo Đại",
+    "Luật của Quốc hội Pháp",
+    "Sắc lệnh của Chủ tịch Hồ Chí Minh"
+   ],
+   "answer": 0,
+   "explain": "Điều thứ 2 Sắc lệnh 47.",
+   "source": {
+    "kind": "primary",
+    "cite": "Sắc lệnh 47 ngày 10/10/1945, Điều thứ 2"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Bộ Dân luật Trung kỳ được ban bố bằng hình thức văn bản nào theo Điều thứ 3 Sắc lệnh 47?",
+   "options": [
+    "Các Dụ năm 1936, 1938, 1939",
+    "Nghị định của Thống sứ",
+    "Luật của Nghị viện",
+    "Sắc lệnh Tổng thống Pháp"
+   ],
+   "answer": 0,
+   "explain": "Điều thứ 3 Sắc lệnh 47.",
+   "source": {
+    "kind": "primary",
+    "cite": "Sắc lệnh 47, Điều thứ 3"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Bắc kỳ",
+   "right": "Trung kỳ",
+   "cases": [
+    {
+     "text": "Dân luật ban bố bằng nghị định năm 1931",
+     "answer": "left"
+    },
+    {
+     "text": "Dân luật ban bố bằng các Dụ năm 1936–1939",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều thứ 2, 3 Sắc lệnh 47."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bộ Dân luật ban bố tại Bắc bộ do nghị định của nguyên {{Thống sứ}} Bắc kỳ ngày 30 tháng 3 năm {{1931}}.",
+   "bank_extra": [
+    "Khâm sứ",
+    "1945"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tại {{Nam bộ}} các luật hộ vẫn giữ nguyên như cũ.",
+   "bank_extra": [
+    "Trung bộ",
+    "Bắc bộ"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thời Pháp thuộc, ba kỳ áp dụng chung một bộ dân luật.",
+   "answer": false,
+   "explain": "Sai. Sắc lệnh 47 liệt kê riêng dân luật Bắc kỳ, Trung kỳ và luật hộ Nam kỳ."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày hệ thống dân luật thời Pháp thuộc qua Sắc lệnh 47.",
+   "model": "Bắc Kỳ: Bộ Dân luật ban bố bằng nghị định Thống sứ (30/3/1931) và Toàn quyền (1/4/1931); Trung Kỳ: Bộ Dân luật ban bố bằng các Dụ 1936, 1938, 1939; Nam Kỳ: luật hộ giữ như cũ (luật thuộc địa); chịu ảnh hưởng Bộ luật Dân sự Pháp; Sắc lệnh 47 tạm giữ sau 1945.",
+   "keywords": [
+    "Bắc kỳ 1931",
+    "Trung kỳ",
+    "Nam kỳ",
+    "Bộ luật Dân sự Pháp"
+   ]
+  }
+ ]
+}

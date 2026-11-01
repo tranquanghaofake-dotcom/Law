@@ -1,0 +1,117 @@
+{
+ "id": "phap-luat-thoi-phap-thuoc-hinh-luat",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c7-can-dai",
+ "term": "Hình luật thời Pháp thuộc: Luật hình An Nam, Hoàng Việt hình luật",
+ "definition": "Bộ \"Luật Hình An Nam\" ban bố tại Bắc bộ do Dụ ngày 25 tháng 8 năm 1921 và nghị định của nguyên Toàn quyền Đông Dương ngày 2 tháng 12 năm 1921 (…). Bộ \"Hoàng Việt Hình Luật\" ban bố tại Trung bộ do Dụ ngày 3 tháng 7 năm 1933 (…). Bộ hình luật pháp tu chỉnh do sắc lệnh ngày 31 tháng 12 năm 1912 cùng những sắc lệnh sửa đổi sắc lệnh ấy vẫn thi hành ở Nam bộ.",
+ "plain": "Ba khối hình luật: BẮC KỲ: \"Luật hình An Nam\" (1921); TRUNG KỲ: \"Hoàng Việt hình luật\" (1933), đây là bộ luật hình mới ban hành dưới triều Bảo Đại, khác với Hoàng Việt luật lệ (1815) thời Gia Long; NAM KỲ: Bộ hình luật Pháp tu chỉnh (1912). Đặc điểm theo giáo trình: chịu ảnh hưởng Bộ luật Hình sự Pháp (1810), bỏ dần hình phạt phong kiến (ngũ hình), dùng hệ thống hình phạt kiểu phương Tây (phạt tiền, phạt tù, khổ sai, tử hình). Sau 1945, các bộ luật này được Sắc lệnh 47 tạm giữ nếu không trái độc lập và chính thể dân chủ cộng hòa, cho đến khi có Bộ luật Hình sự 1985.",
+ "example": "Bẫy hay gặp: \"Hoàng Việt hình luật\" (Trung Kỳ, 1933) khác với \"Hoàng Việt luật lệ\" (Gia Long, 1815). Tên gần giống nhau nhưng thời kỳ, nội dung, ảnh hưởng khác hẳn.",
+ "source": {
+  "kind": "primary",
+  "cite": "Sắc lệnh số 47 ngày 10/10/1945, Điều thứ 8, 9, 10",
+  "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Sac-lenh-so-47-giu-tam-thoi-luat-le-hien-hanh-Bac-Trung-Nam-bo-ban-hanh-nhung-bo-luat-phap-duy-nhat-toan-quoc-35893.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "phap-luat-thoi-phap-thuoc-dan-luat",
+  "hoang-viet-luat-le",
+  "sac-lenh-47-luat-cu"
+ ],
+ "keywords": [
+  "Luật hình An Nam 1921",
+  "Hoàng Việt hình luật 1933",
+  "hình luật Pháp tu chỉnh 1912",
+  "khác Hoàng Việt luật lệ 1815"
+ ],
+ "note": "Các bộ luật nêu ở đây đã hết hiệu lực; Sắc lệnh 47 chỉ tạm giữ chúng sau năm 1945.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều thứ 9 Sắc lệnh 47, Bộ \"Hoàng Việt Hình Luật\" áp dụng ở đâu?",
+   "options": [
+    "Trung bộ",
+    "Bắc bộ",
+    "Nam bộ",
+    "Cả nước"
+   ],
+   "answer": 0,
+   "explain": "Điều thứ 9 Sắc lệnh 47.",
+   "source": {
+    "kind": "primary",
+    "cite": "Sắc lệnh 47, Điều thứ 9"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ở Nam bộ, theo Điều thứ 10 Sắc lệnh 47, bộ hình luật nào vẫn được thi hành?",
+   "options": [
+    "Bộ hình luật Pháp tu chỉnh do sắc lệnh ngày 31/12/1912",
+    "Luật hình An Nam",
+    "Hoàng Việt hình luật",
+    "Quốc triều hình luật"
+   ],
+   "answer": 0,
+   "explain": "Điều thứ 10 Sắc lệnh 47.",
+   "source": {
+    "kind": "primary",
+    "cite": "Sắc lệnh 47, Điều thứ 10"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hoàng Việt luật lệ",
+   "right": "Hoàng Việt hình luật",
+   "cases": [
+    {
+     "text": "Ban hành năm 1815 triều Gia Long",
+     "answer": "left"
+    },
+    {
+     "text": "Ban bố tại Trung bộ do Dụ ngày 3/7/1933",
+     "answer": "right"
+    }
+   ],
+   "explain": "Hai bộ luật tên gần giống nhau, khác thời kỳ."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bộ \"{{Luật Hình An Nam}}\" ban bố tại Bắc bộ do Dụ ngày 25 tháng 8 năm {{1921}}.",
+   "bank_extra": [
+    "Hoàng Việt luật lệ",
+    "1815"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bộ \"Hoàng Việt Hình Luật\" ban bố tại {{Trung bộ}} do Dụ ngày 3 tháng 7 năm 1933.",
+   "bank_extra": [
+    "Nam bộ",
+    "Bắc bộ"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "\"Hoàng Việt hình luật\" và \"Hoàng Việt luật lệ\" là cùng một bộ luật.",
+   "answer": false,
+   "explain": "Sai. Hoàng Việt luật lệ (1815, Gia Long); Hoàng Việt hình luật (1933, áp dụng ở Trung Kỳ thời Pháp thuộc)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày hệ thống hình luật thời Pháp thuộc qua Sắc lệnh 47.",
+   "model": "Bắc Kỳ: Luật hình An Nam (Dụ 25/8/1921, nghị định Toàn quyền 2/12/1921); Trung Kỳ: Hoàng Việt hình luật (Dụ 3/7/1933); Nam Kỳ: hình luật Pháp tu chỉnh (sắc lệnh 31/12/1912); chịu ảnh hưởng luật hình Pháp; được Sắc lệnh 47 tạm giữ sau 1945.",
+   "keywords": [
+    "Luật hình An Nam",
+    "Hoàng Việt hình luật",
+    "hình luật Pháp",
+    "Sắc lệnh 47"
+   ]
+  }
+ ]
+}
