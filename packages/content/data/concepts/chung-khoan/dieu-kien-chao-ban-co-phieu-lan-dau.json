@@ -1,0 +1,131 @@
+{
+ "id": "dieu-kien-chao-ban-co-phieu-lan-dau",
+ "subject": "chung-khoan",
+ "chapter": "c2-chao-ban",
+ "term": "Điều kiện chào bán cổ phiếu lần đầu ra công chúng (IPO)",
+ "definition": "Điều kiện chào bán cổ phiếu lần đầu ra công chúng của công ty cổ phần bao gồm: a) Mức vốn điều lệ đã góp tại thời điểm đăng ký chào bán từ 30 tỷ đồng trở lên tính theo giá trị ghi trên sổ kế toán; b) Hoạt động kinh doanh của 02 năm liên tục liền trước năm đăng ký chào bán phải có lãi, đồng thời không có lỗ lũy kế tính đến năm đăng ký chào bán; (…) d) Tối thiểu là 15% số cổ phiếu có quyền biểu quyết của tổ chức phát hành phải được bán cho ít nhất 100 nhà đầu tư không phải là cổ đông lớn; (…)",
+ "plain": "IPO có 9 điều kiện (điểm a–i). Ba điều kiện hay thi nhất: vốn điều lệ đã góp từ 30 tỷ; 2 năm liền trước có lãi, không lỗ lũy kế; tối thiểu 15% cổ phiếu có quyền biểu quyết bán cho ít nhất 100 nhà đầu tư không phải cổ đông lớn (10% nếu vốn điều lệ từ 1.000 tỷ). Ngoài ra: cổ đông lớn cam kết cùng nắm giữ ít nhất 20% vốn điều lệ tối thiểu 01 năm, có công ty chứng khoán tư vấn, cam kết niêm yết hoặc đăng ký giao dịch, mở tài khoản phong tỏa.",
+ "example": "Công ty F có vốn điều lệ đã góp 25 tỷ, lãi 3 năm liền: chưa đủ điều kiện IPO vì vốn điều lệ dưới 30 tỷ (điểm a khoản 1 Điều 15).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 15 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "menh-gia-chung-khoan",
+  "dang-ky-chao-ban-ra-cong-chung"
+ ],
+ "keywords": [
+  "30 tỷ đồng",
+  "02 năm có lãi",
+  "15% cho 100 nhà đầu tư",
+  "20% trong 01 năm"
+ ],
+ "note": "Luật 56/2024/QH15 (hiệu lực 01/01/2025) bổ sung điểm k khoản 1 Điều 18: hồ sơ IPO phải có báo cáo về vốn điều lệ đã góp được kiểm toán bởi tổ chức kiểm toán độc lập. Giáo trình 2021 chưa có yêu cầu này. Các điểm a–i khoản 1 Điều 15 không đổi.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Mức vốn điều lệ đã góp tối thiểu để công ty cổ phần chào bán cổ phiếu lần đầu ra công chúng là bao nhiêu?",
+   "options": [
+    "30 tỷ đồng",
+    "10 tỷ đồng",
+    "50 tỷ đồng",
+    "100 tỷ đồng"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 15: từ 30 tỷ đồng trở lên, tính theo giá trị ghi trên sổ kế toán.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 15 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Yêu cầu về kết quả kinh doanh để IPO là gì?",
+   "options": [
+    "02 năm liên tục liền trước năm đăng ký có lãi, không có lỗ lũy kế",
+    "Năm liền trước có lãi",
+    "03 năm liên tục có lãi",
+    "Không yêu cầu có lãi"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 1 Điều 15. Lưu ý: chào bán THÊM của công ty đại chúng chỉ cần năm liền trước có lãi (điểm b khoản 2).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 15 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Chào bán cổ phiếu lần đầu (khoản 1)",
+   "right": "Chào bán thêm cổ phiếu (khoản 2)",
+   "cases": [
+    {
+     "text": "02 năm liên tục liền trước có lãi",
+     "answer": "left"
+    },
+    {
+     "text": "Năm liền trước có lãi",
+     "answer": "right"
+    },
+    {
+     "text": "15% cổ phiếu có quyền biểu quyết bán cho ít nhất 100 nhà đầu tư không phải cổ đông lớn",
+     "answer": "left"
+    }
+   ],
+   "explain": "So sánh khoản 1 và khoản 2 Điều 15."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tối thiểu là {{15%}} số cổ phiếu có quyền biểu quyết của tổ chức phát hành phải được bán cho ít nhất {{100}} nhà đầu tư không phải là cổ đông lớn.",
+   "bank_extra": [
+    "20%",
+    "50"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Cổ đông lớn trước IPO phải cam kết cùng nhau nắm giữ ít nhất {{20%}} vốn điều lệ tối thiểu là {{01 năm}} kể từ ngày kết thúc đợt chào bán.",
+   "bank_extra": [
+    "15%",
+    "03 năm"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Công ty G có vốn điều lệ đã góp 1.200 tỷ đồng, lãi 2 năm liền, không lỗ lũy kế, dự định IPO bán 12% cổ phiếu có quyền biểu quyết cho 300 nhà đầu tư không phải cổ đông lớn. Điều kiện về tỷ lệ bán ra (điểm d) đã đạt chưa?",
+   "options": [
+    "Đạt, vì vốn điều lệ từ 1.000 tỷ đồng trở lên chỉ cần tối thiểu 10%",
+    "Chưa đạt, vì phải tối thiểu 15%",
+    "Chưa đạt, vì phải bán cho ít nhất 1.000 nhà đầu tư",
+    "Đạt, vì không có yêu cầu tỷ lệ"
+   ],
+   "answer": 0,
+   "explain": "Điểm d khoản 1 Điều 15: 15%, nhưng nếu vốn điều lệ từ 1.000 tỷ đồng trở lên thì tối thiểu 10%. 12% ≥ 10%.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 15 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Kể các điều kiện chính để công ty cổ phần chào bán cổ phiếu lần đầu ra công chúng.",
+   "model": "Vốn điều lệ đã góp từ 30 tỷ đồng; 02 năm liền trước có lãi, không lỗ lũy kế; phương án phát hành và sử dụng vốn được Đại hội đồng cổ đông thông qua; tối thiểu 15% (10% nếu vốn từ 1.000 tỷ) cổ phiếu có quyền biểu quyết bán cho ít nhất 100 nhà đầu tư không phải cổ đông lớn; cổ đông lớn cam kết cùng nắm 20% vốn điều lệ trong 01 năm; không bị truy cứu hoặc chưa xóa án tích về tội xâm phạm trật tự quản lý kinh tế; có công ty chứng khoán tư vấn; cam kết niêm yết hoặc đăng ký giao dịch; mở tài khoản phong tỏa.",
+   "keywords": [
+    "30 tỷ",
+    "02 năm có lãi",
+    "15%",
+    "100 nhà đầu tư",
+    "tài khoản phong tỏa"
+   ]
+  }
+ ]
+}

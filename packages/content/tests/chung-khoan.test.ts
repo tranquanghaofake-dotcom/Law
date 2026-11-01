@@ -6,11 +6,11 @@ import { conceptSchema, subjectSchema } from '../src/schema';
 const root = join(__dirname, '..', 'data');
 const dir = join(root, 'concepts', 'chung-khoan');
 const files = readdirSync(dir).filter((f) => f.endsWith('.json'));
-const norm = (s: string) => s.normalize('NFC').replace(/\s+/g, ' ').replace(/chứngkhoán/g, 'chứng khoán').trim();
+const norm = (s: string) => s.normalize('NFC').replace(/\(…\)/g, ' ').replace(/\s+/g, ' ').replace(/chứngkhoán/g, 'chứng khoán').trim();
 
 describe('nội dung Luật Chứng khoán', () => {
   it('mọi khái niệm hợp lệ, nguồn statute trỏ VBHN trên vbpl.vn, có recall và 2 cloze', () => {
-    expect(files.length).toBe(10);
+    expect(files.length).toBe(20);
     for (const f of files) {
       const c = conceptSchema.parse(JSON.parse(readFileSync(join(dir, f), 'utf8')));
       expect(c.source.kind).toBe('statute');
@@ -32,6 +32,14 @@ describe('nội dung Luật Chứng khoán', () => {
     for (const f of files) {
       const c = JSON.parse(readFileSync(join(dir, f), 'utf8'));
       for (const part of norm(c.definition).split(/(?<=[.;:])\s+/)) expect(law, `${f}: "${part}"`).toContain(part);
+    }
+  });
+  it('note (cập nhật luật) luôn nêu số hiệu văn bản sửa đổi và hiệu lực', () => {
+    const withNote = files.map((f) => JSON.parse(readFileSync(join(dir, f), 'utf8'))).filter((c) => c.note);
+    expect(withNote.length).toBeGreaterThan(0);
+    for (const c of withNote) {
+      expect(c.note, c.id).toMatch(/\d+\/\d{4}\/QH\d+/);
+      expect(c.note, c.id).toMatch(/hiệu lực/);
     }
   });
 });

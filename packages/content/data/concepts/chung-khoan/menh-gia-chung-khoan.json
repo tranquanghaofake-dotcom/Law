@@ -1,0 +1,118 @@
+{
+ "id": "menh-gia-chung-khoan",
+ "subject": "chung-khoan",
+ "chapter": "c2-chao-ban",
+ "term": "Mệnh giá chứng khoán chào bán ra công chúng",
+ "definition": "Mệnh giá chứng khoán chào bán trên lãnh thổ nước Cộng hòa xã hội chủ nghĩa Việt Nam được ghi bằng Đồng Việt Nam. Mệnh giá cổ phiếu, chứng chỉ quỹ chào bán ra công chúng là 10 nghìn đồng. Mệnh giá của trái phiếu chào bán ra công chúng là 100 nghìn đồng và bội số của 100 nghìn đồng.",
+ "plain": "Mệnh giá là giá ghi trên chứng khoán, khác giá thị trường. Cổ phiếu VNM có mệnh giá 10.000 đồng nhưng giá giao dịch có thể 60.000 đồng. Khoản 3 Điều 13 cho phép chào bán thấp hơn mệnh giá khi giá giao dịch đã xuống dưới mệnh giá.",
+ "example": "Cổ phiếu X đang giao dịch ở 7.000 đồng (dưới mệnh giá 10.000). Công ty X muốn chào bán thêm: được phép chào bán với giá thấp hơn mệnh giá theo khoản 3 Điều 13 (Chính phủ quy định điều kiện theo khoản 6 Điều 15).",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 13 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "chao-ban-ra-cong-chung",
+  "dieu-kien-chao-ban-co-phieu-lan-dau"
+ ],
+ "keywords": [
+  "10 nghìn đồng",
+  "100 nghìn đồng",
+  "Đồng Việt Nam"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Mệnh giá cổ phiếu, chứng chỉ quỹ chào bán ra công chúng là bao nhiêu?",
+   "options": [
+    "10 nghìn đồng",
+    "100 nghìn đồng",
+    "1 nghìn đồng",
+    "1 triệu đồng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 13: 10 nghìn đồng.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 13 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Mệnh giá trái phiếu chào bán ra công chúng được quy định thế nào?",
+   "options": [
+    "100 nghìn đồng và bội số của 100 nghìn đồng",
+    "10 nghìn đồng",
+    "1 triệu đồng và bội số của 1 triệu đồng",
+    "Do tổ chức phát hành tự quyết"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 13.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 13 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "10 nghìn đồng",
+   "right": "100 nghìn đồng và bội số",
+   "cases": [
+    {
+     "text": "Mệnh giá cổ phiếu chào bán ra công chúng",
+     "answer": "left"
+    },
+    {
+     "text": "Mệnh giá chứng chỉ quỹ chào bán ra công chúng",
+     "answer": "left"
+    },
+    {
+     "text": "Mệnh giá trái phiếu chào bán ra công chúng",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 2 Điều 13."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Mệnh giá cổ phiếu, chứng chỉ quỹ chào bán ra công chúng là {{10 nghìn}} đồng; mệnh giá trái phiếu là {{100 nghìn}} đồng và bội số của 100 nghìn đồng.",
+   "bank_extra": [
+    "1 nghìn",
+    "1 triệu"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Mệnh giá chứng khoán chào bán trên lãnh thổ Việt Nam được ghi bằng {{Đồng Việt Nam}}.",
+   "bank_extra": [
+    "đô la Mỹ",
+    "ngoại tệ tự do chuyển đổi"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tổ chức phát hành không bao giờ được chào bán chứng khoán với giá thấp hơn mệnh giá.",
+   "answer": false,
+   "explain": "Sai. Khoản 3 Điều 13: khi giá chứng khoán trên hệ thống giao dịch thấp hơn mệnh giá, tổ chức phát hành được chào bán với giá thấp hơn mệnh giá."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quy định về mệnh giá chứng khoán tại Điều 13 Luật Chứng khoán 2019.",
+   "model": "Mệnh giá ghi bằng Đồng Việt Nam; cổ phiếu, chứng chỉ quỹ chào bán ra công chúng: 10 nghìn đồng; trái phiếu: 100 nghìn đồng và bội số; được chào bán thấp hơn mệnh giá nếu giá trên hệ thống giao dịch thấp hơn mệnh giá.",
+   "keywords": [
+    "Đồng Việt Nam",
+    "10 nghìn",
+    "100 nghìn",
+    "thấp hơn mệnh giá"
+   ]
+  }
+ ]
+}

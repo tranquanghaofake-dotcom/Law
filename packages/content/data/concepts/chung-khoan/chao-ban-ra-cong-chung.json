@@ -1,0 +1,132 @@
+{
+ "id": "chao-ban-ra-cong-chung",
+ "subject": "chung-khoan",
+ "chapter": "c2-chao-ban",
+ "term": "Chào bán chứng khoán ra công chúng",
+ "definition": "Chào bán chứng khoán ra công chúng là việc chào bán chứng khoán theo một trong các phương thức sau đây: a) Chào bán thông qua phương tiện thông tin đại chúng; b) Chào bán cho từ 100 nhà đầu tư trở lên, không kể nhà đầu tư chứng khoán chuyên nghiệp; c) Chào bán cho các nhà đầu tư không xác định.",
+ "plain": "Chỉ cần thỏa MỘT trong ba phương thức là đã chào bán ra công chúng: quảng cáo trên báo/mạng, hoặc từ 100 nhà đầu tư (không đếm nhà đầu tư chuyên nghiệp) trở lên, hoặc nhắm tới nhà đầu tư không xác định. Chào bán ra công chúng phải đăng ký với Ủy ban Chứng khoán Nhà nước, vì người mua đông và dễ bị thiệt.",
+ "example": "Công ty đăng quảng cáo \"mở bán cổ phần, lãi 20%/năm\" trên Facebook cho bất kỳ ai, dù mới có 30 người mua: vẫn là chào bán ra công chúng (điểm a và c), nên phải đăng ký với Ủy ban Chứng khoán Nhà nước.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 19 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "chao-ban-rieng-le",
+  "dang-ky-chao-ban-ra-cong-chung"
+ ],
+ "keywords": [
+  "phương tiện thông tin đại chúng",
+  "từ 100 nhà đầu tư",
+  "nhà đầu tư không xác định"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 19 Điều 4, chào bán cho bao nhiêu nhà đầu tư trở lên (không kể nhà đầu tư chứng khoán chuyên nghiệp) là chào bán ra công chúng?",
+   "options": [
+    "100",
+    "50",
+    "99",
+    "200"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 19 Điều 4: từ 100 nhà đầu tư trở lên, không kể nhà đầu tư chứng khoán chuyên nghiệp.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 19 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Phương thức nào sau đây KHÔNG thuộc khoản 19 Điều 4?",
+   "options": [
+    "Chỉ chào bán cho nhà đầu tư chứng khoán chuyên nghiệp",
+    "Chào bán thông qua phương tiện thông tin đại chúng",
+    "Chào bán cho các nhà đầu tư không xác định",
+    "Chào bán cho từ 100 nhà đầu tư trở lên, không kể nhà đầu tư chứng khoán chuyên nghiệp"
+   ],
+   "answer": 0,
+   "explain": "\"Chỉ chào bán cho nhà đầu tư chứng khoán chuyên nghiệp\" là phương thức chào bán RIÊNG LẺ (điểm b khoản 20 Điều 4).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 20 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Ra công chúng",
+   "right": "Riêng lẻ",
+   "cases": [
+    {
+     "text": "Quảng cáo đợt chào bán trên báo điện tử",
+     "answer": "left"
+    },
+    {
+     "text": "Chào bán cho 40 nhà đầu tư thường, không quảng cáo",
+     "answer": "right"
+    },
+    {
+     "text": "Chào bán cho 150 nhà đầu tư thường",
+     "answer": "left"
+    },
+    {
+     "text": "Chỉ chào bán cho nhà đầu tư chứng khoán chuyên nghiệp",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 19 và khoản 20 Điều 4: riêng lẻ phải KHÔNG dùng phương tiện thông tin đại chúng và dưới 100 nhà đầu tư (không kể chuyên nghiệp) hoặc chỉ chào bán cho nhà đầu tư chuyên nghiệp."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chào bán chứng khoán ra công chúng gồm: chào bán thông qua {{phương tiện thông tin đại chúng}}; chào bán cho từ {{100}} nhà đầu tư trở lên, không kể nhà đầu tư chứng khoán chuyên nghiệp; chào bán cho các nhà đầu tư không xác định.",
+   "bank_extra": [
+    "mạng nội bộ",
+    "50"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Khi đếm số nhà đầu tư để xác định chào bán ra công chúng, không tính nhà đầu tư chứng khoán {{chuyên nghiệp}}.",
+   "bank_extra": [
+    "nước ngoài",
+    "chiến lược"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Công ty E chào bán cổ phần cho 120 người: 30 là ngân hàng, công ty chứng khoán (nhà đầu tư chứng khoán chuyên nghiệp), 90 là cá nhân thường; không quảng cáo, danh sách người mua xác định trước. Đây là hình thức chào bán nào?",
+   "options": [
+    "Chưa phải chào bán ra công chúng theo điểm b, vì chỉ có 90 nhà đầu tư không chuyên nghiệp",
+    "Chào bán ra công chúng vì tổng số là 120 người",
+    "Chào bán ra công chúng vì có ngân hàng tham gia",
+    "Không phải chào bán chứng khoán"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 19 Điều 4 đếm từ 100 nhà đầu tư trở lên KHÔNG KỂ nhà đầu tư chuyên nghiệp: 90 < 100; không dùng phương tiện thông tin đại chúng, nhà đầu tư xác định nên không thuộc điểm a, c.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 19 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu ba phương thức chào bán chứng khoán ra công chúng theo khoản 19 Điều 4.",
+   "model": "(a) Chào bán thông qua phương tiện thông tin đại chúng; (b) chào bán cho từ 100 nhà đầu tư trở lên, không kể nhà đầu tư chứng khoán chuyên nghiệp; (c) chào bán cho các nhà đầu tư không xác định. Chỉ cần một phương thức là đủ.",
+   "keywords": [
+    "phương tiện thông tin đại chúng",
+    "100 nhà đầu tư",
+    "không xác định",
+    "chuyên nghiệp"
+   ]
+  }
+ ]
+}

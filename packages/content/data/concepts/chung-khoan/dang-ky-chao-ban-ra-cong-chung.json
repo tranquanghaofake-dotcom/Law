@@ -1,0 +1,126 @@
+{
+ "id": "dang-ky-chao-ban-ra-cong-chung",
+ "subject": "chung-khoan",
+ "chapter": "c2-chao-ban",
+ "term": "Đăng ký chào bán chứng khoán ra công chúng",
+ "definition": "Tổ chức phát hành, cổ đông công ty đại chúng trước khi chào bán chứng khoán ra công chúng phải đăng ký với Ủy ban Chứng khoán Nhà nước, trừ trường hợp quy định tại khoản 2 Điều này.",
+ "plain": "Muốn chào bán ra công chúng phải nộp hồ sơ cho Ủy ban Chứng khoán Nhà nước và được cấp Giấy chứng nhận đăng ký chào bán. Giấy này chỉ xác nhận hồ sơ đủ điều kiện, thủ tục, KHÔNG phải Nhà nước bảo đảm chất lượng cổ phiếu. Một số trường hợp không phải đăng ký: công cụ nợ của Chính phủ, trái phiếu chính quyền địa phương, cổ phần hóa doanh nghiệp nhà nước, bán theo bản án…",
+ "example": "Ủy ban Chứng khoán Nhà nước có 30 ngày từ khi nhận hồ sơ đầy đủ, hợp lệ để cấp Giấy chứng nhận hoặc từ chối bằng văn bản nêu lý do. Sau đó trong 07 ngày làm việc, tổ chức phát hành công bố Bản thông báo phát hành trên báo 03 số liên tiếp rồi mới được chào bán.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 16 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "chao-ban-ra-cong-chung",
+  "phan-phoi-chung-khoan",
+  "ban-cao-bach"
+ ],
+ "keywords": [
+  "Ủy ban Chứng khoán Nhà nước",
+  "Giấy chứng nhận đăng ký chào bán",
+  "30 ngày"
+ ],
+ "note": "Luật 56/2024/QH15 (hiệu lực 01/01/2025) bổ sung Điều 11a: cơ quan tiếp nhận chỉ xem xét tính hợp lệ của hồ sơ; tổ chức, cá nhân lập, xác nhận, tư vấn hồ sơ (kể cả kiểm toán) chịu trách nhiệm trước pháp luật về tính chính xác của hồ sơ. Giáo trình 2021 chưa có điều này.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trước khi chào bán chứng khoán ra công chúng, tổ chức phát hành phải đăng ký với cơ quan nào?",
+   "options": [
+    "Ủy ban Chứng khoán Nhà nước",
+    "Sở giao dịch chứng khoán Việt Nam",
+    "Ngân hàng Nhà nước Việt Nam",
+    "Phòng Đăng ký kinh doanh"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 16.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 16 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trường hợp nào KHÔNG phải đăng ký chào bán chứng khoán ra công chúng?",
+   "options": [
+    "Chào bán trái phiếu chính quyền địa phương",
+    "IPO của công ty cổ phần tư nhân",
+    "Chào bán thêm cổ phiếu của công ty đại chúng",
+    "Chào bán chứng chỉ quỹ lần đầu ra công chúng"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 2 Điều 16: công cụ nợ của Chính phủ, trái phiếu được Chính phủ bảo lãnh do ngân hàng chính sách phát hành, trái phiếu chính quyền địa phương.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 16 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thời hạn 30 ngày",
+   "right": "Thời hạn 07 ngày làm việc",
+   "cases": [
+    {
+     "text": "Ủy ban Chứng khoán Nhà nước xem xét cấp Giấy chứng nhận kể từ khi nhận hồ sơ đầy đủ, hợp lệ",
+     "answer": "left"
+    },
+    {
+     "text": "Tổ chức phát hành công bố Bản thông báo phát hành kể từ khi Giấy chứng nhận có hiệu lực",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 và khoản 3 Điều 25."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ủy ban Chứng khoán Nhà nước cấp Giấy chứng nhận đăng ký chào bán chứng khoán ra công chúng trong thời hạn {{30 ngày}} kể từ ngày nhận được hồ sơ đầy đủ và hợp lệ.",
+   "bank_extra": [
+    "15 ngày",
+    "90 ngày"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Giấy chứng nhận đăng ký chào bán là văn bản xác nhận hồ sơ đăng ký đáp ứng đủ {{điều kiện}}, {{thủ tục}} theo quy định của pháp luật.",
+   "bank_extra": [
+    "lợi nhuận",
+    "giá trị đầu tư"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Nhà đầu tư H mua cổ phiếu IPO rồi thua lỗ, cho rằng \"Ủy ban Chứng khoán đã cấp phép thì phải chịu trách nhiệm về chất lượng cổ phiếu\". Nhận định nào đúng?",
+   "options": [
+    "Sai: Giấy chứng nhận chỉ xác nhận hồ sơ đủ điều kiện, thủ tục; rủi ro đầu tư nhà đầu tư tự chịu",
+    "Đúng: Ủy ban bảo đảm chất lượng mọi chứng khoán được cấp phép",
+    "Đúng nếu nhà đầu tư là cá nhân",
+    "Sai vì Ủy ban không có thẩm quyền cấp Giấy chứng nhận"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 25 và nguyên tắc tự chịu rủi ro (khoản 4 Điều 5). Khoản 2 Điều 11a: cơ quan tiếp nhận hồ sơ không chịu trách nhiệm về vi phạm của tổ chức, cá nhân trước và sau khi nộp hồ sơ hợp lệ.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 25 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày nghĩa vụ đăng ký và trình tự từ khi nộp hồ sơ đến khi được chào bán chứng khoán ra công chúng.",
+   "model": "Tổ chức phát hành, cổ đông công ty đại chúng phải đăng ký với Ủy ban Chứng khoán Nhà nước (trừ khoản 2 Điều 16). Ủy ban cấp Giấy chứng nhận trong 30 ngày kể từ khi nhận hồ sơ đầy đủ, hợp lệ, hoặc từ chối bằng văn bản. Trong 07 ngày làm việc kể từ khi Giấy chứng nhận có hiệu lực, công bố Bản thông báo phát hành trên báo 03 số liên tiếp; chỉ chào bán sau khi đã công bố.",
+   "keywords": [
+    "Ủy ban Chứng khoán Nhà nước",
+    "30 ngày",
+    "07 ngày làm việc",
+    "Bản thông báo phát hành"
+   ]
+  }
+ ]
+}

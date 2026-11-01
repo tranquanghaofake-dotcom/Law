@@ -4,7 +4,7 @@
   "short": "Chứng khoán",
   "chapters": [
     {
-      "id": "khai-niem",
+      "id": "c1-khai-niem",
       "title": "Chương I. Khái niệm về luật chứng khoán",
       "lessons": [
         {
@@ -27,6 +27,34 @@
             "thi-truong-giao-dich-chung-khoan",
             "pham-vi-dieu-chinh-luat-chung-khoan",
             "nguyen-tac-hoat-dong-chung-khoan"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c2-chao-ban",
+      "title": "Chương II. Pháp luật về chào bán chứng khoán",
+      "lessons": [
+        {
+          "id": "ck2-1",
+          "title": "Chào bán ra công chúng: khái niệm và điều kiện",
+          "concepts": [
+            "chao-ban-ra-cong-chung",
+            "menh-gia-chung-khoan",
+            "dieu-kien-chao-ban-co-phieu-lan-dau",
+            "ban-cao-bach",
+            "dang-ky-chao-ban-ra-cong-chung"
+          ]
+        },
+        {
+          "id": "ck2-2",
+          "title": "Phân phối, đình chỉ, hủy bỏ và chào bán riêng lẻ",
+          "concepts": [
+            "phan-phoi-chung-khoan",
+            "dinh-chi-huy-bo-chao-ban",
+            "chao-ban-rieng-le",
+            "nha-dau-tu-chung-khoan-chuyen-nghiep",
+            "dieu-kien-chao-ban-rieng-le-cong-ty-dai-chung"
           ]
         }
       ]

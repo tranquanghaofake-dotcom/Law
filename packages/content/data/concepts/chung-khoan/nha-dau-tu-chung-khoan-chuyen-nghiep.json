@@ -1,0 +1,135 @@
+{
+ "id": "nha-dau-tu-chung-khoan-chuyen-nghiep",
+ "subject": "chung-khoan",
+ "chapter": "c2-chao-ban",
+ "term": "Nhà đầu tư chứng khoán chuyên nghiệp",
+ "definition": "Nhà đầu tư chứng khoán chuyên nghiệp là nhà đầu tư có năng lực tài chính hoặc có trình độ chuyên môn về chứng khoán bao gồm: (…) c) Người có chứng chỉ hành nghề chứng khoán; d) Cá nhân nắm giữ danh mục chứng khoán niêm yết, đăng ký giao dịch có giá trị tối thiểu là 02 tỷ đồng theo xác nhận của công ty chứng khoán tại thời điểm cá nhân đó được xác định tư cách là nhà đầu tư chứng khoán chuyên nghiệp; (…)",
+ "plain": "Nhà đầu tư chuyên nghiệp được coi là \"tự lo được\", nên được mua chứng khoán chào bán riêng lẻ và không được đếm khi xác định chào bán ra công chúng. Có hai nhóm: tổ chức (ngân hàng, công ty chứng khoán, quỹ…, công ty có vốn điều lệ đã góp trên 100 tỷ, tổ chức niêm yết) và cá nhân (có chứng chỉ hành nghề, danh mục từ 02 tỷ, thu nhập chịu thuế năm gần nhất từ 01 tỷ).",
+ "example": "Chị M có danh mục cổ phiếu niêm yết 2,5 tỷ đồng, được công ty chứng khoán xác nhận: chị là nhà đầu tư chứng khoán chuyên nghiệp, được mua cổ phiếu chào bán riêng lẻ của công ty đại chúng.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 11 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "chao-ban-rieng-le",
+  "dieu-kien-chao-ban-rieng-le-cong-ty-dai-chung"
+ ],
+ "keywords": [
+  "năng lực tài chính hoặc trình độ chuyên môn",
+  "02 tỷ đồng",
+  "01 tỷ đồng thu nhập chịu thuế",
+  "trên 100 tỷ đồng"
+ ],
+ "note": "Luật 56/2024/QH15 (hiệu lực 01/01/2025) bổ sung điểm e khoản 1 (nhà đầu tư nước ngoài là cá nhân có quốc tịch nước ngoài, tổ chức thành lập theo pháp luật nước ngoài thực hiện hoạt động đầu tư kinh doanh tại Việt Nam) và khoản 1a, 1b. Theo đó, cá nhân là nhà đầu tư chuyên nghiệp chỉ được mua, giao dịch trái phiếu doanh nghiệp riêng lẻ có xếp hạng tín nhiệm và có tài sản bảo đảm hoặc bảo lãnh thanh toán của tổ chức tín dụng. Quy định về trái phiếu doanh nghiệp riêng lẻ có hiệu lực từ 01/01/2026. Giáo trình 2021 chưa có các nội dung này.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Cá nhân nắm giữ danh mục chứng khoán niêm yết, đăng ký giao dịch tối thiểu bao nhiêu thì là nhà đầu tư chứng khoán chuyên nghiệp?",
+   "options": [
+    "02 tỷ đồng",
+    "01 tỷ đồng",
+    "05 tỷ đồng",
+    "100 triệu đồng"
+   ],
+   "answer": 0,
+   "explain": "Điểm d khoản 1 Điều 11: tối thiểu 02 tỷ đồng theo xác nhận của công ty chứng khoán.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 11 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Công ty là nhà đầu tư chứng khoán chuyên nghiệp nếu có vốn điều lệ đã góp đạt mức nào?",
+   "options": [
+    "Trên 100 tỷ đồng",
+    "Từ 30 tỷ đồng",
+    "Trên 10 tỷ đồng",
+    "Từ 1.000 tỷ đồng"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 1 Điều 11: vốn điều lệ đã góp đạt trên 100 tỷ đồng, hoặc là tổ chức niêm yết, tổ chức đăng ký giao dịch.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 11 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Nhà đầu tư chuyên nghiệp là tổ chức",
+   "right": "Nhà đầu tư chuyên nghiệp là cá nhân",
+   "cases": [
+    {
+     "text": "Công ty có vốn điều lệ đã góp trên 100 tỷ đồng",
+     "answer": "left"
+    },
+    {
+     "text": "Người có chứng chỉ hành nghề chứng khoán",
+     "answer": "right"
+    },
+    {
+     "text": "Thu nhập chịu thuế năm gần nhất tối thiểu 01 tỷ đồng",
+     "answer": "right"
+    },
+    {
+     "text": "Công ty quản lý quỹ đầu tư chứng khoán",
+     "answer": "left"
+    }
+   ],
+   "explain": "Các điểm a–đ khoản 1 Điều 11."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhà đầu tư chứng khoán chuyên nghiệp là nhà đầu tư có {{năng lực tài chính}} hoặc có {{trình độ chuyên môn}} về chứng khoán.",
+   "bank_extra": [
+    "quốc tịch Việt Nam",
+    "tài khoản ngân hàng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Cá nhân có thu nhập chịu thuế năm gần nhất tối thiểu là {{01 tỷ}} đồng là nhà đầu tư chứng khoán chuyên nghiệp.",
+   "bank_extra": [
+    "500 triệu",
+    "05 tỷ"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Từ năm 2026, anh N (cá nhân, nhà đầu tư chứng khoán chuyên nghiệp) muốn mua trái phiếu doanh nghiệp riêng lẻ KHÔNG có xếp hạng tín nhiệm, không có tài sản bảo đảm. Anh có được mua không?",
+   "options": [
+    "Không: cá nhân chỉ được mua trái phiếu doanh nghiệp riêng lẻ có xếp hạng tín nhiệm và có tài sản bảo đảm hoặc bảo lãnh thanh toán của tổ chức tín dụng",
+    "Được, vì anh là nhà đầu tư chuyên nghiệp",
+    "Được, nếu danh mục trên 02 tỷ đồng",
+    "Được, nếu trái phiếu có kỳ hạn dưới 1 năm"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1b Điều 11 (bổ sung bởi Luật 56/2024/QH15; phần trái phiếu doanh nghiệp riêng lẻ có hiệu lực từ 01/01/2026).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1b Điều 11 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm và các nhóm nhà đầu tư chứng khoán chuyên nghiệp theo Điều 11.",
+   "model": "Nhà đầu tư có năng lực tài chính hoặc trình độ chuyên môn về chứng khoán, gồm: tổ chức tài chính (ngân hàng, công ty chứng khoán, quỹ…); công ty có vốn điều lệ đã góp trên 100 tỷ hoặc tổ chức niêm yết, đăng ký giao dịch; người có chứng chỉ hành nghề chứng khoán; cá nhân có danh mục từ 02 tỷ; cá nhân có thu nhập chịu thuế năm gần nhất từ 01 tỷ; nhà đầu tư nước ngoài. Cá nhân chỉ được mua trái phiếu doanh nghiệp riêng lẻ có xếp hạng tín nhiệm và có bảo đảm hoặc bảo lãnh.",
+   "keywords": [
+    "năng lực tài chính",
+    "100 tỷ",
+    "02 tỷ",
+    "01 tỷ",
+    "xếp hạng tín nhiệm"
+   ]
+  }
+ ]
+}
