@@ -1,7 +1,0 @@
-node_modules/
-dist/
-dev-dist/
-content/index.json
-playwright-report/
-test-results/
-.vite/

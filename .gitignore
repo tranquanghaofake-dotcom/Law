@@ -1,0 +1,30 @@
+# phụ thuộc & cache
+node_modules/
+.vite/
+.vitest-cache/
+*.tsbuildinfo
+
+# sản phẩm build (sinh lại được)
+dist/
+dev-dist/
+packages/content/dist/
+
+# kiểm thử
+playwright-report/
+test-results/
+coverage/
+
+# hệ điều hành / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# bí mật
+.env
+.env.*
+!.env.example
+
+# ảnh chụp đối chiếu (sinh bằng npm run shots)
+tools/shots/
