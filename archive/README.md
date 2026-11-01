@@ -7,3 +7,4 @@ Từ 01/11/2026, dự án tập trung vào **web học luật** (`../web`). Nh�
 - `docs/TikTok-Phap-Ly_Report_v1.md` — báo cáo rà soát căn cứ 10 kịch bản.
 
 Câu trắc nghiệm trên web **không còn gắn với video**; các bộ cũ (Đặt cọc, Nghỉ việc & giữ lương, Chuyển khoản nhầm) được xếp lại theo môn (Dân sự, Lao động, Hình sự).
+- `web-v1/` — web trắc nghiệm tĩnh v1 (HTML/JS thuần), thay bằng ứng dụng Svelte trong `../web` từ 01/11/2026.
