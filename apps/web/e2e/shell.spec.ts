@@ -60,3 +60,29 @@ test('390 px trong phiên học: không tab bar, padding đáy nhỏ hơn chiề
   const pb = await page.evaluate(() => parseFloat(getComputedStyle(document.querySelector('main')!).paddingBottom));
   expect(pb).toBeLessThan(56);
 });
+
+test('danh mục khái niệm: tìm không dấu, mở xem định nghĩa, ★ giữ sau khi tải lại', async ({ page }) => {
+  await page.goto(B + '#/mon/hien-phap');
+  await page.getByRole('link', { name: 'Danh mục khái niệm' }).click();
+  await expect(page).toHaveURL(/#\/mon\/hien-phap\/khai-niem$/);
+  await expect(page.locator('.concept-entry')).toHaveCount(10);
+  await page.getByRole('searchbox').fill('chu quyen');
+  const n = await page.locator('.concept-entry').count();
+  expect(n).toBeGreaterThan(0); expect(n).toBeLessThan(10);
+  await page.getByRole('searchbox').fill('khong co khai niem nao nhu the');
+  await expect(page.getByText('Không có khái niệm khớp.')).toBeVisible();
+  await page.getByRole('searchbox').fill('');
+  await page.locator('.entry-toggle', { hasText: 'Chủ quyền Nhân dân' }).click();
+  await expect(page.locator('.concept-entry.open .quote')).toBeVisible();
+  await page.getByRole('button', { name: /Đánh dấu/ }).first().click();
+  await page.reload();
+  await page.getByRole('button', { name: /Đã đánh dấu \(1\)/ }).click();
+  await expect(page.locator('.concept-entry')).toHaveCount(1);
+});
+
+test('ô trên lưới bậc dẫn tới đúng khái niệm trong danh mục', async ({ page }) => {
+  await page.goto(B + '#/mon/hien-phap');
+  await page.locator('.cell-item').first().click();
+  await expect(page).toHaveURL(/#\/mon\/hien-phap\/khai-niem\/[a-z-]+$/);
+  await expect(page.locator('.concept-entry.open')).toHaveCount(1);
+});

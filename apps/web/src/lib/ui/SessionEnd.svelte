@@ -2,12 +2,17 @@
   import type { Concept, Level } from '$lib/content/types';
   import type { StreakEvent } from '$lib/game/streak';
   import type { RankInfo } from '$lib/game/rank';
-  let { summary, concepts, streak, streakEvent, rankBefore, rankAfter, dueTomorrow, onhome, onagain, onnext }: {
+  import type { Step } from '$lib/engine/session';
+  import { hashFor } from '$lib/router.svelte';
+  import { answerText, promptText } from './cards/answer';
+  let { summary, concepts, streak, streakEvent, rankBefore, rankAfter, dueTomorrow, onhome, onagain, onnext, mistakes = [] }: {
     summary: { correct: number; total: number; xp: number; levelUps: { conceptId: string; to: Level }[] };
     concepts: Concept[]; streak: number; streakEvent: StreakEvent; rankBefore: RankInfo; rankAfter: RankInfo; dueTomorrow: number;
-    onhome: () => void; onagain?: () => void; onnext?: () => void;
+    onhome: () => void; onagain?: () => void; onnext?: () => void; mistakes?: Step[];
   } = $props();
   const term = (id: string) => concepts.find((c) => c.id === id)?.term ?? id;
+  const conceptOf = (id: string) => concepts.find((c) => c.id === id);
+  const explainOf = (s: Step) => ('explain' in s.item ? s.item.explain : '');
   const ranked = $derived(rankAfter.rank !== rankBefore.rank || rankAfter.tier !== rankBefore.tier);
   const streakMsg = $derived(({ started: 'Bắt đầu chuỗi ngày.', extended: 'Chuỗi +1 ngày.', 'same-day': 'Hôm nay đã tính chuỗi.', froze: 'Bùa giữ chuỗi đã cứu bạn.', reset: 'Chuỗi bắt đầu lại từ 1.' } as Record<StreakEvent, string>)[streakEvent]);
 </script>
@@ -32,3 +37,18 @@
     {:else if onagain}<button class="btn ghost" type="button" onclick={onagain}>Học lại đợt này</button>{/if}
   </div>
 </section>
+
+{#if mistakes.length}
+  <section class="mistakes" aria-label="Xem lại câu sai">
+    <h2>Xem lại câu sai ({mistakes.length})</h2>
+    {#each mistakes as m, k (k)}
+      {@const c = conceptOf(m.conceptId)}
+      <div class="card item">
+        <p class="kicker">{#if c}<a href={hashFor('concepts', { subject: c.subject, concept: c.id })}>{c.term}</a>{:else}{m.conceptId}{/if}</p>
+        <b>{promptText(m.item)}</b>
+        <p class="ans">Đáp án: {answerText(m.item)}</p>
+        {#if explainOf(m)}<p>{explainOf(m)}</p>{/if}
+      </div>
+    {/each}
+  </section>
+{/if}

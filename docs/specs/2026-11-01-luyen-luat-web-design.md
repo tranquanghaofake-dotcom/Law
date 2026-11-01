@@ -80,7 +80,7 @@ Mỗi bậc là một *loại bài tập* khó dần. Khái niệm chỉ lên b�
 ### 2.4 Chế độ học
 1. **Học theo lộ trình** (mặc định): chương → đợt, mở khóa tuần tự nhưng cho "thi vượt" để nhảy đợt.
 2. **Ôn hôm nay**: hàng đợi FSRS trộn mọi môn.
-3. **Luyện đề 10 câu** (giữ tính năng hiện có): chọn bộ → làm → kết quả. Dùng cho người chỉ muốn kiểm tra nhanh; mỗi câu vẫn gắn `concept_id` để cộng vào bộ nhớ.
+3. **Luyện đề 10 câu** (giữ tính năng hiện có): chọn bộ → làm → kết quả. Dùng cho người chỉ muốn kiểm tra nhanh. *Sửa 01/11/2026 (Hào chốt):* Luyện đề **không ghi vào lịch ôn**; các bộ là tình huống đời thường theo ngành luật, tách khỏi danh mục Môn học.
 4. **Khó nhớ**: khái niệm sai ≥ 3 lần gần nhất, luyện riêng (Memrise "Difficult words").
 5. **Thi thử chương** (giai đoạn 2): 20 câu, có giờ, không gợi ý, điểm vào bảng xếp hạng.
 

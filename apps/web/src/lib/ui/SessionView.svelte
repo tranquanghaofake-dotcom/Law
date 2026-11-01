@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { Concept, Level } from '$lib/content/types';
   import { clozeModeFor, type Step } from '$lib/engine/session';
-  import { answer as runAnswer, createRunner, next as runNext, summary, type RunnerState } from '$lib/engine/runner';
+  import { answer as runAnswer, createRunner, mistakes, next as runNext, summary, type RunnerState } from '$lib/engine/runner';
   import { repo } from '$lib/store/progress-repo';
   import { stats } from '$lib/store/stats';
   import { settings } from '$lib/store/settings.svelte';
@@ -96,7 +96,7 @@
 <Reveal {reveal} src={art} />
 <div class="session-main">
   {#if ended}
-    <SessionEnd summary={summary(run)} {concepts} streak={ended.streak} streakEvent={ended.streakEvent} rankBefore={ended.rankBefore} rankAfter={ended.rankAfter} dueTomorrow={ended.dueTomorrow} onhome={() => go('home')} {onagain} {onnext} />
+    <SessionEnd summary={summary(run)} {concepts} streak={ended.streak} streakEvent={ended.streakEvent} rankBefore={ended.rankBefore} rankAfter={ended.rankAfter} dueTomorrow={ended.dueTomorrow} onhome={() => go('home')} {onagain} {onnext} mistakes={mistakes(run)} />
   {:else if step && Card}
     <SessionBar done={run.i} total={run.steps.length} {title} onexit={() => (confirmExit = true)} />
     {#if lessonId}<LessonStrip {concepts} levels={run.levels} current={step?.conceptId ?? ''} />{/if}

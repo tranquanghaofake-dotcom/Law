@@ -6,7 +6,7 @@ export type NavItem = { name: NavName; label: string; href: string; icon: string
 
 export const NAV: readonly NavItem[] = [
   { name: 'home', label: 'Hôm nay', href: '#/', icon: '☀', matches: ['home'] },
-  { name: 'subjects', label: 'Môn học', href: '#/mon', icon: '📖', matches: ['subjects', 'subject'] },
+  { name: 'subjects', label: 'Môn học', href: '#/mon', icon: '📖', matches: ['subjects', 'subject', 'concepts'] },
   { name: 'quizzes', label: 'Luyện đề', href: '#/luyen-de', icon: '✎', matches: ['quizzes'] },
   { name: 'profile', label: 'Hồ sơ', href: '#/toi', icon: '👤', matches: ['profile', 'settings'] },
 ];

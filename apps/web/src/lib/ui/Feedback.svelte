@@ -3,19 +3,13 @@
   import type { IntroItem } from '$lib/engine/session';
   import type { AnswerResult } from './cards/types';
   import { isTypingTarget } from './cards/types';
+  import { answerText } from './cards/answer';
   let { result, item, concept, confusableTerms = [], onnext, onspeak, last = false }: {
     result: AnswerResult; item: Item | IntroItem; concept: Concept; confusableTerms?: string[];
     onnext: () => void; onspeak?: (t: string) => void; last?: boolean;
   } = $props();
 
-  const correctText = $derived.by(() => {
-    switch (item.type) {
-      case 'mcq': case 'case': return item.options[item.answer];
-      case 'truefalse': return item.answer ? 'Đúng' : 'Sai';
-      case 'cloze': return [...item.text.matchAll(/\{\{([^{}]+)\}\}/g)].map((m) => m[1]).join(' · ');
-      default: return '';
-    }
-  });
+  const correctText = $derived(item.type === 'pair' || item.type === 'recall' ? '' : answerText(item));
   const explain = $derived('explain' in item ? item.explain : item.type === 'recall' ? item.model : '');
   const source = $derived(('source' in item && item.source) ? item.source : concept.source);
   const speakText = $derived(result.correct ? explain : `Đáp án: ${correctText}. ${explain}`);
