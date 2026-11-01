@@ -1,0 +1,123 @@
+{
+ "id": "hinh-thu-1042",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c6-trung-dai",
+ "term": "Hình thư thời Lý (1042)",
+ "definition": "Ban Hình thư. Trước kia, việc kiện tụng trong nước phiền nhiễu, quan lại giữ luật pháp câu nệ luật văn, cốt làm cho khắc nghiệt, thậm chí có người bị oan uổng quá đáng. Vua lấy làm thương xót, sai trung thư san định luật lệnh, châm chước cho thích dụng với thời thế, chia ra môn loại, biên thành điều khoản, làm thành sách Hình thư của một triều đại, để cho người xem dễ hiểu.",
+ "plain": "HÌNH THƯ (1042, Lý Thái Tông) là BỘ LUẬT THÀNH VĂN ĐẦU TIÊN được chính sử ghi nhận. Toàn thư cho biết: lý do ban hành là kiện tụng phiền nhiễu, quan lại câu nệ luật văn, xử khắc nghiệt; cách soạn là sai trung thư san định luật lệnh, \"chia ra môn loại, biên thành điều khoản\" (có kỹ thuật lập pháp: chia chương loại, điều khoản); kết quả là \"phép xử án được bằng thẳng rõ ràng\", vua đổi niên hiệu Minh Đạo. Văn bản Hình thư KHÔNG còn lưu lại; nội dung chỉ biết gián tiếp qua các chiếu, lệnh chép trong sử.",
+ "example": "Đổi niên hiệu thành \"Minh Đạo\" (đạo sáng rõ) và đúc tiền Minh Đạo ngay sau khi ban Hình thư cho thấy triều đình coi đây là sự kiện quốc gia lớn.",
+ "source": {
+  "kind": "primary",
+  "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển II (bản dịch Viện KHXH Việt Nam, NXB KHXH 1993), Kỷ nhà Lý, Thái Tông, năm 1042, tờ 30b–31a",
+  "url": "https://thpthiephoa1.edu.vn/wp-content/uploads/Dai-viet-su-ki-toan-thu.pdf"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tien-le-dinh-luat-le",
+  "chuoc-toi-thap-ac",
+  "lau-chuong-kien-tung",
+  "phap-luat-nha-dinh"
+ ],
+ "keywords": [
+  "1042",
+  "bộ luật thành văn đầu tiên",
+  "chia ra môn loại, biên thành điều khoản",
+  "Minh Đạo",
+  "không còn lưu lại"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Bộ luật thành văn đầu tiên được chính sử Việt Nam ghi nhận là gì?",
+   "options": [
+    "Hình thư thời Lý (1042)",
+    "Quốc triều hình luật",
+    "Hoàng Việt luật lệ",
+    "Hình thư thời Trần"
+   ],
+   "answer": 0,
+   "explain": "Toàn thư năm 1042. Quốc triều hình luật (Hậu Lê), Hoàng Việt luật lệ (Nguyễn) ra đời muộn hơn.",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển II, tờ 30b"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Toàn thư, lý do Lý Thái Tông cho soạn Hình thư là gì?",
+   "options": [
+    "Kiện tụng phiền nhiễu, quan lại câu nệ luật văn, xử khắc nghiệt, có người bị oan",
+    "Để chuẩn bị chiến tranh với nhà Tống",
+    "Để thu thêm thuế",
+    "Vì nhà Tống yêu cầu"
+   ],
+   "answer": 0,
+   "explain": "Toàn thư năm 1042.",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển II, tờ 30b–31a"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Có trong sử liệu về Hình thư",
+   "right": "Không đúng",
+   "cases": [
+    {
+     "text": "Chia ra môn loại, biên thành điều khoản",
+     "answer": "left"
+    },
+    {
+     "text": "Sau khi ban hành, đổi niên hiệu là Minh Đạo",
+     "answer": "left"
+    },
+    {
+     "text": "Văn bản Hình thư còn nguyên vẹn đến nay",
+     "answer": "right"
+    }
+   ],
+   "explain": "Hình thư không còn; chỉ biết qua Toàn thư."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Vua sai trung thư san định luật lệnh, châm chước cho thích dụng với thời thế, chia ra {{môn loại}}, biên thành {{điều khoản}}, làm thành sách Hình thư.",
+   "bank_extra": [
+    "chương hồi",
+    "tục lệ"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Sau khi ban Hình thư, vua đổi niên hiệu là {{Minh Đạo}}.",
+   "bank_extra": [
+    "Thiên Thành",
+    "Thái Bình"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Ngày nay vẫn còn bản gốc Hình thư thời Lý để nghiên cứu từng điều luật.",
+   "answer": false,
+   "explain": "Sai. Hình thư không còn lưu lại; nội dung chỉ biết qua ghi chép của sử sách."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày hoàn cảnh ra đời, kỹ thuật lập pháp và ý nghĩa của Hình thư 1042.",
+   "model": "Năm 1042, vì kiện tụng phiền nhiễu, quan lại câu nệ luật văn, xử khắc nghiệt, Lý Thái Tông sai trung thư san định luật lệnh, chia môn loại, biên thành điều khoản, làm sách Hình thư; ban hành xong đổi niên hiệu Minh Đạo. Là bộ luật thành văn đầu tiên được chính sử ghi nhận, có kỹ thuật pháp điển hóa; nay không còn văn bản.",
+   "keywords": [
+    "1042",
+    "Hình thư",
+    "môn loại, điều khoản",
+    "Minh Đạo",
+    "đầu tiên"
+   ]
+  }
+ ]
+}

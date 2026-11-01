@@ -1,0 +1,115 @@
+{
+ "id": "lau-chuong-kien-tung",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c6-trung-dai",
+ "term": "Lầu chuông cho dân kêu oan (1029)",
+ "definition": "hai bên tả hữu thềm rồng đặt lầu chuông đối nhau để dân chúng ai có việc kiện tụng oan uổng thì đánh chuông lên.",
+ "plain": "Năm 1029, khi xây lại điện Thiên An, Lý Thái Tông cho đặt lầu chuông hai bên thềm rồng để dân có việc oan đánh chuông. Đây là một thiết chế bảo đảm QUYỀN KÊU OAN, KHIẾU NẠI trực tiếp lên nhà vua, vượt qua quan lại cấp dưới. Nó cho thấy quan niệm vua là người xét xử tối cao và tư tưởng \"thân dân\" của nhà Lý. Có thể liên hệ với chế định khiếu nại, tố cáo trong pháp luật hiện đại (Điều 30 Hiến pháp 2013), nhưng không nên đồng nhất bản chất.",
+ "example": "Một người dân bị quan địa phương xử oan có thể lên kinh đô đánh chuông để việc kiện được tâu lên vua. Đây là thủ tục \"kêu oan\" đặc biệt thời Lý.",
+ "source": {
+  "kind": "primary",
+  "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển II (bản dịch Viện KHXH Việt Nam, NXB KHXH 1993), Kỷ nhà Lý, Thái Tông, năm 1029, tờ 19b–20a",
+  "url": "https://thpthiephoa1.edu.vn/wp-content/uploads/Dai-viet-su-ki-toan-thu.pdf"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hinh-thu-1042",
+  "dinh-do-thang-long"
+ ],
+ "keywords": [
+  "1029",
+  "lầu chuông",
+  "kiện tụng oan uổng",
+  "vua xét xử tối cao"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Toàn thư, lầu chuông đặt hai bên thềm rồng năm 1029 nhằm mục đích gì?",
+   "options": [
+    "Để dân chúng có việc kiện tụng oan uổng đánh chuông lên",
+    "Báo giờ trong cung",
+    "Triệu tập quân đội",
+    "Báo tin chiến thắng"
+   ],
+   "answer": 0,
+   "explain": "Toàn thư năm 1029.",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển II, tờ 19b–20a"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Lầu chuông kêu oan được đặt dưới triều vua nào?",
+   "options": [
+    "Lý Thái Tông",
+    "Lý Thái Tổ",
+    "Đinh Tiên Hoàng",
+    "Trần Thái Tông"
+   ],
+   "answer": 0,
+   "explain": "Năm 1029 (Thiên Thành năm thứ 2), triều Lý Thái Tông.",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển II, tờ 19b"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thiết chế bảo vệ người dân thời Lý",
+   "right": "Thiết chế răn đe thời Đinh",
+   "cases": [
+    {
+     "text": "Lầu chuông cho dân kêu oan",
+     "answer": "left"
+    },
+    {
+     "text": "Vạc dầu, cũi hổ ở sân triều",
+     "answer": "right"
+    }
+   ],
+   "explain": "Toàn thư năm 1029 và năm 968."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hai bên tả hữu thềm rồng đặt {{lầu chuông}} đối nhau để dân chúng ai có việc kiện tụng {{oan uổng}} thì đánh chuông lên.",
+   "bank_extra": [
+    "trống đồng",
+    "tranh chấp đất"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Lầu chuông kêu oan được đặt năm {{1029}}.",
+   "bank_extra": [
+    "1010",
+    "1042"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Lầu chuông kêu oan cho thấy nhà vua là người có quyền xét xử tối cao.",
+   "answer": true,
+   "explain": "Đúng. Đây là cách đánh giá phổ biến: người dân có thể kêu oan thẳng lên vua."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày ý nghĩa của việc đặt lầu chuông năm 1029.",
+   "model": "Năm 1029, Lý Thái Tông cho đặt lầu chuông hai bên thềm rồng để dân có việc kiện tụng oan uổng đánh chuông; tạo kênh kêu oan trực tiếp lên vua; thể hiện vua là người xét xử tối cao và tư tưởng thân dân; hạn chế lạm quyền của quan lại.",
+   "keywords": [
+    "1029",
+    "lầu chuông",
+    "oan uổng",
+    "vua"
+   ]
+  }
+ ]
+}

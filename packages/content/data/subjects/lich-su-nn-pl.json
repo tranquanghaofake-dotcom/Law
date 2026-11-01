@@ -45,6 +45,17 @@
             "phap-luat-nha-dinh",
             "tien-le-dinh-luat-le"
           ]
+        },
+        {
+          "id": "ls6-2",
+          "title": "Nhà nước và pháp luật thời Lý",
+          "concepts": [
+            "dinh-do-thang-long",
+            "hai-muoi-bon-lo",
+            "lau-chuong-kien-tung",
+            "hinh-thu-1042",
+            "chuoc-toi-thap-ac"
+          ]
         }
       ]
     }
