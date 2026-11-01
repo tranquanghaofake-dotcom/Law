@@ -44,6 +44,15 @@ describe('pickHeroState', () => {
     const mixed = pickHeroState({ due: [{ conceptId: 'zzz' }, { conceptId: 'a', term: 'A' }], subjects, levels: { a: 4, zzz: 4 } });
     expect(mixed).toMatchObject({ kind: 'due', count: 1, terms: ['A'] });
   });
+  it('đợt có khái niệm đã qua bậc 3 nhưng khái niệm khác chưa học → continue, không phải next', () => {
+    expect(pickHeroState({ due: [], subjects, levels: { a: 3 } })).toMatchObject({ kind: 'continue', lesson: { id: 'hp-1' }, done: 1, total: 2 });
+  });
+  it('phút ôn không vượt trần 20 bước của phiên ôn', () => {
+    const ids = Array.from({ length: 60 }, (_, i) => `k${i}`);
+    const big: Subject = { id: 'ds', title: 'DS', short: 'DS', chapters: [{ id: 'c', title: 'C', lessons: [{ id: 'l', title: 'L', concepts: ids }] }] };
+    const s = pickHeroState({ due: ids.map((conceptId) => ({ conceptId })), subjects: [big], levels: {} });
+    expect(s).toMatchObject({ kind: 'due', count: 60, minutes: 8 });
+  });
   it('không có môn nào → done', () => {
     expect(pickHeroState({ due: [], subjects: [], levels: {} })).toEqual({ kind: 'done' });
   });
