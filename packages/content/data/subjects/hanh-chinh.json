@@ -1,0 +1,59 @@
+{
+  "id": "hanh-chinh",
+  "title": "Luật Hành chính (vi phạm và trách nhiệm hành chính)",
+  "short": "Hành chính",
+  "chapters": [
+    {
+      "id": "v12",
+      "title": "Vấn đề 12. Vi phạm hành chính",
+      "lessons": [
+        {
+          "id": "hc12",
+          "title": "Vi phạm hành chính",
+          "concepts": [
+            "vi-pham-hanh-chinh",
+            "doi-tuong-bi-xu-phat",
+            "khong-xu-phat-vi-pham-hanh-chinh",
+            "thoi-hieu-xu-phat"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v13",
+      "title": "Vấn đề 13. Trách nhiệm hành chính",
+      "lessons": [
+        {
+          "id": "hc13",
+          "title": "Trách nhiệm hành chính",
+          "concepts": [
+            "xu-phat-vi-pham-hanh-chinh",
+            "hinh-thuc-xu-phat",
+            "canh-cao",
+            "phat-tien-hanh-chinh",
+            "tinh-tiet-giam-nhe",
+            "tinh-tiet-tang-nang",
+            "bien-phap-khac-phuc-hau-qua",
+            "xu-phat-khong-lap-bien-ban"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v14",
+      "title": "Vấn đề 14. Các biện pháp cưỡng chế hành chính",
+      "lessons": [
+        {
+          "id": "hc14",
+          "title": "Các biện pháp cưỡng chế hành chính",
+          "concepts": [
+            "cuong-che-thi-hanh-xu-phat",
+            "bien-phap-xu-ly-hanh-chinh",
+            "giao-duc-tai-xa",
+            "truong-giao-duong"
+          ]
+        }
+      ]
+    }
+  ]
+}

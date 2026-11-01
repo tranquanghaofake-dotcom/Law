@@ -1,0 +1,114 @@
+{
+ "id": "phat-tien-hanh-chinh",
+ "subject": "hanh-chinh",
+ "chapter": "v13",
+ "term": "Phạt tiền trong xử phạt vi phạm hành chính",
+ "definition": "Mức phạt tiền trong xử phạt vi phạm hành chính từ 50.000 đồng đến 1.000.000.000 đồng đối với cá nhân, từ 100.000 đồng đến 2.000.000.000 đồng đối với tổ chức, trừ trường hợp quy định tại khoản 3 Điều 24 của Luật này. Đối với khu vực nội thành của thành phố thì mức phạt tiền có thể cao hơn, nhưng tối đa không quá 02 lần mức phạt chung áp dụng đối với cùng hành vi vi phạm trong các lĩnh vực giao thông đường bộ; bảo vệ môi trường; an ninh trật tự, an toàn xã hội.",
+ "plain": "Khung chung: CÁ NHÂN 50.000 – 1 TỶ đồng; TỔ CHỨC 100.000 – 2 TỶ đồng (mức phạt tổ chức gấp 2 cá nhân cùng hành vi). Mức tối đa từng lĩnh vực: Điều 24 (30 triệu, 40 triệu, 50 triệu… đến 1 tỷ). NỘI THÀNH thành phố: có thể cao hơn, tối đa 02 lần ở giao thông đường bộ, môi trường, an ninh trật tự. Mức cụ thể: nghị định của Chính phủ (khoản 2). Người 16–18 tuổi bị phạt tiền không quá 1/2 mức người thành niên (khoản 3 Điều 134).",
+ "example": "Một công ty xả thải vượt chuẩn bị phạt theo nghị định lĩnh vực môi trường; mức phạt đối với tổ chức gấp đôi mức đối với cá nhân có cùng hành vi.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 23 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Vi-pham-hanh-chinh/Van-ban-hop-nhat-90-VBHN-VPQH-2026-Luat-Xu-ly-vi-pham-hanh-chinh-699548.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hinh-thuc-xu-phat",
+  "canh-cao"
+ ],
+ "keywords": [
+  "50.000 đồng đến 1 tỷ đối với cá nhân",
+  "100.000 đồng đến 2 tỷ đối với tổ chức",
+  "nội thành tối đa 02 lần"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Mức phạt tiền tối đa chung đối với cá nhân vi phạm hành chính là bao nhiêu (trừ khoản 3 Điều 24)?",
+   "options": [
+    "1.000.000.000 đồng",
+    "2.000.000.000 đồng",
+    "500.000.000 đồng",
+    "100.000.000 đồng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 23.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 23 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trong khu vực nội thành, mức phạt về giao thông đường bộ có thể cao hơn tối đa bao nhiêu lần?",
+   "options": [
+    "02 lần mức phạt chung",
+    "03 lần",
+    "05 lần",
+    "Không được cao hơn"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 23.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 23 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Cá nhân",
+   "right": "Tổ chức",
+   "cases": [
+    {
+     "text": "Mức phạt tối thiểu 50.000 đồng",
+     "answer": "left"
+    },
+    {
+     "text": "Mức phạt tối đa 2.000.000.000 đồng",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 23."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Mức phạt tiền từ {{50.000}} đồng đến 1.000.000.000 đồng đối với cá nhân, từ 100.000 đồng đến {{2.000.000.000}} đồng đối với tổ chức.",
+   "bank_extra": [
+    "10.000",
+    "5.000.000.000"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Khu vực nội thành có thể phạt cao hơn nhưng tối đa không quá {{02}} lần mức phạt chung.",
+   "bank_extra": [
+    "03",
+    "05"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mức phạt tiền tối đa đối với tổ chức bằng mức đối với cá nhân.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 23: tổ chức đến 2 tỷ, cá nhân đến 1 tỷ."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quy định chung về phạt tiền trong xử phạt vi phạm hành chính.",
+   "model": "Cá nhân từ 50.000 đồng đến 1 tỷ đồng, tổ chức từ 100.000 đồng đến 2 tỷ đồng, trừ khoản 3 Điều 24; nội thành có thể cao hơn tối đa 02 lần ở giao thông đường bộ, môi trường, an ninh trật tự (khoản 1 Điều 23); Chính phủ quy định khung cụ thể (khoản 2).",
+   "keywords": [
+    "50.000",
+    "1 tỷ",
+    "2 tỷ",
+    "02 lần"
+   ]
+  }
+ ]
+}

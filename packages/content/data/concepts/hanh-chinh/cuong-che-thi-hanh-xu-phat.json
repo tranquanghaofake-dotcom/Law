@@ -1,0 +1,115 @@
+{
+ "id": "cuong-che-thi-hanh-xu-phat",
+ "subject": "hanh-chinh",
+ "chapter": "v14",
+ "term": "Cưỡng chế thi hành quyết định xử phạt",
+ "definition": "Các biện pháp cưỡng chế bao gồm: a) Khấu trừ một phần lương hoặc một phần thu nhập, khấu trừ tiền từ tài khoản của cá nhân, tổ chức vi phạm; b) Kê biên tài sản có giá trị tương ứng với số tiền phạt để bán đấu giá; c) Thu tiền, tài sản khác của đối tượng bị cưỡng chế thi hành quyết định xử phạt vi phạm hành chính do cá nhân, tổ chức khác đang giữ trong trường hợp cá nhân, tổ chức sau khi vi phạm cố tình tẩu tán tài sản. d) Buộc thực hiện biện pháp khắc phục hậu quả quy định tại khoản 1 Điều 28 của Luật này.",
+ "plain": "Áp dụng khi người bị xử phạt KHÔNG TỰ NGUYỆN CHẤP HÀNH quyết định (Điều 73) hoặc không hoàn trả chi phí khắc phục hậu quả (khoản 1). Bốn biện pháp: KHẤU TRỪ lương, thu nhập, tài khoản; KÊ BIÊN tài sản để bán đấu giá; THU tiền, tài sản do người khác giữ khi cố tình TẨU TÁN; BUỘC THỰC HIỆN biện pháp khắc phục hậu quả. Đây là CƯỠNG CHẾ HÀNH CHÍNH ở giai đoạn thi hành; phân biệt với BIỆN PHÁP NGĂN CHẶN (tạm giữ người, tang vật — Điều 119 trở đi).",
+ "example": "Doanh nghiệp bị phạt 50 triệu nhưng không nộp sau thời hạn: cơ quan có thẩm quyền khấu trừ tiền từ tài khoản ngân hàng của doanh nghiệp.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 2 Điều 86 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Vi-pham-hanh-chinh/Van-ban-hop-nhat-90-VBHN-VPQH-2026-Luat-Xu-ly-vi-pham-hanh-chinh-699548.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "bien-phap-khac-phuc-hau-qua",
+  "xu-phat-khong-lap-bien-ban"
+ ],
+ "keywords": [
+  "khấu trừ lương, thu nhập, tài khoản",
+  "kê biên tài sản để bán đấu giá",
+  "thu tài sản khi tẩu tán",
+  "không tự nguyện chấp hành"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Cưỡng chế thi hành quyết định xử phạt được áp dụng khi nào?",
+   "options": [
+    "Người bị xử phạt không tự nguyện chấp hành quyết định xử phạt",
+    "Ngay khi ra quyết định",
+    "Khi người vi phạm khiếu nại",
+    "Khi vi phạm lần đầu"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 86.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 86 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Biện pháp nào là biện pháp cưỡng chế thi hành quyết định xử phạt?",
+   "options": [
+    "Kê biên tài sản có giá trị tương ứng số tiền phạt để bán đấu giá",
+    "Tạm giam người vi phạm",
+    "Phạt tù",
+    "Đưa vào trường giáo dưỡng"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 2 Điều 86.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 86 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Biện pháp cưỡng chế thi hành",
+   "right": "Không phải",
+   "cases": [
+    {
+     "text": "Khấu trừ tiền từ tài khoản",
+     "answer": "left"
+    },
+    {
+     "text": "Đưa vào cơ sở giáo dục bắt buộc",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 86, 2."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Biện pháp cưỡng chế gồm khấu trừ một phần {{lương}} hoặc thu nhập, khấu trừ tiền từ tài khoản; {{kê biên}} tài sản có giá trị tương ứng với số tiền phạt để bán đấu giá.",
+   "bank_extra": [
+    "thuế",
+    "tịch thu toàn bộ"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thu tiền, tài sản do người khác đang giữ khi người vi phạm cố tình {{tẩu tán}} tài sản.",
+   "bank_extra": [
+    "tặng cho",
+    "thừa kế"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Cưỡng chế thi hành quyết định xử phạt có thể áp dụng ngay khi người vi phạm còn trong thời hạn tự nguyện chấp hành.",
+   "answer": false,
+   "explain": "Sai. Chỉ áp dụng khi không tự nguyện chấp hành (khoản 1 Điều 86, Điều 73)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các trường hợp và biện pháp cưỡng chế thi hành quyết định xử phạt vi phạm hành chính.",
+   "model": "Áp dụng khi không tự nguyện chấp hành quyết định xử phạt hoặc không hoàn trả kinh phí khắc phục hậu quả (khoản 1); biện pháp: khấu trừ lương, thu nhập, tài khoản; kê biên tài sản bán đấu giá; thu tiền, tài sản do người khác giữ khi tẩu tán; buộc thực hiện biện pháp khắc phục hậu quả (khoản 2 Điều 86).",
+   "keywords": [
+    "không tự nguyện",
+    "khấu trừ",
+    "kê biên",
+    "tẩu tán"
+   ]
+  }
+ ]
+}

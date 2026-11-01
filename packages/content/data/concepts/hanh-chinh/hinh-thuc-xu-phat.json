@@ -1,0 +1,120 @@
+{
+ "id": "hinh-thuc-xu-phat",
+ "subject": "hanh-chinh",
+ "chapter": "v13",
+ "term": "Các hình thức xử phạt vi phạm hành chính",
+ "definition": "Các hình thức xử phạt vi phạm hành chính bao gồm: a) Cảnh cáo; b) Phạt tiền; c) Tước quyền sử dụng giấy phép, chứng chỉ hành nghề có thời hạn hoặc đình chỉ hoạt động có thời hạn; d) Tịch thu tang vật vi phạm hành chính, phương tiện được sử dụng để vi phạm hành chính (sau đây gọi chung là tang vật, phương tiện vi phạm hành chính); đ) Trục xuất. Hình thức xử phạt quy định tại điểm a và điểm b khoản 1 Điều này chỉ được quy định và áp dụng là hình thức xử phạt chính.",
+ "plain": "Năm hình thức: CẢNH CÁO, PHẠT TIỀN (chỉ là hình thức CHÍNH); TƯỚC GIẤY PHÉP/ĐÌNH CHỈ HOẠT ĐỘNG có thời hạn, TỊCH THU tang vật, phương tiện, TRỤC XUẤT (có thể là CHÍNH hoặc BỔ SUNG). Mỗi vi phạm: MỘT hình thức chính, có thể một hoặc nhiều hình thức bổ sung (khoản 3). Phân biệt với BIỆN PHÁP KHẮC PHỤC HẬU QUẢ (Điều 28) và hình phạt trong BLHS.",
+ "example": "Chạy xe quá tốc độ: phạt tiền (chính) + tước giấy phép lái xe có thời hạn (bổ sung).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, đoạn 1 khoản 2 Điều 21 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Vi-pham-hanh-chinh/Van-ban-hop-nhat-90-VBHN-VPQH-2026-Luat-Xu-ly-vi-pham-hanh-chinh-699548.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "canh-cao",
+  "phat-tien",
+  "bien-phap-khac-phuc-hau-qua"
+ ],
+ "keywords": [
+  "cảnh cáo, phạt tiền chỉ là hình thức chính",
+  "tước giấy phép, tịch thu, trục xuất",
+  "một hình thức chính",
+  "bổ sung"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hình thức xử phạt nào chỉ được áp dụng là hình thức xử phạt chính?",
+   "options": [
+    "Cảnh cáo và phạt tiền",
+    "Tịch thu tang vật",
+    "Trục xuất",
+    "Tước giấy phép"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 21.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 21 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Mỗi vi phạm hành chính được quy định bao nhiêu hình thức xử phạt chính?",
+   "options": [
+    "Một",
+    "Hai",
+    "Ba",
+    "Không giới hạn"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 21.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 21 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Chỉ là hình thức chính",
+   "right": "Có thể là chính hoặc bổ sung",
+   "cases": [
+    {
+     "text": "Phạt tiền",
+     "answer": "left"
+    },
+    {
+     "text": "Tịch thu phương tiện vi phạm",
+     "answer": "right"
+    },
+    {
+     "text": "Trục xuất",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 21."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Các hình thức xử phạt gồm cảnh cáo; phạt tiền; tước quyền sử dụng giấy phép, chứng chỉ hành nghề có thời hạn hoặc {{đình chỉ hoạt động}} có thời hạn; tịch thu tang vật, phương tiện; {{trục xuất}}.",
+   "bank_extra": [
+    "giải thể",
+    "tạm giam"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Cảnh cáo và phạt tiền chỉ được quy định và áp dụng là hình thức xử phạt {{chính}}.",
+   "bank_extra": [
+    "bổ sung",
+    "thay thế"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tịch thu tang vật chỉ có thể là hình thức xử phạt bổ sung.",
+   "answer": false,
+   "explain": "Sai. Đoạn 2 khoản 2 Điều 21: có thể là hình thức bổ sung hoặc chính."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các hình thức xử phạt vi phạm hành chính.",
+   "model": "Cảnh cáo; phạt tiền; tước quyền sử dụng giấy phép, chứng chỉ hành nghề có thời hạn hoặc đình chỉ hoạt động có thời hạn; tịch thu tang vật, phương tiện; trục xuất (khoản 1 Điều 21); cảnh cáo, phạt tiền chỉ là hình thức chính; mỗi vi phạm một hình thức chính (khoản 2, 3).",
+   "keywords": [
+    "cảnh cáo",
+    "phạt tiền",
+    "tịch thu",
+    "trục xuất"
+   ]
+  }
+ ]
+}

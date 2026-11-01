@@ -1,0 +1,120 @@
+{
+ "id": "khong-xu-phat-vi-pham-hanh-chinh",
+ "subject": "hanh-chinh",
+ "chapter": "v12",
+ "term": "Những trường hợp không xử phạt vi phạm hành chính",
+ "definition": "Không xử phạt vi phạm hành chính đối với các trường hợp sau đây: 1. Thực hiện hành vi vi phạm hành chính trong tình thế cấp thiết; 2. Thực hiện hành vi vi phạm hành chính do phòng vệ chính đáng; 3. Thực hiện hành vi vi phạm hành chính do sự kiện bất ngờ; 4. Thực hiện hành vi vi phạm hành chính do sự kiện bất khả kháng; 5. Người thực hiện hành vi vi phạm hành chính không có năng lực trách nhiệm hành chính; người thực hiện hành vi vi phạm hành chính chưa đủ tuổi bị xử phạt vi phạm hành chính theo quy định tại điểm a khoản 1 Điều 5 của Luật này.",
+ "plain": "Năm trường hợp: TÌNH THẾ CẤP THIẾT; PHÒNG VỆ CHÍNH ĐÁNG; SỰ KIỆN BẤT NGỜ; SỰ KIỆN BẤT KHẢ KHÁNG (bổ sung 2020); KHÔNG CÓ NĂNG LỰC TRÁCH NHIỆM HÀNH CHÍNH hoặc CHƯA ĐỦ TUỔI. Tương đồng với các trường hợp loại trừ TNHS (Chương IV BLHS). Phân biệt: VƯỢT QUÁ giới hạn phòng vệ, vượt quá yêu cầu tình thế cấp thiết KHÔNG được miễn mà là TÌNH TIẾT GIẢM NHẸ (khoản 3 Điều 9).",
+ "example": "Lái xe đi ngược chiều để chở người bị nạn nguy kịch đến bệnh viện khi không còn cách nào khác: có thể không bị xử phạt do tình thế cấp thiết.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 11 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Vi-pham-hanh-chinh/Van-ban-hop-nhat-90-VBHN-VPQH-2026-Luat-Xu-ly-vi-pham-hanh-chinh-699548.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "vi-pham-hanh-chinh",
+  "tinh-tiet-giam-nhe",
+  "doi-tuong-bi-xu-phat"
+ ],
+ "keywords": [
+  "tình thế cấp thiết",
+  "phòng vệ chính đáng",
+  "sự kiện bất ngờ, bất khả kháng",
+  "không có năng lực trách nhiệm hành chính"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trường hợp nào KHÔNG xử phạt vi phạm hành chính?",
+   "options": [
+    "Thực hiện hành vi do sự kiện bất khả kháng",
+    "Vi phạm lần đầu",
+    "Vi phạm do không biết luật",
+    "Vi phạm vào ban đêm"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 11.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 11 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Vi phạm do vượt quá giới hạn phòng vệ chính đáng thì sao?",
+   "options": [
+    "Vẫn bị xử phạt nhưng là tình tiết giảm nhẹ",
+    "Không bị xử phạt",
+    "Bị xử lý hình sự bắt buộc",
+    "Bị phạt gấp đôi"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 9; Điều 11.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 9, Điều 11 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Không xử phạt",
+   "right": "Tình tiết giảm nhẹ",
+   "cases": [
+    {
+     "text": "Phòng vệ chính đáng",
+     "answer": "left"
+    },
+    {
+     "text": "Vượt quá giới hạn phòng vệ chính đáng",
+     "answer": "right"
+    },
+    {
+     "text": "Sự kiện bất ngờ",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 9, 11."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Không xử phạt vi phạm hành chính khi thực hiện hành vi trong tình thế {{cấp thiết}}, do phòng vệ chính đáng, do sự kiện {{bất ngờ}}.",
+   "bank_extra": [
+    "khó khăn",
+    "cố ý"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người thực hiện hành vi vi phạm hành chính không có năng lực {{trách nhiệm hành chính}} thì không bị xử phạt.",
+   "bank_extra": [
+    "hành vi dân sự",
+    "pháp luật"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người không biết quy định pháp luật nên vi phạm thì không bị xử phạt theo Điều 11.",
+   "answer": false,
+   "explain": "Sai. Điều 11 không có trường hợp \"không biết luật\"."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các trường hợp không xử phạt vi phạm hành chính.",
+   "model": "Tình thế cấp thiết; phòng vệ chính đáng; sự kiện bất ngờ; sự kiện bất khả kháng; người không có năng lực trách nhiệm hành chính hoặc chưa đủ tuổi bị xử phạt (Điều 11).",
+   "keywords": [
+    "tình thế cấp thiết",
+    "phòng vệ chính đáng",
+    "bất khả kháng",
+    "năng lực trách nhiệm"
+   ]
+  }
+ ]
+}

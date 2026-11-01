@@ -1,0 +1,120 @@
+{
+ "id": "bien-phap-khac-phuc-hau-qua",
+ "subject": "hanh-chinh",
+ "chapter": "v13",
+ "term": "Biện pháp khắc phục hậu quả",
+ "definition": "Các biện pháp khắc phục hậu quả bao gồm: a) Buộc khôi phục lại tình trạng ban đầu; b) Buộc phá dỡ công trình, phần công trình xây dựng không có giấy phép hoặc xây dựng không đúng với giấy phép; c) Buộc thực hiện biện pháp khắc phục tình trạng ô nhiễm môi trường, lây lan dịch bệnh;",
+ "plain": "Mục đích: KHẮC PHỤC hậu quả do vi phạm gây ra (không phải trừng phạt). Các biện pháp: khôi phục tình trạng ban đầu; PHÁ DỠ công trình không phép; khắc phục ô nhiễm; buộc đưa ra khỏi lãnh thổ, tái xuất; TIÊU HỦY hàng hóa gây hại; CẢI CHÍNH thông tin sai sự thật; loại bỏ yếu tố vi phạm; THU HỒI sản phẩm kém chất lượng; NỘP LẠI SỐ LỢI BẤT HỢP PHÁP… Có thể áp dụng ĐỘC LẬP khi hết thời hiệu, không xác định được người vi phạm, người vi phạm chết… (khoản 2 Điều 65). Nguyên văn VBHN có ký hiệu chú thích ở điểm b — đã bỏ khi chuẩn hóa văn bản.",
+ "example": "Doanh nghiệp đăng tin quảng cáo sai sự thật: ngoài bị phạt tiền còn bị buộc cải chính thông tin (điểm e khoản 1 Điều 28).",
+ "source": {
+  "kind": "statute",
+  "cite": "Điểm a–c khoản 1 Điều 28 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Vi-pham-hanh-chinh/Van-ban-hop-nhat-90-VBHN-VPQH-2026-Luat-Xu-ly-vi-pham-hanh-chinh-699548.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hinh-thuc-xu-phat",
+  "thoi-hieu-xu-phat",
+  "cuong-che-thi-hanh-xu-phat"
+ ],
+ "keywords": [
+  "khôi phục lại tình trạng ban đầu",
+  "buộc phá dỡ công trình không phép",
+  "khắc phục ô nhiễm",
+  "nộp lại số lợi bất hợp pháp"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Biện pháp nào là biện pháp khắc phục hậu quả theo Điều 28?",
+   "options": [
+    "Buộc khôi phục lại tình trạng ban đầu",
+    "Cảnh cáo",
+    "Phạt tiền",
+    "Trục xuất"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 28.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 28 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Buộc phá dỡ công trình xây dựng không có giấy phép thuộc loại biện pháp nào?",
+   "options": [
+    "Biện pháp khắc phục hậu quả",
+    "Hình thức xử phạt chính",
+    "Biện pháp xử lý hành chính",
+    "Biện pháp ngăn chặn"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 1 Điều 28.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 28 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Biện pháp khắc phục hậu quả",
+   "right": "Hình thức xử phạt",
+   "cases": [
+    {
+     "text": "Buộc cải chính thông tin sai sự thật",
+     "answer": "left"
+    },
+    {
+     "text": "Cảnh cáo",
+     "answer": "right"
+    },
+    {
+     "text": "Buộc thu hồi sản phẩm kém chất lượng",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 21, 28."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Biện pháp khắc phục hậu quả gồm buộc khôi phục lại {{tình trạng ban đầu}}; buộc {{phá dỡ}} công trình xây dựng không có giấy phép.",
+   "bank_extra": [
+    "giá trị cũ",
+    "sơn lại"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Buộc thực hiện biện pháp khắc phục tình trạng ô nhiễm môi trường, lây lan {{dịch bệnh}}.",
+   "bank_extra": [
+    "tin đồn",
+    "giá cả"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Biện pháp khắc phục hậu quả là một hình thức xử phạt chính.",
+   "answer": false,
+   "explain": "Sai. Điều 21 liệt kê hình thức xử phạt; biện pháp khắc phục hậu quả quy định riêng tại Điều 28."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày các biện pháp khắc phục hậu quả.",
+   "model": "Buộc khôi phục tình trạng ban đầu; buộc phá dỡ công trình không phép, sai phép; buộc khắc phục ô nhiễm, dịch bệnh; buộc đưa ra khỏi lãnh thổ, tái xuất; buộc tiêu hủy hàng hóa gây hại; buộc cải chính thông tin; loại bỏ yếu tố vi phạm; thu hồi sản phẩm; nộp lại số lợi bất hợp pháp… (khoản 1 Điều 28).",
+   "keywords": [
+    "khôi phục",
+    "phá dỡ",
+    "cải chính",
+    "số lợi bất hợp pháp"
+   ]
+  }
+ ]
+}

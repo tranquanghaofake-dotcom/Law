@@ -1,0 +1,116 @@
+{
+ "id": "vi-pham-hanh-chinh",
+ "subject": "hanh-chinh",
+ "chapter": "v12",
+ "term": "Vi phạm hành chính",
+ "definition": "Vi phạm hành chính là hành vi có lỗi do cá nhân, tổ chức thực hiện, vi phạm quy định của pháp luật về quản lý nhà nước mà không phải là tội phạm và theo quy định của pháp luật phải bị xử phạt vi phạm hành chính.",
+ "plain": "Bốn dấu hiệu: (1) HÀNH VI (hành động hoặc không hành động); (2) TRÁI PHÁP LUẬT về quản lý nhà nước; (3) CÓ LỖI (cố ý hoặc vô ý); (4) KHÔNG PHẢI TỘI PHẠM và PHẢI BỊ XỬ PHẠT theo quy định. Chủ thể: CÁ NHÂN và TỔ CHỨC (khác tội phạm, chủ yếu là cá nhân và pháp nhân thương mại). Ranh giới với tội phạm: mức độ nguy hiểm; vụ việc có dấu hiệu tội phạm phải chuyển cơ quan tiến hành tố tụng, cấm giữ lại để xử lý hành chính (khoản 1 Điều 12).",
+ "example": "Đi xe máy vượt đèn đỏ: vi phạm hành chính (hành vi có lỗi, trái quy định giao thông, chưa đến mức tội phạm, bị xử phạt theo nghị định).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 2 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Vi-pham-hanh-chinh/Van-ban-hop-nhat-90-VBHN-VPQH-2026-Luat-Xu-ly-vi-pham-hanh-chinh-699548.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "doi-tuong-bi-xu-phat",
+  "xu-phat-vi-pham-hanh-chinh",
+  "khong-xu-phat-vi-pham-hanh-chinh"
+ ],
+ "keywords": [
+  "hành vi có lỗi",
+  "cá nhân, tổ chức",
+  "vi phạm pháp luật về quản lý nhà nước",
+  "không phải là tội phạm"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Vi phạm hành chính có dấu hiệu nào sau đây?",
+   "options": [
+    "Hành vi có lỗi, vi phạm pháp luật về quản lý nhà nước, không phải tội phạm, phải bị xử phạt",
+    "Hành vi gây thiệt hại trên 100 triệu",
+    "Hành vi vi phạm đạo đức",
+    "Hành vi vi phạm hợp đồng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 2.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 2 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chủ thể của vi phạm hành chính gồm những ai?",
+   "options": [
+    "Cá nhân, tổ chức",
+    "Chỉ cá nhân",
+    "Chỉ tổ chức",
+    "Chỉ cán bộ, công chức"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 2.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 2 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Vi phạm hành chính",
+   "right": "Không phải vi phạm hành chính",
+   "cases": [
+    {
+     "text": "Đỗ xe sai quy định",
+     "answer": "left"
+    },
+    {
+     "text": "Hai bên không trả tiền theo hợp đồng mua bán",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 2."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Vi phạm hành chính là hành vi có {{lỗi}} do cá nhân, tổ chức thực hiện, vi phạm quy định của pháp luật về {{quản lý nhà nước}} mà không phải là tội phạm.",
+   "bank_extra": [
+    "thiệt hại",
+    "hợp đồng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Vi phạm hành chính theo quy định của pháp luật phải bị {{xử phạt}} vi phạm hành chính.",
+   "bank_extra": [
+    "truy tố",
+    "kỷ luật"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Vi phạm hành chính có thể là tội phạm nếu gây hậu quả nhỏ.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 2: vi phạm hành chính \"không phải là tội phạm\"."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm và các dấu hiệu của vi phạm hành chính.",
+   "model": "Là hành vi có lỗi do cá nhân, tổ chức thực hiện, vi phạm quy định pháp luật về quản lý nhà nước, không phải tội phạm và theo quy định phải bị xử phạt vi phạm hành chính (khoản 1 Điều 2).",
+   "keywords": [
+    "có lỗi",
+    "quản lý nhà nước",
+    "không phải tội phạm",
+    "xử phạt"
+   ]
+  }
+ ]
+}

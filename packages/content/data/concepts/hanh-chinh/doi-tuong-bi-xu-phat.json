@@ -1,0 +1,120 @@
+{
+ "id": "doi-tuong-bi-xu-phat",
+ "subject": "hanh-chinh",
+ "chapter": "v12",
+ "term": "Đối tượng bị xử phạt vi phạm hành chính",
+ "definition": "Người từ đủ 14 tuổi đến dưới 16 tuổi bị xử phạt vi phạm hành chính về vi phạm hành chính do cố ý; người từ đủ 16 tuổi trở lên bị xử phạt vi phạm hành chính về mọi vi phạm hành chính. (…) Tổ chức bị xử phạt vi phạm hành chính về mọi vi phạm hành chính do mình gây ra;",
+ "plain": "Tuổi: TỪ ĐỦ 14 ĐẾN DƯỚI 16 — chỉ vi phạm do CỐ Ý; TỪ ĐỦ 16 — MỌI vi phạm. TỔ CHỨC — mọi vi phạm do mình gây ra. Cá nhân, tổ chức NƯỚC NGOÀI vi phạm trên lãnh thổ, vùng tiếp giáp lãnh hải, vùng đặc quyền kinh tế, thềm lục địa, tàu bay, tàu biển Việt Nam → xử phạt theo pháp luật Việt Nam (điểm c). Quân nhân, công an vi phạm hành chính bị xử lý như công dân khác. Người chưa thành niên: hình thức nhẹ hơn (cảnh cáo với người 14–16; phạt tiền không quá 1/2 mức của người thành niên).",
+ "example": "Học sinh 15 tuổi vô ý làm vỡ biển báo giao thông: không bị xử phạt vi phạm hành chính (chỉ xử phạt người 14–16 tuổi khi cố ý).",
+ "source": {
+  "kind": "statute",
+  "cite": "Đoạn 1 điểm a, điểm b khoản 1 Điều 5 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Vi-pham-hanh-chinh/Van-ban-hop-nhat-90-VBHN-VPQH-2026-Luat-Xu-ly-vi-pham-hanh-chinh-699548.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "vi-pham-hanh-chinh",
+  "khong-xu-phat-vi-pham-hanh-chinh",
+  "canh-cao"
+ ],
+ "keywords": [
+  "từ đủ 14 đến dưới 16 do cố ý",
+  "từ đủ 16 mọi vi phạm",
+  "tổ chức mọi vi phạm",
+  "người nước ngoài"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người từ đủ 14 đến dưới 16 tuổi bị xử phạt vi phạm hành chính về loại vi phạm nào?",
+   "options": [
+    "Vi phạm hành chính do cố ý",
+    "Mọi vi phạm",
+    "Chỉ vi phạm giao thông",
+    "Không bị xử phạt"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 5.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 5 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người từ đủ bao nhiêu tuổi bị xử phạt về mọi vi phạm hành chính?",
+   "options": [
+    "Từ đủ 16 tuổi",
+    "Từ đủ 14 tuổi",
+    "Từ đủ 18 tuổi",
+    "Từ đủ 15 tuổi"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 5.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 5 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Bị xử phạt",
+   "right": "Không bị xử phạt",
+   "cases": [
+    {
+     "text": "Người 15 tuổi cố ý vẽ bậy lên tài sản công",
+     "answer": "left"
+    },
+    {
+     "text": "Người 15 tuổi vô ý vi phạm",
+     "answer": "right"
+    },
+    {
+     "text": "Người 17 tuổi vô ý vi phạm",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 5."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người từ đủ 14 tuổi đến dưới 16 tuổi bị xử phạt vi phạm hành chính về vi phạm hành chính do {{cố ý}}; người từ đủ {{16}} tuổi trở lên bị xử phạt về mọi vi phạm hành chính.",
+   "bank_extra": [
+    "vô ý",
+    "18"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "{{Tổ chức}} bị xử phạt vi phạm hành chính về mọi vi phạm hành chính do mình gây ra.",
+   "bank_extra": [
+    "Hộ gia đình",
+    "Cơ quan nhà nước cấp trên"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quân nhân vi phạm hành chính được miễn xử phạt hành chính.",
+   "answer": false,
+   "explain": "Sai. Điểm a khoản 1 Điều 5: bị xử lý như đối với công dân khác."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày đối tượng bị xử phạt vi phạm hành chính.",
+   "model": "Người từ đủ 14 đến dưới 16 tuổi bị xử phạt về vi phạm do cố ý; từ đủ 16 tuổi về mọi vi phạm; tổ chức về mọi vi phạm do mình gây ra; cá nhân, tổ chức nước ngoài vi phạm trong phạm vi lãnh thổ… (khoản 1 Điều 5).",
+   "keywords": [
+    "14 tuổi",
+    "cố ý",
+    "16 tuổi",
+    "tổ chức"
+   ]
+  }
+ ]
+}

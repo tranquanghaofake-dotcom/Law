@@ -1,0 +1,116 @@
+{
+ "id": "xu-phat-vi-pham-hanh-chinh",
+ "subject": "hanh-chinh",
+ "chapter": "v13",
+ "term": "Xử phạt vi phạm hành chính và nguyên tắc xử phạt",
+ "definition": "Xử phạt vi phạm hành chính là việc người có thẩm quyền xử phạt áp dụng hình thức xử phạt, biện pháp khắc phục hậu quả đối với cá nhân, tổ chức thực hiện hành vi vi phạm hành chính theo quy định của pháp luật về xử phạt vi phạm hành chính. (…) d) Chỉ xử phạt vi phạm hành chính khi có hành vi vi phạm hành chính do pháp luật quy định. Một hành vi vi phạm hành chính chỉ bị xử phạt một lần. Nhiều người cùng thực hiện một hành vi vi phạm hành chính thì mỗi người vi phạm đều bị xử phạt về hành vi vi phạm hành chính đó.",
+ "plain": "Trách nhiệm hành chính được thực hiện qua XỬ PHẠT: do NGƯỜI CÓ THẨM QUYỀN, áp dụng HÌNH THỨC XỬ PHẠT và BIỆN PHÁP KHẮC PHỤC HẬU QUẢ. Nguyên tắc quan trọng: PHÁP CHẾ (chỉ xử phạt khi có hành vi do pháp luật quy định); MỘT HÀNH VI CHỈ BỊ XỬ PHẠT MỘT LẦN; nhiều người cùng thực hiện → MỖI NGƯỜI đều bị xử phạt; nhiều hành vi → xử phạt TỪNG HÀNH VI; người có thẩm quyền phải CHỨNG MINH vi phạm (điểm đ); nhanh chóng, công khai, khách quan, công bằng.",
+ "example": "Ba người cùng đổ rác trái phép xuống sông: mỗi người đều bị xử phạt về hành vi đó.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 2 Điều 2; điểm d khoản 1 Điều 3 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Vi-pham-hanh-chinh/Van-ban-hop-nhat-90-VBHN-VPQH-2026-Luat-Xu-ly-vi-pham-hanh-chinh-699548.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "vi-pham-hanh-chinh",
+  "hinh-thuc-xu-phat",
+  "tinh-tiet-tang-nang"
+ ],
+ "keywords": [
+  "người có thẩm quyền xử phạt",
+  "hình thức xử phạt, biện pháp khắc phục hậu quả",
+  "chỉ xử phạt một lần",
+  "mỗi người đều bị xử phạt"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Một hành vi vi phạm hành chính bị xử phạt mấy lần?",
+   "options": [
+    "Chỉ một lần",
+    "Hai lần",
+    "Tùy cơ quan",
+    "Không giới hạn"
+   ],
+   "answer": 0,
+   "explain": "Điểm d khoản 1 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 3 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nhiều người cùng thực hiện một hành vi vi phạm hành chính thì sao?",
+   "options": [
+    "Mỗi người vi phạm đều bị xử phạt về hành vi đó",
+    "Chỉ người cầm đầu bị xử phạt",
+    "Chia đều một mức phạt",
+    "Không ai bị xử phạt"
+   ],
+   "answer": 0,
+   "explain": "Điểm d khoản 1 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 3 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Đúng nguyên tắc",
+   "right": "Sai nguyên tắc",
+   "cases": [
+    {
+     "text": "Xử phạt từng hành vi khi một người thực hiện nhiều hành vi",
+     "answer": "left"
+    },
+    {
+     "text": "Xử phạt hai lần một hành vi",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 3."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "{{Một}} hành vi vi phạm hành chính chỉ bị xử phạt một lần; chỉ xử phạt khi có hành vi vi phạm hành chính do {{pháp luật}} quy định.",
+   "bank_extra": [
+    "Hai",
+    "tập quán"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Xử phạt vi phạm hành chính là việc người có thẩm quyền áp dụng hình thức xử phạt, biện pháp {{khắc phục hậu quả}}.",
+   "bank_extra": [
+    "giáo dục",
+    "khen thưởng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Một người thực hiện nhiều hành vi vi phạm thì chỉ bị xử phạt một lần cho hành vi nặng nhất.",
+   "answer": false,
+   "explain": "Sai. Điểm d khoản 1 Điều 3: bị xử phạt về từng hành vi (trừ trường hợp vi phạm nhiều lần là tình tiết tăng nặng)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm xử phạt vi phạm hành chính và một số nguyên tắc xử phạt.",
+   "model": "Xử phạt là việc người có thẩm quyền áp dụng hình thức xử phạt, biện pháp khắc phục hậu quả với người vi phạm (khoản 2 Điều 2); nguyên tắc: chỉ xử phạt khi có hành vi do pháp luật quy định; một hành vi chỉ xử phạt một lần; nhiều người cùng vi phạm thì mỗi người đều bị xử phạt; xử phạt từng hành vi (Điều 3).",
+   "keywords": [
+    "thẩm quyền",
+    "một lần",
+    "mỗi người",
+    "từng hành vi"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,119 @@
+{
+ "id": "tinh-tiet-giam-nhe",
+ "subject": "hanh-chinh",
+ "chapter": "v13",
+ "term": "Tình tiết giảm nhẹ",
+ "definition": "Những tình tiết sau đây là tình tiết giảm nhẹ: 1. Người vi phạm hành chính đã có hành vi ngăn chặn, làm giảm bớt hậu quả của vi phạm hoặc tự nguyện khắc phục hậu quả, bồi thường thiệt hại; 2. Người vi phạm hành chính đã tự nguyện khai báo, thành thật hối lỗi; tích cực giúp đỡ cơ quan chức năng phát hiện vi phạm hành chính, xử lý vi phạm hành chính; 3. Vi phạm hành chính trong tình trạng bị kích động về tinh thần do hành vi trái pháp luật của người khác gây ra; vượt quá giới hạn phòng vệ chính đáng; vượt quá yêu cầu của tình thế cấp thiết;",
+ "plain": "Tám nhóm: ngăn chặn, khắc phục hậu quả; tự nguyện khai báo, hối lỗi; bị kích động, VƯỢT QUÁ phòng vệ chính đáng, VƯỢT QUÁ tình thế cấp thiết; bị ép buộc, lệ thuộc; PHỤ NỮ MANG THAI, người già yếu, bệnh tật hạn chế nhận thức; hoàn cảnh ĐẶC BIỆT KHÓ KHĂN không do mình gây ra; TRÌNH ĐỘ LẠC HẬU; tình tiết khác do Chính phủ quy định. Hệ quả: mức phạt thường giảm xuống dưới mức trung bình của khung (theo nghị định).",
+ "example": "Người vi phạm tự nguyện tháo dỡ phần công trình lấn chiếm trước khi bị xử phạt: có tình tiết giảm nhẹ (khoản 1 Điều 9).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1–3 Điều 9 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Vi-pham-hanh-chinh/Van-ban-hop-nhat-90-VBHN-VPQH-2026-Luat-Xu-ly-vi-pham-hanh-chinh-699548.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tinh-tiet-tang-nang",
+  "khong-xu-phat-vi-pham-hanh-chinh"
+ ],
+ "keywords": [
+  "tự nguyện khắc phục hậu quả",
+  "thành thật hối lỗi",
+  "vượt quá giới hạn phòng vệ chính đáng",
+  "phụ nữ mang thai"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tình tiết nào là tình tiết giảm nhẹ trong xử phạt vi phạm hành chính?",
+   "options": [
+    "Người vi phạm tự nguyện khắc phục hậu quả, bồi thường thiệt hại",
+    "Vi phạm có tổ chức",
+    "Tái phạm",
+    "Lợi dụng chức vụ"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 9.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 9 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Vi phạm do vượt quá yêu cầu của tình thế cấp thiết là gì?",
+   "options": [
+    "Tình tiết giảm nhẹ",
+    "Trường hợp không xử phạt",
+    "Tình tiết tăng nặng",
+    "Căn cứ chuyển hình sự"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 9.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 9 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Giảm nhẹ",
+   "right": "Tăng nặng",
+   "cases": [
+    {
+     "text": "Thành thật hối lỗi",
+     "answer": "left"
+    },
+    {
+     "text": "Vi phạm nhiều lần",
+     "answer": "right"
+    },
+    {
+     "text": "Phụ nữ mang thai vi phạm",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 9, 10."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người vi phạm đã tự nguyện {{khai báo}}, thành thật {{hối lỗi}} là tình tiết giảm nhẹ.",
+   "bank_extra": [
+    "che giấu",
+    "im lặng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Vi phạm hành chính vì hoàn cảnh đặc biệt khó khăn mà không do {{mình}} gây ra là tình tiết giảm nhẹ.",
+   "bank_extra": [
+    "người khác",
+    "Nhà nước"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Vượt quá giới hạn phòng vệ chính đáng là trường hợp không xử phạt vi phạm hành chính.",
+   "answer": false,
+   "explain": "Sai. Đây là tình tiết giảm nhẹ (khoản 3 Điều 9); chỉ phòng vệ chính đáng mới không xử phạt."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các tình tiết giảm nhẹ trong xử phạt vi phạm hành chính.",
+   "model": "Ngăn chặn, giảm hậu quả, tự nguyện khắc phục, bồi thường; tự nguyện khai báo, hối lỗi; bị kích động, vượt quá phòng vệ chính đáng, vượt quá tình thế cấp thiết; bị ép buộc, lệ thuộc; phụ nữ mang thai, người già yếu, bệnh tật; hoàn cảnh đặc biệt khó khăn; trình độ lạc hậu; tình tiết khác do Chính phủ quy định (Điều 9).",
+   "keywords": [
+    "khắc phục",
+    "hối lỗi",
+    "vượt quá",
+    "khó khăn"
+   ]
+  }
+ ]
+}
