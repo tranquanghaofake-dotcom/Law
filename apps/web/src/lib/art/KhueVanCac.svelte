@@ -1,42 +1,64 @@
-<!-- Gác hai tầng mái cong, cửa sổ tròn toả tia (cảm hứng Khuê Văn Các — không phải bản vẽ kiến trúc). -->
+<!-- Gác hai tầng mái, cửa sổ tròn toả tia, hồ sen phía trước (cảm hứng Khuê Văn Các — cách điệu). Khung 520×325. -->
 <script lang="ts">
   import Clouds from './Clouds.svelte';
-  const spokes = Array.from({ length: 8 }, (_, i) => (i * Math.PI) / 4);
+  import Lantern from './parts/Lantern.svelte';
+  import Lotus from './parts/Lotus.svelte';
+  import Pad from './parts/Pad.svelte';
+  import { bricks, tiles, spokes, balustrade, ripples } from './kit';
 </script>
 
-<Clouds />
-<!-- bệ, bậc -->
-<rect class="f-card s-line" x="78" y="172" width="164" height="14" />
-<path class="s-line s-thin" d="M78 179h164" />
-<!-- tầng dưới: trụ gạch + ba vòm -->
-<rect class="f-card s-line" x="92" y="124" width="136" height="48" />
-<g class="f-void">
-  <path d="M110 172v-26a13 13 0 0 1 26 0v26z" />
-  <path d="M147 172v-28a13 13 0 0 1 26 0v28z" />
-  <path d="M184 172v-26a13 13 0 0 1 26 0v26z" />
+<Clouds cy={146} r={122} />
+<!-- công trình vẽ ở hệ toạ độ gốc 520×440 rồi thu 0.75 cho đáy bệ chạm mặt đất -->
+<g transform="translate(65 0) scale(.75)">
+  <!-- bệ, bậc -->
+  <path class="f-shade k" d="M100 386h320v14H100z" stroke-width="2" />
+  <path class="f-card k" d="M120 372h280v14H120z" stroke-width="2" />
+  <path class="k" d="M226 372v28M294 372v28M226 386h68M236 379h48M236 393h48" stroke-width="1.2" />
+  <!-- tầng dưới: tường gạch, mặt phải khuất bóng -->
+  <rect class="f-card" x="150" y="270" width="220" height="102" />
+  <rect class="f-shade" x="292" y="270" width="78" height="102" />
+  <path class="kw" d={bricks(150, 282, 220, 90, 9, 22)} stroke-width="1" />
+  <rect class="k" x="150" y="270" width="220" height="102" stroke-width="2" />
+  <rect class="f-seal2 k" x="146" y="270" width="228" height="12" stroke-width="1.6" />
+  <path class="ka" d="M154 276h212" stroke-width="1.2" stroke-dasharray="6 4" />
+  <g class="f-void ka" stroke-width="2.5">
+    <path d="M172 372v-44a20 20 0 0 1 40 0v44z" /><path d="M240 372v-50a20 20 0 0 1 40 0v50z" /><path d="M308 372v-44a20 20 0 0 1 40 0v44z" />
+  </g>
+  <path class="ks" d="M250 322v50M270 322v50M182 330v42M202 330v42M318 330v42M338 330v42" stroke-width="1" />
+  <!-- trụ góc -->
+  <g class="f-card k" stroke-width="1.6"><rect x="150" y="282" width="10" height="90" /><rect x="360" y="282" width="10" height="90" /></g>
+  <!-- mái dưới -->
+  <path class="f-seal k" d="M76 236q22 30 50 30h268q28 0 50-30q-36 10-76-4H152q-40 14-76 4z" stroke-width="2" />
+  <path class="ks" d={tiles(104, 416, 240, 262, 9, 0.05)} stroke-width="1.5" />
+  <path class="ks" d="M98 244q14 14 32 16h260q18-2 32-16" stroke-width="2.5" />
+  <path class="ka" d="M152 232h216" stroke-width="5" />
+  <path class="ka" d="M76 236q-6-8 0-14q6-2 8 4M444 236q6-8 0-14q-6-2-8 4" stroke-width="3" />
+  <!-- lan can tầng trên -->
+  <rect class="f-cream k" x="178" y="222" width="164" height="12" stroke-width="1.6" />
+  <path class="k" d={balustrade(178, 222, 164, 12, 8)} stroke-width="1" />
+  <!-- gác gỗ -->
+  <rect class="f-seal2 k" x="186" y="182" width="148" height="40" stroke-width="2" />
+  <path class="ka" d="M200 182v40M320 182v40M186 190h148" stroke-width="2" />
+  <path class="ka" d="M208 196h16v18h-16zM296 196h16v18h-16z" stroke-width="1.2" />
+  <circle class="f-acc k" cx="260" cy="204" r="25" stroke-width="2" />
+  <circle class="f-void" cx="260" cy="204" r="20.5" />
+  <path class="ka" d={spokes(260, 204, 7, 20, 12)} stroke-width="2.4" />
+  <circle class="ka" cx="260" cy="204" r="7" stroke-width="2" />
+  <!-- mái trên -->
+  <path class="f-seal k" d="M140 150q18 26 44 26h152q26 0 44-26q-30 9-64-6h-112q-34 15-64 6z" stroke-width="2" />
+  <path class="ks" d={tiles(170, 350, 154, 172, 8, 0.06)} stroke-width="1.5" />
+  <path class="ks" d="M156 160q12 12 28 14h152q16-2 28-14" stroke-width="2.5" />
+  <path class="ka" d="M204 142h112" stroke-width="6" />
+  <path class="ka" d="M204 142q-14-6-8-22q8-6 14 2q-2 8-10 6M316 142q14-6 8-22q-8-6-14 2q2 8 10 6M140 150q-6-10 2-16q6 0 6 6M380 150q6-10-2-16q-6 0-6 6" stroke-width="3" />
+  <!-- ngọc + lửa trên nóc -->
+  <path class="f-acc k" d="M260 98c-8 10-10 18-6 26h12c4-8 2-16-6-26z" stroke-width="1.5" />
+  <circle class="f-seal ka" cx="260" cy="130" r="9" stroke-width="3" />
 </g>
-<path class="s-line s-thin" d="M92 132h136M100 140v26M220 140v26" />
-<!-- mái dưới, đầu đao cong -->
-<path class="f-seal s-line" d="M58 110q12 14 26 14h152q14 0 26-14q-20 6-44-2h-116q-24 8-44 2z" />
-<path class="s-line s-thin s-paper" d="M96 116h128M106 112l-4 10M128 110v12M150 110v12M170 110v12M192 110v12M214 112l4 10" />
-<path class="s-line s-bold" d="M104 108h112" />
-<!-- tầng trên: lan can + cửa sổ tròn -->
-<rect class="f-card s-line" x="116" y="72" width="88" height="36" />
-<path class="s-line s-thin" d="M116 101h88M124 101v7M134 101v7M186 101v7M196 101v7" />
-<circle class="f-void" cx="160" cy="88" r="13" />
-<g class="s-line s-paper s-thin">
-  {#each spokes as a (a)}<path d="M{160 + Math.cos(a) * 4} {88 + Math.sin(a) * 4}L{160 + Math.cos(a) * 11} {88 + Math.sin(a) * 11}" />{/each}
-  <circle cx="160" cy="88" r="4" />
-</g>
-<!-- mái trên -->
-<path class="f-seal s-line" d="M90 60q10 12 22 12h96q12 0 22-12q-16 5-36-3h-68q-20 8-36 3z" />
-<path class="s-line s-bold" d="M126 56h68" />
-<path class="s-line" d="M126 56q-6-4-2-10M194 56q6-4 2-10" />
-<circle class="f-acc s-line" cx="160" cy="48" r="5" />
-<path class="s-line s-thin" d="M160 43v-5" />
-<!-- đèn lồng treo ở đầu đao -->
-<g class="s-line s-thin"><path d="M94 62v12M226 62v12" /></g>
-<g class="f-seal s-line s-thin">
-  <rect x="89" y="74" width="10" height="13" rx="4" />
-  <rect x="221" y="74" width="10" height="13" rx="4" />
-</g>
+<!-- đèn lồng ở đầu đao -->
+<Lantern x={174.5} y={112.5} len={14} s={0.9} />
+<Lantern x={345.5} y={112.5} len={14} s={0.9} />
+<!-- hồ sen tiền cảnh -->
+<path class="f-water" d="M0 300q130-10 260-4t260 4v25H0z" />
+<path class="kw" d={ripples(10, 308, 500, 2, 7)} stroke-width="1.3" />
+<Pad x={46} y={304} r={22} /><Pad x={104} y={316} r={15} /><Pad x={430} y={306} r={24} /><Pad x={486} y={318} r={15} />
+<Lotus x={70} y={300} s={0.95} stem={6} /><Lotus x={452} y={300} s={1.05} stem={6} /><Lotus x={124} y={312} s={0.6} stem={4} />

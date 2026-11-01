@@ -365,6 +365,10 @@ kbd { font: 600 11px/1 var(--font-ui); background: rgba(255,255,255,.18); border
   --hill: color-mix(in srgb, var(--ok) 22%, var(--paper)); --hill2: color-mix(in srgb, var(--ok) 48%, var(--paper));
   --water: color-mix(in srgb, var(--ink) 9%, var(--paper)); --leaf: color-mix(in srgb, var(--ok) 70%, var(--paper));
   --lotus: color-mix(in srgb, var(--seal) 40%, var(--paper)); --gold: color-mix(in srgb, var(--accent) 75%, #f6d27a);
+  --lotus2: color-mix(in srgb, var(--seal) 62%, var(--paper)); --leaf2: color-mix(in srgb, var(--ok) 38%, var(--paper));
+  --seal2: color-mix(in srgb, var(--seal) 72%, var(--ink)); --acc2: color-mix(in srgb, var(--accent) 62%, var(--ink));
+  --shade: color-mix(in srgb, var(--ink) 9%, var(--card)); --cream: color-mix(in srgb, var(--accent) 12%, var(--card));
+  --sunline: color-mix(in srgb, var(--accent) 45%, var(--sun));
 }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --void: #070b14; } }
 :root[data-theme="dark"] { --void: #070b14; }
@@ -386,6 +390,13 @@ body::before {
 .art .s-sunline { fill: none; stroke: color-mix(in srgb, var(--accent) 45%, var(--sun)); stroke-width: 1.2; }
 .art .s-goldline { fill: none; stroke: var(--gold); stroke-width: 1.6; }
 .art .s-water { stroke: color-mix(in srgb, var(--ink) 30%, var(--paper)); }
+.art .f-lotus2 { fill: var(--lotus2); } .art .f-leaf2 { fill: var(--leaf2); } .art .f-seal2 { fill: var(--seal2); }
+.art .f-acc2 { fill: var(--acc2); } .art .f-shade { fill: var(--shade); } .art .f-cream { fill: var(--cream); }
+/* nét tô theo độ dày đặt trong SVG (tranh khung 520×325): k mực · kp nền thẻ · ka cam · ks đỏ sẫm · kg vành mặt trời · kw gợn nước */
+.art .k { stroke: var(--ink); } .art .kp { stroke: var(--card); } .art .ka { stroke: var(--accent); }
+.art .ks { stroke: var(--seal2); } .art .kg { stroke: var(--sunline); } .art .kw { stroke: color-mix(in srgb, var(--ink) 28%, var(--paper)); }
+.art :is(.k, .kp, .ka, .ks, .kg, .kw) { stroke-linecap: round; stroke-linejoin: round; }
+.art :is(.k, .kp, .ka, .ks, .kg, .kw):not([class*="f-"]) { fill: none; }
 .art .art-title { font: 800 22px/1 var(--font-quote); letter-spacing: .08em; }
 .art .s-line { stroke: var(--ink); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
 .art .s-line:not([class*="f-"]) { fill: none; }
