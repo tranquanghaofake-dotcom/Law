@@ -641,15 +641,16 @@ h1 { text-wrap: balance; }
 .sc-plaque { margin: 0; font: 800 clamp(13px, calc(6.4cqw - var(--len) * .1cqw), 24px)/1.12 var(--font-display); letter-spacing: .03em; text-transform: uppercase; text-wrap: balance;
   background: linear-gradient(180deg, #f6e3a6, #c99a4a 62%, #f1d896); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .sc-sub { margin: .8cqw 0 0; font: 600 clamp(10px, 2.7cqw, 13px)/1.2 var(--font-ui); letter-spacing: .08em; color: #bfa874; }
-.sc-window { position: relative; aspect-ratio: 3 / 4; overflow: hidden; border-radius: 3px; background: #1a120c;
+.sc-window { position: relative; aspect-ratio: 3 / 4; overflow: hidden; border-radius: 3px; background: radial-gradient(80% 60% at 50% 30%, #fbf7ee, #efe6d4 70%, #e2d6bf);
   box-shadow: 0 0 0 1px rgba(227, 194, 122, .45), 0 0 0 4px #1b130d, 0 0 0 5px rgba(0, 0, 0, .5); }
-.sc-photo { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s cubic-bezier(.2, .8, .2, 1), filter .6s ease; filter: saturate(.92) contrast(1.02); }
-.showcase:hover .sc-photo { transform: scale(1.025); filter: saturate(1) contrast(1.04); }
-.sc-window::after { content: ""; position: absolute; inset: 0; pointer-events: none; box-shadow: inset 0 0 6cqw rgba(0, 0, 0, .55), inset 0 -1px 0 rgba(255, 255, 255, .06); }
+.sc-photo { position: absolute; inset: 4% 6% 2%; transition: transform 1.2s cubic-bezier(.2, .8, .2, 1); filter: drop-shadow(0 6px 8px rgba(60, 40, 20, .22)); }
+.sc-photo .garment { display: block; width: 100%; height: 100%; }
+.showcase:hover .sc-photo { transform: translateY(-1%) scale(1.015); }
+.sc-window::after { content: ""; position: absolute; inset: 0; pointer-events: none; box-shadow: inset 0 0 5cqw rgba(70, 45, 20, .28), inset 0 2.5cqw 3cqw -2cqw rgba(0, 0, 0, .35); }
 .fx-nang .sc-window::before, .fx-trong-dong .sc-window::before, .fx-khung-vang .sc-window::before, .fx-hat-sang .sc-window::before { content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none; mix-blend-mode: soft-light;
   background: radial-gradient(70% 50% at 50% 12%, rgba(255, 220, 150, .7), transparent 70%); }
 .sc-drum .sun-spin { transform-box: fill-box; transform-origin: center; animation: sunspin 180s linear infinite; }
-.sc-drum { position: absolute; left: 10%; top: 6%; width: 80%; z-index: 1; opacity: .28; mix-blend-mode: screen; pointer-events: none; }
+.sc-drum { position: absolute; left: 10%; top: 6%; width: 80%; z-index: 0; opacity: .22; mix-blend-mode: multiply; pointer-events: none; }
 .sc-spark { position: absolute; z-index: 2; width: 4px; height: 4px; border-radius: 50%; background: #fff3c4; box-shadow: 0 0 6px 2px rgba(255, 228, 160, .7); animation: twinkle 2.4s ease-in-out infinite alternate; }
 .fx-khung-vang, .fx-hat-sang { box-shadow: 0 0 0 2px #c99a4a, 0 0 0 3px rgba(0, 0, 0, .4), 0 18px 36px -12px rgba(0, 0, 0, .45); }
 .sc-glass { position: absolute; inset: 0; z-index: 3; pointer-events: none; background: linear-gradient(115deg, transparent 18%, rgba(255, 255, 255, .07) 26%, transparent 34%, transparent 64%, rgba(255, 255, 255, .04) 70%, transparent 76%); transition: transform 1.2s ease; }

@@ -3,20 +3,18 @@
 </script>
 
 <script lang="ts">
-  // Tủ trưng bày bộ đồ theo chức danh: biển đồng ghi chức danh, ô kính có ảnh bộ đồ treo (ảnh tạo bằng AI trong Figma,
-  // lưu ở static/art/tu/), bục gỗ bày sách và phụ kiện. Ảnh không có quân hàm, cấp hiệu, Quốc huy hay huân chương thật;
-  // cầu vai kiểm sát là dải đỏ trơn. `avatar.outfit` là trang phục đã giải theo chức danh.
+  // Tủ trưng bày bộ đồ theo chức danh: biển đồng ghi chức danh, ô kính có bản vẽ kỹ thuật bộ đồ (GarmentFlat),
+  // bục gỗ bày sách và phụ kiện. Không quân hàm, cấp hiệu, Quốc huy hay huân chương thật.
+  // `avatar.outfit` là trang phục đã giải theo chức danh.
   import type { Avatar } from '$lib/game/wardrobe';
   import BookSpine from './BookSpine.svelte';
+  import GarmentFlat from './GarmentFlat.svelte';
   import type { BookScheme } from '$lib/ui/shelf';
   import type { BookLevel } from '$lib/game/books';
   import { ring } from './kit';
   type ShelfBook = { key: string; scheme: BookScheme; level: BookLevel; label: string };
   let { avatar, title = 'Công dân', subtitle = '', books = [] }:
     { avatar: Avatar; title?: string; subtitle?: string; accent?: string; books?: ShelfBook[]; medals?: number } = $props();
-  const IMAGES = ['thuong-phuc', 'cong-so', 'vest-xanh', 'vest-den', 'ao-choang', 'ks-xuan-he', 'ks-thu-dong', 'ao-dai'];
-  const base = import.meta.env.BASE_URL ?? '/';
-  const src = $derived(`${base}art/tu/${IMAGES.includes(avatar.outfit) ? avatar.outfit : 'thuong-phuc'}.webp`);
   const uid = `pt${++seq}`;
   const sparks = [[22, 30], [78, 24], [16, 62], [84, 58], [50, 14], [30, 80], [70, 78]];
 </script>
@@ -27,7 +25,7 @@
     {#if subtitle}<p class="sc-sub">{subtitle}</p>{/if}
   </header>
   <div class="sc-window">
-    <img class="sc-photo" {src} alt="" width="600" height="800" loading="lazy" decoding="async" />
+    <div class="sc-photo"><GarmentFlat outfit={avatar.outfit} /></div>
     {#if avatar.effect === 'trong-dong' || avatar.effect === 'khung-vang' || avatar.effect === 'hat-sang'}
       <svg class="sc-drum" viewBox="0 0 200 200" aria-hidden="true" focusable="false">
         <g class="sun-spin"><path d={ring(100, 100, 84, 96, 48)} fill="#e9c77a" /><circle cx="100" cy="100" r="76" fill="none" stroke="#e9c77a" stroke-width="2" stroke-dasharray="1.5 6" /></g>
