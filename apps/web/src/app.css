@@ -237,7 +237,7 @@ kbd { font: 600 11px/1 var(--font-ui); background: rgba(255,255,255,.18); border
 .node.locked .label b { color: var(--muted); font-weight: 600; }
 .node .label { display: flex; flex-direction: column; }
 .sets { display: grid; gap: 12px; margin-bottom: 12px; }
-@media (min-width: 1024px) { .sets { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 768px) { .sets { grid-template-columns: 1fr 1fr; } }
 .set { display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; align-items: center; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; text-decoration: none; box-shadow: var(--shadow); transition: transform .12s ease, border-color .12s ease; }
 .set:hover { transform: translateY(-1px); border-color: var(--accent); }
 .set h3 { margin: 0; font-size: 17px; font-weight: 600; }
@@ -270,7 +270,7 @@ kbd { font: 600 11px/1 var(--font-ui); background: rgba(255,255,255,.18); border
 /* ---- Trang môn ---- */
 .crumbs { margin: 0 0 4px; } .crumbs a { color: inherit; }
 .subject-head h1 { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
-.subject-head .row { margin: 4px 0 8px; }
+.subject-head .row { margin: 4px 0 16px; }
 .subject-head .row .btn { flex: 0 1 auto; }
 .local-nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0; }
 .local-nav a { padding: 4px 10px; border: 1px solid var(--line); border-radius: 999px; text-decoration: none; }
@@ -281,6 +281,11 @@ kbd { font: 600 11px/1 var(--font-ui); background: rgba(255,255,255,.18); border
 .subject-card .title { display: flex; align-items: center; gap: 10px; font-size: 18px; }
 .subject-card .bar { margin: 0; }
 .plain-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 4px; font-size: 14px; }
+
+/* ---- Luyện đề ---- */
+.filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 4px; }
+.filter { min-height: 36px; padding: 6px 14px; border-radius: 999px; border: 1px solid var(--line); background: var(--card); cursor: pointer; font-size: 14px; }
+.filter[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
 
 /* ---- Rail phải ---- */
 .rail-block { padding: 14px 16px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--card); margin-bottom: 12px; }

@@ -8,7 +8,7 @@
   import { gradeFor } from '$lib/game/rank';
   import { localDay } from '$lib/game/streak';
   import { hashFor } from '$lib/router.svelte';
-  import { GROUPS, sortGroups } from '$lib/ui/groups';
+  import { GROUPS, groupSets } from '$lib/ui/groups';
   import { knownConcepts, pickHeroState, type HeroState } from '$lib/ui/today';
   import { setRail } from '$lib/ui/rail.svelte';
   import HeroCard from '$lib/ui/HeroCard.svelte';
@@ -49,7 +49,7 @@
         .map((s) => { const ids = s.chapters.flatMap((c) => c.lessons.flatMap((l) => l.concepts)); const mastered = ids.filter((id) => (levels[id] ?? 0) >= 5).length; return { subject: s, grade: ids.length ? gradeFor(mastered / ids.length) : null, mastered, total: ids.length }; });
 
       // một thẻ kiểm tra nhanh: đề chưa đạt điểm tối đa gần nhất, không thì đề đầu tiên
-      const sets = sortGroups([...new Map(idx.sets.map((s) => [s.group, idx.sets.filter((x) => x.group === s.group)])).entries()]).flatMap(([, v]) => v);
+      const sets = groupSets(idx.sets).flatMap(([, v]) => v);
       let pick = sets[0] ?? null; let pickBest: number | null = null;
       for (const set of sets) { const b = await stats.best(set.id); if (b == null || b < set.count) { pick = set; pickBest = b; break; } }
       quick = pick ? { set: pick, best: pickBest } : null;

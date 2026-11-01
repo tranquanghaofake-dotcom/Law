@@ -11,7 +11,7 @@ const ROOT = path.join(__dirname, '..', 'apps', 'web', 'dist');
 const BASE = process.env.BASE_PATH ?? '/Law/';
 const OUT = process.env.SHOTS_OUT ?? path.join(__dirname, 'shots');
 const WIDTHS = { mobile: [390, 844], tablet: [820, 1180], laptop: [1280, 800], desktop: [1440, 900] };
-const SCREENS = [['home', '#/'], ['lesson', '#/hoc/hien-phap/hp-1'], ['quiz', '#/bo/dat-coc'], ['profile', '#/toi']];
+const SCREENS = [['home', '#/'], ['subjects', '#/mon'], ['subject', '#/mon/hien-phap'], ['quizzes', '#/luyen-de'], ['profile', '#/toi'], ['lesson', '#/hoc/hien-phap/hp-1'], ['quiz', '#/bo/dat-coc']];
 const TYPES = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.webp': 'image/webp', '.png': 'image/png', '.svg': 'image/svg+xml', '.ogg': 'audio/ogg', '.webmanifest': 'application/manifest+json' };
 
 if (!fs.existsSync(path.join(ROOT, 'index.html'))) { console.error(`Chưa có ${ROOT}. Chạy: BASE_PATH=${BASE} npm run build`); process.exit(1); }
