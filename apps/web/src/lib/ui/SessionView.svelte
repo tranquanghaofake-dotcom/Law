@@ -14,6 +14,7 @@
   import { tts } from '$lib/fx/tts.svelte';
   import { createReveal } from '$lib/fx/reveal.svelte';
   import { refreshHeader } from '$lib/ui/header.svelte';
+  import { refreshShelf } from '$lib/ui/shelf.svelte';
   import { cardFor, type AnswerResult } from '$lib/ui/cards';
   import Feedback from '$lib/ui/Feedback.svelte';
   import SessionBar from '$lib/ui/SessionBar.svelte';
@@ -83,6 +84,7 @@
     const tomorrow = new Date(Date.now() + 86400000);
     const dueTomorrow = (await repo.due(tomorrow)).length;
     await refreshHeader();
+    void refreshShelf();
     ended = { streak: st.count, streakEvent: event, rankBefore, rankAfter, dueTomorrow };
   }
 

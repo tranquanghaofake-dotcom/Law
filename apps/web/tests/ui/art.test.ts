@@ -17,7 +17,7 @@ describe('hình minh hoạ theo môn', () => {
       const svg = container.querySelector('svg');
       expect(svg?.getAttribute('aria-hidden')).toBe('true');
       expect(svg?.getAttribute('focusable')).toBe('false');
-      expect(svg?.getAttribute('viewBox')).toBe('0 0 320 200');
+      expect(svg?.getAttribute('viewBox')).toBe('0 0 520 325');
     }
   });
   it('mỗi cảnh và tranh nhỏ vẽ khác nhau (không trùng nội dung)', () => {

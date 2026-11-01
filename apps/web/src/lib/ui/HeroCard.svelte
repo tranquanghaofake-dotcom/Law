@@ -9,8 +9,8 @@
   const lessonHref = (s: Extract<HeroState, { lesson: unknown }>) => hashFor('lesson', { subject: s.subject.id, lesson: s.lesson.id });
 </script>
 
-<section class="card frame hero-card {state.kind}" aria-labelledby="hero-kicker">
-  <SubjectArt name={art} class="hero-art" />
+<section class="stage hero-card {state.kind}" aria-labelledby="hero-kicker">
+  <SubjectArt name={art} class="stage-art" />
   <div class="hero-body">
   {#if state.kind === 'due'}
     <p class="kicker" id="hero-kicker">ÔN HÔM NAY</p>

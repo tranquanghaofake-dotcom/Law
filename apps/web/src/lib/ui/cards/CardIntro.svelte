@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Glyph from '$lib/art/Glyph.svelte';
   import type { CardProps } from './types';
   import type { IntroItem } from '$lib/engine/session';
   import { isTypingTarget } from './types';
@@ -17,7 +18,7 @@
 <article class="card concept-card" aria-label="Thẻ giới thiệu khái niệm">
   <p class="kicker">Khái niệm mới</p>
   <h2 class="term">{concept.term}
-    {#if onspeak}<button class="speak" type="button" aria-label="Nghe định nghĩa" title="Nghe (Space)" onclick={() => onspeak?.(`${concept.term}. ${concept.definition}`)}>🔊</button>{/if}
+    {#if onspeak}<button class="speak" type="button" aria-label="Nghe định nghĩa" title="Nghe (Space)" onclick={() => onspeak?.(`${concept.term}. ${concept.definition}`)}><Glyph name="speaker" /></button>{/if}
   </h2>
   <blockquote class="quote">{concept.definition}</blockquote>
   <p class="plain">{concept.plain}</p>

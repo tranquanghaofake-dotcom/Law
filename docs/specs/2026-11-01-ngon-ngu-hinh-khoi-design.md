@@ -1,6 +1,6 @@
 # Luyện Luật — Ngôn ngữ hình khối "Văn Miếu" (đợt nâng cấp 2)
 
-Phiên bản 1.1 · 01/11/2026 · Trạng thái: **đợt 1 + 1b đã triển khai** (nhánh `claude/amazing-archimedes-u5vtr5`).
+Phiên bản 1.3 · 01/11/2026 · Trạng thái: **đợt 1, 1b, 2, 3 đã triển khai** (nhánh `claude/amazing-archimedes-u5vtr5`).
 Kế thừa spec layout (`2026-11-01-layout-redesign-design.md`); không đổi cấu trúc màn hình, engine, nội dung, **bảng màu**.
 
 ## 0. Mục tiêu
@@ -23,7 +23,7 @@ Hào muốn web có nét riêng thay vì giao diện phẳng mặc định. Tham
 
 ## 2. Bảng tranh (`lib/art/registry.ts`)
 
-### 2.1 Cảnh lớn (viewBox 320×200) — công trình, núi non Việt Nam, đồ vật pháp luật
+### 2.1 Cảnh lớn (viewBox 520×325, cùng tỉ lệ 16:10) — công trình, núi non Việt Nam, đồ vật pháp luật
 
 | Tên | Cảnh (cách điệu) | Dùng ở |
 |---|---|---|
@@ -68,6 +68,29 @@ Nền mây; icon điều hướng nét vẽ (thay emoji); sidebar/tab bar viền
 ## 3b. Đợt 1b (đã làm)
 
 Thêm 5 cảnh (`chua-mot-cot`, `ha-long`, `ngo-mon`, `toa-an`, `sach-luat`) và 5 tranh nhỏ cho bộ đề; nền có vòng trống đồng; tranh đầu trang ở Môn học, Luyện đề, Danh mục khái niệm, Hồ sơ; thẻ bộ đề và thẻ kiểm tra nhanh có tranh nhỏ.
+
+## 3c. Đợt 2 (đã làm) — chi tiết tranh + trang trí liền bố cục
+
+Hào duyệt: **giữ màu sáng cũ, chỉ nâng độ chi tiết và cách trang trí**, không theo bố cục/màu của ảnh mẫu (hướng đầu trang son đỏ đã thử trong Figma và bị loại).
+
+- **Tranh**: vẽ lại 8 cảnh + 5 tranh nhỏ; bộ chi tiết dùng chung `lib/art/kit.ts` và `lib/art/parts/` (gạch, ngói, vành trống đồng, chim lạc, sao, lan can, gợn nước; sen, lá sen, đèn lồng, mây khối, cây). Tông phụ pha từ token: `shade, seal2, acc2, leaf2, lotus2, cream, sunline`; nét theo độ dày đặt trong SVG: `k, kp, ka, ks, kg, kw`.
+- **Sân khấu đầu trang** (`.stage`, `.page-head`, `.subject-head`): khung trời nhạt, tranh to (≈56% bề ngang) chạm mép dưới làm nền, chữ bên trái; mặt đất là hai vạch kẻ ở mép dưới. Thay cách "dán tranh vào góc thẻ".
+- **Ô tranh liền thẻ**: thẻ bộ đề và hàng "Môn đang học" có cột/dải tranh nền trời + viền kép, chữ ở phần còn lại.
+- **Lộ trình đợt** ở trang môn: đường nét đứt nối nút tròn (đang học = cam, xong = xanh).
+- **Chữ**: `h1` dùng Noto Serif Display 800 (Google Fonts, có tiếng Việt).
+- **Chuyển động nhẹ**: vành trống đồng xoay 180 s/vòng, mây nét trôi, đèn lồng đung đưa; tự tắt khi giảm chuyển động.
+- **Khung web**: dây sen ở đáy sidebar (≥ 1280 px); emoji 🔥 🔊 ⚙ thay bằng icon nét (`Glyph.svelte`); nhãn/nút lọc góc vuông vức.
+
+## 3d. Đợt 3 (đã làm) — kệ sách thay dây sen
+
+Hào chọn (01/11/2026): sách **hiện dần** theo mức thuần thục, có hiệu ứng khi di chuột; kệ ở **sidebar (≥ 1280 px) + Hồ sơ**; bìa **cách điệu, bỏ Quốc huy và logo nhà xuất bản**.
+
+- Logic `lib/ui/shelf.ts` (test `tests/ui/shelf.test.ts`): mỗi môn có khái niệm là một cuốn; `ghost` (chưa khái niệm nào đạt ngưỡng) → `growing` (màu dâng từ dưới lên theo %) → `done` (mọi khái niệm đạt ngưỡng, có dấu son). Ngưỡng dùng chung `MASTERED` với % môn và phẩm hàm. "Hoàn thành" xét `mastered === total`, không xét % làm tròn.
+- Bìa (`lib/art/BookSpine.svelte`): gáy sách theo nhận diện chung dòng sách luật in trong nước (nền vàng nhạt hoặc xanh dương, đai vàng, ruy băng đỏ "LUẬT", tên môn chữ dọc, cán cân); mặt trống đồng thay Quốc huy; không ghi tên/logo nhà xuất bản. Hiến pháp = vàng; môn khác xoay vòng xanh / xanh đêm. Màu cố định như bìa thật.
+- Kệ (`lib/ui/Bookshelf.svelte`): tối thiểu 4 ô (ô trống nét đứt "Sắp có"), chặn sách là bình sen nhỏ; di chuột/focus: sách nhấc lên, nghiêng, viền sáng, vệt sáng lướt qua. Mỗi sách là liên kết vào môn, có nhãn đọc màn hình nêu % thuần thục.
+- Dữ liệu `lib/ui/shelf.svelte.ts`, làm mới sau mỗi phiên học.
+
+**Còn mở (cần Hào quyết):** chữ "thuần thục" đang hai nghĩa — % môn/phẩm hàm/kệ sách tính bậc ≥ 5 (`MASTERED = 5`), còn chú giải lưới bậc gọi bậc 6 là "Thuần thục".
 
 ## 4. Đợt sau (chưa làm, mỗi đợt một phiên)
 

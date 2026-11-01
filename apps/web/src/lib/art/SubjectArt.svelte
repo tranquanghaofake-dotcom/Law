@@ -14,6 +14,6 @@
   const Scene = $derived(SCENES[name] ?? TamQuan);
 </script>
 
-<svg class="art {cls}" viewBox="0 0 320 200" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMax meet">
+<svg class="art {cls}" viewBox="0 0 520 325" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMax meet">
   <Scene />
 </svg>

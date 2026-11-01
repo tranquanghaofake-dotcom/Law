@@ -11,7 +11,6 @@
   import LevelLegend from '$lib/ui/LevelLegend.svelte';
   import SubjectRail from '$lib/ui/SubjectRail.svelte';
   import SubjectArt from '$lib/art/SubjectArt.svelte';
-  import Waves from '$lib/art/Waves.svelte';
   import { artFor } from '$lib/art/registry';
 
   let subject = $state<Subject | null>(null);
@@ -67,7 +66,6 @@
       {#if next}<a class="btn primary" href={hashFor('lesson', { subject: subject.id, lesson: next.id })}>Học đợt tiếp → {next.title}</a>{/if}
     </div>
   </header>
-  <Waves />
   {#if subject.chapters.length > 1}
     <nav class="local-nav small" aria-label="Chương trong môn">
       {#each subject.chapters as ch (ch.id)}<a href="#chapter-{ch.id}" onclick={(e) => { e.preventDefault(); document.getElementById(`chapter-${ch.id}`)?.scrollIntoView({ behavior: 'smooth' }); }}>{ch.title}</a>{/each}

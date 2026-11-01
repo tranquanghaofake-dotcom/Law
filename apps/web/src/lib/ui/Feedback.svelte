@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Glyph from '$lib/art/Glyph.svelte';
   import type { Concept, Item } from '$lib/content/types';
   import type { IntroItem } from '$lib/engine/session';
   import type { AnswerResult } from './cards/types';
@@ -25,7 +26,7 @@
 <svelte:window onkeydown={onkey} />
 <div class="feedback {result.correct ? 'ok' : 'bad'}" role="status" aria-live="polite">
   <p class="verdict">{result.correct ? 'Chính xác.' : `Chưa đúng.${correctText ? ` Đáp án: ${correctText}` : ''}`}
-    {#if onspeak}<button class="speak" type="button" aria-label="Nghe giải thích" title="Nghe (Space)" onclick={() => onspeak?.(speakText)}>🔊</button>{/if}
+    {#if onspeak}<button class="speak" type="button" aria-label="Nghe giải thích" title="Nghe (Space)" onclick={() => onspeak?.(speakText)}><Glyph name="speaker" /></button>{/if}
   </p>
   {#if explain}<p>{explain}</p>{/if}
   <p class="source muted">Nguồn: {source.cite}{#if source.url} · <a href={source.url} target="_blank" rel="noopener">Xem văn bản</a>{/if}</p>
