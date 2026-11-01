@@ -1,0 +1,118 @@
+{
+ "id": "dieu-kien-nhan-su-cong-ty-chung-khoan",
+ "subject": "chung-khoan",
+ "chapter": "c5-cong-ty-chung-khoan",
+ "term": "Điều kiện về nhân sự của công ty chứng khoán",
+ "definition": "Có Tổng giám đốc (Giám đốc), tối thiểu 03 nhân viên có chứng chỉ hành nghề chứng khoán phù hợp cho mỗi nghiệp vụ kinh doanh chứng khoán đề nghị cấp phép và tối thiểu 01 nhân viên kiểm soát tuân thủ.",
+ "plain": "Mỗi nghiệp vụ cần ít nhất 03 người có chứng chỉ hành nghề phù hợp, thêm ít nhất 01 nhân viên kiểm soát tuân thủ. Tổng giám đốc phải có tối thiểu 02 năm kinh nghiệm trong lĩnh vực tài chính, có chứng chỉ phân tích tài chính hoặc quản lý quỹ, không bị truy cứu hình sự hay cấm hành nghề, không bị xử phạt hành chính về chứng khoán trong 06 tháng gần nhất.",
+ "example": "Công ty xin cấp phép cả môi giới và tự doanh phải có tối thiểu 06 nhân viên có chứng chỉ hành nghề phù hợp (03 cho mỗi nghiệp vụ), cộng 01 nhân viên kiểm soát tuân thủ.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 5 Điều 74 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "dieu-kien-co-dong-cong-ty-chung-khoan",
+  "nghiep-vu-cong-ty-chung-khoan"
+ ],
+ "keywords": [
+  "03 nhân viên có chứng chỉ mỗi nghiệp vụ",
+  "01 kiểm soát tuân thủ",
+  "Tổng giám đốc 02 năm kinh nghiệm"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Mỗi nghiệp vụ kinh doanh đề nghị cấp phép cần tối thiểu bao nhiêu nhân viên có chứng chỉ hành nghề phù hợp?",
+   "options": [
+    "03",
+    "01",
+    "02",
+    "05"
+   ],
+   "answer": 0,
+   "explain": "Khoản 5 Điều 74.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 5 Điều 74 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tổng giám đốc công ty chứng khoán cần tối thiểu bao nhiêu năm kinh nghiệm theo khoản 5 Điều 74?",
+   "options": [
+    "02 năm",
+    "01 năm",
+    "03 năm",
+    "05 năm"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 5 Điều 74.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 5 Điều 74 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tiêu chuẩn Tổng giám đốc",
+   "right": "Không phải tiêu chuẩn Tổng giám đốc",
+   "cases": [
+    {
+     "text": "Có chứng chỉ hành nghề phân tích tài chính hoặc quản lý quỹ",
+     "answer": "left"
+    },
+    {
+     "text": "Không bị xử phạt hành chính về chứng khoán trong 06 tháng gần nhất",
+     "answer": "left"
+    },
+    {
+     "text": "Phải có bằng thạc sĩ luật",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 5 Điều 74."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công ty chứng khoán phải có tối thiểu {{03}} nhân viên có chứng chỉ hành nghề chứng khoán phù hợp cho mỗi nghiệp vụ và tối thiểu {{01}} nhân viên kiểm soát tuân thủ.",
+   "bank_extra": [
+    "05",
+    "02"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tổng giám đốc công ty chứng khoán không được bị xử phạt vi phạm hành chính trong lĩnh vực chứng khoán trong thời hạn {{06 tháng}} gần nhất.",
+   "bank_extra": [
+    "12 tháng",
+    "03 năm"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Công ty chứng khoán xin cấp phép 3 nghiệp vụ chỉ cần tổng cộng 03 nhân viên có chứng chỉ hành nghề.",
+   "answer": false,
+   "explain": "Sai. Yêu cầu là tối thiểu 03 nhân viên có chứng chỉ phù hợp CHO MỖI nghiệp vụ (khoản 5 Điều 74), tức tối thiểu 09."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu điều kiện về nhân sự để cấp giấy phép cho công ty chứng khoán.",
+   "model": "Có Tổng giám đốc; tối thiểu 03 nhân viên có chứng chỉ hành nghề phù hợp cho mỗi nghiệp vụ; tối thiểu 01 nhân viên kiểm soát tuân thủ. Tổng giám đốc: không bị truy cứu hình sự, chấp hành án, cấm hành nghề; tối thiểu 02 năm kinh nghiệm; có chứng chỉ phân tích tài chính hoặc quản lý quỹ; không bị xử phạt hành chính về chứng khoán trong 06 tháng gần nhất.",
+   "keywords": [
+    "Tổng giám đốc",
+    "03 nhân viên",
+    "kiểm soát tuân thủ",
+    "02 năm"
+   ]
+  }
+ ]
+}

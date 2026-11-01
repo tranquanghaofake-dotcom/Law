@@ -1,0 +1,119 @@
+{
+ "id": "thu-hoi-giay-phep-cong-ty-chung-khoan",
+ "subject": "chung-khoan",
+ "chapter": "c5-cong-ty-chung-khoan",
+ "term": "Thu hồi giấy phép của công ty chứng khoán",
+ "definition": "Không chính thức hoạt động trong thời hạn 12 tháng kể từ ngày được cấp giấy phép; không khôi phục được hoạt động sau khi hết thời hạn tạm ngừng hoạt động đã được Ủy ban Chứng khoán Nhà nước chấp thuận; không tiến hành hoạt động nghiệp vụ quản lý quỹ trong thời hạn 02 năm liên tục; b) Có văn bản đề nghị rút Giấy phép thành lập và hoạt động kinh doanh chứng khoán;",
+ "plain": "Thu hồi giấy phép là \"án tử\" về hoạt động kinh doanh chứng khoán. Căn cứ: không hoạt động trong 12 tháng sau khi được cấp phép; tự đề nghị rút; bị rút toàn bộ nghiệp vụ hoặc không khắc phục được tình trạng đình chỉ; giải thể, phá sản, hợp nhất, chia, sáp nhập. Khi bị thu hồi: chấm dứt ngay hoạt động, tất toán tài sản khách hàng; Ủy ban có thể chỉ định công ty khác hoàn tất giao dịch dở dang.",
+ "example": "Công ty H được cấp phép tháng 2/2025 nhưng đến tháng 3/2026 vẫn chưa chính thức hoạt động: bị thu hồi giấy phép (điểm a khoản 1 Điều 95).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 95 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "an-toan-tai-chinh-cong-ty-chung-khoan",
+  "giai-the-pha-san-cong-ty-chung-khoan"
+ ],
+ "keywords": [
+  "12 tháng không hoạt động",
+  "tự đề nghị rút",
+  "tất toán tài sản khách hàng",
+  "chỉ định công ty thay thế"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Công ty chứng khoán không chính thức hoạt động trong thời hạn bao lâu kể từ ngày được cấp giấy phép thì bị thu hồi giấy phép?",
+   "options": [
+    "12 tháng",
+    "06 tháng",
+    "24 tháng",
+    "03 tháng"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 95.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 95 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khi bị thu hồi giấy phép, công ty chứng khoán phải làm gì với tài sản của khách hàng?",
+   "options": [
+    "Tất toán tài sản của khách hàng do công ty tiếp nhận, quản lý",
+    "Chuyển toàn bộ cho Nhà nước",
+    "Giữ lại để trả nợ",
+    "Bán hết chứng khoán lấy tiền mặt"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 3 Điều 95.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 95 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Căn cứ thu hồi giấy phép",
+   "right": "Không phải căn cứ thu hồi",
+   "cases": [
+    {
+     "text": "Công ty có văn bản đề nghị rút giấy phép",
+     "answer": "left"
+    },
+    {
+     "text": "Công ty bị giải thể, phá sản",
+     "answer": "left"
+    },
+    {
+     "text": "Công ty thay đổi trụ sở trong cùng thành phố",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 95."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công ty chứng khoán bị thu hồi giấy phép khi không chính thức hoạt động trong thời hạn {{12 tháng}} kể từ ngày được cấp giấy phép.",
+   "bank_extra": [
+    "6 tháng",
+    "36 tháng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Khi thu hồi giấy phép, Ủy ban có quyền chỉ định công ty khác thay thế để hoàn tất các giao dịch; quan hệ {{ủy quyền}} mặc nhiên được xác lập giữa hai công ty.",
+   "bank_extra": [
+    "mua bán",
+    "sáp nhập"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Công ty chứng khoán tự đề nghị rút giấy phép là một căn cứ thu hồi giấy phép.",
+   "answer": true,
+   "explain": "Đúng. Điểm b khoản 1 Điều 95."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các căn cứ thu hồi giấy phép và nghĩa vụ của công ty chứng khoán khi bị thu hồi.",
+   "model": "Căn cứ: không hoạt động trong 12 tháng hoặc không khôi phục sau tạm ngừng; tự đề nghị rút; bị rút toàn bộ nghiệp vụ hoặc không khắc phục được tình trạng đình chỉ; giải thể, phá sản, hợp nhất, chia, sáp nhập. Nghĩa vụ: chấm dứt ngay hoạt động và đăng báo 03 số; tất toán tài sản khách hàng; báo cáo Ủy ban. Ủy ban có thể chỉ định công ty thay thế hoàn tất giao dịch.",
+   "keywords": [
+    "12 tháng",
+    "tự đề nghị",
+    "tất toán",
+    "chỉ định"
+   ]
+  }
+ ]
+}

@@ -114,6 +114,34 @@
           ]
         }
       ]
+    },
+    {
+      "id": "c5-cong-ty-chung-khoan",
+      "title": "Chương V. Pháp luật về tổ chức và hoạt động của công ti chứng khoán",
+      "lessons": [
+        {
+          "id": "ck5-1",
+          "title": "Thành lập công ty chứng khoán: hình thức, nghiệp vụ, điều kiện",
+          "concepts": [
+            "hinh-thuc-cong-ty-chung-khoan",
+            "nghiep-vu-cong-ty-chung-khoan",
+            "dieu-kien-co-dong-cong-ty-chung-khoan",
+            "dieu-kien-nhan-su-cong-ty-chung-khoan",
+            "han-che-cong-ty-chung-khoan"
+          ]
+        },
+        {
+          "id": "ck5-2",
+          "title": "Hoạt động, an toàn tài chính, thu hồi giấy phép, giải thể, phá sản",
+          "concepts": [
+            "quan-ly-tai-san-khach-hang-ctck",
+            "nghia-vu-cong-ty-chung-khoan",
+            "an-toan-tai-chinh-cong-ty-chung-khoan",
+            "thu-hoi-giay-phep-cong-ty-chung-khoan",
+            "giai-the-pha-san-cong-ty-chung-khoan"
+          ]
+        }
+      ]
     }
   ]
 }

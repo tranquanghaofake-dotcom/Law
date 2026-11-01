@@ -1,0 +1,115 @@
+{
+ "id": "giai-the-pha-san-cong-ty-chung-khoan",
+ "subject": "chung-khoan",
+ "chapter": "c5-cong-ty-chung-khoan",
+ "term": "Giải thể, phá sản công ty chứng khoán",
+ "definition": "Việc giải thể công ty chứng khoán, công ty quản lý quỹ đầu tư chứng khoán, chi nhánh công ty chứng khoán và công ty quản lý quỹ nước ngoài tại Việt Nam thực hiện theo quy định của Luật này và Luật Doanh nghiệp. (…) Việc phá sản công ty chứng khoán, công ty quản lý quỹ đầu tư chứng khoán thực hiện theo quy định của pháp luật về phục hồi, phá sản.",
+ "plain": "Giải thể: theo Luật Chứng khoán và Luật Doanh nghiệp, đi kèm tất toán tài sản khách hàng. Phá sản: theo pháp luật về phục hồi, phá sản (hiện là Luật Phục hồi, phá sản 142/2025/QH15, thay Luật Phá sản 2014). Trong cả hai trường hợp, tài sản của khách hàng được hoàn trả trước, không đưa vào khối tài sản chia cho chủ nợ của công ty (khoản 3 Điều 88).",
+ "example": "Công ty chứng khoán K mất khả năng thanh toán và bị mở thủ tục theo Luật Phục hồi, phá sản. Chứng khoán và tiền của khách hàng tại K được tất toán, trả lại cho khách, không chia cho chủ nợ của K.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 3 Điều 96 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quan-ly-tai-san-khach-hang-ctck",
+  "thu-hoi-giay-phep-cong-ty-chung-khoan"
+ ],
+ "keywords": [
+  "Luật Chứng khoán và Luật Doanh nghiệp",
+  "pháp luật về phục hồi, phá sản",
+  "tất toán tài sản khách hàng"
+ ],
+ "note": "Luật Phục hồi, phá sản 142/2025/QH15 (hiệu lực 01/3/2026) thay cụm \"pháp luật về phá sản\" bằng \"pháp luật về phục hồi, phá sản\" tại khoản 3 Điều 96. Giáo trình 2021 dẫn Luật Phá sản 2014.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Việc phá sản công ty chứng khoán thực hiện theo luật nào?",
+   "options": [
+    "Pháp luật về phục hồi, phá sản",
+    "Luật Doanh nghiệp",
+    "Bộ luật Dân sự",
+    "Luật Các tổ chức tín dụng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 96 (sửa đổi bởi Luật Phục hồi, phá sản 142/2025/QH15).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 96 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Việc giải thể công ty chứng khoán thực hiện theo luật nào?",
+   "options": [
+    "Luật Chứng khoán và Luật Doanh nghiệp",
+    "Chỉ Luật Doanh nghiệp",
+    "Pháp luật về phục hồi, phá sản",
+    "Luật Đầu tư"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 96.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 96 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Giải thể",
+   "right": "Phá sản",
+   "cases": [
+    {
+     "text": "Theo Luật Chứng khoán và Luật Doanh nghiệp",
+     "answer": "left"
+    },
+    {
+     "text": "Theo pháp luật về phục hồi, phá sản",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 và khoản 3 Điều 96."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Việc phá sản công ty chứng khoán thực hiện theo quy định của pháp luật về {{phục hồi, phá sản}}.",
+   "bank_extra": [
+    "doanh nghiệp",
+    "dân sự"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chính phủ quy định chi tiết việc {{tất toán}} tài sản của khách hàng khi giải thể công ty chứng khoán.",
+   "bank_extra": [
+    "quốc hữu hóa",
+    "đấu giá"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Khi công ty chứng khoán phá sản, tiền và chứng khoán của khách hàng được đưa vào khối tài sản phá sản để chia cho các chủ nợ.",
+   "answer": false,
+   "explain": "Sai. Tài sản của khách hàng được hoàn trả cho khách hàng (sau khi trừ nợ của khách với công ty), không phải tài sản của công ty (khoản 1, 3 Điều 88)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quy định về giải thể, phá sản công ty chứng khoán.",
+   "model": "Giải thể theo Luật Chứng khoán và Luật Doanh nghiệp; Chính phủ quy định chi tiết tất toán tài sản khách hàng và thủ tục giải thể. Phá sản theo pháp luật về phục hồi, phá sản (Luật 142/2025/QH15). Tài sản khách hàng được hoàn trả, không thuộc tài sản phá sản.",
+   "keywords": [
+    "Luật Doanh nghiệp",
+    "phục hồi, phá sản",
+    "tất toán",
+    "hoàn trả"
+   ]
+  }
+ ]
+}

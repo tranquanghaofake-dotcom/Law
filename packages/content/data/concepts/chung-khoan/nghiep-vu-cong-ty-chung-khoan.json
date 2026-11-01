@@ -1,0 +1,132 @@
+{
+ "id": "nghiep-vu-cong-ty-chung-khoan",
+ "subject": "chung-khoan",
+ "chapter": "c5-cong-ty-chung-khoan",
+ "term": "Nghiệp vụ kinh doanh của công ty chứng khoán",
+ "definition": "Công ty chứng khoán được cấp phép thực hiện một, một số hoặc toàn bộ nghiệp vụ kinh doanh sau đây: a) Môi giới chứng khoán; b) Tự doanh chứng khoán; c) Bảo lãnh phát hành chứng khoán; d) Tư vấn đầu tư chứng khoán. Công ty chứng khoán chỉ được cấp phép thực hiện nghiệp vụ tự doanh chứng khoán khi được cấp phép thực hiện nghiệp vụ môi giới chứng khoán. Công ty chứng khoán chỉ được cấp phép thực hiện nghiệp vụ bảo lãnh phát hành chứng khoán khi được cấp phép thực hiện nghiệp vụ tự doanh chứng khoán.",
+ "plain": "Bốn nghiệp vụ, trong đó có \"bậc thang\": muốn tự doanh phải có môi giới; muốn bảo lãnh phát hành phải có tự doanh (tức là đủ cả ba). Tư vấn đầu tư đứng độc lập. Quản lý quỹ, quản lý danh mục là nghiệp vụ của công ty quản lý quỹ (Điều 73), không phải của công ty chứng khoán.",
+ "example": "Công ty chứng khoán A mới chỉ có nghiệp vụ môi giới và tư vấn, muốn nhận bảo lãnh phát hành cho một đợt IPO: chưa được, phải được cấp phép tự doanh trước.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 72 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hinh-thuc-cong-ty-chung-khoan",
+  "dieu-kien-nhan-su-cong-ty-chung-khoan"
+ ],
+ "keywords": [
+  "môi giới → tự doanh → bảo lãnh",
+  "tư vấn đầu tư",
+  "một, một số hoặc toàn bộ"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Công ty chứng khoán chỉ được cấp phép tự doanh khi đã được cấp phép nghiệp vụ nào?",
+   "options": [
+    "Môi giới chứng khoán",
+    "Tư vấn đầu tư chứng khoán",
+    "Bảo lãnh phát hành chứng khoán",
+    "Quản lý quỹ"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 72.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 72 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nghiệp vụ nào KHÔNG phải nghiệp vụ của công ty chứng khoán theo Điều 72?",
+   "options": [
+    "Quản lý quỹ đầu tư chứng khoán",
+    "Môi giới chứng khoán",
+    "Tự doanh chứng khoán",
+    "Tư vấn đầu tư chứng khoán"
+   ],
+   "answer": 0,
+   "explain": "Quản lý quỹ là nghiệp vụ của công ty quản lý quỹ (điểm a khoản 1 Điều 73).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 72, 73 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Công ty chứng khoán (Điều 72)",
+   "right": "Công ty quản lý quỹ (Điều 73)",
+   "cases": [
+    {
+     "text": "Bảo lãnh phát hành chứng khoán",
+     "answer": "left"
+    },
+    {
+     "text": "Quản lý danh mục đầu tư chứng khoán",
+     "answer": "right"
+    },
+    {
+     "text": "Tự doanh chứng khoán",
+     "answer": "left"
+    },
+    {
+     "text": "Quản lý quỹ đầu tư chứng khoán",
+     "answer": "right"
+    }
+   ],
+   "explain": "Tư vấn đầu tư chứng khoán là nghiệp vụ chung của cả hai."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công ty chứng khoán chỉ được cấp phép bảo lãnh phát hành chứng khoán khi được cấp phép thực hiện nghiệp vụ {{tự doanh}} chứng khoán; chỉ được cấp phép tự doanh khi được cấp phép {{môi giới}}.",
+   "bank_extra": [
+    "tư vấn",
+    "lưu ký"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công ty chứng khoán được cấp phép thực hiện một, một số hoặc {{toàn bộ}} nghiệp vụ kinh doanh.",
+   "bank_extra": [
+    "tối đa hai",
+    "duy nhất một"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Công ty chứng khoán B được cấp phép môi giới và tư vấn đầu tư. B xin bổ sung nghiệp vụ bảo lãnh phát hành mà không xin tự doanh. Ủy ban xử lý thế nào?",
+   "options": [
+    "Không cấp, vì bảo lãnh phát hành đòi hỏi đã có tự doanh",
+    "Cấp, vì đã có môi giới",
+    "Cấp, nếu vốn điều lệ đủ lớn",
+    "Cấp, vì tư vấn đầu tư thay thế được tự doanh"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 72.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 72 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các nghiệp vụ kinh doanh của công ty chứng khoán và điều kiện ràng buộc giữa các nghiệp vụ.",
+   "model": "Môi giới, tự doanh, bảo lãnh phát hành, tư vấn đầu tư chứng khoán; được cấp một, một số hoặc toàn bộ. Tự doanh chỉ khi đã có môi giới; bảo lãnh phát hành chỉ khi đã có tự doanh (Điều 72).",
+   "keywords": [
+    "môi giới",
+    "tự doanh",
+    "bảo lãnh phát hành",
+    "tư vấn"
+   ]
+  }
+ ]
+}

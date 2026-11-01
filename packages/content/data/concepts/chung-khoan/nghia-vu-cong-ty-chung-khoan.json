@@ -1,0 +1,129 @@
+{
+ "id": "nghia-vu-cong-ty-chung-khoan",
+ "subject": "chung-khoan",
+ "chapter": "c5-cong-ty-chung-khoan",
+ "term": "Nghĩa vụ của công ty chứng khoán đối với khách hàng",
+ "definition": "Thực hiện quản lý tách biệt tài sản của từng khách hàng, tách biệt tài sản của khách hàng với tài sản của công ty chứng khoán. Ký hợp đồng bằng văn bản với khách hàng khi cung cấp dịch vụ cho khách hàng; cung cấp đầy đủ, trung thực thông tin cho khách hàng. Ưu tiên thực hiện lệnh của khách hàng trước lệnh của công ty chứng khoán.",
+ "plain": "Ba nghĩa vụ \"đạo đức nghề\" quan trọng nhất: tách biệt tài sản; ký hợp đồng văn bản và cung cấp thông tin trung thực; lệnh của khách đi trước lệnh tự doanh của công ty (chống \"chạy trước lệnh\" – front-running). Ngoài ra phải tìm hiểu khả năng chịu rủi ro của khách để tư vấn phù hợp (khoản 6), có kiểm soát nội bộ, quản trị rủi ro, ngăn xung đột lợi ích (khoản 1).",
+ "example": "Khách hàng đặt lệnh mua 500.000 cổ phiếu X; bộ phận tự doanh của công ty cũng muốn mua X ở cùng giá. Lệnh của khách phải được thực hiện trước (khoản 5 Điều 89).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 3, 4, 5 Điều 89 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "han-che-cong-ty-chung-khoan",
+  "quan-ly-tai-san-khach-hang-ctck"
+ ],
+ "keywords": [
+  "tách biệt tài sản",
+  "hợp đồng bằng văn bản",
+  "ưu tiên lệnh của khách hàng",
+  "tư vấn phù hợp"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khi lệnh của khách hàng và lệnh tự doanh của công ty chứng khoán cùng lúc, lệnh nào được ưu tiên?",
+   "options": [
+    "Lệnh của khách hàng",
+    "Lệnh của công ty chứng khoán",
+    "Lệnh có khối lượng lớn hơn",
+    "Lệnh đặt sớm hơn trong ngày hôm trước"
+   ],
+   "answer": 0,
+   "explain": "Khoản 5 Điều 89.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 5 Điều 89 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khi cung cấp dịch vụ cho khách hàng, công ty chứng khoán phải ký hợp đồng dưới hình thức nào?",
+   "options": [
+    "Bằng văn bản",
+    "Bằng lời nói là đủ",
+    "Không cần hợp đồng",
+    "Do khách hàng lựa chọn tùy ý"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 89.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 89 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Nghĩa vụ theo Điều 89",
+   "right": "Không phải nghĩa vụ theo Điều 89",
+   "cases": [
+    {
+     "text": "Tìm hiểu khả năng chấp nhận rủi ro của khách hàng trước khi tư vấn",
+     "answer": "left"
+    },
+    {
+     "text": "Thiết lập hệ thống kiểm soát nội bộ, quản trị rủi ro",
+     "answer": "left"
+    },
+    {
+     "text": "Bảo đảm khách hàng có lãi hằng năm",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1, 6 Điều 89; khoản 1 Điều 91 còn cấm bảo đảm lợi nhuận."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công ty chứng khoán phải quản lý {{tách biệt}} tài sản của từng khách hàng, tách biệt tài sản của khách hàng với tài sản của {{công ty chứng khoán}}.",
+   "bank_extra": [
+    "gộp chung",
+    "Nhà nước"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công ty chứng khoán phải {{ưu tiên}} thực hiện lệnh của khách hàng trước lệnh của công ty chứng khoán.",
+   "bank_extra": [
+    "hoãn",
+    "gộp"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Một bà cụ 70 tuổi, thu nhập từ lương hưu, muốn \"gửi tiền an toàn\". Nhân viên tư vấn bà mua hợp đồng tương lai chỉ số với đòn bẩy cao. Công ty vi phạm nghĩa vụ nào rõ nhất?",
+   "options": [
+    "Nghĩa vụ bảo đảm tư vấn phù hợp với tình hình tài chính, mục tiêu và khả năng chấp nhận rủi ro của khách hàng",
+    "Nghĩa vụ ưu tiên lệnh của khách hàng",
+    "Nghĩa vụ công bố thông tin định kỳ",
+    "Nghĩa vụ xây dựng cơ sở dữ liệu dự phòng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 6 Điều 89.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 6 Điều 89 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Kể các nghĩa vụ chính của công ty chứng khoán đối với khách hàng theo Điều 89.",
+   "model": "Kiểm soát nội bộ, quản trị rủi ro, ngăn xung đột lợi ích; nhân viên nghiệp vụ có chứng chỉ phù hợp; quản lý tách biệt tài sản; ký hợp đồng bằng văn bản, cung cấp thông tin đầy đủ, trung thực; ưu tiên lệnh của khách hàng; tìm hiểu khách hàng để tư vấn phù hợp; lưu giữ hồ sơ, chứng từ giao dịch.",
+   "keywords": [
+    "tách biệt",
+    "hợp đồng bằng văn bản",
+    "ưu tiên lệnh",
+    "tư vấn phù hợp"
+   ]
+  }
+ ]
+}

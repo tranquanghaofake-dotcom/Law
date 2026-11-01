@@ -1,0 +1,114 @@
+{
+ "id": "an-toan-tai-chinh-cong-ty-chung-khoan",
+ "subject": "chung-khoan",
+ "chapter": "c5-cong-ty-chung-khoan",
+ "term": "An toàn tài chính của công ty chứng khoán",
+ "definition": "Công ty chứng khoán, công ty quản lý quỹ đầu tư chứng khoán, chi nhánh công ty chứng khoán và công ty quản lý quỹ nước ngoài tại Việt Nam phải bảo đảm các chỉ tiêu an toàn tài chính.",
+ "plain": "Công ty chứng khoán giữ tiền của rất nhiều nhà đầu tư nên phải luôn \"khỏe\" về tài chính (ví dụ tỷ lệ vốn khả dụng). Bộ trưởng Bộ Tài chính quy định chỉ tiêu. Không đáp ứng thì Ủy ban đưa vào diện cảnh báo, kiểm soát, kiểm soát đặc biệt; nặng hơn có thể bị đình chỉ hoạt động (Điều 94) hoặc thu hồi giấy phép (Điều 95).",
+ "example": "Công ty chứng khoán G thua lỗ tự doanh, chỉ tiêu an toàn tài chính xuống dưới ngưỡng: Ủy ban đưa G vào diện kiểm soát và áp dụng biện pháp xử lý, có thể hạn chế mở rộng hoạt động cho đến khi G khắc phục.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 92 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "thu-hoi-giay-phep-cong-ty-chung-khoan",
+  "giai-the-pha-san-cong-ty-chung-khoan"
+ ],
+ "keywords": [
+  "chỉ tiêu an toàn tài chính",
+  "cảnh báo, kiểm soát, kiểm soát đặc biệt",
+  "Bộ trưởng Bộ Tài chính quy định"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai quy định chi tiết chỉ tiêu an toàn tài chính của công ty chứng khoán?",
+   "options": [
+    "Bộ trưởng Bộ Tài chính",
+    "Sở giao dịch chứng khoán",
+    "Hội đồng quản trị công ty",
+    "Quốc hội"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 92.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 92 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Công ty chứng khoán không đáp ứng chỉ tiêu an toàn tài chính có thể bị Ủy ban đưa vào diện nào?",
+   "options": [
+    "Cảnh báo, kiểm soát, kiểm soát đặc biệt",
+    "Phá sản ngay lập tức",
+    "Quốc hữu hóa",
+    "Niêm yết bắt buộc"
+   ],
+   "answer": 0,
+   "explain": "Đoạn cuối Điều 92.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 92 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Biện pháp theo Điều 92",
+   "right": "Biện pháp nặng hơn",
+   "cases": [
+    {
+     "text": "Đưa vào diện kiểm soát đặc biệt",
+     "answer": "left"
+    },
+    {
+     "text": "Thu hồi Giấy phép thành lập và hoạt động kinh doanh chứng khoán",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 92 và Điều 95."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công ty chứng khoán phải bảo đảm các chỉ tiêu {{an toàn tài chính}}.",
+   "bank_extra": [
+    "tăng trưởng doanh thu",
+    "thị phần môi giới"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ủy ban Chứng khoán Nhà nước đưa vào diện cảnh báo, kiểm soát, {{kiểm soát đặc biệt}} đối với trường hợp không đáp ứng chỉ tiêu an toàn tài chính.",
+   "bank_extra": [
+    "giám sát mềm",
+    "tái cơ cấu tự nguyện"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chỉ tiêu an toàn tài chính chỉ áp dụng cho công ty chứng khoán, không áp dụng cho công ty quản lý quỹ.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 92 áp dụng cho cả công ty chứng khoán, công ty quản lý quỹ và chi nhánh nước ngoài tại Việt Nam."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quy định về an toàn tài chính của công ty chứng khoán.",
+   "model": "Công ty chứng khoán, công ty quản lý quỹ, chi nhánh nước ngoài phải bảo đảm chỉ tiêu an toàn tài chính; Bộ trưởng Bộ Tài chính quy định chỉ tiêu và biện pháp xử lý; Ủy ban đưa vào diện cảnh báo, kiểm soát, kiểm soát đặc biệt khi không đáp ứng (Điều 92).",
+   "keywords": [
+    "chỉ tiêu an toàn tài chính",
+    "Bộ trưởng Bộ Tài chính",
+    "cảnh báo",
+    "kiểm soát đặc biệt"
+   ]
+  }
+ ]
+}

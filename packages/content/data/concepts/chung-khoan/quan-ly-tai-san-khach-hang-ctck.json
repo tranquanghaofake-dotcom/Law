@@ -1,0 +1,119 @@
+{
+ "id": "quan-ly-tai-san-khach-hang-ctck",
+ "subject": "chung-khoan",
+ "chapter": "c5-cong-ty-chung-khoan",
+ "term": "Tài sản của khách hàng tại công ty chứng khoán",
+ "definition": "Tài sản của khách hàng do công ty chứng khoán tiếp nhận và quản lý bao gồm tiền gửi giao dịch chứng khoán, chứng khoán lưu ký, lưu giữ tại công ty chứng khoán và các quyền có liên quan là tài sản thuộc quyền sở hữu của khách hàng, không phải là tài sản của công ty chứng khoán. (…) Trường hợp công ty chứng khoán, công ty quản lý quỹ đầu tư chứng khoán giải thể hoặc bị phá sản, tài sản của khách hàng phải được hoàn trả cho khách hàng sau khi trừ đi nghĩa vụ nợ phải trả của khách hàng đối với công ty chứng khoán, công ty quản lý quỹ đầu tư chứng khoán.",
+ "plain": "Tiền và chứng khoán trong tài khoản của bạn ở công ty chứng khoán là của bạn. Khi công ty giải thể hoặc phá sản, tài sản đó được trả lại cho bạn, chỉ trừ khoản bạn còn nợ chính công ty (ví dụ nợ vay ký quỹ), không bị chia cho chủ nợ của công ty. Đây là quy định ở cấp công ty chứng khoán, song song với Điều 65 ở cấp Tổng công ty lưu ký.",
+ "example": "Bạn có 200 triệu tiền và cổ phiếu trong tài khoản, đang nợ vay ký quỹ 50 triệu. Công ty chứng khoán phá sản: bạn được hoàn trả phần tài sản sau khi trừ 50 triệu nợ ký quỹ.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 3 Điều 88 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "bao-ve-tai-san-khach-hang",
+  "han-che-cong-ty-chung-khoan",
+  "giai-the-pha-san-cong-ty-chung-khoan"
+ ],
+ "keywords": [
+  "tài sản thuộc quyền sở hữu của khách hàng",
+  "hoàn trả khi giải thể, phá sản",
+  "trừ nợ của khách hàng"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tiền gửi giao dịch chứng khoán của khách hàng tại công ty chứng khoán thuộc quyền sở hữu của ai?",
+   "options": [
+    "Khách hàng",
+    "Công ty chứng khoán",
+    "Ngân hàng nơi công ty mở tài khoản",
+    "Tổng công ty lưu ký"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 88.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 88 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khi công ty chứng khoán phá sản, tài sản của khách hàng được xử lý thế nào?",
+   "options": [
+    "Hoàn trả cho khách hàng sau khi trừ nghĩa vụ nợ của khách hàng đối với công ty",
+    "Đưa vào tài sản phá sản chia cho mọi chủ nợ",
+    "Chuyển cho Nhà nước quản lý",
+    "Chia đều cho các khách hàng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 88.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 88 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tài sản của khách hàng",
+   "right": "Tài sản của công ty chứng khoán",
+   "cases": [
+    {
+     "text": "Tiền gửi giao dịch chứng khoán của nhà đầu tư",
+     "answer": "left"
+    },
+    {
+     "text": "Chứng khoán khách hàng lưu ký tại công ty",
+     "answer": "left"
+    },
+    {
+     "text": "Chứng khoán công ty mua bằng nghiệp vụ tự doanh",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 88."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tài sản của khách hàng do công ty chứng khoán tiếp nhận và quản lý là tài sản thuộc quyền sở hữu của {{khách hàng}}, không phải là tài sản của {{công ty chứng khoán}}.",
+   "bank_extra": [
+    "Nhà nước",
+    "ngân hàng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Khi công ty chứng khoán giải thể, tài sản của khách hàng được hoàn trả sau khi trừ đi nghĩa vụ {{nợ}} phải trả của khách hàng đối với công ty.",
+   "bank_extra": [
+    "thuế",
+    "phí lưu ký năm sau"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Công ty chứng khoán được dùng tiền gửi giao dịch của khách hàng để trả lương nhân viên khi khó khăn tài chính.",
+   "answer": false,
+   "explain": "Sai. Đó là tài sản của khách hàng (khoản 1 Điều 88); công ty còn có nghĩa vụ quản lý tách biệt tài sản khách hàng (khoản 3 Điều 89)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quy định về tài sản của khách hàng tại công ty chứng khoán.",
+   "model": "Tiền gửi giao dịch, chứng khoán lưu ký, lưu giữ tại công ty và các quyền liên quan là tài sản của khách hàng, không phải của công ty (khoản 1 Điều 88). Khi giải thể, phá sản: hoàn trả cho khách hàng sau khi trừ nợ của khách hàng đối với công ty (khoản 3). Công ty phải quản lý tách biệt tài sản từng khách hàng (khoản 3 Điều 89).",
+   "keywords": [
+    "tài sản của khách hàng",
+    "không phải của công ty",
+    "hoàn trả",
+    "tách biệt"
+   ]
+  }
+ ]
+}
