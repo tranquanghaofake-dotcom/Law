@@ -183,7 +183,7 @@ Kỹ thuật: `routes/Subjects.svelte`, `routes/Subject.svelte`, `lib/ui/Mastery
 ## 8. Kiểm thử & nghiệm thu
 
 - Unit (vitest): `router.test.ts` (route mới + cũ), `today.test.ts` (4 trạng thái + ranh giới), `lessonState.test.ts`, `MasteryGrid.test.ts`, `nav.test.ts` (4 mục, `matches` phủ hết `RouteName`).
-- Ảnh chụp Playwright ở 390 / 820 / 1280 / 1440 cho Hôm nay, Môn, Luyện đề, Hồ sơ, Phiên học — lưu vào `docs/superpowers/specs/shots/` để đối chiếu trước/sau.
+- Ảnh chụp Playwright ở 390 / 820 / 1280 / 1440 cho Hôm nay, Môn, Luyện đề, Hồ sơ, Phiên học — bằng `npm run shots` (→ `tools/shots/`, không track) để đối chiếu trước/sau.
 - Nghiệm thu với Hào theo 4 triệu chứng: mở trang chủ biết bấm gì trong 3 giây; nói được Luyện đề khác Môn học; nhìn trang môn nói được còn bao nhiêu khái niệm chưa thuần thục; ở bất kỳ trang nào chỉ được mục đang sáng.
 
 ## 9. Ngoài phạm vi
