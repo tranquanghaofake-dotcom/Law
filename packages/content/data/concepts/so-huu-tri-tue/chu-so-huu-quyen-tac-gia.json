@@ -1,0 +1,115 @@
+{
+ "id": "chu-so-huu-quyen-tac-gia",
+ "subject": "so-huu-tri-tue",
+ "chapter": "v2",
+ "term": "Chủ sở hữu quyền tác giả",
+ "definition": "Chủ sở hữu quyền tác giả là tổ chức, cá nhân nắm giữ một, một số hoặc toàn bộ quyền quy định tại khoản 3 Điều 19 và khoản 1 Điều 20 của Luật này.",
+ "plain": "Phân biệt TÁC GIẢ (người trực tiếp sáng tạo — luôn giữ quyền nhân thân không chuyển giao được) và CHỦ SỞ HỮU QUYỀN TÁC GIẢ (nắm quyền công bố và quyền tài sản). Có thể trùng hoặc khác nhau: tác phẩm theo NHIỆM VỤ, HỢP ĐỒNG (Điều 39): tổ chức giao nhiệm vụ/bên thuê là chủ sở hữu, trừ thỏa thuận khác; người thừa kế (Điều 40); người được chuyển giao (Điều 41); Nhà nước (Điều 42).",
+ "example": "Nhân viên thiết kế logo theo nhiệm vụ được công ty giao: nhân viên là tác giả (được đứng tên), công ty là chủ sở hữu quyền tác giả (quyền tài sản), trừ khi có thỏa thuận khác.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 36 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quyen-nhan-than-tac-gia",
+  "chuyen-giao-quyen-tac-gia"
+ ],
+ "keywords": [
+  "nắm giữ quyền công bố và quyền tài sản",
+  "tác giả khác chủ sở hữu",
+  "theo nhiệm vụ, hợp đồng"
+ ],
+ "note": "Điều 36 có nội dung được sửa đổi, bổ sung bởi Luật 07/2022/QH15 (hiệu lực 01/01/2023) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chủ sở hữu quyền tác giả nắm giữ những quyền nào?",
+   "options": [
+    "Một, một số hoặc toàn bộ quyền công bố (khoản 3 Điều 19) và quyền tài sản (khoản 1 Điều 20)",
+    "Quyền đứng tên tác giả",
+    "Quyền bảo vệ sự toàn vẹn tác phẩm",
+    "Mọi quyền nhân thân"
+   ],
+   "answer": 0,
+   "explain": "Điều 36.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 36 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nhân viên sáng tác theo nhiệm vụ của công ty thì ai là chủ sở hữu quyền tác giả (nếu không có thỏa thuận khác)?",
+   "options": [
+    "Công ty giao nhiệm vụ",
+    "Nhân viên",
+    "Nhà nước",
+    "Cả hai đồng sở hữu đương nhiên"
+   ],
+   "answer": 0,
+   "explain": "Điều 39.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 39 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tác giả",
+   "right": "Chủ sở hữu quyền tác giả",
+   "cases": [
+    {
+     "text": "Người trực tiếp sáng tạo ra tác phẩm",
+     "answer": "left"
+    },
+    {
+     "text": "Công ty thuê sáng tác, nắm quyền tài sản",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 13, 36, 39."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chủ sở hữu quyền tác giả là tổ chức, cá nhân nắm giữ một, một số hoặc {{toàn bộ}} quyền quy định tại khoản 3 Điều 19 và khoản 1 Điều {{20}}.",
+   "bank_extra": [
+    "một nửa",
+    "25"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chủ sở hữu quyền tác giả có thể là {{tổ chức}} hoặc cá nhân.",
+   "bank_extra": [
+    "chỉ Nhà nước",
+    "chỉ tác giả"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tác giả và chủ sở hữu quyền tác giả luôn là một người.",
+   "answer": false,
+   "explain": "Sai. Có thể khác nhau, như tác phẩm theo nhiệm vụ, hợp đồng (Điều 39)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Phân biệt tác giả và chủ sở hữu quyền tác giả.",
+   "model": "Tác giả là người trực tiếp sáng tạo, giữ quyền nhân thân; chủ sở hữu quyền tác giả là tổ chức, cá nhân nắm giữ quyền công bố và quyền tài sản (Điều 36); có thể khác nhau khi sáng tạo theo nhiệm vụ, hợp đồng, thừa kế, chuyển giao (Điều 39–42).",
+   "keywords": [
+    "trực tiếp sáng tạo",
+    "quyền tài sản",
+    "nhiệm vụ",
+    "chuyển giao"
+   ]
+  }
+ ]
+}

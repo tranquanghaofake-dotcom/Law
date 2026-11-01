@@ -1,0 +1,115 @@
+{
+ "id": "chuyen-giao-quyen-tac-gia",
+ "subject": "so-huu-tri-tue",
+ "chapter": "v5",
+ "term": "Chuyển nhượng và chuyển quyền sử dụng quyền tác giả",
+ "definition": "Chuyển nhượng quyền tác giả, quyền liên quan là việc chủ sở hữu quyền tác giả, chủ sở hữu quyền liên quan chuyển giao quyền sở hữu đối với các quyền quy định tại khoản 3 Điều 19, Điều 20, khoản 3 Điều 29, Điều 30 và Điều 31 của Luật này cho tổ chức, cá nhân khác theo hợp đồng hoặc theo quy định của pháp luật có liên quan. Tác giả không được chuyển nhượng các quyền nhân thân quy định tại Điều 19, trừ quyền công bố tác phẩm;",
+ "plain": "CHUYỂN NHƯỢNG (Điều 45) = chuyển QUYỀN SỞ HỮU, bên nhận trở thành chủ sở hữu mới. CHUYỂN QUYỀN SỬ DỤNG (Điều 47) = cho phép sử dụng CÓ THỜI HẠN, chủ sở hữu vẫn giữ quyền (giống \"license\"). Không được chuyển nhượng quyền nhân thân TRỪ QUYỀN CÔNG BỐ; không được chuyển quyền sử dụng quyền đứng tên, quyền toàn vẹn. Đồng chủ sở hữu phải thỏa thuận tất cả. Hợp đồng phải lập thành VĂN BẢN (Điều 46, 48).",
+ "example": "Nhà văn bán đứt quyền tài sản cuốn tiểu thuyết cho nhà xuất bản: chuyển nhượng. Cho một hãng phim quyền chuyển thể trong 5 năm: chuyển quyền sử dụng.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 45 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "chu-so-huu-quyen-tac-gia",
+  "quyen-nhan-than-tac-gia"
+ ],
+ "keywords": [
+  "chuyển giao quyền sở hữu",
+  "chuyển quyền sử dụng có thời hạn",
+  "không chuyển nhượng quyền nhân thân trừ công bố",
+  "đồng chủ sở hữu thỏa thuận"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tác giả có thể chuyển nhượng quyền nhân thân nào?",
+   "options": [
+    "Quyền công bố tác phẩm",
+    "Quyền đứng tên",
+    "Quyền đặt tên",
+    "Quyền bảo vệ toàn vẹn"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 45.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 45 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chuyển quyền sử dụng quyền tác giả khác chuyển nhượng ở điểm nào?",
+   "options": [
+    "Chỉ cho phép sử dụng có thời hạn, chủ sở hữu vẫn giữ quyền",
+    "Chuyển giao quyền sở hữu vĩnh viễn",
+    "Không cần hợp đồng",
+    "Chỉ áp dụng với quyền nhân thân"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 47.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 45, 47 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Chuyển nhượng",
+   "right": "Chuyển quyền sử dụng",
+   "cases": [
+    {
+     "text": "Bán đứt quyền tài sản cho nhà xuất bản",
+     "answer": "left"
+    },
+    {
+     "text": "Cho phép đài phát bài hát trong 2 năm",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 45, 47."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chuyển nhượng quyền tác giả là việc chủ sở hữu chuyển giao {{quyền sở hữu}} đối với các quyền luật định cho tổ chức, cá nhân khác theo {{hợp đồng}} hoặc theo quy định của pháp luật.",
+   "bank_extra": [
+    "quyền sử dụng",
+    "quyết định"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tác giả không được chuyển nhượng các quyền nhân thân quy định tại Điều 19, trừ quyền {{công bố}} tác phẩm.",
+   "bank_extra": [
+    "đặt tên",
+    "đứng tên"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tác giả có thể bán quyền đứng tên trên tác phẩm cho người khác.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 45: không được chuyển nhượng quyền nhân thân, trừ quyền công bố."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Phân biệt chuyển nhượng và chuyển quyền sử dụng quyền tác giả.",
+   "model": "Chuyển nhượng là chuyển giao quyền sở hữu các quyền công bố, quyền tài sản theo hợp đồng (khoản 1 Điều 45); chuyển quyền sử dụng là cho phép sử dụng có thời hạn (Điều 47); không chuyển nhượng quyền nhân thân trừ quyền công bố (khoản 2 Điều 45).",
+   "keywords": [
+    "quyền sở hữu",
+    "có thời hạn",
+    "quyền nhân thân",
+    "công bố"
+   ]
+  }
+ ]
+}

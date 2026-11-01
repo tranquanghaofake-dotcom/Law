@@ -1,0 +1,120 @@
+{
+ "id": "quyen-so-huu-tri-tue",
+ "subject": "so-huu-tri-tue",
+ "chapter": "v1",
+ "term": "Quyền sở hữu trí tuệ và các bộ phận",
+ "definition": "Quyền sở hữu trí tuệ là quyền của tổ chức, cá nhân đối với các đối tượng quyền tác giả và quyền liên quan đến quyền tác giả, quyền sở hữu công nghiệp và quyền đối với giống cây trồng. Quyền tác giả là quyền của tổ chức, cá nhân đối với tác phẩm do mình sáng tạo ra hoặc sở hữu.",
+ "plain": "Ba bộ phận: (1) QUYỀN TÁC GIẢ và QUYỀN LIÊN QUAN; (2) QUYỀN SỞ HỮU CÔNG NGHIỆP (sáng chế, kiểu dáng công nghiệp, thiết kế bố trí, nhãn hiệu, tên thương mại, chỉ dẫn địa lý, bí mật kinh doanh, quyền chống cạnh tranh không lành mạnh); (3) QUYỀN ĐỐI VỚI GIỐNG CÂY TRỒNG. Đặc điểm: đối tượng là TÀI SẢN VÔ HÌNH (quyền tài sản theo Điều 115 BLDS); bảo hộ có GIỚI HẠN về thời gian và lãnh thổ.",
+ "example": "Một cuốn tiểu thuyết (quyền tác giả), logo của quán cà phê (nhãn hiệu), giống lúa mới do viện nghiên cứu chọn tạo (giống cây trồng) đều là đối tượng quyền sở hữu trí tuệ.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 4 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "can-cu-phat-sinh-quyen-shtt",
+  "quyen-lien-quan",
+  "nhan-hieu"
+ ],
+ "keywords": [
+  "quyền tác giả, quyền liên quan",
+  "quyền sở hữu công nghiệp",
+  "quyền đối với giống cây trồng"
+ ],
+ "note": "Điều 4 có nội dung được sửa đổi, bổ sung bởi Luật 36/2009/QH12 (hiệu lực 01/01/2010); Luật 07/2022/QH15 (hiệu lực 01/01/2023); Luật 131/2025/QH15 (hiệu lực 01/4/2026) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quyền sở hữu trí tuệ gồm những bộ phận nào?",
+   "options": [
+    "Quyền tác giả và quyền liên quan, quyền sở hữu công nghiệp, quyền đối với giống cây trồng",
+    "Chỉ quyền tác giả",
+    "Quyền tác giả và quyền sở hữu đất đai",
+    "Quyền nhân thân và quyền thừa kế"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 4 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quyền tác giả là quyền đối với đối tượng nào?",
+   "options": [
+    "Tác phẩm do mình sáng tạo ra hoặc sở hữu",
+    "Nhãn hiệu",
+    "Giống cây trồng",
+    "Sáng chế"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 4 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quyền tác giả",
+   "right": "Quyền sở hữu công nghiệp",
+   "cases": [
+    {
+     "text": "Bài hát",
+     "answer": "left"
+    },
+    {
+     "text": "Nhãn hiệu",
+     "answer": "right"
+    },
+    {
+     "text": "Sáng chế",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quyền sở hữu trí tuệ là quyền đối với các đối tượng quyền tác giả và quyền liên quan, quyền sở hữu {{công nghiệp}} và quyền đối với {{giống cây trồng}}.",
+   "bank_extra": [
+    "thương mại",
+    "đất đai"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quyền tác giả là quyền của tổ chức, cá nhân đối với {{tác phẩm}} do mình sáng tạo ra hoặc sở hữu.",
+   "bank_extra": [
+    "nhãn hiệu",
+    "sáng chế"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Bí mật kinh doanh là đối tượng của quyền tác giả.",
+   "answer": false,
+   "explain": "Sai. Bí mật kinh doanh thuộc quyền sở hữu công nghiệp (khoản 4 Điều 4)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm quyền sở hữu trí tuệ và các bộ phận cấu thành.",
+   "model": "Là quyền của tổ chức, cá nhân đối với đối tượng quyền tác giả và quyền liên quan, quyền sở hữu công nghiệp, quyền đối với giống cây trồng (khoản 1 Điều 4); quyền tác giả là quyền đối với tác phẩm do mình sáng tạo hoặc sở hữu (khoản 2).",
+   "keywords": [
+    "quyền tác giả",
+    "sở hữu công nghiệp",
+    "giống cây trồng",
+    "tác phẩm"
+   ]
+  }
+ ]
+}

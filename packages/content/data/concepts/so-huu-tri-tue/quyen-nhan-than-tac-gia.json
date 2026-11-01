@@ -1,0 +1,121 @@
+{
+ "id": "quyen-nhan-than-tac-gia",
+ "subject": "so-huu-tri-tue",
+ "chapter": "v3",
+ "term": "Quyền nhân thân của tác giả",
+ "definition": "Quyền nhân thân bao gồm: 1. Đặt tên cho tác phẩm. (…) 2. Đứng tên thật hoặc bút danh trên tác phẩm; được nêu tên thật hoặc bút danh khi tác phẩm được công bố, sử dụng; 3. Công bố tác phẩm hoặc cho phép người khác công bố tác phẩm; 4. Bảo vệ sự toàn vẹn của tác phẩm không cho người khác xuyên tạc; không cho người khác sửa đổi, cắt xén tác phẩm dưới bất kỳ hình thức nào gây phương hại đến danh dự và uy tín của tác giả.",
+ "plain": "Bốn quyền nhân thân: ĐẶT TÊN; ĐỨNG TÊN, được NÊU TÊN; CÔNG BỐ; BẢO VỆ SỰ TOÀN VẸN. Thời hạn (Điều 27): đặt tên, đứng tên, toàn vẹn bảo hộ VÔ THỜI HẠN; quyền CÔNG BỐ có thời hạn như quyền tài sản và có thể chuyển nhượng. Quyền đặt tên có thể chuyển quyền sử dụng cho người nhận chuyển giao quyền tài sản (khoản 1). Phân biệt QUYỀN TÀI SẢN (Điều 20): làm tác phẩm phái sinh, biểu diễn, sao chép, phân phối, truyền đạt, cho thuê.",
+ "example": "Nhà xuất bản tự ý cắt bỏ một chương làm sai lệch ý tưởng cuốn sách: xâm phạm quyền bảo vệ sự toàn vẹn của tác phẩm.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 19 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "thoi-han-bao-ho-quyen-tac-gia",
+  "chu-so-huu-quyen-tac-gia",
+  "chuyen-giao-quyen-tac-gia"
+ ],
+ "keywords": [
+  "đặt tên",
+  "đứng tên, nêu tên",
+  "công bố",
+  "bảo vệ sự toàn vẹn"
+ ],
+ "note": "Điều 19 có nội dung được sửa đổi, bổ sung bởi Luật 07/2022/QH15 (hiệu lực 01/01/2023) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quyền nào là quyền nhân thân của tác giả?",
+   "options": [
+    "Bảo vệ sự toàn vẹn của tác phẩm",
+    "Sao chép tác phẩm",
+    "Phân phối bản sao",
+    "Cho thuê bản gốc"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 19; các quyền còn lại là quyền tài sản (Điều 20).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 19 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quyền nhân thân nào có thể được chuyển nhượng?",
+   "options": [
+    "Quyền công bố tác phẩm",
+    "Quyền đứng tên",
+    "Quyền bảo vệ sự toàn vẹn",
+    "Không quyền nào"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 45.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 45 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quyền nhân thân",
+   "right": "Quyền tài sản",
+   "cases": [
+    {
+     "text": "Đứng tên thật hoặc bút danh",
+     "answer": "left"
+    },
+    {
+     "text": "Làm tác phẩm phái sinh",
+     "answer": "right"
+    },
+    {
+     "text": "Sao chép tác phẩm",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 19, 20."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quyền nhân thân gồm đặt tên cho tác phẩm; đứng tên thật hoặc {{bút danh}}; công bố tác phẩm; bảo vệ sự {{toàn vẹn}} của tác phẩm.",
+   "bank_extra": [
+    "biệt danh nhóm",
+    "thương mại"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tác giả có quyền không cho người khác sửa đổi, {{cắt xén}} tác phẩm gây phương hại đến danh dự và uy tín của tác giả.",
+   "bank_extra": [
+    "đọc",
+    "trích dẫn"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quyền đứng tên trên tác phẩm chỉ được bảo hộ 50 năm sau khi tác giả chết.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 27: quyền đặt tên, đứng tên, bảo vệ toàn vẹn được bảo hộ vô thời hạn."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các quyền nhân thân của tác giả.",
+   "model": "Đặt tên cho tác phẩm; đứng tên thật hoặc bút danh, được nêu tên khi công bố, sử dụng; công bố hoặc cho phép công bố tác phẩm; bảo vệ sự toàn vẹn của tác phẩm (Điều 19).",
+   "keywords": [
+    "đặt tên",
+    "đứng tên",
+    "công bố",
+    "toàn vẹn"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "id": "xam-pham-sang-che",
+ "subject": "so-huu-tri-tue",
+ "chapter": "v12",
+ "term": "Xâm phạm quyền đối với sáng chế, kiểu dáng công nghiệp, thiết kế bố trí",
+ "definition": "Các hành vi sau đây bị coi là xâm phạm quyền của chủ sở hữu sáng chế, kiểu dáng công nghiệp, thiết kế bố trí: 1. Sử dụng sáng chế được bảo hộ, kiểu dáng công nghiệp được bảo hộ hoặc kiểu dáng công nghiệp không khác biệt đáng kể với kiểu dáng đó, thiết kế bố trí được bảo hộ hoặc bất kỳ phần nào có tính nguyên gốc của thiết kế bố trí đó trong thời hạn hiệu lực của văn bằng bảo hộ mà không được phép của chủ sở hữu; 2. Sử dụng sáng chế, kiểu dáng công nghiệp, thiết kế bố trí mà không trả tiền đền bù theo quy định về quyền tạm thời quy định tại Điều 131 của Luật này.",
+ "plain": "Yếu tố xâm phạm: (1) đối tượng ĐANG ĐƯỢC BẢO HỘ (trong thời hạn hiệu lực văn bằng); (2) có hành vi SỬ DỤNG (theo Điều 124: sản xuất, áp dụng quy trình, khai thác công dụng, lưu thông, nhập khẩu…); (3) KHÔNG ĐƯỢC PHÉP của chủ sở hữu; (4) không thuộc trường hợp giới hạn quyền. Với kiểu dáng: cả kiểu dáng \"KHÔNG KHÁC BIỆT ĐÁNG KỂ\". Xâm phạm nhãn hiệu, tên thương mại, chỉ dẫn địa lý: Điều 129.",
+ "example": "Công ty A sản xuất chai nước có hình dáng gần như y hệt kiểu dáng công nghiệp đã đăng ký của công ty B, chỉ đổi màu nắp: có thể là kiểu dáng \"không khác biệt đáng kể\" — xâm phạm.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 126 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quyen-chu-so-huu-shcn",
+  "bien-phap-xu-ly-xam-pham-shtt"
+ ],
+ "keywords": [
+  "trong thời hạn hiệu lực văn bằng",
+  "không được phép của chủ sở hữu",
+  "không khác biệt đáng kể",
+  "quyền tạm thời"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Sản xuất sản phẩm theo sáng chế đã hết thời hạn bảo hộ có xâm phạm không?",
+   "options": [
+    "Không, vì điều kiện xâm phạm là trong thời hạn hiệu lực văn bằng",
+    "Có",
+    "Có nếu không trả phí",
+    "Có nếu xuất khẩu"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 126.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 126 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Sử dụng kiểu dáng không khác biệt đáng kể với kiểu dáng được bảo hộ mà không được phép thì sao?",
+   "options": [
+    "Là xâm phạm quyền của chủ sở hữu kiểu dáng",
+    "Không xâm phạm vì có khác biệt",
+    "Chỉ là cạnh tranh không lành mạnh",
+    "Được phép nếu ghi xuất xứ"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 126.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 126 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Xâm phạm",
+   "right": "Không xâm phạm",
+   "cases": [
+    {
+     "text": "Sản xuất hàng theo sáng chế đang được bảo hộ để bán, không được phép",
+     "answer": "left"
+    },
+    {
+     "text": "Dùng sáng chế để giảng dạy phi thương mại",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 125, 126."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Sử dụng sáng chế được bảo hộ trong thời hạn {{hiệu lực}} của văn bằng bảo hộ mà không được {{phép}} của chủ sở hữu là xâm phạm.",
+   "bank_extra": [
+    "đăng ký",
+    "báo trước"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Sử dụng sáng chế mà không trả tiền đền bù theo quy định về quyền {{tạm thời}} cũng là xâm phạm.",
+   "bank_extra": [
+    "vĩnh viễn",
+    "ưu tiên"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chỉ sao chép nguyên vẹn kiểu dáng mới bị coi là xâm phạm.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 126: cả kiểu dáng không khác biệt đáng kể."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các hành vi xâm phạm quyền đối với sáng chế, kiểu dáng công nghiệp, thiết kế bố trí.",
+   "model": "Sử dụng sáng chế, kiểu dáng (hoặc kiểu dáng không khác biệt đáng kể), thiết kế bố trí được bảo hộ trong thời hạn hiệu lực văn bằng mà không được phép của chủ sở hữu; sử dụng mà không trả tiền đền bù theo quyền tạm thời (Điều 126).",
+   "keywords": [
+    "thời hạn hiệu lực",
+    "không được phép",
+    "khác biệt đáng kể",
+    "quyền tạm thời"
+   ]
+  }
+ ]
+}

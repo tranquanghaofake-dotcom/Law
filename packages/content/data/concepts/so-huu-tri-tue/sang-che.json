@@ -1,0 +1,121 @@
+{
+ "id": "sang-che",
+ "subject": "so-huu-tri-tue",
+ "chapter": "v7",
+ "term": "Sáng chế và điều kiện bảo hộ",
+ "definition": "Sáng chế là giải pháp kỹ thuật dưới dạng sản phẩm hoặc quy trình nhằm giải quyết một vấn đề xác định bằng việc ứng dụng các quy luật tự nhiên. (…) Sáng chế được bảo hộ dưới hình thức cấp Bằng độc quyền sáng chế nếu đáp ứng các điều kiện sau đây: a) Có tính mới; b) Có trình độ sáng tạo; c) Có khả năng áp dụng công nghiệp. Sáng chế được bảo hộ dưới hình thức cấp Bằng độc quyền giải pháp hữu ích nếu không phải là hiểu biết thông thường và đáp ứng các điều kiện sau đây: a) Có tính mới; b) Có khả năng áp dụng công nghiệp.",
+ "plain": "Hai hình thức: BẰNG ĐỘC QUYỀN SÁNG CHẾ (3 điều kiện: TÍNH MỚI, TRÌNH ĐỘ SÁNG TẠO, KHẢ NĂNG ÁP DỤNG CÔNG NGHIỆP; hiệu lực 20 NĂM từ ngày nộp đơn) và BẰNG ĐỘC QUYỀN GIẢI PHÁP HỮU ÍCH (không là hiểu biết thông thường + tính mới + khả năng áp dụng công nghiệp; 10 NĂM). KHÔNG bảo hộ (Điều 59): phát minh, lý thuyết khoa học, phương pháp toán học; chương trình máy tính; giải pháp chỉ mang tính thẩm mỹ; giống thực vật, động vật; phương pháp chẩn đoán, chữa bệnh…",
+ "example": "Một quy trình mới xử lý nước thải tiết kiệm 40% hóa chất, chưa ai công bố, không hiển nhiên với kỹ sư trong ngành: có thể được cấp Bằng độc quyền sáng chế.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 12 Điều 4, Điều 58 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tinh-moi-sang-che",
+  "hieu-luc-van-bang-bao-ho",
+  "chuong-trinh-may-tinh"
+ ],
+ "keywords": [
+  "giải pháp kỹ thuật",
+  "tính mới, trình độ sáng tạo, áp dụng công nghiệp",
+  "giải pháp hữu ích",
+  "không phải hiểu biết thông thường"
+ ],
+ "note": "Điều 4, 58 có nội dung được sửa đổi, bổ sung bởi Luật 36/2009/QH12 (hiệu lực 01/01/2010); Luật 07/2022/QH15 (hiệu lực 01/01/2023); Luật 131/2025/QH15 (hiệu lực 01/4/2026) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Điều kiện nào KHÔNG bắt buộc để cấp Bằng độc quyền giải pháp hữu ích?",
+   "options": [
+    "Trình độ sáng tạo",
+    "Tính mới",
+    "Khả năng áp dụng công nghiệp",
+    "Không phải là hiểu biết thông thường"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 58.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 58 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đối tượng nào KHÔNG được bảo hộ với danh nghĩa sáng chế?",
+   "options": [
+    "Phương pháp chữa bệnh cho người",
+    "Sản phẩm thuốc mới có tính mới, trình độ sáng tạo",
+    "Quy trình sản xuất mới",
+    "Máy móc cải tiến"
+   ],
+   "answer": 0,
+   "explain": "Khoản 7 Điều 59.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 59 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Bằng độc quyền sáng chế",
+   "right": "Bằng độc quyền giải pháp hữu ích",
+   "cases": [
+    {
+     "text": "Cần trình độ sáng tạo",
+     "answer": "left"
+    },
+    {
+     "text": "Hiệu lực 10 năm từ ngày nộp đơn",
+     "answer": "right"
+    },
+    {
+     "text": "Hiệu lực 20 năm từ ngày nộp đơn",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 58, 93."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Sáng chế là giải pháp {{kỹ thuật}} dưới dạng sản phẩm hoặc quy trình nhằm giải quyết một vấn đề xác định bằng việc ứng dụng các {{quy luật tự nhiên}}.",
+   "bank_extra": [
+    "thẩm mỹ",
+    "quy tắc kinh doanh"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Sáng chế được cấp Bằng độc quyền sáng chế nếu có tính mới, có {{trình độ sáng tạo}}, có khả năng áp dụng công nghiệp.",
+   "bank_extra": [
+    "tính thẩm mỹ",
+    "giá trị thương mại"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Một lý thuyết khoa học mới có thể được cấp Bằng độc quyền sáng chế.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 59: phát minh, lý thuyết khoa học không được bảo hộ với danh nghĩa sáng chế."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm sáng chế và điều kiện bảo hộ.",
+   "model": "Sáng chế là giải pháp kỹ thuật dạng sản phẩm hoặc quy trình giải quyết vấn đề bằng ứng dụng quy luật tự nhiên (khoản 12 Điều 4); Bằng độc quyền sáng chế: tính mới, trình độ sáng tạo, khả năng áp dụng công nghiệp; Bằng độc quyền giải pháp hữu ích: không là hiểu biết thông thường, tính mới, áp dụng công nghiệp (Điều 58).",
+   "keywords": [
+    "giải pháp kỹ thuật",
+    "tính mới",
+    "trình độ sáng tạo",
+    "áp dụng công nghiệp"
+   ]
+  }
+ ]
+}

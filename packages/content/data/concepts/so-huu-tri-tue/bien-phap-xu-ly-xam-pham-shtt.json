@@ -1,0 +1,115 @@
+{
+ "id": "bien-phap-xu-ly-xam-pham-shtt",
+ "subject": "so-huu-tri-tue",
+ "chapter": "v14",
+ "term": "Biện pháp xử lý hành vi xâm phạm quyền sở hữu trí tuệ",
+ "definition": "Tổ chức, cá nhân có hành vi xâm phạm quyền sở hữu trí tuệ của tổ chức, cá nhân khác thì tuỳ theo tính chất, mức độ xâm phạm, có thể bị xử lý bằng biện pháp dân sự, hành chính hoặc hình sự. Trong trường hợp cần thiết, cơ quan nhà nước có thẩm quyền có thể áp dụng biện pháp khẩn cấp tạm thời, biện pháp kiểm soát hàng hóa xuất khẩu, nhập khẩu liên quan đến sở hữu trí tuệ, biện pháp ngăn chặn và bảo đảm xử phạt hành chính theo quy định của Luật này và các quy định khác của pháp luật có liên quan.",
+ "plain": "Ba nhóm biện pháp: DÂN SỰ (Tòa án: buộc chấm dứt, xin lỗi, cải chính, bồi thường, tiêu hủy… Điều 202); HÀNH CHÍNH (xử phạt khi gây thiệt hại cho tác giả, chủ sở hữu, người tiêu dùng, xã hội; buôn bán hàng giả mạo về SHTT… Điều 211); HÌNH SỰ (tội xâm phạm quyền tác giả Điều 225, tội xâm phạm quyền sở hữu công nghiệp Điều 226 BLHS). Biện pháp hỗ trợ: KHẨN CẤP TẠM THỜI, KIỂM SOÁT HẢI QUAN, ngăn chặn. TỰ BẢO VỆ (Điều 198): biện pháp công nghệ, yêu cầu chấm dứt, gỡ bỏ nội dung trên không gian mạng, khởi kiện.",
+ "example": "Phát hiện cửa hàng bán túi xách giả nhãn hiệu: chủ sở hữu có thể yêu cầu quản lý thị trường xử phạt hành chính, khởi kiện đòi bồi thường, hoặc tố giác nếu đủ dấu hiệu tội phạm.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 199 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "xam-pham-quyen-tac-gia",
+  "xam-pham-sang-che"
+ ],
+ "keywords": [
+  "dân sự, hành chính, hình sự",
+  "biện pháp khẩn cấp tạm thời",
+  "kiểm soát hàng hóa xuất nhập khẩu",
+  "tự bảo vệ"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hành vi xâm phạm quyền sở hữu trí tuệ có thể bị xử lý bằng những biện pháp nào?",
+   "options": [
+    "Dân sự, hành chính hoặc hình sự tùy tính chất, mức độ",
+    "Chỉ dân sự",
+    "Chỉ hình sự",
+    "Chỉ hòa giải"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 199.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 199 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chủ thể quyền yêu cầu người xâm phạm gỡ bỏ nội dung vi phạm trên không gian mạng là biện pháp gì?",
+   "options": [
+    "Tự bảo vệ (điểm b khoản 1 Điều 198)",
+    "Xử phạt hành chính",
+    "Biện pháp hình sự",
+    "Kiểm soát hải quan"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 1 Điều 198.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 198 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Biện pháp dân sự",
+   "right": "Biện pháp hành chính",
+   "cases": [
+    {
+     "text": "Tòa án buộc bồi thường thiệt hại",
+     "answer": "left"
+    },
+    {
+     "text": "Phạt tiền người buôn bán hàng giả mạo nhãn hiệu",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 199, 202, 211."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hành vi xâm phạm quyền sở hữu trí tuệ có thể bị xử lý bằng biện pháp {{dân sự}}, hành chính hoặc {{hình sự}}.",
+   "bank_extra": [
+    "kỷ luật",
+    "ngoại giao"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Cơ quan nhà nước có thể áp dụng biện pháp {{khẩn cấp tạm thời}}, biện pháp kiểm soát hàng hóa xuất khẩu, nhập khẩu liên quan đến sở hữu trí tuệ.",
+   "bank_extra": [
+    "cưỡng chế thuế",
+    "giải thể"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Xâm phạm quyền sở hữu trí tuệ chỉ có thể bị xử lý hành chính.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 199: dân sự, hành chính hoặc hình sự."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày các biện pháp xử lý hành vi xâm phạm quyền sở hữu trí tuệ.",
+   "model": "Tùy tính chất, mức độ, xử lý bằng biện pháp dân sự, hành chính hoặc hình sự (khoản 1 Điều 199); cơ quan nhà nước có thể áp dụng khẩn cấp tạm thời, kiểm soát hàng hóa xuất nhập khẩu, ngăn chặn (khoản 2); chủ thể quyền có quyền tự bảo vệ (Điều 198).",
+   "keywords": [
+    "dân sự",
+    "hành chính",
+    "hình sự",
+    "khẩn cấp tạm thời"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "id": "giong-cay-trong",
+ "subject": "so-huu-tri-tue",
+ "chapter": "v13",
+ "term": "Điều kiện bảo hộ giống cây trồng",
+ "definition": "Giống cây trồng được bảo hộ là giống cây trồng được chọn tạo hoặc phát hiện và phát triển, có tính mới, tính khác biệt, tính đồng nhất, tính ổn định và có tên phù hợp.",
+ "plain": "Năm điều kiện (chuẩn UPOV): TÍNH MỚI (chưa bán, chuyển giao quá thời hạn luật định), TÍNH KHÁC BIỆT, TÍNH ĐỒNG NHẤT, TÍNH ỔN ĐỊNH, TÊN PHÙ HỢP. Phải được CHỌN TẠO hoặc PHÁT HIỆN VÀ PHÁT TRIỂN (không chỉ phát hiện trong tự nhiên). Văn bằng: Bằng bảo hộ giống cây trồng do Bộ Nông nghiệp (và Môi trường) cấp. Giống cây trồng KHÔNG được bảo hộ với danh nghĩa sáng chế (khoản 5 Điều 59).",
+ "example": "Viện lúa chọn tạo giống lúa mới có năng suất cao, đặc tính đồng đều, ổn định qua nhiều vụ, đặt tên riêng: có thể được cấp Bằng bảo hộ giống cây trồng.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 158 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quyen-so-huu-tri-tue",
+  "sang-che"
+ ],
+ "keywords": [
+  "chọn tạo hoặc phát hiện và phát triển",
+  "mới, khác biệt, đồng nhất, ổn định",
+  "tên phù hợp"
+ ],
+ "note": "Điều 158 có nội dung được sửa đổi, bổ sung bởi Luật 07/2022/QH15 (hiệu lực 01/01/2023) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Điều kiện nào KHÔNG thuộc điều kiện bảo hộ giống cây trồng theo Điều 158?",
+   "options": [
+    "Trình độ sáng tạo",
+    "Tính khác biệt",
+    "Tính đồng nhất",
+    "Tính ổn định"
+   ],
+   "answer": 0,
+   "explain": "Điều 158; trình độ sáng tạo là điều kiện của sáng chế.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 158 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Giống cây trồng có được bảo hộ với danh nghĩa sáng chế không?",
+   "options": [
+    "Không",
+    "Có",
+    "Có nếu là giống biến đổi gen",
+    "Có nếu đăng ký quốc tế"
+   ],
+   "answer": 0,
+   "explain": "Khoản 5 Điều 59.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 59 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Điều kiện giống cây trồng",
+   "right": "Điều kiện sáng chế",
+   "cases": [
+    {
+     "text": "Tính đồng nhất, tính ổn định",
+     "answer": "left"
+    },
+    {
+     "text": "Trình độ sáng tạo",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 58, 158."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Giống cây trồng được bảo hộ phải có tính mới, tính {{khác biệt}}, tính đồng nhất, tính {{ổn định}} và có tên phù hợp.",
+   "bank_extra": [
+    "thẩm mỹ",
+    "lợi nhuận"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Giống cây trồng được bảo hộ là giống được chọn tạo hoặc {{phát hiện và phát triển}}.",
+   "bank_extra": [
+    "nhập khẩu",
+    "mua lại"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Giống cây hoang dại chỉ cần được phát hiện là đủ điều kiện bảo hộ.",
+   "answer": false,
+   "explain": "Sai. Điều 158: phải được chọn tạo hoặc phát hiện và phát triển, đủ năm điều kiện."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu điều kiện bảo hộ giống cây trồng.",
+   "model": "Giống cây trồng được chọn tạo hoặc phát hiện và phát triển, có tính mới, tính khác biệt, tính đồng nhất, tính ổn định và có tên phù hợp (Điều 158).",
+   "keywords": [
+    "chọn tạo",
+    "khác biệt",
+    "đồng nhất",
+    "ổn định"
+   ]
+  }
+ ]
+}

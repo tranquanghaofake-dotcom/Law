@@ -1,0 +1,116 @@
+{
+ "id": "ngoai-le-khong-xam-pham-quyen-tac-gia",
+ "subject": "so-huu-tri-tue",
+ "chapter": "v3",
+ "term": "Ngoại lệ không xâm phạm quyền tác giả",
+ "definition": "Các trường hợp sử dụng tác phẩm đã công bố không phải xin phép, không phải trả tiền bản quyền nhưng phải thông tin về tên tác giả và nguồn gốc, xuất xứ của tác phẩm bao gồm: a) Tự sao chép một bản để nghiên cứu khoa học, học tập của cá nhân và không nhằm mục đích thương mại. Quy định này không áp dụng trong trường hợp sao chép bằng thiết bị sao chép; b) Sao chép hợp lý một phần tác phẩm bằng thiết bị sao chép để nghiên cứu khoa học, học tập của cá nhân và không nhằm mục đích thương mại;",
+ "plain": "Điều kiện chung: tác phẩm ĐÃ CÔNG BỐ; KHÔNG XIN PHÉP, KHÔNG TRẢ TIỀN nhưng PHẢI NÊU TÊN TÁC GIẢ, NGUỒN GỐC. Ví dụ: tự sao chép MỘT BẢN để học tập, nghiên cứu (không bằng thiết bị sao chép); sao chép HỢP LÝ MỘT PHẦN bằng thiết bị để học; minh họa bài giảng; công vụ; trích dẫn hợp lý… Không được ảnh hưởng đến việc khai thác bình thường và không gây phương hại bất hợp lý cho tác giả (\"phép thử ba bước\" Berne). Nguyên văn VBHN có lỗi dính chữ \"đểnghiên cứu\" ở điểm a — đã sửa thành \"để nghiên cứu\" trong định nghĩa trên.",
+ "example": "Sinh viên photo một chương giáo trình để tự học, ghi rõ tên sách: thuộc ngoại lệ (điểm b). Photo cả cuốn để bán cho lớp: xâm phạm.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điểm a, b khoản 1 Điều 25 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quyen-nhan-than-tac-gia",
+  "xam-pham-quyen-tac-gia"
+ ],
+ "keywords": [
+  "tác phẩm đã công bố",
+  "không xin phép, không trả tiền",
+  "phải nêu tên tác giả, nguồn gốc",
+  "không nhằm mục đích thương mại"
+ ],
+ "note": "Điều 25 có nội dung được sửa đổi, bổ sung bởi Luật 36/2009/QH12 (hiệu lực 01/01/2010) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Sinh viên tự sao chép một bản để học tập cá nhân, không vì mục đích thương mại thì có phải xin phép không?",
+   "options": [
+    "Không phải xin phép, không trả tiền nhưng phải thông tin tên tác giả, nguồn gốc",
+    "Phải xin phép và trả tiền",
+    "Phải đăng ký với Cục Bản quyền",
+    "Bị cấm tuyệt đối"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 25.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 25 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ngoại lệ tại khoản 1 Điều 25 áp dụng với tác phẩm nào?",
+   "options": [
+    "Tác phẩm đã công bố",
+    "Tác phẩm chưa công bố",
+    "Mọi tác phẩm",
+    "Chỉ tác phẩm nước ngoài"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 25.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 25 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thuộc ngoại lệ",
+   "right": "Xâm phạm quyền tác giả",
+   "cases": [
+    {
+     "text": "Sao chép hợp lý một phần sách để tự học",
+     "answer": "left"
+    },
+    {
+     "text": "In lại toàn bộ sách để bán",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 25, 28."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Sử dụng tác phẩm đã công bố không phải xin phép, không phải trả tiền bản quyền nhưng phải thông tin về {{tên tác giả}} và {{nguồn gốc}}, xuất xứ của tác phẩm.",
+   "bank_extra": [
+    "giá bán",
+    "số trang"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Sao chép hợp lý một phần tác phẩm bằng thiết bị sao chép để học tập cá nhân và không nhằm mục đích {{thương mại}}.",
+   "bank_extra": [
+    "giáo dục",
+    "phi lợi nhuận"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo điểm a khoản 1 Điều 25, được dùng máy photo sao chép toàn bộ cuốn sách để học.",
+   "answer": false,
+   "explain": "Sai. Điểm a không áp dụng khi sao chép bằng thiết bị sao chép; điểm b chỉ cho sao chép hợp lý một phần."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày các trường hợp ngoại lệ không xâm phạm quyền tác giả về sao chép để học tập.",
+   "model": "Sử dụng tác phẩm đã công bố không xin phép, không trả tiền nhưng phải nêu tên tác giả, nguồn gốc: tự sao chép một bản để nghiên cứu, học tập không thương mại (không bằng thiết bị sao chép); sao chép hợp lý một phần bằng thiết bị để học tập (khoản 1 Điều 25).",
+   "keywords": [
+    "đã công bố",
+    "nêu tên tác giả",
+    "một bản",
+    "hợp lý một phần"
+   ]
+  }
+ ]
+}

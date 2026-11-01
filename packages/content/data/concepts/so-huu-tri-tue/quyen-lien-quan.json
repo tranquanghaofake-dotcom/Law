@@ -1,0 +1,120 @@
+{
+ "id": "quyen-lien-quan",
+ "subject": "so-huu-tri-tue",
+ "chapter": "v4",
+ "term": "Quyền liên quan đến quyền tác giả",
+ "definition": "Quyền liên quan đến quyền tác giả (sau đây gọi là quyền liên quan) là quyền của tổ chức, cá nhân đối với cuộc biểu diễn, bản ghi âm, ghi hình, chương trình phát sóng, tín hiệu cáp mang chương trình được mã hóa, tín hiệu vệ tinh mang chương trình được mã hóa.",
+ "plain": "Đối tượng: CUỘC BIỂU DIỄN, BẢN GHI ÂM, GHI HÌNH, CHƯƠNG TRÌNH PHÁT SÓNG, TÍN HIỆU VỆ TINH, CÁP mã hóa. Chủ thể: NGƯỜI BIỂU DIỄN, NHÀ SẢN XUẤT bản ghi, TỔ CHỨC PHÁT SÓNG. Quyền liên quan \"liên quan\" vì thường dựa trên tác phẩm và KHÔNG ĐƯỢC GÂY PHƯƠNG HẠI quyền tác giả (khoản 2 Điều 6). Thời hạn: người biểu diễn, bản ghi 50 năm; chương trình phát sóng 50 năm (Điều 34).",
+ "example": "Ca sĩ hát bài của nhạc sĩ X: nhạc sĩ có quyền tác giả với bài hát; ca sĩ có quyền liên quan với cuộc biểu diễn; hãng thu âm có quyền liên quan với bản ghi âm.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 3 Điều 4 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quyen-so-huu-tri-tue",
+  "can-cu-phat-sinh-quyen-shtt"
+ ],
+ "keywords": [
+  "cuộc biểu diễn",
+  "bản ghi âm, ghi hình",
+  "chương trình phát sóng",
+  "không gây phương hại quyền tác giả"
+ ],
+ "note": "Điều 4 có nội dung được sửa đổi, bổ sung bởi Luật 36/2009/QH12 (hiệu lực 01/01/2010); Luật 07/2022/QH15 (hiệu lực 01/01/2023); Luật 131/2025/QH15 (hiệu lực 01/4/2026) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đối tượng nào thuộc quyền liên quan?",
+   "options": [
+    "Cuộc biểu diễn",
+    "Bài hát (tác phẩm âm nhạc)",
+    "Nhãn hiệu",
+    "Sáng chế"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 4 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ca sĩ trình diễn ca khúc của nhạc sĩ có quyền gì đối với cuộc biểu diễn?",
+   "options": [
+    "Quyền liên quan",
+    "Quyền tác giả đối với ca khúc",
+    "Quyền sở hữu công nghiệp",
+    "Không có quyền gì"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 4 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quyền tác giả",
+   "right": "Quyền liên quan",
+   "cases": [
+    {
+     "text": "Nhạc sĩ đối với bản nhạc",
+     "answer": "left"
+    },
+    {
+     "text": "Hãng thu âm đối với bản ghi âm",
+     "answer": "right"
+    },
+    {
+     "text": "Đài truyền hình đối với chương trình phát sóng",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quyền liên quan là quyền đối với cuộc {{biểu diễn}}, bản ghi âm, ghi hình, chương trình {{phát sóng}}, tín hiệu vệ tinh mang chương trình được mã hóa.",
+   "bank_extra": [
+    "sáng tác",
+    "xuất bản"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quyền liên quan phát sinh mà không gây {{phương hại}} đến quyền tác giả.",
+   "bank_extra": [
+    "lợi ích",
+    "nghĩa vụ"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Ca sĩ biểu diễn bài hát là tác giả của bài hát đó.",
+   "answer": false,
+   "explain": "Sai. Ca sĩ có quyền liên quan với cuộc biểu diễn; tác giả là người sáng tác."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm quyền liên quan đến quyền tác giả.",
+   "model": "Là quyền của tổ chức, cá nhân đối với cuộc biểu diễn, bản ghi âm, ghi hình, chương trình phát sóng, tín hiệu cáp, vệ tinh mang chương trình được mã hóa (khoản 3 Điều 4); phát sinh khi được định hình hoặc thực hiện mà không phương hại quyền tác giả (khoản 2 Điều 6).",
+   "keywords": [
+    "biểu diễn",
+    "ghi âm",
+    "phát sóng",
+    "phương hại"
+   ]
+  }
+ ]
+}

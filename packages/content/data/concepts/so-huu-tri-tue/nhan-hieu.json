@@ -1,0 +1,120 @@
+{
+ "id": "nhan-hieu",
+ "subject": "so-huu-tri-tue",
+ "chapter": "v8",
+ "term": "Nhãn hiệu và điều kiện bảo hộ",
+ "definition": "Nhãn hiệu là dấu hiệu dùng để phân biệt hàng hóa, dịch vụ của các tổ chức, cá nhân khác nhau. (…) Nhãn hiệu được bảo hộ nếu đáp ứng các điều kiện sau đây: 1. Là dấu hiệu nhìn thấy được dưới dạng chữ cái, từ ngữ, hình vẽ, hình ảnh, hình ba chiều hoặc sự kết hợp các yếu tố đó, được thể hiện bằng một hoặc nhiều màu sắc hoặc dấu hiệu âm thanh thể hiện được dưới dạng đồ họa; 2. Có khả năng phân biệt hàng hóa, dịch vụ của chủ sở hữu nhãn hiệu với hàng hóa, dịch vụ của chủ thể khác.",
+ "plain": "Hai điều kiện: (1) DẤU HIỆU NHÌN THẤY ĐƯỢC (chữ, từ ngữ, hình vẽ, hình ba chiều, màu sắc) hoặc ÂM THANH thể hiện được dưới dạng đồ họa (bổ sung 2022); (2) KHẢ NĂNG PHÂN BIỆT (Điều 74: dễ nhận biết, dễ ghi nhớ; không phải hình học đơn giản, tên gọi thông thường, dấu hiệu mô tả…). Phân loại: nhãn hiệu TẬP THỂ, CHỨNG NHẬN, LIÊN KẾT, NỔI TIẾNG. Văn bằng: 10 NĂM từ ngày nộp đơn, gia hạn nhiều lần, mỗi lần 10 năm.",
+ "example": "Đăng ký tên \"Bánh mì\" cho sản phẩm bánh mì: không có khả năng phân biệt (tên gọi thông thường). \"Bánh mì Phượng Hội An\" có thêm yếu tố phân biệt.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 16 Điều 4, Điều 72 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nhan-hieu-noi-tieng",
+  "ten-thuong-mai",
+  "chi-dan-dia-ly"
+ ],
+ "keywords": [
+  "dấu hiệu phân biệt hàng hóa, dịch vụ",
+  "nhìn thấy được hoặc âm thanh",
+  "khả năng phân biệt"
+ ],
+ "note": "Điều 4, 72 có nội dung được sửa đổi, bổ sung bởi Luật 36/2009/QH12 (hiệu lực 01/01/2010); Luật 07/2022/QH15 (hiệu lực 01/01/2023); Luật 131/2025/QH15 (hiệu lực 01/4/2026) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Điều kiện bảo hộ nhãn hiệu theo Điều 72 gồm những gì?",
+   "options": [
+    "Là dấu hiệu nhìn thấy được hoặc âm thanh thể hiện được dưới dạng đồ họa, và có khả năng phân biệt",
+    "Có tính mới và trình độ sáng tạo",
+    "Có nguồn gốc địa lý",
+    "Đã sử dụng 5 năm"
+   ],
+   "answer": 0,
+   "explain": "Điều 72.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 72 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Dấu hiệu âm thanh có thể được bảo hộ là nhãn hiệu không?",
+   "options": [
+    "Có, nếu thể hiện được dưới dạng đồ họa và có khả năng phân biệt",
+    "Không bao giờ",
+    "Chỉ nhãn hiệu nổi tiếng",
+    "Chỉ khi kèm hình ảnh"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 72.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 72 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Có khả năng phân biệt",
+   "right": "Không có khả năng phân biệt",
+   "cases": [
+    {
+     "text": "Từ ngữ tự đặt, dễ nhớ cho cửa hàng",
+     "answer": "left"
+    },
+    {
+     "text": "Hình tam giác đơn giản chưa được sử dụng rộng rãi",
+     "answer": "right"
+    },
+    {
+     "text": "Tên gọi thông thường của hàng hóa",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 74."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhãn hiệu là dấu hiệu dùng để {{phân biệt}} hàng hóa, dịch vụ của các tổ chức, cá nhân khác nhau. Nhãn hiệu phải là dấu hiệu nhìn thấy được hoặc dấu hiệu {{âm thanh}} thể hiện được dưới dạng đồ họa.",
+   "bank_extra": [
+    "quảng cáo",
+    "mùi hương"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhãn hiệu phải có khả năng phân biệt hàng hóa, dịch vụ của {{chủ sở hữu}} nhãn hiệu với hàng hóa, dịch vụ của chủ thể khác.",
+   "bank_extra": [
+    "nhà phân phối",
+    "người tiêu dùng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo Luật SHTT hiện hành, chỉ dấu hiệu nhìn thấy được mới có thể là nhãn hiệu.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 72 bao gồm dấu hiệu âm thanh thể hiện được dưới dạng đồ họa."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm nhãn hiệu và điều kiện bảo hộ.",
+   "model": "Nhãn hiệu là dấu hiệu phân biệt hàng hóa, dịch vụ của các chủ thể khác nhau (khoản 16 Điều 4); được bảo hộ nếu là dấu hiệu nhìn thấy được (chữ, hình, hình ba chiều, màu sắc) hoặc âm thanh thể hiện dưới dạng đồ họa, và có khả năng phân biệt (Điều 72).",
+   "keywords": [
+    "phân biệt",
+    "nhìn thấy được",
+    "âm thanh",
+    "khả năng phân biệt"
+   ]
+  }
+ ]
+}

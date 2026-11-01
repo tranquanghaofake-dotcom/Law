@@ -1,0 +1,116 @@
+{
+ "id": "xam-pham-quyen-tac-gia",
+ "subject": "so-huu-tri-tue",
+ "chapter": "v6",
+ "term": "Hành vi xâm phạm quyền tác giả",
+ "definition": "1. Xâm phạm quyền nhân thân quy định tại Điều 19 của Luật này. 2. Xâm phạm quyền tài sản quy định tại Điều 20 của Luật này. 3. Không thực hiện hoặc thực hiện không đầy đủ nghĩa vụ quy định tại các điều 25, 25a và 26 của Luật này.",
+ "plain": "Sau sửa đổi 2022, Điều 28 quy định khái quát: xâm phạm QUYỀN NHÂN THÂN (Điều 19), QUYỀN TÀI SẢN (Điều 20); không thực hiện nghĩa vụ khi dùng NGOẠI LỆ (Điều 25, 25a, 26 — như không nêu tên tác giả); vô hiệu hóa BIỆN PHÁP CÔNG NGHỆ bảo vệ; xóa, thay đổi THÔNG TIN QUẢN LÝ QUYỀN… Hậu quả: biện pháp dân sự, hành chính, hình sự (Điều 199); tội xâm phạm quyền tác giả, quyền liên quan (Điều 225 BLHS).",
+ "example": "Trang web đăng lại toàn bộ phim đang chiếu rạp không được phép: xâm phạm quyền tài sản (quyền truyền đạt đến công chúng, khoản 2 Điều 28).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1–3 Điều 28 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "ngoai-le-khong-xam-pham-quyen-tac-gia",
+  "bien-phap-xu-ly-xam-pham-shtt"
+ ],
+ "keywords": [
+  "xâm phạm quyền nhân thân",
+  "xâm phạm quyền tài sản",
+  "không thực hiện nghĩa vụ khi dùng ngoại lệ",
+  "biện pháp công nghệ"
+ ],
+ "note": "Điều 28 có nội dung được sửa đổi, bổ sung bởi Luật 07/2022/QH15 (hiệu lực 01/01/2023) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Sử dụng tác phẩm theo ngoại lệ Điều 25 nhưng không nêu tên tác giả là gì?",
+   "options": [
+    "Hành vi xâm phạm quyền tác giả (khoản 3 Điều 28)",
+    "Hợp pháp",
+    "Chỉ vi phạm đạo đức",
+    "Xâm phạm quyền sở hữu công nghiệp"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 28.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 28 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Cố ý vô hiệu hóa biện pháp công nghệ hữu hiệu bảo vệ quyền tác giả để sao chép trái phép là gì?",
+   "options": [
+    "Hành vi xâm phạm quyền tác giả",
+    "Ngoại lệ hợp pháp",
+    "Quyền của người dùng",
+    "Cạnh tranh không lành mạnh"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 28.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 28 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Xâm phạm quyền nhân thân",
+   "right": "Xâm phạm quyền tài sản",
+   "cases": [
+    {
+     "text": "Mạo danh tác giả trên tác phẩm",
+     "answer": "left"
+    },
+    {
+     "text": "Sao chép bán bản lậu",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 19, 20, 28."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hành vi xâm phạm quyền tác giả gồm xâm phạm quyền {{nhân thân}} quy định tại Điều 19, xâm phạm quyền {{tài sản}} quy định tại Điều 20.",
+   "bank_extra": [
+    "dân sự",
+    "sở hữu công nghiệp"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Không thực hiện hoặc thực hiện không đầy đủ nghĩa vụ quy định tại các điều 25, {{25a}} và 26 cũng là xâm phạm quyền tác giả.",
+   "bank_extra": [
+    "27",
+    "24"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chỉ hành vi sao chép mới bị coi là xâm phạm quyền tác giả.",
+   "answer": false,
+   "explain": "Sai. Điều 28 gồm nhiều hành vi: xâm phạm quyền nhân thân, quyền tài sản, nghĩa vụ khi dùng ngoại lệ, biện pháp công nghệ…"
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các nhóm hành vi xâm phạm quyền tác giả theo Điều 28.",
+   "model": "Xâm phạm quyền nhân thân (Điều 19); xâm phạm quyền tài sản (Điều 20); không thực hiện nghĩa vụ tại Điều 25, 25a, 26; vô hiệu hóa biện pháp công nghệ; kinh doanh thiết bị vô hiệu hóa; xóa, thay đổi thông tin quản lý quyền… (Điều 28).",
+   "keywords": [
+    "nhân thân",
+    "tài sản",
+    "ngoại lệ",
+    "biện pháp công nghệ"
+   ]
+  }
+ ]
+}

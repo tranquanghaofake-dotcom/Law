@@ -1,0 +1,116 @@
+{
+ "id": "chi-dan-dia-ly",
+ "subject": "so-huu-tri-tue",
+ "chapter": "v9",
+ "term": "Chỉ dẫn địa lý",
+ "definition": "Chỉ dẫn địa lý là dấu hiệu dùng để chỉ nguồn gốc địa lý của sản phẩm từ khu vực, địa phương, vùng lãnh thổ hoặc quốc gia cụ thể. (…) Chỉ dẫn địa lý được bảo hộ nếu đáp ứng các điều kiện sau đây: a) Sản phẩm mang chỉ dẫn địa lý có nguồn gốc địa lý từ khu vực, địa phương, vùng lãnh thổ hoặc quốc gia tương ứng với chỉ dẫn địa lý; b) Sản phẩm mang chỉ dẫn địa lý có danh tiếng, chất lượng hoặc đặc tính chủ yếu do điều kiện địa lý của khu vực, địa phương, vùng lãnh thổ hoặc quốc gia tương ứng với chỉ dẫn địa lý đó quyết định.",
+ "plain": "Hai điều kiện: (1) NGUỒN GỐC ĐỊA LÝ tương ứng; (2) DANH TIẾNG, CHẤT LƯỢNG, ĐẶC TÍNH chủ yếu DO ĐIỀU KIỆN ĐỊA LÝ quyết định (tự nhiên: khí hậu, thổ nhưỡng; con người: kỹ năng truyền thống). Chủ sở hữu là NHÀ NƯỚC (Điều 121); Nhà nước trao quyền quản lý cho tổ chức, trao quyền sử dụng cho người sản xuất trong vùng. Văn bằng hiệu lực VÔ THỜI HẠN từ ngày cấp. Ví dụ thực tế: Phú Quốc (nước mắm), Buôn Ma Thuột (cà phê).",
+ "example": "Nước mắm sản xuất ở tỉnh khác ghi \"Phú Quốc\" để bán: sử dụng chỉ dẫn địa lý cho sản phẩm không có nguồn gốc từ khu vực đó là xâm phạm.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 22 Điều 4, khoản 1 Điều 79 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nhan-hieu",
+  "ten-thuong-mai"
+ ],
+ "keywords": [
+  "nguồn gốc địa lý",
+  "danh tiếng, chất lượng, đặc tính",
+  "do điều kiện địa lý quyết định",
+  "chủ sở hữu là Nhà nước"
+ ],
+ "note": "Điều 4, 79 có nội dung được sửa đổi, bổ sung bởi Luật 36/2009/QH12 (hiệu lực 01/01/2010); Luật 07/2022/QH15 (hiệu lực 01/01/2023); Luật 131/2025/QH15 (hiệu lực 01/4/2026) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Điều kiện bảo hộ chỉ dẫn địa lý gồm những gì?",
+   "options": [
+    "Sản phẩm có nguồn gốc địa lý tương ứng và có danh tiếng, chất lượng, đặc tính chủ yếu do điều kiện địa lý quyết định",
+    "Có tính mới và sáng tạo",
+    "Có khả năng phân biệt chủ thể kinh doanh",
+    "Đã sử dụng 10 năm"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 79.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 79 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chỉ dẫn địa lý là dấu hiệu dùng để làm gì?",
+   "options": [
+    "Chỉ nguồn gốc địa lý của sản phẩm",
+    "Phân biệt doanh nghiệp",
+    "Phân biệt kiểu dáng",
+    "Bảo vệ bí mật kinh doanh"
+   ],
+   "answer": 0,
+   "explain": "Khoản 22 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 22 Điều 4 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Chỉ dẫn địa lý",
+   "right": "Nhãn hiệu",
+   "cases": [
+    {
+     "text": "Cà phê Buôn Ma Thuột",
+     "answer": "left"
+    },
+    {
+     "text": "Logo riêng của một hãng cà phê",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chỉ dẫn địa lý là dấu hiệu dùng để chỉ {{nguồn gốc địa lý}} của sản phẩm; sản phẩm phải có danh tiếng, chất lượng hoặc đặc tính chủ yếu do {{điều kiện địa lý}} quyết định.",
+   "bank_extra": [
+    "nhà sản xuất",
+    "quảng cáo"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chỉ dẫn địa lý chỉ nguồn gốc từ khu vực, địa phương, vùng lãnh thổ hoặc {{quốc gia}} cụ thể.",
+   "bank_extra": [
+    "doanh nghiệp",
+    "hiệp hội"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi sản phẩm có nguồn gốc từ một tỉnh đều được bảo hộ chỉ dẫn địa lý mang tên tỉnh đó.",
+   "answer": false,
+   "explain": "Sai. Còn cần danh tiếng, chất lượng, đặc tính chủ yếu do điều kiện địa lý quyết định (điểm b khoản 1 Điều 79)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm và điều kiện bảo hộ chỉ dẫn địa lý.",
+   "model": "Chỉ dẫn địa lý là dấu hiệu chỉ nguồn gốc địa lý của sản phẩm từ khu vực, địa phương, vùng, quốc gia cụ thể (khoản 22 Điều 4); bảo hộ nếu sản phẩm có nguồn gốc tương ứng và có danh tiếng, chất lượng, đặc tính chủ yếu do điều kiện địa lý quyết định (khoản 1 Điều 79).",
+   "keywords": [
+    "nguồn gốc địa lý",
+    "danh tiếng",
+    "điều kiện địa lý",
+    "quốc gia"
+   ]
+  }
+ ]
+}
