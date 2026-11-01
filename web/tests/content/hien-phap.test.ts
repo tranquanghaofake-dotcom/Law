@@ -33,7 +33,7 @@ describe('nội dung Luật Hiến pháp', () => {
 });
 
 describe('nguyên văn (I6)', () => {
-  const law = readFileSync(join(root, '..', '..', 'archive', 'legal-content-pipeline', 'data', 'laws', 'hien-phap-2013.txt'), 'utf8');
+  const law = readFileSync(join(root, 'laws', 'hien-phap-2013.txt'), 'utf8');
   const norm = (s: string) => s.normalize('NFC').replace(/\\\./g, '.').replace(/\s+/g, ' ').replace(/hoà/g, 'hòa').replace(/Hoà/g, 'Hòa').trim();
   const lawN = norm(law);
   it('mọi definition kiểu statute xuất hiện nguyên văn trong toàn văn Hiến pháp (từng câu)', () => {
