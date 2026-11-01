@@ -1,0 +1,121 @@
+{
+ "id": "sac-lenh-97-dan-luat",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c8-hien-dai",
+ "term": "Sắc lệnh 97/SL (1950): những nguyên tắc dân luật mới",
+ "definition": "Những quyền dân sự đều được luật bảo vệ khi người ta hành sự nó đúng với quyền lợi của nhân dân. (…) Chồng và vợ có địa vị bình đẳng trong gia đình. (…) Người đàn bà có chồng có toàn năng lực về mặt hộ.",
+ "plain": "Sắc lệnh 97/SL sửa đổi các bộ dân luật cũ (được tạm giữ theo Sắc lệnh 47) theo hướng DÂN CHỦ, TIẾN BỘ: quyền dân sự được bảo vệ khi thực hiện phù hợp với quyền lợi nhân dân (Điều 1); con đã thành niên kết hôn không cần cha mẹ đồng ý (Điều 2); VỢ CHỒNG BÌNH ĐẲNG (Điều 5); người phụ nữ có chồng có TOÀN NĂNG LỰC về mặt hộ, tức dân sự (Điều 6), xóa bỏ chế độ người vợ phải lệ thuộc chồng trong dân luật cũ; tuổi thành niên 18 (Điều 7). Đây là bước chuẩn bị cho Luật Hôn nhân và gia đình 1959.",
+ "example": "Theo dân luật cũ thời Pháp thuộc, người vợ ký hợp đồng thường cần sự cho phép của chồng. Từ Sắc lệnh 97/SL (Điều 6), người vợ có toàn năng lực, tự mình xác lập giao dịch.",
+ "source": {
+  "kind": "primary",
+  "cite": "Sắc lệnh số 97/SL ngày 22/5/1950 sửa đổi một số quy lệ và chế định trong dân luật, Điều 1, 5, 6",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Sac-lenh-97-SL-sua-doi-quy-le-che-dinh-dan-luat-36573.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "sac-lenh-97-khe-uoc",
+  "sac-lenh-47-luat-cu"
+ ],
+ "keywords": [
+  "22/5/1950",
+  "quyền dân sự",
+  "vợ chồng bình đẳng",
+  "toàn năng lực",
+  "thành niên 18 tuổi"
+ ],
+ "note": "Văn bản đã hết hiệu lực; học để hiểu lịch sử pháp luật.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 5 Sắc lệnh 97/SL (1950), quan hệ vợ chồng trong gia đình như thế nào?",
+   "options": [
+    "Chồng và vợ có địa vị bình đẳng trong gia đình",
+    "Chồng là chủ gia đình",
+    "Vợ phụ thuộc chồng",
+    "Do tập quán địa phương quyết định"
+   ],
+   "answer": 0,
+   "explain": "Điều 5 Sắc lệnh 97/SL.",
+   "source": {
+    "kind": "primary",
+    "cite": "Sắc lệnh 97/SL ngày 22/5/1950, Điều 5"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 7 Sắc lệnh 97/SL, người vị thành niên là người chưa đủ bao nhiêu tuổi?",
+   "options": [
+    "18 tuổi",
+    "21 tuổi",
+    "16 tuổi",
+    "20 tuổi"
+   ],
+   "answer": 0,
+   "explain": "Điều 7 Sắc lệnh 97/SL.",
+   "source": {
+    "kind": "primary",
+    "cite": "Sắc lệnh 97/SL, Điều 7"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Đúng theo Sắc lệnh 97/SL",
+   "right": "Sai theo Sắc lệnh 97/SL",
+   "cases": [
+    {
+     "text": "Con đã thành niên kết hôn không bắt buộc cha mẹ bằng lòng",
+     "answer": "left"
+    },
+    {
+     "text": "Người vợ có chồng có toàn năng lực về mặt hộ",
+     "answer": "left"
+    },
+    {
+     "text": "Người vợ cần chồng cho phép mới được ký hợp đồng",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 2, 6 Sắc lệnh 97/SL."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Những quyền dân sự đều được luật bảo vệ khi người ta hành sự nó đúng với quyền lợi của {{nhân dân}}. Chồng và vợ có địa vị {{bình đẳng}} trong gia đình.",
+   "bank_extra": [
+    "Nhà nước",
+    "phụ thuộc"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người đàn bà có chồng có toàn {{năng lực}} về mặt hộ.",
+   "bank_extra": [
+    "nghĩa vụ",
+    "trách nhiệm"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo Sắc lệnh 97/SL, con đã thành niên vẫn bắt buộc phải có cha mẹ đồng ý mới được kết hôn.",
+   "answer": false,
+   "explain": "Sai. Điều 2: \"không bắt buộc phải có cha mẹ bằng lòng mới kết hôn được\"."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu những nguyên tắc tiến bộ của Sắc lệnh 97/SL năm 1950.",
+   "model": "Quyền dân sự được bảo vệ khi thực hiện phù hợp quyền lợi nhân dân (Điều 1); con thành niên kết hôn không cần cha mẹ đồng ý (Điều 2); vợ chồng bình đẳng (Điều 5); phụ nữ có chồng có toàn năng lực về mặt hộ (Điều 6); tuổi thành niên 18 (Điều 7); xóa bỏ quy định lạc hậu của dân luật cũ.",
+   "keywords": [
+    "quyền dân sự",
+    "bình đẳng",
+    "toàn năng lực",
+    "18 tuổi"
+   ]
+  }
+ ]
+}

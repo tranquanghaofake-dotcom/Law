@@ -1,0 +1,124 @@
+{
+ "id": "sac-lenh-97-khe-uoc",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c8-hien-dai",
+ "term": "Sắc lệnh 97/SL (1950): giới hạn quyền sở hữu và khế ước vô hiệu do bóc lột",
+ "definition": "Người ta chỉ được hưởng dụng và sử dụng các vật thuộc quyền sở hữu của mình một cách hợp pháp và không thiệt hại đến quyền lợi của nhân dân. (…) Khi lập ước mà có sự tổn thiệt do sự bóc lột của một bên vì điều kiện kinh tế của hai bên chênh lệch thì khế ước có thể coi là vô hiệu.",
+ "plain": "Điều 12 GIỚI HẠN quyền sở hữu: chủ sở hữu chỉ được hưởng dụng, sử dụng tài sản một cách hợp pháp và không gây thiệt hại đến quyền lợi nhân dân (khác quan niệm sở hữu \"tuyệt đối\" trong dân luật cũ chịu ảnh hưởng Bộ luật Dân sự Pháp). Điều 13: khế ước (hợp đồng) có thể VÔ HIỆU khi một bên bị bóc lột do chênh lệch điều kiện kinh tế, tức là bảo vệ bên yếu thế. Đây là quy định sớm về khế ước vô hiệu trong pháp luật Việt Nam hiện đại; có thể liên hệ với các căn cứ giao dịch dân sự vô hiệu trong Bộ luật Dân sự hiện hành.",
+ "example": "Một địa chủ cho nông dân nghèo vay thóc với lãi cắt cổ, bắt ký khế ước bất lợi: theo Điều 13 Sắc lệnh 97/SL, khế ước này có thể bị coi là vô hiệu vì bóc lột do chênh lệch kinh tế.",
+ "source": {
+  "kind": "primary",
+  "cite": "Sắc lệnh số 97/SL ngày 22/5/1950, Điều 12 và Điều 13",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Sac-lenh-97-SL-sua-doi-quy-le-che-dinh-dan-luat-36573.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "sac-lenh-97-dan-luat",
+  "sac-lenh-47-luat-cu",
+  "chuc-thu-van-khe-1237"
+ ],
+ "keywords": [
+  "giới hạn quyền sở hữu",
+  "không thiệt hại quyền lợi nhân dân",
+  "khế ước vô hiệu",
+  "bóc lột, chênh lệch kinh tế"
+ ],
+ "note": "Văn bản đã hết hiệu lực; học để hiểu lịch sử pháp luật.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 13 Sắc lệnh 97/SL, khế ước có thể bị coi là vô hiệu khi nào?",
+   "options": [
+    "Có sự tổn thiệt do bóc lột của một bên vì điều kiện kinh tế hai bên chênh lệch",
+    "Khi không có người làm chứng",
+    "Khi một bên là phụ nữ",
+    "Khi không đóng dấu"
+   ],
+   "answer": 0,
+   "explain": "Điều 13 Sắc lệnh 97/SL.",
+   "source": {
+    "kind": "primary",
+    "cite": "Sắc lệnh 97/SL, Điều 13"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Điều 12 Sắc lệnh 97/SL giới hạn quyền sở hữu như thế nào?",
+   "options": [
+    "Chỉ được hưởng dụng, sử dụng hợp pháp và không thiệt hại quyền lợi nhân dân",
+    "Quyền sở hữu là tuyệt đối",
+    "Tài sản tư nhân bị tịch thu",
+    "Không được bán tài sản"
+   ],
+   "answer": 0,
+   "explain": "Điều 12 Sắc lệnh 97/SL.",
+   "source": {
+    "kind": "primary",
+    "cite": "Sắc lệnh 97/SL, Điều 12"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Điều 12 Sắc lệnh 97/SL",
+   "right": "Điều 13 Sắc lệnh 97/SL",
+   "cases": [
+    {
+     "text": "Giới hạn việc thực hiện quyền sở hữu",
+     "answer": "left"
+    },
+    {
+     "text": "Khế ước vô hiệu do bóc lột",
+     "answer": "right"
+    }
+   ],
+   "explain": "Sắc lệnh 97/SL."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Khi lập ước mà có sự tổn thiệt do sự {{bóc lột}} của một bên vì điều kiện kinh tế của hai bên chênh lệch thì khế ước có thể coi là {{vô hiệu}}.",
+   "bank_extra": [
+    "nhầm lẫn",
+    "có hiệu lực"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người ta chỉ được hưởng dụng và sử dụng các vật thuộc quyền sở hữu của mình một cách {{hợp pháp}}.",
+   "bank_extra": [
+    "tuyệt đối",
+    "tùy ý"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Ý nghĩa của Điều 13 Sắc lệnh 97/SL đối với pháp luật dân sự Việt Nam là gì?",
+   "options": [
+    "Bảo vệ bên yếu thế trong hợp đồng, hạn chế tự do khế ước khi có bóc lột do chênh lệch kinh tế",
+    "Tuyệt đối hóa tự do khế ước",
+    "Cấm mọi hợp đồng vay",
+    "Chỉ áp dụng cho thương nhân"
+   ],
+   "answer": 0,
+   "explain": "Đánh giá dựa trên câu chữ Điều 13."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quy định của Sắc lệnh 97/SL về quyền sở hữu và khế ước.",
+   "model": "Điều 12: chủ sở hữu chỉ được hưởng dụng, sử dụng tài sản hợp pháp, không thiệt hại quyền lợi nhân dân (giới hạn quyền sở hữu). Điều 13: khế ước có thể vô hiệu nếu một bên bị tổn thiệt do bóc lột vì chênh lệch kinh tế (bảo vệ bên yếu thế). Thể hiện tư tưởng dân chủ, tiến bộ, khác dân luật cũ.",
+   "keywords": [
+    "quyền sở hữu",
+    "hợp pháp",
+    "khế ước",
+    "vô hiệu",
+    "bóc lột"
+   ]
+  }
+ ]
+}

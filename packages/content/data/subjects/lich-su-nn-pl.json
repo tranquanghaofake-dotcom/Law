@@ -91,6 +91,23 @@
           ]
         }
       ]
+    },
+    {
+      "id": "c8-hien-dai",
+      "title": "Chương 8. Nhà nước và pháp luật Việt Nam thời kì hiện đại (1945 đến nay)",
+      "lessons": [
+        {
+          "id": "ls8-1",
+          "title": "Pháp luật giai đoạn 1945–1954",
+          "concepts": [
+            "sac-lenh-47-luat-cu",
+            "sac-lenh-63-chinh-quyen",
+            "sac-lenh-13-toa-an",
+            "sac-lenh-97-dan-luat",
+            "sac-lenh-97-khe-uoc"
+          ]
+        }
+      ]
     }
   ]
 }

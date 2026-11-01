@@ -1,0 +1,117 @@
+{
+ "id": "sac-lenh-47-luat-cu",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c8-hien-dai",
+ "term": "Sắc lệnh 47 (1945): tạm giữ luật lệ cũ",
+ "definition": "Cho đến khi ban hành những bộ luật pháp duy nhất cho toàn cõi nước Việt Nam, các luật lệ hiện hành ở Bắc, Trung và Nam bộ vẫn tạm thời giữ nguyên như cũ, nếu những luật lệ ấy không trái với những điều thay đổi ấn định trong sắc lệnh này. (…) Những điều khoản trong các luật lệ cũ được tạm giữ lại do sắc luật này, chỉ thi hành khi nào không trái với nền độc lập của nước Việt Nam và chính thể dân chủ cộng hoà.",
+ "plain": "Ngay sau Cách mạng tháng Tám, nhà nước mới chưa kịp ban hành các bộ luật riêng. Sắc lệnh 47 cho TẠM GIỮ luật lệ cũ thời Pháp thuộc và triều Nguyễn (Dân luật Bắc kỳ 1931, Dân luật Trung kỳ 1936–1939, Luật hình An Nam 1921, Hoàng Việt hình luật 1933…), với ĐIỀU KIỆN không trái với nền độc lập và chính thể dân chủ cộng hòa (Điều thứ 12). Đây là giải pháp thực tế, tránh khoảng trống pháp luật; cùng lúc khẳng định nguyên tắc chính trị cho việc áp dụng luật. Giáo trình thường nêu việc ngừng hẳn áp dụng luật cũ từ cuối thập niên 1950 (cần đối chiếu văn bản cụ thể).",
+ "example": "Thẩm phán năm 1946 xử một vụ tranh chấp dân sự ở Hà Nội vẫn áp dụng Bộ Dân luật Bắc kỳ 1931, trừ những điều khoản trái với độc lập dân tộc, chính thể dân chủ cộng hòa.",
+ "source": {
+  "kind": "primary",
+  "cite": "Sắc lệnh số 47 ngày 10/10/1945 của Chủ tịch Chính phủ lâm thời, Điều thứ 1 và Điều thứ 12",
+  "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Sac-lenh-so-47-giu-tam-thoi-luat-le-hien-hanh-Bac-Trung-Nam-bo-ban-hanh-nhung-bo-luat-phap-duy-nhat-toan-quoc-35893.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "sac-lenh-97-dan-luat",
+  "sac-lenh-63-chinh-quyen",
+  "sac-lenh-13-toa-an"
+ ],
+ "keywords": [
+  "10/10/1945",
+  "tạm giữ luật lệ cũ",
+  "không trái với nền độc lập",
+  "chính thể dân chủ cộng hòa"
+ ],
+ "note": "Văn bản đã hết hiệu lực; học để hiểu lịch sử pháp luật.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều thứ 12 Sắc lệnh 47 (1945), luật lệ cũ được tạm giữ chỉ thi hành với điều kiện nào?",
+   "options": [
+    "Không trái với nền độc lập của nước Việt Nam và chính thể dân chủ cộng hòa",
+    "Được Quốc hội thông qua lại",
+    "Được nhân dân phúc quyết",
+    "Không có điều kiện"
+   ],
+   "answer": 0,
+   "explain": "Điều thứ 12 Sắc lệnh 47.",
+   "source": {
+    "kind": "primary",
+    "cite": "Sắc lệnh 47 ngày 10/10/1945, Điều thứ 12"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Mục đích của Sắc lệnh 47 ngày 10/10/1945 là gì?",
+   "options": [
+    "Tạm giữ luật lệ cũ cho đến khi ban hành bộ luật thống nhất toàn quốc",
+    "Bãi bỏ ngay toàn bộ luật lệ cũ",
+    "Ban hành Bộ luật Dân sự mới",
+    "Tổ chức tòa án nhân dân"
+   ],
+   "answer": 0,
+   "explain": "Điều thứ 1 Sắc lệnh 47.",
+   "source": {
+    "kind": "primary",
+    "cite": "Sắc lệnh 47 ngày 10/10/1945, Điều thứ 1"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Sắc lệnh 47 (1945)",
+   "right": "Sắc lệnh 97/SL (1950)",
+   "cases": [
+    {
+     "text": "Tạm giữ luật lệ cũ ở Bắc, Trung, Nam bộ",
+     "answer": "left"
+    },
+    {
+     "text": "Sửa đổi một số quy lệ, chế định trong dân luật theo hướng tiến bộ",
+     "answer": "right"
+    }
+   ],
+   "explain": "Hai mốc liên tiếp của pháp luật dân sự 1945–1950."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Các luật lệ hiện hành ở Bắc, Trung và Nam bộ vẫn {{tạm thời}} giữ nguyên như cũ, cho đến khi ban hành những bộ luật pháp {{duy nhất}} cho toàn cõi nước Việt Nam.",
+   "bank_extra": [
+    "vĩnh viễn",
+    "riêng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Luật lệ cũ chỉ thi hành khi nào không trái với nền {{độc lập}} của nước Việt Nam và chính thể {{dân chủ cộng hoà}}.",
+   "bank_extra": [
+    "tự chủ",
+    "quân chủ"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Sắc lệnh 47 năm 1945 bãi bỏ toàn bộ pháp luật thời Pháp thuộc ngay lập tức.",
+   "answer": false,
+   "explain": "Sai. Sắc lệnh cho tạm giữ luật lệ cũ, nếu không trái độc lập và chính thể dân chủ cộng hòa."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày nội dung và ý nghĩa của Sắc lệnh 47 ngày 10/10/1945.",
+   "model": "Tạm giữ các luật lệ hiện hành ở Bắc, Trung, Nam bộ cho đến khi có bộ luật thống nhất (Điều 1), với điều kiện không trái nền độc lập và chính thể dân chủ cộng hòa (Điều 12); ý nghĩa: tránh khoảng trống pháp luật, bảo đảm ổn định, đồng thời đặt nguyên tắc chính trị cho việc áp dụng luật cũ.",
+   "keywords": [
+    "tạm giữ",
+    "luật lệ cũ",
+    "độc lập",
+    "dân chủ cộng hòa"
+   ]
+  }
+ ]
+}
