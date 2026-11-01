@@ -1,0 +1,27 @@
+{
+  "id": "hieu-luc-phap-ly-toi-cao",
+  "subject": "hien-phap",
+  "chapter": "khai-quat",
+  "term": "Hiệu lực pháp lý cao nhất của Hiến pháp",
+  "definition": "Hiến pháp là luật cơ bản của nước Cộng hoà xã hội chủ nghĩa Việt Nam, có hiệu lực pháp lý cao nhất. Mọi văn bản pháp luật khác phải phù hợp với Hiến pháp. Mọi hành vi vi phạm Hiến pháp đều bị xử lý.",
+  "plain": "Trong tháp văn bản pháp luật, Hiến pháp đứng trên cùng: luật, nghị định, thông tư đều phải \"nhìn lên\" Hiến pháp để không trái; ai vi phạm Hiến pháp đều bị xử lý.",
+  "example": "Luật Tổ chức Quốc hội, Luật Tổ chức Chính phủ hay một nghị định về cư trú đều phải phù hợp với Hiến pháp; nếu có quy định trái Hiến pháp thì quy định đó phải bị sửa đổi, bãi bỏ.",
+  "source": { "kind": "statute", "cite": "Khoản 1 Điều 119 Hiến pháp 2013", "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801" },
+  "checked": "2026-11-01",
+  "confusables": ["hien-phap"],
+  "keywords": ["cao nhất", "phù hợp với Hiến pháp", "vi phạm Hiến pháp bị xử lý"],
+  "items": [
+    { "type": "mcq", "level": 1, "q": "\"Hiệu lực pháp lý cao nhất\" của Hiến pháp có nghĩa là gì?", "options": ["Mọi văn bản pháp luật khác phải phù hợp với Hiến pháp", "Hiến pháp chỉ áp dụng cho cơ quan nhà nước", "Hiến pháp có hiệu lực lâu nhất về thời gian", "Hiến pháp được ưu tiên áp dụng khi có tranh chấp dân sự"], "answer": 0, "explain": "Khoản 1 Điều 119: hiệu lực pháp lý cao nhất thể hiện ở việc mọi văn bản pháp luật khác phải phù hợp với Hiến pháp.", "source": { "kind": "statute", "cite": "Khoản 1 Điều 119 Hiến pháp 2013" } },
+    { "type": "mcq", "level": 1, "q": "Theo khoản 1 Điều 119 Hiến pháp 2013, hành vi vi phạm Hiến pháp bị xử lý thế nào?", "options": ["Mọi hành vi vi phạm Hiến pháp đều bị xử lý", "Chỉ hành vi của cơ quan nhà nước mới bị xử lý", "Chỉ bị xử lý nếu gây thiệt hại thực tế", "Không có quy định về xử lý"], "answer": 0, "explain": "Nguyên văn khoản 1 Điều 119: \"Mọi hành vi vi phạm Hiến pháp đều bị xử lý.\"", "source": { "kind": "statute", "cite": "Khoản 1 Điều 119 Hiến pháp 2013" } },
+    { "type": "pair", "level": 2, "left": "Hiệu lực pháp lý cao nhất", "right": "Hiến pháp", "cases": [
+      { "text": "Lý do một thông tư trái Hiến pháp phải bị bãi bỏ.", "answer": "left" },
+      { "text": "Văn bản được Quốc hội thông qua với ít nhất hai phần ba tổng số đại biểu.", "answer": "right" },
+      { "text": "Thuộc tính mà các luật thường không có so với \"luật mẹ\".", "answer": "left" }
+    ], "explain": "Hiệu lực pháp lý cao nhất là thuộc tính; Hiến pháp là văn bản mang thuộc tính đó." },
+    { "type": "cloze", "level": 3, "text": "Mọi {{văn bản pháp luật}} khác phải phù hợp với Hiến pháp. Mọi hành vi {{vi phạm Hiến pháp}} đều bị xử lý.", "bank_extra": ["quyết định hành chính", "trái đạo đức"] },
+    { "type": "cloze", "level": 3, "text": "Hiến pháp có hiệu lực pháp lý {{cao nhất}}.", "bank_extra": ["ngang luật", "tạm thời"] },
+    { "type": "case", "level": 4, "q": "Hội đồng nhân dân một tỉnh ban hành nghị quyết thu phí \"nhập cư\" đối với công dân Việt Nam từ tỉnh khác đến sinh sống, trái với quyền tự do cư trú tại Điều 23 Hiến pháp. Nhận định nào đúng?", "options": ["Nghị quyết hợp pháp vì thuộc thẩm quyền địa phương", "Nghị quyết trái Hiến pháp nên phải bị xử lý, không được áp dụng", "Chỉ Quốc hội mới bị ràng buộc bởi Hiến pháp", "Nghị quyết có hiệu lực cho đến khi Hiến pháp được sửa"], "answer": 1, "explain": "Mọi văn bản pháp luật khác, kể cả của chính quyền địa phương, phải phù hợp với Hiến pháp; nội dung trái Hiến pháp phải bị xử lý (khoản 1 Điều 119).", "source": { "kind": "statute", "cite": "Khoản 1 Điều 119 Hiến pháp 2013" } },
+    { "type": "truefalse", "level": 4, "statement": "Một luật do Quốc hội ban hành sau Hiến pháp thì có hiệu lực cao hơn Hiến pháp vì ban hành sau.", "answer": false, "explain": "Sai. Thứ bậc hiệu lực xác định theo loại văn bản, không theo thời điểm ban hành; Hiến pháp luôn có hiệu lực pháp lý cao nhất (khoản 1 Điều 119)." },
+    { "type": "recall", "level": 5, "q": "Nêu hai hệ quả pháp lý của việc Hiến pháp có hiệu lực pháp lý cao nhất.", "model": "Một là mọi văn bản pháp luật khác phải phù hợp với Hiến pháp; hai là mọi hành vi vi phạm Hiến pháp đều bị xử lý (khoản 1 Điều 119 Hiến pháp 2013).", "keywords": ["phù hợp với Hiến pháp", "vi phạm Hiến pháp", "bị xử lý"] }
+  ]
+}

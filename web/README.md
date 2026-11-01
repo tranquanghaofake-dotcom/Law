@@ -1,37 +1,48 @@
-# Luyện Luật — web trắc nghiệm
+# Luyện Luật — ứng dụng web học khái niệm luật
 
-Web tĩnh (HTML/CSS/JS, không cần máy chủ hay cơ sở dữ liệu). Mỗi bộ 10 câu, chấm ngay, có giải thích và căn cứ điều luật; điểm cao nhất lưu trên trình duyệt người học.
+Vite + Svelte 5 + TypeScript, build ra web tĩnh. Mỗi khái niệm đi qua **6 bậc ghi nhớ** (gặp → nhận biết → phân biệt → điền chỗ trống → tình huống → tự trả lời), lịch ôn theo **FSRS** (`ts-fsrs`), tiến độ lưu trong trình duyệt (IndexedDB). Thiết kế chi tiết: `../docs/superpowers/specs/2026-11-01-luyen-luat-web-design.md`.
 
-```
-index.html, assets/      giao diện
-data/sets/<id>.json      mỗi file một bộ câu hỏi
-data/catalog.json        danh sách bộ — sinh tự động, không sửa tay
-build_catalog.py         kiểm tra dữ liệu + sinh catalog
-```
-
-## Xem thử trên máy
+## Chạy trên máy
 ```bash
-cd web && python -m http.server 8000
+cd web
+npm install
+npm run dev          # http://localhost:5173
 ```
-Mở http://localhost:8000. (Mở thẳng file `index.html` sẽ không tải được dữ liệu.)
+```bash
+npm test             # unit (Vitest)
+npm run test:e2e     # Playwright; máy chưa có Chromium: npx playwright install chromium
+npm run check        # svelte-check
+npm run build        # kiểm tra nội dung rồi build ra dist/
+```
+Môi trường có Chromium cài sẵn ở đường dẫn riêng: `PW_CHROMIUM=/đường/dẫn/chromium npm run test:e2e`.
 
-## Thêm hoặc sửa bộ câu hỏi
-1. Tạo `data/sets/<id>.json`, theo mẫu `dat-coc.json`:
-   - `group`: `video` (theo video TikTok, kèm `"video": "01"`) hoặc `pldc` (Pháp luật đại cương).
-   - Mỗi câu: `q`, đúng 4 `options`, `answer` (chỉ số 0–3), `explain`, `basis` (điểm/khoản/điều + văn bản), `url` (có thể để trống).
-2. Chạy `python web/build_catalog.py`. Bộ nào sai định dạng sẽ bị loại kèm thông báo lỗi.
-3. Commit và push; trang tự cập nhật nếu đã nối với Cloudflare Pages (bên dưới).
+## Cấu trúc
+```
+src/lib/content/   kiểu dữ liệu, schema (zod), loader
+src/lib/engine/    bậc ghi nhớ, FSRS, ghép phiên, chấm điểm, runner
+src/lib/store/     Dexie (IndexedDB), kho tiến độ, stats, cài đặt
+src/lib/game/      XP, bậc khoa cử, phẩm hàm, chuỗi ngày
+src/lib/fx/        âm thanh (Kenney, CC0), confetti, nền lộ dần, TTS, rung
+src/lib/ui/        thẻ bài tập (7 loại), phản hồi, cột đợt, màn kết thúc
+src/routes/        Trang chủ, Phiên học, Ôn, Luyện đề 10 câu, Hồ sơ, Cài đặt
+content/           subjects/, concepts/<môn>/, sets/ (bộ 10 câu), SOURCES.md
+scripts/           build-content.ts — kiểm tra và sinh content/index.json
+```
 
-Bộ sinh từ kịch bản đã duyệt (`video-XXXX.json`) do `python run.py export-web` trong pipeline tạo ra. Thứ tự phương án được xáo mỗi lượt, nên khi soạn không cần lo đáp án luôn nằm ở A.
+## Thêm nội dung
+1. **Khái niệm**: tạo `content/concepts/<môn>/<id>.json` theo mẫu `content/concepts/hien-phap/hien-phap.json`. Bắt buộc: `definition` nguyên văn điều luật (hoặc sử liệu), `source`, `checked` (ngày đối chiếu), ít nhất 1 item bậc 1 (`mcq`), bậc 3 (`cloze`) và bậc 4 (`case`/`truefalse`); nên có `pair` (bậc 2) và `recall` (bậc 5).
+2. **Đợt/chương**: thêm vào `content/subjects/<môn>.json`; mỗi đợt 4–5 khái niệm; `confusables` phải là id có thật.
+3. **Bộ 10 câu**: `content/sets/<id>.json`, định dạng kế thừa v1 (`q, options×4, answer, explain, basis, url`), thêm `concept` nếu muốn cộng vào bộ nhớ.
+4. Chạy `npm run content` — file lỗi sẽ bị liệt kê và **không lên web**. Ghi nguồn vào `content/SOURCES.md`.
 
-## Đưa lên mạng (miễn phí) — Cloudflare Pages
-Repo đang **private**. GitHub Pages chỉ miễn phí với repo public, nên dùng Cloudflare Pages, vốn kết nối được repo private:
-1. https://dash.cloudflare.com → Workers & Pages → Create → Pages → **Connect to Git** → chọn repo `law`.
-2. Build settings: Framework preset **None**, Build command **để trống**, Build output directory **`web`**.
-3. Deploy. Bạn nhận link dạng `https://<tên>.pages.dev`; đặt link này vào bio TikTok. Mỗi lần push lên `main`, trang tự cập nhật.
+Thẻ `pair`: `left`/`right` là **nhãn hiển thị** (tên khái niệm), không phải id.
 
-## Cấu hình
-Đầu file `assets/app.js`: `SITE.author` (tên hiển thị) và `SITE.reportUrl` (link Google Form "báo lỗi câu hỏi"; để trống thì ẩn).
+## Triển khai (Cloudflare Pages)
+Workers & Pages → Create → Pages → Connect to Git → repo này.
+- Framework preset: **None** · Build command: `npm run build` · Build output directory: `dist` · **Root directory: `web`**.
+- Mỗi lần push lên `main`, trang tự cập nhật. Ghi link `https://<tên>.pages.dev` vào README gốc.
 
-## Trước khi thêm câu hỏi mới
-Mọi `basis` phải đối chiếu nguyên văn văn bản **còn hiệu lực** (ưu tiên văn bản hợp nhất mới nhất). Bộ hiện có được đối chiếu ngày 31/10/2026.
+## Giấy phép tài nguyên
+- Âm thanh: Kenney *Interface Sounds* (CC0) — `static/sfx/LICENSE.txt`.
+- Tranh nền, biểu tượng: tự vẽ (SVG) cho dự án.
+- Văn bản pháp luật: không thuộc phạm vi bảo hộ quyền tác giả (Điều 15 Luật SHTT); xem `content/SOURCES.md`.
