@@ -1,25 +1,141 @@
 {
-  "id": "quyen-luc-nha-nuoc-thong-nhat", "subject": "hien-phap", "chapter": "c3-che-do-chinh-tri",
-  "term": "Quyền lực nhà nước thống nhất, có phân công, phối hợp, kiểm soát",
-  "definition": "Quyền lực nhà nước là thống nhất, có sự phân công, phối hợp, kiểm soát giữa các cơ quan nhà nước trong việc thực hiện các quyền lập pháp, hành pháp, tư pháp.",
-  "plain": "Việt Nam không theo \"tam quyền phân lập\" kiểu phương Tây: quyền lực là một khối thống nhất thuộc về Nhân dân, nhưng được chia việc cho Quốc hội (lập pháp), Chính phủ (hành pháp), Tòa án (tư pháp), các cơ quan phối hợp và kiểm soát lẫn nhau.",
-  "example": "Quốc hội làm luật; Chính phủ tổ chức thi hành luật; Tòa án xét xử. Quốc hội giám sát tối cao Chính phủ (khoản 2 Điều 70) là một hình thức kiểm soát quyền lực.",
-  "source": { "kind": "statute", "cite": "Khoản 3 Điều 2 Hiến pháp 2013", "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801" },
-  "checked": "2026-11-01",
-  "confusables": ["chu-quyen-nhan-dan", "nha-nuoc-phap-quyen-xhcn"],
-  "keywords": ["thống nhất", "phân công", "phối hợp", "kiểm soát", "lập pháp, hành pháp, tư pháp"],
-  "items": [
-    { "type": "mcq", "level": 1, "q": "Theo khoản 3 Điều 2 Hiến pháp 2013, quyền lực nhà nước được tổ chức theo nguyên tắc nào?", "options": ["Thống nhất, có sự phân công, phối hợp, kiểm soát giữa các cơ quan nhà nước", "Tam quyền phân lập, các cơ quan độc lập và đối trọng tuyệt đối", "Tập trung toàn bộ vào Quốc hội", "Phân chia theo lãnh thổ giữa trung ương và địa phương"], "answer": 0, "explain": "Nguyên văn khoản 3 Điều 2. Hiến pháp 2013 bổ sung từ \"kiểm soát\" so với Hiến pháp 1992.", "source": { "kind": "statute", "cite": "Khoản 3 Điều 2 Hiến pháp 2013" } },
-    { "type": "mcq", "level": 1, "q": "Ba quyền được phân công giữa các cơ quan nhà nước theo khoản 3 Điều 2 là gì?", "options": ["Lập pháp, hành pháp, tư pháp", "Lập pháp, hành chính, kiểm sát", "Ban hành luật, thu thuế, quốc phòng", "Lập hiến, lập pháp, giám sát"], "answer": 0, "explain": "Khoản 3 Điều 2 nêu đúng ba quyền: lập pháp, hành pháp, tư pháp.", "source": { "kind": "statute", "cite": "Khoản 3 Điều 2 Hiến pháp 2013" } },
-    { "type": "pair", "level": 2, "left": "Quyền lực nhà nước thống nhất, có phân công, phối hợp, kiểm soát", "right": "Tam quyền phân lập", "cases": [
-      { "text": "Quyền lực là một khối thuộc về Nhân dân; các cơ quan chỉ được phân công thực hiện.", "answer": "left" },
-      { "text": "Ba nhánh quyền lực độc lập, kiềm chế và đối trọng lẫn nhau như ở Hoa Kỳ.", "answer": "right" },
-      { "text": "Quốc hội giám sát tối cao hoạt động của Chính phủ và Tòa án.", "answer": "left" }
-    ], "explain": "Việt Nam theo mô hình thống nhất quyền lực có phân công, phối hợp, kiểm soát (khoản 3 Điều 2), không theo tam quyền phân lập." },
-    { "type": "cloze", "level": 3, "text": "Quyền lực nhà nước là {{thống nhất}}, có sự phân công, phối hợp, {{kiểm soát}} giữa các cơ quan nhà nước trong việc thực hiện các quyền lập pháp, hành pháp, tư pháp.", "bank_extra": ["phân lập", "đối trọng"] },
-    { "type": "cloze", "level": 3, "text": "Quốc hội thực hiện quyền {{lập pháp}}, Chính phủ thực hiện quyền {{hành pháp}}, Tòa án nhân dân thực hiện quyền {{tư pháp}}.", "bank_extra": ["kiểm sát", "lập hiến"], "source": { "kind": "statute", "cite": "Điều 69, 94, 102 Hiến pháp 2013" } },
-    { "type": "case", "level": 4, "q": "Chính phủ ban hành nghị định trái luật. Theo mô hình tổ chức quyền lực của Hiến pháp 2013, cơ chế nào thể hiện sự KIỂM SOÁT giữa các cơ quan trong trường hợp này?", "options": ["Quốc hội thực hiện quyền giám sát tối cao và có thể bãi bỏ văn bản của Chính phủ trái Hiến pháp, luật", "Chính phủ tự bãi bỏ vì không ai có quyền can thiệp", "Tòa án ra lệnh giải thể Chính phủ", "Nhân dân trực tiếp bãi bỏ nghị định bằng trưng cầu ý dân"], "answer": 0, "explain": "Quốc hội giám sát tối cao việc tuân theo Hiến pháp, luật (khoản 2 Điều 70) và bãi bỏ văn bản của Chính phủ trái Hiến pháp, luật (khoản 10 Điều 70). Đó là kiểm soát quyền lực theo khoản 3 Điều 2.", "source": { "kind": "statute", "cite": "Khoản 3 Điều 2; khoản 2, 10 Điều 70 Hiến pháp 2013" } },
-    { "type": "truefalse", "level": 4, "statement": "Hiến pháp 2013 lần đầu bổ sung yếu tố \"kiểm soát\" vào nguyên tắc tổ chức quyền lực nhà nước so với Hiến pháp 1992.", "answer": true, "explain": "Đúng. Hiến pháp 1992 (sửa đổi 2001) chỉ nêu \"phân công, phối hợp\"; Hiến pháp 2013 bổ sung \"kiểm soát\" tại khoản 3 Điều 2." },
-    { "type": "recall", "level": 5, "q": "Vì sao nói mô hình tổ chức quyền lực của Việt Nam khác với tam quyền phân lập?", "model": "Vì quyền lực nhà nước ở Việt Nam là thống nhất, thuộc về Nhân dân, không chia thành ba nhánh độc lập đối trọng; các cơ quan chỉ được phân công thực hiện quyền lập pháp, hành pháp, tư pháp, có phối hợp và kiểm soát lẫn nhau, trong đó Quốc hội là cơ quan quyền lực nhà nước cao nhất (khoản 3 Điều 2, Điều 69 Hiến pháp 2013).", "keywords": ["thống nhất", "phân công", "kiểm soát", "Quốc hội"] }
-  ]
+ "id": "quyen-luc-nha-nuoc-thong-nhat",
+ "subject": "hien-phap",
+ "chapter": "c3-che-do-chinh-tri",
+ "term": "Quyền lực nhà nước thống nhất, có phân công, phối hợp, kiểm soát",
+ "definition": "Quyền lực nhà nước là thống nhất, có sự phân công, phối hợp, kiểm soát giữa các cơ quan nhà nước trong việc thực hiện các quyền lập pháp, hành pháp, tư pháp.",
+ "plain": "Việt Nam không theo \"tam quyền phân lập\" kiểu phương Tây: quyền lực là một khối thống nhất thuộc về Nhân dân, nhưng được chia việc cho Quốc hội (lập pháp), Chính phủ (hành pháp), Tòa án (tư pháp), các cơ quan phối hợp và kiểm soát lẫn nhau.",
+ "example": "Quốc hội làm luật; Chính phủ tổ chức thi hành luật; Tòa án xét xử. Quốc hội giám sát tối cao Chính phủ (khoản 2 Điều 70) là một hình thức kiểm soát quyền lực.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 3 Điều 2 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "chu-quyen-nhan-dan",
+  "nha-nuoc-phap-quyen-xhcn"
+ ],
+ "keywords": [
+  "thống nhất",
+  "phân công",
+  "phối hợp",
+  "kiểm soát",
+  "lập pháp, hành pháp, tư pháp"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 3 Điều 2 Hiến pháp 2013, quyền lực nhà nước được tổ chức theo nguyên tắc nào?",
+   "options": [
+    "Thống nhất, có sự phân công, phối hợp, kiểm soát giữa các cơ quan nhà nước",
+    "Tam quyền phân lập, các cơ quan độc lập và đối trọng tuyệt đối",
+    "Tập trung toàn bộ vào Quốc hội",
+    "Phân chia theo lãnh thổ giữa trung ương và địa phương"
+   ],
+   "answer": 0,
+   "explain": "Nguyên văn khoản 3 Điều 2. Hiến pháp 2013 bổ sung từ \"kiểm soát\" so với Hiến pháp 1992.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 2 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ba quyền được phân công giữa các cơ quan nhà nước theo khoản 3 Điều 2 là gì?",
+   "options": [
+    "Lập pháp, hành pháp, tư pháp",
+    "Lập pháp, hành chính, kiểm sát",
+    "Ban hành luật, thu thuế, quốc phòng",
+    "Lập hiến, lập pháp, giám sát"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 2 nêu đúng ba quyền: lập pháp, hành pháp, tư pháp.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 2 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quyền lực nhà nước thống nhất, có phân công, phối hợp, kiểm soát",
+   "right": "Tam quyền phân lập",
+   "cases": [
+    {
+     "text": "Quyền lực là một khối thuộc về Nhân dân; các cơ quan chỉ được phân công thực hiện.",
+     "answer": "left"
+    },
+    {
+     "text": "Ba nhánh quyền lực độc lập, kiềm chế và đối trọng lẫn nhau như ở Hoa Kỳ.",
+     "answer": "right"
+    },
+    {
+     "text": "Quốc hội giám sát tối cao hoạt động của Chính phủ và Tòa án.",
+     "answer": "left"
+    }
+   ],
+   "explain": "Việt Nam theo mô hình thống nhất quyền lực có phân công, phối hợp, kiểm soát (khoản 3 Điều 2), không theo tam quyền phân lập."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quyền lực nhà nước là {{thống nhất}}, có sự phân công, phối hợp, {{kiểm soát}} giữa các cơ quan nhà nước trong việc thực hiện các quyền lập pháp, hành pháp, tư pháp.",
+   "bank_extra": [
+    "phân lập",
+    "đối trọng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quốc hội thực hiện quyền {{lập pháp}}, Chính phủ thực hiện quyền {{hành pháp}}, Tòa án nhân dân thực hiện quyền {{tư pháp}}.",
+   "bank_extra": [
+    "kiểm sát",
+    "lập hiến"
+   ],
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 69, 94, 102 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Chính phủ ban hành nghị định trái luật. Theo mô hình tổ chức quyền lực của Hiến pháp 2013, cơ chế nào thể hiện sự KIỂM SOÁT giữa các cơ quan trong trường hợp này?",
+   "options": [
+    "Quốc hội thực hiện quyền giám sát tối cao và có thể bãi bỏ văn bản của Chính phủ trái Hiến pháp, luật",
+    "Chính phủ tự bãi bỏ vì không ai có quyền can thiệp",
+    "Tòa án ra lệnh giải thể Chính phủ",
+    "Nhân dân trực tiếp bãi bỏ nghị định bằng trưng cầu ý dân"
+   ],
+   "answer": 0,
+   "explain": "Quốc hội giám sát tối cao việc tuân theo Hiến pháp, luật (khoản 2 Điều 70) và bãi bỏ văn bản của Chính phủ trái Hiến pháp, luật (khoản 10 Điều 70). Đó là kiểm soát quyền lực theo khoản 3 Điều 2.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 2; khoản 2, 10 Điều 70 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hiến pháp 2013 lần đầu bổ sung yếu tố \"kiểm soát\" vào nguyên tắc tổ chức quyền lực nhà nước so với Hiến pháp 1992.",
+   "answer": true,
+   "explain": "Đúng. Hiến pháp 1992 (sửa đổi 2001) chỉ nêu \"phân công, phối hợp\"; Hiến pháp 2013 bổ sung \"kiểm soát\" tại khoản 3 Điều 2."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Vì sao nói mô hình tổ chức quyền lực của Việt Nam khác với tam quyền phân lập?",
+   "model": "Vì quyền lực nhà nước ở Việt Nam là thống nhất, thuộc về Nhân dân, không chia thành ba nhánh độc lập đối trọng; các cơ quan chỉ được phân công thực hiện quyền lập pháp, hành pháp, tư pháp, có phối hợp và kiểm soát lẫn nhau, trong đó Quốc hội là cơ quan quyền lực nhà nước cao nhất (khoản 3 Điều 2, Điều 69 Hiến pháp 2013).",
+   "keywords": [
+    "thống nhất",
+    "phân công",
+    "kiểm soát",
+    "Quốc hội"
+   ]
+  }
+ ]
 }

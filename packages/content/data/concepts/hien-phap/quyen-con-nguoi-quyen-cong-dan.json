@@ -1,25 +1,136 @@
 {
-  "id": "quyen-con-nguoi-quyen-cong-dan", "subject": "hien-phap", "chapter": "c4-quyen-con-nguoi",
-  "term": "Quyền con người, quyền công dân và giới hạn quyền",
-  "definition": "Ở nước Cộng hòa xã hội chủ nghĩa Việt Nam, các quyền con người, quyền công dân về chính trị, dân sự, kinh tế, văn hóa, xã hội được công nhận, tôn trọng, bảo vệ, bảo đảm theo Hiến pháp và pháp luật. Quyền con người, quyền công dân chỉ có thể bị hạn chế theo quy định của luật trong trường hợp cần thiết vì lý do quốc phòng, an ninh quốc gia, trật tự, an toàn xã hội, đạo đức xã hội, sức khỏe của cộng đồng.",
-  "plain": "Nhà nước có bốn nghĩa vụ với quyền của bạn: công nhận, tôn trọng, bảo vệ, bảo đảm. Muốn hạn chế quyền thì phải bằng LUẬT (do Quốc hội ban hành), trong trường hợp cần thiết và chỉ vì 6 lý do liệt kê; nghị định, thông tư không được tự hạn chế quyền.",
-  "example": "Trong dịch bệnh, việc hạn chế đi lại vì \"sức khỏe của cộng đồng\" phải dựa trên luật (Luật Phòng, chống bệnh truyền nhiễm), không thể chỉ bằng công văn của một sở.",
-  "source": { "kind": "statute", "cite": "Điều 14 Hiến pháp 2013", "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801" },
-  "checked": "2026-11-01",
-  "confusables": ["nha-nuoc-phap-quyen-xhcn", "chu-quyen-nhan-dan"],
-  "keywords": ["công nhận, tôn trọng, bảo vệ, bảo đảm", "chỉ có thể bị hạn chế theo quy định của luật", "trường hợp cần thiết", "sáu lý do"],
-  "items": [
-    { "type": "mcq", "level": 1, "q": "Theo khoản 2 Điều 14 Hiến pháp 2013, quyền con người, quyền công dân chỉ có thể bị hạn chế bằng loại văn bản nào?", "options": ["Luật", "Nghị định của Chính phủ", "Thông tư của Bộ trưởng", "Quyết định của Ủy ban nhân dân"], "answer": 0, "explain": "Khoản 2 Điều 14: \"chỉ có thể bị hạn chế theo quy định của luật\". Đây là điểm mới của Hiến pháp 2013.", "source": { "kind": "statute", "cite": "Khoản 2 Điều 14 Hiến pháp 2013" } },
-    { "type": "mcq", "level": 1, "q": "Bốn nghĩa vụ của Nhà nước đối với quyền con người, quyền công dân theo khoản 1 Điều 14 là gì?", "options": ["Công nhận, tôn trọng, bảo vệ, bảo đảm", "Ban hành, giải thích, áp dụng, xử lý", "Tuyên truyền, giáo dục, kiểm tra, xử phạt", "Thừa nhận, giới hạn, giám sát, thu hồi"], "answer": 0, "explain": "Nguyên văn khoản 1 Điều 14: được công nhận, tôn trọng, bảo vệ, bảo đảm theo Hiến pháp và pháp luật.", "source": { "kind": "statute", "cite": "Khoản 1 Điều 14 Hiến pháp 2013" } },
-    { "type": "pair", "level": 2, "left": "Quyền con người", "right": "Quyền công dân", "cases": [
-      { "text": "Quyền của mọi cá nhân, kể cả người nước ngoài và người không quốc tịch trên lãnh thổ Việt Nam (ví dụ quyền sống, Điều 19).", "answer": "left" },
-      { "text": "Quyền gắn với quốc tịch Việt Nam (ví dụ quyền bầu cử, ứng cử, Điều 27).", "answer": "right" },
-      { "text": "Hiến pháp 2013 thường dùng chủ ngữ \"Mọi người\" khi quy định loại quyền này.", "answer": "left" }
-    ], "explain": "Hiến pháp 2013 phân biệt \"mọi người\" (quyền con người) và \"công dân\" (quyền công dân, gắn với quốc tịch)." },
-    { "type": "cloze", "level": 3, "text": "Quyền con người, quyền công dân chỉ có thể bị hạn chế theo quy định của {{luật}} trong trường hợp {{cần thiết}} vì lý do quốc phòng, an ninh quốc gia, trật tự, an toàn xã hội, đạo đức xã hội, sức khỏe của cộng đồng.", "bank_extra": ["nghị định", "thuận tiện"] },
-    { "type": "cloze", "level": 3, "text": "Các quyền con người, quyền công dân được công nhận, {{tôn trọng}}, bảo vệ, {{bảo đảm}} theo Hiến pháp và pháp luật.", "bank_extra": ["giới hạn", "kiểm soát"] },
-    { "type": "case", "level": 4, "q": "Một bộ ban hành thông tư yêu cầu mọi người dân phải xin phép trước khi đăng bài trên mạng xã hội, với lý do bảo đảm trật tự xã hội. Theo khoản 2 Điều 14, nhận định nào đúng?", "options": ["Hợp hiến vì lý do \"trật tự, an toàn xã hội\" có trong Hiến pháp", "Không hợp hiến về hình thức: hạn chế quyền chỉ có thể bằng luật, không bằng thông tư", "Hợp hiến nếu Bộ trưởng ký", "Chỉ cần Chính phủ phê duyệt là đủ"], "answer": 1, "explain": "Đủ lý do chưa đủ điều kiện: khoản 2 Điều 14 đòi hỏi cả HÌNH THỨC (bằng luật) và TÍNH CẦN THIẾT. Thông tư không đáp ứng điều kiện hình thức.", "source": { "kind": "statute", "cite": "Khoản 2 Điều 14 Hiến pháp 2013" } },
-    { "type": "truefalse", "level": 4, "statement": "Quyền con người, quyền công dân là tuyệt đối, không thể bị hạn chế trong bất kỳ trường hợp nào.", "answer": false, "explain": "Sai. Quyền có thể bị hạn chế, nhưng chỉ theo quy định của luật, trong trường hợp cần thiết và vì sáu lý do nêu tại khoản 2 Điều 14." },
-    { "type": "recall", "level": 5, "q": "Nêu các điều kiện để hạn chế quyền con người, quyền công dân theo khoản 2 Điều 14 Hiến pháp 2013.", "model": "Ba điều kiện: (1) về hình thức, chỉ bằng quy định của luật do Quốc hội ban hành; (2) về mức độ, chỉ trong trường hợp cần thiết; (3) về mục đích, chỉ vì sáu lý do: quốc phòng, an ninh quốc gia, trật tự, an toàn xã hội, đạo đức xã hội, sức khỏe của cộng đồng.", "keywords": ["luật", "cần thiết", "quốc phòng", "sức khỏe của cộng đồng"] }
-  ]
+ "id": "quyen-con-nguoi-quyen-cong-dan",
+ "subject": "hien-phap",
+ "chapter": "c4-quyen-con-nguoi",
+ "term": "Quyền con người, quyền công dân và giới hạn quyền",
+ "definition": "Ở nước Cộng hòa xã hội chủ nghĩa Việt Nam, các quyền con người, quyền công dân về chính trị, dân sự, kinh tế, văn hóa, xã hội được công nhận, tôn trọng, bảo vệ, bảo đảm theo Hiến pháp và pháp luật. Quyền con người, quyền công dân chỉ có thể bị hạn chế theo quy định của luật trong trường hợp cần thiết vì lý do quốc phòng, an ninh quốc gia, trật tự, an toàn xã hội, đạo đức xã hội, sức khỏe của cộng đồng.",
+ "plain": "Nhà nước có bốn nghĩa vụ với quyền của bạn: công nhận, tôn trọng, bảo vệ, bảo đảm. Muốn hạn chế quyền thì phải bằng LUẬT (do Quốc hội ban hành), trong trường hợp cần thiết và chỉ vì 6 lý do liệt kê; nghị định, thông tư không được tự hạn chế quyền.",
+ "example": "Trong dịch bệnh, việc hạn chế đi lại vì \"sức khỏe của cộng đồng\" phải dựa trên luật (Luật Phòng, chống bệnh truyền nhiễm), không thể chỉ bằng công văn của một sở.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 14 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nha-nuoc-phap-quyen-xhcn",
+  "chu-quyen-nhan-dan"
+ ],
+ "keywords": [
+  "công nhận, tôn trọng, bảo vệ, bảo đảm",
+  "chỉ có thể bị hạn chế theo quy định của luật",
+  "trường hợp cần thiết",
+  "sáu lý do"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 2 Điều 14 Hiến pháp 2013, quyền con người, quyền công dân chỉ có thể bị hạn chế bằng loại văn bản nào?",
+   "options": [
+    "Luật",
+    "Nghị định của Chính phủ",
+    "Thông tư của Bộ trưởng",
+    "Quyết định của Ủy ban nhân dân"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 14: \"chỉ có thể bị hạn chế theo quy định của luật\". Đây là điểm mới của Hiến pháp 2013.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 14 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Bốn nghĩa vụ của Nhà nước đối với quyền con người, quyền công dân theo khoản 1 Điều 14 là gì?",
+   "options": [
+    "Công nhận, tôn trọng, bảo vệ, bảo đảm",
+    "Ban hành, giải thích, áp dụng, xử lý",
+    "Tuyên truyền, giáo dục, kiểm tra, xử phạt",
+    "Thừa nhận, giới hạn, giám sát, thu hồi"
+   ],
+   "answer": 0,
+   "explain": "Nguyên văn khoản 1 Điều 14: được công nhận, tôn trọng, bảo vệ, bảo đảm theo Hiến pháp và pháp luật.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 14 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quyền con người",
+   "right": "Quyền công dân",
+   "cases": [
+    {
+     "text": "Quyền của mọi cá nhân, kể cả người nước ngoài và người không quốc tịch trên lãnh thổ Việt Nam (ví dụ quyền sống, Điều 19).",
+     "answer": "left"
+    },
+    {
+     "text": "Quyền gắn với quốc tịch Việt Nam (ví dụ quyền bầu cử, ứng cử, Điều 27).",
+     "answer": "right"
+    },
+    {
+     "text": "Hiến pháp 2013 thường dùng chủ ngữ \"Mọi người\" khi quy định loại quyền này.",
+     "answer": "left"
+    }
+   ],
+   "explain": "Hiến pháp 2013 phân biệt \"mọi người\" (quyền con người) và \"công dân\" (quyền công dân, gắn với quốc tịch)."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quyền con người, quyền công dân chỉ có thể bị hạn chế theo quy định của {{luật}} trong trường hợp {{cần thiết}} vì lý do quốc phòng, an ninh quốc gia, trật tự, an toàn xã hội, đạo đức xã hội, sức khỏe của cộng đồng.",
+   "bank_extra": [
+    "nghị định",
+    "thuận tiện"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Các quyền con người, quyền công dân được công nhận, {{tôn trọng}}, bảo vệ, {{bảo đảm}} theo Hiến pháp và pháp luật.",
+   "bank_extra": [
+    "giới hạn",
+    "kiểm soát"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Một bộ ban hành thông tư yêu cầu mọi người dân phải xin phép trước khi đăng bài trên mạng xã hội, với lý do bảo đảm trật tự xã hội. Theo khoản 2 Điều 14, nhận định nào đúng?",
+   "options": [
+    "Hợp hiến vì lý do \"trật tự, an toàn xã hội\" có trong Hiến pháp",
+    "Không hợp hiến về hình thức: hạn chế quyền chỉ có thể bằng luật, không bằng thông tư",
+    "Hợp hiến nếu Bộ trưởng ký",
+    "Chỉ cần Chính phủ phê duyệt là đủ"
+   ],
+   "answer": 1,
+   "explain": "Đủ lý do chưa đủ điều kiện: khoản 2 Điều 14 đòi hỏi cả HÌNH THỨC (bằng luật) và TÍNH CẦN THIẾT. Thông tư không đáp ứng điều kiện hình thức.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 14 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quyền con người, quyền công dân là tuyệt đối, không thể bị hạn chế trong bất kỳ trường hợp nào.",
+   "answer": false,
+   "explain": "Sai. Quyền có thể bị hạn chế, nhưng chỉ theo quy định của luật, trong trường hợp cần thiết và vì sáu lý do nêu tại khoản 2 Điều 14."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các điều kiện để hạn chế quyền con người, quyền công dân theo khoản 2 Điều 14 Hiến pháp 2013.",
+   "model": "Ba điều kiện: (1) về hình thức, chỉ bằng quy định của luật do Quốc hội ban hành; (2) về mức độ, chỉ trong trường hợp cần thiết; (3) về mục đích, chỉ vì sáu lý do: quốc phòng, an ninh quốc gia, trật tự, an toàn xã hội, đạo đức xã hội, sức khỏe của cộng đồng.",
+   "keywords": [
+    "luật",
+    "cần thiết",
+    "quốc phòng",
+    "sức khỏe của cộng đồng"
+   ]
+  }
+ ]
 }

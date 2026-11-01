@@ -8,8 +8,8 @@ const dir = join(root, 'concepts', 'hien-phap');
 const files = readdirSync(dir).filter((f) => f.endsWith('.json'));
 
 describe('nội dung Luật Hiến pháp', () => {
-  it('có 20 khái niệm hợp lệ, nguồn statute trỏ vbpl.vn, ngày đối chiếu 2026-11-01', () => {
-    expect(files.length).toBe(20);
+  it('có 31 khái niệm hợp lệ, nguồn statute trỏ vbpl.vn, ngày đối chiếu 2026-11-01', () => {
+    expect(files.length).toBe(31);
     for (const f of files) {
       const c = conceptSchema.parse(JSON.parse(readFileSync(join(dir, f), 'utf8')));
       expect(c.source.kind).toBe('statute');
@@ -21,7 +21,7 @@ describe('nội dung Luật Hiến pháp', () => {
   });
   it('môn chia chương theo mục lục giáo trình, mỗi khái niệm nằm đúng chương, confusables nằm trong cùng môn', () => {
     const s = subjectSchema.parse(JSON.parse(readFileSync(join(root, 'subjects', 'hien-phap.json'), 'utf8')));
-    expect(s.chapters.map((c) => c.id)).toEqual(['c2-khai-niem-dac-trung', 'c3-che-do-chinh-tri', 'c4-quyen-con-nguoi', 'c5-quoc-tich']);
+    expect(s.chapters.map((c) => c.id)).toEqual(['c2-khai-niem-dac-trung', 'c3-che-do-chinh-tri', 'c4-quyen-con-nguoi', 'c5-quoc-tich', 'c6-bau-cu']);
     for (const ch of s.chapters) for (const l of ch.lessons) for (const id of l.concepts) {
       expect(JSON.parse(readFileSync(join(dir, `${id}.json`), 'utf8')).chapter).toBe(ch.id);
     }
@@ -38,10 +38,11 @@ describe('nguyên văn (I6)', () => {
   const norm = (s: string) => s.normalize('NFC').replace(/\\\./g, '.').replace(/\s+/g, ' ').replace(/hoà/g, 'hòa').replace(/Hoà/g, 'Hòa').trim();
   const lawN = norm(law);
   const qt = norm(readFileSync(join(root, 'laws', 'quoc-tich-vbhn-2025.txt'), 'utf8'));
-  it('mọi definition kiểu statute xuất hiện nguyên văn trong văn bản nguồn (Hiến pháp hoặc Luật Quốc tịch, theo cite)', () => {
+  const bc = norm(readFileSync(join(root, 'laws', 'bau-cu-vbhn-2026.txt'), 'utf8'));
+  it('mọi definition kiểu statute xuất hiện nguyên văn trong văn bản nguồn (Hiến pháp, Luật Quốc tịch hoặc Luật Bầu cử, theo cite)', () => {
     for (const f of files) {
       const c = JSON.parse(readFileSync(join(dir, f), 'utf8'));
-      const src = /Luật Quốc tịch/.test(c.source.cite) ? qt : lawN;
+      const src = /Luật Quốc tịch/.test(c.source.cite) ? qt : /Luật Bầu cử/.test(c.source.cite) ? bc : lawN;
       for (const part of norm(c.definition.replace(/\(…\)/g, ' ')).split(/(?<=[.;:])\s+/)) {
         expect(src, `${f}: "${part}"`).toContain(part);
       }

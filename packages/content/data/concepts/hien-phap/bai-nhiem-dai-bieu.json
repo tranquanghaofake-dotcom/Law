@@ -1,0 +1,114 @@
+{
+ "id": "bai-nhiem-dai-bieu",
+ "subject": "hien-phap",
+ "chapter": "c6-bau-cu",
+ "term": "Bãi nhiệm đại biểu",
+ "definition": "Đại biểu Quốc hội, đại biểu Hội đồng nhân dân bị cử tri hoặc Quốc hội, Hội đồng nhân dân bãi nhiệm khi không còn xứng đáng với sự tín nhiệm của Nhân dân.",
+ "plain": "Bầu cử là trao quyền; bãi nhiệm là \"rút lại\" sự ủy quyền khi đại biểu không còn xứng đáng. Hai chủ thể có thể bãi nhiệm: CỬ TRI (nơi bầu ra đại biểu) hoặc chính Quốc hội, Hội đồng nhân dân. Thể hiện chế độ đại diện có trách nhiệm trước cử tri, gắn với nguyên tắc chủ quyền Nhân dân (Điều 2 Hiến pháp).",
+ "example": "Một đại biểu Quốc hội vi phạm pháp luật nghiêm trọng, mất uy tín với cử tri: Quốc hội có thể bãi nhiệm đại biểu đó, hoặc việc bãi nhiệm được đưa ra cử tri nơi bầu ra đại biểu theo thủ tục luật định.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 2 Điều 7 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nguyen-tac-bau-cu",
+  "chu-quyen-nhan-dan"
+ ],
+ "keywords": [
+  "cử tri hoặc Quốc hội, Hội đồng nhân dân",
+  "không còn xứng đáng",
+  "tín nhiệm của Nhân dân"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 2 Điều 7 Hiến pháp 2013, chủ thể nào có thể bãi nhiệm đại biểu Quốc hội?",
+   "options": [
+    "Cử tri hoặc Quốc hội",
+    "Chỉ Chủ tịch nước",
+    "Chỉ Mặt trận Tổ quốc",
+    "Chỉ Hội đồng bầu cử quốc gia"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 7.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 7 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Căn cứ để bãi nhiệm đại biểu theo khoản 2 Điều 7 là gì?",
+   "options": [
+    "Không còn xứng đáng với sự tín nhiệm của Nhân dân",
+    "Hết nhiệm kỳ",
+    "Đến tuổi nghỉ hưu",
+    "Chuyển nơi cư trú"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 7.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 7 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Bầu cử",
+   "right": "Bãi nhiệm",
+   "cases": [
+    {
+     "text": "Cử tri trao quyền đại diện cho đại biểu",
+     "answer": "left"
+    },
+    {
+     "text": "Cử tri hoặc cơ quan đại diện rút lại sự ủy quyền",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 7 Hiến pháp 2013."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đại biểu Quốc hội, đại biểu Hội đồng nhân dân bị cử tri hoặc Quốc hội, Hội đồng nhân dân {{bãi nhiệm}} khi không còn xứng đáng với sự {{tín nhiệm}} của Nhân dân.",
+   "bank_extra": [
+    "miễn nhiệm",
+    "ủy quyền"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bãi nhiệm đại biểu thể hiện nguyên tắc tất cả quyền lực nhà nước thuộc về {{Nhân dân}}.",
+   "bank_extra": [
+    "Quốc hội",
+    "Chính phủ"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo Hiến pháp 2013, chỉ Quốc hội mới có quyền bãi nhiệm đại biểu Quốc hội; cử tri không có quyền này.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 7: đại biểu bị CỬ TRI hoặc Quốc hội, Hội đồng nhân dân bãi nhiệm."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quy định của Hiến pháp về bãi nhiệm đại biểu và ý nghĩa.",
+   "model": "Đại biểu Quốc hội, đại biểu Hội đồng nhân dân bị cử tri hoặc Quốc hội, Hội đồng nhân dân bãi nhiệm khi không còn xứng đáng với sự tín nhiệm của Nhân dân (khoản 2 Điều 7). Ý nghĩa: đại biểu chịu trách nhiệm trước cử tri; Nhân dân có thể rút lại sự ủy quyền, thể hiện chủ quyền Nhân dân.",
+   "keywords": [
+    "cử tri",
+    "bãi nhiệm",
+    "không còn xứng đáng",
+    "tín nhiệm"
+   ]
+  }
+ ]
+}

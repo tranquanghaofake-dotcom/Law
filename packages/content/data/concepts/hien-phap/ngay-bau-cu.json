@@ -1,0 +1,115 @@
+{
+ "id": "ngay-bau-cu",
+ "subject": "hien-phap",
+ "chapter": "c6-bau-cu",
+ "term": "Ngày bầu cử",
+ "definition": "Ngày bầu cử phải là ngày chủ nhật và được công bố chậm nhất là 115 ngày trước ngày bầu cử.",
+ "plain": "Hai quy tắc: ngày bầu cử là CHỦ NHẬT (để cử tri thuận tiện đi bầu) và công bố trước ÍT NHẤT 115 ngày. Quốc hội quyết định ngày bầu cử toàn quốc (khoản 1 Điều 4). Từ mốc ngày bầu cử, luật đếm ngược các mốc khác: công bố đơn vị bầu cử chậm nhất 80 ngày trước; nộp hồ sơ ứng cử chậm nhất 42 ngày trước (theo Luật 83/2025/QH15)…",
+ "example": "Nghị quyết 133/2020/QH14 ấn định ngày bầu cử đại biểu Quốc hội khóa XV và Hội đồng nhân dân các cấp nhiệm kỳ 2021–2026 là Chủ nhật, ngày 23/5/2021: đúng quy định ngày bầu cử phải là chủ nhật.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 5 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/luat-bau-cu-dai-bieu-quoc-hoi-va-dai-bieu-hoi-dong-nhan-dan-so-85-2015-qh13--70812"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hoi-dong-bau-cu-quoc-gia",
+  "don-vi-bau-cu"
+ ],
+ "keywords": [
+  "chủ nhật",
+  "115 ngày",
+  "Quốc hội quyết định"
+ ],
+ "note": "Luật 83/2025/QH15 (hiệu lực 01/7/2025) rút ngắn nhiều mốc thời gian trong quy trình bầu cử (ví dụ hạn nộp hồ sơ ứng cử từ 70 ngày xuống 42 ngày trước ngày bầu cử; bầu cử thêm, bầu cử lại từ 15 ngày xuống 07 ngày). Mốc công bố ngày bầu cử 115 ngày tại Điều 5 không đổi.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 5 Luật Bầu cử, ngày bầu cử phải là ngày nào?",
+   "options": [
+    "Ngày chủ nhật",
+    "Ngày thứ bảy",
+    "Ngày lễ quốc gia",
+    "Bất kỳ ngày làm việc nào"
+   ],
+   "answer": 0,
+   "explain": "Điều 5.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 5 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Cơ quan nào quyết định ngày bầu cử toàn quốc?",
+   "options": [
+    "Quốc hội",
+    "Hội đồng bầu cử quốc gia",
+    "Chính phủ",
+    "Chủ tịch nước"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 4 Luật Bầu cử.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 4 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Chậm nhất 115 ngày trước ngày bầu cử",
+   "right": "Chậm nhất 80 ngày trước ngày bầu cử",
+   "cases": [
+    {
+     "text": "Công bố ngày bầu cử",
+     "answer": "left"
+    },
+    {
+     "text": "Công bố số đơn vị bầu cử, danh sách đơn vị bầu cử",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 5, khoản 2 Điều 10 Luật Bầu cử."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ngày bầu cử phải là ngày {{chủ nhật}} và được công bố chậm nhất là {{115}} ngày trước ngày bầu cử.",
+   "bank_extra": [
+    "thứ bảy",
+    "90"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Kinh phí tổ chức bầu cử đại biểu Quốc hội và đại biểu Hội đồng nhân dân do {{ngân sách nhà nước}} bảo đảm.",
+   "bank_extra": [
+    "ứng cử viên",
+    "Mặt trận Tổ quốc"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Ngày bầu cử đại biểu Quốc hội có thể là ngày thứ hai nếu Quốc hội quyết định.",
+   "answer": false,
+   "explain": "Sai. Điều 5 Luật Bầu cử: ngày bầu cử phải là ngày chủ nhật."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu quy định về ngày bầu cử và kinh phí bầu cử.",
+   "model": "Ngày bầu cử phải là chủ nhật, công bố chậm nhất 115 ngày trước ngày bầu cử (Điều 5); Quốc hội quyết định ngày bầu cử toàn quốc (khoản 1 Điều 4); kinh phí do ngân sách nhà nước bảo đảm (Điều 6).",
+   "keywords": [
+    "chủ nhật",
+    "115 ngày",
+    "Quốc hội",
+    "ngân sách nhà nước"
+   ]
+  }
+ ]
+}

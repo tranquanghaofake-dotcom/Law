@@ -1,0 +1,130 @@
+{
+ "id": "truong-hop-khong-duoc-ung-cu",
+ "subject": "hien-phap",
+ "chapter": "c6-bau-cu",
+ "term": "Những trường hợp không được ứng cử",
+ "definition": "Người đang bị tước quyền ứng cử theo bản án, quyết định của Tòa án đã có hiệu lực pháp luật, người đang chấp hành hình phạt tù, người bị hạn chế hoặc mất năng lực hành vi dân sự. Người đang bị khởi tố bị can. Người đang chấp hành bản án, quyết định hình sự của Tòa án. Người đã chấp hành xong bản án, quyết định hình sự của Tòa án nhưng chưa được xóa án tích.",
+ "plain": "Năm nhóm không được ứng cử: (1) bị Tòa án tước quyền ứng cử, đang chấp hành án tù, bị hạn chế hoặc mất năng lực hành vi dân sự; (2) đang bị khởi tố bị can; (3) đang chấp hành bản án, quyết định hình sự; (4) đã chấp hành xong nhưng CHƯA được xóa án tích; (5) đang chấp hành biện pháp xử lý hành chính (cơ sở giáo dục bắt buộc, cai nghiện bắt buộc, giáo dục tại xã, phường, đặc khu). Phân biệt: người đang bị khởi tố vẫn có thể có quyền BẦU cử nhưng không được ỨNG cử.",
+ "example": "Ông B bị khởi tố bị can 2 tuần trước hạn nộp hồ sơ ứng cử: không được ứng cử (khoản 2 Điều 37) dù chưa có bản án, vì luật không đợi kết tội.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1–4 Điều 37 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/luat-bau-cu-dai-bieu-quoc-hoi-va-dai-bieu-hoi-dong-nhan-dan-so-85-2015-qh13--70812"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quyen-bau-cu-ung-cu",
+  "danh-sach-cu-tri"
+ ],
+ "keywords": [
+  "tước quyền ứng cử",
+  "đang bị khởi tố bị can",
+  "chưa được xóa án tích",
+  "biện pháp xử lý hành chính"
+ ],
+ "note": "Luật 83/2025/QH15 (hiệu lực 01/7/2025) thay từ \"thị trấn\" bằng \"đặc khu\" tại khoản 5 Điều 37, phù hợp với mô hình chính quyền địa phương 2 cấp (tỉnh, xã). Giáo trình in trước 2025 còn ghi \"giáo dục tại xã, phường, thị trấn\".",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trường hợp nào KHÔNG được ứng cử theo Điều 37 Luật Bầu cử?",
+   "options": [
+    "Người đang bị khởi tố bị can",
+    "Người đã được xóa án tích",
+    "Người đang tạm trú ở địa phương khác",
+    "Người là đảng viên"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 37.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 37 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người đã chấp hành xong bản án hình sự được ứng cử khi nào?",
+   "options": [
+    "Khi đã được xóa án tích",
+    "Ngay sau khi ra tù",
+    "Sau 1 năm kể từ khi chấp hành xong",
+    "Không bao giờ"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 37: chưa được xóa án tích thì không được ứng cử.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 37 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Không được ứng cử",
+   "right": "Vẫn được ứng cử (nếu đủ điều kiện khác)",
+   "cases": [
+    {
+     "text": "Đang chấp hành biện pháp đưa vào cơ sở cai nghiện bắt buộc",
+     "answer": "left"
+    },
+    {
+     "text": "Đã chấp hành xong án và đã được xóa án tích",
+     "answer": "right"
+    },
+    {
+     "text": "Bị Tòa án tuyên mất năng lực hành vi dân sự",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 37 Luật Bầu cử."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người đang bị {{khởi tố bị can}} không được ứng cử đại biểu Quốc hội và đại biểu Hội đồng nhân dân.",
+   "bank_extra": [
+    "triệu tập làm chứng",
+    "xử phạt hành chính về giao thông"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người đã chấp hành xong bản án, quyết định hình sự nhưng chưa được {{xóa án tích}} thì không được ứng cử.",
+   "bank_extra": [
+    "giảm án",
+    "đặc xá"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Bà C bị xử phạt hành chính vì vi phạm giao thông một tháng trước ngày nộp hồ sơ. Bà C có thuộc trường hợp không được ứng cử không?",
+   "options": [
+    "Không, vì xử phạt hành chính không thuộc các trường hợp tại Điều 37",
+    "Có, vì đã vi phạm pháp luật",
+    "Có, nếu chưa nộp phạt",
+    "Có, vì chưa được xóa vi phạm"
+   ],
+   "answer": 0,
+   "explain": "Điều 37 chỉ nêu biện pháp xử lý hành chính đưa vào cơ sở giáo dục, cai nghiện bắt buộc hoặc giáo dục tại xã, không phải xử phạt hành chính thông thường.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 37 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Kể những trường hợp không được ứng cử theo Điều 37 Luật Bầu cử.",
+   "model": "(1) Bị tước quyền ứng cử theo bản án, quyết định của Tòa án; đang chấp hành hình phạt tù; bị hạn chế hoặc mất năng lực hành vi dân sự; (2) đang bị khởi tố bị can; (3) đang chấp hành bản án, quyết định hình sự; (4) đã chấp hành xong nhưng chưa được xóa án tích; (5) đang chấp hành biện pháp đưa vào cơ sở giáo dục bắt buộc, cai nghiện bắt buộc hoặc giáo dục tại xã, phường, đặc khu.",
+   "keywords": [
+    "tước quyền ứng cử",
+    "khởi tố bị can",
+    "xóa án tích",
+    "cơ sở giáo dục bắt buộc"
+   ]
+  }
+ ]
+}

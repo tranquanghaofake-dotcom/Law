@@ -1,0 +1,121 @@
+{
+ "id": "danh-sach-cu-tri",
+ "subject": "hien-phap",
+ "chapter": "c6-bau-cu",
+ "term": "Danh sách cử tri",
+ "definition": "Mọi công dân có quyền bầu cử đều được ghi tên vào danh sách cử tri và được phát thẻ cử tri, trừ các trường hợp quy định tại khoản 1 Điều 30 của Luật này. Mỗi công dân chỉ được ghi tên vào một danh sách cử tri ở nơi mình thường trú hoặc tạm trú.",
+ "plain": "Danh sách cử tri là \"cửa vào\" của quyền bầu cử. Nguyên tắc: ai có quyền bầu cử đều được ghi tên và phát thẻ; mỗi người chỉ ở MỘT danh sách (nơi thường trú hoặc tạm trú) để bảo đảm bình đẳng một người một phiếu. Không ghi tên: người bị Tòa án tước quyền bầu cử, người bị kết án tử hình đang chờ thi hành, người đang chấp hành án tù không được hưởng án treo, người mất năng lực hành vi dân sự (khoản 1 Điều 30). Người đang bị tạm giam, tạm giữ VẪN được bầu (khoản 5 Điều 29).",
+ "example": "Sinh viên tạm trú ở Hà Nội 6 tháng, thường trú ở Nghệ An: được ghi tên ở MỘT nơi; nếu ghi ở nơi tạm trú (chưa đủ 12 tháng) thì bầu đại biểu Quốc hội và Hội đồng nhân dân cấp tỉnh (khoản 3 Điều 29).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 29 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/luat-bau-cu-dai-bieu-quoc-hoi-va-dai-bieu-hoi-dong-nhan-dan-so-85-2015-qh13--70812"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quyen-bau-cu-ung-cu",
+  "nguyen-tac-bau-cu",
+  "truong-hop-khong-duoc-ung-cu"
+ ],
+ "keywords": [
+  "mọi công dân có quyền bầu cử",
+  "một danh sách",
+  "thường trú hoặc tạm trú",
+  "thẻ cử tri"
+ ],
+ "note": "Luật 83/2025/QH15 (hiệu lực 01/7/2025) bỏ cấp huyện khỏi các quy định về danh sách cử tri (Điều 29, 30), theo mô hình chính quyền địa phương 2 cấp. Giáo trình in trước 2025 còn nhắc Hội đồng nhân dân cấp huyện.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Mỗi công dân được ghi tên vào bao nhiêu danh sách cử tri?",
+   "options": [
+    "Một danh sách, ở nơi thường trú hoặc tạm trú",
+    "Hai danh sách: nơi thường trú và nơi tạm trú",
+    "Tùy số cấp bầu cử",
+    "Không giới hạn"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 29.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 29 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người đang bị tạm giam có được ghi tên vào danh sách cử tri không?",
+   "options": [
+    "Có, để bầu đại biểu Quốc hội và Hội đồng nhân dân cấp tỉnh nơi bị tạm giam",
+    "Không, vì đang bị tạm giam",
+    "Chỉ được bầu Hội đồng nhân dân cấp xã",
+    "Chỉ khi được Tòa án cho phép"
+   ],
+   "answer": 0,
+   "explain": "Khoản 5 Điều 29.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 5 Điều 29 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Được ghi tên vào danh sách cử tri",
+   "right": "Không được ghi tên",
+   "cases": [
+    {
+     "text": "Người đang bị tạm giữ",
+     "answer": "left"
+    },
+    {
+     "text": "Người bị kết án tử hình đang chờ thi hành án",
+     "answer": "right"
+    },
+    {
+     "text": "Người bị Tòa án tước quyền bầu cử",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 5 Điều 29; khoản 1 Điều 30."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Mọi công dân có quyền bầu cử đều được ghi tên vào danh sách cử tri và được phát {{thẻ cử tri}}.",
+   "bank_extra": [
+    "phiếu bầu",
+    "giấy mời"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Mỗi công dân chỉ được ghi tên vào {{một}} danh sách cử tri ở nơi mình {{thường trú}} hoặc tạm trú.",
+   "bank_extra": [
+    "hai",
+    "quê quán"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người đang chấp hành án tù được hưởng án treo vẫn bị loại khỏi danh sách cử tri.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 30 chỉ loại người đang chấp hành hình phạt tù mà KHÔNG được hưởng án treo."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày nguyên tắc lập danh sách cử tri.",
+   "model": "Mọi công dân có quyền bầu cử đều được ghi tên và phát thẻ cử tri, trừ khoản 1 Điều 30 (bị tước quyền bầu cử, chờ thi hành án tử hình, chấp hành án tù không hưởng án treo, mất năng lực hành vi dân sự). Mỗi công dân chỉ ở một danh sách nơi thường trú hoặc tạm trú. Người tạm trú dưới 12 tháng, quân nhân bầu đại biểu Quốc hội và Hội đồng nhân dân cấp tỉnh; người bị tạm giam, tạm giữ vẫn được bầu (Điều 29).",
+   "keywords": [
+    "thẻ cử tri",
+    "một danh sách",
+    "thường trú hoặc tạm trú",
+    "tạm giam"
+   ]
+  }
+ ]
+}

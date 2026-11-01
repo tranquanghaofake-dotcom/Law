@@ -76,6 +76,35 @@
           ]
         }
       ]
+    },
+    {
+      "id": "c6-bau-cu",
+      "title": "Chương 6. Chế độ bầu cử",
+      "lessons": [
+        {
+          "id": "hp-6a",
+          "title": "Nguyên tắc bầu cử, quyền bầu cử và ứng cử",
+          "concepts": [
+            "nguyen-tac-bau-cu",
+            "nguyen-tac-bo-phieu",
+            "quyen-bau-cu-ung-cu",
+            "truong-hop-khong-duoc-ung-cu",
+            "danh-sach-cu-tri",
+            "bai-nhiem-dai-bieu"
+          ]
+        },
+        {
+          "id": "hp-6b",
+          "title": "Tổ chức bầu cử và xác định kết quả",
+          "concepts": [
+            "hoi-dong-bau-cu-quoc-gia",
+            "ngay-bau-cu",
+            "don-vi-bau-cu",
+            "hiep-thuong-gioi-thieu-ung-cu",
+            "xac-dinh-nguoi-trung-cu"
+          ]
+        }
+      ]
     }
   ]
 }

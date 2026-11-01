@@ -1,0 +1,122 @@
+{
+ "id": "don-vi-bau-cu",
+ "subject": "hien-phap",
+ "chapter": "c6-bau-cu",
+ "term": "Đơn vị bầu cử và khu vực bỏ phiếu",
+ "definition": "Đại biểu Quốc hội và đại biểu Hội đồng nhân dân được bầu theo đơn vị bầu cử. (…) Mỗi đơn vị bầu cử đại biểu Quốc hội được bầu không quá ba đại biểu. Mỗi đơn vị bầu cử đại biểu Hội đồng nhân dân được bầu không quá năm đại biểu.",
+ "plain": "Đơn vị bầu cử là phạm vi lãnh thổ bầu ra một nhóm đại biểu: tối đa 3 đại biểu Quốc hội hoặc 5 đại biểu Hội đồng nhân dân mỗi đơn vị. Số đơn vị và số đại biểu mỗi đơn vị tính theo số dân; Hội đồng bầu cử quốc gia ấn định đơn vị bầu cử đại biểu Quốc hội, Ủy ban bầu cử cấp tương ứng ấn định đơn vị bầu Hội đồng nhân dân; công bố chậm nhất 80 ngày trước ngày bầu cử. Mỗi đơn vị chia thành các khu vực bỏ phiếu (nơi đặt hòm phiếu).",
+ "example": "Một tỉnh được chia 4 đơn vị bầu cử đại biểu Quốc hội: mỗi đơn vị bầu 2 hoặc 3 đại biểu; cử tri ở đơn vị nào chỉ chọn trong danh sách ứng cử viên của đơn vị đó.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 4 Điều 10 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/luat-bau-cu-dai-bieu-quoc-hoi-va-dai-bieu-hoi-dong-nhan-dan-so-85-2015-qh13--70812"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hoi-dong-bau-cu-quoc-gia",
+  "ngay-bau-cu",
+  "xac-dinh-nguoi-trung-cu"
+ ],
+ "keywords": [
+  "đơn vị bầu cử",
+  "không quá 3 đại biểu Quốc hội",
+  "không quá 5 đại biểu Hội đồng nhân dân",
+  "khu vực bỏ phiếu"
+ ],
+ "note": "Luật 83/2025/QH15 (hiệu lực 01/7/2025) sửa khoản 2, khoản 3 Điều 10: bỏ đơn vị bầu cử Hội đồng nhân dân cấp huyện; cấp xã gồm xã, phường, đặc khu. Giáo trình in trước 2025 trình bày theo mô hình 3 cấp.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Mỗi đơn vị bầu cử đại biểu Quốc hội được bầu tối đa bao nhiêu đại biểu?",
+   "options": [
+    "Ba đại biểu",
+    "Năm đại biểu",
+    "Hai đại biểu",
+    "Không giới hạn"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 10.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 10 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Cơ quan nào ấn định số đơn vị bầu cử đại biểu Quốc hội?",
+   "options": [
+    "Hội đồng bầu cử quốc gia, theo đề nghị của Ủy ban bầu cử ở tỉnh, thành phố",
+    "Quốc hội",
+    "Ủy ban nhân dân tỉnh",
+    "Mặt trận Tổ quốc"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 10.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 10 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Đơn vị bầu cử đại biểu Quốc hội",
+   "right": "Đơn vị bầu cử đại biểu Hội đồng nhân dân",
+   "cases": [
+    {
+     "text": "Bầu không quá ba đại biểu",
+     "answer": "left"
+    },
+    {
+     "text": "Bầu không quá năm đại biểu",
+     "answer": "right"
+    },
+    {
+     "text": "Do Hội đồng bầu cử quốc gia ấn định",
+     "answer": "left"
+    }
+   ],
+   "explain": "Khoản 2, 3, 4 Điều 10."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Mỗi đơn vị bầu cử đại biểu Quốc hội được bầu không quá {{ba}} đại biểu; mỗi đơn vị bầu cử đại biểu Hội đồng nhân dân được bầu không quá {{năm}} đại biểu.",
+   "bank_extra": [
+    "bốn",
+    "bảy"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Số đơn vị bầu cử và số lượng đại biểu được bầu ở mỗi đơn vị được tính căn cứ theo {{số dân}}.",
+   "bank_extra": [
+    "diện tích",
+    "số đảng viên"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Khu vực bỏ phiếu bầu cử đại biểu Quốc hội đồng thời là khu vực bỏ phiếu bầu cử đại biểu Hội đồng nhân dân các cấp.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 11 Luật Bầu cử."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quy định về đơn vị bầu cử.",
+   "model": "Đại biểu được bầu theo đơn vị bầu cử (khoản 1 Điều 10). Tỉnh chia thành đơn vị bầu đại biểu Quốc hội (Hội đồng bầu cử quốc gia ấn định) và đơn vị bầu Hội đồng nhân dân cấp tỉnh; xã, phường, đặc khu chia thành đơn vị bầu Hội đồng nhân dân cấp xã (Ủy ban bầu cử cùng cấp ấn định); tính theo số dân, công bố chậm nhất 80 ngày trước ngày bầu cử. Mỗi đơn vị tối đa 3 đại biểu Quốc hội hoặc 5 đại biểu Hội đồng nhân dân; mỗi đơn vị chia thành khu vực bỏ phiếu.",
+   "keywords": [
+    "đơn vị bầu cử",
+    "ba",
+    "năm",
+    "số dân",
+    "80 ngày"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,119 @@
+{
+ "id": "hiep-thuong-gioi-thieu-ung-cu",
+ "subject": "hien-phap",
+ "chapter": "c6-bau-cu",
+ "term": "Vai trò của Mặt trận Tổ quốc trong bầu cử (hiệp thương)",
+ "definition": "Mặt trận Tổ quốc Việt Nam tổ chức hiệp thương lựa chọn, giới thiệu người ứng cử đại biểu Quốc hội và đại biểu Hội đồng nhân dân các cấp; tham gia giám sát việc bầu cử đại biểu Quốc hội và đại biểu Hội đồng nhân dân các cấp.",
+ "plain": "Ở Việt Nam, người ứng cử (kể cả người tự ứng cử) phải qua quy trình HIỆP THƯƠNG do Mặt trận Tổ quốc chủ trì (thường 3 vòng hội nghị hiệp thương, xen giữa là lấy ý kiến cử tri nơi cư trú, nơi công tác) để lập danh sách chính thức. Mặt trận còn tham gia giám sát bầu cử. Đây là điểm đặc thù của chế độ bầu cử Việt Nam so với nhiều nước.",
+ "example": "Một người tự ứng cử đại biểu Quốc hội: hồ sơ được đưa vào hội nghị hiệp thương; nếu không được hội nghị hiệp thương lần thứ ba lựa chọn vào danh sách chính thức thì không có tên trên phiếu bầu.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 5 Điều 4 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/luat-bau-cu-dai-bieu-quoc-hoi-va-dai-bieu-hoi-dong-nhan-dan-so-85-2015-qh13--70812"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hoi-dong-bau-cu-quoc-gia",
+  "quyen-bau-cu-ung-cu"
+ ],
+ "keywords": [
+  "Mặt trận Tổ quốc",
+  "hiệp thương",
+  "lựa chọn, giới thiệu người ứng cử",
+  "giám sát"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chủ thể nào tổ chức hiệp thương lựa chọn, giới thiệu người ứng cử?",
+   "options": [
+    "Mặt trận Tổ quốc Việt Nam",
+    "Hội đồng bầu cử quốc gia",
+    "Ủy ban Thường vụ Quốc hội",
+    "Chính phủ"
+   ],
+   "answer": 0,
+   "explain": "Khoản 5 Điều 4 Luật Bầu cử.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 5 Điều 4 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Cơ quan nào xác định cơ cấu, thành phần những người được giới thiệu ứng cử đại biểu Quốc hội?",
+   "options": [
+    "Ủy ban Thường vụ Quốc hội",
+    "Mặt trận Tổ quốc",
+    "Chính phủ",
+    "Hội đồng bầu cử quốc gia"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 4 Luật Bầu cử.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 4 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Mặt trận Tổ quốc",
+   "right": "Ủy ban Thường vụ Quốc hội",
+   "cases": [
+    {
+     "text": "Tổ chức hiệp thương lựa chọn, giới thiệu người ứng cử",
+     "answer": "left"
+    },
+    {
+     "text": "Dự kiến và phân bổ số lượng đại biểu Quốc hội được bầu",
+     "answer": "right"
+    },
+    {
+     "text": "Tham gia giám sát việc bầu cử",
+     "answer": "left"
+    }
+   ],
+   "explain": "Khoản 3, 5 Điều 4 Luật Bầu cử."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Mặt trận Tổ quốc Việt Nam tổ chức {{hiệp thương}} lựa chọn, giới thiệu người ứng cử và tham gia {{giám sát}} việc bầu cử.",
+   "bank_extra": [
+    "bỏ phiếu",
+    "xét xử"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "{{Chính phủ}} chỉ đạo các bộ, Ủy ban nhân dân các cấp thực hiện công tác bầu cử và bảo đảm kinh phí, an ninh phục vụ cuộc bầu cử.",
+   "bank_extra": [
+    "Mặt trận Tổ quốc",
+    "Tòa án"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người tự ứng cử được đưa thẳng vào danh sách chính thức mà không qua hiệp thương.",
+   "answer": false,
+   "explain": "Sai. Người tự ứng cử cũng phải qua quy trình hiệp thương do Mặt trận Tổ quốc tổ chức (khoản 5 Điều 4 và các điều về hiệp thương trong Luật Bầu cử)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày vai trò của Mặt trận Tổ quốc và phân công trách nhiệm các cơ quan trong bầu cử.",
+   "model": "Quốc hội quyết định ngày bầu cử, thành lập Hội đồng bầu cử quốc gia; Hội đồng bầu cử quốc gia tổ chức bầu cử đại biểu Quốc hội; Ủy ban Thường vụ Quốc hội phân bổ số lượng, cơ cấu đại biểu; Chính phủ bảo đảm kinh phí, an ninh; Mặt trận Tổ quốc hiệp thương lựa chọn, giới thiệu người ứng cử và tham gia giám sát (Điều 4 Luật Bầu cử).",
+   "keywords": [
+    "Mặt trận Tổ quốc",
+    "hiệp thương",
+    "giám sát",
+    "Ủy ban Thường vụ Quốc hội"
+   ]
+  }
+ ]
+}
