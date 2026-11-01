@@ -4,9 +4,10 @@ import { cpSync, existsSync, readFileSync, statSync } from 'node:fs';
 import { join, normalize } from 'node:path';
 import type { Plugin } from 'vite';
 
-export function contentDir(dir = 'content', mount = '/content/'): Plugin {
+export function contentDir(dir = 'content'): Plugin {
   let root = process.cwd();
   let outDir = 'dist';
+  let mount = '/content/';
   const serve = (server: { middlewares: { use: (fn: (req: any, res: any, next: () => void) => void) => void } }) => {
     server.middlewares.use((req, res, next) => {
       const url = (req.url ?? '').split('?')[0];
@@ -22,7 +23,7 @@ export function contentDir(dir = 'content', mount = '/content/'): Plugin {
   };
   return {
     name: 'luyen-luat-content-dir',
-    configResolved(c) { root = c.root; outDir = c.build.outDir; },
+    configResolved(c) { root = c.root; outDir = c.build.outDir; mount = `${c.base.replace(/\/$/, '')}/${dir}/`; },
     configureServer(server) { serve(server); },
     configurePreviewServer(server) { serve(server); },
     closeBundle() { cpSync(join(root, dir), join(root, outDir, dir.replace(/^\//, '')), { recursive: true }); },

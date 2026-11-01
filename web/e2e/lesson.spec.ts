@@ -1,4 +1,5 @@
 import { expect, test } from '@playwright/test';
+const B = process.env.BASE_PATH ?? '/';
 import { readdirSync, readFileSync } from 'node:fs';
 
 const dir = 'content/concepts/hien-phap';
@@ -23,7 +24,7 @@ async function readLevels(page: import('@playwright/test').Page): Promise<Record
 
 test('phiên học pass 1: intro → trắc nghiệm → lưu ngay → kết thúc', async ({ page }) => {
   await page.setViewportSize({ width: 1280, height: 900 });
-  await page.goto('/#/hoc/hien-phap/hp-1');
+  await page.goto(B + '#/hoc/hien-phap/hp-1');
   // intro đầu tiên
   await expect(page.getByRole('article', { name: 'Thẻ giới thiệu khái niệm' })).toBeVisible();
   await expect(page.locator('.lesson-panel')).toBeVisible();
@@ -64,7 +65,7 @@ test('phiên học pass 1: intro → trắc nghiệm → lưu ngay → kết th�
 
 test('cột đợt ẩn trên điện thoại', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto('/#/hoc/hien-phap/hp-1');
+  await page.goto(B + '#/hoc/hien-phap/hp-1');
   await expect(page.getByRole('article', { name: 'Thẻ giới thiệu khái niệm' })).toBeVisible();
   await expect(page.locator('.lesson-panel')).toBeHidden();
 });

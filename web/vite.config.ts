@@ -4,7 +4,11 @@ import { fileURLToPath } from 'node:url';
 import { VitePWA } from 'vite-plugin-pwa';
 import { contentDir } from './vite-plugin-content';
 
+// BASE_PATH: '/' khi chạy máy/Cloudflare; '/Law/' khi deploy GitHub Pages (xem .github/workflows/pages.yml).
+const base = process.env.BASE_PATH ?? '/';
+
 export default defineConfig({
+  base,
   plugins: [
     svelte(),
     contentDir(),
@@ -19,7 +23,8 @@ export default defineConfig({
         theme_color: '#14213d',
         background_color: '#f7f4ee',
         display: 'standalone',
-        start_url: '/',
+        start_url: base,
+        scope: base,
         icons: [
           { src: 'icons/icon-192.png', sizes: '192x192', type: 'image/png' },
           { src: 'icons/icon-512.png', sizes: '512x512', type: 'image/png' },
