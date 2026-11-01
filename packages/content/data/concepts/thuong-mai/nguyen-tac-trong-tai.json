@@ -1,0 +1,119 @@
+{
+ "id": "nguyen-tac-trong-tai",
+ "subject": "thuong-mai",
+ "chapter": "v8",
+ "term": "Nguyên tắc giải quyết tranh chấp bằng Trọng tài",
+ "definition": "Trọng tài viên phải tôn trọng thỏa thuận của các bên nếu thỏa thuận đó không vi phạm điều cấm và trái đạo đức xã hội. Trọng tài viên phải độc lập, khách quan, vô tư và tuân theo quy định của pháp luật. Các bên tranh chấp đều bình đẳng về quyền và nghĩa vụ. Hội đồng trọng tài có trách nhiệm tạo điều kiện để họ thực hiện các quyền và nghĩa vụ của mình. Giải quyết tranh chấp bằng Trọng tài được tiến hành không công khai, trừ trường hợp các bên có thỏa thuận khác. Phán quyết trọng tài là chung thẩm.",
+ "plain": "Năm nguyên tắc: TÔN TRỌNG THỎA THUẬN; Trọng tài viên ĐỘC LẬP, KHÁCH QUAN, VÔ TƯ; các bên BÌNH ĐẲNG; KHÔNG CÔNG KHAI (ưu điểm lớn so với Tòa án — giữ bí mật kinh doanh); PHÁN QUYẾT CHUNG THẨM (không có phúc thẩm). Bên không đồng ý chỉ có thể yêu cầu TÒA ÁN HỦY phán quyết trong một số căn cứ hạn chế (Điều 68).",
+ "example": "Hai doanh nghiệp muốn giữ kín tranh chấp về công thức sản phẩm: chọn trọng tài vì phiên họp không công khai và phán quyết có hiệu lực ngay (chung thẩm).",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 4 Luật Trọng tài thương mại 2010 (VBHN 60/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-60-VBHN-VPQH-2025-Luat-Trong-tai-thuong-mai-669808.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "trong-tai-thuong-mai",
+  "thoa-thuan-trong-tai-vo-hieu"
+ ],
+ "keywords": [
+  "tôn trọng thỏa thuận",
+  "độc lập, khách quan, vô tư",
+  "không công khai",
+  "chung thẩm"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Phán quyết trọng tài có tính chất gì?",
+   "options": [
+    "Chung thẩm",
+    "Sơ thẩm, có thể kháng cáo",
+    "Chỉ có giá trị tham khảo",
+    "Phải được Tòa án phúc thẩm công nhận"
+   ],
+   "answer": 0,
+   "explain": "Khoản 5 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 4 Luật Trọng tài thương mại 2010 (VBHN 60/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Giải quyết tranh chấp bằng Trọng tài có công khai không?",
+   "options": [
+    "Không công khai, trừ khi các bên có thỏa thuận khác",
+    "Bắt buộc công khai",
+    "Chỉ công khai phán quyết",
+    "Do Trọng tài viên tùy ý"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 4 Luật Trọng tài thương mại 2010 (VBHN 60/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Trọng tài",
+   "right": "Tòa án",
+   "cases": [
+    {
+     "text": "Mặc định không công khai",
+     "answer": "left"
+    },
+    {
+     "text": "Mặc định xét xử công khai",
+     "answer": "right"
+    },
+    {
+     "text": "Phán quyết chung thẩm",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 4 Luật TTTM; Điều 15 BLTTDS."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Giải quyết tranh chấp bằng Trọng tài được tiến hành {{không công khai}}; phán quyết trọng tài là {{chung thẩm}}.",
+   "bank_extra": [
+    "công khai",
+    "sơ thẩm"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Trọng tài viên phải {{độc lập}}, khách quan, vô tư và tuân theo quy định của pháp luật.",
+   "bank_extra": [
+    "phụ thuộc",
+    "đại diện cho một bên"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Bên thua kiện tại Trọng tài có quyền kháng cáo lên Tòa án cấp phúc thẩm.",
+   "answer": false,
+   "explain": "Sai. Phán quyết trọng tài là chung thẩm (khoản 5 Điều 4); chỉ có thể yêu cầu Tòa án hủy theo căn cứ hạn chế."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các nguyên tắc giải quyết tranh chấp bằng Trọng tài.",
+   "model": "Tôn trọng thỏa thuận của các bên nếu không vi phạm điều cấm, trái đạo đức; Trọng tài viên độc lập, khách quan, vô tư; các bên bình đẳng; không công khai trừ thỏa thuận khác; phán quyết chung thẩm (Điều 4).",
+   "keywords": [
+    "thỏa thuận",
+    "độc lập",
+    "không công khai",
+    "chung thẩm"
+   ]
+  }
+ ]
+}

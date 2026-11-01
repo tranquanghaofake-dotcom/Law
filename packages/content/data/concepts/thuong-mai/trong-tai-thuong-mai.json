@@ -1,0 +1,116 @@
+{
+ "id": "trong-tai-thuong-mai",
+ "subject": "thuong-mai",
+ "chapter": "v8",
+ "term": "Trọng tài thương mại và thỏa thuận trọng tài",
+ "definition": "Trọng tài thương mại là phương thức giải quyết tranh chấp do các bên thỏa thuận và được tiến hành theo quy định của Luật này. Thỏa thuận trọng tài là thỏa thuận giữa các bên về việc giải quyết bằng Trọng tài tranh chấp có thể phát sinh hoặc đã phát sinh. (…) Tranh chấp được giải quyết bằng Trọng tài nếu các bên có thỏa thuận trọng tài. Thỏa thuận trọng tài có thể được lập trước hoặc sau khi xảy ra tranh chấp.",
+ "plain": "Điều kiện tiên quyết: CÓ THỎA THUẬN TRỌNG TÀI (điều khoản trong hợp đồng hoặc thỏa thuận riêng, lập TRƯỚC hoặc SAU tranh chấp, phải bằng văn bản — Điều 16). Thẩm quyền (Điều 2): tranh chấp từ hoạt động thương mại; ít nhất một bên có hoạt động thương mại; tranh chấp khác luật cho phép. Hai hình thức: trọng tài QUY CHẾ (tại Trung tâm trọng tài, như VIAC) và trọng tài VỤ VIỆC. Có thỏa thuận trọng tài mà một bên kiện ra Tòa thì Tòa án phải TỪ CHỐI THỤ LÝ, trừ thỏa thuận vô hiệu hoặc không thể thực hiện được (Điều 6).",
+ "example": "Hợp đồng mua bán ghi \"mọi tranh chấp giải quyết tại Trung tâm Trọng tài Quốc tế Việt Nam (VIAC)\": nếu một bên kiện ra Tòa án, Tòa án phải từ chối thụ lý.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, 2 Điều 3; khoản 1 Điều 5 Luật Trọng tài thương mại 2010 (VBHN 60/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-60-VBHN-VPQH-2025-Luat-Trong-tai-thuong-mai-669808.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nguyen-tac-trong-tai",
+  "thoa-thuan-trong-tai-vo-hieu",
+  "giai-quyet-tranh-chap-thuong-mai"
+ ],
+ "keywords": [
+  "do các bên thỏa thuận",
+  "thỏa thuận trọng tài",
+  "lập trước hoặc sau tranh chấp",
+  "Tòa án từ chối thụ lý"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Điều kiện để tranh chấp được giải quyết bằng Trọng tài là gì?",
+   "options": [
+    "Các bên có thỏa thuận trọng tài",
+    "Giá trị tranh chấp trên 1 tỷ",
+    "Một bên là doanh nghiệp nhà nước",
+    "Được Tòa án cho phép"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 5.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 5 Luật Trọng tài thương mại 2010 (VBHN 60/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Các bên có thỏa thuận trọng tài nhưng một bên khởi kiện ra Tòa án. Tòa án xử lý thế nào?",
+   "options": [
+    "Từ chối thụ lý, trừ khi thỏa thuận trọng tài vô hiệu hoặc không thể thực hiện được",
+    "Thụ lý bình thường",
+    "Chuyển hồ sơ cho Trọng tài",
+    "Hòa giải trước rồi xét xử"
+   ],
+   "answer": 0,
+   "explain": "Điều 6.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 6 Luật Trọng tài thương mại 2010 (VBHN 60/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Trọng tài thương mại",
+   "right": "Tòa án",
+   "cases": [
+    {
+     "text": "Chỉ giải quyết khi có thỏa thuận của các bên",
+     "answer": "left"
+    },
+    {
+     "text": "Giải quyết theo đơn khởi kiện, không cần thỏa thuận",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 3, 5, 6."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Trọng tài thương mại là phương thức giải quyết tranh chấp do các bên {{thỏa thuận}}; thỏa thuận trọng tài có thể được lập {{trước hoặc sau}} khi xảy ra tranh chấp.",
+   "bank_extra": [
+    "Nhà nước chỉ định",
+    "chỉ trước"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thỏa thuận trọng tài là thỏa thuận về việc giải quyết bằng Trọng tài tranh chấp có thể phát sinh hoặc đã {{phát sinh}}.",
+   "bank_extra": [
+    "kết thúc",
+    "xét xử"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thỏa thuận trọng tài chỉ có giá trị nếu được lập trước khi xảy ra tranh chấp.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 5: có thể lập trước hoặc sau khi xảy ra tranh chấp."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm trọng tài thương mại và điều kiện giải quyết tranh chấp bằng trọng tài.",
+   "model": "Trọng tài thương mại là phương thức giải quyết tranh chấp do các bên thỏa thuận, tiến hành theo Luật Trọng tài thương mại (khoản 1 Điều 3); điều kiện: có thỏa thuận trọng tài, lập trước hoặc sau tranh chấp (khoản 1 Điều 5); có thỏa thuận thì Tòa án từ chối thụ lý (Điều 6).",
+   "keywords": [
+    "thỏa thuận",
+    "trước hoặc sau",
+    "từ chối thụ lý",
+    "phương thức"
+   ]
+  }
+ ]
+}

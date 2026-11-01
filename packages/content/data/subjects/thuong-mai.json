@@ -105,6 +105,21 @@
           ]
         }
       ]
+    },
+    {
+      "id": "v8",
+      "title": "Vấn đề 8. Thủ tục giải quyết tranh chấp thương mại bằng trọng tài thương mại",
+      "lessons": [
+        {
+          "id": "tm8",
+          "title": "Thủ tục giải quyết tranh chấp thương mại bằng trọng tài thương mại",
+          "concepts": [
+            "trong-tai-thuong-mai",
+            "nguyen-tac-trong-tai",
+            "thoa-thuan-trong-tai-vo-hieu"
+          ]
+        }
+      ]
     }
   ]
 }
