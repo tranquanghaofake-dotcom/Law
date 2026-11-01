@@ -5,7 +5,9 @@
   import { NAV, activeNav } from './nav';
   import { header } from './header.svelte';
   import { rail } from './rail.svelte';
-  import { rankFor, RANKS } from '$lib/game/rank';
+  import { careerState, displayTitle } from '$lib/game/career';
+  import { shelf } from './shelf.svelte';
+  import { career } from './career.svelte';
   import { storage } from '$lib/store/status.svelte';
   import StreakFlame from './StreakFlame.svelte';
   import StreakCard from '$lib/art/StreakCard.svelte';
@@ -15,7 +17,9 @@
 
   let { active, children }: { active: RouteName; children: Snippet } = $props();
   const current = $derived(activeNav(active));
-  const info = $derived(rankFor(header.xp));
+  const cs = $derived(careerState(shelf.books));
+  const title = $derived(displayTitle(cs, career.branch));
+  const nextPost = $derived(cs.next[career.branch]?.post.title ?? null);
   const Rail = $derived(rail.current?.component);
   const railProps = $derived(rail.current?.props ?? {});
 </script>
@@ -23,7 +27,7 @@
 <div class="shell" class:has-rail={!!Rail}>
   <header class="topbar">
     <a class="brand" href="#/"><span class="mark" aria-hidden="true">§</span> Luyện Luật</a>
-    <div class="meta"><StreakFlame count={header.streak} longest={header.longest} /><RankBadge xp={header.xp} /></div>
+    <div class="meta"><StreakFlame count={header.streak} longest={header.longest} /><RankBadge /></div>
   </header>
 
   <nav class="sidenav" aria-label="Điều hướng chính">
@@ -37,8 +41,8 @@
     <div class="side-shelf"><p class="kicker">Tủ sách</p><Bookshelf size="side" /></div>
     <a class="me" href="#/toi">
       <span class="flame" class:cold={header.streak === 0}><StreakCard count={header.streak} longest={header.longest} size="mini" /><span class="sr-only">Chuỗi </span>{header.streak}<span class="sr-only"> ngày,</span></span>
-      <span class="rank"><span class="seal" aria-hidden="true">§</span><span>{info.rank}</span> <span class="tier">{info.tier}</span></span>
-      {#if info.nextXp}<span class="xp-line muted">còn {info.nextXp - header.xp} XP tới {RANKS[info.index + 1].name}</span>{/if}
+      <span class="rank"><span class="seal" aria-hidden="true">§</span><span class="rank-title">{title.title}</span></span>
+      {#if nextPost}<span class="xp-line muted">kế tiếp: {nextPost}</span>{/if}
     </a>
   </nav>
 

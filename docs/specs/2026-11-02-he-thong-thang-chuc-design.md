@@ -1,6 +1,6 @@
 # Luyện Luật — Thẻ chuyên cần, Tủ sách theo chương, Thăng chức theo bộ máy nhà nước (đợt nâng cấp 3)
 
-Phiên bản 0.1 · 02/11/2026 · Trạng thái: **chờ Hào duyệt** — chưa code.
+Phiên bản 1.0 · 02/11/2026 · Trạng thái: **Hào duyệt toàn bộ (02/11/2026), đã triển khai B–E** trên nhánh `claude/amazing-archimedes-u5vtr5`.
 Thay thế: ngọn lửa chuỗi (`StreakFlame`), "Bậc khoa cử" (`game/rank.ts`), "Phẩm hàm theo môn" (`gradeFor`), kệ sách theo môn (spec ngôn ngữ hình khối §3d).
 Giữ nguyên: engine 6 bậc, FSRS, lịch ôn, nội dung, bảng màu "Văn Miếu".
 
@@ -136,9 +136,19 @@ Tranh bán thân cách điệu, khung 4:5:
 - Tên chức danh dùng đúng tên gọi pháp lý, không chế giễu, không gắn hình ảnh tiêu cực.
 - Màn thăng chức và Hồ sơ ghi rõ: **"Chức danh mô phỏng trong trò chơi học tập, không phải chức vụ thật."**
 
+### 3.6 Độ khó đã chốt khi triển khai (Hào: "hợp lý, logic, từ tỉnh trở lên phải thật khó")
+Bảng chức danh và điều kiện nằm ở `apps/web/src/lib/game/career.ts`. `tests/game/career.test.ts` khoá các luật sau:
+- Thăng **tuần tự** trong nhánh. Mỗi cuốn sách chỉ được dùng cho **một** điều kiện của chức danh (phân bổ tham lam, lĩnh vực riêng trước, "bất kỳ" sau).
+- Trong mỗi nhánh, tổng số sách **tăng ngặt** và cấp tối thiểu **không giảm** theo thang.
+- **Từ cấp tỉnh:** mọi điều kiện ≥ cấp 2, mỗi chức danh ≥ 15 sách. **Trung ương và lãnh đạo:** mọi điều kiện cấp 3.
+- Kể cả khi **toàn bộ 26 chương hiện có đạt cấp 3**, vẫn chưa lên được cấp tỉnh ở Hành pháp, Xét xử, Kiểm sát (cần Luật Hành chính, Dân sự, Hình sự, Tố tụng, Đất đai — chờ môn), và chưa ai đạt Chủ tịch nước. Lập pháp lên tới Đại biểu Quốc hội nếu học trọn nội dung hiện có.
+- **Chủ tịch nước:** cấp Trung ương ở ≥ 2 nhánh + 59 sách cấp 3.
+- Tên cấp toà án và viện kiểm sát dưới cấp tối cao **chưa đối chiếu luật tổ chức ngành**. Dùng tên chung ("Thẩm phán", "Kiểm sát viên", "Thẩm tra viên Tòa án", "Kiểm tra viên"); chỉ gọi tên cấp toà/viện ở "cấp tỉnh" và "tối cao".
+
 ## 4. Dữ liệu
 - Store mới (IndexedDB): `books` (chapterId → cấp cao nhất, ngày đạt), `career` (nhánh đang chọn, chức danh đã đạt), `card` (kỷ lục màu). Migration từ dữ liệu cũ: tính sách từ `progress` hiện có. XP vẫn giữ, chỉ hiển thị phụ.
-- Bỏ: `game/rank.ts` (khoa cử), `gradeFor` (phẩm hàm). Thay hoặc xoá test tương ứng.
+- `game/rank.ts` (khoa cử, phẩm hàm) **giữ file và test, không còn hiển thị**. XP vẫn cộng và hiện phụ ở Hồ sơ. Bậc 6 đổi tên **Tinh thông**.
+- Đã triển khai: `game/card.ts`, `game/books.ts`, `game/fields.ts`, `game/career.ts`, `game/wardrobe.ts` (đều có test); `art/StreakCard`, `art/BookSpine` (3 cấp), `art/Portrait`, `ui/CareerPanel`, `ui/Bookshelf` (tủ nhiều tầng); settings: `books`, `career`, `avatar`.
 
 ## 5. Chia phiên (mỗi phiên ≤ 2 giờ, 1 PR)
 | Phiên | Việc | Xong khi |

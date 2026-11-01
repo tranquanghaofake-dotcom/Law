@@ -1,6 +1,7 @@
 <script lang="ts">
   import StreakCard from '$lib/art/StreakCard.svelte';
   import Bookshelf from '$lib/ui/Bookshelf.svelte';
+  import CareerPanel from '$lib/ui/CareerPanel.svelte';
   import Glyph from '$lib/art/Glyph.svelte';
   import SubjectArt from '$lib/art/SubjectArt.svelte';
   import { PAGE_ART } from '$lib/art/registry';
@@ -66,7 +67,7 @@
 <header class="page-head">
   <SubjectArt name={PAGE_ART.profile} class="head-art" />
   <h1>Hồ sơ</h1>
-  <p class="muted">Bậc khoa cử, chuỗi ngày học, tủ sách các môn và dữ liệu tiến độ của bạn.</p>
+  <p class="muted">Chức danh, thẻ chuyên cần, tủ sách các môn và dữ liệu tiến độ của bạn.</p>
 </header>
 <div class="tabs" role="tablist" aria-label="Hồ sơ">
   <a role="tab" href={hashFor('profile')} aria-selected={!onSettings} class:on={!onSettings}>Tổng quan</a>
@@ -77,19 +78,16 @@
   <div role="tabpanel"><Settings /></div>
 {:else}
   <div role="tabpanel" class="profile-grid">
+    <CareerPanel />
     <section class="card wide shelf-card">
       <p class="kicker">Tủ sách</p>
       <p class="muted small">Mỗi chương là một cuốn sách. Sách lên cấp khi mọi khái niệm của chương đạt bậc 3 (bìa mềm), bậc 5 (bìa cứng), bậc 6 (bìa da mạ vàng). Sách dùng để thăng chức.</p>
       <Bookshelf size="large" />
     </section>
     <section class="card profile">
-      <p class="kicker">Bậc khoa cử</p>
-      <p class="rank-line"><span class="seal big-seal" aria-hidden="true">§</span> <b>{rank.rank}</b> cấp {rank.tier} · {xp} XP</p>
-      <div class="bar" aria-hidden="true"><span style="width:{rank.progress * 100}%"></span></div>
-      {#if rank.nextXp}<p class="muted small">còn {rank.nextXp - xp} XP tới {RANKS[rank.index + 1].name}</p>{/if}
-      <p class="kicker" style="margin-top:16px">Chuỗi ngày</p>
+      <p class="kicker">Thẻ chuyên cần</p>
       <StreakCard count={streak.count} longest={streak.longest} />
-      <p class="streak-line"><b>{streak.count}</b> ngày · dài nhất {streak.longest} · bùa giữ chuỗi {streak.freezes}/2</p>
+      <p class="streak-line"><b>{streak.count}</b> ngày · {xp} XP · dài nhất {streak.longest} · bùa giữ chuỗi {streak.freezes}/2</p>
       <WeekDots days={week} />
     </section>
     <section class="card">

@@ -15,6 +15,7 @@
   import { createReveal } from '$lib/fx/reveal.svelte';
   import { refreshHeader } from '$lib/ui/header.svelte';
   import { refreshShelf } from '$lib/ui/shelf.svelte';
+  import { currentTitle } from '$lib/ui/career.svelte';
   import { cardFor, type AnswerResult } from '$lib/ui/cards';
   import Feedback from '$lib/ui/Feedback.svelte';
   import SessionBar from '$lib/ui/SessionBar.svelte';
@@ -34,7 +35,7 @@
   // svelte-ignore state_referenced_locally
   const reveal = createReveal(Math.max(12, steps.filter((s) => s.item.type !== 'intro').length));
   let result = $state<AnswerResult | null>(null);
-  let ended = $state<null | { streak: number; streakEvent: StreakEvent; rankBefore: RankInfo; rankAfter: RankInfo; dueTomorrow: number }>(null);
+  let ended = $state<null | { streak: number; streakEvent: StreakEvent; rankBefore: RankInfo; rankAfter: RankInfo; dueTomorrow: number; promotion: string | null }>(null);
   let confirmExit = $state(false);
   const rng = Math.random;
   const art = `${import.meta.env.BASE_URL ?? '/'}art/van-mieu-01.webp`;
@@ -80,12 +81,15 @@
     await stats.setStreak(st);
     const rankBefore = rankFor(Math.max(0, xpBefore));
     const rankAfter = rankFor(xpAfter);
-    if (rankAfter.rank !== rankBefore.rank) { sfx.play('rankup'); burst('rankup'); buzz('milestone'); }
+    const titleBefore = currentTitle();
     const tomorrow = new Date(Date.now() + 86400000);
     const dueTomorrow = (await repo.due(tomorrow)).length;
     await refreshHeader();
-    void refreshShelf();
-    ended = { streak: st.count, streakEvent: event, rankBefore, rankAfter, dueTomorrow };
+    await refreshShelf();
+    const titleAfter = currentTitle();
+    const promotion = titleAfter !== titleBefore ? titleAfter : null;
+    if (promotion) { sfx.play('rankup'); burst('rankup'); buzz('milestone'); }
+    ended = { streak: st.count, streakEvent: event, rankBefore, rankAfter, dueTomorrow, promotion };
   }
 
   function exit() { sfx.play('exit'); go('home'); }
@@ -98,7 +102,7 @@
 <Reveal {reveal} src={art} />
 <div class="session-main">
   {#if ended}
-    <SessionEnd summary={summary(run)} {concepts} streak={ended.streak} streakEvent={ended.streakEvent} rankBefore={ended.rankBefore} rankAfter={ended.rankAfter} dueTomorrow={ended.dueTomorrow} onhome={() => go('home')} {onagain} {onnext} mistakes={mistakes(run)} />
+    <SessionEnd summary={summary(run)} {concepts} streak={ended.streak} streakEvent={ended.streakEvent} rankBefore={ended.rankBefore} rankAfter={ended.rankAfter} dueTomorrow={ended.dueTomorrow} promotion={ended.promotion} onhome={() => go('home')} {onagain} {onnext} mistakes={mistakes(run)} />
   {:else if step && Card}
     <SessionBar done={run.i} total={run.steps.length} {title} onexit={() => (confirmExit = true)} />
     {#if lessonId}<LessonStrip {concepts} levels={run.levels} current={step?.conceptId ?? ''} />{/if}

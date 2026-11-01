@@ -371,6 +371,7 @@ kbd { font: 600 11px/1 var(--font-ui); background: rgba(255,255,255,.18); border
   --seal2: color-mix(in srgb, var(--seal) 72%, var(--ink)); --acc2: color-mix(in srgb, var(--accent) 62%, var(--ink));
   --shade: color-mix(in srgb, var(--ink) 9%, var(--card)); --cream: color-mix(in srgb, var(--accent) 12%, var(--card));
   --sunline: color-mix(in srgb, var(--accent) 45%, var(--sun));
+  --skin: #f3d2b3;
 }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --void: #070b14; } }
 :root[data-theme="dark"] { --void: #070b14; }
@@ -393,7 +394,7 @@ body::before {
 .art .s-goldline { fill: none; stroke: var(--gold); stroke-width: 1.6; }
 .art .s-water { stroke: color-mix(in srgb, var(--ink) 30%, var(--paper)); }
 .art .f-lotus2 { fill: var(--lotus2); } .art .f-leaf2 { fill: var(--leaf2); } .art .f-seal2 { fill: var(--seal2); }
-.art .f-acc2 { fill: var(--acc2); } .art .f-shade { fill: var(--shade); } .art .f-cream { fill: var(--cream); }
+.art .f-acc2 { fill: var(--acc2); } .art .f-shade { fill: var(--shade); } .art .f-cream { fill: var(--cream); } .art .f-skin { fill: var(--skin); } .art .f-ksu { fill: #2c4f86; } .art .f-ksu2 { fill: #1d3762; }
 /* nét tô theo độ dày đặt trong SVG (tranh khung 520×325): k mực · kp nền thẻ · ka cam · ks đỏ sẫm · kg vành mặt trời · kw gợn nước */
 .art .k { stroke: var(--ink); } .art .kp { stroke: var(--card); } .art .ka { stroke: var(--accent); }
 .art .ks { stroke: var(--seal2); } .art .kg { stroke: var(--sunline); } .art .kw { stroke: color-mix(in srgb, var(--ink) 28%, var(--paper)); }
@@ -629,3 +630,33 @@ h1 { text-wrap: balance; }
 .bookcase .shelf.large .book { width: auto; }
 .bookcase .spine { width: clamp(20px, 6vw, 30px); height: auto; }
 .legend-books { margin: 0; }
+
+/* ---- Chức danh & chân dung (Hồ sơ) ---- */
+.career-grid { display: grid; gap: 18px; }
+@media (min-width: 768px) { .career-grid { grid-template-columns: 300px 1fr; align-items: start; } }
+.portrait { position: relative; aspect-ratio: 4 / 5; border-radius: 10px; overflow: hidden; border: 1px solid var(--line); background: linear-gradient(180deg, var(--cream), var(--card)); isolation: isolate; }
+.portrait-bg { position: absolute; inset: auto 0 0 0; opacity: .5; z-index: -1; }
+.portrait-bg .art { width: 100%; height: auto; }
+.portrait-fig { position: absolute; inset: 0; width: 100%; height: 100%; }
+.portrait .sparks circle { animation: twinkle 2.6s ease-in-out infinite alternate; }
+@keyframes twinkle { from { opacity: .2; } to { opacity: 1; } }
+.plaque { margin-top: 10px; padding: 12px 14px; border: 1px solid var(--line); border-radius: 8px; background: var(--card); box-shadow: inset 0 0 0 4px var(--card), inset 0 0 0 5px color-mix(in srgb, var(--accent) 45%, var(--line)); }
+.plaque .kicker { margin: 0; }
+.plaque-title { margin: 2px 0 4px; font: 800 22px/1.25 var(--font-display); }
+.plaque p { margin: 0; }
+.next-post { margin: 2px 0 8px; font-size: 18px; }
+.req-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+.req-list li { display: grid; gap: 2px; }
+.req-list li .bar { margin: 0; }
+.req-list li.ok .bar span { background: var(--ok); }
+.req-list li.future .req-name { color: var(--muted); }
+.ladder, .wardrobe { margin-top: 14px; }
+.ladder summary, .wardrobe summary { cursor: pointer; font-weight: 700; }
+.ladder ol { margin: 8px 0; padding-left: 20px; display: grid; gap: 4px; }
+.ladder li.done { color: var(--ok); } .ladder li.done::marker { content: "✓ "; }
+.ladder li.cur { font-weight: 700; }
+.tier-tag { display: inline-block; font-size: 11px; font-weight: 700; padding: 0 6px; border-radius: 3px; background: color-mix(in srgb, var(--accent) 16%, transparent); color: var(--accent-text); }
+.wardrobe .filters { margin: 4px 0 10px; }
+.filter:disabled { opacity: .55; cursor: not-allowed; }
+.rank-title { max-width: 150px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.promotion { font-weight: 600; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
