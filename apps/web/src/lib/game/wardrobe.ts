@@ -11,8 +11,8 @@ export const NAMES: Record<string, string> = {
   'theo-chuc-vu': 'Theo chức vụ', 'thuong-phuc': 'Thường phục', 'ao-dai': 'Áo dài',
   'cong-so': 'Công sở', 'vest-xanh': 'Vest xanh than', 'vest-den': 'Vest đen', 'ao-choang': 'Áo choàng xét xử', 'ks-xuan-he': 'Trang phục kiểm sát (xuân hè)', 'ks-thu-dong': 'Trang phục kiểm sát (thu đông)',
   ngan: 'Tóc ngắn', dai: 'Tóc dài', buoc: 'Tóc buộc',
-  khong: 'Không', kinh: 'Kính', but: 'Bút cài túi', so: 'Ôm sách', cap: 'Cặp tài liệu', 'huy-hieu': 'Huy hiệu cài áo',
-  nang: 'Nắng sớm', 'trong-dong': 'Mặt trống đồng', 'khung-vang': 'Khung mạ vàng', 'hat-sang': 'Hạt sáng',
+  khong: 'Cán cân (mặc định)', kinh: 'Kính', but: 'Bút cài túi', so: 'Chồng sách luật', cap: 'Cặp tài liệu', 'huy-hieu': 'Huy hiệu cài áo',
+  nang: 'Đèn rọi sáng', 'trong-dong': 'Vách trống đồng', 'khung-vang': 'Khung mạ vàng', 'hat-sang': 'Hạt sáng trong kính',
 };
 
 const RANK: Record<PostTier, number> = { 'co-so': 0, tinh: 1, 'trung-uong': 2, 'lanh-dao': 3 };

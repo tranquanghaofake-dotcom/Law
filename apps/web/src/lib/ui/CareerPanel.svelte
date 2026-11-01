@@ -4,7 +4,7 @@
   import { BRANCHES, BRANCH_NAMES, POSTS, TIER_NAMES, careerState, displayTitle, type Branch } from '$lib/game/career';
   import { FIELD_NAMES, type Field } from '$lib/game/fields';
   import { DEFAULT_AVATAR, NAMES, sanitize, unlocked, resolveOutfit, type Avatar } from '$lib/game/wardrobe';
-  import type { ArtName } from '$lib/art/registry';
+  import type { ArtName, EmblemName } from '$lib/art/registry';
   import { shelf, refreshShelf } from './shelf.svelte';
   import { career, setBranch } from './career.svelte';
   import { LuyenLuatDB } from '$lib/store/db';
@@ -17,6 +17,7 @@
   const SCENE: Record<string, ArtName> = { 'hanh-phap': 'tam-quan', 'lap-phap': 'quoc-hoi', 'xet-xu': 'toa-an', 'kiem-sat': 'toa-an' };
   const scene = $derived<ArtName>(t.post?.id === 'chu-tich-nuoc' ? 'quoc-hoi' : career.branch === 'hanh-phap' && t.tier && t.tier !== 'co-so' ? 'ngo-mon' : SCENE[career.branch]);
 
+  const EMB: Record<string, EmblemName[]> = { 'hanh-phap': ['lang-xa', 'tru-so', 'an-trien', 'sach-hp'], 'lap-phap': ['hom-phieu', 'nghi-truong', 'cuon-lap-hien', 'quyen-nguoi'], 'xet-xu': ['can-can', 'sach-hp', 'quyen-nguoi', 'bo-luat-cu'], 'kiem-sat': ['can-can', 'an-trien', 'kinh-lup', 'sach-hp'] };
   const ACCENT: Record<string, string> = { 'hanh-phap': '#3f9e63', 'lap-phap': '#c0392b', 'xet-xu': '#2b3f74', 'kiem-sat': '#2c6fb7' };
   const accent = $derived(t.post?.id === 'chu-tich-nuoc' ? '#c99a2e' : ACCENT[career.branch]);
   let raw = $state<Avatar>({ ...DEFAULT_AVATAR });
@@ -24,7 +25,7 @@
   const drawn = $derived({ ...av, outfit: resolveOutfit(av.outfit, t.post) });
   const un = $derived(unlocked(cs.achieved));
   const ALL = { outfit: ['theo-chuc-vu', 'thuong-phuc', 'ao-dai'], hair: ['ngan', 'dai', 'buoc'], accessory: ['khong', 'kinh', 'but', 'so', 'cap', 'huy-hieu'], effect: ['khong', 'nang', 'trong-dong', 'khung-vang', 'hat-sang'] } as const;
-  const GROUP: Record<keyof Avatar, string> = { outfit: 'Trang phục', hair: 'Tóc', accessory: 'Phụ kiện', effect: 'Nền' };
+  const GROUP: Partial<Record<keyof Avatar, string>> = { outfit: 'Trang phục', accessory: 'Phụ kiện trên bục', effect: 'Ánh sáng & khung' };
   function db() { try { return typeof indexedDB === 'undefined' ? null : new LuyenLuatDB(); } catch { return null; } }
   (async () => { try { const row = await db()?.settings.get('avatar'); if (row?.value) raw = { ...DEFAULT_AVATAR, ...(row.value as Avatar) }; } catch { /* bỏ qua */ } })();
   async function pick(k: keyof Avatar, v: string) { raw = { ...raw, [k]: v }; try { await db()?.settings.put({ key: 'avatar', value: $state.snapshot(raw) }); } catch { /* bỏ qua */ } }
@@ -34,7 +35,7 @@
 <section class="card wide career">
   <div class="career-grid">
     <div class="career-portrait">
-      <Portrait avatar={drawn} {scene} {accent} />
+      <Portrait avatar={drawn} {accent} title={t.title} emblems={EMB[career.branch]} books={shelf.books.filter((b) => b.level > 0).length} booksTop={shelf.books.filter((b) => b.level === 3).length} />
       <div class="plaque">
         <p class="kicker">{t.tier ? TIER_NAMES[t.tier] : 'Khởi đầu'}</p>
         <p class="plaque-title">{t.title}</p>
@@ -75,10 +76,10 @@
     </div>
   </div>
   <details class="wardrobe">
-    <summary>Tủ đồ chân dung</summary>
+    <summary>Tùy chỉnh tủ trưng bày</summary>
     {#each Object.keys(GROUP) as k (k)}
       {@const key = k as keyof Avatar}
-      <p class="kicker">{GROUP[key]}</p>
+      <p class="kicker">{GROUP[key] ?? ''}</p>
       <div class="filters">
         {#each ALL[key] as v (v)}
           {@const open = (un[key] as string[]).includes(v)}

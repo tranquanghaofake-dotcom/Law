@@ -168,6 +168,10 @@ Hào thấy thẻ nền son và chân dung nét mảnh chưa đẹp, gửi 2 m�
 
 Không vẽ Quốc huy, sao, vạch cấp hiệu hay biểu tượng ngành thật.
 
+### 3.9 Thẻ guilloche và tủ kính trưng bày (Hào, 02/11/2026)
+- **Thẻ:** logo là huy hiệu nổi khối: rosette guilloche 36 elip xoay lồng nhau, đĩa tối, bông sen 8 cánh ôm cán cân vàng kim (đổ bóng + viền sáng). Hai lớp mặt nạ: lớp tròn làm 27 ký hoạ mờ dần quanh logo, lớp có mép mềm giữ bốn góc chữ sạch. 27 ký hoạ nét mảnh xếp lưới 9×3 so le phủ kín thẻ, chồng mép lên nhau, xen vân guilloche (7 đường sóng); sáng theo thứ tự từ gần logo ra ngoài.
+- **Chân dung → tủ kính trưng bày bộ đồ** (cảm hứng hộp kính lưu niệm quân phục Hào gửi; không vẽ quân hàm, cấp hiệu, quân hiệu, Quốc huy). Tủ khung gỗ tối, đèn rọi trần, hốc giữa có đèn hắt; biển tên mạ vàng ghi **chức danh** (không tên người); bộ đồ treo móc theo `outfitFor`; 4 khung huy hiệu chương theo nhánh; bục trái trưng phụ kiện (cán cân mặc định, kính, chồng sách luật, cặp); bục phải giấy khen ghi số sách và số sách cấp 3; vệt kính phản chiếu trượt khi rê chuột. Tuỳ chỉnh: trang phục (theo chức vụ / thường phục / áo dài), phụ kiện trên bục, ánh sáng & khung (đèn rọi, vách trống đồng, khung mạ vàng, hạt sáng). Bỏ tuỳ chọn tóc (không còn vẽ người).
+
 ## 4. Dữ liệu
 - Store mới (IndexedDB): `books` (chapterId → cấp cao nhất, ngày đạt), `career` (nhánh đang chọn, chức danh đã đạt), `card` (kỷ lục màu). Migration từ dữ liệu cũ: tính sách từ `progress` hiện có. XP vẫn giữ, chỉ hiển thị phụ.
 - `game/rank.ts` (khoa cử, phẩm hàm) **giữ file và test, không còn hiển thị**. XP vẫn cộng và hiện phụ ở Hồ sơ. Bậc 6 đổi tên **Tinh thông**.

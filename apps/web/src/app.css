@@ -633,9 +633,20 @@ h1 { text-wrap: balance; }
 /* ---- Chức danh & chân dung (Hồ sơ) ---- */
 .career-grid { display: grid; gap: 18px; }
 @media (min-width: 768px) { .career-grid { grid-template-columns: 300px 1fr; align-items: start; } }
-.portrait-chibi { display: block; width: 100%; height: auto; filter: drop-shadow(0 6px 14px rgba(20, 33, 61, .18)); }
-.portrait-chibi .sparks path { animation: twinkle 2.2s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: center; }
-@keyframes twinkle { from { opacity: .35; transform: scale(.8); } to { opacity: 1; transform: scale(1.1); } }
+.showcase { position: relative; aspect-ratio: 4 / 5; container-type: inline-size; border-radius: 14px; box-shadow: 0 16px 34px rgba(0, 0, 0, .3); overflow: hidden; }
+.showcase-svg { display: block; width: 100%; height: 100%; }
+.sc-plaque { position: absolute; left: 23%; top: 13.2%; width: 54%; height: 10%; margin: 0; display: grid; place-items: center; text-align: center; padding: 0 2%;
+  font: 800 clamp(9px, calc(7.4cqw - var(--len) * .12cqw), 22px)/1.15 var(--font-display); letter-spacing: .02em; text-transform: uppercase;
+  background: linear-gradient(180deg, #f6e3a6, #c99a4a 60%, #f3dc9a); -webkit-background-clip: text; background-clip: text; color: transparent; text-wrap: balance; }
+.sc-frame { position: absolute; width: 15%; display: grid; place-items: center; height: 15.6%; line-height: 0; }
+.sc-frame .emblem { width: 80%; height: auto; }
+.sc-frame.f0 { left: 10.2%; top: 31.4%; } .sc-frame.f1 { left: 10.2%; top: 53.8%; } .sc-frame.f2 { left: 74.7%; top: 31.4%; } .sc-frame.f3 { left: 74.7%; top: 53.8%; }
+.sc-cert { position: absolute; left: 72.5%; top: 72.2%; width: 18%; margin: 0; display: grid; justify-items: center; gap: 2px; text-align: center; font: 600 clamp(6px, 2.2cqw, 10px)/1.2 var(--font-ui); color: #5a4630; }
+.sc-cert b { font: 800 clamp(6px, 2.6cqw, 11px)/1 var(--font-display); color: #8a2b2b; letter-spacing: .04em; }
+.sc-glass { position: absolute; inset: 4.4%; pointer-events: none; background: linear-gradient(115deg, transparent 20%, rgba(255, 255, 255, .1) 30%, transparent 38%, transparent 62%, rgba(255, 255, 255, .06) 68%, transparent 74%); transition: transform .8s ease; }
+.showcase:hover .sc-glass { transform: translateX(8%); }
+.showcase .spark { animation: twinkle 2.2s ease-in-out infinite alternate; }
+@keyframes twinkle { from { opacity: .2; } to { opacity: 1; } }
 .plaque { margin-top: 10px; padding: 12px 14px; border: 1px solid var(--line); border-radius: 8px; background: var(--card); box-shadow: inset 0 0 0 4px var(--card), inset 0 0 0 5px color-mix(in srgb, var(--accent) 45%, var(--line)); }
 .plaque .kicker { margin: 0; }
 .plaque-title { margin: 2px 0 4px; font: 800 22px/1.25 var(--font-display); }
