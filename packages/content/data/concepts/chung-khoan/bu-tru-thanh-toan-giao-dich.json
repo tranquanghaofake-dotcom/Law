@@ -1,0 +1,127 @@
+{
+ "id": "bu-tru-thanh-toan-giao-dich",
+ "subject": "chung-khoan",
+ "chapter": "c4-dang-ky-luu-ky",
+ "term": "Bù trừ và thanh toán giao dịch chứng khoán",
+ "definition": "Thanh toán chứng khoán được thực hiện trên hệ thống tài khoản lưu ký tại Tổng công ty lưu ký và bù trừ chứng khoán Việt Nam, thanh toán tiền giao dịch chứng khoán được thực hiện qua ngân hàng thanh toán và phải tuân thủ nguyên tắc chuyển giao chứng khoán đồng thời với thanh toán tiền.",
+ "plain": "Sau khớp lệnh, Tổng công ty (hoặc công ty con) \"bù trừ\" để xác định mỗi bên phải giao bao nhiêu tiền, bao nhiêu chứng khoán. Sau đó \"thanh toán\": chứng khoán chạy trên tài khoản lưu ký, tiền chạy qua ngân hàng thanh toán. Nguyên tắc cốt lõi là giao chứng khoán ĐỒNG THỜI với trả tiền (quốc tế gọi là DVP), để không bên nào giao trước rồi bị bên kia quỵt.",
+ "example": "Công ty chứng khoán A trong ngày có khách mua tổng 100.000 cổ phiếu X và khách bán 70.000 cổ phiếu X: bù trừ ra A chỉ phải nhận ròng 30.000 cổ phiếu X và trả số tiền tương ứng.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 2 Điều 63 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "ngan-hang-thanh-toan",
+  "quy-ho-tro-thanh-toan-quy-bu-tru",
+  "chuyen-quyen-so-huu-chung-khoan"
+ ],
+ "keywords": [
+  "bù trừ",
+  "tài khoản lưu ký",
+  "ngân hàng thanh toán",
+  "đồng thời"
+ ],
+ "note": "Luật 56/2024/QH15 (hiệu lực 01/01/2025) sửa khoản 1 Điều 63: bù trừ được thực hiện qua Tổng công ty lưu ký và bù trừ HOẶC công ty con của Tổng công ty. Giáo trình 2021 chỉ nói Tổng công ty.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hoạt động bù trừ, xác định nghĩa vụ thanh toán tiền và chứng khoán được thực hiện thông qua chủ thể nào?",
+   "options": [
+    "Tổng công ty lưu ký và bù trừ chứng khoán Việt Nam hoặc công ty con của Tổng công ty",
+    "Sở giao dịch chứng khoán Việt Nam",
+    "Từng công ty chứng khoán tự thực hiện",
+    "Ngân hàng Nhà nước"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 63 (sửa đổi bởi Luật 56/2024/QH15).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 63 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nguyên tắc nào bắt buộc trong thanh toán giao dịch chứng khoán?",
+   "options": [
+    "Chuyển giao chứng khoán đồng thời với thanh toán tiền",
+    "Trả tiền trước, giao chứng khoán sau 30 ngày",
+    "Giao chứng khoán trước, trả tiền sau",
+    "Thanh toán bằng tiền mặt tại Sở giao dịch"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 63.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 63 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thanh toán chứng khoán",
+   "right": "Thanh toán tiền",
+   "cases": [
+    {
+     "text": "Thực hiện trên hệ thống tài khoản lưu ký tại Tổng công ty",
+     "answer": "left"
+    },
+    {
+     "text": "Thực hiện qua ngân hàng thanh toán",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 2 Điều 63."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thanh toán giao dịch chứng khoán phải tuân thủ nguyên tắc chuyển giao chứng khoán {{đồng thời}} với thanh toán {{tiền}}.",
+   "bank_extra": [
+    "trước",
+    "ngoại tệ"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thanh toán tiền giao dịch chứng khoán được thực hiện qua {{ngân hàng thanh toán}}.",
+   "bank_extra": [
+    "công ty chứng khoán",
+    "Kho bạc Nhà nước"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Một thành viên lưu ký tạm thời mất khả năng thanh toán tiền cho giao dịch đã khớp. Cơ chế nào được dùng để thanh toán thay?",
+   "options": [
+    "Quỹ hỗ trợ thanh toán do các thành viên lưu ký đóng góp",
+    "Ngân sách nhà nước",
+    "Tài sản chứng khoán của khách hàng thành viên đó đang lưu ký",
+    "Hủy giao dịch đã khớp"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 66. Tài sản của khách hàng không được dùng để trả nợ của thành viên (Điều 65); Bộ trưởng Bộ Tài chính quy định biện pháp xử lý (khoản 3 Điều 63).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 66 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày cơ chế bù trừ và thanh toán giao dịch chứng khoán theo Điều 63.",
+   "model": "Bù trừ, xác định nghĩa vụ thanh toán tiền và chứng khoán qua Tổng công ty lưu ký và bù trừ hoặc công ty con. Thanh toán chứng khoán trên hệ thống tài khoản lưu ký; thanh toán tiền qua ngân hàng thanh toán; nguyên tắc chuyển giao chứng khoán đồng thời với thanh toán tiền. Bộ trưởng Bộ Tài chính quy định xử lý khi thành viên tạm thời mất khả năng thanh toán.",
+   "keywords": [
+    "bù trừ",
+    "tài khoản lưu ký",
+    "ngân hàng thanh toán",
+    "đồng thời"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,124 @@
+{
+ "id": "chuyen-quyen-so-huu-chung-khoan",
+ "subject": "chung-khoan",
+ "chapter": "c4-dang-ky-luu-ky",
+ "term": "Thời điểm chuyển quyền sở hữu chứng khoán",
+ "definition": "Đối với chứng khoán đã được lưu ký tại Tổng công ty lưu ký và bù trừ chứng khoán Việt Nam, việc chuyển quyền sở hữu chứng khoán có hiệu lực vào ngày thực hiện bút toán ghi sổ trên tài khoản lưu ký chứng khoán tại Tổng công ty lưu ký và bù trừ chứng khoán Việt Nam.",
+ "plain": "Khớp lệnh chưa phải là đã thành chủ sở hữu. Với chứng khoán đã lưu ký, quyền sở hữu chuyển khi có bút toán ghi sổ trên tài khoản lưu ký. Với chứng khoán phải đăng ký tập trung nhưng chưa lưu ký, quyền sở hữu chuyển khi ghi Sổ đăng ký người sở hữu (khoản 3). Đây là quy định riêng, khác nguyên tắc chung về thời điểm chuyển quyền sở hữu của Bộ luật Dân sự.",
+ "example": "Bạn khớp lệnh mua cổ phiếu sáng thứ Hai; cổ phiếu về tài khoản (bút toán ghi sổ) vào thứ Tư. Quyền sở hữu của bạn có hiệu lực từ thứ Tư, không phải thứ Hai.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 2 Điều 64 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "so-dang-ky-ngay-dang-ky-cuoi-cung",
+  "bu-tru-thanh-toan-giao-dich"
+ ],
+ "keywords": [
+  "bút toán ghi sổ",
+  "tài khoản lưu ký",
+  "Sổ đăng ký người sở hữu"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Với chứng khoán đã lưu ký tại Tổng công ty, việc chuyển quyền sở hữu có hiệu lực khi nào?",
+   "options": [
+    "Vào ngày thực hiện bút toán ghi sổ trên tài khoản lưu ký",
+    "Ngay khi khớp lệnh",
+    "Khi người mua trả đủ tiền cho người bán",
+    "Khi công ty phát hành cập nhật sổ cổ đông"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 64.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 64 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Với chứng khoán thuộc diện đăng ký tập trung nhưng CHƯA lưu ký, quyền sở hữu chuyển khi nào?",
+   "options": [
+    "Vào ngày ghi Sổ đăng ký người sở hữu chứng khoán do Tổng công ty quản lý",
+    "Khi ký hợp đồng chuyển nhượng",
+    "Khi công chứng hợp đồng",
+    "Khi được Sở giao dịch chấp thuận"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 64.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 64 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Đã lưu ký",
+   "right": "Đăng ký tập trung nhưng chưa lưu ký",
+   "cases": [
+    {
+     "text": "Hiệu lực khi có bút toán ghi sổ trên tài khoản lưu ký",
+     "answer": "left"
+    },
+    {
+     "text": "Hiệu lực khi ghi Sổ đăng ký người sở hữu chứng khoán",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 2 và khoản 3 Điều 64."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đối với chứng khoán đã lưu ký, việc chuyển quyền sở hữu có hiệu lực vào ngày thực hiện {{bút toán ghi sổ}} trên tài khoản {{lưu ký}} chứng khoán.",
+   "bank_extra": [
+    "khớp lệnh",
+    "ngân hàng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Việc xác lập, chuyển quyền sở hữu đối với chứng khoán đã đăng ký tập trung thực hiện theo quy định của pháp luật về {{chứng khoán}} và thị trường chứng khoán.",
+   "bank_extra": [
+    "đất đai",
+    "hôn nhân và gia đình"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "A khớp lệnh bán cổ phiếu cho B ngày 3/3; bút toán ghi sổ thực hiện ngày 5/3. Ngày 4/3 A chết. Cổ phiếu thuộc về ai tại thời điểm A chết?",
+   "options": [
+    "Vẫn thuộc A (là di sản), vì quyền sở hữu của B chỉ có hiệu lực từ 5/3; giao dịch tiếp tục thanh toán theo quy định",
+    "Đã thuộc B từ 3/3 khi khớp lệnh",
+    "Thuộc công ty chứng khoán",
+    "Thuộc Nhà nước vì giao dịch bị hủy"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 64: quyền sở hữu chuyển khi có bút toán ghi sổ. Câu hỏi dùng để kiểm tra mốc thời điểm; việc hoàn tất thanh toán do quy định về bù trừ, thanh toán điều chỉnh.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 64 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Xác định thời điểm chuyển quyền sở hữu chứng khoán theo Điều 64.",
+   "model": "Chứng khoán đã đăng ký tập trung: theo pháp luật chứng khoán. Đã lưu ký tại Tổng công ty: có hiệu lực vào ngày thực hiện bút toán ghi sổ trên tài khoản lưu ký. Thuộc diện đăng ký tập trung nhưng chưa lưu ký: có hiệu lực vào ngày ghi Sổ đăng ký người sở hữu chứng khoán.",
+   "keywords": [
+    "bút toán ghi sổ",
+    "tài khoản lưu ký",
+    "Sổ đăng ký",
+    "chưa lưu ký"
+   ]
+  }
+ ]
+}

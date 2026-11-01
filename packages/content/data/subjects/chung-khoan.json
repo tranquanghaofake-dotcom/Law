@@ -86,6 +86,34 @@
           ]
         }
       ]
+    },
+    {
+      "id": "c4-dang-ky-luu-ky",
+      "title": "Chương IV. Pháp luật về đăng kí, lưu kí, bù trừ và thanh toán chứng khoán",
+      "lessons": [
+        {
+          "id": "ck4-1",
+          "title": "Tổng công ty lưu ký và bù trừ; đăng ký, lưu ký chứng khoán",
+          "concepts": [
+            "tong-cong-ty-luu-ky-bu-tru",
+            "dang-ky-chung-khoan",
+            "so-dang-ky-ngay-dang-ky-cuoi-cung",
+            "luu-ky-chung-khoan",
+            "thanh-vien-luu-ky-bu-tru"
+          ]
+        },
+        {
+          "id": "ck4-2",
+          "title": "Bù trừ, thanh toán và bảo vệ tài sản nhà đầu tư",
+          "concepts": [
+            "bu-tru-thanh-toan-giao-dich",
+            "chuyen-quyen-so-huu-chung-khoan",
+            "bao-ve-tai-san-khach-hang",
+            "quy-ho-tro-thanh-toan-quy-bu-tru",
+            "ngan-hang-thanh-toan"
+          ]
+        }
+      ]
     }
   ]
 }

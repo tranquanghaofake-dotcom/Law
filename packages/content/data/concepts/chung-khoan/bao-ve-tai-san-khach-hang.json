@@ -1,0 +1,117 @@
+{
+ "id": "bao-ve-tai-san-khach-hang",
+ "subject": "chung-khoan",
+ "chapter": "c4-dang-ky-luu-ky",
+ "term": "Bảo vệ tài sản của khách hàng",
+ "definition": "Chứng khoán và các tài sản khác của khách hàng do Tổng công ty lưu ký và bù trừ chứng khoán Việt Nam hoặc thành viên của Tổng công ty lưu ký và bù trừ chứng khoán Việt Nam quản lý, tiền gửi thanh toán giao dịch chứng khoán của các thành viên lưu ký tại ngân hàng thanh toán là tài sản của chủ sở hữu, không phải là tài sản của Tổng công ty lưu ký và bù trừ chứng khoán Việt Nam hoặc của thành viên hoặc của ngân hàng thanh toán.",
+ "plain": "Cổ phiếu bạn lưu ký ở công ty chứng khoán vẫn là của BẠN. Nếu công ty chứng khoán nợ nần, phá sản, chủ nợ của công ty không được lấy tài sản của khách hàng để trừ nợ. Đây là nguyên tắc \"tách biệt tài sản\", lõi của việc bảo vệ nhà đầu tư.",
+ "example": "Công ty chứng khoán Z mất khả năng thanh toán. Cổ phiếu khách hàng lưu ký tại Z không bị đưa vào khối tài sản để trả nợ cho chủ nợ của Z; khách hàng được chuyển lưu ký sang thành viên khác.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 65 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "luu-ky-chung-khoan",
+  "quy-ho-tro-thanh-toan-quy-bu-tru"
+ ],
+ "keywords": [
+  "tài sản của chủ sở hữu",
+  "không dùng trả nợ",
+  "tách biệt"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chứng khoán của khách hàng do thành viên lưu ký quản lý là tài sản của ai?",
+   "options": [
+    "Của chủ sở hữu (khách hàng)",
+    "Của thành viên lưu ký",
+    "Của Tổng công ty lưu ký và bù trừ",
+    "Đồng sở hữu giữa khách hàng và thành viên lưu ký"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 65.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 65 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thành viên lưu ký có được dùng chứng khoán của khách hàng để trả nợ của mình không?",
+   "options": [
+    "Không",
+    "Có, nếu khách hàng không phản đối trong 30 ngày",
+    "Có, khi thành viên mất khả năng thanh toán",
+    "Có, nếu được Tổng công ty đồng ý"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 65.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 65 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tài sản của khách hàng",
+   "right": "Tài sản của thành viên lưu ký",
+   "cases": [
+    {
+     "text": "Chứng khoán khách hàng ký gửi",
+     "answer": "left"
+    },
+    {
+     "text": "Tiền gửi thanh toán giao dịch chứng khoán của thành viên lưu ký tại ngân hàng thanh toán (thuộc chủ sở hữu)",
+     "answer": "left"
+    },
+    {
+     "text": "Trụ sở, vốn chủ sở hữu của công ty chứng khoán",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 65."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chứng khoán và tài sản khác của khách hàng do Tổng công ty hoặc thành viên quản lý là tài sản của {{chủ sở hữu}}, không phải tài sản của {{thành viên}}.",
+   "bank_extra": [
+    "Nhà nước",
+    "khách hàng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tổng công ty, thành viên, ngân hàng thanh toán không được sử dụng tài sản của khách hàng để thanh toán các khoản {{nợ}} của mình.",
+   "bank_extra": [
+    "thuế",
+    "phí"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Khi công ty chứng khoán phá sản, cổ phiếu khách hàng lưu ký tại công ty được dùng để trả nợ cho chủ nợ của công ty.",
+   "answer": false,
+   "explain": "Sai. Điều 65: tài sản của khách hàng không phải tài sản của thành viên và không được dùng để trả nợ của thành viên."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày nguyên tắc bảo vệ tài sản của khách hàng theo Điều 65.",
+   "model": "Chứng khoán, tài sản khác của khách hàng do Tổng công ty hoặc thành viên quản lý, và tiền gửi thanh toán giao dịch của thành viên lưu ký tại ngân hàng thanh toán là tài sản của chủ sở hữu, không phải của Tổng công ty, thành viên hay ngân hàng thanh toán; không được dùng để trả nợ của các chủ thể này.",
+   "keywords": [
+    "tài sản của chủ sở hữu",
+    "không phải tài sản của thành viên",
+    "không được dùng trả nợ"
+   ]
+  }
+ ]
+}

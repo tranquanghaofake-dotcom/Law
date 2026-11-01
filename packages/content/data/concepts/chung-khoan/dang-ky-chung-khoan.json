@@ -1,0 +1,120 @@
+{
+ "id": "dang-ky-chung-khoan",
+ "subject": "chung-khoan",
+ "chapter": "c4-dang-ky-luu-ky",
+ "term": "Đăng ký chứng khoán",
+ "definition": "Đăng ký chứng khoán là việc ghi nhận thông tin về tổ chức phát hành, chứng khoán của tổ chức phát hành và người sở hữu chứng khoán.",
+ "plain": "Đăng ký chứng khoán trả lời câu hỏi \"ai đang sở hữu chứng khoán gì của ai\". Chứng khoán của công ty đại chúng và của tổ chức niêm yết, đăng ký giao dịch BẮT BUỘC đăng ký tập trung tại Tổng công ty lưu ký và bù trừ (khoản 1 Điều 61). Đừng nhầm với \"đăng ký giao dịch\" (đưa chứng khoán lên UPCoM).",
+ "example": "Công ty đại chúng V phải gửi danh sách cổ đông và số cổ phần cho Tổng công ty lưu ký và bù trừ; từ đó Tổng công ty lập Sổ đăng ký người sở hữu chứng khoán của V.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 33 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "dang-ky-giao-dich-chung-khoan",
+  "so-dang-ky-ngay-dang-ky-cuoi-cung",
+  "luu-ky-chung-khoan"
+ ],
+ "keywords": [
+  "ghi nhận thông tin",
+  "tổ chức phát hành",
+  "người sở hữu",
+  "đăng ký tập trung"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 33 Điều 4, đăng ký chứng khoán là gì?",
+   "options": [
+    "Ghi nhận thông tin về tổ chức phát hành, chứng khoán và người sở hữu chứng khoán",
+    "Đưa chứng khoán chưa niêm yết vào giao dịch",
+    "Nhận ký gửi, bảo quản chứng khoán",
+    "Đăng ký chào bán với Ủy ban Chứng khoán"
+   ],
+   "answer": 0,
+   "explain": "Khoản 33 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 33 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chứng khoán nào PHẢI đăng ký tập trung tại Tổng công ty lưu ký và bù trừ?",
+   "options": [
+    "Chứng khoán của công ty đại chúng và của tổ chức niêm yết, đăng ký giao dịch",
+    "Mọi phần vốn góp trong công ty TNHH",
+    "Cổ phần của mọi công ty cổ phần",
+    "Chỉ trái phiếu Chính phủ"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 61.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 61 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Đăng ký chứng khoán",
+   "right": "Lưu ký chứng khoán",
+   "cases": [
+    {
+     "text": "Ghi nhận thông tin về người sở hữu",
+     "answer": "left"
+    },
+    {
+     "text": "Nhận ký gửi, bảo quản, chuyển giao chứng khoán cho khách hàng",
+     "answer": "right"
+    },
+    {
+     "text": "Lập Sổ đăng ký người sở hữu chứng khoán",
+     "answer": "left"
+    }
+   ],
+   "explain": "Khoản 33, 34 Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đăng ký chứng khoán là việc ghi nhận thông tin về {{tổ chức phát hành}}, chứng khoán của tổ chức phát hành và {{người sở hữu}} chứng khoán.",
+   "bank_extra": [
+    "công ty chứng khoán",
+    "người môi giới"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chứng khoán của công ty đại chúng phải được đăng ký {{tập trung}} tại Tổng công ty lưu ký và bù trừ chứng khoán Việt Nam.",
+   "bank_extra": [
+    "phân tán",
+    "tự nguyện"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Đăng ký chứng khoán và đăng ký giao dịch là một khái niệm.",
+   "answer": false,
+   "explain": "Sai. Đăng ký chứng khoán (khoản 33 Điều 4) là ghi nhận thông tin người sở hữu; đăng ký giao dịch (khoản 25) là đưa chứng khoán chưa niêm yết vào hệ thống giao dịch."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Định nghĩa đăng ký chứng khoán và nêu phạm vi chứng khoán phải đăng ký tập trung.",
+   "model": "Đăng ký chứng khoán là ghi nhận thông tin về tổ chức phát hành, chứng khoán và người sở hữu (khoản 33 Điều 4). Phải đăng ký tập trung tại Tổng công ty lưu ký và bù trừ: chứng khoán của công ty đại chúng và tổ chức niêm yết, đăng ký giao dịch (khoản 1 Điều 61); tổ chức khác có thể ủy quyền làm đại lý chuyển nhượng (khoản 2).",
+   "keywords": [
+    "ghi nhận thông tin",
+    "người sở hữu",
+    "tập trung",
+    "công ty đại chúng"
+   ]
+  }
+ ]
+}

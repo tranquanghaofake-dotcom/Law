@@ -1,0 +1,122 @@
+{
+ "id": "quy-ho-tro-thanh-toan-quy-bu-tru",
+ "subject": "chung-khoan",
+ "chapter": "c4-dang-ky-luu-ky",
+ "term": "Quỹ hỗ trợ thanh toán và quỹ bù trừ",
+ "definition": "Quỹ hỗ trợ thanh toán được hình thành từ sự đóng góp của các thành viên lưu ký để thanh toán thay cho thành viên lưu ký trong trường hợp thành viên lưu ký tạm thời mất khả năng thanh toán giao dịch chứng khoán. Quỹ bù trừ được hình thành từ sự đóng góp của các thành viên bù trừ với mục đích bồi thường thiệt hại và hoàn tất các giao dịch chứng khoán đứng tên thành viên bù trừ trong trường hợp thành viên bù trừ hoặc nhà đầu tư mất khả năng thanh toán.",
+ "plain": "Hai \"túi dự phòng\" để một thành viên vỡ nợ không kéo sập cả hệ thống thanh toán. Quỹ hỗ trợ thanh toán: các thành viên LƯU KÝ góp, dùng để thanh toán thay khi thành viên lưu ký TẠM THỜI mất khả năng thanh toán. Quỹ bù trừ: các thành viên BÙ TRỪ góp, để bồi thường và hoàn tất giao dịch khi thành viên bù trừ hoặc nhà đầu tư mất khả năng thanh toán (thường gặp ở phái sinh). Cả hai do Tổng công ty quản lý, tách biệt với tài sản của Tổng công ty.",
+ "example": "Một công ty chứng khoán (thành viên lưu ký) thiếu tiền tạm thời để thanh toán các lệnh mua đã khớp của khách: quỹ hỗ trợ thanh toán ứng ra thanh toán thay để giao dịch vẫn hoàn tất đúng hạn.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 66, khoản 1 Điều 67 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "bu-tru-thanh-toan-giao-dich",
+  "bao-ve-tai-san-khach-hang"
+ ],
+ "keywords": [
+  "thành viên lưu ký đóng góp",
+  "thành viên bù trừ đóng góp",
+  "tách biệt với tài sản của Tổng công ty"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quỹ hỗ trợ thanh toán được hình thành từ đóng góp của ai?",
+   "options": [
+    "Các thành viên lưu ký",
+    "Ngân sách nhà nước",
+    "Các nhà đầu tư cá nhân",
+    "Sở giao dịch chứng khoán"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 66.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 66 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quỹ bù trừ được dùng trong trường hợp nào?",
+   "options": [
+    "Thành viên bù trừ hoặc nhà đầu tư mất khả năng thanh toán",
+    "Công ty niêm yết thua lỗ",
+    "Nhà đầu tư thua lỗ do giá giảm",
+    "Sở giao dịch gặp sự cố hệ thống"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 67.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 67 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quỹ hỗ trợ thanh toán",
+   "right": "Quỹ bù trừ",
+   "cases": [
+    {
+     "text": "Thành viên lưu ký đóng góp",
+     "answer": "left"
+    },
+    {
+     "text": "Thành viên bù trừ đóng góp",
+     "answer": "right"
+    },
+    {
+     "text": "Bồi thường thiệt hại khi nhà đầu tư mất khả năng thanh toán",
+     "answer": "right"
+    },
+    {
+     "text": "Thanh toán thay khi thành viên lưu ký tạm thời mất khả năng thanh toán",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 66 và Điều 67."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quỹ hỗ trợ thanh toán và quỹ bù trừ do {{Tổng công ty lưu ký và bù trừ}} quản lý và phải được {{tách biệt}} với tài sản của Tổng công ty.",
+   "bank_extra": [
+    "Ủy ban Chứng khoán Nhà nước",
+    "gộp chung"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Mức đóng góp, phương thức quản lý quỹ hỗ trợ thanh toán thực hiện theo quy định của {{Bộ trưởng Bộ Tài chính}}.",
+   "bank_extra": [
+    "Thủ tướng Chính phủ",
+    "Thống đốc Ngân hàng Nhà nước"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quỹ bù trừ được dùng để bù lỗ cho nhà đầu tư khi giá chứng khoán giảm.",
+   "answer": false,
+   "explain": "Sai. Quỹ bù trừ dùng để bồi thường thiệt hại và hoàn tất giao dịch khi thành viên bù trừ hoặc nhà đầu tư MẤT KHẢ NĂNG THANH TOÁN (khoản 1 Điều 67), không bù lỗ đầu tư (nguyên tắc tự chịu rủi ro, khoản 4 Điều 5)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Phân biệt quỹ hỗ trợ thanh toán và quỹ bù trừ.",
+   "model": "Quỹ hỗ trợ thanh toán: thành viên lưu ký đóng góp; thanh toán thay khi thành viên lưu ký tạm thời mất khả năng thanh toán (Điều 66). Quỹ bù trừ: thành viên bù trừ đóng góp; bồi thường thiệt hại, hoàn tất giao dịch đứng tên thành viên bù trừ khi thành viên bù trừ hoặc nhà đầu tư mất khả năng thanh toán (Điều 67). Cả hai do Tổng công ty quản lý, tách biệt tài sản; Bộ trưởng Bộ Tài chính quy định mức đóng góp.",
+   "keywords": [
+    "thành viên lưu ký",
+    "thành viên bù trừ",
+    "mất khả năng thanh toán",
+    "tách biệt"
+   ]
+  }
+ ]
+}
