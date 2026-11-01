@@ -1,6 +1,6 @@
 # Luyện Luật — Ngôn ngữ hình khối "Văn Miếu" (đợt nâng cấp 2)
 
-Phiên bản 1.2 · 01/11/2026 · Trạng thái: **đợt 1, 1b, 2 đã triển khai** (nhánh `claude/amazing-archimedes-u5vtr5`).
+Phiên bản 1.3 · 01/11/2026 · Trạng thái: **đợt 1, 1b, 2, 3 đã triển khai** (nhánh `claude/amazing-archimedes-u5vtr5`).
 Kế thừa spec layout (`2026-11-01-layout-redesign-design.md`); không đổi cấu trúc màn hình, engine, nội dung, **bảng màu**.
 
 ## 0. Mục tiêu
@@ -80,6 +80,17 @@ Hào duyệt: **giữ màu sáng cũ, chỉ nâng độ chi tiết và cách tra
 - **Chữ**: `h1` dùng Noto Serif Display 800 (Google Fonts, có tiếng Việt).
 - **Chuyển động nhẹ**: vành trống đồng xoay 180 s/vòng, mây nét trôi, đèn lồng đung đưa; tự tắt khi giảm chuyển động.
 - **Khung web**: dây sen ở đáy sidebar (≥ 1280 px); emoji 🔥 🔊 ⚙ thay bằng icon nét (`Glyph.svelte`); nhãn/nút lọc góc vuông vức.
+
+## 3d. Đợt 3 (đã làm) — kệ sách thay dây sen
+
+Hào chọn (01/11/2026): sách **hiện dần** theo mức thuần thục, có hiệu ứng khi di chuột; kệ ở **sidebar (≥ 1280 px) + Hồ sơ**; bìa **cách điệu, bỏ Quốc huy và logo nhà xuất bản**.
+
+- Logic `lib/ui/shelf.ts` (test `tests/ui/shelf.test.ts`): mỗi môn có khái niệm là một cuốn; `ghost` (chưa khái niệm nào đạt ngưỡng) → `growing` (màu dâng từ dưới lên theo %) → `done` (mọi khái niệm đạt ngưỡng, có dấu son). Ngưỡng dùng chung `MASTERED` với % môn và phẩm hàm. "Hoàn thành" xét `mastered === total`, không xét % làm tròn.
+- Bìa (`lib/art/BookSpine.svelte`): gáy sách theo nhận diện chung dòng sách luật in trong nước (nền vàng nhạt hoặc xanh dương, đai vàng, ruy băng đỏ "LUẬT", tên môn chữ dọc, cán cân); mặt trống đồng thay Quốc huy; không ghi tên/logo nhà xuất bản. Hiến pháp = vàng; môn khác xoay vòng xanh / xanh đêm. Màu cố định như bìa thật.
+- Kệ (`lib/ui/Bookshelf.svelte`): tối thiểu 4 ô (ô trống nét đứt "Sắp có"), chặn sách là bình sen nhỏ; di chuột/focus: sách nhấc lên, nghiêng, viền sáng, vệt sáng lướt qua. Mỗi sách là liên kết vào môn, có nhãn đọc màn hình nêu % thuần thục.
+- Dữ liệu `lib/ui/shelf.svelte.ts`, làm mới sau mỗi phiên học.
+
+**Còn mở (cần Hào quyết):** chữ "thuần thục" đang hai nghĩa — % môn/phẩm hàm/kệ sách tính bậc ≥ 5 (`MASTERED = 5`), còn chú giải lưới bậc gọi bậc 6 là "Thuần thục".
 
 ## 4. Đợt sau (chưa làm, mỗi đợt một phiên)
 

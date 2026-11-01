@@ -10,6 +10,7 @@
   import StreakFlame from './StreakFlame.svelte';
   import RankBadge from './RankBadge.svelte';
   import Icon from '$lib/art/Icon.svelte';
+  import Bookshelf from './Bookshelf.svelte';
 
   let { active, children }: { active: RouteName; children: Snippet } = $props();
   const current = $derived(activeNav(active));
@@ -32,16 +33,7 @@
           <span class="ico"><Icon name={n.name} /></span><span class="lbl">{n.label}</span></a></li>
       {/each}
     </ul>
-    <svg class="art side-vine" viewBox="0 0 120 260" aria-hidden="true" focusable="false">
-      <path class="ka" d="M92 260C92 214 58 200 66 160S106 108 90 72S52 34 70 6" fill="none" stroke-width="2" />
-      <path class="f-leaf k" d="M66 160c-20-6-34 2-40 16c16 6 32 2 40-16zM90 72c20-8 28-24 24-38c-16 4-26 18-24 38zM80 216c-22 0-34 12-36 26c18 0 32-8 36-26z" stroke-width="1.2" />
-      <path class="k" d="M64 162c-12 2-22 6-30 12M92 70c6-10 12-20 18-30M78 218c-10 4-20 12-26 20" stroke-width=".9" fill="none" />
-      <g transform="translate(70 34)">
-        <path class="f-lotus k" d="M0 0c-14-4-22-18-17-34c8 5 13 15 17 27c4-12 9-22 17-27c5 16-3 30-17 34z" stroke-width="1.2" />
-        <path class="f-lotus2 k" d="M0 0c-6-10-7-24 0-38c7 14 6 28 0 38z" stroke-width="1.2" />
-        <path class="f-acc k" d="M-4-34q4-6 8 0z" stroke-width=".9" />
-      </g>
-    </svg>
+    <div class="side-shelf"><p class="kicker">Tủ sách</p><Bookshelf size="side" /></div>
     <a class="me" href="#/toi">
       <span class="flame" class:cold={header.streak === 0}><Glyph name="flame" size={16} /><span class="sr-only">Chuỗi </span>{header.streak}<span class="sr-only"> ngày,</span></span>
       <span class="rank"><span class="seal" aria-hidden="true">§</span><span>{info.rank}</span> <span class="tier">{info.tier}</span></span>
