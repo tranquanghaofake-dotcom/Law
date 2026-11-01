@@ -30,7 +30,7 @@
 </script>
 
 <h1>Luyện đề 10 câu</h1>
-<p class="muted">Luyện đề là kiểm tra nhanh 10 câu, không ghi vào lịch ôn. Muốn nhớ lâu, học khái niệm ở <a href={hashFor('subjects')}>Môn học</a>.</p>
+<p class="muted">Bộ 10 câu tình huống đời thường, chia theo ngành luật — tách riêng với các môn ở <a href={hashFor('subjects')}>Môn học</a>. Làm để kiểm tra nhanh; kết quả không ghi vào lịch ôn.</p>
 {#if error}
   <section class="card"><p class="muted">Không tải được dữ liệu: {error}</p></section>
 {:else if !index}
@@ -45,7 +45,7 @@
     <div class="sets">
       {#each sets as set (set.id)}
         <a class="set" href={hashFor('quiz', { id: set.id })}>
-          <div><span class="chip">{GROUPS[set.group] ?? set.group}</span><h3>{set.title}</h3></div>
+          <div><h3>{set.title}</h3></div>
           <span class="meta">{#if best[set.id] != null}<span class="best">{best[set.id]}/{set.count}</span>điểm cao nhất{:else}{set.count} câu{/if}</span>
           <p>{set.subtitle}</p>
         </a>

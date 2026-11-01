@@ -20,6 +20,7 @@
   let quick = $state<{ set: ContentIndex['sets'][number]; best: number | null } | null>(null);
   let week = $state<boolean[]>(Array(7).fill(false));
   let dueTomorrow = $state(0);
+  let hard = $state<{ id: string; subject: string; term: string }[]>([]);
   let error = $state('');
 
   async function load() {
@@ -46,6 +47,14 @@
       rows = subjects
         .filter((s) => started.size === 0 || started.has(s.id))
         .map((s) => { const x = subjectSummary(s, levels); return { subject: s, grade: x.grade, mastered: x.mastered, total: x.total }; });
+
+      // khái niệm khó: sai ≥ 3 lần liên tiếp, tối đa 5 (Memrise "Difficult words")
+      const hardP = (await repo.difficult()).filter((p) => known.has(p.conceptId)).slice(0, 5);
+      const hardTerms: Record<string, string> = {};
+      const hardBy = new Map<string, string[]>();
+      for (const p of hardP) hardBy.set(p.subject, [...(hardBy.get(p.subject) ?? []), p.conceptId]);
+      for (const [sid, ids] of hardBy) { try { for (const c of await loadConcepts(sid, ids)) hardTerms[c.id] = c.term; } catch { /* file lỗi: giữ slug */ } }
+      hard = hardP.map((p) => ({ id: p.conceptId, subject: p.subject, term: hardTerms[p.conceptId] ?? p.conceptId }));
 
       // một thẻ kiểm tra nhanh: đề chưa đạt điểm tối đa đầu tiên, không thì đề đầu (spec §3.3)
       const best: Record<string, number | null> = {};
@@ -80,6 +89,13 @@
           <span class="arrow" aria-hidden="true">→</span>
         </a></li>
       {/each}
+    </ul>
+  {/if}
+
+  {#if hard.length}
+    <h2 class="section-title"><b>Khái niệm khó</b> <span class="small">sai ≥ 3 lần liền</span></h2>
+    <ul class="hard-list">
+      {#each hard as h (h.id)}<li><a href={hashFor('subject', { subject: h.subject })}>{h.term}</a></li>{/each}
     </ul>
   {/if}
 

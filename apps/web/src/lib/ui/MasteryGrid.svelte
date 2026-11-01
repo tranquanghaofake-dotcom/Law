@@ -25,7 +25,7 @@
           <div class="cells" role="list" aria-label="Bậc từng khái niệm của đợt {l.title}">
             {#each l.concepts as c (c)}
               {@const lv = levels[c] ?? 0}
-              <span role="listitem" class="cell lv{lv}" title="{terms[c] ?? c} · bậc {lv} · {LEVEL_NAMES[lv]}" aria-label="{terms[c] ?? c}: bậc {lv}, {LEVEL_NAMES[lv]}"></span>
+              <span role="listitem" class="cell-item" title="{terms[c] ?? c} · bậc {lv} · {LEVEL_NAMES[lv]}" aria-label="{terms[c] ?? c}: bậc {lv}, {LEVEL_NAMES[lv]}"><span class="cell lv{lv}" aria-hidden="true"></span><span class="cell-term" aria-hidden="true">{terms[c] ?? c}</span></span>
             {/each}
           </div>
         </li>
