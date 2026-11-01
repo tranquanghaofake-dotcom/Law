@@ -19,11 +19,12 @@ describe('nội dung Luật Hiến pháp', () => {
       expect(c.items.filter((i) => i.type === 'cloze').length).toBe(2);
     }
   });
-  it('môn có 2 đợt, mỗi đợt 5 khái niệm, confusables nằm trong cùng môn', () => {
+  it('môn chia chương theo mục lục giáo trình, mỗi khái niệm nằm đúng chương, confusables nằm trong cùng môn', () => {
     const s = subjectSchema.parse(JSON.parse(readFileSync(join(root, 'subjects', 'hien-phap.json'), 'utf8')));
-    const lessons = s.chapters.flatMap((c) => c.lessons);
-    expect(lessons.length).toBe(2);
-    for (const l of lessons) expect(l.concepts.length).toBe(5);
+    expect(s.chapters.map((c) => c.id)).toEqual(['c2-khai-niem-dac-trung', 'c3-che-do-chinh-tri', 'c4-quyen-con-nguoi']);
+    for (const ch of s.chapters) for (const l of ch.lessons) for (const id of l.concepts) {
+      expect(JSON.parse(readFileSync(join(dir, `${id}.json`), 'utf8')).chapter).toBe(ch.id);
+    }
     const ids = new Set(files.map((f) => f.replace('.json', '')));
     for (const f of files) {
       const c = JSON.parse(readFileSync(join(dir, f), 'utf8'));

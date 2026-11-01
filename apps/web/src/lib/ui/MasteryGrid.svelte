@@ -13,7 +13,7 @@
 
 <div class="mastery">
   {#each subject.chapters as ch (ch.id)}
-    <p class="kicker chapter" id="chapter-{ch.id}">{ch.title}</p>
+    <p class="kicker chapter" id="chapter-{ch.id}">{ch.title}{#if ch.advanced} <span class="advanced-tag" title="Ngoài giáo trình">Nâng cao</span>{/if}</p>
     <ol class="lesson-rows">
       {#each ch.lessons as l (l.id)}
         {@const st = states[l.id] ?? 'locked'}

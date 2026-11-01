@@ -47,4 +47,10 @@ describe('buildContent', () => {
     const { errors } = buildContent(root);
     expect(errors.join('\n')).toMatch(/zzz/);
   });
+  it('báo lỗi khi khái niệm nằm sai chương (trường chapter khác chương chứa đợt)', () => {
+    const root = fixture();
+    writeFileSync(join(root, 'subjects', 'hp.json'), JSON.stringify({ id: 'hp', title: 'Hiến pháp', short: 'HP', chapters: [{ id: 'c1', title: 'C1', lessons: [{ id: 'l1', title: 'L1', concepts: ['a'] }] }, { id: 'c2', title: 'C2', lessons: [{ id: 'l2', title: 'L2', concepts: ['b'] }] }] }));
+    const { errors } = buildContent(root);
+    expect(errors.join('\n')).toMatch(/b\.json.*chapter 'c1'.*'c2'/);
+  });
 });

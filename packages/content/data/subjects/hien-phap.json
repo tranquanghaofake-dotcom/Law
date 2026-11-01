@@ -4,11 +4,49 @@
   "short": "Hiến pháp",
   "chapters": [
     {
-      "id": "khai-quat",
-      "title": "Khái quát về Hiến pháp",
+      "id": "c2-khai-niem-dac-trung",
+      "title": "Chương 2. Khái niệm, đặc trưng Hiến pháp và lịch sử lập hiến",
       "lessons": [
-        { "id": "hp-1", "title": "Hiến pháp là gì", "concepts": ["hien-phap", "hieu-luc-phap-ly-toi-cao", "chu-quyen-nhan-dan", "nha-nuoc-phap-quyen-xhcn", "quyen-luc-nha-nuoc-thong-nhat"] },
-        { "id": "hp-2", "title": "Sửa đổi và bảo vệ Hiến pháp", "concepts": ["sua-doi-hien-phap", "trung-cau-y-dan-hien-phap", "bao-ve-hien-phap", "dang-cong-san-lanh-dao", "quyen-con-nguoi-quyen-cong-dan"] }
+        {
+          "id": "hp-1",
+          "title": "Hiến pháp: khái niệm, hiệu lực, sửa đổi và bảo vệ",
+          "concepts": [
+            "hien-phap",
+            "hieu-luc-phap-ly-toi-cao",
+            "sua-doi-hien-phap",
+            "trung-cau-y-dan-hien-phap",
+            "bao-ve-hien-phap"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c3-che-do-chinh-tri",
+      "title": "Chương 3. Chế độ chính trị",
+      "lessons": [
+        {
+          "id": "hp-2",
+          "title": "Chủ quyền Nhân dân, Đảng lãnh đạo, Nhà nước pháp quyền",
+          "concepts": [
+            "chu-quyen-nhan-dan",
+            "dang-cong-san-lanh-dao",
+            "nha-nuoc-phap-quyen-xhcn",
+            "quyen-luc-nha-nuoc-thong-nhat"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c4-quyen-con-nguoi",
+      "title": "Chương 4. Quyền con người, quyền và nghĩa vụ cơ bản của công dân",
+      "lessons": [
+        {
+          "id": "hp-3",
+          "title": "Quyền con người và quyền công dân",
+          "concepts": [
+            "quyen-con-nguoi-quyen-cong-dan"
+          ]
+        }
       ]
     }
   ]

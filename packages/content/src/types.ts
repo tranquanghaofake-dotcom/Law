@@ -51,11 +51,13 @@ export type Concept = {
   checked: string;
   confusables: string[];
   keywords: string[];
+  /** Ghi chú khi luật hiện hành đã khác giáo trình. */
+  note?: string;
   items: Item[];
 };
 
 export type Lesson = { id: string; title: string; concepts: string[] };
-export type Chapter = { id: string; title: string; lessons: Lesson[] };
+export type Chapter = { id: string; title: string; /** Mục Nâng cao: ngoài giáo trình. */ advanced?: boolean; lessons: Lesson[] };
 export type Subject = { id: string; title: string; short: string; chapters: Chapter[] };
 
 /** Bộ 10 câu kiểu v1: giữ nguyên định dạng cũ (basis/url), thêm concept tùy chọn. */

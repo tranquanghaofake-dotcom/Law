@@ -1,0 +1,35 @@
+{
+  "id": "chung-khoan",
+  "title": "Luật Chứng khoán",
+  "short": "Chứng khoán",
+  "chapters": [
+    {
+      "id": "khai-niem",
+      "title": "Chương I. Khái niệm về luật chứng khoán",
+      "lessons": [
+        {
+          "id": "ck1-1",
+          "title": "Chứng khoán và các loại chứng khoán cơ bản",
+          "concepts": [
+            "chung-khoan",
+            "co-phieu",
+            "trai-phieu",
+            "chung-chi-quy",
+            "quyen-mua-co-phan"
+          ]
+        },
+        {
+          "id": "ck1-2",
+          "title": "Chứng quyền, phái sinh, thị trường và Luật Chứng khoán",
+          "concepts": [
+            "chung-quyen",
+            "chung-khoan-phai-sinh",
+            "thi-truong-giao-dich-chung-khoan",
+            "pham-vi-dieu-chinh-luat-chung-khoan",
+            "nguyen-tac-hoat-dong-chung-khoan"
+          ]
+        }
+      ]
+    }
+  ]
+}

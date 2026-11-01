@@ -1,0 +1,121 @@
+{
+ "id": "co-phieu",
+ "subject": "chung-khoan",
+ "chapter": "khai-niem",
+ "term": "Cổ phiếu",
+ "definition": "Cổ phiếu là loại chứng khoán xác nhận quyền và lợi ích hợp pháp của người sở hữu đối với một phần vốn cổ phần của tổ chức phát hành.",
+ "plain": "Mua cổ phiếu là trở thành đồng chủ sở hữu (cổ đông) một phần công ty: có quyền theo phần vốn cổ phần, được chia cổ tức khi công ty có lãi và quyết định chia, nhưng không được công ty \"trả lại vốn\" theo hạn như chủ nợ.",
+ "example": "Bạn mua 100 cổ phiếu FPT: bạn là cổ đông FPT, có thể dự Đại hội đồng cổ đông và nhận cổ tức; nếu FPT thua lỗ, bạn không đòi FPT hoàn tiền gốc.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 2 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "trai-phieu",
+  "chung-khoan"
+ ],
+ "keywords": [
+  "vốn cổ phần",
+  "chủ sở hữu",
+  "tổ chức phát hành"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 2 Điều 4, cổ phiếu xác nhận quyền và lợi ích hợp pháp của người sở hữu đối với gì?",
+   "options": [
+    "Một phần vốn cổ phần của tổ chức phát hành",
+    "Một phần nợ của tổ chức phát hành",
+    "Một phần vốn góp của quỹ đầu tư chứng khoán",
+    "Tài sản cơ sở của hợp đồng tương lai"
+   ],
+   "answer": 0,
+   "explain": "Cổ phiếu ↔ vốn cổ phần; trái phiếu ↔ nợ; chứng chỉ quỹ ↔ vốn góp của quỹ.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người sở hữu cổ phiếu có tư cách gì đối với tổ chức phát hành?",
+   "options": [
+    "Chủ sở hữu một phần vốn (cổ đông)",
+    "Chủ nợ",
+    "Người được ủy thác quản lý quỹ",
+    "Bên bảo lãnh phát hành"
+   ],
+   "answer": 0,
+   "explain": "Cổ phiếu xác nhận quyền đối với một phần vốn cổ phần, tức là tư cách chủ sở hữu (cổ đông), khác trái phiếu (chủ nợ).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Cổ phiếu",
+   "right": "Trái phiếu",
+   "cases": [
+    {
+     "text": "Xác nhận quyền đối với một phần vốn cổ phần",
+     "answer": "left"
+    },
+    {
+     "text": "Xác nhận quyền đối với một phần nợ",
+     "answer": "right"
+    },
+    {
+     "text": "Người sở hữu là chủ nợ của tổ chức phát hành",
+     "answer": "right"
+    },
+    {
+     "text": "Người sở hữu có thể nhận cổ tức",
+     "answer": "left"
+    }
+   ],
+   "explain": "Cổ phiếu = sở hữu (vốn); trái phiếu = cho vay (nợ)."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Cổ phiếu là loại chứng khoán xác nhận quyền và lợi ích hợp pháp của người sở hữu đối với một phần {{vốn cổ phần}} của {{tổ chức phát hành}}.",
+   "bank_extra": [
+    "nợ",
+    "quỹ đầu tư chứng khoán"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Cổ phiếu xác nhận quyền đối với vốn; trái phiếu xác nhận quyền đối với {{nợ}}.",
+   "bank_extra": [
+    "vốn góp",
+    "tài sản cơ sở"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người sở hữu cổ phiếu là chủ nợ của công ty cổ phần phát hành.",
+   "answer": false,
+   "explain": "Sai. Cổ phiếu xác nhận quyền đối với một phần vốn cổ phần (tư cách cổ đông). Chủ nợ là người sở hữu trái phiếu (khoản 3 Điều 4)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Định nghĩa cổ phiếu theo Luật Chứng khoán 2019 và phân biệt với trái phiếu.",
+   "model": "Cổ phiếu là loại chứng khoán xác nhận quyền và lợi ích hợp pháp của người sở hữu đối với một phần vốn cổ phần của tổ chức phát hành (khoản 2 Điều 4). Khác trái phiếu: trái phiếu xác nhận quyền đối với một phần nợ, người sở hữu là chủ nợ.",
+   "keywords": [
+    "vốn cổ phần",
+    "tổ chức phát hành",
+    "nợ"
+   ]
+  }
+ ]
+}

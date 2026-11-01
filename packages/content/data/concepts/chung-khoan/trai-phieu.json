@@ -1,0 +1,127 @@
+{
+ "id": "trai-phieu",
+ "subject": "chung-khoan",
+ "chapter": "khai-niem",
+ "term": "Trái phiếu",
+ "definition": "Trái phiếu là loại chứng khoán xác nhận quyền và lợi ích hợp pháp của người sở hữu đối với một phần nợ của tổ chức phát hành.",
+ "plain": "Mua trái phiếu là cho tổ chức phát hành vay tiền. Người giữ trái phiếu là chủ nợ: được trả lãi và gốc theo điều kiện phát hành, không phải đồng chủ sở hữu.",
+ "example": "Một công ty bất động sản phát hành trái phiếu kỳ hạn 3 năm, lãi 10%/năm. Người mua là chủ nợ; đến hạn công ty phải trả gốc dù làm ăn lãi hay lỗ.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 3 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "co-phieu",
+  "chung-khoan"
+ ],
+ "keywords": [
+  "phần nợ",
+  "chủ nợ",
+  "tổ chức phát hành"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 3 Điều 4, trái phiếu xác nhận quyền và lợi ích hợp pháp của người sở hữu đối với gì?",
+   "options": [
+    "Một phần nợ của tổ chức phát hành",
+    "Một phần vốn cổ phần của tổ chức phát hành",
+    "Một phần vốn góp của quỹ",
+    "Quyền mua cổ phần mới"
+   ],
+   "answer": 0,
+   "explain": "Trái phiếu ↔ phần nợ.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quan hệ giữa người sở hữu trái phiếu và tổ chức phát hành là quan hệ gì?",
+   "options": [
+    "Chủ nợ – con nợ",
+    "Cổ đông – công ty",
+    "Nhà đầu tư – quỹ đầu tư",
+    "Môi giới – khách hàng"
+   ],
+   "answer": 0,
+   "explain": "Trái phiếu xác nhận quyền đối với một phần nợ, nên người sở hữu là chủ nợ.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Trái phiếu",
+   "right": "Chứng chỉ quỹ",
+   "cases": [
+    {
+     "text": "Xác nhận quyền đối với một phần nợ",
+     "answer": "left"
+    },
+    {
+     "text": "Xác nhận quyền sở hữu đối với một phần vốn góp của quỹ đầu tư chứng khoán",
+     "answer": "right"
+    },
+    {
+     "text": "Người sở hữu là chủ nợ",
+     "answer": "left"
+    }
+   ],
+   "explain": "Khoản 3 và khoản 4 Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Trái phiếu là loại chứng khoán xác nhận quyền và lợi ích hợp pháp của người sở hữu đối với một phần {{nợ}} của tổ chức phát hành.",
+   "bank_extra": [
+    "vốn cổ phần",
+    "vốn góp"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người sở hữu trái phiếu là {{chủ nợ}}, người sở hữu cổ phiếu là {{cổ đông}}.",
+   "bank_extra": [
+    "thành viên quỹ",
+    "người bảo lãnh"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Công ty X phát hành trái phiếu rồi thua lỗ nặng. Người sở hữu trái phiếu yêu cầu trả gốc đúng hạn; công ty trả lời \"trái chủ cũng phải chịu lỗ như cổ đông\". Nhận định nào đúng?",
+   "options": [
+    "Trái chủ là chủ nợ, có quyền đòi nợ theo điều kiện phát hành; việc công ty lỗ không biến họ thành cổ đông",
+    "Công ty đúng vì trái phiếu cũng là chứng khoán như cổ phiếu",
+    "Công ty đúng nếu được Đại hội đồng cổ đông đồng ý",
+    "Trái chủ chỉ được đòi lãi, không được đòi gốc"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 4: trái phiếu xác nhận quyền đối với một phần NỢ. Rủi ro kinh doanh do chủ sở hữu (cổ đông) gánh trước; trái chủ đòi nợ theo điều kiện phát hành.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Định nghĩa trái phiếu theo khoản 3 Điều 4 Luật Chứng khoán 2019.",
+   "model": "Trái phiếu là loại chứng khoán xác nhận quyền và lợi ích hợp pháp của người sở hữu đối với một phần nợ của tổ chức phát hành; người sở hữu là chủ nợ.",
+   "keywords": [
+    "phần nợ",
+    "tổ chức phát hành",
+    "chủ nợ"
+   ]
+  }
+ ]
+}

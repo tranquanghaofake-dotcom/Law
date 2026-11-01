@@ -1,0 +1,24 @@
+{
+  "id": "lich-su-nn-pl",
+  "title": "Lịch sử Nhà nước và Pháp luật Việt Nam",
+  "short": "LSNN&PL",
+  "chapters": [
+    {
+      "id": "c5-co-dai",
+      "title": "Chương 5. Nhà nước và pháp luật Việt Nam thời kì cổ đại (từ nguồn gốc đến thế kỉ X)",
+      "lessons": [
+        {
+          "id": "ls5-1",
+          "title": "Nhà nước và pháp luật Văn Lang – Âu Lạc",
+          "concepts": [
+            "dieu-kien-ra-doi-nha-nuoc-van-lang",
+            "nha-nuoc-van-lang",
+            "lac-hau-lac-tuong-bo-chinh",
+            "nha-nuoc-au-lac",
+            "phap-luat-van-lang-au-lac"
+          ]
+        }
+      ]
+    }
+  ]
+}
