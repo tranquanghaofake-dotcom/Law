@@ -1,0 +1,117 @@
+{
+ "id": "minh-mang-cai-cach-tinh",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c6-trung-dai",
+ "term": "Cải cách hành chính thời Minh Mạng: chia tỉnh",
+ "definition": "Trong các năm 1831–1832, vua Minh Mạng tiến hành cải cách hành chính, bỏ Bắc thành và Gia Định thành, chia cả nước thành các tỉnh (khoảng 30 tỉnh và phủ Thừa Thiên), đứng đầu tỉnh có Tổng đốc, Tuần phủ, giúp việc có Bố chánh và Án sát.",
+ "plain": "Trước cải cách, thời Gia Long, miền Bắc thuộc Bắc thành, miền Nam thuộc Gia Định thành, do Tổng trấn có quyền lớn cai quản. Minh Mạng bỏ hai \"thành\" này để tập trung quyền lực về trung ương, chia cả nước thành các TỈNH. Theo cách trình bày phổ biến: 30 tỉnh và phủ Thừa Thiên (kinh đô). Bộ máy tỉnh: TỔNG ĐỐC (thường cai quản 2–3 tỉnh), TUẦN PHỦ, BỐ CHÁNH (tài chính, hành chính), ÁN SÁT (hình án). Dưới tỉnh có phủ, huyện, tổng, xã. Đơn vị \"tỉnh\" từ đây trở thành đơn vị hành chính cấp cao nhất ở địa phương, kéo dài đến ngày nay.",
+ "example": "Chuỗi ôn tập hành chính địa phương: 9 quận (thuộc Hán) → 10 đạo (Đinh) → 24 lộ (Lý, 1010) → 12 lộ (Trần, 1242) → 13 đạo thừa tuyên (Lê, 1466) → các tỉnh (Minh Mạng, 1831–1832) → tỉnh và cấp dưới tỉnh (Hiến pháp sửa đổi 2025).",
+ "source": {
+  "kind": "textbook",
+  "cite": "Giáo trình Lịch sử nhà nước và pháp luật Việt Nam, Trường ĐH Luật Hà Nội 2025, Chương 6 — tóm lược quan điểm phổ biến, chưa đối chiếu nguyên văn"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "bo-may-nha-nguyen",
+  "thua-tuyen-1466",
+  "muoi-hai-lo-1242"
+ ],
+ "keywords": [
+  "1831–1832",
+  "bỏ Bắc thành, Gia Định thành",
+  "chia tỉnh",
+  "Tổng đốc, Tuần phủ",
+  "Bố chánh, Án sát"
+ ],
+ "note": "Thẻ dạng tóm lược giáo trình, chưa có trích nguyên văn Hoàng Việt luật lệ hay Đại Nam thực lục; cần đối chiếu sách in trước khi dùng làm tài liệu chính.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Cải cách hành chính chia cả nước thành các tỉnh được tiến hành dưới triều vua nào?",
+   "options": [
+    "Minh Mạng",
+    "Gia Long",
+    "Tự Đức",
+    "Lê Thánh Tông"
+   ],
+   "answer": 0,
+   "explain": "Năm 1831–1832, triều Minh Mạng.",
+   "source": {
+    "kind": "textbook",
+    "cite": "Giáo trình Lịch sử nhà nước và pháp luật Việt Nam, Trường ĐH Luật Hà Nội 2025, Chương 6 — tóm lược quan điểm phổ biến, chưa đối chiếu nguyên văn"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chức quan nào phụ trách hình án ở tỉnh thời Minh Mạng?",
+   "options": [
+    "Án sát",
+    "Bố chánh",
+    "Tổng đốc",
+    "Tri huyện"
+   ],
+   "answer": 0,
+   "explain": "Bố chánh phụ trách tài chính, hành chính; Án sát phụ trách hình án.",
+   "source": {
+    "kind": "textbook",
+    "cite": "Giáo trình Lịch sử nhà nước và pháp luật Việt Nam, Trường ĐH Luật Hà Nội 2025, Chương 6 — tóm lược quan điểm phổ biến, chưa đối chiếu nguyên văn"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Bố chánh",
+   "right": "Án sát",
+   "cases": [
+    {
+     "text": "Phụ trách tài chính, hành chính của tỉnh",
+     "answer": "left"
+    },
+    {
+     "text": "Phụ trách hình án của tỉnh",
+     "answer": "right"
+    }
+   ],
+   "explain": "Theo trình bày phổ biến của giáo trình."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Năm 1831–1832, vua {{Minh Mạng}} bỏ Bắc thành và Gia Định thành, chia cả nước thành các {{tỉnh}}.",
+   "bank_extra": [
+    "Gia Long",
+    "đạo thừa tuyên"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đứng đầu tỉnh có {{Tổng đốc}}, Tuần phủ; giúp việc có Bố chánh và Án sát.",
+   "bank_extra": [
+    "Tri phủ",
+    "An phủ sứ"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mục đích của việc bỏ Bắc thành, Gia Định thành là tập trung quyền lực về trung ương.",
+   "answer": true,
+   "explain": "Đúng theo đánh giá phổ biến."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày cải cách hành chính thời Minh Mạng.",
+   "model": "Năm 1831–1832 bỏ Bắc thành, Gia Định thành (do Tổng trấn cai quản), chia cả nước thành các tỉnh (khoảng 30 tỉnh và phủ Thừa Thiên); đứng đầu có Tổng đốc, Tuần phủ, giúp việc có Bố chánh (tài chính), Án sát (hình án); dưới tỉnh có phủ, huyện, tổng, xã; mục đích tập trung quyền lực về trung ương.",
+   "keywords": [
+    "Minh Mạng",
+    "tỉnh",
+    "Tổng đốc",
+    "Án sát"
+   ]
+  }
+ ]
+}

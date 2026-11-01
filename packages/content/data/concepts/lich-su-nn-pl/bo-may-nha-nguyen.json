@@ -1,0 +1,128 @@
+{
+ "id": "bo-may-nha-nguyen",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c6-trung-dai",
+ "term": "Bộ máy nhà nước trung ương thời Nguyễn",
+ "definition": "Nhà nước thời Nguyễn là nhà nước quân chủ chuyên chế tập quyền cao độ: vua nắm mọi quyền lực; giúp việc có Lục bộ, Nội các, Cơ mật viện và các cơ quan chuyên môn; nhà Nguyễn không đặt chức tể tướng.",
+ "plain": "Theo cách trình bày phổ biến: vua nắm toàn bộ quyền lập pháp, hành pháp, tư pháp. Trung ương có LỤC BỘ (Lại, Hộ, Lễ, Binh, Hình, Công) kế thừa từ thời Lê; thời Minh Mạng lập NỘI CÁC (văn phòng của vua) và CƠ MẬT VIỆN (cơ quan tư vấn các việc quan trọng, quân sự); có Đô sát viện giám sát quan lại. Câu nói dân gian \"tứ bất\" (không đặt tể tướng, không lập hoàng hậu, không lấy trạng nguyên, không phong vương cho người ngoài hoàng tộc) thường được nhắc để minh họa mức tập quyền. Đây là cách nói truyền miệng, không phải một văn bản luật, và có ngoại lệ trên thực tế. Năm thành lập cụ thể của Nội các, Cơ mật viện cần đối chiếu sách.",
+ "example": "So sánh với thời Lê Thánh Tông: cả hai đều có Lục bộ và cơ quan giám sát (thời Lê có Lục khoa, Ngự sử đài; thời Nguyễn có Đô sát viện). Thời Nguyễn thêm Nội các, Cơ mật viện giúp vua trực tiếp xử lý công việc.",
+ "source": {
+  "kind": "textbook",
+  "cite": "Giáo trình Lịch sử nhà nước và pháp luật Việt Nam, Trường ĐH Luật Hà Nội 2025, Chương 6 — tóm lược quan điểm phổ biến, chưa đối chiếu nguyên văn"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hoang-viet-luat-le",
+  "luc-bo-1466",
+  "luc-khoa-giam-sat",
+  "minh-mang-cai-cach-tinh"
+ ],
+ "keywords": [
+  "quân chủ chuyên chế tập quyền",
+  "Lục bộ",
+  "Nội các, Cơ mật viện",
+  "Đô sát viện",
+  "không đặt tể tướng"
+ ],
+ "note": "Thẻ dạng tóm lược giáo trình, chưa có trích nguyên văn Hoàng Việt luật lệ hay Đại Nam thực lục; cần đối chiếu sách in trước khi dùng làm tài liệu chính.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Cơ quan nào giúp vua bàn các việc quan trọng, quân sự thời Minh Mạng?",
+   "options": [
+    "Cơ mật viện",
+    "Lục khoa",
+    "Hội đồng nhân dân",
+    "Thượng thư sảnh"
+   ],
+   "answer": 0,
+   "explain": "Theo trình bày phổ biến của giáo trình.",
+   "source": {
+    "kind": "textbook",
+    "cite": "Giáo trình Lịch sử nhà nước và pháp luật Việt Nam, Trường ĐH Luật Hà Nội 2025, Chương 6 — tóm lược quan điểm phổ biến, chưa đối chiếu nguyên văn"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Cơ quan giám sát quan lại thời Nguyễn thường được nhắc là gì?",
+   "options": [
+    "Đô sát viện",
+    "Lục khoa",
+    "Hàn lâm viện",
+    "Quốc tử giám"
+   ],
+   "answer": 0,
+   "explain": "Lục khoa là của thời Lê Thánh Tông.",
+   "source": {
+    "kind": "textbook",
+    "cite": "Giáo trình Lịch sử nhà nước và pháp luật Việt Nam, Trường ĐH Luật Hà Nội 2025, Chương 6 — tóm lược quan điểm phổ biến, chưa đối chiếu nguyên văn"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thời Lê Thánh Tông",
+   "right": "Thời Nguyễn",
+   "cases": [
+    {
+     "text": "Lục khoa giám sát sáu bộ",
+     "answer": "left"
+    },
+    {
+     "text": "Cơ mật viện tư vấn việc quan trọng",
+     "answer": "right"
+    },
+    {
+     "text": "Nội các giúp vua về văn thư",
+     "answer": "right"
+    }
+   ],
+   "explain": "Theo trình bày phổ biến của giáo trình."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhà nước thời Nguyễn là nhà nước quân chủ chuyên chế {{tập quyền}} cao độ; trung ương có {{Lục bộ}}, Nội các, Cơ mật viện.",
+   "bank_extra": [
+    "phân quyền",
+    "Lục khoa"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhà Nguyễn không đặt chức {{tể tướng}}, vua trực tiếp điều hành các bộ.",
+   "bank_extra": [
+    "thượng thư",
+    "tri phủ"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "\"Tứ bất\" của nhà Nguyễn nên được hiểu thế nào khi làm bài?",
+   "options": [
+    "Là cách nói truyền miệng minh họa mức tập quyền, không phải văn bản luật; nên dùng thận trọng",
+    "Là bốn điều luật trong Hoàng Việt luật lệ",
+    "Là bốn cơ quan của triều đình",
+    "Là bốn bậc của hình phạt"
+   ],
+   "answer": 0,
+   "explain": "Phân biệt nguồn pháp luật với câu nói dân gian."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày đặc điểm bộ máy nhà nước trung ương thời Nguyễn.",
+   "model": "Quân chủ chuyên chế tập quyền cao độ, vua nắm mọi quyền; không đặt tể tướng; Lục bộ kế thừa thời Lê; Nội các, Cơ mật viện giúp vua; Đô sát viện giám sát quan lại; câu \"tứ bất\" là cách nói truyền miệng minh họa mức tập quyền.",
+   "keywords": [
+    "tập quyền",
+    "Lục bộ",
+    "Cơ mật viện",
+    "tể tướng"
+   ]
+  }
+ ]
+}

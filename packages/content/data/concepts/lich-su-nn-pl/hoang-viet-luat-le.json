@@ -1,0 +1,121 @@
+{
+ "id": "hoang-viet-luat-le",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c6-trung-dai",
+ "term": "Hoàng Việt luật lệ (Luật Gia Long, 1815)",
+ "definition": "Hoàng Việt luật lệ (còn gọi là Luật Gia Long) là bộ luật chính của nhà Nguyễn, ban hành năm 1815 dưới triều Gia Long, gồm 398 điều, được soạn chủ yếu dựa trên Đại Thanh luật lệ của nhà Thanh (Trung Quốc).",
+ "plain": "Bộ luật do Tổng tài Nguyễn Văn Thành phụ trách biên soạn, ban hành năm 1815. Kết cấu theo mô hình luật nhà Thanh: Danh lệ (quy định chung) và các luật theo sáu bộ (Lại, Hộ, Lễ, Binh, Hình, Công). Giữ các chế định truyền thống: ngũ hình (xuy, trượng, đồ, lưu, tử), thập ác, bát nghị. Đánh giá phổ biến: kỹ thuật lập pháp chặt chẽ, nhưng sao chép nhiều từ luật Thanh, kém tính dân tộc và kém tiến bộ hơn Quốc triều hình luật, nhất là về quyền của phụ nữ và quan hệ dân sự.",
+ "example": "Câu hỏi thi hay gặp: \"So sánh Quốc triều hình luật và Hoàng Việt luật lệ\". Trục so sánh nên dùng: nguồn ảnh hưởng (Đường, Minh luật hay Thanh luật), kết cấu, chế định thập ác, bát nghị, quyền phụ nữ, chế định dân sự (ruộng đất, thừa kế).",
+ "source": {
+  "kind": "textbook",
+  "cite": "Giáo trình Lịch sử nhà nước và pháp luật Việt Nam, Trường ĐH Luật Hà Nội 2025, Chương 6 — tóm lược quan điểm phổ biến, chưa đối chiếu nguyên văn"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quoc-trieu-hinh-luat-vs-hoang-viet",
+  "bo-may-nha-nguyen",
+  "ngu-hinh-qthl"
+ ],
+ "keywords": [
+  "1815",
+  "Gia Long",
+  "398 điều",
+  "Đại Thanh luật lệ",
+  "Nguyễn Văn Thành"
+ ],
+ "note": "Thẻ dạng tóm lược giáo trình, chưa có trích nguyên văn Hoàng Việt luật lệ hay Đại Nam thực lục; cần đối chiếu sách in trước khi dùng làm tài liệu chính.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hoàng Việt luật lệ được ban hành dưới triều vua nào?",
+   "options": [
+    "Gia Long",
+    "Minh Mạng",
+    "Tự Đức",
+    "Lê Thánh Tông"
+   ],
+   "answer": 0,
+   "explain": "Ban hành năm 1815, triều Gia Long, nên còn gọi là Luật Gia Long.",
+   "source": {
+    "kind": "textbook",
+    "cite": "Giáo trình Lịch sử nhà nước và pháp luật Việt Nam, Trường ĐH Luật Hà Nội 2025, Chương 6 — tóm lược quan điểm phổ biến, chưa đối chiếu nguyên văn"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hoàng Việt luật lệ chịu ảnh hưởng chủ yếu của bộ luật nào?",
+   "options": [
+    "Đại Thanh luật lệ",
+    "Đường luật",
+    "Bộ luật Napoléon",
+    "Quốc triều hình luật"
+   ],
+   "answer": 0,
+   "explain": "Quan điểm phổ biến: soạn dựa chủ yếu trên luật nhà Thanh.",
+   "source": {
+    "kind": "textbook",
+    "cite": "Giáo trình Lịch sử nhà nước và pháp luật Việt Nam, Trường ĐH Luật Hà Nội 2025, Chương 6 — tóm lược quan điểm phổ biến, chưa đối chiếu nguyên văn"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quốc triều hình luật",
+   "right": "Hoàng Việt luật lệ",
+   "cases": [
+    {
+     "text": "Gắn với thời Hậu Lê, niên hiệu Hồng Đức",
+     "answer": "left"
+    },
+    {
+     "text": "Ban hành năm 1815, triều Gia Long",
+     "answer": "right"
+    },
+    {
+     "text": "Chịu ảnh hưởng chủ yếu luật nhà Thanh",
+     "answer": "right"
+    }
+   ],
+   "explain": "Thường được so sánh trong giáo trình."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hoàng Việt luật lệ ban hành năm {{1815}}, gồm {{398}} điều.",
+   "bank_extra": [
+    "1483",
+    "722"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hoàng Việt luật lệ còn được gọi là Luật {{Gia Long}}.",
+   "bank_extra": [
+    "Hồng Đức",
+    "Minh Mạng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hoàng Việt luật lệ vẫn giữ các chế định ngũ hình, thập ác và bát nghị.",
+   "answer": true,
+   "explain": "Đúng theo trình bày phổ biến của giáo trình."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái quát về Hoàng Việt luật lệ.",
+   "model": "Bộ luật chính của nhà Nguyễn, ban hành năm 1815 triều Gia Long (Luật Gia Long), Nguyễn Văn Thành làm Tổng tài; gồm 398 điều; soạn dựa chủ yếu vào Đại Thanh luật lệ; giữ ngũ hình, thập ác, bát nghị; kỹ thuật chặt chẽ nhưng sao chép nhiều, kém tiến bộ hơn Quốc triều hình luật về quyền phụ nữ, dân sự.",
+   "keywords": [
+    "1815",
+    "Gia Long",
+    "398 điều",
+    "Đại Thanh luật lệ"
+   ]
+  }
+ ]
+}

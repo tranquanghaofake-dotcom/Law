@@ -1,0 +1,126 @@
+{
+ "id": "quoc-trieu-hinh-luat-vs-hoang-viet",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c6-trung-dai",
+ "term": "So sánh Quốc triều hình luật và Hoàng Việt luật lệ",
+ "definition": "Theo đánh giá phổ biến, Quốc triều hình luật tiếp thu luật Trung Hoa (Đường luật) có chọn lọc và có nhiều quy định mang tính dân tộc, bảo vệ quyền của phụ nữ; còn Hoàng Việt luật lệ sao chép nhiều từ Đại Thanh luật lệ, ít quy định riêng phù hợp với tập quán Việt Nam.",
+ "plain": "Giống nhau: đều là bộ luật tổng hợp (hình sự là chủ yếu, có cả dân sự, hôn nhân, tố tụng); đều có ngũ hình, thập ác, bát nghị; đều bảo vệ vương quyền và lễ giáo Nho giáo. Khác nhau (theo cách trình bày phổ biến): (1) Nguồn ảnh hưởng: Quốc triều hình luật chủ yếu từ Đường luật, có sáng tạo; Hoàng Việt luật lệ chủ yếu từ Thanh luật. (2) Quyền phụ nữ: Quốc triều hình luật cho con gái thừa kế, có thể giữ hương hỏa (Điều 388, 391), vợ có tài sản riêng; Hoàng Việt luật lệ hạn chế hơn. (3) Dân sự: Quốc triều hình luật có nhiều điều về điền sản, hương hỏa; Hoàng Việt luật lệ ít hơn.",
+ "example": "Khi viết bài so sánh, nên dẫn nguyên văn Điều 388, 391 Quốc triều hình luật (đã có trong bộ thẻ) để minh họa \"quyền của con gái\", thay vì chỉ nêu nhận định chung.",
+ "source": {
+  "kind": "textbook",
+  "cite": "Giáo trình Lịch sử nhà nước và pháp luật Việt Nam, Trường ĐH Luật Hà Nội 2025, Chương 6 — tóm lược quan điểm phổ biến, chưa đối chiếu nguyên văn"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hoang-viet-luat-le",
+  "huong-hoa-qthl",
+  "bao-ve-nguoi-yeu-the-qthl"
+ ],
+ "keywords": [
+  "nguồn ảnh hưởng: Đường luật – Thanh luật",
+  "quyền phụ nữ",
+  "chế định dân sự",
+  "giống nhau: ngũ hình, thập ác, bát nghị"
+ ],
+ "note": "Thẻ dạng tóm lược giáo trình, chưa có trích nguyên văn Hoàng Việt luật lệ hay Đại Nam thực lục; cần đối chiếu sách in trước khi dùng làm tài liệu chính.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo đánh giá phổ biến, bộ luật nào bảo vệ quyền phụ nữ tốt hơn?",
+   "options": [
+    "Quốc triều hình luật",
+    "Hoàng Việt luật lệ",
+    "Hai bộ luật như nhau",
+    "Không bộ luật nào có quy định về phụ nữ"
+   ],
+   "answer": 0,
+   "explain": "Quốc triều hình luật có quy định con gái thừa kế, giữ hương hỏa (Điều 388, 391).",
+   "source": {
+    "kind": "textbook",
+    "cite": "Giáo trình Lịch sử nhà nước và pháp luật Việt Nam, Trường ĐH Luật Hà Nội 2025, Chương 6 — tóm lược quan điểm phổ biến, chưa đối chiếu nguyên văn"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Điểm giống nhau giữa Quốc triều hình luật và Hoàng Việt luật lệ là gì?",
+   "options": [
+    "Đều có ngũ hình, thập ác, bát nghị",
+    "Đều do nhà Nguyễn ban hành",
+    "Đều chịu ảnh hưởng chủ yếu của luật nhà Thanh",
+    "Đều có 722 điều"
+   ],
+   "answer": 0,
+   "explain": "Theo trình bày phổ biến của giáo trình.",
+   "source": {
+    "kind": "textbook",
+    "cite": "Giáo trình Lịch sử nhà nước và pháp luật Việt Nam, Trường ĐH Luật Hà Nội 2025, Chương 6 — tóm lược quan điểm phổ biến, chưa đối chiếu nguyên văn"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quốc triều hình luật",
+   "right": "Hoàng Việt luật lệ",
+   "cases": [
+    {
+     "text": "Chịu ảnh hưởng chủ yếu Đường luật, có nhiều sáng tạo",
+     "answer": "left"
+    },
+    {
+     "text": "Chịu ảnh hưởng chủ yếu Thanh luật, sao chép nhiều",
+     "answer": "right"
+    },
+    {
+     "text": "Cho con gái trưởng giữ hương hỏa khi không có con trai trưởng",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 391 Quốc triều hình luật; đánh giá phổ biến của giáo trình."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quốc triều hình luật tiếp thu chủ yếu {{Đường luật}}; Hoàng Việt luật lệ tiếp thu chủ yếu {{Đại Thanh luật lệ}}.",
+   "bank_extra": [
+    "luật La Mã",
+    "Bộ luật Napoléon"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Cả hai bộ luật đều có chế định {{thập ác}}, tức mười tội nặng nhất.",
+   "bank_extra": [
+    "bát nghị",
+    "ngũ hình"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Một bạn viết: \"Hoàng Việt luật lệ ra đời sau nên tiến bộ hơn Quốc triều hình luật.\" Nhận xét nào phù hợp nhất với quan điểm phổ biến?",
+   "options": [
+    "Không chính xác: Hoàng Việt luật lệ có kỹ thuật chặt chẽ nhưng sao chép nhiều từ luật Thanh, kém tiến bộ hơn về quyền phụ nữ và dân sự",
+    "Đúng hoàn toàn vì luật ra đời sau luôn tiến bộ hơn",
+    "Đúng vì Hoàng Việt luật lệ có nhiều điều hơn",
+    "Không so sánh được"
+   ],
+   "answer": 0,
+   "explain": "Ra đời sau không đồng nghĩa với tiến bộ hơn; cần dựa vào nội dung chế định."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "So sánh Quốc triều hình luật và Hoàng Việt luật lệ.",
+   "model": "Giống: bộ luật tổng hợp, có ngũ hình, thập ác, bát nghị, bảo vệ vương quyền, lễ giáo Nho giáo. Khác: Quốc triều hình luật tiếp thu Đường luật có sáng tạo, nhiều quy định dân tộc, bảo vệ quyền phụ nữ (thừa kế, hương hỏa), nhiều chế định điền sản; Hoàng Việt luật lệ sao chép nhiều Thanh luật, hạn chế hơn về quyền phụ nữ và dân sự.",
+   "keywords": [
+    "Đường luật",
+    "Thanh luật",
+    "quyền phụ nữ",
+    "thập ác"
+   ]
+  }
+ ]
+}
