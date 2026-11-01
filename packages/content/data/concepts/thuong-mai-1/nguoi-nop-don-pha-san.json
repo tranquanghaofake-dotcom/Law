@@ -1,0 +1,121 @@
+{
+ "id": "nguoi-nop-don-pha-san",
+ "subject": "thuong-mai-1",
+ "chapter": "v13",
+ "term": "Người có quyền, nghĩa vụ nộp đơn yêu cầu mở thủ tục phá sản",
+ "definition": "Người có quyền nộp đơn yêu cầu áp dụng thủ tục phá sản khi doanh nghiệp, hợp tác xã mất khả năng thanh toán bao gồm: a) Chủ nợ không có bảo đảm, chủ nợ có bảo đảm một phần; (…) Những người sau đây có nghĩa vụ nộp đơn yêu cầu áp dụng thủ tục phá sản khi doanh nghiệp, hợp tác xã mất khả năng thanh toán, trừ trường hợp đã nộp đơn yêu cầu áp dụng thủ tục phục hồi: a) Người đại diện theo pháp luật của doanh nghiệp, hợp tác xã; (…) Trong thời hạn 30 ngày, kể từ ngày thụ lý đơn yêu cầu áp dụng thủ tục phá sản, Thẩm phán phải ra quyết định mở hoặc không mở thủ tục phá sản.",
+ "plain": "Có QUYỀN: chủ nợ không có bảo đảm và có bảo đảm một phần; người lao động, công đoàn (khi quá 06 tháng không được trả lương, khoản nợ đến hạn); cổ đông từ 20% cổ phần phổ thông; thành viên từ 65% vốn điều lệ công ty TNHH hai thành viên trở lên; thành viên HTX; cơ quan BHXH (khoản 4). Có NGHĨA VỤ: người đại diện theo pháp luật, HĐQT, HĐTV, Đại hội thành viên HTX, chủ DNTN, chủ sở hữu công ty TNHH một thành viên; cơ quan quản lý thuế (khoản 3, hiệu lực 01/7/2026). Chủ nợ có bảo đảm (toàn bộ) KHÔNG có trong danh sách. Thẩm phán quyết định mở/không mở trong 30 ngày kể từ thụ lý (Điều 41).",
+ "example": "Người lao động bị nợ lương 7 tháng: người lao động, công đoàn có quyền nộp đơn yêu cầu mở thủ tục phá sản doanh nghiệp (điểm b khoản 1 Điều 38).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, 2 Điều 38; khoản 1 Điều 41 Luật Phục hồi, phá sản 2025 (142/2025/QH15)",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-Phuc-hoi-pha-san-2025-so-142-2025-QH15-675210.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "thu-tuc-phuc-hoi",
+  "mat-kha-nang-thanh-toan",
+  "hoi-nghi-chu-no"
+ ],
+ "keywords": [
+  "chủ nợ không có bảo đảm",
+  "người lao động, công đoàn",
+  "nghĩa vụ nộp đơn",
+  "30 ngày quyết định mở"
+ ],
+ "note": "Luật Phục hồi, phá sản 142/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Phá sản 51/2014/QH13 (khoản 2 Điều 87); riêng khoản 3 Điều 38 (cơ quan quản lý thuế nộp đơn) có hiệu lực từ 01/7/2026.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chủ thể nào KHÔNG có quyền nộp đơn yêu cầu mở thủ tục phá sản theo khoản 1 Điều 38?",
+   "options": [
+    "Chủ nợ có bảo đảm toàn bộ",
+    "Chủ nợ không có bảo đảm",
+    "Chủ nợ có bảo đảm một phần",
+    "Người lao động, công đoàn"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 38 chỉ nêu chủ nợ không có bảo đảm và có bảo đảm một phần.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 38 Luật Phục hồi, phá sản 2025 (142/2025/QH15)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thẩm phán phải ra quyết định mở hoặc không mở thủ tục phá sản trong thời hạn bao lâu kể từ ngày thụ lý đơn?",
+   "options": [
+    "30 ngày",
+    "15 ngày",
+    "60 ngày",
+    "03 tháng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 41.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 41 Luật Phục hồi, phá sản 2025 (142/2025/QH15)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Có quyền nộp đơn",
+   "right": "Có nghĩa vụ nộp đơn",
+   "cases": [
+    {
+     "text": "Chủ nợ không có bảo đảm",
+     "answer": "left"
+    },
+    {
+     "text": "Người đại diện theo pháp luật của doanh nghiệp",
+     "answer": "right"
+    },
+    {
+     "text": "Chủ doanh nghiệp tư nhân",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1, 2 Điều 38."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người có quyền nộp đơn yêu cầu áp dụng thủ tục phá sản gồm chủ nợ {{không có bảo đảm}}, chủ nợ có bảo đảm {{một phần}}.",
+   "bank_extra": [
+    "có bảo đảm",
+    "toàn bộ"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Trong thời hạn {{30}} ngày, kể từ ngày thụ lý đơn, {{Thẩm phán}} phải ra quyết định mở hoặc không mở thủ tục phá sản.",
+   "bank_extra": [
+    "15",
+    "Chánh án"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người đại diện theo pháp luật của doanh nghiệp mất khả năng thanh toán chỉ có quyền, không có nghĩa vụ nộp đơn yêu cầu mở thủ tục phá sản.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 38: có nghĩa vụ, trừ khi đã nộp đơn yêu cầu thủ tục phục hồi."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu chủ thể có quyền và có nghĩa vụ nộp đơn yêu cầu mở thủ tục phá sản.",
+   "model": "Quyền: chủ nợ không có bảo đảm, có bảo đảm một phần; người lao động, công đoàn; cổ đông từ 20% cổ phần phổ thông; thành viên từ 65% vốn điều lệ; thành viên HTX (khoản 1 Điều 38). Nghĩa vụ: người đại diện theo pháp luật, HĐQT, HĐTV, Đại hội thành viên HTX, chủ DNTN, chủ sở hữu công ty TNHH một thành viên (khoản 2).",
+   "keywords": [
+    "chủ nợ không có bảo đảm",
+    "người lao động",
+    "nghĩa vụ",
+    "người đại diện theo pháp luật"
+   ]
+  }
+ ]
+}

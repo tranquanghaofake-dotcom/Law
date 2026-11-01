@@ -1,0 +1,117 @@
+{
+ "id": "thu-tuc-phuc-hoi",
+ "subject": "thuong-mai-1",
+ "chapter": "v13",
+ "term": "Thủ tục phục hồi và phương án phục hồi",
+ "definition": "Người có quyền nộp đơn yêu cầu áp dụng thủ tục phục hồi khi doanh nghiệp, hợp tác xã có nguy cơ mất hoặc mất khả năng thanh toán bao gồm: a) Người đại diện theo pháp luật của doanh nghiệp, hợp tác xã; (…) c) Đại hội thành viên của hợp tác xã; d) Chủ doanh nghiệp tư nhân, chủ sở hữu công ty trách nhiệm hữu hạn một thành viên. (…) Phương án phục hồi hoạt động kinh doanh của doanh nghiệp, hợp tác xã phải nêu rõ biện pháp để phục hồi hoạt động kinh doanh không trái quy định của pháp luật; điều kiện, thời hạn và kế hoạch thanh toán khoản nợ.",
+ "plain": "Chỉ \"NỘI BỘ\" doanh nghiệp mới được yêu cầu PHỤC HỒI (người đại diện theo pháp luật, HĐQT, HĐTV, Đại hội thành viên HTX, chủ DNTN, chủ sở hữu công ty TNHH một thành viên) — chủ nợ không có quyền này. Áp dụng cả khi mới có NGUY CƠ mất khả năng thanh toán. Phương án phục hồi trình HỘI NGHỊ CHỦ NỢ (Điều 33) và kế hoạch trả nợ ưu tiên: chi phí phục hồi → nợ lương, bảo hiểm, quyền lợi người lao động → nợ phát sinh để phục hồi → nợ có bảo đảm → nợ khác (khoản 2 Điều 28).",
+ "example": "Công ty TNHH một thành viên khó khăn vì đơn hàng sụt giảm, nợ sắp đến hạn: chủ sở hữu công ty nộp đơn yêu cầu thủ tục phục hồi kèm phương án giãn nợ, bán bớt tài sản không cần thiết.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 24; khoản 1 Điều 28 Luật Phục hồi, phá sản 2025 (142/2025/QH15)",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-Phuc-hoi-pha-san-2025-so-142-2025-QH15-675210.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nguyen-tac-phuc-hoi-pha-san",
+  "nguoi-nop-don-pha-san",
+  "hoi-nghi-chu-no"
+ ],
+ "keywords": [
+  "nguy cơ mất hoặc mất khả năng thanh toán",
+  "người đại diện theo pháp luật",
+  "phương án phục hồi",
+  "kế hoạch thanh toán khoản nợ"
+ ],
+ "note": "Luật Phục hồi, phá sản 142/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Phá sản 51/2014/QH13 (khoản 2 Điều 87); riêng khoản 3 Điều 38 (cơ quan quản lý thuế nộp đơn) có hiệu lực từ 01/7/2026.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai có quyền nộp đơn yêu cầu áp dụng thủ tục phục hồi?",
+   "options": [
+    "Người đại diện theo pháp luật của doanh nghiệp",
+    "Chủ nợ không có bảo đảm",
+    "Cơ quan quản lý thuế",
+    "Người lao động"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 24.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 24 Luật Phục hồi, phá sản 2025 (142/2025/QH15)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thủ tục phục hồi có thể được yêu cầu khi doanh nghiệp ở tình trạng nào?",
+   "options": [
+    "Có nguy cơ mất hoặc mất khả năng thanh toán",
+    "Chỉ khi đã bị tuyên bố phá sản",
+    "Chỉ khi đã giải thể",
+    "Chỉ khi lỗ 3 năm liên tiếp"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 24.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 24 Luật Phục hồi, phá sản 2025 (142/2025/QH15)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quyền yêu cầu thủ tục phục hồi",
+   "right": "Chỉ có quyền yêu cầu thủ tục phá sản",
+   "cases": [
+    {
+     "text": "Chủ doanh nghiệp tư nhân",
+     "answer": "left"
+    },
+    {
+     "text": "Chủ nợ không có bảo đảm",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 24, 38."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người có quyền nộp đơn yêu cầu áp dụng thủ tục phục hồi khi doanh nghiệp, hợp tác xã có {{nguy cơ mất}} hoặc mất khả năng thanh toán.",
+   "bank_extra": [
+    "đã bị tuyên bố phá sản",
+    "đang giải thể"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Phương án phục hồi phải nêu rõ biện pháp để phục hồi hoạt động kinh doanh không trái quy định của pháp luật; điều kiện, thời hạn và {{kế hoạch thanh toán}} khoản nợ.",
+   "bank_extra": [
+    "kế hoạch giải thể",
+    "phương án chia lợi nhuận"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chủ nợ có bảo đảm có quyền nộp đơn yêu cầu áp dụng thủ tục phục hồi đối với doanh nghiệp con nợ.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 24 chỉ liệt kê người đại diện theo pháp luật, cơ quan quản lý và chủ sở hữu doanh nghiệp, hợp tác xã."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày người có quyền yêu cầu thủ tục phục hồi và nội dung phương án phục hồi.",
+   "model": "Người đại diện theo pháp luật; HĐQT, HĐTV; Đại hội thành viên HTX; chủ DNTN, chủ sở hữu công ty TNHH một thành viên khi có nguy cơ mất hoặc mất khả năng thanh toán (khoản 1 Điều 24). Phương án nêu biện pháp phục hồi, điều kiện, thời hạn, kế hoạch thanh toán nợ (khoản 1 Điều 28).",
+   "keywords": [
+    "nguy cơ",
+    "người đại diện theo pháp luật",
+    "phương án",
+    "kế hoạch thanh toán"
+   ]
+  }
+ ]
+}

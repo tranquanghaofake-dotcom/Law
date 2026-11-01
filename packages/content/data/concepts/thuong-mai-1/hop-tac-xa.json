@@ -1,0 +1,120 @@
+{
+ "id": "hop-tac-xa",
+ "subject": "thuong-mai-1",
+ "chapter": "v11",
+ "term": "Hợp tác xã, liên hiệp hợp tác xã, tổ hợp tác",
+ "definition": "Hợp tác xã là tổ chức có tư cách pháp nhân do ít nhất 05 thành viên chính thức tự nguyện thành lập, hợp tác tương trợ trong sản xuất, kinh doanh, tạo việc làm nhằm đáp ứng nhu cầu chung về kinh tế, văn hóa, xã hội của thành viên, góp phần xây dựng cộng đồng xã hội phát triển bền vững; thực hiện quản trị tự chủ, tự chịu trách nhiệm, bình đẳng và dân chủ. (…) Tổ hợp tác là tổ chức không có tư cách pháp nhân, được hình thành trên cơ sở hợp đồng hợp tác do ít nhất 02 thành viên tự nguyện thành lập, cùng góp vốn, góp sức lao động để thực hiện những công việc nhất định, cùng hưởng lợi và cùng chịu trách nhiệm.",
+ "plain": "Ba mức của kinh tế tập thể: TỔ HỢP TÁC (≥ 02 thành viên, KHÔNG có tư cách pháp nhân, dựa trên hợp đồng hợp tác) → HỢP TÁC XÃ (≥ 05 thành viên chính thức, CÓ tư cách pháp nhân) → LIÊN HIỆP HỢP TÁC XÃ (≥ 03 hợp tác xã thành viên chính thức, khoản 8 Điều 4). Khác doanh nghiệp: HTX trước hết phục vụ nhu cầu chung của thành viên (giao dịch nội bộ), không chỉ tìm lợi nhuận cho người góp vốn.",
+ "example": "Bảy hộ trồng thanh long ở Bình Thuận cùng góp vốn lập tổ chức có tư cách pháp nhân để mua phân bón chung và tiêu thụ sản phẩm cho các hộ: đó là hợp tác xã.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 7, 21 Điều 4 Luật Hợp tác xã 2023 (VBHN 101/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-101-VBHN-VPQH-2026-Luat-Hop-tac-xa-703396.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nguyen-tac-hop-tac-xa",
+  "von-gop-bieu-quyet-htx",
+  "doanh-nghiep"
+ ],
+ "keywords": [
+  "ít nhất 05 thành viên chính thức",
+  "tư cách pháp nhân",
+  "nhu cầu chung của thành viên",
+  "tổ hợp tác ít nhất 02 thành viên"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hợp tác xã phải có ít nhất bao nhiêu thành viên chính thức?",
+   "options": [
+    "05",
+    "02",
+    "03",
+    "07"
+   ],
+   "answer": 0,
+   "explain": "Khoản 7 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 4 Luật Hợp tác xã 2023 (VBHN 101/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tổ chức nào KHÔNG có tư cách pháp nhân?",
+   "options": [
+    "Tổ hợp tác",
+    "Hợp tác xã",
+    "Liên hiệp hợp tác xã",
+    "Công ty cổ phần"
+   ],
+   "answer": 0,
+   "explain": "Khoản 21 Điều 4 Luật HTX.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 4 Luật Hợp tác xã 2023 (VBHN 101/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hợp tác xã",
+   "right": "Tổ hợp tác",
+   "cases": [
+    {
+     "text": "Có tư cách pháp nhân",
+     "answer": "left"
+    },
+    {
+     "text": "Hình thành trên cơ sở hợp đồng hợp tác, không có tư cách pháp nhân",
+     "answer": "right"
+    },
+    {
+     "text": "Ít nhất 02 thành viên",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 7, 21 Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hợp tác xã là tổ chức có tư cách pháp nhân do ít nhất {{05}} thành viên chính thức tự nguyện thành lập, hợp tác tương trợ trong sản xuất, kinh doanh, tạo việc làm nhằm đáp ứng nhu cầu {{chung}} về kinh tế, văn hóa, xã hội của thành viên.",
+   "bank_extra": [
+    "07",
+    "riêng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tổ hợp tác là tổ chức {{không có}} tư cách pháp nhân, được hình thành trên cơ sở {{hợp đồng hợp tác}}.",
+   "bank_extra": [
+    "có",
+    "điều lệ"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Liên hiệp hợp tác xã do ít nhất 03 hợp tác xã là thành viên chính thức tự nguyện thành lập.",
+   "answer": true,
+   "explain": "Đúng. Khoản 8 Điều 4."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm hợp tác xã và phân biệt với tổ hợp tác.",
+   "model": "Hợp tác xã là tổ chức có tư cách pháp nhân do ít nhất 05 thành viên chính thức tự nguyện thành lập, hợp tác tương trợ nhằm đáp ứng nhu cầu chung của thành viên (khoản 7 Điều 4); tổ hợp tác không có tư cách pháp nhân, hình thành trên hợp đồng hợp tác của ít nhất 02 thành viên (khoản 21 Điều 4).",
+   "keywords": [
+    "tư cách pháp nhân",
+    "05 thành viên",
+    "hợp đồng hợp tác",
+    "nhu cầu chung"
+   ]
+  }
+ ]
+}

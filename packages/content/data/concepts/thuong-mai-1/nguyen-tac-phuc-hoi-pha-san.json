@@ -1,0 +1,117 @@
+{
+ "id": "nguyen-tac-phuc-hoi-pha-san",
+ "subject": "thuong-mai-1",
+ "chapter": "v12",
+ "term": "Nguyên tắc cơ bản của pháp luật phục hồi, phá sản",
+ "definition": "Ưu tiên áp dụng thủ tục phục hồi đối với doanh nghiệp, hợp tác xã. Bảo đảm thủ tục phục hồi, phá sản kịp thời, hiệu quả; hài hòa lợi ích, tối ưu giá trị tài sản của doanh nghiệp, hợp tác xã. Bảo đảm công khai, minh bạch, trừ trường hợp pháp luật có quy định khác.",
+ "plain": "Điểm mới của Luật 2025: tách THỦ TỤC PHỤC HỒI thành thủ tục riêng (Chương II) và đặt nguyên tắc ƯU TIÊN PHỤC HỒI. Thẩm quyền: Tòa án nhân dân KHU VỰC (Điều 6). Phân biệt PHÁ SẢN với GIẢI THỂ: phá sản là thủ tục tư pháp do Tòa án tiến hành khi doanh nghiệp mất khả năng thanh toán; giải thể chủ yếu do doanh nghiệp tự thực hiện (hoặc theo quyết định của cơ quan nhà nước) và chỉ được giải thể khi bảo đảm thanh toán hết các khoản nợ (khoản 2 Điều 207 Luật Doanh nghiệp).",
+ "example": "Doanh nghiệp tạm thời khó khăn dòng tiền nhưng còn khả năng kinh doanh: người đại diện theo pháp luật nộp đơn yêu cầu thủ tục phục hồi thay vì để chủ nợ yêu cầu phá sản.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 3 Luật Phục hồi, phá sản 2025 (142/2025/QH15)",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-Phuc-hoi-pha-san-2025-so-142-2025-QH15-675210.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "mat-kha-nang-thanh-toan",
+  "giai-the-doanh-nghiep",
+  "thu-tuc-phuc-hoi"
+ ],
+ "keywords": [
+  "ưu tiên phục hồi",
+  "kịp thời, hiệu quả",
+  "tối ưu giá trị tài sản",
+  "công khai, minh bạch"
+ ],
+ "note": "Luật Phục hồi, phá sản 142/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Phá sản 51/2014/QH13 (khoản 2 Điều 87); riêng khoản 3 Điều 38 (cơ quan quản lý thuế nộp đơn) có hiệu lực từ 01/7/2026.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nguyên tắc nào được Luật Phục hồi, phá sản 2025 đặt lên đầu?",
+   "options": [
+    "Ưu tiên áp dụng thủ tục phục hồi đối với doanh nghiệp, hợp tác xã",
+    "Ưu tiên thanh lý tài sản",
+    "Bảo vệ tuyệt đối chủ nợ có bảo đảm",
+    "Xét xử kín"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 3 Luật Phục hồi, phá sản 2025 (142/2025/QH15)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tòa án nào có thẩm quyền giải quyết vụ việc phục hồi, phá sản?",
+   "options": [
+    "Tòa án nhân dân khu vực",
+    "Tòa án nhân dân tối cao",
+    "Trọng tài thương mại",
+    "Ủy ban nhân dân cấp tỉnh"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 6.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 6 Luật Phục hồi, phá sản 2025 (142/2025/QH15)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Phá sản",
+   "right": "Giải thể",
+   "cases": [
+    {
+     "text": "Do Tòa án tiến hành khi doanh nghiệp mất khả năng thanh toán",
+     "answer": "left"
+    },
+    {
+     "text": "Chỉ được thực hiện khi bảo đảm thanh toán hết các khoản nợ",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 5 Luật Phục hồi, phá sản; khoản 2 Điều 207 Luật Doanh nghiệp."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "{{Ưu tiên}} áp dụng thủ tục {{phục hồi}} đối với doanh nghiệp, hợp tác xã.",
+   "bank_extra": [
+    "Hạn chế",
+    "thanh lý"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bảo đảm thủ tục phục hồi, phá sản kịp thời, hiệu quả; hài hòa lợi ích, tối ưu {{giá trị tài sản}} của doanh nghiệp, hợp tác xã.",
+   "bank_extra": [
+    "lợi nhuận",
+    "vốn điều lệ"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Doanh nghiệp đang mất khả năng thanh toán có thể chọn thủ tục giải thể để chấm dứt hoạt động mà không cần trả hết nợ.",
+   "answer": false,
+   "explain": "Sai. Giải thể chỉ khi bảo đảm thanh toán hết nợ (khoản 2 Điều 207 Luật Doanh nghiệp); mất khả năng thanh toán thì đi theo thủ tục phục hồi, phá sản."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các nguyên tắc cơ bản của Luật Phục hồi, phá sản 2025 và phân biệt phá sản với giải thể.",
+   "model": "Ưu tiên phục hồi; bảo đảm kịp thời, hiệu quả, hài hòa lợi ích, tối ưu giá trị tài sản; công khai, minh bạch (Điều 3). Phá sản: thủ tục tư pháp tại Tòa án khi mất khả năng thanh toán; giải thể: chỉ khi bảo đảm thanh toán hết nợ.",
+   "keywords": [
+    "ưu tiên phục hồi",
+    "tối ưu giá trị tài sản",
+    "Tòa án",
+    "thanh toán hết nợ"
+   ]
+  }
+ ]
+}

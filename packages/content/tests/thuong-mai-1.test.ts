@@ -10,38 +10,42 @@ const norm = (s: string) => s.normalize('NFC').replace(/\(…\)/g, ' ').replace(
 
 describe('nội dung Luật Thương mại 1', () => {
   it('mọi khái niệm hợp lệ, nguồn statute, có recall và 2 cloze', () => {
-    expect(files.length).toBe(15);
+    expect(files.length).toBe(24);
     for (const f of files) {
       const c = conceptSchema.parse(JSON.parse(readFileSync(join(dir, f), 'utf8')));
       expect(c.source.kind).toBe('statute');
-      expect(c.source.cite).toMatch(/Luật Doanh nghiệp 2020 \(VBHN 67\/VBHN-VPQH 2025\)$/);
+      expect(c.source.cite).toMatch(/(Luật Doanh nghiệp 2020 \(VBHN 67\/VBHN-VPQH 2025\)|Luật Hợp tác xã 2023 \(VBHN 101\/VBHN-VPQH 2026\)|Luật Phục hồi, phá sản 2025 \(142\/2025\/QH15\))$/);
       expect(c.source.url).toMatch(/^https:\/\/thuvienphapluat\.vn\//);
       expect(c.checked).toBe('2026-11-01');
       expect(c.items.filter((i) => i.type === 'recall').length).toBe(1);
       expect(c.items.filter((i) => i.type === 'cloze').length).toBe(2);
     }
   });
-  it('10 vấn đề theo đề cương HLU, khái niệm nằm đúng vấn đề', () => {
+  it('13 vấn đề theo đề cương HLU, khái niệm nằm đúng vấn đề', () => {
     const s = subjectSchema.parse(JSON.parse(readFileSync(join(root, 'subjects', 'thuong-mai-1.json'), 'utf8')));
-    expect(s.chapters.length).toBe(10);
+    expect(s.chapters.length).toBe(13);
     for (const ch of s.chapters) for (const l of ch.lessons) for (const id of l.concepts) {
       expect(JSON.parse(readFileSync(join(dir, `${id}.json`), 'utf8')).chapter).toBe(ch.id);
     }
   });
   it('definition xuất hiện nguyên văn trong văn bản luật (từng câu)', () => {
-    const law = norm(readFileSync(join(root, 'laws', 'ldn-vbhn-2025.txt'), 'utf8'));
+    const LAWS: [string, string][] = [["Luật Hợp tác xã", "lhtx-vbhn-2026.txt"], ["Luật Phục hồi, phá sản", "lphps-2025.txt"]];
+    const cache: Record<string, string> = {};
+    const lawFor = (cite: string) => { const hit = LAWS.find(([k]) => cite.includes(k)); const file = hit ? hit[1] : 'ldn-vbhn-2025.txt'; return (cache[file] ??= norm(readFileSync(join(root, 'laws', file), 'utf8'))); };
     for (const f of files) {
       const c = JSON.parse(readFileSync(join(dir, f), 'utf8'));
+      if (c.source.kind !== 'statute') continue;
+      const law = lawFor(c.source.cite);
       for (const part of norm(c.definition).split(/(?<=[.;:])\s+/)) expect(law, `${f}: "${part}"`).toContain(part);
     }
   });
   it('đề kiểm tra: 10 câu, có căn cứ điều luật và link', () => {
-    for (const id of ["thuong-mai-1-de-1", "thuong-mai-1-de-2"]) {
+    for (const id of ["thuong-mai-1-de-1", "thuong-mai-1-de-2", "thuong-mai-1-de-3"]) {
       const s = JSON.parse(readFileSync(join(root, 'sets', `${id}.json`), 'utf8'));
       expect(s.group).toBe('thuong-mai');
       expect(s.questions.length).toBe(10);
       for (const q of s.questions) {
-        expect(q.basis).toMatch(/Điều \d+ Luật Doanh nghiệp/);
+        expect(q.basis).toMatch(/Điều \d+ Luật (Doanh nghiệp|Hợp tác xã|Phục hồi, phá sản)/);
         expect(q.url).toMatch(/^https:\/\/thuvienphapluat\.vn\//);
       }
     }

@@ -1,0 +1,117 @@
+{
+ "id": "thu-tu-phan-chia-tai-san",
+ "subject": "thuong-mai-1",
+ "chapter": "v13",
+ "term": "Tuyên bố phá sản và thứ tự phân chia tài sản",
+ "definition": "Trường hợp Thẩm phán ra quyết định tuyên bố doanh nghiệp, hợp tác xã phá sản thì tài sản của doanh nghiệp, hợp tác xã được phân chia theo thứ tự sau đây: a) Chi phí phá sản; b) Khoản nợ lương; c) Khoản nợ bảo hiểm xã hội bắt buộc, bảo hiểm thất nghiệp, bảo hiểm y tế, bảo hiểm tai nạn lao động, bệnh nghề nghiệp; d) Trợ cấp thôi việc và các quyền lợi khác của người lao động theo thỏa ước lao động tập thể, hợp đồng lao động; đ) Khoản nợ phát sinh nhằm mục đích phục hồi hoạt động kinh doanh của doanh nghiệp, hợp tác xã; e) Nghĩa vụ tài chính đối với Nhà nước; g) Khoản nợ không có bảo đảm phải trả cho chủ nợ trong danh sách chủ nợ; khoản nợ có bảo đảm chưa được thanh toán do giá trị tài sản bảo đảm không đủ thanh toán nợ. (…) Trường hợp giá trị tài sản của doanh nghiệp, hợp tác xã không đủ để thanh toán theo quy định tại khoản 1 Điều này thì từng đối tượng cùng một thứ tự ưu tiên được thanh toán theo tỷ lệ phần trăm tương ứng với số nợ.",
+ "plain": "Thứ tự cần thuộc: CHI PHÍ PHÁ SẢN → NỢ LƯƠNG → BẢO HIỂM bắt buộc → TRỢ CẤP THÔI VIỆC, quyền lợi người lao động → NỢ PHÁT SINH ĐỂ PHỤC HỒI → NGHĨA VỤ TÀI CHÍNH VỚI NHÀ NƯỚC → nợ không có bảo đảm và phần nợ có bảo đảm chưa được thanh toán đủ. Không đủ tài sản thì cùng hàng chia THEO TỶ LỆ. Còn dư thì thuộc về chủ sở hữu, thành viên, cổ đông (khoản 2). Căn cứ tuyên bố phá sản: Hội nghị chủ nợ không thông qua được nghị quyết, nghị quyết đề nghị tuyên bố phá sản, không thực hiện được phương án phục hồi… (Điều 65).",
+ "example": "Sau khi trả chi phí phá sản và nợ lương, tài sản còn 1 tỷ đồng nhưng nợ bảo hiểm xã hội của người lao động là 2 tỷ: các khoản cùng thứ tự c được trả theo tỷ lệ 50%; nợ thuế và chủ nợ không có bảo đảm không nhận được gì.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, 3 Điều 46 Luật Phục hồi, phá sản 2025 (142/2025/QH15)",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-Phuc-hoi-pha-san-2025-so-142-2025-QH15-675210.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hoi-nghi-chu-no",
+  "nguoi-nop-don-pha-san",
+  "mat-kha-nang-thanh-toan"
+ ],
+ "keywords": [
+  "chi phí phá sản trước tiên",
+  "nợ lương, bảo hiểm",
+  "nghĩa vụ tài chính với Nhà nước",
+  "theo tỷ lệ phần trăm"
+ ],
+ "note": "Luật Phục hồi, phá sản 142/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Phá sản 51/2014/QH13 (khoản 2 Điều 87); riêng khoản 3 Điều 38 (cơ quan quản lý thuế nộp đơn) có hiệu lực từ 01/7/2026.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khoản nào được ưu tiên thanh toán ĐẦU TIÊN khi phân chia tài sản doanh nghiệp bị tuyên bố phá sản?",
+   "options": [
+    "Chi phí phá sản",
+    "Khoản nợ lương",
+    "Nghĩa vụ tài chính đối với Nhà nước",
+    "Khoản nợ không có bảo đảm"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 46.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 46 Luật Phục hồi, phá sản 2025 (142/2025/QH15)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tài sản không đủ thanh toán cho các đối tượng cùng một thứ tự ưu tiên thì xử lý thế nào?",
+   "options": [
+    "Thanh toán theo tỷ lệ phần trăm tương ứng với số nợ",
+    "Ai nộp đơn trước được trả trước",
+    "Bốc thăm",
+    "Ưu tiên chủ nợ lớn nhất"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 46.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 46 Luật Phục hồi, phá sản 2025 (142/2025/QH15)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Được trả trước",
+   "right": "Được trả sau",
+   "cases": [
+    {
+     "text": "Khoản nợ lương",
+     "answer": "left"
+    },
+    {
+     "text": "Nghĩa vụ tài chính đối với Nhà nước",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điểm b, e khoản 1 Điều 46."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tài sản của doanh nghiệp bị tuyên bố phá sản được phân chia trước hết cho {{chi phí phá sản}}, sau đó là khoản nợ {{lương}}.",
+   "bank_extra": [
+    "nghĩa vụ thuế",
+    "cổ tức"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tài sản không đủ thì từng đối tượng cùng một thứ tự ưu tiên được thanh toán theo {{tỷ lệ phần trăm}} tương ứng với số nợ.",
+   "bank_extra": [
+    "thứ tự thời gian",
+    "số lượng chủ nợ"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Nghĩa vụ tài chính đối với Nhà nước (thuế) được thanh toán trước khoản nợ lương của người lao động.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 46: nợ lương (điểm b) trước nghĩa vụ tài chính đối với Nhà nước (điểm e)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày thứ tự phân chia tài sản khi doanh nghiệp bị tuyên bố phá sản.",
+   "model": "Chi phí phá sản; nợ lương; nợ bảo hiểm bắt buộc; trợ cấp thôi việc, quyền lợi người lao động; nợ phát sinh để phục hồi; nghĩa vụ tài chính với Nhà nước; nợ không có bảo đảm và phần nợ có bảo đảm chưa thanh toán đủ (khoản 1 Điều 46); không đủ thì chia theo tỷ lệ (khoản 3).",
+   "keywords": [
+    "chi phí phá sản",
+    "nợ lương",
+    "Nhà nước",
+    "tỷ lệ"
+   ]
+  }
+ ]
+}

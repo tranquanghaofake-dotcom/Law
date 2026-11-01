@@ -1,6 +1,6 @@
 {
   "id": "thuong-mai-1",
-  "title": "Luật Thương mại 1 (Luật Doanh nghiệp)",
+  "title": "Luật Thương mại 1 (doanh nghiệp, hợp tác xã, phá sản)",
   "short": "Thương mại 1",
   "chapters": [
     {
@@ -134,6 +134,51 @@
           "title": "Một số vấn đề pháp lí về nhóm công ty",
           "concepts": [
             "cong-ty-me-con"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v11",
+      "title": "Vấn đề 11. Quy chế pháp lí về hợp tác xã",
+      "lessons": [
+        {
+          "id": "tma11",
+          "title": "Quy chế pháp lí về hợp tác xã",
+          "concepts": [
+            "hop-tac-xa",
+            "nguyen-tac-hop-tac-xa",
+            "von-gop-bieu-quyet-htx"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v12",
+      "title": "Vấn đề 12. Khái quát về phá sản và pháp luật về phá sản",
+      "lessons": [
+        {
+          "id": "tma12",
+          "title": "Khái quát về phá sản và pháp luật về phá sản",
+          "concepts": [
+            "mat-kha-nang-thanh-toan",
+            "nguyen-tac-phuc-hoi-pha-san"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v13",
+      "title": "Vấn đề 13. Thủ tục phá sản doanh nghiệp, hợp tác xã",
+      "lessons": [
+        {
+          "id": "tma13",
+          "title": "Thủ tục phá sản doanh nghiệp, hợp tác xã",
+          "concepts": [
+            "thu-tuc-phuc-hoi",
+            "nguoi-nop-don-pha-san",
+            "hoi-nghi-chu-no",
+            "thu-tu-phan-chia-tai-san"
           ]
         }
       ]
