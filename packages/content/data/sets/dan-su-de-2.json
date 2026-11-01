@@ -1,0 +1,139 @@
+{
+  "id": "dan-su-de-2",
+  "group": "dan-su",
+  "title": "Đề kiểm tra Dân sự 1 – Tài sản, sở hữu, thừa kế",
+  "subtitle": "10 câu theo đề cương HLU, vấn đề 6–13",
+  "updated": "2026-11-01",
+  "questions": [
+    {
+      "q": "Quyền sử dụng đất theo Bộ luật Dân sự 2015 là loại tài sản nào?",
+      "options": [
+        "Vật",
+        "Tiền",
+        "Giấy tờ có giá",
+        "Quyền tài sản"
+      ],
+      "answer": 3,
+      "explain": "Điều 115: quyền tài sản gồm quyền sử dụng đất.",
+      "basis": "Điều 115 BLDS 2015",
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_115"
+    },
+    {
+      "q": "Căn hộ chung cư đang xây dựng, chưa hoàn thành là loại tài sản gì?",
+      "options": [
+        "Tài sản hình thành trong tương lai",
+        "Động sản",
+        "Tài sản vô chủ",
+        "Không phải tài sản"
+      ],
+      "answer": 0,
+      "explain": "Khoản 2 Điều 105; Điều 108.",
+      "basis": "Điều 105 BLDS 2015",
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_105"
+    },
+    {
+      "q": "Chủ nhà cho thuê nhà vẫn giữ quyền năng nào?",
+      "options": [
+        "Quyền định đoạt",
+        "Quyền chiếm hữu trực tiếp",
+        "Quyền sử dụng trực tiếp",
+        "Không còn quyền nào"
+      ],
+      "answer": 0,
+      "explain": "Quyền sở hữu gồm chiếm hữu, sử dụng, định đoạt (Điều 158); khi cho thuê, chủ sở hữu vẫn có quyền định đoạt.",
+      "basis": "Điều 158 BLDS 2015",
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_158"
+    },
+    {
+      "q": "Người chiếm hữu ngay tình, liên tục, công khai một chiếc xe máy không có căn cứ pháp luật bao lâu thì trở thành chủ sở hữu?",
+      "options": [
+        "5 năm",
+        "10 năm",
+        "20 năm",
+        "30 năm"
+      ],
+      "answer": 1,
+      "explain": "Điều 236: 10 năm với động sản.",
+      "basis": "Điều 236 BLDS 2015",
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_236"
+    },
+    {
+      "q": "Nhà B không có lối đi ra đường công cộng, phải đi qua đất nhà A. Đây là loại quyền nào?",
+      "options": [
+        "Quyền sở hữu chung",
+        "Quyền đối với bất động sản liền kề",
+        "Quyền hưởng dụng",
+        "Quyền bề mặt"
+      ],
+      "answer": 1,
+      "explain": "Điểm a khoản 2 Điều 159; Điều 254.",
+      "basis": "Điều 159 BLDS 2015",
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_159"
+    },
+    {
+      "q": "Hàng xóm xây tường lấn sang đất. Chủ sở hữu có thể yêu cầu Tòa án điều gì?",
+      "options": [
+        "Phạt tù hàng xóm",
+        "Buộc chấm dứt hành vi cản trở và bồi thường thiệt hại",
+        "Tịch thu nhà hàng xóm",
+        "Không yêu cầu được gì"
+      ],
+      "answer": 1,
+      "explain": "Khoản 2 Điều 164.",
+      "basis": "Điều 164 BLDS 2015",
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_164"
+    },
+    {
+      "q": "Ông A chết không để lại di chúc, còn vợ, mẹ đẻ và một người em ruột. Ai được hưởng di sản?",
+      "options": [
+        "Vợ, mẹ đẻ và em ruột chia đều",
+        "Vợ và mẹ đẻ chia đều",
+        "Chỉ vợ",
+        "Chỉ em ruột"
+      ],
+      "answer": 1,
+      "explain": "Vợ, mẹ đẻ thuộc hàng thứ nhất; em ruột hàng hai chỉ hưởng khi không còn ai ở hàng thứ nhất (Điều 651).",
+      "basis": "Điều 651 BLDS 2015",
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_651"
+    },
+    {
+      "q": "Con của người để lại di sản chết trước người để lại di sản. Cháu nội được hưởng gì?",
+      "options": [
+        "Không được hưởng",
+        "Phần mà cha của cháu được hưởng nếu còn sống",
+        "2/3 suất thừa kế",
+        "Toàn bộ di sản"
+      ],
+      "answer": 1,
+      "explain": "Thừa kế thế vị (Điều 652).",
+      "basis": "Điều 652 BLDS 2015",
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_652"
+    },
+    {
+      "q": "Ông A lập di chúc để lại toàn bộ tài sản cho bạn thân, không cho người con 8 tuổi. Người con được hưởng bao nhiêu?",
+      "options": [
+        "Không được gì",
+        "Hai phần ba suất của một người thừa kế theo pháp luật",
+        "Một nửa di sản",
+        "Toàn bộ suất theo pháp luật"
+      ],
+      "answer": 1,
+      "explain": "Khoản 1 Điều 644.",
+      "basis": "Điều 644 BLDS 2015",
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_644"
+    },
+    {
+      "q": "Thời hiệu yêu cầu chia di sản là động sản là bao lâu kể từ thời điểm mở thừa kế?",
+      "options": [
+        "03 năm",
+        "05 năm",
+        "10 năm",
+        "30 năm"
+      ],
+      "answer": 2,
+      "explain": "Khoản 1 Điều 623.",
+      "basis": "Điều 623 BLDS 2015",
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_623"
+    }
+  ]
+}

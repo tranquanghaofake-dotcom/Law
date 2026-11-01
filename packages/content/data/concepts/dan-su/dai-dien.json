@@ -1,0 +1,115 @@
+{
+ "id": "dai-dien",
+ "subject": "dan-su",
+ "chapter": "v5",
+ "term": "Đại diện",
+ "definition": "Đại diện là việc cá nhân, pháp nhân (sau đây gọi chung là người đại diện) nhân danh và vì lợi ích của cá nhân hoặc pháp nhân khác (sau đây gọi chung là người được đại diện) xác lập, thực hiện giao dịch dân sự.",
+ "plain": "Đại diện: người đại diện NHÂN DANH và VÌ LỢI ÍCH người được đại diện. Hai loại: theo PHÁP LUẬT (cha mẹ với con chưa thành niên, người do Tòa án chỉ định…) và theo ỦY QUYỀN. Giới hạn: chỉ trong PHẠM VI ĐẠI DIỆN; không được giao dịch với chính mình (khoản 3 Điều 141). Giao dịch do người không có quyền đại diện hoặc vượt phạm vi không ràng buộc người được đại diện, trừ khi họ công nhận, biết mà không phản đối, hoặc có lỗi (Điều 142, 143).",
+ "example": "Anh A ủy quyền cho B bán xe máy với giá tối thiểu 20 triệu; B bán luôn cả chiếc ô tô của A: phần bán ô tô vượt phạm vi đại diện, không ràng buộc A, trừ khi A đồng ý hoặc biết mà không phản đối.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 134 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nguoi-chua-thanh-nien",
+  "thoi-hieu"
+ ],
+ "keywords": [
+  "nhân danh",
+  "vì lợi ích",
+  "theo pháp luật, theo ủy quyền",
+  "phạm vi đại diện"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người đại diện xác lập giao dịch nhân danh ai?",
+   "options": [
+    "Người được đại diện",
+    "Chính mình",
+    "Ủy ban nhân dân",
+    "Tòa án"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 134.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 134 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Giao dịch do người không có quyền đại diện xác lập ràng buộc người được đại diện trong trường hợp nào?",
+   "options": [
+    "Người được đại diện đã công nhận giao dịch",
+    "Bên kia không biết người đó không có quyền đại diện, dù người được đại diện không có lỗi",
+    "Giao dịch có giá trị nhỏ",
+    "Giao dịch được công chứng"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 142.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 142 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Đại diện theo pháp luật",
+   "right": "Đại diện theo ủy quyền",
+   "cases": [
+    {
+     "text": "Cha mẹ đối với con chưa thành niên",
+     "answer": "left"
+    },
+    {
+     "text": "Hợp đồng ủy quyền bán nhà",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 135–138 Bộ luật Dân sự 2015."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đại diện là việc người đại diện {{nhân danh}} và vì {{lợi ích}} của người được đại diện xác lập, thực hiện giao dịch dân sự.",
+   "bank_extra": [
+    "thay mặt Nhà nước",
+    "danh dự"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người đại diện không được nhân danh người được đại diện để xác lập giao dịch với {{chính mình}}, trừ trường hợp pháp luật có quy định khác.",
+   "bank_extra": [
+    "người thân",
+    "Nhà nước"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Giao dịch do người đại diện vượt quá phạm vi đại diện luôn ràng buộc người được đại diện.",
+   "answer": false,
+   "explain": "Sai. Điều 143: không làm phát sinh quyền, nghĩa vụ với phần vượt quá, trừ khi người được đại diện đồng ý, biết mà không phản đối hoặc có lỗi."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm đại diện và hậu quả của giao dịch vượt phạm vi đại diện.",
+   "model": "Đại diện là việc người đại diện nhân danh, vì lợi ích người được đại diện xác lập, thực hiện giao dịch (khoản 1 Điều 134); gồm đại diện theo pháp luật và theo ủy quyền; giao dịch vượt phạm vi không ràng buộc người được đại diện với phần vượt quá, trừ khi họ đồng ý, biết mà không phản đối hoặc có lỗi (Điều 143).",
+   "keywords": [
+    "nhân danh",
+    "vì lợi ích",
+    "ủy quyền",
+    "phạm vi đại diện"
+   ]
+  }
+ ]
+}

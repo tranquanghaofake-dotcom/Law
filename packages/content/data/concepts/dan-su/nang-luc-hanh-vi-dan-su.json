@@ -1,0 +1,119 @@
+{
+ "id": "nang-luc-hanh-vi-dan-su",
+ "subject": "dan-su",
+ "chapter": "v2",
+ "term": "Năng lực hành vi dân sự và người thành niên",
+ "definition": "Năng lực hành vi dân sự của cá nhân là khả năng của cá nhân bằng hành vi của mình xác lập, thực hiện quyền, nghĩa vụ dân sự. (…) Người thành niên là người từ đủ mười tám tuổi trở lên. Người thành niên có năng lực hành vi dân sự đầy đủ, trừ trường hợp quy định tại các điều 22, 23 và 24 của Bộ luật này.",
+ "plain": "Năng lực hành vi = khả năng TỰ MÌNH bằng hành vi xác lập, thực hiện quyền, nghĩa vụ. Các mức: đầy đủ (người thành niên, từ đủ 18 tuổi); một phần (người chưa thành niên, Điều 21); MẤT năng lực hành vi (Điều 22); KHÓ KHĂN trong nhận thức, làm chủ hành vi (Điều 23, mới của BLDS 2015); HẠN CHẾ năng lực hành vi (Điều 24, người nghiện ma túy phá tán tài sản). Ba trường hợp sau đều do Tòa án tuyên bố.",
+ "example": "Một người 20 tuổi được Tòa án tuyên bố mất năng lực hành vi dân sự do bệnh tâm thần: dù đã thành niên, giao dịch của người đó phải do người đại diện theo pháp luật xác lập (khoản 2 Điều 22).",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 19, Điều 20 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nang-luc-phap-luat-dan-su",
+  "nguoi-chua-thanh-nien"
+ ],
+ "keywords": [
+  "bằng hành vi của mình",
+  "đủ 18 tuổi",
+  "năng lực hành vi đầy đủ",
+  "trừ Điều 22, 23, 24"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người thành niên theo Bộ luật Dân sự 2015 là người bao nhiêu tuổi?",
+   "options": [
+    "Từ đủ 18 tuổi trở lên",
+    "Từ đủ 16 tuổi trở lên",
+    "Từ đủ 21 tuổi trở lên",
+    "Từ đủ 15 tuổi trở lên"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 20.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 20 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trường hợp nào người thành niên KHÔNG có năng lực hành vi dân sự đầy đủ?",
+   "options": [
+    "Bị Tòa án tuyên bố mất năng lực hành vi dân sự",
+    "Đang là sinh viên",
+    "Chưa có việc làm",
+    "Chưa kết hôn"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 20 dẫn chiếu Điều 22, 23, 24.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 20 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Mất năng lực hành vi (Điều 22)",
+   "right": "Hạn chế năng lực hành vi (Điều 24)",
+   "cases": [
+    {
+     "text": "Do bệnh tâm thần không nhận thức, làm chủ được hành vi",
+     "answer": "left"
+    },
+    {
+     "text": "Nghiện ma túy dẫn đến phá tán tài sản của gia đình",
+     "answer": "right"
+    },
+    {
+     "text": "Cần kết luận giám định pháp y tâm thần",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 22, 24 Bộ luật Dân sự 2015."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Năng lực hành vi dân sự của cá nhân là khả năng của cá nhân bằng {{hành vi}} của mình xác lập, thực hiện quyền, nghĩa vụ dân sự.",
+   "bank_extra": [
+    "tài sản",
+    "quyết định"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người thành niên là người từ đủ {{mười tám}} tuổi trở lên.",
+   "bank_extra": [
+    "mười sáu",
+    "hai mươi mốt"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi người từ đủ 18 tuổi đều có năng lực hành vi dân sự đầy đủ, không có ngoại lệ.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 20 trừ các trường hợp tại Điều 22, 23, 24."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Phân loại mức độ năng lực hành vi dân sự của cá nhân theo Bộ luật Dân sự 2015.",
+   "model": "Đầy đủ (người thành niên, Điều 20); một phần (người chưa thành niên theo độ tuổi, Điều 21); mất năng lực hành vi (Điều 22); khó khăn trong nhận thức, làm chủ hành vi (Điều 23); hạn chế năng lực hành vi (Điều 24). Ba trường hợp sau do Tòa án tuyên bố.",
+   "keywords": [
+    "đầy đủ",
+    "chưa thành niên",
+    "mất",
+    "hạn chế"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "id": "bao-ve-quyen-so-huu",
+ "subject": "dan-su",
+ "chapter": "v10",
+ "term": "Bảo vệ quyền sở hữu",
+ "definition": "Không ai có thể bị hạn chế, bị tước đoạt trái luật quyền sở hữu, quyền khác đối với tài sản. (…) Chủ sở hữu, chủ thể có quyền khác đối với tài sản có quyền tự bảo vệ, ngăn chặn bất kỳ người nào có hành vi xâm phạm quyền của mình bằng những biện pháp không trái với quy định của pháp luật.",
+ "plain": "Biện pháp bảo vệ: TỰ BẢO VỆ (không trái luật); yêu cầu Tòa án, cơ quan có thẩm quyền buộc TRẢ LẠI TÀI SẢN (kiện đòi tài sản), CHẤM DỨT HÀNH VI CẢN TRỞ, BỒI THƯỜNG THIỆT HẠI (khoản 2 Điều 164). Nhà nước chỉ trưng mua, trưng dụng khi thật cần thiết vì quốc phòng, an ninh, lợi ích quốc gia, tình trạng khẩn cấp, phòng chống thiên tai, có bồi thường theo giá thị trường (khoản 2 Điều 163). Kiện đòi tài sản từ người chiếm hữu ngay tình bị giới hạn (Điều 167, 168).",
+ "example": "Hàng xóm xây tường lấn sang đất nhà mình: chủ sở hữu có quyền yêu cầu Tòa án buộc tháo dỡ phần lấn chiếm (chấm dứt hành vi cản trở) và bồi thường thiệt hại.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 163, khoản 1 Điều 164 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quyen-so-huu",
+  "chiem-huu"
+ ],
+ "keywords": [
+  "không bị tước đoạt trái luật",
+  "tự bảo vệ",
+  "kiện đòi tài sản",
+  "trưng mua, trưng dụng có bồi thường"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 2 Điều 164, chủ sở hữu có quyền yêu cầu Tòa án làm gì?",
+   "options": [
+    "Buộc người xâm phạm trả lại tài sản, chấm dứt hành vi cản trở và bồi thường thiệt hại",
+    "Tịch thu tài sản của người xâm phạm",
+    "Xử lý hình sự ngay người xâm phạm",
+    "Cấp lại giấy chứng nhận"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 164.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 164 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nhà nước trưng mua, trưng dụng tài sản của cá nhân phải đáp ứng điều kiện gì?",
+   "options": [
+    "Thật cần thiết vì lý do luật định và có bồi thường theo giá thị trường",
+    "Bất cứ khi nào Nhà nước cần",
+    "Không cần bồi thường",
+    "Chỉ cần thông báo trước"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 163.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 163 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tự bảo vệ",
+   "right": "Yêu cầu cơ quan có thẩm quyền bảo vệ",
+   "cases": [
+    {
+     "text": "Ngăn cản người lạ vào đất bằng biện pháp không trái luật",
+     "answer": "left"
+    },
+    {
+     "text": "Khởi kiện đòi lại xe bị chiếm giữ",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 164."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Không ai có thể bị hạn chế, bị {{tước đoạt}} trái luật quyền sở hữu, quyền khác đối với tài sản.",
+   "bank_extra": [
+    "bảo hộ",
+    "khuyến khích"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhà nước trưng mua hoặc trưng dụng có {{bồi thường}} tài sản của tổ chức, cá nhân theo giá {{thị trường}}.",
+   "bank_extra": [
+    "xử phạt",
+    "nhà nước"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chủ sở hữu được dùng mọi biện pháp, kể cả bạo lực, để tự bảo vệ tài sản.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 164: chỉ bằng biện pháp không trái với quy định của pháp luật."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày các biện pháp bảo vệ quyền sở hữu.",
+   "model": "Không ai bị hạn chế, tước đoạt trái luật quyền sở hữu; trưng mua, trưng dụng chỉ khi thật cần thiết, có bồi thường theo giá thị trường (Điều 163); chủ sở hữu tự bảo vệ bằng biện pháp không trái luật; yêu cầu Tòa án buộc trả lại tài sản, chấm dứt hành vi cản trở, bồi thường thiệt hại (Điều 164).",
+   "keywords": [
+    "tước đoạt",
+    "tự bảo vệ",
+    "trả lại tài sản",
+    "bồi thường"
+   ]
+  }
+ ]
+}

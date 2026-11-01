@@ -1,0 +1,118 @@
+{
+ "id": "nang-luc-phap-luat-dan-su",
+ "subject": "dan-su",
+ "chapter": "v2",
+ "term": "Năng lực pháp luật dân sự của cá nhân",
+ "definition": "Năng lực pháp luật dân sự của cá nhân là khả năng của cá nhân có quyền dân sự và nghĩa vụ dân sự. Mọi cá nhân đều có năng lực pháp luật dân sự như nhau. Năng lực pháp luật dân sự của cá nhân có từ khi người đó sinh ra và chấm dứt khi người đó chết.",
+ "plain": "Năng lực pháp luật = khả năng CÓ quyền, nghĩa vụ (tư cách chủ thể). Ba đặc điểm: BÌNH ĐẲNG (mọi cá nhân như nhau); có từ khi SINH RA đến khi CHẾT; không bị hạn chế, trừ trường hợp luật định (Điều 18). Phân biệt với năng lực hành vi (khả năng TỰ MÌNH xác lập, thực hiện quyền). Ngoại lệ đáng nhớ: thai nhi đã thành thai trước khi người để lại di sản chết vẫn có thể hưởng thừa kế nếu sinh ra còn sống (Điều 613).",
+ "example": "Em bé mới sinh có năng lực pháp luật dân sự (có thể là chủ sở hữu tài sản được tặng cho), nhưng chưa có năng lực hành vi; mọi giao dịch do cha mẹ đại diện.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 16 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nang-luc-hanh-vi-dan-su",
+  "nguoi-chua-thanh-nien"
+ ],
+ "keywords": [
+  "khả năng có quyền, nghĩa vụ",
+  "như nhau",
+  "từ khi sinh ra đến khi chết"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Năng lực pháp luật dân sự của cá nhân có từ khi nào?",
+   "options": [
+    "Từ khi người đó sinh ra",
+    "Từ đủ 6 tuổi",
+    "Từ đủ 18 tuổi",
+    "Từ khi đăng ký khai sinh"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 16.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 16 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Năng lực pháp luật dân sự của cá nhân là gì?",
+   "options": [
+    "Khả năng của cá nhân có quyền dân sự và nghĩa vụ dân sự",
+    "Khả năng bằng hành vi của mình xác lập, thực hiện quyền, nghĩa vụ",
+    "Khả năng chịu trách nhiệm hình sự",
+    "Khả năng tham gia bầu cử"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 16; phương án 2 là năng lực hành vi (Điều 19).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 16 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Năng lực pháp luật dân sự",
+   "right": "Năng lực hành vi dân sự",
+   "cases": [
+    {
+     "text": "Mọi cá nhân đều như nhau",
+     "answer": "left"
+    },
+    {
+     "text": "Phụ thuộc độ tuổi, khả năng nhận thức",
+     "answer": "right"
+    },
+    {
+     "text": "Có từ khi sinh ra",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 16, 19 Bộ luật Dân sự 2015."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Năng lực pháp luật dân sự của cá nhân có từ khi người đó {{sinh ra}} và chấm dứt khi người đó {{chết}}.",
+   "bank_extra": [
+    "đủ 18 tuổi",
+    "mất tích"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Mọi cá nhân đều có năng lực pháp luật dân sự {{như nhau}}.",
+   "bank_extra": [
+    "khác nhau",
+    "theo tuổi"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người chưa thành niên có năng lực pháp luật dân sự hạn chế hơn người thành niên.",
+   "answer": false,
+   "explain": "Sai. Mọi cá nhân có năng lực pháp luật dân sự như nhau (khoản 2 Điều 16); thứ khác nhau theo tuổi là năng lực hành vi."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm và đặc điểm năng lực pháp luật dân sự của cá nhân.",
+   "model": "Là khả năng có quyền và nghĩa vụ dân sự; mọi cá nhân như nhau; có từ khi sinh ra, chấm dứt khi chết (Điều 16); không bị hạn chế trừ trường hợp luật định.",
+   "keywords": [
+    "có quyền, nghĩa vụ",
+    "như nhau",
+    "sinh ra",
+    "chết"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "id": "thua-ke-the-vi",
+ "subject": "dan-su",
+ "chapter": "v13",
+ "term": "Thừa kế thế vị",
+ "definition": "Trường hợp con của người để lại di sản chết trước hoặc cùng một thời điểm với người để lại di sản thì cháu được hưởng phần di sản mà cha hoặc mẹ của cháu được hưởng nếu còn sống; nếu cháu cũng chết trước hoặc cùng một thời điểm với người để lại di sản thì chắt được hưởng phần di sản mà cha hoặc mẹ của chắt được hưởng nếu còn sống.",
+ "plain": "Thế vị = \"đứng vào vị trí\" của cha hoặc mẹ đã chết TRƯỚC hoặc CÙNG THỜI ĐIỂM với người để lại di sản. Chỉ áp dụng trong THỪA KẾ THEO PHÁP LUẬT, theo hàng trực hệ: cháu thế vị cha mẹ, chắt thế vị khi cháu cũng chết. Cháu được hưởng phần mà cha hoặc mẹ được hưởng nếu còn sống (không chia theo đầu người với hàng thứ nhất).",
+ "example": "Ông A có hai con B và C; B chết năm 2020, để lại con là D. Ông A chết năm 2026 không có di chúc: di sản chia cho C và D (D thế vị B, hưởng phần của B).",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 652 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "thua-ke-theo-phap-luat",
+  "quyen-thua-ke"
+ ],
+ "keywords": [
+  "chết trước hoặc cùng thời điểm",
+  "cháu hưởng phần của cha mẹ",
+  "chắt",
+  "theo pháp luật"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thừa kế thế vị áp dụng khi nào?",
+   "options": [
+    "Con của người để lại di sản chết trước hoặc cùng thời điểm với người để lại di sản",
+    "Con của người để lại di sản từ chối nhận di sản",
+    "Có di chúc chỉ định cháu hưởng",
+    "Con chết sau người để lại di sản"
+   ],
+   "answer": 0,
+   "explain": "Điều 652.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 652 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Cháu thừa kế thế vị được hưởng phần di sản như thế nào?",
+   "options": [
+    "Phần mà cha hoặc mẹ của cháu được hưởng nếu còn sống",
+    "Phần bằng các người hàng thứ nhất tính theo đầu người",
+    "Một nửa phần của cha mẹ",
+    "2/3 suất"
+   ],
+   "answer": 0,
+   "explain": "Điều 652.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 652 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Có thừa kế thế vị",
+   "right": "Không có thừa kế thế vị",
+   "cases": [
+    {
+     "text": "Con chết trước cha, cháu thay vào hưởng phần của con",
+     "answer": "left"
+    },
+    {
+     "text": "Con chết sau cha một năm, chưa kịp nhận di sản",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 652; con chết sau thì phần của con thành di sản của người con (thừa kế chuyển tiếp)."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Trường hợp con của người để lại di sản chết {{trước}} hoặc cùng một thời điểm với người để lại di sản thì {{cháu}} được hưởng phần di sản mà cha hoặc mẹ của cháu được hưởng nếu còn sống.",
+   "bank_extra": [
+    "sau",
+    "anh chị"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nếu cháu cũng chết trước hoặc cùng thời điểm với người để lại di sản thì {{chắt}} được hưởng phần di sản mà cha hoặc mẹ của chắt được hưởng nếu còn sống.",
+   "bank_extra": [
+    "cụ",
+    "em"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thừa kế thế vị áp dụng khi con của người để lại di sản chết sau người để lại di sản.",
+   "answer": false,
+   "explain": "Sai. Điều 652 chỉ áp dụng khi con chết trước hoặc cùng thời điểm."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quy định về thừa kế thế vị.",
+   "model": "Con của người để lại di sản chết trước hoặc cùng thời điểm thì cháu được hưởng phần mà cha hoặc mẹ của cháu được hưởng nếu còn sống; nếu cháu cũng chết trước hoặc cùng thời điểm thì chắt được hưởng phần của cha hoặc mẹ của chắt (Điều 652).",
+   "keywords": [
+    "chết trước",
+    "cùng thời điểm",
+    "cháu",
+    "chắt"
+   ]
+  }
+ ]
+}

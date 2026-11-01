@@ -1,0 +1,119 @@
+{
+ "id": "bat-dong-san-dong-san",
+ "subject": "dan-su",
+ "chapter": "v6",
+ "term": "Bất động sản và động sản",
+ "definition": "Bất động sản bao gồm: a) Đất đai; b) Nhà, công trình xây dựng gắn liền với đất đai; c) Tài sản khác gắn liền với đất đai, nhà, công trình xây dựng; d) Tài sản khác theo quy định của pháp luật. Động sản là những tài sản không phải là bất động sản.",
+ "plain": "Bất động sản được LIỆT KÊ theo tiêu chí gắn liền với đất đai; động sản được xác định theo phương pháp LOẠI TRỪ (\"không phải là bất động sản\"). Ý nghĩa: thời hiệu xác lập quyền sở hữu (10 năm động sản, 30 năm bất động sản, Điều 236), thời hiệu chia di sản (Điều 623), hình thức giao dịch, thẩm quyền Tòa án theo nơi có bất động sản.",
+ "example": "Cây lâu năm trồng trên đất là bất động sản (gắn liền với đất); khi đã chặt hạ thành gỗ thì là động sản.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 107 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tai-san",
+  "xac-lap-quyen-so-huu-theo-thoi-hieu",
+  "thoi-hieu-thua-ke"
+ ],
+ "keywords": [
+  "gắn liền với đất đai",
+  "liệt kê",
+  "loại trừ"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Động sản được xác định theo cách nào trong Điều 107?",
+   "options": [
+    "Những tài sản không phải là bất động sản",
+    "Những tài sản di chuyển được",
+    "Những tài sản có giá trị dưới 50 triệu",
+    "Những tài sản phải đăng ký"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 107.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 107 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tài sản nào là bất động sản?",
+   "options": [
+    "Nhà gắn liền với đất",
+    "Xe ô tô",
+    "Cổ phiếu",
+    "Tiền gửi ngân hàng"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 1 Điều 107.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 107 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Bất động sản",
+   "right": "Động sản",
+   "cases": [
+    {
+     "text": "Đất đai",
+     "answer": "left"
+    },
+    {
+     "text": "Công trình xây dựng gắn liền với đất",
+     "answer": "left"
+    },
+    {
+     "text": "Xe máy",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 107."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bất động sản bao gồm đất đai; nhà, công trình xây dựng {{gắn liền}} với đất đai. Động sản là những tài sản {{không phải là}} bất động sản.",
+   "bank_extra": [
+    "tách rời",
+    "đồng thời là"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thời hiệu xác lập quyền sở hữu do chiếm hữu ngay tình đối với bất động sản là {{30}} năm.",
+   "bank_extra": [
+    "10",
+    "20"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Xe ô tô phải đăng ký quyền sở hữu nên là bất động sản.",
+   "answer": false,
+   "explain": "Sai. Ô tô là động sản (không thuộc danh mục khoản 1 Điều 107); việc phải đăng ký không làm thay đổi tính chất động sản."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Phân biệt bất động sản và động sản; nêu ý nghĩa của việc phân loại.",
+   "model": "Bất động sản gồm đất đai, nhà, công trình gắn liền với đất, tài sản khác gắn liền với đất, nhà, công trình, tài sản khác theo luật; động sản là tài sản không phải bất động sản (Điều 107). Ý nghĩa: thời hiệu (10/30 năm), hình thức giao dịch, đăng ký, thẩm quyền Tòa án.",
+   "keywords": [
+    "đất đai",
+    "gắn liền",
+    "không phải bất động sản",
+    "thời hiệu"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,187 @@
+{
+  "id": "dan-su",
+  "title": "Luật Dân sự 1",
+  "short": "Dân sự 1",
+  "chapters": [
+    {
+      "id": "v1",
+      "title": "Vấn đề 1. Khái niệm chung về luật dân sự",
+      "lessons": [
+        {
+          "id": "ds1",
+          "title": "Khái niệm chung về luật dân sự",
+          "concepts": [
+            "pham-vi-dieu-chinh-luat-dan-su",
+            "nguyen-tac-co-ban-luat-dan-su"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v2",
+      "title": "Vấn đề 2. Chủ thể là cá nhân",
+      "lessons": [
+        {
+          "id": "ds2",
+          "title": "Chủ thể là cá nhân",
+          "concepts": [
+            "nang-luc-phap-luat-dan-su",
+            "nang-luc-hanh-vi-dan-su",
+            "nguoi-chua-thanh-nien"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v3",
+      "title": "Vấn đề 3. Chủ thể là pháp nhân",
+      "lessons": [
+        {
+          "id": "ds3",
+          "title": "Chủ thể là pháp nhân",
+          "concepts": [
+            "phap-nhan"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v4",
+      "title": "Vấn đề 4. Giao dịch dân sự",
+      "lessons": [
+        {
+          "id": "ds4",
+          "title": "Giao dịch dân sự",
+          "concepts": [
+            "giao-dich-dan-su",
+            "dieu-kien-hieu-luc-giao-dich",
+            "giao-dich-vo-hieu-gia-tao"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v5",
+      "title": "Vấn đề 5. Đại diện, thời hạn, thời hiệu",
+      "lessons": [
+        {
+          "id": "ds5",
+          "title": "Đại diện, thời hạn, thời hiệu",
+          "concepts": [
+            "dai-dien",
+            "thoi-hieu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v6",
+      "title": "Vấn đề 6. Tài sản",
+      "lessons": [
+        {
+          "id": "ds6",
+          "title": "Tài sản",
+          "concepts": [
+            "tai-san",
+            "bat-dong-san-dong-san"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v7",
+      "title": "Vấn đề 7. Chiếm hữu, nội dung và hình thức sở hữu",
+      "lessons": [
+        {
+          "id": "ds7",
+          "title": "Chiếm hữu, nội dung và hình thức sở hữu",
+          "concepts": [
+            "quyen-so-huu",
+            "chiem-huu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v8",
+      "title": "Vấn đề 8. Xác lập, chấm dứt quyền sở hữu",
+      "lessons": [
+        {
+          "id": "ds8",
+          "title": "Xác lập, chấm dứt quyền sở hữu",
+          "concepts": [
+            "xac-lap-quyen-so-huu-theo-thoi-hieu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v9",
+      "title": "Vấn đề 9. Quyền khác đối với tài sản",
+      "lessons": [
+        {
+          "id": "ds9",
+          "title": "Quyền khác đối với tài sản",
+          "concepts": [
+            "quyen-khac-doi-voi-tai-san"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v10",
+      "title": "Vấn đề 10. Bảo vệ quyền sở hữu",
+      "lessons": [
+        {
+          "id": "ds10",
+          "title": "Bảo vệ quyền sở hữu",
+          "concepts": [
+            "bao-ve-quyen-so-huu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v11",
+      "title": "Vấn đề 11. Quy định chung về thừa kế",
+      "lessons": [
+        {
+          "id": "ds11",
+          "title": "Quy định chung về thừa kế",
+          "concepts": [
+            "quyen-thua-ke",
+            "thoi-hieu-thua-ke"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v12",
+      "title": "Vấn đề 12. Thừa kế theo di chúc",
+      "lessons": [
+        {
+          "id": "ds12",
+          "title": "Thừa kế theo di chúc",
+          "concepts": [
+            "di-chuc",
+            "nguoi-thua-ke-khong-phu-thuoc-di-chuc"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v13",
+      "title": "Vấn đề 13. Thừa kế theo pháp luật",
+      "lessons": [
+        {
+          "id": "ds13",
+          "title": "Thừa kế theo pháp luật",
+          "concepts": [
+            "thua-ke-theo-phap-luat",
+            "thua-ke-the-vi"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+ "id": "thoi-hieu",
+ "subject": "dan-su",
+ "chapter": "v5",
+ "term": "Thời hiệu và các loại thời hiệu",
+ "definition": "Thời hiệu là thời hạn do luật quy định mà khi kết thúc thời hạn đó thì phát sinh hậu quả pháp lý đối với chủ thể theo điều kiện do luật quy định. (…) Tòa án chỉ áp dụng quy định về thời hiệu theo yêu cầu áp dụng thời hiệu của một bên hoặc các bên với điều kiện yêu cầu này phải được đưa ra trước khi Tòa án cấp sơ thẩm ra bản án, quyết định giải quyết vụ, việc.",
+ "plain": "Bốn loại thời hiệu (Điều 150): HƯỞNG QUYỀN dân sự; MIỄN TRỪ NGHĨA VỤ dân sự; KHỞI KIỆN; YÊU CẦU GIẢI QUYẾT VIỆC DÂN SỰ. Điểm mới quan trọng của BLDS 2015: Tòa án KHÔNG TỰ ÁP DỤNG thời hiệu, chỉ áp dụng khi có YÊU CẦU của đương sự, đưa ra TRƯỚC KHI Tòa án cấp sơ thẩm ra bản án, quyết định. Phân biệt THỜI HẠN (khoảng thời gian do luật hoặc các bên xác định) với THỜI HIỆU (chỉ do luật quy định, gắn hậu quả pháp lý).",
+ "example": "Hết thời hiệu khởi kiện, nhưng bị đơn không yêu cầu áp dụng thời hiệu trước khi Tòa sơ thẩm xét xử: Tòa án vẫn giải quyết nội dung vụ án.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 149 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "dai-dien",
+  "thoi-hieu-thua-ke",
+  "xac-lap-quyen-so-huu-theo-thoi-hieu"
+ ],
+ "keywords": [
+  "thời hạn do luật quy định",
+  "hưởng quyền, miễn trừ nghĩa vụ, khởi kiện",
+  "chỉ áp dụng theo yêu cầu",
+  "trước khi sơ thẩm ra bản án"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tòa án áp dụng quy định về thời hiệu khi nào theo khoản 2 Điều 149?",
+   "options": [
+    "Khi có yêu cầu của một bên hoặc các bên, đưa ra trước khi Tòa sơ thẩm ra bản án, quyết định",
+    "Tòa án luôn tự động áp dụng",
+    "Chỉ ở cấp phúc thẩm",
+    "Khi Viện kiểm sát đề nghị"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 149.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 149 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Loại thời hiệu nào khi kết thúc thì chủ thể mất quyền khởi kiện?",
+   "options": [
+    "Thời hiệu khởi kiện",
+    "Thời hiệu hưởng quyền dân sự",
+    "Thời hiệu miễn trừ nghĩa vụ",
+    "Thời hạn bảo hành"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 150.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 150 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thời hiệu hưởng quyền dân sự",
+   "right": "Thời hiệu miễn trừ nghĩa vụ dân sự",
+   "cases": [
+    {
+     "text": "Kết thúc thì chủ thể được hưởng quyền",
+     "answer": "left"
+    },
+    {
+     "text": "Kết thúc thì người có nghĩa vụ được miễn thực hiện nghĩa vụ",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1, 2 Điều 150."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thời hiệu là thời hạn do {{luật}} quy định mà khi kết thúc thời hạn đó thì phát sinh hậu quả {{pháp lý}} đối với chủ thể.",
+   "bank_extra": [
+    "các bên",
+    "đạo đức"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thời hiệu khởi kiện vụ án dân sự được tính từ ngày người có quyền yêu cầu {{biết hoặc phải biết}} quyền, lợi ích hợp pháp của mình bị xâm phạm.",
+   "bank_extra": [
+    "được thông báo",
+    "khởi kiện"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo Bộ luật Dân sự 2015, Tòa án phải tự áp dụng thời hiệu dù các bên không yêu cầu.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 149: chỉ áp dụng theo yêu cầu của một bên hoặc các bên."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm, các loại thời hiệu và nguyên tắc áp dụng thời hiệu.",
+   "model": "Thời hiệu là thời hạn do luật quy định, kết thúc thì phát sinh hậu quả pháp lý (khoản 1 Điều 149); bốn loại: hưởng quyền, miễn trừ nghĩa vụ, khởi kiện, yêu cầu giải quyết việc dân sự (Điều 150); Tòa án chỉ áp dụng theo yêu cầu, đưa ra trước khi sơ thẩm ra bản án (khoản 2 Điều 149).",
+   "keywords": [
+    "luật quy định",
+    "khởi kiện",
+    "theo yêu cầu",
+    "sơ thẩm"
+   ]
+  }
+ ]
+}

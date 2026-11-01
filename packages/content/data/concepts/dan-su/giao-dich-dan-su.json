@@ -1,0 +1,118 @@
+{
+ "id": "giao-dich-dan-su",
+ "subject": "dan-su",
+ "chapter": "v4",
+ "term": "Giao dịch dân sự",
+ "definition": "Giao dịch dân sự là hợp đồng hoặc hành vi pháp lý đơn phương làm phát sinh, thay đổi hoặc chấm dứt quyền, nghĩa vụ dân sự.",
+ "plain": "Hai dạng: HỢP ĐỒNG (thỏa thuận của hai hay nhiều bên) và HÀNH VI PHÁP LÝ ĐƠN PHƯƠNG (ý chí của một bên: lập di chúc, hứa thưởng, từ chối nhận di sản). Bản chất là sự thống nhất giữa Ý CHÍ (mong muốn bên trong) và BÀY TỎ Ý CHÍ (thể hiện ra ngoài), nhằm làm phát sinh, thay đổi, chấm dứt quyền, nghĩa vụ.",
+ "example": "Ông A lập di chúc để lại nhà cho con gái: đây là hành vi pháp lý đơn phương, chỉ cần ý chí của ông A, không cần con gái đồng ý.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 116 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "dieu-kien-hieu-luc-giao-dich",
+  "giao-dich-vo-hieu-gia-tao",
+  "di-chuc"
+ ],
+ "keywords": [
+  "hợp đồng",
+  "hành vi pháp lý đơn phương",
+  "phát sinh, thay đổi, chấm dứt"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Giao dịch dân sự gồm những dạng nào theo Điều 116?",
+   "options": [
+    "Hợp đồng hoặc hành vi pháp lý đơn phương",
+    "Chỉ hợp đồng",
+    "Chỉ hợp đồng có công chứng",
+    "Quyết định hành chính và hợp đồng"
+   ],
+   "answer": 0,
+   "explain": "Điều 116.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 116 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Việc lập di chúc là loại giao dịch dân sự nào?",
+   "options": [
+    "Hành vi pháp lý đơn phương",
+    "Hợp đồng song vụ",
+    "Hợp đồng đơn vụ",
+    "Không phải giao dịch dân sự"
+   ],
+   "answer": 0,
+   "explain": "Di chúc chỉ cần ý chí của người lập.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 116, Điều 624 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hợp đồng",
+   "right": "Hành vi pháp lý đơn phương",
+   "cases": [
+    {
+     "text": "Hai bên thỏa thuận mua bán nhà",
+     "answer": "left"
+    },
+    {
+     "text": "Lập di chúc",
+     "answer": "right"
+    },
+    {
+     "text": "Công bố hứa thưởng tìm đồ thất lạc",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 116."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Giao dịch dân sự là {{hợp đồng}} hoặc hành vi pháp lý {{đơn phương}} làm phát sinh, thay đổi hoặc chấm dứt quyền, nghĩa vụ dân sự.",
+   "bank_extra": [
+    "quyết định",
+    "tập thể"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Giao dịch dân sự làm phát sinh, thay đổi hoặc {{chấm dứt}} quyền, nghĩa vụ dân sự.",
+   "bank_extra": [
+    "đình chỉ",
+    "hạn chế"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi giao dịch dân sự đều cần sự thỏa thuận của ít nhất hai bên.",
+   "answer": false,
+   "explain": "Sai. Hành vi pháp lý đơn phương (như lập di chúc) chỉ cần ý chí của một bên (Điều 116)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm giao dịch dân sự và phân loại.",
+   "model": "Giao dịch dân sự là hợp đồng hoặc hành vi pháp lý đơn phương làm phát sinh, thay đổi, chấm dứt quyền, nghĩa vụ dân sự (Điều 116); hợp đồng là thỏa thuận của các bên; hành vi pháp lý đơn phương là ý chí của một bên (di chúc, hứa thưởng).",
+   "keywords": [
+    "hợp đồng",
+    "đơn phương",
+    "phát sinh, thay đổi, chấm dứt"
+   ]
+  }
+ ]
+}

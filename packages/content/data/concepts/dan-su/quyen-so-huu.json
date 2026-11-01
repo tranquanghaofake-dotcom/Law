@@ -1,0 +1,119 @@
+{
+ "id": "quyen-so-huu",
+ "subject": "dan-su",
+ "chapter": "v7",
+ "term": "Quyền sở hữu",
+ "definition": "Quyền sở hữu bao gồm quyền chiếm hữu, quyền sử dụng và quyền định đoạt tài sản của chủ sở hữu theo quy định của luật.",
+ "plain": "Ba quyền năng: CHIẾM HỮU (nắm giữ, chi phối), SỬ DỤNG (khai thác công dụng, hưởng hoa lợi, lợi tức), ĐỊNH ĐOẠT (chuyển giao quyền sở hữu, từ bỏ, tiêu dùng, tiêu hủy). Chủ sở hữu được thực hiện mọi hành vi theo ý chí nhưng không trái luật, không gây thiệt hại lợi ích quốc gia, công cộng, quyền của người khác (khoản 2 Điều 160). Hình thức sở hữu: sở hữu toàn dân, sở hữu riêng, sở hữu chung (Điều 197–220).",
+ "example": "Người cho thuê nhà chuyển quyền chiếm hữu, sử dụng cho người thuê nhưng vẫn giữ quyền định đoạt (có thể bán nhà).",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 158 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "chiem-huu",
+  "quyen-khac-doi-voi-tai-san",
+  "tai-san"
+ ],
+ "keywords": [
+  "chiếm hữu",
+  "sử dụng",
+  "định đoạt"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quyền sở hữu gồm những quyền năng nào theo Điều 158?",
+   "options": [
+    "Chiếm hữu, sử dụng, định đoạt",
+    "Chiếm hữu, quản lý, thu lợi",
+    "Sử dụng, cho thuê, thế chấp",
+    "Sở hữu, sử dụng, hưởng dụng"
+   ],
+   "answer": 0,
+   "explain": "Điều 158.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 158 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Bán tài sản là thực hiện quyền năng nào của chủ sở hữu?",
+   "options": [
+    "Quyền định đoạt",
+    "Quyền chiếm hữu",
+    "Quyền sử dụng",
+    "Quyền hưởng dụng"
+   ],
+   "answer": 0,
+   "explain": "Định đoạt là chuyển giao quyền sở hữu.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 158, Điều 192 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quyền sử dụng",
+   "right": "Quyền định đoạt",
+   "cases": [
+    {
+     "text": "Cho thuê nhà để thu tiền thuê",
+     "answer": "left"
+    },
+    {
+     "text": "Tặng cho căn nhà",
+     "answer": "right"
+    },
+    {
+     "text": "Tiêu hủy tài sản",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 158, 189, 192."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quyền sở hữu bao gồm quyền {{chiếm hữu}}, quyền sử dụng và quyền {{định đoạt}} tài sản của chủ sở hữu.",
+   "bank_extra": [
+    "thế chấp",
+    "hưởng dụng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chủ sở hữu được thực hiện mọi hành vi theo ý chí của mình đối với tài sản nhưng không được trái với quy định của {{luật}}.",
+   "bank_extra": [
+    "tập quán",
+    "hợp đồng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người thuê nhà có quyền định đoạt căn nhà đang thuê.",
+   "answer": false,
+   "explain": "Sai. Người thuê chỉ được chiếm hữu, sử dụng theo hợp đồng; quyền định đoạt vẫn thuộc chủ sở hữu."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày nội dung quyền sở hữu.",
+   "model": "Quyền sở hữu gồm quyền chiếm hữu, quyền sử dụng, quyền định đoạt tài sản (Điều 158); chủ sở hữu được thực hiện mọi hành vi theo ý chí nhưng không trái luật, không gây thiệt hại lợi ích quốc gia, công cộng, quyền của người khác (khoản 2 Điều 160).",
+   "keywords": [
+    "chiếm hữu",
+    "sử dụng",
+    "định đoạt",
+    "không trái luật"
+   ]
+  }
+ ]
+}

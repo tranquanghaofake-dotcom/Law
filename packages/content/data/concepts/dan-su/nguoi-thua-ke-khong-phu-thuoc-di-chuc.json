@@ -1,0 +1,118 @@
+{
+ "id": "nguoi-thua-ke-khong-phu-thuoc-di-chuc",
+ "subject": "dan-su",
+ "chapter": "v12",
+ "term": "Người thừa kế không phụ thuộc vào nội dung di chúc",
+ "definition": "Những người sau đây vẫn được hưởng phần di sản bằng hai phần ba suất của một người thừa kế theo pháp luật nếu di sản được chia theo pháp luật, trong trường hợp họ không được người lập di chúc cho hưởng di sản hoặc chỉ cho hưởng phần di sản ít hơn hai phần ba suất đó: a) Con chưa thành niên, cha, mẹ, vợ, chồng; b) Con thành niên mà không có khả năng lao động.",
+ "plain": "Đây là GIỚI HẠN quyền định đoạt bằng di chúc để bảo vệ người thân phụ thuộc: CON CHƯA THÀNH NIÊN, CHA, MẸ, VỢ, CHỒNG, CON THÀNH NIÊN KHÔNG CÓ KHẢ NĂNG LAO ĐỘNG được hưởng ít nhất 2/3 suất thừa kế theo pháp luật. Không áp dụng với người từ chối nhận di sản hoặc không có quyền hưởng di sản (khoản 2). Con thành niên có khả năng lao động KHÔNG thuộc diện này.",
+ "example": "Ông A có vợ và hai con (một con 10 tuổi, một con 25 tuổi khỏe mạnh), lập di chúc để lại toàn bộ 900 triệu cho người cháu. Chia theo pháp luật, mỗi người hàng thứ nhất được 300 triệu; vợ và con 10 tuổi mỗi người vẫn được hưởng 2/3 × 300 = 200 triệu; con 25 tuổi khỏe mạnh không được.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 644 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "di-chuc",
+  "thua-ke-theo-phap-luat"
+ ],
+ "keywords": [
+  "hai phần ba suất",
+  "con chưa thành niên, cha, mẹ, vợ, chồng",
+  "con thành niên không có khả năng lao động"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người thừa kế không phụ thuộc vào nội dung di chúc được hưởng bao nhiêu?",
+   "options": [
+    "Hai phần ba suất của một người thừa kế theo pháp luật",
+    "Một nửa di sản",
+    "Toàn bộ suất thừa kế theo pháp luật",
+    "Một phần ba suất"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 644.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 644 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai KHÔNG thuộc diện người thừa kế không phụ thuộc vào nội dung di chúc?",
+   "options": [
+    "Con thành niên có khả năng lao động",
+    "Vợ của người lập di chúc",
+    "Con chưa thành niên",
+    "Mẹ của người lập di chúc"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 644 chỉ bảo vệ con thành niên không có khả năng lao động.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 644 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thuộc diện Điều 644",
+   "right": "Không thuộc diện Điều 644",
+   "cases": [
+    {
+     "text": "Con 12 tuổi",
+     "answer": "left"
+    },
+    {
+     "text": "Chồng của người lập di chúc",
+     "answer": "left"
+    },
+    {
+     "text": "Anh ruột của người lập di chúc",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 644."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Những người này vẫn được hưởng phần di sản bằng {{hai phần ba}} suất của một người thừa kế theo {{pháp luật}}.",
+   "bank_extra": [
+    "một nửa",
+    "di chúc"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Con thành niên mà không có {{khả năng lao động}} là người thừa kế không phụ thuộc vào nội dung di chúc.",
+   "bank_extra": [
+    "nhà ở",
+    "việc làm ổn định"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người từ chối nhận di sản vẫn được hưởng 2/3 suất theo Điều 644.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 644 loại trừ người từ chối nhận di sản và người không có quyền hưởng di sản."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quy định về người thừa kế không phụ thuộc vào nội dung di chúc.",
+   "model": "Con chưa thành niên, cha, mẹ, vợ, chồng; con thành niên không có khả năng lao động vẫn được hưởng 2/3 suất của một người thừa kế theo pháp luật nếu không được cho hưởng hoặc được hưởng ít hơn (khoản 1 Điều 644); không áp dụng với người từ chối nhận hoặc không có quyền hưởng di sản (khoản 2).",
+   "keywords": [
+    "hai phần ba",
+    "chưa thành niên",
+    "vợ, chồng",
+    "không có khả năng lao động"
+   ]
+  }
+ ]
+}

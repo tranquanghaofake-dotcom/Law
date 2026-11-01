@@ -20,6 +20,7 @@ Mọi `definition` kiểu `statute` là **nguyên văn** điều/khoản của v
 | Bộ luật Dân sự 1995 (44-L/CTN, hiệu lực 01/7/1996); Luật Doanh nghiệp 13/1999/QH10 (hiệu lực 01/01/2000) — **đã hết hiệu lực** | BLDS 1995: bản chữ thuvienphapluat.vn …/Bo-luat-Dan-su-1995-44-L-CTN-39391.aspx ; LDN 1999: https://vbpl.vn/en/van-ban/chi-tiet/luat-doanh-nghiep-so-13-1999-qh10--7040 (đã tách chữ dính) | 01/11/2026 | Chương 8 môn LSNN&PL. |
 | Hậu Hán thư, quyển 24, Mã Viện liệt truyện (chữ Hán) | https://zh.wikisource.org/zh-hant/後漢書/卷24 | 01/11/2026 | Phạm vi công cộng; bản dịch tiếng Việt do người soạn. |
 | Bộ luật Dân sự 2015, Bộ luật Lao động 2019, Bộ luật Hình sự 2015 (hợp nhất) | thuvienphapluat.vn / vbpl.vn | 31/10/2026 | Dùng cho 5 bộ 10 câu trong `sets/` (kế thừa từ web v1). |
+| Bộ luật Dân sự 91/2015/QH13 (hiệu lực 01/01/2017) | https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx (vbpl.vn chặn reCAPTCHA) | 01/11/2026 | Toàn văn 689 điều: `laws/blds-2015.txt`. Môn Luật Dân sự 1 (24 khái niệm, 2 đề kiểm tra) theo đề cương LDS1 HLU (Drive). Trích theo bản gốc 2015; chưa thấy văn bản sửa đổi các điều đã dùng trong nguồn — cần đối chiếu lại trên vbpl.vn. |
 
 Bản text toàn văn Hiến pháp dùng khi soạn thẻ và kiểm tra tự động: `web/content/laws/hien-phap-2013.txt` (nguyên văn từ vbpl.vn, không thuộc phạm vi bảo hộ quyền tác giả).
 
@@ -30,5 +31,6 @@ Bản text toàn văn Hiến pháp dùng khi soạn thẻ và kiểm tra tự đ
 | Luật Hiến pháp | Mục lục 11 chương do Hào cung cấp (ảnh chụp, 01/11/2026; ảnh lần 2 có số trang: chương 1 tr.1, chương 11 tr.180) | Chia chương. Chưa rõ tên sách/nhà xuất bản — cần Hào bổ sung. Chương 1 làm dạng tóm lược học thuật, chưa đối chiếu trang 1–9. |
 | Lịch sử NN&PL Việt Nam | Giáo trình Lịch sử nhà nước và pháp luật, ĐH Luật Hà Nội, NXB Tư pháp 2025 (TS. Trần Hồng Nhung chủ biên), Phần thứ hai, chương 5–8 | Chia chương; mục lục lấy từ http://tuanhsl.blogspot.com/2025/10/giao-trinh-lich-su-nha-nuoc-va-phap-luat.html |
 | Luật Chứng khoán | Giáo trình Luật Chứng khoán, ĐH Luật Hà Nội, NXB CAND 2021 (TS. Phạm Thị Giang Thu chủ biên), 10 chương | Chia chương; mục lục theo https://luatminhkhue.vn/giao-trinh-luat-chung-khoan-truong-dai-hoc-luat-ha-noi.aspx |
+| Luật Dân sự 1 | Đề cương học phần Luật Dân sự 1, ĐH Luật Hà Nội (Drive HLU/KÌ II NĂM I/LUẬT DÂN SỰ), 13 vấn đề | Chia 13 vấn đề; nội dung khái niệm lấy nguyên văn BLDS 2015. |
 
 Khái niệm `kind: textbook` là **tóm lược quan điểm phổ biến**, ghi rõ "chưa đối chiếu nguyên văn giáo trình" cho tới khi Hào đối chiếu với sách in.

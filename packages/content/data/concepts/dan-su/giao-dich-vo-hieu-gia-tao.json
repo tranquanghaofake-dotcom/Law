@@ -1,0 +1,119 @@
+{
+ "id": "giao-dich-vo-hieu-gia-tao",
+ "subject": "dan-su",
+ "chapter": "v4",
+ "term": "Giao dịch vô hiệu do vi phạm điều cấm và do giả tạo",
+ "definition": "Giao dịch dân sự có mục đích, nội dung vi phạm điều cấm của luật, trái đạo đức xã hội thì vô hiệu. (…) Khi các bên xác lập giao dịch dân sự một cách giả tạo nhằm che giấu một giao dịch dân sự khác thì giao dịch dân sự giả tạo vô hiệu, còn giao dịch dân sự bị che giấu vẫn có hiệu lực, trừ trường hợp giao dịch đó cũng vô hiệu theo quy định của Bộ luật này hoặc luật khác có liên quan.",
+ "plain": "VÔ HIỆU DO VI PHẠM ĐIỀU CẤM, TRÁI ĐẠO ĐỨC (Điều 123): \"điều cấm của luật\" là quy định không cho phép thực hiện hành vi nhất định; \"đạo đức xã hội\" là chuẩn mực ứng xử chung được cộng đồng thừa nhận. VÔ HIỆU DO GIẢ TẠO (Điều 124): giao dịch giả tạo vô hiệu, giao dịch bị che giấu vẫn có hiệu lực nếu bản thân nó hợp pháp; giao dịch giả tạo nhằm trốn tránh nghĩa vụ với người thứ ba thì vô hiệu. Hậu quả chung (Điều 131): khôi phục tình trạng ban đầu, hoàn trả cho nhau những gì đã nhận.",
+ "example": "Hai bên ký hợp đồng \"tặng cho\" nhà để che giấu việc mua bán nhằm tránh thuế: hợp đồng tặng cho giả tạo vô hiệu; hợp đồng mua bán bị che giấu có hiệu lực nếu đáp ứng điều kiện của hợp đồng mua bán.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 123, khoản 1 Điều 124 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "dieu-kien-hieu-luc-giao-dich",
+  "giao-dich-dan-su"
+ ],
+ "keywords": [
+  "vi phạm điều cấm",
+  "trái đạo đức xã hội",
+  "giả tạo",
+  "giao dịch bị che giấu"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khi giao dịch giả tạo nhằm che giấu một giao dịch khác thì giao dịch bị che giấu có hiệu lực không?",
+   "options": [
+    "Vẫn có hiệu lực, trừ khi bản thân nó cũng vô hiệu theo luật",
+    "Luôn vô hiệu",
+    "Luôn có hiệu lực",
+    "Do Ủy ban nhân dân quyết định"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 124.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 124 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 123, \"điều cấm của luật\" là gì?",
+   "options": [
+    "Những quy định của luật không cho phép chủ thể thực hiện những hành vi nhất định",
+    "Những chuẩn mực đạo đức",
+    "Mọi quy định của nghị định",
+    "Tập quán địa phương"
+   ],
+   "answer": 0,
+   "explain": "Đoạn 2 Điều 123.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 123 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Vô hiệu do vi phạm điều cấm",
+   "right": "Vô hiệu do giả tạo",
+   "cases": [
+    {
+     "text": "Hợp đồng mua bán động vật hoang dã quý hiếm bị cấm",
+     "answer": "left"
+    },
+    {
+     "text": "Hợp đồng tặng cho che giấu hợp đồng mua bán",
+     "answer": "right"
+    },
+    {
+     "text": "Bán nhà giả để tẩu tán tài sản, trốn nợ",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 123, 124."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Khi các bên xác lập giao dịch dân sự một cách {{giả tạo}} nhằm che giấu một giao dịch dân sự khác thì giao dịch giả tạo vô hiệu, còn giao dịch bị che giấu vẫn có {{hiệu lực}}.",
+   "bank_extra": [
+    "bí mật",
+    "giá trị tham khảo"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đạo đức xã hội là những chuẩn mực ứng xử chung trong đời sống xã hội, được cộng đồng {{thừa nhận}} và tôn trọng.",
+   "bank_extra": [
+    "ban hành",
+    "cưỡng chế"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Giao dịch giả tạo nhằm trốn tránh nghĩa vụ với người thứ ba vẫn có hiệu lực.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 124: giao dịch đó vô hiệu."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày giao dịch dân sự vô hiệu do vi phạm điều cấm, trái đạo đức xã hội và do giả tạo.",
+   "model": "Điều 123: mục đích, nội dung vi phạm điều cấm của luật, trái đạo đức xã hội thì vô hiệu; định nghĩa điều cấm, đạo đức xã hội. Điều 124: giao dịch giả tạo che giấu giao dịch khác thì giao dịch giả tạo vô hiệu, giao dịch bị che giấu có hiệu lực nếu hợp pháp; giả tạo để trốn nghĩa vụ với người thứ ba thì vô hiệu.",
+   "keywords": [
+    "điều cấm",
+    "đạo đức xã hội",
+    "giả tạo",
+    "che giấu"
+   ]
+  }
+ ]
+}
