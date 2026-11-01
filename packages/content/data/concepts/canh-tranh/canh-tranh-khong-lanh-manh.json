@@ -1,0 +1,115 @@
+{
+ "id": "canh-tranh-khong-lanh-manh",
+ "subject": "canh-tranh",
+ "chapter": "v6",
+ "term": "Hành vi cạnh tranh không lành mạnh",
+ "definition": "Hành vi cạnh tranh không lành mạnh là hành vi của doanh nghiệp trái với nguyên tắc thiện chí, trung thực, tập quán thương mại và các chuẩn mực khác trong kinh doanh, gây thiệt hại hoặc có thể gây thiệt hại đến quyền và lợi ích hợp pháp của doanh nghiệp khác.",
+ "plain": "Ba dấu hiệu: (1) chủ thể là DOANH NGHIỆP; (2) TRÁI với nguyên tắc THIỆN CHÍ, TRUNG THỰC, TẬP QUÁN THƯƠNG MẠI, chuẩn mực kinh doanh; (3) GÂY THIỆT HẠI HOẶC CÓ THỂ GÂY THIỆT HẠI cho DOANH NGHIỆP KHÁC. Không cần doanh nghiệp vi phạm có vị trí thống lĩnh hay thị phần lớn. Phân biệt với hành vi hạn chế cạnh tranh (bảo vệ cấu trúc thị trường). Lưu ý: quảng cáo, khuyến mại sai lệch nay chủ yếu do Luật Quảng cáo, Luật Thương mại điều chỉnh (khoản 2 Điều 4).",
+ "example": "Công ty A tung tin sai trên mạng xã hội rằng sản phẩm của công ty B chứa chất độc hại: hành vi cung cấp thông tin không trung thực về doanh nghiệp khác (khoản 3 Điều 45).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 6 Điều 3 Luật Cạnh tranh 2018",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hanh-vi-canh-tranh-khong-lanh-manh-bi-cam",
+  "hanh-vi-han-che-canh-tranh"
+ ],
+ "keywords": [
+  "thiện chí, trung thực",
+  "tập quán thương mại",
+  "gây thiệt hại hoặc có thể gây thiệt hại",
+  "doanh nghiệp khác"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hành vi cạnh tranh không lành mạnh trái với những nguyên tắc nào?",
+   "options": [
+    "Thiện chí, trung thực, tập quán thương mại và các chuẩn mực khác trong kinh doanh",
+    "Nguyên tắc tập trung dân chủ",
+    "Nguyên tắc pháp chế xã hội chủ nghĩa",
+    "Nguyên tắc ưu tiên doanh nghiệp nhà nước"
+   ],
+   "answer": 0,
+   "explain": "Khoản 6 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 6 Điều 3 Luật Cạnh tranh 2018"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Để bị coi là cạnh tranh không lành mạnh, doanh nghiệp vi phạm có cần có vị trí thống lĩnh không?",
+   "options": [
+    "Không cần",
+    "Cần thị phần từ 30%",
+    "Cần là doanh nghiệp nhà nước",
+    "Cần có vốn nước ngoài"
+   ],
+   "answer": 0,
+   "explain": "Khoản 6 Điều 3 không đòi hỏi vị trí thống lĩnh.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 6 Điều 3 Luật Cạnh tranh 2018"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Cạnh tranh không lành mạnh",
+   "right": "Hạn chế cạnh tranh",
+   "cases": [
+    {
+     "text": "Gièm pha uy tín doanh nghiệp khác",
+     "answer": "left"
+    },
+    {
+     "text": "Thỏa thuận chia thị trường",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 3."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hành vi cạnh tranh không lành mạnh là hành vi của doanh nghiệp trái với nguyên tắc thiện chí, trung thực, {{tập quán thương mại}} và các chuẩn mực khác trong kinh doanh, gây thiệt hại hoặc {{có thể}} gây thiệt hại đến quyền và lợi ích hợp pháp của doanh nghiệp khác.",
+   "bank_extra": [
+    "chính sách nhà nước",
+    "chắc chắn"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hành vi cạnh tranh không lành mạnh xâm hại quyền và lợi ích hợp pháp của {{doanh nghiệp}} khác.",
+   "bank_extra": [
+    "Nhà nước",
+    "hiệp hội"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chỉ khi thiệt hại thực tế đã xảy ra mới có hành vi cạnh tranh không lành mạnh.",
+   "answer": false,
+   "explain": "Sai. Khoản 6 Điều 3: \"gây thiệt hại hoặc có thể gây thiệt hại\"."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm và dấu hiệu của hành vi cạnh tranh không lành mạnh.",
+   "model": "Là hành vi của doanh nghiệp trái nguyên tắc thiện chí, trung thực, tập quán thương mại, chuẩn mực kinh doanh, gây thiệt hại hoặc có thể gây thiệt hại đến quyền, lợi ích hợp pháp của doanh nghiệp khác (khoản 6 Điều 3).",
+   "keywords": [
+    "doanh nghiệp",
+    "thiện chí, trung thực",
+    "tập quán thương mại",
+    "có thể gây thiệt hại"
+   ]
+  }
+ ]
+}

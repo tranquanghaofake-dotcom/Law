@@ -1,0 +1,115 @@
+{
+ "id": "thi-truong-lien-quan",
+ "subject": "canh-tranh",
+ "chapter": "v2",
+ "term": "Thị trường liên quan",
+ "definition": "Thị trường liên quan được xác định trên cơ sở thị trường sản phẩm liên quan và thị trường địa lý liên quan. Thị trường sản phẩm liên quan là thị trường của những hàng hóa, dịch vụ có thể thay thế cho nhau về đặc tính, mục đích sử dụng và giá cả. Thị trường địa lý liên quan là khu vực địa lý cụ thể trong đó có những hàng hóa, dịch vụ được cung cấp có thể thay thế cho nhau với các điều kiện cạnh tranh tương tự và có sự khác biệt đáng kể với các khu vực địa lý lân cận.",
+ "plain": "Xác định thị trường liên quan là BƯỚC ĐẦU TIÊN để đánh giá hành vi hạn chế cạnh tranh (tính thị phần, vị trí thống lĩnh). Hai yếu tố: THỊ TRƯỜNG SẢN PHẨM (khả năng THAY THẾ về đặc tính, mục đích sử dụng, giá cả) và THỊ TRƯỜNG ĐỊA LÝ (điều kiện cạnh tranh tương tự, khác biệt đáng kể với khu vực lân cận). Chi tiết: Nghị định 35/2020/NĐ-CP (phép thử SSNIP…).",
+ "example": "Nước khoáng đóng chai và nước ngọt có ga có thể không cùng thị trường sản phẩm nếu người tiêu dùng không coi là thay thế cho nhau về mục đích sử dụng và giá cả.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 9 Luật Cạnh tranh 2018",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "thi-phan",
+  "vi-tri-thong-linh-thi-truong"
+ ],
+ "keywords": [
+  "thị trường sản phẩm liên quan",
+  "thị trường địa lý liên quan",
+  "thay thế cho nhau",
+  "điều kiện cạnh tranh tương tự"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thị trường liên quan được xác định trên cơ sở những yếu tố nào?",
+   "options": [
+    "Thị trường sản phẩm liên quan và thị trường địa lý liên quan",
+    "Doanh thu và lợi nhuận",
+    "Số lượng doanh nghiệp",
+    "Vốn điều lệ"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 9.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 9 Luật Cạnh tranh 2018"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thị trường sản phẩm liên quan là thị trường của hàng hóa, dịch vụ có thể thay thế cho nhau về những tiêu chí nào?",
+   "options": [
+    "Đặc tính, mục đích sử dụng và giá cả",
+    "Màu sắc, kích thước",
+    "Thương hiệu, xuất xứ",
+    "Nhà sản xuất"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 9.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 9 Luật Cạnh tranh 2018"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thị trường sản phẩm",
+   "right": "Thị trường địa lý",
+   "cases": [
+    {
+     "text": "Khả năng thay thế về đặc tính, mục đích, giá",
+     "answer": "left"
+    },
+    {
+     "text": "Khu vực có điều kiện cạnh tranh tương tự",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 9."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thị trường sản phẩm liên quan là thị trường của những hàng hóa, dịch vụ có thể {{thay thế}} cho nhau về đặc tính, mục đích sử dụng và {{giá cả}}.",
+   "bank_extra": [
+    "bổ sung",
+    "bao bì"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thị trường địa lý liên quan có các điều kiện cạnh tranh tương tự và có sự khác biệt {{đáng kể}} với các khu vực địa lý lân cận.",
+   "bank_extra": [
+    "nhỏ",
+    "không"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thị trường liên quan chỉ được xác định theo ranh giới hành chính cấp tỉnh.",
+   "answer": false,
+   "explain": "Sai. Thị trường địa lý xác định theo điều kiện cạnh tranh tương tự, không theo ranh giới hành chính (khoản 1 Điều 9)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày cách xác định thị trường liên quan.",
+   "model": "Xác định trên cơ sở thị trường sản phẩm liên quan (hàng hóa, dịch vụ thay thế được về đặc tính, mục đích sử dụng, giá cả) và thị trường địa lý liên quan (khu vực có điều kiện cạnh tranh tương tự, khác biệt đáng kể với khu vực lân cận) (Điều 9).",
+   "keywords": [
+    "sản phẩm",
+    "địa lý",
+    "thay thế",
+    "tương tự"
+   ]
+  }
+ ]
+}

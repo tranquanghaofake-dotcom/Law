@@ -1,0 +1,119 @@
+{
+ "id": "thoa-thuan-han-che-canh-tranh-bi-cam",
+ "subject": "canh-tranh",
+ "chapter": "v3",
+ "term": "Thỏa thuận hạn chế cạnh tranh bị cấm",
+ "definition": "Thỏa thuận hạn chế cạnh tranh giữa các doanh nghiệp trên cùng thị trường liên quan quy định tại các khoản 1, 2 và 3 Điều 11 của Luật này. Thỏa thuận hạn chế cạnh tranh giữa các doanh nghiệp quy định tại các khoản 4, 5 và 6 Điều 11 của Luật này.",
+ "plain": "Hai cơ chế: CẤM TUYỆT ĐỐI (per se) — không cần chứng minh tác động: ấn định giá, phân chia thị trường, hạn chế số lượng giữa doanh nghiệp CÙNG thị trường liên quan (khoản 1); thông đồng đấu thầu, ngăn cản gia nhập, loại bỏ doanh nghiệp khác giữa MỌI doanh nghiệp (khoản 2). CẤM CÓ ĐIỀU KIỆN (rule of reason) — chỉ cấm khi gây tác động hạn chế cạnh tranh MỘT CÁCH ĐÁNG KỂ (khoản 3, 4, kể cả thỏa thuận dọc). BLLCT 2018 bỏ ngưỡng thị phần kết hợp 30% của Luật 2004.",
+ "example": "Hai công ty xây dựng thỏa thuận để công ty A thắng gói thầu, công ty B nộp giá cao \"làm nền\": bị cấm tuyệt đối theo khoản 2 Điều 12, không cần chứng minh tác động đáng kể.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 12 Luật Cạnh tranh 2018",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "thoa-thuan-han-che-canh-tranh",
+  "mien-tru-thoa-thuan"
+ ],
+ "keywords": [
+  "cấm tuyệt đối",
+  "cùng thị trường liên quan",
+  "thông đồng đấu thầu",
+  "tác động đáng kể"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thỏa thuận ấn định giá giữa các doanh nghiệp trên cùng thị trường liên quan thì sao?",
+   "options": [
+    "Bị cấm theo khoản 1 Điều 12 mà không cần chứng minh tác động đáng kể",
+    "Chỉ bị cấm nếu thị phần kết hợp từ 30%",
+    "Không bị cấm",
+    "Chỉ bị cấm khi gây thiệt hại thực tế"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 12.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 12 Luật Cạnh tranh 2018"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thỏa thuận hạn chế phát triển kỹ thuật, công nghệ (khoản 7 Điều 11) giữa các doanh nghiệp cùng thị trường liên quan bị cấm khi nào?",
+   "options": [
+    "Khi gây tác động hoặc có khả năng gây tác động hạn chế cạnh tranh một cách đáng kể",
+    "Trong mọi trường hợp",
+    "Không bao giờ",
+    "Khi có đơn khiếu nại"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 12.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 12 Luật Cạnh tranh 2018"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Cấm tuyệt đối",
+   "right": "Chỉ cấm khi tác động đáng kể",
+   "cases": [
+    {
+     "text": "Thông đồng đấu thầu",
+     "answer": "left"
+    },
+    {
+     "text": "Thỏa thuận không giao dịch với bên ngoài",
+     "answer": "right"
+    },
+    {
+     "text": "Thỏa thuận loại bỏ doanh nghiệp khác khỏi thị trường",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 12."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thỏa thuận ấn định giá, phân chia thị trường, hạn chế số lượng giữa các doanh nghiệp trên {{cùng}} thị trường liên quan bị cấm; thỏa thuận thông đồng đấu thầu, ngăn cản, {{loại bỏ}} doanh nghiệp khác bị cấm giữa mọi doanh nghiệp.",
+   "bank_extra": [
+    "khác",
+    "khuyến khích"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thỏa thuận theo các khoản 7–11 Điều 11 bị cấm khi gây tác động hạn chế cạnh tranh một cách {{đáng kể}} trên thị trường.",
+   "bank_extra": [
+    "nhỏ",
+    "tạm thời"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo Luật Cạnh tranh 2018, thỏa thuận ấn định giá chỉ bị cấm khi thị phần kết hợp của các bên từ 30% trở lên.",
+   "answer": false,
+   "explain": "Sai. Luật 2018 bỏ ngưỡng thị phần; thỏa thuận ấn định giá giữa doanh nghiệp cùng thị trường liên quan bị cấm theo khoản 1 Điều 12."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày các trường hợp thỏa thuận hạn chế cạnh tranh bị cấm.",
+   "model": "Cấm thỏa thuận ấn định giá, phân chia thị trường, hạn chế số lượng giữa doanh nghiệp cùng thị trường liên quan (khoản 1); thông đồng đấu thầu, ngăn cản gia nhập, loại bỏ doanh nghiệp khác (khoản 2); các thỏa thuận khác chỉ bị cấm khi gây tác động hạn chế cạnh tranh đáng kể (khoản 3, 4 Điều 12).",
+   "keywords": [
+    "cùng thị trường",
+    "đấu thầu",
+    "loại bỏ",
+    "đáng kể"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,139 @@
+{
+  "id": "canh-tranh-de-2",
+  "group": "canh-tranh",
+  "title": "Đề kiểm tra Luật Cạnh tranh – Tập trung kinh tế, cạnh tranh không lành mạnh, xử lý",
+  "subtitle": "10 câu theo đề cương HLU, vấn đề 5–7",
+  "updated": "2026-11-01",
+  "questions": [
+    {
+      "q": "Công ty A mua 70% vốn của công ty B, đủ để chi phối B. Đây là hình thức tập trung kinh tế nào?",
+      "options": [
+        "Sáp nhập",
+        "Hợp nhất",
+        "Mua lại doanh nghiệp",
+        "Liên doanh"
+      ],
+      "answer": 2,
+      "explain": "Khoản 4 Điều 29.",
+      "basis": "Điều 29 Luật Cạnh tranh 2018",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx"
+    },
+    {
+      "q": "Hai doanh nghiệp cùng góp tài sản lập doanh nghiệp mới, cả hai vẫn tồn tại. Đây là hình thức nào?",
+      "options": [
+        "Liên doanh",
+        "Hợp nhất",
+        "Sáp nhập",
+        "Mua lại"
+      ],
+      "answer": 0,
+      "explain": "Khoản 5 Điều 29.",
+      "basis": "Điều 29 Luật Cạnh tranh 2018",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx"
+    },
+    {
+      "q": "Tập trung kinh tế bị cấm khi nào?",
+      "options": [
+        "Khi gây tác động hoặc có khả năng gây tác động hạn chế cạnh tranh một cách đáng kể trên thị trường Việt Nam",
+        "Khi thị phần kết hợp trên 30%",
+        "Mọi trường hợp",
+        "Khi có doanh nghiệp nước ngoài tham gia"
+      ],
+      "answer": 0,
+      "explain": "Điều 30.",
+      "basis": "Điều 30 Luật Cạnh tranh 2018",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx"
+    },
+    {
+      "q": "Doanh nghiệp thuộc ngưỡng thông báo tập trung kinh tế phải nộp hồ sơ khi nào?",
+      "options": [
+        "Trước khi tiến hành tập trung kinh tế",
+        "Sau khi hoàn tất",
+        "Trong 90 ngày sau khi hoàn tất",
+        "Không bắt buộc"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 33.",
+      "basis": "Điều 33 Luật Cạnh tranh 2018",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx"
+    },
+    {
+      "q": "Ủy ban Cạnh tranh Quốc gia phải thông báo kết quả thẩm định sơ bộ trong bao lâu kể từ khi nhận hồ sơ đầy đủ?",
+      "options": [
+        "15 ngày",
+        "30 ngày",
+        "60 ngày",
+        "90 ngày"
+      ],
+      "answer": 1,
+      "explain": "Khoản 2 Điều 36.",
+      "basis": "Điều 36 Luật Cạnh tranh 2018",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx"
+    },
+    {
+      "q": "Nhân viên cũ mang danh sách khách hàng mật của công ty A sang công ty B, B sử dụng mà không được A cho phép. B có thể vi phạm gì?",
+      "options": [
+        "Xâm phạm thông tin bí mật trong kinh doanh",
+        "Lạm dụng vị trí thống lĩnh",
+        "Thỏa thuận hạn chế cạnh tranh",
+        "Không vi phạm"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 45.",
+      "basis": "Điều 45 Luật Cạnh tranh 2018",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx"
+    },
+    {
+      "q": "Công ty quảng cáo \"sản phẩm của chúng tôi tốt hơn sản phẩm của X\" nhưng không chứng minh được. Đây là hành vi gì?",
+      "options": [
+        "Lôi kéo khách hàng bất chính",
+        "Gây rối hoạt động kinh doanh",
+        "Hành vi hợp pháp",
+        "Ép buộc khách hàng"
+      ],
+      "answer": 0,
+      "explain": "Điểm b khoản 5 Điều 45.",
+      "basis": "Điều 45 Luật Cạnh tranh 2018",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx"
+    },
+    {
+      "q": "Ủy ban Cạnh tranh Quốc gia là cơ quan thuộc cơ quan nào?",
+      "options": [
+        "Bộ Công Thương",
+        "Bộ Tài chính",
+        "Tòa án nhân dân tối cao",
+        "Văn phòng Chính phủ"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 46.",
+      "basis": "Điều 46 Luật Cạnh tranh 2018",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx"
+    },
+    {
+      "q": "Mức phạt tiền tối đa với tổ chức có hành vi cạnh tranh không lành mạnh là bao nhiêu?",
+      "options": [
+        "200 triệu đồng",
+        "2 tỷ đồng",
+        "10% doanh thu",
+        "5% doanh thu"
+      ],
+      "answer": 1,
+      "explain": "Khoản 3 Điều 111.",
+      "basis": "Điều 111 Luật Cạnh tranh 2018",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx"
+    },
+    {
+      "q": "Hình thức xử phạt chính đối với vi phạm pháp luật cạnh tranh gồm những gì?",
+      "options": [
+        "Cảnh cáo hoặc phạt tiền",
+        "Tù có thời hạn",
+        "Đình chỉ hoạt động vĩnh viễn",
+        "Tịch thu toàn bộ tài sản"
+      ],
+      "answer": 0,
+      "explain": "Khoản 2 Điều 110.",
+      "basis": "Điều 110 Luật Cạnh tranh 2018",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx"
+    }
+  ]
+}

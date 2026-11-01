@@ -1,0 +1,115 @@
+{
+ "id": "hanh-vi-cam-co-quan-nha-nuoc",
+ "subject": "canh-tranh",
+ "chapter": "v1",
+ "term": "Hành vi bị nghiêm cấm của cơ quan nhà nước liên quan đến cạnh tranh",
+ "definition": "Cơ quan nhà nước thực hiện hành vi gây cản trở cạnh tranh trên thị trường sau đây: a) Ép buộc, yêu cầu, khuyến nghị doanh nghiệp, cơ quan, tổ chức, cá nhân phải thực hiện hoặc không thực hiện việc sản xuất, mua, bán hàng hóa, cung ứng, sử dụng dịch vụ cụ thể hoặc mua, bán hàng hóa, cung ứng, sử dụng dịch vụ với doanh nghiệp cụ thể, trừ hàng hóa, dịch vụ thuộc lĩnh vực độc quyền nhà nước hoặc trong trường hợp khẩn cấp theo quy định của pháp luật; b) Phân biệt đối xử giữa các doanh nghiệp;",
+ "plain": "Luật cấm \"hạn chế cạnh tranh do hành chính\": cơ quan nhà nước ÉP BUỘC, YÊU CẦU, KHUYẾN NGHỊ mua bán với doanh nghiệp cụ thể; PHÂN BIỆT ĐỐI XỬ giữa doanh nghiệp; ép hiệp hội, doanh nghiệp liên kết hạn chế cạnh tranh; LỢI DỤNG CHỨC VỤ can thiệp trái luật. Ngoại lệ: lĩnh vực độc quyền nhà nước, trường hợp khẩn cấp. Khoản 2: cấm tổ chức, cá nhân vận động, kêu gọi, ép buộc doanh nghiệp thực hiện hành vi hạn chế cạnh tranh, cạnh tranh không lành mạnh.",
+ "example": "Ủy ban nhân dân huyện ra văn bản \"đề nghị\" các trường học chỉ mua đồng phục của công ty X: hành vi bị nghiêm cấm theo điểm a khoản 1 Điều 8.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điểm a, b khoản 1 Điều 8 Luật Cạnh tranh 2018",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "pham-vi-dieu-chinh-luat-canh-tranh",
+  "thoa-thuan-han-che-canh-tranh"
+ ],
+ "keywords": [
+  "ép buộc, yêu cầu, khuyến nghị",
+  "doanh nghiệp cụ thể",
+  "phân biệt đối xử",
+  "trừ độc quyền nhà nước, khẩn cấp"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hành vi nào của cơ quan nhà nước bị nghiêm cấm theo Điều 8?",
+   "options": [
+    "Phân biệt đối xử giữa các doanh nghiệp",
+    "Ban hành quy chuẩn kỹ thuật chung",
+    "Tổ chức đấu thầu công khai",
+    "Kiểm tra an toàn thực phẩm"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 1 Điều 8.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 8 Luật Cạnh tranh 2018"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Cơ quan nhà nước khuyến nghị dân mua hàng của doanh nghiệp cụ thể trong trường hợp nào thì KHÔNG bị cấm?",
+   "options": [
+    "Hàng hóa thuộc lĩnh vực độc quyền nhà nước hoặc trường hợp khẩn cấp theo luật",
+    "Khi doanh nghiệp đó nộp thuế nhiều",
+    "Khi doanh nghiệp đó là doanh nghiệp địa phương",
+    "Không có ngoại lệ"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 8.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 8 Luật Cạnh tranh 2018"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Bị nghiêm cấm (Điều 8)",
+   "right": "Không bị cấm",
+   "cases": [
+    {
+     "text": "Sở yêu cầu các bệnh viện chỉ mua thuốc của một công ty cụ thể",
+     "answer": "left"
+    },
+    {
+     "text": "Cơ quan nhà nước tổ chức đấu thầu công khai, minh bạch",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 8."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Cơ quan nhà nước bị cấm ép buộc, yêu cầu, {{khuyến nghị}} mua, bán hàng hóa với doanh nghiệp cụ thể, và bị cấm {{phân biệt đối xử}} giữa các doanh nghiệp.",
+   "bank_extra": [
+    "khen thưởng",
+    "bảo hộ"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Cơ quan nhà nước bị cấm lợi dụng chức vụ, quyền hạn để can thiệp {{trái pháp luật}} vào hoạt động cạnh tranh.",
+   "bank_extra": [
+    "đúng pháp luật",
+    "gián tiếp"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Luật Cạnh tranh chỉ cấm hành vi của doanh nghiệp, không điều chỉnh hành vi của cơ quan nhà nước.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 8 nghiêm cấm cơ quan nhà nước thực hiện hành vi gây cản trở cạnh tranh."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các hành vi bị nghiêm cấm của cơ quan nhà nước liên quan đến cạnh tranh.",
+   "model": "Ép buộc, yêu cầu, khuyến nghị thực hiện hoặc không thực hiện mua bán với doanh nghiệp cụ thể (trừ độc quyền nhà nước, khẩn cấp); phân biệt đối xử giữa doanh nghiệp; ép hiệp hội, doanh nghiệp liên kết hạn chế cạnh tranh; lợi dụng chức vụ can thiệp trái luật (khoản 1 Điều 8).",
+   "keywords": [
+    "ép buộc",
+    "phân biệt đối xử",
+    "hiệp hội",
+    "chức vụ"
+   ]
+  }
+ ]
+}

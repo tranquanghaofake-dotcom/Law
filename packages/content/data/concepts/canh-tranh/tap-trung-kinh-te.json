@@ -1,0 +1,115 @@
+{
+ "id": "tap-trung-kinh-te",
+ "subject": "canh-tranh",
+ "chapter": "v5",
+ "term": "Các hình thức tập trung kinh tế",
+ "definition": "Tập trung kinh tế bao gồm các hình thức sau đây: a) Sáp nhập doanh nghiệp; b) Hợp nhất doanh nghiệp; c) Mua lại doanh nghiệp; d) Liên doanh giữa các doanh nghiệp; đ) Các hình thức tập trung kinh tế khác theo quy định của pháp luật. (…) Mua lại doanh nghiệp là việc một doanh nghiệp trực tiếp hoặc gián tiếp mua toàn bộ hoặc một phần vốn góp, tài sản của doanh nghiệp khác đủ để kiểm soát, chi phối doanh nghiệp hoặc một ngành, nghề của doanh nghiệp bị mua lại.",
+ "plain": "Bốn hình thức chính: SÁP NHẬP (doanh nghiệp bị sáp nhập chấm dứt, nhập vào doanh nghiệp khác); HỢP NHẤT (hình thành doanh nghiệp MỚI, các bên chấm dứt); MUA LẠI (mua vốn, tài sản ĐỦ ĐỂ KIỂM SOÁT, CHI PHỐI); LIÊN DOANH (cùng góp để hình thành doanh nghiệp mới, các bên vẫn tồn tại). Tập trung kinh tế BỊ CẤM khi gây tác động hạn chế cạnh tranh MỘT CÁCH ĐÁNG KỂ trên thị trường Việt Nam (Điều 30) — không cấm theo ngưỡng thị phần cứng như Luật 2004.",
+ "example": "Công ty A mua 70% vốn góp của công ty B, đủ để chi phối B: đây là \"mua lại doanh nghiệp\"; nếu thuộc ngưỡng thì phải thông báo tập trung kinh tế.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 4 Điều 29 Luật Cạnh tranh 2018",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "thong-bao-tap-trung-kinh-te",
+  "thi-phan"
+ ],
+ "keywords": [
+  "sáp nhập",
+  "hợp nhất",
+  "mua lại đủ để kiểm soát, chi phối",
+  "liên doanh"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hai doanh nghiệp chuyển toàn bộ tài sản, quyền, nghĩa vụ để hình thành một doanh nghiệp mới, đồng thời chấm dứt tồn tại. Đây là hình thức nào?",
+   "options": [
+    "Hợp nhất doanh nghiệp",
+    "Sáp nhập doanh nghiệp",
+    "Liên doanh",
+    "Mua lại doanh nghiệp"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 29.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 29 Luật Cạnh tranh 2018"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tập trung kinh tế bị cấm khi nào theo Điều 30?",
+   "options": [
+    "Gây tác động hoặc có khả năng gây tác động hạn chế cạnh tranh một cách đáng kể trên thị trường Việt Nam",
+    "Khi thị phần kết hợp trên 50%",
+    "Khi giá trị giao dịch trên 1.000 tỷ đồng",
+    "Mọi tập trung kinh tế đều bị cấm"
+   ],
+   "answer": 0,
+   "explain": "Điều 30.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 30 Luật Cạnh tranh 2018"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Sáp nhập",
+   "right": "Liên doanh",
+   "cases": [
+    {
+     "text": "Doanh nghiệp bị sáp nhập chấm dứt tồn tại",
+     "answer": "left"
+    },
+    {
+     "text": "Các bên góp vốn lập doanh nghiệp mới, vẫn tồn tại",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 2, 5 Điều 29."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Mua lại doanh nghiệp là việc mua toàn bộ hoặc một phần vốn góp, tài sản của doanh nghiệp khác đủ để {{kiểm soát}}, {{chi phối}} doanh nghiệp hoặc một ngành, nghề của doanh nghiệp bị mua lại.",
+   "bank_extra": [
+    "tư vấn",
+    "hỗ trợ"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tập trung kinh tế bao gồm sáp nhập, hợp nhất, mua lại, {{liên doanh}} giữa các doanh nghiệp và hình thức khác theo pháp luật.",
+   "bank_extra": [
+    "liên kết",
+    "hợp tác kinh doanh"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi giao dịch mua lại doanh nghiệp đều bị cấm theo Luật Cạnh tranh.",
+   "answer": false,
+   "explain": "Sai. Chỉ tập trung kinh tế gây tác động hạn chế cạnh tranh đáng kể mới bị cấm (Điều 30)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày các hình thức tập trung kinh tế và trường hợp bị cấm.",
+   "model": "Gồm sáp nhập, hợp nhất, mua lại, liên doanh và hình thức khác (khoản 1 Điều 29); mua lại là mua vốn, tài sản đủ để kiểm soát, chi phối (khoản 4); tập trung kinh tế bị cấm khi gây tác động hạn chế cạnh tranh đáng kể trên thị trường Việt Nam (Điều 30).",
+   "keywords": [
+    "sáp nhập",
+    "hợp nhất",
+    "mua lại",
+    "đáng kể"
+   ]
+  }
+ ]
+}

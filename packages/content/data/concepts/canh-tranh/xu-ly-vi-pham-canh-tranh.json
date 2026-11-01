@@ -1,0 +1,116 @@
+{
+ "id": "xu-ly-vi-pham-canh-tranh",
+ "subject": "canh-tranh",
+ "chapter": "v7",
+ "term": "Xử lý vi phạm và mức phạt tiền trong pháp luật cạnh tranh",
+ "definition": "Mức phạt tiền tối đa đối với hành vi vi phạm quy định về thỏa thuận hạn chế cạnh tranh, lạm dụng vị trí thống lĩnh thị trường, lạm dụng vị trí độc quyền là 10% tổng doanh thu của doanh nghiệp có hành vi vi phạm trên thị trường liên quan trong năm tài chính liền kề trước năm thực hiện hành vi vi phạm, nhưng thấp hơn mức phạt tiền thấp nhất đối với các hành vi vi phạm được quy định trong Bộ luật Hình sự. Mức phạt tiền tối đa đối với hành vi vi phạm quy định về tập trung kinh tế là 05% tổng doanh thu của doanh nghiệp vi phạm trên thị trường liên quan trong năm tài chính liền kề trước năm thực hiện hành vi vi phạm. Mức phạt tiền tối đa đối với hành vi vi phạm quy định về cạnh tranh không lành mạnh là 2.000.000.000 đồng.",
+ "plain": "Hình thức xử phạt chính (khoản 2 Điều 110): CẢNH CÁO hoặc PHẠT TIỀN. Mức tối đa (tổ chức): 10% doanh thu trên THỊ TRƯỜNG LIÊN QUAN (hạn chế cạnh tranh); 05% (tập trung kinh tế); 2 TỶ ĐỒNG (cạnh tranh không lành mạnh); 200 TRIỆU (vi phạm khác). Cá nhân: bằng MỘT PHẦN HAI tổ chức (khoản 5). Biện pháp khắc phục: cơ cấu lại doanh nghiệp lạm dụng, chia tách, bán lại vốn sau tập trung kinh tế… Thỏa thuận hạn chế cạnh tranh nghiêm trọng có thể bị truy cứu TNHS (Điều 217 BLHS).",
+ "example": "Doanh nghiệp tham gia thỏa thuận ấn định giá có doanh thu trên thị trường liên quan năm trước là 100 tỷ: mức phạt tối đa 10 tỷ đồng.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1–3 Điều 111 Luật Cạnh tranh 2018",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "uy-ban-canh-tranh-quoc-gia",
+  "thoa-thuan-han-che-canh-tranh-bi-cam",
+  "hanh-vi-canh-tranh-khong-lanh-manh-bi-cam"
+ ],
+ "keywords": [
+  "10% doanh thu trên thị trường liên quan",
+  "05% tập trung kinh tế",
+  "2 tỷ đồng cạnh tranh không lành mạnh",
+  "cá nhân bằng một nửa"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Mức phạt tiền tối đa đối với vi phạm quy định về tập trung kinh tế là bao nhiêu?",
+   "options": [
+    "05% tổng doanh thu trên thị trường liên quan năm tài chính liền kề",
+    "10% tổng doanh thu",
+    "2 tỷ đồng",
+    "200 triệu đồng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 111.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 111 Luật Cạnh tranh 2018"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Mức phạt tối đa đối với cá nhân vi phạm pháp luật cạnh tranh so với tổ chức là bao nhiêu?",
+   "options": [
+    "Một phần hai",
+    "Bằng nhau",
+    "Gấp đôi",
+    "Một phần ba"
+   ],
+   "answer": 0,
+   "explain": "Khoản 5 Điều 111.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 5 Điều 111 Luật Cạnh tranh 2018"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tối đa 10% doanh thu",
+   "right": "Tối đa 2 tỷ đồng",
+   "cases": [
+    {
+     "text": "Lạm dụng vị trí độc quyền",
+     "answer": "left"
+    },
+    {
+     "text": "Gièm pha doanh nghiệp khác",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 111."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Mức phạt tiền tối đa đối với thỏa thuận hạn chế cạnh tranh, lạm dụng vị trí thống lĩnh, độc quyền là {{10%}} tổng doanh thu trên thị trường liên quan; đối với cạnh tranh không lành mạnh là {{2.000.000.000}} đồng.",
+   "bank_extra": [
+    "20%",
+    "500.000.000"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Mức phạt tiền tối đa đối với hành vi khác vi phạm quy định của Luật Cạnh tranh là {{200.000.000}} đồng.",
+   "bank_extra": [
+    "50.000.000",
+    "1.000.000.000"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mức phạt 10% được tính trên tổng doanh thu toàn cầu của doanh nghiệp.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 111: tổng doanh thu trên thị trường liên quan trong năm tài chính liền kề."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày mức phạt tiền tối đa đối với vi phạm pháp luật cạnh tranh.",
+   "model": "10% doanh thu trên thị trường liên quan năm tài chính liền kề (thỏa thuận hạn chế cạnh tranh, lạm dụng vị trí thống lĩnh, độc quyền); 05% (tập trung kinh tế); 2 tỷ đồng (cạnh tranh không lành mạnh); 200 triệu (vi phạm khác); cá nhân bằng một phần hai (Điều 111).",
+   "keywords": [
+    "10%",
+    "05%",
+    "2 tỷ",
+    "một phần hai"
+   ]
+  }
+ ]
+}

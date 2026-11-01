@@ -1,0 +1,116 @@
+{
+ "id": "thoa-thuan-han-che-canh-tranh",
+ "subject": "canh-tranh",
+ "chapter": "v3",
+ "term": "Thỏa thuận hạn chế cạnh tranh",
+ "definition": "Thỏa thuận hạn chế cạnh tranh là hành vi thỏa thuận giữa các bên dưới mọi hình thức gây tác động hoặc có khả năng gây tác động hạn chế cạnh tranh.",
+ "plain": "\"DƯỚI MỌI HÌNH THỨC\": văn bản, miệng, ngầm định, quyết định của hiệp hội… Điều 11 liệt kê 11 loại: ấn định GIÁ; PHÂN CHIA khách hàng, thị trường; HẠN CHẾ SỐ LƯỢNG sản xuất, mua bán; THÔNG ĐỒNG ĐẤU THẦU; ngăn cản doanh nghiệp khác GIA NHẬP; LOẠI BỎ doanh nghiệp khác; hạn chế phát triển kỹ thuật; áp đặt điều kiện hợp đồng; không giao dịch với bên ngoài; hạn chế thị trường của bên ngoài; thỏa thuận khác. Phân biệt thỏa thuận NGANG (cùng thị trường liên quan) và DỌC (các công đoạn khác nhau trong chuỗi).",
+ "example": "Các công ty xi măng trong một vùng thống nhất qua điện thoại chia địa bàn bán hàng, mỗi công ty một tỉnh: thỏa thuận phân chia thị trường, dù không có văn bản.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 4 Điều 3 Luật Cạnh tranh 2018",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "thoa-thuan-han-che-canh-tranh-bi-cam",
+  "mien-tru-thoa-thuan",
+  "hanh-vi-han-che-canh-tranh"
+ ],
+ "keywords": [
+  "dưới mọi hình thức",
+  "ấn định giá",
+  "phân chia thị trường",
+  "thông đồng đấu thầu"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thỏa thuận hạn chế cạnh tranh có thể tồn tại dưới hình thức nào?",
+   "options": [
+    "Dưới mọi hình thức",
+    "Chỉ bằng văn bản có chữ ký",
+    "Chỉ khi có công chứng",
+    "Chỉ khi đăng ký với cơ quan nhà nước"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 3 Luật Cạnh tranh 2018"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thỏa thuận để một bên thắng thầu khi các bên cùng tham gia đấu thầu thuộc loại nào trong Điều 11?",
+   "options": [
+    "Khoản 4 Điều 11 (thông đồng đấu thầu)",
+    "Khoản 1 Điều 11 (ấn định giá)",
+    "Không phải thỏa thuận hạn chế cạnh tranh",
+    "Hành vi cạnh tranh không lành mạnh"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 11.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 11 Luật Cạnh tranh 2018"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thỏa thuận ngang",
+   "right": "Thỏa thuận dọc",
+   "cases": [
+    {
+     "text": "Các hãng sữa cùng thống nhất giá bán lẻ",
+     "answer": "left"
+    },
+    {
+     "text": "Nhà sản xuất ấn định giá bán lại cho nhà phân phối",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 12."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thỏa thuận hạn chế cạnh tranh là hành vi thỏa thuận giữa các bên dưới {{mọi hình thức}} gây tác động hoặc có {{khả năng}} gây tác động hạn chế cạnh tranh.",
+   "bank_extra": [
+    "văn bản",
+    "ý định"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thỏa thuận ấn định giá hàng hóa, dịch vụ một cách trực tiếp hoặc {{gián tiếp}} là một loại thỏa thuận hạn chế cạnh tranh.",
+   "bank_extra": [
+    "công khai",
+    "tạm thời"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thỏa thuận miệng giữa các doanh nghiệp không thể bị coi là thỏa thuận hạn chế cạnh tranh.",
+   "answer": false,
+   "explain": "Sai. Khoản 4 Điều 3: \"dưới mọi hình thức\"."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm và các loại thỏa thuận hạn chế cạnh tranh.",
+   "model": "Là thỏa thuận giữa các bên dưới mọi hình thức gây tác động hoặc có khả năng gây tác động hạn chế cạnh tranh (khoản 4 Điều 3); Điều 11 liệt kê: ấn định giá, phân chia khách hàng, thị trường, hạn chế số lượng, thông đồng đấu thầu, ngăn cản gia nhập, loại bỏ doanh nghiệp, hạn chế công nghệ, áp đặt điều kiện, không giao dịch, thỏa thuận khác.",
+   "keywords": [
+    "mọi hình thức",
+    "ấn định giá",
+    "phân chia",
+    "đấu thầu"
+   ]
+  }
+ ]
+}
