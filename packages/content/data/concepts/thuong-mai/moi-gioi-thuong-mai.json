@@ -1,0 +1,115 @@
+{
+ "id": "moi-gioi-thuong-mai",
+ "subject": "thuong-mai",
+ "chapter": "v2",
+ "term": "Môi giới thương mại",
+ "definition": "Môi giới thương mại là hoạt động thương mại, theo đó một thương nhân làm trung gian (gọi là bên môi giới) cho các bên mua bán hàng hóa, cung ứng dịch vụ (gọi là bên được môi giới) trong việc đàm phán, giao kết hợp đồng mua bán hàng hóa, dịch vụ và được hưởng thù lao theo hợp đồng môi giới.",
+ "plain": "Bên môi giới chỉ làm TRUNG GIAN, KẾT NỐI để các bên ĐÀM PHÁN, GIAO KẾT — KHÔNG phải bên của hợp đồng chính, không nhân danh ai ký hợp đồng. Bên môi giới phải là THƯƠNG NHÂN; bên được môi giới không nhất thiết là thương nhân. Quyền hưởng thù lao phát sinh từ khi các bên được môi giới ĐÃ KÝ HỢP ĐỒNG với nhau (Điều 153), trừ thỏa thuận khác.",
+ "example": "Công ty môi giới giới thiệu nhà nhập khẩu Hàn Quốc gặp nhà sản xuất cà phê Việt Nam; hai bên tự ký hợp đồng; công ty môi giới nhận phí: môi giới thương mại.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 150 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "dai-dien-cho-thuong-nhan",
+  "uy-thac-mua-ban",
+  "dai-ly-thuong-mai"
+ ],
+ "keywords": [
+  "làm trung gian",
+  "đàm phán, giao kết hợp đồng",
+  "hưởng thù lao theo hợp đồng môi giới"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Vai trò của bên môi giới thương mại là gì?",
+   "options": [
+    "Làm trung gian cho các bên trong việc đàm phán, giao kết hợp đồng",
+    "Ký hợp đồng thay bên được môi giới",
+    "Mua hàng rồi bán lại",
+    "Bảo lãnh thanh toán"
+   ],
+   "answer": 0,
+   "explain": "Điều 150.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 150 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quyền hưởng thù lao môi giới phát sinh khi nào (nếu không có thỏa thuận khác)?",
+   "options": [
+    "Khi các bên được môi giới đã ký hợp đồng với nhau",
+    "Khi bắt đầu tìm đối tác",
+    "Khi hợp đồng thực hiện xong",
+    "Khi nộp đơn đăng ký"
+   ],
+   "answer": 0,
+   "explain": "Điều 153.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 153 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Môi giới",
+   "right": "Đại diện",
+   "cases": [
+    {
+     "text": "Chỉ kết nối, các bên tự ký hợp đồng",
+     "answer": "left"
+    },
+    {
+     "text": "Nhân danh bên giao để ký hợp đồng",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 141, 150."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Môi giới thương mại là hoạt động thương mại, theo đó một thương nhân làm {{trung gian}} cho các bên trong việc {{đàm phán}}, giao kết hợp đồng.",
+   "bank_extra": [
+    "bảo lãnh",
+    "bồi thường"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bên môi giới được hưởng thù lao theo hợp đồng {{môi giới}}.",
+   "bank_extra": [
+    "mua bán",
+    "lao động"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Bên môi giới thương mại là một bên của hợp đồng mua bán giữa các bên được môi giới.",
+   "answer": false,
+   "explain": "Sai. Bên môi giới chỉ làm trung gian (Điều 150)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm môi giới thương mại.",
+   "model": "Là hoạt động thương mại theo đó thương nhân làm trung gian (bên môi giới) cho các bên mua bán hàng hóa, cung ứng dịch vụ (bên được môi giới) trong đàm phán, giao kết hợp đồng và hưởng thù lao theo hợp đồng môi giới (Điều 150).",
+   "keywords": [
+    "trung gian",
+    "đàm phán",
+    "giao kết",
+    "thù lao"
+   ]
+  }
+ ]
+}

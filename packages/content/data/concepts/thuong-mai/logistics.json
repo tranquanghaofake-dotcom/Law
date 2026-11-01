@@ -1,0 +1,115 @@
+{
+ "id": "logistics",
+ "subject": "thuong-mai",
+ "chapter": "v4",
+ "term": "Dịch vụ logistics",
+ "definition": "Dịch vụ logistics là hoạt động thương mại, theo đó thương nhân tổ chức thực hiện một hoặc nhiều công việc bao gồm nhận hàng, vận chuyển, lưu kho, lưu bãi, làm thủ tục hải quan, các thủ tục giấy tờ khác, tư vấn khách hàng, đóng gói bao bì, ghi ký mã hiệu, giao hàng hoặc các dịch vụ khác có liên quan đến hàng hóa theo thỏa thuận với khách hàng để hưởng thù lao. Dịch vụ logistics được phiên âm theo tiếng Việt là dịch vụ lô-gi-stíc.",
+ "plain": "Logistics là chuỗi dịch vụ liên quan đến HÀNG HÓA: nhận hàng, vận chuyển, lưu kho, hải quan, đóng gói, giao hàng… — thực hiện MỘT HOẶC NHIỀU công việc. Thương nhân logistics được quyền CẦM GIỮ hàng hóa, chứng từ khi khách hàng không thanh toán (Điều 239). Giới hạn trách nhiệm: không vượt quá giá trị hàng hóa, trừ thỏa thuận khác (Điều 238). Chi tiết: Nghị định 163/2017/NĐ-CP.",
+ "example": "Công ty giao nhận nhận hàng của doanh nghiệp tại kho, làm thủ tục hải quan và thuê tàu chở hàng xuất khẩu, thu phí trọn gói: dịch vụ logistics.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 233 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nhuong-quyen-thuong-mai",
+  "khuyen-mai"
+ ],
+ "keywords": [
+  "nhận hàng, vận chuyển, lưu kho",
+  "làm thủ tục hải quan",
+  "một hoặc nhiều công việc",
+  "hưởng thù lao"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Dịch vụ logistics bao gồm những công việc nào?",
+   "options": [
+    "Một hoặc nhiều công việc như nhận hàng, vận chuyển, lưu kho, làm thủ tục hải quan, đóng gói, giao hàng",
+    "Chỉ vận chuyển",
+    "Chỉ thủ tục hải quan",
+    "Chỉ lưu kho"
+   ],
+   "answer": 0,
+   "explain": "Điều 233.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 233 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thương nhân logistics có quyền gì khi khách hàng không thanh toán?",
+   "options": [
+    "Cầm giữ hàng hóa, chứng từ theo quy định",
+    "Bán ngay hàng hóa không cần thông báo",
+    "Tiêu hủy hàng hóa",
+    "Không có quyền gì"
+   ],
+   "answer": 0,
+   "explain": "Điều 239.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 239 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thuộc dịch vụ logistics",
+   "right": "Không thuộc",
+   "cases": [
+    {
+     "text": "Làm thủ tục hải quan cho lô hàng",
+     "answer": "left"
+    },
+    {
+     "text": "Tư vấn pháp lý về ly hôn",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 233."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thương nhân tổ chức thực hiện một hoặc nhiều công việc bao gồm nhận hàng, {{vận chuyển}}, lưu kho, lưu bãi, làm thủ tục {{hải quan}}.",
+   "bank_extra": [
+    "sản xuất",
+    "thuế thu nhập"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Dịch vụ logistics được phiên âm theo tiếng Việt là dịch vụ {{lô-gi-stíc}}.",
+   "bank_extra": [
+    "lô-gíc",
+    "hậu cần"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thương nhân chỉ thực hiện một công việc (ví dụ chỉ lưu kho) thì không phải là dịch vụ logistics.",
+   "answer": false,
+   "explain": "Sai. Điều 233: \"một hoặc nhiều công việc\"."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm dịch vụ logistics.",
+   "model": "Là hoạt động thương mại theo đó thương nhân tổ chức thực hiện một hoặc nhiều công việc: nhận hàng, vận chuyển, lưu kho, lưu bãi, thủ tục hải quan, giấy tờ, tư vấn, đóng gói, ghi ký mã hiệu, giao hàng hoặc dịch vụ khác liên quan đến hàng hóa theo thỏa thuận để hưởng thù lao (Điều 233).",
+   "keywords": [
+    "vận chuyển",
+    "lưu kho",
+    "hải quan",
+    "thù lao"
+   ]
+  }
+ ]
+}

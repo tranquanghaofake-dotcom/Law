@@ -1,0 +1,114 @@
+{
+ "id": "dau-thau-hang-hoa",
+ "subject": "thuong-mai",
+ "chapter": "v5",
+ "term": "Đấu thầu hàng hóa, dịch vụ",
+ "definition": "Đấu thầu hàng hóa, dịch vụ là hoạt động thương mại, theo đó một bên mua hàng hóa, dịch vụ thông qua mời thầu (gọi là bên mời thầu) nhằm lựa chọn trong số các thương nhân tham gia đấu thầu (gọi là bên dự thầu) thương nhân đáp ứng tốt nhất các yêu cầu do bên mời thầu đặt ra và được lựa chọn để ký kết và thực hiện hợp đồng (gọi là bên trúng thầu). Các quy định về đấu thầu trong Luật này không áp dụng đối với đấu thầu mua sắm công theo quy định của pháp luật.",
+ "plain": "Bên MUA tổ chức (bên mời thầu), chọn thương nhân ĐÁP ỨNG TỐT NHẤT yêu cầu (không nhất thiết giá thấp nhất). Hình thức: đấu thầu RỘNG RÃI, HẠN CHẾ (Điều 215); phương thức một túi hồ sơ, hai túi hồ sơ (Điều 216). KHÔNG áp dụng cho đấu thầu MUA SẮM CÔNG (theo Luật Đấu thầu). Thông đồng giữa các bên dự thầu còn có thể vi phạm Luật Cạnh tranh (khoản 4 Điều 11, khoản 2 Điều 12).",
+ "example": "Công ty tư nhân mời các nhà cung cấp nộp hồ sơ chào giá máy phát điện, chọn hồ sơ tốt nhất về giá và kỹ thuật: đấu thầu hàng hóa theo Luật Thương mại.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 214 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "dau-gia-hang-hoa",
+  "mua-ban-hang-hoa"
+ ],
+ "keywords": [
+  "bên mời thầu, bên dự thầu, bên trúng thầu",
+  "đáp ứng tốt nhất các yêu cầu",
+  "không áp dụng mua sắm công"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trong đấu thầu hàng hóa, dịch vụ, bên mời thầu là ai?",
+   "options": [
+    "Bên mua hàng hóa, dịch vụ",
+    "Bên bán hàng hóa",
+    "Cơ quan nhà nước",
+    "Ngân hàng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 214.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 214 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quy định về đấu thầu trong Luật Thương mại có áp dụng cho đấu thầu mua sắm công không?",
+   "options": [
+    "Không",
+    "Có",
+    "Chỉ với dự án dưới 1 tỷ",
+    "Chỉ khi có yếu tố nước ngoài"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 214.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 214 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Bên mời thầu",
+   "right": "Bên dự thầu",
+   "cases": [
+    {
+     "text": "Doanh nghiệp cần mua thiết bị",
+     "answer": "left"
+    },
+    {
+     "text": "Các nhà cung cấp nộp hồ sơ",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 214."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bên mời thầu nhằm lựa chọn thương nhân đáp ứng {{tốt nhất}} các yêu cầu do bên mời thầu đặt ra; thương nhân được chọn gọi là bên {{trúng thầu}}.",
+   "bank_extra": [
+    "rẻ nhất",
+    "dự thầu"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Các quy định về đấu thầu trong Luật này không áp dụng đối với đấu thầu mua sắm {{công}}.",
+   "bank_extra": [
+    "tư",
+    "quốc tế"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Trong đấu thầu, bên mời thầu luôn phải chọn người chào giá thấp nhất.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 214: chọn thương nhân đáp ứng tốt nhất các yêu cầu."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm đấu thầu hàng hóa, dịch vụ theo Luật Thương mại.",
+   "model": "Là hoạt động thương mại theo đó bên mua (bên mời thầu) qua mời thầu lựa chọn trong các bên dự thầu thương nhân đáp ứng tốt nhất yêu cầu để ký và thực hiện hợp đồng (bên trúng thầu); không áp dụng cho đấu thầu mua sắm công (Điều 214).",
+   "keywords": [
+    "mời thầu",
+    "dự thầu",
+    "tốt nhất",
+    "mua sắm công"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,116 @@
+{
+ "id": "phat-vi-pham-ltm",
+ "subject": "thuong-mai",
+ "chapter": "v6",
+ "term": "Phạt vi phạm trong thương mại",
+ "definition": "Phạt vi phạm là việc bên bị vi phạm yêu cầu bên vi phạm trả một khoản tiền phạt do vi phạm hợp đồng nếu trong hợp đồng có thỏa thuận, trừ các trường hợp miễn trách nhiệm quy định tại Điều 294 của Luật này. Mức phạt đối với vi phạm nghĩa vụ hợp đồng hoặc tổng mức phạt đối với nhiều vi phạm do các bên thỏa thuận trong hợp đồng, nhưng không quá 8% giá trị phần nghĩa vụ hợp đồng bị vi phạm, trừ trường hợp quy định tại Điều 266 của Luật này.",
+ "plain": "Chỉ phạt khi HỢP ĐỒNG CÓ THỎA THUẬN. Mức trần: 8% GIÁ TRỊ PHẦN NGHĨA VỤ BỊ VI PHẠM (không phải 8% giá trị cả hợp đồng); tổng nhiều vi phạm cũng không quá 8%. Ngoại lệ Điều 266 (dịch vụ giám định sai). So sánh BLDS 2015: không giới hạn mức phạt (Điều 418).",
+ "example": "Hợp đồng giá trị 1 tỷ, bên bán giao thiếu lô hàng trị giá 200 triệu: mức phạt tối đa 8% × 200 triệu = 16 triệu, dù hợp đồng ghi phạt 20%.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 300, Điều 301 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "boi-thuong-thiet-hai-ltm",
+  "che-tai-thuong-mai",
+  "mien-trach-nhiem-ltm"
+ ],
+ "keywords": [
+  "chỉ khi hợp đồng có thỏa thuận",
+  "không quá 8%",
+  "giá trị phần nghĩa vụ bị vi phạm",
+  "trừ Điều 266"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Mức phạt vi phạm tối đa theo Luật Thương mại là bao nhiêu?",
+   "options": [
+    "Không quá 8% giá trị phần nghĩa vụ hợp đồng bị vi phạm",
+    "8% giá trị toàn bộ hợp đồng",
+    "12%",
+    "Không giới hạn"
+   ],
+   "answer": 0,
+   "explain": "Điều 301.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 301 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Phạt vi phạm được áp dụng khi nào?",
+   "options": [
+    "Khi trong hợp đồng có thỏa thuận (trừ trường hợp miễn trách nhiệm)",
+    "Mọi trường hợp vi phạm",
+    "Khi Tòa án quyết định",
+    "Khi có thiệt hại"
+   ],
+   "answer": 0,
+   "explain": "Điều 300.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 300 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Luật Thương mại",
+   "right": "Bộ luật Dân sự",
+   "cases": [
+    {
+     "text": "Mức phạt tối đa 8%",
+     "answer": "left"
+    },
+    {
+     "text": "Mức phạt do các bên thỏa thuận, không trần chung",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 301 LTM; Điều 418 BLDS."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Mức phạt đối với vi phạm nghĩa vụ hợp đồng không quá {{8%}} giá trị {{phần nghĩa vụ}} hợp đồng bị vi phạm.",
+   "bank_extra": [
+    "10%",
+    "toàn bộ hợp đồng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Phạt vi phạm chỉ áp dụng nếu trong hợp đồng có {{thỏa thuận}}.",
+   "bank_extra": [
+    "công chứng",
+    "con dấu"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hợp đồng thương mại ghi phạt 15% giá trị phần nghĩa vụ vi phạm thì bên bị vi phạm được đòi đủ 15%.",
+   "answer": false,
+   "explain": "Sai. Điều 301 giới hạn không quá 8%."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày chế tài phạt vi phạm trong Luật Thương mại.",
+   "model": "Phạt vi phạm là việc bên bị vi phạm yêu cầu bên vi phạm trả tiền phạt nếu hợp đồng có thỏa thuận, trừ trường hợp miễn trách nhiệm (Điều 300); mức phạt do thỏa thuận nhưng không quá 8% giá trị phần nghĩa vụ bị vi phạm, trừ Điều 266 (Điều 301).",
+   "keywords": [
+    "thỏa thuận",
+    "8%",
+    "phần nghĩa vụ",
+    "miễn trách nhiệm"
+   ]
+  }
+ ]
+}

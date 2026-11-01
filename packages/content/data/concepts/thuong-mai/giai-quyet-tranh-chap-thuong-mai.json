@@ -1,0 +1,119 @@
+{
+ "id": "giai-quyet-tranh-chap-thuong-mai",
+ "subject": "thuong-mai",
+ "chapter": "v7",
+ "term": "Hình thức giải quyết tranh chấp và thời hiệu khởi kiện",
+ "definition": "1. Thương lượng giữa các bên. 2. Hòa giải giữa các bên do một cơ quan, tổ chức hoặc cá nhân được các bên thỏa thuận chọn làm trung gian hòa giải. 3. Giải quyết tại Trọng tài hoặc Tòa án. (…) Thời hiệu khởi kiện áp dụng đối với các tranh chấp thương mại là hai năm, kể từ thời điểm quyền và lợi ích hợp pháp bị xâm phạm, trừ trường hợp quy định tại điểm e khoản 1 Điều 237 của Luật này.",
+ "plain": "Bốn phương thức: THƯƠNG LƯỢNG, HÒA GIẢI (có thể theo Nghị định 22/2017/NĐ-CP về hòa giải thương mại), TRỌNG TÀI (Luật Trọng tài thương mại 2010 — cần THỎA THUẬN TRỌNG TÀI), TÒA ÁN. Thời hiệu khởi kiện: 02 NĂM từ khi quyền lợi bị xâm phạm (ngoại lệ logistics: 9 tháng, điểm e khoản 1 Điều 237). Thời hạn KHIẾU NẠI (Điều 318): số lượng 3 tháng, chất lượng 6 tháng. Vấn đề 8 đề cương (thủ tục trọng tài) cần Luật Trọng tài thương mại — chưa làm trong môn này.",
+ "example": "Công ty A giao hàng thiếu ngày 01/3/2025; công ty B muốn kiện ra Tòa phải khởi kiện trước 01/3/2027 (thời hiệu 02 năm).",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 317, Điều 319 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "che-tai-thuong-mai",
+  "boi-thuong-thiet-hai-ltm"
+ ],
+ "keywords": [
+  "thương lượng, hòa giải",
+  "trọng tài hoặc tòa án",
+  "thời hiệu hai năm",
+  "kể từ khi quyền lợi bị xâm phạm"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thời hiệu khởi kiện tranh chấp thương mại theo Luật Thương mại là bao lâu?",
+   "options": [
+    "Hai năm kể từ thời điểm quyền và lợi ích hợp pháp bị xâm phạm",
+    "Ba năm",
+    "Một năm",
+    "Mười năm"
+   ],
+   "answer": 0,
+   "explain": "Điều 319.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 319 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hình thức nào KHÔNG được liệt kê tại Điều 317?",
+   "options": [
+    "Khiếu nại lên Ủy ban nhân dân",
+    "Thương lượng",
+    "Hòa giải",
+    "Trọng tài hoặc Tòa án"
+   ],
+   "answer": 0,
+   "explain": "Điều 317.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 317 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hình thức tài phán",
+   "right": "Hình thức ngoài tài phán",
+   "cases": [
+    {
+     "text": "Trọng tài thương mại",
+     "answer": "left"
+    },
+    {
+     "text": "Thương lượng",
+     "answer": "right"
+    },
+    {
+     "text": "Tòa án",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 317."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hình thức giải quyết tranh chấp gồm thương lượng, {{hòa giải}}, giải quyết tại {{Trọng tài}} hoặc Tòa án.",
+   "bank_extra": [
+    "khiếu nại",
+    "Viện kiểm sát"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thời hiệu khởi kiện đối với tranh chấp thương mại là {{hai năm}}.",
+   "bank_extra": [
+    "ba năm",
+    "sáu tháng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tranh chấp thương mại có thời hiệu khởi kiện 03 năm như tranh chấp hợp đồng dân sự.",
+   "answer": false,
+   "explain": "Sai. Điều 319 Luật Thương mại: hai năm (luật chuyên ngành)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày hình thức giải quyết tranh chấp thương mại và thời hiệu khởi kiện.",
+   "model": "Thương lượng; hòa giải qua trung gian được các bên chọn; trọng tài hoặc tòa án (Điều 317); thời hiệu khởi kiện hai năm kể từ khi quyền lợi bị xâm phạm, trừ logistics (Điều 319).",
+   "keywords": [
+    "thương lượng",
+    "hòa giải",
+    "trọng tài",
+    "hai năm"
+   ]
+  }
+ ]
+}

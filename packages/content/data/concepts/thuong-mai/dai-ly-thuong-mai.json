@@ -1,0 +1,116 @@
+{
+ "id": "dai-ly-thuong-mai",
+ "subject": "thuong-mai",
+ "chapter": "v2",
+ "term": "Đại lý thương mại",
+ "definition": "Đại lý thương mại là hoạt động thương mại, theo đó bên giao đại lý và bên đại lý thỏa thuận việc bên đại lý nhân danh chính mình mua, bán hàng hóa cho bên giao đại lý hoặc cung ứng dịch vụ của bên giao đại lý cho khách hàng để hưởng thù lao.",
+ "plain": "Bên đại lý NHÂN DANH CHÍNH MÌNH; cả hai bên đều phải là THƯƠNG NHÂN (Điều 167). Hàng hóa giao cho đại lý vẫn THUỘC SỞ HỮU BÊN GIAO ĐẠI LÝ (Điều 170). Hình thức đại lý (Điều 169): bao tiêu, độc quyền, tổng đại lý… Khác ủy thác: đại lý mang tính LÂU DÀI, THƯỜNG XUYÊN; ủy thác thường theo từng vụ việc. Hợp đồng bằng văn bản (Điều 168).",
+ "example": "Cửa hàng làm đại lý bán sữa cho hãng X, bán theo giá hãng quy định, nhận hoa hồng; sữa chưa bán vẫn thuộc sở hữu hãng X.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 166 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "uy-thac-mua-ban",
+  "dai-dien-cho-thuong-nhan",
+  "moi-gioi-thuong-mai"
+ ],
+ "keywords": [
+  "nhân danh chính mình",
+  "bên giao đại lý và bên đại lý",
+  "hàng hóa thuộc sở hữu bên giao đại lý",
+  "hưởng thù lao"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Bên đại lý thương mại mua bán hàng hóa với danh nghĩa của ai?",
+   "options": [
+    "Nhân danh chính mình",
+    "Nhân danh bên giao đại lý",
+    "Nhân danh khách hàng",
+    "Nhân danh Bộ Công Thương"
+   ],
+   "answer": 0,
+   "explain": "Điều 166.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 166 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hàng hóa giao cho bên đại lý thuộc sở hữu của ai?",
+   "options": [
+    "Bên giao đại lý",
+    "Bên đại lý",
+    "Khách hàng",
+    "Đồng sở hữu"
+   ],
+   "answer": 0,
+   "explain": "Điều 170.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 170 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Đại lý thương mại",
+   "right": "Đại diện cho thương nhân",
+   "cases": [
+    {
+     "text": "Bên trung gian nhân danh chính mình",
+     "answer": "left"
+    },
+    {
+     "text": "Bên trung gian nhân danh bên thuê",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 141, 166."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bên đại lý {{nhân danh chính mình}} mua, bán hàng hóa cho bên giao đại lý hoặc cung ứng dịch vụ của bên giao đại lý cho khách hàng để hưởng {{thù lao}}.",
+   "bank_extra": [
+    "nhân danh bên giao",
+    "lương"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đại lý thương mại là sự thỏa thuận giữa bên giao đại lý và bên {{đại lý}}.",
+   "bank_extra": [
+    "môi giới",
+    "ủy thác"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hàng hóa giao cho đại lý thuộc sở hữu của bên đại lý kể từ khi nhận hàng.",
+   "answer": false,
+   "explain": "Sai. Điều 170: bên giao đại lý là chủ sở hữu."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm đại lý thương mại.",
+   "model": "Là hoạt động thương mại theo đó bên giao đại lý và bên đại lý thỏa thuận việc bên đại lý nhân danh chính mình mua, bán hàng hóa cho bên giao đại lý hoặc cung ứng dịch vụ của bên giao đại lý cho khách hàng để hưởng thù lao (Điều 166); hàng hóa thuộc sở hữu bên giao đại lý (Điều 170).",
+   "keywords": [
+    "nhân danh chính mình",
+    "bên giao đại lý",
+    "thù lao",
+    "sở hữu"
+   ]
+  }
+ ]
+}

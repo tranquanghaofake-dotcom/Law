@@ -1,0 +1,115 @@
+{
+ "id": "khuyen-mai",
+ "subject": "thuong-mai",
+ "chapter": "v3",
+ "term": "Khuyến mại và các hình thức khuyến mại",
+ "definition": "Khuyến mại là hoạt động xúc tiến thương mại của thương nhân nhằm xúc tiến việc mua bán hàng hóa, cung ứng dịch vụ bằng cách dành cho khách hàng những lợi ích nhất định. (…) 1. Đưa hàng hóa mẫu, cung ứng dịch vụ mẫu để khách hàng dùng thử không phải trả tiền. 2. Tặng hàng hóa cho khách hàng, cung ứng dịch vụ không thu tiền.",
+ "plain": "Khuyến mại = dành LỢI ÍCH cho khách hàng để xúc tiến bán hàng. Hình thức (Điều 92): hàng mẫu dùng thử; tặng hàng; GIẢM GIÁ (trong thời gian đã đăng ký, thông báo); phiếu mua hàng; phiếu dự thi; chương trình may rủi; khách hàng thường xuyên… Hạn mức cụ thể (giảm giá tối đa, giá trị quà tặng) do NGHỊ ĐỊNH quy định. Hành vi cấm (Điều 100): khuyến mại hàng cấm, hàng kém chất lượng, gian dối… LƯU Ý: các điều về QUẢNG CÁO THƯƠNG MẠI (Điều 102–116) KHÔNG còn trong VBHN 2025 — đã chuyển sang Luật Quảng cáo theo Luật 75/2025/QH15 (hiệu lực 01/01/2026).",
+ "example": "Siêu thị tặng một gói bánh khi mua hộp sữa: khuyến mại tặng hàng hóa (khoản 2 Điều 92).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 88, khoản 1–2 Điều 92 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hoat-dong-thuong-mai",
+  "logistics"
+ ],
+ "keywords": [
+  "xúc tiến thương mại",
+  "dành cho khách hàng lợi ích",
+  "hàng mẫu, tặng hàng, giảm giá"
+ ],
+ "note": "Điều 102–116 (quảng cáo thương mại) không còn trong VBHN 113/VBHN-VPQH 2025: nội dung được điều chỉnh bởi Luật Quảng cáo theo Luật 75/2025/QH15 (hiệu lực 01/01/2026). Chưa đối chiếu nguyên văn Luật 75/2025.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khuyến mại là gì theo khoản 1 Điều 88?",
+   "options": [
+    "Hoạt động xúc tiến thương mại nhằm xúc tiến mua bán bằng cách dành cho khách hàng lợi ích nhất định",
+    "Hoạt động quảng bá thương hiệu trên báo",
+    "Hoạt động trưng bày hàng hóa",
+    "Hoạt động đấu giá"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 88.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 88 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hình thức nào là khuyến mại theo Điều 92?",
+   "options": [
+    "Tặng hàng hóa cho khách hàng không thu tiền",
+    "Treo băng rôn quảng cáo",
+    "Tổ chức hội chợ",
+    "Đăng ký nhãn hiệu"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 92.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 92 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Khuyến mại",
+   "right": "Không phải khuyến mại",
+   "cases": [
+    {
+     "text": "Cho khách dùng thử dịch vụ miễn phí",
+     "answer": "left"
+    },
+    {
+     "text": "Thuê người nổi tiếng quảng bá sản phẩm",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 88, 92."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Khuyến mại là hoạt động {{xúc tiến thương mại}} của thương nhân bằng cách dành cho khách hàng những {{lợi ích}} nhất định.",
+   "bank_extra": [
+    "quản lý nhà nước",
+    "nghĩa vụ"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đưa hàng hóa {{mẫu}} để khách hàng dùng thử không phải trả tiền là một hình thức khuyến mại.",
+   "bank_extra": [
+    "lỗi",
+    "tồn kho"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "VBHN Luật Thương mại 2025 vẫn giữ nguyên các điều về quảng cáo thương mại.",
+   "answer": false,
+   "explain": "Sai. Phần quảng cáo thương mại đã chuyển sang Luật Quảng cáo theo Luật 75/2025/QH15 (hiệu lực 01/01/2026); VBHN 113 không còn các điều này."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm khuyến mại và một số hình thức khuyến mại.",
+   "model": "Khuyến mại là hoạt động xúc tiến thương mại của thương nhân nhằm xúc tiến mua bán hàng hóa, dịch vụ bằng cách dành cho khách hàng lợi ích nhất định (khoản 1 Điều 88); hình thức: hàng mẫu dùng thử, tặng hàng, giảm giá, phiếu mua hàng, phiếu dự thi… (Điều 92).",
+   "keywords": [
+    "xúc tiến",
+    "lợi ích",
+    "hàng mẫu",
+    "giảm giá"
+   ]
+  }
+ ]
+}

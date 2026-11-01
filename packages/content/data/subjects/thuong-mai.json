@@ -1,0 +1,110 @@
+{
+  "id": "thuong-mai",
+  "title": "Luật Thương mại 2",
+  "short": "Thương mại 2",
+  "chapters": [
+    {
+      "id": "v1",
+      "title": "Vấn đề 1. Pháp luật về mua bán hàng hóa",
+      "lessons": [
+        {
+          "id": "tm1",
+          "title": "Pháp luật về mua bán hàng hóa",
+          "concepts": [
+            "hoat-dong-thuong-mai",
+            "mua-ban-hang-hoa",
+            "chuyen-rui-ro",
+            "trach-nhiem-hang-khong-phu-hop"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v2",
+      "title": "Vấn đề 2. Pháp luật về dịch vụ trung gian thương mại",
+      "lessons": [
+        {
+          "id": "tm2",
+          "title": "Pháp luật về dịch vụ trung gian thương mại",
+          "concepts": [
+            "dai-dien-cho-thuong-nhan",
+            "moi-gioi-thuong-mai",
+            "uy-thac-mua-ban",
+            "dai-ly-thuong-mai"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v3",
+      "title": "Vấn đề 3. Pháp luật về dịch vụ xúc tiến thương mại",
+      "lessons": [
+        {
+          "id": "tm3",
+          "title": "Pháp luật về dịch vụ xúc tiến thương mại",
+          "concepts": [
+            "khuyen-mai"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v4",
+      "title": "Vấn đề 4. Pháp luật về dịch vụ logistics và nhượng quyền thương mại",
+      "lessons": [
+        {
+          "id": "tm4",
+          "title": "Pháp luật về dịch vụ logistics và nhượng quyền thương mại",
+          "concepts": [
+            "logistics",
+            "nhuong-quyen-thuong-mai"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v5",
+      "title": "Vấn đề 5. Pháp luật về đấu giá hàng hóa và đấu thầu hàng hóa, dịch vụ",
+      "lessons": [
+        {
+          "id": "tm5",
+          "title": "Pháp luật về đấu giá hàng hóa và đấu thầu hàng hóa, dịch vụ",
+          "concepts": [
+            "dau-gia-hang-hoa",
+            "dau-thau-hang-hoa"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v6",
+      "title": "Vấn đề 6. Chế tài thương mại",
+      "lessons": [
+        {
+          "id": "tm6",
+          "title": "Chế tài thương mại",
+          "concepts": [
+            "che-tai-thuong-mai",
+            "mien-trach-nhiem-ltm",
+            "phat-vi-pham-ltm",
+            "boi-thuong-thiet-hai-ltm",
+            "vi-pham-co-ban"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v7",
+      "title": "Vấn đề 7. Những vấn đề chung về giải quyết tranh chấp thương mại",
+      "lessons": [
+        {
+          "id": "tm7",
+          "title": "Những vấn đề chung về giải quyết tranh chấp thương mại",
+          "concepts": [
+            "giai-quyet-tranh-chap-thuong-mai"
+          ]
+        }
+      ]
+    }
+  ]
+}

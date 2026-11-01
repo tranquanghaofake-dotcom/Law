@@ -1,0 +1,115 @@
+{
+ "id": "mien-trach-nhiem-ltm",
+ "subject": "thuong-mai",
+ "chapter": "v6",
+ "term": "Các trường hợp miễn trách nhiệm trong thương mại",
+ "definition": "Bên vi phạm hợp đồng được miễn trách nhiệm trong các trường hợp sau đây: a) Xảy ra trường hợp miễn trách nhiệm mà các bên đã thỏa thuận; b) Xảy ra sự kiện bất khả kháng; c) Hành vi vi phạm của một bên hoàn toàn do lỗi của bên kia; d) Hành vi vi phạm của một bên do thực hiện quyết định của cơ quan quản lý nhà nước có thẩm quyền mà các bên không thể biết được vào thời điểm giao kết hợp đồng. Bên vi phạm hợp đồng có nghĩa vụ chứng minh các trường hợp miễn trách nhiệm.",
+ "plain": "Bốn căn cứ: THỎA THUẬN miễn trách; BẤT KHẢ KHÁNG; HOÀN TOÀN DO LỖI BÊN KIA; THỰC HIỆN QUYẾT ĐỊNH CỦA CƠ QUAN NHÀ NƯỚC mà các bên không thể biết khi giao kết. Nghĩa vụ CHỨNG MINH thuộc BÊN VI PHẠM. Bất khả kháng còn có thể kéo dài thời hạn thực hiện nghĩa vụ (Điều 296). So với BLDS (Điều 351): LTM có thêm căn cứ \"quyết định của cơ quan nhà nước\".",
+ "example": "Lệnh cấm xuất khẩu tạm thời một mặt hàng ban hành sau khi ký hợp đồng khiến bên bán không giao được hàng: có thể được miễn trách nhiệm (điểm d), nhưng bên bán phải chứng minh.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 294 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "che-tai-thuong-mai",
+  "phat-vi-pham-ltm"
+ ],
+ "keywords": [
+  "thỏa thuận",
+  "bất khả kháng",
+  "hoàn toàn do lỗi bên kia",
+  "quyết định cơ quan nhà nước"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai có nghĩa vụ chứng minh các trường hợp miễn trách nhiệm?",
+   "options": [
+    "Bên vi phạm hợp đồng",
+    "Bên bị vi phạm",
+    "Tòa án",
+    "Trọng tài"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 294.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 294 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Căn cứ miễn trách nhiệm nào có trong Luật Thương mại?",
+   "options": [
+    "Thực hiện quyết định của cơ quan quản lý nhà nước mà các bên không thể biết khi giao kết",
+    "Bên vi phạm gặp khó khăn tài chính",
+    "Giá thị trường biến động",
+    "Bên vi phạm thay đổi lãnh đạo"
+   ],
+   "answer": 0,
+   "explain": "Điểm d khoản 1 Điều 294.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 294 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Được miễn trách nhiệm",
+   "right": "Không được miễn",
+   "cases": [
+    {
+     "text": "Bão lớn phá hủy cảng, không giao được hàng",
+     "answer": "left"
+    },
+    {
+     "text": "Doanh nghiệp thiếu vốn nên chậm giao",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 294."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bên vi phạm được miễn trách nhiệm khi xảy ra sự kiện {{bất khả kháng}}, hoặc hành vi vi phạm hoàn toàn do {{lỗi}} của bên kia.",
+   "bank_extra": [
+    "bất lợi",
+    "thiện chí"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bên vi phạm hợp đồng có nghĩa vụ {{chứng minh}} các trường hợp miễn trách nhiệm.",
+   "bank_extra": [
+    "thông báo cho Tòa án",
+    "công bố"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Bên bị vi phạm phải chứng minh bên kia không có căn cứ miễn trách nhiệm.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 294: bên vi phạm phải chứng minh."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày các trường hợp miễn trách nhiệm đối với vi phạm hợp đồng thương mại.",
+   "model": "Thỏa thuận miễn trách; bất khả kháng; vi phạm hoàn toàn do lỗi bên kia; thực hiện quyết định cơ quan nhà nước có thẩm quyền mà các bên không thể biết khi giao kết (khoản 1 Điều 294); bên vi phạm có nghĩa vụ chứng minh (khoản 2).",
+   "keywords": [
+    "thỏa thuận",
+    "bất khả kháng",
+    "lỗi bên kia",
+    "chứng minh"
+   ]
+  }
+ ]
+}
