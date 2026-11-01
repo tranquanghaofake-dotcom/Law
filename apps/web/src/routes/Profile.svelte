@@ -1,4 +1,6 @@
 <script lang="ts">
+  import SubjectArt from '$lib/art/SubjectArt.svelte';
+  import { PAGE_ART } from '$lib/art/registry';
   // Hồ sơ: hai tab Tổng quan (#/toi) · Cài đặt (#/cai-dat) (spec §5.2).
   import type { Level } from '$lib/content/types';
   import { loadIndex, loadSubject } from '$lib/content/loader';
@@ -58,7 +60,10 @@
   }
 </script>
 
-<h1>Hồ sơ</h1>
+<header class="page-head">
+  <SubjectArt name={PAGE_ART.profile} class="head-art" />
+  <h1>Hồ sơ</h1>
+</header>
 <div class="tabs" role="tablist" aria-label="Hồ sơ">
   <a role="tab" href={hashFor('profile')} aria-selected={!onSettings} class:on={!onSettings}>Tổng quan</a>
   <a role="tab" href={hashFor('settings')} aria-selected={onSettings} class:on={onSettings}>⚙ Cài đặt</a>

@@ -6,7 +6,7 @@
   import { hashFor } from '$lib/router.svelte';
   import { subjectSummary, type SubjectSummary } from '$lib/ui/subjectSummary';
   import SubjectArt from '$lib/art/SubjectArt.svelte';
-  import { artFor } from '$lib/art/registry';
+  import { artFor, PAGE_ART } from '$lib/art/registry';
 
   let items = $state<{ subject: Subject; s: SubjectSummary }[] | null>(null);
   let error = $state('');
@@ -21,8 +21,11 @@
   })();
 </script>
 
-<h1>Môn học</h1>
-<p class="muted">Mỗi môn chia thành chương → đợt 4–5 khái niệm. Học theo thứ tự đợt; ôn khi lịch gọi.</p>
+<header class="page-head">
+  <SubjectArt name={PAGE_ART.subjects} class="head-art" />
+  <h1>Môn học</h1>
+  <p class="muted">Mỗi môn chia thành chương → đợt 4–5 khái niệm. Học theo thứ tự đợt; ôn khi lịch gọi.</p>
+</header>
 {#if error}
   <section class="card"><p class="muted">Không tải được dữ liệu: {error}</p></section>
 {:else if !items}

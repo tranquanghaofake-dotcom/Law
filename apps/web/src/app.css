@@ -360,7 +360,12 @@ kbd { font: 600 11px/1 var(--font-ui); background: rgba(255,255,255,.18); border
    Học cách dựng của tranh phẳng: khối phẳng + nét mảnh, viền kép, góc khung,
    hoa văn mây làm nền, sóng nước ngăn mục. Màu chỉ lấy từ token ở :root.
    ===================================================================== */
-:root { --sun: color-mix(in srgb, var(--accent) 22%, var(--paper)); --motif: var(--ink); --void: #14213d; }
+:root {
+  --sun: color-mix(in srgb, var(--accent) 22%, var(--paper)); --motif: var(--ink); --void: #14213d;
+  --hill: color-mix(in srgb, var(--ok) 22%, var(--paper)); --hill2: color-mix(in srgb, var(--ok) 48%, var(--paper));
+  --water: color-mix(in srgb, var(--ink) 9%, var(--paper)); --leaf: color-mix(in srgb, var(--ok) 70%, var(--paper));
+  --lotus: color-mix(in srgb, var(--seal) 40%, var(--paper)); --gold: color-mix(in srgb, var(--accent) 75%, #f6d27a);
+}
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --void: #070b14; } }
 :root[data-theme="dark"] { --void: #070b14; }
 
@@ -375,6 +380,13 @@ body::before {
 .art { display: block; overflow: visible; }
 .art .f-sun { fill: var(--sun); } .art .f-card { fill: var(--card); } .art .f-ink { fill: var(--ink); }
 .art .f-seal { fill: var(--seal); } .art .f-acc { fill: var(--accent); } .art .f-line { fill: var(--line); } .art .f-void { fill: var(--void); }
+.art .f-hill { fill: var(--hill); } .art .f-hill2 { fill: var(--hill2); } .art .f-water { fill: var(--water); }
+.art .f-cover { fill: #8e1f19; } .art .f-leaf { fill: var(--leaf); } .art .f-lotus { fill: var(--lotus); } .art .f-gold { fill: var(--gold); }
+.art .f-sunline { fill: color-mix(in srgb, var(--accent) 45%, var(--sun)); }
+.art .s-sunline { fill: none; stroke: color-mix(in srgb, var(--accent) 45%, var(--sun)); stroke-width: 1.2; }
+.art .s-goldline { fill: none; stroke: var(--gold); stroke-width: 1.6; }
+.art .s-water { stroke: color-mix(in srgb, var(--ink) 30%, var(--paper)); }
+.art .art-title { font: 800 22px/1 var(--font-quote); letter-spacing: .08em; }
 .art .s-line { stroke: var(--ink); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
 .art .s-line:not([class*="f-"]) { fill: none; }
 .art .s-thin { stroke-width: 1; } .art .s-bold { stroke-width: 3; } .art .s-paper { stroke: var(--card); }
@@ -436,5 +448,10 @@ body::before {
 .subject-card .card-art { width: 100%; height: 132px; margin: -4px 0 4px; padding-bottom: 6px; border-bottom: 3px double var(--line); }
 
 /* Trang môn: tranh đầu trang */
-.subject-head .head-art { width: min(240px, 72%); height: auto; margin: 0 auto 4px; }
-@media (min-width: 768px) { .subject-head .head-art { float: right; width: 200px; margin: 0 0 8px 16px; } }
+.subject-head .head-art, .page-head .head-art { display: block; width: min(240px, 72%); height: auto; margin: 0 auto 4px; }
+@media (min-width: 768px) { .subject-head .head-art, .page-head .head-art { float: right; width: 200px; margin: 0 0 8px 16px; } }
+.page-head::after { content: ""; display: block; clear: both; }
+
+/* Tranh nhỏ ở đầu thẻ bộ đề */
+.set:has(.set-art) .meta { grid-row: 2 / span 2; }
+.set .set-art { grid-column: 1 / -1; grid-row: 1; width: 100%; height: 86px; margin: -4px 0 6px; padding-bottom: 6px; border-bottom: 3px double var(--line); }

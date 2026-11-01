@@ -1,4 +1,8 @@
 <script lang="ts">
+  import SubjectArt from '$lib/art/SubjectArt.svelte';
+  import { PAGE_ART } from '$lib/art/registry';
+  import Vignette from '$lib/art/Vignette.svelte';
+  import { vignetteFor } from '$lib/art/registry';
   // Luyện đề: kiểm tra nhanh 10 câu, lọc theo nhóm (spec §5.1).
   import type { ContentIndex } from '$lib/content/types';
   import { loadIndex } from '$lib/content/loader';
@@ -29,8 +33,11 @@
   $effect(() => { if (index) return setRail(QuizRail, railData); });
 </script>
 
-<h1>Luyện đề 10 câu</h1>
-<p class="muted">Bộ 10 câu tình huống đời thường, chia theo ngành luật — tách riêng với các môn ở <a href={hashFor('subjects')}>Môn học</a>. Làm để kiểm tra nhanh; kết quả không ghi vào lịch ôn.</p>
+<header class="page-head">
+  <SubjectArt name={PAGE_ART.quizzes} class="head-art" />
+  <h1>Luyện đề 10 câu</h1>
+  <p class="muted">Bộ 10 câu tình huống đời thường, chia theo ngành luật — tách riêng với các môn ở <a href={hashFor('subjects')}>Môn học</a>. Làm để kiểm tra nhanh; kết quả không ghi vào lịch ôn.</p>
+</header>
 {#if error}
   <section class="card"><p class="muted">Không tải được dữ liệu: {error}</p></section>
 {:else if !index}
@@ -45,6 +52,7 @@
     <div class="sets">
       {#each sets as set (set.id)}
         <a class="set" href={hashFor('quiz', { id: set.id })}>
+          <Vignette name={vignetteFor(set)} class="set-art" />
           <div><h3>{set.title}</h3></div>
           <span class="meta">{#if best[set.id] != null}<span class="best">{best[set.id]}/{set.count}</span>điểm cao nhất{:else}{set.count} câu{/if}</span>
           <p>{set.subtitle}</p>

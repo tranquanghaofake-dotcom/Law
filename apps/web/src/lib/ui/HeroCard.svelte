@@ -2,10 +2,10 @@
   import type { HeroState } from './today';
   import { hashFor } from '$lib/router.svelte';
   import SubjectArt from '$lib/art/SubjectArt.svelte';
-  import { artFor } from '$lib/art/registry';
+  import { artFor, PAGE_ART } from '$lib/art/registry';
   let { state }: { state: HeroState } = $props();
-  // Ôn chung / đã học hết → gác Văn Miếu; đang học một môn → hình của môn đó.
-  const art = $derived('subject' in state ? artFor(state.subject.id) : 'khue-van-cac');
+  // Ôn chung → gác Văn Miếu; đã học hết → vịnh núi đá (nghỉ); đang học một môn → hình của môn đó.
+  const art = $derived('subject' in state ? artFor(state.subject.id) : state.kind === 'due' ? PAGE_ART.due : PAGE_ART.done);
   const lessonHref = (s: Extract<HeroState, { lesson: unknown }>) => hashFor('lesson', { subject: s.subject.id, lesson: s.lesson.id });
 </script>
 

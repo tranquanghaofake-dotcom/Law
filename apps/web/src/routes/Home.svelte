@@ -13,6 +13,8 @@
   import HeroCard from '$lib/ui/HeroCard.svelte';
   import HomeRail from '$lib/ui/HomeRail.svelte';
   import Waves from '$lib/art/Waves.svelte';
+  import Vignette from '$lib/art/Vignette.svelte';
+  import { vignetteFor } from '$lib/art/registry';
 
   type Row = { subject: Subject; grade: string | null; mastered: number; total: number };
   let index = $state<ContentIndex | null>(null);
@@ -105,6 +107,7 @@
     <h2 class="section-title"><b>Kiểm tra nhanh</b> <a class="more" href={hashFor('quizzes')}>Tất cả đề →</a></h2>
     <div class="sets one">
       <a class="set" href={hashFor('quiz', { id: quick.set.id })}>
+        <Vignette name={vignetteFor(quick.set)} class="set-art" />
         <div><span class="chip">{GROUPS[quick.set.group] ?? quick.set.group}</span><h3>{quick.set.title}</h3></div>
         <span class="meta">{#if quick.best != null}<span class="best">{quick.best}/{quick.set.count}</span>điểm cao nhất{:else}{quick.set.count} câu{/if}</span>
         <p>{quick.set.subtitle}</p>

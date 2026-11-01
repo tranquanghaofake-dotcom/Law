@@ -1,4 +1,6 @@
 <script lang="ts">
+  import SubjectArt from '$lib/art/SubjectArt.svelte';
+  import { PAGE_ART } from '$lib/art/registry';
   // Danh mục khái niệm của một môn: đọc nhanh định nghĩa, căn cứ, khái niệm dễ nhầm; tìm không dấu; ★ đánh dấu.
   import type { Concept, Level, Subject } from '$lib/content/types';
   import { loadConcepts, loadSubject } from '$lib/content/loader';
@@ -64,8 +66,11 @@
   <p class="loading">Đang tải…</p>
 {:else}
   <nav class="crumbs small muted" aria-label="Vị trí"><a href={hashFor('subjects')}>Môn học</a> › <a href={hashFor('subject', { subject: subject.id })}>{subject.title}</a> › Khái niệm</nav>
-  <h1>Khái niệm · {subject.short}</h1>
-  <p class="muted">{total} khái niệm. Bấm vào tên để xem định nghĩa nguyên văn, căn cứ và khái niệm dễ nhầm.</p>
+  <header class="page-head">
+    <SubjectArt name={PAGE_ART.concepts} class="head-art" />
+    <h1>Khái niệm · {subject.short}</h1>
+    <p class="muted">{total} khái niệm. Bấm vào tên để xem định nghĩa nguyên văn, căn cứ và khái niệm dễ nhầm.</p>
+  </header>
 
   <div class="concept-tools">
     <label class="search">
