@@ -1,0 +1,126 @@
+{
+ "id": "khoi-nghia-hai-ba-trung",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c5-co-dai",
+ "term": "Khởi nghĩa Hai Bà Trưng và chính quyền Trưng Vương",
+ "definition": "Mùa xuân, tháng 2, vua khổ vì Thái thú Tô Định dùng pháp luật trói buộc, lại thù Định giết chồng mình, mới cùng với em gái là Nhị nổi binh đánh hãm trị sở ở châu. Định chạy về nước. Các quận Nam Hải, Cửu Chân, Nhật Nam, Hợp Phố đều hưởng ứng, lấy được 65 thành ở Lĩnh Nam, tự lập làm vua, mới xưng là họ Trưng.",
+ "plain": "Năm 40, Trưng Trắc (con gái Lạc tướng Mê Linh) cùng em là Trưng Nhị khởi nghĩa, đánh đuổi Thái thú Tô Định, tự lập làm vua, đóng đô ở Mê Linh. Chính quyền tồn tại đến năm 43 thì bị Mã Viện đánh bại. Ý nghĩa pháp sử: Toàn thư nêu một nguyên nhân là Tô Định \"dùng pháp luật trói buộc\", tức pháp luật đô hộ đè nén người Việt. Sau khởi nghĩa, Mã Viện điều chỉnh việc áp dụng luật (Hậu Hán thư: luật Việt khác luật Hán hơn mười điều).",
+ "example": "Khi ôn thi, nối chuỗi: Tô Định dùng pháp luật trói buộc (năm 40) → Trưng Vương xưng vương ở Mê Linh → Mã Viện đàn áp (43) → \"tâu luật Việt khác luật Hán hơn mười điều\".",
+ "source": {
+  "kind": "primary",
+  "cite": "Đại Việt sử ký toàn thư, Ngoại kỷ, quyển III (bản dịch Viện KHXH Việt Nam, NXB KHXH 1993), Kỷ Trưng Nữ Vương, tờ 2a–2b",
+  "url": "https://thpthiephoa1.edu.vn/wp-content/uploads/Dai-viet-su-ki-toan-thu.pdf"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "chinh-quyen-do-ho-quan-huyen",
+  "phap-luat-van-lang-au-lac",
+  "nha-nuoc-van-xuan"
+ ],
+ "keywords": [
+  "năm 40",
+  "Tô Định",
+  "pháp luật trói buộc",
+  "Mê Linh",
+  "65 thành"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Toàn thư, một nguyên nhân khiến Trưng Trắc khởi binh là gì?",
+   "options": [
+    "Thái thú Tô Định dùng pháp luật trói buộc và giết chồng bà",
+    "Nhà Hán bãi bỏ chức Lạc tướng",
+    "Mã Viện chia lại huyện Tây Vu",
+    "Lâm Ấp cướp phá biên giới"
+   ],
+   "answer": 0,
+   "explain": "\"vua khổ vì Thái thú Tô Định dùng pháp luật trói buộc, lại thù Định giết chồng mình\".",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Ngoại kỷ, quyển III, tờ 2a"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trưng Vương đóng đô ở đâu?",
+   "options": [
+    "Mê Linh",
+    "Cổ Loa",
+    "Long Biên",
+    "Hoa Lư"
+   ],
+   "answer": 0,
+   "explain": "Toàn thư: \"Đóng đô ở Mê Linh.\"",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Ngoại kỷ, quyển III, tờ 2a"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Trưng Vương (40–43)",
+   "right": "Lý Nam Đế (541–547)",
+   "cases": [
+    {
+     "text": "Đóng đô ở Mê Linh",
+     "answer": "left"
+    },
+    {
+     "text": "Đặt quốc hiệu Vạn Xuân",
+     "answer": "right"
+    },
+    {
+     "text": "Đánh đuổi Thái thú Tô Định",
+     "answer": "left"
+    },
+    {
+     "text": "Lập trăm quan, đặt niên hiệu",
+     "answer": "right"
+    }
+   ],
+   "explain": "Toàn thư, Ngoại kỷ quyển III và IV."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Vua khổ vì Thái thú {{Tô Định}} dùng {{pháp luật}} trói buộc.",
+   "bank_extra": [
+    "Mã Viện",
+    "binh lính"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Các quận đều hưởng ứng, lấy được {{65}} thành ở Lĩnh Nam, tự lập làm vua.",
+   "bank_extra": [
+    "15",
+    "36"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo Toàn thư, Trưng Trắc là con gái của Lạc tướng huyện Mê Linh.",
+   "answer": true,
+   "explain": "Đúng. \"Nguyên là họ Lạc, con gái của Lạc tướng huyện Mê Linh, Phong Châu\" (Toàn thư cũng chú rằng lấy \"Lạc\" làm họ là lầm)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khởi nghĩa Hai Bà Trưng và ý nghĩa của nó dưới góc độ lịch sử nhà nước và pháp luật.",
+   "model": "Năm 40, Trưng Trắc, Trưng Nhị khởi nghĩa vì Thái thú Tô Định dùng pháp luật trói buộc và giết Thi Sách; các quận hưởng ứng, lấy 65 thành, Trưng Trắc tự lập làm vua, đóng đô Mê Linh; năm 43 bị Mã Viện đánh bại. Ý nghĩa: khẳng định ý chí độc lập; cho thấy mâu thuẫn giữa pháp luật đô hộ và tập quán người Việt, dẫn đến việc Mã Viện điều chỉnh luật.",
+   "keywords": [
+    "năm 40",
+    "Tô Định",
+    "pháp luật trói buộc",
+    "Mê Linh",
+    "Mã Viện"
+   ]
+  }
+ ]
+}

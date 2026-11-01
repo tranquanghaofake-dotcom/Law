@@ -17,6 +17,34 @@
             "nha-nuoc-au-lac",
             "phap-luat-van-lang-au-lac"
           ]
+        },
+        {
+          "id": "ls5-2",
+          "title": "Thời kì Bắc thuộc (179 TCN – 938)",
+          "concepts": [
+            "chinh-quyen-do-ho-quan-huyen",
+            "chinh-sach-dong-hoa",
+            "khoi-nghia-hai-ba-trung",
+            "nha-nuoc-van-xuan",
+            "chinh-quyen-tu-chu-ho-khuc"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c6-trung-dai",
+      "title": "Chương 6. Nhà nước và pháp luật Việt Nam thời kì trung đại (thế kỉ X – XIX)",
+      "lessons": [
+        {
+          "id": "ls6-1",
+          "title": "Nhà nước và pháp luật thời Ngô – Đinh – Tiền Lê",
+          "concepts": [
+            "ngo-quyen-xung-vuong",
+            "dinh-dai-co-viet",
+            "quan-che-nha-dinh",
+            "phap-luat-nha-dinh",
+            "tien-le-dinh-luat-le"
+          ]
         }
       ]
     }

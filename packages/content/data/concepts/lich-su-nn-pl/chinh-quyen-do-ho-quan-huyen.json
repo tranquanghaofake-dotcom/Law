@@ -1,0 +1,126 @@
+{
+ "id": "chinh-quyen-do-ho-quan-huyen",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c5-co-dai",
+ "term": "Chính quyền đô hộ: chế độ châu, quận",
+ "definition": "Từ đó [nhà Hán] lấy đất chia làm 9 quận (…). Từ đấy nhà Hán bắt đầu đặt Thứ sử, Thái thú. Chế độ nhà Hán đặt Thứ sử cai trị một châu, Thái thú cai trị một quận (quận là cấp dưới của châu)",
+ "plain": "Sau khi diệt nhà Triệu (111 TCN), nhà Hán sáp nhập đất ta vào lãnh thổ, chia thành quận, đặt dưới bộ (châu) Giao Chỉ. Ba quận thuộc đất Việt cổ là Giao Chỉ, Cửu Chân, Nhật Nam. Đứng đầu châu là Thứ sử, đứng đầu quận là Thái thú: quan lại người Hán, nắm quyền chính trị, quân sự, thu cống phú. Thời kỳ đầu, ở cấp huyện, Lạc tướng người Việt vẫn được giữ quyền cai quản. Đó là lý do Hai Bà Trưng là con, vợ của Lạc tướng. Mục tiêu lâu dài của chính quyền đô hộ là biến đất Việt thành quận huyện của phương Bắc.",
+ "example": "Mô hình \"châu – quận – huyện\" giống bộ máy địa phương của chính quốc phương Bắc: chính quyền đô hộ không lập \"nhà nước\" riêng cho người Việt mà coi đất Việt là đơn vị hành chính của mình.",
+ "source": {
+  "kind": "primary",
+  "cite": "Đại Việt sử ký toàn thư, Ngoại kỷ, quyển II (bản dịch Viện KHXH Việt Nam, NXB KHXH 1993), Kỷ nhà Triệu, tờ 17a–17b",
+  "url": "https://thpthiephoa1.edu.vn/wp-content/uploads/Dai-viet-su-ki-toan-thu.pdf"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "chinh-sach-dong-hoa",
+  "khoi-nghia-hai-ba-trung",
+  "nha-nuoc-au-lac"
+ ],
+ "keywords": [
+  "9 quận",
+  "Giao Chỉ, Cửu Chân, Nhật Nam",
+  "Thứ sử – châu",
+  "Thái thú – quận"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Toàn thư, chế độ nhà Hán đặt chức nào cai trị một quận?",
+   "options": [
+    "Thái thú",
+    "Thứ sử",
+    "Lạc tướng",
+    "Tiết độ sứ"
+   ],
+   "answer": 0,
+   "explain": "\"Thứ sử cai trị một châu, Thái thú cai trị một quận\".",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Ngoại kỷ, quyển II, tờ 17b"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ba quận nào trong số 9 quận nhà Hán đặt thuộc đất Việt cổ (Tượng Quận thời Tần)?",
+   "options": [
+    "Giao Chỉ, Cửu Chân, Nhật Nam",
+    "Nam Hải, Thương Ngô, Uất Lâm",
+    "Châu Nhai, Đạm Nhĩ, Hợp Phố",
+    "Long Biên, Mê Linh, Chu Diên"
+   ],
+   "answer": 0,
+   "explain": "Toàn thư chú: Giao Chỉ, Cửu Chân, Nhật Nam \"đều là Tượng Quận thời Tần\".",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Ngoại kỷ, quyển II, tờ 17b"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thứ sử",
+   "right": "Thái thú",
+   "cases": [
+    {
+     "text": "Cai trị một châu",
+     "answer": "left"
+    },
+    {
+     "text": "Cai trị một quận",
+     "answer": "right"
+    },
+    {
+     "text": "Tô Định ở quận Giao Chỉ",
+     "answer": "right"
+    }
+   ],
+   "explain": "Toàn thư: Thứ sử – châu, Thái thú – quận (quận là cấp dưới của châu). Tô Định là Thái thú Giao Chỉ."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Từ đấy nhà Hán bắt đầu đặt {{Thứ sử}}, {{Thái thú}}.",
+   "bank_extra": [
+    "Lạc tướng",
+    "Tiết độ sứ"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thái thú cai trị một {{quận}} (quận là cấp dưới của {{châu}}).",
+   "bank_extra": [
+    "bộ",
+    "đạo"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Vì sao Hai Bà Trưng, con và vợ của Lạc tướng, vẫn có thế lực ở địa phương dưới thời thuộc Hán?",
+   "options": [
+    "Vì thời kỳ đầu chính quyền đô hộ chỉ nắm cấp châu, quận; cấp dưới vẫn để Lạc tướng người Việt cai quản",
+    "Vì nhà Hán bổ nhiệm Lạc tướng làm Thứ sử",
+    "Vì Lạc tướng là chức quan do nhà Hán đặt ra",
+    "Vì người Việt được tự bầu Thái thú"
+   ],
+   "answer": 0,
+   "explain": "Đây là cách hiểu phổ biến trong giáo trình: chính quyền đô hộ thời đầu dùng quan lại người Hán ở cấp châu, quận, còn cấp dưới tạm dựa vào Lạc tướng bản địa."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày tổ chức chính quyền đô hộ thời thuộc Hán.",
+   "model": "Nhà Hán chia đất thành 9 quận (Giao Chỉ, Cửu Chân, Nhật Nam thuộc đất Việt cổ), đặt Thứ sử cai trị châu, Thái thú cai trị quận; quan lại là người Hán; thời kỳ đầu cấp dưới vẫn do Lạc tướng người Việt quản lý; mục đích sáp nhập đất Việt thành quận huyện.",
+   "keywords": [
+    "9 quận",
+    "Thứ sử",
+    "Thái thú",
+    "Lạc tướng"
+   ]
+  }
+ ]
+}

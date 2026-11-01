@@ -1,0 +1,120 @@
+{
+ "id": "tien-le-dinh-luat-le",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c6-trung-dai",
+ "term": "Nhà Tiền Lê: định luật lệnh, đổi mười đạo thành lộ, phủ, châu",
+ "definition": "Nhâm Dần, /Ứng Thiên/ năm thứ 9 /1002/, (Tống Hàm Bình năm thứ 5). Mùa xuân, tháng 3, định luật lệnh, chọn quân lính, chia tướng hiệu làm hai ban: đổi mười đạo làm lộ, phủ, châu.",
+ "plain": "Lê Hoàn lên ngôi năm 980 (nhà Tiền Lê). Năm 1002: (1) \"ĐỊNH LUẬT LỆNH\": lần đầu sử chép việc nhà nước định ra luật lệnh, nhưng nội dung không còn lưu lại; (2) cải tổ quân đội (\"chia tướng hiệu làm hai ban\"); (3) đổi \"mười đạo\" thành LỘ, PHỦ, CHÂU: bước đầu tổ chức đơn vị hành chính địa phương, được nhà Lý kế thừa. Không nên khẳng định nội dung cụ thể của \"luật lệnh\" năm 1002 vì sử liệu không chép.",
+ "example": "Khi làm bài: \"Năm 1002 Lê Hoàn định luật lệnh\" là đúng sử liệu; còn \"Lê Hoàn ban hành bộ luật hình sự gồm X điều\" là không có căn cứ.",
+ "source": {
+  "kind": "primary",
+  "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển I (bản dịch Viện KHXH Việt Nam, NXB KHXH 1993), Kỷ nhà Lê, tờ 23b",
+  "url": "https://thpthiephoa1.edu.vn/wp-content/uploads/Dai-viet-su-ki-toan-thu.pdf"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quan-che-nha-dinh",
+  "phap-luat-nha-dinh",
+  "dinh-dai-co-viet"
+ ],
+ "keywords": [
+  "1002",
+  "định luật lệnh",
+  "mười đạo → lộ, phủ, châu",
+  "Lê Hoàn"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Toàn thư, năm 1002 nhà Tiền Lê đã làm gì với \"mười đạo\"?",
+   "options": [
+    "Đổi mười đạo làm lộ, phủ, châu",
+    "Bãi bỏ hoàn toàn",
+    "Gộp thành ba đạo",
+    "Giao cho các sứ quân cai quản"
+   ],
+   "answer": 0,
+   "explain": "\"đổi mười đạo làm lộ, phủ, châu\".",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển I, tờ 23b"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Sự kiện nào được Toàn thư chép vào năm 1002?",
+   "options": [
+    "Định luật lệnh",
+    "Ban hành Hình thư",
+    "Ban hành Quốc triều hình luật",
+    "Ban hành Hoàng Việt luật lệ"
+   ],
+   "answer": 0,
+   "explain": "Năm 1002 \"định luật lệnh\". Hình thư (1042) thuộc nhà Lý; Quốc triều hình luật thuộc Hậu Lê; Hoàng Việt luật lệ thuộc nhà Nguyễn.",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển I, tờ 23b"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Có trong sử liệu năm 1002",
+   "right": "Không có căn cứ trong sử liệu",
+   "cases": [
+    {
+     "text": "Định luật lệnh",
+     "answer": "left"
+    },
+    {
+     "text": "Đổi mười đạo làm lộ, phủ, châu",
+     "answer": "left"
+    },
+    {
+     "text": "Bộ luật gồm nhiều chương, điều cụ thể",
+     "answer": "right"
+    }
+   ],
+   "explain": "Toàn thư chỉ chép vắn tắt; nội dung luật lệnh không còn."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Năm 1002, mùa xuân, tháng 3, định {{luật lệnh}}, chọn quân lính, chia tướng hiệu làm hai ban: đổi mười đạo làm {{lộ, phủ, châu}}.",
+   "bank_extra": [
+    "hình thư",
+    "huyện, xã"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người sáng lập nhà Tiền Lê, từng giữ chức Thập đạo tướng quân thời Đinh, là {{Lê Hoàn}}.",
+   "bank_extra": [
+    "Nguyễn Bặc",
+    "Lý Công Uẩn"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Toàn thư chép đầy đủ nội dung các điều luật do nhà Tiền Lê định năm 1002.",
+   "answer": false,
+   "explain": "Sai. Toàn thư chỉ ghi \"định luật lệnh\", không chép nội dung."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày những cải cách về pháp luật và hành chính của nhà Tiền Lê năm 1002.",
+   "model": "Năm 1002 (Ứng Thiên năm thứ 9), Lê Hoàn định luật lệnh (sử không chép nội dung), chọn quân lính, chia tướng hiệu làm hai ban, đổi mười đạo làm lộ, phủ, châu: bước đầu xây dựng pháp luật và đơn vị hành chính địa phương, được nhà Lý kế thừa.",
+   "keywords": [
+    "1002",
+    "luật lệnh",
+    "lộ, phủ, châu",
+    "Lê Hoàn"
+   ]
+  }
+ ]
+}

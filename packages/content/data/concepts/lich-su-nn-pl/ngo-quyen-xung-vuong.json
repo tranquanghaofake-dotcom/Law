@@ -1,0 +1,126 @@
+{
+ "id": "ngo-quyen-xung-vuong",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c6-trung-dai",
+ "term": "Nhà Ngô: Ngô Quyền xưng vương",
+ "definition": "Kỷ Hợi, năm thứ 1 [939], (Tấn Thiên Phúc năm thứ 4). Mùa xuân, vua bắt đầu xưng vương, lập Dương thị làm hoàng hậu, đặt trăm quan, chế định triều nghi phẩm phục.",
+ "plain": "Sau chiến thắng Bạch Đằng (938), năm 939 Ngô Quyền xưng VƯƠNG, đóng đô ở Cổ Loa, bỏ chức Tiết độ sứ, đặt trăm quan, chế định triều nghi, phẩm phục. Giáo trình coi đây là mốc mở đầu nhà nước phong kiến độc lập, tự chủ (mở đầu thời kỳ trung đại). Hạn chế: chỉ xưng vương, chưa đặt niên hiệu (Lê Văn Hưu nhận xét \"chưa lên ngôi đế, đổi niên hiệu\"); bộ máy còn đơn giản, sau khi Ngô Quyền mất (944) dẫn đến loạn 12 sứ quân.",
+ "example": "Phân biệt: Khúc Hạo xưng TIẾT ĐỘ SỨ (chức quan phương Bắc), Ngô Quyền xưng VƯƠNG, Đinh Bộ Lĩnh xưng HOÀNG ĐẾ.",
+ "source": {
+  "kind": "primary",
+  "cite": "Đại Việt sử ký toàn thư, Ngoại kỷ, quyển V (bản dịch Viện KHXH Việt Nam, NXB KHXH 1993), Kỷ nhà Ngô, Tiền Ngô Vương, tờ 20b–21a",
+  "url": "https://thpthiephoa1.edu.vn/wp-content/uploads/Dai-viet-su-ki-toan-thu.pdf"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "chinh-quyen-tu-chu-ho-khuc",
+  "dinh-dai-co-viet",
+  "quan-che-nha-dinh"
+ ],
+ "keywords": [
+  "939",
+  "xưng vương",
+  "Cổ Loa",
+  "đặt trăm quan",
+  "triều nghi phẩm phục"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Toàn thư, năm 939 Ngô Quyền đã làm gì?",
+   "options": [
+    "Bắt đầu xưng vương, đặt trăm quan, chế định triều nghi phẩm phục",
+    "Xưng hoàng đế, đặt quốc hiệu Đại Cồ Việt",
+    "Xưng Tiết độ sứ",
+    "Ban hành Hình thư"
+   ],
+   "answer": 0,
+   "explain": "Toàn thư, Tiền Ngô Vương năm 939.",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Ngoại kỷ, quyển V, tờ 20b–21a"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ngô Quyền đóng đô ở đâu?",
+   "options": [
+    "Loa Thành (Cổ Loa)",
+    "Hoa Lư",
+    "Mê Linh",
+    "Thăng Long"
+   ],
+   "answer": 0,
+   "explain": "Toàn thư: \"tự lập làm vương, đóng đô ở Loa Thành\".",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Ngoại kỷ, quyển V, tờ 20b"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Ngô Quyền",
+   "right": "Đinh Bộ Lĩnh",
+   "cases": [
+    {
+     "text": "Xưng vương (939)",
+     "answer": "left"
+    },
+    {
+     "text": "Xưng hoàng đế (968)",
+     "answer": "right"
+    },
+    {
+     "text": "Đóng đô ở Cổ Loa",
+     "answer": "left"
+    },
+    {
+     "text": "Đóng đô ở Hoa Lư",
+     "answer": "right"
+    }
+   ],
+   "explain": "Toàn thư, Ngoại kỷ quyển V và Bản kỷ quyển I."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Mùa xuân [939], vua bắt đầu xưng {{vương}}, lập Dương thị làm hoàng hậu, đặt {{trăm quan}}, chế định triều nghi phẩm phục.",
+   "bank_extra": [
+    "đế",
+    "sáu quân"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Lê Văn Hưu nhận xét Tiền Ngô Vương \"tuy chỉ xưng vương, chưa lên ngôi đế, đổi {{niên hiệu}}\".",
+   "bank_extra": [
+    "quốc hiệu",
+    "kinh đô"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Ngô Quyền là người đầu tiên trong lịch sử Việt Nam đặt niên hiệu.",
+   "answer": false,
+   "explain": "Sai. Ngô Quyền chưa đặt niên hiệu; Lý Nam Đế đã đặt niên hiệu Thiên Đức từ năm 544."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày sự kiện Ngô Quyền xưng vương và ý nghĩa đối với lịch sử nhà nước Việt Nam.",
+   "model": "Sau chiến thắng Bạch Đằng 938, năm 939 Ngô Quyền xưng vương, đóng đô Cổ Loa, lập hoàng hậu, đặt trăm quan, chế định triều nghi phẩm phục; chấm dứt thời Bắc thuộc, mở đầu nhà nước phong kiến độc lập; hạn chế: chưa xưng đế, chưa đặt niên hiệu, bộ máy đơn giản, sau khi mất xảy ra loạn 12 sứ quân.",
+   "keywords": [
+    "939",
+    "xưng vương",
+    "Cổ Loa",
+    "trăm quan",
+    "độc lập"
+   ]
+  }
+ ]
+}

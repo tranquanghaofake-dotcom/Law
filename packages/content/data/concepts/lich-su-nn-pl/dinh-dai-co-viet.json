@@ -1,0 +1,125 @@
+{
+ "id": "dinh-dai-co-viet",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c6-trung-dai",
+ "term": "Nhà Đinh: nhà nước Đại Cồ Việt",
+ "definition": "Vua lên ngôi, đặt quốc hiệu là Đại Cồ Việt, dời Kinh ấp về động Hoa Lư, bắt đầu dựng đô mới, đắp thành đào hào, xây cung điện, đặt triều nghi. Bầy tôi dâng tôn hiệu là Đại Thắng Minh Hoàng Đế.",
+ "plain": "Đinh Bộ Lĩnh dẹp loạn 12 sứ quân, năm 968 lên ngôi HOÀNG ĐẾ, đặt quốc hiệu ĐẠI CỒ VIỆT, đóng đô ở HOA LƯ. Năm 970 đặt niên hiệu Thái Bình. Xưng đế là tuyên bố ngang hàng với hoàng đế phương Bắc. Nhà Đinh mở đầu Bản kỷ của Toàn thư, tức là chính sử coi đây là triều đại chính thống. Lê Văn Hưu khen \"mở nước dựng đô, đổi xưng hoàng đế, đặt trăm quan, lập sáu quân, chế độ gần đầy đủ\".",
+ "example": "Mẹo nhớ: Đinh – 968 – Đại Cồ Việt – Hoa Lư – Hoàng đế. Lý Nam Đế cũng xưng \"đế\" (544) nhưng nhà nước Vạn Xuân không bền.",
+ "source": {
+  "kind": "primary",
+  "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển I (bản dịch Viện KHXH Việt Nam, NXB KHXH 1993), Kỷ nhà Đinh, tờ 2b",
+  "url": "https://thpthiephoa1.edu.vn/wp-content/uploads/Dai-viet-su-ki-toan-thu.pdf"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "ngo-quyen-xung-vuong",
+  "quan-che-nha-dinh",
+  "phap-luat-nha-dinh",
+  "nha-nuoc-van-xuan"
+ ],
+ "keywords": [
+  "968",
+  "Đại Cồ Việt",
+  "Hoa Lư",
+  "Đại Thắng Minh Hoàng Đế"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Năm 968, Đinh Bộ Lĩnh đặt quốc hiệu là gì?",
+   "options": [
+    "Đại Cồ Việt",
+    "Đại Việt",
+    "Vạn Xuân",
+    "Đại Ngu"
+   ],
+   "answer": 0,
+   "explain": "Toàn thư, Kỷ nhà Đinh năm 968. Đại Việt có từ năm 1054 (nhà Lý); Đại Ngu là quốc hiệu nhà Hồ.",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển I, tờ 2b"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Bầy tôi dâng tôn hiệu gì cho Đinh Bộ Lĩnh khi lên ngôi?",
+   "options": [
+    "Đại Thắng Minh Hoàng Đế",
+    "Vạn Thắng Vương",
+    "Nam Việt Đế",
+    "Giao Chỉ Quận Vương"
+   ],
+   "answer": 0,
+   "explain": "\"Bầy tôi dâng tôn hiệu là Đại Thắng Minh Hoàng Đế.\" Vạn Thắng Vương là danh hiệu trước khi lên ngôi; Giao Chỉ Quận Vương là tước nhà Tống phong.",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển I, tờ 2b"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Nhà Đinh",
+   "right": "Nhà Ngô",
+   "cases": [
+    {
+     "text": "Quốc hiệu Đại Cồ Việt",
+     "answer": "left"
+    },
+    {
+     "text": "Kinh đô Hoa Lư",
+     "answer": "left"
+    },
+    {
+     "text": "Kinh đô Cổ Loa",
+     "answer": "right"
+    },
+    {
+     "text": "Chỉ xưng vương",
+     "answer": "right"
+    }
+   ],
+   "explain": "Toàn thư."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Vua lên ngôi, đặt quốc hiệu là {{Đại Cồ Việt}}, dời Kinh ấp về động {{Hoa Lư}}.",
+   "bank_extra": [
+    "Vạn Xuân",
+    "Cổ Loa"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Lê Văn Hưu khen Tiên Hoàng: \"mở nước dựng đô, đổi xưng {{hoàng đế}}, đặt trăm quan, lập sáu quân, chế độ gần đầy đủ\".",
+   "bank_extra": [
+    "vương",
+    "tiết độ sứ"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo Toàn thư, Đinh Tiên Hoàng đóng đô ở Cổ Loa.",
+   "answer": false,
+   "explain": "Sai. Nhà Đinh đóng đô ở Hoa Lư; Cổ Loa là kinh đô thời An Dương Vương và Ngô Quyền."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày sự ra đời của nhà nước Đại Cồ Việt thời Đinh.",
+   "model": "Đinh Bộ Lĩnh dẹp loạn 12 sứ quân; năm 968 lên ngôi hoàng đế (Đại Thắng Minh Hoàng Đế), đặt quốc hiệu Đại Cồ Việt, đóng đô Hoa Lư, xây cung điện, đặt triều nghi; năm 970 đặt niên hiệu Thái Bình; đặt trăm quan, lập sáu quân. Xưng đế khẳng định nền độc lập ngang hàng phương Bắc.",
+   "keywords": [
+    "968",
+    "hoàng đế",
+    "Đại Cồ Việt",
+    "Hoa Lư"
+   ]
+  }
+ ]
+}
