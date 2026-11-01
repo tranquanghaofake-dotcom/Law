@@ -9,7 +9,7 @@
   import { localDay } from '$lib/game/streak';
   import { hashFor } from '$lib/router.svelte';
   import { GROUPS, sortGroups } from '$lib/ui/groups';
-  import { pickHeroState, type HeroState } from '$lib/ui/today';
+  import { knownConcepts, pickHeroState, type HeroState } from '$lib/ui/today';
   import { setRail } from '$lib/ui/rail.svelte';
   import HeroCard from '$lib/ui/HeroCard.svelte';
   import HomeRail from '$lib/ui/HomeRail.svelte';
@@ -28,21 +28,22 @@
       document.title = 'Hôm nay · Luyện Luật';
       const idx = await loadIndex();
       index = idx;
-      await stats.migrateV1Best(idx);
+      await stats.ensureV1Migrated(idx);
       const subjects = await Promise.all(idx.subjects.map((s) => loadSubject(s.id)));
       const all = await repo.all();
       const levels = Object.fromEntries(all.map((p) => [p.conceptId, p.level])) as Record<string, Level>;
 
-      const due = await repo.due(new Date());
+      const known = knownConcepts(subjects);
+      const due = (await repo.due(new Date())).filter((p) => known.has(p.conceptId)); // bỏ tiến độ của khái niệm đã xoá
       const terms: Record<string, string> = {};
       if (due.length) {
         const bySubject = new Map<string, string[]>();
         for (const p of due.slice(0, 3)) bySubject.set(p.subject, [...(bySubject.get(p.subject) ?? []), p.conceptId]);
-        for (const [sid, ids] of bySubject) { try { for (const c of await loadConcepts(sid, ids)) terms[c.id] = c.term; } catch { /* môn đã bỏ */ } }
+        for (const [sid, ids] of bySubject) { try { for (const c of await loadConcepts(sid, ids)) terms[c.id] = c.term; } catch { /* file lỗi: giữ slug */ } }
       }
       hero = pickHeroState({ due: due.map((p) => ({ conceptId: p.conceptId, term: terms[p.conceptId] })), subjects, levels });
 
-      const started = new Set(all.filter((p) => p.level > 0).map((p) => p.subject));
+      const started = new Set(all.filter((p) => p.level > 0 && known.has(p.conceptId)).map((p) => p.subject));
       rows = subjects
         .filter((s) => started.size === 0 || started.has(s.id))
         .map((s) => { const ids = s.chapters.flatMap((c) => c.lessons.flatMap((l) => l.concepts)); const mastered = ids.filter((id) => (levels[id] ?? 0) >= 5).length; return { subject: s, grade: ids.length ? gradeFor(mastered / ids.length) : null, mastered, total: ids.length }; });

@@ -17,6 +17,9 @@
 
   async function load() {
     document.title = 'Hồ sơ · Luyện Luật';
+    try { await loadAll(); } catch (e) { msg = `Không tải được dữ liệu: ${(e as Error).message}`; }
+  }
+  async function loadAll() {
     xp = await stats.xp();
     streak = await stats.streak();
     const all = await repo.all();
@@ -51,7 +54,7 @@
 </script>
 
 <section class="card profile">
-  <h1>Hồ sơ</h1>
+  <div class="row-between"><h1>Hồ sơ</h1><a class="btn ghost" href="#/cai-dat">⚙ Cài đặt</a></div>
   <p class="rank-line"><span class="seal big-seal" aria-hidden="true">§</span> <b>{rank.rank}</b> cấp {rank.tier} · {xp} XP
     {#if rank.nextXp}<span class="muted">· còn {rank.nextXp - xp} XP tới {RANKS[rank.index + 1].name}</span>{/if}</p>
   <div class="bar" aria-hidden="true"><span style="width:{rank.progress * 100}%"></span></div>

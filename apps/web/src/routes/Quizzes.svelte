@@ -8,8 +8,11 @@
 
   let index = $state<ContentIndex | null>(null);
   let best = $state<Record<string, number | null>>({});
+  let error = $state('');
   document.title = 'Luyện đề · Luyện Luật';
-  loadIndex().then(async (i) => { for (const s of i.sets) best[s.id] = await stats.best(s.id); index = i; });
+  loadIndex()
+    .then(async (i) => { await stats.ensureV1Migrated(i); for (const s of i.sets) best[s.id] = await stats.best(s.id); index = i; })
+    .catch((e: Error) => (error = e.message));
   const groups = $derived.by(() => {
     const m = new Map<string, ContentIndex['sets']>();
     for (const s of index?.sets ?? []) m.set(s.group, [...(m.get(s.group) ?? []), s]);
@@ -19,7 +22,9 @@
 
 <h1>Luyện đề 10 câu</h1>
 <p class="muted">Luyện đề là kiểm tra nhanh 10 câu, không ghi vào lịch ôn. Muốn nhớ lâu, học khái niệm ở <a href="#/mon">Môn học</a>.</p>
-{#if !index}
+{#if error}
+  <section class="card"><p class="muted">Không tải được dữ liệu: {error}</p></section>
+{:else if !index}
   <p class="loading">Đang tải…</p>
 {:else}
   {#each groups as [g, sets] (g)}

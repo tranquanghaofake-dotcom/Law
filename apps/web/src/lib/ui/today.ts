@@ -23,9 +23,17 @@ export const minutesFor = (steps: number): number => Math.max(1, Math.round((ste
 /** Ước lượng số bước của một đợt học mới: giới thiệu + ~2 bài mỗi khái niệm. */
 const LEARN_STEPS_PER_CONCEPT = 3;
 
+/** Tập id khái niệm còn tồn tại trong các môn hiện có. */
+export function knownConcepts(subjects: Subject[]): Set<string> {
+  return new Set(subjects.flatMap((s) => s.chapters.flatMap((c) => c.lessons.flatMap((l) => l.concepts))));
+}
+
 export function pickHeroState({ due, subjects, levels, dueSteps }: HeroInput): HeroState {
-  if (due.length > 0) {
-    return { kind: 'due', count: due.length, terms: due.slice(0, 3).map((d) => d.term ?? d.conceptId), minutes: minutesFor(dueSteps ?? due.length) };
+  const known = knownConcepts(subjects);
+  // Tiến độ cũ có thể trỏ tới khái niệm/môn đã bỏ khỏi nội dung: bỏ qua, không để kẹt ở thẻ 'due'.
+  const liveDue = due.filter((d) => known.has(d.conceptId));
+  if (liveDue.length > 0) {
+    return { kind: 'due', count: liveDue.length, terms: liveDue.slice(0, 3).map((d) => d.term ?? d.conceptId), minutes: minutesFor(dueSteps ?? liveDue.length) };
   }
   for (const subject of subjects) {
     const lesson = inProgressLesson(subject, levels);
@@ -34,7 +42,6 @@ export function pickHeroState({ due, subjects, levels, dueSteps }: HeroInput): H
       return { kind: 'continue', subject, lesson, done, total: lesson.concepts.length };
     }
   }
-  const known = new Set(subjects.flatMap((s) => s.chapters.flatMap((c) => c.lessons.flatMap((l) => l.concepts))));
   const hasProgress = Object.entries(levels).some(([id, lv]) => lv > 0 && known.has(id));
   for (const subject of subjects) {
     const lesson = currentLesson(subject, levels);

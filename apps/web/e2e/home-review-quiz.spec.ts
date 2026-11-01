@@ -20,7 +20,7 @@ test('điều hướng: 4 mục, mục đang chọn có aria-current; Môn học
   await expect(page.getByRole('heading', { name: 'Môn học' })).toBeVisible();
 });
 
-test('luyện đề 10 câu: làm hết, thấy điểm, điểm cao nhất lên trang chủ', async ({ page }) => {
+test('luyện đề 10 câu: làm hết, thấy điểm, Chọn bộ khác về Luyện đề có điểm cao nhất', async ({ page }) => {
   await page.goto(B + '#/bo/dat-coc');
   for (let i = 0; i < 10; i++) {
     await page.locator('.opt').first().waitFor();
@@ -28,14 +28,14 @@ test('luyện đề 10 câu: làm hết, thấy điểm, điểm cao nhất lên
     await page.getByRole('button', { name: /Câu tiếp|Xem kết quả/ }).click();
   }
   await expect(page.locator('.score')).toHaveText(/\d+\/10/);
-  await page.goto(B + '#/luyen-de');
+  await page.getByRole('link', { name: 'Chọn bộ khác' }).click();
+  await expect(page).toHaveURL(/#\/luyen-de$/);
   await expect(page.getByRole('link', { name: /Đặt cọc/ })).toContainText(/điểm cao nhất/);
 });
 
 test('nhập điểm cao nhất cũ từ localStorage v1', async ({ page }) => {
   await page.addInitScript(() => localStorage.setItem('best:dat-coc', '9'));
-  await page.goto(B + '');
-  await page.goto(B + '#/luyen-de');
+  await page.goto(B + '#/luyen-de'); // mở thẳng, không qua trang chủ
   await expect(page.getByRole('link', { name: /Đặt cọc/ })).toContainText('9/10');
 });
 

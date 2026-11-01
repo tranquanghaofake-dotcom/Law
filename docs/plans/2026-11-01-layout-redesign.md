@@ -200,7 +200,7 @@ Test `Shell.test.ts` (Testing Library): render `Shell` với `active: 'subject'`
 **Files:**
 - Modify: `tools/screenshots.cjs` (SCREENS đủ: home, subjects `#/mon`, subject, quizzes, profile, lesson, quiz), `apps/web/README.md` (routes mới), `docs/specs/2026-11-01-layout-redesign-design.md` (trạng thái → "đã triển khai"), `apps/web/e2e/shell.spec.ts`
 
-- [ ] **Bước 1:** e2e thêm: ở 390 px `#/hoc/hien-phap/hp-1` không có `.tabbar` hiển thị và `main` `paddingBottom` < 20 px (Review Focus 3); `#/mon/hien-phap` ở 390 px `document.documentElement.scrollWidth <= clientWidth` (Review Focus 5); mọi route trong `NAV` có đúng 1 `[aria-current="page"]` trong `.sidenav` ở 1280 px.
+- [ ] **Bước 1:** e2e thêm: ở 390 px `#/hoc/hien-phap/hp-1` không có `.tabbar` hiển thị và `main` `paddingBottom` nhỏ hơn `--tabbar-h` 56 px (`.layout` vốn có 32 px) (Review Focus 3); `#/mon/hien-phap` ở 390 px `document.documentElement.scrollWidth <= clientWidth` (Review Focus 5); mọi route trong `NAV` có đúng 1 `[aria-current="page"]` trong `.sidenav` ở 1280 px.
 - [ ] **Bước 2:** Chạy skill `design:accessibility-review` trên 4 ảnh 1280 px + 390 px; sửa tương phản/focus nếu có.
 - [ ] **Bước 3:** `npm run ci`, e2e, shots; đính ảnh 7 màn × 390/1280 vào PR.
 - [ ] **Bước 4:** Commit `docs: cập nhật README/spec sau khi triển khai layout`; mở **PR 3** `feat/layout-profile-session`.

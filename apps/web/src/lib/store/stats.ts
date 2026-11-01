@@ -49,5 +49,11 @@ export const stats = {
       } catch { /* bỏ qua giá trị hỏng */ }
     }
   },
+  /** Gọi ở mọi trang đọc `best` (Hôm nay, Luyện đề): chạy migrateV1Best đúng một lần cho cả phiên. */
+  ensureV1Migrated(index: ContentIndex): Promise<void> {
+    migrated ??= stats.migrateV1Best(index);
+    return migrated;
+  },
   get, set,
 };
+let migrated: Promise<void> | undefined;

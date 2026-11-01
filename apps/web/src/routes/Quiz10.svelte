@@ -83,7 +83,7 @@
       <button class="btn" type="button" onclick={load}>Làm lại</button>
       <button class="btn ghost" type="button" onclick={share}>{shareLabel}</button>
     </div>
-    <a class="btn ghost" href="#/" style="margin-top:10px;width:100%">Chọn bộ khác</a>
+    <a class="btn ghost" href="#/luyen-de" style="margin-top:10px;width:100%">Chọn bộ khác</a>
   </section>
   {#if wrong.length}
     <section class="review"><h2>Các câu cần xem lại</h2>

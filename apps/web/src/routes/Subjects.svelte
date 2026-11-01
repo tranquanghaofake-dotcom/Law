@@ -4,12 +4,15 @@
   import { loadIndex } from '$lib/content/loader';
   import { hashFor } from '$lib/router.svelte';
   let index = $state<ContentIndex | null>(null);
+  let error = $state('');
   document.title = 'Môn học · Luyện Luật';
-  loadIndex().then((i) => (index = i));
+  loadIndex().then((i) => (index = i)).catch((e: Error) => (error = e.message));
 </script>
 
 <h1>Môn học</h1>
-{#if !index}
+{#if error}
+  <section class="card"><p class="muted">Không tải được dữ liệu: {error}</p></section>
+{:else if !index}
   <p class="loading">Đang tải…</p>
 {:else}
   <div class="sets">

@@ -13,8 +13,10 @@ const subjects = [subject];
 
 describe('pickHeroState', () => {
   it('có bài đến hạn → due với số lượng, tên và phút ước lượng', () => {
-    const due = Array.from({ length: 12 }, (_, i) => ({ conceptId: `k${i}`, term: `Khái niệm ${i}` }));
-    const s = pickHeroState({ due, subjects, levels: {}, dueSteps: 12 });
+    const ids = Array.from({ length: 12 }, (_, i) => `k${i}`);
+    const big: Subject = { id: 'ds', title: 'Dân sự', short: 'DS', chapters: [{ id: 'c', title: 'C', lessons: [{ id: 'l', title: 'L', concepts: ids }] }] };
+    const due = ids.map((id, i) => ({ conceptId: id, term: `Khái niệm ${i}` }));
+    const s = pickHeroState({ due, subjects: [big], levels: {}, dueSteps: 12 });
     expect(s).toMatchObject({ kind: 'due', count: 12, minutes: 5 });
     expect(s.kind === 'due' && s.terms).toEqual(['Khái niệm 0', 'Khái niệm 1', 'Khái niệm 2']);
   });
@@ -35,6 +37,12 @@ describe('pickHeroState', () => {
   });
   it('tiến độ của khái niệm không còn trong môn → start, không throw', () => {
     expect(pickHeroState({ due: [], subjects, levels: { zzz: 4 } })).toMatchObject({ kind: 'start', lesson: { id: 'hp-1' } });
+  });
+  it('khái niệm đến hạn không còn trong môn bị bỏ qua → start, không throw (Review Focus 1)', () => {
+    const s = pickHeroState({ due: [{ conceptId: 'zzz' }], subjects, levels: { zzz: 4 } });
+    expect(s).toMatchObject({ kind: 'start', lesson: { id: 'hp-1' } });
+    const mixed = pickHeroState({ due: [{ conceptId: 'zzz' }, { conceptId: 'a', term: 'A' }], subjects, levels: { a: 4, zzz: 4 } });
+    expect(mixed).toMatchObject({ kind: 'due', count: 1, terms: ['A'] });
   });
   it('không có môn nào → done', () => {
     expect(pickHeroState({ due: [], subjects: [], levels: {} })).toEqual({ kind: 'done' });

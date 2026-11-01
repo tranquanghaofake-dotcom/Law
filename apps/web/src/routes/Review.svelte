@@ -21,8 +21,11 @@
       for (const [sid, ids] of bySubject) {
         if (!index.subjects.some((s) => s.id === sid)) continue;
         await loadSubject(sid); // kiểm tra môn còn tồn tại
-        concepts.push(...(await loadConcepts(sid, ids)));
+        // khái niệm đã bị xoá khỏi nội dung (404) thì bỏ qua, không làm hỏng cả phiên ôn
+        const loaded = await Promise.allSettled(ids.map((id) => loadConcepts(sid, [id])));
+        for (const r of loaded) if (r.status === 'fulfilled') concepts.push(...r.value);
       }
+      if (!concepts.length) { empty = true; return; }
       const levels = Object.fromEntries(due.map((p) => [p.conceptId, p.level])) as Record<string, Level>;
       data = { steps: buildReviewSession(concepts, levels, Math.random), concepts, levels };
     } catch (e) { error = (e as Error).message; }
