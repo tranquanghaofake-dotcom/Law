@@ -1,0 +1,22 @@
+name: Sai / thiếu nội dung luật
+description: Khái niệm, câu hỏi hoặc căn cứ điều luật chưa đúng
+labels: [content]
+body:
+  - type: input
+    id: where
+    attributes:
+      label: Khái niệm / bộ đề
+      placeholder: "hien-phap / hieu-luc-phap-ly-toi-cao, hoặc bộ 'Đặt cọc' câu 3"
+    validations: { required: true }
+  - type: textarea
+    id: issue
+    attributes:
+      label: Sai ở đâu
+      description: Trích đúng câu đang hiển thị
+    validations: { required: true }
+  - type: textarea
+    id: source
+    attributes:
+      label: Căn cứ đề xuất
+      description: Điều, khoản, văn bản và link vbpl.vn / thuvienphapluat.vn
+    validations: { required: true }

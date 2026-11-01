@@ -1,0 +1,26 @@
+name: Báo lỗi web
+description: Một thứ trên web không chạy đúng
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: Điều gì xảy ra
+      description: Mô tả ngắn và các bước để lặp lại
+      placeholder: "1. Mở #/on  2. Bấm…  3. Thấy…"
+    validations: { required: true }
+  - type: input
+    id: url
+    attributes:
+      label: Địa chỉ (hash) đang ở
+      placeholder: "https://tranquanghaofake-dotcom.github.io/Law/#/hoc/hien-phap/hp-1"
+  - type: dropdown
+    id: device
+    attributes:
+      label: Thiết bị
+      options: [Điện thoại, Máy tính, Cả hai]
+    validations: { required: true }
+  - type: textarea
+    id: shot
+    attributes:
+      label: Ảnh chụp (kéo thả vào đây)

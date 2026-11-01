@@ -1,9 +1,16 @@
-name: Deploy web lên GitHub Pages
+# Deploy lên GitHub Pages khi main thay đổi app hoặc nội dung. Mục tiêu: < 1 phút.
+# Cài đặt một lần: Settings → Pages → Source = GitHub Actions.
+name: Deploy
 
 on:
   push:
     branches: [main]
-    paths: ['web/**', '.github/workflows/pages.yml']
+    paths:
+      - 'apps/web/**'
+      - 'packages/content/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/deploy.yml'
   workflow_dispatch:
 
 permissions:
@@ -18,24 +25,26 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run: { working-directory: web }
+    timeout-minutes: 8
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-        with: { node-version: 22, cache: npm, cache-dependency-path: web/package-lock.json }
-      - run: npm ci
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci --no-audit --no-fund
       - run: npm test
       - run: npm run build
         env:
           # Trang nằm tại https://<user>.github.io/Law/ nên mọi đường dẫn phải bắt đầu bằng /Law/
           BASE_PATH: /${{ github.event.repository.name }}/
       - uses: actions/upload-pages-artifact@v3
-        with: { path: web/dist }
+        with: { path: apps/web/dist }
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
