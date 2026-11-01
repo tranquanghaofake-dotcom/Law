@@ -1,0 +1,117 @@
+{
+ "id": "blhs-1985",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c8-hien-dai",
+ "term": "Bộ luật Hình sự 1985: bộ luật hình sự đầu tiên",
+ "definition": "Bộ luật hình sự có nhiệm vụ bảo vệ chế độ xã hội chủ nghĩa, quyền làm chủ tập thể xã hội chủ nghĩa của nhân dân (…). Chỉ người nào phạm một tội đã được Luật hình sự quy định mới phải chịu trách nhiệm hình sự. Hình phạt phải do Toà án quyết định.",
+ "plain": "Bộ luật Hình sự 1985 (thông qua 27/6/1985, hiệu lực 01/01/1986) là BỘ LUẬT HÌNH SỰ ĐẦU TIÊN của nước Việt Nam thống nhất, pháp điển hóa các sắc lệnh, pháp lệnh hình sự rời rạc trước đó. Điều 2 ghi nhận nguyên tắc pháp chế \"không có tội nếu luật không quy định\" (chỉ người phạm tội đã được luật hình sự quy định mới chịu trách nhiệm hình sự) và chỉ TÒA ÁN mới quyết định hình phạt. Dấu ấn thời kỳ: \"quyền làm chủ tập thể xã hội chủ nghĩa\" (tư tưởng của Hiến pháp 1980). Bộ luật được sửa đổi nhiều lần (1989, 1991, 1992, 1997) trước khi bị thay thế bởi Bộ luật Hình sự 1999.",
+ "example": "So sánh: Điều 41 Quốc triều hình luật cho phép \"khi định tội mà không có điều luật chính\" thì quan xử có thể coi là tội nhẹ hoặc tội nặng tùy tình tiết; còn Điều 2 Bộ luật Hình sự 1985 khẳng định chỉ hành vi đã được luật hình sự quy định mới phải chịu trách nhiệm hình sự.",
+ "source": {
+  "kind": "primary",
+  "cite": "Bộ luật Hình sự 1985, Điều 1 và Điều 2",
+  "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Bo-luat-Hinh-su-1985-17-LCT-HDNN7-37003.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "toi-pham-1985",
+  "ngu-hinh-qthl"
+ ],
+ "keywords": [
+  "27/6/1985",
+  "hiệu lực 01/01/1986",
+  "chỉ phạm tội luật quy định",
+  "Tòa án quyết định hình phạt",
+  "làm chủ tập thể"
+ ],
+ "note": "Bộ luật Hình sự 1985 có hiệu lực từ 01/01/1986, đã hết hiệu lực (thay bằng Bộ luật Hình sự 1999); hiện hành là Bộ luật Hình sự 100/2015/QH13 (đã được sửa đổi). Học để hiểu lịch sử.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 2 Bộ luật Hình sự 1985, ai chịu trách nhiệm hình sự?",
+   "options": [
+    "Chỉ người nào phạm một tội đã được Luật hình sự quy định",
+    "Mọi người có hành vi trái đạo đức",
+    "Người bị Ủy ban nhân dân kết luận có lỗi",
+    "Người bị tố cáo"
+   ],
+   "answer": 0,
+   "explain": "Điều 2.",
+   "source": {
+    "kind": "primary",
+    "cite": "Bộ luật Hình sự 1985, Điều 2"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Bộ luật Hình sự 1985 có hiệu lực từ ngày nào?",
+   "options": [
+    "01/01/1986",
+    "27/6/1985",
+    "01/7/2000",
+    "01/01/2018"
+   ],
+   "answer": 0,
+   "explain": "Thông qua 27/6/1985, hiệu lực 01/01/1986.",
+   "source": {
+    "kind": "primary",
+    "cite": "Bộ luật Hình sự 1985"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Bộ luật Hình sự 1985",
+   "right": "Bộ luật Hình sự 2015 (hiện hành)",
+   "cases": [
+    {
+     "text": "Bảo vệ \"quyền làm chủ tập thể xã hội chủ nghĩa\"",
+     "answer": "left"
+    },
+    {
+     "text": "Có quy định trách nhiệm hình sự của pháp nhân thương mại",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 1 BLHS 1985; BLHS 2015 lần đầu quy định pháp nhân thương mại chịu trách nhiệm hình sự."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chỉ người nào phạm một tội đã được {{Luật hình sự}} quy định mới phải chịu trách nhiệm hình sự. Hình phạt phải do {{Toà án}} quyết định.",
+   "bank_extra": [
+    "nghị quyết",
+    "Viện kiểm sát"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bộ luật Hình sự 1985 có hiệu lực từ ngày {{01/01/1986}}.",
+   "bank_extra": [
+    "27/6/1985",
+    "01/7/2000"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Bộ luật Hình sự 1985 là bộ luật hình sự đầu tiên của nước Việt Nam thống nhất.",
+   "answer": true,
+   "explain": "Đúng theo đánh giá phổ biến; trước đó pháp luật hình sự nằm rải rác trong các sắc lệnh, pháp lệnh."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày hoàn cảnh ra đời và nguyên tắc cơ bản của Bộ luật Hình sự 1985.",
+   "model": "Thông qua 27/6/1985, hiệu lực 01/01/1986; bộ luật hình sự đầu tiên, pháp điển hóa các văn bản đơn hành; nhiệm vụ bảo vệ chế độ xã hội chủ nghĩa, quyền làm chủ tập thể (Điều 1); chỉ người phạm tội được luật quy định mới chịu trách nhiệm hình sự, hình phạt do Tòa án quyết định (Điều 2); thay thế bởi Bộ luật Hình sự 1999.",
+   "keywords": [
+    "1985",
+    "pháp điển hóa",
+    "luật quy định",
+    "Tòa án"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,116 @@
+{
+ "id": "cam-mua-ban-dat-1987",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c8-hien-dai",
+ "term": "Luật Đất đai 1987: cấm mua bán đất, quyền chuyển nhượng thành quả lao động",
+ "definition": "Nhà nước bảo đảm cho người sử dụng đất được hưởng những quyền lợi hợp pháp trên đất được giao, kể cả quyền chuyển, nhượng, bán thành quả lao động, kết quả đầu tư trên đất được giao khi không còn sử dụng đất và đất đó được giao cho người khác sử dụng theo trình tự, thủ tục do pháp luật quy định. (…) Nghiêm cấm việc mua, bán, lấn, chiếm đất đai, phát canh thu tô dưới mọi hình thức",
+ "plain": "Luật Đất đai 1987 NGHIÊM CẤM MUA BÁN ĐẤT và phát canh thu tô (Điều 5). Người sử dụng đất chỉ được chuyển nhượng, bán THÀNH QUẢ LAO ĐỘNG, KẾT QUẢ ĐẦU TƯ trên đất (nhà, cây, công trình) khi không còn sử dụng và đất được giao cho người khác (Điều 3), chưa được chuyển nhượng QUYỀN SỬ DỤNG ĐẤT. Đây là điểm khác căn bản với Luật Đất đai 1993, luật này lần đầu cho hộ gia đình, cá nhân các quyền chuyển đổi, chuyển nhượng, cho thuê, thừa kế, thế chấp quyền sử dụng đất. Quá trình này thể hiện bước chuyển dần sang cơ chế thị trường về đất đai.",
+ "example": "Năm 1989, một người muốn bán mảnh đất được giao để chuyển nơi ở: theo Luật Đất đai 1987, người đó không được bán đất mà chỉ được bán nhà, cây trồng trên đất; đất phải được Nhà nước giao lại cho người khác.",
+ "source": {
+  "kind": "primary",
+  "cite": "Luật Đất đai 1987, Điều 3 và Điều 5",
+  "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Luat-Dat-dai-1987-3-LCT-HDNN8-37467.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "luat-dat-dai-1987",
+  "sac-lenh-97-khe-uoc"
+ ],
+ "keywords": [
+  "nghiêm cấm mua bán đất",
+  "cấm phát canh thu tô",
+  "bán thành quả lao động",
+  "Luật Đất đai 1993 cho chuyển nhượng quyền sử dụng"
+ ],
+ "note": "Luật Đất đai 1987 đã hết hiệu lực (thay bằng Luật Đất đai 1993); hiện hành là Luật Đất đai 31/2024/QH15. Học để hiểu lịch sử.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 5 Luật Đất đai 1987, hành vi nào bị nghiêm cấm?",
+   "options": [
+    "Mua, bán, lấn, chiếm đất đai, phát canh thu tô",
+    "Thâm canh, tăng vụ",
+    "Khai hoang, phủ xanh đồi trọc",
+    "Bán thành quả lao động trên đất khi không còn sử dụng"
+   ],
+   "answer": 0,
+   "explain": "Điều 5; khai hoang được khuyến khích (Điều 2), bán thành quả lao động được bảo đảm (Điều 3).",
+   "source": {
+    "kind": "primary",
+    "cite": "Luật Đất đai 1987, Điều 5"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 3 Luật Đất đai 1987, người sử dụng đất được chuyển, nhượng, bán gì khi không còn sử dụng đất?",
+   "options": [
+    "Thành quả lao động, kết quả đầu tư trên đất được giao",
+    "Quyền sở hữu đất",
+    "Quyền sử dụng đất",
+    "Không được gì"
+   ],
+   "answer": 0,
+   "explain": "Điều 3.",
+   "source": {
+    "kind": "primary",
+    "cite": "Luật Đất đai 1987, Điều 3"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Luật Đất đai 1987",
+   "right": "Luật Đất đai 1993",
+   "cases": [
+    {
+     "text": "Nghiêm cấm mua bán đất, chỉ bán thành quả lao động trên đất",
+     "answer": "left"
+    },
+    {
+     "text": "Cho hộ gia đình, cá nhân chuyển nhượng, thừa kế, thế chấp quyền sử dụng đất",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 3, 5 Luật Đất đai 1987; Luật Đất đai 1993."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nghiêm cấm việc mua, bán, lấn, chiếm đất đai, {{phát canh thu tô}} dưới mọi hình thức.",
+   "bank_extra": [
+    "thâm canh tăng vụ",
+    "khai hoang"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người sử dụng đất được chuyển, nhượng, bán {{thành quả lao động}}, kết quả đầu tư trên đất được giao khi không còn sử dụng đất.",
+   "bank_extra": [
+    "quyền sở hữu",
+    "quyền sử dụng đất"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Luật Đất đai 1987 cho phép hộ gia đình chuyển nhượng quyền sử dụng đất như hàng hóa.",
+   "answer": false,
+   "explain": "Sai. Luật 1987 nghiêm cấm mua bán đất; quyền chuyển nhượng quyền sử dụng đất được ghi nhận từ Luật Đất đai 1993."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "So sánh quyền của người sử dụng đất theo Luật Đất đai 1987 với giai đoạn sau.",
+   "model": "Luật Đất đai 1987: nghiêm cấm mua bán, lấn chiếm đất, phát canh thu tô (Điều 5); người sử dụng chỉ được chuyển nhượng, bán thành quả lao động, kết quả đầu tư trên đất khi không còn sử dụng (Điều 3). Luật Đất đai 1993 lần đầu cho chuyển đổi, chuyển nhượng, cho thuê, thừa kế, thế chấp quyền sử dụng đất; bước chuyển sang thị trường.",
+   "keywords": [
+    "cấm mua bán",
+    "thành quả lao động",
+    "1993",
+    "quyền sử dụng đất"
+   ]
+  }
+ ]
+}
