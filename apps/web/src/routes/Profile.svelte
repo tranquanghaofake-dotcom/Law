@@ -1,4 +1,6 @@
 <script lang="ts">
+  import Bookshelf from '$lib/ui/Bookshelf.svelte';
+  import Glyph from '$lib/art/Glyph.svelte';
   import SubjectArt from '$lib/art/SubjectArt.svelte';
   import { PAGE_ART } from '$lib/art/registry';
   // Hồ sơ: hai tab Tổng quan (#/toi) · Cài đặt (#/cai-dat) (spec §5.2).
@@ -63,23 +65,29 @@
 <header class="page-head">
   <SubjectArt name={PAGE_ART.profile} class="head-art" />
   <h1>Hồ sơ</h1>
+  <p class="muted">Bậc khoa cử, chuỗi ngày học, tủ sách các môn và dữ liệu tiến độ của bạn.</p>
 </header>
 <div class="tabs" role="tablist" aria-label="Hồ sơ">
   <a role="tab" href={hashFor('profile')} aria-selected={!onSettings} class:on={!onSettings}>Tổng quan</a>
-  <a role="tab" href={hashFor('settings')} aria-selected={onSettings} class:on={onSettings}>⚙ Cài đặt</a>
+  <a role="tab" href={hashFor('settings')} aria-selected={onSettings} class:on={onSettings}><Glyph name="gear" size={16} /> Cài đặt</a>
 </div>
 
 {#if onSettings}
   <div role="tabpanel"><Settings /></div>
 {:else}
   <div role="tabpanel" class="profile-grid">
+    <section class="card wide shelf-card">
+      <p class="kicker">Tủ sách</p>
+      <p class="muted small">Mỗi môn là một cuốn sách luật. Sách đậm dần theo số khái niệm thuần thục và được đóng dấu son khi bạn thuần thục toàn bộ môn.</p>
+      <Bookshelf size="large" />
+    </section>
     <section class="card profile">
       <p class="kicker">Bậc khoa cử</p>
       <p class="rank-line"><span class="seal big-seal" aria-hidden="true">§</span> <b>{rank.rank}</b> cấp {rank.tier} · {xp} XP</p>
       <div class="bar" aria-hidden="true"><span style="width:{rank.progress * 100}%"></span></div>
       {#if rank.nextXp}<p class="muted small">còn {rank.nextXp - xp} XP tới {RANKS[rank.index + 1].name}</p>{/if}
       <p class="kicker" style="margin-top:16px">Chuỗi ngày</p>
-      <p>🔥 <b>{streak.count}</b> ngày · dài nhất {streak.longest} · bùa giữ chuỗi {streak.freezes}/2</p>
+      <p class="streak-line"><Glyph name="flame" /> <b>{streak.count}</b> ngày · dài nhất {streak.longest} · bùa giữ chuỗi {streak.freezes}/2</p>
       <WeekDots days={week} />
     </section>
     <section class="card">

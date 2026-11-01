@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Glyph from '$lib/art/Glyph.svelte';
   import type { Snippet } from 'svelte';
   import type { RouteName } from '$lib/router.svelte';
   import { NAV, activeNav } from './nav';
@@ -9,6 +10,7 @@
   import StreakFlame from './StreakFlame.svelte';
   import RankBadge from './RankBadge.svelte';
   import Icon from '$lib/art/Icon.svelte';
+  import Bookshelf from './Bookshelf.svelte';
 
   let { active, children }: { active: RouteName; children: Snippet } = $props();
   const current = $derived(activeNav(active));
@@ -31,8 +33,9 @@
           <span class="ico"><Icon name={n.name} /></span><span class="lbl">{n.label}</span></a></li>
       {/each}
     </ul>
+    <div class="side-shelf"><p class="kicker">Tủ sách</p><Bookshelf size="side" /></div>
     <a class="me" href="#/toi">
-      <span class="flame" class:cold={header.streak === 0}><span aria-hidden="true">🔥</span><span class="sr-only">Chuỗi </span>{header.streak}<span class="sr-only"> ngày,</span></span>
+      <span class="flame" class:cold={header.streak === 0}><Glyph name="flame" size={16} /><span class="sr-only">Chuỗi </span>{header.streak}<span class="sr-only"> ngày,</span></span>
       <span class="rank"><span class="seal" aria-hidden="true">§</span><span>{info.rank}</span> <span class="tier">{info.tier}</span></span>
       {#if info.nextXp}<span class="xp-line muted">còn {info.nextXp - header.xp} XP tới {RANKS[info.index + 1].name}</span>{/if}
     </a>

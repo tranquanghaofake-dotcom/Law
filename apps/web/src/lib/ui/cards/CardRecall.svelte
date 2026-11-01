@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Glyph from '$lib/art/Glyph.svelte';
   import type { ItemRecall } from '$lib/content/types';
   import { gradeRecall, normalize } from '$lib/engine/grading';
   import type { CardProps } from './types';
@@ -43,7 +44,7 @@
     <button class="btn primary" type="button" disabled={!text.trim()} onclick={reveal}>Xem đáp án</button>
   {:else}
     <div class="your-answer"><p class="kicker">Bài của bạn</p><p>{#each hitSegments as seg}{#if seg.hit}<mark>{seg.s}</mark>{:else}{seg.s}{/if}{/each}</p></div>
-    <div class="model"><p class="kicker">Đáp án mẫu {#if onspeak}<button class="speak" type="button" aria-label="Nghe đáp án" onclick={() => onspeak?.(item.model)}>🔊</button>{/if}</p><p class="quote">{item.model}</p>
+    <div class="model"><p class="kicker">Đáp án mẫu {#if onspeak}<button class="speak" type="button" aria-label="Nghe đáp án" onclick={() => onspeak?.(item.model)}><Glyph name="speaker" /></button>{/if}</p><p class="quote">{item.model}</p>
       <p class="muted">Từ khóa: {#each item.keywords as k, i}<span class={grade.hits.includes(k) ? 'kw ok' : 'kw bad'}>{k}</span>{i < item.keywords.length - 1 ? ' · ' : ''}{/each}</p></div>
     <p class="kicker">Bạn tự chấm</p>
     <div class="options three" role="group" aria-label="Tự chấm">

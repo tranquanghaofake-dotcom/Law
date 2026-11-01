@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Glyph from '$lib/art/Glyph.svelte';
   // Rail phải của trang Hôm nay (≥ 1440 px): chuỗi tuần, bậc, hẹn ôn ngày mai, dòng pháp lý (spec §3.4).
   import { header } from './header.svelte';
   import { rankFor, RANKS } from '$lib/game/rank';
@@ -9,7 +10,7 @@
 
 <section class="rail-block">
   <p class="kicker">Chuỗi</p>
-  <p class="rail-big"><span aria-hidden="true">🔥</span> {header.streak} <span class="muted small">ngày</span></p>
+  <p class="rail-big"><Glyph name="flame" size={26} /> {header.streak} <span class="muted small">ngày</span></p>
   <WeekDots days={week} />
 </section>
 <section class="rail-block">
