@@ -1,0 +1,117 @@
+{
+ "id": "quyen-han-uy-ban-trong-thanh-tra",
+ "subject": "chung-khoan",
+ "chapter": "c10-xu-ly-vi-pham",
+ "term": "Quyền yêu cầu cung cấp thông tin của Ủy ban khi thanh tra",
+ "definition": "Yêu cầu tổ chức tín dụng, chi nhánh ngân hàng nước ngoài cung cấp thông tin liên quan đến giao dịch trên tài khoản của khách hàng đối với các trường hợp có dấu hiệu thực hiện hành vi bị nghiêm cấm quy định tại Điều 12 của Luật này. Trình tự, thủ tục yêu cầu và cung cấp thông tin thực hiện theo quy định của pháp luật về ngân hàng; c) Yêu cầu doanh nghiệp viễn thông cung cấp tên, địa chỉ, số máy gọi, số máy được gọi, thời gian gọi để xác minh, xử lý hành vi bị nghiêm cấm quy định tại Điều 12 của Luật này.",
+ "plain": "Để lần ra thao túng, giao dịch nội gián, Ủy ban được \"nhìn\" vào dòng tiền ngân hàng và dữ liệu cuộc gọi, nhưng có giới hạn: chỉ khi có DẤU HIỆU hành vi bị cấm tại Điều 12; phải được Chủ tịch Ủy ban phê duyệt, yêu cầu bằng văn bản nêu rõ mục đích, căn cứ, phạm vi; thông tin phải bảo mật, chỉ dùng cho thanh tra, xử lý vi phạm. Người được yêu cầu có quyền từ chối nếu yêu cầu trái Điều 130.",
+ "example": "Ngân hàng nhận công văn của Ủy ban yêu cầu sao kê tài khoản của 5 khách hàng nghi thao túng giá, có chữ ký phê duyệt của Chủ tịch Ủy ban và nêu rõ phạm vi: ngân hàng phải cung cấp; nếu công văn chỉ là yêu cầu chung chung không nêu căn cứ thì ngân hàng có quyền từ chối.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điểm b, c khoản 1 Điều 130 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "thanh-tra-chung-khoan",
+  "thao-tung-thi-truong",
+  "giao-dich-noi-gian"
+ ],
+ "keywords": [
+  "ngân hàng cung cấp giao dịch tài khoản",
+  "nhà mạng cung cấp dữ liệu cuộc gọi",
+  "dấu hiệu vi phạm Điều 12",
+  "Chủ tịch Ủy ban phê duyệt bằng văn bản"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ủy ban được yêu cầu doanh nghiệp viễn thông cung cấp dữ liệu cuộc gọi trong trường hợp nào?",
+   "options": [
+    "Để xác minh, xử lý hành vi bị nghiêm cấm tại Điều 12",
+    "Bất cứ khi nào Ủy ban muốn",
+    "Khi công ty niêm yết chậm nộp báo cáo",
+    "Để thống kê thị trường"
+   ],
+   "answer": 0,
+   "explain": "Điểm c khoản 1 Điều 130.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 130 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Yêu cầu cung cấp thông tin theo khoản 1 Điều 130 phải đáp ứng điều kiện hình thức nào?",
+   "options": [
+    "Được Chủ tịch Ủy ban phê duyệt, bằng văn bản, nêu rõ mục đích, căn cứ, nội dung, phạm vi",
+    "Gọi điện thoại là đủ",
+    "Chỉ cần email của chuyên viên",
+    "Không cần hình thức"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 130.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 130 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Ngân hàng cung cấp",
+   "right": "Doanh nghiệp viễn thông cung cấp",
+   "cases": [
+    {
+     "text": "Thông tin giao dịch trên tài khoản của khách hàng",
+     "answer": "left"
+    },
+    {
+     "text": "Tên, địa chỉ, số máy gọi, số máy được gọi, thời gian gọi",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điểm b, c khoản 1 Điều 130."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thông tin do ngân hàng, doanh nghiệp viễn thông cung cấp phải được {{bảo mật}} và chỉ được sử dụng cho mục đích thanh tra, kiểm tra, {{xử lý vi phạm}}.",
+   "bank_extra": [
+    "công bố",
+    "quảng cáo"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Trong vi phạm mang tính {{xuyên biên giới}}, Ủy ban phối hợp, chia sẻ thông tin với cơ quan quản lý thị trường chứng khoán các nước.",
+   "bank_extra": [
+    "nội bộ",
+    "địa phương"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tổ chức, cá nhân có quyền từ chối cung cấp thông tin nếu có căn cứ cho rằng yêu cầu của Ủy ban trái quy định tại Điều 130.",
+   "answer": true,
+   "explain": "Đúng. Khoản 5 Điều 131."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quyền yêu cầu cung cấp thông tin của Ủy ban khi thanh tra và các giới hạn.",
+   "model": "Ủy ban được yêu cầu cơ quan, tổ chức, cá nhân cung cấp tài liệu, giải trình; yêu cầu ngân hàng cung cấp thông tin giao dịch tài khoản và doanh nghiệp viễn thông cung cấp dữ liệu cuộc gọi khi có dấu hiệu hành vi bị cấm tại Điều 12. Giới hạn: Chủ tịch Ủy ban phê duyệt, bằng văn bản nêu mục đích, căn cứ, phạm vi; bảo mật, chỉ dùng cho thanh tra, xử lý vi phạm; người được yêu cầu có quyền từ chối yêu cầu trái luật (Điều 130, 131).",
+   "keywords": [
+    "ngân hàng",
+    "viễn thông",
+    "Điều 12",
+    "văn bản",
+    "bảo mật"
+   ]
+  }
+ ]
+}

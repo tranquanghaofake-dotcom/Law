@@ -1,0 +1,120 @@
+{
+ "id": "giai-quyet-tranh-chap-chung-khoan",
+ "subject": "chung-khoan",
+ "chapter": "c10-xu-ly-vi-pham",
+ "term": "Giải quyết tranh chấp và bồi thường thiệt hại trong lĩnh vực chứng khoán",
+ "definition": "Trường hợp quyền, lợi ích hợp pháp của tổ chức, cá nhân trong hoạt động về chứng khoán và thị trường chứng khoán bị xâm phạm hoặc có tranh chấp phát sinh trong hoạt động chứng khoán và thị trường chứng khoán tại Việt Nam thì việc bảo vệ quyền, lợi ích hợp pháp hoặc giải quyết tranh chấp được thực hiện thông qua thương lượng, hoà giải hoặc yêu cầu Trọng tài hoặc Toà án Việt Nam giải quyết theo quy định của pháp luật.",
+ "plain": "Bốn phương thức: thương lượng, hòa giải, Trọng tài, Tòa án Việt Nam. Bồi thường thiệt hại theo thỏa thuận, Bộ luật Dân sự và luật liên quan (khoản 2). Lưu ý: Sở giao dịch có thể làm trung gian hòa giải tranh chấp giữa các thành viên (Điều 46, 47), nhưng không xét xử. Ủy ban xử phạt hành chính, không phân xử tranh chấp dân sự giữa nhà đầu tư và công ty.",
+ "example": "Nhà đầu tư kiện công ty chứng khoán vì tự ý bán cổ phiếu trong tài khoản: có thể thương lượng, hòa giải; nếu hợp đồng mở tài khoản có điều khoản trọng tài thì đưa ra Trọng tài thương mại; nếu không thì khởi kiện ra Tòa án.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 133 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "xu-ly-vi-pham-chung-khoan",
+  "quyen-nghia-vu-so-giao-dich"
+ ],
+ "keywords": [
+  "thương lượng, hòa giải",
+  "Trọng tài",
+  "Tòa án Việt Nam",
+  "Bộ luật Dân sự"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 1 Điều 133, phương thức nào KHÔNG được liệt kê để giải quyết tranh chấp chứng khoán?",
+   "options": [
+    "Ủy ban Chứng khoán Nhà nước ra phán quyết dân sự",
+    "Thương lượng",
+    "Hòa giải",
+    "Trọng tài"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 133: thương lượng, hòa giải, Trọng tài, Tòa án Việt Nam.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 133 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Việc bồi thường thiệt hại trong lĩnh vực chứng khoán thực hiện theo căn cứ nào?",
+   "options": [
+    "Thỏa thuận, Bộ luật Dân sự và quy định khác có liên quan",
+    "Chỉ quyết định của Ủy ban",
+    "Chỉ quy chế Sở giao dịch",
+    "Chỉ Điều lệ công ty"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 133.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 133 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Giải quyết tranh chấp (Điều 133)",
+   "right": "Xử phạt hành chính (Điều 132)",
+   "cases": [
+    {
+     "text": "Tòa án buộc công ty chứng khoán bồi thường cho nhà đầu tư",
+     "answer": "left"
+    },
+    {
+     "text": "Chủ tịch Ủy ban phạt tiền công ty chứng khoán",
+     "answer": "right"
+    },
+    {
+     "text": "Trọng tài thương mại giải quyết theo thỏa thuận trọng tài",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 132 và Điều 133."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tranh chấp trong hoạt động chứng khoán được giải quyết thông qua thương lượng, {{hòa giải}} hoặc yêu cầu {{Trọng tài}} hoặc Tòa án Việt Nam.",
+   "bank_extra": [
+    "khiếu nại",
+    "Quốc hội"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chủ thể xâm phạm quyền, lợi ích hợp pháp mà gây thiệt hại thì phải bồi thường theo thỏa thuận, theo quy định của Bộ luật {{Dân sự}}.",
+   "bank_extra": [
+    "Hình sự",
+    "Lao động"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Sở giao dịch chứng khoán Việt Nam có thẩm quyền xét xử tranh chấp giữa nhà đầu tư và công ty chứng khoán.",
+   "answer": false,
+   "explain": "Sai. Sở chỉ làm trung gian hòa giải theo yêu cầu của thành viên (điểm h khoản 1 Điều 46); xét xử thuộc Trọng tài hoặc Tòa án (Điều 133)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày phương thức giải quyết tranh chấp và bồi thường thiệt hại trong lĩnh vực chứng khoán.",
+   "model": "Quyền lợi bị xâm phạm hoặc có tranh chấp: thương lượng, hòa giải, Trọng tài hoặc Tòa án Việt Nam (khoản 1 Điều 133). Gây thiệt hại thì bồi thường, chịu trách nhiệm dân sự theo thỏa thuận, Bộ luật Dân sự và luật liên quan (khoản 2). Thẩm quyền, thủ tục theo pháp luật (khoản 3).",
+   "keywords": [
+    "thương lượng",
+    "hòa giải",
+    "Trọng tài",
+    "Tòa án",
+    "Bộ luật Dân sự"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,114 @@
+{
+ "id": "cho-muon-tai-khoan-dung-ten-ho",
+ "subject": "chung-khoan",
+ "chapter": "c10-xu-ly-vi-pham",
+ "term": "Cho mượn tài khoản, đứng tên sở hữu chứng khoán hộ",
+ "definition": "Cho người khác mượn tài khoản để giao dịch chứng khoán, đứng tên sở hữu chứng khoán hộ người khác dẫn đến hành vi thao túng giá chứng khoán.",
+ "plain": "Thao túng thường cần NHIỀU tài khoản để mua bán qua lại; người cho mượn tài khoản hoặc đứng tên hộ là mắt xích giúp che giấu chủ thể thật. Luật cấm khi việc cho mượn, đứng tên hộ DẪN ĐẾN thao túng giá. Ngoài ra, đứng tên hộ để né nghĩa vụ công bố thông tin cổ đông lớn, chào mua công khai hay giới hạn sở hữu nước ngoài cũng là vi phạm theo quy định xử phạt.",
+ "example": "Sinh viên C được trả 2 triệu đồng/tháng để \"cho thuê\" tài khoản chứng khoán; tài khoản này nằm trong nhóm 50 tài khoản bị dùng để đẩy giá một mã cổ phiếu. C vi phạm khoản 6 Điều 12 dù không tự đặt lệnh.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 6 Điều 12 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "thao-tung-thi-truong",
+  "hanh-vi-bi-nghiem-cam"
+ ],
+ "keywords": [
+  "cho mượn tài khoản",
+  "đứng tên hộ",
+  "dẫn đến thao túng"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 6 Điều 12, cho mượn tài khoản bị nghiêm cấm khi nào?",
+   "options": [
+    "Khi dẫn đến hành vi thao túng giá chứng khoán",
+    "Trong mọi trường hợp, kể cả cho người thân dùng xem bảng giá",
+    "Chỉ khi nhận tiền",
+    "Chỉ khi tài khoản có trên 1 tỷ đồng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 6 Điều 12.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 6 Điều 12 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hành vi nào cùng nhóm với cho mượn tài khoản tại khoản 6 Điều 12?",
+   "options": [
+    "Đứng tên sở hữu chứng khoán hộ người khác dẫn đến thao túng giá",
+    "Ủy quyền cho công ty quản lý quỹ quản lý danh mục",
+    "Mở tài khoản tại hai công ty chứng khoán",
+    "Bán cổ phiếu cho người thân qua sàn"
+   ],
+   "answer": 0,
+   "explain": "Khoản 6 Điều 12.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 6 Điều 12 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Bị cấm theo khoản 6 Điều 12",
+   "right": "Không bị cấm",
+   "cases": [
+    {
+     "text": "Đứng tên hộ cổ phiếu cho nhóm đang đẩy giá",
+     "answer": "left"
+    },
+    {
+     "text": "Ủy thác hợp pháp cho công ty quản lý quỹ theo hợp đồng",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 6 Điều 12; khoản 35 Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nghiêm cấm cho người khác {{mượn tài khoản}} để giao dịch chứng khoán, {{đứng tên}} sở hữu chứng khoán hộ người khác dẫn đến hành vi thao túng giá chứng khoán.",
+   "bank_extra": [
+    "mở tài khoản",
+    "ủy thác"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Việc cho mượn tài khoản bị cấm khi dẫn đến hành vi {{thao túng}} giá chứng khoán.",
+   "bank_extra": [
+    "tăng",
+    "minh bạch"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người cho mượn tài khoản không vi phạm khoản 6 Điều 12 nếu không trực tiếp đặt lệnh.",
+   "answer": false,
+   "explain": "Sai. Hành vi bị cấm là CHO MƯỢN, ĐỨNG TÊN HỘ dẫn đến thao túng; không cần trực tiếp đặt lệnh."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu nội dung khoản 6 Điều 12 và lý do luật cấm.",
+   "model": "Cấm cho người khác mượn tài khoản để giao dịch, đứng tên sở hữu chứng khoán hộ người khác dẫn đến thao túng giá (khoản 6 Điều 12). Lý do: thao túng cần nhiều tài khoản để tạo cung cầu giả tạo và che giấu chủ thể thật; người cho mượn là mắt xích giúp hành vi thao túng.",
+   "keywords": [
+    "mượn tài khoản",
+    "đứng tên hộ",
+    "thao túng",
+    "che giấu"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,120 @@
+{
+ "id": "hanh-vi-bi-nghiem-cam",
+ "subject": "chung-khoan",
+ "chapter": "c10-xu-ly-vi-pham",
+ "term": "Các hành vi bị nghiêm cấm trong hoạt động chứng khoán",
+ "definition": "Trực tiếp hoặc gián tiếp thực hiện hành vi gian lận, lừa đảo, làm giả tài liệu, tạo dựng thông tin sai sự thật hoặc công bố thông tin sai lệch hoặc che giấu thông tin hoặc bỏ sót thông tin cần thiết gây hiểu nhầm nghiêm trọng làm ảnh hưởng đến hoạt động chào bán, niêm yết, giao dịch, kinh doanh, đầu tư chứng khoán, cung cấp dịch vụ về chứng khoán.",
+ "plain": "Điều 12 có 7 nhóm hành vi bị cấm: (1) gian lận, lừa đảo, thông tin sai lệch; (2) giao dịch nội gián; (3) thao túng thị trường; (4) kinh doanh chứng khoán khi chưa được cấp phép; (5) dùng trái phép tài sản khách hàng, lạm dụng tín nhiệm chiếm đoạt; (6) cho mượn tài khoản, đứng tên hộ dẫn đến thao túng; (7) tổ chức thị trường giao dịch trái luật. Vi phạm có thể bị xử phạt hành chính, truy cứu hình sự, bồi thường.",
+ "example": "Công ty X làm giả báo cáo tài chính để hồ sơ IPO trông có lãi: vi phạm khoản 1 Điều 12 (làm giả tài liệu, thông tin sai sự thật ảnh hưởng đến hoạt động chào bán).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 12 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "giao-dich-noi-gian",
+  "thao-tung-thi-truong",
+  "xu-ly-vi-pham-chung-khoan"
+ ],
+ "keywords": [
+  "gian lận, lừa đảo",
+  "thông tin sai lệch",
+  "7 nhóm hành vi bị cấm"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hành vi nào sau đây thuộc danh sách bị nghiêm cấm tại Điều 12?",
+   "options": [
+    "Kinh doanh chứng khoán khi chưa được Ủy ban cấp giấy phép",
+    "Mua cổ phiếu khi giá giảm",
+    "Bán cổ phiếu để chốt lời",
+    "Mở tài khoản tại hai công ty chứng khoán (nhà đầu tư thường)"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 12.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 12 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Che giấu thông tin cần thiết gây hiểu nhầm nghiêm trọng ảnh hưởng đến hoạt động chào bán thuộc khoản nào của Điều 12?",
+   "options": [
+    "Khoản 1",
+    "Khoản 2",
+    "Khoản 3",
+    "Khoản 7"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 12.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 12 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Bị nghiêm cấm (Điều 12)",
+   "right": "Không bị cấm",
+   "cases": [
+    {
+     "text": "Sử dụng tài sản của khách hàng khi không được ủy thác",
+     "answer": "left"
+    },
+    {
+     "text": "Tổ chức thị trường giao dịch chứng khoán trái quy định",
+     "answer": "left"
+    },
+    {
+     "text": "Nhà đầu tư cá nhân bán lỗ cổ phiếu",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 12."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bị nghiêm cấm: thực hiện hành vi gian lận, lừa đảo, làm giả tài liệu, tạo dựng thông tin {{sai sự thật}} hoặc công bố thông tin {{sai lệch}}…",
+   "bank_extra": [
+    "chưa kiểm toán",
+    "tích cực"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bị nghiêm cấm: sử dụng tài khoản, tài sản của khách hàng khi không được khách hàng {{ủy thác}} hoặc lạm dụng tín nhiệm để {{chiếm đoạt}} tài sản của khách hàng.",
+   "bank_extra": [
+    "đồng ý miệng",
+    "quản lý"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thực hiện hoạt động kinh doanh chứng khoán khi chưa được Ủy ban cấp phép là hành vi bị nghiêm cấm.",
+   "answer": true,
+   "explain": "Đúng. Khoản 4 Điều 12."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Kể 7 nhóm hành vi bị nghiêm cấm trong hoạt động chứng khoán theo Điều 12.",
+   "model": "(1) Gian lận, lừa đảo, làm giả tài liệu, thông tin sai sự thật, sai lệch, che giấu, bỏ sót gây hiểu nhầm nghiêm trọng; (2) sử dụng, tiết lộ thông tin nội bộ; (3) thao túng thị trường; (4) kinh doanh, cung cấp dịch vụ khi chưa được cấp phép; (5) sử dụng trái phép tài khoản, tài sản khách hàng, lạm dụng tín nhiệm chiếm đoạt; (6) cho mượn tài khoản, đứng tên hộ dẫn đến thao túng; (7) tổ chức thị trường giao dịch trái luật.",
+   "keywords": [
+    "gian lận",
+    "thông tin nội bộ",
+    "thao túng",
+    "chưa được cấp phép",
+    "mượn tài khoản"
+   ]
+  }
+ ]
+}

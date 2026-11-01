@@ -254,6 +254,34 @@
           ]
         }
       ]
+    },
+    {
+      "id": "c10-xu-ly-vi-pham",
+      "title": "Chương X. Pháp luật về xử lí vi phạm và giải quyết tranh chấp trong lĩnh vực chứng khoán và thị trường chứng khoán",
+      "lessons": [
+        {
+          "id": "ck10-1",
+          "title": "Hành vi bị nghiêm cấm: nội gián, thao túng",
+          "concepts": [
+            "hanh-vi-bi-nghiem-cam",
+            "thong-tin-noi-bo",
+            "giao-dich-noi-gian",
+            "thao-tung-thi-truong",
+            "cho-muon-tai-khoan-dung-ten-ho"
+          ]
+        },
+        {
+          "id": "ck10-2",
+          "title": "Thanh tra, xử lý vi phạm, giải quyết tranh chấp",
+          "concepts": [
+            "thanh-tra-chung-khoan",
+            "quyen-han-uy-ban-trong-thanh-tra",
+            "xu-ly-vi-pham-chung-khoan",
+            "muc-phat-tien-chung-khoan",
+            "giai-quyet-tranh-chap-chung-khoan"
+          ]
+        }
+      ]
     }
   ]
 }
