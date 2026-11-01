@@ -37,10 +37,15 @@ scripts/           build-content.ts — kiểm tra và sinh content/index.json
 
 Thẻ `pair`: `left`/`right` là **nhãn hiển thị** (tên khái niệm), không phải id.
 
-## Triển khai (Cloudflare Pages)
-Workers & Pages → Create → Pages → Connect to Git → repo này.
-- Framework preset: **None** · Build command: `npm run build` · Build output directory: `dist` · **Root directory: `web`**.
-- Mỗi lần push lên `main`, trang tự cập nhật. Ghi link `https://<tên>.pages.dev` vào README gốc.
+## Triển khai — GitHub Pages (đang dùng)
+Workflow `.github/workflows/pages.yml` tự chạy khi push vào `main` có thay đổi trong `web/`: cài đặt, chạy unit test, build với `BASE_PATH=/Law/`, rồi deploy `web/dist` lên GitHub Pages. Địa chỉ: **https://tranquanghaofake-dotcom.github.io/Law/**
+
+Cài đặt một lần trên GitHub: Settings → Pages → *Build and deployment* → Source chọn **GitHub Actions** (không chọn "Deploy from a branch"). Repo phải public (hoặc tài khoản Pro).
+
+Build thử đúng như trên Pages ở máy: `BASE_PATH=/Law/ npm run build && BASE_PATH=/Law/ npm run preview` rồi mở http://localhost:4173/Law/.
+
+## Triển khai — Cloudflare Pages (dự phòng, chưa dùng)
+Connect to Git → Root directory `web`, Build command `npm run build`, Output `dist`, biến `NODE_VERSION=22`. Không đặt `BASE_PATH`.
 
 ## Giấy phép tài nguyên
 - Âm thanh: Kenney *Interface Sounds* (CC0) — `static/sfx/LICENSE.txt`.

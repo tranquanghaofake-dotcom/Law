@@ -1,4 +1,5 @@
 import { expect, test } from '@playwright/test';
+const B = process.env.BASE_PATH ?? '/';
 
 test('Space đọc, Escape hỏi thoát, reduced-motion đặt class, aria-label phương án', async ({ page }) => {
   await page.addInitScript(() => {
@@ -12,7 +13,7 @@ test('Space đọc, Escape hỏi thoát, reduced-motion đặt class, aria-label
     Object.defineProperty(window, 'speechSynthesis', { value: synth, configurable: true });
   });
   await page.emulateMedia({ reducedMotion: 'reduce' });
-  await page.goto('/#/hoc/hien-phap/hp-1');
+  await page.goto(B + '#/hoc/hien-phap/hp-1');
   await expect(page.getByRole('article', { name: 'Thẻ giới thiệu khái niệm' })).toBeVisible();
   // Space → đọc định nghĩa
   await page.keyboard.press('Space');
@@ -41,15 +42,15 @@ test('Space đọc, Escape hỏi thoát, reduced-motion đặt class, aria-label
 });
 
 test('cài đặt Giảm chuyển động = Bật đặt class reduced-motion', async ({ page }) => {
-  await page.goto('/#/cai-dat');
+  await page.goto(B + '#/cai-dat');
   await page.getByLabel('Giảm chuyển động').selectOption('on');
   expect(await page.evaluate(() => document.documentElement.classList.contains('reduced-motion'))).toBe(true);
 });
 
 test('build PWA có manifest và service worker', async ({ request }) => {
-  const m = await request.get('/manifest.webmanifest');
+  const m = await request.get(B + 'manifest.webmanifest');
   expect(m.ok()).toBe(true);
   expect((await m.json()).name).toContain('Luyện Luật');
-  const sw = await request.get('/sw.js');
+  const sw = await request.get(B + 'sw.js');
   expect(sw.ok()).toBe(true);
 });

@@ -2,7 +2,7 @@
 
 Web học luật cho sinh viên: học từng khái niệm qua 6 bậc ghi nhớ (gặp → nhận biết → phân biệt → điền chỗ trống → tình huống → tự trả lời), ôn đúng lúc sắp quên (FSRS), có căn cứ điều luật gốc, bậc khoa cử và chuỗi ngày.
 
-**👉 Vào làm bài:** ứng dụng nằm trong [`web/`](web/) (hướng dẫn chạy và triển khai trong [`web/README.md`](web/README.md)). Khi đã đưa lên Cloudflare Pages, link công khai sẽ được ghi tại đây.
+**👉 Vào làm bài: https://tranquanghaofake-dotcom.github.io/Law/** (GitHub Pages, tự cập nhật mỗi lần push `main`). Mã nguồn trong [`web/`](web/), hướng dẫn chạy và triển khai trong [`web/README.md`](web/README.md).
 
 Môn hiện có: **Luật Hiến pháp** (chương 1, 10 khái niệm) và 5 bộ luyện đề 10 câu (Pháp luật đại cương, Dân sự, Lao động, Hình sự).
 
