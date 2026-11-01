@@ -1,7 +1,7 @@
 <script lang="ts">
   // Bảng chức danh ở Hồ sơ: chân dung + chức danh, chọn nhánh, điều kiện lên chức kế tiếp, lộ trình nhánh, tủ đồ.
   import Portrait from '$lib/art/Portrait.svelte';
-  import { BRANCHES, BRANCH_NAMES, POSTS, TIER_NAMES, careerState, displayTitle, type Branch } from '$lib/game/career';
+  import { BRANCHES, BRANCH_NAMES, POSTS, TIER_NAMES, careerState, displayTitle, promotionToCelebrate, type Branch } from '$lib/game/career';
   import { FIELD_NAMES, type Field } from '$lib/game/fields';
   import { DEFAULT_AVATAR, NAMES, sanitize, unlocked, resolveOutfit, type Avatar } from '$lib/game/wardrobe';
   import type { ArtName, EmblemName } from '$lib/art/registry';
@@ -34,17 +34,28 @@
   function db() { try { return typeof indexedDB === 'undefined' ? null : new LuyenLuatDB(); } catch { return null; } }
   (async () => { try { const row = await db()?.settings.get('avatar'); if (row?.value) raw = { ...DEFAULT_AVATAR, ...(row.value as Avatar) }; } catch { /* bỏ qua */ } })();
   async function pick(k: keyof Avatar, v: string) { raw = { ...raw, [k]: v }; try { await db()?.settings.put({ key: 'avatar', value: $state.snapshot(raw) }); } catch { /* bỏ qua */ } }
+  // Màn nhận chức: chức mới đạt mà chưa xem (settings 'career-seen'); lần đầu chỉ ghi nhận, không mừng.
+  let seen = $state<string[] | null | undefined>(undefined);
+  let replay = $state(false);
+  (async () => { try { const row = await db()?.settings.get('career-seen'); seen = (row?.value as string[] | undefined) ?? null; } catch { seen = null; } })();
+  const fresh = $derived(seen === undefined || !shelf.ready ? null : promotionToCelebrate(cs.achieved, seen));
+  const celebrating = $derived(replay || !!fresh);
+  async function saveSeen(ids: string[]) { seen = ids; try { await db()?.settings.put({ key: 'career-seen', value: ids }); } catch { /* bỏ qua */ } }
+  $effect(() => { if (seen === null && shelf.ready) saveSeen([...cs.achieved]); });
+  function doneCelebrate() { replay = false; if (fresh) saveSeen([...cs.achieved]); }
   const fieldLabel = (f: Field | 'any') => (f === 'any' ? 'bất kỳ' : FIELD_NAMES[f]);
 </script>
 
 <section class="card wide career">
   <div class="career-grid">
     <div class="career-portrait">
-      <Portrait avatar={drawn} {accent} title={t.title} subtitle={`${earned.length} sách · ${earned.filter((b) => b.level === 3).length} cấp 3`} books={display} medals={cs.achieved.size} />
+      <Portrait avatar={drawn} {accent} tier={t.tier} celebrate={celebrating} ondone={doneCelebrate} title={t.title} subtitle={`${earned.length} sách · ${earned.filter((b) => b.level === 3).length} cấp 3`} books={display} medals={cs.achieved.size} />
       <div class="plaque">
         <p class="kicker">{t.tier ? TIER_NAMES[t.tier] : 'Khởi đầu'}</p>
         <p class="plaque-title">{t.title}</p>
         <p class="muted small">Chức danh mô phỏng trong trò chơi học tập, không phải chức vụ thật.</p>
+        {#if fresh}<p class="promo-note" role="status">Chúc mừng! Bạn vừa nhận chức danh mới: <b>{fresh.title}</b>.</p>{/if}
+        {#if t.post && !celebrating}<button type="button" class="filter replay" onclick={() => (replay = true)}>Xem lại lễ nhận chức</button>{/if}
       </div>
     </div>
     <div class="career-side">

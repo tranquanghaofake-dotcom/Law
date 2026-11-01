@@ -185,6 +185,12 @@ Không vẽ Quốc huy, sao, vạch cấp hiệu hay biểu tượng ngành th�
 - **Nền thẻ** (`art/StreakCard`): thử vân mây kiểu đình làng, **Hào loại**. Chốt **doodle nét đơn phủ kín**: 27 doodle pháp luật (khung 64×64, `art/cardGlyphs.ts`) xếp 4 hàng so le 7 + 6 + 6 + 8, hai hàng giữa chừa chỗ logo; khe trống lấp hình phụ nhỏ (chấm, sao, xoắn, §); nét rung nhẹ bằng `feTurbulence` cho cảm giác vẽ tay. Doodle sáng dần theo ngày từ giữa ra.
 - Chưa kiểm chứng: mẫu cầu vai kiểm sát theo nghị quyết UBTVQH thông qua 12/1/2026 (chưa tìm được số hiệu).
 
+### 3.12 Tủ lên đời theo bậc + màn nhận chức + áo có chất liệu (Hào, 02/11/2026)
+
+- Tủ theo bậc (`data-tier`): cơ sở gỗ sáng; tỉnh gỗ gụ, nẹp đồng, nền hoa văn chìm; trung ương sơn son thếp vàng, góc hoa văn; lãnh đạo sơn mài đen thếp vàng, vành trống đồng chìm, đèn hai bên. Đèn rọi, bụi sáng (sau áo), sàn kính có bóng phản chiếu, biển tên có vệt sáng lướt.
+- Màn nhận chức: chức mới đạt chưa xem (`promotionToCelebrate`, settings `career-seen`; lần đầu chỉ ghi nhận) → cánh kính mở, đèn bật, chữ biển tên hiện dần, hạt vàng, viền sáng (~3 giây); có nút "Xem lại lễ nhận chức"; giảm chuyển động thì bỏ qua.
+- Áo: filter `cloth` cho cả bộ — mép tối dần, ánh sáng trên-trái, thớ vải mịn; thêm nếp gấp và vệt sáng.
+
 ## 4. Dữ liệu
 - Store mới (IndexedDB): `books` (chapterId → cấp cao nhất, ngày đạt), `career` (nhánh đang chọn, chức danh đã đạt), `card` (kỷ lục màu). Migration từ dữ liệu cũ: tính sách từ `progress` hiện có. XP vẫn giữ, chỉ hiển thị phụ.
 - `game/rank.ts` (khoa cử, phẩm hàm) **giữ file và test, không còn hiển thị**. XP vẫn cộng và hiện phụ ở Hồ sơ. Bậc 6 đổi tên **Tinh thông**.

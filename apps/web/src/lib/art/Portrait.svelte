@@ -3,37 +3,61 @@
 </script>
 
 <script lang="ts">
-  // Tủ trưng bày bộ đồ theo chức danh: biển đồng ghi chức danh, ô kính có bản vẽ kỹ thuật bộ đồ (GarmentFlat),
-  // bục gỗ bày sách và phụ kiện. Không quân hàm, cấp hiệu, Quốc huy hay huân chương thật.
-  // `avatar.outfit` là trang phục đã giải theo chức danh.
+  // Tủ trưng bày bộ đồ theo chức danh. Tủ "lên đời" theo bậc: cơ sở gỗ sáng → tỉnh gỗ gụ nẹp đồng → trung ương sơn son
+  // thếp vàng → lãnh đạo sơn mài đen thếp vàng có vành trống đồng chìm. Đèn rọi, bụi sáng, bóng phản chiếu trên sàn kính.
+  // `celebrate`: chạy màn nhận chức (cánh kính mở, đèn bật, chữ biển tên hiện dần, hạt vàng) rồi gọi `ondone`.
+  // Không quân hàm, cấp hiệu, Quốc huy, huân chương thật.
   import type { Avatar } from '$lib/game/wardrobe';
+  import type { PostTier } from '$lib/game/career';
   import BookSpine from './BookSpine.svelte';
   import GarmentFlat from './GarmentFlat.svelte';
   import type { BookScheme } from '$lib/ui/shelf';
   import type { BookLevel } from '$lib/game/books';
   import { ring } from './kit';
   type ShelfBook = { key: string; scheme: BookScheme; level: BookLevel; label: string };
-  let { avatar, title = 'Công dân', subtitle = '', books = [] }:
-    { avatar: Avatar; title?: string; subtitle?: string; accent?: string; books?: ShelfBook[]; medals?: number } = $props();
+  let { avatar, title = 'Công dân', subtitle = '', books = [], tier = null, celebrate = false, ondone }:
+    { avatar: Avatar; title?: string; subtitle?: string; accent?: string; books?: ShelfBook[]; medals?: number; tier?: PostTier | null; celebrate?: boolean; ondone?: () => void } = $props();
   const uid = `pt${++seq}`;
-  const sparks = [[22, 30], [78, 24], [16, 62], [84, 58], [50, 14], [30, 80], [70, 78]];
+  const motes = Array.from({ length: 14 }, (_, i) => ({ x: 18 + ((i * 37) % 64), y: 12 + ((i * 53) % 60), d: (i % 5) * 1.3, s: 6 + (i % 4) * 2 }));
+  const gold = Array.from({ length: 22 }, (_, i) => ({ x: 4 + ((i * 41) % 92), d: (i % 7) * 0.12, r: (i * 47) % 360 }));
+  const rich = $derived(tier === 'trung-uong' || tier === 'lanh-dao');
+  $effect(() => {
+    if (!celebrate) return;
+    const reduce = typeof matchMedia !== 'undefined' && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const t = setTimeout(() => ondone?.(), reduce ? 50 : 3200);
+    return () => clearTimeout(t);
+  });
 </script>
 
-<figure class="showcase fx-{avatar.effect}">
+{#snippet corner(cls: string)}
+  <svg class="sc-corner {cls}" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+    <path d="M3 37V12Q3 3 12 3h25M8 37V15q0-7 7-7h22M14 22q0-8 8-8q5 0 5 5q0 3-3 3q-2 0-2-2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+  </svg>
+{/snippet}
+
+<figure class="showcase fx-{avatar.effect}" class:celebrate data-tier={tier ?? 'none'}>
+  {#if rich}{@render corner('tl')}{@render corner('tr')}{@render corner('bl')}{@render corner('br')}{/if}
+  {#if tier === 'lanh-dao'}<span class="sc-lamp l" aria-hidden="true"></span><span class="sc-lamp r" aria-hidden="true"></span>{/if}
   <header class="sc-head">
     <p class="sc-plaque" style="--len:{title.length}">{title}</p>
     {#if subtitle}<p class="sc-sub">{subtitle}</p>{/if}
   </header>
   <div class="sc-window">
-    <div class="sc-photo"><GarmentFlat outfit={avatar.outfit} /></div>
-    {#if avatar.effect === 'trong-dong' || avatar.effect === 'khung-vang' || avatar.effect === 'hat-sang'}
+    {#if tier === 'lanh-dao' || avatar.effect === 'trong-dong' || avatar.effect === 'khung-vang' || avatar.effect === 'hat-sang'}
       <svg class="sc-drum" viewBox="0 0 200 200" aria-hidden="true" focusable="false">
-        <g class="sun-spin"><path d={ring(100, 100, 84, 96, 48)} fill="#e9c77a" /><circle cx="100" cy="100" r="76" fill="none" stroke="#e9c77a" stroke-width="2" stroke-dasharray="1.5 6" /></g>
+        <g class="sun-spin"><path d={ring(100, 100, 84, 96, 48)} fill="currentColor" /><circle cx="100" cy="100" r="76" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="1.5 6" /><circle cx="100" cy="100" r="58" fill="none" stroke="currentColor" stroke-width="1" /></g>
       </svg>
     {/if}
-    {#if avatar.effect === 'hat-sang'}
-      {#each sparks as [x, y], i (i)}<span class="sc-spark" style="left:{x}%;top:{y}%;animation-delay:{i * 0.35}s"></span>{/each}
+    <span class="sc-cone" aria-hidden="true"></span>
+    <span class="sc-floor" aria-hidden="true"></span>
+    <div class="sc-photo"><GarmentFlat outfit={avatar.outfit} /></div>
+    <div class="sc-reflect" aria-hidden="true"><GarmentFlat outfit={avatar.outfit} /></div>
+    <span class="sc-bulb" aria-hidden="true"></span>
+    <span class="sc-motes" aria-hidden="true">{#each motes as m, i (i)}<i style="left:{m.x}%;top:{m.y}%;animation-delay:-{m.d}s;animation-duration:{m.s}s"></i>{/each}</span>
+    {#if avatar.effect === 'hat-sang' || celebrate}
+      <span class="sc-gold" aria-hidden="true">{#each gold as g, i (i)}<i style="left:{g.x}%;animation-delay:{1.2 + g.d}s;--r:{g.r}deg"></i>{/each}</span>
     {/if}
+    <span class="sc-door l" aria-hidden="true"></span><span class="sc-door r" aria-hidden="true"></span>
     <span class="sc-glass" aria-hidden="true"></span>
   </div>
   <div class="sc-plinth">

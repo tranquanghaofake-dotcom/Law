@@ -1,8 +1,16 @@
+<script lang="ts" module>
+  let seq = 0;
+</script>
+
 <script lang="ts">
   // Bản vẽ kỹ thuật trang phục (technical flat): mặt trước, nét mảnh đều, đường may nét đứt, tô một màu phẳng.
   // Vẽ nửa trái rồi lật gương sang nửa phải để luôn đối xứng; chi tiết lệch (khuy, thẻ tên, cà vạt) vẽ riêng.
   // Không quân hàm, cấp hiệu, Quốc huy, huân chương; cầu vai kiểm sát là dải đỏ trơn viền chỉ vàng.
+  // Chất liệu (filter `cloth`, gắn vào từng mảng vải chính): mép tối dần như bóng đổ, ánh đèn trên-trái tạo độ bóng,
+  // hạt thớ vải rất mịn. Nếp gấp vẽ bằng nét mờ.
   let { outfit }: { outfit: string } = $props();
+  const uid = `gf${++seq}`;
+  const F = `url(#${uid}-cloth)`;
   const INK = '#2b2420';
   type Pal = { body: string; sleeve: string; shirt: string; tie: string | null };
   const PAL: Record<string, Pal> = {
@@ -19,11 +27,15 @@
   const p = $derived(PAL[o]);
   const dark = $derived(o === 'vest-den' || o === 'ao-choang' || o === 'ks-thu-dong' || o === 'vest-xanh');
   const stitch = $derived(dark ? '#8d8f99' : '#7d7064');
+  const fold = $derived(dark ? 'rgba(0,0,0,.55)' : 'rgba(80,60,40,.35)');
+  const shine = $derived(dark ? 'rgba(255,255,255,.18)' : 'rgba(255,255,255,.7)');
   const suit = $derived(o === 'vest-xanh' || o === 'vest-den' || o === 'ks-thu-dong');
 </script>
 
 {#snippet sleeveLong(len: number)}
   <path d="M86 73C70 81 61 110 56 168L49 {len}L76 {len + 4}L81 186Q86 156 92 142Z" fill={p.sleeve} />
+  <path d="M57 176q9 5 22 3M55 192q10 6 24 2M62 120q8 2 16-2M51 {len - 30}q8 4 22 4" fill="none" stroke={fold} stroke-width="1" />
+  <path d="M84 80Q70 96 64 140" fill="none" stroke={shine} stroke-width="2" />
 {/snippet}
 
 {#snippet half()}
@@ -33,6 +45,7 @@
     <path d="M51 278L75 282M50 284L74 288" stroke={stitch} stroke-width=".8" />
     <path d="M150 70Q133 70 124 57L86 73Q90 110 92 142L95 296L150 296Z" fill={p.body} />
     <path d="M95 296L150 296V316H96Z" fill={p.sleeve} />
+    <path d="M100 250q14 8 30 4M98 200q10 4 20 2M118 280q10-6 24-2" fill="none" stroke={fold} stroke-width="1" />
     {#each [104, 114, 124, 134, 144] as x (x)}<path d="M{x} 299V313" stroke={stitch} stroke-width=".8" />{/each}
     <path d="M124 57Q130 76 150 78" fill="none" /><path d="M128 56Q134 70 150 71" fill="none" stroke={stitch} stroke-width=".8" stroke-dasharray="none" />
   {:else if o === 'cong-so'}
@@ -41,6 +54,7 @@
     <path d="M150 74Q133 72 124 57L86 73Q90 110 92 142L96 298Q122 320 150 314Z" fill={p.body} />
     <path d="M150 74L124 57Q118 66 121 72L138 98L150 82Z" fill={p.body} />
     <rect x="104" y="120" width="25" height="27" rx="1.5" fill="none" />
+    <path d="M98 230q16 10 36 6M100 270q12 6 30 6M120 180q8 6 18 4" fill="none" stroke={fold} stroke-width="1" />
     <path d="M107 124h19" stroke={stitch} stroke-width=".8" stroke-dasharray="2.5 2" />
     <path d="M101 300Q124 316 146 311M57 172L52 252" stroke={stitch} stroke-width=".8" stroke-dasharray="2.5 2" fill="none" />
   {:else if o === 'ks-xuan-he'}
@@ -70,6 +84,8 @@
       <path d="M100 256l34-2v8l-34 2Z" fill={p.sleeve} />
     {/if}
     <path d="M124 160Q122 220 126 250" stroke={stitch} stroke-width=".8" stroke-dasharray="2.5 2" fill="none" />
+    <path d="M96 210q14 4 26 0M98 300q14 6 30 2M138 196q-4 30 0 60" fill="none" stroke={fold} stroke-width="1" />
+    <path d="M114 98L146 184" fill="none" stroke={shine} stroke-width="1.6" />
   {:else if o === 'ao-choang'}
     <path d="M84 72C60 86 42 142 30 236L40 254L96 252Q92 190 92 142Z" fill={p.sleeve} />
     <path d="M34 236L40 254L96 252L95 240Z" fill={p.body} />
@@ -83,10 +99,26 @@
     <rect x="137" y="44" width="13" height="19" rx="2" fill={p.body} />
     <path d="M140 49h10M140 56h10" stroke={stitch} stroke-width=".8" stroke-dasharray="2.5 2" />
     <path d="M116 196L106 200" />
+    <path d="M120 230q-4 70-10 140M134 210q-2 80-4 168" fill="none" stroke={fold} stroke-width="1" />
+    <path d="M112 90Q118 130 116 170" fill="none" stroke={shine} stroke-width="2.4" />
   {/if}
 {/snippet}
 
 <svg class="garment" viewBox="0 0 300 400" aria-hidden="true" focusable="false" stroke-linecap="round" stroke-linejoin="round">
+  <defs>
+    <filter id="{uid}-cloth" x="-10%" y="-10%" width="120%" height="120%" color-interpolation-filters="sRGB">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="10" result="b" />
+      <feComposite in="SourceAlpha" in2="b" operator="out" result="edge" />
+      <feFlood flood-color="#1c1006" flood-opacity={dark ? 0.55 : 0.3} /><feComposite in2="edge" operator="in" result="shade" />
+      <feSpecularLighting in="b" surfaceScale="5" specularConstant={dark ? 0.7 : 0.35} specularExponent="14" lighting-color="#fff4dc" result="spec"><feDistantLight azimuth="240" elevation="50" /></feSpecularLighting>
+      <feComposite in="spec" in2="SourceAlpha" operator="in" result="specIn" />
+      <feTurbulence type="fractalNoise" baseFrequency={suit || o === 'ao-choang' ? '.9 .25' : '.85'} numOctaves="2" seed="4" result="n" />
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  {dark ? 0.2 : 0.05} 0 0 0 0" result="na" />
+      <feComposite in="na" in2="SourceAlpha" operator="in" result="grain" />
+      <feMerge result="m"><feMergeNode in="SourceGraphic" /><feMergeNode in="grain" /><feMergeNode in="shade" /></feMerge>
+      <feComposite in="m" in2="specIn" operator="arithmetic" k2="1" k3={dark ? 0.35 : 0.2} />
+    </filter>
+  </defs>
   {#if o === 'ao-dai'}
     <!-- ma-nơ-canh không đầu: chân đế -->
     <path d="M150 386V394M118 398h64" stroke="#5a4636" stroke-width="3" />
@@ -105,7 +137,7 @@
       <path d="M144 82L150 79L156 82L{o === 'ao-choang' ? '154 104L146 104' : '160 160L150 176L140 160'}Z" fill={p.tie} stroke={INK} stroke-width="1.1" />
     {/if}
   {/if}
-  <g stroke={INK} stroke-width="1.4">
+  <g stroke={INK} stroke-width="1.4" filter={F}>
     {@render half()}
     <g transform="matrix(-1 0 0 1 300 0)">{@render half()}</g>
   </g>

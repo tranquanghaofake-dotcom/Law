@@ -113,3 +113,11 @@ export function displayTitle(state: CareerState, branch: Branch): { title: strin
   const p = state.highest[branch];
   return p ? { title: p.title, tier: p.tier, post: p } : { title: 'Công dân', tier: null, post: null };
 }
+
+/** Chức vừa đạt mà người học chưa xem màn nhận chức. `seen = null` (chưa từng lưu) → không mừng, để chức cũ không bị mừng lại. */
+export function promotionToCelebrate(achieved: Set<string>, seen: string[] | null): Post | null {
+  if (seen === null) return null;
+  const fresh = POSTS.filter((p) => achieved.has(p.id) && !seen.includes(p.id));
+  if (!fresh.length) return null;
+  return fresh.reduce((a, b) => (TIER_RANK[b.tier] > TIER_RANK[a.tier] || (TIER_RANK[b.tier] === TIER_RANK[a.tier] && POSTS.indexOf(b) > POSTS.indexOf(a)) ? b : a));
+}
