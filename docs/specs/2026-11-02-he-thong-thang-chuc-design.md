@@ -178,6 +178,13 @@ Không vẽ Quốc huy, sao, vạch cấp hiệu hay biểu tượng ngành th�
 - **Hoạ tiết mềm:** mỗi ký hoạ ngành luật nằm trong lòng một đám vân mây cuộn (tường vân) có lọn xoắn; 27 đám mây xếp so le, chồng mép, phủ cả thẻ.
 - **Tủ kính thoáng:** bỏ 4 khung ảnh; hốc giữa rộng, bộ đồ to hơn; biển tên ở trên, dòng phụ "N sách · M cấp 3" nằm trong biển; đèn rọi trong hốc; **cầu vai** ngũ giác to, viền chỉ vàng (kiểm sát, không sao/biểu tượng); **huân chương** = dải ruy băng + huy chương tròn mẫu chung, số lượng theo số chức danh đã đạt (không theo huân chương thật); **kệ kính trưng sách** đã đạt (tối đa 10, cấp cao trước) bằng chính gáy sách 3 cấp; phụ kiện ở hai đầu kệ.
 
+### 3.11 Ảnh bộ đồ và vân mây kiểu Việt (Hào, 02/11/2026)
+
+- **Bộ đồ**: Hào chọn ảnh AI tạo trong Figma (dùng credit Figma của Hào, chỉ gửi mô tả trang phục, không dữ liệu cá nhân). 8 ảnh webp 600×800 ở `apps/web/static/art/tu/`. Không quân hàm, cấp hiệu, Quốc huy, huân chương thật; cầu vai kiểm sát là dải đỏ trơn viền chỉ vàng. **Bỏ huân chương trên áo dân sự** (sai thực tế). Áo dài bày trên ma-nơ-canh thay vì treo móc.
+- **Tủ** (`art/Portrait`): biển đồng ghi chức danh, ô kính chứa ảnh, bục gỗ bày sách và phụ kiện, đều dựng bằng HTML/CSS. Hiệu ứng nền phủ lên ảnh.
+- **Nền thẻ** (`art/StreakCard`): ba dải vân mây kiểu chạm đình làng/sơn son thiếp vàng. Mỗi đầu mây cuộn xoắn ôm một ký hoạ, có lọn xoắn con; đuôi mây là ba nét song song luồn dưới đầu kế tiếp và tràn ra mép thẻ, kèm một lớp xoắn lớn rất mờ. Dải giữa chừa chỗ logo (10 + 8 + 9 = 27 đầu mây).
+- Chưa kiểm chứng: mẫu cầu vai kiểm sát theo nghị quyết UBTVQH thông qua 12/1/2026 (chưa tìm được số hiệu).
+
 ## 4. Dữ liệu
 - Store mới (IndexedDB): `books` (chapterId → cấp cao nhất, ngày đạt), `career` (nhánh đang chọn, chức danh đã đạt), `card` (kỷ lục màu). Migration từ dữ liệu cũ: tính sách từ `progress` hiện có. XP vẫn giữ, chỉ hiển thị phụ.
 - `game/rank.ts` (khoa cử, phẩm hàm) **giữ file và test, không còn hiển thị**. XP vẫn cộng và hiện phụ ở Hồ sơ. Bậc 6 đổi tên **Tinh thông**.

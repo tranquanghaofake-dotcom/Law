@@ -3,7 +3,7 @@
 </script>
 
 <script lang="ts">
-  // Thẻ chuyên cần — thẻ trơn bo tròn (không viền), 27 ký hoạ ẩn mờ trên nền rải theo xoắn ốc tỉ lệ vàng, sáng dần theo ngày;
+  // Thẻ chuyên cần — thẻ trơn bo tròn (không viền), 27 ký hoạ nằm trong đầu mây của ba dải vân mây kiểu chạm đình làng, sáng dần theo ngày;
   // logo bông sen 8 cánh ôm cán cân (không phải logo VBF, không Quốc huy). Rê chuột: thẻ nghiêng 3D + vệt sáng theo chuột
   // (học kỹ thuật biến CSS theo con trỏ của pokemon-cards-css (GPL-3.0) và vanilla-tilt (MIT) — tự viết, không chép mã).
   import { cardFor, TIER_NAMES, type Tier } from '$lib/game/card';
@@ -11,24 +11,55 @@
   let { count = 0, longest = 0, size = 'full' }: { count?: number; longest?: number; size?: 'full' | 'mini' } = $props();
   const c = $derived(cardFor(count, longest));
   const uid = `sc${++seq}`;
-  // 27 đám vân mây (mỗi đám ôm một ký hoạ ngành luật) xếp so le 9 × 3, chồng mép lên nhau
-  const pos = Array.from({ length: 27 }, (_, i) => {
-    const row = Math.floor(i / 9), col = i % 9;
-    const x = 40 + col * 97 + (row % 2) * 48, y = 92 + row * 178 + ((col * 13) % 3) * 10 - 10;
-    return { x, y, s: 0.95 + ((i * 7) % 5) * 0.07, flip: (i * 5) % 2 === 1, rot: ((i * 37) % 16) - 8 };
+  // Vân mây kiểu chạm đình làng / sơn son thiếp vàng: ba dải mây chạy ngang; mỗi "đầu mây" cuộn xoắn ôm một ký hoạ,
+  // có hai cụm mây nhỏ trên đỉnh; "đuôi mây" là ba nét song song uốn nối sang đầu kế tiếp. Dải giữa chừa chỗ cho logo.
+  type Head = { x: number; y: number; dir: 1 | -1; band: number };
+  const heads: Head[] = [];
+  const wave = (x: number, k: number) => Math.sin(x / 70 + k * 1.7) * 16;
+  for (let i = 0; i < 10; i++) { const x = 34 + i * 87.5; heads.push({ x, y: 96 + wave(x, 0), dir: i % 2 ? -1 : 1, band: 0 }); }
+  for (const x of [44, 122, 200, 276, 580, 656, 734, 812]) heads.push({ x, y: 268 + wave(x, 1), dir: x < 428 ? 1 : -1, band: 1 });
+  for (let i = 0; i < 9; i++) { const x = 66 + i * 90.5; heads.push({ x, y: 444 + wave(x, 2), dir: i % 2 ? 1 : -1, band: 2 }); }
+  const f = (n: number) => n.toFixed(1);
+  // đường xoắn quanh ký hoạ: 1,3 vòng, bán kính 22 → 34, kết thúc ở phía dưới-phải (hoặc trái nếu dir = -1)
+  function spiral(h: Head) {
+    const end = Math.PI / 2 - h.dir * 0.5, turns = 2.6 * Math.PI, pts: string[] = [];
+    for (let k = 0; k <= 40; k++) {
+      const t = k / 40, ang = end - h.dir * turns * (1 - t), r = 21 + t * 13;
+      pts.push(`${k ? 'L' : 'M'}${f(h.x + Math.cos(ang) * r)} ${f(h.y + Math.sin(ang) * r)}`);
+    }
+    return pts.join('');
+  }
+  // lọn xoắn con phía trên (đầu mây kép), quay ngược chiều đầu chính
+  function curl(h: Head) {
+    const cx = h.x - h.dir * 30, cy = h.y - 30, pts: string[] = [];
+    for (let k = 0; k <= 24; k++) {
+      const t = k / 24, ang = Math.PI * 0.25 + h.dir * 2.3 * Math.PI * (1 - t), r = 3.5 + t * 9;
+      pts.push(`${k ? 'L' : 'M'}${f(cx + Math.cos(ang) * r)} ${f(cy + Math.sin(ang) * r)}`);
+    }
+    return pts.join('') + `Q${f(h.x - h.dir * 12)} ${f(h.y - 44)} ${f(h.x + h.dir * 6)} ${f(h.y - 35)}`;
+  }
+  // đuôi mây: ba nét song song lướt từ đáy đầu mây, luồn dưới đầu kế tiếp (đầu/cuối dải tràn ra mép thẻ)
+  function tails(h: Head, prev: Head | undefined, n: Head | undefined) {
+    const out: string[] = [];
+    const sweep = (sx: number, sy: number, ex: number, ey: number) => [0, 6, 12].map((o) => {
+      const dx = ex - sx;
+      return `M${f(sx)} ${f(sy + o)}C${f(sx + dx * 0.35)} ${f(sy + o + 16)} ${f(ex - dx * 0.4)} ${f(ey + o - 14)} ${f(ex)} ${f(ey + o)}`;
+    });
+    if (n && n.band === h.band) out.push(...sweep(h.x + 6, h.y + 34, n.x + 18, n.y + 30));
+    else out.push(...sweep(h.x + 6, h.y + 34, 900, h.y + 22));
+    if (!prev || prev.band !== h.band) out.push(...sweep(-40, h.y + 40, h.x - 30, h.y + 26));
+    return out;
+  }
+  // lớp xoắn lớn rất mờ phủ khoảng giữa các dải
+  const ghosts = [[150, 182, 1], [330, 360, -1], [520, 172, 1], [706, 356, -1], [60, 520, 1], [800, 20, -1]].map(([x, y, d]) => {
+    const pts: string[] = [];
+    for (let k = 0; k <= 50; k++) { const t = k / 50, ang = d * 3.2 * Math.PI * t, r = 8 + t * 54; pts.push(`${k ? 'L' : 'M'}${f(x + Math.cos(ang) * r)} ${f(y + Math.sin(ang) * r)}`); }
+    return pts.join('');
   });
-  // đám mây cuộn (tường vân) bao quanh ký hoạ, và các lọn xoắn mềm
-  const CLOUD = 'M-62 18C-74 18-78 4-68-4C-72-18-58-28-46-22C-44-38-24-44-12-34C-4-48 18-48 26-34C38-42 56-34 54-20C68-20 74-4 64 6C70 16 62 26 50 22C44 32 28 34 20 26C10 36-8 36-16 26C-26 34-44 32-48 22C-54 26-60 24-62 18Z';
-  const CURLS = 'M-48 12a9 9 0 1 1 9-9a4.5 4.5 0 1 1-4.5 4.5M44 10a8 8 0 1 0-8-8a4 4 0 1 0 4 4M-82 30q-14 2-22 12M78 30q14 4 20 14M-20 40q-6 10 2 18M30 38q8 8 4 18';
-  // thứ tự sáng: từ giữa lan ra hai bên (ngày 1 gần logo nhất)
-  const order = [...pos.keys()].sort((a, b) => Math.hypot(pos[a].x - 428, (pos[a].y - 268) * 1.6) - Math.hypot(pos[b].x - 428, (pos[b].y - 268) * 1.6));
+  const clouds = heads.map((h, i) => ({ ...h, spiral: spiral(h), curl: curl(h), tails: tails(h, heads[i - 1], heads[i + 1]) }));
+  // thứ tự sáng: từ giữa lan ra (ngày 1 gần logo nhất)
+  const order = [...heads.keys()].sort((a, b) => Math.hypot(heads[a].x - 428, (heads[a].y - 268) * 1.6) - Math.hypot(heads[b].x - 428, (heads[b].y - 268) * 1.6));
   const rankOf = Array(27).fill(0); order.forEach((g, k) => (rankOf[g] = k));
-  // vân guilloche: các đường sóng chạy ngang thẻ
-  const waves = Array.from({ length: 7 }, (_, k) => {
-    let d = '';
-    for (let x = 0; x <= 856; x += 8) { const y = 70 + k * 68 + Math.sin(x / 46 + k * 0.9) * 22 + Math.sin(x / 17 + k) * 4; d += `${x ? 'L' : 'M'}${x} ${y.toFixed(1)}`; }
-    return d;
-  });
   // hoa văn hoa thị (rosette) của huy hiệu: elip xoay lồng nhau
   const rosette = Array.from({ length: 36 }, (_, k) => k * 5);
   const label = $derived(count > 0 ? `Thẻ chuyên cần: chuỗi ${count} ngày, ngày ${c.day}/30, màu ${TIER_NAMES[c.tier as Tier]}` : 'Thẻ chuyên cần: chưa có chuỗi');
@@ -71,20 +102,19 @@
     <rect width="856" height="540" rx="40" fill="url(#{uid}-bg)" />
     <!-- quầng màu lửa mờ phía sau (đậm dần theo ngày) -->
     {#if c.tier}<ellipse cx="428" cy="268" rx={150 + c.day * 7} ry={90 + c.day * 4} fill={ink(c.tier)} opacity={0.05 + c.day * 0.004} filter="url(#{uid}-soft)" />{/if}
-    <!-- vân guilloche -->
-    <g fill="none" stroke="url(#{uid}-gold)" stroke-width="0.8" opacity=".14">{#each waves as d (d)}<path {d} />{/each}</g>
-    <!-- 27 đám vân mây ôm ký hoạ ngành luật (mờ quanh logo để logo nổi) -->
-    <g mask="url(#{uid}-hole)">
-      {#each CARD_GLYPHS as g, i (g.name)}
+    <!-- ba dải vân mây; mỗi đầu mây ôm một ký hoạ ngành luật, sáng dần theo ngày (mờ quanh logo để logo nổi) -->
+    <g mask="url(#{uid}-hole)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <g stroke="url(#{uid}-gold)" stroke-width="1" opacity=".08">{#each ghosts as d (d)}<path {d} />{/each}</g>
+      {#each clouds as h, i (i)}
         {@const t = c.glyphs[rankOf[i]]}
         {@const col = t ? ink(t) : `url(#${uid}-gold)`}
-        <g transform="translate({pos[i].x} {pos[i].y}) rotate({pos[i].rot}) scale({pos[i].flip ? -pos[i].s : pos[i].s} {pos[i].s})" class="cg-glyph" class:lit={!!t} class:now={!!t && rankOf[i] === c.day - 1 && t === c.tier} filter={t ? `url(#${uid}-glow)` : undefined}>
-          <title>{g.field}: {g.name}</title>
-          <g fill="none" stroke={col} stroke-linecap="round" stroke-linejoin="round" opacity={t ? (t === c.tier ? 0.85 : 0.5) : 0.14}>
-            <path d={CLOUD} stroke-width="1.3" />
-            <path d={CURLS} stroke-width="1" />
-            <g transform={`scale(${pos[i].flip ? -1 : 1} 1) translate(-19 -25) scale(1.6)`}><path d={g.d} stroke-width="1.05" /></g>
-          </g>
+        <g class="cg-glyph" class:lit={!!t} class:now={!!t && rankOf[i] === c.day - 1 && t === c.tier} stroke={col}
+          opacity={t ? (t === c.tier ? 0.9 : 0.55) : 0.2} filter={t ? `url(#${uid}-glow)` : undefined}>
+          <title>{CARD_GLYPHS[i].field}: {CARD_GLYPHS[i].name}</title>
+          {#each h.tails as d, k (k)}<path {d} stroke-width={1.25 - (k % 3) * 0.3} opacity={1 - (k % 3) * 0.28} />{/each}
+          <path d={h.spiral} stroke-width="1.5" />
+          <path d={h.curl} stroke-width="1.1" />
+          <g transform="translate({h.x - 15} {h.y - 15}) scale(1.25)"><path d={CARD_GLYPHS[i].d} stroke-width="1.15" /></g>
         </g>
       {/each}
     </g>
