@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "content": "tsx scripts/build-content.ts",
+    "prebuild": "npm run content",
     "build": "vite build",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
