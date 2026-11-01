@@ -1,0 +1,115 @@
+{
+ "id": "toa-an-nhan-dan-toi-cao",
+ "subject": "hien-phap",
+ "chapter": "c10-toa-an-vien-kiem-sat",
+ "term": "Tòa án nhân dân tối cao",
+ "definition": "Tòa án nhân dân tối cao là cơ quan xét xử cao nhất của nước Cộng hoà xã hội chủ nghĩa Việt Nam. Tòa án nhân dân tối cao giám đốc việc xét xử của các Tòa án khác, trừ trường hợp do luật định. Tòa án nhân dân tối cao thực hiện việc tổng kết thực tiễn xét xử, bảo đảm áp dụng thống nhất pháp luật trong xét xử.",
+ "plain": "Ba vai trò: (1) cơ quan xét xử cao nhất; (2) GIÁM ĐỐC việc xét xử của các Tòa án khác (giám đốc thẩm, tái thẩm); (3) tổng kết thực tiễn, bảo đảm áp dụng THỐNG NHẤT pháp luật, trong đó có việc lựa chọn, công bố ÁN LỆ (Hội đồng Thẩm phán Tòa án nhân dân tối cao, theo Luật Tổ chức Tòa án nhân dân). Chánh án Tòa án nhân dân tối cao do Quốc hội bầu theo đề nghị của Chủ tịch nước; nhiệm kỳ theo Quốc hội.",
+ "example": "Hội đồng Thẩm phán Tòa án nhân dân tối cao công bố án lệ về một tình huống tranh chấp đặt cọc để các Tòa án áp dụng thống nhất: thể hiện vai trò \"bảo đảm áp dụng thống nhất pháp luật\".",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 104 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "toa-an-vi-tri",
+  "trach-nhiem-chanh-an-vien-truong"
+ ],
+ "keywords": [
+  "xét xử cao nhất",
+  "giám đốc việc xét xử",
+  "áp dụng thống nhất pháp luật",
+  "án lệ"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 104, Tòa án nhân dân tối cao có vai trò gì đối với các Tòa án khác?",
+   "options": [
+    "Giám đốc việc xét xử, trừ trường hợp do luật định",
+    "Chỉ đạo từng phán quyết cụ thể",
+    "Không có quan hệ gì",
+    "Bổ nhiệm mọi Thẩm phán"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 104.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 104 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Việc tổng kết thực tiễn xét xử của Tòa án nhân dân tối cao nhằm mục đích gì?",
+   "options": [
+    "Bảo đảm áp dụng thống nhất pháp luật trong xét xử",
+    "Ban hành luật mới",
+    "Giải thích Hiến pháp",
+    "Xử phạt hành chính"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 104.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 104 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tòa án nhân dân tối cao",
+   "right": "Ủy ban thường vụ Quốc hội",
+   "cases": [
+    {
+     "text": "Bảo đảm áp dụng thống nhất pháp luật trong xét xử",
+     "answer": "left"
+    },
+    {
+     "text": "Giải thích Hiến pháp, luật, pháp lệnh",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 104 và khoản 2 Điều 74."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tòa án nhân dân tối cao là cơ quan {{xét xử cao nhất}}; {{giám đốc}} việc xét xử của các Tòa án khác.",
+   "bank_extra": [
+    "quyền lực cao nhất",
+    "chỉ huy"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tòa án nhân dân tối cao thực hiện việc tổng kết thực tiễn xét xử, bảo đảm áp dụng {{thống nhất}} pháp luật trong xét xử.",
+   "bank_extra": [
+    "linh hoạt",
+    "riêng biệt"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tòa án nhân dân tối cao có quyền giải thích Hiến pháp và luật.",
+   "answer": false,
+   "explain": "Sai. Giải thích Hiến pháp, luật thuộc Ủy ban thường vụ Quốc hội (khoản 2 Điều 74); Tòa án nhân dân tối cao bảo đảm áp dụng thống nhất pháp luật trong xét xử."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày vị trí và nhiệm vụ của Tòa án nhân dân tối cao theo Điều 104.",
+   "model": "Cơ quan xét xử cao nhất (khoản 1); giám đốc việc xét xử của các Tòa án khác, trừ trường hợp luật định (khoản 2); tổng kết thực tiễn xét xử, bảo đảm áp dụng thống nhất pháp luật (khoản 3), trong đó có phát triển án lệ.",
+   "keywords": [
+    "xét xử cao nhất",
+    "giám đốc",
+    "thống nhất",
+    "án lệ"
+   ]
+  }
+ ]
+}

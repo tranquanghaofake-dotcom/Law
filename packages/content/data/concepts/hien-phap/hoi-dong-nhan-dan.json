@@ -1,0 +1,124 @@
+{
+ "id": "hoi-dong-nhan-dan",
+ "subject": "hien-phap",
+ "chapter": "c11-chinh-quyen-dia-phuong",
+ "term": "Hội đồng nhân dân",
+ "definition": "Hội đồng nhân dân là cơ quan quyền lực nhà nước ở địa phương, đại diện cho ý chí, nguyện vọng và quyền làm chủ của Nhân dân, do Nhân dân địa phương bầu ra, chịu trách nhiệm trước Nhân dân địa phương và cơ quan nhà nước cấp trên.",
+ "plain": "Hội đồng nhân dân là \"Quốc hội thu nhỏ\" ở địa phương: cơ quan QUYỀN LỰC nhà nước ở địa phương, do dân địa phương bầu, chịu trách nhiệm trước Nhân dân địa phương VÀ cơ quan nhà nước cấp trên (tính \"hai chiều\" khác Quốc hội). Hai chức năng: quyết định vấn đề địa phương do luật định; giám sát việc tuân theo Hiến pháp, pháp luật và thực hiện nghị quyết của Hội đồng nhân dân (khoản 2).",
+ "example": "Hội đồng nhân dân tỉnh thông qua nghị quyết dự toán ngân sách tỉnh và tổ chức giám sát việc Ủy ban nhân dân tỉnh thực hiện nghị quyết đó.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 113 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "uy-ban-nhan-dan",
+  "vi-tri-quoc-hoi",
+  "dai-bieu-hoi-dong-nhan-dan"
+ ],
+ "keywords": [
+  "cơ quan quyền lực nhà nước ở địa phương",
+  "do Nhân dân địa phương bầu",
+  "chịu trách nhiệm trước Nhân dân và cấp trên",
+  "quyết định, giám sát"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 1 Điều 113, Hội đồng nhân dân là gì?",
+   "options": [
+    "Cơ quan quyền lực nhà nước ở địa phương",
+    "Cơ quan hành chính nhà nước ở địa phương",
+    "Cơ quan chấp hành của Ủy ban nhân dân",
+    "Tổ chức chính trị - xã hội"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 113. Cơ quan hành chính ở địa phương là Ủy ban nhân dân (Điều 114).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 113 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hội đồng nhân dân chịu trách nhiệm trước ai?",
+   "options": [
+    "Nhân dân địa phương và cơ quan nhà nước cấp trên",
+    "Chỉ Ủy ban nhân dân",
+    "Chỉ Chính phủ",
+    "Chỉ Mặt trận Tổ quốc"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 113.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 113 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hội đồng nhân dân",
+   "right": "Ủy ban nhân dân",
+   "cases": [
+    {
+     "text": "Cơ quan quyền lực nhà nước ở địa phương",
+     "answer": "left"
+    },
+    {
+     "text": "Cơ quan hành chính nhà nước ở địa phương",
+     "answer": "right"
+    },
+    {
+     "text": "Do Nhân dân địa phương bầu",
+     "answer": "left"
+    },
+    {
+     "text": "Do Hội đồng nhân dân cùng cấp bầu",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 113, 114."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hội đồng nhân dân là cơ quan {{quyền lực nhà nước}} ở địa phương, do {{Nhân dân địa phương}} bầu ra.",
+   "bank_extra": [
+    "hành chính nhà nước",
+    "Ủy ban nhân dân"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hội đồng nhân dân quyết định các vấn đề của địa phương do luật định; {{giám sát}} việc tuân theo Hiến pháp và pháp luật ở địa phương.",
+   "bank_extra": [
+    "xét xử",
+    "điều tra"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hội đồng nhân dân chỉ chịu trách nhiệm trước Nhân dân địa phương.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 113: chịu trách nhiệm trước Nhân dân địa phương và cơ quan nhà nước cấp trên."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày vị trí, chức năng của Hội đồng nhân dân theo Điều 113.",
+   "model": "Cơ quan quyền lực nhà nước ở địa phương, đại diện ý chí, nguyện vọng, quyền làm chủ của Nhân dân, do Nhân dân địa phương bầu, chịu trách nhiệm trước Nhân dân địa phương và cơ quan nhà nước cấp trên (khoản 1); quyết định vấn đề địa phương do luật định; giám sát việc tuân theo Hiến pháp, pháp luật và thực hiện nghị quyết của Hội đồng nhân dân (khoản 2).",
+   "keywords": [
+    "quyền lực nhà nước ở địa phương",
+    "Nhân dân bầu",
+    "cấp trên",
+    "giám sát"
+   ]
+  }
+ ]
+}

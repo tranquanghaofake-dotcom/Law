@@ -1,0 +1,117 @@
+{
+ "id": "don-vi-hanh-chinh-hai-cap",
+ "subject": "hien-phap",
+ "chapter": "c11-chinh-quyen-dia-phuong",
+ "term": "Đơn vị hành chính hai cấp",
+ "definition": "Các đơn vị hành chính của nước Cộng hòa xã hội chủ nghĩa Việt Nam được tổ chức thành hai cấp, gồm tỉnh, thành phố trực thuộc trung ương và các đơn vị hành chính dưới tỉnh, thành phố trực thuộc trung ương do luật định.",
+ "plain": "Từ năm 2025, đơn vị hành chính nước ta tổ chức thành HAI CẤP: cấp tỉnh (tỉnh, thành phố trực thuộc trung ương) và cấp dưới tỉnh (xã, phường, đặc khu theo Luật Tổ chức chính quyền địa phương 2025). Cấp HUYỆN kết thúc hoạt động từ 01/7/2025 (khoản 2 Điều 2 Nghị quyết 203/2025/QH15). Hiến pháp không liệt kê cụ thể tên đơn vị cấp dưới mà giao \"do luật định\".",
+ "example": "Trước 2025: tỉnh → huyện → xã (3 cấp). Từ 01/7/2025: tỉnh → xã/phường/đặc khu (2 cấp). Một người dân ở xã nay làm thủ tục trực tiếp với chính quyền xã hoặc tỉnh, không còn Ủy ban nhân dân huyện.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 110 Hiến pháp 2013 (sửa đổi bởi NQ 203/2025/QH15)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "cap-chinh-quyen-dia-phuong",
+  "thanh-lap-giai-the-dvhc",
+  "don-vi-hanh-chinh-kinh-te-dac-biet"
+ ],
+ "keywords": [
+  "hai cấp",
+  "tỉnh, thành phố trực thuộc trung ương",
+  "dưới tỉnh do luật định",
+  "kết thúc cấp huyện từ 01/7/2025"
+ ],
+ "note": "Nghị quyết 203/2025/QH15 (hiệu lực 16/6/2025) sửa toàn bộ Điều 110: chuyển từ 3 cấp (tỉnh – huyện – xã) sang 2 cấp; khoản 2 Điều 2 Nghị quyết kết thúc hoạt động đơn vị hành chính cấp huyện từ 01/7/2025. Giáo trình in trước 2025 mô tả mô hình 3 cấp và phân định huyện, quận, thị xã, thị trấn. Phần này đã thay đổi căn bản.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 1 Điều 110 Hiến pháp (sửa đổi 2025), đơn vị hành chính được tổ chức thành mấy cấp?",
+   "options": [
+    "Hai cấp",
+    "Ba cấp",
+    "Bốn cấp",
+    "Một cấp"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 110 sửa đổi bởi Nghị quyết 203/2025/QH15.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 110 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đơn vị hành chính cấp huyện kết thúc hoạt động từ ngày nào?",
+   "options": [
+    "01/7/2025",
+    "16/6/2025",
+    "01/01/2025",
+    "01/01/2026"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 2 Nghị quyết 203/2025/QH15.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 2 Nghị quyết 203/2025/QH15"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Mô hình theo Hiến pháp 2013 (bản gốc)",
+   "right": "Mô hình hiện hành (sau NQ 203/2025)",
+   "cases": [
+    {
+     "text": "Tỉnh chia thành huyện, thị xã, thành phố thuộc tỉnh",
+     "answer": "left"
+    },
+    {
+     "text": "Hai cấp: tỉnh và đơn vị hành chính dưới tỉnh do luật định",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 110 trước và sau sửa đổi."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Các đơn vị hành chính được tổ chức thành {{hai}} cấp, gồm tỉnh, thành phố {{trực thuộc trung ương}} và các đơn vị hành chính dưới tỉnh do luật định.",
+   "bank_extra": [
+    "ba",
+    "thuộc tỉnh"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đơn vị hành chính dưới tỉnh, thành phố trực thuộc trung ương do {{luật}} định.",
+   "bank_extra": [
+    "Chính phủ",
+    "Thủ tướng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo Hiến pháp hiện hành, nước ta vẫn có đơn vị hành chính cấp huyện.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 110 (sửa đổi 2025) quy định hai cấp; cấp huyện kết thúc hoạt động từ 01/7/2025."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quy định về đơn vị hành chính theo Điều 110 Hiến pháp hiện hành.",
+   "model": "Đơn vị hành chính tổ chức thành hai cấp: tỉnh, thành phố trực thuộc trung ương và đơn vị hành chính dưới tỉnh do luật định (khoản 1); đơn vị hành chính - kinh tế đặc biệt do Quốc hội thành lập (khoản 2); thành lập, giải thể, nhập, chia, điều chỉnh địa giới phải lấy ý kiến Nhân dân địa phương, theo trình tự do Quốc hội quy định (khoản 3). Cấp huyện kết thúc hoạt động từ 01/7/2025.",
+   "keywords": [
+    "hai cấp",
+    "tỉnh",
+    "dưới tỉnh",
+    "cấp huyện"
+   ]
+  }
+ ]
+}

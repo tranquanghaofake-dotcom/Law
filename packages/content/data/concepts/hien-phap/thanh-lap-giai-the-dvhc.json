@@ -1,0 +1,116 @@
+{
+ "id": "thanh-lap-giai-the-dvhc",
+ "subject": "hien-phap",
+ "chapter": "c11-chinh-quyen-dia-phuong",
+ "term": "Thành lập, giải thể, nhập, chia, điều chỉnh địa giới đơn vị hành chính",
+ "definition": "Việc thành lập, giải thể, nhập, chia, điều chỉnh địa giới đơn vị hành chính phải lấy ý kiến Nhân dân địa phương và theo trình tự, thủ tục do Quốc hội quy định.",
+ "plain": "Hai điều kiện bắt buộc: LẤY Ý KIẾN NHÂN DÂN địa phương và theo trình tự, thủ tục do QUỐC HỘI quy định (bản 2013 ghi \"do luật định\"). Thẩm quyền quyết định: Quốc hội với cấp tỉnh (khoản 9 Điều 70); Ủy ban thường vụ Quốc hội với đơn vị dưới tỉnh (khoản 8 Điều 74). Đợt sáp nhập tỉnh, xã năm 2025 là ví dụ áp dụng.",
+ "example": "Trước khi sáp nhập hai tỉnh, chính quyền tổ chức lấy ý kiến cử tri (Nhân dân) của các địa phương liên quan; sau đó Quốc hội ra nghị quyết quyết định.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 3 Điều 110 Hiến pháp 2013 (sửa đổi bởi NQ 203/2025/QH15)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "don-vi-hanh-chinh-hai-cap",
+  "vi-tri-quoc-hoi",
+  "uy-ban-thuong-vu-quoc-hoi"
+ ],
+ "keywords": [
+  "lấy ý kiến Nhân dân địa phương",
+  "trình tự do Quốc hội quy định",
+  "Quốc hội: cấp tỉnh; Ủy ban thường vụ: dưới tỉnh"
+ ],
+ "note": "Nghị quyết 203/2025/QH15 (hiệu lực 16/6/2025) sửa câu chữ: trình tự, thủ tục nay \"do Quốc hội quy định\" (bản 2013: \"do luật định\"); quy định chuyển từ khoản 2 sang khoản 3 Điều 110.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thành lập, nhập, chia đơn vị hành chính phải đáp ứng yêu cầu gì theo khoản 3 Điều 110?",
+   "options": [
+    "Lấy ý kiến Nhân dân địa phương và theo trình tự, thủ tục do Quốc hội quy định",
+    "Chỉ cần quyết định của Thủ tướng",
+    "Chỉ cần Hội đồng nhân dân đồng ý",
+    "Trưng cầu ý dân toàn quốc"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 110.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 110 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Cơ quan nào quyết định nhập, chia đơn vị hành chính cấp tỉnh?",
+   "options": [
+    "Quốc hội",
+    "Ủy ban thường vụ Quốc hội",
+    "Chính phủ",
+    "Chủ tịch nước"
+   ],
+   "answer": 0,
+   "explain": "Khoản 9 Điều 70.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 9 Điều 70 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quốc hội quyết định",
+   "right": "Ủy ban thường vụ Quốc hội quyết định",
+   "cases": [
+    {
+     "text": "Nhập hai tỉnh thành một tỉnh",
+     "answer": "left"
+    },
+    {
+     "text": "Nhập hai xã thành một xã",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 9 Điều 70; khoản 8 Điều 74."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Việc thành lập, giải thể, nhập, chia, điều chỉnh địa giới đơn vị hành chính phải lấy ý kiến {{Nhân dân địa phương}} và theo trình tự, thủ tục do {{Quốc hội}} quy định.",
+   "bank_extra": [
+    "Mặt trận Tổ quốc",
+    "Chính phủ"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chính phủ {{trình}} Quốc hội quyết định thành lập, giải thể, nhập, chia, điều chỉnh địa giới hành chính tỉnh.",
+   "bank_extra": [
+    "quyết định thay",
+    "báo cáo sau"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Nhà nước có thể sáp nhập hai xã mà không cần lấy ý kiến Nhân dân địa phương.",
+   "answer": false,
+   "explain": "Sai. Khoản 3 Điều 110: phải lấy ý kiến Nhân dân địa phương."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày yêu cầu và thẩm quyền khi thành lập, nhập, chia, điều chỉnh địa giới đơn vị hành chính.",
+   "model": "Phải lấy ý kiến Nhân dân địa phương và theo trình tự, thủ tục do Quốc hội quy định (khoản 3 Điều 110). Quốc hội quyết định với cấp tỉnh, đơn vị hành chính - kinh tế đặc biệt (khoản 9 Điều 70); Ủy ban thường vụ Quốc hội quyết định với đơn vị dưới tỉnh (khoản 8 Điều 74); Chính phủ trình (khoản 4 Điều 96).",
+   "keywords": [
+    "ý kiến Nhân dân",
+    "Quốc hội",
+    "Ủy ban thường vụ",
+    "Chính phủ trình"
+   ]
+  }
+ ]
+}

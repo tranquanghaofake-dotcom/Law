@@ -8,8 +8,8 @@ const dir = join(root, 'concepts', 'hien-phap');
 const files = readdirSync(dir).filter((f) => f.endsWith('.json'));
 
 describe('nội dung Luật Hiến pháp', () => {
-  it('có 61 khái niệm hợp lệ, nguồn statute trỏ vbpl.vn, ngày đối chiếu 2026-11-01', () => {
-    expect(files.length).toBe(61);
+  it('có 81 khái niệm hợp lệ, nguồn statute trỏ vbpl.vn, ngày đối chiếu 2026-11-01', () => {
+    expect(files.length).toBe(81);
     for (const f of files) {
       const c = conceptSchema.parse(JSON.parse(readFileSync(join(dir, f), 'utf8')));
       expect(c.source.kind).toBe('statute');
@@ -21,7 +21,7 @@ describe('nội dung Luật Hiến pháp', () => {
   });
   it('môn chia chương theo mục lục giáo trình, mỗi khái niệm nằm đúng chương, confusables nằm trong cùng môn', () => {
     const s = subjectSchema.parse(JSON.parse(readFileSync(join(root, 'subjects', 'hien-phap.json'), 'utf8')));
-    expect(s.chapters.map((c) => c.id)).toEqual(['c2-khai-niem-dac-trung', 'c3-che-do-chinh-tri', 'c4-quyen-con-nguoi', 'c5-quoc-tich', 'c6-bau-cu', 'c7-quoc-hoi', 'c8-chu-tich-nuoc', 'c9-chinh-phu']);
+    expect(s.chapters.map((c) => c.id)).toEqual(['c2-khai-niem-dac-trung', 'c3-che-do-chinh-tri', 'c4-quyen-con-nguoi', 'c5-quoc-tich', 'c6-bau-cu', 'c7-quoc-hoi', 'c8-chu-tich-nuoc', 'c9-chinh-phu', 'c10-toa-an-vien-kiem-sat', 'c11-chinh-quyen-dia-phuong']);
     for (const ch of s.chapters) for (const l of ch.lessons) for (const id of l.concepts) {
       expect(JSON.parse(readFileSync(join(dir, `${id}.json`), 'utf8')).chapter).toBe(ch.id);
     }

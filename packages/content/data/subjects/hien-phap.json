@@ -189,6 +189,62 @@
           ]
         }
       ]
+    },
+    {
+      "id": "c10-toa-an-vien-kiem-sat",
+      "title": "Chương 10. Tòa án nhân dân và Viện kiểm sát nhân dân",
+      "lessons": [
+        {
+          "id": "hp-10a",
+          "title": "Tòa án nhân dân và nguyên tắc xét xử",
+          "concepts": [
+            "toa-an-vi-tri",
+            "hoi-tham-tham-gia-xet-xu",
+            "doc-lap-xet-xu",
+            "xet-xu-cong-khai-tap-the",
+            "tranh-tung-hai-cap-bao-chua"
+          ]
+        },
+        {
+          "id": "hp-10b",
+          "title": "Tòa án tối cao, bản án và Viện kiểm sát",
+          "concepts": [
+            "toa-an-nhan-dan-toi-cao",
+            "hieu-luc-ban-an",
+            "vien-kiem-sat-chuc-nang",
+            "lanh-dao-tap-trung-vien-kiem-sat",
+            "trach-nhiem-chanh-an-vien-truong"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c11-chinh-quyen-dia-phuong",
+      "title": "Chương 11. Chính quyền địa phương",
+      "lessons": [
+        {
+          "id": "hp-11a",
+          "title": "Đơn vị hành chính và cấp chính quyền",
+          "concepts": [
+            "don-vi-hanh-chinh-hai-cap",
+            "don-vi-hanh-chinh-kinh-te-dac-biet",
+            "thanh-lap-giai-the-dvhc",
+            "cap-chinh-quyen-dia-phuong",
+            "nhiem-vu-chinh-quyen-dia-phuong"
+          ]
+        },
+        {
+          "id": "hp-11b",
+          "title": "Hội đồng nhân dân, Ủy ban nhân dân",
+          "concepts": [
+            "hoi-dong-nhan-dan",
+            "uy-ban-nhan-dan",
+            "dai-bieu-hoi-dong-nhan-dan",
+            "chat-van-hoi-dong-nhan-dan",
+            "chinh-quyen-dia-phuong-mat-tran"
+          ]
+        }
+      ]
     }
   ]
 }

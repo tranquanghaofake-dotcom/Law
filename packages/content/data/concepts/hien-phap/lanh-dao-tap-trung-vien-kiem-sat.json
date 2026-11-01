@@ -1,0 +1,119 @@
+{
+ "id": "lanh-dao-tap-trung-vien-kiem-sat",
+ "subject": "hien-phap",
+ "chapter": "c10-toa-an-vien-kiem-sat",
+ "term": "Nguyên tắc lãnh đạo trong ngành kiểm sát",
+ "definition": "Viện kiểm sát nhân dân do Viện trưởng lãnh đạo. Viện trưởng Viện kiểm sát nhân dân cấp dưới chịu sự lãnh đạo của Viện trưởng Viện kiểm sát nhân dân cấp trên. Viện trưởng các Viện kiểm sát cấp dưới chịu sự lãnh đạo thống nhất của Viện trưởng Viện kiểm sát nhân dân tối cao.",
+ "plain": "Ngành kiểm sát tổ chức theo nguyên tắc tập trung thống nhất (chế độ thủ trưởng): Viện trưởng lãnh đạo Viện; cấp dưới chịu sự lãnh đạo của cấp trên; tất cả chịu lãnh đạo thống nhất của Viện trưởng Viện kiểm sát nhân dân tối cao. Kiểm sát viên tuân theo pháp luật và chịu sự chỉ đạo của Viện trưởng (khoản 2). Đối lập với Tòa án: Thẩm phán xét xử ĐỘC LẬP, Tòa cấp trên không chỉ đạo phán quyết của Tòa cấp dưới.",
+ "example": "Viện trưởng Viện kiểm sát cấp trên có thể chỉ đạo Viện kiểm sát cấp dưới về quan điểm truy tố trong một vụ án; còn Chánh án Tòa án cấp trên không được chỉ đạo Thẩm phán cấp dưới xử một vụ cụ thể thế nào.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 109 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "vien-kiem-sat-chuc-nang",
+  "doc-lap-xet-xu"
+ ],
+ "keywords": [
+  "Viện trưởng lãnh đạo",
+  "cấp dưới chịu lãnh đạo cấp trên",
+  "lãnh đạo thống nhất",
+  "Kiểm sát viên chịu sự chỉ đạo"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Viện trưởng Viện kiểm sát cấp dưới chịu sự lãnh đạo của ai?",
+   "options": [
+    "Viện trưởng Viện kiểm sát nhân dân cấp trên và lãnh đạo thống nhất của Viện trưởng Viện kiểm sát nhân dân tối cao",
+    "Chủ tịch Ủy ban nhân dân cùng cấp",
+    "Chánh án Tòa án cùng cấp",
+    "Hội đồng nhân dân cùng cấp"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 109.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 109 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khi thực hành quyền công tố, Kiểm sát viên tuân theo điều gì?",
+   "options": [
+    "Pháp luật và chịu sự chỉ đạo của Viện trưởng Viện kiểm sát nhân dân",
+    "Chỉ ý kiến cá nhân",
+    "Chỉ đạo của Tòa án",
+    "Chỉ đạo của cơ quan điều tra"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 109.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 109 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Viện kiểm sát",
+   "right": "Tòa án",
+   "cases": [
+    {
+     "text": "Cấp dưới chịu sự lãnh đạo của cấp trên",
+     "answer": "left"
+    },
+    {
+     "text": "Thẩm phán xét xử độc lập, chỉ tuân theo pháp luật",
+     "answer": "right"
+    },
+    {
+     "text": "Kiểm sát viên chịu sự chỉ đạo của Viện trưởng",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 103, 109."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Viện kiểm sát nhân dân do {{Viện trưởng}} lãnh đạo; Viện trưởng các Viện kiểm sát cấp dưới chịu sự lãnh đạo {{thống nhất}} của Viện trưởng Viện kiểm sát nhân dân tối cao.",
+   "bank_extra": [
+    "Hội đồng kiểm sát",
+    "phân tán"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Kiểm sát viên tuân theo pháp luật và chịu sự {{chỉ đạo}} của Viện trưởng Viện kiểm sát nhân dân.",
+   "bank_extra": [
+    "giám sát",
+    "bảo trợ"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Kiểm sát viên khi thực hành quyền công tố hoàn toàn độc lập, không chịu sự chỉ đạo của Viện trưởng.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 109: Kiểm sát viên tuân theo pháp luật và chịu sự chỉ đạo của Viện trưởng."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày nguyên tắc lãnh đạo trong hệ thống Viện kiểm sát và so sánh với Tòa án.",
+   "model": "Viện kiểm sát do Viện trưởng lãnh đạo; Viện trưởng cấp dưới chịu lãnh đạo của Viện trưởng cấp trên và lãnh đạo thống nhất của Viện trưởng Viện kiểm sát nhân dân tối cao (khoản 1 Điều 109); Kiểm sát viên tuân theo pháp luật, chịu chỉ đạo của Viện trưởng (khoản 2). Khác Tòa án: Thẩm phán, Hội thẩm xét xử độc lập (khoản 2 Điều 103).",
+   "keywords": [
+    "Viện trưởng",
+    "thống nhất",
+    "chỉ đạo",
+    "độc lập"
+   ]
+  }
+ ]
+}

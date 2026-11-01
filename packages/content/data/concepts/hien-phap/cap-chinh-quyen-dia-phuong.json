@@ -1,0 +1,116 @@
+{
+ "id": "cap-chinh-quyen-dia-phuong",
+ "subject": "hien-phap",
+ "chapter": "c11-chinh-quyen-dia-phuong",
+ "term": "Cấp chính quyền địa phương",
+ "definition": "Chính quyền địa phương được tổ chức ở các đơn vị hành chính của nước Cộng hòa xã hội chủ nghĩa Việt Nam. Cấp chính quyền địa phương gồm có Hội đồng nhân dân và Ủy ban nhân dân được tổ chức ở đơn vị hành chính phù hợp với đặc điểm nông thôn, đô thị, hải đảo do Quốc hội quy định.",
+ "plain": "Phân biệt \"đơn vị hành chính\" (phạm vi lãnh thổ) với \"cấp chính quyền địa phương\" (gồm HAI cơ quan: Hội đồng nhân dân và Ủy ban nhân dân). Chính quyền được tổ chức phù hợp đặc điểm NÔNG THÔN (xã), ĐÔ THỊ (phường), HẢI ĐẢO (đặc khu); chi tiết do Quốc hội quy định (Luật Tổ chức chính quyền địa phương 2025).",
+ "example": "Ở một phường thuộc thành phố, chính quyền gồm Hội đồng nhân dân phường và Ủy ban nhân dân phường; ở một đặc khu hải đảo, chính quyền được tổ chức phù hợp đặc điểm hải đảo.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 111 Hiến pháp 2013 (sửa đổi bởi NQ 203/2025/QH15)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "don-vi-hanh-chinh-hai-cap",
+  "hoi-dong-nhan-dan",
+  "uy-ban-nhan-dan"
+ ],
+ "keywords": [
+  "Hội đồng nhân dân và Ủy ban nhân dân",
+  "nông thôn, đô thị, hải đảo",
+  "do Quốc hội quy định"
+ ],
+ "note": "Nghị quyết 203/2025/QH15 (hiệu lực 16/6/2025) sửa khoản 2 Điều 111: bỏ cụm \"đơn vị hành chính - kinh tế đặc biệt\" (tách thành khoản 3); việc tổ chức chính quyền \"do Quốc hội quy định\" (bản 2013: \"do luật định\").",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Cấp chính quyền địa phương gồm những cơ quan nào theo khoản 2 Điều 111?",
+   "options": [
+    "Hội đồng nhân dân và Ủy ban nhân dân",
+    "Chỉ Ủy ban nhân dân",
+    "Hội đồng nhân dân và Tòa án nhân dân",
+    "Ủy ban nhân dân và Mặt trận Tổ quốc"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 111.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 111 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 111 hiện hành, chính quyền địa phương được tổ chức phù hợp với đặc điểm nào?",
+   "options": [
+    "Nông thôn, đô thị, hải đảo",
+    "Dân tộc, tôn giáo",
+    "Kinh tế, văn hóa",
+    "Diện tích, dân số"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 111.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 111 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Đơn vị hành chính",
+   "right": "Cấp chính quyền địa phương",
+   "cases": [
+    {
+     "text": "Tỉnh, xã, phường, đặc khu (phạm vi lãnh thổ)",
+     "answer": "left"
+    },
+    {
+     "text": "Hội đồng nhân dân và Ủy ban nhân dân",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 110, 111."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Cấp chính quyền địa phương gồm có {{Hội đồng nhân dân}} và {{Ủy ban nhân dân}}.",
+   "bank_extra": [
+    "Tòa án nhân dân",
+    "Mặt trận Tổ quốc"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Cấp chính quyền địa phương được tổ chức phù hợp với đặc điểm nông thôn, đô thị, {{hải đảo}} do Quốc hội quy định.",
+   "bank_extra": [
+    "miền núi",
+    "biên giới"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chính quyền địa phương được tổ chức ở các đơn vị hành chính.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 111."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quy định về cấp chính quyền địa phương theo Điều 111 hiện hành.",
+   "model": "Chính quyền địa phương được tổ chức ở các đơn vị hành chính (khoản 1). Cấp chính quyền gồm Hội đồng nhân dân và Ủy ban nhân dân, tổ chức phù hợp đặc điểm nông thôn, đô thị, hải đảo do Quốc hội quy định (khoản 2). Chính quyền ở đơn vị hành chính - kinh tế đặc biệt do Quốc hội quy định khi thành lập (khoản 3).",
+   "keywords": [
+    "Hội đồng nhân dân",
+    "Ủy ban nhân dân",
+    "nông thôn, đô thị, hải đảo",
+    "Quốc hội"
+   ]
+  }
+ ]
+}

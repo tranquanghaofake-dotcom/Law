@@ -1,0 +1,115 @@
+{
+ "id": "hoi-tham-tham-gia-xet-xu",
+ "subject": "hien-phap",
+ "chapter": "c10-toa-an-vien-kiem-sat",
+ "term": "Hội thẩm tham gia xét xử sơ thẩm",
+ "definition": "Việc xét xử sơ thẩm của Tòa án nhân dân có Hội thẩm tham gia, trừ trường hợp xét xử theo thủ tục rút gọn.",
+ "plain": "Hội thẩm là người đại diện Nhân dân cùng Thẩm phán xét xử (thể hiện tính \"nhân dân\" của Tòa án). Áp dụng ở cấp SƠ THẨM; ngoại lệ là thủ tục rút gọn (một Thẩm phán xét xử). Khi xét xử, Hội thẩm ngang quyền với Thẩm phán và cũng độc lập, chỉ tuân theo pháp luật (khoản 2).",
+ "example": "Phiên tòa sơ thẩm vụ án hình sự thông thường có 1 Thẩm phán và 2 Hội thẩm nhân dân; còn vụ án áp dụng thủ tục rút gọn thì chỉ có một Thẩm phán.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 103 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "doc-lap-xet-xu",
+  "xet-xu-cong-khai-tap-the",
+  "toa-an-vi-tri"
+ ],
+ "keywords": [
+  "Hội thẩm",
+  "sơ thẩm",
+  "trừ thủ tục rút gọn"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hội thẩm tham gia xét xử ở cấp nào theo khoản 1 Điều 103?",
+   "options": [
+    "Sơ thẩm (trừ thủ tục rút gọn)",
+    "Phúc thẩm",
+    "Giám đốc thẩm",
+    "Mọi cấp"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 103.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 103 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trường hợp nào xét xử sơ thẩm không có Hội thẩm tham gia?",
+   "options": [
+    "Xét xử theo thủ tục rút gọn",
+    "Vụ án có bị cáo là người nước ngoài",
+    "Vụ án dân sự",
+    "Vụ án xét xử kín"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 103.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 103 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Có Hội thẩm tham gia",
+   "right": "Không có Hội thẩm",
+   "cases": [
+    {
+     "text": "Xét xử sơ thẩm thông thường",
+     "answer": "left"
+    },
+    {
+     "text": "Xét xử theo thủ tục rút gọn",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 103."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Việc xét xử {{sơ thẩm}} của Tòa án nhân dân có {{Hội thẩm}} tham gia, trừ trường hợp xét xử theo thủ tục rút gọn.",
+   "bank_extra": [
+    "phúc thẩm",
+    "Kiểm sát viên"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Việc bầu, nhiệm kỳ của Hội thẩm do {{luật}} định.",
+   "bank_extra": [
+    "Chánh án",
+    "Hội đồng nhân dân"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi phiên tòa sơ thẩm đều bắt buộc có Hội thẩm tham gia.",
+   "answer": false,
+   "explain": "Sai. Ngoại lệ là xét xử theo thủ tục rút gọn (khoản 1 Điều 103)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày nguyên tắc Hội thẩm tham gia xét xử.",
+   "model": "Xét xử sơ thẩm có Hội thẩm tham gia, trừ thủ tục rút gọn (khoản 1 Điều 103); Hội thẩm cùng Thẩm phán xét xử độc lập, chỉ tuân theo pháp luật (khoản 2); bầu, nhiệm kỳ Hội thẩm do luật định (khoản 3 Điều 105). Thể hiện sự tham gia của Nhân dân vào hoạt động xét xử.",
+   "keywords": [
+    "Hội thẩm",
+    "sơ thẩm",
+    "rút gọn",
+    "độc lập"
+   ]
+  }
+ ]
+}

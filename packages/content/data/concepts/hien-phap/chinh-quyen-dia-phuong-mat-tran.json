@@ -1,0 +1,116 @@
+{
+ "id": "chinh-quyen-dia-phuong-mat-tran",
+ "subject": "hien-phap",
+ "chapter": "c11-chinh-quyen-dia-phuong",
+ "term": "Quan hệ giữa chính quyền địa phương với Mặt trận Tổ quốc",
+ "definition": "Hội đồng nhân dân, Uỷ ban nhân dân thực hiện chế độ thông báo tình hình của địa phương cho Mặt trận Tổ quốc Việt Nam và các đoàn thể nhân dân, lắng nghe ý kiến, kiến nghị của các tổ chức này về xây dựng chính quyền và phát triển kinh tế - xã hội ở địa phương; phối hợp với Mặt trận Tổ quốc Việt Nam và các đoàn thể nhân dân động viên Nhân dân cùng Nhà nước thực hiện các nhiệm vụ kinh tế - xã hội, quốc phòng, an ninh ở địa phương.",
+ "plain": "Ở địa phương, chính quyền và Mặt trận gắn bó qua 3 cơ chế: THÔNG BÁO tình hình; LẮNG NGHE ý kiến, kiến nghị; PHỐI HỢP động viên Nhân dân. Chủ tịch Ủy ban Mặt trận Tổ quốc và người đứng đầu tổ chức chính trị - xã hội ở địa phương được MỜI dự kỳ họp Hội đồng nhân dân, hội nghị Ủy ban nhân dân khi bàn vấn đề liên quan (khoản 2). Tương tự Điều 101 ở trung ương.",
+ "example": "Kỳ họp Hội đồng nhân dân xã có mời Chủ tịch Ủy ban Mặt trận Tổ quốc xã dự và phát biểu về kiến nghị của cử tri trước kỳ họp.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 116 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "chinh-phu-mat-tran",
+  "hoi-dong-nhan-dan",
+  "hiep-thuong-gioi-thieu-ung-cu"
+ ],
+ "keywords": [
+  "thông báo tình hình",
+  "lắng nghe kiến nghị",
+  "phối hợp động viên Nhân dân",
+  "mời dự kỳ họp"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hội đồng nhân dân, Ủy ban nhân dân thực hiện chế độ gì với Mặt trận Tổ quốc theo khoản 1 Điều 116?",
+   "options": [
+    "Thông báo tình hình của địa phương, lắng nghe ý kiến, kiến nghị",
+    "Chỉ đạo hoạt động của Mặt trận",
+    "Phê duyệt nhân sự Mặt trận",
+    "Cấp phép hoạt động cho Mặt trận"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 116.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 116 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai được mời tham dự các kỳ họp Hội đồng nhân dân theo khoản 2 Điều 116?",
+   "options": [
+    "Chủ tịch Ủy ban Mặt trận Tổ quốc và người đứng đầu tổ chức chính trị - xã hội ở địa phương",
+    "Đại sứ nước ngoài",
+    "Giám đốc các doanh nghiệp",
+    "Đại biểu Quốc hội của tỉnh khác"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 116.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 116 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Trung ương (Điều 101)",
+   "right": "Địa phương (Điều 116)",
+   "cases": [
+    {
+     "text": "Chủ tịch Ủy ban trung ương Mặt trận được mời dự phiên họp Chính phủ",
+     "answer": "left"
+    },
+    {
+     "text": "Chủ tịch Ủy ban Mặt trận được mời dự kỳ họp Hội đồng nhân dân",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 101, 116."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hội đồng nhân dân, Ủy ban nhân dân thực hiện chế độ {{thông báo}} tình hình của địa phương cho Mặt trận Tổ quốc Việt Nam và các đoàn thể nhân dân, {{lắng nghe}} ý kiến, kiến nghị của các tổ chức này.",
+   "bank_extra": [
+    "chỉ đạo",
+    "phê duyệt"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chính quyền địa phương phối hợp với Mặt trận Tổ quốc {{động viên}} Nhân dân cùng Nhà nước thực hiện các nhiệm vụ kinh tế - xã hội, quốc phòng, an ninh.",
+   "bank_extra": [
+    "cưỡng chế",
+    "thu thuế"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Ủy ban nhân dân có quyền chỉ đạo hoạt động của Ủy ban Mặt trận Tổ quốc cùng cấp.",
+   "answer": false,
+   "explain": "Sai. Quan hệ là thông báo, lắng nghe, phối hợp (Điều 116); Mặt trận là tổ chức liên minh chính trị do Đảng lãnh đạo (Điều 9), không trực thuộc Ủy ban nhân dân."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quan hệ giữa chính quyền địa phương và Mặt trận Tổ quốc theo Điều 116.",
+   "model": "Hội đồng nhân dân, Ủy ban nhân dân thông báo tình hình địa phương cho Mặt trận và đoàn thể, lắng nghe ý kiến, kiến nghị; phối hợp động viên Nhân dân thực hiện nhiệm vụ kinh tế - xã hội, quốc phòng, an ninh (khoản 1). Chủ tịch Ủy ban Mặt trận và người đứng đầu tổ chức chính trị - xã hội được mời dự kỳ họp Hội đồng nhân dân, hội nghị Ủy ban nhân dân khi bàn vấn đề liên quan (khoản 2).",
+   "keywords": [
+    "thông báo",
+    "lắng nghe",
+    "phối hợp",
+    "mời dự"
+   ]
+  }
+ ]
+}
