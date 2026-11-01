@@ -10,8 +10,10 @@
   --ok-bg: #e5f4ec;
   --bad: #b3261e;
   --bad-bg: #fbe9e7;
-  --video: #2b6cb0;
   --pldc: #7b4bb3;
+  --dan-su: #2b6cb0;
+  --lao-dong: #1f7a4d;
+  --hinh-su: #b3261e;
   --radius: 16px;
   --shadow: 0 1px 2px rgba(20, 33, 61, .06), 0 6px 20px rgba(20, 33, 61, .06);
 }
@@ -19,13 +21,13 @@
   :root:not([data-theme="light"]) {
     --ink: #eef1f7; --paper: #0f1626; --card: #182238; --muted: #a5adbf; --line: #2a3650;
     --accent: #f0a04b; --accent-ink: #1a1206; --ok: #6fd3a0; --ok-bg: #12352a; --bad: #ff8a80; --bad-bg: #3a1c1c;
-    --video: #7fb2ec; --pldc: #c09bec; --shadow: none;
+    --pldc: #c09bec; --dan-su: #7fb2ec; --lao-dong: #6fd3a0; --hinh-su: #ff8a80; --shadow: none;
   }
 }
 :root[data-theme="dark"] {
   --ink: #eef1f7; --paper: #0f1626; --card: #182238; --muted: #a5adbf; --line: #2a3650;
   --accent: #f0a04b; --accent-ink: #1a1206; --ok: #6fd3a0; --ok-bg: #12352a; --bad: #ff8a80; --bad-bg: #3a1c1c;
-  --video: #7fb2ec; --pldc: #c09bec; --shadow: none;
+  --pldc: #c09bec; --dan-su: #7fb2ec; --lao-dong: #6fd3a0; --hinh-su: #ff8a80; --shadow: none;
 }
 
 * { box-sizing: border-box; }
@@ -65,8 +67,10 @@ main { max-width: 640px; margin: 0 auto; padding: 8px 16px 32px; outline: none; 
 .set p { margin: 0; grid-column: 1; color: var(--muted); font-size: 14px; }
 .set .meta { grid-column: 2; grid-row: 1 / span 2; text-align: right; font-size: 13px; color: var(--muted); }
 .chip { display: inline-block; font-size: 12px; font-weight: 600; padding: 2px 8px; border-radius: 999px; margin-bottom: 4px; }
-.chip.video { background: color-mix(in srgb, var(--video) 14%, transparent); color: var(--video); }
 .chip.pldc { background: color-mix(in srgb, var(--pldc) 14%, transparent); color: var(--pldc); }
+.chip.dan-su { background: color-mix(in srgb, var(--dan-su) 14%, transparent); color: var(--dan-su); }
+.chip.lao-dong { background: color-mix(in srgb, var(--lao-dong) 14%, transparent); color: var(--lao-dong); }
+.chip.hinh-su { background: color-mix(in srgb, var(--hinh-su) 14%, transparent); color: var(--hinh-su); }
 .best { display: block; font-weight: 800; font-size: 18px; color: var(--ink); }
 
 .quiz-head { display: flex; align-items: center; gap: 12px; margin: 4px 0 14px; }

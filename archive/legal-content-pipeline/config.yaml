@@ -69,7 +69,7 @@ carousel:
   disclaimer: "Mình là sinh viên Luật. Đây là thông tin chung, không phải tư vấn pháp lý cho trường hợp cụ thể."
 
 web:
-  dir: "../web"             # thư mục web trắc nghiệm (so với legal-content-pipeline/)
+  dir: "../../web"          # thư mục web (so với archive/legal-content-pipeline/)
 
 # ---- Đăng ----
 publish:

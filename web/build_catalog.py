@@ -3,7 +3,7 @@
 
   python web/build_catalog.py
 
-Chạy lại mỗi khi thêm/sửa bộ câu hỏi (pipeline gọi tự động trong `run.py export-web`).
+Chạy lại mỗi khi thêm/sửa bộ câu hỏi.
 Bộ nào sai định dạng sẽ bị loại khỏi catalog kèm thông báo lỗi, để câu hỏi lỗi không lên web."""
 import json
 import sys
@@ -11,7 +11,7 @@ from pathlib import Path
 
 WEB = Path(__file__).resolve().parent
 SETS = WEB / "data" / "sets"
-GROUPS = {"video", "pldc"}
+GROUPS = {"pldc", "dan-su", "lao-dong", "hinh-su"}  # mã môn, trùng với GROUPS trong assets/app.js
 
 
 def check(s: dict) -> list:
@@ -52,9 +52,10 @@ def build() -> int:
             continue
         n = len(s["questions"])
         if n != 10:
-            print(f"[catalog] {f.name}: lưu ý có {n} câu (CTA video hứa 10 câu)")
-        entries.append({k: s.get(k, "") for k in ("id", "group", "video", "title", "subtitle", "updated")} | {"count": n})
-    entries.sort(key=lambda e: (e["group"] != "video", e.get("video") or "", e["title"]))
+            print(f"[catalog] {f.name}: lưu ý có {n} câu (trang chủ ghi 10 câu/bộ)")
+        entries.append({k: s.get(k, "") for k in ("id", "group", "title", "subtitle", "updated")} | {"count": n})
+    order = {g: i for i, g in enumerate(("pldc", "dan-su", "lao-dong", "hinh-su"))}
+    entries.sort(key=lambda e: (order.get(e["group"], 99), e["title"]))
     out = WEB / "data" / "catalog.json"
     out.write_text(json.dumps({"sets": entries}, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"[catalog] {len(entries)} bộ → {out.relative_to(WEB.parent)}" + (f" ({bad} bộ lỗi)" if bad else ""))

@@ -3,7 +3,7 @@ const SITE = {
   author: "Trần Quang Hào, sinh viên Luật Kinh tế",
   reportUrl: "", // link Google Form "báo lỗi câu hỏi"; để trống thì ẩn
 };
-const GROUPS = { video: "Theo video TikTok", pldc: "Pháp luật đại cương" };
+const GROUPS = { pldc: "Pháp luật đại cương", "dan-su": "Luật Dân sự", "lao-dong": "Luật Lao động", "hinh-su": "Luật Hình sự" };
 const KEYS = ["A", "B", "C", "D"];
 
 const app = document.getElementById("app");
@@ -41,13 +41,13 @@ async function home() {
   }).join("");
   app.innerHTML = `<section class="hero">
       <h1>Luyện luật qua tình huống thật.</h1>
-      <p>Mỗi bộ 10 câu, chấm ngay, có giải thích và điều luật gốc. Xem video xong thì vào đây kiểm tra mình nhớ được bao nhiêu.</p>
+      <p>Mỗi bộ 10 câu, chấm ngay, có giải thích và điều luật gốc. Chọn một chủ đề và kiểm tra mình nhớ được bao nhiêu.</p>
     </section>${groups}`;
 }
 
 function card(s) {
   const b = best(s.id);
-  const chip = s.group === "video" && s.video ? `Video ${esc(s.video)}` : GROUPS[s.group];
+  const chip = GROUPS[s.group] || s.group;
   const meta = b != null ? `<span class="best">${b}/${s.count}</span>điểm cao nhất` : `${s.count} câu`;
   return `<a class="set" href="#/bo/${encodeURIComponent(s.id)}">
       <div><span class="chip ${esc(s.group)}">${esc(chip)}</span><h3>${esc(s.title)}</h3></div>
@@ -100,7 +100,7 @@ async function quiz(id) {
   const finish = () => {
     const n = qs.length, s = state.score;
     if (s > (best(set.id) ?? -1)) store.set("best:" + set.id, s);
-    const msg = s === n ? "Tuyệt đối. Bạn nắm chắc phần này." : s >= n * 0.7 ? "Khá chắc. Xem lại vài câu sai bên dưới." : "Nên xem lại video và thử lần nữa.";
+    const msg = s === n ? "Tuyệt đối. Bạn nắm chắc phần này." : s >= n * 0.7 ? "Khá chắc. Xem lại vài câu sai bên dưới." : "Nên đọc lại giải thích bên dưới và thử lần nữa.";
     app.innerHTML = `<div class="quiz-head"><button class="back" data-act="home" aria-label="Về trang chủ">←</button><h2>${esc(set.title)}</h2></div>
       <section class="result">
         <p class="score">${s}<small>/${n}</small></p><p class="msg">${msg}</p>

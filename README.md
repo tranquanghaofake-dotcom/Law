@@ -1,6 +1,18 @@
-# Law
-Not yet
+# Luyện Luật
 
-- [`docs/`](docs/) — Brief thương hiệu cá nhân, kịch bản TikTok, báo cáo rà soát căn cứ.
-- [`web/`](web/) — web trắc nghiệm "Luyện Luật": mỗi bộ 10 câu, có giải thích và căn cứ; đưa lên mạng miễn phí qua Cloudflare Pages.
-- [`legal-content-pipeline/`](legal-content-pipeline/) — pipeline nội dung: thu thập câu hỏi → chấm điểm → kịch bản có căn cứ (RAG) → duyệt → bộ ảnh TikTok dạng lướt → đăng; câu trắc nghiệm mỗi video tự lên web.
+Web học luật cho sinh viên: luyện khái niệm theo từng chương, chấm ngay, có giải thích và căn cứ điều luật.
+
+**👉 Vào làm bài:** mở thư mục [`web/`](web/) (hướng dẫn chạy trong [`web/README.md`](web/README.md)). Khi đã đưa lên Cloudflare Pages, link công khai sẽ được ghi tại đây.
+
+## Trong repo
+- [`web/`](web/) — mã nguồn web (HTML/CSS/JS tĩnh) và dữ liệu câu hỏi `web/data/sets/*.json`.
+- [`docs/`](docs/) — brief thương hiệu và **kế hoạch thiết kế web** (`docs/superpowers/specs/`).
+- [`archive/`](archive/) — phần làm video TikTok (pipeline, kịch bản) đang **tạm dừng**, giữ lại để dùng sau.
+
+## Chạy thử trên máy
+```bash
+cd web && python -m http.server 8000
+```
+Mở http://localhost:8000.
+
+*Nội dung là thông tin pháp luật chung, không phải tư vấn pháp lý.*
