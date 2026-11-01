@@ -126,6 +126,13 @@
     "miễn",
     "Chủ tịch nước"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Cầu thủ bóng đá nước ngoài thi đấu tại Việt Nam được nhập quốc tịch Việt Nam khi đã thường trú ở Việt Nam đủ 5 năm.",
+   "answer": false,
+   "explain": "Sai. Thường trú từ 05 năm trở lên chỉ là một trong các điều kiện; người xin nhập còn phải có năng lực hành vi dân sự đầy đủ, tuân thủ pháp luật, biết tiếng Việt, có khả năng bảo đảm cuộc sống… (khoản 1 Điều 19 Luật Quốc tịch, VBHN 53/VBHN-VPQH). (Nhận định trong bộ câu hỏi ôn tập Luật Hiến pháp, Drive HLU.)"
   }
  ]
 }

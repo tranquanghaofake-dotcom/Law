@@ -120,6 +120,20 @@
     "Hội đồng Nhà nước",
     "Hội đồng Bộ trưởng"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo Hiến pháp 1980, Hội đồng Bộ trưởng là Chính phủ nên không có chức danh Thủ tướng Chính phủ.",
+   "answer": true,
+   "explain": "Đúng. Điều 105 Hiến pháp 1980: Hội đồng Bộ trưởng gồm Chủ tịch Hội đồng Bộ trưởng, các Phó Chủ tịch… Người đứng đầu là Chủ tịch Hội đồng Bộ trưởng. (Nhận định trong bộ câu hỏi ôn tập Luật Hiến pháp, Drive HLU.)"
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chủ tịch nước theo Hiến pháp 1980 là cá nhân được bầu trong số các đại biểu Quốc hội.",
+   "answer": false,
+   "explain": "Sai. Hiến pháp 1980 không có chế định Chủ tịch nước cá nhân; Hội đồng Nhà nước là Chủ tịch tập thể (Điều 98). (Nhận định trong bộ câu hỏi ôn tập Luật Hiến pháp, Drive HLU.)"
   }
  ]
 }

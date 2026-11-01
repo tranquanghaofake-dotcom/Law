@@ -122,6 +122,27 @@
     "Nghị viện nhân dân",
     "phúc quyết"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Ở nước ta, Hiến pháp ra đời trước Cách mạng tháng Tám năm 1945.",
+   "answer": false,
+   "explain": "Sai. Bản Hiến pháp đầu tiên là Hiến pháp 1946, Quốc hội khóa I thông qua ngày 9/11/1946. Trước 1945 chỉ có tư tưởng lập hiến (các bài báo trên tạp chí Nam Phong những năm 1925, 1930). (Nhận định trong bộ câu hỏi ôn tập Luật Hiến pháp, Drive HLU.)"
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tư tưởng lập hiến ở nước ta đã xuất hiện từ trước Cách mạng tháng Tám.",
+   "answer": true,
+   "explain": "Đúng. Ví dụ các bài viết về hiến pháp trên tạp chí Nam Phong (số 96 năm 1925, số 155 năm 1930), có trong tài liệu tham khảo của học phần. (Nhận định trong bộ câu hỏi ôn tập Luật Hiến pháp, Drive HLU.)"
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chủ tịch nước theo Hiến pháp 1946 do cử tri trực tiếp bầu ra.",
+   "answer": false,
+   "explain": "Sai. Điều thứ 45 Hiến pháp 1946: Chủ tịch nước chọn trong Nghị viện nhân dân và phải được hai phần ba tổng số nghị viên bỏ phiếu thuận. (Nhận định trong bộ câu hỏi ôn tập Luật Hiến pháp, Drive HLU.)"
   }
  ]
 }

@@ -110,6 +110,13 @@
     "Điều 31",
     "bình đẳng"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Ở Việt Nam, mỗi cá nhân đều có quyền có quốc tịch.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 2 Luật Quốc tịch. (Nhận định trong bộ câu hỏi ôn tập Luật Hiến pháp, Drive HLU.)"
   }
  ]
 }

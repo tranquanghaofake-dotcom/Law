@@ -130,6 +130,13 @@
     "Quốc hội",
     "Hội đồng nhân dân"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Ở nước ta hiện nay, Nhân dân chỉ thực hiện quyền lực nhà nước gián tiếp thông qua Quốc hội và Hội đồng nhân dân.",
+   "answer": false,
+   "explain": "Sai. Điều 6 Hiến pháp 2013: Nhân dân thực hiện quyền lực nhà nước bằng dân chủ trực tiếp, bằng dân chủ đại diện thông qua Quốc hội, Hội đồng nhân dân và thông qua các cơ quan khác của Nhà nước. (Nhận định trong bộ câu hỏi ôn tập Luật Hiến pháp, Drive HLU.)"
   }
  ]
 }

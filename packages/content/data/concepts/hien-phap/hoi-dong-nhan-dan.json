@@ -119,6 +119,20 @@
     "cấp trên",
     "giám sát"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hội đồng nhân dân là cơ quan quyền lực nhà nước cao nhất ở địa phương.",
+   "answer": false,
+   "explain": "Sai về câu chữ. Khoản 1 Điều 113 Hiến pháp 2013 chỉ quy định Hội đồng nhân dân là \"cơ quan quyền lực nhà nước ở địa phương\"; cụm \"cao nhất\" dùng cho Quốc hội (Điều 69). (Nhận định trong bộ câu hỏi ôn tập Luật Hiến pháp, Drive HLU.)"
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quốc hội và Hội đồng nhân dân là cơ quan quyền lực nhà nước cao nhất.",
+   "answer": false,
+   "explain": "Sai. Chỉ Quốc hội là cơ quan quyền lực nhà nước cao nhất (Điều 69); Hội đồng nhân dân là cơ quan quyền lực nhà nước ở địa phương (khoản 1 Điều 113). (Nhận định trong bộ câu hỏi ôn tập Luật Hiến pháp, Drive HLU.)"
   }
  ]
 }

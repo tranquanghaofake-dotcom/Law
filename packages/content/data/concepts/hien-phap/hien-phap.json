@@ -134,6 +134,13 @@
     "bộ máy nhà nước",
     "hiệu lực pháp lý cao nhất"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hiến pháp chỉ xuất hiện trong hình thức chính thể cộng hòa.",
+   "answer": false,
+   "explain": "Sai. Các nước quân chủ lập hiến (như Nhật Bản, Thái Lan, Tây Ban Nha) vẫn có hiến pháp. (Nhận định trong bộ câu hỏi ôn tập Luật Hiến pháp, Drive HLU.)"
   }
  ]
 }

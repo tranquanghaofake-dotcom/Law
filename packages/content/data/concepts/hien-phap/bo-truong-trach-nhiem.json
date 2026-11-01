@@ -111,6 +111,13 @@
     "trách nhiệm tập thể",
     "Quốc hội"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Bộ trưởng, Thủ trưởng cơ quan ngang bộ do Thủ tướng đề nghị Quốc hội phê chuẩn nên chỉ chịu trách nhiệm trước Thủ tướng.",
+   "answer": false,
+   "explain": "Sai. Khoản 4 Điều 95 Hiến pháp 2013: Bộ trưởng, Thủ trưởng cơ quan ngang bộ chịu trách nhiệm cá nhân trước Thủ tướng Chính phủ, Chính phủ và Quốc hội về ngành, lĩnh vực được phân công phụ trách, cùng các thành viên khác chịu trách nhiệm tập thể về hoạt động của Chính phủ. (Nhận định trong bộ câu hỏi ôn tập Luật Hiến pháp, Drive HLU.)"
   }
  ]
 }

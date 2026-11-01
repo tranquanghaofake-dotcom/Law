@@ -124,6 +124,13 @@
     "chỉ công nhận quốc tịch Việt Nam",
     "chức vụ"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Luật Quốc tịch hiện hành chính thức thừa nhận nguyên tắc hai quốc tịch.",
+   "answer": false,
+   "explain": "Sai. Điều 4 Luật Quốc tịch: Nhà nước công nhận công dân Việt Nam có một quốc tịch là quốc tịch Việt Nam, trừ trường hợp luật có quy định khác. Hai quốc tịch chỉ là ngoại lệ. (Nhận định trong bộ câu hỏi ôn tập Luật Hiến pháp, Drive HLU.)"
   }
  ]
 }

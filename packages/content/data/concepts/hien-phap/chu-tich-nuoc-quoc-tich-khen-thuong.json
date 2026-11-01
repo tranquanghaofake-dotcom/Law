@@ -111,6 +111,13 @@
     "đặc xá",
     "đại xá"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chủ tịch nước có quyền quyết định đại xá.",
+   "answer": false,
+   "explain": "Sai. Quốc hội quyết định đại xá (khoản 11 Điều 70); Chủ tịch nước quyết định đặc xá và công bố quyết định đại xá căn cứ vào nghị quyết của Quốc hội (khoản 3 Điều 88 Hiến pháp 2013). (Nhận định trong bộ câu hỏi ôn tập Luật Hiến pháp, Drive HLU.)"
   }
  ]
 }
