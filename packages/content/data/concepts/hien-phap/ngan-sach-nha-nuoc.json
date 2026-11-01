@@ -1,0 +1,116 @@
+{
+ "id": "ngan-sach-nha-nuoc",
+ "subject": "hien-phap",
+ "chapter": "nang-cao",
+ "term": "Ngân sách nhà nước và đồng tiền quốc gia",
+ "definition": "Ngân sách nhà nước gồm ngân sách trung ương và ngân sách địa phương, trong đó ngân sách trung ương giữ vai trò chủ đạo, bảo đảm nhiệm vụ chi của quốc gia. Các khoản thu, chi ngân sách nhà nước phải được dự toán và do luật định. Đơn vị tiền tệ quốc gia là Đồng Việt Nam. Nhà nước bảo đảm ổn định giá trị đồng tiền quốc gia.",
+ "plain": "Ngân sách, dự trữ quốc gia, quỹ tài chính và các nguồn tài chính công do Nhà nước thống nhất quản lý, phải sử dụng hiệu quả, công bằng, công khai, minh bạch, đúng pháp luật (khoản 1). Ngân sách gồm TRUNG ƯƠNG (giữ vai trò CHỦ ĐẠO) và ĐỊA PHƯƠNG; thu, chi phải được DỰ TOÁN và DO LUẬT ĐỊNH. Liên hệ: Quốc hội quyết định dự toán, phân bổ ngân sách trung ương, phê chuẩn quyết toán (khoản 4 Điều 70). Kiểm toán nhà nước kiểm toán việc quản lý, sử dụng tài chính công (Điều 118).",
+ "example": "Một khoản thu phí mới muốn áp dụng phải có căn cứ luật định: theo khoản 2 Điều 55 các khoản thu, chi ngân sách phải được dự toán và do luật định.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 2, khoản 3 Điều 55 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "kiem-toan-nha-nuoc",
+  "vi-tri-quoc-hoi",
+  "so-huu-toan-dan"
+ ],
+ "keywords": [
+  "ngân sách trung ương chủ đạo",
+  "dự toán và do luật định",
+  "Đồng Việt Nam",
+  "công khai, minh bạch"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 2 Điều 55, ngân sách nào giữ vai trò chủ đạo?",
+   "options": [
+    "Ngân sách trung ương",
+    "Ngân sách địa phương",
+    "Ngân sách cấp xã",
+    "Quỹ dự trữ quốc gia"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 55.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 55 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đơn vị tiền tệ quốc gia theo khoản 3 Điều 55 là gì?",
+   "options": [
+    "Đồng Việt Nam",
+    "Đô la Mỹ",
+    "Vàng",
+    "Không quy định trong Hiến pháp"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 55.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 55 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quốc hội",
+   "right": "Kiểm toán nhà nước",
+   "cases": [
+    {
+     "text": "Quyết định dự toán ngân sách nhà nước",
+     "answer": "left"
+    },
+    {
+     "text": "Kiểm toán việc quản lý, sử dụng tài chính, tài sản công",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 4 Điều 70; Điều 118."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ngân sách nhà nước gồm ngân sách {{trung ương}} và ngân sách địa phương. Các khoản thu, chi ngân sách nhà nước phải được {{dự toán}} và do luật định.",
+   "bank_extra": [
+    "tư nhân",
+    "bí mật"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhà nước bảo đảm ổn định giá trị {{đồng tiền quốc gia}}.",
+   "bank_extra": [
+    "vàng",
+    "ngoại tệ"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo Hiến pháp 2013, các khoản thu, chi ngân sách nhà nước có thể do Chính phủ tự đặt ra không cần luật.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 55: phải được dự toán và do luật định."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quy định của Hiến pháp 2013 về ngân sách nhà nước.",
+   "model": "Ngân sách, dự trữ quốc gia, quỹ tài chính công do Nhà nước thống nhất quản lý, sử dụng hiệu quả, công bằng, công khai, minh bạch (khoản 1); gồm ngân sách trung ương (chủ đạo) và địa phương, thu chi phải dự toán, do luật định (khoản 2); Đồng Việt Nam là đơn vị tiền tệ (khoản 3).",
+   "keywords": [
+    "trung ương",
+    "dự toán",
+    "luật định",
+    "Đồng Việt Nam"
+   ]
+  }
+ ]
+}

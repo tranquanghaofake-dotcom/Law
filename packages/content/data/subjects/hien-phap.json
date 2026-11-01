@@ -256,6 +256,31 @@
           ]
         }
       ]
+    },
+    {
+      "id": "nang-cao",
+      "title": "Nâng cao: Chế độ kinh tế, đất đai, tài chính, môi trường và Kiểm toán nhà nước",
+      "advanced": true,
+      "lessons": [
+        {
+          "id": "hp-nc-1",
+          "title": "Kinh tế, sở hữu toàn dân, đất đai",
+          "concepts": [
+            "kinh-te-thi-truong-dinh-huong-xhcn",
+            "so-huu-toan-dan",
+            "quyen-su-dung-dat-thu-hoi"
+          ]
+        },
+        {
+          "id": "hp-nc-2",
+          "title": "Ngân sách, môi trường, Kiểm toán nhà nước",
+          "concepts": [
+            "ngan-sach-nha-nuoc",
+            "bao-ve-moi-truong",
+            "kiem-toan-nha-nuoc"
+          ]
+        }
+      ]
     }
   ]
 }

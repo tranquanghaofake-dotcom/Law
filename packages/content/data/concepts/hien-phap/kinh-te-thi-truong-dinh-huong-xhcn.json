@@ -1,0 +1,115 @@
+{
+ "id": "kinh-te-thi-truong-dinh-huong-xhcn",
+ "subject": "hien-phap",
+ "chapter": "nang-cao",
+ "term": "Nền kinh tế thị trường định hướng xã hội chủ nghĩa",
+ "definition": "Nền kinh tế Việt Nam là nền kinh tế thị trường định hướng xã hội chủ nghĩa với nhiều hình thức sở hữu, nhiều thành phần kinh tế; kinh tế nhà nước giữ vai trò chủ đạo. Các thành phần kinh tế đều là bộ phận cấu thành quan trọng của nền kinh tế quốc dân. Các chủ thể thuộc các thành phần kinh tế bình đẳng, hợp tác và cạnh tranh theo pháp luật.",
+ "plain": "Hiến pháp 2013 lần đầu dùng thuật ngữ \"kinh tế THỊ TRƯỜNG định hướng xã hội chủ nghĩa\" (Hiến pháp 1992 dùng \"kinh tế hàng hóa nhiều thành phần theo cơ chế thị trường\"). Ba điểm: nhiều hình thức sở hữu, nhiều thành phần kinh tế; kinh tế nhà nước giữ vai trò CHỦ ĐẠO; các thành phần kinh tế BÌNH ĐẲNG, hợp tác, cạnh tranh theo pháp luật. Khoản 3: tài sản hợp pháp của cá nhân, tổ chức đầu tư, kinh doanh được bảo hộ, không bị quốc hữu hóa. Phần này thuộc Chương III Hiến pháp, mục lục giáo trình của môn không có chương riêng nên xếp vào Nâng cao.",
+ "example": "Một doanh nghiệp tư nhân và một doanh nghiệp nhà nước cùng dự thầu một gói thầu: theo khoản 2 Điều 51, hai bên bình đẳng và cạnh tranh theo pháp luật.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 51 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "so-huu-toan-dan",
+  "hien-phap-1992"
+ ],
+ "keywords": [
+  "kinh tế thị trường định hướng xã hội chủ nghĩa",
+  "kinh tế nhà nước chủ đạo",
+  "bình đẳng, hợp tác, cạnh tranh",
+  "không bị quốc hữu hóa"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 1 Điều 51 Hiến pháp 2013, thành phần kinh tế nào giữ vai trò chủ đạo?",
+   "options": [
+    "Kinh tế nhà nước",
+    "Kinh tế tư nhân",
+    "Kinh tế tập thể",
+    "Kinh tế có vốn đầu tư nước ngoài"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 51.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 51 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 2 Điều 51, quan hệ giữa các chủ thể thuộc các thành phần kinh tế là gì?",
+   "options": [
+    "Bình đẳng, hợp tác và cạnh tranh theo pháp luật",
+    "Kinh tế tư nhân phụ thuộc kinh tế nhà nước",
+    "Chỉ hợp tác, không cạnh tranh",
+    "Cạnh tranh không giới hạn"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 51.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 51 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hiến pháp 1992",
+   "right": "Hiến pháp 2013",
+   "cases": [
+    {
+     "text": "Kinh tế hàng hóa nhiều thành phần theo cơ chế thị trường",
+     "answer": "left"
+    },
+    {
+     "text": "Kinh tế thị trường định hướng xã hội chủ nghĩa",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 15 Hiến pháp 1992; khoản 1 Điều 51 Hiến pháp 2013."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nền kinh tế Việt Nam là nền kinh tế {{thị trường}} định hướng xã hội chủ nghĩa; kinh tế {{nhà nước}} giữ vai trò chủ đạo.",
+   "bank_extra": [
+    "kế hoạch hóa",
+    "tư nhân"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tài sản hợp pháp của cá nhân, tổ chức đầu tư, sản xuất, kinh doanh được pháp luật bảo hộ và không bị {{quốc hữu hóa}}.",
+   "bank_extra": [
+    "đánh thuế",
+    "kiểm toán"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo Hiến pháp 2013, kinh tế tư nhân không phải là bộ phận cấu thành quan trọng của nền kinh tế quốc dân.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 51: các thành phần kinh tế đều là bộ phận cấu thành quan trọng."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quy định của Hiến pháp 2013 về mô hình kinh tế.",
+   "model": "Kinh tế độc lập, tự chủ, hội nhập (Điều 50); kinh tế thị trường định hướng xã hội chủ nghĩa, nhiều hình thức sở hữu, nhiều thành phần, kinh tế nhà nước chủ đạo; các thành phần bình đẳng, hợp tác, cạnh tranh theo pháp luật; tài sản hợp pháp được bảo hộ, không bị quốc hữu hóa (Điều 51).",
+   "keywords": [
+    "thị trường",
+    "chủ đạo",
+    "bình đẳng",
+    "quốc hữu hóa"
+   ]
+  }
+ ]
+}
