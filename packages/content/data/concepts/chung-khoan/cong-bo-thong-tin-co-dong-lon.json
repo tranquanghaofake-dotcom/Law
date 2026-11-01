@@ -1,0 +1,130 @@
+{
+ "id": "cong-bo-thong-tin-co-dong-lon",
+ "subject": "chung-khoan",
+ "chapter": "c9-quan-ly-nha-nuoc",
+ "term": "Công bố thông tin của cổ đông lớn",
+ "definition": "Tổ chức, cá nhân, nhóm người có liên quan, nhóm nhà đầu tư nước ngoài có liên quan phải công bố thông tin khi trở thành hoặc không còn là cổ đông lớn của công ty đại chúng, công ty đầu tư chứng khoán đại chúng. Tổ chức, cá nhân, nhóm người có liên quan, nhóm nhà đầu tư nước ngoài có liên quan là cổ đông lớn phải công bố thông tin khi có thay đổi về số lượng cổ phiếu sở hữu qua các ngưỡng 1% số cổ phiếu có quyền biểu quyết của công ty đại chúng, công ty đầu tư chứng khoán đại chúng.",
+ "plain": "Cổ đông lớn là người sở hữu từ 5% cổ phiếu có quyền biểu quyết (khoản 18 Điều 4), tính cả nhóm người có liên quan. Phải công bố khi vượt lên hoặc rơi xuống dưới 5%, và mỗi lần thay đổi qua một ngưỡng 1% (6%, 7%…). Mục đích: thị trường biết ai đang gom hoặc thoái vốn. Ngoại lệ: tỷ lệ thay đổi do công ty mua lại cổ phiếu quỹ hoặc phát hành thêm; quỹ ETF hoán đổi.",
+ "example": "Quỹ Q đang nắm 5,8% cổ phiếu công ty R, mua thêm lên 6,3%: vượt ngưỡng 6% nên phải công bố thông tin. Nếu tỷ lệ của Q tăng chỉ vì R mua lại cổ phiếu quỹ thì không phải công bố theo khoản 3 Điều 127.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 127 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "doi-tuong-cong-bo-thong-tin",
+  "nguoi-noi-bo",
+  "cong-ty-dai-chung"
+ ],
+ "keywords": [
+  "cổ đông lớn từ 5%",
+  "ngưỡng 1%",
+  "nhóm người có liên quan",
+  "ngoại lệ mua lại, phát hành thêm"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 18 Điều 4, cổ đông lớn là cổ đông sở hữu từ bao nhiêu cổ phiếu có quyền biểu quyết?",
+   "options": [
+    "5% trở lên",
+    "10% trở lên",
+    "1% trở lên",
+    "20% trở lên"
+   ],
+   "answer": 0,
+   "explain": "Khoản 18 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 18 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Cổ đông lớn phải công bố thông tin khi số cổ phiếu sở hữu thay đổi qua ngưỡng nào?",
+   "options": [
+    "Các ngưỡng 1% số cổ phiếu có quyền biểu quyết",
+    "Các ngưỡng 5%",
+    "Các ngưỡng 10%",
+    "Mỗi giao dịch dù nhỏ"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 127.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 127 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Phải công bố",
+   "right": "Không phải công bố theo Điều 127",
+   "cases": [
+    {
+     "text": "Cổ đông từ 4,8% mua lên 5,1%",
+     "answer": "left"
+    },
+    {
+     "text": "Cổ đông lớn từ 7,2% bán xuống 6,8%",
+     "answer": "left"
+    },
+    {
+     "text": "Tỷ lệ tăng do công ty đại chúng mua lại cổ phiếu của chính mình",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1, 2, 3 Điều 127."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tổ chức, cá nhân phải công bố thông tin khi trở thành hoặc không còn là {{cổ đông lớn}}; cổ đông lớn phải công bố khi thay đổi số cổ phiếu sở hữu qua các ngưỡng {{1%}}.",
+   "bank_extra": [
+    "người nội bộ",
+    "5%"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Khi tính tỷ lệ sở hữu để xác định nghĩa vụ công bố thông tin, phải tính cả nhóm {{người có liên quan}}.",
+   "bank_extra": [
+    "nhân viên",
+    "khách hàng"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Ông A nắm 3%, vợ ông A nắm 2,5% cổ phiếu có quyền biểu quyết của công ty đại chúng S. Nhóm này có phải công bố thông tin cổ đông lớn không?",
+   "options": [
+    "Có, vì nhóm người có liên quan cùng sở hữu 5,5%, từ 5% trở lên",
+    "Không, vì mỗi người đều dưới 5%",
+    "Không, vì vợ chồng là tài sản riêng",
+    "Chỉ phải công bố khi đạt 10%"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 127 tính \"nhóm người có liên quan\"; vợ, chồng là người có liên quan (điểm d khoản 46 Điều 4).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 127 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày nghĩa vụ công bố thông tin của cổ đông lớn.",
+   "model": "Cổ đông lớn: sở hữu từ 5% cổ phiếu có quyền biểu quyết (khoản 18 Điều 4), tính cả nhóm người có liên quan. Phải công bố khi trở thành hoặc không còn là cổ đông lớn; khi thay đổi qua mỗi ngưỡng 1%. Ngoại lệ: thay đổi do công ty mua lại cổ phiếu, phát hành thêm; ETF hoán đổi (Điều 127).",
+   "keywords": [
+    "5%",
+    "1%",
+    "người có liên quan",
+    "ngoại lệ"
+   ]
+  }
+ ]
+}

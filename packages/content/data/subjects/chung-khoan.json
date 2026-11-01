@@ -226,6 +226,34 @@
           ]
         }
       ]
+    },
+    {
+      "id": "c9-quan-ly-nha-nuoc",
+      "title": "Chương IX. Quản lí nhà nước về chứng khoán và thị trường chứng khoán",
+      "lessons": [
+        {
+          "id": "ck9-1",
+          "title": "Cơ quan quản lý nhà nước và chính sách",
+          "concepts": [
+            "quan-ly-nha-nuoc-chung-khoan",
+            "uy-ban-chung-khoan-nha-nuoc",
+            "bien-phap-bao-dam-an-ninh-thi-truong",
+            "to-chuc-xa-hoi-nghe-nghiep-chung-khoan",
+            "chinh-sach-phat-trien-thi-truong"
+          ]
+        },
+        {
+          "id": "ck9-2",
+          "title": "Công ty đại chúng và công bố thông tin",
+          "concepts": [
+            "cong-ty-dai-chung",
+            "doi-tuong-cong-bo-thong-tin",
+            "nguyen-tac-cong-bo-thong-tin",
+            "cong-bo-thong-tin-co-dong-lon",
+            "nguoi-noi-bo"
+          ]
+        }
+      ]
     }
   ]
 }

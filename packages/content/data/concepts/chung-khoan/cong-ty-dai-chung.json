@@ -1,0 +1,128 @@
+{
+ "id": "cong-ty-dai-chung",
+ "subject": "chung-khoan",
+ "chapter": "c9-quan-ly-nha-nuoc",
+ "term": "Công ty đại chúng",
+ "definition": "Công ty đại chúng là công ty cổ phần thuộc một trong hai trường hợp sau đây: a) Công ty có vốn điều lệ đã góp từ 30 tỷ đồng trở lên, có vốn chủ sở hữu từ 30 tỷ đồng trở lên và có tối thiểu 10% số cổ phiếu có quyền biểu quyết do ít nhất 100 nhà đầu tư không phải cổ đông lớn nắm giữ; b) Công ty đã thực hiện chào bán thành công cổ phiếu lần đầu ra công chúng thông qua đăng ký với Ủy ban Chứng khoán Nhà nước theo quy định tại khoản 1 Điều 16 của Luật này.",
+ "plain": "Công ty đại chúng là đối tượng trung tâm của quản lý nhà nước về chứng khoán: phải công bố thông tin, tuân thủ quản trị công ty, phải đăng ký, lưu ký cổ phiếu tập trung và niêm yết hoặc đăng ký giao dịch. Có 2 con đường trở thành công ty đại chúng: tự đáp ứng điều kiện về vốn và cơ cấu cổ đông (phải nộp hồ sơ đăng ký trong 90 ngày), hoặc IPO thành công.",
+ "example": "Công ty cổ phần M có vốn điều lệ đã góp 50 tỷ, vốn chủ sở hữu 60 tỷ, 12% cổ phiếu có quyền biểu quyết do 150 nhà đầu tư nhỏ nắm: dù chưa IPO, M đã là công ty đại chúng và phải nộp hồ sơ đăng ký với Ủy ban trong 90 ngày.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 32 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "dieu-kien-chao-ban-co-phieu-lan-dau",
+  "doi-tuong-cong-bo-thong-tin",
+  "dang-ky-chung-khoan"
+ ],
+ "keywords": [
+  "công ty cổ phần",
+  "30 tỷ vốn điều lệ và vốn chủ sở hữu",
+  "10% cho 100 nhà đầu tư",
+  "IPO thành công"
+ ],
+ "note": "Luật 56/2024/QH15 (hiệu lực 01/01/2025) sửa điểm a khoản 1 Điều 32 (theo chú thích của VBHN 102/VBHN-VPQH). Bản hiện hành đòi cả vốn điều lệ đã góp từ 30 tỷ đồng và vốn chủ sở hữu từ 30 tỷ đồng. Khi đọc giáo trình 2021, đối chiếu xem giáo trình có nêu điều kiện vốn chủ sở hữu hay không.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Công ty đại chúng phải là loại hình doanh nghiệp nào?",
+   "options": [
+    "Công ty cổ phần",
+    "Công ty TNHH",
+    "Doanh nghiệp tư nhân",
+    "Công ty hợp danh"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 32.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 32 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Công ty cổ phần tự đáp ứng điều kiện điểm a khoản 1 Điều 32 phải nộp hồ sơ đăng ký công ty đại chúng trong bao lâu?",
+   "options": [
+    "90 ngày",
+    "30 ngày",
+    "15 ngày",
+    "12 tháng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 32.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 32 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Trở thành công ty đại chúng theo điểm a",
+   "right": "Trở thành công ty đại chúng theo điểm b",
+   "cases": [
+    {
+     "text": "Vốn điều lệ đã góp và vốn chủ sở hữu từ 30 tỷ, 10% cổ phiếu do ít nhất 100 nhà đầu tư không phải cổ đông lớn nắm",
+     "answer": "left"
+    },
+    {
+     "text": "Chào bán thành công cổ phiếu lần đầu ra công chúng",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 32."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công ty đại chúng theo điểm a khoản 1 Điều 32 có vốn điều lệ đã góp từ {{30 tỷ}} đồng trở lên và có tối thiểu {{10%}} số cổ phiếu có quyền biểu quyết do ít nhất 100 nhà đầu tư không phải cổ đông lớn nắm giữ.",
+   "bank_extra": [
+    "10 tỷ",
+    "15%"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ủy ban xác nhận hoàn tất việc đăng ký công ty đại chúng trong thời hạn {{15 ngày}} kể từ ngày nhận được hồ sơ đầy đủ, hợp lệ.",
+   "bank_extra": [
+    "30 ngày",
+    "90 ngày"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Công ty cổ phần N có vốn điều lệ đã góp 40 tỷ nhưng lỗ lũy kế khiến vốn chủ sở hữu chỉ còn 20 tỷ; 15% cổ phiếu do 200 nhà đầu tư nhỏ nắm; chưa IPO. Theo luật hiện hành, N có phải công ty đại chúng không?",
+   "options": [
+    "Không, vì vốn chủ sở hữu chưa đạt 30 tỷ đồng",
+    "Có, vì vốn điều lệ đã góp trên 30 tỷ",
+    "Có, vì có trên 100 nhà đầu tư",
+    "Có, nếu Hội đồng quản trị quyết định"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 32 (sửa đổi bởi Luật 56/2024/QH15) đòi cả vốn chủ sở hữu từ 30 tỷ đồng.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 32 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm công ty đại chúng và hai trường hợp trở thành công ty đại chúng.",
+   "model": "Công ty cổ phần thuộc một trong hai trường hợp: (a) vốn điều lệ đã góp từ 30 tỷ, vốn chủ sở hữu từ 30 tỷ, tối thiểu 10% cổ phiếu có quyền biểu quyết do ít nhất 100 nhà đầu tư không phải cổ đông lớn nắm (nộp hồ sơ đăng ký trong 90 ngày); (b) IPO thành công qua đăng ký với Ủy ban (Điều 32).",
+   "keywords": [
+    "công ty cổ phần",
+    "30 tỷ",
+    "10%",
+    "100 nhà đầu tư",
+    "IPO"
+   ]
+  }
+ ]
+}

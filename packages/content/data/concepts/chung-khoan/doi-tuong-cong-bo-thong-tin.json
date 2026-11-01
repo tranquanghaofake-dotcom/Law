@@ -1,0 +1,120 @@
+{
+ "id": "doi-tuong-cong-bo-thong-tin",
+ "subject": "chung-khoan",
+ "chapter": "c9-quan-ly-nha-nuoc",
+ "term": "Đối tượng công bố thông tin",
+ "definition": "Các đối tượng công bố thông tin bao gồm: a) Công ty đại chúng; b) Tổ chức phát hành trái phiếu doanh nghiệp ra công chúng; c) Tổ chức niêm yết trái phiếu doanh nghiệp; d) Công ty chứng khoán, công ty quản lý quỹ đầu tư chứng khoán, chi nhánh công ty chứng khoán và công ty quản lý quỹ nước ngoài tại Việt Nam; (…) h) Người nội bộ của công ty đại chúng, người nội bộ của quỹ đại chúng, công ty đầu tư chứng khoán đại chúng theo quy định tại khoản 45 Điều 4 của Luật này và người có liên quan của người nội bộ;",
+ "plain": "Công bố thông tin là công cụ quản lý chủ yếu để thị trường \"minh bạch\". Không chỉ doanh nghiệp, mà cả hạ tầng (Sở giao dịch, Tổng công ty lưu ký), cổ đông lớn (từ 5%), cổ đông sáng lập trong thời gian bị hạn chế chuyển nhượng, người nội bộ và người có liên quan, nhóm nhà đầu tư nước ngoài có liên quan từ 5% đều phải công bố. Bộ trưởng Bộ Tài chính quy định chi tiết.",
+ "example": "Một thành viên Hội đồng quản trị công ty niêm yết (người nội bộ) muốn bán 100.000 cổ phiếu: phải công bố thông tin trước và sau giao dịch (khoản 1 Điều 128).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 118 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nguyen-tac-cong-bo-thong-tin",
+  "cong-bo-thong-tin-co-dong-lon",
+  "nguoi-noi-bo"
+ ],
+ "keywords": [
+  "công ty đại chúng",
+  "cổ đông lớn từ 5%",
+  "người nội bộ",
+  "Sở giao dịch, Tổng công ty lưu ký"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chủ thể nào KHÔNG thuộc đối tượng công bố thông tin theo khoản 1 Điều 118?",
+   "options": [
+    "Nhà đầu tư cá nhân nắm 0,5% cổ phiếu, không phải người nội bộ",
+    "Công ty đại chúng",
+    "Người nội bộ của công ty đại chúng",
+    "Sở giao dịch chứng khoán Việt Nam"
+   ],
+   "answer": 0,
+   "explain": "Nhà đầu tư nhỏ không phải người nội bộ, không phải cổ đông lớn thì không thuộc danh sách.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 118 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Cổ đông sở hữu từ bao nhiêu phần trăm cổ phiếu có quyền biểu quyết của công ty đại chúng thì là đối tượng công bố thông tin?",
+   "options": [
+    "5%",
+    "1%",
+    "10%",
+    "20%"
+   ],
+   "answer": 0,
+   "explain": "Điểm e khoản 1 Điều 118; khoản 18 Điều 4 (cổ đông lớn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 118 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Là đối tượng công bố thông tin",
+   "right": "Không phải đối tượng",
+   "cases": [
+    {
+     "text": "Tổ chức niêm yết trái phiếu doanh nghiệp",
+     "answer": "left"
+    },
+    {
+     "text": "Cổ đông sáng lập trong thời gian bị hạn chế chuyển nhượng",
+     "answer": "left"
+    },
+    {
+     "text": "Khách hàng gửi tiết kiệm tại ngân hàng niêm yết",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 118."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đối tượng công bố thông tin gồm công ty {{đại chúng}}, tổ chức phát hành trái phiếu doanh nghiệp ra công chúng, người {{nội bộ}} và người có liên quan của người nội bộ…",
+   "bank_extra": [
+    "tư nhân",
+    "ngoại bộ"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bộ trưởng {{Bộ Tài chính}} quy định chi tiết việc công bố thông tin của từng đối tượng.",
+   "bank_extra": [
+    "Bộ Tư pháp",
+    "Bộ Công an"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Sở giao dịch chứng khoán Việt Nam và Tổng công ty lưu ký và bù trừ cũng là đối tượng công bố thông tin.",
+   "answer": true,
+   "explain": "Đúng. Điểm đ khoản 1 Điều 118."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Kể các đối tượng công bố thông tin theo Điều 118.",
+   "model": "Công ty đại chúng; tổ chức phát hành trái phiếu doanh nghiệp ra công chúng; tổ chức niêm yết trái phiếu doanh nghiệp; công ty chứng khoán, công ty quản lý quỹ, chi nhánh nước ngoài; Sở giao dịch và công ty con, Tổng công ty lưu ký; cổ đông lớn, nhóm người có liên quan sở hữu từ 5%; cổ đông sáng lập trong thời gian hạn chế chuyển nhượng; người nội bộ và người có liên quan; nhóm nhà đầu tư nước ngoài có liên quan từ 5%; đối tượng khác do Bộ trưởng Bộ Tài chính quy định.",
+   "keywords": [
+    "công ty đại chúng",
+    "cổ đông lớn",
+    "người nội bộ",
+    "Sở giao dịch"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,120 @@
+{
+ "id": "uy-ban-chung-khoan-nha-nuoc",
+ "subject": "chung-khoan",
+ "chapter": "c9-quan-ly-nha-nuoc",
+ "term": "Ủy ban Chứng khoán Nhà nước",
+ "definition": "Ủy ban Chứng khoán Nhà nước là cơ quan thuộc Bộ Tài chính thực hiện chức năng tham mưu, giúp Bộ trưởng Bộ Tài chính quản lý nhà nước về chứng khoán và thị trường chứng khoán, tổ chức thực thi pháp luật về chứng khoán và thị trường chứng khoán theo phân cấp, ủy quyền của Bộ trưởng Bộ Tài chính và có các nhiệm vụ, quyền hạn sau đây:",
+ "plain": "Ủy ban là \"trọng tài\" trực tiếp của thị trường: cấp, thu hồi giấy phép, chứng chỉ hành nghề, Giấy chứng nhận chào bán; quản lý, thanh tra, giám sát Sở giao dịch, Tổng công ty lưu ký; chấp thuận loại chứng khoán, phương thức giao dịch mới; thanh tra, xử phạt hành chính; áp dụng biện pháp bảo đảm an ninh thị trường. Ủy ban là CƠ QUAN NHÀ NƯỚC, khác Sở giao dịch và Tổng công ty lưu ký (là doanh nghiệp).",
+ "example": "Gần như mọi \"giấy tờ\" quan trọng trong môn này đều do Ủy ban cấp: Giấy chứng nhận đăng ký chào bán, giấy phép công ty chứng khoán, chứng chỉ hành nghề, Giấy chứng nhận đăng ký hoạt động lưu ký.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 9 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quan-ly-nha-nuoc-chung-khoan",
+  "so-giao-dich-chung-khoan-viet-nam"
+ ],
+ "keywords": [
+  "cơ quan thuộc Bộ Tài chính",
+  "tham mưu, giúp Bộ trưởng",
+  "cấp, thu hồi giấy phép",
+  "thanh tra, xử phạt"
+ ],
+ "note": "Luật 56/2024/QH15 (hiệu lực 01/01/2025) sửa điểm d khoản 1 Điều 9: Ủy ban quản lý, thanh tra, kiểm tra, giám sát cả công ty con của Sở giao dịch chứng khoán Việt Nam và của Tổng công ty lưu ký và bù trừ. Giáo trình 2021 chưa nêu công ty con.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 1 Điều 9, Ủy ban Chứng khoán Nhà nước có địa vị pháp lý là gì?",
+   "options": [
+    "Cơ quan thuộc Bộ Tài chính",
+    "Doanh nghiệp nhà nước",
+    "Cơ quan thuộc Chính phủ ngang bộ",
+    "Tổ chức xã hội - nghề nghiệp"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 9.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 9 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai quy định chức năng, nhiệm vụ cụ thể và cơ cấu tổ chức của Ủy ban Chứng khoán Nhà nước?",
+   "options": [
+    "Thủ tướng Chính phủ",
+    "Quốc hội",
+    "Bộ trưởng Bộ Tài chính",
+    "Chủ tịch nước"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 9.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 9 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Ủy ban Chứng khoán Nhà nước",
+   "right": "Sở giao dịch chứng khoán Việt Nam",
+   "cases": [
+    {
+     "text": "Cơ quan nhà nước thuộc Bộ Tài chính",
+     "answer": "left"
+    },
+    {
+     "text": "Doanh nghiệp, Nhà nước nắm trên 50% vốn",
+     "answer": "right"
+    },
+    {
+     "text": "Xử phạt vi phạm hành chính trong lĩnh vực chứng khoán",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 9 và Điều 43."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ủy ban Chứng khoán Nhà nước là cơ quan thuộc {{Bộ Tài chính}}, thực hiện chức năng {{tham mưu}}, giúp Bộ trưởng quản lý nhà nước về chứng khoán.",
+   "bank_extra": [
+    "Chính phủ",
+    "xét xử"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ủy ban Chứng khoán Nhà nước thanh tra, kiểm tra, giải quyết khiếu nại, tố cáo và xử lý vi phạm {{hành chính}} trong lĩnh vực chứng khoán.",
+   "bank_extra": [
+    "hình sự",
+    "dân sự"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Ủy ban Chứng khoán Nhà nước chấp thuận việc đưa vào giao dịch các loại chứng khoán mới.",
+   "answer": true,
+   "explain": "Đúng. Điểm đ khoản 1 Điều 9."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày địa vị pháp lý và các nhóm nhiệm vụ chính của Ủy ban Chứng khoán Nhà nước.",
+   "model": "Cơ quan thuộc Bộ Tài chính, tham mưu giúp Bộ trưởng quản lý nhà nước, tổ chức thực thi pháp luật về chứng khoán (khoản 1 Điều 9). Nhiệm vụ: trình văn bản, chiến lược; tổ chức, phát triển, trực tiếp quản lý, giám sát thị trường; cấp, thu hồi giấy phép, chứng chỉ; quản lý, thanh tra Sở giao dịch, Tổng công ty lưu ký và công ty con; chấp thuận chứng khoán, phương thức giao dịch mới; thanh tra, xử phạt hành chính; áp dụng biện pháp bảo đảm an ninh thị trường.",
+   "keywords": [
+    "thuộc Bộ Tài chính",
+    "giấy phép",
+    "giám sát",
+    "xử phạt"
+   ]
+  }
+ ]
+}

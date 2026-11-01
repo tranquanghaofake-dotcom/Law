@@ -1,0 +1,119 @@
+{
+ "id": "bien-phap-bao-dam-an-ninh-thi-truong",
+ "subject": "chung-khoan",
+ "chapter": "c9-quan-ly-nha-nuoc",
+ "term": "Biện pháp bảo đảm an ninh, an toàn thị trường chứng khoán",
+ "definition": "Biện pháp bảo đảm an ninh, an toàn thị trường chứng khoán bao gồm: a) Giám sát an ninh, an toàn thị trường chứng khoán; b) Ứng phó, khắc phục sự cố, sự kiện, biến động ảnh hưởng đến an toàn, ổn định và tính toàn vẹn của thị trường chứng khoán; c) Tạm ngừng, đình chỉ giao dịch đối với một hoặc một số chứng khoán niêm yết, đăng ký giao dịch trên hệ thống giao dịch chứng khoán; (…) g) Phong tỏa tài khoản chứng khoán, yêu cầu người có thẩm quyền phong tỏa tài khoản tiền có liên quan đến hành vi vi phạm pháp luật về chứng khoán và thị trường chứng khoán.",
+ "plain": "Bộ \"công cụ khẩn cấp\" của Nhà nước: giám sát; ứng phó sự cố; tạm ngừng giao dịch một mã; tạm ngừng hoạt động của Sở giao dịch hoặc Tổng công ty lưu ký; cấm đảm nhiệm chức vụ, cấm hoạt động chứng khoán có thời hạn hoặc vĩnh viễn; phong tỏa tài khoản chứng khoán và yêu cầu phong tỏa tài khoản tiền liên quan vi phạm. Chính phủ quy định chi tiết.",
+ "example": "Khi phát hiện một nhóm tài khoản thao túng giá cổ phiếu, cơ quan có thẩm quyền có thể phong tỏa tài khoản chứng khoán của nhóm này và yêu cầu phong tỏa tài khoản tiền liên quan (điểm g khoản 1 Điều 7).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 7 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "uy-ban-chung-khoan-nha-nuoc",
+  "tam-ngung-dinh-chi-giao-dich-so"
+ ],
+ "keywords": [
+  "giám sát",
+  "tạm ngừng, đình chỉ",
+  "cấm đảm nhiệm chức vụ",
+  "phong tỏa tài khoản"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Biện pháp nào thuộc khoản 1 Điều 7 về bảo đảm an ninh, an toàn thị trường chứng khoán?",
+   "options": [
+    "Phong tỏa tài khoản chứng khoán liên quan đến vi phạm",
+    "Quốc hữu hóa công ty niêm yết",
+    "Ấn định giá trần cho mọi cổ phiếu",
+    "Cấm nhà đầu tư nước ngoài giao dịch"
+   ],
+   "answer": 0,
+   "explain": "Điểm g khoản 1 Điều 7.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 7 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai quy định chi tiết việc áp dụng các biện pháp bảo đảm an ninh, an toàn thị trường chứng khoán?",
+   "options": [
+    "Chính phủ",
+    "Sở giao dịch chứng khoán",
+    "Bộ Công an",
+    "Quốc hội"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 7.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 7 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Biện pháp đối với thị trường, hạ tầng",
+   "right": "Biện pháp đối với cá nhân, tổ chức vi phạm",
+   "cases": [
+    {
+     "text": "Tạm ngừng hoạt động giao dịch của Sở giao dịch",
+     "answer": "left"
+    },
+    {
+     "text": "Cấm đảm nhiệm chức vụ tại công ty chứng khoán có thời hạn hoặc vĩnh viễn",
+     "answer": "right"
+    },
+    {
+     "text": "Phong tỏa tài khoản chứng khoán",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 7."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Biện pháp bảo đảm an ninh, an toàn thị trường chứng khoán gồm: {{giám sát}} an ninh, an toàn thị trường; ứng phó, khắc phục sự cố; tạm ngừng, đình chỉ giao dịch; {{phong tỏa}} tài khoản chứng khoán…",
+   "bank_extra": [
+    "khen thưởng",
+    "niêm yết"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Cơ quan có thẩm quyền có thể cấm thực hiện các hoạt động về chứng khoán có thời hạn hoặc {{vĩnh viễn}}.",
+   "bank_extra": [
+    "tạm thời 1 ngày",
+    "tự nguyện"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Phong tỏa tài khoản tiền tại ngân hàng liên quan đến vi phạm chứng khoán do Ủy ban Chứng khoán tự thực hiện trực tiếp theo Điều 7.",
+   "answer": false,
+   "explain": "Sai. Điểm g khoản 1 Điều 7: phong tỏa tài khoản CHỨNG KHOÁN; với tài khoản TIỀN thì YÊU CẦU người có thẩm quyền phong tỏa."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Kể các biện pháp bảo đảm an ninh, an toàn thị trường chứng khoán theo Điều 7.",
+   "model": "Giám sát an ninh, an toàn; ứng phó, khắc phục sự cố, biến động; tạm ngừng, đình chỉ giao dịch một hoặc một số chứng khoán; tạm ngừng, đình chỉ, khôi phục hoạt động của Sở giao dịch và công ty con; của Tổng công ty lưu ký và công ty con; cấm đảm nhiệm chức vụ, cấm hoạt động chứng khoán có thời hạn hoặc vĩnh viễn; phong tỏa tài khoản chứng khoán, yêu cầu phong tỏa tài khoản tiền liên quan vi phạm.",
+   "keywords": [
+    "giám sát",
+    "tạm ngừng",
+    "cấm",
+    "phong tỏa"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,117 @@
+{
+ "id": "nguoi-noi-bo",
+ "subject": "chung-khoan",
+ "chapter": "c9-quan-ly-nha-nuoc",
+ "term": "Người nội bộ và nghĩa vụ công bố thông tin giao dịch",
+ "definition": "Người nội bộ là người giữ vị trí quan trọng trong bộ máy quản trị, điều hành của doanh nghiệp, quỹ đại chúng, công ty đầu tư chứng khoán đại chúng, bao gồm:",
+ "plain": "Người nội bộ (Chủ tịch, thành viên Hội đồng quản trị, Tổng giám đốc, kế toán trưởng, người phụ trách quản trị, người được ủy quyền công bố thông tin…) là người dễ tiếp cận thông tin chưa công bố. Vì vậy họ và người có liên quan (vợ, chồng, cha mẹ, con, anh chị em…) phải công bố thông tin TRƯỚC VÀ SAU khi giao dịch cổ phiếu, chứng chỉ quỹ… của công ty (khoản 1 Điều 128). Đây là nền tảng để chống giao dịch nội gián.",
+ "example": "Kế toán trưởng công ty T biết trước lợi nhuận quý tăng mạnh nhưng chưa công bố. Vợ của kế toán trưởng mua cổ phiếu T mà không công bố thông tin trước giao dịch: vi phạm nghĩa vụ của người có liên quan của người nội bộ, và có dấu hiệu giao dịch nội gián.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 45 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "cong-bo-thong-tin-co-dong-lon",
+  "doi-tuong-cong-bo-thong-tin"
+ ],
+ "keywords": [
+  "vị trí quan trọng trong quản trị, điều hành",
+  "người có liên quan",
+  "công bố trước và sau giao dịch"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 45 Điều 4, người nội bộ là ai?",
+   "options": [
+    "Người giữ vị trí quan trọng trong bộ máy quản trị, điều hành của doanh nghiệp, quỹ đại chúng, công ty đầu tư chứng khoán đại chúng",
+    "Mọi nhân viên của công ty",
+    "Mọi cổ đông",
+    "Nhân viên công ty chứng khoán"
+   ],
+   "answer": 0,
+   "explain": "Khoản 45 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 45 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người nội bộ của công ty đại chúng phải công bố thông tin khi nào?",
+   "options": [
+    "Trước và sau giao dịch cổ phiếu của công ty (hoặc khi có thay đổi sở hữu)",
+    "Chỉ sau khi giao dịch 1 năm",
+    "Chỉ khi giao dịch trên 5%",
+    "Không phải công bố"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 128.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 128 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Người nội bộ",
+   "right": "Người có liên quan của người nội bộ",
+   "cases": [
+    {
+     "text": "Thành viên Hội đồng quản trị công ty đại chúng",
+     "answer": "left"
+    },
+    {
+     "text": "Vợ của thành viên Hội đồng quản trị",
+     "answer": "right"
+    },
+    {
+     "text": "Tổng giám đốc công ty đại chúng",
+     "answer": "left"
+    }
+   ],
+   "explain": "Khoản 45, 46 Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người nội bộ là người giữ vị trí quan trọng trong bộ máy {{quản trị}}, {{điều hành}} của doanh nghiệp, quỹ đại chúng, công ty đầu tư chứng khoán đại chúng.",
+   "bank_extra": [
+    "sản xuất",
+    "bán hàng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người nội bộ và người có liên quan phải công bố thông tin {{trước}} và sau giao dịch.",
+   "bank_extra": [
+    "thay vì",
+    "chỉ sau"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Con ruột của Tổng giám đốc công ty đại chúng không phải công bố thông tin khi mua cổ phiếu công ty vì không phải người nội bộ.",
+   "answer": false,
+   "explain": "Sai. Con đẻ là người có liên quan của người nội bộ (điểm d khoản 46 Điều 4); khoản 1 Điều 128 áp dụng cả với người có liên quan."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Định nghĩa người nội bộ và nêu nghĩa vụ công bố thông tin giao dịch.",
+   "model": "Người nội bộ là người giữ vị trí quan trọng trong bộ máy quản trị, điều hành của doanh nghiệp, quỹ đại chúng, công ty đầu tư chứng khoán đại chúng (khoản 45 Điều 4), như Chủ tịch, thành viên Hội đồng quản trị, Tổng giám đốc, kế toán trưởng. Người nội bộ và người có liên quan phải công bố thông tin trước và sau giao dịch hoặc khi thay đổi sở hữu cổ phiếu, chứng chỉ quỹ, trái phiếu chuyển đổi… (khoản 1 Điều 128); ngoại lệ ETF hoán đổi hoặc chưa đạt giá trị tối thiểu.",
+   "keywords": [
+    "quản trị, điều hành",
+    "người có liên quan",
+    "trước và sau giao dịch"
+   ]
+  }
+ ]
+}
