@@ -8,6 +8,7 @@
   import { rankFor, RANKS } from '$lib/game/rank';
   import { storage } from '$lib/store/status.svelte';
   import StreakFlame from './StreakFlame.svelte';
+  import StreakCard from '$lib/art/StreakCard.svelte';
   import RankBadge from './RankBadge.svelte';
   import Icon from '$lib/art/Icon.svelte';
   import Bookshelf from './Bookshelf.svelte';
@@ -22,7 +23,7 @@
 <div class="shell" class:has-rail={!!Rail}>
   <header class="topbar">
     <a class="brand" href="#/"><span class="mark" aria-hidden="true">§</span> Luyện Luật</a>
-    <div class="meta"><StreakFlame count={header.streak} /><RankBadge xp={header.xp} /></div>
+    <div class="meta"><StreakFlame count={header.streak} longest={header.longest} /><RankBadge xp={header.xp} /></div>
   </header>
 
   <nav class="sidenav" aria-label="Điều hướng chính">
@@ -35,7 +36,7 @@
     </ul>
     <div class="side-shelf"><p class="kicker">Tủ sách</p><Bookshelf size="side" /></div>
     <a class="me" href="#/toi">
-      <span class="flame" class:cold={header.streak === 0}><Glyph name="flame" size={16} /><span class="sr-only">Chuỗi </span>{header.streak}<span class="sr-only"> ngày,</span></span>
+      <span class="flame" class:cold={header.streak === 0}><StreakCard count={header.streak} longest={header.longest} size="mini" /><span class="sr-only">Chuỗi </span>{header.streak}<span class="sr-only"> ngày,</span></span>
       <span class="rank"><span class="seal" aria-hidden="true">§</span><span>{info.rank}</span> <span class="tier">{info.tier}</span></span>
       {#if info.nextXp}<span class="xp-line muted">còn {info.nextXp - header.xp} XP tới {RANKS[info.index + 1].name}</span>{/if}
     </a>

@@ -1,4 +1,5 @@
 <script lang="ts">
+  import StreakCard from '$lib/art/StreakCard.svelte';
   import Glyph from '$lib/art/Glyph.svelte';
   // Rail phải của trang Hôm nay (≥ 1440 px): chuỗi tuần, bậc, hẹn ôn ngày mai, dòng pháp lý (spec §3.4).
   import { header } from './header.svelte';
@@ -10,7 +11,8 @@
 
 <section class="rail-block">
   <p class="kicker">Chuỗi</p>
-  <p class="rail-big"><Glyph name="flame" size={26} /> {header.streak} <span class="muted small">ngày</span></p>
+  <StreakCard count={header.streak} longest={header.longest} />
+  <p class="rail-big">{header.streak} <span class="muted small">ngày · ngày {header.streak ? ((header.streak - 1) % 30) + 1 : 0}/30 của thẻ</span></p>
   <WeekDots days={week} />
 </section>
 <section class="rail-block">

@@ -1,4 +1,5 @@
 <script lang="ts">
+  import StreakCard from '$lib/art/StreakCard.svelte';
   import Glyph from '$lib/art/Glyph.svelte';
   import type { Concept, Level } from '$lib/content/types';
   import type { StreakEvent } from '$lib/game/streak';
@@ -22,7 +23,7 @@
   <p class="kicker">Xong phiên</p>
   <p class="score"><b>{summary.correct}</b><small>/{summary.total} đúng</small></p>
   <p class="xp">+{summary.xp} XP {#if ranked}<span class="chip">Thăng: {rankAfter.rank} {rankAfter.tier}</span>{/if}</p>
-  <p class="streak"><Glyph name="flame" /> Chuỗi {streak} ngày · {streakMsg}</p>
+  <p class="streak"><StreakCard count={streak} longest={streak} size="mini" /> Chuỗi {streak} ngày · {streakMsg}</p>
   {#if summary.levelUps.length}
     <h2>Lên bậc</h2>
     <ul class="levelups">

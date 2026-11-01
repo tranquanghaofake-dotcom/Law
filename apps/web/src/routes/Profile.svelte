@@ -1,4 +1,5 @@
 <script lang="ts">
+  import StreakCard from '$lib/art/StreakCard.svelte';
   import Bookshelf from '$lib/ui/Bookshelf.svelte';
   import Glyph from '$lib/art/Glyph.svelte';
   import SubjectArt from '$lib/art/SubjectArt.svelte';
@@ -87,7 +88,8 @@
       <div class="bar" aria-hidden="true"><span style="width:{rank.progress * 100}%"></span></div>
       {#if rank.nextXp}<p class="muted small">còn {rank.nextXp - xp} XP tới {RANKS[rank.index + 1].name}</p>{/if}
       <p class="kicker" style="margin-top:16px">Chuỗi ngày</p>
-      <p class="streak-line"><Glyph name="flame" /> <b>{streak.count}</b> ngày · dài nhất {streak.longest} · bùa giữ chuỗi {streak.freezes}/2</p>
+      <StreakCard count={streak.count} longest={streak.longest} />
+      <p class="streak-line"><b>{streak.count}</b> ngày · dài nhất {streak.longest} · bùa giữ chuỗi {streak.freezes}/2</p>
       <WeekDots days={week} />
     </section>
     <section class="card">
