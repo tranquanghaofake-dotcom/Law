@@ -12,7 +12,8 @@
   import { header } from '$lib/ui/header.svelte';
   import { storage } from '$lib/store/status.svelte';
 
-  const views = { home: Home, lesson: Lesson, review: Review, quiz: Quiz10, profile: Profile, settings: Settings } as const;
+  // subjects/subject/quizzes tạm trỏ Home cho tới Task 4 (route riêng).
+  const views = { home: Home, subjects: Home, subject: Home, quizzes: Home, lesson: Lesson, review: Review, quiz: Quiz10, profile: Profile, settings: Settings } as const;
   const View = $derived(views[route.name]);
   const inSession = $derived(route.name === 'lesson' || route.name === 'review' || route.name === 'quiz');
 
