@@ -1,0 +1,116 @@
+{
+ "id": "luc-bo-1466",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c6-trung-dai",
+ "term": "Sáu bộ và các cơ quan trung ương thời Lê Thánh Tông",
+ "definition": "Bắt đầu đặt năm phủ, sáu bộ. Đổi đặt sáu viện thành sáu tự, đổi Khâm hình viện thành Hình bộ, đều đặt chức Thượng thư ở các Lại, Hộ, Lễ, Binh, Hình, Công.",
+ "plain": "Năm 1466, Lê Thánh Tông lập SÁU BỘ: Lại (quan lại), Hộ (hộ khẩu, ruộng đất, thuế), Lễ (lễ nghi, giáo dục, thi cử), Binh (quân đội), Hình (tư pháp, xét xử), Công (xây dựng, thủ công). Mỗi bộ có THƯỢNG THƯ đứng đầu, chịu trách nhiệm trực tiếp trước vua. Cùng với năm phủ (quân sự), sáu tự (cơ quan thừa hành) và sau đó sáu khoa (giám sát), đây là bộ máy trung ương được CHUYÊN MÔN HÓA. Theo cách trình bày phổ biến của giáo trình, cải cách này bỏ bớt các chức quan đại thần trung gian giữa vua và các bộ để vua trực tiếp điều hành (tập quyền cao độ).",
+ "example": "Đối chiếu với hiện nay: Bộ Hình thời Lê gần với chức năng tư pháp, nhưng thời phong kiến xét xử và hành chính chưa tách bạch như nguyên tắc \"Tòa án thực hiện quyền tư pháp\" (Điều 102 Hiến pháp 2013).",
+ "source": {
+  "kind": "primary",
+  "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển XII (bản dịch Viện KHXH Việt Nam, NXB KHXH 1993), Kỷ nhà Lê, Thánh Tông, năm 1466, tờ 24a",
+  "url": "https://thpthiephoa1.edu.vn/wp-content/uploads/Dai-viet-su-ki-toan-thu.pdf"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hoang-trieu-quan-che-1471",
+  "luc-khoa-giam-sat",
+  "thua-tuyen-1466"
+ ],
+ "keywords": [
+  "1466",
+  "sáu bộ: Lại, Hộ, Lễ, Binh, Hình, Công",
+  "Thượng thư",
+  "năm phủ, sáu tự"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Toàn thư, năm 1466 Lê Thánh Tông đặt chức gì đứng đầu mỗi bộ?",
+   "options": [
+    "Thượng thư",
+    "Hành khiển",
+    "Tể tướng",
+    "Đô đốc"
+   ],
+   "answer": 0,
+   "explain": "Toàn thư năm 1466.",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển XII, tờ 24a"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Năm 1466, Khâm hình viện được đổi thành cơ quan nào?",
+   "options": [
+    "Hình bộ",
+    "Đại lý tự",
+    "Ngự sử đài",
+    "Hình khoa"
+   ],
+   "answer": 0,
+   "explain": "\"đổi Khâm hình viện thành Hình bộ\".",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển XII, tờ 24a"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Bộ Lại",
+   "right": "Bộ Hình",
+   "cases": [
+    {
+     "text": "Quản lý việc thăng bổ quan lại",
+     "answer": "left"
+    },
+    {
+     "text": "Phụ trách việc hình án, xét xử",
+     "answer": "right"
+    }
+   ],
+   "explain": "Chức năng sáu bộ theo cách hiểu phổ biến; Toàn thư năm 1471 nhắc \"Lại bộ thăng bổ\" và \"công việc xử án của Hình bộ\"."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bắt đầu đặt năm phủ, {{sáu bộ}}. Đổi đặt sáu viện thành {{sáu tự}}.",
+   "bank_extra": [
+    "sáu khoa",
+    "mười hai đạo"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đều đặt chức {{Thượng thư}} ở các Lại, Hộ, Lễ, Binh, Hình, Công.",
+   "bank_extra": [
+    "Tri phủ",
+    "Hành khiển"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Sáu bộ thời Lê Thánh Tông gồm Lại, Hộ, Lễ, Binh, Hình, Công.",
+   "answer": true,
+   "explain": "Đúng. Toàn thư năm 1466."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày việc tổ chức sáu bộ thời Lê Thánh Tông.",
+   "model": "Năm 1466 đặt năm phủ, sáu bộ (Lại, Hộ, Lễ, Binh, Hình, Công), mỗi bộ do Thượng thư đứng đầu, đổi sáu viện thành sáu tự, Khâm hình viện thành Hình bộ; bộ máy trung ương chuyên môn hóa, vua trực tiếp điều hành, tập quyền cao độ.",
+   "keywords": [
+    "1466",
+    "sáu bộ",
+    "Thượng thư",
+    "tập quyền"
+   ]
+  }
+ ]
+}

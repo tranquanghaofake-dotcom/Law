@@ -1,0 +1,131 @@
+{
+ "id": "luc-khoa-giam-sat",
+ "subject": "lich-su-nn-pl",
+ "chapter": "c6-trung-dai",
+ "term": "Lục khoa, Ngự sử đài và cơ chế kiềm chế trong bộ máy Lê Thánh Tông",
+ "definition": "Lại bộ thăng bổ lầm người thì Lại khoa được phép bác bỏ. Lễ bộ nghi chế không hợp lệ thì Lễ khoa có quyền hặc tâu. (…) khiến cho quan to, quan nhỏ đều ràng buộc với nhau; chức trọng chức khinh cùng kiểm chế lẫn nhau. Uy quyền không bị lợi dụng thế nước vậy là khó lay.",
+ "plain": "Mỗi bộ có một KHOA tương ứng (Lại khoa, Hộ khoa, Lễ khoa, Binh khoa, Hình khoa, Công khoa) để GIÁM SÁT: bác bỏ việc làm sai, hặc tâu lên vua. Cùng với NGỰ SỬ ĐÀI (hặc tâu quan làm bậy), đây là hệ thống giám sát nội bộ bộ máy nhà nước. Mục đích: \"chức trọng chức khinh cùng kiểm chế lẫn nhau\", \"uy quyền không bị lợi dụng\". Đây không phải phân quyền theo nghĩa hiện đại (mọi quyền vẫn tập trung ở vua) mà là KIỂM SOÁT CHÉO để vua kiểm soát quan lại. Có thể liên hệ với nguyên tắc \"kiểm soát việc thực hiện quyền lực nhà nước\" (khoản 3 Điều 2 Hiến pháp 2013), nhưng bản chất khác nhau.",
+ "example": "Bộ Lại đề nghị bổ nhiệm một người không đủ tiêu chuẩn làm tri huyện: Lại khoa có quyền bác bỏ. Bộ Lễ đặt nghi lễ sai: Lễ khoa hặc tâu lên vua.",
+ "source": {
+  "kind": "primary",
+  "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển XII (bản dịch Viện KHXH Việt Nam, NXB KHXH 1993), Kỷ nhà Lê, Thánh Tông, năm 1471, tờ 67a–67b",
+  "url": "https://thpthiephoa1.edu.vn/wp-content/uploads/Dai-viet-su-ki-toan-thu.pdf"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hoang-trieu-quan-che-1471",
+  "luc-bo-1466"
+ ],
+ "keywords": [
+  "sáu khoa",
+  "Ngự sử đài",
+  "bác bỏ, hặc tâu",
+  "kiểm chế lẫn nhau",
+  "không phải tam quyền phân lập"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo lời dụ năm 1471, nếu Lại bộ thăng bổ lầm người thì cơ quan nào được phép bác bỏ?",
+   "options": [
+    "Lại khoa",
+    "Ngự sử đài",
+    "Hình bộ",
+    "Đô ty"
+   ],
+   "answer": 0,
+   "explain": "Toàn thư năm 1471.",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển XII, tờ 67a"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Mục đích của việc để các chức quan \"kiểm chế lẫn nhau\" theo lời dụ năm 1471 là gì?",
+   "options": [
+    "Để uy quyền không bị lợi dụng, thế nước khó lay",
+    "Để chia quyền lực cho nhân dân",
+    "Để giảm số quan lại",
+    "Để thực hiện tam quyền phân lập"
+   ],
+   "answer": 0,
+   "explain": "\"Uy quyền không bị lợi dụng thế nước vậy là khó lay.\"",
+   "source": {
+    "kind": "primary",
+    "cite": "Đại Việt sử ký toàn thư, Bản kỷ, quyển XII, tờ 67b"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Bộ (thực hiện)",
+   "right": "Khoa (giám sát)",
+   "cases": [
+    {
+     "text": "Lễ bộ đặt nghi chế",
+     "answer": "left"
+    },
+    {
+     "text": "Lễ khoa hặc tâu nếu nghi chế không hợp lệ",
+     "answer": "right"
+    },
+    {
+     "text": "Hình bộ xử án",
+     "answer": "left"
+    },
+    {
+     "text": "Hình khoa xem xét việc xử án phải trái",
+     "answer": "right"
+    }
+   ],
+   "explain": "Toàn thư năm 1471."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Lại bộ thăng bổ lầm người thì {{Lại khoa}} được phép bác bỏ. Lễ bộ nghi chế không hợp lệ thì Lễ khoa có quyền {{hặc tâu}}.",
+   "bank_extra": [
+    "Ngự sử đài",
+    "xét xử"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chức trọng chức khinh cùng {{kiểm chế}} lẫn nhau.",
+   "bank_extra": [
+    "bao che",
+    "thay thế"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Một bạn viết: \"Lục khoa chứng tỏ thời Lê Thánh Tông đã có tam quyền phân lập.\" Nhận xét nào chính xác?",
+   "options": [
+    "Sai: đây là cơ chế giám sát, kiểm soát chéo trong bộ máy để vua kiểm soát quan lại; mọi quyền vẫn tập trung ở vua",
+    "Đúng hoàn toàn",
+    "Đúng vì có Hình bộ xét xử độc lập",
+    "Sai vì thời Lê không có cơ quan giám sát"
+   ],
+   "answer": 0,
+   "explain": "Phân biệt kiểm soát chéo trong quân chủ tập quyền với phân quyền hiện đại."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày cơ chế giám sát, kiềm chế trong bộ máy nhà nước thời Lê Thánh Tông.",
+   "model": "Mỗi bộ có một khoa tương ứng để xét bác, hặc tâu (Lại khoa bác việc thăng bổ sai của Lại bộ, Lễ khoa hặc nghi chế sai, Hình khoa xét việc xử án); Ngự sử đài hặc tâu quan làm bậy; các chức kiểm chế lẫn nhau để uy quyền không bị lợi dụng. Đây là kiểm soát chéo phục vụ tập quyền của vua, không phải phân quyền.",
+   "keywords": [
+    "sáu khoa",
+    "Ngự sử",
+    "hặc tâu",
+    "kiểm chế",
+    "tập quyền"
+   ]
+  }
+ ]
+}
