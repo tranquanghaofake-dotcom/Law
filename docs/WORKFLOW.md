@@ -37,7 +37,7 @@ Build cho Pages: `BASE_PATH=/Law/ npm run build`.
 
 1. **Một việc = một nhánh ngắn** từ `main`: `feat/<việc>`, `fix/<việc>`, `content/<môn-hoặc-chủ-đề>`, `docs/<việc>`, `chore/<việc>`. Nhánh sống ≤ 2 ngày; việc lớn chia nhỏ theo `docs/plans/`.
 2. Commit nhỏ, thông điệp tiếng Việt có dấu, dạng `loại(phạm vi): việc` — ví dụ `content(hien-phap): thêm 5 khái niệm chương 2`.
-3. Push → **mở PR** theo template. CI (`ci.yml`) chạy: content → check → test → build, mục tiêu **< 2 phút**.
+3. Push → **mở PR** theo template. CI (`ci.yml`) chạy trên PR (không chạy lại khi chỉ push nhánh): content → check → test → build, mục tiêu **< 2 phút**.
 4. CI xanh + tự xem lại diff → **merge** (merge commit, tiêu đề = tiêu đề PR; đây là changelog). Không rebase/force-push nhánh của người khác.
 5. Merge vào `main` → `deploy.yml` tự chạy khi `apps/web/**` hoặc `packages/content/**` đổi (**< 1 phút**) → web mới tại https://tranquanghaofake-dotcom.github.io/Law/.
 6. Sau deploy, `e2e.yml` chạy Playwright vào bản live. Đỏ = mở issue và sửa bằng PR mới, không rollback thủ công (trừ khi web không mở được: revert merge commit).
@@ -78,4 +78,4 @@ Không tag, không changelog riêng: `main` luôn là bản live; lịch sử me
 
 ## 8. Phụ thuộc
 
-Dependabot mở **một PR gộp mỗi tháng** (minor/patch) cho npm và GitHub Actions. Merge khi CI xanh; major xem riêng.
+Dependabot mở tối đa **3 PR gộp mỗi tháng**: npm minor/patch, npm major, GitHub Actions. Merge minor/patch và Actions khi CI xanh; major đọc changelog trước. `ts-fsrs` (engine lịch ôn) bị loại khỏi dependabot — nâng bằng tay kèm test, vì đổi bản có thể đổi lịch ôn của người dùng.

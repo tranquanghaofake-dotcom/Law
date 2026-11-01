@@ -2,10 +2,10 @@
 # Không chạy Playwright ở đây (xem e2e.yml) để PR không phải chờ cài trình duyệt.
 name: CI
 
+# Chỉ chạy trên pull request (không chạy đôi push + PR). Nhánh chưa có PR: chạy `npm run ci` trên máy hoặc bấm Run workflow.
 on:
   pull_request:
-  push:
-    branches-ignore: [main]
+  workflow_dispatch:
 
 permissions:
   contents: read

@@ -76,14 +76,14 @@
 {:else if !set || !q}
   <p class="loading">Đang tải…</p>
 {:else if finished}
-  <div class="session-bar"><a class="exit" href="#/" aria-label="Về trang chủ">←</a><h2 style="margin:0;flex:1;font-size:17px">{set.title}</h2></div>
+  <div class="session-bar"><a class="exit" href="#/luyen-de" aria-label="Về Luyện đề">←</a><h2 style="margin:0;flex:1;font-size:17px">{set.title}</h2></div>
   <section class="card result">
     <p class="score"><b>{score}</b><small>/{qs.length}</small></p><p class="msg">{msg}</p>
     <div class="row">
       <button class="btn" type="button" onclick={load}>Làm lại</button>
       <button class="btn ghost" type="button" onclick={share}>{shareLabel}</button>
     </div>
-    <a class="btn ghost" href="#/luyen-de" style="margin-top:10px;width:100%">Chọn bộ khác</a>
+    <div class="row"><a class="btn primary" href="#/luyen-de">Chọn bộ khác</a><a class="btn ghost" href="#/">Hôm nay</a></div>
   </section>
   {#if wrong.length}
     <section class="review"><h2>Các câu cần xem lại</h2>

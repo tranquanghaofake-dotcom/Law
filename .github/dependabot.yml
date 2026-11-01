@@ -1,14 +1,24 @@
-# Cập nhật phụ thuộc mỗi tháng, gộp thành 1 PR để không ngập thông báo.
+# Cập nhật phụ thuộc mỗi tháng, gộp thành tối đa 1 PR cho npm (minor/patch) + 1 PR cho major + 1 PR cho GitHub Actions.
+# ts-fsrs là engine lịch ôn: không tự bump, nâng bằng tay kèm test.
 version: 2
 updates:
   - package-ecosystem: npm
     directory: /
     schedule: { interval: monthly }
     open-pull-requests-limit: 2
+    ignore:
+      - dependency-name: ts-fsrs
     groups:
       npm-thang:
         patterns: ['*']
         update-types: [minor, patch]
+      npm-major:
+        patterns: ['*']
+        update-types: [major]
   - package-ecosystem: github-actions
     directory: /
     schedule: { interval: monthly }
+    open-pull-requests-limit: 1
+    groups:
+      actions:
+        patterns: ['*']

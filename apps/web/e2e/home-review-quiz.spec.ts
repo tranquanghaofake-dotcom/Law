@@ -50,3 +50,19 @@ test('ôn hôm nay khi không có gì → báo và về trang chủ', async ({ p
   await page.goto(B + '#/on');
   await expect(page.getByText(/Chưa có gì cần ôn/)).toBeVisible();
 });
+
+test('#/on/hien-phap khi chưa có gì → báo rỗng và link về môn', async ({ page }) => {
+  await page.goto(B + '#/on/hien-phap');
+  await expect(page.getByText(/Chưa có gì cần ôn/)).toBeVisible();
+  await expect(page.getByRole('link', { name: /Về môn/ })).toHaveAttribute('href', '#/mon/hien-phap');
+});
+
+test('Luyện đề: lọc theo nhóm chỉ còn đề của nhóm đó', async ({ page }) => {
+  await page.goto(B + '#/luyen-de');
+  await expect(page.locator('.set')).toHaveCount(5);
+  await page.getByRole('button', { name: 'Luật Dân sự' }).click();
+  await expect(page.locator('.set')).toHaveCount(1);
+  await expect(page.getByRole('button', { name: 'Luật Dân sự' })).toHaveAttribute('aria-pressed', 'true');
+  await page.getByRole('button', { name: 'Tất cả' }).click();
+  await expect(page.locator('.set')).toHaveCount(5);
+});

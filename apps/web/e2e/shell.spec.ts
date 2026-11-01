@@ -19,3 +19,17 @@ test('layout 1 cột trên điện thoại, 2 cột trên desktop khi học', as
   await page.setViewportSize({ width: 1280, height: 800 });
   expect(await cols()).toBe(2);
 });
+
+test('#/mon/hien-phap hiện lưới 10 ô, đúng 1 nhãn TIẾP THEO CHO BẠN, chú giải 7 mức', async ({ page }) => {
+  await page.goto(B + '#/mon/hien-phap');
+  await expect(page.locator('.mastery .cell')).toHaveCount(10);
+  await expect(page.locator('.next-tag')).toHaveCount(1);
+  await expect(page.locator('.legend li')).toHaveCount(7);
+  await expect(page.getByRole('link', { name: /Học đợt tiếp/ })).toHaveAttribute('href', '#/hoc/hien-phap/hp-1');
+});
+
+test('#/mon liệt kê môn có nội dung và dẫn vào trang môn', async ({ page }) => {
+  await page.goto(B + '#/mon');
+  await page.getByRole('link', { name: /Luật Hiến pháp/ }).click();
+  await expect(page).toHaveURL(/#\/mon\/hien-phap$/);
+});
