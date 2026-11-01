@@ -1,0 +1,117 @@
+{
+ "id": "quoc-tich-viet-nam",
+ "subject": "hien-phap",
+ "chapter": "c5-quoc-tich",
+ "term": "Quốc tịch Việt Nam",
+ "definition": "Quốc tịch Việt Nam thể hiện mối quan hệ gắn bó của cá nhân với Nhà nước Cộng hòa xã hội chủ nghĩa Việt Nam, làm phát sinh quyền, nghĩa vụ của công dân Việt Nam đối với Nhà nước và quyền, trách nhiệm của Nhà nước Cộng hòa xã hội chủ nghĩa Việt Nam đối với công dân Việt Nam.",
+ "plain": "Quốc tịch là \"sợi dây pháp lý\" giữa một người và một nhà nước, ràng buộc HAI CHIỀU: công dân có quyền, nghĩa vụ với Nhà nước; Nhà nước có quyền, trách nhiệm với công dân (ví dụ bảo hộ công dân ở nước ngoài). Đây là tiền đề của mọi quyền và nghĩa vụ công dân.",
+ "example": "Công dân Việt Nam bị bắt giữ trái phép ở nước ngoài: Nhà nước có trách nhiệm bảo hộ thông qua cơ quan đại diện; ngược lại, công dân nam đủ tuổi có nghĩa vụ quân sự với Nhà nước.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 1 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-53-vbhn-vpqh-quoc-tich-viet-nam--179993"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "cong-dan-viet-nam",
+  "nguyen-tac-mot-quoc-tich"
+ ],
+ "keywords": [
+  "mối quan hệ gắn bó",
+  "quyền, nghĩa vụ hai chiều"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 1 Luật Quốc tịch Việt Nam, quốc tịch thể hiện điều gì?",
+   "options": [
+    "Mối quan hệ gắn bó của cá nhân với Nhà nước, làm phát sinh quyền, nghĩa vụ hai chiều",
+    "Nơi cá nhân đăng ký thường trú",
+    "Dân tộc của cá nhân",
+    "Ngôn ngữ cá nhân sử dụng"
+   ],
+   "answer": 0,
+   "explain": "Điều 1 Luật Quốc tịch.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 1 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quan hệ quốc tịch làm phát sinh quyền, trách nhiệm của chủ thể nào đối với công dân?",
+   "options": [
+    "Nhà nước Cộng hòa xã hội chủ nghĩa Việt Nam",
+    "Tổ chức quốc tế",
+    "Chính quyền nơi công dân cư trú ở nước ngoài",
+    "Doanh nghiệp nơi công dân làm việc"
+   ],
+   "answer": 0,
+   "explain": "Điều 1 Luật Quốc tịch.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 1 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quyền, trách nhiệm của Nhà nước",
+   "right": "Quyền, nghĩa vụ của công dân",
+   "cases": [
+    {
+     "text": "Bảo hộ công dân Việt Nam ở nước ngoài",
+     "answer": "left"
+    },
+    {
+     "text": "Thực hiện nghĩa vụ quân sự",
+     "answer": "right"
+    },
+    {
+     "text": "Bảo đảm các quyền công dân",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 1, 5, 6 Luật Quốc tịch."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quốc tịch Việt Nam thể hiện mối quan hệ {{gắn bó}} của cá nhân với Nhà nước, làm phát sinh quyền, {{nghĩa vụ}} của công dân đối với Nhà nước.",
+   "bank_extra": [
+    "tạm thời",
+    "lợi ích"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người có quốc tịch Việt Nam là {{công dân}} Việt Nam.",
+   "bank_extra": [
+    "cư dân",
+    "kiều bào"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quan hệ quốc tịch chỉ làm phát sinh nghĩa vụ của công dân, không làm phát sinh trách nhiệm của Nhà nước.",
+   "answer": false,
+   "explain": "Sai. Điều 1 Luật Quốc tịch: phát sinh cả quyền, trách nhiệm của Nhà nước đối với công dân."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm quốc tịch Việt Nam theo Luật Quốc tịch.",
+   "model": "Quốc tịch Việt Nam thể hiện mối quan hệ gắn bó của cá nhân với Nhà nước CHXHCN Việt Nam, làm phát sinh quyền, nghĩa vụ của công dân đối với Nhà nước và quyền, trách nhiệm của Nhà nước đối với công dân (Điều 1); người có quốc tịch Việt Nam là công dân Việt Nam (khoản 1 Điều 5).",
+   "keywords": [
+    "gắn bó",
+    "quyền, nghĩa vụ",
+    "trách nhiệm của Nhà nước",
+    "công dân"
+   ]
+  }
+ ]
+}

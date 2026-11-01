@@ -1,0 +1,115 @@
+{
+ "id": "quyen-co-quoc-tich",
+ "subject": "hien-phap",
+ "chapter": "c5-quoc-tich",
+ "term": "Quyền đối với quốc tịch",
+ "definition": "Ở nước Cộng hòa xã hội chủ nghĩa Việt Nam, mỗi cá nhân đều có quyền có quốc tịch. Công dân Việt Nam không bị tước quốc tịch Việt Nam, trừ trường hợp quy định tại Điều 31 của Luật này.",
+ "plain": "Hai bảo đảm: (1) ai cũng có quyền có quốc tịch, nên Luật có quy định để hạn chế tình trạng không quốc tịch (ví dụ trẻ em sinh ra ở Việt Nam có cha mẹ không quốc tịch nhưng thường trú tại Việt Nam thì có quốc tịch Việt Nam); (2) công dân không bị tước quốc tịch, trừ trường hợp đặc biệt tại Điều 31. Mọi dân tộc bình đẳng về quyền có quốc tịch Việt Nam (khoản 2).",
+ "example": "Trẻ sơ sinh bị bỏ rơi ở Việt Nam, không rõ cha mẹ: có quốc tịch Việt Nam (Điều 18), để không rơi vào tình trạng không quốc tịch.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 2 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-53-vbhn-vpqh-quoc-tich-viet-nam--179993"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nguoi-khong-quoc-tich",
+  "tuoc-quoc-tich-viet-nam",
+  "quoc-tich-theo-huyet-thong"
+ ],
+ "keywords": [
+  "mỗi cá nhân đều có quyền có quốc tịch",
+  "không bị tước trừ Điều 31",
+  "dân tộc bình đẳng"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 1 Điều 2 Luật Quốc tịch, công dân Việt Nam có thể bị tước quốc tịch không?",
+   "options": [
+    "Không, trừ trường hợp quy định tại Điều 31",
+    "Có, bất cứ khi nào vi phạm pháp luật",
+    "Có, nếu cư trú ở nước ngoài trên 5 năm",
+    "Không bao giờ"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 2.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 2 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khoản 2 Điều 2 Luật Quốc tịch khẳng định điều gì về các dân tộc?",
+   "options": [
+    "Mọi thành viên của các dân tộc đều bình đẳng về quyền có quốc tịch Việt Nam",
+    "Dân tộc Kinh được ưu tiên nhập quốc tịch",
+    "Dân tộc thiểu số có thể có hai quốc tịch",
+    "Mỗi dân tộc có quốc tịch riêng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 2.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 2 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quyền có quốc tịch",
+   "right": "Bảo đảm không bị tước quốc tịch",
+   "cases": [
+    {
+     "text": "Mỗi cá nhân ở Việt Nam đều có quyền có quốc tịch",
+     "answer": "left"
+    },
+    {
+     "text": "Chỉ bị tước trong trường hợp Điều 31",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 2."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ở nước Cộng hòa xã hội chủ nghĩa Việt Nam, mỗi cá nhân đều có {{quyền có quốc tịch}}.",
+   "bank_extra": [
+    "nghĩa vụ nhập quốc tịch",
+    "quyền hai quốc tịch"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công dân Việt Nam không bị {{tước}} quốc tịch Việt Nam, trừ trường hợp quy định tại Điều {{31}} của Luật này.",
+   "bank_extra": [
+    "thôi",
+    "19"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo Luật Quốc tịch, công dân Việt Nam phạm tội trộm cắp tài sản trong nước có thể bị tước quốc tịch.",
+   "answer": false,
+   "explain": "Sai. Tước quốc tịch chỉ theo Điều 31 (hành vi gây phương hại nghiêm trọng đến độc lập dân tộc, xây dựng và bảo vệ Tổ quốc, uy tín của Nhà nước, với người cư trú ở nước ngoài hoặc người đã nhập quốc tịch)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quyền đối với quốc tịch theo Điều 2 Luật Quốc tịch.",
+   "model": "Ở Việt Nam mỗi cá nhân đều có quyền có quốc tịch; công dân Việt Nam không bị tước quốc tịch trừ trường hợp Điều 31 (khoản 1). Mọi thành viên của các dân tộc bình đẳng về quyền có quốc tịch Việt Nam (khoản 2).",
+   "keywords": [
+    "quyền có quốc tịch",
+    "không bị tước",
+    "Điều 31",
+    "bình đẳng"
+   ]
+  }
+ ]
+}

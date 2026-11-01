@@ -48,6 +48,34 @@
           ]
         }
       ]
+    },
+    {
+      "id": "c5-quoc-tich",
+      "title": "Chương 5. Quốc tịch",
+      "lessons": [
+        {
+          "id": "hp-5a",
+          "title": "Quốc tịch, công dân và nguyên tắc một quốc tịch",
+          "concepts": [
+            "cong-dan-viet-nam",
+            "quoc-tich-viet-nam",
+            "nguyen-tac-mot-quoc-tich",
+            "quyen-co-quoc-tich",
+            "nguoi-khong-quoc-tich"
+          ]
+        },
+        {
+          "id": "hp-5b",
+          "title": "Có, nhập, trở lại, thôi và bị tước quốc tịch",
+          "concepts": [
+            "quoc-tich-theo-huyet-thong",
+            "nhap-quoc-tich-viet-nam",
+            "tro-lai-quoc-tich",
+            "thoi-quoc-tich-viet-nam",
+            "tuoc-quoc-tich-viet-nam"
+          ]
+        }
+      ]
     }
   ]
 }

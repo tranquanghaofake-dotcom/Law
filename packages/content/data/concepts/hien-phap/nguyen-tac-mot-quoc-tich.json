@@ -1,0 +1,129 @@
+{
+ "id": "nguyen-tac-mot-quoc-tich",
+ "subject": "hien-phap",
+ "chapter": "c5-quoc-tich",
+ "term": "Nguyên tắc một quốc tịch",
+ "definition": "Nhà nước Cộng hòa xã hội chủ nghĩa Việt Nam công nhận công dân Việt Nam có một quốc tịch là quốc tịch Việt Nam, trừ trường hợp Luật này có quy định khác.",
+ "plain": "Nguyên tắc là MỘT quốc tịch, nhưng có ngoại lệ \"trừ trường hợp Luật này có quy định khác\": người nhập, trở lại quốc tịch được Chủ tịch nước cho giữ quốc tịch nước ngoài; người Việt định cư ở nước ngoài chưa mất quốc tịch Việt Nam. Với người đồng thời có quốc tịch nước ngoài, trên lãnh thổ Việt Nam Nhà nước chỉ công nhận quốc tịch Việt Nam trong quan hệ với cơ quan Việt Nam (khoản 4 Điều 5). Người giữ chức vụ trong bộ máy Đảng, Nhà nước, lực lượng vũ trang phải chỉ có một quốc tịch Việt Nam (khoản 5 Điều 5).",
+ "example": "Chị N có quốc tịch Việt Nam và Úc. Khi làm thủ tục tại cơ quan nhà nước ở Việt Nam, chị chỉ được đối xử là công dân Việt Nam, không thể viện dẫn quốc tịch Úc để đòi đối xử như người nước ngoài.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 4 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-53-vbhn-vpqh-quoc-tich-viet-nam--179993"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quoc-tich-viet-nam",
+  "nhap-quoc-tich-viet-nam"
+ ],
+ "keywords": [
+  "một quốc tịch",
+  "trừ trường hợp Luật quy định khác",
+  "chỉ công nhận quốc tịch Việt Nam trên lãnh thổ Việt Nam"
+ ],
+ "note": "Luật 79/2025/QH15 (hiệu lực 01/7/2025) sửa khoản 4 và bổ sung các khoản 5–8 Điều 5. Theo đó: người giữ chức vụ theo nhiệm kỳ trong cơ quan Đảng, Nhà nước, Mặt trận, tổ chức chính trị - xã hội; người làm cơ yếu; người trong lực lượng vũ trang phải chỉ có quốc tịch Việt Nam và thường trú tại Việt Nam. Quyết định hành chính về quốc tịch không bị khiếu nại, khiếu kiện. Giáo trình in trước 2025 chưa có các nội dung này.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nguyên tắc quốc tịch tại Điều 4 Luật Quốc tịch Việt Nam là gì?",
+   "options": [
+    "Công nhận công dân Việt Nam có một quốc tịch là quốc tịch Việt Nam, trừ trường hợp Luật có quy định khác",
+    "Cấm tuyệt đối mọi trường hợp hai quốc tịch",
+    "Công dân được tự do có nhiều quốc tịch",
+    "Quốc tịch xác định theo nơi sinh"
+   ],
+   "answer": 0,
+   "explain": "Điều 4 Luật Quốc tịch.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 4 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người ứng cử, được bổ nhiệm giữ chức vụ theo nhiệm kỳ trong cơ quan nhà nước phải đáp ứng điều kiện gì về quốc tịch?",
+   "options": [
+    "Chỉ có một quốc tịch là quốc tịch Việt Nam và thường trú tại Việt Nam",
+    "Có ít nhất một quốc tịch là Việt Nam",
+    "Không yêu cầu về quốc tịch",
+    "Có quốc tịch Việt Nam từ khi sinh ra"
+   ],
+   "answer": 0,
+   "explain": "Khoản 5 Điều 5 Luật Quốc tịch (bổ sung bởi Luật 79/2025/QH15).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 5 Điều 5 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Đúng nguyên tắc/ngoại lệ hợp pháp",
+   "right": "Không phù hợp Luật Quốc tịch",
+   "cases": [
+    {
+     "text": "Người nhập quốc tịch được Chủ tịch nước cho giữ quốc tịch nước ngoài",
+     "answer": "left"
+    },
+    {
+     "text": "Sĩ quan quân đội đang tại ngũ có thêm quốc tịch nước ngoài",
+     "answer": "right"
+    },
+    {
+     "text": "Trên lãnh thổ Việt Nam chỉ công nhận quốc tịch Việt Nam của người song tịch",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 4, khoản 4, 5 Điều 5, khoản 6 Điều 19."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhà nước công nhận công dân Việt Nam có {{một}} quốc tịch là quốc tịch Việt Nam, trừ trường hợp {{Luật này}} có quy định khác.",
+   "bank_extra": [
+    "hai",
+    "Bộ luật Dân sự"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người tham gia lực lượng vũ trang phải là người chỉ có một quốc tịch là quốc tịch Việt Nam và phải {{thường trú}} tại Việt Nam.",
+   "bank_extra": [
+    "tạm trú",
+    "có hộ chiếu"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Ông P là công dân Việt Nam đồng thời có quốc tịch Mỹ, muốn ứng cử đại biểu Hội đồng nhân dân. Theo Luật Quốc tịch hiện hành, điều kiện về quốc tịch thế nào?",
+   "options": [
+    "Phải chỉ có một quốc tịch là quốc tịch Việt Nam và thường trú tại Việt Nam",
+    "Được ứng cử vì vẫn có quốc tịch Việt Nam",
+    "Chỉ cần thôi quốc tịch Việt Nam",
+    "Chỉ cần thường trú tại Việt Nam"
+   ],
+   "answer": 0,
+   "explain": "Khoản 5 Điều 5 Luật Quốc tịch (Luật 79/2025/QH15).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 5 Điều 5 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày nguyên tắc một quốc tịch và các ngoại lệ, giới hạn theo Luật Quốc tịch hiện hành.",
+   "model": "Nguyên tắc: công nhận công dân Việt Nam có một quốc tịch là Việt Nam, trừ trường hợp Luật quy định khác (Điều 4). Ngoại lệ: người nhập, trở lại quốc tịch được Chủ tịch nước cho giữ quốc tịch nước ngoài; người Việt định cư ở nước ngoài chưa mất quốc tịch. Trên lãnh thổ Việt Nam chỉ công nhận quốc tịch Việt Nam của người song tịch (khoản 4 Điều 5). Người giữ chức vụ theo nhiệm kỳ, cơ yếu, lực lượng vũ trang phải chỉ có quốc tịch Việt Nam và thường trú tại Việt Nam (khoản 5 Điều 5).",
+   "keywords": [
+    "một quốc tịch",
+    "ngoại lệ",
+    "chỉ công nhận quốc tịch Việt Nam",
+    "chức vụ"
+   ]
+  }
+ ]
+}

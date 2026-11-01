@@ -1,0 +1,121 @@
+{
+ "id": "tro-lai-quoc-tich",
+ "subject": "hien-phap",
+ "chapter": "c5-quoc-tich",
+ "term": "Trở lại quốc tịch Việt Nam",
+ "definition": "Người đã mất quốc tịch Việt Nam theo quy định tại Điều 26 của Luật này có đơn xin trở lại quốc tịch Việt Nam thì được xem xét giải quyết trở lại quốc tịch Việt Nam.",
+ "plain": "Dành cho người TỪNG có quốc tịch Việt Nam rồi mất (thôi, bị tước, bị hủy quyết định nhập…). Không được trở lại nếu phương hại lợi ích quốc gia; người bị tước quốc tịch phải sau ít nhất 05 năm. Người trở lại phải lấy lại tên Việt Nam trước đây (có thể ghép tên nếu giữ quốc tịch nước ngoài); được giữ quốc tịch nước ngoài nếu phù hợp pháp luật nước đó, không dùng quốc tịch nước ngoài gây phương hại, và được Chủ tịch nước cho phép.",
+ "example": "Bà H thôi quốc tịch Việt Nam năm 2010 để nhập quốc tịch Đức, nay về hưu muốn về Việt Nam sống: có thể xin trở lại quốc tịch Việt Nam, đồng thời xin giữ quốc tịch Đức nếu đáp ứng điều kiện và được Chủ tịch nước cho phép.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 23 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-53-vbhn-vpqh-quoc-tich-viet-nam--179993"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nhap-quoc-tich-viet-nam",
+  "thoi-quoc-tich-viet-nam",
+  "tuoc-quoc-tich-viet-nam"
+ ],
+ "keywords": [
+  "đã mất quốc tịch",
+  "lấy lại tên Việt Nam",
+  "bị tước phải sau 05 năm",
+  "Chủ tịch nước cho giữ quốc tịch nước ngoài"
+ ],
+ "note": "Luật 79/2025/QH15 (hiệu lực 01/7/2025) sửa tên Điều 23 và các khoản 1, 3, 4, 5. Theo khoản 1 hiện hành, người đã mất quốc tịch Việt Nam có đơn thì \"được xem xét giải quyết\" trở lại. Giáo trình in trước 2025 trình bày theo khoản 1 cũ, cần đối chiếu.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai có thể xin trở lại quốc tịch Việt Nam?",
+   "options": [
+    "Người đã mất quốc tịch Việt Nam theo Điều 26",
+    "Mọi người nước ngoài sống ở Việt Nam 05 năm",
+    "Người chưa từng có quốc tịch Việt Nam",
+    "Chỉ người có vợ, chồng là công dân Việt Nam"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 23.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 23 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người bị tước quốc tịch Việt Nam phải sau ít nhất bao lâu mới được xem xét cho trở lại?",
+   "options": [
+    "5 năm",
+    "1 năm",
+    "10 năm",
+    "Không bao giờ được trở lại"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 23.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 23 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Trở lại quốc tịch",
+   "right": "Nhập quốc tịch",
+   "cases": [
+    {
+     "text": "Dành cho người đã từng có và mất quốc tịch Việt Nam",
+     "answer": "left"
+    },
+    {
+     "text": "Dành cho công dân nước ngoài, người không quốc tịch",
+     "answer": "right"
+    },
+    {
+     "text": "Phải lấy lại tên gọi Việt Nam trước đây",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 19 và Điều 23."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người xin trở lại quốc tịch Việt Nam phải lấy lại {{tên gọi Việt Nam}} trước đây.",
+   "bank_extra": [
+    "tên nước ngoài",
+    "tên mới"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người bị tước quốc tịch Việt Nam phải sau ít nhất {{5 năm}} kể từ ngày bị tước mới được xem xét cho trở lại.",
+   "bank_extra": [
+    "1 năm",
+    "10 năm"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người xin trở lại quốc tịch Việt Nam không bao giờ được giữ quốc tịch nước ngoài.",
+   "answer": false,
+   "explain": "Sai. Khoản 5 Điều 23: được giữ nếu phù hợp pháp luật nước đó, không sử dụng quốc tịch nước ngoài gây phương hại, và được Chủ tịch nước cho phép."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày điều kiện trở lại quốc tịch Việt Nam.",
+   "model": "Người đã mất quốc tịch Việt Nam theo Điều 26 có đơn thì được xem xét (khoản 1 Điều 23); không được trở lại nếu phương hại lợi ích quốc gia (khoản 2); người bị tước phải sau ít nhất 5 năm (khoản 3); phải lấy lại tên Việt Nam, có thể ghép tên nếu giữ quốc tịch nước ngoài (khoản 4); giữ quốc tịch nước ngoài nếu phù hợp pháp luật nước đó, không gây phương hại và được Chủ tịch nước cho phép (khoản 5).",
+   "keywords": [
+    "đã mất quốc tịch",
+    "5 năm",
+    "tên Việt Nam",
+    "Chủ tịch nước"
+   ]
+  }
+ ]
+}
