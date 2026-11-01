@@ -1,0 +1,114 @@
+{
+ "id": "nguoi-hanh-nghe-chung-khoan",
+ "subject": "chung-khoan",
+ "chapter": "c8-kinh-doanh-chung-khoan",
+ "term": "Người hành nghề chứng khoán",
+ "definition": "Người hành nghề chứng khoán là người được Ủy ban Chứng khoán Nhà nước cấp chứng chỉ hành nghề chứng khoán và làm việc tại công ty chứng khoán, công ty quản lý quỹ đầu tư chứng khoán, chi nhánh công ty chứng khoán nước ngoài tại Việt Nam và chi nhánh công ty quản lý quỹ nước ngoài tại Việt Nam (sau đây gọi là chi nhánh công ty chứng khoán và công ty quản lý quỹ nước ngoài tại Việt Nam), công ty đầu tư chứng khoán.",
+ "plain": "Hai điều kiện cùng lúc: có chứng chỉ hành nghề do Ủy ban cấp VÀ đang làm việc tại một tổ chức kinh doanh chứng khoán. Có chứng chỉ mà không làm ở đâu thì chưa phải \"người hành nghề\". Người hành nghề chỉ hành nghề nhân danh công ty (khoản 1 Điều 98); công ty chịu trách nhiệm về hoạt động nghiệp vụ của họ (khoản 4).",
+ "example": "Chị V đã thi đạt chứng chỉ môi giới nhưng đang làm kế toán cho một công ty may: chị chưa phải người hành nghề chứng khoán. Khi chị vào làm môi giới tại công ty chứng khoán X, chị trở thành người hành nghề và chỉ được hành nghề nhân danh X.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 47 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "chung-chi-hanh-nghe-chung-khoan",
+  "trach-nhiem-nguoi-hanh-nghe"
+ ],
+ "keywords": [
+  "chứng chỉ do Ủy ban cấp",
+  "làm việc tại tổ chức kinh doanh chứng khoán",
+  "nhân danh công ty"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người hành nghề chứng khoán phải đáp ứng điều kiện gì theo khoản 47 Điều 4?",
+   "options": [
+    "Được Ủy ban cấp chứng chỉ hành nghề và làm việc tại công ty chứng khoán, công ty quản lý quỹ, chi nhánh nước ngoài hoặc công ty đầu tư chứng khoán",
+    "Chỉ cần có tài khoản chứng khoán",
+    "Chỉ cần có bằng đại học kinh tế",
+    "Chỉ cần làm việc tại ngân hàng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 47 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 47 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người hành nghề chứng khoán hành nghề với tư cách gì?",
+   "options": [
+    "Đại diện cho công ty nơi mình làm việc",
+    "Cá nhân độc lập",
+    "Đại diện cho Ủy ban Chứng khoán",
+    "Đại diện cho Sở giao dịch"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 98.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 98 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Là người hành nghề chứng khoán",
+   "right": "Chưa phải người hành nghề chứng khoán",
+   "cases": [
+    {
+     "text": "Có chứng chỉ môi giới, đang làm tại công ty chứng khoán",
+     "answer": "left"
+    },
+    {
+     "text": "Có chứng chỉ môi giới nhưng làm kế toán cho doanh nghiệp may",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 47 Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người hành nghề chứng khoán là người được {{Ủy ban Chứng khoán Nhà nước}} cấp chứng chỉ hành nghề và {{làm việc}} tại công ty chứng khoán, công ty quản lý quỹ…",
+   "bank_extra": [
+    "Sở giao dịch",
+    "đầu tư"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công ty chứng khoán chịu {{trách nhiệm}} về hoạt động nghiệp vụ của người hành nghề chứng khoán.",
+   "bank_extra": [
+    "không chịu trách nhiệm",
+    "một nửa trách nhiệm"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người có chứng chỉ hành nghề chứng khoán được tự mở văn phòng nhận môi giới cho khách với tư cách cá nhân.",
+   "answer": false,
+   "explain": "Sai. Chỉ được hành nghề với tư cách đại diện cho công ty chứng khoán, công ty quản lý quỹ, chi nhánh nước ngoài hoặc công ty đầu tư chứng khoán (khoản 1 Điều 98)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Định nghĩa người hành nghề chứng khoán và tư cách hành nghề.",
+   "model": "Người được Ủy ban cấp chứng chỉ hành nghề chứng khoán và làm việc tại công ty chứng khoán, công ty quản lý quỹ, chi nhánh nước ngoài tại Việt Nam, công ty đầu tư chứng khoán (khoản 47 Điều 4). Chỉ hành nghề nhân danh công ty (khoản 1 Điều 98); công ty chịu trách nhiệm về hoạt động nghiệp vụ (khoản 4).",
+   "keywords": [
+    "chứng chỉ",
+    "làm việc tại",
+    "nhân danh công ty",
+    "chịu trách nhiệm"
+   ]
+  }
+ ]
+}

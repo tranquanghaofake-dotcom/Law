@@ -198,6 +198,34 @@
           ]
         }
       ]
+    },
+    {
+      "id": "c8-kinh-doanh-chung-khoan",
+      "title": "Chương VIII. Pháp luật điều chỉnh hoạt động kinh doanh chứng khoán",
+      "lessons": [
+        {
+          "id": "ck8-1",
+          "title": "Các nghiệp vụ kinh doanh chứng khoán",
+          "concepts": [
+            "kinh-doanh-chung-khoan",
+            "moi-gioi-chung-khoan",
+            "tu-doanh-chung-khoan",
+            "bao-lanh-phat-hanh-chung-khoan",
+            "tu-van-dau-tu-chung-khoan"
+          ]
+        },
+        {
+          "id": "ck8-2",
+          "title": "Dịch vụ, chấp thuận và người hành nghề chứng khoán",
+          "concepts": [
+            "dich-vu-cho-vay-ky-quy",
+            "hoat-dong-phai-duoc-uy-ban-chap-thuan",
+            "nguoi-hanh-nghe-chung-khoan",
+            "chung-chi-hanh-nghe-chung-khoan",
+            "trach-nhiem-nguoi-hanh-nghe"
+          ]
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,120 @@
+{
+ "id": "dich-vu-cho-vay-ky-quy",
+ "subject": "chung-khoan",
+ "chapter": "c8-kinh-doanh-chung-khoan",
+ "term": "Dịch vụ của công ty chứng khoán có nghiệp vụ môi giới (cho vay ký quỹ, ứng trước)",
+ "definition": "Cung cấp dịch vụ giao dịch chứng khoán trực tuyến; cung cấp hoặc phối hợp với các tổ chức tín dụng cung cấp dịch vụ cho khách hàng vay tiền mua chứng khoán hoặc cung cấp dịch vụ cho vay chứng khoán; cung cấp hoặc phối hợp với các tổ chức tín dụng cung cấp dịch vụ ứng trước tiền bán chứng khoán; lưu ký chứng khoán; bù trừ và thanh toán chứng khoán; các dịch vụ trên thị trường chứng khoán phái sinh.",
+ "plain": "Đây là nhóm dịch vụ \"rủi ro cao\" của công ty có nghiệp vụ môi giới: cho vay tiền mua chứng khoán (giao dịch ký quỹ, margin), cho vay chứng khoán, ứng trước tiền bán, giao dịch trực tuyến, lưu ký, bù trừ, phái sinh. Vì rủi ro, các dịch vụ này phải được Ủy ban chấp thuận bằng văn bản TRƯỚC khi thực hiện (điểm e khoản 1 Điều 87). Khi công ty phá sản, khoản nợ margin của khách được trừ vào tài sản hoàn trả (khoản 3 Điều 88).",
+ "example": "Bạn có 100 triệu, vay margin thêm 100 triệu của công ty chứng khoán để mua cổ phiếu. Giá giảm mạnh, tài sản không đủ tỷ lệ ký quỹ: công ty có thể bán giải chấp. Dịch vụ cho vay này công ty phải được Ủy ban chấp thuận trước.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điểm b khoản 1 Điều 86 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "moi-gioi-chung-khoan",
+  "hoat-dong-phai-duoc-uy-ban-chap-thuan",
+  "quan-ly-tai-san-khach-hang-ctck"
+ ],
+ "keywords": [
+  "vay tiền mua chứng khoán",
+  "ứng trước tiền bán",
+  "giao dịch trực tuyến",
+  "phải được Ủy ban chấp thuận"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Dịch vụ cho khách hàng vay tiền mua chứng khoán thuộc nhóm dịch vụ của công ty chứng khoán có nghiệp vụ nào?",
+   "options": [
+    "Môi giới chứng khoán",
+    "Tự doanh chứng khoán",
+    "Tư vấn đầu tư",
+    "Quản lý danh mục"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 1 Điều 86.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 86 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trước khi cung cấp dịch vụ tại điểm b khoản 1 Điều 86, công ty chứng khoán phải làm gì?",
+   "options": [
+    "Được Ủy ban Chứng khoán Nhà nước chấp thuận bằng văn bản",
+    "Chỉ cần thông báo cho khách hàng",
+    "Được Sở giao dịch cấp phép",
+    "Không cần thủ tục gì"
+   ],
+   "answer": 0,
+   "explain": "Điểm e khoản 1 Điều 87.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 87 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thuộc điểm b khoản 1 Điều 86",
+   "right": "Không thuộc",
+   "cases": [
+    {
+     "text": "Ứng trước tiền bán chứng khoán",
+     "answer": "left"
+    },
+    {
+     "text": "Dịch vụ trên thị trường chứng khoán phái sinh",
+     "answer": "left"
+    },
+    {
+     "text": "Bảo lãnh phát hành cổ phiếu IPO",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điểm b khoản 1 Điều 86; bảo lãnh là nghiệp vụ riêng (khoản 3 Điều 86)."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công ty chứng khoán có nghiệp vụ môi giới được cung cấp hoặc phối hợp với các tổ chức tín dụng cung cấp dịch vụ cho khách hàng {{vay tiền}} mua chứng khoán và dịch vụ {{ứng trước}} tiền bán chứng khoán.",
+   "bank_extra": [
+    "gửi tiết kiệm",
+    "bảo hiểm"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ngoài các dịch vụ được liệt kê, công ty chứng khoán chỉ được cung cấp dịch vụ tài chính khác sau khi {{báo cáo}} Ủy ban Chứng khoán Nhà nước bằng văn bản.",
+   "bank_extra": [
+    "xin ý kiến khách hàng",
+    "đăng báo"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Công ty chứng khoán chỉ có nghiệp vụ tư vấn đầu tư được cung cấp dịch vụ cho vay ký quỹ.",
+   "answer": false,
+   "explain": "Sai. Dịch vụ cho vay tiền mua chứng khoán gắn với nghiệp vụ MÔI GIỚI (khoản 1 Điều 86) và phải được Ủy ban chấp thuận (điểm e khoản 1 Điều 87)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các dịch vụ tại điểm b khoản 1 Điều 86 và thủ tục để cung cấp.",
+   "model": "Giao dịch trực tuyến; cho khách vay tiền mua chứng khoán hoặc cho vay chứng khoán; ứng trước tiền bán; lưu ký; bù trừ, thanh toán; dịch vụ trên thị trường phái sinh. Dành cho công ty có nghiệp vụ môi giới; phải được Ủy ban chấp thuận bằng văn bản trước khi thực hiện (điểm e khoản 1 Điều 87).",
+   "keywords": [
+    "vay tiền mua chứng khoán",
+    "ứng trước",
+    "môi giới",
+    "chấp thuận"
+   ]
+  }
+ ]
+}

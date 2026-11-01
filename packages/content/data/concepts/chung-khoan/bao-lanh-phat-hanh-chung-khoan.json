@@ -1,0 +1,130 @@
+{
+ "id": "bao-lanh-phat-hanh-chung-khoan",
+ "subject": "chung-khoan",
+ "chapter": "c8-kinh-doanh-chung-khoan",
+ "term": "Bảo lãnh phát hành chứng khoán",
+ "definition": "Bảo lãnh phát hành chứng khoán là việc cam kết với tổ chức phát hành nhận mua một phần hoặc toàn bộ chứng khoán của tổ chức phát hành để bán lại hoặc mua số chứng khoán còn lại chưa được phân phối hết hoặc cố gắng tối đa để phân phối số chứng khoán cần phát hành của tổ chức phát hành.",
+ "plain": "Ba \"mức\" cam kết: (1) mua chắc một phần hoặc toàn bộ rồi bán lại; (2) mua phần còn thừa chưa bán hết; (3) chỉ cố gắng tối đa để phân phối (không cam kết mua). Bảo lãnh ra công chúng chỉ do công ty chứng khoán, tổ chức được cấp phép, đáp ứng an toàn tài chính, KHÔNG là người có liên quan với tổ chức phát hành; nếu cam kết mua thì tổng giá trị bảo lãnh không vượt vốn chủ sở hữu (Điều 17).",
+ "example": "Công ty chứng khoán Z cam kết với công ty P: đợt IPO 10 triệu cổ phiếu bán không hết thì Z mua phần còn lại. Đây là bảo lãnh theo hình thức mua số chứng khoán chưa phân phối hết.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 31 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tu-doanh-chung-khoan",
+  "phan-phoi-chung-khoan",
+  "dieu-kien-chao-ban-co-phieu-lan-dau"
+ ],
+ "keywords": [
+  "nhận mua để bán lại",
+  "mua phần chưa phân phối hết",
+  "cố gắng tối đa",
+  "không là người có liên quan"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hình thức nào thuộc bảo lãnh phát hành theo khoản 31 Điều 4?",
+   "options": [
+    "Cố gắng tối đa để phân phối số chứng khoán cần phát hành",
+    "Mua chứng khoán cho chính mình trên sàn",
+    "Làm trung gian mua, bán cho khách hàng",
+    "Giữ chứng khoán hộ khách hàng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 31 Điều 4 gồm ba hình thức, trong đó có \"cố gắng tối đa\".",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 31 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tổ chức bảo lãnh phát hành chứng khoán ra công chúng KHÔNG được có quan hệ nào với tổ chức phát hành?",
+   "options": [
+    "Là người có liên quan",
+    "Ký hợp đồng bảo lãnh",
+    "Tư vấn hồ sơ chào bán",
+    "Làm đại lý phân phối"
+   ],
+   "answer": 0,
+   "explain": "Điểm c khoản 1 Điều 17.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 17 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Cam kết chắc chắn",
+   "right": "Không cam kết mua",
+   "cases": [
+    {
+     "text": "Nhận mua toàn bộ chứng khoán để bán lại",
+     "answer": "left"
+    },
+    {
+     "text": "Mua số chứng khoán còn lại chưa phân phối hết",
+     "answer": "left"
+    },
+    {
+     "text": "Cố gắng tối đa để phân phối",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 31 Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bảo lãnh phát hành là việc cam kết với tổ chức phát hành nhận mua một phần hoặc toàn bộ chứng khoán để {{bán lại}} hoặc mua số chứng khoán còn lại chưa được {{phân phối}} hết.",
+   "bank_extra": [
+    "niêm yết",
+    "lưu ký"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tổ chức bảo lãnh theo phương thức nhận mua chỉ được bảo lãnh tổng giá trị chứng khoán không lớn hơn {{vốn chủ sở hữu}}.",
+   "bank_extra": [
+    "vốn vay",
+    "doanh thu"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Công ty chứng khoán Q là công ty con của tập đoàn R. R chuẩn bị IPO và muốn Q làm tổ chức bảo lãnh phát hành. Có được không?",
+   "options": [
+    "Không, vì tổ chức bảo lãnh không được là người có liên quan với tổ chức phát hành",
+    "Có, vì Q đã được cấp phép bảo lãnh",
+    "Có, nếu Q bảo lãnh dưới 50%",
+    "Có, nếu R đồng ý trả phí cao"
+   ],
+   "answer": 0,
+   "explain": "Điểm c khoản 1 Điều 17.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 17 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Định nghĩa bảo lãnh phát hành và nêu điều kiện bảo lãnh phát hành ra công chúng.",
+   "model": "Cam kết với tổ chức phát hành: nhận mua một phần hoặc toàn bộ để bán lại; hoặc mua phần chưa phân phối hết; hoặc cố gắng tối đa để phân phối (khoản 31 Điều 4). Điều kiện (Điều 17): được Ủy ban cấp phép bảo lãnh; đáp ứng an toàn tài chính; không là người có liên quan với tổ chức phát hành; nếu nhận mua thì tổng giá trị bảo lãnh không vượt vốn chủ sở hữu.",
+   "keywords": [
+    "bán lại",
+    "chưa phân phối hết",
+    "cố gắng tối đa",
+    "người có liên quan"
+   ]
+  }
+ ]
+}

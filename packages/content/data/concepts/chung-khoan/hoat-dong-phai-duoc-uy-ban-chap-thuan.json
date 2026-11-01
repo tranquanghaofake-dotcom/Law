@@ -1,0 +1,118 @@
+{
+ "id": "hoat-dong-phai-duoc-uy-ban-chap-thuan",
+ "subject": "chung-khoan",
+ "chapter": "c8-kinh-doanh-chung-khoan",
+ "term": "Hoạt động phải được Ủy ban Chứng khoán Nhà nước chấp thuận",
+ "definition": "Công ty chứng khoán, công ty quản lý quỹ đầu tư chứng khoán phải được Ủy ban Chứng khoán Nhà nước chấp thuận bằng văn bản trước khi thực hiện các hoạt động sau đây: a) Tạm ngừng hoạt động, trừ trường hợp tạm ngừng do nguyên nhân bất khả kháng; b) Chào bán và niêm yết chứng khoán của công ty chứng khoán, công ty quản lý quỹ đầu tư chứng khoán tại nước ngoài; c) Đầu tư gián tiếp ra nước ngoài;",
+ "plain": "Một số thay đổi của công ty chứng khoán, công ty quản lý quỹ phải xin phép TRƯỚC (chấp thuận bằng văn bản): tạm ngừng hoạt động (trừ bất khả kháng); chào bán, niêm yết ở nước ngoài; đầu tư gián tiếp ra nước ngoài; mở, đóng chi nhánh, văn phòng đại diện, phòng giao dịch, công ty con ở nước ngoài; đổi tên, địa điểm chi nhánh; cung cấp các dịch vụ như cho vay ký quỹ.",
+ "example": "Công ty chứng khoán muốn mở thêm 3 phòng giao dịch tại Đà Nẵng: phải được Ủy ban chấp thuận bằng văn bản trước khi mở (điểm d khoản 1 Điều 87).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 87 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "dich-vu-cho-vay-ky-quy",
+  "thu-hoi-giay-phep-cong-ty-chung-khoan"
+ ],
+ "keywords": [
+  "chấp thuận bằng văn bản trước",
+  "tạm ngừng trừ bất khả kháng",
+  "chi nhánh, phòng giao dịch"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trường hợp tạm ngừng hoạt động nào KHÔNG cần Ủy ban chấp thuận trước?",
+   "options": [
+    "Tạm ngừng do nguyên nhân bất khả kháng",
+    "Tạm ngừng để tái cơ cấu",
+    "Tạm ngừng do thua lỗ",
+    "Tạm ngừng theo quyết định Hội đồng quản trị"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 87.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 87 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hoạt động nào phải được Ủy ban chấp thuận trước theo Điều 87?",
+   "options": [
+    "Thành lập, đóng cửa phòng giao dịch",
+    "Tuyển thêm nhân viên môi giới",
+    "Tăng phí giao dịch",
+    "Ký hợp đồng với khách hàng mới"
+   ],
+   "answer": 0,
+   "explain": "Điểm d khoản 1 Điều 87.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 87 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Cần chấp thuận trước",
+   "right": "Không cần chấp thuận theo Điều 87",
+   "cases": [
+    {
+     "text": "Đầu tư gián tiếp ra nước ngoài",
+     "answer": "left"
+    },
+    {
+     "text": "Đổi tên chi nhánh",
+     "answer": "left"
+    },
+    {
+     "text": "Tổ chức hội thảo cho nhà đầu tư",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 87."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công ty chứng khoán phải được Ủy ban Chứng khoán Nhà nước chấp thuận bằng {{văn bản}} {{trước}} khi tạm ngừng hoạt động, trừ trường hợp bất khả kháng.",
+   "bank_extra": [
+    "miệng",
+    "sau"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chào bán và niêm yết chứng khoán của công ty chứng khoán tại {{nước ngoài}} phải được Ủy ban chấp thuận.",
+   "bank_extra": [
+    "trong nước",
+    "UPCoM"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Công ty chứng khoán được tự mở chi nhánh ở nước ngoài rồi báo cáo Ủy ban sau.",
+   "answer": false,
+   "explain": "Sai. Thành lập chi nhánh trong nước và nước ngoài phải được Ủy ban chấp thuận bằng văn bản TRƯỚC (điểm d khoản 1 Điều 87)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Kể các hoạt động của công ty chứng khoán, công ty quản lý quỹ phải được Ủy ban chấp thuận trước.",
+   "model": "Tạm ngừng hoạt động (trừ bất khả kháng); chào bán, niêm yết chứng khoán của công ty tại nước ngoài; đầu tư gián tiếp ra nước ngoài; thành lập, đóng cửa chi nhánh, văn phòng đại diện, phòng giao dịch, công ty con ở nước ngoài, thay đổi nghiệp vụ tại chi nhánh; đổi tên, địa điểm chi nhánh, văn phòng, phòng giao dịch; cung cấp dịch vụ tại điểm b khoản 1 Điều 86 (Điều 87).",
+   "keywords": [
+    "tạm ngừng",
+    "nước ngoài",
+    "chi nhánh",
+    "điểm b khoản 1 Điều 86"
+   ]
+  }
+ ]
+}

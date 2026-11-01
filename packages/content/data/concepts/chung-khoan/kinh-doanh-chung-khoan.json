@@ -1,0 +1,129 @@
+{
+ "id": "kinh-doanh-chung-khoan",
+ "subject": "chung-khoan",
+ "chapter": "c8-kinh-doanh-chung-khoan",
+ "term": "Kinh doanh chứng khoán",
+ "definition": "Kinh doanh chứng khoán là việc thực hiện nghiệp vụ môi giới chứng khoán, tự doanh chứng khoán, bảo lãnh phát hành chứng khoán, tư vấn đầu tư chứng khoán, quản lý quỹ đầu tư chứng khoán, quản lý danh mục đầu tư chứng khoán và cung cấp dịch vụ về chứng khoán theo quy định tại Điều 86 của Luật này.",
+ "plain": "Kinh doanh chứng khoán là ngành nghề kinh doanh có điều kiện, gồm 6 nghiệp vụ và các dịch vụ đi kèm theo Điều 86: 4 nghiệp vụ của công ty chứng khoán (môi giới, tự doanh, bảo lãnh, tư vấn) và 2 nghiệp vụ riêng của công ty quản lý quỹ (quản lý quỹ, quản lý danh mục). Phân biệt với \"đầu tư chứng khoán\" (khoản 15): nhà đầu tư mua, bán, nắm giữ cho mình thì không cần giấy phép.",
+ "example": "Bạn tự mua bán cổ phiếu cho mình: đầu tư chứng khoán, không cần phép. Bạn nhận tiền của người quen để \"chơi hộ\" lấy phí: đó là quản lý danh mục, một nghiệp vụ kinh doanh chứng khoán, phải có giấy phép.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 28 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "moi-gioi-chung-khoan",
+  "tu-doanh-chung-khoan",
+  "nghiep-vu-cong-ty-chung-khoan"
+ ],
+ "keywords": [
+  "6 nghiệp vụ",
+  "dịch vụ theo Điều 86",
+  "khác đầu tư chứng khoán"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hoạt động nào sau đây KHÔNG phải kinh doanh chứng khoán theo khoản 28 Điều 4?",
+   "options": [
+    "Cá nhân tự mua, bán cổ phiếu cho chính mình",
+    "Môi giới chứng khoán",
+    "Quản lý danh mục đầu tư chứng khoán",
+    "Bảo lãnh phát hành chứng khoán"
+   ],
+   "answer": 0,
+   "explain": "Tự mua bán cho mình là đầu tư chứng khoán (khoản 15 Điều 4).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 28 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Kinh doanh chứng khoán gồm bao nhiêu nghiệp vụ được liệt kê tại khoản 28 Điều 4 (chưa kể dịch vụ theo Điều 86)?",
+   "options": [
+    "6",
+    "4",
+    "3",
+    "5"
+   ],
+   "answer": 0,
+   "explain": "Môi giới, tự doanh, bảo lãnh phát hành, tư vấn đầu tư, quản lý quỹ, quản lý danh mục.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 28 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Kinh doanh chứng khoán",
+   "right": "Đầu tư chứng khoán",
+   "cases": [
+    {
+     "text": "Nhận ủy thác quản lý tiền của người khác để đầu tư lấy phí",
+     "answer": "left"
+    },
+    {
+     "text": "Tự mua, bán, nắm giữ chứng khoán của mình",
+     "answer": "right"
+    },
+    {
+     "text": "Làm trung gian mua, bán chứng khoán cho khách hàng",
+     "answer": "left"
+    }
+   ],
+   "explain": "Khoản 28 và khoản 15 Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Kinh doanh chứng khoán là việc thực hiện nghiệp vụ môi giới, {{tự doanh}}, bảo lãnh phát hành, tư vấn đầu tư, quản lý quỹ, quản lý {{danh mục đầu tư}} chứng khoán và cung cấp dịch vụ về chứng khoán.",
+   "bank_extra": [
+    "niêm yết",
+    "lưu ký"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đầu tư chứng khoán là việc mua, bán, {{nắm giữ}} chứng khoán của nhà đầu tư trên thị trường chứng khoán.",
+   "bank_extra": [
+    "môi giới",
+    "bảo lãnh"
+   ]
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Anh T không có giấy phép, lập nhóm Zalo nhận tiền của 50 người để \"đầu tư hộ\", cam kết lãi 3%/tháng, thu 20% lợi nhuận. Nhận định nào đúng?",
+   "options": [
+    "Đây là kinh doanh chứng khoán (quản lý danh mục) khi không có giấy phép, lại cam kết lợi nhuận: trái luật",
+    "Hợp pháp vì là thỏa thuận dân sự",
+    "Hợp pháp nếu dưới 100 người",
+    "Chỉ là đầu tư chứng khoán của anh T"
+   ],
+   "answer": 0,
+   "explain": "Khoản 28, 35 Điều 4; Điều 70 (cần giấy phép); khoản 1 Điều 91 (cấm cam kết lợi nhuận).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 28 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Định nghĩa kinh doanh chứng khoán và phân biệt với đầu tư chứng khoán.",
+   "model": "Kinh doanh chứng khoán là thực hiện nghiệp vụ môi giới, tự doanh, bảo lãnh phát hành, tư vấn đầu tư, quản lý quỹ, quản lý danh mục và cung cấp dịch vụ về chứng khoán theo Điều 86 (khoản 28 Điều 4); phải có giấy phép. Đầu tư chứng khoán là việc nhà đầu tư mua, bán, nắm giữ chứng khoán cho mình (khoản 15).",
+   "keywords": [
+    "môi giới",
+    "tự doanh",
+    "quản lý danh mục",
+    "đầu tư chứng khoán"
+   ]
+  }
+ ]
+}
