@@ -591,26 +591,21 @@ h1 { text-wrap: balance; }
 /* Lưu ý pháp lý: chỉ ở trang Hồ sơ */
 .legal-note { margin: 28px 0 8px; padding-top: 14px; border-top: 1px solid var(--line); line-height: 1.6; }
 
-/* ---- Thẻ chuyên cần (thay ngọn lửa chuỗi) ---- */
-.streak-card { display: block; width: 100%; height: auto; border-radius: 14px; box-shadow: 0 10px 30px rgba(110, 26, 23, .25); }
-.streak-card.mini { width: 54px; border-radius: 4px; box-shadow: 0 1px 3px rgba(20, 33, 61, .3); flex: none; }
-.streak-card .cg-head { font: 800 26px/1 var(--font-ui); letter-spacing: .32em; fill: #f6d35b; }
-.streak-card .cg-title { font: 800 46px/1 var(--font-display); letter-spacing: .06em; fill: #f6d35b; }
-.streak-card .cg-small { font: 600 14px/1 var(--font-ui); fill: #fbe9c8; }
-.streak-card { --t-off: rgba(255, 255, 255, .2); --t-do: #ff7a5c; --t-lam: #5cc2ff; --t-tim: #c08bff; --t-trang: #ffffff; --t-den: #17130b; }
-.cg-glyph.tier-off path, .cg-logo.tier-off g { stroke: var(--t-off); } .cg-logo.tier-off .cg-fill { fill: var(--t-off); }
-.cg-border.tier-off rect { stroke: rgba(246, 211, 91, .35); }
-.cg-glyph.tier-do path, .cg-logo.tier-do g, .cg-border.tier-do rect { stroke: var(--t-do); } .cg-logo.tier-do .cg-fill, .cg-rec.tier-do { fill: var(--t-do); }
-.cg-glyph.tier-lam path, .cg-logo.tier-lam g, .cg-border.tier-lam rect { stroke: var(--t-lam); } .cg-logo.tier-lam .cg-fill, .cg-rec.tier-lam { fill: var(--t-lam); }
-.cg-glyph.tier-tim path, .cg-logo.tier-tim g, .cg-border.tier-tim rect { stroke: var(--t-tim); } .cg-logo.tier-tim .cg-fill, .cg-rec.tier-tim { fill: var(--t-tim); }
-.cg-glyph.tier-trang path, .cg-logo.tier-trang g, .cg-border.tier-trang rect { stroke: var(--t-trang); } .cg-logo.tier-trang .cg-fill, .cg-rec.tier-trang { fill: var(--t-trang); }
-.cg-glyph.tier-den path, .cg-logo.tier-den g, .cg-border.tier-den rect { stroke: var(--t-den); } .cg-logo.tier-den .cg-fill, .cg-rec.tier-den { fill: var(--t-den); }
-.cg-glyph.tier-den, .cg-logo.tier-den, .cg-border.tier-den { filter: drop-shadow(0 0 3px #f2c14e) drop-shadow(0 0 1px #f2c14e); }
-.cg-rec.tier-vo-cuc { fill: #f6d35b; } .cg-rec { stroke: #fbe9c8; stroke-width: 2; }
-.cg-glyph.now { animation: cgnow 1.6s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: center; }
+/* ---- Thẻ chuyên cần: thẻ đen kim loại ---- */
+.streak-card { display: block; width: 100%; height: auto; border-radius: 16px; box-shadow: 0 14px 34px rgba(0, 0, 0, .35), 0 2px 6px rgba(0, 0, 0, .25); }
+.streak-card.mini { width: 54px; border-radius: 4px; box-shadow: 0 1px 3px rgba(0, 0, 0, .4); flex: none; }
+.streak-card .cg-head { font: 800 40px/1 var(--font-ui); letter-spacing: .14em; }
+.streak-card .cg-sub { font: 600 20px/1 var(--font-ui); letter-spacing: .3em; }
+.streak-card .cg-num { font: 700 54px/1 "Be Vietnam Pro", var(--font-ui); letter-spacing: .06em; }
+.streak-card .cg-cap { font: 600 17px/1 var(--font-ui); letter-spacing: .16em; }
+.streak-card .cg-meta { font: 700 22px/1 var(--font-ui); letter-spacing: .04em; }
+.streak-card .cg-capb { font: 800 17px/1 var(--font-ui); letter-spacing: .12em; }
+.cg-sheen { animation: cgsheen 7s ease-in-out infinite; }
+@keyframes cgsheen { 0%, 55% { transform: rotate(18deg) translateX(0); } 100% { transform: rotate(18deg) translateX(1500px); } }
+.cg-glyph.now { animation: cgnow 1.6s ease-in-out infinite alternate; }
 .cg-burst { animation: cgburst 2.4s ease-in-out infinite alternate; }
-@keyframes cgnow { from { opacity: .7; } to { opacity: 1; } }
-@keyframes cgburst { from { opacity: .35; } to { opacity: .9; } }
+@keyframes cgnow { from { opacity: .65; } to { opacity: 1; } }
+@keyframes cgburst { from { opacity: .08; } to { opacity: .3; } }
 
 .flame { gap: 6px; }
 .flame .streak-card.mini { width: 40px; }
@@ -634,12 +629,9 @@ h1 { text-wrap: balance; }
 /* ---- Chức danh & chân dung (Hồ sơ) ---- */
 .career-grid { display: grid; gap: 18px; }
 @media (min-width: 768px) { .career-grid { grid-template-columns: 300px 1fr; align-items: start; } }
-.portrait { position: relative; aspect-ratio: 4 / 5; border-radius: 10px; overflow: hidden; border: 1px solid var(--line); background: linear-gradient(180deg, var(--cream), var(--card)); isolation: isolate; }
-.portrait-bg { position: absolute; inset: auto 0 0 0; opacity: .5; z-index: -1; }
-.portrait-bg .art { width: 100%; height: auto; }
-.portrait-fig { position: absolute; inset: 0; width: 100%; height: 100%; }
-.portrait .sparks circle { animation: twinkle 2.6s ease-in-out infinite alternate; }
-@keyframes twinkle { from { opacity: .2; } to { opacity: 1; } }
+.portrait-chibi { display: block; width: 100%; height: auto; filter: drop-shadow(0 6px 14px rgba(20, 33, 61, .18)); }
+.portrait-chibi .sparks path { animation: twinkle 2.2s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: center; }
+@keyframes twinkle { from { opacity: .35; transform: scale(.8); } to { opacity: 1; transform: scale(1.1); } }
 .plaque { margin-top: 10px; padding: 12px 14px; border: 1px solid var(--line); border-radius: 8px; background: var(--card); box-shadow: inset 0 0 0 4px var(--card), inset 0 0 0 5px color-mix(in srgb, var(--accent) 45%, var(--line)); }
 .plaque .kicker { margin: 0; }
 .plaque-title { margin: 2px 0 4px; font: 800 22px/1.25 var(--font-display); }

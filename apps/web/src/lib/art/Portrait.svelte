@@ -1,83 +1,102 @@
 <script lang="ts">
-  // Chân dung bán thân cách điệu (spec thăng chức §3.4): người phẳng nét như các tranh khác, không mô phỏng người thật;
-  // trang phục xét xử/kiểm sát vẽ giản lược, không cấp hiệu, phù hiệu thật. Nền là cảnh trụ sở theo nhánh/cấp.
+  // Chân dung chibi nét dày (thẻ trắng bo góc trên nền màu nhánh): đầu to, nét đen đều, màu phẳng — nhân vật chung, không mô phỏng người thật.
+  // Trang phục xét xử/kiểm sát vẽ giản lược, không cấp hiệu/phù hiệu thật. Phía sau: trụ sở theo nhánh vẽ cùng nét, tô nhạt.
   import type { Avatar } from '$lib/game/wardrobe';
   import type { ArtName } from './registry';
-  import SubjectArt from './SubjectArt.svelte';
-  import { ring, around } from './kit';
-  let { avatar, scene = 'tam-quan' }: { avatar: Avatar; scene?: ArtName } = $props();
+  import { ring } from './kit';
+  let { avatar, scene = 'tam-quan', accent = '#3f9e63' }: { avatar: Avatar; scene?: ArtName; accent?: string } = $props();
+  const kind = $derived(scene === 'quoc-hoi' ? 'quoc-hoi' : scene === 'toa-an' ? 'toa-an' : scene === 'ngo-mon' ? 'tru-so' : 'dinh');
   const o = $derived(avatar.outfit);
-  const sparks = around(200, 230, 170, 14);
+  const INK = '#1d1d1f', SKIN = '#fde6da', BLUSH = '#f7b9b9';
+  const stars = [[46, 70, 9], [252, 92, 7], [232, 40, 5], [60, 150, 5], [262, 170, 8]];
+  const star = (x: number, y: number, r: number) => `M${x} ${y - r}Q${x + r * 0.18} ${y - r * 0.18} ${x + r} ${y}Q${x + r * 0.18} ${y + r * 0.18} ${x} ${y + r}Q${x - r * 0.18} ${y + r * 0.18} ${x - r} ${y}Q${x - r * 0.18} ${y - r * 0.18} ${x} ${y - r}z`;
 </script>
 
-<div class="portrait fx-{avatar.effect}">
-  <div class="portrait-bg"><SubjectArt name={scene} /></div>
-  <svg class="art portrait-fig" viewBox="0 0 400 500" aria-hidden="true" focusable="false">
-    {#if avatar.effect === 'nang' || avatar.effect === 'trong-dong' || avatar.effect === 'khung-vang' || avatar.effect === 'hat-sang'}
-      <circle cx="200" cy="200" r="150" class="f-sun" opacity=".85" />
-    {/if}
+<svg class="portrait-chibi" viewBox="0 0 300 360" aria-hidden="true" focusable="false" stroke-linecap="round" stroke-linejoin="round">
+  <defs><clipPath id="pc-clip"><rect x="16" y="16" width="268" height="328" rx="20" /></clipPath></defs>
+  <rect width="300" height="360" rx="26" fill={accent} />
+  <rect x="16" y="16" width="268" height="328" rx="20" fill="#fff" />
+  <g clip-path="url(#pc-clip)">
+    <!-- nền -->
+    {#if avatar.effect !== 'khong'}<circle cx="150" cy="150" r="104" fill={accent} opacity=".12" />{/if}
     {#if avatar.effect === 'trong-dong' || avatar.effect === 'khung-vang' || avatar.effect === 'hat-sang'}
-      <g class="sun-spin"><path class="f-sunline" d={ring(200, 200, 132, 148, 56)} /><circle class="kg" cx="200" cy="200" r="124" stroke-width="2" stroke-dasharray="2 7" /></g>
+      <g class="sun-spin" opacity=".55"><path d={ring(150, 150, 96, 108, 44)} fill={accent} opacity=".5" /><circle cx="150" cy="150" r="90" fill="none" stroke={accent} stroke-width="2" stroke-dasharray="2 6" /></g>
     {/if}
-    {#if avatar.effect === 'hat-sang'}
-      <g class="sparks">{#each sparks as s, i (i)}<circle cx={s.x} cy={s.y} r={i % 3 ? 2.2 : 3.4} class="f-acc" style="animation-delay:{i * 0.21}s" />{/each}</g>
+    <g fill={accent} fill-opacity=".14" stroke={INK} stroke-opacity=".35" stroke-width="2.4">
+      {#if kind === 'quoc-hoi'}
+        <rect x="54" y="214" width="192" height="90" /><rect x="110" y="186" width="80" height="28" /><ellipse cx="150" cy="186" rx="40" ry="7" />
+        <path d="M66 224v70M84 224v70M102 224v70M198 224v70M216 224v70M234 224v70" fill="none" />
+      {:else if kind === 'toa-an'}
+        <path d="M60 230l90-50l90 50z" /><rect x="66" y="230" width="168" height="80" />
+        <path d="M84 238v66M108 238v66M192 238v66M216 238v66M150 192v24M140 204h20" fill="none" />
+      {:else if kind === 'tru-so'}
+        <rect x="40" y="226" width="220" height="80" /><path d="M30 226q20-20 40-14h160q20-6 40 14z" /><rect x="120" y="190" width="60" height="36" /><path d="M110 192q20-18 40-12q20-6 40 12z" />
+      {:else}
+        <path d="M44 236q16-22 40-18h132q24-4 40 18z" /><rect x="60" y="236" width="180" height="70" /><path d="M128 306v-34a22 22 0 0 1 44 0v34" fill="none" />
+      {/if}
+    </g>
+    {#if avatar.effect === 'hat-sang' || avatar.effect === 'nang'}
+      <g class="sparks" fill={accent} stroke={INK} stroke-width="1.6">{#each stars.slice(0, avatar.effect === 'nang' ? 2 : 5) as [x, y, r], i (i)}<path d={star(x, y, r)} style="animation-delay:{i * 0.35}s" />{/each}</g>
     {/if}
-    <!-- vai + trang phục -->
-    {#if o === 'ao-choang'}
-      <path class="f-void k" d="M70 500q0-120 80-140l50 30l50-30q80 20 80 140z" stroke-width="2.5" />
-      <path class="f-seal" d="M150 360l50 30l50-30l8 14l-58 34l-58-34z" />
-      <path class="f-card k" d="M178 366l22 22l22-22v-14h-44z" stroke-width="2" />
-    {:else if o === 'dong-phuc-ks'}
-      <path class="f-ksu k" d="M70 500q0-120 80-140l50 20l50-20q80 20 80 140z" stroke-width="2.5" />
-      <path class="f-ksu2 k" d="M168 360l32 20l32-20v-10h-64z" stroke-width="2" />
-      <g class="f-acc k" stroke-width="1.2"><circle cx="200" cy="410" r="5" /><circle cx="200" cy="440" r="5" /><circle cx="200" cy="470" r="5" /></g>
-      <path class="k" d="M200 380v120" stroke-width="2" />
-    {:else if o === 'ao-dai'}
-      <path class="f-seal k" d="M70 500q0-120 80-140l50 10l50-10q80 20 80 140z" stroke-width="2.5" />
-      <path class="f-acc k" d="M176 352h48v22q-24 10-48 0z" stroke-width="2" />
-      <path class="ka" d="M120 420q20-10 40 0t40 0t40 0t40 0M110 460q22-10 45 0t45 0t45 0t45 0" stroke-width="2.4" fill="none" />
-      <path class="k" d="M200 374v126" stroke-width="2" />
-    {:else if o === 'vest'}
-      <path class="f-card k" d="M168 360h64l-10 140h-44z" stroke-width="2" />
-      <path class="f-ink k" d="M70 500q0-120 80-140l30 60l20-30l20 30l30-60q80 20 80 140z" stroke-width="2.5" />
-      <path class="f-seal k" d="M193 372h14l4 10l-6 46l-5 8l-5-8l-6-46z" stroke-width="1.6" />
-      <path class="kp" d="M150 360l38 70M250 360l-38 70" stroke-width="2" />
-    {:else}
-      <path class="f-card k" d="M70 500q0-120 80-140l50 24l50-24q80 20 80 140z" stroke-width="2.5" />
-      <path class="f-cream k" d="M160 360l40 28l-20 22zM240 360l-40 28l20 22z" stroke-width="2" />
-      <path class="k" d="M200 388v112" stroke-width="1.6" />
-      <g class="f-line"><circle cx="200" cy="420" r="3" /><circle cx="200" cy="450" r="3" /><circle cx="200" cy="480" r="3" /></g>
-    {/if}
-    <!-- cổ, đầu -->
-    {#if avatar.hair === 'dai'}<path class="f-void" d="M130 214q-8 80 8 118q8 10 22 12h80q14-2 22-12q16-38 8-118z" />{/if}
-    <path class="f-skin k" d="M180 312v40q20 14 40 0v-40z" stroke-width="2" />
-    <ellipse class="f-skin k" cx="200" cy="245" rx="68" ry="82" stroke-width="2.5" />
-    <ellipse class="f-skin k" cx="132" cy="252" rx="10" ry="16" stroke-width="2" /><ellipse class="f-skin k" cx="268" cy="252" rx="10" ry="16" stroke-width="2" />
+    <!-- thân + trang phục -->
+    <g stroke={INK} stroke-width="3.4">
+      {#if o === 'ao-choang'}
+        <path d="M38 360q4-96 74-110h76q70 14 74 110z" fill="#202024" />
+        <path d="M112 250l38 34l38-34" fill="none" stroke="#c0392b" stroke-width="9" />
+        <path d="M128 252l22 22l22-22z" fill="#fff" />
+      {:else if o === 'dong-phuc-ks'}
+        <path d="M38 360q4-96 74-110h76q70 14 74 110z" fill="#2c5aa0" />
+        <path d="M120 250h60v14q-30 12-60 0z" fill="#1e3f75" />
+        <path d="M150 266v94" fill="none" /><g fill="#e8c45a" stroke-width="2"><circle cx="150" cy="290" r="5" /><circle cx="150" cy="318" r="5" /><circle cx="150" cy="346" r="5" /></g>
+      {:else if o === 'ao-dai'}
+        <path d="M38 360q4-96 74-110h76q70 14 74 110z" fill="#c0392b" />
+        <path d="M126 244h48v22q-24 8-48 0z" fill="#e8c45a" />
+        <path d="M70 312q20-10 40 0t40 0t40 0t40 0M80 340q18-8 35 0t35 0t35 0t35 0" fill="none" stroke="#e8c45a" stroke-width="3" />
+      {:else if o === 'vest'}
+        <path d="M118 250h64l-8 110h-48z" fill="#fff" />
+        <path d="M38 360q4-96 74-110l26 62l12-22l12 22l26-62q70 14 74 110z" fill="#24324f" />
+        <path d="M144 262h12l4 10l-6 44l-4 6l-4-6l-6-44z" fill="#c0392b" stroke-width="2.4" />
+      {:else}
+        <path d="M38 360q4-96 74-110h76q70 14 74 110z" fill="#fff" />
+        <path d="M112 250l38 28l-18 20zM188 250l-38 28l18 20z" fill="#fff" />
+        <rect x="190" y="292" width="26" height="22" rx="3" fill={accent} stroke-width="2.6" />
+      {/if}
+    </g>
+    <!-- cổ, tóc sau, đầu -->
+    {#if avatar.hair === 'dai'}<path d="M84 140q-10 80 12 114h108q22-34 12-114z" fill={INK} />{/if}
+    <path d="M134 214v34q16 10 32 0v-34z" fill={SKIN} stroke={INK} stroke-width="3.2" />
+    <circle cx="90" cy="160" r="15" fill={SKIN} stroke={INK} stroke-width="3.2" /><circle cx="210" cy="160" r="15" fill={SKIN} stroke={INK} stroke-width="3.2" />
+    <path d="M86 156q6-4 9 4M214 156q-6-4-9 4" fill="none" stroke={INK} stroke-width="2.2" />
+    <ellipse cx="150" cy="156" rx="62" ry="64" fill={SKIN} stroke={INK} stroke-width="3.4" />
+    <!-- tóc trước -->
     {#if avatar.hair === 'dai'}
-      <path class="f-void k" d="M130 236q-4-84 70-90q74 6 70 90q-30-34-70-40q-40 6-70 40z" stroke-width="2" />
+      <path d="M86 150q-4-72 64-76q70 4 64 76q-6-26-16-34q-4 18-18 24q4-16 0-26q-14 22-46 28q8-12 8-26q-20 16-40 22q-2 4-16 12z" fill={INK} stroke={INK} stroke-width="3" />
     {:else}
-      <path class="f-void k" d="M132 226q0-74 68-78q70 4 68 78q-16-30-40-36q-20 14-60 8q-24 6-36 28z" stroke-width="2" />
+      <path d="M90 138q-4-60 60-66q8-10 22-12q-6 8-4 12q40 10 42 66q-10-18-24-24q2 10-4 18q-6-14-20-18q2 10-6 16q-6-14-22-16q4 10-2 16q-10-10-24-10q-8 4-18 18z" fill={INK} stroke={INK} stroke-width="3" />
     {/if}
     <!-- mặt -->
-    <path class="k" d="M168 232q10-6 20 0M212 232q10-6 20 0" stroke-width="2.6" />
-    <g class="f-ink"><ellipse cx="178" cy="250" rx="5" ry="6" /><ellipse cx="222" cy="250" rx="5" ry="6" /></g>
-    <path class="k" d="M200 256q-6 20 2 24" stroke-width="2" />
-    <path class="k" d="M184 296q16 10 32 0" stroke-width="2.6" />
-    <g class="f-lotus" opacity=".55"><circle cx="160" cy="280" r="9" /><circle cx="240" cy="280" r="9" /></g>
+    <g fill={INK}><ellipse cx="126" cy="164" rx="7.5" ry="10" /><ellipse cx="174" cy="164" rx="7.5" ry="10" /></g>
+    <g fill="#fff"><circle cx="128.5" cy="160" r="2.6" /><circle cx="176.5" cy="160" r="2.6" /></g>
+    <path d="M116 146q8-5 16-2M168 144q8-3 16 2" fill="none" stroke={INK} stroke-width="2.6" />
+    <g fill={BLUSH} opacity=".85"><ellipse cx="110" cy="184" rx="10" ry="6" /><ellipse cx="190" cy="184" rx="10" ry="6" /></g>
+    <path d="M144 194q6 5 12 0" fill="none" stroke={INK} stroke-width="2.6" />
     <!-- phụ kiện -->
     {#if avatar.accessory === 'kinh'}
-      <g class="k" stroke-width="2.6" fill="none"><circle cx="178" cy="252" r="16" /><circle cx="222" cy="252" r="16" /><path d="M194 250h12M162 248l-26-4M238 248l26-4" /></g>
+      <g fill="none" stroke={INK} stroke-width="3"><circle cx="126" cy="164" r="17" /><circle cx="174" cy="164" r="17" /><path d="M143 162h14M109 160l-18-4M191 160l18-4" /></g>
     {:else if avatar.accessory === 'but'}
-      <path class="f-acc2 k" d="M244 408l14-34l6 2l-12 36z" stroke-width="1.6" /><rect class="f-card k" x="236" y="410" width="30" height="8" stroke-width="1.4" />
+      <g stroke={INK} stroke-width="2.6"><path d="M200 300l10-34l7 2l-9 34z" fill="#e8c45a" /><rect x="190" y="296" width="30" height="8" rx="2" fill="#fff" /></g>
     {:else if avatar.accessory === 'so'}
-      <g transform="rotate(-10 300 450)"><rect class="f-seal k" x="268" y="410" width="60" height="80" rx="4" stroke-width="2" /><path class="ka" d="M280 430h36M280 442h28" stroke-width="2" /></g>
+      <g transform="rotate(-12 230 320)" stroke={INK} stroke-width="3"><rect x="206" y="290" width="48" height="62" rx="5" fill={accent} /><path d="M216 306h28M216 318h20" stroke="#fff" /></g>
     {:else if avatar.accessory === 'cap'}
-      <rect class="f-acc2 k" x="34" y="420" width="96" height="66" rx="6" stroke-width="2.2" /><path class="k" d="M66 420v-10h32v10M34 446h96" stroke-width="2.2" /><rect class="f-acc k" x="76" y="440" width="12" height="12" stroke-width="1.4" />
+      <g stroke={INK} stroke-width="3"><rect x="30" y="292" width="76" height="54" rx="7" fill="#9a6b3f" /><path d="M54 292v-10h28v10M30 314h76" fill="none" /><rect x="62" y="308" width="12" height="12" rx="2" fill="#e8c45a" /></g>
     {:else if avatar.accessory === 'huy-hieu'}
-      <circle class="f-acc k" cx="250" cy="410" r="12" stroke-width="1.8" /><path class="f-sun" d={ring(250, 410, 6, 10, 12)} /><circle class="f-seal" cx="250" cy="410" r="4" />
+      <g stroke={INK} stroke-width="2.4"><circle cx="196" cy="282" r="11" fill="#e8c45a" /><circle cx="196" cy="282" r="4.5" fill={accent} /></g>
+      <g stroke={INK} stroke-width="2" fill={accent}><rect x="86" y="174" width="7" height="13" rx="3.5" /><rect x="207" y="174" width="7" height="13" rx="3.5" /></g>
     {/if}
-    {#if avatar.effect === 'khung-vang' || avatar.effect === 'hat-sang'}
-      <rect x="8" y="8" width="384" height="484" rx="14" fill="none" class="s-goldline" stroke-width="6" /><rect x="20" y="20" width="360" height="460" rx="10" fill="none" class="s-goldline" stroke-width="2" />
-    {/if}
-  </svg>
-</div>
+    {#if avatar.effect === 'hat-sang' || avatar.effect === 'trong-dong'}<path d={star(198, 100, 9)} fill={accent} stroke={INK} stroke-width="1.8" />{/if}
+  </g>
+  {#if avatar.effect === 'khung-vang' || avatar.effect === 'hat-sang'}
+    <rect x="22" y="22" width="256" height="316" rx="16" fill="none" stroke="#d9a93a" stroke-width="4" /><rect x="30" y="30" width="240" height="300" rx="12" fill="none" stroke="#d9a93a" stroke-width="1.6" />
+  {/if}
+  <rect x="16" y="16" width="268" height="328" rx="20" fill="none" stroke={INK} stroke-width="3.4" />
+</svg>

@@ -17,6 +17,8 @@
   const SCENE: Record<string, ArtName> = { 'hanh-phap': 'tam-quan', 'lap-phap': 'quoc-hoi', 'xet-xu': 'toa-an', 'kiem-sat': 'toa-an' };
   const scene = $derived<ArtName>(t.post?.id === 'chu-tich-nuoc' ? 'quoc-hoi' : career.branch === 'hanh-phap' && t.tier && t.tier !== 'co-so' ? 'ngo-mon' : SCENE[career.branch]);
 
+  const ACCENT: Record<string, string> = { 'hanh-phap': '#3f9e63', 'lap-phap': '#c0392b', 'xet-xu': '#2b3f74', 'kiem-sat': '#2c6fb7' };
+  const accent = $derived(t.post?.id === 'chu-tich-nuoc' ? '#c99a2e' : ACCENT[career.branch]);
   let raw = $state<Avatar>({ ...DEFAULT_AVATAR });
   const av = $derived(sanitize(raw, cs.achieved));
   const un = $derived(unlocked(cs.achieved));
@@ -31,7 +33,7 @@
 <section class="card wide career">
   <div class="career-grid">
     <div class="career-portrait">
-      <Portrait avatar={av} {scene} />
+      <Portrait avatar={av} {scene} {accent} />
       <div class="plaque">
         <p class="kicker">{t.tier ? TIER_NAMES[t.tier] : 'Khởi đầu'}</p>
         <p class="plaque-title">{t.title}</p>

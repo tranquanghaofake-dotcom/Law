@@ -145,6 +145,12 @@ Bảng chức danh và điều kiện nằm ở `apps/web/src/lib/game/career.ts
 - **Chủ tịch nước:** cấp Trung ương ở ≥ 2 nhánh + 59 sách cấp 3.
 - Tên cấp toà án và viện kiểm sát dưới cấp tối cao **chưa đối chiếu luật tổ chức ngành**. Dùng tên chung ("Thẩm phán", "Kiểm sát viên", "Thẩm tra viên Tòa án", "Kiểm tra viên"); chỉ gọi tên cấp toà/viện ở "cấp tỉnh" và "tối cao".
 
+### 3.7 Đổi phong cách thẻ và chân dung (Hào, 02/11/2026)
+Hào thấy thẻ nền son và chân dung nét mảnh chưa đẹp, gửi 2 mẫu: lưới avatar chibi (ảnh có dấu 即梦AI) và thẻ VIP đen hoa văn vàng. Chỉ học phong cách, không chép nhân vật hay chữ.
+- **Không dùng GIF/video:** thẻ đổi theo từng ngày (27 ký tự × 6 màu + huy hiệu + viền + kỷ lục) và chân dung ghép lớp tự do; ảnh raster/video không tạo được các tổ hợp này, nặng, không đổi theo chế độ tối, không đọc được bằng trình đọc màn hình. Chuyển động "kiểu GIF" làm bằng SVG + CSS (vệt sáng lướt, nhũ holographic, sao lấp lánh), tự tắt khi giảm chuyển động.
+- **Thẻ chuyên cần → thẻ đen kim loại:** nền đen nhám, hoa văn chìm sen + mây; viền hai đường kèm dải hoạ tiết sóng; 27 ký hoạ trong huy chương nhỏ chạy quanh viền (sáng theo chiều kim đồng hồ từ giữa cạnh trên); huy hiệu vàng kim trong bầu dục; số "NGÀY CHUỖI" và "KỶ LỤC" (4 chữ số) thay tên chủ thẻ; màu lửa là màu nhũ (đỏ đồng, lam, tím, bạch kim, đen viền vàng, holographic chuyển động); vệt sáng lướt mỗi 7 giây.
+- **Chân dung → chibi nét dày:** thẻ trắng bo góc trên nền màu nhánh (hành pháp xanh lá, lập pháp đỏ, xét xử xanh đêm, kiểm sát xanh dương, Chủ tịch nước vàng); đầu to, nét đen 3,4 px, mắt tròn có đốm sáng, má hồng, màu phẳng; trụ sở theo nhánh vẽ cùng nét, tô nhạt phía sau; sao ✦ lấp lánh ở nền "Hạt sáng".
+
 ## 4. Dữ liệu
 - Store mới (IndexedDB): `books` (chapterId → cấp cao nhất, ngày đạt), `career` (nhánh đang chọn, chức danh đã đạt), `card` (kỷ lục màu). Migration từ dữ liệu cũ: tính sách từ `progress` hiện có. XP vẫn giữ, chỉ hiển thị phụ.
 - `game/rank.ts` (khoa cử, phẩm hàm) **giữ file và test, không còn hiển thị**. XP vẫn cộng và hiện phụ ở Hồ sơ. Bậc 6 đổi tên **Tinh thông**.
