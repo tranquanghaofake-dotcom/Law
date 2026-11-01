@@ -23,8 +23,8 @@
   import { isTypingTarget } from '$lib/ui/cards/types';
   import { go } from '$lib/router.svelte';
 
-  let { steps, concepts, levels, lessonId, onagain }: {
-    steps: Step[]; concepts: Concept[]; levels: Record<string, Level>; lessonId?: string; onagain?: () => void;
+  let { steps, concepts, levels, lessonId, onagain, onnext, title }: {
+    steps: Step[]; concepts: Concept[]; levels: Record<string, Level>; lessonId?: string; onagain?: () => void; onnext?: () => void; title?: string;
   } = $props();
 
   // svelte-ignore state_referenced_locally
@@ -95,9 +95,9 @@
 <Reveal {reveal} src={art} />
 <div class="session-main">
   {#if ended}
-    <SessionEnd summary={summary(run)} {concepts} streak={ended.streak} streakEvent={ended.streakEvent} rankBefore={ended.rankBefore} rankAfter={ended.rankAfter} dueTomorrow={ended.dueTomorrow} onhome={() => go('home')} {onagain} />
+    <SessionEnd summary={summary(run)} {concepts} streak={ended.streak} streakEvent={ended.streakEvent} rankBefore={ended.rankBefore} rankAfter={ended.rankAfter} dueTomorrow={ended.dueTomorrow} onhome={() => go('home')} {onagain} {onnext} />
   {:else if step && Card}
-    <SessionBar done={run.i} total={run.steps.length} onexit={() => (confirmExit = true)} />
+    <SessionBar done={run.i} total={run.steps.length} {title} onexit={() => (confirmExit = true)} />
     {#if confirmExit}
       <div class="card confirm" role="dialog" aria-label="Thoát phiên">
         <p>Thoát, giữ tiến độ? Những câu đã trả lời đã được lưu.</p>

@@ -2,10 +2,10 @@
   import type { Concept, Level } from '$lib/content/types';
   import type { StreakEvent } from '$lib/game/streak';
   import type { RankInfo } from '$lib/game/rank';
-  let { summary, concepts, streak, streakEvent, rankBefore, rankAfter, dueTomorrow, onhome, onagain }: {
+  let { summary, concepts, streak, streakEvent, rankBefore, rankAfter, dueTomorrow, onhome, onagain, onnext }: {
     summary: { correct: number; total: number; xp: number; levelUps: { conceptId: string; to: Level }[] };
     concepts: Concept[]; streak: number; streakEvent: StreakEvent; rankBefore: RankInfo; rankAfter: RankInfo; dueTomorrow: number;
-    onhome: () => void; onagain?: () => void;
+    onhome: () => void; onagain?: () => void; onnext?: () => void;
   } = $props();
   const term = (id: string) => concepts.find((c) => c.id === id)?.term ?? id;
   const ranked = $derived(rankAfter.rank !== rankBefore.rank || rankAfter.tier !== rankBefore.tier);
@@ -27,7 +27,8 @@
   {/if}
   <p class="muted">Hẹn ôn ngày mai: {dueTomorrow} khái niệm.</p>
   <div class="row">
-    <button class="btn primary" type="button" onclick={onhome}>Về trang chủ</button>
-    {#if onagain}<button class="btn ghost" type="button" onclick={onagain}>Học tiếp</button>{/if}
+    <button class="btn primary" type="button" onclick={onhome}>Về Hôm nay</button>
+    {#if onnext}<button class="btn ghost" type="button" onclick={onnext}>Học đợt tiếp →</button>
+    {:else if onagain}<button class="btn ghost" type="button" onclick={onagain}>Học lại đợt này</button>{/if}
   </div>
 </section>
