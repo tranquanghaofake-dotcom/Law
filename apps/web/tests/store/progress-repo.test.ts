@@ -92,4 +92,13 @@ describe('progress repo — fallback chỉ khi IndexedDB không mở được (C
     expect(storage.available).toBe(false);
     Dexie.dependencies.indexedDB = saved;
   });
+  it('reviewDays(since) trả các ngày (theo giờ địa phương) có ít nhất một lượt trả lời', async () => {
+    const repo = createRepo('t-days');
+    await repo.record({ conceptId: 'a', subject: 'hp', correct: true, elapsedMs: 1000, now: new Date(2026, 9, 30, 10) });
+    await repo.record({ conceptId: 'b', subject: 'hp', correct: false, elapsedMs: 1000, now: new Date(2026, 9, 30, 21) });
+    await repo.record({ conceptId: 'a', subject: 'hp', correct: true, elapsedMs: 1000, now: new Date(2026, 9, 31, 9) });
+    const days = await repo.reviewDays(new Date(2026, 9, 25));
+    expect([...days].sort()).toEqual(['2026-10-30', '2026-10-31']);
+    expect((await repo.reviewDays(new Date(2026, 9, 31))).has('2026-10-30')).toBe(false);
+  });
 });

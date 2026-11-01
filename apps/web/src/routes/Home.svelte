@@ -4,9 +4,8 @@
   import { loadIndex, loadSubject, loadConcepts } from '$lib/content/loader';
   import { repo } from '$lib/store/progress-repo';
   import { stats } from '$lib/store/stats';
-  import { LuyenLuatDB } from '$lib/store/db';
   import { gradeFor } from '$lib/game/rank';
-  import { localDay } from '$lib/game/streak';
+  import { weekFlags, weekStart } from '$lib/ui/week';
   import { hashFor } from '$lib/router.svelte';
   import { GROUPS, groupSets } from '$lib/ui/groups';
   import { knownConcepts, pickHeroState, type HeroState } from '$lib/ui/today';
@@ -55,18 +54,13 @@
       quick = pick ? { set: pick, best: pickBest } : null;
 
       // rail: 7 ngày có phiên, hẹn ôn ngày mai
-      try {
-        const db = new LuyenLuatDB();
-        const since = Date.now() - 7 * 86400_000;
-        const days = new Set((await db.reviews.where('at').above(since).toArray()).map((r) => localDay(new Date(r.at))));
-        week = Array.from({ length: 7 }, (_, i) => days.has(localDay(new Date(Date.now() - (6 - i) * 86400_000))));
-      } catch { /* chế độ riêng tư */ }
+      week = weekFlags(await repo.reviewDays(weekStart()));
       const tomorrow = new Date(); tomorrow.setDate(tomorrow.getDate() + 1); tomorrow.setHours(23, 59, 59, 999);
       dueTomorrow = (await repo.due(tomorrow)).length;
     } catch (e) { error = (e as Error).message; }
   }
   load();
-  $effect(() => setRail(HomeRail, { week, dueTomorrow }));
+  $effect(() => { if (hero) return setRail(HomeRail, { week, dueTomorrow }); });
 </script>
 
 {#if error}

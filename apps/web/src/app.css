@@ -299,14 +299,21 @@ kbd { font: 600 11px/1 var(--font-ui); background: rgba(255,255,255,.18); border
 .rail .legal { padding: 0 4px; }
 
 /* ---- Hồ sơ & cài đặt ---- */
-.row-between { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); margin: 0 0 16px; }
+.tabs a { padding: 10px 14px; text-decoration: none; font-weight: 600; color: var(--muted); border-bottom: 3px solid transparent; margin-bottom: -1px; }
+.tabs a.on { color: var(--ink); border-bottom-color: var(--accent); }
+.profile-grid { display: grid; gap: 12px; }
+.profile-grid .card { margin: 0; }
+@media (min-width: 768px) { .profile-grid { grid-template-columns: 1fr 1fr; align-items: start; } .profile-grid .wide { grid-column: 1 / -1; } }
+.grade-list li { display: grid; gap: 4px; } .grade-list a { text-decoration: none; } .grade-list .bar { margin: 0; }
+.empty { margin: 4px 0; }
 .profile .rank-line { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 18px; }
 .big-seal { display: inline-grid; place-items: center; width: 36px; height: 36px; border-radius: 8px; background: var(--seal); color: #fff; font-weight: 800; transform: rotate(-6deg); }
 .bar { height: 8px; background: var(--line); border-radius: 999px; overflow: hidden; margin: 8px 0 12px; }
 .bar span { display: block; height: 100%; background: var(--accent); }
 .levels { display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; align-items: end; height: 120px; }
 .levels .col { display: flex; flex-direction: column; align-items: center; justify-content: end; gap: 4px; height: 100%; }
-.levels .stick { width: 100%; background: var(--accent); border-radius: 6px 6px 0 0; }
+.levels .stick { width: 100%; border-radius: 6px 6px 0 0; }
 .levels .n { font-size: 12px; font-weight: 700; }
 .settings .setting { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--line); }
 .settings select, .settings input[type="range"] { font: inherit; }

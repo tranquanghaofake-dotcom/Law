@@ -3,6 +3,7 @@ import { isDue, newCard, ratingFor, review } from '$lib/engine/fsrs';
 import { nextLevel } from '$lib/engine/progress';
 import { LuyenLuatDB, type ConceptProgress, type ReviewRow } from './db';
 import { storage } from './status.svelte';
+import { localDay } from '$lib/game/streak';
 
 export type { ConceptProgress };
 
@@ -17,6 +18,8 @@ export type ProgressRepo = {
   difficult(): Promise<ConceptProgress[]>;
   all(subject?: string): Promise<ConceptProgress[]>;
   reviewCount(): Promise<number>;
+  /** Ngày (YYYY-MM-DD giờ địa phương) có ít nhất một lượt trả lời từ `since`. */
+  reviewDays(since: Date): Promise<Set<string>>;
   exportAll(): Promise<string>;
   importAll(json: string): Promise<void>;
   clear(): Promise<void>;
@@ -75,6 +78,7 @@ function memoryRepo(): ProgressRepo {
     async difficult() { return list().filter((c) => c.wrongStreak >= 3); },
     async all(subject) { return list(subject); },
     async reviewCount() { return s.reviews.length; },
+    async reviewDays(since) { return new Set(s.reviews.filter((r) => r.at >= since.getTime()).map((r) => localDay(new Date(r.at)))); },
     async exportAll() { return JSON.stringify({ v: 1, concepts: list(), reviews: s.reviews }); },
     async importAll(json) {
       const d = parseExport(json);
@@ -108,6 +112,7 @@ function dexieRepo(db: LuyenLuatDB): ProgressRepo {
     async difficult() { return (await db.concepts.toArray()).filter((c) => c.wrongStreak >= 3); },
     async all(subject) { return subject ? db.concepts.where('subject').equals(subject).toArray() : db.concepts.toArray(); },
     async reviewCount() { return db.reviews.count(); },
+    async reviewDays(since) { return new Set((await db.reviews.where('at').aboveOrEqual(since.getTime()).toArray()).map((r) => localDay(new Date(r.at)))); },
     async exportAll() {
       const [concepts, reviews, stats, settings] = await Promise.all([db.concepts.toArray(), db.reviews.toArray(), db.stats.toArray(), db.settings.toArray()]);
       return JSON.stringify({ v: 1, concepts, reviews, stats, settings });
@@ -155,6 +160,7 @@ export function createRepo(name = 'luyen-luat'): ProgressRepo {
       difficult: () => guard(() => target.difficult()),
       all: (s) => guard(() => target.all(s)),
       reviewCount: () => guard(() => target.reviewCount()),
+      reviewDays: (d) => guard(() => target.reviewDays(d)),
       exportAll: () => guard(() => target.exportAll()),
       importAll: (j) => guard(() => target.importAll(j)),
       clear: () => guard(() => target.clear()),
