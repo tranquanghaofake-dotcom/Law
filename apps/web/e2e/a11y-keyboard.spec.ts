@@ -1,4 +1,6 @@
 import { expect, test } from '@playwright/test';
+import { createRequire } from 'node:module';
+const require = createRequire(import.meta.url);
 const B = process.env.BASE_PATH ?? '/';
 
 test('Space đọc, Escape hỏi thoát, reduced-motion đặt class, aria-label phương án', async ({ page }) => {
@@ -53,4 +55,19 @@ test('build PWA có manifest và service worker', async ({ request }) => {
   expect((await m.json()).name).toContain('Luyện Luật');
   const sw = await request.get(B + 'sw.js');
   expect(sw.ok()).toBe(true);
+});
+
+test('axe-core: không có vi phạm serious/critical ở các trang có shell (390 và 1280 px)', async ({ page }) => {
+  const axePath = require.resolve('axe-core/axe.min.js');
+  for (const [w, h] of [[390, 844], [1280, 800]]) {
+    await page.setViewportSize({ width: w, height: h });
+    for (const hash of ['#/', '#/mon', '#/mon/hien-phap', '#/luyen-de', '#/toi', '#/cai-dat']) {
+      await page.goto(B + hash);
+      await page.locator('main h1, main .hero-card').first().waitFor();
+      await page.addScriptTag({ path: axePath });
+      const res = await page.evaluate(async () => (window as any).axe.run(document, { resultTypes: ['violations'] }));
+      const bad = res.violations.filter((v: any) => v.impact === 'serious' || v.impact === 'critical').map((v: any) => `${v.id}: ${v.nodes.map((n: any) => n.target.join(' ')).slice(0, 3).join(' | ')}`);
+      expect(bad, `${w}px ${hash}`).toEqual([]);
+    }
+  }
 });

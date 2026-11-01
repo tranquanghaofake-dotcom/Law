@@ -18,6 +18,7 @@
   import Feedback from '$lib/ui/Feedback.svelte';
   import SessionBar from '$lib/ui/SessionBar.svelte';
   import LessonPanel from '$lib/ui/LessonPanel.svelte';
+  import LessonStrip from '$lib/ui/LessonStrip.svelte';
   import SessionEnd from '$lib/ui/SessionEnd.svelte';
   import Reveal from '$lib/ui/Reveal.svelte';
   import { isTypingTarget } from '$lib/ui/cards/types';
@@ -98,6 +99,7 @@
     <SessionEnd summary={summary(run)} {concepts} streak={ended.streak} streakEvent={ended.streakEvent} rankBefore={ended.rankBefore} rankAfter={ended.rankAfter} dueTomorrow={ended.dueTomorrow} onhome={() => go('home')} {onagain} {onnext} />
   {:else if step && Card}
     <SessionBar done={run.i} total={run.steps.length} {title} onexit={() => (confirmExit = true)} />
+    {#if lessonId}<LessonStrip {concepts} levels={run.levels} current={step?.conceptId ?? ''} />{/if}
     {#if confirmExit}
       <div class="card confirm" role="dialog" aria-label="Thoát phiên">
         <p>Thoát, giữ tiến độ? Những câu đã trả lời đã được lưu.</p>

@@ -33,3 +33,30 @@ test('#/mon liệt kê môn có nội dung và dẫn vào trang môn', async ({ 
   await page.getByRole('link', { name: /Luật Hiến pháp/ }).click();
   await expect(page).toHaveURL(/#\/mon\/hien-phap$/);
 });
+
+test('ở 1280 px mỗi trang trong NAV có đúng 1 mục aria-current trong sidebar', async ({ page }) => {
+  await page.setViewportSize({ width: 1280, height: 800 });
+  for (const [hash, label] of [['#/', 'Hôm nay'], ['#/mon', 'Môn học'], ['#/mon/hien-phap', 'Môn học'], ['#/luyen-de', 'Luyện đề'], ['#/toi', 'Hồ sơ'], ['#/cai-dat', 'Hồ sơ']]) {
+    await page.goto(B + hash);
+    await expect(page.locator('.sidenav [aria-current="page"]')).toHaveCount(1);
+    await expect(page.locator('.sidenav [aria-current="page"]')).toContainText(label);
+  }
+});
+
+test('390 px: trang môn và luyện đề không cuộn ngang', async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  for (const hash of ['#/', '#/mon/hien-phap', '#/luyen-de', '#/toi']) {
+    await page.goto(B + hash);
+    await page.locator('main').waitFor();
+    const over = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+    expect(over, hash).toBeLessThanOrEqual(0);
+  }
+});
+
+test('390 px trong phiên học: không tab bar, padding đáy nhỏ hơn chiều cao tab bar', async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto(B + '#/hoc/hien-phap/hp-1');
+  await expect(page.locator('.tabbar')).toHaveCount(0);
+  const pb = await page.evaluate(() => parseFloat(getComputedStyle(document.querySelector('main')!).paddingBottom));
+  expect(pb).toBeLessThan(56);
+});
