@@ -1,26 +1,32 @@
 <script lang="ts">
+  import StreakCard from '$lib/art/StreakCard.svelte';
   import Glyph from '$lib/art/Glyph.svelte';
   // Rail phải của trang Hôm nay (≥ 1440 px): chuỗi tuần, bậc, hẹn ôn ngày mai, dòng pháp lý (spec §3.4).
   import { header } from './header.svelte';
-  import { rankFor, RANKS } from '$lib/game/rank';
+  import { careerState, displayTitle } from '$lib/game/career';
+  import { shelf, refreshShelf } from './shelf.svelte';
+  import { career } from './career.svelte';
   import WeekDots from './WeekDots.svelte';
   let { week, dueTomorrow }: { week: boolean[]; dueTomorrow: number } = $props();
-  const info = $derived(rankFor(header.xp));
+  if (!shelf.ready) refreshShelf();
+  const cs = $derived(careerState(shelf.books));
+  const t = $derived(displayTitle(cs, career.branch));
+  const nx = $derived(cs.next[career.branch]);
 </script>
 
 <section class="rail-block">
   <p class="kicker">Chuỗi</p>
-  <p class="rail-big"><Glyph name="flame" size={26} /> {header.streak} <span class="muted small">ngày</span></p>
+  <StreakCard count={header.streak} longest={header.longest} />
+  <p class="rail-big">{header.streak} <span class="muted small">ngày · ngày {header.streak ? ((header.streak - 1) % 30) + 1 : 0}/30 của thẻ</span></p>
   <WeekDots days={week} />
 </section>
 <section class="rail-block">
-  <p class="kicker">Bậc khoa cử</p>
-  <p class="rank-line"><span class="seal big-seal" aria-hidden="true">§</span> <b>{info.rank}</b> cấp {info.tier}</p>
-  <div class="bar" aria-hidden="true"><span style="width:{info.progress * 100}%"></span></div>
-  {#if info.nextXp}<p class="muted small">còn {info.nextXp - header.xp} XP tới {RANKS[info.index + 1].name}</p>{/if}
+  <p class="kicker">Chức danh</p>
+  <p class="rank-line"><span class="seal big-seal" aria-hidden="true">§</span> <b>{t.title}</b></p>
+  {#if nx}<p class="muted small">Kế tiếp: <b>{nx.post.title}</b> — còn thiếu {nx.missing.reduce((n, m) => n + m.req.count - m.have, 0)} sách</p>{/if}
+  <a class="small" href="#/toi">Xem lộ trình →</a>
 </section>
 <section class="rail-block">
   <p class="kicker">Hẹn ôn ngày mai</p>
   <p class="rail-big">{dueTomorrow} <span class="muted small">khái niệm</span></p>
 </section>
-<p class="muted small legal"><strong>Thông tin pháp luật chung, không phải tư vấn pháp lý.</strong> Nội dung do Trần Quang Hào, sinh viên Luật Kinh tế, biên soạn từ văn bản pháp luật (hiện hành và đã hết hiệu lực), sử liệu và giáo trình; luôn đối chiếu nguyên văn và tình trạng hiệu lực trước khi áp dụng cho trường hợp cụ thể.</p>
