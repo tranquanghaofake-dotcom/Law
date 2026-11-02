@@ -39,10 +39,29 @@
   // hoa văn hoa thị (rosette) của huy hiệu: elip xoay lồng nhau
   const rosette = Array.from({ length: 36 }, (_, k) => k * 5);
   const label = $derived(count > 0 ? `Thẻ chuyên cần: chuỗi ${count} ngày, ngày ${c.day}/30, màu ${TIER_NAMES[c.tier as Tier]}` : 'Thẻ chuyên cần: chưa có chuỗi');
-  const INK: Record<Tier, string> = { do: '#ff9b7a', lam: '#8fd0ff', tim: '#d2adff', trang: '#ffffff', den: '#f2cf6b', 'vo-cuc': `url(#${uid}-holo)` };
-  const ink = (t: Tier | null) => (t ? INK[t] : '#ffffff');
+  // Lửa ba lớp (theo video Hào gửi): lõi gần trắng, thân màu bão hoà, quầng rộng rung như lửa/điện trên nền tối.
+  type Fire = { core: string; mid: string; glow: string };
+  const FIRE: Record<Tier, Fire> = {
+    do: { core: '#fff2e2', mid: '#ff6a2b', glow: '#ff2d0a' },
+    lam: { core: '#effbff', mid: '#38b6ff', glow: '#0a5cff' },
+    tim: { core: '#f8edff', mid: '#b65cff', glow: '#7417ff' },
+    trang: { core: '#ffffff', mid: '#dff0ff', glow: '#8fc4ff' },
+    den: { core: '#fff6d4', mid: '#efbd4f', glow: '#a8650f' },
+    'vo-cuc': { core: '#ffffff', mid: `url(#${uid}-holo)`, glow: '#c38bff' },
+  };
+  const fire = (t: Tier) => FIRE[t];
+  const ink = (t: Tier | null) => (t ? FIRE[t].mid : '#ffffff');
+  const cur = $derived(c.tier ? FIRE[c.tier] : null);
+  const litNow = $derived(doodles.map((_, i) => c.glyphs[rankOf[i]]).map((t) => (t && t === c.tier ? t : null)));
+  const embers = $derived(doodles.flatMap((dd, i) => (litNow[i] ? [0, 1].map((k) => ({ x: dd.x + jit(i, 10 + k) * 40, y: dd.y + 10 + jit(i, 12 + k) * 20, d: (jit(i, 14 + k) + 0.5) * 3, i })) : [])));
+  const bolts = Array.from({ length: 8 }, (_, k) => {
+    const a = (k / 8) * Math.PI * 2 + 0.3; let d = '';
+    for (let j = 0; j <= 6; j++) { const r = 172 - j * 11, w = j % 2 ? 7 : -7, aa = a + (w / r); d += `${j ? 'L' : 'M'}${(Math.cos(aa) * r).toFixed(1)} ${(Math.sin(aa) * r * 0.82).toFixed(1)}`; }
+    return d;
+  });
   const caption = $derived([c.tier ? `${TIER_NAMES[c.tier]} · ngày ${c.day}/30` : 'Chưa bắt đầu chuỗi', `chuỗi ${count} ngày`, `kỷ lục ${Math.max(longest, count)} ngày${c.record ? ` (${TIER_NAMES[c.record]})` : ''}`].join(' · '));
-  const lf = $derived(c.logo ? ink(c.logo) : `url(#${uid}-gold)`);
+  const lf = $derived(c.logo ? `url(#${uid}-lotus)` : `url(#${uid}-ash)`);
+  const lg = $derived(c.logo ? FIRE[c.logo] : null);
   // nghiêng theo chuột
   let el: HTMLDivElement | undefined = $state();
   let tilt = $state({ rx: 0, ry: 0, mx: 50, my: 50, on: false });
@@ -75,10 +94,24 @@
       </mask>
       <filter id="{uid}-hand" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="7" /><feDisplacementMap in="SourceGraphic" scale="2.2" /></filter>
       <filter id="{uid}-soft" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="14" /></filter>
+      <!-- lửa: làm nhoè rồi xé mép bằng nhiễu chuyển động, cộng quầng rộng -->
+      <filter id="{uid}-flame" x="-10%" y="-20%" width="120%" height="140%">
+        <feTurbulence type="fractalNoise" baseFrequency=".018 .055" numOctaves="2" seed="3" result="n">
+          <animate attributeName="baseFrequency" dur="2.4s" values=".018 .055;.022 .07;.016 .05;.018 .055" repeatCount="indefinite" />
+        </feTurbulence>
+        <feGaussianBlur in="SourceGraphic" stdDeviation="2.6" result="b" />
+        <feDisplacementMap in="b" in2="n" scale="14" xChannelSelector="R" yChannelSelector="G" result="f" />
+        <feGaussianBlur in="SourceGraphic" stdDeviation="9" result="bloom" />
+        <feMerge><feMergeNode in="bloom" /><feMergeNode in="f" /><feMergeNode in="f" /></feMerge>
+      </filter>
+      <filter id="{uid}-hot" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="1.4" result="b" /><feMerge><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge></filter>
+      {#if cur}<radialGradient id="{uid}-aura"><stop offset="0" stop-color={cur.glow} stop-opacity=".32" /><stop offset=".6" stop-color={cur.glow} stop-opacity=".08" /><stop offset="1" stop-color={cur.glow} stop-opacity="0" /></radialGradient>{/if}
+      <linearGradient id="{uid}-ash" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9a9aa0" /><stop offset="1" stop-color="#4b4b52" /></linearGradient>
+      {#if lg}<radialGradient id="{uid}-lotus" cx=".5" cy=".35" r=".75"><stop offset="0" stop-color={lg.core} /><stop offset=".45" stop-color={c.logo === 'vo-cuc' ? '#ffd27a' : lg.mid} /><stop offset="1" stop-color={lg.glow} /></radialGradient>{/if}
     </defs>
     <rect width="856" height="540" rx="40" fill="url(#{uid}-bg)" />
     <!-- quầng màu lửa mờ phía sau (đậm dần theo ngày) -->
-    {#if c.tier}<ellipse cx="428" cy="268" rx={150 + c.day * 7} ry={90 + c.day * 4} fill={ink(c.tier)} opacity={0.05 + c.day * 0.004} filter="url(#{uid}-soft)" />{/if}
+    {#if cur}<ellipse class="cg-aura" cx="428" cy="268" rx={170 + c.day * 7} ry={110 + c.day * 4} fill="url(#{uid}-aura)" opacity={0.35 + c.day * 0.012} />{/if}
     <!-- nền doodle: 27 hình pháp luật sáng dần theo ngày + hình phụ lấp khe; nét rung nhẹ như vẽ tay; mờ quanh logo -->
     <g mask="url(#{uid}-hole)" fill="none" stroke-linecap="round" stroke-linejoin="round">
       <g filter="url(#{uid}-hand)">
@@ -87,41 +120,75 @@
         </g>
         {#each doodles as dd, i (i)}
           {@const t = c.glyphs[rankOf[i]]}
-          <g class="cg-glyph" class:lit={!!t} class:now={!!t && rankOf[i] === c.day - 1 && t === c.tier}
-            transform="translate({dd.x.toFixed(1)} {dd.y.toFixed(1)}) rotate({dd.rot.toFixed(1)}) scale({dd.s.toFixed(2)}) translate(-32 -32)"
-            stroke={t ? ink(t) : `url(#${uid}-gold)`} opacity={t ? (t === c.tier ? 0.95 : 0.55) : 0.26} filter={t ? `url(#${uid}-glow)` : undefined}>
-            <title>{CARD_GLYPHS[i].field}: {CARD_GLYPHS[i].name}</title>
-            <path d={CARD_GLYPHS[i].d} stroke-width="1.3" />
-          </g>
+          {#if !litNow[i]}
+            <g class="cg-glyph" class:lit={!!t} transform="translate({dd.x.toFixed(1)} {dd.y.toFixed(1)}) rotate({dd.rot.toFixed(1)}) scale({dd.s.toFixed(2)}) translate(-32 -32)">
+              <title>{CARD_GLYPHS[i].field}: {CARD_GLYPHS[i].name}</title>
+              {#if t}<path d={CARD_GLYPHS[i].d} stroke={fire(t).mid} stroke-width="2.2" opacity=".35" /><path d={CARD_GLYPHS[i].d} stroke={fire(t).core} stroke-width="1" opacity=".5" />
+              {:else}<path d={CARD_GLYPHS[i].d} stroke="url(#{uid}-gold)" stroke-width="1.3" opacity=".26" />{/if}
+            </g>
+          {/if}
         {/each}
       </g>
+      {#if cur}
+        <!-- ký hoạ đang cháy màu chu kỳ hiện tại: quầng lửa (một filter chung) → thân → lõi -->
+        <g class="cg-flames" filter="url(#{uid}-flame)" stroke={cur.glow} stroke-width="5">
+          {#each doodles as dd, i (i)}{#if litNow[i]}<path d={CARD_GLYPHS[i].d} transform="translate({dd.x.toFixed(1)} {dd.y.toFixed(1)}) rotate({dd.rot.toFixed(1)}) scale({dd.s.toFixed(2)}) translate(-32 -32)" />{/if}{/each}
+        </g>
+        <g filter="url(#{uid}-hot)">
+          {#each doodles as dd, i (i)}
+            {#if litNow[i]}
+              <g transform="translate({dd.x.toFixed(1)} {dd.y.toFixed(1)}) rotate({dd.rot.toFixed(1)}) scale({dd.s.toFixed(2)}) translate(-32 -32)">
+                <g class="cg-glyph lit" class:now={rankOf[i] === c.day - 1} style="--k:{i}">
+                  <title>{CARD_GLYPHS[i].field}: {CARD_GLYPHS[i].name}</title>
+                  <path d={CARD_GLYPHS[i].d} stroke={cur.mid} stroke-width="2.6" />
+                  <path d={CARD_GLYPHS[i].d} stroke={cur.core} stroke-width="1.1" />
+                </g>
+              </g>
+            {/if}
+          {/each}
+        </g>
+        <!-- tàn lửa bay lên -->
+        <g fill={cur.core} stroke="none" filter="url(#{uid}-hot)">
+          {#each embers as e, k (k)}<circle class="cg-ember" cx={e.x.toFixed(1)} cy={e.y.toFixed(1)} r={1.4 + (k % 3) * 0.5} style="animation-delay:-{e.d.toFixed(2)}s; --c:{cur.glow}" />{/each}
+        </g>
+      {/if}
     </g>
-    <!-- huy hiệu: rosette guilloche + vành chấm + bông sen ôm cán cân, vàng kim nổi khối -->
-    <g transform="translate(428 262)" class="cg-logo" class:lit={!!c.logo}>
+    <!-- huy hiệu: xám khi chưa thắp; ngày 29 tia điện tụ về; ngày 30 thắp cuối cùng với vòng lửa cháy quanh đĩa -->
+    <g transform="translate(428 262)" class="cg-logo" class:lit={!!c.logo} class:charge={!!c.charge}>
       <circle r="112" fill="#0f0f12" opacity=".75" filter="url(#{uid}-soft)" />
-      <circle r="104" fill="url(#{uid}-disc)" stroke="url(#{uid}-gold)" stroke-width="2.5" />
-      <g fill="none" stroke={c.logo ? ink(c.logo) : `url(#${uid}-gold)`} stroke-width=".9" opacity={c.logo ? 0.8 : 0.5} filter={c.logo ? `url(#${uid}-glow)` : undefined}>
+      {#if lg}<circle class="cg-ring" r="106" fill="none" stroke={lg.glow} stroke-width="12" filter="url(#{uid}-flame)" />{/if}
+      {#if c.charge}
+        <g class="cg-bolts" fill="none" stroke-linecap="round" stroke-linejoin="round" filter="url(#{uid}-hot)">
+          {#each bolts as d, k (k)}<path {d} stroke={fire(c.charge).mid} stroke-width="4" style="animation-delay:{(k * 0.37).toFixed(2)}s" /><path {d} stroke={fire(c.charge).core} stroke-width="1.6" style="animation-delay:{(k * 0.37).toFixed(2)}s" />{/each}
+        </g>
+        <circle r="108" fill="none" stroke={fire(c.charge).glow} stroke-width="3" opacity=".6" class="cg-charge" filter="url(#{uid}-hot)" />
+      {/if}
+      <circle r="104" fill="url(#{uid}-disc)" stroke={lg ? lg.mid : '#55555c'} stroke-width="2.5" />
+      <g class="cg-rosette" fill="none" stroke={lg ? lg.mid : '#76767e'} stroke-width=".9" opacity={lg ? 0.85 : 0.32} filter={lg ? `url(#${uid}-hot)` : undefined}>
         {#each rosette as a (a)}<ellipse rx="96" ry="34" transform="rotate({a})" />{/each}
       </g>
-      <circle r="66" fill="url(#{uid}-disc)" stroke="url(#{uid}-gold)" stroke-width="2" />
-      <circle r="60" fill="none" stroke="url(#{uid}-gold)" stroke-width="1" stroke-dasharray="1 4" />
-      <g filter="url(#{uid}-emboss)" transform="translate(0 6)">
+      <circle r="66" fill="url(#{uid}-disc)" stroke={lg ? lg.core : '#5e5e66'} stroke-width="2" />
+      <circle r="60" fill="none" stroke={lg ? lg.mid : '#5e5e66'} stroke-width="1" stroke-dasharray="1 4" />
+      {#if lg}<circle r="46" fill={lg.glow} opacity=".35" filter="url(#{uid}-soft)" class="cg-core" />{/if}
+      <g filter={lg ? `url(#${uid}-hot)` : `url(#${uid}-emboss)`} transform="translate(0 6)">
         <!-- đài sen nghiêng 5 cánh -->
         <path d="M-4 34C-34 32-48 16-48 2C-30 2-14 14-4 34Z" fill={lf} opacity=".7" /><path d="M4 34C34 32 48 16 48 2C30 2 14 14 4 34Z" fill={lf} opacity=".7" />
         <path d="M-2 34C-24 26-30 6-24-12C-12-2-4 14-2 34Z" fill={lf} opacity=".85" /><path d="M2 34C24 26 30 6 24-12C12-2 4 14 2 34Z" fill={lf} opacity=".85" />
         <path d="M0 34C-13 18-13-2 0-20C13-2 13 18 0 34Z" fill={lf} />
         <path d="M0 30V-6M-30 34Q0 46 30 34" fill="none" stroke="#141414" stroke-width="1.2" opacity=".5" />
         <!-- cán cân mọc lên từ cánh giữa, đĩa cân lơ lửng trên hai cánh bên -->
-        <g fill="none" stroke={lf} stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+        <g fill="none" stroke={lg ? lg.core : lf} stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
           <path d="M0 -20V-46M-34 -40Q0 -50 34 -40M-34 -40l-8 16M-34 -40l8 16M34 -40l-8 16M34 -40l8 16" />
           <path d="M-44 -24Q-34 -14 -24 -24zM24 -24Q34 -14 44 -24z" fill={lf} />
         </g>
-        <circle cy="-50" r="4.4" fill={lf} />
+        <circle cy="-50" r="4.4" fill={lg ? lg.core : lf} />
       </g>
-      {#if c.logo}<circle r="104" fill="none" stroke={ink(c.logo)} stroke-width="3" opacity=".7" filter="url(#{uid}-glow)" />{/if}
     </g>
     <!-- viền sáng (ngày 29) chỉ là ánh sáng mềm quanh mép, không phải khung -->
-    {#if c.border}<rect x="3" y="3" width="850" height="534" rx="38" fill="none" stroke={ink(c.border)} stroke-width="3" opacity=".55" filter="url(#{uid}-glow)" />{/if}
+    {#if c.border}
+      <rect x="4" y="4" width="848" height="532" rx="37" fill="none" stroke={fire(c.border).glow} stroke-width="6" filter="url(#{uid}-flame)" class="cg-border" />
+      <rect x="3" y="3" width="850" height="534" rx="38" fill="none" stroke={fire(c.border).core} stroke-width="1.4" opacity=".8" />
+    {/if}
     {#if c.burst}<rect width="856" height="540" rx="40" fill="url(#{uid}-holo)" class="cg-burst" />{/if}
   </svg>
   <span class="sc-glare" aria-hidden="true"></span>

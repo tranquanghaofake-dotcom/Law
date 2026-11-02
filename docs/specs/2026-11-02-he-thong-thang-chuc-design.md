@@ -191,6 +191,12 @@ Không vẽ Quốc huy, sao, vạch cấp hiệu hay biểu tượng ngành th�
 - Màn nhận chức: chức mới đạt chưa xem (`promotionToCelebrate`, settings `career-seen`; lần đầu chỉ ghi nhận) → cánh kính mở, đèn bật, chữ biển tên hiện dần, hạt vàng, viền sáng (~3 giây); có nút "Xem lại lễ nhận chức"; giảm chuyển động thì bỏ qua.
 - Áo: filter `cloth` cho cả bộ — mép tối dần, ánh sáng trên-trái, thớ vải mịn; thêm nếp gấp và vệt sáng.
 
+### 3.13 Lửa thẻ chuyên cần và thứ tự thắp (Hào, 02/11/2026)
+
+- Thứ tự mới: ngày 1–27 ký hoạ → **28 viền lửa** → **29 lửa tụ về huy hiệu** (tia điện quanh đĩa, huy hiệu vẫn xám) → **30 huy hiệu thắp cuối cùng** (vòng lửa cháy quanh đĩa) + bừng sáng. Huy hiệu **xám** khi chưa từng thắp; chu kỳ sau giữ màu chu kỳ trước như ký hoạ (`card.ts`: thêm `charge`).
+- Lửa ba lớp theo video tham khảo của Hào: lõi gần trắng, thân màu bão hoà, quầng xé mép bằng nhiễu chuyển động (`feTurbulence` + `feDisplacementMap`, một filter chung). Bảng màu: đỏ (cam-đỏ), lam (xanh điện), tím (tím neon), trắng (trắng ánh xanh), đen ánh kim (vàng hổ phách), vô cực (cầu vồng).
+- Chuyển động: chập chờn lệch pha, ký hoạ hôm nay bùng lên, tàn lửa bay, hoa văn huy hiệu xoay chậm, vòng lửa thở; tắt ở thẻ nhỏ và khi giảm chuyển động.
+
 ## 4. Dữ liệu
 - Store mới (IndexedDB): `books` (chapterId → cấp cao nhất, ngày đạt), `career` (nhánh đang chọn, chức danh đã đạt), `card` (kỷ lục màu). Migration từ dữ liệu cũ: tính sách từ `progress` hiện có. XP vẫn giữ, chỉ hiển thị phụ.
 - `game/rank.ts` (khoa cử, phẩm hàm) **giữ file và test, không còn hiển thị**. XP vẫn cộng và hiện phụ ở Hồ sơ. Bậc 6 đổi tên **Tinh thông**.

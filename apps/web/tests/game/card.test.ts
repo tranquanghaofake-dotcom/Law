@@ -5,17 +5,16 @@ describe('thẻ chuyên cần', () => {
   it('chuỗi 0: thẻ tắt hết, không kỷ lục', () => {
     const c = cardFor(0, 0);
     expect(c.glyphs.every((g) => g === null)).toBe(true);
-    expect([c.logo, c.border, c.burst, c.record]).toEqual([null, null, false, null]);
+    expect([c.logo, c.border, c.charge, c.burst, c.record]).toEqual([null, null, null, false, null]);
   });
-  it('ngày 1–27 sáng từng ký tự theo màu đỏ; 28 sáng logo; 29 sáng viền; 30 bừng sáng', () => {
+  it('ngày 1–27 sáng từng ký tự theo màu đỏ; 28 sáng viền; 29 lửa tụ về logo; 30 logo bừng cháy cuối cùng', () => {
     expect(cardFor(1, 1).glyphs.filter(Boolean)).toHaveLength(1);
     const d27 = cardFor(27, 27);
     expect(d27.glyphs.every((g) => g === 'do')).toBe(true);
-    expect(d27.logo).toBeNull();
-    expect(cardFor(28, 28).logo).toBe('do');
-    expect(cardFor(28, 28).border).toBeNull();
-    expect(cardFor(29, 29).border).toBe('do');
-    expect(cardFor(30, 30).burst).toBe(true);
+    expect([d27.logo, d27.border, d27.charge]).toEqual([null, null, null]);
+    expect(cardFor(28, 28)).toMatchObject({ border: 'do', charge: null, logo: null });
+    expect(cardFor(29, 29)).toMatchObject({ border: 'do', charge: 'do', logo: null });
+    expect(cardFor(30, 30)).toMatchObject({ logo: 'do', burst: true });
     expect(cardFor(30, 30)).toMatchObject({ day: 30, cycle: 0, tier: 'do' });
   });
   it('chu kỳ mới tô màu mới; chỗ chưa tới vẫn giữ màu chu kỳ trước', () => {
