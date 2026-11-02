@@ -1,0 +1,116 @@
+{
+ "id": "bao-hiem-that-nghiep",
+ "subject": "an-sinh-xa-hoi",
+ "chapter": "v3",
+ "term": "Bảo hiểm thất nghiệp và các chế độ",
+ "definition": "Bảo hiểm thất nghiệp là loại hình bảo hiểm bắt buộc do Nhà nước tổ chức mà người lao động, người sử dụng lao động tham gia để hỗ trợ duy trì việc làm, đào tạo, tư vấn, giới thiệu việc làm và bù đắp một phần thu nhập cho người lao động khi bị mất việc làm trên cơ sở đóng vào Quỹ bảo hiểm thất nghiệp. (…) Các chế độ bảo hiểm thất nghiệp bao gồm: a) Tư vấn, giới thiệu việc làm; b) Hỗ trợ người lao động tham gia đào tạo, nâng cao trình độ kỹ năng nghề; c) Trợ cấp thất nghiệp; d) Hỗ trợ người sử dụng lao động đào tạo, bồi dưỡng, nâng cao trình độ kỹ năng nghề để duy trì việc làm cho người lao động.",
+ "plain": "Mục đích kép: KHÔNG CHỈ bù đắp thu nhập (trợ cấp thất nghiệp) mà còn PHÒNG NGỪA thất nghiệp (tư vấn, giới thiệu việc làm; đào tạo; hỗ trợ doanh nghiệp đào tạo để giữ việc làm). Đối tượng tham gia mở rộng (Điều 31) gồm cả hợp đồng từ đủ 01 tháng. Nguyên tắc (Điều 29): chia sẻ rủi ro; mức đóng theo tiền lương tháng; mức hưởng theo mức đóng, thời gian đóng; quỹ tập trung, được Nhà nước bảo hộ.",
+ "example": "Công ty dệt gặp khó khăn được hỗ trợ kinh phí đào tạo lại công nhân để không phải cho nghỉ việc: đó là chế độ hỗ trợ người sử dụng lao động của bảo hiểm thất nghiệp.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 4 Điều 2; khoản 1 Điều 30 Luật Việc làm 2025 (74/2025/QH15)",
+  "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Luat-Viec-lam-2025-so-74-2025-QH15-530912.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "dieu-kien-tro-cap-that-nghiep",
+  "bao-hiem-xa-hoi"
+ ],
+ "keywords": [
+  "bảo hiểm bắt buộc",
+  "hỗ trợ duy trì việc làm",
+  "bù đắp một phần thu nhập",
+  "bốn chế độ"
+ ],
+ "note": "Luật Việc làm 74/2025/QH15 có hiệu lực từ 01/01/2026, thay thế Luật Việc làm 38/2013/QH13 (đề cương HLU còn dẫn luật 2013).",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chế độ nào KHÔNG thuộc bảo hiểm thất nghiệp theo Luật Việc làm 2025?",
+   "options": [
+    "Trợ cấp hưu trí",
+    "Tư vấn, giới thiệu việc làm",
+    "Trợ cấp thất nghiệp",
+    "Hỗ trợ người lao động đào tạo, nâng cao kỹ năng nghề"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 30.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 30 Luật Việc làm 2025 (74/2025/QH15)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Bảo hiểm thất nghiệp là loại hình bảo hiểm gì?",
+   "options": [
+    "Bắt buộc do Nhà nước tổ chức",
+    "Tự nguyện do doanh nghiệp bảo hiểm tổ chức",
+    "Thương mại",
+    "Do công đoàn tổ chức"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 2.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 2 Luật Việc làm 2025 (74/2025/QH15)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Bảo hiểm thất nghiệp",
+   "right": "Bảo hiểm xã hội bắt buộc",
+   "cases": [
+    {
+     "text": "Hỗ trợ đào tạo để duy trì việc làm",
+     "answer": "left"
+    },
+    {
+     "text": "Chế độ thai sản",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 30 Luật Việc làm; Điều 4 Luật BHXH."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bảo hiểm thất nghiệp là loại hình bảo hiểm {{bắt buộc}} để hỗ trợ duy trì việc làm và bù đắp một phần {{thu nhập}} khi người lao động bị mất việc làm.",
+   "bank_extra": [
+    "tự nguyện",
+    "tài sản"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Các chế độ bảo hiểm thất nghiệp gồm tư vấn, giới thiệu việc làm; hỗ trợ đào tạo; {{trợ cấp thất nghiệp}}; hỗ trợ {{người sử dụng lao động}} đào tạo để duy trì việc làm.",
+   "bank_extra": [
+    "trợ cấp hưu trí",
+    "công đoàn"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Bảo hiểm thất nghiệp chỉ có một chế độ là trợ cấp thất nghiệp.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 30: có bốn chế độ."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm và các chế độ bảo hiểm thất nghiệp.",
+   "model": "Bảo hiểm bắt buộc do Nhà nước tổ chức, người lao động và người sử dụng lao động tham gia để hỗ trợ duy trì việc làm, đào tạo, tư vấn, giới thiệu việc làm và bù đắp một phần thu nhập (khoản 4 Điều 2); chế độ: tư vấn, giới thiệu việc làm; hỗ trợ đào tạo; trợ cấp thất nghiệp; hỗ trợ người sử dụng lao động (Điều 30).",
+   "keywords": [
+    "bắt buộc",
+    "duy trì việc làm",
+    "trợ cấp thất nghiệp",
+    "đào tạo"
+   ]
+  }
+ ]
+}

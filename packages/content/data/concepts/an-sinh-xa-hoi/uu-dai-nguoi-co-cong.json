@@ -1,0 +1,117 @@
+{
+ "id": "uu-dai-nguoi-co-cong",
+ "subject": "an-sinh-xa-hoi",
+ "chapter": "v5",
+ "term": "Người có công với cách mạng và thân nhân",
+ "definition": "Người có công với cách mạng bao gồm: a) Người hoạt động cách mạng trước ngày 01 tháng 01 năm 1945; b) Người hoạt động cách mạng từ ngày 01 tháng 01 năm 1945 đến ngày khởi nghĩa tháng Tám năm 1945; c) Liệt sỹ; d) Bà mẹ Việt Nam anh hùng; (…) Thân nhân của người có công với cách mạng bao gồm cha đẻ, mẹ đẻ, vợ hoặc chồng, con (con đẻ, con nuôi), người có công nuôi liệt sỹ.",
+ "plain": "12 nhóm người có công (khoản 1 Điều 3): hoạt động cách mạng trước 01/01/1945 (\"lão thành cách mạng\"); từ 01/01/1945 đến Cách mạng tháng Tám (\"tiền khởi nghĩa\"); liệt sỹ; Bà mẹ Việt Nam anh hùng; Anh hùng Lực lượng vũ trang nhân dân; Anh hùng Lao động trong kháng chiến; thương binh (cả thương binh loại B trước 31/12/1993) và người hưởng chính sách như thương binh; bệnh binh; người hoạt động kháng chiến nhiễm chất độc hóa học; người bị địch bắt tù, đày; người hoạt động kháng chiến; người có công giúp đỡ cách mạng. Ưu đãi xã hội là sự ĐỀN ĐÁP, không dựa trên đóng góp tài chính.",
+ "example": "Mẹ của một liệt sỹ là thân nhân người có công (cha đẻ, mẹ đẻ của liệt sỹ) nên được hưởng chế độ ưu đãi như trợ cấp tuất, BHYT.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, 2 Điều 3 Pháp lệnh Ưu đãi người có công với cách mạng 2020 (02/2020/UBTVQH14)",
+  "url": "https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Phap-lenh-02-2020-UBTVQH14-uu-dai-nguoi-co-cong-voi-Cach-mang-460718.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "che-do-uu-dai-nguoi-co-cong",
+  "an-sinh-xa-hoi",
+  "tro-giup-xa-hoi"
+ ],
+ "keywords": [
+  "12 nhóm người có công",
+  "thân nhân: cha mẹ đẻ, vợ chồng, con",
+  "người có công nuôi liệt sỹ",
+  "đền đáp, không cần đóng góp"
+ ],
+ "note": "Pháp lệnh 02/2020/UBTVQH14 có hiệu lực từ 01/7/2021. Pháp lệnh sửa đổi 05/2026/UBTVQH16 (ban hành 08/7/2026) có hiệu lực từ 01/01/2027 — CHƯA áp dụng tại thời điểm đối chiếu; khi có hiệu lực, Điều 3 được viết lại (thêm định nghĩa người có công tại khoản 1, danh sách đối tượng chuyển sang khoản 2).",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai KHÔNG thuộc thân nhân của người có công với cách mạng theo Pháp lệnh 2020?",
+   "options": [
+    "Anh, chị, em ruột",
+    "Cha đẻ, mẹ đẻ",
+    "Vợ hoặc chồng",
+    "Người có công nuôi liệt sỹ"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 3 Pháp lệnh Ưu đãi người có công với cách mạng 2020 (02/2020/UBTVQH14)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đối tượng nào là người có công với cách mạng?",
+   "options": [
+    "Bà mẹ Việt Nam anh hùng",
+    "Người khuyết tật nặng",
+    "Người cao tuổi neo đơn",
+    "Hộ nghèo"
+   ],
+   "answer": 0,
+   "explain": "Điểm d khoản 1 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 3 Pháp lệnh Ưu đãi người có công với cách mạng 2020 (02/2020/UBTVQH14)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Ưu đãi xã hội",
+   "right": "Trợ giúp xã hội",
+   "cases": [
+    {
+     "text": "Dành cho thương binh, liệt sỹ và thân nhân",
+     "answer": "left"
+    },
+    {
+     "text": "Dành cho người yếu thế, hoàn cảnh khó khăn",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 3 Pháp lệnh 02/2020; học thuyết."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người có công với cách mạng bao gồm người hoạt động cách mạng trước ngày {{01 tháng 01 năm 1945}}; liệt sỹ; Bà mẹ {{Việt Nam anh hùng}}…",
+   "bank_extra": [
+    "02 tháng 9 năm 1945",
+    "Việt Nam tiêu biểu"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thân nhân của người có công gồm cha đẻ, mẹ đẻ, vợ hoặc chồng, con (con đẻ, {{con nuôi}}), người có công {{nuôi liệt sỹ}}.",
+   "bank_extra": [
+    "con riêng",
+    "chăm sóc thương binh"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Từ ngày 01/11/2026, Pháp lệnh sửa đổi 05/2026/UBTVQH16 đã được áp dụng.",
+   "answer": false,
+   "explain": "Sai. Pháp lệnh 05/2026/UBTVQH16 có hiệu lực từ 01/01/2027; trước đó áp dụng Pháp lệnh 02/2020/UBTVQH14."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các nhóm người có công với cách mạng và thân nhân theo Pháp lệnh 2020.",
+   "model": "Người hoạt động cách mạng trước 01/01/1945, tiền khởi nghĩa, liệt sỹ, Bà mẹ Việt Nam anh hùng, Anh hùng LLVTND, Anh hùng Lao động trong kháng chiến, thương binh, bệnh binh, người nhiễm chất độc hóa học, người bị địch bắt tù đày, người hoạt động kháng chiến, người có công giúp đỡ cách mạng; thân nhân: cha mẹ đẻ, vợ chồng, con, người có công nuôi liệt sỹ (Điều 3).",
+   "keywords": [
+    "liệt sỹ",
+    "thương binh",
+    "Bà mẹ Việt Nam anh hùng",
+    "thân nhân"
+   ]
+  }
+ ]
+}

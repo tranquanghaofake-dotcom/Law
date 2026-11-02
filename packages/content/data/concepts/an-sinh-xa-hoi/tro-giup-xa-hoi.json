@@ -1,0 +1,115 @@
+{
+ "id": "tro-giup-xa-hoi",
+ "subject": "an-sinh-xa-hoi",
+ "chapter": "v6",
+ "term": "Trợ giúp xã hội",
+ "definition": "Trợ giúp xã hội là sự giúp đỡ của Nhà nước và xã hội bằng tiền, hiện vật hoặc các điều kiện vật chất khác đối với những thành viên trong xã hội lâm vào hoàn cảnh khó khăn, không đủ khả năng tự lo liệu cuộc sống, nhằm bảo đảm mức sống tối thiểu cho họ.",
+ "plain": "Đặc điểm: KHÔNG yêu cầu đóng góp; dành cho người YẾU THẾ; mức trợ giúp bảo đảm mức sống TỐI THIỂU; nguồn chủ yếu từ ngân sách và đóng góp xã hội. Hai hình thức: trợ giúp THƯỜNG XUYÊN (trợ cấp xã hội hằng tháng cho trẻ em mồ côi, người cao tuổi neo đơn, người khuyết tật nặng…; nuôi dưỡng tại cộng đồng hoặc cơ sở trợ giúp xã hội) và trợ giúp ĐỘT XUẤT (thiên tai, hỏa hoạn, mất mùa: hỗ trợ lương thực, nhà ở, mai táng…). Văn bản chính: Nghị định 20/2021/NĐ-CP về chính sách trợ giúp xã hội đối với đối tượng bảo trợ xã hội (đã được sửa đổi; đang có dự thảo sửa đổi tiếp) — chưa đối chiếu nguyên văn trong bộ dữ liệu này.",
+ "example": "Một gia đình bị lũ cuốn trôi nhà được hỗ trợ lương thực và tiền làm lại nhà (trợ giúp đột xuất); một trẻ em mồ côi cả cha mẹ được hưởng trợ cấp xã hội hằng tháng (trợ giúp thường xuyên).",
+ "source": {
+  "kind": "textbook",
+  "cite": "Giáo trình Luật An sinh xã hội, Trường Đại học Luật Hà Nội; đề cương Luật An sinh xã hội vấn đề 6 — tóm lược quan điểm học thuật phổ biến, chưa đối chiếu nguyên văn"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "an-sinh-xa-hoi",
+  "tro-cap-huu-tri-xa-hoi",
+  "uu-dai-nguoi-co-cong"
+ ],
+ "keywords": [
+  "không yêu cầu đóng góp",
+  "người yếu thế",
+  "mức sống tối thiểu",
+  "thường xuyên – đột xuất"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Mục đích của trợ giúp xã hội là gì?",
+   "options": [
+    "Bảo đảm mức sống tối thiểu cho người lâm vào hoàn cảnh khó khăn",
+    "Thay thế thu nhập theo mức đóng",
+    "Đền đáp công lao với cách mạng",
+    "Bù đắp thu nhập khi thất nghiệp"
+   ],
+   "answer": 0,
+   "explain": "Học thuyết.",
+   "source": {
+    "kind": "statute",
+    "cite": "Học thuyết x"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hỗ trợ lương thực cho người dân sau bão lũ thuộc hình thức nào?",
+   "options": [
+    "Trợ giúp xã hội đột xuất",
+    "Trợ giúp xã hội thường xuyên",
+    "Bảo hiểm xã hội",
+    "Ưu đãi xã hội"
+   ],
+   "answer": 0,
+   "explain": "Học thuyết; Nghị định 20/2021/NĐ-CP.",
+   "source": {
+    "kind": "statute",
+    "cite": "Học thuyết x"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Trợ giúp thường xuyên",
+   "right": "Trợ giúp đột xuất",
+   "cases": [
+    {
+     "text": "Trợ cấp hằng tháng cho trẻ em mồ côi",
+     "answer": "left"
+    },
+    {
+     "text": "Hỗ trợ khi bị thiên tai, hỏa hoạn",
+     "answer": "right"
+    }
+   ],
+   "explain": "Học thuyết."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Trợ giúp xã hội nhằm bảo đảm mức sống {{tối thiểu}} cho người lâm vào hoàn cảnh {{khó khăn}}.",
+   "bank_extra": [
+    "trung bình khá",
+    "giàu có"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Trợ giúp xã hội gồm trợ giúp {{thường xuyên}} và trợ giúp {{đột xuất}}.",
+   "bank_extra": [
+    "bắt buộc",
+    "tự nguyện"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người được trợ giúp xã hội phải có thời gian đóng bảo hiểm xã hội.",
+   "answer": false,
+   "explain": "Sai. Trợ giúp xã hội không yêu cầu đóng góp."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm, đặc điểm và hình thức trợ giúp xã hội.",
+   "model": "Sự giúp đỡ của Nhà nước và xã hội bằng tiền, hiện vật cho người lâm vào hoàn cảnh khó khăn, không tự lo liệu được, nhằm bảo đảm mức sống tối thiểu; không yêu cầu đóng góp; gồm trợ giúp thường xuyên và đột xuất.",
+   "keywords": [
+    "khó khăn",
+    "tối thiểu",
+    "thường xuyên",
+    "đột xuất"
+   ]
+  }
+ ]
+}

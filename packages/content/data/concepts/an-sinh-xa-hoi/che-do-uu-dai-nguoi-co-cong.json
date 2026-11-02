@@ -1,0 +1,120 @@
+{
+ "id": "che-do-uu-dai-nguoi-co-cong",
+ "subject": "an-sinh-xa-hoi",
+ "chapter": "v5",
+ "term": "Các chế độ ưu đãi người có công",
+ "definition": "Tùy từng đối tượng, người có công với cách mạng và thân nhân của người có công với cách mạng được hưởng chế độ ưu đãi chủ yếu như sau: 1. Trợ cấp hằng tháng, phụ cấp hằng tháng, trợ cấp một lần; 2. Các chế độ ưu đãi khác bao gồm: a) Bảo hiểm y tế; b) Điều dưỡng phục hồi sức khỏe;",
+ "plain": "Hai nhóm chế độ: (1) TRỢ CẤP, PHỤ CẤP bằng tiền (hằng tháng, một lần); (2) ƯU ĐÃI KHÁC: bảo hiểm y tế; điều dưỡng; phương tiện trợ giúp, dụng cụ chỉnh hình; ưu tiên tuyển sinh, tạo việc làm; hỗ trợ học đến đại học; hỗ trợ nhà ở; miễn, giảm tiền sử dụng đất; ưu tiên giao, thuê đất; vay vốn ưu đãi; miễn, giảm thuế. Nguyên tắc: mức ưu đãi điều chỉnh phù hợp điều kiện kinh tế - xã hội (Điều 6). Lưu ý: từ 01/01/2027 điểm c khoản 2 Điều 5 được sửa theo Pháp lệnh 05/2026.",
+ "example": "Con của thương binh được ưu tiên trong tuyển sinh và hỗ trợ học phí khi học đại học công lập; thương binh được cấp dụng cụ chỉnh hình.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 5 Pháp lệnh Ưu đãi người có công với cách mạng 2020 (02/2020/UBTVQH14)",
+  "url": "https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Phap-lenh-02-2020-UBTVQH14-uu-dai-nguoi-co-cong-voi-Cach-mang-460718.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "uu-dai-nguoi-co-cong",
+  "muc-huong-bao-hiem-y-te"
+ ],
+ "keywords": [
+  "trợ cấp hằng tháng, một lần",
+  "bảo hiểm y tế, điều dưỡng",
+  "ưu tiên tuyển sinh, việc làm",
+  "nhà ở, đất đai, thuế"
+ ],
+ "note": "Pháp lệnh 02/2020/UBTVQH14 có hiệu lực từ 01/7/2021. Pháp lệnh sửa đổi 05/2026/UBTVQH16 (ban hành 08/7/2026) có hiệu lực từ 01/01/2027 — CHƯA áp dụng tại thời điểm đối chiếu; khi có hiệu lực, Điều 3 được viết lại (thêm định nghĩa người có công tại khoản 1, danh sách đối tượng chuyển sang khoản 2).",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chế độ nào thuộc \"các chế độ ưu đãi khác\" đối với người có công?",
+   "options": [
+    "Điều dưỡng phục hồi sức khỏe",
+    "Trợ cấp thất nghiệp",
+    "Lương hưu",
+    "Trợ cấp thai sản"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 2 Điều 5.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 5 Pháp lệnh Ưu đãi người có công với cách mạng 2020 (02/2020/UBTVQH14)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người có công và thân nhân được hưởng chế độ ưu đãi theo nguyên tắc nào?",
+   "options": [
+    "Tùy từng đối tượng",
+    "Mọi người hưởng như nhau",
+    "Theo mức đóng góp tài chính",
+    "Theo thu nhập hiện tại"
+   ],
+   "answer": 0,
+   "explain": "Điều 5.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 5 Pháp lệnh Ưu đãi người có công với cách mạng 2020 (02/2020/UBTVQH14)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Trợ cấp, phụ cấp (khoản 1 Điều 5)",
+   "right": "Ưu đãi khác (khoản 2 Điều 5)",
+   "cases": [
+    {
+     "text": "Trợ cấp một lần",
+     "answer": "left"
+    },
+    {
+     "text": "Miễn hoặc giảm tiền sử dụng đất",
+     "answer": "right"
+    },
+    {
+     "text": "Vay vốn ưu đãi để sản xuất, kinh doanh",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 5."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người có công được hưởng trợ cấp {{hằng tháng}}, phụ cấp hằng tháng, trợ cấp {{một lần}}.",
+   "bank_extra": [
+    "hằng quý",
+    "trọn đời"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Các chế độ ưu đãi khác bao gồm bảo hiểm {{y tế}}; điều dưỡng phục hồi {{sức khỏe}}.",
+   "bank_extra": [
+    "thất nghiệp",
+    "lao động"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người có công phải đóng góp tài chính mới được hưởng chế độ ưu đãi.",
+   "answer": false,
+   "explain": "Sai. Ưu đãi người có công là sự đền đáp của Nhà nước, không dựa trên đóng góp (Điều 5, 6)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các chế độ ưu đãi đối với người có công và thân nhân.",
+   "model": "Trợ cấp hằng tháng, phụ cấp hằng tháng, trợ cấp một lần; ưu đãi khác: bảo hiểm y tế, điều dưỡng, phương tiện trợ giúp, ưu tiên tuyển sinh, việc làm, hỗ trợ học tập, nhà ở, miễn giảm tiền sử dụng đất, ưu tiên giao thuê đất, vay vốn, miễn giảm thuế (Điều 5).",
+   "keywords": [
+    "trợ cấp",
+    "bảo hiểm y tế",
+    "điều dưỡng",
+    "nhà ở"
+   ]
+  }
+ ]
+}

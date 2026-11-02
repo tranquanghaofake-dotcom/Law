@@ -1,0 +1,116 @@
+{
+ "id": "dieu-kien-tro-cap-that-nghiep",
+ "subject": "an-sinh-xa-hoi",
+ "chapter": "v3",
+ "term": "Điều kiện và mức hưởng trợ cấp thất nghiệp",
+ "definition": "Đã đóng bảo hiểm thất nghiệp từ đủ 12 tháng trở lên trong thời gian 24 tháng trước khi chấm dứt hợp đồng lao động, hợp đồng làm việc hoặc chấm dứt làm việc theo quy định của pháp luật. (…) Đã nộp đủ hồ sơ hưởng trợ cấp thất nghiệp trong thời hạn 03 tháng kể từ ngày chấm dứt hợp đồng lao động, hợp đồng làm việc hoặc chấm dứt làm việc. (…) Mức hưởng trợ cấp thất nghiệp hằng tháng bằng 60% mức bình quân tiền lương tháng đóng bảo hiểm thất nghiệp của 06 tháng đã đóng bảo hiểm thất nghiệp gần nhất trước khi chấm dứt hợp đồng lao động, hợp đồng làm việc hoặc chấm dứt làm việc nhưng tối đa không quá 05 lần mức lương tối thiểu tháng theo vùng do Chính phủ công bố được áp dụng tại tháng cuối cùng đóng bảo hiểm thất nghiệp.",
+ "plain": "Bốn điều kiện (Điều 38): (a) chấm dứt HĐLĐ hợp pháp — KHÔNG được hưởng nếu người lao động đơn phương chấm dứt TRÁI PHÁP LUẬT hoặc nghỉ khi đủ điều kiện hưởng lương hưu; (b) đóng đủ 12 tháng trong 24 tháng (hợp đồng 1–12 tháng: 12 tháng trong 36 tháng); (c) nộp hồ sơ trong 03 tháng; (d) sau 10 ngày làm việc chưa có việc làm. Mức: 60% bình quân lương 6 tháng gần nhất, tối đa 5 lần lương tối thiểu vùng. Thời gian: đóng 12–36 tháng hưởng 03 tháng, thêm mỗi 12 tháng thêm 01 tháng, tối đa 12 tháng (khoản 2 Điều 39). Hưởng từ ngày làm việc thứ 11.",
+ "example": "Anh G bị công ty cho thôi việc đúng luật, đã đóng 30 tháng BHTN, lương bình quân 6 tháng cuối 10 triệu: nộp hồ sơ trong 3 tháng thì được hưởng 6 triệu/tháng trong 3 tháng (nếu không vượt trần 5 lần lương tối thiểu vùng).",
+ "source": {
+  "kind": "statute",
+  "cite": "Điểm b, c khoản 1 Điều 38; khoản 1 Điều 39 Luật Việc làm 2025 (74/2025/QH15)",
+  "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Luat-Viec-lam-2025-so-74-2025-QH15-530912.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "bao-hiem-that-nghiep",
+  "bao-hiem-xa-hoi"
+ ],
+ "keywords": [
+  "12 tháng trong 24 tháng",
+  "nộp hồ sơ trong 03 tháng",
+  "60% bình quân 06 tháng",
+  "tối đa 05 lần lương tối thiểu vùng"
+ ],
+ "note": "Luật Việc làm 74/2025/QH15 có hiệu lực từ 01/01/2026, thay thế Luật Việc làm 38/2013/QH13 (đề cương HLU còn dẫn luật 2013).",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Mức hưởng trợ cấp thất nghiệp hằng tháng là bao nhiêu?",
+   "options": [
+    "60% mức bình quân tiền lương tháng đóng BHTN của 06 tháng gần nhất, tối đa 05 lần lương tối thiểu vùng",
+    "75% tiền lương tháng cuối",
+    "50% lương cơ sở",
+    "100% lương bình quân"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 39.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 39 Luật Việc làm 2025 (74/2025/QH15)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người lao động đơn phương chấm dứt HĐLĐ trái pháp luật có được hưởng trợ cấp thất nghiệp không?",
+   "options": [
+    "Không",
+    "Có, như bình thường",
+    "Có, nhưng giảm 50%",
+    "Có, nếu đóng trên 5 năm"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 38.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 38 Luật Việc làm 2025 (74/2025/QH15)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Được hưởng trợ cấp thất nghiệp",
+   "right": "Không được hưởng",
+   "cases": [
+    {
+     "text": "Bị cho thôi việc đúng luật, đóng đủ 12 tháng trong 24 tháng",
+     "answer": "left"
+    },
+    {
+     "text": "Nghỉ việc khi đã đủ điều kiện hưởng lương hưu",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 38."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đã đóng bảo hiểm thất nghiệp từ đủ {{12}} tháng trở lên trong thời gian {{24}} tháng trước khi chấm dứt hợp đồng lao động.",
+   "bank_extra": [
+    "6",
+    "12"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Mức hưởng trợ cấp thất nghiệp hằng tháng bằng {{60%}} mức bình quân tiền lương tháng đóng bảo hiểm thất nghiệp của {{06}} tháng gần nhất.",
+   "bank_extra": [
+    "75%",
+    "12"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thời gian hưởng trợ cấp thất nghiệp tối đa là 12 tháng.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 39."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu điều kiện, mức hưởng trợ cấp thất nghiệp theo Luật Việc làm 2025.",
+   "model": "Chấm dứt HĐLĐ hợp pháp (không đơn phương trái luật, không đủ điều kiện hưu); đóng đủ 12 tháng trong 24 tháng; nộp hồ sơ trong 03 tháng; chưa có việc làm sau 10 ngày làm việc (Điều 38); mức 60% bình quân lương 06 tháng gần nhất, tối đa 05 lần lương tối thiểu vùng, tối đa 12 tháng (Điều 39).",
+   "keywords": [
+    "12 tháng",
+    "03 tháng",
+    "60%",
+    "05 lần"
+   ]
+  }
+ ]
+}

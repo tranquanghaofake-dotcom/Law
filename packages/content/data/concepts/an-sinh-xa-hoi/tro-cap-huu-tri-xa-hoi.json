@@ -1,0 +1,117 @@
+{
+ "id": "tro-cap-huu-tri-xa-hoi",
+ "subject": "an-sinh-xa-hoi",
+ "chapter": "v2",
+ "term": "Trợ cấp hưu trí xã hội",
+ "definition": "Trợ cấp hưu trí xã hội là loại hình bảo hiểm xã hội do ngân sách nhà nước bảo đảm cho người cao tuổi đủ điều kiện theo quy định của Luật này. (…) Công dân Việt Nam được hưởng trợ cấp hưu trí xã hội khi có đủ các điều kiện sau đây: a) Từ đủ 75 tuổi trở lên; b) Không hưởng lương hưu hoặc trợ cấp bảo hiểm xã hội hằng tháng, trừ trường hợp khác theo quy định của Chính phủ; c) Có văn bản đề nghị hưởng trợ cấp hưu trí xã hội.",
+ "plain": "Loại hình MỚI của Luật 2024, là \"tầng\" thấp nhất của hệ thống BHXH đa tầng: KHÔNG ĐÓNG, do NGÂN SÁCH bảo đảm. Đủ 75 tuổi trở lên; người từ đủ 70 đến dưới 75 tuổi thuộc HỘ NGHÈO, CẬN NGHÈO cũng được hưởng (khoản 2 Điều 21). Chế độ: trợ cấp hằng tháng, hỗ trợ mai táng, BHYT do ngân sách đóng (khoản 1 Điều 4). Ủy ban Thường vụ Quốc hội có thể giảm dần độ tuổi hưởng.",
+ "example": "Cụ ông 76 tuổi, làm nông cả đời, không có lương hưu: có văn bản đề nghị thì được hưởng trợ cấp hưu trí xã hội hằng tháng và thẻ BHYT do ngân sách đóng.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 2 Điều 3; khoản 1 Điều 21 Luật Bảo hiểm xã hội 2024 (VBHN 19/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bao-hiem/Van-ban-hop-nhat-19-VBHN-VPQH-2026-Luat-Bao-hiem-xa-hoi-696579.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "bao-hiem-xa-hoi",
+  "dieu-kien-huong-luong-huu",
+  "tro-giup-xa-hoi"
+ ],
+ "keywords": [
+  "ngân sách nhà nước bảo đảm",
+  "từ đủ 75 tuổi",
+  "70–75 tuổi hộ nghèo, cận nghèo",
+  "không hưởng lương hưu"
+ ],
+ "note": "Luật Bảo hiểm xã hội 41/2024/QH15 có hiệu lực từ 01/7/2025, thay thế Luật Bảo hiểm xã hội 58/2014/QH13 (đề cương HLU còn dẫn luật 2014).",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Công dân Việt Nam từ đủ bao nhiêu tuổi (không thuộc hộ nghèo) được hưởng trợ cấp hưu trí xã hội?",
+   "options": [
+    "75 tuổi",
+    "60 tuổi",
+    "80 tuổi",
+    "70 tuổi"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 21.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 21 Luật Bảo hiểm xã hội 2024 (VBHN 19/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nguồn chi trả trợ cấp hưu trí xã hội là gì?",
+   "options": [
+    "Ngân sách nhà nước",
+    "Quỹ BHXH bắt buộc",
+    "Người sử dụng lao động",
+    "Quỹ bảo hiểm thất nghiệp"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 3 Luật Bảo hiểm xã hội 2024 (VBHN 19/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Trợ cấp hưu trí xã hội",
+   "right": "Lương hưu",
+   "cases": [
+    {
+     "text": "Không cần thời gian đóng BHXH",
+     "answer": "left"
+    },
+    {
+     "text": "Cần thời gian đóng BHXH bắt buộc từ đủ 15 năm",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 21, 64."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Trợ cấp hưu trí xã hội là loại hình bảo hiểm xã hội do {{ngân sách nhà nước}} bảo đảm cho {{người cao tuổi}} đủ điều kiện.",
+   "bank_extra": [
+    "quỹ bảo hiểm",
+    "người lao động"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công dân Việt Nam từ đủ {{75}} tuổi trở lên, không hưởng {{lương hưu}} hoặc trợ cấp bảo hiểm xã hội hằng tháng.",
+   "bank_extra": [
+    "60",
+    "trợ cấp thất nghiệp"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người 72 tuổi thuộc hộ cận nghèo, không có lương hưu có thể được hưởng trợ cấp hưu trí xã hội.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 21."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm và điều kiện hưởng trợ cấp hưu trí xã hội.",
+   "model": "Loại hình BHXH do ngân sách bảo đảm cho người cao tuổi (khoản 2 Điều 3); điều kiện: từ đủ 75 tuổi (hoặc 70–75 tuổi thuộc hộ nghèo, cận nghèo), không hưởng lương hưu, trợ cấp BHXH hằng tháng, có văn bản đề nghị (Điều 21).",
+   "keywords": [
+    "ngân sách",
+    "75 tuổi",
+    "lương hưu",
+    "hộ nghèo"
+   ]
+  }
+ ]
+}
