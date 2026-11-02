@@ -6,7 +6,7 @@
   // Thẻ chuyên cần — thẻ trơn bo tròn (không viền), 27 doodle nét đơn về pháp luật phủ kín nền, có hình phụ lấp khe, sáng dần theo ngày;
   // logo bông sen 8 cánh ôm cán cân (không phải logo VBF, không Quốc huy). Rê chuột: thẻ nghiêng 3D + vệt sáng theo chuột
   // (học kỹ thuật biến CSS theo con trỏ của pokemon-cards-css (GPL-3.0) và vanilla-tilt (MIT) — tự viết, không chép mã).
-  import { cardFor, justLit, TIER_NAMES, type Tier } from '$lib/game/card';
+  import { cardFor, justLit, isMilestone, TIER_NAMES, type Tier } from '$lib/game/card';
   import { CARD_GLYPHS } from './cardGlyphs';
   let { count = 0, longest = 0, size = 'full', ignite = false }: { count?: number; longest?: number; size?: 'full' | 'mini'; ignite?: boolean } = $props();
   const c = $derived(cardFor(count, longest));
@@ -16,7 +16,7 @@
   const jit = (i: number, k: number) => (((i * 9301 + k * 49297) % 233280) / 233280 - 0.5);
   const slots: [number, number][] = [
     ...Array.from({ length: 7 }, (_, i) => [74 + i * 118, 78] as [number, number]),
-    ...[48, 150, 252, 604, 706, 808].map((x) => [x, 206] as [number, number]),
+    ...[40, 138, 232, 624, 718, 816].map((x) => [x, 206] as [number, number]),
     ...[86, 188, 286, 570, 672, 774].map((x) => [x, 334] as [number, number]),
     ...Array.from({ length: 8 }, (_, i) => [54 + i * 107, 466] as [number, number]),
   ];
@@ -38,17 +38,20 @@
   const rankOf = Array(27).fill(0); order.forEach((g, k) => (rankOf[g] = k));
   // hoa văn hoa thị (rosette) của huy hiệu: elip xoay lồng nhau
   const rosette = Array.from({ length: 36 }, (_, k) => k * 5);
-  const label = $derived(count > 0 ? `Thẻ chuyên cần: chuỗi ${count} ngày, ngày ${c.day}/30, màu ${TIER_NAMES[c.tier as Tier]}` : 'Thẻ chuyên cần: chưa có chuỗi');
+  // cán cân của huy hiệu (gốc toạ độ = tâm đĩa số): cột xuyên qua đĩa, đòn cân và hai đĩa cân phía trên, đế phía dưới
+  const SCALE = 'M0-124V-60M0 60V112M-124-92Q0-108 124-92M-124-92L-146-34M-124-92L-102-34M124-92L102-34M124-92L146-34M-46 112H46M-64 124H64M-14-96Q0-103 14-96';
+  const PANS = 'M-152-34Q-124-12-96-34ZM96-34Q124-12 152-34Z';
+  const label = $derived(count > 0 ? `Thẻ chuyên cần: chuỗi ${count} ngày, tiến độ ${c.day}/30, màu ${TIER_NAMES[c.tier as Tier]}` : 'Thẻ chuyên cần: chưa có chuỗi');
   // Lửa ba lớp (theo video Hào gửi): lõi gần trắng, thân màu bão hoà, quầng rộng rung như lửa/điện trên nền tối.
   type Fire = { core: string; mid: string; glow: string };
   const FIRE: Record<Tier, Fire> = {
     do: { core: '#fff4b8', mid: '#ffa32a', glow: '#e3300b' },
     lam: { core: '#effbff', mid: '#38b6ff', glow: '#0a5cff' },
     tim: { core: '#f8edff', mid: '#b65cff', glow: '#7417ff' },
-    trang: { core: '#ffffff', mid: '#dff0ff', glow: '#8fc4ff' },
-    den: { core: '#fff6d4', mid: '#efbd4f', glow: '#a8650f' },
-    'vo-cuc': { core: '#ffffff', mid: `url(#${uid}-holo)`, glow: '#c38bff' },
+    // trắng–đen giao thoa: lửa trắng bạc, có vệt đen chạy dọc nét (xem lớp .cg-inter)
+    'trang-den': { core: '#ffffff', mid: '#eef3fa', glow: '#8ea4bf' },
   };
+
   const fire = (t: Tier) => FIRE[t];
   const ink = (t: Tier | null) => (t ? FIRE[t].mid : '#ffffff');
   const cur = $derived(c.tier ? FIRE[c.tier] : null);
@@ -56,12 +59,15 @@
   const embers = $derived(doodles.flatMap((dd, i) => (litNow[i] && rankOf[i] === c.day - 1 ? [0, 1, 2, 3].map((k) => ({ x: dd.x + jit(i, 10 + k) * 40, y: dd.y + 10 + jit(i, 12 + k) * 20, d: (jit(i, 14 + k) + 0.5) * 3, i })) : [])));
   const bolts = Array.from({ length: 8 }, (_, k) => {
     const a = (k / 8) * Math.PI * 2 + 0.3; let d = '';
-    for (let j = 0; j <= 6; j++) { const r = 172 - j * 11, w = j % 2 ? 7 : -7, aa = a + (w / r); d += `${j ? 'L' : 'M'}${(Math.cos(aa) * r).toFixed(1)} ${(Math.sin(aa) * r * 0.82).toFixed(1)}`; }
+    for (let j = 0; j <= 6; j++) { const r = 150 - j * 11, w = j % 2 ? 7 : -7, aa = a + (w / r); d += `${j ? 'L' : 'M'}${(Math.cos(aa) * r).toFixed(1)} ${(Math.sin(aa) * r * 0.82).toFixed(1)}`; }
     return d;
   });
-  const caption = $derived([c.tier ? `${TIER_NAMES[c.tier]} · ngày ${c.day}/30` : 'Chưa bắt đầu chuỗi', `chuỗi ${count} ngày`, `kỷ lục ${Math.max(longest, count)} ngày${c.record ? ` (${TIER_NAMES[c.record]})` : ''}`].join(' · '));
+  const best = $derived(Math.max(longest, count));
+  const caption = $derived([c.tier ? `${TIER_NAMES[c.tier]} · ${c.day}/30` : 'Chưa bắt đầu chuỗi', `chuỗi ${count} ngày${isMilestone(count) ? ' · mốc +1' : ''}`,
+    `kỷ lục ${best}${c.record && c.record !== c.tier ? ` (${TIER_NAMES[c.record]})` : ''}`].join(' · '));
   const lf = $derived(c.logo ? `url(#${uid}-lotus)` : `url(#${uid}-ash)`);
   const lg = $derived(c.logo ? FIRE[c.logo] : null);
+  const fs = $derived(String(count).length >= 3 ? 40 : 54);
   // Rê chuột: độ nghiêng chạy theo lò xo (mỗi khung hình tiến 12% về đích) nên mượt, có quán tính; lớp doodle trôi ngược
   // chiều (parallax), logo nổi lên. Rời chuột: trôi êm về giữa rồi dừng vòng lặp.
   let el: HTMLDivElement | undefined = $state();
@@ -107,10 +113,6 @@
     <defs>
       <radialGradient id="{uid}-bg" cx=".3" cy=".2" r="1.1"><stop offset="0" stop-color="#34343a" /><stop offset=".55" stop-color="#1b1b20" /><stop offset="1" stop-color="#0d0d10" /></radialGradient>
       <linearGradient id="{uid}-gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#b8924a" /><stop offset=".45" stop-color="#f6e2a8" /><stop offset=".6" stop-color="#d9b56a" /><stop offset="1" stop-color="#8e6c2c" /></linearGradient>
-      <linearGradient id="{uid}-holo" x1="0" x2="1" y1="0" y2=".5">
-        <stop offset="0" stop-color="#ff7aa2" /><stop offset=".2" stop-color="#ffd27a" /><stop offset=".4" stop-color="#7affc0" /><stop offset=".6" stop-color="#6fd0ff" /><stop offset=".8" stop-color="#c79bff" /><stop offset="1" stop-color="#ff7aa2" />
-        <animateTransform attributeName="gradientTransform" type="translate" values="-1 0;1 0;-1 0" dur="9s" repeatCount="indefinite" />
-      </linearGradient>
       <filter id="{uid}-glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2.4" result="b" /><feMerge><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge></filter>
       <radialGradient id="{uid}-disc" cx=".4" cy=".35" r=".8"><stop offset="0" stop-color="#2c2a28" /><stop offset="1" stop-color="#121214" /></radialGradient>
       <filter id="{uid}-emboss" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="2.5" stdDeviation="1.6" flood-color="#000" flood-opacity=".75" /><feDropShadow dx="0" dy="-1" stdDeviation=".4" flood-color="#fff6d8" flood-opacity=".35" /></filter>
@@ -122,7 +124,10 @@
       <filter id="{uid}-hand" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="7" /><feDisplacementMap in="SourceGraphic" scale="2.2" /></filter>
       <filter id="{uid}-soft" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="14" /></filter>
       <!-- lửa: làm nhoè rồi xé mép bằng nhiễu chuyển động, cộng quầng rộng -->
-      <filter id="{uid}-flame" x="-10%" y="-20%" width="120%" height="140%">
+      <clipPath id="{uid}-clip"><rect width="856" height="540" rx="40" /></clipPath>
+      <linearGradient id="{uid}-sheen" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0" /><stop offset=".5" stop-color="#fff" stop-opacity=".09" /><stop offset="1" stop-color="#fff" stop-opacity="0" /></linearGradient>
+      <linearGradient id="{uid}-edge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".22" /><stop offset=".35" stop-color="#fff" stop-opacity=".04" /><stop offset="1" stop-color="#000" stop-opacity=".5" /></linearGradient>
+      <filter id="{uid}-flame" x="-6%" y="-12%" width="112%" height="124%">
         <feTurbulence type="fractalNoise" baseFrequency=".016 .06" numOctaves="3" seed="3" result="n">
           <animate attributeName="baseFrequency" dur="2.4s" values=".016 .06;.02 .08;.014 .05;.016 .06" repeatCount="indefinite" />
         </feTurbulence>
@@ -134,7 +139,7 @@
       <filter id="{uid}-hot" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="1.4" result="b" /><feMerge><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge></filter>
       {#if cur}<radialGradient id="{uid}-aura"><stop offset="0" stop-color={cur.glow} stop-opacity=".32" /><stop offset=".6" stop-color={cur.glow} stop-opacity=".08" /><stop offset="1" stop-color={cur.glow} stop-opacity="0" /></radialGradient>{/if}
       <linearGradient id="{uid}-ash" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9a9aa0" /><stop offset="1" stop-color="#4b4b52" /></linearGradient>
-      {#if lg}<radialGradient id="{uid}-lotus" cx=".5" cy=".35" r=".75"><stop offset="0" stop-color={lg.core} /><stop offset=".45" stop-color={c.logo === 'vo-cuc' ? '#ffd27a' : lg.mid} /><stop offset="1" stop-color={lg.glow} /></radialGradient>{/if}
+      {#if lg}<radialGradient id="{uid}-lotus" cx=".5" cy=".35" r=".75"><stop offset="0" stop-color={lg.core} /><stop offset=".45" stop-color={lg.mid} /><stop offset="1" stop-color={lg.glow} /></radialGradient>{/if}
     </defs>
     <rect width="856" height="540" rx="40" fill="url(#{uid}-bg)" />
     <!-- quầng màu lửa mờ phía sau (đậm dần theo ngày) -->
@@ -142,7 +147,7 @@
     <!-- nền doodle: 27 hình pháp luật sáng dần theo ngày + hình phụ lấp khe; nét rung nhẹ như vẽ tay; mờ quanh logo -->
     <g class="cg-par-bg" mask="url(#{uid}-hole)" fill="none" stroke-linecap="round" stroke-linejoin="round">
       <g filter="url(#{uid}-hand)">
-        <g stroke="url(#{uid}-gold)" stroke-width=".9" opacity=".13">
+        <g stroke="url(#{uid}-gold)" stroke-width=".9" opacity=".09">
           {#each fillers as fl, i (i)}<path d={fl.d} transform="translate({fl.x.toFixed(1)} {fl.y.toFixed(1)}) rotate({fl.rot.toFixed(0)}) scale(1.5)" />{/each}
         </g>
         {#each doodles as dd, i (i)}
@@ -169,8 +174,10 @@
                   <title>{CARD_GLYPHS[i].field}: {CARD_GLYPHS[i].name}</title>
                   {#if rankOf[i] === c.day - 1}
                     <path d={CARD_GLYPHS[i].d} stroke={cur.mid} stroke-width="2.4" /><path d={CARD_GLYPHS[i].d} stroke={cur.core} stroke-width="1.1" />
+                    {#if c.tier === 'trang-den'}<path class="cg-inter" d={CARD_GLYPHS[i].d} stroke="#050507" stroke-width="1.6" />{/if}
                   {:else}
                     <path d={CARD_GLYPHS[i].d} stroke={cur.mid} stroke-width="1.6" opacity=".75" /><path d={CARD_GLYPHS[i].d} stroke={cur.core} stroke-width=".7" opacity=".55" />
+                    {#if c.tier === 'trang-den'}<path class="cg-inter slow" d={CARD_GLYPHS[i].d} stroke="#050507" stroke-width="1.1" />{/if}
                   {/if}
                 </g>
               </g>
@@ -183,36 +190,37 @@
         </g>
       {/if}
     </g>
-    <!-- huy hiệu: xám khi chưa thắp; ngày 29 tia điện tụ về; ngày 30 thắp cuối cùng với vòng lửa cháy quanh đĩa -->
+    <!-- huy hiệu (theo phác thảo của Hào): cán cân lớn tràn ra ngoài vòng tròn, trong vòng tròn là số ngày của chuỗi.
+         Xám khi chưa thắp; ngày 29 tia điện tụ về; ngày 30 thắp cuối cùng — cán cân cháy ba lớp, vòng lửa quanh đĩa số. -->
     <g class="cg-par-fg" class:born={!!c.logo}><g transform="translate(428 262)" class="cg-logo" class:lit={!!c.logo} class:charge={!!c.charge}>
-      <circle r="112" fill="#0f0f12" opacity=".75" filter="url(#{uid}-soft)" />
-      {#if lg}<circle class="cg-ring" r="106" fill="none" stroke={lg.glow} stroke-width="7" opacity=".8" filter="url(#{uid}-flame)" />{/if}
+      <ellipse rx="190" ry="170" fill="#0f0f12" opacity=".7" filter="url(#{uid}-soft)" />
       {#if c.charge}
         <g class="cg-bolts" fill="none" stroke-linecap="round" stroke-linejoin="round" filter="url(#{uid}-hot)">
           {#each bolts as d, k (k)}<path {d} stroke={fire(c.charge).mid} stroke-width="4" style="animation-delay:{(k * 0.37).toFixed(2)}s" /><path {d} stroke={fire(c.charge).core} stroke-width="1.6" style="animation-delay:{(k * 0.37).toFixed(2)}s" />{/each}
         </g>
-        <circle r="108" fill="none" stroke={fire(c.charge).glow} stroke-width="3" opacity=".6" class="cg-charge" filter="url(#{uid}-hot)" />
       {/if}
-      <circle r="104" fill="url(#{uid}-disc)" stroke={lg ? lg.mid : '#55555c'} stroke-width="2.5" />
-      <g class="cg-rosette" fill="none" stroke={lg ? lg.mid : '#76767e'} stroke-width=".9" opacity={lg ? 0.85 : 0.32} filter={lg ? `url(#${uid}-hot)` : undefined}>
-        {#each rosette as a (a)}<ellipse rx="96" ry="34" transform="rotate({a})" />{/each}
+      <!-- cán cân: quầng lửa (khi thắp) → thân → lõi; chưa thắp thì xám nổi khối -->
+      {#if lg}<g class="cg-ring" fill="none" stroke={lg.glow} stroke-width="7" stroke-linecap="round" stroke-linejoin="round" filter="url(#{uid}-flame)"><path d={SCALE} /><circle r="66" /></g>{/if}
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round" filter={lg ? `url(#${uid}-hot)` : `url(#${uid}-emboss)`}>
+        <path d={SCALE} stroke={lg ? lg.mid : '#7a7a82'} stroke-width={lg ? 4.2 : 4.6} />
+        <path d={PANS} fill={lg ? lg.mid : '#5a5a62'} fill-opacity={lg ? 0.35 : 0.6} stroke={lg ? lg.mid : '#7a7a82'} stroke-width="3" />
+        {#if lg}<path d={SCALE} stroke={lg.core} stroke-width="1.6" /><path d={PANS} stroke={lg.core} stroke-width="1.2" />{/if}
+        {#if c.logo === 'trang-den'}<path class="cg-inter" d={SCALE} stroke="#050507" stroke-width="2.2" />{/if}
+        <circle cy="-129" r="6" fill={lg ? lg.core : '#8a8a92'} stroke="none" />
       </g>
-      <circle r="66" fill="url(#{uid}-disc)" stroke={lg ? lg.core : '#5e5e66'} stroke-width="2" />
-      <circle r="60" fill="none" stroke={lg ? lg.mid : '#5e5e66'} stroke-width="1" stroke-dasharray="1 4" />
-      {#if lg}<circle r="46" fill={lg.glow} opacity=".35" filter="url(#{uid}-soft)" class="cg-core" />{/if}
-      <g filter={lg ? `url(#${uid}-hot)` : `url(#${uid}-emboss)`} transform="translate(0 6)">
-        <!-- đài sen nghiêng 5 cánh -->
-        <path d="M-4 34C-34 32-48 16-48 2C-30 2-14 14-4 34Z" fill={lf} opacity=".7" /><path d="M4 34C34 32 48 16 48 2C30 2 14 14 4 34Z" fill={lf} opacity=".7" />
-        <path d="M-2 34C-24 26-30 6-24-12C-12-2-4 14-2 34Z" fill={lf} opacity=".85" /><path d="M2 34C24 26 30 6 24-12C12-2 4 14 2 34Z" fill={lf} opacity=".85" />
-        <path d="M0 34C-13 18-13-2 0-20C13-2 13 18 0 34Z" fill={lf} />
-        <path d="M0 30V-6M-30 34Q0 46 30 34" fill="none" stroke="#141414" stroke-width="1.2" opacity=".5" />
-        <!-- cán cân mọc lên từ cánh giữa, đĩa cân lơ lửng trên hai cánh bên -->
-        <g fill="none" stroke={lg ? lg.core : lf} stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M0 -20V-46M-34 -40Q0 -50 34 -40M-34 -40l-8 16M-34 -40l8 16M34 -40l-8 16M34 -40l8 16" />
-          <path d="M-44 -24Q-34 -14 -24 -24zM24 -24Q34 -14 44 -24z" fill={lf} />
-        </g>
-        <circle cy="-50" r="4.4" fill={lg ? lg.core : lf} />
+      <!-- vòng hoa văn + đĩa số -->
+      <g class="cg-rosette" fill="none" stroke={lg ? lg.mid : '#76767e'} stroke-width=".8" opacity={lg ? 0.38 : 0.22}>
+        {#each rosette as a (a)}<ellipse rx="80" ry="27" transform="rotate({a})" />{/each}
       </g>
+      {#if c.charge}<circle r="66" fill="none" stroke={fire(c.charge).glow} stroke-width="3" opacity=".6" class="cg-charge" filter="url(#{uid}-hot)" />{/if}
+      <circle r="60" fill="url(#{uid}-disc)" stroke={lg ? lg.core : '#5e5e66'} stroke-width="2.4" />
+      <circle r="53" fill="none" stroke={lg ? lg.mid : '#55555c'} stroke-width="1" stroke-dasharray="1 4" />
+      {#if lg}<circle r="40" fill={lg.glow} opacity=".3" filter="url(#{uid}-soft)" class="cg-core" />{/if}
+      <!-- số khắc chìm: bóng tối lệch xuống + viền sáng mảnh lệch lên, rồi chữ chính -->
+      <text class="cg-count" y="2.4" text-anchor="middle" dominant-baseline="central" font-size={fs} fill="#000" opacity=".6">{count}</text>
+      <text class="cg-count" y="-.6" text-anchor="middle" dominant-baseline="central" font-size={fs} fill="#fff" opacity=".18">{count}</text>
+      <text class="cg-count" y="1" text-anchor="middle" dominant-baseline="central" font-size={fs}
+        fill={lg ? `url(#${uid}-lotus)` : `url(#${uid}-ash)`} filter={lg ? `url(#${uid}-hot)` : undefined}>{count}</text>
     </g></g>
     <!-- màn vừa thắp: tia lửa bay từ logo tới ký hoạ mới → bùng cháy + sóng lửa; ngày 28–30 thì sóng lớn quanh logo -->
     {#if lighting && cur}
@@ -233,7 +241,12 @@
       {#if c.border === c.tier && c.day >= 28}<rect x="4" y="4" width="848" height="532" rx="37" fill="none" stroke={fire(c.border).glow} stroke-width="3.5" opacity=".75" filter="url(#{uid}-flame)" class="cg-border" />{/if}
       <rect x="3" y="3" width="850" height="534" rx="38" fill="none" stroke={fire(c.border).mid} stroke-width="1.2" opacity=".55" />
     {/if}
-    {#if c.burst}<rect width="856" height="540" rx="40" fill={c.tier === 'vo-cuc' ? `url(#${uid}-holo)` : `url(#${uid}-aura)`} class="cg-burst" class:tint={c.tier !== 'vo-cuc'} />{/if}
+    {#if c.burst}<rect width="856" height="540" rx="40" fill="url(#{uid}-aura)" class="cg-burst tint" />{/if}
+    <!-- chất liệu thẻ: vệt sáng lướt chéo định kỳ + cạnh kim loại mảnh -->
+    {#if size === 'full'}
+      <g clip-path="url(#{uid}-clip)" pointer-events="none"><rect class="cg-sheen" x="-260" y="-60" width="200" height="660" fill="url(#{uid}-sheen)" transform="rotate(18 0 270)" /></g>
+    {/if}
+    <rect x="1.5" y="1.5" width="853" height="537" rx="39" fill="none" stroke="url(#{uid}-edge)" stroke-width="1.6" />
   </svg>
   <span class="sc-glare" aria-hidden="true"></span>
 </div>

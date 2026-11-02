@@ -203,6 +203,22 @@ Không vẽ Quốc huy, sao, vạch cấp hiệu hay biểu tượng ngành th�
 - Rê chuột: độ nghiêng theo lò xo (requestAnimationFrame, tiến 12%/khung hình) thay vì bám tức thời; parallax — lớp doodle trôi ngược chiều, huy hiệu nổi lên; sáng dần khi rê vào.
 - Vừa thắp (`justLit(count, seen)`, `seen` lưu localStorage `ll-card-seen` — chỉ là tiện ích hiển thị; lần đầu chỉ ghi nhận): tia lửa bay từ huy hiệu tới ký hoạ mới → loé + sóng lửa → ký hoạ phóng lên rồi ổn định (~2,6 giây). Ngày 28–30: sóng lớn quanh huy hiệu, ngày 30 huy hiệu bùng lên. Giảm chuyển động: ẩn hẳn lớp hiệu ứng.
 
+### 3.15 Huy hiệu mới theo phác thảo (Hào, 02/11/2026)
+
+- Cán cân lớn **tràn ra ngoài** vòng tròn (cột xuyên tâm, đòn cân + hai đĩa phía trên, đế phía dưới); **trong vòng tròn là số ngày của chuỗi**. Bỏ đài sen. Xám nổi khối khi chưa thắp; thắp thì cán cân cháy ba lớp và có vòng lửa quanh đĩa số. Bốn ký hoạ gần huy hiệu dời ra để không chạm đĩa cân.
+
+### 3.16 Bốn cấp lửa và mốc thúc đẩy (Hào, 02/11/2026)
+
+- **4 cấp lửa** theo vòng: đỏ (lõi vàng) → xanh lam → tím → **trắng–đen giao thoa** (lửa trắng bạc, vệt đen chạy dọc nét như tia điện trên nền đen; cấp cuối, giữ mãi). Thay 6 màu cũ (bỏ "trắng", "đen ánh kim", "vô cực" tách rời).
+- **Mỗi vòng đủ 30 ngày tiến độ.** Ngày chuỗi chạm **mốc 1, 5, 10, 15…** được thêm 1 ngày tiến độ (`progressOf`, `isMilestone`), nhưng không vượt mốc 30 của vòng nên ngày logo thắp không bị nhảy qua. Vòng đầu xong sau 25 ngày học thật. Chú thích thẻ gọn: "màu · X/30 · chuỗi N ngày · mốc +1 · kỷ lục M".
+- Số trong huy hiệu vẫn là số ngày chuỗi thật.
+
+### 3.17 Tinh chỉnh "clean mà wow" (02/11/2026)
+
+- Bớt rối: vệt đen cấp trắng–đen mảnh và thưa, chạy chậm; vòng hoa văn quanh số mờ hơn; hình phụ nền mờ hơn.
+- Chất liệu: vệt sáng lướt chéo qua thẻ mỗi ~8 giây (nhanh hơn khi rê chuột); cạnh thẻ có đường sáng mảnh như kim loại; số trong huy hiệu khắc chìm.
+- Mượt: thu nhỏ vùng filter lửa.
+
 ## 4. Dữ liệu
 - Store mới (IndexedDB): `books` (chapterId → cấp cao nhất, ngày đạt), `career` (nhánh đang chọn, chức danh đã đạt), `card` (kỷ lục màu). Migration từ dữ liệu cũ: tính sách từ `progress` hiện có. XP vẫn giữ, chỉ hiển thị phụ.
 - `game/rank.ts` (khoa cử, phẩm hàm) **giữ file và test, không còn hiển thị**. XP vẫn cộng và hiện phụ ở Hồ sơ. Bậc 6 đổi tên **Tinh thông**.
