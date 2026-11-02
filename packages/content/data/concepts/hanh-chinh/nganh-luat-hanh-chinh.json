@@ -3,12 +3,12 @@
  "subject": "hanh-chinh",
  "chapter": "v2",
  "term": "Ngành luật hành chính: đối tượng và phương pháp điều chỉnh",
- "definition": "Luật hành chính là ngành luật bao gồm tổng thể các quy phạm pháp luật điều chỉnh những quan hệ xã hội phát sinh trong quá trình quản lý hành chính nhà nước. Phương pháp điều chỉnh đặc trưng của luật hành chính là phương pháp mệnh lệnh – phục tùng, xuất phát từ sự bất bình đẳng giữa các bên trong quan hệ quản lý.",
+ "definition": "Đối tượng điều chỉnh của luật hành chính là các quan hệ phát sinh trong quản lý hành chính nhà nước. Phương pháp điều chỉnh của luật hành chính là cách thức Nhà nước thông qua các quy định pháp luật tác động tới quan hệ xã hội là đối tượng điều chỉnh của luật hành chính. Phương pháp điều chỉnh của luật hành chính là mệnh lệnh.",
  "plain": "Đối tượng điều chỉnh: quan hệ quản lý hình thành khi (1) cơ quan hành chính nhà nước thực hiện hoạt động chấp hành – điều hành; (2) cơ quan nhà nước khác xây dựng, củng cố chế độ công tác nội bộ; (3) cá nhân, tổ chức được trao quyền quản lý trong trường hợp luật định. Phương pháp MỆNH LỆNH – PHỤC TÙNG (quyền uy – phục tùng): một bên nhân danh Nhà nước ra mệnh lệnh đơn phương, bên kia phải phục tùng; phương pháp thỏa thuận được dùng hạn chế (ví dụ hợp đồng hành chính). Khác luật dân sự: bình đẳng, thỏa thuận.",
  "example": "Cảnh sát giao thông yêu cầu người lái xe dừng xe kiểm tra: quan hệ quản lý theo phương pháp mệnh lệnh – phục tùng, người lái xe không thể \"thương lượng\".",
  "source": {
   "kind": "textbook",
-  "cite": "Giáo trình Luật Hành chính Việt Nam, Trường Đại học Luật Hà Nội; đề cương Luật Hành chính vấn đề 2 — tóm lược quan điểm học thuật phổ biến, chưa đối chiếu nguyên văn"
+  "cite": "Slide bài giảng Luật Hành chính Việt Nam, Trường Đại học Luật Hà Nội, vấn đề 2 (\"TUẦN 2 HC\", TS. Nguyễn Ngọc Bích) — đã khớp nguyên văn slide (laws/hc-slide-trich.txt); slide không phải giáo trình, giáo trình chưa đối chiếu"
  },
  "checked": "2026-11-01",
  "confusables": [
@@ -33,7 +33,7 @@
     "Hòa giải"
    ],
    "answer": 0,
-   "explain": "Học thuyết.",
+   "explain": "Slide bài giảng vấn đề 2.",
    "source": {
     "kind": "statute",
     "cite": "Học thuyết x"
@@ -50,7 +50,7 @@
     "Quan hệ hôn nhân"
    ],
    "answer": 0,
-   "explain": "Học thuyết.",
+   "explain": "Slide bài giảng vấn đề 2.",
    "source": {
     "kind": "statute",
     "cite": "Học thuyết x"
@@ -76,7 +76,7 @@
   {
    "type": "cloze",
    "level": 3,
-   "text": "Luật hành chính điều chỉnh những quan hệ xã hội phát sinh trong quá trình {{quản lý hành chính nhà nước}}.",
+   "text": "Đối tượng điều chỉnh của luật hành chính là các quan hệ phát sinh trong {{quản lý hành chính nhà nước}}.",
    "bank_extra": [
     "kinh doanh thương mại",
     "tố tụng dân sự"
@@ -85,10 +85,10 @@
   {
    "type": "cloze",
    "level": 3,
-   "text": "Phương pháp điều chỉnh đặc trưng của luật hành chính là phương pháp {{mệnh lệnh}} – {{phục tùng}}.",
+   "text": "Phương pháp điều chỉnh của luật hành chính là {{mệnh lệnh}}: quan hệ không {{bình đẳng}}, quan hệ quyền lực và phục tùng quyền lực.",
    "bank_extra": [
     "thỏa thuận",
-    "bình đẳng"
+    "tự nguyện"
    ]
   },
   {

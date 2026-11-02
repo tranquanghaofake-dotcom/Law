@@ -3,12 +3,12 @@
  "subject": "hanh-chinh",
  "chapter": "v4",
  "term": "Các nguyên tắc cơ bản trong quản lý hành chính nhà nước",
- "definition": "Nguyên tắc quản lý hành chính nhà nước là những tư tưởng chủ đạo, có tính chất bắt buộc chung, làm nền tảng cho tổ chức và hoạt động quản lý hành chính nhà nước. Các nguyên tắc thường được chia thành hai nhóm: nhóm nguyên tắc chính trị – xã hội và nhóm nguyên tắc tổ chức – kỹ thuật.",
+ "definition": "NT trong QLHC nhà nước là những tư tưởng chủ đạo bắt nguồn từ cơ sở khoa học của hoạt động quản lý, từ bản chất của chế độ, được quy định trong pháp luật, làm nền tảng cho tổ chức và hoạt động QLHC nhà nước.",
  "plain": "Nhóm CHÍNH TRỊ – XÃ HỘI: Đảng lãnh đạo; nhân dân tham gia quản lý; tập trung dân chủ (Điều 8 Hiến pháp 2013); bình đẳng giữa các dân tộc; pháp chế xã hội chủ nghĩa. Nhóm TỔ CHỨC – KỸ THUẬT: quản lý theo ngành kết hợp với theo địa giới hành chính (lãnh thổ); phân biệt quản lý nhà nước về kinh tế với quản lý sản xuất kinh doanh của doanh nghiệp; quản lý theo ngành kết hợp với theo chức năng. Nhiều nguyên tắc đã được luật hóa, ví dụ Điều 5 Luật Tổ chức Chính phủ 2025 (tập trung dân chủ, cấp dưới phục tùng cấp trên, phân quyền, phân cấp).",
  "example": "Bộ Y tế quản lý thống nhất ngành y tế (theo ngành) đồng thời Sở Y tế chịu sự chỉ đạo của UBND cấp tỉnh (theo lãnh thổ): nguyên tắc kết hợp quản lý theo ngành với theo lãnh thổ.",
  "source": {
   "kind": "textbook",
-  "cite": "Giáo trình Luật Hành chính Việt Nam, Trường Đại học Luật Hà Nội; đề cương Luật Hành chính vấn đề 4 — tóm lược quan điểm học thuật phổ biến, chưa đối chiếu nguyên văn"
+  "cite": "Slide bài giảng Luật Hành chính Việt Nam, Trường Đại học Luật Hà Nội, vấn đề 4 (\"VĐ 04 -HCPC\") — đã khớp nguyên văn slide (laws/hc-slide-trich.txt); slide không phải giáo trình, giáo trình chưa đối chiếu"
  },
  "checked": "2026-11-01",
  "confusables": [
@@ -34,7 +34,7 @@
     "Bình đẳng giữa các dân tộc"
    ],
    "answer": 0,
-   "explain": "Học thuyết.",
+   "explain": "Slide bài giảng vấn đề 4.",
    "source": {
     "kind": "statute",
     "cite": "Học thuyết x"
@@ -72,7 +72,7 @@
      "answer": "right"
     }
    ],
-   "explain": "Học thuyết."
+   "explain": "Slide bài giảng vấn đề 4."
   },
   {
    "type": "cloze",

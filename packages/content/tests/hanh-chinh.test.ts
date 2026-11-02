@@ -16,7 +16,7 @@ describe('nội dung Luật Hành chính', () => {
       const c = conceptSchema.parse(JSON.parse(readFileSync(join(dir, f), 'utf8')));
       if (TEXTBOOK_CH.includes(c.chapter)) {
         expect(c.source.kind, f).toBe('textbook');
-        expect(c.source.cite, f).toMatch(/chưa đối chiếu nguyên văn/);
+        expect(c.source.cite, f).toMatch(/chưa đối chiếu nguyên văn|đã khớp nguyên văn slide|giáo trình chưa đối chiếu/);
       } else {
         expect(c.source.kind, f).toBe('statute');
         expect(c.source.cite).toMatch(/(Luật Xử lý vi phạm hành chính \(VBHN 90\/VBHN-VPQH 2026\)|Luật Tố tụng hành chính 2015 \(VBHN 13\/VBHN-VPQH 2026\)|Luật Tổ chức Chính phủ 2025 \(63\/2025\/QH15\)|Luật Cán bộ, công chức 2025 \(80\/2025\/QH15\)|Luật Khiếu nại 2011 \(VBHN 28\/VBHN-VPQH 2026\)|Luật Tố cáo 2018 \(VBHN 29\/VBHN-VPQH 2026\))$/);
@@ -44,6 +44,17 @@ describe('nội dung Luật Hành chính', () => {
       const law = lawFor(c.source.cite);
       for (const part of norm(c.definition).split(/(?<=[.;:])\s+/)) expect(law, `${f}: "${part}"`).toContain(part);
     }
+  });
+  it('khái niệm đối chiếu theo slide bài giảng: từng câu có trong laws/hc-slide-trich.txt', () => {
+    const slide = norm(readFileSync(join(root, 'laws', 'hc-slide-trich.txt'), 'utf8'));
+    let n = 0;
+    for (const f of files) {
+      const c = JSON.parse(readFileSync(join(dir, f), 'utf8'));
+      if (!/khớp nguyên văn slide/.test(c.source.cite)) continue;
+      n++;
+      for (const part of norm(c.definition).split(/(?<=[.;:])\s+/)) expect(slide, `${f}: "${part}"`).toContain(part);
+    }
+    expect(n).toBe(5);
   });
   it('đề kiểm tra: 10 câu, có căn cứ điều luật và link', () => {
     for (const id of ["hanh-chinh-de-1", "hanh-chinh-de-2", "hanh-chinh-de-3"]) {

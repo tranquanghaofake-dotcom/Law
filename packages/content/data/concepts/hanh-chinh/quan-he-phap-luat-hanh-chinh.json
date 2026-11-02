@@ -3,12 +3,12 @@
  "subject": "hanh-chinh",
  "chapter": "v3",
  "term": "Quy phạm và quan hệ pháp luật hành chính",
- "definition": "Quan hệ pháp luật hành chính là quan hệ xã hội phát sinh trong lĩnh vực quản lý hành chính nhà nước, được điều chỉnh bởi quy phạm pháp luật hành chính, trong đó các bên có quyền và nghĩa vụ đối với nhau theo quy định của pháp luật hành chính. Ít nhất một bên trong quan hệ pháp luật hành chính phải là chủ thể mang quyền lực nhà nước.",
+ "definition": "Quan hệ pháp luật hành chính là những quan hệ xã hội phát sinh, hình thành trong hoạt động quản lý hành chính nhà nước, được điều chỉnh bởi các quy phạm pháp luật hành chính giữa các bên chủ thể tham gia mang quyền và nghĩa vụ đối với nhau theo quy định của pháp luật. Khách thể của quan hệ pháp luật hành chính là trật tự quản lý hành chính nhà nước.",
  "plain": "Đặc điểm thường nêu: (1) ít nhất một bên mang quyền lực nhà nước; (2) có thể phát sinh theo yêu cầu hợp pháp của BẤT KỲ BÊN NÀO, sự đồng ý của bên kia không phải điều kiện bắt buộc; (3) đa số tranh chấp được giải quyết theo thủ tục hành chính (hoặc tố tụng hành chính); (4) bên vi phạm chịu trách nhiệm trước NHÀ NƯỚC, không phải trước bên kia. Quy phạm pháp luật hành chính: chủ yếu do cơ quan hành chính ban hành, số lượng lớn, hiệu lực khác nhau; cơ cấu giả định – quy định – chế tài.",
  "example": "Công dân nộp hồ sơ xin cấp hộ chiếu: quan hệ pháp luật hành chính phát sinh theo yêu cầu của công dân, cơ quan xuất nhập cảnh không thể từ chối nếu hồ sơ hợp lệ.",
  "source": {
   "kind": "textbook",
-  "cite": "Giáo trình Luật Hành chính Việt Nam, Trường Đại học Luật Hà Nội; đề cương Luật Hành chính vấn đề 3 — tóm lược quan điểm học thuật phổ biến, chưa đối chiếu nguyên văn"
+  "cite": "Slide bài giảng Luật Hành chính Việt Nam, Trường Đại học Luật Hà Nội, vấn đề 3 (\"GIÁO ÁN 2019. LHC.VĐ3\", TS. Tạ Quang Ngọc) — đã khớp nguyên văn slide (laws/hc-slide-trich.txt); slide không phải giáo trình, giáo trình chưa đối chiếu"
  },
  "checked": "2026-11-01",
  "confusables": [
@@ -34,7 +34,7 @@
     "Luôn do Tòa án giải quyết tranh chấp"
    ],
    "answer": 0,
-   "explain": "Học thuyết.",
+   "explain": "Slide bài giảng vấn đề 3.",
    "source": {
     "kind": "statute",
     "cite": "Học thuyết x"
@@ -51,7 +51,7 @@
     "Không ai"
    ],
    "answer": 0,
-   "explain": "Học thuyết.",
+   "explain": "Slide bài giảng vấn đề 3.",
    "source": {
     "kind": "statute",
     "cite": "Học thuyết x"
@@ -72,12 +72,12 @@
      "answer": "right"
     }
    ],
-   "explain": "Học thuyết."
+   "explain": "Slide bài giảng vấn đề 3."
   },
   {
    "type": "cloze",
    "level": 3,
-   "text": "Ít nhất một bên trong quan hệ pháp luật hành chính phải là chủ thể mang {{quyền lực nhà nước}}.",
+   "text": "Khách thể của quan hệ pháp luật hành chính là {{trật tự quản lý}} hành chính nhà nước; một bên tham gia phải được sử dụng {{quyền lực nhà nước}}.",
    "bank_extra": [
     "tài sản",
     "tư cách pháp nhân"
