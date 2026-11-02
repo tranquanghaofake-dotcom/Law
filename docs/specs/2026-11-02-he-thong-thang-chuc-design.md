@@ -195,7 +195,8 @@ Không vẽ Quốc huy, sao, vạch cấp hiệu hay biểu tượng ngành th�
 
 - Thứ tự mới: ngày 1–27 ký hoạ → **28 viền lửa** → **29 lửa tụ về huy hiệu** (tia điện quanh đĩa, huy hiệu vẫn xám) → **30 huy hiệu thắp cuối cùng** (vòng lửa cháy quanh đĩa) + bừng sáng. Huy hiệu **xám** khi chưa từng thắp; chu kỳ sau giữ màu chu kỳ trước như ký hoạ (`card.ts`: thêm `charge`).
 - Lửa ba lớp theo video tham khảo của Hào: lõi gần trắng, thân màu bão hoà, quầng xé mép bằng nhiễu chuyển động (`feTurbulence` + `feDisplacementMap`, một filter chung). Bảng màu: đỏ (lõi vàng → thân cam → mép đỏ thẫm, theo video lửa đỏ), lam (xanh điện), tím (tím neon), trắng (trắng ánh xanh), đen ánh kim (vàng hổ phách), vô cực (cầu vồng). Ngày 30 bừng sáng theo màu lửa của chu kỳ; chỉ vô cực dùng cầu vồng.
-- Chuyển động: chập chờn lệch pha, ký hoạ hôm nay bùng lên, tàn lửa bay, hoa văn huy hiệu xoay chậm, vòng lửa thở; tắt ở thẻ nhỏ và khi giảm chuyển động.
+- Phân cấp ánh sáng (Hào: "chói và rối"): chỉ ký hoạ hôm nay có quầng lửa + tàn lửa; ký hoạ đã thắp khác âm ỉ (nét mảnh, mờ); viền lửa chỉ cháy ngày 28–30 của chu kỳ hiện tại; nền doodle và hình phụ mờ hơn; quầng nền nhẹ.
+- Chuyển động: chập chờn chậm, ký hoạ hôm nay bùng lên, tàn lửa bay, hoa văn huy hiệu xoay chậm, vòng lửa thở; tắt ở thẻ nhỏ và khi giảm chuyển động.
 
 ## 4. Dữ liệu
 - Store mới (IndexedDB): `books` (chapterId → cấp cao nhất, ngày đạt), `career` (nhánh đang chọn, chức danh đã đạt), `card` (kỷ lục màu). Migration từ dữ liệu cũ: tính sách từ `progress` hiện có. XP vẫn giữ, chỉ hiển thị phụ.

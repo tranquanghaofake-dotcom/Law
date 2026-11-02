@@ -605,7 +605,7 @@ h1 { text-wrap: balance; }
 .streak-card .cg-num { font: 600 46px/1 var(--font-ui); letter-spacing: .14em; font-variant-numeric: tabular-nums; }
 /* Lửa thẻ chuyên cần: chập chờn, tàn bay, tia điện, vòng lửa; tắt khi giảm chuyển động (luật chung) và ở thẻ nhỏ */
 .cg-glyph { transition: opacity .6s ease; }
-.cg-glyph.lit { animation: cgflick 2.6s ease-in-out infinite; animation-delay: calc(var(--k, 0) * -.37s); }
+.cg-glyph.lit { animation: cgflick 4.2s ease-in-out infinite; animation-delay: calc(var(--k, 0) * -.37s); }
 .cg-glyph.now { transform-box: fill-box; transform-origin: center; animation: cgignite 2.2s ease-in-out infinite; }
 .cg-flames { animation: cgflames 1.7s ease-in-out infinite alternate; }
 .cg-aura { animation: cgaura 5s ease-in-out infinite alternate; }
@@ -622,13 +622,13 @@ h1 { text-wrap: balance; }
 .sc-wrap.on .cg-flames, .sc-wrap.on .cg-ring { filter: brightness(1.25); }
 .sc-wrap.mini .streak-card * { animation: none !important; }
 .cg-burst { mix-blend-mode: soft-light; animation: cgburst 3s ease-in-out infinite alternate; }
-@keyframes cgflick { 0%, 100% { opacity: 1; } 18% { opacity: .82; } 22% { opacity: .97; } 55% { opacity: .88; } 61% { opacity: 1; } }
+@keyframes cgflick { 0%, 100% { opacity: 1; } 40% { opacity: .85; } 70% { opacity: .95; } }
 @keyframes cgignite { 0%, 100% { transform: scale(1); filter: brightness(1); } 40% { transform: scale(1.08); filter: brightness(1.7); } }
 @keyframes cgflames { from { opacity: .7; } to { opacity: 1; } }
 @keyframes cgbreath { from { opacity: .7; } to { opacity: 1; } }
 @keyframes cgember { 0% { transform: translate(0, 0); opacity: 0; } 12% { opacity: 1; } 100% { transform: translate(6px, -46px); opacity: 0; } }
 @keyframes cgspin { to { transform: rotate(360deg); } }
-@keyframes cgring { from { opacity: .7; stroke-width: 10; } to { opacity: 1; stroke-width: 15; } }
+@keyframes cgring { from { opacity: .55; stroke-width: 6; } to { opacity: .85; stroke-width: 9; } }
 @keyframes cgbolt { 0% { opacity: 0; } 4% { opacity: 1; } 7% { opacity: .2; } 9% { opacity: 1; } 13%, 100% { opacity: 0; } }
 @keyframes cgburst { from { opacity: .12; } to { opacity: .35; } }
 .cg-burst.tint { mix-blend-mode: screen; animation-name: cgbursttint; }
