@@ -1,0 +1,116 @@
+{
+ "id": "ldt-nha-dau-tu",
+ "subject": "dau-tu",
+ "chapter": "v1",
+ "term": "Nhà đầu tư",
+ "definition": "Nhà đầu tư là tổ chức, cá nhân thực hiện hoạt động đầu tư kinh doanh, gồm nhà đầu tư trong nước, nhà đầu tư nước ngoài và tổ chức kinh tế có vốn đầu tư nước ngoài.",
+ "plain": "Ba loại: nhà đầu tư TRONG NƯỚC (cá nhân quốc tịch Việt Nam, tổ chức kinh tế không có nhà đầu tư nước ngoài là thành viên/cổ đông — khoản 20), nhà đầu tư NƯỚC NGOÀI (khoản 19) và TỔ CHỨC KINH TẾ CÓ VỐN ĐẦU TƯ NƯỚC NGOÀI (khoản 22). Phân loại quyết định thủ tục: nhà đầu tư nước ngoài phải đáp ứng điều kiện tiếp cận thị trường và thường phải xin Giấy chứng nhận đăng ký đầu tư.",
+ "example": "Ông B (quốc tịch Việt Nam) góp vốn thành lập công ty: nhà đầu tư trong nước. Công ty C thành lập tại Singapore mua cổ phần công ty Việt Nam: nhà đầu tư nước ngoài.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 18 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Dau-tu/Van-ban-hop-nhat-142-2026-VBHN-LQ-VPQH-Luat-Dau-tu-726675.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "ldt-nha-dau-tu-nuoc-ngoai",
+  "ldt-to-chuc-kinh-te-co-von-dtnn",
+  "ldt-to-chuc-kinh-te"
+ ],
+ "keywords": [
+  "tổ chức, cá nhân",
+  "trong nước",
+  "nước ngoài",
+  "tổ chức kinh tế có vốn đầu tư nước ngoài"
+ ],
+ "note": "Luật Đầu tư 143/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Đầu tư 61/2020/QH14 mà đề cương HLU 2021 còn dẫn (khoản 4 Điều 51). Luật 24/2026/QH16 sửa đổi có hiệu lực từ 01/3/2027 (riêng một phần Điều 6 từ 01/01/2027), chỉ sửa Điều 6 và Phụ lục IV, không sửa điều được trích — văn bản hợp nhất 142/2026/VBHN-LQ-VPQH.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nhà đầu tư theo khoản 18 Điều 3 gồm những loại nào?",
+   "options": [
+    "Nhà đầu tư trong nước, nhà đầu tư nước ngoài và tổ chức kinh tế có vốn đầu tư nước ngoài",
+    "Chỉ doanh nghiệp",
+    "Chỉ cá nhân",
+    "Chỉ cơ quan nhà nước"
+   ],
+   "answer": 0,
+   "explain": "Khoản 18 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 18 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nhà đầu tư là chủ thể thực hiện hoạt động nào?",
+   "options": [
+    "Đầu tư kinh doanh",
+    "Quản lý nhà nước về đầu tư",
+    "Đầu tư công",
+    "Tư vấn đầu tư"
+   ],
+   "answer": 0,
+   "explain": "Khoản 18 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 18 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Nhà đầu tư trong nước",
+   "right": "Nhà đầu tư nước ngoài",
+   "cases": [
+    {
+     "text": "Cá nhân có quốc tịch Việt Nam",
+     "answer": "left"
+    },
+    {
+     "text": "Tổ chức thành lập theo pháp luật nước ngoài",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 19, 20 Điều 3."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhà đầu tư là tổ chức, {{cá nhân}} thực hiện hoạt động {{đầu tư kinh doanh}}.",
+   "bank_extra": [
+    "cơ quan nhà nước",
+    "đầu tư công"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhà đầu tư gồm nhà đầu tư {{trong nước}}, nhà đầu tư nước ngoài và tổ chức kinh tế có {{vốn đầu tư nước ngoài}}.",
+   "bank_extra": [
+    "tư nhân",
+    "vốn nhà nước"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tổ chức kinh tế có vốn đầu tư nước ngoài cũng là nhà đầu tư theo Luật Đầu tư.",
+   "answer": true,
+   "explain": "Đúng. Khoản 18 Điều 3 liệt kê cả tổ chức kinh tế có vốn đầu tư nước ngoài."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Kể các loại nhà đầu tư theo Luật Đầu tư.",
+   "model": "Tổ chức, cá nhân thực hiện hoạt động đầu tư kinh doanh, gồm nhà đầu tư trong nước, nhà đầu tư nước ngoài và tổ chức kinh tế có vốn đầu tư nước ngoài (khoản 18 Điều 3).",
+   "keywords": [
+    "trong nước",
+    "nước ngoài",
+    "tổ chức kinh tế có vốn đầu tư nước ngoài"
+   ]
+  }
+ ]
+}

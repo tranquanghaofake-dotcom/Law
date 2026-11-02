@@ -1,0 +1,116 @@
+{
+ "id": "ldt-giay-chung-nhan-dang-ky-dau-tu",
+ "subject": "dau-tu",
+ "chapter": "v3",
+ "term": "Giấy chứng nhận đăng ký đầu tư",
+ "definition": "Giấy chứng nhận đăng ký đầu tư là văn bản bằng bản giấy hoặc bản điện tử ghi nhận thông tin đăng ký của nhà đầu tư về dự án đầu tư.",
+ "plain": "Bản GIẤY hoặc ĐIỆN TỬ; chức năng GHI NHẬN thông tin đăng ký (không phải \"cho phép\" kinh doanh). Phải cấp đối với dự án của nhà đầu tư NƯỚC NGOÀI và tổ chức kinh tế thuộc khoản 1 Điều 20; KHÔNG phải cấp đối với dự án của nhà đầu tư trong nước, tổ chức kinh tế thuộc khoản 2 Điều 20 và đầu tư góp vốn, mua cổ phần, mua phần vốn góp (Điều 26).",
+ "example": "Công ty Nhật Bản K thực hiện dự án nhà máy tại Bắc Ninh: phải xin Giấy chứng nhận đăng ký đầu tư. Công ty Việt Nam L làm dự án tương tự (không thuộc Điều 24): không phải xin.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 11 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Dau-tu/Van-ban-hop-nhat-142-2026-VBHN-LQ-VPQH-Luat-Dau-tu-726675.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "ldt-chap-thuan-chu-truong-dau-tu",
+  "ldt-nha-dau-tu-nuoc-ngoai",
+  "ldt-to-chuc-kinh-te-co-von-dtnn"
+ ],
+ "keywords": [
+  "bản giấy hoặc bản điện tử",
+  "ghi nhận thông tin đăng ký",
+  "nhà đầu tư nước ngoài"
+ ],
+ "note": "Luật Đầu tư 143/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Đầu tư 61/2020/QH14 mà đề cương HLU 2021 còn dẫn (khoản 4 Điều 51). Luật 24/2026/QH16 sửa đổi có hiệu lực từ 01/3/2027 (riêng một phần Điều 6 từ 01/01/2027), chỉ sửa Điều 6 và Phụ lục IV, không sửa điều được trích — văn bản hợp nhất 142/2026/VBHN-LQ-VPQH.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Dự án nào phải thực hiện thủ tục cấp Giấy chứng nhận đăng ký đầu tư?",
+   "options": [
+    "Dự án đầu tư của nhà đầu tư nước ngoài",
+    "Dự án đầu tư của nhà đầu tư trong nước",
+    "Mọi khoản góp vốn mua cổ phần",
+    "Mọi dự án dưới 10 tỷ đồng"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 26.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 26 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Giấy chứng nhận đăng ký đầu tư có chức năng gì?",
+   "options": [
+    "Ghi nhận thông tin đăng ký của nhà đầu tư về dự án đầu tư",
+    "Cấp quyền sử dụng đất",
+    "Xác nhận vốn điều lệ doanh nghiệp",
+    "Cho phép xuất cảnh"
+   ],
+   "answer": 0,
+   "explain": "Khoản 11 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 11 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Phải cấp Giấy chứng nhận đăng ký đầu tư",
+   "right": "Không phải cấp",
+   "cases": [
+    {
+     "text": "Dự án của nhà đầu tư nước ngoài",
+     "answer": "left"
+    },
+    {
+     "text": "Nhà đầu tư góp vốn, mua cổ phần của tổ chức kinh tế",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 26."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Giấy chứng nhận đăng ký đầu tư là văn bản bằng bản giấy hoặc bản {{điện tử}} ghi nhận thông tin {{đăng ký}} của nhà đầu tư về dự án đầu tư.",
+   "bank_extra": [
+    "sao y",
+    "ưu đãi"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Dự án đầu tư của nhà đầu tư {{trong nước}} và đầu tư theo hình thức góp vốn, mua cổ phần, mua {{phần vốn góp}} không phải thực hiện thủ tục cấp Giấy chứng nhận đăng ký đầu tư.",
+   "bank_extra": [
+    "nước ngoài",
+    "trái phiếu"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Dự án đầu tư của nhà đầu tư trong nước luôn phải có Giấy chứng nhận đăng ký đầu tư.",
+   "answer": false,
+   "explain": "Sai. Điểm a khoản 2 Điều 26: dự án của nhà đầu tư trong nước không phải thực hiện thủ tục cấp Giấy chứng nhận đăng ký đầu tư."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm Giấy chứng nhận đăng ký đầu tư và trường hợp phải cấp.",
+   "model": "Văn bản bằng bản giấy hoặc điện tử ghi nhận thông tin đăng ký của nhà đầu tư về dự án (khoản 11 Điều 3); phải cấp cho dự án của nhà đầu tư nước ngoài và tổ chức kinh tế thuộc khoản 1 Điều 20 (khoản 1 Điều 26).",
+   "keywords": [
+    "ghi nhận",
+    "bản điện tử",
+    "nhà đầu tư nước ngoài",
+    "khoản 1 Điều 20"
+   ]
+  }
+ ]
+}

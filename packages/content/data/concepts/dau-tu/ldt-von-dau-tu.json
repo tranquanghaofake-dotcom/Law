@@ -1,0 +1,116 @@
+{
+ "id": "ldt-von-dau-tu",
+ "subject": "dau-tu",
+ "chapter": "v4",
+ "term": "Vốn đầu tư",
+ "definition": "Vốn đầu tư là tiền, tài sản khác theo quy định của pháp luật về dân sự và điều ước quốc tế mà nước Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên để thực hiện hoạt động đầu tư kinh doanh.",
+ "plain": "Vốn đầu tư gồm TIỀN và TÀI SẢN KHÁC theo pháp luật dân sự (vật, giấy tờ có giá, quyền tài sản như quyền sở hữu trí tuệ, quyền sử dụng đất) và điều ước quốc tế. Mục đích: thực hiện hoạt động đầu tư kinh doanh. Khi đầu tư ra nước ngoài, nhà đầu tư CHUYỂN VỐN ĐẦU TƯ từ Việt Nam ra nước ngoài (khoản 13 Điều 3).",
+ "example": "Nhà đầu tư góp quyền sử dụng đất và bằng sáng chế để thành lập công ty: cả hai là vốn đầu tư (tài sản khác theo pháp luật dân sự).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 23 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Dau-tu/Van-ban-hop-nhat-142-2026-VBHN-LQ-VPQH-Luat-Dau-tu-726675.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "ldt-dau-tu-kinh-doanh",
+  "ldt-hoat-dong-dau-tu-ra-nuoc-ngoai"
+ ],
+ "keywords": [
+  "tiền",
+  "tài sản khác",
+  "pháp luật về dân sự",
+  "điều ước quốc tế"
+ ],
+ "note": "Luật Đầu tư 143/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Đầu tư 61/2020/QH14 mà đề cương HLU 2021 còn dẫn (khoản 4 Điều 51). Luật 24/2026/QH16 sửa đổi có hiệu lực từ 01/3/2027 (riêng một phần Điều 6 từ 01/01/2027), chỉ sửa Điều 6 và Phụ lục IV, không sửa điều được trích — văn bản hợp nhất 142/2026/VBHN-LQ-VPQH.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Vốn đầu tư theo khoản 23 Điều 3 gồm gì?",
+   "options": [
+    "Tiền, tài sản khác theo pháp luật dân sự và điều ước quốc tế",
+    "Chỉ tiền mặt",
+    "Chỉ ngoại tệ",
+    "Chỉ vốn vay ngân hàng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 23 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 23 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Vốn đầu tư dùng để làm gì?",
+   "options": [
+    "Thực hiện hoạt động đầu tư kinh doanh",
+    "Nộp ngân sách",
+    "Chi tiêu cá nhân",
+    "Trả cổ tức"
+   ],
+   "answer": 0,
+   "explain": "Khoản 23 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 23 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Có thể là vốn đầu tư",
+   "right": "Không phải vốn đầu tư",
+   "cases": [
+    {
+     "text": "Quyền sở hữu trí tuệ đối với sáng chế",
+     "answer": "left"
+    },
+    {
+     "text": "Uy tín cá nhân của nhà đầu tư",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 23 Điều 3; Điều 105 Bộ luật Dân sự 2015."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Vốn đầu tư là {{tiền}}, tài sản khác theo quy định của pháp luật về {{dân sự}} và điều ước quốc tế.",
+   "bank_extra": [
+    "lao động",
+    "hình sự"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Vốn đầu tư dùng để thực hiện hoạt động {{đầu tư kinh doanh}}, căn cứ cả pháp luật về dân sự và {{điều ước quốc tế}} mà Việt Nam là thành viên.",
+   "bank_extra": [
+    "đầu tư công",
+    "tập quán"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Vốn đầu tư chỉ có thể là tiền.",
+   "answer": false,
+   "explain": "Sai. Khoản 23 Điều 3: tiền và tài sản khác theo pháp luật dân sự và điều ước quốc tế."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm vốn đầu tư.",
+   "model": "Tiền, tài sản khác theo pháp luật dân sự và điều ước quốc tế mà Việt Nam là thành viên để thực hiện hoạt động đầu tư kinh doanh (khoản 23 Điều 3).",
+   "keywords": [
+    "tiền",
+    "tài sản khác",
+    "dân sự",
+    "điều ước quốc tế"
+   ]
+  }
+ ]
+}

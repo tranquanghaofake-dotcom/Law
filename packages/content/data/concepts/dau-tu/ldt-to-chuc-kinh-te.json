@@ -1,0 +1,116 @@
+{
+ "id": "ldt-to-chuc-kinh-te",
+ "subject": "dau-tu",
+ "chapter": "v4",
+ "term": "Tổ chức kinh tế",
+ "definition": "Tổ chức kinh tế là tổ chức được thành lập và hoạt động theo quy định của pháp luật Việt Nam, gồm doanh nghiệp, hợp tác xã, liên hiệp hợp tác xã và tổ chức khác thực hiện hoạt động đầu tư kinh doanh.",
+ "plain": "Thành lập và hoạt động theo PHÁP LUẬT VIỆT NAM; gồm doanh nghiệp, hợp tác xã, liên hiệp hợp tác xã, tổ chức khác đầu tư kinh doanh. Đầu tư thành lập tổ chức kinh tế là hình thức đầu tư đầu tiên (khoản 1 Điều 18). Nhà đầu tư trong nước thành lập theo pháp luật doanh nghiệp…; nhà đầu tư nước ngoài được thành lập tổ chức kinh tế TRƯỚC khi làm thủ tục Giấy chứng nhận đăng ký đầu tư, nhưng phải đáp ứng điều kiện tiếp cận thị trường (Điều 19).",
+ "example": "Hợp tác xã nông nghiệp P thành lập theo Luật Hợp tác xã và đầu tư nhà xưởng: tổ chức kinh tế.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 21 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Dau-tu/Van-ban-hop-nhat-142-2026-VBHN-LQ-VPQH-Luat-Dau-tu-726675.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "ldt-to-chuc-kinh-te-co-von-dtnn",
+  "ldt-hinh-thuc-dau-tu",
+  "ldt-nha-dau-tu"
+ ],
+ "keywords": [
+  "pháp luật Việt Nam",
+  "doanh nghiệp",
+  "hợp tác xã",
+  "liên hiệp hợp tác xã"
+ ],
+ "note": "Luật Đầu tư 143/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Đầu tư 61/2020/QH14 mà đề cương HLU 2021 còn dẫn (khoản 4 Điều 51). Luật 24/2026/QH16 sửa đổi có hiệu lực từ 01/3/2027 (riêng một phần Điều 6 từ 01/01/2027), chỉ sửa Điều 6 và Phụ lục IV, không sửa điều được trích — văn bản hợp nhất 142/2026/VBHN-LQ-VPQH.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tổ chức kinh tế theo khoản 21 Điều 3 được thành lập theo pháp luật nào?",
+   "options": [
+    "Pháp luật Việt Nam",
+    "Pháp luật nước của nhà đầu tư",
+    "Điều ước quốc tế",
+    "Pháp luật nước tiếp nhận đầu tư"
+   ],
+   "answer": 0,
+   "explain": "Khoản 21 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 21 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nhà đầu tư nước ngoài được thành lập tổ chức kinh tế vào thời điểm nào so với thủ tục Giấy chứng nhận đăng ký đầu tư?",
+   "options": [
+    "Trước khi thực hiện thủ tục cấp, điều chỉnh Giấy chứng nhận đăng ký đầu tư",
+    "Chỉ sau khi có Giấy chứng nhận",
+    "Cùng lúc với chấp thuận của Quốc hội",
+    "Không được thành lập"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 19.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 19 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tổ chức kinh tế theo Luật Đầu tư",
+   "right": "Không phải tổ chức kinh tế",
+   "cases": [
+    {
+     "text": "Liên hiệp hợp tác xã",
+     "answer": "left"
+    },
+    {
+     "text": "Công ty thành lập tại Thái Lan",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 21 Điều 3."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tổ chức kinh tế là tổ chức được thành lập và hoạt động theo quy định của pháp luật {{Việt Nam}}, gồm doanh nghiệp, {{hợp tác xã}}, liên hiệp hợp tác xã và tổ chức khác.",
+   "bank_extra": [
+    "nước ngoài",
+    "hộ kinh doanh"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhà đầu tư trong nước thành lập tổ chức kinh tế theo quy định của pháp luật về {{doanh nghiệp}} và pháp luật tương ứng với từng {{loại hình}} tổ chức kinh tế.",
+   "bank_extra": [
+    "đầu tư công",
+    "ngân sách"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hợp tác xã là một loại tổ chức kinh tế theo Luật Đầu tư.",
+   "answer": true,
+   "explain": "Đúng. Khoản 21 Điều 3."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm tổ chức kinh tế.",
+   "model": "Tổ chức được thành lập và hoạt động theo pháp luật Việt Nam, gồm doanh nghiệp, hợp tác xã, liên hiệp hợp tác xã và tổ chức khác thực hiện hoạt động đầu tư kinh doanh (khoản 21 Điều 3).",
+   "keywords": [
+    "pháp luật Việt Nam",
+    "doanh nghiệp",
+    "hợp tác xã"
+   ]
+  }
+ ]
+}

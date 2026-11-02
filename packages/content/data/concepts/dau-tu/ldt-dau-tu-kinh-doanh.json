@@ -1,0 +1,116 @@
+{
+ "id": "ldt-dau-tu-kinh-doanh",
+ "subject": "dau-tu",
+ "chapter": "v1",
+ "term": "Đầu tư kinh doanh",
+ "definition": "Đầu tư kinh doanh là việc nhà đầu tư bỏ vốn đầu tư để thực hiện hoạt động kinh doanh.",
+ "plain": "Hai yếu tố: (1) BỎ VỐN đầu tư (tiền, tài sản khác); (2) để thực hiện hoạt động KINH DOANH (nhằm lợi nhuận). Luật Đầu tư điều chỉnh đầu tư kinh doanh tại Việt Nam và từ Việt Nam ra nước ngoài (Điều 1); đầu tư công dùng vốn nhà nước theo Luật Đầu tư công thì không thuộc phạm vi này.",
+ "example": "Công ty A bỏ 50 tỷ đồng xây nhà máy chế biến nông sản để bán sản phẩm: đầu tư kinh doanh. Ủy ban nhân dân xây trường học bằng ngân sách: đầu tư công, không theo Luật Đầu tư.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 8 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Dau-tu/Van-ban-hop-nhat-142-2026-VBHN-LQ-VPQH-Luat-Dau-tu-726675.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "ldt-nha-dau-tu",
+  "ldt-von-dau-tu",
+  "ldt-du-an-dau-tu"
+ ],
+ "keywords": [
+  "bỏ vốn",
+  "hoạt động kinh doanh",
+  "nhà đầu tư"
+ ],
+ "note": "Luật Đầu tư 143/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Đầu tư 61/2020/QH14 mà đề cương HLU 2021 còn dẫn (khoản 4 Điều 51). Luật 24/2026/QH16 sửa đổi có hiệu lực từ 01/3/2027 (riêng một phần Điều 6 từ 01/01/2027), chỉ sửa Điều 6 và Phụ lục IV, không sửa điều được trích — văn bản hợp nhất 142/2026/VBHN-LQ-VPQH.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 8 Điều 3 Luật Đầu tư, đầu tư kinh doanh là gì?",
+   "options": [
+    "Việc nhà đầu tư bỏ vốn đầu tư để thực hiện hoạt động kinh doanh",
+    "Việc Nhà nước dùng ngân sách xây hạ tầng",
+    "Việc gửi tiết kiệm ngân hàng",
+    "Việc mua hàng tiêu dùng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 8 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 8 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Luật Đầu tư điều chỉnh hoạt động nào?",
+   "options": [
+    "Đầu tư kinh doanh tại Việt Nam và từ Việt Nam ra nước ngoài",
+    "Chỉ đầu tư công",
+    "Chỉ đầu tư của nhà đầu tư nước ngoài",
+    "Chỉ đầu tư ra nước ngoài"
+   ],
+   "answer": 0,
+   "explain": "Điều 1.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 1 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Đầu tư kinh doanh theo Luật Đầu tư",
+   "right": "Không thuộc Luật Đầu tư",
+   "cases": [
+    {
+     "text": "Doanh nghiệp tư nhân bỏ vốn mở chuỗi cửa hàng",
+     "answer": "left"
+    },
+    {
+     "text": "Xây trụ sở cơ quan bằng vốn ngân sách",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 1, khoản 8 Điều 3."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đầu tư kinh doanh là việc nhà đầu tư {{bỏ vốn}} đầu tư để thực hiện hoạt động {{kinh doanh}}.",
+   "bank_extra": [
+    "vay vốn",
+    "từ thiện"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Luật Đầu tư quy định về hoạt động đầu tư kinh doanh tại {{Việt Nam}} và hoạt động đầu tư kinh doanh từ Việt Nam ra {{nước ngoài}}.",
+   "bank_extra": [
+    "khu vực",
+    "trong nước"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Luật Đầu tư chỉ áp dụng cho nhà đầu tư nước ngoài.",
+   "answer": false,
+   "explain": "Sai. Điều 2: áp dụng đối với nhà đầu tư (trong nước và nước ngoài) và cơ quan, tổ chức, cá nhân liên quan."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm đầu tư kinh doanh và phạm vi điều chỉnh của Luật Đầu tư.",
+   "model": "Việc nhà đầu tư bỏ vốn đầu tư để thực hiện hoạt động kinh doanh (khoản 8 Điều 3); Luật điều chỉnh đầu tư kinh doanh tại Việt Nam và từ Việt Nam ra nước ngoài (Điều 1).",
+   "keywords": [
+    "bỏ vốn",
+    "kinh doanh",
+    "tại Việt Nam",
+    "ra nước ngoài"
+   ]
+  }
+ ]
+}

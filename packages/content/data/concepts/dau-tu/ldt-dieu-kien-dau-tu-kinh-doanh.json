@@ -1,0 +1,113 @@
+{
+ "id": "ldt-dieu-kien-dau-tu-kinh-doanh",
+ "subject": "dau-tu",
+ "chapter": "v1",
+ "term": "Điều kiện đầu tư kinh doanh",
+ "definition": "Điều kiện đầu tư kinh doanh là điều kiện mà tổ chức, cá nhân phải đáp ứng khi thực hiện hoạt động đầu tư kinh doanh trong ngành, nghề đầu tư kinh doanh có điều kiện, không bao gồm các tiêu chuẩn, quy chuẩn kỹ thuật do cơ quan có thẩm quyền ban hành về chất lượng sản phẩm, dịch vụ.",
+ "plain": "Chỉ áp dụng với ngành, nghề KINH DOANH CÓ ĐIỀU KIỆN (Danh mục ở Phụ lục IV). Không gồm tiêu chuẩn, quy chuẩn kỹ thuật về chất lượng sản phẩm, dịch vụ. Phân biệt với ngành, nghề CẤM đầu tư kinh doanh (Điều 6) — không được làm dù đáp ứng điều kiện gì.",
+ "example": "Mở trường đào tạo lái xe phải có giấy phép, giáo viên đạt chuẩn: điều kiện đầu tư kinh doanh. Tiêu chuẩn chất lượng xe tập lái theo quy chuẩn kỹ thuật thì không tính là điều kiện đầu tư kinh doanh.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 9 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Dau-tu/Van-ban-hop-nhat-142-2026-VBHN-LQ-VPQH-Luat-Dau-tu-726675.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "ldt-dau-tu-kinh-doanh",
+  "ldt-nha-dau-tu-nuoc-ngoai"
+ ],
+ "keywords": [
+  "ngành, nghề có điều kiện",
+  "không bao gồm tiêu chuẩn, quy chuẩn kỹ thuật"
+ ],
+ "note": "Luật Đầu tư 143/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Đầu tư 61/2020/QH14 mà đề cương HLU 2021 còn dẫn (khoản 4 Điều 51). Luật 24/2026/QH16 sửa đổi có hiệu lực từ 01/3/2027 (riêng một phần Điều 6 từ 01/01/2027), chỉ sửa Điều 6 và Phụ lục IV, không sửa điều được trích — văn bản hợp nhất 142/2026/VBHN-LQ-VPQH.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Điều kiện đầu tư kinh doanh không bao gồm gì?",
+   "options": [
+    "Tiêu chuẩn, quy chuẩn kỹ thuật về chất lượng sản phẩm, dịch vụ",
+    "Giấy phép kinh doanh",
+    "Yêu cầu về vốn pháp định",
+    "Chứng chỉ hành nghề"
+   ],
+   "answer": 0,
+   "explain": "Khoản 9 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 9 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Điều kiện đầu tư kinh doanh áp dụng khi nào?",
+   "options": [
+    "Khi kinh doanh trong ngành, nghề đầu tư kinh doanh có điều kiện",
+    "Mọi ngành, nghề",
+    "Chỉ với nhà đầu tư nước ngoài",
+    "Chỉ khi đầu tư ra nước ngoài"
+   ],
+   "answer": 0,
+   "explain": "Khoản 9 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 9 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Là điều kiện đầu tư kinh doanh",
+   "right": "Không phải điều kiện đầu tư kinh doanh",
+   "cases": [
+    {
+     "text": "Yêu cầu chứng chỉ hành nghề để kinh doanh dịch vụ kế toán",
+     "answer": "left"
+    },
+    {
+     "text": "Quy chuẩn kỹ thuật về chất lượng nước đóng chai",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 9 Điều 3."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Điều kiện đầu tư kinh doanh là điều kiện mà tổ chức, cá nhân phải đáp ứng khi thực hiện hoạt động đầu tư kinh doanh trong ngành, nghề đầu tư kinh doanh {{có điều kiện}}.",
+   "bank_extra": [
+    "ưu đãi",
+    "bị cấm"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Điều kiện đầu tư kinh doanh không bao gồm các tiêu chuẩn, {{quy chuẩn kỹ thuật}} do cơ quan có thẩm quyền ban hành về {{chất lượng}} sản phẩm, dịch vụ.",
+   "bank_extra": [
+    "giấy phép",
+    "giá cả"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Ngành, nghề cấm đầu tư kinh doanh vẫn được kinh doanh nếu đáp ứng đủ điều kiện đầu tư kinh doanh.",
+   "answer": false,
+   "explain": "Sai. Điều kiện đầu tư kinh doanh chỉ gắn với ngành, nghề có điều kiện; ngành, nghề cấm (Điều 6) không được kinh doanh."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm điều kiện đầu tư kinh doanh.",
+   "model": "Điều kiện tổ chức, cá nhân phải đáp ứng khi đầu tư kinh doanh trong ngành, nghề có điều kiện, không bao gồm tiêu chuẩn, quy chuẩn kỹ thuật về chất lượng sản phẩm, dịch vụ (khoản 9 Điều 3).",
+   "keywords": [
+    "ngành, nghề có điều kiện",
+    "tiêu chuẩn",
+    "quy chuẩn kỹ thuật"
+   ]
+  }
+ ]
+}

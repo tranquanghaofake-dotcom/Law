@@ -1,0 +1,114 @@
+{
+ "id": "ldt-khu-cong-nghiep",
+ "subject": "dau-tu",
+ "chapter": "v6",
+ "term": "Khu công nghiệp",
+ "definition": "Khu công nghiệp là khu vực có ranh giới địa lý xác định, chuyên sản xuất hàng công nghiệp và cung ứng dịch vụ cho sản xuất công nghiệp.",
+ "plain": "Khu công nghiệp: CHUYÊN sản xuất hàng công nghiệp và dịch vụ cho sản xuất công nghiệp. Khu chế xuất là khu công nghiệp chuyên sản xuất hàng xuất khẩu (khoản 15). Khu công nghiệp, khu kinh tế thường là địa bàn ưu đãi đầu tư (Điều 15).",
+ "example": "Khu công nghiệp Yên Phong có nhà máy điện tử và doanh nghiệp logistics phục vụ nhà máy: đúng chức năng khu công nghiệp.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 16 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Dau-tu/Van-ban-hop-nhat-142-2026-VBHN-LQ-VPQH-Luat-Dau-tu-726675.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "ldt-khu-kinh-te",
+  "ldt-uu-dai-dau-tu"
+ ],
+ "keywords": [
+  "ranh giới địa lý xác định",
+  "sản xuất hàng công nghiệp",
+  "dịch vụ cho sản xuất công nghiệp"
+ ],
+ "note": "Luật Đầu tư 143/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Đầu tư 61/2020/QH14 mà đề cương HLU 2021 còn dẫn (khoản 4 Điều 51). Luật 24/2026/QH16 sửa đổi có hiệu lực từ 01/3/2027 (riêng một phần Điều 6 từ 01/01/2027), chỉ sửa Điều 6 và Phụ lục IV, không sửa điều được trích — văn bản hợp nhất 142/2026/VBHN-LQ-VPQH.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khu công nghiệp chuyên làm gì?",
+   "options": [
+    "Sản xuất hàng công nghiệp và cung ứng dịch vụ cho sản xuất công nghiệp",
+    "Phát triển du lịch",
+    "Phát triển đô thị",
+    "Trồng trọt"
+   ],
+   "answer": 0,
+   "explain": "Khoản 16 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 16 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khu công nghiệp chuyên sản xuất hàng xuất khẩu gọi là gì?",
+   "options": [
+    "Khu chế xuất",
+    "Khu kinh tế",
+    "Khu công nghệ cao",
+    "Khu đô thị"
+   ],
+   "answer": 0,
+   "explain": "Khoản 15 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 15 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Phù hợp chức năng khu công nghiệp",
+   "right": "Không phù hợp",
+   "cases": [
+    {
+     "text": "Nhà máy lắp ráp linh kiện điện tử",
+     "answer": "left"
+    },
+    {
+     "text": "Khu nghỉ dưỡng ven biển",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 16 Điều 3."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Khu công nghiệp là khu vực có ranh giới địa lý xác định, chuyên sản xuất hàng {{công nghiệp}} và cung ứng {{dịch vụ}} cho sản xuất công nghiệp.",
+   "bank_extra": [
+    "nông nghiệp",
+    "nhà ở"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Khu công nghiệp là khu vực có {{ranh giới}} địa lý {{xác định}}.",
+   "bank_extra": [
+    "quy mô",
+    "tạm thời"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Khu chế xuất là một loại khu công nghiệp.",
+   "answer": true,
+   "explain": "Đúng. Khoản 15 Điều 3: khu chế xuất là khu công nghiệp chuyên sản xuất hàng xuất khẩu."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm khu công nghiệp.",
+   "model": "Khu vực có ranh giới địa lý xác định, chuyên sản xuất hàng công nghiệp và cung ứng dịch vụ cho sản xuất công nghiệp (khoản 16 Điều 3).",
+   "keywords": [
+    "ranh giới",
+    "hàng công nghiệp",
+    "dịch vụ"
+   ]
+  }
+ ]
+}

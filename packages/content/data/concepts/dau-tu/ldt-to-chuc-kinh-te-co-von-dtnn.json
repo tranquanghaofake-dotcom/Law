@@ -1,0 +1,116 @@
+{
+ "id": "ldt-to-chuc-kinh-te-co-von-dtnn",
+ "subject": "dau-tu",
+ "chapter": "v4",
+ "term": "Tổ chức kinh tế có vốn đầu tư nước ngoài",
+ "definition": "Tổ chức kinh tế có vốn đầu tư nước ngoài là tổ chức kinh tế có nhà đầu tư nước ngoài là thành viên hoặc cổ đông.",
+ "plain": "Chỉ cần CÓ nhà đầu tư nước ngoài là thành viên/cổ đông (dù 1%). Nhưng chỉ tổ chức kinh tế thuộc khoản 1 Điều 20 (nhà đầu tư nước ngoài nắm TRÊN 50% vốn điều lệ, hoặc đa số thành viên hợp danh là cá nhân nước ngoài…) mới phải làm thủ tục như nhà đầu tư nước ngoài khi góp vốn, mua cổ phần, thực hiện dự án khác.",
+ "example": "Công ty cổ phần Q có cổ đông Hàn Quốc giữ 10%: tổ chức kinh tế có vốn đầu tư nước ngoài, nhưng đầu tư tiếp như nhà đầu tư trong nước vì nhà đầu tư nước ngoài không nắm trên 50%.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 22 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Dau-tu/Van-ban-hop-nhat-142-2026-VBHN-LQ-VPQH-Luat-Dau-tu-726675.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "ldt-to-chuc-kinh-te",
+  "ldt-nha-dau-tu-nuoc-ngoai",
+  "ldt-giay-chung-nhan-dang-ky-dau-tu"
+ ],
+ "keywords": [
+  "thành viên hoặc cổ đông",
+  "trên 50% vốn điều lệ",
+  "khoản 1 Điều 20"
+ ],
+ "note": "Luật Đầu tư 143/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Đầu tư 61/2020/QH14 mà đề cương HLU 2021 còn dẫn (khoản 4 Điều 51). Luật 24/2026/QH16 sửa đổi có hiệu lực từ 01/3/2027 (riêng một phần Điều 6 từ 01/01/2027), chỉ sửa Điều 6 và Phụ lục IV, không sửa điều được trích — văn bản hợp nhất 142/2026/VBHN-LQ-VPQH.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tổ chức kinh tế có vốn đầu tư nước ngoài là gì?",
+   "options": [
+    "Tổ chức kinh tế có nhà đầu tư nước ngoài là thành viên hoặc cổ đông",
+    "Tổ chức có trên 50% vốn nước ngoài",
+    "Tổ chức thành lập ở nước ngoài",
+    "Tổ chức vay vốn nước ngoài"
+   ],
+   "answer": 0,
+   "explain": "Khoản 22 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 22 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tổ chức kinh tế phải thực hiện thủ tục như nhà đầu tư nước ngoài khi nào (điểm a khoản 1 Điều 20)?",
+   "options": [
+    "Có nhà đầu tư nước ngoài nắm giữ trên 50% vốn điều lệ",
+    "Có bất kỳ cổ đông nước ngoài nào",
+    "Có giám đốc người nước ngoài",
+    "Có vay vốn nước ngoài"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 20.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 20 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Đầu tư tiếp theo thủ tục nhà đầu tư nước ngoài",
+   "right": "Theo thủ tục nhà đầu tư trong nước",
+   "cases": [
+    {
+     "text": "Công ty có nhà đầu tư nước ngoài giữ 70% vốn điều lệ",
+     "answer": "left"
+    },
+    {
+     "text": "Công ty có nhà đầu tư nước ngoài giữ 20% vốn điều lệ",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1, 2 Điều 20."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tổ chức kinh tế có vốn đầu tư nước ngoài là tổ chức kinh tế có nhà đầu tư {{nước ngoài}} là {{thành viên}} hoặc cổ đông.",
+   "bank_extra": [
+    "trong nước",
+    "chủ nợ"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tổ chức kinh tế có nhà đầu tư nước ngoài nắm giữ trên {{50%}} vốn {{điều lệ}} phải đáp ứng điều kiện và thủ tục như nhà đầu tư nước ngoài.",
+   "bank_extra": [
+    "25%",
+    "vay"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi tổ chức kinh tế có vốn đầu tư nước ngoài đều phải làm thủ tục như nhà đầu tư nước ngoài khi đầu tư tiếp.",
+   "answer": false,
+   "explain": "Sai. Chỉ tổ chức kinh tế thuộc khoản 1 Điều 20 (ví dụ nhà đầu tư nước ngoài nắm trên 50% vốn điều lệ)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Phân biệt tổ chức kinh tế có vốn đầu tư nước ngoài với tổ chức kinh tế thuộc khoản 1 Điều 20.",
+   "model": "Tổ chức kinh tế có vốn đầu tư nước ngoài: có nhà đầu tư nước ngoài là thành viên, cổ đông (khoản 22 Điều 3). Chỉ khi nhà đầu tư nước ngoài nắm trên 50% vốn điều lệ hoặc thuộc trường hợp khác ở khoản 1 Điều 20 thì phải làm thủ tục như nhà đầu tư nước ngoài.",
+   "keywords": [
+    "thành viên",
+    "cổ đông",
+    "trên 50%",
+    "khoản 1 Điều 20"
+   ]
+  }
+ ]
+}

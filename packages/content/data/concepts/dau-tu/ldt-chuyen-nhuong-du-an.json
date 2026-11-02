@@ -1,0 +1,115 @@
+{
+ "id": "ldt-chuyen-nhuong-du-an",
+ "subject": "dau-tu",
+ "chapter": "v3",
+ "term": "Chuyển nhượng dự án đầu tư",
+ "definition": "Nhà đầu tư có quyền chuyển nhượng toàn bộ hoặc một phần dự án đầu tư cho nhà đầu tư khác khi đáp ứng các điều kiện sau đây: a) Dự án đầu tư hoặc phần dự án đầu tư chuyển nhượng không bị chấm dứt hoạt động theo quy định tại khoản 1 và khoản 2 Điều 36 của Luật này;",
+ "plain": "Chuyển nhượng TOÀN BỘ hoặc MỘT PHẦN dự án. Điều kiện: dự án không bị chấm dứt hoạt động (Điều 36); nhà đầu tư nước ngoài nhận chuyển nhượng phải đáp ứng điều kiện tại khoản 2 Điều 21; điều kiện theo pháp luật đất đai, nhà ở, kinh doanh bất động sản; điều kiện trong văn bản chấp thuận chủ trương đầu tư, Giấy chứng nhận đăng ký đầu tư… Phân biệt chuyển nhượng DỰ ÁN với chuyển nhượng CỔ PHẦN/PHẦN VỐN GÓP của tổ chức kinh tế thực hiện dự án.",
+ "example": "Công ty M chuyển nhượng một nửa dự án khu dân cư cho công ty N; dự án đang bị chấm dứt hoạt động vì quá 24 tháng chậm tiến độ thì không được chuyển nhượng.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điểm a khoản 1 Điều 34 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Dau-tu/Van-ban-hop-nhat-142-2026-VBHN-LQ-VPQH-Luat-Dau-tu-726675.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "ldt-du-an-dau-tu",
+  "ldt-chap-thuan-chu-truong-dau-tu"
+ ],
+ "keywords": [
+  "toàn bộ hoặc một phần",
+  "không bị chấm dứt hoạt động",
+  "khoản 2 Điều 21"
+ ],
+ "note": "Luật Đầu tư 143/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Đầu tư 61/2020/QH14 mà đề cương HLU 2021 còn dẫn (khoản 4 Điều 51). Luật 24/2026/QH16 sửa đổi có hiệu lực từ 01/3/2027 (riêng một phần Điều 6 từ 01/01/2027), chỉ sửa Điều 6 và Phụ lục IV, không sửa điều được trích — văn bản hợp nhất 142/2026/VBHN-LQ-VPQH.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nhà đầu tư được chuyển nhượng phạm vi nào của dự án?",
+   "options": [
+    "Toàn bộ hoặc một phần dự án đầu tư",
+    "Chỉ toàn bộ dự án",
+    "Chỉ phần đã hoàn thành",
+    "Không được chuyển nhượng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 34.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 34 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Điều kiện nào là điều kiện chuyển nhượng dự án?",
+   "options": [
+    "Dự án hoặc phần dự án không bị chấm dứt hoạt động theo khoản 1, 2 Điều 36",
+    "Dự án đã có lãi",
+    "Bên nhận phải là doanh nghiệp nhà nước",
+    "Phải được Quốc hội đồng ý"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 34.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 34 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Được chuyển nhượng",
+   "right": "Không được chuyển nhượng",
+   "cases": [
+    {
+     "text": "Dự án đang hoạt động bình thường, đáp ứng điều kiện Điều 34",
+     "answer": "left"
+    },
+    {
+     "text": "Dự án đã bị cơ quan đăng ký đầu tư chấm dứt hoạt động",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 34, 36."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhà đầu tư có quyền chuyển nhượng {{toàn bộ}} hoặc {{một phần}} dự án đầu tư cho nhà đầu tư khác.",
+   "bank_extra": [
+    "cổ phần",
+    "lợi nhuận"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Dự án đầu tư hoặc phần dự án đầu tư chuyển nhượng không bị {{chấm dứt}} hoạt động theo quy định tại khoản 1 và khoản 2 Điều {{36}}.",
+   "bank_extra": [
+    "tạm ngừng",
+    "35"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Nhà đầu tư nước ngoài nhận chuyển nhượng dự án không cần đáp ứng điều kiện riêng nào.",
+   "answer": false,
+   "explain": "Sai. Điểm b khoản 1 Điều 34: phải đáp ứng điều kiện quy định tại khoản 2 Điều 21."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các điều kiện chuyển nhượng dự án đầu tư.",
+   "model": "Dự án không bị chấm dứt hoạt động; nhà đầu tư nước ngoài nhận chuyển nhượng đáp ứng khoản 2 Điều 21; điều kiện pháp luật đất đai, nhà ở, kinh doanh bất động sản; điều kiện trong văn bản chấp thuận chủ trương, Giấy chứng nhận đăng ký đầu tư (khoản 1 Điều 34).",
+   "keywords": [
+    "không bị chấm dứt",
+    "khoản 2 Điều 21",
+    "đất đai",
+    "Giấy chứng nhận"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,117 @@
+{
+ "id": "ldt-bao-dam-quyen-so-huu-tai-san",
+ "subject": "dau-tu",
+ "chapter": "v2",
+ "term": "Bảo đảm quyền sở hữu tài sản của nhà đầu tư",
+ "definition": "Tài sản hợp pháp của nhà đầu tư không bị quốc hữu hóa hoặc bị tịch thu bằng biện pháp hành chính.",
+ "plain": "Biện pháp bảo đảm đầu tư cốt lõi: Nhà nước KHÔNG quốc hữu hóa, KHÔNG tịch thu bằng biện pháp hành chính tài sản hợp pháp. Ngoại lệ hợp pháp: TRƯNG MUA, TRƯNG DỤNG vì quốc phòng, an ninh, lợi ích quốc gia, tình trạng khẩn cấp, phòng chống thiên tai — khi đó nhà đầu tư được THANH TOÁN, BỒI THƯỜNG (khoản 2). Tịch thu là hình phạt/biện pháp do tòa án hoặc xử phạt theo luật thì khác với tịch thu bằng biện pháp hành chính tùy tiện.",
+ "example": "Tỉnh cần đất làm đường cứu hộ khi lũ lụt, trưng dụng kho của công ty E: hợp pháp nhưng công ty E được bồi thường theo pháp luật về trưng mua, trưng dụng.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 9 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Dau-tu/Van-ban-hop-nhat-142-2026-VBHN-LQ-VPQH-Luat-Dau-tu-726675.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "ldt-bao-dam-khi-thay-doi-phap-luat",
+  "ldt-uu-dai-dau-tu"
+ ],
+ "keywords": [
+  "không quốc hữu hóa",
+  "không tịch thu bằng biện pháp hành chính",
+  "trưng mua",
+  "trưng dụng",
+  "bồi thường"
+ ],
+ "note": "Luật Đầu tư 143/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Đầu tư 61/2020/QH14 mà đề cương HLU 2021 còn dẫn (khoản 4 Điều 51). Luật 24/2026/QH16 sửa đổi có hiệu lực từ 01/3/2027 (riêng một phần Điều 6 từ 01/01/2027), chỉ sửa Điều 6 và Phụ lục IV, không sửa điều được trích — văn bản hợp nhất 142/2026/VBHN-LQ-VPQH.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tài sản hợp pháp của nhà đầu tư được bảo đảm thế nào theo khoản 1 Điều 9?",
+   "options": [
+    "Không bị quốc hữu hóa hoặc bị tịch thu bằng biện pháp hành chính",
+    "Được miễn mọi loại thuế",
+    "Không bao giờ bị trưng dụng",
+    "Được Nhà nước bảo hiểm"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 9.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 9 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khi Nhà nước trưng dụng tài sản vì lý do quốc phòng, nhà đầu tư được gì?",
+   "options": [
+    "Được thanh toán, bồi thường theo pháp luật",
+    "Không được gì",
+    "Được cấp đất mới miễn phí",
+    "Được miễn thuế vĩnh viễn"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 9.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 9 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Bị cấm theo Điều 9",
+   "right": "Được phép kèm bồi thường",
+   "cases": [
+    {
+     "text": "Quốc hữu hóa nhà máy hợp pháp của nhà đầu tư",
+     "answer": "left"
+    },
+    {
+     "text": "Trưng dụng kho bãi để phòng, chống thiên tai",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 9."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tài sản hợp pháp của nhà đầu tư không bị {{quốc hữu hóa}} hoặc bị tịch thu bằng biện pháp {{hành chính}}.",
+   "bank_extra": [
+    "cổ phần hóa",
+    "hình sự"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Trường hợp Nhà nước trưng mua, {{trưng dụng}} tài sản vì lý do quốc phòng, an ninh thì nhà đầu tư được thanh toán, {{bồi thường}}.",
+   "bank_extra": [
+    "tịch thu",
+    "khen thưởng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Nhà nước có thể trưng dụng tài sản của nhà đầu tư vì lý do phòng, chống thiên tai mà không phải bồi thường.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 9: nhà đầu tư được thanh toán, bồi thường theo pháp luật về trưng mua, trưng dụng."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày biện pháp bảo đảm quyền sở hữu tài sản của nhà đầu tư.",
+   "model": "Tài sản hợp pháp không bị quốc hữu hóa hoặc tịch thu bằng biện pháp hành chính (khoản 1 Điều 9); nếu trưng mua, trưng dụng vì quốc phòng, an ninh, lợi ích quốc gia, khẩn cấp, thiên tai thì được thanh toán, bồi thường (khoản 2).",
+   "keywords": [
+    "quốc hữu hóa",
+    "tịch thu",
+    "trưng dụng",
+    "bồi thường"
+   ]
+  }
+ ]
+}

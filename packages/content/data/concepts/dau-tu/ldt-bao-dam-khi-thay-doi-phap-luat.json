@@ -1,0 +1,116 @@
+{
+ "id": "ldt-bao-dam-khi-thay-doi-phap-luat",
+ "subject": "dau-tu",
+ "chapter": "v2",
+ "term": "Bảo đảm đầu tư khi thay đổi pháp luật",
+ "definition": "Trường hợp văn bản quy phạm pháp luật mới được ban hành quy định ưu đãi đầu tư mới, ưu đãi đầu tư cao hơn thì nhà đầu tư được hưởng ưu đãi đầu tư theo quy định của văn bản quy phạm pháp luật mới cho thời gian hưởng ưu đãi còn lại của dự án đầu tư, trừ ưu đãi đầu tư đặc biệt đối với dự án đầu tư thuộc trường hợp quy định tại điểm a khoản 5 Điều 17 của Luật này.",
+ "plain": "Nguyên tắc \"có lợi cho nhà đầu tư\": luật mới ưu đãi CAO HƠN → hưởng theo luật mới cho thời gian ưu đãi CÒN LẠI (khoản 1); luật mới ưu đãi THẤP HƠN → tiếp tục hưởng theo quy định CŨ cho thời gian còn lại (khoản 2). Ngoại lệ ở khoản 1: ưu đãi đầu tư đặc biệt theo điểm a khoản 5 Điều 17.",
+ "example": "Dự án F được miễn thuế 4 năm; sau 2 năm luật mới giảm còn 2 năm miễn thuế: F vẫn hưởng 2 năm còn lại theo quy định cũ (khoản 2 Điều 12).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 12 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Dau-tu/Van-ban-hop-nhat-142-2026-VBHN-LQ-VPQH-Luat-Dau-tu-726675.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "ldt-uu-dai-dau-tu",
+  "ldt-bao-dam-quyen-so-huu-tai-san"
+ ],
+ "keywords": [
+  "ưu đãi cao hơn",
+  "thời gian hưởng ưu đãi còn lại",
+  "ưu đãi thấp hơn",
+  "quy định trước đó"
+ ],
+ "note": "Luật Đầu tư 143/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Đầu tư 61/2020/QH14 mà đề cương HLU 2021 còn dẫn (khoản 4 Điều 51). Luật 24/2026/QH16 sửa đổi có hiệu lực từ 01/3/2027 (riêng một phần Điều 6 từ 01/01/2027), chỉ sửa Điều 6 và Phụ lục IV, không sửa điều được trích — văn bản hợp nhất 142/2026/VBHN-LQ-VPQH.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Luật mới quy định ưu đãi cao hơn thì nhà đầu tư được hưởng thế nào?",
+   "options": [
+    "Theo văn bản mới cho thời gian hưởng ưu đãi còn lại",
+    "Theo văn bản cũ đến hết dự án",
+    "Hưởng cả hai mức cộng lại",
+    "Không được hưởng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 12.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 12 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Luật mới quy định ưu đãi thấp hơn thì sao?",
+   "options": [
+    "Nhà đầu tư được tiếp tục áp dụng ưu đãi theo quy định trước đó cho thời gian còn lại",
+    "Phải áp dụng ngay mức thấp hơn",
+    "Phải hoàn lại ưu đãi đã hưởng",
+    "Dự án bị chấm dứt"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 12.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 12 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hưởng theo văn bản mới",
+   "right": "Hưởng theo quy định trước đó",
+   "cases": [
+    {
+     "text": "Luật mới tăng thời gian miễn thuế",
+     "answer": "left"
+    },
+    {
+     "text": "Luật mới thu hẹp ưu đãi tiền thuê đất",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1, 2 Điều 12."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Văn bản quy phạm pháp luật mới quy định ưu đãi đầu tư {{cao hơn}} thì nhà đầu tư được hưởng ưu đãi theo văn bản mới cho thời gian hưởng ưu đãi {{còn lại}} của dự án đầu tư.",
+   "bank_extra": [
+    "thấp hơn",
+    "ban đầu"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Văn bản mới quy định ưu đãi thấp hơn thì nhà đầu tư được tiếp tục áp dụng ưu đãi theo quy định {{trước đó}} cho thời gian hưởng ưu đãi còn lại của {{dự án đầu tư}}.",
+   "bank_extra": [
+    "mới",
+    "doanh nghiệp"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Khi pháp luật thay đổi theo hướng giảm ưu đãi, nhà đầu tư phải chuyển ngay sang mức ưu đãi mới.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 12: được tiếp tục áp dụng ưu đãi theo quy định trước đó cho thời gian còn lại."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu cơ chế bảo đảm đầu tư khi thay đổi pháp luật.",
+   "model": "Ưu đãi mới cao hơn: hưởng theo văn bản mới cho thời gian còn lại, trừ ưu đãi đặc biệt theo điểm a khoản 5 Điều 17 (khoản 1 Điều 12); ưu đãi mới thấp hơn: tiếp tục hưởng theo quy định trước đó (khoản 2).",
+   "keywords": [
+    "cao hơn",
+    "thấp hơn",
+    "thời gian còn lại",
+    "quy định trước đó"
+   ]
+  }
+ ]
+}

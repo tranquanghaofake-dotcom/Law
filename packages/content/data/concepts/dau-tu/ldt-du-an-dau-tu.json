@@ -1,0 +1,117 @@
+{
+ "id": "ldt-du-an-dau-tu",
+ "subject": "dau-tu",
+ "chapter": "v3",
+ "term": "Dự án đầu tư",
+ "definition": "Dự án đầu tư là tập hợp đề xuất bỏ vốn trung hạn hoặc dài hạn để tiến hành hoạt động đầu tư kinh doanh trên địa bàn cụ thể, trong khoảng thời gian xác định.",
+ "plain": "Dấu hiệu: tập hợp ĐỀ XUẤT bỏ vốn TRUNG HẠN hoặc DÀI HẠN; trên ĐỊA BÀN CỤ THỂ; trong THỜI GIAN XÁC ĐỊNH. Dự án là đối tượng của các thủ tục: chấp thuận chủ trương đầu tư, cấp Giấy chứng nhận đăng ký đầu tư, triển khai, chuyển nhượng, ngừng, chấm dứt.",
+ "example": "Công ty G đề xuất bỏ 200 tỷ đồng xây khu nghỉ dưỡng tại xã H trong 30 năm: dự án đầu tư. Mua lô cổ phiếu để bán lại sau 1 tuần không phải dự án đầu tư.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 4 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Dau-tu/Van-ban-hop-nhat-142-2026-VBHN-LQ-VPQH-Luat-Dau-tu-726675.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "ldt-chap-thuan-chu-truong-dau-tu",
+  "ldt-giay-chung-nhan-dang-ky-dau-tu",
+  "ldt-dau-tu-kinh-doanh"
+ ],
+ "keywords": [
+  "đề xuất bỏ vốn",
+  "trung hạn hoặc dài hạn",
+  "địa bàn cụ thể",
+  "thời gian xác định"
+ ],
+ "note": "Luật Đầu tư 143/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Đầu tư 61/2020/QH14 mà đề cương HLU 2021 còn dẫn (khoản 4 Điều 51). Luật 24/2026/QH16 sửa đổi có hiệu lực từ 01/3/2027 (riêng một phần Điều 6 từ 01/01/2027), chỉ sửa Điều 6 và Phụ lục IV, không sửa điều được trích — văn bản hợp nhất 142/2026/VBHN-LQ-VPQH.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Dự án đầu tư là tập hợp đề xuất bỏ vốn có thời hạn thế nào?",
+   "options": [
+    "Trung hạn hoặc dài hạn",
+    "Ngắn hạn dưới 1 năm",
+    "Không xác định thời hạn",
+    "Chỉ dài hạn trên 50 năm"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Yếu tố nào thuộc khái niệm dự án đầu tư?",
+   "options": [
+    "Trên địa bàn cụ thể, trong khoảng thời gian xác định",
+    "Phải có vốn nhà nước",
+    "Phải có nhà đầu tư nước ngoài",
+    "Phải được Quốc hội chấp thuận"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Dấu hiệu của dự án đầu tư",
+   "right": "Không phải dấu hiệu",
+   "cases": [
+    {
+     "text": "Trên địa bàn cụ thể",
+     "answer": "left"
+    },
+    {
+     "text": "Phải có lãi ngay năm đầu",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 4 Điều 3."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Dự án đầu tư là tập hợp đề xuất bỏ vốn {{trung hạn}} hoặc dài hạn để tiến hành hoạt động đầu tư kinh doanh trên {{địa bàn}} cụ thể, trong khoảng thời gian xác định.",
+   "bank_extra": [
+    "ngắn hạn",
+    "lĩnh vực"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Dự án đầu tư tiến hành hoạt động đầu tư kinh doanh trên địa bàn cụ thể, trong khoảng {{thời gian}} {{xác định}}.",
+   "bank_extra": [
+    "không gian",
+    "vô hạn"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Dự án đầu tư phải có thời hạn xác định.",
+   "answer": true,
+   "explain": "Đúng. Khoản 4 Điều 3: trong khoảng thời gian xác định."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm và dấu hiệu dự án đầu tư.",
+   "model": "Tập hợp đề xuất bỏ vốn trung hạn hoặc dài hạn để tiến hành hoạt động đầu tư kinh doanh trên địa bàn cụ thể, trong khoảng thời gian xác định (khoản 4 Điều 3).",
+   "keywords": [
+    "đề xuất bỏ vốn",
+    "trung hạn",
+    "địa bàn cụ thể",
+    "thời gian xác định"
+   ]
+  }
+ ]
+}
