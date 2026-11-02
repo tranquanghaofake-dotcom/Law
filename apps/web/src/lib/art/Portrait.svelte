@@ -11,15 +11,23 @@
   import type { PostTier } from '$lib/game/career';
   import BookSpine from './BookSpine.svelte';
   import GarmentFlat from './GarmentFlat.svelte';
+  import ShowcaseProps from './ShowcaseProps.svelte';
+  import type { Branch } from '$lib/game/career';
+  import type { Tier } from '$lib/game/card';
   import type { BookScheme } from '$lib/ui/shelf';
   import type { BookLevel } from '$lib/game/books';
   import { ring } from './kit';
   type ShelfBook = { key: string; scheme: BookScheme; level: BookLevel; label: string };
-  let { avatar, title = 'Công dân', subtitle = '', books = [], tier = null, celebrate = false, ondone }:
-    { avatar: Avatar; title?: string; subtitle?: string; accent?: string; books?: ShelfBook[]; medals?: number; tier?: PostTier | null; celebrate?: boolean; ondone?: () => void } = $props();
+  let { avatar, title = 'Công dân', subtitle = '', books = [], tier = null, celebrate = false, ondone, branch = 'hanh-phap', medals = [], l3 = 0 }:
+    { avatar: Avatar; title?: string; subtitle?: string; accent?: string; books?: ShelfBook[]; tier?: PostTier | null; celebrate?: boolean; ondone?: () => void; branch?: Branch; medals?: { tier: Tier; count: number }[]; l3?: number } = $props();
   const uid = `pt${++seq}`;
   const motes = Array.from({ length: 14 }, (_, i) => ({ x: 18 + ((i * 37) % 64), y: 12 + ((i * 53) % 60), d: (i % 5) * 1.3, s: 6 + (i % 4) * 2 }));
   const gold = Array.from({ length: 22 }, (_, i) => ({ x: 4 + ((i * 41) % 92), d: (i % 7) * 0.12, r: (i * 47) % 360 }));
+  // kỷ niệm chương vòng lửa (từ thẻ chuyên cần): dải ruy băng + đĩa màu lửa
+  const MEDAL: Record<Tier, { a: string; b: string; disc: string }> = {
+    do: { a: '#e3300b', b: '#ffa32a', disc: '#ffb347' }, lam: { a: '#0a5cff', b: '#38b6ff', disc: '#8fd3ff' },
+    tim: { a: '#7417ff', b: '#b65cff', disc: '#d4a6ff' }, 'trang-den': { a: '#0b0b0d', b: '#f4f6fa', disc: '#ffffff' },
+  };
   const rich = $derived(tier === 'trung-uong' || tier === 'lanh-dao');
   $effect(() => {
     if (!celebrate) return;
@@ -35,6 +43,7 @@
   </svg>
 {/snippet}
 
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><linearGradient id="{uid}-gm" x1="0" x2="1"><stop offset="0" stop-color="#8a6526" /><stop offset=".5" stop-color="#f3dc98" /><stop offset="1" stop-color="#a87c34" /></linearGradient></defs></svg>
 <figure class="showcase fx-{avatar.effect}" class:celebrate data-tier={tier ?? 'none'}>
   {#if rich}{@render corner('tl')}{@render corner('tr')}{@render corner('bl')}{@render corner('br')}{/if}
   {#if tier === 'lanh-dao'}<span class="sc-lamp l" aria-hidden="true"></span><span class="sc-lamp r" aria-hidden="true"></span>{/if}
@@ -49,6 +58,32 @@
       </svg>
     {/if}
     <span class="sc-cone" aria-hidden="true"></span>
+    {#if medals.length}
+      <!-- vách trái: kỷ niệm chương mỗi vòng lửa 30 ngày đã hoàn tất -->
+      <svg class="sc-medals" viewBox="0 0 {medals.length * 26 + 4} 52" aria-hidden="true" focusable="false">
+        {#each medals as md, k (md.tier)}
+          {@const c = MEDAL[md.tier]}
+          <g transform="translate({k * 26 + 4} 2)" stroke="#2b2420" stroke-width=".8">
+            <path d="M2 0h18l-3 16H5Z" fill={c.a} /><path d="M8 0h6l-1 16h-4Z" fill={c.b} stroke="none" />
+            <circle cx="11" cy="27" r="10" fill="url(#{uid}-gm)" /><circle cx="11" cy="27" r="6.5" fill={c.disc} />
+            <path d="M11 22q3 3 1 6q2-1 2-3q2 3-1 6h-4q-3-3 0-6q0 2 2 3q-1-3 0-6Z" fill={c.a} stroke="none" />
+            {#if md.count > 1}<text x="11" y="48" text-anchor="middle" font-size="8" font-weight="700" fill="#5a4636" stroke="none">×{md.count}</text>{/if}
+          </g>
+        {/each}
+      </svg>
+    {/if}
+    {#if l3 > 0}
+      <!-- vách phải: giấy ghi nhận cách điệu (không mô phỏng bằng khen thật) -->
+      <svg class="sc-cert" viewBox="0 0 60 46" aria-hidden="true" focusable="false">
+        <rect x="1" y="1" width="58" height="44" rx="2" fill="url(#{uid}-gm)" stroke="#2b2420" stroke-width=".8" />
+        <rect x="5" y="5" width="50" height="36" fill="#fbf5e6" stroke="#b08a4a" stroke-width=".6" />
+        <text x="30" y="14" text-anchor="middle" font-size="5" font-weight="700" letter-spacing=".4" fill="#7a2020">GIẤY GHI NHẬN</text>
+        <text x="30" y="30" text-anchor="middle" font-size="13" font-weight="800" fill="#2b2420">{l3}</text>
+        <text x="30" y="37" text-anchor="middle" font-size="4.2" fill="#5a4636">sách cấp 3</text>
+        <circle cx="48" cy="36" r="3.4" fill="#a8322b" opacity=".85" />
+      </svg>
+    {/if}
+    <ShowcaseProps {branch} {tier} side="left" /><ShowcaseProps {branch} {tier} side="right" />
     <span class="sc-floor" aria-hidden="true"></span>
     <div class="sc-photo"><GarmentFlat outfit={avatar.outfit} /></div>
     <div class="sc-reflect" aria-hidden="true"><GarmentFlat outfit={avatar.outfit} /></div>

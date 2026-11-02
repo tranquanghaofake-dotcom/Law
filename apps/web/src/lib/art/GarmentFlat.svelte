@@ -119,15 +119,17 @@
       <feComposite in="m" in2="specIn" operator="arithmetic" k2="1" k3={dark ? 0.35 : 0.2} />
     </filter>
   </defs>
-  {#if o === 'ao-dai'}
-    <!-- ma-nơ-canh không đầu: chân đế -->
-    <path d="M150 386V394M118 398h64" stroke="#5a4636" stroke-width="3" />
-    <path d="M140 44q10-10 20 0" fill="#d9c7a7" stroke={INK} stroke-width="1.4" />
-  {:else}
-    <!-- móc treo gỗ -->
-    <path d="M150 50V40q0-10 8-12q7-2 7 5" fill="none" stroke="#8f8a85" stroke-width="2.4" />
-    <path d="M150 49L86 70Q84 74 90 74L150 56L210 74Q216 74 214 70Z" fill="#9a6b42" stroke={INK} stroke-width="1.2" />
-  {/if}
+  <!-- ma-nơ-canh bán thân: cột + chân đế (sau áo), cổ bọc vải lanh có núm gỗ; lót sau cổ áo cho cảm giác áo đang mặc -->
+  <defs>
+    <linearGradient id="{uid}-linen" x1="0" x2="1"><stop offset="0" stop-color="#b9a582" /><stop offset=".45" stop-color="#eadcc0" /><stop offset="1" stop-color="#a8936f" /></linearGradient>
+    <linearGradient id="{uid}-wood" x1="0" x2="1"><stop offset="0" stop-color="#5a3a22" /><stop offset=".5" stop-color="#9a6a42" /><stop offset="1" stop-color="#4a2e1a" /></linearGradient>
+  </defs>
+  <path d="M146 200V386h8V200Z" fill="url(#{uid}-wood)" stroke={INK} stroke-width="1" />
+  <path d="M112 396q38-14 76 0v3H112Z" fill="url(#{uid}-wood)" stroke={INK} stroke-width="1.1" /><ellipse cx="150" cy="389" rx="12" ry="3.4" fill="#3a2414" />
+  <path d="M136 {o === 'ao-dai' ? 46 : 62}V30q14-7 28 0V{o === 'ao-dai' ? 46 : 62}Z" fill="url(#{uid}-linen)" stroke={INK} stroke-width="1.2" />
+  <ellipse cx="150" cy="30" rx="14" ry="4.2" fill="#e9dcc2" stroke={INK} stroke-width="1.1" />
+  <path d="M146 26q4-8 8 0" fill="url(#{uid}-wood)" stroke={INK} stroke-width="1" />
+  {#if o !== 'ao-dai'}<path d="M126 58q24 10 48 0q-4 8-24 9q-20-1-24-9Z" fill={p.sleeve} stroke={INK} stroke-width="1" opacity=".9" />{/if}
   <!-- phần nhìn thấy bên trong cổ: sơ mi + cà vạt -->
   {#if suit || o === 'ao-choang'}
     <path d="M128 57L150 {o === 'ao-choang' ? 104 : 188}L172 57Q150 68 128 57Z" fill={p.shirt} stroke={INK} stroke-width="1.3" />

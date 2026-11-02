@@ -219,6 +219,13 @@ Không vẽ Quốc huy, sao, vạch cấp hiệu hay biểu tượng ngành th�
 - Chất liệu: vệt sáng lướt chéo **chỉ khi rê chuột vào** (một lần, ~1,6 giây; Hào: "loé sáng hơi nhanh, chỉ hiện khi di chuột"); cạnh thẻ có đường sáng mảnh như kim loại; số trong huy hiệu khắc chìm.
 - Mượt: thu nhỏ vùng filter lửa. Bóng tối quanh huy hiệu nhạt và nhỏ lại (Hào: "hơi tối quá").
 
+### 3.18 Tủ trưng bày: ma-nơ-canh, đồ vật theo nhánh, kỷ niệm chương (Hào chọn hướng 1–3, 02/11/2026)
+
+- **Ma-nơ-canh bán thân** thay móc treo: cổ bọc vải lanh, núm gỗ, cột và chân đế gỗ; lót sau cổ áo. Rê chuột: ma-nơ-canh xoay nhẹ (~9°).
+- **Đồ vật theo nhánh** (`art/ShowcaseProps`), chất liệu lên theo bậc (gỗ → đồng → vàng → vàng sáng): hành pháp — con dấu cách điệu (không hình/chữ/Quốc huy), khay hồ sơ; lập pháp — hòm phiếu, bộ luật; xét xử — cán cân, hồ sơ vụ án buộc dây; kiểm sát — cặp hồ sơ, kính lúp. Không búa gỗ.
+- **Kỷ niệm chương vòng lửa** (`streakMedals`, theo chuỗi dài nhất): mỗi vòng 30 ngày tiến độ hoàn tất được một chương màu lửa của vòng đó, treo vách trái; vòng sau cấp cuối cộng dồn (×n).
+- **Giấy ghi nhận** cách điệu ở vách phải, ghi số sách cấp 3. Dùng chữ "Giấy ghi nhận", **không** dùng "Bằng khen" (hình thức khen thưởng chính thức của Nhà nước) để tránh hiểu nhầm.
+
 ## 4. Dữ liệu
 - Store mới (IndexedDB): `books` (chapterId → cấp cao nhất, ngày đạt), `career` (nhánh đang chọn, chức danh đã đạt), `card` (kỷ lục màu). Migration từ dữ liệu cũ: tính sách từ `progress` hiện có. XP vẫn giữ, chỉ hiển thị phụ.
 - `game/rank.ts` (khoa cử, phẩm hàm) **giữ file và test, không còn hiển thị**. XP vẫn cộng và hiện phụ ở Hồ sơ. Bậc 6 đổi tên **Tinh thông**.
