@@ -42,7 +42,7 @@
   // Lửa ba lớp (theo video Hào gửi): lõi gần trắng, thân màu bão hoà, quầng rộng rung như lửa/điện trên nền tối.
   type Fire = { core: string; mid: string; glow: string };
   const FIRE: Record<Tier, Fire> = {
-    do: { core: '#fff2e2', mid: '#ff6a2b', glow: '#ff2d0a' },
+    do: { core: '#fff4b8', mid: '#ffa32a', glow: '#e3300b' },
     lam: { core: '#effbff', mid: '#38b6ff', glow: '#0a5cff' },
     tim: { core: '#f8edff', mid: '#b65cff', glow: '#7417ff' },
     trang: { core: '#ffffff', mid: '#dff0ff', glow: '#8fc4ff' },
@@ -96,11 +96,11 @@
       <filter id="{uid}-soft" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="14" /></filter>
       <!-- lửa: làm nhoè rồi xé mép bằng nhiễu chuyển động, cộng quầng rộng -->
       <filter id="{uid}-flame" x="-10%" y="-20%" width="120%" height="140%">
-        <feTurbulence type="fractalNoise" baseFrequency=".018 .055" numOctaves="2" seed="3" result="n">
-          <animate attributeName="baseFrequency" dur="2.4s" values=".018 .055;.022 .07;.016 .05;.018 .055" repeatCount="indefinite" />
+        <feTurbulence type="fractalNoise" baseFrequency=".016 .06" numOctaves="3" seed="3" result="n">
+          <animate attributeName="baseFrequency" dur="2.4s" values=".016 .06;.02 .08;.014 .05;.016 .06" repeatCount="indefinite" />
         </feTurbulence>
         <feGaussianBlur in="SourceGraphic" stdDeviation="2.6" result="b" />
-        <feDisplacementMap in="b" in2="n" scale="14" xChannelSelector="R" yChannelSelector="G" result="f" />
+        <feDisplacementMap in="b" in2="n" scale="18" xChannelSelector="R" yChannelSelector="G" result="f" />
         <feGaussianBlur in="SourceGraphic" stdDeviation="9" result="bloom" />
         <feMerge><feMergeNode in="bloom" /><feMergeNode in="f" /><feMergeNode in="f" /></feMerge>
       </filter>
@@ -189,7 +189,7 @@
       <rect x="4" y="4" width="848" height="532" rx="37" fill="none" stroke={fire(c.border).glow} stroke-width="6" filter="url(#{uid}-flame)" class="cg-border" />
       <rect x="3" y="3" width="850" height="534" rx="38" fill="none" stroke={fire(c.border).core} stroke-width="1.4" opacity=".8" />
     {/if}
-    {#if c.burst}<rect width="856" height="540" rx="40" fill="url(#{uid}-holo)" class="cg-burst" />{/if}
+    {#if c.burst}<rect width="856" height="540" rx="40" fill={c.tier === 'vo-cuc' ? `url(#${uid}-holo)` : `url(#${uid}-aura)`} class="cg-burst" class:tint={c.tier !== 'vo-cuc'} />{/if}
   </svg>
   <span class="sc-glare" aria-hidden="true"></span>
 </div>

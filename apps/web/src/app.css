@@ -631,6 +631,8 @@ h1 { text-wrap: balance; }
 @keyframes cgring { from { opacity: .7; stroke-width: 10; } to { opacity: 1; stroke-width: 15; } }
 @keyframes cgbolt { 0% { opacity: 0; } 4% { opacity: 1; } 7% { opacity: .2; } 9% { opacity: 1; } 13%, 100% { opacity: 0; } }
 @keyframes cgburst { from { opacity: .12; } to { opacity: .35; } }
+.cg-burst.tint { mix-blend-mode: screen; animation-name: cgbursttint; }
+@keyframes cgbursttint { from { opacity: .5; } to { opacity: 1; } }
 
 .flame { gap: 6px; }
 .flame .sc-wrap.mini { width: 40px; }
