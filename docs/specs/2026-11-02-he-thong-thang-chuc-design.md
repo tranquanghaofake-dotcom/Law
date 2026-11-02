@@ -203,6 +203,10 @@ Không vẽ Quốc huy, sao, vạch cấp hiệu hay biểu tượng ngành th�
 - Rê chuột: độ nghiêng theo lò xo (requestAnimationFrame, tiến 12%/khung hình) thay vì bám tức thời; parallax — lớp doodle trôi ngược chiều, huy hiệu nổi lên; sáng dần khi rê vào.
 - Vừa thắp (`justLit(count, seen)`, `seen` lưu localStorage `ll-card-seen` — chỉ là tiện ích hiển thị; lần đầu chỉ ghi nhận): tia lửa bay từ huy hiệu tới ký hoạ mới → loé + sóng lửa → ký hoạ phóng lên rồi ổn định (~2,6 giây). Ngày 28–30: sóng lớn quanh huy hiệu, ngày 30 huy hiệu bùng lên. Giảm chuyển động: ẩn hẳn lớp hiệu ứng.
 
+### 3.15 Huy hiệu mới theo phác thảo (Hào, 02/11/2026)
+
+- Cán cân lớn **tràn ra ngoài** vòng tròn (cột xuyên tâm, đòn cân + hai đĩa phía trên, đế phía dưới); **trong vòng tròn là số ngày của chuỗi**. Bỏ đài sen. Xám nổi khối khi chưa thắp; thắp thì cán cân cháy ba lớp và có vòng lửa quanh đĩa số. Bốn ký hoạ gần huy hiệu dời ra để không chạm đĩa cân.
+
 ## 4. Dữ liệu
 - Store mới (IndexedDB): `books` (chapterId → cấp cao nhất, ngày đạt), `career` (nhánh đang chọn, chức danh đã đạt), `card` (kỷ lục màu). Migration từ dữ liệu cũ: tính sách từ `progress` hiện có. XP vẫn giữ, chỉ hiển thị phụ.
 - `game/rank.ts` (khoa cử, phẩm hàm) **giữ file và test, không còn hiển thị**. XP vẫn cộng và hiện phụ ở Hồ sơ. Bậc 6 đổi tên **Tinh thông**.

@@ -16,7 +16,7 @@
   const jit = (i: number, k: number) => (((i * 9301 + k * 49297) % 233280) / 233280 - 0.5);
   const slots: [number, number][] = [
     ...Array.from({ length: 7 }, (_, i) => [74 + i * 118, 78] as [number, number]),
-    ...[48, 150, 252, 604, 706, 808].map((x) => [x, 206] as [number, number]),
+    ...[40, 138, 232, 624, 718, 816].map((x) => [x, 206] as [number, number]),
     ...[86, 188, 286, 570, 672, 774].map((x) => [x, 334] as [number, number]),
     ...Array.from({ length: 8 }, (_, i) => [54 + i * 107, 466] as [number, number]),
   ];
@@ -38,6 +38,9 @@
   const rankOf = Array(27).fill(0); order.forEach((g, k) => (rankOf[g] = k));
   // hoa văn hoa thị (rosette) của huy hiệu: elip xoay lồng nhau
   const rosette = Array.from({ length: 36 }, (_, k) => k * 5);
+  // cán cân của huy hiệu (gốc toạ độ = tâm đĩa số): cột xuyên qua đĩa, đòn cân và hai đĩa cân phía trên, đế phía dưới
+  const SCALE = 'M0-124V-60M0 60V112M-124-92Q0-108 124-92M-124-92L-146-34M-124-92L-102-34M124-92L102-34M124-92L146-34M-46 112H46M-64 124H64M-14-96Q0-103 14-96';
+  const PANS = 'M-152-34Q-124-12-96-34ZM96-34Q124-12 152-34Z';
   const label = $derived(count > 0 ? `Thẻ chuyên cần: chuỗi ${count} ngày, ngày ${c.day}/30, màu ${TIER_NAMES[c.tier as Tier]}` : 'Thẻ chuyên cần: chưa có chuỗi');
   // Lửa ba lớp (theo video Hào gửi): lõi gần trắng, thân màu bão hoà, quầng rộng rung như lửa/điện trên nền tối.
   type Fire = { core: string; mid: string; glow: string };
@@ -56,7 +59,7 @@
   const embers = $derived(doodles.flatMap((dd, i) => (litNow[i] && rankOf[i] === c.day - 1 ? [0, 1, 2, 3].map((k) => ({ x: dd.x + jit(i, 10 + k) * 40, y: dd.y + 10 + jit(i, 12 + k) * 20, d: (jit(i, 14 + k) + 0.5) * 3, i })) : [])));
   const bolts = Array.from({ length: 8 }, (_, k) => {
     const a = (k / 8) * Math.PI * 2 + 0.3; let d = '';
-    for (let j = 0; j <= 6; j++) { const r = 172 - j * 11, w = j % 2 ? 7 : -7, aa = a + (w / r); d += `${j ? 'L' : 'M'}${(Math.cos(aa) * r).toFixed(1)} ${(Math.sin(aa) * r * 0.82).toFixed(1)}`; }
+    for (let j = 0; j <= 6; j++) { const r = 150 - j * 11, w = j % 2 ? 7 : -7, aa = a + (w / r); d += `${j ? 'L' : 'M'}${(Math.cos(aa) * r).toFixed(1)} ${(Math.sin(aa) * r * 0.82).toFixed(1)}`; }
     return d;
   });
   const caption = $derived([c.tier ? `${TIER_NAMES[c.tier]} · ngày ${c.day}/30` : 'Chưa bắt đầu chuỗi', `chuỗi ${count} ngày`, `kỷ lục ${Math.max(longest, count)} ngày${c.record ? ` (${TIER_NAMES[c.record]})` : ''}`].join(' · '));
@@ -183,36 +186,33 @@
         </g>
       {/if}
     </g>
-    <!-- huy hiệu: xám khi chưa thắp; ngày 29 tia điện tụ về; ngày 30 thắp cuối cùng với vòng lửa cháy quanh đĩa -->
+    <!-- huy hiệu (theo phác thảo của Hào): cán cân lớn tràn ra ngoài vòng tròn, trong vòng tròn là số ngày của chuỗi.
+         Xám khi chưa thắp; ngày 29 tia điện tụ về; ngày 30 thắp cuối cùng — cán cân cháy ba lớp, vòng lửa quanh đĩa số. -->
     <g class="cg-par-fg" class:born={!!c.logo}><g transform="translate(428 262)" class="cg-logo" class:lit={!!c.logo} class:charge={!!c.charge}>
-      <circle r="112" fill="#0f0f12" opacity=".75" filter="url(#{uid}-soft)" />
-      {#if lg}<circle class="cg-ring" r="106" fill="none" stroke={lg.glow} stroke-width="7" opacity=".8" filter="url(#{uid}-flame)" />{/if}
+      <ellipse rx="190" ry="170" fill="#0f0f12" opacity=".7" filter="url(#{uid}-soft)" />
       {#if c.charge}
         <g class="cg-bolts" fill="none" stroke-linecap="round" stroke-linejoin="round" filter="url(#{uid}-hot)">
           {#each bolts as d, k (k)}<path {d} stroke={fire(c.charge).mid} stroke-width="4" style="animation-delay:{(k * 0.37).toFixed(2)}s" /><path {d} stroke={fire(c.charge).core} stroke-width="1.6" style="animation-delay:{(k * 0.37).toFixed(2)}s" />{/each}
         </g>
-        <circle r="108" fill="none" stroke={fire(c.charge).glow} stroke-width="3" opacity=".6" class="cg-charge" filter="url(#{uid}-hot)" />
       {/if}
-      <circle r="104" fill="url(#{uid}-disc)" stroke={lg ? lg.mid : '#55555c'} stroke-width="2.5" />
-      <g class="cg-rosette" fill="none" stroke={lg ? lg.mid : '#76767e'} stroke-width=".9" opacity={lg ? 0.85 : 0.32} filter={lg ? `url(#${uid}-hot)` : undefined}>
-        {#each rosette as a (a)}<ellipse rx="96" ry="34" transform="rotate({a})" />{/each}
+      <!-- cán cân: quầng lửa (khi thắp) → thân → lõi; chưa thắp thì xám nổi khối -->
+      {#if lg}<g class="cg-ring" fill="none" stroke={lg.glow} stroke-width="7" stroke-linecap="round" stroke-linejoin="round" filter="url(#{uid}-flame)"><path d={SCALE} /><circle r="66" /></g>{/if}
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round" filter={lg ? `url(#${uid}-hot)` : `url(#${uid}-emboss)`}>
+        <path d={SCALE} stroke={lg ? lg.mid : '#7a7a82'} stroke-width={lg ? 4.2 : 4.6} />
+        <path d={PANS} fill={lg ? lg.mid : '#5a5a62'} fill-opacity={lg ? 0.35 : 0.6} stroke={lg ? lg.mid : '#7a7a82'} stroke-width="3" />
+        {#if lg}<path d={SCALE} stroke={lg.core} stroke-width="1.6" /><path d={PANS} stroke={lg.core} stroke-width="1.2" />{/if}
+        <circle cy="-129" r="6" fill={lg ? lg.core : '#8a8a92'} stroke="none" />
       </g>
-      <circle r="66" fill="url(#{uid}-disc)" stroke={lg ? lg.core : '#5e5e66'} stroke-width="2" />
-      <circle r="60" fill="none" stroke={lg ? lg.mid : '#5e5e66'} stroke-width="1" stroke-dasharray="1 4" />
-      {#if lg}<circle r="46" fill={lg.glow} opacity=".35" filter="url(#{uid}-soft)" class="cg-core" />{/if}
-      <g filter={lg ? `url(#${uid}-hot)` : `url(#${uid}-emboss)`} transform="translate(0 6)">
-        <!-- đài sen nghiêng 5 cánh -->
-        <path d="M-4 34C-34 32-48 16-48 2C-30 2-14 14-4 34Z" fill={lf} opacity=".7" /><path d="M4 34C34 32 48 16 48 2C30 2 14 14 4 34Z" fill={lf} opacity=".7" />
-        <path d="M-2 34C-24 26-30 6-24-12C-12-2-4 14-2 34Z" fill={lf} opacity=".85" /><path d="M2 34C24 26 30 6 24-12C12-2 4 14 2 34Z" fill={lf} opacity=".85" />
-        <path d="M0 34C-13 18-13-2 0-20C13-2 13 18 0 34Z" fill={lf} />
-        <path d="M0 30V-6M-30 34Q0 46 30 34" fill="none" stroke="#141414" stroke-width="1.2" opacity=".5" />
-        <!-- cán cân mọc lên từ cánh giữa, đĩa cân lơ lửng trên hai cánh bên -->
-        <g fill="none" stroke={lg ? lg.core : lf} stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M0 -20V-46M-34 -40Q0 -50 34 -40M-34 -40l-8 16M-34 -40l8 16M34 -40l-8 16M34 -40l8 16" />
-          <path d="M-44 -24Q-34 -14 -24 -24zM24 -24Q34 -14 44 -24z" fill={lf} />
-        </g>
-        <circle cy="-50" r="4.4" fill={lg ? lg.core : lf} />
+      <!-- vòng hoa văn + đĩa số -->
+      <g class="cg-rosette" fill="none" stroke={lg ? lg.mid : '#76767e'} stroke-width=".8" opacity={lg ? 0.7 : 0.3}>
+        {#each rosette as a (a)}<ellipse rx="80" ry="27" transform="rotate({a})" />{/each}
       </g>
+      {#if c.charge}<circle r="66" fill="none" stroke={fire(c.charge).glow} stroke-width="3" opacity=".6" class="cg-charge" filter="url(#{uid}-hot)" />{/if}
+      <circle r="60" fill="url(#{uid}-disc)" stroke={lg ? lg.core : '#5e5e66'} stroke-width="2.4" />
+      <circle r="53" fill="none" stroke={lg ? lg.mid : '#55555c'} stroke-width="1" stroke-dasharray="1 4" />
+      {#if lg}<circle r="40" fill={lg.glow} opacity=".3" filter="url(#{uid}-soft)" class="cg-core" />{/if}
+      <text class="cg-count" y="1" text-anchor="middle" dominant-baseline="central" font-size={String(count).length >= 3 ? 40 : 54}
+        fill={lg ? `url(#${uid}-lotus)` : `url(#${uid}-ash)`} filter={lg ? `url(#${uid}-hot)` : `url(#${uid}-emboss)`}>{count}</text>
     </g></g>
     <!-- màn vừa thắp: tia lửa bay từ logo tới ký hoạ mới → bùng cháy + sóng lửa; ngày 28–30 thì sóng lớn quanh logo -->
     {#if lighting && cur}

@@ -606,6 +606,7 @@ h1 { text-wrap: balance; }
 .streak-card .cg-num { font: 600 46px/1 var(--font-ui); letter-spacing: .14em; font-variant-numeric: tabular-nums; }
 /* Lửa thẻ chuyên cần: chập chờn, tàn bay, tia điện, vòng lửa; tắt khi giảm chuyển động (luật chung) và ở thẻ nhỏ */
 .cg-glyph { transition: opacity .6s ease; }
+.streak-card .cg-count { font-family: var(--font-display); font-weight: 800; font-variant-numeric: tabular-nums; letter-spacing: -.02em; }
 .cg-glyph.lit { animation: cgflick 4.2s ease-in-out infinite; animation-delay: calc(var(--k, 0) * -.37s); }
 .cg-glyph.now { transform-box: fill-box; transform-origin: center; animation: cgignite 2.2s ease-in-out infinite; }
 .cg-flames { animation: cgflames 1.7s ease-in-out infinite alternate; }
