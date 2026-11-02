@@ -1,0 +1,139 @@
+{
+  "id": "lao-dong-2-de-1",
+  "group": "lao-dong",
+  "title": "Đề kiểm tra Lao động 2 – Cho thuê lại, lao động nữ, chưa thành niên",
+  "subtitle": "10 câu theo đề cương HLU, vấn đề 1–2",
+  "updated": "2026-11-01",
+  "questions": [
+    {
+      "q": "Thời hạn cho thuê lại lao động tối đa?",
+      "options": [
+        "06 tháng",
+        "12 tháng",
+        "24 tháng",
+        "36 tháng"
+      ],
+      "answer": 1,
+      "explain": "Khoản 1 Điều 53.",
+      "basis": "Điều 53 BLLĐ 2019 (VBHN 18/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-18-VBHN-VPQH-2026-Bo-luat-lao-dong-695336.aspx"
+    },
+    {
+      "q": "Trong cho thuê lại lao động, người lao động giao kết HĐLĐ với ai?",
+      "options": [
+        "Bên thuê lại",
+        "Doanh nghiệp cho thuê lại lao động",
+        "Cơ quan lao động",
+        "Không cần HĐLĐ"
+      ],
+      "answer": 1,
+      "explain": "Khoản 1 Điều 52.",
+      "basis": "Điều 52 BLLĐ 2019 (VBHN 18/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-18-VBHN-VPQH-2026-Bo-luat-lao-dong-695336.aspx"
+    },
+    {
+      "q": "Hợp đồng cho thuê lại lao động phải có hình thức nào?",
+      "options": [
+        "Lời nói",
+        "Văn bản, 02 bản",
+        "Công chứng bắt buộc",
+        "Điện tử bắt buộc"
+      ],
+      "answer": 1,
+      "explain": "Khoản 1 Điều 55.",
+      "basis": "Điều 55 BLLĐ 2019 (VBHN 18/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-18-VBHN-VPQH-2026-Bo-luat-lao-dong-695336.aspx"
+    },
+    {
+      "q": "Doanh nghiệp cho thuê lại lao động cần điều kiện gì?",
+      "options": [
+        "Ký quỹ và có Giấy phép hoạt động cho thuê lại lao động",
+        "Chỉ cần đăng ký doanh nghiệp",
+        "Có vốn nhà nước",
+        "Được UBND cấp xã đồng ý"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 54.",
+      "basis": "Điều 54 BLLĐ 2019 (VBHN 18/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-18-VBHN-VPQH-2026-Bo-luat-lao-dong-695336.aspx"
+    },
+    {
+      "q": "Người lao động mang thai từ tháng thứ mấy (làm việc ở đồng bằng) không được làm đêm, thêm giờ?",
+      "options": [
+        "05",
+        "06",
+        "07",
+        "08"
+      ],
+      "answer": 2,
+      "explain": "Điểm a khoản 1 Điều 137.",
+      "basis": "Điều 137 BLLĐ 2019 (VBHN 18/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-18-VBHN-VPQH-2026-Bo-luat-lao-dong-695336.aspx"
+    },
+    {
+      "q": "Lao động nữ sinh con thứ hai (từ 01/7/2026) được nghỉ thai sản bao lâu?",
+      "options": [
+        "06 tháng",
+        "07 tháng",
+        "08 tháng",
+        "05 tháng"
+      ],
+      "answer": 1,
+      "explain": "Khoản 1 Điều 139.",
+      "basis": "Điều 139 BLLĐ 2019 (VBHN 18/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-18-VBHN-VPQH-2026-Bo-luat-lao-dong-695336.aspx"
+    },
+    {
+      "q": "Thời gian nghỉ thai sản trước khi sinh tối đa?",
+      "options": [
+        "01 tháng",
+        "02 tháng",
+        "03 tháng",
+        "04 tháng"
+      ],
+      "answer": 1,
+      "explain": "Khoản 1 Điều 139.",
+      "basis": "Điều 139 BLLĐ 2019 (VBHN 18/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-18-VBHN-VPQH-2026-Bo-luat-lao-dong-695336.aspx"
+    },
+    {
+      "q": "Lao động chưa thành niên là người lao động bao nhiêu tuổi?",
+      "options": [
+        "Chưa đủ 15 tuổi",
+        "Chưa đủ 16 tuổi",
+        "Chưa đủ 18 tuổi",
+        "Chưa đủ 20 tuổi"
+      ],
+      "answer": 2,
+      "explain": "Khoản 1 Điều 143.",
+      "basis": "Điều 143 BLLĐ 2019 (VBHN 18/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-18-VBHN-VPQH-2026-Bo-luat-lao-dong-695336.aspx"
+    },
+    {
+      "q": "Người từ đủ 13 đến chưa đủ 15 tuổi được làm công việc gì?",
+      "options": [
+        "Mọi công việc",
+        "Chỉ công việc nhẹ theo danh mục do Bộ trưởng ban hành",
+        "Không được làm việc",
+        "Công việc nặng nhọc nếu cha mẹ đồng ý"
+      ],
+      "answer": 1,
+      "explain": "Khoản 3 Điều 143.",
+      "basis": "Điều 143 BLLĐ 2019 (VBHN 18/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-18-VBHN-VPQH-2026-Bo-luat-lao-dong-695336.aspx"
+    },
+    {
+      "q": "Người lao động cao tuổi có quyền thỏa thuận điều gì?",
+      "options": [
+        "Rút ngắn thời giờ làm việc hằng ngày hoặc làm việc không trọn thời gian",
+        "Không ký HĐLĐ",
+        "Làm thêm giờ không giới hạn",
+        "Không đóng BHXH"
+      ],
+      "answer": 0,
+      "explain": "Khoản 2 Điều 148.",
+      "basis": "Điều 148 BLLĐ 2019 (VBHN 18/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-18-VBHN-VPQH-2026-Bo-luat-lao-dong-695336.aspx"
+    }
+  ]
+}

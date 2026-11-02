@@ -1,0 +1,115 @@
+{
+ "id": "giup-viec-gia-dinh",
+ "subject": "lao-dong-2",
+ "chapter": "v3",
+ "term": "Lao động là người giúp việc gia đình",
+ "definition": "Lao động là người giúp việc gia đình là người lao động làm thường xuyên các công việc trong gia đình của một hoặc nhiều hộ gia đình. Các công việc trong gia đình bao gồm công việc nội trợ, quản gia, chăm sóc trẻ em, chăm sóc người bệnh, chăm sóc người già, lái xe, làm vườn và các công việc khác cho hộ gia đình nhưng không liên quan đến hoạt động thương mại. (…) Người sử dụng lao động phải giao kết hợp đồng lao động bằng văn bản với lao động là người giúp việc gia đình. Thời hạn của hợp đồng lao động đối với lao động là người giúp việc gia đình do hai bên thỏa thuận. Một bên có quyền đơn phương chấm dứt hợp đồng lao động bất kỳ khi nào nhưng phải báo trước ít nhất 15 ngày.",
+ "plain": "Dấu hiệu: làm THƯỜNG XUYÊN; công việc TRONG GIA ĐÌNH (nội trợ, quản gia, chăm trẻ, chăm người bệnh, người già, lái xe, làm vườn); KHÔNG LIÊN QUAN HOẠT ĐỘNG THƯƠNG MẠI (người phụ bán hàng tại cửa hàng của gia đình không phải người giúp việc gia đình). Hợp đồng: BẮT BUỘC văn bản; thời hạn do thỏa thuận; mỗi bên được đơn phương chấm dứt BẤT KỲ KHI NÀO, chỉ cần báo trước ít nhất 15 NGÀY (khác HĐLĐ thông thường cần căn cứ). Thỏa thuận về trả lương, giờ làm, chỗ ở (khoản 3).",
+ "example": "Gia đình bà P thuê chị Q chăm cụ ông và nấu ăn hằng ngày: phải ký HĐLĐ bằng văn bản; nếu muốn chấm dứt, bà P chỉ cần báo trước 15 ngày, không cần lý do.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 161; khoản 1, 2 Điều 162 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-18-VBHN-VPQH-2026-Bo-luat-lao-dong-695336.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nghiem-cam-voi-giup-viec",
+  "cho-thue-lai-lao-dong"
+ ],
+ "keywords": [
+  "làm thường xuyên",
+  "công việc trong gia đình",
+  "không liên quan hoạt động thương mại",
+  "báo trước ít nhất 15 ngày"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Công việc nào KHÔNG phải công việc của lao động là người giúp việc gia đình?",
+   "options": [
+    "Bán hàng tại cửa hàng kinh doanh của gia đình",
+    "Chăm sóc trẻ em",
+    "Lái xe cho gia đình",
+    "Làm vườn"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 161: không liên quan đến hoạt động thương mại.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 161 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Một bên muốn đơn phương chấm dứt HĐLĐ với người giúp việc gia đình phải làm gì?",
+   "options": [
+    "Báo trước ít nhất 15 ngày, không cần căn cứ",
+    "Có lý do chính đáng và báo trước 45 ngày",
+    "Được Tòa án cho phép",
+    "Bồi thường 2 tháng lương"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 162.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 162 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Người giúp việc gia đình",
+   "right": "Không phải người giúp việc gia đình",
+   "cases": [
+    {
+     "text": "Người chăm sóc người già tại nhà thường xuyên",
+     "answer": "left"
+    },
+    {
+     "text": "Nhân viên bán hàng tạp hóa của hộ kinh doanh",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 161."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Lao động là người giúp việc gia đình là người lao động làm {{thường xuyên}} các công việc trong gia đình, không liên quan đến hoạt động {{thương mại}}.",
+   "bank_extra": [
+    "thời vụ",
+    "sản xuất"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Một bên có quyền đơn phương chấm dứt hợp đồng lao động bất kỳ khi nào nhưng phải báo trước ít nhất {{15}} ngày.",
+   "bank_extra": [
+    "30",
+    "45"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hợp đồng lao động với người giúp việc gia đình có thể giao kết bằng lời nói.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 162: phải giao kết bằng văn bản."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm và đặc điểm hợp đồng lao động với lao động là người giúp việc gia đình.",
+   "model": "Người làm thường xuyên các công việc trong gia đình (nội trợ, chăm trẻ, người già, lái xe, làm vườn…) không liên quan thương mại (Điều 161); HĐLĐ bằng văn bản, thời hạn thỏa thuận, mỗi bên đơn phương chấm dứt bất kỳ khi nào nhưng báo trước ít nhất 15 ngày (Điều 162).",
+   "keywords": [
+    "thường xuyên",
+    "thương mại",
+    "văn bản",
+    "15 ngày"
+   ]
+  }
+ ]
+}

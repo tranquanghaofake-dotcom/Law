@@ -1,0 +1,115 @@
+{
+ "id": "nguoi-lao-dong-cao-tuoi",
+ "subject": "lao-dong-2",
+ "chapter": "v2",
+ "term": "Người lao động cao tuổi",
+ "definition": "Người lao động cao tuổi là người tiếp tục lao động sau độ tuổi theo quy định tại khoản 2 Điều 169 của Bộ luật này. Người lao động cao tuổi có quyền thỏa thuận với người sử dụng lao động về việc rút ngắn thời giờ làm việc hằng ngày hoặc áp dụng chế độ làm việc không trọn thời gian.",
+ "plain": "Mốc xác định: ĐỦ TUỔI NGHỈ HƯU theo khoản 2 Điều 169 (lộ trình đến 62 tuổi với nam năm 2028, 60 tuổi với nữ năm 2035) mà vẫn làm việc. Sử dụng (Điều 149): có thể thỏa thuận giao kết NHIỀU LẦN HĐLĐ XÁC ĐỊNH THỜI HẠN; người đang hưởng lương hưu vẫn được trả lương theo HĐLĐ ngoài lương hưu; không được làm công việc nặng nhọc, độc hại ảnh hưởng xấu tới sức khỏe, trừ trường hợp bảo đảm an toàn. Khác với người lao động là người khuyết tật (Điều 158–160) và lao động chưa thành niên.",
+ "example": "Ông N 63 tuổi đã nghỉ hưu, được công ty ký tiếp HĐLĐ 12 tháng làm cố vấn: ông vừa nhận lương hưu vừa nhận lương theo hợp đồng, có thể thỏa thuận làm 4 giờ/ngày.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, 2 Điều 148 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-18-VBHN-VPQH-2026-Bo-luat-lao-dong-695336.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "lao-dong-chua-thanh-nien",
+  "lao-dong-nuoc-ngoai"
+ ],
+ "keywords": [
+  "tiếp tục lao động sau tuổi nghỉ hưu",
+  "khoản 2 Điều 169",
+  "rút ngắn thời giờ làm việc",
+  "không trọn thời gian"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người lao động cao tuổi được xác định thế nào?",
+   "options": [
+    "Người tiếp tục lao động sau độ tuổi theo khoản 2 Điều 169 BLLĐ",
+    "Người từ đủ 55 tuổi",
+    "Người từ đủ 60 tuổi không phân biệt giới",
+    "Người từ đủ 75 tuổi"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 148.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 148 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người lao động cao tuổi có quyền thỏa thuận điều gì?",
+   "options": [
+    "Rút ngắn thời giờ làm việc hằng ngày hoặc làm việc không trọn thời gian",
+    "Không đóng thuế thu nhập",
+    "Tăng giờ làm thêm không giới hạn",
+    "Không phải ký HĐLĐ"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 148.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 148 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Người lao động cao tuổi",
+   "right": "Lao động chưa thành niên",
+   "cases": [
+    {
+     "text": "Tiếp tục làm việc sau tuổi nghỉ hưu",
+     "answer": "left"
+    },
+    {
+     "text": "Chưa đủ 18 tuổi",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 143, 148."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người lao động cao tuổi là người tiếp tục lao động sau độ tuổi theo quy định tại khoản {{2}} Điều {{169}} của Bộ luật Lao động.",
+   "bank_extra": [
+    "1",
+    "170"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người lao động cao tuổi có quyền thỏa thuận về việc rút ngắn thời giờ làm việc hằng ngày hoặc áp dụng chế độ làm việc {{không trọn thời gian}}.",
+   "bank_extra": [
+    "ban đêm",
+    "thêm giờ"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người đã nghỉ hưu không được giao kết hợp đồng lao động mới.",
+   "answer": false,
+   "explain": "Sai. Người lao động cao tuổi có thể tiếp tục làm việc, giao kết nhiều lần HĐLĐ xác định thời hạn (Điều 148, 149)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm và quyền đặc thù của người lao động cao tuổi.",
+   "model": "Người tiếp tục lao động sau độ tuổi theo khoản 2 Điều 169 BLLĐ (khoản 1 Điều 148); có quyền thỏa thuận rút ngắn thời giờ làm việc hoặc làm không trọn thời gian (khoản 2); Nhà nước khuyến khích sử dụng phù hợp sức khỏe (khoản 3).",
+   "keywords": [
+    "Điều 169",
+    "tiếp tục lao động",
+    "rút ngắn",
+    "không trọn thời gian"
+   ]
+  }
+ ]
+}

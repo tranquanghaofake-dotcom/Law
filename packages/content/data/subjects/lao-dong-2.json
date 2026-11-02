@@ -1,0 +1,79 @@
+{
+  "id": "lao-dong-2",
+  "title": "Luật Lao động 2 (lao động đặc thù)",
+  "short": "Lao động 2",
+  "chapters": [
+    {
+      "id": "v1",
+      "title": "Vấn đề 1. Cho thuê lại lao động",
+      "lessons": [
+        {
+          "id": "ldb1",
+          "title": "Cho thuê lại lao động",
+          "concepts": [
+            "cho-thue-lai-lao-dong",
+            "hop-dong-cho-thue-lai"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v2",
+      "title": "Vấn đề 2. Lao động nữ, lao động chưa thành niên và một số lao động khác",
+      "lessons": [
+        {
+          "id": "ldb2",
+          "title": "Lao động nữ, lao động chưa thành niên và một số lao động khác",
+          "concepts": [
+            "bao-ve-thai-san",
+            "nghi-thai-san",
+            "lao-dong-chua-thanh-nien",
+            "nguoi-lao-dong-cao-tuoi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v3",
+      "title": "Vấn đề 3. Lao động giúp việc gia đình",
+      "lessons": [
+        {
+          "id": "ldb3",
+          "title": "Lao động giúp việc gia đình",
+          "concepts": [
+            "giup-viec-gia-dinh",
+            "nghiem-cam-voi-giup-viec"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v4",
+      "title": "Vấn đề 4. Người lao động nước ngoài làm việc tại Việt Nam",
+      "lessons": [
+        {
+          "id": "ldb4",
+          "title": "Người lao động nước ngoài làm việc tại Việt Nam",
+          "concepts": [
+            "lao-dong-nuoc-ngoai",
+            "giay-phep-lao-dong"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v5",
+      "title": "Vấn đề 5. Người lao động Việt Nam đi làm việc ở nước ngoài theo hợp đồng",
+      "lessons": [
+        {
+          "id": "ldb5",
+          "title": "Người lao động Việt Nam đi làm việc ở nước ngoài theo hợp đồng",
+          "concepts": [
+            "nld-di-lam-viec-nuoc-ngoai",
+            "hinh-thuc-di-lam-viec-nuoc-ngoai"
+          ]
+        }
+      ]
+    }
+  ]
+}

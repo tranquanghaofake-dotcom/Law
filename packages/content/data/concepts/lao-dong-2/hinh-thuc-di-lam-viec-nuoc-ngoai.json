@@ -1,0 +1,115 @@
+{
+ "id": "hinh-thuc-di-lam-viec-nuoc-ngoai",
+ "subject": "lao-dong-2",
+ "chapter": "v5",
+ "term": "Các hình thức đi làm việc ở nước ngoài theo hợp đồng",
+ "definition": "Hợp đồng đưa người lao động Việt Nam đi làm việc ở nước ngoài ký với đơn vị sự nghiệp để thực hiện thỏa thuận quốc tế. Hợp đồng hoặc thỏa thuận bằng văn bản về việc đưa người lao động Việt Nam đi làm việc ở nước ngoài ký với doanh nghiệp, tổ chức, cá nhân sau đây: a) Doanh nghiệp Việt Nam hoạt động dịch vụ đưa người lao động Việt Nam đi làm việc ở nước ngoài theo hợp đồng; b) Doanh nghiệp Việt Nam trúng thầu, nhận thầu công trình, dự án ở nước ngoài; (…) Hợp đồng lao động do người lao động Việt Nam trực tiếp giao kết với người sử dụng lao động ở nước ngoài.",
+ "plain": "Ba hình thức: (1) qua ĐƠN VỊ SỰ NGHIỆP CÔNG LẬP thực hiện THỎA THUẬN QUỐC TẾ (ví dụ chương trình EPS với Hàn Quốc); (2) qua DOANH NGHIỆP, TỔ CHỨC, CÁ NHÂN Việt Nam: doanh nghiệp DỊCH VỤ (cần giấy phép, ký quỹ), doanh nghiệp trúng thầu, nhận thầu công trình ở nước ngoài, doanh nghiệp đưa đi đào tạo nâng cao tay nghề, tổ chức, cá nhân đầu tư ra nước ngoài; (3) người lao động TRỰC TIẾP giao kết HĐLĐ với người sử dụng lao động ở nước ngoài (phải đăng ký với cơ quan có thẩm quyền).",
+ "example": "Anh T tự tìm việc và ký HĐLĐ trực tiếp với một công ty ở Đức: đây là hình thức thứ ba (khoản 3 Điều 5), không qua doanh nghiệp dịch vụ.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 5 Luật Người lao động Việt Nam đi làm việc ở nước ngoài theo hợp đồng 2020 (69/2020/QH14)",
+  "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Luat-69-2020-QH14-Nguoi-lao-dong-Viet-Nam-lam-viec-o-nuoc-ngoai-theo-hop-dong-2020-439844.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nld-di-lam-viec-nuoc-ngoai"
+ ],
+ "keywords": [
+  "đơn vị sự nghiệp – thỏa thuận quốc tế",
+  "doanh nghiệp dịch vụ",
+  "trúng thầu công trình ở nước ngoài",
+  "trực tiếp giao kết"
+ ],
+ "note": "Luật 69/2020/QH14 có hiệu lực từ 01/01/2022, thay thế Luật 72/2006/QH11; chưa tìm thấy văn bản sửa đổi (kiểm tra 02/11/2026).",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hình thức nào là người lao động trực tiếp đi làm việc ở nước ngoài?",
+   "options": [
+    "Hợp đồng lao động do người lao động trực tiếp giao kết với người sử dụng lao động ở nước ngoài",
+    "Hợp đồng với doanh nghiệp dịch vụ",
+    "Hợp đồng với đơn vị sự nghiệp",
+    "Hợp đồng với doanh nghiệp trúng thầu"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 5.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 5 Luật Người lao động Việt Nam đi làm việc ở nước ngoài theo hợp đồng 2020 (69/2020/QH14)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hợp đồng đưa người lao động đi làm việc ở nước ngoài ký với đơn vị sự nghiệp nhằm mục đích gì?",
+   "options": [
+    "Thực hiện thỏa thuận quốc tế",
+    "Kinh doanh dịch vụ việc làm",
+    "Thực hiện dự án đầu tư",
+    "Đi du học"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 5.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 5 Luật Người lao động Việt Nam đi làm việc ở nước ngoài theo hợp đồng 2020 (69/2020/QH14)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Qua doanh nghiệp, tổ chức, cá nhân (khoản 2)",
+   "right": "Trực tiếp giao kết (khoản 3)",
+   "cases": [
+    {
+     "text": "Doanh nghiệp dịch vụ đưa người lao động đi Nhật",
+     "answer": "left"
+    },
+    {
+     "text": "Tự ký HĐLĐ với công ty ở Đức",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 5."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hợp đồng đưa người lao động Việt Nam đi làm việc ở nước ngoài ký với {{đơn vị sự nghiệp}} để thực hiện {{thỏa thuận quốc tế}}.",
+   "bank_extra": [
+    "doanh nghiệp tư nhân",
+    "hợp đồng thương mại"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hợp đồng lao động do người lao động Việt Nam {{trực tiếp}} giao kết với người sử dụng lao động ở {{nước ngoài}}.",
+   "bank_extra": [
+    "gián tiếp",
+    "Việt Nam"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Doanh nghiệp Việt Nam trúng thầu công trình ở nước ngoài được đưa người lao động đi làm việc theo Luật 69/2020/QH14.",
+   "answer": true,
+   "explain": "Đúng. Điểm b khoản 2 Điều 5."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Kể các hình thức người lao động Việt Nam đi làm việc ở nước ngoài theo hợp đồng.",
+   "model": "Hợp đồng với đơn vị sự nghiệp thực hiện thỏa thuận quốc tế; hợp đồng với doanh nghiệp dịch vụ, doanh nghiệp trúng thầu, nhận thầu, doanh nghiệp đưa đi đào tạo, tổ chức, cá nhân đầu tư ra nước ngoài; HĐLĐ trực tiếp giao kết với người sử dụng lao động ở nước ngoài (Điều 5).",
+   "keywords": [
+    "đơn vị sự nghiệp",
+    "doanh nghiệp dịch vụ",
+    "trúng thầu",
+    "trực tiếp"
+   ]
+  }
+ ]
+}

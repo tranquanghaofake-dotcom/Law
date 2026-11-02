@@ -1,0 +1,116 @@
+{
+ "id": "lao-dong-nuoc-ngoai",
+ "subject": "lao-dong-2",
+ "chapter": "v4",
+ "term": "Điều kiện người lao động nước ngoài làm việc tại Việt Nam",
+ "definition": "Người lao động nước ngoài làm việc tại Việt Nam là người có quốc tịch nước ngoài và phải đáp ứng các điều kiện sau đây: a) Đủ 18 tuổi trở lên và có năng lực hành vi dân sự đầy đủ; b) Có trình độ chuyên môn, kỹ thuật, tay nghề, kinh nghiệm làm việc; có đủ sức khỏe theo quy định của Bộ trưởng Bộ Y tế; c) Không phải là người đang trong thời gian chấp hành hình phạt hoặc chưa được xóa án tích hoặc đang trong thời gian bị truy cứu trách nhiệm hình sự theo quy định của pháp luật nước ngoài hoặc pháp luật Việt Nam; d) Có giấy phép lao động do cơ quan nhà nước có thẩm quyền của Việt Nam cấp, trừ trường hợp quy định tại Điều 154 của Bộ luật này.",
+ "plain": "Bốn điều kiện: đủ 18 tuổi, năng lực hành vi dân sự đầy đủ; có trình độ, tay nghề, kinh nghiệm, sức khỏe; không đang chấp hành hình phạt, chưa xóa án tích hoặc bị truy cứu TNHS; có GIẤY PHÉP LAO ĐỘNG (trừ trường hợp miễn tại Điều 154, ví dụ chủ sở hữu, thành viên góp vốn có giá trị theo quy định của Chính phủ; người nước ngoài kết hôn với người Việt Nam và sinh sống tại Việt Nam…). Thời hạn HĐLĐ không vượt quá thời hạn giấy phép lao động (khoản 2). Người sử dụng lao động chỉ được tuyển người nước ngoài làm vị trí quản lý, điều hành, chuyên gia, lao động kỹ thuật mà lao động Việt Nam chưa đáp ứng (Điều 152).",
+ "example": "Công ty Việt Nam tuyển một kỹ sư Hàn Quốc 30 tuổi: kỹ sư phải có giấy phép lao động; HĐLĐ không được dài hơn thời hạn giấy phép (tối đa 02 năm).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 151 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-18-VBHN-VPQH-2026-Bo-luat-lao-dong-695336.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "giay-phep-lao-dong",
+  "nld-di-lam-viec-nuoc-ngoai",
+  "cho-thue-lai-lao-dong"
+ ],
+ "keywords": [
+  "đủ 18 tuổi",
+  "trình độ, tay nghề, sức khỏe",
+  "không có án tích, không bị truy cứu",
+  "có giấy phép lao động"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Điều kiện nào là điều kiện để người lao động nước ngoài làm việc tại Việt Nam?",
+   "options": [
+    "Có giấy phép lao động do cơ quan có thẩm quyền của Việt Nam cấp, trừ trường hợp miễn",
+    "Có quốc tịch Việt Nam",
+    "Từ đủ 15 tuổi",
+    "Có tài sản tại Việt Nam"
+   ],
+   "answer": 0,
+   "explain": "Điểm d khoản 1 Điều 151.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 151 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thời hạn HĐLĐ với người lao động nước ngoài được quy định thế nào?",
+   "options": [
+    "Không được vượt quá thời hạn của giấy phép lao động",
+    "Tối thiểu 05 năm",
+    "Luôn là HĐLĐ không xác định thời hạn",
+    "Tùy thỏa thuận không giới hạn"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 151.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 151 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Đủ điều kiện",
+   "right": "Không đủ điều kiện",
+   "cases": [
+    {
+     "text": "Kỹ sư 30 tuổi có trình độ, sức khỏe, có giấy phép lao động",
+     "answer": "left"
+    },
+    {
+     "text": "Người đang bị truy cứu trách nhiệm hình sự",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 151."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người lao động nước ngoài phải đủ {{18}} tuổi trở lên và có năng lực hành vi dân sự {{đầy đủ}}.",
+   "bank_extra": [
+    "15",
+    "một phần"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Có {{giấy phép lao động}} do cơ quan nhà nước có thẩm quyền của Việt Nam cấp, trừ trường hợp quy định tại Điều {{154}}.",
+   "bank_extra": [
+    "thị thực",
+    "157"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi người lao động nước ngoài làm việc tại Việt Nam đều phải có giấy phép lao động.",
+   "answer": false,
+   "explain": "Sai. Điểm d khoản 1 Điều 151 trừ trường hợp không thuộc diện cấp giấy phép tại Điều 154."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu điều kiện người lao động nước ngoài làm việc tại Việt Nam.",
+   "model": "Có quốc tịch nước ngoài; đủ 18 tuổi, năng lực hành vi dân sự đầy đủ; có trình độ, tay nghề, kinh nghiệm, đủ sức khỏe; không đang chấp hành hình phạt, chưa xóa án tích, bị truy cứu TNHS; có giấy phép lao động trừ trường hợp Điều 154 (khoản 1 Điều 151).",
+   "keywords": [
+    "18 tuổi",
+    "trình độ",
+    "án tích",
+    "giấy phép lao động"
+   ]
+  }
+ ]
+}

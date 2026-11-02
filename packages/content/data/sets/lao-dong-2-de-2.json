@@ -1,0 +1,139 @@
+{
+  "id": "lao-dong-2-de-2",
+  "group": "lao-dong",
+  "title": "Đề kiểm tra Lao động 2 – Giúp việc gia đình, lao động nước ngoài, đi làm việc ở nước ngoài",
+  "subtitle": "10 câu theo đề cương HLU, vấn đề 3–5",
+  "updated": "2026-11-01",
+  "questions": [
+    {
+      "q": "Công việc nào KHÔNG thuộc lao động giúp việc gia đình?",
+      "options": [
+        "Chăm sóc người già",
+        "Lái xe cho gia đình",
+        "Bán hàng tại cửa hàng của gia đình",
+        "Nội trợ"
+      ],
+      "answer": 2,
+      "explain": "Khoản 1 Điều 161.",
+      "basis": "Điều 161 BLLĐ 2019 (VBHN 18/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-18-VBHN-VPQH-2026-Bo-luat-lao-dong-695336.aspx"
+    },
+    {
+      "q": "HĐLĐ với lao động là người giúp việc gia đình phải có hình thức nào?",
+      "options": [
+        "Văn bản",
+        "Lời nói",
+        "Không cần hợp đồng",
+        "Công chứng"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 162.",
+      "basis": "Điều 162 BLLĐ 2019 (VBHN 18/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-18-VBHN-VPQH-2026-Bo-luat-lao-dong-695336.aspx"
+    },
+    {
+      "q": "Một bên đơn phương chấm dứt HĐLĐ giúp việc gia đình phải báo trước tối thiểu bao lâu?",
+      "options": [
+        "03 ngày",
+        "15 ngày",
+        "30 ngày",
+        "45 ngày"
+      ],
+      "answer": 1,
+      "explain": "Khoản 2 Điều 162.",
+      "basis": "Điều 162 BLLĐ 2019 (VBHN 18/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-18-VBHN-VPQH-2026-Bo-luat-lao-dong-695336.aspx"
+    },
+    {
+      "q": "Hành vi nào bị nghiêm cấm với người sử dụng lao động giúp việc gia đình?",
+      "options": [
+        "Thỏa thuận chỗ ở",
+        "Giữ giấy tờ tùy thân của người lao động",
+        "Trả lương theo tuần",
+        "Ký hợp đồng 6 tháng"
+      ],
+      "answer": 1,
+      "explain": "Khoản 3 Điều 165.",
+      "basis": "Điều 165 BLLĐ 2019 (VBHN 18/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-18-VBHN-VPQH-2026-Bo-luat-lao-dong-695336.aspx"
+    },
+    {
+      "q": "Người lao động nước ngoài làm việc tại Việt Nam phải từ đủ bao nhiêu tuổi?",
+      "options": [
+        "15",
+        "16",
+        "18",
+        "21"
+      ],
+      "answer": 2,
+      "explain": "Điểm a khoản 1 Điều 151.",
+      "basis": "Điều 151 BLLĐ 2019 (VBHN 18/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-18-VBHN-VPQH-2026-Bo-luat-lao-dong-695336.aspx"
+    },
+    {
+      "q": "Thời hạn tối đa của giấy phép lao động?",
+      "options": [
+        "01 năm",
+        "02 năm",
+        "03 năm",
+        "05 năm"
+      ],
+      "answer": 1,
+      "explain": "Điều 155.",
+      "basis": "Điều 155 BLLĐ 2019 (VBHN 18/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-18-VBHN-VPQH-2026-Bo-luat-lao-dong-695336.aspx"
+    },
+    {
+      "q": "Giấy phép lao động được gia hạn mấy lần?",
+      "options": [
+        "Không được gia hạn",
+        "Một lần",
+        "Hai lần",
+        "Không giới hạn"
+      ],
+      "answer": 1,
+      "explain": "Điều 155.",
+      "basis": "Điều 155 BLLĐ 2019 (VBHN 18/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-18-VBHN-VPQH-2026-Bo-luat-lao-dong-695336.aspx"
+    },
+    {
+      "q": "Thời hạn HĐLĐ với người lao động nước ngoài?",
+      "options": [
+        "Không vượt quá thời hạn giấy phép lao động",
+        "Tối thiểu 03 năm",
+        "Không xác định thời hạn",
+        "Do Bộ trưởng quyết định"
+      ],
+      "answer": 0,
+      "explain": "Khoản 2 Điều 151.",
+      "basis": "Điều 151 BLLĐ 2019 (VBHN 18/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-18-VBHN-VPQH-2026-Bo-luat-lao-dong-695336.aspx"
+    },
+    {
+      "q": "Người lao động Việt Nam đi làm việc ở nước ngoài theo hợp đồng phải từ đủ bao nhiêu tuổi?",
+      "options": [
+        "15",
+        "16",
+        "18",
+        "20"
+      ],
+      "answer": 2,
+      "explain": "Khoản 1 Điều 3.",
+      "basis": "Điều 3 Luật 69/2020/QH14",
+      "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Luat-69-2020-QH14-Nguoi-lao-dong-Viet-Nam-lam-viec-o-nuoc-ngoai-theo-hop-dong-2020-439844.aspx"
+    },
+    {
+      "q": "Hình thức nào thuộc Điều 5 Luật 69/2020/QH14?",
+      "options": [
+        "Hợp đồng lao động do người lao động trực tiếp giao kết với người sử dụng lao động ở nước ngoài",
+        "Hợp đồng du lịch",
+        "Hợp đồng du học tự túc",
+        "Hợp đồng mua bán hàng hóa"
+      ],
+      "answer": 0,
+      "explain": "Khoản 3 Điều 5.",
+      "basis": "Điều 5 Luật 69/2020/QH14",
+      "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Luat-69-2020-QH14-Nguoi-lao-dong-Viet-Nam-lam-viec-o-nuoc-ngoai-theo-hop-dong-2020-439844.aspx"
+    }
+  ]
+}

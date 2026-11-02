@@ -1,0 +1,115 @@
+{
+ "id": "bao-ve-thai-san",
+ "subject": "lao-dong-2",
+ "chapter": "v2",
+ "term": "Bảo vệ thai sản đối với lao động nữ",
+ "definition": "Người sử dụng lao động không được sử dụng người lao động làm việc ban đêm, làm thêm giờ và đi công tác xa trong trường hợp sau đây: a) Mang thai từ tháng thứ 07 hoặc từ tháng thứ 06 nếu làm việc ở vùng cao, vùng sâu, vùng xa, biên giới, hải đảo; b) Đang nuôi con dưới 12 tháng tuổi, trừ trường hợp được người lao động đồng ý.",
+ "plain": "Các bảo vệ chính (Điều 137): cấm làm đêm, thêm giờ, đi công tác xa khi mang thai từ tháng 7 (tháng 6 ở vùng khó khăn) hoặc nuôi con dưới 12 tháng (trừ khi người lao động đồng ý); chuyển việc nhẹ hơn hoặc giảm 01 giờ/ngày khi làm nghề nặng nhọc, độc hại; KHÔNG được SA THẢI, đơn phương chấm dứt HĐLĐ vì lý do kết hôn, mang thai, nghỉ thai sản, nuôi con dưới 12 tháng (khoản 3); HĐLĐ hết hạn khi đang mang thai, nuôi con dưới 12 tháng thì được ưu tiên giao kết mới; được nghỉ 60 phút/ngày khi nuôi con dưới 12 tháng (khoản 4). Lưu ý: khoản 1 dùng từ \"người lao động\", không chỉ \"lao động nữ\"; lao động nữ hành kinh được nghỉ 30 phút/ngày (khoản 4).",
+ "example": "Chị K mang thai tháng thứ 7, công ty yêu cầu làm ca đêm: trái khoản 1 Điều 137 (không phụ thuộc chị có đồng ý hay không, vì ngoại lệ \"được người lao động đồng ý\" chỉ áp dụng cho trường hợp nuôi con dưới 12 tháng).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 137 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-18-VBHN-VPQH-2026-Bo-luat-lao-dong-695336.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nghi-thai-san",
+  "lao-dong-chua-thanh-nien"
+ ],
+ "keywords": [
+  "từ tháng thứ 07",
+  "tháng thứ 06 nếu vùng khó khăn",
+  "nuôi con dưới 12 tháng",
+  "không làm đêm, thêm giờ, công tác xa"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người lao động mang thai từ tháng thứ mấy (làm việc ở đồng bằng) thì không được làm đêm, thêm giờ, đi công tác xa?",
+   "options": [
+    "Tháng thứ 07",
+    "Tháng thứ 05",
+    "Tháng thứ 03",
+    "Tháng thứ 08"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 137.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 137 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người lao động đang nuôi con dưới 12 tháng tuổi có thể làm thêm giờ khi nào?",
+   "options": [
+    "Khi người lao động đồng ý",
+    "Không bao giờ",
+    "Khi người sử dụng lao động yêu cầu",
+    "Khi công đoàn đồng ý"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 1 Điều 137.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 137 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Không được làm đêm, thêm giờ (không có ngoại lệ đồng ý)",
+   "right": "Được làm nếu người lao động đồng ý",
+   "cases": [
+    {
+     "text": "Mang thai tháng thứ 8 làm việc ở thành phố",
+     "answer": "left"
+    },
+    {
+     "text": "Nuôi con 8 tháng tuổi",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 137."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Không được sử dụng người lao động mang thai từ tháng thứ {{07}} hoặc từ tháng thứ {{06}} nếu làm việc ở vùng cao, vùng sâu, vùng xa, biên giới, hải đảo làm việc ban đêm.",
+   "bank_extra": [
+    "05",
+    "04"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đang nuôi con dưới {{12}} tháng tuổi, trừ trường hợp được {{người lao động}} đồng ý.",
+   "bank_extra": [
+    "24",
+    "công đoàn"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người sử dụng lao động được sa thải lao động nữ vì lý do mang thai nếu có lý do kinh doanh chính đáng.",
+   "answer": false,
+   "explain": "Sai. Khoản 3 Điều 137: không được sa thải, đơn phương chấm dứt HĐLĐ vì lý do kết hôn, mang thai, nghỉ thai sản, nuôi con dưới 12 tháng tuổi."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các biện pháp bảo vệ thai sản đối với người lao động.",
+   "model": "Không làm đêm, thêm giờ, công tác xa khi mang thai từ tháng thứ 07 (06 ở vùng khó khăn) hoặc nuôi con dưới 12 tháng (trừ khi đồng ý); chuyển việc nhẹ hơn hoặc giảm 01 giờ làm việc; không bị sa thải, đơn phương chấm dứt vì mang thai, nghỉ thai sản, nuôi con nhỏ (Điều 137).",
+   "keywords": [
+    "tháng thứ 07",
+    "12 tháng",
+    "sa thải",
+    "giảm 01 giờ"
+   ]
+  }
+ ]
+}

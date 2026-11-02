@@ -1,0 +1,116 @@
+{
+ "id": "nld-di-lam-viec-nuoc-ngoai",
+ "subject": "lao-dong-2",
+ "chapter": "v5",
+ "term": "Người lao động Việt Nam đi làm việc ở nước ngoài theo hợp đồng",
+ "definition": "Người lao động Việt Nam đi làm việc ở nước ngoài theo hợp đồng là công dân Việt Nam từ đủ 18 tuổi trở lên cư trú tại Việt Nam đi làm việc ở nước ngoài theo quy định của Luật này. Người sử dụng lao động ở nước ngoài là doanh nghiệp, tổ chức, cá nhân trực tiếp thuê mướn, sử dụng người lao động Việt Nam làm việc cho mình ở nước ngoài theo hợp đồng lao động.",
+ "plain": "Chủ thể: CÔNG DÂN VIỆT NAM, TỪ ĐỦ 18 TUỔI, CƯ TRÚ TẠI VIỆT NAM. Khác người lao động nước ngoài làm việc tại Việt Nam (BLLĐ Điều 151). Quyền chính (Điều 6): được cung cấp thông tin, tư vấn; hưởng lương, BHXH, quyền lợi theo hợp đồng; được bảo hộ; đơn phương chấm dứt hợp đồng khi bị ngược đãi, cưỡng bức lao động, quấy rối tình dục hoặc có nguy cơ rõ ràng đe dọa trực tiếp tính mạng, sức khỏe; hưởng hỗ trợ từ Quỹ Hỗ trợ việc làm ngoài nước; khiếu nại, tố cáo, khởi kiện. Nghĩa vụ: tuân thủ pháp luật Việt Nam và nước tiếp nhận; hoàn thành khóa giáo dục định hướng; nộp tiền dịch vụ, ký quỹ theo luật; làm việc đúng nơi quy định…",
+ "example": "Chị S 20 tuổi, thường trú tại Nghệ An, ký hợp đồng với doanh nghiệp dịch vụ để sang Nhật làm việc: chị là người lao động Việt Nam đi làm việc ở nước ngoài theo hợp đồng theo Luật 69/2020/QH14.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, 2 Điều 3 Luật Người lao động Việt Nam đi làm việc ở nước ngoài theo hợp đồng 2020 (69/2020/QH14)",
+  "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Luat-69-2020-QH14-Nguoi-lao-dong-Viet-Nam-lam-viec-o-nuoc-ngoai-theo-hop-dong-2020-439844.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hinh-thuc-di-lam-viec-nuoc-ngoai",
+  "lao-dong-nuoc-ngoai"
+ ],
+ "keywords": [
+  "công dân Việt Nam",
+  "từ đủ 18 tuổi",
+  "cư trú tại Việt Nam",
+  "người sử dụng lao động ở nước ngoài"
+ ],
+ "note": "Luật 69/2020/QH14 có hiệu lực từ 01/01/2022, thay thế Luật 72/2006/QH11; chưa tìm thấy văn bản sửa đổi (kiểm tra 02/11/2026).",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người lao động Việt Nam đi làm việc ở nước ngoài theo hợp đồng phải từ đủ bao nhiêu tuổi?",
+   "options": [
+    "18 tuổi",
+    "15 tuổi",
+    "16 tuổi",
+    "21 tuổi"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 3 Luật Người lao động Việt Nam đi làm việc ở nước ngoài theo hợp đồng 2020 (69/2020/QH14)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai là \"người sử dụng lao động ở nước ngoài\" theo Luật 69/2020/QH14?",
+   "options": [
+    "Doanh nghiệp, tổ chức, cá nhân trực tiếp thuê mướn, sử dụng người lao động Việt Nam làm việc cho mình ở nước ngoài theo HĐLĐ",
+    "Doanh nghiệp dịch vụ đưa người lao động đi",
+    "Cơ quan đại diện Việt Nam ở nước ngoài",
+    "Bộ quản lý lao động"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 3 Luật Người lao động Việt Nam đi làm việc ở nước ngoài theo hợp đồng 2020 (69/2020/QH14)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Người lao động Việt Nam đi làm việc ở nước ngoài",
+   "right": "Người lao động nước ngoài làm việc tại Việt Nam",
+   "cases": [
+    {
+     "text": "Công dân Việt Nam cư trú tại Việt Nam",
+     "answer": "left"
+    },
+    {
+     "text": "Người có quốc tịch nước ngoài, cần giấy phép lao động",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 3 Luật 69/2020; Điều 151 BLLĐ."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người lao động Việt Nam đi làm việc ở nước ngoài theo hợp đồng là {{công dân Việt Nam}} từ đủ {{18}} tuổi trở lên cư trú tại Việt Nam.",
+   "bank_extra": [
+    "người nước ngoài",
+    "15"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người sử dụng lao động ở nước ngoài là doanh nghiệp, tổ chức, cá nhân {{trực tiếp}} thuê mướn, sử dụng người lao động Việt Nam làm việc cho mình ở nước ngoài theo {{hợp đồng lao động}}.",
+   "bank_extra": [
+    "gián tiếp",
+    "hợp đồng dịch vụ"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người 17 tuổi có thể đi làm việc ở nước ngoài theo Luật 69/2020/QH14.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 3: phải từ đủ 18 tuổi trở lên."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm người lao động Việt Nam đi làm việc ở nước ngoài theo hợp đồng và người sử dụng lao động ở nước ngoài.",
+   "model": "Công dân Việt Nam từ đủ 18 tuổi cư trú tại Việt Nam đi làm việc ở nước ngoài theo Luật 69/2020/QH14 (khoản 1 Điều 3); người sử dụng lao động ở nước ngoài là doanh nghiệp, tổ chức, cá nhân trực tiếp thuê mướn, sử dụng họ theo HĐLĐ (khoản 2).",
+   "keywords": [
+    "công dân Việt Nam",
+    "18 tuổi",
+    "cư trú",
+    "trực tiếp thuê mướn"
+   ]
+  }
+ ]
+}
