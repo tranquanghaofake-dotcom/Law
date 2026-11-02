@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { cardFor, CARD_DAYS, GLYPHS, TIERS } from '$lib/game/card';
+import { cardFor, justLit, CARD_DAYS, GLYPHS, TIERS } from '$lib/game/card';
 
 describe('thẻ chuyên cần', () => {
   it('chuỗi 0: thẻ tắt hết, không kỷ lục', () => {
@@ -40,5 +40,15 @@ describe('thẻ chuyên cần', () => {
       expect(c.glyphs).toHaveLength(GLYPHS);
       if (n > 0) expect(c.glyphs.filter((g) => g === c.tier).length).toBeGreaterThanOrEqual(Math.min(c.day, GLYPHS));
     }
+  });
+});
+
+describe('vừa thắp chuỗi', () => {
+  it('lần đầu chưa lưu: không chạy hiệu ứng', () => expect(justLit(5, null)).toBe(false));
+  it('chuỗi tăng so với lần xem trước: chạy hiệu ứng', () => expect(justLit(6, 5)).toBe(true));
+  it('không đổi, giảm hoặc về 0: không chạy', () => {
+    expect(justLit(5, 5)).toBe(false);
+    expect(justLit(1, 9)).toBe(true); // chuỗi mới bắt đầu lại sau khi đứt vẫn là vừa thắp
+    expect(justLit(0, 3)).toBe(false);
   });
 });

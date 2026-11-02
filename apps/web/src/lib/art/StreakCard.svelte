@@ -6,9 +6,9 @@
   // Thẻ chuyên cần — thẻ trơn bo tròn (không viền), 27 doodle nét đơn về pháp luật phủ kín nền, có hình phụ lấp khe, sáng dần theo ngày;
   // logo bông sen 8 cánh ôm cán cân (không phải logo VBF, không Quốc huy). Rê chuột: thẻ nghiêng 3D + vệt sáng theo chuột
   // (học kỹ thuật biến CSS theo con trỏ của pokemon-cards-css (GPL-3.0) và vanilla-tilt (MIT) — tự viết, không chép mã).
-  import { cardFor, TIER_NAMES, type Tier } from '$lib/game/card';
+  import { cardFor, justLit, TIER_NAMES, type Tier } from '$lib/game/card';
   import { CARD_GLYPHS } from './cardGlyphs';
-  let { count = 0, longest = 0, size = 'full' }: { count?: number; longest?: number; size?: 'full' | 'mini' } = $props();
+  let { count = 0, longest = 0, size = 'full', ignite = false }: { count?: number; longest?: number; size?: 'full' | 'mini'; ignite?: boolean } = $props();
   const c = $derived(cardFor(count, longest));
   const uid = `sc${++seq}`;
   // Nền doodle nét đơn phủ kín: 27 doodle pháp luật xếp 4 hàng so le (7 + 6 + 6 + 8), hai hàng giữa chừa chỗ logo;
@@ -62,20 +62,47 @@
   const caption = $derived([c.tier ? `${TIER_NAMES[c.tier]} · ngày ${c.day}/30` : 'Chưa bắt đầu chuỗi', `chuỗi ${count} ngày`, `kỷ lục ${Math.max(longest, count)} ngày${c.record ? ` (${TIER_NAMES[c.record]})` : ''}`].join(' · '));
   const lf = $derived(c.logo ? `url(#${uid}-lotus)` : `url(#${uid}-ash)`);
   const lg = $derived(c.logo ? FIRE[c.logo] : null);
-  // nghiêng theo chuột
+  // Rê chuột: độ nghiêng chạy theo lò xo (mỗi khung hình tiến 12% về đích) nên mượt, có quán tính; lớp doodle trôi ngược
+  // chiều (parallax), logo nổi lên. Rời chuột: trôi êm về giữa rồi dừng vòng lặp.
   let el: HTMLDivElement | undefined = $state();
-  let tilt = $state({ rx: 0, ry: 0, mx: 50, my: 50, on: false });
+  let on = $state(false);
+  let pos = $state({ x: 0.5, y: 0.5 });
+  let target = { x: 0.5, y: 0.5 };
+  let raf = 0;
+  function step() {
+    const nx = pos.x + (target.x - pos.x) * 0.12, ny = pos.y + (target.y - pos.y) * 0.12;
+    pos = { x: nx, y: ny };
+    raf = Math.abs(target.x - nx) + Math.abs(target.y - ny) > 0.001 ? requestAnimationFrame(step) : 0;
+  }
+  const kick = () => { if (!raf && typeof requestAnimationFrame !== 'undefined') raf = requestAnimationFrame(step); };
   function move(e: PointerEvent) {
     if (size === 'mini' || !el) return;
     const b = el.getBoundingClientRect();
-    const px = (e.clientX - b.left) / b.width, py = (e.clientY - b.top) / b.height;
-    tilt = { rx: (0.5 - py) * 14, ry: (px - 0.5) * 18, mx: px * 100, my: py * 100, on: true };
+    target = { x: (e.clientX - b.left) / b.width, y: (e.clientY - b.top) / b.height }; on = true; kick();
   }
-  const leave = () => (tilt = { rx: 0, ry: 0, mx: 50, my: 50, on: false });
+  function leave() { target = { x: 0.5, y: 0.5 }; on = false; kick(); }
+  $effect(() => () => { if (raf) cancelAnimationFrame(raf); });
+  const tilt = $derived({ rx: (0.5 - pos.y) * 14, ry: (pos.x - 0.5) * 18, mx: pos.x * 100, my: pos.y * 100, px: (pos.x - 0.5) * 2, py: (pos.y - 0.5) * 2 });
+
+  // Vừa thắp chuỗi: so với chuỗi đã xem lần trước (localStorage, chỉ là tiện ích hiển thị) → tia lửa bay từ logo tới
+  // ký hoạ mới, ký hoạ bùng cháy, sóng lửa lan ra; ngày không có ký hoạ mới (28–30) thì sóng lớn quanh logo. `ignite` ép chạy.
+  const SEEN = 'll-card-seen';
+  let lighting = $state(false);
+  $effect(() => {
+    if (size === 'mini') return;
+    let seen: number | null = null;
+    try { const v = localStorage.getItem(SEEN); seen = v === null ? null : Number(v); localStorage.setItem(SEEN, String(count)); } catch { /* bỏ qua */ }
+    if (!(ignite || justLit(count, seen))) return;
+    lighting = true;
+    const t = setTimeout(() => (lighting = false), 2600);
+    return () => clearTimeout(t);
+  });
+  const newest = $derived(c.day >= 1 && c.day <= 27 ? order[c.day - 1] : -1);
+  const spark = $derived(newest >= 0 ? { x: doodles[newest].x, y: doodles[newest].y } : { x: 428, y: 262 });
 </script>
 
-<div class="sc-wrap {size}" class:on={tilt.on} bind:this={el} onpointermove={move} onpointerleave={leave} role="img" aria-label={label}
-  style="--rx:{tilt.rx}deg; --ry:{tilt.ry}deg; --mx:{tilt.mx}%; --my:{tilt.my}%">
+<div class="sc-wrap {size}" class:on class:lighting bind:this={el} onpointermove={move} onpointerleave={leave} role="img" aria-label={label}
+  style="--rx:{tilt.rx.toFixed(2)}deg; --ry:{tilt.ry.toFixed(2)}deg; --mx:{tilt.mx.toFixed(1)}%; --my:{tilt.my.toFixed(1)}%; --px:{tilt.px.toFixed(3)}; --py:{tilt.py.toFixed(3)}">
   <svg class="streak-card {size} tier-{c.tier ?? 'none'}" class:burst={c.burst} viewBox="0 0 856 540" aria-hidden="true" focusable="false">
     <defs>
       <radialGradient id="{uid}-bg" cx=".3" cy=".2" r="1.1"><stop offset="0" stop-color="#34343a" /><stop offset=".55" stop-color="#1b1b20" /><stop offset="1" stop-color="#0d0d10" /></radialGradient>
@@ -113,7 +140,7 @@
     <!-- quầng màu lửa mờ phía sau (đậm dần theo ngày) -->
     {#if cur}<ellipse class="cg-aura" cx="428" cy="268" rx={170 + c.day * 7} ry={110 + c.day * 4} fill="url(#{uid}-aura)" opacity={0.2 + c.day * 0.006} />{/if}
     <!-- nền doodle: 27 hình pháp luật sáng dần theo ngày + hình phụ lấp khe; nét rung nhẹ như vẽ tay; mờ quanh logo -->
-    <g mask="url(#{uid}-hole)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <g class="cg-par-bg" mask="url(#{uid}-hole)" fill="none" stroke-linecap="round" stroke-linejoin="round">
       <g filter="url(#{uid}-hand)">
         <g stroke="url(#{uid}-gold)" stroke-width=".9" opacity=".13">
           {#each fillers as fl, i (i)}<path d={fl.d} transform="translate({fl.x.toFixed(1)} {fl.y.toFixed(1)}) rotate({fl.rot.toFixed(0)}) scale(1.5)" />{/each}
@@ -157,7 +184,7 @@
       {/if}
     </g>
     <!-- huy hiệu: xám khi chưa thắp; ngày 29 tia điện tụ về; ngày 30 thắp cuối cùng với vòng lửa cháy quanh đĩa -->
-    <g transform="translate(428 262)" class="cg-logo" class:lit={!!c.logo} class:charge={!!c.charge}>
+    <g class="cg-par-fg" class:born={!!c.logo}><g transform="translate(428 262)" class="cg-logo" class:lit={!!c.logo} class:charge={!!c.charge}>
       <circle r="112" fill="#0f0f12" opacity=".75" filter="url(#{uid}-soft)" />
       {#if lg}<circle class="cg-ring" r="106" fill="none" stroke={lg.glow} stroke-width="7" opacity=".8" filter="url(#{uid}-flame)" />{/if}
       {#if c.charge}
@@ -186,7 +213,21 @@
         </g>
         <circle cy="-50" r="4.4" fill={lg ? lg.core : lf} />
       </g>
-    </g>
+    </g></g>
+    <!-- màn vừa thắp: tia lửa bay từ logo tới ký hoạ mới → bùng cháy + sóng lửa; ngày 28–30 thì sóng lớn quanh logo -->
+    {#if lighting && cur}
+      <g class="cg-light" fill="none" pointer-events="none">
+        {#if newest >= 0}
+          <circle class="cg-spark tail" cx="428" cy="262" r="10" fill={cur.glow} opacity=".6" filter="url(#{uid}-soft)" style="--dx:{(spark.x - 428).toFixed(1)}px; --dy:{(spark.y - 262).toFixed(1)}px" />
+          <circle class="cg-spark" cx="428" cy="262" r="5" fill={cur.core} filter="url(#{uid}-hot)" style="--dx:{(spark.x - 428).toFixed(1)}px; --dy:{(spark.y - 262).toFixed(1)}px" />
+          <circle class="cg-flash" cx={spark.x.toFixed(1)} cy={spark.y.toFixed(1)} r="46" fill={cur.glow} filter="url(#{uid}-soft)" />
+          <circle class="cg-wave" cx={spark.x.toFixed(1)} cy={spark.y.toFixed(1)} r="40" stroke={cur.mid} stroke-width="3" filter="url(#{uid}-hot)" />
+        {:else}
+          <circle class="cg-flash big" cx="428" cy="262" r="130" fill={cur.glow} filter="url(#{uid}-soft)" />
+          <circle class="cg-wave big" cx="428" cy="262" r="110" stroke={cur.mid} stroke-width="4" filter="url(#{uid}-hot)" />
+        {/if}
+      </g>
+    {/if}
     <!-- viền sáng (ngày 29) chỉ là ánh sáng mềm quanh mép, không phải khung -->
     {#if c.border}
       {#if c.border === c.tier && c.day >= 28}<rect x="4" y="4" width="848" height="532" rx="37" fill="none" stroke={fire(c.border).glow} stroke-width="3.5" opacity=".75" filter="url(#{uid}-flame)" class="cg-border" />{/if}

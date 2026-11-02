@@ -198,6 +198,11 @@ Không vẽ Quốc huy, sao, vạch cấp hiệu hay biểu tượng ngành th�
 - Phân cấp ánh sáng (Hào: "chói và rối"): chỉ ký hoạ hôm nay có quầng lửa + tàn lửa; ký hoạ đã thắp khác âm ỉ (nét mảnh, mờ); viền lửa chỉ cháy ngày 28–30 của chu kỳ hiện tại; nền doodle và hình phụ mờ hơn; quầng nền nhẹ.
 - Chuyển động: chập chờn chậm, ký hoạ hôm nay bùng lên, tàn lửa bay, hoa văn huy hiệu xoay chậm, vòng lửa thở; tắt ở thẻ nhỏ và khi giảm chuyển động.
 
+### 3.14 Chuyển động khi rê chuột và khi vừa thắp chuỗi (Hào, 02/11/2026)
+
+- Rê chuột: độ nghiêng theo lò xo (requestAnimationFrame, tiến 12%/khung hình) thay vì bám tức thời; parallax — lớp doodle trôi ngược chiều, huy hiệu nổi lên; sáng dần khi rê vào.
+- Vừa thắp (`justLit(count, seen)`, `seen` lưu localStorage `ll-card-seen` — chỉ là tiện ích hiển thị; lần đầu chỉ ghi nhận): tia lửa bay từ huy hiệu tới ký hoạ mới → loé + sóng lửa → ký hoạ phóng lên rồi ổn định (~2,6 giây). Ngày 28–30: sóng lớn quanh huy hiệu, ngày 30 huy hiệu bùng lên. Giảm chuyển động: ẩn hẳn lớp hiệu ứng.
+
 ## 4. Dữ liệu
 - Store mới (IndexedDB): `books` (chapterId → cấp cao nhất, ngày đạt), `career` (nhánh đang chọn, chức danh đã đạt), `card` (kỷ lục màu). Migration từ dữ liệu cũ: tính sách từ `progress` hiện có. XP vẫn giữ, chỉ hiển thị phụ.
 - `game/rank.ts` (khoa cử, phẩm hàm) **giữ file và test, không còn hiển thị**. XP vẫn cộng và hiện phụ ở Hồ sơ. Bậc 6 đổi tên **Tinh thông**.

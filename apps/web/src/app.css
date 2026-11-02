@@ -104,6 +104,7 @@ button { font: inherit; color: inherit; }
 .reduced-motion *, .reduced-motion *::before, .reduced-motion *::after { animation: none !important; transition: none !important; }
 @media (prefers-reduced-motion: reduce) {
   :root:not(.motion-on) *, :root:not(.motion-on) *::before, :root:not(.motion-on) *::after { animation: none !important; transition: none !important; }
+  :root:not(.motion-on) .cg-light { display: none; }
 }
 
 /* ---- Thành phần chung ---- */
@@ -592,8 +593,8 @@ h1 { text-wrap: balance; }
 .legal-note { margin: 28px 0 8px; padding-top: 14px; border-top: 1px solid var(--line); line-height: 1.6; }
 
 /* ---- Thẻ chuyên cần: thẻ trơn, ký hoạ ẩn trên nền, nghiêng 3D theo chuột ---- */
-.sc-wrap { position: relative; display: block; width: 100%; border-radius: 4.7% / 7.4%; perspective: 900px; transform: perspective(900px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)); transition: transform .5s cubic-bezier(.2, .8, .2, 1), box-shadow .5s ease; box-shadow: 0 14px 30px rgba(0, 0, 0, .28), 0 2px 6px rgba(0, 0, 0, .2); will-change: transform; }
-.sc-wrap.on { transition: transform .08s linear, box-shadow .3s ease; box-shadow: 0 24px 44px rgba(0, 0, 0, .35), 0 4px 10px rgba(0, 0, 0, .25); }
+.sc-wrap { position: relative; display: block; width: 100%; border-radius: 4.7% / 7.4%; perspective: 900px; transform: perspective(900px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)); transition: box-shadow .5s ease; box-shadow: 0 14px 30px rgba(0, 0, 0, .28), 0 2px 6px rgba(0, 0, 0, .2); will-change: transform; }
+.sc-wrap.on { box-shadow: 0 24px 44px rgba(0, 0, 0, .35), 0 4px 10px rgba(0, 0, 0, .25); }
 .sc-wrap.mini { display: inline-block; width: 54px; flex: none; border-radius: 5px; box-shadow: 0 1px 3px rgba(0, 0, 0, .4); transform: none; }
 .streak-card { display: block; width: 100%; height: auto; border-radius: inherit; }
 .sc-glare { position: absolute; inset: 0; border-radius: inherit; pointer-events: none; mix-blend-mode: soft-light; opacity: 0; transition: opacity .4s ease;
@@ -619,7 +620,26 @@ h1 { text-wrap: balance; }
 .cg-bolts path { opacity: 0; animation: cgbolt 2.96s steps(1) infinite; }
 .cg-charge { animation: cgbreath 1.1s ease-in-out infinite alternate; }
 .cg-border { animation: cgflames 2.1s ease-in-out infinite alternate; }
-.sc-wrap.on .cg-flames, .sc-wrap.on .cg-ring { filter: brightness(1.25); }
+.cg-par-bg, .cg-par-fg { transition: filter .7s ease; }
+.cg-par-bg { transform: translate(calc(var(--px, 0) * -7px), calc(var(--py, 0) * -5px)); }
+.cg-par-fg { transform: translate(calc(var(--px, 0) * 6px), calc(var(--py, 0) * 4px)); }
+.sc-wrap.on .cg-par-bg { filter: brightness(1.15) saturate(1.1); }
+.sc-wrap.on .cg-par-fg { filter: brightness(1.12); }
+/* màn vừa thắp chuỗi */
+.cg-spark { animation: cgspark .75s cubic-bezier(.5, 0, .7, .4) both; }
+.cg-spark.tail { animation-delay: .04s; }
+.cg-wave, .cg-flash { transform-box: fill-box; transform-origin: center; opacity: 0; }
+.cg-wave { animation: cgwave 1s cubic-bezier(.2, .7, .3, 1) .7s both; }
+.cg-flash { animation: cgflash 1s ease-out .66s both; }
+.cg-wave.big, .cg-flash.big { animation-delay: .1s; }
+.sc-wrap.lighting .cg-glyph.now { animation: cgborn 1.1s cubic-bezier(.2, .9, .3, 1.2) .72s both, cgignite 2.2s ease-in-out 1.9s infinite; }
+.sc-wrap.lighting .cg-flames, .sc-wrap.lighting .cg-ember { animation: cgfadein .6s ease-out .8s both; }
+.sc-wrap.lighting .cg-par-fg.born { animation: cgborn 1.2s cubic-bezier(.2, .9, .3, 1.2) .1s both; transform-box: fill-box; transform-origin: center; }
+@keyframes cgspark { 0% { transform: translate(0, 0); opacity: 0; } 15% { opacity: 1; } 90% { transform: translate(var(--dx), var(--dy)); opacity: 1; } 100% { transform: translate(var(--dx), var(--dy)); opacity: 0; } }
+@keyframes cgwave { 0% { transform: scale(.2); opacity: 1; } 100% { transform: scale(2.4); opacity: 0; } }
+@keyframes cgflash { 0% { transform: scale(.4); opacity: 0; } 25% { opacity: .9; } 100% { transform: scale(1.6); opacity: 0; } }
+@keyframes cgborn { 0% { transform: scale(.4); opacity: 0; filter: brightness(3); } 60% { transform: scale(1.22); opacity: 1; filter: brightness(1.8); } 100% { transform: scale(1); filter: brightness(1); } }
+@keyframes cgfadein { from { opacity: 0; } to { opacity: 1; } }
 .sc-wrap.mini .streak-card * { animation: none !important; }
 .cg-burst { mix-blend-mode: soft-light; animation: cgburst 3s ease-in-out infinite alternate; }
 @keyframes cgflick { 0%, 100% { opacity: 1; } 40% { opacity: .85; } 70% { opacity: .95; } }

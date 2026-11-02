@@ -25,3 +25,9 @@ export function cardFor(count: number, longest: number): CardState {
   const glyphs = Array.from({ length: GLYPHS }, (_, i) => (i < day ? tier : prev));
   return { day, cycle, tier, prev, glyphs, logo: day >= 30 ? tier : prev, border: day >= 28 ? tier : prev, charge: day === 29 ? tier : null, burst: day === CARD_DAYS, record };
 }
+
+/** Có chạy hiệu ứng "vừa thắp" không: chuỗi khác 0 và khác lần xem trước (tăng, hoặc bắt đầu lại sau khi đứt).
+ *  `seen = null` (chưa từng lưu) → không chạy, chỉ ghi nhận. */
+export function justLit(count: number, seen: number | null): boolean {
+  return seen !== null && count > 0 && count !== seen;
+}
