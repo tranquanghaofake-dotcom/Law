@@ -9,8 +9,6 @@
   import { schemeFor } from './shelf';
   import { career, setBranch } from './career.svelte';
   import { LuyenLuatDB } from '$lib/store/db';
-  import { streakMedals } from '$lib/game/card';
-  import { header } from './header.svelte';
 
   if (!shelf.ready) refreshShelf();
   const cs = $derived(careerState(shelf.books));
@@ -51,7 +49,7 @@
 <section class="card wide career">
   <div class="career-grid">
     <div class="career-portrait">
-      <Portrait avatar={drawn} {accent} tier={t.tier} celebrate={celebrating} ondone={doneCelebrate} title={t.title} subtitle={`${earned.length} sách · ${earned.filter((b) => b.level === 3).length} cấp 3`} books={display} branch={career.branch} medals={streakMedals(Math.max(header.longest ?? 0, header.streak ?? 0))} l3={earned.filter((b) => b.level === 3).length} />
+      <Portrait avatar={drawn} {accent} tier={t.tier} celebrate={celebrating} ondone={doneCelebrate} title={t.title} subtitle={`${earned.length} sách · ${earned.filter((b) => b.level === 3).length} cấp 3`} books={display} />
       <div class="plaque">
         <p class="kicker">{t.tier ? TIER_NAMES[t.tier] : 'Khởi đầu'}</p>
         <p class="plaque-title">{t.title}</p>

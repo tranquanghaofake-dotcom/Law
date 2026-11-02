@@ -226,6 +226,12 @@ Không vẽ Quốc huy, sao, vạch cấp hiệu hay biểu tượng ngành th�
 - **Kỷ niệm chương vòng lửa** (`streakMedals`, theo chuỗi dài nhất): mỗi vòng 30 ngày tiến độ hoàn tất được một chương màu lửa của vòng đó, treo vách trái; vòng sau cấp cuối cộng dồn (×n).
 - **Giấy ghi nhận** cách điệu ở vách phải, ghi số sách cấp 3. Dùng chữ "Giấy ghi nhận", **không** dùng "Bằng khen" (hình thức khen thưởng chính thức của Nhà nước) để tránh hiểu nhầm.
 
+### 3.19 Quay lại: chỉ giữ giá (ma-nơ-canh), tập trung vẽ áo đẹp và chi tiết (Hào, 02/11/2026)
+
+- Hào: "không ổn, chỉ giữ lại giá treo". **Gỡ** đồ vật theo nhánh, kỷ niệm chương, giấy ghi nhận khỏi tủ (§3.18). File `art/ShowcaseProps.svelte` và hàm `streakMedals` (có test) **để lại, không dùng** — chờ Hào quyết xoá hay dùng sau.
+- `GarmentFlat` viết lại 3 lớp: mảnh vải → vân vải (twill cho vest/áo choàng, oxford cho sơ mi, mũi đan chữ V cho áo len, vệt bóng lụa cho áo dài) → chi tiết may.
+- Chi tiết: áo len dải đan thừng + bo gân; sơ mi chân cổ, lá cổ diễu, nẹp khuy, xẻ tay, măng sét 2 khuy, gấu lượn; vest mũi khâu tay dọc ve, lỗ cài hoa, túi viền + túi nắp, chiết ly, 4 khuy tay, cà vạt có lõm nút (vest xanh: cà vạt sọc; vest đen: khăn cài túi); kiểm sát túi ly hộp nắp ba mũi, khuy vàng; áo choàng cầu vai, ly xếp, tay rộng có nếp; áo dài đường raglan chéo, viền cổ vàng, xẻ tà lộ quần trắng, thêu sen. Cột ma-nơ-canh chỉ lộ dưới gấu.
+
 ## 4. Dữ liệu
 - Store mới (IndexedDB): `books` (chapterId → cấp cao nhất, ngày đạt), `career` (nhánh đang chọn, chức danh đã đạt), `card` (kỷ lục màu). Migration từ dữ liệu cũ: tính sách từ `progress` hiện có. XP vẫn giữ, chỉ hiển thị phụ.
 - `game/rank.ts` (khoa cử, phẩm hàm) **giữ file và test, không còn hiển thị**. XP vẫn cộng và hiện phụ ở Hồ sơ. Bậc 6 đổi tên **Tinh thông**.
