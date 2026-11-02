@@ -1,0 +1,118 @@
+{
+ "id": "to-chuc-tin-dung-phi-ngan-hang",
+ "subject": "ngan-hang",
+ "chapter": "v3",
+ "term": "Tổ chức tín dụng phi ngân hàng",
+ "definition": "Tổ chức tín dụng phi ngân hàng là tổ chức tín dụng được thực hiện một hoặc một số hoạt động ngân hàng theo quy định của Luật này, trừ hoạt động nhận tiền gửi của cá nhân và cung ứng dịch vụ thanh toán qua tài khoản của khách hàng. Các loại hình tổ chức tín dụng phi ngân hàng bao gồm công ty tài chính tổng hợp và công ty tài chính chuyên ngành.",
+ "plain": "Điểm khác ngân hàng: KHÔNG được NHẬN TIỀN GỬI CỦA CÁ NHÂN và KHÔNG CUNG ỨNG DỊCH VỤ THANH TOÁN QUA TÀI KHOẢN. Hai loại: CÔNG TY TÀI CHÍNH TỔNG HỢP và CÔNG TY TÀI CHÍNH CHUYÊN NGÀNH (hoạt động chính thuộc một trong các lĩnh vực bao thanh toán, tín dụng tiêu dùng, cho thuê tài chính — khoản 12). Hệ quả: tổ chức tín dụng phi ngân hàng không thuộc diện phải tham gia bảo hiểm tiền gửi, vì Luật Bảo hiểm tiền gửi chỉ bắt buộc tổ chức được nhận tiền gửi của cá nhân (Điều 6 Luật Bảo hiểm tiền gửi 2025).",
+ "example": "Một công ty tài chính tiêu dùng cho người mua điện thoại trả góp vay tiền (cấp tín dụng) nhưng không được mở tài khoản thanh toán hay nhận tiền gửi tiết kiệm của cá nhân.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 41 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-143-2026-VBHN-LQ-VPQH-Luat-Cac-to-chuc-tin-dung-729869.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "ngan-hang",
+  "to-chuc-tin-dung",
+  "nhan-tien-gui"
+ ],
+ "keywords": [
+  "phi ngân hàng",
+  "trừ nhận tiền gửi của cá nhân",
+  "thanh toán qua tài khoản",
+  "công ty tài chính tổng hợp",
+  "công ty tài chính chuyên ngành"
+ ],
+ "note": "Luật Các tổ chức tín dụng 32/2024/QH15 có hiệu lực từ 01/7/2024, thay thế Luật 47/2010/QH12 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 96/2025/QH15 (hiệu lực 15/10/2025) và Luật 23/2026/QH16 (hiệu lực 01/12/2026, chỉ bổ sung một điểm tại Điều 49) — các khoản Điều 4 được trích không bị sửa.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tổ chức tín dụng phi ngân hàng KHÔNG được thực hiện hoạt động nào?",
+   "options": [
+    "Nhận tiền gửi của cá nhân",
+    "Cho vay",
+    "Bao thanh toán",
+    "Cho thuê tài chính"
+   ],
+   "answer": 0,
+   "explain": "Khoản 41 Điều 4: trừ nhận tiền gửi của cá nhân và cung ứng dịch vụ thanh toán qua tài khoản.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 41 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Các loại hình tổ chức tín dụng phi ngân hàng?",
+   "options": [
+    "Công ty tài chính tổng hợp và công ty tài chính chuyên ngành",
+    "Quỹ tín dụng nhân dân và tổ chức tài chính vi mô",
+    "Ngân hàng chính sách và ngân hàng hợp tác xã",
+    "Công ty chứng khoán và công ty bảo hiểm"
+   ],
+   "answer": 0,
+   "explain": "Khoản 41 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 41 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Ngân hàng thương mại được làm",
+   "right": "Tổ chức tín dụng phi ngân hàng không được làm",
+   "cases": [
+    {
+     "text": "Mở tài khoản thanh toán cho khách hàng",
+     "answer": "left"
+    },
+    {
+     "text": "Nhận tiền gửi tiết kiệm của cá nhân",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 21, 41 Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tổ chức tín dụng phi ngân hàng được thực hiện một hoặc một số hoạt động ngân hàng, trừ hoạt động nhận tiền gửi của {{cá nhân}} và cung ứng dịch vụ thanh toán qua {{tài khoản}} của khách hàng.",
+   "bank_extra": [
+    "doanh nghiệp",
+    "thẻ cào"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Các loại hình tổ chức tín dụng phi ngân hàng bao gồm công ty tài chính {{tổng hợp}} và công ty tài chính {{chuyên ngành}}.",
+   "bank_extra": [
+    "vi mô",
+    "hợp tác xã"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Công ty tài chính được nhận tiền gửi tiết kiệm của cá nhân như ngân hàng thương mại.",
+   "answer": false,
+   "explain": "Sai. Khoản 41 Điều 4 loại trừ hoạt động nhận tiền gửi của cá nhân."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Phân biệt tổ chức tín dụng phi ngân hàng với ngân hàng.",
+   "model": "Ngân hàng có thể làm tất cả hoạt động ngân hàng (khoản 21); tổ chức tín dụng phi ngân hàng làm một hoặc một số, trừ nhận tiền gửi của cá nhân và cung ứng dịch vụ thanh toán qua tài khoản; gồm công ty tài chính tổng hợp, chuyên ngành (khoản 41 Điều 4).",
+   "keywords": [
+    "tất cả",
+    "trừ nhận tiền gửi của cá nhân",
+    "thanh toán qua tài khoản",
+    "công ty tài chính"
+   ]
+  }
+ ]
+}

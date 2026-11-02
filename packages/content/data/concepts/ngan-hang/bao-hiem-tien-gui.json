@@ -1,0 +1,118 @@
+{
+ "id": "bao-hiem-tien-gui",
+ "subject": "ngan-hang",
+ "chapter": "v3",
+ "term": "Bảo hiểm tiền gửi",
+ "definition": "Bảo hiểm tiền gửi là sự bảo đảm hoàn trả tiền gửi cho người được bảo hiểm tiền gửi trong hạn mức chi trả tiền bảo hiểm khi phát sinh nghĩa vụ trả tiền bảo hiểm theo quy định của Luật này. (…) Bảo hiểm tiền gửi là loại hình bảo hiểm bắt buộc theo quy định của Luật này.",
+ "plain": "Đặc điểm: BẮT BUỘC; chỉ bảo đảm hoàn trả TRONG HẠN MỨC chi trả; người được bảo hiểm là CÁ NHÂN có tiền gửi được bảo hiểm (khoản 2 Điều 4). Tổ chức tín dụng, chi nhánh ngân hàng nước ngoài được nhận tiền gửi của cá nhân PHẢI tham gia; NGÂN HÀNG CHÍNH SÁCH không phải tham gia (Điều 6). Hạn mức chi trả do THỐNG ĐỐC Ngân hàng Nhà nước quy định trong từng thời kỳ; trường hợp đặc biệt Thống đốc có thể quyết định chi trả vượt hạn mức (Điều 22). Tổ chức tham gia nộp phí bảo hiểm tiền gửi (khoản 5 Điều 4).",
+ "example": "Bà B gửi tiết kiệm bằng đồng Việt Nam tại ngân hàng X; nếu ngân hàng X phát sinh nghĩa vụ trả tiền bảo hiểm theo Luật, bà B được tổ chức bảo hiểm tiền gửi trả tiền tối đa bằng hạn mức Thống đốc quy định; phần vượt được giải quyết khi xử lý tài sản của ngân hàng.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 4; khoản 1 Điều 5 Luật Bảo hiểm tiền gửi 2025 (111/2025/QH15)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bao-hiem/Luat-Bao-hiem-tien-gui-2025-so-111-2025-QH15-667663.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tien-gui-duoc-bao-hiem",
+  "kiem-soat-dac-biet",
+  "nhan-tien-gui"
+ ],
+ "keywords": [
+  "bảo đảm hoàn trả",
+  "hạn mức chi trả",
+  "bắt buộc",
+  "người được bảo hiểm tiền gửi",
+  "phí bảo hiểm tiền gửi"
+ ],
+ "note": "Luật Bảo hiểm tiền gửi 111/2025/QH15 có hiệu lực từ 01/5/2026, thay thế Luật Bảo hiểm tiền gửi 06/2012/QH13 mà đề cương HLU 2021 còn dẫn.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Luật Bảo hiểm tiền gửi 2025, bảo hiểm tiền gửi là loại hình bảo hiểm gì?",
+   "options": [
+    "Bảo hiểm bắt buộc",
+    "Bảo hiểm tự nguyện",
+    "Bảo hiểm thương mại",
+    "Bảo hiểm xã hội"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 5.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 5 Luật Bảo hiểm tiền gửi 2025 (111/2025/QH15)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tổ chức nào KHÔNG phải tham gia bảo hiểm tiền gửi?",
+   "options": [
+    "Ngân hàng chính sách",
+    "Ngân hàng thương mại nhận tiền gửi của cá nhân",
+    "Quỹ tín dụng nhân dân nhận tiền gửi của cá nhân",
+    "Chi nhánh ngân hàng nước ngoài nhận tiền gửi của cá nhân"
+   ],
+   "answer": 0,
+   "explain": "Điều 6.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 6 Luật Bảo hiểm tiền gửi 2025 (111/2025/QH15)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Phải tham gia bảo hiểm tiền gửi",
+   "right": "Không phải tham gia",
+   "cases": [
+    {
+     "text": "Ngân hàng thương mại được nhận tiền gửi của cá nhân",
+     "answer": "left"
+    },
+    {
+     "text": "Ngân hàng chính sách",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 6."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bảo hiểm tiền gửi là sự bảo đảm hoàn trả tiền gửi cho người được bảo hiểm tiền gửi trong {{hạn mức}} chi trả tiền bảo hiểm; là loại hình bảo hiểm {{bắt buộc}}.",
+   "bank_extra": [
+    "toàn bộ",
+    "tự nguyện"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "{{Thống đốc}} Ngân hàng Nhà nước Việt Nam quy định hạn mức chi trả tiền bảo hiểm trong từng {{thời kỳ}}.",
+   "bank_extra": [
+    "Bộ trưởng Bộ Tài chính",
+    "hợp đồng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người gửi tiền luôn được tổ chức bảo hiểm tiền gửi trả lại toàn bộ số tiền gửi, không giới hạn.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 4: chỉ trong hạn mức chi trả; phần vượt giải quyết khi xử lý tài sản (trừ trường hợp đặc biệt Thống đốc quyết định chi trả vượt hạn mức — khoản 2 Điều 22)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm và đặc điểm của bảo hiểm tiền gửi theo Luật 2025.",
+   "model": "Sự bảo đảm hoàn trả tiền gửi cho người được bảo hiểm trong hạn mức chi trả khi phát sinh nghĩa vụ trả tiền bảo hiểm (khoản 1 Điều 4); là bảo hiểm bắt buộc (khoản 1 Điều 5); TCTD nhận tiền gửi của cá nhân phải tham gia, ngân hàng chính sách không phải tham gia (Điều 6); hạn mức do Thống đốc quy định (Điều 22).",
+   "keywords": [
+    "bảo đảm hoàn trả",
+    "hạn mức",
+    "bắt buộc",
+    "Thống đốc"
+   ]
+  }
+ ]
+}

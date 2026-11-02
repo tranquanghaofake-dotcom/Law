@@ -1,0 +1,117 @@
+{
+ "id": "tien-gui-duoc-bao-hiem",
+ "subject": "ngan-hang",
+ "chapter": "v3",
+ "term": "Tiền gửi được bảo hiểm",
+ "definition": "Tiền gửi được bảo hiểm là tiền gửi bằng đồng Việt Nam của cá nhân gửi tại tổ chức tham gia bảo hiểm tiền gửi dưới hình thức tiền gửi có kỳ hạn, tiền gửi không kỳ hạn, tiền gửi tiết kiệm, chứng chỉ tiền gửi và các hình thức tiền gửi khác theo quy định của pháp luật về các tổ chức tín dụng, trừ các loại tiền gửi quy định tại Điều 18 của Luật này.",
+ "plain": "Ba điều kiện: (1) bằng ĐỒNG VIỆT NAM — tiền gửi ngoại tệ không được bảo hiểm; (2) của CÁ NHÂN — tiền gửi của doanh nghiệp, tổ chức không được bảo hiểm; (3) gửi tại TỔ CHỨC THAM GIA bảo hiểm tiền gửi. Hình thức: có kỳ hạn, không kỳ hạn, tiết kiệm, CHỨNG CHỈ TIỀN GỬI… Loại trừ các khoản tại Điều 18 (ví dụ tiền gửi của người quản lý, người điều hành tại chính tổ chức đó).",
+ "example": "Anh C gửi 50.000 USD và 300 triệu đồng tại cùng một ngân hàng: chỉ 300 triệu đồng là tiền gửi được bảo hiểm; khoản USD không được bảo hiểm.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 17 Luật Bảo hiểm tiền gửi 2025 (111/2025/QH15)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bao-hiem/Luat-Bao-hiem-tien-gui-2025-so-111-2025-QH15-667663.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "bao-hiem-tien-gui",
+  "nhan-tien-gui"
+ ],
+ "keywords": [
+  "đồng Việt Nam",
+  "cá nhân",
+  "tổ chức tham gia bảo hiểm tiền gửi",
+  "chứng chỉ tiền gửi",
+  "trừ Điều 18"
+ ],
+ "note": "Luật Bảo hiểm tiền gửi 111/2025/QH15 có hiệu lực từ 01/5/2026, thay thế Luật Bảo hiểm tiền gửi 06/2012/QH13 mà đề cương HLU 2021 còn dẫn.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khoản tiền gửi nào là tiền gửi được bảo hiểm?",
+   "options": [
+    "Tiền gửi tiết kiệm bằng đồng Việt Nam của cá nhân tại ngân hàng thương mại",
+    "Tiền gửi bằng đô la Mỹ của cá nhân",
+    "Tiền gửi thanh toán của công ty cổ phần",
+    "Tiền mua cổ phiếu ngân hàng"
+   ],
+   "answer": 0,
+   "explain": "Điều 17.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 17 Luật Bảo hiểm tiền gửi 2025 (111/2025/QH15)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tiền gửi được bảo hiểm phải là tiền gửi của ai?",
+   "options": [
+    "Cá nhân",
+    "Doanh nghiệp",
+    "Cơ quan nhà nước",
+    "Tổ chức tín dụng khác"
+   ],
+   "answer": 0,
+   "explain": "Điều 17.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 17 Luật Bảo hiểm tiền gửi 2025 (111/2025/QH15)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Được bảo hiểm",
+   "right": "Không được bảo hiểm",
+   "cases": [
+    {
+     "text": "Chứng chỉ tiền gửi bằng đồng Việt Nam của cá nhân",
+     "answer": "left"
+    },
+    {
+     "text": "Tiền gửi bằng euro của cá nhân",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 17."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tiền gửi được bảo hiểm là tiền gửi bằng {{đồng Việt Nam}} của {{cá nhân}} gửi tại tổ chức tham gia bảo hiểm tiền gửi.",
+   "bank_extra": [
+    "ngoại tệ",
+    "doanh nghiệp"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hình thức tiền gửi được bảo hiểm gồm tiền gửi có kỳ hạn, không kỳ hạn, tiền gửi {{tiết kiệm}}, {{chứng chỉ tiền gửi}} và hình thức khác theo pháp luật về các tổ chức tín dụng.",
+   "bank_extra": [
+    "cổ phiếu",
+    "trái phiếu doanh nghiệp"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tiền gửi bằng ngoại tệ của cá nhân cũng là tiền gửi được bảo hiểm.",
+   "answer": false,
+   "explain": "Sai. Điều 17: chỉ tiền gửi bằng đồng Việt Nam."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu điều kiện để một khoản tiền gửi là tiền gửi được bảo hiểm.",
+   "model": "Bằng đồng Việt Nam, của cá nhân, gửi tại tổ chức tham gia bảo hiểm tiền gửi dưới các hình thức có kỳ hạn, không kỳ hạn, tiết kiệm, chứng chỉ tiền gửi…, trừ các loại tại Điều 18 (Điều 17).",
+   "keywords": [
+    "đồng Việt Nam",
+    "cá nhân",
+    "tổ chức tham gia",
+    "Điều 18"
+   ]
+  }
+ ]
+}

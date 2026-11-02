@@ -1,0 +1,117 @@
+{
+ "id": "hoat-dong-ngoai-hoi",
+ "subject": "ngan-hang",
+ "chapter": "v7",
+ "term": "Hoạt động ngoại hối; người cư trú và người không cư trú",
+ "definition": "Hoạt động ngoại hối là hoạt động của người cư trú, người không cư trú trong giao dịch vãng lai, giao dịch vốn, sử dụng ngoại hối trên lãnh thổ Việt Nam, hoạt động cung ứng dịch vụ ngoại hối và các giao dịch khác liên quan đến ngoại hối.",
+ "plain": "Chủ thể: NGƯỜI CƯ TRÚ và NGƯỜI KHÔNG CƯ TRÚ (khoản 2, 3). Nội dung: GIAO DỊCH VÃNG LAI (không vì mục đích chuyển vốn — khoản 5), GIAO DỊCH VỐN (đầu tư trực tiếp, gián tiếp, vay và trả nợ nước ngoài… — khoản 4), sử dụng ngoại hối trên lãnh thổ, cung ứng dịch vụ ngoại hối. Người cư trú gồm cả công dân Việt Nam cư trú ở nước ngoài có thời hạn DƯỚI 12 THÁNG, người nước ngoài được phép cư trú tại Việt Nam từ 12 THÁNG TRỞ LÊN (điểm e, h khoản 2). Luật Ngân hàng Nhà nước dùng cùng định nghĩa (khoản 3 Điều 6).",
+ "example": "Doanh nghiệp Việt Nam vay vốn của ngân hàng Nhật Bản (giao dịch vốn) và thanh toán tiền nhập khẩu máy móc cho đối tác Đức (giao dịch vãng lai) — cả hai đều là hoạt động ngoại hối.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 8 Điều 4 Pháp lệnh Ngoại hối 2005 (VBHN 140/2026/VBHN-PL-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-140-2026-VBHN-PL-VPQH-Phap-lenh-Ngoai-hoi-726673.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "ngoai-hoi",
+  "ngan-hang-nha-nuoc"
+ ],
+ "keywords": [
+  "người cư trú",
+  "người không cư trú",
+  "giao dịch vãng lai",
+  "giao dịch vốn",
+  "cung ứng dịch vụ ngoại hối"
+ ],
+ "note": "Pháp lệnh Ngoại hối 28/2005/PL-UBTVQH11 có hiệu lực từ 01/6/2006, sửa đổi bởi Pháp lệnh 06/2013/UBTVQH13; Luật 23/2026/QH16 (hiệu lực 01/12/2026) bãi bỏ Điều 22 và khoản 2 Điều 34, không sửa Điều 4.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Giao dịch nào là giao dịch vốn theo Pháp lệnh Ngoại hối?",
+   "options": [
+    "Vay và trả nợ nước ngoài",
+    "Thanh toán tiền nhập khẩu hàng hóa",
+    "Chuyển tiền một chiều giúp đỡ thân nhân",
+    "Trả tiền dịch vụ du lịch"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 4 Pháp lệnh Ngoại hối 2005 (VBHN 140/2026/VBHN-PL-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Công dân Việt Nam đi học ở nước ngoài có thời hạn 6 tháng là người cư trú hay không cư trú?",
+   "options": [
+    "Người cư trú",
+    "Người không cư trú",
+    "Không thuộc đối tượng nào",
+    "Do ngân hàng quyết định"
+   ],
+   "answer": 0,
+   "explain": "Điểm e, g khoản 2 Điều 4: công dân Việt Nam cư trú ở nước ngoài có thời hạn dưới 12 tháng; đi học tập ở nước ngoài là người cư trú.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 4 Pháp lệnh Ngoại hối 2005 (VBHN 140/2026/VBHN-PL-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Giao dịch vốn",
+   "right": "Giao dịch vãng lai",
+   "cases": [
+    {
+     "text": "Nhà đầu tư nước ngoài góp vốn thành lập công ty tại Việt Nam",
+     "answer": "left"
+    },
+    {
+     "text": "Doanh nghiệp thanh toán tiền xuất khẩu, nhập khẩu hàng hóa",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 4, 5, 6 Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hoạt động ngoại hối là hoạt động của người cư trú, người {{không cư trú}} trong giao dịch {{vãng lai}}, giao dịch vốn, sử dụng ngoại hối trên lãnh thổ Việt Nam.",
+   "bank_extra": [
+    "nước ngoài",
+    "nội địa"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Giao dịch vãng lai là giao dịch giữa người cư trú với người không cư trú không vì mục đích {{chuyển vốn}}; người nước ngoài được phép cư trú tại Việt Nam từ {{12 tháng}} trở lên là người cư trú.",
+   "bank_extra": [
+    "lợi nhuận",
+    "6 tháng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người nước ngoài được phép cư trú tại Việt Nam 6 tháng là người cư trú theo Pháp lệnh Ngoại hối.",
+   "answer": false,
+   "explain": "Sai. Điểm h khoản 2 Điều 4: người nước ngoài được phép cư trú từ 12 tháng trở lên."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm hoạt động ngoại hối và phân biệt giao dịch vãng lai với giao dịch vốn.",
+   "model": "Hoạt động của người cư trú, người không cư trú trong giao dịch vãng lai, giao dịch vốn, sử dụng ngoại hối trên lãnh thổ, cung ứng dịch vụ ngoại hối và giao dịch khác (khoản 8 Điều 4); giao dịch vốn là chuyển vốn giữa người cư trú và không cư trú (đầu tư, vay, cho vay nước ngoài — khoản 4); giao dịch vãng lai không vì mục đích chuyển vốn (khoản 5).",
+   "keywords": [
+    "người cư trú",
+    "giao dịch vãng lai",
+    "giao dịch vốn",
+    "chuyển vốn"
+   ]
+  }
+ ]
+}

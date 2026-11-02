@@ -1,0 +1,116 @@
+{
+ "id": "ngan-hang",
+ "subject": "ngan-hang",
+ "chapter": "v3",
+ "term": "Ngân hàng và các loại hình ngân hàng",
+ "definition": "Ngân hàng là tổ chức tín dụng có thể được thực hiện tất cả hoạt động ngân hàng theo quy định của Luật này. Các loại hình ngân hàng bao gồm ngân hàng thương mại, ngân hàng chính sách, ngân hàng hợp tác xã.",
+ "plain": "Ngân hàng là TCTD duy nhất CÓ THỂ được làm TẤT CẢ hoạt động ngân hàng. Ba loại: NGÂN HÀNG THƯƠNG MẠI (mục tiêu lợi nhuận — khoản 23); NGÂN HÀNG CHÍNH SÁCH (do Thủ tướng Chính phủ thành lập, hoạt động không vì mục tiêu lợi nhuận nhằm thực hiện chính sách kinh tế - xã hội — Điều 16; ví dụ Ngân hàng Chính sách xã hội); NGÂN HÀNG HỢP TÁC XÃ (ngân hàng của tất cả quỹ tín dụng nhân dân — khoản 22). Ngân hàng liên doanh, ngân hàng 100% vốn nước ngoài là loại hình ngân hàng thương mại (khoản 40).",
+ "example": "Ngân hàng 100% vốn nước ngoài được thành lập tại Việt Nam là ngân hàng thương mại; Ngân hàng Chính sách xã hội cho hộ nghèo vay ưu đãi là ngân hàng chính sách.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 21 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-143-2026-VBHN-LQ-VPQH-Luat-Cac-to-chuc-tin-dung-729869.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "to-chuc-tin-dung",
+  "to-chuc-tin-dung-phi-ngan-hang"
+ ],
+ "keywords": [
+  "tất cả hoạt động ngân hàng",
+  "ngân hàng thương mại",
+  "ngân hàng chính sách",
+  "ngân hàng hợp tác xã"
+ ],
+ "note": "Luật Các tổ chức tín dụng 32/2024/QH15 có hiệu lực từ 01/7/2024, thay thế Luật 47/2010/QH12 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 96/2025/QH15 (hiệu lực 15/10/2025) và Luật 23/2026/QH16 (hiệu lực 01/12/2026, chỉ bổ sung một điểm tại Điều 49) — các khoản Điều 4 được trích không bị sửa.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Các loại hình ngân hàng theo khoản 21 Điều 4?",
+   "options": [
+    "Ngân hàng thương mại, ngân hàng chính sách, ngân hàng hợp tác xã",
+    "Ngân hàng thương mại, công ty tài chính, quỹ tín dụng",
+    "Ngân hàng nhà nước, ngân hàng tư nhân",
+    "Ngân hàng đầu tư, ngân hàng tiết kiệm"
+   ],
+   "answer": 0,
+   "explain": "Khoản 21 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 21 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ngân hàng liên doanh, ngân hàng 100% vốn nước ngoài thuộc loại hình nào?",
+   "options": [
+    "Ngân hàng thương mại",
+    "Ngân hàng chính sách",
+    "Tổ chức tín dụng phi ngân hàng",
+    "Chi nhánh ngân hàng nước ngoài"
+   ],
+   "answer": 0,
+   "explain": "Khoản 40 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 40 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Ngân hàng thương mại",
+   "right": "Ngân hàng hợp tác xã",
+   "cases": [
+    {
+     "text": "Hoạt động nhằm mục tiêu lợi nhuận",
+     "answer": "left"
+    },
+    {
+     "text": "Ngân hàng của tất cả quỹ tín dụng nhân dân",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 22, 23 Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ngân hàng là tổ chức tín dụng có thể được thực hiện {{tất cả}} hoạt động ngân hàng; các loại hình gồm ngân hàng thương mại, ngân hàng {{chính sách}}, ngân hàng hợp tác xã.",
+   "bank_extra": [
+    "một phần",
+    "đầu tư"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ngân hàng thương mại được thực hiện tất cả hoạt động ngân hàng và hoạt động kinh doanh khác nhằm mục tiêu {{lợi nhuận}}; ngân hàng hợp tác xã là ngân hàng của tất cả {{quỹ tín dụng nhân dân}}.",
+   "bank_extra": [
+    "công ích",
+    "công ty tài chính"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Công ty tài chính tổng hợp là một loại hình ngân hàng.",
+   "answer": false,
+   "explain": "Sai. Công ty tài chính tổng hợp là tổ chức tín dụng phi ngân hàng (khoản 13, 41 Điều 4)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm và các loại hình ngân hàng.",
+   "model": "Tổ chức tín dụng có thể được thực hiện tất cả hoạt động ngân hàng; gồm ngân hàng thương mại, ngân hàng chính sách, ngân hàng hợp tác xã (khoản 21 Điều 4).",
+   "keywords": [
+    "tất cả hoạt động ngân hàng",
+    "thương mại",
+    "chính sách",
+    "hợp tác xã"
+   ]
+  }
+ ]
+}

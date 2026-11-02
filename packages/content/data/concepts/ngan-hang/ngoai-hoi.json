@@ -1,0 +1,118 @@
+{
+ "id": "ngoai-hoi",
+ "subject": "ngan-hang",
+ "chapter": "v7",
+ "term": "Ngoại hối",
+ "definition": "Ngoại hối bao gồm: a) Đồng tiền của quốc gia khác hoặc đồng tiền chung châu Âu và đồng tiền chung khác được sử dụng trong thanh toán quốc tế và khu vực (sau đây gọi là ngoại tệ); b) Phương tiện thanh toán bằng ngoại tệ, gồm séc, thẻ thanh toán, hối phiếu đòi nợ, hối phiếu nhận nợ và các phương tiện thanh toán khác; c) Các loại giấy tờ có giá bằng ngoại tệ, gồm trái phiếu Chính phủ, trái phiếu công ty, kỳ phiếu, cổ phiếu và các loại giấy tờ có giá khác; d) Vàng thuộc dự trữ ngoại hối nhà nước, trên tài khoản ở nước ngoài của người cư trú; vàng dưới dạng khối, thỏi, hạt, miếng trong trường hợp mang vào và mang ra khỏi lãnh thổ Việt Nam; đ) Đồng tiền của nước Cộng hòa xã hội chủ nghĩa Việt Nam trong trường hợp chuyển vào và chuyển ra khỏi lãnh thổ Việt Nam hoặc được sử dụng trong thanh toán quốc tế.",
+ "plain": "Năm nhóm: NGOẠI TỆ; PHƯƠNG TIỆN THANH TOÁN bằng ngoại tệ; GIẤY TỜ CÓ GIÁ bằng ngoại tệ; VÀNG (chỉ một số trường hợp); ĐỒNG VIỆT NAM (chỉ khi chuyển vào/ra lãnh thổ hoặc dùng trong thanh toán quốc tế). Phân biệt thực hành: vàng miếng mua bán TRONG NƯỚC không phải ngoại hối — chỉ là ngoại hối khi thuộc dự trữ nhà nước, trên tài khoản ở nước ngoài của người cư trú, hoặc khi MANG VÀO/MANG RA lãnh thổ. Tiền đồng chuyển ra nước ngoài trong thanh toán quốc tế lại là ngoại hối.",
+ "example": "Du khách mang 2 kg vàng thỏi qua cửa khẩu sân bay: vàng này là ngoại hối và phải tuân thủ quy định quản lý ngoại hối; chiếc nhẫn vàng mua ở tiệm trong nước thì không.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 4 Pháp lệnh Ngoại hối 2005 (VBHN 140/2026/VBHN-PL-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-140-2026-VBHN-PL-VPQH-Phap-lenh-Ngoai-hoi-726673.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hoat-dong-ngoai-hoi",
+  "giay-to-co-gia"
+ ],
+ "keywords": [
+  "ngoại tệ",
+  "phương tiện thanh toán bằng ngoại tệ",
+  "giấy tờ có giá bằng ngoại tệ",
+  "vàng",
+  "đồng Việt Nam chuyển vào, ra lãnh thổ"
+ ],
+ "note": "Pháp lệnh Ngoại hối 28/2005/PL-UBTVQH11 có hiệu lực từ 01/6/2006, sửa đổi bởi Pháp lệnh 06/2013/UBTVQH13; Luật 23/2026/QH16 (hiệu lực 01/12/2026) bãi bỏ Điều 22 và khoản 2 Điều 34, không sửa Điều 4.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trường hợp nào vàng được coi là ngoại hối?",
+   "options": [
+    "Vàng dạng thỏi mang ra khỏi lãnh thổ Việt Nam",
+    "Nhẫn vàng mua bán tại tiệm trong nước",
+    "Vàng trang sức tặng cho trong gia đình",
+    "Vàng nguyên liệu dùng sản xuất trang sức trong nước"
+   ],
+   "answer": 0,
+   "explain": "Điểm d khoản 1 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điểm d khoản 1 Điều 4 Pháp lệnh Ngoại hối 2005 (VBHN 140/2026/VBHN-PL-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đồng Việt Nam là ngoại hối trong trường hợp nào?",
+   "options": [
+    "Khi chuyển vào và chuyển ra khỏi lãnh thổ Việt Nam hoặc được sử dụng trong thanh toán quốc tế",
+    "Trong mọi trường hợp",
+    "Khi gửi tiết kiệm trong nước",
+    "Không bao giờ"
+   ],
+   "answer": 0,
+   "explain": "Điểm đ khoản 1 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điểm đ khoản 1 Điều 4 Pháp lệnh Ngoại hối 2005 (VBHN 140/2026/VBHN-PL-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Là ngoại hối",
+   "right": "Không phải ngoại hối",
+   "cases": [
+    {
+     "text": "Séc bằng đô la Mỹ",
+     "answer": "left"
+    },
+    {
+     "text": "Tiền đồng gửi tiết kiệm tại ngân hàng trong nước",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ngoại hối bao gồm ngoại tệ, phương tiện thanh toán bằng {{ngoại tệ}}, các loại {{giấy tờ có giá}} bằng ngoại tệ, vàng trong một số trường hợp và đồng Việt Nam trong một số trường hợp.",
+   "bank_extra": [
+    "đồng Việt Nam",
+    "bất động sản"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Vàng dưới dạng khối, thỏi, hạt, miếng là ngoại hối trong trường hợp mang {{vào}} và mang ra khỏi {{lãnh thổ}} Việt Nam.",
+   "bank_extra": [
+    "bán",
+    "cửa hàng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi loại vàng mua bán trong nước đều là ngoại hối.",
+   "answer": false,
+   "explain": "Sai. Điểm d khoản 1 Điều 4 chỉ coi vàng là ngoại hối trong các trường hợp liệt kê (dự trữ nhà nước, tài khoản ở nước ngoài của người cư trú, mang vào/ra lãnh thổ)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các nhóm ngoại hối theo Pháp lệnh Ngoại hối.",
+   "model": "Ngoại tệ; phương tiện thanh toán bằng ngoại tệ; giấy tờ có giá bằng ngoại tệ; vàng thuộc dự trữ, trên tài khoản ở nước ngoài của người cư trú, vàng khối, thỏi, hạt, miếng khi mang vào/ra lãnh thổ; đồng Việt Nam khi chuyển vào/ra lãnh thổ hoặc dùng trong thanh toán quốc tế (khoản 1 Điều 4).",
+   "keywords": [
+    "ngoại tệ",
+    "phương tiện thanh toán",
+    "giấy tờ có giá",
+    "vàng",
+    "đồng Việt Nam"
+   ]
+  }
+ ]
+}

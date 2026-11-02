@@ -1,0 +1,112 @@
+{
+  "id": "ngan-hang",
+  "title": "Luật Ngân hàng",
+  "short": "Ngân hàng",
+  "chapters": [
+    {
+      "id": "v1",
+      "title": "Vấn đề 1. Những vấn đề lí luận về ngân hàng và pháp luật ngân hàng",
+      "lessons": [
+        {
+          "id": "nh1",
+          "title": "Những vấn đề lí luận về ngân hàng và pháp luật ngân hàng",
+          "concepts": [
+            "hoat-dong-ngan-hang",
+            "to-chuc-tin-dung"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v2",
+      "title": "Vấn đề 2. Pháp luật về tổ chức và hoạt động của Ngân hàng Nhà nước",
+      "lessons": [
+        {
+          "id": "nh2",
+          "title": "Pháp luật về tổ chức và hoạt động của Ngân hàng Nhà nước",
+          "concepts": [
+            "ngan-hang-nha-nuoc",
+            "chinh-sach-tien-te-quoc-gia",
+            "cong-cu-chinh-sach-tien-te"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v3",
+      "title": "Vấn đề 3. Pháp luật về chủ thể kinh doanh ngân hàng",
+      "lessons": [
+        {
+          "id": "nh3",
+          "title": "Pháp luật về chủ thể kinh doanh ngân hàng",
+          "concepts": [
+            "ngan-hang",
+            "to-chuc-tin-dung-phi-ngan-hang",
+            "kiem-soat-dac-biet",
+            "bao-hiem-tien-gui",
+            "tien-gui-duoc-bao-hiem"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v4",
+      "title": "Vấn đề 4. Pháp luật về huy động vốn của tổ chức tín dụng",
+      "lessons": [
+        {
+          "id": "nh4",
+          "title": "Pháp luật về huy động vốn của tổ chức tín dụng",
+          "concepts": [
+            "nhan-tien-gui",
+            "giay-to-co-gia"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v5",
+      "title": "Vấn đề 5. Pháp luật về hoạt động cấp tín dụng của tổ chức tín dụng",
+      "lessons": [
+        {
+          "id": "nh5",
+          "title": "Pháp luật về hoạt động cấp tín dụng của tổ chức tín dụng",
+          "concepts": [
+            "cap-tin-dung",
+            "cho-vay",
+            "chiet-khau",
+            "bao-lanh-ngan-hang",
+            "bao-thanh-toan"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v6",
+      "title": "Vấn đề 6. Pháp luật về dịch vụ thanh toán",
+      "lessons": [
+        {
+          "id": "nh6",
+          "title": "Pháp luật về dịch vụ thanh toán",
+          "concepts": [
+            "dich-vu-thanh-toan-qua-tai-khoan",
+            "dich-vu-trung-gian-thanh-toan"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v7",
+      "title": "Vấn đề 7. Pháp luật về hoạt động ngoại hối",
+      "lessons": [
+        {
+          "id": "nh7",
+          "title": "Pháp luật về hoạt động ngoại hối",
+          "concepts": [
+            "ngoai-hoi",
+            "hoat-dong-ngoai-hoi"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "id": "ngan-hang-de-1",
+  "group": "ngan-hang",
+  "title": "Đề kiểm tra Luật Ngân hàng – Chủ thể và Ngân hàng Nhà nước",
+  "subtitle": "10 câu theo đề cương HLU, vấn đề 1–3",
+  "updated": "2026-11-01",
+  "questions": [
+    {
+      "q": "Hoạt động ngân hàng gồm những nghiệp vụ nào?",
+      "options": [
+        "Nhận tiền gửi, cấp tín dụng, cung ứng dịch vụ thanh toán qua tài khoản",
+        "Nhận tiền gửi, kinh doanh bất động sản, bảo hiểm",
+        "Cấp tín dụng, môi giới chứng khoán, kiểm toán",
+        "Phát hành tiền, thu thuế, cho vay"
+      ],
+      "answer": 0,
+      "explain": "Khoản 17 Điều 4.",
+      "basis": "Khoản 17 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-143-2026-VBHN-LQ-VPQH-Luat-Cac-to-chuc-tin-dung-729869.aspx"
+    },
+    {
+      "q": "Loại hình nào thuộc tổ chức tín dụng?",
+      "options": [
+        "Tổ chức tài chính vi mô",
+        "Chi nhánh ngân hàng nước ngoài",
+        "Văn phòng đại diện nước ngoài",
+        "Công ty chứng khoán"
+      ],
+      "answer": 0,
+      "explain": "Khoản 38 Điều 4.",
+      "basis": "Khoản 38 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-143-2026-VBHN-LQ-VPQH-Luat-Cac-to-chuc-tin-dung-729869.aspx"
+    },
+    {
+      "q": "Chi nhánh ngân hàng nước ngoài có tư cách pháp nhân không?",
+      "options": [
+        "Có",
+        "Không, là đơn vị phụ thuộc của ngân hàng nước ngoài",
+        "Có nếu vốn trên 15 triệu USD",
+        "Tùy Ngân hàng Nhà nước quyết định"
+      ],
+      "answer": 1,
+      "explain": "Khoản 5 Điều 4.",
+      "basis": "Khoản 5 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-143-2026-VBHN-LQ-VPQH-Luat-Cac-to-chuc-tin-dung-729869.aspx"
+    },
+    {
+      "q": "Tổ chức tín dụng phi ngân hàng không được làm gì?",
+      "options": [
+        "Cho vay",
+        "Nhận tiền gửi của cá nhân",
+        "Bao thanh toán",
+        "Cho thuê tài chính"
+      ],
+      "answer": 1,
+      "explain": "Khoản 41 Điều 4.",
+      "basis": "Khoản 41 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-143-2026-VBHN-LQ-VPQH-Luat-Cac-to-chuc-tin-dung-729869.aspx"
+    },
+    {
+      "q": "Ai quyết định đặt tổ chức tín dụng vào kiểm soát đặc biệt?",
+      "options": [
+        "Tòa án",
+        "Ngân hàng Nhà nước",
+        "Bộ Tài chính",
+        "Hội đồng quản trị"
+      ],
+      "answer": 1,
+      "explain": "Khoản 19 Điều 4.",
+      "basis": "Khoản 19 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-143-2026-VBHN-LQ-VPQH-Luat-Cac-to-chuc-tin-dung-729869.aspx"
+    },
+    {
+      "q": "Ngân hàng Nhà nước Việt Nam có vị trí pháp lý gì?",
+      "options": [
+        "Cơ quan ngang bộ của Chính phủ, là Ngân hàng trung ương",
+        "Doanh nghiệp nhà nước",
+        "Cơ quan của Quốc hội",
+        "Tổ chức tín dụng nhà nước"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 2.",
+      "basis": "Khoản 1 Điều 2 Luật Ngân hàng Nhà nước Việt Nam 2010 (VBHN 141/2026/VBHN-LQ-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-141-2026-VBHN-LQ-VPQH-Luat-Ngan-hang-Nha-nuoc-Viet-Nam-726674.aspx"
+    },
+    {
+      "q": "Ai quyết định chỉ tiêu lạm phát hằng năm?",
+      "options": [
+        "Thống đốc Ngân hàng Nhà nước",
+        "Quốc hội",
+        "Chính phủ",
+        "Bộ Tài chính"
+      ],
+      "answer": 1,
+      "explain": "Khoản 2 Điều 3.",
+      "basis": "Khoản 2 Điều 3 Luật Ngân hàng Nhà nước Việt Nam 2010 (VBHN 141/2026/VBHN-LQ-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-141-2026-VBHN-LQ-VPQH-Luat-Ngan-hang-Nha-nuoc-Viet-Nam-726674.aspx"
+    },
+    {
+      "q": "Công cụ nào là công cụ thực hiện chính sách tiền tệ quốc gia?",
+      "options": [
+        "Nghiệp vụ thị trường mở",
+        "Thuế thu nhập doanh nghiệp",
+        "Chi đầu tư công",
+        "Phí trước bạ"
+      ],
+      "answer": 0,
+      "explain": "Điều 10.",
+      "basis": "Điều 10 Luật Ngân hàng Nhà nước Việt Nam 2010 (VBHN 141/2026/VBHN-LQ-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-141-2026-VBHN-LQ-VPQH-Luat-Ngan-hang-Nha-nuoc-Viet-Nam-726674.aspx"
+    },
+    {
+      "q": "Luật Bảo hiểm tiền gửi hiện hành là văn bản nào?",
+      "options": [
+        "Luật Bảo hiểm tiền gửi 06/2012/QH13",
+        "Luật Bảo hiểm tiền gửi 111/2025/QH15, hiệu lực 01/5/2026",
+        "Nghị định về bảo hiểm tiền gửi",
+        "Luật Kinh doanh bảo hiểm"
+      ],
+      "answer": 1,
+      "explain": "Điều 40.",
+      "basis": "Điều 40 Luật Bảo hiểm tiền gửi 2025 (111/2025/QH15)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bao-hiem/Luat-Bao-hiem-tien-gui-2025-so-111-2025-QH15-667663.aspx"
+    },
+    {
+      "q": "Tiền gửi nào được bảo hiểm?",
+      "options": [
+        "Tiền gửi bằng đồng Việt Nam của cá nhân tại tổ chức tham gia bảo hiểm tiền gửi",
+        "Tiền gửi bằng ngoại tệ của cá nhân",
+        "Tiền gửi của doanh nghiệp",
+        "Mọi khoản tiền gửi"
+      ],
+      "answer": 0,
+      "explain": "Điều 17.",
+      "basis": "Điều 17 Luật Bảo hiểm tiền gửi 2025 (111/2025/QH15)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bao-hiem/Luat-Bao-hiem-tien-gui-2025-so-111-2025-QH15-667663.aspx"
+    }
+  ]
+}

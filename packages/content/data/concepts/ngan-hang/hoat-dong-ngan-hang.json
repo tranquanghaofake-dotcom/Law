@@ -1,0 +1,119 @@
+{
+ "id": "hoat-dong-ngan-hang",
+ "subject": "ngan-hang",
+ "chapter": "v1",
+ "term": "Hoạt động ngân hàng",
+ "definition": "Hoạt động ngân hàng là việc kinh doanh, cung ứng thường xuyên một hoặc một số nghiệp vụ sau đây: a) Nhận tiền gửi; b) Cấp tín dụng; c) Cung ứng dịch vụ thanh toán qua tài khoản.",
+ "plain": "Ba nghiệp vụ \"lõi\": NHẬN TIỀN GỬI, CẤP TÍN DỤNG, CUNG ỨNG DỊCH VỤ THANH TOÁN QUA TÀI KHOẢN. Dấu hiệu: tính KINH DOANH và THƯỜNG XUYÊN — một lần cho bạn vay tiền không phải hoạt động ngân hàng. Chỉ tổ chức được Ngân hàng Nhà nước cấp Giấy phép mới được thực hiện hoạt động ngân hàng (Điều 8). Luật Ngân hàng Nhà nước dùng cùng định nghĩa (khoản 1 Điều 6).",
+ "example": "Một công ty thương mại huy động tiền của dân với lãi suất cao rồi cho vay lại, không có giấy phép: đây là hoạt động ngân hàng trái phép vì thường xuyên nhận tiền gửi và cấp tín dụng.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 17 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-143-2026-VBHN-LQ-VPQH-Luat-Cac-to-chuc-tin-dung-729869.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "to-chuc-tin-dung",
+  "cap-tin-dung",
+  "nhan-tien-gui"
+ ],
+ "keywords": [
+  "nhận tiền gửi",
+  "cấp tín dụng",
+  "dịch vụ thanh toán qua tài khoản",
+  "thường xuyên",
+  "Giấy phép"
+ ],
+ "note": "Luật Các tổ chức tín dụng 32/2024/QH15 có hiệu lực từ 01/7/2024, thay thế Luật 47/2010/QH12 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 96/2025/QH15 (hiệu lực 15/10/2025) và Luật 23/2026/QH16 (hiệu lực 01/12/2026, chỉ bổ sung một điểm tại Điều 49) — các khoản Điều 4 được trích không bị sửa.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nghiệp vụ nào KHÔNG nằm trong định nghĩa hoạt động ngân hàng tại khoản 17 Điều 4 Luật Các tổ chức tín dụng?",
+   "options": [
+    "Kinh doanh bất động sản",
+    "Nhận tiền gửi",
+    "Cấp tín dụng",
+    "Cung ứng dịch vụ thanh toán qua tài khoản"
+   ],
+   "answer": 0,
+   "explain": "Khoản 17 Điều 4 chỉ gồm ba nghiệp vụ: nhận tiền gửi, cấp tín dụng, cung ứng dịch vụ thanh toán qua tài khoản.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 17 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tổ chức nào được thực hiện hoạt động ngân hàng?",
+   "options": [
+    "Tổ chức đủ điều kiện và được Ngân hàng Nhà nước cấp Giấy phép",
+    "Mọi doanh nghiệp đã đăng ký kinh doanh",
+    "Mọi tổ chức có vốn trên 100 tỷ đồng",
+    "Bất kỳ cá nhân nào có tiền nhàn rỗi"
+   ],
+   "answer": 0,
+   "explain": "Điều 8.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 8 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hoạt động ngân hàng",
+   "right": "Không phải hoạt động ngân hàng",
+   "cases": [
+    {
+     "text": "Công ty tài chính thường xuyên cho vay tiêu dùng",
+     "answer": "left"
+    },
+    {
+     "text": "Một người cho bạn thân vay tiền một lần, không lấy lãi",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 17 Điều 4: phải là kinh doanh, cung ứng thường xuyên."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hoạt động ngân hàng là việc kinh doanh, cung ứng {{thường xuyên}} một hoặc một số nghiệp vụ: nhận tiền gửi, {{cấp tín dụng}}, cung ứng dịch vụ thanh toán qua tài khoản.",
+   "bank_extra": [
+    "ngẫu nhiên",
+    "kinh doanh bất động sản"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ba nghiệp vụ của hoạt động ngân hàng gồm nhận {{tiền gửi}}, cấp tín dụng và cung ứng dịch vụ thanh toán qua {{tài khoản}}.",
+   "bank_extra": [
+    "cổ phiếu",
+    "ví tiền mặt"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi doanh nghiệp đã đăng ký kinh doanh đều được nhận tiền gửi của dân cư.",
+   "answer": false,
+   "explain": "Sai. Điều 8: chỉ tổ chức được Ngân hàng Nhà nước cấp Giấy phép mới được thực hiện hoạt động ngân hàng."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm hoạt động ngân hàng theo Luật Các tổ chức tín dụng 2024.",
+   "model": "Là việc kinh doanh, cung ứng thường xuyên một hoặc một số nghiệp vụ: nhận tiền gửi; cấp tín dụng; cung ứng dịch vụ thanh toán qua tài khoản (khoản 17 Điều 4); chỉ tổ chức được cấp Giấy phép mới được thực hiện (Điều 8).",
+   "keywords": [
+    "kinh doanh",
+    "thường xuyên",
+    "nhận tiền gửi",
+    "cấp tín dụng",
+    "thanh toán qua tài khoản"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,119 @@
+{
+ "id": "to-chuc-tin-dung",
+ "subject": "ngan-hang",
+ "chapter": "v1",
+ "term": "Tổ chức tín dụng và các loại hình",
+ "definition": "Tổ chức tín dụng là tổ chức kinh tế có tư cách pháp nhân thực hiện một, một số hoặc tất cả hoạt động ngân hàng theo quy định của Luật này. Tổ chức tín dụng bao gồm ngân hàng, tổ chức tín dụng phi ngân hàng, tổ chức tài chính vi mô và quỹ tín dụng nhân dân.",
+ "plain": "Bốn loại hình: (1) NGÂN HÀNG — được làm tất cả hoạt động ngân hàng; (2) TCTD PHI NGÂN HÀNG — không được nhận tiền gửi của cá nhân và cung ứng thanh toán qua tài khoản; (3) TỔ CHỨC TÀI CHÍNH VI MÔ — phục vụ cá nhân, hộ gia đình thu nhập thấp và doanh nghiệp siêu nhỏ (khoản 37); (4) QUỸ TÍN DỤNG NHÂN DÂN — hình thức hợp tác xã, mục tiêu chủ yếu tương trợ (khoản 30). Phân biệt: CHI NHÁNH NGÂN HÀNG NƯỚC NGOÀI không phải tổ chức tín dụng, không có tư cách pháp nhân (khoản 5).",
+ "example": "Quỹ tín dụng nhân dân xã A do các hộ gia đình góp vốn thành lập dưới hình thức hợp tác xã là tổ chức tín dụng; chi nhánh tại Hà Nội của một ngân hàng Hàn Quốc thì không phải tổ chức tín dụng mà là chi nhánh ngân hàng nước ngoài.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 38 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-143-2026-VBHN-LQ-VPQH-Luat-Cac-to-chuc-tin-dung-729869.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "ngan-hang",
+  "to-chuc-tin-dung-phi-ngan-hang",
+  "hoat-dong-ngan-hang"
+ ],
+ "keywords": [
+  "tổ chức kinh tế có tư cách pháp nhân",
+  "ngân hàng",
+  "phi ngân hàng",
+  "tài chính vi mô",
+  "quỹ tín dụng nhân dân"
+ ],
+ "note": "Luật Các tổ chức tín dụng 32/2024/QH15 có hiệu lực từ 01/7/2024, thay thế Luật 47/2010/QH12 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 96/2025/QH15 (hiệu lực 15/10/2025) và Luật 23/2026/QH16 (hiệu lực 01/12/2026, chỉ bổ sung một điểm tại Điều 49) — các khoản Điều 4 được trích không bị sửa.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 38 Điều 4, loại hình nào KHÔNG thuộc tổ chức tín dụng?",
+   "options": [
+    "Chi nhánh ngân hàng nước ngoài",
+    "Tổ chức tài chính vi mô",
+    "Quỹ tín dụng nhân dân",
+    "Tổ chức tín dụng phi ngân hàng"
+   ],
+   "answer": 0,
+   "explain": "Chi nhánh ngân hàng nước ngoài là đơn vị phụ thuộc, không có tư cách pháp nhân (khoản 5 Điều 4), không nằm trong danh sách khoản 38.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 38 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tổ chức tín dụng có tư cách pháp lý gì?",
+   "options": [
+    "Tổ chức kinh tế có tư cách pháp nhân",
+    "Cơ quan nhà nước",
+    "Đơn vị sự nghiệp công lập",
+    "Tổ chức không có tư cách pháp nhân"
+   ],
+   "answer": 0,
+   "explain": "Khoản 38 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 38 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tổ chức tín dụng",
+   "right": "Không phải tổ chức tín dụng",
+   "cases": [
+    {
+     "text": "Quỹ tín dụng nhân dân",
+     "answer": "left"
+    },
+    {
+     "text": "Chi nhánh ngân hàng nước ngoài",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 5, 38 Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tổ chức tín dụng là tổ chức kinh tế có {{tư cách pháp nhân}} thực hiện một, một số hoặc tất cả {{hoạt động ngân hàng}}.",
+   "bank_extra": [
+    "quyền miễn thuế",
+    "hoạt động công ích"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tổ chức tín dụng bao gồm ngân hàng, tổ chức tín dụng {{phi ngân hàng}}, tổ chức tài chính {{vi mô}} và quỹ tín dụng nhân dân.",
+   "bank_extra": [
+    "đầu tư",
+    "quốc tế"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chi nhánh ngân hàng nước ngoài là một loại hình tổ chức tín dụng.",
+   "answer": false,
+   "explain": "Sai. Khoản 38 Điều 4 không liệt kê; khoản 5 Điều 4: chi nhánh ngân hàng nước ngoài không có tư cách pháp nhân, là đơn vị phụ thuộc của ngân hàng nước ngoài."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm và các loại hình tổ chức tín dụng.",
+   "model": "Tổ chức kinh tế có tư cách pháp nhân thực hiện một, một số hoặc tất cả hoạt động ngân hàng; gồm ngân hàng, tổ chức tín dụng phi ngân hàng, tổ chức tài chính vi mô, quỹ tín dụng nhân dân (khoản 38 Điều 4).",
+   "keywords": [
+    "tư cách pháp nhân",
+    "ngân hàng",
+    "phi ngân hàng",
+    "tài chính vi mô",
+    "quỹ tín dụng nhân dân"
+   ]
+  }
+ ]
+}

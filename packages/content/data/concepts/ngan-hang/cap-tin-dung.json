@@ -1,0 +1,119 @@
+{
+ "id": "cap-tin-dung",
+ "subject": "ngan-hang",
+ "chapter": "v5",
+ "term": "Cấp tín dụng",
+ "definition": "Cấp tín dụng là việc thỏa thuận để tổ chức, cá nhân sử dụng một khoản tiền hoặc cam kết cho phép sử dụng một khoản tiền theo nguyên tắc có hoàn trả bằng nghiệp vụ cho vay, chiết khấu, cho thuê tài chính, bao thanh toán, bảo lãnh ngân hàng, thư tín dụng và các nghiệp vụ cấp tín dụng khác.",
+ "plain": "Bản chất: THỎA THUẬN cho sử dụng (hoặc CAM KẾT cho phép sử dụng) một khoản tiền theo NGUYÊN TẮC CÓ HOÀN TRẢ. Các nghiệp vụ: CHO VAY, CHIẾT KHẤU, CHO THUÊ TÀI CHÍNH, BAO THANH TOÁN, BẢO LÃNH NGÂN HÀNG, THƯ TÍN DỤNG… \"Cam kết cho phép sử dụng\" giải thích vì sao bảo lãnh, thư tín dụng cũng là cấp tín dụng dù ngân hàng chưa xuất tiền ngay.",
+ "example": "Ngân hàng phát hành thư bảo lãnh dự thầu cho công ty D: ngân hàng chưa đưa tiền cho ai nhưng đã cam kết trả thay khi D vi phạm — vẫn là cấp tín dụng.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 4 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-143-2026-VBHN-LQ-VPQH-Luat-Cac-to-chuc-tin-dung-729869.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "cho-vay",
+  "chiet-khau",
+  "bao-lanh-ngan-hang",
+  "bao-thanh-toan"
+ ],
+ "keywords": [
+  "thỏa thuận",
+  "cam kết cho phép sử dụng",
+  "nguyên tắc có hoàn trả",
+  "cho vay, chiết khấu",
+  "bảo lãnh ngân hàng"
+ ],
+ "note": "Luật Các tổ chức tín dụng 32/2024/QH15 có hiệu lực từ 01/7/2024, thay thế Luật 47/2010/QH12 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 96/2025/QH15 (hiệu lực 15/10/2025) và Luật 23/2026/QH16 (hiệu lực 01/12/2026, chỉ bổ sung một điểm tại Điều 49) — các khoản Điều 4 được trích không bị sửa.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nghiệp vụ nào KHÔNG phải nghiệp vụ cấp tín dụng theo khoản 4 Điều 4?",
+   "options": [
+    "Nhận tiền gửi tiết kiệm",
+    "Cho vay",
+    "Bao thanh toán",
+    "Bảo lãnh ngân hàng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 4; nhận tiền gửi là nghiệp vụ huy động vốn.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Cấp tín dụng dựa trên nguyên tắc nào?",
+   "options": [
+    "Có hoàn trả",
+    "Không hoàn trả",
+    "Tặng cho",
+    "Góp vốn chia lợi nhuận"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Cấp tín dụng",
+   "right": "Huy động vốn",
+   "cases": [
+    {
+     "text": "Cho thuê tài chính",
+     "answer": "left"
+    },
+    {
+     "text": "Phát hành chứng chỉ tiền gửi",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 4, 27 Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Cấp tín dụng là việc {{thỏa thuận}} để tổ chức, cá nhân sử dụng một khoản tiền hoặc cam kết cho phép sử dụng một khoản tiền theo nguyên tắc có {{hoàn trả}}.",
+   "bank_extra": [
+    "cưỡng chế",
+    "tặng cho"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nghiệp vụ cấp tín dụng gồm cho vay, {{chiết khấu}}, cho thuê tài chính, bao thanh toán, bảo lãnh ngân hàng, {{thư tín dụng}}.",
+   "bank_extra": [
+    "nhận tiền gửi",
+    "cổ phiếu"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Bảo lãnh ngân hàng không phải là cấp tín dụng vì ngân hàng không giao tiền cho khách hàng.",
+   "answer": false,
+   "explain": "Sai. Khoản 4 Điều 4: cấp tín dụng gồm cả \"cam kết cho phép sử dụng một khoản tiền\", liệt kê rõ bảo lãnh ngân hàng."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm cấp tín dụng và các nghiệp vụ cấp tín dụng.",
+   "model": "Thỏa thuận để tổ chức, cá nhân sử dụng hoặc cam kết cho phép sử dụng một khoản tiền theo nguyên tắc có hoàn trả bằng cho vay, chiết khấu, cho thuê tài chính, bao thanh toán, bảo lãnh ngân hàng, thư tín dụng và nghiệp vụ khác (khoản 4 Điều 4).",
+   "keywords": [
+    "thỏa thuận",
+    "có hoàn trả",
+    "cho vay",
+    "bảo lãnh"
+   ]
+  }
+ ]
+}

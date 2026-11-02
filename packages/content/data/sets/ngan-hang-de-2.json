@@ -1,0 +1,139 @@
+{
+  "id": "ngan-hang-de-2",
+  "group": "ngan-hang",
+  "title": "Đề kiểm tra Luật Ngân hàng – Huy động vốn, cấp tín dụng, thanh toán, ngoại hối",
+  "subtitle": "10 câu theo đề cương HLU, vấn đề 4–7",
+  "updated": "2026-11-01",
+  "questions": [
+    {
+      "q": "Phát hành chứng chỉ tiền gửi thuộc nghiệp vụ nào?",
+      "options": [
+        "Nhận tiền gửi",
+        "Cấp tín dụng",
+        "Bao thanh toán",
+        "Dịch vụ trung gian thanh toán"
+      ],
+      "answer": 0,
+      "explain": "Khoản 27 Điều 4.",
+      "basis": "Khoản 27 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-143-2026-VBHN-LQ-VPQH-Luat-Cac-to-chuc-tin-dung-729869.aspx"
+    },
+    {
+      "q": "Nghiệp vụ nào KHÔNG phải cấp tín dụng?",
+      "options": [
+        "Chiết khấu",
+        "Bảo lãnh ngân hàng",
+        "Nhận tiền gửi",
+        "Thư tín dụng"
+      ],
+      "answer": 2,
+      "explain": "Khoản 4 Điều 4.",
+      "basis": "Khoản 4 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-143-2026-VBHN-LQ-VPQH-Luat-Cac-to-chuc-tin-dung-729869.aspx"
+    },
+    {
+      "q": "Cho vay của tổ chức tín dụng đòi hỏi khoản tiền được sử dụng thế nào?",
+      "options": [
+        "Vào mục đích xác định, trong thời gian nhất định",
+        "Tùy ý bên vay",
+        "Chỉ để mua nhà",
+        "Chỉ để sản xuất"
+      ],
+      "answer": 0,
+      "explain": "Khoản 7 Điều 4.",
+      "basis": "Khoản 7 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-143-2026-VBHN-LQ-VPQH-Luat-Cac-to-chuc-tin-dung-729869.aspx"
+    },
+    {
+      "q": "Mua hối phiếu của bên thụ hưởng trước hạn có bảo lưu quyền truy đòi là nghiệp vụ gì?",
+      "options": [
+        "Bao thanh toán",
+        "Chiết khấu",
+        "Cho vay",
+        "Bảo lãnh"
+      ],
+      "answer": 1,
+      "explain": "Khoản 6 Điều 4.",
+      "basis": "Khoản 6 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-143-2026-VBHN-LQ-VPQH-Luat-Cac-to-chuc-tin-dung-729869.aspx"
+    },
+    {
+      "q": "Sau khi ngân hàng trả thay theo bảo lãnh, khách hàng phải làm gì?",
+      "options": [
+        "Nhận nợ bắt buộc và hoàn trả",
+        "Không phải trả",
+        "Chỉ trả lãi",
+        "Trả cho bên nhận bảo lãnh"
+      ],
+      "answer": 0,
+      "explain": "Khoản 2 Điều 4.",
+      "basis": "Khoản 2 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-143-2026-VBHN-LQ-VPQH-Luat-Cac-to-chuc-tin-dung-729869.aspx"
+    },
+    {
+      "q": "Mua lại khoản phải thu của bên bán theo hợp đồng mua bán hàng hóa là nghiệp vụ gì?",
+      "options": [
+        "Chiết khấu",
+        "Bao thanh toán",
+        "Cho thuê tài chính",
+        "Nhận tiền gửi"
+      ],
+      "answer": 1,
+      "explain": "Khoản 1 Điều 4.",
+      "basis": "Khoản 1 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-143-2026-VBHN-LQ-VPQH-Luat-Cac-to-chuc-tin-dung-729869.aspx"
+    },
+    {
+      "q": "Dịch vụ nào là dịch vụ thanh toán qua tài khoản?",
+      "options": [
+        "Nhờ thu",
+        "Bao thanh toán",
+        "Chiết khấu",
+        "Bảo lãnh dự thầu"
+      ],
+      "answer": 0,
+      "explain": "Khoản 14 Điều 4.",
+      "basis": "Khoản 14 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-143-2026-VBHN-LQ-VPQH-Luat-Cac-to-chuc-tin-dung-729869.aspx"
+    },
+    {
+      "q": "Dịch vụ trung gian thanh toán là gì?",
+      "options": [
+        "Hoạt động trung gian kết nối, truyền dẫn, xử lý dữ liệu điện tử các giao dịch thanh toán",
+        "Cho vay qua ứng dụng",
+        "Nhận tiền gửi trực tuyến",
+        "Phát hành tiền"
+      ],
+      "answer": 0,
+      "explain": "Khoản 10 Điều 6.",
+      "basis": "Khoản 10 Điều 6 Luật Ngân hàng Nhà nước Việt Nam 2010 (VBHN 141/2026/VBHN-LQ-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-141-2026-VBHN-LQ-VPQH-Luat-Ngan-hang-Nha-nuoc-Viet-Nam-726674.aspx"
+    },
+    {
+      "q": "Vàng là ngoại hối trong trường hợp nào?",
+      "options": [
+        "Vàng thỏi mang ra khỏi lãnh thổ Việt Nam",
+        "Nhẫn vàng mua ở tiệm",
+        "Vàng trang sức thừa kế",
+        "Mọi trường hợp"
+      ],
+      "answer": 0,
+      "explain": "Điểm d khoản 1 Điều 4.",
+      "basis": "Khoản 1 Điều 4 Pháp lệnh Ngoại hối 2005 (VBHN 140/2026/VBHN-PL-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-140-2026-VBHN-PL-VPQH-Phap-lenh-Ngoai-hoi-726673.aspx"
+    },
+    {
+      "q": "Người nước ngoài được phép cư trú tại Việt Nam bao lâu thì là người cư trú?",
+      "options": [
+        "Từ 6 tháng",
+        "Từ 12 tháng trở lên",
+        "Từ 183 ngày",
+        "Từ 24 tháng"
+      ],
+      "answer": 1,
+      "explain": "Điểm h khoản 2 Điều 4.",
+      "basis": "Khoản 2 Điều 4 Pháp lệnh Ngoại hối 2005 (VBHN 140/2026/VBHN-PL-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-140-2026-VBHN-PL-VPQH-Phap-lenh-Ngoai-hoi-726673.aspx"
+    }
+  ]
+}

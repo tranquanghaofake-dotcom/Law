@@ -1,0 +1,117 @@
+{
+ "id": "kiem-soat-dac-biet",
+ "subject": "ngan-hang",
+ "chapter": "v3",
+ "term": "Kiểm soát đặc biệt tổ chức tín dụng",
+ "definition": "Kiểm soát đặc biệt là việc Ngân hàng Nhà nước quyết định đặt tổ chức tín dụng dưới sự kiểm soát trực tiếp của Ngân hàng Nhà nước.",
+ "plain": "Chủ thể quyết định: NGÂN HÀNG NHÀ NƯỚC; đối tượng: TỔ CHỨC TÍN DỤNG; nội dung: đặt dưới sự KIỂM SOÁT TRỰC TIẾP. Phân biệt với CAN THIỆP SỚM (khoản 3 Điều 4): can thiệp sớm là biện pháp hạn chế, yêu cầu TCTD tự thực hiện phương án khắc phục dưới sự giám sát — mức độ nhẹ hơn, áp dụng trước. Trong kiểm soát đặc biệt có thể có TỔ CHỨC TÍN DỤNG HỖ TRỢ tham gia quản trị, điều hành, hỗ trợ tài chính (khoản 39). Các phương án xử lý sau đó (phục hồi, sáp nhập, chuyển giao bắt buộc, giải thể, phá sản) do Luật quy định tại chương riêng.",
+ "example": "Một ngân hàng thương mại bị rút tiền hàng loạt, có nguy cơ mất khả năng chi trả: Ngân hàng Nhà nước ra quyết định đặt ngân hàng này dưới sự kiểm soát trực tiếp của mình (kiểm soát đặc biệt).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 19 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-143-2026-VBHN-LQ-VPQH-Luat-Cac-to-chuc-tin-dung-729869.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "ngan-hang-nha-nuoc",
+  "bao-hiem-tien-gui",
+  "to-chuc-tin-dung"
+ ],
+ "keywords": [
+  "Ngân hàng Nhà nước quyết định",
+  "kiểm soát trực tiếp",
+  "can thiệp sớm",
+  "tổ chức tín dụng hỗ trợ"
+ ],
+ "note": "Luật Các tổ chức tín dụng 32/2024/QH15 có hiệu lực từ 01/7/2024, thay thế Luật 47/2010/QH12 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 96/2025/QH15 (hiệu lực 15/10/2025) và Luật 23/2026/QH16 (hiệu lực 01/12/2026, chỉ bổ sung một điểm tại Điều 49) — các khoản Điều 4 được trích không bị sửa.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai quyết định đặt tổ chức tín dụng vào kiểm soát đặc biệt?",
+   "options": [
+    "Ngân hàng Nhà nước",
+    "Tòa án nhân dân",
+    "Đại hội đồng cổ đông của tổ chức tín dụng",
+    "Bảo hiểm tiền gửi Việt Nam"
+   ],
+   "answer": 0,
+   "explain": "Khoản 19 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 19 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Biện pháp nào yêu cầu tổ chức tín dụng tự thực hiện phương án khắc phục dưới sự giám sát của Ngân hàng Nhà nước?",
+   "options": [
+    "Can thiệp sớm",
+    "Kiểm soát đặc biệt",
+    "Phá sản",
+    "Thu hồi giấy phép"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Can thiệp sớm",
+   "right": "Kiểm soát đặc biệt",
+   "cases": [
+    {
+     "text": "Áp dụng biện pháp hạn chế, yêu cầu TCTD thực hiện phương án khắc phục dưới sự giám sát",
+     "answer": "left"
+    },
+    {
+     "text": "Đặt TCTD dưới sự kiểm soát trực tiếp của Ngân hàng Nhà nước",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 3, 19 Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Kiểm soát đặc biệt là việc {{Ngân hàng Nhà nước}} quyết định đặt tổ chức tín dụng dưới sự kiểm soát {{trực tiếp}} của Ngân hàng Nhà nước.",
+   "bank_extra": [
+    "Tòa án",
+    "gián tiếp"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tổ chức tín dụng {{hỗ trợ}} là tổ chức tín dụng tham gia quản trị, điều hành, kiểm soát, hỗ trợ tổ chức, hoạt động và tài chính cho tổ chức tín dụng được {{kiểm soát đặc biệt}}.",
+   "bank_extra": [
+    "liên kết",
+    "phá sản"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Kiểm soát đặc biệt do Tòa án quyết định theo thủ tục phá sản.",
+   "answer": false,
+   "explain": "Sai. Khoản 19 Điều 4: Ngân hàng Nhà nước quyết định."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm kiểm soát đặc biệt và phân biệt với can thiệp sớm.",
+   "model": "Kiểm soát đặc biệt: Ngân hàng Nhà nước quyết định đặt TCTD dưới sự kiểm soát trực tiếp của mình (khoản 19 Điều 4); can thiệp sớm: áp dụng yêu cầu, biện pháp hạn chế và yêu cầu TCTD thực hiện phương án khắc phục dưới sự giám sát (khoản 3 Điều 4).",
+   "keywords": [
+    "Ngân hàng Nhà nước",
+    "kiểm soát trực tiếp",
+    "can thiệp sớm",
+    "phương án khắc phục"
+   ]
+  }
+ ]
+}
