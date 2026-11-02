@@ -6,7 +6,7 @@
   // Thẻ chuyên cần — thẻ trơn bo tròn (không viền), 27 doodle nét đơn về pháp luật phủ kín nền, có hình phụ lấp khe, sáng dần theo ngày;
   // logo bông sen 8 cánh ôm cán cân (không phải logo VBF, không Quốc huy). Rê chuột: thẻ nghiêng 3D + vệt sáng theo chuột
   // (học kỹ thuật biến CSS theo con trỏ của pokemon-cards-css (GPL-3.0) và vanilla-tilt (MIT) — tự viết, không chép mã).
-  import { cardFor, justLit, TIER_NAMES, type Tier } from '$lib/game/card';
+  import { cardFor, justLit, isMilestone, TIER_NAMES, type Tier } from '$lib/game/card';
   import { CARD_GLYPHS } from './cardGlyphs';
   let { count = 0, longest = 0, size = 'full', ignite = false }: { count?: number; longest?: number; size?: 'full' | 'mini'; ignite?: boolean } = $props();
   const c = $derived(cardFor(count, longest));
@@ -41,17 +41,17 @@
   // cán cân của huy hiệu (gốc toạ độ = tâm đĩa số): cột xuyên qua đĩa, đòn cân và hai đĩa cân phía trên, đế phía dưới
   const SCALE = 'M0-124V-60M0 60V112M-124-92Q0-108 124-92M-124-92L-146-34M-124-92L-102-34M124-92L102-34M124-92L146-34M-46 112H46M-64 124H64M-14-96Q0-103 14-96';
   const PANS = 'M-152-34Q-124-12-96-34ZM96-34Q124-12 152-34Z';
-  const label = $derived(count > 0 ? `Thẻ chuyên cần: chuỗi ${count} ngày, ngày ${c.day}/30, màu ${TIER_NAMES[c.tier as Tier]}` : 'Thẻ chuyên cần: chưa có chuỗi');
+  const label = $derived(count > 0 ? `Thẻ chuyên cần: chuỗi ${count} ngày, tiến độ ${c.day}/30, màu ${TIER_NAMES[c.tier as Tier]}` : 'Thẻ chuyên cần: chưa có chuỗi');
   // Lửa ba lớp (theo video Hào gửi): lõi gần trắng, thân màu bão hoà, quầng rộng rung như lửa/điện trên nền tối.
   type Fire = { core: string; mid: string; glow: string };
   const FIRE: Record<Tier, Fire> = {
     do: { core: '#fff4b8', mid: '#ffa32a', glow: '#e3300b' },
     lam: { core: '#effbff', mid: '#38b6ff', glow: '#0a5cff' },
     tim: { core: '#f8edff', mid: '#b65cff', glow: '#7417ff' },
-    trang: { core: '#ffffff', mid: '#dff0ff', glow: '#8fc4ff' },
-    den: { core: '#fff6d4', mid: '#efbd4f', glow: '#a8650f' },
-    'vo-cuc': { core: '#ffffff', mid: `url(#${uid}-holo)`, glow: '#c38bff' },
+    // trắng–đen giao thoa: lửa trắng bạc, có vệt đen chạy dọc nét (xem lớp .cg-inter)
+    'trang-den': { core: '#ffffff', mid: '#eef3fa', glow: '#8ea4bf' },
   };
+
   const fire = (t: Tier) => FIRE[t];
   const ink = (t: Tier | null) => (t ? FIRE[t].mid : '#ffffff');
   const cur = $derived(c.tier ? FIRE[c.tier] : null);
@@ -62,7 +62,7 @@
     for (let j = 0; j <= 6; j++) { const r = 150 - j * 11, w = j % 2 ? 7 : -7, aa = a + (w / r); d += `${j ? 'L' : 'M'}${(Math.cos(aa) * r).toFixed(1)} ${(Math.sin(aa) * r * 0.82).toFixed(1)}`; }
     return d;
   });
-  const caption = $derived([c.tier ? `${TIER_NAMES[c.tier]} · ngày ${c.day}/30` : 'Chưa bắt đầu chuỗi', `chuỗi ${count} ngày`, `kỷ lục ${Math.max(longest, count)} ngày${c.record ? ` (${TIER_NAMES[c.record]})` : ''}`].join(' · '));
+  const caption = $derived([c.tier ? `${TIER_NAMES[c.tier]} · tiến độ ${c.day}/30` : 'Chưa bắt đầu chuỗi', `chuỗi ${count} ngày${isMilestone(count) ? ' (mốc: +1 ngày)' : ''}`, `kỷ lục ${Math.max(longest, count)} ngày${c.record ? ` (${TIER_NAMES[c.record]})` : ''}`].join(' · '));
   const lf = $derived(c.logo ? `url(#${uid}-lotus)` : `url(#${uid}-ash)`);
   const lg = $derived(c.logo ? FIRE[c.logo] : null);
   // Rê chuột: độ nghiêng chạy theo lò xo (mỗi khung hình tiến 12% về đích) nên mượt, có quán tính; lớp doodle trôi ngược
@@ -110,10 +110,6 @@
     <defs>
       <radialGradient id="{uid}-bg" cx=".3" cy=".2" r="1.1"><stop offset="0" stop-color="#34343a" /><stop offset=".55" stop-color="#1b1b20" /><stop offset="1" stop-color="#0d0d10" /></radialGradient>
       <linearGradient id="{uid}-gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#b8924a" /><stop offset=".45" stop-color="#f6e2a8" /><stop offset=".6" stop-color="#d9b56a" /><stop offset="1" stop-color="#8e6c2c" /></linearGradient>
-      <linearGradient id="{uid}-holo" x1="0" x2="1" y1="0" y2=".5">
-        <stop offset="0" stop-color="#ff7aa2" /><stop offset=".2" stop-color="#ffd27a" /><stop offset=".4" stop-color="#7affc0" /><stop offset=".6" stop-color="#6fd0ff" /><stop offset=".8" stop-color="#c79bff" /><stop offset="1" stop-color="#ff7aa2" />
-        <animateTransform attributeName="gradientTransform" type="translate" values="-1 0;1 0;-1 0" dur="9s" repeatCount="indefinite" />
-      </linearGradient>
       <filter id="{uid}-glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2.4" result="b" /><feMerge><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge></filter>
       <radialGradient id="{uid}-disc" cx=".4" cy=".35" r=".8"><stop offset="0" stop-color="#2c2a28" /><stop offset="1" stop-color="#121214" /></radialGradient>
       <filter id="{uid}-emboss" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="2.5" stdDeviation="1.6" flood-color="#000" flood-opacity=".75" /><feDropShadow dx="0" dy="-1" stdDeviation=".4" flood-color="#fff6d8" flood-opacity=".35" /></filter>
@@ -137,7 +133,7 @@
       <filter id="{uid}-hot" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="1.4" result="b" /><feMerge><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge></filter>
       {#if cur}<radialGradient id="{uid}-aura"><stop offset="0" stop-color={cur.glow} stop-opacity=".32" /><stop offset=".6" stop-color={cur.glow} stop-opacity=".08" /><stop offset="1" stop-color={cur.glow} stop-opacity="0" /></radialGradient>{/if}
       <linearGradient id="{uid}-ash" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9a9aa0" /><stop offset="1" stop-color="#4b4b52" /></linearGradient>
-      {#if lg}<radialGradient id="{uid}-lotus" cx=".5" cy=".35" r=".75"><stop offset="0" stop-color={lg.core} /><stop offset=".45" stop-color={c.logo === 'vo-cuc' ? '#ffd27a' : lg.mid} /><stop offset="1" stop-color={lg.glow} /></radialGradient>{/if}
+      {#if lg}<radialGradient id="{uid}-lotus" cx=".5" cy=".35" r=".75"><stop offset="0" stop-color={lg.core} /><stop offset=".45" stop-color={lg.mid} /><stop offset="1" stop-color={lg.glow} /></radialGradient>{/if}
     </defs>
     <rect width="856" height="540" rx="40" fill="url(#{uid}-bg)" />
     <!-- quầng màu lửa mờ phía sau (đậm dần theo ngày) -->
@@ -172,8 +168,10 @@
                   <title>{CARD_GLYPHS[i].field}: {CARD_GLYPHS[i].name}</title>
                   {#if rankOf[i] === c.day - 1}
                     <path d={CARD_GLYPHS[i].d} stroke={cur.mid} stroke-width="2.4" /><path d={CARD_GLYPHS[i].d} stroke={cur.core} stroke-width="1.1" />
+                    {#if c.tier === 'trang-den'}<path class="cg-inter" d={CARD_GLYPHS[i].d} stroke="#050507" stroke-width="1.6" />{/if}
                   {:else}
                     <path d={CARD_GLYPHS[i].d} stroke={cur.mid} stroke-width="1.6" opacity=".75" /><path d={CARD_GLYPHS[i].d} stroke={cur.core} stroke-width=".7" opacity=".55" />
+                    {#if c.tier === 'trang-den'}<path class="cg-inter slow" d={CARD_GLYPHS[i].d} stroke="#050507" stroke-width="1.1" />{/if}
                   {/if}
                 </g>
               </g>
@@ -201,6 +199,7 @@
         <path d={SCALE} stroke={lg ? lg.mid : '#7a7a82'} stroke-width={lg ? 4.2 : 4.6} />
         <path d={PANS} fill={lg ? lg.mid : '#5a5a62'} fill-opacity={lg ? 0.35 : 0.6} stroke={lg ? lg.mid : '#7a7a82'} stroke-width="3" />
         {#if lg}<path d={SCALE} stroke={lg.core} stroke-width="1.6" /><path d={PANS} stroke={lg.core} stroke-width="1.2" />{/if}
+        {#if c.logo === 'trang-den'}<path class="cg-inter" d={SCALE} stroke="#050507" stroke-width="2.2" />{/if}
         <circle cy="-129" r="6" fill={lg ? lg.core : '#8a8a92'} stroke="none" />
       </g>
       <!-- vòng hoa văn + đĩa số -->
@@ -233,7 +232,7 @@
       {#if c.border === c.tier && c.day >= 28}<rect x="4" y="4" width="848" height="532" rx="37" fill="none" stroke={fire(c.border).glow} stroke-width="3.5" opacity=".75" filter="url(#{uid}-flame)" class="cg-border" />{/if}
       <rect x="3" y="3" width="850" height="534" rx="38" fill="none" stroke={fire(c.border).mid} stroke-width="1.2" opacity=".55" />
     {/if}
-    {#if c.burst}<rect width="856" height="540" rx="40" fill={c.tier === 'vo-cuc' ? `url(#${uid}-holo)` : `url(#${uid}-aura)`} class="cg-burst" class:tint={c.tier !== 'vo-cuc'} />{/if}
+    {#if c.burst}<rect width="856" height="540" rx="40" fill="url(#{uid}-aura)" class="cg-burst tint" />{/if}
   </svg>
   <span class="sc-glare" aria-hidden="true"></span>
 </div>
