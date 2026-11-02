@@ -193,7 +193,7 @@
     <!-- huy hiệu (theo phác thảo của Hào): cán cân lớn tràn ra ngoài vòng tròn, trong vòng tròn là số ngày của chuỗi.
          Xám khi chưa thắp; ngày 29 tia điện tụ về; ngày 30 thắp cuối cùng — cán cân cháy ba lớp, vòng lửa quanh đĩa số. -->
     <g class="cg-par-fg" class:born={!!c.logo}><g transform="translate(428 262)" class="cg-logo" class:lit={!!c.logo} class:charge={!!c.charge}>
-      <ellipse rx="190" ry="170" fill="#0f0f12" opacity=".7" filter="url(#{uid}-soft)" />
+      <ellipse rx="150" ry="140" fill="#0f0f12" opacity=".32" filter="url(#{uid}-soft)" />
       {#if c.charge}
         <g class="cg-bolts" fill="none" stroke-linecap="round" stroke-linejoin="round" filter="url(#{uid}-hot)">
           {#each bolts as d, k (k)}<path {d} stroke={fire(c.charge).mid} stroke-width="4" style="animation-delay:{(k * 0.37).toFixed(2)}s" /><path {d} stroke={fire(c.charge).core} stroke-width="1.6" style="animation-delay:{(k * 0.37).toFixed(2)}s" />{/each}
@@ -244,7 +244,7 @@
     {#if c.burst}<rect width="856" height="540" rx="40" fill="url(#{uid}-aura)" class="cg-burst tint" />{/if}
     <!-- chất liệu thẻ: vệt sáng lướt chéo định kỳ + cạnh kim loại mảnh -->
     {#if size === 'full'}
-      <g clip-path="url(#{uid}-clip)" pointer-events="none"><rect class="cg-sheen" x="-260" y="-60" width="200" height="660" fill="url(#{uid}-sheen)" transform="rotate(18 0 270)" /></g>
+      <g clip-path="url(#{uid}-clip)" pointer-events="none"><g transform="rotate(18 428 270)"><rect class="cg-sheen" x="-420" y="-200" width="240" height="940" fill="url(#{uid}-sheen)" /></g></g>
     {/if}
     <rect x="1.5" y="1.5" width="853" height="537" rx="39" fill="none" stroke="url(#{uid}-edge)" stroke-width="1.6" />
   </svg>

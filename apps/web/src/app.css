@@ -644,9 +644,9 @@ h1 { text-wrap: balance; }
 .sc-wrap.mini .streak-card * { animation: none !important; }
 .cg-inter { stroke-dasharray: 2.5 21; stroke-width: 1.1; opacity: .75; animation: cginter 2.6s linear infinite; }
 .cg-inter.slow { stroke-dasharray: 2 26; animation-duration: 4s; opacity: .55; }
-.cg-sheen { animation: cgsheen 8s cubic-bezier(.45, 0, .2, 1) 1.5s infinite; }
-.sc-wrap.on .cg-sheen { animation-duration: 3.5s; }
-@keyframes cgsheen { 0% { transform: rotate(18deg) translateX(0); } 22%, 100% { transform: rotate(18deg) translateX(1260px); } }
+.cg-sheen { opacity: 0; }
+.sc-wrap.on .cg-sheen { animation: cgsheen 1.6s cubic-bezier(.35, 0, .25, 1) 1 both; }
+@keyframes cgsheen { 0% { transform: translateX(0); opacity: 0; } 12% { opacity: 1; } 88% { opacity: 1; } 100% { transform: translateX(1500px); opacity: 0; } }
 @keyframes cginter { to { stroke-dashoffset: -47; } }
 .cg-burst { mix-blend-mode: soft-light; animation: cgburst 3s ease-in-out infinite alternate; }
 @keyframes cgflick { 0%, 100% { opacity: 1; } 40% { opacity: .85; } 70% { opacity: .95; } }
