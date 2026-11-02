@@ -216,8 +216,8 @@ Không vẽ Quốc huy, sao, vạch cấp hiệu hay biểu tượng ngành th�
 ### 3.17 Tinh chỉnh "clean mà wow" (02/11/2026)
 
 - Bớt rối: vệt đen cấp trắng–đen mảnh và thưa, chạy chậm; vòng hoa văn quanh số mờ hơn; hình phụ nền mờ hơn.
-- Chất liệu: vệt sáng lướt chéo qua thẻ mỗi ~8 giây (nhanh hơn khi rê chuột); cạnh thẻ có đường sáng mảnh như kim loại; số trong huy hiệu khắc chìm.
-- Mượt: thu nhỏ vùng filter lửa.
+- Chất liệu: vệt sáng lướt chéo **chỉ khi rê chuột vào** (một lần, ~1,6 giây; Hào: "loé sáng hơi nhanh, chỉ hiện khi di chuột"); cạnh thẻ có đường sáng mảnh như kim loại; số trong huy hiệu khắc chìm.
+- Mượt: thu nhỏ vùng filter lửa. Bóng tối quanh huy hiệu nhạt và nhỏ lại (Hào: "hơi tối quá").
 
 ## 4. Dữ liệu
 - Store mới (IndexedDB): `books` (chapterId → cấp cao nhất, ngày đạt), `career` (nhánh đang chọn, chức danh đã đạt), `card` (kỷ lục màu). Migration từ dữ liệu cũ: tính sách từ `progress` hiện có. XP vẫn giữ, chỉ hiển thị phụ.
