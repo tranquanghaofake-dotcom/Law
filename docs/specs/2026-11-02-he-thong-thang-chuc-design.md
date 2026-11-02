@@ -191,6 +191,18 @@ Không vẽ Quốc huy, sao, vạch cấp hiệu hay biểu tượng ngành th�
 - Màn nhận chức: chức mới đạt chưa xem (`promotionToCelebrate`, settings `career-seen`; lần đầu chỉ ghi nhận) → cánh kính mở, đèn bật, chữ biển tên hiện dần, hạt vàng, viền sáng (~3 giây); có nút "Xem lại lễ nhận chức"; giảm chuyển động thì bỏ qua.
 - Áo: filter `cloth` cho cả bộ — mép tối dần, ánh sáng trên-trái, thớ vải mịn; thêm nếp gấp và vệt sáng.
 
+### 3.13 Lửa thẻ chuyên cần và thứ tự thắp (Hào, 02/11/2026)
+
+- Thứ tự mới: ngày 1–27 ký hoạ → **28 viền lửa** → **29 lửa tụ về huy hiệu** (tia điện quanh đĩa, huy hiệu vẫn xám) → **30 huy hiệu thắp cuối cùng** (vòng lửa cháy quanh đĩa) + bừng sáng. Huy hiệu **xám** khi chưa từng thắp; chu kỳ sau giữ màu chu kỳ trước như ký hoạ (`card.ts`: thêm `charge`).
+- Lửa ba lớp theo video tham khảo của Hào: lõi gần trắng, thân màu bão hoà, quầng xé mép bằng nhiễu chuyển động (`feTurbulence` + `feDisplacementMap`, một filter chung). Bảng màu: đỏ (lõi vàng → thân cam → mép đỏ thẫm, theo video lửa đỏ), lam (xanh điện), tím (tím neon), trắng (trắng ánh xanh), đen ánh kim (vàng hổ phách), vô cực (cầu vồng). Ngày 30 bừng sáng theo màu lửa của chu kỳ; chỉ vô cực dùng cầu vồng.
+- Phân cấp ánh sáng (Hào: "chói và rối"): chỉ ký hoạ hôm nay có quầng lửa + tàn lửa; ký hoạ đã thắp khác âm ỉ (nét mảnh, mờ); viền lửa chỉ cháy ngày 28–30 của chu kỳ hiện tại; nền doodle và hình phụ mờ hơn; quầng nền nhẹ.
+- Chuyển động: chập chờn chậm, ký hoạ hôm nay bùng lên, tàn lửa bay, hoa văn huy hiệu xoay chậm, vòng lửa thở; tắt ở thẻ nhỏ và khi giảm chuyển động.
+
+### 3.14 Chuyển động khi rê chuột và khi vừa thắp chuỗi (Hào, 02/11/2026)
+
+- Rê chuột: độ nghiêng theo lò xo (requestAnimationFrame, tiến 12%/khung hình) thay vì bám tức thời; parallax — lớp doodle trôi ngược chiều, huy hiệu nổi lên; sáng dần khi rê vào.
+- Vừa thắp (`justLit(count, seen)`, `seen` lưu localStorage `ll-card-seen` — chỉ là tiện ích hiển thị; lần đầu chỉ ghi nhận): tia lửa bay từ huy hiệu tới ký hoạ mới → loé + sóng lửa → ký hoạ phóng lên rồi ổn định (~2,6 giây). Ngày 28–30: sóng lớn quanh huy hiệu, ngày 30 huy hiệu bùng lên. Giảm chuyển động: ẩn hẳn lớp hiệu ứng.
+
 ## 4. Dữ liệu
 - Store mới (IndexedDB): `books` (chapterId → cấp cao nhất, ngày đạt), `career` (nhánh đang chọn, chức danh đã đạt), `card` (kỷ lục màu). Migration từ dữ liệu cũ: tính sách từ `progress` hiện có. XP vẫn giữ, chỉ hiển thị phụ.
 - `game/rank.ts` (khoa cử, phẩm hàm) **giữ file và test, không còn hiển thị**. XP vẫn cộng và hiện phụ ở Hồ sơ. Bậc 6 đổi tên **Tinh thông**.

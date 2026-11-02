@@ -1,4 +1,5 @@
-// Thẻ chuyên cần (spec thăng chức §1): chu kỳ 30 ngày — ngày 1–27 sáng 27 ký hoạ, 28 sáng huy hiệu, 29 sáng viền, 30 bừng sáng.
+// Thẻ chuyên cần (spec thăng chức §1): chu kỳ 30 ngày — ngày 1–27 sáng 27 ký hoạ, 28 sáng viền, 29 lửa tụ về huy hiệu,
+// 30 huy hiệu bừng cháy (thắp cuối cùng) + bừng sáng. Huy hiệu xám khi chưa thắp.
 // Mỗi chu kỳ sau đổi màu lửa; chỗ chưa tới lượt giữ màu chu kỳ trước. Kỷ lục suy từ chuỗi dài nhất (streak.longest).
 export const CARD_DAYS = 30;
 export const GLYPHS = 27;
@@ -8,7 +9,7 @@ export const TIER_NAMES: Record<Tier, string> = { do: 'Đỏ', lam: 'Xanh lam', 
 
 export type CardState = {
   day: number; cycle: number; tier: Tier | null; prev: Tier | null;
-  glyphs: (Tier | null)[]; logo: Tier | null; border: Tier | null; burst: boolean; record: Tier | null;
+  glyphs: (Tier | null)[]; logo: Tier | null; border: Tier | null; charge: Tier | null; burst: boolean; record: Tier | null;
 };
 
 const tierOf = (cycle: number): Tier => TIERS[Math.min(cycle, TIERS.length - 1)];
@@ -16,11 +17,17 @@ const tierOf = (cycle: number): Tier => TIERS[Math.min(cycle, TIERS.length - 1)]
 export function cardFor(count: number, longest: number): CardState {
   const best = Math.max(longest, count);
   const record = best > 0 ? tierOf(Math.floor((best - 1) / CARD_DAYS)) : null;
-  if (count <= 0) return { day: 0, cycle: 0, tier: null, prev: null, glyphs: Array(GLYPHS).fill(null), logo: null, border: null, burst: false, record };
+  if (count <= 0) return { day: 0, cycle: 0, tier: null, prev: null, glyphs: Array(GLYPHS).fill(null), logo: null, border: null, charge: null, burst: false, record };
   const cycle = Math.floor((count - 1) / CARD_DAYS);
   const day = ((count - 1) % CARD_DAYS) + 1;
   const tier = tierOf(cycle);
   const prev = cycle > 0 ? tierOf(cycle - 1) : null;
   const glyphs = Array.from({ length: GLYPHS }, (_, i) => (i < day ? tier : prev));
-  return { day, cycle, tier, prev, glyphs, logo: day >= 28 ? tier : prev, border: day >= 29 ? tier : prev, burst: day === CARD_DAYS, record };
+  return { day, cycle, tier, prev, glyphs, logo: day >= 30 ? tier : prev, border: day >= 28 ? tier : prev, charge: day === 29 ? tier : null, burst: day === CARD_DAYS, record };
+}
+
+/** Có chạy hiệu ứng "vừa thắp" không: chuỗi khác 0 và khác lần xem trước (tăng, hoặc bắt đầu lại sau khi đứt).
+ *  `seen = null` (chưa từng lưu) → không chạy, chỉ ghi nhận. */
+export function justLit(count: number, seen: number | null): boolean {
+  return seen !== null && count > 0 && count !== seen;
 }

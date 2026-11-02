@@ -6,9 +6,9 @@
   // Thẻ chuyên cần — thẻ trơn bo tròn (không viền), 27 doodle nét đơn về pháp luật phủ kín nền, có hình phụ lấp khe, sáng dần theo ngày;
   // logo bông sen 8 cánh ôm cán cân (không phải logo VBF, không Quốc huy). Rê chuột: thẻ nghiêng 3D + vệt sáng theo chuột
   // (học kỹ thuật biến CSS theo con trỏ của pokemon-cards-css (GPL-3.0) và vanilla-tilt (MIT) — tự viết, không chép mã).
-  import { cardFor, TIER_NAMES, type Tier } from '$lib/game/card';
+  import { cardFor, justLit, TIER_NAMES, type Tier } from '$lib/game/card';
   import { CARD_GLYPHS } from './cardGlyphs';
-  let { count = 0, longest = 0, size = 'full' }: { count?: number; longest?: number; size?: 'full' | 'mini' } = $props();
+  let { count = 0, longest = 0, size = 'full', ignite = false }: { count?: number; longest?: number; size?: 'full' | 'mini'; ignite?: boolean } = $props();
   const c = $derived(cardFor(count, longest));
   const uid = `sc${++seq}`;
   // Nền doodle nét đơn phủ kín: 27 doodle pháp luật xếp 4 hàng so le (7 + 6 + 6 + 8), hai hàng giữa chừa chỗ logo;
@@ -39,24 +39,70 @@
   // hoa văn hoa thị (rosette) của huy hiệu: elip xoay lồng nhau
   const rosette = Array.from({ length: 36 }, (_, k) => k * 5);
   const label = $derived(count > 0 ? `Thẻ chuyên cần: chuỗi ${count} ngày, ngày ${c.day}/30, màu ${TIER_NAMES[c.tier as Tier]}` : 'Thẻ chuyên cần: chưa có chuỗi');
-  const INK: Record<Tier, string> = { do: '#ff9b7a', lam: '#8fd0ff', tim: '#d2adff', trang: '#ffffff', den: '#f2cf6b', 'vo-cuc': `url(#${uid}-holo)` };
-  const ink = (t: Tier | null) => (t ? INK[t] : '#ffffff');
+  // Lửa ba lớp (theo video Hào gửi): lõi gần trắng, thân màu bão hoà, quầng rộng rung như lửa/điện trên nền tối.
+  type Fire = { core: string; mid: string; glow: string };
+  const FIRE: Record<Tier, Fire> = {
+    do: { core: '#fff4b8', mid: '#ffa32a', glow: '#e3300b' },
+    lam: { core: '#effbff', mid: '#38b6ff', glow: '#0a5cff' },
+    tim: { core: '#f8edff', mid: '#b65cff', glow: '#7417ff' },
+    trang: { core: '#ffffff', mid: '#dff0ff', glow: '#8fc4ff' },
+    den: { core: '#fff6d4', mid: '#efbd4f', glow: '#a8650f' },
+    'vo-cuc': { core: '#ffffff', mid: `url(#${uid}-holo)`, glow: '#c38bff' },
+  };
+  const fire = (t: Tier) => FIRE[t];
+  const ink = (t: Tier | null) => (t ? FIRE[t].mid : '#ffffff');
+  const cur = $derived(c.tier ? FIRE[c.tier] : null);
+  const litNow = $derived(doodles.map((_, i) => c.glyphs[rankOf[i]]).map((t) => (t && t === c.tier ? t : null)));
+  const embers = $derived(doodles.flatMap((dd, i) => (litNow[i] && rankOf[i] === c.day - 1 ? [0, 1, 2, 3].map((k) => ({ x: dd.x + jit(i, 10 + k) * 40, y: dd.y + 10 + jit(i, 12 + k) * 20, d: (jit(i, 14 + k) + 0.5) * 3, i })) : [])));
+  const bolts = Array.from({ length: 8 }, (_, k) => {
+    const a = (k / 8) * Math.PI * 2 + 0.3; let d = '';
+    for (let j = 0; j <= 6; j++) { const r = 172 - j * 11, w = j % 2 ? 7 : -7, aa = a + (w / r); d += `${j ? 'L' : 'M'}${(Math.cos(aa) * r).toFixed(1)} ${(Math.sin(aa) * r * 0.82).toFixed(1)}`; }
+    return d;
+  });
   const caption = $derived([c.tier ? `${TIER_NAMES[c.tier]} · ngày ${c.day}/30` : 'Chưa bắt đầu chuỗi', `chuỗi ${count} ngày`, `kỷ lục ${Math.max(longest, count)} ngày${c.record ? ` (${TIER_NAMES[c.record]})` : ''}`].join(' · '));
-  const lf = $derived(c.logo ? ink(c.logo) : `url(#${uid}-gold)`);
-  // nghiêng theo chuột
+  const lf = $derived(c.logo ? `url(#${uid}-lotus)` : `url(#${uid}-ash)`);
+  const lg = $derived(c.logo ? FIRE[c.logo] : null);
+  // Rê chuột: độ nghiêng chạy theo lò xo (mỗi khung hình tiến 12% về đích) nên mượt, có quán tính; lớp doodle trôi ngược
+  // chiều (parallax), logo nổi lên. Rời chuột: trôi êm về giữa rồi dừng vòng lặp.
   let el: HTMLDivElement | undefined = $state();
-  let tilt = $state({ rx: 0, ry: 0, mx: 50, my: 50, on: false });
+  let on = $state(false);
+  let pos = $state({ x: 0.5, y: 0.5 });
+  let target = { x: 0.5, y: 0.5 };
+  let raf = 0;
+  function step() {
+    const nx = pos.x + (target.x - pos.x) * 0.12, ny = pos.y + (target.y - pos.y) * 0.12;
+    pos = { x: nx, y: ny };
+    raf = Math.abs(target.x - nx) + Math.abs(target.y - ny) > 0.001 ? requestAnimationFrame(step) : 0;
+  }
+  const kick = () => { if (!raf && typeof requestAnimationFrame !== 'undefined') raf = requestAnimationFrame(step); };
   function move(e: PointerEvent) {
     if (size === 'mini' || !el) return;
     const b = el.getBoundingClientRect();
-    const px = (e.clientX - b.left) / b.width, py = (e.clientY - b.top) / b.height;
-    tilt = { rx: (0.5 - py) * 14, ry: (px - 0.5) * 18, mx: px * 100, my: py * 100, on: true };
+    target = { x: (e.clientX - b.left) / b.width, y: (e.clientY - b.top) / b.height }; on = true; kick();
   }
-  const leave = () => (tilt = { rx: 0, ry: 0, mx: 50, my: 50, on: false });
+  function leave() { target = { x: 0.5, y: 0.5 }; on = false; kick(); }
+  $effect(() => () => { if (raf) cancelAnimationFrame(raf); });
+  const tilt = $derived({ rx: (0.5 - pos.y) * 14, ry: (pos.x - 0.5) * 18, mx: pos.x * 100, my: pos.y * 100, px: (pos.x - 0.5) * 2, py: (pos.y - 0.5) * 2 });
+
+  // Vừa thắp chuỗi: so với chuỗi đã xem lần trước (localStorage, chỉ là tiện ích hiển thị) → tia lửa bay từ logo tới
+  // ký hoạ mới, ký hoạ bùng cháy, sóng lửa lan ra; ngày không có ký hoạ mới (28–30) thì sóng lớn quanh logo. `ignite` ép chạy.
+  const SEEN = 'll-card-seen';
+  let lighting = $state(false);
+  $effect(() => {
+    if (size === 'mini') return;
+    let seen: number | null = null;
+    try { const v = localStorage.getItem(SEEN); seen = v === null ? null : Number(v); localStorage.setItem(SEEN, String(count)); } catch { /* bỏ qua */ }
+    if (!(ignite || justLit(count, seen))) return;
+    lighting = true;
+    const t = setTimeout(() => (lighting = false), 2600);
+    return () => clearTimeout(t);
+  });
+  const newest = $derived(c.day >= 1 && c.day <= 27 ? order[c.day - 1] : -1);
+  const spark = $derived(newest >= 0 ? { x: doodles[newest].x, y: doodles[newest].y } : { x: 428, y: 262 });
 </script>
 
-<div class="sc-wrap {size}" class:on={tilt.on} bind:this={el} onpointermove={move} onpointerleave={leave} role="img" aria-label={label}
-  style="--rx:{tilt.rx}deg; --ry:{tilt.ry}deg; --mx:{tilt.mx}%; --my:{tilt.my}%">
+<div class="sc-wrap {size}" class:on class:lighting bind:this={el} onpointermove={move} onpointerleave={leave} role="img" aria-label={label}
+  style="--rx:{tilt.rx.toFixed(2)}deg; --ry:{tilt.ry.toFixed(2)}deg; --mx:{tilt.mx.toFixed(1)}%; --my:{tilt.my.toFixed(1)}%; --px:{tilt.px.toFixed(3)}; --py:{tilt.py.toFixed(3)}">
   <svg class="streak-card {size} tier-{c.tier ?? 'none'}" class:burst={c.burst} viewBox="0 0 856 540" aria-hidden="true" focusable="false">
     <defs>
       <radialGradient id="{uid}-bg" cx=".3" cy=".2" r="1.1"><stop offset="0" stop-color="#34343a" /><stop offset=".55" stop-color="#1b1b20" /><stop offset="1" stop-color="#0d0d10" /></radialGradient>
@@ -75,54 +121,119 @@
       </mask>
       <filter id="{uid}-hand" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="7" /><feDisplacementMap in="SourceGraphic" scale="2.2" /></filter>
       <filter id="{uid}-soft" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="14" /></filter>
+      <!-- lửa: làm nhoè rồi xé mép bằng nhiễu chuyển động, cộng quầng rộng -->
+      <filter id="{uid}-flame" x="-10%" y="-20%" width="120%" height="140%">
+        <feTurbulence type="fractalNoise" baseFrequency=".016 .06" numOctaves="3" seed="3" result="n">
+          <animate attributeName="baseFrequency" dur="2.4s" values=".016 .06;.02 .08;.014 .05;.016 .06" repeatCount="indefinite" />
+        </feTurbulence>
+        <feGaussianBlur in="SourceGraphic" stdDeviation="2.6" result="b" />
+        <feDisplacementMap in="b" in2="n" scale="18" xChannelSelector="R" yChannelSelector="G" result="f" />
+        <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="bloom" />
+        <feMerge><feMergeNode in="bloom" /><feMergeNode in="f" /><feMergeNode in="f" /></feMerge>
+      </filter>
+      <filter id="{uid}-hot" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="1.4" result="b" /><feMerge><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge></filter>
+      {#if cur}<radialGradient id="{uid}-aura"><stop offset="0" stop-color={cur.glow} stop-opacity=".32" /><stop offset=".6" stop-color={cur.glow} stop-opacity=".08" /><stop offset="1" stop-color={cur.glow} stop-opacity="0" /></radialGradient>{/if}
+      <linearGradient id="{uid}-ash" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9a9aa0" /><stop offset="1" stop-color="#4b4b52" /></linearGradient>
+      {#if lg}<radialGradient id="{uid}-lotus" cx=".5" cy=".35" r=".75"><stop offset="0" stop-color={lg.core} /><stop offset=".45" stop-color={c.logo === 'vo-cuc' ? '#ffd27a' : lg.mid} /><stop offset="1" stop-color={lg.glow} /></radialGradient>{/if}
     </defs>
     <rect width="856" height="540" rx="40" fill="url(#{uid}-bg)" />
     <!-- quầng màu lửa mờ phía sau (đậm dần theo ngày) -->
-    {#if c.tier}<ellipse cx="428" cy="268" rx={150 + c.day * 7} ry={90 + c.day * 4} fill={ink(c.tier)} opacity={0.05 + c.day * 0.004} filter="url(#{uid}-soft)" />{/if}
+    {#if cur}<ellipse class="cg-aura" cx="428" cy="268" rx={170 + c.day * 7} ry={110 + c.day * 4} fill="url(#{uid}-aura)" opacity={0.2 + c.day * 0.006} />{/if}
     <!-- nền doodle: 27 hình pháp luật sáng dần theo ngày + hình phụ lấp khe; nét rung nhẹ như vẽ tay; mờ quanh logo -->
-    <g mask="url(#{uid}-hole)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <g class="cg-par-bg" mask="url(#{uid}-hole)" fill="none" stroke-linecap="round" stroke-linejoin="round">
       <g filter="url(#{uid}-hand)">
-        <g stroke="url(#{uid}-gold)" stroke-width=".9" opacity=".24">
+        <g stroke="url(#{uid}-gold)" stroke-width=".9" opacity=".13">
           {#each fillers as fl, i (i)}<path d={fl.d} transform="translate({fl.x.toFixed(1)} {fl.y.toFixed(1)}) rotate({fl.rot.toFixed(0)}) scale(1.5)" />{/each}
         </g>
         {#each doodles as dd, i (i)}
           {@const t = c.glyphs[rankOf[i]]}
-          <g class="cg-glyph" class:lit={!!t} class:now={!!t && rankOf[i] === c.day - 1 && t === c.tier}
-            transform="translate({dd.x.toFixed(1)} {dd.y.toFixed(1)}) rotate({dd.rot.toFixed(1)}) scale({dd.s.toFixed(2)}) translate(-32 -32)"
-            stroke={t ? ink(t) : `url(#${uid}-gold)`} opacity={t ? (t === c.tier ? 0.95 : 0.55) : 0.26} filter={t ? `url(#${uid}-glow)` : undefined}>
-            <title>{CARD_GLYPHS[i].field}: {CARD_GLYPHS[i].name}</title>
-            <path d={CARD_GLYPHS[i].d} stroke-width="1.3" />
-          </g>
+          {#if !litNow[i]}
+            <g class="cg-glyph" class:lit={!!t} transform="translate({dd.x.toFixed(1)} {dd.y.toFixed(1)}) rotate({dd.rot.toFixed(1)}) scale({dd.s.toFixed(2)}) translate(-32 -32)">
+              <title>{CARD_GLYPHS[i].field}: {CARD_GLYPHS[i].name}</title>
+              {#if t}<path d={CARD_GLYPHS[i].d} stroke={fire(t).mid} stroke-width="1.6" opacity=".28" /><path d={CARD_GLYPHS[i].d} stroke={fire(t).core} stroke-width=".7" opacity=".3" />
+              {:else}<path d={CARD_GLYPHS[i].d} stroke="url(#{uid}-gold)" stroke-width="1.2" opacity=".2" />{/if}
+            </g>
+          {/if}
         {/each}
       </g>
+      {#if cur}
+        <!-- phân cấp ánh sáng: chỉ ký hoạ hôm nay có quầng lửa; các ký hoạ đã thắp khác âm ỉ như than hồng -->
+        <g class="cg-flames" filter="url(#{uid}-flame)" stroke={cur.glow} stroke-width="4">
+          {#each doodles as dd, i (i)}{#if litNow[i] && rankOf[i] === c.day - 1}<path d={CARD_GLYPHS[i].d} transform="translate({dd.x.toFixed(1)} {dd.y.toFixed(1)}) rotate({dd.rot.toFixed(1)}) scale({dd.s.toFixed(2)}) translate(-32 -32)" />{/if}{/each}
+        </g>
+        <g filter="url(#{uid}-hot)">
+          {#each doodles as dd, i (i)}
+            {#if litNow[i]}
+              <g transform="translate({dd.x.toFixed(1)} {dd.y.toFixed(1)}) rotate({dd.rot.toFixed(1)}) scale({dd.s.toFixed(2)}) translate(-32 -32)">
+                <g class="cg-glyph lit" class:now={rankOf[i] === c.day - 1} style="--k:{i}">
+                  <title>{CARD_GLYPHS[i].field}: {CARD_GLYPHS[i].name}</title>
+                  {#if rankOf[i] === c.day - 1}
+                    <path d={CARD_GLYPHS[i].d} stroke={cur.mid} stroke-width="2.4" /><path d={CARD_GLYPHS[i].d} stroke={cur.core} stroke-width="1.1" />
+                  {:else}
+                    <path d={CARD_GLYPHS[i].d} stroke={cur.mid} stroke-width="1.6" opacity=".75" /><path d={CARD_GLYPHS[i].d} stroke={cur.core} stroke-width=".7" opacity=".55" />
+                  {/if}
+                </g>
+              </g>
+            {/if}
+          {/each}
+        </g>
+        <!-- tàn lửa bay lên -->
+        <g fill={cur.core} stroke="none" filter="url(#{uid}-hot)">
+          {#each embers as e, k (k)}<circle class="cg-ember" cx={e.x.toFixed(1)} cy={e.y.toFixed(1)} r={1.4 + (k % 3) * 0.5} style="animation-delay:-{e.d.toFixed(2)}s; --c:{cur.glow}" />{/each}
+        </g>
+      {/if}
     </g>
-    <!-- huy hiệu: rosette guilloche + vành chấm + bông sen ôm cán cân, vàng kim nổi khối -->
-    <g transform="translate(428 262)" class="cg-logo" class:lit={!!c.logo}>
+    <!-- huy hiệu: xám khi chưa thắp; ngày 29 tia điện tụ về; ngày 30 thắp cuối cùng với vòng lửa cháy quanh đĩa -->
+    <g class="cg-par-fg" class:born={!!c.logo}><g transform="translate(428 262)" class="cg-logo" class:lit={!!c.logo} class:charge={!!c.charge}>
       <circle r="112" fill="#0f0f12" opacity=".75" filter="url(#{uid}-soft)" />
-      <circle r="104" fill="url(#{uid}-disc)" stroke="url(#{uid}-gold)" stroke-width="2.5" />
-      <g fill="none" stroke={c.logo ? ink(c.logo) : `url(#${uid}-gold)`} stroke-width=".9" opacity={c.logo ? 0.8 : 0.5} filter={c.logo ? `url(#${uid}-glow)` : undefined}>
+      {#if lg}<circle class="cg-ring" r="106" fill="none" stroke={lg.glow} stroke-width="7" opacity=".8" filter="url(#{uid}-flame)" />{/if}
+      {#if c.charge}
+        <g class="cg-bolts" fill="none" stroke-linecap="round" stroke-linejoin="round" filter="url(#{uid}-hot)">
+          {#each bolts as d, k (k)}<path {d} stroke={fire(c.charge).mid} stroke-width="4" style="animation-delay:{(k * 0.37).toFixed(2)}s" /><path {d} stroke={fire(c.charge).core} stroke-width="1.6" style="animation-delay:{(k * 0.37).toFixed(2)}s" />{/each}
+        </g>
+        <circle r="108" fill="none" stroke={fire(c.charge).glow} stroke-width="3" opacity=".6" class="cg-charge" filter="url(#{uid}-hot)" />
+      {/if}
+      <circle r="104" fill="url(#{uid}-disc)" stroke={lg ? lg.mid : '#55555c'} stroke-width="2.5" />
+      <g class="cg-rosette" fill="none" stroke={lg ? lg.mid : '#76767e'} stroke-width=".9" opacity={lg ? 0.85 : 0.32} filter={lg ? `url(#${uid}-hot)` : undefined}>
         {#each rosette as a (a)}<ellipse rx="96" ry="34" transform="rotate({a})" />{/each}
       </g>
-      <circle r="66" fill="url(#{uid}-disc)" stroke="url(#{uid}-gold)" stroke-width="2" />
-      <circle r="60" fill="none" stroke="url(#{uid}-gold)" stroke-width="1" stroke-dasharray="1 4" />
-      <g filter="url(#{uid}-emboss)" transform="translate(0 6)">
+      <circle r="66" fill="url(#{uid}-disc)" stroke={lg ? lg.core : '#5e5e66'} stroke-width="2" />
+      <circle r="60" fill="none" stroke={lg ? lg.mid : '#5e5e66'} stroke-width="1" stroke-dasharray="1 4" />
+      {#if lg}<circle r="46" fill={lg.glow} opacity=".35" filter="url(#{uid}-soft)" class="cg-core" />{/if}
+      <g filter={lg ? `url(#${uid}-hot)` : `url(#${uid}-emboss)`} transform="translate(0 6)">
         <!-- đài sen nghiêng 5 cánh -->
         <path d="M-4 34C-34 32-48 16-48 2C-30 2-14 14-4 34Z" fill={lf} opacity=".7" /><path d="M4 34C34 32 48 16 48 2C30 2 14 14 4 34Z" fill={lf} opacity=".7" />
         <path d="M-2 34C-24 26-30 6-24-12C-12-2-4 14-2 34Z" fill={lf} opacity=".85" /><path d="M2 34C24 26 30 6 24-12C12-2 4 14 2 34Z" fill={lf} opacity=".85" />
         <path d="M0 34C-13 18-13-2 0-20C13-2 13 18 0 34Z" fill={lf} />
         <path d="M0 30V-6M-30 34Q0 46 30 34" fill="none" stroke="#141414" stroke-width="1.2" opacity=".5" />
         <!-- cán cân mọc lên từ cánh giữa, đĩa cân lơ lửng trên hai cánh bên -->
-        <g fill="none" stroke={lf} stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+        <g fill="none" stroke={lg ? lg.core : lf} stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
           <path d="M0 -20V-46M-34 -40Q0 -50 34 -40M-34 -40l-8 16M-34 -40l8 16M34 -40l-8 16M34 -40l8 16" />
           <path d="M-44 -24Q-34 -14 -24 -24zM24 -24Q34 -14 44 -24z" fill={lf} />
         </g>
-        <circle cy="-50" r="4.4" fill={lf} />
+        <circle cy="-50" r="4.4" fill={lg ? lg.core : lf} />
       </g>
-      {#if c.logo}<circle r="104" fill="none" stroke={ink(c.logo)} stroke-width="3" opacity=".7" filter="url(#{uid}-glow)" />{/if}
-    </g>
+    </g></g>
+    <!-- màn vừa thắp: tia lửa bay từ logo tới ký hoạ mới → bùng cháy + sóng lửa; ngày 28–30 thì sóng lớn quanh logo -->
+    {#if lighting && cur}
+      <g class="cg-light" fill="none" pointer-events="none">
+        {#if newest >= 0}
+          <circle class="cg-spark tail" cx="428" cy="262" r="10" fill={cur.glow} opacity=".6" filter="url(#{uid}-soft)" style="--dx:{(spark.x - 428).toFixed(1)}px; --dy:{(spark.y - 262).toFixed(1)}px" />
+          <circle class="cg-spark" cx="428" cy="262" r="5" fill={cur.core} filter="url(#{uid}-hot)" style="--dx:{(spark.x - 428).toFixed(1)}px; --dy:{(spark.y - 262).toFixed(1)}px" />
+          <circle class="cg-flash" cx={spark.x.toFixed(1)} cy={spark.y.toFixed(1)} r="46" fill={cur.glow} filter="url(#{uid}-soft)" />
+          <circle class="cg-wave" cx={spark.x.toFixed(1)} cy={spark.y.toFixed(1)} r="40" stroke={cur.mid} stroke-width="3" filter="url(#{uid}-hot)" />
+        {:else}
+          <circle class="cg-flash big" cx="428" cy="262" r="130" fill={cur.glow} filter="url(#{uid}-soft)" />
+          <circle class="cg-wave big" cx="428" cy="262" r="110" stroke={cur.mid} stroke-width="4" filter="url(#{uid}-hot)" />
+        {/if}
+      </g>
+    {/if}
     <!-- viền sáng (ngày 29) chỉ là ánh sáng mềm quanh mép, không phải khung -->
-    {#if c.border}<rect x="3" y="3" width="850" height="534" rx="38" fill="none" stroke={ink(c.border)} stroke-width="3" opacity=".55" filter="url(#{uid}-glow)" />{/if}
-    {#if c.burst}<rect width="856" height="540" rx="40" fill="url(#{uid}-holo)" class="cg-burst" />{/if}
+    {#if c.border}
+      {#if c.border === c.tier && c.day >= 28}<rect x="4" y="4" width="848" height="532" rx="37" fill="none" stroke={fire(c.border).glow} stroke-width="3.5" opacity=".75" filter="url(#{uid}-flame)" class="cg-border" />{/if}
+      <rect x="3" y="3" width="850" height="534" rx="38" fill="none" stroke={fire(c.border).mid} stroke-width="1.2" opacity=".55" />
+    {/if}
+    {#if c.burst}<rect width="856" height="540" rx="40" fill={c.tier === 'vo-cuc' ? `url(#${uid}-holo)` : `url(#${uid}-aura)`} class="cg-burst" class:tint={c.tier !== 'vo-cuc'} />{/if}
   </svg>
   <span class="sc-glare" aria-hidden="true"></span>
 </div>
