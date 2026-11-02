@@ -1,0 +1,117 @@
+{
+ "id": "thue-tai-nguyen",
+ "subject": "tai-chinh",
+ "chapter": "v12",
+ "term": "Thuế tài nguyên",
+ "definition": "Khoáng sản kim loại. Khoáng sản không kim loại. Dầu thô. Khí thiên nhiên, khí than. Sản phẩm của rừng tự nhiên, trừ động vật. Hải sản tự nhiên, bao gồm động vật và thực vật biển. Nước thiên nhiên, bao gồm nước mặt và nước dưới đất, trừ nước thiên nhiên dùng cho nông nghiệp, lâm nghiệp, ngư nghiệp, diêm nghiệp. Yến sào thiên nhiên. (…) Người nộp thuế tài nguyên là tổ chức, cá nhân khai thác tài nguyên thuộc đối tượng chịu thuế tài nguyên, trừ trường hợp khai thác tài nguyên đối với mỏ, cụm mỏ, lô dầu khí khai thác tận thu theo quy định của pháp luật về dầu khí.",
+ "plain": "Đối tượng: tài nguyên THIÊN NHIÊN thuộc chủ quyền Việt Nam — khoáng sản kim loại, không kim loại, dầu thô, khí thiên nhiên, sản phẩm rừng tự nhiên (trừ động vật), hải sản tự nhiên, nước thiên nhiên (trừ nước dùng cho nông, lâm, ngư, diêm nghiệp), yến sào thiên nhiên, tài nguyên khác do Ủy ban Thường vụ Quốc hội quy định. Người nộp: tổ chức, cá nhân KHAI THÁC. Thuế tài nguyên thu từ hoạt động thăm dò, khai thác dầu, khí thuộc ngân sách trung ương hưởng 100% (điểm c khoản 1 Điều 36 Luật NSNN 2025). Phân biệt với thuế bảo vệ môi trường (thu vào hàng hóa gây ô nhiễm).",
+ "example": "Công ty khai thác cát lòng sông và công ty khai thác nước ngầm để sản xuất nước đóng chai đều phải nộp thuế tài nguyên; hợp tác xã dùng nước sông tưới lúa thì không thuộc đối tượng chịu thuế.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 2; khoản 1 Điều 3 Luật Thuế tài nguyên 2009 (VBHN 23/VBHN-VPQH 2022)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thue-Phi-Le-Phi/Van-ban-hop-nhat-23-VBHN-VPQH-2022-Luat-Thue-tai-nguyen-559964.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "thue-khac",
+  "le-phi-mon-bai",
+  "thue"
+ ],
+ "keywords": [
+  "tài nguyên thiên nhiên",
+  "tổ chức, cá nhân khai thác",
+  "trừ nước dùng cho nông, lâm, ngư, diêm nghiệp",
+  "yến sào thiên nhiên"
+ ],
+ "note": "Luật Thuế tài nguyên 45/2009/QH12 có hiệu lực từ 01/7/2010, sửa đổi bởi Luật 71/2014/QH13 và Luật Dầu khí 12/2022/QH15; văn bản hợp nhất 23/VBHN-VPQH 2022 — chưa kiểm tra sửa đổi sau năm 2022.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai là người nộp thuế tài nguyên?",
+   "options": [
+    "Tổ chức, cá nhân khai thác tài nguyên thuộc đối tượng chịu thuế",
+    "Người tiêu dùng sản phẩm",
+    "Cơ quan quản lý tài nguyên",
+    "Người mua lại sản phẩm"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 3 Luật Thuế tài nguyên 2009 (VBHN 23/VBHN-VPQH 2022)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tài nguyên nào KHÔNG thuộc đối tượng chịu thuế tài nguyên?",
+   "options": [
+    "Nước thiên nhiên dùng cho nông nghiệp",
+    "Dầu thô",
+    "Khoáng sản kim loại",
+    "Yến sào thiên nhiên"
+   ],
+   "answer": 0,
+   "explain": "Khoản 7 Điều 2.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 2 Luật Thuế tài nguyên 2009 (VBHN 23/VBHN-VPQH 2022)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Chịu thuế tài nguyên",
+   "right": "Không chịu thuế tài nguyên",
+   "cases": [
+    {
+     "text": "Nước ngầm khai thác để sản xuất nước đóng chai",
+     "answer": "left"
+    },
+    {
+     "text": "Nước sông dùng để tưới lúa",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 7 Điều 2."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đối tượng chịu thuế tài nguyên gồm khoáng sản {{kim loại}}, khoáng sản không kim loại, {{dầu thô}}.",
+   "bank_extra": [
+    "nhân tạo",
+    "xăng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người nộp thuế tài nguyên là tổ chức, cá nhân {{khai thác}} tài nguyên thuộc đối tượng chịu thuế tài nguyên.",
+   "bank_extra": [
+    "tiêu thụ",
+    "vận chuyển"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Sản phẩm của rừng tự nhiên, kể cả động vật, là đối tượng chịu thuế tài nguyên.",
+   "answer": false,
+   "explain": "Sai. Khoản 5 Điều 2: sản phẩm của rừng tự nhiên, trừ động vật."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu đối tượng chịu thuế và người nộp thuế tài nguyên.",
+   "model": "Khoáng sản kim loại, không kim loại, dầu thô, khí thiên nhiên, khí than, sản phẩm rừng tự nhiên (trừ động vật), hải sản tự nhiên, nước thiên nhiên (trừ dùng cho nông, lâm, ngư, diêm nghiệp), yến sào thiên nhiên (Điều 2); người nộp: tổ chức, cá nhân khai thác (Điều 3).",
+   "keywords": [
+    "khoáng sản",
+    "khai thác",
+    "nước thiên nhiên",
+    "yến sào"
+   ]
+  }
+ ]
+}

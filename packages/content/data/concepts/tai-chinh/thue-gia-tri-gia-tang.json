@@ -8,8 +8,8 @@
  "example": "Nhà máy mua vải 100 (thuế 10), bán áo 150 (thuế 15): nhà máy nộp 15 − 10 = 5, đúng bằng thuế trên phần giá trị tăng thêm 50.",
  "source": {
   "kind": "statute",
-  "cite": "Điều 2, 3 Luật Thuế giá trị gia tăng 2024 (VBHN 12/VBHN-VPQH 2026)",
-  "url": "https://thuvienphapluat.vn/van-ban/Thue-Phi-Le-Phi/Van-ban-hop-nhat-12-VBHN-VPQH-2026-Luat-Thue-gia-tri-gia-tang-694824.aspx"
+  "cite": "Điều 2, 3 Luật Thuế giá trị gia tăng 2024 (VBHN 114/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thue-Phi-Le-Phi/Van-ban-hop-nhat-114-VBHN-VPQH-2026-Luat-Thue-Gia-tri-gia-tang-708152.aspx"
  },
  "checked": "2026-11-01",
  "confusables": [
@@ -23,7 +23,7 @@
   "tiêu dùng ở Việt Nam",
   "khấu trừ – trực tiếp"
  ],
- "note": "Luật Thuế GTGT 48/2024/QH15 có hiệu lực từ 01/7/2025, thay thế Luật 13/2008/QH12; được sửa đổi bởi Luật 90/2025/QH15, Luật 149/2025/QH15 và Nghị quyết 204/2025/QH15 (giảm 2% thuế suất 10% xuống 8% cho nhiều nhóm hàng hóa, dịch vụ, từ 01/7/2025 đến hết 31/12/2026).",
+ "note": "Luật Thuế GTGT 48/2024/QH15 có hiệu lực từ 01/7/2025, thay thế Luật 13/2008/QH12; được sửa đổi bởi Luật 90/2025/QH15, Luật 149/2025/QH15, Luật 09/2026/QH16 (văn bản hợp nhất 114/VBHN-VPQH 2026); Nghị quyết 204/2025/QH15 giảm 2% thuế suất 10% xuống 8% cho nhiều nhóm hàng hóa, dịch vụ, từ 01/7/2025 đến hết 31/12/2026.",
  "items": [
   {
    "type": "mcq",
@@ -39,7 +39,7 @@
    "explain": "Điều 2.",
    "source": {
     "kind": "statute",
-    "cite": "Điều 2 Luật Thuế giá trị gia tăng 2024 (VBHN 12/VBHN-VPQH 2026)"
+    "cite": "Điều 2 Luật Thuế giá trị gia tăng 2024 (VBHN 114/VBHN-VPQH 2026)"
    }
   },
   {
@@ -56,7 +56,7 @@
    "explain": "Điều 3.",
    "source": {
     "kind": "statute",
-    "cite": "Điều 3 Luật Thuế giá trị gia tăng 2024 (VBHN 12/VBHN-VPQH 2026)"
+    "cite": "Điều 3 Luật Thuế giá trị gia tăng 2024 (VBHN 114/VBHN-VPQH 2026)"
    }
   },
   {

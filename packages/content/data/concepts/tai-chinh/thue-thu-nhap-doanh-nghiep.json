@@ -4,7 +4,7 @@
  "chapter": "v10",
  "term": "Thuế thu nhập doanh nghiệp: người nộp thuế và thuế suất",
  "definition": "Thuế suất thuế thu nhập doanh nghiệp là 20%, trừ trường hợp quy định tại các khoản 2, 3 và 4 Điều này và đối tượng được ưu đãi về thuế suất quy định tại Điều 13 của Luật này. Thuế suất 15% áp dụng đối với doanh nghiệp có tổng doanh thu năm không quá 03 tỷ đồng. Thuế suất 17% áp dụng đối với doanh nghiệp có tổng doanh thu năm từ trên 03 tỷ đồng đến không quá 50 tỷ đồng.",
- "plain": "Người nộp thuế (Điều 2): tổ chức sản xuất, kinh doanh có thu nhập chịu thuế — doanh nghiệp Việt Nam, doanh nghiệp nước ngoài (có hoặc không có cơ sở thường trú), HTX, đơn vị sự nghiệp, tổ chức khác. Thuế suất MỚI theo quy mô: 15% (doanh thu năm ≤ 03 tỷ), 17% (trên 03 đến ≤ 50 tỷ), 20% (phổ thông); dầu khí 25–50%; tài nguyên quý hiếm 50% (khoản 4). Doanh thu xác định theo kỳ tính thuế TRƯỚC LIỀN KỀ. Thu nhập tính thuế = thu nhập chịu thuế − thu nhập miễn thuế − lỗ được kết chuyển (Điều 7).",
+ "plain": "Người nộp thuế (Điều 2): tổ chức sản xuất, kinh doanh có thu nhập chịu thuế — doanh nghiệp Việt Nam, doanh nghiệp nước ngoài (có hoặc không có cơ sở thường trú), HTX, đơn vị sự nghiệp, tổ chức khác. Thuế suất MỚI theo quy mô: 15% (doanh thu năm ≤ 03 tỷ), 17% (trên 03 đến ≤ 50 tỷ), 20% (phổ thông); dầu khí 25–50%; tài nguyên quý hiếm 50% (khoản 4). Doanh thu xác định theo kỳ tính thuế TRƯỚC LIỀN KỀ. Thu nhập tính thuế = thu nhập chịu thuế − thu nhập miễn thuế − lỗ được kết chuyển (Điều 7). Ưu đãi mới: doanh nghiệp, tổ chức có doanh thu năm dưới mức Chính phủ quy định được MIỄN thuế (khoản 14a Điều 4, bổ sung bởi Luật 09/2026/QH16); doanh nghiệp nhỏ và vừa được miễn thuế TNDN 03 năm kể từ khi được cấp Giấy chứng nhận đăng ký doanh nghiệp lần đầu (khoản 4 Điều 10 Nghị quyết 198/2025/QH15).",
  "example": "Công ty khởi nghiệp có doanh thu năm 2025 là 2,5 tỷ đồng: năm 2026 áp dụng thuế suất TNDN 15%; nếu doanh thu năm trước là 30 tỷ thì 17%.",
  "source": {
   "kind": "statute",
@@ -23,7 +23,7 @@
   "17% từ trên 03 đến 50 tỷ",
   "doanh thu kỳ trước liền kề"
  ],
- "note": "Luật Thuế TNDN 67/2025/QH15 có hiệu lực từ 01/10/2025, áp dụng từ kỳ tính thuế năm 2025, thay thế Luật 14/2008/QH12.",
+ "note": "Luật Thuế TNDN 67/2025/QH15 có hiệu lực từ 01/10/2025, áp dụng từ kỳ tính thuế năm 2025, thay thế Luật 14/2008/QH12; Luật 09/2026/QH16 bổ sung khoản 14a Điều 4 (miễn thuế cho doanh nghiệp có doanh thu năm dưới mức Chính phủ quy định, áp dụng từ 01/01/2026); văn bản hợp nhất 61/VBHN-VPQH 2026 hợp nhất thêm một số luật 2025 — Điều 2, 10 không đổi.",
  "items": [
   {
    "type": "mcq",

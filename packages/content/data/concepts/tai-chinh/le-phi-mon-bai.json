@@ -1,0 +1,117 @@
+{
+ "id": "le-phi-mon-bai",
+ "subject": "tai-chinh",
+ "chapter": "v12",
+ "term": "Chấm dứt thu lệ phí môn bài và bỏ thuế khoán",
+ "definition": "Hộ kinh doanh, cá nhân kinh doanh không áp dụng phương pháp khoán thuế từ ngày 01 tháng 01 năm 2026. Hộ kinh doanh, cá nhân kinh doanh nộp thuế theo pháp luật về quản lý thuế. Chấm dứt việc thu, nộp lệ phí môn bài từ ngày 01 tháng 01 năm 2026.",
+ "plain": "Hai thay đổi lớn từ 01/01/2026 theo Nghị quyết 198/2025/QH15 (Nghị quyết được ưu tiên áp dụng khi có quy định khác với luật — khoản 2 Điều 17): (1) LỆ PHÍ MÔN BÀI (trước đây thu hằng năm theo Nghị định 139/2016/NĐ-CP) CHẤM DỨT thu, nộp; (2) BỎ THUẾ KHOÁN với hộ, cá nhân kinh doanh — chuyển sang tự kê khai theo Luật Quản lý thuế. Cùng Điều 10 còn có ưu đãi: miễn thuế TNDN 03 năm cho doanh nghiệp nhỏ và vừa thành lập mới (khoản 4); miễn, giảm thuế cho khởi nghiệp sáng tạo (khoản 1–3). Đề cương HLU vấn đề 12.2 (pháp luật lệ phí môn bài) vì vậy đã lỗi thời.",
+ "example": "Một công ty thành lập tháng 3/2026 không phải khai, nộp lệ phí môn bài; chủ quán phở trước đây nộp thuế khoán thì từ năm 2026 phải tự kê khai thuế theo doanh thu thực tế.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 6, 7 Điều 10 Nghị quyết 198/2025/QH15 về phát triển kinh tế tư nhân",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Nghi-quyet-198-2025-QH15-co-che-chinh-sach-dac-biet-phat-trien-kinh-te-tu-nhan-657148.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "thue-khac",
+  "thue-tai-nguyen",
+  "nguyen-tac-quan-ly-thue"
+ ],
+ "keywords": [
+  "chấm dứt thu lệ phí môn bài",
+  "từ 01/01/2026",
+  "bỏ phương pháp khoán thuế",
+  "nộp thuế theo pháp luật quản lý thuế"
+ ],
+ "note": "Nghị quyết 198/2025/QH15 của Quốc hội (ban hành 17/5/2025) có hiệu lực từ ngày thông qua; khoản 6, 7 Điều 10 áp dụng từ 01/01/2026.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Từ ngày 01/01/2026, lệ phí môn bài được xử lý thế nào theo Nghị quyết 198/2025/QH15?",
+   "options": [
+    "Chấm dứt việc thu, nộp",
+    "Tăng mức thu",
+    "Chỉ thu với doanh nghiệp lớn",
+    "Chuyển thành thuế tài nguyên"
+   ],
+   "answer": 0,
+   "explain": "Khoản 7 Điều 10.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 10 Nghị quyết 198/2025/QH15 về phát triển kinh tế tư nhân"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Từ ngày 01/01/2026, hộ kinh doanh nộp thuế theo phương pháp nào?",
+   "options": [
+    "Không áp dụng khoán thuế; nộp thuế theo pháp luật về quản lý thuế",
+    "Tiếp tục khoán thuế",
+    "Không phải nộp thuế",
+    "Nộp lệ phí môn bài thay thuế"
+   ],
+   "answer": 0,
+   "explain": "Khoản 6 Điều 10.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 10 Nghị quyết 198/2025/QH15 về phát triển kinh tế tư nhân"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Trước 01/01/2026",
+   "right": "Từ 01/01/2026",
+   "cases": [
+    {
+     "text": "Hộ kinh doanh có thể nộp thuế khoán",
+     "answer": "left"
+    },
+    {
+     "text": "Hộ kinh doanh nộp thuế theo pháp luật quản lý thuế, không khoán",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 6 Điều 10 Nghị quyết 198/2025/QH15."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "{{Chấm dứt}} việc thu, nộp lệ phí môn bài từ ngày 01 tháng 01 năm {{2026}}.",
+   "bank_extra": [
+    "Tăng",
+    "2027"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hộ kinh doanh, cá nhân kinh doanh không áp dụng phương pháp {{khoán thuế}} từ ngày 01 tháng 01 năm 2026.",
+   "bank_extra": [
+    "kê khai",
+    "khấu trừ"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Năm 2026 doanh nghiệp mới thành lập vẫn phải nộp lệ phí môn bài.",
+   "answer": false,
+   "explain": "Sai. Khoản 7 Điều 10 Nghị quyết 198/2025/QH15: chấm dứt thu, nộp lệ phí môn bài từ 01/01/2026."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các thay đổi về lệ phí môn bài và thuế khoán theo Nghị quyết 198/2025/QH15.",
+   "model": "Chấm dứt thu, nộp lệ phí môn bài từ 01/01/2026 (khoản 7 Điều 10); hộ, cá nhân kinh doanh không áp dụng khoán thuế từ 01/01/2026, nộp thuế theo pháp luật quản lý thuế (khoản 6 Điều 10).",
+   "keywords": [
+    "lệ phí môn bài",
+    "01/01/2026",
+    "khoán thuế",
+    "quản lý thuế"
+   ]
+  }
+ ]
+}

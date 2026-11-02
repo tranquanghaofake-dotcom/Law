@@ -10,16 +10,16 @@ const norm = (s: string) => s.normalize('NFC').replace(/\(…\)/g, ' ').replace(
 
 describe('nội dung Luật Tài chính', () => {
   it('mọi khái niệm hợp lệ, nguồn statute (vấn đề học thuyết 6, 12 dùng nguồn textbook ghi rõ chưa đối chiếu), có recall và 2 cloze', () => {
-    expect(files.length).toBe(16);
+    expect(files.length).toBe(18);
     const TEXTBOOK_CH: string[] = ["v6", "v12"];
     for (const f of files) {
       const c = conceptSchema.parse(JSON.parse(readFileSync(join(dir, f), 'utf8')));
-      if (TEXTBOOK_CH.includes(c.chapter)) {
-        expect(c.source.kind, f).toBe('textbook');
+      if (c.source.kind === 'textbook') {
+        expect(TEXTBOOK_CH, f).toContain(c.chapter);
         expect(c.source.cite, f).toMatch(/chưa đối chiếu nguyên văn/);
       } else {
         expect(c.source.kind, f).toBe('statute');
-        expect(c.source.cite).toMatch(/(Luật Ngân sách nhà nước 2025 \(89\/2025\/QH15\)|Luật Thuế giá trị gia tăng 2024 \(VBHN 12\/VBHN-VPQH 2026\)|Luật Thuế thu nhập doanh nghiệp 2025 \(67\/2025\/QH15\)|Luật Thuế thu nhập cá nhân 2025 \(109\/2025\/QH15\)|Luật Thuế tiêu thụ đặc biệt 2025 \(66\/2025\/QH15\)|Luật Quản lý thuế 2025 \(108\/2025\/QH15\)|Luật Thuế xuất khẩu, thuế nhập khẩu 2016 \(VBHN 96\/VBHN-VPQH 2026\)|Luật Thuế sử dụng đất phi nông nghiệp 2010 \(VBHN 05\/VBHN-VPQH 2024\))$/);
+        expect(c.source.cite).toMatch(/(Luật Ngân sách nhà nước 2025 \(89\/2025\/QH15\)|Luật Thuế giá trị gia tăng 2024 \(VBHN 114\/VBHN-VPQH 2026\)|Luật Thuế thu nhập doanh nghiệp 2025 \(67\/2025\/QH15\)|Luật Thuế thu nhập cá nhân 2025 \(109\/2025\/QH15\)|Luật Thuế tiêu thụ đặc biệt 2025 \(66\/2025\/QH15\)|Luật Quản lý thuế 2025 \(108\/2025\/QH15\)|Luật Thuế xuất khẩu, thuế nhập khẩu 2016 \(VBHN 96\/VBHN-VPQH 2026\)|Luật Thuế sử dụng đất phi nông nghiệp 2010 \(VBHN 05\/VBHN-VPQH 2024\)|Luật Thuế tài nguyên 2009 \(VBHN 23\/VBHN-VPQH 2022\)|Nghị quyết 198\/2025\/QH15 về phát triển kinh tế tư nhân)$/);
         expect(c.source.url).toMatch(/^https:\/\/thuvienphapluat\.vn\//);
       }
       expect(c.checked).toBe('2026-11-01');
@@ -35,7 +35,7 @@ describe('nội dung Luật Tài chính', () => {
     }
   });
   it('definition xuất hiện nguyên văn trong văn bản luật (từng câu)', () => {
-    const LAWS: [string, string][] = [["Luật Thuế giá trị gia tăng", "lgtgt-2024.txt"], ["Luật Thuế thu nhập doanh nghiệp", "ltndn-2025.txt"], ["Luật Thuế thu nhập cá nhân", "ltncn-2025.txt"], ["Luật Thuế tiêu thụ đặc biệt", "lttdb-2025.txt"], ["Luật Quản lý thuế", "lqlt-2025.txt"], ["Luật Thuế xuất khẩu", "lxnk-vbhn-2026.txt"], ["Luật Thuế sử dụng đất phi nông nghiệp", "lpnn-vbhn-2024.txt"]];
+    const LAWS: [string, string][] = [["Luật Thuế giá trị gia tăng", "lgtgt-2024.txt"], ["Luật Thuế thu nhập doanh nghiệp", "ltndn-2025.txt"], ["Luật Thuế thu nhập cá nhân", "ltncn-2025.txt"], ["Luật Thuế tiêu thụ đặc biệt", "lttdb-2025.txt"], ["Luật Quản lý thuế", "lqlt-2025.txt"], ["Luật Thuế xuất khẩu", "lxnk-vbhn-2026.txt"], ["Luật Thuế sử dụng đất phi nông nghiệp", "lpnn-vbhn-2024.txt"], ["Luật Thuế tài nguyên", "lttn-vbhn-2022.txt"], ["Nghị quyết 198/2025", "nq198-2025.txt"]];
     const cache: Record<string, string> = {};
     const lawFor = (cite: string) => { const hit = LAWS.find(([k]) => cite.includes(k)); const file = hit ? hit[1] : 'lnsnn-2025.txt'; return (cache[file] ??= norm(readFileSync(join(root, 'laws', file), 'utf8'))); };
     for (const f of files) {

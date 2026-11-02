@@ -157,6 +157,8 @@
           "id": "tc12",
           "title": "Pháp luật về các loại thuế khác",
           "concepts": [
+            "thue-tai-nguyen",
+            "le-phi-mon-bai",
             "thue-khac"
           ]
         }

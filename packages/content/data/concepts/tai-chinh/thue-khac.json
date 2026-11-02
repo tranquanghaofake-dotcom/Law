@@ -2,38 +2,39 @@
  "id": "thue-khac",
  "subject": "tai-chinh",
  "chapter": "v12",
- "term": "Thuế tài nguyên, thuế bảo vệ môi trường và lệ phí môn bài",
- "definition": "Thuế tài nguyên là loại thuế thu đối với tổ chức, cá nhân khai thác tài nguyên thiên nhiên thuộc đối tượng chịu thuế. Thuế bảo vệ môi trường là loại thuế gián thu, thu vào sản phẩm, hàng hóa khi sử dụng gây tác động xấu đến môi trường.",
- "plain": "THUẾ TÀI NGUYÊN (Luật Thuế tài nguyên 45/2009/QH12, đã sửa đổi): khoáng sản kim loại, không kim loại, dầu thô, khí thiên nhiên, sản phẩm rừng tự nhiên, hải sản tự nhiên, nước thiên nhiên, yến sào…; người nộp là tổ chức, cá nhân KHAI THÁC. THUẾ BẢO VỆ MÔI TRƯỜNG (Luật 57/2010/QH12): xăng dầu, than, dung dịch HCFC, túi ni lông, thuốc diệt cỏ hạn chế…; thuế TUYỆT ĐỐI (mức tiền trên đơn vị hàng hóa). LỆ PHÍ MÔN BÀI: đã được BÃI BỎ — từ 01/01/2026 người nộp thuế không phải nộp lệ phí môn bài (Nghị quyết 198/2025/QH15; Nghị định 362/2025/NĐ-CP bãi bỏ Nghị định 139/2016/NĐ-CP). Các nội dung này CHƯA đối chiếu nguyên văn luật trong bộ dữ liệu.",
- "example": "Doanh nghiệp khai thác đá xây dựng nộp thuế tài nguyên trên sản lượng đá khai thác; khi nhập khẩu xăng thì nộp thuế bảo vệ môi trường theo mức tiền trên mỗi lít; năm 2026 doanh nghiệp mới thành lập không phải nộp lệ phí môn bài.",
+ "term": "Thuế bảo vệ môi trường",
+ "definition": "Thuế bảo vệ môi trường là loại thuế gián thu, thu vào sản phẩm, hàng hóa khi sử dụng gây tác động xấu đến môi trường.",
+ "plain": "Luật Thuế bảo vệ môi trường 57/2010/QH12 (đã sửa đổi; chưa tải văn bản hợp nhất để đối chiếu nguyên văn). Đối tượng chịu thuế thường nêu: xăng dầu, mỡ nhờn; than đá; dung dịch HCFC; túi ni lông thuộc diện chịu thuế; thuốc diệt cỏ, thuốc trừ mối, thuốc bảo quản lâm sản, thuốc khử trùng kho thuộc loại hạn chế sử dụng. Đặc điểm: thuế GIÁN THU, thu MỘT LẦN khi sản xuất hoặc nhập khẩu, thuế TUYỆT ĐỐI (mức tiền trên một đơn vị hàng hóa) theo Biểu thuế do Ủy ban Thường vụ Quốc hội quy định trong khung của Luật. Phân biệt với THUẾ TÀI NGUYÊN (thu khi khai thác tài nguyên) và PHÍ bảo vệ môi trường (thu với hoạt động xả thải, khai thác khoáng sản).",
+ "example": "Khi nhập khẩu xăng, doanh nghiệp nộp thuế bảo vệ môi trường theo mức tiền trên mỗi lít; người tiêu dùng chịu khoản thuế này trong giá bán lẻ.",
  "source": {
   "kind": "textbook",
   "cite": "Giáo trình Luật Tài chính / Luật Ngân sách nhà nước, Trường Đại học Luật Hà Nội; đề cương Luật Tài chính vấn đề 12 — tóm lược quan điểm học thuật phổ biến, chưa đối chiếu nguyên văn"
  },
  "checked": "2026-11-01",
  "confusables": [
-  "thue",
-  "thue-tieu-thu-dac-biet"
+  "thue-tai-nguyen",
+  "le-phi-mon-bai",
+  "thue"
  ],
  "keywords": [
-  "khai thác tài nguyên thiên nhiên",
-  "gây tác động xấu đến môi trường",
+  "thuế gián thu",
+  "tác động xấu đến môi trường",
   "thuế tuyệt đối",
-  "lệ phí môn bài bãi bỏ từ 2026"
+  "xăng dầu, than, túi ni lông"
  ],
  "items": [
   {
    "type": "mcq",
    "level": 1,
-   "q": "Ai là người nộp thuế tài nguyên?",
+   "q": "Thuế bảo vệ môi trường thuộc loại thuế nào?",
    "options": [
-    "Tổ chức, cá nhân khai thác tài nguyên thiên nhiên thuộc đối tượng chịu thuế",
-    "Người tiêu dùng sản phẩm",
-    "Cơ quan quản lý môi trường",
-    "Người mua đất"
+    "Thuế gián thu",
+    "Thuế trực thu",
+    "Phí dịch vụ",
+    "Lệ phí hành chính"
    ],
    "answer": 0,
-   "explain": "Học thuyết; Luật Thuế tài nguyên 45/2009/QH12.",
+   "explain": "Học thuyết.",
    "source": {
     "kind": "statute",
     "cite": "Học thuyết x"
@@ -42,15 +43,15 @@
   {
    "type": "mcq",
    "level": 1,
-   "q": "Từ năm 2026, lệ phí môn bài thế nào?",
+   "q": "Hàng hóa nào thường là đối tượng chịu thuế bảo vệ môi trường?",
    "options": [
-    "Bãi bỏ, người nộp thuế không phải nộp",
-    "Tăng gấp đôi",
-    "Chỉ áp dụng cho doanh nghiệp nhà nước",
-    "Chuyển thành thuế thu nhập"
+    "Xăng dầu",
+    "Gạo",
+    "Sách giáo khoa",
+    "Thuốc chữa bệnh"
    ],
    "answer": 0,
-   "explain": "Nghị quyết 198/2025/QH15; Nghị định 362/2025/NĐ-CP (chưa đối chiếu nguyên văn).",
+   "explain": "Học thuyết; Luật Thuế bảo vệ môi trường 57/2010/QH12 (chưa đối chiếu nguyên văn).",
    "source": {
     "kind": "statute",
     "cite": "Học thuyết x"
@@ -59,28 +60,19 @@
   {
    "type": "pair",
    "level": 2,
-   "left": "Thuế tài nguyên",
-   "right": "Thuế bảo vệ môi trường",
+   "left": "Thuế bảo vệ môi trường",
+   "right": "Thuế tài nguyên",
    "cases": [
     {
-     "text": "Thu khi khai thác khoáng sản",
+     "text": "Thu trên mỗi lít xăng",
      "answer": "left"
     },
     {
-     "text": "Thu trên mỗi lít xăng",
+     "text": "Thu khi khai thác khoáng sản",
      "answer": "right"
     }
    ],
-   "explain": "Học thuyết."
-  },
-  {
-   "type": "cloze",
-   "level": 3,
-   "text": "Thuế tài nguyên thu đối với tổ chức, cá nhân {{khai thác}} tài nguyên thiên nhiên.",
-   "bank_extra": [
-    "tiêu dùng",
-    "vận chuyển"
-   ]
+   "explain": "Học thuyết; Luật Thuế tài nguyên."
   },
   {
    "type": "cloze",
@@ -92,22 +84,31 @@
    ]
   },
   {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thuế bảo vệ môi trường tính theo mức tiền trên một {{đơn vị}} hàng hóa, gọi là thuế {{tuyệt đối}}.",
+   "bank_extra": [
+    "doanh thu",
+    "tỷ lệ"
+   ]
+  },
+  {
    "type": "truefalse",
    "level": 4,
-   "statement": "Năm 2026 doanh nghiệp vẫn phải nộp lệ phí môn bài hằng năm.",
+   "statement": "Thuế bảo vệ môi trường là thuế trực thu đánh vào thu nhập của doanh nghiệp gây ô nhiễm.",
    "answer": false,
-   "explain": "Sai. Lệ phí môn bài đã bãi bỏ từ 01/01/2026 (Nghị quyết 198/2025/QH15)."
+   "explain": "Sai. Đây là thuế gián thu, thu vào sản phẩm, hàng hóa gây tác động xấu đến môi trường."
   },
   {
    "type": "recall",
    "level": 5,
-   "q": "Nêu khái quát thuế tài nguyên, thuế bảo vệ môi trường và tình trạng lệ phí môn bài.",
-   "model": "Thuế tài nguyên thu đối với tổ chức, cá nhân khai thác tài nguyên thiên nhiên; thuế bảo vệ môi trường là thuế gián thu, tuyệt đối, thu vào hàng hóa gây tác động xấu đến môi trường (xăng dầu, than, túi ni lông…); lệ phí môn bài bãi bỏ từ 01/01/2026.",
+   "q": "Nêu khái niệm và đặc điểm của thuế bảo vệ môi trường.",
+   "model": "Thuế gián thu, thu vào sản phẩm, hàng hóa khi sử dụng gây tác động xấu đến môi trường (xăng dầu, than, HCFC, túi ni lông…); thu một lần khi sản xuất, nhập khẩu; thuế tuyệt đối theo biểu thuế.",
    "keywords": [
-    "khai thác",
     "gián thu",
     "môi trường",
-    "bãi bỏ"
+    "tuyệt đối",
+    "xăng dầu"
    ]
   }
  ]

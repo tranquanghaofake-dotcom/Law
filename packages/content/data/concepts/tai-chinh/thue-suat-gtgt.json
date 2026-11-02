@@ -8,8 +8,8 @@
  "example": "Một nhà hàng xuất hóa đơn tháng 11/2026: thuế suất GTGT áp dụng là 8% (giảm từ 10% theo Nghị quyết 204/2025/QH15); từ 01/01/2027, nếu không có nghị quyết mới, trở lại 10%.",
  "source": {
   "kind": "statute",
-  "cite": "Khoản 3 Điều 9 Luật Thuế giá trị gia tăng 2024 (VBHN 12/VBHN-VPQH 2026)",
-  "url": "https://thuvienphapluat.vn/van-ban/Thue-Phi-Le-Phi/Van-ban-hop-nhat-12-VBHN-VPQH-2026-Luat-Thue-gia-tri-gia-tang-694824.aspx"
+  "cite": "Khoản 3 Điều 9 Luật Thuế giá trị gia tăng 2024 (VBHN 114/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thue-Phi-Le-Phi/Van-ban-hop-nhat-114-VBHN-VPQH-2026-Luat-Thue-Gia-tri-gia-tang-708152.aspx"
  },
  "checked": "2026-11-01",
  "confusables": [
@@ -22,7 +22,7 @@
   "dịch vụ số của nhà cung cấp nước ngoài",
   "giảm còn 8% đến 31/12/2026"
  ],
- "note": "Luật Thuế GTGT 48/2024/QH15 có hiệu lực từ 01/7/2025, thay thế Luật 13/2008/QH12; được sửa đổi bởi Luật 90/2025/QH15, Luật 149/2025/QH15 và Nghị quyết 204/2025/QH15 (giảm 2% thuế suất 10% xuống 8% cho nhiều nhóm hàng hóa, dịch vụ, từ 01/7/2025 đến hết 31/12/2026).",
+ "note": "Luật Thuế GTGT 48/2024/QH15 có hiệu lực từ 01/7/2025, thay thế Luật 13/2008/QH12; được sửa đổi bởi Luật 90/2025/QH15, Luật 149/2025/QH15, Luật 09/2026/QH16 (văn bản hợp nhất 114/VBHN-VPQH 2026); Nghị quyết 204/2025/QH15 giảm 2% thuế suất 10% xuống 8% cho nhiều nhóm hàng hóa, dịch vụ, từ 01/7/2025 đến hết 31/12/2026.",
  "items": [
   {
    "type": "mcq",
@@ -38,7 +38,7 @@
    "explain": "Khoản 3 Điều 9.",
    "source": {
     "kind": "statute",
-    "cite": "Điều 9 Luật Thuế giá trị gia tăng 2024 (VBHN 12/VBHN-VPQH 2026)"
+    "cite": "Điều 9 Luật Thuế giá trị gia tăng 2024 (VBHN 114/VBHN-VPQH 2026)"
    }
   },
   {
@@ -55,7 +55,7 @@
    "explain": "Khoản 1 Điều 9.",
    "source": {
     "kind": "statute",
-    "cite": "Điều 9 Luật Thuế giá trị gia tăng 2024 (VBHN 12/VBHN-VPQH 2026)"
+    "cite": "Điều 9 Luật Thuế giá trị gia tăng 2024 (VBHN 114/VBHN-VPQH 2026)"
    }
   },
   {
