@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { cardAt, cardFor, justLit, progressOf, isMilestone, CARD_DAYS, GLYPHS, TIERS } from '$lib/game/card';
+import { cardAt, cardFor, justLit, progressOf, isMilestone, streakMedals, CARD_DAYS, GLYPHS, TIERS } from '$lib/game/card';
 
 describe('thẻ chuyên cần (theo tiến độ trong vòng 30)', () => {
   it('chuỗi 0: thẻ tắt hết, không kỷ lục', () => {
@@ -69,5 +69,14 @@ describe('vừa thắp chuỗi', () => {
     expect(justLit(5, 5)).toBe(false);
     expect(justLit(1, 9)).toBe(true); // chuỗi mới bắt đầu lại sau khi đứt vẫn là vừa thắp
     expect(justLit(0, 3)).toBe(false);
+  });
+});
+
+describe('kỷ niệm chương vòng lửa (trưng trong tủ)', () => {
+  it('chưa xong vòng nào: không có', () => expect(streakMedals(24)).toEqual([]));
+  it('mỗi vòng hoàn tất (theo chuỗi dài nhất) được một chương theo màu vòng đó; vòng sau cấp cuối cộng dồn', () => {
+    expect(streakMedals(25)).toEqual([{ tier: 'do', count: 1 }]);
+    const n = Array.from({ length: 400 }, (_, i) => i).find((d) => progressOf(d) >= 5 * CARD_DAYS)!;
+    expect(streakMedals(n)).toEqual([{ tier: 'do', count: 1 }, { tier: 'lam', count: 1 }, { tier: 'tim', count: 1 }, { tier: 'trang-den', count: 2 }]);
   });
 });

@@ -49,7 +49,7 @@
 <section class="card wide career">
   <div class="career-grid">
     <div class="career-portrait">
-      <Portrait avatar={drawn} {accent} tier={t.tier} celebrate={celebrating} ondone={doneCelebrate} title={t.title} subtitle={`${earned.length} sách · ${earned.filter((b) => b.level === 3).length} cấp 3`} books={display} medals={cs.achieved.size} />
+      <Portrait avatar={drawn} {accent} tier={t.tier} celebrate={celebrating} ondone={doneCelebrate} title={t.title} subtitle={`${earned.length} sách · ${earned.filter((b) => b.level === 3).length} cấp 3`} books={display} />
       <div class="plaque">
         <p class="kicker">{t.tier ? TIER_NAMES[t.tier] : 'Khởi đầu'}</p>
         <p class="plaque-title">{t.title}</p>

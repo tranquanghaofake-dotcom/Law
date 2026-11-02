@@ -16,7 +16,7 @@
   import { ring } from './kit';
   type ShelfBook = { key: string; scheme: BookScheme; level: BookLevel; label: string };
   let { avatar, title = 'Công dân', subtitle = '', books = [], tier = null, celebrate = false, ondone }:
-    { avatar: Avatar; title?: string; subtitle?: string; accent?: string; books?: ShelfBook[]; medals?: number; tier?: PostTier | null; celebrate?: boolean; ondone?: () => void } = $props();
+    { avatar: Avatar; title?: string; subtitle?: string; accent?: string; books?: ShelfBook[]; tier?: PostTier | null; celebrate?: boolean; ondone?: () => void } = $props();
   const uid = `pt${++seq}`;
   const motes = Array.from({ length: 14 }, (_, i) => ({ x: 18 + ((i * 37) % 64), y: 12 + ((i * 53) % 60), d: (i % 5) * 1.3, s: 6 + (i % 4) * 2 }));
   const gold = Array.from({ length: 22 }, (_, i) => ({ x: 4 + ((i * 41) % 92), d: (i % 7) * 0.12, r: (i * 47) % 360 }));

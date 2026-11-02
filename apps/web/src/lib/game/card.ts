@@ -52,3 +52,14 @@ export function cardAt(count: number, longest: number): CardState {
 export function justLit(count: number, seen: number | null): boolean {
   return seen !== null && count > 0 && count !== seen;
 }
+
+/** Kỷ niệm chương trưng trong tủ: mỗi vòng 30 ngày tiến độ đã hoàn tất (theo chuỗi dài nhất) được một chương màu của vòng đó. */
+export function streakMedals(longest: number): { tier: Tier; count: number }[] {
+  const done = Math.floor(progressOf(longest) / CARD_DAYS);
+  const out: { tier: Tier; count: number }[] = [];
+  for (let k = 0; k < done; k++) {
+    const t = tierOf(k), last = out[out.length - 1];
+    if (last && last.tier === t) last.count++; else out.push({ tier: t, count: 1 });
+  }
+  return out;
+}
