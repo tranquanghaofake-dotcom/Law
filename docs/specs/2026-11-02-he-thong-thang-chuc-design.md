@@ -210,8 +210,14 @@ Không vẽ Quốc huy, sao, vạch cấp hiệu hay biểu tượng ngành th�
 ### 3.16 Bốn cấp lửa và mốc thúc đẩy (Hào, 02/11/2026)
 
 - **4 cấp lửa** theo vòng: đỏ (lõi vàng) → xanh lam → tím → **trắng–đen giao thoa** (lửa trắng bạc, vệt đen chạy dọc nét như tia điện trên nền đen; cấp cuối, giữ mãi). Thay 6 màu cũ (bỏ "trắng", "đen ánh kim", "vô cực" tách rời).
-- **Mỗi vòng đủ 30 ngày tiến độ.** Ngày chuỗi chạm **mốc 1, 5, 10, 15…** được thêm 1 ngày tiến độ (`progressOf`, `isMilestone`), nhưng không vượt mốc 30 của vòng nên ngày logo thắp không bị nhảy qua. Vòng đầu xong sau 25 ngày học thật. Chú thích thẻ ghi "tiến độ X/30" và "(mốc: +1 ngày)".
+- **Mỗi vòng đủ 30 ngày tiến độ.** Ngày chuỗi chạm **mốc 1, 5, 10, 15…** được thêm 1 ngày tiến độ (`progressOf`, `isMilestone`), nhưng không vượt mốc 30 của vòng nên ngày logo thắp không bị nhảy qua. Vòng đầu xong sau 25 ngày học thật. Chú thích thẻ gọn: "màu · X/30 · chuỗi N ngày · mốc +1 · kỷ lục M".
 - Số trong huy hiệu vẫn là số ngày chuỗi thật.
+
+### 3.17 Tinh chỉnh "clean mà wow" (02/11/2026)
+
+- Bớt rối: vệt đen cấp trắng–đen mảnh và thưa, chạy chậm; vòng hoa văn quanh số mờ hơn; hình phụ nền mờ hơn.
+- Chất liệu: vệt sáng lướt chéo qua thẻ mỗi ~8 giây (nhanh hơn khi rê chuột); cạnh thẻ có đường sáng mảnh như kim loại; số trong huy hiệu khắc chìm.
+- Mượt: thu nhỏ vùng filter lửa.
 
 ## 4. Dữ liệu
 - Store mới (IndexedDB): `books` (chapterId → cấp cao nhất, ngày đạt), `career` (nhánh đang chọn, chức danh đã đạt), `card` (kỷ lục màu). Migration từ dữ liệu cũ: tính sách từ `progress` hiện có. XP vẫn giữ, chỉ hiển thị phụ.

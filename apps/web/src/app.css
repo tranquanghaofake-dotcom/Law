@@ -642,9 +642,12 @@ h1 { text-wrap: balance; }
 @keyframes cgborn { 0% { transform: scale(.4); opacity: 0; filter: brightness(3); } 60% { transform: scale(1.22); opacity: 1; filter: brightness(1.8); } 100% { transform: scale(1); filter: brightness(1); } }
 @keyframes cgfadein { from { opacity: 0; } to { opacity: 1; } }
 .sc-wrap.mini .streak-card * { animation: none !important; }
-.cg-inter { stroke-dasharray: 5 13; animation: cginter 1.6s linear infinite; }
-.cg-inter.slow { stroke-dasharray: 3 17; animation-duration: 3.2s; opacity: .8; }
-@keyframes cginter { to { stroke-dashoffset: -36; } }
+.cg-inter { stroke-dasharray: 2.5 21; stroke-width: 1.1; opacity: .75; animation: cginter 2.6s linear infinite; }
+.cg-inter.slow { stroke-dasharray: 2 26; animation-duration: 4s; opacity: .55; }
+.cg-sheen { animation: cgsheen 8s cubic-bezier(.45, 0, .2, 1) 1.5s infinite; }
+.sc-wrap.on .cg-sheen { animation-duration: 3.5s; }
+@keyframes cgsheen { 0% { transform: rotate(18deg) translateX(0); } 22%, 100% { transform: rotate(18deg) translateX(1260px); } }
+@keyframes cginter { to { stroke-dashoffset: -47; } }
 .cg-burst { mix-blend-mode: soft-light; animation: cgburst 3s ease-in-out infinite alternate; }
 @keyframes cgflick { 0%, 100% { opacity: 1; } 40% { opacity: .85; } 70% { opacity: .95; } }
 @keyframes cgignite { 0%, 100% { transform: scale(1); filter: brightness(1); } 40% { transform: scale(1.08); filter: brightness(1.7); } }

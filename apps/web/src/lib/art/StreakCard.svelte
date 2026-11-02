@@ -62,9 +62,12 @@
     for (let j = 0; j <= 6; j++) { const r = 150 - j * 11, w = j % 2 ? 7 : -7, aa = a + (w / r); d += `${j ? 'L' : 'M'}${(Math.cos(aa) * r).toFixed(1)} ${(Math.sin(aa) * r * 0.82).toFixed(1)}`; }
     return d;
   });
-  const caption = $derived([c.tier ? `${TIER_NAMES[c.tier]} · tiến độ ${c.day}/30` : 'Chưa bắt đầu chuỗi', `chuỗi ${count} ngày${isMilestone(count) ? ' (mốc: +1 ngày)' : ''}`, `kỷ lục ${Math.max(longest, count)} ngày${c.record ? ` (${TIER_NAMES[c.record]})` : ''}`].join(' · '));
+  const best = $derived(Math.max(longest, count));
+  const caption = $derived([c.tier ? `${TIER_NAMES[c.tier]} · ${c.day}/30` : 'Chưa bắt đầu chuỗi', `chuỗi ${count} ngày${isMilestone(count) ? ' · mốc +1' : ''}`,
+    `kỷ lục ${best}${c.record && c.record !== c.tier ? ` (${TIER_NAMES[c.record]})` : ''}`].join(' · '));
   const lf = $derived(c.logo ? `url(#${uid}-lotus)` : `url(#${uid}-ash)`);
   const lg = $derived(c.logo ? FIRE[c.logo] : null);
+  const fs = $derived(String(count).length >= 3 ? 40 : 54);
   // Rê chuột: độ nghiêng chạy theo lò xo (mỗi khung hình tiến 12% về đích) nên mượt, có quán tính; lớp doodle trôi ngược
   // chiều (parallax), logo nổi lên. Rời chuột: trôi êm về giữa rồi dừng vòng lặp.
   let el: HTMLDivElement | undefined = $state();
@@ -121,7 +124,10 @@
       <filter id="{uid}-hand" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="7" /><feDisplacementMap in="SourceGraphic" scale="2.2" /></filter>
       <filter id="{uid}-soft" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="14" /></filter>
       <!-- lửa: làm nhoè rồi xé mép bằng nhiễu chuyển động, cộng quầng rộng -->
-      <filter id="{uid}-flame" x="-10%" y="-20%" width="120%" height="140%">
+      <clipPath id="{uid}-clip"><rect width="856" height="540" rx="40" /></clipPath>
+      <linearGradient id="{uid}-sheen" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0" /><stop offset=".5" stop-color="#fff" stop-opacity=".09" /><stop offset="1" stop-color="#fff" stop-opacity="0" /></linearGradient>
+      <linearGradient id="{uid}-edge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".22" /><stop offset=".35" stop-color="#fff" stop-opacity=".04" /><stop offset="1" stop-color="#000" stop-opacity=".5" /></linearGradient>
+      <filter id="{uid}-flame" x="-6%" y="-12%" width="112%" height="124%">
         <feTurbulence type="fractalNoise" baseFrequency=".016 .06" numOctaves="3" seed="3" result="n">
           <animate attributeName="baseFrequency" dur="2.4s" values=".016 .06;.02 .08;.014 .05;.016 .06" repeatCount="indefinite" />
         </feTurbulence>
@@ -141,7 +147,7 @@
     <!-- nền doodle: 27 hình pháp luật sáng dần theo ngày + hình phụ lấp khe; nét rung nhẹ như vẽ tay; mờ quanh logo -->
     <g class="cg-par-bg" mask="url(#{uid}-hole)" fill="none" stroke-linecap="round" stroke-linejoin="round">
       <g filter="url(#{uid}-hand)">
-        <g stroke="url(#{uid}-gold)" stroke-width=".9" opacity=".13">
+        <g stroke="url(#{uid}-gold)" stroke-width=".9" opacity=".09">
           {#each fillers as fl, i (i)}<path d={fl.d} transform="translate({fl.x.toFixed(1)} {fl.y.toFixed(1)}) rotate({fl.rot.toFixed(0)}) scale(1.5)" />{/each}
         </g>
         {#each doodles as dd, i (i)}
@@ -203,15 +209,18 @@
         <circle cy="-129" r="6" fill={lg ? lg.core : '#8a8a92'} stroke="none" />
       </g>
       <!-- vòng hoa văn + đĩa số -->
-      <g class="cg-rosette" fill="none" stroke={lg ? lg.mid : '#76767e'} stroke-width=".8" opacity={lg ? 0.7 : 0.3}>
+      <g class="cg-rosette" fill="none" stroke={lg ? lg.mid : '#76767e'} stroke-width=".8" opacity={lg ? 0.38 : 0.22}>
         {#each rosette as a (a)}<ellipse rx="80" ry="27" transform="rotate({a})" />{/each}
       </g>
       {#if c.charge}<circle r="66" fill="none" stroke={fire(c.charge).glow} stroke-width="3" opacity=".6" class="cg-charge" filter="url(#{uid}-hot)" />{/if}
       <circle r="60" fill="url(#{uid}-disc)" stroke={lg ? lg.core : '#5e5e66'} stroke-width="2.4" />
       <circle r="53" fill="none" stroke={lg ? lg.mid : '#55555c'} stroke-width="1" stroke-dasharray="1 4" />
       {#if lg}<circle r="40" fill={lg.glow} opacity=".3" filter="url(#{uid}-soft)" class="cg-core" />{/if}
-      <text class="cg-count" y="1" text-anchor="middle" dominant-baseline="central" font-size={String(count).length >= 3 ? 40 : 54}
-        fill={lg ? `url(#${uid}-lotus)` : `url(#${uid}-ash)`} filter={lg ? `url(#${uid}-hot)` : `url(#${uid}-emboss)`}>{count}</text>
+      <!-- số khắc chìm: bóng tối lệch xuống + viền sáng mảnh lệch lên, rồi chữ chính -->
+      <text class="cg-count" y="2.4" text-anchor="middle" dominant-baseline="central" font-size={fs} fill="#000" opacity=".6">{count}</text>
+      <text class="cg-count" y="-.6" text-anchor="middle" dominant-baseline="central" font-size={fs} fill="#fff" opacity=".18">{count}</text>
+      <text class="cg-count" y="1" text-anchor="middle" dominant-baseline="central" font-size={fs}
+        fill={lg ? `url(#${uid}-lotus)` : `url(#${uid}-ash)`} filter={lg ? `url(#${uid}-hot)` : undefined}>{count}</text>
     </g></g>
     <!-- màn vừa thắp: tia lửa bay từ logo tới ký hoạ mới → bùng cháy + sóng lửa; ngày 28–30 thì sóng lớn quanh logo -->
     {#if lighting && cur}
@@ -233,6 +242,11 @@
       <rect x="3" y="3" width="850" height="534" rx="38" fill="none" stroke={fire(c.border).mid} stroke-width="1.2" opacity=".55" />
     {/if}
     {#if c.burst}<rect width="856" height="540" rx="40" fill="url(#{uid}-aura)" class="cg-burst tint" />{/if}
+    <!-- chất liệu thẻ: vệt sáng lướt chéo định kỳ + cạnh kim loại mảnh -->
+    {#if size === 'full'}
+      <g clip-path="url(#{uid}-clip)" pointer-events="none"><rect class="cg-sheen" x="-260" y="-60" width="200" height="660" fill="url(#{uid}-sheen)" transform="rotate(18 0 270)" /></g>
+    {/if}
+    <rect x="1.5" y="1.5" width="853" height="537" rx="39" fill="none" stroke="url(#{uid}-edge)" stroke-width="1.6" />
   </svg>
   <span class="sc-glare" aria-hidden="true"></span>
 </div>
