@@ -1,0 +1,116 @@
+{
+ "id": "tcdn-doanh-thu",
+ "subject": "tai-chinh-doanh-nghiep",
+ "chapter": "v3",
+ "term": "Doanh thu tính thu nhập chịu thuế",
+ "definition": "Doanh thu để tính thu nhập chịu thuế là toàn bộ tiền bán hàng, tiền gia công, tiền cung ứng dịch vụ kể cả trợ giá, phụ thu, phụ trội mà doanh nghiệp được hưởng, không phân biệt đã thu được tiền hay chưa thu được tiền.",
+ "plain": "Doanh thu gồm tiền bán hàng, gia công, cung ứng dịch vụ, KỂ CẢ trợ giá, phụ thu, phụ trội. Điểm mấu chốt: ghi nhận khi doanh nghiệp ĐƯỢC HƯỞNG, KHÔNG PHÂN BIỆT ĐÃ THU TIỀN HAY CHƯA (cơ sở dồn tích). Phân biệt DOANH THU với THU NHẬP: thu nhập chịu thuế = doanh thu − chi phí được trừ + thu nhập khác (Điều 7). Đề cương lưu ý so sánh thời điểm ghi nhận theo chuẩn mực kế toán và theo luật thuế.",
+ "example": "Công ty G giao hàng trị giá 200 triệu đồng trong tháng 12, khách hẹn trả tháng 2 năm sau: 200 triệu vẫn là doanh thu của kỳ tính thuế năm nay.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 8 Luật Thuế thu nhập doanh nghiệp 2025 (67/2025/QH15)",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-Thue-thu-nhap-doanh-nghiep-2025-so-67-2025-QH15-580594.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tcdn-chi-phi-duoc-tru",
+  "tcdn-co-tuc"
+ ],
+ "keywords": [
+  "tiền bán hàng",
+  "trợ giá, phụ thu, phụ trội",
+  "được hưởng",
+  "không phân biệt đã thu tiền"
+ ],
+ "note": "Luật Thuế TNDN 67/2025/QH15 có hiệu lực từ 01/10/2025, áp dụng từ kỳ tính thuế năm 2025, thay thế Luật 14/2008/QH12 mà đề cương còn dẫn; Điều 8, 9 không bị Luật 09/2026/QH16 sửa (đã so với văn bản hợp nhất 113/VBHN-VPQH 2026).",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 1 Điều 8, doanh thu tính thu nhập chịu thuế có phụ thuộc việc đã thu tiền chưa?",
+   "options": [
+    "Không phân biệt đã thu được tiền hay chưa",
+    "Chỉ tính khi đã thu tiền",
+    "Chỉ tính khi xuất hóa đơn đỏ",
+    "Chỉ tính khi khách xác nhận nợ"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 8.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 8 Luật Thuế thu nhập doanh nghiệp 2025 (67/2025/QH15)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khoản nào được tính vào doanh thu theo khoản 1 Điều 8?",
+   "options": [
+    "Phụ thu mà doanh nghiệp được hưởng",
+    "Tiền vốn góp của thành viên",
+    "Tiền vay ngân hàng",
+    "Tiền nhận ký quỹ của khách"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 8.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 8 Luật Thuế thu nhập doanh nghiệp 2025 (67/2025/QH15)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Doanh thu",
+   "right": "Không phải doanh thu",
+   "cases": [
+    {
+     "text": "Tiền gia công hàng cho khách",
+     "answer": "left"
+    },
+    {
+     "text": "Tiền phát hành trái phiếu",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 8 Luật Thuế TNDN."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Doanh thu là toàn bộ tiền bán hàng, tiền {{gia công}}, tiền cung ứng dịch vụ kể cả trợ giá, phụ thu, {{phụ trội}} mà doanh nghiệp được hưởng.",
+   "bank_extra": [
+    "vay",
+    "vốn góp"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Doanh thu được tính không phân biệt đã {{thu được tiền}} hay {{chưa thu được tiền}}.",
+   "bank_extra": [
+    "ký hợp đồng",
+    "đăng ký kinh doanh"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Doanh nghiệp chỉ ghi nhận doanh thu tính thuế khi khách hàng đã thanh toán.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 8: không phân biệt đã thu được tiền hay chưa thu được tiền."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm doanh thu tính thu nhập chịu thuế.",
+   "model": "Toàn bộ tiền bán hàng, gia công, cung ứng dịch vụ kể cả trợ giá, phụ thu, phụ trội mà doanh nghiệp được hưởng, không phân biệt đã thu tiền hay chưa (khoản 1 Điều 8 Luật Thuế TNDN 2025).",
+   "keywords": [
+    "bán hàng",
+    "phụ thu",
+    "được hưởng",
+    "chưa thu tiền"
+   ]
+  }
+ ]
+}

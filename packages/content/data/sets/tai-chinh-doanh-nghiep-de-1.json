@@ -1,0 +1,139 @@
+{
+  "id": "tai-chinh-doanh-nghiep-de-1",
+  "group": "tai-chinh-doanh-nghiep",
+  "title": "Đề kiểm tra Pháp luật tài chính doanh nghiệp – Vốn",
+  "subtitle": "10 câu theo đề cương HLU, vấn đề 1–2",
+  "updated": "2026-11-01",
+  "questions": [
+    {
+      "q": "Doanh nghiệp được thành lập nhằm mục đích gì?",
+      "options": [
+        "Kinh doanh",
+        "Phi lợi nhuận",
+        "Quản lý nhà nước",
+        "Từ thiện"
+      ],
+      "answer": 0,
+      "explain": "Khoản 10 Điều 4.",
+      "basis": "Khoản 10 Điều 4 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+    },
+    {
+      "q": "Quyền lựa chọn phương thức huy động, sử dụng vốn được quy định ở đâu?",
+      "options": [
+        "Khoản 3 Điều 7",
+        "Điều 69",
+        "Điều 135",
+        "Điều 201"
+      ],
+      "answer": 0,
+      "explain": "Khoản 3 Điều 7.",
+      "basis": "Khoản 3 Điều 7 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+    },
+    {
+      "q": "Vốn điều lệ công ty cổ phần khi thành lập là gì?",
+      "options": [
+        "Tổng mệnh giá cổ phần đã bán hoặc được đăng ký mua",
+        "Tổng giá thị trường cổ phiếu",
+        "Tổng tài sản",
+        "Tổng vốn vay"
+      ],
+      "answer": 0,
+      "explain": "Khoản 34 Điều 4.",
+      "basis": "Khoản 34 Điều 4 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+    },
+    {
+      "q": "Tài sản nào KHÔNG cần định giá khi góp vốn?",
+      "options": [
+        "Quyền sử dụng đất",
+        "Vàng",
+        "Bí quyết kỹ thuật",
+        "Máy móc"
+      ],
+      "answer": 1,
+      "explain": "Khoản 1 Điều 36.",
+      "basis": "Khoản 1 Điều 36 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+    },
+    {
+      "q": "Định giá tài sản góp vốn cao hơn thực tế khi thành lập thì ai chịu trách nhiệm góp thêm?",
+      "options": [
+        "Các thành viên, cổ đông sáng lập liên đới",
+        "Riêng người góp tài sản",
+        "Công ty",
+        "Tổ chức thẩm định giá"
+      ],
+      "answer": 0,
+      "explain": "Khoản 2 Điều 36.",
+      "basis": "Khoản 2 Điều 36 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+    },
+    {
+      "q": "Chào bán cổ phần nhằm mục đích gì?",
+      "options": [
+        "Tăng vốn điều lệ",
+        "Vay vốn",
+        "Trả nợ",
+        "Giảm vốn"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 123.",
+      "basis": "Khoản 1 Điều 123 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+    },
+    {
+      "q": "Đăng ký thay đổi vốn điều lệ sau đợt bán cổ phần trong thời hạn nào?",
+      "options": [
+        "10 ngày",
+        "30 ngày",
+        "90 ngày",
+        "6 tháng"
+      ],
+      "answer": 0,
+      "explain": "Khoản 4 Điều 123.",
+      "basis": "Khoản 4 Điều 123 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+    },
+    {
+      "q": "Trái phiếu xác nhận quyền đối với gì?",
+      "options": [
+        "Một phần nợ của tổ chức phát hành",
+        "Một phần vốn cổ phần",
+        "Quyền mua cổ phiếu",
+        "Một phần vốn góp của quỹ"
+      ],
+      "answer": 0,
+      "explain": "Khoản 3 Điều 4.",
+      "basis": "Khoản 3 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+      "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+    },
+    {
+      "q": "Chào bán trái phiếu riêng lẻ của công ty cổ phần không đại chúng cho dưới bao nhiêu nhà đầu tư (không kể nhà đầu tư chuyên nghiệp)?",
+      "options": [
+        "50",
+        "100",
+        "200",
+        "500"
+      ],
+      "answer": 1,
+      "explain": "Khoản 2 Điều 128.",
+      "basis": "Khoản 2 Điều 128 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+    },
+    {
+      "q": "Tài sản nào là tài sản góp vốn?",
+      "options": [
+        "Quyền sở hữu trí tuệ",
+        "Quyền bầu cử",
+        "Danh dự cá nhân",
+        "Quyền nhân thân"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 34.",
+      "basis": "Khoản 1 Điều 34 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+    }
+  ]
+}

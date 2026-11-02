@@ -1,0 +1,85 @@
+{
+  "id": "tai-chinh-doanh-nghiep",
+  "title": "Pháp luật tài chính doanh nghiệp",
+  "short": "Tài chính DN",
+  "chapters": [
+    {
+      "id": "v1",
+      "title": "Vấn đề 1. Những vấn đề chung của pháp luật tài chính doanh nghiệp",
+      "lessons": [
+        {
+          "id": "tcdn1",
+          "title": "Những vấn đề chung của pháp luật tài chính doanh nghiệp",
+          "concepts": [
+            "tcdn-doanh-nghiep",
+            "tcdn-quyen-ve-von"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v2",
+      "title": "Vấn đề 2. Pháp luật về vốn của doanh nghiệp",
+      "lessons": [
+        {
+          "id": "tcdn2",
+          "title": "Pháp luật về vốn của doanh nghiệp",
+          "concepts": [
+            "tcdn-von-dieu-le",
+            "tcdn-gop-von",
+            "tcdn-dinh-gia-tai-san-gop-von",
+            "tcdn-chao-ban-co-phan",
+            "tcdn-trai-phieu",
+            "tcdn-trai-phieu-rieng-le"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v3",
+      "title": "Vấn đề 3. Pháp luật về doanh thu, chi phí và phân phối lợi nhuận",
+      "lessons": [
+        {
+          "id": "tcdn3",
+          "title": "Pháp luật về doanh thu, chi phí và phân phối lợi nhuận",
+          "concepts": [
+            "tcdn-doanh-thu",
+            "tcdn-chi-phi-duoc-tru",
+            "tcdn-co-tuc",
+            "tcdn-chia-loi-nhuan-tnhh"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v4",
+      "title": "Vấn đề 4. Pháp luật về công khai thông tin tài chính doanh nghiệp",
+      "lessons": [
+        {
+          "id": "tcdn4",
+          "title": "Pháp luật về công khai thông tin tài chính doanh nghiệp",
+          "concepts": [
+            "tcdn-doi-tuong-cong-bo-thong-tin",
+            "tcdn-cong-bo-thong-tin-dnnn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v5",
+      "title": "Vấn đề 5. Pháp luật tài chính doanh nghiệp trong mua bán, sáp nhập",
+      "lessons": [
+        {
+          "id": "tcdn5",
+          "title": "Pháp luật tài chính doanh nghiệp trong mua bán, sáp nhập",
+          "concepts": [
+            "tcdn-sap-nhap",
+            "tcdn-hop-nhat",
+            "tcdn-mua-lai-doanh-nghiep",
+            "tcdn-tap-trung-kinh-te"
+          ]
+        }
+      ]
+    }
+  ]
+}

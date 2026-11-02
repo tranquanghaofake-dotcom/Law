@@ -1,0 +1,116 @@
+{
+ "id": "tcdn-doanh-nghiep",
+ "subject": "tai-chinh-doanh-nghiep",
+ "chapter": "v1",
+ "term": "Doanh nghiệp — chủ thể của quan hệ tài chính doanh nghiệp",
+ "definition": "Doanh nghiệp là tổ chức có tên riêng, có tài sản, có trụ sở giao dịch, được thành lập hoặc đăng ký thành lập theo quy định của pháp luật nhằm mục đích kinh doanh.",
+ "plain": "Tài chính doanh nghiệp là toàn bộ quan hệ tạo lập, phân phối và sử dụng các quỹ tiền tệ của doanh nghiệp (quan điểm học thuật). Pháp luật tài chính doanh nghiệp điều chỉnh quan hệ giữa doanh nghiệp với: CHỦ SỞ HỮU (góp vốn, chia lợi nhuận), NHÀ NƯỚC (thuế, công khai thông tin), CHỦ NỢ, NHÀ ĐẦU TƯ (vay, trái phiếu) và quan hệ NỘI BỘ (sử dụng vốn, trích lập quỹ). Dấu hiệu pháp lý của doanh nghiệp: có tên riêng, có TÀI SẢN, có trụ sở, được thành lập/đăng ký theo pháp luật, mục đích KINH DOANH.",
+ "example": "Công ty TNHH A vay ngân hàng (quan hệ với chủ nợ), nộp thuế TNDN (quan hệ với Nhà nước), chia lợi nhuận cho thành viên (quan hệ với chủ sở hữu): đều là quan hệ tài chính doanh nghiệp.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 10 Điều 4 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tcdn-quyen-ve-von",
+  "tcdn-von-dieu-le"
+ ],
+ "keywords": [
+  "tên riêng",
+  "tài sản",
+  "trụ sở giao dịch",
+  "mục đích kinh doanh"
+ ],
+ "note": "Luật Doanh nghiệp 59/2020/QH14 có hiệu lực từ 01/01/2021, thay thế Luật Doanh nghiệp 2014 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 03/2022/QH15 và Luật 76/2025/QH15 (hiệu lực 01/7/2025) — văn bản hợp nhất 67/VBHN-VPQH 2025.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Dấu hiệu nào thuộc định nghĩa doanh nghiệp tại khoản 10 Điều 4 Luật Doanh nghiệp?",
+   "options": [
+    "Có tài sản",
+    "Có tư cách pháp nhân trong mọi trường hợp",
+    "Có vốn tối thiểu 10 tỷ đồng",
+    "Do Nhà nước sở hữu"
+   ],
+   "answer": 0,
+   "explain": "Khoản 10 Điều 4: tên riêng, tài sản, trụ sở giao dịch, thành lập theo pháp luật, mục đích kinh doanh.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 10 Điều 4 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Doanh nghiệp được thành lập nhằm mục đích gì?",
+   "options": [
+    "Kinh doanh",
+    "Từ thiện",
+    "Quản lý nhà nước",
+    "Nghiên cứu khoa học thuần túy"
+   ],
+   "answer": 0,
+   "explain": "Khoản 10 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 10 Điều 4 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quan hệ giữa doanh nghiệp với Nhà nước",
+   "right": "Quan hệ giữa doanh nghiệp với chủ sở hữu",
+   "cases": [
+    {
+     "text": "Nộp thuế thu nhập doanh nghiệp",
+     "answer": "left"
+    },
+    {
+     "text": "Chia lợi nhuận cho thành viên công ty",
+     "answer": "right"
+    }
+   ],
+   "explain": "Học thuyết pháp luật tài chính doanh nghiệp."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Doanh nghiệp là tổ chức có tên riêng, có {{tài sản}}, có trụ sở giao dịch, được thành lập hoặc đăng ký thành lập theo quy định của pháp luật nhằm mục đích {{kinh doanh}}.",
+   "bank_extra": [
+    "vốn nhà nước",
+    "phi lợi nhuận"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Pháp luật tài chính doanh nghiệp tập trung vào tạo lập và sử dụng {{vốn}}, quản lý tài sản, doanh thu, chi phí, phân phối {{lợi nhuận}} của doanh nghiệp.",
+   "bank_extra": [
+    "ngân sách",
+    "thuế quan"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi tổ chức có tài sản và trụ sở đều là doanh nghiệp.",
+   "answer": false,
+   "explain": "Sai. Còn phải được thành lập hoặc đăng ký theo pháp luật và nhằm mục đích kinh doanh (khoản 10 Điều 4)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm doanh nghiệp và các nhóm quan hệ tài chính doanh nghiệp.",
+   "model": "Tổ chức có tên riêng, tài sản, trụ sở giao dịch, được thành lập/đăng ký theo pháp luật nhằm mục đích kinh doanh (khoản 10 Điều 4); quan hệ tài chính với chủ sở hữu, Nhà nước, chủ nợ, nhà đầu tư và nội bộ doanh nghiệp.",
+   "keywords": [
+    "tên riêng",
+    "tài sản",
+    "kinh doanh",
+    "chủ sở hữu"
+   ]
+  }
+ ]
+}

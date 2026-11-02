@@ -1,0 +1,117 @@
+{
+ "id": "tcdn-trai-phieu",
+ "subject": "tai-chinh-doanh-nghiep",
+ "chapter": "v2",
+ "term": "Trái phiếu — huy động vốn vay",
+ "definition": "Trái phiếu là loại chứng khoán xác nhận quyền và lợi ích hợp pháp của người sở hữu đối với một phần nợ của tổ chức phát hành.",
+ "plain": "Trái phiếu = VỐN VAY: người mua là CHỦ NỢ, doanh nghiệp phải trả gốc và lãi theo điều kiện phát hành, không làm thay đổi quyền sở hữu doanh nghiệp. So sánh: CỔ PHIẾU xác nhận quyền đối với một phần VỐN CỔ PHẦN (khoản 2 Điều 4) — người sở hữu là chủ sở hữu, nhận cổ tức khi có lợi nhuận. Công ty TNHH và công ty cổ phần đều được phát hành trái phiếu theo quy định pháp luật.",
+ "example": "Công ty E phát hành trái phiếu kỳ hạn 3 năm, lãi 9%/năm để xây nhà máy: người mua trái phiếu là chủ nợ của E, không phải cổ đông.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 3 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tcdn-chao-ban-co-phan",
+  "tcdn-trai-phieu-rieng-le",
+  "tcdn-von-dieu-le"
+ ],
+ "keywords": [
+  "chứng khoán",
+  "phần nợ",
+  "tổ chức phát hành",
+  "chủ nợ"
+ ],
+ "note": "Luật Chứng khoán 54/2019/QH14 có hiệu lực từ 01/01/2021, sửa đổi bởi Luật 56/2024/QH15 (hiệu lực 01/01/2025) — văn bản hợp nhất 102/VBHN-VPQH 2026.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trái phiếu xác nhận quyền của người sở hữu đối với gì?",
+   "options": [
+    "Một phần nợ của tổ chức phát hành",
+    "Một phần vốn cổ phần",
+    "Một phần vốn góp của quỹ",
+    "Quyền mua cổ phiếu"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người sở hữu trái phiếu có tư cách gì đối với doanh nghiệp phát hành?",
+   "options": [
+    "Chủ nợ",
+    "Cổ đông",
+    "Thành viên góp vốn",
+    "Người quản lý"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Trái phiếu",
+   "right": "Cổ phiếu",
+   "cases": [
+    {
+     "text": "Xác nhận quyền đối với một phần nợ",
+     "answer": "left"
+    },
+    {
+     "text": "Xác nhận quyền đối với một phần vốn cổ phần",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 2, 3 Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Trái phiếu là loại chứng khoán xác nhận quyền và lợi ích hợp pháp của người sở hữu đối với một phần {{nợ}} của tổ chức {{phát hành}}.",
+   "bank_extra": [
+    "vốn cổ phần",
+    "lưu ký"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Cổ phiếu xác nhận quyền đối với một phần {{vốn cổ phần}}; trái phiếu xác nhận quyền đối với một phần {{nợ}}.",
+   "bank_extra": [
+    "lợi nhuận",
+    "tài sản cố định"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người mua trái phiếu doanh nghiệp trở thành cổ đông của doanh nghiệp.",
+   "answer": false,
+   "explain": "Sai. Khoản 3 Điều 4: trái phiếu xác nhận một phần nợ — người sở hữu là chủ nợ."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Phân biệt trái phiếu và cổ phiếu trong huy động vốn của doanh nghiệp.",
+   "model": "Trái phiếu xác nhận quyền đối với một phần nợ (khoản 3 Điều 4) — vốn vay, phải hoàn trả; cổ phiếu xác nhận quyền đối với một phần vốn cổ phần (khoản 2) — vốn chủ sở hữu.",
+   "keywords": [
+    "phần nợ",
+    "vốn cổ phần",
+    "vốn vay",
+    "chủ sở hữu"
+   ]
+  }
+ ]
+}

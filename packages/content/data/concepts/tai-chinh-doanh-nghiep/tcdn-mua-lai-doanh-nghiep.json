@@ -1,0 +1,116 @@
+{
+ "id": "tcdn-mua-lai-doanh-nghiep",
+ "subject": "tai-chinh-doanh-nghiep",
+ "chapter": "v5",
+ "term": "Mua lại doanh nghiệp",
+ "definition": "Mua lại doanh nghiệp là việc một doanh nghiệp trực tiếp hoặc gián tiếp mua toàn bộ hoặc một phần vốn góp, tài sản của doanh nghiệp khác đủ để kiểm soát, chi phối doanh nghiệp hoặc một ngành, nghề của doanh nghiệp bị mua lại.",
+ "plain": "Dấu hiệu: mua TRỰC TIẾP hoặc GIÁN TIẾP toàn bộ hoặc MỘT PHẦN vốn góp, tài sản — miễn là ĐỦ ĐỂ KIỂM SOÁT, CHI PHỐI doanh nghiệp hoặc một ngành, nghề của doanh nghiệp đó. Khác sáp nhập: doanh nghiệp bị mua lại VẪN TỒN TẠI. Đây là hình thức TẬP TRUNG KINH TẾ: nếu đạt ngưỡng thì phải thông báo cho Ủy ban Cạnh tranh Quốc gia trước khi thực hiện (Điều 33). Trong M&A, vấn đề tài chính: định giá doanh nghiệp, thuế chuyển nhượng vốn, kế thừa rủi ro tài chính.",
+ "example": "Công ty S mua 65% vốn điều lệ của Công ty T: S kiểm soát T, T vẫn tồn tại độc lập về pháp lý — đây là mua lại doanh nghiệp.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 4 Điều 29 Luật Cạnh tranh 2018",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tcdn-sap-nhap",
+  "tcdn-tap-trung-kinh-te",
+  "tcdn-hop-nhat"
+ ],
+ "keywords": [
+  "trực tiếp hoặc gián tiếp",
+  "toàn bộ hoặc một phần vốn góp, tài sản",
+  "kiểm soát, chi phối",
+  "ngành, nghề"
+ ],
+ "note": "Luật Cạnh tranh 23/2018/QH14 có hiệu lực từ 01/7/2019, thay thế Luật Cạnh tranh 2004 mà đề cương còn dẫn; chưa có văn bản sửa đổi có hiệu lực.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Mua lại doanh nghiệp theo Luật Cạnh tranh đòi hỏi điều gì?",
+   "options": [
+    "Mua đủ để kiểm soát, chi phối doanh nghiệp hoặc một ngành, nghề của doanh nghiệp bị mua lại",
+    "Mua toàn bộ 100% vốn",
+    "Doanh nghiệp bị mua phải chấm dứt tồn tại",
+    "Phải có quyết định của Tòa án"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 29.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 29 Luật Cạnh tranh 2018"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Sau khi bị mua lại, doanh nghiệp bị mua lại có tiếp tục tồn tại không?",
+   "options": [
+    "Có, nhưng bị kiểm soát, chi phối",
+    "Không, chấm dứt tồn tại",
+    "Chuyển thành chi nhánh bắt buộc",
+    "Bị giải thể"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 29.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 29 Luật Cạnh tranh 2018"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Mua lại doanh nghiệp",
+   "right": "Đầu tư tài chính thông thường",
+   "cases": [
+    {
+     "text": "Mua 60% vốn để chi phối công ty khác",
+     "answer": "left"
+    },
+    {
+     "text": "Mua 0,1% cổ phiếu để hưởng cổ tức",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 4 Điều 29."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Mua lại doanh nghiệp là việc một doanh nghiệp trực tiếp hoặc {{gián tiếp}} mua toàn bộ hoặc một phần vốn góp, tài sản của doanh nghiệp khác đủ để {{kiểm soát}}, chi phối.",
+   "bank_extra": [
+    "ngẫu nhiên",
+    "tư vấn"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Mua lại có thể nhằm kiểm soát, chi phối doanh nghiệp hoặc một {{ngành, nghề}} của doanh nghiệp {{bị mua lại}}.",
+   "bank_extra": [
+    "khu vực",
+    "mua lại"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mua lại doanh nghiệp chỉ xảy ra khi mua 100% vốn của doanh nghiệp khác.",
+   "answer": false,
+   "explain": "Sai. Khoản 4 Điều 29: toàn bộ hoặc một phần vốn góp, tài sản, miễn là đủ để kiểm soát, chi phối."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm mua lại doanh nghiệp và phân biệt với sáp nhập.",
+   "model": "Một doanh nghiệp trực tiếp hoặc gián tiếp mua toàn bộ hoặc một phần vốn góp, tài sản của doanh nghiệp khác đủ để kiểm soát, chi phối doanh nghiệp hoặc một ngành, nghề (khoản 4 Điều 29 Luật Cạnh tranh); khác sáp nhập: bên bị mua vẫn tồn tại.",
+   "keywords": [
+    "vốn góp, tài sản",
+    "kiểm soát, chi phối",
+    "vẫn tồn tại"
+   ]
+  }
+ ]
+}

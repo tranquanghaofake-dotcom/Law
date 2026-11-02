@@ -1,0 +1,116 @@
+{
+ "id": "tcdn-dinh-gia-tai-san-gop-von",
+ "subject": "tai-chinh-doanh-nghiep",
+ "chapter": "v2",
+ "term": "Định giá tài sản góp vốn",
+ "definition": "Tài sản góp vốn không phải là Đồng Việt Nam, ngoại tệ tự do chuyển đổi, vàng phải được các thành viên, cổ đông sáng lập hoặc tổ chức thẩm định giá định giá và được thể hiện thành Đồng Việt Nam.",
+ "plain": "Chỉ tiền đồng, ngoại tệ tự do chuyển đổi, vàng KHÔNG cần định giá. Tài sản khác: thành viên, cổ đông sáng lập định giá theo NGUYÊN TẮC ĐỒNG THUẬN hoặc tổ chức THẨM ĐỊNH GIÁ định giá (khi thành lập, giá do tổ chức thẩm định giá đưa ra phải được trên 50% số thành viên, cổ đông sáng lập chấp thuận — khoản 2). Định giá CAO HƠN thực tế: các thành viên, cổ đông sáng lập LIÊN ĐỚI góp thêm phần chênh lệch và liên đới chịu trách nhiệm thiệt hại do cố ý định giá sai. Ý nghĩa tài chính: bảo đảm vốn điều lệ là THẬT, bảo vệ chủ nợ.",
+ "example": "Một chiếc máy in công nghiệp trị giá thực tế 500 triệu đồng được các thành viên định giá 800 triệu: các thành viên phải liên đới góp thêm 300 triệu đồng chênh lệch.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 36 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tcdn-gop-von",
+  "tcdn-von-dieu-le"
+ ],
+ "keywords": [
+  "không phải Đồng Việt Nam, ngoại tệ, vàng",
+  "đồng thuận",
+  "tổ chức thẩm định giá",
+  "liên đới góp thêm"
+ ],
+ "note": "Luật Doanh nghiệp 59/2020/QH14 có hiệu lực từ 01/01/2021, thay thế Luật Doanh nghiệp 2014 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 03/2022/QH15 và Luật 76/2025/QH15 (hiệu lực 01/7/2025) — văn bản hợp nhất 67/VBHN-VPQH 2025.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tài sản góp vốn nào KHÔNG phải định giá?",
+   "options": [
+    "Vàng",
+    "Quyền sử dụng đất",
+    "Quyền sở hữu trí tuệ",
+    "Máy móc thiết bị"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 36.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 36 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khi thành lập, nếu tài sản góp vốn bị định giá cao hơn giá trị thực tế thì sao?",
+   "options": [
+    "Các thành viên, cổ đông sáng lập liên đới góp thêm số chênh lệch",
+    "Công ty giảm vốn điều lệ, không ai chịu trách nhiệm",
+    "Chỉ người góp tài sản bị phạt hành chính",
+    "Hợp đồng góp vốn tự động vô hiệu"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 36.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 36 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Phải định giá",
+   "right": "Không phải định giá",
+   "cases": [
+    {
+     "text": "Quyền sử dụng đất",
+     "answer": "left"
+    },
+    {
+     "text": "Ngoại tệ tự do chuyển đổi",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 36."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tài sản góp vốn không phải là Đồng Việt Nam, ngoại tệ tự do chuyển đổi, {{vàng}} phải được các thành viên, cổ đông sáng lập hoặc tổ chức {{thẩm định giá}} định giá.",
+   "bank_extra": [
+    "bạc",
+    "công chứng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Khi thành lập, thành viên, cổ đông sáng lập định giá theo nguyên tắc {{đồng thuận}}; nếu do tổ chức thẩm định giá định giá thì phải được trên {{50%}} số thành viên, cổ đông sáng lập chấp thuận.",
+   "bank_extra": [
+    "đa số",
+    "30%"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Ngoại tệ tự do chuyển đổi góp vào công ty phải được tổ chức thẩm định giá định giá.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 36: Đồng Việt Nam, ngoại tệ tự do chuyển đổi, vàng không phải định giá."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quy định định giá tài sản góp vốn khi thành lập doanh nghiệp.",
+   "model": "Tài sản không phải tiền đồng, ngoại tệ tự do chuyển đổi, vàng phải được định giá thành Đồng Việt Nam (khoản 1); khi thành lập: định giá đồng thuận hoặc tổ chức thẩm định giá với trên 50% chấp thuận; định giá cao hơn thực tế thì liên đới góp thêm chênh lệch (khoản 2 Điều 36).",
+   "keywords": [
+    "Đồng Việt Nam",
+    "đồng thuận",
+    "thẩm định giá",
+    "liên đới"
+   ]
+  }
+ ]
+}

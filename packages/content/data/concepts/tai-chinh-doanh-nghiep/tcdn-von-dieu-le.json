@@ -1,0 +1,117 @@
+{
+ "id": "tcdn-von-dieu-le",
+ "subject": "tai-chinh-doanh-nghiep",
+ "chapter": "v2",
+ "term": "Vốn điều lệ",
+ "definition": "Vốn điều lệ là tổng giá trị tài sản do các thành viên công ty, chủ sở hữu công ty đã góp hoặc cam kết góp khi thành lập công ty trách nhiệm hữu hạn, công ty hợp danh; là tổng mệnh giá cổ phần đã bán hoặc được đăng ký mua khi thành lập công ty cổ phần.",
+ "plain": "Vốn điều lệ là bộ phận VỐN CHỦ SỞ HỮU. Công ty TNHH, hợp danh: tổng giá trị tài sản ĐÃ GÓP hoặc CAM KẾT GÓP; công ty cổ phần: tổng MỆNH GIÁ cổ phần đã bán hoặc được đăng ký mua. Phân biệt với VỐN VAY (vay ngân hàng, phát hành trái phiếu): phải hoàn trả, không làm thay đổi quyền sở hữu. Vốn điều lệ là căn cứ xác định tỷ lệ sở hữu, quyền biểu quyết, chia lợi nhuận và giới hạn trách nhiệm của thành viên, cổ đông.",
+ "example": "Ba người lập công ty TNHH, cam kết góp lần lượt 600, 300, 100 triệu đồng: vốn điều lệ 1 tỷ đồng; tỷ lệ phần vốn góp 60%, 30%, 10%.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 34 Điều 4 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tcdn-gop-von",
+  "tcdn-chao-ban-co-phan",
+  "tcdn-trai-phieu"
+ ],
+ "keywords": [
+  "tổng giá trị tài sản",
+  "đã góp hoặc cam kết góp",
+  "tổng mệnh giá cổ phần",
+  "vốn chủ sở hữu"
+ ],
+ "note": "Luật Doanh nghiệp 59/2020/QH14 có hiệu lực từ 01/01/2021, thay thế Luật Doanh nghiệp 2014 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 03/2022/QH15 và Luật 76/2025/QH15 (hiệu lực 01/7/2025) — văn bản hợp nhất 67/VBHN-VPQH 2025.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Vốn điều lệ của công ty cổ phần khi thành lập được xác định thế nào?",
+   "options": [
+    "Tổng mệnh giá cổ phần đã bán hoặc được đăng ký mua",
+    "Tổng giá trị thị trường của cổ phiếu",
+    "Tổng tài sản của công ty",
+    "Tổng số vốn vay"
+   ],
+   "answer": 0,
+   "explain": "Khoản 34 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 34 Điều 4 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khoản nào KHÔNG phải vốn điều lệ?",
+   "options": [
+    "Tiền công ty vay ngân hàng",
+    "Tài sản thành viên đã góp",
+    "Tài sản thành viên cam kết góp khi thành lập công ty TNHH",
+    "Mệnh giá cổ phần đã bán"
+   ],
+   "answer": 0,
+   "explain": "Khoản 34 Điều 4; vốn vay là nợ phải trả.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 34 Điều 4 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Vốn chủ sở hữu",
+   "right": "Vốn vay",
+   "cases": [
+    {
+     "text": "Vốn điều lệ do thành viên góp",
+     "answer": "left"
+    },
+    {
+     "text": "Tiền thu được từ phát hành trái phiếu",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 34 Điều 4 Luật Doanh nghiệp; khoản 3 Điều 4 Luật Chứng khoán."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Vốn điều lệ là tổng giá trị tài sản do các thành viên, chủ sở hữu đã góp hoặc {{cam kết góp}} khi thành lập công ty trách nhiệm hữu hạn, công ty {{hợp danh}}.",
+   "bank_extra": [
+    "vay",
+    "tư nhân"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Với công ty cổ phần, vốn điều lệ là tổng {{mệnh giá}} cổ phần đã bán hoặc được {{đăng ký mua}} khi thành lập.",
+   "bank_extra": [
+    "thị giá",
+    "chuyển nhượng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Vốn điều lệ của công ty bao gồm cả các khoản vay ngân hàng.",
+   "answer": false,
+   "explain": "Sai. Khoản 34 Điều 4: vốn điều lệ là tài sản do thành viên, chủ sở hữu góp hoặc mệnh giá cổ phần; vốn vay là nợ."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm vốn điều lệ và phân biệt với vốn vay.",
+   "model": "Tổng giá trị tài sản thành viên, chủ sở hữu đã góp hoặc cam kết góp khi thành lập công ty TNHH, hợp danh; tổng mệnh giá cổ phần đã bán hoặc đăng ký mua khi thành lập công ty cổ phần (khoản 34 Điều 4); vốn vay phải hoàn trả, không tạo quyền sở hữu.",
+   "keywords": [
+    "đã góp",
+    "cam kết góp",
+    "mệnh giá",
+    "vốn vay"
+   ]
+  }
+ ]
+}

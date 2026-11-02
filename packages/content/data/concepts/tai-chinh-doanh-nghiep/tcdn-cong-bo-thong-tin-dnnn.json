@@ -1,0 +1,116 @@
+{
+ "id": "tcdn-cong-bo-thong-tin-dnnn",
+ "subject": "tai-chinh-doanh-nghiep",
+ "chapter": "v4",
+ "term": "Công bố thông tin định kỳ của doanh nghiệp nhà nước",
+ "definition": "Công ty phải công bố định kỳ trên trang thông tin điện tử của công ty và của cơ quan đại diện chủ sở hữu những thông tin sau đây: a) Thông tin cơ bản về công ty và Điều lệ công ty; b) Mục tiêu tổng quát; mục tiêu, chỉ tiêu cụ thể của kế hoạch kinh doanh hằng năm; c) Báo cáo và tóm tắt báo cáo tài chính hằng năm đã được kiểm toán bởi tổ chức kiểm toán độc lập trong thời hạn 150 ngày kể từ ngày kết thúc năm tài chính; bao gồm cả báo cáo tài chính của công ty mẹ và báo cáo tài chính hợp nhất (nếu có);",
+ "plain": "Điều 109 thuộc Chương IV — DOANH NGHIỆP NHÀ NƯỚC. Nơi công bố: trang thông tin điện tử của CÔNG TY và của CƠ QUAN ĐẠI DIỆN CHỦ SỞ HỮU. Nội dung tài chính quan trọng: báo cáo tài chính năm ĐÃ KIỂM TOÁN độc lập trong 150 NGÀY từ khi kết thúc năm tài chính; báo cáo tài chính giữa năm trước 31/7 (điểm d); báo cáo kết quả kinh doanh, nhiệm vụ công ích… Ngoài ra còn công bố thông tin bất thường (Điều 110). Doanh nghiệp tư nhân thông thường không có nghĩa vụ công bố rộng như vậy — trừ khi là công ty đại chúng (Luật Chứng khoán).",
+ "example": "Tổng công ty M do Nhà nước nắm 100% vốn kết thúc năm tài chính ngày 31/12: chậm nhất ngày 30/5 năm sau phải công bố báo cáo tài chính năm đã kiểm toán (150 ngày).",
+ "source": {
+  "kind": "statute",
+  "cite": "Điểm a, b, c khoản 1 Điều 109 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tcdn-doi-tuong-cong-bo-thong-tin",
+  "tcdn-von-dieu-le"
+ ],
+ "keywords": [
+  "trang thông tin điện tử",
+  "cơ quan đại diện chủ sở hữu",
+  "báo cáo tài chính đã kiểm toán",
+  "150 ngày"
+ ],
+ "note": "Luật Doanh nghiệp 59/2020/QH14 có hiệu lực từ 01/01/2021, thay thế Luật Doanh nghiệp 2014 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 03/2022/QH15 và Luật 76/2025/QH15 (hiệu lực 01/7/2025) — văn bản hợp nhất 67/VBHN-VPQH 2025.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Doanh nghiệp nhà nước phải công bố báo cáo tài chính năm đã kiểm toán trong thời hạn nào?",
+   "options": [
+    "150 ngày kể từ ngày kết thúc năm tài chính",
+    "30 ngày",
+    "90 ngày",
+    "1 năm"
+   ],
+   "answer": 0,
+   "explain": "Điểm c khoản 1 Điều 109.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 109 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thông tin định kỳ của doanh nghiệp nhà nước được công bố ở đâu?",
+   "options": [
+    "Trang thông tin điện tử của công ty và của cơ quan đại diện chủ sở hữu",
+    "Chỉ niêm yết tại trụ sở",
+    "Chỉ trên Công báo",
+    "Chỉ gửi cơ quan thuế"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 109.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 109 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Phải công bố định kỳ (Điều 109)",
+   "right": "Không thuộc khoản 1 Điều 109",
+   "cases": [
+    {
+     "text": "Mục tiêu, chỉ tiêu kế hoạch kinh doanh hằng năm",
+     "answer": "left"
+    },
+    {
+     "text": "Bí mật kinh doanh về công thức sản phẩm",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 109."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công ty phải công bố định kỳ trên trang thông tin điện tử của công ty và của cơ quan {{đại diện chủ sở hữu}}.",
+   "bank_extra": [
+    "thuế",
+    "Tòa án"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Báo cáo tài chính hằng năm phải được kiểm toán bởi tổ chức kiểm toán {{độc lập}} và công bố trong thời hạn {{150}} ngày kể từ ngày kết thúc năm tài chính.",
+   "bank_extra": [
+    "nội bộ",
+    "60"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Doanh nghiệp nhà nước chỉ cần công bố báo cáo tài chính chưa kiểm toán.",
+   "answer": false,
+   "explain": "Sai. Điểm c khoản 1 Điều 109: báo cáo tài chính năm đã được kiểm toán bởi tổ chức kiểm toán độc lập."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu nội dung công bố thông tin định kỳ về tài chính của doanh nghiệp nhà nước.",
+   "model": "Công bố trên trang thông tin điện tử của công ty và cơ quan đại diện chủ sở hữu: thông tin cơ bản, Điều lệ; mục tiêu, kế hoạch kinh doanh; báo cáo tài chính năm đã kiểm toán độc lập trong 150 ngày (khoản 1 Điều 109).",
+   "keywords": [
+    "trang thông tin điện tử",
+    "đại diện chủ sở hữu",
+    "kiểm toán",
+    "150 ngày"
+   ]
+  }
+ ]
+}
