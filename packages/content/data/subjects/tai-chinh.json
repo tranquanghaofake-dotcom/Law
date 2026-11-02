@@ -1,0 +1,179 @@
+{
+  "id": "tai-chinh",
+  "title": "Luật Tài chính (ngân sách nhà nước và thuế)",
+  "short": "Tài chính",
+  "chapters": [
+    {
+      "id": "v1",
+      "title": "Vấn đề 1. Khái niệm Luật Ngân sách nhà nước",
+      "lessons": [
+        {
+          "id": "tc1",
+          "title": "Khái niệm Luật Ngân sách nhà nước",
+          "concepts": [
+            "ngan-sach-nha-nuoc",
+            "nguyen-tac-quan-ly-nsnn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v2",
+      "title": "Vấn đề 2. Tổ chức hệ thống ngân sách nhà nước",
+      "lessons": [
+        {
+          "id": "tc2",
+          "title": "Tổ chức hệ thống ngân sách nhà nước",
+          "concepts": [
+            "he-thong-nsnn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v3",
+      "title": "Vấn đề 3. Lập dự toán ngân sách nhà nước",
+      "lessons": [
+        {
+          "id": "tc3",
+          "title": "Lập dự toán ngân sách nhà nước",
+          "concepts": [
+            "du-phong-ngan-sach"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v4",
+      "title": "Vấn đề 4. Chấp hành và quyết toán ngân sách nhà nước",
+      "lessons": [
+        {
+          "id": "tc4",
+          "title": "Chấp hành và quyết toán ngân sách nhà nước",
+          "concepts": [
+            "boi-chi-ket-du"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v5",
+      "title": "Vấn đề 5. Quản lí quỹ ngân sách nhà nước",
+      "lessons": [
+        {
+          "id": "tc5",
+          "title": "Quản lí quỹ ngân sách nhà nước",
+          "concepts": [
+            "quy-ngan-sach-nha-nuoc"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v6",
+      "title": "Vấn đề 6. Những vấn đề lí luận về thuế và pháp luật thuế",
+      "lessons": [
+        {
+          "id": "tc6",
+          "title": "Những vấn đề lí luận về thuế và pháp luật thuế",
+          "concepts": [
+            "thue"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v7",
+      "title": "Vấn đề 7. Pháp luật thuế xuất khẩu, thuế nhập khẩu",
+      "lessons": [
+        {
+          "id": "tc7",
+          "title": "Pháp luật thuế xuất khẩu, thuế nhập khẩu",
+          "concepts": [
+            "thue-xuat-nhap-khau"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v8",
+      "title": "Vấn đề 8. Pháp luật thuế tiêu thụ đặc biệt",
+      "lessons": [
+        {
+          "id": "tc8",
+          "title": "Pháp luật thuế tiêu thụ đặc biệt",
+          "concepts": [
+            "thue-tieu-thu-dac-biet"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v9",
+      "title": "Vấn đề 9. Pháp luật thuế giá trị gia tăng",
+      "lessons": [
+        {
+          "id": "tc9",
+          "title": "Pháp luật thuế giá trị gia tăng",
+          "concepts": [
+            "thue-gia-tri-gia-tang",
+            "thue-suat-gtgt"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v10",
+      "title": "Vấn đề 10. Pháp luật thuế thu nhập",
+      "lessons": [
+        {
+          "id": "tc10",
+          "title": "Pháp luật thuế thu nhập",
+          "concepts": [
+            "thue-thu-nhap-doanh-nghiep",
+            "thue-thu-nhap-ca-nhan"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v11",
+      "title": "Vấn đề 11. Pháp luật về thuế liên quan đến đất đai",
+      "lessons": [
+        {
+          "id": "tc11",
+          "title": "Pháp luật về thuế liên quan đến đất đai",
+          "concepts": [
+            "thue-su-dung-dat-phi-nong-nghiep"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v12",
+      "title": "Vấn đề 12. Pháp luật về các loại thuế khác",
+      "lessons": [
+        {
+          "id": "tc12",
+          "title": "Pháp luật về các loại thuế khác",
+          "concepts": [
+            "thue-khac"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v13",
+      "title": "Vấn đề 13. Pháp luật về quản lí thuế",
+      "lessons": [
+        {
+          "id": "tc13",
+          "title": "Pháp luật về quản lí thuế",
+          "concepts": [
+            "nguyen-tac-quan-ly-thue"
+          ]
+        }
+      ]
+    }
+  ]
+}

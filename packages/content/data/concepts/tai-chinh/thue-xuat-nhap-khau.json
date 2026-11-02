@@ -1,0 +1,117 @@
+{
+ "id": "thue-xuat-nhap-khau",
+ "subject": "tai-chinh",
+ "chapter": "v7",
+ "term": "Thuế xuất khẩu, thuế nhập khẩu",
+ "definition": "Hàng hóa xuất khẩu, nhập khẩu qua cửa khẩu, biên giới Việt Nam. Hàng hóa xuất khẩu từ thị trường trong nước vào khu phi thuế quan, hàng hóa nhập khẩu từ khu phi thuế quan vào thị trường trong nước. (…) Đối tượng chịu thuế xuất khẩu, thuế nhập khẩu không áp dụng đối với các trường hợp sau: a) Hàng hóa quá cảnh, chuyển khẩu, trung chuyển; b) Hàng hóa viện trợ nhân đạo, hàng hóa viện trợ không hoàn lại;",
+ "plain": "Đối tượng chịu thuế: hàng hóa qua cửa khẩu, biên giới; hàng hóa từ nội địa vào KHU PHI THUẾ QUAN và ngược lại; xuất nhập khẩu tại chỗ. KHÔNG áp dụng: quá cảnh, chuyển khẩu, trung chuyển; viện trợ nhân đạo, không hoàn lại; hàng giữa nước ngoài với khu phi thuế quan và giữa các khu phi thuế quan… Người nộp thuế: chủ hàng; tổ chức nhận ủy thác; người xuất nhập cảnh có hàng; người được ủy quyền nộp thay (Điều 3). Thuế suất nhập khẩu có ba loại: ƯU ĐÃI (nước có đối xử tối huệ quốc — MFN), ƯU ĐÃI ĐẶC BIỆT (theo hiệp định thương mại tự do), THÔNG THƯỜNG (bằng 150% thuế suất ưu đãi) (Điều 5). Ngoài ra có thuế chống bán phá giá, chống trợ cấp, tự vệ (Điều 12–14).",
+ "example": "Doanh nghiệp nhập khẩu ô tô từ Thái Lan có giấy chứng nhận xuất xứ ASEAN: được áp dụng thuế suất ưu đãi đặc biệt theo Hiệp định ATIGA thay vì thuế suất ưu đãi MFN.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, 2, 4 Điều 2 Luật Thuế xuất khẩu, thuế nhập khẩu 2016 (VBHN 96/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Xuat-nhap-khau/Van-ban-hop-nhat-96-VBHN-VPQH-2026-Luat-Thue-xuat-khau-thue-nhap-khau-699728.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "thue-tieu-thu-dac-biet",
+  "thue-gia-tri-gia-tang",
+  "thue"
+ ],
+ "keywords": [
+  "qua cửa khẩu, biên giới",
+  "khu phi thuế quan",
+  "không áp dụng với quá cảnh, chuyển khẩu",
+  "ưu đãi – ưu đãi đặc biệt – thông thường"
+ ],
+ "note": "Luật Thuế XK, NK 107/2016/QH13 được sửa đổi bởi Luật 90/2025/QH15 (hiệu lực 01/7/2025) và Luật Công nghệ cao 133/2025/QH15 (hiệu lực 01/7/2026); văn bản hợp nhất 96/VBHN-VPQH 2026.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hàng hóa nào KHÔNG thuộc đối tượng chịu thuế xuất khẩu, nhập khẩu?",
+   "options": [
+    "Hàng hóa quá cảnh, chuyển khẩu, trung chuyển",
+    "Hàng hóa nhập khẩu qua cửa khẩu biên giới",
+    "Hàng hóa từ khu phi thuế quan nhập vào thị trường trong nước",
+    "Hàng hóa xuất khẩu tại chỗ"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 4 Điều 2.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 2 Luật Thuế xuất khẩu, thuế nhập khẩu 2016 (VBHN 96/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai là người nộp thuế xuất khẩu, nhập khẩu?",
+   "options": [
+    "Chủ hàng hóa xuất khẩu, nhập khẩu",
+    "Người tiêu dùng cuối cùng",
+    "Cơ quan hải quan",
+    "Ngân hàng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 3 Luật Thuế xuất khẩu, thuế nhập khẩu 2016 (VBHN 96/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Chịu thuế XK, NK",
+   "right": "Không chịu thuế XK, NK",
+   "cases": [
+    {
+     "text": "Hàng hóa từ nội địa đưa vào khu phi thuế quan",
+     "answer": "left"
+    },
+    {
+     "text": "Hàng viện trợ nhân đạo",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 2."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hàng hóa xuất khẩu, nhập khẩu qua {{cửa khẩu}}, biên giới Việt Nam là đối tượng chịu thuế; hàng hóa {{quá cảnh}}, chuyển khẩu, trung chuyển thì không áp dụng.",
+   "bank_extra": [
+    "sân bay nội địa",
+    "sản xuất"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hàng hóa xuất khẩu từ thị trường trong nước vào khu {{phi thuế quan}}, hàng hóa nhập khẩu từ khu phi thuế quan vào thị trường {{trong nước}}.",
+   "bank_extra": [
+    "công nghiệp",
+    "nước ngoài"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hàng hóa viện trợ không hoàn lại vẫn phải chịu thuế nhập khẩu.",
+   "answer": false,
+   "explain": "Sai. Điểm b khoản 4 Điều 2."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu đối tượng chịu thuế và người nộp thuế xuất khẩu, nhập khẩu.",
+   "model": "Hàng qua cửa khẩu, biên giới; hàng từ nội địa vào khu phi thuế quan và ngược lại; xuất nhập khẩu tại chỗ; không áp dụng với quá cảnh, chuyển khẩu, viện trợ… (Điều 2); người nộp: chủ hàng, tổ chức nhận ủy thác, người xuất nhập cảnh có hàng, người được ủy quyền nộp thay (Điều 3).",
+   "keywords": [
+    "cửa khẩu",
+    "phi thuế quan",
+    "quá cảnh",
+    "chủ hàng"
+   ]
+  }
+ ]
+}

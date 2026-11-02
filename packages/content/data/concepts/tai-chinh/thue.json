@@ -1,0 +1,119 @@
+{
+ "id": "thue",
+ "subject": "tai-chinh",
+ "chapter": "v6",
+ "term": "Khái niệm và đặc điểm của thuế",
+ "definition": "Thuế là một khoản nộp bằng tiền cho Nhà nước, mang tính bắt buộc, không hoàn trả trực tiếp, do các tổ chức, cá nhân thực hiện theo quy định của pháp luật nhằm đáp ứng nhu cầu chi tiêu công của Nhà nước.",
+ "plain": "Ba đặc điểm thường nêu: (1) TÍNH BẮT BUỘC (cưỡng chế bằng quyền lực nhà nước); (2) TÍNH KHÔNG HOÀN TRẢ TRỰC TIẾP (khác phí: có đối giá cụ thể); (3) GẮN VỚI QUYỀN LỰC NHÀ NƯỚC — chỉ QUỐC HỘI có quyền đặt ra, sửa đổi, bãi bỏ thuế bằng luật (khoản 2 Điều 70 Hiến pháp 2013; Điều 47 Hiến pháp: công dân có nghĩa vụ nộp thuế theo luật định). Phân loại: thuế TRỰC THU (TNDN, TNCN — người nộp đồng thời là người chịu thuế) và thuế GIÁN THU (GTGT, TTĐB, XNK — được cộng vào giá, người tiêu dùng chịu). Nguyên tắc đánh thuế: công bằng, hiệu quả, rõ ràng, thuận tiện.",
+ "example": "Khi mua chai nước ngọt, người tiêu dùng trả cả thuế GTGT trong giá nhưng doanh nghiệp bán là người nộp thuế: thuế gián thu. Lương của nhân viên bị khấu trừ thuế TNCN: thuế trực thu.",
+ "source": {
+  "kind": "textbook",
+  "cite": "Giáo trình Luật Tài chính / Luật Ngân sách nhà nước, Trường Đại học Luật Hà Nội; đề cương Luật Tài chính vấn đề 6 — tóm lược quan điểm học thuật phổ biến, chưa đối chiếu nguyên văn"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "thue-gia-tri-gia-tang",
+  "thue-thu-nhap-doanh-nghiep",
+  "nguyen-tac-quan-ly-thue"
+ ],
+ "keywords": [
+  "bắt buộc",
+  "không hoàn trả trực tiếp",
+  "chỉ Quốc hội đặt ra bằng luật",
+  "trực thu – gián thu"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Cơ quan nào có quyền quy định, sửa đổi, bãi bỏ các thứ thuế?",
+   "options": [
+    "Quốc hội",
+    "Chính phủ",
+    "Bộ Tài chính",
+    "HĐND cấp tỉnh"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 70 Hiến pháp 2013.",
+   "source": {
+    "kind": "statute",
+    "cite": "Học thuyết x"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thuế nào là thuế gián thu?",
+   "options": [
+    "Thuế giá trị gia tăng",
+    "Thuế thu nhập cá nhân",
+    "Thuế thu nhập doanh nghiệp",
+    "Thuế sử dụng đất phi nông nghiệp"
+   ],
+   "answer": 0,
+   "explain": "Học thuyết: thuế GTGT được cộng vào giá bán.",
+   "source": {
+    "kind": "statute",
+    "cite": "Học thuyết x"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thuế trực thu",
+   "right": "Thuế gián thu",
+   "cases": [
+    {
+     "text": "Thuế thu nhập doanh nghiệp",
+     "answer": "left"
+    },
+    {
+     "text": "Thuế tiêu thụ đặc biệt",
+     "answer": "right"
+    },
+    {
+     "text": "Thuế xuất khẩu, nhập khẩu",
+     "answer": "right"
+    }
+   ],
+   "explain": "Học thuyết."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thuế là khoản nộp mang tính {{bắt buộc}}, {{không hoàn trả}} trực tiếp cho người nộp.",
+   "bank_extra": [
+    "tự nguyện",
+    "hoàn trả"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chỉ {{Quốc hội}} có quyền quy định, sửa đổi hoặc bãi bỏ các thứ {{thuế}}.",
+   "bank_extra": [
+    "Chính phủ",
+    "phí"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Phí và thuế đều không có đối giá cụ thể.",
+   "answer": false,
+   "explain": "Sai. Phí gắn với dịch vụ cụ thể (có đối giá); thuế không hoàn trả trực tiếp."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm, đặc điểm và phân loại thuế.",
+   "model": "Khoản nộp bằng tiền cho Nhà nước, bắt buộc, không hoàn trả trực tiếp, theo luật để đáp ứng chi tiêu công; gắn quyền lực nhà nước, chỉ Quốc hội đặt ra; phân loại trực thu (TNDN, TNCN) và gián thu (GTGT, TTĐB, XNK).",
+   "keywords": [
+    "bắt buộc",
+    "không hoàn trả",
+    "Quốc hội",
+    "gián thu"
+   ]
+  }
+ ]
+}

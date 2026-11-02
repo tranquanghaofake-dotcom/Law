@@ -1,0 +1,116 @@
+{
+ "id": "thue-su-dung-dat-phi-nong-nghiep",
+ "subject": "tai-chinh",
+ "chapter": "v11",
+ "term": "Thuế sử dụng đất phi nông nghiệp",
+ "definition": "Đất ở tại nông thôn, đất ở tại đô thị. Đất sản xuất, kinh doanh phi nông nghiệp bao gồm: đất xây dựng khu công nghiệp; đất làm mặt bằng xây dựng cơ sở sản xuất, kinh doanh; đất khai thác, chế biến khóang sản; đất sản xuất vật liệu xây dựng, làm đồ gốm. (…) Người nộp thuế là tổ chức, hộ gia đình, cá nhân có quyền sử dụng đất thuộc đối tượng chịu thuế quy định tại Điều 2 của Luật này.",
+ "plain": "Đối tượng: ĐẤT Ở (nông thôn, đô thị), ĐẤT SẢN XUẤT, KINH DOANH phi nông nghiệp, đất phi nông nghiệp khác sử dụng vào mục đích kinh doanh. Người nộp: người CÓ QUYỀN SỬ DỤNG ĐẤT; chưa có Giấy chứng nhận thì NGƯỜI ĐANG SỬ DỤNG đất nộp (khoản 2 Điều 4). Thuế suất đất ở theo BIỂU LŨY TIẾN TỪNG PHẦN: trong hạn mức 0,03%; vượt không quá 3 lần hạn mức 0,07%; vượt trên 3 lần 0,15% (khoản 1 Điều 7); chung cư, nhà nhiều tầng 0,03%. Lưu ý: văn bản giữ nguyên chữ \"khóang sản\" theo bản hợp nhất.",
+ "example": "Ông U có 400 m² đất ở tại thành phố, hạn mức giao đất ở là 100 m²: 100 m² chịu 0,03%, 200 m² tiếp theo (vượt đến 3 lần) chịu 0,07%, 100 m² còn lại chịu 0,15%.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, 2 Điều 2; khoản 1 Điều 4 Luật Thuế sử dụng đất phi nông nghiệp 2010 (VBHN 05/VBHN-VPQH 2024)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thue-Phi-Le-Phi/Van-ban-hop-nhat-05-VBHN-VPQH-2024-Luat-Thue-su-dung-dat-phi-nong-nghiep-629169.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "thue",
+  "thue-thu-nhap-ca-nhan"
+ ],
+ "keywords": [
+  "đất ở nông thôn, đô thị",
+  "đất sản xuất, kinh doanh phi nông nghiệp",
+  "người có quyền sử dụng đất",
+  "lũy tiến 0,03% – 0,07% – 0,15%"
+ ],
+ "note": "Luật Thuế sử dụng đất phi nông nghiệp 48/2010/QH12 có hiệu lực từ 01/01/2012, sửa đổi bởi Luật Đất đai 31/2024/QH15 (hiệu lực 01/8/2024); văn bản hợp nhất 05/VBHN-VPQH 2024.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai là người nộp thuế sử dụng đất phi nông nghiệp?",
+   "options": [
+    "Tổ chức, hộ gia đình, cá nhân có quyền sử dụng đất thuộc đối tượng chịu thuế",
+    "Chỉ doanh nghiệp",
+    "Người thuê nhà",
+    "UBND cấp xã"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 4 Luật Thuế sử dụng đất phi nông nghiệp 2010 (VBHN 05/VBHN-VPQH 2024)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thuế suất đối với diện tích đất ở trong hạn mức là bao nhiêu?",
+   "options": [
+    "0,03%",
+    "0,07%",
+    "0,15%",
+    "1%"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 7.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 7 Luật Thuế sử dụng đất phi nông nghiệp 2010 (VBHN 05/VBHN-VPQH 2024)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Chịu thuế sử dụng đất phi nông nghiệp",
+   "right": "Không thuộc đối tượng tại khoản 1, 2 Điều 2",
+   "cases": [
+    {
+     "text": "Đất ở tại đô thị",
+     "answer": "left"
+    },
+    {
+     "text": "Đất trồng lúa",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 2."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đối tượng chịu thuế gồm đất ở tại {{nông thôn}}, đất ở tại {{đô thị}}.",
+   "bank_extra": [
+    "rừng",
+    "biển"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người nộp thuế là tổ chức, hộ gia đình, cá nhân có {{quyền sử dụng đất}} thuộc đối tượng chịu thuế.",
+   "bank_extra": [
+    "quyền sở hữu nhà",
+    "hợp đồng thuê"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người đang sử dụng đất chưa được cấp Giấy chứng nhận thì không phải nộp thuế sử dụng đất phi nông nghiệp.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 4: người đang sử dụng đất là người nộp thuế."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu đối tượng chịu thuế, người nộp thuế và thuế suất đất ở.",
+   "model": "Đất ở nông thôn, đô thị; đất sản xuất, kinh doanh phi nông nghiệp; đất phi nông nghiệp dùng kinh doanh (Điều 2); người có quyền sử dụng đất, chưa có giấy chứng nhận thì người đang sử dụng (Điều 4); đất ở lũy tiến 0,03%, 0,07%, 0,15% (Điều 7).",
+   "keywords": [
+    "đất ở",
+    "quyền sử dụng đất",
+    "0,03%",
+    "lũy tiến"
+   ]
+  }
+ ]
+}

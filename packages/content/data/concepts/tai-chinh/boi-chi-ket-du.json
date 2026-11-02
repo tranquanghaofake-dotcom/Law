@@ -1,0 +1,117 @@
+{
+ "id": "boi-chi-ket-du",
+ "subject": "tai-chinh",
+ "chapter": "v4",
+ "term": "Bội chi, kết dư và quyết toán ngân sách",
+ "definition": "Kết dư ngân sách trung ương, kết dư ngân sách cấp tỉnh là chênh lệch lớn hơn giữa tổng thu ngân sách không bao gồm vay và tổng chi ngân sách không bao gồm trả nợ gốc sau khi kết thúc năm ngân sách. (…) Kết dư ngân sách trung ương, ngân sách cấp tỉnh được sử dụng để trả nợ gốc và chi trả lãi các khoản vay của ngân sách nhà nước; trường hợp còn dư thì trích 50% vào quỹ dự trữ tài chính cùng cấp và 50% còn lại vào thu ngân sách năm sau;",
+ "plain": "BỘI CHI là chi lớn hơn thu (không tính trả nợ gốc và vay) — chỉ ngân sách TRUNG ƯƠNG và CẤP TỈNH được bội chi (khoản 1 Điều 4); bội chi phải nhỏ hơn chi đầu tư phát triển (Điều 7). KẾT DƯ là thu lớn hơn chi sau khi kết thúc năm. QUYẾT TOÁN là khâu cuối: số liệu quyết toán phải chính xác, trung thực, đầy đủ; Quốc hội phê chuẩn quyết toán NSNN, HĐND phê chuẩn quyết toán ngân sách địa phương; Kiểm toán nhà nước kiểm toán báo cáo quyết toán (Điều 67–73). Kết dư ngân sách CẤP XÃ hạch toán toàn bộ vào thu ngân sách năm sau.",
+ "example": "Năm 2026 ngân sách tỉnh A kết dư 100 tỷ đồng sau khi đã trả nợ: 50 tỷ trích vào quỹ dự trữ tài chính tỉnh, 50 tỷ vào thu ngân sách năm 2027 (nếu quỹ dự trữ chưa đủ 25% dự toán chi).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 15 Điều 4; khoản 1 Điều 74 Luật Ngân sách nhà nước 2025 (89/2025/QH15)",
+  "url": "https://thuvienphapluat.vn/van-ban/Tai-chinh-nha-nuoc/Luat-ngan-sach-nha-nuoc-2025-so-89-2025-QH15-650061.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "ngan-sach-nha-nuoc",
+  "du-phong-ngan-sach",
+  "quy-ngan-sach-nha-nuoc"
+ ],
+ "keywords": [
+  "chênh lệch thu lớn hơn chi",
+  "50% quỹ dự trữ, 50% thu năm sau",
+  "bội chi chỉ ở trung ương và cấp tỉnh",
+  "Quốc hội phê chuẩn quyết toán"
+ ],
+ "note": "Luật Ngân sách nhà nước 89/2025/QH15 có hiệu lực từ năm ngân sách 2026 (một số nội dung từ 01/7/2025), thay thế Luật Ngân sách nhà nước 83/2015/QH13 mà đề cương HLU còn dẫn (Điều 77).",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Kết dư ngân sách trung ương sau khi trả nợ, nếu còn, được xử lý thế nào?",
+   "options": [
+    "Trích 50% vào quỹ dự trữ tài chính cùng cấp, 50% vào thu ngân sách năm sau",
+    "Nộp hết vào quỹ dự trữ ngoại hối",
+    "Chia cho các bộ",
+    "Hủy bỏ"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 74.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 74 Luật Ngân sách nhà nước 2025 (89/2025/QH15)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Kết dư ngân sách cấp xã được xử lý thế nào?",
+   "options": [
+    "Hạch toán vào thu ngân sách năm sau",
+    "Trích 50% vào quỹ dự trữ",
+    "Nộp lên ngân sách tỉnh",
+    "Chi thưởng cán bộ"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 74.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 74 Luật Ngân sách nhà nước 2025 (89/2025/QH15)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Bội chi",
+   "right": "Kết dư",
+   "cases": [
+    {
+     "text": "Chi lớn hơn thu (không tính vay, trả nợ gốc)",
+     "answer": "left"
+    },
+    {
+     "text": "Thu lớn hơn chi sau khi kết thúc năm ngân sách",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1, 15 Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Kết dư ngân sách trung ương, cấp tỉnh là chênh lệch {{lớn hơn}} giữa tổng thu ngân sách không bao gồm {{vay}} và tổng chi ngân sách không bao gồm trả nợ gốc.",
+   "bank_extra": [
+    "nhỏ hơn",
+    "thuế"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Kết dư còn lại thì trích {{50%}} vào quỹ dự trữ tài chính cùng cấp và 50% còn lại vào thu ngân sách {{năm sau}}.",
+   "bank_extra": [
+    "30%",
+    "năm trước"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Ngân sách cấp xã được phép bội chi.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 4: bội chi NSNN gồm bội chi ngân sách trung ương và ngân sách địa phương cấp tỉnh."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Phân biệt bội chi và kết dư; nêu cách xử lý kết dư.",
+   "model": "Bội chi: chi lớn hơn thu (không tính vay, trả nợ gốc), chỉ ở trung ương, cấp tỉnh (khoản 1 Điều 4); kết dư: thu lớn hơn chi sau khi kết thúc năm (khoản 15, 16); kết dư trung ương, cấp tỉnh dùng trả nợ, còn dư trích 50% quỹ dự trữ, 50% thu năm sau; kết dư cấp xã vào thu năm sau (Điều 74).",
+   "keywords": [
+    "bội chi",
+    "kết dư",
+    "50%",
+    "năm sau"
+   ]
+  }
+ ]
+}

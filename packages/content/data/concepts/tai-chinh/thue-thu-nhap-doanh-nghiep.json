@@ -1,0 +1,117 @@
+{
+ "id": "thue-thu-nhap-doanh-nghiep",
+ "subject": "tai-chinh",
+ "chapter": "v10",
+ "term": "Thuế thu nhập doanh nghiệp: người nộp thuế và thuế suất",
+ "definition": "Thuế suất thuế thu nhập doanh nghiệp là 20%, trừ trường hợp quy định tại các khoản 2, 3 và 4 Điều này và đối tượng được ưu đãi về thuế suất quy định tại Điều 13 của Luật này. Thuế suất 15% áp dụng đối với doanh nghiệp có tổng doanh thu năm không quá 03 tỷ đồng. Thuế suất 17% áp dụng đối với doanh nghiệp có tổng doanh thu năm từ trên 03 tỷ đồng đến không quá 50 tỷ đồng.",
+ "plain": "Người nộp thuế (Điều 2): tổ chức sản xuất, kinh doanh có thu nhập chịu thuế — doanh nghiệp Việt Nam, doanh nghiệp nước ngoài (có hoặc không có cơ sở thường trú), HTX, đơn vị sự nghiệp, tổ chức khác. Thuế suất MỚI theo quy mô: 15% (doanh thu năm ≤ 03 tỷ), 17% (trên 03 đến ≤ 50 tỷ), 20% (phổ thông); dầu khí 25–50%; tài nguyên quý hiếm 50% (khoản 4). Doanh thu xác định theo kỳ tính thuế TRƯỚC LIỀN KỀ. Thu nhập tính thuế = thu nhập chịu thuế − thu nhập miễn thuế − lỗ được kết chuyển (Điều 7).",
+ "example": "Công ty khởi nghiệp có doanh thu năm 2025 là 2,5 tỷ đồng: năm 2026 áp dụng thuế suất TNDN 15%; nếu doanh thu năm trước là 30 tỷ thì 17%.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, 2, 3 Điều 10 Luật Thuế thu nhập doanh nghiệp 2025 (67/2025/QH15)",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-Thue-thu-nhap-doanh-nghiep-2025-so-67-2025-QH15-580594.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "thue-thu-nhap-ca-nhan",
+  "thue",
+  "thue-gia-tri-gia-tang"
+ ],
+ "keywords": [
+  "20% phổ thông",
+  "15% doanh thu ≤ 03 tỷ",
+  "17% từ trên 03 đến 50 tỷ",
+  "doanh thu kỳ trước liền kề"
+ ],
+ "note": "Luật Thuế TNDN 67/2025/QH15 có hiệu lực từ 01/10/2025, áp dụng từ kỳ tính thuế năm 2025, thay thế Luật 14/2008/QH12.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Doanh nghiệp có tổng doanh thu năm không quá 03 tỷ đồng áp dụng thuế suất TNDN bao nhiêu?",
+   "options": [
+    "15%",
+    "17%",
+    "20%",
+    "10%"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 10.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 10 Luật Thuế thu nhập doanh nghiệp 2025 (67/2025/QH15)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thuế suất TNDN phổ thông là bao nhiêu?",
+   "options": [
+    "20%",
+    "22%",
+    "25%",
+    "17%"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 10.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 10 Luật Thuế thu nhập doanh nghiệp 2025 (67/2025/QH15)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thuế suất 17%",
+   "right": "Thuế suất 20%",
+   "cases": [
+    {
+     "text": "Doanh thu năm trước 40 tỷ đồng",
+     "answer": "left"
+    },
+    {
+     "text": "Doanh thu năm trước 200 tỷ đồng, không thuộc diện ưu đãi",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 10."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thuế suất thuế thu nhập doanh nghiệp là {{20%}}, trừ trường hợp quy định tại các khoản 2, 3 và 4 Điều này và đối tượng được {{ưu đãi}} về thuế suất.",
+   "bank_extra": [
+    "25%",
+    "miễn"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thuế suất {{15%}} áp dụng đối với doanh nghiệp có tổng doanh thu năm không quá {{03 tỷ}} đồng.",
+   "bank_extra": [
+    "10%",
+    "10 tỷ"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo Luật Thuế TNDN 2025, mọi doanh nghiệp đều chịu thuế suất 20%.",
+   "answer": false,
+   "explain": "Sai. Khoản 2, 3 Điều 10: doanh nghiệp nhỏ được 15% hoặc 17%."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu người nộp thuế và các mức thuế suất thuế TNDN theo Luật 2025.",
+   "model": "Tổ chức sản xuất, kinh doanh có thu nhập chịu thuế: doanh nghiệp Việt Nam, nước ngoài, HTX, đơn vị sự nghiệp… (Điều 2); thuế suất 20%; 15% với doanh thu ≤ 03 tỷ; 17% với doanh thu trên 03 đến 50 tỷ; dầu khí 25–50% (Điều 10).",
+   "keywords": [
+    "20%",
+    "15%",
+    "17%",
+    "doanh nghiệp"
+   ]
+  }
+ ]
+}

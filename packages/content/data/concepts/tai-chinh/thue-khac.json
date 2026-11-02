@@ -1,0 +1,114 @@
+{
+ "id": "thue-khac",
+ "subject": "tai-chinh",
+ "chapter": "v12",
+ "term": "Thuế tài nguyên, thuế bảo vệ môi trường và lệ phí môn bài",
+ "definition": "Thuế tài nguyên là loại thuế thu đối với tổ chức, cá nhân khai thác tài nguyên thiên nhiên thuộc đối tượng chịu thuế. Thuế bảo vệ môi trường là loại thuế gián thu, thu vào sản phẩm, hàng hóa khi sử dụng gây tác động xấu đến môi trường.",
+ "plain": "THUẾ TÀI NGUYÊN (Luật Thuế tài nguyên 45/2009/QH12, đã sửa đổi): khoáng sản kim loại, không kim loại, dầu thô, khí thiên nhiên, sản phẩm rừng tự nhiên, hải sản tự nhiên, nước thiên nhiên, yến sào…; người nộp là tổ chức, cá nhân KHAI THÁC. THUẾ BẢO VỆ MÔI TRƯỜNG (Luật 57/2010/QH12): xăng dầu, than, dung dịch HCFC, túi ni lông, thuốc diệt cỏ hạn chế…; thuế TUYỆT ĐỐI (mức tiền trên đơn vị hàng hóa). LỆ PHÍ MÔN BÀI: đã được BÃI BỎ — từ 01/01/2026 người nộp thuế không phải nộp lệ phí môn bài (Nghị quyết 198/2025/QH15; Nghị định 362/2025/NĐ-CP bãi bỏ Nghị định 139/2016/NĐ-CP). Các nội dung này CHƯA đối chiếu nguyên văn luật trong bộ dữ liệu.",
+ "example": "Doanh nghiệp khai thác đá xây dựng nộp thuế tài nguyên trên sản lượng đá khai thác; khi nhập khẩu xăng thì nộp thuế bảo vệ môi trường theo mức tiền trên mỗi lít; năm 2026 doanh nghiệp mới thành lập không phải nộp lệ phí môn bài.",
+ "source": {
+  "kind": "textbook",
+  "cite": "Giáo trình Luật Tài chính / Luật Ngân sách nhà nước, Trường Đại học Luật Hà Nội; đề cương Luật Tài chính vấn đề 12 — tóm lược quan điểm học thuật phổ biến, chưa đối chiếu nguyên văn"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "thue",
+  "thue-tieu-thu-dac-biet"
+ ],
+ "keywords": [
+  "khai thác tài nguyên thiên nhiên",
+  "gây tác động xấu đến môi trường",
+  "thuế tuyệt đối",
+  "lệ phí môn bài bãi bỏ từ 2026"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai là người nộp thuế tài nguyên?",
+   "options": [
+    "Tổ chức, cá nhân khai thác tài nguyên thiên nhiên thuộc đối tượng chịu thuế",
+    "Người tiêu dùng sản phẩm",
+    "Cơ quan quản lý môi trường",
+    "Người mua đất"
+   ],
+   "answer": 0,
+   "explain": "Học thuyết; Luật Thuế tài nguyên 45/2009/QH12.",
+   "source": {
+    "kind": "statute",
+    "cite": "Học thuyết x"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Từ năm 2026, lệ phí môn bài thế nào?",
+   "options": [
+    "Bãi bỏ, người nộp thuế không phải nộp",
+    "Tăng gấp đôi",
+    "Chỉ áp dụng cho doanh nghiệp nhà nước",
+    "Chuyển thành thuế thu nhập"
+   ],
+   "answer": 0,
+   "explain": "Nghị quyết 198/2025/QH15; Nghị định 362/2025/NĐ-CP (chưa đối chiếu nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Học thuyết x"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thuế tài nguyên",
+   "right": "Thuế bảo vệ môi trường",
+   "cases": [
+    {
+     "text": "Thu khi khai thác khoáng sản",
+     "answer": "left"
+    },
+    {
+     "text": "Thu trên mỗi lít xăng",
+     "answer": "right"
+    }
+   ],
+   "explain": "Học thuyết."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thuế tài nguyên thu đối với tổ chức, cá nhân {{khai thác}} tài nguyên thiên nhiên.",
+   "bank_extra": [
+    "tiêu dùng",
+    "vận chuyển"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thuế bảo vệ môi trường là loại thuế {{gián thu}}, thu vào sản phẩm, hàng hóa khi sử dụng gây tác động {{xấu}} đến môi trường.",
+   "bank_extra": [
+    "trực thu",
+    "tốt"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Năm 2026 doanh nghiệp vẫn phải nộp lệ phí môn bài hằng năm.",
+   "answer": false,
+   "explain": "Sai. Lệ phí môn bài đã bãi bỏ từ 01/01/2026 (Nghị quyết 198/2025/QH15)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái quát thuế tài nguyên, thuế bảo vệ môi trường và tình trạng lệ phí môn bài.",
+   "model": "Thuế tài nguyên thu đối với tổ chức, cá nhân khai thác tài nguyên thiên nhiên; thuế bảo vệ môi trường là thuế gián thu, tuyệt đối, thu vào hàng hóa gây tác động xấu đến môi trường (xăng dầu, than, túi ni lông…); lệ phí môn bài bãi bỏ từ 01/01/2026.",
+   "keywords": [
+    "khai thác",
+    "gián thu",
+    "môi trường",
+    "bãi bỏ"
+   ]
+  }
+ ]
+}

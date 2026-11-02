@@ -1,0 +1,139 @@
+{
+  "id": "tai-chinh-de-2",
+  "group": "tai-chinh",
+  "title": "Đề kiểm tra Luật Tài chính – Pháp luật thuế",
+  "subtitle": "10 câu theo đề cương HLU, vấn đề 7–13",
+  "updated": "2026-11-01",
+  "questions": [
+    {
+      "q": "Thuế GTGT được tính trên cơ sở nào?",
+      "options": [
+        "Lợi nhuận",
+        "Giá trị tăng thêm của hàng hóa, dịch vụ",
+        "Thu nhập cá nhân",
+        "Diện tích đất"
+      ],
+      "answer": 1,
+      "explain": "Điều 2.",
+      "basis": "Điều 2 Luật Thuế GTGT (VBHN 12/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thue-Phi-Le-Phi/Van-ban-hop-nhat-12-VBHN-VPQH-2026-Luat-Thue-gia-tri-gia-tang-694824.aspx"
+    },
+    {
+      "q": "Mức thuế suất GTGT phổ thông theo khoản 3 Điều 9?",
+      "options": [
+        "5%",
+        "8%",
+        "10%",
+        "15%"
+      ],
+      "answer": 2,
+      "explain": "Khoản 3 Điều 9 (đang giảm còn 8% cho nhiều nhóm đến hết 2026 theo Nghị quyết 204/2025/QH15).",
+      "basis": "Điều 9 Luật Thuế GTGT (VBHN 12/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thue-Phi-Le-Phi/Van-ban-hop-nhat-12-VBHN-VPQH-2026-Luat-Thue-gia-tri-gia-tang-694824.aspx"
+    },
+    {
+      "q": "Doanh nghiệp có doanh thu năm không quá 03 tỷ đồng áp dụng thuế suất TNDN?",
+      "options": [
+        "15%",
+        "17%",
+        "20%",
+        "25%"
+      ],
+      "answer": 0,
+      "explain": "Khoản 2 Điều 10.",
+      "basis": "Điều 10 Luật Thuế TNDN 2025 (67/2025/QH15)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-Thue-thu-nhap-doanh-nghiep-2025-so-67-2025-QH15-580594.aspx"
+    },
+    {
+      "q": "Thuế suất TNDN phổ thông?",
+      "options": [
+        "17%",
+        "20%",
+        "22%",
+        "25%"
+      ],
+      "answer": 1,
+      "explain": "Khoản 1 Điều 10.",
+      "basis": "Điều 10 Luật Thuế TNDN 2025 (67/2025/QH15)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-Thue-thu-nhap-doanh-nghiep-2025-so-67-2025-QH15-580594.aspx"
+    },
+    {
+      "q": "Cá nhân có mặt tại Việt Nam từ bao nhiêu ngày trong năm dương lịch là cá nhân cư trú?",
+      "options": [
+        "90",
+        "120",
+        "183",
+        "270"
+      ],
+      "answer": 2,
+      "explain": "Điểm a khoản 2 Điều 2.",
+      "basis": "Điều 2 Luật Thuế TNCN 2025 (109/2025/QH15)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thue-Phi-Le-Phi/Luat-Thue-thu-nhap-ca-nhan-2025-so-109-2025-QH15-665870.aspx"
+    },
+    {
+      "q": "Mức giảm trừ gia cảnh cho bản thân người nộp thuế theo Luật 2025?",
+      "options": [
+        "11 triệu đồng/tháng",
+        "15,5 triệu đồng/tháng",
+        "4,4 triệu đồng/tháng",
+        "6,2 triệu đồng/tháng"
+      ],
+      "answer": 1,
+      "explain": "Điểm a khoản 1 Điều 10.",
+      "basis": "Điều 10 Luật Thuế TNCN 2025 (109/2025/QH15)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thue-Phi-Le-Phi/Luat-Thue-thu-nhap-ca-nhan-2025-so-109-2025-QH15-665870.aspx"
+    },
+    {
+      "q": "Hàng hóa nào chịu thuế TTĐB theo Luật 2025?",
+      "options": [
+        "Nước giải khát có hàm lượng đường trên 5g/100mL",
+        "Sữa tươi",
+        "Gạo",
+        "Sách"
+      ],
+      "answer": 0,
+      "explain": "Điểm l khoản 1 Điều 2.",
+      "basis": "Điều 2 Luật Thuế TTĐB 2025 (66/2025/QH15)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thue-Phi-Le-Phi/Luat-thue-tieu-thu-dac-biet-2025-so-66-2025-QH15-621225.aspx"
+    },
+    {
+      "q": "Hàng hóa nào không thuộc đối tượng chịu thuế XK, NK?",
+      "options": [
+        "Hàng quá cảnh, chuyển khẩu, trung chuyển",
+        "Hàng nhập khẩu qua cửa khẩu",
+        "Hàng từ khu phi thuế quan vào nội địa",
+        "Hàng xuất khẩu tại chỗ"
+      ],
+      "answer": 0,
+      "explain": "Điểm a khoản 4 Điều 2.",
+      "basis": "Điều 2 Luật Thuế XK, NK (VBHN 96/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Xuat-nhap-khau/Van-ban-hop-nhat-96-VBHN-VPQH-2026-Luat-Thue-xuat-khau-thue-nhap-khau-699728.aspx"
+    },
+    {
+      "q": "Thuế suất đối với diện tích đất ở trong hạn mức?",
+      "options": [
+        "0,03%",
+        "0,07%",
+        "0,15%",
+        "0,5%"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 7.",
+      "basis": "Điều 7 Luật Thuế sử dụng đất phi nông nghiệp (VBHN 05/VBHN-VPQH 2024)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thue-Phi-Le-Phi/Van-ban-hop-nhat-05-VBHN-VPQH-2024-Luat-Thue-su-dung-dat-phi-nong-nghiep-629169.aspx"
+    },
+    {
+      "q": "Theo Luật Quản lý thuế 2025, quản lý thuế lấy ai làm trung tâm phục vụ?",
+      "options": [
+        "Cơ quan thuế",
+        "Người nộp thuế",
+        "Kho bạc",
+        "Bộ Tài chính"
+      ],
+      "answer": 1,
+      "explain": "Khoản 1 Điều 6.",
+      "basis": "Điều 6 Luật Quản lý thuế 2025 (108/2025/QH15)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thue-Phi-Le-Phi/Luat-Quan-ly-thue-2025-so-108-2025-QH15-675268.aspx"
+    }
+  ]
+}

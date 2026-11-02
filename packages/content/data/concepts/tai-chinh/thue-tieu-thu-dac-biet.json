@@ -1,0 +1,117 @@
+{
+ "id": "thue-tieu-thu-dac-biet",
+ "subject": "tai-chinh",
+ "chapter": "v8",
+ "term": "Thuế tiêu thụ đặc biệt",
+ "definition": "Hàng hóa bao gồm: a) Thuốc lá theo quy định của Luật Phòng, chống tác hại của thuốc lá; b) Rượu theo quy định của Luật Phòng, chống tác hại của rượu, bia; c) Bia theo quy định của Luật Phòng, chống tác hại của rượu, bia; (…) Người nộp thuế tiêu thụ đặc biệt là tổ chức, cá nhân sản xuất, gia công, nhập khẩu hàng hóa và kinh doanh dịch vụ thuộc đối tượng chịu thuế tiêu thụ đặc biệt.",
+ "plain": "Mục đích: ĐIỀU TIẾT TIÊU DÙNG hàng hóa, dịch vụ không khuyến khích (thuốc lá, rượu bia, xe dưới 24 chỗ, xe mô tô trên 125 cm3, máy bay, du thuyền, xăng, điều hòa 24.000–90.000 BTU, bài lá, vàng mã, NƯỚC GIẢI KHÁT có hàm lượng đường trên 5g/100mL — MỚI) và dịch vụ (vũ trường, mát-xa, karaoke, casino, kinh doanh đặt cược, golf, xổ số…). Chỉ thu MỘT LẦN ở khâu sản xuất, gia công, nhập khẩu hoặc cung ứng dịch vụ (không thu ở khâu bán buôn, bán lẻ). Thuế gián thu, có phương pháp tính theo tỷ lệ % và tuyệt đối (Điều 5).",
+ "example": "Nhà máy bia sản xuất và bán cho đại lý: nhà máy nộp thuế TTĐB một lần; đại lý bán lẻ không nộp TTĐB nữa (chỉ nộp GTGT).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 2; khoản 1 Điều 4 Luật Thuế tiêu thụ đặc biệt 2025 (66/2025/QH15)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thue-Phi-Le-Phi/Luat-thue-tieu-thu-dac-biet-2025-so-66-2025-QH15-621225.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "thue-gia-tri-gia-tang",
+  "thue-xuat-nhap-khau",
+  "thue"
+ ],
+ "keywords": [
+  "điều tiết tiêu dùng",
+  "thu một lần ở khâu sản xuất, nhập khẩu",
+  "nước giải khát trên 5g đường/100mL",
+  "tổ chức, cá nhân sản xuất, gia công, nhập khẩu"
+ ],
+ "note": "Luật Thuế TTĐB 66/2025/QH15 có hiệu lực từ 01/01/2026, thay thế Luật 27/2008/QH12.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hàng hóa nào là đối tượng chịu thuế TTĐB theo Luật 2025?",
+   "options": [
+    "Nước giải khát có hàm lượng đường trên 5g/100mL",
+    "Gạo",
+    "Sách giáo khoa",
+    "Thuốc chữa bệnh"
+   ],
+   "answer": 0,
+   "explain": "Điểm l khoản 1 Điều 2.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 2 Luật Thuế tiêu thụ đặc biệt 2025 (66/2025/QH15)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai là người nộp thuế TTĐB?",
+   "options": [
+    "Tổ chức, cá nhân sản xuất, gia công, nhập khẩu hàng hóa và kinh doanh dịch vụ chịu thuế",
+    "Người bán lẻ",
+    "Người tiêu dùng",
+    "Đại lý bán buôn"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 4 Luật Thuế tiêu thụ đặc biệt 2025 (66/2025/QH15)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Chịu thuế TTĐB",
+   "right": "Không chịu thuế TTĐB",
+   "cases": [
+    {
+     "text": "Bia",
+     "answer": "left"
+    },
+    {
+     "text": "Xe mô tô hai bánh dung tích 110 cm3",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 2."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hàng hóa chịu thuế tiêu thụ đặc biệt gồm thuốc lá, {{rượu}}, {{bia}} theo quy định của luật phòng, chống tác hại.",
+   "bank_extra": [
+    "gạo",
+    "sữa"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người nộp thuế tiêu thụ đặc biệt là tổ chức, cá nhân {{sản xuất}}, gia công, {{nhập khẩu}} hàng hóa và kinh doanh dịch vụ thuộc đối tượng chịu thuế.",
+   "bank_extra": [
+    "bán lẻ",
+    "tiêu dùng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Xe mô tô hai bánh dung tích xi lanh trên 125 cm3 thuộc đối tượng chịu thuế TTĐB.",
+   "answer": true,
+   "explain": "Đúng. Điểm đ khoản 1 Điều 2."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu đặc điểm, đối tượng chịu thuế và người nộp thuế tiêu thụ đặc biệt.",
+   "model": "Thuế gián thu điều tiết tiêu dùng hàng hóa, dịch vụ không khuyến khích, thu một lần ở khâu sản xuất, nhập khẩu; đối tượng: thuốc lá, rượu, bia, ô tô dưới 24 chỗ, mô tô trên 125 cm3, xăng, điều hòa, nước giải khát có đường… và một số dịch vụ (Điều 2); người nộp: tổ chức, cá nhân sản xuất, gia công, nhập khẩu, kinh doanh dịch vụ (Điều 4).",
+   "keywords": [
+    "điều tiết",
+    "thuốc lá",
+    "một lần",
+    "nhập khẩu"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,117 @@
+{
+ "id": "nguyen-tac-quan-ly-nsnn",
+ "subject": "tai-chinh",
+ "chapter": "v1",
+ "term": "Nguyên tắc quản lý ngân sách nhà nước",
+ "definition": "Ngân sách nhà nước được quản lý thống nhất, tập trung dân chủ, hiệu quả, tiết kiệm, công khai, minh bạch, công bằng; có phân công, phân cấp quản lý; gắn quyền hạn với trách nhiệm của cơ quan quản lý nhà nước các cấp. Toàn bộ các khoản thu, chi ngân sách phải được dự toán, tổng hợp đầy đủ vào ngân sách nhà nước. (…) Các khoản chi ngân sách chỉ được thực hiện khi có dự toán được cấp có thẩm quyền giao, trừ trường hợp tạm cấp ngân sách quy định tại Điều 53 của Luật này và phải bảo đảm đúng chế độ, tiêu chuẩn, định mức chi do cơ quan nhà nước có thẩm quyền quy định.",
+ "plain": "Các nguyên tắc học thuật thường nêu — NGUYÊN TẮC TOÀN DIỆN (mọi khoản thu, chi đều vào dự toán — khoản 2), NGUYÊN TẮC THỐNG NHẤT, CÔNG KHAI, NGUYÊN TẮC CÂN ĐỐI (Điều 7: thu từ thuế, phí, lệ phí phải lớn hơn chi thường xuyên; bội chi nhỏ hơn chi đầu tư phát triển; vay bù bội chi chỉ dùng cho đầu tư phát triển) — đều được luật hóa. \"Chi khi có dự toán\" là chốt chặn quan trọng; ngoại lệ là TẠM CẤP NGÂN SÁCH khi dự toán chưa được quyết định (Điều 53).",
+ "example": "Một Sở muốn chi mua xe công nhưng khoản này chưa có trong dự toán được giao: Kho bạc không được thanh toán (khoản 4 Điều 8).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, 2, 4 Điều 8 Luật Ngân sách nhà nước 2025 (89/2025/QH15)",
+  "url": "https://thuvienphapluat.vn/van-ban/Tai-chinh-nha-nuoc/Luat-ngan-sach-nha-nuoc-2025-so-89-2025-QH15-650061.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "ngan-sach-nha-nuoc",
+  "boi-chi-ket-du",
+  "du-phong-ngan-sach"
+ ],
+ "keywords": [
+  "thống nhất, tập trung dân chủ",
+  "toàn bộ thu, chi phải được dự toán",
+  "chi khi có dự toán được giao",
+  "đúng chế độ, tiêu chuẩn, định mức"
+ ],
+ "note": "Luật Ngân sách nhà nước 89/2025/QH15 có hiệu lực từ năm ngân sách 2026 (một số nội dung từ 01/7/2025), thay thế Luật Ngân sách nhà nước 83/2015/QH13 mà đề cương HLU còn dẫn (Điều 77).",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khoản chi ngân sách được thực hiện khi nào?",
+   "options": [
+    "Khi có dự toán được cấp có thẩm quyền giao, trừ trường hợp tạm cấp ngân sách",
+    "Khi thủ trưởng đơn vị đồng ý",
+    "Bất cứ khi nào có nguồn",
+    "Khi được Kho bạc cho vay"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 8.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 8 Luật Ngân sách nhà nước 2025 (89/2025/QH15)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nguyên tắc nào đòi hỏi mọi khoản thu, chi phải được đưa vào ngân sách?",
+   "options": [
+    "Toàn bộ các khoản thu, chi phải được dự toán, tổng hợp đầy đủ vào ngân sách nhà nước",
+    "Nguyên tắc tự chủ tài chính",
+    "Nguyên tắc bí mật ngân sách",
+    "Nguyên tắc lợi nhuận"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 8.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 8 Luật Ngân sách nhà nước 2025 (89/2025/QH15)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Được chi",
+   "right": "Không được chi",
+   "cases": [
+    {
+     "text": "Khoản chi có trong dự toán đã giao, đúng định mức",
+     "answer": "left"
+    },
+    {
+     "text": "Khoản chi chưa có dự toán, không thuộc trường hợp tạm cấp",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 4 Điều 8."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ngân sách nhà nước được quản lý {{thống nhất}}, tập trung dân chủ, hiệu quả, tiết kiệm, {{công khai}}, minh bạch, công bằng.",
+   "bank_extra": [
+    "phân tán",
+    "bí mật"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Toàn bộ các khoản thu, chi ngân sách phải được {{dự toán}}, tổng hợp đầy đủ vào ngân sách nhà nước.",
+   "bank_extra": [
+    "giữ lại",
+    "miễn trừ"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Vay để bù đắp bội chi ngân sách nhà nước có thể dùng để trả lương.",
+   "answer": false,
+   "explain": "Sai. Khoản 3 Điều 7: chỉ dùng cho chi đầu tư phát triển, không dùng cho chi thường xuyên."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các nguyên tắc quản lý ngân sách nhà nước.",
+   "model": "Quản lý thống nhất, tập trung dân chủ, hiệu quả, tiết kiệm, công khai, minh bạch, công bằng, phân cấp, gắn quyền hạn với trách nhiệm; toàn bộ thu, chi phải được dự toán; chi chỉ khi có dự toán được giao (trừ tạm cấp), đúng chế độ, định mức (Điều 8).",
+   "keywords": [
+    "thống nhất",
+    "công khai",
+    "dự toán",
+    "định mức"
+   ]
+  }
+ ]
+}

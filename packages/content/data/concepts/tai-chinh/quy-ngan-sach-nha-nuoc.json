@@ -1,0 +1,116 @@
+{
+ "id": "quy-ngan-sach-nha-nuoc",
+ "subject": "tai-chinh",
+ "chapter": "v5",
+ "term": "Quỹ ngân sách nhà nước và ngân quỹ nhà nước",
+ "definition": "Quỹ ngân sách nhà nước là toàn bộ các khoản tiền của Nhà nước, kể cả tiền vay có trên tài khoản của ngân sách nhà nước các cấp tại một thời điểm. (…) Ngân quỹ nhà nước là toàn bộ các khoản tiền bằng đồng Việt Nam và bằng ngoại tệ của Nhà nước có trên các tài khoản của Kho bạc Nhà nước mở tại Ngân hàng Nhà nước Việt Nam và các ngân hàng thương mại, tiền mặt tại các đơn vị Kho bạc Nhà nước.",
+ "plain": "Phân biệt: QUỸ NSNN (tiền trên tài khoản ngân sách các cấp tại một thời điểm) ⊂ NGÂN QUỸ NHÀ NƯỚC (rộng hơn: còn gồm tiền gửi của quỹ dự trữ tài chính, quỹ tài chính ngoài ngân sách, đơn vị, tổ chức kinh tế tại Kho bạc). KHO BẠC NHÀ NƯỚC quản lý tập trung, thống nhất ngân quỹ (khoản 2 Điều 64), thực hiện kiểm soát chi. Thiếu hụt tạm thời quỹ NSNN được xử lý bằng tạm ứng ngân quỹ, vay… (Điều 60).",
+ "example": "Tiền thuế vừa nộp vào tài khoản ngân sách tỉnh tại Kho bạc là một phần quỹ NSNN; tiền gửi của một đơn vị sự nghiệp tại Kho bạc là ngân quỹ nhà nước nhưng không phải quỹ NSNN.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 22 Điều 4; khoản 1 Điều 64 Luật Ngân sách nhà nước 2025 (89/2025/QH15)",
+  "url": "https://thuvienphapluat.vn/van-ban/Tai-chinh-nha-nuoc/Luat-ngan-sach-nha-nuoc-2025-so-89-2025-QH15-650061.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "boi-chi-ket-du",
+  "du-phong-ngan-sach"
+ ],
+ "keywords": [
+  "toàn bộ khoản tiền trên tài khoản ngân sách",
+  "tại một thời điểm",
+  "Kho bạc Nhà nước quản lý tập trung",
+  "ngân quỹ rộng hơn quỹ ngân sách"
+ ],
+ "note": "Luật Ngân sách nhà nước 89/2025/QH15 có hiệu lực từ năm ngân sách 2026 (một số nội dung từ 01/7/2025), thay thế Luật Ngân sách nhà nước 83/2015/QH13 mà đề cương HLU còn dẫn (Điều 77).",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quỹ ngân sách nhà nước là gì?",
+   "options": [
+    "Toàn bộ các khoản tiền của Nhà nước, kể cả tiền vay, có trên tài khoản của ngân sách nhà nước các cấp tại một thời điểm",
+    "Quỹ dự trữ ngoại hối",
+    "Toàn bộ tài sản công",
+    "Quỹ bảo hiểm xã hội"
+   ],
+   "answer": 0,
+   "explain": "Khoản 22 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 4 Luật Ngân sách nhà nước 2025 (89/2025/QH15)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Cơ quan nào quản lý tập trung, thống nhất ngân quỹ nhà nước?",
+   "options": [
+    "Kho bạc Nhà nước",
+    "Ngân hàng thương mại",
+    "Kiểm toán nhà nước",
+    "Quốc hội"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 64.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 64 Luật Ngân sách nhà nước 2025 (89/2025/QH15)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quỹ ngân sách nhà nước",
+   "right": "Chỉ thuộc ngân quỹ nhà nước",
+   "cases": [
+    {
+     "text": "Tiền thuế trên tài khoản ngân sách tỉnh tại Kho bạc",
+     "answer": "left"
+    },
+    {
+     "text": "Tiền gửi của tổ chức kinh tế tại Kho bạc",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 22 Điều 4; khoản 1 Điều 64."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quỹ ngân sách nhà nước là toàn bộ các khoản tiền của Nhà nước, kể cả {{tiền vay}} có trên tài khoản của ngân sách nhà nước các cấp tại một {{thời điểm}}.",
+   "bank_extra": [
+    "tài sản",
+    "năm"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ngân quỹ nhà nước gồm các khoản tiền có trên các tài khoản của {{Kho bạc Nhà nước}} mở tại Ngân hàng Nhà nước Việt Nam và các {{ngân hàng thương mại}}.",
+   "bank_extra": [
+    "Bộ Tài chính",
+    "quỹ tín dụng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quỹ ngân sách nhà nước không bao gồm tiền vay.",
+   "answer": false,
+   "explain": "Sai. Khoản 22 Điều 4: kể cả tiền vay."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Phân biệt quỹ ngân sách nhà nước và ngân quỹ nhà nước.",
+   "model": "Quỹ NSNN: toàn bộ tiền của Nhà nước, kể cả tiền vay, trên tài khoản ngân sách các cấp tại một thời điểm (khoản 22 Điều 4); ngân quỹ nhà nước: toàn bộ tiền đồng và ngoại tệ của Nhà nước trên tài khoản Kho bạc tại NHNN, ngân hàng thương mại và tiền mặt tại Kho bạc, gồm cả tiền gửi các quỹ, đơn vị (Điều 64).",
+   "keywords": [
+    "tiền vay",
+    "thời điểm",
+    "Kho bạc",
+    "tiền gửi"
+   ]
+  }
+ ]
+}

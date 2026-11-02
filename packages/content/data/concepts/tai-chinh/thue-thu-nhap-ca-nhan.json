@@ -1,0 +1,116 @@
+{
+ "id": "thue-thu-nhap-ca-nhan",
+ "subject": "tai-chinh",
+ "chapter": "v10",
+ "term": "Thuế thu nhập cá nhân: người nộp thuế và cá nhân cư trú",
+ "definition": "Người nộp thuế thu nhập cá nhân là cá nhân cư trú có thu nhập chịu thuế quy định tại Điều 3 của Luật này phát sinh trong và ngoài lãnh thổ Việt Nam và cá nhân không cư trú có thu nhập chịu thuế quy định tại Điều 3 của Luật này phát sinh trong lãnh thổ Việt Nam. Cá nhân cư trú là người đáp ứng một trong các điều kiện sau đây: a) Có mặt tại Việt Nam từ 183 ngày trở lên tính trong 01 năm dương lịch hoặc tính theo 12 tháng liên tục kể từ ngày đầu tiên có mặt tại Việt Nam; b) Có nơi ở thường xuyên tại Việt Nam, bao gồm có nơi ở đăng ký thường trú hoặc có nhà thuê để ở tại Việt Nam theo hợp đồng thuê có thời hạn.",
+ "plain": "Phạm vi đánh thuế khác nhau: CƯ TRÚ — thu nhập phát sinh TRONG VÀ NGOÀI Việt Nam; KHÔNG CƯ TRÚ — chỉ thu nhập phát sinh TRONG lãnh thổ Việt Nam. Tiêu chí cư trú: có mặt từ 183 NGÀY (năm dương lịch hoặc 12 tháng liên tục) HOẶC có nơi ở thường xuyên. Thu nhập từ tiền lương, tiền công của cá nhân cư trú áp dụng BIỂU LŨY TIẾN 5 BẬC (5%, 10%, 20%, 30%, 35% — Điều 9) sau khi GIẢM TRỪ GIA CẢNH 15,5 triệu đồng/tháng cho bản thân và 6,2 triệu đồng/tháng cho mỗi người phụ thuộc (Điều 10).",
+ "example": "Kỹ sư Nhật Bản làm việc tại Hà Nội 200 ngày năm 2026: là cá nhân cư trú nên phải nộp thuế TNCN cả với khoản lương nhận ở Nhật trong thời gian đó.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, 2 Điều 2 Luật Thuế thu nhập cá nhân 2025 (109/2025/QH15)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thue-Phi-Le-Phi/Luat-Thue-thu-nhap-ca-nhan-2025-so-109-2025-QH15-665870.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "thue-thu-nhap-doanh-nghiep",
+  "thue"
+ ],
+ "keywords": [
+  "cư trú: trong và ngoài lãnh thổ",
+  "không cư trú: trong lãnh thổ",
+  "183 ngày",
+  "nơi ở thường xuyên"
+ ],
+ "note": "Luật Thuế TNCN 109/2025/QH15 có hiệu lực từ 01/7/2026; quy định về thu nhập từ kinh doanh, tiền lương, tiền công của cá nhân cư trú áp dụng từ kỳ tính thuế năm 2026; thay thế Luật 04/2007/QH12.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Cá nhân có mặt tại Việt Nam bao nhiêu ngày trong năm dương lịch thì là cá nhân cư trú?",
+   "options": [
+    "Từ 183 ngày trở lên",
+    "Từ 90 ngày trở lên",
+    "Từ 120 ngày trở lên",
+    "Từ 365 ngày"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 2 Điều 2.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 2 Luật Thuế thu nhập cá nhân 2025 (109/2025/QH15)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Cá nhân không cư trú nộp thuế TNCN với thu nhập nào?",
+   "options": [
+    "Thu nhập chịu thuế phát sinh trong lãnh thổ Việt Nam",
+    "Mọi thu nhập trong và ngoài Việt Nam",
+    "Không phải nộp thuế",
+    "Chỉ thu nhập từ bất động sản ở nước ngoài"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 2.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 2 Luật Thuế thu nhập cá nhân 2025 (109/2025/QH15)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Cá nhân cư trú",
+   "right": "Cá nhân không cư trú",
+   "cases": [
+    {
+     "text": "Chịu thuế với thu nhập phát sinh cả ngoài Việt Nam",
+     "answer": "left"
+    },
+    {
+     "text": "Chỉ chịu thuế với thu nhập phát sinh tại Việt Nam",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 2."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Cá nhân cư trú là người có mặt tại Việt Nam từ {{183}} ngày trở lên tính trong 01 năm {{dương lịch}} hoặc theo 12 tháng liên tục.",
+   "bank_extra": [
+    "90",
+    "tài chính"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Cá nhân cư trú có thu nhập chịu thuế phát sinh trong và {{ngoài}} lãnh thổ Việt Nam; cá nhân không cư trú có thu nhập chịu thuế phát sinh {{trong}} lãnh thổ Việt Nam.",
+   "bank_extra": [
+    "chỉ trong",
+    "ngoài"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mức giảm trừ gia cảnh cho bản thân người nộp thuế theo Luật Thuế TNCN 2025 là 15,5 triệu đồng/tháng.",
+   "answer": true,
+   "explain": "Đúng. Điểm a khoản 1 Điều 10."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu người nộp thuế TNCN và tiêu chí cá nhân cư trú.",
+   "model": "Cá nhân cư trú (thu nhập trong và ngoài lãnh thổ) và không cư trú (thu nhập trong lãnh thổ) có thu nhập chịu thuế (khoản 1 Điều 2); cư trú khi có mặt từ 183 ngày trong năm dương lịch hoặc 12 tháng liên tục, hoặc có nơi ở thường xuyên (khoản 2).",
+   "keywords": [
+    "cư trú",
+    "183 ngày",
+    "nơi ở thường xuyên",
+    "trong lãnh thổ"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,116 @@
+{
+ "id": "thue-suat-gtgt",
+ "subject": "tai-chinh",
+ "chapter": "v9",
+ "term": "Thuế suất thuế giá trị gia tăng",
+ "definition": "Mức thuế suất 10% áp dụng đối với hàng hóa, dịch vụ không quy định tại khoản 1 và khoản 2 Điều này, bao gồm cả dịch vụ được các nhà cung cấp nước ngoài không có cơ sở thường trú tại Việt Nam cung cấp cho tổ chức, cá nhân tại Việt Nam qua kênh thương mại điện tử và các nền tảng số.",
+ "plain": "Ba mức: 0% (hàng hóa, dịch vụ XUẤT KHẨU, vận tải quốc tế… — khoản 1); 5% (nước sạch, phân bón, thiết bị y tế, sách khoa học… — khoản 2); 10% (mức PHỔ THÔNG, gồm cả dịch vụ số của nhà cung cấp nước ngoài — khoản 3). Phân biệt 0% (được khấu trừ, hoàn thuế đầu vào) với KHÔNG CHỊU THUẾ (không được khấu trừ đầu vào). Thực tế hiện hành: Nghị quyết 204/2025/QH15 GIẢM 2% (còn 8%) cho phần lớn hàng hóa, dịch vụ chịu 10%, trừ viễn thông, tài chính, ngân hàng, chứng khoán, bảo hiểm, bất động sản, kim loại, khai khoáng (trừ than), hàng chịu TTĐB (trừ xăng) — từ 01/7/2025 đến hết 31/12/2026.",
+ "example": "Một nhà hàng xuất hóa đơn tháng 11/2026: thuế suất GTGT áp dụng là 8% (giảm từ 10% theo Nghị quyết 204/2025/QH15); từ 01/01/2027, nếu không có nghị quyết mới, trở lại 10%.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 3 Điều 9 Luật Thuế giá trị gia tăng 2024 (VBHN 12/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thue-Phi-Le-Phi/Van-ban-hop-nhat-12-VBHN-VPQH-2026-Luat-Thue-gia-tri-gia-tang-694824.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "thue-gia-tri-gia-tang",
+  "thue"
+ ],
+ "keywords": [
+  "0% – 5% – 10%",
+  "10% là mức phổ thông",
+  "dịch vụ số của nhà cung cấp nước ngoài",
+  "giảm còn 8% đến 31/12/2026"
+ ],
+ "note": "Luật Thuế GTGT 48/2024/QH15 có hiệu lực từ 01/7/2025, thay thế Luật 13/2008/QH12; được sửa đổi bởi Luật 90/2025/QH15, Luật 149/2025/QH15 và Nghị quyết 204/2025/QH15 (giảm 2% thuế suất 10% xuống 8% cho nhiều nhóm hàng hóa, dịch vụ, từ 01/7/2025 đến hết 31/12/2026).",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Mức thuế suất GTGT phổ thông theo khoản 3 Điều 9 là bao nhiêu?",
+   "options": [
+    "10%",
+    "5%",
+    "0%",
+    "15%"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 9.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 9 Luật Thuế giá trị gia tăng 2024 (VBHN 12/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Mức thuế suất 0% áp dụng chủ yếu cho nhóm nào?",
+   "options": [
+    "Hàng hóa, dịch vụ xuất khẩu",
+    "Nước sạch",
+    "Dịch vụ ngân hàng",
+    "Hàng tiêu dùng nội địa"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 9.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 9 Luật Thuế giá trị gia tăng 2024 (VBHN 12/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thuế suất 5%",
+   "right": "Thuế suất 10%",
+   "cases": [
+    {
+     "text": "Nước sạch phục vụ sản xuất và sinh hoạt",
+     "answer": "left"
+    },
+    {
+     "text": "Dịch vụ số do nhà cung cấp nước ngoài cung cấp qua nền tảng số",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 2, 3 Điều 9."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Mức thuế suất {{10%}} áp dụng đối với hàng hóa, dịch vụ không quy định tại khoản 1 và khoản {{2}} Điều này.",
+   "bank_extra": [
+    "8%",
+    "4"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Mức thuế suất 10% bao gồm cả dịch vụ được nhà cung cấp {{nước ngoài}} không có cơ sở thường trú tại Việt Nam cung cấp qua kênh {{thương mại điện tử}} và các nền tảng số.",
+   "bank_extra": [
+    "trong nước",
+    "bưu chính"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Trong năm 2026, phần lớn hàng hóa chịu thuế suất 10% được giảm còn 8%.",
+   "answer": true,
+   "explain": "Đúng. Nghị quyết 204/2025/QH15 giảm 2% thuế suất tại khoản 3 Điều 9, áp dụng đến hết 31/12/2026, trừ một số nhóm."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các mức thuế suất thuế GTGT và chính sách giảm thuế hiện hành.",
+   "model": "0% cho hàng hóa, dịch vụ xuất khẩu; 5% cho nhóm thiết yếu (nước sạch, phân bón…); 10% cho hàng hóa, dịch vụ còn lại, gồm dịch vụ số của nhà cung cấp nước ngoài (Điều 9); Nghị quyết 204/2025/QH15 giảm còn 8% cho nhiều nhóm hàng chịu 10% đến hết 31/12/2026.",
+   "keywords": [
+    "0%",
+    "5%",
+    "10%",
+    "8%"
+   ]
+  }
+ ]
+}

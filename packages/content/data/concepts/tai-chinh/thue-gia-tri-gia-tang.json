@@ -1,0 +1,117 @@
+{
+ "id": "thue-gia-tri-gia-tang",
+ "subject": "tai-chinh",
+ "chapter": "v9",
+ "term": "Thuế giá trị gia tăng và đối tượng chịu thuế",
+ "definition": "Thuế giá trị gia tăng là thuế tính trên giá trị tăng thêm của hàng hóa, dịch vụ phát sinh trong quá trình từ sản xuất, lưu thông đến tiêu dùng. Hàng hóa, dịch vụ sử dụng cho sản xuất, kinh doanh và tiêu dùng ở Việt Nam là đối tượng chịu thuế giá trị gia tăng, trừ các đối tượng quy định tại Điều 5 của Luật này.",
+ "plain": "Bản chất: thu trên PHẦN GIÁ TRỊ TĂNG THÊM ở MỌI KHÂU (khác TTĐB chỉ thu một khâu); thuế GIÁN THU, người tiêu dùng cuối cùng chịu. Phạm vi RỘNG: mọi hàng hóa, dịch vụ tiêu dùng ở Việt Nam, trừ danh mục KHÔNG CHỊU THUẾ (Điều 5: sản phẩm trồng trọt, chăn nuôi chưa chế biến; dịch vụ y tế; dạy học, dạy nghề; dịch vụ tài chính, ngân hàng nhất định; hộ cá nhân kinh doanh doanh thu thấp…). Hai phương pháp tính: KHẤU TRỪ (thuế đầu ra − thuế đầu vào) và TRỰC TIẾP (Điều 10–12).",
+ "example": "Nhà máy mua vải 100 (thuế 10), bán áo 150 (thuế 15): nhà máy nộp 15 − 10 = 5, đúng bằng thuế trên phần giá trị tăng thêm 50.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 2, 3 Luật Thuế giá trị gia tăng 2024 (VBHN 12/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thue-Phi-Le-Phi/Van-ban-hop-nhat-12-VBHN-VPQH-2026-Luat-Thue-gia-tri-gia-tang-694824.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "thue-suat-gtgt",
+  "thue-tieu-thu-dac-biet",
+  "thue"
+ ],
+ "keywords": [
+  "giá trị tăng thêm",
+  "từ sản xuất, lưu thông đến tiêu dùng",
+  "tiêu dùng ở Việt Nam",
+  "khấu trừ – trực tiếp"
+ ],
+ "note": "Luật Thuế GTGT 48/2024/QH15 có hiệu lực từ 01/7/2025, thay thế Luật 13/2008/QH12; được sửa đổi bởi Luật 90/2025/QH15, Luật 149/2025/QH15 và Nghị quyết 204/2025/QH15 (giảm 2% thuế suất 10% xuống 8% cho nhiều nhóm hàng hóa, dịch vụ, từ 01/7/2025 đến hết 31/12/2026).",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thuế GTGT được tính trên cơ sở nào?",
+   "options": [
+    "Giá trị tăng thêm của hàng hóa, dịch vụ phát sinh từ sản xuất, lưu thông đến tiêu dùng",
+    "Lợi nhuận của doanh nghiệp",
+    "Thu nhập của cá nhân",
+    "Diện tích đất sử dụng"
+   ],
+   "answer": 0,
+   "explain": "Điều 2.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 2 Luật Thuế giá trị gia tăng 2024 (VBHN 12/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hàng hóa, dịch vụ nào là đối tượng chịu thuế GTGT?",
+   "options": [
+    "Hàng hóa, dịch vụ sử dụng cho sản xuất, kinh doanh và tiêu dùng ở Việt Nam, trừ đối tượng tại Điều 5",
+    "Chỉ hàng hóa nhập khẩu",
+    "Chỉ dịch vụ tài chính",
+    "Chỉ hàng xa xỉ"
+   ],
+   "answer": 0,
+   "explain": "Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 3 Luật Thuế giá trị gia tăng 2024 (VBHN 12/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thuế GTGT",
+   "right": "Thuế TTĐB",
+   "cases": [
+    {
+     "text": "Thu ở mọi khâu trên giá trị tăng thêm",
+     "answer": "left"
+    },
+    {
+     "text": "Thu một lần ở khâu sản xuất, nhập khẩu",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 2 Luật Thuế GTGT; Luật Thuế TTĐB."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thuế giá trị gia tăng là thuế tính trên {{giá trị tăng thêm}} của hàng hóa, dịch vụ phát sinh trong quá trình từ sản xuất, {{lưu thông}} đến tiêu dùng.",
+   "bank_extra": [
+    "doanh thu",
+    "xuất khẩu"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hàng hóa, dịch vụ sử dụng cho sản xuất, kinh doanh và tiêu dùng ở {{Việt Nam}} là đối tượng chịu thuế, trừ các đối tượng quy định tại Điều {{5}}.",
+   "bank_extra": [
+    "nước ngoài",
+    "9"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thuế GTGT chỉ thu một lần ở khâu bán lẻ.",
+   "answer": false,
+   "explain": "Sai. Thuế GTGT thu trên giá trị tăng thêm ở các khâu từ sản xuất, lưu thông đến tiêu dùng (Điều 2)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm và đối tượng chịu thuế GTGT.",
+   "model": "Thuế tính trên giá trị tăng thêm của hàng hóa, dịch vụ phát sinh từ sản xuất, lưu thông đến tiêu dùng (Điều 2); đối tượng chịu thuế: hàng hóa, dịch vụ dùng cho sản xuất, kinh doanh, tiêu dùng ở Việt Nam, trừ đối tượng không chịu thuế tại Điều 5 (Điều 3).",
+   "keywords": [
+    "giá trị tăng thêm",
+    "tiêu dùng",
+    "Việt Nam",
+    "Điều 5"
+   ]
+  }
+ ]
+}
