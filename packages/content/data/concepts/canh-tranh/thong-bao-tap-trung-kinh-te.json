@@ -29,9 +29,9 @@
    "q": "Doanh nghiệp thuộc ngưỡng phải thông báo tập trung kinh tế vào thời điểm nào?",
    "options": [
     "Trước khi tiến hành tập trung kinh tế",
-    "Sau khi hoàn tất 30 ngày",
-    "Khi có yêu cầu của Ủy ban",
-    "Không bắt buộc"
+    "Sau khi hoàn tất giao dịch tập trung",
+    "Khi có yêu cầu của Ủy ban Cạnh tranh",
+    "Không bắt buộc, tuỳ doanh nghiệp chọn"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 33.",
@@ -46,9 +46,9 @@
    "q": "Hết thời hạn thẩm định sơ bộ mà Ủy ban Cạnh tranh Quốc gia chưa ra thông báo kết quả thì sao?",
    "options": [
     "Việc tập trung kinh tế được thực hiện",
-    "Phải chờ thẩm định chính thức",
-    "Giao dịch bị cấm",
-    "Phải nộp lại hồ sơ"
+    "Phải chờ thẩm định chính thức của Ủy ban",
+    "Giao dịch bị cấm, phải hủy bỏ ngay lập tức",
+    "Phải nộp lại hồ sơ mới cho Ủy ban"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 36.",

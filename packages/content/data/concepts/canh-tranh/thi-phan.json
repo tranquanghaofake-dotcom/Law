@@ -30,9 +30,9 @@
    "q": "Thị phần kết hợp là gì?",
    "options": [
     "Tổng thị phần trên thị trường liên quan của các doanh nghiệp tham gia hành vi hạn chế cạnh tranh hoặc tập trung kinh tế",
-    "Thị phần của doanh nghiệp lớn nhất",
-    "Thị phần trung bình",
-    "Thị phần trên thị trường quốc tế"
+    "Thị phần của doanh nghiệp lớn nhất trên thị trường liên quan, tính theo doanh thu bán ra của năm trước",
+    "Thị phần trung bình của các doanh nghiệp nhỏ trên thị trường quốc tế đã được tính theo doanh số mua vào",
+    "Thị phần trên thị trường quốc tế của các doanh nghiệp nước ngoài đang hoạt động tại Việt Nam, không phân biệt liên quan"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 10.",
@@ -49,7 +49,7 @@
     "Chuẩn mực kế toán Việt Nam",
     "Chuẩn mực IFRS bắt buộc",
     "Do doanh nghiệp tự khai",
-    "Theo tờ khai thuế"
+    "Theo tờ khai thuế hằng năm"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 10.",

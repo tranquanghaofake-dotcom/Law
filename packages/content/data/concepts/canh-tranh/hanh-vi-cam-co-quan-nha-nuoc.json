@@ -29,9 +29,9 @@
    "q": "Hành vi nào của cơ quan nhà nước bị nghiêm cấm theo Điều 8?",
    "options": [
     "Phân biệt đối xử giữa các doanh nghiệp",
-    "Ban hành quy chuẩn kỹ thuật chung",
-    "Tổ chức đấu thầu công khai",
-    "Kiểm tra an toàn thực phẩm"
+    "Ban hành quy chuẩn kỹ thuật chung nội bộ",
+    "Tổ chức đấu thầu công khai, minh bạch",
+    "Kiểm tra an toàn thực phẩm tại cơ sở"
    ],
    "answer": 0,
    "explain": "Điểm b khoản 1 Điều 8.",
@@ -46,9 +46,9 @@
    "q": "Cơ quan nhà nước khuyến nghị dân mua hàng của doanh nghiệp cụ thể trong trường hợp nào thì KHÔNG bị cấm?",
    "options": [
     "Hàng hóa thuộc lĩnh vực độc quyền nhà nước hoặc trường hợp khẩn cấp theo luật",
-    "Khi doanh nghiệp đó nộp thuế nhiều",
-    "Khi doanh nghiệp đó là doanh nghiệp địa phương",
-    "Không có ngoại lệ"
+    "Khi doanh nghiệp đó nộp thuế nhiều và có nhiều lao động địa phương đóng góp ngân sách",
+    "Khi doanh nghiệp đó là doanh nghiệp địa phương, đã có hợp đồng dài hạn",
+    "Không có ngoại lệ nào, mọi trường hợp đều bị cấm kể cả khi người dân tự nguyện mua hàng"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 1 Điều 8.",

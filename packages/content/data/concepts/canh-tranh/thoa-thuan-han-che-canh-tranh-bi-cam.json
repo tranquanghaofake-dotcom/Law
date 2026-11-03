@@ -29,9 +29,9 @@
    "q": "Thỏa thuận ấn định giá giữa các doanh nghiệp trên cùng thị trường liên quan thì sao?",
    "options": [
     "Bị cấm theo khoản 1 Điều 12 mà không cần chứng minh tác động đáng kể",
-    "Chỉ bị cấm nếu thị phần kết hợp từ 30%",
-    "Không bị cấm",
-    "Chỉ bị cấm khi gây thiệt hại thực tế"
+    "Chỉ bị cấm nếu thị phần kết hợp từ 30% trở lên trên thị trường liên quan",
+    "Không bị cấm nếu các bên thông báo trước cho cơ quan quản lý cạnh tranh",
+    "Chỉ bị cấm khi gây thiệt hại thực tế cho người tiêu dùng và có đơn khiếu nại"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 12.",
@@ -46,9 +46,9 @@
    "q": "Thỏa thuận hạn chế phát triển kỹ thuật, công nghệ (khoản 7 Điều 11) giữa các doanh nghiệp cùng thị trường liên quan bị cấm khi nào?",
    "options": [
     "Khi gây tác động hoặc có khả năng gây tác động hạn chế cạnh tranh một cách đáng kể",
-    "Trong mọi trường hợp",
-    "Không bao giờ",
-    "Khi có đơn khiếu nại"
+    "Trong mọi trường hợp, kể cả khi thỏa thuận không gây tác động đáng kể đến thị trường",
+    "Không bao giờ bị cấm, kể cả khi thỏa thuận gây tác động hạn chế cạnh tranh",
+    "Khi có đơn khiếu nại của khách hàng và có kết luận của cơ quan điều tra"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 12.",
