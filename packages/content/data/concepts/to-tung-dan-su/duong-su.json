@@ -123,6 +123,18 @@
     "người yêu cầu",
     "liên quan"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Đương sự trong vụ án dân sự là cơ quan, tổ chức, cá nhân bao gồm nguyên đơn, bị đơn, người có quyền lợi, nghĩa vụ liên quan.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 68 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 68 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/Thu-tuc-To-tung/Van-ban-hop-nhat-21-VBHN-VPQH-2026-Bo-luat-To-dung-dan-su-696578.aspx"
+   }
   }
  ]
 }

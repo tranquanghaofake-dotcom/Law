@@ -119,6 +119,17 @@
     "niêm yết",
     "phạm vi"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tòa án cấp phúc thẩm chỉ xem xét lại phần của bản án sơ thẩm, quyết định của Tòa án cấp sơ thẩm có kháng cáo, kháng nghị hoặc có liên quan đến việc xem xét nội dung kháng cáo, kháng nghị.",
+   "answer": true,
+   "explain": "Đúng. Điều 293 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 293 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)"
+   }
   }
  ]
 }

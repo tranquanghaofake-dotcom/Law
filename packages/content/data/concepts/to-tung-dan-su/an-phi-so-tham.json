@@ -120,6 +120,18 @@
     "ly hôn",
     "một nửa"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Trong vụ án ly hôn thì nguyên đơn phải chịu án phí sơ thẩm, không phụ thuộc vào việc Tòa án chấp nhận hay không chấp nhận yêu cầu của nguyên đơn.",
+   "answer": true,
+   "explain": "Đúng. Khoản 4 Điều 147 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 147 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/Thu-tuc-To-tung/Van-ban-hop-nhat-21-VBHN-VPQH-2026-Bo-luat-To-dung-dan-su-696578.aspx"
+   }
   }
  ]
 }

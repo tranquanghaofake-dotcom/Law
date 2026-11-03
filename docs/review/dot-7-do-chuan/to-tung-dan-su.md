@@ -54,3 +54,28 @@
 |---|---|---|---|---|
 | `chung-cu` | Lời khai của đương sự được ghi nhận làm nguồn chứng cứ | Lời khai của đương sự được Tòa án ghi nhận, dùng để xác định sự thật vụ án | Khoản 3 Điều 94 Bộ luật Tố tụng dân sự 2015 | viết lại không nhắc nhãn / sửa lỗi theo bảng verify |
 | `nghia-vu-chung-minh` | Nguyên đơn đòi nợ phải chứng minh có khoản vay<br>Người tiêu dùng khởi kiện không phải chứng minh lỗi của tổ chức kinh doanh | Nguyên đơn đòi nợ có nghĩa vụ đưa ra chứng cứ về khoản vay<br>Người tiêu dùng khởi kiện tổ chức kinh doanh hàng hóa, dịch vụ, không bị buộc đưa chứng cứ chứng tỏ lỗi của bê | —<br>Điểm a khoản 1 Điều 91 Bộ luật Tố tụng dân sự 2015 | viết lại không nhắc nhãn / sửa lỗi theo bảng verify |
+
+## Câu hỏi viết lại (sonnet B)
+
+### Câu hỏi kiểu tập hợp (bỏ nhiễu "Chỉ…") (4)
+
+| Mã | Câu hỏi | Trước | Sau | Căn cứ | Ghi chú |
+|---|---|---|---|---|---|
+| `to-tung-dan-su/chung-cu#1` | Dữ liệu điện tử có phải là nguồn chứng cứ không? | **Có, theo khoản 1 Điều 94**<br>Không<br>Chỉ khi được công chứng<br>Chỉ trong vụ án thương mại | **Có, là nguồn chứng cứ theo khoản 1 Điều 94**<br>Không, vì không thể tồn tại dưới dạng văn bản giấy<br>Có, nếu đã được công chứng<br>Có, nếu là vụ án thương mại | Khoản 1 Điều 94 Bộ luật Tố tụng dân sự 2015 | Đáp án vẫn là 'Có'; viết đầy đủ. |
+| `to-tung-dan-su/quyen-yeu-cau-toa-an-bao-ve#1` | Ai có quyền khởi kiện vụ án dân sự theo khoản 1 Điều 4? | **Cơ quan, tổ chức, cá nhân do Bộ luật quy định**<br>Chỉ công dân Việt Nam có quyền khởi kiện<br>Chỉ Viện kiểm sát có quyền khởi kiện vụ án<br>Chỉ luật sư được quyền khởi kiện thay người dân | **Cơ quan, tổ chức, cá nhân do Bộ luật quy định**<br>Công dân Việt Nam đủ 18 tuổi trở lên có quyền khởi kiện<br>Tòa án tự quyết định khởi kiện khi thấy cần thiết<br>Người dân phải thông qua luật sư mới được khởi kiện | Khoản 1 Điều 4 Bộ luật Tố tụng dân sự 2015 | Bỏ 'Chỉ'; 'Chỉ Viện kiểm sát' đúng một phần nên thay bằng nhiễu sai rõ. |
+| `to-tung-dan-su/thoi-hieu-khoi-kien-ttds#1` | Người được hưởng lợi từ việc áp dụng thời hiệu có quyền từ chối không? | **Có, trừ khi nhằm trốn tránh thực hiện nghĩa vụ**<br>Không, người được hưởng lợi không được từ chối<br>Chỉ khi được Tòa án cho phép trước khi xét xử<br>Chỉ trong vụ án lao động mới được từ chối | **Có, trừ khi nhằm trốn tránh thực hiện nghĩa vụ**<br>Không, người được hưởng lợi không được từ chối<br>Có, nếu được Tòa án cho phép trước khi xét xử<br>Có, nếu là vụ án lao động | Khoản 2 Điều 184 Bộ luật Tố tụng dân sự 2015 | Nhiễu viết lại: sai rõ, không cần từ tuyệt đối |
+| `sets/to-tung-dan-su-de-1#9` | Tin nhắn điện thoại có thể là nguồn chứng cứ không? | Không<br>**Có, là dữ liệu điện tử**<br>Chỉ khi công chứng<br>Chỉ trong vụ án hình sự | Không, vì không có chữ ký trên giấy<br>**Có, vì là dữ liệu điện tử theo Điều 94**<br>Có, nếu đã được công chứng<br>Có, nếu là vụ án hình sự | Khoản 1 Điều 94 Bộ luật Tố tụng dân sự 2015 | Nhiễu viết lại: sai rõ, không cần từ tuyệt đối |
+
+### Câu Đúng/Sai đáp án Đúng thêm mới (9)
+
+| Mã | Nhận định (Đúng) | Căn cứ | Ghi chú |
+|---|---|---|---|
+| `to-tung-dan-su/an-phi-so-tham#7` | Trong vụ án ly hôn thì nguyên đơn phải chịu án phí sơ thẩm, không phụ thuộc vào việc Tòa án chấp nhận hay không chấp nhận yêu cầu của nguyên đơn. | Khoản 4 Điều 147 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026) | nguyên văn khớp laws/*.txt |
+| `to-tung-dan-su/duong-su#7` | Đương sự trong vụ án dân sự là cơ quan, tổ chức, cá nhân bao gồm nguyên đơn, bị đơn, người có quyền lợi, nghĩa vụ liên quan. | Khoản 1 Điều 68 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026) | nguyên văn khớp laws/*.txt |
+| `to-tung-dan-su/nghia-vu-chung-minh#7` | Đương sự có quyền và nghĩa vụ chủ động thu thập, giao nộp chứng cứ cho Tòa án và chứng minh cho yêu cầu của mình là có căn cứ và hợp pháp. | Khoản 1 Điều 6 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026) | nguyên văn khớp laws/*.txt |
+| `to-tung-dan-su/quyen-quyet-dinh-tu-dinh-doat#7` | Đương sự có quyền quyết định việc khởi kiện, yêu cầu Tòa án có thẩm quyền giải quyết vụ việc dân sự. | Khoản 1 Điều 5 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026) | nguyên văn khớp laws/*.txt |
+| `to-tung-dan-su/quyen-yeu-cau-toa-an-bao-ve#7` | Tòa án không được từ chối giải quyết vụ việc dân sự vì lý do chưa có điều luật để áp dụng. | Khoản 2 Điều 4 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026) | nguyên văn khớp laws/*.txt |
+| `to-tung-dan-su/thoi-hieu-khoi-kien-ttds#7` | Thời hiệu khởi kiện, thời hiệu yêu cầu giải quyết việc dân sự được thực hiện theo quy định của Bộ luật Dân sự. | Khoản 1 Điều 184 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026) | nguyên văn khớp laws/*.txt |
+| `to-tung-dan-su/hoa-giai-trong-to-tung-dan-su#7` | Tòa án có trách nhiệm tiến hành hòa giải và tạo điều kiện thuận lợi để các đương sự thỏa thuận với nhau về việc giải quyết vụ việc dân sự theo quy định của Bộ luật Tố tụng dân sự. | Điều 10 Bộ luật Tố tụng dân sự 2015 | Trích gần nguyên văn, đối chiếu laws/bltt-ds-vbhn-2026.txt |
+| `to-tung-dan-su/khang-cao-phuc-tham#7` | Tòa án cấp phúc thẩm chỉ xem xét lại phần của bản án sơ thẩm, quyết định của Tòa án cấp sơ thẩm có kháng cáo, kháng nghị hoặc có liên quan đến việc xem xét nội dung kháng cáo, kháng nghị. | Điều 293 Bộ luật Tố tụng dân sự 2015 | Nguyên văn, đối chiếu laws/bltt-ds-vbhn-2026.txt |
+| `to-tung-dan-su/tham-quyen-theo-lanh-tho#7` | Tòa án nơi bị đơn có trụ sở, nếu bị đơn là cơ quan, tổ chức, có thẩm quyền giải quyết theo thủ tục sơ thẩm những tranh chấp về dân sự, hôn nhân và gia đình, kinh doanh, thương mại, lao động. | Điểm a khoản 1 Điều 39 Bộ luật Tố tụng dân sự 2015 | Trích gần nguyên văn, đối chiếu laws/bltt-ds-vbhn-2026.txt (đã có thay đổi mô hình tòa từ 01/7/2025: ⚠ opus nếu cần soát cấp Tòa) |
