@@ -72,12 +72,12 @@
      "answer": "right"
     },
     {
-     "text": "Lao động chưa thành niên làm đủ 12 tháng cho một người sử dụng lao động được nghỉ 14 ngày làm việc",
+     "text": "Số ngày nghỉ hằng năm hưởng nguyên lương của lao động chưa thành niên làm đủ 12 tháng cho một người sử dụng lao động",
      "answer": "left",
      "basis": "Điểm b khoản 1 Điều 113 Bộ luật Lao động 2019"
     },
     {
-     "text": "Người làm nghề đặc biệt nặng nhọc, độc hại, nguy hiểm được nghỉ 16 ngày làm việc hưởng nguyên lương",
+     "text": "Số ngày nghỉ hằng năm hưởng nguyên lương của người làm nghề đặc biệt nặng nhọc, độc hại, nguy hiểm làm đủ 12 tháng",
      "answer": "right",
      "basis": "Điểm c khoản 1 Điều 113 Bộ luật Lao động 2019"
     }
