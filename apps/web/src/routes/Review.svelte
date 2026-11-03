@@ -6,7 +6,9 @@
   import { repo } from '$lib/store/progress-repo';
   import SessionView from '$lib/ui/SessionView.svelte';
   import { hashFor, route } from '$lib/router.svelte';
-  const subjectId = route.params.subject as string | undefined;
+  // `#/on/chac-sai`: ôn các khái niệm từng trả lời "chắc mà sai" (hypercorrection), không lọc theo ngày đến hạn
+  const hyperMode = route.params.subject === 'chac-sai';
+  const subjectId = hyperMode ? undefined : (route.params.subject as string | undefined);
 
   let data = $state<{ steps: Step[]; concepts: Concept[]; levels: Record<string, Level> } | null>(null);
   let empty = $state(false);
@@ -14,8 +16,8 @@
 
   async function load() {
     try {
-      document.title = 'Ôn hôm nay · Luyện Luật';
-      const due = await repo.due(new Date(), subjectId);
+      document.title = `${hyperMode ? 'Sửa kỹ' : 'Ôn hôm nay'} · Luyện Luật`;
+      const due = hyperMode ? await repo.hypercorrections() : await repo.due(new Date(), subjectId);
       if (!due.length) { empty = true; return; }
       const index = await loadIndex();
       const bySubject = new Map<string, string[]>();
@@ -47,9 +49,9 @@
 {#if error}
   <section class="card"><p class="muted">Không tải được dữ liệu: {error}</p><a class="btn ghost" href="#/">Về Hôm nay</a></section>
 {:else if empty}
-  <section class="card"><h1>Ôn hôm nay</h1><p>Chưa có gì cần ôn{subjectId ? ' trong môn này' : ''}. Học mới một đợt rồi quay lại nhé.</p>{#if subjectId}<a class="btn primary" href={hashFor('subject', { subject: subjectId })}>Về môn</a>{:else}<a class="btn primary" href="#/">Về Hôm nay</a>{/if}</section>
+  <section class="card"><h1>{hyperMode ? 'Sửa kỹ' : 'Ôn hôm nay'}</h1><p>{hyperMode ? 'Chưa có khái niệm nào bạn từng tin chắc mà trả lời sai.' : `Chưa có gì cần ôn${subjectId ? ' trong môn này' : ''}.`} Học mới một đợt rồi quay lại nhé.</p>{#if subjectId}<a class="btn primary" href={hashFor('subject', { subject: subjectId })}>Về môn</a>{:else}<a class="btn primary" href="#/">Về Hôm nay</a>{/if}</section>
 {:else if !data}
   <p class="loading">Đang tải…</p>
 {:else}
-  <SessionView steps={data.steps} concepts={data.concepts} levels={data.levels} title="Ôn hôm nay" />
+  <SessionView steps={data.steps} concepts={data.concepts} levels={data.levels} title={hyperMode ? 'Sửa kỹ: chắc mà sai' : 'Ôn hôm nay'} />
 {/if}

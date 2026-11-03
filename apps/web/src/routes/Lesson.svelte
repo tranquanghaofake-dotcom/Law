@@ -6,6 +6,7 @@
   import { repo } from '$lib/store/progress-repo';
   import { route } from '$lib/router.svelte';
   import SessionView from '$lib/ui/SessionView.svelte';
+  import { getPref } from '$lib/ui/session/prefs';
   import { go } from '$lib/router.svelte';
   import { lessonsOf } from '$lib/ui/lessonState';
 
@@ -27,7 +28,7 @@
         loadConceptPool(subject.id, lessonPoolIds(subject, concepts)),
         loadTerms(subject.id).catch(() => ({})),
       ]);
-      const steps = buildLearnSession(concepts, levels, Math.random, { pool, terms: { [subject.id]: terms } });
+      const steps = buildLearnSession(concepts, levels, Math.random, { pool, terms: { [subject.id]: terms } }, { pretest: getPref('pretest') ? 2 : 0 });
       const all = lessonsOf(subject); const i = all.findIndex((l) => l.id === lesson.id);
       data = { steps, concepts, levels, lessonId: `${subject.id}/${lesson.id}`, title: lesson.title, next: all[i + 1]?.id ?? null, subject: subject.id };
       document.title = `${lesson.title} · Luyện Luật`;
