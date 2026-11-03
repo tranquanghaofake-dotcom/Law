@@ -28,9 +28,9 @@
    "q": "Theo khoản 1 Điều 43, Sở giao dịch chứng khoán Việt Nam có địa vị pháp lý là gì?",
    "options": [
     "Doanh nghiệp do Nhà nước nắm giữ trên 50% vốn điều lệ hoặc tổng số cổ phần có quyền biểu quyết",
-    "Cơ quan thuộc Bộ Tài chính có chức năng quản lý thị trường và phát hành chứng khoán trong nước",
-    "Đơn vị sự nghiệp công lập tự chủ tài chính và hoạt động không vì lợi nhuận theo quy định",
-    "Tổ chức xã hội - nghề nghiệp của ngành chứng khoán và các hội viên đăng ký tham gia trong nước"
+    "Cơ quan thuộc Bộ Tài chính có chức năng quản lý thị trường và phát hành chứng khoán",
+    "Đơn vị sự nghiệp công lập tự chủ tài chính và hoạt động không vì lợi nhuận do Bộ Tài chính thành lập",
+    "Tổ chức xã hội - nghề nghiệp của ngành chứng khoán và các hội viên đăng ký tham gia"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 43.",
@@ -46,8 +46,8 @@
    "options": [
     "Thủ tướng Chính phủ, theo đề nghị của Bộ trưởng Bộ Tài chính",
     "Quốc hội quyết định theo nghị quyết hằng năm của Ủy ban thường vụ",
-    "Chủ tịch Ủy ban Chứng khoán Nhà nước theo đề nghị của Sở nào",
-    "Đại hội đồng cổ đông của Sở giao dịch chứng khoán trong nước"
+    "Chủ tịch Ủy ban Chứng khoán Nhà nước theo đề nghị của Sở",
+    "Đại hội đồng cổ đông của Sở giao dịch chứng khoán Việt Nam"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 43.",

@@ -31,4 +31,13 @@ describe('SessionEnd', () => {
     const { container: c2 } = render(SessionEnd, { props: base });
     expect(c2.querySelector('.mistakes')).toBeNull();
   });
+  it('câu sai dạng ghép cặp: đáp án gập trong <details>, mô tả dài bị rút gọn (không in cả khối dài)', () => {
+    const long = 'x'.repeat(300);
+    const mistakes = [{ conceptId: 'a', level: 2 as const, item: { type: 'match' as const, level: 2 as const, explain: 'e', pairs: [{ conceptId: 'a', term: 'T1', text: long }, { conceptId: 'b', term: 'T2', text: 'ngắn' }, { conceptId: 'c', term: 'T3', text: 'ngắn' }] } }];
+    const { container } = render(SessionEnd, { props: { ...base, mistakes } });
+    const d = container.querySelector('.mistakes details.ans-more')!;
+    expect(d).not.toBeNull();
+    expect(d.querySelectorAll('li')).toHaveLength(3);
+    expect(d.querySelector('li')!.textContent!.length).toBeLessThanOrEqual(160);
+  });
 });

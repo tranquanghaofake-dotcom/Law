@@ -31,8 +31,8 @@
    "options": [
     "Nhà đầu tư cá nhân nắm 0,5% cổ phiếu, không phải người nội bộ",
     "Công ty đại chúng và tổ chức phát hành chứng khoán ra công chúng",
-    "Người nội bộ của công ty đại chúng và người có liên quan khác",
-    "Sở giao dịch chứng khoán Việt Nam và tổ chức niêm yết cụ thể"
+    "Người nội bộ của công ty đại chúng và người có liên quan",
+    "Sở giao dịch chứng khoán Việt Nam và tổ chức niêm yết"
    ],
    "answer": 0,
    "explain": "Nhà đầu tư nhỏ không phải người nội bộ, không phải cổ đông lớn thì không thuộc danh sách.",

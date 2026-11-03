@@ -46,8 +46,8 @@
    "q": "Khi công bố thông tin, đối tượng công bố phải đồng thời báo cáo ai?",
    "options": [
     "Ủy ban Chứng khoán Nhà nước và tổ chức nơi chứng khoán niêm yết, đăng ký giao dịch",
-    "Chỉ Hội đồng quản trị và ban kiểm soát của công ty đại chúng đó và các cổ đông nào",
-    "Chỉ cổ đông lớn và người có liên quan của công ty đại chúng đó và các cổ đông nhỏ lẻ",
+    "Hội đồng quản trị, ban kiểm soát của công ty đại chúng và các cổ đông lớn của công ty",
+    "Chỉ cổ đông lớn và người có liên quan của công ty đại chúng cùng các cổ đông nhỏ lẻ",
     "Bộ Công an và cơ quan điều tra có thẩm quyền về kinh tế và tài chính của địa phương"
    ],
    "answer": 0,

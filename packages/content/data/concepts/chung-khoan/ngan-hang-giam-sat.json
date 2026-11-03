@@ -30,9 +30,9 @@
    "q": "Theo khoản 1 Điều 116, ngân hàng giám sát phải là chủ thể nào?",
    "options": [
     "Ngân hàng thương mại có Giấy chứng nhận đăng ký hoạt động lưu ký chứng khoán do Ủy ban cấp",
-    "Bất kỳ công ty chứng khoán nào đang hoạt động trên thị trường và đã được cấp phép hiện hành",
-    "Ngân hàng Nhà nước Việt Nam và các ngân hàng thương mại đã đăng ký giao dịch chứng khoán đó",
-    "Công ty quản lý quỹ khác đang hoạt động tại Việt Nam và có giấy phép hợp lệ theo quy định"
+    "Bất kỳ công ty chứng khoán nào đang hoạt động trên thị trường và đã được cấp phép",
+    "Ngân hàng Nhà nước Việt Nam và các ngân hàng thương mại đã đăng ký giao dịch chứng khoán",
+    "Công ty quản lý quỹ khác đang hoạt động tại Việt Nam và có giấy phép hợp lệ do Ủy ban Chứng khoán cấp"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 116.",
@@ -47,9 +47,9 @@
    "q": "Ngân hàng giám sát giám sát việc quản lý của chủ thể nào?",
    "options": [
     "Quỹ đại chúng, công ty đầu tư chứng khoán",
-    "Mọi công ty niêm yết trên sàn giao dịch đó",
+    "Công ty niêm yết trên sàn giao dịch chính thức",
     "Sở giao dịch chứng khoán và công ty thành viên",
-    "Công ty chứng khoán và công ty tài chính"
+    "Công ty chứng khoán và các công ty tài chính"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 116.",

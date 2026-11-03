@@ -48,9 +48,9 @@
    "q": "Hành vi nào thuộc điểm đ khoản 49 Điều 4?",
    "options": [
     "Đưa ra ý kiến qua phương tiện thông tin đại chúng về một chứng khoán sau khi đã giao dịch, nắm giữ vị thế nhằm tạo ảnh hưởng đến giá",
-    "Viết báo cáo phân tích khi không nắm giữ cổ phiếu nào và không có lợi ích liên quan đến công ty đó, theo đúng quy định theo quy định",
-    "Công bố thông tin định kỳ đúng hạn theo quy định của pháp luật về chứng khoán và thị trường, không có lợi ích liên quan đến giá khác",
-    "Đặt một lệnh mua lớn duy nhất trong ngày để phục vụ nhu cầu đầu tư của khách hàng và công ty, theo đúng quy định theo quy định"
+    "Viết báo cáo phân tích khi không nắm giữ cổ phiếu nào và không có lợi ích liên quan đến công ty đó, theo đúng quy định",
+    "Công bố thông tin định kỳ đúng hạn theo quy định của pháp luật về chứng khoán và thị trường, không có lợi ích liên quan đến giá cổ phiếu",
+    "Đặt một lệnh mua lớn duy nhất trong ngày để phục vụ nhu cầu đầu tư của khách hàng và công ty, không nhằm tạo ảnh hưởng đến giá"
    ],
    "answer": 0,
    "explain": "Khoản 49 Điều 4.",
@@ -104,9 +104,9 @@
    "q": "Anh B cho người quen mượn 10 tài khoản chứng khoán. Người quen dùng các tài khoản này mua bán qua lại để đẩy giá một mã. Anh B có vi phạm không?",
    "options": [
     "Có, khoản 6 Điều 12 cấm cho mượn tài khoản để giao dịch dẫn đến hành vi thao túng",
-    "Không, vì anh B không tự giao dịch và không biết mục đích của người quen hiện hành",
-    "Không, vì tài khoản là tài sản của anh B và anh có quyền cho người khác sử dụng đó",
-    "Chỉ vi phạm nếu anh B nhận tiền từ người quen mượn tài khoản để giao dịch cụ thể"
+    "Không, vì anh B không tự giao dịch và không biết mục đích của người quen mượn",
+    "Không, vì tài khoản là tài sản của anh B và anh có quyền cho người khác sử dụng",
+    "Chỉ vi phạm nếu anh B nhận tiền từ người quen mượn tài khoản để giao dịch"
    ],
    "answer": 0,
    "explain": "Khoản 6 Điều 12.",

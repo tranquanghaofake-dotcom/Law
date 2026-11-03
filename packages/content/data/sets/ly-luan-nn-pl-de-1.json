@@ -11,7 +11,7 @@
         "Nhà nước pháp quyền xã hội chủ nghĩa của Nhân dân, do Nhân dân, vì Nhân dân",
         "Nhà nước liên bang gồm nhiều bang có hiến pháp và quân đội riêng",
         "Nhà nước quân chủ lập hiến, vua đứng đầu và có quyền lập pháp riêng",
-        "Nhà nước thần quyền do giáo hội đứng đầu và cai trị theo kinh sách tôn giáo của mình"
+        "Nhà nước thần quyền do giáo hội đứng đầu và cai trị theo kinh sách tôn giáo"
       ],
       "answer": 0,
       "explain": "Khoản 1 Điều 2.",
@@ -48,7 +48,7 @@
       "q": "Nhân dân thực hiện quyền lực nhà nước bằng hình thức nào?",
       "options": [
         "Dân chủ trực tiếp và dân chủ đại diện",
-        "Chỉ dân chủ đại diện qua Quốc hội và HĐND",
+        "Chỉ dân chủ đại diện qua Quốc hội",
         "Qua bầu cử trực tiếp Chủ tịch nước",
         "Qua các tổ chức chính trị – xã hội"
       ],
@@ -62,7 +62,7 @@
       "options": [
         "Lực lượng lãnh đạo Nhà nước và xã hội",
         "Cơ quan quyền lực nhà nước cao nhất",
-        "Cơ quan lập pháp của đất nước, do dân bầu",
+        "Cơ quan lập pháp cao nhất, do dân bầu",
         "Tổ chức xã hội nghề nghiệp, tự nguyện"
       ],
       "answer": 0,

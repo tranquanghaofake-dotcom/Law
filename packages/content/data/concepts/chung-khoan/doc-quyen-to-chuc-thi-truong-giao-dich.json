@@ -27,7 +27,7 @@
    "q": "Theo khoản 2 Điều 42, ai được phép tổ chức và vận hành thị trường giao dịch chứng khoán?",
    "options": [
     "Sở giao dịch chứng khoán Việt Nam và công ty con",
-    "Mọi công ty chứng khoán đã được cấp phép cụ thể",
+    "Các công ty chứng khoán đã được cấp phép hoạt động",
     "Ủy ban Chứng khoán Nhà nước và các cơ quan liên quan",
     "Ngân hàng Nhà nước Việt Nam và các tổ chức tín dụng"
    ],
@@ -44,9 +44,9 @@
    "q": "Sở giao dịch chứng khoán Việt Nam và công ty con được tổ chức thị trường giao dịch cho loại chứng khoán nào?",
    "options": [
     "Cả chứng khoán đủ điều kiện niêm yết, chưa đủ điều kiện niêm yết, chứng khoán phái sinh…",
-    "Chỉ chứng khoán đủ điều kiện niêm yết và đã được cấp mã định danh riêng theo quy định đó",
-    "Chỉ trái phiếu Chính phủ và trái phiếu chính quyền địa phương đã phát hành theo quy định",
-    "Chỉ chứng khoán phái sinh và hợp đồng quyền chọn đã đăng ký tại cơ quan theo quy định"
+    "Chỉ chứng khoán đủ điều kiện niêm yết và đã được cấp mã định danh riêng cho từng loại",
+    "Trái phiếu Chính phủ và trái phiếu chính quyền địa phương, không gồm cổ phiếu",
+    "Chứng chỉ quỹ đại chúng và cổ phiếu của các công ty chưa đăng ký kinh doanh tại Việt Nam"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 42 liệt kê rộng: chứng khoán đủ điều kiện niêm yết, của doanh nghiệp nhà nước cổ phần hóa, của doanh nghiệp chưa đủ điều kiện niêm yết, của doanh nghiệp khởi nghiệp sáng tạo, phái sinh…",

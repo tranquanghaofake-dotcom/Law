@@ -102,9 +102,9 @@
    "q": "Hai công ty chứng khoán là thành viên của Sở tranh chấp về một giao dịch. Họ có thể yêu cầu Sở làm gì?",
    "options": [
     "Làm trung gian hòa giải theo yêu cầu của thành viên",
-    "Ra bản án buộc một bên bồi thường cho bên còn lại đó",
+    "Ra bản án buộc một bên bồi thường cho bên còn lại",
     "Thu hồi giấy phép của bên vi phạm và đình chỉ hoạt động",
-    "Chuyển hồ sơ sang Quốc hội để xem xét lập pháp khác"
+    "Chuyển hồ sơ sang Quốc hội để xem xét lập pháp"
    ],
    "answer": 0,
    "explain": "Điểm h khoản 1 Điều 46: Sở làm trung gian hòa giải theo yêu cầu của thành viên khi phát sinh tranh chấp liên quan đến hoạt động giao dịch chứng khoán.",
