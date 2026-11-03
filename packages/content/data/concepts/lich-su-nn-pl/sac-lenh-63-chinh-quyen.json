@@ -32,8 +32,8 @@
    "options": [
     "Xã và tỉnh",
     "Huyện và kỳ",
-    "Tất cả các cấp",
-    "Chỉ cấp tỉnh"
+    "Xã và huyện",
+    "Tỉnh và kỳ"
    ],
    "answer": 0,
    "explain": "Điều thứ 1 Sắc lệnh 63/SL.",
