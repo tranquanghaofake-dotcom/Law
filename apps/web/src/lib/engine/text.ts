@@ -12,18 +12,54 @@ const LEADING_PLURAL = /^(các|những)\s+/iu;
 
 const syllables = (s: string): string[] => normalize(s).split(' ').filter(Boolean);
 
-/** Thuật ngữ và các vế đủ nghĩa của nó (≥ 2 tiếng, hoặc chữ viết tắt in hoa), dài trước. */
+// Tiền tố mô tả của tên khái niệm kiểu giáo trình: "Khái niệm và đặc điểm của thuế" → lõi "thuế".
+const DESC = '(?:khái niệm|định nghĩa|đặc điểm|đặc trưng|vai trò|ý nghĩa|phân loại|nội dung|bản chất|chức năng)';
+const DESCRIPTOR = new RegExp(`^${DESC}(?:\\s*(?:,|và)\\s*${DESC})*(?:\\s+của)?\\s+`, 'iu');
+// Phần định tính phía sau lõi: "tội phạm trong Bộ luật Hình sự 1985" → "tội phạm".
+const QUALIFIER = /\s+(?:trong|theo|của|đối với|tại|năm)\s+.*$/iu;
+
+/**
+ * Thuật ngữ và các vế đủ nghĩa của nó (≥ 2 tiếng, hoặc chữ viết tắt in hoa), dài trước.
+ * Tên có tiền tố mô tả ("Khái niệm …", "Khái niệm và đặc điểm của …") thì thêm lõi (kể cả 1 tiếng).
+ */
 export function termParts(term: string): string[] {
   const t = term.normalize('NFC').trim();
   const out = [t];
-  for (const raw of t.split(SPLIT)) {
-    const p = raw.trim().replace(LEADING_PLURAL, '');
-    if (!p || FUNCTION_START.test(p)) continue;
+  const push = (p: string, allowShort: boolean) => {
+    p = p.trim().replace(LEADING_PLURAL, '');
+    if (!p || FUNCTION_START.test(p)) return;
     const isAbbr = /^\p{Lu}{2,}$/u.test(p);
-    if (!isAbbr && syllables(p).length < 2) continue;
+    if (!isAbbr && !allowShort && syllables(p).length < 2) return;
+    if (!syllables(p).length && !isAbbr) return;
     if (!out.some((o) => normalize(o) === normalize(p))) out.push(p);
+  };
+  const core = t.replace(DESCRIPTOR, '');
+  if (core !== t) {
+    push(core, true);
+    push(core.replace(QUALIFIER, ''), true);
+  }
+  for (const raw of [...t.split(SPLIT), ...(core !== t ? core.split(SPLIT) : [])]) {
+    const p = raw.trim();
+    const stripped = p.replace(DESCRIPTOR, '');
+    if (stripped !== p) push(stripped, true);
+    else if (!new RegExp(`^${DESC}$`, 'iu').test(p)) push(p, false);
   }
   return [out[0], ...out.slice(1).sort((a, b) => b.length - a.length)];
+}
+
+/**
+ * Che "chủ ngữ định nghĩa" ở đầu mỗi vế (đầu văn bản, sau dấu chấm, sau "1-", "2.") dạng "<cụm> là …"
+ * khi cụm đó trùng phần lớn với thuật ngữ: "Hình phạt là …" của "Khái niệm hình phạt".
+ */
+export function maskDefiningHead(text: string, term: string): string {
+  const termSyl = new Set(syllables(term));
+  return text.replace(/(^|[.;]\s+)(\d+\s*[-.)]\s*)?([^.;:«»()]{2,70}?)(\s+là\s)/gu, (all, pre: string, num: string | undefined, head: string, la: string) => {
+    const h = head.trim();
+    if (h === MASK || !syllables(h).length) return all;
+    const sy = syllables(h);
+    const hit = sy.length === 1 ? termSyl.has(sy[0]) : coverage(h, term) >= 0.5;
+    return hit ? `${pre}${num ?? ''}${MASK}${la}` : all;
+  });
 }
 
 const escapeRe = (s: string): string => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');

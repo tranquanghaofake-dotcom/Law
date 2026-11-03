@@ -45,6 +45,15 @@ function loadConcept(subjectId: string, id: string): Promise<Concept> {
 export const loadConcepts = (subjectId: string, ids: string[]): Promise<Concept[]> =>
   Promise.all(ids.map((id) => loadConcept(subjectId, id)));
 
+/**
+ * Đợt 6: nạp thêm khái niệm làm phương án nhiễu cho phiên học. Khái niệm lỗi/không còn (404) thì bỏ qua,
+ * không làm hỏng phiên. Dùng chung bộ nhớ với `loadConcepts` (không tải lại khái niệm đã có).
+ */
+export async function loadConceptPool(subjectId: string, ids: string[]): Promise<Concept[]> {
+  const r = await Promise.allSettled(ids.map((id) => loadConcept(subjectId, id)));
+  return r.flatMap((x) => (x.status === 'fulfilled' ? [x.value] : []));
+}
+
 /** Bảng tên khái niệm của môn (dist/terms): 1 file thay cho từng `loadConcepts` chỉ để lấy `term`. */
 export const loadTerms = (subjectId: string): Promise<Record<string, string>> =>
   once(`terms:${subjectId}`, () => getJson<Record<string, string>>(`terms/${encodeURIComponent(subjectId)}.json`));

@@ -1,7 +1,8 @@
 <script lang="ts">
   import type { Concept, Level, Subject } from '$lib/content/types';
-  import { loadConcepts, loadSubject } from '$lib/content/loader';
+  import { loadConceptPool, loadConcepts, loadSubject, loadTerms } from '$lib/content/loader';
   import { buildLearnSession, type Step } from '$lib/engine/session';
+  import { lessonPoolIds } from '$lib/engine/pool';
   import { repo } from '$lib/store/progress-repo';
   import { route } from '$lib/router.svelte';
   import SessionView from '$lib/ui/SessionView.svelte';
@@ -20,8 +21,13 @@
       const lesson = subject.chapters.flatMap((c) => c.lessons).find((l) => l.id === route.params.lesson);
       if (!lesson) throw new Error('Không tìm thấy đợt học.');
       const concepts = await loadConcepts(subject.id, lesson.concepts);
-      const levels = await repo.levels(lesson.concepts);
-      const steps = buildLearnSession(concepts, levels, Math.random);
+      // khái niệm dễ nhầm/cùng chương (≤ 8) + bảng tên môn: làm phương án nhiễu, gộp tình huống Phân biệt
+      const [levels, pool, terms] = await Promise.all([
+        repo.levels(lesson.concepts),
+        loadConceptPool(subject.id, lessonPoolIds(subject, concepts)),
+        loadTerms(subject.id).catch(() => ({})),
+      ]);
+      const steps = buildLearnSession(concepts, levels, Math.random, { pool, terms: { [subject.id]: terms } });
       const all = lessonsOf(subject); const i = all.findIndex((l) => l.id === lesson.id);
       data = { steps, concepts, levels, lessonId: `${subject.id}/${lesson.id}`, title: lesson.title, next: all[i + 1]?.id ?? null, subject: subject.id };
       document.title = `${lesson.title} · Luyện Luật`;
