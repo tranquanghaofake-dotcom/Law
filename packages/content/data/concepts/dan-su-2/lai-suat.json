@@ -29,7 +29,7 @@
    "q": "Lãi suất thỏa thuận trong hợp đồng vay dân sự không được vượt quá bao nhiêu?",
    "options": [
     "20%/năm của khoản tiền vay",
-    "Mức 10%/năm theo ngân hàng",
+    "Mức 10%/năm theo lãi ngân hàng",
     "150% lãi suất cơ bản của NHNN",
     "Không giới hạn mức lãi suất"
    ],
@@ -47,7 +47,7 @@
    "options": [
     "50% mức lãi suất giới hạn tại thời điểm trả nợ",
     "20%/năm của khoản tiền gốc đã vay và chưa trả",
-    "Không phải trả lãi, coi như vay không lãi suất",
+    "Không phải trả lãi, coi như vay không có lãi suất",
     "Lãi suất ngân hàng tại thời điểm ký hợp đồng"
    ],
    "answer": 0,

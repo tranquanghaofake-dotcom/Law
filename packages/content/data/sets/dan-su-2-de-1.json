@@ -11,7 +11,7 @@
         "Hợp đồng vay dân sự có lãi suất theo thỏa thuận",
         "Được lợi về tài sản không có căn cứ pháp luật",
         "Hành vi pháp lý đơn phương của người chuyển nhầm",
-        "Gây thiệt hại cho người khác do lỗi của mình"
+        "Gây thiệt hại cho người khác do lỗi của chính mình"
       ],
       "answer": 1,
       "explain": "Khoản 4 Điều 275.",
@@ -63,7 +63,7 @@
         "Bên bảo lãnh",
         "Bên được bảo lãnh",
         "Bên nhận bảo lãnh",
-        "Bên thế chấp"
+        "Bên thế chấp tài sản"
       ],
       "answer": 0,
       "explain": "Điều 335.",

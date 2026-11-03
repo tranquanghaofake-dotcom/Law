@@ -30,7 +30,7 @@
    "options": [
     "Bên đưa ra hợp đồng theo mẫu phải chịu bất lợi",
     "Có lợi cho bên đưa ra mẫu, bên kia phải chịu",
-    "Do Tòa án tùy ý quyết định theo từng vụ việc riêng",
+    "Do Tòa án tùy ý quyết định theo từng vụ",
     "Coi như không có điều khoản đó trong hợp đồng"
    ],
    "answer": 0,
@@ -48,7 +48,7 @@
     "Không, trừ trường hợp có thỏa thuận khác",
     "Luôn có hiệu lực, không cần thỏa thuận gì thêm",
     "Có hiệu lực nếu được in đậm và nằm ở trang đầu",
-    "Có hiệu lực nếu có nhân chứng chứng kiến"
+    "Có hiệu lực nếu có người làm chứng chứng kiến"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 405.",
