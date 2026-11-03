@@ -71,6 +71,16 @@
     {
      "text": "Bài báo công bố giải pháp trên tạp chí",
      "answer": "right"
+    },
+    {
+     "text": "Đơn đầu tiên nộp tại Việt Nam, sau đó nộp đơn tiếp theo tại nước khác",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 91 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Đơn thứ hai nộp sau đơn đầu tiên cho cùng một sáng chế",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 91 Luật Sở hữu trí tuệ (phải dựa trên đơn đầu tiên)"
     }
    ],
    "explain": "Điểm a khoản 1 Điều 91."
