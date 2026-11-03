@@ -120,6 +120,17 @@
     "tinh thần",
     "100 lần"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mức bồi thường bù đắp tổn thất về tinh thần do tính mạng bị xâm phạm do các bên thỏa thuận; nếu không thỏa thuận được thì mức tối đa cho một người có tính mạng bị xâm phạm không quá một trăm lần mức lương cơ sở do Nhà nước quy định.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 591 Bộ luật Dân sự 2015 (nguyên văn, lược chủ thể được hưởng).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 591 Bộ luật Dân sự 2015"
+   }
   }
  ]
 }

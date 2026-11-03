@@ -120,6 +120,17 @@
     "vượt quá",
     "50%"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Trường hợp các bên có thỏa thuận về lãi suất thì lãi suất theo thỏa thuận không được vượt quá 20%/năm của khoản tiền vay, trừ trường hợp luật khác có liên quan quy định khác.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 468 Bộ luật Dân sự 2015 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 468 Bộ luật Dân sự 2015"
+   }
   }
  ]
 }

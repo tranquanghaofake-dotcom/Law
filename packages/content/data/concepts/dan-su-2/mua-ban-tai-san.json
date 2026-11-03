@@ -119,6 +119,18 @@
     "có quyền bán",
     "hạn chế chuyển nhượng"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tài sản bán thuộc sở hữu của người bán hoặc người bán có quyền bán.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 431 Bộ luật Dân sự 2015 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 431 Bộ luật Dân sự 2015",
+    "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+   }
   }
  ]
 }

@@ -120,6 +120,18 @@
     "số lượng, chất lượng",
     "lãi"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Khi đến hạn trả, bên vay phải hoàn trả cho bên cho vay tài sản cùng loại theo đúng số lượng, chất lượng và chỉ phải trả lãi nếu có thỏa thuận hoặc pháp luật có quy định.",
+   "answer": true,
+   "explain": "Đúng. Điều 463 Bộ luật Dân sự 2015 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 463 Bộ luật Dân sự 2015",
+    "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+   }
   }
  ]
 }

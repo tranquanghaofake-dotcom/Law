@@ -21,10 +21,10 @@
     {
       "q": "Trong trường hợp trên, hàng xóm có phải trả lại chi phí hợp lý không?",
       "options": [
-        "Có",
+        "Có, phải thanh toán chi phí hợp lý đã bỏ ra",
         "Không, vì bạn tự nguyện",
-        "Chỉ một nửa",
-        "Chỉ khi có văn bản"
+        "Phải trả một nửa chi phí hợp lý",
+        "Phải trả nếu có văn bản thỏa thuận trước"
       ],
       "answer": 0,
       "explain": "Điều 576.",
@@ -35,9 +35,9 @@
       "q": "Theo BLDS 2015, người bị thiệt hại có buộc phải chứng minh lỗi của người gây thiệt hại không (nguyên tắc chung)?",
       "options": [
         "Không, Điều 584 không đặt lỗi là điều kiện chung",
-        "Có, luôn bắt buộc phải chứng minh lỗi của người gây",
-        "Chỉ khi thiệt hại về tài sản và có lỗi rõ ràng",
-        "Chỉ khi khởi kiện ra Tòa án nhân dân có thẩm quyền"
+        "Có, người bị thiệt hại phải chứng minh lỗi của người gây ra",
+        "Có, nếu thiệt hại về tài sản và có lỗi rõ ràng",
+        "Có, nếu khởi kiện ra Tòa án nhân dân có thẩm quyền"
       ],
       "answer": 0,
       "explain": "Điều 584.",
