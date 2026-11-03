@@ -48,7 +48,7 @@
    "options": [
     "Có, nếu thể hiện được dưới dạng đồ họa và có khả năng phân biệt",
     "Không, âm thanh không thể là dấu hiệu nhãn hiệu",
-    "Có, nếu là nhãn hiệu nổi tiếng đã đăng ký quốc tế và có tính mới",
+    "Chỉ nhãn hiệu nổi tiếng đã được đăng ký quốc tế và có tính mới",
     "Chỉ khi kèm hình ảnh minh họa và có thể đọc được bằng máy"
    ],
    "answer": 0,
