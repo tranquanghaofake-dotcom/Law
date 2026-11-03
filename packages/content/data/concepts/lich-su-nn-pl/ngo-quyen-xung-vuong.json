@@ -31,9 +31,9 @@
    "q": "Theo Toàn thư, năm 939 Ngô Quyền đã làm gì?",
    "options": [
     "Bắt đầu xưng vương, đặt trăm quan, chế định triều nghi phẩm phục",
-    "Xưng hoàng đế, đặt quốc hiệu Đại Cồ Việt",
-    "Xưng Tiết độ sứ",
-    "Ban hành Hình thư"
+    "Xưng hoàng đế, đặt quốc hiệu Đại Cồ Việt và lập triều đình riêng",
+    "Xưng Tiết độ sứ của nhà Đường, đặt trăm quan và triều nghi",
+    "Ban hành Hình thư, bộ luật thành văn đầu tiên của nước ta"
    ],
    "answer": 0,
    "explain": "Toàn thư, Tiền Ngô Vương năm 939.",
@@ -48,9 +48,9 @@
    "q": "Ngô Quyền đóng đô ở đâu?",
    "options": [
     "Loa Thành (Cổ Loa)",
-    "Hoa Lư",
-    "Mê Linh",
-    "Thăng Long"
+    "Hoa Lư, Ninh Bình",
+    "Mê Linh, Vĩnh Phúc",
+    "Thăng Long, Hà Nội"
    ],
    "answer": 0,
    "explain": "Toàn thư: \"tự lập làm vương, đóng đô ở Loa Thành\".",

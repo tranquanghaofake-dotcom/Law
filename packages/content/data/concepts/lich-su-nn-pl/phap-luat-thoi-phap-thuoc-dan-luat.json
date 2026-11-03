@@ -32,9 +32,9 @@
    "q": "Theo Điều thứ 2 Sắc lệnh 47, Bộ Dân luật Bắc kỳ được ban bố bằng văn bản nào?",
    "options": [
     "Nghị định của Thống sứ Bắc kỳ (30/3/1931) và nghị định của Toàn quyền Đông Dương (1/4/1931)",
-    "Dụ của vua Bảo Đại",
-    "Luật của Quốc hội Pháp",
-    "Sắc lệnh của Chủ tịch Hồ Chí Minh"
+    "Nghị định của Thống đốc Nam Kỳ và sắc lệnh của Quốc hội Pháp, không có văn bản Việt Nam nào",
+    "Dụ của vua Bảo Đại ban hành tại Huế ngày 30/3/1931, có hiệu lực toàn quốc từ đó",
+    "Luật của Quốc hội Pháp ban hành ngày 1/4/1931, áp dụng riêng cho từng kỳ theo lệnh vua"
    ],
    "answer": 0,
    "explain": "Điều thứ 2 Sắc lệnh 47.",
@@ -49,8 +49,8 @@
    "q": "Bộ Dân luật Trung kỳ được ban bố bằng hình thức văn bản nào theo Điều thứ 3 Sắc lệnh 47?",
    "options": [
     "Các Dụ năm 1936, 1938, 1939",
-    "Nghị định của Thống sứ",
-    "Luật của Nghị viện",
+    "Nghị định của Thống sứ Trung kỳ",
+    "Luật của Nghị viện Pháp",
     "Sắc lệnh Tổng thống Pháp"
    ],
    "answer": 0,

@@ -47,9 +47,9 @@
    "q": "\"Nghị quý\" theo Điều 3 áp dụng cho ai?",
    "options": [
     "Quan viên có chức sự từ tam phẩm trở lên",
-    "Họ tôn thất",
-    "Con cháu các triều trước",
-    "Người cần cù chăm chỉ"
+    "Dân thường không có chức tước, công danh",
+    "Họ tôn thất trong hoàng tộc nhà vua",
+    "Con cháu các triều đại trước đã bị loại"
    ],
    "answer": 0,
    "explain": "Điều 3, khoản 6.",
@@ -99,9 +99,9 @@
    "q": "Bát nghị phản ánh đặc điểm nào của pháp luật thời Hậu Lê?",
    "options": [
     "Tính đẳng cấp: ưu đãi quý tộc, quan lại, người có công; đồng thời bảo vệ vương quyền bằng ngoại lệ thập ác",
-    "Bình đẳng tuyệt đối trước pháp luật",
-    "Chỉ ưu đãi người nghèo",
-    "Xóa bỏ hoàn toàn quyền xét xử của vua"
+    "Mọi người đều bị xử như nhau, không có ngoại lệ về đẳng cấp hay thân phận, kể cả khi phạm tội nặng",
+    "Chỉ ưu đãi người nghèo, không có chế định nào dành cho quý tộc hay quan lại trong xét xử hình sự",
+    "Xóa bỏ hoàn toàn quyền xét xử của vua, giao cho các quan lại địa phương quyết định mọi bản án hình sự của cả nước"
    ],
    "answer": 0,
    "explain": "Đánh giá phổ biến của giáo trình dựa trên Điều 3, 4."
