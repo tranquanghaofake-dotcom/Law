@@ -37,3 +37,10 @@
 ## Kiểm dò trích dẫn (haiku-3)
 
 - `dieu-kien-huong-luong-huu#6` — khoan-diem-khong-ton-tai — báo nhầm: công cụ gán "Điều 64" cho BLLĐ; Điều 64 Luật BHXH 2024 có điểm a khoản 1.
+
+## Sửa theo kiểm chéo (sonnet C, 03/11/2026) — nguồn: `$DOT7/verify/an-sinh-xa-hoi.md`
+
+| Khái niệm | Trước (đã bỏ/đổi) | Sau | Căn cứ | Ghi chú |
+|---|---|---|---|---|
+| `dieu-kien-tro-cap-that-nghiep` | Người lao động nộp hồ sơ hưởng trợ cấp sau 03 tháng kể từ ngày chấm dứt hợp đồng | Người lao động nộp hồ sơ hưởng trợ cấp sau khi đã quá 03 tháng kể từ ngày chấm dứt hợp đồng | Điểm c khoản 1 Điều 38 Luật Việc làm 2025 | viết lại không nhắc nhãn / sửa lỗi theo bảng verify |
+| `tro-cap-huu-tri-xa-hoi` | Người có đủ 15 năm đóng BHXH bắt buộc khi nghỉ việc đủ tuổi được hưởng lương hưu | Người có đủ 15 năm đóng BHXH bắt buộc khi nghỉ việc đủ tuổi thì được hưởng khoản định kỳ hằng tháng từ quỹ BHX | Khoản 1 Điều 64 Luật Bảo hiểm xã hội 2024 | viết lại không nhắc nhãn / sửa lỗi theo bảng verify |

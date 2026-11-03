@@ -61,7 +61,7 @@
    "type": "pair",
    "level": 2,
    "left": "Có thể là người sử dụng lao động",
-   "right": "Không đúng",
+   "right": "Không thể là người sử dụng lao động",
    "cases": [
     {
      "text": "Hộ gia đình thuê người giúp việc",

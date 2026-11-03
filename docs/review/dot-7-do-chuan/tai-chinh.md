@@ -58,3 +58,9 @@ Tổng: 38 tình huống mới; 17 khái niệm đạt ≥ 4 tình huống.
 |---|---|---|---|
 | `he-thong-nsnn` | Ngân sách nhà nước gồm ngân sách trung ương và ngân sách địa phương | Luật NSNN 2025 (phải) | Khoản 1 Điều 6 Luật Ngân sách nhà nước 2025 |
 | `he-thong-nsnn` | Ngân sách cấp huyện có dự toán riêng do Hội đồng nhân dân huyện quyết định (⚠ quy định cũ, Luật NSNN 2015 chưa có trong laws/) | Luật NSNN 2015 (trái) | Luật Ngân sách nhà nước 2015 (⚠ cần đối chiếu) |
+
+## Sửa theo kiểm chéo (sonnet C, 03/11/2026) — nguồn: `$DOT7/verify/tai-chinh.md`
+
+| Khái niệm | Trước (đã bỏ/đổi) | Sau | Căn cứ | Ghi chú |
+|---|---|---|---|---|
+| `he-thong-nsnn` | Ngân sách cấp huyện có dự toán riêng do Hội đồng nhân dân huyện quyết định (⚠ quy định cũ, Luật NSNN 2015 chưa | Ngân sách cấp huyện có dự toán riêng do Hội đồng nhân dân huyện quyết định | Luật Ngân sách nhà nước 2015 (đã hết hiệu lực) | ⚠ opus: Luật NSNN 2015 chưa có trong laws/ (quy định cũ, trước 01/7/2025) |

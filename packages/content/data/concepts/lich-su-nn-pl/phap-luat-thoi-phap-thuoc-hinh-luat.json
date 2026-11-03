@@ -74,12 +74,12 @@
      "answer": "right"
     },
     {
-     "text": "Bộ luật ban hành dưới triều Gia Long vẫn được tạm giữ theo Sắc lệnh 47",
-     "answer": "left",
-     "basis": "Sắc lệnh 47, Điều thứ 1 (laws/lich-su-su-lieu.txt); Giáo trình Lịch sử nhà nước và pháp luật Việt Nam, Trường ĐH Luật Hà Nội 2025 (⚠ chưa đối chiếu nguyên văn)"
+     "text": "Bộ luật được Sắc lệnh 47 cho phép tiếp tục thi hành tại Trung bộ",
+     "answer": "right",
+     "basis": "Sắc lệnh 47, Điều thứ 9 (laws/lich-su-su-lieu.txt)"
     },
     {
-     "text": "Bộ luật được Sắc lệnh 47 cho phép tiếp tục thi hành tại Trung bộ",
+     "text": "Bộ luật có hiệu lực ở Trung bộ do Dụ ngày 3/7/1933 ban bố, được Sắc lệnh 47 cho thi hành trong toàn cõi Trung bộ kể cả Đà Nẵng",
      "answer": "right",
      "basis": "Sắc lệnh 47, Điều thứ 9 (laws/lich-su-su-lieu.txt)"
     }
