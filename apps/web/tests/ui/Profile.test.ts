@@ -2,13 +2,14 @@ import { afterEach, describe, expect, it, vi } from 'vitest';
 import { cleanup, render, waitFor } from '@testing-library/svelte';
 import Profile from '../../src/routes/Profile.svelte';
 import { route } from '$lib/router.svelte';
+import { clearContentCache } from '$lib/content/loader';
 
 const emptyIndex = { subjects: [], conceptCount: {}, sets: [] };
 const stubFetch = () => vi.stubGlobal('fetch', vi.fn(async () => new Response(JSON.stringify(emptyIndex), { status: 200, headers: { 'content-type': 'application/json' } })));
 
 describe('Profile (2 tab)', () => {
   // Chờ phần tải dữ liệu bất đồng bộ của Profile xong rồi mới gỡ component, tránh lỗi jsdom "_location" sau khi môi trường đã đóng.
-  afterEach(async () => { await new Promise((r) => setTimeout(r, 50)); cleanup(); vi.unstubAllGlobals(); route.name = 'home'; });
+  afterEach(async () => { await new Promise((r) => setTimeout(r, 50)); cleanup(); vi.unstubAllGlobals(); clearContentCache(); route.name = 'home'; });
   it('tab Tổng quan được chọn ở #/toi; có tab Cài đặt trỏ #/cai-dat; trạng thái rỗng khi chưa học', async () => {
     stubFetch(); route.name = 'profile';
     const { container } = render(Profile);
