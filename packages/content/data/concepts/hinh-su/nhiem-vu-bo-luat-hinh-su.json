@@ -70,6 +70,16 @@
     {
      "text": "Quy định trình tự điều tra, truy tố, xét xử",
      "answer": "right"
+    },
+    {
+     "text": "Quy định tội phạm và khung hình phạt cho từng hành vi nguy hiểm cho xã hội",
+     "answer": "left",
+     "basis": "Điều 1 Bộ luật Hình sự 2015"
+    },
+    {
+     "text": "Quy định cách thức triệu tập người làm chứng khi điều tra vụ án hình sự (⚠ thuộc BLTTHS, chưa có trong laws/)",
+     "answer": "right",
+     "basis": "Điều 1 Bộ luật Hình sự 2015 (nhiệm vụ BLHS không gồm thủ tục)"
     }
    ],
    "explain": "Điều 1 Bộ luật Hình sự."

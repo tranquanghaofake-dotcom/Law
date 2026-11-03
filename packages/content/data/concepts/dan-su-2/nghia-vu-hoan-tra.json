@@ -70,6 +70,16 @@
     {
      "text": "Trả lại số tiền được chuyển nhầm",
      "answer": "right"
+    },
+    {
+     "text": "Người sử dụng nhà của người khác không có căn cứ pháp luật, phải trả lại nhà",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 579 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Người không có căn cứ pháp luật được hưởng lợi từ tài sản làm người khác thiệt hại, phải hoàn lại khoản lợi",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 579 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 579."

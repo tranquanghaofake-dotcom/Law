@@ -76,6 +76,11 @@
     {
      "text": "Mức cao nhất của khung là phạt tiền",
      "answer": "left"
+    },
+    {
+     "text": "Tội có khung hình phạt cao nhất là tù chung thân hoặc tử hình",
+     "answer": "right",
+     "basis": "Điểm d khoản 1 Điều 9 Bộ luật Hình sự 2015"
     }
    ],
    "explain": "Khoản 1 Điều 9."

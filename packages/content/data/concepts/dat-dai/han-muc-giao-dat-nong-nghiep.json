@@ -70,6 +70,16 @@
     {
      "text": "Đất trồng cây hằng năm ở tỉnh miền Bắc",
      "answer": "right"
+    },
+    {
+     "text": "Đất trồng cây hằng năm của cá nhân ở tỉnh đồng bằng sông Cửu Long, không quá 03 ha",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 176 Luật Đất đai 2024"
+    },
+    {
+     "text": "Đất nuôi trồng thủy sản của cá nhân ở tỉnh miền Trung, không quá 02 ha",
+     "answer": "right",
+     "basis": "Điểm b khoản 1 Điều 176 Luật Đất đai 2024"
     }
    ],
    "explain": "Điều 176."

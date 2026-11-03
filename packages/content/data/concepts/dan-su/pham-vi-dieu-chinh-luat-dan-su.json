@@ -29,7 +29,7 @@
    "q": "Theo Điều 1 Bộ luật Dân sự 2015, chủ thể của quan hệ dân sự gồm những ai?",
    "options": [
     "Cá nhân, pháp nhân",
-    "Cá nhân, pháp nhân, hộ gia đình, tổ hợp tác",
+    "Cơ quan nhà nước, tổ chức chính trị và cá nhân",
     "Chỉ cá nhân",
     "Cơ quan nhà nước và công dân"
    ],
@@ -74,6 +74,11 @@
     {
      "text": "Quyết định xử phạt vi phạm hành chính",
      "answer": "right"
+    },
+    {
+     "text": "Việc cấp giấy phép lái xe của cơ quan công an",
+     "answer": "right",
+     "basis": "Điều 1 Bộ luật Dân sự 2015 (quan hệ hành chính không thuộc phạm vi dân sự)"
     }
    ],
    "explain": "Điều 1 Bộ luật Dân sự 2015."

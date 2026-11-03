@@ -69,6 +69,16 @@
     {
      "text": "Thỏa thuận chuyển giao quyền giữa các bên",
      "answer": "right"
+    },
+    {
+     "text": "Cơ quan nhà nước xác nhận quyền sử dụng đất và tài sản gắn liền với đất cho người dân",
+     "answer": "left",
+     "basis": "Đoạn 1 khoản 21 Điều 3 Luật Đất đai 2024"
+    },
+    {
+     "text": "Hợp đồng chuyển nhượng quyền sử dụng đất do hai bên ký kết, chưa có xác nhận của Nhà nước",
+     "answer": "right",
+     "basis": "Điều 45 Luật Đất đai 2024"
     }
    ],
    "explain": "Điều 3, 45."

@@ -71,6 +71,16 @@
     {
      "text": "Ký giữa từng người lao động và người sử dụng lao động",
      "answer": "right"
+    },
+    {
+     "text": "Thỏa ước ký giữa tổ chức đại diện người lao động và nhiều doanh nghiệp trong cùng ngành",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 75 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Hợp đồng ký riêng với từng người lao động, quy định việc làm và tiền lương của người đó",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 13 Bộ luật Lao động 2019"
     }
    ],
    "explain": "Điều 13, 75."

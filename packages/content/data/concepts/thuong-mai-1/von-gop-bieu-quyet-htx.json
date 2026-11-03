@@ -71,6 +71,16 @@
     {
      "text": "Vốn góp tối đa không quá 40% vốn điều lệ",
      "answer": "right"
+    },
+    {
+     "text": "Tổng vốn góp của thành viên liên kết không quá 30% vốn điều lệ của hợp tác xã",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 74 Luật Hợp tác xã 2023"
+    },
+    {
+     "text": "Tổng vốn góp của thành viên liên kết không quá 40% vốn điều lệ của liên hiệp hợp tác xã",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 74 Luật Hợp tác xã 2023"
     }
    ],
    "explain": "Khoản 1 Điều 74."

@@ -75,6 +75,11 @@
     {
      "text": "Phần con của vợ lẽ, nàng hầu thì phải kém",
      "answer": "left"
+    },
+    {
+     "text": "Ruộng đất hương hỏa lấy một phần hai mươi số ruộng đất để lập hương hỏa",
+     "answer": "right",
+     "basis": "Quốc triều hình luật, Điều 391 (laws/lich-su-su-lieu.txt)"
     }
    ],
    "explain": "Quốc triều hình luật."

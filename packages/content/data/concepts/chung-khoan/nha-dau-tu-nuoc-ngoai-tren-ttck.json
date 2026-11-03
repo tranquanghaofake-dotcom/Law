@@ -69,6 +69,16 @@
     {
      "text": "Không bị giới hạn \"room ngoại\"",
      "answer": "right"
+    },
+    {
+     "text": "Tổ chức có vốn đầu tư nước ngoài tham gia đầu tư phải tuân thủ quy định về sở hữu",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 51 Luật Chứng khoán 2019"
+    },
+    {
+     "text": "Cá nhân trong nước mua cổ phiếu công ty đại chúng không bị giới hạn tỷ lệ sở hữu nước ngoài",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 51 Luật Chứng khoán 2019 (đối chiếu)"
     }
    ],
    "explain": "Điều 51; điểm đ khoản 1 Điều 31 cũng buộc chào bán riêng lẻ tuân thủ tỷ lệ sở hữu nước ngoài."

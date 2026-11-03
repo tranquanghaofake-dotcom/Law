@@ -74,6 +74,16 @@
     {
      "text": "Xe máy",
      "answer": "right"
+    },
+    {
+     "text": "Căn hộ chung cư đã được cấp giấy chứng nhận quyền sở hữu",
+     "answer": "left",
+     "basis": "Điểm b khoản 1 Điều 107 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Máy móc đặt rời, không gắn liền với đất đai hay nhà ở",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 107 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 107."

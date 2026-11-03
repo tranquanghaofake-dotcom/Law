@@ -73,6 +73,11 @@
     {
      "text": "Cử tri đi bầu đại biểu Quốc hội là biểu hiện trực tiếp của nguyên tắc này.",
      "answer": "left"
+    },
+    {
+     "text": "Quyền lực nhà nước được phân công, phối hợp, kiểm soát giữa các cơ quan nhà nước",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 2 Hiến pháp 2013"
     }
    ],
    "explain": "Khoản 2 Điều 2 nói về nguồn gốc quyền lực (Nhân dân); khoản 3 Điều 2 nói về cách tổ chức quyền lực (thống nhất, phân công, phối hợp, kiểm soát)."

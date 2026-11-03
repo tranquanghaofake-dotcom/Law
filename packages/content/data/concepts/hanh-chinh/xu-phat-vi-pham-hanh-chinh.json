@@ -71,6 +71,16 @@
     {
      "text": "Xử phạt hai lần một hành vi",
      "answer": "right"
+    },
+    {
+     "text": "Nhiều người cùng thực hiện một hành vi thì mỗi người đều bị xử phạt",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 3 Luật Xử lý vi phạm hành chính"
+    },
+    {
+     "text": "Đã phạt tiền về hành vi đó rồi lại phạt tiền thêm lần nữa",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 3 Luật Xử lý vi phạm hành chính (một hành vi chỉ bị xử phạt một lần)"
     }
    ],
    "explain": "Điều 3."

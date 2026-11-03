@@ -98,12 +98,9 @@ describe('chặn tái phạm trên toàn kho', () => {
 
   // Ngoại lệ "điều không tồn tại" — mỗi dòng có lý do. Lúc đặt (03/11/2026) đây là toàn bộ cờ còn mở,
   // giao haiku/opus xử lý trong đợt 7; xử lý xong dòng nào thì xoá dòng đó (test sẽ báo nếu dòng thừa).
-  const DIEU_EXCEPTIONS: Record<string, string> = {
-    'concepts/so-huu-tri-tue/bien-phap-xu-ly-xam-pham-shtt.json#-1#Điều 225': 'chờ haiku xử lý',
-    'concepts/tai-san-tri-tue/tstt-nhuong-quyen-thuong-mai.json#0#Điều 284 Luật Sở hữu trí tuệ': 'chờ haiku xử lý: Điều 284 là của Luật Thương mại',
-    'concepts/tai-san-tri-tue/tstt-nhuong-quyen-thuong-mai.json#1#Khoản 1 Điều 284 Luật Sở hữu trí tuệ': 'chờ haiku xử lý: như trên',
-    'concepts/thuong-mai/khuyen-mai.json#-1#Điều 102–116': 'chờ haiku xử lý: Điều 102–116 LTM (quảng cáo thương mại) không có trong VBHN',
-  };
+  // Lúc đặt (03/11/2026) có 4 ngoại lệ chờ haiku; sau khi xử lý (đợt 7) còn 0. Thêm dòng mới phải kèm lý do.
+  const DIEU_EXCEPTIONS: Record<string, string> = {};
+
 
 
   it('trích dẫn ánh xạ được thì Điều phải tồn tại (trừ ngoại lệ có lý do)', () => {

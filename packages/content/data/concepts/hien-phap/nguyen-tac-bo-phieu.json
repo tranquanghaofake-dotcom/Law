@@ -74,6 +74,16 @@
     {
      "text": "Cử tri viết hỏng phiếu và xin đổi phiếu khác",
      "answer": "left"
+    },
+    {
+     "text": "Cử tri bỏ phiếu ở đơn vị nơi mình được ghi tên trong danh sách cử tri",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 29 Luật Bầu cử Đại biểu Quốc hội và Đại biểu Hội đồng nhân dân 2015"
+    },
+    {
+     "text": "Người không có thẻ cử tri vẫn bỏ phiếu thay người khác",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 69 Luật Bầu cử Đại biểu Quốc hội và Đại biểu Hội đồng nhân dân 2015"
     }
    ],
    "explain": "Khoản 2, 4, 6 Điều 69."

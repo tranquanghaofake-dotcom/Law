@@ -71,6 +71,16 @@
     {
      "text": "Quyết định trao quyền sử dụng cho chủ thể cụ thể",
      "answer": "right"
+    },
+    {
+     "text": "Phân bổ diện tích các loại đất cho từng địa phương và khoanh vùng theo kỳ quy hoạch",
+     "answer": "left",
+     "basis": "Khoản 36 Điều 3 Luật Đất đai 2024"
+    },
+    {
+     "text": "Nhà nước quyết định giao đất cho hộ gia đình, cá nhân sử dụng ổn định",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 13 Luật Đất đai 2024"
     }
    ],
    "explain": "Điều 3."

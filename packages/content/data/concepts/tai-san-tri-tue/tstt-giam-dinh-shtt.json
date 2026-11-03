@@ -72,6 +72,16 @@
     {
      "text": "Quyết định có hiệu lực bắt buộc bên xâm phạm phải bồi thường",
      "answer": "right"
+    },
+    {
+     "text": "Kết luận của tổ chức giám định về sự giống nhau giữa hai nhãn hiệu",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 201 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Ý kiến cá nhân của người mua hàng không qua giám định chuyên môn",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 201 Luật Sở hữu trí tuệ"
     }
    ],
    "explain": "Khoản 1 Điều 201; kết luận giám định không thay thế quyết định của cơ quan có thẩm quyền."

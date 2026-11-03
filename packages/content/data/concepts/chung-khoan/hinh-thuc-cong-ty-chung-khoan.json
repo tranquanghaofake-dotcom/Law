@@ -69,6 +69,16 @@
     {
      "text": "Đăng ký doanh nghiệp theo Luật Doanh nghiệp",
      "answer": "right"
+    },
+    {
+     "text": "Phải có giấy phép thành lập và hoạt động kinh doanh chứng khoán trước khi hoạt động",
+     "answer": "left",
+     "basis": "Điều 70 Luật Chứng khoán 2019"
+    },
+    {
+     "text": "Sau khi được cấp giấy phép, đăng ký thành lập công ty theo Luật Doanh nghiệp",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 71 Luật Chứng khoán 2019 (đối chiếu)"
     }
    ],
    "explain": "Khoản 1 Điều 71: \"Sau khi được cấp Giấy phép… phải đăng ký doanh nghiệp\"."

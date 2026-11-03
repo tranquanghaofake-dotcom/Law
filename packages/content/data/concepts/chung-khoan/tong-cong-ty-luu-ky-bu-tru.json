@@ -75,6 +75,11 @@
     {
      "text": "Bù trừ, xác định nghĩa vụ thanh toán tiền và chứng khoán",
      "answer": "right"
+    },
+    {
+     "text": "Chủ thể quản lý thị trường giao dịch chứng khoán niêm yết theo Điều 42",
+     "answer": "left",
+     "basis": "Điều 42 Luật Chứng khoán 2019 (đối chiếu)"
     }
    ],
    "explain": "Chương IV và Chương V Luật Chứng khoán."

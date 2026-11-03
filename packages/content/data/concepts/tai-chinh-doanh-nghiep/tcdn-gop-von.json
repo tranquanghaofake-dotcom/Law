@@ -72,6 +72,16 @@
     {
      "text": "Tài sản mượn của người khác, không có quyền sử dụng hợp pháp để góp vốn",
      "answer": "right"
+    },
+    {
+     "text": "Quyền sử dụng đất hợp pháp của thành viên được đem góp vốn vào công ty",
+     "answer": "left",
+     "basis": "Khoản 1 và khoản 2 Điều 34 Luật Doanh nghiệp 2020"
+    },
+    {
+     "text": "Uy tín và mối quan hệ kinh doanh của người sáng lập, không định giá được bằng tiền",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 34 Luật Doanh nghiệp 2020"
     }
    ],
    "explain": "Khoản 1, 2 Điều 34."

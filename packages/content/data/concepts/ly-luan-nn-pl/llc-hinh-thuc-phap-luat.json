@@ -63,6 +63,16 @@
     {
      "text": "Chế định luật, ngành luật",
      "answer": "right"
+    },
+    {
+     "text": "Văn bản quy phạm pháp luật do cơ quan nhà nước ban hành đúng thẩm quyền",
+     "answer": "left",
+     "basis": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), VD9"
+    },
+    {
+     "text": "Cấu trúc nội tại của hệ thống pháp luật, chia thành ngành luật và chế định",
+     "answer": "right",
+     "basis": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), VD9"
     }
    ],
    "explain": "VD9."

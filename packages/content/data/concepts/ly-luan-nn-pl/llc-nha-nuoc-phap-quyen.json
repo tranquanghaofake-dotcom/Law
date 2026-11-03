@@ -73,6 +73,16 @@
     {
      "text": "Người đứng đầu ra lệnh trái luật mà không ai được xem xét",
      "answer": "right"
+    },
+    {
+     "text": "Mọi cơ quan nhà nước chỉ hành động trong phạm vi pháp luật cho phép và chịu kiểm soát",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 2 Hiến pháp 2013"
+    },
+    {
+     "text": "Quan chức lạm quyền ban hành quyết định trái luật, cơ quan cấp trên không xem xét",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 2 Hiến pháp 2013"
     }
    ],
    "explain": "Bài 9; Điều 8 Hiến pháp 2013."

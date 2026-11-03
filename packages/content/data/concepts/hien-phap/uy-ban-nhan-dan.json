@@ -71,6 +71,16 @@
     {
      "text": "Thực hiện nhiệm vụ do cơ quan nhà nước cấp trên giao",
      "answer": "right"
+    },
+    {
+     "text": "Ủy ban nhân dân do Hội đồng nhân dân cùng cấp bầu và chịu trách nhiệm trước Hội đồng nhân dân",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 114 Hiến pháp 2013"
+    },
+    {
+     "text": "Ủy ban nhân dân thực hiện nhiệm vụ do Chính phủ giao ở địa phương",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 114 Hiến pháp 2013"
     }
    ],
    "explain": "Khoản 2 Điều 114."

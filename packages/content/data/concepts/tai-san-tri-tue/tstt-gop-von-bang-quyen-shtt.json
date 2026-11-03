@@ -71,6 +71,16 @@
     {
      "text": "Quyền đứng tên tác giả trên tác phẩm",
      "answer": "right"
+    },
+    {
+     "text": "Bí quyết kỹ thuật do cá nhân nắm giữ được định giá bằng tiền để góp vốn",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 34 Luật Doanh nghiệp 2020"
+    },
+    {
+     "text": "Công sức làm việc của người sáng lập trong tương lai",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 34 Luật Doanh nghiệp 2020 (không phải tài sản có thể định giá)"
     }
    ],
    "explain": "Khoản 1 Điều 34 Luật Doanh nghiệp; quyền nhân thân không chuyển giao."

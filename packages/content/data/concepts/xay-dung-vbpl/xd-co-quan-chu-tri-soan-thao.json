@@ -72,6 +72,16 @@
     {
      "text": "Kết luận về tính hợp hiến, hợp pháp của dự thảo trước khi trình Chính phủ",
      "answer": "right"
+    },
+    {
+     "text": "Soạn thảo dự án luật do mình chủ trì hoặc được phân công soạn thảo",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 33 Luật Ban hành văn bản quy phạm pháp luật 2025"
+    },
+    {
+     "text": "Bộ Tư pháp chủ trì thẩm định dự án luật do Chính phủ trình trước khi trình",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 34 Luật Ban hành văn bản quy phạm pháp luật 2025"
     }
    ],
    "explain": "Khoản 3 Điều 33; Điều 34."

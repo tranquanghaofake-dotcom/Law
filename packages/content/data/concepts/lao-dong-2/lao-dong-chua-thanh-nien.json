@@ -70,6 +70,21 @@
     {
      "text": "Làm việc, trừ công việc và nơi làm việc bị cấm tại Điều 147",
      "answer": "right"
+    },
+    {
+     "text": "Em 14 tuổi được làm công việc nhẹ trong danh mục do Bộ trưởng ban hành",
+     "answer": "left",
+     "basis": "Khoản 3 Điều 143 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Bạn 15 tuổi làm việc tại công ty theo hợp đồng lao động, không thuộc công việc cấm",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 143 và Điều 147 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Bạn 16 tuổi làm việc văn phòng bình thường tại công ty",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 143 Bộ luật Lao động 2019"
     }
    ],
    "explain": "Điều 143."

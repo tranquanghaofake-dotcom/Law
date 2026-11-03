@@ -70,6 +70,16 @@
     {
      "text": "Có quyền sử dụng đất được Nhà nước trao",
      "answer": "right"
+    },
+    {
+     "text": "Nhà nước đại diện chủ sở hữu, thống nhất quản lý đất đai thuộc sở hữu toàn dân",
+     "answer": "left",
+     "basis": "Điều 12 Luật Đất đai 2024"
+    },
+    {
+     "text": "Hộ gia đình được Nhà nước trao quyền sử dụng đất để canh tác ổn định",
+     "answer": "right",
+     "basis": "Điều 12 Luật Đất đai 2024"
     }
    ],
    "explain": "Điều 12."

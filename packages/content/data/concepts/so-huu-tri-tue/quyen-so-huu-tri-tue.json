@@ -75,6 +75,16 @@
     {
      "text": "Sáng chế",
      "answer": "right"
+    },
+    {
+     "text": "Bức tranh vẽ của họa sĩ là tác phẩm mỹ thuật được bảo hộ quyền tác giả",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 14 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Kiểu dáng công nghiệp của chiếc ghế mới được đăng ký bảo hộ",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 4 Luật Sở hữu trí tuệ"
     }
    ],
    "explain": "Điều 4."

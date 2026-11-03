@@ -70,6 +70,16 @@
     {
      "text": "Không làm việc pháp luật buộc phải làm dù có đủ điều kiện",
      "answer": "right"
+    },
+    {
+     "text": "Người lấy trộm xe máy của hàng xóm rồi mang đi giấu, thực hiện hành động pháp luật cấm",
+     "answer": "left",
+     "basis": "Giáo trình Luật Hình sự Việt Nam (Phần chung), Trường Đại học Luật Hà Nội (⚠ chưa đối chiếu nguyên văn)"
+    },
+    {
+     "text": "Bác sĩ trực có điều kiện nhưng không cứu người đang nguy hiểm đến tính mạng, người đó chết",
+     "answer": "right",
+     "basis": "Điều 132 Bộ luật Hình sự 2015"
     }
    ],
    "explain": "Học thuyết; Điều 132 BLHS."

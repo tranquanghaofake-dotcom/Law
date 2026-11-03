@@ -66,6 +66,16 @@
     {
      "text": "Bị bạn bè phê bình vì thất hứa",
      "answer": "right"
+    },
+    {
+     "text": "Người vi phạm trật tự xây dựng bị xử phạt hành chính bằng tiền",
+     "answer": "left",
+     "basis": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), VD13"
+    },
+    {
+     "text": "Người làm sai bị nhắc nhở, góp ý trong buổi sinh hoạt tập thể",
+     "answer": "right",
+     "basis": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), VD13"
     }
    ],
    "explain": "VD13."

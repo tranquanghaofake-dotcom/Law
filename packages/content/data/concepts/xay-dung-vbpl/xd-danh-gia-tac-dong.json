@@ -74,6 +74,16 @@
     {
      "text": "Soạn lời văn điều khoản dự thảo",
      "answer": "right"
+    },
+    {
+     "text": "Phân tích tác động của giải pháp chính sách đối với hệ thống pháp luật về tính hợp hiến, hợp pháp",
+     "answer": "left",
+     "basis": "Điểm a khoản 2 Điều 29 Luật Ban hành văn bản quy phạm pháp luật 2025"
+    },
+    {
+     "text": "Chỉnh sửa lỗi chính tả và thể thức trình bày của dự thảo đã có chính sách",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 7 Luật Ban hành văn bản quy phạm pháp luật 2025 (thể thức, kỹ thuật trình bày)"
     }
    ],
    "explain": "Khoản 2 Điều 29."

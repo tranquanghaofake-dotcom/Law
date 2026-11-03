@@ -75,6 +75,16 @@
     {
      "text": "Khúc Thừa Mỹ xin nhà Lương trao tiết việt",
      "answer": "left"
+    },
+    {
+     "text": "Người đứng đầu xin danh nghĩa tiết độ sứ của triều đình phương Bắc để giữ châu trị",
+     "answer": "left",
+     "basis": "Đại Việt sử ký toàn thư, Ngoại kỷ quyển V, Kỷ Nam Bắc phân tranh, tờ 17b–18b (laws/lich-su-su-lieu.txt)"
+    },
+    {
+     "text": "Người đứng đầu tự xưng vương, đặt trăm quan, không nhận chức của phương Bắc",
+     "answer": "right",
+     "basis": "Đại Việt sử ký toàn thư, Ngoại kỷ quyển V, Kỷ nhà Ngô, tờ 20b–21a (laws/lich-su-su-lieu.txt)"
     }
    ],
    "explain": "Toàn thư, Ngoại kỷ quyển V."

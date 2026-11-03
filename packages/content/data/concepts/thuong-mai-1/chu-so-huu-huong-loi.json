@@ -71,6 +71,16 @@
     {
      "text": "Người đại diện phần vốn nhà nước tại công ty cổ phần",
      "answer": "right"
+    },
+    {
+     "text": "Cá nhân thực tế nắm quyền chi phối công ty qua người đứng tên hộ",
+     "answer": "left",
+     "basis": "Khoản 35 Điều 4 Luật Doanh nghiệp 2020"
+    },
+    {
+     "text": "Cổ đông nắm 1% cổ phần, không có quyền chi phối và không hưởng lợi thực tế",
+     "answer": "right",
+     "basis": "Khoản 35 Điều 4 Luật Doanh nghiệp 2020"
     }
    ],
    "explain": "Khoản 35 Điều 4."

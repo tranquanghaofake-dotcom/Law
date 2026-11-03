@@ -70,6 +70,16 @@
     {
      "text": "Khu nghỉ dưỡng ven biển",
      "answer": "right"
+    },
+    {
+     "text": "Nhà máy chế biến thủy sản xuất khẩu nằm trong khu vực có ranh giới xác định, chuyên sản xuất công nghiệp",
+     "answer": "left",
+     "basis": "Khoản 16 Điều 3 Luật Đầu tư 2025"
+    },
+    {
+     "text": "Khu đô thị có nhà ở, trường học và công viên cho dân cư",
+     "answer": "right",
+     "basis": "Khoản 16 Điều 3 Luật Đầu tư 2025 (không chuyên sản xuất công nghiệp)"
     }
    ],
    "explain": "Khoản 16 Điều 3."

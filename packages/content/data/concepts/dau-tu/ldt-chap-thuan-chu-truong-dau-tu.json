@@ -72,6 +72,16 @@
     {
      "text": "Văn bản ghi nhận thông tin đăng ký của nhà đầu tư về dự án",
      "answer": "right"
+    },
+    {
+     "text": "Cơ quan nhà nước đồng ý về quy mô và tiến độ dự án trước khi nhà đầu tư triển khai",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 3 Luật Đầu tư 2025"
+    },
+    {
+     "text": "Cơ quan đăng ký đầu tư cấp văn bản ghi nhận dự án sau khi nhà đầu tư đăng ký",
+     "answer": "right",
+     "basis": "Khoản 11 Điều 3 Luật Đầu tư 2025"
     }
    ],
    "explain": "Khoản 1, 11 Điều 3."

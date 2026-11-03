@@ -70,6 +70,16 @@
     {
      "text": "Hệ thống quan điểm, học thuyết, tri thức",
      "answer": "right"
+    },
+    {
+     "text": "Quy phạm pháp luật Hiến pháp điều chỉnh quan hệ về chế độ chính trị và quyền con người",
+     "answer": "left",
+     "basis": "Giáo trình Luật Hiến pháp (Chương 1, ngành luật Hiến pháp)"
+    },
+    {
+     "text": "Học thuyết và quan điểm của các nhà lý luận về Hiến pháp, không phải quy phạm pháp luật",
+     "answer": "right",
+     "basis": "Giáo trình Luật Hiến pháp (Chương 1, khoa học luật Hiến pháp)"
     }
    ],
    "explain": "Quan điểm phổ biến."

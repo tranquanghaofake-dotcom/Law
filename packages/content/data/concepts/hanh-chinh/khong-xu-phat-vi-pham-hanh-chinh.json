@@ -75,6 +75,16 @@
     {
      "text": "Sự kiện bất ngờ",
      "answer": "left"
+    },
+    {
+     "text": "Thực hiện hành vi trong tình thế cấp thiết",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 11 Luật Xử lý vi phạm hành chính"
+    },
+    {
+     "text": "Vượt quá yêu cầu của tình thế cấp thiết",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 9 Luật Xử lý vi phạm hành chính"
     }
    ],
    "explain": "Điều 9, 11."

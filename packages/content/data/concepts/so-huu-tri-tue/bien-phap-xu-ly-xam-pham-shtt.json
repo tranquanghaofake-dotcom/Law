@@ -4,7 +4,7 @@
  "chapter": "v14",
  "term": "Biện pháp xử lý hành vi xâm phạm quyền sở hữu trí tuệ",
  "definition": "Tổ chức, cá nhân có hành vi xâm phạm quyền sở hữu trí tuệ của tổ chức, cá nhân khác thì tuỳ theo tính chất, mức độ xâm phạm, có thể bị xử lý bằng biện pháp dân sự, hành chính hoặc hình sự. Trong trường hợp cần thiết, cơ quan nhà nước có thẩm quyền có thể áp dụng biện pháp khẩn cấp tạm thời, biện pháp kiểm soát hàng hóa xuất khẩu, nhập khẩu liên quan đến sở hữu trí tuệ, biện pháp ngăn chặn và bảo đảm xử phạt hành chính theo quy định của Luật này và các quy định khác của pháp luật có liên quan.",
- "plain": "Ba nhóm biện pháp: DÂN SỰ (Tòa án: buộc chấm dứt, xin lỗi, cải chính, bồi thường, tiêu hủy… Điều 202); HÀNH CHÍNH (xử phạt khi gây thiệt hại cho tác giả, chủ sở hữu, người tiêu dùng, xã hội; buôn bán hàng giả mạo về SHTT… Điều 211); HÌNH SỰ (tội xâm phạm quyền tác giả Điều 225, tội xâm phạm quyền sở hữu công nghiệp Điều 226 BLHS). Biện pháp hỗ trợ: KHẨN CẤP TẠM THỜI, KIỂM SOÁT HẢI QUAN, ngăn chặn. TỰ BẢO VỆ (Điều 198): biện pháp công nghệ, yêu cầu chấm dứt, gỡ bỏ nội dung trên không gian mạng, khởi kiện.",
+ "plain": "Ba nhóm biện pháp: DÂN SỰ (Tòa án: buộc chấm dứt, xin lỗi, cải chính, bồi thường, tiêu hủy… Điều 202); HÀNH CHÍNH (xử phạt khi gây thiệt hại cho tác giả, chủ sở hữu, người tiêu dùng, xã hội; buôn bán hàng giả mạo về SHTT… Điều 211); HÌNH SỰ (tội xâm phạm quyền tác giả Điều 225 BLHS, tội xâm phạm quyền sở hữu công nghiệp Điều 226 BLHS). Biện pháp hỗ trợ: KHẨN CẤP TẠM THỜI, KIỂM SOÁT HẢI QUAN, ngăn chặn. TỰ BẢO VỆ (Điều 198): biện pháp công nghệ, yêu cầu chấm dứt, gỡ bỏ nội dung trên không gian mạng, khởi kiện.",
  "example": "Phát hiện cửa hàng bán túi xách giả nhãn hiệu: chủ sở hữu có thể yêu cầu quản lý thị trường xử phạt hành chính, khởi kiện đòi bồi thường, hoặc tố giác nếu đủ dấu hiệu tội phạm.",
  "source": {
   "kind": "statute",
@@ -70,6 +70,16 @@
     {
      "text": "Phạt tiền người buôn bán hàng giả mạo nhãn hiệu",
      "answer": "right"
+    },
+    {
+     "text": "Tòa án ra quyết định buộc người xâm phạm chấm dứt hành vi theo yêu cầu của chủ sở hữu",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 199 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Cơ quan có thẩm quyền xử phạt hành chính hành vi xâm phạm gây thiệt hại cho tác giả",
+     "answer": "right",
+     "basis": "Điểm a khoản 1 Điều 211 Luật Sở hữu trí tuệ"
     }
    ],
    "explain": "Điều 199, 202, 211."

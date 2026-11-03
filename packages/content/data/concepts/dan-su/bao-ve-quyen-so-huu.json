@@ -70,6 +70,16 @@
     {
      "text": "Khởi kiện đòi lại xe bị chiếm giữ",
      "answer": "right"
+    },
+    {
+     "text": "Chủ nhà đặt biển cấm và rào chắn hợp pháp để ngăn người lạ vào đất của mình",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 164 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Chủ đất làm đơn yêu cầu Tòa án buộc người chiếm giữ trái phép trả lại đất",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 164 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 164."

@@ -72,6 +72,16 @@
     {
      "text": "Tiền đồng gửi tiết kiệm tại ngân hàng trong nước",
      "answer": "right"
+    },
+    {
+     "text": "Ngoại tệ tiền mặt bằng đô la Mỹ mang theo khi xuất cảnh",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 4 Pháp lệnh Ngoại hối 2005"
+    },
+    {
+     "text": "Đồng Việt Nam dùng để thanh toán giữa hai cá nhân trong nước, không chuyển ra khỏi lãnh thổ",
+     "answer": "right",
+     "basis": "Điểm đ khoản 1 Điều 4 Pháp lệnh Ngoại hối 2005"
     }
    ],
    "explain": "Khoản 1 Điều 4."

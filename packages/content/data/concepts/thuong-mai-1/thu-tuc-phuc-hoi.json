@@ -72,6 +72,16 @@
     {
      "text": "Chủ nợ không có bảo đảm",
      "answer": "right"
+    },
+    {
+     "text": "Người đại diện theo pháp luật của doanh nghiệp nộp đơn yêu cầu thủ tục phục hồi",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 24 Luật Phục hồi, phá sản 2025"
+    },
+    {
+     "text": "Chủ nợ có bảo đảm một phần chỉ được nộp đơn yêu cầu phá sản",
+     "answer": "right",
+     "basis": "Điểm a khoản 1 Điều 38 Luật Phục hồi, phá sản 2025"
     }
    ],
    "explain": "Điều 24, 38."

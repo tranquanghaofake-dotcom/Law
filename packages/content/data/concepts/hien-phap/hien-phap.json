@@ -72,6 +72,16 @@
     {
      "text": "Do Quốc hội làm và sửa đổi với ít nhất hai phần ba tổng số đại biểu tán thành.",
      "answer": "left"
+    },
+    {
+     "text": "Hiến pháp là luật cơ bản của Nhà nước, quy định chế độ chính trị và chế độ kinh tế",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 119 Hiến pháp 2013"
+    },
+    {
+     "text": "Văn bản pháp luật khác trái với Hiến pháp không có hiệu lực pháp luật",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 119 Hiến pháp 2013"
     }
    ],
    "explain": "Hiến pháp là văn bản; hiệu lực pháp lý cao nhất là thuộc tính của văn bản đó (khoản 1 Điều 119)."

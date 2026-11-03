@@ -70,6 +70,16 @@
     {
      "text": "Không thấy trước dù phải và có thể thấy trước",
      "answer": "right"
+    },
+    {
+     "text": "Người biết nguy cơ cháy nhưng tin rằng không xảy ra nên vẫn đốt lửa trong kho",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 11 Bộ luật Hình sự 2015"
+    },
+    {
+     "text": "Người không lường trước hậu quả dù phải và có thể lường trước, khiến người đi đường chết",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 11 Bộ luật Hình sự 2015"
     }
    ],
    "explain": "Điều 11."

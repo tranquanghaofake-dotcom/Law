@@ -74,6 +74,11 @@
     {
      "text": "Văn bản trái luật của Chủ tịch Ủy ban nhân dân tỉnh",
      "answer": "left"
+    },
+    {
+     "text": "Nghị quyết của Hội đồng nhân dân thành phố trực thuộc trung ương trái văn bản của cơ quan nhà nước cấp trên",
+     "answer": "right",
+     "basis": "Khoản 4 Điều 98 Hiến pháp 2013"
     }
    ],
    "explain": "Khoản 4 Điều 98."

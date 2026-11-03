@@ -70,6 +70,16 @@
     {
      "text": "Chính phủ đối với Chủ tịch nước",
      "answer": "right"
+    },
+    {
+     "text": "Chủ tịch nước chịu trách nhiệm và báo cáo công tác trước Quốc hội",
+     "answer": "left",
+     "basis": "Điều 87 Hiến pháp 2013"
+    },
+    {
+     "text": "Chính phủ báo cáo công tác trước Chủ tịch nước",
+     "answer": "right",
+     "basis": "Điều 94 Hiến pháp 2013"
     }
    ],
    "explain": "Điều 94."

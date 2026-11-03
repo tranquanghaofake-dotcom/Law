@@ -72,6 +72,16 @@
     {
      "text": "Sở Tư pháp xem xét dự thảo quyết định của UBND tỉnh",
      "answer": "right"
+    },
+    {
+     "text": "Ủy ban của Quốc hội báo cáo thẩm tra về dự án luật trình Quốc hội",
+     "answer": "left",
+     "basis": "Điều 37 Luật Ban hành văn bản quy phạm pháp luật 2025"
+    },
+    {
+     "text": "Sở Tư pháp thẩm định dự thảo quyết định của Ủy ban nhân dân cấp tỉnh trước khi trình",
+     "answer": "right",
+     "basis": "Điều 34 Luật Ban hành văn bản quy phạm pháp luật 2025 (áp dụng tương ứng cho địa phương; ⚠ cần kiểm lại điều khoản địa phương)"
     }
    ],
    "explain": "Điều 37; Điều 34 và quy định tương ứng với địa phương."

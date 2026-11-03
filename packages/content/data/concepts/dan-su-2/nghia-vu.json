@@ -73,6 +73,16 @@
     {
      "text": "Sửa xe cho khách",
      "answer": "left"
+    },
+    {
+     "text": "Phòng khám điều trị cho bệnh nhân đúng như cam kết trong hợp đồng",
+     "answer": "left",
+     "basis": "Điều 274 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Bên thuê không được chuyển nhượng quyền thuê cho người khác",
+     "answer": "right",
+     "basis": "Điều 274 Bộ luật Dân sự 2015 (nghĩa vụ không thực hiện công việc nhất định)"
     }
    ],
    "explain": "Điều 274."

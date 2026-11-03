@@ -74,6 +74,16 @@
     {
      "text": "Ngân hàng mua lại khoản phải thu theo hợp đồng cung ứng dịch vụ",
      "answer": "right"
+    },
+    {
+     "text": "Ngân hàng mua kỳ phiếu của doanh nghiệp trước khi đến hạn, có quyền truy đòi người bán",
+     "answer": "left",
+     "basis": "Khoản 6 Điều 4 Luật Các tổ chức tín dụng 2024"
+    },
+    {
+     "text": "Ngân hàng ứng trước tiền cho doanh nghiệp bán hàng, thanh toán thay cho bên mua theo hợp đồng mua bán",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 4 Luật Các tổ chức tín dụng 2024"
     }
    ],
    "explain": "Khoản 1, 6 Điều 4."

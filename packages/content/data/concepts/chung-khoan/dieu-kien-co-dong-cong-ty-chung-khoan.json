@@ -71,6 +71,16 @@
     {
      "text": "Mức sở hữu tối đa (cùng người có liên quan) tại công ty chứng khoán khác",
      "answer": "right"
+    },
+    {
+     "text": "Cổ đông sở hữu từ 10% trở lên vốn điều lệ của một công ty chứng khoán",
+     "answer": "left",
+     "basis": "Điểm c khoản 2 Điều 74 Luật Chứng khoán 2019"
+    },
+    {
+     "text": "Cổ đông đã sở hữu từ 10% ở một công ty chứng khoán thì không được sở hữu trên 5% ở công ty khác",
+     "answer": "right",
+     "basis": "Điểm c khoản 2 và khoản 3 Điều 74 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Điểm c khoản 2 Điều 74: sở hữu từ 10% một công ty thì không sở hữu trên 5% công ty khác."

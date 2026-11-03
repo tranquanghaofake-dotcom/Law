@@ -72,6 +72,16 @@
     {
      "text": "Bộ luật dân sự đầu tiên pháp điển hóa toàn diện",
      "answer": "right"
+    },
+    {
+     "text": "Sắc lệnh 97/SL sửa đổi một số quy lệ và chế định trong dân luật cũ theo hướng tiến bộ",
+     "answer": "left",
+     "basis": "Sắc lệnh 97/SL, Điều 1 (laws/lich-su-su-lieu.txt)"
+    },
+    {
+     "text": "Bộ luật dân sự 1995 có nhiệm vụ bảo vệ quyền, lợi ích hợp pháp của cá nhân, tổ chức",
+     "answer": "right",
+     "basis": "Bộ luật Dân sự 1995, Điều 1 (laws/lich-su-su-lieu.txt)"
     }
    ],
    "explain": "Hai mốc của pháp luật dân sự Việt Nam."

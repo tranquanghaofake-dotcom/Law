@@ -70,6 +70,16 @@
     {
      "text": "Công ty thuê sáng tác, nắm quyền tài sản",
      "answer": "right"
+    },
+    {
+     "text": "Người trực tiếp sáng tạo tác phẩm có quyền đứng tên thật hoặc bút danh trên tác phẩm",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 19 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Doanh nghiệp nhận chuyển nhượng toàn bộ quyền tài sản của tác phẩm theo hợp đồng",
+     "answer": "right",
+     "basis": "Điều 36 và khoản 1 Điều 45 Luật Sở hữu trí tuệ"
     }
    ],
    "explain": "Điều 13, 36, 39."

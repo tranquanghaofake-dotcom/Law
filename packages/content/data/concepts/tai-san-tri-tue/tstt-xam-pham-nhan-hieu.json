@@ -72,6 +72,16 @@
     {
      "text": "Dùng nhãn hiệu theo hợp đồng li-xăng đã ký với chủ sở hữu",
      "answer": "right"
+    },
+    {
+     "text": "Dùng dấu hiệu tương tự nhãn hiệu \"Lotusmart\" cho thực phẩm cùng loại khi chưa được phép",
+     "answer": "left",
+     "basis": "Điểm c khoản 1 Điều 129 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Nhà phân phối được chủ nhãn hiệu cho phép bán sản phẩm trong lãnh thổ theo hợp đồng",
+     "answer": "right",
+     "basis": "Điều 141 Luật Sở hữu trí tuệ (sử dụng theo li-xăng)"
     }
    ],
    "explain": "Khoản 1 Điều 129: hành vi \"không được phép của chủ sở hữu\"."

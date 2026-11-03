@@ -71,6 +71,16 @@
     {
      "text": "Sau khi chia sẽ không trả được nợ đến hạn",
      "answer": "right"
+    },
+    {
+     "text": "Công ty hoàn thành nghĩa vụ thuế và các nghĩa vụ tài chính khác, sau đó chia lợi nhuận cho thành viên",
+     "answer": "left",
+     "basis": "Điều 69 Luật Doanh nghiệp 2020"
+    },
+    {
+     "text": "Công ty chia lợi nhuận cho thành viên khi chưa nộp thuế, dù công ty vẫn có tiền mặt",
+     "answer": "right",
+     "basis": "Điều 69 Luật Doanh nghiệp 2020"
     }
    ],
    "explain": "Điều 69."

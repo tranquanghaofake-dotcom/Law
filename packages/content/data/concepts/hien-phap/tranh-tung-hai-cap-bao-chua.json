@@ -70,6 +70,16 @@
     {
      "text": "Nguyên đơn, bị đơn trong vụ án dân sự",
      "answer": "right"
+    },
+    {
+     "text": "Bị cáo trong vụ án hình sự có quyền nhờ người bào chữa tại phiên tòa",
+     "answer": "left",
+     "basis": "Khoản 5 Điều 103 Hiến pháp 2013"
+    },
+    {
+     "text": "Người có quyền lợi liên quan trong vụ án dân sự được bảo vệ lợi ích hợp pháp của đương sự",
+     "answer": "right",
+     "basis": "Khoản 5–7 Điều 103 Hiến pháp 2013"
     }
    ],
    "explain": "Khoản 7 Điều 103."

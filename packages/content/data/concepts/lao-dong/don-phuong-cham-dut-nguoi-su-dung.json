@@ -70,6 +70,16 @@
     {
      "text": "Phải có một trong các căn cứ luật định",
      "answer": "right"
+    },
+    {
+     "text": "Người lao động làm hợp đồng 6 tháng nghỉ việc, báo trước ít nhất 03 ngày làm việc",
+     "answer": "left",
+     "basis": "Điểm c khoản 1 Điều 35 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Người lao động thường xuyên không hoàn thành công việc theo tiêu chí trong quy chế của đơn vị",
+     "answer": "right",
+     "basis": "Điểm a khoản 1 Điều 36 Bộ luật Lao động 2019"
     }
    ],
    "explain": "Điều 35, 36."

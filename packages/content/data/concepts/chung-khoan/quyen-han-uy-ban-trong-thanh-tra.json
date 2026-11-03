@@ -71,6 +71,16 @@
     {
      "text": "Tên, địa chỉ, số máy gọi, số máy được gọi, thời gian gọi",
      "answer": "right"
+    },
+    {
+     "text": "Tổ chức tín dụng cung cấp thông tin liên quan đến giao dịch trên tài khoản của khách hàng",
+     "answer": "left",
+     "basis": "Điểm b khoản 1 Điều 130 Luật Chứng khoán 2019"
+    },
+    {
+     "text": "Người có thông tin, tài liệu liên quan đến nội dung thanh tra được Ủy ban yêu cầu cung cấp",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 130 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Điểm b, c khoản 1 Điều 130."

@@ -71,6 +71,16 @@
     {
      "text": "Luật mới thu hẹp ưu đãi tiền thuê đất",
      "answer": "right"
+    },
+    {
+     "text": "Văn bản mới quy định ưu đãi đầu tư cao hơn, nhà đầu tư được hưởng cho thời gian ưu đãi còn lại",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 12 Luật Đầu tư 2025"
+    },
+    {
+     "text": "Văn bản mới quy định ưu đãi thấp hơn, nhà đầu tư vẫn áp dụng ưu đãi cũ đến hết thời gian ưu đãi",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 12 Luật Đầu tư 2025"
     }
    ],
    "explain": "Khoản 1, 2 Điều 12."

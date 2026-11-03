@@ -78,6 +78,16 @@
     {
      "text": "Lãnh đạo hệ thống hành chính nhà nước từ trung ương đến địa phương",
      "answer": "right"
+    },
+    {
+     "text": "Chủ tịch nước thay mặt nước Cộng hòa xã hội chủ nghĩa Việt Nam về đối nội và đối ngoại",
+     "answer": "left",
+     "basis": "Điều 86 Hiến pháp 2013"
+    },
+    {
+     "text": "Thủ tướng Chính phủ chịu trách nhiệm trước Quốc hội về hoạt động của Chính phủ",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 98 Hiến pháp 2013"
     }
    ],
    "explain": "Điều 86, 88, 95, 98."

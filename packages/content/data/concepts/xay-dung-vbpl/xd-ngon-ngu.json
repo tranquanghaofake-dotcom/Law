@@ -72,6 +72,16 @@
     {
      "text": "\"Bà con cần hết sức lưu ý nộp hồ sơ cho sớm\"",
      "answer": "right"
+    },
+    {
+     "text": "Văn bản dùng từ ngữ phổ thông, nêu thời hạn bằng số ngày cụ thể",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 7 Luật Ban hành văn bản quy phạm pháp luật 2025"
+    },
+    {
+     "text": "Văn bản dùng từ cảm tính như \"sớm nhất có thể\" thay cho thời hạn cụ thể",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 7 Luật Ban hành văn bản quy phạm pháp luật 2025"
     }
    ],
    "explain": "Khoản 1 Điều 7: chính xác, phổ thông, khách quan."

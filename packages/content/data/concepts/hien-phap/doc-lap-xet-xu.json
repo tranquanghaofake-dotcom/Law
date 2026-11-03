@@ -70,6 +70,16 @@
     {
      "text": "Cơ quan cấp trên chỉ đạo mức án cho một vụ cụ thể",
      "answer": "right"
+    },
+    {
+     "text": "Thẩm phán và Hội thẩm xét xử độc lập, chỉ tuân theo pháp luật",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 103 Hiến pháp 2013"
+    },
+    {
+     "text": "Cơ quan, tổ chức, cá nhân can thiệp vào việc xét xử của Thẩm phán",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 103 Hiến pháp 2013"
     }
    ],
    "explain": "Khoản 2 Điều 103."

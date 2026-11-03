@@ -75,6 +75,16 @@
     {
      "text": "\"Phong tục văn minh của đất Lĩnh Nam bắt đầu từ hai thái thú ấy\"",
      "answer": "left"
+    },
+    {
+     "text": "\"Tích Quang dạy dân khai khẩn ruộng đất, hàng năm cày trồng\" (câu chữ sử liệu)",
+     "answer": "left",
+     "basis": "Đại Việt sử ký toàn thư, Ngoại kỷ quyển III, Kỷ thuộc Tây Hán, tờ 1a–1b (laws/lich-su-su-lieu.txt)"
+    },
+    {
+     "text": "Nhận định của giáo trình hiện đại: chính sách cai trị nhằm đồng hóa văn hóa, pháp luật (⚠ là nhận định, không phải sử liệu)",
+     "answer": "right",
+     "basis": "Giáo trình Lịch sử nhà nước và pháp luật Việt Nam, Trường ĐH Luật Hà Nội 2025 (⚠ chưa đối chiếu nguyên văn); Đại Việt sử ký toàn thư, Ngoại kỷ quyển III"
     }
    ],
    "explain": "Phân biệt sử liệu với nhận định học thuật."

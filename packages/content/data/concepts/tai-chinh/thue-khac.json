@@ -70,6 +70,16 @@
     {
      "text": "Thu khi khai thác khoáng sản",
      "answer": "right"
+    },
+    {
+     "text": "Thu trên túi ni lông khó phân hủy",
+     "answer": "left",
+     "basis": "Giáo trình Luật Tài chính, ĐH Luật Hà Nội (chưa đối chiếu nguyên văn) (thuế bảo vệ môi trường)"
+    },
+    {
+     "text": "Thu trên nước thiên nhiên khai thác để sản xuất",
+     "answer": "right",
+     "basis": "Điều 2 Luật Thuế tài nguyên 2009 (VBHN 23/VBHN-VPQH 2022)"
     }
    ],
    "explain": "Học thuyết; Luật Thuế tài nguyên."

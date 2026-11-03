@@ -75,6 +75,11 @@
     {
      "text": "Khách hàng gửi tiết kiệm tại ngân hàng niêm yết",
      "answer": "right"
+    },
+    {
+     "text": "Công ty đại chúng",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 118 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 1 Điều 118."

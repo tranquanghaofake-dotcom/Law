@@ -73,6 +73,11 @@
     {
      "text": "Có từ khi sinh ra",
      "answer": "left"
+    },
+    {
+     "text": "Người 5 tuổi không tự mình xác lập giao dịch mua bán tài sản có giá trị",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 21 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 16, 19 Bộ luật Dân sự 2015."

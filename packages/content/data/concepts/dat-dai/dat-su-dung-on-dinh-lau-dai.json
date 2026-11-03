@@ -73,6 +73,16 @@
     {
      "text": "Đất quốc phòng, an ninh",
      "answer": "left"
+    },
+    {
+     "text": "Đất rừng đặc dụng do tổ chức quản lý, được sử dụng ổn định lâu dài",
+     "answer": "left",
+     "basis": "Khoản 3 Điều 171 Luật Đất đai 2024"
+    },
+    {
+     "text": "Đất nuôi trồng thủy sản của cá nhân trực tiếp sản xuất nông nghiệp, được giao có thời hạn",
+     "answer": "right",
+     "basis": "Điểm a khoản 1 Điều 172 Luật Đất đai 2024"
     }
    ],
    "explain": "Điều 171, 172."

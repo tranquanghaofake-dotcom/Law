@@ -86,7 +86,7 @@ const CITE_RE = new RegExp(
   'giu',
 );
 
-const HIST_NEAR = /đã (bị )?bãi bỏ|được bãi bỏ|hết hiệu lực|đã bị thay thế|\bcũ\b|trước đây|trước (ngày )?0?1\/0?[17]\/20(25|26)/iu;
+const HIST_NEAR = /đã (bị )?bãi bỏ|được bãi bỏ|không còn|hết hiệu lực|đã bị thay thế|\bcũ\b|trước đây|trước (ngày )?0?1\/0?[17]\/20(25|26)/iu;
 
 function expand(list: string, isPoint: boolean): string[] {
   const out: string[] = [];

@@ -70,6 +70,21 @@
     {
      "text": "Cơ quan nhà nước tổ chức đấu thầu công khai, minh bạch",
      "answer": "right"
+    },
+    {
+     "text": "Sở yêu cầu doanh nghiệp ngừng bán hàng cho các tỉnh khác trên địa bàn",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 8 Luật Cạnh tranh 2018"
+    },
+    {
+     "text": "Cơ quan nhà nước dành ưu đãi riêng cho một doanh nghiệp và gây bất lợi cho doanh nghiệp còn lại",
+     "answer": "left",
+     "basis": "Điểm b khoản 1 Điều 8 Luật Cạnh tranh 2018"
+    },
+    {
+     "text": "Cơ quan nhà nước phổ biến pháp luật cạnh tranh để doanh nghiệp tự nguyện tuân thủ",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 8 Luật Cạnh tranh 2018 (các điểm a–d không liệt kê hành vi này)"
     }
    ],
    "explain": "Điều 8."

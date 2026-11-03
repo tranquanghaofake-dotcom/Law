@@ -71,6 +71,16 @@
     {
      "text": "Phân nhóm người nộp thuế để quản lý theo rủi ro",
      "answer": "right"
+    },
+    {
+     "text": "Người nộp thuế kê khai và nộp đủ nghĩa vụ thuế theo luật thuế",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 6 Luật Quản lý thuế 2025"
+    },
+    {
+     "text": "Cơ quan quản lý thuế thực hiện việc quản lý thuế theo quy định của pháp luật",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 6 Luật Quản lý thuế 2025"
     }
    ],
    "explain": "Điều 3, 6."

@@ -74,6 +74,16 @@
     {
      "text": "Sau khi vi phạm đã trốn tránh, che giấu",
      "answer": "left"
+    },
+    {
+     "text": "Lợi dụng chức vụ, quyền hạn để vi phạm hành chính",
+     "answer": "left",
+     "basis": "Điểm e khoản 1 Điều 10 Luật Xử lý vi phạm hành chính"
+    },
+    {
+     "text": "Vi phạm do trình độ lạc hậu",
+     "answer": "right",
+     "basis": "Khoản 7 Điều 9 Luật Xử lý vi phạm hành chính"
     }
    ],
    "explain": "Điều 9, 10."

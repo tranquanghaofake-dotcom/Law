@@ -76,6 +76,16 @@
     {
      "text": "Nhân dân sử dụng quyền lực qua Quốc hội và Hội đồng nhân dân, theo nguyên tắc tập trung dân chủ",
      "answer": "right"
+    },
+    {
+     "text": "Hội đồng Chính phủ là cơ quan hành chính Nhà nước cao nhất của nước Việt Nam dân chủ cộng hòa",
+     "answer": "right",
+     "basis": "Điều 71 Hiến pháp 1959 (hien-phap-lich-su.txt)"
+    },
+    {
+     "text": "Hội đồng Chính phủ chịu trách nhiệm và báo cáo công tác trước Quốc hội",
+     "answer": "right",
+     "basis": "Điều 71 Hiến pháp 1959 (hien-phap-lich-su.txt)"
     }
    ],
    "explain": "Điều thứ 1 Hiến pháp 1946; Lời nói đầu, Điều 4 Hiến pháp 1959."
@@ -109,7 +119,7 @@
    "type": "recall",
    "level": 5,
    "q": "Trình bày hoàn cảnh ra đời và điểm mới cơ bản của Hiến pháp 1959.",
-   "model": "Quốc hội khóa I thông qua ngày 31/12/1959, sửa đổi Hiến pháp 1946 cho phù hợp nhiệm vụ xây dựng chủ nghĩa xã hội ở miền Bắc, đấu tranh thống nhất; Nhà nước dân chủ nhân dân dựa trên liên minh công nông, do giai cấp công nhân lãnh đạo; quyền lực thuộc về nhân dân, thực hiện qua Quốc hội, Hội đồng nhân dân; nguyên tắc tập trung dân chủ (Điều 4); Quốc hội là cơ quan quyền lực Nhà nước cao nhất; chỉ Quốc hội sửa đổi Hiến pháp (Điều 112).",
+   "model": "Quốc hội khóa I thông qua ngày 31/12/1959, sửa đổi Hiến pháp 1946 cho phù hợp nhiệm vụ xây dựng chủ nghĩa xã hội ở miền Bắc, đấu tranh thống nhất; Nhà nước dân chủ nhân dân dựa trên liên minh công nông, do giai cấp công nhân lãnh đạo; quyền lực thuộc về nhân dân, thực hiện qua Quốc hội, Hội đồng nhân dân; nguyên tắc tập trung dân chủ (Điều 4 Hiến pháp 1959); Quốc hội là cơ quan quyền lực Nhà nước cao nhất; chỉ Quốc hội sửa đổi Hiến pháp (Điều 112 Hiến pháp 1959).",
    "keywords": [
     "31/12/1959",
     "liên minh công nông",

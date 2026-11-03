@@ -73,6 +73,16 @@
     {
      "text": "Quyết định truy tố bị can ra trước Tòa án",
      "answer": "left"
+    },
+    {
+     "text": "Viện kiểm sát yêu cầu Cơ quan điều tra khởi tố vụ án hình sự khi có dấu hiệu tội phạm",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 107 Hiến pháp 2013 (thực hành quyền công tố)"
+    },
+    {
+     "text": "Viện kiểm sát kiểm tra tính hợp pháp của các quyết định của Tòa án trong việc xét xử",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 107 Hiến pháp 2013 (kiểm sát hoạt động tư pháp)"
     }
    ],
    "explain": "Khoản 1 Điều 107."

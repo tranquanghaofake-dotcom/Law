@@ -35,10 +35,10 @@
     "Không cần hợp đồng bằng văn bản, không cần đăng ký tại cơ quan nhà nước nào cả và không cần thông báo"
    ],
    "answer": 0,
-   "explain": "Điều 284.",
+   "explain": "Điều 284 Luật Thương mại 2005.",
    "source": {
     "kind": "statute",
-    "cite": "Điều 284 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+    "cite": "Điều 284 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)"
    }
   },
   {
@@ -52,10 +52,10 @@
     "Chỉ chỉ dẫn địa lý của vùng sản xuất nông nghiệp và tên gọi xuất xứ hàng hóa được bảo hộ"
    ],
    "answer": 0,
-   "explain": "Khoản 1 Điều 284.",
+   "explain": "Khoản 1 Điều 284 Luật Thương mại 2005.",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 1 Điều 284 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+    "cite": "Khoản 1 Điều 284 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)"
    }
   },
   {
@@ -71,6 +71,16 @@
     {
      "text": "Chỉ được in nhãn hiệu lên sản phẩm tự sản xuất theo cách của mình",
      "answer": "right"
+    },
+    {
+     "text": "Bên nhận quyền kinh doanh theo cách thức bên nhượng quyền quy định, gắn nhãn hiệu của bên nhượng",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 284 Luật Thương mại 2005"
+    },
+    {
+     "text": "Bên được cấp li-xăng nhãn hiệu tự tổ chức sản xuất và bán theo cách riêng của mình",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 284 Luật Thương mại 2005 (không có cách thức do bên giao quy định)"
     }
    ],
    "explain": "Điều 284 Luật Thương mại; Điều 141 Luật SHTT."

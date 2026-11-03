@@ -75,6 +75,11 @@
     {
      "text": "Tối đa tài sản quỹ đóng đầu tư vào bất động sản",
      "answer": "left"
+    },
+    {
+     "text": "Quỹ đại chúng đầu tư quá 20% tổng giá trị tài sản vào chứng khoán của một tổ chức phát hành",
+     "answer": "right",
+     "basis": "Điểm c khoản 1 Điều 110 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Điểm b, c, d khoản 1 Điều 110."

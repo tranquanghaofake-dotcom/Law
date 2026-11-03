@@ -69,6 +69,16 @@
     {
      "text": "Hiệu lực khi ghi Sổ đăng ký người sở hữu chứng khoán",
      "answer": "right"
+    },
+    {
+     "text": "Chuyển giao chứng khoán đã lưu ký có hiệu lực vào ngày thực hiện bút toán",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 64 Luật Chứng khoán 2019"
+    },
+    {
+     "text": "Chứng khoán đăng ký tập trung chưa lưu ký có hiệu lực khi ghi vào Sổ đăng ký người sở hữu",
+     "answer": "right",
+     "basis": "Khoản 4 Điều 61 Luật Chứng khoán 2019 (đối chiếu)"
     }
    ],
    "explain": "Khoản 2 và khoản 3 Điều 64."

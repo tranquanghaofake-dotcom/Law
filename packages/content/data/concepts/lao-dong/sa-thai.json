@@ -74,6 +74,16 @@
     {
      "text": "Tái phạm khi đang bị kỷ luật cách chức",
      "answer": "left"
+    },
+    {
+     "text": "Người lao động cố ý gây thương tích tại nơi làm việc",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 125 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Người lao động bị khiển trách lần đầu vì vi phạm nội quy, chưa thuộc trường hợp sa thải",
+     "answer": "right",
+     "basis": "Điều 125 Bộ luật Lao động 2019 (sa thải chỉ áp dụng trong các trường hợp liệt kê)"
     }
    ],
    "explain": "Điều 125."

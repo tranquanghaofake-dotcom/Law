@@ -69,6 +69,16 @@
     {
      "text": "Công bố trên 01 tờ báo điện tử hoặc báo in trong 03 số liên tiếp sau khi Giấy chứng nhận có hiệu lực",
      "answer": "right"
+    },
+    {
+     "text": "Tài liệu công khai thông tin chính xác, trung thực về đợt chào bán và rủi ro của tổ chức phát hành",
+     "answer": "left",
+     "basis": "Khoản 23 Điều 4 Luật Chứng khoán 2019"
+    },
+    {
+     "text": "Bản thông báo phát hành được công bố sau khi Giấy chứng nhận đăng ký chào bán có hiệu lực",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 16 Luật Chứng khoán 2019 (đối chiếu)"
     }
    ],
    "explain": "Khoản 23 Điều 4; khoản 3 Điều 25."

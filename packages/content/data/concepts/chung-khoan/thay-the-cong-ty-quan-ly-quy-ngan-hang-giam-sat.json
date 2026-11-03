@@ -74,6 +74,11 @@
     {
      "text": "Giá chứng chỉ quỹ giảm 20% trong một tháng",
      "answer": "right"
+    },
+    {
+     "text": "Công ty quản lý quỹ thay đổi trụ sở làm việc trong cùng thành phố",
+     "answer": "right",
+     "basis": "Điểm c khoản 1 Điều 104 Luật Chứng khoán 2019 (không phải căn cứ giải thể quỹ)"
     }
    ],
    "explain": "Khoản 1 Điều 104."

@@ -75,6 +75,16 @@
     {
      "text": "Trình dự án ngân sách nhà nước",
      "answer": "left"
+    },
+    {
+     "text": "Chính phủ trình Quốc hội dự án ngân sách nhà nước",
+     "answer": "left",
+     "basis": "Điều 96 Hiến pháp 2013"
+    },
+    {
+     "text": "Quốc hội quyết định cơ cấu, số lượng thành viên Chính phủ",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 95 Hiến pháp 2013"
     }
    ],
    "explain": "Điều 70, 96."

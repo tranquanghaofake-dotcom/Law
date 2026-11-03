@@ -71,6 +71,16 @@
     {
      "text": "Không ai bị bắt nếu không có quyết định của Tòa án, phê chuẩn của Viện kiểm sát, trừ quả tang",
      "answer": "right"
+    },
+    {
+     "text": "Công dân có quyền tự do ngôn luận, báo chí, hội họp theo quy định của pháp luật",
+     "answer": "left",
+     "basis": "Điều 25 Hiến pháp 2013 (giáo trình: phương pháp cho phép)"
+    },
+    {
+     "text": "Nghiêm cấm tra tấn, bạo lực, truy bức hoặc nhục hình đối với người khác",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 20 Hiến pháp 2013 (giáo trình: phương pháp nghiêm cấm)"
     }
    ],
    "explain": "Ví dụ từ Hiến pháp 2013."

@@ -70,6 +70,16 @@
     {
      "text": "Công nhân tự phát bỏ về, không có tổ chức đại diện lãnh đạo",
      "answer": "right"
+    },
+    {
+     "text": "Ngừng việc tạm thời, tự nguyện và có tổ chức, do tổ chức đại diện người lao động đứng ra tổ chức",
+     "answer": "left",
+     "basis": "Điều 198 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Người sử dụng lao động cho công nhân nghỉ việc tạm thời theo lệnh quản lý để tiết giảm sản xuất",
+     "answer": "right",
+     "basis": "Điều 198 Bộ luật Lao động 2019 (đình công là ngừng việc của người lao động có tổ chức)"
     }
    ],
    "explain": "Điều 198, 199."

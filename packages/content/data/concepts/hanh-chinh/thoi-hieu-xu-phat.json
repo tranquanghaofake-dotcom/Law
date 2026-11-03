@@ -4,7 +4,7 @@
  "chapter": "v12",
  "term": "Thời hiệu xử phạt vi phạm hành chính",
  "definition": "Thời hiệu xử phạt vi phạm hành chính là 01 năm, trừ các trường hợp sau đây: Vi phạm hành chính về kế toán; hóa đơn; phí, lệ phí; kinh doanh bảo hiểm; quản lý giá; chứng khoán; sở hữu trí tuệ; xây dựng; thủy sản; lâm nghiệp; điều tra, quy hoạch, thăm dò, khai thác, sử dụng nguồn tài nguyên nước; hoạt động dầu khí và hoạt động khoáng sản khác; bảo vệ môi trường; năng lượng nguyên tử; quản lý, phát triển nhà và công sở; đất đai; đê điều; báo chí; xuất bản; sản xuất, xuất khẩu, nhập khẩu, kinh doanh hàng hóa; sản xuất, buôn bán hàng cấm, hàng giả; quản lý lao động ngoài nước; khiếu nại, tố cáo, kiến nghị, phản ánh thì thời hiệu xử phạt vi phạm hành chính là 02 năm.",
- "plain": "Mặc định 01 NĂM; một số lĩnh vực 02 NĂM (kế toán, hóa đơn, xây dựng, đất đai, môi trường, sở hữu trí tuệ, hàng giả…); THUẾ, KIỂM TOÁN ĐỘC LẬP theo luật chuyên ngành. Thời điểm tính (điểm b): vi phạm ĐÃ KẾT THÚC → từ thời điểm chấm dứt hành vi; ĐANG THỰC HIỆN → từ thời điểm phát hiện. Hết thời hiệu thì không xử phạt nhưng vẫn có thể áp dụng BIỆN PHÁP KHẮC PHỤC HẬU QUẢ (khoản 3 Điều 65). Phân biệt thời hiệu XỬ PHẠT và thời hiệu THI HÀNH quyết định xử phạt (01 năm, Điều 74).",
+ "plain": "Mặc định 01 NĂM; một số lĩnh vực 02 NĂM (kế toán, hóa đơn, xây dựng, đất đai, môi trường, sở hữu trí tuệ, hàng giả…); THUẾ, KIỂM TOÁN ĐỘC LẬP theo luật chuyên ngành. Thời điểm tính (điểm b): vi phạm ĐÃ KẾT THÚC → từ thời điểm chấm dứt hành vi; ĐANG THỰC HIỆN → từ thời điểm phát hiện. Hết thời hiệu thì không xử phạt nhưng vẫn có thể áp dụng BIỆN PHÁP KHẮC PHỤC HẬU QUẢ (khoản 2 Điều 65 Luật Xử lý vi phạm hành chính). Phân biệt thời hiệu XỬ PHẠT và thời hiệu THI HÀNH quyết định xử phạt (01 năm, Điều 74).",
  "example": "Xây nhà không phép hoàn thành năm 2023, đến 2026 mới phát hiện: quá thời hiệu 02 năm (xây dựng) nên không xử phạt, nhưng vẫn có thể buộc phá dỡ phần công trình vi phạm.",
  "source": {
   "kind": "statute",
@@ -74,6 +74,16 @@
     {
      "text": "Vi phạm về hàng giả",
      "answer": "right"
+    },
+    {
+     "text": "Vi phạm về trật tự công cộng",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 6 Luật Xử lý vi phạm hành chính (không thuộc danh mục 02 năm)"
+    },
+    {
+     "text": "Vi phạm về kế toán",
+     "answer": "right",
+     "basis": "Điểm a khoản 1 Điều 6 Luật Xử lý vi phạm hành chính"
     }
    ],
    "explain": "Điều 6."

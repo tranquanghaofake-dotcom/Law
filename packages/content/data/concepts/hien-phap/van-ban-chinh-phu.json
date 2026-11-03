@@ -71,6 +71,16 @@
     {
      "text": "Quốc hội đối với văn bản của Chính phủ trái Hiến pháp",
      "answer": "right"
+    },
+    {
+     "text": "Ủy ban thường vụ Quốc hội đình chỉ việc thi hành văn bản của Chính phủ trái Hiến pháp",
+     "answer": "left",
+     "basis": "Điều 100 Hiến pháp 2013"
+    },
+    {
+     "text": "Quốc hội bãi bỏ văn bản của Chính phủ trái Hiến pháp",
+     "answer": "right",
+     "basis": "Điều 100 Hiến pháp 2013"
     }
    ],
    "explain": "Khoản 10 Điều 70; khoản 4 Điều 74."

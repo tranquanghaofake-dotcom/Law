@@ -70,6 +70,16 @@
     {
      "text": "Thuận tình ly hôn",
      "answer": "right"
+    },
+    {
+     "text": "Nguyên đơn đòi nợ nhưng yêu cầu không được Tòa án chấp nhận",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 147 Bộ luật Tố tụng dân sự 2015"
+    },
+    {
+     "text": "Trong vụ án ly hôn, người xin ly hôn đơn phương là nguyên đơn, Tòa án chấp nhận cho ly hôn",
+     "answer": "left",
+     "basis": "Khoản 4 Điều 147 Bộ luật Tố tụng dân sự 2015"
     }
    ],
    "explain": "Khoản 4 Điều 147."

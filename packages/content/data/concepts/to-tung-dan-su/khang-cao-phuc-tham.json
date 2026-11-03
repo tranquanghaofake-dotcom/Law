@@ -69,6 +69,16 @@
     {
      "text": "Kháng cáo quyết định đình chỉ giải quyết vụ án",
      "answer": "right"
+    },
+    {
+     "text": "Đương sự có mặt khi Tòa tuyên án sơ thẩm muốn kháng cáo bản án trong thời hạn",
+     "answer": "left",
+     "basis": "Đoạn 1 khoản 1 Điều 273 Bộ luật Tố tụng dân sự 2015"
+    },
+    {
+     "text": "Đương sự nhận được quyết định tạm đình chỉ vụ án sơ thẩm muốn kháng cáo quyết định đó",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 273 Bộ luật Tố tụng dân sự 2015"
     }
    ],
    "explain": "Điều 273."

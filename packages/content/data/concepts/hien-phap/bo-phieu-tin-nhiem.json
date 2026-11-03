@@ -74,6 +74,16 @@
     {
      "text": "Giám đốc sở của một tỉnh",
      "answer": "right"
+    },
+    {
+     "text": "Chủ tịch nước do Quốc hội bầu có thể bị Quốc hội bỏ phiếu tín nhiệm",
+     "answer": "left",
+     "basis": "Khoản 8 Điều 70 Hiến pháp 2013"
+    },
+    {
+     "text": "Giám đốc Sở Công Thương của một tỉnh bị đưa ra bỏ phiếu tín nhiệm tại Quốc hội",
+     "answer": "right",
+     "basis": "Khoản 8 Điều 70 Hiến pháp 2013 (không phải người do Quốc hội bầu hoặc phê chuẩn)"
     }
    ],
    "explain": "Khoản 7, 8 Điều 70."

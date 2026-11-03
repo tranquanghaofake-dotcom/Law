@@ -68,12 +68,18 @@
      "answer": "left"
     },
     {
-     "text": "Đang là sĩ quan quân đội tại ngũ",
+     "text": "Việc thôi làm phương hại đến lợi ích quốc gia",
      "answer": "right"
     },
     {
-     "text": "Việc thôi làm phương hại đến lợi ích quốc gia",
-     "answer": "right"
+     "text": "Công dân đang bị truy cứu trách nhiệm hình sự chưa được thôi quốc tịch Việt Nam",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 27 Luật Quốc tịch Việt Nam 2008"
+    },
+    {
+     "text": "Công dân đang nợ thuế đối với Nhà nước, chưa được thôi quốc tịch Việt Nam",
+     "answer": "right",
+     "basis": "Điểm a khoản 2 Điều 27 Luật Quốc tịch Việt Nam 2008"
     }
    ],
    "explain": "Khoản 2, 3, 4 Điều 27."

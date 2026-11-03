@@ -71,6 +71,16 @@
     {
      "text": "Thời hạn 30 năm",
      "answer": "right"
+    },
+    {
+     "text": "Người chiếm hữu ngay tình, công khai chiếc xe máy trong 10 năm, không ai tranh chấp",
+     "answer": "left",
+     "basis": "Điều 236 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Người chiếm hữu ngay tình, công khai và liên tục một thửa đất trong 30 năm",
+     "answer": "right",
+     "basis": "Điều 236 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 236."

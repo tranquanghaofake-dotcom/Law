@@ -75,6 +75,16 @@
     {
      "text": "Tỷ lệ tăng do công ty đại chúng mua lại cổ phiếu của chính mình",
      "answer": "right"
+    },
+    {
+     "text": "Nhà đầu tư trở thành cổ đông lớn khi nắm giữ đủ tỷ lệ luật định",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 127 Luật Chứng khoán 2019"
+    },
+    {
+     "text": "Đối tượng giữ tỷ lệ sở hữu dưới ngưỡng cổ đông lớn và không thay đổi tỷ lệ",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 127 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 1, 2, 3 Điều 127."

@@ -69,6 +69,16 @@
     {
      "text": "Tranh chấp quyền sử dụng đất",
      "answer": "right"
+    },
+    {
+     "text": "Tranh chấp bồi thường thiệt hại ngoài hợp đồng, bị đơn là cá nhân cư trú ở địa phương khác",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 39 Bộ luật Tố tụng dân sự 2015"
+    },
+    {
+     "text": "Đối tượng tranh chấp là căn hộ, chỉ Tòa án nơi có căn hộ được giải quyết",
+     "answer": "right",
+     "basis": "Điểm c khoản 1 Điều 39 Bộ luật Tố tụng dân sự 2015"
     }
    ],
    "explain": "Điều 39."
