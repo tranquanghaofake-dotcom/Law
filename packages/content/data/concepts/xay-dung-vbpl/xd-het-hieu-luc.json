@@ -48,9 +48,9 @@
    "q": "Khi văn bản được thay thế hết hiệu lực, văn bản quy định chi tiết nó thì sao?",
    "options": [
     "Hết hiệu lực, trừ trường hợp được công bố tiếp tục có hiệu lực toàn bộ hoặc một phần",
-    "Vẫn có hiệu lực vô thời hạn, trừ khi có văn bản mới của Quốc hội quy định khác hiện hành đó",
+    "Vẫn có hiệu lực vô thời hạn, trừ khi Quốc hội có nghị quyết quy định khác",
     "Tự động trở thành luật và phải được Quốc hội thông qua lại toàn bộ nội dung",
-    "Phải được Quốc hội phê chuẩn lại toàn bộ và công bố trên Công báo trước đó"
+    "Phải được Quốc hội phê chuẩn lại toàn bộ rồi công bố lại trên Công báo điện tử"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 57.",
