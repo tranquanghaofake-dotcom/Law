@@ -45,12 +45,12 @@
   {
    "type": "mcq",
    "level": 1,
-   "q": "Hàng hóa, dịch vụ nào là đối tượng chịu thuế GTGT?",
+   "q": "Phương án nào mô tả đầy đủ đối tượng chịu thuế GTGT (Điều 3)?",
    "options": [
     "Hàng hóa, dịch vụ sử dụng cho sản xuất, kinh doanh và tiêu dùng ở Việt Nam, trừ đối tượng tại Điều 5",
-    "Chỉ hàng hóa nhập khẩu từ các nước thành viên Hiệp định thương mại tự do, không gồm dịch vụ trong nước",
-    "Chỉ dịch vụ tài chính, ngân hàng, bảo hiểm và chứng khoán do tổ chức tín dụng cung cấp cho khách hàng trong nước",
-    "Chỉ hàng xa xỉ thuộc danh mục tiêu dùng cao cấp do Chính phủ quy định, chỉ bán tại thị trường trong nước"
+    "Hàng hóa nhập khẩu từ các nước thành viên Hiệp định thương mại tự do, không gồm dịch vụ trong nước",
+    "Dịch vụ tài chính, ngân hàng, bảo hiểm và chứng khoán do tổ chức tín dụng cung cấp cho khách hàng trong nước",
+    "Hàng xa xỉ thuộc danh mục tiêu dùng cao cấp do Chính phủ quy định, bán tại thị trường trong nước"
    ],
    "answer": 0,
    "explain": "Điều 3.",
@@ -122,6 +122,18 @@
     "Việt Nam",
     "Điều 5"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thuế giá trị gia tăng là thuế tính trên giá trị tăng thêm của hàng hóa, dịch vụ phát sinh trong quá trình từ sản xuất, lưu thông đến tiêu dùng.",
+   "answer": true,
+   "explain": "Đúng. Điều 2 3 Luật Thuế giá trị gia tăng 2024 (VBHN 114/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 2 3 Luật Thuế giá trị gia tăng 2024 (VBHN 114/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/Thue-Phi-Le-Phi/Van-ban-hop-nhat-114-VBHN-VPQH-2026-Luat-Thue-Gia-tri-gia-tang-708152.aspx"
+   }
   }
  ]
 }

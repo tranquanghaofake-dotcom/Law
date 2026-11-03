@@ -99,10 +99,10 @@
     {
       "q": "Quỹ ngân sách nhà nước có bao gồm tiền vay không?",
       "options": [
-        "Có, kể cả tiền vay",
-        "Không",
-        "Chỉ vay nước ngoài",
-        "Chỉ vay trong nước"
+        "Có, bao gồm cả tiền vay",
+        "Không, không gồm tiền vay",
+        "Có, nhưng chỉ vay nước ngoài",
+        "Có, nhưng chỉ vay trong nước"
       ],
       "answer": 0,
       "explain": "Khoản 22 Điều 4.",

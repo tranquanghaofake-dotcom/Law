@@ -121,6 +121,18 @@
     "tự kê khai",
     "bản chất"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người nộp thuế có nghĩa vụ nộp thuế, các khoản thu khác thuộc ngân sách nhà nước theo quy định của luật thuế và quy định của pháp luật.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 6 Luật Quản lý thuế 2025 (108/2025/QH15) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 6 Luật Quản lý thuế 2025 (108/2025/QH15)",
+    "url": "https://thuvienphapluat.vn/van-ban/Thue-Phi-Le-Phi/Luat-Quan-ly-thue-2025-so-108-2025-QH15-675268.aspx"
+   }
   }
  ]
 }

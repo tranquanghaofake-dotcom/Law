@@ -122,6 +122,18 @@
     "dự toán",
     "định mức"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Toàn bộ các khoản thu, chi ngân sách phải được dự toán, tổng hợp đầy đủ vào ngân sách nhà nước.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 8 Luật Ngân sách nhà nước 2025 (89/2025/QH15) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 8 Luật Ngân sách nhà nước 2025 (89/2025/QH15)",
+    "url": "https://thuvienphapluat.vn/van-ban/Tai-chinh-nha-nuoc/Luat-ngan-sach-nha-nuoc-2025-so-89-2025-QH15-650061.aspx"
+   }
   }
  ]
 }
