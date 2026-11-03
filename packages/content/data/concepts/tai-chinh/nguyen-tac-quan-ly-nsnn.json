@@ -48,9 +48,9 @@
    "q": "Nguyên tắc nào đòi hỏi mọi khoản thu, chi phải được đưa vào ngân sách?",
    "options": [
     "Toàn bộ các khoản thu, chi phải được dự toán, tổng hợp đầy đủ vào ngân sách nhà nước",
-    "Nguyên tắc tự chủ tài chính, theo đó các đơn vị tự quyết định mọi khoản thu, chi ngoài ngân sách",
-    "Nguyên tắc bí mật ngân sách, theo đó các khoản thu, chi chỉ báo cáo cơ quan tài chính cấp trên",
-    "Nguyên tắc lợi nhuận, theo đó các khoản thu, chi phải tạo ra lợi nhuận tối đa cho ngân sách"
+    "Các đơn vị được tự quyết định mọi khoản thu, chi ngoài ngân sách, không cần dự toán",
+    "Các khoản thu, chi chỉ báo cáo cơ quan tài chính cấp trên, không công khai cho dân",
+    "Chỉ các khoản thu, chi lớn hơn mức Chính phủ quy định mới phải đưa vào ngân sách"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 8.",
