@@ -44,3 +44,12 @@
 |---|---|---|---|---|
 | `dieu-kien-tro-cap-that-nghiep` | Người lao động nộp hồ sơ hưởng trợ cấp sau 03 tháng kể từ ngày chấm dứt hợp đồng | Người lao động nộp hồ sơ hưởng trợ cấp sau khi đã quá 03 tháng kể từ ngày chấm dứt hợp đồng | Điểm c khoản 1 Điều 38 Luật Việc làm 2025 | viết lại không nhắc nhãn / sửa lỗi theo bảng verify |
 | `tro-cap-huu-tri-xa-hoi` | Người có đủ 15 năm đóng BHXH bắt buộc khi nghỉ việc đủ tuổi được hưởng lương hưu | Người có đủ 15 năm đóng BHXH bắt buộc khi nghỉ việc đủ tuổi thì được hưởng khoản định kỳ hằng tháng từ quỹ BHX | Khoản 1 Điều 64 Luật Bảo hiểm xã hội 2024 | viết lại không nhắc nhãn / sửa lỗi theo bảng verify |
+
+## Câu hỏi viết lại (sonnet B)
+
+### Câu Đúng/Sai đáp án Đúng thêm mới (2)
+
+| Mã | Nhận định (Đúng) | Căn cứ | Ghi chú |
+|---|---|---|---|
+| `an-sinh-xa-hoi/bao-hiem-xa-hoi#7` | Bảo hiểm xã hội tự nguyện là loại hình bảo hiểm xã hội do Nhà nước tổ chức mà công dân Việt Nam tự nguyện tham gia và được lựa chọn mức đóng, phương thức đóng phù hợp với thu nhập của mình. | Khoản 4 Điều 3 Luật Bảo hiểm xã hội 2024 (VBHN 19/VBHN-VPQH 2026) | nguyên văn khớp laws/*.txt |
+| `an-sinh-xa-hoi/nguyen-tac-bao-hiem-xa-hoi#7` | Mức đóng bảo hiểm xã hội bắt buộc được tính trên cơ sở tiền lương làm căn cứ đóng bảo hiểm xã hội bắt buộc. | Khoản 2 Điều 5 Luật Bảo hiểm xã hội 2024 (VBHN 19/VBHN-VPQH 2026) | nguyên văn khớp laws/*.txt |
