@@ -121,6 +121,18 @@
     "kiểm soát, chi phối",
     "vẫn tồn tại"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mua lại doanh nghiệp là việc một doanh nghiệp trực tiếp hoặc gián tiếp mua toàn bộ hoặc một phần vốn góp, tài sản của doanh nghiệp khác đủ để kiểm soát, chi phối doanh nghiệp hoặc một ngành, nghề của doanh nghiệp bị mua lại.",
+   "answer": true,
+   "explain": "Đúng. Khoản 4 Điều 29 Luật Cạnh tranh 2018 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 29 Luật Cạnh tranh 2018",
+    "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx"
+   }
   }
  ]
 }

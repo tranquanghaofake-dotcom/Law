@@ -121,6 +121,18 @@
     "thẩm định giá",
     "liên đới"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tài sản góp vốn không phải là Đồng Việt Nam, ngoại tệ tự do chuyển đổi, vàng phải được các thành viên, cổ đông sáng lập hoặc tổ chức thẩm định giá định giá và được thể hiện thành Đồng Việt Nam.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 36 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 36 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+    "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+   }
   }
  ]
 }

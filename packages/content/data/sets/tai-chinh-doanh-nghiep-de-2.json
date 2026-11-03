@@ -9,9 +9,9 @@
       "q": "Doanh thu tính thu nhập chịu thuế có phụ thuộc việc đã thu tiền không?",
       "options": [
         "Không phân biệt đã thu hay chưa",
-        "Chỉ tính khi đã thu được tiền",
-        "Chỉ khi xuất hóa đơn cho khách",
-        "Chỉ khi khách hàng xác nhận công nợ"
+        "Có, phải thu được tiền mới tính",
+        "Có, phải thu tiền và đối chiếu công nợ",
+        "Có, phải được khách thanh toán đủ"
       ],
       "answer": 0,
       "explain": "Khoản 1 Điều 8.",
