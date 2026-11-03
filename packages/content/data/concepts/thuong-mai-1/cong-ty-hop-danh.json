@@ -47,7 +47,7 @@
    "options": [
     "Có, kể từ ngày được cấp Giấy chứng nhận đăng ký doanh nghiệp",
     "Không, công ty hợp danh không có tư cách pháp nhân riêng",
-    "Có, nếu có thành viên góp vốn và có trụ sở đăng ký hợp lệ",
+    "Chỉ khi có thành viên góp vốn và có trụ sở đăng ký hợp lệ",
     "Chỉ khi vốn điều lệ trên 10 tỷ đồng và đã có đủ thành viên góp vốn"
    ],
    "answer": 0,

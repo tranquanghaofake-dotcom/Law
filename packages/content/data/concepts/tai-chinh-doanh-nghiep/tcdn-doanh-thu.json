@@ -30,9 +30,9 @@
    "q": "Theo khoản 1 Điều 8, doanh thu tính thu nhập chịu thuế có phụ thuộc việc đã thu tiền chưa?",
    "options": [
     "Không phân biệt đã thu được tiền hay chưa",
-    "Tính khi đã thu được tiền về tài khoản",
+    "Chỉ tính khi đã thu được tiền về tài khoản",
     "Chỉ tính khi xuất hóa đơn điện tử cho khách",
-    "Tính khi khách hàng xác nhận công nợ bằng văn bản"
+    "Chỉ tính khi khách hàng xác nhận công nợ bằng văn bản"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 8.",

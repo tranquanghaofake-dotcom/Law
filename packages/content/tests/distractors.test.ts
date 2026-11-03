@@ -9,13 +9,15 @@ import { DATA_DIR } from '../src/build';
 //
 // 1. Đáp án đúng được dài nhất nhưng không dài hơn nhiễu dài nhất quá 10 % (đo lúc đặt: 0 câu vi phạm).
 // 2. Thứ hạng độ dài của đáp án đúng (1 = dài nhất), khi hòa độ dài thì chia đều các hạng hòa:
-//    toàn kho mỗi hạng 18–32 % (đo: 24,5 / 31,9 / 20,6 / 23,0 %); mỗi đơn vị ≥ 40 câu không hạng nào > 50 %.
+//    toàn kho mỗi hạng 18–32 % (đo: 24,5 / 31,8 / 20,6 / 23,1 %); mỗi đơn vị ≥ 40 câu không hạng nào > 50 %.
 //    Không tính hòa là "dài nhất" vì người đoán theo độ dài không có lợi thế khi các phương án bằng nhau.
 // 3. Nhiễu dài nhất > 1,3 × đáp án: chỉ xét đáp án ≥ 20 ký tự (tên cơ quan, con số ngắn tự nhiên chênh lệch):
-//    ≤ 3 % toàn kho (đo: 46/1 917 = 2,4 %). Tính cả đáp án ngắn: ≤ 18 % (đo: 17,1 %), chỉ để không tăng thêm.
+//    ≤ 3 % toàn kho (đo: 47/1 917 = 2,5 %). Tính cả đáp án ngắn: ≤ 18 % (đo: 17,1 %), chỉ để không tăng thêm.
 // 4. Từ tuyệt đối ("Mọi", "Chỉ", "Luôn", "Không bao giờ", "trong mọi trường hợp"…): câu có ≥ 2 nhiễu dùng
-//    từ tuyệt đối trong khi đáp án đúng không có ≤ 4,5 % toàn kho (đo: 4,2 %; trước đợt 6: 9 %).
-//    Còn lại chủ yếu là câu hỏi tập hợp ("gồm những ai") — bỏ "Chỉ" sẽ làm nhiễu đúng một phần.
+//    từ tuyệt đối trong khi đáp án đúng không có ≤ 6,5 % toàn kho (đo: 5,8 %; trước đợt 6: 9 %).
+//    Ngưỡng nới từ 4,5 % (04/11): 32 nhiễu "Chỉ khi …" bị bỏ "Chỉ" thành "Khi …" là điều kiện đứng một mình,
+//    đúng một phần (vd. đáp án "Có", nhiễu "Khi tàu ở cảng Việt Nam") → đã khôi phục "Chỉ". Đúng pháp lý ưu tiên
+//    hơn số đo. Còn lại chủ yếu là câu hỏi tập hợp ("gồm những ai") — bỏ "Chỉ" sẽ làm nhiễu đúng một phần.
 // 5. Đuôi chữ độn ("… nào", "… đó", "hiện nay", "ngay lập tức"…): tỉ lệ ở nhiễu không vượt tỉ lệ ở đáp án
 //    đúng quá 15 điểm % trong mỗi đơn vị, quá 3 điểm % toàn kho (đo: 1,9 % so với 1,6 %).
 // 6. Không có cụm 2 tiếng lặp liền nhau ("hiện hành hiện hành"); lặp 1 tiếng chỉ được ở các trường hợp
@@ -124,9 +126,9 @@ describe('phương án nhiễu không để lộ đáp án qua hình thức (đ�
     expect(items.filter(over).length / items.length).toBeLessThanOrEqual(0.18);
   });
 
-  it('câu có ≥ 2 nhiễu dùng từ tuyệt đối (đáp án đúng không có) ≤ 4,5 %', () => {
+  it('câu có ≥ 2 nhiễu dùng từ tuyệt đối (đáp án đúng không có) ≤ 6,5 %', () => {
     const bad = items.filter((m) => !ABS.test(correct(m)) && distractors(m).filter((d) => ABS.test(d)).length >= 2);
-    expect(bad.length / items.length).toBeLessThanOrEqual(0.045);
+    expect(bad.length / items.length).toBeLessThanOrEqual(0.065);
   });
 
   it('đuôi chữ độn ở nhiễu không vượt đáp án đúng quá 15 điểm % mỗi đơn vị, 3 điểm % toàn kho', () => {
