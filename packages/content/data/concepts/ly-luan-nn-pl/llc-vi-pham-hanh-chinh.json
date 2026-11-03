@@ -45,12 +45,12 @@
   {
    "type": "mcq",
    "level": 1,
-   "q": "Chủ thể vi phạm hành chính gồm ai?",
+   "q": "Phương án nào liệt kê đầy đủ chủ thể vi phạm hành chính?",
    "options": [
     "Cá nhân, tổ chức",
-    "Chỉ cá nhân",
-    "Chỉ pháp nhân thương mại",
-    "Chỉ cơ quan nhà nước"
+    "Cá nhân",
+    "Pháp nhân thương mại",
+    "Cơ quan nhà nước"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 2.",
@@ -122,6 +122,18 @@
     "không phải tội phạm",
     "xử phạt"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Vi phạm hành chính là hành vi có lỗi do cá nhân, tổ chức thực hiện, vi phạm quy định của pháp luật về quản lý nhà nước mà không phải là tội phạm và theo quy định của pháp luật phải bị xử phạt vi phạm hành chính.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 2 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 2 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/Vi-pham-hanh-chinh/Van-ban-hop-nhat-90-VBHN-VPQH-2026-Luat-Xu-ly-vi-pham-hanh-chinh-699548.aspx"
+   }
   }
  ]
 }

@@ -123,6 +123,18 @@
     "như nhau",
     "sinh ra"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Năng lực pháp luật dân sự của cá nhân là khả năng của cá nhân có quyền dân sự và nghĩa vụ dân sự.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 16 Bộ luật Dân sự 2015 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 16 Bộ luật Dân sự 2015",
+    "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+   }
   }
  ]
 }

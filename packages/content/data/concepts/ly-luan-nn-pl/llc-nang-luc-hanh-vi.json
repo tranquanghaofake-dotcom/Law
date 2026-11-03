@@ -122,6 +122,18 @@
     "độ tuổi",
     "nhận thức"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Năng lực hành vi dân sự của cá nhân là khả năng của cá nhân bằng hành vi của mình xác lập, thực hiện quyền, nghĩa vụ dân sự.",
+   "answer": true,
+   "explain": "Đúng. Điều 19 Bộ luật Dân sự 2015 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 19 Bộ luật Dân sự 2015",
+    "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+   }
   }
  ]
 }
