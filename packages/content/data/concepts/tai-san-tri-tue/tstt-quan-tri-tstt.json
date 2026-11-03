@@ -63,6 +63,16 @@
     {
      "text": "Đăng ký giám sát hải quan ngăn hàng xâm phạm qua biên giới",
      "answer": "right"
+    },
+    {
+     "text": "Lập danh mục tài sản trí tuệ và quy định nội bộ về bảo mật",
+     "answer": "left",
+     "basis": "Ghi chép bài giảng Quản trị tài sản trí tuệ, ĐH Luật Hà Nội (chưa đối chiếu nguyên văn giáo trình) (quản trị nội bộ)"
+    },
+    {
+     "text": "Thuê đơn vị bên ngoài theo dõi và đăng ký bảo hộ ở nước ngoài",
+     "answer": "right",
+     "basis": "Ghi chép bài giảng Quản trị tài sản trí tuệ, ĐH Luật Hà Nội (chưa đối chiếu nguyên văn giáo trình) (quản trị bên ngoài)"
     }
    ],
    "explain": "Bài giảng phân biệt quản lý trong nội bộ và quản lý tài sản bên ngoài."

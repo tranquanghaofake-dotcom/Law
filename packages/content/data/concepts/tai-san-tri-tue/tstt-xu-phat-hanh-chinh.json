@@ -72,6 +72,16 @@
     {
      "text": "Không giải quyết yêu cầu bồi thường cho chủ thể quyền",
      "answer": "right"
+    },
+    {
+     "text": "Cơ quan quản lý ra quyết định xử phạt nhanh, không cần vụ kiện dân sự",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 211 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Mức phạt hành chính không bù đắp hết thiệt hại thực tế của chủ thể quyền",
+     "answer": "right",
+     "basis": "Khoản 1, 2 Điều 211 và Điều 204 Luật Sở hữu trí tuệ"
     }
    ],
    "explain": "Bài giảng so sánh ưu, nhược các biện pháp."

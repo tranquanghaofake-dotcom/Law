@@ -74,6 +74,11 @@
     {
      "text": "Chuyển giao chứng khoán cho người mua trong 30 ngày",
      "answer": "right"
+    },
+    {
+     "text": "Công bố kết quả đợt chào bán sau khi kết thúc phân phối",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 26 Luật Chứng khoán 2019 (đối chiếu)"
     }
    ],
    "explain": "Khoản 3, 5, 6 Điều 26."

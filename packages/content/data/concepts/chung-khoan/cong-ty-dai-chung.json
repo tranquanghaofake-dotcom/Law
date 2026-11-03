@@ -72,6 +72,16 @@
     {
      "text": "Chào bán thành công cổ phiếu lần đầu ra công chúng",
      "answer": "right"
+    },
+    {
+     "text": "Công ty cổ phần có vốn điều lệ đã góp từ 30 tỷ đồng trở lên và vốn chủ sở hữu từ 30 tỷ đồng",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 32 Luật Chứng khoán 2019"
+    },
+    {
+     "text": "Công ty đã chào bán thành công cổ phiếu lần đầu ra công chúng có đăng ký với Ủy ban",
+     "answer": "right",
+     "basis": "Điểm b khoản 1 Điều 32 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 1 Điều 32."

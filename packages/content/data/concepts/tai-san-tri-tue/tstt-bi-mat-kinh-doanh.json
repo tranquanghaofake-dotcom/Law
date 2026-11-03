@@ -72,6 +72,16 @@
     {
      "text": "Công thức in trên tờ rơi quảng cáo",
      "answer": "right"
+    },
+    {
+     "text": "Danh sách khách hàng được lưu kín, nhân viên đã ký cam kết bảo mật",
+     "answer": "left",
+     "basis": "Khoản 3 Điều 84 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Quy trình pha chế đã được đăng công khai trên website của công ty",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 84 Luật Sở hữu trí tuệ"
     }
    ],
    "explain": "Khoản 3 Điều 84."

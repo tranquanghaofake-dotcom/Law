@@ -70,6 +70,16 @@
     {
      "text": "Vi phạm nghiêm trọng, nhiều tình tiết tăng nặng",
      "answer": "right"
+    },
+    {
+     "text": "Chủ quán vi phạm không nghiêm trọng, có tình tiết giảm nhẹ, nghị định quy định hình thức cảnh cáo",
+     "answer": "left",
+     "basis": "Điều 22 Luật Xử lý vi phạm hành chính"
+    },
+    {
+     "text": "Vi phạm không nghiêm trọng nhưng không có tình tiết giảm nhẹ, luật quy định phạt tiền",
+     "answer": "right",
+     "basis": "Điều 22 Luật Xử lý vi phạm hành chính"
     }
    ],
    "explain": "Điều 22."

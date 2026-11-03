@@ -74,6 +74,11 @@
     {
      "text": "Bảo đảm khách hàng có lãi hằng năm",
      "answer": "right"
+    },
+    {
+     "text": "Quản lý tách biệt tài sản của từng khách hàng",
+     "answer": "left",
+     "basis": "Khoản 3 Điều 89 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 1, 6 Điều 89; khoản 1 Điều 91 còn cấm bảo đảm lợi nhuận."

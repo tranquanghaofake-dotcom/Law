@@ -74,6 +74,16 @@
     {
      "text": "Có thể là tổ chức",
      "answer": "right"
+    },
+    {
+     "text": "Thành viên hợp danh phải là cá nhân, có ít nhất hai thành viên hợp danh",
+     "answer": "left",
+     "basis": "Điểm a, b khoản 1 Điều 177 Luật Doanh nghiệp 2020"
+    },
+    {
+     "text": "Thành viên hợp danh cùng nhau kinh doanh dưới một tên chung của công ty",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 177 Luật Doanh nghiệp 2020"
     }
    ],
    "explain": "Điều 177."

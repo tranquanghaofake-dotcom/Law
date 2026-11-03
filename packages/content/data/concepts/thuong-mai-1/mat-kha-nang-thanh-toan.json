@@ -72,6 +72,16 @@
     {
      "text": "Không trả nợ sau 06 tháng kể từ ngày đến hạn",
      "answer": "right"
+    },
+    {
+     "text": "Khoản nợ sẽ đến hạn trong vòng 06 tháng tới chưa thể thanh toán",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 5 Luật Phục hồi, phá sản 2025"
+    },
+    {
+     "text": "Khoản nợ đã đến hạn nhưng quá 06 tháng kể từ ngày đến hạn vẫn chưa được thanh toán",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 5 Luật Phục hồi, phá sản 2025"
     }
    ],
    "explain": "Khoản 1, 2 Điều 5."

@@ -70,6 +70,21 @@
     {
      "text": "Chưa đủ 18 tuổi",
      "answer": "right"
+    },
+    {
+     "text": "Người đã nghỉ hưu nhưng tiếp tục làm việc theo hợp đồng lao động",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 148 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Người lao động cao tuổi thỏa thuận rút ngắn thời giờ làm việc hằng ngày",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 148 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Em 17 tuổi làm việc bán thời gian theo hợp đồng",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 143 Bộ luật Lao động 2019"
     }
    ],
    "explain": "Điều 143, 148."

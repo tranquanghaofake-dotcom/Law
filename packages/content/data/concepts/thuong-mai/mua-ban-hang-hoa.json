@@ -74,6 +74,11 @@
     {
      "text": "Nhận hàng",
      "answer": "right"
+    },
+    {
+     "text": "Trả tiền hàng đúng thời hạn đã thỏa thuận trong hợp đồng",
+     "answer": "right",
+     "basis": "Khoản 8 Điều 3 và Điều 24 Luật Thương mại 2005"
     }
    ],
    "explain": "Khoản 8 Điều 3."

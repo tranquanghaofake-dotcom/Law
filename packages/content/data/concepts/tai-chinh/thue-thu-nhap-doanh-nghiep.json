@@ -72,6 +72,16 @@
     {
      "text": "Doanh thu năm trước 200 tỷ đồng, không thuộc diện ưu đãi",
      "answer": "right"
+    },
+    {
+     "text": "Doanh nghiệp có tổng doanh thu 30 tỷ đồng trong kỳ tính thuế",
+     "answer": "left",
+     "basis": "Khoản 3 Điều 10 Luật Thuế thu nhập doanh nghiệp 2025"
+    },
+    {
+     "text": "Doanh nghiệp có tổng doanh thu 60 tỷ đồng, không thuộc diện ưu đãi",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 10 Luật Thuế thu nhập doanh nghiệp 2025"
     }
    ],
    "explain": "Điều 10."

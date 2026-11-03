@@ -69,6 +69,16 @@
     {
      "text": "Hai bên tự thống nhất giá, khối lượng rồi thực hiện qua hệ thống",
      "answer": "right"
+    },
+    {
+     "text": "Lệnh mua, bán chứng khoán niêm yết được khớp tập trung trên hệ thống",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 50 Luật Chứng khoán 2019"
+    },
+    {
+     "text": "Khớp lệnh tập trung đối với chứng khoán niêm yết, đăng ký giao dịch",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 50 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 1 Điều 50; chi tiết tại Quy chế giao dịch của Sở."

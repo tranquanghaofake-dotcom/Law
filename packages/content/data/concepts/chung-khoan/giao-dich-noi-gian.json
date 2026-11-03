@@ -74,6 +74,11 @@
     {
      "text": "Tiết lộ thông tin nội bộ cho người thân",
      "answer": "left"
+    },
+    {
+     "text": "Tư vấn cho người khác mua chứng khoán dựa trên thông tin nội bộ chưa công khai",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 12 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 2, 3 Điều 12; khoản 49 Điều 4."

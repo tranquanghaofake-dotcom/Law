@@ -70,6 +70,16 @@
     {
      "text": "Thuê người nổi tiếng quảng bá sản phẩm",
      "answer": "right"
+    },
+    {
+     "text": "Tặng khách hàng một chiếc ly khi mua hàng đạt mức tối thiểu",
+     "answer": "left",
+     "basis": "Điều 92 Luật Thương mại 2005"
+    },
+    {
+     "text": "Gửi thư quảng cáo giới thiệu sản phẩm mới, không kèm lợi ích nào cho khách hàng",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 88 Luật Thương mại 2005"
     }
    ],
    "explain": "Điều 88, 92."

@@ -70,6 +70,16 @@
     {
      "text": "Nuôi con 8 tháng tuổi",
      "answer": "right"
+    },
+    {
+     "text": "Lao động nữ mang thai tháng thứ 07 phải đi công tác xa trong tuần",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 137 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Lao động nữ nuôi con 11 tháng tuổi làm thêm giờ, sau khi người lao động đó đồng ý",
+     "answer": "right",
+     "basis": "Điểm b khoản 1 Điều 137 Bộ luật Lao động 2019"
     }
    ],
    "explain": "Khoản 1 Điều 137."

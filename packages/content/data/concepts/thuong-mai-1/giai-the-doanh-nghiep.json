@@ -70,6 +70,16 @@
     {
      "text": "Bị thu hồi Giấy chứng nhận đăng ký doanh nghiệp",
      "answer": "right"
+    },
+    {
+     "text": "Chủ doanh nghiệp tư nhân quyết định giải thể doanh nghiệp của mình",
+     "answer": "left",
+     "basis": "Điểm b khoản 1 Điều 207 Luật Doanh nghiệp 2020"
+    },
+    {
+     "text": "Hội đồng thành viên thông qua nghị quyết giải thể công ty trách nhiệm hữu hạn",
+     "answer": "left",
+     "basis": "Điểm b khoản 1 Điều 207 Luật Doanh nghiệp 2020"
     }
    ],
    "explain": "Điều 207."

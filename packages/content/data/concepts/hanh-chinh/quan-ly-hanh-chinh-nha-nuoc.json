@@ -70,6 +70,16 @@
     {
      "text": "Tổ chức, chỉ đạo trực tiếp đối tượng bị quản lý",
      "answer": "right"
+    },
+    {
+     "text": "Lập kế hoạch thực hiện nghị quyết của Hội đồng nhân dân tỉnh",
+     "answer": "left",
+     "basis": "Slide bài giảng Luật Hành chính, ĐH Luật Hà Nội, vấn đề 1 (laws/hc-slide-trich.txt): tính chất chấp hành"
+    },
+    {
+     "text": "Ra mệnh lệnh điều chỉnh công việc hằng ngày của cấp dưới",
+     "answer": "right",
+     "basis": "Slide bài giảng Luật Hành chính, ĐH Luật Hà Nội, vấn đề 1 (laws/hc-slide-trich.txt): tính chất điều hành"
     }
    ],
    "explain": "Slide bài giảng vấn đề 1."

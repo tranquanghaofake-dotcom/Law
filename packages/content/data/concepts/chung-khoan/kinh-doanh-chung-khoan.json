@@ -74,6 +74,11 @@
     {
      "text": "Làm trung gian mua, bán chứng khoán cho khách hàng",
      "answer": "left"
+    },
+    {
+     "text": "Cá nhân mua cổ phiếu để nắm giữ lâu dài và hưởng cổ tức",
+     "answer": "right",
+     "basis": "Khoản 28 Điều 4 Luật Chứng khoán 2019 (không thuộc nghiệp vụ kinh doanh)"
     }
    ],
    "explain": "Khoản 28 và khoản 15 Điều 4."

@@ -69,6 +69,16 @@
     {
      "text": "Phần vốn cổ phần của tổ chức phát hành",
      "answer": "right"
+    },
+    {
+     "text": "Xác nhận quyền sở hữu của nhà đầu tư đối với một phần vốn góp của quỹ đầu tư chứng khoán",
+     "answer": "left",
+     "basis": "Khoản 4 Điều 4 Luật Chứng khoán 2019"
+    },
+    {
+     "text": "Quyền đối với một phần vốn cổ phần của công ty đại chúng",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 4 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Hai loại đều xác nhận quyền \"sở hữu\", nhưng đối tượng khác nhau: quỹ đầu tư và công ty phát hành."

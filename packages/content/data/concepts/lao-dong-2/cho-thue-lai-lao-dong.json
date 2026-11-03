@@ -70,6 +70,16 @@
     {
      "text": "Điều hành người lao động trong thời gian thuê lại",
      "answer": "right"
+    },
+    {
+     "text": "Ký quỹ và được cấp Giấy phép hoạt động cho thuê lại lao động",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 54 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Sử dụng lao động thuê lại để thay thế người đang nghỉ thai sản",
+     "answer": "right",
+     "basis": "Điểm b khoản 2 Điều 53 Bộ luật Lao động 2019"
     }
    ],
    "explain": "Điều 52, 56, 57."

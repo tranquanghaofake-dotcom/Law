@@ -68,6 +68,16 @@
     {
      "text": "Kết quả kinh doanh quý đã đăng trên website Sở giao dịch",
      "answer": "right"
+    },
+    {
+     "text": "Thông tin về việc công ty đại chúng dự kiến phát hành thêm cổ phiếu, chưa công bố",
+     "answer": "left",
+     "basis": "Khoản 44 Điều 4 Luật Chứng khoán 2019"
+    },
+    {
+     "text": "Thông tin đã được công bố đầy đủ trên phương tiện công bố thông tin theo quy định",
+     "answer": "right",
+     "basis": "Khoản 44 Điều 4 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Dấu hiệu \"chưa được công bố\"."

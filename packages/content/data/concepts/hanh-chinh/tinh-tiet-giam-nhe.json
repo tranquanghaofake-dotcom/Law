@@ -74,6 +74,16 @@
     {
      "text": "Phụ nữ mang thai vi phạm",
      "answer": "left"
+    },
+    {
+     "text": "Vi phạm do bị ép buộc hoặc bị lệ thuộc về vật chất hoặc tinh thần",
+     "answer": "left",
+     "basis": "Khoản 4 Điều 9 Luật Xử lý vi phạm hành chính"
+    },
+    {
+     "text": "Vi phạm có tổ chức",
+     "answer": "right",
+     "basis": "Điểm a khoản 1 Điều 10 Luật Xử lý vi phạm hành chính"
     }
    ],
    "explain": "Điều 9, 10."
