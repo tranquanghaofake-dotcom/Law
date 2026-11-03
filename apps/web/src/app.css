@@ -1516,3 +1516,30 @@ body:has(dialog.sheet[open]) { overflow: hidden; }
 }
 
 /* ---- Bản tối Hồ sơ: gốc cây và chip nhánh không đảo nền trắng; cột bậc 0 tối hơn đường kẻ ---- */
+
+/* ---- "Vì sao" sau câu trả lời và bảng so sánh cặp dễ nhầm (đợt 7, việc 6) ---- */
+.why { margin: var(--sp-2) 0; padding: var(--sp-2) var(--sp-3); border-left: 3px solid var(--accent); background: color-mix(in srgb, var(--accent) 7%, var(--card)); border-radius: 0 var(--r-sm) var(--r-sm) 0; }
+.why-title { margin: 0 0 var(--sp-1); font-weight: 700; font-size: var(--fs-sm); }
+.why-quote { margin: 0 0 var(--sp-1); padding: 0; font-size: var(--fs-sm); }
+.why-quote mark { background: color-mix(in srgb, var(--accent) 28%, transparent); color: inherit; font-weight: 700; border-radius: 2px; padding: 0 1px; }
+.why-plain, .why-signs, .why-mixup, .why-sign, .why-names { margin: var(--sp-1) 0 0; }
+.why-signs .chip { margin-right: var(--sp-1); }
+.cmp-wrap { margin: var(--sp-2) 0; } .cmp-wrap > summary { cursor: pointer; font-weight: 600; font-size: var(--fs-sm); padding: var(--sp-1) 0; }
+.cmp { margin: var(--sp-2) 0; border: 1px solid var(--line); border-radius: var(--r-md); overflow: hidden; background: var(--card); font-size: var(--fs-sm); }
+.cmp p, .cmp div { margin: 0; }
+.cmp-common { padding: var(--sp-2) var(--sp-3) 0; }
+.cmp-head { display: grid; grid-template-columns: 1fr 1fr; font-weight: 700; }
+.cmp-head span { padding: var(--sp-2) var(--sp-3); }
+.cmp-head .cmp-a { background: color-mix(in srgb, var(--accent) 16%, var(--card)); } .cmp-head .cmp-b { background: color-mix(in srgb, var(--seal) 12%, var(--card)); }
+.cmp-row { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--line); }
+.cmp-label { grid-column: 1 / -1; padding: var(--sp-1) var(--sp-3) 0; font-size: var(--fs-xs); font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+.cmp-row .cmp-a, .cmp-row .cmp-b { padding: var(--sp-1) var(--sp-3) var(--sp-2); }
+.cmp-row .cmp-a { border-right: 1px solid var(--line); }
+.cmp-row .chip { display: inline-block; margin: 0 var(--sp-1) var(--sp-1) 0; }
+.cmp-who { display: none; }
+@media (max-width: 479px) {
+  .cmp-head { display: none; }
+  .cmp-row { grid-template-columns: 1fr; }
+  .cmp-row .cmp-a { border-right: 0; border-bottom: 1px dashed var(--line); }
+  .cmp-who { display: inline; }
+}

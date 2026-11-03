@@ -18,6 +18,7 @@
   import { refreshShelf } from '$lib/ui/shelf.svelte';
   import { currentTitle } from '$lib/ui/career.svelte';
   import { cardFor, type AnswerResult } from '$lib/ui/cards';
+  import { firstComparable } from '$lib/engine/compare';
   import Feedback from '$lib/ui/Feedback.svelte';
   import SessionBar from '$lib/ui/SessionBar.svelte';
   import LessonPanel from '$lib/ui/LessonPanel.svelte';
@@ -61,6 +62,8 @@
   const concept = $derived(concepts.find((c) => c.id === step?.conceptId)!);
   const Card = $derived(step ? cardFor(step.item) : null);
   const confusableTerms = $derived(concept ? concept.confusables.map((id) => concepts.find((c) => c.id === id)?.term ?? id) : []);
+  const confusableConcepts = $derived(concept ? concept.confusables.map((id) => concepts.find((c) => c.id === id)).filter((c): c is Concept => !!c) : []);
+  const compareWith = $derived(concept && step && (step.item.type === 'sort' || step.item.type === 'pair') ? firstComparable(concept, concepts) : null);
   const speak = $derived(settings.tts && tts.available ? (t: string) => tts.speak(t) : undefined);
   // chốt chế độ cloze theo bậc lúc BẮT ĐẦU bước (không đổi khi đang xem phản hồi)
   const clozeMode = $derived.by(() => { const i = run.i; return clozeModeFor((run.results[i] ? run.results[i].levelBefore : run.levels[run.steps[i]?.conceptId]) ?? 0); });
@@ -185,7 +188,7 @@
         {/key}
       </div>
       {#if result}
-        <Feedback {result} item={step.item} {concept} {confusableTerms} onnext={runNextStep} onspeak={speak} last={isLast(run)} xp={reward.xp} golden={reward.golden} levelTo={reward.levelTo} retry={reward.retry} />
+        <Feedback {result} item={step.item} {concept} {confusableTerms} confusables={confusableConcepts} {compareWith} onnext={runNextStep} onspeak={speak} last={isLast(run)} xp={reward.xp} golden={reward.golden} levelTo={reward.levelTo} retry={reward.retry} />
       {/if}
     {/if}
   {/if}
