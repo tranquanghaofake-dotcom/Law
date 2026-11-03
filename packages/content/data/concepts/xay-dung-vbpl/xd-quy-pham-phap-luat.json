@@ -46,9 +46,9 @@
    "q": "Quy phạm pháp luật được áp dụng trong phạm vi nào?",
    "options": [
     "Cả nước hoặc đơn vị hành chính nhất định",
-    "Chỉ trong phạm vi một cơ quan nhà nước",
-    "Chỉ áp dụng với công chức, viên chức nhà nước",
-    "Chỉ áp dụng với doanh nghiệp tư nhân"
+    "Trong phạm vi một cơ quan nhà nước nhất định",
+    "Trong phạm vi công chức, viên chức nhà nước",
+    "Trong phạm vi các doanh nghiệp tư nhân"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 3: trong phạm vi cả nước hoặc trong đơn vị hành chính nhất định.",
@@ -120,6 +120,17 @@
     "thẩm quyền",
     "bảo đảm thực hiện"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quy phạm pháp luật là quy tắc xử sự chung, có hiệu lực bắt buộc chung, được áp dụng đối với cơ quan, tổ chức, cá nhân, trong phạm vi cả nước hoặc trong đơn vị hành chính nhất định, do cơ quan nhà nước, người có thẩm quyền ban hành và được Nhà nước bảo đảm thực hiện.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)"
+   }
   }
  ]
 }

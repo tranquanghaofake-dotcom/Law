@@ -47,12 +47,12 @@
   {
    "type": "mcq",
    "level": 1,
-   "q": "Nội dung đánh giá tác động của chính sách theo khoản 2 Điều 29 gồm?",
+   "q": "Phương án nào liệt kê đầy đủ nội dung đánh giá tác động của chính sách theo khoản 2 Điều 29?",
    "options": [
     "Tác động đối với hệ thống pháp luật, kinh tế - xã hội, về giới (nếu có), của thủ tục hành chính (nếu có)",
-    "Chỉ tác động đến ngân sách nhà nước, nguồn thu và tài sản công của các cơ quan nhà nước trung ương",
-    "Chỉ tác động đến môi trường tự nhiên, không khí và nguồn nước tại các khu công nghiệp lớn",
-    "Chỉ ý kiến cử tri tại nơi cư trú, ý kiến của đại biểu Quốc hội và cơ quan báo chí trung ương"
+    "Tác động đến ngân sách nhà nước, nguồn thu và tài sản công của các cơ quan nhà nước trung ương và địa phương",
+    "Tác động đến môi trường tự nhiên, không khí và nguồn nước tại các khu công nghiệp lớn và khu dân cư xung quanh",
+    "Ý kiến cử tri tại nơi cư trú, ý kiến của đại biểu Quốc hội và cơ quan báo chí trung ương và địa phương"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 29.",
@@ -124,6 +124,18 @@
     "hệ thống pháp luật",
     "kinh tế - xã hội"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Đánh giá tác động của chính sách là việc phân tích, dự báo khả năng ảnh hưởng của từng giải pháp nhằm lựa chọn phương án tối ưu, phù hợp với mục tiêu của chính sách.",
+   "answer": true,
+   "explain": "Đúng. Khoản 4 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)",
+    "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-54-VBHN-VPQH-2025-Luat-Ban-hanh-van-ban-quy-pham-phap-luat-669858.aspx"
+   }
   }
  ]
 }

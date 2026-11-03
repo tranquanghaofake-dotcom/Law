@@ -122,6 +122,18 @@
     "mục tiêu",
     "đối tượng tác động"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chính sách là tập hợp các giải pháp cụ thể của Nhà nước để giải quyết một hoặc một số vấn đề của thực tiễn nhằm đạt được mục tiêu nhất định, phù hợp với chủ trương, đường lối của Đảng.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)",
+    "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-54-VBHN-VPQH-2025-Luat-Ban-hanh-van-ban-quy-pham-phap-luat-669858.aspx"
+   }
   }
  ]
 }
