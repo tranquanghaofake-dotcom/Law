@@ -3,6 +3,7 @@ import { interleave, typeKey } from './arrange';
 import { candidates, genDefTerm, genDefTrueFalse, genExampleConcept, genMatch, genSort, genTermDef, type Cand, type GenContext } from './generate';
 import type { Step, StepGen, StepItem, StepMeta } from './step';
 import { leaks } from './text';
+import { REVIEW_MAX_STEPS } from './limits';
 
 export type { IntroItem, Step, StepItem, StepMeta, GenItem, MatchItem, SortItem } from './step';
 export type { GenContext as SessionContext } from './generate';
@@ -297,7 +298,7 @@ export function buildLearnSession(concepts: Concept[], levels: Record<string, Le
 }
 
 /** Số bước tối đa của một phiên ôn. */
-export const REVIEW_MAX_STEPS = 20;
+export { REVIEW_MAX_STEPS };
 
 /** Ôn: mỗi khái niệm 1 bước ở bậc hiện tại (bậc 6 → dạng nhớ chủ động 3–5), tối đa `max`, xen dạng, có câu chốt + câu vàng. */
 export function buildReviewSession(concepts: Concept[], levels: Record<string, Level>, rng: () => number, max = REVIEW_MAX_STEPS, ctx: GenContext = {}): Step[] {

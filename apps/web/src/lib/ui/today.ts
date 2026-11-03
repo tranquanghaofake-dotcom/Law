@@ -1,7 +1,7 @@
 // Chọn thẻ hành động duy nhất của trang Hôm nay theo trạng thái người học (spec §3.1).
 import type { Lesson, Level, Subject } from '$lib/content/types';
 import { currentLesson, inProgressLesson, LESSON_DONE_LEVEL } from './lessonState';
-import { REVIEW_MAX_STEPS } from '$lib/engine/session';
+import { REVIEW_MAX_STEPS } from '$lib/engine/limits';
 import { byRecency } from './shelves';
 
 export type HeroState =
