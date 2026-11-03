@@ -54,3 +54,12 @@
 - `xd-nghi-quyet-hdnd-tinh` (concept) — báo nhầm: cờ "ngoài kho" đọc sai tên "Luật Giáo dục giao"; Điều 21 Luật BHVBQPPL là căn cứ đúng.
 - ⚠ opus: `xd-thu-tuc-rut-gon` — nội dung có 6 trường hợp nhưng Điều 50 khoản 1 có 5 điểm (a–e); cần rà lại danh sách.
 - Cờ "cấp huyện" (xd-he-thong-vbqppl, xd-nghi-quyet-hdnd-tinh, xd-quy-trinh...) — thuộc opus (thuật ngữ cũ), không sửa.
+
+## Sửa theo kiểm chéo (sonnet C, 03/11/2026) — nguồn: `$DOT7/verify/xay-dung-vbpl.md`
+
+| Khái niệm | Trước (đã bỏ/đổi) | Sau | Căn cứ | Ghi chú |
+|---|---|---|---|---|
+| `xd-het-hieu-luc` | Văn bản tạm ngưng hiệu lực toàn bộ để kịp thời bảo vệ lợi ích, theo quyết định của cơ quan ban hành | Văn bản bị dừng áp dụng tạm thời toàn bộ để kịp thời bảo vệ lợi ích, theo quyết định của chính cơ quan ban hàn | Điểm a khoản 1 Điều 56 Luật Ban hành văn bản quy phạm pháp luật 2025 | viết lại không nhắc nhãn / sửa lỗi theo bảng verify |
+| `xd-tham-dinh` | Bộ Tư pháp chủ trì, phối hợp các bộ thẩm định dự án luật do Chính phủ trình | Bộ Tư pháp chủ trì, phối hợp các bộ đánh giá dự án luật do Chính phủ chuẩn bị trình Quốc hội, trước khi trình | Khoản 1 Điều 34 Luật Ban hành văn bản quy phạm pháp luật 2025 | viết lại không nhắc nhãn / sửa lỗi theo bảng verify |
+| `xd-tham-tra` | Ủy ban của Quốc hội báo cáo thẩm tra về dự án luật trình Quốc hội<br>Sở Tư pháp thẩm định dự thảo quyết định của Ủy ban nhân dân cấp tỉnh trước khi trình | Cơ quan chủ trì của Quốc hội đánh giá dự án luật trình Quốc hội trên cơ sở hồ sơ gửi chậm nhất 45 ngày trước n<br>Chính sách của dự án luật do Chính phủ đề xuất được Bộ Tư pháp chủ trì, phối hợp các bộ tổ chức đánh giá trước | Điều 37 Luật Ban hành văn bản quy phạm pháp luật 2025<br>Khoản 1 Điều 31 Luật Ban hành văn bản quy phạm pháp luật 2025 | viết lại không nhắc nhãn / sửa lỗi theo bảng verify |
+| `xd-thoi-diem-co-hieu-luc` | Nghị định của Chính phủ có hiệu lực không sớm hơn 45 ngày kể từ ngày ký ban hành<br>Nghị quyết của Hội đồng nhân dân cấp huyện có hiệu lực không sớm hơn 10 ngày kể từ ngày thông qua | Thời hạn tối thiểu từ ngày ký ban hành đến ngày có hiệu lực của nghị định của Chính phủ<br>Thời hạn tối thiểu từ ngày thông qua đến ngày có hiệu lực của nghị quyết Hội đồng nhân dân cấp tỉnh | Khoản 1 Điều 53 Luật Ban hành văn bản quy phạm pháp luật 2025<br>Khoản 1 Điều 53 Luật Ban hành văn bản quy phạm pháp luật 2025 | viết lại không nhắc nhãn / sửa lỗi theo bảng verify |
