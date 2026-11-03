@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { filterSets, groupSets } from '$lib/ui/groups';
+import { filterSets, filterSetsByShelf, groupSets, shelfOfGroup } from '$lib/ui/groups';
 
 const sets = [{ id: 'x', group: 'dan-su' }, { id: 'y', group: 'pldc' }, { id: 'z', group: 'pldc' }];
 
@@ -10,5 +10,18 @@ describe('groups', () => {
   });
   it('groupSets nhóm và xếp theo thứ tự GROUPS', () => {
     expect(groupSets(sets).map(([g]) => g)).toEqual(['pldc', 'dan-su']);
+  });
+  it('shelfOfGroup ánh xạ nhóm đề sang kệ; nhóm lạ → khac', () => {
+    expect(shelfOfGroup('pldc')).toBe('ly-luan');
+    expect(shelfOfGroup('to-tung-dan-su')).toBe('dan-su');
+    expect(shelfOfGroup('thuong-mai')).toBe('kinh-te');
+    expect(shelfOfGroup('ngan-hang')).toBe('tai-chinh');
+    expect(shelfOfGroup('khong-co')).toBe('khac');
+  });
+  it('filterSetsByShelf(null) trả tất cả, theo kệ thì chỉ các đề thuộc kệ', () => {
+    const all = [...sets, { id: 'w', group: 'to-tung-dan-su' }];
+    expect(filterSetsByShelf(all, null)).toHaveLength(4);
+    expect(filterSetsByShelf(all, 'dan-su').map((s) => s.id)).toEqual(['x', 'w']);
+    expect(filterSetsByShelf(all, 'ly-luan').map((s) => s.id)).toEqual(['y', 'z']);
   });
 });

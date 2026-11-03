@@ -32,7 +32,7 @@ test('#/mon/hien-phap hiện lưới 10 ô, đúng 1 nhãn TIẾP THEO CHO BẠN
   await expect(page.locator('.legend li')).toHaveCount(7);
   // Chưa học gì → đợt "tiếp theo" là đợt đầu tiên của môn (lấy từ dữ liệu, hiện là hp-0).
   const firstLessonId = hpSubject.chapters[0].lessons[0].id;
-  await expect(page.getByRole('link', { name: /Học đợt tiếp/ })).toHaveAttribute('href', `#/hoc/hien-phap/${firstLessonId}`);
+  await expect(page.getByRole('link', { name: /Học tiếp/ })).toHaveAttribute('href', `#/hoc/hien-phap/${firstLessonId}`);
 });
 
 test('#/mon liệt kê môn có nội dung và dẫn vào trang môn', async ({ page }) => {

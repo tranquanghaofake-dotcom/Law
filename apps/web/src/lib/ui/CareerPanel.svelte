@@ -48,8 +48,7 @@
 
 <section class="card wide career">
   <div class="career-grid">
-    <div class="career-portrait">
-      <Portrait avatar={drawn} {accent} tier={t.tier} celebrate={celebrating} ondone={doneCelebrate} title={t.title} subtitle={`${earned.length} sách · ${earned.filter((b) => b.level === 3).length} cấp 3`} books={display} />
+    <div class="career-side">
       <div class="plaque">
         <p class="kicker">{t.tier ? TIER_NAMES[t.tier] : 'Khởi đầu'}</p>
         <p class="plaque-title">{t.title}</p>
@@ -57,8 +56,6 @@
         {#if fresh}<p class="promo-note" role="status">Chúc mừng! Bạn vừa nhận chức danh mới: <b>{fresh.title}</b>.</p>{/if}
         {#if t.post && !celebrating}<button type="button" class="filter replay" onclick={() => (replay = true)}>Xem lại lễ nhận chức</button>{/if}
       </div>
-    </div>
-    <div class="career-side">
       <p class="kicker">Nhánh thăng chức</p>
       <div class="filters" role="group" aria-label="Chọn nhánh thăng chức">
         {#each BRANCHES as b (b)}<button type="button" class="filter" aria-pressed={career.branch === b} onclick={() => setBranch(b as Branch)}>{BRANCH_NAMES[b]}</button>{/each}
@@ -89,6 +86,13 @@
         </ol>
         {#if cs.head}<p class="muted small">Đỉnh chung: <b>Chủ tịch nước</b> — cần đạt cấp Trung ương ở hai nhánh {cs.head.branchOk ? '✓' : ''} và {cs.head.post.reqs.reduce((n, q) => n + q.count, 0)} sách cấp 3.</p>{/if}
       </details>
+    </div>
+    <div class="career-portrait">
+      {#if earned.length === 0}
+        <div class="card empty-case"><p class="muted">Bạn chưa có gì để trưng — học hết 1 chương để nhận cuốn sách đầu tiên.</p><a href="#/mon">Chọn môn →</a></div>
+      {:else}
+        <Portrait avatar={drawn} {accent} tier={t.tier} celebrate={celebrating} ondone={doneCelebrate} title={t.title} subtitle={`${earned.length} sách · ${earned.filter((b) => b.level === 3).length} cấp 3`} books={display} />
+      {/if}
     </div>
   </div>
   <details class="wardrobe">

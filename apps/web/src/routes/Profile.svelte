@@ -78,12 +78,6 @@
   <div role="tabpanel"><Settings /></div>
 {:else}
   <div role="tabpanel" class="profile-grid">
-    <CareerPanel />
-    <section class="card wide shelf-card">
-      <p class="kicker">Tủ sách</p>
-      <p class="muted small">Mỗi chương là một cuốn sách. Sách lên cấp khi mọi khái niệm của chương đạt bậc 3 (bìa mềm), bậc 5 (bìa cứng), bậc 6 (bìa da mạ vàng). Sách dùng để thăng chức.</p>
-      <Bookshelf size="large" />
-    </section>
     <section class="card profile">
       <p class="kicker">Thẻ chuyên cần</p>
       <StreakCard count={streak.count} longest={streak.longest} />
@@ -110,6 +104,11 @@
         </div>
         <p class="small muted">0 chưa học · 6 thuần thục</p>
       {/if}
+    </section>
+    <CareerPanel />
+    <section class="card wide shelf-card">
+      <p class="kicker">Tủ sách</p>
+      <Bookshelf size="large" />
     </section>
     <section class="card wide">
       <p class="kicker">Dữ liệu</p>

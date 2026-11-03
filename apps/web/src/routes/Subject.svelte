@@ -5,7 +5,7 @@
   import { repo } from '$lib/store/progress-repo';
   import { hashFor, route } from '$lib/router.svelte';
   import { currentLesson, lessonStates } from '$lib/ui/lessonState';
-  import { subjectSummary } from '$lib/ui/subjectSummary';
+  import { chapterCounts, subjectSummary } from '$lib/ui/subjectSummary';
   import { setRail } from '$lib/ui/rail.svelte';
   import MasteryGrid from '$lib/ui/MasteryGrid.svelte';
   import LevelLegend from '$lib/ui/LevelLegend.svelte';
@@ -27,6 +27,7 @@
   let error = $state('');
 
   const summary = $derived(subject ? subjectSummary(subject, levels) : null);
+  const counts = $derived(subject ? chapterCounts(subject, levels) : {});
   const states = $derived(subject ? lessonStates(subject, levels) : {});
   const next = $derived(subject ? currentLesson(subject, levels) : null);
 
@@ -68,17 +69,17 @@
       <BookCover class="head-cover" title={coverTitle(subject.title)} color={shelfOf(subject.id).color} percent={summary.percent} state={summary.mastered === summary.total && summary.total > 0 ? 'done' : summary.mastered > 0 ? 'learning' : 'new'} w={132} />
     {/if}
     <h1>{subject.title}</h1>
-    <p class="muted">Thuần thục <b>{summary.percent}%</b> · {summary.mastered}/{summary.total} khái niệm · {summary.chapters} chương · {summary.lessons} đợt</p>
+    <p class="muted">Thuần thục <b>{summary.percent}%</b> · {summary.mastered}/{summary.total} khái niệm</p>
     <div class="bar" aria-hidden="true"><span style="width:{summary.percent}%"></span></div>
     <div class="row">
+      {#if next}<span class="next-cta"><a class="btn primary" href={hashFor('lesson', { subject: subject.id, lesson: next.id })}>Học tiếp →</a><span class="next-hint small muted">{next.title}</span></span>{/if}
       {#if due}<a class="btn ghost" href={hashFor('review', { subject: subject.id })}>Ôn {due} khái niệm của môn</a>{/if}
-      <a class="btn ghost" href={hashFor('concepts', { subject: subject.id })}>Danh mục khái niệm</a>
-      {#if next}<a class="btn primary" href={hashFor('lesson', { subject: subject.id, lesson: next.id })}>Học đợt tiếp → {next.title}</a>{/if}
+      <a class="more" href={hashFor('concepts', { subject: subject.id })}>Danh mục khái niệm</a>
     </div>
   </header>
   {#if subject.chapters.length > 1}
     <nav class="local-nav small" aria-label="Chương trong môn">
-      {#each subject.chapters as ch (ch.id)}<a href="#chapter-{ch.id}" title={ch.title} onclick={(e) => { e.preventDefault(); document.getElementById(`chapter-${ch.id}`)?.scrollIntoView({ behavior: 'smooth' }); }}><Emblem name={emblemFor(subject.id, ch.id)} size={26} /><span>{shortTitle(ch.title)}</span></a>{/each}
+      {#each subject.chapters as ch (ch.id)}<a href="#chapter-{ch.id}" title={ch.title} onclick={(e) => { e.preventDefault(); document.getElementById(`chapter-${ch.id}`)?.scrollIntoView({ behavior: 'smooth' }); }}><Emblem name={emblemFor(subject.id, ch.id)} size={26} /><span>{shortTitle(ch.title)}</span><small class="cnt">{counts[ch.id]?.mastered ?? 0}/{counts[ch.id]?.total ?? 0}</small></a>{/each}
     </nav>
   {/if}
   <LevelLegend />
