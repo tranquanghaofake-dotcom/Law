@@ -61,3 +61,30 @@ Tổng: 46 tình huống mới; 25 khái niệm đạt ≥ 4 tình huống.
 | `doanh-nghiep#1` | lệch nội dung | báo nhầm | Điều 188 LDN 2020 đúng nội dung doanh nghiệp tư nhân |
 | `mat-kha-nang-thanh-toan#-1` | văn bản cũ | báo nhầm | câu nêu rõ Luật Phá sản 2014 đã hết hiệu lực, chỉ là so sánh lịch sử |
 | `thuong-mai-1-de-3#4` (bộ đề) | văn bản cũ / ngoài kho | **sửa** | explain ghi rõ "Khoản 2 Điều 5 Luật Phục hồi, phá sản 2025"; Luật Phá sản 2014 chỉ là mốc cũ |
+
+## Câu hỏi viết lại (sonnet B)
+
+### Câu hỏi kiểu tập hợp (bỏ nhiễu "Chỉ…") (3)
+
+| Mã | Câu hỏi | Trước | Sau | Căn cứ | Ghi chú |
+|---|---|---|---|---|---|
+| `thuong-mai-1/cong-ty-hop-danh#1` | Công ty hợp danh có tư cách pháp nhân không? | **Có, kể từ ngày được cấp Giấy chứng nhận đăng ký doanh nghiệp**<br>Không, công ty hợp danh không có tư cách pháp nhân riêng<br>Chỉ khi có thành viên góp vốn và có trụ sở đăng ký hợp lệ<br>Chỉ khi vốn điều lệ trên 10 tỷ đồng và đã có đủ thành viên góp vốn | **Có, kể từ ngày được cấp Giấy chứng nhận đăng ký doanh nghiệp**<br>Không, công ty hợp danh không có tư cách pháp nhân riêng<br>Có, nếu có thành viên góp vốn và có trụ sở đăng ký hợp lệ<br>Có, nếu vốn điều lệ trên 10 tỷ đồng và đã có đủ thành viên góp vốn | Khoản 2 Điều 177 Luật Doanh nghiệp 2020 | Nhiễu viết lại: sai rõ, không cần từ tuyệt đối |
+| `thuong-mai-1/cong-ty-tnhh-mot-thanh-vien#0` | Chủ sở hữu công ty TNHH một thành viên có thể là ai?<br>→ Phương án nào liệt kê đầy đủ chủ sở hữu có thể có của công ty TNHH một thành viên? | **Một tổ chức hoặc một cá nhân**<br>Chỉ cá nhân có quốc tịch Việt<br>Chỉ tổ chức kinh tế nước ngoài<br>Hai cá nhân trở lên đồng sở hữu | **Một tổ chức hoặc một cá nhân**<br>Cá nhân có quốc tịch Việt Nam<br>Tổ chức kinh tế nước ngoài<br>Hai cá nhân trở lên đồng sở hữu | Khoản 1 Điều 74 Luật Doanh nghiệp 2020 | Hỏi 'đầy đủ'. |
+| `sets/thuong-mai-1-de-1#6` | Chủ sở hữu công ty TNHH một thành viên có thể là ai?<br>→ Phương án nào liệt kê đầy đủ chủ sở hữu có thể có của công ty TNHH một thành viên? | Chỉ cá nhân có quốc tịch Việt<br>**Một tổ chức hoặc một cá nhân**<br>Hai cá nhân trở lên đồng sở hữu<br>Chỉ tổ chức kinh tế nước ngoài | Cá nhân có quốc tịch Việt Nam<br>**Một tổ chức hoặc một cá nhân**<br>Hai cá nhân trở lên đồng sở hữu<br>Tổ chức kinh tế nước ngoài | Khoản 1 Điều 74 Luật Doanh nghiệp 2020 | Hỏi 'đầy đủ'. |
+
+### Câu Đúng/Sai đáp án Đúng thêm mới (12)
+
+| Mã | Nhận định (Đúng) | Căn cứ | Ghi chú |
+|---|---|---|---|
+| `thuong-mai-1/co-phan#7` | Ngoài cổ phần phổ thông, công ty cổ phần có thể có cổ phần ưu đãi. | Khoản 2 Điều 114 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025) | nguyên văn khớp laws/*.txt |
+| `thuong-mai-1/cong-ty-co-phan#7` | Công ty cổ phần có tư cách pháp nhân kể từ ngày được cấp Giấy chứng nhận đăng ký doanh nghiệp. | Khoản 2 Điều 111 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025) | nguyên văn khớp laws/*.txt |
+| `thuong-mai-1/cong-ty-hop-danh#7` | Công ty hợp danh có tư cách pháp nhân kể từ ngày được cấp Giấy chứng nhận đăng ký doanh nghiệp. | Khoản 2 Điều 177 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025) | nguyên văn khớp laws/*.txt |
+| `thuong-mai-1/cong-ty-me-con#7` | Các công ty con của cùng một công ty mẹ không được đồng thời cùng góp vốn, mua cổ phần để sở hữu chéo lẫn nhau. | Khoản 2 Điều 195 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025) | nguyên văn khớp laws/*.txt |
+| `thuong-mai-1/cong-ty-tnhh-hai-thanh-vien#7` | Công ty trách nhiệm hữu hạn hai thành viên trở lên là doanh nghiệp có từ 02 đến 50 thành viên là tổ chức, cá nhân. | Khoản 1 Điều 46 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025) | nguyên văn khớp laws/*.txt |
+| `thuong-mai-1/cong-ty-tnhh-mot-thanh-vien#7` | Công ty trách nhiệm hữu hạn một thành viên có tư cách pháp nhân kể từ ngày được cấp Giấy chứng nhận đăng ký doanh nghiệp. | Khoản 2 Điều 74 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025) | nguyên văn khớp laws/*.txt |
+| `thuong-mai-1/doanh-nghiep-tu-nhan#7` | Chủ doanh nghiệp tư nhân không được đồng thời là chủ hộ kinh doanh, thành viên hợp danh của công ty hợp danh. | Khoản 3 Điều 188 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025) | nguyên văn khớp laws/*.txt |
+| `thuong-mai-1/doanh-nghiep#7` | Doanh nghiệp là tổ chức có tên riêng, có tài sản, có trụ sở giao dịch, được thành lập hoặc đăng ký thành lập theo quy định của pháp luật nhằm mục đích kinh doanh. | Khoản 10 Điều 4 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025) | nguyên văn khớp laws/*.txt |
+| `thuong-mai-1/hoi-nghi-chu-no#7` | Nghị quyết của Hội nghị chủ nợ thông qua khi có số chủ nợ đại diện cho từ 65% tổng số nợ không có bảo đảm trở lên biểu quyết tán thành. | Khoản 5 Điều 61 Luật Phục hồi, phá sản 2025 (142/2025/QH15) | nguyên văn khớp laws/*.txt |
+| `thuong-mai-1/mat-kha-nang-thanh-toan#7` | Doanh nghiệp, hợp tác xã mất khả năng thanh toán là doanh nghiệp, hợp tác xã không thực hiện nghĩa vụ thanh toán khoản nợ sau thời hạn 06 tháng kể từ ngày đến hạn thanh toán. | Khoản 2 Điều 5 Luật Phục hồi, phá sản 2025 (142/2025/QH15) | nguyên văn khớp laws/*.txt |
+| `thuong-mai-1/nguyen-tac-hop-tac-xa#7` | Cá nhân, tổ chức tự nguyện thành lập, gia nhập, ra khỏi tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã. | Khoản 1 Điều 8 Luật Hợp tác xã 2023 (VBHN 101/VBHN-VPQH 2026) | nguyên văn khớp laws/*.txt |
+| `thuong-mai-1/von-gop-bieu-quyet-htx#7` | Vốn góp tối đa không quá 30% vốn điều lệ đối với hợp tác xã và không quá 40% vốn điều lệ đối với liên hiệp hợp tác xã. | Khoản 1 Điều 74 Luật Hợp tác xã 2023 (VBHN 101/VBHN-VPQH 2026) | nguyên văn khớp laws/*.txt |

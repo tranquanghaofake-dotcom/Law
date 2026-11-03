@@ -122,6 +122,18 @@
     "không có bảo đảm",
     "bắt buộc"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Nghị quyết của Hội nghị chủ nợ thông qua khi có số chủ nợ đại diện cho từ 65% tổng số nợ không có bảo đảm trở lên biểu quyết tán thành.",
+   "answer": true,
+   "explain": "Đúng. Khoản 5 Điều 61 Luật Phục hồi, phá sản 2025 (142/2025/QH15) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 5 Điều 61 Luật Phục hồi, phá sản 2025 (142/2025/QH15)",
+    "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-Phuc-hoi-pha-san-2025-so-142-2025-QH15-675210.aspx"
+   }
   }
  ]
 }
