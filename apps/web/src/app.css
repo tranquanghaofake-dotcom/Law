@@ -1172,10 +1172,10 @@ body:has(dialog.sheet[open]) { overflow: hidden; }
 :root[data-theme="dark"] .org-top { --bc: #e0b860; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .org-top { --bc: #e0b860; } }
 /* hiện dần lần lượt khi cuộn vào khung (JS đặt data-appear; giảm chuyển động thì không đặt) */
-.org-node[data-appear="pre"] { opacity: 0; transform: translateY(10px) scale(.97); }
-.org-node[data-appear="in"] { transition: opacity .45s ease, transform .5s cubic-bezier(.2, .8, .3, 1), box-shadow .2s ease; transition-delay: calc(var(--i, 0) * 55ms); }
-.reduced-motion .org-node[data-appear] { opacity: 1 !important; transform: none !important; }
-@media (prefers-reduced-motion: reduce) { :root:not(.motion-on) .org-node[data-appear] { opacity: 1 !important; transform: none !important; } }
+.org-node[data-appear="pre"] { filter: blur(5px) saturate(.2); transform: translateY(12px) scale(.96); } /* hiện dần bằng nhoè → nét (không đổi độ trong suốt: tương phản chữ luôn đạt) */
+.org-node[data-appear="in"] { transition: filter .5s ease, transform .5s cubic-bezier(.2, .8, .3, 1), box-shadow .2s ease; transition-delay: calc(var(--i, 0) * 55ms); }
+.reduced-motion .org-node[data-appear] { filter: none !important; transform: none !important; }
+@media (prefers-reduced-motion: reduce) { :root:not(.motion-on) .org-node[data-appear] { filter: none !important; transform: none !important; } }
 
 /* chi tiết trong hộp / khung tủ trưng bày */
 .org-state { display: inline-block; justify-self: start; padding: 3px 10px; border-radius: var(--r-sm); font-size: var(--fs-sm); font-weight: 700; background: color-mix(in srgb, var(--line) 55%, transparent); color: var(--ink); }

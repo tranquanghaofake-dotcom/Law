@@ -106,7 +106,7 @@
   <ul class="org-cols">
     {#each cols as c, ci (c.branch)}
       <li class="org-col" class:sel={career.branch === c.branch} style="--bc: var(--bc-{c.branch})" data-branch={c.branch}>
-        <button type="button" class="org-bnode" aria-pressed={career.branch === c.branch} aria-label="{c.label}, {c.done}/{c.total} chức{career.branch === c.branch ? ', đang theo' : ''}" onclick={() => setBranch(c.branch)}>
+        <button type="button" class="org-bnode" aria-pressed={career.branch === c.branch} title={c.label} onclick={() => setBranch(c.branch)}>
           {@render bicon(c.branch)}
           <span class="org-bname">{c.short}</span>
           <span class="org-meta">{c.done}/{c.total} chức{career.branch === c.branch ? ' · đang theo' : ''}</span>
