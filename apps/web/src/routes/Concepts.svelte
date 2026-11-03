@@ -45,7 +45,7 @@
       levels = await repo.levels(ids);
       await stars.load();
       subject = s;
-      document.title = `Khái niệm · ${s.title} · Luyện Luật`;
+      document.title = `${(route.params.concept && byId[route.params.concept]?.term) || 'Khái niệm'} · ${s.title} · Luyện Luật`;
       const target = route.params.concept;
       if (target) {
         open = [target];

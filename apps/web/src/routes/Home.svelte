@@ -10,6 +10,7 @@
   import { GROUPS, pickQuickQuiz } from '$lib/ui/groups';
   import { knownConcepts, pickHeroState, type HeroState } from '$lib/ui/today';
   import { dueWindow } from '$lib/ui/sideStudy';
+  import { dueByDay } from '$lib/ui/dueByDay';
   import { orderedSubjects, byRecency, lastStudiedBySubject } from '$lib/ui/shelves';
   import { setRail } from '$lib/ui/rail.svelte';
   import HeroCard from '$lib/ui/HeroCard.svelte';
@@ -29,8 +30,7 @@
   let subjectCount = $state(0);
   let quick = $state<{ set: ContentIndex['sets'][number]; best: number | null } | null>(null);
   let week = $state<boolean[]>(Array(7).fill(false));
-  let dueTomorrow = $state(0);
-  let dueWeek = $state(0);
+  let dueDays = $state<number[]>(Array(7).fill(0));
   let hard = $state<{ id: string; subject: string; term: string }[]>([]);
   let error = $state('');
 
@@ -78,12 +78,11 @@
 
       // rail: 7 ngày có phiên, hẹn ôn ngày mai
       week = weekFlags(await repo.reviewDays(weekStart()));
-      dueTomorrow = (await repo.due(dueWindow(new Date(), 1))).filter((p) => known.has(p.conceptId)).length;
-      dueWeek = (await repo.due(dueWindow(new Date(), 7))).filter((p) => known.has(p.conceptId)).length;
+      dueDays = dueByDay((await repo.due(dueWindow(new Date(), 6))).filter((p) => known.has(p.conceptId)).map((p) => p.card.due));
     } catch (e) { error = (e as Error).message; }
   }
   load();
-  $effect(() => { if (hero) return setRail(HomeRail, { week, dueTomorrow, dueWeek }); });
+  $effect(() => { if (hero) return setRail(HomeRail, { week, dueDays }); });
 </script>
 
 {#if error}
@@ -91,6 +90,7 @@
 {:else if !index || !hero}
   <p class="loading">Đang tải…</p>
 {:else}
+  <h1 class="sr-only">Hôm nay</h1>
   <HeroCard state={hero} />
 
   {#if rows.length}
@@ -98,7 +98,7 @@
     <ul class="subject-rows">
       {#each rows as r (r.subject.id)}
         <li><a class="subject-row" href={hashFor('subject', { subject: r.subject.id })}>
-          <BookCover class="row-cover" title={coverTitle(r.subject.title)} color={shelfOf(r.subject.id).color} percent={r.total ? Math.round((r.mastered / r.total) * 100) : 0} state={studying ? 'learning' : 'new'} w={54} />
+          <BookCover class="row-cover" id={r.subject.id} title={coverTitle(r.subject.title)} color={shelfOf(r.subject.id).color} percent={r.total ? Math.round((r.mastered / r.total) * 100) : 0} state={studying ? 'learning' : 'new'} w={54} />
           <span class="title"><b>{r.subject.title}</b></span>
           <span class="bar" aria-hidden="true"><span style="width:{r.total ? (r.mastered / r.total) * 100 : 0}%"></span></span>
           <span class="muted small">{r.mastered}/{r.total} thuần thục</span>

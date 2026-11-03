@@ -103,6 +103,7 @@
 <svelte:window onkeydown={onkey} />
 <Reveal {reveal} src={art} />
 <div class="session-main">
+  <h1 class="sr-only">{title ?? 'Phiên học'}</h1>
   {#if ended}
     <SessionEnd summary={summary(run)} {concepts} streak={ended.streak} streakEvent={ended.streakEvent} rankBefore={ended.rankBefore} rankAfter={ended.rankAfter} dueTomorrow={ended.dueTomorrow} promotion={ended.promotion} onhome={() => go('home')} {onagain} {onnext} mistakes={mistakes(run)} />
   {:else if step && Card}

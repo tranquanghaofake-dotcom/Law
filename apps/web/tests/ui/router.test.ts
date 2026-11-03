@@ -13,9 +13,14 @@ describe('parseHash', () => {
     expect(parseHash('#/toi').name).toBe('profile');
     expect(parseHash('#/cai-dat').name).toBe('settings');
   });
-  it('hash lạ hoặc rỗng → home', () => {
-    expect(parseHash('#/khong-co')).toEqual({ name: 'home', params: {} });
+  it('hash rỗng hoặc #/ → home', () => {
     expect(parseHash('')).toEqual({ name: 'home', params: {} });
+    expect(parseHash('#/')).toEqual({ name: 'home', params: {} });
+  });
+  it('hash không khớp route nào → notfound (không còn rơi về Hôm nay)', () => {
+    expect(parseHash('#/khong-co')).toEqual({ name: 'notfound', params: {} });
+    expect(parseHash('#/hoc/hien-phap')).toEqual({ name: 'notfound', params: {} });
+    expect(parseHash('#/bo')).toEqual({ name: 'notfound', params: {} });
   });
   it('#/mon, #/mon/<id>, #/luyen-de', () => {
     expect(parseHash('#/mon')).toEqual({ name: 'subjects', params: {} });

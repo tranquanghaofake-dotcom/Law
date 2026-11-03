@@ -65,7 +65,7 @@
     {#if hasOwnArt(subject.id)}
       <SubjectArt name={artFor(subject.id)} class="head-art" />
     {:else}
-      <BookCover class="head-cover" title={coverTitle(subject.title)} color={shelfOf(subject.id).color} percent={summary.percent} state={summary.mastered === summary.total && summary.total > 0 ? 'done' : summary.mastered > 0 ? 'learning' : 'new'} w={132} />
+      <BookCover class="head-cover" id={subject.id} title={coverTitle(subject.title)} color={shelfOf(subject.id).color} percent={summary.percent} state={summary.mastered === summary.total && summary.total > 0 ? 'done' : summary.mastered > 0 ? 'learning' : 'new'} w={132} />
     {/if}
     <h1>{subject.title}</h1>
     <p class="muted">Thuần thục <b>{summary.percent}%</b> · {summary.mastered}/{summary.total} khái niệm</p>

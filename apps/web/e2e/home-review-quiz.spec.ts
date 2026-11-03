@@ -24,7 +24,7 @@ test('điều hướng: 4 mục, mục đang chọn có aria-current; Môn học
   await expect(page.getByRole('heading', { name: 'Môn học' })).toBeVisible();
 });
 
-test('luyện đề 10 câu: làm hết, thấy điểm, Chọn bộ khác về Luyện đề có điểm cao nhất', async ({ page }) => {
+test('luyện đề 10 câu: làm hết, thấy điểm, Về Luyện đề thấy điểm cao nhất', async ({ page }) => {
   await page.goto(B + '#/bo/dat-coc');
   for (let i = 0; i < 10; i++) {
     await page.locator('.opt').first().waitFor();
@@ -32,15 +32,15 @@ test('luyện đề 10 câu: làm hết, thấy điểm, Chọn bộ khác về 
     await page.getByRole('button', { name: /Câu tiếp|Xem kết quả/ }).click();
   }
   await expect(page.locator('.score')).toHaveText(/\d+\/10/);
-  await page.getByRole('link', { name: 'Chọn bộ khác' }).click();
+  await page.getByRole('link', { name: 'Về Luyện đề' }).click();
   await expect(page).toHaveURL(/#\/luyen-de$/);
-  await expect(page.getByRole('link', { name: /Đặt cọc/ })).toContainText(/điểm cao nhất/);
+  await expect(page.locator('.ticket', { hasText: 'Đặt cọc' }).first()).toContainText(/điểm cao nhất/);
 });
 
 test('nhập điểm cao nhất cũ từ localStorage v1', async ({ page }) => {
   await page.addInitScript(() => localStorage.setItem('best:dat-coc', '9'));
   await page.goto(B + '#/luyen-de'); // mở thẳng, không qua trang chủ
-  await expect(page.getByRole('link', { name: /Đặt cọc/ })).toContainText('9/10');
+  await expect(page.locator('.ticket', { hasText: 'Đặt cọc' }).first()).toContainText('9/10');
 });
 
 test('cài đặt ẩn nút Nghe thử khi không có giọng vi', async ({ page }) => {
@@ -71,13 +71,13 @@ const danSuTitles = allSets.filter((s) => ['dan-su', 'to-tung-dan-su'].includes(
 
 test('Luyện đề: lọc theo nhóm chỉ còn đề của nhóm đó', async ({ page }) => {
   await page.goto(B + '#/luyen-de');
-  await expect(page.locator('.set')).toHaveCount(allSets.length);
+  await expect(page.locator('.ticket')).toHaveCount(allSets.length);
   await page.getByRole('button', { name: 'Dân sự – Tố tụng' }).click();
   // Lọc xong: số đề bằng số đề của nhóm trong dữ liệu, ít hơn tổng, và mọi đề hiện ra đều thuộc nhóm.
-  await expect(page.locator('.set')).toHaveCount(danSuTitles.length);
+  await expect(page.locator('.ticket')).toHaveCount(danSuTitles.length);
   expect(danSuTitles.length).toBeLessThan(allSets.length);
-  for (const t of await page.locator('.set h3').allTextContents()) expect(danSuTitles).toContain(t);
+  for (const t of await page.locator('.ticket h3').allTextContents()) expect(danSuTitles).toContain(t);
   await expect(page.getByRole('button', { name: 'Dân sự – Tố tụng' })).toHaveAttribute('aria-pressed', 'true');
   await page.getByRole('button', { name: 'Tất cả' }).click();
-  await expect(page.locator('.set')).toHaveCount(allSets.length);
+  await expect(page.locator('.ticket')).toHaveCount(allSets.length);
 });

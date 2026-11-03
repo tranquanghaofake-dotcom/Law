@@ -35,11 +35,12 @@ describe('thăng chức theo bộ máy nhà nước', () => {
       if (p.tier === 'trung-uong' || p.tier === 'lanh-dao') expect(p.reqs.every((r) => r.level === 3), p.id).toBe(true);
     }
   });
-  it('dù toàn bộ nội dung hiện có đạt cấp 3: chưa lên được chức cấp tỉnh ở Hành pháp, Xét xử, Kiểm sát (chờ môn mới); không ai tới Chủ tịch nước', () => {
+  it('dù toàn bộ nội dung hiện có đạt cấp 3: chưa lên được chức cấp tỉnh ở Hành pháp, Xét xử, Kiểm sát (thiếu sách lĩnh vực khác); không ai tới Chủ tịch nước', () => {
     const s = careerState(allCurrent(3));
     for (const b of ['hanh-phap', 'xet-xu', 'kiem-sat'] as const) expect(POSTS.filter((p) => p.branch === b && p.tier !== 'co-so').some((p) => s.achieved.has(p.id)), b).toBe(false);
     expect(s.achieved.has('chu-tich-nuoc')).toBe(false);
-    expect(s.next['hanh-phap']?.missing.some((m) => m.future)).toBe(true);
+    expect(s.next['hanh-phap']?.missing.length).toBeGreaterThan(0);
+    expect(s.next['hanh-phap']?.missing.some((m) => m.future)).toBe(false); // mọi lĩnh vực đã có môn: không còn "chờ môn"
   });
   it('lên tuần tự: thiếu chức dưới thì không giữ chức trên dù đủ sách', () => {
     const books = [...many('dia-phuong', 3, 5), ...many('hien-phap', 3, 10), ...many('quyen-cong-dan', 3, 5), ...many('hanh-phap', 3, 3), ...many('hanh-chinh', 3, 20), ...many('kinh-te-tai-chinh', 3, 20), ...many('dat-dai', 3, 5), ...many('lich-su', 3, 40)];
@@ -62,7 +63,7 @@ describe('thăng chức theo bộ máy nhà nước', () => {
     const s = careerState([]);
     const nx = s.next['xet-xu'];
     expect(nx?.post.id).toBe('thu-ky-toa-an');
-    expect(FUTURE_FIELDS.length).toBeGreaterThan(0);
+    expect(FUTURE_FIELDS.every((f) => FIELDS.includes(f))).toBe(true);
   });
 });
 
