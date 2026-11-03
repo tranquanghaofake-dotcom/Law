@@ -93,7 +93,7 @@ button { font: inherit; color: inherit; }
   /* Sidebar dính mép trái (cùng vị trí ở mọi trang, có hay không có rail); nội dung căn giữa phần còn lại. */
   .shell { grid-template-columns: minmax(0, var(--content-max)); padding: 0 0 0 var(--rail-w); }
   .shell > .topbar, .tabbar { display: none; }
-  .shell > .sidenav { display: flex; flex-direction: column; position: fixed; left: 0; top: 0; height: 100dvh; width: var(--rail-w); padding: var(--sp-3) var(--sp-2); border-right: 1px solid var(--line); background: var(--card); z-index: 10; }
+  .shell > .sidenav { display: flex; flex-direction: column; position: fixed; left: 0; top: 0; height: 100dvh; width: var(--rail-w); padding: var(--sp-3) var(--sp-2); border-right: 1px solid var(--line); background: var(--card); z-index: 10; overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; }
   .sidenav .brand .name { display: none; }
   .shell > .content { grid-column: 1; grid-row: 1; padding: var(--sp-5) var(--sp-5) var(--sp-6); }
   .shell > .foot { grid-column: 1; grid-row: 2; padding: 0 var(--sp-5) var(--sp-5); }

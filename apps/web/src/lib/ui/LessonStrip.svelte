@@ -3,6 +3,8 @@
   import type { Concept, Level } from '$lib/content/types';
   let { concepts, levels, current }: { concepts: Concept[]; levels: Record<string, Level>; current: string } = $props();
 </script>
+<!-- Vùng cuộn ngang phải nhận focus bằng phím (axe: scrollable-region-focusable) nên cố ý có tabindex. -->
+<!-- svelte-ignore a11y_no_noninteractive_tabindex -->
 <ol class="lesson-strip" aria-label="Các khái niệm của đợt" tabindex="0">
   {#each concepts as c (c.id)}
     {@const lv = levels[c.id] ?? 0}
