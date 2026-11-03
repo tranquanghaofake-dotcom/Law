@@ -199,3 +199,28 @@ Số khái niệm: 93; số tình huống thêm: 177.
 - ⚠ `don-vi-hanh-chinh-hai-cap`: vế "Hiến pháp 2013 bản gốc" (trước NQ 203/2025) không có trong kho; chỉ căn cứ theo ghi chú "bản gốc".
 - Đã sửa (lỗi rõ, trong câu Phân biệt của `thoi-quoc-tich-viet-nam`): bỏ tình huống "Đang là sĩ quan quân đội tại ngũ" ở vế "Không được thôi" — khoản 2 Điều 27 Luật Quốc tịch 2008 không liệt kê trường hợp này; thay bằng điểm a khoản 2 (đang nợ thuế).
 - Ngoài phạm vi (không sửa, ghi nhận): tên khái niệm `kiem-toan-nha-nuoc` có vế trái là "Hội đồng bầu cử quốc gia" (cặp lệch chủ đề).
+
+## Giai đoạn 2 — cờ dò trích dẫn (haiku-1)
+
+Cờ của môn: 23 (kiểm từng cờ theo điều luật trong `laws/`).
+
+**Sửa**
+- `hien-phap-1959` (câu ôn "trình bày Hiến pháp 1959", phần đáp án mẫu): ghi rõ "Điều 4 Hiến pháp 1959" và "Điều 112 Hiến pháp 1959" — công cụ đọc nhầm sang Hiến pháp 2013.
+- `ke-thua-lap-hien` (câu ôn lịch sử lập hiến, đáp án mẫu): ghi rõ "Điều 4 Hiến pháp 1980" (Đảng lãnh đạo).
+- `quyen-trinh-du-an-luat` (ví dụ): ghi rõ "khoản 1 Điều 84 Hiến pháp 2013" — công cụ đọc nhầm sang Luật Tổ chức Tòa án nhân dân.
+- Căn cứ tình huống do haiku-1 thêm: "Mọi văn bản pháp luật khác phải phù hợp với Hiến pháp" nằm ở khoản 1 Điều 119 (không phải khoản 2) — đã sửa ở các tình huống mới của `hien-phap`, `hieu-luc-phap-ly-toi-cao`, `bao-ve-hien-phap`. Căn cứ khoản 2 Điều 119 ("trách nhiệm bảo vệ Hiến pháp") của khái niệm gốc giữ nguyên.
+
+**Báo nhầm**
+- `bao-ve-moi-truong#6` (câu ôn đáp án mẫu): nội dung đúng cả Điều 43 và Điều 63; giữ nguyên.
+- `chu-quyen-nhan-dan#5` (tình huống mcq cấp 4): khoản 2 Điều 2 đúng; diễn đạt khác với chữ luật.
+- `chu-tich-nuoc-quoc-tich-khen-thuong#-1` (vế "khoản 3 Điều 88"): đặc xá nằm ở khoản 3 Điều 88 Hiến pháp 2013 (đã đối chiếu); công cụ đọc nhầm sang Luật Quốc tịch.
+- `dang-cong-san-lanh-dao#-1`, `don-vi-hanh-chinh-hai-cap#-1`, `#1`, `#5`, `#6`: nói về bỏ cấp huyện từ 2025 đúng ngữ cảnh (lịch sử hoặc câu đúng/sai có chủ đích). Thuật ngữ "cấp huyện" trong các câu này không phải dùng như hiện hành — ⚠ opus rà bộ lọc thuật ngữ cũ nếu muốn.
+- `don-vi-hanh-chinh-hai-cap#-1`, `#1` (vế "khoản 2 Điều 2 Nghị quyết 203/2025/QH15"): văn bản ngoài kho, không kiểm được.
+- `hieu-luc-phap-ly-toi-cao#5`: khoản 1 Điều 119 đúng; chỉ khác chữ.
+- `nha-nuoc-phap-quyen-xhcn#1` (Điều 119): đúng. `nha-nuoc-phap-quyen-xhcn#5` (khoản 2 Điều 14): đúng ("chỉ có thể bị hạn chế theo quy định của luật").
+- `quyen-bau-cu-ung-cu#-1`, `#6` (vế "Luật Tổ chức chính quyền địa phương", Điều 3, Điều 37): văn bản ngoài kho; không kiểm được, giữ nguyên.
+- `tu-do-kinh-doanh#1` (đáp án mẫu "Điều 33."): đúng; phần giải thích quá ngắn — có thể bổ sung sau.
+- `truong-hop-khong-duoc-ung-cu#5` (Điều 37 Luật Bầu cử): đúng; cờ do diễn đạt khác chữ.
+
+**⚠ opus** (đã nêu ở mục trên, nhắc lại)
+- `danh-sach-cu-tri`, `tro-lai-quoc-tich`, `binh-dang-truoc-phap-luat`, `tu-do-kinh-doanh` (vế Luật Công ty 1990 ngoài kho), `don-vi-hanh-chinh-hai-cap` (bản gốc 2013): xem "Ghi chú ⚠" phía trên.
