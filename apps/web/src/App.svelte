@@ -11,9 +11,10 @@
   import Review from './routes/Review.svelte';
   import Quiz10 from './routes/Quiz10.svelte';
   import Profile from './routes/Profile.svelte';
+  import NotFound from './routes/NotFound.svelte';
   import { storage } from '$lib/store/status.svelte';
 
-  const views = { home: Home, subjects: Subjects, subject: Subject, concepts: Concepts, quizzes: Quizzes, lesson: Lesson, review: Review, quiz: Quiz10, profile: Profile, settings: Profile } as const;
+  const views = { home: Home, subjects: Subjects, subject: Subject, concepts: Concepts, quizzes: Quizzes, lesson: Lesson, review: Review, quiz: Quiz10, profile: Profile, settings: Profile, notfound: NotFound } as const;
   const View = $derived(views[route.name]);
   // Trong phiên học shell ẩn hoàn toàn: một màn một việc (spec §2.4).
   const inSession = $derived(route.name === 'lesson' || route.name === 'review' || route.name === 'quiz');

@@ -1,4 +1,4 @@
-export type RouteName = 'home' | 'subjects' | 'subject' | 'concepts' | 'quizzes' | 'lesson' | 'review' | 'quiz' | 'profile' | 'settings';
+export type RouteName = 'home' | 'subjects' | 'subject' | 'concepts' | 'quizzes' | 'lesson' | 'review' | 'quiz' | 'profile' | 'settings' | 'notfound';
 export type Route = { name: RouteName; params: Record<string, string> };
 
 const HOME: Route = { name: 'home', params: {} };
@@ -14,7 +14,8 @@ export function parseHash(hash: string): Route {
   if (a === 'luyen-de') return { name: 'quizzes', params: {} };
   if (a === 'toi') return { name: 'profile', params: {} };
   if (a === 'cai-dat') return { name: 'settings', params: {} };
-  return HOME;
+  if (!a) return HOME;
+  return { name: 'notfound', params: {} };
 }
 
 export function hashFor(name: RouteName, params: Record<string, string> = {}): string {
