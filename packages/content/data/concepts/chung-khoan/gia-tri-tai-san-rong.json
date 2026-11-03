@@ -30,7 +30,7 @@
    "q": "Ai xác định giá trị tài sản ròng trên một đơn vị quỹ đại chúng?",
    "options": [
     "Công ty quản lý quỹ, được ngân hàng giám sát xác nhận",
-    "Ủy ban Chứng khoán Nhà nước và các cơ quan liên quan",
+    "Ủy ban Chứng khoán Nhà nước và các cơ quan quản lý liên quan",
     "Sở giao dịch chứng khoán và công ty quản lý quỹ thành viên",
     "Đại hội nhà đầu tư của quỹ đại chúng và công ty quản lý"
    ],
@@ -47,9 +47,9 @@
    "q": "Chứng khoán niêm yết trong danh mục quỹ được định giá theo nguyên tắc nào?",
    "options": [
     "Giá đóng cửa hoặc giá trung bình của ngày giao dịch gần nhất trước ngày định giá",
-    "Giá mua ban đầu của chứng khoán trong danh mục quỹ đầu tư và không thay đổi khác",
-    "Giá do công ty quản lý quỹ tự đặt theo ý muốn của nhà đầu tư lớn trong quỹ cụ thể",
-    "Mệnh giá của chứng khoán đã phát hành lần đầu và không thay đổi theo thị trường"
+    "Giá mua ban đầu của chứng khoán trong danh mục quỹ đầu tư và không điều chỉnh sau đó",
+    "Giá do công ty quản lý quỹ tự đặt theo ý muốn của nhà đầu tư lớn trong quỹ",
+    "Mệnh giá của chứng khoán đã phát hành lần đầu và không thay đổi theo thị trường chung"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 2 Điều 106.",

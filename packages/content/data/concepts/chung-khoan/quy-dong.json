@@ -28,9 +28,9 @@
    "q": "Theo khoản 40 Điều 4, quỹ đóng khác quỹ mở ở điểm nào?",
    "options": [
     "Chứng chỉ quỹ không được mua lại theo yêu cầu của nhà đầu tư",
-    "Không chào bán ra công chúng và chỉ bán cho nhà đầu tư đã biết",
-    "Chỉ có nhà đầu tư chuyên nghiệp và tổ chức tài chính lớn nào",
-    "Không có công ty quản lý quỹ và do nhà đầu tư tự quản lý nào"
+    "Không chào bán ra công chúng, chỉ bán cho nhà đầu tư đã biết",
+    "Dành cho nhà đầu tư chuyên nghiệp và tổ chức tài chính lớn",
+    "Không có công ty quản lý quỹ mà do nhà đầu tư tự quản lý"
    ],
    "answer": 0,
    "explain": "Khoản 40 Điều 4.",
@@ -45,9 +45,9 @@
    "q": "Chứng chỉ quỹ đóng phát hành thêm được phát hành cho ai trước?",
    "options": [
     "Nhà đầu tư hiện hữu, thông qua quyền mua được chuyển nhượng",
-    "Nhà đầu tư nước ngoài và tổ chức tài chính nước ngoài cụ thể",
-    "Công ty quản lý quỹ và ngân hàng giám sát của quỹ hiện hành",
-    "Ngân hàng giám sát và các tổ chức tài chính theo quy định"
+    "Nhà đầu tư nước ngoài và tổ chức tài chính nước ngoài",
+    "Công ty quản lý quỹ và ngân hàng giám sát của quỹ đóng",
+    "Ngân hàng giám sát và các tổ chức tài chính trong ngành"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 112; nhà đầu tư hiện hữu không mua hết thì phát hành cho nhà đầu tư bên ngoài.",
@@ -98,7 +98,7 @@
    "options": [
     "Không, vì lợi nhuận năm liền trước phải là số dương",
     "Có, nếu Đại hội nhà đầu tư thông qua nghị quyết hợp lệ",
-    "Có, vì tăng vốn giúp quỹ phục hồi lợi nhuận cụ thể",
+    "Có, vì tăng vốn sẽ giúp quỹ phục hồi lợi nhuận",
     "Có, nếu công ty quản lý quỹ bảo lãnh cho đợt tăng vốn"
    ],
    "answer": 0,

@@ -28,8 +28,8 @@
    "q": "Người hành nghề chứng khoán được mở tài khoản giao dịch ở công ty chứng khoán khác nơi mình làm việc khi nào?",
    "options": [
     "Khi công ty nơi mình làm việc không có nghiệp vụ môi giới chứng khoán",
-    "Khi số dư dưới 100 triệu đồng và được công ty chấp thuận bằng văn bản",
-    "Khi được người thân đứng tên và có giấy ủy quyền hợp lệ của họ cụ thể",
+    "Khi số dư dưới 100 triệu đồng và được công ty chấp thuận bằng văn bản trước",
+    "Khi được người thân đứng tên và có giấy ủy quyền hợp lệ của họ",
     "Không bao giờ được mở tài khoản ở nơi nào khác kể cả khi được chấp thuận"
    ],
    "answer": 0,
@@ -46,8 +46,8 @@
    "options": [
     "Bị thu hồi chứng chỉ và không được cấp lại",
     "Chỉ bị nhắc nhở bằng văn bản và công khai",
-    "Bị đình chỉ hành nghề 01 tháng và phạt tiền",
-    "Không có hậu quả pháp lý nào và không bị xử lý"
+    "Bị đình chỉ hành nghề 1 tháng và phạt tiền",
+    "Bị phạt tiền và buộc nộp lại lợi nhuận"
    ],
    "answer": 0,
    "explain": "Điểm b khoản 3 và khoản 4 Điều 97.",
@@ -101,8 +101,8 @@
    "q": "Môi giới Z làm chính thức ở công ty chứng khoán A, buổi tối nhận làm \"cộng tác viên môi giới\" cho công ty chứng khoán B. Nhận định nào đúng?",
    "options": [
     "Vi phạm điểm a khoản 2 Điều 98, có thể bị thu hồi chứng chỉ vĩnh viễn",
-    "Hợp pháp vì ngoài giờ làm việc và không ảnh hưởng đến công việc chính",
-    "Hợp pháp nếu công ty A đồng ý bằng văn bản và thông báo cho khách nào",
+    "Hợp pháp vì làm ngoài giờ làm việc và không ảnh hưởng đến công việc chính",
+    "Hợp pháp nếu công ty A đồng ý bằng văn bản và thông báo cho khách",
     "Hợp pháp nếu không ký hợp đồng lao động với công ty B và chỉ nhận hoa hồng"
    ],
    "answer": 0,

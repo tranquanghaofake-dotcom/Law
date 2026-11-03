@@ -31,9 +31,9 @@
    "q": "Hoạt động bù trừ, xác định nghĩa vụ thanh toán tiền và chứng khoán được thực hiện thông qua chủ thể nào?",
    "options": [
     "Tổng công ty lưu ký và bù trừ chứng khoán Việt Nam hoặc công ty con của Tổng công ty",
-    "Sở giao dịch chứng khoán Việt Nam và các công ty niêm yết trực thuộc sở ngay lập tức",
-    "Từng công ty chứng khoán tự thực hiện bù trừ và thanh toán cho khách hàng trong nước",
-    "Ngân hàng Nhà nước và các ngân hàng thương mại tham gia thanh toán bù trừ tiền cụ thể"
+    "Sở giao dịch chứng khoán Việt Nam cùng các công ty niêm yết và công ty chứng khoán trực thuộc",
+    "Từng công ty chứng khoán tự thực hiện bù trừ và thanh toán cho khách hàng",
+    "Ngân hàng Nhà nước và các ngân hàng thương mại tham gia thanh toán bù trừ tiền"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 63 (sửa đổi bởi Luật 56/2024/QH15).",
@@ -48,7 +48,7 @@
    "q": "Nguyên tắc nào bắt buộc trong thanh toán giao dịch chứng khoán?",
    "options": [
     "Chuyển giao chứng khoán đồng thời với thanh toán tiền",
-    "Trả tiền trước, giao chứng khoán sau 30 ngày làm việc",
+    "Trả tiền trước, giao chứng khoán sau khoảng 30 ngày làm việc",
     "Giao chứng khoán trước, trả tiền sau khi nhận được hóa đơn",
     "Thanh toán bằng tiền mặt tại Sở giao dịch chứng khoán"
    ],

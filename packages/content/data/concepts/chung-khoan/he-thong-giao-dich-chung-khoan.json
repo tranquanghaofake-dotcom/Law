@@ -27,9 +27,9 @@
    "q": "Hệ thống giao dịch chứng khoán gồm những hệ thống nào?",
    "options": [
     "Hệ thống cho chứng khoán niêm yết và hệ thống cho chứng khoán chưa niêm yết",
-    "Chỉ hệ thống cho chứng khoán niêm yết trên sàn giao dịch chính thức cụ thể",
-    "Hệ thống của từng công ty chứng khoán tự xây dựng và vận hành riêng cụ thể",
-    "Hệ thống lưu ký và hệ thống thanh toán bù trừ tiền của ngân hàng trong nước"
+    "Chỉ hệ thống cho chứng khoán niêm yết trên sàn giao dịch chính thức của Sở giao dịch",
+    "Hệ thống của từng công ty chứng khoán tự xây dựng và vận hành riêng biệt",
+    "Hệ thống lưu ký và hệ thống thanh toán bù trừ tiền của ngân hàng"
    ],
    "answer": 0,
    "explain": "Khoản 26 Điều 4.",

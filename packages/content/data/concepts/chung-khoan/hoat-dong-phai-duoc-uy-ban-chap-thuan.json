@@ -45,9 +45,9 @@
    "q": "Hoạt động nào phải được Ủy ban chấp thuận trước theo Điều 87?",
    "options": [
     "Thành lập, đóng cửa phòng giao dịch",
-    "Tuyển thêm nhân viên môi giới mới đó",
+    "Tuyển thêm nhân viên môi giới mới",
     "Tăng phí giao dịch dịch vụ môi giới",
-    "Ký hợp đồng với khách hàng mới khác"
+    "Ký hợp đồng với khách hàng mới"
    ],
    "answer": 0,
    "explain": "Điểm d khoản 1 Điều 87.",

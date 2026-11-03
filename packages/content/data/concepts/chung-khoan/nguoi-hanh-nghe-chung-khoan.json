@@ -28,9 +28,9 @@
    "q": "Người hành nghề chứng khoán phải đáp ứng điều kiện gì theo khoản 47 Điều 4?",
    "options": [
     "Được Ủy ban cấp chứng chỉ hành nghề và làm việc tại công ty chứng khoán, công ty quản lý quỹ, chi nhánh nước ngoài hoặc công ty đầu tư chứng khoán",
-    "Chỉ cần có tài khoản chứng khoán và đã từng tham gia giao dịch trên sàn nhiều năm liên tục, không có tiền án, tiền sự theo quy định",
-    "Chỉ cần có bằng đại học kinh tế và đã làm việc tại công ty tài chính nhiều năm liên tục và có chứng nhận cá nhân về đạo đức nghề nghiệp trong nước",
-    "Chỉ cần làm việc tại ngân hàng thương mại và có thâm niên làm việc trong lĩnh vực tài chính nhiều năm liên tục và đã qua đào tạo nghề ngay lập tức"
+    "Chỉ cần có tài khoản chứng khoán và đã từng tham gia giao dịch trên sàn nhiều năm liên tục, không có tiền án, tiền sự, đã tập huấn quy chế giao dịch",
+    "Có bằng đại học kinh tế và đã làm việc tại công ty tài chính nhiều năm liên tục, kèm chứng nhận cá nhân về đạo đức nghề nghiệp",
+    "Làm việc tại ngân hàng thương mại, có thâm niên trong lĩnh vực tài chính nhiều năm liên tục và đã qua khóa đào tạo nghề do ngân hàng tổ chức theo chương trình riêng"
    ],
    "answer": 0,
    "explain": "Khoản 47 Điều 4.",
@@ -46,7 +46,7 @@
    "options": [
     "Đại diện cho công ty nơi mình làm việc",
     "Cá nhân độc lập hành nghề chứng khoán",
-    "Đại diện cho Ủy ban Chứng khoán Nhà nước",
+    "Đại diện Ủy ban Chứng khoán Nhà nước",
     "Đại diện cho Sở giao dịch chứng khoán"
    ],
    "answer": 0,

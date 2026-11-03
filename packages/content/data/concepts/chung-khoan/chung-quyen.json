@@ -28,9 +28,9 @@
    "q": "Theo khoản 5 Điều 4, chứng quyền được phát hành cùng với việc phát hành loại chứng khoán nào?",
    "options": [
     "Trái phiếu hoặc cổ phiếu ưu đãi",
-    "Chứng chỉ quỹ đầu tư chứng khoán",
+    "Chứng chỉ quỹ đầu tư đại chúng",
     "Cổ phiếu phổ thông của công ty",
-    "Hợp đồng tương lai tiêu chuẩn đó"
+    "Hợp đồng tương lai tiêu chuẩn"
    ],
    "answer": 0,
    "explain": "Chứng quyền \"được phát hành cùng với việc phát hành trái phiếu hoặc cổ phiếu ưu đãi\".",

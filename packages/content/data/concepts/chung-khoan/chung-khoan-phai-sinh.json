@@ -28,7 +28,7 @@
    "q": "Theo khoản 9 Điều 4, chứng khoán phái sinh là gì?",
    "options": [
     "Công cụ tài chính dưới dạng hợp đồng",
-    "Giấy tờ xác nhận phần vốn cổ phần đó",
+    "Giấy tờ xác nhận phần vốn cổ phần",
     "Giấy tờ xác nhận phần nợ của doanh nghiệp",
     "Phần vốn góp của quỹ đầu tư chứng khoán"
    ],
@@ -99,7 +99,7 @@
     "Hợp đồng kỳ hạn (giao dịch thỏa thuận)",
     "Hợp đồng tương lai (niêm yết) trên sàn",
     "Chứng chỉ quỹ đầu tư đại chúng và cổ phiếu",
-    "Quyền mua cổ phần phát hành thêm cụ thể"
+    "Quyền mua cổ phần được phát hành thêm"
    ],
    "answer": 0,
    "explain": "Cam kết mua/bán tài sản cơ sở theo giá xác định vào ngày xác định trong tương lai, giao dịch thỏa thuận → hợp đồng kỳ hạn (khoản 13). Hợp đồng tương lai là loại niêm yết (khoản 12).",
