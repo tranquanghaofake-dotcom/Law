@@ -72,6 +72,16 @@
     {
      "text": "Cá nhân mua 100 cổ phiếu, sở hữu 0,001%",
      "answer": "right"
+    },
+    {
+     "text": "Công ty chứng khoán được cấp phép kinh doanh môi giới chứng khoán",
+     "answer": "left",
+     "basis": "Điểm d khoản 1 Điều 118 Luật Chứng khoán 2019"
+    },
+    {
+     "text": "Công ty TNHH hai thành viên không đại chúng, không phát hành trái phiếu ra công chúng",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 118 Luật Chứng khoán 2019 (không thuộc các điểm a–c)"
     }
    ],
    "explain": "Khoản 1 Điều 118."

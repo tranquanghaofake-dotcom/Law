@@ -72,6 +72,16 @@
     {
      "text": "Hình thành một công ty mới, các công ty cũ chấm dứt",
      "answer": "right"
+    },
+    {
+     "text": "Công ty X chuyển toàn bộ tài sản cho công ty Y, công ty X chấm dứt tồn tại",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 201 Luật Doanh nghiệp 2020"
+    },
+    {
+     "text": "Hai công ty chuyển tài sản để thành lập công ty mới, cả hai không còn tồn tại",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 200 Luật Doanh nghiệp 2020"
     }
    ],
    "explain": "Điều 200, 201 Luật Doanh nghiệp."

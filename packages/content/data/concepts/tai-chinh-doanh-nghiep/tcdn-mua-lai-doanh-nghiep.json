@@ -72,6 +72,16 @@
     {
      "text": "Mua 0,1% cổ phiếu để hưởng cổ tức",
      "answer": "right"
+    },
+    {
+     "text": "Doanh nghiệp mua phần lớn vốn góp của công ty khác để kiểm soát quyết định của công ty đó",
+     "answer": "left",
+     "basis": "Khoản 4 Điều 29 Luật Cạnh tranh 2018"
+    },
+    {
+     "text": "Doanh nghiệp mua cổ phiếu nhỏ của công ty niêm yết để đầu tư tài chính, không kiểm soát",
+     "answer": "right",
+     "basis": "Khoản 4 Điều 29 Luật Cạnh tranh 2018 (không đủ kiểm soát, chi phối)"
     }
    ],
    "explain": "Khoản 4 Điều 29."

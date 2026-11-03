@@ -72,6 +72,16 @@
     {
      "text": "Còn nợ thuế quá hạn",
      "answer": "right"
+    },
+    {
+     "text": "Công ty cổ phần trả cổ tức cho cổ phần phổ thông từ lợi nhuận ròng đã thực hiện, đã bù lỗ trước đó",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 135 Luật Doanh nghiệp 2020"
+    },
+    {
+     "text": "Công ty cổ phần trả cổ tức cho cổ phần phổ thông dù chưa bù đắp khoản lỗ năm trước",
+     "answer": "right",
+     "basis": "Điểm b khoản 2 Điều 135 Luật Doanh nghiệp 2020"
     }
    ],
    "explain": "Khoản 2 Điều 135."

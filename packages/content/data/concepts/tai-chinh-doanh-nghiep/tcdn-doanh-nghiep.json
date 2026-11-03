@@ -71,6 +71,16 @@
     {
      "text": "Chia lợi nhuận cho thành viên công ty",
      "answer": "right"
+    },
+    {
+     "text": "Doanh nghiệp kê khai và nộp thuế giá trị gia tăng cho cơ quan thuế",
+     "answer": "left",
+     "basis": "Khoản 10 Điều 4 Luật Doanh nghiệp 2020 (quan hệ với Nhà nước)"
+    },
+    {
+     "text": "Cổ đông nhận cổ tức từ lợi nhuận sau thuế của công ty cổ phần",
+     "answer": "right",
+     "basis": "Khoản 5 Điều 4 Luật Doanh nghiệp 2020 (quan hệ với chủ sở hữu)"
     }
    ],
    "explain": "Học thuyết pháp luật tài chính doanh nghiệp."
