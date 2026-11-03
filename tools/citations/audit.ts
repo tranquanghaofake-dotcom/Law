@@ -260,7 +260,7 @@ export function audit(dataDir: string): Flag[] {
           if (!inClause) missing ||= `điểm ${p}`;
         }
         if (missing) {
-          push({ loai: 'khoan-diem-khong-ton-tai', trich_dan: c.raw, van_ban: law.file, doan_luat: cut(`Điều ${a.num}. ${a.title}\n${a.text}`), goi_y: `Điều ${a.num} không có ${missing} (có ${a.clauses.size} khoản${a.points.size ? `, ${a.points.size} điểm trực tiếp` : ''}).`, ly_do: lyDo(c) }, `${law.file}#${c.article}#${missing}`);
+          push({ loai: 'khoan-diem-khong-ton-tai', lich_su: c.history, trich_dan: c.raw, van_ban: law.file, doan_luat: cut(`Điều ${a.num}. ${a.title}\n${a.text}`), goi_y: `Điều ${a.num} không có ${missing} (có ${a.clauses.size} khoản${a.points.size ? `, ${a.points.size} điểm trực tiếp` : ''}).`, ly_do: lyDo(c) }, `${law.file}#${c.article}#${missing}`);
           continue;
         }
         resolvedArticles.push({ file: law.file, a, c });

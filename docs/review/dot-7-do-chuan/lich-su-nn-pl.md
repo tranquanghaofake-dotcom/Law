@@ -91,3 +91,9 @@
 - `hngd-1959-ket-hon-ly-hon` (concept) — báo nhầm: dẫn chiếu Luật HNGĐ 2014 có chủ ý (so sánh với hiện hành), không phải trích dẫn của văn bản trong kho.
 - `sac-lenh-13-toa-an#5` (truefalse) — báo nhầm: cờ gán Điều 103 Hiến pháp 2013 (nội dung hội thẩm); cần kiểm lại nội dung khác đã trích.
 - `chinh-quyen-do-ho-quan-huyen` (concept, cờ "cấp huyện") — thuộc opus, bối cảnh lịch sử.
+
+## Opus — trọng tài ⚠ opus (03/11/2026)
+
+| id | câu/tình huống | trước → sau | căn cứ | ghi chú |
+|---|---|---|---|---|
+| cam-mua-ban-dat-1987, chuoc-toi-thap-ac và các tình huống căn cứ giáo trình (⚠ haiku-3) | Luật Đất đai 1993, chiếu 1042, giáo trình chương 6–7 | không sửa | ngoài kho | ⚠ Hào: duyệt theo giáo trình |

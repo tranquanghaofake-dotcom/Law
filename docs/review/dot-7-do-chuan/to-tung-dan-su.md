@@ -47,3 +47,10 @@
 - `thoi-hieu-khoi-kien-ttds` (plain) — sửa: "điểm e khoản 1 Điều 217" thêm tên văn bản Bộ luật Tố tụng dân sự 2015 (đã đối chiếu, điểm e có thật).
 - `thoi-hieu-khoi-kien-ttds#6` (recall) — báo nhầm: công cụ đối chiếu với BLDS; trích dẫn là Điều 184 BLTTDS 2015 (đúng).
 - `tham-quyen-theo-cap`, cờ thuật ngữ cũ (TAND cấp huyện/cấp cao) — để opus xử lý theo HUONG-DAN.
+
+## Opus — trọng tài ⚠ opus (03/11/2026)
+
+| id | câu/tình huống | trước → sau | căn cứ | ghi chú |
+|---|---|---|---|---|
+| hoa-giai-trong-to-tung-dan-su#2 | "Vụ án giải quyết theo thủ tục rút gọn" (Không hòa giải) | → "Vụ án giải quyết theo thủ tục rút gọn, trong thời hạn chuẩn bị xét xử" + basis khoản 1 Điều 205 | khoản 1 Điều 205; khoản 3 Điều 320 BLTTDS: phiên tòa rút gọn Thẩm phán vẫn hòa giải | Tình huống cũ dễ hiểu thành "rút gọn thì không bao giờ hòa giải" |
+| hoa-giai-trong-to-tung-dan-su#6 (recall) | mẫu trả lời | thêm "(vụ án rút gọn vẫn được Thẩm phán hòa giải tại phiên tòa — khoản 3 Điều 320)" | như trên | |

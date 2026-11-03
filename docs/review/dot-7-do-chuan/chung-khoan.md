@@ -167,3 +167,9 @@ Tổng: 105 tình huống mới; 73 khái niệm đạt ≥ 4 tình huống.
 | quan-ly-nha-nuoc-chung-khoan (cloze, bank_extra) | Từ nhiễu | "Bộ Kế hoạch và Đầu tư" → "Bộ Công Thương" | NQ 176/2025/QH15 (Bộ KH&ĐT nhập Bộ Tài chính) | |
 | doc-quyen-to-chuc-thi-truong-giao-dich (cloze, bank_extra) | Từ nhiễu | "Bộ Kế hoạch và Đầu tư" → "Bộ Công Thương" | như trên | |
 | thanh-tra-chung-khoan (note mới) | Định nghĩa nguyên văn khoản 3 Điều 129: "hướng dẫn về nghiệp vụ của Thanh tra Bộ Tài chính" | thêm note về Luật Thanh tra 84/2025/QH15 (Điều 7, hiệu lực 01/7/2025) | Luật Thanh tra 84/2025/QH15 | ⚠ Hào: cần văn bản Chính phủ về tổ chức thanh tra chứng khoán hiện nay; định nghĩa giữ nguyên văn VBHN 102/2026 |
+
+## Opus — trọng tài ⚠ opus (03/11/2026)
+
+| id | câu/tình huống | trước → sau | căn cứ | ghi chú |
+|---|---|---|---|---|
+| an-toan-tai-chinh-cong-ty-chung-khoan#2 | 2 tình huống mới | basis "Khoản 3 Điều 92" → "Khoản 2 Điều 92"; "Mục 3 Chương Luật…" → "Mục 3 Chương VI Luật…" | Điều 92 chỉ có 2 khoản (đoạn cảnh báo, kiểm soát thuộc khoản 2); Mục 3 thuộc Chương VI | |

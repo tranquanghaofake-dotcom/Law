@@ -110,8 +110,11 @@ describe('chặn tái phạm trên toàn kho', () => {
     expect(Object.keys(DIEU_EXCEPTIONS).filter((k) => !open.includes(k)), 'ngoại lệ đã xử lý xong — xoá khỏi danh sách').toEqual([]);
   });
 
-  it('khoản/điểm không tồn tại không tăng (đo lúc đặt: 12)', () => {
-    expect(flags.filter((f) => f.loai === 'khoan-diem-khong-ton-tai').length).toBeLessThanOrEqual(12);
+  // Lúc đặt: 12; sau khi xử lý còn 2 (nguyen-tac-bau-cu: công cụ gán nhầm Hiến pháp cho "khoản 3 Điều 69" Luật Bầu cử;
+  // thue-thu-nhap-doanh-nghiep: khoản 14a Điều 4 do Luật 09/2026/QH16 bổ sung, file luật trong kho chưa cập nhật).
+  it('khoản/điểm không tồn tại (không tính chỗ nói về khoản đã bãi bỏ) ≤ 2', () => {
+    const open = flags.filter((f) => f.loai === 'khoan-diem-khong-ton-tai' && !f.lich_su);
+    expect(open.length, open.map(key).join('\n')).toBeLessThanOrEqual(2);
   });
 
   it('không còn thuật ngữ cũ dùng như hiện hành (không có dấu hiệu lịch sử, không có note) — đo sau khi sửa: 0', () => {

@@ -94,3 +94,12 @@ Tổng: 56 tình huống mới; 27 khái niệm đạt ≥ 4 tình huống.
 | `nguyen-tac-quan-ly-hanh-chinh` | Tập trung dân chủ trong tổ chức bộ máy quản lý hành chính nhà nước | Nhóm chính trị – xã hội (trái) | Slide bài giảng Luật Hành chính Việt Nam, Trường Đại học Luật Hà Nội, vấn đề 4 (⚠ chưa đối chiếu nguyên văn) |
 | `nguyen-tac-quan-ly-hanh-chinh` | Tổ chức khoa học, thống nhất quy trình kỹ thuật của bộ máy quản lý hành chính | Nhóm tổ chức – kỹ thuật (phải) | Slide bài giảng Luật Hành chính Việt Nam, Trường Đại học Luật Hà Nội, vấn đề 4 (⚠ chưa đối chiếu nguyên văn) |
 | `phuong-phap-quan-ly-hanh-chinh` | Thuyết phục, giáo dục đối tượng quản lý để tự giác thực hiện pháp luật | Phương pháp quản lý (phải) | Slide bài giảng Luật Hành chính Việt Nam, Trường Đại học Luật Hà Nội, vấn đề 5 (⚠ chưa đối chiếu nguyên văn) |
+
+## Opus — trọng tài ⚠ opus (03/11/2026)
+
+| id | câu/tình huống | trước → sau | căn cứ | ghi chú |
+|---|---|---|---|---|
+| thu-tuc-hanh-chinh (⚠ haiku-2) | khoản 1 Điều 3 NĐ 63/2010/NĐ-CP | không sửa định nghĩa | Tra (thuvienphapluat, luatvietnam): định nghĩa khoản 1 Điều 3 không đổi | Đã kiểm |
+| thu-tuc-hanh-chinh (plain) | "Nguyên tắc quy định thủ tục hành chính (Điều 7)" | thêm "từ 2025 các khoản 1–5 Điều 7 được thay bằng khoản 1–3 Điều 5 Nghị định 78/2025/NĐ-CP, chưa đối chiếu nguyên văn" | luatvietnam.vn (ghi chú hiệu lực NĐ 63/2010) | ⚠ Hào: đối chiếu NĐ 78/2025 |
+| hinh-thuc-xu-phat#2 | "Tước quyền sử dụng giấy phép lái xe có thời hạn" | basis "Điểm c khoản 2 Điều 21" → "Điểm c khoản 1, khoản 2 Điều 21" | Điều 21 XLVPHC: khoản 2 không có điểm; hình thức nằm ở điểm c khoản 1 | |
+| he-thong-nsnn (⚠ haiku-2) | pair "Có ngân sách cấp huyện" ↔ Luật NSNN 2015 | không sửa | so sánh có chủ đích với Luật NSNN 89/2025/QH15 | Công cụ nay nhận ra ngữ cảnh so sánh |

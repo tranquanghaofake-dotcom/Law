@@ -54,3 +54,10 @@
 - `xd-nghi-quyet-hdnd-tinh` (concept) — báo nhầm: cờ "ngoài kho" đọc sai tên "Luật Giáo dục giao"; Điều 21 Luật BHVBQPPL là căn cứ đúng.
 - ⚠ opus: `xd-thu-tuc-rut-gon` — nội dung có 6 trường hợp nhưng Điều 50 khoản 1 có 5 điểm (a–e); cần rà lại danh sách.
 - Cờ "cấp huyện" (xd-he-thong-vbqppl, xd-nghi-quyet-hdnd-tinh, xd-quy-trinh...) — thuộc opus (thuật ngữ cũ), không sửa.
+
+## Opus — trọng tài ⚠ opus (03/11/2026)
+
+| id | câu/tình huống | trước → sau | căn cứ | ghi chú |
+|---|---|---|---|---|
+| xd-thu-tuc-rut-gon (⚠ haiku-3) | "Sáu trường hợp (điểm a–e khoản 1 Điều 50)" | không sửa | khoản 1 Điều 50 có 6 điểm a, b, c, d, đ, e | Báo nhầm: có điểm đ |
+| xd-tham-tra#2 | "Sở Tư pháp thẩm định dự thảo quyết định của UBND cấp tỉnh" | basis "Điều 34 … áp dụng tương ứng" → "Điều 45 … (trình tự, thủ tục ở địa phương do Chính phủ quy định; ⚠ chưa đối chiếu nghị định)" | Điều 34 chỉ về dự án luật do Chính phủ trình; Điều 45 giao Chính phủ quy định thủ tục ở địa phương | ⚠ Hào: cần nghị định hướng dẫn để dẫn điều cụ thể |

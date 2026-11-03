@@ -62,3 +62,11 @@ Cờ của môn: 8.
 
 **⚠ opus**
 - `sets/dat-coc` #4 và #9 (vế "Điều 37 Nghị định 21/2021/NĐ-CP"): văn bản ngoài kho, chưa kiểm được trên vbpl.vn. Câu #4 (khoản tiền không xác định là đặt cọc hay trả trước thì là tiền trả trước) cần kiểm nguồn trước khi giữ.
+
+## Opus — trọng tài ⚠ opus (03/11/2026)
+
+| id | câu/tình huống | trước → sau | căn cứ | ghi chú |
+|---|---|---|---|---|
+| chiem-huu#2 | 2 tình huống ngay tình / không ngay tình | basis "Khoản 1 Điều 180" → "Điều 180"; "Khoản 2 Điều 180" → "Điều 181" | Điều 180 (chiếm hữu ngay tình, không chia khoản), Điều 181 (không ngay tình) BLDS 2015 | Nguồn khái niệm "khoản 1, 2 Điều 179" là đúng (định nghĩa chiếm hữu) |
+| tai-san (⚠ haiku-1) | "tài sản hình thành trong tương lai" | không sửa | Định nghĩa: Điều 105; tình huống: khoản 2 Điều 108 BLDS | Báo nhầm: hai điều cùng đúng ở hai chỗ |
+| sets/dat-coc#4, #9 | Điều 37 Nghị định 21/2021/NĐ-CP | không sửa | Tra (thuvienphapluat, caselaw.vn): Điều 37 NĐ 21/2021 "không xác định rõ là tiền đặt cọc hoặc tiền trả trước thì … coi là tiền trả trước" | Đã kiểm, đúng |

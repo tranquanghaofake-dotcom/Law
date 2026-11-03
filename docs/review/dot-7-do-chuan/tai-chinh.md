@@ -58,3 +58,9 @@ Tổng: 38 tình huống mới; 17 khái niệm đạt ≥ 4 tình huống.
 |---|---|---|---|
 | `he-thong-nsnn` | Ngân sách nhà nước gồm ngân sách trung ương và ngân sách địa phương | Luật NSNN 2025 (phải) | Khoản 1 Điều 6 Luật Ngân sách nhà nước 2025 |
 | `he-thong-nsnn` | Ngân sách cấp huyện có dự toán riêng do Hội đồng nhân dân huyện quyết định (⚠ quy định cũ, Luật NSNN 2015 chưa có trong laws/) | Luật NSNN 2015 (trái) | Luật Ngân sách nhà nước 2015 (⚠ cần đối chiếu) |
+
+## Opus — trọng tài ⚠ opus (03/11/2026)
+
+| id | câu/tình huống | trước → sau | căn cứ | ghi chú |
+|---|---|---|---|---|
+| thue-thu-nhap-doanh-nghiep (⚠ haiku-2) | khoản 14a Điều 4 (Luật 09/2026/QH16) | không sửa | note khái niệm đã nêu VBHN 113/VBHN-VPQH 2026 | ⚠ Hào: thay `laws/ltndn-2025.txt` bằng VBHN 113/2026 để test thấy khoản 14a |

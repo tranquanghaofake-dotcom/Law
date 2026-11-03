@@ -37,3 +37,9 @@
 ## Kiểm dò trích dẫn (haiku-3)
 
 - `dieu-kien-huong-luong-huu#6` — khoan-diem-khong-ton-tai — báo nhầm: công cụ gán "Điều 64" cho BLLĐ; Điều 64 Luật BHXH 2024 có điểm a khoản 1.
+
+## Opus — trọng tài ⚠ opus (03/11/2026)
+
+| id | câu/tình huống | trước → sau | căn cứ | ghi chú |
+|---|---|---|---|---|
+| dieu-kien-huong-luong-huu#6 | mẫu "(điểm a khoản 1 Điều 64)" | → "(điểm a khoản 1 Điều 64 Luật BHXH 2024)" | Điều 64 Luật BHXH 41/2024/QH15 | Câu cùng nhắc Điều 169 BLLĐ nên dễ hiểu nhầm văn bản |

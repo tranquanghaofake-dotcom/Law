@@ -233,3 +233,11 @@ Cờ của môn: 23 (kiểm từng cờ theo điều luật trong `laws/`).
 | don-vi-hanh-chinh-hai-cap, dang-cong-san-lanh-dao, … | Các câu nói "cấp huyện kết thúc hoạt động từ 01/7/2025", câu Sai "vẫn có cấp huyện" | không sửa | NQ 203/2025/QH15; Luật 72/2025/QH15 | Đúng: mô tả lịch sử/câu Sai cố ý |
 | chat-van-hoi-dong-nhan-dan#2 (tình huống mới của haiku-1) | "Đại biểu Hội đồng nhân dân chất vấn Chủ tịch Ủy ban nhân dân cấp huyện" (trái) | → "Đại biểu Hội đồng nhân dân xã chất vấn Chủ tịch Ủy ban nhân dân xã" | khoản 2 Điều 115 Hiến pháp; Luật 72/2025/QH15 | Test `citations` bắt (thuật ngữ cũ dùng như hiện hành) |
 | thu-tuong-dinh-chi-van-ban#2 (tình huống mới của haiku-1) | "Quyết định trái luật của Ủy ban nhân dân cấp huyện bị Thủ tướng đình chỉ hoặc bãi bỏ" (phải: "chỉ được đình chỉ") | → "Nghị quyết của Hội đồng nhân dân thành phố trực thuộc trung ương trái văn bản của cơ quan nhà nước cấp trên" (phải) | khoản 4 Điều 98 Hiến pháp: Thủ tướng chỉ đình chỉ nghị quyết HĐND cấp tỉnh, đề nghị UBTVQH bãi bỏ; văn bản UBND cấp huyện không thuộc khoản 4 | Tình huống cũ sai cả chế định lẫn đáp án |
+
+## Opus — trọng tài ⚠ opus (03/11/2026)
+
+| id | câu/tình huống | trước → sau | căn cứ | ghi chú |
+|---|---|---|---|---|
+| danh-sach-cu-tri (⚠ haiku-1) | "Người đang bị tạm giữ" được ghi tên | không sửa | khoản 1 Điều 30 Luật Bầu cử không loại trừ; Điều 29 quy định người bị tạm giam, tạm giữ ghi tên nơi tạm giữ | Báo nhầm (bản chữ ngắt dòng) |
+| tro-lai-quoc-tich (⚠ haiku-1) | "Phải lấy lại tên gọi Việt Nam trước đây" | không sửa | khoản 4 Điều 23 Luật Quốc tịch | Báo nhầm (bản chữ ngắt dòng) |
+| binh-dang-truoc-phap-luat, tu-do-kinh-doanh, don-vi-hanh-chinh-hai-cap (⚠ haiku-1) | vế Hiến pháp 1992 / Luật Công ty 1990 / Hiến pháp 2013 bản gốc | không sửa | ngoài bản trích trong kho | ⚠ Hào: cần bổ sung trích đoạn vào `hien-phap-lich-su.txt`, `lich-su-su-lieu.txt` nếu muốn test được |

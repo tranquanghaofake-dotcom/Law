@@ -10,7 +10,7 @@ export type LawDoc = { file: string; articles: Map<string, Article> };
 const ARTICLE_RE = /^\s*[#*>\s]*Điều\s+(?:thứ\s+)?(\d+[a-zđ]?)\s*(?:[.:](.*)|\**\s*$)/u;
 // "1. …", "1.Cá nhân…" (thiếu dấu cách), "1\. …" (markdown). Sau dấu chấm phải là chữ (tránh "1.000 đồng").
 // Dòng chỉ có "4." (bản chữ ngắt dòng, nội dung ở dòng sau) cũng là đầu khoản.
-const CLAUSE_RE = /^\s*[*]*(\d+[a-zđ]?)\s*\\?\.\s*(\p{L}.*|)$/u;
+const CLAUSE_RE = /^\s*[*]*(\d+[a-zđ]?)\s*\\?\.\s*(\p{L}.*|\(.*|)$/u;
 const POINT_RE = /^\s*[*]*([a-zđ]\d?)\s*\\?\)\s*(\S.*)$/u;
 
 export function parseLaw(file: string, text: string): LawDoc {
