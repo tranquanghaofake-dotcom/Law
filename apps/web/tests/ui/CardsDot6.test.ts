@@ -139,13 +139,7 @@ describe('SessionBar / mốc / XP nguồn', () => {
     expect(container.querySelector('.combo.t3')).toBeTruthy();
   });
   it('xpSources chia câu đúng / combo / câu vàng / sửa sai / thưởng', () => {
-    const s = xpSources([
-      { gained: 10, correct: true, combo: 0, golden: false, retry: false },
-      { gained: 15, correct: true, combo: 5, golden: false, retry: false },
-      { gained: 20, correct: true, combo: 0, golden: true, retry: false },
-      { gained: 0, correct: false, combo: 3, golden: false, retry: false },
-      { gained: 5, correct: true, combo: 0, golden: false, retry: true },
-    ], { session: 20, lesson: 0 });
+    const s = xpSources({ base: 30, combo: 5, golden: 10, retry: 5 }, { session: 20, lesson: 0 });
     expect(Object.fromEntries(s.map((x) => [x.key, x.xp]))).toEqual({ base: 30, combo: 5, golden: 10, retry: 5, session: 20 });
   });
 });

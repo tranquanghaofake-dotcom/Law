@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { Concept, Level } from '$lib/content/types';
   import { clozeModeFor, type Step } from '$lib/engine/session';
-  import { answer as runAnswer, createRunner, mistakes, next as runNext, summary, type RunnerState } from '$lib/engine/runner';
+  import { answer as runAnswer, createRunner, isLast, mistakes, next as runNext, summary, type RunnerState } from '$lib/engine/runner';
   import { repo } from '$lib/store/progress-repo';
   import { stats } from '$lib/store/stats';
   import { settings } from '$lib/store/settings.svelte';
@@ -29,7 +29,7 @@
   import { feedbackSpeech } from '$lib/ui/session/speech';
   import { barMarks } from '$lib/ui/session/marks';
   import { submitRecord } from '$lib/ui/session/record';
-  import { xpSources, type XpEntry } from '$lib/ui/session/xpSources';
+  import { xpSources } from '$lib/ui/session/xpSources';
   import type { XpFloat } from '$lib/ui/session/combo';
   import FloatXp from '$lib/ui/session/FloatXp.svelte';
   import BossIntro from '$lib/ui/session/BossIntro.svelte';
@@ -51,8 +51,6 @@
   let bossSeen = $state(-1);
   let floats = $state<XpFloat[]>([]);
   let floatId = 0;
-  let maxCombo = 0;
-  const xpLog: XpEntry[] = [];
   let sources = $state<ReturnType<typeof xpSources>>([]);
   let record = $state<ReturnType<typeof submitRecord> | null>(null);
   let lastPoint: { x: number; y: number; t: number } | null = null;
@@ -67,10 +65,16 @@
   // chốt chế độ cloze theo bậc lúc BẮT ĐẦU bước (không đổi khi đang xem phản hồi)
   const clozeMode = $derived.by(() => { const i = run.i; return clozeModeFor((run.results[i] ? run.results[i].levelBefore : run.levels[run.steps[i]?.conceptId]) ?? 0); });
 
-  const marks = $derived(barMarks(run.steps, run.i));
+  // vòng sửa sai được nối vào cuối: thanh tiến độ đếm riêng đoạn đó
+  const inRetry = $derived(run.retryStart !== null && run.i >= run.retryStart);
+  const barTotal = $derived(inRetry ? run.steps.length - run.retryStart! : (run.retryStart ?? run.steps.length));
+  const barDone = $derived(inRetry ? run.i - run.retryStart! : run.i);
+  const marks = $derived(inRetry ? [] : barMarks(run.steps.slice(0, run.retryStart ?? run.steps.length), run.i));
   const showBoss = $derived(step?.meta?.kind === 'boss' && step.item.type !== 'intro' && bossSeen !== run.i);
   const golden = $derived(!!step?.meta?.golden && step.item.type !== 'intro');
   const retry = $derived(step?.meta?.kind === 'retry');
+  // câu đoán khái niệm từ định nghĩa/ví dụ: không tô khái niệm đang hỏi (lộ đáp án)
+  const hideCurrent = $derived(step?.meta?.gen === 'def-term' || step?.meta?.gen === 'example-concept');
 
   sfx.preload();
   onDestroy(() => tts.stop());
@@ -89,7 +93,6 @@
 
   async function onanswer(r: AnswerResult) {
     const cur = step;
-    const before = run.combo;
     const isRetry = cur.meta?.kind === 'retry';
     const { state, levelUp, sfx: snd, xpGained } = runAnswer(run, r);
     run = state;
@@ -102,8 +105,6 @@
     }
     if (xpGained) await stats.addXp(xpGained);
     const gold = !!cur.meta?.golden;
-    xpLog.push({ gained: xpGained, correct: r.correct, combo: before, golden: gold, retry: isRetry });
-    maxCombo = Math.max(maxCombo, run.combo);
     sfx.play(snd, { combo: run.combo });
     buzz(r.correct ? 'ok' : 'bad');
     if (r.correct) {
@@ -131,9 +132,9 @@
     if (lessonId && (await stats.markLesson(lessonId))) bonus += LESSON_FIRST_BONUS;
     const xpAfter = await stats.addXp(bonus);
     run = { ...run, xp: run.xp + bonus };
-    sources = xpSources(xpLog, { session: SESSION_BONUS, lesson: bonus - SESSION_BONUS });
-    const sm = summary(run) as ReturnType<typeof summary> & { bestCombo?: number };
-    record = submitRecord({ bestCombo: sm.bestCombo ?? maxCombo, correct: sm.correct, total: sm.total });
+    const sm = summary(run);
+    sources = xpSources(sm.xpParts, { session: SESSION_BONUS, lesson: bonus - SESSION_BONUS });
+    record = submitRecord({ bestCombo: sm.bestCombo, correct: sm.correct, total: sm.total });
     const { state: st, event } = applySession(await stats.streak(), new Date());
     await stats.setStreak(st);
     const rankBefore = rankFor(Math.max(0, xpBefore));
@@ -162,10 +163,10 @@
 <div class="session-main">
   <h1 class="sr-only">{title ?? 'Phiên học'}</h1>
   {#if ended}
-    <SessionEnd summary={summary(run)} {sources} {record} retryTotal={run.steps.filter((x) => x.meta?.kind === 'retry').length} {concepts} streak={ended.streak} streakEvent={ended.streakEvent} rankBefore={ended.rankBefore} rankAfter={ended.rankAfter} dueTomorrow={ended.dueTomorrow} promotion={ended.promotion} onhome={() => go('home')} {onagain} {onnext} mistakes={mistakes(run)} />
+    <SessionEnd summary={summary(run)} {sources} {record} retryTotal={summary(run).retried} {concepts} streak={ended.streak} streakEvent={ended.streakEvent} rankBefore={ended.rankBefore} rankAfter={ended.rankAfter} dueTomorrow={ended.dueTomorrow} promotion={ended.promotion} onhome={() => go('home')} {onagain} {onnext} mistakes={mistakes(run)} />
   {:else if step && Card}
-    <SessionBar done={run.i} total={run.steps.length} {title} combo={run.combo} {marks} onexit={() => (confirmExit = true)} />
-    {#if lessonId}<LessonStrip {concepts} levels={run.levels} current={step?.conceptId ?? ''} />{/if}
+    <SessionBar done={barDone} total={barTotal} {title} combo={run.combo} {marks} {inRetry} onexit={() => (confirmExit = true)} />
+    {#if lessonId}<LessonStrip {concepts} levels={run.levels} current={hideCurrent ? '' : (step?.conceptId ?? '')} />{/if}
     {#if confirmExit}
       <div class="card confirm" role="dialog" aria-label="Thoát phiên">
         <p>Thoát, giữ tiến độ? Những câu đã trả lời đã được lưu.</p>
@@ -184,11 +185,11 @@
         {/key}
       </div>
       {#if result}
-        <Feedback {result} item={step.item} {concept} {confusableTerms} onnext={runNextStep} onspeak={speak} last={run.i === run.steps.length - 1} xp={reward.xp} golden={reward.golden} levelTo={reward.levelTo} retry={reward.retry} />
+        <Feedback {result} item={step.item} {concept} {confusableTerms} onnext={runNextStep} onspeak={speak} last={isLast(run)} xp={reward.xp} golden={reward.golden} levelTo={reward.levelTo} retry={reward.retry} />
       {/if}
     {/if}
   {/if}
 </div>
 {#if !ended}
-  <LessonPanel {concepts} levels={run.levels} current={step?.conceptId ?? ''} />
+  <LessonPanel {concepts} levels={run.levels} current={hideCurrent ? '' : (step?.conceptId ?? '')} />
 {/if}

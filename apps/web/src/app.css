@@ -191,6 +191,7 @@ h2 { font-size: var(--fs-xl); line-height: var(--lh-snug); font-weight: 700; mar
 .session-bar .progress .mark.boss { background: var(--seal); width: 6px; height: 20px; }
 .session-bar .progress .mark.retry { background: var(--ok); }
 .session-bar .progress .mark.golden { width: 10px; height: 10px; background: #f2c14e; border-radius: 2px; transform: translate(-50%, -50%) rotate(45deg); box-shadow: 0 0 0 1px color-mix(in srgb, #8a5a00 50%, transparent); }
+.session-bar .progress.retry span { background: var(--ok); }
 .session-bar .progress .mark.passed:not(.golden) { opacity: .45; }
 /* thanh combo: lửa lớn dần theo mức (2 · 5 · 10 câu đúng liên tiếp) */
 .combo { position: relative; display: inline-flex; align-items: center; gap: var(--sp-1); flex: none; padding: 2px var(--sp-2); border-radius: 999px; border: 1px solid var(--line); background: var(--card); color: var(--ink); font-size: var(--fs-sm); animation: pop .35s ease; }

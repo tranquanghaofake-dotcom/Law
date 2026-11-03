@@ -8,8 +8,8 @@
   import { LEVEL_NAMES } from '$lib/game/levels';
   import { answerText, promptText } from './cards/answer';
   import type { XpSource } from './session/xpSources';
-  let { summary, concepts, streak, streakEvent, dueTomorrow, onhome, onagain, onnext, mistakes = [], promotion = null, sources = [], record = null, retryTotal = 0 }: {
-    summary: { correct: number; total: number; xp: number; levelUps: { conceptId: string; to: Level }[]; bestCombo?: number; golden?: number; fixed?: number };
+  let { summary, concepts, streak, streakEvent, dueTomorrow, onhome, onagain, onnext, mistakes = [], promotion = null, sources = [], record = null, retryTotal: retryProp = 0 }: {
+    summary: { correct: number; total: number; xp: number; levelUps: { conceptId: string; to: Level }[]; bestCombo?: number; golden?: number; fixed?: number; retried?: number };
     concepts: Concept[]; streak: number; streakEvent: StreakEvent; rankBefore: RankInfo; rankAfter: RankInfo; dueTomorrow: number;
     onhome: () => void; onagain?: () => void; onnext?: () => void; mistakes?: Step[]; promotion?: string | null;
     /** XP chia theo nguồn */
@@ -19,6 +19,7 @@
     /** số câu bước vào vòng sửa sai (mẫu số của "sửa được x/y") */
     retryTotal?: number;
   } = $props();
+  const retryTotal = $derived(retryProp || summary.retried || 0);
   const term = (id: string) => concepts.find((c) => c.id === id)?.term ?? id;
   const conceptOf = (id: string) => concepts.find((c) => c.id === id);
   const explainOf = (s: Step) => ('explain' in s.item ? s.item.explain : '');
