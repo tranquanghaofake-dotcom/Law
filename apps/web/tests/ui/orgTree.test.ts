@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { BRANCHES, BRANCH_NAMES, POSTS, TIER_NAMES, careerState } from '$lib/game/career';
 import type { Field } from '$lib/game/fields';
 import type { BookLevel } from '$lib/game/books';
-import { orgTree, shortPostTitle } from '$lib/ui/orgTree';
+import { BRANCH_SHORT, orgColumn, orgTree, shortPostTitle } from '$lib/ui/orgTree';
 
 type B = { field: Field; level: BookLevel };
 const many = (field: Field, level: BookLevel, n: number): B[] => Array.from({ length: n }, () => ({ field, level }));
@@ -92,5 +92,55 @@ describe('shortPostTitle — tên chức rút gọn trong ô cây (tên đầy �
   it('giữ nguyên tên không có cơ quan cần viết tắt', () => {
     expect(shortPostTitle('Thư ký Tòa án')).toBe('Thư ký Tòa án');
     expect(shortPostTitle('Chủ tịch nước')).toBe('Chủ tịch nước');
+  });
+});
+
+describe('orgColumn — cột dọc của một nhánh (lãnh đạo ở trên, cơ sở ở dưới)', () => {
+  const col = (books: B[], i = 0) => orgColumn(build(books).branches[i]);
+  const posts = (c: ReturnType<typeof col>) => c.rows.filter((r): r is Extract<typeof r, { kind: 'post' }> => r.kind === 'post');
+  const idx = (c: ReturnType<typeof col>, id: string) => c.rows.findIndex((r) => r.kind === 'post' && r.post.id === id);
+
+  it('thứ tự trên xuống dưới: tầng Lãnh đạo cấp cao đầu tiên, Cơ sở cuối; mỗi tầng một dòng nhãn rồi các chức từ cao xuống thấp', () => {
+    const c = col([]);
+    expect(c.rows[0]).toMatchObject({ kind: 'tier', tier: 'lanh-dao', label: 'Lãnh đạo cấp cao' });
+    expect(c.rows.filter((r) => r.kind === 'tier').map((r) => (r as { tier: string }).tier)).toEqual(['lanh-dao', 'trung-uong', 'tinh', 'co-so']);
+    expect(posts(c).map((r) => r.post.id)).toEqual(POSTS.filter((p) => p.branch === 'hanh-phap').map((p) => p.id).reverse());
+    expect(c.rows.at(-1)).toMatchObject({ kind: 'post', post: { id: 'cong-chuc-xa' } });
+  });
+  it('mọi nhánh: đủ chức, không thêm bớt so với career.ts', () => {
+    BRANCHES.forEach((b, i) => expect(posts(col([], i)).map((r) => r.post.id).sort()).toEqual(POSTS.filter((p) => p.branch === b).map((p) => p.id).sort()));
+  });
+  it('chưa có sách: chức dưới cùng là "kế tiếp", đường từ gốc (start) tới nó đang chạy ("live"), phần trên mờ', () => {
+    const c = col([]);
+    expect(c.start).toBe('live');
+    expect(c.nextId).toBe('cong-chuc-xa');
+    expect(c.rows.slice(0, 2).map((r) => r.rail)).toEqual(['none', 'none']); // nhãn tầng + chức trên cùng: chưa có chức nào phía trên
+    for (const r of c.rows.slice(2)) expect(r.rail).toBe('dim');
+  });
+  it('đã đạt chức đầu: đường từ gốc tới chức đó tô màu; đoạn nối tới chức kế tiếp chạy; phía trên mờ', () => {
+    const c = col([...many('dia-phuong', 1, 1), ...many('hien-phap', 1, 1)]);
+    expect(c.start).toBe('fill');
+    expect(c.nextId).toBe('pho-chu-tich-xa');
+    expect(c.rows[idx(c, 'cong-chuc-xa')].rail).toBe('live');
+    expect(c.rows[idx(c, 'chu-tich-xa')].rail).toBe('dim');
+  });
+  it('đã đạt hai chức đầu: đoạn dưới chức kế tiếp chạy, đoạn dưới chức đã đạt tô màu', () => {
+    const c = col([...many('dia-phuong', 1, 1), ...many('hien-phap', 1, 2), ...many('quyen-cong-dan', 1, 1), ...many('hanh-phap', 1, 2)]);
+    expect(c.done).toBe(2);
+    expect(c.nextId).toBe('chu-tich-xa');
+    expect(c.rows[idx(c, 'chu-tich-xa')].rail).toBe('dim');
+    expect(c.rows[idx(c, 'pho-chu-tich-xa')].rail).toBe('live');
+    expect(c.rows[idx(c, 'cong-chuc-xa')].rail).toBe('fill');
+  });
+  it('dòng nhãn tầng mang số chức đã đạt / tổng của tầng', () => {
+    const c = col([]);
+    expect(c.rows.filter((r) => r.kind === 'tier').map((r) => (r as { total: number }).total)).toEqual([2, 3, 3, 3]);
+    for (const r of c.rows) if (r.kind === 'tier') expect(r.done).toBe(0);
+  });
+});
+
+describe('BRANCH_SHORT — tên ngắn của nhánh cho chip', () => {
+  it('đủ 4 nhánh, ngắn hơn tên đầy đủ', () => {
+    for (const b of BRANCHES) { expect(BRANCH_SHORT[b].length).toBeGreaterThan(2); expect(BRANCH_SHORT[b].length).toBeLessThan(BRANCH_NAMES[b].length); }
   });
 });
