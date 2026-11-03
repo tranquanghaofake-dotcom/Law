@@ -65,7 +65,7 @@
    "right": "Tố cáo",
    "cases": [
     {
-     "text": "Bảo vệ quyền, lợi ích hợp pháp của chính người khiếu nại",
+     "text": "Bảo vệ quyền, lợi ích hợp pháp của chính người đứng đơn yêu cầu xem xét lại quyết định hành chính",
      "answer": "left"
     },
     {
@@ -77,7 +77,7 @@
      "answer": "left"
     },
     {
-     "text": "Người khiếu nại quyết định hành chính phải thực hiện trong thời hiệu 90 ngày",
+     "text": "Người không đồng ý với quyết định hành chính phải đề nghị xem xét lại trong thời hiệu 90 ngày",
      "answer": "left",
      "basis": "Điều 9 Luật Khiếu nại 2011"
     }

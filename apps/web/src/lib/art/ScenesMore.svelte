@@ -4,6 +4,7 @@
   import type { ArtName } from './registry';
   import Clouds from './Clouds.svelte';
   import Tree from './parts/Tree.svelte';
+  import QuocHoi from './QuocHoi.svelte';
   import { bricks, tiles } from './kit';
   let { name }: { name: ArtName } = $props();
   const grid = (x: number, y: number, w: number, h: number, nx: number, ny: number) => {
@@ -15,7 +16,9 @@
   const row = (n: number, x0: number, dx: number) => Array.from({ length: n }, (_, i) => x0 + i * dx);
 </script>
 
-{#if name === 'nha-lang'}
+{#if name === 'quoc-hoi'}
+  <QuocHoi />
+{:else if name === 'nha-lang'}
   <!-- ngôi nhà ba gian mái ngói, sân, cây cau; hợp đồng dân sự gắn với nhà ở, tài sản, gia đình -->
   <Clouds cy={128} r={104} puffs={false} />
   <Tree x={70} y={301} s={1.15} /><Tree x={462} y={301} s={1} />

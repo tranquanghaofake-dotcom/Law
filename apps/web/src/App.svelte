@@ -9,6 +9,7 @@
   import Quizzes from './routes/Quizzes.svelte';
   import NotFound from './routes/NotFound.svelte';
   import { storage } from '$lib/store/status.svelte';
+  import KitDefs from '$lib/art/kit/KitDefs.svelte';
 
   // Màn tải ngay: vào app là thấy, không chờ mạng. Các màn nặng ít dùng ngay tách chunk theo route (import động).
   const eager: Partial<Record<RouteName, Component>> = {
@@ -63,3 +64,5 @@
     {@render view()}
   </Shell>
 {/if}
+
+<KitDefs />

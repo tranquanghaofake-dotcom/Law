@@ -35,9 +35,10 @@ const concepts = loadConcepts();
 const pairs = concepts.flatMap((c) => c.items.filter((i) => i.type === 'pair').map((i) => ({ c, i })));
 
 /** Các môn còn tình huống lặp nhãn từ trước đợt 7 (chưa được viết lại) — giữ ngưỡng đo được, siết dần. */
-const LEAK_LEGACY: Record<string, number> = { 'hien-phap': 85, 'chung-khoan': 24, 'thuong-mai-1': 10 };
+// Đã siết sau khi sonnet A, C sửa (03/11/2026): toàn kho 206 → 13 theo cách đo của test này.
+const LEAK_LEGACY: Record<string, number> = { 'hien-phap': 6 }; // còn 6 theo cách đo này (tên cơ quan ngắn trong câu) — siết tiếp ở đợt sau
 const LEAK_SUBJECT_MAX = 3;
-const LEAK_MAX = 139;
+const LEAK_MAX = 13;
 
 function leaks(): { subject: string; id: string; text: string }[] {
   const out: { subject: string; id: string; text: string }[] = [];
