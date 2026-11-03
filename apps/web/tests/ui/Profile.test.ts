@@ -1,16 +1,20 @@
-import { afterEach, describe, expect, it, vi } from 'vitest';
-import { cleanup, render, waitFor } from '@testing-library/svelte';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
+import { cleanup, fireEvent, render, waitFor } from '@testing-library/svelte';
 import Profile from '../../src/routes/Profile.svelte';
 import { route } from '$lib/router.svelte';
 import { clearContentCache } from '$lib/content/loader';
+import { shelf } from '$lib/ui/shelf.svelte';
 
 const emptyIndex = { subjects: [], conceptCount: {}, sets: [] };
 const stubFetch = () => vi.stubGlobal('fetch', vi.fn(async () => new Response(JSON.stringify(emptyIndex), { status: 200, headers: { 'content-type': 'application/json' } })));
+const LS_KEY = 'll-profile-open';
 
-describe('Profile (2 tab)', () => {
+describe('Profile (thẻ căn cước + 2 tab + các phần đóng/mở)', () => {
+  beforeEach(() => { try { localStorage.removeItem(LS_KEY); } catch { /* bỏ qua */ } shelf.ready = true; shelf.books = []; shelf.subjects = []; });
   // Chờ phần tải dữ liệu bất đồng bộ của Profile xong rồi mới gỡ component, tránh lỗi jsdom "_location" sau khi môi trường đã đóng.
   afterEach(async () => { await new Promise((r) => setTimeout(r, 50)); cleanup(); vi.unstubAllGlobals(); clearContentCache(); route.name = 'home'; });
-  it('tab Tổng quan được chọn ở #/toi; có tab Cài đặt trỏ #/cai-dat; trạng thái rỗng khi chưa học', async () => {
+
+  it('tab Tổng quan được chọn ở #/toi; có tab Cài đặt trỏ #/cai-dat', async () => {
     stubFetch(); route.name = 'profile';
     const { container } = render(Profile);
     const tabs = container.querySelectorAll('[role="tab"]');
@@ -18,13 +22,66 @@ describe('Profile (2 tab)', () => {
     expect(tabs[0].getAttribute('aria-selected')).toBe('true');
     expect(tabs[1].getAttribute('aria-selected')).toBe('false');
     expect(tabs[1].getAttribute('href')).toBe('#/cai-dat');
-    await waitFor(() => expect(container.textContent).toContain('Chưa học khái niệm nào'));
+    await waitFor(() => expect(container.querySelector(".idc-title")).not.toBeNull());
   });
-  it('ở #/cai-dat hiện nội dung Cài đặt trong tab', async () => {
+  it('đầu trang là thẻ căn cước: chức danh, chuỗi, số sách, chức kế tiếp; không còn thẻ "Thuần thục theo môn"', async () => {
+    stubFetch(); route.name = 'profile';
+    const { container } = render(Profile);
+    const card = container.querySelector('.idcard')!;
+    expect(card.querySelector('h1')?.textContent).toBe('Hồ sơ');
+    expect(card.querySelector('.idc-title')?.textContent).toBe('Công dân');
+    expect(card.textContent).toContain('ngày');
+    expect(card.textContent).toMatch(/0\s*\/\s*0 sách|0\/0/);
+    expect(card.textContent).toContain('Chức kế tiếp');
+    expect(card.querySelector('[role="progressbar"]')).not.toBeNull();
+    expect(container.textContent).not.toContain('Thuần thục theo môn');
+    expect(container.querySelector('.page-head')).toBeNull();
+  });
+  it('5 phần accordion: button[aria-expanded] + vùng role=region; mặc định chỉ mở "Cây chức vụ"', async () => {
+    stubFetch(); route.name = 'profile';
+    const { container } = render(Profile);
+    const btns = [...container.querySelectorAll<HTMLButtonElement>('.acc-btn')];
+    expect(btns.map((b) => b.querySelector('.acc-t')?.textContent)).toEqual(['Cây chức vụ', 'Tủ sách', 'Thẻ chuyên cần', 'Tủ trưng bày chức danh', 'Dữ liệu']);
+    expect(btns.map((b) => b.getAttribute('aria-expanded'))).toEqual(['true', 'false', 'false', 'false', 'false']);
+    for (const b of btns) {
+      const panel = container.querySelector(`#${b.getAttribute('aria-controls')}`)!;
+      expect(panel.getAttribute('role')).toBe('region');
+      expect(panel.getAttribute('aria-labelledby')).toBe(b.id);
+    }
+    expect(container.querySelector('.org')).not.toBeNull();
+    expect(container.querySelector('.bk')).toBeNull(); // phần chưa mở chưa dựng
+    await new Promise((r) => setTimeout(r, 20));
+  });
+  it('bấm đầu mục mở phần đó (dựng nội dung) và nhớ trong localStorage; bấm lần nữa thì đóng', async () => {
+    stubFetch(); route.name = 'profile';
+    const { container } = render(Profile);
+    const btn = [...container.querySelectorAll<HTMLButtonElement>('.acc-btn')].find((b) => b.textContent?.includes('Thẻ chuyên cần'))!;
+    await fireEvent.click(btn);
+    expect(btn.getAttribute('aria-expanded')).toBe('true');
+    expect(JSON.parse(localStorage.getItem(LS_KEY)!)).toEqual(['cay', 'chuyen-can']);
+    await waitFor(() => expect(container.textContent).toContain('Chưa học khái niệm nào'));
+    await fireEvent.click(btn);
+    expect(btn.getAttribute('aria-expanded')).toBe('false');
+    expect(JSON.parse(localStorage.getItem(LS_KEY)!)).toEqual(['cay']);
+  });
+  it('mở lại theo phần đã nhớ; localStorage hỏng thì dùng mặc định', async () => {
+    stubFetch(); route.name = 'profile';
+    localStorage.setItem(LS_KEY, JSON.stringify(['tu', 'khong-co']));
+    const first = render(Profile);
+    expect([...first.container.querySelectorAll('.acc-btn')].map((b) => b.getAttribute('aria-expanded'))).toEqual(['false', 'true', 'false', 'false', 'false']);
+    expect(first.container.querySelector('.bk')).not.toBeNull();
+    await new Promise((r) => setTimeout(r, 50)); cleanup();
+    localStorage.setItem(LS_KEY, '{không phải json');
+    const second = render(Profile);
+    expect(second.container.querySelector('.acc-btn')?.getAttribute('aria-expanded')).toBe('true');
+    await new Promise((r) => setTimeout(r, 20));
+  });
+  it('ở #/cai-dat hiện nội dung Cài đặt trong tab (không có các phần Hồ sơ)', async () => {
     stubFetch(); route.name = 'settings';
     const { container } = render(Profile);
     expect(container.querySelectorAll('[role="tab"]')[1].getAttribute('aria-selected')).toBe('true');
     expect(container.querySelector('.settings')).not.toBeNull();
-    await waitFor(() => expect(fetch).toHaveBeenCalled());
+    expect(container.querySelector('.acc-list')).toBeNull();
+    await new Promise((r) => setTimeout(r, 20));
   });
 });

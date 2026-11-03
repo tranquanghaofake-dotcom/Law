@@ -1,7 +1,8 @@
 <script lang="ts">
-  // Bảng chức danh ở Hồ sơ: chân dung + chức danh, chọn nhánh, điều kiện lên chức kế tiếp, lộ trình nhánh, tủ đồ.
+  // Tủ trưng bày chức danh ở Hồ sơ (phần đóng/mở): chân dung + chức danh, chọn nhánh, điều kiện lên chức kế tiếp, tủ đồ.
+  // Lộ trình cả nhánh nay xem ở cây chức vụ (OrgChart).
   import Portrait from '$lib/art/Portrait.svelte';
-  import { BRANCHES, BRANCH_NAMES, POSTS, TIER_NAMES, careerState, displayTitle, promotionToCelebrate, type Branch } from '$lib/game/career';
+  import { BRANCHES, BRANCH_NAMES, TIER_NAMES, careerState, displayTitle, promotionToCelebrate, type Branch } from '$lib/game/career';
   import { FIELD_NAMES, type Field } from '$lib/game/fields';
   import { DEFAULT_AVATAR, NAMES, sanitize, unlocked, resolveOutfit, type Avatar } from '$lib/game/wardrobe';
   import type { ArtName, EmblemName } from '$lib/art/registry';
@@ -14,7 +15,6 @@
   const cs = $derived(careerState(shelf.books));
   const t = $derived(displayTitle(cs, career.branch));
   const nx = $derived(cs.next[career.branch]);
-  const ladder = $derived(POSTS.filter((p) => p.branch === career.branch));
   const SCENE: Record<string, ArtName> = { 'hanh-phap': 'tam-quan', 'lap-phap': 'quoc-hoi', 'xet-xu': 'toa-an', 'kiem-sat': 'toa-an' };
   const scene = $derived<ArtName>(t.post?.id === 'chu-tich-nuoc' ? 'quoc-hoi' : career.branch === 'hanh-phap' && t.tier && t.tier !== 'co-so' ? 'ngo-mon' : SCENE[career.branch]);
 
@@ -46,7 +46,7 @@
   const fieldLabel = (f: Field | 'any') => (f === 'any' ? 'bất kỳ' : FIELD_NAMES[f]);
 </script>
 
-<section class="card wide career">
+<div class="career">
   <div class="career-grid">
     <div class="career-side">
       <div class="plaque">
@@ -77,15 +77,6 @@
       {:else}
         <p class="muted">Bạn đã đạt chức cao nhất của nhánh này.</p>
       {/if}
-      <details class="ladder">
-        <summary>Lộ trình nhánh ({ladder.filter((p) => cs.achieved.has(p.id)).length}/{ladder.length})</summary>
-        <ol>
-          {#each ladder as p (p.id)}
-            <li class:done={cs.achieved.has(p.id)} class:cur={nx?.post.id === p.id}><span class="tier-tag">{TIER_NAMES[p.tier]}</span> {p.title} <span class="muted small">· {p.reqs.reduce((n, q) => n + q.count, 0)} sách</span></li>
-          {/each}
-        </ol>
-        {#if cs.head}<p class="muted small">Đỉnh chung: <b>Chủ tịch nước</b> — cần đạt cấp Trung ương ở hai nhánh {cs.head.branchOk ? '✓' : ''} và {cs.head.post.reqs.reduce((n, q) => n + q.count, 0)} sách cấp 3.</p>{/if}
-      </details>
     </div>
     <div class="career-portrait">
       {#if earned.length === 0}
@@ -108,4 +99,4 @@
       </div>
     {/each}
   </details>
-</section>
+</div>

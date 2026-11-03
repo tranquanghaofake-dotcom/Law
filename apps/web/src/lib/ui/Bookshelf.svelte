@@ -1,18 +1,17 @@
 <script lang="ts">
   // Tủ sách theo chương. size 'side': kệ nhỏ đáy sidebar — 6 cuốn mới đạt gần nhất + tổng số sách.
-  // size 'large': tủ nhiều tầng ở Hồ sơ — mỗi tầng một môn, mỗi chương một gáy (chưa đạt = khung nét đứt).
+  // (Tủ nhiều tầng ở Hồ sơ nay là Bookcase.svelte.)
   import BookSpine from '$lib/art/BookSpine.svelte';
   import { shelf, refreshShelf } from './shelf.svelte';
   import { schemeFor } from './shelf';
   import { LEVEL_LABEL, type BookRec } from '$lib/game/books';
-  let { size = 'side' }: { size?: 'side' | 'large' } = $props();
+  let { size = 'side' }: { size?: 'side' } = $props();
   if (!shelf.ready) refreshShelf();
   const earned = $derived(shelf.books.filter((b) => b.level > 0));
   const recent = $derived([...earned].sort((a, b) => (b.at ?? '').localeCompare(a.at ?? '') || b.level - a.level).slice(0, 6));
-  const rows = $derived(shelf.subjects.map((s, i) => ({ s, scheme: schemeFor(s.id, i), books: shelf.books.filter((b) => b.subject === s.id) })));
   const roman = (n: number) => ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII', 'XIII', 'XIV', 'XV'][n] ?? String(n);
   const tip = (b: BookRec) => `${b.title} · ${LEVEL_LABEL[b.level]}${b.needsReview ? ' · cần ôn lại' : ''}`;
-  const schemeOf = (id: string) => rows.find((r) => r.s.id === id)?.scheme ?? 'xanh';
+  const schemeOf = (id: string) => schemeFor(id, 0);
 </script>
 
 {#if size === 'side'}
@@ -32,23 +31,5 @@
     </ul>
     <div class="plank" aria-hidden="true"></div>
     <p class="shelf-count small muted">{#if earned.length === 0}Chưa có sách · học hết 1 chương để nhận{:else}{earned.length}/{shelf.books.length} sách{/if}</p>
-  </div>
-{:else}
-  <div class="bookcase">
-    {#each rows as r (r.s.id)}
-      {@const got = r.books.filter((b) => b.level > 0).length}
-      <section class="case-row">
-        <p class="case-label"><b>{r.s.title}</b> <span class="muted small">{got}/{r.books.length} sách · cấp 3: {r.books.filter((b) => b.level === 3).length}</span></p>
-        <div class="shelf large">
-          <ul class="shelf-row" aria-label="Sách môn {r.s.title}">
-            {#each r.books as b (b.key)}
-              <li class="book lv{b.level}" class:ghost={b.level === 0}><a href="#/mon/{b.subject}" aria-label={tip(b)} title={tip(b)}><BookSpine scheme={r.scheme} level={b.level} label={`${roman(b.index)} · ${b.title.replace(/^[^.:]*[.:]\s*/, '')}`} w={30} h={112} review={b.needsReview} /></a></li>
-            {/each}
-          </ul>
-          <div class="plank" aria-hidden="true"></div>
-        </div>
-      </section>
-    {/each}
-    <p class="small muted legend-books">Cấp 1: mọi khái niệm của chương ≥ bậc 3 · Cấp 2: ≥ bậc 5 · Cấp 3: tất cả bậc 6. Sách giữ cấp đã đạt; chấm vàng = cần ôn lại.</p>
   </div>
 {/if}
