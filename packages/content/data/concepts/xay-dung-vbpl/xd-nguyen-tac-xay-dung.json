@@ -1,0 +1,118 @@
+{
+ "id": "xd-nguyen-tac-xay-dung",
+ "subject": "xay-dung-vbpl",
+ "chapter": "v1",
+ "term": "Nguyên tắc bảo đảm tính hợp hiến, hợp pháp, thống nhất",
+ "definition": "Bảo đảm tính hợp hiến, tính hợp pháp, tính thống nhất của văn bản quy phạm pháp luật trong hệ thống pháp luật và không trái với điều ước quốc tế mà nước Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên; tuân thủ đúng thẩm quyền, nội dung, hình thức và trình tự, thủ tục xây dựng, ban hành văn bản quy phạm pháp luật.",
+ "plain": "Điều 5 có 7 nguyên tắc; khoản 2 là trục \"tiêu chí hợp hiến, hợp pháp\" của đề cương: HỢP HIẾN (không trái Hiến pháp), HỢP PHÁP (không trái văn bản cấp trên, đúng thẩm quyền, nội dung, hình thức, trình tự, thủ tục), THỐNG NHẤT (không mâu thuẫn, chồng chéo trong hệ thống), không trái điều ước quốc tế. Các nguyên tắc khác: lãnh đạo của Đảng (k1); chủ quyền, kiểm soát quyền lực, chống lợi ích nhóm (k3); quyền con người, dân chủ, công khai, minh bạch, khả thi (k4 — tiêu chí hợp lý); phân quyền, phân cấp (k5); thí điểm phải có thời hạn (k6); bí mật nhà nước (k7).",
+ "example": "UBND tỉnh ban hành quyết định đặt thêm điều kiện kinh doanh mà luật không giao: vi phạm nguyên tắc hợp pháp về thẩm quyền và nội dung, dù mục đích quản lý là hợp lý.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 2 Điều 5 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-54-VBHN-VPQH-2025-Luat-Ban-hanh-van-ban-quy-pham-phap-luat-669858.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "xd-van-ban-qppl",
+  "xd-kiem-tra-vbqppl"
+ ],
+ "keywords": [
+  "hợp hiến",
+  "hợp pháp",
+  "thống nhất",
+  "điều ước quốc tế",
+  "đúng thẩm quyền"
+ ],
+ "note": "Luật Ban hành văn bản quy phạm pháp luật 64/2025/QH15 có hiệu lực từ 01/4/2025, thay thế Luật 80/2015/QH13 (sửa đổi bởi Luật 63/2020/QH14) mà đề cương HLU 2019 còn dẫn; được sửa đổi bởi Luật 87/2025/QH15 có hiệu lực từ 01/7/2025 — văn bản hợp nhất 54/VBHN-VPQH ngày 11/8/2025. Luật mới bỏ quy trình \"lập đề nghị xây dựng luật\" theo chương trình hằng năm kiểu cũ, tách \"quy trình xây dựng chính sách\" và bỏ thẩm quyền ban hành VBQPPL của cấp huyện (từ 01/7/2025). Dự án Luật Văn bản quy phạm pháp luật (thay thế) đang được Quốc hội khóa XVI xem xét, chưa có hiệu lực.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khoản 2 Điều 5 yêu cầu VBQPPL bảo đảm những tính chất nào?",
+   "options": [
+    "Hợp hiến, hợp pháp, thống nhất trong hệ thống pháp luật và không trái điều ước quốc tế",
+    "Chỉ cần hợp lý về kinh tế",
+    "Chỉ cần được nhân dân đồng tình",
+    "Chỉ cần ngắn gọn, dễ hiểu"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 5.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 5 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nguyên tắc nào đòi hỏi VBQPPL quy định thí điểm phải xác định thời gian và sơ kết, tổng kết?",
+   "options": [
+    "Khoản 6 Điều 5",
+    "Khoản 1 Điều 5",
+    "Khoản 7 Điều 5",
+    "Khoản 2 Điều 5"
+   ],
+   "answer": 0,
+   "explain": "Khoản 6 Điều 5.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 6 Điều 5 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Vi phạm tính hợp pháp",
+   "right": "Vi phạm tính hợp lý",
+   "cases": [
+    {
+     "text": "Thông tư quy định nội dung trái với luật",
+     "answer": "left"
+    },
+    {
+     "text": "Quy định đúng thẩm quyền nhưng không khả thi trong thực tế",
+     "answer": "right"
+    }
+   ],
+   "explain": "Hợp pháp: đúng thẩm quyền, không trái văn bản cấp trên (khoản 2 Điều 5); hợp lý/khả thi thuộc khoản 4 Điều 5."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bảo đảm tính {{hợp hiến}}, tính hợp pháp, tính {{thống nhất}} của văn bản quy phạm pháp luật trong hệ thống pháp luật.",
+   "bank_extra": [
+    "hợp thời",
+    "độc lập"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tuân thủ đúng {{thẩm quyền}}, nội dung, hình thức và {{trình tự, thủ tục}} xây dựng, ban hành văn bản quy phạm pháp luật.",
+   "bank_extra": [
+    "kinh phí",
+    "thời hạn"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Một văn bản quy phạm pháp luật được phép trái điều ước quốc tế nếu phù hợp với lợi ích địa phương.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 5: không trái với điều ước quốc tế mà Việt Nam là thành viên."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày nguyên tắc bảo đảm tính hợp hiến, hợp pháp, thống nhất của VBQPPL.",
+   "model": "Không trái Hiến pháp, không trái văn bản cấp trên, thống nhất trong hệ thống, không trái điều ước quốc tế; tuân thủ đúng thẩm quyền, nội dung, hình thức, trình tự, thủ tục (khoản 2 Điều 5).",
+   "keywords": [
+    "hợp hiến",
+    "hợp pháp",
+    "thống nhất",
+    "thẩm quyền",
+    "trình tự, thủ tục"
+   ]
+  }
+ ]
+}

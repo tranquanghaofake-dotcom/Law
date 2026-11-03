@@ -1,0 +1,121 @@
+{
+ "id": "xd-he-thong-vbqppl",
+ "subject": "xay-dung-vbpl",
+ "chapter": "v1",
+ "term": "Hệ thống văn bản quy phạm pháp luật",
+ "definition": "Hiến pháp. (…) Bộ luật, luật (sau đây gọi chung là luật), nghị quyết của Quốc hội. (…) Pháp lệnh, nghị quyết của Ủy ban Thường vụ Quốc hội; (…) Lệnh, quyết định của Chủ tịch nước. (…) Nghị định, nghị quyết của Chính phủ; (…) Quyết định của Thủ tướng Chính phủ. (…) Nghị quyết của Hội đồng Thẩm phán Tòa án nhân dân tối cao.",
+ "plain": "Điều 4 liệt kê 15 nhóm theo thứ bậc hiệu lực giảm dần: Hiến pháp → luật, nghị quyết QH → pháp lệnh, nghị quyết UBTVQH → lệnh, quyết định Chủ tịch nước → nghị định, nghị quyết Chính phủ → quyết định Thủ tướng → nghị quyết HĐTP TANDTC → thông tư (Chánh án, Viện trưởng VKSNDTC, Bộ trưởng, Tổng Kiểm toán) → thông tư liên tịch → nghị quyết HĐND cấp tỉnh, quyết định UBND cấp tỉnh, quyết định Chủ tịch UBND cấp tỉnh → VBQPPL của đơn vị hành chính - kinh tế đặc biệt → nghị quyết HĐND cấp xã, quyết định UBND cấp xã. Điểm mới so với Luật 2015: thêm nghị quyết của Chính phủ, quyết định của Chủ tịch UBND cấp tỉnh; bỏ cấp huyện; chỉ thị không còn là VBQPPL.",
+ "example": "Sở Tư pháp muốn biết một \"chỉ thị của Chủ tịch UBND tỉnh\" có phải VBQPPL không: không, Điều 4 không liệt kê chỉ thị; chỉ thị chỉ là văn bản hành chính dùng để đôn đốc, chỉ đạo.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 4 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-54-VBHN-VPQH-2025-Luat-Ban-hanh-van-ban-quy-pham-phap-luat-669858.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "xd-van-ban-qppl",
+  "xd-nghi-quyet-quoc-hoi",
+  "xd-nghi-quyet-hdnd-tinh"
+ ],
+ "keywords": [
+  "Hiến pháp",
+  "luật",
+  "pháp lệnh",
+  "nghị định",
+  "thông tư",
+  "cấp tỉnh",
+  "cấp xã"
+ ],
+ "note": "Luật Ban hành văn bản quy phạm pháp luật 64/2025/QH15 có hiệu lực từ 01/4/2025, thay thế Luật 80/2015/QH13 (sửa đổi bởi Luật 63/2020/QH14) mà đề cương HLU 2019 còn dẫn; được sửa đổi bởi Luật 87/2025/QH15 có hiệu lực từ 01/7/2025 — văn bản hợp nhất 54/VBHN-VPQH ngày 11/8/2025. Luật mới bỏ quy trình \"lập đề nghị xây dựng luật\" theo chương trình hằng năm kiểu cũ, tách \"quy trình xây dựng chính sách\" và bỏ thẩm quyền ban hành VBQPPL của cấp huyện (từ 01/7/2025). Dự án Luật Văn bản quy phạm pháp luật (thay thế) đang được Quốc hội khóa XVI xem xét, chưa có hiệu lực.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Văn bản nào sau đây KHÔNG thuộc hệ thống văn bản quy phạm pháp luật tại Điều 4?",
+   "options": [
+    "Chỉ thị của Chủ tịch Ủy ban nhân dân cấp tỉnh",
+    "Quyết định của Chủ tịch Ủy ban nhân dân cấp tỉnh",
+    "Nghị quyết của Chính phủ",
+    "Thông tư của Tổng Kiểm toán nhà nước"
+   ],
+   "answer": 0,
+   "explain": "Điều 4 không có chỉ thị; quyết định của Chủ tịch UBND cấp tỉnh (khoản 12), nghị quyết của Chính phủ (khoản 5), thông tư của Tổng Kiểm toán (khoản 8) đều có.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 4 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Cấp chính quyền địa phương nào không còn thẩm quyền ban hành VBQPPL theo Điều 4?",
+   "options": [
+    "Cấp huyện",
+    "Cấp tỉnh",
+    "Cấp xã",
+    "Đơn vị hành chính - kinh tế đặc biệt"
+   ],
+   "answer": 0,
+   "explain": "Điều 4 chỉ liệt kê cấp tỉnh (khoản 10–12), đơn vị hành chính - kinh tế đặc biệt (khoản 13) và cấp xã (khoản 14, 15).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 4 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Văn bản của Ủy ban Thường vụ Quốc hội",
+   "right": "Văn bản của Chính phủ",
+   "cases": [
+    {
+     "text": "Pháp lệnh",
+     "answer": "left"
+    },
+    {
+     "text": "Nghị định",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 3 và khoản 5 Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hệ thống VBQPPL gồm {{Hiến pháp}}; bộ luật, luật, nghị quyết của Quốc hội; {{pháp lệnh}}, nghị quyết của Ủy ban Thường vụ Quốc hội.",
+   "bank_extra": [
+    "điều lệ",
+    "chỉ thị"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chủ tịch nước ban hành {{lệnh}}, quyết định; Thủ tướng Chính phủ ban hành {{quyết định}}; Bộ trưởng ban hành thông tư.",
+   "bank_extra": [
+    "sắc lệnh",
+    "nghị định"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Nghị quyết của Hội đồng Thẩm phán Tòa án nhân dân tối cao là văn bản quy phạm pháp luật.",
+   "answer": true,
+   "explain": "Đúng. Khoản 7 Điều 4."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Kể các loại văn bản quy phạm pháp luật của cơ quan nhà nước ở trung ương theo Điều 4.",
+   "model": "Hiến pháp; luật, nghị quyết QH; pháp lệnh, nghị quyết UBTVQH và nghị quyết liên tịch; lệnh, quyết định Chủ tịch nước; nghị định, nghị quyết Chính phủ và nghị quyết liên tịch; quyết định Thủ tướng; nghị quyết HĐTP TANDTC; thông tư của Chánh án, Viện trưởng VKSNDTC, Bộ trưởng, Tổng Kiểm toán; thông tư liên tịch (khoản 1–9 Điều 4).",
+   "keywords": [
+    "Hiến pháp",
+    "pháp lệnh",
+    "nghị định",
+    "thông tư",
+    "thông tư liên tịch"
+   ]
+  }
+ ]
+}

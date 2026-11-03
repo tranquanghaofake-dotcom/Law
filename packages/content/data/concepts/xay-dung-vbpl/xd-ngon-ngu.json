@@ -1,0 +1,118 @@
+{
+ "id": "xd-ngon-ngu",
+ "subject": "xay-dung-vbpl",
+ "chapter": "v3",
+ "term": "Ngôn ngữ trong văn bản quy phạm pháp luật",
+ "definition": "Ngôn ngữ được sử dụng trong văn bản quy phạm pháp luật là tiếng Việt, bảo đảm chính xác, phổ thông, thống nhất, diễn đạt rõ ràng, dễ hiểu.",
+ "plain": "Năm yêu cầu luật định: TIẾNG VIỆT; CHÍNH XÁC (một nghĩa, đúng thuật ngữ pháp lý); PHỔ THÔNG (không dùng từ địa phương, tiếng lóng, từ cổ); THỐNG NHẤT (một khái niệm dùng một từ trong toàn văn bản và hệ thống); RÕ RÀNG, DỄ HIỂU. Đề cương thêm yêu cầu nghiêm túc, khách quan (không cảm thán, không biểu cảm). Bản dịch ra tiếng dân tộc thiểu số, tiếng nước ngoài chỉ có giá trị tham khảo (khoản 4 Điều 7). Kỹ thuật: câu đơn, chủ ngữ rõ, tránh đa nghĩa, định nghĩa thuật ngữ ở điều giải thích từ ngữ.",
+ "example": "Dự thảo viết \"cá nhân vi phạm sẽ bị xử lý thật nghiêm khắc\": không chính xác (mức nào?), không khách quan; cần sửa thành \"bị phạt tiền từ 1.000.000 đồng đến 3.000.000 đồng\".",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 7 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-54-VBHN-VPQH-2025-Luat-Ban-hanh-van-ban-quy-pham-phap-luat-669858.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "xd-bo-cuc-so-ky-hieu",
+  "xd-nguyen-tac-xay-dung"
+ ],
+ "keywords": [
+  "tiếng Việt",
+  "chính xác",
+  "phổ thông",
+  "thống nhất",
+  "rõ ràng, dễ hiểu"
+ ],
+ "note": "Luật Ban hành văn bản quy phạm pháp luật 64/2025/QH15 có hiệu lực từ 01/4/2025, thay thế Luật 80/2015/QH13 (sửa đổi bởi Luật 63/2020/QH14) mà đề cương HLU 2019 còn dẫn; được sửa đổi bởi Luật 87/2025/QH15 có hiệu lực từ 01/7/2025 — văn bản hợp nhất 54/VBHN-VPQH ngày 11/8/2025. Luật mới bỏ quy trình \"lập đề nghị xây dựng luật\" theo chương trình hằng năm kiểu cũ, tách \"quy trình xây dựng chính sách\" và bỏ thẩm quyền ban hành VBQPPL của cấp huyện (từ 01/7/2025). Dự án Luật Văn bản quy phạm pháp luật (thay thế) đang được Quốc hội khóa XVI xem xét, chưa có hiệu lực.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khoản 1 Điều 7 yêu cầu ngôn ngữ VBQPPL phải thế nào?",
+   "options": [
+    "Tiếng Việt; chính xác, phổ thông, thống nhất, rõ ràng, dễ hiểu",
+    "Tiếng Việt hoặc tiếng Anh tùy chọn",
+    "Trang trọng, nhiều từ Hán Việt",
+    "Giàu hình ảnh, biểu cảm"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 7.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 7 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Bản dịch VBQPPL ra tiếng nước ngoài có giá trị gì?",
+   "options": [
+    "Giá trị tham khảo",
+    "Giá trị như bản gốc",
+    "Giá trị áp dụng với người nước ngoài",
+    "Không được phép dịch"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 7.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 7 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Đạt yêu cầu ngôn ngữ",
+   "right": "Vi phạm yêu cầu ngôn ngữ",
+   "cases": [
+    {
+     "text": "\"Người nộp thuế phải nộp hồ sơ trong thời hạn 10 ngày\"",
+     "answer": "left"
+    },
+    {
+     "text": "\"Bà con cần hết sức lưu ý nộp hồ sơ cho sớm\"",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 7: chính xác, phổ thông, khách quan."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ngôn ngữ được sử dụng trong văn bản quy phạm pháp luật là {{tiếng Việt}}, bảo đảm {{chính xác}}, phổ thông, thống nhất.",
+   "bank_extra": [
+    "tiếng Anh",
+    "trang trọng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ngôn ngữ VBQPPL phải bảo đảm {{thống nhất}}, diễn đạt {{rõ ràng}}, dễ hiểu.",
+   "bank_extra": [
+    "linh hoạt",
+    "bóng bẩy"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Văn bản quy phạm pháp luật có thể dùng từ địa phương nếu áp dụng trong phạm vi một tỉnh.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 7 yêu cầu ngôn ngữ phổ thông, thống nhất bất kể phạm vi hiệu lực."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các yêu cầu đối với ngôn ngữ trong văn bản quy phạm pháp luật.",
+   "model": "Tiếng Việt; chính xác; phổ thông; thống nhất; diễn đạt rõ ràng, dễ hiểu (khoản 1 Điều 7); bản dịch chỉ có giá trị tham khảo (khoản 4 Điều 7).",
+   "keywords": [
+    "tiếng Việt",
+    "chính xác",
+    "phổ thông",
+    "thống nhất",
+    "rõ ràng"
+   ]
+  }
+ ]
+}

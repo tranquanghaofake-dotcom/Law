@@ -1,0 +1,117 @@
+{
+ "id": "xd-tham-dinh",
+ "subject": "xay-dung-vbpl",
+ "chapter": "v2",
+ "term": "Thẩm định dự án luật, pháp lệnh, nghị quyết do Chính phủ trình",
+ "definition": "Bộ Tư pháp chủ trì, phối hợp với Bộ Tài chính, Bộ Nội vụ, Bộ Ngoại giao, Bộ Công an, Bộ Quốc phòng, Bộ Khoa học và Công nghệ, các cơ quan, tổ chức, cá nhân có liên quan tổ chức thẩm định dự án luật, pháp lệnh, nghị quyết trước khi trình Chính phủ trong thời hạn 30 ngày kể từ ngày nhận đủ hồ sơ.",
+ "plain": "THẨM ĐỊNH là hoạt động của cơ quan TƯ PHÁP thuộc hệ thống hành pháp (Bộ Tư pháp với dự án Chính phủ trình; tổ chức pháp chế Bộ với thông tư; Sở Tư pháp với văn bản cấp tỉnh) — đánh giá dự thảo TRƯỚC KHI TRÌNH cơ quan có thẩm quyền ban hành/trình. Thời hạn 30 ngày kể từ ngày nhận đủ hồ sơ. Nội dung (khoản 3 Điều 34): sự phù hợp với chính sách đã thông qua; hợp hiến, hợp pháp, thống nhất, tương thích điều ước; sự cần thiết của thủ tục hành chính; nguồn lực; bình đẳng giới; ngôn ngữ, kỹ thuật. Phân biệt với THẨM TRA do cơ quan của Quốc hội/HĐND thực hiện.",
+ "example": "Bộ Y tế soạn dự thảo Luật Dược sửa đổi, gửi Bộ Tư pháp thẩm định; Bộ Tư pháp kết luận dự thảo \"đủ điều kiện trình Chính phủ\" kèm yêu cầu chỉnh lý một số điều trái Luật Đầu tư.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 34 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-54-VBHN-VPQH-2025-Luat-Ban-hanh-van-ban-quy-pham-phap-luat-669858.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "xd-tham-tra",
+  "xd-co-quan-chu-tri-soan-thao",
+  "xd-kiem-tra-vbqppl"
+ ],
+ "keywords": [
+  "Bộ Tư pháp",
+  "trước khi trình Chính phủ",
+  "30 ngày",
+  "hội đồng thẩm định"
+ ],
+ "note": "Luật Ban hành văn bản quy phạm pháp luật 64/2025/QH15 có hiệu lực từ 01/4/2025, thay thế Luật 80/2015/QH13 (sửa đổi bởi Luật 63/2020/QH14) mà đề cương HLU 2019 còn dẫn; được sửa đổi bởi Luật 87/2025/QH15 có hiệu lực từ 01/7/2025 — văn bản hợp nhất 54/VBHN-VPQH ngày 11/8/2025. Luật mới bỏ quy trình \"lập đề nghị xây dựng luật\" theo chương trình hằng năm kiểu cũ, tách \"quy trình xây dựng chính sách\" và bỏ thẩm quyền ban hành VBQPPL của cấp huyện (từ 01/7/2025). Dự án Luật Văn bản quy phạm pháp luật (thay thế) đang được Quốc hội khóa XVI xem xét, chưa có hiệu lực.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Cơ quan nào chủ trì thẩm định dự án luật do Chính phủ trình?",
+   "options": [
+    "Bộ Tư pháp",
+    "Ủy ban Pháp luật và Tư pháp của Quốc hội",
+    "Văn phòng Chính phủ",
+    "Bộ Nội vụ"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 34.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 34 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thời hạn thẩm định dự án luật là bao lâu kể từ ngày nhận đủ hồ sơ?",
+   "options": [
+    "30 ngày",
+    "45 ngày",
+    "15 ngày",
+    "10 ngày"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 34.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 34 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thẩm định",
+   "right": "Thẩm tra",
+   "cases": [
+    {
+     "text": "Bộ Tư pháp đánh giá dự thảo nghị định trước khi trình Chính phủ",
+     "answer": "left"
+    },
+    {
+     "text": "Ủy ban của Quốc hội đánh giá dự án luật trước kỳ họp",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 34 (thẩm định) và Điều 37 (thẩm tra)."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "{{Bộ Tư pháp}} chủ trì tổ chức thẩm định dự án luật, pháp lệnh, nghị quyết trước khi trình {{Chính phủ}}.",
+   "bank_extra": [
+    "Bộ Nội vụ",
+    "Quốc hội"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Việc thẩm định được thực hiện trong thời hạn {{30 ngày}} kể từ ngày nhận đủ {{hồ sơ}}.",
+   "bank_extra": [
+    "60 ngày",
+    "kinh phí"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Đối với dự án do chính Bộ Tư pháp chủ trì soạn thảo thì không cần thẩm định.",
+   "answer": false,
+   "explain": "Sai. Đoạn 2 khoản 1 Điều 34: Bộ trưởng Bộ Tư pháp thành lập hội đồng thẩm định."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Phân biệt thẩm định và thẩm tra dự án luật.",
+   "model": "Thẩm định do Bộ Tư pháp (cơ quan thuộc hành pháp) thực hiện trước khi trình Chính phủ, trong 30 ngày (Điều 34); thẩm tra do Hội đồng Dân tộc, Ủy ban của Quốc hội thực hiện trước khi trình Quốc hội, UBTVQH (Điều 37).",
+   "keywords": [
+    "Bộ Tư pháp",
+    "trước khi trình Chính phủ",
+    "Ủy ban của Quốc hội",
+    "thẩm tra"
+   ]
+  }
+ ]
+}

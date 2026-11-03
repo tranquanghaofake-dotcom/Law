@@ -1,0 +1,117 @@
+{
+ "id": "xd-tham-tra",
+ "subject": "xay-dung-vbpl",
+ "chapter": "v2",
+ "term": "Thẩm tra dự án luật, pháp lệnh, nghị quyết",
+ "definition": "Hội đồng Dân tộc, Ủy ban của Quốc hội chủ trì thẩm tra dự án luật, nghị quyết của Quốc hội, pháp lệnh, nghị quyết của Ủy ban Thường vụ Quốc hội thuộc lĩnh vực mình phụ trách và dự án luật, pháp lệnh, nghị quyết khác do Quốc hội, Ủy ban Thường vụ Quốc hội giao; (…) Thường trực Ủy ban Pháp luật và Tư pháp có trách nhiệm tham gia thẩm tra về tính hợp hiến, tính hợp pháp, tính thống nhất với hệ thống pháp luật của dự thảo luật, pháp lệnh, nghị quyết.",
+ "plain": "THẨM TRA là hoạt động của cơ quan thuộc QUỐC HỘI (Hội đồng Dân tộc, các Ủy ban) hoặc Ban của HĐND đối với dự án trình cơ quan dân cử. Hồ sơ phải gửi chậm nhất 45 ngày trước ngày khai mạc kỳ họp QH (20 ngày trước phiên họp UBTVQH) — khoản 1 Điều 37. Ủy ban Pháp luật và Tư pháp luôn tham gia về tính hợp hiến, hợp pháp, thống nhất. Nội dung thẩm tra (khoản 4 Điều 37): phạm vi, đối tượng; nội dung và vấn đề còn ý kiến khác nhau; phù hợp chủ trương của Đảng; hợp hiến, hợp pháp; khả thi; nguồn lực; bình đẳng giới; ngôn ngữ, kỹ thuật.",
+ "example": "Dự án Luật Điện lực do Chính phủ trình: Ủy ban Khoa học, Công nghệ và Môi trường chủ trì thẩm tra; Ủy ban Pháp luật và Tư pháp tham gia về tính hợp hiến, hợp pháp.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 2 Điều 37 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-54-VBHN-VPQH-2025-Luat-Ban-hanh-van-ban-quy-pham-phap-luat-669858.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "xd-tham-dinh",
+  "xd-co-quan-chu-tri-soan-thao",
+  "xd-nghi-quyet-quoc-hoi"
+ ],
+ "keywords": [
+  "Hội đồng Dân tộc",
+  "Ủy ban của Quốc hội",
+  "45 ngày",
+  "hợp hiến, hợp pháp"
+ ],
+ "note": "Luật Ban hành văn bản quy phạm pháp luật 64/2025/QH15 có hiệu lực từ 01/4/2025, thay thế Luật 80/2015/QH13 (sửa đổi bởi Luật 63/2020/QH14) mà đề cương HLU 2019 còn dẫn; được sửa đổi bởi Luật 87/2025/QH15 có hiệu lực từ 01/7/2025 — văn bản hợp nhất 54/VBHN-VPQH ngày 11/8/2025. Luật mới bỏ quy trình \"lập đề nghị xây dựng luật\" theo chương trình hằng năm kiểu cũ, tách \"quy trình xây dựng chính sách\" và bỏ thẩm quyền ban hành VBQPPL của cấp huyện (từ 01/7/2025). Dự án Luật Văn bản quy phạm pháp luật (thay thế) đang được Quốc hội khóa XVI xem xét, chưa có hiệu lực.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Cơ quan nào chủ trì thẩm tra dự án luật?",
+   "options": [
+    "Hội đồng Dân tộc, Ủy ban của Quốc hội theo lĩnh vực phụ trách",
+    "Bộ Tư pháp",
+    "Văn phòng Quốc hội",
+    "Chính phủ"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 37.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 37 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hồ sơ dự án trình Quốc hội phải gửi cơ quan chủ trì thẩm tra chậm nhất bao lâu trước ngày khai mạc kỳ họp?",
+   "options": [
+    "45 ngày",
+    "20 ngày",
+    "15 ngày",
+    "7 ngày"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 37.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 37 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thẩm tra",
+   "right": "Thẩm định",
+   "cases": [
+    {
+     "text": "Ủy ban Pháp luật và Tư pháp xem xét tính hợp hiến của dự thảo luật",
+     "answer": "left"
+    },
+    {
+     "text": "Sở Tư pháp xem xét dự thảo quyết định của UBND tỉnh",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 37; Điều 34 và quy định tương ứng với địa phương."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "{{Hội đồng Dân tộc}}, Ủy ban của Quốc hội chủ trì {{thẩm tra}} dự án luật thuộc lĩnh vực mình phụ trách.",
+   "bank_extra": [
+    "Bộ Tư pháp",
+    "thẩm định"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thường trực {{Ủy ban Pháp luật và Tư pháp}} có trách nhiệm tham gia thẩm tra về tính {{hợp hiến}}, tính hợp pháp, tính thống nhất với hệ thống pháp luật.",
+   "bank_extra": [
+    "Ủy ban Kinh tế và Tài chính",
+    "khả thi"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Dự án trình Ủy ban Thường vụ Quốc hội phải gửi hồ sơ thẩm tra chậm nhất 45 ngày trước phiên họp.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 37: 20 ngày trước ngày bắt đầu phiên họp UBTVQH; 45 ngày áp dụng cho dự án trình Quốc hội."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu chủ thể và thời hạn gửi hồ sơ thẩm tra dự án luật.",
+   "model": "Hội đồng Dân tộc, Ủy ban của Quốc hội chủ trì thẩm tra; Ủy ban Pháp luật và Tư pháp tham gia về hợp hiến, hợp pháp, thống nhất (khoản 2 Điều 37); hồ sơ gửi chậm nhất 45 ngày trước khai mạc kỳ họp QH, 20 ngày trước phiên họp UBTVQH (khoản 1 Điều 37).",
+   "keywords": [
+    "Hội đồng Dân tộc",
+    "Ủy ban",
+    "45 ngày",
+    "20 ngày"
+   ]
+  }
+ ]
+}

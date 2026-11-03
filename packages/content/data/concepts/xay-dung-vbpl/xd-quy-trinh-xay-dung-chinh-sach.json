@@ -1,0 +1,118 @@
+{
+ "id": "xd-quy-trinh-xay-dung-chinh-sach",
+ "subject": "xay-dung-vbpl",
+ "chapter": "v2",
+ "term": "Các trường hợp thực hiện quy trình xây dựng chính sách",
+ "definition": "Cơ quan trình có trách nhiệm tổ chức thực hiện quy trình xây dựng chính sách trước khi soạn thảo trong các trường hợp xây dựng văn bản quy phạm pháp luật sau đây: (…) Luật, pháp lệnh mới; luật, pháp lệnh thay thế các luật, pháp lệnh hiện hành; (…) Luật sửa đổi, bổ sung một số điều của luật có nội dung hạn chế quyền con người, quyền công dân theo quy định của Hiến pháp; (…) Nghị quyết thí điểm của Quốc hội.",
+ "plain": "Thay cho \"lập đề nghị xây dựng luật\" trong Luật 2015 (mà đề cương còn gọi là bước 1), Luật 2025 quy định QUY TRÌNH XÂY DỰNG CHÍNH SÁCH gồm: xác định chính sách (Điều 28) → đánh giá tác động (Điều 29) → lấy ý kiến, tham vấn (Điều 30) → thẩm định chính sách (Điều 31) → thông qua chính sách (Điều 32). Chỉ ba nhóm văn bản ở khoản 1 bắt buộc làm; dự án khác thì nêu tác động trong bản thuyết minh quy phạm hóa chính sách (khoản 2). Sau đó mới đến soạn thảo (Điều 33), thẩm định (Điều 34), trình, thẩm tra (Điều 37), thông qua (Điều 39–42), công bố (Điều 43).",
+ "example": "Dự án Luật Nhà giáo (luật mới): phải xây dựng chính sách trước. Dự án Luật sửa đổi một số điều của Luật Kế toán không hạn chế quyền con người: không bắt buộc, chỉ cần thuyết minh tác động.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 27 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-54-VBHN-VPQH-2025-Luat-Ban-hanh-van-ban-quy-pham-phap-luat-669858.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "xd-chinh-sach",
+  "xd-danh-gia-tac-dong",
+  "xd-co-quan-chu-tri-soan-thao"
+ ],
+ "keywords": [
+  "luật, pháp lệnh mới",
+  "thay thế",
+  "hạn chế quyền con người",
+  "nghị quyết thí điểm"
+ ],
+ "note": "Luật Ban hành văn bản quy phạm pháp luật 64/2025/QH15 có hiệu lực từ 01/4/2025, thay thế Luật 80/2015/QH13 (sửa đổi bởi Luật 63/2020/QH14) mà đề cương HLU 2019 còn dẫn; được sửa đổi bởi Luật 87/2025/QH15 có hiệu lực từ 01/7/2025 — văn bản hợp nhất 54/VBHN-VPQH ngày 11/8/2025. Luật mới bỏ quy trình \"lập đề nghị xây dựng luật\" theo chương trình hằng năm kiểu cũ, tách \"quy trình xây dựng chính sách\" và bỏ thẩm quyền ban hành VBQPPL của cấp huyện (từ 01/7/2025). Dự án Luật Văn bản quy phạm pháp luật (thay thế) đang được Quốc hội khóa XVI xem xét, chưa có hiệu lực.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trường hợp nào bắt buộc thực hiện quy trình xây dựng chính sách trước khi soạn thảo?",
+   "options": [
+    "Luật, pháp lệnh mới hoặc thay thế; luật sửa đổi có nội dung hạn chế quyền con người; nghị quyết thí điểm của Quốc hội",
+    "Mọi nghị định của Chính phủ",
+    "Mọi thông tư của Bộ trưởng",
+    "Mọi nghị quyết của HĐND cấp tỉnh"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 27.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 27 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Dự án luật không thuộc khoản 1 Điều 27 thì cơ quan trình phải làm gì?",
+   "options": [
+    "Nêu rõ tác động của chính sách trong bản thuyết minh quy phạm hóa chính sách",
+    "Vẫn phải thẩm định chính sách tại Bộ Tư pháp",
+    "Không cần nêu gì về tác động",
+    "Phải xin ý kiến Chủ tịch nước"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 27.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 27 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Phải thực hiện quy trình xây dựng chính sách",
+   "right": "Không bắt buộc",
+   "cases": [
+    {
+     "text": "Pháp lệnh mới của Ủy ban Thường vụ Quốc hội",
+     "answer": "left"
+    },
+    {
+     "text": "Luật sửa đổi một số điều về thủ tục đăng ký doanh nghiệp",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1, 2 Điều 27."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Cơ quan trình tổ chức thực hiện quy trình xây dựng {{chính sách}} trước khi {{soạn thảo}} luật, pháp lệnh mới.",
+   "bank_extra": [
+    "ngân sách",
+    "thẩm tra"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quy trình xây dựng chính sách bắt buộc với luật sửa đổi, bổ sung có nội dung {{hạn chế quyền con người}}, quyền công dân và với {{nghị quyết thí điểm}} của Quốc hội.",
+   "bank_extra": [
+    "tăng thuế",
+    "nghị quyết liên tịch"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo Luật 2025, mọi dự án luật đều phải được lập đề nghị xây dựng luật và đưa vào Chương trình xây dựng luật, pháp lệnh hằng năm như Luật 2015.",
+   "answer": false,
+   "explain": "Sai. Luật 2025 thay bằng Định hướng lập pháp nhiệm kỳ (Điều 23), Chương trình lập pháp hằng năm (Điều 24) và quy trình xây dựng chính sách chỉ áp dụng cho các trường hợp tại khoản 1 Điều 27."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Kể các bước của quy trình xây dựng chính sách và các trường hợp phải thực hiện.",
+   "model": "Xác định chính sách, đánh giá tác động, lấy ý kiến và tham vấn, thẩm định, thông qua chính sách (Điều 28–32); áp dụng cho luật, pháp lệnh mới hoặc thay thế, luật sửa đổi hạn chế quyền con người, nghị quyết thí điểm của QH (khoản 1 Điều 27).",
+   "keywords": [
+    "xác định chính sách",
+    "đánh giá tác động",
+    "tham vấn",
+    "thẩm định",
+    "thí điểm"
+   ]
+  }
+ ]
+}

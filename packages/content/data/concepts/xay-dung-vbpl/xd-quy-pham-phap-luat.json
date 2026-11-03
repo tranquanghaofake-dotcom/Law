@@ -1,0 +1,115 @@
+{
+ "id": "xd-quy-pham-phap-luat",
+ "subject": "xay-dung-vbpl",
+ "chapter": "v1",
+ "term": "Quy phạm pháp luật",
+ "definition": "Quy phạm pháp luật là quy tắc xử sự chung, có hiệu lực bắt buộc chung, được áp dụng đối với cơ quan, tổ chức, cá nhân, trong phạm vi cả nước hoặc trong đơn vị hành chính nhất định, do cơ quan nhà nước, người có thẩm quyền quy định tại Luật này ban hành và được Nhà nước bảo đảm thực hiện.",
+ "plain": "Dấu hiệu nhận diện: (1) quy tắc xử sự CHUNG, áp dụng lặp đi lặp lại cho mọi chủ thể thuộc phạm vi, không chỉ đích danh; (2) hiệu lực BẮT BUỘC CHUNG; (3) do chủ thể có thẩm quyền theo Luật ban hành; (4) được Nhà nước bảo đảm thực hiện. Đây là tiêu chí phân biệt VBQPPL với văn bản áp dụng pháp luật (chỉ áp dụng một lần cho đối tượng xác định).",
+ "example": "Quy định \"người điều khiển xe máy phải đội mũ bảo hiểm\" là quy phạm pháp luật vì áp dụng cho mọi người đi xe máy. Quyết định \"phạt anh C 400.000 đồng vì không đội mũ\" không phải quy phạm vì chỉ áp dụng một lần cho anh C.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-54-VBHN-VPQH-2025-Luat-Ban-hanh-van-ban-quy-pham-phap-luat-669858.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "xd-van-ban-qppl",
+  "xd-chinh-sach"
+ ],
+ "keywords": [
+  "quy tắc xử sự chung",
+  "bắt buộc chung",
+  "Nhà nước bảo đảm thực hiện"
+ ],
+ "note": "Luật Ban hành văn bản quy phạm pháp luật 64/2025/QH15 có hiệu lực từ 01/4/2025, thay thế Luật 80/2015/QH13 (sửa đổi bởi Luật 63/2020/QH14) mà đề cương HLU 2019 còn dẫn; được sửa đổi bởi Luật 87/2025/QH15 có hiệu lực từ 01/7/2025 — văn bản hợp nhất 54/VBHN-VPQH ngày 11/8/2025. Luật mới bỏ quy trình \"lập đề nghị xây dựng luật\" theo chương trình hằng năm kiểu cũ, tách \"quy trình xây dựng chính sách\" và bỏ thẩm quyền ban hành VBQPPL của cấp huyện (từ 01/7/2025). Dự án Luật Văn bản quy phạm pháp luật (thay thế) đang được Quốc hội khóa XVI xem xét, chưa có hiệu lực.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đặc điểm nào là của quy phạm pháp luật theo khoản 1 Điều 3?",
+   "options": [
+    "Quy tắc xử sự chung, có hiệu lực bắt buộc chung, được Nhà nước bảo đảm thực hiện",
+    "Mệnh lệnh áp dụng một lần cho một người cụ thể",
+    "Khuyến nghị không bắt buộc",
+    "Quy tắc đạo đức do cộng đồng tự đặt"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quy phạm pháp luật được áp dụng trong phạm vi nào?",
+   "options": [
+    "Cả nước hoặc đơn vị hành chính nhất định",
+    "Chỉ trong một cơ quan",
+    "Chỉ với công chức",
+    "Chỉ với doanh nghiệp"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 3: trong phạm vi cả nước hoặc trong đơn vị hành chính nhất định.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Là quy phạm pháp luật",
+   "right": "Không phải quy phạm pháp luật",
+   "cases": [
+    {
+     "text": "Điều khoản quy định mức thuế suất áp dụng cho mọi doanh nghiệp",
+     "answer": "left"
+    },
+    {
+     "text": "Quyết định khen thưởng bà D",
+     "answer": "right"
+    }
+   ],
+   "explain": "Quy phạm là quy tắc xử sự chung; quyết định khen thưởng là cá biệt."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quy phạm pháp luật là quy tắc xử sự {{chung}}, có hiệu lực {{bắt buộc chung}}, được áp dụng đối với cơ quan, tổ chức, cá nhân.",
+   "bank_extra": [
+    "riêng",
+    "tham khảo"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quy phạm pháp luật do cơ quan nhà nước, người có thẩm quyền quy định tại Luật này ban hành và được {{Nhà nước}} bảo đảm {{thực hiện}}.",
+   "bank_extra": [
+    "xã hội",
+    "khen thưởng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quy phạm pháp luật có thể do bất kỳ cơ quan nhà nước nào ban hành.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 3: do cơ quan nhà nước, người có thẩm quyền \"quy định tại Luật này\" ban hành — danh sách chủ thể tại Điều 4."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các dấu hiệu của quy phạm pháp luật.",
+   "model": "Quy tắc xử sự chung; hiệu lực bắt buộc chung; áp dụng với cơ quan, tổ chức, cá nhân trong cả nước hoặc đơn vị hành chính nhất định; do chủ thể có thẩm quyền theo Luật ban hành; được Nhà nước bảo đảm thực hiện (khoản 1 Điều 3).",
+   "keywords": [
+    "xử sự chung",
+    "bắt buộc chung",
+    "thẩm quyền",
+    "bảo đảm thực hiện"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,119 @@
+{
+ "id": "xd-thoi-diem-co-hieu-luc",
+ "subject": "xay-dung-vbpl",
+ "chapter": "v1",
+ "term": "Thời điểm có hiệu lực của văn bản quy phạm pháp luật",
+ "definition": "Thời điểm có hiệu lực toàn bộ hoặc một phần văn bản quy phạm pháp luật được quy định tại văn bản đó nhưng không sớm hơn 45 ngày kể từ ngày thông qua hoặc ký ban hành đối với văn bản quy phạm pháp luật của cơ quan nhà nước ở trung ương; không sớm hơn 10 ngày kể từ ngày thông qua hoặc ký ban hành đối với văn bản quy phạm pháp luật của chính quyền địa phương.",
+ "plain": "Hai mốc tối thiểu: 45 ngày (trung ương), 10 ngày (địa phương) kể từ ngày thông qua/ký ban hành — để công bố, phổ biến. Ngoại lệ: văn bản theo thủ tục rút gọn và trường hợp đặc biệt có thể có hiệu lực ngay từ ngày thông qua/ký nhưng phải đăng tải ngay (đoạn 2 khoản 1). Văn bản quy định chi tiết phải có hiệu lực cùng thời điểm văn bản được quy định chi tiết (khoản 2). Đây là điều khoản phải có trong phần hiệu lực của nghị quyết, quyết định khi soạn thảo.",
+ "example": "Nghị định ký ban hành ngày 01/3 ghi \"có hiệu lực từ 15/3\": sai vì chưa đủ 45 ngày; sớm nhất là 15/4. Nghị quyết HĐND tỉnh thông qua 10/7, hiệu lực từ 20/7: hợp lệ (đủ 10 ngày).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 53 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-54-VBHN-VPQH-2025-Luat-Ban-hanh-van-ban-quy-pham-phap-luat-669858.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "xd-het-hieu-luc",
+  "xd-thu-tuc-rut-gon",
+  "xd-nguyen-tac-xay-dung"
+ ],
+ "keywords": [
+  "45 ngày",
+  "10 ngày",
+  "ngày thông qua",
+  "ký ban hành",
+  "trung ương",
+  "địa phương"
+ ],
+ "note": "Luật Ban hành văn bản quy phạm pháp luật 64/2025/QH15 có hiệu lực từ 01/4/2025, thay thế Luật 80/2015/QH13 (sửa đổi bởi Luật 63/2020/QH14) mà đề cương HLU 2019 còn dẫn; được sửa đổi bởi Luật 87/2025/QH15 có hiệu lực từ 01/7/2025 — văn bản hợp nhất 54/VBHN-VPQH ngày 11/8/2025. Luật mới bỏ quy trình \"lập đề nghị xây dựng luật\" theo chương trình hằng năm kiểu cũ, tách \"quy trình xây dựng chính sách\" và bỏ thẩm quyền ban hành VBQPPL của cấp huyện (từ 01/7/2025). Dự án Luật Văn bản quy phạm pháp luật (thay thế) đang được Quốc hội khóa XVI xem xét, chưa có hiệu lực.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "VBQPPL của cơ quan nhà nước ở trung ương có hiệu lực sớm nhất bao lâu kể từ ngày thông qua hoặc ký ban hành?",
+   "options": [
+    "Không sớm hơn 45 ngày",
+    "Không sớm hơn 10 ngày",
+    "Ngay ngày ký",
+    "Sau 1 năm"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 53.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 53 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Văn bản ban hành theo trình tự, thủ tục rút gọn có thể có hiệu lực từ khi nào?",
+   "options": [
+    "Kể từ ngày thông qua hoặc ký ban hành, đồng thời phải đăng tải ngay",
+    "Sau 45 ngày như thông thường",
+    "Sau khi Chủ tịch nước công bố 15 ngày",
+    "Chỉ sau khi đăng Công báo giấy"
+   ],
+   "answer": 0,
+   "explain": "Đoạn 2 khoản 1 Điều 53.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 53 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Không sớm hơn 45 ngày",
+   "right": "Không sớm hơn 10 ngày",
+   "cases": [
+    {
+     "text": "Thông tư của Bộ trưởng",
+     "answer": "left"
+    },
+    {
+     "text": "Quyết định của Ủy ban nhân dân cấp tỉnh",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 53: trung ương 45 ngày, địa phương 10 ngày."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thời điểm có hiệu lực của VBQPPL không sớm hơn {{45 ngày}} đối với văn bản của cơ quan nhà nước ở {{trung ương}}.",
+   "bank_extra": [
+    "30 ngày",
+    "cấp tỉnh"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đối với văn bản quy phạm pháp luật của chính quyền {{địa phương}}, thời điểm có hiệu lực không sớm hơn {{10 ngày}} kể từ ngày thông qua hoặc ký ban hành.",
+   "bank_extra": [
+    "trung ương",
+    "15 ngày"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Văn bản quy định chi tiết có thể có hiệu lực muộn hơn văn bản giao quy định chi tiết.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 53: phải được ban hành để có hiệu lực cùng thời điểm với văn bản hoặc nội dung được giao quy định chi tiết."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu quy tắc về thời điểm có hiệu lực của VBQPPL.",
+   "model": "Do chính văn bản quy định nhưng không sớm hơn 45 ngày (trung ương) hoặc 10 ngày (địa phương) kể từ ngày thông qua/ký ban hành; văn bản rút gọn, trường hợp đặc biệt có thể có hiệu lực ngay nhưng phải đăng tải ngay (khoản 1 Điều 53).",
+   "keywords": [
+    "45 ngày",
+    "10 ngày",
+    "rút gọn",
+    "đăng tải"
+   ]
+  }
+ ]
+}
