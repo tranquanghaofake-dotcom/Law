@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
-import { render } from '@testing-library/svelte';
+import { render, waitFor } from '@testing-library/svelte';
 import { readFileSync } from 'node:fs';
-import { artFor, emblemFor, EMBLEM_NAMES } from '$lib/art/registry';
+import { artFor, emblemFor, EMBLEM_NAMES, EMBLEM_MORE } from '$lib/art/registry';
 import { schemeFor } from '$lib/ui/shelf';
 import Emblem from '$lib/art/Emblem.svelte';
 
@@ -22,12 +22,14 @@ describe('tranh cho nội dung mới', () => {
     for (const s of ['hien-phap', 'chung-khoan', 'lich-su-nn-pl']) for (const ch of chapters(s)) expect(emblemFor(s, ch), `${s}/${ch}`).not.toBe('sach');
     expect(emblemFor('mon-la', 'c1')).toBe('sach');
   });
-  it('huy hiệu là trang trí, mỗi tên vẽ khác nhau', () => {
-    const htmls = EMBLEM_NAMES.map((n) => {
-      const svg = render(Emblem, { props: { name: n } }).container.querySelector('svg');
-      expect(svg?.getAttribute('aria-hidden')).toBe('true');
-      return svg?.innerHTML;
-    });
+  it('huy hiệu là trang trí, mỗi tên vẽ khác nhau (huy hiệu bổ sung nạp lười nên chờ vẽ xong)', async () => {
+    const htmls: (string | undefined)[] = [];
+    for (const n of EMBLEM_NAMES) {
+      const svg = render(Emblem, { props: { name: n } }).container.querySelector('svg')!;
+      expect(svg.getAttribute('aria-hidden')).toBe('true');
+      if (EMBLEM_MORE.includes(n)) await waitFor(() => expect(svg.querySelectorAll('g > *').length).toBeGreaterThan(0));
+      htmls.push(svg.innerHTML);
+    }
     expect(new Set(htmls).size).toBe(EMBLEM_NAMES.length);
   });
 });

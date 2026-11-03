@@ -668,6 +668,7 @@ h1 { font-family: var(--font-display); font-weight: 800; letter-spacing: -.01em;
   content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 12px; z-index: -1; clear: both;
   background: linear-gradient(var(--line), var(--line)) 0 3px / 100% 1px no-repeat, linear-gradient(var(--line), var(--line)) 0 7px / 100% 1px no-repeat;
 }
+.card > .empty-art { display: block; width: 100%; max-width: 300px; height: auto; margin: 0 auto var(--sp-3); }
 .stage-art, .page-head .head-art, .subject-head .head-art { display: block; width: 100%; max-width: 420px; height: auto; margin: calc(var(--sp-2) * -1) auto var(--sp-2); }
 .stage .hero-body { display: grid; gap: var(--sp-3); min-width: 0; }
 .stage .headline { font-family: var(--font-display); }
