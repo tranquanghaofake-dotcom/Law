@@ -8,10 +8,10 @@
     {
       "q": "Theo Luật Thương mại, hàng hóa gồm những gì?",
       "options": [
-        "Mọi tài sản, kể cả quyền sử dụng đất và các quyền tài sản khác",
+        "Động sản và bất động sản, kể cả quyền sử dụng đất và quyền tài sản khác",
         "Động sản (kể cả hình thành trong tương lai) và vật gắn liền với đất đai",
-        "Chỉ hàng hóa nhập khẩu từ nước ngoài vào Việt Nam, không gồm hàng xuất khẩu",
-        "Chỉ động sản hiện có tại thời điểm giao kết hợp đồng mua bán giữa các bên"
+        "Hàng hóa nhập khẩu từ nước ngoài vào Việt Nam, không gồm hàng xuất khẩu",
+        "Động sản hiện có tại thời điểm giao kết hợp đồng, không gồm hàng hình thành sau"
       ],
       "answer": 1,
       "explain": "Khoản 2 Điều 3.",
@@ -23,8 +23,8 @@
       "options": [
         "Không, phải lập văn bản",
         "Có, hợp đồng có thể bằng lời nói",
-        "Chỉ có hiệu lực khi công chứng",
-        "Chỉ có hiệu lực với hàng dưới 50 triệu"
+        "Có, nhưng phải được công chứng sau đó",
+        "Không, hàng trên 50 triệu phải có văn bản"
       ],
       "answer": 1,
       "explain": "Khoản 1 Điều 24.",
@@ -125,13 +125,13 @@
     {
       "q": "Quy định về đấu thầu trong Luật Thương mại có áp dụng cho đấu thầu mua sắm công không?",
       "options": [
-        "Có",
-        "Không",
-        "Chỉ với gói thầu nhỏ",
-        "Chỉ với hàng hóa"
+        "Có, áp dụng cho các gói thầu mua sắm công của cơ quan nhà nước",
+        "Không, đấu thầu mua sắm công do pháp luật riêng điều chỉnh",
+        "Có, áp dụng với gói thầu có giá trị nhỏ",
+        "Có, áp dụng với gói thầu mua sắm hàng hóa"
       ],
       "answer": 1,
-      "explain": "Khoản 2 Điều 214.",
+      "explain": "Khoản 2 Điều 214: các quy định về đấu thầu trong Luật Thương mại không áp dụng đối với đấu thầu mua sắm công theo quy định của pháp luật.",
       "basis": "Điều 214 Luật Thương mại (VBHN 113/VBHN-VPQH 2025)",
       "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
     }

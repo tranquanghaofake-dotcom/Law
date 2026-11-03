@@ -26,12 +26,12 @@
   {
    "type": "mcq",
    "level": 1,
-   "q": "Hợp đồng mua bán hàng hóa có thể được thể hiện dưới hình thức nào?",
+   "q": "Phương án nào liệt kê đầy đủ các hình thức thể hiện hợp đồng mua bán hàng hóa (khoản 1 Điều 24)?",
    "options": [
     "Lời nói, văn bản hoặc hành vi cụ thể",
-    "Chỉ văn bản có chữ ký của hai bên",
-    "Chỉ văn bản công chứng tại văn phòng",
-    "Chỉ hợp đồng điện tử được ký số"
+    "Văn bản có chữ ký của cả hai bên giao kết",
+    "Văn bản được công chứng tại văn phòng",
+    "Hợp đồng điện tử được ký số của hai bên"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 24.",
@@ -114,6 +114,18 @@
     "lời nói",
     "văn bản"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hợp đồng mua bán hàng hóa được thể hiện bằng lời nói, bằng văn bản hoặc được xác lập bằng hành vi cụ thể.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 24 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 24 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)",
+    "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+   }
   }
  ]
 }

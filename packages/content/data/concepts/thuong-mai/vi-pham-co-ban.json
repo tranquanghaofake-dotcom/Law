@@ -45,8 +45,8 @@
    "q": "Chế tài hủy bỏ hợp đồng được áp dụng khi nào (trừ trường hợp miễn trách nhiệm)?",
    "options": [
     "Xảy ra vi phạm là điều kiện hủy bỏ đã thỏa thuận hoặc một bên vi phạm cơ bản",
-    "Bất kỳ vi phạm nào, kể cả vi phạm nhỏ không gây thiệt hại đáng kể",
-    "Chỉ khi Tòa án cho phép và có quyết định bằng văn bản của Tòa án tuyên bố hủy",
+    "Khi có vi phạm nhỏ không gây thiệt hại đáng kể, nếu bên kia yêu cầu",
+    "Khi Tòa án cho phép và có quyết định bằng văn bản của Tòa án tuyên bố hủy",
     "Khi một bên muốn chấm dứt hợp đồng với lý do cá nhân và không báo trước cho bên kia"
    ],
    "answer": 0,
@@ -109,6 +109,18 @@
     "điều kiện thỏa thuận",
     "một phần"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hủy bỏ hợp đồng bao gồm hủy bỏ toàn bộ hợp đồng và hủy bỏ một phần hợp đồng.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 312 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 312 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)",
+    "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+   }
   }
  ]
 }

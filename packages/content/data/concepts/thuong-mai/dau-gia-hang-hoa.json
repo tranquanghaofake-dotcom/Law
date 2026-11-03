@@ -110,6 +110,18 @@
     "trả giá lên",
     "đặt giá xuống"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Đấu giá hàng hóa là hoạt động thương mại, theo đó người bán hàng tự mình hoặc thuê người tổ chức đấu giá thực hiện việc bán hàng hóa công khai để chọn người mua trả giá cao nhất.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 185 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 185 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)",
+    "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+   }
   }
  ]
 }
