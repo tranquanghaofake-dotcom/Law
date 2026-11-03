@@ -40,3 +40,15 @@ Tổng: 28 tình huống mới; 12 khái niệm đạt ≥ 4 tình huống.
 | id#item | loại | quyết định | ghi chú |
 |---|---|---|---|
 | `lao-dong-chua-thanh-nien#-1` | tên bộ cũ | báo nhầm | bài đã ghi tên Bộ theo văn bản và chức năng nay thuộc Bộ Nội vụ |
+
+## Câu hỏi viết lại (sonnet B)
+
+### Câu Đúng/Sai đáp án Đúng thêm mới (5)
+
+| Mã | Nhận định (Đúng) | Căn cứ | Ghi chú |
+|---|---|---|---|
+| `lao-dong-2/cho-thue-lai-lao-dong#7` | Thời hạn cho thuê lại lao động đối với người lao động tối đa là 12 tháng. | Khoản 1 Điều 53 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026) | nguyên văn khớp laws/*.txt |
+| `lao-dong-2/giay-phep-lao-dong#7` | Thời hạn của giấy phép lao động tối đa là 02 năm, trường hợp gia hạn thì chỉ được gia hạn một lần với thời hạn tối đa là 02 năm. | Điều 155 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026) | nguyên văn khớp laws/*.txt |
+| `lao-dong-2/giup-viec-gia-dinh#7` | Một bên có quyền đơn phương chấm dứt hợp đồng lao động bất kỳ khi nào nhưng phải báo trước ít nhất 15 ngày. | Khoản 2 Điều 162 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026) | nguyên văn khớp laws/*.txt |
+| `lao-dong-2/hop-dong-cho-thue-lai#7` | Doanh nghiệp cho thuê lại lao động phải ký quỹ và được cấp Giấy phép hoạt động cho thuê lại lao động. | Khoản 1 Điều 54 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026) | nguyên văn khớp laws/*.txt |
+| `lao-dong-2/lao-dong-chua-thanh-nien#7` | Người từ đủ 13 tuổi đến chưa đủ 15 tuổi chỉ được làm công việc nhẹ theo danh mục do Bộ trưởng Bộ Lao động – Thương binh và Xã hội ban hành. | Khoản 3 Điều 143 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026) | nguyên văn khớp laws/*.txt |

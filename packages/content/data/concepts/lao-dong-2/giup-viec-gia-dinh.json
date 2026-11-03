@@ -120,6 +120,18 @@
     "văn bản",
     "15 ngày"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Một bên có quyền đơn phương chấm dứt hợp đồng lao động bất kỳ khi nào nhưng phải báo trước ít nhất 15 ngày.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 162 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 162 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-18-VBHN-VPQH-2026-Bo-luat-lao-dong-695336.aspx"
+   }
   }
  ]
 }

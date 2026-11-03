@@ -125,6 +125,18 @@
     "13 tuổi",
     "văn bản"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người từ đủ 13 tuổi đến chưa đủ 15 tuổi chỉ được làm công việc nhẹ theo danh mục do Bộ trưởng Bộ Lao động – Thương binh và Xã hội ban hành.",
+   "answer": true,
+   "explain": "Đúng. Khoản 3 Điều 143 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 143 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-18-VBHN-VPQH-2026-Bo-luat-lao-dong-695336.aspx"
+   }
   }
  ]
 }
