@@ -74,6 +74,11 @@
     {
      "text": "Không được đầu tư vào bất động sản",
      "answer": "left"
+    },
+    {
+     "text": "Quỹ đóng mà chứng chỉ quỹ đã chào bán ra công chúng không được mua lại theo yêu cầu",
+     "answer": "right",
+     "basis": "Khoản 40 Điều 4 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 39, 40 Điều 4; điểm d khoản 1 Điều 110."

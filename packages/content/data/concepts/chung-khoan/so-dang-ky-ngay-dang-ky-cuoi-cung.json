@@ -69,6 +69,16 @@
     {
      "text": "Không được nhận quyền phát sinh của đợt đó",
      "answer": "right"
+    },
+    {
+     "text": "Người có tên trên Sổ đăng ký tại ngày đăng ký cuối cùng được hưởng quyền phát sinh của đợt đó",
+     "answer": "left",
+     "basis": "Khoản 5 Điều 61 Luật Chứng khoán 2019"
+    },
+    {
+     "text": "Người mua chứng khoán sau ngày đăng ký cuối cùng, chưa có tên trên Sổ, không được hưởng quyền của đợt đó",
+     "answer": "right",
+     "basis": "Khoản 5 Điều 61 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 5 Điều 61."

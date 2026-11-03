@@ -74,6 +74,11 @@
     {
      "text": "Nhà đầu tư bán lại chứng chỉ quỹ trực tiếp cho quỹ theo kỳ giao dịch",
      "answer": "right"
+    },
+    {
+     "text": "Quỹ mở thông thường có chứng chỉ quỹ được mua lại theo yêu cầu của nhà đầu tư",
+     "answer": "right",
+     "basis": "Khoản 39 Điều 4 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 39, 42 Điều 4."
