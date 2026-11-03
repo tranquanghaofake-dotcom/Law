@@ -117,3 +117,11 @@ Tổng: 105 tình huống mới; 73 khái niệm đạt ≥ 4 tình huống.
 - `dieu-kien-co-dong-cong-ty-chung-khoan`, `han-che-quy-dai-chung`, `muc-phat-tien-chung-khoan` — ⚠ mức 5%, 20%, 10 lần chưa đối chiếu được với điều khoản cụ thể trong bản hợp nhất; không viết tình huống theo mức này.
 - `gia-tri-tai-san-rong`, `quan-ly-danh-muc-dau-tu`, `quan-ly-nha-nuoc-chung-khoan`, `quy-dai-chung`, `quy-hoan-doi-danh-muc`, `quy-mo`, `quyen-han-uy-ban-trong-thanh-tra`, `so-dang-ky-ngay-dang-ky-cuoi-cung`, `so-giao-dich-chung-khoan-viet-nam`, `thanh-vien-so-giao-dich-chung-khoan`, `to-chuc-xa-hoi-nghe-nghiep-chung-khoan` — các vế còn lại của khái niệm đều đã có ở câu gốc; cần thêm tình huống mới từ Điều tương ứng (đã có trong `laws/chung-khoan-vbhn-2026.txt`) trong đợt sau.
 - `giai-quyet-tranh-chap-chung-khoan`, `hoat-dong-phai-duoc-uy-ban-chap-thuan`, `menh-gia-chung-khoan` — vế còn lại trùng với câu gốc; cần đối chiếu Điều 87, Điều 13, Điều 133 để bổ sung.
+
+## Cờ dò trích dẫn (haiku-2)
+
+| id#item | loại | quyết định | ghi chú |
+|---|---|---|---|
+| `chuyen-quyen-so-huu-chung-khoan#5` | lệch nội dung | báo nhầm | khớp khoản 2 Điều 64 Luật Chứng khoán 2019 |
+| `muc-phat-tien-chung-khoan#3` (cloze) | lệch nội dung | báo nhầm | khoản 3 Điều 12 đúng với thao túng thị trường; mức phạt nằm ở Điều 132 |
+| `giai-the-pha-san-cong-ty-chung-khoan#-1` | văn bản cũ | báo nhầm | bài đã ghi Luật Phục hồi, phá sản 2025 thay Luật Phá sản 2014 |
