@@ -46,7 +46,7 @@
    "q": "Khi bồi thường bằng tiền, giá đất được xác định tại thời điểm nào?",
    "options": [
     "Thời điểm phê duyệt phương án bồi thường, hỗ trợ, tái định cư",
-    "Thời điểm có thông báo thu hồi đất chính thức của Nhà nước",
+    "Thời điểm có thông báo thu hồi đất, trước khi lập phương án bồi thường, hỗ trợ",
     "Thời điểm người dân được cấp sổ đỏ và đăng ký biến động",
     "Thời điểm khởi công dự án và bắt đầu thi công xây dựng"
    ],
@@ -110,6 +110,18 @@
     "giá đất cụ thể",
     "phê duyệt phương án"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Không có đất để bồi thường thì được bồi thường bằng tiền theo giá đất cụ thể của loại đất thu hồi.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 91 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 91 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Van-ban-hop-nhat-44-VBHN-VPQH-2026-Luat-Dat-dai-699655.aspx"
+   }
   }
  ]
 }

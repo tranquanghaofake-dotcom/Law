@@ -45,13 +45,13 @@
    "level": 1,
    "q": "Người gốc Việt Nam định cư ở nước ngoài có thể là người sử dụng đất không?",
    "options": [
-    "Có, theo Điều 4",
-    "Không bao giờ",
-    "Chỉ khi có quốc tịch Việt Nam",
-    "Chỉ đối với đất nông nghiệp"
+    "Có, thuộc đối tượng theo khoản 6 Điều 4",
+    "Không, vì đất đai thuộc sở hữu toàn dân nên bị loại",
+    "Không, vì đã từ bỏ quốc tịch khi ra nước ngoài",
+    "Không, vì không phải cá nhân trong nước"
    ],
    "answer": 0,
-   "explain": "Điều 4.",
+   "explain": "Khoản 6 Điều 4 Luật Đất đai 2024 liệt kê người gốc Việt Nam định cư ở nước ngoài là một nhóm người sử dụng đất.",
    "source": {
     "kind": "statute",
     "cite": "Điều 4 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)"
