@@ -64,6 +64,16 @@
     {
      "text": "Quan hệ bạn bè thân thiết",
      "answer": "right"
+    },
+    {
+     "text": "Hai người ký hợp đồng mua bán nhà có giấy tờ, phát sinh quyền và nghĩa vụ theo luật",
+     "answer": "left",
+     "basis": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), VD11"
+    },
+    {
+     "text": "Hàng xóm cùng chia sẻ bữa cơm mà không có quyền và nghĩa vụ theo luật",
+     "answer": "right",
+     "basis": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), VD11"
     }
    ],
    "explain": "VD11."

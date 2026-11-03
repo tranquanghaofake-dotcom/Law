@@ -73,6 +73,16 @@
     {
      "text": "Người 20 tuổi tự ký hợp đồng mua nhà",
      "answer": "right"
+    },
+    {
+     "text": "Mọi cá nhân đều có năng lực pháp luật dân sự như nhau",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 16 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Người 16 tuổi tự mình xác lập giao dịch lớn mà không cần người đại diện",
+     "answer": "right",
+     "basis": "Điều 19 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 16, 19 BLDS 2015."

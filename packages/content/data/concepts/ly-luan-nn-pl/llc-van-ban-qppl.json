@@ -72,6 +72,16 @@
     {
      "text": "Quyết định bổ nhiệm ông B làm Vụ trưởng",
      "answer": "right"
+    },
+    {
+     "text": "Nghị quyết của Hội đồng nhân dân tỉnh quy định chính sách chung cho mọi người trên địa bàn",
+     "answer": "left",
+     "basis": "Điều 2 Luật Ban hành văn bản quy phạm pháp luật 2025"
+    },
+    {
+     "text": "Quyết định xử phạt một người cụ thể vi phạm giao thông",
+     "answer": "right",
+     "basis": "Điều 2 Luật Ban hành văn bản quy phạm pháp luật 2025"
     }
    ],
    "explain": "Điều 2 Luật BHVBQPPL."

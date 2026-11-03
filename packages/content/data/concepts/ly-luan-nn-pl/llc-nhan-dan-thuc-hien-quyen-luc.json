@@ -72,6 +72,16 @@
     {
      "text": "Hội đồng nhân dân tỉnh quyết định mức học phí",
      "answer": "right"
+    },
+    {
+     "text": "Công dân trực tiếp biểu quyết trong cuộc trưng cầu ý dân về vấn đề quan trọng",
+     "answer": "left",
+     "basis": "Điều 6 Hiến pháp 2013"
+    },
+    {
+     "text": "Đại biểu Quốc hội thay mặt nhân dân thảo luận và quyết định ngân sách quốc gia",
+     "answer": "right",
+     "basis": "Điều 6 Hiến pháp 2013"
     }
    ],
    "explain": "Điều 6."

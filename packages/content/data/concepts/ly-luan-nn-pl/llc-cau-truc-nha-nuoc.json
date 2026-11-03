@@ -61,6 +61,16 @@
     {
      "text": "Hai hệ thống cơ quan nhà nước: liên bang và bang",
      "answer": "right"
+    },
+    {
+     "text": "Các địa phương chịu sự quản lý thống nhất của trung ương, chỉ có một hệ thống pháp luật chung",
+     "answer": "left",
+     "basis": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), Bài 6"
+    },
+    {
+     "text": "Các bang có hiến pháp và hệ thống cơ quan lập pháp riêng bên cạnh cơ quan liên bang",
+     "answer": "right",
+     "basis": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), Bài 6"
     }
    ],
    "explain": "Bài 6."

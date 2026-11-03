@@ -63,6 +63,16 @@
     {
      "text": "Nộp đơn khởi kiện đòi nợ",
      "answer": "right"
+    },
+    {
+     "text": "Người dân không xây nhà trên đất đã quy hoạch làm đường",
+     "answer": "left",
+     "basis": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), VD12"
+    },
+    {
+     "text": "Người dân nộp hồ sơ xin đăng ký kinh doanh để được hoạt động theo luật",
+     "answer": "right",
+     "basis": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), VD12"
     }
    ],
    "explain": "VD12."

@@ -72,6 +72,16 @@
     {
      "text": "Người 16 tuổi",
      "answer": "right"
+    },
+    {
+     "text": "Người thành niên từ đủ 18 tuổi, không thuộc trường hợp bị hạn chế theo luật",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 20 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Người chưa đủ 18 tuổi giao kết hợp đồng lớn mà chưa có người đại diện đồng ý",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 21 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 20, 21 BLDS 2015."

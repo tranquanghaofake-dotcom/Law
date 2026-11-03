@@ -71,6 +71,16 @@
     {
      "text": "Hộ kinh doanh gia đình",
      "answer": "right"
+    },
+    {
+     "text": "Công ty cổ phần được thành lập theo luật, có tài sản độc lập và tên gọi riêng",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 74 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Nhóm bạn góp tiền mua xe chung nhưng không thành lập tổ chức nào theo luật",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 74 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Khoản 1 Điều 74."

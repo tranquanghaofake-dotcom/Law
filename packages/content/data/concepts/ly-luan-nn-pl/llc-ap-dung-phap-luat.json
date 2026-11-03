@@ -63,6 +63,16 @@
     {
      "text": "Hai bên tự nguyện thực hiện hợp đồng đúng thỏa thuận",
      "answer": "right"
+    },
+    {
+     "text": "Cơ quan nhà nước ra quyết định cá biệt giải quyết vụ việc cụ thể khi đương sự không tự thỏa thuận được",
+     "answer": "left",
+     "basis": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), VD12"
+    },
+    {
+     "text": "Người dân tự thanh toán tiền theo đúng hợp đồng mà không cần cơ quan nhà nước can thiệp",
+     "answer": "right",
+     "basis": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), VD12"
     }
    ],
    "explain": "VD12."

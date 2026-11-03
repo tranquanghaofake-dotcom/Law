@@ -63,6 +63,16 @@
     {
      "text": "Trẻ 10 tuổi làm vỡ kính cửa hàng",
      "answer": "right"
+    },
+    {
+     "text": "Người lấy trộm tài sản của người khác, có lỗi và trái pháp luật",
+     "answer": "left",
+     "basis": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), VD13"
+    },
+    {
+     "text": "Người không thực hiện được nghĩa vụ do bão lớn là sự kiện bất khả kháng",
+     "answer": "right",
+     "basis": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), VD13"
     }
    ],
    "explain": "VD13: năng lực trách nhiệm pháp lý."

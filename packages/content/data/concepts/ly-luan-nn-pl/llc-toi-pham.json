@@ -73,6 +73,16 @@
     {
      "text": "Vi phạm quy định quản lý nhà nước mà không phải tội phạm",
      "answer": "right"
+    },
+    {
+     "text": "Hành vi nguy hiểm cho xã hội, có lỗi, được BLHS quy định và bị truy cứu trách nhiệm hình sự",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 8 Bộ luật Hình sự 2015"
+    },
+    {
+     "text": "Hành vi có lỗi vi phạm quản lý nhà nước, mức độ chưa đến mức bị truy cứu hình sự",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 2 Luật Xử lý vi phạm hành chính"
     }
    ],
    "explain": "Điều 8 BLHS; khoản 1 Điều 2 Luật XLVPHC."
