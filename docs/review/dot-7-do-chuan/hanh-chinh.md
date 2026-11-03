@@ -85,3 +85,12 @@ Tổng: 56 tình huống mới; 27 khái niệm đạt ≥ 4 tình huống.
 | `thu-tuc-hanh-chinh#-1`, `#0`, (4 cờ) | văn bản ngoài kho | ⚠ | Nghị định 63/2010/NĐ-CP không có trong `laws/`; nguồn ghi rõ là tài liệu seminar. ⚠ opus/Hào: kiểm tay trên vbpl.vn trước khi giữ |
 
 ⚠ opus: `pair` "Có ngân sách cấp huyện" và các câu về cấp huyện thuộc loại thuat-ngu-cu do opus xử lý (không thuộc phạm vi sửa của haiku).
+
+## Tình huống Phân biệt mới (haiku-3)
+
+| Khái niệm | Tình huống | Bên | Căn cứ |
+|---|---|---|---|
+| `khieu-nai` | Người khiếu nại quyết định hành chính phải thực hiện trong thời hiệu 90 ngày | Khiếu nại (trái) | Điều 9 Luật Khiếu nại 2011 |
+| `nguyen-tac-quan-ly-hanh-chinh` | Tập trung dân chủ trong tổ chức bộ máy quản lý hành chính nhà nước | Nhóm chính trị – xã hội (trái) | Slide bài giảng Luật Hành chính Việt Nam, Trường Đại học Luật Hà Nội, vấn đề 4 (⚠ chưa đối chiếu nguyên văn) |
+| `nguyen-tac-quan-ly-hanh-chinh` | Tổ chức khoa học, thống nhất quy trình kỹ thuật của bộ máy quản lý hành chính | Nhóm tổ chức – kỹ thuật (phải) | Slide bài giảng Luật Hành chính Việt Nam, Trường Đại học Luật Hà Nội, vấn đề 4 (⚠ chưa đối chiếu nguyên văn) |
+| `phuong-phap-quan-ly-hanh-chinh` | Thuyết phục, giáo dục đối tượng quản lý để tự giác thực hiện pháp luật | Phương pháp quản lý (phải) | Slide bài giảng Luật Hành chính Việt Nam, Trường Đại học Luật Hà Nội, vấn đề 5 (⚠ chưa đối chiếu nguyên văn) |
