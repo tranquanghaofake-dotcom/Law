@@ -4,14 +4,11 @@ import { fold } from './conceptSearch';
 /** Tên in trên bìa: bỏ phần giải thích trong ngoặc ở cuối ("Luật Thương mại 1 (doanh nghiệp, …)" → "Luật Thương mại 1"). */
 export const coverTitle = (title: string): string => title.replace(/\s*\([^()]*\)\s*$/, '').trim();
 
-/** Phần chữ trên bìa: dòng nhỏ ("LUẬT"/"PHÁP LUẬT" khi tên bắt đầu như vậy), tên môn, số học phần ở cuối (nếu có). */
-export function coverParts(title: string): { kicker: string; name: string; num: string | null } {
-  let name = title.trim();
-  let kicker = '';
-  const head = /^(Pháp luật|Luật)\s+(.+)$/i.exec(name);
-  if (head) { kicker = head[1].toLocaleUpperCase('vi'); name = head[2]; }
+/** Phần chữ trên bìa: tên môn (bỏ chữ "Luật" ở đầu — "Pháp luật …" giữ nguyên) và số học phần ở cuối (nếu có). */
+export function coverParts(title: string): { name: string; num: string | null } {
+  const name = title.trim().replace(/^Luật\s+(?=\S)/, '');
   const tail = /^(.+?)\s+(\d+)$/.exec(name);
-  return tail ? { kicker, name: tail[1], num: tail[2] } : { kicker, name, num: null };
+  return tail ? { name: tail[1], num: tail[2] } : { name, num: null };
 }
 
 export type FitOptions = { maxWidth: number; maxLines: number; maxSize: number; minSize: number; charW: number; maxHeight?: number };

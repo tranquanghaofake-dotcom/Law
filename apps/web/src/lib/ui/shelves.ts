@@ -78,3 +78,16 @@ export function mixWhite(hex: string, amount: number, base = '#ffffff'): string 
   });
   return '#' + ch.map((c) => c.toString(16).padStart(2, '0')).join('');
 }
+
+/**
+ * Màu chữ tên môn và gradient thân bìa theo màu kệ (bìa v3, theo bìa sách luật NXB): thân xanh (Hình sự, Dân sự) dùng
+ * chữ vàng như bìa Bộ luật TTHS, còn lại chữ trắng; kệ Hiến pháp (đỏ gần khối trên đỏ cờ) phai dần sang cam như bìa
+ * Bộ luật Dân sự để tách khỏi khối trên.
+ */
+export function coverStyle(color: string): { ink: string; fadeTo: string | null } {
+  const id = SHELVES.find((k) => k.color.toLowerCase() === color.toLowerCase())?.id;
+  return {
+    ink: id === 'hinh-su' || id === 'dan-su' ? '#F6D35B' : '#FFFFFF',
+    fadeTo: id === 'cong-phap' ? '#E0702E' : null,
+  };
+}

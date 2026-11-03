@@ -1,23 +1,23 @@
 import { describe, expect, it } from 'vitest';
 import { coverTitle, coverParts, fitTitle, subjectHaystack, matchSubject } from '$lib/ui/bookCover';
-import { mixWhite, mixBlack } from '$lib/ui/shelves';
+import { mixWhite, mixBlack, coverStyle, SHELVES, contrastRatio } from '$lib/ui/shelves';
 
 const OPTS = { maxWidth: 100, maxLines: 3, maxSize: 17, minSize: 10, charW: 0.62 };
 /** Bề rộng ước tính của dòng dài nhất ở cỡ đã chọn. */
 const widest = (r: { lines: string[]; size: number }) => Math.max(...r.lines.map((l) => l.length)) * OPTS.charW * r.size;
 
-describe('bìa sách giáo trình (spec phần nhìn đợt 4 §3.2, bìa v2)', () => {
+describe('bìa sách giáo trình (spec phần nhìn đợt 4 §3.2, bìa v3)', () => {
   it('coverTitle bỏ phần trong ngoặc ở cuối', () => {
     expect(coverTitle('Luật Thương mại 1 (doanh nghiệp, hợp tác xã, phá sản)')).toBe('Luật Thương mại 1');
     expect(coverTitle('Luật Hiến pháp')).toBe('Luật Hiến pháp');
   });
-  it('coverParts: tách dòng nhỏ "LUẬT"/"PHÁP LUẬT", tên môn và số học phần', () => {
-    expect(coverParts('Luật Dân sự 1')).toEqual({ kicker: 'LUẬT', name: 'Dân sự', num: '1' });
-    expect(coverParts('Luật Thương mại 2')).toEqual({ kicker: 'LUẬT', name: 'Thương mại', num: '2' });
-    expect(coverParts('Luật Hiến pháp')).toEqual({ kicker: 'LUẬT', name: 'Hiến pháp', num: null });
-    expect(coverParts('Pháp luật tài chính doanh nghiệp')).toEqual({ kicker: 'PHÁP LUẬT', name: 'tài chính doanh nghiệp', num: null });
-    expect(coverParts('Lý luận chung về Nhà nước và Pháp luật')).toEqual({ kicker: '', name: 'Lý luận chung về Nhà nước và Pháp luật', num: null });
-    expect(coverParts('Luật')).toEqual({ kicker: '', name: 'Luật', num: null });
+  it('coverParts: bỏ chữ "Luật" ở đầu, tách số học phần ở cuối; "Pháp luật …" giữ nguyên', () => {
+    expect(coverParts('Luật Dân sự 1')).toEqual({ name: 'Dân sự', num: '1' });
+    expect(coverParts('Luật Thương mại 2')).toEqual({ name: 'Thương mại', num: '2' });
+    expect(coverParts('Luật Hiến pháp')).toEqual({ name: 'Hiến pháp', num: null });
+    expect(coverParts('Pháp luật tài chính doanh nghiệp')).toEqual({ name: 'Pháp luật tài chính doanh nghiệp', num: null });
+    expect(coverParts('Lý luận chung về Nhà nước và Pháp luật')).toEqual({ name: 'Lý luận chung về Nhà nước và Pháp luật', num: null });
+    expect(coverParts('Luật')).toEqual({ name: 'Luật', num: null });
   });
   it('fitTitle: tên ngắn một dòng cỡ tối đa, in hoa', () => {
     expect(fitTitle('Hiến pháp', OPTS)).toEqual({ lines: ['HIẾN PHÁP'], size: 17 });
@@ -82,6 +82,15 @@ describe('bìa sách giáo trình (spec phần nhìn đợt 4 §3.2, bìa v2)', 
     expect(mixWhite('#1F5F4A', 0)).toBe('#1f5f4a');
     expect(mixWhite('#000000', 0.5)).toBe('#808080');
     expect(mixBlack('#ffffff', 0.5)).toBe('#808080');
+  });
+  it('coverStyle: chữ tên vàng cho kệ Hình sự/Dân sự (thân xanh), trắng cho kệ khác; kệ Hiến pháp có gradient sang cam', () => {
+    const by = (id: string) => SHELVES.find((k) => k.id === id)!.color;
+    expect(coverStyle(by('hinh-su')).ink).toBe('#F6D35B');
+    expect(coverStyle(by('dan-su')).ink).toBe('#F6D35B');
+    expect(coverStyle(by('kinh-te'))).toEqual({ ink: '#FFFFFF', fadeTo: null });
+    expect(coverStyle(by('cong-phap')).fadeTo).toBe('#E0702E');
+    expect(coverStyle('#123456')).toEqual({ ink: '#FFFFFF', fadeTo: null });
+    for (const k of SHELVES) expect(contrastRatio(k.color, coverStyle(k.color).ink), k.id).toBeGreaterThanOrEqual(4.4);
   });
   it('tìm không dấu, có chữ cái đầu: "ds" ra Dân sự 1, Dân sự 2, Tố tụng dân sự', () => {
     const ds1 = { id: 'dan-su', title: 'Luật Dân sự 1', short: 'Dân sự 1' };
