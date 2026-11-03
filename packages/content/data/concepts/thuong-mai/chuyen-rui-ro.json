@@ -70,6 +70,16 @@
     {
      "text": "Hàng hỏng sau khi đã giao tại địa điểm thỏa thuận",
      "answer": "right"
+    },
+    {
+     "text": "Bên bán chưa giao hàng tại địa điểm đã thỏa thuận, hàng hư hỏng trên đường",
+     "answer": "left",
+     "basis": "Điều 57 Luật Thương mại 2005"
+    },
+    {
+     "text": "Hàng bị mất sau khi bên mua đã nhận tại địa điểm giao theo hợp đồng",
+     "answer": "right",
+     "basis": "Điều 57 Luật Thương mại 2005"
     }
    ],
    "explain": "Điều 57."

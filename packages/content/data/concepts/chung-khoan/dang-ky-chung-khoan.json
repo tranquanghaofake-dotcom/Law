@@ -75,6 +75,11 @@
     {
      "text": "Lập Sổ đăng ký người sở hữu chứng khoán",
      "answer": "left"
+    },
+    {
+     "text": "Tổng công ty lưu ký lập Sổ đăng ký người sở hữu chứng khoán",
+     "answer": "left",
+     "basis": "Khoản 4 Điều 61 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 33, 34 Điều 4."

@@ -73,6 +73,16 @@
     {
      "text": "Tổn thất uy tín của tác giả sáng chế",
      "answer": "right"
+    },
+    {
+     "text": "Chi phí hợp lý để ngăn chặn hàng giả đã bỏ ra",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 204 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Tổn thất danh dự của tác giả do sản phẩm nhái bị chê bai",
+     "answer": "right",
+     "basis": "Điểm b khoản 1 Điều 204 Luật Sở hữu trí tuệ"
     }
    ],
    "explain": "Khoản 1 Điều 204."

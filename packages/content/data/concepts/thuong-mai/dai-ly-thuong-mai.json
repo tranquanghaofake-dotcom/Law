@@ -71,6 +71,16 @@
     {
      "text": "Bên trung gian nhân danh bên thuê",
      "answer": "right"
+    },
+    {
+     "text": "Bên đại lý nhân danh mình bán hàng hóa do bên giao đại lý cung ứng ra thị trường",
+     "answer": "left",
+     "basis": "Điều 166 Luật Thương mại 2005"
+    },
+    {
+     "text": "Người được ủy nhiệm ký hợp đồng trên danh nghĩa của doanh nghiệp giao đại diện",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 141 Luật Thương mại 2005"
     }
    ],
    "explain": "Điều 141, 166."

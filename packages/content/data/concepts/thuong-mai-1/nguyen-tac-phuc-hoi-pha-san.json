@@ -72,6 +72,16 @@
     {
      "text": "Chỉ được thực hiện khi bảo đảm thanh toán hết các khoản nợ",
      "answer": "right"
+    },
+    {
+     "text": "Thẩm phán ra quyết định trong 30 ngày kể từ ngày thụ lý đơn yêu cầu phá sản",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 41 Luật Phục hồi, phá sản 2025"
+    },
+    {
+     "text": "Doanh nghiệp không mất khả năng thanh toán tự quyết định chấm dứt hoạt động bằng nghị quyết",
+     "answer": "right",
+     "basis": "Điều 207 Luật Doanh nghiệp 2020"
     }
    ],
    "explain": "Điều 5 Luật Phục hồi, phá sản; khoản 2 Điều 207 Luật Doanh nghiệp."

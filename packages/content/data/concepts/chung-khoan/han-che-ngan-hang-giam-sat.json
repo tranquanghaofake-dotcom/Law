@@ -74,6 +74,11 @@
     {
      "text": "Mua lại trái phiếu từ quỹ mình đang giám sát",
      "answer": "right"
+    },
+    {
+     "text": "Cung cấp thông tin về quỹ cho cơ quan quản lý khi được yêu cầu",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 117 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Điều 116, 117."

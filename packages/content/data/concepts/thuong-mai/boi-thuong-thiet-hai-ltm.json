@@ -71,6 +71,21 @@
     {
      "text": "Chỉ chịu phạt vi phạm",
      "answer": "right"
+    },
+    {
+     "text": "Bên bán vi phạm hợp đồng có thỏa thuận phạt, bên mua vừa đòi phạt vừa đòi bồi thường thiệt hại",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 307 Luật Thương mại 2005"
+    },
+    {
+     "text": "Hợp đồng thương mại có thỏa thuận phạt; bên vi phạm còn phải bồi thường thiệt hại thực tế đã gây ra",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 307 Luật Thương mại 2005; Điều 303"
+    },
+    {
+     "text": "Hai bên đã thỏa thuận phạt nhưng không thỏa thuận bồi thường: bên bị vi phạm chỉ được chọn một trong hai",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 418 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 307 LTM; Điều 418 BLDS."

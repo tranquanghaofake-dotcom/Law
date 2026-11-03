@@ -70,6 +70,16 @@
     {
      "text": "Do Tòa án xét xử theo Bộ luật Hình sự",
      "answer": "right"
+    },
+    {
+     "text": "Bị phạt tiền do vi phạm quy định về công bố thông tin",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 132 Luật Chứng khoán 2019"
+    },
+    {
+     "text": "Bị truy cứu trách nhiệm hình sự về tội thao túng thị trường chứng khoán",
+     "answer": "right",
+     "basis": "Điều 211 Bộ luật Hình sự 2015"
     }
    ],
    "explain": "Điều 132."

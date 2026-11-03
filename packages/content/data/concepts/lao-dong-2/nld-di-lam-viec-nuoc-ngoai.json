@@ -71,6 +71,16 @@
     {
      "text": "Người có quốc tịch nước ngoài, cần giấy phép lao động",
      "answer": "right"
+    },
+    {
+     "text": "Anh Tuấn, 25 tuổi, cư trú tại Việt Nam, sang Nhật làm việc theo hợp đồng",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 3 Luật Người lao động Việt Nam đi làm việc ở nước ngoài theo hợp đồng 2020"
+    },
+    {
+     "text": "Chị người Hàn Quốc sang Việt Nam làm quản lý cho công ty có giấy phép lao động",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 151 Bộ luật Lao động 2019"
     }
    ],
    "explain": "Điều 3 Luật 69/2020; Điều 151 BLLĐ."

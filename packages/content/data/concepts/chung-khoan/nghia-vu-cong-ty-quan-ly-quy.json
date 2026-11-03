@@ -75,6 +75,11 @@
     {
      "text": "Lưu ký toàn bộ tài sản ủy thác",
      "answer": "left"
+    },
+    {
+     "text": "Tách biệt tài sản của từng khách hàng với tài sản của công ty",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 89 Luật Chứng khoán 2019 (nghĩa vụ chung dẫn chiếu)"
     }
    ],
    "explain": "Khoản 1 Điều 90 dẫn chiếu các khoản 1, 2, 4, 5, 6, 7, 8, 9, 10, 12 Điều 89."

@@ -72,6 +72,16 @@
     {
      "text": "Biểu quyết theo số cổ phần",
      "answer": "right"
+    },
+    {
+     "text": "Nghị quyết thông qua khi chủ nợ đại diện từ 65% tổng số nợ không có bảo đảm trở lên",
+     "answer": "left",
+     "basis": "Khoản 5 Điều 61 Luật Phục hồi, phá sản 2025"
+    },
+    {
+     "text": "Đại hội đồng cổ đông thông qua nghị quyết bằng đa số cổ phần có quyền biểu quyết",
+     "answer": "right",
+     "basis": "Luật Doanh nghiệp 2020 (biểu quyết theo số cổ phần; chưa đối chiếu điều cụ thể)"
     }
    ],
    "explain": "Điều 61 Luật Phục hồi, phá sản; Luật Doanh nghiệp."

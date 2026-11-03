@@ -69,6 +69,16 @@
     {
      "text": "Doanh nghiệp cho thuê lại – bên thuê lại",
      "answer": "right"
+    },
+    {
+     "text": "Doanh nghiệp giao kết hợp đồng để người lao động được chuyển sang làm cho bên thuê",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 52 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Hợp đồng ghi địa điểm làm việc và vị trí việc làm cần sử dụng lao động thuê lại",
+     "answer": "right",
+     "basis": "Điểm a khoản 2 Điều 55 Bộ luật Lao động 2019"
     }
    ],
    "explain": "Điều 52, 55."

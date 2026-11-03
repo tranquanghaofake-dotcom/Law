@@ -70,6 +70,21 @@
     {
      "text": "Tự ký HĐLĐ với công ty ở Đức",
      "answer": "right"
+    },
+    {
+     "text": "Doanh nghiệp Việt Nam trúng thầu công trình ở nước ngoài và ký hợp đồng đưa người đi làm",
+     "answer": "left",
+     "basis": "Điểm b khoản 2 Điều 5 Luật Người lao động Việt Nam đi làm việc ở nước ngoài theo hợp đồng 2020"
+    },
+    {
+     "text": "Doanh nghiệp đưa người lao động đi đào tạo nâng cao tay nghề ở nước ngoài",
+     "answer": "left",
+     "basis": "Điểm c khoản 2 Điều 5 Luật Người lao động Việt Nam đi làm việc ở nước ngoài theo hợp đồng 2020"
+    },
+    {
+     "text": "Người lao động tự ký hợp đồng lao động với chủ sử dụng lao động nước ngoài",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 5 Luật Người lao động Việt Nam đi làm việc ở nước ngoài theo hợp đồng 2020"
     }
    ],
    "explain": "Điều 5."

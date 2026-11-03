@@ -69,6 +69,16 @@
     {
      "text": "Mức phạt tối đa 2.000.000.000 đồng",
      "answer": "right"
+    },
+    {
+     "text": "Anh A, công dân, bị phạt tiền vì xả rác bừa bãi nơi công cộng",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 23 Luật Xử lý vi phạm hành chính"
+    },
+    {
+     "text": "Công ty TNHH bị phạt tiền khi xả thải vượt quy chuẩn môi trường",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 23 Luật Xử lý vi phạm hành chính (khung tổ chức); điểm e khoản 1 Điều 3"
     }
    ],
    "explain": "Điều 23."

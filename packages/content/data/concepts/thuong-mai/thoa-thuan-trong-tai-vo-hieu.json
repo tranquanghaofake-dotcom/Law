@@ -70,6 +70,16 @@
     {
      "text": "Hợp đồng chính bị hủy bỏ",
      "answer": "right"
+    },
+    {
+     "text": "Các bên đưa tranh chấp ly hôn ra trọng tài để giải quyết",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 18 Luật Trọng tài thương mại 2010 (ngoài thẩm quyền trọng tài)"
+    },
+    {
+     "text": "Người ký thỏa thuận có đủ thẩm quyền và tranh chấp mua bán hàng hóa thuộc phạm vi trọng tài",
+     "answer": "right",
+     "basis": "Điều 18 Luật Trọng tài thương mại 2010"
     }
    ],
    "explain": "Điều 18, 19."

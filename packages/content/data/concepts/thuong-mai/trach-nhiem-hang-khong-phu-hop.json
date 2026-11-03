@@ -70,6 +70,16 @@
     {
      "text": "Khiếm khuyết bên mua đã biết khi ký hợp đồng",
      "answer": "right"
+    },
+    {
+     "text": "Khiếm khuyết phát sinh sau khi chuyển rủi ro do bên bán vi phạm hợp đồng",
+     "answer": "left",
+     "basis": "Khoản 3 Điều 40 Luật Thương mại 2005"
+    },
+    {
+     "text": "Hàng có khiếm khuyết mà bên mua biết rõ từ lúc giao kết hợp đồng",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 40 Luật Thương mại 2005"
     }
    ],
    "explain": "Điều 40."

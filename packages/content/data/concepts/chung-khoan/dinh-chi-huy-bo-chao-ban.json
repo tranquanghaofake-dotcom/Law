@@ -74,6 +74,11 @@
     {
      "text": "IPO không đạt tỷ lệ tối thiểu bán cho 100 nhà đầu tư không phải cổ đông lớn",
      "answer": "right"
+    },
+    {
+     "text": "Hồ sơ đăng ký chào bán có thông tin sai lệch ảnh hưởng đến quyết định đầu tư",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 27 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Điều 27 và Điều 28."

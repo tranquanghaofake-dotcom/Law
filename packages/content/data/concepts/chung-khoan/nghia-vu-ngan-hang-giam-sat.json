@@ -75,6 +75,11 @@
     {
      "text": "Tự chọn cổ phiếu để quỹ đầu tư",
      "answer": "right"
+    },
+    {
+     "text": "Thực hiện lưu ký tài sản của quỹ đại chúng",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 116 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 2 Điều 116."

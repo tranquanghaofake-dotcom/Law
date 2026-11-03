@@ -69,6 +69,16 @@
     {
      "text": "Thu hồi Giấy phép thành lập và hoạt động kinh doanh chứng khoán",
      "answer": "right"
+    },
+    {
+     "text": "Đình chỉ hoạt động kinh doanh chứng khoán theo quyết định của Ủy ban",
+     "answer": "right",
+     "basis": "Mục 3 Chương Luật Chứng khoán 2019 (tổ chức lại, đình chỉ và thu hồi giấy phép)"
+    },
+    {
+     "text": "Công ty chứng khoán không đạt chỉ tiêu an toàn tài chính bị đưa vào diện cảnh báo",
+     "answer": "left",
+     "basis": "Khoản 3 Điều 92 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Điều 92 và Điều 95."

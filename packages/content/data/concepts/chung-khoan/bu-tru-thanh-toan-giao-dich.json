@@ -72,6 +72,16 @@
     {
      "text": "Thực hiện qua ngân hàng thanh toán",
      "answer": "right"
+    },
+    {
+     "text": "Chuyển giao chứng khoán bằng bút toán ghi sổ trên tài khoản lưu ký tại Tổng công ty",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 63 Luật Chứng khoán 2019"
+    },
+    {
+     "text": "Tiền giao dịch được thanh toán qua ngân hàng do Ngân hàng Nhà nước hoặc ngân hàng thương mại thực hiện",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 69 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 2 Điều 63."

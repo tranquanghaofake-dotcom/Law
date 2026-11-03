@@ -74,6 +74,11 @@
     {
      "text": "Nhà đầu tư cá nhân bán lỗ cổ phiếu",
      "answer": "right"
+    },
+    {
+     "text": "Gian lận, lừa đảo, làm giả tài liệu để huy động tiền từ nhà đầu tư",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 12 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Điều 12."
