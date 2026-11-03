@@ -22,9 +22,9 @@
       "q": "C không hứa hẹn trước, sau khi biết D giết người đã giấu con dao cho D. C có phải là đồng phạm không?",
       "options": [
         "Không, C có thể phạm tội che giấu tội phạm",
-        "Có, C là người giúp sức",
-        "Có, C là người thực hành",
-        "C không phải chịu trách nhiệm gì"
+        "Có, C là người giúp sức cho D trong vụ án này",
+        "Có, C là người thực hành tội giết người cùng D",
+        "C không phải chịu trách nhiệm gì cả trong vụ án"
       ],
       "answer": 0,
       "explain": "Khoản 1 Điều 18.",
@@ -35,9 +35,9 @@
       "q": "Kẻ trộm đã bỏ chạy ra xa và không còn đe dọa, chủ nhà đuổi theo đánh trọng thương. Hành vi của chủ nhà là gì?",
       "options": [
         "Không phải phòng vệ chính đáng vì hành vi xâm phạm đã chấm dứt",
-        "Phòng vệ chính đáng",
-        "Tình thế cấp thiết",
-        "Sự kiện bất ngờ"
+        "Phòng vệ chính đáng vì bảo vệ tài sản và người thân trong nhà của mình",
+        "Tình thế cấp thiết để bảo vệ tài sản của chủ nhà khỏi kẻ trộm",
+        "Sự kiện bất ngờ không thể lường trước được của chủ nhà"
       ],
       "answer": 0,
       "explain": "Phòng vệ chính đáng chống trả người \"đang có hành vi xâm phạm\" (khoản 1 Điều 22).",
@@ -113,9 +113,9 @@
       "q": "Tòa án xử phạt bị cáo 4 năm tù. Có thể cho hưởng án treo không?",
       "options": [
         "Không, vì án treo chỉ khi phạt tù không quá 03 năm",
-        "Có",
-        "Có nếu bị cáo bồi thường",
-        "Có nếu bị cáo dưới 18 tuổi"
+        "Có, nếu bị cáo đã bồi thường đầy đủ thiệt hại",
+        "Có nếu bị cáo bồi thường đầy đủ và có nơi cư trú rõ ràng",
+        "Có nếu bị cáo dưới 18 tuổi tại thời điểm xét xử"
       ],
       "answer": 0,
       "explain": "Khoản 1 Điều 65.",

@@ -30,9 +30,9 @@
    "q": "Người từ đủ 14 đến dưới 16 tuổi chuẩn bị phạm tội nào thì phải chịu TNHS?",
    "options": [
     "Tội giết người (Điều 123), tội cướp tài sản (Điều 168)",
-    "Mọi tội rất nghiêm trọng",
-    "Tội trộm cắp tài sản",
-    "Không tội nào"
+    "Mọi tội rất nghiêm trọng do cố ý gây ra thiệt hại",
+    "Tội trộm cắp tài sản và tội lừa đảo chiếm đoạt",
+    "Không tội nào, kể cả các tội nghiêm trọng khác do cố ý gây ra"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 14.",
@@ -47,9 +47,9 @@
    "q": "Hành vi nào là chuẩn bị phạm tội?",
    "options": [
     "Sửa soạn công cụ để thực hiện tội phạm",
-    "Đã thực hiện xong hành vi khách quan",
+    "Đã thực hiện xong hành vi khách quan tội",
     "Che giấu tang vật sau khi phạm tội",
-    "Không tố giác tội phạm"
+    "Không tố giác tội phạm đã biết trước đó"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 14.",

@@ -31,9 +31,9 @@
    "q": "Biện pháp xử lý chuyển hướng được ưu tiên áp dụng ở giai đoạn tố tụng nào?",
    "options": [
     "Tất cả các giai đoạn điều tra, truy tố, xét xử",
-    "Chỉ giai đoạn xét xử",
-    "Chỉ giai đoạn điều tra",
-    "Chỉ sau khi chấp hành án"
+    "Chỉ giai đoạn xét xử và thi hành án hình sự",
+    "Chỉ giai đoạn điều tra và chuẩn bị truy tố",
+    "Chỉ sau khi chấp hành xong án phạt tù chính của mình"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 11.",
@@ -48,9 +48,9 @@
    "q": "Biện pháp nào là biện pháp xử lý chuyển hướng KHÔNG thuộc nhóm tại cộng đồng?",
    "options": [
     "Giáo dục tại trường giáo dưỡng",
-    "Khiển trách",
-    "Xin lỗi bị hại",
-    "Quản thúc tại gia đình"
+    "Khiển trách công khai trước dân",
+    "Xin lỗi bị hại và gia đình bị hại",
+    "Quản thúc tại gia đình, cộng đồng"
    ],
    "answer": 0,
    "explain": "Khoản 8 Điều 3; khoản 12 Điều 36.",

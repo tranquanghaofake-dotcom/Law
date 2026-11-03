@@ -47,9 +47,9 @@
    "q": "Khoản 3 Điều 29 áp dụng với loại tội nào?",
    "options": [
     "Tội phạm nghiêm trọng do vô ý hoặc tội phạm ít nghiêm trọng",
-    "Mọi tội phạm",
-    "Chỉ tội rất nghiêm trọng",
-    "Chỉ tội xâm phạm an ninh quốc gia"
+    "Mọi tội phạm nghiêm trọng và rất nghiêm trọng do cố ý",
+    "Chỉ tội rất nghiêm trọng và đặc biệt nghiêm trọng đã thi hành",
+    "Chỉ tội xâm phạm an ninh quốc gia và trật tự công cộng"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 29.",

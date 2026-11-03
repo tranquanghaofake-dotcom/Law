@@ -28,9 +28,9 @@
    "q": "Yếu tố phân biệt phạm tội chưa đạt với tự ý nửa chừng chấm dứt việc phạm tội là gì?",
    "options": [
     "Phạm tội chưa đạt dừng lại vì nguyên nhân ngoài ý muốn",
-    "Phạm tội chưa đạt chưa bắt đầu thực hiện tội phạm",
-    "Tự ý nửa chừng dừng lại vì bị ngăn cản",
-    "Không có sự khác nhau"
+    "Phạm tội chưa đạt chưa thực hiện hành vi tội phạm nào cả",
+    "Tự ý nửa chừng dừng lại vì bị người khác ngăn cản hành vi",
+    "Không có sự khác nhau về ý chí của người phạm tội"
    ],
    "answer": 0,
    "explain": "Điều 15, 16.",
