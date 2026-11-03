@@ -73,6 +73,16 @@
     {
      "text": "Chi nhánh ngân hàng nước ngoài",
      "answer": "right"
+    },
+    {
+     "text": "Ngân hàng thương mại cổ phần được thành lập và hoạt động theo Luật Các tổ chức tín dụng",
+     "answer": "left",
+     "basis": "Khoản 38 Điều 4 Luật Các tổ chức tín dụng 2024"
+    },
+    {
+     "text": "Công ty cổ phần sản xuất bánh kẹo đăng ký kinh doanh theo Luật Doanh nghiệp",
+     "answer": "right",
+     "basis": "Khoản 38 Điều 4 Luật Các tổ chức tín dụng 2024"
     }
    ],
    "explain": "Khoản 5, 38 Điều 4."

@@ -73,6 +73,16 @@
     {
      "text": "Tăng thuế suất thuế thu nhập doanh nghiệp",
      "answer": "right"
+    },
+    {
+     "text": "Ngân hàng Nhà nước quy định lãi suất tái cấp vốn cho tổ chức tín dụng",
+     "answer": "left",
+     "basis": "Điều 10 Luật Ngân hàng Nhà nước 2010 (tái cấp vốn, lãi suất)"
+    },
+    {
+     "text": "Nhà nước tăng chi ngân sách cho công trình hạ tầng giao thông",
+     "answer": "right",
+     "basis": "Điều 10 Luật Ngân hàng Nhà nước 2010 (không liệt kê chi ngân sách)"
     }
    ],
    "explain": "Điều 10 Luật Ngân hàng Nhà nước."

@@ -72,6 +72,16 @@
     {
      "text": "Doanh nghiệp thanh toán tiền xuất khẩu, nhập khẩu hàng hóa",
      "answer": "right"
+    },
+    {
+     "text": "Doanh nghiệp Việt vay tiền từ ngân hàng nước ngoài và trả nợ gốc theo hợp đồng vay",
+     "answer": "left",
+     "basis": "Điểm c khoản 4 Điều 4 Pháp lệnh Ngoại hối 2005"
+    },
+    {
+     "text": "Người cư trú trả phí tư vấn cho công ty nước ngoài, không nhằm mục đích chuyển vốn",
+     "answer": "right",
+     "basis": "Khoản 5 Điều 4 Pháp lệnh Ngoại hối 2005"
     }
    ],
    "explain": "Khoản 4, 5, 6 Điều 4."

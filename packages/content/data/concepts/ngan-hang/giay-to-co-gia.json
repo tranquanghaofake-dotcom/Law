@@ -73,6 +73,16 @@
     {
      "text": "Cổ phiếu ngân hàng",
      "answer": "right"
+    },
+    {
+     "text": "Kỳ phiếu ngân hàng ghi nhận nghĩa vụ trả nợ kèm lãi suất theo kỳ hạn",
+     "answer": "left",
+     "basis": "Khoản 8 Điều 6 Luật Ngân hàng Nhà nước 2010"
+    },
+    {
+     "text": "Giấy chứng nhận quyền sở hữu nhà ở, không ghi nhận nghĩa vụ trả nợ",
+     "answer": "right",
+     "basis": "Khoản 8 Điều 6 Luật Ngân hàng Nhà nước 2010 (không xác nhận nghĩa vụ trả nợ)"
     }
    ],
    "explain": "Khoản 8 Điều 6."
