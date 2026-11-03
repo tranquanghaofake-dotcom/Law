@@ -29,9 +29,9 @@
    "q": "Sự biến pháp lý là gì?",
    "options": [
     "Hiện tượng xảy ra ngoài ý chí con người nhưng được pháp luật gắn với hậu quả pháp lý",
-    "Hành vi có ý chí của chủ thể",
-    "Quyết định của tòa án",
-    "Quy phạm pháp luật"
+    "Hành vi có ý chí của chủ thể nhưng không được pháp luật thừa nhận hoặc gắn với hậu quả",
+    "Quyết định của tòa án có hiệu lực, buộc các bên phải thực hiện theo nội dung đã định",
+    "Quy phạm pháp luật do nhà nước ban hành để điều chỉnh các hành vi của con người"
    ],
    "answer": 0,
    "explain": "VD11."
@@ -42,9 +42,9 @@
    "q": "Việc A ký hợp đồng thuê nhà của B là loại sự kiện pháp lý nào?",
    "options": [
     "Hành vi pháp lý hợp pháp làm phát sinh quan hệ pháp luật",
-    "Sự biến pháp lý",
-    "Hành vi trái pháp luật",
-    "Không phải sự kiện pháp lý"
+    "Hành vi trái pháp luật gây thiệt hại cho người khác",
+    "Sự biến pháp lý, xảy ra ngoài ý chí và không có hậu quả",
+    "Không phải sự kiện pháp lý, chỉ là hoạt động thường ngày"
    ],
    "answer": 0,
    "explain": "VD11."

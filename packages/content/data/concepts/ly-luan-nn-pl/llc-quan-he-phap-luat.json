@@ -32,7 +32,7 @@
    "options": [
     "Chủ thể, khách thể, nội dung",
     "Giả định, quy định, chế tài",
-    "Hành vi, lỗi, hậu quả",
+    "Hành vi, lỗi, hậu quả xảy ra",
     "Quyền, nghĩa vụ, chế tài"
    ],
    "answer": 0,
@@ -44,9 +44,9 @@
    "q": "Khách thể của quan hệ pháp luật là gì?",
    "options": [
     "Lợi ích, giá trị xã hội mà các chủ thể hướng tới khi tham gia quan hệ",
-    "Hành vi vi phạm",
-    "Quy phạm pháp luật",
-    "Cơ quan nhà nước"
+    "Hành vi trái pháp luật mà chủ thể đã thực hiện trong quá trình tham gia",
+    "Quy phạm pháp luật do cơ quan nhà nước có thẩm quyền ban hành cho chủ thể",
+    "Cơ quan nhà nước và tổ chức có thẩm quyền quản lý việc thực hiện quyền"
    ],
    "answer": 0,
    "explain": "VD11."

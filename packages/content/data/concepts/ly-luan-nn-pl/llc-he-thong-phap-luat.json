@@ -29,9 +29,9 @@
    "q": "Căn cứ phân chia các ngành luật?",
    "options": [
     "Đối tượng điều chỉnh và phương pháp điều chỉnh",
-    "Số lượng điều luật",
-    "Cơ quan ban hành",
-    "Thời điểm ban hành"
+    "Số lượng điều luật và độ dài của văn bản",
+    "Cơ quan ban hành và thẩm quyền ký văn bản",
+    "Thời điểm ban hành và thời hạn có hiệu lực pháp lý"
    ],
    "answer": 0,
    "explain": "Lý luận chung về hệ thống pháp luật."
@@ -42,9 +42,9 @@
    "q": "Chế định pháp luật là gì?",
    "options": [
     "Nhóm quy phạm điều chỉnh một nhóm quan hệ xã hội cùng loại trong ngành luật",
-    "Một điều luật",
-    "Một văn bản luật",
-    "Toàn bộ pháp luật của một nước"
+    "Một điều luật cụ thể được ban hành để điều chỉnh một quan hệ xã hội duy nhất",
+    "Một văn bản luật tổng hợp mọi quy định của một ngành luật trong nước",
+    "Toàn bộ quy phạm pháp luật của một nước, không tách theo ngành luật"
    ],
    "answer": 0,
    "explain": "Chế định: hợp đồng, thừa kế, hôn nhân…"

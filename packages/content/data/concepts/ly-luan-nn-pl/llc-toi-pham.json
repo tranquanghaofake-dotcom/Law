@@ -32,9 +32,9 @@
    "q": "Chủ thể của tội phạm theo khoản 1 Điều 8 BLHS gồm ai?",
    "options": [
     "Người có năng lực trách nhiệm hình sự hoặc pháp nhân thương mại",
-    "Mọi cá nhân, tổ chức",
-    "Chỉ công dân Việt Nam",
-    "Chỉ người từ đủ 18 tuổi"
+    "Người có năng lực hành vi dân sự đầy đủ, có tài sản riêng",
+    "Mọi cá nhân, tổ chức đều có thể phạm tội nếu có hành vi trái pháp luật",
+    "Chỉ công dân Việt Nam từ đủ mười tám tuổi trở lên có hành vi"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 8.",
@@ -49,9 +49,9 @@
    "q": "Hành vi có dấu hiệu tội phạm nhưng tính nguy hiểm không đáng kể thì sao?",
    "options": [
     "Không phải tội phạm, xử lý bằng biện pháp khác",
-    "Vẫn là tội phạm",
-    "Là tội phạm ít nghiêm trọng",
-    "Do tòa án tùy ý"
+    "Vẫn là tội phạm, xử lý theo khung thấp nhất",
+    "Là tội phạm ít nghiêm trọng, chịu phạt tù ngắn",
+    "Do tòa án tùy ý quyết định có là tội phạm hay không"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 8.",

@@ -31,9 +31,9 @@
    "q": "Vi phạm hành chính khác tội phạm ở điểm nào?",
    "options": [
     "Vi phạm quy định quản lý nhà nước mà không phải tội phạm, bị xử phạt hành chính",
-    "Không cần có lỗi",
-    "Chỉ do tổ chức thực hiện",
-    "Do tòa án xử lý"
+    "Vi phạm quy định quản lý nhà nước nhưng không cần có lỗi của chủ thể vi phạm nào cả",
+    "Không cần có lỗi, chỉ cần có hành vi trái với quy định của pháp luật",
+    "Do tòa án xét xử theo thủ tục tố tụng hình sự và dân sự chung của nước"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 2.",

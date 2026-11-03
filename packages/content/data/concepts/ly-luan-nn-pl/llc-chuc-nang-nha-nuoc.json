@@ -30,9 +30,9 @@
    "q": "Chức năng của nhà nước được quyết định bởi yếu tố nào?",
    "options": [
     "Bản chất, nhiệm vụ của nhà nước và điều kiện kinh tế – xã hội",
-    "Ý muốn của người đứng đầu",
-    "Số lượng cơ quan nhà nước",
-    "Diện tích lãnh thổ"
+    "Ý muốn chủ quan của người đứng đầu nhà nước ở từng thời kỳ lịch sử",
+    "Số lượng cơ quan nhà nước và số lượng cán bộ trong các cơ quan đó",
+    "Diện tích lãnh thổ và dân số quốc gia, không phụ thuộc kinh tế"
    ],
    "answer": 0,
    "explain": "Chức năng phù hợp bản chất, mục đích, nhiệm vụ, điều kiện kinh tế – xã hội."
@@ -43,9 +43,9 @@
    "q": "Hình thức pháp lý thực hiện chức năng nhà nước gồm gì?",
    "options": [
     "Xây dựng pháp luật, tổ chức thực hiện pháp luật, bảo vệ pháp luật",
-    "Thuyết phục, cưỡng chế",
-    "Đối nội, đối ngoại",
-    "Lập pháp, tư pháp"
+    "Xây dựng pháp luật, bảo vệ công dân và xử lý người vi phạm",
+    "Thuyết phục bằng tuyên truyền và chỉ dùng cưỡng chế khi thật cần thiết",
+    "Đối nội, đối ngoại và bảo đảm quốc phòng, an ninh cho toàn bộ đất nước"
    ],
    "answer": 0,
    "explain": "Ba hình thức pháp lý; thuyết phục và cưỡng chế là phương pháp."
