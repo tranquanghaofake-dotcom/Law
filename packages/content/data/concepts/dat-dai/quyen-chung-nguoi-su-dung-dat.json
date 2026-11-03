@@ -29,9 +29,9 @@
    "q": "Quyền nào là quyền chung của người sử dụng đất theo Điều 26?",
    "options": [
     "Được bồi thường, hỗ trợ, tái định cư khi Nhà nước thu hồi đất",
-    "Được miễn mọi nghĩa vụ tài chính",
-    "Được tự ý chuyển mục đích không cần phép",
-    "Được sở hữu đất"
+    "Được miễn mọi nghĩa vụ tài chính đối với đất đã được cấp",
+    "Được tự ý chuyển mục đích không cần phép của cơ quan nhà nước",
+    "Được sở hữu đất đai và tài nguyên trong lòng đất của mình"
    ],
    "answer": 0,
    "explain": "Khoản 7 Điều 26.",
@@ -46,9 +46,9 @@
    "q": "Quyền chuyển mục đích sử dụng đất của người sử dụng đất được thực hiện thế nào?",
    "options": [
     "Theo quy định của Luật Đất đai và pháp luật có liên quan",
-    "Tự do không cần thủ tục",
-    "Chỉ khi có đồng ý của hàng xóm",
-    "Không có quyền này"
+    "Tự do không cần thủ tục và không cần thông báo cơ quan",
+    "Chỉ khi có đồng ý bằng văn bản của hàng xóm liền kề",
+    "Không có quyền này đối với đất đã được cấp giấy chứng nhận"
    ],
    "answer": 0,
    "explain": "Khoản 6 Điều 26.",

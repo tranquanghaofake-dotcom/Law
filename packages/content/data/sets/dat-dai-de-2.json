@@ -9,9 +9,9 @@
       "q": "Giá đất là gì?",
       "options": [
         "Giá trị của quyền sử dụng đất tính bằng tiền trên một đơn vị diện tích",
-        "Giá trị sở hữu đất",
-        "Thuế đất",
-        "Phí trước bạ"
+        "Giá trị sở hữu đất của người dân trên thị trường bất động sản",
+        "Thuế đất hằng năm do Nhà nước thu theo diện tích sử dụng đất",
+        "Phí trước bạ khi chuyển nhượng quyền sử dụng đất giữa các bên"
       ],
       "answer": 0,
       "explain": "Khoản 19 Điều 3.",
@@ -47,10 +47,10 @@
     {
       "q": "Quyền nào là quyền chung của mọi người sử dụng đất?",
       "options": [
-        "Chuyển nhượng quyền sử dụng đất trong mọi trường hợp",
+        "Chuyển nhượng quyền sử dụng đất trong mọi trường hợp, kể cả khi chưa có giấy tờ",
         "Khiếu nại, tố cáo, khởi kiện về hành vi vi phạm quyền sử dụng đất hợp pháp",
-        "Được miễn thuế",
-        "Tự ý chuyển mục đích"
+        "Được miễn thuế sử dụng đất trong mọi trường hợp đã đăng ký và có giấy tờ",
+        "Tự ý chuyển mục đích sử dụng đất khi không có ý kiến cơ quan nhà nước"
       ],
       "answer": 1,
       "explain": "Khoản 8 Điều 26.",
@@ -73,10 +73,10 @@
     {
       "q": "Thừa kế quyền sử dụng đất có bắt buộc phải có Giấy chứng nhận không?",
       "options": [
-        "Bắt buộc",
+        "Bắt buộc phải có Giấy chứng nhận hợp lệ",
         "Không bắt buộc theo điểm a khoản 1 Điều 45",
-        "Chỉ với đất ở",
-        "Chỉ với đất nông nghiệp"
+        "Chỉ với đất ở tại đô thị trực thuộc tỉnh",
+        "Chỉ với đất nông nghiệp trồng lúa nước"
       ],
       "answer": 1,
       "explain": "Điểm a khoản 1 Điều 45.",
@@ -86,10 +86,10 @@
     {
       "q": "Đất ở được sử dụng theo thời hạn nào?",
       "options": [
-        "50 năm",
-        "70 năm",
+        "Thời hạn 50 năm",
+        "Thời hạn 70 năm",
         "Ổn định lâu dài",
-        "99 năm"
+        "Thời hạn 99 năm"
       ],
       "answer": 2,
       "explain": "Khoản 1 Điều 171.",
@@ -113,9 +113,9 @@
       "q": "Trước khi cơ quan có thẩm quyền giải quyết tranh chấp đất đai, các bên phải làm gì?",
       "options": [
         "Hòa giải tại UBND cấp xã nơi có đất",
-        "Thuê luật sư",
-        "Nộp án phí",
-        "Đăng báo"
+        "Thuê luật sư để giải quyết tranh chấp",
+        "Nộp án phí tại Tòa án cấp huyện",
+        "Đăng báo công khai về tranh chấp đất đai"
       ],
       "answer": 0,
       "explain": "Khoản 2 Điều 235.",

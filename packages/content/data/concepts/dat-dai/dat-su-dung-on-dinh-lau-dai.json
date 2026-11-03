@@ -28,9 +28,9 @@
    "q": "Đất ở được sử dụng theo thời hạn nào?",
    "options": [
     "Ổn định lâu dài",
-    "50 năm",
-    "70 năm",
-    "20 năm"
+    "Thời hạn 50 năm",
+    "Thời hạn 70 năm",
+    "Thời hạn 20 năm"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 171.",
@@ -45,9 +45,9 @@
    "q": "Hết thời hạn 50 năm, cá nhân trực tiếp sản xuất nông nghiệp được giao đất trong hạn mức thì sao?",
    "options": [
     "Được tiếp tục sử dụng 50 năm mà không phải làm thủ tục gia hạn",
-    "Bị thu hồi",
-    "Phải làm thủ tục gia hạn và nộp tiền",
-    "Phải chuyển sang thuê đất"
+    "Bị thu hồi toàn bộ diện tích đất đã giao sau khi hết thời hạn",
+    "Phải làm thủ tục gia hạn và nộp tiền sử dụng đất theo mức quy định",
+    "Phải chuyển sang thuê đất trả tiền hằng năm theo giá thị trường"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 1 Điều 172.",

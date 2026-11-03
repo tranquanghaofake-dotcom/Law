@@ -29,9 +29,9 @@
    "q": "Cá nhân trực tiếp sản xuất nông nghiệp được giao đất nông nghiệp trong hạn mức theo hình thức nào?",
    "options": [
     "Giao đất không thu tiền sử dụng đất",
-    "Giao đất có thu tiền",
-    "Cho thuê trả tiền hằng năm",
-    "Đấu giá"
+    "Giao đất có thu tiền sử dụng đất đầy đủ",
+    "Cho thuê trả tiền hằng năm, đóng đủ tiền",
+    "Đấu giá quyền sử dụng đất công khai"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 118.",
@@ -46,9 +46,9 @@
    "q": "Trường hợp không thuộc Điều 118, 119 thì Nhà nước áp dụng hình thức nào?",
    "options": [
     "Cho thuê đất trả tiền một lần hoặc hằng năm",
-    "Giao đất không thu tiền",
-    "Tịch thu",
-    "Trưng dụng"
+    "Giao đất không thu tiền cho mọi đối tượng",
+    "Tịch thu toàn bộ đất theo quyết định hành chính",
+    "Trưng dụng đất theo quyết định của Ủy ban xã"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 120.",

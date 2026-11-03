@@ -28,9 +28,9 @@
    "q": "Giấy chứng nhận quyền sử dụng đất có bản chất pháp lý là gì?",
    "options": [
     "Chứng thư pháp lý để Nhà nước xác nhận quyền hợp pháp",
-    "Văn bản tạo ra quyền sở hữu đất",
-    "Hợp đồng giữa Nhà nước và người dân",
-    "Giấy phép xây dựng"
+    "Văn bản tạo ra quyền sở hữu đất cho người sử dụng đất",
+    "Hợp đồng giữa Nhà nước và người dân về việc sử dụng đất đai",
+    "Giấy phép xây dựng nhà ở và công trình trên đất"
    ],
    "answer": 0,
    "explain": "Khoản 21 Điều 3.",
@@ -45,9 +45,9 @@
    "q": "Hộ gia đình, cá nhân đang sử dụng ổn định có giấy tờ về quyền sử dụng đất lập trước ngày 15/10/1993 thì sao?",
    "options": [
     "Được cấp Giấy chứng nhận và không phải nộp tiền sử dụng đất",
-    "Phải nộp 100% tiền sử dụng đất",
-    "Không được cấp",
-    "Phải đấu giá lại"
+    "Phải nộp 100% tiền sử dụng đất theo giá thị trường hiện hành",
+    "Không được cấp Giấy chứng nhận dù đã sử dụng ổn định lâu dài",
+    "Phải đấu giá lại toàn bộ đất đang sử dụng theo quyết định"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 137.",
