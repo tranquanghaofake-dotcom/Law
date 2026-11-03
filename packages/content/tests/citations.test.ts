@@ -39,12 +39,23 @@ describe('công cụ dò: tách văn bản luật', () => {
 
 describe('công cụ dò: tách trích dẫn', () => {
   it('điểm/khoản/Điều + tên văn bản; cụm dùng chung tên đứng sau', () => {
-    const c = extractCitations('Theo điểm a, b khoản 1 Điều 5; khoản 2 Điều 7 Luật Đất đai 2024 và Điều 3 BLDS.');
+    const c = extractCitations('Theo điểm a, b khoản 1 Điều 5, khoản 2 Điều 7 Luật Đất đai 2024 và Điều 3 BLDS.');
     expect(c.map((x) => [x.article, x.clauses, x.points, x.law && x.law.ok ? x.law.file : null])).toEqual([
       ['5', ['1'], ['a', 'b'], 'ldd-vbhn-2026.txt'],
       ['7', ['2'], [], 'ldd-vbhn-2026.txt'],
       ['3', [], [], 'blds-2015.txt'],
     ]);
+  });
+  it('dấu ";" tách hai trích dẫn độc lập, không dùng chung tên, không kế thừa qua ";"', () => {
+    const [a, b] = extractCitations('Khoản 2 Điều 92; khoản 2 Điều 12 BLHS.');
+    expect(a.law).toBeNull();
+    expect(b.law && b.law.ok && b.law.file).toBe('blhs-vbhn-2025.txt');
+    const [, d] = extractCitations('ngoài khoản 2 Điều 12 BLHS; người đã bị giáo dục tại xã (Điều 92)');
+    expect(d.law).toBeNull();
+  });
+  it('dấu hiệu lịch sử quanh trích dẫn ("BLHS cũ (Điều 101, đã bãi bỏ)")', () => {
+    expect(extractCitations('BLHS cũ (Điều 101, đã bãi bỏ) là 18 năm')[0].history).toBe(true);
+    expect(extractCitations('Điều 53 BLHS quy định tái phạm')[0].history).toBe(false);
   });
   it('khoảng "Điều 102–116" và danh sách "Điều 9, 10"', () => {
     expect(extractCitations('Điều 102–116').length).toBe(15);
@@ -88,30 +99,26 @@ describe('chặn tái phạm trên toàn kho', () => {
   // Ngoại lệ "điều không tồn tại" — mỗi dòng có lý do. Lúc đặt (03/11/2026) đây là toàn bộ cờ còn mở,
   // giao haiku/opus xử lý trong đợt 7; xử lý xong dòng nào thì xoá dòng đó (test sẽ báo nếu dòng thừa).
   const DIEU_EXCEPTIONS: Record<string, string> = {
-    'concepts/hanh-chinh/truong-giao-duong.json#-1#Điều 91': 'chờ xử lý: BLHS 2015 đã bỏ chương người dưới 18 (chuyển sang Luật TPNCTN 2024)',
-    'concepts/hanh-chinh/truong-giao-duong.json#-1#khoản 2 Điều 105': 'chờ xử lý: như trên',
-    'concepts/hanh-chinh/truong-giao-duong.json#1#Khoản 2 Điều 92': 'chờ xử lý: như trên',
-    'concepts/hanh-chinh/truong-giao-duong.json#6#Điều 92': 'chờ xử lý: như trên',
-    'concepts/hien-phap/chu-tich-nuoc-quoc-tich-khen-thuong.json#-1#khoản 3 Điều 88': 'chờ xử lý: khoản 3 Điều 88 Hiến pháp bị gán nhầm Luật Quốc tịch (báo nhầm của công cụ khi kế thừa tên)',
-    'concepts/hinh-su/hinh-phat-nguoi-chua-thanh-nien.json#-1#Điều 101': 'chờ xử lý: BLHS đã bỏ Điều 101 (Luật TPNCTN 2024)',
-    'concepts/so-huu-tri-tue/bien-phap-xu-ly-xam-pham-shtt.json#-1#Điều 225': 'chờ xử lý',
-    'concepts/tai-san-tri-tue/tstt-nhuong-quyen-thuong-mai.json#0#Điều 284 Luật Sở hữu trí tuệ': 'chờ xử lý: Điều 284 là của Luật Thương mại',
-    'concepts/tai-san-tri-tue/tstt-nhuong-quyen-thuong-mai.json#1#Khoản 1 Điều 284 Luật Sở hữu trí tuệ': 'chờ xử lý: như trên',
-    'concepts/thuong-mai/khuyen-mai.json#-1#Điều 102–116': 'chờ xử lý: Điều 102–116 LTM (quảng cáo thương mại) đã bị bãi bỏ',
+    'concepts/so-huu-tri-tue/bien-phap-xu-ly-xam-pham-shtt.json#-1#Điều 225': 'chờ haiku xử lý',
+    'concepts/tai-san-tri-tue/tstt-nhuong-quyen-thuong-mai.json#0#Điều 284 Luật Sở hữu trí tuệ': 'chờ haiku xử lý: Điều 284 là của Luật Thương mại',
+    'concepts/tai-san-tri-tue/tstt-nhuong-quyen-thuong-mai.json#1#Khoản 1 Điều 284 Luật Sở hữu trí tuệ': 'chờ haiku xử lý: như trên',
+    'concepts/thuong-mai/khuyen-mai.json#-1#Điều 102–116': 'chờ haiku xử lý: Điều 102–116 LTM (quảng cáo thương mại) không có trong VBHN',
   };
 
+
   it('trích dẫn ánh xạ được thì Điều phải tồn tại (trừ ngoại lệ có lý do)', () => {
-    const open = flags.filter((f) => f.loai === 'dieu-khong-ton-tai').map(key);
+    // Cờ có dấu hiệu lịch sử ("BLHS cũ (Điều 101, đã bãi bỏ)") không tính: nói về điều đã bãi bỏ là đúng.
+    const open = flags.filter((f) => f.loai === 'dieu-khong-ton-tai' && !f.lich_su).map(key);
     expect(open.filter((k) => !(k in DIEU_EXCEPTIONS)), 'điều không tồn tại mới').toEqual([]);
     expect(Object.keys(DIEU_EXCEPTIONS).filter((k) => !open.includes(k)), 'ngoại lệ đã xử lý xong — xoá khỏi danh sách').toEqual([]);
   });
 
-  it('khoản/điểm không tồn tại không tăng (đo lúc đặt: 14)', () => {
-    expect(flags.filter((f) => f.loai === 'khoan-diem-khong-ton-tai').length).toBeLessThanOrEqual(14);
+  it('khoản/điểm không tồn tại không tăng (đo lúc đặt: 12)', () => {
+    expect(flags.filter((f) => f.loai === 'khoan-diem-khong-ton-tai').length).toBeLessThanOrEqual(12);
   });
 
-  it('thuật ngữ cũ dùng như hiện hành (không có dấu hiệu lịch sử) không tăng (đo lúc đặt: 16)', () => {
+  it('không còn thuật ngữ cũ dùng như hiện hành (không có dấu hiệu lịch sử, không có note) — đo sau khi sửa: 0', () => {
     const cur = flags.filter((f) => f.loai === 'thuat-ngu-cu' && !f.lich_su);
-    expect(cur.length, cur.map(key).join('\n')).toBeLessThanOrEqual(16);
+    expect(cur.map(key)).toEqual([]);
   });
 });

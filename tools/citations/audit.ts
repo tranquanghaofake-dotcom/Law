@@ -85,6 +85,7 @@ function lawFromCtx(store: LawStore, urlMap: Map<string, string>, cite: string |
 }
 
 type Unit = {
+  noted?: boolean;
   item: number;
   item_type: string;
   /** Văn bản tách trích dẫn (không gồm phương án nhiễu, không gồm câu Sai). */
@@ -106,6 +107,8 @@ type Src = { kind?: string; cite?: string; url?: string } | undefined;
 function conceptUnits(c: any, ctxOf: (s: Src) => Resolved | null, conceptLaw: Resolved | null): Unit[] {
   const units: Unit[] = [];
   units.push({
+    // Khái niệm đã có note nêu luật sửa đổi 2025–2026 → thuật ngữ cũ ở plain/example coi là đã được giải thích.
+    noted: typeof c.note === 'string' && /\d+\/20(25|26)\/(QH|NĐ-CP|UBTVQH)\d*/u.test(c.note),
     item: -1, item_type: 'concept',
     citeTexts: [c.source?.cite ?? '', c.plain ?? '', c.example ?? '', c.definition ?? ''],
     termTexts: [c.term ?? '', c.plain ?? '', c.example ?? ''],
@@ -120,7 +123,7 @@ function conceptUnits(c: any, ctxOf: (s: Src) => Resolved | null, conceptLaw: Re
       case 'case': {
         const right = it.options[it.answer] ?? '';
         u.citeTexts.push(it.q, it.explain, right);
-        u.termTexts.push(it.q, it.explain, right);
+        u.termTexts.push(`${it.q} → ${right}`, it.explain);
         u.claim = NEG_Q.test(it.q) ? it.q : `${it.q} ${right}`;
         u.options = it.options;
         u.answer = it.answer;
@@ -129,7 +132,8 @@ function conceptUnits(c: any, ctxOf: (s: Src) => Resolved | null, conceptLaw: Re
       case 'truefalse':
         u.citeTexts.push(it.explain);
         if (it.answer) u.citeTexts.push(it.statement);
-        u.termTexts.push(it.statement, it.explain);
+        // Câu Sai cố ý dùng chế định cũ ("vẫn còn cấp huyện") là đúng sư phạm: chỉ dò giải thích.
+        u.termTexts.push(...(it.answer ? [it.statement] : []), it.explain);
         u.claim = it.answer ? it.statement : null;
         break;
       case 'cloze':
@@ -139,7 +143,8 @@ function conceptUnits(c: any, ctxOf: (s: Src) => Resolved | null, conceptLaw: Re
         break;
       case 'pair':
         u.citeTexts.push(it.explain, ...it.cases.map((x: any) => x.basis ?? ''), ...it.cases.map((x: any) => x.text));
-        u.termTexts.push(it.left, it.right, it.explain, ...it.cases.map((x: any) => x.text));
+        // Gộp nhãn hai bên với tình huống: nhãn ("Luật NSNN 2015") là ngữ cảnh của tình huống ("Có ngân sách cấp huyện").
+        u.termTexts.push(`${it.left} / ${it.right}: ${it.cases.map((x: any) => x.text).join('; ')}`, it.explain);
         break;
       case 'recall':
         u.citeTexts.push(it.q, it.model);
@@ -196,7 +201,13 @@ export function audit(dataDir: string): Flag[] {
     }
     const def = [...counts.values()].sort((a, b) => b.n - a.n)[0]?.r;
     if (def) subjectDefault.set(d, def);
-    for (const { f, c, law } of local) jobs.push({ mon: d, file: `concepts/${d}/${f}`, kind: 'concept', id: c.id, units: conceptUnits(c, ctxOf, law ?? def ?? null) });
+    for (const { f, c, law } of local) {
+      const units = conceptUnits(c, ctxOf, law ?? def ?? null);
+      // note của khái niệm áp cho mọi item; môn lịch sử: mọi chế định cũ là nội dung lịch sử.
+      const noted = units[0].noted || d === 'lich-su-nn-pl';
+      for (const u of units) u.noted = noted;
+      jobs.push({ mon: d, file: `concepts/${d}/${f}`, kind: 'concept', id: c.id, units });
+    }
   }
   const setDir = join(dataDir, 'sets');
   for (const f of readdirSync(setDir).filter((x) => x.endsWith('.json')).sort()) {
@@ -205,7 +216,7 @@ export function audit(dataDir: string): Flag[] {
     const units: Unit[] = (s.questions as any[]).map((q, i) => {
       const right = q.options[q.answer] ?? '';
       const ctx = findLawIn(q.basis) ?? (q.url ? lawFromCtx(store, urlMap, undefined, q.url) : null) ?? subjectDefault.get(mon) ?? null;
-      return { item: i, item_type: 'set', citeTexts: [q.basis, q.q, q.explain, right], termTexts: [q.q, q.explain, right], claim: NEG_Q.test(q.q) ? q.q : `${q.q} ${right}`, ctx, options: q.options, answer: q.answer };
+      return { item: i, item_type: 'set', citeTexts: [q.basis, q.q, q.explain, right], termTexts: [`${q.q} → ${right}`, q.explain], claim: NEG_Q.test(q.q) ? q.q : `${q.q} ${right}`, ctx, options: q.options, answer: q.answer };
     });
     jobs.push({ mon, file: `sets/${f}`, kind: 'set', id: s.id, units });
   }
@@ -239,7 +250,7 @@ export function audit(dataDir: string): Flag[] {
         if (!doc) continue;
         const a = doc.articles.get(c.article);
         if (!a) {
-          push({ loai: 'dieu-khong-ton-tai', trich_dan: c.raw, van_ban: law.file, doan_luat: '', goi_y: `${law.file} không có Điều ${c.article} (văn bản có ${doc.articles.size} điều). Kiểm số điều hoặc văn bản được trích.`, ly_do: lyDo(c) }, `${law.file}#${c.article}`);
+          push({ loai: 'dieu-khong-ton-tai', trich_dan: c.raw, van_ban: law.file, doan_luat: '', lich_su: c.history, goi_y: `${law.file} không có Điều ${c.article} (văn bản có ${doc.articles.size} điều). Kiểm số điều hoặc văn bản được trích.${c.history ? ' Câu có dấu hiệu nói về điều đã bãi bỏ/văn bản cũ: nhiều khả năng báo nhầm.' : ''}`, ly_do: lyDo(c) }, `${law.file}#${c.article}`);
           continue;
         }
         let missing = '';
@@ -282,8 +293,9 @@ export function audit(dataDir: string): Flag[] {
         if (!t) continue;
         for (const h of findOldTerms(t)) {
           const i = t.normalize('NFC').indexOf(h.match);
-          push({ loai: 'thuat-ngu-cu', trich_dan: h.match, van_ban: null, doan_luat: cut(t.normalize('NFC').slice(Math.max(0, i - 200), i + 300)), lich_su: h.history, ly_do: h.term.id,
-            goi_y: `${h.term.label} → hiện hành: ${h.term.now}. Căn cứ: ${h.term.basis}.${h.history ? ' Câu có dấu hiệu nói về lịch sử/so sánh trước–sau: kiểm, nhiều khả năng báo nhầm.' : ''}` });
+          const hist = h.history || !!u.noted;
+          push({ loai: 'thuat-ngu-cu', trich_dan: h.match, van_ban: null, doan_luat: cut(t.normalize('NFC').slice(Math.max(0, i - 200), i + 300)), lich_su: hist, ly_do: h.term.id,
+            goi_y: `${h.term.label} → hiện hành: ${h.term.now}. Căn cứ: ${h.term.basis}.${h.history ? ' Câu có dấu hiệu nói về lịch sử/so sánh trước–sau: kiểm, nhiều khả năng báo nhầm.' : u.noted ? ' Khái niệm có note về luật sửa đổi (hoặc thuộc môn lịch sử): kiểm note đã nói rõ chưa.' : ''}` });
         }
       }
       // 4. Hai đáp án

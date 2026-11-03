@@ -49,10 +49,17 @@ export const OLD_TERMS: OldTerm[] = [
   },
   {
     id: 'bo-cu',
-    re: /Bộ Kế hoạch và Đầu tư|Sở Kế hoạch và Đầu tư|Bộ Lao động\s*[-–—,]?\s*Thương binh và Xã hội|Sở Lao động\s*[-–—,]?\s*Thương binh|Bộ Thông tin và Truyền thông|Bộ Tài nguyên và Môi trường|Bộ Nông nghiệp và Phát triển nông thôn|Bộ Giao thông vận tải|Ủy ban Dân tộc/iu,
+    re: /(Bộ|Sở) Kế hoạch và Đầu tư|(Bộ|Sở|Phòng) Lao động(\s*[-–—,]?\s*Thương binh)?|(Bộ|Sở) Thông tin và Truyền thông|(Bộ|Sở|Phòng) Tài nguyên và Môi trường|(Bộ|Sở) Nông nghiệp và Phát triển nông thôn|(Bộ|Sở) Giao thông vận tải|Ủy ban Dân tộc/iu,
     label: 'tên bộ/sở trước sắp xếp 2025',
-    now: 'Bộ Tài chính (nhận Bộ KH&ĐT); Bộ Nội vụ (nhận Bộ LĐ-TB&XH); Bộ Khoa học và Công nghệ (nhận Bộ TT&TT); Bộ Nông nghiệp và Môi trường; Bộ Xây dựng (nhận Bộ GTVT); Bộ Dân tộc và Tôn giáo',
-    basis: 'Nghị quyết 176/2025/QH15 về cơ cấu tổ chức của Chính phủ nhiệm kỳ khóa XV (hiệu lực 01/3/2025)',
+    now: 'Bộ/Sở Tài chính (nhận KH&ĐT); Bộ/Sở Nội vụ (nhận LĐ-TB&XH); Bộ/Sở Khoa học và Công nghệ (nhận TT&TT); Bộ/Sở Nông nghiệp và Môi trường; Bộ/Sở Xây dựng (nhận GTVT); Bộ Dân tộc và Tôn giáo',
+    basis: 'Nghị quyết 176/2025/QH15 (14 bộ, 3 cơ quan ngang bộ, hoạt động từ 01/3/2025); Nghị định 45/2025/NĐ-CP (sở thuộc UBND tỉnh, từ 01/3/2025)',
+  },
+  {
+    id: 'thanh-tra-bo',
+    re: /Thanh tra (Bộ (?!Quốc phòng|Công an)\p{Lu}[\p{L}]*( [\p{L}]+){0,4}|sở\b|huyện\b)/u,
+    label: 'Thanh tra Bộ / Thanh tra sở / Thanh tra huyện',
+    now: 'Thanh tra Chính phủ, Thanh tra tỉnh, thanh tra trong Quân đội, Công an, Ngân hàng Nhà nước, Thanh tra Cơ yếu (Điều 7)',
+    basis: 'Luật Thanh tra 84/2025/QH15 (hiệu lực 01/7/2025)',
   },
   {
     id: 'tu-hinh-8-toi',
@@ -64,7 +71,7 @@ export const OLD_TERMS: OldTerm[] = [
   },
   {
     id: 'luat-cu',
-    re: /Luật Ban hành văn bản quy phạm pháp luật (năm )?2015|Luật (Ban hành )?VBQPPL (năm )?2015|Luật Đất đai (năm )?2013|Luật Đầu tư (năm )?(2014|2020)|Luật Phá sản (năm )?2014|Luật Ngân sách nhà nước (năm )?2015|Luật Việc làm (năm )?2013|Luật Cán bộ,? công chức (năm )?2008|Luật Tổ chức Chính phủ (năm )?2015|Luật Tổ chức chính quyền địa phương (năm )?2015|Luật Bảo hiểm xã hội (năm )?2014|Luật Bảo hiểm tiền gửi (năm )?2012|Luật Quản lý thuế (năm )?2019|Luật Thuế thu nhập doanh nghiệp (năm )?2008|Luật Thuế thu nhập cá nhân (năm )?2007|Luật Thuế tiêu thụ đặc biệt (năm )?2008|Luật Thuế giá trị gia tăng (năm )?2008|Luật Các tổ chức tín dụng (năm )?2010|Luật Doanh nghiệp (năm )?(2005|2014)/iu,
+    re: /Luật Ban hành văn bản quy phạm pháp luật (năm )?2015|Luật (Ban hành )?VBQPPL (năm )?2015|Luật Đất đai (năm )?2013|Luật Đầu tư (năm )?(2014|2020)|Luật Phá sản (năm )?2014|Luật (Ngân sách nhà nước|NSNN) (năm )?2015|Luật Việc làm (năm )?2013|Luật Cán bộ,? công chức (năm )?2008|Luật Tổ chức Chính phủ (năm )?2015|Luật Tổ chức chính quyền địa phương (năm )?2015|Luật Bảo hiểm xã hội (năm )?2014|Luật Bảo hiểm tiền gửi (năm )?2012|Luật Quản lý thuế (năm )?2019|Luật Thuế thu nhập doanh nghiệp (năm )?2008|Luật Thuế thu nhập cá nhân (năm )?2007|Luật Thuế tiêu thụ đặc biệt (năm )?2008|Luật Thuế giá trị gia tăng (năm )?2008|Luật Các tổ chức tín dụng (năm )?2010|Luật Doanh nghiệp (năm )?(2005|2014)/iu,
     label: 'văn bản đã bị thay thế',
     now: 'văn bản thay thế (xem luat-doi-2025.md)',
     basis: 'xem luat-doi-2025.md',
@@ -73,7 +80,7 @@ export const OLD_TERMS: OldTerm[] = [
 
 /** Dấu hiệu câu đang nói về lịch sử / so sánh trước-sau → thường là báo nhầm. */
 export const HISTORY_RE =
-  /trước (ngày )?0?1\/0?7\/2025|trước 2025|trước khi (sắp xếp|sửa đổi|bỏ)|đến (hết )?(ngày )?30\/0?6\/2025|kết thúc hoạt động|bỏ cấp huyện|không còn (cấp huyện|tổ chức|TAND|Tòa)|đã bỏ|đã bãi bỏ|đã bị thay thế|hết hiệu lực|trước đây|lịch sử|thời kỳ|giai đoạn|Hiến pháp (năm )?(1946|1959|1980|1992)|Luật 86\/2025|Luật 81\/2025|Luật 85\/2025|NQ 203|Nghị quyết 203|sắp xếp đơn vị hành chính|chính quyền (địa phương )?2 cấp|hai cấp/iu;
+  /đã được thay thế|thay thế bởi|nay thuộc|giữ nguyên theo văn bản|không còn|trước (ngày )?0?1\/0?7\/2025|trước 2025|trước khi (sắp xếp|sửa đổi|bỏ)|đến (hết )?(ngày )?30\/0?6\/2025|kết thúc hoạt động|bỏ cấp huyện|không còn (cấp huyện|tổ chức|TAND|Tòa)|đã bỏ|đã bãi bỏ|đã bị thay thế|hết hiệu lực|trước đây|lịch sử|thời kỳ|giai đoạn|Hiến pháp (năm )?(1946|1959|1980|1992)|Luật 86\/2025|Luật 81\/2025|Luật 85\/2025|NQ 203|Nghị quyết 203|sắp xếp đơn vị hành chính|chính quyền (địa phương )?2 cấp|hai cấp/iu;
 
 export type TermHit = { term: OldTerm; match: string; history: boolean };
 
@@ -84,7 +91,8 @@ export function findOldTerms(text: string): TermHit[] {
     const m = t.re.exec(s);
     if (!m) continue;
     if (t.with && !t.with.test(s)) continue;
-    out.push({ term: t, match: m[0], history: HISTORY_RE.test(s) });
+    const luatCu = OLD_TERMS.find((x) => x.id === 'luat-cu')!.re;
+    out.push({ term: t, match: m[0], history: HISTORY_RE.test(s) || (t.id !== 'luat-cu' && luatCu.test(s)) || (t.id === 'luat-cu' && /so với|khác với|thay|trước/iu.test(s)) });
   }
   // "Tòa án nhân dân cấp huyện" đã có mục riêng: chỉ giữ cờ "cấp huyện" chung khi còn "cấp huyện" ở chỗ khác.
   const g = out.findIndex((h) => h.term.id === 'cap-huyen');

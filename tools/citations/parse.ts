@@ -72,6 +72,8 @@ export type Citation = {
   law: Resolved | null;
   /** true khi law lấy từ tên nhắc trước đó (không đứng ngay sau trích dẫn). */
   inherited: boolean;
+  /** Trong 60 ký tự quanh trích dẫn có dấu hiệu lịch sử ("đã bãi bỏ", "cũ", "hết hiệu lực"…). */
+  history: boolean;
   index: number;
 };
 
@@ -83,6 +85,8 @@ const CITE_RE = new RegExp(
   String.raw`(?:(?:các\s+)?điểm\s+(${PTS})\s*,?\s+)?(?:(?:các\s+)?khoản\s+(${NUMS})\s*,?\s+)?(?:(?:các\s+)?Điều\s+(${NUMS}))(?![\d\p{L}/])`,
   'giu',
 );
+
+const HIST_NEAR = /đã (bị )?bãi bỏ|được bãi bỏ|hết hiệu lực|đã bị thay thế|\bcũ\b|trước đây|trước (ngày )?0?1\/0?[17]\/20(25|26)/iu;
 
 function expand(list: string, isPoint: boolean): string[] {
   const out: string[] = [];
@@ -120,7 +124,8 @@ export function extractCitations(text: string): Citation[] {
     const next = raws[i + 1];
     if (!next || !next.law) continue;
     const between = s.slice(raws[i].m.index + raws[i].m[0].length, next.m.index);
-    if (/^[\s,;]*(?:và|hoặc|;|,)?[\s,;]*$/u.test(between)) raws[i].law = next.law;
+    // Chỉ nối qua "," "và" "hoặc"; dấu ";" tách hai trích dẫn độc lập ("Khoản 2 Điều 92; khoản 2 Điều 12 BLHS").
+    if (/^\s*(?:,|và|hoặc|,\s*và)?\s*$/u.test(between)) raws[i].law = next.law;
   }
   const mentions = scanLaws(s);
   const out: Citation[] = [];
@@ -131,9 +136,11 @@ export function extractCitations(text: string): Citation[] {
     if (!law) {
       // Kế thừa tên văn bản nhắc trước đó: tên của một trích dẫn trước trong chuỗi, hoặc tên nhắc trong vòng 80 ký tự.
       // "Hiến pháp" trần (không năm) chỉ tính khi đứng sát trích dẫn — hay là từ thường ("không trái Hiến pháp").
-      const prevOwn = [...raws.slice(0, raws.indexOf(r))].reverse().find((x) => x.own);
+      // Không kế thừa qua dấu ";" hoặc hết câu: đó là trích dẫn khác.
+      const gapOk = (from: number) => !/[;]|\.\s/u.test(s.slice(from, m.index));
+      const prevOwn = [...raws.slice(0, raws.indexOf(r))].reverse().find((x) => x.own && m.index - (x.m.index + x.m[0].length) <= 120 && gapOk(x.m.index + x.m[0].length));
       const prev = mentions.filter((x) => x.end <= m.index).pop();
-      const near = prev && m.index - prev.end <= 80 && (!/^\s*(của\s+)?Hiến pháp\s*$/iu.test(prev.law.matched) || m.index - prev.end <= 3);
+      const near = prev && m.index - prev.end <= 80 && gapOk(prev.end) && (!/^\s*(của\s+)?Hiến pháp\s*$/iu.test(prev.law.matched) || m.index - prev.end <= 3);
       const pick = near && prev && (!prevOwn || prev.index > prevOwn.m.index) ? prev.law : prevOwn?.law ?? null;
       if (pick) { law = pick; inherited = true; }
     }
@@ -149,6 +156,7 @@ export function extractCitations(text: string): Citation[] {
         points: a === arts[0] ? points : [],
         law,
         inherited,
+        history: HIST_NEAR.test(s.slice(Math.max(0, m.index - 60), m.index + m[0].length + 60)),
         index: m.index,
       });
     }
