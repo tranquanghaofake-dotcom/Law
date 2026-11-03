@@ -22,9 +22,9 @@
       "q": "Tổ chức kinh tế có vốn đầu tư nước ngoài là gì?",
       "options": [
         "Tổ chức kinh tế có nhà đầu tư nước ngoài là thành viên hoặc cổ đông",
-        "Tổ chức có trên 50% vốn nước ngoài",
-        "Tổ chức thành lập ở nước ngoài",
-        "Tổ chức vay vốn nước ngoài"
+        "Tổ chức có trên 50% vốn nước ngoài và có trụ sở ở Việt Nam",
+        "Tổ chức thành lập ở nước ngoài và hoạt động tại Việt Nam theo luật",
+        "Tổ chức vay vốn nước ngoài để thực hiện các dự án đầu tư tại Việt Nam"
       ],
       "answer": 0,
       "explain": "Khoản 22 Điều 3.",
@@ -48,9 +48,9 @@
       "q": "Hình thức nào thuộc Điều 18?",
       "options": [
         "Đầu tư góp vốn, mua cổ phần, mua phần vốn góp",
-        "Mua hàng tiêu dùng",
-        "Gửi tiết kiệm",
-        "Mua bảo hiểm"
+        "Mua hàng tiêu dùng cho gia đình và bạn bè",
+        "Gửi tiết kiệm tại ngân hàng thương mại nhà nước",
+        "Mua bảo hiểm nhân thọ cho bản thân và người thân"
       ],
       "answer": 0,
       "explain": "Điều 18.",
@@ -61,9 +61,9 @@
       "q": "Vốn đầu tư gồm gì?",
       "options": [
         "Tiền, tài sản khác theo pháp luật dân sự và điều ước quốc tế",
-        "Chỉ tiền",
-        "Chỉ ngoại tệ",
-        "Chỉ vốn vay"
+        "Chỉ tiền mặt, tiền gửi ngân hàng và khoản tiền vay từ ngân hàng",
+        "Chỉ ngoại tệ chuyển từ nước ngoài vào Việt Nam theo hợp đồng vay",
+        "Chỉ vốn vay từ các tổ chức tín dụng nước ngoài và trong nước"
       ],
       "answer": 0,
       "explain": "Khoản 23 Điều 3.",
@@ -74,9 +74,9 @@
       "q": "Hợp đồng BCC có đặc điểm gì?",
       "options": [
         "Không thành lập tổ chức kinh tế",
-        "Phải lập công ty liên doanh",
+        "Phải lập công ty liên doanh riêng",
         "Ký giữa Nhà nước và nhà đầu tư",
-        "Phải có vốn nhà nước"
+        "Phải có vốn nhà nước tối thiểu"
       ],
       "answer": 0,
       "explain": "Khoản 14 Điều 3.",
@@ -113,9 +113,9 @@
       "q": "Khu chế xuất là gì?",
       "options": [
         "Khu công nghiệp chuyên sản xuất hàng xuất khẩu",
-        "Khu kinh tế ven biển",
-        "Khu du lịch",
-        "Khu đô thị"
+        "Khu kinh tế ven biển có nhiều cảng biển lớn",
+        "Khu du lịch sinh thái ven biển và các đảo",
+        "Khu đô thị mới có nhiều nhà ở và dịch vụ tiện ích"
       ],
       "answer": 0,
       "explain": "Khoản 15 Điều 3.",
@@ -126,9 +126,9 @@
       "q": "Nhà đầu tư ra nước ngoài phải tuân thủ pháp luật nào?",
       "options": [
         "Luật Việt Nam, pháp luật nước tiếp nhận và điều ước quốc tế liên quan",
-        "Chỉ pháp luật Việt Nam",
-        "Chỉ pháp luật nước tiếp nhận",
-        "Không pháp luật nào"
+        "Chỉ pháp luật Việt Nam và các điều ước quốc tế liên quan đến nước đó đã ký",
+        "Chỉ pháp luật nước tiếp nhận đầu tư, không áp dụng luật Việt Nam",
+        "Không có pháp luật nào ràng buộc nhà đầu tư khi ra nước ngoài đầu tư"
       ],
       "answer": 0,
       "explain": "Khoản 2 Điều 38.",

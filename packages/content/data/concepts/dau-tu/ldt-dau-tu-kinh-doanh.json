@@ -30,9 +30,9 @@
    "q": "Theo khoản 8 Điều 3 Luật Đầu tư, đầu tư kinh doanh là gì?",
    "options": [
     "Việc nhà đầu tư bỏ vốn đầu tư để thực hiện hoạt động kinh doanh",
-    "Việc Nhà nước dùng ngân sách xây hạ tầng",
-    "Việc gửi tiết kiệm ngân hàng",
-    "Việc mua hàng tiêu dùng"
+    "Việc Nhà nước dùng ngân sách xây dựng hạ tầng công cộng cho dân",
+    "Việc gửi tiết kiệm tại ngân hàng để hưởng lãi suất ổn định hằng năm",
+    "Việc mua hàng tiêu dùng cho gia đình và người thân trong nhà"
    ],
    "answer": 0,
    "explain": "Khoản 8 Điều 3.",
@@ -47,9 +47,9 @@
    "q": "Luật Đầu tư điều chỉnh hoạt động nào?",
    "options": [
     "Đầu tư kinh doanh tại Việt Nam và từ Việt Nam ra nước ngoài",
-    "Chỉ đầu tư công",
-    "Chỉ đầu tư của nhà đầu tư nước ngoài",
-    "Chỉ đầu tư ra nước ngoài"
+    "Chỉ đầu tư công do Nhà nước đầu tư bằng ngân sách trung ương",
+    "Chỉ đầu tư của nhà đầu tư nước ngoài tại các khu vực kinh tế",
+    "Chỉ đầu tư ra nước ngoài của các doanh nghiệp Việt Nam"
    ],
    "answer": 0,
    "explain": "Điều 1.",

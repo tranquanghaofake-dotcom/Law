@@ -47,9 +47,9 @@
    "q": "Giấy chứng nhận đăng ký đầu tư có chức năng gì?",
    "options": [
     "Ghi nhận thông tin đăng ký của nhà đầu tư về dự án đầu tư",
-    "Cấp quyền sử dụng đất",
-    "Xác nhận vốn điều lệ doanh nghiệp",
-    "Cho phép xuất cảnh"
+    "Cấp quyền sử dụng đất và tài sản gắn liền với đất cho nhà đầu tư",
+    "Xác nhận vốn điều lệ của doanh nghiệp đã góp đủ theo đăng ký",
+    "Cho phép xuất cảnh của nhà đầu tư và người thân trong gia đình"
    ],
    "answer": 0,
    "explain": "Khoản 11 Điều 3.",

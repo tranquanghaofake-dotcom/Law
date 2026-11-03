@@ -31,9 +31,9 @@
    "q": "Nhà đầu tư theo khoản 18 Điều 3 gồm những loại nào?",
    "options": [
     "Nhà đầu tư trong nước, nhà đầu tư nước ngoài và tổ chức kinh tế có vốn đầu tư nước ngoài",
-    "Chỉ doanh nghiệp",
-    "Chỉ cá nhân",
-    "Chỉ cơ quan nhà nước"
+    "Chỉ doanh nghiệp trong nước được đăng ký kinh doanh theo quy định của luật và có vốn điều lệ đủ lớn",
+    "Chỉ cá nhân trong nước có đủ vốn điều lệ, năng lực hành vi đầy đủ và đăng ký",
+    "Chỉ cơ quan nhà nước được thành lập theo luật và được cấp kinh phí hoạt động"
    ],
    "answer": 0,
    "explain": "Khoản 18 Điều 3.",

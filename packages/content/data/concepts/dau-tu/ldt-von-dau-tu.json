@@ -30,9 +30,9 @@
    "q": "Vốn đầu tư theo khoản 23 Điều 3 gồm gì?",
    "options": [
     "Tiền, tài sản khác theo pháp luật dân sự và điều ước quốc tế",
-    "Chỉ tiền mặt",
-    "Chỉ ngoại tệ",
-    "Chỉ vốn vay ngân hàng"
+    "Chỉ tiền mặt do nhà đầu tư góp bằng ngoại tệ đã đổi",
+    "Chỉ ngoại tệ chuyển từ nước ngoài vào Việt Nam theo hợp đồng",
+    "Chỉ vốn vay ngân hàng và vốn vay từ các tổ chức tín dụng"
    ],
    "answer": 0,
    "explain": "Khoản 23 Điều 3.",
@@ -47,9 +47,9 @@
    "q": "Vốn đầu tư dùng để làm gì?",
    "options": [
     "Thực hiện hoạt động đầu tư kinh doanh",
-    "Nộp ngân sách",
-    "Chi tiêu cá nhân",
-    "Trả cổ tức"
+    "Nộp ngân sách nhà nước theo quy định",
+    "Chi tiêu cá nhân của nhà đầu tư hằng ngày",
+    "Trả cổ tức cho cổ đông và người góp vốn"
    ],
    "answer": 0,
    "explain": "Khoản 23 Điều 3.",

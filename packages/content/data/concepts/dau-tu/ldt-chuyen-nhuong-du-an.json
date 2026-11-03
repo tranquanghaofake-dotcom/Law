@@ -29,9 +29,9 @@
    "q": "Nhà đầu tư được chuyển nhượng phạm vi nào của dự án?",
    "options": [
     "Toàn bộ hoặc một phần dự án đầu tư",
-    "Chỉ toàn bộ dự án",
-    "Chỉ phần đã hoàn thành",
-    "Không được chuyển nhượng"
+    "Chỉ toàn bộ dự án, không chia nhỏ",
+    "Chỉ phần đã hoàn thành của dự án",
+    "Không được chuyển nhượng dự án này"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 34.",
@@ -46,9 +46,9 @@
    "q": "Điều kiện nào là điều kiện chuyển nhượng dự án?",
    "options": [
     "Dự án hoặc phần dự án không bị chấm dứt hoạt động theo khoản 1, 2 Điều 36",
-    "Dự án đã có lãi",
-    "Bên nhận phải là doanh nghiệp nhà nước",
-    "Phải được Quốc hội đồng ý"
+    "Dự án đã có lãi ổn định trong hai năm liên tiếp và có báo cáo kiểm toán",
+    "Bên nhận phải là doanh nghiệp nhà nước có đủ vốn điều lệ và năng lực tài chính",
+    "Phải được Quốc hội đồng ý bằng nghị quyết riêng cho từng dự án đầu tư lớn"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 1 Điều 34.",

@@ -48,9 +48,9 @@
    "q": "Nhà đầu tư nước ngoài được thành lập tổ chức kinh tế vào thời điểm nào so với thủ tục Giấy chứng nhận đăng ký đầu tư?",
    "options": [
     "Trước khi thực hiện thủ tục cấp, điều chỉnh Giấy chứng nhận đăng ký đầu tư",
-    "Chỉ sau khi có Giấy chứng nhận",
-    "Cùng lúc với chấp thuận của Quốc hội",
-    "Không được thành lập"
+    "Chỉ sau khi có Giấy chứng nhận đăng ký đầu tư hoặc văn bản chấp thuận của cơ quan",
+    "Cùng lúc với chấp thuận của Quốc hội về chủ trương đầu tư của dự án",
+    "Không được thành lập tổ chức kinh tế trong bất kỳ trường hợp nào"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 19.",
