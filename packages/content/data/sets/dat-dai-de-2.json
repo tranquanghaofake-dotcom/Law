@@ -9,7 +9,7 @@
       "q": "Giá đất là gì?",
       "options": [
         "Giá trị của quyền sử dụng đất tính bằng tiền trên một đơn vị diện tích",
-        "Giá trị sở hữu đất của người dân trên thị trường bất động sản",
+        "Giá trị sở hữu đất của người dân do thị trường bất động sản quyết định",
         "Thuế đất hằng năm do Nhà nước thu theo diện tích sử dụng đất",
         "Phí trước bạ khi chuyển nhượng quyền sử dụng đất giữa các bên"
       ],
@@ -24,7 +24,7 @@
         "Nguyên tắc thị trường",
         "Nguyên tắc hành chính",
         "Nguyên tắc ổn định",
-        "Nguyên tắc ưu tiên ngân sách"
+        "Nguyên tắc vì ngân sách"
       ],
       "answer": 0,
       "explain": "Điểm a khoản 1 Điều 158.",

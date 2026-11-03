@@ -30,8 +30,8 @@
    "q": "Quyền nào thuộc Nhà nước với tư cách đại diện chủ sở hữu đất đai?",
    "options": [
     "Quyết định thu hồi đất",
-    "Chuyển nhượng quyền sử dụng đất của cá nhân",
-    "Thế chấp quyền sử dụng đất của doanh nghiệp",
+    "Chuyển nhượng đất cá nhân",
+    "Thế chấp đất doanh nghiệp",
     "Thừa kế quyền sử dụng đất"
    ],
    "answer": 0,
@@ -47,7 +47,7 @@
    "q": "Nhà nước quyết định mục đích sử dụng đất thông qua những công cụ nào?",
    "options": [
     "Quy hoạch, kế hoạch sử dụng đất, giao đất, cho thuê đất, công nhận quyền và cho phép chuyển mục đích",
-    "Chỉ quy hoạch sử dụng đất và kế hoạch sử dụng đất hằng năm của tỉnh, thành phố trực thuộc Trung ương",
+    "Chỉ quy hoạch sử dụng đất và kế hoạch sử dụng đất hằng năm của tỉnh, thành phố trực thuộc Trung ương đó",
     "Chỉ cấp Giấy chứng nhận và thu tiền sử dụng đất theo thời hạn của dự án đã được phê duyệt",
     "Thông qua giá đất và thuế sử dụng đất theo quyết định của Chính phủ hằng năm, không cần văn bản"
    ],
