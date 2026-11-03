@@ -30,8 +30,8 @@
    "q": "Đặc điểm nào của áp dụng pháp luật?",
    "options": [
     "Mang tính quyền lực nhà nước, do chủ thể có thẩm quyền tiến hành theo thủ tục luật định",
-    "Mọi người tự thực hiện theo ý chí riêng, không cần thẩm quyền của cơ quan nhà nước nào cả",
-    "Chỉ mang tính tự nguyện, do các bên tự thỏa thuận và không có chế tài đi kèm trong mọi trường hợp",
+    "Do cá nhân tự thực hiện theo ý chí riêng của mình, không cần thẩm quyền của cơ quan nhà nước",
+    "Mang tính hướng dẫn, do cơ quan nhà nước khuyến nghị và không bắt buộc đối với các chủ thể liên quan",
     "Mang tính tổ chức xã hội, do hội đoàn tự quyết theo điều lệ nội bộ, không cần văn bản"
    ],
    "answer": 0,
@@ -43,8 +43,8 @@
    "q": "Khi hai quy phạm cùng điều chỉnh một quan hệ nhưng mâu thuẫn, chọn quy phạm nào?",
    "options": [
     "Quy phạm trong văn bản có giá trị pháp lý cao hơn và được ban hành sau",
-    "Quy phạm ban hành trước và có hiệu lực pháp lý thấp hơn, luôn được ưu tiên",
-    "Quy phạm ngắn hơn, dễ thực hiện nên được ưu tiên áp dụng trong mọi trường hợp",
+    "Quy phạm ban hành trước và có hiệu lực pháp lý thấp hơn nên được ưu tiên áp dụng",
+    "Quy phạm ngắn gọn hơn, dễ thực hiện hơn nên được ưu tiên lựa chọn",
     "Tùy vào lợi ích của cơ quan áp dụng, không có quy định cụ thể nào để tuân theo"
    ],
    "answer": 0,
