@@ -48,3 +48,11 @@ Mỗi dòng là một tình huống thêm vào câu `pair` (trường `basis` c�
 | `vi-pham-co-ban` | Bên bán giao thiếu một phần nhỏ hàng, không ảnh hưởng đến mục đích sử dụng | Không phải vi phạm cơ bản | Khoản 13 Điều 3 Luật Thương mại 2005 |
 
 Tổng: 42 tình huống mới; 22 khái niệm đạt ≥ 4 tình huống.
+
+## Cờ dò trích dẫn (haiku-2)
+
+| id#item | loại | quyết định | ghi chú |
+|---|---|---|---|
+| `dai-dien-cho-thuong-nhan#6` | lệch nội dung / gán văn bản | **sửa** | đáp án mẫu ghi "BLDS (Điều 141)" → "BLDS (khoản 2 Điều 141 Luật Thương mại)" |
+| `khuyen-mai#-1` | điều không tồn tại | ⚠ opus | Điều 102–116 (quảng cáo thương mại) đã bỏ khỏi VBHN 2025; bài đã ghi chú. Opus cần quyết có bỏ cờ này trong công cụ |
+| `thuong-mai-de-1#7` (bộ đề) | lệch nội dung | báo nhầm | Điều 88 LTM đúng nội dung khuyến mại; điểm thấp do câu diễn đạt đời thường |
