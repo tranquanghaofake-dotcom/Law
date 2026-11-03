@@ -4,6 +4,9 @@
   import { storage } from '$lib/store/status.svelte';
   import { tts } from '$lib/fx/tts.svelte';
   import { sfx } from '$lib/fx/sfx';
+  import { refreshHeader } from '$lib/ui/header.svelte';
+  import { refreshSidenav } from '$lib/ui/sidenav.svelte';
+  import { refreshShelf } from '$lib/ui/shelf.svelte';
   const ttsOk = $derived(tts.available);
   let msg = $state('');
   async function exportData() {
@@ -16,7 +19,12 @@
   async function importData(e: Event) {
     const f = (e.target as HTMLInputElement).files?.[0];
     if (!f) return;
-    try { await repo.importAll(await f.text()); msg = 'Đã nhập dữ liệu.'; } catch { msg = 'File không hợp lệ.'; }
+    try {
+      await repo.importAll(await f.text());
+      // làm mới các số liệu đang hiển thị (header, thanh bên, tủ sách) để không phải tải lại trang
+      await Promise.all([refreshHeader(), refreshSidenav(), refreshShelf()]);
+      msg = 'Đã nhập dữ liệu.';
+    } catch { msg = 'File không hợp lệ.'; }
   }
 </script>
 
