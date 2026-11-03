@@ -72,6 +72,21 @@
     {
      "text": "Xe mô tô hai bánh dung tích 110 cm3",
      "answer": "right"
+    },
+    {
+     "text": "Thuốc lá điếu sản xuất trong nước",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 2 Luật Thuế tiêu thụ đặc biệt 2025"
+    },
+    {
+     "text": "Rượu nhập khẩu để bán tại Việt Nam",
+     "answer": "left",
+     "basis": "Điểm b khoản 1 Điều 2 Luật Thuế tiêu thụ đặc biệt 2025"
+    },
+    {
+     "text": "Gạo xuất khẩu đi các nước",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 2 Luật Thuế tiêu thụ đặc biệt 2025 (gạo không thuộc danh mục hàng hóa chịu thuế)"
     }
    ],
    "explain": "Khoản 1 Điều 2."

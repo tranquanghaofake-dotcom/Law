@@ -71,6 +71,21 @@
     {
      "text": "Đất trồng lúa",
      "answer": "right"
+    },
+    {
+     "text": "Đất ở tại nông thôn của hộ gia đình",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 2 Luật Thuế sử dụng đất phi nông nghiệp 2010 (⚠ chưa có file trong laws/)"
+    },
+    {
+     "text": "Đất xây dựng khu công nghiệp",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 2 Luật Thuế sử dụng đất phi nông nghiệp 2010 (⚠ chưa có file trong laws/)"
+    },
+    {
+     "text": "Đất rừng sản xuất trồng cây lâm nghiệp",
+     "answer": "right",
+     "basis": "Khoản 1, 2 Điều 2 Luật Thuế sử dụng đất phi nông nghiệp 2010 (⚠ chưa có file trong laws/)"
     }
    ],
    "explain": "Điều 2."
