@@ -28,9 +28,9 @@
    "q": "Quan hệ lao động gồm những loại nào theo khoản 5 Điều 3?",
    "options": [
     "Quan hệ lao động cá nhân và quan hệ lao động tập thể",
-    "Quan hệ công vụ và quan hệ dân sự",
-    "Quan hệ hợp đồng và quan hệ hành chính",
-    "Chỉ quan hệ lao động cá nhân"
+    "Quan hệ công vụ của công chức và quan hệ dân sự",
+    "Quan hệ hợp đồng và quan hệ hành chính nhà nước",
+    "Chỉ quan hệ lao động cá nhân, không có quan hệ tập thể"
    ],
    "answer": 0,
    "explain": "Khoản 5 Điều 3.",
@@ -45,9 +45,9 @@
    "q": "Quan hệ lao động phát sinh trong việc gì?",
    "options": [
     "Thuê mướn, sử dụng lao động, trả lương",
-    "Mua bán hàng hóa",
-    "Thu thuế",
-    "Xét xử vụ án"
+    "Mua bán hàng hóa và dịch vụ thương mại",
+    "Thu thuế thu nhập cá nhân từ tiền lương",
+    "Xét xử vụ án dân sự tại Tòa án nhân dân"
    ],
    "answer": 0,
    "explain": "Khoản 5 Điều 3.",

@@ -30,9 +30,9 @@
    "q": "Tiền lương theo Điều 90 bao gồm những bộ phận nào?",
    "options": [
     "Mức lương theo công việc hoặc chức danh, phụ cấp lương và các khoản bổ sung khác",
-    "Chỉ mức lương cơ bản",
-    "Lương và tiền thưởng cuối năm",
-    "Lương và bảo hiểm xã hội"
+    "Chỉ mức lương cơ bản do người sử dụng lao động quyết định hằng tháng",
+    "Lương và tiền thưởng cuối năm do doanh nghiệp quyết định theo kết quả kinh doanh",
+    "Lương và bảo hiểm xã hội do người lao động tự đóng hằng tháng theo quy định"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 90.",

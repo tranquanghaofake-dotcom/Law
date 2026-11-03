@@ -46,9 +46,9 @@
    "q": "Cá nhân là người sử dụng lao động phải đáp ứng điều kiện gì?",
    "options": [
     "Có năng lực hành vi dân sự đầy đủ",
-    "Có đăng ký kinh doanh",
-    "Đủ 21 tuổi",
-    "Có tài sản trên 1 tỷ đồng"
+    "Có đăng ký kinh doanh được cấp",
+    "Đủ 21 tuổi trở lên và có chứng chỉ",
+    "Có tài sản trên 1 tỷ đồng để bảo đảm"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 3.",

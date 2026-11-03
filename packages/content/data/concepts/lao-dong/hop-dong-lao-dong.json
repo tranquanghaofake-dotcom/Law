@@ -47,9 +47,9 @@
    "q": "Người sử dụng lao động phải giao kết hợp đồng lao động khi nào?",
    "options": [
     "Trước khi nhận người lao động vào làm việc",
-    "Sau 2 tháng làm việc",
-    "Khi người lao động yêu cầu",
-    "Sau khi hết thử việc mới bắt buộc"
+    "Sau 2 tháng làm việc liên tục đầu tiên hợp lệ",
+    "Khi người lao động yêu cầu bằng văn bản",
+    "Sau khi hết thử việc mới bắt buộc phải ký"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 13.",

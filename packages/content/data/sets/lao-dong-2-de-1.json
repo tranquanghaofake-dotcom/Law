@@ -21,10 +21,10 @@
     {
       "q": "Trong cho thuê lại lao động, người lao động giao kết HĐLĐ với ai?",
       "options": [
-        "Bên thuê lại",
+        "Bên thuê lại lao động tại doanh nghiệp",
         "Doanh nghiệp cho thuê lại lao động",
-        "Cơ quan lao động",
-        "Không cần HĐLĐ"
+        "Cơ quan quản lý lao động địa phương",
+        "Không cần HĐLĐ, chỉ có hợp đồng dịch vụ"
       ],
       "answer": 1,
       "explain": "Khoản 1 Điều 52.",
@@ -48,9 +48,9 @@
       "q": "Doanh nghiệp cho thuê lại lao động cần điều kiện gì?",
       "options": [
         "Ký quỹ và có Giấy phép hoạt động cho thuê lại lao động",
-        "Chỉ cần đăng ký doanh nghiệp",
-        "Có vốn nhà nước",
-        "Được UBND cấp xã đồng ý"
+        "Chỉ cần đăng ký doanh nghiệp và mã số thuế hợp lệ",
+        "Có vốn nhà nước và người đứng đầu là công chức",
+        "Được UBND cấp xã đồng ý bằng văn bản và đóng phí hằng năm"
       ],
       "answer": 0,
       "explain": "Khoản 1 Điều 54.",
@@ -112,10 +112,10 @@
     {
       "q": "Người từ đủ 13 đến chưa đủ 15 tuổi được làm công việc gì?",
       "options": [
-        "Mọi công việc",
+        "Mọi công việc, kể cả công việc nặng nhọc và độc hại",
         "Chỉ công việc nhẹ theo danh mục do Bộ trưởng ban hành",
-        "Không được làm việc",
-        "Công việc nặng nhọc nếu cha mẹ đồng ý"
+        "Không được làm việc trong mọi trường hợp, kể cả việc nhẹ",
+        "Công việc nặng nhọc nếu cha mẹ đồng ý bằng văn bản"
       ],
       "answer": 1,
       "explain": "Khoản 3 Điều 143.",
@@ -126,9 +126,9 @@
       "q": "Người lao động cao tuổi có quyền thỏa thuận điều gì?",
       "options": [
         "Rút ngắn thời giờ làm việc hằng ngày hoặc làm việc không trọn thời gian",
-        "Không ký HĐLĐ",
-        "Làm thêm giờ không giới hạn",
-        "Không đóng BHXH"
+        "Không ký HĐLĐ với người sử dụng lao động khi đã cao tuổi và nghỉ hưu",
+        "Làm thêm giờ không giới hạn số giờ và không cần trả lương thêm",
+        "Không đóng BHXH và không được hưởng bất kỳ chế độ nào khác cho người lao động"
       ],
       "answer": 0,
       "explain": "Khoản 2 Điều 148.",

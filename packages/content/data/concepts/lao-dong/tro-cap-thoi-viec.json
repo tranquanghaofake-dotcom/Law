@@ -46,9 +46,9 @@
    "q": "Tiền lương để tính trợ cấp thôi việc là gì?",
    "options": [
     "Tiền lương bình quân của 06 tháng liền kề trước khi thôi việc",
-    "Tiền lương tháng cuối cùng",
-    "Lương tối thiểu vùng",
-    "Tiền lương bình quân cả quá trình làm việc"
+    "Tiền lương tháng cuối cùng trước khi nghỉ phép hằng năm",
+    "Lương tối thiểu vùng do Chính phủ công bố hằng năm cho doanh nghiệp",
+    "Tiền lương bình quân cả quá trình làm việc tại doanh nghiệp"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 46.",

@@ -125,10 +125,10 @@
     {
       "q": "Trợ cấp thôi việc mỗi năm làm việc được tính bằng bao nhiêu?",
       "options": [
-        "01 tháng tiền lương",
+        "01 tháng tiền lương mỗi năm",
         "Một nửa tháng tiền lương",
-        "02 tháng tiền lương",
-        "Lương tối thiểu vùng"
+        "02 tháng tiền lương mỗi năm",
+        "Lương tối thiểu vùng tháng"
       ],
       "answer": 1,
       "explain": "Khoản 1 Điều 46.",

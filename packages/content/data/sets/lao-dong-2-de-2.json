@@ -8,10 +8,10 @@
     {
       "q": "Công việc nào KHÔNG thuộc lao động giúp việc gia đình?",
       "options": [
-        "Chăm sóc người già",
-        "Lái xe cho gia đình",
+        "Chăm sóc người già tại nhà của gia đình",
+        "Lái xe cho gia đình, đưa đón con đi học",
         "Bán hàng tại cửa hàng của gia đình",
-        "Nội trợ"
+        "Nội trợ và dọn dẹp nhà cửa hằng ngày"
       ],
       "answer": 2,
       "explain": "Khoản 1 Điều 161.",
@@ -47,10 +47,10 @@
     {
       "q": "Hành vi nào bị nghiêm cấm với người sử dụng lao động giúp việc gia đình?",
       "options": [
-        "Thỏa thuận chỗ ở",
+        "Thỏa thuận chỗ ở cho người giúp việc",
         "Giữ giấy tờ tùy thân của người lao động",
-        "Trả lương theo tuần",
-        "Ký hợp đồng 6 tháng"
+        "Trả lương theo tuần cho người giúp việc",
+        "Ký hợp đồng lao động 6 tháng bằng văn bản"
       ],
       "answer": 1,
       "explain": "Khoản 3 Điều 165.",
@@ -100,9 +100,9 @@
       "q": "Thời hạn HĐLĐ với người lao động nước ngoài?",
       "options": [
         "Không vượt quá thời hạn giấy phép lao động",
-        "Tối thiểu 03 năm",
-        "Không xác định thời hạn",
-        "Do Bộ trưởng quyết định"
+        "Tối thiểu 03 năm theo hợp đồng đã ký kết",
+        "Không xác định thời hạn và không cần giấy phép",
+        "Do Bộ trưởng quyết định theo từng hợp đồng"
       ],
       "answer": 0,
       "explain": "Khoản 2 Điều 151.",
@@ -126,9 +126,9 @@
       "q": "Hình thức nào thuộc Điều 5 Luật 69/2020/QH14?",
       "options": [
         "Hợp đồng lao động do người lao động trực tiếp giao kết với người sử dụng lao động ở nước ngoài",
-        "Hợp đồng du lịch",
-        "Hợp đồng du học tự túc",
-        "Hợp đồng mua bán hàng hóa"
+        "Hợp đồng du lịch trọn gói có hướng dẫn viên đi cùng đoàn khách du lịch nước ngoài",
+        "Hợp đồng du học tự túc giữa học sinh và cơ sở giáo dục nước ngoài tại Việt Nam đã đăng ký",
+        "Hợp đồng mua bán hàng hóa giữa doanh nghiệp và người tiêu dùng cuối cùng tại Việt Nam đã ký kết"
       ],
       "answer": 0,
       "explain": "Khoản 3 Điều 5.",
