@@ -64,7 +64,7 @@
    "right": "Không phải chứng minh",
    "cases": [
     {
-     "text": "Nguyên đơn đòi nợ phải chứng minh có khoản vay",
+     "text": "Nguyên đơn đòi nợ có nghĩa vụ đưa ra chứng cứ về khoản vay",
      "answer": "left"
     },
     {
@@ -77,7 +77,7 @@
      "basis": "Điểm a khoản 1 Điều 91 Bộ luật Tố tụng dân sự 2015"
     },
     {
-     "text": "Người tiêu dùng khởi kiện không phải chứng minh lỗi của tổ chức kinh doanh",
+     "text": "Người tiêu dùng khởi kiện tổ chức kinh doanh hàng hóa, dịch vụ, không bị buộc đưa chứng cứ chứng tỏ lỗi của bên kia",
      "answer": "right",
      "basis": "Điểm a khoản 1 Điều 91 Bộ luật Tố tụng dân sự 2015"
     }

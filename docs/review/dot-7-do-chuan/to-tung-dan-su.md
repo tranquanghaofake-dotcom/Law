@@ -47,3 +47,10 @@
 - `thoi-hieu-khoi-kien-ttds` (plain) — sửa: "điểm e khoản 1 Điều 217" thêm tên văn bản Bộ luật Tố tụng dân sự 2015 (đã đối chiếu, điểm e có thật).
 - `thoi-hieu-khoi-kien-ttds#6` (recall) — báo nhầm: công cụ đối chiếu với BLDS; trích dẫn là Điều 184 BLTTDS 2015 (đúng).
 - `tham-quyen-theo-cap`, cờ thuật ngữ cũ (TAND cấp huyện/cấp cao) — để opus xử lý theo HUONG-DAN.
+
+## Sửa theo kiểm chéo (sonnet C, 03/11/2026) — nguồn: `$DOT7/verify/to-tung-dan-su.md`
+
+| Khái niệm | Trước (đã bỏ/đổi) | Sau | Căn cứ | Ghi chú |
+|---|---|---|---|---|
+| `chung-cu` | Lời khai của đương sự được ghi nhận làm nguồn chứng cứ | Lời khai của đương sự được Tòa án ghi nhận, dùng để xác định sự thật vụ án | Khoản 3 Điều 94 Bộ luật Tố tụng dân sự 2015 | viết lại không nhắc nhãn / sửa lỗi theo bảng verify |
+| `nghia-vu-chung-minh` | Nguyên đơn đòi nợ phải chứng minh có khoản vay<br>Người tiêu dùng khởi kiện không phải chứng minh lỗi của tổ chức kinh doanh | Nguyên đơn đòi nợ có nghĩa vụ đưa ra chứng cứ về khoản vay<br>Người tiêu dùng khởi kiện tổ chức kinh doanh hàng hóa, dịch vụ, không bị buộc đưa chứng cứ chứng tỏ lỗi của bê | —<br>Điểm a khoản 1 Điều 91 Bộ luật Tố tụng dân sự 2015 | viết lại không nhắc nhãn / sửa lỗi theo bảng verify |
