@@ -35,7 +35,7 @@
     {#each items as { subject, s } (subject.id)}
       <a class="card frame subject-card" href={hashFor('subject', { subject: subject.id })}>
         <SubjectArt name={artFor(subject.id)} class="card-art" />
-        <span class="title"><b>{subject.title}</b>{#if s.grade}<span class="chip">{s.grade}</span>{/if}</span>
+        <span class="title"><b>{subject.title}</b></span>
         <span class="muted small">{s.chapters} chương · {s.lessons} đợt · {s.total} khái niệm</span>
         <span class="bar" aria-hidden="true"><span style="width:{s.percent}%"></span></span>
         <span class="small">Thuần thục {s.percent}% · Vào môn →</span>

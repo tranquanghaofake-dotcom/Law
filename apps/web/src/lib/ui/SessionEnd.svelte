@@ -1,4 +1,5 @@
 <script lang="ts">
+  import StreakCard from '$lib/art/StreakCard.svelte';
   import Glyph from '$lib/art/Glyph.svelte';
   import type { Concept, Level } from '$lib/content/types';
   import type { StreakEvent } from '$lib/game/streak';
@@ -6,23 +7,23 @@
   import type { Step } from '$lib/engine/session';
   import { hashFor } from '$lib/router.svelte';
   import { answerText, promptText } from './cards/answer';
-  let { summary, concepts, streak, streakEvent, rankBefore, rankAfter, dueTomorrow, onhome, onagain, onnext, mistakes = [] }: {
+  let { summary, concepts, streak, streakEvent, dueTomorrow, onhome, onagain, onnext, mistakes = [], promotion = null }: {
     summary: { correct: number; total: number; xp: number; levelUps: { conceptId: string; to: Level }[] };
     concepts: Concept[]; streak: number; streakEvent: StreakEvent; rankBefore: RankInfo; rankAfter: RankInfo; dueTomorrow: number;
-    onhome: () => void; onagain?: () => void; onnext?: () => void; mistakes?: Step[];
+    onhome: () => void; onagain?: () => void; onnext?: () => void; mistakes?: Step[]; promotion?: string | null;
   } = $props();
   const term = (id: string) => concepts.find((c) => c.id === id)?.term ?? id;
   const conceptOf = (id: string) => concepts.find((c) => c.id === id);
   const explainOf = (s: Step) => ('explain' in s.item ? s.item.explain : '');
-  const ranked = $derived(rankAfter.rank !== rankBefore.rank || rankAfter.tier !== rankBefore.tier);
   const streakMsg = $derived(({ started: 'Bắt đầu chuỗi ngày.', extended: 'Chuỗi +1 ngày.', 'same-day': 'Hôm nay đã tính chuỗi.', froze: 'Bùa giữ chuỗi đã cứu bạn.', reset: 'Chuỗi bắt đầu lại từ 1.' } as Record<StreakEvent, string>)[streakEvent]);
 </script>
 
 <section class="card session-end" aria-label="Kết thúc phiên">
   <p class="kicker">Xong phiên</p>
   <p class="score"><b>{summary.correct}</b><small>/{summary.total} đúng</small></p>
-  <p class="xp">+{summary.xp} XP {#if ranked}<span class="chip">Thăng: {rankAfter.rank} {rankAfter.tier}</span>{/if}</p>
-  <p class="streak"><Glyph name="flame" /> Chuỗi {streak} ngày · {streakMsg}</p>
+  <p class="xp">+{summary.xp} XP </p>
+  {#if promotion}<p class="promotion"><span class="seal-stamp" aria-hidden="true">§</span> Thăng chức: <b>{promotion}</b> <span class="muted small">(chức danh mô phỏng)</span></p>{/if}
+  <p class="streak"><StreakCard count={streak} longest={streak} size="mini" /> Chuỗi {streak} ngày · {streakMsg}</p>
   {#if summary.levelUps.length}
     <h2>Lên bậc</h2>
     <ul class="levelups">

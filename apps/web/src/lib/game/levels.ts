@@ -1,7 +1,7 @@
 // Tên 7 mức bậc ghi nhớ (0–6), dùng chung cho lưới bậc, cột đợt, hồ sơ.
 import type { Level } from '$lib/content/types';
 
-export const LEVEL_NAMES: readonly string[] = ['Chưa học', 'Gặp', 'Nhận biết', 'Phân biệt', 'Điền', 'Tình huống', 'Thuần thục'];
+export const LEVEL_NAMES: readonly string[] = ['Chưa học', 'Gặp', 'Nhận biết', 'Phân biệt', 'Điền', 'Tình huống', 'Tinh thông'];
 /** Bậc tính là "thuần thục" cho phẩm hàm và % môn. */
 export const MASTERED: Level = 5;
 

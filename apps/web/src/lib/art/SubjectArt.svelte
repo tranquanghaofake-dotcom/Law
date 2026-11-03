@@ -9,8 +9,10 @@
   import NgoMon from './NgoMon.svelte';
   import ToaAn from './ToaAn.svelte';
   import SachLuat from './SachLuat.svelte';
+  import SanGiaoDich from './SanGiaoDich.svelte';
+  import BiaTienSi from './BiaTienSi.svelte';
   let { name, class: cls = '' }: { name: ArtName; class?: string } = $props();
-  const SCENES = { 'khue-van-cac': KhueVanCac, 'quoc-hoi': QuocHoi, 'tam-quan': TamQuan, 'chua-mot-cot': ChuaMotCot, 'ha-long': HaLong, 'ngo-mon': NgoMon, 'toa-an': ToaAn, 'sach-luat': SachLuat };
+  const SCENES = { 'khue-van-cac': KhueVanCac, 'quoc-hoi': QuocHoi, 'tam-quan': TamQuan, 'chua-mot-cot': ChuaMotCot, 'ha-long': HaLong, 'ngo-mon': NgoMon, 'toa-an': ToaAn, 'sach-luat': SachLuat, 'san-giao-dich': SanGiaoDich, 'bia-tien-si': BiaTienSi };
   const Scene = $derived(SCENES[name] ?? TamQuan);
 </script>
 

@@ -19,7 +19,7 @@ describe('MasteryGrid', () => {
     expect(cells[1].classList.contains('lv2')).toBe(true);
     expect(cells[2].classList.contains('lv0')).toBe(true);
     const items = container.querySelectorAll('.cell-item');
-    expect(items[0].getAttribute('title')).toContain('Thuần thục');
+    expect(items[0].getAttribute('title')).toContain('Tinh thông');
     expect(items[0].getAttribute('title')).toContain('Hiến pháp');
   });
   it('nhãn TIẾP THEO CHO BẠN chỉ ở hàng current; link đợt đúng hash', () => {
