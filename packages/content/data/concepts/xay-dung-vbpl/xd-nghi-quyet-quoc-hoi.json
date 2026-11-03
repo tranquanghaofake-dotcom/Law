@@ -72,6 +72,16 @@
     {
      "text": "Nghị quyết phê chuẩn bổ nhiệm Phó Thủ tướng",
      "answer": "right"
+    },
+    {
+     "text": "Nghị quyết của Quốc hội quy định thí điểm chính sách mới khác với luật hiện hành",
+     "answer": "left",
+     "basis": "Điểm a khoản 2 Điều 10 Luật Ban hành văn bản quy phạm pháp luật 2025"
+    },
+    {
+     "text": "Nghị quyết của Quốc hội miễn nhiệm một cá nhân giữ chức vụ do Quốc hội bầu",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 10 Luật Ban hành văn bản quy phạm pháp luật 2025 (văn bản cá biệt không chứa quy phạm)"
     }
    ],
    "explain": "Khoản 2 Điều 10; văn bản cá biệt không chứa quy phạm."

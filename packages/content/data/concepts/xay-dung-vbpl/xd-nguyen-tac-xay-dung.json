@@ -72,6 +72,16 @@
     {
      "text": "Quy định đúng thẩm quyền nhưng không khả thi trong thực tế",
      "answer": "right"
+    },
+    {
+     "text": "Văn bản do cơ quan không đủ thẩm quyền ban hành, trái văn bản của cấp trên",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 5 Luật Ban hành văn bản quy phạm pháp luật 2025"
+    },
+    {
+     "text": "Quy định đúng thẩm quyền nhưng khó khả thi trong thực tế, không phù hợp với thực tiễn",
+     "answer": "right",
+     "basis": "Khoản 4 Điều 5 Luật Ban hành văn bản quy phạm pháp luật 2025"
     }
    ],
    "explain": "Hợp pháp: đúng thẩm quyền, không trái văn bản cấp trên (khoản 2 Điều 5); hợp lý/khả thi thuộc khoản 4 Điều 5."

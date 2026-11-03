@@ -73,6 +73,16 @@
     {
      "text": "25/QĐ-UBND",
      "answer": "right"
+    },
+    {
+     "text": "Văn bản quy phạm có số thứ tự liên tục, năm ban hành và loại văn bản trong số hiệu",
+     "answer": "left",
+     "basis": "Khoản 3 Điều 7 Luật Ban hành văn bản quy phạm pháp luật 2025"
+    },
+    {
+     "text": "Quyết định cá biệt của cơ quan hành chính, chỉ đánh số theo trình tự phát sinh trong năm",
+     "answer": "right",
+     "basis": "Điều 2 Luật Ban hành văn bản quy phạm pháp luật 2025 (không chứa quy phạm nên không theo khoản 3 Điều 7)"
     }
    ],
    "explain": "Khoản 3 Điều 7: VBQPPL có năm ban hành trong số, ký hiệu."
