@@ -120,6 +120,17 @@
     "50 năm",
     "31/12"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quyền nhân thân quy định tại các khoản 1, 2 và 4 Điều 19 của Luật Sở hữu trí tuệ được bảo hộ vô thời hạn.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 27 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 27 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
   }
  ]
 }

@@ -120,6 +120,17 @@
     "quyền nhân thân",
     "công bố"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tác giả không được chuyển nhượng các quyền nhân thân quy định tại Điều 19, trừ quyền công bố tác phẩm.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 45 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 45 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
   }
  ]
 }

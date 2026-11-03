@@ -47,9 +47,9 @@
    "q": "Dấu hiệu âm thanh có thể được bảo hộ là nhãn hiệu không?",
    "options": [
     "Có, nếu thể hiện được dưới dạng đồ họa và có khả năng phân biệt",
-    "Không, âm thanh không thể là dấu hiệu nhãn hiệu",
-    "Chỉ nhãn hiệu nổi tiếng đã được đăng ký quốc tế và có tính mới",
-    "Chỉ khi kèm hình ảnh minh họa và có thể đọc được bằng máy"
+    "Không, âm thanh không thể là dấu hiệu nhãn hiệu theo quy định hiện hành",
+    "Có, nếu là nhãn hiệu nổi tiếng đã được đăng ký quốc tế và có tính mới",
+    "Không, vì âm thanh chỉ được bảo hộ bằng quyền tác giả"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 72.",

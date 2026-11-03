@@ -121,6 +121,18 @@
     "ngày nộp đơn",
     "giữ bí mật"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Sáng chế được coi là chưa bị bộc lộ công khai nếu chỉ có một số người có hạn được biết và có nghĩa vụ giữ bí mật về sáng chế đó.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 60 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 60 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+   }
   }
  ]
 }

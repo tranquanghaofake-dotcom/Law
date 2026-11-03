@@ -125,6 +125,17 @@
     "phát sóng",
     "phương hại"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quyền liên quan đến quyền tác giả là quyền của tổ chức, cá nhân đối với cuộc biểu diễn, bản ghi âm, ghi hình, chương trình phát sóng, tín hiệu cáp mang chương trình được mã hóa, tín hiệu vệ tinh mang chương trình được mã hóa.",
+   "answer": true,
+   "explain": "Đúng. Khoản 3 Điều 4 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 4 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
   }
  ]
 }
