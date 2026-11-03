@@ -42,9 +42,9 @@
    "q": "Điều kiện tiên quyết của phương pháp tiếp cận theo thị trường là gì?",
    "options": [
     "Có giao dịch tương đương để so sánh",
-    "Có sổ sách kế toán chi phí",
-    "Có dự báo lợi nhuận 10 năm",
-    "Có văn bằng bảo hộ"
+    "Có sổ sách kế toán chi phí đầu tư",
+    "Có dự báo lợi nhuận 10 năm tới",
+    "Có văn bằng bảo hộ đã được cấp"
    ],
    "answer": 0,
    "explain": "Thị trường tích cực: phải có giao dịch tương đương."

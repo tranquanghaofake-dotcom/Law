@@ -35,9 +35,9 @@
       "q": "Trong hợp đồng li-xăng độc quyền, bên giao được tự sử dụng đối tượng SHCN khi nào?",
       "options": [
         "Khi được bên được chuyển quyền cho phép",
-        "Mọi lúc",
-        "Không bao giờ",
-        "Khi đã đăng ký hợp đồng"
+        "Mọi lúc, không cần thông báo cho bên kia",
+        "Không bao giờ được sử dụng đối tượng này",
+        "Khi đã đăng ký hợp đồng tại cơ quan nhà nước"
       ],
       "answer": 0,
       "explain": "Khoản 1 Điều 143.",
@@ -48,9 +48,9 @@
       "q": "Hợp đồng chuyển nhượng nhãn hiệu có hiệu lực khi nào?",
       "options": [
         "Khi đăng ký tại cơ quan quản lý nhà nước về quyền SHCN",
-        "Khi ký",
-        "Khi công chứng",
-        "Khi thanh toán"
+        "Khi ký kết và đóng dấu xác nhận của hai bên đầy đủ",
+        "Khi công chứng viên xác nhận chữ ký của hai bên tại văn phòng",
+        "Khi thanh toán xong toàn bộ số tiền chuyển nhượng"
       ],
       "answer": 0,
       "explain": "Khoản 1 Điều 148.",
@@ -61,9 +61,9 @@
       "q": "Hợp đồng sử dụng nhãn hiệu có phải đăng ký mới có giá trị với bên thứ ba không?",
       "options": [
         "Không — là ngoại lệ tại khoản 3 Điều 148",
-        "Có, như mọi hợp đồng sử dụng",
-        "Chỉ khi độc quyền",
-        "Chỉ khi thứ cấp"
+        "Có, như mọi hợp đồng sử dụng khác đã ký",
+        "Chỉ khi độc quyền trong phạm vi lãnh thổ",
+        "Chỉ khi thứ cấp và có văn bản chấp thuận"
       ],
       "answer": 0,
       "explain": "Khoản 3 Điều 148.",
@@ -74,9 +74,9 @@
       "q": "Bên nhượng quyền thương mại có quyền gì đối với bên nhận quyền?",
       "options": [
         "Kiểm soát và trợ giúp việc điều hành kinh doanh",
-        "Sở hữu cửa hàng của bên nhận",
-        "Sa thải nhân viên của bên nhận",
-        "Thu toàn bộ lợi nhuận"
+        "Sở hữu cửa hàng của bên nhận nhượng quyền",
+        "Sa thải nhân viên của bên nhận nhượng quyền",
+        "Thu toàn bộ lợi nhuận của bên nhận nhượng quyền"
       ],
       "answer": 0,
       "explain": "Khoản 2 Điều 284 Luật Thương mại.",
@@ -87,9 +87,9 @@
       "q": "Biện pháp nào thuộc quyền tự bảo vệ theo Điều 198?",
       "options": [
         "Khởi kiện ra tòa án hoặc trọng tài",
-        "Tự tịch thu hàng hóa",
-        "Bắt giữ người xâm phạm",
-        "Tự xử phạt tiền"
+        "Tự tịch thu hàng hóa của bên xâm phạm",
+        "Bắt giữ người xâm phạm tại chỗ",
+        "Tự xử phạt tiền bên xâm phạm hằng năm"
       ],
       "answer": 0,
       "explain": "Điểm d khoản 1 Điều 198.",
@@ -100,9 +100,9 @@
       "q": "Dùng dấu hiệu tương tự nhãn hiệu cho hàng hóa liên quan là xâm phạm khi nào?",
       "options": [
         "Có khả năng gây nhầm lẫn về nguồn gốc hàng hóa, dịch vụ",
-        "Luôn luôn",
-        "Chỉ khi đã có lãi",
-        "Chỉ khi hàng nhập khẩu"
+        "Luôn luôn bị xem là xâm phạm trong mọi trường hợp",
+        "Chỉ khi đã có lãi và bán được hàng ra thị trường nội địa",
+        "Chỉ khi hàng nhập khẩu từ nước ngoài vào Việt Nam"
       ],
       "answer": 0,
       "explain": "Điểm c khoản 1 Điều 129.",
@@ -113,9 +113,9 @@
       "q": "Tổ chức nào không được kinh doanh dịch vụ giám định SHTT?",
       "options": [
         "Tổ chức hành nghề luật sư nước ngoài hành nghề tại Việt Nam",
-        "Doanh nghiệp có giám định viên",
-        "Đơn vị sự nghiệp công lập có giám định viên",
-        "Hợp tác xã có giám định viên"
+        "Doanh nghiệp có giám định viên SHTT đã đăng ký hoạt động",
+        "Đơn vị sự nghiệp công lập có giám định viên đã đăng ký hoạt động",
+        "Hợp tác xã có giám định viên SHTT đã đăng ký hoạt động"
       ],
       "answer": 0,
       "explain": "Khoản 2a Điều 201.",
@@ -126,9 +126,9 @@
       "q": "Hải quan chủ động tạm dừng làm thủ tục khi nào?",
       "options": [
         "Có căn cứ rõ ràng nghi ngờ hàng là hàng giả mạo về SHTT",
-        "Với mọi hàng mang nhãn hiệu",
-        "Khi chưa nộp thuế",
-        "Theo yêu cầu người tiêu dùng"
+        "Với mọi hàng mang nhãn hiệu nước ngoài đưa vào Việt Nam",
+        "Khi chưa nộp thuế nhập khẩu đầy đủ theo quy định của pháp luật",
+        "Theo yêu cầu của người tiêu dùng cá nhân khi đến cửa khẩu"
       ],
       "answer": 0,
       "explain": "Điểm b khoản 2 Điều 216.",

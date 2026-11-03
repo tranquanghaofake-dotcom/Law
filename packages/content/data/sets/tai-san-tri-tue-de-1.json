@@ -35,9 +35,9 @@
       "q": "Bí mật kinh doanh là thông tin thu được từ đâu?",
       "options": [
         "Hoạt động đầu tư tài chính, trí tuệ, chưa bộc lộ, có khả năng sử dụng trong kinh doanh",
-        "Cơ sở dữ liệu công khai",
-        "Văn bản pháp luật",
-        "Báo chí"
+        "Cơ sở dữ liệu công khai do cơ quan nhà nước quản lý, công bố và cập nhật hằng năm cho công chúng",
+        "Văn bản pháp luật do Quốc hội và Chính phủ ban hành công khai cho toàn xã hội",
+        "Báo chí, truyền hình và các phương tiện thông tin đại chúng khác đã công bố"
       ],
       "answer": 0,
       "explain": "Khoản 23 Điều 4.",
@@ -61,9 +61,9 @@
       "q": "Quyền ưu tiên áp dụng cho đối tượng nào?",
       "options": [
         "Sáng chế, kiểu dáng công nghiệp, nhãn hiệu",
-        "Tác phẩm",
-        "Bí mật kinh doanh",
-        "Tên thương mại"
+        "Tác phẩm văn học và nghệ thuật đã được đăng ký",
+        "Bí mật kinh doanh và thông tin mật kỹ thuật",
+        "Tên thương mại của doanh nghiệp tại Việt Nam"
       ],
       "answer": 0,
       "explain": "Khoản 1 Điều 91.",
@@ -74,9 +74,9 @@
       "q": "Cơ sở để hưởng quyền ưu tiên là gì?",
       "options": [
         "Đơn đầu tiên đăng ký bảo hộ cùng một đối tượng",
-        "Ngày cấp văn bằng",
-        "Ngày thành lập doanh nghiệp",
-        "Ngày công bố sản phẩm"
+        "Ngày cấp văn bằng bảo hộ của cơ quan nhà nước",
+        "Ngày thành lập doanh nghiệp của người nộp đơn",
+        "Ngày công bố sản phẩm ra thị trường và quảng cáo"
       ],
       "answer": 0,
       "explain": "Khoản 1 Điều 91.",
@@ -100,9 +100,9 @@
       "q": "Ai được dùng quyền SHTT để góp vốn?",
       "options": [
         "Chủ sở hữu hợp pháp hoặc người có quyền sử dụng hợp pháp",
-        "Bất kỳ ai",
-        "Chỉ tác giả",
-        "Chỉ Nhà nước"
+        "Bất kỳ ai có nhu cầu đầu tư, góp vốn và kinh doanh",
+        "Chỉ tác giả của tác phẩm, dù không phải chủ sở hữu",
+        "Chỉ Nhà nước được quyết định góp vốn bằng tài sản này của mình"
       ],
       "answer": 0,
       "explain": "Khoản 2 Điều 34 Luật Doanh nghiệp.",
@@ -113,9 +113,9 @@
       "q": "Thiệt hại nào là thiệt hại vật chất theo Điều 204?",
       "options": [
         "Chi phí hợp lý để ngăn chặn, khắc phục thiệt hại",
-        "Tổn thất danh dự tác giả",
-        "Tổn thất uy tín người biểu diễn",
-        "Tổn thất tinh thần khác"
+        "Tổn thất danh dự tác giả và uy tín nghề nghiệp",
+        "Tổn thất uy tín người biểu diễn trong cộng đồng",
+        "Tổn thất tinh thần khác của chủ thể quyền và người thân"
       ],
       "answer": 0,
       "explain": "Điểm a khoản 1 Điều 204.",
@@ -126,9 +126,9 @@
       "q": "Mức độ thiệt hại được xác định trên cơ sở nào?",
       "options": [
         "Tổn thất thực tế mà chủ thể quyền phải chịu",
-        "Doanh thu của bị đơn",
-        "Giá trị văn bằng",
-        "Số năm bảo hộ còn lại"
+        "Doanh thu của bị đơn trong kỳ kinh doanh",
+        "Giá trị văn bằng bảo hộ được cấp ban đầu",
+        "Số năm bảo hộ còn lại của văn bằng đã cấp"
       ],
       "answer": 0,
       "explain": "Khoản 2 Điều 204.",

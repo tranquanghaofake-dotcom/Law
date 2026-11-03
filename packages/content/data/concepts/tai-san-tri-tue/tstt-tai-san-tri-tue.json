@@ -28,9 +28,9 @@
    "q": "Theo bài giảng, đặc điểm nào KHÔNG phải của tài sản trí tuệ?",
    "options": [
     "Bị hao mòn khi sử dụng",
-    "Bản chất vô hình",
+    "Bản chất vô hình, khó sờ",
     "Có khả năng sinh lời",
-    "Có tính sáng tạo"
+    "Có tính sáng tạo cao"
    ],
    "answer": 0,
    "explain": "Tài sản trí tuệ không bị hao mòn, cạn kiệt khi sử dụng — khác tài sản hữu hình."
@@ -41,9 +41,9 @@
    "q": "Quan hệ giữa tài sản trí tuệ và quyền sở hữu trí tuệ?",
    "options": [
     "Quyền SHTT là quyền pháp luật bảo hộ đối với tài sản trí tuệ, có giới hạn thời gian và lãnh thổ",
-    "Hai khái niệm đồng nhất",
-    "Tài sản trí tuệ là một loại quyền SHTT",
-    "Quyền SHTT không giới hạn thời gian"
+    "Hai khái niệm đồng nhất với nhau trong mọi văn bản pháp luật hiện hành về sở hữu trí tuệ",
+    "Tài sản trí tuệ là một loại quyền SHTT được bảo hộ theo thời hạn nhất định của pháp luật",
+    "Quyền SHTT không giới hạn thời gian và không giới hạn lãnh thổ bảo hộ của pháp luật"
    ],
    "answer": 0,
    "explain": "Tài sản trí tuệ là đối tượng; quyền SHTT là quyền pháp lý đối với đối tượng đó, giới hạn về không gian và thời hạn bảo hộ."

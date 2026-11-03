@@ -31,9 +31,9 @@
    "q": "Điều kiện nào thuộc Điều 84 về bí mật kinh doanh?",
    "options": [
     "Được chủ sở hữu bảo mật bằng các biện pháp cần thiết",
-    "Đã đăng ký tại Cục Sở hữu trí tuệ",
-    "Có tính mới trên toàn thế giới",
-    "Đã công bố trên tạp chí"
+    "Đã đăng ký tại Cục Sở hữu trí tuệ và được cấp văn bằng",
+    "Có tính mới trên toàn thế giới và có tính sáng tạo cao",
+    "Đã công bố công khai trên tạp chí chuyên ngành và báo chí"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 84.",
@@ -48,9 +48,9 @@
    "q": "Bí mật kinh doanh theo khoản 23 Điều 4 là thông tin thu được từ đâu?",
    "options": [
     "Hoạt động đầu tư tài chính, trí tuệ, chưa được bộc lộ và có khả năng sử dụng trong kinh doanh",
-    "Thông tin đã công bố công khai",
-    "Số liệu thống kê nhà nước",
-    "Văn bản pháp luật"
+    "Thông tin đã công bố công khai trên các phương tiện báo chí, mạng xã hội và internet hiện nay",
+    "Số liệu thống kê nhà nước đã được công bố hằng năm cho toàn xã hội và các cơ quan liên quan",
+    "Văn bản pháp luật do Quốc hội và Chính phủ ban hành công khai cho toàn xã hội biết"
    ],
    "answer": 0,
    "explain": "Khoản 23 Điều 4.",

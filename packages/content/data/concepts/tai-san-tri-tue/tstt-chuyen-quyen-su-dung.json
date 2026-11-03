@@ -31,9 +31,9 @@
    "q": "Chuyển quyền sử dụng đối tượng SHCN là gì?",
    "options": [
     "Chủ sở hữu cho phép tổ chức, cá nhân khác sử dụng đối tượng SHCN thuộc phạm vi quyền sử dụng của mình",
-    "Chuyển giao quyền sở hữu",
-    "Từ bỏ quyền SHCN",
-    "Đăng ký lại văn bằng"
+    "Chuyển giao quyền sở hữu đối tượng SHCN vĩnh viễn cho tổ chức, cá nhân khác và thu tiền",
+    "Từ bỏ quyền SHCN đã được cấp, chấm dứt mọi nghĩa vụ liên quan đến đối tượng bảo hộ và thu tiền từ bên nhận",
+    "Đăng ký lại văn bằng bảo hộ sau khi hết hạn và nộp lệ phí cho cơ quan nhà nước có thẩm quyền"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 141.",

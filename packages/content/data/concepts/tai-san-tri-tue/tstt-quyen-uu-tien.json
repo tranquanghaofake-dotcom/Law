@@ -30,9 +30,9 @@
    "q": "Quyền ưu tiên theo Điều 91 dựa trên cơ sở nào?",
    "options": [
     "Đơn đầu tiên đăng ký bảo hộ cùng một đối tượng",
-    "Số vốn của người nộp đơn",
-    "Thứ tự cấp văn bằng",
-    "Quốc tịch của tác giả"
+    "Số vốn đầu tư của người nộp đơn vào sản phẩm",
+    "Thứ tự cấp văn bằng bảo hộ của cơ quan nhà nước",
+    "Quốc tịch của tác giả và nơi cư trú hiện tại"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 91.",
@@ -47,9 +47,9 @@
    "q": "Đối tượng nào được áp dụng quyền ưu tiên theo khoản 1 Điều 91?",
    "options": [
     "Sáng chế, kiểu dáng công nghiệp, nhãn hiệu",
-    "Tác phẩm văn học",
-    "Bí mật kinh doanh",
-    "Tên thương mại"
+    "Tác phẩm văn học và nghệ thuật của tác giả",
+    "Bí mật kinh doanh và thông tin mật kỹ thuật",
+    "Tên thương mại của doanh nghiệp tại Việt Nam"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 91 nêu sáng chế, kiểu dáng công nghiệp, nhãn hiệu.",

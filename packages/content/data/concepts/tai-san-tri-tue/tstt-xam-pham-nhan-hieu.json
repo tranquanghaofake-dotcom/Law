@@ -31,9 +31,9 @@
    "q": "Dùng dấu hiệu tương tự nhãn hiệu được bảo hộ cho hàng hóa cùng loại bị coi là xâm phạm khi nào?",
    "options": [
     "Khi việc sử dụng có khả năng gây nhầm lẫn về nguồn gốc hàng hóa, dịch vụ",
-    "Trong mọi trường hợp, không cần điều kiện",
-    "Chỉ khi đã bán được hàng",
-    "Chỉ khi dấu hiệu đã được đăng ký"
+    "Trong mọi trường hợp, không cần điều kiện nào và không cần chứng minh",
+    "Chỉ khi đã bán được hàng ra thị trường và có doanh thu thực tế cho người tiêu dùng",
+    "Chỉ khi dấu hiệu đã được đăng ký tại cơ quan quản lý nhà nước và công bố"
    ],
    "answer": 0,
    "explain": "Điểm c khoản 1 Điều 129.",
@@ -48,9 +48,9 @@
    "q": "Trường hợp nào KHÔNG cần chứng minh khả năng gây nhầm lẫn?",
    "options": [
     "Dấu hiệu trùng với nhãn hiệu cho hàng hóa trùng với danh mục đăng ký",
-    "Dấu hiệu tương tự cho hàng hóa tương tự",
-    "Dấu hiệu trùng cho hàng hóa liên quan",
-    "Dấu hiệu tương tự cho hàng hóa liên quan"
+    "Dấu hiệu tương tự cho hàng hóa tương tự đã được đăng ký trước đó",
+    "Dấu hiệu trùng cho hàng hóa liên quan và đã được công bố rộng rãi",
+    "Dấu hiệu tương tự cho hàng hóa liên quan và có khả năng sử dụng"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 1 Điều 129 không có điều kiện \"có khả năng gây nhầm lẫn\".",
