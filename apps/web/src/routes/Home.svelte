@@ -91,6 +91,7 @@
 {:else if !index || !hero}
   <p class="loading">Đang tải…</p>
 {:else}
+  <h1 class="sr-only">Hôm nay</h1>
   <HeroCard state={hero} />
 
   {#if rows.length}
