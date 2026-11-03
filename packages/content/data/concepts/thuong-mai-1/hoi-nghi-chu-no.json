@@ -31,9 +31,9 @@
    "q": "Nghị quyết của Hội nghị chủ nợ được thông qua khi nào?",
    "options": [
     "Số chủ nợ đại diện cho từ 65% tổng số nợ không có bảo đảm trở lên tán thành",
-    "Quá nửa tổng số chủ nợ có mặt tán thành",
-    "Toàn bộ chủ nợ tán thành",
-    "Thẩm phán đồng ý"
+    "Quá nửa tổng số chủ nợ có mặt tán thành, không cần xét đến số nợ",
+    "Toàn bộ chủ nợ có bảo đảm và không có bảo đảm đều phải tán thành bằng văn bản",
+    "Thẩm phán đồng ý bằng văn bản sau khi xem xét đầy đủ hồ sơ vụ việc và ý kiến các bên"
    ],
    "answer": 0,
    "explain": "Khoản 5 Điều 61.",

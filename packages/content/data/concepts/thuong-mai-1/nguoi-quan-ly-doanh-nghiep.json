@@ -29,9 +29,9 @@
    "q": "Chức danh nào là người quản lý doanh nghiệp theo khoản 24 Điều 4?",
    "options": [
     "Thành viên Hội đồng quản trị",
-    "Cổ đông phổ thông nhỏ",
-    "Nhân viên kế toán",
-    "Kiểm toán viên độc lập"
+    "Cổ đông phổ thông nhỏ lẻ",
+    "Nhân viên kế toán trưởng",
+    "Kiểm toán viên độc lập được thuê"
    ],
    "answer": 0,
    "explain": "Khoản 24 Điều 4.",
@@ -46,9 +46,9 @@
    "q": "Ngoài các chức danh luật liệt kê, ai còn có thể là người quản lý doanh nghiệp?",
    "options": [
     "Cá nhân giữ chức danh quản lý khác theo quy định tại Điều lệ công ty",
-    "Mọi người lao động",
-    "Khách hàng lớn",
-    "Ngân hàng cho vay"
+    "Mọi người lao động trong doanh nghiệp, kể cả người thân trong gia đình",
+    "Khách hàng lớn có hợp đồng mua bán dài hạn với doanh nghiệp",
+    "Ngân hàng cho vay vốn và nhận tài sản bảo đảm của doanh nghiệp"
    ],
    "answer": 0,
    "explain": "Khoản 24 Điều 4.",

@@ -34,10 +34,10 @@
     {
       "q": "Ai KHÔNG phải người quản lý doanh nghiệp theo khoản 24 Điều 4?",
       "options": [
-        "Giám đốc",
-        "Chủ tịch Hội đồng quản trị",
+        "Giám đốc hoặc Tổng giám đốc của công ty",
+        "Chủ tịch Hội đồng quản trị công ty",
         "Cổ đông phổ thông không giữ chức danh",
-        "Thành viên hợp danh"
+        "Thành viên hợp danh của công ty hợp danh"
       ],
       "answer": 2,
       "explain": "Khoản 24 Điều 4.",
@@ -47,10 +47,10 @@
     {
       "q": "Chủ sở hữu hưởng lợi của doanh nghiệp là ai?",
       "options": [
-        "Người đứng tên trên giấy tờ",
+        "Người đứng tên trên giấy tờ đăng ký kinh doanh của công ty và sổ cổ đông công ty",
         "Cá nhân sở hữu trên thực tế vốn điều lệ hoặc có quyền chi phối doanh nghiệp",
-        "Ngân hàng",
-        "Người lao động"
+        "Ngân hàng cho vay vốn và nhận tài sản bảo đảm của doanh nghiệp vay",
+        "Người lao động làm việc tại doanh nghiệp và được hưởng lương hằng tháng"
       ],
       "answer": 1,
       "explain": "Khoản 35 Điều 4 (bổ sung bởi Luật 76/2025/QH15).",
@@ -100,9 +100,9 @@
       "q": "Điều kiện để doanh nghiệp được giải thể là gì?",
       "options": [
         "Bảo đảm thanh toán hết nợ, nghĩa vụ tài sản và không trong quá trình giải quyết tranh chấp",
-        "Có lãi",
-        "Được UBND đồng ý",
-        "Có trên 10 lao động"
+        "Có lãi trong ba năm liên tiếp và không có khoản nợ quá hạn nào tại thời điểm giải thể",
+        "Được UBND cấp tỉnh đồng ý bằng văn bản sau khi kiểm tra đầy đủ hồ sơ và tài sản",
+        "Có trên 10 lao động đang làm việc, đóng bảo hiểm xã hội đầy đủ và có tài sản thế chấp tại ngân hàng"
       ],
       "answer": 0,
       "explain": "Khoản 2 Điều 207.",
@@ -112,10 +112,10 @@
     {
       "q": "Doanh nghiệp nhà nước theo Luật Doanh nghiệp 2020 là doanh nghiệp do Nhà nước nắm giữ bao nhiêu vốn điều lệ?",
       "options": [
-        "100%",
+        "Đúng 50%",
         "Trên 50%",
-        "Từ 30%",
-        "Từ 65%"
+        "Trên 40%",
+        "Trên 65%"
       ],
       "answer": 1,
       "explain": "Khoản 11 Điều 4.",

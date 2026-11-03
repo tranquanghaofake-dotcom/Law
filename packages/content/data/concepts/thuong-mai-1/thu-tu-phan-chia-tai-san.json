@@ -48,9 +48,9 @@
    "q": "Tài sản không đủ thanh toán cho các đối tượng cùng một thứ tự ưu tiên thì xử lý thế nào?",
    "options": [
     "Thanh toán theo tỷ lệ phần trăm tương ứng với số nợ",
-    "Ai nộp đơn trước được trả trước",
-    "Bốc thăm",
-    "Ưu tiên chủ nợ lớn nhất"
+    "Ai nộp đơn yêu cầu trước thì được trả nợ trước",
+    "Bốc thăm ngẫu nhiên để xác định thứ tự thanh toán",
+    "Ưu tiên chủ nợ lớn nhất theo số nợ và thời điểm đăng ký"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 46.",
