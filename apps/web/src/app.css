@@ -12,7 +12,22 @@
   --ok-bg: #e5f4ec;
   --bad: #b3261e;
   --bad-bg: #fbe9e7;
-  --radius: 10px;
+  /* ---- Thang token (đợt 5, mục 2). Mọi khoảng cách/cỡ chữ/bo góc/chiều cao điều khiển lấy từ đây. ---- */
+  /* khoảng cách: 4·8·12·16·24·32·48 */
+  --sp-1: 4px; --sp-2: 8px; --sp-3: 12px; --sp-4: 16px; --sp-5: 24px; --sp-6: 32px; --sp-7: 48px;
+  /* cỡ chữ: 12·14·16·18·22·28·36 (xs ghi chú/kicker · sm phụ · md thân · lg tiêu đề nhỏ · xl h2 · 2xl h1 điện thoại · 3xl h1 ≥ 768) */
+  --fs-xs: 12px; --fs-sm: 14px; --fs-md: 16px; --fs-lg: 18px; --fs-xl: 22px; --fs-2xl: 28px; --fs-3xl: 36px;
+  --lh-tight: 1.2; --lh-snug: 1.35; --lh-body: 1.55;
+  /* bo góc: giữ ngôn ngữ "góc vuông vức" — điều khiển & nhãn (nút, ô nhập, chip, ô bậc) 4 · thẻ, hàng, ô nhập liệu 8 · khung đầu trang, khối lớn 12 · tròn chỉ dành cho vòng/thanh/chấm */
+  --r-sm: 4px; --r-md: 8px; --r-lg: 12px;
+  /* chiều cao điều khiển (nút, ô tìm, chip lọc, select): 40 desktop · 44 điện thoại (chạm); tuỳ chọn đáp án 48 */
+  --ctl-h: 40px; --ctl-h-lg: 48px;
+  /* nhịp bố cục: một khoảng giữa các mục cùng cấp; hàng trong danh sách 8; lưới thẻ 12; padding thẻ/đầu trang */
+  --sec-gap: var(--sp-5); --row-gap: var(--sp-2); --grid-gap: var(--sp-3);
+  --pad-row: var(--sp-3) var(--sp-4);
+  --pad-card: var(--sp-4);
+  --pad-head: var(--sp-3) var(--sp-4) var(--sp-4);
+  --radius: var(--r-md); /* tên cũ, giữ để không vỡ chỗ khác */
   /* chữ màu son trên nền giấy: đậm hơn --accent để đạt tương phản AA */
   --accent-text: color-mix(in srgb, var(--accent) 62%, var(--ink));
   /* 7 nấc bậc ghi nhớ (lưới môn, chú giải) */
@@ -23,6 +38,8 @@
   --font-ui: "Be Vietnam Pro", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --font-quote: "Noto Serif", Georgia, "Times New Roman", serif;
 }
+@media (max-width: 767px) { :root { --ctl-h: 44px; --sec-gap: var(--sp-4); } } /* điện thoại: nhịp mục 16 (giữ trang ngắn); từ 768: 24 */
+@media (min-width: 768px) { :root { --pad-card: var(--sp-5); --pad-head: var(--sp-6); } }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --ink: #eef1f7; --paper: #0f1626; --card: #182238; --muted: #a5adbf; --line: #2a3650;
