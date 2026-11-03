@@ -119,6 +119,18 @@
     "sinh hoạt hàng ngày",
     "bất động sản"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Giao dịch dân sự của người chưa đủ sáu tuổi do người đại diện theo pháp luật của người đó xác lập, thực hiện.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 21 Bộ luật Dân sự 2015 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 21 Bộ luật Dân sự 2015",
+    "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+   }
   }
  ]
 }

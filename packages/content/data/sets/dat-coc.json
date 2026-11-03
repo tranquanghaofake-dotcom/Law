@@ -74,9 +74,9 @@
       "q": "Có thể dùng một chiếc điện thoại để đặt cọc không?",
       "options": [
         "Có, vì đó là vật có giá trị",
-        "Không, chỉ được đặt cọc bằng tiền",
-        "Chỉ được khi có công chứng hợp đồng",
-        "Chỉ được đặt cọc bằng vàng hoặc đá quý"
+        "Không, vì đặt cọc phải bằng tiền mặt",
+        "Có, nếu hợp đồng có công chứng",
+        "Không, vì phải là vàng hoặc đá quý"
       ],
       "answer": 0,
       "explain": "Tài sản đặt cọc gồm khoản tiền, kim khí quý, đá quý hoặc vật có giá trị khác. Điện thoại là vật có giá trị nên có thể dùng để đặt cọc.",
@@ -87,9 +87,9 @@
       "q": "Hợp đồng đặt cọc ghi: nếu bên nhận cọc đổi ý thì phải trả gấp 3 lần tiền cọc. Thỏa thuận này có được áp dụng không?",
       "options": [
         "Không, luật chỉ cho phạt đúng bằng giá trị cọc",
-        "Chỉ có hiệu lực nếu công chứng",
+        "Không, vì mức phạt cọc bị giới hạn tối đa 8% giá trị",
         "Có, vì luật cho phép các bên thỏa thuận khác",
-        "Chỉ áp dụng khi mua bán nhà đất"
+        "Không, thỏa thuận này trái điều cấm của luật"
       ],
       "answer": 2,
       "explain": "Quy định phạt cọc bằng giá trị cọc áp dụng \"trừ trường hợp có thỏa thuận khác\". Các bên có thể tự nguyện thỏa thuận mức khác, miễn không vi phạm điều cấm của luật, không trái đạo đức xã hội.",
@@ -101,8 +101,8 @@
       "options": [
         "Vô hiệu, vì đặt cọc bắt buộc phải lập văn bản có công chứng",
         "Không vô hiệu chỉ vì hình thức; tin nhắn là chứng cứ quan trọng",
-        "Chỉ hợp lệ nếu có người làm chứng và có chữ ký đầy đủ của các bên",
-        "Chỉ hợp lệ nếu được công chứng tại văn phòng công chứng"
+        "Hợp lệ nếu có người làm chứng và có chữ ký đầy đủ của các bên",
+        "Hợp lệ nếu được công chứng tại văn phòng công chứng"
       ],
       "answer": 1,
       "explain": "BLDS 2015 không bắt buộc đặt cọc phải lập văn bản (khác BLDS 2005). Giao dịch dân sự có thể bằng lời nói, văn bản hoặc hành vi; giao dịch qua phương tiện điện tử dưới dạng thông điệp dữ liệu được coi là giao dịch bằng văn bản. Hãy lưu lại tin nhắn.",

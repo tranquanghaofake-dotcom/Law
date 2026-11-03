@@ -29,8 +29,8 @@
    "q": "Khi giao dịch giả tạo nhằm che giấu một giao dịch khác thì giao dịch bị che giấu có hiệu lực không?",
    "options": [
     "Vẫn có hiệu lực, trừ khi bản thân nó cũng vô hiệu theo luật",
-    "Luôn vô hiệu, không cần xét đến nội dung và mục đích",
-    "Luôn có hiệu lực, không phụ thuộc vào giao dịch giả tạo",
+    "Vô hiệu theo giao dịch giả tạo, không xét nội dung và mục đích",
+    "Có hiệu lực ngay cả khi nội dung trái điều cấm của luật",
     "Do Ủy ban nhân dân quyết định theo từng vụ việc riêng"
    ],
    "answer": 0,

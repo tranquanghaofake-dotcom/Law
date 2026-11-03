@@ -124,6 +124,18 @@
     "không phải bất động sản",
     "thời hiệu"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Động sản là những tài sản không phải là bất động sản.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 107 Bộ luật Dân sự 2015 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 107 Bộ luật Dân sự 2015",
+    "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+   }
   }
  ]
 }

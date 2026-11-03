@@ -125,6 +125,18 @@
     "03 năm",
     "mở thừa kế"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thời hiệu yêu cầu người thừa kế thực hiện nghĩa vụ về tài sản của người chết để lại là 03 năm, kể từ thời điểm mở thừa kế.",
+   "answer": true,
+   "explain": "Đúng. Khoản 3 Điều 623 Bộ luật Dân sự 2015 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 623 Bộ luật Dân sự 2015",
+    "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+   }
   }
  ]
 }

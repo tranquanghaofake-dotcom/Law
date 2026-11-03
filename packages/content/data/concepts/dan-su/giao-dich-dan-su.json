@@ -26,11 +26,11 @@
   {
    "type": "mcq",
    "level": 1,
-   "q": "Giao dịch dân sự gồm những dạng nào theo Điều 116?",
+   "q": "Phương án nào mô tả đầy đủ các dạng giao dịch dân sự theo Điều 116?",
    "options": [
     "Hợp đồng hoặc hành vi pháp lý đơn phương",
-    "Chỉ hợp đồng dân sự, không có hành vi khác",
-    "Chỉ hợp đồng có công chứng đã được đăng ký",
+    "Hợp đồng dân sự, không có hành vi khác",
+    "Hợp đồng có công chứng đã được đăng ký",
     "Quyết định hành chính hoặc hợp đồng dân sự"
    ],
    "answer": 0,
@@ -123,6 +123,18 @@
     "đơn phương",
     "phát sinh, thay đổi, chấm dứt"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Giao dịch dân sự là hợp đồng hoặc hành vi pháp lý đơn phương làm phát sinh, thay đổi hoặc chấm dứt quyền, nghĩa vụ dân sự.",
+   "answer": true,
+   "explain": "Đúng. Điều 116 Bộ luật Dân sự 2015 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 116 Bộ luật Dân sự 2015",
+    "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+   }
   }
  ]
 }

@@ -120,6 +120,18 @@
     "ngay tình",
     "liên tục, công khai"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chiếm hữu là việc chủ thể nắm giữ, chi phối tài sản một cách trực tiếp hoặc gián tiếp như chủ thể có quyền đối với tài sản.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 179 Bộ luật Dân sự 2015 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 179 Bộ luật Dân sự 2015",
+    "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+   }
   }
  ]
 }
