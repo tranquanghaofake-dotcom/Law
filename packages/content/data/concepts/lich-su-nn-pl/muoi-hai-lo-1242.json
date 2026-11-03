@@ -73,12 +73,12 @@
      "answer": "right"
     },
     {
-     "text": "Các xã, sách được đặt chức đại tư xã, tiểu tư xã",
+     "text": "Chức coi xã, sách dành cho quan từ ngũ phẩm trở lên",
      "answer": "left",
      "basis": "Đại Việt sử ký toàn thư, Bản kỷ quyển V, Kỷ nhà Trần, Thái Tông, năm 1242, tờ 13a (laws/lich-su-su-lieu.txt)"
     },
     {
-     "text": "Chức tiểu tư xã dành cho quan từ lục phẩm trở xuống",
+     "text": "Chức coi xã, sách dành cho quan từ lục phẩm trở xuống",
      "answer": "right",
      "basis": "Đại Việt sử ký toàn thư, Bản kỷ quyển V, Kỷ nhà Trần, Thái Tông, năm 1242, tờ 13a (laws/lich-su-su-lieu.txt)"
     }

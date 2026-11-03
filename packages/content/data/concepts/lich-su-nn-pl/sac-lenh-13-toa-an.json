@@ -74,12 +74,12 @@
      "answer": "right"
     },
     {
-     "text": "Tòa án sơ cấp đặt ở mỗi quận, phủ, huyện, châu, quản hạt địa hạt quận",
+     "text": "Tòa án đặt ở mỗi quận, phủ, huyện, châu, quản hạt là địa hạt quận",
      "answer": "left",
      "basis": "Sắc lệnh 13, Điều thứ 7 (laws/lich-su-su-lieu.txt)"
     },
     {
-     "text": "Tòa án đệ nhị cấp đặt ở mỗi tỉnh và các thành phố lớn",
+     "text": "Tòa án đặt ở mỗi tỉnh và các thành phố lớn",
      "answer": "right",
      "basis": "Sắc lệnh 13, Điều thứ 12 (laws/lich-su-su-lieu.txt)"
     }

@@ -74,12 +74,12 @@
      "answer": "right"
     },
     {
-     "text": "Người làm chứng in tay ở 3 dòng trước khi làm chúc thư, văn khế ruộng đất",
+     "text": "Khi làm chúc thư, văn khế ruộng đất, người đứng ra chứng kiến in tay ở 3 dòng trước",
      "answer": "left",
      "basis": "Đại Việt sử ký toàn thư, Bản kỷ quyển V, Kỷ nhà Trần, Thái Tông, năm 1237, tờ 9b (laws/lich-su-su-lieu.txt)"
     },
     {
-     "text": "Người bán ruộng đất in tay ở 4 dòng sau trong văn khế",
+     "text": "Bên chuyển nhượng ruộng đất in tay ở 4 dòng sau trong văn khế",
      "answer": "right",
      "basis": "Đại Việt sử ký toàn thư, Bản kỷ quyển V, Kỷ nhà Trần, Thái Tông, năm 1237, tờ 9b (laws/lich-su-su-lieu.txt)"
     }
