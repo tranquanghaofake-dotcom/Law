@@ -71,6 +71,16 @@
     {
      "text": "Mô hình pháp lý gồm các dấu hiệu do luật quy định",
      "answer": "right"
+    },
+    {
+     "text": "Vụ việc cụ thể đã xảy ra: người A đánh B gây thương tích tại quán nhậu tối qua",
+     "answer": "left",
+     "basis": "Điều 8 Bộ luật Hình sự 2015 (hành vi nguy hiểm đã xảy ra; ⚠ căn cứ giáo trình, chưa đối chiếu nguyên văn)"
+    },
+    {
+     "text": "Mô hình luật định gồm các dấu hiệu khách thể, mặt khách quan, chủ thể và mặt chủ quan của tội",
+     "answer": "right",
+     "basis": "Điều 8 Bộ luật Hình sự 2015 (dấu hiệu do luật quy định; ⚠ căn cứ giáo trình)"
     }
    ],
    "explain": "Học thuyết."

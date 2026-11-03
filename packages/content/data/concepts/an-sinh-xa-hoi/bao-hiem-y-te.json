@@ -72,6 +72,16 @@
     {
      "text": "Doanh nghiệp bảo hiểm kinh doanh vì lợi nhuận",
      "answer": "right"
+    },
+    {
+     "text": "Quỹ do Nhà nước tổ chức, bảo đảm chia sẻ rủi ro giữa những người tham gia",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 3 Luật Bảo hiểm y tế"
+    },
+    {
+     "text": "Gói bảo hiểm do doanh nghiệp thương mại thiết kế và thu phí để kinh doanh lợi nhuận",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 2 Luật Bảo hiểm y tế (định nghĩa: không vì mục đích lợi nhuận)"
     }
    ],
    "explain": "Điều 2 Luật BHYT."

@@ -74,6 +74,11 @@
     {
      "text": "Không bên nào có giấy tờ",
      "answer": "right"
+    },
+    {
+     "text": "Tranh chấp đất đai mà một bên có Giấy chứng nhận quyền sử dụng đất",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 236 Luật Đất đai 2024"
     }
    ],
    "explain": "Điều 236."

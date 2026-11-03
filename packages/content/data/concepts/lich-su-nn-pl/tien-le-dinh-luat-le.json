@@ -75,6 +75,16 @@
     {
      "text": "Bộ luật gồm nhiều chương, điều cụ thể",
      "answer": "right"
+    },
+    {
+     "text": "Luật lệnh năm 1002 được định lại, còn sử liệu chép vắn tắt",
+     "answer": "left",
+     "basis": "Đại Việt sử ký toàn thư, Bản kỷ quyển I, Kỷ nhà Lê, năm 1002, tờ 23b (laws/lich-su-su-lieu.txt)"
+    },
+    {
+     "text": "Luật lệnh năm 1002 có bộ luật nhiều chương, điều cụ thể còn nguyên văn",
+     "answer": "right",
+     "basis": "Đại Việt sử ký toàn thư, Bản kỷ quyển I, Kỷ nhà Lê, năm 1002, tờ 23b (laws/lich-su-su-lieu.txt)"
     }
    ],
    "explain": "Toàn thư chỉ chép vắn tắt; nội dung luật lệnh không còn."

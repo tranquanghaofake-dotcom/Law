@@ -70,6 +70,16 @@
     {
      "text": "Phát hiện tình tiết mới mà đương sự không biết được",
      "answer": "right"
+    },
+    {
+     "text": "Kết luận trong bản án không phù hợp với tình tiết khách quan, gây thiệt hại cho đương sự",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 326 Bộ luật Tố tụng dân sự 2015"
+    },
+    {
+     "text": "Người giám định có kết luận không đúng sự thật hoặc có giả mạo chứng cứ",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 352 Bộ luật Tố tụng dân sự 2015"
     }
    ],
    "explain": "Điều 326, 352."

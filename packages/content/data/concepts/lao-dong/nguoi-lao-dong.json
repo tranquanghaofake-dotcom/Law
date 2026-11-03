@@ -74,6 +74,11 @@
     {
      "text": "Cá nhân 14 tuổi thuê người làm",
      "answer": "right"
+    },
+    {
+     "text": "Doanh nghiệp tư nhân thuê người làm việc theo hợp đồng lao động",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 3 Bộ luật Lao động 2019"
     }
    ],
    "explain": "Khoản 2 Điều 3."

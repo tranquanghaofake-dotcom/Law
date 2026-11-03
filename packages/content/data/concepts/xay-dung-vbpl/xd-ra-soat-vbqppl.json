@@ -73,6 +73,16 @@
     {
      "text": "Kết luận quyết định của UBND tỉnh trái luật",
      "answer": "right"
+    },
+    {
+     "text": "Cơ quan đối chiếu thông tư cũ với luật mới để phát hiện quy định không còn phù hợp",
+     "answer": "left",
+     "basis": "Khoản 5 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025"
+    },
+    {
+     "text": "Cơ quan cấp trên xem xét, kết luận về tính hợp hiến, hợp pháp của quyết định đã ban hành",
+     "answer": "right",
+     "basis": "Khoản 6 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025"
     }
    ],
    "explain": "Khoản 5 và khoản 6 Điều 3."

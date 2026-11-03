@@ -73,6 +73,16 @@
     {
      "text": "Người có quyền lợi, nghĩa vụ liên quan",
      "answer": "left"
+    },
+    {
+     "text": "Nguyên đơn trong vụ án dân sự là người khởi kiện để yêu cầu Tòa án giải quyết",
+     "answer": "left",
+     "basis": "Khoản 1 và khoản 2 Điều 68 Bộ luật Tố tụng dân sự 2015"
+    },
+    {
+     "text": "Người phiên dịch được Tòa án mời để dịch lời khai của đương sự",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 68 Bộ luật Tố tụng dân sự 2015 (đương sự chỉ gồm nguyên đơn, bị đơn, người có quyền lợi, nghĩa vụ liên quan)"
     }
    ],
    "explain": "Điều 68."

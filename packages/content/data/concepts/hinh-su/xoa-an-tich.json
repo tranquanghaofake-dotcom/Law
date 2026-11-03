@@ -70,6 +70,16 @@
     {
      "text": "Tù chung thân đã được giảm án",
      "answer": "right"
+    },
+    {
+     "text": "Người bị phạt tù trên 05 năm đến 15 năm, đã chấp hành xong và đủ 03 năm không phạm tội mới",
+     "answer": "left",
+     "basis": "Điểm c khoản 2 Điều 70 Bộ luật Hình sự 2015"
+    },
+    {
+     "text": "Người bị phạt tù trên 15 năm đã chấp hành xong, đủ 05 năm không phạm tội mới",
+     "answer": "right",
+     "basis": "Điểm d khoản 2 Điều 70 Bộ luật Hình sự 2015"
     }
    ],
    "explain": "Khoản 2 Điều 70."

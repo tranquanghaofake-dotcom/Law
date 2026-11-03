@@ -71,6 +71,16 @@
     {
      "text": "Mức đóng tính trên thu nhập do người tham gia lựa chọn",
      "answer": "right"
+    },
+    {
+     "text": "Người tham gia thuộc diện bắt buộc, đóng theo chế độ tiền lương do người sử dụng lao động quyết định",
+     "answer": "left",
+     "basis": "Khoản 4 Điều 5 Luật Bảo hiểm xã hội 2024"
+    },
+    {
+     "text": "Người tự quyết định thu nhập làm căn cứ đóng, không phải theo tiền lương hợp đồng",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 5 Luật Bảo hiểm xã hội 2024"
     }
    ],
    "explain": "Khoản 2 Điều 5."

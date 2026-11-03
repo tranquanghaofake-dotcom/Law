@@ -39,7 +39,7 @@
    "explain": "Khoản 1 Điều 2.",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 1 Điều 2 Hiến pháp 2013"
+    "cite": "Khoản 1 Điều 2 Luật Xử lý vi phạm hành chính"
    }
   },
   {
@@ -56,7 +56,7 @@
    "explain": "Khoản 1 Điều 2.",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 1 Điều 2 Hiến pháp 2013"
+    "cite": "Khoản 1 Điều 2 Luật Xử lý vi phạm hành chính"
    }
   },
   {
@@ -72,6 +72,16 @@
     {
      "text": "Giao hàng chậm so với hợp đồng",
      "answer": "right"
+    },
+    {
+     "text": "Xây nhà trái phép trên đất không có giấy phép xây dựng, bị phạt tiền",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 2 Luật Xử lý vi phạm hành chính"
+    },
+    {
+     "text": "Người bán không giao đủ hàng theo hợp đồng bị khách hàng khởi kiện đòi bồi thường",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 2 Luật Xử lý vi phạm hành chính (vi phạm dân sự thuộc quan hệ dân sự; ⚠ chưa đối chiếu BLDS)"
     }
    ],
    "explain": "Khoản 1 Điều 2; vi phạm dân sự là không thực hiện nghĩa vụ trong quan hệ dân sự."

@@ -70,6 +70,16 @@
     {
      "text": "Bị đơn không đồng ý với yêu cầu",
      "answer": "right"
+    },
+    {
+     "text": "Đơn khởi kiện chưa đủ điều kiện khởi kiện theo quy định của pháp luật, Thẩm phán trả lại đơn",
+     "answer": "left",
+     "basis": "Điểm b khoản 1 Điều 192 Bộ luật Tố tụng dân sự 2015"
+    },
+    {
+     "text": "Người khởi kiện có đủ năng lực tố tụng, nhưng bị đơn không đồng ý hòa giải",
+     "answer": "right",
+     "basis": "Điểm a, b khoản 1 Điều 192 Bộ luật Tố tụng dân sự 2015 (không thuộc căn cứ trả đơn)"
     }
    ],
    "explain": "Điều 192."

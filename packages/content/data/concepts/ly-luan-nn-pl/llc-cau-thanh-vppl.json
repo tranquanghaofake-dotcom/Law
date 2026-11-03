@@ -63,6 +63,16 @@
     {
      "text": "Chiếc xe máy bị trộm",
      "answer": "right"
+    },
+    {
+     "text": "Trật tự quản lý nhà nước về giao thông bị xâm hại khi có người vi phạm quy định",
+     "answer": "left",
+     "basis": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), VD13"
+    },
+    {
+     "text": "Chiếc xe đạp bị người khác tự ý sử dụng là vật mà hành vi vi phạm tác động đến",
+     "answer": "right",
+     "basis": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), VD13"
     }
    ],
    "explain": "VD13."

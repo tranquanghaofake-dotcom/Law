@@ -72,6 +72,16 @@
     {
      "text": "Bằng độc quyền giải pháp hữu ích",
      "answer": "right"
+    },
+    {
+     "text": "Bằng độc quyền sáng chế có hiệu lực từ ngày cấp đến hết 20 năm kể từ ngày nộp đơn",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 93 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Bằng độc quyền giải pháp hữu ích có hiệu lực từ ngày cấp đến hết 10 năm kể từ ngày nộp đơn",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 93 Luật Sở hữu trí tuệ"
     }
    ],
    "explain": "Điều 93."

@@ -70,6 +70,16 @@
     {
      "text": "Người sử dụng đất không đưa đất vào sử dụng theo thời hạn luật định",
      "answer": "right"
+    },
+    {
+     "text": "Xây dựng công trình thủy lợi như đê điều, hồ chứa nước vì lợi ích công cộng",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 79 Luật Đất đai 2024"
+    },
+    {
+     "text": "Đất được giao không đúng đối tượng hoặc không đúng thẩm quyền bị thu hồi",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 81 Luật Đất đai 2024"
     }
    ],
    "explain": "Điều 79, 81."

@@ -71,6 +71,16 @@
     {
      "text": "Một nhân viên thỏa thuận mức lương riêng",
      "answer": "right"
+    },
+    {
+     "text": "Tổ chức đại diện người lao động và người sử dụng lao động thương lượng để ký thỏa ước",
+     "answer": "left",
+     "basis": "Điều 65 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Hai bên ký hợp đồng lao động cá nhân trước khi nhận người lao động vào làm việc",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 13 Bộ luật Lao động 2019"
     }
    ],
    "explain": "Điều 13, 65."

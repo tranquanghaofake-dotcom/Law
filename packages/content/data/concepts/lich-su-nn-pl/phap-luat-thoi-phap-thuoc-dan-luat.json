@@ -73,6 +73,16 @@
     {
      "text": "Dân luật ban bố bằng các Dụ năm 1936–1939",
      "answer": "right"
+    },
+    {
+     "text": "Dân luật Bắc bộ ban bố bằng nghị định của Thống sứ, ngày 30/3/1931",
+     "answer": "left",
+     "basis": "Sắc lệnh 47, Điều thứ 2 (laws/lich-su-su-lieu.txt)"
+    },
+    {
+     "text": "Dân luật Trung bộ ban bố bằng các Dụ ngày 13/7/1936",
+     "answer": "right",
+     "basis": "Sắc lệnh 47, Điều thứ 3 (laws/lich-su-su-lieu.txt)"
     }
    ],
    "explain": "Điều thứ 2, 3 Sắc lệnh 47."

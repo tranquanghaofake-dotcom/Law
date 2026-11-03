@@ -71,6 +71,16 @@
     {
      "text": "Quyền xác lập trên cơ sở sử dụng",
      "answer": "right"
+    },
+    {
+     "text": "Nhãn hiệu được xác lập quyền khi có quyết định cấp văn bằng bảo hộ của cơ quan có thẩm quyền",
+     "answer": "left",
+     "basis": "Điểm a khoản 3 Điều 6 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Nhãn hiệu được công chúng liên quan biết đến rộng rãi, quyền xác lập không phụ thuộc đăng ký",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 6 và khoản 20 Điều 4 Luật Sở hữu trí tuệ"
     }
    ],
    "explain": "Điều 6."

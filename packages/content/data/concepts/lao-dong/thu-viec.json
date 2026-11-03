@@ -70,6 +70,16 @@
     {
      "text": "Công việc của công nhân kỹ thuật",
      "answer": "right"
+    },
+    {
+     "text": "Thử việc công việc của người quản lý doanh nghiệp, thời gian tối đa 180 ngày",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 25 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Thử việc nhân viên nghiệp vụ hoặc công nhân kỹ thuật có chức danh trung cấp, tối đa 30 ngày",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 25 Bộ luật Lao động 2019"
     }
    ],
    "explain": "Điều 25."

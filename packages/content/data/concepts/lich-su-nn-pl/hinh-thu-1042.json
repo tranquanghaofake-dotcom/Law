@@ -77,6 +77,11 @@
     {
      "text": "Văn bản Hình thư còn nguyên vẹn đến nay",
      "answer": "right"
+    },
+    {
+     "text": "Hình thư không còn nguyên văn, chỉ biết qua sử liệu Toàn thư",
+     "answer": "right",
+     "basis": "Đại Việt sử ký toàn thư, Bản kỷ quyển II, Kỷ nhà Lý, Thái Tông, năm 1042 (laws/lich-su-su-lieu.txt)"
     }
    ],
    "explain": "Hình thư không còn; chỉ biết qua Toàn thư."

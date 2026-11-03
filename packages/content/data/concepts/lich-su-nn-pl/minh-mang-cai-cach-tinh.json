@@ -72,6 +72,16 @@
     {
      "text": "Phụ trách hình án của tỉnh",
      "answer": "right"
+    },
+    {
+     "text": "Bố chính sứ đứng đầu, phụ trách hành chính và tài chính của tỉnh",
+     "answer": "left",
+     "basis": "Giáo trình Lịch sử nhà nước và pháp luật Việt Nam, Trường ĐH Luật Hà Nội 2025 (⚠ chưa đối chiếu nguyên văn), Chương 6"
+    },
+    {
+     "text": "Án sát sứ phụ trách hình án của tỉnh",
+     "answer": "right",
+     "basis": "Giáo trình Lịch sử nhà nước và pháp luật Việt Nam, Trường ĐH Luật Hà Nội 2025 (⚠ chưa đối chiếu nguyên văn), Chương 6"
     }
    ],
    "explain": "Theo trình bày phổ biến của giáo trình."

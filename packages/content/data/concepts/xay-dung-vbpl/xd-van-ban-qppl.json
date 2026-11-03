@@ -71,6 +71,16 @@
     {
      "text": "Quyết định bổ nhiệm ông B làm Vụ trưởng",
      "answer": "right"
+    },
+    {
+     "text": "Quyết định của Thủ tướng quy định chung về chế độ làm việc áp dụng cho mọi cơ quan",
+     "answer": "left",
+     "basis": "Điều 2 Luật Ban hành văn bản quy phạm pháp luật 2025"
+    },
+    {
+     "text": "Quyết định xử phạt hành chính đối với một cá nhân cụ thể vi phạm giao thông",
+     "answer": "right",
+     "basis": "Điều 2 Luật Ban hành văn bản quy phạm pháp luật 2025"
     }
    ],
    "explain": "VBQPPL chứa quy tắc xử sự chung; văn bản áp dụng pháp luật giải quyết việc cụ thể cho đối tượng xác định."

@@ -62,6 +62,16 @@
     {
      "text": "Tính tự nguyện tuyệt đối",
      "answer": "right"
+    },
+    {
+     "text": "Nội dung quy định được thể hiện rõ ràng, chính thức trong văn bản",
+     "answer": "left",
+     "basis": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), VD8"
+    },
+    {
+     "text": "Người dân tự nguyện tuân thủ hoàn toàn mà không chịu bất kỳ ràng buộc nào của pháp luật",
+     "answer": "right",
+     "basis": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), VD8"
     }
    ],
    "explain": "VD8."

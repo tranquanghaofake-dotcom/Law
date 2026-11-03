@@ -72,6 +72,16 @@
     {
      "text": "Đình chỉ việc thi hành thông tư trái luật",
      "answer": "right"
+    },
+    {
+     "text": "Bộ trưởng ban hành thông tư sửa đổi một điều của chính thông tư mình đã ban hành",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 8 Luật Ban hành văn bản quy phạm pháp luật 2025"
+    },
+    {
+     "text": "Thủ tướng đình chỉ việc thi hành thông tư của bộ có dấu hiệu trái luật",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 8 Luật Ban hành văn bản quy phạm pháp luật 2025"
     }
    ],
    "explain": "Khoản 1 Điều 8."

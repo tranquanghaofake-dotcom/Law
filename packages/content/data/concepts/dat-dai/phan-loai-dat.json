@@ -74,6 +74,16 @@
     {
      "text": "Đất chăn nuôi tập trung",
      "answer": "left"
+    },
+    {
+     "text": "Đất trồng cây lâu năm thuộc nhóm đất nông nghiệp",
+     "answer": "left",
+     "basis": "Điểm b khoản 2 Điều 9 Luật Đất đai 2024"
+    },
+    {
+     "text": "Đất xây dựng công trình sự nghiệp như cơ sở văn hóa, y tế, giáo dục",
+     "answer": "right",
+     "basis": "Điểm d khoản 3 Điều 9 Luật Đất đai 2024"
     }
    ],
    "explain": "Điều 9."
