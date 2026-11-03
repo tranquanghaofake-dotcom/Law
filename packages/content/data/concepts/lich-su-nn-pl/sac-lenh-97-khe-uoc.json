@@ -72,6 +72,16 @@
     {
      "text": "Khế ước vô hiệu do bóc lột",
      "answer": "right"
+    },
+    {
+     "text": "Quyền sở hữu chỉ được thực hiện hợp pháp và không thiệt hại đến quyền lợi nhân dân",
+     "answer": "left",
+     "basis": "Sắc lệnh 97/SL, Điều 12 (laws/lich-su-su-lieu.txt)"
+    },
+    {
+     "text": "Khế ước bị coi là vô hiệu khi một bên bị bóc lột do chênh lệch về điều kiện kinh tế",
+     "answer": "right",
+     "basis": "Sắc lệnh 97/SL, Điều 13 (laws/lich-su-su-lieu.txt)"
     }
    ],
    "explain": "Sắc lệnh 97/SL."

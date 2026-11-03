@@ -72,6 +72,16 @@
     {
      "text": "Sửa đổi một số quy lệ, chế định trong dân luật theo hướng tiến bộ",
      "answer": "right"
+    },
+    {
+     "text": "Luật lệ hiện hành ở Bắc, Trung, Nam bộ được tạm giữ nguyên nếu không trái nền độc lập",
+     "answer": "left",
+     "basis": "Sắc lệnh 47, Điều thứ 1 và Điều thứ 12 (laws/lich-su-su-lieu.txt)"
+    },
+    {
+     "text": "Sắc lệnh 97/SL sửa đổi một số quy lệ và chế định dân luật theo hướng tiến bộ",
+     "answer": "right",
+     "basis": "Sắc lệnh 97/SL, Điều 1 (laws/lich-su-su-lieu.txt)"
     }
    ],
    "explain": "Hai mốc liên tiếp của pháp luật dân sự 1945–1950."

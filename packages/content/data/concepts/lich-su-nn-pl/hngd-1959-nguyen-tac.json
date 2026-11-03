@@ -77,6 +77,11 @@
     {
      "text": "Con vợ lẽ, nàng hầu hưởng phần kém hơn",
      "answer": "left"
+    },
+    {
+     "text": "Nhà nước bảo vệ quyền lợi của phụ nữ và con cái trong gia đình",
+     "answer": "right",
+     "basis": "Luật Hôn nhân và gia đình 1959, Điều 1 (laws/lich-su-su-lieu.txt)"
     }
    ],
    "explain": "Điều 388 Quốc triều hình luật; Điều 1, 3 Luật HNGĐ 1959."

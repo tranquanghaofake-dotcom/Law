@@ -77,6 +77,11 @@
     {
      "text": "Năm 980 được tôn lên ngôi, lập nhà Tiền Lê",
      "answer": "right"
+    },
+    {
+     "text": "Nguyễn Bặc giữ chức Định quốc công năm 971",
+     "answer": "left",
+     "basis": "Đại Việt sử ký toàn thư, Bản kỷ quyển I, Kỷ nhà Đinh, năm 971, tờ 3b (laws/lich-su-su-lieu.txt)"
     }
    ],
    "explain": "Toàn thư năm 971 và năm 980."

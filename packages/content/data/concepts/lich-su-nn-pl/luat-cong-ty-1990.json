@@ -72,6 +72,16 @@
     {
      "text": "Đăng ký doanh nghiệp tại cơ quan đăng ký kinh doanh, không cần xin phép thành lập",
      "answer": "right"
+    },
+    {
+     "text": "Công ty trách nhiệm hữu hạn và công ty cổ phần là doanh nghiệp có thành viên cùng góp vốn, chia lợi nhuận",
+     "answer": "left",
+     "basis": "Luật Công ty 1990, Điều 2 (laws/lich-su-su-lieu.txt)"
+    },
+    {
+     "text": "Nhà nước công nhận sự tồn tại lâu dài và phát triển của công ty",
+     "answer": "right",
+     "basis": "Luật Công ty 1990, Điều 4 (laws/lich-su-su-lieu.txt)"
     }
    ],
    "explain": "Điều 14, 17 Luật Công ty 1990."

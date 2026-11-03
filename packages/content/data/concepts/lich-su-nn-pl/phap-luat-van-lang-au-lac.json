@@ -74,6 +74,11 @@
     {
      "text": "Âu Lạc có thể đã có luật thành văn",
      "answer": "right"
+    },
+    {
+     "text": "Mã Viện đối chiếu luật Việt với luật Hán, ghi nhận hơn mười điều khác nhau",
+     "answer": "left",
+     "basis": "Hậu Hán thư, quyển 24, Mã Viện liệt truyện (laws/lich-su-su-lieu.txt)"
     }
    ],
    "explain": "Phân biệt điều sử liệu ghi với điều nhà nghiên cứu suy ra từ sử liệu."

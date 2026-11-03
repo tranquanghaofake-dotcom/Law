@@ -76,6 +76,11 @@
     {
      "text": "Giao đất cho tổ chức, cá nhân",
      "answer": "left"
+    },
+    {
+     "text": "Người được giao đất được hưởng quyền lợi hợp pháp trên đất được giao",
+     "answer": "right",
+     "basis": "Luật Đất đai 1987, Điều 3 (laws/lich-su-su-lieu.txt)"
     }
    ],
    "explain": "Điều 1 Luật Đất đai 1987."

@@ -69,6 +69,16 @@
     {
      "text": "Kinh đô thời An Dương Vương",
      "answer": "right"
+    },
+    {
+     "text": "Hùng Vương đứng đầu nhà nước Văn Lang, đóng đô ở Phong Châu",
+     "answer": "left",
+     "basis": "Đại Việt sử ký toàn thư, Ngoại kỷ quyển I, Kỷ Hồng Bàng thị, tờ 3a (laws/lich-su-su-lieu.txt)"
+    },
+    {
+     "text": "Thục Phán đóng đô ở Phong Khê và đắp thành Loa",
+     "answer": "right",
+     "basis": "Đại Việt sử ký toàn thư, Ngoại kỷ quyển I, Kỷ Thục, An Dương Vương, tờ 6a (laws/lich-su-su-lieu.txt)"
     }
    ],
    "explain": "Văn Lang đóng đô Phong Châu; Âu Lạc đóng đô Phong Khê, nơi có Loa Thành."

@@ -72,6 +72,16 @@
     {
      "text": "Ban bố tại Trung bộ do Dụ ngày 3/7/1933",
      "answer": "right"
+    },
+    {
+     "text": "Bộ luật ban hành dưới triều Gia Long vẫn được tạm giữ theo Sắc lệnh 47",
+     "answer": "left",
+     "basis": "Sắc lệnh 47, Điều thứ 1 (laws/lich-su-su-lieu.txt); Giáo trình Lịch sử nhà nước và pháp luật Việt Nam, Trường ĐH Luật Hà Nội 2025 (⚠ chưa đối chiếu nguyên văn)"
+    },
+    {
+     "text": "Bộ luật được Sắc lệnh 47 cho phép tiếp tục thi hành tại Trung bộ",
+     "answer": "right",
+     "basis": "Sắc lệnh 47, Điều thứ 9 (laws/lich-su-su-lieu.txt)"
     }
    ],
    "explain": "Hai bộ luật tên gần giống nhau, khác thời kỳ."
