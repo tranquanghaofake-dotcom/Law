@@ -71,6 +71,16 @@
     {
      "text": "Nhà sản xuất ấn định giá bán lại cho nhà phân phối",
      "answer": "right"
+    },
+    {
+     "text": "Các cửa hàng xăng cùng khu vực thống nhất mức giá bán lẻ xăng",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 11 và khoản 1 Điều 12 Luật Cạnh tranh 2018"
+    },
+    {
+     "text": "Nhà cung cấp quy định nhà phân phối ở công đoạn sau chỉ được bán trong khu vực đã định",
+     "answer": "right",
+     "basis": "Khoản 4 Điều 12 Luật Cạnh tranh 2018"
     }
    ],
    "explain": "Điều 12."

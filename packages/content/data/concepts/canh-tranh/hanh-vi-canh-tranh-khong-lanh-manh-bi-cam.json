@@ -70,6 +70,16 @@
     {
      "text": "Tiết lộ bí mật kinh doanh mà không được phép của chủ sở hữu",
      "answer": "right"
+    },
+    {
+     "text": "Nhân viên cũ mang danh sách khách hàng và công thức sản xuất của công ty cũ sang đối thủ để dùng",
+     "answer": "right",
+     "basis": "Điểm b khoản 1 Điều 45 Luật Cạnh tranh 2018"
+    },
+    {
+     "text": "Cử người đến trước cửa hàng đối thủ gây rối để khách không vào mua hàng",
+     "answer": "left",
+     "basis": "Khoản 4 Điều 45 Luật Cạnh tranh 2018"
     }
    ],
    "explain": "Điều 45."

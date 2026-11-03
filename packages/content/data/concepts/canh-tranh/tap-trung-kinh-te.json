@@ -70,6 +70,16 @@
     {
      "text": "Các bên góp vốn lập doanh nghiệp mới, vẫn tồn tại",
      "answer": "right"
+    },
+    {
+     "text": "Công ty X chuyển toàn bộ tài sản và nghĩa vụ sang công ty Y rồi không còn hoạt động nữa",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 29 Luật Cạnh tranh 2018"
+    },
+    {
+     "text": "Hai doanh nghiệp cùng góp một phần tài sản để thành lập một công ty mới chung",
+     "answer": "right",
+     "basis": "Khoản 5 Điều 29 Luật Cạnh tranh 2018"
     }
    ],
    "explain": "Khoản 2, 5 Điều 29."
