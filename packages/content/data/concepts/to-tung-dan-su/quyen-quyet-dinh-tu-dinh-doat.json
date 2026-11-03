@@ -30,9 +30,9 @@
    "q": "Tòa án thụ lý giải quyết vụ việc dân sự khi nào?",
    "options": [
     "Khi có đơn khởi kiện, đơn yêu cầu của đương sự",
-    "Khi phát hiện vi phạm",
-    "Khi Viện kiểm sát yêu cầu",
-    "Bất cứ khi nào thấy cần"
+    "Khi phát hiện vi phạm trong quá trình tố tụng",
+    "Khi Viện kiểm sát yêu cầu bằng văn bản chính thức",
+    "Bất cứ khi nào thấy cần thiết trong quá trình xét xử"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 5.",
@@ -47,9 +47,9 @@
    "q": "Tòa án có được giải quyết vượt quá phạm vi đơn khởi kiện không?",
    "options": [
     "Không, chỉ giải quyết trong phạm vi đơn",
-    "Có nếu có lợi cho nguyên đơn",
-    "Có nếu phát hiện thêm vi phạm",
-    "Có nếu được Chánh án đồng ý"
+    "Có nếu có lợi cho nguyên đơn trong vụ án",
+    "Có nếu phát hiện thêm vi phạm của bị đơn",
+    "Có nếu được Chánh án đồng ý bằng văn bản"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 5.",

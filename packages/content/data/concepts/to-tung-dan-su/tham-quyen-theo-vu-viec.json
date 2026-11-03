@@ -29,9 +29,9 @@
    "q": "Tranh chấp về thừa kế tài sản thuộc loại tranh chấp nào?",
    "options": [
     "Tranh chấp về dân sự (khoản 5 Điều 26)",
-    "Tranh chấp hành chính",
-    "Tranh chấp kinh doanh, thương mại",
-    "Tranh chấp lao động"
+    "Tranh chấp hành chính giữa các cơ quan",
+    "Tranh chấp kinh doanh, thương mại thuần túy",
+    "Tranh chấp lao động giữa người lao động"
    ],
    "answer": 0,
    "explain": "Khoản 5 Điều 26.",
@@ -46,9 +46,9 @@
    "q": "Tranh chấp quyền sở hữu trí tuệ giữa hai công ty cùng vì mục đích lợi nhuận thuộc loại nào?",
    "options": [
     "Tranh chấp kinh doanh, thương mại (khoản 2 Điều 30)",
-    "Tranh chấp dân sự",
-    "Tranh chấp hành chính",
-    "Không thuộc thẩm quyền Tòa án"
+    "Tranh chấp dân sự thông thường giữa các cá nhân",
+    "Tranh chấp hành chính về quản lý doanh nghiệp",
+    "Không thuộc thẩm quyền Tòa án, giải quyết tại trọng tài"
    ],
    "answer": 0,
    "explain": "Khoản 4 Điều 26; khoản 2 Điều 30.",

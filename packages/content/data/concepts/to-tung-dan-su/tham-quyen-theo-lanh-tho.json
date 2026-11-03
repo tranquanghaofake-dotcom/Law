@@ -28,9 +28,9 @@
    "q": "Nguyên tắc chung xác định Tòa án theo lãnh thổ trong vụ án dân sự là gì?",
    "options": [
     "Tòa án nơi bị đơn cư trú, làm việc hoặc có trụ sở",
-    "Tòa án nơi nguyên đơn cư trú",
-    "Tòa án nơi ký hợp đồng",
-    "Tòa án do Chánh án TAND tối cao chỉ định"
+    "Tòa án nơi nguyên đơn cư trú, làm việc hoặc có trụ sở",
+    "Tòa án nơi ký kết hợp đồng giữa các bên trong vụ việc",
+    "Tòa án do Chánh án TAND tối cao chỉ định theo vụ việc"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 1 Điều 39.",

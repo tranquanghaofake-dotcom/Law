@@ -45,9 +45,9 @@
    "q": "Ai có quyền khởi kiện vụ án dân sự theo khoản 1 Điều 4?",
    "options": [
     "Cơ quan, tổ chức, cá nhân do Bộ luật quy định",
-    "Chỉ công dân Việt Nam",
-    "Chỉ Viện kiểm sát",
-    "Chỉ luật sư"
+    "Chỉ công dân Việt Nam có quyền khởi kiện",
+    "Chỉ Viện kiểm sát có quyền khởi kiện vụ án",
+    "Chỉ luật sư được quyền khởi kiện thay người dân"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 4.",

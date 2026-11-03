@@ -28,9 +28,9 @@
    "q": "Đương sự trong vụ án dân sự gồm những ai?",
    "options": [
     "Nguyên đơn, bị đơn, người có quyền lợi, nghĩa vụ liên quan",
-    "Nguyên đơn, bị đơn, người làm chứng",
-    "Thẩm phán, Hội thẩm, Thư ký",
-    "Người yêu cầu và người làm chứng"
+    "Nguyên đơn, bị đơn, người làm chứng và người giám định",
+    "Thẩm phán, Hội thẩm, Thư ký và Kiểm sát viên tham gia phiên tòa",
+    "Người yêu cầu và người làm chứng trong vụ án dân sự đang xét"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 68.",
@@ -45,9 +45,9 @@
    "q": "Trong việc dân sự, đương sự gồm những ai?",
    "options": [
     "Người yêu cầu giải quyết việc dân sự và người có quyền lợi, nghĩa vụ liên quan",
-    "Nguyên đơn và bị đơn",
-    "Chỉ người yêu cầu",
-    "Viện kiểm sát"
+    "Nguyên đơn và bị đơn trong vụ án tranh chấp có yêu cầu của bên thứ ba",
+    "Chỉ người yêu cầu và người có liên quan trong vụ án hình sự đang xét xử",
+    "Viện kiểm sát, Tòa án và cơ quan nhà nước có thẩm quyền trong vụ việc dân sự này"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 68.",
