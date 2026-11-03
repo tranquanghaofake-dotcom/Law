@@ -30,9 +30,9 @@
    "q": "Dự án nào phải thực hiện thủ tục cấp Giấy chứng nhận đăng ký đầu tư?",
    "options": [
     "Dự án đầu tư của nhà đầu tư nước ngoài",
-    "Dự án đầu tư của nhà đầu tư trong nước",
+    "Dự án đầu tư của mọi nhà đầu tư trong nước",
     "Mọi khoản góp vốn mua cổ phần",
-    "Mọi dự án dưới 10 tỷ đồng"
+    "Dự án có vốn dưới 10 tỷ đồng"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 1 Điều 26.",

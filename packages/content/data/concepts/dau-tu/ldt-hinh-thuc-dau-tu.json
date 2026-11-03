@@ -33,7 +33,7 @@
     "Đầu tư theo hình thức hợp đồng BCC",
     "Gửi tiền tiết kiệm tại ngân hàng",
     "Cho vay nặng lãi với lãi suất cao",
-    "Mua bảo hiểm nhân thọ cho bản thân"
+    "Mua bảo hiểm nhân thọ cho bản thân mình"
    ],
    "answer": 0,
    "explain": "Điều 18.",
@@ -49,8 +49,8 @@
    "options": [
     "Không",
     "Có, trong mọi trường hợp",
-    "Chỉ khi vốn trên 10 tỷ đồng",
-    "Chỉ khi là cá nhân"
+    "Có, nếu vốn lớn",
+    "Có, khi là cá nhân"
    ],
    "answer": 0,
    "explain": "Điểm c khoản 2 Điều 26.",
