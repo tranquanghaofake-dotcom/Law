@@ -74,6 +74,16 @@
     {
      "text": "Vật chứng",
      "answer": "left"
+    },
+    {
+     "text": "Lời khai của đương sự được ghi nhận làm nguồn chứng cứ",
+     "answer": "left",
+     "basis": "Khoản 3 Điều 94 Bộ luật Tố tụng dân sự 2015"
+    },
+    {
+     "text": "Lời đồn không rõ nguồn, không ai giao nộp hay xuất trình cho Tòa án",
+     "answer": "right",
+     "basis": "Điều 93 Bộ luật Tố tụng dân sự 2015 (chứng cứ là cái có thật được giao nộp hoặc Tòa thu thập)"
     }
    ],
    "explain": "Điều 94."

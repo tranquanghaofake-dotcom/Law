@@ -70,6 +70,16 @@
     {
      "text": "Yêu cầu áp dụng thời hiệu lần đầu ở phúc thẩm",
      "answer": "right"
+    },
+    {
+     "text": "Người được hưởng lợi từ thời hiệu từ chối áp dụng thời hiệu vì mục đích chính đáng",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 184 Bộ luật Tố tụng dân sự 2015"
+    },
+    {
+     "text": "Người được hưởng lợi từ thời hiệu từ chối áp dụng để trốn tránh nghĩa vụ",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 184 Bộ luật Tố tụng dân sự 2015"
     }
    ],
    "explain": "Điều 184."
