@@ -46,3 +46,10 @@ Số khái niệm: 19; số tình huống thêm: 38.
 | ldt-uu-dai-dau-tu | Được đào tạo nhân lực do Nhà nước tổ chức theo chương trình của dự án | Phải: Hỗ trợ đầu tư | Điểm b khoản 3 Điều 14 Luật Đầu tư 2025 |
 | ldt-von-dau-tu | Tiền mặt và máy móc do nhà đầu tư góp để thực hiện dự án | Trái: Có thể là vốn đầu tư | Khoản 23 Điều 3 Luật Đầu tư 2025 |
 | ldt-von-dau-tu | Công sức và kinh nghiệm quản lý của người điều hành, không được định giá thành tiền | Phải: Không phải vốn đầu tư | Khoản 23 Điều 3 Luật Đầu tư 2025 (không phải tiền hoặc tài sản) |
+
+## Giai đoạn 2 — cờ dò trích dẫn (haiku-1)
+
+Cờ của môn: 1. Không có sửa nội dung.
+
+**Báo nhầm (lỗi công cụ)**
+- `ldt-von-dau-tu#2` (câu Phân biệt "Công sức và kinh nghiệm quản lý…", căn cứ "Khoản 23 Điều 3 Luật Đầu tư 2025"): công cụ gán căn cứ sang `blds-2015.txt` và báo "Điều 3 không có khoản 23". Căn cứ đúng là Luật Đầu tư 2025 (khoản 23 Điều 3 có trong `ldt-vbhn-2026.txt`). Công cụ chưa nhận diện tên văn bản này — ghi cho opus.
