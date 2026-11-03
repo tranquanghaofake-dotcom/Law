@@ -31,9 +31,9 @@
    "q": "Tài sản nào có thể dùng để góp vốn theo khoản 1 Điều 34?",
    "options": [
     "Quyền sở hữu trí tuệ",
-    "Uy tín cá nhân không định giá được",
+    "Uy tín cá nhân",
     "Quyền bầu cử",
-    "Tài sản đang thuê của người khác không được phép"
+    "Tài sản đang đi thuê"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 34.",

@@ -76,7 +76,7 @@
         "Tăng vốn điều lệ",
         "Vay vốn ngân hàng",
         "Trả nợ gốc đến hạn",
-        "Giảm vốn điều lệ"
+        "Giảm bớt vốn điều lệ"
       ],
       "answer": 0,
       "explain": "Khoản 1 Điều 123.",
@@ -127,7 +127,7 @@
       "options": [
         "Quyền sở hữu trí tuệ",
         "Quyền bầu cử công dân",
-        "Danh dự của cá nhân",
+        "Danh dự của mỗi cá nhân",
         "Quyền nhân thân cá nhân"
       ],
       "answer": 0,

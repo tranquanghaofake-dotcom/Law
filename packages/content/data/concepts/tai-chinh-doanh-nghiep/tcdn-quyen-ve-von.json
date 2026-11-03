@@ -32,7 +32,7 @@
    "q": "Quyền nào của doanh nghiệp được ghi tại khoản 3 Điều 7?",
    "options": [
     "Lựa chọn hình thức, phương thức huy động, phân bổ và sử dụng vốn",
-    "Được miễn thuế thu nhập doanh nghiệp vĩnh viễn khi mới thành lập",
+    "Được miễn thuế thu nhập doanh nghiệp vĩnh viễn khi mới thành lập công ty",
     "Được Nhà nước cấp vốn điều lệ không cần hoàn trả trong mọi trường hợp",
     "Được vay ngân hàng không cần bảo đảm tiền vay và không phải trả lãi"
    ],
@@ -49,8 +49,8 @@
    "q": "Doanh nghiệp có quyền từ chối yêu cầu nào?",
    "options": [
     "Yêu cầu cung cấp nguồn lực không theo quy định của pháp luật",
-    "Yêu cầu nộp thuế theo quy định của pháp luật hiện hành",
-    "Yêu cầu công bố thông tin bắt buộc theo quy định của pháp luật",
+    "Yêu cầu nộp thuế theo quy định của pháp luật",
+    "Yêu cầu công bố thông tin bắt buộc theo quy định của luật",
     "Yêu cầu kiểm toán báo cáo tài chính hằng năm theo luật"
    ],
    "answer": 0,
