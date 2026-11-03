@@ -42,5 +42,5 @@ tests/ · e2e/      Vitest · Playwright
 
 ## Giấy phép tài nguyên
 - Âm thanh: Kenney *Interface Sounds* (CC0) — `static/sfx/LICENSE.txt`.
-- Tranh nền, biểu tượng: tự vẽ (SVG) cho dự án.
+- Tranh nền, biểu tượng: tự vẽ (SVG) cho dự án. Đợt 6 (cảnh đầu trang `ScenesMore`, tranh bộ đề `VignetteMore`, huy hiệu chương `EmblemMore`): ý tưởng hình/đường nét tham khảo các bộ icon giấy phép mở — Tabler Icons (MIT), Lucide (ISC), Phosphor Icons (MIT) — nhưng toàn bộ path đều vẽ lại trong ngôn ngữ hình khối của dự án, không chép nguyên file icon; không Quốc huy, Quốc kỳ, chân dung người thật hay logo/tên nhà xuất bản thật.
 - Biểu tượng nhánh/tầng của Cây chức vụ và 21 đồ vật tủ trưng bày (`lib/art/ShowcaseProps.svelte`, `lib/art/showcase/*`): tự vẽ, chỉ học phong cách nét mảnh của Tabler Icons (MIT) và Lucide (ISC); không sao chép đường path.

@@ -1,6 +1,6 @@
 <script lang="ts">
   // Tranh nhỏ cho bộ đề 10 câu: vẽ đối tượng/tình huống mà luật điều chỉnh. Tránh hình châm biếm cơ quan ban hành (vd. cán cân + tiền).
-  import type { VignetteName } from './registry';
+  import { VIGNETTE_MORE, type VignetteName } from './registry';
   import { ring, bricks } from './kit';
   let { name, class: cls = '' }: { name: VignetteName; class?: string } = $props();
   const doors = [20, 46, 72];
@@ -85,7 +85,7 @@
     </g>
     <rect class="f-card k" x="94" y="82" width="60" height="4" stroke-width="1" />
     <rect class="f-card k" x="90" y="86" width="68" height="4" stroke-width="1" />
-  {:else}
+  {:else if name === 'nghi-viec'}
     <!-- nhà máy mái răng cưa + đồng hồ + phong bì lương -->
     <path class="f-card k" d="M8 90V52l20-12v12l20-12v12l20-12v50z" stroke-width="1.3" />
     <path class="f-shade" d="M28 40l-20 12v2l20-12zM48 40l-20 12v2l20-12zM68 40l-20 12v2l20-12z" />
@@ -102,5 +102,7 @@
     <rect class="f-acc k" x="98" y="62" width="46" height="26" rx="2" stroke-width="1.2" />
     <path class="k" d="M98 62l23 14l23-14" stroke-width="1" />
     <circle class="f-seal k" cx="121" cy="74" r="3.6" stroke-width=".8" />
+  {:else if VIGNETTE_MORE.includes(name)}
+    {#await import('./VignetteMore.svelte') then m}<m.default {name} />{/await}
   {/if}
 </svg>
