@@ -46,9 +46,9 @@
    "q": "Đất ở thuộc nhóm đất nào?",
    "options": [
     "Nhóm đất phi nông nghiệp",
-    "Nhóm đất nông nghiệp chính",
+    "Thuộc nhóm đất nông nghiệp",
     "Nhóm đất chưa sử dụng",
-    "Nhóm đất đặc biệt khác"
+    "Nhóm đất rừng đặc dụng"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 3 Điều 9.",
