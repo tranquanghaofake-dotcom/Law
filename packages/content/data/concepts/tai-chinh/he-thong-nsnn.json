@@ -71,6 +71,16 @@
     {
      "text": "Ngân sách địa phương chỉ gồm cấp tỉnh và cấp xã",
      "answer": "right"
+    },
+    {
+     "text": "Ngân sách nhà nước gồm ngân sách trung ương và ngân sách địa phương",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 6 Luật Ngân sách nhà nước 2025"
+    },
+    {
+     "text": "Ngân sách cấp huyện có dự toán riêng do Hội đồng nhân dân huyện quyết định (⚠ quy định cũ, Luật NSNN 2015 chưa có trong laws/)",
+     "answer": "left",
+     "basis": "Luật Ngân sách nhà nước 2015 (⚠ cần đối chiếu)"
     }
    ],
    "explain": "Điều 6 Luật 2025."
