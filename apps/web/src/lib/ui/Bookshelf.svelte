@@ -18,7 +18,7 @@
   <div class="shelf side">
     <ul class="shelf-row" aria-label="Sách đã nhận gần đây">
       {#each recent as b (b.key)}
-        <li class="book lv{b.level}"><a href="#/mon/{b.subject}" aria-label={tip(b)} title={tip(b)}><BookSpine scheme={schemeOf(b.subject)} level={b.level} label={`${b.subjectShort} ${roman(b.index)}`} w={24} h={84} review={b.needsReview} /></a></li>
+        <li class="book lv{b.level}"><a href="#/mon/{b.subject}" title={tip(b)}><BookSpine scheme={schemeOf(b.subject)} level={b.level} label={`${b.subjectShort} ${roman(b.index)}`} w={24} h={84} review={b.needsReview} /><span class="sr-only">{tip(b)}</span></a></li>
       {/each}
       {#each Array(Math.max(0, 4 - recent.length)) as _, i (i)}<li class="book slot" aria-hidden="true"><span class="slot-spine" style="width:24px;height:{[72, 80, 68, 76][i]}px"></span></li>{/each}
       <li class="bookend" aria-hidden="true">
