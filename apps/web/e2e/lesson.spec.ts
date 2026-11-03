@@ -50,7 +50,7 @@ async function stepOnce(page: P, want: 'right' | 'wrong' | 'any' = 'right'): Pro
       const inputs = page.locator('.blank-input');
       if (await inputs.count()) { for (let j = 0; j < await inputs.count(); j++) await inputs.nth(j).fill('x'); } else { for (let j = 0; j < 8; j++) { const w = page.locator('.word:not([disabled])'); if (await w.count()) await w.first().click(); } }
       await page.getByRole('button', { name: /Kiểm tra/ }).click();
-    } else if (label === 'Tự trả lời') { await page.locator('textarea').fill('thử'); await page.getByRole('button', { name: 'Xem đáp án' }).click(); await page.getByRole('button', { name: 'Đúng' }).click(); }
+    } else if (label === 'Tự trả lời') { await page.locator('textarea').fill('thử'); await page.getByRole('button', { name: 'Xem đáp án' }).click(); await page.getByRole('button', { name: 'Đúng', exact: true }).click(); }
     await page.waitForTimeout(250);
   }
   await page.locator('.feedback').waitFor();
