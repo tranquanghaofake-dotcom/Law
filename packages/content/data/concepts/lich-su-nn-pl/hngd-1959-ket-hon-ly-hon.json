@@ -71,6 +71,16 @@
     {
      "text": "Không bị hạn chế quyền xin ly hôn",
      "answer": "right"
+    },
+    {
+     "text": "Người chồng xin ly hôn khi vợ đang có thai phải chờ vợ sinh đẻ được một năm",
+     "answer": "left",
+     "basis": "Luật Hôn nhân và gia đình 1959, Điều 27 (laws/lich-su-su-lieu.txt)"
+    },
+    {
+     "text": "Người vợ đang có thai vẫn xin ly hôn được, không bị hạn chế",
+     "answer": "right",
+     "basis": "Luật Hôn nhân và gia đình 1959, Điều 27 (laws/lich-su-su-lieu.txt)"
     }
    ],
    "explain": "Điều 27 Luật HNGĐ 1959."

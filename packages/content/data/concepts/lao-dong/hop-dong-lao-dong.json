@@ -71,6 +71,16 @@
     {
      "text": "Bên làm dịch vụ tự quyết định cách thực hiện, chỉ giao kết quả",
      "answer": "right"
+    },
+    {
+     "text": "Thỏa thuận có trả công, tiền lương và sự quản lý, giám sát, dù hai bên gọi bằng tên khác",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 13 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Bên cung ứng tự thực hiện công việc theo thỏa thuận, bên thuê trả tiền dịch vụ, không quản lý điều hành",
+     "answer": "right",
+     "basis": "Điều 513 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 13 BLLĐ; Điều 513 BLDS."

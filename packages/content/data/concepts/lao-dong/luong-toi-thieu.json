@@ -70,6 +70,16 @@
     {
      "text": "Số tiền trả theo thỏa thuận gồm mức lương, phụ cấp, khoản bổ sung",
      "answer": "right"
+    },
+    {
+     "text": "Mức lương theo công việc hoặc chức danh không được thấp hơn mức lương tối thiểu",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 90 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Tiền lương gồm mức lương theo công việc, phụ cấp lương và khoản bổ sung theo thỏa thuận",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 90 Bộ luật Lao động 2019"
     }
    ],
    "explain": "Điều 90, 91."

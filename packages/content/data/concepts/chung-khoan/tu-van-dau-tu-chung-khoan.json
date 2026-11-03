@@ -70,6 +70,16 @@
     {
      "text": "Công ty trực tiếp quyết định mua, bán theo ủy thác",
      "answer": "right"
+    },
+    {
+     "text": "Công ty đưa kết quả phân tích và khuyến nghị mua cổ phiếu cho khách hàng",
+     "answer": "left",
+     "basis": "Khoản 32 Điều 4 Luật Chứng khoán 2019"
+    },
+    {
+     "text": "Công ty quản lý danh mục đầu tư cho nhà đầu tư theo hợp đồng ủy thác",
+     "answer": "right",
+     "basis": "Khoản 35 Điều 4 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 32 và 35 Điều 4."

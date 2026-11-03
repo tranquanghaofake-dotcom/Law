@@ -73,6 +73,11 @@
     {
      "text": "Người sở hữu là chủ nợ",
      "answer": "left"
+    },
+    {
+     "text": "Nhà đầu tư nắm trái phiếu nhận lãi theo điều kiện phát hành",
+     "answer": "left",
+     "basis": "Khoản 3 Điều 4 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 3 và khoản 4 Điều 4."

@@ -72,6 +72,16 @@
     {
      "text": "Có quy định trách nhiệm hình sự của pháp nhân thương mại",
      "answer": "right"
+    },
+    {
+     "text": "Bộ luật hình sự 1985 có nhiệm vụ bảo vệ chế độ xã hội chủ nghĩa và quyền làm chủ tập thể",
+     "answer": "left",
+     "basis": "Bộ luật Hình sự 1985, Điều 1 (laws/lich-su-su-lieu.txt)"
+    },
+    {
+     "text": "Pháp nhân thương mại phạm tội thuộc danh mục tại Điều 76 bị truy cứu trách nhiệm hình sự",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 2 Bộ luật Hình sự 2015"
     }
    ],
    "explain": "Điều 1 BLHS 1985; BLHS 2015 lần đầu quy định pháp nhân thương mại chịu trách nhiệm hình sự."

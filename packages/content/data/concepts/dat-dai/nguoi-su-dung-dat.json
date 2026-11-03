@@ -70,6 +70,16 @@
     {
      "text": "Lấn chiếm đất công",
      "answer": "right"
+    },
+    {
+     "text": "Người đang sử dụng đất ổn định, đủ điều kiện được Nhà nước công nhận quyền sử dụng đất",
+     "answer": "left",
+     "basis": "Đoạn mở đầu Điều 4 Luật Đất đai 2024"
+    },
+    {
+     "text": "Người chiếm dụng đất do Nhà nước quản lý mà chưa được giao, cho thuê hay công nhận",
+     "answer": "right",
+     "basis": "Đoạn mở đầu Điều 4 Luật Đất đai 2024"
     }
    ],
    "explain": "Điều 4."

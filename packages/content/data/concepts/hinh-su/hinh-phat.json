@@ -69,6 +69,16 @@
     {
      "text": "Do cảnh sát giao thông lập biên bản, ra quyết định",
      "answer": "right"
+    },
+    {
+     "text": "Tòa án tuyên phạt tù bị cáo bằng bản án đã có hiệu lực pháp luật",
+     "answer": "left",
+     "basis": "Điều 30 Bộ luật Hình sự 2015"
+    },
+    {
+     "text": "Cơ quan hành chính ra quyết định phạt tiền đối với người vượt đèn đỏ",
+     "answer": "right",
+     "basis": "Điều 30 Bộ luật Hình sự 2015 (hình phạt do Tòa án quyết định)"
     }
    ],
    "explain": "Điều 30."

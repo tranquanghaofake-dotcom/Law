@@ -71,6 +71,16 @@
     {
      "text": "Được giảm một bậc",
      "answer": "right"
+    },
+    {
+     "text": "Người thuộc bát nghị như có công huân lớn phạm tử tội, quan nghị án phải tâu để vua xét định",
+     "answer": "left",
+     "basis": "Quốc triều hình luật, Điều 4 (laws/lich-su-su-lieu.txt)"
+    },
+    {
+     "text": "Người có tài năng lớn thuộc bát nghị, phạm tội lưu trở xuống, được xét giảm tội",
+     "answer": "right",
+     "basis": "Quốc triều hình luật, Điều 3 (laws/lich-su-su-lieu.txt)"
     }
    ],
    "explain": "Điều 4."

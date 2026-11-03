@@ -74,6 +74,11 @@
     {
      "text": "Doanh nghiệp tư nhân",
      "answer": "left"
+    },
+    {
+     "text": "Nhóm bạn tổ chức quỹ từ thiện không nhằm mục đích kinh doanh",
+     "answer": "right",
+     "basis": "Khoản 10 Điều 4 Luật Doanh nghiệp 2020"
     }
    ],
    "explain": "Điều 4."

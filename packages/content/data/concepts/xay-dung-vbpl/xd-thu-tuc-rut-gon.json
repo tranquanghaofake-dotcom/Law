@@ -4,7 +4,7 @@
  "chapter": "v2",
  "term": "Trường hợp xây dựng, ban hành VBQPPL theo trình tự, thủ tục rút gọn",
  "definition": "Việc xây dựng, ban hành văn bản quy phạm pháp luật được thực hiện theo trình tự, thủ tục rút gọn thuộc trường hợp sau đây: (…) Trường hợp khẩn cấp theo quy định của pháp luật về tình trạng khẩn cấp; khi có yêu cầu đột xuất, cấp bách vì lý do quốc phòng, an ninh, lợi ích quốc gia, phòng, chống thiên tai, dịch bệnh, cháy, nổ; (…) Trường hợp cấp bách để giải quyết vấn đề phát sinh trong thực tiễn;",
- "plain": "Sáu trường hợp (điểm a–e khoản 1 Điều 50): khẩn cấp/đột xuất vì quốc phòng, an ninh, thiên tai, dịch bệnh; cấp bách giải quyết vấn đề thực tiễn; cần tạm ngưng hiệu lực; cần sửa ngay cho phù hợp văn bản mới hoặc thực hiện điều ước; cần điều chỉnh thời hạn áp dụng; văn bản quy định chi tiết của văn bản rút gọn/đặc biệt. Hệ quả: không phải làm quy trình xây dựng chính sách (khoản 2 Điều 51), được rút ngắn các bước lấy ý kiến, thẩm định, thẩm tra và có thể có hiệu lực ngay (Điều 53). Thẩm quyền quyết định áp dụng thuộc các chủ thể tại khoản 2–4 Điều 50.",
+ "plain": "Sáu trường hợp (điểm a–e khoản 1 Điều 50): khẩn cấp/đột xuất vì quốc phòng, an ninh, thiên tai, dịch bệnh; cấp bách giải quyết vấn đề thực tiễn; cần tạm ngưng hiệu lực; cần sửa ngay cho phù hợp văn bản mới hoặc thực hiện điều ước; cần điều chỉnh thời hạn áp dụng; văn bản quy định chi tiết của văn bản rút gọn/đặc biệt. Hệ quả: không phải làm quy trình xây dựng chính sách (khoản 2 Điều 51), được rút ngắn các bước lấy ý kiến, thẩm định, thẩm tra và có thể có hiệu lực ngay (Điều 53). Thẩm quyền quyết định áp dụng thuộc các chủ thể tại khoản 2 Điều 50.",
  "example": "Dịch bệnh bùng phát, Chính phủ cần nghị định hỗ trợ người lao động ngay: thuộc điểm a khoản 1 Điều 50, ban hành theo thủ tục rút gọn, có hiệu lực từ ngày ký.",
  "source": {
   "kind": "statute",
@@ -72,6 +72,16 @@
     {
      "text": "Luật mới quy định toàn diện một lĩnh vực chưa có luật",
      "answer": "right"
+    },
+    {
+     "text": "Cần tạm ngưng hiệu lực một phần văn bản để kịp thời bảo vệ lợi ích của người dân",
+     "answer": "left",
+     "basis": "Điểm c khoản 1 Điều 50 Luật Ban hành văn bản quy phạm pháp luật 2025"
+    },
+    {
+     "text": "Luật mới quy định lần đầu một lĩnh vực quan trọng, cần bảo đảm đầy đủ trình tự xây dựng",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 50 Luật Ban hành văn bản quy phạm pháp luật 2025 (không thuộc các điểm a–e)"
     }
    ],
    "explain": "Điểm d khoản 1 Điều 50; luật mới phải theo quy trình đầy đủ."

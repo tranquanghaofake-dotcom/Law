@@ -70,6 +70,16 @@
     {
      "text": "Cửa hàng bán hàng của hãng, hàng vẫn thuộc sở hữu hãng",
      "answer": "right"
+    },
+    {
+     "text": "Bên nhận quyền phải mua bán theo cách thức và nhãn hiệu do bên nhượng quyền quy định",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 284 Luật Thương mại 2005"
+    },
+    {
+     "text": "Bên đại lý nhân danh chính mình mua bán hàng hóa cho bên giao đại lý",
+     "answer": "right",
+     "basis": "Điều 166 Luật Thương mại 2005"
     }
    ],
    "explain": "Điều 166, 284."

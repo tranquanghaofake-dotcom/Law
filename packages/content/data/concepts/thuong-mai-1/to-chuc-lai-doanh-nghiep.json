@@ -74,6 +74,16 @@
     {
      "text": "Công ty bị sáp nhập",
      "answer": "left"
+    },
+    {
+     "text": "Các công ty bị hợp nhất thành một công ty mới, các công ty cũ chấm dứt",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 200 Luật Doanh nghiệp 2020"
+    },
+    {
+     "text": "Công ty bị tách chuyển một phần tài sản sang công ty mới nhưng vẫn tiếp tục hoạt động",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 199 Luật Doanh nghiệp 2020"
     }
    ],
    "explain": "Điều 198–201."

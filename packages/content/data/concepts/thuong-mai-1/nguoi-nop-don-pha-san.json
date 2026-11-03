@@ -76,6 +76,11 @@
     {
      "text": "Chủ doanh nghiệp tư nhân",
      "answer": "right"
+    },
+    {
+     "text": "Chủ nợ có bảo đảm một phần yêu cầu mở thủ tục phá sản",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 38 Luật Phục hồi, phá sản 2025"
     }
    ],
    "explain": "Khoản 1, 2 Điều 38."

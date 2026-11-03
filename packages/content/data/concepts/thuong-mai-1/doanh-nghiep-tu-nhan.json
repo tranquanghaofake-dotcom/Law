@@ -74,6 +74,16 @@
     {
      "text": "Không có tư cách pháp nhân",
      "answer": "left"
+    },
+    {
+     "text": "Doanh nghiệp do một cá nhân làm chủ và chịu trách nhiệm bằng toàn bộ tài sản",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 188 Luật Doanh nghiệp 2020"
+    },
+    {
+     "text": "Công ty có tư cách pháp nhân, tài sản tách bạch với tài sản cá nhân của chủ sở hữu",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 74 Luật Doanh nghiệp 2020 (TNHH một thành viên)"
     }
    ],
    "explain": "Điều 74, 188."

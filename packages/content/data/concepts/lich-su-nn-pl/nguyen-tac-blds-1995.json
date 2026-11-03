@@ -72,6 +72,16 @@
     {
      "text": "Chỉ hành vi được luật quy định mới là tội phạm",
      "answer": "right"
+    },
+    {
+     "text": "Trong quan hệ dân sự các bên hoàn toàn tự nguyện, không bên nào được áp đặt",
+     "answer": "left",
+     "basis": "Bộ luật Dân sự 1995, Điều 7 (laws/lich-su-su-lieu.txt)"
+    },
+    {
+     "text": "Hành vi không được luật hình sự quy định thì không phải là tội phạm",
+     "answer": "right",
+     "basis": "Bộ luật Hình sự 1985, Điều 2 (laws/lich-su-su-lieu.txt)"
     }
    ],
    "explain": "Điều 14 BLDS 1995; Điều 2 BLHS 1985."

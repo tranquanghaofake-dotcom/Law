@@ -70,6 +70,16 @@
     {
      "text": "Thời hạn không quá 36 tháng",
      "answer": "right"
+    },
+    {
+     "text": "Hợp đồng ký với người làm việc ổn định lâu dài, không có ngày kết thúc hiệu lực",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 20 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Hợp đồng ghi thời điểm kết thúc sau 12 tháng kể từ thời điểm có hiệu lực, không quá 36 tháng",
+     "answer": "right",
+     "basis": "Điểm b khoản 1 Điều 20 Bộ luật Lao động 2019"
     }
    ],
    "explain": "Khoản 1 Điều 20."

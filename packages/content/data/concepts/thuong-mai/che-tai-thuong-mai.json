@@ -76,6 +76,16 @@
     {
      "text": "Bồi thường thiệt hại",
      "answer": "left"
+    },
+    {
+     "text": "Các bên tạm ngừng thực hiện hợp đồng trong một thời gian nhất định",
+     "answer": "right",
+     "basis": "Khoản 4 Điều 292 Luật Thương mại 2005"
+    },
+    {
+     "text": "Hủy bỏ hợp đồng do vi phạm cơ bản",
+     "answer": "right",
+     "basis": "Khoản 6 Điều 292 Luật Thương mại 2005"
     }
    ],
    "explain": "Điều 292."

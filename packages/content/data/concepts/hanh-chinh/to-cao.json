@@ -71,6 +71,16 @@
     {
      "text": "Có thời hiệu 90 ngày",
      "answer": "right"
+    },
+    {
+     "text": "Công dân báo cho cơ quan có thẩm quyền biết cán bộ nhũng nhiễu người dân",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 2 Luật Tố cáo 2018"
+    },
+    {
+     "text": "Người dân báo cho cơ quan biết doanh nghiệp xả thải gây ô nhiễm",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 2 Luật Tố cáo 2018"
     }
    ],
    "explain": "Điều 2 Luật Tố cáo; Điều 9 Luật Khiếu nại."

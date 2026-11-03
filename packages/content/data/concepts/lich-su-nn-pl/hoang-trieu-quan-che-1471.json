@@ -72,6 +72,16 @@
     {
      "text": "Xét bác trăm ty",
      "answer": "right"
+    },
+    {
+     "text": "Năm phủ quản lý quân vệ trong kinh thành, chia nhau nắm giữ",
+     "answer": "left",
+     "basis": "Đại Việt sử ký toàn thư, Bản kỷ quyển XII, Kỷ nhà Lê, Thánh Tông, năm 1471, tờ 66a–67a (laws/lich-su-su-lieu.txt)"
+    },
+    {
+     "text": "Sáu khoa có quyền xem xét, bác bỏ chỉ dụ không đúng",
+     "answer": "right",
+     "basis": "Đại Việt sử ký toàn thư, Bản kỷ quyển XII, Kỷ nhà Lê, Thánh Tông, năm 1471, tờ 67a–67b (laws/lich-su-su-lieu.txt)"
     }
    ],
    "explain": "Lời dụ năm 1471."

@@ -74,6 +74,16 @@
     {
      "text": "Giám đốc",
      "answer": "left"
+    },
+    {
+     "text": "Tổng giám đốc công ty cổ phần",
+     "answer": "left",
+     "basis": "Khoản 24 Điều 4 Luật Doanh nghiệp 2020"
+    },
+    {
+     "text": "Cổ đông phổ thông không tham gia điều hành của công ty cổ phần",
+     "answer": "right",
+     "basis": "Khoản 24 Điều 4 Luật Doanh nghiệp 2020"
     }
    ],
    "explain": "Khoản 24 Điều 4."

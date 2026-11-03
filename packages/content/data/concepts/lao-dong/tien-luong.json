@@ -71,6 +71,16 @@
     {
      "text": "Trả lương bình đẳng, không phân biệt giới tính",
      "answer": "right"
+    },
+    {
+     "text": "Khoản bổ sung theo thỏa thuận do người sử dụng lao động trả để thực hiện công việc",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 90 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Mức lương theo công việc không được thấp hơn mức lương tối thiểu theo quy định",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 90 Bộ luật Lao động 2019"
     }
    ],
    "explain": "Điều 90."

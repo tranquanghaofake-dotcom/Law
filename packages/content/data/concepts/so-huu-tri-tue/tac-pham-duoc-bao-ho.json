@@ -76,6 +76,16 @@
     {
      "text": "Bản đồ",
      "answer": "left"
+    },
+    {
+     "text": "Bài giảng, bài phát biểu của giảng viên được thể hiện dưới dạng chữ viết",
+     "answer": "left",
+     "basis": "Điểm b khoản 1 Điều 14 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Tin tức thời sự thuần túy đưa tin không thuộc phạm vi bảo hộ quyền tác giả",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 15 Luật Sở hữu trí tuệ"
     }
    ],
    "explain": "Điều 14, 15."

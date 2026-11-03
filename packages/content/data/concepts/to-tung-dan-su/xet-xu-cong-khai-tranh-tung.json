@@ -69,6 +69,16 @@
     {
      "text": "Vụ việc cần giữ bí mật nhà nước",
      "answer": "right"
+    },
+    {
+     "text": "Vụ án kinh doanh thương mại thông thường, Tòa án xét xử sơ thẩm công khai",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 15 Bộ luật Tố tụng dân sự 2015"
+    },
+    {
+     "text": "Vụ án liên quan đến bí mật kinh doanh, theo yêu cầu của đương sự có thể không công khai",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 15 Bộ luật Tố tụng dân sự 2015"
     }
    ],
    "explain": "Điều 15."

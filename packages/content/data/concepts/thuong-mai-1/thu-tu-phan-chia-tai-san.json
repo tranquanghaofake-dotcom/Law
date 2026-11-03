@@ -72,6 +72,16 @@
     {
      "text": "Nghĩa vụ tài chính đối với Nhà nước",
      "answer": "right"
+    },
+    {
+     "text": "Chi phí phá sản được thanh toán đầu tiên",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 46 Luật Phục hồi, phá sản 2025"
+    },
+    {
+     "text": "Khoản nợ không có bảo đảm phải trả cho chủ nợ trong danh sách chủ nợ",
+     "answer": "right",
+     "basis": "Điểm g khoản 1 Điều 46 Luật Phục hồi, phá sản 2025"
     }
    ],
    "explain": "Điểm b, e khoản 1 Điều 46."

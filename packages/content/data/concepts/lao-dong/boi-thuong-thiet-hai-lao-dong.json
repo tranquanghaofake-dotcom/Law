@@ -70,6 +70,16 @@
     {
      "text": "Làm mất tài sản được giao",
      "answer": "right"
+    },
+    {
+     "text": "Thiệt hại không nghiêm trọng do sơ suất, giá trị dưới 10 tháng lương tối thiểu vùng, bị khấu trừ hằng tháng vào lương",
+     "answer": "left",
+     "basis": "Đoạn 2 khoản 1 Điều 129 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Người lao động tiêu hao vật tư vượt định mức cho phép, phải bồi thường theo thời giá thị trường",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 129 Bộ luật Lao động 2019"
     }
    ],
    "explain": "Điều 129."

@@ -74,6 +74,16 @@
     {
      "text": "Quyết định của Ủy ban nhân dân cấp tỉnh",
      "answer": "right"
+    },
+    {
+     "text": "Nghị định của Chính phủ có hiệu lực không sớm hơn 45 ngày kể từ ngày ký ban hành",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 53 Luật Ban hành văn bản quy phạm pháp luật 2025"
+    },
+    {
+     "text": "Nghị quyết của Hội đồng nhân dân cấp huyện có hiệu lực không sớm hơn 10 ngày kể từ ngày thông qua",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 53 Luật Ban hành văn bản quy phạm pháp luật 2025"
     }
    ],
    "explain": "Khoản 1 Điều 53: trung ương 45 ngày, địa phương 10 ngày."

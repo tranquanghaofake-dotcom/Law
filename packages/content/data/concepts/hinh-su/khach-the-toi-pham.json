@@ -74,6 +74,11 @@
     {
      "text": "Ví dụ: chiếc xe máy bị trộm",
      "answer": "right"
+    },
+    {
+     "text": "Quan hệ xã hội được luật hình sự bảo vệ bị xâm hại, như tính mạng của người khác",
+     "answer": "left",
+     "basis": "Giáo trình Luật Hình sự Việt Nam (Phần chung), Trường Đại học Luật Hà Nội (⚠ chưa đối chiếu nguyên văn)"
     }
    ],
    "explain": "Học thuyết."

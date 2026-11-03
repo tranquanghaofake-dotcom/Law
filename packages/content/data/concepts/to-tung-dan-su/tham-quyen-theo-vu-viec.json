@@ -70,6 +70,16 @@
     {
      "text": "Tranh chấp về kỷ luật sa thải",
      "answer": "right"
+    },
+    {
+     "text": "Tranh chấp về quyền sở hữu tài sản giữa hai cá nhân",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 26 Bộ luật Tố tụng dân sự 2015"
+    },
+    {
+     "text": "Tranh chấp về bảo hiểm xã hội giữa người lao động và người sử dụng lao động",
+     "answer": "right",
+     "basis": "Điểm d khoản 1 Điều 32 Bộ luật Tố tụng dân sự 2015"
     }
    ],
    "explain": "Điều 26, 32."

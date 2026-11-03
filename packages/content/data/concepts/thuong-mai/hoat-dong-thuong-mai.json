@@ -70,6 +70,16 @@
     {
      "text": "Tặng quà sinh nhật cho bạn",
      "answer": "right"
+    },
+    {
+     "text": "Doanh nghiệp đầu tư cổ phần nhằm thu lợi nhuận",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 3 Luật Thương mại 2005"
+    },
+    {
+     "text": "Hộ gia đình tự sản xuất lương thực để ăn trong nhà",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 3 Luật Thương mại 2005"
     }
    ],
    "explain": "Điều 3."

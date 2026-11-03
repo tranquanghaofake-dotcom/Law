@@ -72,6 +72,16 @@
     {
      "text": "Bên nhận chỉ được dùng nhãn hiệu trong 5 năm tại miền Bắc",
      "answer": "right"
+    },
+    {
+     "text": "Chủ sở hữu bán hẳn sáng chế cho công ty khác bằng hợp đồng văn bản",
+     "answer": "left",
+     "basis": "Khoản 1, 2 Điều 138 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Chủ sở hữu cho công ty khác sử dụng nhãn hiệu nhưng vẫn giữ quyền sở hữu",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 141 Luật Sở hữu trí tuệ"
     }
    ],
    "explain": "Điều 138, 141."

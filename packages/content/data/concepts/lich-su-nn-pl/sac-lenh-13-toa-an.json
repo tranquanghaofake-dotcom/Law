@@ -72,6 +72,16 @@
     {
      "text": "Đặt ở mỗi tỉnh và Hà Nội, Hải Phòng, Sài Gòn - Chợ Lớn",
      "answer": "right"
+    },
+    {
+     "text": "Tòa án sơ cấp đặt ở mỗi quận, phủ, huyện, châu, quản hạt địa hạt quận",
+     "answer": "left",
+     "basis": "Sắc lệnh 13, Điều thứ 7 (laws/lich-su-su-lieu.txt)"
+    },
+    {
+     "text": "Tòa án đệ nhị cấp đặt ở mỗi tỉnh và các thành phố lớn",
+     "answer": "right",
+     "basis": "Sắc lệnh 13, Điều thứ 12 (laws/lich-su-su-lieu.txt)"
     }
    ],
    "explain": "Điều thứ 7, 12 Sắc lệnh 13."

@@ -70,6 +70,16 @@
     {
      "text": "Hỗ trợ khi bị thiên tai, hỏa hoạn",
      "answer": "right"
+    },
+    {
+     "text": "Hỗ trợ hằng tháng cho đối tượng không còn khả năng lao động, sống không nơi nương tựa",
+     "answer": "left",
+     "basis": "Giáo trình Luật An sinh xã hội, Trường Đại học Luật Hà Nội (trợ giúp thường xuyên; ⚠ chưa đối chiếu nguyên văn)"
+    },
+    {
+     "text": "Hỗ trợ lương thực và chỗ ở tạm cho hộ bị thiệt hại đột ngột do lũ lụt",
+     "answer": "right",
+     "basis": "Giáo trình Luật An sinh xã hội, Trường Đại học Luật Hà Nội (trợ giúp đột xuất; ⚠ chưa đối chiếu nguyên văn)"
     }
    ],
    "explain": "Học thuyết."

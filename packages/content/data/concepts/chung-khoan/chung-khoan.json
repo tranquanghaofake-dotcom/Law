@@ -74,6 +74,11 @@
     {
      "text": "Chứng quyền có bảo đảm",
      "answer": "right"
+    },
+    {
+     "text": "Trái phiếu doanh nghiệp chào bán ra công chúng",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 4 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Điểm a: ba loại \"truyền thống\"; điểm b: các loại gắn với quyền mua/bán hoặc lưu ký; điểm c: phái sinh; điểm d: loại khác do Chính phủ quy định."

@@ -73,6 +73,21 @@
     {
      "text": "Tác phẩm văn học",
      "answer": "right"
+    },
+    {
+     "text": "Kiểu dáng công nghiệp của chiếc ghế mới cần được cấp văn bằng bảo hộ",
+     "answer": "left",
+     "basis": "Điểm a khoản 3 Điều 6 Luật Sở hữu trí tuệ; khoản 2 Điều 3"
+    },
+    {
+     "text": "Thiết kế bố trí mạch tích hợp bán dẫn",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 3 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Bài thơ do tác giả sáng tác và đăng báo",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 6 Luật Sở hữu trí tuệ (quyền tác giả phát sinh không cần đăng ký)"
     }
    ],
    "explain": "Điều 6: quyền tác giả phát sinh khi tác phẩm được sáng tạo và định hình; sáng chế xác lập trên cơ sở cấp văn bằng."

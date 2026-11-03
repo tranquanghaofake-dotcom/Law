@@ -73,6 +73,16 @@
     {
      "text": "Đánh giá dự thảo thông tư trước khi Bộ trưởng ký",
      "answer": "right"
+    },
+    {
+     "text": "Cơ quan có thẩm quyền xem xét, kết luận về tính hợp pháp của thông tư đã ban hành",
+     "answer": "left",
+     "basis": "Khoản 6 Điều 3 và Điều 63 Luật Ban hành văn bản quy phạm pháp luật 2025"
+    },
+    {
+     "text": "Cơ quan soạn thảo đánh giá dự thảo quyết định trước khi người có thẩm quyền ký ban hành",
+     "answer": "right",
+     "basis": "Điều 34 Luật Ban hành văn bản quy phạm pháp luật 2025 (thẩm định trước ban hành)"
     }
    ],
    "explain": "Kiểm tra sau ban hành (Điều 63); thẩm định trước ban hành (Điều 34)."

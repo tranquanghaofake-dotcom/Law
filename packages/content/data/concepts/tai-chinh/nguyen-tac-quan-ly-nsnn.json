@@ -72,6 +72,16 @@
     {
      "text": "Khoản chi chưa có dự toán, không thuộc trường hợp tạm cấp",
      "answer": "right"
+    },
+    {
+     "text": "Chi cho bộ máy nhà nước khi dự toán đã được cấp có thẩm quyền giao",
+     "answer": "left",
+     "basis": "Khoản 4 và khoản 6 Điều 8 Luật Ngân sách nhà nước 2025"
+    },
+    {
+     "text": "Ngân sách bảo đảm chi trả các khoản nợ lãi đến hạn",
+     "answer": "left",
+     "basis": "Khoản 8 Điều 8 Luật Ngân sách nhà nước 2025"
     }
    ],
    "explain": "Khoản 4 Điều 8."

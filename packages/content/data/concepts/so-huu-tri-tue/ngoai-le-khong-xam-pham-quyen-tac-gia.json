@@ -71,6 +71,16 @@
     {
      "text": "In lại toàn bộ sách để bán",
      "answer": "right"
+    },
+    {
+     "text": "Trích dẫn hợp lý tác phẩm mà không làm sai ý tác giả để bình luận, minh họa trong tác phẩm của mình",
+     "answer": "left",
+     "basis": "Điểm đ khoản 1 Điều 25 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Đăng lại toàn bộ tác phẩm lên trang thương mại để thu phí mà không có sự cho phép",
+     "answer": "right",
+     "basis": "Điều 28 Luật Sở hữu trí tuệ"
     }
    ],
    "explain": "Điều 25, 28."

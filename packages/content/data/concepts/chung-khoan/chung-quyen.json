@@ -73,6 +73,11 @@
     {
      "text": "Có thể là quyền mua hoặc quyền bán chứng khoán cơ sở",
      "answer": "right"
+    },
+    {
+     "text": "Người sở hữu được mua một số lượng chứng khoán cơ sở theo giá định trước",
+     "answer": "left",
+     "basis": "Khoản 5 Điều 4 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 5 và khoản 6 Điều 4."

@@ -73,6 +73,16 @@
     {
      "text": "Nhân viên tạo kiểu dáng theo đơn đặt hàng và kinh phí của công ty",
      "answer": "right"
+    },
+    {
+     "text": "Kỹ sư tự nghiên cứu sáng chế bằng chi phí cá nhân, không theo hợp đồng",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 86 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Doanh nghiệp đặt hàng nhân viên nghiên cứu và trả toàn bộ kinh phí",
+     "answer": "right",
+     "basis": "Điểm b khoản 1 Điều 86 Luật Sở hữu trí tuệ"
     }
    ],
    "explain": "Khoản 1 Điều 86."

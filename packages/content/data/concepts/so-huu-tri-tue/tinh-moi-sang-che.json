@@ -71,6 +71,16 @@
     {
      "text": "Chỉ nhóm nghiên cứu ký cam kết bảo mật biết",
      "answer": "right"
+    },
+    {
+     "text": "Sáng chế đã được bộc lộ trong đơn đăng ký khác có ngày nộp đơn sớm hơn",
+     "answer": "left",
+     "basis": "Điểm b khoản 1 Điều 60 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Sáng chế bị bộc lộ do chính người có quyền đăng ký trong thời gian được pháp luật cho phép",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 60 Luật Sở hữu trí tuệ"
     }
    ],
    "explain": "Điều 60."

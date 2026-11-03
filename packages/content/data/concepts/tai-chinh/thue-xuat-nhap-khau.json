@@ -72,6 +72,16 @@
     {
      "text": "Hàng viện trợ nhân đạo",
      "answer": "right"
+    },
+    {
+     "text": "Hàng hóa xuất khẩu qua cửa khẩu, biên giới Việt Nam",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 2 Luật Thuế xuất khẩu, thuế nhập khẩu"
+    },
+    {
+     "text": "Hàng hóa quá cảnh, chuyển khẩu qua lãnh thổ Việt Nam",
+     "answer": "right",
+     "basis": "Điểm a khoản 4 Điều 2 Luật Thuế xuất khẩu, thuế nhập khẩu"
     }
    ],
    "explain": "Điều 2."

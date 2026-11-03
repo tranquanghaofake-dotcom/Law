@@ -70,6 +70,16 @@
     {
      "text": "Không mong muốn nhưng có ý thức để mặc",
      "answer": "right"
+    },
+    {
+     "text": "Người muốn gây thương tích cho người khác bằng cách đánh vào đầu",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 10 Bộ luật Hình sự 2015"
+    },
+    {
+     "text": "Người biết hành vi có thể gây chết người, không mong muốn nhưng vẫn để mặc hậu quả",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 10 Bộ luật Hình sự 2015"
     }
    ],
    "explain": "Điều 10."

@@ -74,6 +74,11 @@
     {
      "text": "Công bố thông tin qua người được ủy quyền công bố thông tin",
      "answer": "left"
+    },
+    {
+     "text": "Công bố thông tin chậm trễ, không kịp thời theo quy định",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 119 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 2, 4 Điều 119."

@@ -74,6 +74,16 @@
     {
      "text": "Phạm tội trên tàu bay mang quốc tịch Việt Nam",
      "answer": "left"
+    },
+    {
+     "text": "Hành vi phạm tội xảy ra trên tàu biển mang quốc tịch Việt Nam khi đang ở vùng biển quốc tế",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 5 Bộ luật Hình sự 2015"
+    },
+    {
+     "text": "Pháp nhân thương mại Việt Nam có hành vi phạm tội tại nước ngoài",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 6 Bộ luật Hình sự 2015"
     }
    ],
    "explain": "Điều 5, 6."

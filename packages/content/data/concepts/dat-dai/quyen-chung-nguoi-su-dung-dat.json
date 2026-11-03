@@ -70,6 +70,16 @@
     {
      "text": "Chuyển nhượng quyền sử dụng đất",
      "answer": "right"
+    },
+    {
+     "text": "Được hưởng thành quả lao động, kết quả đầu tư trên đất sử dụng hợp pháp",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 26 Luật Đất đai 2024"
+    },
+    {
+     "text": "Thừa kế hoặc tặng cho quyền sử dụng đất khi có đủ điều kiện theo luật",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 45 Luật Đất đai 2024"
     }
    ],
    "explain": "Điều 26, 27, 45."

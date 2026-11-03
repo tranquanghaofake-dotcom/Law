@@ -70,6 +70,16 @@
     {
      "text": "Sản xuất, gia công hàng dệt, may, da, giày xuất khẩu",
      "answer": "right"
+    },
+    {
+     "text": "Người sử dụng lao động cho làm thêm giờ không quá 200 giờ trong 01 năm",
+     "answer": "left",
+     "basis": "Điểm c khoản 2 Điều 107 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Chế biến thủy sản xuất khẩu, người lao động được làm thêm không quá 300 giờ trong 01 năm",
+     "answer": "right",
+     "basis": "Điểm a khoản 3 Điều 107 Bộ luật Lao động 2019"
     }
    ],
    "explain": "Khoản 2, 3 Điều 107."

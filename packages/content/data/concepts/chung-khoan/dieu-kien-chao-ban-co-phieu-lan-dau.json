@@ -75,6 +75,11 @@
     {
      "text": "15% cổ phiếu có quyền biểu quyết bán cho ít nhất 100 nhà đầu tư không phải cổ đông lớn",
      "answer": "left"
+    },
+    {
+     "text": "Có phương án phát hành và phương án sử dụng vốn được Đại hội đồng cổ đông thông qua",
+     "answer": "left",
+     "basis": "Điểm c khoản 1 Điều 15 Luật Chứng khoán 2019"
     }
    ],
    "explain": "So sánh khoản 1 và khoản 2 Điều 15."

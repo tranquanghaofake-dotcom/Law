@@ -71,6 +71,16 @@
     {
      "text": "Sinh viên dùng sáng chế để làm thí nghiệm nghiên cứu",
      "answer": "right"
+    },
+    {
+     "text": "Bên không được phép sử dụng sáng chế đang được bảo hộ để sản xuất bán ra thị trường",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 125 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Cá nhân sử dụng sáng chế để phục vụ nhu cầu cá nhân hoặc mục đích phi thương mại",
+     "answer": "right",
+     "basis": "Điểm a khoản 2 Điều 125 Luật Sở hữu trí tuệ"
     }
    ],
    "explain": "Điều 125."

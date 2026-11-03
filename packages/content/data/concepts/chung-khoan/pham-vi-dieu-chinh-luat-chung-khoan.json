@@ -73,6 +73,11 @@
     {
      "text": "Cơ quan quản lý nhà nước về chứng khoán",
      "answer": "left"
+    },
+    {
+     "text": "Quyền và nghĩa vụ của tổ chức, cá nhân trong lĩnh vực chứng khoán",
+     "answer": "right",
+     "basis": "Điều 1 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Điều 1 trả lời \"luật điều chỉnh việc gì\"; Điều 2 trả lời \"luật áp dụng cho ai\"."

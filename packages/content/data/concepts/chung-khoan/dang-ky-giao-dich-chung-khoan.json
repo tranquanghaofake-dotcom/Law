@@ -69,6 +69,16 @@
     {
      "text": "Ghi nhận thông tin về tổ chức phát hành, chứng khoán và người sở hữu",
      "answer": "right"
+    },
+    {
+     "text": "Đưa cổ phiếu chưa niêm yết của công ty đại chúng vào hệ thống giao dịch",
+     "answer": "left",
+     "basis": "Khoản 25 Điều 4 Luật Chứng khoán 2019"
+    },
+    {
+     "text": "Tổng công ty lưu ký lập Sổ đăng ký người sở hữu chứng khoán",
+     "answer": "right",
+     "basis": "Khoản 4 Điều 61 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 25 và khoản 33 Điều 4."

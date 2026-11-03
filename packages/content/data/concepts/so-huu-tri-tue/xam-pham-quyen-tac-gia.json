@@ -71,6 +71,16 @@
     {
      "text": "Sao chép bán bản lậu",
      "answer": "right"
+    },
+    {
+     "text": "Sửa đổi, cắt xén tác phẩm làm phương hại danh dự của tác giả, không được phép",
+     "answer": "left",
+     "basis": "Khoản 4 Điều 19 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Dịch tác phẩm sang ngôn ngữ khác để bán mà không được phép của chủ sở hữu",
+     "answer": "right",
+     "basis": "Điều 20 Luật Sở hữu trí tuệ"
     }
    ],
    "explain": "Điều 19, 20, 28."

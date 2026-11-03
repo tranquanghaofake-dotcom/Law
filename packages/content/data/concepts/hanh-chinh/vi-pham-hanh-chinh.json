@@ -71,6 +71,16 @@
     {
      "text": "Hai bên không trả tiền theo hợp đồng mua bán",
      "answer": "right"
+    },
+    {
+     "text": "Vượt đèn đỏ khi đi xe máy",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 2 Luật Xử lý vi phạm hành chính"
+    },
+    {
+     "text": "Hành vi giết người",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 2 Luật Xử lý vi phạm hành chính (không phải vi phạm hành chính vì là tội phạm)"
     }
    ],
    "explain": "Điều 2."

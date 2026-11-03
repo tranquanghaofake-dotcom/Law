@@ -70,6 +70,16 @@
     {
      "text": "Phát sinh trên cơ sở tự nguyện, thỏa thuận",
      "answer": "right"
+    },
+    {
+     "text": "Cơ quan đăng ký xe buộc chủ phương tiện làm thủ tục sang tên",
+     "answer": "left",
+     "basis": "Slide bài giảng Luật Hành chính, ĐH Luật Hà Nội, vấn đề 3 (laws/hc-slide-trich.txt)"
+    },
+    {
+     "text": "Hai bên ký hợp đồng cho thuê nhà trên cơ sở thỏa thuận",
+     "answer": "right",
+     "basis": "Điều 3 Bộ luật Dân sự 2015 (tự nguyện, bình đẳng)"
     }
    ],
    "explain": "Slide bài giảng vấn đề 3."

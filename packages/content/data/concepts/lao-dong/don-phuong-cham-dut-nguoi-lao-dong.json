@@ -75,6 +75,16 @@
     {
      "text": "Bị cưỡng bức lao động",
      "answer": "right"
+    },
+    {
+     "text": "Người lao động làm hợp đồng không xác định thời hạn nghỉ việc, báo trước ít nhất 45 ngày",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 35 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Người lao động bị quấy rối tình dục tại nơi làm việc nên nghỉ việc ngay",
+     "answer": "right",
+     "basis": "Điểm d khoản 2 Điều 35 Bộ luật Lao động 2019"
     }
    ],
    "explain": "Điều 35."
