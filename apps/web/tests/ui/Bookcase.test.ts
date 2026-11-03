@@ -31,9 +31,11 @@ describe('Bookcase (tủ sách thật)', () => {
     shelf.books = [rec('hien-phap', 1, 2, true), rec('hien-phap', 2, 1)];
     const { container } = render(Bookcase);
     const hp = [...container.querySelectorAll<HTMLButtonElement>('.bk-spine')].find((b) => b.textContent?.includes('HIEN-PHAP'))!;
-    expect(hp.getAttribute('aria-label')).toContain(hp.querySelector('.bk-name')!.textContent!);
-    expect(hp.getAttribute('aria-label')).toContain('2/4 sách');
-    expect(hp.getAttribute('aria-label')).toContain('cần ôn');
+    const nm = hp.querySelector('.sr-only')!.textContent!; // tên truy cập là chữ ẩn, không aria-label lệch chữ hiển thị
+    expect(hp.hasAttribute('aria-label')).toBe(false);
+    expect(nm).toContain(hp.querySelector('.bk-name')!.textContent!);
+    expect(nm).toContain('2/4 sách');
+    expect(nm).toContain('cần ôn');
     expect(hp.style.getPropertyValue('--lit')).toBe('0.5');
     expect(hp.querySelector('.bk-dot')).not.toBeNull();
   });
