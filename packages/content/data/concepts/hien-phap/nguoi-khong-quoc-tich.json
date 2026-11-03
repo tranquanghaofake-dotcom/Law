@@ -69,6 +69,16 @@
     {
      "text": "Có quốc tịch của một nước khác không phải Việt Nam",
      "answer": "right"
+    },
+    {
+     "text": "Người không có bất kỳ quốc tịch nào, sinh sống lâu dài tại Việt Nam",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 3 Luật Quốc tịch Việt Nam 2008"
+    },
+    {
+     "text": "Công dân Việt Nam có thêm quốc tịch của một nước khác",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 3 Luật Quốc tịch Việt Nam 2008"
     }
    ],
    "explain": "Khoản 1, 2 Điều 3."

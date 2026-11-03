@@ -78,6 +78,16 @@
     {
      "text": "Thẩm phán Tòa án nhân dân tối cao",
      "answer": "right"
+    },
+    {
+     "text": "Quốc hội bầu Viện trưởng Viện kiểm sát nhân dân tối cao theo đề nghị của Chủ tịch nước",
+     "answer": "left",
+     "basis": "Khoản 3 Điều 88 Hiến pháp 2013"
+    },
+    {
+     "text": "Quốc hội bầu Thủ tướng Chính phủ theo đề nghị của Chủ tịch nước",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 88 Hiến pháp 2013"
     }
    ],
    "explain": "Khoản 2, 3 Điều 88."

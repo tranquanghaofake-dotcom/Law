@@ -70,6 +70,21 @@
     {
      "text": "Giải thích Hiến pháp, luật, pháp lệnh",
      "answer": "right"
+    },
+    {
+     "text": "Tòa án nhân dân tối cao giám đốc việc xét xử của các Tòa án khác",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 104 Hiến pháp 2013"
+    },
+    {
+     "text": "Tòa án nhân dân tối cao là cơ quan xét xử cao nhất của nước Cộng hòa xã hội chủ nghĩa Việt Nam",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 104 Hiến pháp 2013"
+    },
+    {
+     "text": "Ủy ban thường vụ Quốc hội giải thích Hiến pháp, luật và pháp lệnh",
+     "answer": "right",
+     "basis": "Điều 74 Hiến pháp 2013 (nhiệm vụ Ủy ban thường vụ Quốc hội)"
     }
    ],
    "explain": "Điều 104 và khoản 2 Điều 74."

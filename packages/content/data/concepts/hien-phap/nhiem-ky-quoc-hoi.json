@@ -75,6 +75,11 @@
     {
      "text": "Bãi nhiệm đại biểu Quốc hội",
      "answer": "right"
+    },
+    {
+     "text": "Quốc hội thông qua luật bằng quá nửa tổng số đại biểu biểu quyết tán thành",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 85 Hiến pháp 2013"
     }
    ],
    "explain": "Khoản 3 Điều 71; khoản 1 Điều 85."

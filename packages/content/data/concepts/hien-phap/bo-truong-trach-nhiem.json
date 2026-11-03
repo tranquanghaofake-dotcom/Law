@@ -71,6 +71,16 @@
     {
      "text": "Về hoạt động chung của Chính phủ",
      "answer": "right"
+    },
+    {
+     "text": "Bộ trưởng chịu trách nhiệm cá nhân về ngành, lĩnh vực được phân công phụ trách",
+     "answer": "left",
+     "basis": "Khoản 4 Điều 95 Hiến pháp 2013"
+    },
+    {
+     "text": "Chính phủ cùng chịu trách nhiệm về quyết định chung được thông qua theo đa số",
+     "answer": "right",
+     "basis": "Điều 95 Hiến pháp 2013 (chế độ làm việc tập thể)"
     }
    ],
    "explain": "Khoản 4 Điều 95."

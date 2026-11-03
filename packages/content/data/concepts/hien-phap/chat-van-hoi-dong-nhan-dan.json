@@ -79,6 +79,16 @@
     {
      "text": "Chánh án Tòa án nhân dân tối cao",
      "answer": "right"
+    },
+    {
+     "text": "Đại biểu Hội đồng nhân dân chất vấn Chủ tịch Ủy ban nhân dân cấp huyện",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 115 Hiến pháp 2013"
+    },
+    {
+     "text": "Đại biểu Quốc hội chất vấn Thủ tướng Chính phủ tại kỳ họp Quốc hội",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 80 Hiến pháp 2013"
     }
    ],
    "explain": "Điều 80, 115."

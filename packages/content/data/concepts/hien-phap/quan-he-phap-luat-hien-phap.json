@@ -71,6 +71,16 @@
     {
      "text": "Giữa cử tri A và tổ bầu cử khu vực X",
      "answer": "right"
+    },
+    {
+     "text": "Giữa Nhà nước và mọi công dân về quyền bầu cử, quan hệ chung của luật Hiến pháp",
+     "answer": "left",
+     "basis": "Giáo trình Luật Hiến pháp (Chương 1, quan hệ pháp luật Hiến pháp chung)"
+    },
+    {
+     "text": "Giữa Viện kiểm sát và bị can trong một vụ án cụ thể về một hành vi phạm tội",
+     "answer": "right",
+     "basis": "Giáo trình Luật Hiến pháp (Chương 1, quan hệ pháp luật Hiến pháp cụ thể)"
     }
    ],
    "explain": "Phân loại phổ biến của giáo trình."

@@ -75,6 +75,16 @@
     {
      "text": "Hợp đồng thuê nhà",
      "answer": "right"
+    },
+    {
+     "text": "Tổ chức và hoạt động của Quốc hội, Chính phủ và các cơ quan nhà nước ở trung ương",
+     "answer": "left",
+     "basis": "Giáo trình Luật Hiến pháp (Chương 1, đối tượng điều chỉnh)"
+    },
+    {
+     "text": "Quan hệ mua bán hàng hóa giữa hai doanh nghiệp, do luật thương mại điều chỉnh",
+     "answer": "right",
+     "basis": "Giáo trình Luật Hiến pháp (Chương 1, đối tượng điều chỉnh)"
     }
    ],
    "explain": "Bầu cử, quốc tịch là quan hệ cơ bản giữa Nhà nước và công dân."

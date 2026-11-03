@@ -71,6 +71,16 @@
     {
      "text": "Nhập hai xã thành một xã",
      "answer": "right"
+    },
+    {
+     "text": "Quốc hội quyết định chia một tỉnh thành hai tỉnh",
+     "answer": "left",
+     "basis": "Khoản 3 Điều 110 Hiến pháp 2013 (sửa đổi)"
+    },
+    {
+     "text": "Ủy ban thường vụ Quốc hội quyết định chia một xã thành hai xã",
+     "answer": "right",
+     "basis": "Điều 74 Hiến pháp 2013 (theo bản 2013)"
     }
    ],
    "explain": "Khoản 9 Điều 70; khoản 8 Điều 74."
