@@ -114,6 +114,18 @@
     "quân hàm",
     "tình trạng khẩn cấp"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hội đồng quốc phòng và an ninh làm việc theo chế độ tập thể và quyết định theo đa số.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 89 Hiến pháp 2013 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 89 Hiến pháp 2013",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+   }
   }
  ]
 }

@@ -135,6 +135,18 @@
     "bỏ phiếu",
     "Quốc hội quyết định"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Ủy ban dự thảo Hiến pháp soạn thảo, tổ chức lấy ý kiến Nhân dân và trình Quốc hội dự thảo Hiến pháp.",
+   "answer": true,
+   "explain": "Đúng. Khoản 3 Điều 120 Hiến pháp 2013 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 120 Hiến pháp 2013",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+   }
   }
  ]
 }

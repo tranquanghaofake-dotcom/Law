@@ -134,6 +134,18 @@
     "giám sát tối cao",
     "không có Tòa án Hiến pháp"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Các cơ quan khác của Nhà nước và toàn thể Nhân dân có trách nhiệm bảo vệ Hiến pháp.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 119 Hiến pháp 2013 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 119 Hiến pháp 2013",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+   }
   }
  ]
 }

@@ -118,6 +118,18 @@
     "bảo vệ công lý",
     "quyền con người"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tòa án nhân dân là cơ quan xét xử của nước Cộng hoà xã hội chủ nghĩa Việt Nam, thực hiện quyền tư pháp.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 102 Hiến pháp 2013 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 102 Hiến pháp 2013",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+   }
   }
  ]
 }

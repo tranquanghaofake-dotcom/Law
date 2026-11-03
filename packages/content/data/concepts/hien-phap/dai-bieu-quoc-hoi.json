@@ -119,6 +119,18 @@
     "giám sát của cử tri",
     "tiếp xúc"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Đại biểu Quốc hội là người đại diện cho ý chí, nguyện vọng của Nhân dân ở đơn vị bầu cử ra mình và của Nhân dân cả nước.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 79 Hiến pháp 2013 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 79 Hiến pháp 2013",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+   }
   }
  ]
 }

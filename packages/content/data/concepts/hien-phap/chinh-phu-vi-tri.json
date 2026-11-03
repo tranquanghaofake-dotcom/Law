@@ -110,6 +110,18 @@
     "chấp hành của Quốc hội",
     "chịu trách nhiệm"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chính phủ chịu trách nhiệm trước Quốc hội và báo cáo công tác trước Quốc hội, Ủy ban thường vụ Quốc hội, Chủ tịch nước.",
+   "answer": true,
+   "explain": "Đúng. Điều 94 Hiến pháp 2013 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 94 Hiến pháp 2013",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+   }
   }
  ]
 }

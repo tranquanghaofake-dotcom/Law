@@ -46,7 +46,7 @@
    "q": "Nguyên tắc nào trong xét xử được bảo đảm theo khoản 5 Điều 103?",
    "options": [
     "Tranh tụng",
-    "Thẩm vấn một chiều",
+    "Tranh tụng một chiều: bên buộc tội trình bày, bên bào chữa im lặng",
     "Suy đoán có tội",
     "Xét xử vắng mặt"
    ],
@@ -110,6 +110,18 @@
     "bào chữa",
     "đương sự"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quyền bào chữa của bị can, bị cáo, quyền bảo vệ lợi ích hợp pháp của đương sự được bảo đảm.",
+   "answer": true,
+   "explain": "Đúng. Khoản 7 Điều 103 Hiến pháp 2013 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 7 Điều 103 Hiến pháp 2013",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+   }
   }
  ]
 }

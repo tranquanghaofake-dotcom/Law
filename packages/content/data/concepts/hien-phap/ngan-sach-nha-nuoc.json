@@ -111,6 +111,18 @@
     "luật định",
     "Đồng Việt Nam"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Các khoản thu, chi ngân sách nhà nước phải được dự toán và do luật định.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 55 Hiến pháp 2013 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 55 Hiến pháp 2013",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+   }
   }
  ]
 }

@@ -125,6 +125,18 @@
     "nhiều tuổi hơn",
     "bầu cử thêm"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Trong trường hợp bầu cử thêm thì ngày bầu cử được tiến hành chậm nhất là 07 ngày sau ngày bầu cử đầu tiên.",
+   "answer": true,
+   "explain": "Đúng. Khoản 3 Điều 79 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 79 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026)",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/luat-bau-cu-dai-bieu-quoc-hoi-va-dai-bieu-hoi-dong-nhan-dan-so-85-2015-qh13--70812"
+   }
   }
  ]
 }

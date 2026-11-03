@@ -26,12 +26,12 @@
   {
    "type": "mcq",
    "level": 1,
-   "q": "Theo khoản 2 Điều 21, quyền bí mật áp dụng với những hình thức nào?",
+   "q": "Phương án nào liệt kê đầy đủ các hình thức trao đổi thông tin mà theo khoản 2 Điều 21 được bảo đảm an toàn bí mật?",
    "options": [
     "Thư tín, điện thoại, điện tín và các hình thức trao đổi thông tin riêng tư khác",
-    "Chỉ thư tay và thư gửi cho người thân trong gia đình tại địa phương",
-    "Chỉ điện thoại cố định và điện thoại di động của người thân trong gia đình",
-    "Chỉ thư của cơ quan nhà nước và thư tín của các tổ chức chính trị xã hội"
+    "Thư tay và thư gửi cho người thân trong gia đình tại địa phương",
+    "Điện thoại cố định và điện thoại di động của người thân trong gia đình tại địa phương",
+    "Thư của cơ quan nhà nước và thư tín của các tổ chức chính trị xã hội"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 21.",

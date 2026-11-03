@@ -114,6 +114,18 @@
     "khóa mới",
     "liên tục"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Khi Quốc hội hết nhiệm kỳ, Chính phủ tiếp tục làm nhiệm vụ cho đến khi Quốc hội khoá mới thành lập Chính phủ.",
+   "answer": true,
+   "explain": "Đúng. Điều 97 Hiến pháp 2013 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 97 Hiến pháp 2013",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+   }
   }
  ]
 }

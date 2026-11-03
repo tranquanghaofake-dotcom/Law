@@ -47,10 +47,10 @@
    "level": 1,
    "q": "Bản Hiến pháp nào lần đầu sử dụng thuật ngữ \"quyền con người\"?",
    "options": [
-    "Hiến pháp 1992 (Điều 50)",
-    "Hiến pháp 1946 của nước ta",
-    "Hiến pháp 1959 của nước ta",
-    "Hiến pháp 1980 của nước ta"
+    "Hiến pháp năm 1992 (Điều 50)",
+    "Hiến pháp năm 1946 của nước ta",
+    "Hiến pháp năm 1959 của nước ta",
+    "Hiến pháp năm 1980 của nước ta"
    ],
    "answer": 0,
    "explain": "Điều 50 Hiến pháp 1992; Hiến pháp 2013 phát triển thành Chương II \"Quyền con người, quyền và nghĩa vụ cơ bản của công dân\".",
@@ -117,6 +117,18 @@
     "quyền con người",
     "2001"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Nhà nước Cộng hoà xã hội chủ nghĩa Việt Nam là Nhà nước của nhân dân, do nhân dân, vì nhân dân – theo Điều 2 Hiến pháp 1992.",
+   "answer": true,
+   "explain": "Đúng. Điều 2 Hiến pháp 1992 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 2 Hiến pháp 1992",
+    "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Hien-phap-1992-cong-hoa-xa-hoi-chu-nghia-Viet-nam-38238.aspx"
+   }
   }
  ]
 }

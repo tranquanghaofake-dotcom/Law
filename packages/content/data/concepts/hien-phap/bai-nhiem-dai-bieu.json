@@ -123,6 +123,18 @@
    "statement": "Việc bãi nhiệm đại biểu Quốc hội phải được ít nhất một nửa tổng số đại biểu Quốc hội tán thành.",
    "answer": false,
    "explain": "Sai. Khoản 1 Điều 85 Hiến pháp 2013: phải được ít nhất hai phần ba tổng số đại biểu Quốc hội biểu quyết tán thành. (Nhận định trong bộ câu hỏi ôn tập Luật Hiến pháp, Drive HLU.)"
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Đại biểu Quốc hội, đại biểu Hội đồng nhân dân bị cử tri hoặc Quốc hội, Hội đồng nhân dân bãi nhiệm khi không còn xứng đáng với sự tín nhiệm của Nhân dân.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 7 Hiến pháp 2013 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 7 Hiến pháp 2013",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+   }
   }
  ]
 }
