@@ -82,6 +82,17 @@ test('danh mục khái niệm: tìm không dấu, mở xem định nghĩa, ★ g
   await page.locator('.entry-toggle', { hasText: 'Chủ quyền Nhân dân' }).click();
   await expect(page.locator('.concept-entry.open .quote')).toBeVisible();
   await page.getByRole('button', { name: /Đánh dấu/ }).first().click();
+  // ★ đổi giao diện ngay, còn lượt ghi IndexedDB chạy sau: chờ ghi xong rồi mới tải lại (tránh chập chờn trên CI).
+  await expect.poll(() => page.evaluate(() => new Promise<number>((resolve) => {
+    const req = indexedDB.open('luyen-luat');
+    req.onsuccess = () => {
+      const db = req.result;
+      const get = db.transaction('settings').objectStore('settings').get('starred');
+      get.onsuccess = () => { resolve(Array.isArray(get.result?.value) ? get.result.value.length : 0); db.close(); };
+      get.onerror = () => { resolve(0); db.close(); };
+    };
+    req.onerror = () => resolve(0);
+  }))).toBe(1);
   await page.reload();
   await page.getByRole('button', { name: /Đã đánh dấu \(1\)/ }).click();
   await expect(page.locator('.concept-entry')).toHaveCount(1);
