@@ -219,8 +219,19 @@ export function genSort(c: Concept, scope: Concept[], rng: () => number): SortIt
       }
     }
     const room = Math.max(0, LIMITS.sortCases - own.length);
-    const cases = [...own, ...shuffle(extra, rng).slice(0, room)];
+    let cases = [...own, ...shuffle(extra, rng).slice(0, room)];
     if (cases.length < 4 || !cases.some((x) => x.answer === 'left') || !cases.some((x) => x.answer === 'right')) continue;
+    // Tình huống gộp từ nhiều khái niệm: tình huống ngắn kiểu "Thời hạn 10 năm" mất ngữ cảnh → ghi kèm tên khái niệm gốc
+    // (trừ khi tên đó chứa một nhãn — lộ đáp án; và trừ `example`, vốn là tình huống trọn vẹn).
+    if (new Set(cases.map((x) => x.conceptId)).size > 1) {
+      const termOf = new Map([c, ...scope].map((x) => [x.id, x.term]));
+      const examples = new Set([c, ...scope].map((x) => normalize(x.example)));
+      cases = cases.map((x) => {
+        const t = termOf.get(x.conceptId!);
+        if (!t || examples.has(normalize(x.text)) || leaks(t, p.left) || leaks(t, p.right)) return x;
+        return { ...x, text: `${t} — ${x.text}` };
+      });
+    }
     return { type: 'sort', level: 2, left: p.left, right: p.right, cases: shuffle(cases, rng), explain: explains.join(' ') };
   }
   return null;

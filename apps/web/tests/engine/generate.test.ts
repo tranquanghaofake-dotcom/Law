@@ -116,7 +116,10 @@ describe('genSort', () => {
     expect(s.type).toBe('sort');
     expect(s.cases.length).toBeGreaterThanOrEqual(4);
     expect(s.cases.length).toBeLessThanOrEqual(6);
-    const byText = Object.fromEntries(s.cases.map((x) => [x.text, x.answer]));
+    const byText = Object.fromEntries(s.cases.map((x) => [x.text.split(' — ').pop()!, x.answer]));
+    const t5 = s.cases.find((x) => x.text.endsWith('t5'));
+    if (t5) expect(t5.text).toBe('Chế định c — t5'); // gộp từ khái niệm khác: ghi kèm tên khái niệm gốc
+    expect(s.cases.find((x) => x.text.endsWith('t1'))!.text).toBe('t1'); // tên "Cổ phiếu" chính là nhãn → không ghi kèm
     expect(byText).toMatchObject({ t1: 'left', t2: 'right' }); // tình huống của chính khái niệm luôn giữ
     const expected: Record<string, string> = { t3: 'right', t4: 'left', t5: 'left', [a.example]: 'left', [b.example]: 'right' };
     for (const [t, ans] of Object.entries(byText)) if (t in expected) expect(ans).toBe(expected[t]);
