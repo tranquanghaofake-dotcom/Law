@@ -2,7 +2,8 @@ import { describe, expect, it } from 'vitest';
 import type { Subject } from '$lib/content/types';
 import type { BookLevel, BookRec } from '$lib/game/books';
 import { SHELVES, orderedSubjects } from '$lib/ui/shelves';
-import { bookcaseRows, spineSize, SPINE_W, SPINE_H } from '$lib/ui/bookcase';
+import { bookcaseRows, spineColor, spineFont, spineSize, SPINE_W, SPINE_H } from '$lib/ui/bookcase';
+import { coverFor } from '$lib/art/covers';
 
 // 23 môn thật (số chương / số khái niệm lấy từ nội dung hiện có)
 const REAL: Record<string, [number, number]> = {
@@ -37,7 +38,7 @@ describe('chia tầng tủ sách (bookcaseRows)', () => {
     const rows = bookcaseRows(subjects(), []);
     const bays = rows.flatMap((r) => r.bays);
     expect(bays.map((b) => b.shelfId)).toEqual(SHELVES.map((s) => s.id));
-    for (const b of bays) { const s = SHELVES.find((x) => x.id === b.shelfId)!; expect(b.name).toBe(s.name); expect(b.color).toBe(s.color); expect(b.books.every((x) => x.color === s.color)).toBe(true); }
+    for (const b of bays) { const s = SHELVES.find((x) => x.id === b.shelfId)!; expect(b.name).toBe(s.name); expect(b.color).toBe(s.color); }
   });
   it('cân độ rộng: tầng rộng nhất sát kệ rộng nhất (không thể hẹp hơn nhiều); tổng độ rộng = tổng các gáy', () => {
     const rows = bookcaseRows(subjects(), []);
@@ -79,5 +80,29 @@ describe('chia tầng tủ sách (bookcaseRows)', () => {
     expect(hienPhap).toMatchObject({ got: 1, total: 12, needsReview: true });
     const empty = allRows(bookcaseRows(subs, []));
     expect(empty.every((b) => b.lit === 0 && b.got === 0)).toBe(true);
+  });
+});
+
+const sat = (hex: string) => { const [r, g, b] = [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16) / 255); const mx = Math.max(r, g, b), mn = Math.min(r, g, b); const l = (mx + mn) / 2; return mx === mn ? 0 : (mx - mn) / (1 - Math.abs(2 * l - 1)); };
+
+describe('màu và chữ gáy (khớp bìa sách thật)', () => {
+  it('gáy lấy màu thân bìa của môn, độ bão hoà ≥ .6, mỗi môn một màu riêng theo bìa', () => {
+    const books = allRows(bookcaseRows(subjects(), []));
+    for (const b of books) { const s = sat(b.color); expect(s < 0.05 || s >= 0.59, b.id).toBe(true); } // bìa xám thật (Hình sự) giữ trung tính
+    const hp = books.find((b) => b.id === 'hien-phap')!;
+    expect(hp.color).toBe(spineColor(coverFor('hien-phap', 'Luật ' + 'hien-phap', '#9E2A22').palette.body));
+    expect(hp.color).not.toBe(books.find((b) => b.id === 'ly-luan-nn-pl')!.color);
+  });
+  it('spineColor: nâng bão hoà, giữ sắc độ; màu đã đủ bão hoà hoặc xám thì giữ nguyên', () => {
+    expect(spineColor('#808080')).toBe('#808080');
+    expect(spineColor('#0B2468')).toBe('#0b2468');
+    expect(sat(spineColor('#44505C'))).toBeGreaterThanOrEqual(0.59);
+  });
+  it('spineFont: tên ngắn dùng cỡ tối đa, tên dài co nhỏ nhưng không dưới 6 — luôn giữ nguyên chữ (không cắt)', () => {
+    expect(spineFont('Hiến', 100)).toBe(8.5);
+    const long = spineFont('Lý luận NN&PL', 64);
+    expect(long).toBeLessThan(8.5);
+    expect(long).toBeGreaterThanOrEqual(6);
+    expect(spineFont('x'.repeat(40), 64)).toBe(6);
   });
 });

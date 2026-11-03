@@ -1,7 +1,7 @@
 <script lang="ts">
-  // Thẻ hồ sơ mini ở đáy sidebar: chuỗi (thẻ chuyên cần viền lửa theo màu chu kỳ), chức danh có ấn, tiến độ tới chức kế tiếp.
+  // Thẻ hồ sơ mini ở đáy sidebar: chuỗi (huy hiệu ngọn lửa theo màu chu kỳ), chức danh có ấn, tiến độ tới chức kế tiếp.
   // Cả khối là liên kết tới Hồ sơ. Số liệu chuỗi lấy từ streakView — cùng nguồn với rail Hôm nay và topbar.
-  import StreakCard from '$lib/art/StreakCard.svelte';
+  import StreakBadge from '$lib/art/StreakBadge.svelte';
   import { careerState, displayTitle } from '$lib/game/career';
   import { header } from './header.svelte';
   import { shelf } from './shelf.svelte';
@@ -16,7 +16,7 @@
 
 <a class="me" class:cold={sv.count === 0} href="#/toi" style="--fire:{sv.flame}; --glow:{sv.glow}">
   <span class="me-streak">
-    <span class="fire-ring"><StreakCard count={header.streak} longest={header.longest} size="mini" /></span>
+    <span class="me-badge"><StreakBadge count={header.streak} longest={header.longest} size={44} /></span>
     <span class="me-days"><b><span class="sr-only">Chuỗi </span>{sv.count}</b><span class="me-unit">ngày</span><span class="me-tier">{sv.label}</span></span>
   </span>
   <span class="me-rank"><span class="seal" aria-hidden="true">§</span><span class="me-title">{title.title}</span></span>

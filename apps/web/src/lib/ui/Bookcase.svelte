@@ -5,7 +5,7 @@
   import BookSpine from '$lib/art/BookSpine.svelte';
   import { LEVEL_LABEL, type BookRec } from '$lib/game/books';
   import { shelf, refreshShelf } from './shelf.svelte';
-  import { bookcaseRows, type CaseBook } from './bookcase';
+  import { bookcaseRows, spineFont, type CaseBook } from './bookcase';
   import Sheet from './Sheet.svelte';
 
   if (!shelf.ready) refreshShelf();
@@ -29,14 +29,14 @@
     <div class="bk-body">
       {#each rows as r, ri (ri)}
         {@const tall = Math.max(...r.bays.flatMap((b) => b.books.map((x) => x.h)))}
-        <div class="bk-tier" style="--tier-h:{tall + 16}px">
+        <div class="bk-tier" style="--tier-h:{tall + 8}px">
           {#each r.bays as bay (bay.shelfId)}
             <div class="bk-bay" style="flex-grow:{bay.width}">
               <ul class="bk-books" aria-label="Kệ {bay.name}">
                 {#each bay.books as b (b.id)}
                   <li>
                     <button type="button" class="bk-spine" class:full={b.lit === 1} aria-haspopup="dialog" aria-label={name(b)} onclick={() => pick(b)}
-                      style="--c:{b.color};--w:{b.w}px;--h:{b.h}px;--lit:{b.lit}">
+                      style="--c:{b.color};--w:{b.w}px;--h:{b.h}px;--lit:{b.lit};--fs:{spineFont(b.short, b.h)}">
                       <span class="bk-name" aria-hidden="true">{b.short}</span>
                       <span class="bk-ribbon" aria-hidden="true"></span>
                       {#if b.needsReview}<span class="bk-dot" aria-hidden="true"></span>{/if}

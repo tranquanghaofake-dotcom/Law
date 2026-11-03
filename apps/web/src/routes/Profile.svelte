@@ -1,5 +1,6 @@
 <script lang="ts">
   import StreakCard from '$lib/art/StreakCard.svelte';
+  import StreakBadge from '$lib/art/StreakBadge.svelte';
   import Bookcase from '$lib/ui/Bookcase.svelte';
   import CareerPanel from '$lib/ui/CareerPanel.svelte';
   import OrgChart from '$lib/ui/OrgChart.svelte';
@@ -140,12 +141,12 @@
   {#if !onSettings}
     <div class="idc-stats">
       <div class="idc-stat idc-streak">
-        <StreakCard count={streak.count} longest={streak.longest} size="mini" />
-        <p><b>{streak.count}</b> ngày<span class="muted small">chuỗi · {xp} XP</span></p>
+        <StreakBadge count={streak.count} longest={streak.longest} size={36} />
+        <p><b>{streak.count} ngày</b><span class="muted small">chuỗi · {xp} XP</span></p>
       </div>
       <div class="idc-stat">
         <svg class="idc-bookico" viewBox="0 0 24 24" width="30" height="30" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7c-2.6-1.8-5.6-2.2-9-1.4V19c3.4-.8 6.4-.4 9 1.4c2.6-1.8 5.6-2.2 9-1.4V5.6c-3.4-.8-6.4-.4-9 1.4zM12 7v13.4" /></svg>
-        <p><b>{earned}</b>/{shelf.books.length} sách<span class="muted small">đã nhận</span></p>
+        <p><b>{earned}<span class="idc-of">/{shelf.books.length} sách</span></b><span class="muted small">đã nhận</span></p>
       </div>
     </div>
     <div class="idc-next">
@@ -212,8 +213,8 @@
                 {:else}
                   <p class="muted small">Tiến độ lưu trong trình duyệt này. Xuất file để chuyển máy hoặc lưu dự phòng.</p>
                   <div class="row">
-                    <button class="btn ghost" type="button" onclick={exportData}>Xuất dữ liệu</button>
-                    <label class="btn ghost">Nhập dữ liệu<input type="file" accept="application/json" class="sr-only" onchange={importData} /></label>
+                    <button class="btn ghost plain" type="button" onclick={exportData}>Xuất dữ liệu</button>
+                    <label class="btn ghost plain">Nhập dữ liệu<input type="file" accept="application/json" class="sr-only" onchange={importData} /></label>
                   </div>
                   {#if msg}<p role="status">{msg}</p>{/if}
                   {#if !storage.available}<p class="muted">⚠ Trình duyệt đang chặn lưu trữ: tiến độ sẽ mất khi đóng tab.</p>{/if}

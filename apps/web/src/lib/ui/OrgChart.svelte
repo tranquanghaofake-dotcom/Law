@@ -21,8 +21,9 @@
 
   let scroller = $state<HTMLDivElement | null>(null);
   let scrollable = $state(false);
+  let hint = $state(false); // chỉ nhắc "cuộn ngang" khi tràn đáng kể (> 24 px)
   let atEnd = $state(false);
-  const measure = () => { if (!scroller) return; scrollable = scroller.scrollWidth > scroller.clientWidth + 1; atEnd = scroller.scrollLeft + scroller.clientWidth >= scroller.scrollWidth - 2; };
+  const measure = () => { if (!scroller) return; scrollable = scroller.scrollWidth > scroller.clientWidth + 1; hint = scroller.scrollWidth - scroller.clientWidth > 24; atEnd = scroller.scrollLeft + scroller.clientWidth >= scroller.scrollWidth - 2; };
   $effect(() => {
     if (!scroller || typeof ResizeObserver === 'undefined') return;
     const el = scroller;
@@ -49,7 +50,7 @@
     <li><span class="org-key" data-status="done" aria-hidden="true"></span>Đã đạt</li>
     <li><span class="org-key" data-status="next" aria-hidden="true"></span>Kế tiếp</li>
     <li><span class="org-key" data-status="locked" aria-hidden="true"></span>Chưa mở</li>
-    <li class="muted small org-tip">Chạm một chức để xem điều kiện sách.{#if scrollable}{' '}Cuộn ngang để xem tiếp các tầng →{/if}</li>
+    <li class="muted small org-tip">Chạm một chức để xem điều kiện sách.{#if hint}{' '}Cuộn ngang để xem tiếp các tầng →{/if}</li>
   </ul>
   <!-- vùng cuộn ngang được focus bằng bàn phím chỉ khi thật sự cuộn được -->
   <!-- svelte-ignore a11y_no_noninteractive_tabindex -->

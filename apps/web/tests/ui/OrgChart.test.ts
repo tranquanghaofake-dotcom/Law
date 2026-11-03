@@ -62,4 +62,8 @@ describe('OrgChart (cây chức vụ)', () => {
     expect(container.querySelector('dialog')!.textContent).toContain('Chưa mở');
     expect(container.querySelector('dialog')!.textContent).toContain('cần đạt trước');
   });
+  it('không nhắc "Cuộn ngang" khi cây không tràn khung (điện thoại xếp dọc)', () => {
+    const { container } = render(OrgChart);
+    expect(container.textContent).not.toContain('Cuộn ngang');
+  });
 });

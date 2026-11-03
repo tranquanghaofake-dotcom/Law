@@ -3,6 +3,7 @@
 // Không tách một kệ nhóm ngành sang hai tầng; mỗi tầng 1–2 kệ; cân độ rộng bằng quy hoạch động (tầng rộng nhất nhỏ nhất).
 import type { Subject } from '$lib/content/types';
 import type { BookRec } from '$lib/game/books';
+import { coverFor } from '$lib/art/covers';
 import { orderedSubjects, shelfOf, type Shelf } from './shelves';
 
 /** Khoảng dày/cao của gáy (px thiết kế). */
@@ -17,6 +18,26 @@ const clamp = (n: number, [lo, hi]: readonly [number, number]) => Math.min(hi, M
 /** Kích thước gáy: dày theo số khái niệm, cao theo số chương. */
 export function spineSize(chapters: number, concepts: number): { w: number; h: number } {
   return { w: Math.round(clamp(20 + concepts * 0.17, SPINE_W)), h: Math.round(clamp(50 + chapters * 3.8, SPINE_H)) };
+}
+
+/** Nâng độ bão hoà (HSL) của màu thân bìa lên ≥ `min` để gáy trên kệ không bị xám; màu gần trung tính (s < .05) giữ nguyên. */
+export function spineColor(hex: string, min = 0.6): string {
+  const [r, g, b] = [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16) / 255);
+  const mx = Math.max(r, g, b), mn = Math.min(r, g, b), l = (mx + mn) / 2, d = mx - mn;
+  if (d === 0) return hex.toLowerCase();
+  let sat = d / (1 - Math.abs(2 * l - 1));
+  if (sat < 0.05 || sat >= min) return hex.toLowerCase();
+  sat = min;
+  const h = mx === r ? ((g - b) / d + (g < b ? 6 : 0)) : mx === g ? (b - r) / d + 2 : (r - g) / d + 4;
+  const c = (1 - Math.abs(2 * l - 1)) * sat, x = c * (1 - Math.abs((h % 2) - 1)), m = l - c / 2;
+  const [r1, g1, b1] = [[c, x, 0], [x, c, 0], [0, c, x], [0, x, c], [x, 0, c], [c, 0, x]][Math.floor(h) % 6];
+  return '#' + [r1, g1, b1].map((v) => Math.round((v + m) * 255).toString(16).padStart(2, '0')).join('');
+}
+
+/** Cỡ chữ gáy (px thiết kế) để cả tên viết tắt nằm vừa chiều cao gáy (khoảng 74% chiều cao, mỗi ký tự ≈ 0,62 cỡ chữ); không nhỏ hơn 6. */
+export function spineFont(short: string, h: number): number {
+  const fit = (h * 0.74) / (Math.max(1, short.length) * 0.62);
+  return Math.round(Math.max(6, Math.min(8.5, fit)) * 10) / 10;
 }
 
 export type CaseBook = {
@@ -63,7 +84,7 @@ export function bookcaseRows(subjects: readonly Subject[], books: readonly BookR
     const concepts = s.chapters.reduce((n, c) => n + c.lessons.reduce((m, l) => m + l.concepts.length, 0), 0);
     const got = mine.filter((b) => b.level > 0).length;
     return {
-      id: s.id, title: s.title, short: s.short, href: `#/mon/${s.id}`, color: shelf.color, total, concepts, ...spineSize(total, concepts),
+      id: s.id, title: s.title, short: s.short, href: `#/mon/${s.id}`, color: spineColor(coverFor(s.id, s.title, shelf.color).palette.body), total, concepts, ...spineSize(total, concepts),
       got, level3: mine.filter((b) => b.level === 3).length, needsReview: mine.some((b) => b.needsReview), lit: total > 0 ? Math.min(1, got / total) : 0,
     };
   };
