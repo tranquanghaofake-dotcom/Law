@@ -1,5 +1,6 @@
 import type { Level } from '$lib/content/types';
 import { isDue, newCard, ratingFor, review } from '$lib/engine/fsrs';
+import { isConfidence, isHypercorrection, type Confidence } from '$lib/engine/confidence';
 import { nextLevel } from '$lib/engine/progress';
 import { LuyenLuatDB, type ConceptProgress, type ReviewRow } from './db';
 import { storage } from './status.svelte';
@@ -7,7 +8,8 @@ import { localDay } from '$lib/game/streak';
 
 export type { ConceptProgress };
 
-export type RecordInput = { conceptId: string; subject: string; correct: boolean; elapsedMs: number; now: Date; retention?: number };
+/** (đợt 7) `conf` tuỳ chọn: độ tự tin trước khi xem đáp án (đề xuất ①). Không có → như cũ. */
+export type RecordInput = { conceptId: string; subject: string; correct: boolean; elapsedMs: number; now: Date; retention?: number; conf?: Confidence };
 
 export type ProgressRepo = {
   available: boolean;
@@ -16,6 +18,10 @@ export type ProgressRepo = {
   record(p: RecordInput): Promise<ConceptProgress>;
   due(now: Date, subject?: string): Promise<ConceptProgress[]>;
   difficult(): Promise<ConceptProgress[]>;
+  /** (đợt 7) Khái niệm có lỗi "chắc mà sai" chưa sửa (`hyperAt`), mới nhất trước. */
+  hypercorrections(): Promise<ConceptProgress[]>;
+  /** (đợt 7) Log ôn từ `since` (để tính độ chuẩn tự đánh giá, xem `calibration`). */
+  reviewsSince(since: Date): Promise<ReviewRow[]>;
   all(subject?: string): Promise<ConceptProgress[]>;
   reviewCount(): Promise<number>;
   /** Ngày (YYYY-MM-DD giờ địa phương) có ít nhất một lượt trả lời từ `since`. */
@@ -34,8 +40,11 @@ type Store = {
 function applyRecord(prev: ConceptProgress | undefined, p: RecordInput): { next: ConceptProgress; row: ReviewRow } {
   const level: Level = prev?.level ?? 0;
   const card = prev?.card ?? newCard(p.now);
-  const rating = ratingFor(p.correct, p.elapsedMs, level);
+  const conf = isConfidence(p.conf) ? p.conf : undefined;
+  const rating = ratingFor(p.correct, p.elapsedMs, level, conf);
   const r = review(card, rating, p.now, p.retention ?? 0.9);
+  // "chắc mà sai" → đánh dấu; trả lời đúng mà không phải đoán → coi như đã sửa; còn lại giữ nguyên dấu cũ.
+  const hyperAt = isHypercorrection(p.correct, conf) ? p.now.getTime() : p.correct && conf !== 'doan' ? undefined : prev?.hyperAt;
   const next: ConceptProgress = {
     conceptId: p.conceptId,
     subject: p.subject,
@@ -43,10 +52,13 @@ function applyRecord(prev: ConceptProgress | undefined, p: RecordInput): { next:
     card: r.card,
     wrongStreak: p.correct ? 0 : (prev?.wrongStreak ?? 0) + 1,
     updatedAt: p.now.getTime(),
+    ...(hyperAt !== undefined ? { hyperAt } : {}),
   };
-  const row: ReviewRow = { conceptId: p.conceptId, rating, level, elapsedMs: p.elapsedMs, at: p.now.getTime() };
+  const row: ReviewRow = { conceptId: p.conceptId, rating, level, elapsedMs: p.elapsedMs, at: p.now.getTime(), ...(conf ? { conf } : {}) };
   return { next, row };
 }
+
+const byHyper = (rows: ConceptProgress[]) => rows.filter((c) => typeof c.hyperAt === 'number').sort((a, b) => b.hyperAt! - a.hyperAt!);
 
 type ExportFile = { v: number; concepts?: ConceptProgress[]; reviews?: ReviewRow[]; stats?: { key: string; value: unknown }[]; settings?: { key: string; value: unknown }[] };
 
@@ -76,6 +88,8 @@ function memoryRepo(): ProgressRepo {
     },
     async due(now, subject) { return list(subject).filter((c) => isDue(c.card, now)); },
     async difficult() { return list().filter((c) => c.wrongStreak >= 3); },
+    async hypercorrections() { return byHyper(list()); },
+    async reviewsSince(since) { return s.reviews.filter((r) => r.at >= since.getTime()); },
     async all(subject) { return list(subject); },
     async reviewCount() { return s.reviews.length; },
     async reviewDays(since) { return new Set(s.reviews.filter((r) => r.at >= since.getTime()).map((r) => localDay(new Date(r.at)))); },
@@ -110,6 +124,8 @@ function dexieRepo(db: LuyenLuatDB): ProgressRepo {
       return rows.filter((c) => isDue(c.card, now));
     },
     async difficult() { return (await db.concepts.toArray()).filter((c) => c.wrongStreak >= 3); },
+    async hypercorrections() { return byHyper(await db.concepts.toArray()); },
+    async reviewsSince(since) { return db.reviews.where('at').aboveOrEqual(since.getTime()).toArray(); },
     async all(subject) { return subject ? db.concepts.where('subject').equals(subject).toArray() : db.concepts.toArray(); },
     async reviewCount() { return db.reviews.count(); },
     async reviewDays(since) { return new Set((await db.reviews.where('at').aboveOrEqual(since.getTime()).toArray()).map((r) => localDay(new Date(r.at)))); },
@@ -158,6 +174,8 @@ export function createRepo(name = 'luyen-luat'): ProgressRepo {
       record: (p) => guard(() => target.record(p)),
       due: (n, s) => guard(() => target.due(n, s)),
       difficult: () => guard(() => target.difficult()),
+      hypercorrections: () => guard(() => target.hypercorrections()),
+      reviewsSince: (d) => guard(() => target.reviewsSince(d)),
       all: (s) => guard(() => target.all(s)),
       reviewCount: () => guard(() => target.reviewCount()),
       reviewDays: (d) => guard(() => target.reviewDays(d)),

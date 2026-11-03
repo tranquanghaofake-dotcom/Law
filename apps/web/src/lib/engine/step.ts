@@ -35,10 +35,17 @@ export type StepMeta = {
   kicker?: string;
   /** Câu vàng: XP ×2 (runner tính), giao diện làm nổi bật. */
   golden?: boolean;
-  /** 'retry' = vòng sửa sai cuối phiên: KHÔNG ghi tiến độ (repo.record), KHÔNG đổi bậc; 'boss' = câu chốt cuối phiên. */
-  kind?: 'learn' | 'retry' | 'boss';
+  /** 'retry' = vòng sửa sai cuối phiên: KHÔNG ghi tiến độ (repo.record), KHÔNG đổi bậc; 'boss' = câu chốt cuối phiên.
+   *  (đợt 7, thêm) 'pretest' = đoán trước khi học khái niệm mới: KHÔNG ghi tiến độ, KHÔNG đổi bậc, không XP, không combo,
+   *  không vào vòng sửa sai, có thể "Bỏ qua" (trả lời sai cũng không sao). Xem `recordsProgress`. */
+  kind?: 'learn' | 'retry' | 'boss' | 'pretest';
   /** (đợt 6, thêm) Bước retry: chỉ số của bước gốc trong `steps` (để giao diện ghi "Sửa câu …"). */
   retryOf?: number;
 };
 
 export type Step = { conceptId: string; item: StepItem; level: Level; meta?: StepMeta };
+
+/** (đợt 7) Bước có ghi tiến độ (repo.record) và đổi bậc không: không với intro, vòng sửa sai, đoán trước. */
+export function recordsProgress(step: Step): boolean {
+  return step.item.type !== 'intro' && step.meta?.kind !== 'retry' && step.meta?.kind !== 'pretest';
+}

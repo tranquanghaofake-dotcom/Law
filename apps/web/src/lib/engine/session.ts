@@ -1,8 +1,9 @@
 import type { Concept, Item, Level } from '$lib/content/types';
-import { interleave, typeKey } from './arrange';
+import { interleave, nearConfusables, typeKey } from './arrange';
 import { candidates, genDefTerm, genDefTrueFalse, genExampleConcept, genMatch, genSort, genTermDef, type Cand, type GenContext } from './generate';
 import type { Step, StepGen, StepItem, StepMeta } from './step';
 import { leaks } from './text';
+import { normalize } from './grading';
 import { REVIEW_MAX_STEPS } from './limits';
 
 export type { IntroItem, Step, StepItem, StepMeta, GenItem, MatchItem, SortItem } from './step';
@@ -275,8 +276,13 @@ function stepLevel(stage: Level, current: Level): Level {
  * không hai bước liền cùng khái niệm. Cuối phiên: câu chốt; ~1/8 câu vàng.
  * `ctx` (tùy chọn): khái niệm dễ nhầm/cùng chương + bảng tên để sinh phương án nhiễu.
  */
-export function buildLearnSession(concepts: Concept[], levels: Record<string, Level>, rng: () => number, ctx: GenContext = {}): Step[] {
+export function buildLearnSession(concepts: Concept[], levels: Record<string, Level>, rng: () => number, ctx: GenContext = {}, opts: { pretest?: number } = {}): Step[] {
   const pass = passFor(Object.fromEntries(concepts.map((c) => [c.id, levels[c.id] ?? 0])));
+  // (đợt 7) Đoán trước chỉ ở pass 1 (có khái niệm mới), đặt đầu phiên, trước thẻ giới thiệu; mặc định tắt.
+  if (pass === 1 && (opts.pretest ?? 0) > 0) {
+    const pre = buildPretest(concepts, levels, rng, ctx, opts.pretest);
+    return [...pre, ...buildLearnSession(concepts, levels, rng, ctx)];
+  }
   const picker = new Picker(concepts, ctx, rng);
   const cur = (c: Concept) => (levels[c.id] ?? 0) as Level;
   if (pass === 1) {
@@ -302,11 +308,100 @@ export { REVIEW_MAX_STEPS };
 
 /** Ôn: mỗi khái niệm 1 bước ở bậc hiện tại (bậc 6 → dạng nhớ chủ động 3–5), tối đa `max`, xen dạng, có câu chốt + câu vàng. */
 export function buildReviewSession(concepts: Concept[], levels: Record<string, Level>, rng: () => number, max = REVIEW_MAX_STEPS, ctx: GenContext = {}): Step[] {
-  const chosen = shuffle(concepts, rng).slice(0, max);
+  // (đợt 7, đề xuất ⑤) giữ cặp dễ nhầm cùng vào phiên, rồi đặt chúng cách nhau 1–3 câu.
+  const chosen = pickReviewConcepts(shuffle(concepts, rng), max);
   const picker = new Picker(chosen, ctx, rng);
   const queues = chosen.map((c) => {
     const lv = (levels[c.id] ?? 1) as Level;
     return [picker.pick(c, lv < 1 ? 1 : lv)];
   });
-  return finalize(interleave(queues, { rng }), rng);
+  return arrangeConfusables(finalize(interleave(queues, { rng }), rng), chosen);
+}
+
+// ---------- Đợt 7: xen kẽ cặp dễ nhầm (⑤), đoán trước + thẻ giới thiệu ba lớp (③) ----------
+
+const keyOf = (c: Pick<Concept, 'subject' | 'id'>) => `${c.subject}/${c.id}`;
+
+/** Hai khái niệm (cùng môn) dễ nhầm theo `confusables` (một chiều là đủ). */
+export function confusablePair(a: Concept, b: Concept): boolean {
+  return a.subject === b.subject && a.id !== b.id && (a.confusables.includes(b.id) || b.confusables.includes(a.id));
+}
+
+/**
+ * Chọn tối đa `max` khái niệm theo thứ tự `ordered`, nhưng khi lấy một khái niệm thì kéo luôn các khái niệm dễ nhầm
+ * với nó (cũng đang trong danh sách) vào ngay sau — để cặp dễ nhầm cùng được ôn trong một phiên.
+ */
+export function pickReviewConcepts(ordered: Concept[], max: number): Concept[] {
+  const out: Concept[] = [];
+  const has = new Set<string>();
+  const add = (c: Concept) => { if (out.length < max && !has.has(keyOf(c))) { out.push(c); has.add(keyOf(c)); } };
+  for (const c of ordered) {
+    if (out.length >= max) break;
+    add(c);
+    for (const d of ordered) if (confusablePair(c, d)) add(d);
+  }
+  return out;
+}
+
+/** Chữ người học thấy trên bước (để kiểm bước trước có lộ tên khái niệm bước sau không). */
+export function stepText(item: StepItem): string {
+  switch (item.type) {
+    case 'mcq': case 'case': return [item.q, ...item.options, item.explain].join(' ');
+    case 'truefalse': return `${item.statement} ${item.explain}`;
+    case 'cloze': return item.text;
+    case 'recall': return item.q;
+    case 'pair': case 'sort': return [item.left, item.right, ...item.cases.map((x) => x.text), item.explain].join(' ');
+    case 'match': return item.pairs.map((p) => `${p.term} ${p.text}`).join(' ');
+    default: return '';
+  }
+}
+
+/** Xếp các bước để cặp dễ nhầm cách nhau 1–3 câu, không đặt ngay sau bước vừa hiện tên khái niệm đó. */
+export function arrangeConfusables(steps: Step[], concepts: Concept[]): Step[] {
+  const by = new Map(concepts.map((c) => [c.id, c]));
+  return nearConfusables(
+    steps,
+    (a, b) => { const x = by.get(a), y = by.get(b); return !!x && !!y && confusablePair(x, y); },
+    (from, to) => { const c = by.get(to); return !!c && leaks(stepText(from.item), c.term); },
+  );
+}
+
+/** Số câu đoán trước tối đa mỗi đợt (spec: 1–2, có "Bỏ qua"). */
+export const PRETEST_MAX = 2;
+
+/**
+ * (đề xuất ③a) Câu đoán trước cho khái niệm MỚI (bậc 0) của đợt: "ví dụ → khái niệm nào?", phương án ưu tiên các khái niệm
+ * cùng đợt. `meta.kind = 'pretest'`: không ghi tiến độ, không đổi bậc, không XP (xem `recordsProgress`, runner).
+ */
+export function buildPretest(concepts: Concept[], levels: Record<string, Level>, rng: () => number, ctx: GenContext = {}, max = PRETEST_MAX): Step[] {
+  const known = [...concepts, ...(ctx.pool ?? [])];
+  const out: Step[] = [];
+  for (const c of shuffle(concepts, rng)) {
+    if (out.length >= max) break;
+    if ((levels[c.id] ?? 0) !== 0) continue;
+    const mates = concepts.filter((x) => x.id !== c.id);
+    // phương án: khái niệm cùng đợt trước (người học sắp gặp), thiếu thì bù khái niệm dễ nhầm/cùng chương
+    const item = genExampleConcept(c, candidates(c, mates, undefined, rng), rng) ?? genExampleConcept(c, candidates(c, known, ctx.terms, rng), rng);
+    if (!item) continue;
+    out.push({ conceptId: c.id, item, level: 1, meta: { kind: 'pretest', gen: 'example-concept', kicker: 'Đoán trước' } });
+  }
+  return out;
+}
+
+export type IntroLayers = {
+  /** Lớp 1: ví dụ cụ thể (`example`). */
+  example: string;
+  /** Lớp 2: 3–4 dấu hiệu (`keywords`); `verbatim` = cụm có nguyên văn trong định nghĩa (được in như trích dẫn), không thì chỉ là chú thích. */
+  cues: { text: string; verbatim: boolean }[];
+  /** Lớp 3 (mở khi bấm "Xem nguyên văn"): định nghĩa + nguồn. */
+  definition: string;
+  source: Concept['source'];
+  plain: string;
+};
+
+/** (đề xuất ③b) Nội dung thẻ giới thiệu theo thứ tự ví dụ → dấu hiệu → nguyên văn. Chỉ dùng trường đã kiểm. */
+export function introLayers(c: Concept, maxCues = 4): IntroLayers {
+  const def = ` ${normalize(c.definition)} `;
+  const cues = c.keywords.slice(0, maxCues).map((k) => ({ text: k, verbatim: def.includes(` ${normalize(k)} `) }));
+  return { example: c.example, cues, definition: c.definition, source: c.source, plain: c.plain };
 }

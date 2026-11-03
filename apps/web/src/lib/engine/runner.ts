@@ -3,6 +3,7 @@ import { xpBreakdown, type XpParts } from '$lib/game/xp';
 import type { AnswerResult } from '$lib/ui/cards/types';
 import { nextLevel } from './progress';
 import { spreadByConcept } from './arrange';
+import { isConfidence, isHypercorrection, type Confidence } from './confidence';
 import type { Step } from './session';
 
 export type StepResult = {
@@ -13,6 +14,11 @@ export type StepResult = {
   /** Bước thuộc vòng sửa sai (không tính điểm phiên, không đổi bậc). */
   retry?: boolean;
   golden?: boolean;
+  /** (đợt 7) Bước đoán trước: không đổi bậc, không XP, không combo, không tính điểm phiên, không vào vòng sửa sai. */
+  pretest?: boolean;
+  /** (đợt 7) Độ tự tin đã chọn và cờ "chắc mà sai". */
+  conf?: Confidence;
+  hyper?: boolean;
 };
 export type RunnerState = {
   steps: Step[];
@@ -37,6 +43,9 @@ const addParts = (a: XpParts, b: XpParts): XpParts => ({
 
 const isIntro = (st: Step | undefined): boolean => st?.item.type === 'intro';
 const isRetry = (st: Step | undefined): boolean => st?.meta?.kind === 'retry';
+const isPretest = (st: Step | undefined): boolean => st?.meta?.kind === 'pretest';
+/** Bước không tính vào lượt chính (điểm phiên, vòng sửa sai). */
+const offMain = (st: Step | undefined): boolean => isIntro(st) || isRetry(st) || isPretest(st);
 
 export function createRunner(steps: Step[], levels: Record<string, Level>): RunnerState {
   return { steps, i: 0, combo: 0, bestCombo: 0, xp: 0, xpParts: ZERO, levels: { ...levels }, results: [], retryStart: null, done: steps.length === 0 };
@@ -52,10 +61,13 @@ export function answer(s: RunnerState, r: AnswerResult): { state: RunnerState; l
   const before = (s.levels[step.conceptId] ?? 0) as Level;
   const intro = isIntro(step);
   const retry = isRetry(step);
-  const golden = !retry && !!step.meta?.golden;
-  const after = intro || retry ? before : nextLevel(before, r.correct);
-  const parts = intro ? ZERO : xpBreakdown(r.correct, s.combo, { golden, retry });
-  const combo = intro || retry ? s.combo : r.correct ? s.combo + 1 : 0;
+  const pretest = isPretest(step);
+  const golden = !retry && !pretest && !!step.meta?.golden;
+  const after = intro || retry || pretest ? before : nextLevel(before, r.correct);
+  const parts = intro || pretest ? ZERO : xpBreakdown(r.correct, s.combo, { golden, retry });
+  const combo = intro || retry || pretest ? s.combo : r.correct ? s.combo + 1 : 0;
+  const conf = isConfidence(r.conf) ? r.conf : undefined;
+  const hyper = !intro && !pretest && isHypercorrection(r.correct, conf);
   const state: RunnerState = {
     ...s,
     combo,
@@ -63,14 +75,18 @@ export function answer(s: RunnerState, r: AnswerResult): { state: RunnerState; l
     xp: s.xp + parts.total,
     xpParts: addParts(s.xpParts, parts),
     levels: { ...s.levels, [step.conceptId]: after },
-    results: [...s.results, { conceptId: step.conceptId, correct: r.correct, levelBefore: before, levelAfter: after, retry: retry || undefined, golden: golden || undefined }],
+    results: [...s.results, {
+      conceptId: step.conceptId, correct: r.correct, levelBefore: before, levelAfter: after,
+      retry: retry || undefined, golden: golden || undefined, pretest: pretest || undefined,
+      ...(conf ? { conf } : {}), ...(hyper ? { hyper: true } : {}),
+    }],
   };
   return { state, levelUp: after > before, sfx: r.correct ? 'correct' : 'wrong', xpGained: parts.total };
 }
 
-/** Chỉ số các bước lượt chính trả lời sai (không intro, không retry). */
+/** Chỉ số các bước lượt chính trả lời sai (không intro, không retry, không đoán trước). */
 function wrongMain(s: RunnerState): number[] {
-  return s.results.flatMap((r, k) => (!r.correct && !isIntro(s.steps[k]) && !isRetry(s.steps[k]) ? [k] : []));
+  return s.results.flatMap((r, k) => (!r.correct && !offMain(s.steps[k]) ? [k] : []));
 }
 
 /** Bước hiện tại là bước cuối thật sự: sau nó không còn bước nào và không nối vòng sửa sai. Gọi sau `answer`. */
@@ -86,7 +102,9 @@ export function next(s: RunnerState): RunnerState {
   if (s.retryStart === null) {
     const wrong = wrongMain(s);
     if (wrong.length) {
-      const retries: Step[] = wrong.map((k) => {
+      // "chắc mà sai" sửa trước (đề xuất ①): đưa lên đầu vòng sửa sai, giữ thứ tự còn lại.
+      const hyperFirst = [...wrong.filter((k) => s.results[k]?.hyper), ...wrong.filter((k) => !s.results[k]?.hyper)];
+      const retries: Step[] = hyperFirst.map((k) => {
         const st = s.steps[k];
         return { ...st, meta: { ...st.meta, kind: 'retry', golden: false, retryOf: k } };
       });
@@ -110,10 +128,15 @@ export type SessionSummary = {
   retried: number;
   fixed: number;
   xpParts: XpParts;
+  /** (đợt 7) Số câu "chắc mà sai" ở lượt chính. */
+  hyper: number;
+  /** (đợt 7) Đoán trước: số câu / số câu đoán đúng (không tính vào correct/total). */
+  pretest: { total: number; correct: number };
 };
 
 export function summary(s: RunnerState): SessionSummary {
-  const scored = s.results.filter((r, k) => !isIntro(s.steps[k]) && !r.retry);
+  const scored = s.results.filter((r, k) => !offMain(s.steps[k]));
+  const pre = s.results.filter((r, k) => isPretest(s.steps[k]));
   const final = new Map<string, { from: Level; to: Level }>();
   for (const r of s.results) {
     const cur = final.get(r.conceptId);
@@ -131,6 +154,8 @@ export function summary(s: RunnerState): SessionSummary {
     retried: retries.length,
     fixed: retries.filter((r) => r.correct).length,
     xpParts: s.xpParts,
+    hyper: scored.filter((r) => r.hyper).length,
+    pretest: { total: pre.length, correct: pre.filter((r) => r.correct).length },
   };
 }
 
