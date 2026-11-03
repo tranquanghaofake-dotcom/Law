@@ -31,7 +31,7 @@
    "options": [
     "Không quá 8% giá trị phần nghĩa vụ hợp đồng bị vi phạm",
     "Không quá 8% giá trị toàn bộ hợp đồng bị vi phạm",
-    "Không quá 12% giá trị phần nghĩa vụ hợp đồng bị vi phạm",
+    "Không quá 12% giá trị phần nghĩa vụ hợp đồng vi phạm",
     "Không giới hạn mức phạt, do các bên tự thỏa thuận"
    ],
    "answer": 0,
@@ -47,7 +47,7 @@
    "q": "Phạt vi phạm được áp dụng khi nào?",
    "options": [
     "Khi trong hợp đồng có thỏa thuận (trừ trường hợp miễn trách nhiệm)",
-    "Mọi trường hợp vi phạm, kể cả khi không có thiệt hại và không có thỏa thuận",
+    "Mọi trường hợp vi phạm, kể cả khi không có thiệt hại, thỏa thuận",
     "Khi Tòa án quyết định sau khi xem xét đầy đủ hồ sơ vụ việc",
     "Khi có thiệt hại xảy ra do lỗi của bên vi phạm gây ra cho bên kia"
    ],

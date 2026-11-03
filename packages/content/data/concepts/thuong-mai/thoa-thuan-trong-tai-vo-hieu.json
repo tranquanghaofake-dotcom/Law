@@ -29,7 +29,7 @@
    "q": "Trường hợp nào thỏa thuận trọng tài vô hiệu?",
    "options": [
     "Người xác lập thỏa thuận không có thẩm quyền theo quy định của pháp luật",
-    "Hợp đồng chính bị hủy bỏ theo thỏa thuận của các bên và không thực hiện được",
+    "Hợp đồng chính bị hủy bỏ theo thỏa thuận của các bên và không thực hiện",
     "Giá trị hợp đồng nhỏ hơn mức quy định trong luật hiện hành của Nhà nước",
     "Các bên ở hai tỉnh khác nhau và không có văn phòng tại địa phương"
    ],
@@ -47,7 +47,7 @@
    "options": [
     "Vẫn có hiệu lực theo nguyên tắc độc lập của thỏa thuận trọng tài",
     "Tự động vô hiệu cùng với hợp đồng chính trong mọi trường hợp",
-    "Chỉ có hiệu lực nếu Tòa án đồng ý trong thời hạn quy định của luật",
+    "Có hiệu lực nếu Tòa án đồng ý trong thời hạn quy định của luật",
     "Bị thay bằng thẩm quyền Tòa án theo ý chí của một bên khi có tranh chấp"
    ],
    "answer": 0,
