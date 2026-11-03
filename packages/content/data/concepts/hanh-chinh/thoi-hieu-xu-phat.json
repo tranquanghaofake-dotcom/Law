@@ -124,6 +124,17 @@
     "thuế",
     "phát hiện"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thời hiệu xử phạt vi phạm hành chính là 01 năm, trừ các trường hợp luật quy định thời hiệu dài hơn.",
+   "answer": true,
+   "explain": "Đúng. Điểm a khoản 1 Điều 6 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điểm a khoản 1 Điều 6 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)"
+   }
   }
  ]
 }

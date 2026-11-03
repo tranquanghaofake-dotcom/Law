@@ -120,6 +120,17 @@
     "dưới luật",
     "quyền lực nhà nước"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quản lí hành chính nhà nước là hoạt động quản lí của nhà nước trong lĩnh vực hành pháp.",
+   "answer": true,
+   "explain": "Đúng. Slide bài giảng Luật Hành chính Việt Nam, Trường Đại học Luật Hà Nội, vấn đề 1 (\"LMS Vấn đề 1\", ThS. Nguyễn Thu Trang) — đã khớp nguyên văn slide (laws/hc-slide-trich.txt); slide không phải giáo trình, giáo trình chưa đối chiếu (nguyên văn).",
+   "source": {
+    "kind": "textbook",
+    "cite": "Slide bài giảng Luật Hành chính Việt Nam, Trường Đại học Luật Hà Nội, vấn đề 1 (\"LMS Vấn đề 1\", ThS. Nguyễn Thu Trang) — đã khớp nguyên văn slide (laws/hc-slide-trich.txt); slide không phải giáo trình, giáo trình chưa đối chiếu"
+   }
   }
  ]
 }

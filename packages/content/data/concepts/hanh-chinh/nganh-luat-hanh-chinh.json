@@ -119,6 +119,17 @@
     "mệnh lệnh – phục tùng",
     "thỏa thuận"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Đối tượng điều chỉnh của luật hành chính là các quan hệ phát sinh trong quản lý hành chính nhà nước.",
+   "answer": true,
+   "explain": "Đúng. Slide bài giảng Luật Hành chính Việt Nam, Trường Đại học Luật Hà Nội, vấn đề 2 (\"TUẦN 2 HC\", TS. Nguyễn Ngọc Bích) — đã khớp nguyên văn slide (laws/hc-slide-trich.txt); slide không phải giáo trình, giáo trình chưa đối chiếu (nguyên văn).",
+   "source": {
+    "kind": "textbook",
+    "cite": "Slide bài giảng Luật Hành chính Việt Nam, Trường Đại học Luật Hà Nội, vấn đề 2 (\"TUẦN 2 HC\", TS. Nguyễn Ngọc Bích) — đã khớp nguyên văn slide (laws/hc-slide-trich.txt); slide không phải giáo trình, giáo trình chưa đối chiếu"
+   }
   }
  ]
 }

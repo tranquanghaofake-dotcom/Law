@@ -121,6 +121,17 @@
     "xem xét lại",
     "của mình"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tố cáo là việc cá nhân theo thủ tục quy định của Luật Tố cáo báo cho cơ quan, tổ chức, cá nhân có thẩm quyền biết về hành vi vi phạm pháp luật của bất kỳ cơ quan, tổ chức, cá nhân nào gây thiệt hại hoặc đe dọa gây thiệt hại đến lợi ích của Nhà nước, quyền và lợi ích hợp pháp của cơ quan, tổ chức, cá nhân.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 2 Luật Tố cáo (VBHN 29/VBHN-VPQH 2026) (nguyên văn, lược phần liệt kê).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 2 Luật Tố cáo (VBHN 29/VBHN-VPQH 2026)"
+   }
   }
  ]
 }

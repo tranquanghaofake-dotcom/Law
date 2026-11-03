@@ -47,7 +47,7 @@
    "options": [
     "Tình tiết tăng nặng",
     "Tình tiết giảm nhẹ",
-    "Trường hợp không xử phạt",
+    "Tình tiết tăng nặng đối với người bị xúi giục",
     "Không ảnh hưởng"
    ],
    "answer": 0,
@@ -124,6 +124,17 @@
     "chưa thành niên",
     "chức vụ"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Xúi giục, lôi kéo, sử dụng người chưa thành niên vi phạm hành chính là tình tiết tăng nặng.",
+   "answer": true,
+   "explain": "Đúng. Điều 10 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026): xúi giục, lôi kéo, sử dụng người chưa thành niên vi phạm.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 10 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)"
+   }
   }
  ]
 }

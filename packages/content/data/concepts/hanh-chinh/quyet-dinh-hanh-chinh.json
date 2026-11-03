@@ -121,6 +121,17 @@
     "một lần",
     "không thực hiện"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hành vi hành chính là hành vi của cơ quan hành chính nhà nước, của người có thẩm quyền trong cơ quan hành chính nhà nước thực hiện hoặc không thực hiện nhiệm vụ, công vụ theo quy định của pháp luật.",
+   "answer": true,
+   "explain": "Đúng. Khoản 9 Điều 2 Luật Khiếu nại (VBHN 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 9 Điều 2 Luật Khiếu nại (VBHN 2026)"
+   }
   }
  ]
 }

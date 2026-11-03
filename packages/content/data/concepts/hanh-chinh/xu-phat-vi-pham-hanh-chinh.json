@@ -121,6 +121,18 @@
     "mỗi người",
     "từng hành vi"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Nhiều người cùng thực hiện một hành vi vi phạm hành chính thì mỗi người vi phạm đều bị xử phạt về hành vi vi phạm hành chính đó.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 3 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 3 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/Vi-pham-hanh-chinh/Van-ban-hop-nhat-90-VBHN-VPQH-2026-Luat-Xu-ly-vi-pham-hanh-chinh-699548.aspx"
+   }
   }
  ]
 }

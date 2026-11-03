@@ -119,6 +119,17 @@
     "2 tỷ",
     "02 lần"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mức phạt tiền trong xử phạt vi phạm hành chính từ 50.000 đồng đến 1.000.000.000 đồng đối với cá nhân, từ 100.000 đồng đến 2.000.000.000 đồng đối với tổ chức, trừ trường hợp luật có quy định khác.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 23 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 23 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)"
+   }
   }
  ]
 }
