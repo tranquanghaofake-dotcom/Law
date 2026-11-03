@@ -83,7 +83,22 @@ Mỗi chương gắn một **lĩnh vực** để làm điều kiện thăng ch�
 | `kinh-te-tai-chinh` | HP nâng cao; Chứng khoán c1–c10 |
 | `lich-su` | Lịch sử NN&PL c5–c8 |
 
-Môn sau này (Dân sự, Hình sự, Hành chính, Tố tụng…) thêm lĩnh vực mới.
+**Cập nhật 03/11/2026.** Nội dung đã đủ 23 môn nhưng bảng chỉ gán 3 môn, mọi môn khác rơi về `hien-phap` (học Dân sự lại nhận sách Hiến pháp) và Hồ sơ vẫn ghi "chờ môn". Gán đủ theo môn, không thêm lĩnh vực mới:
+
+| Lĩnh vực | Môn |
+|---|---|
+| `hanh-chinh` | Hành chính |
+| `dan-su` | Dân sự 1, Dân sự 2; Sở hữu trí tuệ, Tài sản trí tuệ (sở hữu trí tuệ là chế định dân sự) |
+| `hinh-su` | Hình sự |
+| `to-tung` | Tố tụng dân sự |
+| `lao-dong` | Lao động 1, Lao động 2, An sinh xã hội |
+| `dat-dai` | Đất đai |
+| `kinh-te-tai-chinh` | Thương mại 1, Thương mại, Cạnh tranh, Đầu tư, Ngân hàng, Tài chính, Tài chính doanh nghiệp, Chứng khoán |
+| `lap-phap` | Xây dựng văn bản quy phạm pháp luật |
+| `hien-phap` | Lý luận NN&PL (nền tảng); môn lạ chưa khai báo cũng rơi về đây (`DEFAULT_FIELD`) |
+| `lich-su` | Lịch sử NN&PL |
+
+`FUTURE_FIELDS` hiện rỗng (mọi lĩnh vực đã có môn). Kho sách lưu (`settings` khoá `books`) chỉ có `level` và `at`, không lưu lĩnh vực, nên đọc lại theo bảng mới không mất cấp đã đạt; sách Dân sự… cũ chỉ đổi lĩnh vực từ `hien-phap` sang đúng loại.
 
 ### 2.3 Tủ sách
 - **Hồ sơ:** tủ nhiều tầng, mỗi tầng một môn. Gáy sách theo cấp; di chuột thì hiện tên chương và cấp. Giữ các hiệu ứng nhấc sách và viền sáng đã có.

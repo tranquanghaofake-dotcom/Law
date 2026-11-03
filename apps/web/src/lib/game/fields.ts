@@ -1,5 +1,5 @@
 // Lĩnh vực của sách (spec thăng chức §2.2): mỗi chương gắn một lĩnh vực; chức danh đòi sách theo lĩnh vực.
-// Lĩnh vực đánh dấu `future` chưa có môn nào — chức danh cần chúng hiện "Chờ môn …".
+// Lĩnh vực nằm trong FUTURE_FIELDS chưa có môn nào — chức danh cần chúng hiện "Chờ môn …".
 export const FIELDS = [
   'hien-phap', 'quyen-cong-dan', 'bau-cu', 'lap-phap', 'nguyen-thu', 'hanh-phap', 'tu-phap', 'dia-phuong', 'kinh-te-tai-chinh', 'lich-su',
   'hanh-chinh', 'dan-su', 'hinh-su', 'to-tung', 'lao-dong', 'dat-dai',
@@ -14,7 +14,7 @@ export const FIELD_NAMES: Record<Field, string> = {
 };
 
 /** Lĩnh vực chưa có chương nào trong nội dung hiện tại (cập nhật khi thêm môn). */
-export const FUTURE_FIELDS: readonly Field[] = ['hanh-chinh', 'dan-su', 'hinh-su', 'to-tung', 'lao-dong', 'dat-dai'];
+export const FUTURE_FIELDS: readonly Field[] = [];
 
 const CHAPTER_FIELD: Record<string, Record<string, Field>> = {
   'hien-phap': {
@@ -24,9 +24,19 @@ const CHAPTER_FIELD: Record<string, Record<string, Field>> = {
     'nang-cao': 'kinh-te-tai-chinh',
   },
 };
-const SUBJECT_FIELD: Record<string, Field> = { 'chung-khoan': 'kinh-te-tai-chinh', 'lich-su-nn-pl': 'lich-su', 'hien-phap': 'hien-phap' };
+const KTTC: Field = 'kinh-te-tai-chinh';
+/** Lĩnh vực theo môn (spec thăng chức §2.2, cập nhật 03/11/2026). Sở hữu trí tuệ là chế định dân sự; Lý luận NN&PL là nền tảng. */
+const SUBJECT_FIELD: Record<string, Field> = {
+  'hien-phap': 'hien-phap', 'ly-luan-nn-pl': 'hien-phap', 'lich-su-nn-pl': 'lich-su', 'xay-dung-vbpl': 'lap-phap',
+  'hanh-chinh': 'hanh-chinh', 'dan-su': 'dan-su', 'dan-su-2': 'dan-su', 'so-huu-tri-tue': 'dan-su', 'tai-san-tri-tue': 'dan-su',
+  'hinh-su': 'hinh-su', 'to-tung-dan-su': 'to-tung', 'lao-dong': 'lao-dong', 'lao-dong-2': 'lao-dong', 'an-sinh-xa-hoi': 'lao-dong', 'dat-dai': 'dat-dai',
+  'thuong-mai-1': KTTC, 'thuong-mai': KTTC, 'canh-tranh': KTTC, 'dau-tu': KTTC, 'ngan-hang': KTTC, 'tai-chinh': KTTC, 'tai-chinh-doanh-nghiep': KTTC, 'chung-khoan': KTTC,
+};
 
-/** Lĩnh vực của chương: theo bảng chương, không có thì theo môn, cuối cùng 'hien-phap'. */
+/** Môn chưa khai báo trong bảng rơi về lĩnh vực nền tảng. */
+export const DEFAULT_FIELD: Field = 'hien-phap';
+
+/** Lĩnh vực của chương: theo bảng chương, không có thì theo môn, cuối cùng DEFAULT_FIELD. */
 export function fieldOf(subjectId: string, chapterId: string): Field {
-  return CHAPTER_FIELD[subjectId]?.[chapterId] ?? SUBJECT_FIELD[subjectId] ?? 'hien-phap';
+  return CHAPTER_FIELD[subjectId]?.[chapterId] ?? SUBJECT_FIELD[subjectId] ?? DEFAULT_FIELD;
 }
