@@ -1,7 +1,7 @@
 <script lang="ts">
   // Trang môn: tổng quan, chú giải, lưới bậc theo đợt, local nav chương (spec §4.2).
   import type { Level, Subject } from '$lib/content/types';
-  import { loadConcepts, loadSubject } from '$lib/content/loader';
+  import { loadSubject, loadTerms } from '$lib/content/loader';
   import { repo } from '$lib/store/progress-repo';
   import { hashFor, route } from '$lib/router.svelte';
   import { currentLesson, lessonStates } from '$lib/ui/lessonState';
@@ -40,9 +40,8 @@
       const known = new Set(ids);
       due = (await repo.due(new Date(), s.id)).filter((p) => known.has(p.conceptId)).length;
       const hard = (await repo.difficult()).filter((p) => p.subject === s.id && known.has(p.conceptId)).slice(0, 5).map((p) => p.conceptId);
-      const loaded = await Promise.allSettled(ids.map((id) => loadConcepts(s.id, [id])));
-      const t: Record<string, string> = {};
-      for (const r of loaded) if (r.status === 'fulfilled') for (const c of r.value) t[c.id] = c.term;
+      let t: Record<string, string> = {};
+      try { t = await loadTerms(s.id); } catch { /* bảng tên lỗi: giữ slug */ }
       terms = t;
       difficult = hard.map((id) => ({ id, term: t[id] ?? id }));
       subject = s;

@@ -7,6 +7,7 @@
   import { rail } from './rail.svelte';
   import { careerState, displayTitle } from '$lib/game/career';
   import { shelf } from './shelf.svelte';
+  import { sidenav, refreshSidenav } from './sidenav.svelte';
   import { career } from './career.svelte';
   import { storage } from '$lib/store/status.svelte';
   import StreakFlame from './StreakFlame.svelte';
@@ -21,6 +22,7 @@
   const title = $derived(displayTitle(cs, career.branch));
   const nextPost = $derived(cs.next[career.branch]?.post.title ?? null);
   const Rail = $derived(rail.current?.component);
+  refreshSidenav();
   const railProps = $derived(rail.current?.props ?? {});
 </script>
 
@@ -38,6 +40,9 @@
           <span class="ico"><Icon name={n.name} /></span><span class="lbl">{n.label}</span></a></li>
       {/each}
     </ul>
+    {#if sidenav.study}
+      <div class="side-study"><p class="kicker">Đang học</p><p class="ss-subject" title={sidenav.study.subject}>{sidenav.study.subject}</p><p class="ss-lesson small muted">{sidenav.study.lesson}</p><a class="ss-go small" href={sidenav.study.href}>Học tiếp →</a></div>
+    {/if}
     <div class="side-shelf"><p class="kicker">Tủ sách</p><Bookshelf size="side" /></div>
     <a class="me" href="#/toi">
       <span class="flame" class:cold={header.streak === 0}><StreakCard count={header.streak} longest={header.longest} size="mini" /><span class="sr-only">Chuỗi </span>{header.streak}<span class="sr-only"> ngày,</span></span>

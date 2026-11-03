@@ -14,6 +14,7 @@
   import { tts } from '$lib/fx/tts.svelte';
   import { createReveal } from '$lib/fx/reveal.svelte';
   import { refreshHeader } from '$lib/ui/header.svelte';
+  import { refreshSidenav } from '$lib/ui/sidenav.svelte';
   import { refreshShelf } from '$lib/ui/shelf.svelte';
   import { currentTitle } from '$lib/ui/career.svelte';
   import { cardFor, type AnswerResult } from '$lib/ui/cards';
@@ -86,6 +87,7 @@
     const dueTomorrow = (await repo.due(tomorrow)).length;
     await refreshHeader();
     await refreshShelf();
+    await refreshSidenav();
     const titleAfter = currentTitle();
     const promotion = titleAfter !== titleBefore ? titleAfter : null;
     if (promotion) { sfx.play('rankup'); burst('rankup'); buzz('milestone'); }

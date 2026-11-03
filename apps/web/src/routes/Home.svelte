@@ -9,6 +9,7 @@
   import { hashFor } from '$lib/router.svelte';
   import { GROUPS, pickQuickQuiz } from '$lib/ui/groups';
   import { knownConcepts, pickHeroState, type HeroState } from '$lib/ui/today';
+  import { dueWindow } from '$lib/ui/sideStudy';
   import { orderedSubjects, byRecency, lastStudiedBySubject } from '$lib/ui/shelves';
   import { setRail } from '$lib/ui/rail.svelte';
   import HeroCard from '$lib/ui/HeroCard.svelte';
@@ -29,6 +30,7 @@
   let quick = $state<{ set: ContentIndex['sets'][number]; best: number | null } | null>(null);
   let week = $state<boolean[]>(Array(7).fill(false));
   let dueTomorrow = $state(0);
+  let dueWeek = $state(0);
   let hard = $state<{ id: string; subject: string; term: string }[]>([]);
   let error = $state('');
 
@@ -76,12 +78,12 @@
 
       // rail: 7 ngày có phiên, hẹn ôn ngày mai
       week = weekFlags(await repo.reviewDays(weekStart()));
-      const tomorrow = new Date(); tomorrow.setDate(tomorrow.getDate() + 1); tomorrow.setHours(23, 59, 59, 999);
-      dueTomorrow = (await repo.due(tomorrow)).length;
+      dueTomorrow = (await repo.due(dueWindow(new Date(), 1))).filter((p) => known.has(p.conceptId)).length;
+      dueWeek = (await repo.due(dueWindow(new Date(), 7))).filter((p) => known.has(p.conceptId)).length;
     } catch (e) { error = (e as Error).message; }
   }
   load();
-  $effect(() => { if (hero) return setRail(HomeRail, { week, dueTomorrow }); });
+  $effect(() => { if (hero) return setRail(HomeRail, { week, dueTomorrow, dueWeek }); });
 </script>
 
 {#if error}

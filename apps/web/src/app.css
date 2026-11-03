@@ -41,7 +41,7 @@ button { font: inherit; color: inherit; }
 .brand { font-weight: 800; font-size: 20px; text-decoration: none; letter-spacing: -.01em; }
 .mark { display: inline-grid; place-items: center; width: 30px; height: 30px; border-radius: 9px; background: var(--ink); color: var(--paper); font-size: 18px; margin-right: 6px; }
 .layout { max-width: 1100px; margin: 0 auto; padding: 8px 16px 32px; outline: none; }
-.loading { color: var(--muted); text-align: center; padding: 32px 0; }
+.loading { color: var(--muted); text-align: center; padding: 32px 0; min-height: 60vh; } /* giữ chiều cao: shell không co rồi giãn khi nội dung về */
 
 /* ---- Layout: 1 cột; ≥1024 px hai cột (thẻ 720 + cột đợt 320); ≥1440 px tối đa 1100 ---- */
 .layout { display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px; align-items: start; }
@@ -856,4 +856,18 @@ h1 { text-wrap: balance; }
   .subject-head .row { flex-wrap: wrap; }
   .subject-head .next-cta { flex: 1 1 100%; }
   .subject-head .next-hint { max-width: 90%; }
+}
+
+/* ---- Đợt 4 PR 4: khối "Đang học" ở sidebar (≥ 1280) + topbar điện thoại gọn ---- */
+.side-study { display: none; }
+@media (min-width: 1280px) {
+  .side-study { display: block; margin: 12px 4px 0; padding: 10px 12px; border: 1px solid var(--line); border-radius: 12px; }
+  .side-study .kicker { margin: 0 0 4px; }
+  .side-study .ss-subject { margin: 0; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .side-study .ss-lesson { margin: 2px 0 6px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .side-study .ss-go { font-weight: 700; color: var(--accent-text); text-decoration: none; }
+}
+@media (max-width: 479px) {
+  .shell > .topbar .meta { gap: 6px; }
+  .shell > .topbar .meta .rank-title { display: none; }
 }
