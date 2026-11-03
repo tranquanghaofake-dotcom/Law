@@ -94,7 +94,7 @@ button { font: inherit; color: inherit; }
   .shell { grid-template-columns: minmax(0, var(--content-max)); padding: 0 0 0 var(--rail-w); }
   .shell > .topbar, .tabbar { display: none; }
   .shell > .sidenav { display: flex; flex-direction: column; position: fixed; left: 0; top: 0; height: 100dvh; width: var(--rail-w); padding: var(--sp-3) var(--sp-2); border-right: 1px solid var(--line); background: var(--card); z-index: 10; overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; }
-  .sidenav .brand .name { display: none; }
+  .sidenav .brand .name { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; } /* rail: chữ ẩn cho trình đọc màn hình (link logo vẫn có tên) */
   .shell > .content { grid-column: 1; grid-row: 1; padding: var(--sp-5) var(--sp-5) var(--sp-6); }
   .shell > .foot { grid-column: 1; grid-row: 2; padding: 0 var(--sp-5) var(--sp-5); }
 }
@@ -102,7 +102,7 @@ button { font: inherit; color: inherit; }
   .shell { padding-left: var(--nav-w); column-gap: var(--sp-6); }
   .shell > .sidenav { width: var(--nav-w); padding: var(--sp-4) var(--sp-3); }
   .sidenav .brand { justify-content: flex-start; padding: var(--sp-2) var(--sp-3) var(--sp-4); }
-  .sidenav .brand .name { display: inline; }
+  .sidenav .brand .name { position: static; width: auto; height: auto; overflow: visible; clip: auto; white-space: normal; display: inline; }
   .sidenav .item { flex-direction: row; gap: var(--sp-3); font-size: var(--fs-md); min-height: var(--ctl-h); padding: 0 var(--sp-3); text-align: left; }
 }
 @media (min-width: 1440px) {
