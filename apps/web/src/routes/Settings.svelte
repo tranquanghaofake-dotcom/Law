@@ -7,7 +7,10 @@
   import { refreshHeader } from '$lib/ui/header.svelte';
   import { refreshSidenav } from '$lib/ui/sidenav.svelte';
   import { refreshShelf } from '$lib/ui/shelf.svelte';
+  import { getPref, setPref } from '$lib/ui/session/prefs';
   const ttsOk = $derived(tts.available);
+  let prefConf = $state(getPref('confidence'));
+  let prefPre = $state(getPref('pretest'));
   let msg = $state('');
   async function exportData() {
     const json = await repo.exportAll();
@@ -42,6 +45,10 @@
   <label class="setting"><span>Mục tiêu nhớ (retention) <b>{Math.round(settings.retention * 100)}%</b></span>
     <input type="range" min="0.8" max="0.95" step="0.01" value={settings.retention} onchange={(e) => saveSetting('retention', Number(e.currentTarget.value))} /></label>
   <p class="muted small">Cao hơn = ôn dày hơn nhưng nhớ chắc hơn. Mặc định 90%.</p>
+  <h3 class="settings-h">Cách học</h3>
+  <label class="setting"><span>Hỏi độ tự tin (Chắc / Tạm / Đoán) ở một nửa số câu từ bậc 2</span><input type="checkbox" checked={prefConf} onchange={(e) => { prefConf = e.currentTarget.checked; setPref('confidence', prefConf); }} /></label>
+  <label class="setting"><span>Đoán trước 1–2 câu ở đầu đợt học mới, trước khi đọc thẻ giới thiệu</span><input type="checkbox" checked={prefPre} onchange={(e) => { prefPre = e.currentTarget.checked; setPref('pretest', prefPre); }} /></label>
+  <p class="muted small">Hai tuỳ chọn này lưu riêng trong trình duyệt (không nằm trong file xuất dữ liệu).</p>
   <h3 class="settings-h">Dữ liệu</h3>
   <p class="muted small">Tiến độ lưu trong trình duyệt này. Xuất file để chuyển máy hoặc lưu dự phòng.</p>
   <div class="row">
