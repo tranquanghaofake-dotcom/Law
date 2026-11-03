@@ -32,7 +32,7 @@
    "q": "Tổ chức tín dụng phi ngân hàng KHÔNG được thực hiện hoạt động nào?",
    "options": [
     "Nhận tiền gửi của cá nhân",
-    "Cho vay ngắn hạn tín chấp",
+    "Cho vay ngắn hạn có tín chấp",
     "Bao thanh toán có truy đòi",
     "Cho thuê tài chính động sản"
    ],
@@ -51,7 +51,7 @@
     "Công ty tài chính tổng hợp và công ty tài chính chuyên ngành",
     "Ngân hàng thương mại và ngân hàng liên doanh nước ngoài",
     "Ngân hàng chính sách và ngân hàng hợp tác xã trên toàn quốc",
-    "Công ty chứng khoán và công ty bảo hiểm nhân thọ đang hoạt động"
+    "Công ty chứng khoán và công ty bảo hiểm nhân thọ"
    ],
    "answer": 0,
    "explain": "Khoản 41 Điều 4.",

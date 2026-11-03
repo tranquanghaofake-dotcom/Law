@@ -30,7 +30,7 @@
    "q": "Sau khi ngân hàng thực hiện nghĩa vụ bảo lãnh, khách hàng phải làm gì?",
    "options": [
     "Nhận nợ bắt buộc và hoàn trả cho ngân hàng theo thỏa thuận",
-    "Không phải trả gì cả vì đã có bảo lãnh của ngân hàng khác",
+    "Không phải trả gì cả vì đã có bảo lãnh của một ngân hàng khác",
     "Chỉ phải trả nếu ngân hàng khởi kiện và tòa án tuyên thắng kiện",
     "Trả cho bên nhận bảo lãnh thêm một lần nữa theo ý ngân hàng"
    ],
@@ -48,8 +48,8 @@
    "options": [
     "Khi bên có nghĩa vụ không thực hiện hoặc thực hiện không đầy đủ nghĩa vụ đã cam kết",
     "Ngay khi ký thư bảo lãnh, trước khi có bất kỳ vi phạm nghĩa vụ nào của các bên",
-    "Khi bên nhận bảo lãnh có nhu cầu và yêu cầu ngân hàng thanh toán ngay lập tức",
-    "Khi ngân hàng có lợi nhuận cao hơn mức trung bình của ngành trong năm đó đã được xác nhận"
+    "Khi bên nhận bảo lãnh có nhu cầu và yêu cầu ngân hàng thanh toán",
+    "Khi ngân hàng có lợi nhuận cao hơn mức trung bình của ngành trong năm"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 4.",

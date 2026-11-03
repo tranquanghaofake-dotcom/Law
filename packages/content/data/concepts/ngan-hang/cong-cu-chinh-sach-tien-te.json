@@ -33,7 +33,7 @@
    "options": [
     "Thống đốc Ngân hàng Nhà nước",
     "Quốc hội quyết định ban hành",
-    "Bộ trưởng Bộ Tài chính cho phép",
+    "Bộ trưởng Bộ Tài chính duyệt",
     "Chủ tịch nước ký quyết định"
    ],
    "answer": 0,
@@ -50,7 +50,7 @@
    "options": [
     "Dự trữ bắt buộc",
     "Thuế giá trị gia tăng",
-    "Chi đầu tư công",
+    "Chi đầu tư công hằng năm",
     "Hạn ngạch xuất khẩu"
    ],
    "answer": 0,
