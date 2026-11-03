@@ -28,7 +28,7 @@
   // svelte-ignore state_referenced_locally
   const hideTerm = meta?.gen === 'def-term' || meta?.gen === 'example-concept';
   // svelte-ignore state_referenced_locally
-  const kicker = hideTerm ? (meta?.kicker ?? 'Nhận biết') : meta?.kicker ? `${meta.kicker} · ${concept.term}` : `${kind === 'case' ? 'Tình huống' : 'Nhận biết'} · ${concept.term}`;
+  const kicker = meta?.kicker ?? (hideTerm ? 'Nhận biết' : `${kind === 'case' ? 'Tình huống' : 'Nhận biết'} · ${concept.term}`);
   const cls = (k: number) => chosen === null ? '' : k === answerIdx ? 'correct' : k === chosen ? 'wrong' : 'dim';
 </script>
 

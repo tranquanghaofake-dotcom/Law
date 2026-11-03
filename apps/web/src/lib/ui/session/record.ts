@@ -15,7 +15,7 @@ export function submitRecord(run: { bestCombo: number; correct: number; total: n
   const before = readRecord();
   const rate = run.total >= 5 ? run.correct / run.total : 0;
   const comboBeaten = run.bestCombo > before.bestCombo && run.bestCombo >= 3;
-  const rateBeaten = rate > before.bestRate && rate > 0;
+  const rateBeaten = rate >= 0.6 && rate > before.bestRate;
   if (comboBeaten || rateBeaten) {
     try { localStorage.setItem(KEY, JSON.stringify({ bestCombo: Math.max(before.bestCombo, run.bestCombo), bestRate: Math.max(before.bestRate, rate) })); } catch { /* bỏ qua */ }
   }

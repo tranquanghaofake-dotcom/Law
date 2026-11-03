@@ -2,7 +2,7 @@
   import type { ItemCloze } from '$lib/content/types';
   import { buildBank, gradeCloze, parseCloze } from '$lib/engine/grading';
   import { isTypingTarget, type CardProps } from './types';
-  let { concept, item, rng, onanswer, mode = 'type' }: CardProps<ItemCloze> & { mode?: 'bank' | 'type' } = $props();
+  let { concept, item, meta, rng, onanswer, mode = 'type' }: CardProps<ItemCloze> & { mode?: 'bank' | 'type' } = $props();
   // Thẻ được remount theo từng bước (key), nên cố ý lấy giá trị ban đầu của item/rng.
   // svelte-ignore state_referenced_locally
   const start = Date.now();
@@ -34,7 +34,7 @@
 
 <svelte:window onkeydown={onkey} />
 <article class="card question-card cloze" aria-label="Điền chỗ trống">
-  <p class="kicker">Điền chỗ trống · {concept.term}</p>
+  <p class="kicker">{meta?.kicker ?? `Điền chỗ trống · ${concept.term}`}</p>
   <p class="question cloze-text">
     {#each parts as part, k}
       {part}{#if k < blanks.length}

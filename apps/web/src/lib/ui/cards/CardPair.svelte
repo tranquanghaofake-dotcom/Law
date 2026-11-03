@@ -2,7 +2,7 @@
   import type { ItemPair } from '$lib/content/types';
   import { shuffle } from '$lib/engine/session';
   import { isTypingTarget, type CardProps } from './types';
-  let { concept, item, rng, onanswer }: CardProps<ItemPair> = $props();
+  let { item, meta, rng, onanswer }: CardProps<ItemPair> = $props();
   // Thẻ được remount theo từng bước (key), nên cố ý lấy giá trị ban đầu của item/rng.
   // svelte-ignore state_referenced_locally
   const start = Date.now();
@@ -38,7 +38,7 @@
 
 <svelte:window onkeydown={onkey} />
 <article class="card question-card" aria-label="Phân biệt">
-  <p class="kicker">Phân biệt · {i + 1}/{cases.length}</p>
+  <p class="kicker">{meta?.kicker ?? 'Phân biệt'} · {i + 1}/{cases.length}</p>
   <p class="question">{cases[i].text}</p>
   <div class="options two" role="group" aria-label="Chọn khái niệm đúng">
     <button class="opt {cls('left')}" type="button" disabled={last !== null || finished} aria-label="1. {item.left}" onclick={() => pick('left')}><span class="key" aria-hidden="true">1</span><span>{item.left}</span></button>
