@@ -46,8 +46,9 @@
               <ul class="bk-books" aria-label="Kệ {bay.name}">
                 {#each bay.books as b (b.id)}
                   <li>
-                    <button type="button" class="bk-spine" class:full={b.lit === 1} aria-haspopup="dialog" aria-label={name(b)} onclick={() => pick(b)}
+                    <button type="button" class="bk-spine" class:full={b.lit === 1} aria-haspopup="dialog" onclick={() => pick(b)}
                       style="--c:{b.color};--w:{b.w}px;--h:{b.h}px;--lit:{b.lit};--fs:{spineFont(b.short, b.h)}">
+                      <span class="sr-only">{name(b)}</span>
                       <span class="bk-label" aria-hidden="true">LUẬT</span>
                       <span class="bk-name" aria-hidden="true">{b.short}</span>
                       <span class="bk-ribbon" aria-hidden="true"></span>
