@@ -121,6 +121,17 @@
     "65%",
     "10%"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Nhóm doanh nghiệp có vị trí thống lĩnh thị trường không bao gồm doanh nghiệp có thị phần ít hơn 10% trên thị trường liên quan.",
+   "answer": true,
+   "explain": "Đúng. Khoản 3 Điều 24 Luật Cạnh tranh 2018 (nguyên văn, lược dẫn chiếu khoản 2).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 24 Luật Cạnh tranh 2018"
+   }
   }
  ]
 }

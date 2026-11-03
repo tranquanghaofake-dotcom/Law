@@ -120,6 +120,17 @@
     "tập quán thương mại",
     "có thể gây thiệt hại"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hành vi cạnh tranh không lành mạnh là hành vi của doanh nghiệp trái với nguyên tắc thiện chí, trung thực, tập quán thương mại và các chuẩn mực khác trong kinh doanh, gây thiệt hại hoặc có thể gây thiệt hại đến quyền và lợi ích hợp pháp của doanh nghiệp khác.",
+   "answer": true,
+   "explain": "Đúng. Khoản 6 Điều 3 Luật Cạnh tranh 2018 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 6 Điều 3 Luật Cạnh tranh 2018"
+   }
   }
  ]
 }

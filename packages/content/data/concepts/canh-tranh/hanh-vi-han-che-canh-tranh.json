@@ -125,6 +125,18 @@
     "độc quyền",
     "loại trừ"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tác động hạn chế cạnh tranh là tác động loại trừ, làm giảm, sai lệch hoặc cản trở cạnh tranh trên thị trường.",
+   "answer": true,
+   "explain": "Đúng. Khoản 3 Điều 3 Luật Cạnh tranh 2018 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 3 Luật Cạnh tranh 2018",
+    "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx"
+   }
   }
  ]
 }

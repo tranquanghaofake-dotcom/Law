@@ -121,6 +121,18 @@
     "đơn vị",
     "tổng thị phần"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thị phần kết hợp là tổng thị phần trên thị trường liên quan của các doanh nghiệp tham gia vào hành vi hạn chế cạnh tranh hoặc tập trung kinh tế.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 10 Luật Cạnh tranh 2018 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 10 Luật Cạnh tranh 2018",
+    "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx"
+   }
   }
  ]
 }

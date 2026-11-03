@@ -120,6 +120,17 @@
     "thông tin không trung thực",
     "lôi kéo khách hàng"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Gây rối hoạt động kinh doanh của doanh nghiệp khác bằng cách trực tiếp hoặc gián tiếp cản trở, làm gián đoạn hoạt động kinh doanh hợp pháp của doanh nghiệp đó là hành vi cạnh tranh không lành mạnh bị cấm.",
+   "answer": true,
+   "explain": "Đúng. Khoản 4 Điều 45 Luật Cạnh tranh 2018 (Điều 45: các hành vi cạnh tranh không lành mạnh bị cấm).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 45 Luật Cạnh tranh 2018"
+   }
   }
  ]
 }

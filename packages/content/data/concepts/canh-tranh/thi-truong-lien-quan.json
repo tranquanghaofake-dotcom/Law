@@ -120,6 +120,18 @@
     "thay thế",
     "tương tự"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thị trường liên quan được xác định trên cơ sở thị trường sản phẩm liên quan và thị trường địa lý liên quan.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 9 Luật Cạnh tranh 2018 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 9 Luật Cạnh tranh 2018",
+    "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx"
+   }
   }
  ]
 }
