@@ -72,3 +72,13 @@
 - `llc-nang-luc-hanh-vi#1` và `llc-quy-pham-phap-luat` nội dung đã đối chiếu, cờ "lệch nội dung" là do sai văn bản cũ, không cần sửa thêm.
 - `llc-nang-luc-phap-luat#1` (lệch 0,193, nội dung Điều 16 HP khoản 1 đúng) — báo nhầm.
 - ⚠ opus: `llc-van-ban-qppl` (cờ cấp huyện) và các cờ "cấp huyện" khác — thuộc opus.
+
+## Sửa theo kiểm chéo (sonnet C, 03/11/2026) — nguồn: `$DOT7/verify/ly-luan-nn-pl.md`
+
+| Khái niệm | Trước (đã bỏ/đổi) | Sau | Căn cứ | Ghi chú |
+|---|---|---|---|---|
+| `llc-cau-truc-nha-nuoc` | Hai hệ thống cơ quan nhà nước: liên bang và bang<br>Các bang có hiến pháp và hệ thống cơ quan lập pháp riêng bên cạnh cơ quan liên bang | Hai hệ thống cơ quan nhà nước song song: ở trung ương chung và ở từng đơn vị thành viên<br>Các đơn vị thành viên có hiến pháp và hệ thống cơ quan lập pháp riêng bên cạnh cơ quan trung ương chung | —<br>Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chi | viết lại không nhắc nhãn / sửa lỗi theo bảng verify |
+| `llc-dang-lanh-dao` | Đảng đề ra đường lối, chủ trương lãnh đạo phát triển đất nước | Đảng là lực lượng lãnh đạo Nhà nước và xã hội, lấy chủ nghĩa Mác - Lê nin và tư tưởng Hồ Chí Minh làm nền tảng | Khoản 1 Điều 4 Hiến pháp 2013 | viết lại không nhắc nhãn / sửa lỗi theo bảng verify |
+| `llc-he-thong-phap-luat` | Luật Hình sự là một ngành luật có đối tượng điều chỉnh và phương pháp riêng | Luật Hình sự là tập hợp quy phạm điều chỉnh một lĩnh vực quan hệ xã hội rộng, có đối tượng và phương pháp điều | Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chi | viết lại không nhắc nhãn / sửa lỗi theo bảng verify |
+| `llc-nang-luc-phap-luat` | Mọi cá nhân đều có năng lực pháp luật dân sự như nhau | Mọi cá nhân đều có khả năng có quyền dân sự và nghĩa vụ dân sự như nhau | Khoản 1, 2 Điều 16 Bộ luật Dân sự 2015 | viết lại không nhắc nhãn / sửa lỗi theo bảng verify |
+| `llc-nha-nuoc-phap-quyen` | Mọi cơ quan nhà nước chỉ hành động trong phạm vi pháp luật cho phép và chịu kiểm soát | Quyền lực nhà nước là thống nhất, có sự phân công, phối hợp, kiểm soát giữa các cơ quan nhà nước, mọi cơ quan <br>Quan chức lạm quyền ban hành quyết định trái luật, cơ quan cấp trên không xem xét | Khoản 3 Điều 2 và Điều 8 Hiến pháp 2013<br>Khoản 3 Điều 2 và Điều 8 Hiến pháp 2013 | viết lại không nhắc nhãn / sửa lỗi theo bảng verify |
