@@ -1,7 +1,8 @@
 import { describe, expect, it } from 'vitest';
 import type { Level } from '$lib/content/types';
 import type { Step } from '$lib/engine/session';
-import { answer, createRunner, mistakes, next, summary } from '$lib/engine/runner';
+import { answer, createRunner, isLast, mistakes, next, summary, unfixed } from '$lib/engine/runner';
+import { RETRY_XP } from '$lib/game/xp';
 
 const mcq = (id: string): Step => ({ conceptId: id, level: 1, item: { type: 'mcq', level: 1, q: 'q', options: ['1', '2', '3', '4'], answer: 0, explain: 'e' } });
 const steps = [mcq('a'), mcq('b'), mcq('c')];
@@ -18,7 +19,8 @@ describe('runner', () => {
     s = next(r.state);
     r = answer(s, { correct: true, elapsedMs: 2000 });
     s = next(r.state);
-    expect(s.done).toBe(true);
+    expect(s.done).toBe(false); // còn vòng sửa sai cho câu b
+    expect(s.steps[s.i].meta?.kind).toBe('retry');
     expect(s.xp).toBe(20);
     const sum = summary(s);
     expect(sum.correct).toBe(2); expect(sum.total).toBe(3);
@@ -42,5 +44,97 @@ describe('runner', () => {
     for (const ok of [false, true, false]) s = next(answer(s, { correct: ok, elapsedMs: 1000 }).state);
     expect(mistakes(s).map((m) => m.conceptId)).toEqual(['a', 'c']);
     expect(mistakes(s)[0].item.type).toBe('mcq');
+  });
+});
+
+describe('runner đợt 6: câu vàng, combo dài nhất, vòng sửa sai', () => {
+  const gold = (id: string): Step => ({ ...mcq(id), meta: { golden: true } });
+  const play = (s: ReturnType<typeof createRunner>, oks: boolean[]) => {
+    for (const ok of oks) s = next(answer(s, { correct: ok, elapsedMs: 1000 }).state);
+    return s;
+  };
+
+  it('câu vàng đúng ×2 XP; sai thì 0; summary đếm số câu vàng đúng', () => {
+    let s = createRunner([gold('a'), gold('b'), mcq('c')], levels);
+    const r = answer(s, { correct: true, elapsedMs: 1000 });
+    expect(r.xpGained).toBe(20);
+    s = next(r.state);
+    s = next(answer(s, { correct: false, elapsedMs: 1000 }).state);
+    s = next(answer(s, { correct: true, elapsedMs: 1000 }).state);
+    expect(summary(s).golden).toBe(1);
+  });
+
+  it('hết bước: câu sai được nối thêm MỘT lần với meta.kind = retry, không đổi bậc', () => {
+    let s = createRunner(steps, levels);
+    s = play(s, [false, true, false]);
+    expect(s.done).toBe(false);
+    expect(s.steps.length).toBe(5);
+    expect(s.retryStart).toBe(3);
+    expect(s.steps.slice(3).map((x) => [x.conceptId, x.meta?.kind, x.meta?.retryOf])).toEqual([['a', 'retry', 0], ['c', 'retry', 2]]);
+    const lvBefore = { ...s.levels };
+    const r = answer(s, { correct: true, elapsedMs: 1000 });
+    expect(r.levelUp).toBe(false);
+    expect(r.xpGained).toBe(RETRY_XP);
+    expect(r.state.levels).toEqual(lvBefore);
+    s = next(r.state);
+    s = next(answer(s, { correct: false, elapsedMs: 1000 }).state);
+    expect(s.done).toBe(true); // retry sai không nối tiếp vòng nữa
+    const sum = summary(s);
+    expect(sum).toMatchObject({ correct: 1, total: 3, retried: 2, fixed: 1 });
+    expect(mistakes(s).map((m) => m.conceptId)).toEqual(['a', 'c']); // chỉ câu sai ở lượt chính
+    expect(unfixed(s).map((m) => m.conceptId)).toEqual(['c']);
+  });
+
+  it('không câu sai thì không có vòng sửa sai', () => {
+    const s = play(createRunner(steps, levels), [true, true, true]);
+    expect(s.done).toBe(true);
+    expect(s.steps.length).toBe(3);
+    expect(summary(s)).toMatchObject({ retried: 0, fixed: 0 });
+  });
+
+  it('vòng sửa sai không làm đứt hay tăng combo; bestCombo là chuỗi đúng dài nhất', () => {
+    let s = createRunner([mcq('a'), mcq('b'), mcq('c'), mcq('d')], {});
+    s = play(s, [true, true, false, true]);
+    expect(s.combo).toBe(1);
+    s = play(s, [false]);
+    expect(s.combo).toBe(1);
+    expect(summary(s).bestCombo).toBe(2);
+  });
+
+  it('câu vàng bị sai: bản retry không còn là câu vàng', () => {
+    let s = createRunner([gold('a'), mcq('b')], {});
+    s = play(s, [false, true]);
+    expect(s.steps[2].meta).toMatchObject({ kind: 'retry', golden: false });
+  });
+
+  it('vòng sửa sai tránh hai bước liền nhau cùng khái niệm khi có thể', () => {
+    let s = createRunner([mcq('a'), mcq('b'), mcq('a'), mcq('c')], {});
+    s = play(s, [false, true, false, false]);
+    const ids = s.steps.slice(s.retryStart!).map((x) => x.conceptId);
+    expect([...ids].sort()).toEqual(['a', 'a', 'c']);
+    const order = s.steps.map((x) => x.conceptId);
+    for (let k = 1; k < order.length; k++) expect(order[k]).not.toBe(order[k - 1]);
+  });
+
+  it('isLast: bước cuối thật sự (không còn vòng sửa sai phía sau)', () => {
+    let s = createRunner([mcq('a'), mcq('b')], {});
+    s = next(answer(s, { correct: false, elapsedMs: 1 }).state);
+    expect(isLast(answer(s, { correct: true, elapsedMs: 1 }).state)).toBe(false); // còn câu a để sửa
+    expect(isLast(answer(createRunner([mcq('a')], {}), { correct: true, elapsedMs: 1 }).state)).toBe(true);
+    expect(isLast(answer(createRunner([mcq('a')], {}), { correct: false, elapsedMs: 1 }).state)).toBe(false);
+  });
+
+  it('xpParts cộng dồn theo nguồn, tổng bằng xp', () => {
+    let s = createRunner([gold('a'), mcq('b')], {});
+    s = play(s, [true, false]);
+    s = play(s, [true]);
+    expect(s.xpParts).toEqual({ base: 10, combo: 0, golden: 10, retry: RETRY_XP, total: 20 + RETRY_XP });
+    expect(summary(s).xpParts.total).toBe(s.xp);
+  });
+
+  it('intro không được nối vào vòng sửa sai', () => {
+    const intro: Step = { conceptId: 'a', level: 0, item: { type: 'intro' } };
+    const s = play(createRunner([intro, mcq('a')], { a: 0 }), [true, true]);
+    expect(s.done).toBe(true);
   });
 });

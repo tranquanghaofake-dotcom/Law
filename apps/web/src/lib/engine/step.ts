@@ -26,7 +26,8 @@ export type GenItem = MatchItem | SortItem;
 /** Mọi thứ một bước có thể hiển thị. Câu sinh tự động kiểu trắc nghiệm dùng lại `ItemMcq` (type 'mcq'), phân biệt bằng `meta.gen`. */
 export type StepItem = Item | IntroItem | GenItem;
 
-export type StepGen = 'def-term' | 'term-def' | 'example-concept' | 'pair-merged' | 'match';
+/** (đợt 6, thêm 'def-tf') 'def-tf' = câu Đúng/Sai sinh từ định nghĩa: item là `ItemTrueFalse` "«định nghĩa» là định nghĩa của «thuật ngữ»". */
+export type StepGen = 'def-term' | 'term-def' | 'example-concept' | 'pair-merged' | 'match' | 'def-tf';
 export type StepMeta = {
   /** Dạng sinh tự động. Với 'def-term' / 'example-concept' giao diện KHÔNG được hiện tên khái niệm ở kicker (lộ đáp án). */
   gen?: StepGen;
@@ -36,6 +37,8 @@ export type StepMeta = {
   golden?: boolean;
   /** 'retry' = vòng sửa sai cuối phiên: KHÔNG ghi tiến độ (repo.record), KHÔNG đổi bậc; 'boss' = câu chốt cuối phiên. */
   kind?: 'learn' | 'retry' | 'boss';
+  /** (đợt 6, thêm) Bước retry: chỉ số của bước gốc trong `steps` (để giao diện ghi "Sửa câu …"). */
+  retryOf?: number;
 };
 
 export type Step = { conceptId: string; item: StepItem; level: Level; meta?: StepMeta };

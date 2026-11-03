@@ -1,7 +1,8 @@
 <script lang="ts">
   import type { Concept, Level } from '$lib/content/types';
-  import { loadIndex, loadSubject, loadConcepts } from '$lib/content/loader';
+  import { loadIndex, loadSubject, loadConcepts, loadConceptPool, loadTerms } from '$lib/content/loader';
   import { buildReviewSession, type Step } from '$lib/engine/session';
+  import { reviewPoolIds } from '$lib/engine/pool';
   import { repo } from '$lib/store/progress-repo';
   import SessionView from '$lib/ui/SessionView.svelte';
   import { hashFor, route } from '$lib/router.svelte';
@@ -29,7 +30,15 @@
       }
       if (!concepts.length) { empty = true; return; }
       const levels = Object.fromEntries(due.map((p) => [p.conceptId, p.level])) as Record<string, Level>;
-      data = { steps: buildReviewSession(concepts, levels, Math.random), concepts, levels };
+      // phương án nhiễu: khái niệm dễ nhầm (≤ 8) + bảng tên của các môn đang ôn
+      const extra = reviewPoolIds(concepts);
+      const subjectsInUse = [...new Set(concepts.map((c) => c.subject))];
+      const [pools, termList] = await Promise.all([
+        Promise.all(subjectsInUse.map((sid) => loadConceptPool(sid, extra.filter((x) => x.subject === sid).map((x) => x.id)))),
+        Promise.all(subjectsInUse.map((sid) => loadTerms(sid).catch(() => ({})))),
+      ]);
+      const ctx = { pool: pools.flat(), terms: Object.fromEntries(subjectsInUse.map((sid, k) => [sid, termList[k]])) };
+      data = { steps: buildReviewSession(concepts, levels, Math.random, undefined, ctx), concepts, levels };
     } catch (e) { error = (e as Error).message; }
   }
   load();
