@@ -2,10 +2,12 @@
   // Huy hiệu chương: biểu tượng nội dung chương đặt trong vành trống đồng nhỏ (viewBox 64×64). Trang trí, aria-hidden.
   import { EMBLEM_MORE, type EmblemName } from './registry';
   import { ring } from './kit';
+  import './kit/kit.css';
   let { name, size = 44 }: { name: EmblemName; size?: number } = $props();
 </script>
 
-<svg class="art emblem" viewBox="0 0 64 64" width={size} height={size} aria-hidden="true" focusable="false">
+<svg class="art art-lit emblem" viewBox="0 0 64 64" width={size} height={size} aria-hidden="true" focusable="false">
+  <circle cx="32" cy="33.2" r="31" fill="var(--ink)" opacity=".14" />
   <circle class="f-sun" cx="32" cy="32" r="31" />
   <path class="f-sunline" d={ring(32, 32, 27, 31, 28)} />
   <circle class="kg" cx="32" cy="32" r="25.5" stroke-width="1" stroke-dasharray="1 2.5" />
@@ -130,4 +132,5 @@
     <circle class="f-seal" cx="38" cy="44" r="4" /><path class="k" d="M22 45q3-3 5 0t5-1" stroke-width="1" />
   {/if}
   </g>
+  <ellipse cx="25" cy="15" rx="19" ry="8" fill="#fff" opacity=".22" transform="rotate(-24 25 15)" style="pointer-events:none" />
 </svg>
