@@ -70,6 +70,16 @@
     {
      "text": "Tổ chức đại diện, bảo vệ quyền lợi của doanh nghiệp trong quan hệ lao động",
      "answer": "right"
+    },
+    {
+     "text": "Tổ chức được thành lập tự nguyện của người lao động tại một đơn vị sử dụng lao động",
+     "answer": "left",
+     "basis": "Khoản 3 Điều 3 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Tổ chức của người sử dụng lao động tham gia thương lượng tập thể với tổ chức đại diện người lao động",
+     "answer": "right",
+     "basis": "Khoản 4 Điều 3 Bộ luật Lao động 2019"
     }
    ],
    "explain": "Khoản 3, 4 Điều 3."

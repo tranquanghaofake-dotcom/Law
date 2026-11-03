@@ -71,6 +71,16 @@
     {
      "text": "Bỏ chạy vì nghe tiếng còi công an",
      "answer": "right"
+    },
+    {
+     "text": "Người đang gây thương tích, tự dừng và đưa người bị thương đi cấp cứu",
+     "answer": "left",
+     "basis": "Điều 16 Bộ luật Hình sự 2015"
+    },
+    {
+     "text": "Người đang bỏ chạy vì nghe tiếng còi xe cảnh sát tới, không tự ý dừng việc phạm tội",
+     "answer": "right",
+     "basis": "Điều 16 Bộ luật Hình sự 2015 (đòi hỏi tự ý chấm dứt, không do bị ngăn cản)"
     }
    ],
    "explain": "Điều 16."

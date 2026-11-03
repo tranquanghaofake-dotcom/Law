@@ -76,6 +76,16 @@
     {
      "text": "Hủy phán quyết trọng tài",
      "answer": "right"
+    },
+    {
+     "text": "Tranh chấp về thừa kế tài sản, sơ thẩm do Tòa án nhân dân khu vực giải quyết",
+     "answer": "left",
+     "basis": "Khoản 5 Điều 26 và Điều 35 Bộ luật Tố tụng dân sự 2015"
+    },
+    {
+     "text": "Xét lại bản án sơ thẩm của Tòa án nhân dân khu vực theo thủ tục giám đốc thẩm",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 37 Bộ luật Tố tụng dân sự 2015"
     }
    ],
    "explain": "Điều 35, 37."

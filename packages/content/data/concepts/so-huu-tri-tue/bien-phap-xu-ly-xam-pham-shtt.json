@@ -70,6 +70,16 @@
     {
      "text": "Phạt tiền người buôn bán hàng giả mạo nhãn hiệu",
      "answer": "right"
+    },
+    {
+     "text": "Tòa án ra quyết định buộc người xâm phạm chấm dứt hành vi theo yêu cầu của chủ sở hữu",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 199 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Cơ quan có thẩm quyền xử phạt hành chính hành vi xâm phạm gây thiệt hại cho tác giả",
+     "answer": "right",
+     "basis": "Điểm a khoản 1 Điều 211 Luật Sở hữu trí tuệ"
     }
    ],
    "explain": "Điều 199, 202, 211."

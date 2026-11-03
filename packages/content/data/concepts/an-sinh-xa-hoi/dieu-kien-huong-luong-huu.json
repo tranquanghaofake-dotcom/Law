@@ -72,6 +72,16 @@
     {
      "text": "Thời gian đóng tối thiểu 15 năm để hưởng lương hưu",
      "answer": "right"
+    },
+    {
+     "text": "Người nghỉ việc đủ tuổi nghỉ hưu, đã đóng bảo hiểm bắt buộc đủ 15 năm thì được hưởng lương hưu",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 64 Luật Bảo hiểm xã hội 2024"
+    },
+    {
+     "text": "Người làm nghề nặng nhọc, đóng đủ 15 năm và có tuổi thấp hơn tối đa 10 tuổi so với tuổi nghỉ hưu quy định",
+     "answer": "right",
+     "basis": "Điểm b khoản 1 Điều 64 Luật Bảo hiểm xã hội 2024"
     }
    ],
    "explain": "Điều 64 Luật 2024."

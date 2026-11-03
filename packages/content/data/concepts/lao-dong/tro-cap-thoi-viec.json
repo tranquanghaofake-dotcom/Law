@@ -70,6 +70,16 @@
     {
      "text": "Tự ý bỏ việc 05 ngày làm việc liên tục không lý do",
      "answer": "right"
+    },
+    {
+     "text": "Người lao động đơn phương chấm dứt hợp đồng đúng luật, đã làm việc thường xuyên từ đủ 12 tháng",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 46 Bộ luật Lao động 2019 (khoản 9 Điều 34)"
+    },
+    {
+     "text": "Người lao động bị xử lý kỷ luật sa thải, dù đã làm việc thường xuyên trên 12 tháng",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 46 Bộ luật Lao động 2019 (không áp dụng khoản 8 Điều 34)"
     }
    ],
    "explain": "Điều 46."

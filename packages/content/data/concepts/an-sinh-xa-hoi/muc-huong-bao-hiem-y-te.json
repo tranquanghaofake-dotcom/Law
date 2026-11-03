@@ -71,6 +71,16 @@
     {
      "text": "Đối tượng khác khám ở cơ sở cấp cơ bản đúng quy định",
      "answer": "right"
+    },
+    {
+     "text": "Người dân tộc thiểu số hoặc thuộc hộ nghèo, sống ở vùng khó khăn, nội trú tuyến chuyên sâu được thanh toán 100%",
+     "answer": "left",
+     "basis": "Điểm b khoản 4 Điều 22 Luật Bảo hiểm y tế"
+    },
+    {
+     "text": "Người tham gia thuộc đối tượng chung, khám đúng quy định, được quỹ thanh toán 80% chi phí",
+     "answer": "right",
+     "basis": "Điểm e khoản 1 Điều 22 Luật Bảo hiểm y tế"
     }
    ],
    "explain": "Khoản 1 Điều 22."

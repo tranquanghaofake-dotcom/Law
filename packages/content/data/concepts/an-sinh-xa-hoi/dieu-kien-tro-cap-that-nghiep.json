@@ -71,6 +71,21 @@
     {
      "text": "Nghỉ việc khi đã đủ điều kiện hưởng lương hưu",
      "answer": "right"
+    },
+    {
+     "text": "Người có hợp đồng 6 tháng, đóng đủ 12 tháng trong 36 tháng trước khi chấm dứt và nộp hồ sơ đúng hạn",
+     "answer": "left",
+     "basis": "Điểm b khoản 1 Điều 38 Luật Việc làm 2025"
+    },
+    {
+     "text": "Người lao động đơn phương chấm dứt hợp đồng trái pháp luật",
+     "answer": "right",
+     "basis": "Điểm a khoản 1 Điều 38 Luật Việc làm 2025"
+    },
+    {
+     "text": "Người lao động nộp hồ sơ hưởng trợ cấp sau 03 tháng kể từ ngày chấm dứt hợp đồng",
+     "answer": "right",
+     "basis": "Điểm c khoản 1 Điều 38 Luật Việc làm 2025"
     }
    ],
    "explain": "Điều 38."

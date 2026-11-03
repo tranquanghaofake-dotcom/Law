@@ -70,6 +70,16 @@
     {
      "text": "Trình độ sáng tạo",
      "answer": "right"
+    },
+    {
+     "text": "Giống cây trồng có tính khác biệt và ổn định qua nhiều vụ gieo trồng",
+     "answer": "left",
+     "basis": "Điều 158 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Giải pháp có tính mới và khả năng áp dụng công nghiệp nhưng chưa đạt trình độ sáng tạo",
+     "answer": "right",
+     "basis": "Điều 58 Luật Sở hữu trí tuệ"
     }
    ],
    "explain": "Điều 58, 158."

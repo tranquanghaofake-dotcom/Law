@@ -70,6 +70,16 @@
     {
      "text": "Phá cửa nhà hàng xóm để dập lửa cứu người",
      "answer": "right"
+    },
+    {
+     "text": "Người bị kẻ gian dùng dao đe dọa, chống trả trực tiếp để bảo vệ tính mạng của mình",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 22 Bộ luật Hình sự 2015"
+    },
+    {
+     "text": "Người phá cửa xe để lấy thuốc cấp cứu cho người bị ngất khi không còn cách nào khác",
+     "answer": "right",
+     "basis": "Điều 23 Bộ luật Hình sự 2015"
     }
    ],
    "explain": "Điều 22, 23."

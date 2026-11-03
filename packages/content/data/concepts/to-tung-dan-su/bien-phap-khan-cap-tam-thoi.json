@@ -70,6 +70,21 @@
     {
      "text": "Phạt vi phạm hợp đồng",
      "answer": "right"
+    },
+    {
+     "text": "Buộc thực hiện trước một phần nghĩa vụ cấp dưỡng trong khi chờ Tòa án xét xử",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 114 Bộ luật Tố tụng dân sự 2015"
+    },
+    {
+     "text": "Cấm chuyển dịch quyền về tài sản đang tranh chấp trong thời gian vụ án đang giải quyết",
+     "answer": "left",
+     "basis": "Khoản 7 Điều 114 Bộ luật Tố tụng dân sự 2015"
+    },
+    {
+     "text": "Buộc bên vi phạm chịu phạt do vi phạm hợp đồng đã thỏa thuận từ trước",
+     "answer": "right",
+     "basis": "Điều 114 Bộ luật Tố tụng dân sự 2015 (không thuộc danh mục khoản 1–10)"
     }
    ],
    "explain": "Điều 114."

@@ -75,6 +75,16 @@
     {
      "text": "Đài truyền hình đối với chương trình phát sóng",
      "answer": "right"
+    },
+    {
+     "text": "Người viết và sáng tác tác phẩm âm nhạc, bản nhạc thuộc quyền tác giả",
+     "answer": "left",
+     "basis": "Điểm d khoản 1 Điều 14 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Người biểu diễn đối với buổi biểu diễn của mình, phát sinh khi cuộc biểu diễn diễn ra",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 6 Luật Sở hữu trí tuệ"
     }
    ],
    "explain": "Điều 4."

@@ -71,6 +71,16 @@
     {
      "text": "Chương trình máy tính (với danh nghĩa sáng chế)",
      "answer": "right"
+    },
+    {
+     "text": "Phần mềm là tập hợp chỉ dẫn dưới dạng mã, lệnh, được bảo hộ theo quyền tác giả",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 22 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Chương trình máy tính tự nó được đề nghị bảo hộ như sáng chế",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 59 Luật Sở hữu trí tuệ"
     }
    ],
    "explain": "Điều 22, 59."

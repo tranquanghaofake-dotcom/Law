@@ -76,6 +76,16 @@
     {
      "text": "Người vợ cần chồng cho phép mới được ký hợp đồng",
      "answer": "right"
+    },
+    {
+     "text": "Người đàn bà có chồng có toàn năng lực về mặt hộ, không cần chồng cho phép",
+     "answer": "left",
+     "basis": "Sắc lệnh 97/SL, Điều 6 (laws/lich-su-su-lieu.txt)"
+    },
+    {
+     "text": "Người đàn bà có chồng không có toàn năng lực về mặt hộ",
+     "answer": "right",
+     "basis": "Sắc lệnh 97/SL, Điều 6 (laws/lich-su-su-lieu.txt)"
     }
    ],
    "explain": "Điều 2, 6 Sắc lệnh 97/SL."

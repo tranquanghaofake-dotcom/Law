@@ -72,6 +72,16 @@
     {
      "text": "\"Doanh nghiệp có doanh thu dưới 3 tỷ đồng áp dụng thuế suất 15%\"",
      "answer": "right"
+    },
+    {
+     "text": "Nhà nước định hướng hỗ trợ đổi mới công nghệ cho doanh nghiệp vừa và nhỏ bằng nhiều giải pháp",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025"
+    },
+    {
+     "text": "Quy tắc xử sự chung: cửa hàng có doanh thu dưới ngưỡng luật định thì không phải kê khai",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025"
     }
    ],
    "explain": "Chính sách là giải pháp; quy phạm là quy tắc xử sự cụ thể hóa giải pháp đó."

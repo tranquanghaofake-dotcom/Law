@@ -74,6 +74,11 @@
     {
      "text": "Quản lý nhà nước về lao động",
      "answer": "left"
+    },
+    {
+     "text": "Người làm việc cho người khác có trả lương và chịu sự quản lý, điều hành của người trả lương",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 3 Bộ luật Lao động 2019"
     }
    ],
    "explain": "Điều 1, Điều 2."

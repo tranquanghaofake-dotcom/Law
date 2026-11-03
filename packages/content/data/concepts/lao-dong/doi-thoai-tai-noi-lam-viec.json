@@ -70,6 +70,16 @@
     {
      "text": "Đàm phán, thỏa thuận nhằm xác lập điều kiện lao động",
      "answer": "right"
+    },
+    {
+     "text": "Người sử dụng lao động định kỳ ít nhất 01 năm một lần tổ chức trao đổi với người lao động tại nơi làm việc",
+     "answer": "left",
+     "basis": "Điểm a khoản 2 Điều 63 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Thỏa thuận được ký bằng văn bản giữa các bên sau thương lượng thành thỏa ước lao động tập thể",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 75 Bộ luật Lao động 2019"
     }
    ],
    "explain": "Điều 63, 65."

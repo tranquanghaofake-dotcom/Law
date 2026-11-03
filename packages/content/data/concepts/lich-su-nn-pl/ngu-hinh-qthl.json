@@ -73,6 +73,16 @@
     {
      "text": "Bị đày đi châu gần, châu ngoài, châu xa",
      "answer": "right"
+    },
+    {
+     "text": "Đồ hình có ba bậc, phạm nhân bị làm khổ sai theo tội",
+     "answer": "left",
+     "basis": "Quốc triều hình luật, Điều 1 (laws/lich-su-su-lieu.txt)"
+    },
+    {
+     "text": "Lưu hình có ba bậc, từ đày châu gần đến châu xa",
+     "answer": "right",
+     "basis": "Quốc triều hình luật, Điều 1 (laws/lich-su-su-lieu.txt)"
     }
    ],
    "explain": "Điều 1, mục III, IV."

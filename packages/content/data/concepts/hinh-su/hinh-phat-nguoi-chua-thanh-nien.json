@@ -72,6 +72,16 @@
     {
      "text": "Tối đa 09 năm tù khi khung có chung thân, tử hình (trừ 5 tội đặc thù)",
      "answer": "right"
+    },
+    {
+     "text": "Người 17 tuổi phạm tội giết người, khung hình phạt chung thân, Tòa án không tuyên quá 15 năm tù",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 119 Luật Tư pháp người chưa thành niên 2024"
+    },
+    {
+     "text": "Người 15 tuổi phạm tội khung chung thân, Tòa án không tuyên phạt tù quá 09 năm",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 119 Luật Tư pháp người chưa thành niên 2024"
     }
    ],
    "explain": "Khoản 1, 3 Điều 119."

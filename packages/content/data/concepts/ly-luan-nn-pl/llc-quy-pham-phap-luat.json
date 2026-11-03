@@ -39,7 +39,7 @@
    "explain": "Khoản 1 Điều 3.",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 1 Điều 3 Hiến pháp 2013"
+    "cite": "Khoản 1 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025"
    }
   },
   {
@@ -56,7 +56,7 @@
    "explain": "Quy phạm áp dụng nhiều lần, với mọi chủ thể trong điều kiện dự liệu.",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 1 Điều 3 Hiến pháp 2013"
+    "cite": "Khoản 1 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025"
    }
   },
   {
@@ -72,6 +72,16 @@
     {
      "text": "\"Con cái nên hiếu thảo với cha mẹ\" trong hương ước",
      "answer": "right"
+    },
+    {
+     "text": "Doanh nghiệp phải đăng ký thành lập theo quy định của pháp luật trước khi hoạt động",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025"
+    },
+    {
+     "text": "Các thành viên nên giữ gìn tình làng nghĩa xóm, được ghi trong hương ước của làng",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025"
     }
    ],
    "explain": "Khoản 1 Điều 3; Điều 33 Hiến pháp 2013."

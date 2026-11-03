@@ -69,6 +69,16 @@
     {
      "text": "Công đoàn cơ sở ký thỏa ước với công ty",
      "answer": "right"
+    },
+    {
+     "text": "Người lao động và người sử dụng lao động thỏa thuận về lương và thời giờ làm việc qua hợp đồng cá nhân",
+     "answer": "left",
+     "basis": "Khoản 5 Điều 3 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Tổ chức đại diện người lao động thương lượng chung với người sử dụng lao động về điều kiện lao động",
+     "answer": "right",
+     "basis": "Điều 65 Bộ luật Lao động 2019"
     }
    ],
    "explain": "Khoản 5 Điều 3."

@@ -62,6 +62,16 @@
     {
      "text": "Lập di chúc",
      "answer": "right"
+    },
+    {
+     "text": "Động đất làm sập nhà cửa, gây mất tài sản mà không do ai gây ra",
+     "answer": "left",
+     "basis": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), VD11"
+    },
+    {
+     "text": "Người ký hợp đồng tặng cho tài sản, hành vi có ý chí tạo ra hệ quả pháp lý",
+     "answer": "right",
+     "basis": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), VD11"
     }
    ],
    "explain": "VD11."

@@ -71,6 +71,16 @@
     {
      "text": "Hứa trước sẽ cất giấu tài sản trộm được",
      "answer": "right"
+    },
+    {
+     "text": "Sau khi trộm xong, người phạm tội nhờ bạn giữ xe máy, bạn không hứa trước và đã cất giấu",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 18 Bộ luật Hình sự 2015"
+    },
+    {
+     "text": "Người hứa trước sẽ cất giấu tài sản trộm được để chia phần lợi ích",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 17 Bộ luật Hình sự 2015"
     }
    ],
    "explain": "Điều 17, 18."

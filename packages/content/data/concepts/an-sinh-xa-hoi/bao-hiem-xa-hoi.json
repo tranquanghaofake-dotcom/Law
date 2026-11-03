@@ -73,6 +73,16 @@
     {
      "text": "Người tham gia tự lựa chọn mức đóng",
      "answer": "right"
+    },
+    {
+     "text": "Người lao động thuộc diện bắt buộc không được chọn không tham gia",
+     "answer": "left",
+     "basis": "Khoản 3 Điều 3 Luật Bảo hiểm xã hội 2024"
+    },
+    {
+     "text": "Công dân Việt Nam không thuộc diện bắt buộc, tự nguyện đóng theo mức thu nhập đã chọn",
+     "answer": "right",
+     "basis": "Khoản 4 Điều 3 Luật Bảo hiểm xã hội 2024"
     }
    ],
    "explain": "Điều 3, 4."

@@ -70,6 +70,16 @@
     {
      "text": "Không đòi hỏi đóng góp, dành cho người yếu thế",
      "answer": "right"
+    },
+    {
+     "text": "Người lao động đóng đủ 15 năm, đủ tuổi nghỉ hưu, nhận lương hưu hằng tháng từ quỹ đã đóng",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 64 Luật Bảo hiểm xã hội 2024"
+    },
+    {
+     "text": "Người không đủ khả năng tự lo liệu cuộc sống được Nhà nước và cộng đồng giúp đỡ bằng tiền hoặc hiện vật",
+     "answer": "right",
+     "basis": "Giáo trình Luật An sinh xã hội, Trường Đại học Luật Hà Nội (định nghĩa trợ giúp xã hội)"
     }
    ],
    "explain": "Học thuyết."

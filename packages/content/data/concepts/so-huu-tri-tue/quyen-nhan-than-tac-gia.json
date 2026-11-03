@@ -76,6 +76,11 @@
     {
      "text": "Sao chép tác phẩm",
      "answer": "right"
+    },
+    {
+     "text": "Tác giả quyết định công bố tác phẩm hoặc cho phép người khác công bố tác phẩm",
+     "answer": "left",
+     "basis": "Khoản 3 Điều 19 Luật Sở hữu trí tuệ"
     }
    ],
    "explain": "Điều 19, 20."

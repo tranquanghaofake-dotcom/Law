@@ -70,6 +70,16 @@
     {
      "text": "Nhà ở gắn liền với đất",
      "answer": "right"
+    },
+    {
+     "text": "Người sử dụng đất phải đăng ký đất đai, không được chọn không đăng ký",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 131 Luật Đất đai 2024"
+    },
+    {
+     "text": "Công trình xây dựng gắn liền với đất được đăng ký theo yêu cầu của chủ sở hữu",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 131 Luật Đất đai 2024"
     }
    ],
    "explain": "Điều 131."

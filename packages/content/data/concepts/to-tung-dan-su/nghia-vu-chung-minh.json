@@ -70,6 +70,16 @@
     {
      "text": "Tình tiết đã được bản án có hiệu lực xác định",
      "answer": "right"
+    },
+    {
+     "text": "Tổ chức kinh doanh bị người tiêu dùng khởi kiện phải tự chứng minh mình không có lỗi",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 91 Bộ luật Tố tụng dân sự 2015"
+    },
+    {
+     "text": "Người tiêu dùng khởi kiện không phải chứng minh lỗi của tổ chức kinh doanh",
+     "answer": "right",
+     "basis": "Điểm a khoản 1 Điều 91 Bộ luật Tố tụng dân sự 2015"
     }
    ],
    "explain": "Điều 91, 92."

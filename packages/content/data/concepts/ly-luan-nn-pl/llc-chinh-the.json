@@ -62,6 +62,16 @@
     {
      "text": "Hoa Kỳ: Tổng thống do dân bầu nhiệm kỳ 4 năm",
      "answer": "right"
+    },
+    {
+     "text": "Vua nắm quyền đứng đầu nhà nước theo nguyên tắc kế vị, không do dân bầu",
+     "answer": "left",
+     "basis": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), Bài 6"
+    },
+    {
+     "text": "Người đứng đầu nhà nước được bầu theo nhiệm kỳ xác định",
+     "answer": "right",
+     "basis": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), Bài 6"
     }
    ],
    "explain": "Bài 6."

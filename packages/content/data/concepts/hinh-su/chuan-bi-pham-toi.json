@@ -71,6 +71,16 @@
     {
      "text": "Đã đâm nạn nhân nhưng nạn nhân được cấp cứu kịp",
      "answer": "right"
+    },
+    {
+     "text": "Tìm mua thuốc độc để chuẩn bị đầu độc người khác, chưa thực hiện hành vi",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 14 Bộ luật Hình sự 2015"
+    },
+    {
+     "text": "Đã nổ súng nhưng đạn không trúng, nạn nhân không chết vì nguyên nhân ngoài ý muốn",
+     "answer": "right",
+     "basis": "Điều 15 Bộ luật Hình sự 2015"
     }
    ],
    "explain": "Điều 14, 15."

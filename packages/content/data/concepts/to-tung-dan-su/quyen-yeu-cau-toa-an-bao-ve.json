@@ -69,6 +69,16 @@
     {
      "text": "Yêu cầu tuyên bố một người mất tích",
      "answer": "right"
+    },
+    {
+     "text": "Đòi bồi thường thiệt hại ngoài hợp đồng do xâm phạm quyền, khởi kiện thành vụ án",
+     "answer": "left",
+     "basis": "Khoản 6 Điều 26 Bộ luật Tố tụng dân sự 2015"
+    },
+    {
+     "text": "Yêu cầu Tòa án tuyên bố một người mất năng lực hành vi dân sự",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 27 Bộ luật Tố tụng dân sự 2015"
     }
    ],
    "explain": "Điều 1, 4."

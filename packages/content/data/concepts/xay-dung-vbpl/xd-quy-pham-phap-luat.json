@@ -70,6 +70,16 @@
     {
      "text": "Quyết định khen thưởng bà D",
      "answer": "right"
+    },
+    {
+     "text": "Quy tắc xử sự chung, có hiệu lực bắt buộc chung, áp dụng cho mọi doanh nghiệp",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025"
+    },
+    {
+     "text": "Quyết định giải quyết khiếu nại cho một người cụ thể trong vụ việc xác định",
+     "answer": "right",
+     "basis": "Điều 2 và khoản 1 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025"
     }
    ],
    "explain": "Quy phạm là quy tắc xử sự chung; quyết định khen thưởng là cá biệt."

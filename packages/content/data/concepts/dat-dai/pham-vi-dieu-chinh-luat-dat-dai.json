@@ -70,6 +70,16 @@
     {
      "text": "Hai hộ chuyển nhượng quyền sử dụng đất",
      "answer": "right"
+    },
+    {
+     "text": "Nhà nước quyết định giao đất, cho thuê đất hoặc thu hồi đất theo quy hoạch",
+     "answer": "left",
+     "basis": "Điều 1 Luật Đất đai 2024"
+    },
+    {
+     "text": "Hai hộ dân thỏa thuận chuyển nhượng quyền sử dụng đất đã có Giấy chứng nhận",
+     "answer": "right",
+     "basis": "Điều 1 và Điều 45 Luật Đất đai 2024"
     }
    ],
    "explain": "Điều 1."

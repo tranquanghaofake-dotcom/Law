@@ -74,6 +74,11 @@
     {
      "text": "Dùng ma túy rồi gây án",
      "answer": "right"
+    },
+    {
+     "text": "Người bị bệnh khác làm mất hoàn toàn khả năng điều khiển hành vi khi gây thương tích",
+     "answer": "left",
+     "basis": "Điều 21 Bộ luật Hình sự 2015"
     }
    ],
    "explain": "Điều 13, 21."
