@@ -32,9 +32,9 @@
    "q": "Đơn vị bố cục nào của VBQPPL bắt buộc phải có tên?",
    "options": [
     "Phần, chương, mục, tiểu mục, điều",
-    "Khoản và điểm",
-    "Chỉ chương",
-    "Chỉ điều"
+    "Khoản, điểm và đoạn trong văn bản",
+    "Chỉ chương và phụ lục đầu tiên",
+    "Chỉ điều và phần thứ nhất của văn bản"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 7.",
@@ -49,9 +49,9 @@
    "q": "Số, ký hiệu của VBQPPL phải thể hiện những yếu tố nào?",
    "options": [
     "Số thứ tự liên tục, năm ban hành, loại văn bản, cơ quan hoặc người ban hành",
-    "Chỉ số thứ tự",
-    "Tên người ký và ngày ký",
-    "Số trang và số điều"
+    "Chỉ số thứ tự, tên người được ủy quyền ký, nơi lưu trữ và số bản sao của văn bản gốc",
+    "Tên người ký, ngày ký, số trang, địa chỉ đơn vị và nơi nhận của văn bản",
+    "Số trang, số điều, số lượng bản in, dấu mật và chữ ký của người đứng đầu văn bản"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 7.",

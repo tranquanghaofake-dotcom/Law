@@ -28,9 +28,9 @@
    "q": "Theo khoản 2 Điều 119 Hiến pháp 2013, chủ thể nào có trách nhiệm bảo vệ Hiến pháp?",
    "options": [
     "Quốc hội, các cơ quan của Quốc hội, Chủ tịch nước, Chính phủ, Tòa án, Viện kiểm sát, các cơ quan khác của Nhà nước và toàn thể Nhân dân",
-    "Chỉ Tòa án Hiến pháp",
-    "Chỉ Quốc hội",
-    "Chỉ Chủ tịch nước và Chính phủ"
+    "Chỉ Tòa án Hiến pháp và các tòa án cấp dưới trong phạm vi thẩm quyền xét xử của mình, không có ai khác được tham gia cả",
+    "Chỉ Quốc hội và Hội đồng bầu cử quốc gia trong phạm vi thẩm quyền của mình, không có ai khác tham gia cả nào và các tổ chức xã hội hiện nay",
+    "Chỉ Chủ tịch nước và Chính phủ trong phạm vi thẩm quyền quản lý nhà nước của mình, không có ai khác tham gia và các tổ chức chính trị"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 119 liệt kê rộng: mọi cơ quan nhà nước và toàn thể Nhân dân.",
@@ -111,10 +111,10 @@
    "level": 4,
    "q": "Một sinh viên phát hiện thông tư của một bộ có nội dung trái Hiến pháp. Theo khoản 2 Điều 119, nhận định nào đúng?",
    "options": [
-    "Sinh viên không liên quan vì bảo vệ Hiến pháp là việc của cơ quan nhà nước",
+    "Sinh viên không liên quan vì bảo vệ Hiến pháp là việc riêng của các cơ quan nhà nước có thẩm quyền và công chức",
     "Sinh viên, với tư cách là một phần của Nhân dân, có trách nhiệm bảo vệ Hiến pháp và có thể kiến nghị cơ quan có thẩm quyền xử lý",
-    "Sinh viên có quyền tự tuyên bố thông tư vô hiệu",
-    "Chỉ Tòa án mới được nhận phản ánh này"
+    "Sinh viên có quyền tự tuyên bố thông tư vô hiệu và buộc cơ quan ban hành thu hồi ngay lập tức văn bản đó và thông báo rộng rãi cho công chúng",
+    "Chỉ Tòa án mới được nhận phản ánh này và chỉ Tòa án có quyền xử lý văn bản trái Hiến pháp và thông báo cho Quốc hội"
    ],
    "answer": 1,
    "explain": "Toàn thể Nhân dân có trách nhiệm bảo vệ Hiến pháp; cách thức là kiến nghị cơ quan có thẩm quyền theo cơ chế luật định, không tự tuyên vô hiệu.",

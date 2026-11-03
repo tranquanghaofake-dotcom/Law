@@ -31,9 +31,9 @@
    "q": "Cơ quan nào chủ trì thẩm tra dự án luật?",
    "options": [
     "Hội đồng Dân tộc, Ủy ban của Quốc hội theo lĩnh vực phụ trách",
-    "Bộ Tư pháp",
-    "Văn phòng Quốc hội",
-    "Chính phủ"
+    "Bộ Tư pháp, cơ quan chủ trì thẩm định dự án luật trước đó",
+    "Văn phòng Quốc hội, sau khi thống nhất với Chính phủ và Viện kiểm sát",
+    "Chính phủ, theo đề nghị của Thủ tướng Chính phủ trình"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 37.",

@@ -46,9 +46,9 @@
    "q": "Doanh nghiệp không thể thanh toán hết các khoản nợ thì xử lý thế nào?",
    "options": [
     "Không đủ điều kiện giải thể; có thể thuộc thủ tục phá sản",
-    "Vẫn giải thể bình thường",
-    "Nhà nước trả nợ thay",
-    "Tự động chấm dứt"
+    "Vẫn giải thể bình thường theo thủ tục đơn giản tại Sở Kế hoạch",
+    "Nhà nước trả nợ thay cho doanh nghiệp theo ngân sách",
+    "Tự động chấm dứt tồn tại mà không cần thủ tục nào cả"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 207.",

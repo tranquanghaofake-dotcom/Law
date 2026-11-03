@@ -29,9 +29,9 @@
    "q": "Vượt quá giới hạn phòng vệ chính đáng là gì?",
    "options": [
     "Hành vi chống trả rõ ràng quá mức cần thiết, không phù hợp với tính chất, mức độ nguy hiểm của hành vi xâm hại",
-    "Mọi hành vi gây thương tích cho người tấn công",
-    "Hành vi chống trả sau khi kẻ tấn công đã bỏ đi",
-    "Hành vi gây thiệt hại cho người thứ ba"
+    "Mọi hành vi gây thương tích cho người tấn công, kể cả khi người đó đã bỏ đi và không còn nguy hiểm gì",
+    "Hành vi chống trả sau khi kẻ tấn công đã bỏ đi, không còn nguy hiểm, và vẫn tiếp tục gây thương tích nặng nghiêm trọng",
+    "Hành vi gây thiệt hại cho người thứ ba vô tội đứng gần nơi xảy ra vụ việc và không liên quan đến tấn công"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 22.",

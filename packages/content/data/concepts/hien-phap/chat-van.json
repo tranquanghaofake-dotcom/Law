@@ -28,9 +28,9 @@
    "q": "Chủ thể nào KHÔNG thuộc đối tượng bị chất vấn theo khoản 1 Điều 80?",
    "options": [
     "Chủ tịch Ủy ban nhân dân tỉnh",
-    "Chủ tịch nước",
-    "Thủ tướng Chính phủ",
-    "Tổng Kiểm toán nhà nước"
+    "Chủ tịch nước và Phó chủ tịch",
+    "Thủ tướng Chính phủ và Bộ trưởng",
+    "Tổng Kiểm toán nhà nước hiện nay"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 80 không nêu Chủ tịch Ủy ban nhân dân tỉnh (người này bị chất vấn bởi đại biểu Hội đồng nhân dân).",
@@ -45,9 +45,9 @@
    "q": "Giữa hai kỳ họp Quốc hội, người bị chất vấn trả lời ở đâu?",
    "options": [
     "Tại phiên họp Ủy ban thường vụ Quốc hội",
-    "Trên báo chí",
-    "Tại trụ sở Mặt trận Tổ quốc",
-    "Không phải trả lời"
+    "Trên báo chí và truyền hình quốc gia",
+    "Tại trụ sở Mặt trận Tổ quốc tỉnh, thành",
+    "Không phải trả lời trước đại biểu nào"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 80.",

@@ -30,9 +30,9 @@
    "q": "Nhiệm vụ, quyền hạn của chính quyền địa phương được xác định trên cơ sở nào?",
    "options": [
     "Phân định thẩm quyền giữa trung ương và địa phương và của mỗi cấp chính quyền địa phương",
-    "Ý chí của Chủ tịch Ủy ban nhân dân",
-    "Thỏa thuận giữa các địa phương",
-    "Quyết định của Mặt trận Tổ quốc"
+    "Ý chí của Chủ tịch Ủy ban nhân dân và các thành viên khác trong đơn vị hành chính và các đại biểu",
+    "Thỏa thuận giữa các địa phương với nhau trong từng năm ngân sách và kế hoạch phát triển",
+    "Quyết định của Mặt trận Tổ quốc và các đoàn thể chính trị - xã hội trên địa bàn"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 112.",
@@ -47,9 +47,9 @@
    "q": "Khi được giao thực hiện nhiệm vụ của cơ quan nhà nước cấp trên, chính quyền địa phương được bảo đảm điều gì?",
    "options": [
     "Các điều kiện bảo đảm thực hiện nhiệm vụ đó",
-    "Được miễn kiểm tra",
-    "Được tự quyết ngân sách trung ương",
-    "Không bảo đảm gì"
+    "Được miễn kiểm tra và không cần báo cáo",
+    "Được tự quyết ngân sách trung ương và kế hoạch",
+    "Không bảo đảm gì cả về tài chính và nhân lực"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 112.",

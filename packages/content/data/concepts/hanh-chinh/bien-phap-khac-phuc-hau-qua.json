@@ -30,9 +30,9 @@
    "q": "Biện pháp nào là biện pháp khắc phục hậu quả theo Điều 28?",
    "options": [
     "Buộc khôi phục lại tình trạng ban đầu",
-    "Cảnh cáo",
-    "Phạt tiền",
-    "Trục xuất"
+    "Cảnh cáo bằng văn bản và nêu lỗi vi phạm",
+    "Phạt tiền đến mức tối đa của khung",
+    "Trục xuất ra khỏi lãnh thổ Việt Nam"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 1 Điều 28.",
@@ -49,7 +49,7 @@
     "Biện pháp khắc phục hậu quả",
     "Hình thức xử phạt chính",
     "Biện pháp xử lý hành chính",
-    "Biện pháp ngăn chặn"
+    "Biện pháp ngăn chặn vi phạm"
    ],
    "answer": 0,
    "explain": "Điểm b khoản 1 Điều 28.",

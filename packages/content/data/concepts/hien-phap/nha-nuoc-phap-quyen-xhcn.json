@@ -28,9 +28,9 @@
    "q": "Khoản 1 Điều 2 Hiến pháp 2013 xác định Nhà nước Việt Nam là nhà nước gì?",
    "options": [
     "Nhà nước pháp quyền xã hội chủ nghĩa của Nhân dân, do Nhân dân, vì Nhân dân",
-    "Nhà nước chuyên chính vô sản",
-    "Nhà nước liên bang xã hội chủ nghĩa",
-    "Nhà nước pháp quyền tư sản"
+    "Nhà nước chuyên chính vô sản do một giai cấp thống trị duy nhất và độc quyền",
+    "Nhà nước liên bang xã hội chủ nghĩa do nhiều bang hợp thành và độc lập",
+    "Nhà nước pháp quyền tư sản do giai cấp tư sản lãnh đạo và thống trị"
    ],
    "answer": 0,
    "explain": "Nguyên văn khoản 1 Điều 2.",
@@ -45,9 +45,9 @@
    "q": "Đặc trưng cốt lõi của \"pháp quyền\" là gì?",
    "options": [
     "Nhà nước tổ chức và hoạt động trên cơ sở Hiến pháp và pháp luật; chính Nhà nước cũng bị ràng buộc bởi pháp luật",
-    "Nhà nước có quyền ban hành mọi loại văn bản mà không bị giới hạn",
-    "Pháp luật chỉ ràng buộc công dân, không ràng buộc cơ quan nhà nước",
-    "Tòa án đứng trên Hiến pháp"
+    "Nhà nước có quyền ban hành mọi loại văn bản mà không bị giới hạn bởi bất kỳ quy định nào của Hiến pháp và luật hiện hành",
+    "Pháp luật chỉ ràng buộc công dân, không ràng buộc cơ quan nhà nước và cán bộ, công chức trong mọi hoạt động của nhà nước",
+    "Tòa án đứng trên Hiến pháp, có quyền sửa đổi các điều luật và bãi bỏ mọi văn bản của Nhà nước hiện nay"
    ],
    "answer": 0,
    "explain": "Pháp quyền = thượng tôn pháp luật, kể cả đối với Nhà nước; Hiến pháp có hiệu lực pháp lý cao nhất (Điều 119) là trụ cột của nguyên tắc này.",
@@ -100,10 +100,10 @@
    "level": 4,
    "q": "Ủy ban nhân dân một phường ra thông báo cấm người dân trong phường bán hàng online, dù không có luật hay văn bản cấp trên nào cho phép hạn chế như vậy. Xét theo nguyên tắc nhà nước pháp quyền và khoản 2 Điều 14, nhận định nào đúng?",
    "options": [
-    "Hợp pháp vì chính quyền địa phương có quyền quản lý địa bàn",
+    "Hợp pháp vì chính quyền địa phương có quyền quản lý địa bàn, bảo đảm trật tự công cộng và an toàn xã hội trên địa bàn",
     "Trái nguyên tắc pháp quyền: hạn chế quyền công dân chỉ có thể theo quy định của luật, cơ quan nhà nước không được tự đặt ra",
-    "Hợp pháp nếu đa số người dân trong phường đồng ý",
-    "Chỉ trái pháp luật nếu có người khởi kiện"
+    "Hợp pháp nếu đa số người dân trong phường đồng ý bằng văn bản và có biên bản họp dân hợp lệ đầy đủ và được công bố công khai",
+    "Chỉ trái pháp luật nếu có người khởi kiện ra tòa và có đơn yêu cầu hợp lệ theo quy định của pháp luật tố tụng"
    ],
    "answer": 1,
    "explain": "Nhà nước pháp quyền đòi hỏi mọi cơ quan hoạt động trong khuôn khổ pháp luật; quyền công dân chỉ bị hạn chế theo quy định của LUẬT (khoản 2 Điều 14).",

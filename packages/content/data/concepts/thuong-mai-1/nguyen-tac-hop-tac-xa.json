@@ -29,9 +29,9 @@
    "q": "Thu nhập của hợp tác xã được phân phối cho thành viên chính thức chủ yếu theo tiêu chí nào?",
    "options": [
     "Mức độ sử dụng sản phẩm, dịch vụ hoặc mức độ đóng góp sức lao động",
-    "Tỷ lệ vốn góp",
-    "Chức vụ trong hợp tác xã",
-    "Thâm niên của thành viên"
+    "Tỷ lệ vốn góp của thành viên vào hợp tác xã trong năm tài chính",
+    "Chức vụ trong hợp tác xã và thời gian đảm nhiệm chức vụ đó trong năm",
+    "Thâm niên của thành viên và số năm đóng góp cho hợp tác xã"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 8.",
@@ -46,9 +46,9 @@
    "q": "Quyền tham gia quản lý hợp tác xã của thành viên chính thức phụ thuộc vào yếu tố nào?",
    "options": [
     "Không phụ thuộc vào phần vốn góp",
-    "Tỷ lệ vốn góp",
-    "Số năm là thành viên",
-    "Quyết định của Giám đốc"
+    "Tỷ lệ vốn góp của thành viên",
+    "Số năm là thành viên của hợp tác xã",
+    "Quyết định của Giám đốc hợp tác xã"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 8.",

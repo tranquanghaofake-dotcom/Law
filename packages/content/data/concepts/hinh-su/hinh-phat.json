@@ -45,9 +45,9 @@
    "q": "Hình phạt áp dụng đối với chủ thể nào?",
    "options": [
     "Người hoặc pháp nhân thương mại phạm tội",
-    "Mọi người vi phạm pháp luật",
-    "Người vi phạm hành chính",
-    "Người thân của người phạm tội"
+    "Mọi người vi phạm pháp luật và có lỗi",
+    "Người vi phạm hành chính và bị phạt tiền",
+    "Người thân của người phạm tội và người bị hại"
    ],
    "answer": 0,
    "explain": "Điều 30.",

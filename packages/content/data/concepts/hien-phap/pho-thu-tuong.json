@@ -47,9 +47,9 @@
    "q": "Khi Thủ tướng vắng mặt, ai thay mặt lãnh đạo công tác của Chính phủ?",
    "options": [
     "Một Phó Thủ tướng được Thủ tướng ủy nhiệm",
-    "Chủ tịch nước",
-    "Bộ trưởng Bộ Nội vụ",
-    "Chủ tịch Quốc hội"
+    "Chủ tịch nước và Chủ tịch Quốc hội chung",
+    "Bộ trưởng Bộ Nội vụ và Bộ trưởng Tư pháp cũ",
+    "Chủ tịch Quốc hội và Chủ tịch nước cũ"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 95.",

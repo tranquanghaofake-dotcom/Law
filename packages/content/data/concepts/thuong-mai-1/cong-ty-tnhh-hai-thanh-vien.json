@@ -46,9 +46,9 @@
    "q": "Thời hạn góp vốn của thành viên công ty TNHH hai thành viên trở lên là bao lâu?",
    "options": [
     "90 ngày kể từ ngày được cấp Giấy chứng nhận đăng ký doanh nghiệp",
-    "30 ngày",
-    "01 năm",
-    "Không có thời hạn"
+    "30 ngày kể từ ngày được cấp Giấy chứng nhận đăng ký doanh nghiệp",
+    "01 năm kể từ ngày được cấp Giấy chứng nhận đăng ký doanh nghiệp",
+    "Không có thời hạn cụ thể, góp bất kỳ lúc nào trong thời gian hoạt động"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 47.",

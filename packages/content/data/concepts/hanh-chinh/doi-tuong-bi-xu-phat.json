@@ -30,9 +30,9 @@
    "q": "Người từ đủ 14 đến dưới 16 tuổi bị xử phạt vi phạm hành chính về loại vi phạm nào?",
    "options": [
     "Vi phạm hành chính do cố ý",
-    "Mọi vi phạm",
-    "Chỉ vi phạm giao thông",
-    "Không bị xử phạt"
+    "Mọi vi phạm do sơ suất gây ra",
+    "Chỉ vi phạm giao thông nội bộ",
+    "Không bị xử phạt hành chính"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 1 Điều 5.",

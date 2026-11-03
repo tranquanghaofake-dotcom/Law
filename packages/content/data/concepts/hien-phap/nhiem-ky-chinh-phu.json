@@ -46,9 +46,9 @@
    "q": "Khi Quốc hội hết nhiệm kỳ, Chính phủ làm gì?",
    "options": [
     "Tiếp tục làm nhiệm vụ cho đến khi Quốc hội khóa mới thành lập Chính phủ",
-    "Giải tán ngay",
-    "Giao quyền cho Chủ tịch nước",
-    "Giao quyền cho Ủy ban thường vụ"
+    "Giải tán ngay lập tức và không còn hoạt động gì nữa trước khi Quốc hội mới họp",
+    "Giao quyền cho Chủ tịch nước và Chủ tịch Quốc hội điều hành tạm thời",
+    "Giao quyền cho Ủy ban thường vụ Quốc hội điều hành tạm thời đến khi có Chính phủ"
    ],
    "answer": 0,
    "explain": "Điều 97.",

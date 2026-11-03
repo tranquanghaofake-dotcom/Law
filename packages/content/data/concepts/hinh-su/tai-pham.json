@@ -46,9 +46,9 @@
    "q": "Trường hợp nào là tái phạm nguy hiểm?",
    "options": [
     "Đã tái phạm, chưa được xóa án tích mà lại phạm tội do cố ý",
-    "Đã được xóa án tích lại phạm tội",
-    "Phạm tội lần đầu nhưng gây hậu quả lớn",
-    "Phạm nhiều tội cùng lúc"
+    "Đã được xóa án tích nhưng lại phạm tội mới do cố ý",
+    "Phạm tội lần đầu nhưng gây hậu quả lớn cho nhiều người dân",
+    "Phạm nhiều tội cùng lúc trong một vụ án và bị kết án"
    ],
    "answer": 0,
    "explain": "Điểm b khoản 2 Điều 53.",

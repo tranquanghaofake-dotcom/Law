@@ -30,9 +30,9 @@
    "q": "Không áp dụng hình phạt tử hình đối với ai?",
    "options": [
     "Người đủ 75 tuổi trở lên khi phạm tội hoặc khi xét xử",
-    "Người từ đủ 60 tuổi",
-    "Người phạm tội lần đầu",
-    "Người có trình độ đại học"
+    "Người từ đủ 60 tuổi trở lên khi phạm tội nghiêm trọng",
+    "Người phạm tội lần đầu nhưng gây hậu quả rất lớn cho xã hội",
+    "Người có trình độ đại học và thành tích công tác lâu dài"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 40.",
@@ -47,9 +47,9 @@
    "q": "Theo khoản 3 Điều 40 (VBHN 2025), trường hợp nào KHÔNG thi hành án tử hình?",
    "options": [
     "Người mắc bệnh ung thư giai đoạn cuối",
-    "Người có thành tích xuất sắc",
-    "Người đã bồi thường thiệt hại",
-    "Người có con đã thành niên"
+    "Người có thành tích xuất sắc trong học tập",
+    "Người đã bồi thường thiệt hại đầy đủ",
+    "Người có con đã thành niên và đang đi học"
    ],
    "answer": 0,
    "explain": "Điểm c khoản 3 Điều 40.",

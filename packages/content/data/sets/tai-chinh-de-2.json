@@ -8,10 +8,10 @@
     {
       "q": "Thuế GTGT được tính trên cơ sở nào?",
       "options": [
-        "Lợi nhuận",
+        "Lợi nhuận thu được của doanh nghiệp",
         "Giá trị tăng thêm của hàng hóa, dịch vụ",
-        "Thu nhập cá nhân",
-        "Diện tích đất"
+        "Thu nhập chịu thuế của cá nhân cư trú",
+        "Diện tích đất sử dụng để sản xuất kinh doanh"
       ],
       "answer": 1,
       "explain": "Điều 2.",
@@ -75,7 +75,7 @@
       "options": [
         "11 triệu đồng/tháng",
         "15,5 triệu đồng/tháng",
-        "4,4 triệu đồng/tháng",
+        "4,4 triệu đồng mỗi tháng",
         "6,2 triệu đồng/tháng"
       ],
       "answer": 1,
@@ -87,9 +87,9 @@
       "q": "Hàng hóa nào chịu thuế TTĐB theo Luật 2025?",
       "options": [
         "Nước giải khát có hàm lượng đường trên 5g/100mL",
-        "Sữa tươi",
-        "Gạo",
-        "Sách"
+        "Sữa tươi tiệt trùng đóng hộp dùng cho trẻ em",
+        "Gạo tẻ đã xay xát, đóng bao để tiêu dùng",
+        "Sách giáo khoa và sách tham khảo in ấn cho học sinh"
       ],
       "answer": 0,
       "explain": "Điểm l khoản 1 Điều 2.",
@@ -100,9 +100,9 @@
       "q": "Hàng hóa nào không thuộc đối tượng chịu thuế XK, NK?",
       "options": [
         "Hàng quá cảnh, chuyển khẩu, trung chuyển",
-        "Hàng nhập khẩu qua cửa khẩu",
+        "Hàng nhập khẩu qua cửa khẩu biên giới",
         "Hàng từ khu phi thuế quan vào nội địa",
-        "Hàng xuất khẩu tại chỗ"
+        "Hàng xuất khẩu tại chỗ, bán cho khách nội địa"
       ],
       "answer": 0,
       "explain": "Điểm a khoản 4 Điều 2.",
@@ -127,7 +127,7 @@
       "options": [
         "Cơ quan thuế",
         "Người nộp thuế",
-        "Kho bạc",
+        "Kho bạc Nhà nước",
         "Bộ Tài chính"
       ],
       "answer": 1,

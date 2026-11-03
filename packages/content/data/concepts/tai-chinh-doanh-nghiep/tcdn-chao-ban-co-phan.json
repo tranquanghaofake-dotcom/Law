@@ -49,9 +49,9 @@
    "q": "Hình thức nào KHÔNG phải hình thức chào bán cổ phần theo khoản 2 Điều 123?",
    "options": [
     "Chào bán cổ phần cho ngân hàng để vay vốn",
-    "Chào bán cho cổ đông hiện hữu",
-    "Chào bán riêng lẻ",
-    "Chào bán ra công chúng"
+    "Chào bán cổ phần cho các cổ đông hiện hữu",
+    "Chào bán cổ phần riêng lẻ cho nhà đầu tư",
+    "Chào bán cổ phần ra công chúng trên thị trường"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 123.",

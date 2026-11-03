@@ -47,9 +47,9 @@
    "q": "Văn bản nào sau đây là nguồn của ngành luật Hiến pháp?",
    "options": [
     "Luật Quốc tịch Việt Nam",
-    "Bộ luật Lao động",
-    "Luật Thương mại",
-    "Bộ luật Dân sự"
+    "Bộ luật Lao động hiện hành",
+    "Luật Thương mại hiện hành",
+    "Bộ luật Dân sự hiện hành"
    ],
    "answer": 0,
    "explain": "Luật Quốc tịch điều chỉnh quan hệ cơ bản giữa Nhà nước và công dân.",

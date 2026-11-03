@@ -29,9 +29,9 @@
    "q": "Cưỡng chế thi hành quyết định xử phạt được áp dụng khi nào?",
    "options": [
     "Người bị xử phạt không tự nguyện chấp hành quyết định xử phạt",
-    "Ngay khi ra quyết định",
-    "Khi người vi phạm khiếu nại",
-    "Khi vi phạm lần đầu"
+    "Ngay khi ra quyết định xử phạt và thông báo cho người vi phạm",
+    "Khi người vi phạm khiếu nại lên cấp trên và đang được xem xét",
+    "Khi vi phạm lần đầu và có đủ điều kiện tự nguyện chấp hành"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 1 Điều 86.",
@@ -46,9 +46,9 @@
    "q": "Biện pháp nào là biện pháp cưỡng chế thi hành quyết định xử phạt?",
    "options": [
     "Kê biên tài sản có giá trị tương ứng số tiền phạt để bán đấu giá",
-    "Tạm giam người vi phạm",
-    "Phạt tù",
-    "Đưa vào trường giáo dưỡng"
+    "Tạm giam người vi phạm hành chính trong thời gian ngắn nhất",
+    "Phạt tù có thời hạn đối với người vi phạm hành chính nhiều lần",
+    "Đưa vào trường giáo dưỡng hoặc cơ sở cai nghiện bắt buộc tại địa phương"
    ],
    "answer": 0,
    "explain": "Điểm b khoản 2 Điều 86.",

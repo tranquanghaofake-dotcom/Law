@@ -29,9 +29,9 @@
    "q": "Thủ tướng được làm gì với văn bản trái luật của Chủ tịch Ủy ban nhân dân tỉnh?",
    "options": [
     "Đình chỉ việc thi hành hoặc bãi bỏ",
-    "Chỉ được kiến nghị",
-    "Chỉ được báo cáo Quốc hội",
-    "Không có quyền"
+    "Chỉ được kiến nghị và đề nghị xem xét",
+    "Chỉ được báo cáo Quốc hội và cơ quan",
+    "Không có quyền gì trong trường hợp này"
    ],
    "answer": 0,
    "explain": "Khoản 4 Điều 98.",
@@ -46,9 +46,9 @@
    "q": "Với nghị quyết trái luật của Hội đồng nhân dân tỉnh, Thủ tướng có quyền gì?",
    "options": [
     "Đình chỉ việc thi hành và đề nghị Ủy ban thường vụ Quốc hội bãi bỏ",
-    "Tự bãi bỏ ngay",
-    "Không có quyền gì",
-    "Chuyển Tòa án xét xử"
+    "Tự bãi bỏ ngay lập tức, không cần thông báo cho ai khác cả",
+    "Không có quyền gì đối với nghị quyết này của Hội đồng nhân dân tỉnh",
+    "Chuyển Tòa án xét xử để xử lý theo quy định hiện hành của pháp luật"
    ],
    "answer": 0,
    "explain": "Khoản 4 Điều 98.",

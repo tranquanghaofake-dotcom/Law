@@ -31,9 +31,9 @@
    "q": "Ai là người nộp thuế tài nguyên?",
    "options": [
     "Tổ chức, cá nhân khai thác tài nguyên thuộc đối tượng chịu thuế",
-    "Người tiêu dùng sản phẩm",
-    "Cơ quan quản lý tài nguyên",
-    "Người mua lại sản phẩm"
+    "Người tiêu dùng sản phẩm cuối cùng của quá trình sản xuất",
+    "Cơ quan quản lý tài nguyên, môi trường của chính quyền địa phương",
+    "Người mua lại sản phẩm đã khai thác từ tài nguyên rừng"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 3.",
@@ -48,9 +48,9 @@
    "q": "Tài nguyên nào KHÔNG thuộc đối tượng chịu thuế tài nguyên?",
    "options": [
     "Nước thiên nhiên dùng cho nông nghiệp",
-    "Dầu thô",
-    "Khoáng sản kim loại",
-    "Yến sào thiên nhiên"
+    "Dầu thô khai thác từ các mỏ ngoài khơi",
+    "Khoáng sản kim loại khai thác tại mỏ",
+    "Yến sào thiên nhiên khai thác tại đảo"
    ],
    "answer": 0,
    "explain": "Khoản 7 Điều 2.",

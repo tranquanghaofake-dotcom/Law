@@ -29,9 +29,9 @@
    "q": "Theo khoản 1 Điều 115, đại biểu Hội đồng nhân dân đại diện cho ai?",
    "options": [
     "Ý chí, nguyện vọng của Nhân dân địa phương",
-    "Nhân dân cả nước",
-    "Ủy ban nhân dân",
-    "Mặt trận Tổ quốc"
+    "Nhân dân cả nước và các cơ quan trung ương",
+    "Ủy ban nhân dân và các cơ quan chuyên môn",
+    "Mặt trận Tổ quốc địa phương và các đoàn thể"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 115; khác đại biểu Quốc hội (khoản 1 Điều 79).",
@@ -47,8 +47,8 @@
    "options": [
     "Xem xét, đôn đốc việc giải quyết khiếu nại, tố cáo",
     "Trực tiếp ra quyết định giải quyết khiếu nại",
-    "Xét xử khiếu nại",
-    "Không có nghĩa vụ"
+    "Xét xử khiếu nại và tố cáo của công dân trong địa phương",
+    "Không có nghĩa vụ nào liên quan đến khiếu nại"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 115.",

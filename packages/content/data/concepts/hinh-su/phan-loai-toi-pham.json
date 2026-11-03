@@ -48,9 +48,9 @@
    "q": "Căn cứ để xác định một tội thuộc loại nào là gì?",
    "options": [
     "Mức cao nhất của khung hình phạt do Bộ luật quy định",
-    "Mức hình phạt Tòa án tuyên",
-    "Giá trị tài sản bị thiệt hại",
-    "Ý kiến của Viện kiểm sát"
+    "Mức hình phạt Tòa án tuyên và tình tiết tăng nặng",
+    "Giá trị tài sản bị thiệt hại và số người bị hại trong vụ án",
+    "Ý kiến của Viện kiểm sát và Tòa án cùng cấp về tội danh"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 9.",

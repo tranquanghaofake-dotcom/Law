@@ -29,9 +29,9 @@
    "q": "Quốc hội bỏ phiếu tín nhiệm đối với ai theo khoản 8 Điều 70?",
    "options": [
     "Người giữ chức vụ do Quốc hội bầu hoặc phê chuẩn",
-    "Mọi cán bộ, công chức",
-    "Chủ tịch Ủy ban nhân dân cấp xã",
-    "Thẩm phán Tòa án nhân dân cấp tỉnh"
+    "Mọi cán bộ, công chức trong cơ quan nhà nước các cấp",
+    "Chủ tịch Ủy ban nhân dân cấp xã và cấp huyện",
+    "Thẩm phán Tòa án nhân dân cấp tỉnh và cấp huyện"
    ],
    "answer": 0,
    "explain": "Khoản 8 Điều 70.",

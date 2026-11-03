@@ -28,9 +28,9 @@
    "q": "Hội đồng quốc phòng và an ninh làm việc theo chế độ nào?",
    "options": [
     "Tập thể, quyết định theo đa số",
-    "Thủ trưởng",
-    "Một người quyết định",
-    "Đồng thuận tuyệt đối"
+    "Thủ trưởng quyết định mọi việc",
+    "Một người quyết định theo ý kiến",
+    "Đồng thuận của mọi thành viên"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 89.",
@@ -45,9 +45,9 @@
    "q": "Khi Quốc hội không thể họp được, Hội đồng quốc phòng và an ninh trình cơ quan nào quyết định tình trạng chiến tranh?",
    "options": [
     "Ủy ban thường vụ Quốc hội",
-    "Chính phủ",
-    "Chủ tịch nước",
-    "Bộ Quốc phòng"
+    "Chính phủ và Thủ tướng",
+    "Chủ tịch nước hiện nay",
+    "Bộ Quốc phòng và Bộ Công an"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 89.",

@@ -30,9 +30,9 @@
    "q": "Thủ tướng Chính phủ được bầu như thế nào?",
    "options": [
     "Do Quốc hội bầu trong số đại biểu Quốc hội",
-    "Do Chủ tịch nước bổ nhiệm",
-    "Do Nhân dân bầu trực tiếp",
-    "Do Chính phủ bầu"
+    "Do Chủ tịch nước bổ nhiệm theo đề nghị chung",
+    "Do Nhân dân bầu trực tiếp tại địa phương",
+    "Do Chính phủ bầu trong số thành viên"
    ],
    "answer": 0,
    "explain": "Điều 98.",
@@ -47,9 +47,9 @@
    "q": "Ai bổ nhiệm Thứ trưởng?",
    "options": [
     "Thủ tướng Chính phủ",
-    "Chủ tịch nước",
-    "Quốc hội",
-    "Bộ trưởng"
+    "Chủ tịch Nhà nước",
+    "Quốc hội và Chính phủ",
+    "Bộ trưởng Tư pháp"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 98.",

@@ -31,9 +31,9 @@
    "q": "Thuế GTGT được tính trên cơ sở nào?",
    "options": [
     "Giá trị tăng thêm của hàng hóa, dịch vụ phát sinh từ sản xuất, lưu thông đến tiêu dùng",
-    "Lợi nhuận của doanh nghiệp",
-    "Thu nhập của cá nhân",
-    "Diện tích đất sử dụng"
+    "Lợi nhuận thu được của doanh nghiệp sau khi trừ toàn bộ chi phí sản xuất, kinh doanh trong kỳ",
+    "Thu nhập chịu thuế của cá nhân phát sinh từ tiền lương, tiền công trong năm",
+    "Diện tích đất sử dụng để sản xuất, xây dựng nhà ở và công trình phục vụ sinh hoạt của hộ gia đình"
    ],
    "answer": 0,
    "explain": "Điều 2.",
@@ -48,9 +48,9 @@
    "q": "Hàng hóa, dịch vụ nào là đối tượng chịu thuế GTGT?",
    "options": [
     "Hàng hóa, dịch vụ sử dụng cho sản xuất, kinh doanh và tiêu dùng ở Việt Nam, trừ đối tượng tại Điều 5",
-    "Chỉ hàng hóa nhập khẩu",
-    "Chỉ dịch vụ tài chính",
-    "Chỉ hàng xa xỉ"
+    "Chỉ hàng hóa nhập khẩu từ các nước thành viên Hiệp định thương mại tự do, không gồm dịch vụ trong nước",
+    "Chỉ dịch vụ tài chính, ngân hàng, bảo hiểm và chứng khoán do tổ chức tín dụng cung cấp cho khách hàng trong nước",
+    "Chỉ hàng xa xỉ thuộc danh mục tiêu dùng cao cấp do Chính phủ quy định, chỉ bán tại thị trường trong nước"
    ],
    "answer": 0,
    "explain": "Điều 3.",

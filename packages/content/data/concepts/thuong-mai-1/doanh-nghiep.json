@@ -29,9 +29,9 @@
    "q": "Doanh nghiệp là gì theo khoản 10 Điều 4?",
    "options": [
     "Tổ chức có tên riêng, tài sản, trụ sở giao dịch, được thành lập hoặc đăng ký thành lập theo pháp luật nhằm mục đích kinh doanh",
-    "Mọi cá nhân kinh doanh",
-    "Hộ gia đình buôn bán",
-    "Cơ quan nhà nước có thu"
+    "Mọi cá nhân kinh doanh có đăng ký tại cơ quan thuế địa phương, đóng thuế đầy đủ, có tên riêng và trụ sở hằng năm",
+    "Hộ gia đình buôn bán nhỏ, không đăng ký, không có tên riêng và không có trụ sở giao dịch cố định tại địa phương và không có sổ sách kế toán",
+    "Cơ quan nhà nước có thu từ hoạt động dịch vụ công, được phép kinh doanh hằng năm và có tên riêng theo quy định"
    ],
    "answer": 0,
    "explain": "Khoản 10 Điều 4.",

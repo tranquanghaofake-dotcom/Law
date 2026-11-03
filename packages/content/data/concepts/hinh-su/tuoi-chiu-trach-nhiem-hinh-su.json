@@ -30,9 +30,9 @@
    "q": "Người từ đủ 14 đến dưới 16 tuổi phải chịu TNHS về loại tội nào?",
    "options": [
     "Tội rất nghiêm trọng, đặc biệt nghiêm trọng tại các điều được liệt kê ở khoản 2 Điều 12",
-    "Mọi tội phạm",
-    "Chỉ tội đặc biệt nghiêm trọng",
-    "Không phải chịu TNHS"
+    "Mọi tội phạm, kể cả tội ít nghiêm trọng do vô ý gây ra và tội do cố ý thực hiện",
+    "Chỉ tội đặc biệt nghiêm trọng do cố ý gây ra, có tổ chức và tái phạm nhiều lần trong nhiều năm",
+    "Không phải chịu TNHS trong mọi trường hợp, kể cả tội rất nghiêm trọng đã làm"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 12.",

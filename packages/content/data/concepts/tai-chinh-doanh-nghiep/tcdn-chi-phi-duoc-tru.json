@@ -30,9 +30,9 @@
    "q": "Điều kiện nào thuộc khoản 1 Điều 9 Luật Thuế TNDN 2025?",
    "options": [
     "Khoản chi có đủ hóa đơn, chứng từ thanh toán không dùng tiền mặt theo quy định",
-    "Khoản chi do giám đốc phê duyệt là đủ",
-    "Khoản chi phát sinh ngoài hoạt động kinh doanh",
-    "Khoản chi không cần chứng từ nếu dưới 50 triệu"
+    "Khoản chi chỉ cần giám đốc ký duyệt bằng văn bản nội bộ là đủ điều kiện",
+    "Khoản chi phát sinh ngoài hoạt động kinh doanh, phục vụ cá nhân chủ sở hữu",
+    "Khoản chi không cần chứng từ thanh toán nếu dưới 50 triệu đồng mỗi lần, kể cả tiền mặt"
    ],
    "answer": 0,
    "explain": "Điểm c khoản 1 Điều 9.",
@@ -47,9 +47,9 @@
    "q": "Khoản chi cho nghiên cứu và phát triển được hưởng ưu đãi gì theo điểm a khoản 1 Điều 9?",
    "options": [
     "Có thể có chi phí bổ sung được trừ theo tỷ lệ phần trăm trên chi phí thực tế",
-    "Không được trừ",
-    "Chỉ được trừ 50%",
-    "Được hoàn thuế ngay"
+    "Không được trừ vào thu nhập chịu thuế, chỉ được tính vào chi phí năm sau",
+    "Không có khoản chi nào được trừ, kể cả chi phí thực tế đã có đầy đủ chứng từ hợp lệ",
+    "Được hoàn thuế ngay lập tức toàn bộ khoản chi nghiên cứu trong năm"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 1 Điều 9.",

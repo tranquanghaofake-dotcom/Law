@@ -31,9 +31,9 @@
    "q": "Trường hợp nào làm VBQPPL hết hiệu lực theo khoản 1 Điều 57?",
    "options": [
     "Hết thời hạn có hiệu lực; được sửa đổi, bổ sung, thay thế bằng văn bản mới của chính cơ quan ban hành; bị bãi bỏ",
-    "Bị dư luận phản đối",
-    "Cơ quan ban hành đổi tên",
-    "Không được đăng báo in"
+    "Bị dư luận xã hội phản đối kịch liệt trên các phương tiện truyền thông đại chúng, báo chí và mạng xã hội",
+    "Cơ quan ban hành đổi tên, tổ chức lại bộ máy, chuyển trụ sở sang địa phương khác và thay đổi biên chế nhân sự của cơ quan",
+    "Không được đăng báo in, không được phát hành trên mạng xã hội chính thức và các kênh truyền thông trong nước"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 57.",
@@ -48,9 +48,9 @@
    "q": "Khi văn bản được thay thế hết hiệu lực, văn bản quy định chi tiết nó thì sao?",
    "options": [
     "Hết hiệu lực, trừ trường hợp được công bố tiếp tục có hiệu lực toàn bộ hoặc một phần",
-    "Vẫn có hiệu lực vô thời hạn",
-    "Tự động trở thành luật",
-    "Phải được Quốc hội phê chuẩn lại"
+    "Vẫn có hiệu lực vô thời hạn, trừ khi có văn bản mới của Quốc hội quy định khác hiện hành đó",
+    "Tự động trở thành luật và phải được Quốc hội thông qua lại toàn bộ nội dung",
+    "Phải được Quốc hội phê chuẩn lại toàn bộ và công bố trên Công báo trước đó"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 57.",

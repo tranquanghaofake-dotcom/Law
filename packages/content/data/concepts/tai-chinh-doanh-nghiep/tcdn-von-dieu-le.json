@@ -31,9 +31,9 @@
    "q": "Vốn điều lệ của công ty cổ phần khi thành lập được xác định thế nào?",
    "options": [
     "Tổng mệnh giá cổ phần đã bán hoặc được đăng ký mua",
-    "Tổng giá trị thị trường của cổ phiếu",
-    "Tổng tài sản của công ty",
-    "Tổng số vốn vay"
+    "Tổng giá trị thị trường cổ phiếu tại thời điểm đăng ký",
+    "Tổng tài sản của công ty tại thời điểm thành lập",
+    "Tổng số vốn vay ngân hàng và trái phiếu đã phát hành"
    ],
    "answer": 0,
    "explain": "Khoản 34 Điều 4.",

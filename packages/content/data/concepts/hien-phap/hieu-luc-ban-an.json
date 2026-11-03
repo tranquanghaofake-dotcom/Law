@@ -45,9 +45,9 @@
    "q": "Ai phải nghiêm chỉnh chấp hành bản án đã có hiệu lực?",
    "options": [
     "Cơ quan, tổ chức, cá nhân hữu quan",
-    "Chỉ bị cáo",
-    "Chỉ Tòa án",
-    "Chỉ cơ quan công an"
+    "Chỉ bị cáo và người bị hại trong vụ án",
+    "Chỉ Tòa án nhân dân cấp tỉnh trở lên",
+    "Chỉ cơ quan công an và Viện kiểm sát"
    ],
    "answer": 0,
    "explain": "Điều 106.",

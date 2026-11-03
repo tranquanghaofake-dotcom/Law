@@ -29,9 +29,9 @@
    "q": "Theo Điều 86 Hiến pháp 2013, Chủ tịch nước là ai?",
    "options": [
     "Người đứng đầu Nhà nước, thay mặt nước CHXHCN Việt Nam về đối nội và đối ngoại",
-    "Người đứng đầu Chính phủ",
-    "Người đứng đầu Quốc hội",
-    "Người đứng đầu hệ thống Tòa án"
+    "Người đứng đầu Chính phủ, điều hành toàn bộ hoạt động quản lý nhà nước và các cơ quan",
+    "Người đứng đầu Quốc hội, điều hành toàn bộ hoạt động lập pháp và các cơ quan",
+    "Người đứng đầu hệ thống Tòa án nhân dân các cấp và Viện kiểm sát trên cả nước"
    ],
    "answer": 0,
    "explain": "Điều 86.",
@@ -46,7 +46,7 @@
    "q": "Người đứng đầu Chính phủ là ai?",
    "options": [
     "Thủ tướng Chính phủ",
-    "Chủ tịch nước",
+    "Bộ trưởng Tư pháp cũ",
     "Chủ tịch Quốc hội",
     "Phó Chủ tịch nước"
    ],

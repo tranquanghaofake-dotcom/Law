@@ -47,9 +47,9 @@
    "q": "Cá nhân không cư trú nộp thuế TNCN với thu nhập nào?",
    "options": [
     "Thu nhập chịu thuế phát sinh trong lãnh thổ Việt Nam",
-    "Mọi thu nhập trong và ngoài Việt Nam",
-    "Không phải nộp thuế",
-    "Chỉ thu nhập từ bất động sản ở nước ngoài"
+    "Mọi thu nhập phát sinh trong và ngoài lãnh thổ Việt Nam",
+    "Không phải nộp thuế đối với mọi khoản thu nhập",
+    "Chỉ thu nhập từ bất động sản ở nước ngoài và cổ tức"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 2.",

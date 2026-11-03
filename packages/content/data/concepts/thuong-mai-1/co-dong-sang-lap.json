@@ -29,9 +29,9 @@
    "q": "Trong 03 năm đầu, cổ đông sáng lập chuyển nhượng cổ phần phổ thông cho người không phải cổ đông sáng lập cần điều kiện gì?",
    "options": [
     "Được Đại hội đồng cổ đông chấp thuận",
-    "Được Hội đồng quản trị đồng ý",
-    "Không cần điều kiện",
-    "Bị cấm tuyệt đối"
+    "Được Hội đồng quản trị đồng ý trước",
+    "Không cần điều kiện, chỉ thông báo",
+    "Bị cấm tuyệt đối trong mọi trường hợp"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 120.",

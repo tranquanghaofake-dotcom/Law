@@ -29,9 +29,9 @@
    "q": "Người từ đủ 12 đến dưới 14 tuổi bị đưa vào trường giáo dưỡng khi nào?",
    "options": [
     "Thực hiện hành vi có dấu hiệu tội phạm đặc biệt nghiêm trọng",
-    "Vi phạm giao thông",
-    "Trộm cắp tài sản giá trị nhỏ lần đầu",
-    "Đi học muộn nhiều lần"
+    "Vi phạm giao thông đường bộ, đường sắt nhiều lần trong năm",
+    "Trộm cắp tài sản giá trị nhỏ lần đầu và có hoàn trả đầy đủ",
+    "Đi học muộn nhiều lần trong một học kỳ và vắng mặt không lý do"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 92.",
@@ -46,9 +46,9 @@
    "q": "Vì sao khoản 2 Điều 92 loại trừ các tội tại khoản 2 Điều 12 BLHS?",
    "options": [
     "Vì người 14–16 tuổi phạm các tội đó phải chịu trách nhiệm hình sự",
-    "Vì các tội đó nhẹ",
-    "Vì đã bị bãi bỏ",
-    "Vì không có tội nào trong danh sách"
+    "Vì các tội đó nhẹ và không gây thiệt hại đáng kể cho xã hội",
+    "Vì đã bị bãi bỏ theo văn bản mới của Quốc hội, Chính phủ và cơ quan",
+    "Vì không có tội nào trong danh sách các tội nhẹ được quy định"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 92; khoản 2 Điều 12 BLHS.",

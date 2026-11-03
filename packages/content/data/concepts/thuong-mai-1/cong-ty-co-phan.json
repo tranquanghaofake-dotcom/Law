@@ -48,8 +48,8 @@
    "options": [
     "Thành nhiều phần bằng nhau gọi là cổ phần",
     "Theo tỷ lệ thỏa thuận của thành viên",
-    "Thành phần vốn góp không bằng nhau",
-    "Không chia"
+    "Chia thành phần vốn góp không bằng nhau",
+    "Không chia thành phần nào, chỉ có một vốn chung"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 1 Điều 111.",

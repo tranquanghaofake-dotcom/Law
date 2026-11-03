@@ -48,9 +48,9 @@
    "q": "Từ ngày 01/01/2026, hộ kinh doanh nộp thuế theo phương pháp nào?",
    "options": [
     "Không áp dụng khoán thuế; nộp thuế theo pháp luật về quản lý thuế",
-    "Tiếp tục khoán thuế",
-    "Không phải nộp thuế",
-    "Nộp lệ phí môn bài thay thuế"
+    "Tiếp tục khoán thuế theo doanh thu ước tính do cơ quan thuế ấn định",
+    "Được miễn toàn bộ thuế và không phải kê khai thuế hằng năm",
+    "Nộp lệ phí môn bài hằng năm thay cho thuế giá trị gia tăng"
    ],
    "answer": 0,
    "explain": "Khoản 6 Điều 10.",

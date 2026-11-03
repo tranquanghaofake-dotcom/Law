@@ -31,8 +31,8 @@
    "q": "Chủ thể nào KHÔNG có quyền trình dự án luật trước Quốc hội theo Điều 84?",
    "options": [
     "Ủy ban nhân dân tỉnh",
-    "Chính phủ",
-    "Kiểm toán nhà nước",
+    "Chính phủ trung ương",
+    "Kiểm toán nhà nước TW",
     "Đại biểu Quốc hội"
    ],
    "answer": 0,
@@ -48,9 +48,9 @@
    "q": "Dự án pháp lệnh được trình trước cơ quan nào?",
    "options": [
     "Ủy ban thường vụ Quốc hội",
-    "Quốc hội tại kỳ họp",
-    "Chính phủ",
-    "Chủ tịch nước"
+    "Quốc hội tại kỳ họp hằng năm",
+    "Chính phủ và Thủ tướng",
+    "Chủ tịch nước, Phó chủ tịch"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 84.",

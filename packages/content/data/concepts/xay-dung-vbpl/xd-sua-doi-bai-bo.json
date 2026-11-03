@@ -31,9 +31,9 @@
    "q": "Ai có quyền sửa đổi, bổ sung, thay thế một văn bản quy phạm pháp luật?",
    "options": [
     "Chính cơ quan, người có thẩm quyền đã ban hành văn bản đó, bằng VBQPPL",
-    "Bất kỳ cơ quan cấp trên nào",
-    "Bộ Tư pháp",
-    "Tòa án nhân dân tối cao"
+    "Bất kỳ cơ quan cấp trên nào có thẩm quyền quyết định trong từng trường hợp",
+    "Bộ Tư pháp, sau khi kiểm tra và đề nghị cơ quan ban hành sửa đổi",
+    "Tòa án nhân dân tối cao, theo yêu cầu của người dân và tổ chức có liên quan"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 8.",
@@ -48,9 +48,9 @@
    "q": "Hệ quả của việc văn bản bị đình chỉ việc thi hành là gì?",
    "options": [
     "Tạm ngưng hiệu lực cho đến khi có quyết định xử lý của cơ quan, người có thẩm quyền",
-    "Hết hiệu lực vĩnh viễn ngay",
-    "Vẫn có hiệu lực bình thường",
-    "Tự động được sửa đổi"
+    "Hết hiệu lực vĩnh viễn ngay kể từ ngày bị đình chỉ, không có quyết định xử lý nào",
+    "Vẫn có hiệu lực bình thường và được áp dụng đầy đủ như trước khi bị đình chỉ hiệu lực",
+    "Tự động được sửa đổi, bổ sung bởi cơ quan cấp dưới theo ý kiến của mình"
    ],
    "answer": 0,
    "explain": "Điểm b khoản 1 Điều 56.",

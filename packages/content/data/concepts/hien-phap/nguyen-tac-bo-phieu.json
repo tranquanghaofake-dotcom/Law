@@ -29,9 +29,9 @@
    "q": "Cử tri không tự viết được phiếu bầu thì làm thế nào theo khoản 3 Điều 69?",
    "options": [
     "Nhờ người khác viết hộ nhưng phải tự mình bỏ phiếu",
-    "Nhờ người khác đi bầu thay",
-    "Được miễn bầu cử",
-    "Tổ bầu cử viết thay và bỏ phiếu"
+    "Nhờ người khác đi bầu thay cho mình tại phòng bỏ phiếu",
+    "Được miễn bầu cử và không cần bỏ phiếu gì nữa",
+    "Tổ bầu cử viết thay phiếu và tự bỏ phiếu cho cử tri"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 69.",

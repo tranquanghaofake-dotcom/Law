@@ -46,9 +46,9 @@
    "q": "Ai bị nghiêm cấm can thiệp vào việc xét xử của Thẩm phán, Hội thẩm?",
    "options": [
     "Mọi cơ quan, tổ chức, cá nhân",
-    "Chỉ đương sự",
-    "Chỉ báo chí",
-    "Chỉ luật sư"
+    "Chỉ đương sự trong vụ án đó",
+    "Chỉ báo chí đưa tin về vụ án",
+    "Chỉ luật sư bào chữa trong vụ án"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 103.",

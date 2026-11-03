@@ -48,9 +48,9 @@
    "q": "Ai có quyền dùng tài sản để góp vốn?",
    "options": [
     "Chủ sở hữu hợp pháp hoặc người có quyền sử dụng hợp pháp tài sản",
-    "Bất kỳ ai đang giữ tài sản",
-    "Chỉ cổ đông sáng lập",
-    "Chỉ người có quốc tịch Việt Nam"
+    "Bất kỳ ai đang giữ tài sản, kể cả người chỉ được thuê hoặc mượn",
+    "Chỉ cổ đông sáng lập của công ty cổ phần tại thời điểm thành lập",
+    "Chỉ người có quốc tịch Việt Nam và có hộ khẩu thường trú tại đây"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 34.",

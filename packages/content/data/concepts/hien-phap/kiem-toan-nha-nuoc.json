@@ -47,9 +47,9 @@
    "q": "Tổng Kiểm toán nhà nước chịu trách nhiệm và báo cáo trước ai trong thời gian Quốc hội không họp?",
    "options": [
     "Ủy ban thường vụ Quốc hội",
-    "Chính phủ",
-    "Chủ tịch nước",
-    "Thủ tướng"
+    "Chính phủ và Thủ tướng",
+    "Chủ tịch nước hiện nay",
+    "Thủ tướng Chính phủ hiện nay"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 118.",

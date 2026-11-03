@@ -29,9 +29,9 @@
    "q": "Pháp nhân thương mại phải chịu trách nhiệm hình sự khi nào?",
    "options": [
     "Khi phạm một tội được quy định tại Điều 76 Bộ luật Hình sự",
-    "Khi phạm bất kỳ tội nào trong Bộ luật Hình sự",
-    "Khi người đại diện bị kết án",
-    "Khi vi phạm hành chính nhiều lần"
+    "Khi phạm bất kỳ tội nào trong Bộ luật Hình sự và có lợi nhuận",
+    "Khi người đại diện theo pháp luật bị kết án đã thi hành xong",
+    "Khi vi phạm hành chính nhiều lần trong một năm và có lợi ích"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 2.",
@@ -46,9 +46,9 @@
    "q": "Một người chỉ phải chịu trách nhiệm hình sự khi nào?",
    "options": [
     "Phạm một tội đã được Bộ luật Hình sự quy định",
-    "Có hành vi trái đạo đức",
-    "Bị cơ quan nhà nước kỷ luật",
-    "Gây thiệt hại về tài sản"
+    "Có hành vi trái đạo đức xã hội và gây hậu quả",
+    "Bị cơ quan nhà nước kỷ luật bằng văn bản",
+    "Gây thiệt hại về tài sản cho người khác"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 2.",

@@ -32,9 +32,9 @@
    "q": "Kiểm tra văn bản quy phạm pháp luật kết luận về điều gì?",
    "options": [
     "Tính hợp hiến, hợp pháp, thống nhất với hệ thống pháp luật của văn bản được kiểm tra",
-    "Hiệu quả kinh tế của văn bản",
-    "Mức độ hài lòng của người dân",
-    "Tính thẩm mỹ của hình thức"
+    "Hiệu quả kinh tế của văn bản trong thực tiễn áp dụng và chi phí ngân sách hằng năm của cơ quan",
+    "Mức độ hài lòng của người dân đối với cơ quan ban hành văn bản và cán bộ thực thi",
+    "Tính thẩm mỹ của hình thức trình bày, màu sắc, kiểu chữ và bố cục của văn bản"
    ],
    "answer": 0,
    "explain": "Khoản 6 Điều 3.",
@@ -49,9 +49,9 @@
    "q": "Chính phủ kiểm tra theo thẩm quyền văn bản của chủ thể nào?",
    "options": [
     "Bộ trưởng, Thủ trưởng cơ quan ngang Bộ, HĐND và UBND cấp tỉnh, Chủ tịch UBND cấp tỉnh",
-    "Quốc hội",
-    "Chủ tịch nước",
-    "Tòa án nhân dân tối cao"
+    "Quốc hội, Ủy ban Thường vụ Quốc hội, các Hội đồng và các ủy ban của Quốc hội thuộc lĩnh vực",
+    "Chủ tịch nước và Chủ tịch Quốc hội, cùng các thành viên Hội đồng quốc phòng và an ninh",
+    "Tòa án nhân dân tối cao và Viện kiểm sát nhân dân tối cao cùng cấp, theo chỉ đạo của Chính phủ"
    ],
    "answer": 0,
    "explain": "Điểm b khoản 1 Điều 63.",

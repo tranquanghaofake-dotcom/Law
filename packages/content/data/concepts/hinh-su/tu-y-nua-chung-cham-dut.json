@@ -30,9 +30,9 @@
    "q": "Người tự ý nửa chừng chấm dứt việc phạm tội được hưởng gì?",
    "options": [
     "Miễn TNHS về tội định phạm",
-    "Miễn TNHS về mọi hành vi",
-    "Giảm một nửa hình phạt",
-    "Không được hưởng gì"
+    "Miễn TNHS về mọi tội đã làm",
+    "Giảm một nửa hình phạt tù",
+    "Không hưởng gì, vẫn bị xử"
    ],
    "answer": 0,
    "explain": "Điều 16.",
@@ -47,7 +47,7 @@
    "q": "Nếu hành vi thực tế đã thực hiện cấu thành một tội khác thì người tự ý nửa chừng chấm dứt việc phạm tội thế nào?",
    "options": [
     "Phải chịu TNHS về tội khác đó",
-    "Được miễn toàn bộ TNHS",
+    "Được miễn toàn bộ TNHS mọi việc",
     "Chịu TNHS về tội định phạm",
     "Chỉ bị xử phạt hành chính"
    ],

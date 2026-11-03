@@ -31,9 +31,9 @@
    "q": "Trái phiếu xác nhận quyền của người sở hữu đối với gì?",
    "options": [
     "Một phần nợ của tổ chức phát hành",
-    "Một phần vốn cổ phần",
-    "Một phần vốn góp của quỹ",
-    "Quyền mua cổ phiếu"
+    "Một phần vốn cổ phần của doanh nghiệp",
+    "Một phần vốn góp của quỹ đầu tư",
+    "Quyền mua cổ phiếu mới phát hành thêm"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 4.",

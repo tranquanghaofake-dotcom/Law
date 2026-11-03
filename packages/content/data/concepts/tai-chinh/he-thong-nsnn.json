@@ -30,9 +30,9 @@
    "q": "Theo Luật NSNN 2025, ngân sách địa phương gồm những cấp nào?",
    "options": [
     "Ngân sách cấp tỉnh và ngân sách cấp xã",
-    "Tỉnh, huyện, xã",
-    "Chỉ cấp tỉnh",
-    "Tỉnh, huyện"
+    "Ngân sách cấp tỉnh, cấp huyện và xã",
+    "Ngân sách cấp huyện và ngân sách cấp xã",
+    "Ngân sách cấp tỉnh, cấp huyện và cấp thôn"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 6.",
@@ -47,9 +47,9 @@
    "q": "Phân cấp quản lý ngân sách là gì?",
    "options": [
     "Xác định phạm vi, trách nhiệm, quyền hạn của chính quyền các cấp, đơn vị dự toán trong quản lý NSNN phù hợp với phân cấp quản lý kinh tế - xã hội",
-    "Chia đều ngân sách cho các tỉnh",
-    "Giao toàn bộ ngân sách cho Bộ Tài chính",
-    "Cho phép địa phương tự đặt ra thuế"
+    "Xác định phạm vi thu, chi của từng cơ quan trung ương để giao đều chỉ tiêu cho các địa phương theo dân số và diện tích tự nhiên",
+    "Giao toàn bộ quyền quyết định thu, chi ngân sách cho Bộ Tài chính, không phân cấp cho chính quyền các cấp theo kinh tế - xã hội",
+    "Cho phép chính quyền địa phương tự đặt ra loại thuế, mức thuế và phạm vi thu ngân sách riêng, không phụ thuộc vào pháp luật và không cần phân cấp quản lý"
    ],
    "answer": 0,
    "explain": "Khoản 20 Điều 4.",

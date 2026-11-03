@@ -8,10 +8,10 @@
     {
       "q": "Cảnh sát phạt người không đội mũ bảo hiểm 300.000 đồng, phát hiện trực tiếp. Thủ tục nào được áp dụng?",
       "options": [
-        "Phải lập biên bản",
+        "Phải lập biên bản đầy đủ trước khi ra quyết định xử phạt",
         "Có thể xử phạt không lập biên bản, ra quyết định tại chỗ",
-        "Chuyển Tòa án",
-        "Chỉ nhắc nhở"
+        "Chuyển Tòa án xử lý theo thủ tục tố tụng hình sự",
+        "Chỉ nhắc nhở người vi phạm và không xử phạt gì thêm"
       ],
       "answer": 1,
       "explain": "Điểm a khoản 1, khoản 3 Điều 56.",
@@ -34,10 +34,10 @@
     {
       "q": "Thời hạn ra quyết định xử phạt thông thường kể từ ngày lập biên bản là bao lâu?",
       "options": [
-        "03 ngày",
+        "03 ngày làm việc",
         "07 ngày làm việc",
-        "30 ngày",
-        "01 tháng"
+        "30 ngày làm việc",
+        "01 tháng làm việc"
       ],
       "answer": 1,
       "explain": "Điểm a khoản 1 Điều 66.",
@@ -47,10 +47,10 @@
     {
       "q": "Người bị xử phạt phải chấp hành quyết định trong thời hạn bao lâu (trừ trường hợp luật khác)?",
       "options": [
-        "05 ngày",
+        "05 ngày kể từ ngày nhận quyết định",
         "10 ngày kể từ ngày nhận quyết định",
-        "30 ngày",
-        "01 năm"
+        "30 ngày kể từ ngày nhận quyết định",
+        "01 năm kể từ ngày nhận quyết định"
       ],
       "answer": 1,
       "explain": "Khoản 1 Điều 73.",
@@ -60,10 +60,10 @@
     {
       "q": "Doanh nghiệp không nộp phạt sau thời hạn. Biện pháp nào được áp dụng?",
       "options": [
-        "Tạm giam giám đốc",
+        "Tạm giam người đại diện theo pháp luật",
         "Khấu trừ tiền từ tài khoản của doanh nghiệp",
-        "Giải thể doanh nghiệp",
-        "Đưa vào cơ sở giáo dục bắt buộc"
+        "Giải thể doanh nghiệp theo quyết định hành chính",
+        "Đưa vào cơ sở giáo dục bắt buộc người đại diện"
       ],
       "answer": 1,
       "explain": "Điểm a khoản 2 Điều 86.",
@@ -73,10 +73,10 @@
     {
       "q": "Biện pháp xử lý hành chính áp dụng cho đối tượng nào?",
       "options": [
-        "Tổ chức vi phạm thuế",
+        "Tổ chức vi phạm pháp luật về thuế, kế toán, tài chính và hải quan nhà nước",
         "Cá nhân vi phạm pháp luật về an ninh, trật tự, an toàn xã hội mà không phải tội phạm",
-        "Mọi người vi phạm giao thông",
-        "Cán bộ vi phạm kỷ luật"
+        "Mọi người vi phạm giao thông đường bộ và đường sắt trên lãnh thổ Việt Nam hiện nay",
+        "Cán bộ vi phạm kỷ luật và bị đình chỉ công tác trong thời gian điều tra vụ việc cụ thể"
       ],
       "answer": 1,
       "explain": "Khoản 3 Điều 2.",
@@ -100,9 +100,9 @@
       "q": "Ai có thẩm quyền quyết định áp dụng biện pháp giáo dục tại xã, phường, đặc khu?",
       "options": [
         "Chủ tịch Ủy ban nhân dân cấp xã",
-        "Tòa án nhân dân tối cao",
-        "Bộ trưởng Bộ Công an",
-        "Hội đồng nhân dân tỉnh"
+        "Tòa án nhân dân tối cao và tòa án",
+        "Bộ trưởng Bộ Công an hoặc Bộ trưởng",
+        "Hội đồng nhân dân tỉnh, thành phố"
       ],
       "answer": 0,
       "explain": "Khoản 1 Điều 105.",
@@ -112,10 +112,10 @@
     {
       "q": "Em A 13 tuổi có hành vi có dấu hiệu tội phạm đặc biệt nghiêm trọng. Biện pháp có thể áp dụng là gì?",
       "options": [
-        "Phạt tiền",
+        "Phạt tiền và cảnh cáo nhẹ",
         "Đưa vào trường giáo dưỡng",
-        "Phạt tù",
-        "Không có biện pháp"
+        "Phạt tù có thời hạn ngắn",
+        "Không có biện pháp nào khác"
       ],
       "answer": 1,
       "explain": "Khoản 1 Điều 92.",

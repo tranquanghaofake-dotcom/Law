@@ -50,9 +50,9 @@
    "q": "Văn bản ban hành theo trình tự, thủ tục rút gọn có thể có hiệu lực từ khi nào?",
    "options": [
     "Kể từ ngày thông qua hoặc ký ban hành, đồng thời phải đăng tải ngay",
-    "Sau 45 ngày như thông thường",
-    "Sau khi Chủ tịch nước công bố 15 ngày",
-    "Chỉ sau khi đăng Công báo giấy"
+    "Sau 45 ngày như thông thường kể từ ngày ký ban hành, không theo rút gọn",
+    "Sau khi Chủ tịch nước công bố và chờ thêm 15 ngày kể từ ngày công bố",
+    "Chỉ sau khi đăng Công báo giấy và đăng báo in trung ương hằng ngày"
    ],
    "answer": 0,
    "explain": "Đoạn 2 khoản 1 Điều 53.",

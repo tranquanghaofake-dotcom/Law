@@ -31,9 +31,9 @@
    "q": "Khoản chi ngân sách được thực hiện khi nào?",
    "options": [
     "Khi có dự toán được cấp có thẩm quyền giao, trừ trường hợp tạm cấp ngân sách",
-    "Khi thủ trưởng đơn vị đồng ý",
-    "Bất cứ khi nào có nguồn",
-    "Khi được Kho bạc cho vay"
+    "Khi thủ trưởng đơn vị đồng ý bằng văn bản, không cần có dự toán được giao",
+    "Bất cứ khi nào đơn vị có nguồn tiền dư từ năm trước, không cần dự toán được giao",
+    "Khi được Kho bạc Nhà nước cho vay trước để bảo đảm thanh toán công việc phát sinh"
    ],
    "answer": 0,
    "explain": "Khoản 4 Điều 8.",
@@ -48,9 +48,9 @@
    "q": "Nguyên tắc nào đòi hỏi mọi khoản thu, chi phải được đưa vào ngân sách?",
    "options": [
     "Toàn bộ các khoản thu, chi phải được dự toán, tổng hợp đầy đủ vào ngân sách nhà nước",
-    "Nguyên tắc tự chủ tài chính",
-    "Nguyên tắc bí mật ngân sách",
-    "Nguyên tắc lợi nhuận"
+    "Nguyên tắc tự chủ tài chính, theo đó các đơn vị tự quyết định mọi khoản thu, chi ngoài ngân sách",
+    "Nguyên tắc bí mật ngân sách, theo đó các khoản thu, chi chỉ báo cáo cơ quan tài chính cấp trên",
+    "Nguyên tắc lợi nhuận, theo đó các khoản thu, chi phải tạo ra lợi nhuận tối đa cho ngân sách"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 8.",

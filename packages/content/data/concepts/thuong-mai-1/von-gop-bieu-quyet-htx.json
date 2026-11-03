@@ -47,9 +47,9 @@
    "q": "Tại Đại hội thành viên toàn thể của hợp tác xã, mỗi thành viên chính thức có bao nhiêu phiếu biểu quyết?",
    "options": [
     "Một phiếu, không phụ thuộc vốn góp hay chức vụ",
-    "Tương ứng tỷ lệ vốn góp",
-    "Do Hội đồng quản trị quyết định",
-    "Hai phiếu nếu là thành viên sáng lập"
+    "Tương ứng tỷ lệ vốn góp của từng thành viên",
+    "Do Hội đồng quản trị quyết định theo từng vụ việc",
+    "Hai phiếu nếu là thành viên sáng lập đã góp đủ vốn"
    ],
    "answer": 0,
    "explain": "Khoản 4 Điều 61.",

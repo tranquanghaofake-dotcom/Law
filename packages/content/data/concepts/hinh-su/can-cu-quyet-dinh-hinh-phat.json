@@ -29,9 +29,9 @@
    "q": "Khi quyết định hình phạt tiền, Tòa án căn cứ thêm vào yếu tố nào?",
    "options": [
     "Tình hình tài sản, khả năng thi hành của người phạm tội",
-    "Ý kiến của người bị hại",
-    "Thu nhập trung bình của địa phương",
-    "Nghề nghiệp của gia đình"
+    "Ý kiến của người bị hại về mức bồi thường thiệt hại",
+    "Thu nhập trung bình của người dân trên địa bàn tỉnh, thành phố",
+    "Nghề nghiệp của gia đình người phạm tội và người bị hại"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 50.",

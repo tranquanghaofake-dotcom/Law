@@ -31,9 +31,9 @@
    "q": "Trường hợp nào được xây dựng, ban hành VBQPPL theo trình tự, thủ tục rút gọn?",
    "options": [
     "Trường hợp khẩn cấp, yêu cầu đột xuất vì quốc phòng, an ninh, thiên tai, dịch bệnh",
-    "Khi cơ quan soạn thảo thiếu nhân lực",
-    "Khi muốn tránh lấy ý kiến nhân dân",
-    "Mọi nghị quyết của HĐND"
+    "Khi cơ quan soạn thảo thiếu nhân lực và kinh phí để tổ chức lấy ý kiến đầy đủ",
+    "Khi muốn tránh lấy ý kiến nhân dân và cơ quan có liên quan trong quá trình soạn thảo",
+    "Mọi nghị quyết của HĐND cấp tỉnh về ngân sách địa phương và chính sách thu chi"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 1 Điều 50.",
@@ -48,9 +48,9 @@
    "q": "Hệ quả của việc áp dụng thủ tục rút gọn với văn bản thuộc khoản 1 Điều 27 là gì?",
    "options": [
     "Không phải thực hiện quy trình xây dựng chính sách",
-    "Không cần thẩm tra",
-    "Không cần đăng tải",
-    "Không cần ký ban hành"
+    "Không cần thẩm tra nội dung và thẩm định tư pháp",
+    "Không cần đăng tải lên cổng thông tin điện tử",
+    "Không cần ký ban hành của người có thẩm quyền nội bộ"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 51.",

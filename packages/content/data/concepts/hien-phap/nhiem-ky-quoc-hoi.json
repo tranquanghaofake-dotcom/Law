@@ -47,9 +47,9 @@
    "q": "Việc kéo dài nhiệm kỳ Quốc hội (ngoài trường hợp chiến tranh) được tối đa bao lâu?",
    "options": [
     "Không quá mười hai tháng",
-    "Không quá sáu tháng",
-    "Không quá hai năm",
-    "Không giới hạn"
+    "Không quá sáu tháng nữa",
+    "Không quá hai năm kể từ đó",
+    "Không giới hạn về thời gian"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 71.",

@@ -47,9 +47,9 @@
    "q": "Cơ quan nào có thẩm quyền giải thích Hiến pháp, luật, pháp lệnh?",
    "options": [
     "Ủy ban thường vụ Quốc hội",
-    "Tòa án nhân dân tối cao",
-    "Chính phủ",
-    "Bộ Tư pháp"
+    "Tòa án nhân dân tối cao cấp",
+    "Chính phủ và Thủ tướng",
+    "Bộ Tư pháp và Bộ Nội vụ"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 74.",
@@ -107,9 +107,9 @@
    "q": "Một Bộ trưởng được đề cử làm Ủy viên Ủy ban thường vụ Quốc hội nhưng vẫn muốn giữ chức Bộ trưởng. Có được không?",
    "options": [
     "Không, thành viên Ủy ban thường vụ Quốc hội không thể đồng thời là thành viên Chính phủ",
-    "Có, nếu Thủ tướng đồng ý",
-    "Có, vì Bộ trưởng cũng là đại biểu Quốc hội",
-    "Có, trong nhiệm kỳ đầu"
+    "Có, nếu Thủ tướng đồng ý và Chủ tịch Quốc hội chấp thuận bằng văn bản trước kỳ họp",
+    "Có, vì Bộ trưởng cũng là đại biểu Quốc hội và có quyền biểu quyết như mọi thành viên khác",
+    "Có, trong nhiệm kỳ đầu tiên và chỉ trong năm đầu của nhiệm kỳ công tác và được Quốc hội cho phép"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 73.",

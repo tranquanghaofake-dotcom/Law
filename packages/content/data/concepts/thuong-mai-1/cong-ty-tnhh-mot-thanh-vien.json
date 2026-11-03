@@ -29,9 +29,9 @@
    "q": "Chủ sở hữu công ty TNHH một thành viên có thể là ai?",
    "options": [
     "Một tổ chức hoặc một cá nhân",
-    "Chỉ cá nhân",
-    "Chỉ tổ chức",
-    "Hai cá nhân"
+    "Chỉ cá nhân có quốc tịch Việt",
+    "Chỉ tổ chức kinh tế nước ngoài",
+    "Hai cá nhân trở lên đồng sở hữu"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 74.",
@@ -46,9 +46,9 @@
    "q": "Công ty TNHH một thành viên có được phát hành trái phiếu không?",
    "options": [
     "Có, theo quy định của luật",
-    "Không",
-    "Chỉ khi chuyển đổi",
-    "Chỉ trái phiếu chuyển đổi"
+    "Không, không được phát hành",
+    "Chỉ khi được chuyển đổi",
+    "Chỉ trái phiếu có chuyển đổi"
    ],
    "answer": 0,
    "explain": "Khoản 4 Điều 74.",
