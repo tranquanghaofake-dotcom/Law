@@ -2,11 +2,11 @@ import { describe, expect, it } from 'vitest';
 import { POSTS } from '$lib/game/career';
 import { outfitFor } from '$lib/game/wardrobe';
 import { TONE_PALETTES } from '$lib/art/showcase/tones';
-import { ADORNS, BACKDROPS, PROPS, SKIES, TONES, lookFor, lookSignature, type Look } from '$lib/game/looks';
+import { ADORNS, BACKDROPS, NECKS, PATTERNS, PROPS, SKIES, TONES, lookFor, lookSignature, type Look } from '$lib/game/looks';
 
 const ids: (string | null)[] = [null, ...POSTS.map((p) => p.id)];
 const all = ids.map((id) => lookFor(id));
-const DIMS: (keyof Look)[] = ['outfit', 'tone', 'adorn', 'propL', 'propR', 'backdrop', 'sky'];
+const DIMS: (keyof Look)[] = ['outfit', 'tone', 'pattern', 'neck', 'adorn', 'propL', 'propR', 'backdrop', 'sky'];
 const dist = (a: Look, b: Look) => DIMS.filter((k) => a[k] !== b[k]).length;
 
 describe('lookFor — tổ hợp tủ trưng bày cho 29 chức + Công dân', () => {
@@ -14,7 +14,7 @@ describe('lookFor — tổ hợp tủ trưng bày cho 29 chức + Công dân', (
     expect(all).toHaveLength(30);
     expect(new Set(all.map(lookSignature)).size).toBe(30);
   });
-  it('hai chức bất kỳ khác nhau ít nhất 3 trong 7 chiều nhìn thấy (trang phục, màu, phụ kiện, hai đồ vật, phông, trời)', () => {
+  it('hai chức bất kỳ khác nhau ít nhất 3 trong 9 chiều nhìn thấy (trang phục, màu, hoạ tiết, kiểu cổ, phụ kiện, hai đồ vật, phông, trời)', () => {
     const bad: string[] = [];
     for (let i = 0; i < all.length; i++) for (let j = i + 1; j < all.length; j++) if (dist(all[i], all[j]) < 3) bad.push(`${all[i].id} ~ ${all[j].id}`);
     expect(bad).toEqual([]);
@@ -33,6 +33,7 @@ describe('lookFor — tổ hợp tủ trưng bày cho 29 chức + Công dân', (
       expect(BACKDROPS, l.id).toContain(l.backdrop);
       expect(SKIES, l.id).toContain(l.sky);
       expect(ADORNS, l.id).toContain(l.adorn);
+      expect(PATTERNS, l.id).toContain(l.pattern); expect(NECKS, l.id).toContain(l.neck);
       expect(l.tone, l.id).toBeGreaterThanOrEqual(0); expect(l.tone, l.id).toBeLessThan(TONES[l.outfit]);
       expect(l.propL, l.id).not.toBe(l.propR);
     }

@@ -60,8 +60,8 @@
     {/if}
     <span class="sc-cone" aria-hidden="true"></span>
     <span class="sc-floor" aria-hidden="true"></span>
-    <div class="sc-photo"><GarmentFlat outfit={avatar.outfit} tone={look.tone} adorn={look.adorn} /></div>
-    <div class="sc-reflect" aria-hidden="true"><GarmentFlat outfit={avatar.outfit} tone={look.tone} adorn={look.adorn} /></div>
+    <div class="sc-photo"><GarmentFlat outfit={avatar.outfit} tone={look.tone} adorn={look.adorn} pattern={look.pattern} neck={look.neck} /></div>
+    <div class="sc-reflect" aria-hidden="true"><GarmentFlat outfit={avatar.outfit} tone={look.tone} adorn={look.adorn} pattern={look.pattern} neck={look.neck} /></div>
     <span class="sc-bulb" aria-hidden="true"></span>
     <span class="sc-motes" aria-hidden="true">{#each motes as m, i (i)}<i style="left:{m.x}%;top:{m.y}%;animation-delay:-{m.d}s;animation-duration:{m.s}s"></i>{/each}</span>
     {#if fx === 'hat-sang' || celebrate}
@@ -70,7 +70,7 @@
     <span class="sc-door l" aria-hidden="true"></span><span class="sc-door r" aria-hidden="true"></span>
     <span class="sc-glass" aria-hidden="true"></span>
     {#if locked}
-      <span class="sc-lock" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9.5" rx="2" /><path d="M8 11V8a4 4 0 0 1 8 0v3" /></svg></span>
+      <span class="sc-lock" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9.5" rx="2" /><path d="M8 11V8a4 4 0 0 1 8 0v3" /></svg></span>
     {/if}
   </div>
   <div class="sc-plinth">
