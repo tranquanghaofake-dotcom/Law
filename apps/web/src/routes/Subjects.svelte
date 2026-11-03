@@ -8,9 +8,7 @@
   import { SHELVES, OTHER_SHELF, shelfOf, orderedSubjects, byRecency, lastStudiedBySubject, type Shelf } from '$lib/ui/shelves';
   import { coverTitle, matchSubject } from '$lib/ui/bookCover';
   import { knownConcepts } from '$lib/ui/today';
-  import SubjectArt from '$lib/art/SubjectArt.svelte';
   import BookCover from '$lib/art/BookCover.svelte';
-  import { PAGE_ART } from '$lib/art/registry';
 
   type Item = { subject: Subject; s: SubjectSummary; shelf: Shelf; state: 'new' | 'learning' | 'done' };
   let items = $state<Item[] | null>(null);
@@ -57,11 +55,15 @@
 {/snippet}
 
 <header class="page-head subjects-head">
-  <SubjectArt name={PAGE_ART.subjects} class="head-art" />
+  {#if items}
+    <div class="head-stack" aria-hidden="true">
+      {#each items.slice(0, 3) as it, i (it.subject.id)}<span class="hs-{i}"><BookCover id={it.subject.id} title={coverTitle(it.subject.title)} color={it.shelf.color} state="new" w={92} /></span>{/each}
+    </div>
+  {/if}
   <h1>Môn học</h1>
   <label class="finder">
     <span class="sr-only">Tìm môn</span>
-    <input type="search" placeholder="Tìm môn: gõ không dấu hoặc viết tắt (ds, ttds, hp)" bind:value={query} autocomplete="off" />
+    <input type="search" placeholder="Tìm môn (gõ không dấu, viết tắt)…" bind:value={query} autocomplete="off" />
   </label>
 </header>
 {#if error}

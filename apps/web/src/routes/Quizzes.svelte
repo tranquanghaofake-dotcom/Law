@@ -60,7 +60,7 @@
   </ul>
 
   <section aria-labelledby="qz-sug-h">
-    <h2 class="qz-h" id="qz-sug-h">Gợi ý cho bạn</h2>
+    <h2 class="section-title" id="qz-sug-h"><b>Gợi ý cho bạn</b></h2>
     <div class="qz-sug">
       <div class="sug" style:--shelf={sug.next ? shelfFor(sug.next.group).color : undefined}>
         <p class="sug-k">Đề tiếp theo</p>
@@ -93,7 +93,7 @@
     </div>
   </section>
 
-  <h2 class="qz-h" id="qz-all-h">Tất cả đề</h2>
+  <h2 class="section-title" id="qz-all-h"><b>Tất cả đề</b></h2>
   <div class="qz-tools">
     <div class="shelf-chips" role="group" aria-label="Lọc theo nhóm ngành">
       <button type="button" class="filter" aria-pressed={pick === null} onclick={() => (pick = null)}>Tất cả</button>
