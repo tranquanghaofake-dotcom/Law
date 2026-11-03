@@ -29,9 +29,9 @@
    "q": "Bộ luật Hình sự quy định về nội dung gì theo Điều 1?",
    "options": [
     "Tội phạm và hình phạt",
-    "Vi phạm hành chính và xử phạt",
-    "Thủ tục điều tra, truy tố, xét xử",
-    "Bồi thường thiệt hại ngoài hợp đồng"
+    "Vi phạm hành chính",
+    "Thủ tục điều tra, xét xử",
+    "Bồi thường ngoài hợp đồng"
    ],
    "answer": 0,
    "explain": "Đoạn 2 Điều 1; thủ tục tố tụng thuộc Bộ luật Tố tụng hình sự.",
@@ -48,7 +48,7 @@
     "Điều chỉnh quan hệ hợp đồng giữa các doanh nghiệp",
     "Bảo vệ chủ quyền quốc gia, an ninh của đất nước",
     "Giáo dục mọi người ý thức tuân theo pháp luật",
-    "Phòng ngừa và đấu tranh chống mọi hành vi phạm tội"
+    "Phòng ngừa và đấu tranh chống tội phạm"
    ],
    "answer": 0,
    "explain": "Quan hệ hợp đồng thuộc luật dân sự, thương mại.",

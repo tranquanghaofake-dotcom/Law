@@ -9,9 +9,9 @@
       "q": "Tài khoản của bạn nhận 10 triệu do người lạ chuyển nhầm. Theo Bộ luật Dân sự, bạn có nghĩa vụ gì?",
       "options": [
         "Hoàn trả cho chủ sở hữu",
-        "Được giữ vì tiền đã vào tài khoản của mình",
-        "Chỉ hoàn trả nếu người chuyển chứng minh được lỗi của ngân hàng",
-        "Được giữ một nửa làm phí giữ hộ"
+        "Được giữ vì đã vào tài khoản",
+        "Chỉ trả nếu ngân hàng có lỗi",
+        "Được giữ một nửa làm phí"
       ],
       "answer": 0,
       "explain": "Người chiếm hữu, sử dụng tài sản của người khác mà không có căn cứ pháp luật thì phải hoàn trả cho chủ sở hữu. Tiền vào tài khoản bạn do nhầm lẫn không làm phát sinh quyền sở hữu của bạn.",
@@ -76,7 +76,7 @@
         "Không có nghĩa vụ gì vì số tiền còn nhỏ, chưa đủ mức xử lý hình sự và chưa có yêu cầu nào",
         "Vẫn phải hoàn trả theo Bộ luật Dân sự; chưa đủ ngưỡng 10 triệu của tội chiếm giữ trái phép tài sản",
         "Chắc chắn bị phạt tù nếu không hoàn trả ngay lập tức cho người chuyển nhầm khoản tiền",
-        "Người chuyển nhầm mất quyền đòi lại vì lỗi là của họ và đã chấp nhận hoàn toàn rủi ro của việc chuyển nhầm đó"
+        "Người chuyển nhầm mất quyền đòi lại vì lỗi là của họ và đã chấp nhận hoàn toàn rủi ro của việc chuyển nhầm"
       ],
       "answer": 1,
       "explain": "Nghĩa vụ hoàn trả dân sự không phụ thuộc số tiền hay lỗi của người chuyển. Ngưỡng 10 triệu chỉ dùng để xác định trách nhiệm hình sự theo Điều 176. Người chuyển vẫn có quyền khởi kiện đòi lại.",
@@ -86,7 +86,7 @@
     {
       "q": "Theo Điều 579 BLDS, nếu không tìm được chủ sở hữu của tài sản mà mình đang chiếm hữu không có căn cứ pháp luật thì phải làm gì?",
       "options": [
-        "Được dùng làm của riêng ngay lập tức",
+        "Được dùng làm của riêng",
         "Chia đôi giá trị với người tìm được tài sản",
         "Phải tặng lại cho tổ chức từ thiện",
         "Giao cho cơ quan nhà nước có thẩm quyền"
@@ -101,7 +101,7 @@
       "options": [
         "Báo ngân hàng, giữ nguyên tiền, lưu ảnh chụp giao dịch",
         "Chuyển sang tài khoản khác cho an toàn",
-        "Đăng lên mạng xã hội kèm số tài khoản người chuyển để tìm chủ",
+        "Đăng lên mạng xã hội kèm số tài khoản người chuyển",
         "Chờ xem có ai đòi không rồi tính"
       ],
       "answer": 0,
@@ -127,7 +127,7 @@
       "options": [
         "Chặn liên lạc với người chuyển, xóa toàn bộ tin nhắn giao dịch và đổi số điện thoại",
         "Khẳng định đó là tiền của mình, không cần trả lại cho người chuyển nhầm",
-        "Đổi sang số tài khoản khác để chuyển tiền trả lại cho người khác đó",
+        "Đổi sang số tài khoản khác để chuyển tiền trả lại cho người khác",
         "Chủ động liên hệ, thừa nhận và thỏa thuận lộ trình hoàn trả, lưu lại trao đổi"
       ],
       "answer": 3,
