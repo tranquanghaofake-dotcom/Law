@@ -99,6 +99,21 @@ describe('CardSort', () => {
     expect(container.querySelectorAll('.sort-col')[0].querySelectorAll('li.bad').length).toBe(1);
     expect(onanswer).toHaveBeenCalledWith(expect.objectContaining({ correct: false, chosen: '3/4' }));
   });
+  it('kéo thả bằng Pointer Events: thả lên cột nào thì xếp vào cột đó', async () => {
+    const { container } = render(CardSort, { props: { concept, item, rng, onanswer: () => {} } });
+    const cols = container.querySelectorAll('.sort-col');
+    const card = container.querySelector('.sort-case')!;
+    (document as any).elementsFromPoint = () => [cols[0].firstElementChild!];
+    (card as any).setPointerCapture = () => {};
+    const ev = (type: string, x: number, y: number) => fireEvent(card, Object.assign(new Event(type, { bubbles: true }), { pointerId: 1, pointerType: 'touch', clientX: x, clientY: y, button: 0 }));
+    await ev('pointerdown', 0, 0);
+    await ev('pointermove', 40, 40);
+    expect(card.classList.contains('dragging')).toBe(true);
+    expect(cols[0].classList.contains('over')).toBe(true);
+    await ev('pointerup', 40, 40);
+    expect(container.querySelector('.sort-case.ok')).toBeTruthy(); // tình huống đầu có đáp án 'left'
+    delete (document as any).elementsFromPoint;
+  });
   it('chạm nút cột cũng xếp được', async () => {
     const { container } = render(CardSort, { props: { concept, item, rng, onanswer: () => {} } });
     await fireEvent.click(screen.getByRole('button', { name: /Cột trái/ }));

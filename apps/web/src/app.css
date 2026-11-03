@@ -265,9 +265,8 @@ kbd { font: 600 var(--fs-xs)/1 var(--font-ui); background: rgba(255,255,255,.18)
 .opt.locked .key { background: var(--ok); color: #fff; }
 .match-card .marks { letter-spacing: normal; margin-top: var(--sp-3); }
 @media (max-width: 599px) {
-  /* hẹp: thuật ngữ xếp 2 cột nhỏ phía trên, mô tả xếp dọc bên dưới */
+  /* hẹp: thuật ngữ rồi mô tả xếp dọc, mỗi ô đủ rộng */
   .match-grid { grid-template-columns: 1fr; }
-  .match-col:first-child { grid-template-columns: 1fr 1fr; }
 }
 .sort-stage { min-height: 88px; display: grid; margin-bottom: var(--sp-3); }
 .sort-case { align-self: center; padding: var(--sp-4); border-radius: var(--r-md); border: 2px solid var(--accent); background: color-mix(in srgb, var(--accent) 8%, var(--card)); font-size: var(--fs-md); line-height: var(--lh-snug); cursor: grab; user-select: none; touch-action: none; position: relative; }
