@@ -52,3 +52,12 @@ Mỗi dòng là một tình huống thêm vào câu `pair` (trường `basis` c�
 | `von-gop-bieu-quyet-htx` | Tổng vốn góp của thành viên liên kết không quá 40% vốn điều lệ của liên hiệp hợp tác xã | Liên hiệp hợp tác xã | Khoản 2 Điều 74 Luật Hợp tác xã 2023 |
 
 Tổng: 46 tình huống mới; 25 khái niệm đạt ≥ 4 tình huống.
+
+## Cờ dò trích dẫn (haiku-2)
+
+| id#item | loại | quyết định | ghi chú |
+|---|---|---|---|
+| `cong-ty-hop-danh#0` | hai đáp án | báo nhầm | nhiễu "Cá nhân hoặc tổ chức" sai rõ: thành viên hợp danh phải là cá nhân (điểm b khoản 1 Điều 177 LDN 2020) |
+| `doanh-nghiep#1` | lệch nội dung | báo nhầm | Điều 188 LDN 2020 đúng nội dung doanh nghiệp tư nhân |
+| `mat-kha-nang-thanh-toan#-1` | văn bản cũ | báo nhầm | câu nêu rõ Luật Phá sản 2014 đã hết hiệu lực, chỉ là so sánh lịch sử |
+| `thuong-mai-1-de-3#4` (bộ đề) | văn bản cũ / ngoài kho | **sửa** | explain ghi rõ "Khoản 2 Điều 5 Luật Phục hồi, phá sản 2025"; Luật Phá sản 2014 chỉ là mốc cũ |
