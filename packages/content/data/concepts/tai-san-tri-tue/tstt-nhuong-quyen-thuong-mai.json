@@ -44,15 +44,15 @@
   {
    "type": "mcq",
    "level": 1,
-   "q": "Nhượng quyền thương mại gắn với những đối tượng nào của bên nhượng quyền?",
+   "q": "Theo khoản 1 Điều 284 Luật Thương mại 2005, việc kinh doanh theo nhượng quyền được gắn với nhóm đối tượng nào của bên nhượng quyền (nêu đầy đủ, đúng)?",
    "options": [
     "Nhãn hiệu hàng hóa, tên thương mại, bí quyết kinh doanh, khẩu hiệu, biểu tượng kinh doanh, quảng cáo",
-    "Chỉ sáng chế và kiểu dáng công nghiệp của bên nhượng quyền ở nước ngoài và tác phẩm văn học",
-    "Chỉ quyền tác giả đối với tác phẩm văn học, nghệ thuật và khoa học của bên nhượng quyền",
-    "Chỉ chỉ dẫn địa lý của vùng sản xuất nông nghiệp và tên gọi xuất xứ hàng hóa được bảo hộ"
+    "Nhãn hiệu hàng hóa, tên thương mại, giấy phép kinh doanh, con dấu và tài khoản ngân hàng",
+    "Sáng chế, kiểu dáng công nghiệp, giống cây trồng và thiết kế bố trí mạch tích hợp bán dẫn",
+    "Quyền tác giả đối với tác phẩm, quyền liên quan, chỉ dẫn địa lý và tên gọi xuất xứ hàng hóa"
    ],
    "answer": 0,
-   "explain": "Khoản 1 Điều 284 Luật Thương mại 2005.",
+   "explain": "Khoản 1 Điều 284 Luật Thương mại 2005: nhãn hiệu hàng hóa, tên thương mại, bí quyết kinh doanh, khẩu hiệu kinh doanh, biểu tượng kinh doanh, quảng cáo của bên nhượng quyền.",
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 284 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)"

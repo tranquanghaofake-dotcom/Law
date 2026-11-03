@@ -87,3 +87,10 @@ Tổng: 42 tình huống mới; 20 khái niệm đạt ≥ 4 tình huống.
 | `tai-san-tri-tue/tstt-dang-hop-dong-li-xang#7` | Trong hợp đồng độc quyền, bên chuyển quyền không được ký kết hợp đồng sử dụng đối tượng sở hữu công nghiệp với bất kỳ bên thứ ba nào và chỉ được sử dụng đối tượng đó nếu được phép của bên được chuyển quyền. | Khoản 1 Điều 143 Luật Sở hữu trí tuệ | Trích gần nguyên văn, đối chiếu laws/shtt-vbhn-2026.txt |
 | `tai-san-tri-tue/tstt-xac-dinh-thiet-hai#7` | Mức độ thiệt hại được xác định trên cơ sở các tổn thất thực tế mà chủ thể quyền sở hữu trí tuệ phải chịu do hành vi xâm phạm quyền sở hữu trí tuệ gây ra. | Khoản 2 Điều 204 Luật Sở hữu trí tuệ | Nguyên văn, đối chiếu laws/shtt-vbhn-2026.txt |
 | `tai-san-tri-tue/tstt-tu-bao-ve#7` | Chủ thể quyền sở hữu trí tuệ có quyền áp dụng biện pháp công nghệ bảo vệ quyền, đưa thông tin quản lý quyền hoặc áp dụng các biện pháp công nghệ khác nhằm ngăn ngừa hành vi xâm phạm quyền sở hữu trí tuệ. | Điểm a khoản 1 Điều 198 Luật Sở hữu trí tuệ | Trích gần nguyên văn, đối chiếu laws/shtt-vbhn-2026.txt |
+
+## Opus — chốt ⚠ nhượng quyền thương mại
+
+| id | câu/tình huống | trước → sau | căn cứ | ghi chú |
+|---|---|---|---|---|
+| tstt-nhuong-quyen-thuong-mai (trích dẫn) | "Điều 284 Luật Sở hữu trí tuệ" | đã là "Điều 284 Luật Thương mại 2005" ở mọi chỗ (haiku-2 sửa); kiểm lại: không còn sót | `ltm-vbhn-2025.txt` Điều 284 | |
+| tstt-nhuong-quyen-thuong-mai#1 | câu tập hợp, 3 nhiễu "Chỉ …" | → hỏi "nêu đầy đủ, đúng" theo khoản 1 Điều 284; nhiễu có yếu tố sai rõ (giấy phép, con dấu; sáng chế, kiểu dáng; quyền tác giả, chỉ dẫn địa lý) | khoản 1 Điều 284 LTM 2005 | Đáp án đúng dài nhất nhưng không quá 10 % nhiễu dài nhất |
