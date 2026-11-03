@@ -29,8 +29,8 @@
    "q": "Năng lực hành vi hành chính của công dân phụ thuộc vào yếu tố nào?",
    "options": [
     "Độ tuổi, trình độ, sức khỏe",
-    "Tài sản cá nhân đang sở hữu",
-    "Tôn giáo, tín ngưỡng cá nhân",
+    "Tài sản riêng mà cá nhân sở hữu",
+    "Tôn giáo, tín ngưỡng riêng",
     "Giới tính và nơi cư trú"
    ],
    "answer": 0,
@@ -47,7 +47,7 @@
    "options": [
     "Ứng cử đại biểu Quốc hội Việt Nam",
     "Được bảo vệ tính mạng, tài sản",
-    "Khiếu nại quyết định hành chính xâm phạm quyền lợi của mình",
+    "Khiếu nại quyết định hành chính",
     "Kinh doanh theo pháp luật"
    ],
    "answer": 0,

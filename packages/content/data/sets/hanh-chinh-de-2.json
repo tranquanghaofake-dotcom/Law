@@ -24,7 +24,7 @@
         "Không",
         "Có, phải lập biên bản",
         "Tùy mức phạt",
-        "Chỉ khi người vi phạm yêu cầu"
+        "Chỉ khi người vi phạm đòi"
       ],
       "answer": 1,
       "explain": "Khoản 2 Điều 56.",
@@ -75,8 +75,8 @@
       "options": [
         "Tổ chức vi phạm pháp luật về thuế, kế toán, tài chính và hải quan nhà nước",
         "Cá nhân vi phạm pháp luật về an ninh, trật tự, an toàn xã hội mà không phải tội phạm",
-        "Mọi người vi phạm giao thông đường bộ và đường sắt trên lãnh thổ Việt Nam hiện nay",
-        "Cán bộ vi phạm kỷ luật và bị đình chỉ công tác trong thời gian điều tra vụ việc cụ thể"
+        "Mọi người vi phạm giao thông đường bộ và đường sắt trên lãnh thổ Việt Nam",
+        "Cán bộ vi phạm kỷ luật và bị đình chỉ công tác trong thời gian điều tra vụ việc"
       ],
       "answer": 1,
       "explain": "Khoản 3 Điều 2.",

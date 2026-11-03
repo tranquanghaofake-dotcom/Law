@@ -28,7 +28,7 @@
    "q": "Thời hạn áp dụng biện pháp giáo dục tại xã, phường, đặc khu là bao lâu?",
    "options": [
     "Từ 03 tháng đến 06 tháng",
-    "Từ 06 tháng đến 24 tháng",
+    "Từ 06 tháng đến 24 tháng liền",
     "Từ 01 tháng đến 03 tháng",
     "Từ 12 tháng đến 24 tháng"
    ],
@@ -45,7 +45,7 @@
    "q": "Biện pháp giáo dục tại xã, phường, đặc khu được áp dụng trong trường hợp nào?",
    "options": [
     "Không cần thiết phải cách ly người vi phạm khỏi cộng đồng",
-    "Người vi phạm phạm tội đặc biệt nghiêm trọng và có tiền án",
+    "Người vi phạm phạm tội đặc biệt nghiêm trọng, có tiền án",
     "Người vi phạm là tổ chức kinh doanh có vốn nhà nước",
     "Người vi phạm là người nước ngoài đang cư trú hợp pháp"
    ],
