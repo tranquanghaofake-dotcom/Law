@@ -217,3 +217,11 @@ Tổng: 105 tình huống mới; 73 khái niệm đạt ≥ 4 tình huống.
 | `chung-khoan/cong-ty-dau-tu-chung-khoan#7` | Công ty đầu tư chứng khoán là quỹ đầu tư chứng khoán được tổ chức theo loại hình công ty cổ phần để đầu tư chứng khoán. | Khoản 1 Điều 114 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026) | nguyên văn khớp laws/*.txt |
 | `chung-khoan/moi-gioi-chung-khoan#7` | Môi giới chứng khoán là việc làm trung gian thực hiện mua, bán chứng khoán cho khách hàng. | Khoản 29 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026) | nguyên văn khớp laws/*.txt |
 | `chung-khoan/tu-doanh-chung-khoan#7` | Tự doanh chứng khoán là việc công ty chứng khoán mua, bán chứng khoán cho chính mình. | Khoản 30 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026) | nguyên văn khớp laws/*.txt |
+
+## Opus — chốt ⚠ Điều 129 (Thanh tra Bộ Tài chính)
+
+| id | câu/tình huống | trước → sau | căn cứ | ghi chú |
+|---|---|---|---|---|
+| thanh-tra-chung-khoan (note) | note về Luật Thanh tra 2025 | viết lại: "Câu chữ VBHN 102/2026 (khoản 3 Điều 129) vẫn ghi …; từ 01/7/2025 Luật Thanh tra 84/2025/QH15 (Điều 7) … không còn Thanh tra Bộ Tài chính" | Luật Thanh tra 84/2025/QH15 Điều 7 (Công báo) | Không khẳng định cơ quan hướng dẫn nghiệp vụ thay thế (chưa kiểm chứng) |
+| thanh-tra-chung-khoan#2 (pair) | "Thanh tra chứng khoán ↔ Thanh tra Bộ Tài chính" (một tình huống "thanh tra tổng hợp về tài chính" không có căn cứ) | → "Thanh tra chứng khoán ↔ Chủ tịch Ủy ban Chứng khoán Nhà nước", 5 tình huống | điểm a, b khoản 4 và khoản 3 Điều 129; khoản 2 Điều 130 | Bỏ tình huống không kiểm chứng được |
+| thanh-tra-chung-khoan#6 (recall) | "hướng dẫn nghiệp vụ của Thanh tra Bộ Tài chính" | ghi rõ là câu chữ VBHN + mốc 01/7/2025; từ khoá "Thanh tra Bộ Tài chính" → "Chánh thanh tra" | như trên | |
