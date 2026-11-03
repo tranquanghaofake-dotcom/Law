@@ -30,9 +30,9 @@
    "q": "Quỹ ngân sách nhà nước là gì?",
    "options": [
     "Toàn bộ các khoản tiền của Nhà nước, kể cả tiền vay, có trên tài khoản của ngân sách nhà nước các cấp tại một thời điểm",
-    "Quỹ dự trữ ngoại hối",
-    "Toàn bộ tài sản công",
-    "Quỹ bảo hiểm xã hội"
+    "Toàn bộ số dư tiền gửi của các quỹ bảo hiểm xã hội và quỹ dự trữ ngoại hối tại các ngân hàng thương mại, không gồm tiền vay",
+    "Toàn bộ tài sản công do các cơ quan nhà nước quản lý, sử dụng, gồm đất đai, trụ sở, phương tiện và tài sản kết cấu hạ tầng",
+    "Toàn bộ các khoản tiền đóng góp của người lao động và người sử dụng lao động vào quỹ hưu trí và tử tuất tại một thời điểm"
    ],
    "answer": 0,
    "explain": "Khoản 22 Điều 4.",

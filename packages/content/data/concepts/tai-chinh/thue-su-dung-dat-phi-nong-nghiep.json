@@ -30,9 +30,9 @@
    "q": "Ai là người nộp thuế sử dụng đất phi nông nghiệp?",
    "options": [
     "Tổ chức, hộ gia đình, cá nhân có quyền sử dụng đất thuộc đối tượng chịu thuế",
-    "Chỉ doanh nghiệp",
-    "Người thuê nhà",
-    "UBND cấp xã"
+    "Chỉ doanh nghiệp có vốn nhà nước được thành lập theo Luật Doanh nghiệp đang hoạt động",
+    "Người thuê nhà ở của người khác, không có quyền sử dụng đất nào tại địa phương",
+    "UBND cấp xã nơi có đất, thay mặt Nhà nước thu thuế và nộp vào ngân sách"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 4.",

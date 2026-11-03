@@ -31,9 +31,9 @@
    "q": "Kết dư ngân sách trung ương sau khi trả nợ, nếu còn, được xử lý thế nào?",
    "options": [
     "Trích 50% vào quỹ dự trữ tài chính cùng cấp, 50% vào thu ngân sách năm sau",
-    "Nộp hết vào quỹ dự trữ ngoại hối",
-    "Chia cho các bộ",
-    "Hủy bỏ"
+    "Trích 100% vào quỹ dự trữ tài chính cùng cấp, không chuyển năm sau",
+    "Nộp toàn bộ vào quỹ dự trữ ngoại hối nhà nước của Ngân hàng Nhà nước Việt Nam",
+    "Chi thưởng cho cán bộ, công chức có thành tích trong năm ngân sách"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 74.",
@@ -48,9 +48,9 @@
    "q": "Kết dư ngân sách cấp xã được xử lý thế nào?",
    "options": [
     "Hạch toán vào thu ngân sách năm sau",
-    "Trích 50% vào quỹ dự trữ",
-    "Nộp lên ngân sách tỉnh",
-    "Chi thưởng cán bộ"
+    "Chi thưởng cho cán bộ, công chức xã",
+    "Hoàn trả ngay cho ngân sách trung ương",
+    "Giữ lại để chi đầu tư xây trụ sở"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 74.",
