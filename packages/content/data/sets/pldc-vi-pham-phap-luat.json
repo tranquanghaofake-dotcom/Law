@@ -60,10 +60,10 @@
     {
       "q": "Tài xế thấy có thể va chạm với người đi bộ nhưng tin rằng mình phanh kịp, và rồi gây tai nạn. Đây là lỗi gì?",
       "options": [
-        "Cố ý, biết mà làm",
+        "Lỗi cố ý gián tiếp",
         "Vô ý, do cẩu thả",
         "Vô ý vì quá tự tin",
-        "Sự cố bất khả kháng"
+        "Là sự kiện bất ngờ"
       ],
       "answer": 2,
       "explain": "Vô ý vì quá tự tin: thấy trước hành vi có thể gây hậu quả nhưng cho rằng hậu quả sẽ không xảy ra hoặc có thể ngăn ngừa được. Vô ý do cẩu thả là không thấy trước hậu quả, dù phải thấy trước và có thể thấy trước.",
