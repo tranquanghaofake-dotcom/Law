@@ -471,8 +471,14 @@ h1 { font-family: var(--font-display); font-weight: 800; letter-spacing: -.01em;
 .stage .headline { font-family: var(--font-display); }
 .stage .headline b { font-weight: 700; font-size: clamp(22px, 3vw, 28px); line-height: 1.25; }
 .page-head h1, .subject-head h1 { font-size: clamp(30px, 5vw, 42px); margin-top: 0; }
+/* < 600 px: tranh đầu trang đẩy nội dung xuống dưới màn đầu (Môn học y≈470, trang môn y≈660) → ẩn; Hôm nay (.stage) giữ tranh */
+@media (max-width: 599px) { .page-head .head-art, .subject-head .head-art { display: none; } }
 @media (min-width: 768px) {
-  .stage, .page-head, .subject-head { min-height: 248px; padding: 30px 32px 38px; }
+  .stage, .page-head, .subject-head { padding: 30px 32px 38px; }
+  .stage, .subject-head { min-height: 248px; }
+  /* đầu trang danh sách (Môn học, Luyện đề, Hồ sơ) không giữ chiều cao tối thiểu: nội dung lên màn đầu (spec phần nhìn đợt 4, PR 0) */
+  .page-head { min-height: 0; padding-bottom: 30px; }
+  .page-head .head-art { width: 40%; max-width: 340px; right: -8px; }
   .stage-art, .page-head .head-art, .subject-head .head-art { position: absolute; right: -28px; bottom: 4px; width: 56%; max-width: 480px; margin: 0; z-index: -1; float: none; }
   .stage .hero-body, .page-head > :not(.head-art), .subject-head > :not(.head-art) { max-width: 50%; }
   .subject-head .row { flex-wrap: wrap; }

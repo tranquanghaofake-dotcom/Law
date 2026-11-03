@@ -24,7 +24,7 @@
 <header class="page-head">
   <SubjectArt name={PAGE_ART.subjects} class="head-art" />
   <h1>Môn học</h1>
-  <p class="muted">Mỗi môn chia thành chương → đợt 4–5 khái niệm. Học theo thứ tự đợt; ôn khi lịch gọi.</p>
+  <p class="muted">Chọn môn để xem chương, đợt và lưới bậc ghi nhớ.</p>
 </header>
 {#if error}
   <section class="card"><p class="muted">Không tải được dữ liệu: {error}</p></section>
