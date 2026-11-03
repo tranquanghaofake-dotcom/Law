@@ -71,6 +71,16 @@
     {
      "text": "Người đang bị truy cứu trách nhiệm hình sự",
      "answer": "right"
+    },
+    {
+     "text": "Người nước ngoài 20 tuổi có tay nghề, đã được cấp giấy phép lao động",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 151 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Người nước ngoài làm việc tại Việt Nam nhưng chưa có giấy phép lao động",
+     "answer": "right",
+     "basis": "Điểm d khoản 1 Điều 151 Bộ luật Lao động 2019"
     }
    ],
    "explain": "Khoản 1 Điều 151."
