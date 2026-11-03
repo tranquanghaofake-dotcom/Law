@@ -124,6 +124,18 @@
     "tài chính vi mô",
     "quỹ tín dụng nhân dân"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tổ chức tín dụng bao gồm ngân hàng, tổ chức tín dụng phi ngân hàng, tổ chức tài chính vi mô và quỹ tín dụng nhân dân.",
+   "answer": true,
+   "explain": "Đúng. Khoản 38 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 38 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)",
+    "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-143-2026-VBHN-LQ-VPQH-Luat-Cac-to-chuc-tin-dung-729869.aspx"
+   }
   }
  ]
 }

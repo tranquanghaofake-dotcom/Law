@@ -122,6 +122,18 @@
     "ứng trước",
     "hợp đồng mua, bán"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Bao thanh toán là hình thức cấp tín dụng thông qua việc mua lại khoản phải thu của bên bán hoặc ứng trước tiền thanh toán thay cho bên mua theo hợp đồng mua, bán hàng hóa, cung ứng dịch vụ giữa bên mua và bên bán.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)",
+    "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-143-2026-VBHN-LQ-VPQH-Luat-Cac-to-chuc-tin-dung-729869.aspx"
+   }
   }
  ]
 }

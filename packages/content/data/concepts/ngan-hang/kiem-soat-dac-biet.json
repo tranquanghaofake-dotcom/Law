@@ -122,6 +122,18 @@
     "can thiệp sớm",
     "phương án khắc phục"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Kiểm soát đặc biệt là việc Ngân hàng Nhà nước quyết định đặt tổ chức tín dụng dưới sự kiểm soát trực tiếp của Ngân hàng Nhà nước.",
+   "answer": true,
+   "explain": "Đúng. Khoản 19 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 19 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)",
+    "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-143-2026-VBHN-LQ-VPQH-Luat-Cac-to-chuc-tin-dung-729869.aspx"
+   }
   }
  ]
 }
