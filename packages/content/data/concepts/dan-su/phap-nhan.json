@@ -29,9 +29,9 @@
    "q": "Điều kiện nào KHÔNG thuộc điều kiện công nhận pháp nhân theo khoản 1 Điều 74?",
    "options": [
     "Có ít nhất 50 thành viên",
-    "Được thành lập theo quy định của luật",
-    "Có tài sản độc lập và tự chịu trách nhiệm bằng tài sản đó",
-    "Nhân danh mình tham gia quan hệ pháp luật độc lập"
+    "Được thành lập theo luật định",
+    "Có tài sản độc lập với ai khác",
+    "Nhân danh mình tham gia quan hệ"
    ],
    "answer": 0,
    "explain": "Điều 74 không đặt điều kiện số lượng thành viên.",

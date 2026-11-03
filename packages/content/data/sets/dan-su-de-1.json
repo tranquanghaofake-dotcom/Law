@@ -49,7 +49,7 @@
       "options": [
         "Có, vì hai bên tự nguyện thỏa thuận với nhau",
         "Vô hiệu vì mục đích vi phạm điều cấm của luật",
-        "Có nếu có giấy viết tay và chữ ký của hai bên đó",
+        "Có nếu có giấy viết tay và chữ ký của hai bên",
         "Chỉ vô hiệu nếu số tiền trên 100 triệu đồng"
       ],
       "answer": 1,
@@ -86,7 +86,7 @@
     {
       "q": "Người được ủy quyền bán xe máy lại tự mua chính chiếc xe đó với giá rẻ. Theo Bộ luật Dân sự 2015, hành vi này thế nào?",
       "options": [
-        "Hợp lệ vì đã có văn bản ủy quyền rõ ràng, có công chứng và chữ ký",
+        "Hợp lệ vì đã có văn bản ủy quyền rõ ràng, có công chứng",
         "Không được phép, trừ trường hợp pháp luật có quy định khác",
         "Hợp lệ nếu trả đủ tiền theo giá thị trường đã công bố",
         "Chỉ cần báo cho người ủy quyền biết trước khi mua bán"

@@ -30,7 +30,7 @@
    "q": "Tòa án áp dụng quy định về thời hiệu khi nào theo khoản 2 Điều 149?",
    "options": [
     "Khi có yêu cầu của một bên hoặc các bên, đưa ra trước khi Tòa sơ thẩm ra bản án, quyết định",
-    "Tòa án luôn tự động áp dụng thời hiệu ở mọi giai đoạn tố tụng khi thấy cần thiết và đúng pháp luật",
+    "Tòa án luôn tự áp dụng thời hiệu ở mọi giai đoạn tố tụng khi thấy cần thiết, cả phúc thẩm",
     "Chỉ ở cấp phúc thẩm, khi có yêu cầu của một bên và có lý do chính đáng, đầy đủ",
     "Khi Viện kiểm sát đề nghị bằng văn bản trước khi xét xử ở cấp sơ thẩm và phúc thẩm"
    ],
@@ -49,7 +49,7 @@
     "Thời hiệu khởi kiện",
     "Thời hiệu hưởng quyền dân sự",
     "Thời hiệu miễn trừ nghĩa vụ",
-    "Thời hạn bảo hành"
+    "Thời hạn bảo hành sản phẩm"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 150.",

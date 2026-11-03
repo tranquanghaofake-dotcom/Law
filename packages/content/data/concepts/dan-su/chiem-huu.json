@@ -30,7 +30,7 @@
    "options": [
     "Việc chủ thể nắm giữ, chi phối tài sản trực tiếp hoặc gián tiếp như chủ thể có quyền",
     "Quyền định đoạt tài sản của chủ sở hữu, bao gồm cả quyền bán và cho thuê tài sản",
-    "Việc đăng ký quyền sở hữu tại cơ quan đăng ký có thẩm quyền ở địa phương, có đầy đủ hồ sơ",
+    "Việc đăng ký quyền sở hữu tại cơ quan đăng ký có thẩm quyền ở địa phương",
     "Quyền thừa kế tài sản của người đã mất, nhận trước khi người đó chết và có di chúc"
    ],
    "answer": 0,
@@ -46,7 +46,7 @@
    "q": "Việc chiếm hữu của người không phải chủ sở hữu có làm phát sinh quyền sở hữu không?",
    "options": [
     "Không, trừ các trường hợp luật quy định",
-    "Luôn luôn có, không cần điều kiện nào",
+    "Luôn luôn có, không cần thêm điều kiện nào",
     "Có sau một năm chiếm hữu liên tục công khai",
     "Có nếu tài sản có giá trị dưới mười triệu"
    ],

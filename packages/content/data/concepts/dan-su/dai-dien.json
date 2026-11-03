@@ -29,8 +29,8 @@
    "q": "Người đại diện xác lập giao dịch nhân danh ai?",
    "options": [
     "Người được đại diện",
-    "Chính bản thân mình",
-    "Ủy ban nhân dân xã",
+    "Chính bản thân người đó",
+    "Ủy ban nhân dân cấp xã",
     "Tòa án nhân dân tỉnh"
    ],
    "answer": 0,
@@ -46,7 +46,7 @@
    "q": "Giao dịch do người không có quyền đại diện xác lập ràng buộc người được đại diện trong trường hợp nào?",
    "options": [
     "Người được đại diện đã công nhận giao dịch",
-    "Bên kia không biết người đó không có quyền đại diện, dù người được đại diện không có lỗi",
+    "Bên kia không biết người đó không có quyền đại diện",
     "Giao dịch có giá trị nhỏ",
     "Giao dịch được công chứng"
    ],

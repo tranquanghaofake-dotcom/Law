@@ -29,7 +29,7 @@
    "q": "Quyền sở hữu gồm những quyền năng nào theo Điều 158?",
    "options": [
     "Chiếm hữu, sử dụng, định đoạt",
-    "Chiếm hữu, quản lý, thu lợi ích",
+    "Chiếm hữu, quản lý, thu lợi",
     "Sử dụng, cho thuê, thế chấp",
     "Sở hữu, sử dụng, hưởng dụng"
    ],
@@ -46,8 +46,8 @@
    "q": "Bán tài sản là thực hiện quyền năng nào của chủ sở hữu?",
    "options": [
     "Quyền định đoạt",
-    "Quyền chiếm hữu",
-    "Quyền sử dụng",
+    "Quyền chiếm hữu tài sản",
+    "Quyền sử dụng tài sản",
     "Quyền hưởng dụng"
    ],
    "answer": 0,

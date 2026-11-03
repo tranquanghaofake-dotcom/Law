@@ -28,7 +28,7 @@
    "q": "Người thừa kế không phụ thuộc vào nội dung di chúc được hưởng bao nhiêu?",
    "options": [
     "Hai phần ba suất của một người thừa kế theo pháp luật",
-    "Một nửa di sản và phần của những người khác trong gia đình",
+    "Một nửa di sản và phần của người khác trong nhà",
     "Toàn bộ suất thừa kế theo pháp luật và không bị giảm",
     "Một phần ba suất của một người thừa kế theo pháp luật"
    ],
@@ -45,9 +45,9 @@
    "q": "Ai KHÔNG thuộc diện người thừa kế không phụ thuộc vào nội dung di chúc?",
    "options": [
     "Con thành niên có khả năng lao động",
-    "Vợ hoặc chồng của người lập di chúc",
+    "Vợ hoặc chồng hợp pháp của người lập di chúc",
     "Con chưa thành niên của người chết",
-    "Cha mẹ của người lập di chúc đã già"
+    "Cha mẹ đã già của người lập di chúc"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 644 chỉ bảo vệ con thành niên không có khả năng lao động.",
