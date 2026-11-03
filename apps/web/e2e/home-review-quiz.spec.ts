@@ -4,7 +4,10 @@ const B = process.env.BASE_PATH ?? '/';
 test('trang chủ người mới: thẻ BẮT ĐẦU, môn đang học, một thẻ kiểm tra nhanh', async ({ page }) => {
   await page.goto(B + '');
   await expect(page.locator('.hero-card .kicker')).toHaveText('BẮT ĐẦU');
-  await expect(page.getByRole('link', { name: /Học đợt đầu tiên/ })).toHaveAttribute('href', '#/hoc/hien-phap/hp-1');
+  // môn đầu theo thứ tự chương trình học (lib/ui/shelves.ts), không phải môn đầu bảng chữ cái
+  await expect(page.getByRole('link', { name: /Học đợt đầu tiên/ })).toHaveAttribute('href', '#/hoc/ly-luan-nn-pl/llc1');
+  await expect(page.getByRole('heading', { name: /Bắt đầu từ đâu/ })).toBeVisible();
+  await expect(page.locator('.subject-rows li')).toHaveCount(3);
   await expect(page.getByRole('link', { name: /Luật Hiến pháp/ }).first()).toBeVisible();
   await expect(page.locator('.sets.one .set')).toHaveCount(1);
   await expect(page.getByRole('link', { name: /Tất cả đề/ })).toHaveAttribute('href', '#/luyen-de');

@@ -9,6 +9,7 @@
   import { hashFor } from '$lib/router.svelte';
   import { GROUPS, pickQuickQuiz } from '$lib/ui/groups';
   import { knownConcepts, pickHeroState, type HeroState } from '$lib/ui/today';
+  import { orderedSubjects, byRecency, lastStudiedBySubject } from '$lib/ui/shelves';
   import { setRail } from '$lib/ui/rail.svelte';
   import HeroCard from '$lib/ui/HeroCard.svelte';
   import HomeRail from '$lib/ui/HomeRail.svelte';
@@ -20,6 +21,9 @@
   let index = $state<ContentIndex | null>(null);
   let hero = $state<HeroState | null>(null);
   let rows = $state<Row[]>([]);
+  /** true = "Môn đang học" (đã có tiến độ); false = "Bắt đầu từ đâu?" (3 môn đầu chương trình). */
+  let studying = $state(true);
+  let subjectCount = $state(0);
   let quick = $state<{ set: ContentIndex['sets'][number]; best: number | null } | null>(null);
   let week = $state<boolean[]>(Array(7).fill(false));
   let dueTomorrow = $state(0);
@@ -32,7 +36,9 @@
       const idx = await loadIndex();
       index = idx;
       await stats.ensureV1Migrated(idx);
-      const subjects = await Promise.all(idx.subjects.map((s) => loadSubject(s.id)));
+      // thứ tự chương trình học (shelves.ts), không phải thứ tự tên file của index.json
+      const subjects = orderedSubjects(await Promise.all(idx.subjects.map((s) => loadSubject(s.id))));
+      subjectCount = subjects.length;
       const all = await repo.all();
       const levels = Object.fromEntries(all.map((p) => [p.conceptId, p.level])) as Record<string, Level>;
 
@@ -44,11 +50,13 @@
         for (const p of due.slice(0, 3)) bySubject.set(p.subject, [...(bySubject.get(p.subject) ?? []), p.conceptId]);
         for (const [sid, ids] of bySubject) { try { for (const c of await loadConcepts(sid, ids)) terms[c.id] = c.term; } catch { /* file lỗi: giữ slug */ } }
       }
-      hero = pickHeroState({ due: due.map((p) => ({ conceptId: p.conceptId, term: terms[p.conceptId] })), subjects, levels });
+      const recent = lastStudiedBySubject(all, known);
+      hero = pickHeroState({ due: due.map((p) => ({ conceptId: p.conceptId, term: terms[p.conceptId] })), subjects, levels, recent });
 
-      const started = new Set(all.filter((p) => p.level > 0 && known.has(p.conceptId)).map((p) => p.subject));
-      rows = subjects
-        .filter((s) => started.size === 0 || started.has(s.id))
+      // Môn đang học: ≤ 4 môn có tiến độ, học gần nhất trước. Chưa học gì: 3 môn đầu chương trình (spec phần nhìn đợt 4 §4), không liệt kê cả kho.
+      const started = subjects.filter((s) => recent[s.id] != null);
+      studying = started.length > 0;
+      rows = (studying ? byRecency(started, recent).slice(0, 4) : subjects.slice(0, 3))
         .map((s) => { const x = subjectSummary(s, levels); return { subject: s, grade: x.grade, mastered: x.mastered, total: x.total }; });
 
       // khái niệm khó: sai ≥ 3 lần liên tiếp, tối đa 5 (Memrise "Difficult words")
@@ -82,7 +90,7 @@
   <HeroCard state={hero} />
 
   {#if rows.length}
-    <h2 class="section-title"><b>Môn đang học</b></h2>
+    <h2 class="section-title"><b>{studying ? 'Môn đang học' : 'Bắt đầu từ đâu?'}</b> <a class="more" href={hashFor('subjects')}>Tất cả {subjectCount} môn →</a></h2>
     <ul class="subject-rows">
       {#each rows as r (r.subject.id)}
         <li><a class="subject-row" href={hashFor('subject', { subject: r.subject.id })}>

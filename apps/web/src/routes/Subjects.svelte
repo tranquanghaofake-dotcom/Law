@@ -7,6 +7,7 @@
   import { subjectSummary, type SubjectSummary } from '$lib/ui/subjectSummary';
   import SubjectArt from '$lib/art/SubjectArt.svelte';
   import { artFor, PAGE_ART } from '$lib/art/registry';
+  import { orderedSubjects } from '$lib/ui/shelves';
 
   let items = $state<{ subject: Subject; s: SubjectSummary }[] | null>(null);
   let error = $state('');
@@ -16,7 +17,7 @@
       const index = await loadIndex();
       const subs = await Promise.all(index.subjects.filter((s) => (index.conceptCount[s.id] ?? 0) > 0).map((s) => loadSubject(s.id)));
       const levels = Object.fromEntries((await repo.all()).map((p) => [p.conceptId, p.level])) as Record<string, Level>;
-      items = subs.map((subject) => ({ subject, s: subjectSummary(subject, levels) }));
+      items = orderedSubjects(subs).map((subject) => ({ subject, s: subjectSummary(subject, levels) }));
     } catch (e) { error = (e as Error).message; }
   })();
 </script>
