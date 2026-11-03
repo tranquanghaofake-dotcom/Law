@@ -29,9 +29,9 @@
    "q": "Hình thức nào là người lao động trực tiếp đi làm việc ở nước ngoài?",
    "options": [
     "Hợp đồng lao động do người lao động trực tiếp giao kết với người sử dụng lao động ở nước ngoài",
-    "Hợp đồng với doanh nghiệp dịch vụ",
-    "Hợp đồng với đơn vị sự nghiệp",
-    "Hợp đồng với doanh nghiệp trúng thầu"
+    "Hợp đồng với doanh nghiệp dịch vụ đưa người lao động đi làm việc ở nước ngoài theo quy định của pháp luật",
+    "Hợp đồng với đơn vị sự nghiệp công lập có chức năng giới thiệu và đưa người lao động đi",
+    "Hợp đồng với doanh nghiệp trúng thầu cung ứng lao động cho nước ngoài theo dự án đầu tư"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 5.",
@@ -47,8 +47,8 @@
    "options": [
     "Thực hiện thỏa thuận quốc tế",
     "Kinh doanh dịch vụ việc làm",
-    "Thực hiện dự án đầu tư",
-    "Đi du học"
+    "Thực hiện dự án đầu tư ở nước",
+    "Đi du học tự túc ở nước ngoài"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 5.",

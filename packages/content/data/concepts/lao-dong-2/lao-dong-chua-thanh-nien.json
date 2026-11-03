@@ -46,9 +46,9 @@
    "q": "Người từ đủ 13 tuổi đến chưa đủ 15 tuổi được làm công việc gì?",
    "options": [
     "Chỉ công việc nhẹ theo danh mục do Bộ trưởng ban hành",
-    "Mọi công việc trừ công việc nặng nhọc",
-    "Không được làm việc",
-    "Chỉ công việc nghệ thuật"
+    "Mọi công việc trừ công việc nặng nhọc, độc hại và nguy hiểm",
+    "Không được làm việc trong mọi trường hợp đặc biệt",
+    "Chỉ công việc nghệ thuật và biểu diễn có giấy phép"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 143.",

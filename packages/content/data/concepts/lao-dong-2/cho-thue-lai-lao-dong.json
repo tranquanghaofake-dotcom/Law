@@ -46,9 +46,9 @@
    "q": "Trong cho thuê lại lao động, người lao động duy trì quan hệ lao động với ai?",
    "options": [
     "Doanh nghiệp cho thuê lại lao động đã giao kết HĐLĐ",
-    "Bên thuê lại lao động",
-    "Cả hai bên như nhau",
-    "Cơ quan quản lý lao động"
+    "Bên thuê lại lao động đã giao kết HĐLĐ trực tiếp",
+    "Cả hai bên như nhau theo thỏa thuận chung giữa các bên",
+    "Cơ quan quản lý lao động nhà nước ở địa phương"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 52.",
