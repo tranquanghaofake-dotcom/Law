@@ -7,10 +7,12 @@
   // chính các mảnh đó) → chi tiết may (details: đường diễu, túi, khuy, nếp gấp). Vẽ nửa trái rồi lật gương; chi tiết lệch
   // (nẹp khuy, cà vạt, thẻ tên, khăn cài túi, thêu) vẽ riêng. Cả bộ qua filter `cloth`: mép tối dần, ánh đèn.
   // Không quân hàm, cấp hiệu, Quốc huy, huân chương; cầu vai kiểm sát là dải đỏ trơn viền chỉ vàng.
-  let { outfit }: { outfit: string } = $props();
+  // `tone`: chỉ số biến thể màu (showcase/tones.ts); `adorn`: phụ kiện cài áo / khăn lụa (looks.ts). Mặc định = bản gốc.
+  import { TONE_PALETTES, type Pal } from './showcase/tones';
+  let { outfit, tone = 0, adorn = 'khong' }: { outfit: string; tone?: number; adorn?: string } = $props();
   const uid = `gf${++seq}`;
   const INK = '#2b2420';
-  type Pal = { body: string; sleeve: string; shirt: string; tie: string | null };
+  const SCARF: Record<string, string> = { 'thuong-phuc': '#b3282d', 'cong-so': '#2c5aa0', 'vest-xanh': '#c99a3a', 'vest-den': '#7a2433', 'ao-choang': '#8c2f28', 'ks-xuan-he': '#e8e2d2', 'ks-thu-dong': '#c99a3a' };
   const PAL: Record<string, Pal> = {
     'thuong-phuc': { body: '#ece2cf', sleeve: '#e2d6bf', shirt: '#ece2cf', tie: null },
     'cong-so': { body: '#fbfbf8', sleeve: '#f0f2f3', shirt: '#fbfbf8', tie: null },
@@ -22,7 +24,7 @@
     'ao-dai': { body: '#a8322b', sleeve: '#982c26', shirt: '#f6f1e6', tie: null },
   };
   const o = $derived(PAL[outfit] ? outfit : 'thuong-phuc');
-  const p = $derived(PAL[o]);
+  const p = $derived<Pal>({ ...PAL[o], ...(TONE_PALETTES[o]?.[tone] ?? {}) });
   const dark = $derived(o === 'vest-den' || o === 'ao-choang' || o === 'ks-thu-dong' || o === 'vest-xanh');
   const suit = $derived(o === 'vest-xanh' || o === 'vest-den' || o === 'ks-thu-dong');
   const stitch = $derived(dark ? '#8d8f99' : '#8a7c6c');
@@ -268,4 +270,23 @@
       {/if}
     </g>
   </g>
+  <!-- phụ kiện cài áo (ngực): ghim cán cân · hoa sen · sách · trống đồng nhỏ; khăn lụa quanh cổ -->
+  {#if adorn === 'khan-lua' && o !== 'ao-dai'}
+    <path d="M126 59Q150 78 174 59L170 70Q150 88 130 70Z" fill={SCARF[o] ?? '#b3282d'} stroke={INK} stroke-width="1.1" />
+    <path d="M138 80L150 98L162 80Q150 88 138 80Z" fill={SCARF[o] ?? '#b3282d'} stroke={INK} stroke-width="1" />
+    <path d="M132 66Q150 80 168 66" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="1.2" />
+  {:else if adorn !== 'khong' && adorn !== 'khan-lua'}
+    <g transform="translate({o === 'ao-dai' ? 119 : o === 'ao-choang' ? 114 : 112} {o === 'ao-dai' ? 134 : 124})" stroke="#6b4c14" stroke-width=".9">
+      <circle r="11" fill="#f1d896" stroke-width="1.3" /><circle r="8.4" fill="none" stroke="#b98d3a" stroke-width=".7" />
+      {#if adorn === 'ghim-can'}
+        <path d="M0-6V6M-6-3Q0-5 6-3M-6-3l-2.4 5h4.8zM6-3l-2.4 5h4.8zM-3 6h6" fill="none" stroke="#5b3d0e" stroke-width="1" />
+      {:else if adorn === 'ghim-sen'}
+        <path d="M0 5Q-6 0 0-6Q6 0 0 5ZM0 5Q-8 4-7-3Q-1 0 0 5ZM0 5Q8 4 7-3Q1 0 0 5Z" fill="#e8a0a6" stroke="#8c3b44" stroke-width=".8" />
+      {:else if adorn === 'ghim-sach'}
+        <path d="M-6-5Q-3-6 0-4Q3-6 6-5V5Q3 4 0 6Q-3 4-6 5Z" fill="#8c2f28" stroke="#5b3d0e" stroke-width=".9" /><path d="M0-4V6" stroke="#f1d896" stroke-width=".9" />
+      {:else}
+        <circle r="5" fill="none" stroke="#5b3d0e" stroke-width="1" /><circle r="1.8" fill="#5b3d0e" stroke="none" /><path d="M0-5.6V-8M0 5.6V8M-5.6 0H-8M5.6 0H8M4-4l1.8-1.8M-4-4l-1.8-1.8M4 4l1.8 1.8M-4 4l-1.8 1.8" stroke="#5b3d0e" stroke-width=".9" />
+      {/if}
+    </g>
+  {/if}
 </svg>

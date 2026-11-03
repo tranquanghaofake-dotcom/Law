@@ -5,6 +5,19 @@
   import { tts } from '$lib/fx/tts.svelte';
   import { sfx } from '$lib/fx/sfx';
   const ttsOk = $derived(tts.available);
+  let msg = $state('');
+  async function exportData() {
+    const json = await repo.exportAll();
+    const blob = new Blob([json], { type: 'application/json' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob); a.download = `luyen-luat-${new Date().toISOString().slice(0, 10)}.json`; a.click();
+    URL.revokeObjectURL(a.href);
+  }
+  async function importData(e: Event) {
+    const f = (e.target as HTMLInputElement).files?.[0];
+    if (!f) return;
+    try { await repo.importAll(await f.text()); msg = 'Đã nhập dữ liệu.'; } catch { msg = 'File không hợp lệ.'; }
+  }
 </script>
 
 <section class="card settings">
@@ -25,4 +38,11 @@
     <select value={settings.theme} onchange={(e) => saveSetting('theme', e.currentTarget.value as 'auto' | 'light' | 'dark')}>
       <option value="auto">Theo hệ thống</option><option value="light">Sáng</option><option value="dark">Tối</option>
     </select></label>
+  <h3 class="settings-h">Dữ liệu</h3>
+  <p class="muted small">Tiến độ lưu trong trình duyệt này. Xuất file để chuyển máy hoặc lưu dự phòng.</p>
+  <div class="row">
+    <button class="btn ghost plain" type="button" onclick={exportData}>Xuất dữ liệu</button>
+    <label class="btn ghost plain">Nhập dữ liệu<input type="file" accept="application/json" class="sr-only" onchange={importData} /></label>
+  </div>
+  {#if msg}<p role="status">{msg}</p>{/if}
 </section>

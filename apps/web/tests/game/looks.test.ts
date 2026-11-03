@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { POSTS } from '$lib/game/career';
 import { outfitFor } from '$lib/game/wardrobe';
+import { TONE_PALETTES } from '$lib/art/showcase/tones';
 import { ADORNS, BACKDROPS, PROPS, SKIES, TONES, lookFor, lookSignature, type Look } from '$lib/game/looks';
 
 const ids: (string | null)[] = [null, ...POSTS.map((p) => p.id)];
@@ -45,6 +46,10 @@ describe('lookFor — tổ hợp tủ trưng bày cho 29 chức + Công dân', (
     expect(lookFor('chu-tich-nuoc').material).toBe('vang-sang');
     expect(lookFor('cong-chuc-xa').light).toBe('khong');
     expect(lookFor('chu-tich-nuoc').light).toBe('hat-sang');
+  });
+  it('bảng màu vẽ (art/showcase/tones) khớp số biến thể khai báo ở looks', () => {
+    expect(Object.keys(TONE_PALETTES).sort()).toEqual(Object.keys(TONES).sort());
+    for (const k of Object.keys(TONES)) expect(TONE_PALETTES[k], k).toHaveLength(TONES[k]);
   });
   it('không dùng cờ, Quốc huy, quân hàm, sao vàng trong danh mục', () => {
     for (const n of [...PROPS, ...BACKDROPS, ...ADORNS]) expect(n).not.toMatch(/^co-|-co-|quoc-huy|quan-ham|sao-vang/);

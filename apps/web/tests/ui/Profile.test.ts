@@ -9,7 +9,7 @@ const emptyIndex = { subjects: [], conceptCount: {}, sets: [] };
 const stubFetch = () => vi.stubGlobal('fetch', vi.fn(async () => new Response(JSON.stringify(emptyIndex), { status: 200, headers: { 'content-type': 'application/json' } })));
 const LS_KEY = 'll-profile-open';
 
-describe('Profile (thẻ căn cước + 2 tab + các phần đóng/mở)', () => {
+describe('Profile (thẻ căn cước + 2 tab + 3 phần đóng/mở)', () => {
   beforeEach(() => { try { localStorage.removeItem(LS_KEY); } catch { /* bỏ qua */ } shelf.ready = true; shelf.books = []; shelf.subjects = []; });
   // Chờ phần tải dữ liệu bất đồng bộ của Profile xong rồi mới gỡ component, tránh lỗi jsdom "_location" sau khi môi trường đã đóng.
   afterEach(async () => { await new Promise((r) => setTimeout(r, 50)); cleanup(); vi.unstubAllGlobals(); clearContentCache(); route.name = 'home'; });
@@ -37,43 +37,56 @@ describe('Profile (thẻ căn cước + 2 tab + các phần đóng/mở)', () =>
     expect(container.textContent).not.toContain('Thuần thục theo môn');
     expect(container.querySelector('.page-head')).toBeNull();
   });
-  it('5 phần accordion: button[aria-expanded] + vùng role=region; mặc định chỉ mở "Cây chức vụ"', async () => {
+  it('3 phần accordion (Sự nghiệp · Tủ sách · Chuyên cần & tiến độ): button[aria-expanded] + vùng role=region; mặc định chỉ mở "Sự nghiệp"', async () => {
     stubFetch(); route.name = 'profile';
     const { container } = render(Profile);
     const btns = [...container.querySelectorAll<HTMLButtonElement>('.acc-btn')];
-    expect(btns.map((b) => b.querySelector('.acc-t')?.textContent)).toEqual(['Cây chức vụ', 'Tủ sách', 'Thẻ chuyên cần', 'Tủ trưng bày chức danh', 'Dữ liệu']);
-    expect(btns.map((b) => b.getAttribute('aria-expanded'))).toEqual(['true', 'false', 'false', 'false', 'false']);
+    expect(btns.map((b) => b.querySelector('.acc-t')?.textContent)).toEqual(['Sự nghiệp', 'Tủ sách', 'Chuyên cần & tiến độ']);
+    expect(btns.map((b) => b.getAttribute('aria-expanded'))).toEqual(['true', 'false', 'false']);
     for (const b of btns) {
       const panel = container.querySelector(`#${b.getAttribute('aria-controls')}`)!;
       expect(panel.getAttribute('role')).toBe('region');
       expect(panel.getAttribute('aria-labelledby')).toBe(b.id);
     }
     expect(container.querySelector('.org')).not.toBeNull();
+    expect(container.querySelector('.showcase')).not.toBeNull(); // cây và tủ trưng bày cùng một phần
     expect(container.querySelector('.bk')).toBeNull(); // phần chưa mở chưa dựng
+    expect(container.textContent).not.toContain('Xuất dữ liệu'); // "Dữ liệu" đã chuyển sang Cài đặt
     await new Promise((r) => setTimeout(r, 20));
   });
   it('bấm đầu mục mở phần đó (dựng nội dung) và nhớ trong localStorage; bấm lần nữa thì đóng', async () => {
     stubFetch(); route.name = 'profile';
     const { container } = render(Profile);
-    const btn = [...container.querySelectorAll<HTMLButtonElement>('.acc-btn')].find((b) => b.textContent?.includes('Thẻ chuyên cần'))!;
+    const btn = [...container.querySelectorAll<HTMLButtonElement>('.acc-btn')].find((b) => b.textContent?.includes('Chuyên cần'))!;
     await fireEvent.click(btn);
     expect(btn.getAttribute('aria-expanded')).toBe('true');
-    expect(JSON.parse(localStorage.getItem(LS_KEY)!)).toEqual(['cay', 'chuyen-can']);
+    expect(JSON.parse(localStorage.getItem(LS_KEY)!)).toEqual(['su-nghiep', 'chuyen-can']);
     await waitFor(() => expect(container.textContent).toContain('Chưa học khái niệm nào'));
     await fireEvent.click(btn);
     expect(btn.getAttribute('aria-expanded')).toBe('false');
-    expect(JSON.parse(localStorage.getItem(LS_KEY)!)).toEqual(['cay']);
+    expect(JSON.parse(localStorage.getItem(LS_KEY)!)).toEqual(['su-nghiep']);
   });
   it('mở lại theo phần đã nhớ; localStorage hỏng thì dùng mặc định', async () => {
     stubFetch(); route.name = 'profile';
-    localStorage.setItem(LS_KEY, JSON.stringify(['tu', 'khong-co']));
+    localStorage.setItem(LS_KEY, JSON.stringify(['tu-sach', 'khong-co']));
     const first = render(Profile);
-    expect([...first.container.querySelectorAll('.acc-btn')].map((b) => b.getAttribute('aria-expanded'))).toEqual(['false', 'true', 'false', 'false', 'false']);
+    expect([...first.container.querySelectorAll('.acc-btn')].map((b) => b.getAttribute('aria-expanded'))).toEqual(['false', 'true', 'false']);
     expect(first.container.querySelector('.bk')).not.toBeNull();
     await new Promise((r) => setTimeout(r, 50)); cleanup();
     localStorage.setItem(LS_KEY, '{không phải json');
     const second = render(Profile);
     expect(second.container.querySelector('.acc-btn')?.getAttribute('aria-expanded')).toBe('true');
+    await new Promise((r) => setTimeout(r, 20));
+  });
+  it('đổi id phần: giá trị cũ của đợt 5 (cay · tu · trung-bay · chuyen-can · du-lieu) được chuyển đổi êm', async () => {
+    stubFetch(); route.name = 'profile';
+    localStorage.setItem(LS_KEY, JSON.stringify(['tu', 'trung-bay', 'du-lieu']));
+    const { container } = render(Profile);
+    expect([...container.querySelectorAll('.acc-btn')].map((b) => b.getAttribute('aria-expanded'))).toEqual(['true', 'true', 'false']);
+    await new Promise((r) => setTimeout(r, 50)); cleanup();
+    localStorage.setItem(LS_KEY, JSON.stringify(['cay', 'chuyen-can']));
+    const second = render(Profile);
+    expect([...second.container.querySelectorAll('.acc-btn')].map((b) => b.getAttribute('aria-expanded'))).toEqual(['true', 'false', 'true']);
     await new Promise((r) => setTimeout(r, 20));
   });
   it('ở #/cai-dat hiện nội dung Cài đặt trong tab (không có các phần Hồ sơ)', async () => {
@@ -82,6 +95,8 @@ describe('Profile (thẻ căn cước + 2 tab + các phần đóng/mở)', () =>
     expect(container.querySelectorAll('[role="tab"]')[1].getAttribute('aria-selected')).toBe('true');
     expect(container.querySelector('.settings')).not.toBeNull();
     expect(container.querySelector('.acc-list')).toBeNull();
+    expect(container.textContent).toContain('Xuất dữ liệu'); // khối Dữ liệu (xuất/nhập) ở Cài đặt
+    expect(container.textContent).toContain('Nhập dữ liệu');
     await new Promise((r) => setTimeout(r, 20));
   });
 });
