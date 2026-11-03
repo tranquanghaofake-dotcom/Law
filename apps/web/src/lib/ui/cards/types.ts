@@ -1,11 +1,13 @@
-import type { Concept, Item } from '$lib/content/types';
-import type { IntroItem } from '$lib/engine/session';
+import type { Concept } from '$lib/content/types';
+import type { StepItem, StepMeta } from '$lib/engine/session';
 
 export type AnswerResult = { correct: boolean; elapsedMs: number; chosen?: string; selfGrade?: 'dung' | 'gan' | 'sai' };
 
-export type CardProps<I = Item | IntroItem> = {
+export type CardProps<I = StepItem> = {
   concept: Concept;
   item: I;
+  /** Đợt 6: nhãn dạng sinh tự động, câu vàng, vòng sửa sai (xem lib/engine/step.ts). */
+  meta?: StepMeta;
   rng: () => number;
   onanswer: (r: AnswerResult) => void;
   onspeak?: (text: string) => void;

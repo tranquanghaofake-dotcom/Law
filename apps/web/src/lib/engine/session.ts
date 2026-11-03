@@ -1,8 +1,8 @@
 import type { Concept, Item, Level } from '$lib/content/types';
+import type { Step } from './step';
 
+export type { IntroItem, Step, StepItem, StepMeta, GenItem, MatchItem, SortItem } from './step';
 export type Pass = 1 | 2 | 3;
-export type IntroItem = { type: 'intro' };
-export type Step = { conceptId: string; item: Item | IntroItem; level: Level };
 
 export function shuffle<T>(arr: T[], rng: () => number): T[] {
   const a = arr.slice();

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import StreakCard from '$lib/art/StreakCard.svelte';
+  import StreakPanel from '$lib/ui/StreakPanel.svelte';
   import StreakBadge from '$lib/art/StreakBadge.svelte';
   import Bookcase from '$lib/ui/Bookcase.svelte';
   import CareerPanel from '$lib/ui/CareerPanel.svelte';
@@ -13,14 +13,12 @@
   import { storage } from '$lib/store/status.svelte';
   import { stats, EMPTY_STREAK } from '$lib/store/stats';
   import { LuyenLuatDB } from '$lib/store/db';
-  import { LEVEL_NAMES } from '$lib/game/levels';
   import { POSTS, TIER_NAMES, BRANCH_NAMES, careerState, displayTitle, promotionToCelebrate } from '$lib/game/career';
   import type { StreakState } from '$lib/game/streak';
   import { hashFor, route } from '$lib/router.svelte';
   import { shelf, refreshShelf } from '$lib/ui/shelf.svelte';
   import { career } from '$lib/ui/career.svelte';
   import { weekFlags, weekStart } from '$lib/ui/week';
-  import WeekDots from '$lib/ui/WeekDots.svelte';
   import Settings from './Settings.svelte';
 
   const onSettings = $derived(route.name === 'settings');
@@ -29,8 +27,6 @@
   let byLevel = $state<number[]>([0, 0, 0, 0, 0, 0, 0]);
   let week = $state<boolean[]>(Array(7).fill(false));
   let msg = $state('');
-  const learned = $derived(byLevel.slice(1).reduce((a, b) => a + b, 0));
-  const maxCol = $derived(Math.max(1, ...byLevel));
 
   if (!shelf.ready) refreshShelf();
   const cs = $derived(careerState(shelf.books));
@@ -192,22 +188,7 @@
                 {:else if s.id === 'tu'}
                   <Bookcase />
                 {:else if s.id === 'chuyen-can'}
-                  <div class="streak-pane profile">
-                    <StreakCard count={streak.count} longest={streak.longest} />
-                    <p class="streak-line"><b>{streak.count}</b> ngày · {xp} XP · dài nhất {streak.longest} · bùa giữ chuỗi {streak.freezes}/2</p>
-                    <WeekDots days={week} />
-                  </div>
-                  <p class="kicker" style="margin-top:16px">Khái niệm theo bậc</p>
-                  {#if learned === 0}
-                    <p class="empty muted">Chưa học khái niệm nào · <a href={hashFor('home')}>Học đợt đầu tiên →</a></p>
-                  {:else}
-                    <div class="levels" role="img" aria-label={byLevel.map((n, i) => `${LEVEL_NAMES[i]}: ${n}`).join(', ')}>
-                      {#each byLevel as n, i (i)}
-                        <div class="col"><span class="n">{n}</span><span class="stick cell lv{i}" style="height:{Math.max(4, (n / maxCol) * 80)}px"></span><span class="small muted">{i}</span></div>
-                      {/each}
-                    </div>
-                    <p class="small muted">0 chưa học · 6 thuần thục</p>
-                  {/if}
+                  <StreakPanel {streak} {xp} {week} {byLevel} />
                 {:else if s.id === 'trung-bay'}
                   <CareerPanel />
                 {:else}

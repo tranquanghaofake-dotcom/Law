@@ -1,16 +1,16 @@
 <script lang="ts">
   import Glyph from '$lib/art/Glyph.svelte';
-  import type { Concept, Item } from '$lib/content/types';
-  import type { IntroItem } from '$lib/engine/session';
+  import type { Concept } from '$lib/content/types';
+  import type { StepItem } from '$lib/engine/session';
   import type { AnswerResult } from './cards/types';
   import { isTypingTarget } from './cards/types';
   import { answerText } from './cards/answer';
   let { result, item, concept, confusableTerms = [], onnext, onspeak, last = false }: {
-    result: AnswerResult; item: Item | IntroItem; concept: Concept; confusableTerms?: string[];
+    result: AnswerResult; item: StepItem; concept: Concept; confusableTerms?: string[];
     onnext: () => void; onspeak?: (t: string) => void; last?: boolean;
   } = $props();
 
-  const correctText = $derived(item.type === 'pair' || item.type === 'recall' ? '' : answerText(item));
+  const correctText = $derived(item.type === 'pair' || item.type === 'sort' || item.type === 'match' || item.type === 'recall' ? '' : answerText(item));
   const explain = $derived('explain' in item ? item.explain : item.type === 'recall' ? item.model : '');
   const source = $derived(('source' in item && item.source) ? item.source : concept.source);
   const speakText = $derived(result.correct ? explain : `Đáp án: ${correctText}. ${explain}`);
