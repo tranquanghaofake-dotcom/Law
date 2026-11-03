@@ -121,6 +121,18 @@
     "sử dụng",
     "không phụ thuộc đăng ký"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Nhãn hiệu nổi tiếng là nhãn hiệu được bộ phận công chúng có liên quan biết đến rộng rãi trên lãnh thổ Việt Nam.",
+   "answer": true,
+   "explain": "Đúng. Khoản 20 Điều 4 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 20 Điều 4 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+   }
   }
  ]
 }

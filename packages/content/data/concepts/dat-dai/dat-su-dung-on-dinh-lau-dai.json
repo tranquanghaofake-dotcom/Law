@@ -123,6 +123,17 @@
     "50 năm",
     "gia hạn"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thời hạn giao đất nông nghiệp đối với cá nhân trực tiếp sản xuất nông nghiệp trong hạn mức giao đất là 50 năm; khi hết thời hạn sử dụng đất thì được tiếp tục sử dụng đất mà không phải làm thủ tục gia hạn.",
+   "answer": true,
+   "explain": "Đúng. Điểm a khoản 1 Điều 172 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điểm a khoản 1 Điều 172 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)"
+   }
   }
  ]
 }

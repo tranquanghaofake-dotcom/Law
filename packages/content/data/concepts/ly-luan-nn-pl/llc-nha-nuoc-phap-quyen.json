@@ -32,7 +32,7 @@
    "q": "Khoản 1 Điều 2 Hiến pháp 2013 xác định Nhà nước Việt Nam là gì?",
    "options": [
     "Nhà nước pháp quyền xã hội chủ nghĩa của Nhân dân, do Nhân dân, vì Nhân dân",
-    "Nhà nước chuyên chính vô sản do giai cấp công nhân lãnh đạo tuyệt đối",
+    "Nhà nước pháp quyền xã hội chủ nghĩa Việt Nam do một giai cấp duy nhất nắm quyền",
     "Nhà nước liên bang gồm nhiều bang có hiến pháp và quân đội riêng",
     "Nhà nước quân chủ lập hiến, vua đứng đầu và có quyền lập pháp riêng"
    ],
@@ -123,6 +123,18 @@
     "quyền con người",
     "tư pháp độc lập"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Nhà nước Cộng hòa xã hội chủ nghĩa Việt Nam là nhà nước pháp quyền xã hội chủ nghĩa của Nhân dân, do Nhân dân, vì Nhân dân.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 2 Hiến pháp 2013 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 2 Hiến pháp 2013",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+   }
   }
  ]
 }

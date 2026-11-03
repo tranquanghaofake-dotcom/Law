@@ -125,10 +125,10 @@
     {
       "q": "Vi phạm hành chính có bắt buộc phải có lỗi không?",
       "options": [
-        "Có",
-        "Không",
-        "Chỉ với cá nhân",
-        "Chỉ với tổ chức"
+        "Có, vì là hành vi có lỗi",
+        "Không, chỉ cần hành vi trái luật",
+        "Có, nhưng chỉ với cá nhân",
+        "Có, nhưng chỉ với tổ chức"
       ],
       "answer": 0,
       "explain": "Khoản 1 Điều 2: hành vi có lỗi.",

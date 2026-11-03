@@ -118,6 +118,18 @@
     "minh bạch",
     "hạ tầng"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Nhà nước có chính sách quản lý, giám sát bảo đảm thị trường chứng khoán hoạt động công bằng, công khai, minh bạch, an toàn và hiệu quả.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 6 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 6 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+   }
   }
  ]
 }

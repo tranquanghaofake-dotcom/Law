@@ -122,6 +122,18 @@
     "10 năm",
     "gia hạn"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Bằng độc quyền giải pháp hữu ích có hiệu lực từ ngày cấp và kéo dài đến hết mười năm kể từ ngày nộp đơn.",
+   "answer": true,
+   "explain": "Đúng. Khoản 3 Điều 93 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 93 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+   }
   }
  ]
 }

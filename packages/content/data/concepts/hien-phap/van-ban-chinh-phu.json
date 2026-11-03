@@ -30,8 +30,8 @@
    "q": "Theo Điều 100, chủ thể nào có quyền ban hành văn bản pháp luật?",
    "options": [
     "Chính phủ, Thủ tướng, Bộ trưởng, Thủ trưởng cơ quan ngang bộ",
-    "Chỉ Chính phủ và các cơ quan nhà nước trung ương khác",
-    "Chỉ Thủ tướng Chính phủ và các Phó Thủ tướng Chính phủ",
+    "Chính phủ, Thủ tướng và Chủ tịch nước",
+    "Thủ tướng, các Phó Thủ tướng và Tổng Thanh tra",
     "Thứ trưởng và cán bộ cấp vụ của các bộ, cơ quan ngang bộ"
    ],
    "answer": 0,

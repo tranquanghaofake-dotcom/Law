@@ -49,8 +49,8 @@
    "options": [
     "Có, để bầu đại biểu Quốc hội và Hội đồng nhân dân cấp tỉnh nơi bị tạm giam",
     "Không, vì đang bị tạm giam và chưa có bản án có hiệu lực pháp luật",
-    "Chỉ được bầu Hội đồng nhân dân cấp xã nơi có bản án đang thi hành",
-    "Chỉ khi được Tòa án cho phép bằng văn bản và cơ quan điều tra xác nhận"
+    "Có, để bầu Hội đồng nhân dân cấp xã nơi người đó thường trú trước đây",
+    "Có, nếu được Tòa án cho phép bằng văn bản và cơ quan điều tra xác nhận"
    ],
    "answer": 0,
    "explain": "Khoản 5 Điều 29.",
@@ -126,6 +126,18 @@
     "thường trú hoặc tạm trú",
     "tạm giam"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi công dân có quyền bầu cử đều được ghi tên vào danh sách cử tri và được phát thẻ cử tri.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 29 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 29 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026)",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/luat-bau-cu-dai-bieu-quoc-hoi-va-dai-bieu-hoi-dong-nhan-dan-so-85-2015-qh13--70812"
+   }
   }
  ]
 }

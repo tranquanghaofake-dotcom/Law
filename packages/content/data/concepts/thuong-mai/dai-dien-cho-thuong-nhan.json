@@ -125,6 +125,18 @@
     "chỉ dẫn",
     "thù lao"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Trong trường hợp thương nhân cử người của mình để làm đại diện cho mình thì áp dụng quy định của Bộ luật Dân sự.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 141 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 141 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)",
+    "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+   }
   }
  ]
 }

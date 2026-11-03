@@ -26,12 +26,12 @@
   {
    "type": "mcq",
    "level": 1,
-   "q": "Hành vi xâm phạm quyền sở hữu trí tuệ có thể bị xử lý bằng những biện pháp nào?",
+   "q": "Phương án nào liệt kê đầy đủ các biện pháp xử lý hành vi xâm phạm quyền sở hữu trí tuệ?",
    "options": [
     "Dân sự, hành chính hoặc hình sự tùy tính chất, mức độ",
-    "Chỉ dân sự, theo thủ tục tố tụng dân sự tại Tòa án",
-    "Chỉ hình sự, bắt buộc truy cứu trách nhiệm hình sự",
-    "Chỉ hòa giải giữa các bên, không có chế tài nào"
+    "Dân sự và hành chính, theo thủ tục tố tụng tại Tòa án",
+    "Hành chính và hình sự, không áp dụng biện pháp dân sự",
+    "Hòa giải giữa các bên và xử lý kỷ luật nội bộ"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 199.",
@@ -120,6 +120,18 @@
     "hình sự",
     "khẩn cấp tạm thời"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tổ chức, cá nhân có hành vi xâm phạm quyền sở hữu trí tuệ của tổ chức, cá nhân khác thì tuỳ theo tính chất, mức độ xâm phạm, có thể bị xử lý bằng biện pháp dân sự, hành chính hoặc hình sự.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 199 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 199 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+   }
   }
  ],
  "note": "Nguyên văn theo VBHN 67/VBHN-VPQH 2026 (đang có hiệu lực). Luật 11/2026/QH16 (hiệu lực 01/3/2027) sửa khoản 2 Điều 199 thành \"biện pháp kiểm soát hàng hóa xuất khẩu, nhập khẩu, quá cảnh liên quan đến quyền sở hữu trí tuệ\" (VBHN 160/2026/VBHN-LQ-VPQH)."

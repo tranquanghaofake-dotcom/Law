@@ -119,6 +119,18 @@
     "tình trạng chiến tranh",
     "động viên"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Danh sách thành viên Hội đồng quốc phòng và an ninh do Chủ tịch nước trình Quốc hội phê chuẩn.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 89 Hiến pháp 2013 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 89 Hiến pháp 2013",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+   }
   }
  ]
 }

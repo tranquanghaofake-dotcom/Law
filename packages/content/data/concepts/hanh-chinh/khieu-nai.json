@@ -120,6 +120,18 @@
     "lần hai",
     "khởi kiện"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thời hiệu khiếu nại là 90 ngày, kể từ ngày nhận được quyết định hành chính hoặc biết được quyết định hành chính, hành vi hành chính.",
+   "answer": true,
+   "explain": "Đúng. Điều 9 Luật Khiếu nại 2011 (VBHN 28/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 9 Luật Khiếu nại 2011 (VBHN 28/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-28-VBHN-VPQH-2026-Luat-Khieu-nai-697698.aspx"
+   }
   }
  ]
 }

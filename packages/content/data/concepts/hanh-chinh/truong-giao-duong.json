@@ -120,6 +120,18 @@
     "khoản 2 Điều 12",
     "mang thai"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người từ đủ 12 tuổi đến dưới 14 tuổi thực hiện hành vi có dấu hiệu của một tội phạm đặc biệt nghiêm trọng quy định tại Bộ luật Hình sự.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 92 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 92 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/Vi-pham-hanh-chinh/Van-ban-hop-nhat-90-VBHN-VPQH-2026-Luat-Xu-ly-vi-pham-hanh-chinh-699548.aspx"
+   }
   }
  ]
 }

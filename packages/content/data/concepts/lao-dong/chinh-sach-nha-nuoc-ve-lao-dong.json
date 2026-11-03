@@ -45,10 +45,10 @@
    "level": 1,
    "q": "Chính sách của Nhà nước có bảo đảm quyền lợi của người sử dụng lao động không?",
    "options": [
-    "Có, theo khoản 2 Điều 4",
-    "Không, chỉ bảo vệ người làm",
-    "Chỉ với doanh nghiệp nhà nước",
-    "Chỉ khi có tranh chấp"
+    "Có, theo khoản 2 Điều 4 Bộ luật Lao động",
+    "Không, vì chỉ bảo vệ quyền của người lao động",
+    "Có, nếu là doanh nghiệp nhà nước",
+    "Có, nếu đang có tranh chấp"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 4.",

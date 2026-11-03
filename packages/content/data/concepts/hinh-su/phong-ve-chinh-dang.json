@@ -45,10 +45,10 @@
    "level": 1,
    "q": "Người vượt quá giới hạn phòng vệ chính đáng có phải chịu TNHS không?",
    "options": [
-    "Có",
-    "Không",
-    "Chỉ khi gây chết người",
-    "Chỉ bị xử lý kỷ luật"
+    "Có, theo đoạn 2 khoản 2 Điều 22",
+    "Không, vì đang bảo vệ lợi ích hợp pháp",
+    "Có, nếu hành vi gây chết người",
+    "Không, chỉ phải chịu xử lý kỷ luật"
    ],
    "answer": 0,
    "explain": "Đoạn 2 khoản 2 Điều 22.",

@@ -51,8 +51,8 @@
    "options": [
     "Có, theo khoản 1a Điều 198",
     "Không, phải tự thực hiện",
-    "Chỉ ủy quyền cho luật sư nước ngoài",
-    "Chỉ khi tòa án cho phép"
+    "Có, nếu tòa án cho phép",
+    "Không, trừ luật sư nước ngoài"
    ],
    "answer": 0,
    "explain": "Khoản 1a Điều 198.",
@@ -129,6 +129,17 @@
     "cơ quan nhà nước",
     "khởi kiện"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chủ thể quyền sở hữu trí tuệ có quyền áp dụng biện pháp công nghệ bảo vệ quyền, đưa thông tin quản lý quyền hoặc áp dụng các biện pháp công nghệ khác nhằm ngăn ngừa hành vi xâm phạm quyền sở hữu trí tuệ.",
+   "answer": true,
+   "explain": "Đúng. Điểm a khoản 1 Điều 198 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điểm a khoản 1 Điều 198 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
   }
  ]
 }

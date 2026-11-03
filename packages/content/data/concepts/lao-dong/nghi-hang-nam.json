@@ -120,6 +120,17 @@
     "thanh toán",
     "03 năm"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người lao động làm việc đủ 12 tháng cho một người sử dụng lao động thì được nghỉ hằng năm, hưởng nguyên lương; người làm nghề, công việc đặc biệt nặng nhọc, độc hại, nguy hiểm được nghỉ 16 ngày làm việc.",
+   "answer": true,
+   "explain": "Đúng. Điểm c khoản 1 Điều 113 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điểm c khoản 1 Điều 113 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)"
+   }
   }
  ]
 }

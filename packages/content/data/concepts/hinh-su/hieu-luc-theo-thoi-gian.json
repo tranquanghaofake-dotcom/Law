@@ -29,8 +29,8 @@
    "options": [
     "Có, vì có lợi cho người phạm tội",
     "Không, vì luật không có hồi tố",
-    "Chỉ khi Viện kiểm sát đề nghị",
-    "Chỉ khi chưa khởi tố"
+    "Có, nếu Viện kiểm sát đề nghị",
+    "Có, nếu hành vi chưa bị khởi tố"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 7.",
@@ -118,6 +118,18 @@
     "có lợi",
     "hồi tố"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Điều luật được áp dụng đối với một hành vi phạm tội là điều luật đang có hiệu lực thi hành tại thời điểm mà hành vi phạm tội được thực hiện.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 7 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 7 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)",
+    "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+   }
   }
  ]
 }

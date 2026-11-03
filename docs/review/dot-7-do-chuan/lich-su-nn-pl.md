@@ -133,3 +133,18 @@
 | id | câu/tình huống | trước → sau | căn cứ | ghi chú |
 |---|---|---|---|---|
 | cam-mua-ban-dat-1987, chuoc-toi-thap-ac và các tình huống căn cứ giáo trình (⚠ haiku-3) | Luật Đất đai 1993, chiếu 1042, giáo trình chương 6–7 | không sửa | ngoài kho | ⚠ Hào: duyệt theo giáo trình |
+
+## Câu hỏi viết lại (sonnet B)
+
+### Câu lộ tên khái niệm trong phương án (2)
+
+| Mã | Câu hỏi | Trước | Sau | Căn cứ | Ghi chú |
+|---|---|---|---|---|---|
+| `lich-su-nn-pl/hai-muoi-bon-lo#0` | Theo Toàn thư, năm 1010 nhà Lý chia lại đơn vị hành chính như thế nào? | **Đổi 10 đạo làm 24 lộ, châu Hoan, châu Ái làm trại**<br>Chia nước làm 12 đạo, châu Hoan, châu Ái làm lộ<br>Chia làm 13 đạo thừa tuyên, giữ nguyên châu Hoan<br>Chia làm 9 quận, đặt chức Thái thú cai quản | **Đổi 10 đạo làm 24 lộ, châu Hoan, châu Ái làm trại**<br>Đổi 10 đạo làm 24 lộ, châu Hoan, châu Ái giữ nguyên làm châu<br>Chia làm 13 đạo thừa tuyên, giữ nguyên châu Hoan<br>Chia làm 9 quận, đặt chức Thái thú cai quản | Theo nguồn cũ của câu (Toàn thư) | Nhiễu cũng chứa '24 lộ' nhưng sai phần châu Hoan, châu Ái. |
+| `lich-su-nn-pl/thua-tuyen-1466#0` | Năm 1466, Lê Thánh Tông chia nước thành đơn vị hành chính nào? | **13 đạo thừa tuyên**<br>24 lộ và 12 phủ<br>12 lộ, 12 trấn phủ<br>9 quận và 3 châu | **13 đạo thừa tuyên**<br>13 đạo thừa tuyên và 12 lộ<br>12 lộ, 12 trấn phủ<br>9 quận và 3 châu | Theo nguồn cũ của câu (Toàn thư) | Nhiễu cũng chứa '13 đạo thừa tuyên' nhưng thêm 12 lộ. |
+
+### Câu Đúng/Sai đáp án Đúng thêm mới (1)
+
+| Mã | Nhận định (Đúng) | Căn cứ | Ghi chú |
+|---|---|---|---|
+| `lich-su-nn-pl/luat-dat-dai-1987#7` | Theo Luật Đất đai 1987, đất đai thuộc sở hữu toàn dân, do Nhà nước thống nhất quản lý. | Điều 1 Luật Đất đai 1987 | Nguyên văn câu đầu Điều 1 (văn bản lịch sử), khớp định nghĩa trong dữ liệu |

@@ -49,9 +49,9 @@
    "q": "Tổ chức nào được thực hiện hoạt động ngân hàng?",
    "options": [
     "Tổ chức đủ điều kiện và được Ngân hàng Nhà nước cấp Giấy phép",
-    "Mọi doanh nghiệp đã đăng ký kinh doanh có vốn điều lệ đủ lớn theo luật",
-    "Mọi tổ chức có vốn trên 100 tỷ đồng và có trụ sở chính tại Việt Nam",
-    "Bất kỳ cá nhân nào có tiền nhàn rỗi và nhu cầu gửi tiết kiệm lâu dài"
+    "Doanh nghiệp đã đăng ký kinh doanh có vốn điều lệ đủ lớn theo luật",
+    "Tổ chức có vốn trên 100 tỷ đồng và có trụ sở chính tại Việt Nam",
+    "Cá nhân có tiền nhàn rỗi và nhu cầu gửi tiết kiệm lâu dài"
    ],
    "answer": 0,
    "explain": "Điều 8.",
@@ -124,6 +124,17 @@
     "cấp tín dụng",
     "thanh toán qua tài khoản"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hoạt động ngân hàng là việc kinh doanh, cung ứng thường xuyên một hoặc một số nghiệp vụ nhận tiền gửi, cấp tín dụng, cung ứng dịch vụ thanh toán qua tài khoản.",
+   "answer": true,
+   "explain": "Đúng. Khoản 17 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 17 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)"
+   }
   }
  ]
 }

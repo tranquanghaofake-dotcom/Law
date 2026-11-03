@@ -121,6 +121,18 @@
     "Kho bạc",
     "tiền gửi"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quỹ ngân sách nhà nước là toàn bộ các khoản tiền của Nhà nước, kể cả tiền vay có trên tài khoản của ngân sách nhà nước các cấp tại một thời điểm.",
+   "answer": true,
+   "explain": "Đúng. Khoản 22 Điều 4 Luật Ngân sách nhà nước 2025 (89/2025/QH15) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 22 Điều 4 Luật Ngân sách nhà nước 2025 (89/2025/QH15)",
+    "url": "https://thuvienphapluat.vn/van-ban/Tai-chinh-nha-nuoc/Luat-ngan-sach-nha-nuoc-2025-so-89-2025-QH15-650061.aspx"
+   }
   }
  ]
 }

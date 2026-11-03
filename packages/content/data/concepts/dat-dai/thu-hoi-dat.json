@@ -120,6 +120,18 @@
     "lợi ích quốc gia",
     "liệt kê"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Nhà nước thu hồi đất là việc cơ quan nhà nước có thẩm quyền ban hành quyết định thu lại quyền sử dụng đất của người sử dụng đất.",
+   "answer": true,
+   "explain": "Đúng. Khoản 35 Điều 3 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 35 Điều 3 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Van-ban-hop-nhat-44-VBHN-VPQH-2026-Luat-Dat-dai-699655.aspx"
+   }
   }
  ]
 }

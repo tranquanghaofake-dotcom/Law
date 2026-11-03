@@ -125,10 +125,10 @@
     {
       "q": "Hành vi xâm phạm quyền sở hữu trí tuệ có thể bị xử lý bằng biện pháp nào?",
       "options": [
-        "Chỉ dân sự theo tố tụng tại Tòa án",
+        "Dân sự và hành chính, không có hình sự",
         "Dân sự, hành chính hoặc hình sự",
-        "Chỉ hành chính theo thủ tục",
-        "Chỉ hòa giải các bên tranh chấp"
+        "Hành chính và hình sự, không có dân sự",
+        "Hòa giải các bên tranh chấp"
       ],
       "answer": 1,
       "explain": "Khoản 1 Điều 199.",

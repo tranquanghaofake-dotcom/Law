@@ -126,6 +126,17 @@
     "điều cấm",
     "rút gọn"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tòa án có trách nhiệm tiến hành hòa giải và tạo điều kiện thuận lợi để các đương sự thỏa thuận với nhau về việc giải quyết vụ việc dân sự theo quy định của Bộ luật Tố tụng dân sự.",
+   "answer": true,
+   "explain": "Đúng. Điều 10 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 10 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)"
+   }
   }
  ]
 }

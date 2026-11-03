@@ -123,6 +123,17 @@
     "quản lý nhà nước",
     "phát hành tiền"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Ngân hàng Nhà nước Việt Nam là cơ quan ngang bộ của Chính phủ, là Ngân hàng trung ương của nước Cộng hòa xã hội chủ nghĩa Việt Nam.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 2 Luật Ngân hàng Nhà nước Việt Nam (VBHN 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 2 Luật Ngân hàng Nhà nước Việt Nam (VBHN 2026)"
+   }
   }
  ]
 }

@@ -74,9 +74,9 @@
       "q": "Trường hợp nào bắt buộc thực hiện quy trình xây dựng chính sách?",
       "options": [
         "Luật, pháp lệnh mới hoặc thay thế luật, pháp lệnh hiện hành",
-        "Mọi thông tư của Bộ trưởng và thủ trưởng cơ quan ngang Bộ",
-        "Mọi nghị quyết của HĐND cấp tỉnh về chính sách địa phương",
-        "Mọi quyết định của Thủ tướng Chính phủ về tổ chức bộ máy hành chính"
+        "Thông tư của Bộ trưởng và thủ trưởng cơ quan ngang Bộ về quản lý ngành",
+        "Nghị quyết của HĐND cấp tỉnh về chính sách địa phương",
+        "Quyết định của Thủ tướng Chính phủ về tổ chức bộ máy hành chính"
       ],
       "answer": 0,
       "explain": "Điểm a khoản 1 Điều 27.",

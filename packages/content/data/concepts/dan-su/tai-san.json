@@ -25,12 +25,12 @@
   {
    "type": "mcq",
    "level": 1,
-   "q": "Theo Điều 105, tài sản gồm những loại nào?",
+   "q": "Phương án nào liệt kê đầy đủ các loại tài sản theo Điều 105?",
    "options": [
     "Vật, tiền, giấy tờ có giá và quyền tài sản",
-    "Chỉ vật và tiền mặt, không có giấy tờ",
+    "Vật, tiền, giấy tờ có giá và quyền nhân thân",
     "Vật, tiền, sức lao động và các quyền nhân thân",
-    "Chỉ bất động sản và động sản đã đăng ký"
+    "Bất động sản và động sản đã được đăng ký"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 105.",

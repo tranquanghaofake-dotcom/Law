@@ -120,6 +120,17 @@
     "bảo hiểm thất nghiệp",
     "06 tháng"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thời gian làm việc để tính trợ cấp thôi việc là tổng thời gian người lao động đã làm việc thực tế cho người sử dụng lao động trừ đi thời gian người lao động đã tham gia bảo hiểm thất nghiệp và thời gian làm việc đã được người sử dụng lao động chi trả trợ cấp thôi việc, trợ cấp mất việc làm.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 46 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 46 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)"
+   }
   }
  ]
 }

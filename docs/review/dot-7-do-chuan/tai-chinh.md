@@ -69,3 +69,23 @@ Tổng: 38 tình huống mới; 17 khái niệm đạt ≥ 4 tình huống.
 | id | câu/tình huống | trước → sau | căn cứ | ghi chú |
 |---|---|---|---|---|
 | thue-thu-nhap-doanh-nghiep (⚠ haiku-2) | khoản 14a Điều 4 (Luật 09/2026/QH16) | không sửa | note khái niệm đã nêu VBHN 113/VBHN-VPQH 2026 | ⚠ Hào: thay `laws/ltndn-2025.txt` bằng VBHN 113/2026 để test thấy khoản 14a |
+
+## Câu hỏi viết lại (sonnet B)
+
+### Câu hỏi kiểu tập hợp (bỏ nhiễu "Chỉ…") (2)
+
+| Mã | Câu hỏi | Trước | Sau | Căn cứ | Ghi chú |
+|---|---|---|---|---|---|
+| `tai-chinh/thue-gia-tri-gia-tang#1` | Hàng hóa, dịch vụ nào là đối tượng chịu thuế GTGT?<br>→ Phương án nào mô tả đầy đủ đối tượng chịu thuế GTGT (Điều 3)? | **Hàng hóa, dịch vụ sử dụng cho sản xuất, kinh doanh và tiêu dùng ở Việt Nam, trừ đối tượng tại Điều 5**<br>Chỉ hàng hóa nhập khẩu từ các nước thành viên Hiệp định thương mại tự do, không gồm dịch vụ trong nước<br>Chỉ dịch vụ tài chính, ngân hàng, bảo hiểm và chứng khoán do tổ chức tín dụng cung cấp cho khách hàng trong nước<br>Chỉ hàng xa xỉ thuộc danh mục tiêu dùng cao cấp do Chính phủ quy định, chỉ bán tại thị trường trong nước | **Hàng hóa, dịch vụ sử dụng cho sản xuất, kinh doanh và tiêu dùng ở Việt Nam, trừ đối tượng tại Điều 5**<br>Hàng hóa nhập khẩu từ các nước thành viên Hiệp định thương mại tự do, không gồm dịch vụ trong nước<br>Dịch vụ tài chính, ngân hàng, bảo hiểm và chứng khoán do tổ chức tín dụng cung cấp cho khách hàng trong nước<br>Hàng xa xỉ thuộc danh mục tiêu dùng cao cấp do Chính phủ quy định, bán tại thị trường trong nước | Điều 3 Luật Thuế giá trị gia tăng 2024 | Hỏi 'đầy đủ'. |
+| `sets/tai-chinh-de-1#7` | Quỹ ngân sách nhà nước có bao gồm tiền vay không? | **Có, kể cả tiền vay**<br>Không<br>Chỉ vay nước ngoài<br>Chỉ vay trong nước | **Có, bao gồm cả tiền vay**<br>Không, không gồm tiền vay<br>Có, nhưng chỉ vay nước ngoài<br>Có, nhưng chỉ vay trong nước | Khoản 22 Điều 4 Luật Ngân sách nhà nước 2025 | Nhiễu viết lại: sai rõ, không cần từ tuyệt đối |
+
+### Câu Đúng/Sai đáp án Đúng thêm mới (6)
+
+| Mã | Nhận định (Đúng) | Căn cứ | Ghi chú |
+|---|---|---|---|
+| `tai-chinh/he-thong-nsnn#7` | Ngân sách nhà nước bao gồm ngân sách trung ương và ngân sách địa phương. | Khoản 1 Điều 6 Luật Ngân sách nhà nước 2025 (89/2025/QH15) | nguyên văn khớp laws/*.txt |
+| `tai-chinh/nguyen-tac-quan-ly-nsnn#7` | Toàn bộ các khoản thu, chi ngân sách phải được dự toán, tổng hợp đầy đủ vào ngân sách nhà nước. | Khoản 2 Điều 8 Luật Ngân sách nhà nước 2025 (89/2025/QH15) | nguyên văn khớp laws/*.txt |
+| `tai-chinh/nguyen-tac-quan-ly-thue#7` | Người nộp thuế có nghĩa vụ nộp thuế, các khoản thu khác thuộc ngân sách nhà nước theo quy định của luật thuế và quy định của pháp luật. | Khoản 2 Điều 6 Luật Quản lý thuế 2025 (108/2025/QH15) | nguyên văn khớp laws/*.txt |
+| `tai-chinh/quy-ngan-sach-nha-nuoc#7` | Quỹ ngân sách nhà nước là toàn bộ các khoản tiền của Nhà nước, kể cả tiền vay có trên tài khoản của ngân sách nhà nước các cấp tại một thời điểm. | Khoản 22 Điều 4 Luật Ngân sách nhà nước 2025 (89/2025/QH15) | nguyên văn khớp laws/*.txt |
+| `tai-chinh/thue-gia-tri-gia-tang#7` | Thuế giá trị gia tăng là thuế tính trên giá trị tăng thêm của hàng hóa, dịch vụ phát sinh trong quá trình từ sản xuất, lưu thông đến tiêu dùng. | Điều 2 3 Luật Thuế giá trị gia tăng 2024 (VBHN 114/VBHN-VPQH 2026) | nguyên văn khớp laws/*.txt |
+| `tai-chinh/thue-thu-nhap-doanh-nghiep#7` | Thuế suất 17% áp dụng đối với doanh nghiệp có tổng doanh thu năm từ trên 03 tỷ đồng đến không quá 50 tỷ đồng. | Khoản 3 Điều 10 Luật Thuế thu nhập doanh nghiệp 2025 (67/2025/QH15) | nguyên văn khớp laws/*.txt |

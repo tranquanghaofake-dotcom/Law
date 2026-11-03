@@ -126,9 +126,9 @@
       "q": "Ai là người tố cáo theo Luật Tố cáo?",
       "options": [
         "Cá nhân thực hiện việc tố cáo",
-        "Cơ quan, tổ chức, cá nhân",
-        "Chỉ cán bộ, công chức nhà nước",
-        "Chỉ doanh nghiệp nhà nước"
+        "Cơ quan hoặc tổ chức thực hiện tố cáo",
+        "Cán bộ, công chức đang làm việc",
+        "Doanh nghiệp nhà nước"
       ],
       "answer": 0,
       "explain": "Khoản 4 Điều 2.",

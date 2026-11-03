@@ -120,6 +120,18 @@
     "hỗ trợ",
     "người tiêu dùng"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Đương sự có quyền và nghĩa vụ chủ động thu thập, giao nộp chứng cứ cho Tòa án và chứng minh cho yêu cầu của mình là có căn cứ và hợp pháp.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 6 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 6 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/Thu-tuc-To-tung/Van-ban-hop-nhat-21-VBHN-VPQH-2026-Bo-luat-To-dung-dan-su-696578.aspx"
+   }
   }
  ]
 }

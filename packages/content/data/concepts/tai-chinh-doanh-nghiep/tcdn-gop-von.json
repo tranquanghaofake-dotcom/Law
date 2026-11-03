@@ -48,9 +48,9 @@
    "q": "Ai có quyền dùng tài sản để góp vốn?",
    "options": [
     "Chủ sở hữu hợp pháp hoặc người có quyền sử dụng hợp pháp tài sản",
-    "Bất kỳ ai đang giữ tài sản, kể cả người chỉ được thuê hoặc mượn",
-    "Chỉ cổ đông sáng lập của công ty cổ phần tại thời điểm thành lập",
-    "Chỉ người có quốc tịch Việt Nam và có hộ khẩu thường trú tại đây"
+    "Người đang giữ tài sản, kể cả người chỉ được thuê hoặc mượn",
+    "Cổ đông sáng lập của công ty cổ phần tại thời điểm thành lập",
+    "Người có quốc tịch Việt Nam và có đăng ký thường trú tại địa phương"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 34.",
@@ -122,6 +122,17 @@
     "quyền sử dụng đất",
     "định giá được"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Góp vốn là việc góp tài sản để tạo thành vốn điều lệ của công ty, bao gồm góp vốn để thành lập công ty hoặc góp thêm vốn điều lệ của công ty đã được thành lập.",
+   "answer": true,
+   "explain": "Đúng. Khoản 18 Điều 4 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 18 Điều 4 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
   }
  ]
 }

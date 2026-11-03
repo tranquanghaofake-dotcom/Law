@@ -124,6 +124,18 @@
     "giám sát",
     "lâm thời"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Khi cần thiết, Quốc hội thành lập Ủy ban lâm thời để nghiên cứu, thẩm tra một dự án hoặc điều tra về một vấn đề nhất định.",
+   "answer": true,
+   "explain": "Đúng. Điều 78 Hiến pháp 2013 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 78 Hiến pháp 2013",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+   }
   }
  ]
 }

@@ -123,6 +123,17 @@
     "bãi bỏ",
     "chính cơ quan"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Văn bản quy phạm pháp luật chỉ được sửa đổi, bổ sung, thay thế bằng văn bản quy phạm pháp luật của chính cơ quan, người có thẩm quyền đã ban hành văn bản đó, trừ trường hợp luật có quy định khác.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 8 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 8 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)"
+   }
   }
  ]
 }

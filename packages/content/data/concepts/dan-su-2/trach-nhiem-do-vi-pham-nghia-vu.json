@@ -48,7 +48,7 @@
    "options": [
     "Bên có nghĩa vụ không phải chịu trách nhiệm dân sự",
     "Cả hai bên đều phải chịu trách nhiệm như nhau",
-    "Bên có nghĩa vụ vẫn phải bồi thường cho bên có quyền",
+    "Bên có nghĩa vụ vẫn phải chịu trách nhiệm dân sự và bồi thường",
     "Hợp đồng vô hiệu từ khi giao kết, không có trách nhiệm gì"
    ],
    "answer": 0,
@@ -121,6 +121,18 @@
     "bất khả kháng",
     "lỗi của bên có quyền"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Bên có nghĩa vụ mà vi phạm nghĩa vụ thì phải chịu trách nhiệm dân sự đối với bên có quyền.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 351 Bộ luật Dân sự 2015 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 351 Bộ luật Dân sự 2015",
+    "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+   }
   }
  ]
 }

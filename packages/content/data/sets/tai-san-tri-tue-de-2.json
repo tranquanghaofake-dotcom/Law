@@ -35,8 +35,8 @@
       "q": "Trong hợp đồng li-xăng độc quyền, bên giao được tự sử dụng đối tượng SHCN khi nào?",
       "options": [
         "Khi được bên được chuyển quyền cho phép",
-        "Mọi lúc, không cần thông báo cho bên kia",
-        "Không bao giờ được sử dụng đối tượng này",
+        "Khi đã thông báo cho bên được chuyển quyền",
+        "Không được tự sử dụng đối tượng này",
         "Khi đã đăng ký hợp đồng tại cơ quan nhà nước"
       ],
       "answer": 0,
@@ -62,8 +62,8 @@
       "options": [
         "Không — là ngoại lệ tại khoản 3 Điều 148",
         "Có, như mọi hợp đồng sử dụng khác đã ký",
-        "Chỉ khi độc quyền trong phạm vi lãnh thổ",
-        "Chỉ khi thứ cấp và có văn bản chấp thuận"
+        "Có, nếu là hợp đồng độc quyền theo lãnh thổ",
+        "Có, nếu là hợp đồng sử dụng thứ cấp"
       ],
       "answer": 0,
       "explain": "Khoản 3 Điều 148.",
@@ -100,9 +100,9 @@
       "q": "Dùng dấu hiệu tương tự nhãn hiệu cho hàng hóa liên quan là xâm phạm khi nào?",
       "options": [
         "Có khả năng gây nhầm lẫn về nguồn gốc hàng hóa, dịch vụ",
-        "Luôn luôn bị xem là xâm phạm trong mọi trường hợp",
-        "Chỉ khi đã có lãi và bán được hàng ra thị trường nội địa",
-        "Chỉ khi hàng nhập khẩu từ nước ngoài vào Việt Nam"
+        "Khi người dùng đã bán được hàng và có doanh thu từ hàng đó",
+        "Khi đã có lãi và bán được hàng ra thị trường nội địa",
+        "Khi hàng nhập khẩu từ nước ngoài vào Việt Nam"
       ],
       "answer": 0,
       "explain": "Điểm c khoản 1 Điều 129.",

@@ -122,6 +122,17 @@
     "tạm ngưng",
     "kéo dài"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quốc hội ban hành nghị quyết để thực hiện thí điểm một số chính sách mới thuộc thẩm quyền quyết định của Quốc hội khác với quy định của luật hiện hành.",
+   "answer": true,
+   "explain": "Đúng. Điểm a khoản 2 Điều 10 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điểm a khoản 2 Điều 10 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)"
+   }
   }
  ]
 }

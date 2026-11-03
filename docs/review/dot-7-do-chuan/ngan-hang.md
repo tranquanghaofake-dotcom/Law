@@ -50,3 +50,29 @@ Số khái niệm: 21; số tình huống thêm: 42.
 | to-chuc-tin-dung-phi-ngan-hang | Công ty tài chính cung ứng dịch vụ thanh toán qua tài khoản cho khách hàng | Phải: Tổ chức tín dụng phi ngân hàng không được làm | Khoản 41 Điều 4 Luật Các tổ chức tín dụng 2024 |
 | to-chuc-tin-dung | Ngân hàng thương mại cổ phần được thành lập và hoạt động theo Luật Các tổ chức tín dụng | Trái: Tổ chức tín dụng | Khoản 38 Điều 4 Luật Các tổ chức tín dụng 2024 |
 | to-chuc-tin-dung | Công ty cổ phần sản xuất bánh kẹo đăng ký kinh doanh theo Luật Doanh nghiệp | Phải: Không phải tổ chức tín dụng | Khoản 38 Điều 4 Luật Các tổ chức tín dụng 2024 |
+
+## Câu hỏi viết lại (sonnet B)
+
+### Câu hỏi kiểu tập hợp (bỏ nhiễu "Chỉ…") (2)
+
+| Mã | Câu hỏi | Trước | Sau | Căn cứ | Ghi chú |
+|---|---|---|---|---|---|
+| `ngan-hang/hoat-dong-ngan-hang#1` | Tổ chức nào được thực hiện hoạt động ngân hàng? | **Tổ chức đủ điều kiện và được Ngân hàng Nhà nước cấp Giấy phép**<br>Mọi doanh nghiệp đã đăng ký kinh doanh có vốn điều lệ đủ lớn theo luật<br>Mọi tổ chức có vốn trên 100 tỷ đồng và có trụ sở chính tại Việt Nam<br>Bất kỳ cá nhân nào có tiền nhàn rỗi và nhu cầu gửi tiết kiệm lâu dài | **Tổ chức đủ điều kiện và được Ngân hàng Nhà nước cấp Giấy phép**<br>Doanh nghiệp đã đăng ký kinh doanh có vốn điều lệ đủ lớn theo luật<br>Tổ chức có vốn trên 100 tỷ đồng và có trụ sở chính tại Việt Nam<br>Cá nhân có tiền nhàn rỗi và nhu cầu gửi tiết kiệm lâu dài | Điều 8 Luật Các tổ chức tín dụng 2024 | Nhiễu viết lại: sai rõ, không cần từ tuyệt đối |
+| `sets/ngan-hang-de-2#2` | Cho vay của tổ chức tín dụng đòi hỏi khoản tiền được sử dụng thế nào? | **Vào mục đích xác định, trong thời gian nhất định**<br>Tùy ý bên vay sử dụng, không ràng buộc mục đích nào<br>Chỉ để mua nhà ở và đất thổ cư trong thời gian dài<br>Chỉ để sản xuất kinh doanh trong một thời gian ngắn | **Vào mục đích xác định, trong thời gian nhất định**<br>Tùy ý bên vay sử dụng, không ràng buộc mục đích nào<br>Để mua nhà ở và đất thổ cư trong thời gian dài<br>Để sản xuất kinh doanh trong một thời gian ngắn | Khoản 7 Điều 4 Luật Các tổ chức tín dụng 2024 | Nhiễu viết lại: sai rõ, không cần từ tuyệt đối |
+
+### Câu Đúng/Sai đáp án Đúng thêm mới (12)
+
+| Mã | Nhận định (Đúng) | Căn cứ | Ghi chú |
+|---|---|---|---|
+| `ngan-hang/bao-hiem-tien-gui#7` | Thống đốc Ngân hàng Nhà nước Việt Nam quy định hạn mức chi trả tiền bảo hiểm trong từng thời kỳ. | Khoản 1 Điều 22 Luật Bảo hiểm tiền gửi 2025 (111/2025/QH15) | nguyên văn khớp laws/*.txt |
+| `ngan-hang/bao-thanh-toan#7` | Bao thanh toán là hình thức cấp tín dụng thông qua việc mua lại khoản phải thu của bên bán hoặc ứng trước tiền thanh toán thay cho bên mua theo hợp đồng mua, bán hàng hóa, cung ứng dịch vụ giữa bên mua và bên bán. | Khoản 1 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH) | nguyên văn khớp laws/*.txt |
+| `ngan-hang/chiet-khau#7` | Chiết khấu là hình thức cấp tín dụng thông qua việc mua có kỳ hạn hoặc mua có bảo lưu quyền truy đòi các công cụ chuyển nhượng, giấy tờ có giá khác của bên thụ hưởng trước khi đến hạn thanh toán. | Khoản 6 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH) | nguyên văn khớp laws/*.txt |
+| `ngan-hang/chinh-sach-tien-te-quoc-gia#7` | Quốc hội quyết định chỉ tiêu lạm phát hằng năm được thể hiện thông qua việc quyết định chỉ số giá tiêu dùng và giám sát việc thực hiện chính sách tiền tệ quốc gia. | Khoản 2 Điều 3 Luật Ngân hàng Nhà nước Việt Nam 2010 (VBHN 141/2026/VBHN-LQ-VPQH) | nguyên văn khớp laws/*.txt |
+| `ngan-hang/dich-vu-trung-gian-thanh-toan#7` | Dịch vụ trung gian thanh toán là hoạt động làm trung gian kết nối, truyền dẫn và xử lý dữ liệu điện tử các giao dịch thanh toán giữa tổ chức cung ứng dịch vụ thanh toán và người sử dụng dịch vụ thanh toán. | Khoản 10 Điều 6 Luật Ngân hàng Nhà nước Việt Nam 2010 (VBHN 141/2026/VBHN-LQ-VPQH) | nguyên văn khớp laws/*.txt |
+| `ngan-hang/giay-to-co-gia#7` | Giấy tờ có giá là bằng chứng xác nhận nghĩa vụ trả nợ giữa tổ chức phát hành giấy tờ có giá với người sở hữu giấy tờ có giá trong một thời hạn nhất định, điều kiện trả lãi và các điều kiện khác. | Khoản 8 Điều 6 Luật Ngân hàng Nhà nước Việt Nam 2010 (VBHN 141/2026/VBHN-LQ-VPQH) | nguyên văn khớp laws/*.txt |
+| `ngan-hang/kiem-soat-dac-biet#7` | Kiểm soát đặc biệt là việc Ngân hàng Nhà nước quyết định đặt tổ chức tín dụng dưới sự kiểm soát trực tiếp của Ngân hàng Nhà nước. | Khoản 19 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH) | nguyên văn khớp laws/*.txt |
+| `ngan-hang/ngan-hang#7` | Các loại hình ngân hàng bao gồm ngân hàng thương mại, ngân hàng chính sách, ngân hàng hợp tác xã. | Khoản 21 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH) | nguyên văn khớp laws/*.txt |
+| `ngan-hang/to-chuc-tin-dung-phi-ngan-hang#7` | Các loại hình tổ chức tín dụng phi ngân hàng bao gồm công ty tài chính tổng hợp và công ty tài chính chuyên ngành. | Khoản 41 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH) | nguyên văn khớp laws/*.txt |
+| `ngan-hang/to-chuc-tin-dung#7` | Tổ chức tín dụng bao gồm ngân hàng, tổ chức tín dụng phi ngân hàng, tổ chức tài chính vi mô và quỹ tín dụng nhân dân. | Khoản 38 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH) | nguyên văn khớp laws/*.txt |
+| `ngan-hang/ngan-hang-nha-nuoc#7` | Ngân hàng Nhà nước Việt Nam là cơ quan ngang bộ của Chính phủ, là Ngân hàng trung ương của nước Cộng hòa xã hội chủ nghĩa Việt Nam. | Khoản 1 Điều 2 Luật Ngân hàng Nhà nước Việt Nam | Nguyên văn, đối chiếu laws/lnhnn-vbhn-2026.txt |
+| `ngan-hang/hoat-dong-ngan-hang#7` | Hoạt động ngân hàng là việc kinh doanh, cung ứng thường xuyên một hoặc một số nghiệp vụ nhận tiền gửi, cấp tín dụng, cung ứng dịch vụ thanh toán qua tài khoản. | Khoản 17 Điều 4 Luật Các tổ chức tín dụng 2024 | Trích gần nguyên văn (gộp điểm a–c), đối chiếu laws/ltctd-vbhn-2026.txt |

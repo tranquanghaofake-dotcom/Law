@@ -46,8 +46,8 @@
    "q": "Tranh chấp mà các bên đều không có Giấy chứng nhận, không có giấy tờ theo Điều 137 thì sao?",
    "options": [
     "Các bên lựa chọn UBND cấp có thẩm quyền hoặc khởi kiện tại Tòa án",
-    "Chỉ Tòa án nhân dân cấp huyện có thẩm quyền giải quyết mọi tranh chấp",
-    "Chỉ UBND cấp xã nơi có đất tranh chấp hoặc Tòa án cấp tỉnh",
+    "Tòa án nhân dân cấp huyện giải quyết, UBND không có thẩm quyền",
+    "UBND cấp xã nơi có đất giải quyết, không được khởi kiện ra Tòa án",
     "Không được giải quyết và các bên phải tự thỏa thuận với nhau"
    ],
    "answer": 0,

@@ -123,6 +123,18 @@
     "mức đóng",
     "hưu trí"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Bảo hiểm xã hội tự nguyện là loại hình bảo hiểm xã hội do Nhà nước tổ chức mà công dân Việt Nam tự nguyện tham gia và được lựa chọn mức đóng, phương thức đóng phù hợp với thu nhập của mình.",
+   "answer": true,
+   "explain": "Đúng. Khoản 4 Điều 3 Luật Bảo hiểm xã hội 2024 (VBHN 19/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 3 Luật Bảo hiểm xã hội 2024 (VBHN 19/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/Bao-hiem/Van-ban-hop-nhat-19-VBHN-VPQH-2026-Luat-Bao-hiem-xa-hoi-696579.aspx"
+   }
   }
  ]
 }

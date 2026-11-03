@@ -86,10 +86,10 @@
     {
       "q": "Quyền sở hữu trí tuệ có phải tài sản góp vốn không?",
       "options": [
-        "Có",
-        "Không",
-        "Chỉ khi là sáng chế",
-        "Chỉ với công ty cổ phần"
+        "Có, theo khoản 1 Điều 34 Luật Doanh nghiệp",
+        "Không, theo khoản 1 Điều 34 Luật Doanh nghiệp",
+        "Có, nhưng phải là sáng chế đã được cấp văn bằng",
+        "Không, vì quyền sở hữu trí tuệ không định giá được"
       ],
       "answer": 0,
       "explain": "Khoản 1 Điều 34 Luật Doanh nghiệp.",
@@ -100,9 +100,9 @@
       "q": "Ai được dùng quyền SHTT để góp vốn?",
       "options": [
         "Chủ sở hữu hợp pháp hoặc người có quyền sử dụng hợp pháp",
-        "Bất kỳ ai có nhu cầu đầu tư, góp vốn và kinh doanh",
-        "Chỉ tác giả của tác phẩm, dù không phải chủ sở hữu",
-        "Chỉ Nhà nước được quyết định góp vốn bằng tài sản này của mình"
+        "Người có nhu cầu đầu tư, góp vốn và kinh doanh",
+        "Tác giả của tác phẩm, dù không phải chủ sở hữu",
+        "Cơ quan nhà nước quản lý quyền sở hữu trí tuệ tại địa phương"
       ],
       "answer": 0,
       "explain": "Khoản 2 Điều 34 Luật Doanh nghiệp.",

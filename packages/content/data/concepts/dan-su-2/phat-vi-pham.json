@@ -126,6 +126,18 @@
     "chỉ chịu phạt",
     "bồi thường"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Phạt vi phạm là sự thỏa thuận giữa các bên trong hợp đồng, theo đó bên vi phạm nghĩa vụ phải nộp một khoản tiền cho bên bị vi phạm.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 418 Bộ luật Dân sự 2015 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 418 Bộ luật Dân sự 2015",
+    "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+   }
   }
  ]
 }

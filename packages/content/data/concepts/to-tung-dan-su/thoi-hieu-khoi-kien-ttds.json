@@ -47,8 +47,8 @@
    "options": [
     "Có, trừ khi nhằm trốn tránh thực hiện nghĩa vụ",
     "Không, người được hưởng lợi không được từ chối",
-    "Chỉ khi được Tòa án cho phép trước khi xét xử",
-    "Chỉ trong vụ án lao động mới được từ chối"
+    "Có, nếu được Tòa án cho phép trước khi xét xử",
+    "Có, nếu là vụ án lao động"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 184.",
@@ -120,6 +120,18 @@
     "sơ thẩm",
     "từ chối"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thời hiệu khởi kiện, thời hiệu yêu cầu giải quyết việc dân sự được thực hiện theo quy định của Bộ luật Dân sự.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 184 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 184 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/Thu-tuc-To-tung/Van-ban-hop-nhat-21-VBHN-VPQH-2026-Bo-luat-To-dung-dan-su-696578.aspx"
+   }
   }
  ]
 }

@@ -123,6 +123,18 @@
     "thống nhất",
     "rõ ràng"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Ngôn ngữ được sử dụng trong văn bản quy phạm pháp luật là tiếng Việt, bảo đảm chính xác, phổ thông, thống nhất, diễn đạt rõ ràng, dễ hiểu.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 7 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 7 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)",
+    "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-54-VBHN-VPQH-2025-Luat-Ban-hanh-van-ban-quy-pham-phap-luat-669858.aspx"
+   }
   }
  ]
 }

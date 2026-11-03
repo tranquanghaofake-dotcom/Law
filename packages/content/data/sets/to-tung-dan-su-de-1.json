@@ -125,10 +125,10 @@
     {
       "q": "Tin nhắn điện thoại có thể là nguồn chứng cứ không?",
       "options": [
-        "Không",
-        "Có, là dữ liệu điện tử",
-        "Chỉ khi công chứng",
-        "Chỉ trong vụ án hình sự"
+        "Không, vì không có chữ ký trên giấy",
+        "Có, vì là dữ liệu điện tử theo Điều 94",
+        "Có, nếu đã được công chứng",
+        "Có, nếu là vụ án hình sự"
       ],
       "answer": 1,
       "explain": "Khoản 1 Điều 94.",

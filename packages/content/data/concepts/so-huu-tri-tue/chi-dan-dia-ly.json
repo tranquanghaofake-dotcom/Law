@@ -121,6 +121,17 @@
     "điều kiện địa lý",
     "quốc gia"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chỉ dẫn địa lý là dấu hiệu dùng để chỉ nguồn gốc địa lý của sản phẩm từ khu vực, địa phương, vùng lãnh thổ hoặc quốc gia cụ thể.",
+   "answer": true,
+   "explain": "Đúng. Khoản 22 Điều 4 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 22 Điều 4 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
   }
  ]
 }

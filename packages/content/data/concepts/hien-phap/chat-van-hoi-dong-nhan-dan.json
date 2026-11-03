@@ -129,6 +129,18 @@
     "Viện trưởng",
     "trả lời trước Hội đồng nhân dân"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người bị chất vấn phải trả lời trước Hội đồng nhân dân.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 115 Hiến pháp 2013 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 115 Hiến pháp 2013",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+   }
   }
  ]
 }

@@ -29,12 +29,12 @@
   {
    "type": "mcq",
    "level": 1,
-   "q": "Đơn vị bố cục nào của VBQPPL bắt buộc phải có tên?",
+   "q": "Phương án nào liệt kê đầy đủ các đơn vị bố cục của văn bản quy phạm pháp luật bắt buộc phải có tên (khoản 2 Điều 7)?",
    "options": [
     "Phần, chương, mục, tiểu mục, điều",
     "Khoản, điểm và đoạn trong văn bản",
-    "Chỉ chương và phụ lục đầu tiên",
-    "Chỉ điều và phần thứ nhất của văn bản"
+    "Chương, mục, tiểu mục, điều, khoản",
+    "Phần, chương, mục, điều, khoản, điểm"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 7.",

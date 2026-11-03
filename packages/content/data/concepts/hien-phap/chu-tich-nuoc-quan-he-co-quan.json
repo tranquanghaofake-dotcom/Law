@@ -29,9 +29,9 @@
    "q": "Chủ tịch nước có quyền tham dự phiên họp của cơ quan nào theo Điều 90?",
    "options": [
     "Ủy ban thường vụ Quốc hội và Chính phủ",
-    "Tòa án nhân dân tối cao và tòa án cấp tỉnh",
-    "Hội đồng nhân dân tỉnh và thành phố",
-    "Ban chấp hành Trung ương Đảng và các ban"
+    "Ủy ban thường vụ Quốc hội và Tòa án nhân dân tối cao",
+    "Chính phủ và Hội đồng nhân dân tỉnh",
+    "Tòa án và Viện kiểm sát nhân dân tối cao"
    ],
    "answer": 0,
    "explain": "Điều 90.",
@@ -120,6 +120,18 @@
     "báo cáo công tác",
     "Quốc hội"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chủ tịch nước có quyền tham dự phiên họp của Uỷ ban thường vụ Quốc hội, phiên họp của Chính phủ.",
+   "answer": true,
+   "explain": "Đúng. Điều 90 Hiến pháp 2013 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 90 Hiến pháp 2013",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+   }
   }
  ]
 }

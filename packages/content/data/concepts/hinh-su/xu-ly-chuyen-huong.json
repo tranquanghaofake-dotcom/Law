@@ -121,6 +121,18 @@
     "trường giáo dưỡng",
     "ưu tiên"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Biện pháp xử lý chuyển hướng được ưu tiên áp dụng đối với người chưa thành niên phạm tội trong tất cả các giai đoạn điều tra, truy tố, xét xử.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 11 Luật Tư pháp người chưa thành niên 2024 (VBHN 105/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 11 Luật Tư pháp người chưa thành niên 2024 (VBHN 105/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-105-VBHN-VPQH-2026-Luat-Tu-phap-nguoi-chua-thanh-nien-707997.aspx"
+   }
   }
  ]
 }

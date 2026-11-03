@@ -121,6 +121,18 @@
     "đơn vị hành chính",
     "thời kỳ"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quy hoạch sử dụng đất là việc phân bổ chỉ tiêu sử dụng đất và khoanh vùng đất đai cho các mục đích.",
+   "answer": true,
+   "explain": "Đúng. Khoản 36 Điều 3 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 36 Điều 3 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Van-ban-hop-nhat-44-VBHN-VPQH-2026-Luat-Dat-dai-699655.aspx"
+   }
   }
  ]
 }

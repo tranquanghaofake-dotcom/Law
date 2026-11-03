@@ -121,6 +121,17 @@
     "phần nghĩa vụ",
     "miễn trách nhiệm"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mức phạt đối với vi phạm nghĩa vụ hợp đồng hoặc tổng mức phạt đối với nhiều vi phạm do các bên thỏa thuận trong hợp đồng, nhưng không quá 8% giá trị phần nghĩa vụ hợp đồng bị vi phạm (trừ trường hợp quy định tại Điều 266).",
+   "answer": true,
+   "explain": "Đúng. Điều 301 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 301 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)"
+   }
   }
  ]
 }

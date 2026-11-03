@@ -49,3 +49,12 @@
 | id | câu/tình huống | trước → sau | căn cứ | ghi chú |
 |---|---|---|---|---|
 | dieu-kien-huong-luong-huu#6 | mẫu "(điểm a khoản 1 Điều 64)" | → "(điểm a khoản 1 Điều 64 Luật BHXH 2024)" | Điều 64 Luật BHXH 41/2024/QH15 | Câu cùng nhắc Điều 169 BLLĐ nên dễ hiểu nhầm văn bản |
+
+## Câu hỏi viết lại (sonnet B)
+
+### Câu Đúng/Sai đáp án Đúng thêm mới (2)
+
+| Mã | Nhận định (Đúng) | Căn cứ | Ghi chú |
+|---|---|---|---|
+| `an-sinh-xa-hoi/bao-hiem-xa-hoi#7` | Bảo hiểm xã hội tự nguyện là loại hình bảo hiểm xã hội do Nhà nước tổ chức mà công dân Việt Nam tự nguyện tham gia và được lựa chọn mức đóng, phương thức đóng phù hợp với thu nhập của mình. | Khoản 4 Điều 3 Luật Bảo hiểm xã hội 2024 (VBHN 19/VBHN-VPQH 2026) | nguyên văn khớp laws/*.txt |
+| `an-sinh-xa-hoi/nguyen-tac-bao-hiem-xa-hoi#7` | Mức đóng bảo hiểm xã hội bắt buộc được tính trên cơ sở tiền lương làm căn cứ đóng bảo hiểm xã hội bắt buộc. | Khoản 2 Điều 5 Luật Bảo hiểm xã hội 2024 (VBHN 19/VBHN-VPQH 2026) | nguyên văn khớp laws/*.txt |

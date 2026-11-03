@@ -120,6 +120,17 @@
     "nhiệm vụ",
     "chuyển giao"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chủ sở hữu quyền tác giả là tổ chức, cá nhân nắm giữ một, một số hoặc toàn bộ quyền quy định tại khoản 3 Điều 19 và khoản 1 Điều 20 của Luật Sở hữu trí tuệ.",
+   "answer": true,
+   "explain": "Đúng. Điều 36 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 36 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
   }
  ]
 }

@@ -68,3 +68,40 @@ Cờ của môn: 2 (đều ở khái niệm `thue-tai-san`, phần giải thích
 
 **Sửa**
 - `thue-tai-san` (phần `plain`): công cụ đọc "Điều 494" và "Điều 483" thành Luật Nhà ở. Đã ghi rõ "Điều 494 BLDS 2015" (hợp đồng mượn tài sản) và "Điều 483 BLDS 2015" (hợp đồng thuê khoán tài sản) — đối chiếu `blds-2015.txt`.
+
+## Câu hỏi viết lại (sonnet B)
+
+### Câu hỏi kiểu tập hợp (bỏ nhiễu "Chỉ…") (3)
+
+| Mã | Câu hỏi | Trước | Sau | Căn cứ | Ghi chú |
+|---|---|---|---|---|---|
+| `dan-su-2/the-chap#1` | Các bên có thể thỏa thuận giao tài sản thế chấp cho ai giữ? | **Người thứ ba**<br>Không ai được giữ ngoài bên thế chấp<br>Chỉ cơ quan nhà nước<br>Chỉ ngân hàng nhà nước | **Người thứ ba**<br>Không ai được giữ ngoài bên thế chấp<br>Cơ quan nhà nước có thẩm quyền<br>Ngân hàng nhà nước | Khoản 2 Điều 317 Bộ luật Dân sự 2015 | Nhiễu viết lại: sai rõ, không cần từ tuyệt đối |
+| `sets/dan-su-2-de-2#1` | Trong trường hợp trên, hàng xóm có phải trả lại chi phí hợp lý không? | **Có**<br>Không, vì bạn tự nguyện<br>Chỉ một nửa<br>Chỉ khi có văn bản | **Có, phải thanh toán chi phí hợp lý đã bỏ ra**<br>Không, vì bạn tự nguyện<br>Phải trả một nửa chi phí hợp lý<br>Phải trả nếu có văn bản thỏa thuận trước | Điều 576 Bộ luật Dân sự 2015 | Đáp án vẫn là 'Có'; viết đầy đủ để nhiễu không dựa vào 'Chỉ…'. |
+| `sets/dan-su-2-de-2#2` | Theo BLDS 2015, người bị thiệt hại có buộc phải chứng minh lỗi của người gây thiệt hại không (nguyên tắc chung)? | **Không, Điều 584 không đặt lỗi là điều kiện chung**<br>Có, luôn bắt buộc phải chứng minh lỗi của người gây<br>Chỉ khi thiệt hại về tài sản và có lỗi rõ ràng<br>Chỉ khi khởi kiện ra Tòa án nhân dân có thẩm quyền | **Không, Điều 584 không đặt lỗi là điều kiện chung**<br>Có, người bị thiệt hại phải chứng minh lỗi của người gây ra<br>Có, nếu thiệt hại về tài sản và có lỗi rõ ràng<br>Có, nếu khởi kiện ra Tòa án nhân dân có thẩm quyền | Điều 584 Bộ luật Dân sự 2015 | Nhiễu viết lại: sai rõ, không cần từ tuyệt đối |
+
+### Câu lộ tên khái niệm trong phương án (2)
+
+| Mã | Câu hỏi | Trước | Sau | Căn cứ | Ghi chú |
+|---|---|---|---|---|---|
+| `dan-su-2/cam-co#0` | Điểm khác biệt cơ bản giữa cầm cố và thế chấp là gì? | **Cầm cố có giao tài sản cho bên nhận, thế chấp không giao**<br>Cầm cố chỉ áp dụng với bất động sản, không áp dụng với động sản<br>Thế chấp phải giao tài sản cho bên nhận bảo đảm để giữ lại<br>Không có khác biệt về hình thức và hiệu lực giữa hai biện pháp | **Cầm cố có giao tài sản cho bên nhận, thế chấp không giao**<br>Cầm cố tài sản chỉ áp dụng với bất động sản, không áp dụng với động sản<br>Thế chấp phải giao tài sản cho bên nhận bảo đảm để giữ lại<br>Không có khác biệt về hình thức và hiệu lực giữa hai biện pháp | Điều 309, 317 Bộ luật Dân sự 2015 | Nhiễu cũng chứa tên khái niệm 'cầm cố tài sản'. |
+| `dan-su-2/trach-nhiem-do-vi-pham-nghia-vu#1` | Nếu nghĩa vụ không thực hiện được hoàn toàn do lỗi của bên có quyền thì sao? | **Bên có nghĩa vụ không phải chịu trách nhiệm dân sự**<br>Cả hai bên đều phải chịu trách nhiệm như nhau<br>Bên có nghĩa vụ vẫn phải bồi thường cho bên có quyền<br>Hợp đồng vô hiệu từ khi giao kết, không có trách nhiệm gì | **Bên có nghĩa vụ không phải chịu trách nhiệm dân sự**<br>Cả hai bên đều phải chịu trách nhiệm như nhau<br>Bên có nghĩa vụ vẫn phải chịu trách nhiệm dân sự và bồi thường<br>Hợp đồng vô hiệu từ khi giao kết, không có trách nhiệm gì | Khoản 3 Điều 351 Bộ luật Dân sự 2015 | Nhiễu cũng chứa 'trách nhiệm dân sự'. |
+
+### Câu Đúng/Sai đáp án Đúng thêm mới (15)
+
+| Mã | Nhận định (Đúng) | Căn cứ | Ghi chú |
+|---|---|---|---|
+| `dan-su-2/bao-lanh#7` | Các bên có thể thỏa thuận về việc bên bảo lãnh chỉ phải thực hiện nghĩa vụ thay cho bên được bảo lãnh trong trường hợp bên được bảo lãnh không có khả năng thực hiện nghĩa vụ bảo lãnh. | Khoản 2 Điều 335 Bộ luật Dân sự 2015 | nguyên văn khớp laws/*.txt |
+| `dan-su-2/dich-vu#7` | Hợp đồng dịch vụ là sự thỏa thuận giữa các bên, theo đó bên cung ứng dịch vụ thực hiện công việc cho bên sử dụng dịch vụ, bên sử dụng dịch vụ phải trả tiền dịch vụ cho bên cung ứng dịch vụ. | Điều 513 Bộ luật Dân sự 2015 | nguyên văn khớp laws/*.txt |
+| `dan-su-2/hop-dong#7` | Hợp đồng là sự thỏa thuận giữa các bên về việc xác lập, thay đổi hoặc chấm dứt quyền, nghĩa vụ dân sự. | Điều 385 Bộ luật Dân sự 2015 | nguyên văn khớp laws/*.txt |
+| `dan-su-2/mua-ban-tai-san#7` | Tài sản bán thuộc sở hữu của người bán hoặc người bán có quyền bán. | Khoản 2 Điều 431 Bộ luật Dân sự 2015 | nguyên văn khớp laws/*.txt |
+| `dan-su-2/nang-luc-chiu-trach-nhiem-boi-thuong#7` | Người từ đủ mười tám tuổi trở lên gây thiệt hại thì phải tự bồi thường. | Khoản 1 Điều 586 Bộ luật Dân sự 2015 | nguyên văn khớp laws/*.txt |
+| `dan-su-2/nguyen-tac-boi-thuong#7` | Thiệt hại thực tế phải được bồi thường toàn bộ và kịp thời. | Khoản 1 Điều 585 Bộ luật Dân sự 2015 | nguyên văn khớp laws/*.txt |
+| `dan-su-2/phat-vi-pham#7` | Phạt vi phạm là sự thỏa thuận giữa các bên trong hợp đồng, theo đó bên vi phạm nghĩa vụ phải nộp một khoản tiền cho bên bị vi phạm. | Khoản 1 Điều 418 Bộ luật Dân sự 2015 | nguyên văn khớp laws/*.txt |
+| `dan-su-2/suc-vat-gay-thiet-hai#7` | Người chiếm hữu, sử dụng súc vật phải bồi thường thiệt hại trong thời gian chiếm hữu, sử dụng súc vật, trừ trường hợp có thỏa thuận khác. | Khoản 1 Điều 603 Bộ luật Dân sự 2015 | nguyên văn khớp laws/*.txt |
+| `dan-su-2/tang-cho#7` | Hợp đồng tặng cho tài sản là sự thỏa thuận giữa các bên, theo đó bên tặng cho giao tài sản của mình và chuyển quyền sở hữu cho bên được tặng cho mà không yêu cầu đền bù, bên được tặng cho đồng ý nhận. | Điều 457 Bộ luật Dân sự 2015 | nguyên văn khớp laws/*.txt |
+| `dan-su-2/thue-tai-san#7` | Hợp đồng thuê tài sản là sự thỏa thuận giữa các bên, theo đó bên cho thuê giao tài sản cho bên thuê để sử dụng trong một thời hạn, bên thuê phải trả tiền thuê. | Điều 472 Bộ luật Dân sự 2015 | nguyên văn khớp laws/*.txt |
+| `dan-su-2/trach-nhiem-do-vi-pham-nghia-vu#7` | Bên có nghĩa vụ mà vi phạm nghĩa vụ thì phải chịu trách nhiệm dân sự đối với bên có quyền. | Khoản 1 Điều 351 Bộ luật Dân sự 2015 | nguyên văn khớp laws/*.txt |
+| `dan-su-2/uy-quyen#7` | Hợp đồng ủy quyền là sự thỏa thuận giữa các bên, theo đó bên được ủy quyền có nghĩa vụ thực hiện công việc nhân danh bên ủy quyền, bên ủy quyền chỉ phải trả thù lao nếu có thỏa thuận hoặc pháp luật có quy định. | Điều 562 Bộ luật Dân sự 2015 | nguyên văn khớp laws/*.txt |
+| `dan-su-2/vay-tai-san#7` | Khi đến hạn trả, bên vay phải hoàn trả cho bên cho vay tài sản cùng loại theo đúng số lượng, chất lượng và chỉ phải trả lãi nếu có thỏa thuận hoặc pháp luật có quy định. | Điều 463 Bộ luật Dân sự 2015 | nguyên văn khớp laws/*.txt |
+| `dan-su-2/lai-suat#7` | Trường hợp các bên có thỏa thuận về lãi suất thì lãi suất theo thỏa thuận không được vượt quá 20%/năm của khoản tiền vay, trừ trường hợp luật khác có liên quan quy định khác. | Khoản 1 Điều 468 Bộ luật Dân sự 2015 | Nguyên văn, đối chiếu laws/blds-2015.txt |
+| `dan-su-2/thiet-hai-tinh-mang#7` | Mức bồi thường bù đắp tổn thất về tinh thần do tính mạng bị xâm phạm do các bên thỏa thuận; nếu không thỏa thuận được thì mức tối đa cho một người có tính mạng bị xâm phạm không quá một trăm lần mức lương cơ sở do Nhà nước quy định. | Khoản 2 Điều 591 Bộ luật Dân sự 2015 | Trích gần nguyên văn, đối chiếu laws/blds-2015.txt |

@@ -30,8 +30,8 @@
    "options": [
     "Bắt buộc đối với người sử dụng đất và người được giao đất để quản lý",
     "Tự nguyện đăng ký, do người sử dụng đất quyết định khi có nhu cầu",
-    "Chỉ bắt buộc với doanh nghiệp có vốn nước ngoài và tổ chức lớn",
-    "Chỉ khi chuyển nhượng quyền sử dụng đất cho người khác và cho thuê"
+    "Bắt buộc với doanh nghiệp có vốn nước ngoài, còn cá nhân thì không",
+    "Bắt buộc khi chuyển nhượng quyền sử dụng đất, còn lại thì không"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 131.",
@@ -120,6 +120,18 @@
     "biến động",
     "điện tử"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tài sản gắn liền với đất là nhà ở, công trình xây dựng được đăng ký theo yêu cầu của chủ sở hữu.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 131 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 131 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Van-ban-hop-nhat-44-VBHN-VPQH-2026-Luat-Dat-dai-699655.aspx"
+   }
   }
  ]
 }

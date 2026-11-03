@@ -120,6 +120,18 @@
     "Điều lệ",
     "sở hữu chéo"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Các công ty con của cùng một công ty mẹ không được đồng thời cùng góp vốn, mua cổ phần để sở hữu chéo lẫn nhau.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 195 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 195 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+    "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+   }
   }
  ]
 }

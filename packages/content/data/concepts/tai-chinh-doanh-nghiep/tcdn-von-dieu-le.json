@@ -122,6 +122,17 @@
     "mệnh giá",
     "vốn vay"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Đối với công ty cổ phần, vốn điều lệ là tổng mệnh giá cổ phần đã bán hoặc được đăng ký mua khi thành lập công ty.",
+   "answer": true,
+   "explain": "Đúng. Khoản 34 Điều 4 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 34 Điều 4 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
   }
  ]
 }

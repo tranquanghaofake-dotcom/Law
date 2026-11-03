@@ -47,7 +47,7 @@
    "options": [
     "Tình tiết giảm nhẹ",
     "Trường hợp không xử phạt",
-    "Tình tiết tăng nặng",
+    "Tình tiết giảm nhẹ không được xem xét",
     "Căn cứ chuyển hình sự"
    ],
    "answer": 0,
@@ -124,6 +124,17 @@
     "vượt quá",
     "khó khăn"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Vi phạm hành chính vì hoàn cảnh đặc biệt khó khăn mà không do mình gây ra là tình tiết giảm nhẹ.",
+   "answer": true,
+   "explain": "Đúng. Khoản 6 Điều 9 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 6 Điều 9 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)"
+   }
   }
  ]
 }

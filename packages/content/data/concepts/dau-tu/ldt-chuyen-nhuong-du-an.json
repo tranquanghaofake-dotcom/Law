@@ -29,8 +29,8 @@
    "q": "Nhà đầu tư được chuyển nhượng phạm vi nào của dự án?",
    "options": [
     "Toàn bộ hoặc một phần dự án đầu tư",
-    "Chỉ toàn bộ dự án, không chia nhỏ",
-    "Chỉ phần đã hoàn thành của dự án",
+    "Toàn bộ dự án, không được chia nhỏ để chuyển",
+    "Phần dự án đã xong, không gồm phần chưa làm",
     "Không được chuyển nhượng dự án này cho ai"
    ],
    "answer": 0,

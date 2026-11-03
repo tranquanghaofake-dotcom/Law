@@ -125,6 +125,18 @@
     "hòm phiếu phụ",
     "không ai được xem"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mỗi cử tri có quyền bỏ một phiếu bầu đại biểu Quốc hội và bỏ một phiếu bầu đại biểu Hội đồng nhân dân tương ứng với mỗi cấp Hội đồng nhân dân.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 69 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 69 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026)",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/luat-bau-cu-dai-bieu-quoc-hoi-va-dai-bieu-hoi-dong-nhan-dan-so-85-2015-qh13--70812"
+   }
   }
  ]
 }

@@ -122,6 +122,18 @@
     "trách nhiệm của Nhà nước",
     "công dân"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người có quốc tịch Việt Nam là công dân Việt Nam.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 5 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 5 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025)",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-53-vbhn-vpqh-quoc-tich-viet-nam--179993"
+   }
   }
  ]
 }

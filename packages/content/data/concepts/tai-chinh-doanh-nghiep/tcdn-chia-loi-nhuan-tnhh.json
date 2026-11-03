@@ -121,6 +121,17 @@
     "nợ đến hạn",
     "sau khi chia"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Công ty chỉ được chia lợi nhuận cho các thành viên sau khi đã hoàn thành nghĩa vụ thuế và các nghĩa vụ tài chính khác theo quy định của pháp luật, bảo đảm thanh toán đủ các khoản nợ và nghĩa vụ tài sản khác đến hạn trả sau khi chia lợi nhuận.",
+   "answer": true,
+   "explain": "Đúng. Điều 69 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 69 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
   }
  ]
 }

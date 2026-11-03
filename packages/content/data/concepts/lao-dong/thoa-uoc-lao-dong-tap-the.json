@@ -121,6 +121,18 @@
     "doanh nghiệp, ngành",
     "có lợi hơn"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thỏa ước lao động tập thể là thỏa thuận đạt được thông qua thương lượng tập thể và được các bên ký kết bằng văn bản.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 75 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 75 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-18-VBHN-VPQH-2026-Bo-luat-lao-dong-695336.aspx"
+   }
   }
  ]
 }

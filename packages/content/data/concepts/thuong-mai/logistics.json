@@ -26,12 +26,12 @@
   {
    "type": "mcq",
    "level": 1,
-   "q": "Dịch vụ logistics bao gồm những công việc nào?",
+   "q": "Phương án nào mô tả đầy đủ dịch vụ logistics theo Điều 233 Luật Thương mại?",
    "options": [
     "Một hoặc nhiều công việc như nhận hàng, vận chuyển, lưu kho, làm thủ tục hải quan, đóng gói, giao hàng",
-    "Chỉ vận chuyển hàng hóa từ kho đến tay người nhận tại địa điểm được yêu cầu, không kèm dịch vụ khác",
-    "Chỉ thủ tục hải quan và khai báo hàng hóa xuất nhập khẩu với cơ quan nhà nước có thẩm quyền",
-    "Chỉ lưu kho hàng hóa trong thời gian ngắn tại kho bãi của thương nhân và không có dịch vụ khác"
+    "Vận chuyển hàng hóa từ kho đến tay người nhận tại địa điểm được yêu cầu và giao hàng theo hợp đồng",
+    "Thủ tục hải quan và khai báo hàng hóa xuất nhập khẩu với cơ quan nhà nước có thẩm quyền",
+    "Lưu kho hàng hóa trong thời gian ngắn tại kho bãi của thương nhân theo hợp đồng"
    ],
    "answer": 0,
    "explain": "Điều 233.",

@@ -29,9 +29,9 @@
    "q": "Đặc điểm của quan hệ pháp luật hành chính là gì?",
    "options": [
     "Ít nhất một bên là chủ thể mang quyền lực nhà nước",
-    "Các bên luôn bình đẳng về quyền và nghĩa vụ hành chính",
-    "Chỉ phát sinh khi hai bên tự nguyện thỏa thuận với nhau",
-    "Luôn do Tòa án giải quyết mọi tranh chấp giữa các bên"
+    "Các bên bình đẳng về quyền và nghĩa vụ hành chính",
+    "Phát sinh khi hai bên tự nguyện thỏa thuận với nhau",
+    "Do Tòa án giải quyết tranh chấp giữa các bên"
    ],
    "answer": 0,
    "explain": "Slide bài giảng vấn đề 3.",
@@ -120,6 +120,17 @@
     "thủ tục hành chính",
     "trước Nhà nước"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Khách thể của quan hệ pháp luật hành chính là trật tự quản lý hành chính nhà nước.",
+   "answer": true,
+   "explain": "Đúng. Slide bài giảng Luật Hành chính Việt Nam, Trường Đại học Luật Hà Nội, vấn đề 3 (\"GIÁO ÁN 2019. LHC.VĐ3\", TS. Tạ Quang Ngọc) — đã khớp nguyên văn slide (laws/hc-slide-trich.txt); slide không phải giáo trình, giáo trình chưa đối chiếu (nguyên văn).",
+   "source": {
+    "kind": "textbook",
+    "cite": "Slide bài giảng Luật Hành chính Việt Nam, Trường Đại học Luật Hà Nội, vấn đề 3 (\"GIÁO ÁN 2019. LHC.VĐ3\", TS. Tạ Quang Ngọc) — đã khớp nguyên văn slide (laws/hc-slide-trich.txt); slide không phải giáo trình, giáo trình chưa đối chiếu"
+   }
   }
  ]
 }

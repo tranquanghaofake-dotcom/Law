@@ -29,10 +29,10 @@
    "level": 1,
    "q": "Điều kiện để tranh chấp được giải quyết bằng Trọng tài là gì?",
    "options": [
-    "Các bên có thỏa thuận trọng tài",
-    "Giá trị tranh chấp trên 1 tỷ",
-    "Một bên là doanh nghiệp nhà nước",
-    "Được Tòa án cho phép"
+    "Các bên đã thỏa thuận chọn Trọng tài giải quyết",
+    "Giá trị tranh chấp lớn hơn 1 tỷ đồng",
+    "Một bên tranh chấp là doanh nghiệp nhà nước",
+    "Được Tòa án nơi có tranh chấp cho phép trước"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 5.",
@@ -121,6 +121,18 @@
     "từ chối thụ lý",
     "phương thức"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thỏa thuận trọng tài có thể được lập trước hoặc sau khi xảy ra tranh chấp.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 5 Luật Trọng tài thương mại 2010 (VBHN 60/VBHN-VPQH 2025) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 5 Luật Trọng tài thương mại 2010 (VBHN 60/VBHN-VPQH 2025)",
+    "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-60-VBHN-VPQH-2025-Luat-Trong-tai-thuong-mai-669808.aspx"
+   }
   }
  ]
 }

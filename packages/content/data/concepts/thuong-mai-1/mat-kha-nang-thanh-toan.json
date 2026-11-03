@@ -122,6 +122,18 @@
     "tuyên bố phá sản",
     "Tòa án"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Doanh nghiệp, hợp tác xã mất khả năng thanh toán là doanh nghiệp, hợp tác xã không thực hiện nghĩa vụ thanh toán khoản nợ sau thời hạn 06 tháng kể từ ngày đến hạn thanh toán.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 5 Luật Phục hồi, phá sản 2025 (142/2025/QH15) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 5 Luật Phục hồi, phá sản 2025 (142/2025/QH15)",
+    "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-Phuc-hoi-pha-san-2025-so-142-2025-QH15-675210.aspx"
+   }
   }
  ]
 }

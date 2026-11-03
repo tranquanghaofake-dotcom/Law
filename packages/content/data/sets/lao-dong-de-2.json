@@ -112,10 +112,10 @@
     {
       "q": "Tranh chấp về việc bị sa thải có bắt buộc phải qua hòa giải viên lao động trước khi khởi kiện không?",
       "options": [
-        "Bắt buộc",
-        "Không bắt buộc",
-        "Chỉ khi người lao động là nữ",
-        "Chỉ khi công ty có công đoàn"
+        "Bắt buộc phải qua hòa giải",
+        "Không bắt buộc, theo Điều 188",
+        "Bắt buộc nếu người lao động là nữ",
+        "Bắt buộc nếu công ty có công đoàn"
       ],
       "answer": 1,
       "explain": "Điểm a khoản 1 Điều 188.",

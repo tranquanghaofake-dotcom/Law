@@ -119,6 +119,18 @@
     "không công khai",
     "chung thẩm"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Giải quyết tranh chấp bằng Trọng tài được tiến hành không công khai, trừ trường hợp các bên có thỏa thuận khác.",
+   "answer": true,
+   "explain": "Đúng. Khoản 4 Điều 4 Luật Trọng tài thương mại 2010 (VBHN 60/VBHN-VPQH 2025) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 4 Luật Trọng tài thương mại 2010 (VBHN 60/VBHN-VPQH 2025)",
+    "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-60-VBHN-VPQH-2025-Luat-Trong-tai-thuong-mai-669808.aspx"
+   }
   }
  ]
 }

@@ -120,6 +120,17 @@
     "30 ngày",
     "01 lần"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Nếu hết thời hạn 30 ngày kể từ ngày hợp đồng lao động xác định thời hạn hết hạn mà hai bên không ký kết hợp đồng lao động mới thì hợp đồng đã giao kết trở thành hợp đồng lao động không xác định thời hạn.",
+   "answer": true,
+   "explain": "Đúng. Điểm b khoản 2 Điều 20 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điểm b khoản 2 Điều 20 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)"
+   }
   }
  ]
 }

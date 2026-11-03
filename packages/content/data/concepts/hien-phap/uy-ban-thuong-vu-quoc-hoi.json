@@ -46,8 +46,8 @@
    "level": 1,
    "q": "Cơ quan nào có thẩm quyền giải thích Hiến pháp, luật, pháp lệnh?",
    "options": [
-    "Ủy ban thường vụ Quốc hội",
-    "Tòa án nhân dân tối cao",
+    "Cơ quan thường trực của Quốc hội",
+    "Hội đồng nhân dân và Tòa án tối cao",
     "Chính phủ và Thủ tướng",
     "Bộ Tư pháp và Bộ Nội vụ"
    ],
@@ -146,6 +146,18 @@
    "statement": "Ủy ban thường vụ Quốc hội chỉ có quyền đình chỉ thi hành, không có quyền bãi bỏ văn bản trái pháp luật của Chính phủ.",
    "answer": false,
    "explain": "Sai. Khoản 4 Điều 74 Hiến pháp 2013: Ủy ban thường vụ Quốc hội đình chỉ văn bản của Chính phủ trái Hiến pháp, luật, nghị quyết của Quốc hội và trình Quốc hội bãi bỏ; đồng thời có quyền bãi bỏ văn bản của Chính phủ, Thủ tướng trái với pháp lệnh, nghị quyết của Ủy ban thường vụ Quốc hội. (Nhận định trong bộ câu hỏi ôn tập Luật Hiến pháp, Drive HLU.)"
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Ủy ban thường vụ Quốc hội gồm Chủ tịch Quốc hội, các Phó Chủ tịch Quốc hội và các Ủy viên.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 73 Hiến pháp 2013 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 73 Hiến pháp 2013",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+   }
   }
  ]
 }

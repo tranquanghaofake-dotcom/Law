@@ -61,9 +61,9 @@
       "q": "Vốn đầu tư gồm gì?",
       "options": [
         "Tiền, tài sản khác theo pháp luật dân sự và điều ước quốc tế",
-        "Chỉ tiền mặt, tiền gửi ngân hàng và khoản tiền vay từ ngân hàng",
-        "Chỉ ngoại tệ chuyển từ nước ngoài vào Việt Nam theo hợp đồng vay",
-        "Chỉ vốn vay từ các tổ chức tín dụng ở nước ngoài và trong nước"
+        "Tiền mặt, tiền gửi ngân hàng và ngân sách nhà nước cấp cho dự án",
+        "Ngoại tệ chuyển từ nước ngoài vào Việt Nam và nợ phải trả của doanh nghiệp",
+        "Vốn vay từ các tổ chức tín dụng ở nước ngoài và các khoản nợ phải thu"
       ],
       "answer": 0,
       "explain": "Khoản 23 Điều 3.",
@@ -123,11 +123,11 @@
       "url": "https://thuvienphapluat.vn/van-ban/Dau-tu/Van-ban-hop-nhat-142-2026-VBHN-LQ-VPQH-Luat-Dau-tu-726675.aspx"
     },
     {
-      "q": "Nhà đầu tư ra nước ngoài phải tuân thủ pháp luật nào?",
+      "q": "Phương án nào liệt kê đầy đủ các hệ thống pháp luật mà nhà đầu tư ra nước ngoài phải tuân thủ?",
       "options": [
         "Luật Việt Nam, pháp luật nước tiếp nhận và điều ước quốc tế liên quan",
-        "Chỉ pháp luật Việt Nam và các điều ước quốc tế liên quan đến nước đó đã ký",
-        "Chỉ pháp luật nước tiếp nhận đầu tư, không áp dụng luật Việt Nam",
+        "Pháp luật Việt Nam và các điều ước quốc tế mà Việt Nam đã ký kết",
+        "Pháp luật nước tiếp nhận đầu tư và điều ước quốc tế của nước đó",
         "Không có pháp luật nào ràng buộc nhà đầu tư khi ra nước ngoài đầu tư"
       ],
       "answer": 0,

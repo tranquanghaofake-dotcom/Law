@@ -121,6 +121,18 @@
     "một phiếu",
     "vốn góp"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Vốn góp tối đa không quá 30% vốn điều lệ đối với hợp tác xã và không quá 40% vốn điều lệ đối với liên hiệp hợp tác xã.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 74 Luật Hợp tác xã 2023 (VBHN 101/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 74 Luật Hợp tác xã 2023 (VBHN 101/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-101-VBHN-VPQH-2026-Luat-Hop-tac-xa-703396.aspx"
+   }
   }
  ]
 }

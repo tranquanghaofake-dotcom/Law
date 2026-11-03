@@ -123,6 +123,18 @@
     "bắt buộc",
     "Thống đốc"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thống đốc Ngân hàng Nhà nước Việt Nam quy định hạn mức chi trả tiền bảo hiểm trong từng thời kỳ.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 22 Luật Bảo hiểm tiền gửi 2025 (111/2025/QH15) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 22 Luật Bảo hiểm tiền gửi 2025 (111/2025/QH15)",
+    "url": "https://thuvienphapluat.vn/van-ban/Bao-hiem/Luat-Bao-hiem-tien-gui-2025-so-111-2025-QH15-667663.aspx"
+   }
   }
  ]
 }

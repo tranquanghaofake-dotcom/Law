@@ -125,6 +125,17 @@
     "hiệp hội",
     "chức vụ"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Cơ quan nhà nước bị nghiêm cấm lợi dụng chức vụ, quyền hạn để can thiệp trái pháp luật vào hoạt động cạnh tranh.",
+   "answer": true,
+   "explain": "Đúng. Điểm d khoản 1 Điều 8 Luật Cạnh tranh 2018.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điểm d khoản 1 Điều 8 Luật Cạnh tranh 2018"
+   }
   }
  ]
 }

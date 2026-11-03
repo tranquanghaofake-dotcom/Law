@@ -120,6 +120,17 @@
     "mua lại",
     "đáng kể"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tập trung kinh tế bao gồm sáp nhập doanh nghiệp, hợp nhất doanh nghiệp, mua lại doanh nghiệp, liên doanh giữa các doanh nghiệp và các hình thức tập trung kinh tế khác theo quy định của pháp luật.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 29 Luật Cạnh tranh 2018.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 29 Luật Cạnh tranh 2018"
+   }
   }
  ]
 }

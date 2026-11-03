@@ -120,6 +120,18 @@
     "nhãn hiệu",
     "kiểm soát"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Bên nhượng quyền có quyền kiểm soát và trợ giúp cho bên nhận quyền trong việc điều hành công việc kinh doanh.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 284 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 284 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)",
+    "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+   }
   }
  ]
 }

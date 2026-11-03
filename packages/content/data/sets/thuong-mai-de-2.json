@@ -35,9 +35,9 @@
       "q": "Hợp đồng thương mại có điều khoản phạt vi phạm. Bên bị vi phạm có được đòi cả bồi thường không?",
       "options": [
         "Có, được áp dụng cả hai (trừ luật quy định khác)",
-        "Không, chỉ được áp dụng một trong hai chế tài",
-        "Chỉ khi có thỏa thuận riêng về bồi thường",
-        "Chỉ khi thiệt hại trên tám phần trăm giá trị"
+        "Không, phải chọn một trong hai chế tài",
+        "Có, nếu có thỏa thuận riêng về bồi thường",
+        "Có, nếu thiệt hại vượt tám phần trăm giá trị"
       ],
       "answer": 0,
       "explain": "Khoản 2 Điều 307.",
