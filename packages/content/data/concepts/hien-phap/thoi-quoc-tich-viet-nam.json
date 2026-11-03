@@ -72,14 +72,14 @@
      "answer": "right"
     },
     {
-     "text": "Công dân đang bị truy cứu trách nhiệm hình sự chưa được thôi quốc tịch Việt Nam",
+     "text": "Công dân xin thôi quốc tịch Việt Nam nhưng đang bị truy cứu trách nhiệm hình sự",
      "answer": "left",
      "basis": "Khoản 2 Điều 27 Luật Quốc tịch Việt Nam 2008"
     },
     {
-     "text": "Công dân đang nợ thuế đối với Nhà nước, chưa được thôi quốc tịch Việt Nam",
-     "answer": "right",
-     "basis": "Điểm a khoản 2 Điều 27 Luật Quốc tịch Việt Nam 2008"
+     "text": "Công dân xin thôi quốc tịch Việt Nam nhưng đang nợ thuế đối với Nhà nước",
+     "answer": "left",
+     "basis": "Điểm a khoản 2 Điều 27 Luật Quốc tịch Việt Nam 2008 (VBHN)"
     }
    ],
    "explain": "Khoản 2, 3, 4 Điều 27."
