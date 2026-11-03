@@ -43,3 +43,4 @@ tests/ · e2e/      Vitest · Playwright
 ## Giấy phép tài nguyên
 - Âm thanh: Kenney *Interface Sounds* (CC0) — `static/sfx/LICENSE.txt`.
 - Tranh nền, biểu tượng: tự vẽ (SVG) cho dự án.
+- Biểu tượng nhánh/tầng của Cây chức vụ và 21 đồ vật tủ trưng bày (`lib/art/ShowcaseProps.svelte`, `lib/art/showcase/*`): tự vẽ, chỉ học phong cách nét mảnh của Tabler Icons (MIT) và Lucide (ISC); không sao chép đường path.

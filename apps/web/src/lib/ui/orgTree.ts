@@ -61,3 +61,34 @@ const ABBR: [RegExp, string][] = [
 export function shortPostTitle(title: string): string {
   return ABBR.reduce((t, [re, s]) => t.replace(re, s), title);
 }
+
+/** Tên ngắn của nhánh (chip chọn nhánh ở màn hẹp, tiêu đề cột). Tên đầy đủ vẫn là BRANCH_NAMES. */
+export const BRANCH_SHORT: Record<Branch, string> = { 'hanh-phap': 'Hành pháp', 'lap-phap': 'Lập pháp', 'xet-xu': 'Xét xử', 'kiem-sat': 'Kiểm sát' };
+
+/** Trạng thái đoạn đường nối dọc: none (không có) · dim (chưa tới) · fill (đã đi qua, tô màu nhánh) · live (đang nối tới chức kế tiếp: hạt sáng chạy). */
+export type RailState = 'none' | 'dim' | 'fill' | 'live';
+export type ColRow =
+  | { kind: 'tier'; tier: PostTier; label: string; done: number; total: number; rail: RailState }
+  | { kind: 'post'; post: OrgPost; rail: RailState };
+/** Cột dọc một nhánh, trên xuống dưới: tầng Lãnh đạo cấp cao → … → Cơ sở, rồi "xuất phát" (Công dân) ở đáy. */
+export type OrgColumn = { branch: Branch; label: string; short: string; rows: ColRow[]; start: RailState; nextId: string | null; done: number; total: number };
+
+const railOf = (p: OrgPost): RailState => (p.status === 'done' ? 'fill' : p.status === 'next' ? 'live' : 'dim');
+
+/**
+ * Dựng cột dọc từ OrgBranch (thang cơ sở → lãnh đạo) bằng cách đảo thứ tự.
+ * Mỗi dòng mang `rail` = trạng thái đoạn nối nằm NGAY TRÊN dòng đó, quyết định bởi chức gần nhất phía trên:
+ * chức trên đã đạt → fill (chức dưới chắc chắn đã đạt); chức trên là kế tiếp → live; còn lại → dim. Dòng đầu: none.
+ * `start` là đoạn nối giữa chức dưới cùng và điểm xuất phát (Công dân).
+ */
+export function orgColumn(b: OrgBranch): OrgColumn {
+  const rows: ColRow[] = [];
+  let above: OrgPost | null = null;
+  const rail = (): RailState => (above ? railOf(above) : 'none');
+  for (const t of [...b.tiers].reverse()) {
+    rows.push({ kind: 'tier', tier: t.tier, label: t.label, done: t.done, total: t.posts.length, rail: rail() });
+    for (const p of [...t.posts].reverse()) { rows.push({ kind: 'post', post: p, rail: rail() }); above = p; }
+  }
+  const nextId = b.tiers.flatMap((t) => t.posts).find((p) => p.status === 'next')?.id ?? null;
+  return { branch: b.branch, label: b.label, short: BRANCH_SHORT[b.branch], rows, start: above ? railOf(above) : 'none', nextId, done: b.done, total: b.total };
+}
