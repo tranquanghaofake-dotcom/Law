@@ -1,4 +1,5 @@
 import { expect, test } from '@playwright/test';
+import { readdirSync, readFileSync } from 'node:fs';
 const B = process.env.BASE_PATH ?? '/';
 
 test('trang chủ người mới: thẻ BẮT ĐẦU, môn đang học, một thẻ kiểm tra nhanh', async ({ page }) => {
@@ -60,12 +61,22 @@ test('#/on/hien-phap khi chưa có gì → báo rỗng và link về môn', asyn
   await expect(page.getByRole('link', { name: /Về môn/ })).toHaveAttribute('href', '#/mon/hien-phap');
 });
 
+// Số đề đọc từ dữ liệu (không gõ số cố định); nhóm "dan-su" lấy từ trường group của mỗi đề.
+const setsDir = '../../packages/content/data/sets';
+const allSets: { title: string; group: string }[] = readdirSync(setsDir)
+  .filter((f) => f.endsWith('.json'))
+  .map((f) => JSON.parse(readFileSync(`${setsDir}/${f}`, 'utf8')));
+const danSuTitles = allSets.filter((s) => s.group === 'dan-su').map((s) => s.title);
+
 test('Luyện đề: lọc theo nhóm chỉ còn đề của nhóm đó', async ({ page }) => {
   await page.goto(B + '#/luyen-de');
-  await expect(page.locator('.set')).toHaveCount(5);
+  await expect(page.locator('.set')).toHaveCount(allSets.length);
   await page.getByRole('button', { name: 'Luật Dân sự' }).click();
-  await expect(page.locator('.set')).toHaveCount(1);
+  // Lọc xong: số đề bằng số đề của nhóm trong dữ liệu, ít hơn tổng, và mọi đề hiện ra đều thuộc nhóm.
+  await expect(page.locator('.set')).toHaveCount(danSuTitles.length);
+  expect(danSuTitles.length).toBeLessThan(allSets.length);
+  for (const t of await page.locator('.set h3').allTextContents()) expect(danSuTitles).toContain(t);
   await expect(page.getByRole('button', { name: 'Luật Dân sự' })).toHaveAttribute('aria-pressed', 'true');
   await page.getByRole('button', { name: 'Tất cả' }).click();
-  await expect(page.locator('.set')).toHaveCount(5);
+  await expect(page.locator('.set')).toHaveCount(allSets.length);
 });

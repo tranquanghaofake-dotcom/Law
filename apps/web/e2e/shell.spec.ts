@@ -1,5 +1,10 @@
 import { expect, test } from '@playwright/test';
+import { readFileSync } from 'node:fs';
 const B = process.env.BASE_PATH ?? '/';
+
+// Số khái niệm của môn Hiến pháp đọc từ dữ liệu (tập id khái niệm xuất hiện trong các đợt).
+const hpSubject = JSON.parse(readFileSync('../../packages/content/data/subjects/hien-phap.json', 'utf8'));
+const hpConceptCount = new Set(hpSubject.chapters.flatMap((c: any) => c.lessons).flatMap((l: any) => l.concepts)).size;
 
 test('trang chủ hiện thương hiệu', async ({ page }) => {
   await page.goto(B + '');
@@ -22,10 +27,12 @@ test('layout 1 cột trên điện thoại, 2 cột trên desktop khi học', as
 
 test('#/mon/hien-phap hiện lưới 10 ô, đúng 1 nhãn TIẾP THEO CHO BẠN, chú giải 7 mức', async ({ page }) => {
   await page.goto(B + '#/mon/hien-phap');
-  await expect(page.locator('.mastery .cell')).toHaveCount(10);
+  await expect(page.locator('.mastery .cell')).toHaveCount(hpConceptCount);
   await expect(page.locator('.next-tag')).toHaveCount(1);
   await expect(page.locator('.legend li')).toHaveCount(7);
-  await expect(page.getByRole('link', { name: /Học đợt tiếp/ })).toHaveAttribute('href', '#/hoc/hien-phap/hp-1');
+  // Chưa học gì → đợt "tiếp theo" là đợt đầu tiên của môn (lấy từ dữ liệu, hiện là hp-0).
+  const firstLessonId = hpSubject.chapters[0].lessons[0].id;
+  await expect(page.getByRole('link', { name: /Học đợt tiếp/ })).toHaveAttribute('href', `#/hoc/hien-phap/${firstLessonId}`);
 });
 
 test('#/mon liệt kê môn có nội dung và dẫn vào trang môn', async ({ page }) => {
@@ -65,10 +72,10 @@ test('danh mục khái niệm: tìm không dấu, mở xem định nghĩa, ★ g
   await page.goto(B + '#/mon/hien-phap');
   await page.getByRole('link', { name: 'Danh mục khái niệm' }).click();
   await expect(page).toHaveURL(/#\/mon\/hien-phap\/khai-niem$/);
-  await expect(page.locator('.concept-entry')).toHaveCount(10);
+  await expect(page.locator('.concept-entry')).toHaveCount(hpConceptCount);
   await page.getByRole('searchbox').fill('chu quyen');
   const n = await page.locator('.concept-entry').count();
-  expect(n).toBeGreaterThan(0); expect(n).toBeLessThan(10);
+  expect(n).toBeGreaterThan(0); expect(n).toBeLessThan(hpConceptCount);
   await page.getByRole('searchbox').fill('khong co khai niem nao nhu the');
   await expect(page.getByText('Không có khái niệm khớp.')).toBeVisible();
   await page.getByRole('searchbox').fill('');
