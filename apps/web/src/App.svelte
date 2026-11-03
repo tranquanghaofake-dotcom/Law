@@ -29,7 +29,6 @@
   const inSession = $derived(route.name === 'lesson' || route.name === 'review' || route.name === 'quiz');
 
   $effect(() => {
-    document.documentElement.dataset.theme = settings.theme === 'auto' ? '' : settings.theme;
     document.documentElement.classList.toggle('reduced-motion', settings.reducedMotion === 'on');
     document.documentElement.classList.toggle('motion-on', settings.reducedMotion === 'off');
   });
