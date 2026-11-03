@@ -11,6 +11,15 @@
   if (!shelf.ready) refreshShelf();
   // Tủ rộng (≥ 820 px) gom thành 3 tầng để thấp hơn; hẹp giữ 5 tầng.
   let boxW = $state(0);
+  let boxEl: HTMLDivElement | undefined = $state();
+  $effect(() => {
+    if (!boxEl) return;
+    const el = boxEl;
+    const measure = () => { boxW = el.clientWidth; };
+    measure();
+    window.addEventListener('resize', measure);
+    return () => window.removeEventListener('resize', measure);
+  });
   const rows = $derived(bookcaseRows(shelf.subjects, shelf.books, { tiers: boxW >= 820 ? 3 : 5 }));
   const earned = $derived(shelf.books.filter((b) => b.level > 0).length);
   const ROMAN = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII', 'XIII', 'XIV', 'XV', 'XVI'];
@@ -24,7 +33,7 @@
   const chapterName = (t: string) => t.replace(/^[^.:]*[.:]\s*/, '');
 </script>
 
-<div class="bk" bind:clientWidth={boxW}>
+<div class="bk" bind:this={boxEl}>
   <p class="muted small bk-lead">Mỗi môn một cuốn: <b>cao</b> theo số chương, <b>dày</b> theo số khái niệm, <b>sáng dần</b> khi nhận thêm sách chương. Chạm một gáy để mở ngăn chương.</p>
   <div class="bk-case">
     <div class="bk-cornice" aria-hidden="true"><span class="bk-lamp"></span></div>
