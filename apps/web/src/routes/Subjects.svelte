@@ -63,7 +63,7 @@
   <h1>Môn học</h1>
   <label class="finder">
     <span class="sr-only">Tìm môn</span>
-    <input type="search" placeholder="Tìm môn (gõ không dấu, viết tắt)…" bind:value={query} autocomplete="off" />
+    <input type="search" placeholder="Tìm môn, vd. ds" bind:value={query} autocomplete="off" />
   </label>
 </header>
 {#if error}
