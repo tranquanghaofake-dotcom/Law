@@ -32,7 +32,7 @@
    "options": [
     "Buôn bán hàng hóa giả mạo về sở hữu trí tuệ",
     "Sử dụng tác phẩm theo hợp đồng đã ký kết",
-    "Nộp đơn đăng ký nhãn hiệu cho hàng hóa đã có",
+    "Nộp đơn đăng ký nhãn hiệu cho hàng đã có",
     "Khiếu nại quyết định từ chối cấp văn bằng"
    ],
    "answer": 0,
@@ -48,7 +48,7 @@
    "q": "Muốn được bồi thường thiệt hại, chủ thể quyền nên dùng biện pháp nào?",
    "options": [
     "Khởi kiện dân sự tại tòa án",
-    "Yêu cầu xử phạt hành chính là đủ",
+    "Yêu cầu xử phạt hành chính",
     "Tố cáo hành chính",
     "Đăng ký lại nhãn hiệu"
    ],
