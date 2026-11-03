@@ -70,6 +70,16 @@
     {
      "text": "Quản lý lao động đúng pháp luật, dân chủ, công bằng",
      "answer": "right"
+    },
+    {
+     "text": "Nhà nước hỗ trợ người lao động duy trì, chuyển đổi nghề nghiệp và nâng cao trình độ kỹ năng",
+     "answer": "left",
+     "basis": "Khoản 4 Điều 4 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Nhà nước bảo đảm quyền và lợi ích hợp pháp của người sử dụng lao động",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 4 Bộ luật Lao động 2019"
     }
    ],
    "explain": "Điều 4."
