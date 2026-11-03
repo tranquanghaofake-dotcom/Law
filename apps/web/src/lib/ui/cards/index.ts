@@ -7,6 +7,8 @@ import CardPair from './CardPair.svelte';
 import CardCloze from './CardCloze.svelte';
 import CardRecall from './CardRecall.svelte';
 import CardTrueFalse from './CardTrueFalse.svelte';
+import CardMatch from './CardMatch.svelte';
+import CardSort from './CardSort.svelte';
 
 export type { AnswerResult, CardProps } from './types';
 
@@ -20,7 +22,7 @@ export function cardFor(item: StepItem): Component<any> {
     case 'cloze': return CardCloze;
     case 'recall': return CardRecall;
     case 'truefalse': return CardTrueFalse;
-    // đợt 6: thẻ ghép cặp / xếp hai cột do giao diện phiên học dựng (CardMatch, CardSort)
-    case 'match': case 'sort': throw new Error(`Chưa có thẻ cho dạng ${item.type}`);
+    case 'match': return CardMatch;
+    case 'sort': return CardSort;
   }
 }
