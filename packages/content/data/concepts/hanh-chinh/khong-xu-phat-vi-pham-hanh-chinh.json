@@ -30,9 +30,9 @@
    "q": "Trường hợp nào KHÔNG xử phạt vi phạm hành chính?",
    "options": [
     "Thực hiện hành vi do sự kiện bất khả kháng",
-    "Vi phạm lần đầu",
-    "Vi phạm do không biết luật",
-    "Vi phạm vào ban đêm"
+    "Vi phạm lần đầu, không có hậu quả gì đáng kể",
+    "Vi phạm do không biết luật, chưa được hướng dẫn",
+    "Vi phạm vào ban đêm tại khu dân cư đông người"
    ],
    "answer": 0,
    "explain": "Khoản 4 Điều 11.",
@@ -47,9 +47,9 @@
    "q": "Vi phạm do vượt quá giới hạn phòng vệ chính đáng thì sao?",
    "options": [
     "Vẫn bị xử phạt nhưng là tình tiết giảm nhẹ",
-    "Không bị xử phạt",
-    "Bị xử lý hình sự bắt buộc",
-    "Bị phạt gấp đôi"
+    "Không bị xử phạt hành chính và miễn trách nhiệm",
+    "Bị xử lý hình sự bắt buộc, không cần điều tra",
+    "Bị phạt gấp đôi mức tối đa của khung phạt"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 9; Điều 11.",

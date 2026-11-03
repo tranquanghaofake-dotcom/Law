@@ -28,9 +28,9 @@
    "q": "Thủ tục hành chính nhằm giải quyết điều gì?",
    "options": [
     "Một công việc cụ thể liên quan đến cá nhân, tổ chức",
-    "Tranh chấp dân sự",
-    "Vụ án hình sự",
-    "Việc ban hành luật"
+    "Tranh chấp dân sự giữa các bên bình đẳng và tự nguyện",
+    "Vụ án hình sự về tội phạm nghiêm trọng và có tổ chức",
+    "Việc ban hành luật và văn bản quy phạm pháp luật"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 3 Nghị định 63/2010/NĐ-CP (chưa đối chiếu nguyên văn).",

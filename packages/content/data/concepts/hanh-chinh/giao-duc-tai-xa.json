@@ -45,9 +45,9 @@
    "q": "Biện pháp giáo dục tại xã, phường, đặc khu được áp dụng trong trường hợp nào?",
    "options": [
     "Không cần thiết phải cách ly người vi phạm khỏi cộng đồng",
-    "Người vi phạm phạm tội đặc biệt nghiêm trọng",
-    "Người vi phạm là tổ chức",
-    "Người vi phạm là người nước ngoài"
+    "Người vi phạm phạm tội đặc biệt nghiêm trọng và có tiền án",
+    "Người vi phạm là tổ chức kinh doanh có vốn nhà nước",
+    "Người vi phạm là người nước ngoài đang cư trú hợp pháp"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 89.",

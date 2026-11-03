@@ -30,9 +30,9 @@
    "q": "Hình thức xử phạt nào chỉ được áp dụng là hình thức xử phạt chính?",
    "options": [
     "Cảnh cáo và phạt tiền",
-    "Tịch thu tang vật",
-    "Trục xuất",
-    "Tước giấy phép"
+    "Tịch thu tang vật ngay",
+    "Trục xuất khỏi nơi ở",
+    "Tước giấy phép hành nghề"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 21.",

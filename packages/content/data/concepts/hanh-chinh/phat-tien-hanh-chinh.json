@@ -45,9 +45,9 @@
    "q": "Trong khu vực nội thành, mức phạt về giao thông đường bộ có thể cao hơn tối đa bao nhiêu lần?",
    "options": [
     "02 lần mức phạt chung",
-    "03 lần",
-    "05 lần",
-    "Không được cao hơn"
+    "Gấp ba lần mức phạt",
+    "Gấp năm lần mức phạt",
+    "Không được cao hơn nữa"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 23.",
