@@ -28,7 +28,8 @@ export const itemPairSchema = z.object({
   level: z.literal(2),
   left: z.string().min(1),
   right: z.string().min(1),
-  cases: z.array(z.object({ text: z.string().min(1), answer: z.enum(['left', 'right']) })).min(2, 'pair cần ít nhất 2 tình huống'),
+  // basis (đợt 7, tuỳ chọn): căn cứ điều/khoản của riêng tình huống, vd. "Khoản 1 Điều 12 Luật Cạnh tranh 2018"
+  cases: z.array(z.object({ text: z.string().min(1), answer: z.enum(['left', 'right']), basis: z.string().min(1).optional() })).min(2, 'pair cần ít nhất 2 tình huống'),
   explain: z.string().min(1),
 });
 
