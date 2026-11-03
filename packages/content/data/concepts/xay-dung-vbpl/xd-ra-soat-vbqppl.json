@@ -32,9 +32,9 @@
    "q": "Rà soát VBQPPL nhằm phát hiện loại quy định nào?",
    "options": [
     "Quy định mâu thuẫn, chồng chéo, hết hiệu lực hoặc không còn phù hợp",
-    "Chỉ quy định trái Hiến pháp",
-    "Chỉ lỗi chính tả",
-    "Chỉ văn bản chưa đăng Công báo"
+    "Chỉ quy định trái Hiến pháp và luật do Quốc hội ban hành gần đây",
+    "Chỉ lỗi chính tả, lỗi đánh máy và lỗi trình bày trong văn bản",
+    "Chỉ văn bản chưa đăng Công báo và chưa được ký số của người đứng đầu"
    ],
    "answer": 0,
    "explain": "Khoản 5 Điều 3.",
@@ -49,9 +49,9 @@
    "q": "Ai quyết định tổng rà soát hệ thống VBQPPL?",
    "options": [
     "Ủy ban Thường vụ Quốc hội trên cơ sở đề xuất của Chính phủ",
-    "Bộ Tư pháp",
-    "Chủ tịch nước",
-    "Tòa án nhân dân tối cao"
+    "Bộ Tư pháp, theo đề nghị của Bộ trưởng Bộ Nội vụ hiện nay",
+    "Chủ tịch nước, theo đề nghị của Chủ tịch Hội đồng dân tộc",
+    "Tòa án nhân dân tối cao, sau khi thống nhất với Viện kiểm sát"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 64.",

@@ -31,9 +31,9 @@
    "q": "Ai là cơ quan chủ trì soạn thảo luật theo khoản 1 Điều 33?",
    "options": [
     "Cơ quan trình tự soạn thảo hoặc cơ quan được cơ quan trình phân công",
-    "Luôn là Bộ Tư pháp",
-    "Luôn là Ủy ban Pháp luật và Tư pháp của Quốc hội",
-    "Văn phòng Chủ tịch nước"
+    "Luôn là Bộ Tư pháp, không có trường hợp ngoại lệ nào khác trong mọi văn bản",
+    "Luôn là Ủy ban Pháp luật và Tư pháp của Quốc hội trong mọi trường hợp",
+    "Văn phòng Chủ tịch nước, theo đề nghị của Chủ tịch Quốc hội"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 33.",

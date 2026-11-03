@@ -29,9 +29,9 @@
    "q": "Đặc điểm nào là của quy phạm pháp luật theo khoản 1 Điều 3?",
    "options": [
     "Quy tắc xử sự chung, có hiệu lực bắt buộc chung, được Nhà nước bảo đảm thực hiện",
-    "Mệnh lệnh áp dụng một lần cho một người cụ thể",
-    "Khuyến nghị không bắt buộc",
-    "Quy tắc đạo đức do cộng đồng tự đặt"
+    "Mệnh lệnh áp dụng một lần cho một người cụ thể trong một vụ việc nhất định và có thời hạn",
+    "Khuyến nghị không bắt buộc của các tổ chức xã hội nghề nghiệp đối với hội viên",
+    "Quy tắc đạo đức do cộng đồng tự đặt ra và tự thực hiện trong gia đình"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 3.",
@@ -46,9 +46,9 @@
    "q": "Quy phạm pháp luật được áp dụng trong phạm vi nào?",
    "options": [
     "Cả nước hoặc đơn vị hành chính nhất định",
-    "Chỉ trong một cơ quan",
-    "Chỉ với công chức",
-    "Chỉ với doanh nghiệp"
+    "Chỉ trong phạm vi một cơ quan nhà nước",
+    "Chỉ áp dụng với công chức, viên chức nhà nước",
+    "Chỉ áp dụng với doanh nghiệp tư nhân"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 3: trong phạm vi cả nước hoặc trong đơn vị hành chính nhất định.",

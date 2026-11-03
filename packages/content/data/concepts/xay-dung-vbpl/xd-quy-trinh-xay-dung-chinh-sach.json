@@ -31,9 +31,9 @@
    "q": "Trường hợp nào bắt buộc thực hiện quy trình xây dựng chính sách trước khi soạn thảo?",
    "options": [
     "Luật, pháp lệnh mới hoặc thay thế; luật sửa đổi có nội dung hạn chế quyền con người; nghị quyết thí điểm của Quốc hội",
-    "Mọi nghị định của Chính phủ",
-    "Mọi thông tư của Bộ trưởng",
-    "Mọi nghị quyết của HĐND cấp tỉnh"
+    "Mọi nghị định của Chính phủ về quản lý nhà nước và xử phạt vi phạm hành chính trên cả nước trong mọi lĩnh vực",
+    "Mọi thông tư của Bộ trưởng quy định chi tiết về thủ tục hành chính, lệ phí và mức phí trên cả nước theo ngành",
+    "Mọi nghị quyết của HĐND cấp tỉnh về quy định chi tiết nội dung và chính sách trong địa bàn tỉnh và trong mọi lĩnh vực quản lý"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 27.",
@@ -48,9 +48,9 @@
    "q": "Dự án luật không thuộc khoản 1 Điều 27 thì cơ quan trình phải làm gì?",
    "options": [
     "Nêu rõ tác động của chính sách trong bản thuyết minh quy phạm hóa chính sách",
-    "Vẫn phải thẩm định chính sách tại Bộ Tư pháp",
-    "Không cần nêu gì về tác động",
-    "Phải xin ý kiến Chủ tịch nước"
+    "Vẫn phải thẩm định chính sách tại Bộ Tư pháp trước khi trình Quốc hội",
+    "Không cần nêu gì về tác động đối với kinh tế - xã hội và ngân sách",
+    "Phải xin ý kiến bằng văn bản của Chủ tịch nước và Chủ tịch Quốc hội trước khi trình"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 27.",

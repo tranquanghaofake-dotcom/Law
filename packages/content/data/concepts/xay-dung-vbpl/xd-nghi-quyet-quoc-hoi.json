@@ -31,9 +31,9 @@
    "q": "Quốc hội ban hành nghị quyết QPPL để quy định nội dung nào?",
    "options": [
     "Thực hiện thí điểm chính sách mới khác với luật hiện hành; tạm ngưng, điều chỉnh hiệu lực, kéo dài thời hạn áp dụng luật",
-    "Tội phạm và hình phạt",
-    "Quyền và nghĩa vụ cơ bản của công dân",
-    "Các thứ thuế"
+    "Tội phạm và hình phạt, quyền và nghĩa vụ cơ bản của công dân trong luật hình sự và tố tụng hình sự của cơ quan tiến hành tố tụng",
+    "Quyền và nghĩa vụ cơ bản của công dân, quyền bầu cử, ứng cử và tự do ngôn luận được Hiến pháp ghi nhận và bảo đảm",
+    "Các loại thuế mới, mức thuế suất và cách tính thuế của các loại thuế hiện hành đối với doanh nghiệp và cá nhân kinh doanh"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 10; các nội dung còn lại thuộc luật (khoản 1 Điều 10).",
@@ -48,9 +48,9 @@
    "q": "Nội dung nào phải quy định bằng luật chứ không phải nghị quyết?",
    "options": [
     "Tội phạm và hình phạt; tố tụng tư pháp",
-    "Thí điểm chính sách mới",
-    "Kéo dài thời hạn áp dụng một luật",
-    "Vấn đề khác do Quốc hội quyết định"
+    "Thí điểm chính sách mới khác luật hiện hành",
+    "Kéo dài thời hạn áp dụng một luật hiện hành",
+    "Tạm ngưng hiệu lực một số điều luật"
    ],
    "answer": 0,
    "explain": "Điểm b khoản 1 Điều 10.",
