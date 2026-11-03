@@ -30,8 +30,9 @@
   <p class="plain">{layers.plain}</p>
   {#if layers.cues.length}
     <ul class="intro-cues" aria-label="Dấu hiệu nhận biết">
-      {#each layers.cues as cue (cue.text)}<li class="chip" class:note={!cue.verbatim}>{cue.text}</li>{/each}
+      {#each layers.cues as cue (cue.text)}<li class="chip" class:note={!cue.verbatim} title={cue.verbatim ? 'Có nguyên văn trong định nghĩa' : 'Dấu hiệu tóm tắt — không phải nguyên văn điều luật'}>{cue.text}{#if !cue.verbatim}<span class="sr-only"> (tóm tắt, không phải nguyên văn)</span>{/if}</li>{/each}
     </ul>
+    {#if layers.cues.some((c) => !c.verbatim)}<p class="small muted intro-cue-key">Chữ nghiêng: dấu hiệu tóm tắt, không phải nguyên văn điều luật.</p>{/if}
   {/if}
   <button class="btn ghost plain intro-toggle" type="button" aria-expanded={open} aria-controls="intro-verbatim" onclick={() => (open = !open)}>
     {open ? 'Ẩn nguyên văn điều luật' : 'Xem nguyên văn điều luật'}

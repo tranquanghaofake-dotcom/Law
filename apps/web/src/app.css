@@ -318,6 +318,7 @@ kbd { font: 600 var(--fs-xs)/1 var(--font-ui); background: rgba(255,255,255,.18)
 .intro-layers .plain { font-size: var(--fs-md); color: var(--muted); margin: var(--sp-1) 0 var(--sp-3); }
 .intro-cues { display: flex; flex-wrap: wrap; gap: var(--sp-2); list-style: none; padding: 0; margin: 0 0 var(--sp-3); }
 .intro-cues .chip.note { font-weight: 500; font-style: italic; }
+.intro-cue-key { margin: calc(-1 * var(--sp-1)) 0 var(--sp-2); font-style: italic; }
 .intro-toggle { margin: 0 0 var(--sp-2); }
 .calib { margin-top: var(--sp-5); }
 .calib-t { border-collapse: collapse; width: 100%; max-width: 520px; font-size: var(--fs-sm); }
