@@ -70,6 +70,16 @@
     {
      "text": "Người nước ngoài ở nước ngoài lừa đảo công dân Việt Nam",
      "answer": "right"
+    },
+    {
+     "text": "Công dân Việt Nam phạm tội ở nước ngoài, bị truy cứu theo Bộ luật Hình sự Việt Nam",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 6 Bộ luật Hình sự 2015"
+    },
+    {
+     "text": "Người nước ngoài phạm tội ở nước ngoài xâm phạm lợi ích của Nhà nước Việt Nam",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 6 Bộ luật Hình sự 2015"
     }
    ],
    "explain": "Điều 6."

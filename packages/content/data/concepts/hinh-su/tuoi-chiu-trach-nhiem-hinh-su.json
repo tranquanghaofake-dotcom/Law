@@ -71,6 +71,16 @@
     {
      "text": "Trộm cắp tài sản thuộc khung ít nghiêm trọng",
      "answer": "right"
+    },
+    {
+     "text": "Người 15 tuổi phạm tội hiếp dâm, thuộc các tội mà khoản 2 Điều 12 quy định phải chịu trách nhiệm",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 12 Bộ luật Hình sự 2015"
+    },
+    {
+     "text": "Người 15 tuổi lừa đảo chiếm đoạt tài sản khung ít nghiêm trọng",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 12 Bộ luật Hình sự 2015"
     }
    ],
    "explain": "Khoản 2 Điều 12."

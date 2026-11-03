@@ -71,6 +71,16 @@
     {
      "text": "Người mắc bệnh ung thư giai đoạn cuối",
      "answer": "right"
+    },
+    {
+     "text": "Phụ nữ đang nuôi con dưới 36 tháng tuổi khi phạm tội đặc biệt nghiêm trọng",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 40 Bộ luật Hình sự 2015"
+    },
+    {
+     "text": "Người bị kết án tử hình đã đủ 75 tuổi, chưa được thi hành án",
+     "answer": "right",
+     "basis": "Điểm b khoản 3 Điều 40 Bộ luật Hình sự 2015"
     }
    ],
    "explain": "Điều 40."

@@ -69,6 +69,16 @@
     {
      "text": "Đang cạy cửa thì tự thấy hối hận, bỏ về dù không ai ngăn",
      "answer": "right"
+    },
+    {
+     "text": "Đang đột nhập nhà, bị chủ nhà phát hiện và bắt giữ trước khi lấy được tài sản",
+     "answer": "left",
+     "basis": "Điều 15 Bộ luật Hình sự 2015"
+    },
+    {
+     "text": "Đang đột nhập, tự thấy hối hận và quay về mà không cần ai can ngăn",
+     "answer": "right",
+     "basis": "Điều 16 Bộ luật Hình sự 2015"
     }
    ],
    "explain": "Điều 15, 16."

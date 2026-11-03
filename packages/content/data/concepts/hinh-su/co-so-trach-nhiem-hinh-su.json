@@ -70,6 +70,16 @@
     {
      "text": "Chỉ chịu TNHS về tội liệt kê tại Điều 76",
      "answer": "right"
+    },
+    {
+     "text": "Cá nhân từ đủ 16 tuổi phạm một tội đã được Bộ luật Hình sự quy định phải chịu trách nhiệm",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 2 Bộ luật Hình sự 2015"
+    },
+    {
+     "text": "Pháp nhân thương mại phạm tội thuộc danh mục tại Điều 76 mới phải chịu trách nhiệm",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 2 Bộ luật Hình sự 2015"
     }
    ],
    "explain": "Điều 2."
