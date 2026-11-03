@@ -85,6 +85,17 @@ export function fitTitle(text: string | readonly string[], o: FitOptions): { lin
     || { lines: greedy(words, Math.floor(o.maxWidth / (o.charW * o.minSize)), o.maxLines), size: o.minSize };
 }
 
+/**
+ * Cỡ chữ cho các dòng tên đã ngắt sẵn (bìa riêng từng môn): dòng dài nhất vừa maxWidth (số ký tự × charW × cỡ), tổng
+ * chiều cao (số dòng × cỡ × TITLE_LINE_H) ≤ maxHeight; làm tròn xuống 0,5, trong [minSize, maxSize].
+ */
+export function fitLines(lines: readonly string[], o: { maxWidth: number; maxSize: number; minSize: number; charW: number; maxHeight?: number }): number {
+  if (!lines.length) return o.maxSize;
+  const longest = Math.max(...lines.map((l) => l.length));
+  const raw = Math.min(o.maxWidth / (longest * o.charW), (o.maxHeight ?? Infinity) / (lines.length * TITLE_LINE_H));
+  return Math.max(o.minSize, Math.min(o.maxSize, Math.floor(raw * 2) / 2));
+}
+
 /** Chữ cái đầu của tên (bỏ dấu), có cả bản bỏ chữ "luật" ở đầu: "Luật Dân sự 1" → "lds1 ds1". */
 function initials(title: string): string {
   const words = fold(title).split(' ').filter(Boolean);

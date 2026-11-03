@@ -98,7 +98,7 @@
     <ul class="subject-rows">
       {#each rows as r (r.subject.id)}
         <li><a class="subject-row" href={hashFor('subject', { subject: r.subject.id })}>
-          <BookCover class="row-cover" title={coverTitle(r.subject.title)} color={shelfOf(r.subject.id).color} percent={r.total ? Math.round((r.mastered / r.total) * 100) : 0} state={studying ? 'learning' : 'new'} w={54} />
+          <BookCover class="row-cover" id={r.subject.id} title={coverTitle(r.subject.title)} color={shelfOf(r.subject.id).color} percent={r.total ? Math.round((r.mastered / r.total) * 100) : 0} state={studying ? 'learning' : 'new'} w={54} />
           <span class="title"><b>{r.subject.title}</b></span>
           <span class="bar" aria-hidden="true"><span style="width:{r.total ? (r.mastered / r.total) * 100 : 0}%"></span></span>
           <span class="muted small">{r.mastered}/{r.total} thuần thục</span>

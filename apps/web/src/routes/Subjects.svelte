@@ -49,7 +49,7 @@
   {@const short = coverTitle(it.subject.title)}
   <li>
     <a class="cover-link" href={hashFor('subject', { subject: it.subject.id })} data-shelf={it.shelf.id} title={it.subject.title}>
-      <BookCover title={short} color={it.shelf.color} percent={it.s.percent} state={it.state} {w} />
+      <BookCover id={it.subject.id} title={short} color={it.shelf.color} percent={it.s.percent} state={it.state} {w} />
       <span class="name">{short}{#if short !== it.subject.title}<span class="sr-only">{it.subject.title.slice(short.length)}</span>{/if}</span>
       <span class="small muted">{it.s.mastered}/{it.s.total}{#if it.state === 'learning'} · đang học{:else if it.state === 'done'} · xong{/if}</span>
     </a>
