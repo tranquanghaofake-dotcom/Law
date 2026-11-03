@@ -62,6 +62,13 @@ Số khái niệm: 26; số tình huống thêm: 53.
 | vay-tai-san | Người vay một lượng gạo của người khác, khi đến hạn trả lại cùng số lượng và chất lượng gạo đó | Trái: Vay tài sản | Điều 463 Bộ luật Dân sự 2015 |
 | vay-tai-san | Người mượn chiếc máy khoan để dùng vài ngày rồi trả đúng chiếc máy đó | Phải: Mượn tài sản | Điều 494 Bộ luật Dân sự 2015 |
 
+## Giai đoạn 2 — cờ dò trích dẫn (haiku-1)
+
+Cờ của môn: 2 (đều ở khái niệm `thue-tai-san`, phần giải thích).
+
+**Sửa**
+- `thue-tai-san` (phần `plain`): công cụ đọc "Điều 494" và "Điều 483" thành Luật Nhà ở. Đã ghi rõ "Điều 494 BLDS 2015" (hợp đồng mượn tài sản) và "Điều 483 BLDS 2015" (hợp đồng thuê khoán tài sản) — đối chiếu `blds-2015.txt`.
+
 ## Câu hỏi viết lại (sonnet B)
 
 ### Câu hỏi kiểu tập hợp (bỏ nhiễu "Chỉ…") (3)

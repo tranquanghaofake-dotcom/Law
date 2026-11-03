@@ -50,6 +50,19 @@ Số khái niệm: 24; số tình huống thêm: 39.
 
 ⚠ haiku-1 (ghi chú, chưa sửa): khái niệm `tai-san` — căn cứ tình huống "tài sản hình thành trong tương lai" là Điều 108 BLDS 2015, còn nguồn ghi Điều 105; khái niệm `chiem-huu` — định nghĩa chiếm hữu ngay tình/không ngay tình ở Điều 180, nguồn ghi khoản 1, 2 Điều 179. Để opus/công cụ dò xem.
 
+## Giai đoạn 2 — cờ dò trích dẫn (haiku-1)
+
+Cờ của môn: 8.
+
+**Sửa**
+- `pham-vi-dieu-chinh-luat-dan-su#0` (câu hỏi trắc nghiệm, cờ "hai đáp án"): nhiễu "Cá nhân, pháp nhân, hộ gia đình, tổ hợp tác" chứa trọn đáp án đúng; Điều 1 BLDS 2015 chỉ nêu cá nhân, pháp nhân. Đã thay nhiễu bằng "Cơ quan nhà nước, tổ chức chính trị và cá nhân" (không thuộc Điều 1). Đáp án không đổi.
+
+**Báo nhầm**
+- `sets/dat-coc` #1 (điểm 0,195), #2 (0,189), #7 (0,076), #9 (0,15): câu tình huống diễn đạt đời thường; đã đối chiếu: #1 — bên nhận đặt cọc được giữ cọc khi bên đặt cọc từ chối giao kết (khoản 2 Điều 328); #2 — trả lại cọc và một khoản tương đương (khoản 2 Điều 328), tức 6 triệu; #7 — hình thức giao dịch theo khoản 1 Điều 119; #9 — lời khuyên ghi nội dung đặt cọc, căn cứ Điều 328.
+
+**⚠ opus**
+- `sets/dat-coc` #4 và #9 (vế "Điều 37 Nghị định 21/2021/NĐ-CP"): văn bản ngoài kho, chưa kiểm được trên vbpl.vn. Câu #4 (khoản tiền không xác định là đặt cọc hay trả trước thì là tiền trả trước) cần kiểm nguồn trước khi giữ.
+
 ## Câu hỏi viết lại (sonnet B)
 
 ### Câu hỏi kiểu tập hợp (bỏ nhiễu "Chỉ…") (7)
