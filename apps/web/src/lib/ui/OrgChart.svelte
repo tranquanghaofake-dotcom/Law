@@ -7,7 +7,7 @@
   import { FIELD_NAMES, type Field } from '$lib/game/fields';
   import { shelf, refreshShelf } from './shelf.svelte';
   import { career, setBranch } from './career.svelte';
-  import { orgTree, type OrgPost, type OrgStatus } from './orgTree';
+  import { orgTree, shortPostTitle, type OrgPost, type OrgStatus } from './orgTree';
   import Sheet from './Sheet.svelte';
 
   if (!shelf.ready) refreshShelf();
@@ -34,13 +34,13 @@
 </script>
 
 {#snippet node(p: OrgPost, cls = '')}
-  <button type="button" class="org-node {cls}" data-status={p.status} aria-haspopup="dialog" onclick={() => pick(p)}>
+  <button type="button" class="org-node {cls}" data-status={p.status} aria-haspopup="dialog" title={p.title} onclick={() => pick(p)}>
     <span class="org-mark" aria-hidden="true">
       {#if p.status === 'done'}<svg viewBox="0 0 20 20" width="20" height="20"><rect x="1.5" y="1.5" width="17" height="17" rx="2.5" /><path d="M5.5 10.5l3 3l6-7" /></svg>
       {:else if p.status === 'next'}<svg viewBox="0 0 20 20" width="20" height="20"><circle cx="10" cy="10" r="7.5" /><circle class="dot" cx="10" cy="10" r="3" /></svg>
       {:else}<svg viewBox="0 0 20 20" width="20" height="20"><rect x="4.5" y="9" width="11" height="8.5" rx="1.6" /><path d="M7 9V6.6a3 3 0 0 1 6 0V9" /></svg>{/if}
     </span>
-    <span class="org-name">{p.title}</span>
+    <span class="org-name">{shortPostTitle(p.title)}</span>
     <span class="org-meta">{p.status === 'done' ? 'Đã đạt' : p.status === 'next' ? `Kế tiếp · ${p.have}/${p.need} sách` : 'Chưa mở'}</span>
   </button>
 {/snippet}

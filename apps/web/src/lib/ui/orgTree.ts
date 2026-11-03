@@ -48,3 +48,16 @@ export function orgTree(posts: readonly Post[], state: CareerState, books: Books
   }
   return { label: ROOT_LABEL, done: branches.reduce((n, b) => n + b.done, 0) + (head?.status === 'done' ? 1 : 0), total: posts.length, head, branches };
 }
+
+/** Viết tắt thông dụng của tên cơ quan, dùng cho ô chức vụ trên cây (ô hẹp). Tên đầy đủ vẫn ở tooltip và hộp chi tiết. */
+const ABBR: [RegExp, string][] = [
+  [/Ủy ban Thường vụ Quốc hội/g, 'UBTVQH'],
+  [/Ủy ban nhân dân/g, 'UBND'],
+  [/Hội đồng nhân dân/g, 'HĐND'],
+  [/Tòa án nhân dân/g, 'TAND'],
+  [/Viện kiểm sát nhân dân/g, 'VKSND'],
+];
+
+export function shortPostTitle(title: string): string {
+  return ABBR.reduce((t, [re, s]) => t.replace(re, s), title);
+}

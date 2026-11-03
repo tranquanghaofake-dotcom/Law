@@ -35,15 +35,15 @@ describe('OrgChart (cây chức vụ)', () => {
   it('có sách đủ cho chức đầu: nút đó "done" (ấn son), chức sau "next"', () => {
     shelf.books = [book('a', 'dia-phuong', 1), book('b', 'hien-phap', 1)];
     const { container } = render(OrgChart);
-    const first = [...container.querySelectorAll<HTMLButtonElement>('.org-node')].find((n) => n.textContent?.includes('Công chức cấp xã'))!;
+    const first = [...container.querySelectorAll<HTMLButtonElement>('.org-node')].find((n) => n.title.includes('Công chức cấp xã'))!;
     expect(first.dataset.status).toBe('done');
     expect(first.textContent).toContain('Đã đạt');
-    const next = [...container.querySelectorAll<HTMLButtonElement>('.org-node')].find((n) => n.textContent?.includes('Phó Chủ tịch Ủy ban nhân dân cấp xã'))!;
+    const next = [...container.querySelectorAll<HTMLButtonElement>('.org-node')].find((n) => n.title.includes('Phó Chủ tịch Ủy ban nhân dân cấp xã'))!;
     expect(next.dataset.status).toBe('next');
   });
   it('chạm một chức mở hộp chi tiết: trạng thái + điều kiện sách; Esc/nút Đóng đóng lại', async () => {
     const { container } = render(OrgChart);
-    const node = [...container.querySelectorAll<HTMLButtonElement>('.org-node')].find((n) => n.textContent?.includes('Công chức cấp xã'))!;
+    const node = [...container.querySelectorAll<HTMLButtonElement>('.org-node')].find((n) => n.title.includes('Công chức cấp xã'))!;
     await fireEvent.click(node);
     const dlg = container.querySelector('dialog')!;
     expect(dlg.hasAttribute('open')).toBe(true);
@@ -56,7 +56,7 @@ describe('OrgChart (cây chức vụ)', () => {
   });
   it('chức khoá ghi rõ chức cần đạt trước', async () => {
     const { container } = render(OrgChart);
-    const node = [...container.querySelectorAll<HTMLButtonElement>('.org-node')].find((n) => n.textContent?.includes('Chủ tịch Ủy ban nhân dân cấp xã'))!;
+    const node = [...container.querySelectorAll<HTMLButtonElement>('.org-node')].find((n) => n.title.includes('Chủ tịch Ủy ban nhân dân cấp xã'))!;
     expect(node.dataset.status).toBe('locked');
     await fireEvent.click(node);
     expect(container.querySelector('dialog')!.textContent).toContain('Chưa mở');

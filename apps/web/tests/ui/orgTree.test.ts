@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { BRANCHES, BRANCH_NAMES, POSTS, TIER_NAMES, careerState } from '$lib/game/career';
 import type { Field } from '$lib/game/fields';
 import type { BookLevel } from '$lib/game/books';
-import { orgTree } from '$lib/ui/orgTree';
+import { orgTree, shortPostTitle } from '$lib/ui/orgTree';
 
 type B = { field: Field; level: BookLevel };
 const many = (field: Field, level: BookLevel, n: number): B[] => Array.from({ length: n }, () => ({ field, level }));
@@ -78,5 +78,19 @@ describe('cây chức vụ (orgTree)', () => {
     const t = orgTree(POSTS, cs, books);
     for (const p of flat(t)) expect(p.status === 'done').toBe(cs.achieved.has(p.id));
     for (const b of t.branches) expect(b.tiers.flatMap((x) => x.posts).filter((p) => p.status === 'next').length).toBeLessThanOrEqual(1);
+  });
+});
+
+describe('shortPostTitle — tên chức rút gọn trong ô cây (tên đầy đủ ở tooltip và hộp chi tiết)', () => {
+  it('viết tắt tên cơ quan theo cách viết tắt thông dụng', () => {
+    expect(shortPostTitle('Phó Chủ tịch Ủy ban nhân dân cấp xã')).toBe('Phó Chủ tịch UBND cấp xã');
+    expect(shortPostTitle('Đại biểu Hội đồng nhân dân cấp tỉnh')).toBe('Đại biểu HĐND cấp tỉnh');
+    expect(shortPostTitle('Chánh án Tòa án nhân dân tối cao')).toBe('Chánh án TAND tối cao');
+    expect(shortPostTitle('Viện trưởng Viện kiểm sát nhân dân cấp tỉnh')).toBe('Viện trưởng VKSND cấp tỉnh');
+    expect(shortPostTitle('Ủy viên Ủy ban Thường vụ Quốc hội')).toBe('Ủy viên UBTVQH');
+  });
+  it('giữ nguyên tên không có cơ quan cần viết tắt', () => {
+    expect(shortPostTitle('Thư ký Tòa án')).toBe('Thư ký Tòa án');
+    expect(shortPostTitle('Chủ tịch nước')).toBe('Chủ tịch nước');
   });
 });
