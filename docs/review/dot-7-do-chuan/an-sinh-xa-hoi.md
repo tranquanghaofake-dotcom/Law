@@ -33,3 +33,7 @@
 | `tro-giup-xa-hoi` | Hỗ trợ lương thực và chỗ ở tạm cho hộ bị thiệt hại đột ngột do lũ lụt | Trợ giúp đột xuất (phải) | Giáo trình Luật An sinh xã hội, Trường Đại học Luật Hà Nội (trợ giúp đột xuất; ⚠ chưa đối chiếu nguyên văn) |
 | `uu-dai-nguoi-co-cong` | Bà mẹ Việt Nam anh hùng được hưởng chế độ ưu đãi người có công với cách mạng | Ưu đãi xã hội (trái) | Điểm d khoản 1 Điều 3 Pháp lệnh Ưu đãi người có công với cách mạng 2020 |
 | `uu-dai-nguoi-co-cong` | Người dân gặp thiên tai, không tự lo liệu được cuộc sống, được Nhà nước cứu trợ | Trợ giúp xã hội (phải) | Giáo trình Luật An sinh xã hội, Trường Đại học Luật Hà Nội (định nghĩa trợ giúp xã hội) |
+
+## Kiểm dò trích dẫn (haiku-3)
+
+- `dieu-kien-huong-luong-huu#6` — khoan-diem-khong-ton-tai — báo nhầm: công cụ gán "Điều 64" cho BLLĐ; Điều 64 Luật BHXH 2024 có điểm a khoản 1.

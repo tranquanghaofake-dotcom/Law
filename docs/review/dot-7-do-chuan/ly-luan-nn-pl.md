@@ -65,3 +65,10 @@
 | `llc-vi-pham-hanh-chinh` | Người bán không giao đủ hàng theo hợp đồng bị khách hàng khởi kiện đòi bồi thường | Vi phạm dân sự (phải) | Khoản 1 Điều 2 Luật Xử lý vi phạm hành chính (vi phạm dân sự thuộc quan hệ dân sự; ⚠ chưa đối chiếu BLDS) |
 | `llc-vi-pham-phap-luat` | Người lấy trộm tài sản của người khác, có lỗi và trái pháp luật | Vi phạm pháp luật (trái) | Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), VD13 |
 | `llc-vi-pham-phap-luat` | Người không thực hiện được nghĩa vụ do bão lớn là sự kiện bất khả kháng | Không phải vi phạm pháp luật (phải) | Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), VD13 |
+
+## Kiểm dò trích dẫn (haiku-3)
+
+- Sửa cite sai văn bản (Hiến pháp 2013 → đúng văn bản): `llc-nang-luc-hanh-vi` (Điều 19 BLDS 2015), `llc-nang-luc-phap-luat` (Điều 16 BLDS 2015), `llc-phap-nhan` (Điều 74 BLDS 2015), `llc-quy-pham-phap-luat` (Điều 3 Luật BHVBQPPL 2025), `llc-toi-pham` (Điều 8 BLHS 2015), `llc-van-ban-qppl` (Điều 2, 4 Luật BHVBQPPL 2025), `llc-vi-pham-hanh-chinh` (Điều 2 Luật XLVPHC).
+- `llc-nang-luc-hanh-vi#1` và `llc-quy-pham-phap-luat` nội dung đã đối chiếu, cờ "lệch nội dung" là do sai văn bản cũ, không cần sửa thêm.
+- `llc-nang-luc-phap-luat#1` (lệch 0,193, nội dung Điều 16 HP khoản 1 đúng) — báo nhầm.
+- ⚠ opus: `llc-van-ban-qppl` (cờ cấp huyện) và các cờ "cấp huyện" khác — thuộc opus.

@@ -85,3 +85,9 @@
 | `toi-pham-1985` | Bộ luật Hình sự 2015 chia tội phạm thành bốn loại: ít nghiêm trọng, nghiêm trọng, rất nghiêm trọng, đặc biệt nghiêm trọng | BLHS 2015 (phải) | Điều 9 Bộ luật Hình sự 2015 |
 
 - ⚠ opus: nhiều khái niệm lịch sử có căn cứ là giáo trình (Chương 6–7) chưa đối chiếu nguyên văn; `cam-mua-ban-dat-1987` bên phải dẫn Luật Đất đai 1993 không có trong laws/; `chuoc-toi-thap-ac` căn cứ chiếu 1042 chưa có đầy đủ trong laws/lich-su-su-lieu.txt.
+
+## Kiểm dò trích dẫn (haiku-3)
+
+- `hngd-1959-ket-hon-ly-hon` (concept) — báo nhầm: dẫn chiếu Luật HNGĐ 2014 có chủ ý (so sánh với hiện hành), không phải trích dẫn của văn bản trong kho.
+- `sac-lenh-13-toa-an#5` (truefalse) — báo nhầm: cờ gán Điều 103 Hiến pháp 2013 (nội dung hội thẩm); cần kiểm lại nội dung khác đã trích.
+- `chinh-quyen-do-ho-quan-huyen` (concept, cờ "cấp huyện") — thuộc opus, bối cảnh lịch sử.

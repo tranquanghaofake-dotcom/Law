@@ -66,3 +66,9 @@
 | `xu-ly-chuyen-huong` | Quản thúc tại gia đình đối với người chưa thành niên phạm tội | Biện pháp xử lý chuyển hướng tại cộng đồng (trái) | Khoản 5 Điều 36 Luật Tư pháp người chưa thành niên 2024 |
 
 - ⚠ opus: `cau-thanh-toi-pham`, `khach-the-toi-pham`, `mat-khach-quan-toi-pham` — căn cứ tình huống mới là giáo trình (môn lý luận), chưa đối chiếu nguyên văn; `nhiem-vu-bo-luat-hinh-su` — tình huống bên phải thuộc BLTTHS, chưa có file luật trong laws/.
+
+## Kiểm dò trích dẫn (haiku-3)
+
+- `chuyen-khoan-nham#4, #7, #9` (set) — báo nhầm: Điều 579 BLDS, Điều 176 BLHS đúng nội dung; điểm thấp do diễn đạt.
+- `hinh-su-de-1#6, #7`, `hinh-su-de-2#0` (set) — báo nhầm: Điều 11, 15 BLHS và Điều 17 BLHS đúng.
+- ⚠ opus: `hinh-phat-nguoi-chua-thanh-nien` (concept) — nhắc "BLHS cũ (Điều 101, đã bãi bỏ)" để so sánh; công cụ không tìm thấy Điều 101 trong bản hiện hành — cần xác nhận cách ghi.

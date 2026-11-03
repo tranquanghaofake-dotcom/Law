@@ -47,3 +47,7 @@
 | `xam-pham-quyen-tac-gia` | Dịch tác phẩm sang ngôn ngữ khác để bán mà không được phép của chủ sở hữu | Xâm phạm quyền tài sản (phải) | Điều 20 Luật Sở hữu trí tuệ |
 | `xam-pham-sang-che` | Sử dụng kiểu dáng công nghiệp đã được bảo hộ để sản xuất kinh doanh mà không được phép | Xâm phạm (trái) | Khoản 1 Điều 126 Luật Sở hữu trí tuệ |
 | `xam-pham-sang-che` | Sinh viên nghiên cứu, thử nghiệm sáng chế không nhằm mục đích thương mại | Không xâm phạm (phải) | Điểm a khoản 2 Điều 125 Luật Sở hữu trí tuệ |
+
+## Kiểm dò trích dẫn (haiku-3)
+
+- `bien-phap-xu-ly-xam-pham-shtt` (concept) — báo nhầm: "Điều 225" là BLHS 2015 (tội xâm phạm quyền tác giả), đã đúng; công cụ đối chiếu nhầm với Luật SHTT.

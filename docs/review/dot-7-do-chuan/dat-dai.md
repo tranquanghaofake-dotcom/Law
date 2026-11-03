@@ -42,3 +42,8 @@
 | `thu-hoi-dat` | Đất được giao không đúng đối tượng hoặc không đúng thẩm quyền bị thu hồi | Thu hồi do vi phạm (Điều 81) (phải) | Khoản 3 Điều 81 Luật Đất đai 2024 |
 
 - ⚠ opus: `hoa-giai-tranh-chap-dat-dai` — bên "Khuyến khích" có ghi "hòa giải thương mại", Điều 235 không nêu loại hòa giải này; kiểm lại căn cứ mục có sẵn.
+
+## Kiểm dò trích dẫn (haiku-3)
+
+- `pham-vi-dieu-chinh-luat-dat-dai#0` (mcq) — báo nhầm: đáp án là ngày hiệu lực (01/8/2024) lấy từ đầu văn bản, không nằm trong Điều 1; công cụ so với Điều 1 nên điểm thấp.
+- Cờ "Luật Đất đai 2013" và "cấp huyện" — thuộc opus (văn bản cũ, thuật ngữ cũ).

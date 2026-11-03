@@ -41,3 +41,9 @@
 | `xet-xu-cong-khai-tranh-tung` | Vụ án liên quan đến bí mật kinh doanh, theo yêu cầu của đương sự có thể không công khai | Có thể xét xử kín (phải) | Khoản 2 Điều 15 Bộ luật Tố tụng dân sự 2015 |
 - ⚠ opus: `hoa-giai-trong-to-tung-dan-su` (mục có sẵn, không sửa): bên "không hòa giải" ghi "thủ tục rút gọn" — Điều 206, 207 BLTTDS 2015 không liệt kê trường hợp này; cần kiểm lại căn cứ.
 
+
+## Kiểm dò trích dẫn (haiku-3)
+
+- `thoi-hieu-khoi-kien-ttds` (plain) — sửa: "điểm e khoản 1 Điều 217" thêm tên văn bản Bộ luật Tố tụng dân sự 2015 (đã đối chiếu, điểm e có thật).
+- `thoi-hieu-khoi-kien-ttds#6` (recall) — báo nhầm: công cụ đối chiếu với BLDS; trích dẫn là Điều 184 BLTTDS 2015 (đúng).
+- `tham-quyen-theo-cap`, cờ thuật ngữ cũ (TAND cấp huyện/cấp cao) — để opus xử lý theo HUONG-DAN.

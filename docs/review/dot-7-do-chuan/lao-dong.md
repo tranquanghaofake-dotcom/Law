@@ -53,3 +53,7 @@
 | `tranh-chap-lao-dong` | Tập thể người lao động đòi thêm điều kiện lao động vượt quy định pháp luật trong thương lượng | Tranh chấp tập thể về lợi ích (phải) | Khoản 3 Điều 179 Bộ luật Lao động 2019 |
 | `tro-cap-thoi-viec` | Người lao động đơn phương chấm dứt hợp đồng đúng luật, đã làm việc thường xuyên từ đủ 12 tháng | Được trợ cấp thôi việc (trái) | Khoản 1 Điều 46 Bộ luật Lao động 2019 (khoản 9 Điều 34) |
 | `tro-cap-thoi-viec` | Người lao động bị xử lý kỷ luật sa thải, dù đã làm việc thường xuyên trên 12 tháng | Không được trợ cấp thôi việc (phải) | Khoản 1 Điều 46 Bộ luật Lao động 2019 (không áp dụng khoản 8 Điều 34) |
+
+## Kiểm dò trích dẫn (haiku-3)
+
+- `lao-dong-de-1#4` (set) — báo nhầm: Điều 25 khoản 1 BLLĐ 2019 đúng nội dung (180 ngày người quản lý); điểm thấp do diễn đạt.

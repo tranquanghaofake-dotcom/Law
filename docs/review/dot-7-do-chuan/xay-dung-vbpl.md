@@ -42,8 +42,15 @@
 | `xd-thoi-diem-co-hieu-luc` | Nghị định của Chính phủ có hiệu lực không sớm hơn 45 ngày kể từ ngày ký ban hành | Không sớm hơn 45 ngày (trái) | Khoản 1 Điều 53 Luật Ban hành văn bản quy phạm pháp luật 2025 |
 | `xd-thoi-diem-co-hieu-luc` | Nghị quyết của Hội đồng nhân dân cấp huyện có hiệu lực không sớm hơn 10 ngày kể từ ngày thông qua | Không sớm hơn 10 ngày (phải) | Khoản 1 Điều 53 Luật Ban hành văn bản quy phạm pháp luật 2025 |
 | `xd-thu-tuc-rut-gon` | Cần tạm ngưng hiệu lực một phần văn bản để kịp thời bảo vệ lợi ích của người dân | Được áp dụng thủ tục rút gọn (trái) | Điểm c khoản 1 Điều 50 Luật Ban hành văn bản quy phạm pháp luật 2025 |
-| `xd-thu-tuc-rut-gon` | Luật mới quy định lần đầu một lĩnh vực quan trọng, cần bảo đảm đầy đủ trình tự xây dựng | Không thuộc trường hợp rút gọn (phải) | Khoản 1 Điều 50 Luật Ban hành văn bản quy phạm pháp luật 2025 (không thuộc các điểm a–d) |
+| `xd-thu-tuc-rut-gon` | Luật mới quy định lần đầu một lĩnh vực quan trọng, cần bảo đảm đầy đủ trình tự xây dựng | Không thuộc trường hợp rút gọn (phải) | Khoản 1 Điều 50 Luật Ban hành văn bản quy phạm pháp luật 2025 (không thuộc các điểm a–e) |
 | `xd-van-ban-qppl` | Quyết định của Thủ tướng quy định chung về chế độ làm việc áp dụng cho mọi cơ quan | Văn bản quy phạm pháp luật (trái) | Điều 2 Luật Ban hành văn bản quy phạm pháp luật 2025 |
 | `xd-van-ban-qppl` | Quyết định xử phạt hành chính đối với một cá nhân cụ thể vi phạm giao thông | Văn bản áp dụng pháp luật (phải) | Điều 2 Luật Ban hành văn bản quy phạm pháp luật 2025 |
 
 - ⚠ opus: `xd-tham-tra` — căn cứ thẩm định ở địa phương (Sở Tư pháp) cần đối chiếu lại điều khoản áp dụng tương ứng; `xd-nguyen-tac-xay-dung` (mục có sẵn): explain ghi "khoản 4 Điều 5" cho tính hợp lý/khả thi: đã đối chiếu, khoản 4 Điều 5 có nêu "khả thi", giữ nguyên.
+
+## Kiểm dò trích dẫn (haiku-3)
+
+- `xd-thu-tuc-rut-gon` (concept) — sửa: "khoản 2–4 Điều 50" thành "khoản 2 Điều 50" (Điều 50 chỉ có khoản 1 và 2); điểm a–e khoản 1 đúng.
+- `xd-nghi-quyet-hdnd-tinh` (concept) — báo nhầm: cờ "ngoài kho" đọc sai tên "Luật Giáo dục giao"; Điều 21 Luật BHVBQPPL là căn cứ đúng.
+- ⚠ opus: `xd-thu-tuc-rut-gon` — nội dung có 6 trường hợp nhưng Điều 50 khoản 1 có 5 điểm (a–e); cần rà lại danh sách.
+- Cờ "cấp huyện" (xd-he-thong-vbqppl, xd-nghi-quyet-hdnd-tinh, xd-quy-trinh...) — thuộc opus (thuật ngữ cũ), không sửa.
