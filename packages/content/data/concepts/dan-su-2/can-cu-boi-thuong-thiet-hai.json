@@ -32,7 +32,7 @@
     "Thiệt hại do sự kiện bất khả kháng hoặc hoàn toàn do lỗi của bên bị thiệt hại",
     "Người gây thiệt hại đang có hoàn cảnh kinh tế khó khăn và không có việc làm",
     "Thiệt hại dưới một triệu đồng và chưa có ai yêu cầu bồi thường chính thức",
-    "Người gây thiệt hại không cố ý nhưng đã tự nguyện bồi thường một phần cho người bị hại"
+    "Người gây thiệt hại không cố ý và đã tự nguyện bồi thường một phần"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 584.",
@@ -47,9 +47,9 @@
    "q": "Tài sản gây thiệt hại thì ai chịu trách nhiệm bồi thường?",
    "options": [
     "Chủ sở hữu, người chiếm hữu tài sản",
-    "Nhà nước chịu trách nhiệm bồi thường",
+    "Nhà nước chịu trách nhiệm",
     "Người bị thiệt hại tự chịu toàn bộ",
-    "Người bán tài sản đó cho người khác"
+    "Người bán tài sản đó cho người khác trước đây"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 584.",

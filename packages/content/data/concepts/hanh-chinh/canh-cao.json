@@ -46,8 +46,8 @@
    "q": "Cảnh cáo được quyết định bằng hình thức nào?",
    "options": [
     "Bằng văn bản",
-    "Bằng lời nói",
-    "Qua tin nhắn",
+    "Bằng lời nói trực tiếp",
+    "Qua tin nhắn điện thoại",
     "Không cần hình thức"
    ],
    "answer": 0,

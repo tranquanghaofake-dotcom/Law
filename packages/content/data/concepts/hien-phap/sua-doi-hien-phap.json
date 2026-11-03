@@ -29,7 +29,7 @@
    "q": "Quốc hội quyết định việc làm, sửa đổi Hiến pháp khi có ít nhất bao nhiêu đại biểu Quốc hội biểu quyết tán thành?",
    "options": [
     "Hai phần ba tổng số đại biểu Quốc hội",
-    "Quá nửa tổng số đại biểu Quốc hội hiện nay",
+    "Quá nửa tổng số đại biểu Quốc hội",
     "Ba phần tư tổng số đại biểu Quốc hội",
     "Quá nửa số đại biểu có mặt tại phiên"
    ],
@@ -102,7 +102,7 @@
    "q": "Quốc hội có 500 đại biểu. Tại phiên biểu quyết thông qua Hiến pháp sửa đổi, 400 đại biểu có mặt, 320 tán thành. Hiến pháp sửa đổi có được thông qua không?",
    "options": [
     "Không, vì 320 chưa đạt hai phần ba tổng số đại biểu (334)",
-    "Có, vì 320/400 đại biểu có mặt là 80% và đã đủ quá nửa tổng số",
+    "Có, vì 320/400 đại biểu có mặt là 80%, quá nửa tổng số",
     "Có, vì đã quá nửa tổng số đại biểu Quốc hội có mặt",
     "Không, vì cần sự đồng ý của Chủ tịch nước và Chính phủ"
    ],

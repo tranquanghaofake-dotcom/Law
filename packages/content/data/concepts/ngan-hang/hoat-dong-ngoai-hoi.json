@@ -31,9 +31,9 @@
    "q": "Giao dịch nào là giao dịch vốn theo Pháp lệnh Ngoại hối?",
    "options": [
     "Vay và trả nợ nước ngoài",
-    "Thanh toán tiền nhập khẩu hàng hóa",
-    "Chuyển tiền một chiều giúp đỡ thân nhân",
-    "Trả tiền dịch vụ du lịch"
+    "Thanh toán tiền nhập khẩu hàng",
+    "Chuyển tiền giúp đỡ thân nhân",
+    "Thanh toán dịch vụ du lịch"
    ],
    "answer": 0,
    "explain": "Khoản 4 Điều 4.",

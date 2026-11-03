@@ -30,7 +30,7 @@
    "q": "Nguyên tắc nào thuộc nguyên tắc trong thi hành công vụ (Điều 2 Luật Cán bộ, công chức 2025)?",
    "options": [
     "Công khai, minh bạch, đúng thẩm quyền và có sự kiểm tra, giám sát",
-    "Ưu tiên người có thâm niên công tác và thân quen trong cơ quan đó",
+    "Ưu tiên người có thâm niên công tác và thân quen trong cơ quan",
     "Bí mật mọi hoạt động của cơ quan và cán bộ, công chức nhà nước",
     "Lợi ích cơ quan trên hết, không cần đúng thẩm quyền và trình tự"
    ],
@@ -49,7 +49,7 @@
     "Nguyên tắc quản lý cán bộ, công chức (Điều 3)",
     "Nguyên tắc thi hành công vụ (Điều 2) và tổ chức",
     "Nghĩa vụ của công dân đối với Nhà nước và xã hội",
-    "Không được quy định trong luật và văn bản nào"
+    "Không được quy định trong luật hay văn bản dưới luật"
    ],
    "answer": 0,
    "explain": "Khoản 6 Điều 3.",

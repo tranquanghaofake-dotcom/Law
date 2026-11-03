@@ -32,7 +32,7 @@
    "options": [
     "Chủ sở hữu cho phép tổ chức, cá nhân khác sử dụng đối tượng SHCN thuộc phạm vi quyền sử dụng của mình",
     "Chuyển giao quyền sở hữu đối tượng SHCN vĩnh viễn cho tổ chức, cá nhân khác và thu tiền",
-    "Từ bỏ quyền SHCN đã được cấp, chấm dứt mọi nghĩa vụ liên quan đến đối tượng bảo hộ và thu tiền từ bên nhận",
+    "Từ bỏ quyền SHCN đã được cấp, chấm dứt mọi nghĩa vụ liên quan đến đối tượng bảo hộ và thu tiền",
     "Đăng ký lại văn bằng bảo hộ sau khi hết hạn và nộp lệ phí cho cơ quan nhà nước có thẩm quyền"
    ],
    "answer": 0,
@@ -49,7 +49,7 @@
    "options": [
     "Văn bản",
     "Lời nói",
-    "Hành vi cụ thể",
+    "Hành vi",
     "Bất kỳ hình thức nào"
    ],
    "answer": 0,

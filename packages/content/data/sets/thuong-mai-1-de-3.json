@@ -34,7 +34,7 @@
     {
       "q": "Tại Đại hội thành viên toàn thể của hợp tác xã, quyền biểu quyết của thành viên chính thức được xác định thế nào?",
       "options": [
-        "Theo tỷ lệ vốn góp của từng thành viên hợp tác",
+        "Theo tỷ lệ vốn góp của từng thành viên hợp tác xã",
         "Mỗi thành viên một phiếu có giá trị ngang nhau",
         "Theo chức vụ và thời gian đảm nhiệm trong hợp tác xã",
         "Theo thâm niên và số năm đóng góp cho hợp tác xã"
@@ -73,10 +73,10 @@
     {
       "q": "Ai KHÔNG có quyền nộp đơn yêu cầu áp dụng thủ tục phục hồi?",
       "options": [
-        "Người đại diện theo pháp luật của doanh nghiệp",
+        "Người đại diện doanh nghiệp",
         "Chủ doanh nghiệp tư nhân",
         "Chủ nợ không có bảo đảm",
-        "Đại hội thành viên của hợp tác xã"
+        "Đại hội thành viên hợp tác xã"
       ],
       "answer": 2,
       "explain": "Khoản 1 Điều 24: chủ nợ chỉ có quyền yêu cầu thủ tục phá sản (Điều 38).",
@@ -89,7 +89,7 @@
         "Khi doanh nghiệp chậm lương 1 tháng, chưa có kế hoạch trả nợ, đã được nhắc nhiều lần bằng văn bản",
         "Khi hết thời hạn 06 tháng kể từ ngày phải trả lương, các khoản nợ đến hạn mà doanh nghiệp không thanh toán",
         "Bất cứ lúc nào người lao động thấy cần thiết, không cần điều kiện gì khác và không cần thông báo trước",
-        "Chỉ khi được công đoàn cơ sở cho phép bằng văn bản, có xác nhận của Tòa án và đại diện người lao động tại doanh nghiệp"
+        "Chỉ khi được công đoàn cơ sở cho phép bằng văn bản, có xác nhận của Tòa án và đại diện người lao động"
       ],
       "answer": 1,
       "explain": "Điểm b khoản 1 Điều 38.",

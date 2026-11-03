@@ -30,7 +30,7 @@
    "q": "Mức phạt tiền tối đa đối với vi phạm quy định về tập trung kinh tế là bao nhiêu?",
    "options": [
     "05% tổng doanh thu trên thị trường liên quan năm tài chính liền kề",
-    "10% tổng doanh thu của doanh nghiệp trên toàn quốc năm trước liền kề",
+    "10% tổng doanh thu của doanh nghiệp trên toàn quốc năm trước",
     "Hai tỷ đồng cho mỗi hành vi vi phạm, không phụ thuộc doanh thu",
     "Hai trăm triệu đồng cho mỗi hành vi vi phạm trên toàn quốc"
    ],
@@ -47,7 +47,7 @@
    "q": "Mức phạt tối đa đối với cá nhân vi phạm pháp luật cạnh tranh so với tổ chức là bao nhiêu?",
    "options": [
     "Một phần hai",
-    "Bằng tổ chức",
+    "Bằng mức của tổ chức",
     "Gấp hai lần",
     "Một phần ba"
    ],

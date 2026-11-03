@@ -31,7 +31,7 @@
    "options": [
     "Mức đóng và thời gian đóng bảo hiểm xã hội",
     "Nhu cầu của người hưởng và hoàn cảnh gia đình",
-    "Tài sản của người hưởng và thu nhập khác",
+    "Tài sản của người hưởng và các thu nhập khác",
     "Quyết định của người sử dụng lao động hằng năm"
    ],
    "answer": 0,
@@ -48,8 +48,8 @@
    "options": [
     "Thu nhập làm căn cứ đóng do người tham gia lựa chọn",
     "Lương tối thiểu vùng bắt buộc do Nhà nước quy định",
-    "Tiền lương theo hợp đồng lao động đã ký kết giữa hai bên",
-    "Mức do cơ quan BHXH ấn định theo thông báo hằng năm"
+    "Tiền lương ghi trong hợp đồng lao động đã ký kết",
+    "Mức do cơ quan BHXH ấn định theo thông báo hằng năm của mình"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 5.",

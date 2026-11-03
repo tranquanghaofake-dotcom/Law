@@ -8,7 +8,7 @@
     {
       "q": "Mức hưởng trợ cấp thất nghiệp hằng tháng?",
       "options": [
-        "50% lương bình quân 12 tháng gần nhất, không có giới hạn tối đa nào khác theo luật lao động hiện hành",
+        "50% lương bình quân 12 tháng gần nhất, không có giới hạn tối đa nào khác theo luật lao động",
         "60% bình quân tiền lương tháng đóng BHTN của 06 tháng gần nhất, tối đa 05 lần lương tối thiểu vùng",
         "75% lương tháng cuối của người lao động trước khi nghỉ việc, không giới hạn mức tối đa",
         "Bằng lương tối thiểu vùng tại nơi làm việc của người lao động đó hằng tháng và cố định"
@@ -112,10 +112,10 @@
     {
       "q": "Ai là thân nhân của người có công theo Pháp lệnh 2020?",
       "options": [
-        "Anh, chị, em ruột của người có công, kể cả con dâu, con rể và cháu",
+        "Anh, chị, em ruột của người có công, kể cả con dâu, con rể",
         "Cha đẻ, mẹ đẻ, vợ hoặc chồng, con, người có công nuôi liệt sỹ",
         "Ông bà nội ngoại và người thân xa trong họ hàng nội bên",
-        "Cháu ruột, chắt và người thân xa của người có công đó"
+        "Cháu ruột, chắt và người thân xa của người có công"
       ],
       "answer": 1,
       "explain": "Khoản 2 Điều 3.",

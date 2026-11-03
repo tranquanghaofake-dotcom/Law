@@ -30,7 +30,7 @@
    "options": [
     "Thủ tục đăng ký doanh nghiệp",
     "Hành vi hạn chế cạnh tranh",
-    "Hành vi cạnh tranh không lành mạnh",
+    "Cạnh tranh không lành mạnh",
     "Tố tụng cạnh tranh"
    ],
    "answer": 0,
@@ -48,7 +48,7 @@
     "Có",
     "Không",
     "Chỉ khi có vốn nước ngoài",
-    "Chỉ khi niêm yết"
+    "Khi đã niêm yết"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 2.",

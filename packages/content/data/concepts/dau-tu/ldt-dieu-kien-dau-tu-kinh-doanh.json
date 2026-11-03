@@ -28,7 +28,7 @@
    "q": "Điều kiện đầu tư kinh doanh không bao gồm gì?",
    "options": [
     "Tiêu chuẩn, quy chuẩn kỹ thuật về chất lượng sản phẩm, dịch vụ",
-    "Giấy phép kinh doanh do cơ quan có thẩm quyền cấp và có thời hạn",
+    "Giấy phép kinh doanh do cơ quan có thẩm quyền cấp có thời hạn",
     "Yêu cầu về vốn pháp định tối thiểu cho doanh nghiệp đăng ký",
     "Chứng chỉ hành nghề của người trực tiếp điều hành công việc"
    ],
@@ -45,8 +45,8 @@
    "q": "Điều kiện đầu tư kinh doanh áp dụng khi nào?",
    "options": [
     "Khi kinh doanh trong ngành, nghề đầu tư kinh doanh có điều kiện",
-    "Mọi ngành, nghề kinh doanh của nhà đầu tư trong nước và nước ngoài",
-    "Chỉ với nhà đầu tư nước ngoài khi đầu tư vào Việt Nam và có vốn lớn",
+    "Khi nhà đầu tư có vốn điều lệ từ 100 tỷ đồng trở lên",
+    "Với nhà đầu tư nước ngoài khi đầu tư vào Việt Nam và có vốn lớn hơn",
     "Chỉ khi đầu tư ra nước ngoài theo quy định của pháp luật Việt Nam"
    ],
    "answer": 0,

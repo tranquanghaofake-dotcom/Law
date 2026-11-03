@@ -30,9 +30,9 @@
    "q": "Căn cứ nào thuộc trường hợp người phạm tội ĐƯỢC (bắt buộc) miễn TNHS?",
    "options": [
     "Có quyết định đại xá",
-    "Người phạm tội mắc bệnh hiểm nghèo",
+    "Người phạm tội bệnh nặng",
     "Người bị hại đề nghị miễn",
-    "Người phạm tội lập công lớn"
+    "Người phạm tội lập công"
    ],
    "answer": 0,
    "explain": "Điểm b khoản 1 Điều 29; các phương án khác thuộc trường hợp \"có thể được miễn\".",
@@ -47,9 +47,9 @@
    "q": "Khoản 3 Điều 29 áp dụng với loại tội nào?",
    "options": [
     "Tội phạm nghiêm trọng do vô ý hoặc tội phạm ít nghiêm trọng",
-    "Mọi tội phạm nghiêm trọng và rất nghiêm trọng do cố ý",
+    "Tội phạm nghiêm trọng và rất nghiêm trọng do cố ý",
     "Chỉ tội rất nghiêm trọng hoặc đặc biệt nghiêm trọng do cố ý",
-    "Chỉ tội xâm phạm an ninh quốc gia và trật tự công cộng"
+    "Tội xâm phạm an ninh quốc gia và trật tự công cộng"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 29.",

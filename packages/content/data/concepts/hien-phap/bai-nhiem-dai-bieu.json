@@ -29,8 +29,8 @@
    "options": [
     "Cử tri hoặc Quốc hội",
     "Chỉ Chủ tịch nước",
-    "Chỉ Mặt trận Tổ quốc",
-    "Chỉ Hội đồng bầu cử quốc gia"
+    "Mặt trận Tổ quốc các cấp",
+    "Hội đồng bầu cử"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 7.",
@@ -47,7 +47,7 @@
     "Không còn xứng đáng với sự tín nhiệm của Nhân dân",
     "Hết nhiệm kỳ đại biểu và chuyển sang công tác khác",
     "Đến tuổi nghỉ hưu theo quy định của pháp luật lao động",
-    "Chuyển nơi cư trú ra khỏi đơn vị bầu cử của mình"
+    "Chuyển nơi cư trú ra khỏi đơn vị bầu cử đã bầu ra mình"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 7.",

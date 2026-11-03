@@ -31,7 +31,7 @@
     "Con của người để lại di sản chết trước hoặc cùng thời điểm với người để lại di sản",
     "Con của người để lại di sản từ chối nhận di sản theo di chúc hoặc pháp luật",
     "Có di chúc chỉ định cháu hưởng toàn bộ di sản thay cho con đã mất trước đó",
-    "Con chết sau người để lại di sản, khi đã có đầy đủ điều kiện để nhận thừa kế theo luật"
+    "Con chết sau người để lại di sản, khi đã có đầy đủ điều kiện để nhận thừa kế"
    ],
    "answer": 0,
    "explain": "Điều 652.",
@@ -46,7 +46,7 @@
    "q": "Cháu thừa kế thế vị được hưởng phần di sản như thế nào?",
    "options": [
     "Phần mà cha hoặc mẹ của cháu được hưởng nếu còn sống",
-    "Phần bằng các người hàng thứ nhất tính theo đầu người",
+    "Phần bằng người hàng thứ nhất, chia theo đầu người",
     "Một nửa phần của cha mẹ",
     "2/3 suất"
    ],

@@ -29,7 +29,7 @@
    "q": "Người phạm tội nhận thức rõ hành vi nguy hiểm, thấy trước hậu quả có thể xảy ra, không mong muốn nhưng có ý thức để mặc. Đây là lỗi gì?",
    "options": [
     "Cố ý gián tiếp",
-    "Cố ý trực tiếp",
+    "Lỗi cố ý trực tiếp",
     "Vô ý vì quá tự tin",
     "Vô ý do cẩu thả"
    ],
@@ -47,8 +47,8 @@
    "options": [
     "Mong muốn hậu quả xảy ra",
     "Để mặc hậu quả xảy ra",
-    "Cho rằng hậu quả sẽ không xảy ra",
-    "Không thấy trước hậu quả"
+    "Cho rằng hậu quả không xảy ra",
+    "Không thấy trước được hậu quả"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 10.",

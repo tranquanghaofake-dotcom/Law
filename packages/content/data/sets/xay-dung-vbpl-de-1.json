@@ -48,7 +48,7 @@
       "q": "Chính sách là gì theo khoản 2 Điều 3?",
       "options": [
         "Tập hợp các giải pháp cụ thể của Nhà nước để giải quyết vấn đề thực tiễn nhằm đạt mục tiêu nhất định",
-        "Quy tắc xử sự chung, có hiệu lực bắt buộc đối với mọi cơ quan, tổ chức và cá nhân trên cả nước và trong nước",
+        "Quy tắc xử sự chung, có hiệu lực bắt buộc đối với mọi cơ quan, tổ chức và cá nhân trên cả nước",
         "Văn bản hành chính của cơ quan nhà nước về tổ chức bộ máy, biên chế và cán bộ, công chức",
         "Nghị quyết của Đảng về chủ trương, đường lối lãnh đạo và phát triển đất nước hằng năm"
       ],
@@ -114,7 +114,7 @@
       "options": [
         "Hội đồng Dân tộc, Ủy ban của Quốc hội",
         "Bộ Tư pháp, theo đề nghị của Chính phủ",
-        "Chính phủ và các Bộ trưởng liên quan",
+        "Chính phủ và các Bộ trưởng có liên quan",
         "Chủ tịch nước và Văn phòng Chủ tịch nước"
       ],
       "answer": 0,
@@ -128,7 +128,7 @@
         "Khẩn cấp, yêu cầu đột xuất vì quốc phòng, an ninh, thiên tai, dịch bệnh",
         "Cơ quan soạn thảo bận nhiều việc và thiếu nhân lực chuyên môn",
         "Muốn tránh phản biện xã hội và lấy ý kiến của các chuyên gia độc lập",
-        "Văn bản có ít điều khoản và nội dung đơn giản, không cần thẩm định trước khi ký"
+        "Văn bản có ít điều khoản và nội dung đơn giản, không cần thẩm định"
       ],
       "answer": 0,
       "explain": "Điểm a khoản 1 Điều 50.",

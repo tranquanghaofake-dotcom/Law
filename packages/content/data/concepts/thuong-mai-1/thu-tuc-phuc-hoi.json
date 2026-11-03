@@ -48,8 +48,8 @@
    "q": "Thủ tục phục hồi có thể được yêu cầu khi doanh nghiệp ở tình trạng nào?",
    "options": [
     "Có nguy cơ mất hoặc mất khả năng thanh toán",
-    "Chỉ khi đã bị tuyên bố phá sản và đã giải thể",
-    "Chỉ khi đã giải thể xong và đã thanh lý tài sản",
+    "Khi đã bị tuyên bố phá sản và đã giải thể",
+    "Sau khi đã giải thể xong và thanh lý tài sản",
     "Chỉ khi lỗ 3 năm liên tiếp và có khoản nợ"
    ],
    "answer": 0,

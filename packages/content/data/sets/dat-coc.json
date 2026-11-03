@@ -24,7 +24,7 @@
         "Chủ trọ phải trả lại đủ 3 triệu",
         "Chủ trọ được giữ 3 triệu",
         "Chủ trọ trả lại 1,5 triệu",
-        "Bạn phải trả thêm cho chủ trọ 3 triệu"
+        "Bạn phải trả thêm 3 triệu"
       ],
       "answer": 1,
       "explain": "Bên đặt cọc từ chối giao kết, thực hiện hợp đồng thì tài sản đặt cọc thuộc về bên nhận đặt cọc. Bạn là người đổi ý nên mất khoản cọc.",
@@ -75,7 +75,7 @@
       "options": [
         "Có, vì đó là vật có giá trị",
         "Không, chỉ được đặt cọc bằng tiền",
-        "Chỉ được khi có công chứng",
+        "Chỉ được khi có công chứng hợp đồng",
         "Chỉ được đặt cọc bằng vàng hoặc đá quý"
       ],
       "answer": 0,

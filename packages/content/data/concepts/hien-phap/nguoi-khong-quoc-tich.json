@@ -29,7 +29,7 @@
    "options": [
     "Người không có quốc tịch Việt Nam và cũng không có quốc tịch nước ngoài",
     "Người không có hộ chiếu và giấy tờ tùy thân hợp lệ tại Việt Nam",
-    "Người đang định cư ở nước ngoài và có giấy phép cư trú dài hạn tại nước ngoài",
+    "Người đang định cư ở nước ngoài và có giấy phép cư trú dài hạn ở đó",
     "Người có hai quốc tịch nước ngoài và Việt Nam trong cùng thời điểm"
    ],
    "answer": 0,
@@ -46,8 +46,8 @@
    "options": [
     "Khi cha mẹ có nơi thường trú tại Việt Nam",
     "Trong mọi trường hợp không cần điều kiện",
-    "Khi được Chủ tịch nước cho phép bằng văn bản",
-    "Không bao giờ có quốc tịch Việt Nam"
+    "Khi được Chủ tịch nước cho phép",
+    "Khi có đơn của cha mẹ gửi Tòa án"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 17.",

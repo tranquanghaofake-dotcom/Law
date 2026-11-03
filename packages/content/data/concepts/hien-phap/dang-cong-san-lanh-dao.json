@@ -30,7 +30,7 @@
     "Lực lượng lãnh đạo Nhà nước và xã hội",
     "Cơ quan quyền lực nhà nước cao nhất",
     "Cơ quan hành chính nhà nước cao nhất",
-    "Tổ chức chính trị - xã hội trực thuộc Mặt trận Tổ quốc"
+    "Tổ chức chính trị - xã hội thông thường"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 4: Đảng là lực lượng lãnh đạo Nhà nước và xã hội. Cơ quan quyền lực nhà nước cao nhất là Quốc hội (Điều 69).",
@@ -45,7 +45,7 @@
    "q": "Theo khoản 3 Điều 4 Hiến pháp 2013, các tổ chức của Đảng và đảng viên hoạt động trong khuôn khổ nào?",
    "options": [
     "Hiến pháp và pháp luật",
-    "Điều lệ Đảng, không chịu sự điều chỉnh của pháp luật",
+    "Điều lệ Đảng, không cần luật",
     "Nghị quyết của Đảng",
     "Hiệp ước quốc tế"
    ],
@@ -114,7 +114,7 @@
     "Hợp lệ vì Đảng lãnh đạo Nhà nước và xã hội và cấp ủy địa phương có quyền ra quyết định trong mọi lĩnh vực kinh tế xã hội",
     "Không hợp lệ: tổ chức Đảng phải hoạt động trong khuôn khổ Hiến pháp và pháp luật; nghĩa vụ tài chính bắt buộc phải do luật quy định",
     "Hợp lệ nếu doanh nghiệp là doanh nghiệp nhà nước và có ý kiến chấp thuận của cấp ủy địa phương và Hội đồng nhân dân",
-    "Hợp lệ nếu được Hội đồng nhân dân thông qua sau đó bằng nghị quyết của cấp ủy địa phương và có ý kiến của các doanh nghiệp liên quan"
+    "Hợp lệ nếu được Hội đồng nhân dân thông qua sau đó bằng nghị quyết và có ý kiến của các doanh nghiệp liên quan"
    ],
    "answer": 1,
    "explain": "Khoản 3 Điều 4 ràng buộc tổ chức Đảng trong khuôn khổ pháp luật; thuế và nghĩa vụ tài chính bắt buộc thuộc thẩm quyền quy định của Quốc hội (khoản 4 Điều 70).",

@@ -31,7 +31,7 @@
    "options": [
     "Không thành lập tổ chức kinh tế",
     "Phải thành lập công ty liên doanh",
-    "Ký giữa Nhà nước và nhà đầu tư",
+    "Ký giữa Nhà nước và nhà đầu tư tư nhân",
     "Chỉ ký với nhà đầu tư nước ngoài"
    ],
    "answer": 0,
@@ -49,7 +49,7 @@
     "Cấp Giấy chứng nhận đăng ký đầu tư theo Điều 26",
     "Không phải làm thủ tục gì vì đã có hợp đồng ký kết",
     "Chỉ công chứng hợp đồng tại văn phòng công chứng",
-    "Đăng ký doanh nghiệp mới theo quy định của luật"
+    "Đăng ký thành lập doanh nghiệp mới theo quy định của luật"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 22.",

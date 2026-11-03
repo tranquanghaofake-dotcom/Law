@@ -30,8 +30,8 @@
    "options": [
     "Viện trưởng Viện kiểm sát nhân dân cấp trên và lãnh đạo thống nhất của Viện trưởng Viện kiểm sát nhân dân tối cao",
     "Chủ tịch Ủy ban nhân dân cùng cấp, theo quyết định của địa phương cùng cấp và các cơ quan liên quan",
-    "Chánh án Tòa án nhân dân cùng cấp và các thẩm phán liên quan trong vụ việc đó tại địa phương hiện nay",
-    "Hội đồng nhân dân cùng cấp và các đại biểu HĐND của địa phương đó trong nhiệm kỳ hiện nay và thường trực cùng ban kiểm tra"
+    "Chánh án Tòa án nhân dân cùng cấp và các thẩm phán liên quan trong vụ việc đó tại địa phương",
+    "Hội đồng nhân dân cùng cấp và các đại biểu HĐND của địa phương đó trong nhiệm kỳ hiện nay và thường trực"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 109.",
@@ -46,9 +46,9 @@
    "q": "Khi thực hành quyền công tố, Kiểm sát viên tuân theo điều gì?",
    "options": [
     "Pháp luật và chịu sự chỉ đạo của Viện trưởng Viện kiểm sát nhân dân",
-    "Chỉ ý kiến cá nhân của kiểm sát viên và theo sở thích của mình trong vụ án",
-    "Chỉ đạo của Tòa án cùng cấp và các cơ quan xét xử trong vụ việc đó",
-    "Chỉ đạo của cơ quan điều tra và cơ quan công an trong vụ án"
+    "Chỉ ý kiến cá nhân của kiểm sát viên và theo sở thích của mình",
+    "Sự chỉ đạo của Tòa án cùng cấp và các cơ quan xét xử trong vụ việc",
+    "Sự chỉ đạo của cơ quan điều tra và công an trong vụ án"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 109.",

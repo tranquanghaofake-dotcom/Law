@@ -47,8 +47,8 @@
    "options": [
     "Bãi nhiệm đại biểu Quốc hội",
     "Thông qua luật thuế",
-    "Thông qua dự toán ngân sách",
-    "Thông qua nghị quyết về kỳ họp"
+    "Thông qua dự toán ngân sách năm",
+    "Thông qua chương trình kỳ họp"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 85.",
@@ -102,9 +102,9 @@
    "q": "Quốc hội 480 đại biểu biểu quyết bãi nhiệm một đại biểu: 300 tán thành. Kết quả?",
    "options": [
     "Không thông qua, vì 300 chưa đạt hai phần ba tổng số (320)",
-    "Thông qua, vì quá nửa tổng số đại biểu có mặt và tán thành",
+    "Thông qua, vì quá nửa tổng số đại biểu có mặt và đã tán thành",
     "Thông qua, vì quá nửa số đại biểu có mặt và đã biểu quyết",
-    "Phải trưng cầu ý dân trước khi quyết định bãi nhiệm đại biểu"
+    "Phải trưng cầu ý dân trước khi quyết định bãi nhiệm"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 85: bãi nhiệm đại biểu cần ít nhất 2/3 tổng số: 2/3 × 480 = 320.",

@@ -31,7 +31,7 @@
    "q": "Quyền đối với bí mật kinh doanh được xác lập trên cơ sở nào?",
    "options": [
     "Có được một cách hợp pháp và thực hiện việc bảo mật",
-    "Cấp văn bằng bảo hộ theo thủ tục đăng ký của cơ quan",
+    "Cấp văn bằng bảo hộ theo thủ tục đăng ký",
     "Đăng ký tại Bộ Công Thương và nộp đủ lệ phí nào",
     "Sử dụng công khai trên thị trường đại chúng nào"
    ],
@@ -49,7 +49,7 @@
    "options": [
     "Quyết định cấp văn bằng bảo hộ theo thủ tục đăng ký (hoặc công nhận đăng ký quốc tế)",
     "Tự động khi sáng tạo và đưa vào sử dụng công khai trên thị trường trong nước",
-    "Sử dụng hợp pháp kiểu dáng của mình trên thị trường và quảng cáo rộng rãi cho khách nào",
+    "Sử dụng hợp pháp kiểu dáng của mình trên thị trường và quảng cáo rộng rãi cho khách",
     "Bảo mật thông tin về kiểu dáng và giữ kín với bên thứ ba trong thời gian dài"
    ],
    "answer": 0,

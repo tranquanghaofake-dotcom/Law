@@ -30,7 +30,7 @@
    "q": "Người tự ý nửa chừng chấm dứt việc phạm tội được hưởng gì?",
    "options": [
     "Miễn TNHS về tội định phạm",
-    "Miễn TNHS về mọi tội đã làm",
+    "Miễn TNHS về mọi tội đã phạm",
     "Giảm một nửa hình phạt tù",
     "Không hưởng gì, vẫn bị xử"
    ],
@@ -47,7 +47,7 @@
    "q": "Nếu hành vi thực tế đã thực hiện cấu thành một tội khác thì người tự ý nửa chừng chấm dứt việc phạm tội thế nào?",
    "options": [
     "Phải chịu TNHS về tội khác đó",
-    "Được miễn toàn bộ TNHS mọi việc",
+    "Được miễn hết TNHS mọi việc",
     "Chịu TNHS về tội định phạm",
     "Chỉ bị xử phạt hành chính"
    ],

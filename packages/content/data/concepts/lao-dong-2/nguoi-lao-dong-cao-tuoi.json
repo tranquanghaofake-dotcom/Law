@@ -29,7 +29,7 @@
    "q": "Người lao động cao tuổi được xác định thế nào?",
    "options": [
     "Người tiếp tục lao động sau độ tuổi theo khoản 2 Điều 169 BLLĐ",
-    "Người từ đủ 45 tuổi trở lên đang làm việc hợp pháp tại nơi làm việc",
+    "Người từ đủ 45 tuổi trở lên đang làm việc hợp pháp ở nơi làm",
     "Người từ đủ 60 tuổi không phân biệt giới tính và việc làm",
     "Người từ đủ 75 tuổi trở lên đang làm việc tại nơi làm việc"
    ],
@@ -47,8 +47,8 @@
    "options": [
     "Rút ngắn thời giờ làm việc hằng ngày hoặc làm việc không trọn thời gian",
     "Không đóng thuế thu nhập cá nhân trong năm đầu tiên làm việc của mình",
-    "Tăng giờ làm thêm không giới hạn theo thỏa thuận riêng, không cần báo trước",
-    "Không phải ký HĐLĐ bằng văn bản với người sử dụng lao động đó"
+    "Tăng giờ làm thêm không giới hạn theo thỏa thuận riêng giữa hai bên",
+    "Không phải ký HĐLĐ bằng văn bản với người sử dụng lao động"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 148.",

@@ -29,7 +29,7 @@
    "options": [
     "Không được thực hiện công việc nhất định",
     "Chuyển giao vật cho bên kia theo thời hạn",
-    "Trả tiền theo kỳ hạn cố định hằng tháng",
+    "Trả tiền theo kỳ hạn cố định hằng tháng cho hàng xóm",
     "Chuyển giao quyền sử dụng tài sản cho hàng xóm"
    ],
    "answer": 0,
@@ -47,7 +47,7 @@
     "Chủ thể được hưởng lợi ích từ việc thực hiện nghĩa vụ",
     "Người được cử đại diện thực hiện nghĩa vụ trong hợp đồng",
     "Chủ thể phải chuyển giao vật cho bên còn lại theo hợp đồng",
-    "Cơ quan nhà nước có thẩm quyền quản lý nghĩa vụ đó"
+    "Cơ quan nhà nước có thẩm quyền quản lý nghĩa vụ"
    ],
    "answer": 0,
    "explain": "Điều 274.",

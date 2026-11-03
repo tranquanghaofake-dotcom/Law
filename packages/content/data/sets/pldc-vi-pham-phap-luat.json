@@ -35,7 +35,7 @@
       "q": "Người thực hiện nhận thức rõ hành vi của mình là nguy hiểm cho xã hội, thấy trước hậu quả và mong muốn hậu quả xảy ra. Đây là lỗi gì?",
       "options": [
         "Cố ý trực tiếp",
-        "Cố ý gián tiếp",
+        "Lỗi cố ý gián tiếp",
         "Vô ý vì quá tự tin",
         "Vô ý do cẩu thả"
       ],
@@ -47,7 +47,7 @@
     {
       "q": "B giăng dây điện quanh vườn để chống trộm, biết người đi qua có thể bị điện giật nhưng mặc kệ. Một người bị giật chết. Lỗi của B là gì?",
       "options": [
-        "Cố ý trực tiếp",
+        "Lỗi cố ý trực tiếp",
         "Cố ý gián tiếp",
         "Vô ý vì quá tự tin",
         "Không có lỗi vì chỉ muốn chống trộm"
@@ -112,7 +112,7 @@
     {
       "q": "Một hành vi vi phạm hành chính bị xử phạt bao nhiêu lần?",
       "options": [
-        "Mỗi cơ quan phát hiện được xử phạt một lần",
+        "Mỗi cơ quan phạt một lần",
         "Tối đa hai lần",
         "Tùy mức độ thiệt hại",
         "Chỉ bị xử phạt một lần"

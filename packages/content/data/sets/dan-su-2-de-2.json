@@ -87,7 +87,7 @@
       "q": "Thanh niên 17 tuổi có tài sản riêng gây thiệt hại. Bồi thường thế nào?",
       "options": [
         "Bằng tài sản của mình; không đủ thì cha mẹ bù",
-        "Cha mẹ bồi thường toàn bộ thiệt hại đã xảy ra",
+        "Cha mẹ bồi thường toàn bộ thiệt hại đã xảy ra ngay",
         "Không phải bồi thường vì chưa đủ mười tám tuổi",
         "Nhà nước bồi thường thay cho người gây thiệt hại"
       ],
@@ -127,7 +127,7 @@
       "options": [
         "Bạn, chủ con chó phải bồi thường toàn bộ",
         "Người lạ (người thứ ba hoàn toàn có lỗi)",
-        "Người bị chó cắn tự chịu thiệt hại đó",
+        "Người bị chó cắn tự chịu thiệt hại",
         "Liên đới cả hai người cùng chịu trách nhiệm"
       ],
       "answer": 1,

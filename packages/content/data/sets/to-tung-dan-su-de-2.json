@@ -47,7 +47,7 @@
     {
       "q": "Đương sự hòa giải thành trước khi mở phiên tòa thì chịu án phí sơ thẩm thế nào?",
       "options": [
-        "Không phải chịu án phí",
+        "Không phải chịu án phí nào",
         "50% mức án phí sơ thẩm",
         "Chịu toàn bộ 100% án phí",
         "Chịu 25% án phí sơ thẩm"
@@ -99,7 +99,7 @@
     {
       "q": "Thời hạn kháng cáo bản án sơ thẩm (đương sự có mặt khi tuyên án) là bao lâu?",
       "options": [
-        "07 ngày kể từ ngày tuyên án đó",
+        "07 ngày kể từ ngày tuyên án",
         "15 ngày kể từ ngày tuyên án",
         "30 ngày kể từ ngày tuyên án",
         "01 tháng kể từ ngày tuyên án"

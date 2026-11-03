@@ -31,7 +31,7 @@
     "Không có lỗi hoặc có lỗi vô ý và thiệt hại quá lớn so với khả năng kinh tế",
     "Khi có lỗi cố ý và thiệt hại nhỏ mà chủ thể đã tự nguyện đền bù",
     "Khi bị hại giàu có và có thu nhập ổn định hơn người gây thiệt hại",
-    "Khi thiệt hại nhỏ và người gây thiệt hại có đủ khả năng kinh tế để chi trả"
+    "Khi thiệt hại nhỏ và người gây thiệt hại có đủ khả năng kinh tế để chi trả ngay"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 585.",
@@ -48,7 +48,7 @@
     "Bồi thường toàn bộ và kịp thời",
     "Bồi thường một nửa",
     "Bồi thường theo khả năng",
-    "Bồi thường sau khi xét xử hình sự"
+    "Bồi thường sau khi xử hình sự"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 585.",

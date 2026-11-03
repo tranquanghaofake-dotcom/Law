@@ -30,7 +30,7 @@
    "q": "Hình thức của giao dịch dân sự là điều kiện có hiệu lực khi nào?",
    "options": [
     "Khi luật có quy định",
-    "Trong mọi trường hợp",
+    "Đối với mọi giao dịch",
     "Khi các bên muốn",
     "Không bao giờ"
    ],
@@ -47,9 +47,9 @@
    "q": "Điều kiện nào thuộc điều kiện có hiệu lực của giao dịch dân sự theo khoản 1 Điều 117?",
    "options": [
     "Chủ thể tham gia hoàn toàn tự nguyện",
-    "Phải có người làm chứng khi giao kết",
-    "Phải đăng ký tại Ủy ban nhân dân xã",
-    "Giá trị trên mười triệu đồng trở lên"
+    "Phải có người làm chứng khi giao kết hợp đồng",
+    "Phải đăng ký tại Ủy ban nhân dân cấp xã",
+    "Giá trị giao dịch từ mười triệu đồng trở lên"
    ],
    "answer": 0,
    "explain": "Điểm b khoản 1 Điều 117.",

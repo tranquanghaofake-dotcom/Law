@@ -30,7 +30,7 @@
    "q": "Quy hoạch sử dụng đất là gì?",
    "options": [
     "Việc phân bổ chỉ tiêu sử dụng đất và khoanh vùng đất đai cho các mục đích trong thời kỳ xác định",
-    "Việc cấp Giấy chứng nhận quyền sử dụng đất cho từng hộ gia đình, không cần thời kỳ xác định cụ thể",
+    "Việc cấp Giấy chứng nhận quyền sử dụng đất cho từng hộ gia đình, không cần thời kỳ xác định",
     "Việc định giá đất theo giá thị trường tại từng thời điểm và từng khu vực cụ thể trong năm",
     "Việc thu thuế đất hằng năm của người sử dụng đất theo diện tích đã đăng ký và loại đất"
    ],
@@ -48,7 +48,7 @@
    "options": [
     "Từng đơn vị hành chính cho thời kỳ xác định",
     "Từng thửa đất riêng lẻ của mỗi hộ gia đình",
-    "Từng hộ gia đình và từng cá nhân sử dụng đất",
+    "Từng hộ gia đình, cá nhân sử dụng đất",
     "Từng dự án đầu tư riêng lẻ của nhà đầu tư"
    ],
    "answer": 0,

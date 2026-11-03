@@ -30,7 +30,7 @@
    "options": [
     "Người đại diện theo pháp luật",
     "Chính người đó, không ai đồng ý",
-    "Ủy ban nhân dân xã nơi cư trú",
+    "Ủy ban nhân dân cấp xã nơi cư trú",
     "Tòa án tuyên bố và chỉ định người"
    ],
    "answer": 0,
@@ -46,9 +46,9 @@
    "q": "Người 16 tuổi muốn bán xe máy của mình thì cần điều kiện gì?",
    "options": [
     "Được người đại diện theo pháp luật đồng ý",
-    "Không cần ai đồng ý vì đã đủ tuổi lao động",
+    "Không cần ai đồng ý vì đủ tuổi lao động",
     "Phải đợi đủ 18 tuổi mới được bán xe",
-    "Phải được Tòa án cho phép bằng quyết định"
+    "Phải được Tòa án cho phép bằng quyết định riêng"
    ],
    "answer": 0,
    "explain": "Khoản 4 Điều 21: giao dịch liên quan động sản phải đăng ký cần người đại diện đồng ý.",

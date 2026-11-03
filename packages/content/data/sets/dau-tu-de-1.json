@@ -35,7 +35,7 @@
       "q": "Điều kiện đầu tư kinh doanh không bao gồm gì?",
       "options": [
         "Tiêu chuẩn, quy chuẩn kỹ thuật về chất lượng sản phẩm, dịch vụ",
-        "Giấy phép kinh doanh có điều kiện và có thời hạn cụ thể",
+        "Giấy phép kinh doanh có điều kiện và có thời hạn",
         "Chứng chỉ hành nghề của người điều hành công việc chuyên môn",
         "Yêu cầu vốn pháp định tối thiểu của doanh nghiệp đăng ký kinh doanh"
       ],
@@ -76,7 +76,7 @@
         "Hỗ trợ tín dụng",
         "Miễn thuế nhập khẩu",
         "Miễn tiền thuê đất",
-        "Khấu hao nhanh"
+        "Khấu hao tài sản nhanh"
       ],
       "answer": 0,
       "explain": "Khoản 3 Điều 14.",
@@ -88,7 +88,7 @@
       "options": [
         "Trung hạn hoặc dài hạn",
         "Ngắn hạn, dưới một năm",
-        "Không thời hạn cụ thể",
+        "Không thời hạn",
         "Chỉ được 50 năm cố định"
       ],
       "answer": 0,
@@ -113,7 +113,7 @@
       "q": "Dự án nào không phải thực hiện thủ tục cấp Giấy chứng nhận đăng ký đầu tư?",
       "options": [
         "Dự án của nhà đầu tư trong nước",
-        "Dự án của nhà đầu tư nước ngoài",
+        "Dự án của nhà đầu tư nước ngoài bất kỳ",
         "Dự án của tổ chức kinh tế thuộc khoản 1 Điều 20",
         "Hợp đồng BCC có nhà đầu tư nước ngoài"
       ],

@@ -37,7 +37,7 @@
         "Luật cũ, vì luật mới bất lợi không có hiệu lực hồi tố",
         "Luật mới áp dụng ngay cả khi hành vi xảy ra trước đó",
         "Luật nào nặng hơn đối với người phạm tội trong vụ việc này",
-        "Do Tòa án tự chọn luật phù hợp với từng vụ việc cụ thể"
+        "Do Tòa án tự chọn luật phù hợp với từng vụ việc"
       ],
       "answer": 0,
       "explain": "Khoản 2 Điều 7.",
@@ -50,7 +50,7 @@
         "Tội phạm ít nghiêm trọng",
         "Tội phạm nghiêm trọng",
         "Tội phạm rất nghiêm trọng",
-        "Tội phạm đặc biệt nghiêm trọng"
+        "Tội đặc biệt nghiêm trọng"
       ],
       "answer": 1,
       "explain": "Điểm b khoản 1 Điều 9: từ trên 03 năm đến 07 năm tù.",
@@ -99,7 +99,7 @@
     {
       "q": "A đang dùng chìa khóa giả mở cửa nhà B để trộm thì B về, A bỏ chạy. A ở giai đoạn nào?",
       "options": [
-        "Chuẩn bị phạm tội",
+        "Mới chuẩn bị phạm tội",
         "Phạm tội chưa đạt",
         "Tự ý nửa chừng chấm dứt",
         "Tội phạm hoàn thành"

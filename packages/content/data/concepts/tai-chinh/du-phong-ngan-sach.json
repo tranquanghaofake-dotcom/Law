@@ -31,7 +31,7 @@
    "q": "Mức bố trí dự phòng ngân sách nhà nước là bao nhiêu?",
    "options": [
     "Từ 2% đến 5% tổng chi ngân sách mỗi cấp",
-    "Từ 5% đến 10% tổng thu ngân sách mỗi cấp",
+    "Từ 5% đến 10% tổng thu ngân sách",
     "Tối đa 1% tổng chi ngân sách trung ương",
     "Không quá 10%, do Thủ tướng quyết định"
    ],
@@ -50,7 +50,7 @@
     "Một khoản trong dự toán chi ngân sách chưa phân bổ đã được cơ quan có thẩm quyền quyết định ở từng cấp",
     "Quỹ tiền mặt dự trữ bằng ngoại tệ tại Kho bạc Nhà nước để bảo đảm thanh toán nợ công của Chính phủ hằng năm",
     "Khoản kết dư ngân sách của năm trước được chuyển sang để chi thường xuyên cho năm sau, phân bổ ngay từ đầu năm",
-    "Khoản vay nước ngoài của Chính phủ ký kết với nhà tài trợ để bù đắp bội chi, đã phân bổ hết cho các bộ"
+    "Khoản vay nước ngoài của Chính phủ ký kết với nhà tài trợ để bù đắp bội chi, đã phân bổ hết cho các bộ, ngành"
    ],
    "answer": 0,
    "explain": "Khoản 8 Điều 4.",

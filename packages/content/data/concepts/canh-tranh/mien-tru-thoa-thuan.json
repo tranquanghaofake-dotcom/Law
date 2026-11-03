@@ -30,7 +30,7 @@
    "options": [
     "Có lợi cho người tiêu dùng và đáp ứng một trong các điều kiện tại khoản 1 Điều 14",
     "Có thị phần dưới năm phần trăm trên thị trường liên quan và chưa được thông báo cho cơ quan",
-    "Được hiệp hội ngành nghề đồng ý bằng văn bản trước khi thực hiện thoả thuận đó",
+    "Được hiệp hội ngành nghề đồng ý bằng văn bản trước khi thực hiện thoả thuận",
     "Đã thực hiện trên năm năm và được cơ quan thuế xác nhận ổn định doanh thu hằng năm"
    ],
    "answer": 0,
@@ -48,7 +48,7 @@
     "Thỏa thuận thông đồng để một bên thắng thầu",
     "Thỏa thuận ấn định giá",
     "Thỏa thuận hạn chế số lượng sản xuất",
-    "Thỏa thuận áp đặt điều kiện ký kết hợp đồng"
+    "Thỏa thuận áp đặt điều kiện ký kết hợp đồng mua bán"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 14 không gồm khoản 4, 5, 6 Điều 11.",

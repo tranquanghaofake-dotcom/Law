@@ -47,7 +47,7 @@
    "options": [
     "Có, trừ khi nhằm trốn tránh thực hiện nghĩa vụ",
     "Không, người được hưởng lợi không được từ chối",
-    "Chỉ khi được Tòa án cho phép trước khi xét xử",
+    "Có, nếu được Tòa án cho phép trước khi xét xử",
     "Chỉ trong vụ án lao động mới được từ chối"
    ],
    "answer": 0,

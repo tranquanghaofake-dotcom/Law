@@ -31,7 +31,7 @@
     "Tiêu chuẩn lao động; quyền, nghĩa vụ các chủ thể trong quan hệ lao động và quan hệ liên quan trực tiếp; quản lý nhà nước về lao động",
     "Chế độ công vụ của công chức nhà nước, gồm tuyển dụng, bổ nhiệm, đánh giá, khen thưởng, kỷ luật cán bộ và nghỉ hưu",
     "Thủ tục giải quyết vụ án dân sự tại Tòa án nhân dân các cấp theo quy định về hòa giải, thi hành án, kể cả thủ tục phúc thẩm",
-    "Hợp đồng dịch vụ dân sự giữa cá nhân và tổ chức, không có yếu tố lao động, không chịu sự điều chỉnh của Bộ luật này và các văn bản dưới luật"
+    "Hợp đồng dịch vụ dân sự giữa cá nhân và tổ chức, không có yếu tố lao động, không chịu sự điều chỉnh của Bộ luật này"
    ],
    "answer": 0,
    "explain": "Điều 1.",
@@ -46,7 +46,7 @@
    "q": "Chủ thể nào được nêu trong phạm vi điều chỉnh của Bộ luật Lao động?",
    "options": [
     "Tổ chức đại diện người lao động tại cơ sở",
-    "Viện kiểm sát nhân dân các cấp trên toàn quốc",
+    "Viện kiểm sát nhân dân các cấp",
     "Hội đồng nhân dân các cấp tại địa phương",
     "Tòa án quân sự cấp quân khu và các đơn vị"
    ],

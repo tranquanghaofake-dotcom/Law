@@ -31,7 +31,7 @@
     "Toàn bộ hoặc một phần dự án đầu tư",
     "Chỉ toàn bộ dự án, không chia nhỏ",
     "Chỉ phần đã hoàn thành của dự án",
-    "Không được chuyển nhượng dự án này"
+    "Không được chuyển nhượng dự án này cho ai"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 34.",
@@ -47,8 +47,8 @@
    "options": [
     "Dự án hoặc phần dự án không bị chấm dứt hoạt động theo khoản 1, 2 Điều 36",
     "Dự án đã có lãi ổn định trong hai năm liên tiếp và có báo cáo kiểm toán",
-    "Bên nhận phải là doanh nghiệp nhà nước có đủ vốn điều lệ và năng lực tài chính",
-    "Phải được Quốc hội đồng ý bằng nghị quyết riêng cho từng dự án đầu tư lớn"
+    "Bên nhận phải là doanh nghiệp nhà nước có đủ vốn và năng lực tài chính",
+    "Phải được Quốc hội đồng ý bằng nghị quyết riêng cho từng dự án đầu tư lớn nhỏ"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 1 Điều 34.",

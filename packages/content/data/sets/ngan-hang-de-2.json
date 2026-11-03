@@ -9,7 +9,7 @@
       "q": "Phát hành chứng chỉ tiền gửi thuộc nghiệp vụ nào?",
       "options": [
         "Nhận tiền gửi",
-        "Cấp tín dụng",
+        "Cấp tín dụng ngắn hạn",
         "Bao thanh toán",
         "Dịch vụ trung gian thanh toán"
       ],
@@ -101,7 +101,7 @@
       "options": [
         "Hoạt động trung gian kết nối, truyền dẫn, xử lý dữ liệu điện tử các giao dịch thanh toán",
         "Cho vay qua ứng dụng di động của ngân hàng và các tổ chức tài chính khác trong nước",
-        "Nhận tiền gửi trực tuyến từ khách hàng cá nhân và tổ chức có tài khoản thanh toán tại Việt Nam",
+        "Nhận tiền gửi trực tuyến từ khách hàng cá nhân và tổ chức có tài khoản thanh toán",
         "Phát hành tiền điện tử để thay thế hoàn toàn tiền mặt trong lưu thông tại Việt Nam"
       ],
       "answer": 0,

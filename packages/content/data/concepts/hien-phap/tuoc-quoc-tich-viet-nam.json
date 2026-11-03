@@ -31,7 +31,7 @@
    "options": [
     "Công dân Việt Nam cư trú ở nước ngoài và người đã nhập quốc tịch Việt Nam có hành vi phương hại nghiêm trọng",
     "Mọi công dân phạm tội nhỏ và tội vi phạm pháp luật thông thường trên lãnh thổ Việt Nam và có hành vi xâm hại",
-    "Công dân nợ thuế và không nộp phí hằng năm theo quy định của Nhà nước và pháp luật hiện hành",
+    "Công dân nợ thuế và không nộp phí hằng năm theo quy định của Nhà nước và pháp luật",
     "Cán bộ, công chức vi phạm kỷ luật và bị đình chỉ công tác trong nhiệm kỳ đó và phải bồi thường"
    ],
    "answer": 0,
@@ -47,8 +47,8 @@
    "q": "Căn cứ để tước quốc tịch là hành vi gây phương hại nghiêm trọng đến điều gì?",
    "options": [
     "Nền độc lập dân tộc, sự nghiệp xây dựng và bảo vệ Tổ quốc hoặc uy tín của Nhà nước",
-    "Lợi ích của một doanh nghiệp tư nhân trong nước và các bên liên quan đến dự án hiện nay",
-    "Trật tự giao thông đường bộ và đường sắt trong thành phố lớn và tỉnh hiện nay",
+    "Lợi ích của một doanh nghiệp tư nhân trong nước và các bên liên quan đến dự án",
+    "Trật tự giao thông đường bộ và đường sắt trong thành phố lớn và tỉnh",
     "Quyền lợi của một cá nhân và gia đình họ trong xã hội hiện nay và tương lai"
    ],
    "answer": 0,
@@ -104,8 +104,8 @@
    "options": [
     "Có, vì người đã nhập quốc tịch có thể bị tước dù cư trú trong nước",
     "Không, vì đang cư trú trong nước và có quốc tịch hợp pháp",
-    "Không, vì công dân không bị tước quốc tịch trong mọi trường hợp hiện nay",
-    "Chỉ khi ông Q ra nước ngoài và không còn cư trú tại Việt Nam"
+    "Không, vì công dân không bị tước quốc tịch trong mọi trường hợp",
+    "Có, nhưng phải đợi ông Q ra nước ngoài và hết cư trú tại Việt Nam"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 31.",

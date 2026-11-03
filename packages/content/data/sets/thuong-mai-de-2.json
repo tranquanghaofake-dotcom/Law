@@ -35,7 +35,7 @@
       "q": "Hợp đồng thương mại có điều khoản phạt vi phạm. Bên bị vi phạm có được đòi cả bồi thường không?",
       "options": [
         "Có, được áp dụng cả hai (trừ luật quy định khác)",
-        "Không, chỉ được áp dụng một trong hai chế tài theo luật",
+        "Không, chỉ được áp dụng một trong hai chế tài",
         "Chỉ khi có thỏa thuận riêng về bồi thường",
         "Chỉ khi thiệt hại trên tám phần trăm giá trị"
       ],
@@ -99,10 +99,10 @@
     {
       "q": "Chế tài nào KHÔNG thuộc Điều 292?",
       "options": [
-        "Buộc thực hiện đúng hợp đồng",
-        "Đình chỉ thực hiện hợp đồng",
+        "Buộc thực hiện hợp đồng",
+        "Đình chỉ thực hiện",
         "Phạt tiền hành chính",
-        "Tạm ngừng thực hiện hợp đồng"
+        "Tạm ngừng thực hiện"
       ],
       "answer": 2,
       "explain": "Điều 292.",

@@ -29,7 +29,7 @@
    "options": [
     "Giữ giấy tờ tùy thân của người lao động",
     "Thỏa thuận về chỗ ở và ăn uống trong nhà",
-    "Trả lương theo tháng cố định hằng tháng",
+    "Trả lương theo tháng với mức cố định hằng tháng",
     "Ký hợp đồng 12 tháng có thời hạn rõ ràng"
    ],
    "answer": 0,
@@ -47,7 +47,7 @@
     "Không, bị nghiêm cấm",
     "Có, nếu trả thêm tiền",
     "Có, trong phạm vi gia đình",
-    "Có, nếu không quá 2 giờ/ngày"
+    "Có, nếu không quá 2 giờ"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 165.",

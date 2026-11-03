@@ -33,7 +33,7 @@
    "q": "Đối tượng của nghiệp vụ chiết khấu là gì?",
    "options": [
     "Công cụ chuyển nhượng, giấy tờ có giá khác",
-    "Khoản phải thu từ hợp đồng mua bán hàng hóa",
+    "Khoản phải thu từ hợp đồng mua bán hàng",
     "Quyền sử dụng đất",
     "Máy móc, thiết bị cho thuê"
    ],
@@ -52,7 +52,7 @@
     "Trước khi đến hạn thanh toán",
     "Sau khi đến hạn thanh toán",
     "Khi bên phát hành phá sản",
-    "Bất kỳ lúc nào kể cả đã thanh toán"
+    "Bất kỳ lúc nào, kể cả sau hạn"
    ],
    "answer": 0,
    "explain": "Khoản 6 Điều 4.",

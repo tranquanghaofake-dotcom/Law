@@ -48,8 +48,8 @@
    "q": "Người xin nhập quốc tịch có vợ hoặc chồng là công dân Việt Nam được miễn những điều kiện nào?",
    "options": [
     "Biết tiếng Việt, thường trú từ 05 năm, khả năng bảo đảm cuộc sống",
-    "Mọi điều kiện theo quy định chung của luật nhập tịch hiện hành",
-    "Chỉ điều kiện biết tiếng Việt và thường trú tại Việt Nam tại địa phương",
+    "Mọi điều kiện theo quy định chung của luật nhập tịch",
+    "Điều kiện về năng lực hành vi dân sự và tuân thủ pháp luật",
     "Không được miễn điều kiện nào và phải đóng tiền lệ phí hằng năm"
    ],
    "answer": 0,
@@ -104,8 +104,8 @@
    "q": "Bà L (quốc tịch Thái Lan) có mẹ đẻ là công dân Việt Nam, đang sống ở Thái Lan, không biết tiếng Việt, xin nhập quốc tịch Việt Nam. Điều kiện nào bà được miễn?",
    "options": [
     "Biết tiếng Việt, đang thường trú, thường trú từ 05 năm, khả năng bảo đảm cuộc sống",
-    "Chỉ điều kiện biết tiếng Việt và có khả năng bảo đảm cuộc sống tại Việt Nam và giấy tờ",
-    "Mọi điều kiện kể cả năng lực hành vi dân sự và thường trú từ 05 năm trở lên",
+    "Chỉ điều kiện biết tiếng Việt và có khả năng bảo đảm cuộc sống tại Việt Nam",
+    "Năng lực hành vi dân sự đầy đủ và thời gian thường trú từ 05 năm trở lên",
     "Không được miễn điều kiện nào, phải có giấy tờ tùy thân hợp lệ và đủ năng lực"
    ],
    "answer": 0,

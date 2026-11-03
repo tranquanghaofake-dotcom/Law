@@ -28,9 +28,9 @@
    "q": "Đặc điểm cơ bản của hợp đồng tặng cho tài sản là gì?",
    "options": [
     "Không yêu cầu đền bù và cần bên được tặng cho đồng ý nhận",
-    "Bên được tặng cho phải trả một khoản tiền đền bù tương ứng",
-    "Chỉ cần ý chí của bên tặng cho, không cần bên nhận đồng ý",
-    "Chỉ áp dụng với động sản, không áp dụng với bất động sản"
+    "Bên được tặng cho phải trả một khoản tiền đền bù",
+    "Chỉ cần ý chí của bên tặng cho, không cần bên nhận đồng ý nhận",
+    "Áp dụng với động sản, không áp dụng với bất động sản"
    ],
    "answer": 0,
    "explain": "Điều 457.",

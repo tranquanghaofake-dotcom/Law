@@ -45,7 +45,7 @@
    "q": "Tòa án cấp phúc thẩm xem xét lại phần nào của bản án sơ thẩm?",
    "options": [
     "Phần có kháng cáo, kháng nghị hoặc có liên quan",
-    "Toàn bộ bản án trong mọi trường hợp đã tuyên",
+    "Toàn bộ bản án đã tuyên, kể cả phần không kháng cáo",
     "Chỉ phần án phí và chi phí tố tụng khác của vụ án",
     "Phần do Tòa phúc thẩm tự chọn để xét lại theo ý mình"
    ],

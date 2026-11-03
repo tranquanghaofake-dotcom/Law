@@ -30,8 +30,8 @@
    "q": "Điều kiện nào là điều kiện để người lao động nước ngoài làm việc tại Việt Nam?",
    "options": [
     "Có giấy phép lao động do cơ quan có thẩm quyền của Việt Nam cấp, trừ trường hợp miễn",
-    "Có quốc tịch Việt Nam và thường trú tại Việt Nam trên ba năm liên tục tính đến ngày nộp",
-    "Từ đủ 15 tuổi trở lên và có sức khỏe tốt theo quy định của pháp luật lao động hiện hành",
+    "Có quốc tịch Việt Nam và thường trú tại Việt Nam trên ba năm liên tục trước đó",
+    "Từ đủ 15 tuổi trở lên và có sức khỏe tốt theo quy định của pháp luật lao động",
     "Có tài sản tại Việt Nam trị giá từ một tỷ đồng trở lên và có nhà riêng ở thành phố"
    ],
    "answer": 0,
@@ -49,7 +49,7 @@
     "Không được vượt quá thời hạn của giấy phép lao động",
     "Tối thiểu 05 năm kể từ ngày ký hợp đồng lao động",
     "Luôn là HĐLĐ không xác định thời hạn theo quy định",
-    "Tùy thỏa thuận không giới hạn thời hạn hợp đồng lao động"
+    "Tùy thỏa thuận, không giới hạn thời hạn hợp đồng"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 151.",

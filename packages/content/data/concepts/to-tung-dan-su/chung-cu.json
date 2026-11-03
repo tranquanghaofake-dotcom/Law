@@ -30,8 +30,8 @@
    "options": [
     "Do Viện kiểm sát phê duyệt",
     "Là những gì có thật",
-    "Được giao nộp, xuất trình hoặc Tòa án thu thập theo trình tự luật định",
-    "Được Tòa án dùng làm căn cứ xác định tình tiết khách quan"
+    "Do đương sự giao nộp, xuất trình",
+    "Dùng để xác định tình tiết vụ án"
    ],
    "answer": 0,
    "explain": "Điều 93.",
@@ -47,7 +47,7 @@
    "options": [
     "Có, theo khoản 1 Điều 94",
     "Không",
-    "Chỉ khi được công chứng",
+    "Có, nếu được công chứng",
     "Chỉ trong vụ án thương mại"
    ],
    "answer": 0,

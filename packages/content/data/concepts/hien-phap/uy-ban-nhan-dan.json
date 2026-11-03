@@ -32,7 +32,7 @@
     "Hội đồng nhân dân cùng cấp",
     "Nhân dân địa phương bầu",
     "Ủy ban nhân dân cấp trên",
-    "Thủ tướng Chính phủ hiện nay"
+    "Thủ tướng Chính phủ chỉ định"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 114.",
@@ -47,7 +47,7 @@
    "q": "Ủy ban nhân dân chịu trách nhiệm trước ai?",
    "options": [
     "Hội đồng nhân dân và cơ quan hành chính nhà nước cấp trên",
-    "Chỉ Hội đồng nhân dân cùng cấp và thường trực của mình khác",
+    "Chỉ Hội đồng nhân dân cùng cấp và thường trực của mình",
     "Chỉ Chính phủ trung ương và các bộ ngành liên quan",
     "Chỉ Nhân dân địa phương và các tổ chức đoàn thể tại đó"
    ],

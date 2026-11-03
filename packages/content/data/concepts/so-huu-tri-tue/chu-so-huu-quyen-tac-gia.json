@@ -29,7 +29,7 @@
    "q": "Chủ sở hữu quyền tác giả nắm giữ những quyền nào?",
    "options": [
     "Một, một số hoặc toàn bộ quyền công bố (khoản 3 Điều 19) và quyền tài sản (khoản 1 Điều 20)",
-    "Quyền đứng tên tác giả trên tác phẩm đã công bố, tác phẩm chưa công bố và tác phẩm phái sinh",
+    "Quyền đứng tên tác giả trên tác phẩm đã công bố, chưa công bố và tác phẩm phái sinh",
     "Quyền bảo vệ sự toàn vẹn tác phẩm của tác giả trước mọi hành vi sửa đổi và cắt xén nội dung",
     "Mọi quyền nhân thân của tác giả không có thời hạn và không có giới hạn về nội dung"
    ],
@@ -48,7 +48,7 @@
     "Công ty giao nhiệm vụ",
     "Nhân viên",
     "Nhà nước",
-    "Cả hai đồng sở hữu đương nhiên"
+    "Cả hai cùng là chủ sở hữu"
    ],
    "answer": 0,
    "explain": "Điều 39.",

@@ -22,7 +22,7 @@
       "q": "Đất đai được phân loại theo tiêu chí nào?",
       "options": [
         "Mục đích sử dụng",
-        "Giá trị đất đai",
+        "Giá trị kinh tế của đất",
         "Diện tích đất đai",
         "Vị trí địa lý tỉnh"
       ],
@@ -62,7 +62,7 @@
       "options": [
         "Khi nhà đầu tư đề nghị, có đủ vốn đầu tư và cam kết đầu tư dự án trong năm",
         "Trong trường hợp thật cần thiết và thuộc các trường hợp liệt kê tại Điều 79",
-        "Khi giá đất tăng cao hơn mức quy định của Chính phủ trong năm đó",
+        "Khi giá đất tăng cao hơn mức quy định của Chính phủ trong năm",
         "Bất kỳ lúc nào, khi nhà đầu tư và người dân thỏa thuận được với nhau"
       ],
       "answer": 1,
@@ -115,7 +115,7 @@
         "Bắt buộc đối với mọi chủ sở hữu",
         "Theo yêu cầu của chủ sở hữu",
         "Bị cấm đối với mọi chủ sở hữu",
-        "Chỉ khi chủ sở hữu thế chấp"
+        "Chỉ khi chủ sở hữu đem thế chấp"
       ],
       "answer": 1,
       "explain": "Khoản 2 Điều 131.",
