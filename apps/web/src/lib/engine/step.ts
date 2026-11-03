@@ -36,6 +36,8 @@ export type StepMeta = {
   golden?: boolean;
   /** 'retry' = vòng sửa sai cuối phiên: KHÔNG ghi tiến độ (repo.record), KHÔNG đổi bậc; 'boss' = câu chốt cuối phiên. */
   kind?: 'learn' | 'retry' | 'boss';
+  /** (đợt 6, thêm) Bước retry: chỉ số của bước gốc trong `steps` (để giao diện ghi "Sửa câu …"). */
+  retryOf?: number;
 };
 
 export type Step = { conceptId: string; item: StepItem; level: Level; meta?: StepMeta };
