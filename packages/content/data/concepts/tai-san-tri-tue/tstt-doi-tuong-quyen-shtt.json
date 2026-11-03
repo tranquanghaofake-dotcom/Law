@@ -1,0 +1,117 @@
+{
+ "id": "tstt-doi-tuong-quyen-shtt",
+ "subject": "tai-san-tri-tue",
+ "chapter": "v1",
+ "term": "Đối tượng quyền sở hữu trí tuệ",
+ "definition": "Đối tượng quyền sở hữu công nghiệp bao gồm sáng chế, kiểu dáng công nghiệp, thiết kế bố trí mạch tích hợp bán dẫn, bí mật kinh doanh, nhãn hiệu, tên thương mại và chỉ dẫn địa lý.",
+ "plain": "Ba nhánh đối tượng: QUYỀN TÁC GIẢ và quyền liên quan (tác phẩm; cuộc biểu diễn, bản ghi, chương trình phát sóng — khoản 1); QUYỀN SỞ HỮU CÔNG NGHIỆP (7 đối tượng — khoản 2); QUYỀN ĐỐI VỚI GIỐNG CÂY TRỒNG (khoản 3). Doanh nghiệp cần \"nhận diện\" tài sản của mình thuộc nhánh nào vì cơ chế xác lập khác nhau: tự động (quyền tác giả), tự động có điều kiện (tên thương mại, bí mật kinh doanh, nhãn hiệu nổi tiếng), phải đăng ký (sáng chế, kiểu dáng, thiết kế bố trí, nhãn hiệu, chỉ dẫn địa lý, giống cây trồng).",
+ "example": "Công ty phần mềm A có: mã nguồn (quyền tác giả — chương trình máy tính), tên gọi sản phẩm (nhãn hiệu — phải đăng ký), thuật toán chưa công bố (bí mật kinh doanh — bảo hộ khi đủ điều kiện, không cần đăng ký).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 2 Điều 3 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tstt-tai-san-tri-tue",
+  "tstt-bi-mat-kinh-doanh"
+ ],
+ "keywords": [
+  "sáng chế",
+  "kiểu dáng công nghiệp",
+  "bí mật kinh doanh",
+  "nhãn hiệu",
+  "tên thương mại",
+  "chỉ dẫn địa lý"
+ ],
+ "note": "Luật Sở hữu trí tuệ 50/2005/QH11 (hiệu lực 01/7/2006) đã được sửa đổi bởi Luật 36/2009/QH12, 42/2019/QH14, 07/2022/QH15, 93/2025/QH15 và 131/2025/QH15 (hiệu lực 01/4/2026) — văn bản hợp nhất 67/VBHN-VPQH 2026; ghi chép lớp học còn dẫn Nghị định 105/2006/NĐ-CP và Nghị định 99/2013/NĐ-CP, cần tự kiểm tra hiệu lực của các nghị định này trước khi dùng.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đối tượng nào thuộc quyền sở hữu công nghiệp theo khoản 2 Điều 3?",
+   "options": [
+    "Bí mật kinh doanh",
+    "Tác phẩm văn học",
+    "Cuộc biểu diễn",
+    "Vật liệu nhân giống"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 3 liệt kê 7 đối tượng, có bí mật kinh doanh.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 3 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đối tượng quyền đối với giống cây trồng là gì?",
+   "options": [
+    "Vật liệu nhân giống và vật liệu thu hoạch",
+    "Sáng chế về cây trồng",
+    "Nhãn hiệu nông sản",
+    "Chỉ dẫn địa lý"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 3 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Phải đăng ký mới được bảo hộ",
+   "right": "Bảo hộ không cần đăng ký",
+   "cases": [
+    {
+     "text": "Sáng chế",
+     "answer": "left"
+    },
+    {
+     "text": "Tác phẩm văn học",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 6: quyền tác giả phát sinh khi tác phẩm được sáng tạo và định hình; sáng chế xác lập trên cơ sở cấp văn bằng."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đối tượng quyền sở hữu công nghiệp bao gồm sáng chế, {{kiểu dáng công nghiệp}}, thiết kế bố trí mạch tích hợp bán dẫn, bí mật kinh doanh, {{nhãn hiệu}}, tên thương mại và chỉ dẫn địa lý.",
+   "bank_extra": [
+    "tác phẩm",
+    "giống cây trồng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đối tượng quyền tác giả bao gồm tác phẩm {{văn học}}, nghệ thuật, {{khoa học}}.",
+   "bank_extra": [
+    "kỹ thuật",
+    "thương mại"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tên thương mại là đối tượng của quyền tác giả.",
+   "answer": false,
+   "explain": "Sai. Tên thương mại là đối tượng quyền sở hữu công nghiệp (khoản 2 Điều 3)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Kể ba nhóm đối tượng quyền sở hữu trí tuệ.",
+   "model": "Quyền tác giả, quyền liên quan (tác phẩm; cuộc biểu diễn, bản ghi âm, ghi hình, chương trình phát sóng); quyền sở hữu công nghiệp (sáng chế, kiểu dáng, thiết kế bố trí, bí mật kinh doanh, nhãn hiệu, tên thương mại, chỉ dẫn địa lý); quyền đối với giống cây trồng (Điều 3).",
+   "keywords": [
+    "quyền tác giả",
+    "sở hữu công nghiệp",
+    "giống cây trồng"
+   ]
+  }
+ ]
+}

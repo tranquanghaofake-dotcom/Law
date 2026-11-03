@@ -1,0 +1,139 @@
+{
+  "id": "tai-san-tri-tue-de-1",
+  "group": "tai-san-tri-tue",
+  "title": "Đề kiểm tra Quản trị tài sản trí tuệ – Nhận diện, xác lập, định giá",
+  "subtitle": "10 câu theo bài giảng HLU, vấn đề 1–3",
+  "updated": "2026-11-01",
+  "questions": [
+    {
+      "q": "Đối tượng nào thuộc quyền sở hữu công nghiệp?",
+      "options": [
+        "Tên thương mại",
+        "Tác phẩm điện ảnh",
+        "Bản ghi âm",
+        "Vật liệu nhân giống"
+      ],
+      "answer": 0,
+      "explain": "Khoản 2 Điều 3.",
+      "basis": "Khoản 2 Điều 3 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+    },
+    {
+      "q": "Điều kiện nào KHÔNG phải điều kiện bảo hộ bí mật kinh doanh?",
+      "options": [
+        "Đã đăng ký tại Cục Sở hữu trí tuệ",
+        "Không phải hiểu biết thông thường",
+        "Tạo lợi thế kinh doanh",
+        "Được bảo mật bằng biện pháp cần thiết"
+      ],
+      "answer": 0,
+      "explain": "Điều 84 không yêu cầu đăng ký.",
+      "basis": "Điều 84 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+    },
+    {
+      "q": "Bí mật kinh doanh là thông tin thu được từ đâu?",
+      "options": [
+        "Hoạt động đầu tư tài chính, trí tuệ, chưa bộc lộ, có khả năng sử dụng trong kinh doanh",
+        "Cơ sở dữ liệu công khai",
+        "Văn bản pháp luật",
+        "Báo chí"
+      ],
+      "answer": 0,
+      "explain": "Khoản 23 Điều 4.",
+      "basis": "Khoản 23 Điều 4 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+    },
+    {
+      "q": "Doanh nghiệp giao việc và cấp kinh phí cho nhân viên tạo ra sáng chế; không có thỏa thuận khác. Ai có quyền đăng ký?",
+      "options": [
+        "Doanh nghiệp",
+        "Nhân viên",
+        "Cả hai bắt buộc đồng đứng tên",
+        "Nhà nước"
+      ],
+      "answer": 0,
+      "explain": "Điểm b khoản 1 Điều 86.",
+      "basis": "Khoản 1 Điều 86 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+    },
+    {
+      "q": "Quyền ưu tiên áp dụng cho đối tượng nào?",
+      "options": [
+        "Sáng chế, kiểu dáng công nghiệp, nhãn hiệu",
+        "Tác phẩm",
+        "Bí mật kinh doanh",
+        "Tên thương mại"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 91.",
+      "basis": "Khoản 1 Điều 91 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+    },
+    {
+      "q": "Cơ sở để hưởng quyền ưu tiên là gì?",
+      "options": [
+        "Đơn đầu tiên đăng ký bảo hộ cùng một đối tượng",
+        "Ngày cấp văn bằng",
+        "Ngày thành lập doanh nghiệp",
+        "Ngày công bố sản phẩm"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 91.",
+      "basis": "Khoản 1 Điều 91 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+    },
+    {
+      "q": "Quyền sở hữu trí tuệ có phải tài sản góp vốn không?",
+      "options": [
+        "Có",
+        "Không",
+        "Chỉ khi là sáng chế",
+        "Chỉ với công ty cổ phần"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 34 Luật Doanh nghiệp.",
+      "basis": "Khoản 1 Điều 34 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+    },
+    {
+      "q": "Ai được dùng quyền SHTT để góp vốn?",
+      "options": [
+        "Chủ sở hữu hợp pháp hoặc người có quyền sử dụng hợp pháp",
+        "Bất kỳ ai",
+        "Chỉ tác giả",
+        "Chỉ Nhà nước"
+      ],
+      "answer": 0,
+      "explain": "Khoản 2 Điều 34 Luật Doanh nghiệp.",
+      "basis": "Khoản 2 Điều 34 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+    },
+    {
+      "q": "Thiệt hại nào là thiệt hại vật chất theo Điều 204?",
+      "options": [
+        "Chi phí hợp lý để ngăn chặn, khắc phục thiệt hại",
+        "Tổn thất danh dự tác giả",
+        "Tổn thất uy tín người biểu diễn",
+        "Tổn thất tinh thần khác"
+      ],
+      "answer": 0,
+      "explain": "Điểm a khoản 1 Điều 204.",
+      "basis": "Khoản 1 Điều 204 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+    },
+    {
+      "q": "Mức độ thiệt hại được xác định trên cơ sở nào?",
+      "options": [
+        "Tổn thất thực tế mà chủ thể quyền phải chịu",
+        "Doanh thu của bị đơn",
+        "Giá trị văn bằng",
+        "Số năm bảo hộ còn lại"
+      ],
+      "answer": 0,
+      "explain": "Khoản 2 Điều 204.",
+      "basis": "Khoản 2 Điều 204 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+ "id": "tstt-bi-mat-kinh-doanh",
+ "subject": "tai-san-tri-tue",
+ "chapter": "v1",
+ "term": "Bí mật kinh doanh và điều kiện bảo hộ",
+ "definition": "Bí mật kinh doanh được bảo hộ nếu đáp ứng các điều kiện sau đây: 1. Không phải là hiểu biết thông thường và không dễ dàng có được; 2. Khi được sử dụng trong kinh doanh sẽ tạo cho người nắm giữ bí mật kinh doanh lợi thế so với người không nắm giữ hoặc không sử dụng bí mật kinh doanh đó; 3. Được chủ sở hữu bảo mật bằng các biện pháp cần thiết để bí mật kinh doanh đó không bị bộc lộ và không dễ dàng tiếp cận được.",
+ "plain": "Bí mật kinh doanh là \"thông tin thu được từ hoạt động đầu tư tài chính, trí tuệ, chưa được bộc lộ và có khả năng sử dụng trong kinh doanh\" (khoản 23 Điều 4). Ba điều kiện: KHÔNG PHỔ THÔNG; tạo LỢI THẾ kinh doanh; được chủ sở hữu BẢO MẬT bằng biện pháp cần thiết. Điều kiện 3 là việc của quản trị doanh nghiệp: quy chế bảo mật, hợp đồng bảo mật (NDA) với người lao động, đối tác, phân quyền truy cập. Không có biện pháp bảo mật → mất bảo hộ dù thông tin có giá trị. Bảo hộ tự động, không đăng ký; không giới hạn thời hạn nếu còn bí mật.",
+ "example": "Công ty B lưu công thức nước chấm trong máy chủ có phân quyền, nhân viên ký cam kết bảo mật: đủ điều kiện 3. Nếu công thức đăng trên website nội bộ ai cũng xem được, bí mật kinh doanh không còn được bảo hộ.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 84 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tstt-doi-tuong-quyen-shtt",
+  "tstt-quan-tri-tstt",
+  "tstt-quyen-dang-ky-khi-giao-viec"
+ ],
+ "keywords": [
+  "không phải hiểu biết thông thường",
+  "lợi thế",
+  "bảo mật",
+  "biện pháp cần thiết"
+ ],
+ "note": "Luật Sở hữu trí tuệ 50/2005/QH11 (hiệu lực 01/7/2006) đã được sửa đổi bởi Luật 36/2009/QH12, 42/2019/QH14, 07/2022/QH15, 93/2025/QH15 và 131/2025/QH15 (hiệu lực 01/4/2026) — văn bản hợp nhất 67/VBHN-VPQH 2026; ghi chép lớp học còn dẫn Nghị định 105/2006/NĐ-CP và Nghị định 99/2013/NĐ-CP, cần tự kiểm tra hiệu lực của các nghị định này trước khi dùng.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Điều kiện nào thuộc Điều 84 về bí mật kinh doanh?",
+   "options": [
+    "Được chủ sở hữu bảo mật bằng các biện pháp cần thiết",
+    "Đã đăng ký tại Cục Sở hữu trí tuệ",
+    "Có tính mới trên toàn thế giới",
+    "Đã công bố trên tạp chí"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 84.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 84 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Bí mật kinh doanh theo khoản 23 Điều 4 là thông tin thu được từ đâu?",
+   "options": [
+    "Hoạt động đầu tư tài chính, trí tuệ, chưa được bộc lộ và có khả năng sử dụng trong kinh doanh",
+    "Thông tin đã công bố công khai",
+    "Số liệu thống kê nhà nước",
+    "Văn bản pháp luật"
+   ],
+   "answer": 0,
+   "explain": "Khoản 23 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 23 Điều 4 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Đáp ứng điều kiện bảo mật",
+   "right": "Không đáp ứng",
+   "cases": [
+    {
+     "text": "Công thức lưu trong két, chỉ 2 người biết, có NDA",
+     "answer": "left"
+    },
+    {
+     "text": "Công thức in trên tờ rơi quảng cáo",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 3 Điều 84."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bí mật kinh doanh được bảo hộ nếu không phải là hiểu biết {{thông thường}} và không dễ dàng có được; khi sử dụng trong kinh doanh sẽ tạo {{lợi thế}} cho người nắm giữ.",
+   "bank_extra": [
+    "khoa học",
+    "doanh thu"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bí mật kinh doanh phải được chủ sở hữu {{bảo mật}} bằng các biện pháp cần thiết để không bị {{bộc lộ}} và không dễ dàng tiếp cận được.",
+   "bank_extra": [
+    "đăng ký",
+    "sao chép"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Bí mật kinh doanh phải đăng ký tại cơ quan nhà nước mới được bảo hộ.",
+   "answer": false,
+   "explain": "Sai. Quyền đối với bí mật kinh doanh xác lập trên cơ sở có được một cách hợp pháp và thực hiện bảo mật (điểm c khoản 3 Điều 6), không cần đăng ký."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu ba điều kiện bảo hộ bí mật kinh doanh.",
+   "model": "Không phải hiểu biết thông thường, không dễ có được; tạo lợi thế kinh doanh cho người nắm giữ; được bảo mật bằng biện pháp cần thiết (Điều 84).",
+   "keywords": [
+    "hiểu biết thông thường",
+    "lợi thế",
+    "bảo mật"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,108 @@
+{
+ "id": "tstt-quan-tri-tstt",
+ "subject": "tai-san-tri-tue",
+ "chapter": "v2",
+ "term": "Quản trị tài sản trí tuệ",
+ "definition": "Quản trị tài sản trí tuệ là tập hợp các định hướng, quyết định và hoạt động thương mại hình thành, kiểm soát, xác lập quyền, khai thác và bảo vệ lợi ích hợp pháp đối với các tài sản trí tuệ của doanh nghiệp, tổ chức, cá nhân.",
+ "plain": "Khái niệm HỌC THUYẾT (ghi chép bài giảng). Bốn khâu: TẠO LẬP, phát triển (chiến lược, nhận dạng, phân loại, đánh giá) → XÁC LẬP QUYỀN (đăng ký sớm, đồng bộ, cân nhắc quốc gia hay quốc tế, tận dụng quyền ưu tiên) → KHAI THÁC (tự khai thác hoặc thương mại hóa: chuyển nhượng, chuyển quyền sử dụng, nhượng quyền, góp vốn, thế chấp) → BẢO VỆ (phòng ngừa, giám sát thị trường, giám sát hải quan, xử lý xâm phạm). Mô hình: bộ phận chuyên trách, hệ thống văn bản biểu mẫu, danh mục tài sản trí tuệ, quy trình kiểm soát.",
+ "example": "Doanh nghiệp dược C lập danh mục 12 nhãn hiệu, 3 sáng chế, 5 bí mật kinh doanh; phân công phòng pháp chế theo dõi hạn gia hạn, đăng ký giám sát hải quan và rà soát đơn nhãn hiệu của đối thủ để phản đối kịp thời.",
+ "source": {
+  "kind": "textbook",
+  "cite": "Ghi chép bài giảng học phần Quản trị tài sản trí tuệ (SHTTTT), ĐH Luật Hà Nội (Drive HLU/Kỳ II năm II/SHTTTT) — chưa đối chiếu nguyên văn giáo trình"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tstt-tai-san-tri-tue",
+  "tstt-quyen-uu-tien",
+  "tstt-dinh-gia-tstt"
+ ],
+ "keywords": [
+  "tạo lập",
+  "xác lập quyền",
+  "khai thác",
+  "bảo vệ",
+  "danh mục tài sản trí tuệ"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khâu nào KHÔNG thuộc quy trình quản trị tài sản trí tuệ theo bài giảng?",
+   "options": [
+    "Nộp thuế thu nhập cá nhân cho tác giả",
+    "Tạo lập, phát triển",
+    "Khai thác, thương mại hóa",
+    "Bảo vệ"
+   ],
+   "answer": 0,
+   "explain": "Bốn khâu: tạo lập – xác lập quyền – khai thác – bảo vệ."
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Vì sao doanh nghiệp nên theo dõi đơn đăng ký của đối thủ cạnh tranh?",
+   "options": [
+    "Để kịp thời phản đối nếu đơn ảnh hưởng đến độc quyền tài sản trí tuệ của mình",
+    "Để sao chép sản phẩm",
+    "Để nộp thuế thay",
+    "Không cần thiết"
+   ],
+   "answer": 0,
+   "explain": "Quản lý bên ngoài: theo dõi, cập nhật đăng ký mới của đối thủ để phản đối."
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quản lý nội bộ",
+   "right": "Quản lý bên ngoài",
+   "cases": [
+    {
+     "text": "Xác định tài sản trí tuệ hiện có và phương thức bảo hộ phù hợp",
+     "answer": "left"
+    },
+    {
+     "text": "Đăng ký giám sát hải quan ngăn hàng xâm phạm qua biên giới",
+     "answer": "right"
+    }
+   ],
+   "explain": "Bài giảng phân biệt quản lý trong nội bộ và quản lý tài sản bên ngoài."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quản trị tài sản trí tuệ là tập hợp các định hướng, quyết định và hoạt động hình thành, kiểm soát, {{xác lập quyền}}, khai thác và {{bảo vệ}} lợi ích hợp pháp đối với tài sản trí tuệ.",
+   "bank_extra": [
+    "định giá",
+    "nộp thuế"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nguyên tắc tạo lập tài sản trí tuệ: nên {{đăng ký}} càng sớm càng tốt đối với đối tượng cần đăng ký và tận dụng quyền {{ưu tiên}}.",
+   "bank_extra": [
+    "công bố",
+    "khiếu nại"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mục tiêu duy nhất của quản trị tài sản trí tuệ là ngăn chặn hàng giả.",
+   "answer": false,
+   "explain": "Sai. Còn nhận diện, phân loại, gia tăng năng lực khai thác, thu lợi từ thương mại hóa và hình thành văn hóa đổi mới sáng tạo."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm và các khâu quản trị tài sản trí tuệ.",
+   "model": "Tập hợp định hướng, quyết định, hoạt động hình thành, kiểm soát, xác lập quyền, khai thác, bảo vệ tài sản trí tuệ; bốn khâu: tạo lập – xác lập – khai thác – bảo vệ.",
+   "keywords": [
+    "tạo lập",
+    "xác lập",
+    "khai thác",
+    "bảo vệ"
+   ]
+  }
+ ]
+}

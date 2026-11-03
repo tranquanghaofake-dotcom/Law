@@ -1,0 +1,108 @@
+{
+ "id": "tstt-dinh-gia-tstt",
+ "subject": "tai-san-tri-tue",
+ "chapter": "v3",
+ "term": "Định giá tài sản trí tuệ và mục đích",
+ "definition": "Định giá tài sản trí tuệ là việc ước tính giá trị bằng tiền của tài sản trí tuệ nhằm phục vụ quản trị và phát triển tài sản trí tuệ; thương mại hóa (chuyển nhượng, chuyển quyền sử dụng, góp vốn, thế chấp); tranh tụng, xác định thiệt hại và bồi thường; cổ phần hóa, mua bán, sáp nhập doanh nghiệp.",
+ "plain": "Khái niệm và mục đích theo GHI CHÉP BÀI GIẢNG (học thuyết). Bốn mục đích: (1) quản trị nội bộ; (2) thương mại hóa — bán, cấp phép, GÓP VỐN (Luật Doanh nghiệp cho góp vốn bằng quyền SHTT), thế chấp; (3) TRANH TỤNG — xác định thiệt hại, bồi thường (Điều 204, 205 Luật SHTT); (4) cổ phần hóa, M&A. Ba cách tiếp cận: CHI PHÍ, THU NHẬP, THỊ TRƯỜNG. Lưu ý: xác định loại tài sản, phục vụ ai, mục đích gì, thời điểm nào, phương pháp nào phù hợp.",
+ "example": "Năm 1995 nhãn hiệu P/S được định giá để góp vốn liên doanh (bài giảng dẫn con số 7,5 triệu USD): định giá phục vụ thương mại hóa — góp vốn.",
+ "source": {
+  "kind": "textbook",
+  "cite": "Ghi chép bài giảng học phần Quản trị tài sản trí tuệ (SHTTTT), ĐH Luật Hà Nội (Drive HLU/Kỳ II năm II/SHTTTT) — chưa đối chiếu nguyên văn giáo trình"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tstt-phuong-phap-dinh-gia",
+  "tstt-gop-von-bang-quyen-shtt",
+  "tstt-xac-dinh-thiet-hai"
+ ],
+ "keywords": [
+  "ước tính giá trị",
+  "thương mại hóa",
+  "góp vốn",
+  "bồi thường thiệt hại",
+  "cổ phần hóa"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Mục đích nào của định giá tài sản trí tuệ được bài giảng nêu?",
+   "options": [
+    "Phục vụ góp vốn, thế chấp, chuyển nhượng",
+    "Phục vụ xin cấp văn bằng bảo hộ",
+    "Thay thế thủ tục đăng ký",
+    "Xác định tính mới của sáng chế"
+   ],
+   "answer": 0,
+   "explain": "Định giá phục vụ thương mại hóa: chuyển nhượng, chuyển quyền sử dụng, góp vốn, thế chấp."
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khi xâm phạm quyền SHTT, định giá được dùng để làm gì?",
+   "options": [
+    "Xác định thiệt hại và yêu cầu bồi thường",
+    "Hủy văn bằng bảo hộ",
+    "Miễn trách nhiệm cho bên xâm phạm",
+    "Cấp lại văn bằng"
+   ],
+   "answer": 0,
+   "explain": "Mục đích tranh tụng: xác định thiệt hại, bồi thường."
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Mục đích thương mại hóa",
+   "right": "Mục đích tranh tụng",
+   "cases": [
+    {
+     "text": "Định giá nhãn hiệu để góp vốn thành lập công ty liên doanh",
+     "answer": "left"
+    },
+    {
+     "text": "Định giá để tính mức bồi thường do bị xâm phạm sáng chế",
+     "answer": "right"
+    }
+   ],
+   "explain": "Bài giảng phân nhóm mục đích định giá."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Định giá tài sản trí tuệ phục vụ thương mại hóa như chuyển nhượng, chuyển quyền sử dụng, {{góp vốn}}, {{thế chấp}}.",
+   "bank_extra": [
+    "tiêu hủy",
+    "khiếu nại"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ba cách tiếp cận định giá: theo {{chi phí}}, theo thu nhập và theo {{thị trường}}.",
+   "bank_extra": [
+    "pháp luật",
+    "cảm tính"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Ở Việt Nam việc thế chấp quyền SHTT để vay vốn ngân hàng đã phổ biến như ở nước ngoài.",
+   "answer": false,
+   "explain": "Sai theo bài giảng: ngân hàng chưa tin tưởng kết quả định giá nên giao dịch thế chấp bằng tài sản trí tuệ gần như chưa có."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các mục đích định giá tài sản trí tuệ.",
+   "model": "Quản trị nội bộ; thương mại hóa (chuyển nhượng, chuyển quyền sử dụng, góp vốn, thế chấp); tranh tụng, xác định thiệt hại; cổ phần hóa, mua bán, sáp nhập doanh nghiệp.",
+   "keywords": [
+    "quản trị",
+    "thương mại hóa",
+    "thiệt hại",
+    "cổ phần hóa"
+   ]
+  }
+ ]
+}

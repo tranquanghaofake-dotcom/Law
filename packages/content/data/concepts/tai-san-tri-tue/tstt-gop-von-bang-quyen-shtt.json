@@ -1,0 +1,115 @@
+{
+ "id": "tstt-gop-von-bang-quyen-shtt",
+ "subject": "tai-san-tri-tue",
+ "chapter": "v3",
+ "term": "Góp vốn bằng quyền sở hữu trí tuệ",
+ "definition": "Tài sản góp vốn là Đồng Việt Nam, ngoại tệ tự do chuyển đổi, vàng, quyền sử dụng đất, quyền sở hữu trí tuệ, công nghệ, bí quyết kỹ thuật, tài sản khác có thể định giá được bằng Đồng Việt Nam.",
+ "plain": "Luật Doanh nghiệp cho phép góp vốn bằng QUYỀN SỞ HỮU TRÍ TUỆ, công nghệ, bí quyết kỹ thuật. Chỉ CHỦ SỞ HỮU HỢP PHÁP hoặc người có quyền sử dụng hợp pháp mới được góp (khoản 2 Điều 34). Tài sản không phải tiền, vàng, ngoại tệ phải được ĐỊNH GIÁ và thể hiện bằng Đồng Việt Nam (Điều 36) — định giá sai cao hơn thực tế thì người góp và người định giá liên đới chịu trách nhiệm. Với quyền SHCN đã đăng ký, việc góp vốn làm chuyển quyền sở hữu nên phải lập hợp đồng và đăng ký tại Cục Sở hữu trí tuệ (Điều 138, 148 Luật SHTT).",
+ "example": "Ông H góp sáng chế đã được cấp bằng vào công ty mới với giá trị thỏa thuận 2 tỷ đồng: phải lập hợp đồng chuyển nhượng quyền sở hữu công nghiệp và đăng ký tại Cục SHTT; nếu định giá cao hơn thực tế, ông H và các thành viên sáng lập liên đới góp thêm phần chênh lệch.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 34 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tstt-dinh-gia-tstt",
+  "tstt-chuyen-nhuong-quyen-shcn"
+ ],
+ "keywords": [
+  "quyền sở hữu trí tuệ",
+  "bí quyết kỹ thuật",
+  "định giá",
+  "chủ sở hữu hợp pháp"
+ ],
+ "note": "Luật Doanh nghiệp 59/2020/QH14 có hiệu lực từ 01/01/2021, sửa đổi bởi Luật 03/2022/QH15 và Luật 76/2025/QH15 (hiệu lực 01/7/2025) — văn bản hợp nhất 67/VBHN-VPQH 2025.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tài sản nào được góp vốn theo khoản 1 Điều 34 Luật Doanh nghiệp?",
+   "options": [
+    "Quyền sở hữu trí tuệ",
+    "Quyền nhân thân của tác giả",
+    "Uy tín cá nhân",
+    "Danh hiệu thi đua"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 34.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 34 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai được dùng quyền sở hữu trí tuệ để góp vốn?",
+   "options": [
+    "Chủ sở hữu hợp pháp hoặc người có quyền sử dụng hợp pháp",
+    "Bất kỳ ai biết về tài sản đó",
+    "Chỉ Nhà nước",
+    "Chỉ tác giả, dù không phải chủ sở hữu"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 34.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 34 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Được góp vốn",
+   "right": "Không góp vốn được",
+   "cases": [
+    {
+     "text": "Nhãn hiệu đã được cấp Giấy chứng nhận đăng ký, do công ty sở hữu",
+     "answer": "left"
+    },
+    {
+     "text": "Quyền đứng tên tác giả trên tác phẩm",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 34 Luật Doanh nghiệp; quyền nhân thân không chuyển giao."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tài sản góp vốn gồm Đồng Việt Nam, ngoại tệ tự do chuyển đổi, vàng, quyền sử dụng đất, {{quyền sở hữu trí tuệ}}, công nghệ, {{bí quyết kỹ thuật}}.",
+   "bank_extra": [
+    "danh dự",
+    "bằng cấp"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chỉ cá nhân, tổ chức là {{chủ sở hữu}} hợp pháp hoặc có quyền {{sử dụng}} hợp pháp đối với tài sản mới có quyền dùng tài sản đó để góp vốn.",
+   "bank_extra": [
+    "người đại diện",
+    "sáng tạo"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quyền sở hữu trí tuệ có thể được dùng để góp vốn vào doanh nghiệp.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 34 Luật Doanh nghiệp 2020."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu điều kiện góp vốn bằng quyền sở hữu trí tuệ.",
+   "model": "Quyền SHTT là tài sản góp vốn (khoản 1 Điều 34); người góp phải là chủ sở hữu hoặc có quyền sử dụng hợp pháp (khoản 2); phải định giá bằng Đồng Việt Nam (Điều 36); quyền SHCN đăng ký thì phải lập hợp đồng và đăng ký chuyển nhượng.",
+   "keywords": [
+    "tài sản góp vốn",
+    "chủ sở hữu hợp pháp",
+    "định giá"
+   ]
+  }
+ ]
+}

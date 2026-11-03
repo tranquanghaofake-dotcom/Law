@@ -1,0 +1,115 @@
+{
+ "id": "tstt-quyen-uu-tien",
+ "subject": "tai-san-tri-tue",
+ "chapter": "v2",
+ "term": "Nguyên tắc ưu tiên",
+ "definition": "Người nộp đơn đăng ký sáng chế, kiểu dáng công nghiệp, nhãn hiệu có quyền yêu cầu hưởng quyền ưu tiên trên cơ sở đơn đầu tiên đăng ký bảo hộ cùng một đối tượng nếu đáp ứng các điều kiện sau đây: a) Đơn đầu tiên đã được nộp tại Việt Nam hoặc tại nước là thành viên của điều ước quốc tế có quy định về quyền ưu tiên mà Cộng hoà xã hội chủ nghĩa Việt Nam cũng là thành viên hoặc có thoả thuận áp dụng quy định như vậy với Việt Nam;",
+ "plain": "Công cụ chiến lược khi mở rộng bảo hộ ra nhiều nước: nộp ĐƠN ĐẦU TIÊN ở một nước thành viên Công ước Paris, rồi trong thời hạn ưu tiên (12 tháng với sáng chế, 6 tháng với kiểu dáng, nhãn hiệu — theo Công ước Paris) nộp ở nước khác và được tính ngày ưu tiên là ngày nộp đơn đầu tiên. Ý nghĩa: đánh bại đơn của người khác nộp trong khoảng giữa; không mất tính mới. Nguyên tắc đi kèm \"nộp đơn đầu tiên\" (Điều 90): ai nộp trước được cấp.",
+ "example": "Công ty F nộp đơn sáng chế tại Nhật ngày 01/3; ngày 20/12 cùng năm nộp tại Việt Nam có yêu cầu hưởng quyền ưu tiên: đơn Việt Nam được coi như nộp ngày 01/3, nên đơn của công ty G nộp tháng 8 cho cùng giải pháp bị loại.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điểm a khoản 1 Điều 91 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tstt-quan-tri-tstt",
+  "tstt-quyen-dang-ky-khi-giao-viec"
+ ],
+ "keywords": [
+  "đơn đầu tiên",
+  "điều ước quốc tế",
+  "cùng một đối tượng",
+  "ngày ưu tiên"
+ ],
+ "note": "Luật Sở hữu trí tuệ 50/2005/QH11 (hiệu lực 01/7/2006) đã được sửa đổi bởi Luật 36/2009/QH12, 42/2019/QH14, 07/2022/QH15, 93/2025/QH15 và 131/2025/QH15 (hiệu lực 01/4/2026) — văn bản hợp nhất 67/VBHN-VPQH 2026; ghi chép lớp học còn dẫn Nghị định 105/2006/NĐ-CP và Nghị định 99/2013/NĐ-CP, cần tự kiểm tra hiệu lực của các nghị định này trước khi dùng.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quyền ưu tiên theo Điều 91 dựa trên cơ sở nào?",
+   "options": [
+    "Đơn đầu tiên đăng ký bảo hộ cùng một đối tượng",
+    "Số vốn của người nộp đơn",
+    "Thứ tự cấp văn bằng",
+    "Quốc tịch của tác giả"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 91.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 91 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đối tượng nào được áp dụng quyền ưu tiên theo khoản 1 Điều 91?",
+   "options": [
+    "Sáng chế, kiểu dáng công nghiệp, nhãn hiệu",
+    "Tác phẩm văn học",
+    "Bí mật kinh doanh",
+    "Tên thương mại"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 91 nêu sáng chế, kiểu dáng công nghiệp, nhãn hiệu.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 91 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Có thể làm cơ sở hưởng quyền ưu tiên",
+   "right": "Không thể",
+   "cases": [
+    {
+     "text": "Đơn đầu tiên nộp tại nước thành viên Công ước Paris",
+     "answer": "left"
+    },
+    {
+     "text": "Bài báo công bố giải pháp trên tạp chí",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điểm a khoản 1 Điều 91."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người nộp đơn có quyền yêu cầu hưởng quyền ưu tiên trên cơ sở {{đơn đầu tiên}} đăng ký bảo hộ cùng một {{đối tượng}}.",
+   "bank_extra": [
+    "văn bằng",
+    "nhóm sản phẩm"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đơn đầu tiên đã được nộp tại Việt Nam hoặc tại nước là thành viên của {{điều ước quốc tế}} có quy định về quyền ưu tiên mà {{Việt Nam}} cũng là thành viên.",
+   "bank_extra": [
+    "hiệp hội ngành",
+    "WTO chỉ riêng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quyền ưu tiên cho phép hưởng ngày nộp đơn sớm hơn trên cơ sở đơn đầu tiên về cùng một đối tượng.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 91."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu nội dung nguyên tắc ưu tiên và ý nghĩa quản trị.",
+   "model": "Người nộp đơn sáng chế, kiểu dáng, nhãn hiệu được hưởng ngày ưu tiên theo đơn đầu tiên nộp tại Việt Nam hoặc nước thành viên điều ước quốc tế về quyền ưu tiên (khoản 1 Điều 91); giúp mở rộng bảo hộ ra nước ngoài mà không bị mất tính mới hay bị đơn nộp sau chặn.",
+   "keywords": [
+    "đơn đầu tiên",
+    "điều ước quốc tế",
+    "ngày ưu tiên"
+   ]
+  }
+ ]
+}

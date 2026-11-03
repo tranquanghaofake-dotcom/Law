@@ -1,0 +1,118 @@
+{
+ "id": "tstt-quyen-dang-ky-khi-giao-viec",
+ "subject": "tai-san-tri-tue",
+ "chapter": "v2",
+ "term": "Quyền đăng ký khi tạo ra sáng chế theo giao việc, thuê việc",
+ "definition": "Tổ chức, cá nhân sau đây có quyền đăng ký sáng chế, kiểu dáng công nghiệp, thiết kế bố trí: a) Tác giả tạo ra sáng chế, kiểu dáng công nghiệp, thiết kế bố trí bằng công sức và chi phí của mình; b) Tổ chức, cá nhân đầu tư kinh phí, phương tiện vật chất cho tác giả dưới hình thức giao việc, thuê việc, tổ chức, cá nhân được giao quản lý nguồn gen cung cấp nguồn gen, tri thức truyền thống về nguồn gen theo hợp đồng tiếp cận nguồn gen và chia sẻ lợi ích, trừ trường hợp các bên có thỏa thuận khác.",
+ "plain": "Điểm quản trị quan trọng nhất về CHỦ THỂ: người lao động, kỹ sư tạo ra sáng chế là TÁC GIẢ, nhưng quyền ĐĂNG KÝ (và từ đó quyền sở hữu) thuộc về DOANH NGHIỆP đã đầu tư kinh phí, phương tiện dưới hình thức GIAO VIỆC, THUÊ VIỆC — trừ khi có thỏa thuận khác. Doanh nghiệp cần: quyết định giao việc, hợp đồng lao động hoặc hợp đồng thuê nghiên cứu có điều khoản sở hữu trí tuệ, quy chế bí mật. Tác giả vẫn có quyền nhân thân và quyền nhận thù lao (Điều 122, 135).",
+ "example": "Kỹ sư D được công ty E giao nghiên cứu và cấp kinh phí tạo ra máy sấy mới: E có quyền đăng ký sáng chế, D là tác giả được ghi tên và nhận thù lao. Nếu D tự nghiên cứu ở nhà bằng tiền riêng, D có quyền đăng ký.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điểm a, b khoản 1 Điều 86 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tstt-bi-mat-kinh-doanh",
+  "tstt-quyen-uu-tien",
+  "tstt-chuyen-nhuong-quyen-shcn"
+ ],
+ "keywords": [
+  "giao việc",
+  "thuê việc",
+  "đầu tư kinh phí",
+  "tác giả",
+  "thỏa thuận khác"
+ ],
+ "note": "Luật Sở hữu trí tuệ 50/2005/QH11 (hiệu lực 01/7/2006) đã được sửa đổi bởi Luật 36/2009/QH12, 42/2019/QH14, 07/2022/QH15, 93/2025/QH15 và 131/2025/QH15 (hiệu lực 01/4/2026) — văn bản hợp nhất 67/VBHN-VPQH 2026; ghi chép lớp học còn dẫn Nghị định 105/2006/NĐ-CP và Nghị định 99/2013/NĐ-CP, cần tự kiểm tra hiệu lực của các nghị định này trước khi dùng.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai có quyền đăng ký sáng chế do người lao động tạo ra theo giao việc của doanh nghiệp (không có thỏa thuận khác)?",
+   "options": [
+    "Doanh nghiệp đầu tư kinh phí, phương tiện cho tác giả",
+    "Người lao động",
+    "Cục Sở hữu trí tuệ",
+    "Cả hai cùng đứng tên bắt buộc"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 1 Điều 86.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 86 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tác giả có quyền đăng ký sáng chế khi nào?",
+   "options": [
+    "Tạo ra sáng chế bằng công sức và chi phí của mình",
+    "Luôn luôn, kể cả khi được thuê",
+    "Khi được Cục Sở hữu trí tuệ chỉ định",
+    "Khi là người nước ngoài"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 86.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 86 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quyền đăng ký thuộc tác giả",
+   "right": "Quyền đăng ký thuộc bên đầu tư",
+   "cases": [
+    {
+     "text": "Sinh viên tự chế tạo thiết bị bằng tiền tiết kiệm",
+     "answer": "left"
+    },
+    {
+     "text": "Nhân viên tạo kiểu dáng theo đơn đặt hàng và kinh phí của công ty",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 86."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tổ chức, cá nhân đầu tư kinh phí, phương tiện vật chất cho tác giả dưới hình thức {{giao việc}}, thuê việc có quyền đăng ký, trừ trường hợp các bên có {{thỏa thuận khác}}.",
+   "bank_extra": [
+    "tặng cho",
+    "quyết định của tòa án"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tác giả tạo ra sáng chế bằng {{công sức}} và {{chi phí}} của mình có quyền đăng ký sáng chế.",
+   "bank_extra": [
+    "uy tín",
+    "giấy phép"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người lao động tạo ra sáng chế trong khi thực hiện công việc được giao luôn là chủ sở hữu sáng chế đó.",
+   "answer": false,
+   "explain": "Sai. Quyền đăng ký thuộc tổ chức giao việc, đầu tư kinh phí (điểm b khoản 1 Điều 86), trừ thỏa thuận khác; người lao động là tác giả."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Phân biệt tác giả và chủ thể có quyền đăng ký sáng chế tạo ra theo giao việc.",
+   "model": "Tác giả là người trực tiếp sáng tạo (quyền nhân thân, thù lao); quyền đăng ký thuộc tổ chức, cá nhân đầu tư kinh phí, phương tiện dưới hình thức giao việc, thuê việc, trừ thỏa thuận khác (điểm b khoản 1 Điều 86).",
+   "keywords": [
+    "tác giả",
+    "giao việc",
+    "đầu tư kinh phí",
+    "thỏa thuận khác"
+   ]
+  }
+ ]
+}
