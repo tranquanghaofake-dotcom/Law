@@ -75,6 +75,16 @@
     {
      "text": "Đại lý thương mại",
      "answer": "right"
+    },
+    {
+     "text": "Người được ủy nhiệm ký hợp đồng bằng tên và trên danh nghĩa của doanh nghiệp giao đại diện",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 141 Luật Thương mại 2005"
+    },
+    {
+     "text": "Bên nhận ủy nhiệm mua hàng bằng tên của mình rồi chuyển giao cho khách",
+     "answer": "right",
+     "basis": "Điều 155 Luật Thương mại 2005"
     }
    ],
    "explain": "Điều 141, 155, 166."

@@ -69,6 +69,16 @@
     {
      "text": "Các nhà cung cấp nộp hồ sơ",
      "answer": "right"
+    },
+    {
+     "text": "Doanh nghiệp tư nhân mời nhiều nhà cung cấp cạnh tranh để mua máy móc",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 214 Luật Thương mại 2005"
+    },
+    {
+     "text": "Công ty nộp hồ sơ dự thầu để cung cấp máy in cho đơn vị đang mời thầu",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 214 Luật Thương mại 2005"
     }
    ],
    "explain": "Điều 214."

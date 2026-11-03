@@ -70,6 +70,16 @@
     {
      "text": "Bên mua chọn nhà cung cấp đáp ứng tốt nhất",
      "answer": "right"
+    },
+    {
+     "text": "Người bán tổ chức đấu giá công khai để chọn người trả giá cao nhất",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 185 Luật Thương mại 2005"
+    },
+    {
+     "text": "Bên mua mời thầu và chọn nhà cung cấp đáp ứng tốt nhất theo tiêu chí đã công bố",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 214 Luật Thương mại 2005"
     }
    ],
    "explain": "Điều 185, 214."

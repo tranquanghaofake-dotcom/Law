@@ -74,6 +74,11 @@
     {
      "text": "Tòa án",
      "answer": "left"
+    },
+    {
+     "text": "Hòa giải do bên thứ ba được các bên thỏa thuận chọn làm trung gian",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 317 Luật Thương mại 2005"
     }
    ],
    "explain": "Điều 317."
