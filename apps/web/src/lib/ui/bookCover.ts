@@ -1,42 +1,91 @@
-// Logic thuần cho bìa sách giáo trình (spec phần nhìn đợt 4 §3.2–3.3): tên trên bìa, chữ lồng, tìm môn.
+// Logic thuần cho bìa sách giáo trình (spec phần nhìn đợt 4 §3.2–3.3): tên trên bìa, tự co chữ tên môn, tìm môn.
 import { fold } from './conceptSearch';
 
 /** Tên in trên bìa: bỏ phần giải thích trong ngoặc ở cuối ("Luật Thương mại 1 (doanh nghiệp, …)" → "Luật Thương mại 1"). */
 export const coverTitle = (title: string): string => title.replace(/\s*\([^()]*\)\s*$/, '').trim();
 
-/** Ngắt tên thành dòng theo từ, mỗi dòng ≤ maxChars; quá maxLines thì cắt dòng cuối bằng "…". Từ dài hơn maxChars bị cắt. */
-export function wrapTitle(title: string, maxChars = 14, maxLines = 3): string[] {
+/** Phần chữ trên bìa: dòng nhỏ ("LUẬT"/"PHÁP LUẬT" khi tên bắt đầu như vậy), tên môn, số học phần ở cuối (nếu có). */
+export function coverParts(title: string): { kicker: string; name: string; num: string | null } {
+  let name = title.trim();
+  let kicker = '';
+  const head = /^(Pháp luật|Luật)\s+(.+)$/i.exec(name);
+  if (head) { kicker = head[1].toLocaleUpperCase('vi'); name = head[2]; }
+  const tail = /^(.+?)\s+(\d+)$/.exec(name);
+  return tail ? { kicker, name: tail[1], num: tail[2] } : { kicker, name, num: null };
+}
+
+export type FitOptions = { maxWidth: number; maxLines: number; maxSize: number; minSize: number; charW: number; maxHeight?: number };
+
+/** Chia các từ thành đúng n dòng sao cho dòng dài nhất (tính cả dấu cách) ngắn nhất. Tên môn ít từ nên duyệt hết. */
+function balance(words: string[], n: number): string[] | null {
+  if (n > words.length) return null;
+  if (n === 1) return [words.join(' ')];
+  let best: string[] | null = null;
+  let bestLen = Infinity;
+  for (let i = 1; i <= words.length - n + 1; i++) {
+    const head = words.slice(0, i).join(' ');
+    if (head.length >= bestLen) break;
+    const rest = balance(words.slice(i), n - 1);
+    if (!rest) continue;
+    const len = Math.max(head.length, ...rest.map((l) => l.length));
+    if (len < bestLen) { bestLen = len; best = [head, ...rest]; }
+  }
+  return best;
+}
+
+/** Ngắt dòng tham lam theo số ký tự, quá maxLines thì cắt dòng cuối bằng "…"; từ quá dài bị cắt. */
+function greedy(words: string[], maxChars: number, maxLines: number): string[] {
   const lines: string[] = [];
   let cur = '';
-  for (const word of title.split(/\s+/).filter(Boolean)) {
+  for (const word of words) {
     const w = word.length > maxChars ? word.slice(0, maxChars - 1) + '…' : word;
     if (!cur) cur = w;
     else if ((cur + ' ' + w).length <= maxChars) cur += ' ' + w;
     else { lines.push(cur); cur = w; }
   }
   if (cur) lines.push(cur);
-  if (lines.length > maxLines) {
-    const kept = lines.slice(0, maxLines);
-    const last = kept[maxLines - 1];
-    kept[maxLines - 1] = (last.length >= maxChars ? last.slice(0, maxChars - 1) : last) + '…';
-    return kept;
-  }
-  return lines;
+  if (lines.length <= maxLines) return lines;
+  const kept = lines.slice(0, maxLines);
+  const last = kept[maxLines - 1];
+  kept[maxLines - 1] = (last.length >= maxChars ? last.slice(0, maxChars - 1) : last) + '…';
+  return kept;
 }
 
-/** Chữ lồng cho tên ngắn đã viết tắt sẵn hoặc quá dài theo quy tắc chung. */
-const MONOGRAM: Record<string, string> = {
-  'ly-luan-nn-pl': 'LL', 'lich-su-nn-pl': 'LS', 'xay-dung-vbpl': 'XD', 'tai-chinh-doanh-nghiep': 'TCDN',
-  'so-huu-tri-tue': 'SHTT', 'tai-san-tri-tue': 'TSTT', 'to-tung-dan-su': 'TTDS', 'an-sinh-xa-hoi': 'ASXH',
-};
+/** Khoảng dòng tên môn (× cỡ chữ): chữ in hoa có dấu chồng (Ề, Ậ) cần ≥ 1,2. BookCover dùng cùng số này. */
+export const TITLE_LINE_H = 1.2;
 
-/** Chữ lồng to trên bìa: chữ cái đầu các từ của tên ngắn (≤ 4 chữ), số học phần giữ riêng ("Dân sự 1" → "DS 1"). */
-export function monogramFor(s: { id: string; short: string }): string {
-  if (MONOGRAM[s.id]) return MONOGRAM[s.id];
-  const words = s.short.split(/\s+/).filter(Boolean);
-  const num = words.find((w) => /^\d+$/.test(w));
-  const letters = words.filter((w) => !/^\d+$/.test(w)).map((w) => (/^[A-ZĐ&]+$/.test(w) ? w.replace(/&/g, '') : w[0].toUpperCase())).join('').slice(0, 4);
-  return num ? `${letters} ${num}` : letters;
+/** Chỉ thêm dòng khi chữ to thêm ít nhất chừng này (đơn vị viewBox). */
+const MORE_LINES_GAIN = 2;
+
+/** Cách chia tốt nhất trong 1…maxLines dòng cho các "khối" từ (từ đơn hoặc cặp từ), hoặc null nếu không cách nào đạt minSize. */
+function bestFit(chunks: string[], o: FitOptions): { lines: string[]; size: number } | null {
+  const lineH = TITLE_LINE_H;
+  let pick: { lines: string[]; size: number } | null = null;
+  for (let n = 1; n <= o.maxLines; n++) {
+    const lines = balance(chunks, n);
+    if (!lines) break;
+    const longest = Math.max(...lines.map((l) => l.length));
+    const raw = Math.min(o.maxWidth / (longest * o.charW), (o.maxHeight ?? Infinity) / (n * lineH));
+    const size = Math.min(o.maxSize, Math.floor(raw * 2) / 2);
+    if (size < o.minSize) continue;
+    if (!pick || size >= pick.size + MORE_LINES_GAIN) pick = { lines, size };
+  }
+  return pick;
+}
+
+/**
+ * Tên môn in hoa trên bìa, tự co chữ: thử 1…maxLines dòng (chia cân), mỗi cách lấy cỡ lớn nhất vừa maxWidth
+ * (bề rộng ước tính = số ký tự × charW × cỡ) và maxHeight (số dòng × cỡ × TITLE_LINE_H), làm tròn xuống 0,5, chặn ở maxSize.
+ * Chọn cỡ lớn nhất; thêm dòng chỉ khi chữ to hơn ≥ MORE_LINES_GAIN. Tên có số từ chẵn được ngắt theo cặp trước
+ * (từ ghép hai âm tiết: "QUẢN TRỊ / TÀI SẢN / TRÍ TUỆ"), không vừa mới ngắt tự do. Không cách nào đạt minSize →
+ * minSize, ngắt tham lam, cắt "…".
+ */
+export function fitTitle(text: string | readonly string[], o: FitOptions): { lines: string[]; size: number } {
+  const words = (typeof text === 'string' ? text.split(/\s+/) : [...text]).filter(Boolean).map((w) => w.toLocaleUpperCase('vi'));
+  if (!words.length) return { lines: [], size: o.maxSize };
+  const pairs = words.length % 2 === 0 ? words.flatMap((w, i) => (i % 2 ? [] : [`${w} ${words[i + 1]}`])) : null;
+  return (pairs && bestFit(pairs, o)) || bestFit(words, o)
+    || { lines: greedy(words, Math.floor(o.maxWidth / (o.charW * o.minSize)), o.maxLines), size: o.minSize };
 }
 
 /** Chữ cái đầu của tên (bỏ dấu), có cả bản bỏ chữ "luật" ở đầu: "Luật Dân sự 1" → "lds1 ds1". */

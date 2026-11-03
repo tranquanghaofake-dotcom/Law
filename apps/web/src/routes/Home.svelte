@@ -14,10 +14,10 @@
   import HeroCard from '$lib/ui/HeroCard.svelte';
   import HomeRail from '$lib/ui/HomeRail.svelte';
   import Vignette from '$lib/art/Vignette.svelte';
-  import { vignetteFor, subjectEmblem } from '$lib/art/registry';
+  import { vignetteFor } from '$lib/art/registry';
   import BookCover from '$lib/art/BookCover.svelte';
   import { shelfOf } from '$lib/ui/shelves';
-  import { coverTitle, monogramFor } from '$lib/ui/bookCover';
+  import { coverTitle } from '$lib/ui/bookCover';
 
   type Row = { subject: Subject; grade: string | null; mastered: number; total: number };
   let index = $state<ContentIndex | null>(null);
@@ -96,7 +96,7 @@
     <ul class="subject-rows">
       {#each rows as r (r.subject.id)}
         <li><a class="subject-row" href={hashFor('subject', { subject: r.subject.id })}>
-          <BookCover class="row-cover" title={coverTitle(r.subject.title)} monogram={monogramFor(r.subject)} color={shelfOf(r.subject.id).color} emblem={subjectEmblem(r.subject.id)} percent={r.total ? Math.round((r.mastered / r.total) * 100) : 0} state={studying ? 'learning' : 'new'} w={54} />
+          <BookCover class="row-cover" title={coverTitle(r.subject.title)} color={shelfOf(r.subject.id).color} percent={r.total ? Math.round((r.mastered / r.total) * 100) : 0} state={studying ? 'learning' : 'new'} w={54} />
           <span class="title"><b>{r.subject.title}</b></span>
           <span class="bar" aria-hidden="true"><span style="width:{r.total ? (r.mastered / r.total) * 100 : 0}%"></span></span>
           <span class="muted small">{r.mastered}/{r.total} thuần thục</span>

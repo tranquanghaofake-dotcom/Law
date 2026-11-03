@@ -6,11 +6,11 @@
   import { hashFor } from '$lib/router.svelte';
   import { subjectSummary, type SubjectSummary } from '$lib/ui/subjectSummary';
   import { SHELVES, OTHER_SHELF, shelfOf, orderedSubjects, byRecency, lastStudiedBySubject, type Shelf } from '$lib/ui/shelves';
-  import { coverTitle, monogramFor, matchSubject } from '$lib/ui/bookCover';
+  import { coverTitle, matchSubject } from '$lib/ui/bookCover';
   import { knownConcepts } from '$lib/ui/today';
   import SubjectArt from '$lib/art/SubjectArt.svelte';
   import BookCover from '$lib/art/BookCover.svelte';
-  import { PAGE_ART, subjectEmblem } from '$lib/art/registry';
+  import { PAGE_ART } from '$lib/art/registry';
 
   type Item = { subject: Subject; s: SubjectSummary; shelf: Shelf; state: 'new' | 'learning' | 'done' };
   let items = $state<Item[] | null>(null);
@@ -46,10 +46,11 @@
 </script>
 
 {#snippet cover(it: Item, w: number)}
+  {@const short = coverTitle(it.subject.title)}
   <li>
-    <a class="cover-link" href={hashFor('subject', { subject: it.subject.id })} data-shelf={it.shelf.id}>
-      <BookCover title={coverTitle(it.subject.title)} monogram={monogramFor(it.subject)} color={it.shelf.color} emblem={subjectEmblem(it.subject.id)} percent={it.s.percent} state={it.state} {w} />
-      <span class="name">{it.subject.title}</span>
+    <a class="cover-link" href={hashFor('subject', { subject: it.subject.id })} data-shelf={it.shelf.id} title={it.subject.title}>
+      <BookCover title={short} color={it.shelf.color} percent={it.s.percent} state={it.state} {w} />
+      <span class="name">{short}{#if short !== it.subject.title}<span class="sr-only">{it.subject.title.slice(short.length)}</span>{/if}</span>
       <span class="small muted">{it.s.mastered}/{it.s.total}{#if it.state === 'learning'} · đang học{:else if it.state === 'done'} · xong{/if}</span>
     </a>
   </li>

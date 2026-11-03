@@ -69,3 +69,12 @@ export function mixBlack(hex: string, amount: number): string {
   const ch = [1, 3, 5].map((i) => Math.round(parseInt(hex.slice(i, i + 2), 16) * (1 - amount)));
   return '#' + ch.map((c) => c.toString(16).padStart(2, '0')).join('');
 }
+
+/** Pha màu hex với nền sáng (mặc định trắng) theo tỉ lệ 0–1 — khối trên của bìa: mixWhite(màu kệ, .82, '#FBF6EA'). */
+export function mixWhite(hex: string, amount: number, base = '#ffffff'): string {
+  const ch = [1, 3, 5].map((i) => {
+    const c = parseInt(hex.slice(i, i + 2), 16), b = parseInt(base.slice(i, i + 2), 16);
+    return Math.round(c + (b - c) * amount);
+  });
+  return '#' + ch.map((c) => c.toString(16).padStart(2, '0')).join('');
+}
