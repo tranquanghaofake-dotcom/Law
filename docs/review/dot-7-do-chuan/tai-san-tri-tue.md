@@ -48,3 +48,10 @@ Mỗi dòng là một tình huống thêm vào câu `pair` (trường `basis` c�
 | `tstt-xu-phat-hanh-chinh` | Mức phạt hành chính không bù đắp hết thiệt hại thực tế của chủ thể quyền | Hạn chế biện pháp hành chính | Khoản 1, 2 Điều 211 và Điều 204 Luật Sở hữu trí tuệ |
 
 Tổng: 42 tình huống mới; 20 khái niệm đạt ≥ 4 tình huống.
+
+## Cờ dò trích dẫn (haiku-2)
+
+| id#item | loại | quyết định | ghi chú |
+|---|---|---|---|
+| `tstt-nhuong-quyen-thuong-mai#0`, `#1` | gán sai văn bản | **sửa** | "Điều 284 / khoản 1 Điều 284 Luật Sở hữu trí tuệ" → Luật Thương mại 2005 (nhượng quyền thương mại là Điều 284 LTM); sửa cả `source.cite` và `explain` |
+| `tstt-gop-von-bang-quyen-shtt#1` | lệch nội dung | báo nhầm | khoản 2 Điều 34 Luật SHTT (thời hạn bảo hộ nhà sản xuất bản ghi âm) đúng nội dung |
