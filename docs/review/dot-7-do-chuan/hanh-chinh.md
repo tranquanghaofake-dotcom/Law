@@ -142,3 +142,9 @@ Tổng: 56 tình huống mới; 27 khái niệm đạt ≥ 4 tình huống.
 | `hanh-chinh/phat-tien-hanh-chinh#7` | Mức phạt tiền trong xử phạt vi phạm hành chính từ 50.000 đồng đến 1.000.000.000 đồng đối với cá nhân, từ 100.000 đồng đến 2.000.000.000 đồng đối với tổ chức, trừ trường hợp luật có quy định khác. | Khoản 1 Điều 23 Luật Xử lý vi phạm hành chính | Trích gần nguyên văn, đối chiếu laws/xlvphc-vbhn-2026.txt (đã có sửa đổi 2025) |
 | `hanh-chinh/quyet-dinh-hanh-chinh#7` | Hành vi hành chính là hành vi của cơ quan hành chính nhà nước, của người có thẩm quyền trong cơ quan hành chính nhà nước thực hiện hoặc không thực hiện nhiệm vụ, công vụ theo quy định của pháp luật. | Khoản 9 Điều 2 Luật Khiếu nại | Nguyên văn, đối chiếu laws/lkn-vbhn-2026.txt |
 | `hanh-chinh/to-cao#7` | Tố cáo là việc cá nhân theo thủ tục quy định của Luật Tố cáo báo cho cơ quan, tổ chức, cá nhân có thẩm quyền biết về hành vi vi phạm pháp luật của bất kỳ cơ quan, tổ chức, cá nhân nào gây thiệt hại hoặc đe dọa gây thiệt hại đến lợi ích của Nhà nước, quyền và lợi ích hợp pháp của cơ quan, tổ chức, cá nhân. | Khoản 1 Điều 2 Luật Tố cáo | Nguyên văn, đối chiếu laws/ltc-vbhn-2026.txt |
+
+## Opus — chốt ⚠ NĐ 78/2025 thay Điều 7 NĐ 63/2010
+
+| id | câu/tình huống | trước → sau | căn cứ | ghi chú |
+|---|---|---|---|---|
+| thu-tuc-hanh-chinh (plain) | danh sách nguyên tắc theo Điều 7 NĐ 63/2010 | → "câu chữ cũ ở khoản 1–5 Điều 7 NĐ 63/2010; từ 2025 được thay bằng khoản 1–3 Điều 5 NĐ 78/2025/NĐ-CP (chưa đối chiếu nên không liệt kê)" | luatvietnam.vn (ghi chú hiệu lực NĐ 63/2010) | Bỏ danh sách có thể đã lỗi thời; định nghĩa khoản 1 Điều 3 giữ (đã tra, không đổi) |

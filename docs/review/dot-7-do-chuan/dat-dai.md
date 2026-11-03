@@ -113,3 +113,11 @@
 | `dat-dai/han-muc-giao-dat-nong-nghiep#7` | Hạn mức giao đất trồng cây hằng năm cho cá nhân trực tiếp sản xuất nông nghiệp là không quá 03 ha cho mỗi loại đất đối với tỉnh, thành phố trực thuộc trung ương thuộc khu vực Đông Nam Bộ và khu vực đồng bằng sông Cửu Long. | Điểm a khoản 1 Điều 176 Luật Đất đai 2024 | Trích gần nguyên văn, đối chiếu laws/ldd-vbhn-2026.txt |
 | `dat-dai/dat-su-dung-on-dinh-lau-dai#7` | Thời hạn giao đất nông nghiệp đối với cá nhân trực tiếp sản xuất nông nghiệp trong hạn mức giao đất là 50 năm; khi hết thời hạn sử dụng đất thì được tiếp tục sử dụng đất mà không phải làm thủ tục gia hạn. | Điểm a khoản 1 Điều 172 Luật Đất đai 2024 | Trích gần nguyên văn, đối chiếu laws/ldd-vbhn-2026.txt |
 | `dat-dai/giay-chung-nhan#7` | Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất là chứng thư pháp lý để Nhà nước xác nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất hợp pháp của người có quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất. | Khoản 21 Điều 3 Luật Đất đai 2024 | Nguyên văn, đối chiếu laws/ldd-vbhn-2026.txt |
+
+## Opus — chốt ⚠ "UBND cấp huyện" (Luật Đất đai VBHN 2026)
+
+| id | câu/tình huống | trước → sau | căn cứ | ghi chú |
+|---|---|---|---|---|
+| quy-hoach-su-dung-dat (plain) | "(cấp huyện đã kết thúc … cần tra văn bản sửa đổi …)" | → "câu chữ VBHN 44/2026 vẫn có quy hoạch sử dụng đất cấp huyện (Điều 66); từ 01/7/2025 cấp huyện kết thúc hoạt động (khoản 3 Điều 51 Luật 72/2025/QH15); cấp quy hoạch thay thế chưa đối chiếu" | `ldd-vbhn-2026.txt`; Luật 72/2025/QH15 | |
+| tham-quyen-giai-quyet-tranh-chap-dat-dai (plain) | "LƯU Ý THỰC TIỄN … (Nghị quyết 203/2025/QH15) — phải tra …" | → cùng mẫu "câu chữ VBHN vẫn ghi …; từ 01/7/2025 …; cơ quan thay thế chưa đối chiếu" | như trên | NĐ 151/2025/NĐ-CP đã tra nhưng chưa thấy điều chuyển thẩm quyền giải quyết tranh chấp → không viết |
+| tham-quyen-giai-quyet-tranh-chap-dat-dai#1 | nhiễu "Tòa án nhân dân cấp huyện giải quyết, UBND không có thẩm quyền" | → "Tòa án nhân dân khu vực giải quyết, UBND không có thẩm quyền" | khoản 2 Điều 236 Luật Đất đai (các bên được chọn) | Nhiễu vẫn sai |

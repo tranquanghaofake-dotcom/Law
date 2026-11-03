@@ -70,8 +70,9 @@
      "answer": "left"
     },
     {
-     "text": "Sở Tư pháp xem xét dự thảo quyết định của UBND tỉnh",
-     "answer": "right"
+     "text": "Bộ Tư pháp tổ chức đánh giá dự án luật do Chính phủ trình trước khi trình Chính phủ",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 34 Luật Ban hành văn bản quy phạm pháp luật 2025"
     },
     {
      "text": "Cơ quan chủ trì của Quốc hội đánh giá dự án luật trình Quốc hội trên cơ sở hồ sơ gửi chậm nhất 45 ngày trước ngày khai mạc kỳ họp",
@@ -84,7 +85,7 @@
      "basis": "Khoản 1 Điều 31 Luật Ban hành văn bản quy phạm pháp luật 2025"
     }
    ],
-   "explain": "Điều 37; Điều 34 và quy định tương ứng với địa phương."
+   "explain": "Điều 31, 34 (thẩm định), Điều 37 (thẩm tra)."
   },
   {
    "type": "cloze",

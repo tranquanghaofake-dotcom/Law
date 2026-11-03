@@ -97,3 +97,9 @@
 | `xay-dung-vbpl/xd-thoi-diem-co-hieu-luc#7` | Thời điểm có hiệu lực của văn bản quy phạm pháp luật không sớm hơn 45 ngày kể từ ngày thông qua hoặc ký ban hành đối với văn bản của cơ quan nhà nước ở trung ương; không sớm hơn 10 ngày đối với văn bản của chính quyền địa phương. | Khoản 1 Điều 53 Luật Ban hành văn bản quy phạm pháp luật 2025 | Trích gần nguyên văn, đối chiếu laws/bhvbqppl-vbhn-2025.txt |
 | `xay-dung-vbpl/xd-sua-doi-bai-bo#7` | Văn bản quy phạm pháp luật chỉ được sửa đổi, bổ sung, thay thế bằng văn bản quy phạm pháp luật của chính cơ quan, người có thẩm quyền đã ban hành văn bản đó, trừ trường hợp luật có quy định khác. | Khoản 1 Điều 8 Luật Ban hành văn bản quy phạm pháp luật 2025 | Trích gần nguyên văn (rút gọn phần ngoại lệ), đối chiếu laws/bhvbqppl-vbhn-2025.txt |
 | `xay-dung-vbpl/xd-nghi-quyet-quoc-hoi#7` | Quốc hội ban hành nghị quyết để thực hiện thí điểm một số chính sách mới thuộc thẩm quyền quyết định của Quốc hội khác với quy định của luật hiện hành. | Điểm a khoản 2 Điều 10 Luật Ban hành văn bản quy phạm pháp luật 2025 | Trích gần nguyên văn, đối chiếu laws/bhvbqppl-vbhn-2025.txt |
+
+## Opus — chốt ⚠ thẩm định ở địa phương
+
+| id | câu/tình huống | trước → sau | căn cứ | ghi chú |
+|---|---|---|---|---|
+| xd-tham-tra#2 | "Sở Tư pháp xem xét dự thảo quyết định của UBND tỉnh" (Thẩm định) — không có căn cứ trong Luật (Điều 45 giao Chính phủ quy định thủ tục ở địa phương) | → "Bộ Tư pháp tổ chức đánh giá dự án luật do Chính phủ trình trước khi trình Chính phủ" | khoản 1 Điều 34 Luật BHVBQPPL 2025 | Bỏ tình huống không kiểm chứng được; explain "Điều 34 và quy định tương ứng với địa phương" → "Điều 31, 34 (thẩm định), Điều 37 (thẩm tra)" |

@@ -113,3 +113,10 @@
 | `lao-dong/nghi-hang-nam#7` | Người lao động làm việc đủ 12 tháng cho một người sử dụng lao động thì được nghỉ hằng năm, hưởng nguyên lương; người làm nghề, công việc đặc biệt nặng nhọc, độc hại, nguy hiểm được nghỉ 16 ngày làm việc. | Điểm c khoản 1 Điều 113 Bộ luật Lao động 2019 | Ghép phần chung và điểm c khoản 1 Điều 113, đối chiếu laws/blld-vbhn-2025.txt |
 | `lao-dong/loai-hop-dong-lao-dong#7` | Nếu hết thời hạn 30 ngày kể từ ngày hợp đồng lao động xác định thời hạn hết hạn mà hai bên không ký kết hợp đồng lao động mới thì hợp đồng đã giao kết trở thành hợp đồng lao động không xác định thời hạn. | Điểm b khoản 2 Điều 20 Bộ luật Lao động 2019 | Trích gần nguyên văn, đối chiếu laws/blld-vbhn-2025.txt |
 | `lao-dong/tro-cap-thoi-viec#7` | Thời gian làm việc để tính trợ cấp thôi việc là tổng thời gian người lao động đã làm việc thực tế cho người sử dụng lao động trừ đi thời gian người lao động đã tham gia bảo hiểm thất nghiệp và thời gian làm việc đã được người sử dụng lao động chi trả trợ cấp thôi việc, trợ cấp mất việc làm. | Khoản 2 Điều 46 Bộ luật Lao động 2019 | Trích gần nguyên văn, đối chiếu laws/blld-vbhn-2025.txt |
+
+## Opus — chốt ⚠ "UBND cấp huyện" (BLLĐ, đình công)
+
+| id | câu/tình huống | trước → sau | căn cứ | ghi chú |
+|---|---|---|---|---|
+| dinh-cong (note mới) | — | "Câu chữ VBHN 18/2026 của BLLĐ vẫn ghi UBND cấp huyện (khoản 3 Điều 202, khoản 3 Điều 205), Chủ tịch UBND cấp huyện (Điều 211); từ 01/7/2025 cấp huyện kết thúc hoạt động (khoản 3 Điều 51 Luật 72/2025/QH15); cơ quan thay thế chưa đối chiếu" | `blld-vbhn-2025.txt`; Luật 72/2025/QH15 | Không khẳng định cơ quan thay thế |
+| dinh-cong#0 | nhiễu "Ủy ban nhân dân cấp huyện … tổ chức và lãnh đạo đình công" | → "Ủy ban nhân dân cấp xã …" | Điều 198 BLLĐ (chỉ tổ chức đại diện NLĐ) | Nhiễu vẫn sai rõ |
