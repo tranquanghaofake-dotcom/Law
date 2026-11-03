@@ -42,10 +42,6 @@
   <label class="setting"><span>Mục tiêu nhớ (retention) <b>{Math.round(settings.retention * 100)}%</b></span>
     <input type="range" min="0.8" max="0.95" step="0.01" value={settings.retention} onchange={(e) => saveSetting('retention', Number(e.currentTarget.value))} /></label>
   <p class="muted small">Cao hơn = ôn dày hơn nhưng nhớ chắc hơn. Mặc định 90%.</p>
-  <label class="setting"><span>Giao diện</span>
-    <select value={settings.theme} onchange={(e) => saveSetting('theme', e.currentTarget.value as 'auto' | 'light' | 'dark')}>
-      <option value="auto">Theo hệ thống</option><option value="light">Sáng</option><option value="dark">Tối</option>
-    </select></label>
   <h3 class="settings-h">Dữ liệu</h3>
   <p class="muted small">Tiến độ lưu trong trình duyệt này. Xuất file để chuyển máy hoặc lưu dự phòng.</p>
   <div class="row">

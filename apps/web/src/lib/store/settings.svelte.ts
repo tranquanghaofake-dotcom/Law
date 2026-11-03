@@ -5,10 +5,9 @@ export type Settings = {
   tts: boolean;
   reducedMotion: 'auto' | 'on' | 'off';
   retention: number;
-  theme: 'auto' | 'light' | 'dark';
 };
 
-export const DEFAULT_SETTINGS: Settings = { sound: true, tts: true, reducedMotion: 'auto', retention: 0.9, theme: 'auto' };
+export const DEFAULT_SETTINGS: Settings = { sound: true, tts: true, reducedMotion: 'auto', retention: 0.9 };
 
 export const settings: Settings = $state({ ...DEFAULT_SETTINGS });
 
