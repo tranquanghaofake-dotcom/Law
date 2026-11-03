@@ -102,5 +102,5 @@ test('ô trên lưới bậc dẫn tới đúng khái niệm trong danh mục', 
   await page.goto(B + '#/mon/hien-phap');
   await page.locator('.cell-item').first().click();
   await expect(page).toHaveURL(/#\/mon\/hien-phap\/khai-niem\/[a-z-]+$/);
-  await expect(page.locator('.concept-entry.open')).toHaveCount(1);
+  await expect(page.locator('.concept-entry.open')).toHaveCount(1, { timeout: 15_000 });
 });

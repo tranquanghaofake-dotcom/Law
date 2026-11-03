@@ -81,7 +81,13 @@
       <div class="card item">
         <p class="kicker">{#if c}<a href={hashFor('concepts', { subject: c.subject, concept: c.id })}>{c.term}</a>{:else}{m.conceptId}{/if}</p>
         <b>{promptText(m.item)}</b>
-        <p class="ans">Đáp án: {answerText(m.item)}</p>
+        {#if m.item.type === 'match' || m.item.type === 'pair' || m.item.type === 'sort'}
+          <!-- dạng nhiều dòng: gập gọn, chỉ mở khi cần xem đủ -->
+          {@const lines = answerText(m.item).split('\n')}
+          <details class="ans-more"><summary>Đáp án ({lines.length} dòng) — bấm để xem</summary>
+            <ul>{#each lines as ln, j (j)}<li>{ln.length > 160 ? ln.slice(0, 157) + '…' : ln}</li>{/each}</ul>
+          </details>
+        {:else}<p class="ans">Đáp án: {answerText(m.item)}</p>{/if}
         {#if explainOf(m)}<p>{explainOf(m)}</p>{/if}
       </div>
     {/each}
