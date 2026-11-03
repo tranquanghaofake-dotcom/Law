@@ -1,7 +1,7 @@
 {
   "name": "@luyen-luat/content",
   "private": true,
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Kho nội dung luật của Luyện Luật: môn, khái niệm, bộ 10 câu, schema (zod) và script kiểm tra",
   "type": "module",
   "exports": {
