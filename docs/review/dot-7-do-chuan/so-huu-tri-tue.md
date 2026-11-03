@@ -51,3 +51,12 @@
 ## Kiểm dò trích dẫn (haiku-3)
 
 - `bien-phap-xu-ly-xam-pham-shtt` (concept) — báo nhầm: "Điều 225" là BLHS 2015 (tội xâm phạm quyền tác giả), đã đúng; công cụ đối chiếu nhầm với Luật SHTT.
+
+## Sửa theo kiểm chéo (sonnet C, 03/11/2026) — nguồn: `$DOT7/verify/so-huu-tri-tue.md`
+
+| Khái niệm | Trước (đã bỏ/đổi) | Sau | Căn cứ | Ghi chú |
+|---|---|---|---|---|
+| `chuong-trinh-may-tinh` | Phần mềm là tập hợp chỉ dẫn dưới dạng mã, lệnh, được bảo hộ theo quyền tác giả | Phần mềm là tập hợp chỉ dẫn dưới dạng mã, lệnh, được bảo hộ như tác phẩm văn học | Khoản 1 Điều 22 Luật Sở hữu trí tuệ | viết lại không nhắc nhãn / sửa lỗi theo bảng verify |
+| `quyen-lien-quan` | Người viết và sáng tác tác phẩm âm nhạc, bản nhạc thuộc quyền tác giả | Người sáng tác ca khúc, bản nhạc là tác giả của tác phẩm âm nhạc | Điểm d khoản 1 Điều 14 Luật Sở hữu trí tuệ | viết lại không nhắc nhãn / sửa lỗi theo bảng verify |
+| `quyen-so-huu-tri-tue` | Bức tranh vẽ của họa sĩ là tác phẩm mỹ thuật được bảo hộ quyền tác giả | Bức tranh vẽ của họa sĩ là tác phẩm mỹ thuật, được bảo hộ ngay khi được thể hiện dưới hình thức vật chất, khôn | Khoản 1 Điều 14 và khoản 1 Điều 6 Luật Sở hữu trí tuệ | viết lại không nhắc nhãn / sửa lỗi theo bảng verify |
+| `thoi-han-bao-ho-quyen-tac-gia` | Quyền đặt tên cho tác phẩm của tác giả được bảo hộ vô thời hạn | Quyền đặt tên cho tác phẩm của tác giả, thời hạn bảo hộ không bị giới hạn | Khoản 1 Điều 27 Luật Sở hữu trí tuệ | viết lại không nhắc nhãn / sửa lỗi theo bảng verify |
