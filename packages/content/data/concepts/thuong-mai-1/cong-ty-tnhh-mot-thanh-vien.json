@@ -26,12 +26,12 @@
   {
    "type": "mcq",
    "level": 1,
-   "q": "Chủ sở hữu công ty TNHH một thành viên có thể là ai?",
+   "q": "Phương án nào liệt kê đầy đủ chủ sở hữu có thể có của công ty TNHH một thành viên?",
    "options": [
     "Một tổ chức hoặc một cá nhân",
-    "Chỉ cá nhân",
-    "Chỉ tổ chức",
-    "Hai cá nhân"
+    "Cá nhân có quốc tịch Việt Nam",
+    "Tổ chức kinh tế nước ngoài",
+    "Hai cá nhân trở lên đồng sở hữu"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 74.",
@@ -46,9 +46,9 @@
    "q": "Công ty TNHH một thành viên có được phát hành trái phiếu không?",
    "options": [
     "Có, theo quy định của luật",
-    "Không",
-    "Chỉ khi chuyển đổi",
-    "Chỉ trái phiếu chuyển đổi"
+    "Không, không được phát hành",
+    "Chỉ khi được chuyển đổi",
+    "Được phát hành cổ phiếu thường"
    ],
    "answer": 0,
    "explain": "Khoản 4 Điều 74.",
@@ -70,6 +70,16 @@
     {
      "text": "Chủ chỉ là cá nhân, trách nhiệm vô hạn",
      "answer": "right"
+    },
+    {
+     "text": "Chủ sở hữu công ty chỉ chịu trách nhiệm về các khoản nợ trong phạm vi số vốn điều lệ của công ty",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 74 Luật Doanh nghiệp 2020"
+    },
+    {
+     "text": "Mỗi cá nhân chỉ được làm chủ một doanh nghiệp do một cá nhân làm chủ và chịu trách nhiệm bằng toàn bộ tài sản",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 188 Luật Doanh nghiệp 2020 (phân biệt với TNHH một thành viên)"
     }
    ],
    "explain": "Điều 74, 188."
@@ -110,6 +120,18 @@
     "pháp nhân",
     "cổ phần"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Công ty trách nhiệm hữu hạn một thành viên có tư cách pháp nhân kể từ ngày được cấp Giấy chứng nhận đăng ký doanh nghiệp.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 74 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 74 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+    "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+   }
   }
  ]
 }

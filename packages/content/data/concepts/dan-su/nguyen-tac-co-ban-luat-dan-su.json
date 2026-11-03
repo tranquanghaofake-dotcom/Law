@@ -29,9 +29,9 @@
    "q": "Theo khoản 2 Điều 3, cam kết, thỏa thuận có hiệu lực thực hiện đối với các bên khi nào?",
    "options": [
     "Không vi phạm điều cấm của luật, không trái đạo đức xã hội",
-    "Được công chứng",
-    "Được Ủy ban nhân dân xác nhận",
-    "Có người làm chứng"
+    "Được công chứng theo quy định của pháp luật hiện hành",
+    "Được Ủy ban nhân dân xã xác nhận bằng văn bản",
+    "Có người làm chứng và có chữ ký của các bên xác nhận"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 3.",
@@ -46,9 +46,9 @@
    "q": "Nguyên tắc nào yêu cầu cá nhân, pháp nhân xác lập, thực hiện quyền, nghĩa vụ dân sự một cách thiện chí?",
    "options": [
     "Nguyên tắc thiện chí, trung thực",
-    "Nguyên tắc bình đẳng",
+    "Nguyên tắc bình đẳng các bên",
     "Nguyên tắc tự chịu trách nhiệm",
-    "Nguyên tắc hòa giải"
+    "Nguyên tắc hòa giải tranh chấp"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 3.",
@@ -70,6 +70,16 @@
     {
      "text": "Thỏa thuận không vi phạm điều cấm của luật có hiệu lực với các bên",
      "answer": "right"
+    },
+    {
+     "text": "Mọi cá nhân được đối xử bình đẳng khi tham gia giao dịch, không phân biệt giới tính",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 3 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Các bên tự quyết định nội dung hợp đồng cho thuê nhà, miễn là không trái luật",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 3 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 3 Bộ luật Dân sự 2015."
@@ -110,6 +120,18 @@
     "thiện chí, trung thực",
     "tự chịu trách nhiệm"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Cá nhân, pháp nhân phải xác lập, thực hiện, chấm dứt quyền, nghĩa vụ dân sự của mình một cách thiện chí, trung thực.",
+   "answer": true,
+   "explain": "Đúng. Khoản 3 Điều 3 Bộ luật Dân sự 2015 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 3 Bộ luật Dân sự 2015",
+    "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+   }
   }
  ]
 }

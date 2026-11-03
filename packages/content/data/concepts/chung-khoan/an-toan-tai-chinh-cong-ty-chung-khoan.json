@@ -45,9 +45,9 @@
    "q": "Công ty chứng khoán không đáp ứng chỉ tiêu an toàn tài chính có thể bị Ủy ban đưa vào diện nào?",
    "options": [
     "Cảnh báo, kiểm soát, kiểm soát đặc biệt",
-    "Phá sản ngay lập tức",
-    "Quốc hữu hóa",
-    "Niêm yết bắt buộc"
+    "Phá sản ngay lập tức, không có thủ tục",
+    "Quốc hữu hóa cả công ty chứng khoán",
+    "Niêm yết bắt buộc trên sàn giao dịch"
    ],
    "answer": 0,
    "explain": "Đoạn cuối Điều 92.",
@@ -69,6 +69,16 @@
     {
      "text": "Thu hồi Giấy phép thành lập và hoạt động kinh doanh chứng khoán",
      "answer": "right"
+    },
+    {
+     "text": "Đình chỉ hoạt động kinh doanh chứng khoán theo quyết định của Ủy ban",
+     "answer": "right",
+     "basis": "Mục 3 Chương VI Luật Chứng khoán 2019 (tổ chức lại, đình chỉ và thu hồi giấy phép)"
+    },
+    {
+     "text": "Công ty chứng khoán không đạt chỉ tiêu an toàn tài chính bị đưa vào diện cảnh báo",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 92 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Điều 92 và Điều 95."
@@ -109,6 +119,18 @@
     "cảnh báo",
     "kiểm soát đặc biệt"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Công ty chứng khoán, công ty quản lý quỹ đầu tư chứng khoán, chi nhánh công ty chứng khoán và công ty quản lý quỹ nước ngoài tại Việt Nam phải bảo đảm các chỉ tiêu an toàn tài chính.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 92 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 92 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+   }
   }
  ]
 }

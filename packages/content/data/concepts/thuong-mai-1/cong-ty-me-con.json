@@ -29,9 +29,9 @@
    "q": "Công ty được coi là công ty mẹ khi sở hữu bao nhiêu vốn điều lệ của công ty khác?",
    "options": [
     "Trên 50%",
-    "Từ 30%",
-    "Từ 25%",
-    "100%"
+    "Dưới 50%",
+    "Đúng 50%",
+    "Dưới 30%"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 1 Điều 195.",
@@ -70,6 +70,16 @@
     {
      "text": "Hai công ty con cùng mẹ sở hữu chéo lẫn nhau",
      "answer": "right"
+    },
+    {
+     "text": "Sở hữu trên 50% vốn điều lệ của công ty khác",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 195 Luật Doanh nghiệp 2020"
+    },
+    {
+     "text": "Có quyền quyết định bổ nhiệm đa số thành viên Hội đồng quản trị của công ty khác",
+     "answer": "left",
+     "basis": "Điểm b khoản 1 Điều 195 Luật Doanh nghiệp 2020"
     }
    ],
    "explain": "Điều 195."
@@ -110,6 +120,18 @@
     "Điều lệ",
     "sở hữu chéo"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Các công ty con của cùng một công ty mẹ không được đồng thời cùng góp vốn, mua cổ phần để sở hữu chéo lẫn nhau.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 195 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 195 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+    "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+   }
   }
  ]
 }

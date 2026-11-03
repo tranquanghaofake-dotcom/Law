@@ -30,9 +30,9 @@
    "q": "Mục đích nào của định giá tài sản trí tuệ được bài giảng nêu?",
    "options": [
     "Phục vụ góp vốn, thế chấp, chuyển nhượng",
-    "Phục vụ xin cấp văn bằng bảo hộ",
-    "Thay thế thủ tục đăng ký",
-    "Xác định tính mới của sáng chế"
+    "Phục vụ xin cấp văn bằng bảo hộ cho đối tượng",
+    "Thay thế thủ tục đăng ký văn bằng mới",
+    "Xác định tính mới của sáng chế và kiểu dáng"
    ],
    "answer": 0,
    "explain": "Định giá phục vụ thương mại hóa: chuyển nhượng, chuyển quyền sử dụng, góp vốn, thế chấp."
@@ -43,9 +43,9 @@
    "q": "Khi xâm phạm quyền SHTT, định giá được dùng để làm gì?",
    "options": [
     "Xác định thiệt hại và yêu cầu bồi thường",
-    "Hủy văn bằng bảo hộ",
+    "Hủy văn bằng bảo hộ của bên bị xâm phạm",
     "Miễn trách nhiệm cho bên xâm phạm",
-    "Cấp lại văn bằng"
+    "Cấp lại văn bằng bảo hộ cho chủ sở hữu"
    ],
    "answer": 0,
    "explain": "Mục đích tranh tụng: xác định thiệt hại, bồi thường."
@@ -63,6 +63,16 @@
     {
      "text": "Định giá để tính mức bồi thường do bị xâm phạm sáng chế",
      "answer": "right"
+    },
+    {
+     "text": "Định giá sáng chế để chuyển nhượng cho công ty khác",
+     "answer": "left",
+     "basis": "Ghi chép bài giảng Quản trị tài sản trí tuệ, ĐH Luật Hà Nội (chưa đối chiếu nguyên văn giáo trình); khái niệm thương mại hóa (chuyển nhượng)"
+    },
+    {
+     "text": "Định giá để làm căn cứ tính thiệt hại trong vụ kiện xâm phạm nhãn hiệu",
+     "answer": "right",
+     "basis": "Ghi chép bài giảng Quản trị tài sản trí tuệ, ĐH Luật Hà Nội (chưa đối chiếu nguyên văn giáo trình); đối chiếu khoản 1 Điều 204 Luật Sở hữu trí tuệ"
     }
    ],
    "explain": "Bài giảng phân nhóm mục đích định giá."

@@ -28,9 +28,9 @@
    "q": "Đất ở được sử dụng theo thời hạn nào?",
    "options": [
     "Ổn định lâu dài",
-    "50 năm",
-    "70 năm",
-    "20 năm"
+    "Thời hạn 50 năm liền",
+    "Thời hạn 70 năm liền",
+    "Thời hạn 20 năm liền"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 171.",
@@ -45,9 +45,9 @@
    "q": "Hết thời hạn 50 năm, cá nhân trực tiếp sản xuất nông nghiệp được giao đất trong hạn mức thì sao?",
    "options": [
     "Được tiếp tục sử dụng 50 năm mà không phải làm thủ tục gia hạn",
-    "Bị thu hồi",
-    "Phải làm thủ tục gia hạn và nộp tiền",
-    "Phải chuyển sang thuê đất"
+    "Bị thu hồi toàn bộ diện tích đất đã giao sau khi hết thời hạn sử dụng",
+    "Phải làm thủ tục gia hạn và nộp tiền sử dụng đất theo mức quy định",
+    "Phải chuyển sang thuê đất trả tiền hằng năm theo giá thị trường"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 1 Điều 172.",
@@ -73,6 +73,16 @@
     {
      "text": "Đất quốc phòng, an ninh",
      "answer": "left"
+    },
+    {
+     "text": "Đất rừng đặc dụng do tổ chức quản lý, thời hạn sử dụng không bị giới hạn",
+     "answer": "left",
+     "basis": "Khoản 3 Điều 171 Luật Đất đai 2024"
+    },
+    {
+     "text": "Đất nuôi trồng thủy sản giao cho cá nhân trực tiếp sản xuất nông nghiệp, sử dụng đến khi hết thời hạn nhất định thì phải xin gia hạn",
+     "answer": "right",
+     "basis": "Điểm a khoản 1 Điều 172 Luật Đất đai 2024"
     }
    ],
    "explain": "Điều 171, 172."
@@ -113,6 +123,17 @@
     "50 năm",
     "gia hạn"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thời hạn giao đất nông nghiệp đối với cá nhân trực tiếp sản xuất nông nghiệp trong hạn mức giao đất là 50 năm; khi hết thời hạn sử dụng đất thì được tiếp tục sử dụng đất mà không phải làm thủ tục gia hạn.",
+   "answer": true,
+   "explain": "Đúng. Điểm a khoản 1 Điều 172 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điểm a khoản 1 Điều 172 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)"
+   }
   }
  ]
 }

@@ -33,7 +33,7 @@
     "Vàng dạng thỏi mang ra khỏi lãnh thổ Việt Nam",
     "Nhẫn vàng mua bán tại tiệm trong nước",
     "Vàng trang sức tặng cho trong gia đình",
-    "Vàng nguyên liệu dùng sản xuất trang sức trong nước"
+    "Vàng nguyên liệu dùng làm trang sức trong nước"
    ],
    "answer": 0,
    "explain": "Điểm d khoản 1 Điều 4.",
@@ -48,9 +48,9 @@
    "q": "Đồng Việt Nam là ngoại hối trong trường hợp nào?",
    "options": [
     "Khi chuyển vào và chuyển ra khỏi lãnh thổ Việt Nam hoặc được sử dụng trong thanh toán quốc tế",
-    "Trong mọi trường hợp",
-    "Khi gửi tiết kiệm trong nước",
-    "Không bao giờ"
+    "Trong mọi trường hợp, kể cả khi đồng Việt Nam được giữ trong két sắt tại nhà riêng của mỗi gia đình",
+    "Khi gửi tiết kiệm trong nước bằng đồng Việt Nam tại các ngân hàng thương mại trong nước",
+    "Không phải ngoại hối, kể cả khi đồng Việt Nam được chuyển ra nước ngoài theo hành lý"
    ],
    "answer": 0,
    "explain": "Điểm đ khoản 1 Điều 4.",
@@ -72,6 +72,16 @@
     {
      "text": "Tiền đồng gửi tiết kiệm tại ngân hàng trong nước",
      "answer": "right"
+    },
+    {
+     "text": "Ngoại tệ tiền mặt bằng đô la Mỹ mang theo khi xuất cảnh",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 4 Pháp lệnh Ngoại hối 2005"
+    },
+    {
+     "text": "Đồng Việt Nam dùng để thanh toán giữa hai cá nhân trong nước, không chuyển ra khỏi lãnh thổ",
+     "answer": "right",
+     "basis": "Điểm đ khoản 1 Điều 4 Pháp lệnh Ngoại hối 2005"
     }
    ],
    "explain": "Khoản 1 Điều 4."

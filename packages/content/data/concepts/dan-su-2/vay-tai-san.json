@@ -30,7 +30,7 @@
    "options": [
     "Tài sản cùng loại theo đúng số lượng, chất lượng",
     "Chính tài sản đã nhận",
-    "Tiền tương đương giá trị tại thời điểm vay gấp đôi",
+    "Tiền gấp đôi giá trị tài sản tại thời điểm vay",
     "Không phải trả nếu không có văn bản"
    ],
    "answer": 0,
@@ -46,9 +46,9 @@
    "q": "Bên vay phải trả lãi khi nào?",
    "options": [
     "Khi có thỏa thuận hoặc pháp luật có quy định",
-    "Luôn luôn",
-    "Không bao giờ",
-    "Khi vay trên 100 triệu"
+    "Luôn luôn trả lãi, bất kể có thỏa thuận hay không",
+    "Khi khoản vay có thời hạn trên một năm trở lên",
+    "Khi vay trên 100 triệu đồng, dù không thỏa thuận"
    ],
    "answer": 0,
    "explain": "Điều 463.",
@@ -70,6 +70,16 @@
     {
      "text": "Trả lại chính tài sản đã mượn",
      "answer": "right"
+    },
+    {
+     "text": "Người vay một lượng gạo của người khác, khi đến hạn trả lại cùng số lượng và chất lượng gạo đó",
+     "answer": "left",
+     "basis": "Điều 463 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Người mượn chiếc máy khoan để dùng vài ngày rồi trả đúng chiếc máy đó",
+     "answer": "right",
+     "basis": "Điều 494 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 463, 494."
@@ -110,6 +120,18 @@
     "số lượng, chất lượng",
     "lãi"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Khi đến hạn trả, bên vay phải hoàn trả cho bên cho vay tài sản cùng loại theo đúng số lượng, chất lượng và chỉ phải trả lãi nếu có thỏa thuận hoặc pháp luật có quy định.",
+   "answer": true,
+   "explain": "Đúng. Điều 463 Bộ luật Dân sự 2015 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 463 Bộ luật Dân sự 2015",
+    "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+   }
   }
  ]
 }

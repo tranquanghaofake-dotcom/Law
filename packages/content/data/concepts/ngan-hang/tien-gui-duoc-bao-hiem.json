@@ -31,9 +31,9 @@
    "q": "Khoản tiền gửi nào là tiền gửi được bảo hiểm?",
    "options": [
     "Tiền gửi tiết kiệm bằng đồng Việt Nam của cá nhân tại ngân hàng thương mại",
-    "Tiền gửi bằng đô la Mỹ của cá nhân",
-    "Tiền gửi thanh toán của công ty cổ phần",
-    "Tiền mua cổ phiếu ngân hàng"
+    "Tiền gửi bằng đô la Mỹ của cá nhân tại ngân hàng thương mại trong nước",
+    "Tiền gửi thanh toán của công ty cổ phần tại ngân hàng thương mại",
+    "Tiền mua cổ phiếu ngân hàng do cá nhân đầu tư tại thị trường chứng khoán"
    ],
    "answer": 0,
    "explain": "Điều 17.",
@@ -72,6 +72,16 @@
     {
      "text": "Tiền gửi bằng euro của cá nhân",
      "answer": "right"
+    },
+    {
+     "text": "Tiền gửi tiết kiệm có kỳ hạn bằng đồng Việt Nam của cá nhân tại ngân hàng thương mại",
+     "answer": "left",
+     "basis": "Điều 17 Luật Bảo hiểm tiền gửi 2025"
+    },
+    {
+     "text": "Tiền gửi của cá nhân sở hữu trên 5% vốn điều lệ của chính ngân hàng nhận tiền gửi",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 18 Luật Bảo hiểm tiền gửi 2025"
     }
    ],
    "explain": "Điều 17."

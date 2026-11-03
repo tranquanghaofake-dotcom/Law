@@ -31,15 +31,15 @@
    "q": "Năng lực hành vi dân sự của cá nhân là gì?",
    "options": [
     "Khả năng bằng hành vi của mình xác lập, thực hiện quyền, nghĩa vụ dân sự",
-    "Khả năng có quyền dân sự",
-    "Khả năng được thừa kế",
-    "Khả năng sinh sống"
+    "Khả năng có quyền dân sự, được hưởng quyền và có nghĩa vụ theo luật định",
+    "Khả năng được thừa kế tài sản của người thân khi họ qua đời theo luật",
+    "Khả năng sinh sống bình thường trong xã hội và có nơi cư trú hợp pháp"
    ],
    "answer": 0,
    "explain": "Điều 19.",
    "source": {
     "kind": "statute",
-    "cite": "Điều 19 Hiến pháp 2013"
+    "cite": "Điều 19 Bộ luật Dân sự 2015"
    }
   },
   {
@@ -48,15 +48,15 @@
    "q": "Năng lực hành vi của cá nhân phụ thuộc yếu tố nào theo lý luận?",
    "options": [
     "Độ tuổi và khả năng nhận thức, điều khiển hành vi",
-    "Tài sản",
-    "Trình độ học vấn",
-    "Nơi cư trú"
+    "Tài sản và thu nhập của cá nhân trong từng thời kỳ",
+    "Trình độ học vấn và nghề nghiệp đã được đào tạo",
+    "Nơi cư trú hợp pháp và thời gian sinh sống"
    ],
    "answer": 0,
    "explain": "VD11.",
    "source": {
     "kind": "statute",
-    "cite": "Điều 19 Hiến pháp 2013"
+    "cite": "Điều 19 Bộ luật Dân sự 2015"
    }
   },
   {
@@ -72,6 +72,16 @@
     {
      "text": "Người 16 tuổi",
      "answer": "right"
+    },
+    {
+     "text": "Người thành niên từ đủ 18 tuổi, không thuộc trường hợp bị hạn chế theo luật",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 20 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Người chưa đủ 18 tuổi giao kết hợp đồng lớn mà chưa có người đại diện đồng ý",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 21 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 20, 21 BLDS 2015."
@@ -112,6 +122,18 @@
     "độ tuổi",
     "nhận thức"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Năng lực hành vi dân sự của cá nhân là khả năng của cá nhân bằng hành vi của mình xác lập, thực hiện quyền, nghĩa vụ dân sự.",
+   "answer": true,
+   "explain": "Đúng. Điều 19 Bộ luật Dân sự 2015 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 19 Bộ luật Dân sự 2015",
+    "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+   }
   }
  ]
 }

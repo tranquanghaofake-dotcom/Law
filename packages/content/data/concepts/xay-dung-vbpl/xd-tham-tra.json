@@ -31,9 +31,9 @@
    "q": "Cơ quan nào chủ trì thẩm tra dự án luật?",
    "options": [
     "Hội đồng Dân tộc, Ủy ban của Quốc hội theo lĩnh vực phụ trách",
-    "Bộ Tư pháp",
-    "Văn phòng Quốc hội",
-    "Chính phủ"
+    "Bộ Tư pháp, cơ quan chủ trì thẩm định dự án luật trước đó",
+    "Văn phòng Quốc hội, sau khi thống nhất với Chính phủ và Viện kiểm sát",
+    "Chính phủ, trên cơ sở đề xuất của các Bộ, cơ quan ngang Bộ liên quan"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 37.",
@@ -70,11 +70,22 @@
      "answer": "left"
     },
     {
-     "text": "Sở Tư pháp xem xét dự thảo quyết định của UBND tỉnh",
-     "answer": "right"
+     "text": "Bộ Tư pháp tổ chức đánh giá dự án luật do Chính phủ trình trước khi trình Chính phủ",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 34 Luật Ban hành văn bản quy phạm pháp luật 2025"
+    },
+    {
+     "text": "Cơ quan chủ trì của Quốc hội đánh giá dự án luật trình Quốc hội trên cơ sở hồ sơ gửi chậm nhất 45 ngày trước ngày khai mạc kỳ họp",
+     "answer": "left",
+     "basis": "Điều 37 Luật Ban hành văn bản quy phạm pháp luật 2025"
+    },
+    {
+     "text": "Chính sách của dự án luật do Chính phủ đề xuất được Bộ Tư pháp chủ trì, phối hợp các bộ tổ chức đánh giá trước khi trình Chính phủ",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 31 Luật Ban hành văn bản quy phạm pháp luật 2025"
     }
    ],
-   "explain": "Điều 37; Điều 34 và quy định tương ứng với địa phương."
+   "explain": "Điều 31, 34 (thẩm định), Điều 37 (thẩm tra)."
   },
   {
    "type": "cloze",

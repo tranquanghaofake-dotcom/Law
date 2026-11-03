@@ -28,9 +28,9 @@
    "q": "Theo khoản 40 Điều 4, quỹ đóng khác quỹ mở ở điểm nào?",
    "options": [
     "Chứng chỉ quỹ không được mua lại theo yêu cầu của nhà đầu tư",
-    "Không chào bán ra công chúng",
-    "Chỉ có nhà đầu tư chuyên nghiệp",
-    "Không có công ty quản lý quỹ"
+    "Không chào bán ra công chúng, chỉ bán cho nhà đầu tư đã biết",
+    "Dành cho nhà đầu tư chuyên nghiệp và tổ chức tài chính lớn",
+    "Không có công ty quản lý quỹ mà do nhà đầu tư tự quản lý"
    ],
    "answer": 0,
    "explain": "Khoản 40 Điều 4.",
@@ -45,9 +45,9 @@
    "q": "Chứng chỉ quỹ đóng phát hành thêm được phát hành cho ai trước?",
    "options": [
     "Nhà đầu tư hiện hữu, thông qua quyền mua được chuyển nhượng",
-    "Nhà đầu tư nước ngoài",
-    "Công ty quản lý quỹ",
-    "Ngân hàng giám sát"
+    "Nhà đầu tư nước ngoài và tổ chức tài chính nước ngoài",
+    "Công ty quản lý quỹ và ngân hàng giám sát của quỹ đóng",
+    "Ngân hàng giám sát và các tổ chức tài chính trong ngành"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 112; nhà đầu tư hiện hữu không mua hết thì phát hành cho nhà đầu tư bên ngoài.",
@@ -69,6 +69,16 @@
     {
      "text": "Không được đầu tư vào bất động sản",
      "answer": "right"
+    },
+    {
+     "text": "Chứng chỉ quỹ đã chào bán ra công chúng không được mua lại theo yêu cầu của nhà đầu tư",
+     "answer": "left",
+     "basis": "Khoản 40 Điều 4 Luật Chứng khoán 2019"
+    },
+    {
+     "text": "Chứng chỉ quỹ được mua lại theo yêu cầu của nhà đầu tư",
+     "answer": "right",
+     "basis": "Khoản 39 Điều 4 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Điểm d khoản 1 Điều 110."
@@ -97,9 +107,9 @@
    "q": "Quỹ đóng Q muốn tăng vốn. Lợi nhuận năm trước của quỹ âm. Ủy ban có chấp thuận không?",
    "options": [
     "Không, vì lợi nhuận năm liền trước phải là số dương",
-    "Có, nếu Đại hội nhà đầu tư thông qua",
-    "Có, vì tăng vốn giúp quỹ phục hồi",
-    "Có, nếu công ty quản lý quỹ bảo lãnh"
+    "Có, nếu Đại hội nhà đầu tư thông qua nghị quyết hợp lệ",
+    "Có, vì tăng vốn sẽ giúp quỹ phục hồi lợi nhuận",
+    "Có, nếu công ty quản lý quỹ bảo lãnh cho đợt tăng vốn"
    ],
    "answer": 0,
    "explain": "Điểm b khoản 1 Điều 112.",
@@ -119,6 +129,18 @@
     "lợi nhuận dương",
     "nhà đầu tư hiện hữu"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quỹ đóng là quỹ đại chúng mà chứng chỉ quỹ đã chào bán ra công chúng không được mua lại theo yêu cầu của nhà đầu tư.",
+   "answer": true,
+   "explain": "Đúng. Khoản 40 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 40 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+   }
   }
  ]
 }

@@ -31,7 +31,7 @@
    "q": "Khoản nào được ưu tiên thanh toán ĐẦU TIÊN khi phân chia tài sản doanh nghiệp bị tuyên bố phá sản?",
    "options": [
     "Chi phí phá sản",
-    "Khoản nợ lương",
+    "Khoản nợ lương, bảo hiểm",
     "Nghĩa vụ tài chính đối với Nhà nước",
     "Khoản nợ không có bảo đảm"
    ],
@@ -48,9 +48,9 @@
    "q": "Tài sản không đủ thanh toán cho các đối tượng cùng một thứ tự ưu tiên thì xử lý thế nào?",
    "options": [
     "Thanh toán theo tỷ lệ phần trăm tương ứng với số nợ",
-    "Ai nộp đơn trước được trả trước",
-    "Bốc thăm",
-    "Ưu tiên chủ nợ lớn nhất"
+    "Ai nộp đơn yêu cầu trước thì được trả nợ trước",
+    "Bốc thăm ngẫu nhiên để xác định thứ tự thanh toán",
+    "Ưu tiên chủ nợ lớn nhất theo số nợ và thời điểm đăng ký"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 46.",
@@ -72,6 +72,16 @@
     {
      "text": "Nghĩa vụ tài chính đối với Nhà nước",
      "answer": "right"
+    },
+    {
+     "text": "Chi phí phá sản được thanh toán đầu tiên",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 46 Luật Phục hồi, phá sản 2025"
+    },
+    {
+     "text": "Khoản nợ không có bảo đảm phải trả cho chủ nợ trong danh sách chủ nợ",
+     "answer": "right",
+     "basis": "Điểm g khoản 1 Điều 46 Luật Phục hồi, phá sản 2025"
     }
    ],
    "explain": "Điểm b, e khoản 1 Điều 46."

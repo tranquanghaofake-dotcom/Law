@@ -30,9 +30,9 @@
    "q": "Tổ chức là nhà đầu tư nước ngoài khi nào?",
    "options": [
     "Thành lập theo pháp luật nước ngoài",
-    "Có giám đốc người nước ngoài",
-    "Có trụ sở tại khu kinh tế",
-    "Có vốn trên 100 tỷ đồng"
+    "Có giám đốc người nước ngoài điều hành",
+    "Có trụ sở tại khu kinh tế của tỉnh biên giới",
+    "Có vốn trên một trăm tỷ đồng trở lên"
    ],
    "answer": 0,
    "explain": "Khoản 19 Điều 3.",
@@ -47,9 +47,9 @@
    "q": "Nhà đầu tư nước ngoài thành lập tổ chức kinh tế phải đáp ứng điều kiện nào?",
    "options": [
     "Điều kiện tiếp cận thị trường đối với nhà đầu tư nước ngoài tại Điều 8",
-    "Có vốn tối thiểu 1 triệu USD",
-    "Có đối tác Việt Nam",
-    "Được Quốc hội chấp thuận"
+    "Có vốn tối thiểu một triệu USD và có giấy phép hoạt động do Nhà nước cấp",
+    "Có đối tác Việt Nam góp vốn trên ba mươi phần trăm trong tổ chức kinh tế",
+    "Được Quốc hội chấp thuận bằng nghị quyết riêng trước khi thành lập tổ chức"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 19.",
@@ -71,6 +71,16 @@
     {
      "text": "Công ty TNHH thành lập tại Hà Nội, chủ sở hữu là công dân Việt Nam",
      "answer": "right"
+    },
+    {
+     "text": "Tổ chức thành lập theo pháp luật Singapore thực hiện hoạt động đầu tư kinh doanh tại Việt Nam",
+     "answer": "left",
+     "basis": "Khoản 19 Điều 3 Luật Đầu tư 2025"
+    },
+    {
+     "text": "Cá nhân mang quốc tịch Việt Nam đầu tư mở quán cà phê tại Đà Nẵng",
+     "answer": "right",
+     "basis": "Khoản 20 Điều 3 Luật Đầu tư 2025"
     }
    ],
    "explain": "Khoản 19, 20 Điều 3."

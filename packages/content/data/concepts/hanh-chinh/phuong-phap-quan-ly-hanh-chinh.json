@@ -46,9 +46,9 @@
    "q": "Phương pháp cưỡng chế trong quản lý hành chính nhà nước được áp dụng khi nào?",
    "options": [
     "Khi thuyết phục không đạt, đúng đối tượng, trình tự và do chủ thể có thẩm quyền áp dụng",
-    "Bất cứ khi nào chủ thể quản lý muốn",
-    "Trước khi thuyết phục",
-    "Chỉ do Tòa án áp dụng"
+    "Bất cứ khi nào chủ thể quản lý muốn, không cần căn cứ pháp luật, lý do hay thủ tục",
+    "Trước khi thuyết phục, giải thích và vận động người vi phạm hiểu rõ quy định",
+    "Chỉ do Tòa án áp dụng sau khi đã có bản án và quyết định của tòa án cấp trên"
    ],
    "answer": 0,
    "explain": "Slide bài giảng vấn đề 5: đặc điểm phương pháp cưỡng chế.",
@@ -74,6 +74,11 @@
     {
      "text": "Áp dụng biện pháp tổ chức trực tiếp",
      "answer": "left"
+    },
+    {
+     "text": "Thuyết phục, giáo dục đối tượng quản lý để tự giác thực hiện pháp luật",
+     "answer": "right",
+     "basis": "Slide bài giảng Luật Hành chính Việt Nam, Trường Đại học Luật Hà Nội, vấn đề 5 (⚠ chưa đối chiếu nguyên văn)"
     }
    ],
    "explain": "Slide bài giảng vấn đề 5."

@@ -30,9 +30,9 @@
    "q": "Doanh nghiệp có vị trí thống lĩnh bán hàng dưới giá thành toàn bộ dẫn đến loại bỏ đối thủ cạnh tranh thì sao?",
    "options": [
     "Là hành vi lạm dụng vị trí thống lĩnh bị cấm",
-    "Là khuyến mại hợp pháp",
-    "Là cạnh tranh lành mạnh",
-    "Chỉ bị cấm nếu kéo dài trên 1 năm"
+    "Là khuyến mại hợp pháp, được phép thực hiện tự do",
+    "Là cạnh tranh lành mạnh, được phép kinh doanh",
+    "Lạm dụng vị trí thống lĩnh, chỉ bị cấm khi có thiệt hại"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 1 Điều 27.",
@@ -47,9 +47,9 @@
    "q": "Ấn định giá bán lại tối thiểu gây thiệt hại cho khách hàng do doanh nghiệp có vị trí thống lĩnh thực hiện thuộc hành vi nào?",
    "options": [
     "Lạm dụng vị trí thống lĩnh thị trường",
-    "Cạnh tranh không lành mạnh",
-    "Tập trung kinh tế",
-    "Không vi phạm"
+    "Cạnh tranh không lành mạnh trên thị trường",
+    "Tập trung kinh tế bằng mua cổ phần",
+    "Không lạm dụng vị trí thống lĩnh thị trường"
    ],
    "answer": 0,
    "explain": "Điểm b khoản 1 Điều 27.",
@@ -71,6 +71,16 @@
     {
      "text": "Giảm giá nhờ cải tiến công nghệ, vẫn trên giá thành",
      "answer": "right"
+    },
+    {
+     "text": "Doanh nghiệp thống lĩnh bán dưới giá thành toàn bộ để loại đối thủ khỏi thị trường",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 27 Luật Cạnh tranh 2018"
+    },
+    {
+     "text": "Doanh nghiệp thống lĩnh bỏ vốn mở rộng nhà máy để tăng nguồn cung cho thị trường",
+     "answer": "right",
+     "basis": "Điều 27 Luật Cạnh tranh 2018 (các điểm a–g khoản 1 không liệt kê hành vi này)"
     }
    ],
    "explain": "Điều 27."

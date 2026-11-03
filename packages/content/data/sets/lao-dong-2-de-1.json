@@ -21,10 +21,10 @@
     {
       "q": "Trong cho thuê lại lao động, người lao động giao kết HĐLĐ với ai?",
       "options": [
-        "Bên thuê lại",
+        "Bên thuê lại lao động trực tiếp",
         "Doanh nghiệp cho thuê lại lao động",
-        "Cơ quan lao động",
-        "Không cần HĐLĐ"
+        "Cơ quan lao động địa phương nơi làm",
+        "Không cần HĐLĐ với bên nào cả"
       ],
       "answer": 1,
       "explain": "Khoản 1 Điều 52.",
@@ -48,9 +48,9 @@
       "q": "Doanh nghiệp cho thuê lại lao động cần điều kiện gì?",
       "options": [
         "Ký quỹ và có Giấy phép hoạt động cho thuê lại lao động",
-        "Chỉ cần đăng ký doanh nghiệp",
-        "Có vốn nhà nước",
-        "Được UBND cấp xã đồng ý"
+        "Chỉ cần đăng ký doanh nghiệp là đủ, không cần giấy phép riêng",
+        "Có vốn nhà nước tối thiểu theo quy định của pháp luật lao động",
+        "Được UBND cấp xã đồng ý bằng văn bản xác nhận của địa phương"
       ],
       "answer": 0,
       "explain": "Khoản 1 Điều 54.",
@@ -112,10 +112,10 @@
     {
       "q": "Người từ đủ 13 đến chưa đủ 15 tuổi được làm công việc gì?",
       "options": [
-        "Mọi công việc",
+        "Mọi công việc phù hợp với sức khỏe của người lao động",
         "Chỉ công việc nhẹ theo danh mục do Bộ trưởng ban hành",
-        "Không được làm việc",
-        "Công việc nặng nhọc nếu cha mẹ đồng ý"
+        "Không được làm việc cho đến khi đủ 16 tuổi trở lên",
+        "Công việc nặng nhọc nếu cha mẹ đồng ý bằng văn bản"
       ],
       "answer": 1,
       "explain": "Khoản 3 Điều 143.",
@@ -126,9 +126,9 @@
       "q": "Người lao động cao tuổi có quyền thỏa thuận điều gì?",
       "options": [
         "Rút ngắn thời giờ làm việc hằng ngày hoặc làm việc không trọn thời gian",
-        "Không ký HĐLĐ",
-        "Làm thêm giờ không giới hạn",
-        "Không đóng BHXH"
+        "Không ký HĐLĐ bằng văn bản với người sử dụng lao động đó trong mọi trường hợp",
+        "Làm thêm giờ không giới hạn theo thỏa thuận riêng với người sử dụng lao động",
+        "Không chịu sự điều chỉnh của Bộ luật Lao động trong suốt thời gian làm việc"
       ],
       "answer": 0,
       "explain": "Khoản 2 Điều 148.",

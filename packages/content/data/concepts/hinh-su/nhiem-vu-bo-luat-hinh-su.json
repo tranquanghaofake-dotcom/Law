@@ -29,9 +29,9 @@
    "q": "Bộ luật Hình sự quy định về nội dung gì theo Điều 1?",
    "options": [
     "Tội phạm và hình phạt",
-    "Vi phạm hành chính và xử phạt",
-    "Thủ tục điều tra, truy tố, xét xử",
-    "Bồi thường thiệt hại ngoài hợp đồng"
+    "Vi phạm hành chính",
+    "Thủ tục điều tra, xét xử",
+    "Bồi thường ngoài hợp đồng"
    ],
    "answer": 0,
    "explain": "Đoạn 2 Điều 1; thủ tục tố tụng thuộc Bộ luật Tố tụng hình sự.",
@@ -46,7 +46,7 @@
    "q": "Nhiệm vụ nào KHÔNG được nêu trong Điều 1 Bộ luật Hình sự?",
    "options": [
     "Điều chỉnh quan hệ hợp đồng giữa các doanh nghiệp",
-    "Bảo vệ quyền con người, quyền công dân",
+    "Bảo vệ chủ quyền quốc gia, an ninh của đất nước",
     "Giáo dục mọi người ý thức tuân theo pháp luật",
     "Phòng ngừa và đấu tranh chống tội phạm"
    ],
@@ -70,6 +70,16 @@
     {
      "text": "Quy định trình tự điều tra, truy tố, xét xử",
      "answer": "right"
+    },
+    {
+     "text": "Quy định tội phạm và khung hình phạt cho từng hành vi nguy hiểm cho xã hội",
+     "answer": "left",
+     "basis": "Điều 1 Bộ luật Hình sự 2015"
+    },
+    {
+     "text": "Quy định cách thức triệu tập người làm chứng khi điều tra vụ án hình sự",
+     "answer": "right",
+     "basis": "Điều 1 Bộ luật Hình sự 2015 (nhiệm vụ BLHS không gồm thủ tục)"
     }
    ],
    "explain": "Điều 1 Bộ luật Hình sự."

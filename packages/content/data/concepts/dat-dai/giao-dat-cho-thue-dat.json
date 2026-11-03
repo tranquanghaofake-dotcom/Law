@@ -28,10 +28,10 @@
    "level": 1,
    "q": "Cá nhân trực tiếp sản xuất nông nghiệp được giao đất nông nghiệp trong hạn mức theo hình thức nào?",
    "options": [
-    "Giao đất không thu tiền sử dụng đất",
-    "Giao đất có thu tiền",
-    "Cho thuê trả tiền hằng năm",
-    "Đấu giá"
+    "Được giao đất mà không phải nộp tiền sử dụng đất",
+    "Giao đất có thu tiền sử dụng đất theo giá thị trường",
+    "Cho thuê trả tiền hằng năm, đóng đủ tiền",
+    "Đấu giá quyền sử dụng đất, có thu tiền"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 118.",
@@ -46,9 +46,9 @@
    "q": "Trường hợp không thuộc Điều 118, 119 thì Nhà nước áp dụng hình thức nào?",
    "options": [
     "Cho thuê đất trả tiền một lần hoặc hằng năm",
-    "Giao đất không thu tiền",
-    "Tịch thu",
-    "Trưng dụng"
+    "Giao đất không thu tiền cho mọi đối tượng",
+    "Tịch thu toàn bộ đất theo quyết định hành chính",
+    "Trưng dụng đất theo quyết định của Ủy ban xã"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 120.",
@@ -70,6 +70,16 @@
     {
      "text": "Doanh nghiệp làm nhà máy trong khu công nghiệp",
      "answer": "right"
+    },
+    {
+     "text": "Cá nhân trực tiếp sản xuất nông nghiệp được giao đất nông nghiệp trong hạn mức",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 118 Luật Đất đai 2024"
+    },
+    {
+     "text": "Doanh nghiệp có dự án sản xuất nông nghiệp, được Nhà nước cho sử dụng đất và thu tiền một lần cho cả thời gian sử dụng",
+     "answer": "right",
+     "basis": "Điểm a khoản 2 Điều 120 Luật Đất đai 2024"
     }
    ],
    "explain": "Điều 118, 120."
@@ -110,6 +120,18 @@
     "một lần",
     "hằng năm"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Nhà nước cho thuê đất thu tiền thuê đất một lần cho cả thời gian thuê hoặc thu tiền thuê đất hằng năm.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 120 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 120 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Van-ban-hop-nhat-44-VBHN-VPQH-2026-Luat-Dat-dai-699655.aspx"
+   }
   }
  ]
 }

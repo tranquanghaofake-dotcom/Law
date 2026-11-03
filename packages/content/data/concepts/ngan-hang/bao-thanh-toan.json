@@ -31,9 +31,9 @@
    "q": "Đối tượng mà tổ chức tín dụng mua lại trong bao thanh toán là gì?",
    "options": [
     "Khoản phải thu của bên bán theo hợp đồng mua bán hàng hóa, cung ứng dịch vụ",
-    "Hối phiếu, séc của bên thụ hưởng",
-    "Cổ phiếu của bên mua",
-    "Tài sản cố định của bên bán"
+    "Hối phiếu và séc do bên thụ hưởng phát hành để thanh toán cho bên bán hàng",
+    "Cổ phiếu do bên mua hàng phát hành để góp vốn cho doanh nghiệp bán hàng",
+    "Tài sản cố định của bên bán, như nhà xưởng, máy móc, phương tiện"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 4.",
@@ -72,6 +72,16 @@
     {
      "text": "Mua kỳ phiếu trước hạn của bên thụ hưởng",
      "answer": "right"
+    },
+    {
+     "text": "Ngân hàng ứng trước tiền thanh toán thay cho bên mua theo hợp đồng mua bán hàng hóa",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 4 Luật Các tổ chức tín dụng 2024"
+    },
+    {
+     "text": "Ngân hàng mua trái phiếu của doanh nghiệp trước khi đến hạn, có bảo lưu quyền truy đòi",
+     "answer": "right",
+     "basis": "Khoản 6 Điều 4 Luật Các tổ chức tín dụng 2024"
     }
    ],
    "explain": "Khoản 1, 6 Điều 4."
@@ -112,6 +122,18 @@
     "ứng trước",
     "hợp đồng mua, bán"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Bao thanh toán là hình thức cấp tín dụng thông qua việc mua lại khoản phải thu của bên bán hoặc ứng trước tiền thanh toán thay cho bên mua theo hợp đồng mua, bán hàng hóa, cung ứng dịch vụ giữa bên mua và bên bán.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)",
+    "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-143-2026-VBHN-LQ-VPQH-Luat-Cac-to-chuc-tin-dung-729869.aspx"
+   }
   }
  ]
 }

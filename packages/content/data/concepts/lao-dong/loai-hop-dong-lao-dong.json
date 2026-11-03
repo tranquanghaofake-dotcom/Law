@@ -46,9 +46,9 @@
    "q": "Hết hạn hợp đồng xác định thời hạn, người lao động vẫn làm việc, quá 30 ngày hai bên không ký hợp đồng mới thì sao?",
    "options": [
     "Hợp đồng trở thành hợp đồng lao động không xác định thời hạn",
-    "Hợp đồng chấm dứt",
-    "Tự động gia hạn 12 tháng",
-    "Người lao động phải nghỉ việc"
+    "Hợp đồng chấm dứt ngay, không cần thông báo cho người lao động",
+    "Tự động gia hạn 12 tháng theo đúng thời hạn hợp đồng đã ký trước đó",
+    "Người lao động phải nghỉ việc và người sử dụng không phải trả lương"
    ],
    "answer": 0,
    "explain": "Điểm b khoản 2 Điều 20.",
@@ -70,6 +70,16 @@
     {
      "text": "Thời hạn không quá 36 tháng",
      "answer": "right"
+    },
+    {
+     "text": "Hợp đồng ký với người làm việc ổn định lâu dài, không có ngày kết thúc hiệu lực",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 20 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Hợp đồng ghi thời điểm kết thúc sau 12 tháng kể từ thời điểm có hiệu lực, không quá 36 tháng",
+     "answer": "right",
+     "basis": "Điểm b khoản 1 Điều 20 Bộ luật Lao động 2019"
     }
    ],
    "explain": "Khoản 1 Điều 20."
@@ -110,6 +120,17 @@
     "30 ngày",
     "01 lần"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Nếu hết thời hạn 30 ngày kể từ ngày hợp đồng lao động xác định thời hạn hết hạn mà hai bên không ký kết hợp đồng lao động mới thì hợp đồng đã giao kết trở thành hợp đồng lao động không xác định thời hạn.",
+   "answer": true,
+   "explain": "Đúng. Điểm b khoản 2 Điều 20 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điểm b khoản 2 Điều 20 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)"
+   }
   }
  ]
 }

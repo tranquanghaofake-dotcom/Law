@@ -29,9 +29,9 @@
    "q": "Tình tiết nào là tình tiết giảm nhẹ trong xử phạt vi phạm hành chính?",
    "options": [
     "Người vi phạm tự nguyện khắc phục hậu quả, bồi thường thiệt hại",
-    "Vi phạm có tổ chức",
-    "Tái phạm",
-    "Lợi dụng chức vụ"
+    "Vi phạm có tổ chức, có sự bàn bạc từ trước và có kế hoạch",
+    "Tái phạm nhiều lần trong thời gian ngắn sau khi bị xử phạt",
+    "Lợi dụng chức vụ, quyền hạn để thực hiện vi phạm hành chính"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 9.",
@@ -47,7 +47,7 @@
    "options": [
     "Tình tiết giảm nhẹ",
     "Trường hợp không xử phạt",
-    "Tình tiết tăng nặng",
+    "Tình tiết giảm nhẹ không được xem xét",
     "Căn cứ chuyển hình sự"
    ],
    "answer": 0,
@@ -74,6 +74,16 @@
     {
      "text": "Phụ nữ mang thai vi phạm",
      "answer": "left"
+    },
+    {
+     "text": "Vi phạm do bị ép buộc hoặc bị lệ thuộc về vật chất hoặc tinh thần",
+     "answer": "left",
+     "basis": "Khoản 4 Điều 9 Luật Xử lý vi phạm hành chính"
+    },
+    {
+     "text": "Vi phạm có tổ chức",
+     "answer": "right",
+     "basis": "Điểm a khoản 1 Điều 10 Luật Xử lý vi phạm hành chính"
     }
    ],
    "explain": "Điều 9, 10."
@@ -114,6 +124,17 @@
     "vượt quá",
     "khó khăn"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Vi phạm hành chính vì hoàn cảnh đặc biệt khó khăn mà không do mình gây ra là tình tiết giảm nhẹ.",
+   "answer": true,
+   "explain": "Đúng. Khoản 6 Điều 9 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 6 Điều 9 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)"
+   }
   }
  ]
 }

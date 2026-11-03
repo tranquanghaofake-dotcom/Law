@@ -33,8 +33,8 @@
    "options": [
     "Hình thư thời Lý (1042)",
     "Quốc triều hình luật",
-    "Hoàng Việt luật lệ",
-    "Hình thư thời Trần"
+    "Bộ Hoàng Việt luật lệ",
+    "Hình thư thời Trần 1341"
    ],
    "answer": 0,
    "explain": "Toàn thư năm 1042. Quốc triều hình luật (Hậu Lê), Hoàng Việt luật lệ (Nguyễn) ra đời muộn hơn.",
@@ -49,9 +49,9 @@
    "q": "Theo Toàn thư, lý do Lý Thái Tông cho soạn Hình thư là gì?",
    "options": [
     "Kiện tụng phiền nhiễu, quan lại câu nệ luật văn, xử khắc nghiệt, có người bị oan",
-    "Để chuẩn bị chiến tranh với nhà Tống",
-    "Để thu thêm thuế",
-    "Vì nhà Tống yêu cầu"
+    "Để chuẩn bị chiến tranh với nhà Tống, tăng cường quân sự và lương thảo cho các đạo quân",
+    "Để thu thêm thuế ruộng đất và tiền thân dân, bổ sung ngân khố của triều đình nhà Lý",
+    "Vì nhà Tống yêu cầu phải soạn một bộ luật giống hệt bộ luật của nhà Tống"
    ],
    "answer": 0,
    "explain": "Toàn thư năm 1042.",
@@ -77,6 +77,11 @@
     {
      "text": "Văn bản Hình thư còn nguyên vẹn đến nay",
      "answer": "right"
+    },
+    {
+     "text": "Toàn thư chỉ chép việc soạn và ban Hình thư vào năm 1042",
+     "answer": "left",
+     "basis": "Đại Việt sử ký toàn thư, Bản kỷ quyển II, Kỷ nhà Lý, Thái Tông, năm 1042 (laws/lich-su-su-lieu.txt)"
     }
    ],
    "explain": "Hình thư không còn; chỉ biết qua Toàn thư."

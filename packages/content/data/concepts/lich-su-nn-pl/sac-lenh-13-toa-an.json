@@ -31,9 +31,9 @@
    "q": "Theo Điều thứ 17 Sắc lệnh 13 (1946), khi tòa đệ nhị cấp xử việc tiểu hình thì có thêm ai tham gia?",
    "options": [
     "Hai viên Phụ thẩm nhân dân",
-    "Một Kiểm sát viên",
-    "Hội đồng nhân dân tỉnh",
-    "Ủy ban hành chính xã"
+    "Một Kiểm sát viên và thư ký",
+    "Hội đồng nhân dân tỉnh xét xử",
+    "Ủy ban hành chính xã sở tại"
    ],
    "answer": 0,
    "explain": "Điều thứ 17 Sắc lệnh 13.",
@@ -48,9 +48,9 @@
    "q": "Theo Điều thứ 4 Sắc lệnh 13, ban tư pháp xã chỉ được bắt giữ người khi nào?",
    "options": [
     "Có trát nã của thẩm phán hoặc người phạm tội quả tang",
-    "Khi Chủ tịch xã quyết định",
-    "Khi có đơn tố cáo",
-    "Bất cứ lúc nào"
+    "Khi Chủ tịch xã quyết định bắt người để điều tra",
+    "Khi có đơn tố cáo của hàng xóm hoặc người thân",
+    "Bất cứ lúc nào khi thấy có dấu hiệu nghi ngờ phạm tội"
    ],
    "answer": 0,
    "explain": "Điều thứ 4 Sắc lệnh 13.",
@@ -72,6 +72,16 @@
     {
      "text": "Đặt ở mỗi tỉnh và Hà Nội, Hải Phòng, Sài Gòn - Chợ Lớn",
      "answer": "right"
+    },
+    {
+     "text": "Tòa án đặt ở mỗi quận, phủ, huyện, châu, quản hạt là địa hạt quận",
+     "answer": "left",
+     "basis": "Sắc lệnh 13, Điều thứ 7 (laws/lich-su-su-lieu.txt)"
+    },
+    {
+     "text": "Tòa án đặt ở mỗi tỉnh và các thành phố lớn",
+     "answer": "right",
+     "basis": "Sắc lệnh 13, Điều thứ 12 (laws/lich-su-su-lieu.txt)"
     }
    ],
    "explain": "Điều thứ 7, 12 Sắc lệnh 13."

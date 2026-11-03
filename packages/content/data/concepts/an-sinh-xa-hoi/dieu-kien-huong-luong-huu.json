@@ -31,7 +31,7 @@
    "q": "Theo Luật BHXH 2024, người lao động cần đóng BHXH bắt buộc tối thiểu bao lâu để được hưởng lương hưu (khi đủ tuổi)?",
    "options": [
     "Từ đủ 15 năm",
-    "Từ đủ 20 năm",
+    "Từ đủ 20 năm trở lên",
     "Từ đủ 10 năm",
     "Từ đủ 25 năm"
    ],
@@ -48,8 +48,8 @@
    "q": "Tuổi nghỉ hưu làm căn cứ hưởng lương hưu được xác định theo văn bản nào?",
    "options": [
     "Khoản 2 Điều 169 Bộ luật Lao động",
-    "Luật Việc làm",
-    "Luật Cán bộ, công chức",
+    "Luật Việc làm và văn bản dưới luật",
+    "Luật Cán bộ, công chức, viên chức",
     "Nghị quyết của Quốc hội hằng năm"
    ],
    "answer": 0,
@@ -72,6 +72,16 @@
     {
      "text": "Thời gian đóng tối thiểu 15 năm để hưởng lương hưu",
      "answer": "right"
+    },
+    {
+     "text": "Người nghỉ việc đủ tuổi nghỉ hưu, đã đóng bảo hiểm bắt buộc đủ 15 năm thì được hưởng lương hưu",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 64 Luật Bảo hiểm xã hội 2024"
+    },
+    {
+     "text": "Người làm nghề nặng nhọc, đóng đủ 15 năm và có tuổi thấp hơn tối đa 10 tuổi so với tuổi nghỉ hưu quy định",
+     "answer": "right",
+     "basis": "Điểm b khoản 1 Điều 64 Luật Bảo hiểm xã hội 2024"
     }
    ],
    "explain": "Điều 64 Luật 2024."
@@ -105,7 +115,7 @@
    "type": "recall",
    "level": 5,
    "q": "Nêu điều kiện hưởng lương hưu thông thường theo Luật BHXH 2024.",
-   "model": "Nghỉ việc, có thời gian đóng BHXH bắt buộc từ đủ 15 năm trở lên và đủ tuổi nghỉ hưu theo khoản 2 Điều 169 Bộ luật Lao động (điểm a khoản 1 Điều 64).",
+   "model": "Nghỉ việc, có thời gian đóng BHXH bắt buộc từ đủ 15 năm trở lên và đủ tuổi nghỉ hưu theo khoản 2 Điều 169 Bộ luật Lao động (điểm a khoản 1 Điều 64 Luật BHXH 2024).",
    "keywords": [
     "15 năm",
     "tuổi nghỉ hưu",

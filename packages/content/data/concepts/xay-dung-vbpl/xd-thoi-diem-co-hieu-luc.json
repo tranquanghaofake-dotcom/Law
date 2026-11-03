@@ -50,9 +50,9 @@
    "q": "Văn bản ban hành theo trình tự, thủ tục rút gọn có thể có hiệu lực từ khi nào?",
    "options": [
     "Kể từ ngày thông qua hoặc ký ban hành, đồng thời phải đăng tải ngay",
-    "Sau 45 ngày như thông thường",
-    "Sau khi Chủ tịch nước công bố 15 ngày",
-    "Chỉ sau khi đăng Công báo giấy"
+    "Sau 45 ngày như thông thường kể từ ngày ký ban hành, không theo rút gọn",
+    "Sau khi Chủ tịch nước công bố và chờ thêm 15 ngày kể từ ngày công bố",
+    "Chỉ sau khi đăng Công báo giấy và đăng trên báo in trung ương hằng ngày"
    ],
    "answer": 0,
    "explain": "Đoạn 2 khoản 1 Điều 53.",
@@ -74,6 +74,16 @@
     {
      "text": "Quyết định của Ủy ban nhân dân cấp tỉnh",
      "answer": "right"
+    },
+    {
+     "text": "Thời hạn tối thiểu từ ngày ký ban hành đến ngày có hiệu lực của nghị định của Chính phủ",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 53 Luật Ban hành văn bản quy phạm pháp luật 2025"
+    },
+    {
+     "text": "Thời hạn tối thiểu từ ngày thông qua đến ngày có hiệu lực của nghị quyết Hội đồng nhân dân cấp tỉnh",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 53 Luật Ban hành văn bản quy phạm pháp luật 2025"
     }
    ],
    "explain": "Khoản 1 Điều 53: trung ương 45 ngày, địa phương 10 ngày."
@@ -114,6 +124,17 @@
     "rút gọn",
     "đăng tải"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thời điểm có hiệu lực của văn bản quy phạm pháp luật không sớm hơn 45 ngày kể từ ngày thông qua hoặc ký ban hành đối với văn bản của cơ quan nhà nước ở trung ương; không sớm hơn 10 ngày đối với văn bản của chính quyền địa phương.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 53 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 53 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)"
+   }
   }
  ]
 }

@@ -45,9 +45,9 @@
    "q": "Người sở hữu cổ phiếu có tư cách gì đối với tổ chức phát hành?",
    "options": [
     "Chủ sở hữu một phần vốn (cổ đông)",
-    "Chủ nợ",
+    "Chủ nợ của tổ chức phát hành cổ phiếu",
     "Người được ủy thác quản lý quỹ",
-    "Bên bảo lãnh phát hành"
+    "Bên bảo lãnh phát hành chứng khoán"
    ],
    "answer": 0,
    "explain": "Cổ phiếu xác nhận quyền đối với một phần vốn cổ phần, tức là tư cách chủ sở hữu (cổ đông), khác trái phiếu (chủ nợ).",

@@ -31,9 +31,9 @@
    "q": "Theo Điều 5 Sắc lệnh 97/SL (1950), quan hệ vợ chồng trong gia đình như thế nào?",
    "options": [
     "Chồng và vợ có địa vị bình đẳng trong gia đình",
-    "Chồng là chủ gia đình",
-    "Vợ phụ thuộc chồng",
-    "Do tập quán địa phương quyết định"
+    "Chồng là chủ gia đình, quyết định mọi việc trong nhà",
+    "Vợ phụ thuộc chồng về tài sản và quyết định gia đình",
+    "Do tập quán của địa phương và phong tục quyết định"
    ],
    "answer": 0,
    "explain": "Điều 5 Sắc lệnh 97/SL.",
@@ -76,6 +76,16 @@
     {
      "text": "Người vợ cần chồng cho phép mới được ký hợp đồng",
      "answer": "right"
+    },
+    {
+     "text": "Người đàn bà có chồng có toàn năng lực về mặt hộ, không cần chồng cho phép",
+     "answer": "left",
+     "basis": "Sắc lệnh 97/SL, Điều 6 (laws/lich-su-su-lieu.txt)"
+    },
+    {
+     "text": "Người đàn bà có chồng không có toàn năng lực về mặt hộ",
+     "answer": "right",
+     "basis": "Sắc lệnh 97/SL, Điều 6 (laws/lich-su-su-lieu.txt)"
     }
    ],
    "explain": "Điều 2, 6 Sắc lệnh 97/SL."

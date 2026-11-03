@@ -49,7 +49,7 @@
     "Chỉ một hình phạt chính",
     "Tối đa hai hình phạt chính",
     "Không giới hạn",
-    "Không bắt buộc có hình phạt chính"
+    "Không bắt buộc có hình phạt"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 32.",
@@ -75,6 +75,16 @@
     {
      "text": "Tịch thu tài sản",
      "answer": "right"
+    },
+    {
+     "text": "Phạt tiền được Tòa án tuyên độc lập, không cần đi kèm hình phạt khác, đối với người phạm tội ít nghiêm trọng",
+     "answer": "left",
+     "basis": "Điểm b khoản 1 Điều 32 Bộ luật Hình sự 2015"
+    },
+    {
+     "text": "Cấm cư trú chỉ được tuyên kèm hình phạt khác, không được áp dụng độc lập",
+     "answer": "right",
+     "basis": "Điểm b khoản 2 Điều 32 Bộ luật Hình sự 2015"
     }
    ],
    "explain": "Điều 32."
@@ -115,6 +125,18 @@
     "một hình phạt chính",
     "tịch thu tài sản"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Đối với mỗi tội phạm, người phạm tội chỉ bị áp dụng một hình phạt chính và có thể bị áp dụng một hoặc một số hình phạt bổ sung.",
+   "answer": true,
+   "explain": "Đúng. Khoản 3 Điều 32 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 32 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)",
+    "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+   }
   }
  ]
 }

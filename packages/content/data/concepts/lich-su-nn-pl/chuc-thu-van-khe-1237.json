@@ -31,9 +31,9 @@
    "q": "Chiếu năm 1237 quy định hình thức cho những loại giấy tờ nào?",
    "options": [
     "Chúc thư, văn khế ruộng đất và vay mượn tiền bạc",
-    "Đơn kiện hình sự",
-    "Sổ hộ tịch",
-    "Văn bằng thi cử"
+    "Đơn kiện hình sự về trộm cắp và giết người",
+    "Sổ hộ tịch dân cư và giấy khai sinh, giấy khai tử",
+    "Văn bằng thi cử, bằng cấp và giấy chứng nhận khoa cử"
    ],
    "answer": 0,
    "explain": "Toàn thư năm 1237.",
@@ -72,6 +72,16 @@
     {
      "text": "In tay ở 4 dòng sau",
      "answer": "right"
+    },
+    {
+     "text": "Khi làm chúc thư, văn khế ruộng đất, người đứng ra chứng kiến in tay ở 3 dòng trước",
+     "answer": "left",
+     "basis": "Đại Việt sử ký toàn thư, Bản kỷ quyển V, Kỷ nhà Trần, Thái Tông, năm 1237, tờ 9b (laws/lich-su-su-lieu.txt)"
+    },
+    {
+     "text": "Bên chuyển nhượng ruộng đất in tay ở 4 dòng sau trong văn khế",
+     "answer": "right",
+     "basis": "Đại Việt sử ký toàn thư, Bản kỷ quyển V, Kỷ nhà Trần, Thái Tông, năm 1237, tờ 9b (laws/lich-su-su-lieu.txt)"
     }
    ],
    "explain": "Chiếu năm 1237."
@@ -100,9 +110,9 @@
    "q": "Quy định năm 1237 phản ánh điều gì về xã hội và pháp luật thời Trần?",
    "options": [
     "Giao dịch dân sự về ruộng đất, vay nợ, thừa kế đã phổ biến; nhà nước quy định hình thức, chứng cứ để hạn chế tranh chấp",
-    "Nhà nước cấm mua bán ruộng đất",
-    "Pháp luật thời Trần chỉ có luật hình",
-    "Mọi giao dịch đều phải do quan lập"
+    "Giao dịch dân sự thời Trần còn hiếm; nhà nước quy định hình thức giấy tờ chủ yếu để thu thuế ruộng đất của dân",
+    "Pháp luật thời Trần chủ yếu là luật hình; giao dịch dân sự do làng xã tự giải quyết, nhà nước chưa quy định gì thêm về hình thức giấy tờ",
+    "Nhà nước cấm mua bán ruộng đất tư nên quy định về hình thức chỉ nhằm quản lý chúc thư đối với ruộng công của làng xã"
    ],
    "answer": 0,
    "explain": "Đánh giá dựa trên câu chữ chiếu năm 1237."

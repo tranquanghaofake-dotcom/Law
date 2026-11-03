@@ -47,9 +47,9 @@
    "q": "Khi Thủ tướng vắng mặt, ai thay mặt lãnh đạo công tác của Chính phủ?",
    "options": [
     "Một Phó Thủ tướng được Thủ tướng ủy nhiệm",
-    "Chủ tịch nước",
-    "Bộ trưởng Bộ Nội vụ",
-    "Chủ tịch Quốc hội"
+    "Chủ tịch nước, theo ủy quyền của Quốc hội khóa đó",
+    "Chánh Văn phòng Chính phủ được Quốc hội giao",
+    "Bộ trưởng Bộ Nội vụ do Chủ tịch nước chỉ định"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 95.",
@@ -75,6 +75,11 @@
     {
      "text": "Do Quốc hội bầu trong số đại biểu Quốc hội",
      "answer": "right"
+    },
+    {
+     "text": "Người giúp Thủ tướng là thành viên Chính phủ, cơ cấu do Quốc hội quyết định",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 95 Hiến pháp 2013"
     }
    ],
    "explain": "Khoản 3 Điều 95; Điều 92, 93."

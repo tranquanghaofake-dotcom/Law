@@ -31,9 +31,9 @@
    "q": "Năm 968, Đinh Bộ Lĩnh đặt quốc hiệu là gì?",
    "options": [
     "Đại Cồ Việt",
-    "Đại Việt",
-    "Vạn Xuân",
-    "Đại Ngu"
+    "Đại Ngu quốc",
+    "Đại Nam quốc",
+    "Đại Hán quốc"
    ],
    "answer": 0,
    "explain": "Toàn thư, Kỷ nhà Đinh năm 968. Đại Việt có từ năm 1054 (nhà Lý); Đại Ngu là quốc hiệu nhà Hồ.",
@@ -48,9 +48,9 @@
    "q": "Bầy tôi dâng tôn hiệu gì cho Đinh Bộ Lĩnh khi lên ngôi?",
    "options": [
     "Đại Thắng Minh Hoàng Đế",
-    "Vạn Thắng Vương",
-    "Nam Việt Đế",
-    "Giao Chỉ Quận Vương"
+    "Vạn Thắng Vương ở Hoa Lư",
+    "Đại Việt Thiên Tử Hoàng Đế",
+    "Giao Chỉ Quận Vương Tống"
    ],
    "answer": 0,
    "explain": "\"Bầy tôi dâng tôn hiệu là Đại Thắng Minh Hoàng Đế.\" Vạn Thắng Vương là danh hiệu trước khi lên ngôi; Giao Chỉ Quận Vương là tước nhà Tống phong.",

@@ -29,9 +29,9 @@
    "q": "Hoạt động nào sau đây KHÔNG phải kinh doanh chứng khoán theo khoản 28 Điều 4?",
    "options": [
     "Cá nhân tự mua, bán cổ phiếu cho chính mình",
-    "Môi giới chứng khoán",
-    "Quản lý danh mục đầu tư chứng khoán",
-    "Bảo lãnh phát hành chứng khoán"
+    "Môi giới chứng khoán cho các khách hàng cá nhân",
+    "Quản lý danh mục đầu tư chứng khoán cá nhân",
+    "Bảo lãnh phát hành chứng khoán cho doanh nghiệp"
    ],
    "answer": 0,
    "explain": "Tự mua bán cho mình là đầu tư chứng khoán (khoản 15 Điều 4).",
@@ -74,6 +74,11 @@
     {
      "text": "Làm trung gian mua, bán chứng khoán cho khách hàng",
      "answer": "left"
+    },
+    {
+     "text": "Cá nhân mua cổ phiếu để nắm giữ lâu dài và hưởng cổ tức",
+     "answer": "right",
+     "basis": "Khoản 28 Điều 4 Luật Chứng khoán 2019 (không thuộc nghiệp vụ kinh doanh)"
     }
    ],
    "explain": "Khoản 28 và khoản 15 Điều 4."
@@ -102,9 +107,9 @@
    "q": "Anh T không có giấy phép, lập nhóm Zalo nhận tiền của 50 người để \"đầu tư hộ\", cam kết lãi 3%/tháng, thu 20% lợi nhuận. Nhận định nào đúng?",
    "options": [
     "Đây là kinh doanh chứng khoán (quản lý danh mục) khi không có giấy phép, lại cam kết lợi nhuận: trái luật",
-    "Hợp pháp vì là thỏa thuận dân sự",
-    "Hợp pháp nếu dưới 100 người",
-    "Chỉ là đầu tư chứng khoán của anh T"
+    "Hợp pháp vì là thỏa thuận dân sự giữa các thành viên trong nhóm và không cần giấy phép kinh doanh chứng khoán",
+    "Hợp pháp nếu dưới 100 người tham gia nhóm, không thu phí quản lý và có cam kết lợi nhuận rõ ràng",
+    "Chỉ là đầu tư chứng khoán của anh T cho bản thân, không liên quan đến người khác và tiền của họ"
    ],
    "answer": 0,
    "explain": "Khoản 28, 35 Điều 4; Điều 70 (cần giấy phép); khoản 1 Điều 91 (cấm cam kết lợi nhuận).",

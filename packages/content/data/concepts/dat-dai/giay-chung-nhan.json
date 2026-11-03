@@ -28,9 +28,9 @@
    "q": "Giấy chứng nhận quyền sử dụng đất có bản chất pháp lý là gì?",
    "options": [
     "Chứng thư pháp lý để Nhà nước xác nhận quyền hợp pháp",
-    "Văn bản tạo ra quyền sở hữu đất",
-    "Hợp đồng giữa Nhà nước và người dân",
-    "Giấy phép xây dựng"
+    "Văn bản tạo ra quyền sở hữu đất đai cho người sử dụng đất",
+    "Hợp đồng giữa Nhà nước và người dân về sử dụng đất",
+    "Giấy phép xây dựng nhà ở và công trình trên đất"
    ],
    "answer": 0,
    "explain": "Khoản 21 Điều 3.",
@@ -45,9 +45,9 @@
    "q": "Hộ gia đình, cá nhân đang sử dụng ổn định có giấy tờ về quyền sử dụng đất lập trước ngày 15/10/1993 thì sao?",
    "options": [
     "Được cấp Giấy chứng nhận và không phải nộp tiền sử dụng đất",
-    "Phải nộp 100% tiền sử dụng đất",
-    "Không được cấp",
-    "Phải đấu giá lại"
+    "Phải nộp 100% tiền sử dụng đất theo giá thị trường hiện hành",
+    "Không được cấp Giấy chứng nhận dù đã sử dụng ổn định lâu dài",
+    "Phải đấu giá lại toàn bộ đất đang sử dụng theo quyết định"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 137.",
@@ -69,6 +69,16 @@
     {
      "text": "Thỏa thuận chuyển giao quyền giữa các bên",
      "answer": "right"
+    },
+    {
+     "text": "Cơ quan nhà nước xác nhận quyền sử dụng đất và tài sản gắn liền với đất cho người dân",
+     "answer": "left",
+     "basis": "Đoạn 1 khoản 21 Điều 3 Luật Đất đai 2024"
+    },
+    {
+     "text": "Văn bản thỏa thuận do hai bên tự ký kết về việc chuyển quyền sử dụng đất, chưa có xác nhận của Nhà nước",
+     "answer": "right",
+     "basis": "Điều 45 Luật Đất đai 2024"
     }
    ],
    "explain": "Điều 3, 45."
@@ -109,6 +119,17 @@
     "hợp pháp",
     "điều kiện"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất là chứng thư pháp lý để Nhà nước xác nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất hợp pháp của người có quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất.",
+   "answer": true,
+   "explain": "Đúng. Khoản 21 Điều 3 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 21 Điều 3 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)"
+   }
   }
  ]
 }

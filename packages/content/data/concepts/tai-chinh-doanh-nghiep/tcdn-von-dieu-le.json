@@ -31,9 +31,9 @@
    "q": "Vốn điều lệ của công ty cổ phần khi thành lập được xác định thế nào?",
    "options": [
     "Tổng mệnh giá cổ phần đã bán hoặc được đăng ký mua",
-    "Tổng giá trị thị trường của cổ phiếu",
-    "Tổng tài sản của công ty",
-    "Tổng số vốn vay"
+    "Tổng giá trị thị trường cổ phiếu tại thời điểm đăng ký",
+    "Tổng tài sản của công ty tại thời điểm thành lập",
+    "Tổng số vốn vay ngân hàng và trái phiếu đã phát hành"
    ],
    "answer": 0,
    "explain": "Khoản 34 Điều 4.",
@@ -72,6 +72,16 @@
     {
      "text": "Tiền thu được từ phát hành trái phiếu",
      "answer": "right"
+    },
+    {
+     "text": "Tổng mệnh giá cổ phần đã bán hoặc được đăng ký mua của công ty cổ phần",
+     "answer": "left",
+     "basis": "Khoản 34 Điều 4 Luật Doanh nghiệp 2020"
+    },
+    {
+     "text": "Khoản vay từ ngân hàng để mua thiết bị, phải trả gốc và lãi theo hợp đồng",
+     "answer": "right",
+     "basis": "Khoản 34 Điều 4 Luật Doanh nghiệp 2020 (vốn điều lệ không gồm vốn vay)"
     }
    ],
    "explain": "Khoản 34 Điều 4 Luật Doanh nghiệp; khoản 3 Điều 4 Luật Chứng khoán."
@@ -112,6 +122,17 @@
     "mệnh giá",
     "vốn vay"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Đối với công ty cổ phần, vốn điều lệ là tổng mệnh giá cổ phần đã bán hoặc được đăng ký mua khi thành lập công ty.",
+   "answer": true,
+   "explain": "Đúng. Khoản 34 Điều 4 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 34 Điều 4 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
   }
  ]
 }

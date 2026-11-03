@@ -48,9 +48,9 @@
    "q": "Người đang bị tạm giam có được ghi tên vào danh sách cử tri không?",
    "options": [
     "Có, để bầu đại biểu Quốc hội và Hội đồng nhân dân cấp tỉnh nơi bị tạm giam",
-    "Không, vì đang bị tạm giam",
-    "Chỉ được bầu Hội đồng nhân dân cấp xã",
-    "Chỉ khi được Tòa án cho phép"
+    "Không, vì đang bị tạm giam và chưa có bản án có hiệu lực pháp luật",
+    "Có, để bầu Hội đồng nhân dân cấp xã nơi người đó thường trú trước đây",
+    "Có, nếu được Tòa án cho phép bằng văn bản và cơ quan điều tra xác nhận"
    ],
    "answer": 0,
    "explain": "Khoản 5 Điều 29.",
@@ -76,6 +76,16 @@
     {
      "text": "Người bị Tòa án tước quyền bầu cử",
      "answer": "right"
+    },
+    {
+     "text": "Người mất năng lực hành vi dân sự theo quyết định của Tòa án",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 30 Luật Bầu cử Đại biểu Quốc hội và Đại biểu Hội đồng nhân dân 2015"
+    },
+    {
+     "text": "Người đang chấp hành hình phạt tù mà không được hưởng án treo",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 30 Luật Bầu cử Đại biểu Quốc hội và Đại biểu Hội đồng nhân dân 2015"
     }
    ],
    "explain": "Khoản 5 Điều 29; khoản 1 Điều 30."
@@ -116,6 +126,18 @@
     "thường trú hoặc tạm trú",
     "tạm giam"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi công dân có quyền bầu cử đều được ghi tên vào danh sách cử tri và được phát thẻ cử tri.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 29 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 29 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026)",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/luat-bau-cu-dai-bieu-quoc-hoi-va-dai-bieu-hoi-dong-nhan-dan-so-85-2015-qh13--70812"
+   }
   }
  ]
 }

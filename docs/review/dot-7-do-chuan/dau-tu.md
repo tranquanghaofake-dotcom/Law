@@ -1,0 +1,79 @@
+# Đợt 7 — độ chuẩn: dau-tu
+
+## Tình huống Phân biệt mới (haiku-1)
+
+Thêm tình huống (câu `pair`) cho các khái niệm còn dưới 4 tình huống; mỗi tình huống có trường `basis` đối chiếu với `packages/content/data/laws/`.
+
+Số khái niệm: 19; số tình huống thêm: 38.
+
+| Khái niệm | Tình huống mới | Bên | Căn cứ |
+|---|---|---|---|
+| ldt-bao-dam-khi-thay-doi-phap-luat | Văn bản mới quy định ưu đãi đầu tư cao hơn, nhà đầu tư được hưởng cho thời gian ưu đãi còn lại | Trái: Hưởng theo văn bản mới | Khoản 1 Điều 12 Luật Đầu tư 2025 |
+| ldt-bao-dam-khi-thay-doi-phap-luat | Văn bản mới quy định ưu đãi thấp hơn, nhà đầu tư vẫn áp dụng ưu đãi cũ đến hết thời gian ưu đãi | Phải: Hưởng theo quy định trước đó | Khoản 2 Điều 12 Luật Đầu tư 2025 |
+| ldt-bao-dam-quyen-so-huu-tai-san | Tịch thu nhà máy hợp pháp của nhà đầu tư bằng quyết định hành chính | Trái: Bị cấm theo Điều 9 | Khoản 1 Điều 9 Luật Đầu tư 2025 |
+| ldt-bao-dam-quyen-so-huu-tai-san | Nhà nước trưng mua đất của nhà đầu tư để phục vụ quốc phòng và thanh toán cho nhà đầu tư | Phải: Được phép kèm bồi thường | Khoản 2 Điều 9 Luật Đầu tư 2025 |
+| ldt-chap-thuan-chu-truong-dau-tu | Cơ quan nhà nước đồng ý về quy mô và tiến độ dự án trước khi nhà đầu tư triển khai | Trái: Chấp thuận chủ trương đầu tư | Khoản 1 Điều 3 Luật Đầu tư 2025 |
+| ldt-chap-thuan-chu-truong-dau-tu | Cơ quan đăng ký đầu tư cấp văn bản ghi nhận dự án sau khi nhà đầu tư đăng ký | Phải: Giấy chứng nhận đăng ký đầu tư | Khoản 11 Điều 3 Luật Đầu tư 2025 |
+| ldt-chuyen-nhuong-du-an | Nhà đầu tư chuyển nhượng một phần dự án cho nhà đầu tư trong nước, đủ điều kiện pháp luật | Trái: Được chuyển nhượng | Khoản 1 Điều 34 Luật Đầu tư 2025 |
+| ldt-chuyen-nhuong-du-an | Nhà đầu tư nước ngoài nhận chuyển nhượng dự án nhưng không đáp ứng điều kiện của khoản 2 Điều 21 | Phải: Không được chuyển nhượng | Điểm b khoản 1 Điều 34 Luật Đầu tư 2025 |
+| ldt-dau-tu-kinh-doanh | Cá nhân bỏ vốn mua máy móc để mở xưởng sản xuất bánh kẹo nhằm bán hàng thu lợi | Trái: Đầu tư kinh doanh theo Luật Đầu tư | Khoản 8 Điều 3 Luật Đầu tư 2025 |
+| ldt-dau-tu-kinh-doanh | Cá nhân cho bạn vay tiền để phục vụ tiêu dùng gia đình, không nhằm hoạt động sản xuất kinh doanh | Phải: Không thuộc Luật Đầu tư | Khoản 8 Điều 3 Luật Đầu tư 2025 |
+| ldt-dieu-kien-dau-tu-kinh-doanh | Trụ sở và phương tiện theo quy định của pháp luật để kinh doanh ngành nghề có điều kiện | Trái: Là điều kiện đầu tư kinh doanh | Khoản 9 Điều 3 Luật Đầu tư 2025 |
+| ldt-dieu-kien-dau-tu-kinh-doanh | Doanh nghiệp tự đặt quy định nội bộ về màu sắc đồng phục của nhân viên | Phải: Không phải điều kiện đầu tư kinh doanh | Khoản 9 Điều 3 Luật Đầu tư 2025 (điều kiện do pháp luật quy định) |
+| ldt-du-an-dau-tu | Kế hoạch bỏ vốn dài hạn để kinh doanh tại một địa bàn trong khoảng thời gian xác định | Trái: Dấu hiệu của dự án đầu tư | Khoản 4 Điều 3 Luật Đầu tư 2025 |
+| ldt-du-an-dau-tu | Mua bán hàng theo từng hợp đồng ngắn hạn, không có kế hoạch bỏ vốn trung hạn hoặc dài hạn | Phải: Không phải dấu hiệu | Khoản 4 Điều 3 Luật Đầu tư 2025 |
+| ldt-giay-chung-nhan-dang-ky-dau-tu | Nhà đầu tư nước ngoài thực hiện dự án đầu tư mới tại Việt Nam | Trái: Phải cấp Giấy chứng nhận đăng ký đầu tư | Điểm a khoản 1 Điều 26 Luật Đầu tư 2025 |
+| ldt-giay-chung-nhan-dang-ky-dau-tu | Doanh nghiệp trong nước mua 15% cổ phần của một công ty cổ phần khác, không thực hiện dự án mới | Phải: Không phải cấp | Khoản 1 Điều 26 Luật Đầu tư 2025 (không thuộc các trường hợp liệt kê) |
+| ldt-hinh-thuc-dau-tu | Doanh nghiệp góp vốn, mua cổ phần của một công ty đang hoạt động | Trái: Hình thức đầu tư theo Điều 18 | Khoản 2 Điều 18 Luật Đầu tư 2025 |
+| ldt-hinh-thuc-dau-tu | Cá nhân mua nhà ở để làm nơi ở cho gia đình | Phải: Không phải hình thức đầu tư | Điều 18 Luật Đầu tư 2025 (không liệt kê hình thức này) |
+| ldt-hoat-dong-dau-tu-ra-nuoc-ngoai | Doanh nghiệp Việt ký hợp đồng hợp tác kinh doanh với đối tác ở Campuchia và chia sản phẩm | Trái: Hình thức đầu tư ra nước ngoài | Điểm b khoản 1 Điều 39 Luật Đầu tư 2025 |
+| ldt-hoat-dong-dau-tu-ra-nuoc-ngoai | Doanh nghiệp Việt nhập khẩu hàng từ Thái Lan để bán trong nước, không chuyển vốn ra nước ngoài | Phải: Không phải | Khoản 13 Điều 3 Luật Đầu tư 2025 |
+| ldt-hop-dong-bcc | Hai nhà đầu tư trong nước thỏa thuận phân chia lợi nhuận từ một dự án chung theo hợp đồng | Trái: Hợp đồng BCC | Khoản 14 Điều 3 và Điều 22 Luật Đầu tư 2025 |
+| ldt-hop-dong-bcc | Nhà đầu tư góp vốn lập công ty cổ phần mới để cùng kinh doanh | Phải: Thành lập tổ chức kinh tế | Khoản 1 Điều 18 Luật Đầu tư 2025 |
+| ldt-khu-cong-nghiep | Nhà máy chế biến thủy sản xuất khẩu nằm trong khu vực có ranh giới xác định, chuyên sản xuất công nghiệp | Trái: Phù hợp chức năng khu công nghiệp | Khoản 16 Điều 3 Luật Đầu tư 2025 |
+| ldt-khu-cong-nghiep | Khu đô thị có nhà ở, trường học và công viên cho dân cư | Phải: Không phù hợp | Khoản 16 Điều 3 Luật Đầu tư 2025 (không chuyên sản xuất công nghiệp) |
+| ldt-khu-kinh-te | Vùng có nhiều khu chức năng như cảng, dịch vụ tài chính và nhà ở, thành lập để thu hút đầu tư | Trái: Khu kinh tế | Khoản 17 Điều 3 Luật Đầu tư 2025 |
+| ldt-khu-kinh-te | Khu vực có ranh giới xác định, chuyên sản xuất hàng xuất khẩu và dịch vụ phục vụ xuất khẩu | Phải: Khu công nghiệp | Khoản 15 Điều 3 Luật Đầu tư 2025 |
+| ldt-nha-dau-tu-nuoc-ngoai | Tổ chức thành lập theo pháp luật Singapore thực hiện hoạt động đầu tư kinh doanh tại Việt Nam | Trái: Nhà đầu tư nước ngoài | Khoản 19 Điều 3 Luật Đầu tư 2025 |
+| ldt-nha-dau-tu-nuoc-ngoai | Cá nhân mang quốc tịch Việt Nam đầu tư mở quán cà phê tại Đà Nẵng | Phải: Không phải nhà đầu tư nước ngoài | Khoản 20 Điều 3 Luật Đầu tư 2025 |
+| ldt-nha-dau-tu | Công ty cổ phần Việt Nam không có cổ đông là nhà đầu tư nước ngoài | Trái: Nhà đầu tư trong nước | Khoản 20 Điều 3 Luật Đầu tư 2025 |
+| ldt-nha-dau-tu | Cá nhân mang quốc tịch nước ngoài thực hiện đầu tư kinh doanh tại Việt Nam | Phải: Nhà đầu tư nước ngoài | Khoản 19 Điều 3 Luật Đầu tư 2025 |
+| ldt-to-chuc-kinh-te-co-von-dtnn | Công ty hợp danh có đa số thành viên hợp danh là cá nhân nước ngoài | Trái: Đầu tư tiếp theo thủ tục nhà đầu tư nước ngoài | Điểm a khoản 1 Điều 20 Luật Đầu tư 2025 |
+| ldt-to-chuc-kinh-te-co-von-dtnn | Công ty cổ phần có nhà đầu tư nước ngoài sở hữu 30% vốn điều lệ | Phải: Theo thủ tục nhà đầu tư trong nước | Điểm a khoản 1 Điều 20 Luật Đầu tư 2025 (dưới 50% vốn điều lệ) |
+| ldt-to-chuc-kinh-te | Công ty cổ phần được thành lập theo Luật Doanh nghiệp tại Việt Nam | Trái: Tổ chức kinh tế theo Luật Đầu tư | Khoản 21 Điều 3 Luật Đầu tư 2025 |
+| ldt-to-chuc-kinh-te | Công ty được thành lập theo pháp luật Lào và hoạt động trên lãnh thổ Việt Nam | Phải: Không phải tổ chức kinh tế | Khoản 21 Điều 3 Luật Đầu tư 2025 (thành lập theo pháp luật Việt Nam) |
+| ldt-uu-dai-dau-tu | Được miễn, giảm tiền thuê đất cho dự án đầu tư thuộc ngành nghề ưu đãi | Trái: Ưu đãi đầu tư | Điểm c khoản 2 Điều 14 Luật Đầu tư 2025 |
+| ldt-uu-dai-dau-tu | Được đào tạo nhân lực do Nhà nước tổ chức theo chương trình của dự án | Phải: Hỗ trợ đầu tư | Điểm b khoản 3 Điều 14 Luật Đầu tư 2025 |
+| ldt-von-dau-tu | Tiền mặt và máy móc do nhà đầu tư góp để thực hiện dự án | Trái: Có thể là vốn đầu tư | Khoản 23 Điều 3 Luật Đầu tư 2025 |
+| ldt-von-dau-tu | Công sức và kinh nghiệm quản lý của người điều hành, không được định giá thành tiền | Phải: Không phải vốn đầu tư | Khoản 23 Điều 3 Luật Đầu tư 2025 (không phải tiền hoặc tài sản) |
+
+## Giai đoạn 2 — cờ dò trích dẫn (haiku-1)
+
+Cờ của môn: 1. Không có sửa nội dung.
+
+**Báo nhầm (lỗi công cụ)**
+- `ldt-von-dau-tu#2` (câu Phân biệt "Công sức và kinh nghiệm quản lý…", căn cứ "Khoản 23 Điều 3 Luật Đầu tư 2025"): công cụ gán căn cứ sang `blds-2015.txt` và báo "Điều 3 không có khoản 23". Căn cứ đúng là Luật Đầu tư 2025 (khoản 23 Điều 3 có trong `ldt-vbhn-2026.txt`). Công cụ chưa nhận diện tên văn bản này — ghi cho opus.
+
+## Câu hỏi viết lại (sonnet B)
+
+### Câu hỏi kiểu tập hợp (bỏ nhiễu "Chỉ…") (10)
+
+| Mã | Câu hỏi | Trước | Sau | Căn cứ | Ghi chú |
+|---|---|---|---|---|---|
+| `dau-tu/ldt-chuyen-nhuong-du-an#0` | Nhà đầu tư được chuyển nhượng phạm vi nào của dự án? | **Toàn bộ hoặc một phần dự án đầu tư**<br>Chỉ toàn bộ dự án, không chia nhỏ<br>Chỉ phần đã hoàn thành của dự án<br>Không được chuyển nhượng dự án này cho ai | **Toàn bộ hoặc một phần dự án đầu tư**<br>Toàn bộ dự án, không được chia nhỏ để chuyển<br>Phần dự án đã xong, không gồm phần chưa làm<br>Không được chuyển nhượng dự án này cho ai | Khoản 1 Điều 34 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH) | Nhiễu viết lại: sai rõ, không cần từ tuyệt đối |
+| `dau-tu/ldt-dau-tu-kinh-doanh#1` | Luật Đầu tư điều chỉnh hoạt động nào? | **Đầu tư kinh doanh tại Việt Nam và từ Việt Nam ra nước ngoài**<br>Chỉ đầu tư công do Nhà nước đầu tư bằng ngân sách trung ương<br>Chỉ đầu tư của nhà đầu tư nước ngoài tại các khu vực kinh tế<br>Chỉ đầu tư ra nước ngoài của các doanh nghiệp Việt Nam | **Đầu tư kinh doanh tại Việt Nam và từ Việt Nam ra nước ngoài**<br>Đầu tư công do Nhà nước đầu tư bằng ngân sách trung ương<br>Đầu tư kinh doanh của nhà đầu tư nước ngoài, không gồm nhà đầu tư trong nước<br>Đầu tư kinh doanh ra nước ngoài, không gồm đầu tư tại Việt Nam | Điều 1 Luật Đầu tư 2025 | Nhiễu thêm vế sai (đầu tư công; loại trừ nhà đầu tư trong nước / đầu tư tại Việt Nam); nhiễu cũng chứa 'đầu tư kinh doanh' nên tên khái niệm không chỉ nằm ở đáp án đúng. |
+| `dau-tu/ldt-dieu-kien-dau-tu-kinh-doanh#1` | Điều kiện đầu tư kinh doanh áp dụng khi nào? | **Khi kinh doanh trong ngành, nghề đầu tư kinh doanh có điều kiện**<br>Khi nhà đầu tư có vốn điều lệ từ 100 tỷ đồng trở lên<br>Chỉ với nhà đầu tư nước ngoài khi đầu tư vào Việt Nam và có vốn lớn<br>Chỉ khi đầu tư ra nước ngoài theo quy định của pháp luật Việt Nam | **Khi kinh doanh trong ngành, nghề đầu tư kinh doanh có điều kiện**<br>Khi nhà đầu tư có vốn điều lệ từ 100 tỷ đồng trở lên<br>Khi nhà đầu tư là người nước ngoài đầu tư vào Việt Nam<br>Khi đầu tư ra nước ngoài theo quy định của pháp luật Việt Nam | Khoản 9 Điều 3 Luật Đầu tư 2025 | Nhiễu viết lại: sai rõ, không cần từ tuyệt đối |
+| `dau-tu/ldt-giay-chung-nhan-dang-ky-dau-tu#0` | Dự án nào phải thực hiện thủ tục cấp Giấy chứng nhận đăng ký đầu tư? | **Dự án đầu tư của nhà đầu tư nước ngoài**<br>Dự án đầu tư của mọi nhà đầu tư trong nước<br>Mọi khoản góp vốn mua cổ phần<br>Mọi dự án dưới 10 tỷ đồng | **Dự án đầu tư của nhà đầu tư nước ngoài**<br>Dự án đầu tư của nhà đầu tư trong nước<br>Đầu tư theo hình thức góp vốn, mua cổ phần<br>Dự án đầu tư có vốn dưới 10 tỷ đồng | Khoản 1, khoản 2 Điều 26 Luật Đầu tư 2025 (đối chiếu laws/ldt-vbhn-2026.txt) | Nhiễu nay chính là các trường hợp khoản 2 Điều 26 (không phải cấp GCNĐKĐT); bổ sung explain. |
+| `dau-tu/ldt-khu-kinh-te#1` | Khu kinh tế được thành lập để thực hiện mục tiêu nào? | **Thu hút đầu tư, phát triển kinh tế - xã hội và bảo vệ quốc phòng, an ninh**<br>Chỉ sản xuất hàng công nghiệp với quy mô lớn tại địa phương và các vùng lân cận<br>Chỉ du lịch và dịch vụ nghỉ dưỡng cho khách trong nước và khách nước ngoài<br>Chỉ nông nghiệp và chăn nuôi trên diện tích đất rộng lớn của địa phương | **Thu hút đầu tư, phát triển kinh tế - xã hội và bảo vệ quốc phòng, an ninh**<br>Sản xuất công nghiệp quy mô lớn và xuất khẩu hàng hóa ra nước ngoài<br>Thu hút vốn vay nước ngoài và phát triển du lịch nghỉ dưỡng cho khách quốc tế<br>Phát triển nông nghiệp, chăn nuôi và bảo vệ rừng tại địa phương | Khoản 17 Điều 3 Luật Đầu tư 2025 | Nhiễu viết lại: sai rõ, không cần từ tuyệt đối |
+| `dau-tu/ldt-nha-dau-tu#0` | Nhà đầu tư theo khoản 18 Điều 3 gồm những loại nào?<br>→ Phương án nào liệt kê đầy đủ các loại nhà đầu tư theo khoản 18 Điều 3? | **Nhà đầu tư trong nước, nhà đầu tư nước ngoài và tổ chức kinh tế có vốn đầu tư nước ngoài**<br>Chỉ doanh nghiệp trong nước được đăng ký kinh doanh theo luật và có vốn điều lệ đủ lớn<br>Chỉ cá nhân trong nước có đủ vốn điều lệ, năng lực hành vi đầy đủ và đăng ký<br>Chỉ cơ quan nhà nước được thành lập theo luật và được cấp kinh phí hoạt động | **Nhà đầu tư trong nước, nhà đầu tư nước ngoài và tổ chức kinh tế có vốn đầu tư nước ngoài**<br>Nhà đầu tư trong nước và nhà đầu tư nước ngoài, không gồm tổ chức kinh tế có vốn nước ngoài<br>Nhà đầu tư trong nước, nhà đầu tư nước ngoài và doanh nghiệp nhà nước có vốn lớn<br>Nhà đầu tư nước ngoài và tổ chức kinh tế có vốn đầu tư nước ngoài, không gồm nhà đầu tư trong nước | Khoản 18 Điều 3 Luật Đầu tư 2025 | Hỏi 'đầy đủ'; nhiễu thiếu một loại hoặc thêm loại không có. |
+| `dau-tu/ldt-uu-dai-dau-tu#0` | Đối tượng nào được hưởng ưu đãi đầu tư theo khoản 1 Điều 14? | **Dự án đầu tư thuộc ngành, nghề ưu đãi đầu tư**<br>Mọi doanh nghiệp mới thành lập trong nước<br>Mọi nhà đầu tư nước ngoài tại Việt Nam<br>Doanh nghiệp nhà nước có vốn lớn, ổn định | **Dự án đầu tư thuộc ngành, nghề ưu đãi đầu tư**<br>Doanh nghiệp mới thành lập trong nước<br>Nhà đầu tư nước ngoài hoạt động tại Việt Nam<br>Doanh nghiệp nhà nước có vốn lớn, ổn định | Khoản 1 Điều 14 Luật Đầu tư 2025 | Nhiễu viết lại: sai rõ, không cần từ tuyệt đối |
+| `dau-tu/ldt-von-dau-tu#0` | Vốn đầu tư theo khoản 23 Điều 3 gồm gì? | **Tiền, tài sản khác theo pháp luật dân sự và điều ước quốc tế**<br>Chỉ tiền mặt do nhà đầu tư góp bằng ngoại tệ đã đổi<br>Chỉ ngoại tệ chuyển từ nước ngoài vào Việt Nam theo hợp đồng vay<br>Chỉ vốn vay ngân hàng và vốn vay từ các tổ chức tín dụng | **Tiền, tài sản khác theo pháp luật dân sự và điều ước quốc tế**<br>Tiền mặt và tài sản của Nhà nước giao cho nhà đầu tư quản lý<br>Ngoại tệ chuyển từ nước ngoài vào Việt Nam và ngân sách nhà nước cấp<br>Vốn vay ngân hàng và các khoản nợ phải trả của doanh nghiệp | Khoản 23 Điều 3 Luật Đầu tư 2025 | Nhiễu viết lại: sai rõ, không cần từ tuyệt đối |
+| `sets/dau-tu-de-2#4` | Vốn đầu tư gồm gì? | **Tiền, tài sản khác theo pháp luật dân sự và điều ước quốc tế**<br>Chỉ tiền mặt, tiền gửi ngân hàng và khoản tiền vay từ ngân hàng<br>Chỉ ngoại tệ chuyển từ nước ngoài vào Việt Nam theo hợp đồng vay<br>Chỉ vốn vay từ các tổ chức tín dụng ở nước ngoài và trong nước | **Tiền, tài sản khác theo pháp luật dân sự và điều ước quốc tế**<br>Tiền mặt, tiền gửi ngân hàng và ngân sách nhà nước cấp cho dự án<br>Ngoại tệ chuyển từ nước ngoài vào Việt Nam và nợ phải trả của doanh nghiệp<br>Vốn vay từ các tổ chức tín dụng ở nước ngoài và các khoản nợ phải thu | Khoản 23 Điều 3 Luật Đầu tư 2025 | Nhiễu viết lại: sai rõ, không cần từ tuyệt đối |
+| `sets/dau-tu-de-2#9` | Nhà đầu tư ra nước ngoài phải tuân thủ pháp luật nào?<br>→ Phương án nào liệt kê đầy đủ các hệ thống pháp luật mà nhà đầu tư ra nước ngoài phải tuân thủ? | **Luật Việt Nam, pháp luật nước tiếp nhận và điều ước quốc tế liên quan**<br>Chỉ pháp luật Việt Nam và các điều ước quốc tế liên quan đến nước đó đã ký<br>Chỉ pháp luật nước tiếp nhận đầu tư, không áp dụng luật Việt Nam<br>Không có pháp luật nào ràng buộc nhà đầu tư khi ra nước ngoài đầu tư | **Luật Việt Nam, pháp luật nước tiếp nhận và điều ước quốc tế liên quan**<br>Pháp luật Việt Nam và các điều ước quốc tế mà Việt Nam đã ký kết<br>Pháp luật nước tiếp nhận đầu tư và điều ước quốc tế của nước đó<br>Không có pháp luật nào ràng buộc nhà đầu tư khi ra nước ngoài đầu tư | Khoản 2 Điều 38 Luật Đầu tư 2025 | Hỏi 'đầy đủ'; nhiễu thiếu một nguồn luật. |
+
+### Câu Đúng/Sai đáp án Đúng thêm mới (2)
+
+| Mã | Nhận định (Đúng) | Căn cứ | Ghi chú |
+|---|---|---|---|
+| `dau-tu/ldt-bao-dam-quyen-so-huu-tai-san#7` | Tài sản hợp pháp của nhà đầu tư không bị quốc hữu hóa hoặc bị tịch thu bằng biện pháp hành chính. | Khoản 1 Điều 9 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH) | nguyên văn khớp laws/*.txt |
+| `dau-tu/ldt-giay-chung-nhan-dang-ky-dau-tu#7` | Giấy chứng nhận đăng ký đầu tư là văn bản bằng bản giấy hoặc bản điện tử ghi nhận thông tin đăng ký của nhà đầu tư về dự án đầu tư. | Khoản 11 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH) | nguyên văn khớp laws/*.txt |

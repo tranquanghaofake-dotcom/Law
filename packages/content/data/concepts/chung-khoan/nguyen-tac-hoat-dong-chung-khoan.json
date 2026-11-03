@@ -45,9 +45,9 @@
    "q": "Nguyên tắc nào sau đây KHÔNG có trong Điều 5?",
    "options": [
     "Nhà nước bảo đảm lợi nhuận tối thiểu cho nhà đầu tư",
-    "Công bằng, công khai, minh bạch",
+    "Công bằng, công khai, minh bạch, an toàn cho các bên",
     "Bảo vệ quyền và lợi ích hợp pháp của nhà đầu tư",
-    "Tự chịu trách nhiệm về rủi ro"
+    "Tự chịu trách nhiệm về rủi ro đầu tư của mình"
    ],
    "answer": 0,
    "explain": "Không có nguyên tắc Nhà nước bảo đảm lợi nhuận; ngược lại, khoản 4 Điều 5 là tự chịu trách nhiệm về rủi ro.",
@@ -73,6 +73,16 @@
     {
      "text": "Cấm dùng thông tin nội bộ để giao dịch trước người khác",
      "answer": "left"
+    },
+    {
+     "text": "Bảo đảm quyền bình đẳng tiếp cận thông tin của các nhà đầu tư",
+     "answer": "left",
+     "basis": "Điều 5 Luật Chứng khoán 2019 (nguyên tắc công bằng, công khai, minh bạch)"
+    },
+    {
+     "text": "Nhà đầu tư tự quyết định và tự chịu trách nhiệm về quyết định đầu tư của mình",
+     "answer": "right",
+     "basis": "Điều 5 Luật Chứng khoán 2019 (nguyên tắc tự chịu trách nhiệm về rủi ro)"
     }
    ],
    "explain": "Mỗi quy định cụ thể đều truy về một nguyên tắc ở Điều 5."

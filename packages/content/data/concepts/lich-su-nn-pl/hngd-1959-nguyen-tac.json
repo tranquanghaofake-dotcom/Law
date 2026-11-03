@@ -49,9 +49,9 @@
    "q": "Điều 1 Luật HNGĐ 1959 bảo đảm chế độ hôn nhân nào?",
    "options": [
     "Tự do và tiến bộ, một vợ một chồng, nam nữ bình đẳng",
-    "Do cha mẹ sắp đặt",
-    "Một chồng nhiều vợ",
-    "Theo tập quán từng địa phương"
+    "Do cha mẹ sắp đặt và quyết định, con cái không được từ chối",
+    "Một chồng nhiều vợ theo phong tục, nam giới là trụ cột",
+    "Theo tập quán và các phong tục riêng của từng địa phương"
    ],
    "answer": 0,
    "explain": "Điều 1.",
@@ -77,6 +77,11 @@
     {
      "text": "Con vợ lẽ, nàng hầu hưởng phần kém hơn",
      "answer": "left"
+    },
+    {
+     "text": "Nhà nước bảo vệ quyền lợi của phụ nữ và con cái trong gia đình",
+     "answer": "right",
+     "basis": "Luật Hôn nhân và gia đình 1959, Điều 1 (laws/lich-su-su-lieu.txt)"
     }
    ],
    "explain": "Điều 388 Quốc triều hình luật; Điều 1, 3 Luật HNGĐ 1959."

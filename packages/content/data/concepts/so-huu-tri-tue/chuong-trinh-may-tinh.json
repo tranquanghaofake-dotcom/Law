@@ -47,9 +47,9 @@
    "q": "Chương trình máy tính có được bảo hộ dưới danh nghĩa sáng chế không?",
    "options": [
     "Không, khoản 2 Điều 59 loại trừ",
-    "Có, luôn luôn",
-    "Có nếu có tính mới",
-    "Có nếu đăng ký ở nước ngoài"
+    "Có, luôn luôn được bảo hộ sáng chế",
+    "Có nếu có tính mới đối với thế giới",
+    "Có nếu đăng ký ở nước ngoài trước"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 59.",
@@ -71,6 +71,16 @@
     {
      "text": "Chương trình máy tính (với danh nghĩa sáng chế)",
      "answer": "right"
+    },
+    {
+     "text": "Phần mềm là tập hợp chỉ dẫn dưới dạng mã, lệnh, được bảo hộ như tác phẩm văn học",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 22 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Chương trình máy tính tự nó được đề nghị bảo hộ như sáng chế",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 59 Luật Sở hữu trí tuệ"
     }
    ],
    "explain": "Điều 22, 59."
@@ -111,6 +121,18 @@
     "mã nguồn",
     "sáng chế"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chương trình máy tính được bảo hộ như tác phẩm văn học, dù được thể hiện dưới dạng mã nguồn hay mã máy.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 22 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 22 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+   }
   }
  ]
 }

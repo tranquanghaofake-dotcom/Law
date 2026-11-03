@@ -30,9 +30,9 @@
    "q": "Theo Điều 388, phần hương hỏa khi cha mẹ chết không có chúc thư là bao nhiêu?",
    "options": [
     "Một phần hai mươi số ruộng đất",
-    "Một nửa số ruộng đất",
-    "Một phần ba",
-    "Toàn bộ ruộng đất"
+    "Một phần hai số ruộng đất chia đều",
+    "Một phần ba số ruộng đất chung",
+    "Toàn bộ ruộng đất thuộc về con cái"
    ],
    "answer": 0,
    "explain": "Điều 388.",
@@ -75,6 +75,11 @@
     {
      "text": "Phần con của vợ lẽ, nàng hầu thì phải kém",
      "answer": "left"
+    },
+    {
+     "text": "Người giữ hương hỏa là con trai trưởng; không có con trai trưởng thì dùng con gái trưởng",
+     "answer": "right",
+     "basis": "Quốc triều hình luật, Điều 391 (laws/lich-su-su-lieu.txt)"
     }
    ],
    "explain": "Quốc triều hình luật."

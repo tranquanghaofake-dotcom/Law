@@ -22,9 +22,9 @@
       "q": "Căn hộ chung cư đang xây dựng, chưa hoàn thành là loại tài sản gì?",
       "options": [
         "Tài sản hình thành trong tương lai",
-        "Động sản",
-        "Tài sản vô chủ",
-        "Không phải tài sản"
+        "Động sản đã có giấy tờ đăng ký",
+        "Tài sản vô chủ thuộc Nhà nước",
+        "Không phải là tài sản theo luật định"
       ],
       "answer": 0,
       "explain": "Khoản 2 Điều 105; Điều 108.",
@@ -60,10 +60,10 @@
     {
       "q": "Nhà B không có lối đi ra đường công cộng, phải đi qua đất nhà A. Đây là loại quyền nào?",
       "options": [
-        "Quyền sở hữu chung",
+        "Quyền sở hữu chung của hai bên",
         "Quyền đối với bất động sản liền kề",
-        "Quyền hưởng dụng",
-        "Quyền bề mặt"
+        "Quyền hưởng dụng tài sản của người khác",
+        "Quyền bề mặt của công trình xây dựng"
       ],
       "answer": 1,
       "explain": "Điểm a khoản 2 Điều 159; Điều 254.",
@@ -73,10 +73,10 @@
     {
       "q": "Hàng xóm xây tường lấn sang đất. Chủ sở hữu có thể yêu cầu Tòa án điều gì?",
       "options": [
-        "Phạt tù hàng xóm",
+        "Phạt tù hàng xóm đã xây tường lấn sang đất của mình",
         "Buộc chấm dứt hành vi cản trở và bồi thường thiệt hại",
-        "Tịch thu nhà hàng xóm",
-        "Không yêu cầu được gì"
+        "Tịch thu nhà của hàng xóm để bù đắp thiệt hại cho chủ nhà",
+        "Không yêu cầu được gì vì chưa có văn bản rõ ràng nào cả"
       ],
       "answer": 1,
       "explain": "Khoản 2 Điều 164.",
@@ -86,10 +86,10 @@
     {
       "q": "Ông A chết không để lại di chúc, còn vợ, mẹ đẻ và một người em ruột. Ai được hưởng di sản?",
       "options": [
-        "Vợ, mẹ đẻ và em ruột chia đều",
+        "Vợ, mẹ và em ruột chia đều",
         "Vợ và mẹ đẻ chia đều",
-        "Chỉ vợ",
-        "Chỉ em ruột"
+        "Vợ hưởng toàn bộ di sản",
+        "Em ruột hưởng cả di sản"
       ],
       "answer": 1,
       "explain": "Vợ, mẹ đẻ thuộc hàng thứ nhất; em ruột hàng hai chỉ hưởng khi không còn ai ở hàng thứ nhất (Điều 651).",
@@ -99,10 +99,10 @@
     {
       "q": "Con của người để lại di sản chết trước người để lại di sản. Cháu nội được hưởng gì?",
       "options": [
-        "Không được hưởng",
+        "Không được hưởng gì cả theo quy định của luật",
         "Phần mà cha của cháu được hưởng nếu còn sống",
-        "2/3 suất thừa kế",
-        "Toàn bộ di sản"
+        "2/3 suất thừa kế theo pháp luật của cha",
+        "Toàn bộ di sản của người để lại di chúc"
       ],
       "answer": 1,
       "explain": "Thừa kế thế vị (Điều 652).",
@@ -112,10 +112,10 @@
     {
       "q": "Ông A lập di chúc để lại toàn bộ tài sản cho bạn thân, không cho người con 8 tuổi. Người con được hưởng bao nhiêu?",
       "options": [
-        "Không được gì",
+        "Không được gì cả, vì bị loại khỏi di chúc hoàn toàn",
         "Hai phần ba suất của một người thừa kế theo pháp luật",
-        "Một nửa di sản",
-        "Toàn bộ suất theo pháp luật"
+        "Một nửa di sản của người để lại di chúc này theo quy định",
+        "Toàn bộ suất theo pháp luật, không bị giảm trừ gì cả"
       ],
       "answer": 1,
       "explain": "Khoản 1 Điều 644.",

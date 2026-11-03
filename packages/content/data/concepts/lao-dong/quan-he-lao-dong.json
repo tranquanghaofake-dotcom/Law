@@ -28,9 +28,9 @@
    "q": "Quan hệ lao động gồm những loại nào theo khoản 5 Điều 3?",
    "options": [
     "Quan hệ lao động cá nhân và quan hệ lao động tập thể",
-    "Quan hệ công vụ và quan hệ dân sự",
-    "Quan hệ hợp đồng và quan hệ hành chính",
-    "Chỉ quan hệ lao động cá nhân"
+    "Quan hệ công vụ của công chức và quan hệ dân sự",
+    "Quan hệ hợp đồng và quan hệ hành chính nhà nước",
+    "Chỉ quan hệ lao động cá nhân, không có quan hệ tập thể"
    ],
    "answer": 0,
    "explain": "Khoản 5 Điều 3.",
@@ -45,9 +45,9 @@
    "q": "Quan hệ lao động phát sinh trong việc gì?",
    "options": [
     "Thuê mướn, sử dụng lao động, trả lương",
-    "Mua bán hàng hóa",
-    "Thu thuế",
-    "Xét xử vụ án"
+    "Mua bán hàng hóa và cung ứng dịch vụ thương mại",
+    "Thu thuế thu nhập cá nhân từ tiền lương",
+    "Xét xử vụ án dân sự tại Tòa án nhân dân"
    ],
    "answer": 0,
    "explain": "Khoản 5 Điều 3.",
@@ -69,6 +69,16 @@
     {
      "text": "Công đoàn cơ sở ký thỏa ước với công ty",
      "answer": "right"
+    },
+    {
+     "text": "Người lao động và người sử dụng lao động thỏa thuận về lương và thời giờ làm việc qua hợp đồng cá nhân",
+     "answer": "left",
+     "basis": "Khoản 5 Điều 3 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Tổ chức đại diện người lao động thương lượng chung với người sử dụng lao động về điều kiện lao động",
+     "answer": "right",
+     "basis": "Điều 65 Bộ luật Lao động 2019"
     }
    ],
    "explain": "Khoản 5 Điều 3."
@@ -109,6 +119,18 @@
     "cá nhân",
     "tập thể"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người làm việc không có quan hệ lao động là người làm việc không trên cơ sở thuê mướn bằng hợp đồng lao động.",
+   "answer": true,
+   "explain": "Đúng. Khoản 6 Điều 3 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 6 Điều 3 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-18-VBHN-VPQH-2026-Bo-luat-lao-dong-695336.aspx"
+   }
   }
  ]
 }

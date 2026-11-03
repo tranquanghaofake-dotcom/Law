@@ -48,9 +48,9 @@
    "q": "Biện pháp bảo đảm phát sinh hiệu lực đối kháng với người thứ ba từ khi nào?",
    "options": [
     "Từ khi đăng ký biện pháp bảo đảm hoặc bên nhận bảo đảm nắm giữ, chiếm giữ tài sản bảo đảm",
-    "Từ khi ký hợp đồng",
-    "Từ khi đến hạn trả nợ",
-    "Từ khi công chứng"
+    "Từ khi ký hợp đồng, có xác nhận của công chứng viên và các bên đồng ý tham gia đầy đủ",
+    "Từ khi đến hạn trả nợ, khi bên nợ đã vi phạm nghĩa vụ và không có văn bản đăng ký nào",
+    "Từ khi công chứng hợp đồng tại cơ quan có thẩm quyền và đóng đủ lệ phí"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 297.",
@@ -76,6 +76,16 @@
     {
      "text": "Tín chấp",
      "answer": "right"
+    },
+    {
+     "text": "Bên vay giao sổ tiết kiệm của mình cho ngân hàng giữ để bảo đảm khoản vay",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 292 Bộ luật Dân sự 2015 (cầm cố tài sản)"
+    },
+    {
+     "text": "Hội Phụ nữ cơ sở bảo đảm bằng tín chấp cho hộ nghèo vay vốn tại ngân hàng chính sách",
+     "answer": "right",
+     "basis": "Khoản 8 Điều 292 và Điều 344 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 292."

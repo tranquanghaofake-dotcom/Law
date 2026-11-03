@@ -30,9 +30,9 @@
    "q": "Quyền đối với nhãn hiệu nổi tiếng được xác lập trên cơ sở nào?",
    "options": [
     "Sử dụng, không phụ thuộc vào thủ tục đăng ký",
-    "Đăng ký tại Cục Sở hữu trí tuệ",
-    "Quyết định của Tòa án",
-    "Đăng ký quốc tế"
+    "Đăng ký tại Cục Sở hữu trí tuệ và nộp lệ phí",
+    "Quyết định của Tòa án nhân dân có thẩm quyền",
+    "Đăng ký quốc tế theo Thỏa ước Madrid lần đầu"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 3 Điều 6.",
@@ -47,9 +47,9 @@
    "q": "Nhãn hiệu nổi tiếng là nhãn hiệu được biết đến rộng rãi bởi ai và ở đâu?",
    "options": [
     "Bộ phận công chúng có liên quan, trên lãnh thổ Việt Nam",
-    "Toàn thế giới",
-    "Chỉ chủ sở hữu",
-    "Cơ quan nhà nước"
+    "Toàn thế giới, không phân biệt lãnh thổ quốc gia nào",
+    "Chỉ chủ sở hữu nhãn hiệu và người thân trong gia đình",
+    "Cơ quan nhà nước có thẩm quyền quản lý nhãn hiệu"
    ],
    "answer": 0,
    "explain": "Khoản 20 Điều 4.",
@@ -71,6 +71,16 @@
     {
      "text": "Quyền xác lập trên cơ sở sử dụng",
      "answer": "right"
+    },
+    {
+     "text": "Nhãn hiệu được xác lập quyền khi có quyết định cấp văn bằng bảo hộ của cơ quan có thẩm quyền",
+     "answer": "left",
+     "basis": "Điểm a khoản 3 Điều 6 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Nhãn hiệu được công chúng liên quan biết đến rộng rãi, quyền xác lập không phụ thuộc đăng ký",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 6 và khoản 20 Điều 4 Luật Sở hữu trí tuệ"
     }
    ],
    "explain": "Điều 6."
@@ -111,6 +121,18 @@
     "sử dụng",
     "không phụ thuộc đăng ký"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Nhãn hiệu nổi tiếng là nhãn hiệu được bộ phận công chúng có liên quan biết đến rộng rãi trên lãnh thổ Việt Nam.",
+   "answer": true,
+   "explain": "Đúng. Khoản 20 Điều 4 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 20 Điều 4 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+   }
   }
  ]
 }

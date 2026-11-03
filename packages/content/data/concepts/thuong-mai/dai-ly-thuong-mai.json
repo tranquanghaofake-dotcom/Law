@@ -31,7 +31,7 @@
    "options": [
     "Nhân danh chính mình",
     "Nhân danh bên giao đại lý",
-    "Nhân danh khách hàng",
+    "Nhân danh khách hàng mua",
     "Nhân danh Bộ Công Thương"
    ],
    "answer": 0,
@@ -47,9 +47,9 @@
    "q": "Hàng hóa giao cho bên đại lý thuộc sở hữu của ai?",
    "options": [
     "Bên giao đại lý",
-    "Bên đại lý",
-    "Khách hàng",
-    "Đồng sở hữu"
+    "Bên nhận đại lý",
+    "Khách hàng mua",
+    "Đồng sở hữu hàng"
    ],
    "answer": 0,
    "explain": "Điều 170.",
@@ -71,6 +71,16 @@
     {
      "text": "Bên trung gian nhân danh bên thuê",
      "answer": "right"
+    },
+    {
+     "text": "Bên đại lý nhân danh mình bán hàng hóa do bên giao đại lý cung ứng ra thị trường",
+     "answer": "left",
+     "basis": "Điều 166 Luật Thương mại 2005"
+    },
+    {
+     "text": "Người được ủy nhiệm ký hợp đồng trên danh nghĩa của doanh nghiệp giao đại diện",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 141 Luật Thương mại 2005"
     }
    ],
    "explain": "Điều 141, 166."

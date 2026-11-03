@@ -32,9 +32,9 @@
    "q": "Khoản 1 Điều 2 Hiến pháp 2013 xác định Nhà nước Việt Nam là gì?",
    "options": [
     "Nhà nước pháp quyền xã hội chủ nghĩa của Nhân dân, do Nhân dân, vì Nhân dân",
-    "Nhà nước chuyên chính vô sản",
-    "Nhà nước liên bang",
-    "Nhà nước quân chủ lập hiến"
+    "Nhà nước pháp quyền xã hội chủ nghĩa Việt Nam do một giai cấp duy nhất nắm quyền",
+    "Nhà nước liên bang gồm nhiều bang có hiến pháp và quân đội riêng",
+    "Nhà nước quân chủ lập hiến, vua đứng đầu và có quyền lập pháp riêng"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 2.",
@@ -49,9 +49,9 @@
    "q": "Dấu hiệu nào của nhà nước pháp quyền theo lý luận?",
    "options": [
     "Pháp luật giữ vị trí chi phối đối với nhà nước và xã hội",
-    "Nhà nước đứng trên pháp luật",
-    "Tòa án phụ thuộc cơ quan hành chính",
-    "Quyền lực không bị kiểm soát"
+    "Nhà nước đứng trên pháp luật và có quyền ban hành luật riêng",
+    "Tòa án phụ thuộc cơ quan hành chính trong mọi vụ việc xét xử",
+    "Quyền lực không bị kiểm soát, không ai chịu trách nhiệm"
    ],
    "answer": 0,
    "explain": "Bài 9: pháp luật ràng buộc cả nhà nước.",
@@ -73,6 +73,16 @@
     {
      "text": "Người đứng đầu ra lệnh trái luật mà không ai được xem xét",
      "answer": "right"
+    },
+    {
+     "text": "Quyền lực nhà nước là thống nhất, có sự phân công, phối hợp, kiểm soát giữa các cơ quan nhà nước, mọi cơ quan hoạt động theo pháp luật",
+     "answer": "left",
+     "basis": "Khoản 3 Điều 2 và Điều 8 Hiến pháp 2013"
+    },
+    {
+     "text": "Quan chức lạm quyền ban hành quyết định trái luật, cơ quan cấp trên không xem xét",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 2 và Điều 8 Hiến pháp 2013"
     }
    ],
    "explain": "Bài 9; Điều 8 Hiến pháp 2013."
@@ -113,6 +123,18 @@
     "quyền con người",
     "tư pháp độc lập"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Nhà nước Cộng hòa xã hội chủ nghĩa Việt Nam là nhà nước pháp quyền xã hội chủ nghĩa của Nhân dân, do Nhân dân, vì Nhân dân.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 2 Hiến pháp 2013 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 2 Hiến pháp 2013",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+   }
   }
  ]
 }

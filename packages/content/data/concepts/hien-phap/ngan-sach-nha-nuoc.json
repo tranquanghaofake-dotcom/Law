@@ -71,6 +71,16 @@
     {
      "text": "Kiểm toán việc quản lý, sử dụng tài chính, tài sản công",
      "answer": "right"
+    },
+    {
+     "text": "Cơ quan quyền lực nhà nước cao nhất quyết định dự toán ngân sách nhà nước",
+     "answer": "left",
+     "basis": "Khoản 4 Điều 70 Hiến pháp 2013"
+    },
+    {
+     "text": "Cơ quan quyền lực nhà nước cao nhất quyết định phân chia các khoản thu và nhiệm vụ chi giữa ngân sách trung ương và địa phương",
+     "answer": "left",
+     "basis": "Khoản 4 Điều 70 Hiến pháp 2013"
     }
    ],
    "explain": "Khoản 4 Điều 70; Điều 118."
@@ -111,6 +121,18 @@
     "luật định",
     "Đồng Việt Nam"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Các khoản thu, chi ngân sách nhà nước phải được dự toán và do luật định.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 55 Hiến pháp 2013 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 55 Hiến pháp 2013",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+   }
   }
  ]
 }

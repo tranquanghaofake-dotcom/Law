@@ -31,9 +31,9 @@
    "q": "Chuyển nhượng quyền sở hữu công nghiệp là gì?",
    "options": [
     "Chủ sở hữu chuyển giao quyền sở hữu của mình cho tổ chức, cá nhân khác",
-    "Cho phép người khác sử dụng đối tượng SHCN",
-    "Gia hạn văn bằng bảo hộ",
-    "Góp ý kiến phản đối đơn"
+    "Cho phép người khác sử dụng đối tượng SHCN mà vẫn giữ quyền sở hữu",
+    "Gia hạn hiệu lực văn bằng bảo hộ đã cấp cho chủ sở hữu quyền SHCN",
+    "Góp ý kiến phản đối đơn đăng ký của người khác trước khi cấp văn bằng"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 138.",
@@ -72,6 +72,16 @@
     {
      "text": "Bên nhận chỉ được dùng nhãn hiệu trong 5 năm tại miền Bắc",
      "answer": "right"
+    },
+    {
+     "text": "Chủ sở hữu bán hẳn sáng chế cho công ty khác bằng hợp đồng văn bản",
+     "answer": "left",
+     "basis": "Khoản 1, 2 Điều 138 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Chủ sở hữu cho công ty khác sử dụng nhãn hiệu nhưng vẫn giữ quyền sở hữu",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 141 Luật Sở hữu trí tuệ"
     }
    ],
    "explain": "Điều 138, 141."
@@ -112,6 +122,18 @@
     "chỉ dẫn địa lý",
     "đăng ký"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chuyển nhượng quyền sở hữu công nghiệp là việc chủ sở hữu quyền sở hữu công nghiệp chuyển giao quyền sở hữu của mình cho tổ chức, cá nhân khác.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 138 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 138 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+   }
   }
  ]
 }

@@ -74,6 +74,16 @@
     {
      "text": "Đưa chứng khoán vào diện cảnh báo, kiểm soát",
      "answer": "left"
+    },
+    {
+     "text": "Ban hành quy chế về niêm yết chứng khoán và công bố thông tin của Sở",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 46 Luật Chứng khoán 2019"
+    },
+    {
+     "text": "Quy định về thành viên của Sở giao dịch chứng khoán Việt Nam",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 46 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Phân biệt cấp độ: Sở xử lý từng mã; Ủy ban xử lý cả Sở."
@@ -102,9 +112,9 @@
    "q": "Hai công ty chứng khoán là thành viên của Sở tranh chấp về một giao dịch. Họ có thể yêu cầu Sở làm gì?",
    "options": [
     "Làm trung gian hòa giải theo yêu cầu của thành viên",
-    "Ra bản án buộc một bên bồi thường",
-    "Thu hồi giấy phép của bên vi phạm",
-    "Chuyển hồ sơ sang Quốc hội"
+    "Ra bản án buộc một bên bồi thường cho bên còn lại",
+    "Thu hồi giấy phép của bên vi phạm và đình chỉ hoạt động",
+    "Chuyển hồ sơ sang Quốc hội để xem xét lập pháp"
    ],
    "answer": 0,
    "explain": "Điểm h khoản 1 Điều 46: Sở làm trung gian hòa giải theo yêu cầu của thành viên khi phát sinh tranh chấp liên quan đến hoạt động giao dịch chứng khoán.",

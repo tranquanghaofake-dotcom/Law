@@ -28,9 +28,9 @@
    "q": "Điểm khác biệt cơ bản giữa cầm cố và thế chấp là gì?",
    "options": [
     "Cầm cố có giao tài sản cho bên nhận, thế chấp không giao",
-    "Cầm cố chỉ áp dụng với bất động sản",
-    "Thế chấp phải giao tài sản",
-    "Không có khác biệt"
+    "Cầm cố tài sản chỉ áp dụng với bất động sản, không áp dụng với động sản",
+    "Thế chấp phải giao tài sản cho bên nhận bảo đảm để giữ lại",
+    "Không có khác biệt về hình thức và hiệu lực giữa hai biện pháp"
    ],
    "answer": 0,
    "explain": "Điều 309, 317.",
@@ -69,6 +69,16 @@
     {
      "text": "Ngân hàng nhận sổ đỏ, chủ nhà vẫn ở trong nhà",
      "answer": "right"
+    },
+    {
+     "text": "Bên vay giao sổ tiết kiệm cho bên cho vay giữ để bảo đảm khoản vay",
+     "answer": "left",
+     "basis": "Điều 309 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Bên vay dùng chiếc xe ô tô bảo đảm khoản vay mà không giao xe, xe vẫn do bên vay sử dụng",
+     "answer": "right",
+     "basis": "Khoản 1 và khoản 2 Điều 317 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 309, 317."

@@ -29,9 +29,9 @@
    "q": "Theo Toàn thư, lầu chuông đặt hai bên thềm rồng năm 1029 nhằm mục đích gì?",
    "options": [
     "Để dân chúng có việc kiện tụng oan uổng đánh chuông lên",
-    "Báo giờ trong cung",
-    "Triệu tập quân đội",
-    "Báo tin chiến thắng"
+    "Báo giờ cho các quan trong cung vào chầu sớm mỗi buổi",
+    "Triệu tập quân đội khi có giặc ngoài biên giới tiến vào",
+    "Báo tin chiến thắng cho toàn dân trong ngày lễ lớn"
    ],
    "answer": 0,
    "explain": "Toàn thư năm 1029.",
@@ -70,6 +70,16 @@
     {
      "text": "Vạc dầu, cũi hổ ở sân triều",
      "answer": "right"
+    },
+    {
+     "text": "Dân có oan ức được đánh chuông ở lầu chuông để trình bày trước triều",
+     "answer": "left",
+     "basis": "Đại Việt sử ký toàn thư, Bản kỷ quyển II, Kỷ nhà Lý, Thái Tông, năm 1029, tờ 19b–20a (laws/lich-su-su-lieu.txt)"
+    },
+    {
+     "text": "Vạc lớn và cũi hổ đặt ở sân triều để răn đe người trái lệnh",
+     "answer": "right",
+     "basis": "Đại Việt sử ký toàn thư, Bản kỷ quyển I, Kỷ nhà Đinh, năm 968, tờ 2b (laws/lich-su-su-lieu.txt)"
     }
    ],
    "explain": "Toàn thư năm 1029 và năm 968."

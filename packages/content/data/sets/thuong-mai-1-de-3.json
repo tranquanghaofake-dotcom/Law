@@ -34,10 +34,10 @@
     {
       "q": "Tại Đại hội thành viên toàn thể của hợp tác xã, quyền biểu quyết của thành viên chính thức được xác định thế nào?",
       "options": [
-        "Theo tỷ lệ vốn góp",
+        "Theo tỷ lệ vốn góp của từng thành viên hợp tác xã",
         "Mỗi thành viên một phiếu có giá trị ngang nhau",
-        "Theo chức vụ",
-        "Theo thâm niên"
+        "Theo chức vụ và thời gian đảm nhiệm trong hợp tác xã",
+        "Theo thâm niên và số năm đóng góp cho hợp tác xã"
       ],
       "answer": 1,
       "explain": "Khoản 4 Điều 61.",
@@ -47,10 +47,10 @@
     {
       "q": "Thu nhập của hợp tác xã được phân phối cho thành viên chính thức chủ yếu theo tiêu chí nào?",
       "options": [
-        "Tỷ lệ vốn góp",
+        "Tỷ lệ vốn góp của thành viên vào hợp tác xã trong năm",
         "Mức độ sử dụng sản phẩm, dịch vụ hoặc đóng góp sức lao động",
-        "Chia đều",
-        "Do Giám đốc quyết định"
+        "Chia đều cho mọi thành viên chính thức trong năm tài chính",
+        "Do Giám đốc quyết định theo đề xuất của ban quản trị hợp tác xã"
       ],
       "answer": 1,
       "explain": "Khoản 3 Điều 8.",
@@ -66,17 +66,17 @@
         "12 tháng"
       ],
       "answer": 1,
-      "explain": "Khoản 2 Điều 5 (Luật Phá sản 2014 trước đây dùng mốc 03 tháng).",
+      "explain": "Khoản 2 Điều 5 Luật Phục hồi, phá sản 2025 (Luật Phá sản 2014 trước đây dùng mốc 03 tháng).",
       "basis": "Điều 5 Luật Phục hồi, phá sản 2025 (142/2025/QH15)",
       "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-Phuc-hoi-pha-san-2025-so-142-2025-QH15-675210.aspx"
     },
     {
       "q": "Ai KHÔNG có quyền nộp đơn yêu cầu áp dụng thủ tục phục hồi?",
       "options": [
-        "Người đại diện theo pháp luật của doanh nghiệp",
+        "Người đại diện doanh nghiệp",
         "Chủ doanh nghiệp tư nhân",
         "Chủ nợ không có bảo đảm",
-        "Đại hội thành viên của hợp tác xã"
+        "Đại hội thành viên hợp tác xã"
       ],
       "answer": 2,
       "explain": "Khoản 1 Điều 24: chủ nợ chỉ có quyền yêu cầu thủ tục phá sản (Điều 38).",
@@ -86,10 +86,10 @@
     {
       "q": "Người lao động có quyền nộp đơn yêu cầu mở thủ tục phá sản khi nào?",
       "options": [
-        "Khi doanh nghiệp chậm lương 1 tháng",
+        "Khi doanh nghiệp chậm lương 1 tháng, chưa có kế hoạch trả nợ, đã được nhắc nhiều lần bằng văn bản",
         "Khi hết thời hạn 06 tháng kể từ ngày phải trả lương, các khoản nợ đến hạn mà doanh nghiệp không thanh toán",
-        "Bất cứ lúc nào",
-        "Chỉ khi được công đoàn cho phép"
+        "Bất cứ lúc nào người lao động thấy cần thiết, không cần điều kiện gì khác và không cần thông báo trước",
+        "Chỉ khi được công đoàn cơ sở cho phép bằng văn bản, có xác nhận của Tòa án và đại diện người lao động"
       ],
       "answer": 1,
       "explain": "Điểm b khoản 1 Điều 38.",
@@ -99,10 +99,10 @@
     {
       "q": "Nghị quyết của Hội nghị chủ nợ được thông qua khi nào?",
       "options": [
-        "Quá nửa số chủ nợ có mặt tán thành",
+        "Quá nửa số chủ nợ có mặt tán thành và đại diện đầy đủ số nợ của doanh nghiệp",
         "Số chủ nợ đại diện cho từ 65% tổng số nợ không có bảo đảm trở lên tán thành",
-        "Toàn bộ chủ nợ tán thành",
-        "Quản tài viên phê duyệt"
+        "Toàn bộ chủ nợ có bảo đảm và không có bảo đảm đều phải tán thành bằng văn bản",
+        "Quản tài viên phê duyệt bằng văn bản sau khi xem xét hồ sơ vụ việc"
       ],
       "answer": 1,
       "explain": "Khoản 5 Điều 61.",

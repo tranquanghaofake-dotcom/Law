@@ -33,9 +33,9 @@
    "q": "Nghiệp vụ nào KHÔNG phải nghiệp vụ cấp tín dụng theo khoản 4 Điều 4?",
    "options": [
     "Nhận tiền gửi tiết kiệm",
-    "Cho vay",
-    "Bao thanh toán",
-    "Bảo lãnh ngân hàng"
+    "Cho vay ngắn hạn tín chấp",
+    "Bao thanh toán có truy đòi",
+    "Bảo lãnh ngân hàng vay vốn"
    ],
    "answer": 0,
    "explain": "Khoản 4 Điều 4; nhận tiền gửi là nghiệp vụ huy động vốn.",
@@ -74,6 +74,16 @@
     {
      "text": "Phát hành chứng chỉ tiền gửi",
      "answer": "right"
+    },
+    {
+     "text": "Ngân hàng phát hành thư tín dụng cho doanh nghiệp để nhập khẩu hàng hóa",
+     "answer": "left",
+     "basis": "Khoản 4 Điều 4 Luật Các tổ chức tín dụng 2024"
+    },
+    {
+     "text": "Ngân hàng nhận tiền gửi không kỳ hạn của doanh nghiệp để giữ thanh khoản",
+     "answer": "right",
+     "basis": "Khoản 27 Điều 4 Luật Các tổ chức tín dụng 2024"
     }
    ],
    "explain": "Khoản 4, 27 Điều 4."

@@ -26,12 +26,12 @@
   {
    "type": "mcq",
    "level": 1,
-   "q": "Theo khoản 2 Điều 21, quyền bí mật áp dụng với những hình thức nào?",
+   "q": "Phương án nào liệt kê đầy đủ các hình thức trao đổi thông tin mà theo khoản 2 Điều 21 được bảo đảm an toàn bí mật?",
    "options": [
     "Thư tín, điện thoại, điện tín và các hình thức trao đổi thông tin riêng tư khác",
-    "Chỉ thư tay",
-    "Chỉ điện thoại cố định",
-    "Chỉ thư của cơ quan nhà nước"
+    "Thư tay và thư gửi cho người thân trong gia đình tại địa phương",
+    "Điện thoại cố định và điện thoại di động của người thân trong gia đình tại địa phương",
+    "Thư của cơ quan nhà nước và thư tín của các tổ chức chính trị xã hội"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 21.",
@@ -46,7 +46,7 @@
    "q": "Thông tin về đời sống riêng tư, bí mật cá nhân được Hiến pháp bảo đảm như thế nào?",
    "options": [
     "Được pháp luật bảo đảm an toàn",
-    "Được công khai theo yêu cầu của bất kỳ ai",
+    "Được công khai theo yêu cầu",
     "Không được bảo vệ",
     "Chỉ bảo vệ với người nổi tiếng"
    ],
@@ -70,6 +70,16 @@
     {
      "text": "Bí mật thư tín, điện thoại, điện tín",
      "answer": "right"
+    },
+    {
+     "text": "Bảo vệ bí mật cá nhân và bí mật gia đình của mọi người",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 21 Hiến pháp 2013"
+    },
+    {
+     "text": "Thông tin về đời sống riêng tư được pháp luật bảo đảm an toàn",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 21 Hiến pháp 2013"
     }
    ],
    "explain": "Điều 21 Hiến pháp 2013."

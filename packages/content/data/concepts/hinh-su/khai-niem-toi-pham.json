@@ -30,9 +30,9 @@
    "q": "Hành vi có dấu hiệu tội phạm nhưng tính chất nguy hiểm cho xã hội không đáng kể thì sao?",
    "options": [
     "Không phải là tội phạm, được xử lý bằng biện pháp khác",
-    "Vẫn là tội phạm ít nghiêm trọng",
-    "Được miễn hình phạt",
-    "Bị phạt cảnh cáo"
+    "Vẫn là tội phạm ít nghiêm trọng, phải bị xử lý hình sự",
+    "Được miễn hình phạt và không phải bồi thường thiệt hại",
+    "Bị phạt cảnh cáo và phải nộp tiền phạt hành chính"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 8.",
@@ -47,9 +47,9 @@
    "q": "Chủ thể thực hiện tội phạm theo khoản 1 Điều 8 gồm ai?",
    "options": [
     "Người có năng lực trách nhiệm hình sự hoặc pháp nhân thương mại",
-    "Mọi cá nhân, pháp nhân",
-    "Chỉ công dân Việt Nam",
-    "Cơ quan nhà nước"
+    "Cá nhân, pháp nhân và tổ chức xã hội có hoạt động trong nước",
+    "Chỉ công dân Việt Nam có đăng ký hộ khẩu thường trú tại địa phương",
+    "Cơ quan nhà nước và tổ chức chính trị - xã hội có thẩm quyền"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 8.",
@@ -75,6 +75,11 @@
     {
      "text": "Hành vi phòng vệ chính đáng",
      "answer": "right"
+    },
+    {
+     "text": "Hành vi nguy hiểm cho xã hội được Bộ luật Hình sự quy định, do người có năng lực trách nhiệm hình sự cố ý hoặc vô ý thực hiện",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 8 Bộ luật Hình sự 2015"
     }
    ],
    "explain": "Điều 8, 22."
@@ -115,6 +120,18 @@
     "trái pháp luật hình sự",
     "không đáng kể"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Những hành vi tuy có dấu hiệu của tội phạm nhưng tính chất nguy hiểm cho xã hội không đáng kể thì không phải là tội phạm và được xử lý bằng các biện pháp khác.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 8 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 8 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)",
+    "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+   }
   }
  ]
 }

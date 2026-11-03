@@ -29,9 +29,9 @@
    "q": "Năng lực hành vi hành chính của công dân phụ thuộc vào yếu tố nào?",
    "options": [
     "Độ tuổi, trình độ, sức khỏe",
-    "Tài sản",
-    "Tôn giáo",
-    "Giới tính"
+    "Tài sản riêng mà cá nhân sở hữu",
+    "Tôn giáo, tín ngưỡng riêng",
+    "Giới tính và nơi cư trú"
    ],
    "answer": 0,
    "explain": "Học thuyết.",
@@ -47,7 +47,7 @@
    "options": [
     "Ứng cử đại biểu Quốc hội Việt Nam",
     "Được bảo vệ tính mạng, tài sản",
-    "Khiếu nại quyết định hành chính xâm phạm quyền lợi của mình",
+    "Khiếu nại quyết định hành chính",
     "Kinh doanh theo pháp luật"
    ],
    "answer": 0,
@@ -70,6 +70,16 @@
     {
      "text": "Khả năng tự mình thực hiện quyền, nghĩa vụ và tự chịu trách nhiệm",
      "answer": "right"
+    },
+    {
+     "text": "Công dân trẻ em được hưởng chế độ miễn học phí theo quy định",
+     "answer": "left",
+     "basis": "Giáo trình Luật Hành chính Việt Nam, ĐH Luật Hà Nội (quy chế pháp lý công dân; chưa đối chiếu nguyên văn)"
+    },
+    {
+     "text": "Công dân đủ điều kiện tự mình nộp đơn xin cấp giấy phép và tự chịu trách nhiệm về đơn đó",
+     "answer": "right",
+     "basis": "Giáo trình Luật Hành chính Việt Nam, ĐH Luật Hà Nội (quy chế pháp lý công dân; chưa đối chiếu nguyên văn)"
     }
    ],
    "explain": "Học thuyết."

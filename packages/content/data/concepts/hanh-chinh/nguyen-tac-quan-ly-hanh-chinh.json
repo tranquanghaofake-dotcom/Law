@@ -29,9 +29,9 @@
    "q": "Nguyên tắc nào thuộc nhóm tổ chức – kỹ thuật?",
    "options": [
     "Kết hợp quản lý theo ngành với quản lý theo địa giới hành chính",
-    "Đảng lãnh đạo",
-    "Nhân dân tham gia quản lý",
-    "Bình đẳng giữa các dân tộc"
+    "Đảng lãnh đạo trực tiếp mọi hoạt động quản lý nhà nước",
+    "Nhân dân tham gia quản lý nhà nước và xã hội trực tiếp",
+    "Bình đẳng giữa các dân tộc và tôn giáo trong quản lý nhà nước"
    ],
    "answer": 0,
    "explain": "Slide bài giảng vấn đề 4.",
@@ -46,9 +46,9 @@
    "q": "Nguyên tắc tập trung dân chủ được ghi nhận ở đâu?",
    "options": [
     "Điều 8 Hiến pháp 2013 và luật tổ chức bộ máy",
-    "Chỉ trong giáo trình",
-    "Bộ luật Dân sự",
-    "Không được ghi nhận"
+    "Chỉ trong giáo trình và tài liệu tham khảo",
+    "Bộ luật Dân sự và Luật Đất đai",
+    "Không được ghi nhận trong văn bản nào cả"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 8 Hiến pháp 2013; khoản 1 Điều 5 Luật Tổ chức Chính phủ 2025.",
@@ -70,6 +70,16 @@
     {
      "text": "Phân biệt quản lý nhà nước về kinh tế với quản lý sản xuất kinh doanh",
      "answer": "right"
+    },
+    {
+     "text": "Tập trung dân chủ trong tổ chức bộ máy quản lý hành chính nhà nước",
+     "answer": "left",
+     "basis": "Slide bài giảng Luật Hành chính Việt Nam, Trường Đại học Luật Hà Nội, vấn đề 4 (⚠ chưa đối chiếu nguyên văn)"
+    },
+    {
+     "text": "Tổ chức khoa học, thống nhất quy trình kỹ thuật của bộ máy quản lý hành chính",
+     "answer": "right",
+     "basis": "Slide bài giảng Luật Hành chính Việt Nam, Trường Đại học Luật Hà Nội, vấn đề 4 (⚠ chưa đối chiếu nguyên văn)"
     }
    ],
    "explain": "Slide bài giảng vấn đề 4."

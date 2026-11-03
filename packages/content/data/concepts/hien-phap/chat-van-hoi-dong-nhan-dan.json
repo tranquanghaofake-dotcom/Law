@@ -30,9 +30,9 @@
    "q": "Đại biểu Hội đồng nhân dân có quyền chất vấn ai?",
    "options": [
     "Chủ tịch Ủy ban nhân dân, thành viên Ủy ban nhân dân, Chánh án, Viện trưởng, Thủ trưởng cơ quan thuộc Ủy ban nhân dân",
-    "Thủ tướng Chính phủ",
-    "Chủ tịch nước",
-    "Bộ trưởng"
+    "Thủ tướng Chính phủ, các Phó Thủ tướng, Bộ trưởng và các thành viên Chính phủ trung ương khác đang công tác",
+    "Chủ tịch nước, Phó Chủ tịch nước và các thành viên Hội đồng quốc phòng và an ninh quốc gia hiện nay trên cả nước",
+    "Bộ trưởng và Thứ trưởng các bộ, cơ quan ngang bộ, cơ quan thuộc Chính phủ và viện nghiên cứu khoa học"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 115.",
@@ -48,7 +48,7 @@
    "options": [
     "Trước Hội đồng nhân dân",
     "Trước Mặt trận Tổ quốc",
-    "Trên báo chí",
+    "Trên báo chí trung ương",
     "Trước Ủy ban nhân dân"
    ],
    "answer": 0,
@@ -79,6 +79,16 @@
     {
      "text": "Chánh án Tòa án nhân dân tối cao",
      "answer": "right"
+    },
+    {
+     "text": "Đại biểu Hội đồng nhân dân cấp xã nêu chất vấn Chủ tịch Ủy ban nhân dân cùng cấp",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 115 Hiến pháp 2013"
+    },
+    {
+     "text": "Tại kỳ họp, Thủ tướng Chính phủ trả lời chất vấn của đại biểu Quốc hội",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 80 Hiến pháp 2013"
     }
    ],
    "explain": "Điều 80, 115."
@@ -119,6 +129,18 @@
     "Viện trưởng",
     "trả lời trước Hội đồng nhân dân"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người bị chất vấn phải trả lời trước Hội đồng nhân dân.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 115 Hiến pháp 2013 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 115 Hiến pháp 2013",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+   }
   }
  ]
 }

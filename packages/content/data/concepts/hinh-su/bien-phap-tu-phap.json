@@ -30,9 +30,9 @@
    "q": "Biện pháp nào là biện pháp tư pháp đối với người phạm tội?",
    "options": [
     "Bắt buộc chữa bệnh",
-    "Quản chế",
-    "Cấm cư trú",
-    "Tịch thu tài sản"
+    "Quản chế hành chính",
+    "Cấm đi lại, cấm cư trú",
+    "Phạt tiền, cải tạo không giam giữ"
    ],
    "answer": 0,
    "explain": "Điểm c khoản 1 Điều 46; các phương án khác là hình phạt bổ sung.",
@@ -75,6 +75,16 @@
     {
      "text": "Buộc công khai xin lỗi",
      "answer": "left"
+    },
+    {
+     "text": "Buộc bồi thường thiệt hại, trả lại tài sản hoặc sửa chữa cho người bị hại",
+     "answer": "left",
+     "basis": "Điểm b khoản 1 Điều 46 Bộ luật Hình sự 2015"
+    },
+    {
+     "text": "Cấm cư trú tại một địa phương nhất định đối với người bị kết án, được tuyên kèm theo hình phạt chính",
+     "answer": "right",
+     "basis": "Điểm b khoản 2 Điều 32 Bộ luật Hình sự 2015"
     }
    ],
    "explain": "Điều 32, 46."

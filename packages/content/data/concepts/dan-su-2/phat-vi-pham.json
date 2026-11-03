@@ -30,7 +30,7 @@
    "q": "Hợp đồng dân sự có thỏa thuận phạt vi phạm nhưng không thỏa thuận về việc vừa phạt vừa bồi thường. Bên vi phạm chịu gì?",
    "options": [
     "Chỉ phải chịu phạt vi phạm",
-    "Vừa chịu phạt vừa bồi thường",
+    "Vừa chịu phạt, vừa bồi thường",
     "Chỉ bồi thường thiệt hại",
     "Không chịu gì"
    ],
@@ -47,9 +47,9 @@
    "q": "Mức phạt vi phạm theo BLDS do ai xác định?",
    "options": [
     "Các bên thỏa thuận, trừ trường hợp luật liên quan có quy định khác",
-    "Luôn tối đa 8%",
-    "Tòa án ấn định",
-    "Không được vượt quá 5%"
+    "Luôn tối đa 8% giá trị phần nghĩa vụ bị vi phạm theo quy định của luật",
+    "Tòa án ấn định mức phạt theo ý kiến chủ quan của thẩm phán",
+    "Không được vượt quá 5% giá trị phần nghĩa vụ bị vi phạm theo hợp đồng"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 418.",
@@ -71,6 +71,21 @@
     {
      "text": "Phải chứng minh thiệt hại thực tế",
      "answer": "right"
+    },
+    {
+     "text": "Hai bên thỏa thuận: bên chậm giao hàng phải nộp một khoản tiền phạt theo hợp đồng",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 418 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Mức phạt do các bên thỏa thuận trong hợp đồng mua bán, trừ khi luật liên quan có quy định khác",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 418 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Bên vi phạm phải nộp khoản tiền đã thỏa thuận trong hợp đồng dịch vụ khi không thực hiện đúng cam kết",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 418 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 418, 360."
@@ -111,6 +126,18 @@
     "chỉ chịu phạt",
     "bồi thường"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Phạt vi phạm là sự thỏa thuận giữa các bên trong hợp đồng, theo đó bên vi phạm nghĩa vụ phải nộp một khoản tiền cho bên bị vi phạm.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 418 Bộ luật Dân sự 2015 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 418 Bộ luật Dân sự 2015",
+    "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+   }
   }
  ]
 }

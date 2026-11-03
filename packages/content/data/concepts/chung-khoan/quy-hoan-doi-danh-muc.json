@@ -46,9 +46,9 @@
    "q": "Chứng chỉ quỹ hoán đổi danh mục được giao dịch ở đâu?",
    "options": [
     "Trên hệ thống giao dịch cho chứng khoán niêm yết",
-    "Chỉ giao dịch thỏa thuận ngoài sàn",
-    "Chỉ qua công ty quản lý quỹ",
-    "Trên UPCoM"
+    "Giao dịch thỏa thuận ngoài sàn giữa các nhà đầu tư",
+    "Qua công ty quản lý quỹ và ngân hàng giám sát của quỹ",
+    "Trên UPCoM và các thị trường giao dịch phi tập trung"
    ],
    "answer": 0,
    "explain": "Khoản 42 Điều 4.",
@@ -74,6 +74,11 @@
     {
      "text": "Nhà đầu tư bán lại chứng chỉ quỹ trực tiếp cho quỹ theo kỳ giao dịch",
      "answer": "right"
+    },
+    {
+     "text": "Quỹ mở có chứng chỉ quỹ được mua lại theo yêu cầu của nhà đầu tư và không niêm yết trên Sở giao dịch chứng khoán",
+     "answer": "right",
+     "basis": "Khoản 39 Điều 4 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 39, 42 Điều 4."

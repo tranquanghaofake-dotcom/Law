@@ -29,9 +29,9 @@
    "q": "Sự biến pháp lý là gì?",
    "options": [
     "Hiện tượng xảy ra ngoài ý chí con người nhưng được pháp luật gắn với hậu quả pháp lý",
-    "Hành vi có ý chí của chủ thể",
-    "Quyết định của tòa án",
-    "Quy phạm pháp luật"
+    "Hành vi có ý chí của chủ thể nhưng không được pháp luật thừa nhận hoặc gắn hậu quả",
+    "Quyết định của tòa án có hiệu lực, buộc các bên phải thực hiện theo nội dung đã định",
+    "Quy phạm pháp luật do nhà nước ban hành để điều chỉnh các hành vi của con người"
    ],
    "answer": 0,
    "explain": "VD11."
@@ -42,9 +42,9 @@
    "q": "Việc A ký hợp đồng thuê nhà của B là loại sự kiện pháp lý nào?",
    "options": [
     "Hành vi pháp lý hợp pháp làm phát sinh quan hệ pháp luật",
-    "Sự biến pháp lý",
-    "Hành vi trái pháp luật",
-    "Không phải sự kiện pháp lý"
+    "Hành vi trái pháp luật gây thiệt hại cho người khác",
+    "Sự biến pháp lý, xảy ra ngoài ý chí và không có hậu quả",
+    "Không phải sự kiện pháp lý, chỉ là hoạt động thường ngày"
    ],
    "answer": 0,
    "explain": "VD11."
@@ -62,6 +62,16 @@
     {
      "text": "Lập di chúc",
      "answer": "right"
+    },
+    {
+     "text": "Động đất làm sập nhà cửa, gây mất tài sản mà không do ai gây ra",
+     "answer": "left",
+     "basis": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), VD11"
+    },
+    {
+     "text": "Người ký hợp đồng tặng cho tài sản, hành vi có ý chí tạo ra hệ quả pháp lý",
+     "answer": "right",
+     "basis": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), VD11"
     }
    ],
    "explain": "VD11."
@@ -102,6 +112,17 @@
     "phát sinh",
     "chấm dứt"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Sự kiện pháp lý là những sự kiện thực tế mà khi xuất hiện, theo quy định của pháp luật, làm phát sinh, thay đổi hoặc chấm dứt quan hệ pháp luật cụ thể.",
+   "answer": true,
+   "explain": "Đúng. Trích định nghĩa của khái niệm — nguồn: Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (Drive HLU/KÌ I NĂM I/LLCNN&PL/TÀI LIỆU ÔN THI LLC: VD8, VD9, VD11, VD12, VD13) và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình.",
+   "source": {
+    "kind": "textbook",
+    "cite": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (Drive HLU/KÌ I NĂM I/LLCNN&PL/TÀI LIỆU ÔN THI LLC: VD8, VD9, VD11, VD12, VD13) và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình"
+   }
   }
  ]
 }

@@ -31,8 +31,8 @@
    "options": [
     "Người nộp thuế",
     "Cơ quan thuế",
-    "Bộ Tài chính",
-    "Ngân hàng"
+    "Người thu thuế",
+    "Kho bạc Nhà nước"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 6.",
@@ -71,6 +71,16 @@
     {
      "text": "Phân nhóm người nộp thuế để quản lý theo rủi ro",
      "answer": "right"
+    },
+    {
+     "text": "Người nộp thuế kê khai và nộp đủ nghĩa vụ thuế theo luật thuế",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 6 Luật Quản lý thuế 2025"
+    },
+    {
+     "text": "Cơ quan quản lý thuế thực hiện việc quản lý thuế theo quy định của pháp luật",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 6 Luật Quản lý thuế 2025"
     }
    ],
    "explain": "Điều 3, 6."
@@ -111,6 +121,18 @@
     "tự kê khai",
     "bản chất"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người nộp thuế có nghĩa vụ nộp thuế, các khoản thu khác thuộc ngân sách nhà nước theo quy định của luật thuế và quy định của pháp luật.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 6 Luật Quản lý thuế 2025 (108/2025/QH15) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 6 Luật Quản lý thuế 2025 (108/2025/QH15)",
+    "url": "https://thuvienphapluat.vn/van-ban/Thue-Phi-Le-Phi/Luat-Quan-ly-thue-2025-so-108-2025-QH15-675268.aspx"
+   }
   }
  ]
 }

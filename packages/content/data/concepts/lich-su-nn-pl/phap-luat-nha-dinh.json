@@ -30,9 +30,9 @@
    "q": "Theo Toàn thư, Đinh Tiên Hoàng đặt vạc lớn, nuôi hổ dữ nhằm mục đích gì?",
    "options": [
     "Dùng uy chế ngự thiên hạ",
-    "Tế lễ trời đất",
-    "Trang trí cung điện",
-    "Huấn luyện quân sĩ"
+    "Tế lễ trời đất cho dân yên",
+    "Trang trí cung điện cho đẹp",
+    "Huấn luyện quân sĩ giỏi"
    ],
    "answer": 0,
    "explain": "\"Vua muốn dùng uy chế ngự thiên hạ, bèn đặt vạc lớn ở sân triều, nuôi hổ dữ trong cũi\".",
@@ -47,9 +47,9 @@
    "q": "Đặc điểm nổi bật của pháp luật thời Đinh qua đoạn sử liệu về vạc dầu, cũi hổ là gì?",
    "options": [
     "Hình phạt hà khắc, mang tính răn đe",
-    "Pháp luật thành văn hoàn chỉnh",
-    "Đề cao nhân đạo, khoan hồng",
-    "Chịu ảnh hưởng luật La Mã"
+    "Pháp luật thành văn đầy đủ, hoàn chỉnh",
+    "Đề cao nhân đạo, khoan hồng cho dân",
+    "Chịu ảnh hưởng luật La Mã từ Tây Âu"
    ],
    "answer": 0,
    "explain": "Đây là cách đánh giá phổ biến của giáo trình dựa trên sử liệu.",
@@ -71,6 +71,16 @@
     {
      "text": "Ban hành Hình thư",
      "answer": "right"
+    },
+    {
+     "text": "Vua Đinh đặt vạc lớn, cũi hổ để trừng trị người trái lệnh",
+     "answer": "left",
+     "basis": "Đại Việt sử ký toàn thư, Bản kỷ quyển I, Kỷ nhà Đinh, năm 968, tờ 2b (laws/lich-su-su-lieu.txt)"
+    },
+    {
+     "text": "Nhà Lý ban Hình thư để định lại cách xét xử kiện tụng",
+     "answer": "right",
+     "basis": "Đại Việt sử ký toàn thư, Bản kỷ quyển II, Kỷ nhà Lý, Thái Tông, năm 1042, tờ 30b–31a (laws/lich-su-su-lieu.txt)"
     }
    ],
    "explain": "Toàn thư: năm 968 (Đinh); năm 1042 nhà Lý ban Hình thư."

@@ -30,9 +30,9 @@
    "q": "Theo khoản 3 Điều 2 Hiến pháp 2013, quyền lực nhà nước được tổ chức theo nguyên tắc nào?",
    "options": [
     "Thống nhất, có sự phân công, phối hợp, kiểm soát giữa các cơ quan nhà nước",
-    "Tam quyền phân lập, các cơ quan độc lập và đối trọng tuyệt đối",
-    "Tập trung toàn bộ vào Quốc hội",
-    "Phân chia theo lãnh thổ giữa trung ương và địa phương"
+    "Tam quyền phân lập, các cơ quan độc lập và đối trọng lẫn nhau",
+    "Tập trung toàn bộ quyền lực vào Quốc hội và Chính phủ và các cơ quan",
+    "Thống nhất, có phân công, phối hợp nhưng không có kiểm soát giữa các cơ quan"
    ],
    "answer": 0,
    "explain": "Nguyên văn khoản 3 Điều 2. Hiến pháp 2013 bổ sung từ \"kiểm soát\" so với Hiến pháp 1992.",
@@ -49,7 +49,7 @@
     "Lập pháp, hành pháp, tư pháp",
     "Lập pháp, hành chính, kiểm sát",
     "Ban hành luật, thu thuế, quốc phòng",
-    "Lập hiến, lập pháp, giám sát"
+    "Lập hiến, lập pháp, giám sát tối cao"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 2 nêu đúng ba quyền: lập pháp, hành pháp, tư pháp.",
@@ -75,6 +75,11 @@
     {
      "text": "Quốc hội giám sát tối cao hoạt động của Chính phủ và Tòa án.",
      "answer": "left"
+    },
+    {
+     "text": "Cơ quan nhà nước kiềm chế, đối trọng lẫn nhau, không phối hợp với nhau trong việc thực hiện quyền lực",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 2 Hiến pháp 2013"
     }
    ],
    "explain": "Việt Nam theo mô hình thống nhất quyền lực có phân công, phối hợp, kiểm soát (khoản 3 Điều 2), không theo tam quyền phân lập."
@@ -107,9 +112,9 @@
    "q": "Chính phủ ban hành nghị định trái luật. Theo mô hình tổ chức quyền lực của Hiến pháp 2013, cơ chế nào thể hiện sự KIỂM SOÁT giữa các cơ quan trong trường hợp này?",
    "options": [
     "Quốc hội thực hiện quyền giám sát tối cao và có thể bãi bỏ văn bản của Chính phủ trái Hiến pháp, luật",
-    "Chính phủ tự bãi bỏ vì không ai có quyền can thiệp",
-    "Tòa án ra lệnh giải thể Chính phủ",
-    "Nhân dân trực tiếp bãi bỏ nghị định bằng trưng cầu ý dân"
+    "Chính phủ tự bãi bỏ vì không ai có quyền can thiệp và tự chịu trách nhiệm hoàn toàn trước Quốc hội",
+    "Tòa án ra lệnh giải thể Chính phủ và thay thế bằng Ủy ban thường vụ Quốc hội",
+    "Nhân dân trực tiếp bãi bỏ nghị định bằng trưng cầu ý dân và các hình thức bỏ phiếu khác"
    ],
    "answer": 0,
    "explain": "Quốc hội giám sát tối cao việc tuân theo Hiến pháp, luật (khoản 2 Điều 70) và bãi bỏ văn bản của Chính phủ trái Hiến pháp, luật (khoản 10 Điều 70). Đó là kiểm soát quyền lực theo khoản 3 Điều 2.",

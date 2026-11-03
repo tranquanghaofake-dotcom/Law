@@ -28,7 +28,7 @@
    "q": "Trường hợp nào Tòa án có thể xét xử kín theo khoản 3 Điều 103?",
    "options": [
     "Cần bảo vệ người chưa thành niên",
-    "Bị cáo là người nổi tiếng",
+    "Bị cáo là cán bộ giữ chức vụ cao",
     "Vụ án có nhiều nhà báo theo dõi",
     "Bị cáo yêu cầu vì sợ mất uy tín"
    ],
@@ -45,7 +45,7 @@
    "q": "Hội đồng xét xử quyết định theo nguyên tắc nào?",
    "options": [
     "Tập thể, theo đa số",
-    "Theo ý kiến Chủ tọa",
+    "Theo ý kiến của Chủ tọa",
     "Theo ý kiến Kiểm sát viên",
     "Đồng thuận tuyệt đối"
    ],
@@ -73,6 +73,16 @@
     {
      "text": "Vụ ly hôn đương sự yêu cầu giữ bí mật đời tư chính đáng",
      "answer": "right"
+    },
+    {
+     "text": "Phiên tòa mở cửa cho mọi người tham dự, Thẩm phán và Hội thẩm cùng xét xử tập thể vụ án trộm cắp tài sản",
+     "answer": "left",
+     "basis": "Khoản 3 và khoản 4 Điều 103 Hiến pháp 2013"
+    },
+    {
+     "text": "Vụ án ly hôn có đương sự yêu cầu giữ bí mật đời tư chính đáng được xét xử kín",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 103 Hiến pháp 2013"
     }
    ],
    "explain": "Khoản 3 Điều 103."

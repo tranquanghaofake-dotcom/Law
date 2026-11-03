@@ -46,9 +46,9 @@
    "q": "Trưng cầu ý dân về Hiến pháp ở Việt Nam có tính chất gì?",
    "options": [
     "Không bắt buộc; Quốc hội quyết định có tổ chức hay không",
-    "Bắt buộc đối với mọi lần sửa đổi Hiến pháp",
+    "Bắt buộc đối với mọi lần sửa đổi Hiến pháp và luật",
     "Bắt buộc và kết quả thay thế biểu quyết của Quốc hội",
-    "Chỉ tổ chức khi Chủ tịch nước yêu cầu"
+    "Chỉ tổ chức khi Chủ tịch nước yêu cầu bằng văn bản"
    ],
    "answer": 0,
    "explain": "Hiến pháp có hiệu lực khi Quốc hội thông qua với 2/3; trưng cầu ý dân là bước tùy nghi do Quốc hội quyết định.",
@@ -74,6 +74,16 @@
     {
      "text": "Quy định tại khoản 3 Điều 120.",
      "answer": "right"
+    },
+    {
+     "text": "Ủy ban dự thảo Hiến pháp soạn thảo và tổ chức lấy ý kiến Nhân dân về dự thảo",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 120 Hiến pháp 2013"
+    },
+    {
+     "text": "Quốc hội quyết định việc lấy ý kiến cử tri cả nước về Hiến pháp bằng hình thức bỏ phiếu",
+     "answer": "left",
+     "basis": "Khoản 4 Điều 120 Hiến pháp 2013"
     }
    ],
    "explain": "Lấy ý kiến Nhân dân (khoản 3 Điều 120) là bắt buộc trong soạn thảo; trưng cầu ý dân (khoản 4 Điều 120) là hình thức dân chủ trực tiếp, không bắt buộc."
@@ -112,10 +122,10 @@
    "level": 4,
    "q": "Một nhóm cử tri yêu cầu Quốc hội phải tổ chức trưng cầu ý dân trước khi thông qua Nghị quyết sửa đổi Hiến pháp, cho rằng đó là nghĩa vụ hiến định. Nhận định nào đúng?",
    "options": [
-    "Đúng, Hiến pháp bắt buộc trưng cầu ý dân với mọi sửa đổi",
+    "Đúng, Hiến pháp bắt buộc trưng cầu ý dân với mọi lần sửa đổi và mọi văn bản pháp luật khác",
     "Không đúng; Hiến pháp chỉ bắt buộc lấy ý kiến Nhân dân, còn trưng cầu ý dân do Quốc hội quyết định",
-    "Đúng nếu nhóm cử tri chiếm quá nửa dân số",
-    "Không đúng vì Hiến pháp cấm trưng cầu ý dân"
+    "Đúng nếu nhóm cử tri chiếm quá nửa dân số cả nước và có đơn yêu cầu hợp lệ tại Quốc hội",
+    "Không đúng vì Hiến pháp cấm trưng cầu ý dân trong mọi trường hợp và đối với mọi văn bản"
    ],
    "answer": 1,
    "explain": "Khoản 3 Điều 120 bắt buộc lấy ý kiến Nhân dân; khoản 4 giao Quốc hội quyết định việc trưng cầu ý dân.",
@@ -135,6 +145,18 @@
     "bỏ phiếu",
     "Quốc hội quyết định"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Ủy ban dự thảo Hiến pháp soạn thảo, tổ chức lấy ý kiến Nhân dân và trình Quốc hội dự thảo Hiến pháp.",
+   "answer": true,
+   "explain": "Đúng. Khoản 3 Điều 120 Hiến pháp 2013 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 120 Hiến pháp 2013",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+   }
   }
  ]
 }

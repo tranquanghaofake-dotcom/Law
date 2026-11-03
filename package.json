@@ -1,11 +1,16 @@
 {
   "name": "luyen-luat-monorepo",
   "private": true,
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Luyện Luật — web học khái niệm luật (apps/web) và kho nội dung luật (packages/content)",
   "type": "module",
-  "engines": { "node": ">=22" },
-  "workspaces": ["packages/*", "apps/*"],
+  "engines": {
+    "node": ">=22"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
   "scripts": {
     "dev": "npm run dev -w @luyen-luat/web",
     "build": "npm run build -w @luyen-luat/web",

@@ -72,6 +72,16 @@
     {
      "text": "Ủy ban của Quốc hội đánh giá dự án luật trước kỳ họp",
      "answer": "right"
+    },
+    {
+     "text": "Bộ Tư pháp chủ trì, phối hợp các bộ đánh giá dự án luật do Chính phủ chuẩn bị trình Quốc hội, trước khi trình",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 34 Luật Ban hành văn bản quy phạm pháp luật 2025"
+    },
+    {
+     "text": "Hồ sơ dự án luật phải gửi đến Ủy ban của Quốc hội trước 45 ngày khai mạc kỳ họp",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 37 Luật Ban hành văn bản quy phạm pháp luật 2025"
     }
    ],
    "explain": "Điều 34 (thẩm định) và Điều 37 (thẩm tra)."

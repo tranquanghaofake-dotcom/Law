@@ -70,6 +70,16 @@
     {
      "text": "Cho hạn một năm",
      "answer": "right"
+    },
+    {
+     "text": "Chồng bỏ lửng vợ không đi lại đủ 5 tháng, vợ chưa sinh con, vợ trình quan sở tại thì người chồng mất vợ",
+     "answer": "left",
+     "basis": "Quốc triều hình luật, Điều 308 (laws/lich-su-su-lieu.txt)"
+    },
+    {
+     "text": "Chồng bỏ lửng quá 5 tháng nhưng người vợ đã sinh con thì luật cho thêm hạn một năm trước khi xử lý",
+     "answer": "right",
+     "basis": "Quốc triều hình luật, Điều 308 (laws/lich-su-su-lieu.txt)"
     }
    ],
    "explain": "Điều 308."

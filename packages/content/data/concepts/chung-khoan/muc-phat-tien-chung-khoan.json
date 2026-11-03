@@ -74,6 +74,11 @@
     {
      "text": "Chậm công bố thông tin định kỳ",
      "answer": "right"
+    },
+    {
+     "text": "Vi phạm quy định công bố thông tin ngoài các hành vi bị cấm tại khoản 2, 3 Điều 12",
+     "answer": "right",
+     "basis": "Khoản 4 Điều 132 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 3, 4 Điều 132."
@@ -124,6 +129,18 @@
     "tổ chức",
     "một phần hai"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Cá nhân thực hiện cùng hành vi vi phạm thì mức phạt tiền tối đa bằng một phần hai mức phạt tiền tối đa đối với tổ chức.",
+   "answer": true,
+   "explain": "Đúng. Khoản 5 Điều 132 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 5 Điều 132 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+   }
   }
  ]
 }

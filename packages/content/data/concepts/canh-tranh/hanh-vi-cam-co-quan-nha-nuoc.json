@@ -5,7 +5,7 @@
  "term": "Hành vi bị nghiêm cấm của cơ quan nhà nước liên quan đến cạnh tranh",
  "definition": "Cơ quan nhà nước thực hiện hành vi gây cản trở cạnh tranh trên thị trường sau đây: a) Ép buộc, yêu cầu, khuyến nghị doanh nghiệp, cơ quan, tổ chức, cá nhân phải thực hiện hoặc không thực hiện việc sản xuất, mua, bán hàng hóa, cung ứng, sử dụng dịch vụ cụ thể hoặc mua, bán hàng hóa, cung ứng, sử dụng dịch vụ với doanh nghiệp cụ thể, trừ hàng hóa, dịch vụ thuộc lĩnh vực độc quyền nhà nước hoặc trong trường hợp khẩn cấp theo quy định của pháp luật; b) Phân biệt đối xử giữa các doanh nghiệp;",
  "plain": "Luật cấm \"hạn chế cạnh tranh do hành chính\": cơ quan nhà nước ÉP BUỘC, YÊU CẦU, KHUYẾN NGHỊ mua bán với doanh nghiệp cụ thể; PHÂN BIỆT ĐỐI XỬ giữa doanh nghiệp; ép hiệp hội, doanh nghiệp liên kết hạn chế cạnh tranh; LỢI DỤNG CHỨC VỤ can thiệp trái luật. Ngoại lệ: lĩnh vực độc quyền nhà nước, trường hợp khẩn cấp. Khoản 2: cấm tổ chức, cá nhân vận động, kêu gọi, ép buộc doanh nghiệp thực hiện hành vi hạn chế cạnh tranh, cạnh tranh không lành mạnh.",
- "example": "Ủy ban nhân dân huyện ra văn bản \"đề nghị\" các trường học chỉ mua đồng phục của công ty X: hành vi bị nghiêm cấm theo điểm a khoản 1 Điều 8.",
+ "example": "Ủy ban nhân dân xã ra văn bản \"đề nghị\" các trường học chỉ mua đồng phục của công ty X: hành vi bị nghiêm cấm theo điểm a khoản 1 Điều 8.",
  "source": {
   "kind": "statute",
   "cite": "Điểm a, b khoản 1 Điều 8 Luật Cạnh tranh 2018",
@@ -30,8 +30,8 @@
    "options": [
     "Phân biệt đối xử giữa các doanh nghiệp",
     "Ban hành quy chuẩn kỹ thuật chung",
-    "Tổ chức đấu thầu công khai",
-    "Kiểm tra an toàn thực phẩm"
+    "Tổ chức đấu thầu công khai, minh bạch",
+    "Kiểm tra an toàn thực phẩm tại cơ sở"
    ],
    "answer": 0,
    "explain": "Điểm b khoản 1 Điều 8.",
@@ -46,9 +46,9 @@
    "q": "Cơ quan nhà nước khuyến nghị dân mua hàng của doanh nghiệp cụ thể trong trường hợp nào thì KHÔNG bị cấm?",
    "options": [
     "Hàng hóa thuộc lĩnh vực độc quyền nhà nước hoặc trường hợp khẩn cấp theo luật",
-    "Khi doanh nghiệp đó nộp thuế nhiều",
-    "Khi doanh nghiệp đó là doanh nghiệp địa phương",
-    "Không có ngoại lệ"
+    "Khi doanh nghiệp đó nộp thuế nhiều và có nhiều lao động địa phương đóng góp ngân sách",
+    "Khi doanh nghiệp đó là doanh nghiệp địa phương, đã có hợp đồng dài hạn",
+    "Không có ngoại lệ nào, mọi trường hợp đều bị cấm kể cả khi người dân tự nguyện mua hàng"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 1 Điều 8.",
@@ -70,6 +70,21 @@
     {
      "text": "Cơ quan nhà nước tổ chức đấu thầu công khai, minh bạch",
      "answer": "right"
+    },
+    {
+     "text": "Sở yêu cầu doanh nghiệp ngừng bán hàng cho các tỉnh khác trên địa bàn",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 8 Luật Cạnh tranh 2018"
+    },
+    {
+     "text": "Cơ quan nhà nước dành ưu đãi riêng cho một doanh nghiệp và gây bất lợi cho doanh nghiệp còn lại",
+     "answer": "left",
+     "basis": "Điểm b khoản 1 Điều 8 Luật Cạnh tranh 2018"
+    },
+    {
+     "text": "Cơ quan nhà nước phổ biến pháp luật cạnh tranh để doanh nghiệp tự nguyện tuân thủ",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 8 Luật Cạnh tranh 2018 (các điểm a–d không liệt kê hành vi này)"
     }
    ],
    "explain": "Điều 8."
@@ -110,6 +125,17 @@
     "hiệp hội",
     "chức vụ"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Cơ quan nhà nước bị nghiêm cấm lợi dụng chức vụ, quyền hạn để can thiệp trái pháp luật vào hoạt động cạnh tranh.",
+   "answer": true,
+   "explain": "Đúng. Điểm d khoản 1 Điều 8 Luật Cạnh tranh 2018.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điểm d khoản 1 Điều 8 Luật Cạnh tranh 2018"
+   }
   }
  ]
 }

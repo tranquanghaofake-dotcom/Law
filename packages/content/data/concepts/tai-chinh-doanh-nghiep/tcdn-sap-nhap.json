@@ -48,9 +48,9 @@
    "q": "Công ty nhận sáp nhập kế thừa gì từ công ty bị sáp nhập?",
    "options": [
     "Toàn bộ tài sản, quyền, nghĩa vụ và lợi ích hợp pháp",
-    "Chỉ tài sản, không kế thừa nợ",
-    "Chỉ quyền sử dụng đất",
-    "Chỉ thương hiệu"
+    "Kế thừa tài sản, không kế thừa quyền và nghĩa vụ",
+    "Chỉ quyền sử dụng đất và các khoản vay ngân hàng",
+    "Thương hiệu và nhãn hiệu, không kế thừa nghĩa vụ"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 201.",
@@ -72,6 +72,16 @@
     {
      "text": "Hình thành một công ty mới, các công ty cũ chấm dứt",
      "answer": "right"
+    },
+    {
+     "text": "Công ty X chuyển toàn bộ tài sản cho công ty Y, công ty X chấm dứt tồn tại",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 201 Luật Doanh nghiệp 2020"
+    },
+    {
+     "text": "Hai công ty chuyển tài sản để thành lập công ty mới, cả hai không còn tồn tại",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 200 Luật Doanh nghiệp 2020"
     }
    ],
    "explain": "Điều 200, 201 Luật Doanh nghiệp."

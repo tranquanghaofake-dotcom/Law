@@ -30,9 +30,9 @@
    "q": "Ai xác định giá trị tài sản ròng trên một đơn vị quỹ đại chúng?",
    "options": [
     "Công ty quản lý quỹ, được ngân hàng giám sát xác nhận",
-    "Ủy ban Chứng khoán Nhà nước",
-    "Sở giao dịch chứng khoán",
-    "Đại hội nhà đầu tư"
+    "Ủy ban Chứng khoán Nhà nước và các cơ quan quản lý liên quan",
+    "Sở giao dịch chứng khoán và công ty quản lý quỹ thành viên",
+    "Đại hội nhà đầu tư của quỹ đại chúng và công ty quản lý"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 106.",
@@ -47,9 +47,9 @@
    "q": "Chứng khoán niêm yết trong danh mục quỹ được định giá theo nguyên tắc nào?",
    "options": [
     "Giá đóng cửa hoặc giá trung bình của ngày giao dịch gần nhất trước ngày định giá",
-    "Giá mua ban đầu",
-    "Giá do công ty quản lý quỹ tự đặt",
-    "Mệnh giá"
+    "Giá mua ban đầu của chứng khoán trong danh mục quỹ đầu tư và không điều chỉnh sau đó",
+    "Giá do công ty quản lý quỹ tự đặt theo ý muốn của nhà đầu tư lớn trong quỹ",
+    "Mệnh giá của chứng khoán đã phát hành lần đầu và không thay đổi theo thị trường chung"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 2 Điều 106.",
@@ -71,6 +71,16 @@
     {
      "text": "Xác nhận giá trị tài sản ròng",
      "answer": "right"
+    },
+    {
+     "text": "Tổ chức quản lý quỹ xác định giá trị tài sản ròng trên một đơn vị quỹ đầu tư chứng khoán",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 106 Luật Chứng khoán 2019"
+    },
+    {
+     "text": "Tổ chức giám sát tài sản quỹ xác nhận giá trị tài sản ròng đã do công ty quản lý quỹ xác định",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 106 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 1 Điều 106."

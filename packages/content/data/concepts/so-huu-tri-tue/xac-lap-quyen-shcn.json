@@ -31,9 +31,9 @@
    "q": "Quyền đối với bí mật kinh doanh được xác lập trên cơ sở nào?",
    "options": [
     "Có được một cách hợp pháp và thực hiện việc bảo mật",
-    "Cấp văn bằng bảo hộ",
-    "Đăng ký tại Bộ Công Thương",
-    "Sử dụng công khai"
+    "Cấp văn bằng bảo hộ theo thủ tục đăng ký",
+    "Đăng ký tại Bộ Công Thương và nộp đủ lệ phí nào",
+    "Sử dụng công khai trên thị trường đại chúng nào"
    ],
    "answer": 0,
    "explain": "Điểm c khoản 3 Điều 6.",
@@ -48,9 +48,9 @@
    "q": "Quyền đối với kiểu dáng công nghiệp được xác lập trên cơ sở nào?",
    "options": [
     "Quyết định cấp văn bằng bảo hộ theo thủ tục đăng ký (hoặc công nhận đăng ký quốc tế)",
-    "Tự động khi sáng tạo",
-    "Sử dụng hợp pháp",
-    "Bảo mật thông tin"
+    "Tự động khi sáng tạo và đưa vào sử dụng công khai trên thị trường trong nước",
+    "Sử dụng hợp pháp kiểu dáng của mình trên thị trường và quảng cáo rộng rãi cho khách",
+    "Bảo mật thông tin về kiểu dáng và giữ kín với bên thứ ba trong thời gian dài"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 3 Điều 6.",
@@ -76,6 +76,16 @@
     {
      "text": "Bí mật kinh doanh",
      "answer": "right"
+    },
+    {
+     "text": "Nhãn hiệu được xác lập quyền khi có quyết định cấp văn bằng bảo hộ",
+     "answer": "left",
+     "basis": "Điểm a khoản 3 Điều 6 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Kiểu dáng công nghiệp được bảo hộ khi có quyết định cấp văn bằng bảo hộ",
+     "answer": "left",
+     "basis": "Điểm a khoản 3 Điều 6 Luật Sở hữu trí tuệ"
     }
    ],
    "explain": "Khoản 3 Điều 6."

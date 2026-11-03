@@ -86,7 +86,7 @@
     {
       "q": "Chị B (hợp đồng không xác định thời hạn) muốn nghỉ để sang công ty khác. Chị phải làm gì?",
       "options": [
-        "Nêu lý do chính đáng và được công ty chấp thuận",
+        "Nêu lý do và được chấp thuận",
         "Báo trước ít nhất 45 ngày",
         "Báo trước ít nhất 30 ngày",
         "Không cần báo trước"
@@ -102,7 +102,7 @@
         "Phải báo trước 45 ngày",
         "Không cần báo trước",
         "Phải bồi thường cho công ty",
-        "Không được chấm dứt"
+        "Không được tự chấm dứt"
       ],
       "answer": 1,
       "explain": "Điểm b khoản 2 Điều 35.",
@@ -125,10 +125,10 @@
     {
       "q": "Trợ cấp thôi việc mỗi năm làm việc được tính bằng bao nhiêu?",
       "options": [
-        "01 tháng tiền lương",
+        "01 tháng tiền lương mỗi năm",
         "Một nửa tháng tiền lương",
-        "02 tháng tiền lương",
-        "Lương tối thiểu vùng"
+        "02 tháng tiền lương mỗi năm",
+        "Lương tối thiểu vùng tháng"
       ],
       "answer": 1,
       "explain": "Khoản 1 Điều 46.",

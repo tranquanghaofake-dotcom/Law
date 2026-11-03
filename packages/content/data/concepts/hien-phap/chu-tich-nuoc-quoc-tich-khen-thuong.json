@@ -71,6 +71,16 @@
     {
      "text": "Do Quốc hội quyết định",
      "answer": "right"
+    },
+    {
+     "text": "Chủ tịch nước quyết định tha tù trước thời hạn cho người đang chấp hành án phạt tù có nhiều tiến bộ nhân dịp lễ lớn",
+     "answer": "left",
+     "basis": "Luật Đặc xá 2018"
+    },
+    {
+     "text": "Quốc hội quyết định tha miễn hình phạt cho nhiều người phạm tội",
+     "answer": "right",
+     "basis": "Khoản 11 Điều 70 Hiến pháp 2013"
     }
    ],
    "explain": "Khoản 3 Điều 88; khoản 11 Điều 70."

@@ -31,9 +31,9 @@
    "q": "Theo Luật Phục hồi, phá sản 2025, doanh nghiệp mất khả năng thanh toán khi nào?",
    "options": [
     "Không thực hiện nghĩa vụ thanh toán khoản nợ sau thời hạn 06 tháng kể từ ngày đến hạn",
-    "Không trả nợ sau 03 tháng kể từ ngày đến hạn",
-    "Lỗ 3 năm liên tiếp",
-    "Tổng nợ lớn hơn vốn điều lệ"
+    "Không trả nợ sau 03 tháng kể từ ngày đến hạn và không có tài sản bảo đảm nào",
+    "Lỗ 3 năm liên tiếp và không có doanh thu từ hoạt động kinh doanh chính trong năm",
+    "Tổng nợ lớn hơn vốn điều lệ của doanh nghiệp, đang có tranh chấp kéo dài và chưa thanh toán"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 5.",
@@ -48,9 +48,9 @@
    "q": "Doanh nghiệp được coi là phá sản khi nào?",
    "options": [
     "Mất khả năng thanh toán và đã có quyết định tuyên bố phá sản của Tòa án",
-    "Ngay khi mất khả năng thanh toán",
-    "Khi chủ nợ nộp đơn",
-    "Khi cơ quan thuế cưỡng chế"
+    "Ngay khi mất khả năng thanh toán, không cần quyết định nào của Tòa án",
+    "Khi chủ nợ nộp đơn yêu cầu, có đủ hồ sơ hợp lệ và đóng tạm ứng phí",
+    "Khi cơ quan thuế cưỡng chế và thu hồi toàn bộ tài sản của doanh nghiệp"
    ],
    "answer": 0,
    "explain": "Khoản 4 Điều 5.",
@@ -72,6 +72,16 @@
     {
      "text": "Không trả nợ sau 06 tháng kể từ ngày đến hạn",
      "answer": "right"
+    },
+    {
+     "text": "Khoản nợ sẽ đến hạn trong vòng 06 tháng tới chưa thể thanh toán",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 5 Luật Phục hồi, phá sản 2025"
+    },
+    {
+     "text": "Khoản nợ đã đến hạn nhưng quá 06 tháng kể từ ngày đến hạn vẫn chưa được thanh toán",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 5 Luật Phục hồi, phá sản 2025"
     }
    ],
    "explain": "Khoản 1, 2 Điều 5."
@@ -112,6 +122,18 @@
     "tuyên bố phá sản",
     "Tòa án"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Doanh nghiệp, hợp tác xã mất khả năng thanh toán là doanh nghiệp, hợp tác xã không thực hiện nghĩa vụ thanh toán khoản nợ sau thời hạn 06 tháng kể từ ngày đến hạn thanh toán.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 5 Luật Phục hồi, phá sản 2025 (142/2025/QH15) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 5 Luật Phục hồi, phá sản 2025 (142/2025/QH15)",
+    "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-Phuc-hoi-pha-san-2025-so-142-2025-QH15-675210.aspx"
+   }
   }
  ]
 }

@@ -29,9 +29,9 @@
    "q": "Điều kiện nào thuộc thực hiện công việc không có ủy quyền?",
    "options": [
     "Người có công việc không biết hoặc biết mà không phản đối",
-    "Có hợp đồng ủy quyền",
-    "Người thực hiện có nghĩa vụ theo luật",
-    "Người có công việc phản đối"
+    "Có hợp đồng ủy quyền bằng văn bản giữa các bên liên quan",
+    "Người thực hiện có nghĩa vụ theo luật, bắt buộc làm",
+    "Người có công việc phản đối và yêu cầu dừng lại ngay"
    ],
    "answer": 0,
    "explain": "Điều 574.",
@@ -46,9 +46,9 @@
    "q": "Người thực hiện công việc không có ủy quyền có quyền yêu cầu gì?",
    "options": [
     "Thanh toán chi phí hợp lý và có thể được trả thù lao",
-    "Được sở hữu tài sản của người có công việc",
-    "Phạt người có công việc",
-    "Không có quyền gì"
+    "Được sở hữu tài sản của người có công việc để bù chi phí",
+    "Phạt người có công việc vì đã không tự làm lấy",
+    "Không có quyền gì, chỉ được cảm ơn từ người có công việc"
    ],
    "answer": 0,
    "explain": "Điều 576.",
@@ -70,6 +70,16 @@
     {
      "text": "Tự ý sửa nhà hàng xóm dù họ đã phản đối",
      "answer": "right"
+    },
+    {
+     "text": "Người sơn lại hàng rào của nhà bị bão làm hỏng khi chủ nhà đi xa, vì lợi ích của chủ nhà",
+     "answer": "left",
+     "basis": "Điều 574 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Người tự ý sửa nhà người khác để kiếm tiền công, không vì lợi ích của chủ nhà",
+     "answer": "right",
+     "basis": "Điều 574 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 574."

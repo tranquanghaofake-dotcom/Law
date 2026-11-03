@@ -27,9 +27,9 @@
    "q": "Theo khoản 2 Điều 42, ai được phép tổ chức và vận hành thị trường giao dịch chứng khoán?",
    "options": [
     "Sở giao dịch chứng khoán Việt Nam và công ty con",
-    "Mọi công ty chứng khoán",
-    "Ủy ban Chứng khoán Nhà nước",
-    "Ngân hàng Nhà nước Việt Nam"
+    "Các công ty chứng khoán đã được cấp phép hoạt động",
+    "Ủy ban Chứng khoán Nhà nước và các cơ quan liên quan",
+    "Ngân hàng Nhà nước Việt Nam và các tổ chức tín dụng"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 42: ngoài Sở giao dịch chứng khoán Việt Nam và công ty con, không ai được tổ chức, vận hành thị trường giao dịch chứng khoán.",
@@ -44,9 +44,9 @@
    "q": "Sở giao dịch chứng khoán Việt Nam và công ty con được tổ chức thị trường giao dịch cho loại chứng khoán nào?",
    "options": [
     "Cả chứng khoán đủ điều kiện niêm yết, chưa đủ điều kiện niêm yết, chứng khoán phái sinh…",
-    "Chỉ chứng khoán đủ điều kiện niêm yết",
-    "Chỉ trái phiếu Chính phủ",
-    "Chỉ chứng khoán phái sinh"
+    "Chỉ chứng khoán đủ điều kiện niêm yết và đã được cấp mã định danh riêng cho từng loại",
+    "Trái phiếu Chính phủ và trái phiếu chính quyền địa phương, không gồm cổ phiếu",
+    "Chứng chỉ quỹ đại chúng và cổ phiếu của các công ty chưa đăng ký kinh doanh tại Việt Nam"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 42 liệt kê rộng: chứng khoán đủ điều kiện niêm yết, của doanh nghiệp nhà nước cổ phần hóa, của doanh nghiệp chưa đủ điều kiện niêm yết, của doanh nghiệp khởi nghiệp sáng tạo, phái sinh…",
@@ -72,6 +72,11 @@
     {
      "text": "Ủy ban Chứng khoán Nhà nước",
      "answer": "right"
+    },
+    {
+     "text": "Sở giao dịch chứng khoán Việt Nam tổ chức thị trường cho chứng khoán đủ điều kiện niêm yết",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 42 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Ủy ban Chứng khoán Nhà nước quản lý, giám sát (khoản 3 Điều 43), không tổ chức thị trường."
@@ -91,7 +96,7 @@
    "text": "Sở giao dịch chứng khoán Việt Nam và công ty con chịu sự quản lý và giám sát của {{Ủy ban Chứng khoán Nhà nước}}.",
    "bank_extra": [
     "Ngân hàng Nhà nước",
-    "Bộ Kế hoạch và Đầu tư"
+    "Bộ Công Thương"
    ]
   },
   {

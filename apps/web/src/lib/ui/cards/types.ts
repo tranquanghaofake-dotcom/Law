@@ -1,11 +1,15 @@
-import type { Concept, Item } from '$lib/content/types';
-import type { IntroItem } from '$lib/engine/session';
+import type { Concept } from '$lib/content/types';
+import type { StepItem, StepMeta } from '$lib/engine/session';
+import type { Confidence } from '$lib/engine/confidence';
 
-export type AnswerResult = { correct: boolean; elapsedMs: number; chosen?: string; selfGrade?: 'dung' | 'gan' | 'sai' };
+/** (đợt 7) `conf` tuỳ chọn: độ tự tin người học chọn trước khi xem đáp án (xem engine/confidence.ts). */
+export type AnswerResult = { correct: boolean; elapsedMs: number; chosen?: string; selfGrade?: 'dung' | 'gan' | 'sai'; conf?: Confidence };
 
-export type CardProps<I = Item | IntroItem> = {
+export type CardProps<I = StepItem> = {
   concept: Concept;
   item: I;
+  /** Đợt 6: nhãn dạng sinh tự động, câu vàng, vòng sửa sai (xem lib/engine/step.ts). */
+  meta?: StepMeta;
   rng: () => number;
   onanswer: (r: AnswerResult) => void;
   onspeak?: (text: string) => void;

@@ -45,9 +45,9 @@
    "q": "Tòa án cấp phúc thẩm xem xét lại phần nào của bản án sơ thẩm?",
    "options": [
     "Phần có kháng cáo, kháng nghị hoặc có liên quan",
-    "Toàn bộ bản án trong mọi trường hợp",
-    "Chỉ phần án phí",
-    "Phần do Tòa phúc thẩm tự chọn"
+    "Toàn bộ bản án đã tuyên, kể cả phần không kháng cáo",
+    "Chỉ phần án phí và chi phí tố tụng khác của vụ án",
+    "Phần do Tòa phúc thẩm tự chọn để xét lại theo ý mình"
    ],
    "answer": 0,
    "explain": "Điều 293.",
@@ -69,6 +69,16 @@
     {
      "text": "Kháng cáo quyết định đình chỉ giải quyết vụ án",
      "answer": "right"
+    },
+    {
+     "text": "Đương sự có mặt khi Tòa tuyên án sơ thẩm muốn kháng cáo bản án trong thời hạn",
+     "answer": "left",
+     "basis": "Đoạn 1 khoản 1 Điều 273 Bộ luật Tố tụng dân sự 2015"
+    },
+    {
+     "text": "Đương sự nhận được quyết định tạm đình chỉ vụ án sơ thẩm muốn kháng cáo quyết định đó",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 273 Bộ luật Tố tụng dân sự 2015"
     }
    ],
    "explain": "Điều 273."
@@ -109,6 +119,17 @@
     "niêm yết",
     "phạm vi"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tòa án cấp phúc thẩm chỉ xem xét lại phần của bản án sơ thẩm, quyết định của Tòa án cấp sơ thẩm có kháng cáo, kháng nghị hoặc có liên quan đến việc xem xét nội dung kháng cáo, kháng nghị.",
+   "answer": true,
+   "explain": "Đúng. Điều 293 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 293 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)"
+   }
   }
  ]
 }

@@ -31,9 +31,9 @@
    "q": "Năm ngân sách nhà nước được xác định thế nào?",
    "options": [
     "Từ ngày 01 tháng 01 đến ngày 31 tháng 12 năm dương lịch",
-    "Từ 01/4 năm này đến 31/3 năm sau",
-    "Từ 01/7 năm này đến 30/6 năm sau",
-    "Do Chính phủ quyết định hằng năm"
+    "Từ ngày 01 tháng 4 năm này đến ngày 31 tháng 3 năm sau",
+    "Từ ngày 01 tháng 7 năm này đến ngày 30 tháng 6 năm sau",
+    "Do Chính phủ quyết định hằng năm theo từng địa phương"
    ],
    "answer": 0,
    "explain": "Điều 14.",
@@ -72,6 +72,16 @@
     {
      "text": "Trả lương cho bộ máy nhà nước",
      "answer": "right"
+    },
+    {
+     "text": "Mua sắm, xây dựng tài sản để tăng tài sản công phục vụ dự án đầu tư",
+     "answer": "left",
+     "basis": "Khoản 3 Điều 4 Luật Ngân sách nhà nước 2025"
+    },
+    {
+     "text": "Trả lương và phụ cấp cho cán bộ, công chức trong bộ máy nhà nước",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 5 Luật Ngân sách nhà nước 2025"
     }
    ],
    "explain": "Khoản 3, 5 Điều 4."

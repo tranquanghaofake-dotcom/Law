@@ -29,9 +29,9 @@
    "q": "Thị trường liên quan được xác định trên cơ sở những yếu tố nào?",
    "options": [
     "Thị trường sản phẩm liên quan và thị trường địa lý liên quan",
-    "Doanh thu và lợi nhuận",
-    "Số lượng doanh nghiệp",
-    "Vốn điều lệ"
+    "Doanh thu bán ra và lợi nhuận sau thuế của doanh nghiệp",
+    "Số lượng doanh nghiệp tham gia và số lượng người tiêu dùng trong vùng",
+    "Vốn điều lệ và số lượng lao động của doanh nghiệp đăng ký kinh doanh"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 9.",
@@ -46,9 +46,9 @@
    "q": "Thị trường sản phẩm liên quan là thị trường của hàng hóa, dịch vụ có thể thay thế cho nhau về những tiêu chí nào?",
    "options": [
     "Đặc tính, mục đích sử dụng và giá cả",
-    "Màu sắc, kích thước",
-    "Thương hiệu, xuất xứ",
-    "Nhà sản xuất"
+    "Màu sắc, kích thước và kiểu dáng",
+    "Thương hiệu, xuất xứ và nơi sản xuất hàng hóa",
+    "Nhà sản xuất, nhà phân phối, đại lý"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 9.",
@@ -70,6 +70,16 @@
     {
      "text": "Khu vực có điều kiện cạnh tranh tương tự",
      "answer": "right"
+    },
+    {
+     "text": "Khách hàng dùng sữa đậu nành thay cho sữa bò vì cùng mục đích và giá gần nhau",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 9 Luật Cạnh tranh 2018"
+    },
+    {
+     "text": "Cửa hàng ở hai khu vực cách xa nhau, điều kiện cạnh tranh khác biệt đáng kể",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 9 Luật Cạnh tranh 2018"
     }
    ],
    "explain": "Điều 9."
@@ -110,6 +120,18 @@
     "thay thế",
     "tương tự"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thị trường liên quan được xác định trên cơ sở thị trường sản phẩm liên quan và thị trường địa lý liên quan.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 9 Luật Cạnh tranh 2018 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 9 Luật Cạnh tranh 2018",
+    "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx"
+   }
   }
  ]
 }

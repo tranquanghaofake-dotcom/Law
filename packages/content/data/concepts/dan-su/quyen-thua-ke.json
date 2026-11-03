@@ -30,9 +30,9 @@
    "q": "Thời điểm mở thừa kế là khi nào?",
    "options": [
     "Thời điểm người có tài sản chết",
-    "Thời điểm công bố di chúc",
-    "Thời điểm chia di sản",
-    "Thời điểm khởi kiện"
+    "Thời điểm công bố di chúc tại UBND",
+    "Thời điểm chia di sản cho thừa kế",
+    "Thời điểm khởi kiện tranh chấp di sản"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 611.",
@@ -47,9 +47,9 @@
    "q": "Nếu không xác định được nơi cư trú cuối cùng của người để lại di sản thì địa điểm mở thừa kế ở đâu?",
    "options": [
     "Nơi có toàn bộ di sản hoặc nơi có phần lớn di sản",
-    "Nơi người thừa kế cư trú",
-    "Trụ sở Tòa án nhân dân tối cao",
-    "Nơi người để lại di sản sinh ra"
+    "Nơi người thừa kế cư trú và có tài sản riêng",
+    "Trụ sở Tòa án nhân dân tối cao ở thủ đô Hà Nội",
+    "Nơi người để lại di sản sinh ra và lớn lên"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 611.",
@@ -71,6 +71,16 @@
     {
      "text": "Nơi cư trú cuối cùng của người để lại di sản",
      "answer": "right"
+    },
+    {
+     "text": "Ngày người để lại di sản qua đời",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 611 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Ngày chết được Tòa án xác định trong quyết định tuyên bố một người là đã chết",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 611 và khoản 2 Điều 71 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 611."

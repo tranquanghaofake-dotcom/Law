@@ -1,16 +1,19 @@
 <script lang="ts">
   // Tranh nhỏ cho bộ đề 10 câu: vẽ đối tượng/tình huống mà luật điều chỉnh. Tránh hình châm biếm cơ quan ban hành (vd. cán cân + tiền).
-  import type { VignetteName } from './registry';
+  import { VIGNETTE_MORE, type VignetteName } from './registry';
   import { ring, bricks } from './kit';
+  import './kit/kit.css';
   let { name, class: cls = '' }: { name: VignetteName; class?: string } = $props();
   const doors = [20, 46, 72];
 </script>
 
-<svg class="art vignette {cls}" viewBox="0 0 160 100" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid meet">
+<svg class="art art-lit vignette {cls}" viewBox="0 0 160 100" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMid meet">
+  <circle cx="80" cy="52" r="50" fill="url(#kg-glow)" opacity=".8" />
   <circle class="f-sun" cx="80" cy="52" r="40" />
   <path class="f-sunline" d={ring(80, 52, 35, 39, 32)} />
   <circle class="kg" cx="80" cy="52" r="32" stroke-width="1" stroke-dasharray="1 3" />
   <rect class="f-line" x="8" y="90" width="144" height="3" rx="1.5" />
+  <ellipse cx="80" cy="91" rx="64" ry="3" fill="url(#kg-shadow)" />
   <path class="k" d="M14 90l-2-4M17 90l1-5M143 90l-2-4M146 90l1-5" stroke-width=".8" />
   {#if name === 'quan-he'}
     <!-- hai chủ thể + văn bản có dấu: quan hệ pháp luật -->
@@ -85,7 +88,7 @@
     </g>
     <rect class="f-card k" x="94" y="82" width="60" height="4" stroke-width="1" />
     <rect class="f-card k" x="90" y="86" width="68" height="4" stroke-width="1" />
-  {:else}
+  {:else if name === 'nghi-viec'}
     <!-- nhà máy mái răng cưa + đồng hồ + phong bì lương -->
     <path class="f-card k" d="M8 90V52l20-12v12l20-12v12l20-12v50z" stroke-width="1.3" />
     <path class="f-shade" d="M28 40l-20 12v2l20-12zM48 40l-20 12v2l20-12zM68 40l-20 12v2l20-12z" />
@@ -102,5 +105,7 @@
     <rect class="f-acc k" x="98" y="62" width="46" height="26" rx="2" stroke-width="1.2" />
     <path class="k" d="M98 62l23 14l23-14" stroke-width="1" />
     <circle class="f-seal k" cx="121" cy="74" r="3.6" stroke-width=".8" />
+  {:else if VIGNETTE_MORE.includes(name)}
+    {#await import('./VignetteMore.svelte') then m}<m.default {name} />{/await}
   {/if}
 </svg>

@@ -30,9 +30,9 @@
    "q": "Người tự ý nửa chừng chấm dứt việc phạm tội được hưởng gì?",
    "options": [
     "Miễn TNHS về tội định phạm",
-    "Miễn TNHS về mọi hành vi",
-    "Giảm một nửa hình phạt",
-    "Không được hưởng gì"
+    "Miễn TNHS về mọi tội đã phạm",
+    "Giảm một nửa hình phạt tù",
+    "Không hưởng gì, vẫn bị xử"
    ],
    "answer": 0,
    "explain": "Điều 16.",
@@ -47,7 +47,7 @@
    "q": "Nếu hành vi thực tế đã thực hiện cấu thành một tội khác thì người tự ý nửa chừng chấm dứt việc phạm tội thế nào?",
    "options": [
     "Phải chịu TNHS về tội khác đó",
-    "Được miễn toàn bộ TNHS",
+    "Được miễn hết TNHS mọi việc",
     "Chịu TNHS về tội định phạm",
     "Chỉ bị xử phạt hành chính"
    ],
@@ -71,6 +71,16 @@
     {
      "text": "Bỏ chạy vì nghe tiếng còi công an",
      "answer": "right"
+    },
+    {
+     "text": "Người đang gây thương tích, tự dừng và đưa người bị thương đi cấp cứu",
+     "answer": "left",
+     "basis": "Điều 16 Bộ luật Hình sự 2015"
+    },
+    {
+     "text": "Người đang bỏ chạy vì nghe tiếng còi xe cảnh sát tới, không tự ý dừng việc phạm tội",
+     "answer": "right",
+     "basis": "Điều 16 Bộ luật Hình sự 2015 (đòi hỏi tự ý chấm dứt, không do bị ngăn cản)"
     }
    ],
    "explain": "Điều 16."
@@ -111,6 +121,18 @@
     "miễn TNHS",
     "tội khác"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tự ý nửa chừng chấm dứt việc phạm tội là tự mình không thực hiện tội phạm đến cùng, tuy không có gì ngăn cản.",
+   "answer": true,
+   "explain": "Đúng. Điều 16 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 16 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)",
+    "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+   }
   }
  ]
 }

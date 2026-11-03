@@ -31,9 +31,9 @@
    "q": "Hàng hóa nào là đối tượng chịu thuế TTĐB theo Luật 2025?",
    "options": [
     "Nước giải khát có hàm lượng đường trên 5g/100mL",
-    "Gạo",
-    "Sách giáo khoa",
-    "Thuốc chữa bệnh"
+    "Gạo tẻ đã xay xát, đóng bao để tiêu dùng",
+    "Sách giáo khoa và sách tham khảo cho học sinh",
+    "Thuốc chữa bệnh theo đơn của bác sĩ điều trị"
    ],
    "answer": 0,
    "explain": "Điểm l khoản 1 Điều 2.",
@@ -48,9 +48,9 @@
    "q": "Ai là người nộp thuế TTĐB?",
    "options": [
     "Tổ chức, cá nhân sản xuất, gia công, nhập khẩu hàng hóa và kinh doanh dịch vụ chịu thuế",
-    "Người bán lẻ",
-    "Người tiêu dùng",
-    "Đại lý bán buôn"
+    "Người bán lẻ hàng hóa cho người tiêu dùng cuối cùng tại chợ, cửa hàng và siêu thị",
+    "Người tiêu dùng cuối cùng mua hàng hóa, dịch vụ chịu thuế tại cửa hàng và trả tiền",
+    "Đại lý bán buôn hàng hóa cho các cơ sở kinh doanh khác trên địa bàn tỉnh, thành phố"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 4.",
@@ -72,6 +72,21 @@
     {
      "text": "Xe mô tô hai bánh dung tích 110 cm3",
      "answer": "right"
+    },
+    {
+     "text": "Thuốc lá điếu sản xuất trong nước",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 2 Luật Thuế tiêu thụ đặc biệt 2025"
+    },
+    {
+     "text": "Rượu nhập khẩu để bán tại Việt Nam",
+     "answer": "left",
+     "basis": "Điểm b khoản 1 Điều 2 Luật Thuế tiêu thụ đặc biệt 2025"
+    },
+    {
+     "text": "Gạo xuất khẩu đi các nước",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 2 Luật Thuế tiêu thụ đặc biệt 2025 (gạo không thuộc danh mục hàng hóa chịu thuế)"
     }
    ],
    "explain": "Khoản 1 Điều 2."

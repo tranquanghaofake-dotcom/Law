@@ -48,8 +48,8 @@
    "options": [
     "Đại tư xã, tiểu tư xã",
     "Lạc tướng, Bồ chính",
-    "Thái thú",
-    "An phủ sứ"
+    "Thái thú, Huyện lệnh",
+    "An phủ sứ, trấn phủ sứ"
    ],
    "answer": 0,
    "explain": "\"Các xã, sách thì đặt chức đại, tiểu tư xã.\"",
@@ -71,6 +71,16 @@
     {
      "text": "Quan từ lục phẩm trở xuống",
      "answer": "right"
+    },
+    {
+     "text": "Chức coi xã, sách dành cho quan từ ngũ phẩm trở lên",
+     "answer": "left",
+     "basis": "Đại Việt sử ký toàn thư, Bản kỷ quyển V, Kỷ nhà Trần, Thái Tông, năm 1242, tờ 13a (laws/lich-su-su-lieu.txt)"
+    },
+    {
+     "text": "Chức coi xã, sách dành cho quan từ lục phẩm trở xuống",
+     "answer": "right",
+     "basis": "Đại Việt sử ký toàn thư, Bản kỷ quyển V, Kỷ nhà Trần, Thái Tông, năm 1242, tờ 13a (laws/lich-su-su-lieu.txt)"
     }
    ],
    "explain": "Toàn thư năm 1242."

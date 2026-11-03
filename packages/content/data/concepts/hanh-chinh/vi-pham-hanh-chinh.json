@@ -30,9 +30,9 @@
    "q": "Vi phạm hành chính có dấu hiệu nào sau đây?",
    "options": [
     "Hành vi có lỗi, vi phạm pháp luật về quản lý nhà nước, không phải tội phạm, phải bị xử phạt",
-    "Hành vi gây thiệt hại trên 100 triệu",
-    "Hành vi vi phạm đạo đức",
-    "Hành vi vi phạm hợp đồng"
+    "Hành vi gây thiệt hại trên 100 triệu đồng cho nhà nước, xã hội và người dân trong nước",
+    "Hành vi vi phạm đạo đức xã hội, phong tục tập quán và quy ước của cộng đồng dân cư",
+    "Hành vi vi phạm hợp đồng dân sự đã ký kết giữa các bên và gây thiệt hại tài sản"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 2.",
@@ -44,12 +44,12 @@
   {
    "type": "mcq",
    "level": 1,
-   "q": "Chủ thể của vi phạm hành chính gồm những ai?",
+   "q": "Phương án nào liệt kê đầy đủ chủ thể của vi phạm hành chính?",
    "options": [
     "Cá nhân, tổ chức",
-    "Chỉ cá nhân",
-    "Chỉ tổ chức",
-    "Chỉ cán bộ, công chức"
+    "Cá nhân",
+    "Tổ chức",
+    "Cán bộ, công chức"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 2.",
@@ -71,6 +71,16 @@
     {
      "text": "Hai bên không trả tiền theo hợp đồng mua bán",
      "answer": "right"
+    },
+    {
+     "text": "Vượt đèn đỏ khi đi xe máy",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 2 Luật Xử lý vi phạm hành chính"
+    },
+    {
+     "text": "Hành vi giết người",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 2 Luật Xử lý vi phạm hành chính (không phải vi phạm hành chính vì là tội phạm)"
     }
    ],
    "explain": "Điều 2."
@@ -111,6 +121,18 @@
     "không phải tội phạm",
     "xử phạt"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Vi phạm hành chính là hành vi có lỗi do cá nhân, tổ chức thực hiện, vi phạm quy định của pháp luật về quản lý nhà nước mà không phải là tội phạm và theo quy định của pháp luật phải bị xử phạt vi phạm hành chính.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 2 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 2 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/Vi-pham-hanh-chinh/Van-ban-hop-nhat-90-VBHN-VPQH-2026-Luat-Xu-ly-vi-pham-hanh-chinh-699548.aspx"
+   }
   }
  ]
 }

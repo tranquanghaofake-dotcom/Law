@@ -48,9 +48,9 @@
    "q": "Cơ quan nào ấn định số đơn vị bầu cử đại biểu Quốc hội?",
    "options": [
     "Hội đồng bầu cử quốc gia, theo đề nghị của Ủy ban bầu cử ở tỉnh, thành phố",
-    "Quốc hội",
-    "Ủy ban nhân dân tỉnh",
-    "Mặt trận Tổ quốc"
+    "Quốc hội và Ủy ban thường vụ Quốc hội theo đề nghị của tỉnh, thành phố",
+    "Ủy ban nhân dân tỉnh và Hội đồng nhân dân tỉnh theo đề nghị của tỉnh",
+    "Mặt trận Tổ quốc Việt Nam và các tổ chức chính trị - xã hội khác"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 10.",
@@ -76,6 +76,16 @@
     {
      "text": "Do Hội đồng bầu cử quốc gia ấn định",
      "answer": "left"
+    },
+    {
+     "text": "Tỉnh, thành phố được chia thành các khu vực bầu đại biểu Quốc hội, số đại biểu căn cứ theo số dân",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 10 Luật Bầu cử Đại biểu Quốc hội và Đại biểu Hội đồng nhân dân 2015"
+    },
+    {
+     "text": "Xã, phường, đặc khu được chia thành các khu vực để bầu đại biểu Hội đồng nhân dân cấp xã",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 10 Luật Bầu cử Đại biểu Quốc hội và Đại biểu Hội đồng nhân dân 2015"
     }
    ],
    "explain": "Khoản 2, 3, 4 Điều 10."

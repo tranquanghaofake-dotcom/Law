@@ -28,7 +28,7 @@
    "q": "Thời hạn áp dụng biện pháp giáo dục tại xã, phường, đặc khu là bao lâu?",
    "options": [
     "Từ 03 tháng đến 06 tháng",
-    "Từ 06 tháng đến 24 tháng",
+    "Từ 06 tháng đến 24 tháng liền",
     "Từ 01 tháng đến 03 tháng",
     "Từ 12 tháng đến 24 tháng"
    ],
@@ -45,9 +45,9 @@
    "q": "Biện pháp giáo dục tại xã, phường, đặc khu được áp dụng trong trường hợp nào?",
    "options": [
     "Không cần thiết phải cách ly người vi phạm khỏi cộng đồng",
-    "Người vi phạm phạm tội đặc biệt nghiêm trọng",
-    "Người vi phạm là tổ chức",
-    "Người vi phạm là người nước ngoài"
+    "Người vi phạm phạm tội đặc biệt nghiêm trọng, có tiền án",
+    "Người vi phạm là tổ chức kinh doanh có vốn nhà nước",
+    "Người vi phạm là người nước ngoài đang cư trú hợp pháp"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 89.",
@@ -69,6 +69,21 @@
     {
      "text": "Cách ly tại cơ sở tập trung",
      "answer": "right"
+    },
+    {
+     "text": "Người 13 tuổi có hành vi có dấu hiệu của tội rất nghiêm trọng do cố ý",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 90 Luật Xử lý vi phạm hành chính"
+    },
+    {
+     "text": "Người 14 tuổi có hành vi có dấu hiệu của tội nghiêm trọng do cố ý",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 90 Luật Xử lý vi phạm hành chính"
+    },
+    {
+     "text": "Người 13 tuổi có hành vi có dấu hiệu của tội đặc biệt nghiêm trọng",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 92 Luật Xử lý vi phạm hành chính"
     }
    ],
    "explain": "Điều 89, 91."
@@ -109,6 +124,18 @@
     "03 tháng",
     "06 tháng"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thời hạn áp dụng biện pháp giáo dục tại xã, phường, đặc khu từ 03 tháng đến 06 tháng.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 89 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 89 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/Vi-pham-hanh-chinh/Van-ban-hop-nhat-90-VBHN-VPQH-2026-Luat-Xu-ly-vi-pham-hanh-chinh-699548.aspx"
+   }
   }
  ]
 }

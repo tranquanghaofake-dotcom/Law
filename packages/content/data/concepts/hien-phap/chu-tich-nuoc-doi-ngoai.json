@@ -28,8 +28,8 @@
    "q": "Chủ tịch nước bổ nhiệm đại sứ đặc mệnh toàn quyền của Việt Nam căn cứ vào văn bản nào?",
    "options": [
     "Nghị quyết của Ủy ban thường vụ Quốc hội",
-    "Nghị quyết của Chính phủ",
-    "Quyết định của Bộ Ngoại giao",
+    "Nghị quyết của Chính phủ về đối ngoại",
+    "Quyết định của Bộ Ngoại giao hằng năm",
     "Nghị quyết của Quốc hội tại kỳ họp"
    ],
    "answer": 0,
@@ -69,6 +69,21 @@
     {
      "text": "Phê chuẩn đề nghị bổ nhiệm, miễn nhiệm đại sứ đặc mệnh toàn quyền của Việt Nam",
      "answer": "right"
+    },
+    {
+     "text": "Người đứng đầu Nhà nước tiếp nhận đại sứ đặc mệnh toàn quyền của nước ngoài",
+     "answer": "left",
+     "basis": "Khoản 6 Điều 88 Hiến pháp 2013"
+    },
+    {
+     "text": "Người đứng đầu Nhà nước bổ nhiệm, miễn nhiệm đại sứ đặc mệnh toàn quyền của Việt Nam căn cứ nghị quyết của Ủy ban thường vụ Quốc hội",
+     "answer": "left",
+     "basis": "Khoản 6 Điều 88 Hiến pháp 2013"
+    },
+    {
+     "text": "Người đứng đầu Nhà nước thay mặt nước ta trong quan hệ đối ngoại",
+     "answer": "left",
+     "basis": "Điều 86 Hiến pháp 2013"
     }
    ],
    "explain": "Khoản 6 Điều 88; khoản 12 Điều 74."

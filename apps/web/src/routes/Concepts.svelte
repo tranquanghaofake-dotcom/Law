@@ -9,6 +9,8 @@
   import { hashFor, route } from '$lib/router.svelte';
   import { LEVEL_NAMES } from '$lib/game/levels';
   import { matchConcept } from '$lib/ui/conceptSearch';
+  import CompareTable from '$lib/ui/CompareTable.svelte';
+  import { compareConcepts } from '$lib/engine/compare';
   import { tick } from 'svelte';
 
   type Group = { lessonId: string; title: string; concepts: Concept[] };
@@ -111,6 +113,9 @@
                   {#each c.confusables as id, k (id)}{#if k}{', '}{/if}{#if byId[id]}<a href={hashFor('concepts', { subject: subject.id, concept: id })}>{termOf(id)}</a>{:else}{termOf(id)}{/if}{/each}
                 </p>
               {/if}
+              {#each c.confusables.filter((id) => byId[id] && compareConcepts(c, byId[id])) as id (id)}
+                <details class="cmp-wrap"><summary>So sánh với «{termOf(id)}»</summary><CompareTable a={c} b={byId[id]} /></details>
+              {/each}
               <p class="source muted small">Nguồn: {c.source.cite}{#if c.source.url}{' · '}<a href={c.source.url} target="_blank" rel="noopener">Xem văn bản</a>{/if}{' · '}đối chiếu {c.checked}</p>
             </div>
           {/if}

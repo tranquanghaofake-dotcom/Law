@@ -45,9 +45,9 @@
    "q": "Ai có quyền khởi kiện vụ án dân sự theo khoản 1 Điều 4?",
    "options": [
     "Cơ quan, tổ chức, cá nhân do Bộ luật quy định",
-    "Chỉ công dân Việt Nam",
-    "Chỉ Viện kiểm sát",
-    "Chỉ luật sư"
+    "Công dân Việt Nam đủ 18 tuổi trở lên có quyền khởi kiện",
+    "Tòa án tự quyết định khởi kiện khi thấy cần thiết",
+    "Người dân phải thông qua luật sư mới được khởi kiện"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 4.",
@@ -69,6 +69,16 @@
     {
      "text": "Yêu cầu tuyên bố một người mất tích",
      "answer": "right"
+    },
+    {
+     "text": "Đòi bồi thường thiệt hại ngoài hợp đồng do xâm phạm quyền, khởi kiện thành vụ án",
+     "answer": "left",
+     "basis": "Khoản 6 Điều 26 Bộ luật Tố tụng dân sự 2015"
+    },
+    {
+     "text": "Yêu cầu Tòa án tuyên bố một người mất năng lực hành vi dân sự",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 27 Bộ luật Tố tụng dân sự 2015"
     }
    ],
    "explain": "Điều 1, 4."
@@ -109,6 +119,18 @@
     "không được từ chối",
     "điều luật"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tòa án không được từ chối giải quyết vụ việc dân sự vì lý do chưa có điều luật để áp dụng.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 4 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 4 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/Thu-tuc-To-tung/Van-ban-hop-nhat-21-VBHN-VPQH-2026-Bo-luat-To-dung-dan-su-696578.aspx"
+   }
   }
  ]
 }

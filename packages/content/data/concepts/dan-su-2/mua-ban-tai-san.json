@@ -28,9 +28,9 @@
    "q": "Trong hợp đồng mua bán tài sản, bên bán có nghĩa vụ chủ yếu nào?",
    "options": [
     "Chuyển quyền sở hữu tài sản cho bên mua",
-    "Cho bên mua sử dụng trong một thời hạn",
-    "Giữ hộ tài sản",
-    "Bảo lãnh cho bên mua"
+    "Cho bên mua sử dụng trong thời hạn nhất định",
+    "Giữ hộ tài sản cho bên mua đến khi trả đủ tiền",
+    "Bảo lãnh cho bên mua trước khi giao hàng"
    ],
    "answer": 0,
    "explain": "Điều 430.",
@@ -45,9 +45,9 @@
    "q": "Tài sản bán phải đáp ứng điều kiện gì về chủ thể có quyền?",
    "options": [
     "Thuộc sở hữu của người bán hoặc người bán có quyền bán",
-    "Phải là bất động sản",
-    "Phải được công chứng",
-    "Phải là tài sản mới"
+    "Phải là bất động sản đã đăng ký quyền sở hữu tại xã",
+    "Phải được công chứng trước khi giao kết hợp đồng",
+    "Phải là tài sản mới, chưa qua sử dụng lần nào cả"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 431.",
@@ -69,6 +69,16 @@
     {
      "text": "Giao tài sản để sử dụng trong thời hạn, trả tiền thuê",
      "answer": "right"
+    },
+    {
+     "text": "Bên bán giao chiếc tủ lạnh và nhận tiền để chuyển quyền sở hữu cho bên mua",
+     "answer": "left",
+     "basis": "Đoạn 1 Điều 430 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Bên cho thuê giao máy phát điện để bên thuê dùng trong thời hạn, bên thuê trả tiền thuê",
+     "answer": "right",
+     "basis": "Đoạn 1 Điều 472 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 430, 472."
@@ -109,6 +119,18 @@
     "có quyền bán",
     "hạn chế chuyển nhượng"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tài sản bán thuộc sở hữu của người bán hoặc người bán có quyền bán.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 431 Bộ luật Dân sự 2015 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 431 Bộ luật Dân sự 2015",
+    "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+   }
   }
  ]
 }

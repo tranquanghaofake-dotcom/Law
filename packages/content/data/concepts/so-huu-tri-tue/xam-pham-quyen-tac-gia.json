@@ -30,9 +30,9 @@
    "q": "Sử dụng tác phẩm theo ngoại lệ Điều 25 nhưng không nêu tên tác giả là gì?",
    "options": [
     "Hành vi xâm phạm quyền tác giả (khoản 3 Điều 28)",
-    "Hợp pháp",
-    "Chỉ vi phạm đạo đức",
-    "Xâm phạm quyền sở hữu công nghiệp"
+    "Hợp pháp, không cần xin phép và không cần ghi tên",
+    "Không phải hành vi xâm phạm quyền tác giả, chỉ bị nhắc nhở",
+    "Xâm phạm quyền sở hữu công nghiệp đối với nhãn hiệu"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 28.",
@@ -47,8 +47,8 @@
    "q": "Cố ý vô hiệu hóa biện pháp công nghệ hữu hiệu bảo vệ quyền tác giả để sao chép trái phép là gì?",
    "options": [
     "Hành vi xâm phạm quyền tác giả",
-    "Ngoại lệ hợp pháp",
-    "Quyền của người dùng",
+    "Không xâm phạm quyền tác giả",
+    "Quyền của người dùng hợp pháp",
     "Cạnh tranh không lành mạnh"
    ],
    "answer": 0,
@@ -71,6 +71,16 @@
     {
      "text": "Sao chép bán bản lậu",
      "answer": "right"
+    },
+    {
+     "text": "Sửa đổi, cắt xén tác phẩm làm phương hại danh dự của tác giả, không được phép",
+     "answer": "left",
+     "basis": "Khoản 4 Điều 19 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Dịch tác phẩm sang ngôn ngữ khác để bán mà không được phép của chủ sở hữu",
+     "answer": "right",
+     "basis": "Điều 20 Luật Sở hữu trí tuệ"
     }
    ],
    "explain": "Điều 19, 20, 28."

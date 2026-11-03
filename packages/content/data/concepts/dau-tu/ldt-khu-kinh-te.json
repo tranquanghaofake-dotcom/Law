@@ -47,9 +47,9 @@
    "q": "Khu kinh tế được thành lập để thực hiện mục tiêu nào?",
    "options": [
     "Thu hút đầu tư, phát triển kinh tế - xã hội và bảo vệ quốc phòng, an ninh",
-    "Chỉ sản xuất hàng công nghiệp",
-    "Chỉ du lịch",
-    "Chỉ nông nghiệp"
+    "Sản xuất công nghiệp quy mô lớn và xuất khẩu hàng hóa ra nước ngoài",
+    "Thu hút vốn vay nước ngoài và phát triển du lịch nghỉ dưỡng cho khách quốc tế",
+    "Phát triển nông nghiệp, chăn nuôi và bảo vệ rừng tại địa phương"
    ],
    "answer": 0,
    "explain": "Khoản 17 Điều 3.",
@@ -71,6 +71,16 @@
     {
      "text": "Chuyên sản xuất hàng công nghiệp và dịch vụ cho sản xuất công nghiệp",
      "answer": "right"
+    },
+    {
+     "text": "Vùng có nhiều khu chức năng như cảng, dịch vụ tài chính và nhà ở, thành lập để thu hút đầu tư",
+     "answer": "left",
+     "basis": "Khoản 17 Điều 3 Luật Đầu tư 2025"
+    },
+    {
+     "text": "Khu vực có ranh giới địa lý xác định, chuyên sản xuất hàng công nghiệp và cung ứng dịch vụ cho sản xuất công nghiệp",
+     "answer": "right",
+     "basis": "Khoản 16 Điều 3 Luật Đầu tư 2025"
     }
    ],
    "explain": "Khoản 16, 17 Điều 3."

@@ -29,9 +29,9 @@
    "q": "Biện pháp nào là biện pháp khẩn cấp tạm thời theo Điều 114?",
    "options": [
     "Buộc thực hiện trước một phần nghĩa vụ cấp dưỡng",
-    "Phạt tiền bị đơn",
-    "Tạm giam bị đơn",
-    "Thu hồi giấy phép kinh doanh"
+    "Phạt tiền bị đơn khi vắng mặt tại phiên tòa",
+    "Tạm giam bị đơn để chờ phiên xét xử chính",
+    "Thu hồi giấy phép kinh doanh của bị đơn ngay lập tức"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 114.",
@@ -46,9 +46,9 @@
    "q": "Mục đích của biện pháp khẩn cấp tạm thời là gì?",
    "options": [
     "Tạm thời giải quyết yêu cầu cấp bách, bảo vệ chứng cứ, bảo toàn tình trạng hiện có, bảo đảm thi hành án",
-    "Xử phạt bên vi phạm",
-    "Thay thế bản án",
-    "Kết thúc vụ án"
+    "Phạt tiền bị đơn để răn đe và xử phạt hành vi vi phạm pháp luật trong mọi vụ án dân sự đang tranh chấp",
+    "Thay thế hoàn toàn bản án đã tuyên trước đó khi đương sự không đồng ý với phán quyết đã tuyên",
+    "Kết thúc vụ án ngay khi một trong các bên có đơn yêu cầu, không cần Tòa án xem xét nội dung"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 111.",
@@ -70,6 +70,21 @@
     {
      "text": "Phạt vi phạm hợp đồng",
      "answer": "right"
+    },
+    {
+     "text": "Buộc thực hiện trước một phần nghĩa vụ cấp dưỡng trong khi chờ Tòa án xét xử",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 114 Bộ luật Tố tụng dân sự 2015"
+    },
+    {
+     "text": "Cấm chuyển dịch quyền về tài sản đang tranh chấp trong thời gian vụ án đang giải quyết",
+     "answer": "left",
+     "basis": "Khoản 7 Điều 114 Bộ luật Tố tụng dân sự 2015"
+    },
+    {
+     "text": "Buộc bên vi phạm chịu phạt do vi phạm hợp đồng đã thỏa thuận từ trước",
+     "answer": "right",
+     "basis": "Điều 114 Bộ luật Tố tụng dân sự 2015 (không thuộc danh mục khoản 1–10)"
     }
    ],
    "explain": "Điều 114."

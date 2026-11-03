@@ -29,9 +29,9 @@
    "q": "Biện pháp nào thuộc khoản 1 Điều 7 về bảo đảm an ninh, an toàn thị trường chứng khoán?",
    "options": [
     "Phong tỏa tài khoản chứng khoán liên quan đến vi phạm",
-    "Quốc hữu hóa công ty niêm yết",
-    "Ấn định giá trần cho mọi cổ phiếu",
-    "Cấm nhà đầu tư nước ngoài giao dịch"
+    "Quốc hữu hóa công ty niêm yết trên thị trường chứng khoán",
+    "Ấn định giá trần cho mọi cổ phiếu trên các sàn giao dịch",
+    "Cấm nhà đầu tư nước ngoài giao dịch chứng khoán tại Việt Nam"
    ],
    "answer": 0,
    "explain": "Điểm g khoản 1 Điều 7.",
@@ -74,6 +74,11 @@
     {
      "text": "Phong tỏa tài khoản chứng khoán",
      "answer": "right"
+    },
+    {
+     "text": "Ứng phó, khắc phục sự cố hệ thống giao dịch của Sở giao dịch",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 7 Luật Chứng khoán 2019 (điểm b)"
     }
    ],
    "explain": "Khoản 1 Điều 7."

@@ -9,9 +9,9 @@
       "q": "Tài khoản của bạn nhận 10 triệu do người lạ chuyển nhầm. Theo Bộ luật Dân sự, bạn có nghĩa vụ gì?",
       "options": [
         "Hoàn trả cho chủ sở hữu",
-        "Được giữ vì tiền đã vào tài khoản của mình",
-        "Chỉ hoàn trả nếu người chuyển chứng minh được lỗi của ngân hàng",
-        "Được giữ một nửa làm phí giữ hộ"
+        "Được giữ vì đã vào tài khoản",
+        "Chỉ trả nếu ngân hàng có lỗi",
+        "Được giữ một nửa làm phí"
       ],
       "answer": 0,
       "explain": "Người chiếm hữu, sử dụng tài sản của người khác mà không có căn cứ pháp luật thì phải hoàn trả cho chủ sở hữu. Tiền vào tài khoản bạn do nhầm lẫn không làm phát sinh quyền sở hữu của bạn.",
@@ -47,10 +47,10 @@
     {
       "q": "Yếu tố nào biến \"nghĩa vụ trả lại tiền\" thành dấu hiệu của tội chiếm giữ trái phép tài sản?",
       "options": [
-        "Đã lỡ tiêu số tiền",
+        "Đã lỡ tiêu số tiền nhận nhầm, không có khả năng trả lại ngay và chưa thông báo cho người gửi tiền",
         "Cố tình không trả lại sau khi chủ sở hữu, người quản lý hợp pháp hoặc cơ quan có trách nhiệm yêu cầu nhận lại",
-        "Không báo ngân hàng trong 24 giờ",
-        "Tiền nằm trong tài khoản quá 7 ngày"
+        "Không báo ngân hàng ngay sau khi nhận tiền nhầm, không lập biên bản kịp thời và không thông báo cho người gửi tiền",
+        "Tiền nằm trong tài khoản một thời gian dài sau khi nhận và chưa được ghi nhận vào sổ sách của đơn vị"
       ],
       "answer": 1,
       "explain": "Điều luật nhấn mạnh hành vi \"cố tình không trả lại\" và thời điểm \"sau khi ... yêu cầu được nhận lại tài sản\". Vì vậy, chủ động hợp tác hoàn trả là cách tự bảo vệ quan trọng nhất.",
@@ -60,10 +60,10 @@
     {
       "q": "Một người gọi điện xưng là \"người chuyển nhầm\" và yêu cầu bạn chuyển lại vào một tài khoản KHÁC. Cách làm an toàn là gì?",
       "options": [
-        "Chuyển ngay để tránh rắc rối",
-        "Chuyển một nửa trước, nửa còn lại sau",
+        "Chuyển ngay để tránh rắc rối và không cần kiểm tra thông tin",
+        "Chuyển một nửa trước, nửa còn lại sau khi có yêu cầu mới của bạn",
         "Chỉ hoàn trả qua ngân hàng hoặc về đúng tài khoản đã chuyển cho bạn",
-        "Rút tiền mặt đưa trực tiếp cho người đó"
+        "Rút tiền mặt đưa trực tiếp cho người đó tại nơi hẹn gặp ngoài đường phố"
       ],
       "answer": 2,
       "explain": "Nghĩa vụ hoàn trả là hoàn trả cho chủ sở hữu, và người gọi điện chưa chắc là chủ sở hữu. Đòi chuyển sang tài khoản khác là kịch bản lừa đảo quen thuộc. Hãy liên hệ ngân hàng để tra soát và hoàn trả đúng nơi.",
@@ -73,10 +73,10 @@
     {
       "q": "Bạn nhận nhầm 5 triệu đồng và không trả. Khẳng định nào đúng?",
       "options": [
-        "Không có nghĩa vụ gì vì dưới 10 triệu",
+        "Không có nghĩa vụ gì vì số tiền còn nhỏ, chưa đủ mức xử lý hình sự và chưa có yêu cầu nào",
         "Vẫn phải hoàn trả theo Bộ luật Dân sự; chưa đủ ngưỡng 10 triệu của tội chiếm giữ trái phép tài sản",
-        "Chắc chắn bị phạt tù",
-        "Người chuyển nhầm mất quyền đòi lại vì lỗi là của họ"
+        "Chắc chắn bị phạt tù nếu không hoàn trả ngay lập tức cho người chuyển nhầm khoản tiền",
+        "Người chuyển nhầm mất quyền đòi lại vì lỗi là của họ và đã chấp nhận hoàn toàn rủi ro của việc chuyển nhầm"
       ],
       "answer": 1,
       "explain": "Nghĩa vụ hoàn trả dân sự không phụ thuộc số tiền hay lỗi của người chuyển. Ngưỡng 10 triệu chỉ dùng để xác định trách nhiệm hình sự theo Điều 176. Người chuyển vẫn có quyền khởi kiện đòi lại.",
@@ -86,9 +86,9 @@
     {
       "q": "Theo Điều 579 BLDS, nếu không tìm được chủ sở hữu của tài sản mà mình đang chiếm hữu không có căn cứ pháp luật thì phải làm gì?",
       "options": [
-        "Được giữ lại làm của mình",
-        "Chia đôi với người tìm được",
-        "Sau 01 năm thì thành tài sản của mình",
+        "Được dùng làm của riêng",
+        "Chia đôi giá trị với người tìm được tài sản",
+        "Phải tặng lại cho tổ chức từ thiện",
         "Giao cho cơ quan nhà nước có thẩm quyền"
       ],
       "answer": 3,
@@ -101,7 +101,7 @@
       "options": [
         "Báo ngân hàng, giữ nguyên tiền, lưu ảnh chụp giao dịch",
         "Chuyển sang tài khoản khác cho an toàn",
-        "Đăng lên mạng xã hội kèm số tài khoản người chuyển để tìm chủ",
+        "Đăng lên mạng xã hội kèm số tài khoản người chuyển",
         "Chờ xem có ai đòi không rồi tính"
       ],
       "answer": 0,
@@ -112,10 +112,10 @@
     {
       "q": "Khung hình phạt ở khoản 1 của tội chiếm giữ trái phép tài sản là gì?",
       "options": [
-        "Phạt tù từ 02 năm đến 07 năm",
+        "Phạt tù từ 02 năm đến 07 năm, kèm theo tịch thu tài sản, cấm đảm nhiệm chức vụ và quản chế",
         "Phạt tiền từ 10 đến 50 triệu đồng, cải tạo không giam giữ đến 02 năm hoặc phạt tù từ 03 tháng đến 02 năm",
-        "Chỉ bị phạt tiền",
-        "Phạt tù từ 01 năm đến 05 năm"
+        "Chỉ bị phạt tiền từ 10 triệu đến 50 triệu đồng và không phải chịu hình phạt tù nào khác cả",
+        "Phạt tù từ 01 năm đến 05 năm, không có hình phạt tiền hay cải tạo không giam giữ kèm theo và không tịch thu tài sản"
       ],
       "answer": 1,
       "explain": "Khoản 1 quy định phạt tiền từ 10.000.000 đồng đến 50.000.000 đồng, phạt cải tạo không giam giữ đến 02 năm hoặc phạt tù từ 03 tháng đến 02 năm. Mức phạt tù từ 01 đến 05 năm là của khoản 2 (tài sản từ 200 triệu đồng hoặc bảo vật quốc gia).",
@@ -125,9 +125,9 @@
     {
       "q": "Bạn đã lỡ tiêu 10 triệu chuyển nhầm và chưa có đủ tiền trả ngay. Cách xử lý đúng là gì?",
       "options": [
-        "Chặn liên lạc với người chuyển",
-        "Khẳng định đó là tiền của mình",
-        "Đổi sang số tài khoản khác",
+        "Chặn liên lạc với người chuyển, xóa toàn bộ tin nhắn giao dịch và đổi số điện thoại",
+        "Khẳng định đó là tiền của mình, không cần trả lại cho người chuyển nhầm",
+        "Đổi sang số tài khoản khác để chuyển tiền trả lại cho người khác",
         "Chủ động liên hệ, thừa nhận và thỏa thuận lộ trình hoàn trả, lưu lại trao đổi"
       ],
       "answer": 3,

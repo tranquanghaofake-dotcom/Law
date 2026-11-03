@@ -28,9 +28,9 @@
    "q": "Theo khoản 2 Điều 3 Luật Quốc tịch, người không quốc tịch là ai?",
    "options": [
     "Người không có quốc tịch Việt Nam và cũng không có quốc tịch nước ngoài",
-    "Người không có hộ chiếu",
-    "Người đang định cư ở nước ngoài",
-    "Người có hai quốc tịch"
+    "Người không có hộ chiếu và giấy tờ tùy thân hợp lệ tại Việt Nam",
+    "Người đang định cư ở nước ngoài và có giấy phép cư trú dài hạn ở đó",
+    "Người có hai quốc tịch nước ngoài và Việt Nam trong cùng thời điểm"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 3.",
@@ -45,9 +45,9 @@
    "q": "Trẻ em sinh ra trên lãnh thổ Việt Nam có cha mẹ đều là người không quốc tịch thì có quốc tịch Việt Nam khi nào?",
    "options": [
     "Khi cha mẹ có nơi thường trú tại Việt Nam",
-    "Trong mọi trường hợp",
+    "Trong mọi trường hợp không cần điều kiện",
     "Khi được Chủ tịch nước cho phép",
-    "Không bao giờ"
+    "Khi có đơn của cha mẹ gửi Tòa án"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 17.",
@@ -69,6 +69,16 @@
     {
      "text": "Có quốc tịch của một nước khác không phải Việt Nam",
      "answer": "right"
+    },
+    {
+     "text": "Người không có bất kỳ quốc tịch nào, sinh sống lâu dài tại Việt Nam",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 3 Luật Quốc tịch Việt Nam 2008"
+    },
+    {
+     "text": "Công dân Việt Nam có thêm quốc tịch của một nước khác",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 3 Luật Quốc tịch Việt Nam 2008"
     }
    ],
    "explain": "Khoản 1, 2 Điều 3."
@@ -109,6 +119,18 @@
     "thường trú",
     "nhập quốc tịch"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người không quốc tịch là người không có quốc tịch Việt Nam và cũng không có quốc tịch nước ngoài.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 3 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 3 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025)",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-53-vbhn-vpqh-quoc-tich-viet-nam--179993"
+   }
   }
  ]
 }

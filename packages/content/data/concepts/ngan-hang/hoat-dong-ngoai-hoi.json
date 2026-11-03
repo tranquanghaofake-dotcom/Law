@@ -31,9 +31,9 @@
    "q": "Giao dịch nào là giao dịch vốn theo Pháp lệnh Ngoại hối?",
    "options": [
     "Vay và trả nợ nước ngoài",
-    "Thanh toán tiền nhập khẩu hàng hóa",
-    "Chuyển tiền một chiều giúp đỡ thân nhân",
-    "Trả tiền dịch vụ du lịch"
+    "Thanh toán tiền nhập khẩu hàng",
+    "Chuyển tiền giúp đỡ thân nhân",
+    "Thanh toán dịch vụ du lịch"
    ],
    "answer": 0,
    "explain": "Khoản 4 Điều 4.",
@@ -72,6 +72,16 @@
     {
      "text": "Doanh nghiệp thanh toán tiền xuất khẩu, nhập khẩu hàng hóa",
      "answer": "right"
+    },
+    {
+     "text": "Doanh nghiệp Việt ký hợp đồng vay vốn từ ngân hàng nước ngoài và nhận khoản vay theo hợp đồng",
+     "answer": "left",
+     "basis": "Điểm c khoản 4 Điều 4 Pháp lệnh Ngoại hối 2005"
+    },
+    {
+     "text": "Người cư trú trả phí tư vấn cho công ty nước ngoài, không nhằm mục đích chuyển vốn",
+     "answer": "right",
+     "basis": "Khoản 5 Điều 4 Pháp lệnh Ngoại hối 2005"
     }
    ],
    "explain": "Khoản 4, 5, 6 Điều 4."

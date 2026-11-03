@@ -29,9 +29,9 @@
    "q": "Theo khoản 1 Điều 133, phương thức nào KHÔNG được liệt kê để giải quyết tranh chấp chứng khoán?",
    "options": [
     "Ủy ban Chứng khoán Nhà nước ra phán quyết dân sự",
-    "Thương lượng",
-    "Hòa giải",
-    "Trọng tài"
+    "Thương lượng giữa các bên tranh chấp chứng khoán",
+    "Hòa giải giữa các bên tranh chấp chứng khoán",
+    "Trọng tài thương mại giải quyết tranh chấp"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 133: thương lượng, hòa giải, Trọng tài, Tòa án Việt Nam.",
@@ -46,9 +46,9 @@
    "q": "Việc bồi thường thiệt hại trong lĩnh vực chứng khoán thực hiện theo căn cứ nào?",
    "options": [
     "Thỏa thuận, Bộ luật Dân sự và quy định khác có liên quan",
-    "Chỉ quyết định của Ủy ban",
-    "Chỉ quy chế Sở giao dịch",
-    "Chỉ Điều lệ công ty"
+    "Quyết định của Ủy ban Chứng khoán Nhà nước và quy định nội bộ",
+    "Quy chế của Sở giao dịch và điều lệ nội bộ của công ty",
+    "Chỉ Điều lệ công ty và quy chế nội bộ của doanh nghiệp"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 133.",
@@ -74,6 +74,16 @@
     {
      "text": "Trọng tài thương mại giải quyết theo thỏa thuận trọng tài",
      "answer": "left"
+    },
+    {
+     "text": "Nhà đầu tư khởi kiện công ty chứng khoán vì bị thiệt hại do xâm phạm quyền lợi hợp pháp",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 133 Luật Chứng khoán 2019"
+    },
+    {
+     "text": "Ủy ban xử lý vi phạm hành chính đối với công ty chứng khoán sau khi thanh tra",
+     "answer": "right",
+     "basis": "Khoản 6 Điều 132 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Điều 132 và Điều 133."

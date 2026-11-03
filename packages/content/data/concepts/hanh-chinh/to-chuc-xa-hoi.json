@@ -28,9 +28,9 @@
    "q": "Nguyên tắc hoạt động đặc trưng của tổ chức xã hội là gì?",
    "options": [
     "Tự nguyện, tự quản, tự trang trải kinh phí, không vụ lợi",
-    "Mệnh lệnh – phục tùng",
-    "Hạch toán kinh doanh để chia lợi nhuận",
-    "Do Nhà nước bổ nhiệm lãnh đạo"
+    "Mệnh lệnh – phục tùng từ cấp trên xuống cấp dưới theo quy định",
+    "Hạch toán kinh doanh để chia lợi nhuận cho các thành viên",
+    "Do Nhà nước bổ nhiệm lãnh đạo và cấp toàn bộ kinh phí hoạt động"
    ],
    "answer": 0,
    "explain": "Học thuyết.",
@@ -45,9 +45,9 @@
    "q": "Tổ chức nào là tổ chức xã hội – nghề nghiệp?",
    "options": [
     "Liên đoàn Luật sư Việt Nam",
-    "Ủy ban nhân dân tỉnh",
-    "Bộ Tư pháp",
-    "Công ty cổ phần"
+    "Ủy ban nhân dân cấp tỉnh",
+    "Bộ Tư pháp và Bộ Nội vụ",
+    "Công ty cổ phần kinh doanh lớn"
    ],
    "answer": 0,
    "explain": "Học thuyết.",
@@ -69,6 +69,16 @@
     {
      "text": "Hội Luật gia Việt Nam",
      "answer": "right"
+    },
+    {
+     "text": "Đoàn Thanh niên Cộng sản Hồ Chí Minh",
+     "answer": "left",
+     "basis": "Giáo trình Luật Hành chính Việt Nam, ĐH Luật Hà Nội (quy chế tổ chức xã hội; chưa đối chiếu nguyên văn)"
+    },
+    {
+     "text": "Hội Nhà báo Việt Nam",
+     "answer": "right",
+     "basis": "Giáo trình Luật Hành chính Việt Nam, ĐH Luật Hà Nội (quy chế tổ chức xã hội; chưa đối chiếu nguyên văn)"
     }
    ],
    "explain": "Học thuyết; Điều 9, 10 Hiến pháp 2013."

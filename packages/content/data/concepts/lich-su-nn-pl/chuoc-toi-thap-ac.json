@@ -47,9 +47,9 @@
    "q": "Năm 1071, nhà Lý quy định gì về chuộc tội?",
    "options": [
     "Định tiền chuộc tội theo thứ bậc khác nhau",
-    "Bãi bỏ chuộc tội",
-    "Chỉ cho quý tộc chuộc tội",
-    "Cho chuộc cả tội thập ác"
+    "Bãi bỏ hoàn toàn chế độ chuộc tội bằng tiền",
+    "Chỉ cho quý tộc chuộc tội, dân thường thì không",
+    "Cho chuộc cả tội thập ác với mức tiền như nhau"
    ],
    "answer": 0,
    "explain": "Toàn thư năm 1071.",
@@ -75,6 +75,11 @@
     {
      "text": "Bất kỳ ai phạm tội thập ác",
      "answer": "right"
+    },
+    {
+     "text": "Người phạm thập ác như mưu phản bị buộc chịu hình phạt, không có đường nộp tiền thay",
+     "answer": "right",
+     "basis": "Quốc triều hình luật, Điều 16 (laws/lich-su-su-lieu.txt)"
     }
    ],
    "explain": "Chiếu tháng 11 năm 1042."
@@ -103,9 +108,9 @@
    "q": "Chế định chuộc tội năm 1042 phản ánh những đặc điểm nào của pháp luật thời Lý?",
    "options": [
     "Vừa có tính nhân đạo (người già, trẻ, ốm yếu) vừa bảo vệ đặc quyền đẳng cấp (thân thuộc nhà vua), đồng thời nghiêm trị tội thập ác",
-    "Chỉ có tính nhân đạo, không có tính đẳng cấp",
-    "Chỉ bảo vệ quý tộc",
-    "Bình đẳng tuyệt đối trước pháp luật"
+    "Chỉ có tính nhân đạo đối với người già, trẻ em, người ốm yếu; không có yếu tố bảo vệ đặc quyền đẳng cấp của quý tộc",
+    "Vừa có tính nhân đạo, vừa nghiêm trị tội thập ác, nhưng xóa bỏ đặc quyền của thân thuộc nhà vua khi họ phạm tội nặng",
+    "Vừa bảo vệ đặc quyền của thân thuộc nhà vua, vừa cho phép chuộc cả tội thập ác bằng tiền để thể hiện sự khoan hồng của triều đình nhà Lý"
    ],
    "answer": 0,
    "explain": "Đánh giá phổ biến của giáo trình dựa trên câu chữ chiếu năm 1042."

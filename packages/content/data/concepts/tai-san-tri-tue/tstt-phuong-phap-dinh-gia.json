@@ -42,9 +42,9 @@
    "q": "Điều kiện tiên quyết của phương pháp tiếp cận theo thị trường là gì?",
    "options": [
     "Có giao dịch tương đương để so sánh",
-    "Có sổ sách kế toán chi phí",
-    "Có dự báo lợi nhuận 10 năm",
-    "Có văn bằng bảo hộ"
+    "Có sổ sách kế toán chi phí đầu tư",
+    "Có dự báo lợi nhuận 10 năm tới",
+    "Có văn bằng bảo hộ đã được cấp"
    ],
    "answer": 0,
    "explain": "Thị trường tích cực: phải có giao dịch tương đương."
@@ -62,6 +62,16 @@
     {
      "text": "Chi phí tạo ra có thể khác xa lợi nhuận thu được",
      "answer": "right"
+    },
+    {
+     "text": "Dễ kiểm chứng vì dựa trên hóa đơn và chứng từ chi phí nghiên cứu",
+     "answer": "left",
+     "basis": "Ghi chép bài giảng Quản trị tài sản trí tuệ, ĐH Luật Hà Nội (chưa đối chiếu nguyên văn giáo trình); phương pháp tiếp cận theo chi phí"
+    },
+    {
+     "text": "Không phản ánh được giá trị thị trường khi công nghệ mới được ưa chuộng",
+     "answer": "right",
+     "basis": "Ghi chép bài giảng Quản trị tài sản trí tuệ, ĐH Luật Hà Nội (chưa đối chiếu nguyên văn giáo trình); phương pháp tiếp cận theo chi phí"
     }
    ],
    "explain": "Bài giảng nêu ưu, nhược từng phương pháp."

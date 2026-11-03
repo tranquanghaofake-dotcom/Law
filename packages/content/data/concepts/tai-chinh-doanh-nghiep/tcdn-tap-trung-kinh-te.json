@@ -31,9 +31,9 @@
    "q": "Hình thức nào thuộc tập trung kinh tế theo khoản 1 Điều 29 Luật Cạnh tranh?",
    "options": [
     "Liên doanh giữa các doanh nghiệp",
-    "Chia doanh nghiệp",
-    "Giải thể doanh nghiệp",
-    "Tạm ngừng kinh doanh"
+    "Chia tách công ty làm hai",
+    "Giải thể doanh nghiệp tự nguyện",
+    "Tạm ngừng kinh doanh có thời hạn"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 29.",
@@ -48,9 +48,9 @@
    "q": "Tập trung kinh tế bị cấm khi nào?",
    "options": [
     "Khi gây hoặc có khả năng gây tác động hạn chế cạnh tranh một cách đáng kể trên thị trường Việt Nam",
-    "Trong mọi trường hợp",
-    "Khi doanh nghiệp có vốn nước ngoài",
-    "Khi chưa niêm yết"
+    "Trong mọi trường hợp tập trung kinh tế đều bị cấm, kể cả khi không gây hạn chế cạnh tranh nào",
+    "Khi doanh nghiệp có vốn đầu tư nước ngoài tham gia vào thị trường Việt Nam và có lợi nhuận lớn",
+    "Khi doanh nghiệp tham gia tập trung kinh tế nhưng chưa niêm yết trên thị trường chứng khoán"
    ],
    "answer": 0,
    "explain": "Điều 30 Luật Cạnh tranh.",
@@ -72,6 +72,16 @@
     {
      "text": "Doanh nghiệp tự giải thể",
      "answer": "right"
+    },
+    {
+     "text": "Liên doanh giữa hai doanh nghiệp để thành lập một doanh nghiệp mới",
+     "answer": "left",
+     "basis": "Điểm d khoản 1 và khoản 5 Điều 29 Luật Cạnh tranh 2018"
+    },
+    {
+     "text": "Doanh nghiệp tăng vốn điều lệ bằng cách phát hành cổ phần cho cổ đông hiện hữu",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 29 Luật Cạnh tranh 2018 (không thuộc các hình thức liệt kê)"
     }
    ],
    "explain": "Khoản 1 Điều 29."
@@ -112,6 +122,17 @@
     "mua lại",
     "liên doanh"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tập trung kinh tế bao gồm sáp nhập doanh nghiệp, hợp nhất doanh nghiệp, mua lại doanh nghiệp, liên doanh giữa các doanh nghiệp và các hình thức tập trung kinh tế khác theo quy định của pháp luật.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 29 Luật Cạnh tranh 2018.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 29 Luật Cạnh tranh 2018"
+   }
   }
  ]
 }

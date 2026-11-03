@@ -49,9 +49,9 @@
    "q": "Hình thức nào KHÔNG phải hình thức chào bán cổ phần theo khoản 2 Điều 123?",
    "options": [
     "Chào bán cổ phần cho ngân hàng để vay vốn",
-    "Chào bán cho cổ đông hiện hữu",
-    "Chào bán riêng lẻ",
-    "Chào bán ra công chúng"
+    "Chào bán cổ phần cho các cổ đông hiện hữu",
+    "Chào bán cổ phần riêng lẻ cho nhà đầu tư",
+    "Chào bán cổ phần ra công chúng trên thị trường"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 123.",
@@ -73,6 +73,16 @@
     {
      "text": "Chào bán trái phiếu riêng lẻ",
      "answer": "right"
+    },
+    {
+     "text": "Công ty cổ phần chào bán cổ phần cho cổ đông hiện hữu để tăng vốn điều lệ",
+     "answer": "left",
+     "basis": "Điểm a khoản 2 Điều 123 Luật Doanh nghiệp 2020"
+    },
+    {
+     "text": "Công ty phát hành trái phiếu để vay vốn từ nhà đầu tư, phải hoàn trả gốc và lãi cho người sở hữu",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 4 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Điều 123, 128 Luật Doanh nghiệp."
@@ -113,6 +123,18 @@
     "riêng lẻ",
     "công chúng"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chào bán cổ phần là việc công ty tăng thêm số lượng cổ phần, loại cổ phần được quyền chào bán để tăng vốn điều lệ.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 123 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 123 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+    "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+   }
   }
  ]
 }

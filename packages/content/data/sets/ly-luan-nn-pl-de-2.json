@@ -9,9 +9,9 @@
       "q": "Văn bản quy phạm pháp luật phải có đặc điểm nào?",
       "options": [
         "Chứa quy phạm pháp luật, ban hành đúng thẩm quyền, hình thức, trình tự, thủ tục",
-        "Áp dụng một lần",
-        "Do tòa án ban hành",
-        "Không cần thủ tục"
+        "Chỉ cần có con dấu của cơ quan và được đăng báo rộng rãi cho toàn dân",
+        "Do tòa án ban hành để áp dụng cho một vụ việc cụ thể đã xảy ra trước",
+        "Không cần thủ tục, chỉ cần người đứng đầu cơ quan ký là có hiệu lực ngay"
       ],
       "answer": 0,
       "explain": "Điều 2.",
@@ -61,9 +61,9 @@
       "q": "Năng lực hành vi dân sự là khả năng gì?",
       "options": [
         "Bằng hành vi của mình xác lập, thực hiện quyền, nghĩa vụ dân sự",
-        "Có quyền và nghĩa vụ dân sự",
-        "Được thừa kế",
-        "Được bảo vệ"
+        "Có quyền và nghĩa vụ dân sự, được hưởng quyền theo luật định",
+        "Được thừa kế tài sản của người thân khi họ qua đời theo pháp luật",
+        "Được bảo vệ quyền lợi và không bị xâm phạm trong mọi quan hệ"
       ],
       "answer": 0,
       "explain": "Điều 19.",
@@ -74,9 +74,9 @@
       "q": "Pháp nhân phải nhân danh ai khi tham gia quan hệ pháp luật?",
       "options": [
         "Nhân danh mình một cách độc lập",
-        "Nhân danh chủ sở hữu",
-        "Nhân danh người đại diện",
-        "Nhân danh Nhà nước"
+        "Nhân danh cổ đông hoặc chủ sở hữu",
+        "Nhân danh người đại diện pháp lý",
+        "Nhân danh Nhà nước và cơ quan"
       ],
       "answer": 0,
       "explain": "Điểm d khoản 1 Điều 74.",
@@ -100,8 +100,8 @@
       "q": "Pháp nhân nào có thể là chủ thể của tội phạm?",
       "options": [
         "Pháp nhân thương mại",
-        "Mọi pháp nhân",
-        "Cơ quan nhà nước",
+        "Mọi pháp nhân đăng ký",
+        "Cơ quan nhà nước tỉnh",
         "Tổ chức chính trị"
       ],
       "answer": 0,
@@ -113,9 +113,9 @@
       "q": "Vi phạm hành chính là hành vi vi phạm lĩnh vực nào?",
       "options": [
         "Quy định của pháp luật về quản lý nhà nước",
-        "Hợp đồng dân sự",
-        "Điều lệ công ty",
-        "Đạo đức xã hội"
+        "Hợp đồng dân sự và các giao dịch của cá nhân",
+        "Điều lệ công ty và quy chế nội bộ của đơn vị",
+        "Đạo đức xã hội và phong tục tập quán của dân"
       ],
       "answer": 0,
       "explain": "Khoản 1 Điều 2.",
@@ -125,10 +125,10 @@
     {
       "q": "Vi phạm hành chính có bắt buộc phải có lỗi không?",
       "options": [
-        "Có",
-        "Không",
-        "Chỉ với cá nhân",
-        "Chỉ với tổ chức"
+        "Có, vì là hành vi có lỗi",
+        "Không, chỉ cần hành vi trái luật",
+        "Có, nhưng chỉ với cá nhân",
+        "Có, nhưng chỉ với tổ chức"
       ],
       "answer": 0,
       "explain": "Khoản 1 Điều 2: hành vi có lỗi.",

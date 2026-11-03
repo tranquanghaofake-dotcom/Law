@@ -29,12 +29,12 @@
   {
    "type": "mcq",
    "level": 1,
-   "q": "Rà soát VBQPPL nhằm phát hiện loại quy định nào?",
+   "q": "Phương án nào liệt kê đầy đủ các loại quy định mà rà soát văn bản quy phạm pháp luật nhằm phát hiện (khoản 5 Điều 3)?",
    "options": [
     "Quy định mâu thuẫn, chồng chéo, hết hiệu lực hoặc không còn phù hợp",
-    "Chỉ quy định trái Hiến pháp",
-    "Chỉ lỗi chính tả",
-    "Chỉ văn bản chưa đăng Công báo"
+    "Quy định mâu thuẫn và chồng chéo với văn bản khác trong hệ thống",
+    "Lỗi chính tả, lỗi đánh máy và lỗi trình bày trong văn bản",
+    "Văn bản chưa đăng Công báo và chưa được ký số của người đứng đầu"
    ],
    "answer": 0,
    "explain": "Khoản 5 Điều 3.",
@@ -49,9 +49,9 @@
    "q": "Ai quyết định tổng rà soát hệ thống VBQPPL?",
    "options": [
     "Ủy ban Thường vụ Quốc hội trên cơ sở đề xuất của Chính phủ",
-    "Bộ Tư pháp",
-    "Chủ tịch nước",
-    "Tòa án nhân dân tối cao"
+    "Bộ Tư pháp, theo đề nghị của Bộ trưởng Bộ Nội vụ",
+    "Chủ tịch nước, theo đề nghị của Chủ tịch Hội đồng dân tộc",
+    "Tòa án nhân dân tối cao, sau khi thống nhất với Viện kiểm sát"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 64.",
@@ -73,6 +73,16 @@
     {
      "text": "Kết luận quyết định của UBND tỉnh trái luật",
      "answer": "right"
+    },
+    {
+     "text": "Cơ quan đối chiếu thông tư cũ với luật mới để phát hiện quy định không còn phù hợp",
+     "answer": "left",
+     "basis": "Khoản 5 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025"
+    },
+    {
+     "text": "Cơ quan cấp trên xem xét, kết luận về tính hợp hiến, hợp pháp của quyết định đã ban hành",
+     "answer": "right",
+     "basis": "Khoản 6 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025"
     }
    ],
    "explain": "Khoản 5 và khoản 6 Điều 3."
@@ -113,6 +123,18 @@
     "hợp pháp",
     "xử lý"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Ủy ban Thường vụ Quốc hội quyết định tổng rà soát hệ thống văn bản quy phạm pháp luật trên cơ sở đề xuất của Chính phủ.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 64 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 64 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)",
+    "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-54-VBHN-VPQH-2025-Luat-Ban-hanh-van-ban-quy-pham-phap-luat-669858.aspx"
+   }
   }
  ]
 }

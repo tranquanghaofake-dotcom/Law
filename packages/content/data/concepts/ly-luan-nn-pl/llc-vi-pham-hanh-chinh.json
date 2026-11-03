@@ -31,32 +31,32 @@
    "q": "Vi phạm hành chính khác tội phạm ở điểm nào?",
    "options": [
     "Vi phạm quy định quản lý nhà nước mà không phải tội phạm, bị xử phạt hành chính",
-    "Không cần có lỗi",
-    "Chỉ do tổ chức thực hiện",
-    "Do tòa án xử lý"
+    "Vi phạm quy định quản lý nhà nước nhưng không cần có lỗi của chủ thể vi phạm",
+    "Do cơ quan tiến hành tố tụng hình sự xem xét, áp dụng hình phạt tù có thời hạn",
+    "Do tòa án xét xử theo thủ tục tố tụng hình sự và dân sự chung của nước"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 2.",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 1 Điều 2 Hiến pháp 2013"
+    "cite": "Khoản 1 Điều 2 Luật Xử lý vi phạm hành chính"
    }
   },
   {
    "type": "mcq",
    "level": 1,
-   "q": "Chủ thể vi phạm hành chính gồm ai?",
+   "q": "Phương án nào liệt kê đầy đủ chủ thể vi phạm hành chính?",
    "options": [
     "Cá nhân, tổ chức",
-    "Chỉ cá nhân",
-    "Chỉ pháp nhân thương mại",
-    "Chỉ cơ quan nhà nước"
+    "Cá nhân",
+    "Pháp nhân thương mại",
+    "Cơ quan nhà nước"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 2.",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 1 Điều 2 Hiến pháp 2013"
+    "cite": "Khoản 1 Điều 2 Luật Xử lý vi phạm hành chính"
    }
   },
   {
@@ -72,6 +72,16 @@
     {
      "text": "Giao hàng chậm so với hợp đồng",
      "answer": "right"
+    },
+    {
+     "text": "Xây nhà trái phép trên đất không có giấy phép xây dựng, bị phạt tiền",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 2 Luật Xử lý vi phạm hành chính"
+    },
+    {
+     "text": "Người bán không giao đủ hàng theo hợp đồng bị khách hàng khởi kiện đòi bồi thường",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 2 Luật Xử lý vi phạm hành chính (vi phạm dân sự thuộc quan hệ dân sự; ⚠ chưa đối chiếu BLDS)"
     }
    ],
    "explain": "Khoản 1 Điều 2; vi phạm dân sự là không thực hiện nghĩa vụ trong quan hệ dân sự."
@@ -112,6 +122,18 @@
     "không phải tội phạm",
     "xử phạt"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Vi phạm hành chính là hành vi có lỗi do cá nhân, tổ chức thực hiện, vi phạm quy định của pháp luật về quản lý nhà nước mà không phải là tội phạm và theo quy định của pháp luật phải bị xử phạt vi phạm hành chính.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 2 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 2 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/Vi-pham-hanh-chinh/Van-ban-hop-nhat-90-VBHN-VPQH-2026-Luat-Xu-ly-vi-pham-hanh-chinh-699548.aspx"
+   }
   }
  ]
 }

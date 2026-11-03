@@ -46,9 +46,9 @@
    "q": "Người từ đủ 13 tuổi đến chưa đủ 15 tuổi được làm công việc gì?",
    "options": [
     "Chỉ công việc nhẹ theo danh mục do Bộ trưởng ban hành",
-    "Mọi công việc trừ công việc nặng nhọc",
-    "Không được làm việc",
-    "Chỉ công việc nghệ thuật"
+    "Công việc phù hợp với sức khỏe do hai bên thỏa thuận",
+    "Không được làm việc cho đến khi đủ 16 tuổi trở lên",
+    "Chỉ công việc nghệ thuật và biểu diễn có giấy phép"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 143.",
@@ -70,6 +70,21 @@
     {
      "text": "Làm việc, trừ công việc và nơi làm việc bị cấm tại Điều 147",
      "answer": "right"
+    },
+    {
+     "text": "Em 14 tuổi được làm công việc nhẹ trong danh mục do Bộ trưởng ban hành",
+     "answer": "left",
+     "basis": "Khoản 3 Điều 143 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Bạn 15 tuổi làm việc tại công ty theo hợp đồng lao động, không thuộc công việc cấm",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 143 và Điều 147 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Bạn 16 tuổi làm việc văn phòng bình thường tại công ty",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 143 Bộ luật Lao động 2019"
     }
    ],
    "explain": "Điều 143."
@@ -110,6 +125,18 @@
     "13 tuổi",
     "văn bản"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người từ đủ 13 tuổi đến chưa đủ 15 tuổi chỉ được làm công việc nhẹ thuộc danh mục do Bộ trưởng bộ quản lý nhà nước về lao động ban hành.",
+   "answer": true,
+   "explain": "Đúng. Khoản 3 Điều 143 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026). Câu chữ của Bộ luật vẫn ghi bộ quản lý lao động cũ; từ 01/3/2025 bộ này nhập vào Bộ Nội vụ theo Nghị quyết 176/2025/QH15.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 143 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-18-VBHN-VPQH-2026-Bo-luat-lao-dong-695336.aspx"
+   }
   }
  ]
 }

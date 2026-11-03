@@ -46,9 +46,9 @@
    "q": "Khi công bố thông tin, đối tượng công bố phải đồng thời báo cáo ai?",
    "options": [
     "Ủy ban Chứng khoán Nhà nước và tổ chức nơi chứng khoán niêm yết, đăng ký giao dịch",
-    "Chỉ Hội đồng quản trị",
-    "Chỉ cổ đông lớn",
-    "Bộ Công an"
+    "Hội đồng quản trị, ban kiểm soát của công ty đại chúng và các cổ đông lớn của công ty",
+    "Chỉ cổ đông lớn và người có liên quan của công ty đại chúng cùng các cổ đông nhỏ lẻ",
+    "Bộ Công an và cơ quan điều tra có thẩm quyền về kinh tế và tài chính của địa phương"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 119.",
@@ -74,6 +74,11 @@
     {
      "text": "Công bố thông tin qua người được ủy quyền công bố thông tin",
      "answer": "left"
+    },
+    {
+     "text": "Công bố thông tin chậm trễ, không kịp thời theo quy định",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 119 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 2, 4 Điều 119."
@@ -114,6 +119,18 @@
     "lý do thay đổi",
     "báo cáo Ủy ban"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Đối tượng công bố thông tin phải chịu trách nhiệm trước pháp luật về nội dung thông tin công bố.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 119 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 119 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+   }
   }
  ]
 }

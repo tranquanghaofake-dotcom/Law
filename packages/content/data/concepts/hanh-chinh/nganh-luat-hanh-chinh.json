@@ -45,9 +45,9 @@
    "q": "Đối tượng điều chỉnh của luật hành chính là gì?",
    "options": [
     "Quan hệ xã hội phát sinh trong quá trình quản lý hành chính nhà nước",
-    "Quan hệ tài sản giữa các chủ thể bình đẳng",
-    "Quan hệ lao động",
-    "Quan hệ hôn nhân"
+    "Quan hệ tài sản giữa các chủ thể bình đẳng và tự do thỏa thuận",
+    "Quan hệ lao động giữa người lao động và người sử dụng lao động",
+    "Quan hệ hôn nhân và gia đình giữa vợ chồng, con cái và họ hàng"
    ],
    "answer": 0,
    "explain": "Slide bài giảng vấn đề 2.",
@@ -69,6 +69,16 @@
     {
      "text": "Bình đẳng, tự nguyện, thỏa thuận",
      "answer": "right"
+    },
+    {
+     "text": "Cơ quan thuế ra quyết định ấn định số thuế buộc doanh nghiệp phải nộp",
+     "answer": "left",
+     "basis": "Slide bài giảng Luật Hành chính, ĐH Luật Hà Nội, vấn đề 2 (laws/hc-slide-trich.txt): phương pháp điều chỉnh là mệnh lệnh"
+    },
+    {
+     "text": "Hai công ty tự thỏa thuận thời hạn và giá thuê kho bãi",
+     "answer": "right",
+     "basis": "Điều 3 Bộ luật Dân sự 2015 (bình đẳng, tự nguyện); Slide bài giảng Luật Hành chính, ĐH Luật Hà Nội, vấn đề 2"
     }
    ],
    "explain": "Học thuyết; Điều 3 BLDS 2015."
@@ -109,6 +119,17 @@
     "mệnh lệnh – phục tùng",
     "thỏa thuận"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Đối tượng điều chỉnh của luật hành chính là các quan hệ phát sinh trong quản lý hành chính nhà nước.",
+   "answer": true,
+   "explain": "Đúng. Slide bài giảng Luật Hành chính Việt Nam, Trường Đại học Luật Hà Nội, vấn đề 2 (\"TUẦN 2 HC\", TS. Nguyễn Ngọc Bích) — đã khớp nguyên văn slide (laws/hc-slide-trich.txt); slide không phải giáo trình, giáo trình chưa đối chiếu (nguyên văn).",
+   "source": {
+    "kind": "textbook",
+    "cite": "Slide bài giảng Luật Hành chính Việt Nam, Trường Đại học Luật Hà Nội, vấn đề 2 (\"TUẦN 2 HC\", TS. Nguyễn Ngọc Bích) — đã khớp nguyên văn slide (laws/hc-slide-trich.txt); slide không phải giáo trình, giáo trình chưa đối chiếu"
+   }
   }
  ]
 }

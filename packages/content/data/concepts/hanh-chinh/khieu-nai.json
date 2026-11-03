@@ -30,9 +30,9 @@
    "q": "Thời hiệu khiếu nại quyết định hành chính là bao lâu?",
    "options": [
     "90 ngày kể từ ngày nhận được hoặc biết được quyết định, hành vi",
-    "30 ngày",
-    "01 năm",
-    "Không giới hạn"
+    "30 ngày kể từ ngày nhận được quyết định và biết hành vi",
+    "01 năm kể từ ngày nhận được quyết định hành chính đó và biết",
+    "Không có thời hiệu, có thể khiếu nại vào bất kỳ lúc nào"
    ],
    "answer": 0,
    "explain": "Điều 9.",
@@ -47,9 +47,9 @@
    "q": "Không đồng ý với quyết định giải quyết khiếu nại lần đầu, người khiếu nại có quyền gì?",
    "options": [
     "Khiếu nại lần hai đến Thủ trưởng cấp trên trực tiếp hoặc khởi kiện vụ án hành chính",
-    "Chỉ được tố cáo",
-    "Phải chờ 01 năm",
-    "Không còn quyền nào"
+    "Chỉ được tố cáo lên cơ quan công an, Viện kiểm sát và Tòa án các cấp trên",
+    "Phải chờ 01 năm sau khi có quyết định giải quyết khiếu nại lần đầu và bổ sung đủ hồ sơ",
+    "Không còn quyền nào để bảo vệ quyền lợi, không được khiếu nại thêm nữa"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 7.",
@@ -65,7 +65,7 @@
    "right": "Tố cáo",
    "cases": [
     {
-     "text": "Bảo vệ quyền, lợi ích hợp pháp của chính người khiếu nại",
+     "text": "Bảo vệ quyền, lợi ích hợp pháp của chính người đứng đơn yêu cầu xem xét lại quyết định hành chính",
      "answer": "left"
     },
     {
@@ -75,6 +75,11 @@
     {
      "text": "Chủ thể có thể là cơ quan, tổ chức",
      "answer": "left"
+    },
+    {
+     "text": "Người không đồng ý với quyết định hành chính phải đề nghị xem xét lại trong thời hiệu 90 ngày",
+     "answer": "left",
+     "basis": "Điều 9 Luật Khiếu nại 2011"
     }
    ],
    "explain": "Điều 2 Luật Khiếu nại; Điều 2 Luật Tố cáo."
@@ -115,6 +120,18 @@
     "lần hai",
     "khởi kiện"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thời hiệu khiếu nại là 90 ngày, kể từ ngày nhận được quyết định hành chính hoặc biết được quyết định hành chính, hành vi hành chính.",
+   "answer": true,
+   "explain": "Đúng. Điều 9 Luật Khiếu nại 2011 (VBHN 28/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 9 Luật Khiếu nại 2011 (VBHN 28/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-28-VBHN-VPQH-2026-Luat-Khieu-nai-697698.aspx"
+   }
   }
  ]
 }

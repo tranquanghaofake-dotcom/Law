@@ -31,9 +31,9 @@
    "q": "Ai có quyền nộp đơn yêu cầu áp dụng thủ tục phục hồi?",
    "options": [
     "Người đại diện theo pháp luật của doanh nghiệp",
-    "Chủ nợ không có bảo đảm",
-    "Cơ quan quản lý thuế",
-    "Người lao động"
+    "Chủ nợ không có bảo đảm và chủ nợ có bảo đảm",
+    "Cơ quan quản lý thuế và cơ quan bảo hiểm xã hội",
+    "Người lao động và công đoàn cơ sở tại doanh nghiệp"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 24.",
@@ -48,9 +48,9 @@
    "q": "Thủ tục phục hồi có thể được yêu cầu khi doanh nghiệp ở tình trạng nào?",
    "options": [
     "Có nguy cơ mất hoặc mất khả năng thanh toán",
-    "Chỉ khi đã bị tuyên bố phá sản",
-    "Chỉ khi đã giải thể",
-    "Chỉ khi lỗ 3 năm liên tiếp"
+    "Khi đã bị tuyên bố phá sản và đã giải thể",
+    "Sau khi đã giải thể xong và thanh lý tài sản",
+    "Chỉ khi lỗ 3 năm liên tiếp và có khoản nợ"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 24.",
@@ -72,6 +72,16 @@
     {
      "text": "Chủ nợ không có bảo đảm",
      "answer": "right"
+    },
+    {
+     "text": "Người đại diện theo pháp luật của doanh nghiệp nộp đơn yêu cầu thủ tục phục hồi",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 24 Luật Phục hồi, phá sản 2025"
+    },
+    {
+     "text": "Chủ nợ có bảo đảm một phần chỉ được nộp đơn yêu cầu phá sản",
+     "answer": "right",
+     "basis": "Điểm a khoản 1 Điều 38 Luật Phục hồi, phá sản 2025"
     }
    ],
    "explain": "Điều 24, 38."

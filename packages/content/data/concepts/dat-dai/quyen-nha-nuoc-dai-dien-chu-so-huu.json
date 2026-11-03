@@ -30,8 +30,8 @@
    "q": "Quyền nào thuộc Nhà nước với tư cách đại diện chủ sở hữu đất đai?",
    "options": [
     "Quyết định thu hồi đất",
-    "Chuyển nhượng quyền sử dụng đất của cá nhân",
-    "Thế chấp quyền sử dụng đất của doanh nghiệp",
+    "Chuyển nhượng đất cá nhân",
+    "Thế chấp đất doanh nghiệp",
     "Thừa kế quyền sử dụng đất"
    ],
    "answer": 0,
@@ -44,12 +44,12 @@
   {
    "type": "mcq",
    "level": 1,
-   "q": "Nhà nước quyết định mục đích sử dụng đất thông qua những công cụ nào?",
+   "q": "Phương án nào liệt kê đầy đủ các công cụ Nhà nước dùng để quyết định mục đích sử dụng đất (khoản 2 Điều 13)?",
    "options": [
     "Quy hoạch, kế hoạch sử dụng đất, giao đất, cho thuê đất, công nhận quyền và cho phép chuyển mục đích",
-    "Chỉ quy hoạch",
-    "Chỉ cấp Giấy chứng nhận",
-    "Thông qua giá đất"
+    "Quy hoạch sử dụng đất và kế hoạch sử dụng đất hằng năm của tỉnh, thành phố trực thuộc Trung ương đó",
+    "Cấp Giấy chứng nhận và thu tiền sử dụng đất theo thời hạn của dự án đã được phê duyệt",
+    "Thông qua giá đất và thuế sử dụng đất theo quyết định của Chính phủ hằng năm, không cần văn bản"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 13.",
@@ -75,6 +75,11 @@
     {
      "text": "Quyết định thời hạn sử dụng đất",
      "answer": "left"
+    },
+    {
+     "text": "Người sử dụng đất tặng cho quyền sử dụng đất cho người khác khi đủ điều kiện",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 45 Luật Đất đai 2024"
     }
    ],
    "explain": "Điều 13, 27."

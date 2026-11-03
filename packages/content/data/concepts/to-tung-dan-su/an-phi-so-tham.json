@@ -29,9 +29,9 @@
    "q": "Đương sự phải chịu án phí sơ thẩm khi nào?",
    "options": [
     "Khi yêu cầu của họ không được Tòa án chấp nhận (trừ trường hợp được miễn, không phải chịu)",
-    "Luôn luôn",
-    "Chỉ nguyên đơn",
-    "Chỉ khi có luật sư"
+    "Luôn luôn phải chịu án phí, kể cả khi yêu cầu được Tòa án chấp nhận hoàn toàn và không tranh chấp gì",
+    "Bị đơn phải chịu án phí vì là bên bị kiện, kể cả khi yêu cầu của nguyên đơn bị bác",
+    "Khi Tòa án phải hoãn phiên tòa quá hai lần do đương sự vắng mặt không có lý do chính đáng"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 147.",
@@ -46,9 +46,9 @@
    "q": "Hòa giải thành trước khi mở phiên tòa thì các đương sự chịu án phí thế nào?",
    "options": [
     "Chỉ chịu 50% mức án phí sơ thẩm",
-    "Không phải chịu",
-    "Chịu 100%",
-    "Chịu gấp đôi"
+    "Không phải chịu án phí sơ thẩm nào",
+    "Chịu 100% mức án phí sơ thẩm",
+    "Chịu gấp đôi mức án phí sơ thẩm"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 147.",
@@ -70,6 +70,16 @@
     {
      "text": "Thuận tình ly hôn",
      "answer": "right"
+    },
+    {
+     "text": "Nguyên đơn đòi nợ nhưng yêu cầu không được Tòa án chấp nhận",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 147 Bộ luật Tố tụng dân sự 2015"
+    },
+    {
+     "text": "Trong vụ án ly hôn, người xin ly hôn đơn phương là nguyên đơn, Tòa án chấp nhận cho ly hôn",
+     "answer": "left",
+     "basis": "Khoản 4 Điều 147 Bộ luật Tố tụng dân sự 2015"
     }
    ],
    "explain": "Khoản 4 Điều 147."
@@ -110,6 +120,18 @@
     "ly hôn",
     "một nửa"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Trong vụ án ly hôn thì nguyên đơn phải chịu án phí sơ thẩm, không phụ thuộc vào việc Tòa án chấp nhận hay không chấp nhận yêu cầu của nguyên đơn.",
+   "answer": true,
+   "explain": "Đúng. Khoản 4 Điều 147 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 147 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/Thu-tuc-To-tung/Van-ban-hop-nhat-21-VBHN-VPQH-2026-Bo-luat-To-dung-dan-su-696578.aspx"
+   }
   }
  ]
 }

@@ -31,9 +31,9 @@
    "q": "Hợp đồng chuyển nhượng nhãn hiệu có hiệu lực khi nào?",
    "options": [
     "Khi đã được đăng ký tại cơ quan quản lý nhà nước về quyền SHCN",
-    "Khi hai bên ký",
-    "Khi công chứng",
-    "Khi thanh toán xong"
+    "Khi hai bên ký kết và đóng dấu xác nhận của công chứng",
+    "Khi công chứng viên xác nhận chữ ký của hai bên trong hợp đồng",
+    "Khi thanh toán xong toàn bộ tiền chuyển nhượng đã thỏa thuận"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 148.",
@@ -50,7 +50,7 @@
     "Theo thỏa thuận giữa các bên",
     "Chỉ khi đăng ký tại Cục SHTT",
     "Sau 30 ngày kể từ ngày ký",
-    "Khi được Bộ Khoa học và Công nghệ phê duyệt"
+    "Khi được Bộ Khoa học duyệt"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 148.",
@@ -72,6 +72,16 @@
     {
      "text": "Hợp đồng sử dụng nhãn hiệu",
      "answer": "right"
+    },
+    {
+     "text": "Hợp đồng sử dụng sáng chế ký xong nhưng chưa đăng ký tại cơ quan nhà nước",
+     "answer": "left",
+     "basis": "Khoản 2, 3 Điều 148 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Hợp đồng sử dụng nhãn hiệu có hiệu lực kể từ khi các bên ký",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 148 Luật Sở hữu trí tuệ (trừ hợp đồng sử dụng nhãn hiệu)"
     }
    ],
    "explain": "Khoản 1, 2 Điều 148."

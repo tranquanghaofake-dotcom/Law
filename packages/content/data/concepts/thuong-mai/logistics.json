@@ -26,12 +26,12 @@
   {
    "type": "mcq",
    "level": 1,
-   "q": "Dịch vụ logistics bao gồm những công việc nào?",
+   "q": "Phương án nào mô tả đầy đủ dịch vụ logistics theo Điều 233 Luật Thương mại?",
    "options": [
     "Một hoặc nhiều công việc như nhận hàng, vận chuyển, lưu kho, làm thủ tục hải quan, đóng gói, giao hàng",
-    "Chỉ vận chuyển",
-    "Chỉ thủ tục hải quan",
-    "Chỉ lưu kho"
+    "Vận chuyển hàng hóa từ kho đến tay người nhận tại địa điểm được yêu cầu và giao hàng theo hợp đồng",
+    "Thủ tục hải quan và khai báo hàng hóa xuất nhập khẩu với cơ quan nhà nước có thẩm quyền",
+    "Lưu kho hàng hóa trong thời gian ngắn tại kho bãi của thương nhân theo hợp đồng"
    ],
    "answer": 0,
    "explain": "Điều 233.",
@@ -46,9 +46,9 @@
    "q": "Thương nhân logistics có quyền gì khi khách hàng không thanh toán?",
    "options": [
     "Cầm giữ hàng hóa, chứng từ theo quy định",
-    "Bán ngay hàng hóa không cần thông báo",
-    "Tiêu hủy hàng hóa",
-    "Không có quyền gì"
+    "Bán hàng ngay khi khách chưa trả tiền",
+    "Tiêu hủy hàng hóa khi khách không trả",
+    "Không có quyền gì, phải chịu thiệt hại"
    ],
    "answer": 0,
    "explain": "Điều 239.",
@@ -70,6 +70,16 @@
     {
      "text": "Tư vấn pháp lý về ly hôn",
      "answer": "right"
+    },
+    {
+     "text": "Nhận hàng từ kho nhà sản xuất, vận chuyển và lưu kho cho khách hàng",
+     "answer": "left",
+     "basis": "Điều 233 Luật Thương mại 2005"
+    },
+    {
+     "text": "Cho thuê văn phòng làm việc tại khu đô thị",
+     "answer": "right",
+     "basis": "Điều 233 Luật Thương mại 2005 (không thuộc công việc logistics được liệt kê)"
     }
    ],
    "explain": "Điều 233."

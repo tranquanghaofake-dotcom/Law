@@ -29,9 +29,9 @@
    "q": "Nhiệm vụ chính của Ủy ban của Quốc hội theo khoản 2 Điều 76 là gì?",
    "options": [
     "Thẩm tra dự án luật, kiến nghị về luật, dự án khác và báo cáo được giao; giám sát trong phạm vi do luật định",
-    "Ban hành nghị định",
-    "Xét xử vụ án hành chính",
-    "Bổ nhiệm Bộ trưởng"
+    "Ban hành nghị định, thông tư, quyết định và các văn bản hướng dẫn của Chính phủ cấp trên",
+    "Xét xử vụ án hành chính và vụ án dân sự của các tòa án trung ương và địa phương hiện nay trên cả nước",
+    "Bổ nhiệm Bộ trưởng và các thứ trưởng của Chính phủ trong mọi nhiệm kỳ và các cơ quan trung ương"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 76.",
@@ -74,6 +74,16 @@
     {
      "text": "Chính phủ phải lấy ý kiến khi ban hành quy định thực hiện chính sách dân tộc",
      "answer": "left"
+    },
+    {
+     "text": "Thẩm tra dự án luật liên quan đến chính sách dân tộc",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 76 Hiến pháp 2013"
+    },
+    {
+     "text": "Cơ quan của Quốc hội có người đứng đầu gọi là Chủ nhiệm do Quốc hội bầu",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 76 Hiến pháp 2013"
     }
    ],
    "explain": "Điều 75, 76."
@@ -114,6 +124,18 @@
     "giám sát",
     "lâm thời"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Khi cần thiết, Quốc hội thành lập Ủy ban lâm thời để nghiên cứu, thẩm tra một dự án hoặc điều tra về một vấn đề nhất định.",
+   "answer": true,
+   "explain": "Đúng. Điều 78 Hiến pháp 2013 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 78 Hiến pháp 2013",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+   }
   }
  ]
 }

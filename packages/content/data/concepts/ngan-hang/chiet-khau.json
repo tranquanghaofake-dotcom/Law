@@ -33,7 +33,7 @@
    "q": "Đối tượng của nghiệp vụ chiết khấu là gì?",
    "options": [
     "Công cụ chuyển nhượng, giấy tờ có giá khác",
-    "Khoản phải thu từ hợp đồng mua bán hàng hóa",
+    "Khoản phải thu từ hợp đồng mua bán hàng",
     "Quyền sử dụng đất",
     "Máy móc, thiết bị cho thuê"
    ],
@@ -52,7 +52,7 @@
     "Trước khi đến hạn thanh toán",
     "Sau khi đến hạn thanh toán",
     "Khi bên phát hành phá sản",
-    "Bất kỳ lúc nào kể cả đã thanh toán"
+    "Bất kỳ lúc nào, kể cả sau hạn"
    ],
    "answer": 0,
    "explain": "Khoản 6 Điều 4.",
@@ -74,6 +74,16 @@
     {
      "text": "Ngân hàng mua lại khoản phải thu theo hợp đồng cung ứng dịch vụ",
      "answer": "right"
+    },
+    {
+     "text": "Ngân hàng mua kỳ phiếu của doanh nghiệp trước khi đến hạn, có quyền truy đòi người bán",
+     "answer": "left",
+     "basis": "Khoản 6 Điều 4 Luật Các tổ chức tín dụng 2024"
+    },
+    {
+     "text": "Ngân hàng ứng trước tiền cho doanh nghiệp bán hàng, thanh toán thay cho bên mua theo hợp đồng mua bán",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 4 Luật Các tổ chức tín dụng 2024"
     }
    ],
    "explain": "Khoản 1, 6 Điều 4."
@@ -114,6 +124,18 @@
     "giấy tờ có giá",
     "khoản phải thu"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chiết khấu là hình thức cấp tín dụng thông qua việc mua có kỳ hạn hoặc mua có bảo lưu quyền truy đòi các công cụ chuyển nhượng, giấy tờ có giá khác của bên thụ hưởng trước khi đến hạn thanh toán.",
+   "answer": true,
+   "explain": "Đúng. Khoản 6 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 6 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)",
+    "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-143-2026-VBHN-LQ-VPQH-Luat-Cac-to-chuc-tin-dung-729869.aspx"
+   }
   }
  ]
 }

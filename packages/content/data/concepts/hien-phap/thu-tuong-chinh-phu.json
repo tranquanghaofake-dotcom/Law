@@ -30,9 +30,9 @@
    "q": "Thủ tướng Chính phủ được bầu như thế nào?",
    "options": [
     "Do Quốc hội bầu trong số đại biểu Quốc hội",
-    "Do Chủ tịch nước bổ nhiệm",
-    "Do Nhân dân bầu trực tiếp",
-    "Do Chính phủ bầu"
+    "Do Chủ tịch nước bổ nhiệm theo đề nghị",
+    "Do Nhân dân bầu trực tiếp tại địa phương",
+    "Do Chính phủ bầu trong số thành viên"
    ],
    "answer": 0,
    "explain": "Điều 98.",
@@ -47,9 +47,9 @@
    "q": "Ai bổ nhiệm Thứ trưởng?",
    "options": [
     "Thủ tướng Chính phủ",
-    "Chủ tịch nước",
-    "Quốc hội",
-    "Bộ trưởng"
+    "Phó Thủ tướng Chính phủ phụ trách lĩnh vực đó",
+    "Quốc hội và Chính phủ",
+    "Bộ trưởng Tư pháp"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 98.",
@@ -75,6 +75,16 @@
     {
      "text": "Trình Quốc hội phê chuẩn đề nghị bổ nhiệm Bộ trưởng",
      "answer": "left"
+    },
+    {
+     "text": "Người đứng đầu Chính phủ trình Quốc hội phê chuẩn đề nghị bổ nhiệm Bộ trưởng",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 95 và khoản 3 Điều 98 Hiến pháp 2013"
+    },
+    {
+     "text": "Người đứng đầu Nhà nước đề nghị Quốc hội bầu Thủ tướng Chính phủ",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 88 Hiến pháp 2013"
     }
    ],
    "explain": "Khoản 2 Điều 88; khoản 3 Điều 98."

@@ -47,9 +47,9 @@
    "q": "Văn bản nào sau đây là nguồn của ngành luật Hiến pháp?",
    "options": [
     "Luật Quốc tịch Việt Nam",
-    "Bộ luật Lao động",
-    "Luật Thương mại",
-    "Bộ luật Dân sự"
+    "Bộ luật Lao động hiện hành",
+    "Luật Thương mại hiện hành",
+    "Bộ luật Dân sự hiện hành"
    ],
    "answer": 0,
    "explain": "Luật Quốc tịch điều chỉnh quan hệ cơ bản giữa Nhà nước và công dân.",
@@ -75,6 +75,16 @@
     {
      "text": "Hợp đồng mua bán giữa hai công ty",
      "answer": "right"
+    },
+    {
+     "text": "Luật Quốc tịch Việt Nam là văn bản điều chỉnh các quan hệ của ngành luật Hiến pháp",
+     "answer": "left",
+     "basis": "Giáo trình Luật Hiến pháp (Chương 1, nguồn của ngành luật)"
+    },
+    {
+     "text": "Bộ luật Dân sự 2015 thuộc ngành luật dân sự, không thuộc hệ thống văn bản của ngành luật Hiến pháp",
+     "answer": "right",
+     "basis": "Giáo trình Luật Hiến pháp (Chương 1, nguồn của ngành luật)"
     }
    ],
    "explain": "Tiêu chí: có chứa quy phạm luật Hiến pháp."

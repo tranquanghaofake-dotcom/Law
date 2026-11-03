@@ -28,8 +28,8 @@
    "q": "Bản án của Tòa án phải được tôn trọng khi nào theo Điều 106?",
    "options": [
     "Khi đã có hiệu lực pháp luật",
-    "Ngay khi tuyên án sơ thẩm dù đang bị kháng cáo",
-    "Khi được Viện kiểm sát đồng ý",
+    "Ngay khi tuyên án sơ thẩm",
+    "Khi Viện kiểm sát đã đồng ý",
     "Khi được báo chí đăng tải"
    ],
    "answer": 0,
@@ -45,9 +45,9 @@
    "q": "Ai phải nghiêm chỉnh chấp hành bản án đã có hiệu lực?",
    "options": [
     "Cơ quan, tổ chức, cá nhân hữu quan",
-    "Chỉ bị cáo",
-    "Chỉ Tòa án",
-    "Chỉ cơ quan công an"
+    "Bị cáo và người bị hại; cơ quan thì không",
+    "Tòa án cấp tỉnh trở lên; cá nhân thì không",
+    "Công an và Viện kiểm sát; tổ chức thì không"
    ],
    "answer": 0,
    "explain": "Điều 106.",
@@ -69,6 +69,16 @@
     {
      "text": "Cơ quan, tổ chức, cá nhân hữu quan",
      "answer": "right"
+    },
+    {
+     "text": "Thái độ kính trọng mà mọi cơ quan, tổ chức, cá nhân phải dành cho bản án có hiệu lực pháp luật của Tòa án",
+     "answer": "left",
+     "basis": "Điều 106 Hiến pháp 2013"
+    },
+    {
+     "text": "Cơ quan, tổ chức, cá nhân hữu quan có nghĩa vụ thi hành nghiêm túc bản án có hiệu lực",
+     "answer": "right",
+     "basis": "Điều 106 Hiến pháp 2013"
     }
    ],
    "explain": "Điều 106."

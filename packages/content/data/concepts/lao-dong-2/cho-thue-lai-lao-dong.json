@@ -46,9 +46,9 @@
    "q": "Trong cho thuê lại lao động, người lao động duy trì quan hệ lao động với ai?",
    "options": [
     "Doanh nghiệp cho thuê lại lao động đã giao kết HĐLĐ",
-    "Bên thuê lại lao động",
-    "Cả hai bên như nhau",
-    "Cơ quan quản lý lao động"
+    "Bên thuê lại lao động đã giao kết HĐLĐ trực tiếp",
+    "Cả hai bên như nhau theo thỏa thuận chung",
+    "Cơ quan quản lý lao động nhà nước ở địa phương"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 52.",
@@ -70,6 +70,16 @@
     {
      "text": "Điều hành người lao động trong thời gian thuê lại",
      "answer": "right"
+    },
+    {
+     "text": "Ký quỹ và được cấp Giấy phép hoạt động cho thuê lại lao động",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 54 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Sử dụng lao động thuê lại để thay thế người đang nghỉ thai sản",
+     "answer": "right",
+     "basis": "Điểm b khoản 2 Điều 53 Bộ luật Lao động 2019"
     }
    ],
    "explain": "Điều 52, 56, 57."
@@ -110,6 +120,18 @@
     "giấy phép",
     "12 tháng"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thời hạn cho thuê lại lao động đối với người lao động tối đa là 12 tháng.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 53 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 53 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-18-VBHN-VPQH-2026-Bo-luat-lao-dong-695336.aspx"
+   }
   }
  ]
 }

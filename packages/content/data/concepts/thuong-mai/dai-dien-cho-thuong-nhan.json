@@ -30,9 +30,9 @@
    "q": "Trong đại diện cho thương nhân, bên đại diện thực hiện hoạt động thương mại với danh nghĩa của ai?",
    "options": [
     "Bên giao đại diện",
-    "Chính mình",
-    "Khách hàng",
-    "Nhà nước"
+    "Chính mình tự làm",
+    "Khách hàng đại lý",
+    "Nhà nước và cơ quan"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 141.",
@@ -48,7 +48,7 @@
    "options": [
     "Bộ luật Dân sự",
     "Luật Thương mại về đại diện cho thương nhân",
-    "Luật Lao động",
+    "Bộ luật Lao động",
     "Luật Doanh nghiệp"
    ],
    "answer": 0,
@@ -75,6 +75,16 @@
     {
      "text": "Đại lý thương mại",
      "answer": "right"
+    },
+    {
+     "text": "Người được ủy nhiệm ký hợp đồng bằng tên và trên danh nghĩa của doanh nghiệp giao đại diện",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 141 Luật Thương mại 2005"
+    },
+    {
+     "text": "Bên nhận ủy nhiệm mua hàng bằng tên của mình rồi chuyển giao cho khách",
+     "answer": "right",
+     "basis": "Điều 155 Luật Thương mại 2005"
     }
    ],
    "explain": "Điều 141, 155, 166."
@@ -108,13 +118,25 @@
    "type": "recall",
    "level": 5,
    "q": "Trình bày khái niệm đại diện cho thương nhân.",
-   "model": "Là việc thương nhân nhận ủy nhiệm của thương nhân khác để thực hiện hoạt động thương mại với danh nghĩa, theo chỉ dẫn của thương nhân đó và hưởng thù lao; cử người của mình làm đại diện thì áp dụng BLDS (Điều 141).",
+   "model": "Là việc thương nhân nhận ủy nhiệm của thương nhân khác để thực hiện hoạt động thương mại với danh nghĩa, theo chỉ dẫn của thương nhân đó và hưởng thù lao; cử người của mình làm đại diện thì áp dụng BLDS (khoản 2 Điều 141 Luật Thương mại).",
    "keywords": [
     "ủy nhiệm",
     "danh nghĩa",
     "chỉ dẫn",
     "thù lao"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Trong trường hợp thương nhân cử người của mình để làm đại diện cho mình thì áp dụng quy định của Bộ luật Dân sự.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 141 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 141 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)",
+    "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+   }
   }
  ]
 }

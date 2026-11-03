@@ -29,8 +29,8 @@
    "options": [
     "Đầu tư vào chứng khoán có thu nhập cố định",
     "Khách hàng là nhà đầu tư chuyên nghiệp",
-    "Khách hàng ký cam kết chịu rủi ro",
-    "Không bao giờ"
+    "Khách hàng ký cam kết chịu rủi ro đầy đủ",
+    "Khách hàng ủy thác danh mục đầu tư dài hạn"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 91: ngoại lệ duy nhất là chứng khoán có thu nhập cố định.",
@@ -73,6 +73,11 @@
     {
      "text": "Cho tổ chức khác dùng danh nghĩa công ty để kinh doanh chứng khoán",
      "answer": "right"
+    },
+    {
+     "text": "Đưa ra khuyến nghị đầu tư có căn cứ phân tích, kèm cảnh báo rủi ro",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 91 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 1, 2, 5 Điều 91."
@@ -101,9 +106,9 @@
    "q": "Công ty chứng khoán F được cấp phép tháng 1/2025. Tháng 6/2026, một cổ đông sáng lập muốn bán toàn bộ cổ phần cho một nhà đầu tư bên ngoài. Có được không?",
    "options": [
     "Không, vì chưa hết 03 năm kể từ ngày được cấp giấy phép",
-    "Có, vì đã quá 01 năm",
-    "Có, nếu Đại hội đồng cổ đông đồng ý",
-    "Có, nếu giá chuyển nhượng bằng mệnh giá"
+    "Có, vì đã quá 01 năm kể từ ngày được cấp giấy phép",
+    "Có, nếu Đại hội đồng cổ đông đồng ý bằng nghị quyết hợp lệ",
+    "Có, nếu giá chuyển nhượng bằng mệnh giá và có văn bản đồng ý"
    ],
    "answer": 0,
    "explain": "Khoản 4 Điều 91: chỉ được chuyển nhượng cho cổ đông sáng lập khác trong 03 năm.",

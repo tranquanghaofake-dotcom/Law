@@ -29,9 +29,9 @@
    "q": "Điều kiện nào KHÔNG thuộc điều kiện bảo hộ giống cây trồng theo Điều 158?",
    "options": [
     "Trình độ sáng tạo",
-    "Tính khác biệt",
-    "Tính đồng nhất",
-    "Tính ổn định"
+    "Có tính khác biệt",
+    "Có tính đồng nhất",
+    "Có tính ổn định"
    ],
    "answer": 0,
    "explain": "Điều 158; trình độ sáng tạo là điều kiện của sáng chế.",
@@ -70,6 +70,16 @@
     {
      "text": "Trình độ sáng tạo",
      "answer": "right"
+    },
+    {
+     "text": "Giống cây trồng có tính khác biệt và ổn định qua nhiều vụ gieo trồng",
+     "answer": "left",
+     "basis": "Điều 158 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Giải pháp có tính mới và khả năng áp dụng công nghiệp nhưng chưa đạt trình độ sáng tạo",
+     "answer": "right",
+     "basis": "Điều 58 Luật Sở hữu trí tuệ"
     }
    ],
    "explain": "Điều 58, 158."

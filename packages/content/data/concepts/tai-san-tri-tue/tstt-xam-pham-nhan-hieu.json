@@ -31,9 +31,9 @@
    "q": "Dùng dấu hiệu tương tự nhãn hiệu được bảo hộ cho hàng hóa cùng loại bị coi là xâm phạm khi nào?",
    "options": [
     "Khi việc sử dụng có khả năng gây nhầm lẫn về nguồn gốc hàng hóa, dịch vụ",
-    "Trong mọi trường hợp, không cần điều kiện",
-    "Chỉ khi đã bán được hàng",
-    "Chỉ khi dấu hiệu đã được đăng ký"
+    "Khi người dùng đã bán được hàng và có doanh thu từ hàng đó",
+    "Khi dấu hiệu tương tự đã được đăng ký tại cơ quan quản lý và công bố",
+    "Khi chủ nhãn hiệu đã chứng minh được thiệt hại thực tế bằng tiền"
    ],
    "answer": 0,
    "explain": "Điểm c khoản 1 Điều 129.",
@@ -48,9 +48,9 @@
    "q": "Trường hợp nào KHÔNG cần chứng minh khả năng gây nhầm lẫn?",
    "options": [
     "Dấu hiệu trùng với nhãn hiệu cho hàng hóa trùng với danh mục đăng ký",
-    "Dấu hiệu tương tự cho hàng hóa tương tự",
-    "Dấu hiệu trùng cho hàng hóa liên quan",
-    "Dấu hiệu tương tự cho hàng hóa liên quan"
+    "Dấu hiệu tương tự cho hàng hóa tương tự đã được đăng ký trước đó",
+    "Dấu hiệu trùng cho hàng hóa liên quan và đã được công bố rộng rãi",
+    "Dấu hiệu tương tự cho hàng hóa liên quan và có khả năng sử dụng"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 1 Điều 129 không có điều kiện \"có khả năng gây nhầm lẫn\".",
@@ -72,6 +72,16 @@
     {
      "text": "Dùng nhãn hiệu theo hợp đồng li-xăng đã ký với chủ sở hữu",
      "answer": "right"
+    },
+    {
+     "text": "Dùng dấu hiệu tương tự nhãn hiệu \"Lotusmart\" cho thực phẩm cùng loại khi chưa được phép",
+     "answer": "left",
+     "basis": "Điểm c khoản 1 Điều 129 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Nhà phân phối được chủ nhãn hiệu cho phép bán sản phẩm trong lãnh thổ theo hợp đồng",
+     "answer": "right",
+     "basis": "Điều 141 Luật Sở hữu trí tuệ (sử dụng theo li-xăng)"
     }
    ],
    "explain": "Khoản 1 Điều 129: hành vi \"không được phép của chủ sở hữu\"."

@@ -47,9 +47,9 @@
    "q": "Tố cáo gồm những loại nào?",
    "options": [
     "Tố cáo vi phạm trong thực hiện nhiệm vụ, công vụ và tố cáo vi phạm về quản lý nhà nước trong các lĩnh vực",
-    "Tố cáo dân sự và tố cáo hình sự",
-    "Tố cáo lần đầu và lần hai",
-    "Tố cáo nội bộ và tố cáo bên ngoài"
+    "Tố cáo dân sự, tố cáo hình sự, tố cáo hành chính và tố cáo kinh tế trong các lĩnh vực đời sống xã hội",
+    "Tố cáo lần đầu, tố cáo lần hai và tố cáo nhiều lần đối với cùng một vụ việc của nhiều người",
+    "Tố cáo nội bộ, tố cáo bên ngoài và tố cáo trực tuyến qua các phương tiện truyền thông đại chúng trên mạng xã hội"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 2.",
@@ -71,6 +71,16 @@
     {
      "text": "Có thời hiệu 90 ngày",
      "answer": "right"
+    },
+    {
+     "text": "Công dân báo cho cơ quan có thẩm quyền biết cán bộ nhũng nhiễu người dân",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 2 Luật Tố cáo 2018"
+    },
+    {
+     "text": "Người dân báo cho cơ quan biết doanh nghiệp xả thải gây ô nhiễm",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 2 Luật Tố cáo 2018"
     }
    ],
    "explain": "Điều 2 Luật Tố cáo; Điều 9 Luật Khiếu nại."
@@ -111,6 +121,17 @@
     "xem xét lại",
     "của mình"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tố cáo là việc cá nhân theo thủ tục quy định của Luật Tố cáo báo cho cơ quan, tổ chức, cá nhân có thẩm quyền biết về hành vi vi phạm pháp luật của bất kỳ cơ quan, tổ chức, cá nhân nào gây thiệt hại hoặc đe dọa gây thiệt hại đến lợi ích của Nhà nước, quyền và lợi ích hợp pháp của cơ quan, tổ chức, cá nhân.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 2 Luật Tố cáo (VBHN 29/VBHN-VPQH 2026) (nguyên văn, lược phần liệt kê).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 2 Luật Tố cáo (VBHN 29/VBHN-VPQH 2026)"
+   }
   }
  ]
 }

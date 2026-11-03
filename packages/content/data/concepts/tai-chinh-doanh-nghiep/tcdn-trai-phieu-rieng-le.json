@@ -47,9 +47,9 @@
    "q": "Ai được mua trái phiếu chuyển đổi riêng lẻ?",
    "options": [
     "Nhà đầu tư chiến lược",
-    "Mọi cá nhân",
-    "Chỉ ngân hàng",
-    "Chỉ người lao động của công ty"
+    "Cá nhân có vốn lớn",
+    "Ngân hàng thương mại",
+    "Người lao động công ty"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 2 Điều 128.",
@@ -71,6 +71,16 @@
     {
      "text": "Quảng cáo trên truyền hình để chào bán rộng rãi",
      "answer": "right"
+    },
+    {
+     "text": "Công ty cổ phần không đại chúng chào bán trái phiếu cho một số nhà đầu tư, không qua báo chí",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 128 Luật Doanh nghiệp 2020"
+    },
+    {
+     "text": "Công ty chào bán trái phiếu thông qua báo chí cho công chúng rộng rãi",
+     "answer": "right",
+     "basis": "Khoản 1 và khoản 2 Điều 128 Luật Doanh nghiệp 2020"
     }
    ],
    "explain": "Khoản 1, 2 Điều 128."

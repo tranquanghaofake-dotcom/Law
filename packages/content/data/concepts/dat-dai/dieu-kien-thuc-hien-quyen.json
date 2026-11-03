@@ -30,9 +30,9 @@
    "q": "Điều kiện nào KHÔNG thuộc khoản 1 Điều 45 để chuyển nhượng quyền sử dụng đất?",
    "options": [
     "Người nhận chuyển nhượng phải có hộ khẩu tại địa phương",
-    "Đất không có tranh chấp",
-    "Quyền sử dụng đất không bị kê biên",
-    "Trong thời hạn sử dụng đất"
+    "Đất không có tranh chấp hoặc tranh chấp đã giải quyết",
+    "Quyền sử dụng đất không bị kê biên để thi hành án",
+    "Trong thời hạn sử dụng đất đã được cấp và chưa hết"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 45.",
@@ -47,9 +47,9 @@
    "q": "Trường hợp nào không bắt buộc có Giấy chứng nhận khi thực hiện quyền?",
    "options": [
     "Thừa kế quyền sử dụng đất",
-    "Chuyển nhượng",
-    "Thế chấp",
-    "Góp vốn"
+    "Chuyển nhượng đất đã cấp sổ",
+    "Thế chấp quyền sử dụng đất",
+    "Góp vốn bằng quyền sử dụng"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 1 Điều 45.",
@@ -71,6 +71,16 @@
     {
      "text": "Đất đang bị kê biên để thi hành án",
      "answer": "right"
+    },
+    {
+     "text": "Đất không có tranh chấp, người sử dụng đất được chuyển nhượng quyền sử dụng đất",
+     "answer": "left",
+     "basis": "Điểm b khoản 1 Điều 45 Luật Đất đai 2024"
+    },
+    {
+     "text": "Người sử dụng đất chưa có Giấy chứng nhận quyền sử dụng đất đem chuyển nhượng",
+     "answer": "right",
+     "basis": "Điểm a khoản 1 Điều 45 Luật Đất đai 2024"
     }
    ],
    "explain": "Điều 45."

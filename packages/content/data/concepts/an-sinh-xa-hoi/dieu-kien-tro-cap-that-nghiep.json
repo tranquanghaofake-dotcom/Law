@@ -30,9 +30,9 @@
    "q": "Mức hưởng trợ cấp thất nghiệp hằng tháng là bao nhiêu?",
    "options": [
     "60% mức bình quân tiền lương tháng đóng BHTN của 06 tháng gần nhất, tối đa 05 lần lương tối thiểu vùng",
-    "75% tiền lương tháng cuối",
-    "50% lương cơ sở",
-    "100% lương bình quân"
+    "75% tiền lương tháng cuối của người lao động trước khi nghỉ việc, không giới hạn mức tối đa",
+    "50% lương cơ sở trong mọi trường hợp và không phụ thuộc vào thời gian đóng bảo hiểm của người lao động",
+    "100% lương bình quân của người lao động trong 12 tháng gần nhất đã đóng bảo hiểm thất nghiệp"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 39.",
@@ -71,6 +71,21 @@
     {
      "text": "Nghỉ việc khi đã đủ điều kiện hưởng lương hưu",
      "answer": "right"
+    },
+    {
+     "text": "Người có hợp đồng 6 tháng, đóng đủ 12 tháng trong 36 tháng trước khi chấm dứt và nộp hồ sơ đúng hạn",
+     "answer": "left",
+     "basis": "Điểm b khoản 1 Điều 38 Luật Việc làm 2025"
+    },
+    {
+     "text": "Người lao động đơn phương chấm dứt hợp đồng trái pháp luật",
+     "answer": "right",
+     "basis": "Điểm a khoản 1 Điều 38 Luật Việc làm 2025"
+    },
+    {
+     "text": "Người lao động nộp hồ sơ hưởng trợ cấp sau khi đã quá 03 tháng kể từ ngày chấm dứt hợp đồng",
+     "answer": "right",
+     "basis": "Điểm c khoản 1 Điều 38 Luật Việc làm 2025"
     }
    ],
    "explain": "Điều 38."

@@ -29,9 +29,9 @@
    "q": "Sản xuất sản phẩm theo sáng chế đã hết thời hạn bảo hộ có xâm phạm không?",
    "options": [
     "Không, vì điều kiện xâm phạm là trong thời hạn hiệu lực văn bằng",
-    "Có",
-    "Có nếu không trả phí",
-    "Có nếu xuất khẩu"
+    "Có, vì sản xuất theo sáng chế mà không được chủ văn bằng cho phép",
+    "Có nếu không trả phí bản quyền cho chủ sở hữu sáng chế và văn bằng",
+    "Có nếu xuất khẩu sản phẩm ra nước ngoài và tiêu thụ tại đó"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 126.",
@@ -46,9 +46,9 @@
    "q": "Sử dụng kiểu dáng không khác biệt đáng kể với kiểu dáng được bảo hộ mà không được phép thì sao?",
    "options": [
     "Là xâm phạm quyền của chủ sở hữu kiểu dáng",
-    "Không xâm phạm vì có khác biệt",
-    "Chỉ là cạnh tranh không lành mạnh",
-    "Được phép nếu ghi xuất xứ"
+    "Không xâm phạm vì có khác biệt đáng kể",
+    "Chỉ là hành vi cạnh tranh không lành mạnh",
+    "Được phép nếu ghi rõ xuất xứ trên bao bì"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 126.",
@@ -70,6 +70,16 @@
     {
      "text": "Dùng sáng chế để giảng dạy phi thương mại",
      "answer": "right"
+    },
+    {
+     "text": "Sử dụng kiểu dáng công nghiệp đã được bảo hộ để sản xuất kinh doanh mà không được phép",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 126 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Sinh viên nghiên cứu, thử nghiệm sáng chế không nhằm mục đích thương mại",
+     "answer": "right",
+     "basis": "Điểm a khoản 2 Điều 125 Luật Sở hữu trí tuệ"
     }
    ],
    "explain": "Điều 125, 126."

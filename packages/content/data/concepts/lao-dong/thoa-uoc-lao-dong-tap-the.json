@@ -49,7 +49,7 @@
     "Thỏa ước lao động tập thể quốc gia bắt buộc",
     "Thỏa ước lao động tập thể doanh nghiệp",
     "Thỏa ước lao động tập thể ngành",
-    "Thỏa ước lao động tập thể có nhiều doanh nghiệp"
+    "Thỏa ước lao động tập thể nhiều doanh nghiệp"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 75.",
@@ -71,6 +71,16 @@
     {
      "text": "Ký giữa từng người lao động và người sử dụng lao động",
      "answer": "right"
+    },
+    {
+     "text": "Thỏa ước ký giữa tổ chức đại diện người lao động và nhiều doanh nghiệp trong cùng ngành",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 75 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Hợp đồng ký riêng với từng người lao động, quy định việc làm và tiền lương của người đó",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 13 Bộ luật Lao động 2019"
     }
    ],
    "explain": "Điều 13, 75."
@@ -111,6 +121,18 @@
     "doanh nghiệp, ngành",
     "có lợi hơn"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thỏa ước lao động tập thể là thỏa thuận đạt được thông qua thương lượng tập thể và được các bên ký kết bằng văn bản.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 75 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 75 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-18-VBHN-VPQH-2026-Bo-luat-lao-dong-695336.aspx"
+   }
   }
  ]
 }

@@ -29,10 +29,10 @@
    "level": 1,
    "q": "Điều kiện để tranh chấp được giải quyết bằng Trọng tài là gì?",
    "options": [
-    "Các bên có thỏa thuận trọng tài",
-    "Giá trị tranh chấp trên 1 tỷ",
-    "Một bên là doanh nghiệp nhà nước",
-    "Được Tòa án cho phép"
+    "Các bên đã thỏa thuận chọn Trọng tài giải quyết",
+    "Giá trị tranh chấp lớn hơn 1 tỷ đồng",
+    "Một bên tranh chấp là doanh nghiệp nhà nước",
+    "Được Tòa án nơi có tranh chấp cho phép trước"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 5.",
@@ -47,9 +47,9 @@
    "q": "Các bên có thỏa thuận trọng tài nhưng một bên khởi kiện ra Tòa án. Tòa án xử lý thế nào?",
    "options": [
     "Từ chối thụ lý, trừ khi thỏa thuận trọng tài vô hiệu hoặc không thể thực hiện được",
-    "Thụ lý bình thường",
-    "Chuyển hồ sơ cho Trọng tài",
-    "Hòa giải trước rồi xét xử"
+    "Thụ lý bình thường vì Tòa án có thẩm quyền xét xử mọi tranh chấp trong hợp đồng",
+    "Chuyển hồ sơ cho Trọng tài để giải quyết theo thỏa thuận đã ký giữa các bên",
+    "Hòa giải trước rồi xét xử theo thủ tục tố tụng dân sự, không cần thông báo"
    ],
    "answer": 0,
    "explain": "Điều 6.",
@@ -71,6 +71,16 @@
     {
      "text": "Giải quyết theo đơn khởi kiện, không cần thỏa thuận",
      "answer": "right"
+    },
+    {
+     "text": "Các bên ký thỏa thuận trọng tài để chọn cơ quan trọng tài giải quyết tranh chấp",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 3 Luật Trọng tài thương mại 2010"
+    },
+    {
+     "text": "Các bên không có thỏa thuận trọng tài nên tranh chấp phải đưa ra cơ quan xét xử của Nhà nước",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 5 Luật Trọng tài thương mại 2010"
     }
    ],
    "explain": "Điều 3, 5, 6."
@@ -111,6 +121,18 @@
     "từ chối thụ lý",
     "phương thức"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thỏa thuận trọng tài có thể được lập trước hoặc sau khi xảy ra tranh chấp.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 5 Luật Trọng tài thương mại 2010 (VBHN 60/VBHN-VPQH 2025) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 5 Luật Trọng tài thương mại 2010 (VBHN 60/VBHN-VPQH 2025)",
+    "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-60-VBHN-VPQH-2025-Luat-Trong-tai-thuong-mai-669808.aspx"
+   }
   }
  ]
 }

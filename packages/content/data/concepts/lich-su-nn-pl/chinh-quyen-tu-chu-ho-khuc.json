@@ -30,9 +30,9 @@
    "q": "Theo Toàn thư, Khúc Hạo chiếm giữ châu trị và xưng là gì?",
    "options": [
     "Tiết độ sứ",
-    "Hoàng đế",
-    "Vương",
-    "Thái thú"
+    "Quốc vương",
+    "Đại vương",
+    "Chiêu thảo"
    ],
    "answer": 0,
    "explain": "\"Khúc Hạo chiếm giữ châu trị, xưng là Tiết độ sứ\".",
@@ -47,9 +47,9 @@
    "q": "Ai là tướng của Khúc Hạo đánh đuổi Lý Khắc Chính của Nam Hán?",
    "options": [
     "Dương Đình Nghệ",
-    "Ngô Quyền",
     "Kiều Công Tiễn",
-    "Đinh Công Trứ"
+    "Đinh Công Trứ",
+    "Ngô Quyền Vương"
    ],
    "answer": 0,
    "explain": "\"bị tướng của Khúc Hạo là Dương Đình Nghệ người Ái Châu đánh đuổi\".",
@@ -75,6 +75,16 @@
     {
      "text": "Khúc Thừa Mỹ xin nhà Lương trao tiết việt",
      "answer": "left"
+    },
+    {
+     "text": "Người đứng đầu chiếm giữ châu trị, xưng chức tiết độ sứ, vẫn mang danh nghĩa quan lại của phương Bắc",
+     "answer": "left",
+     "basis": "Đại Việt sử ký toàn thư, Ngoại kỷ quyển V, Kỷ Nam Bắc phân tranh, tờ 17b–18b (laws/lich-su-su-lieu.txt)"
+    },
+    {
+     "text": "Người đứng đầu đặt trăm quan, chế định triều nghi, không nhận chức của phương Bắc",
+     "answer": "right",
+     "basis": "Đại Việt sử ký toàn thư, Ngoại kỷ quyển V, Kỷ nhà Ngô, tờ 20b–21a (laws/lich-su-su-lieu.txt)"
     }
    ],
    "explain": "Toàn thư, Ngoại kỷ quyển V."
@@ -103,9 +113,9 @@
    "q": "Vì sao gọi chính quyền họ Khúc là \"tự chủ\" mà chưa phải nhà nước độc lập hoàn toàn?",
    "options": [
     "Người Việt nắm thực quyền nhưng vẫn mang danh nghĩa chức Tiết độ sứ của triều đình phương Bắc",
-    "Vì họ Khúc là người phương Bắc",
-    "Vì họ Khúc không có quân đội",
-    "Vì Toàn thư không chép về họ Khúc"
+    "Vì họ Khúc là người phương Bắc được cử sang cai trị, nên mọi việc đều theo lệnh của triều đình phương Bắc",
+    "Vì họ Khúc không có quân đội riêng, mọi quyết định quân sự đều phải chờ lệnh của triều đình phương Bắc",
+    "Vì Toàn thư không chép đầy đủ về họ Khúc, nên các sử liệu về họ Khúc đều không còn đáng tin cậy"
    ],
    "answer": 0,
    "explain": "Khúc Hạo \"xưng là Tiết độ sứ\"; Khúc Thừa Mỹ còn xin nhà Lương \"trao tiết việt\": hình thức vẫn lệ thuộc."

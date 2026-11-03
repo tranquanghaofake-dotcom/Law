@@ -32,9 +32,9 @@
    "q": "Theo Toàn thư, năm 971 Lê Hoàn được giao chức gì?",
    "options": [
     "Thập đạo tướng quân",
-    "Định quốc công",
-    "Đô hộ phủ sĩ sư",
-    "Tăng thống"
+    "Đô hộ tướng quân Hán",
+    "Đô hộ phủ Thứ sử Hán",
+    "Tăng thống Phật giáo"
    ],
    "answer": 0,
    "explain": "\"Lê Hoàn làm Thập đạo tướng quân\".",
@@ -77,6 +77,11 @@
     {
      "text": "Năm 980 được tôn lên ngôi, lập nhà Tiền Lê",
      "answer": "right"
+    },
+    {
+     "text": "Người được phong Định quốc công năm 971",
+     "answer": "left",
+     "basis": "Đại Việt sử ký toàn thư, Bản kỷ quyển I, Kỷ nhà Đinh, năm 971, tờ 3b (laws/lich-su-su-lieu.txt)"
     }
    ],
    "explain": "Toàn thư năm 971 và năm 980."

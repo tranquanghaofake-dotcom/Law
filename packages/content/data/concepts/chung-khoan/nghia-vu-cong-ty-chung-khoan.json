@@ -74,6 +74,11 @@
     {
      "text": "Bảo đảm khách hàng có lãi hằng năm",
      "answer": "right"
+    },
+    {
+     "text": "Quản lý tách biệt tài sản của từng khách hàng",
+     "answer": "left",
+     "basis": "Khoản 3 Điều 89 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 1, 6 Điều 89; khoản 1 Điều 91 còn cấm bảo đảm lợi nhuận."
@@ -102,9 +107,9 @@
    "q": "Một bà cụ 70 tuổi, thu nhập từ lương hưu, muốn \"gửi tiền an toàn\". Nhân viên tư vấn bà mua hợp đồng tương lai chỉ số với đòn bẩy cao. Công ty vi phạm nghĩa vụ nào rõ nhất?",
    "options": [
     "Nghĩa vụ bảo đảm tư vấn phù hợp với tình hình tài chính, mục tiêu và khả năng chấp nhận rủi ro của khách hàng",
-    "Nghĩa vụ ưu tiên lệnh của khách hàng",
-    "Nghĩa vụ công bố thông tin định kỳ",
-    "Nghĩa vụ xây dựng cơ sở dữ liệu dự phòng"
+    "Nghĩa vụ ưu tiên lệnh của khách hàng và thực hiện đúng thứ tự lệnh đã nhận, không ưu tiên lệnh riêng",
+    "Nghĩa vụ công bố thông tin định kỳ và đầy đủ cho nhà đầu tư trong thời hạn quy định của pháp luật",
+    "Nghĩa vụ xây dựng cơ sở dữ liệu dự phòng và hệ thống sao lưu cho toàn bộ khách hàng của công ty chứng khoán đang hoạt động"
    ],
    "answer": 0,
    "explain": "Khoản 6 Điều 89.",

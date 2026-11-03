@@ -72,6 +72,16 @@
     {
      "text": "Chào bán thành công cổ phiếu lần đầu ra công chúng",
      "answer": "right"
+    },
+    {
+     "text": "Công ty cổ phần có vốn điều lệ đã góp từ 30 tỷ đồng trở lên và vốn chủ sở hữu từ 30 tỷ đồng",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 32 Luật Chứng khoán 2019"
+    },
+    {
+     "text": "Công ty đã chào bán thành công cổ phiếu lần đầu ra công chúng có đăng ký với Ủy ban",
+     "answer": "right",
+     "basis": "Điểm b khoản 1 Điều 32 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 1 Điều 32."
@@ -100,9 +110,9 @@
    "q": "Công ty cổ phần N có vốn điều lệ đã góp 40 tỷ nhưng lỗ lũy kế khiến vốn chủ sở hữu chỉ còn 20 tỷ; 15% cổ phiếu do 200 nhà đầu tư nhỏ nắm; chưa IPO. Theo luật hiện hành, N có phải công ty đại chúng không?",
    "options": [
     "Không, vì vốn chủ sở hữu chưa đạt 30 tỷ đồng",
-    "Có, vì vốn điều lệ đã góp trên 30 tỷ",
-    "Có, vì có trên 100 nhà đầu tư",
-    "Có, nếu Hội đồng quản trị quyết định"
+    "Có, vì vốn điều lệ đã góp trên 30 tỷ đồng",
+    "Có, vì có hơn 100 nhà đầu tư nhỏ lẻ tham gia",
+    "Có, nếu Hội đồng quản trị quyết định đăng ký"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 1 Điều 32 (sửa đổi bởi Luật 56/2024/QH15) đòi cả vốn chủ sở hữu từ 30 tỷ đồng.",

@@ -30,9 +30,9 @@
    "q": "Đặc điểm nào của áp dụng pháp luật?",
    "options": [
     "Mang tính quyền lực nhà nước, do chủ thể có thẩm quyền tiến hành theo thủ tục luật định",
-    "Mọi cá nhân đều thực hiện được",
-    "Không cần thủ tục",
-    "Tạo ra quy phạm mới"
+    "Do cá nhân tự thực hiện theo ý chí riêng của mình, không cần thẩm quyền của cơ quan nhà nước",
+    "Mang tính hướng dẫn, do cơ quan nhà nước khuyến nghị và không bắt buộc đối với các chủ thể liên quan",
+    "Mang tính tổ chức xã hội, do hội đoàn tự quyết theo điều lệ nội bộ, không cần văn bản"
    ],
    "answer": 0,
    "explain": "VD12."
@@ -43,9 +43,9 @@
    "q": "Khi hai quy phạm cùng điều chỉnh một quan hệ nhưng mâu thuẫn, chọn quy phạm nào?",
    "options": [
     "Quy phạm trong văn bản có giá trị pháp lý cao hơn và được ban hành sau",
-    "Quy phạm ban hành trước",
-    "Quy phạm ngắn hơn",
-    "Tùy ý cơ quan áp dụng"
+    "Quy phạm ban hành trước và có hiệu lực pháp lý thấp hơn nên được ưu tiên áp dụng",
+    "Quy phạm ngắn gọn hơn, dễ thực hiện hơn nên được cơ quan ưu tiên lựa chọn",
+    "Tùy vào lợi ích của cơ quan áp dụng, không có quy định cụ thể nào để tuân theo"
    ],
    "answer": 0,
    "explain": "Khoản 3, 4 Điều 58 Luật BHVBQPPL 2025: áp dụng văn bản có hiệu lực pháp lý cao hơn; nếu cùng một cơ quan ban hành thì áp dụng văn bản ban hành sau."
@@ -63,6 +63,16 @@
     {
      "text": "Hai bên tự nguyện thực hiện hợp đồng đúng thỏa thuận",
      "answer": "right"
+    },
+    {
+     "text": "Cơ quan nhà nước ra quyết định cá biệt giải quyết vụ việc cụ thể khi đương sự không tự thỏa thuận được",
+     "answer": "left",
+     "basis": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), VD12"
+    },
+    {
+     "text": "Người dân tự thanh toán tiền theo đúng hợp đồng mà không cần cơ quan nhà nước can thiệp",
+     "answer": "right",
+     "basis": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), VD12"
     }
    ],
    "explain": "VD12."
@@ -103,6 +113,17 @@
     "quyền lực nhà nước",
     "giai đoạn"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Áp dụng pháp luật là hoạt động của các chủ thể có thẩm quyền căn cứ vào các quy định pháp luật hiện hành để đưa ra quyết định có tính cá biệt nhằm điều chỉnh quan hệ xã hội theo mục tiêu cụ thể.",
+   "answer": true,
+   "explain": "Đúng. Trích định nghĩa của khái niệm — nguồn: Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (Drive HLU/KÌ I NĂM I/LLCNN&PL/TÀI LIỆU ÔN THI LLC: VD8, VD9, VD11, VD12, VD13) và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình.",
+   "source": {
+    "kind": "textbook",
+    "cite": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (Drive HLU/KÌ I NĂM I/LLCNN&PL/TÀI LIỆU ÔN THI LLC: VD8, VD9, VD11, VD12, VD13) và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình"
+   }
   }
  ]
 }

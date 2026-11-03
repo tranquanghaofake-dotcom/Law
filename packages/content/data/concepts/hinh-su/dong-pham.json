@@ -29,8 +29,8 @@
    "q": "Người kích động, dụ dỗ, thúc đẩy người khác thực hiện tội phạm là loại người đồng phạm nào?",
    "options": [
     "Người xúi giục",
-    "Người tổ chức",
-    "Người giúp sức",
+    "Người tổ chức vụ án",
+    "Người giúp sức phạm tội",
     "Người thực hành"
    ],
    "answer": 0,
@@ -74,6 +74,11 @@
     {
      "text": "Đứng canh gác cho người khác trộm",
      "answer": "right"
+    },
+    {
+     "text": "Người lập kế hoạch và điều phối các đồng phạm thực hiện vụ trộm cắp",
+     "answer": "left",
+     "basis": "Khoản 3 Điều 17 Bộ luật Hình sự 2015"
     }
    ],
    "explain": "Khoản 3 Điều 17."
@@ -114,6 +119,18 @@
     "tổ chức",
     "giúp sức"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Phạm tội có tổ chức là hình thức đồng phạm có sự câu kết chặt chẽ giữa những người cùng thực hiện tội phạm.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 17 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 17 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)",
+    "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+   }
   }
  ]
 }

@@ -31,7 +31,7 @@
     "Không, trừ trường hợp quy định tại Điều 31",
     "Có, bất cứ khi nào vi phạm pháp luật",
     "Có, nếu cư trú ở nước ngoài trên 5 năm",
-    "Không bao giờ"
+    "Không bao giờ bị tước quốc tịch, dù ở đâu"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 2.",
@@ -46,9 +46,9 @@
    "q": "Khoản 2 Điều 2 Luật Quốc tịch khẳng định điều gì về các dân tộc?",
    "options": [
     "Mọi thành viên của các dân tộc đều bình đẳng về quyền có quốc tịch Việt Nam",
-    "Dân tộc Kinh được ưu tiên nhập quốc tịch",
-    "Dân tộc thiểu số có thể có hai quốc tịch",
-    "Mỗi dân tộc có quốc tịch riêng"
+    "Dân tộc Kinh được ưu tiên nhập quốc tịch theo quy định",
+    "Dân tộc thiểu số có thể có hai quốc tịch theo nguyện vọng của gia đình",
+    "Mỗi dân tộc có quốc tịch riêng, không thuộc quốc tịch Việt Nam chung"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 2.",
@@ -64,12 +64,22 @@
    "right": "Bảo đảm không bị tước quốc tịch",
    "cases": [
     {
-     "text": "Mỗi cá nhân ở Việt Nam đều có quyền có quốc tịch",
+     "text": "Mỗi cá nhân ở Việt Nam đều được hưởng quyền mang quốc tịch",
      "answer": "left"
     },
     {
      "text": "Chỉ bị tước trong trường hợp Điều 31",
      "answer": "right"
+    },
+    {
+     "text": "Cá nhân được hưởng quyền mang quốc tịch theo quy định của pháp luật Việt Nam",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 2 Luật Quốc tịch Việt Nam 2008"
+    },
+    {
+     "text": "Công dân cư trú ở nước ngoài bị tước quốc tịch vì hành vi gây phương hại nghiêm trọng",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 31 Luật Quốc tịch Việt Nam 2008"
     }
    ],
    "explain": "Khoản 1 Điều 2."

@@ -70,6 +70,16 @@
     {
      "text": "Hình phạt chính, phải chấp hành tại cơ sở giam giữ",
      "answer": "right"
+    },
+    {
+     "text": "Người bị phạt tù không quá 03 năm, nhân thân tốt, Tòa án xét thấy không cần bắt chấp hành hình phạt tù và ấn định thời gian thử thách",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 65 Bộ luật Hình sự 2015"
+    },
+    {
+     "text": "Người bị tuyên phạt tù 05 năm không thuộc trường hợp án treo, phải chấp hành tại trại giam",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 65 Bộ luật Hình sự 2015"
     }
    ],
    "explain": "Điều 32, 65."

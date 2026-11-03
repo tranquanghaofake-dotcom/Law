@@ -29,9 +29,9 @@
    "q": "Chiếm hữu là gì theo khoản 1 Điều 179?",
    "options": [
     "Việc chủ thể nắm giữ, chi phối tài sản trực tiếp hoặc gián tiếp như chủ thể có quyền",
-    "Quyền định đoạt tài sản",
-    "Việc đăng ký quyền sở hữu",
-    "Quyền thừa kế tài sản"
+    "Quyền định đoạt tài sản của chủ sở hữu, bao gồm cả quyền bán và cho thuê tài sản",
+    "Việc đăng ký quyền sở hữu tại cơ quan đăng ký có thẩm quyền ở địa phương",
+    "Quyền thừa kế tài sản của người đã mất, nhận trước khi người đó chết và có di chúc"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 179.",
@@ -46,9 +46,9 @@
    "q": "Việc chiếm hữu của người không phải chủ sở hữu có làm phát sinh quyền sở hữu không?",
    "options": [
     "Không, trừ các trường hợp luật quy định",
-    "Luôn luôn có",
-    "Có sau 1 năm",
-    "Có nếu tài sản dưới 10 triệu"
+    "Luôn luôn có, không cần thêm điều kiện nào",
+    "Có sau một năm chiếm hữu liên tục công khai",
+    "Có nếu tài sản có giá trị dưới mười triệu"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 179.",
@@ -70,6 +70,16 @@
     {
      "text": "Biết rõ là tài sản trộm cắp nhưng vẫn mua rẻ",
      "answer": "right"
+    },
+    {
+     "text": "Người mua xe từ người bán có giấy tờ hợp lệ, không biết xe là tài sản bị lấy trộm",
+     "answer": "left",
+     "basis": "Điều 180 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Người nhặt được điện thoại, biết rõ chủ là ai nhưng cố tình giữ lại",
+     "answer": "right",
+     "basis": "Điều 181 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 180, 181 Bộ luật Dân sự 2015."
@@ -110,6 +120,18 @@
     "ngay tình",
     "liên tục, công khai"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chiếm hữu là việc chủ thể nắm giữ, chi phối tài sản một cách trực tiếp hoặc gián tiếp như chủ thể có quyền đối với tài sản.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 179 Bộ luật Dân sự 2015 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 179 Bộ luật Dân sự 2015",
+    "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+   }
   }
  ]
 }

@@ -48,9 +48,9 @@
    "q": "Theo Điều 1 BLDS 1995, Bộ luật dân sự bảo đảm điều gì trong quan hệ dân sự?",
    "options": [
     "Sự bình đẳng và an toàn pháp lý",
-    "Quyền ưu tiên của Nhà nước",
-    "Sự can thiệp hành chính",
-    "Lợi ích của tập thể trên hết"
+    "Quyền ưu tiên của Nhà nước trên hết",
+    "Sự can thiệp hành chính tùy tiện",
+    "Lợi ích tập thể luôn đứng trên hết"
    ],
    "answer": 0,
    "explain": "Điều 1.",
@@ -72,6 +72,16 @@
     {
      "text": "Bộ luật dân sự đầu tiên pháp điển hóa toàn diện",
      "answer": "right"
+    },
+    {
+     "text": "Văn bản năm 1950 sửa đổi một số quy lệ và chế định trong dân luật cũ theo hướng tiến bộ",
+     "answer": "left",
+     "basis": "Sắc lệnh 97/SL ngày 22/5/1950 — tên văn bản (laws/lich-su-su-lieu.txt)"
+    },
+    {
+     "text": "Điều 1 của bộ luật ban hành năm 1995 nêu nhiệm vụ bảo vệ quyền, lợi ích hợp pháp của cá nhân, tổ chức, lợi ích của Nhà nước, lợi ích công cộng và bảo đảm bình đẳng, an toàn pháp lý trong quan hệ dân sự",
+     "answer": "right",
+     "basis": "Bộ luật Dân sự 1995, Điều 1 (laws/lich-su-su-lieu.txt)"
     }
    ],
    "explain": "Hai mốc của pháp luật dân sự Việt Nam."

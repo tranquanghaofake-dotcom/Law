@@ -47,9 +47,9 @@
    "q": "Tổng Kiểm toán nhà nước chịu trách nhiệm và báo cáo trước ai trong thời gian Quốc hội không họp?",
    "options": [
     "Ủy ban thường vụ Quốc hội",
-    "Chính phủ",
+    "Chính phủ và Thủ tướng",
     "Chủ tịch nước",
-    "Thủ tướng"
+    "Riêng Thủ tướng Chính phủ"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 118.",
@@ -71,6 +71,16 @@
     {
      "text": "Kiểm toán việc quản lý, sử dụng tài chính, tài sản công",
      "answer": "right"
+    },
+    {
+     "text": "Cơ quan do Quốc hội thành lập để tổ chức bầu cử đại biểu Quốc hội",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 117 Hiến pháp 2013"
+    },
+    {
+     "text": "Cơ quan do Quốc hội thành lập hoạt động độc lập và chỉ tuân theo pháp luật khi kiểm toán việc quản lý, sử dụng tài chính, tài sản công",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 118 Hiến pháp 2013"
     }
    ],
    "explain": "Điều 117, 118 Hiến pháp 2013 (Chương X)."
@@ -111,6 +121,18 @@
     "tài chính công",
     "Tổng Kiểm toán"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Kiểm toán nhà nước là cơ quan do Quốc hội thành lập, hoạt động độc lập và chỉ tuân theo pháp luật.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 118 Hiến pháp 2013 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 118 Hiến pháp 2013",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+   }
   }
  ]
 }

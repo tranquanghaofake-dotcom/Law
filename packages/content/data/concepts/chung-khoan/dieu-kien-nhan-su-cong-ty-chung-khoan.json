@@ -73,6 +73,11 @@
     {
      "text": "Phải có bằng thạc sĩ luật",
      "answer": "right"
+    },
+    {
+     "text": "Công ty có Tổng giám đốc (Giám đốc) đủ điều kiện đảm nhiệm",
+     "answer": "left",
+     "basis": "Khoản 5 Điều 74 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 5 Điều 74."

@@ -8,10 +8,10 @@
     {
       "q": "Quyết định hành chính theo Luật Tố tụng hành chính có đặc điểm nào?",
       "options": [
-        "Áp dụng nhiều lần cho mọi chủ thể",
+        "Áp dụng nhiều lần cho mọi chủ thể trong mọi quan hệ xã hội phát sinh",
         "Về vấn đề cụ thể, áp dụng một lần đối với một hoặc một số đối tượng cụ thể",
-        "Do Tòa án ban hành",
-        "Luôn là văn bản quy phạm pháp luật"
+        "Do Tòa án ban hành khi có yêu cầu của đương sự và các bên liên quan",
+        "Luôn là văn bản quy phạm pháp luật có hiệu lực áp dụng lâu dài cho mọi người"
       ],
       "answer": 1,
       "explain": "Khoản 1 Điều 3.",
@@ -34,10 +34,10 @@
     {
       "q": "Chính phủ là cơ quan nào?",
       "options": [
-        "Cơ quan quyền lực nhà nước cao nhất",
+        "Cơ quan quyền lực nhà nước cao nhất theo Hiến pháp, luật và nghị quyết của Quốc hội và Chủ tịch nước",
         "Cơ quan hành chính nhà nước cao nhất, thực hiện quyền hành pháp, là cơ quan chấp hành của Quốc hội",
-        "Cơ quan xét xử cao nhất",
-        "Cơ quan kiểm sát"
+        "Cơ quan xét xử cao nhất của nước Cộng hòa xã hội chủ nghĩa Việt Nam và các tòa án địa phương",
+        "Cơ quan kiểm sát và bảo vệ quyền công tố nhà nước trong mọi vụ án hình sự, dân sự và hành chính"
       ],
       "answer": 1,
       "explain": "Khoản 1 Điều 1.",
@@ -49,8 +49,8 @@
       "options": [
         "Các Bộ, cơ quan ngang Bộ",
         "Các Bộ và UBND cấp tỉnh",
-        "Quốc hội và các Bộ",
-        "Các Tòa án"
+        "Quốc hội và các Bộ ngành",
+        "Các Tòa án nhân dân các cấp"
       ],
       "answer": 0,
       "explain": "Khoản 2 Điều 2.",
@@ -87,9 +87,9 @@
       "q": "Nguyên tắc nào là nguyên tắc trong thi hành công vụ?",
       "options": [
         "Công khai, minh bạch, đúng thẩm quyền và có sự kiểm tra, giám sát",
-        "Ưu tiên lợi ích cơ quan",
-        "Giữ bí mật mọi hoạt động",
-        "Tuân theo ý kiến thủ trưởng trên pháp luật"
+        "Ưu tiên lợi ích cơ quan và cấp trên trực tiếp của mình",
+        "Giữ bí mật mọi hoạt động của cơ quan nhà nước trong mọi trường hợp",
+        "Tuân theo ý kiến của thủ trưởng ngay cả khi trái quy định pháp luật"
       ],
       "answer": 0,
       "explain": "Khoản 3 Điều 2.",
@@ -113,9 +113,9 @@
       "q": "Không đồng ý với quyết định giải quyết khiếu nại lần đầu, người khiếu nại có thể làm gì?",
       "options": [
         "Khiếu nại lần hai hoặc khởi kiện vụ án hành chính",
-        "Chỉ có thể tố cáo",
-        "Không còn quyền nào",
-        "Yêu cầu Quốc hội giải quyết"
+        "Chỉ có thể tố cáo lên cơ quan công an và Viện kiểm sát",
+        "Không còn quyền nào khác và phải chấp hành ngay",
+        "Yêu cầu Quốc hội giải quyết trực tiếp vụ việc này"
       ],
       "answer": 0,
       "explain": "Khoản 1 Điều 7.",
@@ -126,9 +126,9 @@
       "q": "Ai là người tố cáo theo Luật Tố cáo?",
       "options": [
         "Cá nhân thực hiện việc tố cáo",
-        "Cơ quan, tổ chức, cá nhân",
-        "Chỉ cán bộ, công chức",
-        "Chỉ doanh nghiệp"
+        "Cơ quan hoặc tổ chức thực hiện tố cáo",
+        "Cán bộ, công chức đang làm việc",
+        "Doanh nghiệp nhà nước"
       ],
       "answer": 0,
       "explain": "Khoản 4 Điều 2.",

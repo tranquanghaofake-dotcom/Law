@@ -43,9 +43,9 @@
    "q": "Ý định phạm tội chưa thể hiện ra hành vi có phải vi phạm pháp luật không?",
    "options": [
     "Không, vì vi phạm pháp luật phải là hành vi xác định",
-    "Có, vì đã có ý định",
-    "Có, nếu ý định nguy hiểm",
-    "Tùy tòa án"
+    "Có, vì ý định trái pháp luật đã đủ để xử lý người có ý định",
+    "Có, vì đã có ý định và thể hiện thái độ trái pháp luật rõ",
+    "Tùy tòa án quyết định trong từng trường hợp cụ thể"
    ],
    "answer": 0,
    "explain": "VD13: dấu hiệu hành vi."
@@ -63,6 +63,16 @@
     {
      "text": "Trẻ 10 tuổi làm vỡ kính cửa hàng",
      "answer": "right"
+    },
+    {
+     "text": "Người lấy trộm tài sản của người khác, có lỗi và trái pháp luật",
+     "answer": "left",
+     "basis": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), VD13"
+    },
+    {
+     "text": "Người không thực hiện được nghĩa vụ do bão lớn là sự kiện bất khả kháng",
+     "answer": "right",
+     "basis": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), VD13"
     }
    ],
    "explain": "VD13: năng lực trách nhiệm pháp lý."
@@ -103,6 +113,17 @@
     "lỗi",
     "năng lực trách nhiệm pháp lý"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Vi phạm pháp luật là hành vi trái pháp luật, có lỗi, do chủ thể có năng lực trách nhiệm pháp lý thực hiện.",
+   "answer": true,
+   "explain": "Đúng. Trích (một phần) định nghĩa của khái niệm — nguồn: Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (Drive HLU/KÌ I NĂM I/LLCNN&PL/TÀI LIỆU ÔN THI LLC: VD8, VD9, VD11, VD12, VD13) và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình.",
+   "source": {
+    "kind": "textbook",
+    "cite": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (Drive HLU/KÌ I NĂM I/LLCNN&PL/TÀI LIỆU ÔN THI LLC: VD8, VD9, VD11, VD12, VD13) và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình"
+   }
   }
  ]
 }

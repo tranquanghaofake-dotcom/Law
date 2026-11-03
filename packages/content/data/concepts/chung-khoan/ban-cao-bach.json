@@ -28,9 +28,9 @@
    "q": "Theo khoản 23 Điều 4, bản cáo bạch công khai thông tin liên quan đến việc gì?",
    "options": [
     "Chào bán hoặc niêm yết chứng khoán của tổ chức phát hành",
-    "Thanh tra công ty chứng khoán",
-    "Giải thể quỹ đầu tư",
-    "Xử phạt vi phạm hành chính"
+    "Thanh tra công ty chứng khoán và hoạt động quản lý quỹ đầu tư",
+    "Giải thể quỹ đầu tư đại chúng và các quỹ thành viên của công ty",
+    "Xử phạt vi phạm hành chính trong lĩnh vực chứng khoán"
    ],
    "answer": 0,
    "explain": "Khoản 23 Điều 4: \"liên quan đến việc chào bán hoặc niêm yết chứng khoán\".",
@@ -45,9 +45,9 @@
    "q": "Trong thời gian Ủy ban Chứng khoán Nhà nước xem xét hồ sơ, tổ chức phát hành được dùng thông tin gì để thăm dò thị trường?",
    "options": [
     "Chỉ thông tin trong Bản cáo bạch đã gửi Ủy ban, nêu rõ ngày phát hành và giá bán là dự kiến",
-    "Mọi thông tin quảng cáo tự soạn",
-    "Cam kết lợi nhuận tối thiểu cho nhà đầu tư",
-    "Không được dùng bất kỳ thông tin nào"
+    "Thông tin quảng cáo do tổ chức phát hành tự soạn và phát hành rộng rãi cho nhà đầu tư cá nhân",
+    "Cam kết lợi nhuận tối thiểu cho nhà đầu tư và các cổ đông hiện hữu của công ty để thu hút vốn",
+    "Thông tin trong Bản cáo bạch đã được hội đồng quản trị phê duyệt, nhưng chưa gửi cho Ủy ban"
    ],
    "answer": 0,
    "explain": "Điều 24: chỉ được sử dụng trung thực, chính xác các thông tin trong Bản cáo bạch đã gửi Ủy ban; ngày phát hành, giá bán phải nêu là dự kiến.",
@@ -69,6 +69,16 @@
     {
      "text": "Công bố trên 01 tờ báo điện tử hoặc báo in trong 03 số liên tiếp sau khi Giấy chứng nhận có hiệu lực",
      "answer": "right"
+    },
+    {
+     "text": "Tài liệu công khai thông tin chính xác, trung thực về đợt chào bán và rủi ro của tổ chức phát hành",
+     "answer": "left",
+     "basis": "Khoản 23 Điều 4 Luật Chứng khoán 2019"
+    },
+    {
+     "text": "Văn bản được công bố trên phương tiện thông tin sau khi Giấy chứng nhận đăng ký chào bán có hiệu lực",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 25 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 23 Điều 4; khoản 3 Điều 25."

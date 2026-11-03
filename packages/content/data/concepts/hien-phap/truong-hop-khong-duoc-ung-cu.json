@@ -31,7 +31,7 @@
    "options": [
     "Người đang bị khởi tố bị can",
     "Người đã được xóa án tích",
-    "Người đang tạm trú ở địa phương khác",
+    "Người đang tạm trú nơi khác",
     "Người là đảng viên"
    ],
    "answer": 0,
@@ -48,7 +48,7 @@
    "options": [
     "Khi đã được xóa án tích",
     "Ngay sau khi ra tù",
-    "Sau 1 năm kể từ khi chấp hành xong",
+    "Sau 1 năm kể từ khi ra tù",
     "Không bao giờ"
    ],
    "answer": 0,
@@ -75,6 +75,11 @@
     {
      "text": "Bị Tòa án tuyên mất năng lực hành vi dân sự",
      "answer": "left"
+    },
+    {
+     "text": "Người đang bị khởi tố bị can không có tư cách ứng cử đại biểu Quốc hội",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 37 Luật Bầu cử Đại biểu Quốc hội và Đại biểu Hội đồng nhân dân 2015"
     }
    ],
    "explain": "Điều 37 Luật Bầu cử."
@@ -103,9 +108,9 @@
    "q": "Bà C bị xử phạt hành chính vì vi phạm giao thông một tháng trước ngày nộp hồ sơ. Bà C có thuộc trường hợp không được ứng cử không?",
    "options": [
     "Không, vì xử phạt hành chính không thuộc các trường hợp tại Điều 37",
-    "Có, vì đã vi phạm pháp luật",
-    "Có, nếu chưa nộp phạt",
-    "Có, vì chưa được xóa vi phạm"
+    "Có, vì đã vi phạm pháp luật và bị xử phạt hành chính nặng",
+    "Có, nếu chưa nộp phạt và đã bị lập biên bản vi phạm hành chính",
+    "Có, vì chưa được xóa vi phạm hành chính và chưa nộp phạt"
    ],
    "answer": 0,
    "explain": "Điều 37 chỉ nêu biện pháp xử lý hành chính đưa vào cơ sở giáo dục, cai nghiện bắt buộc hoặc giáo dục tại xã, không phải xử phạt hành chính thông thường.",

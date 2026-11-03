@@ -30,9 +30,9 @@
    "q": "Mức phạt vi phạm tối đa theo Luật Thương mại là bao nhiêu?",
    "options": [
     "Không quá 8% giá trị phần nghĩa vụ hợp đồng bị vi phạm",
-    "8% giá trị toàn bộ hợp đồng",
-    "12%",
-    "Không giới hạn"
+    "Không quá 8% giá trị toàn bộ hợp đồng bị vi phạm",
+    "Không quá 12% giá trị phần nghĩa vụ hợp đồng vi phạm",
+    "Không giới hạn mức phạt, do các bên tự thỏa thuận"
    ],
    "answer": 0,
    "explain": "Điều 301.",
@@ -47,9 +47,9 @@
    "q": "Phạt vi phạm được áp dụng khi nào?",
    "options": [
     "Khi trong hợp đồng có thỏa thuận (trừ trường hợp miễn trách nhiệm)",
-    "Mọi trường hợp vi phạm",
-    "Khi Tòa án quyết định",
-    "Khi có thiệt hại"
+    "Mọi trường hợp vi phạm, kể cả khi không có thiệt hại, thỏa thuận",
+    "Khi Tòa án quyết định sau khi xem xét đầy đủ hồ sơ vụ việc",
+    "Khi có thiệt hại xảy ra do lỗi của bên vi phạm gây ra cho bên kia"
    ],
    "answer": 0,
    "explain": "Điều 300.",
@@ -71,6 +71,16 @@
     {
      "text": "Mức phạt do các bên thỏa thuận, không trần chung",
      "answer": "right"
+    },
+    {
+     "text": "Hợp đồng thương mại có điều khoản phạt khi bên mua chậm thanh toán",
+     "answer": "left",
+     "basis": "Điều 300 Luật Thương mại 2005"
+    },
+    {
+     "text": "Bên vi phạm chỉ phải chịu phạt, không phải bồi thường nếu các bên có thỏa thuận như vậy",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 418 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 301 LTM; Điều 418 BLDS."
@@ -111,6 +121,17 @@
     "phần nghĩa vụ",
     "miễn trách nhiệm"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mức phạt đối với vi phạm nghĩa vụ hợp đồng hoặc tổng mức phạt đối với nhiều vi phạm do các bên thỏa thuận trong hợp đồng, nhưng không quá 8% giá trị phần nghĩa vụ hợp đồng bị vi phạm (trừ trường hợp quy định tại Điều 266).",
+   "answer": true,
+   "explain": "Đúng. Điều 301 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 301 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)"
+   }
   }
  ]
 }

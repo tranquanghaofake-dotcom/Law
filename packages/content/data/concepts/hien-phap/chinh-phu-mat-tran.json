@@ -28,9 +28,9 @@
    "q": "Ai được mời tham dự phiên họp Chính phủ khi bàn vấn đề có liên quan theo Điều 101?",
    "options": [
     "Chủ tịch Ủy ban trung ương Mặt trận Tổ quốc Việt Nam và người đứng đầu cơ quan trung ương của tổ chức chính trị - xã hội",
-    "Chủ tịch các tập đoàn kinh tế",
-    "Đại sứ nước ngoài",
-    "Chủ tịch Hội đồng nhân dân tỉnh"
+    "Chủ tịch các tập đoàn kinh tế nhà nước, giám đốc doanh nghiệp lớn và các hiệp hội thương mại tại Việt Nam",
+    "Đại sứ nước ngoài tại Việt Nam, các đại diện ngoại giao và đại diện tổ chức quốc tế đang công tác tại Việt Nam",
+    "Chủ tịch Hội đồng nhân dân tỉnh và Chủ tịch Ủy ban nhân dân tỉnh đang công tác tại địa phương đó"
    ],
    "answer": 0,
    "explain": "Điều 101.",
@@ -45,9 +45,9 @@
    "q": "Thủ tướng thực hiện chế độ báo cáo trước Nhân dân bằng cách nào theo khoản 6 Điều 98?",
    "options": [
     "Thông qua các phương tiện thông tin đại chúng",
-    "Qua thư riêng gửi từng hộ dân",
-    "Qua Tòa án",
-    "Không phải báo cáo"
+    "Qua thư riêng gửi từng hộ dân trong địa bàn",
+    "Qua Tòa án nhân dân các cấp trong nước hiện nay",
+    "Không phải báo cáo trước Nhân dân trong nhiệm kỳ"
    ],
    "answer": 0,
    "explain": "Khoản 6 Điều 98.",
@@ -69,6 +69,16 @@
     {
      "text": "Chủ tịch nước",
      "answer": "right"
+    },
+    {
+     "text": "Người đứng đầu cơ quan trung ương của tổ chức chính trị - xã hội được mời dự phiên họp Chính phủ",
+     "answer": "left",
+     "basis": "Điều 101 Hiến pháp 2013"
+    },
+    {
+     "text": "Chủ tịch nước có quyền dự phiên họp của Chính phủ",
+     "answer": "right",
+     "basis": "Điều 90 Hiến pháp 2013"
     }
    ],
    "explain": "Điều 90, 101."

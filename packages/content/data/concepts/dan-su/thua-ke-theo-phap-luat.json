@@ -30,9 +30,9 @@
    "q": "Ai thuộc hàng thừa kế thứ nhất?",
    "options": [
     "Vợ, chồng, cha mẹ đẻ, cha mẹ nuôi, con đẻ, con nuôi của người chết",
-    "Ông bà nội, ngoại",
-    "Anh, chị, em ruột",
-    "Cô, dì, chú, bác ruột"
+    "Ông bà nội, ngoại, các cháu và người thân khác của người chết",
+    "Anh, chị, em ruột và các cháu ruột của người chết và người thân",
+    "Cô, dì, chú, bác ruột và các anh chị em họ của người chết"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 1 Điều 651.",
@@ -75,6 +75,11 @@
     {
      "text": "Bà ngoại của người chết",
      "answer": "right"
+    },
+    {
+     "text": "Vợ của người đã chết, được hưởng di sản ở diện đầu tiên theo pháp luật",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 651 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Khoản 1 Điều 651."

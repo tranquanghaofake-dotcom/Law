@@ -30,9 +30,9 @@
    "q": "Tòa án áp dụng quy định về thời hiệu khi nào theo khoản 2 Điều 149?",
    "options": [
     "Khi có yêu cầu của một bên hoặc các bên, đưa ra trước khi Tòa sơ thẩm ra bản án, quyết định",
-    "Tòa án luôn tự động áp dụng",
-    "Chỉ ở cấp phúc thẩm",
-    "Khi Viện kiểm sát đề nghị"
+    "Tòa án luôn tự áp dụng thời hiệu ở mọi giai đoạn tố tụng khi thấy cần thiết, cả phúc thẩm",
+    "Chỉ ở cấp phúc thẩm, khi có yêu cầu của một bên và có lý do chính đáng, đầy đủ",
+    "Khi Viện kiểm sát đề nghị bằng văn bản trước khi xét xử ở cấp sơ thẩm và phúc thẩm"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 149.",
@@ -49,7 +49,7 @@
     "Thời hiệu khởi kiện",
     "Thời hiệu hưởng quyền dân sự",
     "Thời hiệu miễn trừ nghĩa vụ",
-    "Thời hạn bảo hành"
+    "Thời hạn bảo hành sản phẩm"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 150.",
@@ -71,6 +71,16 @@
     {
      "text": "Kết thúc thì người có nghĩa vụ được miễn thực hiện nghĩa vụ",
      "answer": "right"
+    },
+    {
+     "text": "Hết thời hạn luật định, chủ thể được hưởng quyền dân sự khi đã đáp ứng đủ điều kiện",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 150 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Người có nghĩa vụ dân sự được miễn thực hiện nghĩa vụ khi hết thời hạn do luật quy định",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 150 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Khoản 1, 2 Điều 150."

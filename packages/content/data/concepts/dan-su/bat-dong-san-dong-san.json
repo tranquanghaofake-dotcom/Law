@@ -29,9 +29,9 @@
    "q": "Động sản được xác định theo cách nào trong Điều 107?",
    "options": [
     "Những tài sản không phải là bất động sản",
-    "Những tài sản di chuyển được",
-    "Những tài sản có giá trị dưới 50 triệu",
-    "Những tài sản phải đăng ký"
+    "Những tài sản gắn liền với đất đai",
+    "Tài sản có giá trị dưới năm mươi triệu",
+    "Những tài sản phải đăng ký quyền sở hữu"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 107.",
@@ -46,8 +46,8 @@
    "q": "Tài sản nào là bất động sản?",
    "options": [
     "Nhà gắn liền với đất",
-    "Xe ô tô",
-    "Cổ phiếu",
+    "Xe ô tô tải trọng lớn",
+    "Cổ phiếu niêm yết",
     "Tiền gửi ngân hàng"
    ],
    "answer": 0,
@@ -74,6 +74,16 @@
     {
      "text": "Xe máy",
      "answer": "right"
+    },
+    {
+     "text": "Căn hộ chung cư đã được cấp giấy chứng nhận quyền sở hữu",
+     "answer": "left",
+     "basis": "Điểm b khoản 1 Điều 107 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Máy móc đặt rời, không gắn liền với đất đai hay nhà ở",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 107 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 107."
@@ -114,6 +124,18 @@
     "không phải bất động sản",
     "thời hiệu"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Động sản là những tài sản không phải là bất động sản.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 107 Bộ luật Dân sự 2015 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 107 Bộ luật Dân sự 2015",
+    "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+   }
   }
  ]
 }

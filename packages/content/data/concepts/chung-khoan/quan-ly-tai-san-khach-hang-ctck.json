@@ -46,9 +46,9 @@
    "q": "Khi công ty chứng khoán phá sản, tài sản của khách hàng được xử lý thế nào?",
    "options": [
     "Hoàn trả cho khách hàng sau khi trừ nghĩa vụ nợ của khách hàng đối với công ty",
-    "Đưa vào tài sản phá sản chia cho mọi chủ nợ",
-    "Chuyển cho Nhà nước quản lý",
-    "Chia đều cho các khách hàng"
+    "Đưa vào tài sản phá sản chia cho mọi chủ nợ theo tỷ lệ tổng nợ của công ty",
+    "Chuyển cho Nhà nước quản lý để bảo đảm an toàn cho nhà đầu tư và khách hàng",
+    "Chia đều cho các khách hàng theo số lượng chứng khoán đang nắm giữ tại công ty"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 88.",
@@ -74,6 +74,11 @@
     {
      "text": "Chứng khoán công ty mua bằng nghiệp vụ tự doanh",
      "answer": "right"
+    },
+    {
+     "text": "Trụ sở làm việc và trang thiết bị của công ty chứng khoán",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 88 Luật Chứng khoán 2019 (không phải tài sản của khách hàng)"
     }
    ],
    "explain": "Khoản 1 Điều 88."

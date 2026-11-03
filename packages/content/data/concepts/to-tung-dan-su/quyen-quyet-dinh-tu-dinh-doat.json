@@ -30,9 +30,9 @@
    "q": "Tòa án thụ lý giải quyết vụ việc dân sự khi nào?",
    "options": [
     "Khi có đơn khởi kiện, đơn yêu cầu của đương sự",
-    "Khi phát hiện vi phạm",
-    "Khi Viện kiểm sát yêu cầu",
-    "Bất cứ khi nào thấy cần"
+    "Khi phát hiện vi phạm trong quá trình tố tụng",
+    "Khi cơ quan báo chí đăng tin về vụ việc",
+    "Bất cứ khi nào thấy cần thiết trong quá trình xét xử"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 5.",
@@ -47,9 +47,9 @@
    "q": "Tòa án có được giải quyết vượt quá phạm vi đơn khởi kiện không?",
    "options": [
     "Không, chỉ giải quyết trong phạm vi đơn",
-    "Có nếu có lợi cho nguyên đơn",
-    "Có nếu phát hiện thêm vi phạm",
-    "Có nếu được Chánh án đồng ý"
+    "Có nếu có lợi cho nguyên đơn trong vụ án",
+    "Có nếu phát hiện thêm vi phạm của bị đơn",
+    "Có nếu được Chánh án đồng ý bằng văn bản"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 5.",
@@ -71,6 +71,16 @@
     {
      "text": "Thỏa thuận trái điều cấm của luật",
      "answer": "right"
+    },
+    {
+     "text": "Đương sự tự thỏa thuận với nhau, không trái điều cấm và không trái đạo đức xã hội",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 5 Bộ luật Tố tụng dân sự 2015"
+    },
+    {
+     "text": "Tòa án tự mở rộng phạm vi xét xử sang yêu cầu mà đương sự không khởi kiện",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 5 Bộ luật Tố tụng dân sự 2015"
     }
    ],
    "explain": "Điều 5."
@@ -111,6 +121,18 @@
     "thay đổi yêu cầu",
     "thỏa thuận"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Đương sự có quyền quyết định việc khởi kiện, yêu cầu Tòa án có thẩm quyền giải quyết vụ việc dân sự.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 5 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 5 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/Thu-tuc-To-tung/Van-ban-hop-nhat-21-VBHN-VPQH-2026-Bo-luat-To-dung-dan-su-696578.aspx"
+   }
   }
  ]
 }

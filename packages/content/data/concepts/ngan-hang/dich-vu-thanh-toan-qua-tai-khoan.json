@@ -49,9 +49,9 @@
    "q": "Tổ chức nào KHÔNG được cung ứng dịch vụ thanh toán qua tài khoản của khách hàng?",
    "options": [
     "Tổ chức tín dụng phi ngân hàng",
-    "Ngân hàng thương mại",
-    "Ngân hàng hợp tác xã",
-    "Ngân hàng 100% vốn nước ngoài"
+    "Ngân hàng thương mại được cấp phép",
+    "Ngân hàng hợp tác xã được cấp phép",
+    "Ngân hàng có 100% vốn nước ngoài"
    ],
    "answer": 0,
    "explain": "Khoản 41 Điều 4.",
@@ -73,6 +73,16 @@
     {
      "text": "Tổ chức không phải ngân hàng kết nối, xử lý dữ liệu giao dịch thanh toán",
      "answer": "right"
+    },
+    {
+     "text": "Ngân hàng thực hiện nhờ thu theo đề nghị của khách hàng qua tài khoản thanh toán",
+     "answer": "left",
+     "basis": "Khoản 14 Điều 4 Luật Các tổ chức tín dụng 2024"
+    },
+    {
+     "text": "Đơn vị trung gian không mở tài khoản cho khách, chỉ truyền dẫn dữ liệu lệnh thanh toán",
+     "answer": "right",
+     "basis": "Khoản 10 Điều 6 Luật Ngân hàng Nhà nước 2010"
     }
    ],
    "explain": "Khoản 14 Điều 4 Luật TCTD; khoản 10 Điều 6 Luật Ngân hàng Nhà nước."

@@ -29,9 +29,9 @@
    "q": "Theo khoản 2 Điều 164, chủ sở hữu có quyền yêu cầu Tòa án làm gì?",
    "options": [
     "Buộc người xâm phạm trả lại tài sản, chấm dứt hành vi cản trở và bồi thường thiệt hại",
-    "Tịch thu tài sản của người xâm phạm",
-    "Xử lý hình sự ngay người xâm phạm",
-    "Cấp lại giấy chứng nhận"
+    "Tịch thu tài sản của người xâm phạm và nộp toàn bộ vào ngân sách nhà nước",
+    "Xử lý hình sự ngay người xâm phạm, không cần yêu cầu bồi thường gì thêm nữa",
+    "Cấp lại giấy chứng nhận quyền sở hữu cho người đang chiếm giữ tài sản tranh chấp"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 164.",
@@ -46,9 +46,9 @@
    "q": "Nhà nước trưng mua, trưng dụng tài sản của cá nhân phải đáp ứng điều kiện gì?",
    "options": [
     "Thật cần thiết vì lý do luật định và có bồi thường theo giá thị trường",
-    "Bất cứ khi nào Nhà nước cần",
-    "Không cần bồi thường",
-    "Chỉ cần thông báo trước"
+    "Bất cứ khi nào Nhà nước cần, không cần có lý do cụ thể nào và thông báo",
+    "Không cần bồi thường, vì lợi ích chung của xã hội luôn được đặt lên trên",
+    "Chỉ cần thông báo trước cho chủ sở hữu, không cần có văn bản quyết định"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 163.",
@@ -70,6 +70,16 @@
     {
      "text": "Khởi kiện đòi lại xe bị chiếm giữ",
      "answer": "right"
+    },
+    {
+     "text": "Chủ nhà đặt biển cấm và rào chắn hợp pháp để ngăn người lạ vào đất của mình",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 164 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Chủ đất làm đơn yêu cầu Tòa án buộc người chiếm giữ trái phép trả lại đất",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 164 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 164."
@@ -110,6 +120,18 @@
     "trả lại tài sản",
     "bồi thường"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Không ai có thể bị hạn chế, bị tước đoạt trái luật quyền sở hữu, quyền khác đối với tài sản.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 163 Bộ luật Dân sự 2015 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 163 Bộ luật Dân sự 2015",
+    "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+   }
   }
  ]
 }

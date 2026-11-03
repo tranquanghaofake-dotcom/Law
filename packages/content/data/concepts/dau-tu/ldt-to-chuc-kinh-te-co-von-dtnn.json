@@ -30,9 +30,9 @@
    "q": "Tổ chức kinh tế có vốn đầu tư nước ngoài là gì?",
    "options": [
     "Tổ chức kinh tế có nhà đầu tư nước ngoài là thành viên hoặc cổ đông",
-    "Tổ chức có trên 50% vốn nước ngoài",
-    "Tổ chức thành lập ở nước ngoài",
-    "Tổ chức vay vốn nước ngoài"
+    "Tổ chức có trên 50% vốn nước ngoài và có trụ sở ở Việt Nam",
+    "Tổ chức thành lập ở nước ngoài và hoạt động tại Việt Nam theo luật",
+    "Tổ chức vay vốn nước ngoài để thực hiện dự án đầu tư tại Việt Nam"
    ],
    "answer": 0,
    "explain": "Khoản 22 Điều 3.",
@@ -47,9 +47,9 @@
    "q": "Tổ chức kinh tế phải thực hiện thủ tục như nhà đầu tư nước ngoài khi nào (điểm a khoản 1 Điều 20)?",
    "options": [
     "Có nhà đầu tư nước ngoài nắm giữ trên 50% vốn điều lệ",
-    "Có bất kỳ cổ đông nước ngoài nào",
-    "Có giám đốc người nước ngoài",
-    "Có vay vốn nước ngoài"
+    "Có bất kỳ cổ đông nước ngoài nào, dù tỷ lệ góp vốn nhỏ",
+    "Có giám đốc người nước ngoài điều hành hoạt động trong công ty",
+    "Có vay vốn nước ngoài để thực hiện dự án đầu tư tại Việt Nam"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 1 Điều 20.",
@@ -71,6 +71,16 @@
     {
      "text": "Công ty có nhà đầu tư nước ngoài giữ 20% vốn điều lệ",
      "answer": "right"
+    },
+    {
+     "text": "Công ty hợp danh có đa số thành viên hợp danh là cá nhân nước ngoài",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 20 Luật Đầu tư 2025"
+    },
+    {
+     "text": "Công ty cổ phần có nhà đầu tư nước ngoài sở hữu 30% vốn điều lệ",
+     "answer": "right",
+     "basis": "Điểm a khoản 1 Điều 20 Luật Đầu tư 2025 (dưới 50% vốn điều lệ)"
     }
    ],
    "explain": "Khoản 1, 2 Điều 20."

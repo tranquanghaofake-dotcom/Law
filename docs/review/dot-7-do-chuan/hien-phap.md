@@ -1,0 +1,318 @@
+# Đợt 7 — độ chuẩn: hien-phap
+
+## Tình huống Phân biệt mới (haiku-1)
+
+Thêm tình huống (câu `pair`) cho các khái niệm còn dưới 4 tình huống; mỗi tình huống có trường `basis` đối chiếu với `packages/content/data/laws/`.
+
+Số khái niệm: 93; số tình huống thêm: 177.
+
+| Khái niệm | Tình huống mới | Bên | Căn cứ |
+|---|---|---|---|
+| bai-nhiem-dai-bieu | Cử tri bỏ phiếu chọn người để trở thành đại biểu Quốc hội trong cuộc bầu cử | Trái: Bầu cử | Khoản 1 Điều 7 Hiến pháp 2013 |
+| bai-nhiem-dai-bieu | Cử tri rút sự tín nhiệm đối với đại biểu vì đại biểu không còn xứng đáng với sự tín nhiệm | Phải: Bãi nhiệm | Khoản 2 Điều 7 Hiến pháp 2013 |
+| bao-ve-hien-phap | Cơ quan nhà nước thực hiện quyền lực do Nhân dân giao đúng theo Hiến pháp | Trái: Trách nhiệm bảo vệ Hiến pháp | Khoản 2 Điều 2 Hiến pháp 2013 |
+| bao-ve-hien-phap | Luật do Quốc hội ban hành phải phù hợp với Hiến pháp | Phải: Hiệu lực pháp lý cao nhất | Khoản 2 Điều 119 Hiến pháp 2013 |
+| bao-ve-moi-truong | Mỗi người có nghĩa vụ bảo vệ môi trường | Trái: Điều 43 (quyền, nghĩa vụ) | Điều 43 Hiến pháp 2013 |
+| bao-ve-moi-truong | Nhà nước có chính sách bảo vệ môi trường và quản lý hiệu quả tài nguyên thiên nhiên | Phải: Điều 63 (trách nhiệm Nhà nước) | Khoản 1 Điều 63 Hiến pháp 2013 |
+| bat-kha-xam-pham-than-the | Mọi người có quyền sống và tính mạng được pháp luật bảo hộ | Trái: Điều 19 | Điều 19 Hiến pháp 2013 |
+| bat-kha-xam-pham-than-the | Không ai bị bắt nếu không có quyết định của Tòa án hoặc phê chuẩn của Viện kiểm sát, trừ trường hợp quả tang | Phải: Điều 20 | Khoản 2 Điều 20 Hiến pháp 2013 |
+| bieu-quyet-thong-qua-luat | Quốc hội thông qua nghị quyết về kế hoạch phát triển kinh tế – xã hội | Trái: Quá nửa tổng số đại biểu | Khoản 1 Điều 85 Hiến pháp 2013 |
+| bieu-quyet-thong-qua-luat | Quốc hội quyết định rút ngắn nhiệm kỳ của Quốc hội | Phải: Ít nhất hai phần ba tổng số đại biểu | Khoản 1 Điều 85 Hiến pháp 2013 |
+| binh-dang-truoc-phap-luat | Người nước ngoài đang sinh sống tại Việt Nam cũng được bình đẳng trước pháp luật | Phải: Hiến pháp 2013 | Khoản 1 Điều 16 Hiến pháp 2013 |
+| binh-dang-truoc-phap-luat | Mọi người đều bình đẳng trước pháp luật khi bị xét xử về cùng một hành vi | Phải: Hiến pháp 2013 | Khoản 1 Điều 16 Hiến pháp 2013 |
+| bo-phieu-tin-nhiem | Chủ tịch nước do Quốc hội bầu có thể bị Quốc hội bỏ phiếu tín nhiệm | Trái: Được Quốc hội bỏ phiếu tín nhiệm | Khoản 8 Điều 70 Hiến pháp 2013 |
+| bo-phieu-tin-nhiem | Giám đốc Sở Công Thương của một tỉnh bị đưa ra bỏ phiếu tín nhiệm tại Quốc hội | Phải: Không thuộc đối tượng | Khoản 8 Điều 70 Hiến pháp 2013 (không phải người do Quốc hội bầu hoặc phê chuẩn) |
+| bo-truong-trach-nhiem | Bộ trưởng chịu trách nhiệm cá nhân về ngành, lĩnh vực được phân công phụ trách | Trái: Trách nhiệm cá nhân của Bộ trưởng | Khoản 4 Điều 95 Hiến pháp 2013 |
+| bo-truong-trach-nhiem | Chính phủ cùng chịu trách nhiệm về quyết định chung được thông qua theo đa số | Phải: Trách nhiệm tập thể | Điều 95 Hiến pháp 2013 (chế độ làm việc tập thể) |
+| cap-chinh-quyen-dia-phuong | Thành phố trực thuộc trung ương là một đơn vị hành chính cấp tỉnh | Trái: Đơn vị hành chính | Khoản 1 Điều 110 Hiến pháp 2013 (sửa đổi) |
+| cap-chinh-quyen-dia-phuong | Hội đồng nhân dân được bầu ở mỗi cấp chính quyền địa phương | Phải: Cấp chính quyền địa phương | Khoản 2 Điều 111 Hiến pháp 2013 |
+| chat-van-hoi-dong-nhan-dan | Đại biểu Hội đồng nhân dân chất vấn Chủ tịch Ủy ban nhân dân cấp huyện | Trái: Đại biểu Hội đồng nhân dân chất vấn | Khoản 2 Điều 115 Hiến pháp 2013 |
+| chat-van-hoi-dong-nhan-dan | Đại biểu Quốc hội chất vấn Thủ tướng Chính phủ tại kỳ họp Quốc hội | Phải: Đại biểu Quốc hội chất vấn | Khoản 1 Điều 80 Hiến pháp 2013 |
+| chat-van | Đại biểu Quốc hội đặt câu hỏi với Bộ trưởng về việc thực hiện chính sách, người bị hỏi phải trả lời | Trái: Chất vấn | Khoản 1 và khoản 2 Điều 80 Hiến pháp 2013 |
+| chat-van | Đại biểu Quốc hội nêu câu hỏi với Chủ tịch Quốc hội về công việc của Quốc hội trước kỳ họp | Trái: Chất vấn | Khoản 1 Điều 80 Hiến pháp 2013 |
+| chinh-phu-mat-tran | Người đứng đầu cơ quan trung ương của tổ chức chính trị - xã hội được mời dự phiên họp Chính phủ | Trái: Được mời dự phiên họp Chính phủ khi bàn vấn đề liên quan | Điều 101 Hiến pháp 2013 |
+| chinh-phu-mat-tran | Chủ tịch nước có quyền dự phiên họp của Chính phủ | Phải: Có quyền dự phiên họp Chính phủ | Điều 90 Hiến pháp 2013 |
+| chinh-phu-vi-tri | Chính phủ chịu trách nhiệm trước Quốc hội và báo cáo công tác trước Quốc hội | Trái: Cơ quan chấp hành của Quốc hội | Điều 94 Hiến pháp 2013 |
+| chinh-phu-vi-tri | Thủ tướng lãnh đạo hệ thống hành chính nhà nước từ trung ương đến địa phương | Phải: Cơ quan hành chính nhà nước cao nhất | Khoản 2 Điều 98 Hiến pháp 2013 |
+| chinh-quyen-dia-phuong-mat-tran | Người đứng đầu tổ chức chính trị - xã hội ở trung ương được mời dự phiên họp Chính phủ | Trái: Trung ương (Điều 101) | Điều 101 Hiến pháp 2013 |
+| chinh-quyen-dia-phuong-mat-tran | Chính quyền địa phương thông báo tình hình địa phương cho Mặt trận Tổ quốc | Phải: Địa phương (Điều 116) | Khoản 1 Điều 116 Hiến pháp 2013 |
+| chu-quyen-nhan-dan | Quyền lực nhà nước được phân công, phối hợp, kiểm soát giữa các cơ quan nhà nước | Phải: Quyền lực nhà nước thống nhất | Khoản 3 Điều 2 Hiến pháp 2013 |
+| chu-tich-nuoc-bau-nhiem-ky | Chủ tịch nước do Quốc hội bầu trong số đại biểu Quốc hội | Trái: Chủ tịch nước | Điều 87 Hiến pháp 2013 |
+| chu-tich-nuoc-bau-nhiem-ky | Thủ tướng Chính phủ do Quốc hội bầu trong số đại biểu Quốc hội | Phải: Chính phủ | Khoản 1 Điều 98 Hiến pháp 2013 |
+| chu-tich-nuoc-doi-ngoai | Chủ tịch nước tiếp nhận đại sứ đặc mệnh toàn quyền của nước ngoài | Trái: Chủ tịch nước | Khoản 6 Điều 88 Hiến pháp 2013 |
+| chu-tich-nuoc-doi-ngoai | Chủ tịch nước bổ nhiệm, miễn nhiệm đại sứ đặc mệnh toàn quyền căn cứ nghị quyết của Ủy ban thường vụ Quốc hội | Trái: Chủ tịch nước | Khoản 6 Điều 88 Hiến pháp 2013 |
+| chu-tich-nuoc-doi-ngoai | Chủ tịch nước đại diện nước về đối ngoại | Trái: Chủ tịch nước | Điều 86 Hiến pháp 2013 |
+| chu-tich-nuoc-lap-phap | Chủ tịch nước công bố luật do Quốc hội thông qua, không đề nghị xem xét lại luật | Trái: Luật | Khoản 1 Điều 88 Hiến pháp 2013 |
+| chu-tich-nuoc-lap-phap | Chủ tịch nước đề nghị Ủy ban thường vụ Quốc hội xem xét lại pháp lệnh trong thời hạn mười ngày | Phải: Pháp lệnh | Khoản 1 Điều 88 Hiến pháp 2013 |
+| chu-tich-nuoc-nhan-su | Quốc hội bầu Viện trưởng Viện kiểm sát nhân dân tối cao theo đề nghị của Chủ tịch nước | Trái: Quốc hội bầu (theo đề nghị Chủ tịch nước) | Khoản 3 Điều 88 Hiến pháp 2013 |
+| chu-tich-nuoc-nhan-su | Quốc hội bầu Thủ tướng Chính phủ theo đề nghị của Chủ tịch nước | Trái: Quốc hội bầu (theo đề nghị Chủ tịch nước) | Khoản 2 Điều 88 Hiến pháp 2013 |
+| chu-tich-nuoc-quan-he-co-quan | Chủ tịch nước chịu trách nhiệm và báo cáo công tác trước Quốc hội | Trái: Chịu trách nhiệm trước | Điều 87 Hiến pháp 2013 |
+| chu-tich-nuoc-quan-he-co-quan | Chính phủ báo cáo công tác trước Chủ tịch nước | Phải: Chỉ báo cáo công tác trước | Điều 94 Hiến pháp 2013 |
+| chu-tich-nuoc-quoc-phong | Chủ tịch nước giữ chức Chủ tịch Hội đồng quốc phòng và an ninh | Trái: Chủ tịch nước quyết định | Khoản 5 Điều 88 Hiến pháp 2013 |
+| chu-tich-nuoc-quoc-phong | Chủ tịch nước công bố quyết định của Quốc hội về việc tuyên bố tình trạng chiến tranh | Phải: Chủ tịch nước công bố căn cứ nghị quyết | Khoản 5 Điều 88 Hiến pháp 2013 |
+| chu-tich-nuoc-quoc-tich-khen-thuong | Chủ tịch nước quyết định cho nhập quốc tịch Việt Nam | Trái: Đặc xá | Khoản 4 Điều 88 Hiến pháp 2013 |
+| chu-tich-nuoc-quoc-tich-khen-thuong | Quốc hội quyết định đại xá cho người phạm tội | Phải: Đại xá | Khoản 11 Điều 70 Hiến pháp 2013 |
+| chu-tich-nuoc-vi-tri | Chủ tịch nước thay mặt nước Cộng hòa xã hội chủ nghĩa Việt Nam về đối nội và đối ngoại | Trái: Chủ tịch nước | Điều 86 Hiến pháp 2013 |
+| chu-tich-nuoc-vi-tri | Thủ tướng Chính phủ chịu trách nhiệm trước Quốc hội về hoạt động của Chính phủ | Phải: Thủ tướng Chính phủ | Khoản 2 Điều 98 Hiến pháp 2013 |
+| co-cau-chinh-phu | Bộ trưởng là thành viên Chính phủ | Trái: Thành viên Chính phủ | Khoản 1 Điều 95 Hiến pháp 2013 |
+| co-cau-chinh-phu | Chánh án Tòa án nhân dân tỉnh không thuộc thành phần Chính phủ | Phải: Không phải thành viên Chính phủ | Khoản 1 Điều 95 Hiến pháp 2013 |
+| cong-dan-viet-nam | Công dân Việt Nam đủ mười tám tuổi trở lên có quyền bầu cử vào Quốc hội | Trái: Công dân Việt Nam | Điều 27 Hiến pháp 2013 |
+| cong-dan-viet-nam | Người nước ngoài không có quyền bầu cử đại biểu Quốc hội của Việt Nam | Phải: Người nước ngoài | Điều 27 Hiến pháp 2013 |
+| dai-bieu-hoi-dong-nhan-dan | Đại biểu Hội đồng nhân dân liên hệ chặt chẽ với cử tri địa phương, chịu sự giám sát của cử tri | Trái: Đại biểu Hội đồng nhân dân | Khoản 1 Điều 115 Hiến pháp 2013 |
+| dai-bieu-hoi-dong-nhan-dan | Đại biểu Quốc hội thu thập và phản ánh trung thực ý kiến, nguyện vọng của cử tri | Phải: Đại biểu Quốc hội | Khoản 2 Điều 79 Hiến pháp 2013 |
+| dang-cong-san-lanh-dao | Tổ chức của Đảng và đảng viên hoạt động trong khuôn khổ Hiến pháp và pháp luật | Trái: Đảng Cộng sản Việt Nam | Khoản 3 Điều 4 Hiến pháp 2013 |
+| dang-cong-san-lanh-dao | Quốc hội thực hiện quyền lập hiến, quyền lập pháp và quyết định các vấn đề quan trọng của đất nước | Phải: Quốc hội | Điều 69 Hiến pháp 2013 |
+| danh-sach-cu-tri | Người mất năng lực hành vi dân sự theo quyết định của Tòa án | Phải: Không được ghi tên | Khoản 1 Điều 30 Luật Bầu cử Đại biểu Quốc hội và Đại biểu Hội đồng nhân dân 2015 |
+| danh-sach-cu-tri | Người đang chấp hành hình phạt tù mà không được hưởng án treo | Phải: Không được ghi tên | Khoản 1 Điều 30 Luật Bầu cử Đại biểu Quốc hội và Đại biểu Hội đồng nhân dân 2015 |
+| doc-lap-xet-xu | Thẩm phán và Hội thẩm xét xử độc lập, chỉ tuân theo pháp luật | Trái: Phù hợp nguyên tắc độc lập xét xử | Khoản 2 Điều 103 Hiến pháp 2013 |
+| doc-lap-xet-xu | Cơ quan, tổ chức, cá nhân can thiệp vào việc xét xử của Thẩm phán | Phải: Vi phạm | Khoản 2 Điều 103 Hiến pháp 2013 |
+| doi-tuong-dieu-chinh-luat-hien-phap | Tổ chức và hoạt động của Quốc hội, Chính phủ và các cơ quan nhà nước ở trung ương | Trái: Thuộc đối tượng luật Hiến pháp | Giáo trình Luật Hiến pháp (Chương 1, đối tượng điều chỉnh) |
+| doi-tuong-dieu-chinh-luat-hien-phap | Quan hệ mua bán hàng hóa giữa hai doanh nghiệp, do luật thương mại điều chỉnh | Phải: Thuộc ngành luật khác | Giáo trình Luật Hiến pháp (Chương 1, đối tượng điều chỉnh) |
+| don-vi-bau-cu | Đơn vị bầu cử đại biểu Quốc hội được ấn định theo số dân trong từng tỉnh, thành phố | Trái: Đơn vị bầu cử đại biểu Quốc hội | Khoản 2 Điều 10 Luật Bầu cử Đại biểu Quốc hội và Đại biểu Hội đồng nhân dân 2015 |
+| don-vi-bau-cu | Đơn vị bầu cử đại biểu Hội đồng nhân dân cấp xã được chia trong phạm vi xã, phường, đặc khu | Phải: Đơn vị bầu cử đại biểu Hội đồng nhân dân | Khoản 3 Điều 10 Luật Bầu cử Đại biểu Quốc hội và Đại biểu Hội đồng nhân dân 2015 |
+| don-vi-hanh-chinh-hai-cap | Tỉnh được chia thành huyện, thị xã và thành phố thuộc tỉnh theo Hiến pháp 2013 bản gốc | Trái: Mô hình theo Hiến pháp 2013 (bản gốc) | Điều 110 Hiến pháp 2013 (bản gốc, trước sửa đổi năm 2025) |
+| don-vi-hanh-chinh-hai-cap | Đơn vị hành chính cấp tỉnh gồm tỉnh và thành phố trực thuộc trung ương | Phải: Mô hình hiện hành (sau NQ 203/2025) | Khoản 1 Điều 110 Hiến pháp 2013 (sửa đổi) |
+| don-vi-hanh-chinh-kinh-te-dac-biet | Đơn vị hành chính - kinh tế đặc biệt được tổ chức theo nghị quyết của Quốc hội | Trái: Quốc hội quyết định | Khoản 2 Điều 110 Hiến pháp 2013 |
+| don-vi-hanh-chinh-kinh-te-dac-biet | Ủy ban thường vụ Quốc hội quyết định điều chỉnh địa giới đơn vị hành chính cấp xã | Phải: Ủy ban thường vụ Quốc hội quyết định (theo Điều 74 bản 2013) | Điều 74 Hiến pháp 2013 (theo bản 2013) |
+| hien-phap-1959 | Hội đồng Chính phủ là cơ quan hành chính Nhà nước cao nhất của nước Việt Nam dân chủ cộng hòa | Phải: Hiến pháp 1959 | Điều 71 Hiến pháp 1959 (hien-phap-lich-su.txt) |
+| hien-phap-1959 | Hội đồng Chính phủ chịu trách nhiệm và báo cáo công tác trước Quốc hội | Phải: Hiến pháp 1959 | Điều 71 Hiến pháp 1959 (hien-phap-lich-su.txt) |
+| hien-phap-1992 | Hiến pháp 2013 quy định Chủ tịch nước là người đứng đầu Nhà nước | Phải: Hiến pháp 2013 | Điều 86 Hiến pháp 2013 |
+| hien-phap | Hiến pháp là luật cơ bản của Nhà nước, quy định chế độ chính trị và chế độ kinh tế | Trái: Hiến pháp | Khoản 1 Điều 119 Hiến pháp 2013 |
+| hien-phap | Văn bản pháp luật khác trái với Hiến pháp không có hiệu lực pháp luật | Phải: Hiệu lực pháp lý cao nhất | Khoản 2 Điều 119 Hiến pháp 2013 |
+| hiep-thuong-gioi-thieu-ung-cu | Mặt trận Tổ quốc tổ chức hiệp thương để lựa chọn, giới thiệu người ứng cử đại biểu | Trái: Mặt trận Tổ quốc | Khoản 5 Điều 4 Luật Bầu cử Đại biểu Quốc hội và Đại biểu Hội đồng nhân dân 2015 |
+| hiep-thuong-gioi-thieu-ung-cu | Ủy ban thường vụ Quốc hội quyết định số lượng đại biểu Quốc hội được bầu theo đơn vị | Phải: Ủy ban Thường vụ Quốc hội | Khoản 1 và khoản 2 Điều 10 Luật Bầu cử Đại biểu Quốc hội và Đại biểu Hội đồng nhân dân 2015 |
+| hieu-luc-ban-an | Mọi cơ quan, tổ chức, cá nhân phải tôn trọng bản án có hiệu lực pháp luật của Tòa án | Trái: Phải tôn trọng | Điều 106 Hiến pháp 2013 |
+| hieu-luc-ban-an | Cơ quan, tổ chức, cá nhân hữu quan phải nghiêm chỉnh chấp hành bản án có hiệu lực | Phải: Phải nghiêm chỉnh chấp hành | Điều 106 Hiến pháp 2013 |
+| hieu-luc-phap-ly-toi-cao | Văn bản pháp luật khác trái với Hiến pháp phải được bãi bỏ | Trái: Hiệu lực pháp lý cao nhất | Khoản 2 Điều 119 Hiến pháp 2013 |
+| hieu-luc-phap-ly-toi-cao | Hiến pháp là luật cơ bản, có hiệu lực pháp lý cao nhất trong hệ thống pháp luật | Phải: Hiến pháp | Khoản 1 Điều 119 Hiến pháp 2013 |
+| hoi-dong-bau-cu-quoc-gia | Hội đồng bầu cử quốc gia do Quốc hội thành lập để tổ chức bầu cử đại biểu Quốc hội | Trái: Bầu cử đại biểu Quốc hội | Khoản 1 Điều 117 Hiến pháp 2013 |
+| hoi-dong-bau-cu-quoc-gia | Hội đồng bầu cử quốc gia chỉ đạo, hướng dẫn công tác bầu cử đại biểu Hội đồng nhân dân | Phải: Bầu cử đại biểu Hội đồng nhân dân | Khoản 1 Điều 117 Hiến pháp 2013 |
+| hoi-dong-dan-toc-uy-ban | Hội đồng dân tộc thẩm tra dự án luật liên quan đến chính sách dân tộc | Trái: Hội đồng dân tộc | Khoản 2 Điều 76 Hiến pháp 2013 |
+| hoi-dong-dan-toc-uy-ban | Ủy ban của Quốc hội có Chủ nhiệm do Quốc hội bầu | Phải: Ủy ban của Quốc hội | Khoản 1 Điều 76 Hiến pháp 2013 |
+| hoi-dong-quoc-phong-an-ninh | Hội đồng quốc phòng và an ninh gồm Chủ tịch, Phó Chủ tịch và các Ủy viên | Trái: Hội đồng quốc phòng và an ninh | Khoản 1 Điều 89 Hiến pháp 2013 |
+| hoi-dong-quoc-phong-an-ninh | Chủ tịch nước quyết định phong, thăng quân hàm cấp tướng | Phải: Chủ tịch nước | Khoản 5 Điều 88 Hiến pháp 2013 |
+| hoi-tham-tham-gia-xet-xu | Thẩm phán và Hội thẩm cùng xét xử sơ thẩm vụ án dân sự thông thường | Trái: Có Hội thẩm tham gia | Khoản 1 Điều 103 Hiến pháp 2013 |
+| hoi-tham-tham-gia-xet-xu | Xét xử theo thủ tục rút gọn không có Hội thẩm tham gia | Phải: Không có Hội thẩm | Khoản 1 Điều 103 Hiến pháp 2013 |
+| ke-thua-lap-hien | Hiến pháp 1959 là bản Hiến pháp của thời kỳ dân chủ nhân dân, ghi nhận các thắng lợi cách mạng | Trái: Hiến pháp 1946 | Lời nói đầu Hiến pháp 1959 (hien-phap-lich-su.txt) |
+| ke-thua-lap-hien | Hiến pháp 2013 kế thừa và phát triển các bản Hiến pháp trước đó | Phải: Hiến pháp 2013 | Lời nói đầu Hiến pháp 2013 |
+| kiem-toan-nha-nuoc | Hội đồng bầu cử quốc gia do Quốc hội thành lập để tổ chức bầu cử đại biểu Quốc hội | Trái: Hội đồng bầu cử quốc gia | Khoản 1 Điều 117 Hiến pháp 2013 |
+| kiem-toan-nha-nuoc | Kiểm toán nhà nước hoạt động độc lập và chỉ tuân theo pháp luật | Phải: Kiểm toán nhà nước | Khoản 1 Điều 118 Hiến pháp 2013 |
+| kinh-te-thi-truong-dinh-huong-xhcn | Nhà nước phát triển nền kinh tế hàng hoá nhiều thành phần theo cơ chế thị trường có sự quản lý | Trái: Hiến pháp 1992 | Điều 15 Hiến pháp 1992 (hien-phap-lich-su.txt) |
+| kinh-te-thi-truong-dinh-huong-xhcn | Các thành phần kinh tế đều là bộ phận cấu thành quan trọng của nền kinh tế quốc dân | Phải: Hiến pháp 2013 | Khoản 2 Điều 51 Hiến pháp 2013 |
+| lanh-dao-tap-trung-vien-kiem-sat | Viện kiểm sát nhân dân cấp dưới chịu sự lãnh đạo của Viện trưởng Viện kiểm sát cấp trên | Trái: Viện kiểm sát | Khoản 1 Điều 109 Hiến pháp 2013 |
+| lanh-dao-tap-trung-vien-kiem-sat | Tòa án nhân dân không có cơ quan cấp trên nào can thiệp vào việc xét xử vụ án | Phải: Tòa án | Khoản 2 Điều 103 Hiến pháp 2013 |
+| ngan-sach-nha-nuoc | Quốc hội quyết định dự toán ngân sách nhà nước | Trái: Quốc hội | Khoản 4 Điều 70 Hiến pháp 2013 |
+| ngan-sach-nha-nuoc | Quốc hội quyết định phân chia các khoản thu và nhiệm vụ chi giữa ngân sách trung ương và địa phương | Trái: Quốc hội | Khoản 4 Điều 70 Hiến pháp 2013 |
+| nganh-luat-hien-phap | Quy phạm pháp luật Hiến pháp điều chỉnh quan hệ về chế độ chính trị và quyền con người | Trái: Ngành luật Hiến pháp | Giáo trình Luật Hiến pháp (Chương 1, ngành luật Hiến pháp) |
+| nganh-luat-hien-phap | Học thuyết và quan điểm của các nhà lý luận về Hiến pháp, không phải quy phạm pháp luật | Phải: Khoa học luật Hiến pháp | Giáo trình Luật Hiến pháp (Chương 1, khoa học luật Hiến pháp) |
+| ngay-bau-cu | Ủy ban bầu cử công bố ngày bầu cử chậm nhất 115 ngày trước ngày bầu cử | Trái: Chậm nhất 115 ngày trước ngày bầu cử | Điều 5 Luật Bầu cử Đại biểu Quốc hội và Đại biểu Hội đồng nhân dân 2015 |
+| ngay-bau-cu | Công bố số đơn vị bầu cử và danh sách đơn vị bầu cử chậm nhất 80 ngày trước ngày bầu cử | Phải: Chậm nhất 80 ngày trước ngày bầu cử | Khoản 2 Điều 10 Luật Bầu cử Đại biểu Quốc hội và Đại biểu Hội đồng nhân dân 2015 |
+| nguoi-khong-quoc-tich | Người không có bất kỳ quốc tịch nào, sinh sống lâu dài tại Việt Nam | Trái: Người không quốc tịch | Khoản 2 Điều 3 Luật Quốc tịch Việt Nam 2008 |
+| nguoi-khong-quoc-tich | Công dân Việt Nam có thêm quốc tịch của một nước khác | Phải: Người có quốc tịch nước ngoài | Khoản 1 Điều 3 Luật Quốc tịch Việt Nam 2008 |
+| nguon-luat-hien-phap | Luật Quốc tịch Việt Nam là một nguồn của luật Hiến pháp | Trái: Nguồn của luật Hiến pháp | Giáo trình Luật Hiến pháp (Chương 1, nguồn của ngành luật) |
+| nguon-luat-hien-phap | Bộ luật Dân sự 2015 là nguồn của ngành luật dân sự, không phải nguồn của luật Hiến pháp | Phải: Không phải nguồn của luật Hiến pháp | Giáo trình Luật Hiến pháp (Chương 1, nguồn của ngành luật) |
+| nguyen-tac-bau-cu | Cử tri tự mình bỏ phiếu bầu, không được nhờ người khác bầu thay | Trái: Nguyên tắc trực tiếp | Khoản 1 Điều 7 Hiến pháp 2013 và khoản 2 Điều 69 Luật Bầu cử 2015 |
+| nguyen-tac-bau-cu | Phiếu bầu được bỏ kín, người khác không được biết cử tri bầu cho ai | Phải: Nguyên tắc bỏ phiếu kín | Khoản 1 Điều 7 Hiến pháp 2013 |
+| nguyen-tac-bo-phieu | Cử tri bỏ phiếu ở đơn vị nơi mình được ghi tên trong danh sách cử tri | Trái: Hợp pháp | Khoản 2 Điều 29 Luật Bầu cử Đại biểu Quốc hội và Đại biểu Hội đồng nhân dân 2015 |
+| nguyen-tac-bo-phieu | Người không có thẻ cử tri vẫn bỏ phiếu thay người khác | Phải: Vi phạm | Khoản 2 Điều 69 Luật Bầu cử Đại biểu Quốc hội và Đại biểu Hội đồng nhân dân 2015 |
+| nguyen-tac-mot-quoc-tich | Người được Chủ tịch nước cho giữ quốc tịch nước ngoài theo quy định của Luật Quốc tịch | Trái: Đúng nguyên tắc/ngoại lệ hợp pháp | Điều 4 Luật Quốc tịch Việt Nam 2008 |
+| nguyen-tac-mot-quoc-tich | Công dân Việt Nam tự ý giữ quốc tịch thứ hai mà không thuộc trường hợp luật định | Phải: Không phù hợp Luật Quốc tịch | Điều 4 Luật Quốc tịch Việt Nam 2008 |
+| nha-nuoc-phap-quyen-xhcn | Quyền lực nhà nước thuộc về Nhân dân, Nhân dân làm chủ | Phải: Chủ quyền Nhân dân | Khoản 2 Điều 2 Hiến pháp 2013 |
+| nhap-quoc-tich-viet-nam | Có người thân là công dân Việt Nam đang sinh sống ở nước ngoài | Phải: Không phải điều kiện nhập quốc tịch | Điều 19 Luật Quốc tịch Việt Nam 2008 (điều kiện liệt kê không gồm việc này) |
+| nhiem-ky-chinh-phu | Nhiệm kỳ của Thủ tướng Chính phủ theo nhiệm kỳ của Quốc hội | Trái: Theo nhiệm kỳ Quốc hội | Điều 97 Hiến pháp 2013 |
+| nhiem-ky-chinh-phu | Nhiệm kỳ của Thẩm phán Tòa án khu vực do luật định | Phải: Khác | Khoản 1 Điều 105 Hiến pháp 2013 |
+| nhiem-ky-quoc-hoi | Quốc hội thông qua luật bằng quá nửa tổng số đại biểu biểu quyết tán thành | Trái: Quá nửa tổng số đại biểu | Khoản 1 Điều 85 Hiến pháp 2013 |
+| nhiem-vu-chinh-phu | Chính phủ trình Quốc hội dự án ngân sách nhà nước | Trái: Chính phủ | Điều 96 Hiến pháp 2013 |
+| nhiem-vu-chinh-phu | Quốc hội quyết định cơ cấu, số lượng thành viên Chính phủ | Phải: Quốc hội | Khoản 1 Điều 95 Hiến pháp 2013 |
+| nhiem-vu-chinh-quyen-dia-phuong | Chính quyền địa phương tổ chức và bảo đảm việc thi hành Hiến pháp và pháp luật tại địa phương | Trái: Chính quyền địa phương được | Khoản 1 Điều 112 Hiến pháp 2013 |
+| nhiem-vu-chinh-quyen-dia-phuong | Chính quyền địa phương phải chịu sự kiểm tra, giám sát của cơ quan nhà nước cấp trên | Phải: Chính quyền địa phương phải | Khoản 2 Điều 112 Hiến pháp 2013 |
+| pho-chu-tich-nuoc | Phó Chủ tịch nước giữ quyền Chủ tịch nước khi Chủ tịch nước không làm việc được trong thời gian dài | Phải: Giữ quyền Chủ tịch nước | Điều 91 Hiến pháp 2013 |
+| pho-thu-tuong | Phó Thủ tướng là thành viên Chính phủ do Quốc hội quyết định cơ cấu | Trái: Phó Thủ tướng | Khoản 1 Điều 95 Hiến pháp 2013 |
+| phuong-phap-dieu-chinh-luat-hien-phap | Công dân có quyền tự do ngôn luận, báo chí, hội họp theo quy định của pháp luật | Trái: Phương pháp cho phép | Điều 25 Hiến pháp 2013 (giáo trình: phương pháp cho phép) |
+| phuong-phap-dieu-chinh-luat-hien-phap | Nghiêm cấm tra tấn, bạo lực, truy bức hoặc nhục hình đối với người khác | Phải: Phương pháp nghiêm cấm | Khoản 1 Điều 20 Hiến pháp 2013 (giáo trình: phương pháp nghiêm cấm) |
+| quan-he-phap-luat-hien-phap | Giữa Nhà nước và mọi công dân về quyền bầu cử, quan hệ chung của luật Hiến pháp | Trái: Quan hệ pháp luật Hiến pháp chung | Giáo trình Luật Hiến pháp (Chương 1, quan hệ pháp luật Hiến pháp chung) |
+| quan-he-phap-luat-hien-phap | Giữa Viện kiểm sát và bị can trong một vụ án cụ thể về một hành vi phạm tội | Phải: Quan hệ pháp luật Hiến pháp cụ thể | Giáo trình Luật Hiến pháp (Chương 1, quan hệ pháp luật Hiến pháp cụ thể) |
+| quoc-tich-theo-huyet-thong | Trẻ em sinh ra có cha mẹ đều là công dân Việt Nam thì có quốc tịch Việt Nam, dù sinh ở nước ngoài | Trái: Nguyên tắc huyết thống | Điều 15 Luật Quốc tịch Việt Nam 2008 |
+| quoc-tich-theo-huyet-thong | Trẻ bị bỏ rơi được tìm thấy ở Việt Nam, không rõ cha mẹ | Phải: Nguyên tắc nơi sinh (bổ trợ) | Điều 16 Luật Quốc tịch Việt Nam 2008 (nguyên tắc nơi sinh, bổ trợ) |
+| quoc-tich-viet-nam | Nhà nước bảo hộ công dân Việt Nam ở nước ngoài | Trái: Quyền, trách nhiệm của Nhà nước | Điều 1 Luật Quốc tịch Việt Nam 2008 |
+| quoc-tich-viet-nam | Công dân Việt Nam có nghĩa vụ thực hiện nghĩa vụ quân sự | Phải: Quyền, nghĩa vụ của công dân | Điều 1 Luật Quốc tịch Việt Nam 2008 |
+| quyen-bau-cu-ung-cu | Công dân đủ mười tám tuổi trở lên có quyền bầu cử vào Quốc hội và Hội đồng nhân dân | Trái: 18 tuổi | Điều 27 Hiến pháp 2013 |
+| quyen-bau-cu-ung-cu | Công dân dưới hai mươi mốt tuổi không có quyền ứng cử vào Quốc hội | Phải: 21 tuổi | Điều 27 Hiến pháp 2013 |
+| quyen-co-quoc-tich | Cá nhân được quyền có quốc tịch theo quy định của pháp luật Việt Nam | Trái: Quyền có quốc tịch | Khoản 1 Điều 2 Luật Quốc tịch Việt Nam 2008 |
+| quyen-co-quoc-tich | Công dân cư trú ở nước ngoài bị tước quốc tịch vì hành vi gây phương hại nghiêm trọng | Phải: Bảo đảm không bị tước quốc tịch | Khoản 1 Điều 31 Luật Quốc tịch Việt Nam 2008 |
+| quyen-con-nguoi-quyen-cong-dan | Quyền bất khả xâm phạm về thân thể áp dụng cho mọi người trên lãnh thổ Việt Nam | Trái: Quyền con người | Khoản 1 Điều 20 Hiến pháp 2013 |
+| quyen-con-nguoi-quyen-cong-dan | Quyền ứng cử vào Quốc hội chỉ dành cho công dân Việt Nam | Phải: Quyền công dân | Điều 27 Hiến pháp 2013 |
+| quyen-luc-nha-nuoc-thong-nhat | Cơ quan nhà nước kiềm chế, đối trọng lẫn nhau, không phối hợp với nhau trong việc thực hiện quyền lực | Phải: Tam quyền phân lập | Khoản 3 Điều 2 Hiến pháp 2013 |
+| quyen-mien-tru-dai-bieu | Khi Quốc hội đang họp, bắt giữ đại biểu Quốc hội cần sự đồng ý của Quốc hội | Trái: Quốc hội đang họp | Điều 81 Hiến pháp 2013 |
+| quyen-mien-tru-dai-bieu | Khi Quốc hội không họp, bắt đại biểu Quốc hội cần sự đồng ý của Ủy ban thường vụ Quốc hội | Phải: Quốc hội không họp | Điều 81 Hiến pháp 2013 |
+| quyen-rieng-tu | Bảo vệ bí mật cá nhân và bí mật gia đình của mọi người | Trái: Khoản 1 Điều 21 | Khoản 1 Điều 21 Hiến pháp 2013 |
+| quyen-rieng-tu | Thông tin về đời sống riêng tư được pháp luật bảo đảm an toàn | Phải: Khoản 2 Điều 21 | Khoản 2 Điều 21 Hiến pháp 2013 |
+| quyen-su-dung-dat-thu-hoi | Nhà nước thu hồi đất để phát triển kinh tế - xã hội vì lợi ích quốc gia, có bồi thường cho người dân | Trái: Thu hồi đất | Khoản 3 Điều 54 Hiến pháp 2013 |
+| quyen-su-dung-dat-thu-hoi | Nhà nước trưng dụng đất khi có tình trạng khẩn cấp để phòng, chống thiên tai | Phải: Trưng dụng đất | Khoản 3 Điều 54 Hiến pháp 2013 |
+| quyen-trinh-du-an-luat | Chủ tịch nước có quyền trình dự án luật trước Quốc hội | Trái: Dự án luật | Khoản 1 Điều 84 Hiến pháp 2013 |
+| quyen-trinh-du-an-luat | Chính phủ trình dự án pháp lệnh trước Ủy ban thường vụ Quốc hội | Phải: Dự án pháp lệnh | Khoản 2 Điều 84 Hiến pháp 2013 |
+| so-huu-toan-dan | Nhân dân giao cho Nhà nước quyền quản lý, sử dụng đất đai và tài nguyên thiên nhiên | Trái: Toàn dân | Điều 53 Hiến pháp 2013 |
+| so-huu-toan-dan | Nhà nước đại diện chủ sở hữu toàn dân về tài nguyên và thống nhất quản lý | Phải: Nhà nước | Điều 53 Hiến pháp 2013 |
+| sua-doi-hien-phap | Một phần ba tổng số đại biểu Quốc hội có quyền đề nghị làm hoặc sửa đổi Hiến pháp | Trái: Tỉ lệ một phần ba | Khoản 1 Điều 120 Hiến pháp 2013 |
+| sua-doi-hien-phap | Ít nhất hai phần ba tổng số đại biểu Quốc hội thông qua Hiến pháp | Phải: Tỉ lệ hai phần ba | Khoản 4 Điều 120 Hiến pháp 2013 |
+| thanh-lap-giai-the-dvhc | Quốc hội quyết định chia một tỉnh thành hai tỉnh | Trái: Quốc hội quyết định | Khoản 3 Điều 110 Hiến pháp 2013 (sửa đổi) |
+| thanh-lap-giai-the-dvhc | Ủy ban thường vụ Quốc hội quyết định chia một xã thành hai xã | Phải: Ủy ban thường vụ Quốc hội quyết định | Điều 74 Hiến pháp 2013 (theo bản 2013) |
+| thoi-quoc-tich-viet-nam | Công dân đang bị truy cứu trách nhiệm hình sự chưa được thôi quốc tịch Việt Nam | Trái: Chưa được thôi | Khoản 2 Điều 27 Luật Quốc tịch Việt Nam 2008 |
+| thoi-quoc-tich-viet-nam | Công dân đang nợ thuế đối với Nhà nước, chưa được thôi quốc tịch Việt Nam | Phải: Không được thôi | Điểm a khoản 2 Điều 27 Luật Quốc tịch Việt Nam 2008 |
+| thu-tuong-chinh-phu | Thủ tướng Chính phủ trình Quốc hội phê chuẩn đề nghị bổ nhiệm Bộ trưởng | Trái: Thủ tướng | Khoản 2 Điều 95 và khoản 3 Điều 98 Hiến pháp 2013 |
+| thu-tuong-chinh-phu | Chủ tịch nước đề nghị Quốc hội bầu Thủ tướng Chính phủ | Phải: Chủ tịch nước | Khoản 2 Điều 88 Hiến pháp 2013 |
+| thu-tuong-dinh-chi-van-ban | Quyết định trái luật của Ủy ban nhân dân cấp huyện bị Thủ tướng đình chỉ hoặc bãi bỏ | Phải: Thủ tướng chỉ được đình chỉ | Khoản 4 Điều 98 Hiến pháp 2013 |
+| toa-an-nhan-dan-toi-cao | Tòa án nhân dân tối cao giám đốc việc xét xử của các Tòa án khác | Trái: Tòa án nhân dân tối cao | Khoản 2 Điều 104 Hiến pháp 2013 |
+| toa-an-nhan-dan-toi-cao | Tòa án nhân dân tối cao là cơ quan xét xử cao nhất của nước Cộng hòa xã hội chủ nghĩa Việt Nam | Trái: Tòa án nhân dân tối cao | Khoản 1 Điều 104 Hiến pháp 2013 |
+| toa-an-nhan-dan-toi-cao | Ủy ban thường vụ Quốc hội giải thích Hiến pháp, luật và pháp lệnh | Phải: Ủy ban thường vụ Quốc hội | Điều 74 Hiến pháp 2013 (nhiệm vụ Ủy ban thường vụ Quốc hội) |
+| tranh-tung-hai-cap-bao-chua | Bị cáo trong vụ án hình sự có quyền nhờ người bào chữa tại phiên tòa | Trái: Quyền bào chữa | Khoản 5 Điều 103 Hiến pháp 2013 |
+| tranh-tung-hai-cap-bao-chua | Người có quyền lợi liên quan trong vụ án dân sự được bảo vệ lợi ích hợp pháp của đương sự | Phải: Quyền bảo vệ lợi ích hợp pháp của đương sự | Khoản 5–7 Điều 103 Hiến pháp 2013 |
+| tro-lai-quoc-tich | Người nước ngoài có nguyện vọng nhập quốc tịch Việt Nam khi đủ điều kiện luật định | Phải: Nhập quốc tịch | Điều 19 Luật Quốc tịch Việt Nam 2008 (nhập quốc tịch) |
+| trung-cau-y-dan-hien-phap | Ủy ban dự thảo Hiến pháp soạn thảo và tổ chức lấy ý kiến Nhân dân về dự thảo | Phải: Lấy ý kiến Nhân dân về dự thảo Hiến pháp | Khoản 3 Điều 120 Hiến pháp 2013 |
+| trung-cau-y-dan-hien-phap | Quốc hội quyết định việc trưng cầu ý dân về Hiến pháp | Trái: Trưng cầu ý dân về Hiến pháp | Khoản 4 Điều 120 Hiến pháp 2013 |
+| truong-hop-khong-duoc-ung-cu | Người đang bị khởi tố bị can không được ứng cử đại biểu Quốc hội | Trái: Không được ứng cử | Khoản 2 Điều 37 Luật Bầu cử Đại biểu Quốc hội và Đại biểu Hội đồng nhân dân 2015 |
+| tu-do-kinh-doanh | Quyền tự do kinh doanh là quyền hiến định của mọi người | Phải: Hiến pháp 2013 (Điều 33) | Điều 33 Hiến pháp 2013 |
+| tu-do-kinh-doanh | Doanh nghiệp được tự do lựa chọn ngành nghề kinh doanh mà luật không cấm | Phải: Hiến pháp 2013 (Điều 33) | Điều 33 Hiến pháp 2013 |
+| tuoc-quoc-tich-viet-nam | Công dân cư trú ở nước ngoài bị tước quốc tịch do hành vi phương hại nghiêm trọng đến nền độc lập | Trái: Tước quốc tịch | Khoản 1 Điều 31 Luật Quốc tịch Việt Nam 2008 |
+| tuoc-quoc-tich-viet-nam | Công dân tự nguyện xin thôi quốc tịch Việt Nam để nhập quốc tịch nước ngoài | Phải: Thôi quốc tịch | Khoản 1 Điều 27 Luật Quốc tịch Việt Nam 2008 |
+| uy-ban-nhan-dan | Ủy ban nhân dân do Hội đồng nhân dân cùng cấp bầu và chịu trách nhiệm trước Hội đồng nhân dân | Trái: Tư cách cơ quan chấp hành của Hội đồng nhân dân | Khoản 1 Điều 114 Hiến pháp 2013 |
+| uy-ban-nhan-dan | Ủy ban nhân dân thực hiện nhiệm vụ do Chính phủ giao ở địa phương | Phải: Tư cách cơ quan hành chính nhà nước ở địa phương | Khoản 2 Điều 114 Hiến pháp 2013 |
+| uy-ban-thuong-vu-quoc-hoi | Ủy ban thường vụ Quốc hội ban bố tình trạng khẩn cấp trong cả nước | Trái: Ủy ban thường vụ Quốc hội | Khoản 1 Điều 73 Hiến pháp 2013 (nhiệm vụ Ủy ban thường vụ Quốc hội, Điều 74) |
+| uy-ban-thuong-vu-quoc-hoi | Quốc hội quyết định việc thành lập, giải thể các Ủy ban của Quốc hội | Phải: Quốc hội | Điều 76 Hiến pháp 2013 |
+| van-ban-chinh-phu | Ủy ban thường vụ Quốc hội đình chỉ việc thi hành văn bản của Chính phủ trái Hiến pháp | Trái: Đình chỉ thi hành | Điều 100 Hiến pháp 2013 |
+| van-ban-chinh-phu | Quốc hội bãi bỏ văn bản của Chính phủ trái Hiến pháp | Phải: Bãi bỏ | Điều 100 Hiến pháp 2013 |
+| xac-dinh-nguoi-trung-cu | Số người trúng cử đại biểu Quốc hội chưa đủ số đại biểu được bầu ở đơn vị bầu cử | Trái: Bầu cử thêm (Điều 79) | Khoản 1 Điều 79 Luật Bầu cử Đại biểu Quốc hội và Đại biểu Hội đồng nhân dân 2015 |
+| xac-dinh-nguoi-trung-cu | Số cử tri đi bỏ phiếu chưa đạt quá một nửa tổng số cử tri trong danh sách | Phải: Bầu cử lại (Điều 80) | Khoản 1 Điều 80 Luật Bầu cử Đại biểu Quốc hội và Đại biểu Hội đồng nhân dân 2015 |
+| xet-xu-cong-khai-tap-the | Phiên tòa xét xử công khai, Thẩm phán và Hội thẩm cùng xét xử tập thể vụ án trộm cắp tài sản | Trái: Xét xử công khai | Khoản 3 và khoản 4 Điều 103 Hiến pháp 2013 |
+| xet-xu-cong-khai-tap-the | Vụ án ly hôn có đương sự yêu cầu giữ bí mật đời tư chính đáng được xét xử kín | Phải: Có thể xét xử kín | Khoản 3 Điều 103 Hiến pháp 2013 |
+| ngan-sach-nha-nuoc | Quốc hội quyết định dự toán ngân sách nhà nước | Trái: Quốc hội | Khoản 4 Điều 70 Hiến pháp 2013 |
+| ngan-sach-nha-nuoc | Quốc hội quyết định phân chia các khoản thu và nhiệm vụ chi giữa ngân sách trung ương và địa phương | Trái: Quốc hội | Khoản 4 Điều 70 Hiến pháp 2013 |
+| vien-kiem-sat-chuc-nang | Viện kiểm sát yêu cầu Cơ quan điều tra khởi tố vụ án hình sự khi có dấu hiệu tội phạm | Trái: Thực hành quyền công tố | Khoản 1 Điều 107 Hiến pháp 2013 (thực hành quyền công tố) |
+| vien-kiem-sat-chuc-nang | Viện kiểm sát kiểm tra tính hợp pháp của các quyết định của Tòa án trong việc xét xử | Phải: Kiểm sát hoạt động tư pháp | Khoản 3 Điều 107 Hiến pháp 2013 (kiểm sát hoạt động tư pháp) |
+
+### Ghi chú ⚠ (haiku-1, chờ opus / người duyệt)
+
+- ⚠ `danh-sach-cu-tri`: vế "Người đang bị tạm giữ" (Trái: được ghi tên) chưa thấy trong Điều 30 khoản 1 Luật Bầu cử 2015 (danh sách loại trừ); khoản 2 chưa đối chiếu hết. Cần xem lại.
+- ⚠ `tro-lai-quoc-tich`: vế "Phải lấy lại tên gọi Việt Nam trước đây" chưa thấy trong Điều 23 Luật Quốc tịch đã đối chiếu. Cần xem lại.
+- ⚠ `binh-dang-truoc-phap-luat`: vế "Hiến pháp 1992 — 'Mọi công dân đều bình đẳng trước pháp luật'" không có trong `hien-phap-lich-su.txt` (file chỉ có các Điều 2, 4, 15, 50, 101, 147 của bản 1992). Chưa đối chiếu.
+- ⚠ `tu-do-kinh-doanh`: vế "Luật Công ty 1990 — phải xin phép UBND tỉnh" là văn bản ngoài kho luật, chưa đối chiếu.
+- ⚠ `don-vi-hanh-chinh-hai-cap`: vế "Hiến pháp 2013 bản gốc" (trước NQ 203/2025) không có trong kho; chỉ căn cứ theo ghi chú "bản gốc".
+- Đã sửa (lỗi rõ, trong câu Phân biệt của `thoi-quoc-tich-viet-nam`): bỏ tình huống "Đang là sĩ quan quân đội tại ngũ" ở vế "Không được thôi" — khoản 2 Điều 27 Luật Quốc tịch 2008 không liệt kê trường hợp này; thay bằng điểm a khoản 2 (đang nợ thuế).
+- Ngoài phạm vi (không sửa, ghi nhận): tên khái niệm `kiem-toan-nha-nuoc` có vế trái là "Hội đồng bầu cử quốc gia" (cặp lệch chủ đề).
+
+## Giai đoạn 2 — cờ dò trích dẫn (haiku-1)
+
+Cờ của môn: 23 (kiểm từng cờ theo điều luật trong `laws/`).
+
+**Sửa**
+- `hien-phap-1959` (câu ôn "trình bày Hiến pháp 1959", phần đáp án mẫu): ghi rõ "Điều 4 Hiến pháp 1959" và "Điều 112 Hiến pháp 1959" — công cụ đọc nhầm sang Hiến pháp 2013.
+- `ke-thua-lap-hien` (câu ôn lịch sử lập hiến, đáp án mẫu): ghi rõ "Điều 4 Hiến pháp 1980" (Đảng lãnh đạo).
+- `quyen-trinh-du-an-luat` (ví dụ): ghi rõ "khoản 1 Điều 84 Hiến pháp 2013" — công cụ đọc nhầm sang Luật Tổ chức Tòa án nhân dân.
+- Căn cứ tình huống do haiku-1 thêm: "Mọi văn bản pháp luật khác phải phù hợp với Hiến pháp" nằm ở khoản 1 Điều 119 (không phải khoản 2) — đã sửa ở các tình huống mới của `hien-phap`, `hieu-luc-phap-ly-toi-cao`, `bao-ve-hien-phap`. Căn cứ khoản 2 Điều 119 ("trách nhiệm bảo vệ Hiến pháp") của khái niệm gốc giữ nguyên.
+
+**Báo nhầm**
+- `bao-ve-moi-truong#6` (câu ôn đáp án mẫu): nội dung đúng cả Điều 43 và Điều 63; giữ nguyên.
+- `chu-quyen-nhan-dan#5` (tình huống mcq cấp 4): khoản 2 Điều 2 đúng; diễn đạt khác với chữ luật.
+- `chu-tich-nuoc-quoc-tich-khen-thuong#-1` (vế "khoản 3 Điều 88"): đặc xá nằm ở khoản 3 Điều 88 Hiến pháp 2013 (đã đối chiếu); công cụ đọc nhầm sang Luật Quốc tịch.
+- `dang-cong-san-lanh-dao#-1`, `don-vi-hanh-chinh-hai-cap#-1`, `#1`, `#5`, `#6`: nói về bỏ cấp huyện từ 2025 đúng ngữ cảnh (lịch sử hoặc câu đúng/sai có chủ đích). Thuật ngữ "cấp huyện" trong các câu này không phải dùng như hiện hành — ⚠ opus rà bộ lọc thuật ngữ cũ nếu muốn.
+- `don-vi-hanh-chinh-hai-cap#-1`, `#1` (vế "khoản 2 Điều 2 Nghị quyết 203/2025/QH15"): văn bản ngoài kho, không kiểm được.
+- `hieu-luc-phap-ly-toi-cao#5`: khoản 1 Điều 119 đúng; chỉ khác chữ.
+- `nha-nuoc-phap-quyen-xhcn#1` (Điều 119): đúng. `nha-nuoc-phap-quyen-xhcn#5` (khoản 2 Điều 14): đúng ("chỉ có thể bị hạn chế theo quy định của luật").
+- `quyen-bau-cu-ung-cu#-1`, `#6` (vế "Luật Tổ chức chính quyền địa phương", Điều 3, Điều 37): văn bản ngoài kho; không kiểm được, giữ nguyên.
+- `tu-do-kinh-doanh#1` (đáp án mẫu "Điều 33."): đúng; phần giải thích quá ngắn — có thể bổ sung sau.
+- `truong-hop-khong-duoc-ung-cu#5` (Điều 37 Luật Bầu cử): đúng; cờ do diễn đạt khác chữ.
+
+**⚠ opus** (đã nêu ở mục trên, nhắc lại)
+- `danh-sach-cu-tri`, `tro-lai-quoc-tich`, `binh-dang-truoc-phap-luat`, `tu-do-kinh-doanh` (vế Luật Công ty 1990 ngoài kho), `don-vi-hanh-chinh-hai-cap` (bản gốc 2013): xem "Ghi chú ⚠" phía trên.
+
+## Opus — chế định đổi từ 2025 (xem luat-doi-2025.md)
+
+| id | câu/tình huống | trước → sau | căn cứ | ghi chú |
+|---|---|---|---|---|
+| bo-phieu-tin-nhiem#0 | Quốc hội bỏ phiếu tín nhiệm đối với ai theo khoản 8 Điều 70? (2 nhiễu) | "Chủ tịch UBND cấp xã và cấp huyện" → "Chủ tịch UBND cấp tỉnh và cấp xã"; "Thẩm phán TAND cấp tỉnh và cấp huyện" → "Thẩm phán TAND cấp tỉnh và khu vực" | Luật 72/2025/QH15 (CQĐP 2 cấp); Luật 81/2025/QH15 (TAND khu vực); khoản 8 Điều 70 Hiến pháp | Nhiễu nêu cơ quan không còn tồn tại thì loại được mà không cần biết luật; nay vẫn sai vì không do Quốc hội bầu/phê chuẩn |
+| don-vi-hanh-chinh-hai-cap, dang-cong-san-lanh-dao, … | Các câu nói "cấp huyện kết thúc hoạt động từ 01/7/2025", câu Sai "vẫn có cấp huyện" | không sửa | NQ 203/2025/QH15; Luật 72/2025/QH15 | Đúng: mô tả lịch sử/câu Sai cố ý |
+| chat-van-hoi-dong-nhan-dan#2 (tình huống mới của haiku-1) | "Đại biểu Hội đồng nhân dân chất vấn Chủ tịch Ủy ban nhân dân cấp huyện" (trái) | → "Đại biểu Hội đồng nhân dân xã chất vấn Chủ tịch Ủy ban nhân dân xã" | khoản 2 Điều 115 Hiến pháp; Luật 72/2025/QH15 | Test `citations` bắt (thuật ngữ cũ dùng như hiện hành) |
+| thu-tuong-dinh-chi-van-ban#2 (tình huống mới của haiku-1) | "Quyết định trái luật của Ủy ban nhân dân cấp huyện bị Thủ tướng đình chỉ hoặc bãi bỏ" (phải: "chỉ được đình chỉ") | → "Nghị quyết của Hội đồng nhân dân thành phố trực thuộc trung ương trái văn bản của cơ quan nhà nước cấp trên" (phải) | khoản 4 Điều 98 Hiến pháp: Thủ tướng chỉ đình chỉ nghị quyết HĐND cấp tỉnh, đề nghị UBTVQH bãi bỏ; văn bản UBND cấp huyện không thuộc khoản 4 | Tình huống cũ sai cả chế định lẫn đáp án |
+
+## Opus — trọng tài ⚠ opus (03/11/2026)
+
+| id | câu/tình huống | trước → sau | căn cứ | ghi chú |
+|---|---|---|---|---|
+| danh-sach-cu-tri (⚠ haiku-1) | "Người đang bị tạm giữ" được ghi tên | không sửa | khoản 1 Điều 30 Luật Bầu cử không loại trừ; Điều 29 quy định người bị tạm giam, tạm giữ ghi tên nơi tạm giữ | Báo nhầm (bản chữ ngắt dòng) |
+| tro-lai-quoc-tich (⚠ haiku-1) | "Phải lấy lại tên gọi Việt Nam trước đây" | không sửa | khoản 4 Điều 23 Luật Quốc tịch | Báo nhầm (bản chữ ngắt dòng) |
+| binh-dang-truoc-phap-luat, tu-do-kinh-doanh, don-vi-hanh-chinh-hai-cap (⚠ haiku-1) | vế Hiến pháp 1992 / Luật Công ty 1990 / Hiến pháp 2013 bản gốc | không sửa | ngoài bản trích trong kho | ⚠ Hào: cần bổ sung trích đoạn vào `hien-phap-lich-su.txt`, `lich-su-su-lieu.txt` nếu muốn test được |
+## Câu hỏi viết lại (sonnet B)
+
+### Câu hỏi kiểu tập hợp (bỏ nhiễu "Chỉ…") (13)
+
+| Mã | Câu hỏi | Trước | Sau | Căn cứ | Ghi chú |
+|---|---|---|---|---|---|
+| `hien-phap/binh-dang-truoc-phap-luat#1` | Theo khoản 2 Điều 16, không ai bị phân biệt đối xử trong những lĩnh vực nào?<br>→ Phương án nào liệt kê đầy đủ các lĩnh vực mà theo khoản 2 Điều 16, không ai bị phân biệt đối xử? | **Chính trị, dân sự, kinh tế, văn hóa, xã hội**<br>Chỉ chính trị và quân sự trong nước<br>Chỉ kinh tế và thương mại quốc tế với nước ngoài<br>Chỉ trong tố tụng và thi hành án dân sự | **Chính trị, dân sự, kinh tế, văn hóa, xã hội**<br>Chính trị, dân sự, kinh tế, văn hóa, quốc phòng<br>Chính trị, dân sự, kinh tế, văn hóa<br>Dân sự, kinh tế, xã hội, tố tụng, thi hành án | Khoản 2 Điều 16 Hiến pháp 2013 | Hỏi 'đầy đủ'; nhiễu thiếu hoặc thừa lĩnh vực, không cần 'Chỉ'. |
+| `hien-phap/bo-truong-trach-nhiem#0` | Bộ trưởng chịu trách nhiệm cá nhân trước những chủ thể nào? | **Thủ tướng, Chính phủ và Quốc hội**<br>Chỉ Thủ tướng và Phó Thủ tướng<br>Chủ tịch nước và Mặt trận Tổ quốc<br>Chỉ Ủy ban thường vụ Quốc hội | **Thủ tướng, Chính phủ và Quốc hội**<br>Thủ tướng, Chính phủ và Chủ tịch nước<br>Chủ tịch nước và Mặt trận Tổ quốc<br>Ủy ban Pháp luật và Hội đồng dân tộc | Khoản 4 Điều 95 Hiến pháp 2013 | Nhiễu chứa chủ thể sai (Chủ tịch nước, UBTVQH, Hội đồng dân tộc).; Nhiễu viết lại: sai rõ, không cần từ tuyệt đối |
+| `hien-phap/danh-sach-cu-tri#1` | Người đang bị tạm giam có được ghi tên vào danh sách cử tri không? | **Có, để bầu đại biểu Quốc hội và Hội đồng nhân dân cấp tỉnh nơi bị tạm giam**<br>Không, vì đang bị tạm giam và chưa có bản án có hiệu lực pháp luật<br>Chỉ được bầu Hội đồng nhân dân cấp xã nơi có bản án đang thi hành<br>Chỉ khi được Tòa án cho phép bằng văn bản và cơ quan điều tra xác nhận | **Có, để bầu đại biểu Quốc hội và Hội đồng nhân dân cấp tỉnh nơi bị tạm giam**<br>Không, vì đang bị tạm giam và chưa có bản án có hiệu lực pháp luật<br>Có, để bầu Hội đồng nhân dân cấp xã nơi người đó thường trú trước đây<br>Có, nếu được Tòa án cho phép bằng văn bản và cơ quan điều tra xác nhận | Khoản 5 Điều 29 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026) | Nhiễu sai về nơi bầu / thêm điều kiện không có trong luật.; Nhiễu viết lại: sai rõ, không cần từ tuyệt đối |
+| `hien-phap/hieu-luc-ban-an#1` | Ai phải nghiêm chỉnh chấp hành bản án đã có hiệu lực? | **Cơ quan, tổ chức, cá nhân hữu quan**<br>Chỉ bị cáo và người bị hại trong vụ án<br>Chỉ Tòa án nhân dân cấp tỉnh trở lên<br>Chỉ cơ quan công an và Viện kiểm sát | **Cơ quan, tổ chức, cá nhân hữu quan**<br>Bị cáo và người bị hại; cơ quan thì không<br>Tòa án cấp tỉnh trở lên; cá nhân thì không<br>Công an và Viện kiểm sát; tổ chức thì không | Điều 106 Hiến pháp 2013 | Nhiễu thêm vế sai rõ ('… thì không') thay cho 'Chỉ'.; Nhiễu viết lại: sai rõ, không cần từ tuyệt đối |
+| `hien-phap/hoi-dong-nhan-dan#1` | Hội đồng nhân dân chịu trách nhiệm trước ai? | **Nhân dân địa phương và cơ quan nhà nước cấp trên**<br>Chỉ Ủy ban nhân dân cùng cấp và Chủ tịch tỉnh<br>Chỉ Chính phủ trung ương và các bộ ngành<br>Chỉ Mặt trận Tổ quốc địa phương và các đoàn thể | **Nhân dân địa phương và cơ quan nhà nước cấp trên**<br>Ủy ban nhân dân cùng cấp và Chủ tịch Ủy ban nhân dân tỉnh<br>Chính phủ trung ương và các bộ, cơ quan ngang bộ<br>Mặt trận Tổ quốc địa phương và các đoàn thể nhân dân | Khoản 1 Điều 113 Hiến pháp 2013 | Bỏ 'Chỉ'; nhiễu là chủ thể không thuộc Điều 113. |
+| `hien-phap/ke-thua-lap-hien#0` | Lời nói đầu Hiến pháp 2013 nêu Hiến pháp này kế thừa những bản Hiến pháp nào?<br>→ Phương án nào liệt kê đầy đủ các bản Hiến pháp mà Lời nói đầu Hiến pháp 2013 nêu là được kế thừa? | **1946, 1959, 1980 và 1992**<br>Chỉ 1946 và 1992 cùng nhau<br>Chỉ Hiến pháp 1992 và 2001<br>1959, 1980 và 1992 đều | **1946, 1959, 1980 và 1992**<br>1946, 1959 và 1992<br>1946, 1980, 1992 và 2001<br>1959, 1980 và 1992 | Lời nói đầu Hiến pháp 2013 | Hỏi 'đầy đủ'; nhiễu thiếu/thừa năm. |
+| `hien-phap/quyen-luc-nha-nuoc-thong-nhat#0` | Theo khoản 3 Điều 2 Hiến pháp 2013, quyền lực nhà nước được tổ chức theo nguyên tắc nào? | **Thống nhất, có sự phân công, phối hợp, kiểm soát giữa các cơ quan nhà nước**<br>Tam quyền phân lập, các cơ quan độc lập và đối trọng tuyệt đối hoàn toàn<br>Tập trung toàn bộ quyền lực vào Quốc hội và Chính phủ và các cơ quan<br>Phân chia tuyệt đối theo lãnh thổ giữa trung ương và địa phương | **Thống nhất, có sự phân công, phối hợp, kiểm soát giữa các cơ quan nhà nước**<br>Tam quyền phân lập, các cơ quan độc lập và đối trọng lẫn nhau<br>Tập trung toàn bộ quyền lực vào Quốc hội và Chính phủ và các cơ quan<br>Thống nhất, có phân công, phối hợp nhưng không có kiểm soát giữa các cơ quan | Khoản 3 Điều 2 Hiến pháp 2013 | Bỏ 'tuyệt đối'.; Nhiễu thiếu 'kiểm soát' (từ Hiến pháp 2013 bổ sung so với 1992) — sai rõ. |
+| `hien-phap/quyen-rieng-tu#0` | Theo khoản 2 Điều 21, quyền bí mật áp dụng với những hình thức nào?<br>→ Phương án nào liệt kê đầy đủ các hình thức trao đổi thông tin mà theo khoản 2 Điều 21 được bảo đảm an toàn bí mật? | **Thư tín, điện thoại, điện tín và các hình thức trao đổi thông tin riêng tư khác**<br>Chỉ thư tay và thư gửi cho người thân trong gia đình tại địa phương<br>Chỉ điện thoại cố định và điện thoại di động của người thân trong gia đình<br>Chỉ thư của cơ quan nhà nước và thư tín của các tổ chức chính trị xã hội | **Thư tín, điện thoại, điện tín và các hình thức trao đổi thông tin riêng tư khác**<br>Thư tay và thư gửi cho người thân trong gia đình tại địa phương<br>Điện thoại cố định và điện thoại di động của người thân trong gia đình tại địa phương<br>Thư của cơ quan nhà nước và thư tín của các tổ chức chính trị xã hội | Khoản 2 Điều 21 Hiến pháp 2013 | Hỏi 'đầy đủ'; nhiễu là tập con, không cần 'Chỉ'. |
+| `hien-phap/thanh-lap-giai-the-dvhc#0` | Thành lập, nhập, chia đơn vị hành chính phải đáp ứng yêu cầu gì theo khoản 3 Điều 110? | **Lấy ý kiến Nhân dân địa phương và theo trình tự, thủ tục do Quốc hội quy định**<br>Chỉ cần quyết định của Thủ tướng và đề nghị của bộ trưởng liên quan<br>Chỉ cần Hội đồng nhân dân đồng ý và Ủy ban nhân dân xác nhận bằng văn bản<br>Trưng cầu ý dân toàn quốc về mọi đơn vị hành chính trong cả nước | **Lấy ý kiến Nhân dân địa phương và theo trình tự, thủ tục do Quốc hội quy định**<br>Quyết định của Thủ tướng và đề nghị của bộ trưởng, không cần lấy ý kiến<br>Hội đồng nhân dân đồng ý và Ủy ban nhân dân xác nhận bằng văn bản<br>Trưng cầu ý dân toàn quốc về đơn vị hành chính được đề nghị thành lập | Khoản 3 Điều 110 Hiến pháp 2013 (NQ 203/2025/QH15) | Nhiễu sai rõ (thiếu lấy ý kiến Nhân dân / sai hình thức).; Nhiễu viết lại: sai rõ, không cần từ tuyệt đối |
+| `hien-phap/thu-tuong-dinh-chi-van-ban#0` | Thủ tướng được làm gì với văn bản trái luật của Chủ tịch Ủy ban nhân dân tỉnh? | **Đình chỉ việc thi hành hoặc bãi bỏ**<br>Chỉ được kiến nghị và đề nghị xem xét<br>Chỉ được báo cáo Quốc hội và chờ ý kiến<br>Không có quyền gì trong trường hợp này | **Đình chỉ việc thi hành hoặc bãi bỏ**<br>Kiến nghị Ủy ban thường vụ Quốc hội xem xét bãi bỏ<br>Báo cáo Quốc hội để Quốc hội quyết định bãi bỏ<br>Không có quyền gì trong trường hợp này | Khoản 4 Điều 98 Hiến pháp 2013 | Nhiễu chuyển thẩm quyền sang cơ quan khác. |
+| `hien-phap/tu-do-kinh-doanh#0` | Theo Điều 33 Hiến pháp 2013, mọi người có quyền tự do kinh doanh trong phạm vi nào? | **Những ngành nghề mà pháp luật không cấm**<br>Chỉ những ngành nghề Nhà nước cho phép<br>Chỉ ngành nghề có giấy phép<br>Mọi ngành nghề không giới hạn | **Những ngành nghề mà pháp luật không cấm**<br>Ngành nghề thuộc danh mục Nhà nước cho phép<br>Những ngành nghề đã được cấp giấy phép kinh doanh<br>Ngành nghề tự xác định, không phụ thuộc pháp luật | Điều 33 Hiến pháp 2013 | Bỏ 'Chỉ'/'Mọi'; nhiễu đảo thành 'được phép mới làm'.; Nhiễu viết lại: sai rõ, không cần từ tuyệt đối |
+| `hien-phap/uy-ban-nhan-dan#1` | Ủy ban nhân dân chịu trách nhiệm trước ai? | **Hội đồng nhân dân và cơ quan hành chính nhà nước cấp trên**<br>Chỉ Hội đồng nhân dân cùng cấp và thường trực của mình<br>Chỉ Chính phủ trung ương và các bộ ngành liên quan<br>Chỉ Nhân dân địa phương và các tổ chức đoàn thể tại đó | **Hội đồng nhân dân và cơ quan hành chính nhà nước cấp trên**<br>Hội đồng nhân dân cùng cấp và Ủy ban thường vụ Quốc hội<br>Chủ tịch nước và Tòa án nhân dân cùng cấp<br>Nhân dân địa phương và Mặt trận Tổ quốc cùng cấp | Khoản 1 Điều 114 Hiến pháp 2013 | Nhiễu cũ 'Chỉ HĐND cùng cấp' đúng một phần; thay bằng chủ thể sai. |
+| `hien-phap/van-ban-chinh-phu#0` | Theo Điều 100, chủ thể nào có quyền ban hành văn bản pháp luật? | **Chính phủ, Thủ tướng, Bộ trưởng, Thủ trưởng cơ quan ngang bộ**<br>Chỉ Chính phủ và các cơ quan nhà nước trung ương khác<br>Chỉ Thủ tướng Chính phủ và các Phó Thủ tướng Chính phủ<br>Thứ trưởng và cán bộ cấp vụ của các bộ, cơ quan ngang bộ | **Chính phủ, Thủ tướng, Bộ trưởng, Thủ trưởng cơ quan ngang bộ**<br>Chính phủ, Thủ tướng và Chủ tịch nước<br>Thủ tướng, các Phó Thủ tướng và Tổng Thanh tra<br>Thứ trưởng và cán bộ cấp vụ của các bộ, cơ quan ngang bộ | Điều 100 Hiến pháp 2013 | Nhiễu chứa chủ thể sai, bỏ 'Chỉ'. |
+
+### Câu lộ tên khái niệm trong phương án (13)
+
+| Mã | Câu hỏi | Trước | Sau | Căn cứ | Ghi chú |
+|---|---|---|---|---|---|
+| `hien-phap/quyen-luc-nha-nuoc-thong-nhat#0` | Theo khoản 3 Điều 2 Hiến pháp 2013, quyền lực nhà nước được tổ chức theo nguyên tắc nào? | **Thống nhất, có sự phân công, phối hợp, kiểm soát giữa các cơ quan nhà nước**<br>Tam quyền phân lập, các cơ quan độc lập và đối trọng tuyệt đối hoàn toàn<br>Tập trung toàn bộ quyền lực vào Quốc hội và Chính phủ và các cơ quan<br>Phân chia tuyệt đối theo lãnh thổ giữa trung ương và địa phương | **Thống nhất, có sự phân công, phối hợp, kiểm soát giữa các cơ quan nhà nước**<br>Tam quyền phân lập, các cơ quan độc lập và đối trọng lẫn nhau<br>Tập trung toàn bộ quyền lực vào Quốc hội và Chính phủ và các cơ quan<br>Thống nhất, có phân công, phối hợp nhưng không có kiểm soát giữa các cơ quan | Khoản 3 Điều 2 Hiến pháp 2013 | Bỏ 'tuyệt đối'.; Nhiễu thiếu 'kiểm soát' (từ Hiến pháp 2013 bổ sung so với 1992) — sai rõ. |
+| `hien-phap/bat-kha-xam-pham-than-the#1` | Quyền nào được Điều 19 Hiến pháp 2013 ghi nhận? | **Quyền sống**<br>Quyền tự do kinh doanh<br>Quyền bầu cử<br>Quyền khiếu nại | **Quyền không bị tước đoạt tính mạng trái luật**<br>Quyền tự do kinh doanh trong ngành nghề không bị cấm<br>Quyền bầu cử đại biểu Quốc hội và Hội đồng nhân dân<br>Quyền khiếu nại, tố cáo với cơ quan có thẩm quyền | Điều 19 Hiến pháp 2013 | Đáp án 'Quyền sống' trùng tên khái niệm; diễn đạt lại theo Điều 19 ('Không ai bị tước đoạt tính mạng trái luật').; Bỏ nguyên văn tên khái niệm khỏi chỗ chỉ lộ ở đáp án đúng |
+| `hien-phap/chu-quyen-nhan-dan#5` | Một cơ quan nhà nước ban hành quyết định với lý lẽ "quyền lực này là của riêng cơ quan chúng tôi, không phải do ai trao". Lập luận này trái với nguyên tắc nào của Hiến pháp 2013? | **Nguyên tắc tất cả quyền lực nhà nước thuộc về Nhân dân**<br>Nguyên tắc Hiến pháp có hiệu lực pháp lý cao nhất<br>Nguyên tắc Đảng lãnh đạo Nhà nước và xã hội<br>Nguyên tắc bảo vệ Hiến pháp và pháp luật của Nhà nước | **Nguyên tắc Nhân dân là chủ của quyền lực nhà nước**<br>Nguyên tắc Hiến pháp có hiệu lực pháp lý cao nhất<br>Nguyên tắc Đảng lãnh đạo Nhà nước và xã hội<br>Nguyên tắc bảo vệ Hiến pháp và pháp luật của Nhà nước | Khoản 2 Điều 2 Hiến pháp 2013 | Bỏ nguyên văn tên khái niệm khỏi đáp án. |
+| `hien-phap/chu-tich-nuoc-quan-he-co-quan#0` | Chủ tịch nước có quyền tham dự phiên họp của cơ quan nào theo Điều 90? | **Ủy ban thường vụ Quốc hội và Chính phủ**<br>Tòa án nhân dân tối cao và tòa án cấp tỉnh<br>Hội đồng nhân dân tỉnh và thành phố<br>Ban chấp hành Trung ương Đảng và các ban | **Ủy ban thường vụ Quốc hội và Chính phủ**<br>Ủy ban thường vụ Quốc hội và Tòa án nhân dân tối cao<br>Chính phủ và Hội đồng nhân dân tỉnh<br>Tòa án và Viện kiểm sát nhân dân tối cao | Điều 90 Hiến pháp 2013 | Nhiễu cũng chứa một nửa tên chủ thể → tên không còn chỉ nằm ở đáp án đúng.; Bỏ nguyên văn tên khái niệm khỏi chỗ chỉ lộ ở đáp án đúng |
+| `hien-phap/dang-cong-san-lanh-dao#0` | Điều 4 Hiến pháp 2013 xác định Đảng Cộng sản Việt Nam là gì? | **Lực lượng lãnh đạo Nhà nước và xã hội**<br>Cơ quan quyền lực nhà nước cao nhất<br>Cơ quan hành chính nhà nước cao nhất<br>Tổ chức chính trị - xã hội thông thường | **Lực lượng lãnh đạo Nhà nước và xã hội**<br>Cơ quan quyền lực nhà nước cao nhất<br>Lực lượng lãnh đạo của riêng Quốc hội<br>Tổ chức chính trị - xã hội thông thường | Điều 4 Hiến pháp 2013 | Thêm nhiễu cũng dùng 'lãnh đạo'.; Bỏ nguyên văn tên khái niệm khỏi chỗ chỉ lộ ở đáp án đúng |
+| `hien-phap/hien-phap-1980#1` | Bản Hiến pháp nào lần đầu ghi nhận vai trò lãnh đạo Nhà nước, xã hội của Đảng Cộng sản Việt Nam bằng một điều riêng? | **Hiến pháp 1980 (Điều 4)**<br>Hiến pháp 1946 của nước ta<br>Hiến pháp 1959 của nước ta<br>Luật Tổ chức Quốc hội | **Hiến pháp năm 1980 (Điều 4)**<br>Hiến pháp năm 1946 của nước ta<br>Hiến pháp năm 1959 của nước ta<br>Luật Tổ chức Quốc hội | Điều 4 Hiến pháp 1980 | Đồng bộ cách viết 'Hiến pháp năm …' ở mọi phương án. |
+| `hien-phap/hien-phap-1992#1` | Bản Hiến pháp nào lần đầu sử dụng thuật ngữ "quyền con người"? | **Hiến pháp 1992 (Điều 50)**<br>Hiến pháp 1946 của nước ta<br>Hiến pháp 1959 của nước ta<br>Hiến pháp 1980 của nước ta | **Hiến pháp năm 1992 (Điều 50)**<br>Hiến pháp năm 1946 của nước ta<br>Hiến pháp năm 1959 của nước ta<br>Hiến pháp năm 1980 của nước ta | Điều 50 Hiến pháp 1992 | Đồng bộ cách viết 'Hiến pháp năm …' ở mọi phương án. |
+| `hien-phap/nguyen-tac-mot-quoc-tich#5` | Ông P là công dân Việt Nam đồng thời có quốc tịch Mỹ, muốn ứng cử đại biểu Hội đồng nhân dân. Theo Luật Quốc tịch hiện hành, điều kiện về quốc tịch thế nào? | **Phải chỉ có một quốc tịch là quốc tịch Việt Nam và thường trú tại Việt Nam**<br>Được ứng cử vì vẫn có quốc tịch Việt Nam và thường trú tại Việt Nam<br>Chỉ cần thôi quốc tịch Việt Nam và tiếp tục giữ quốc tịch Mỹ đến khi ứng cử<br>Được ứng cử nếu có giấy tờ cư trú hợp lệ, không cần thôi quốc tịch Mỹ | **Phải thôi quốc tịch Mỹ để chỉ còn quốc tịch Việt Nam và thường trú tại Việt Nam**<br>Được ứng cử vì vẫn có quốc tịch Việt Nam và thường trú tại Việt Nam<br>Chỉ cần thôi quốc tịch Việt Nam và tiếp tục giữ quốc tịch Mỹ đến khi ứng cử<br>Được ứng cử nếu có giấy tờ cư trú hợp lệ, không cần thôi quốc tịch Mỹ | Theo đáp án cũ của câu (Luật Quốc tịch; người ứng cử phải chỉ có một quốc tịch Việt Nam) | Diễn đạt lại đáp án đúng, ý giữ nguyên. |
+| `hien-phap/nhiem-vu-chinh-quyen-dia-phuong#0` | Nhiệm vụ, quyền hạn của chính quyền địa phương được xác định trên cơ sở nào? | **Phân định thẩm quyền giữa trung ương và địa phương và của mỗi cấp chính quyền địa phương**<br>Ý chí của Chủ tịch Ủy ban nhân dân và các thành viên khác trong đơn vị hành chính<br>Thỏa thuận giữa các địa phương với nhau trong từng năm ngân sách và kế hoạch phát triển<br>Quyết định của Mặt trận Tổ quốc và các đoàn thể chính trị - xã hội trên địa bàn | **Phân định thẩm quyền giữa trung ương và địa phương và của mỗi cấp chính quyền địa phương**<br>Phân định thẩm quyền giữa các bộ, cơ quan ngang bộ và các cơ quan chuyên môn ở trung ương<br>Thỏa thuận giữa các chính quyền địa phương với nhau trong từng năm ngân sách<br>Quyết định của Mặt trận Tổ quốc và các đoàn thể chính trị - xã hội trên địa bàn | Khoản 2 Điều 112 Hiến pháp 2013 | Nhiễu cũng chứa cụm 'chính quyền địa phương'.; Nhiễu cũng chứa cụm 'phân định thẩm quyền' nhưng sai chủ thể. |
+| `hien-phap/so-huu-toan-dan#1` | Đối tượng nào thuộc sở hữu toàn dân theo Điều 53? | **Tài nguyên nước, khoáng sản, nguồn lợi vùng biển, vùng trời**<br>Nhà ở riêng của công dân và các tài sản cá nhân khác<br>Vốn góp của cổ đông vào công ty cổ phần tư nhân và tài sản<br>Thu nhập hợp pháp của cá nhân và các khoản tiết kiệm | **Tài nguyên nước, khoáng sản, nguồn lợi vùng biển, vùng trời**<br>Cây trồng, vật nuôi và tài nguyên sinh học do cá nhân tự đầu tư<br>Vốn góp của cổ đông vào công ty cổ phần tư nhân và tài sản<br>Thu nhập hợp pháp của cá nhân và các khoản tiết kiệm | Điều 53 Hiến pháp 2013 | Nhiễu cũng chứa 'tài nguyên'. |
+| `hien-phap/thu-tuong-chinh-phu#1` | Ai bổ nhiệm Thứ trưởng? | **Thủ tướng Chính phủ**<br>Chủ tịch Nhà nước<br>Quốc hội và Chính phủ<br>Bộ trưởng Tư pháp | **Thủ tướng Chính phủ**<br>Phó Thủ tướng Chính phủ phụ trách lĩnh vực đó<br>Quốc hội và Chính phủ<br>Bộ trưởng Tư pháp | Điều 98 Hiến pháp 2013 | Nhiễu chứa 'Thủ tướng Chính phủ'; thay 'Chủ tịch Nhà nước' (không có trong Hiến pháp 2013). |
+| `hien-phap/tranh-tung-hai-cap-bao-chua#1` | Nguyên tắc nào trong xét xử được bảo đảm theo khoản 5 Điều 103? | **Tranh tụng**<br>Thẩm vấn một chiều<br>Suy đoán có tội<br>Xét xử vắng mặt | **Tranh tụng**<br>Tranh tụng một chiều: bên buộc tội trình bày, bên bào chữa im lặng<br>Suy đoán có tội<br>Xét xử vắng mặt | Khoản 5 Điều 103 Hiến pháp 2013 | Nhiễu chứa 'tranh tụng' nhưng sai nội dung. |
+| `hien-phap/uy-ban-thuong-vu-quoc-hoi#1` | Cơ quan nào có thẩm quyền giải thích Hiến pháp, luật, pháp lệnh? | **Ủy ban thường vụ Quốc hội**<br>Tòa án nhân dân tối cao<br>Chính phủ và Thủ tướng<br>Bộ Tư pháp và Bộ Nội vụ | **Cơ quan thường trực của Quốc hội**<br>Hội đồng nhân dân và Tòa án tối cao<br>Chính phủ và Thủ tướng<br>Bộ Tư pháp và Bộ Nội vụ | Điều 74 Hiến pháp 2013; Điều 73 và Điều 74 Hiến pháp 2013 | Nhiễu chứa tên cơ quan nhưng sai thẩm quyền.; Đáp án diễn đạt lại ('cơ quan thường trực của Quốc hội' = Ủy ban thường vụ Quốc hội, Điều 73) để không trùng tên khái niệm. |
+
+### Câu Đúng/Sai đáp án Đúng thêm mới (33)
+
+| Mã | Nhận định (Đúng) | Căn cứ | Ghi chú |
+|---|---|---|---|
+| `hien-phap/bai-nhiem-dai-bieu#9` | Đại biểu Quốc hội, đại biểu Hội đồng nhân dân bị cử tri hoặc Quốc hội, Hội đồng nhân dân bãi nhiệm khi không còn xứng đáng với sự tín nhiệm của Nhân dân. | Khoản 2 Điều 7 Hiến pháp 2013 | nguyên văn khớp laws/*.txt |
+| `hien-phap/bao-ve-hien-phap#8` | Các cơ quan khác của Nhà nước và toàn thể Nhân dân có trách nhiệm bảo vệ Hiến pháp. | Khoản 2 Điều 119 Hiến pháp 2013 | nguyên văn khớp laws/*.txt |
+| `hien-phap/binh-dang-truoc-phap-luat#7` | Không ai bị phân biệt đối xử trong đời sống chính trị, dân sự, kinh tế, văn hóa, xã hội. | Khoản 2 Điều 16 Hiến pháp 2013 | nguyên văn khớp laws/*.txt |
+| `hien-phap/chat-van-hoi-dong-nhan-dan#7` | Người bị chất vấn phải trả lời trước Hội đồng nhân dân. | Khoản 2 Điều 115 Hiến pháp 2013 | nguyên văn khớp laws/*.txt |
+| `hien-phap/chinh-phu-vi-tri#7` | Chính phủ chịu trách nhiệm trước Quốc hội và báo cáo công tác trước Quốc hội, Ủy ban thường vụ Quốc hội, Chủ tịch nước. | Điều 94 Hiến pháp 2013 | nguyên văn khớp laws/*.txt |
+| `hien-phap/chu-tich-nuoc-quan-he-co-quan#7` | Chủ tịch nước có quyền tham dự phiên họp của Uỷ ban thường vụ Quốc hội, phiên họp của Chính phủ. | Điều 90 Hiến pháp 2013 | nguyên văn khớp laws/*.txt |
+| `hien-phap/chu-tich-nuoc-quoc-phong#7` | Hội đồng quốc phòng và an ninh làm việc theo chế độ tập thể và quyết định theo đa số. | Khoản 1 Điều 89 Hiến pháp 2013 | nguyên văn khớp laws/*.txt |
+| `hien-phap/co-cau-chinh-phu#7` | Chính phủ gồm Thủ tướng Chính phủ, các Phó Thủ tướng Chính phủ, các Bộ trưởng và Thủ trưởng cơ quan ngang bộ. | Khoản 1 Điều 95 Hiến pháp 2013 | nguyên văn khớp laws/*.txt |
+| `hien-phap/dai-bieu-quoc-hoi#7` | Đại biểu Quốc hội là người đại diện cho ý chí, nguyện vọng của Nhân dân ở đơn vị bầu cử ra mình và của Nhân dân cả nước. | Khoản 1 Điều 79 Hiến pháp 2013 | nguyên văn khớp laws/*.txt |
+| `hien-phap/danh-sach-cu-tri#7` | Mọi công dân có quyền bầu cử đều được ghi tên vào danh sách cử tri và được phát thẻ cử tri. | Khoản 1 Điều 29 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026) | nguyên văn khớp laws/*.txt |
+| `hien-phap/hien-phap-1959#7` | Quốc hội, Hội đồng nhân dân các cấp và các cơ quan Nhà nước khác đều thực hành nguyên tắc tập trung dân chủ – theo Điều 4 Hiến pháp 1959. | Điều 4 Hiến pháp 1959 | nguyên văn khớp laws/*.txt |
+| `hien-phap/hien-phap-1992#7` | Nhà nước Cộng hoà xã hội chủ nghĩa Việt Nam là Nhà nước của nhân dân, do nhân dân, vì nhân dân – theo Điều 2 Hiến pháp 1992. | Điều 2 Hiến pháp 1992 | nguyên văn khớp laws/*.txt |
+| `hien-phap/hiep-thuong-gioi-thieu-ung-cu#7` | Mặt trận Tổ quốc Việt Nam tổ chức hiệp thương lựa chọn, giới thiệu người ứng cử đại biểu Quốc hội và đại biểu Hội đồng nhân dân các cấp; tham gia giám sát việc bầu cử đại biểu Quốc hội và đại biểu Hội đồng nhân dân các cấp. | Khoản 5 Điều 4 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026) | nguyên văn khớp laws/*.txt |
+| `hien-phap/hoi-dong-dan-toc-uy-ban#7` | Khi cần thiết, Quốc hội thành lập Ủy ban lâm thời để nghiên cứu, thẩm tra một dự án hoặc điều tra về một vấn đề nhất định. | Điều 78 Hiến pháp 2013 | nguyên văn khớp laws/*.txt |
+| `hien-phap/hoi-dong-quoc-phong-an-ninh#7` | Danh sách thành viên Hội đồng quốc phòng và an ninh do Chủ tịch nước trình Quốc hội phê chuẩn. | Khoản 1 Điều 89 Hiến pháp 2013 | nguyên văn khớp laws/*.txt |
+| `hien-phap/kiem-toan-nha-nuoc#7` | Kiểm toán nhà nước là cơ quan do Quốc hội thành lập, hoạt động độc lập và chỉ tuân theo pháp luật. | Khoản 1 Điều 118 Hiến pháp 2013 | nguyên văn khớp laws/*.txt |
+| `hien-phap/kinh-te-thi-truong-dinh-huong-xhcn#7` | Tài sản hợp pháp của cá nhân, tổ chức đầu tư, sản xuất, kinh doanh được pháp luật bảo hộ và không bị quốc hữu hóa. | Khoản 3 Điều 51 Hiến pháp 2013 | nguyên văn khớp laws/*.txt |
+| `hien-phap/ngan-sach-nha-nuoc#7` | Các khoản thu, chi ngân sách nhà nước phải được dự toán và do luật định. | Khoản 2 Điều 55 Hiến pháp 2013 | nguyên văn khớp laws/*.txt |
+| `hien-phap/nguoi-khong-quoc-tich#7` | Người không quốc tịch là người không có quốc tịch Việt Nam và cũng không có quốc tịch nước ngoài. | Khoản 2 Điều 3 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025) | nguyên văn khớp laws/*.txt |
+| `hien-phap/nguyen-tac-bo-phieu#7` | Mỗi cử tri có quyền bỏ một phiếu bầu đại biểu Quốc hội và bỏ một phiếu bầu đại biểu Hội đồng nhân dân tương ứng với mỗi cấp Hội đồng nhân dân. | Khoản 1 Điều 69 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026) | nguyên văn khớp laws/*.txt |
+| `hien-phap/nhiem-ky-chinh-phu#7` | Khi Quốc hội hết nhiệm kỳ, Chính phủ tiếp tục làm nhiệm vụ cho đến khi Quốc hội khoá mới thành lập Chính phủ. | Điều 97 Hiến pháp 2013 | nguyên văn khớp laws/*.txt |
+| `hien-phap/nhiem-vu-chinh-quyen-dia-phuong#7` | Nhiệm vụ, quyền hạn của chính quyền địa phương được xác định trên cơ sở phân định thẩm quyền giữa các cơ quan nhà nước ở trung ương và địa phương và của mỗi cấp chính quyền địa phương. | Khoản 2 Điều 112 Hiến pháp 2013 | nguyên văn khớp laws/*.txt |
+| `hien-phap/pho-chu-tich-nuoc#7` | Trong trường hợp khuyết Chủ tịch nước thì Phó Chủ tịch nước giữ quyền Chủ tịch nước cho đến khi Quốc hội bầu ra Chủ tịch nước mới. | Điều 93 Hiến pháp 2013 | nguyên văn khớp laws/*.txt |
+| `hien-phap/quoc-tich-viet-nam#7` | Người có quốc tịch Việt Nam là công dân Việt Nam. | Khoản 1 Điều 5 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025) | nguyên văn khớp laws/*.txt |
+| `hien-phap/quyen-con-nguoi-quyen-cong-dan#8` | Ở nước Cộng hòa xã hội chủ nghĩa Việt Nam, các quyền con người, quyền công dân về chính trị, dân sự, kinh tế, văn hóa, xã hội được công nhận, tôn trọng, bảo vệ, bảo đảm theo Hiến pháp và pháp luật. | Khoản 1 Điều 14 Hiến pháp 2013 | nguyên văn khớp laws/*.txt |
+| `hien-phap/quyen-trinh-du-an-luat#7` | Đại biểu Quốc hội có quyền trình kiến nghị về luật, pháp lệnh và dự án luật, dự án pháp lệnh. | Khoản 2 Điều 84 Hiến pháp 2013 | nguyên văn khớp laws/*.txt |
+| `hien-phap/thanh-lap-giai-the-dvhc#7` | Việc thành lập, giải thể, nhập, chia, điều chỉnh địa giới đơn vị hành chính phải lấy ý kiến Nhân dân địa phương và theo trình tự, thủ tục do Quốc hội quy định. | Khoản 3 Điều 110 Hiến pháp 2013 (sửa đổi bởi NQ 203/2025/QH15) | nguyên văn khớp laws/*.txt |
+| `hien-phap/toa-an-vi-tri#7` | Tòa án nhân dân là cơ quan xét xử của nước Cộng hoà xã hội chủ nghĩa Việt Nam, thực hiện quyền tư pháp. | Khoản 1 Điều 102 Hiến pháp 2013 | nguyên văn khớp laws/*.txt |
+| `hien-phap/tranh-tung-hai-cap-bao-chua#7` | Quyền bào chữa của bị can, bị cáo, quyền bảo vệ lợi ích hợp pháp của đương sự được bảo đảm. | Khoản 7 Điều 103 Hiến pháp 2013 | nguyên văn khớp laws/*.txt |
+| `hien-phap/trung-cau-y-dan-hien-phap#8` | Ủy ban dự thảo Hiến pháp soạn thảo, tổ chức lấy ý kiến Nhân dân và trình Quốc hội dự thảo Hiến pháp. | Khoản 3 Điều 120 Hiến pháp 2013 | nguyên văn khớp laws/*.txt |
+| `hien-phap/tu-do-kinh-doanh#7` | Mọi người có quyền tự do kinh doanh trong những ngành nghề mà pháp luật không cấm. | Điều 33 Hiến pháp 2013 | nguyên văn khớp laws/*.txt |
+| `hien-phap/uy-ban-thuong-vu-quoc-hoi#8` | Ủy ban thường vụ Quốc hội gồm Chủ tịch Quốc hội, các Phó Chủ tịch Quốc hội và các Ủy viên. | Khoản 2 Điều 73 Hiến pháp 2013 | nguyên văn khớp laws/*.txt |
+| `hien-phap/xac-dinh-nguoi-trung-cu#7` | Trong trường hợp bầu cử thêm thì ngày bầu cử được tiến hành chậm nhất là 07 ngày sau ngày bầu cử đầu tiên. | Khoản 3 Điều 79 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026) | nguyên văn khớp laws/*.txt |

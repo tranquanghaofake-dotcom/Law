@@ -28,9 +28,9 @@
    "q": "Trước khi cơ quan có thẩm quyền giải quyết tranh chấp đất đai, các bên phải làm gì?",
    "options": [
     "Hòa giải tại Ủy ban nhân dân cấp xã nơi có đất tranh chấp",
-    "Nộp đơn lên Bộ",
-    "Thuê luật sư",
-    "Đấu giá đất"
+    "Nộp đơn lên Bộ Nông nghiệp và Môi trường để giải quyết",
+    "Thuê luật sư bào chữa và đại diện tại cơ quan hành chính",
+    "Đấu giá đất tranh chấp công khai tại cơ quan nhà nước"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 235.",
@@ -45,9 +45,9 @@
    "q": "Hình thức hòa giải nào được Nhà nước khuyến khích?",
    "options": [
     "Tự hòa giải, hòa giải ở cơ sở, hòa giải thương mại",
-    "Chỉ hòa giải tại Tòa án",
-    "Hòa giải qua mạng xã hội",
-    "Không khuyến khích"
+    "Chỉ hòa giải tại Tòa án nhân dân cấp tỉnh trở lên",
+    "Hòa giải qua mạng xã hội và các ứng dụng nhắn tin",
+    "Không khuyến khích hình thức hòa giải nào ngoài Tòa"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 235.",
@@ -73,6 +73,11 @@
     {
      "text": "Tự hòa giải giữa các bên",
      "answer": "right"
+    },
+    {
+     "text": "Trước khi Tòa án thụ lý tranh chấp đất đai, các bên phải qua hòa giải tại Ủy ban nhân dân cấp xã",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 235 Luật Đất đai 2024"
     }
    ],
    "explain": "Điều 235."

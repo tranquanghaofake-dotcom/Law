@@ -21,10 +21,10 @@
     {
       "q": "A nghĩ trong đầu về việc trộm xe của hàng xóm nhưng không làm gì. A có vi phạm pháp luật không?",
       "options": [
-        "Có, vì đã có ý định phạm tội",
-        "Có, nếu kể với người khác",
+        "Có, vì đã có ý định phạm tội và đã lên kế hoạch cụ thể trong đầu mình",
+        "Có, nếu kể với người khác về ý định đó, vì lời nói thể hiện ý chí vi phạm rõ ràng",
         "Không, vì vi phạm pháp luật phải là hành vi (hành động hoặc không hành động)",
-        "Chỉ vi phạm đạo đức, bị xử phạt hành chính"
+        "Có, vì đã vi phạm nghĩa vụ đạo đức nên bị xử phạt hành chính theo quy định"
       ],
       "answer": 2,
       "explain": "Pháp luật chỉ điều chỉnh hành vi. Suy nghĩ, ý định chưa thể hiện ra bằng hành vi thì không phải vi phạm pháp luật.",
@@ -35,7 +35,7 @@
       "q": "Người thực hiện nhận thức rõ hành vi của mình là nguy hiểm cho xã hội, thấy trước hậu quả và mong muốn hậu quả xảy ra. Đây là lỗi gì?",
       "options": [
         "Cố ý trực tiếp",
-        "Cố ý gián tiếp",
+        "Lỗi cố ý gián tiếp",
         "Vô ý vì quá tự tin",
         "Vô ý do cẩu thả"
       ],
@@ -47,7 +47,7 @@
     {
       "q": "B giăng dây điện quanh vườn để chống trộm, biết người đi qua có thể bị điện giật nhưng mặc kệ. Một người bị giật chết. Lỗi của B là gì?",
       "options": [
-        "Cố ý trực tiếp",
+        "Lỗi cố ý trực tiếp",
         "Cố ý gián tiếp",
         "Vô ý vì quá tự tin",
         "Không có lỗi vì chỉ muốn chống trộm"
@@ -60,10 +60,10 @@
     {
       "q": "Tài xế thấy có thể va chạm với người đi bộ nhưng tin rằng mình phanh kịp, và rồi gây tai nạn. Đây là lỗi gì?",
       "options": [
-        "Cố ý gián tiếp",
-        "Vô ý do cẩu thả",
+        "Lỗi cố ý gián tiếp",
+        "Vô ý, do cẩu thả",
         "Vô ý vì quá tự tin",
-        "Sự kiện bất ngờ"
+        "Là sự kiện bất ngờ"
       ],
       "answer": 2,
       "explain": "Vô ý vì quá tự tin: thấy trước hành vi có thể gây hậu quả nhưng cho rằng hậu quả sẽ không xảy ra hoặc có thể ngăn ngừa được. Vô ý do cẩu thả là không thấy trước hậu quả, dù phải thấy trước và có thể thấy trước.",
@@ -86,10 +86,10 @@
     {
       "q": "Người từ đủ 14 tuổi đến dưới 16 tuổi chịu trách nhiệm hình sự trong trường hợp nào?",
       "options": [
-        "Về mọi tội phạm",
-        "Chỉ về tội phạm ít nghiêm trọng",
+        "Về các tội phạm, dù cố ý hay vô ý, dù mức độ nghiêm trọng của hành vi và hậu quả ra sao",
+        "Về tội phạm ít nghiêm trọng, nhưng không phải về tội nghiêm trọng trở lên dù hành vi là cố ý",
         "Về tội phạm rất nghiêm trọng, đặc biệt nghiêm trọng thuộc các điều được liệt kê tại khoản 2 Điều 12",
-        "Không bao giờ chịu trách nhiệm hình sự"
+        "Không phải chịu trách nhiệm hình sự, kể cả trong trường hợp cố ý phạm tội rất nghiêm trọng"
       ],
       "answer": 2,
       "explain": "Nhóm tuổi này chỉ chịu trách nhiệm hình sự khi thỏa cả hai điều kiện: tội phạm rất nghiêm trọng hoặc đặc biệt nghiêm trọng, và thuộc danh sách điều luật liệt kê (giết người, cố ý gây thương tích, cướp, trộm cắp…).",
@@ -99,10 +99,10 @@
     {
       "q": "Một bạn 15 tuổi thực hiện một vi phạm hành chính do VÔ Ý. Bạn đó có bị xử phạt vi phạm hành chính không?",
       "options": [
-        "Có, như người thành niên",
+        "Có, như người đã đủ 18 tuổi, vì từ đủ 14 tuổi đã tự chịu trách nhiệm về mọi hành vi của mình",
         "Không, vì người từ đủ 14 đến dưới 16 tuổi chỉ bị xử phạt về vi phạm hành chính do cố ý",
-        "Có, nhưng cha mẹ phải nộp phạt gấp đôi",
-        "Bị truy cứu trách nhiệm hình sự thay thế"
+        "Có, bị phạt tiền như người lớn, vì lỗi vô ý vẫn bị xử phạt theo mức quy định chung",
+        "Bị truy cứu trách nhiệm hình sự thay thế cho việc xử phạt vi phạm hành chính do vô ý"
       ],
       "answer": 1,
       "explain": "Người từ đủ 14 tuổi đến dưới 16 tuổi chỉ bị xử phạt về vi phạm hành chính do cố ý; người từ đủ 16 tuổi trở lên bị xử phạt về mọi vi phạm hành chính.",
@@ -112,7 +112,7 @@
     {
       "q": "Một hành vi vi phạm hành chính bị xử phạt bao nhiêu lần?",
       "options": [
-        "Mỗi cơ quan phát hiện được xử phạt một lần",
+        "Mỗi cơ quan phạt một lần",
         "Tối đa hai lần",
         "Tùy mức độ thiệt hại",
         "Chỉ bị xử phạt một lần"

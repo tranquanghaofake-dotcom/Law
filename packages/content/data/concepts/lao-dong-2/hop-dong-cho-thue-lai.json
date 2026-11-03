@@ -28,9 +28,9 @@
    "q": "Hợp đồng cho thuê lại lao động được ký giữa những chủ thể nào?",
    "options": [
     "Doanh nghiệp cho thuê lại lao động và bên thuê lại lao động",
-    "Người lao động và bên thuê lại",
-    "Người lao động và doanh nghiệp cho thuê lại",
-    "Cơ quan nhà nước và doanh nghiệp"
+    "Người lao động và bên thuê lại lao động trực tiếp ký",
+    "Người lao động và doanh nghiệp cho thuê lại lao động",
+    "Cơ quan nhà nước và doanh nghiệp cho thuê lại lao động"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 55.",
@@ -45,9 +45,9 @@
    "q": "Doanh nghiệp cho thuê lại lao động phải đáp ứng điều kiện nào?",
    "options": [
     "Ký quỹ và được cấp Giấy phép hoạt động cho thuê lại lao động",
-    "Có vốn điều lệ trên 100 tỷ đồng",
-    "Là doanh nghiệp nhà nước",
-    "Có ít nhất 1.000 lao động"
+    "Có vốn điều lệ trên 100 tỷ đồng và có văn phòng riêng",
+    "Là doanh nghiệp nhà nước có đủ vốn điều lệ và nhân sự",
+    "Có ít nhất 1.000 lao động làm việc thường xuyên tại công ty"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 54.",
@@ -69,6 +69,16 @@
     {
      "text": "Doanh nghiệp cho thuê lại – bên thuê lại",
      "answer": "right"
+    },
+    {
+     "text": "Doanh nghiệp giao kết hợp đồng để người lao động được chuyển sang làm cho bên thuê",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 52 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Hợp đồng ghi địa điểm làm việc và vị trí việc làm cần sử dụng lao động thuê lại",
+     "answer": "right",
+     "basis": "Điểm a khoản 2 Điều 55 Bộ luật Lao động 2019"
     }
    ],
    "explain": "Điều 52, 55."
@@ -109,6 +119,18 @@
     "văn bản",
     "bên thuê lại"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Doanh nghiệp cho thuê lại lao động phải ký quỹ và được cấp Giấy phép hoạt động cho thuê lại lao động.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 54 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 54 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-18-VBHN-VPQH-2026-Bo-luat-lao-dong-695336.aspx"
+   }
   }
  ]
 }

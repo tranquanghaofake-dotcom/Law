@@ -30,9 +30,9 @@
    "q": "Hợp đồng thương mại có thỏa thuận phạt vi phạm. Bên bị vi phạm có quyền gì?",
    "options": [
     "Áp dụng cả phạt vi phạm và buộc bồi thường thiệt hại (trừ trường hợp luật quy định khác)",
-    "Chỉ được phạt vi phạm",
-    "Chỉ được bồi thường",
-    "Phải chọn một trong hai"
+    "Được phạt vi phạm nhưng không được đòi bồi thường thêm khoản nào khác dù thiệt hại rất lớn",
+    "Được bồi thường thiệt hại nhưng không được áp dụng phạt vi phạm dù đã thỏa thuận trong hợp đồng",
+    "Phải chọn một trong hai chế tài và không được thay đổi sau đó trong suốt thời gian thực hiện hợp đồng"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 307.",
@@ -49,7 +49,7 @@
     "Bên vi phạm có lỗi cố ý",
     "Có hành vi vi phạm hợp đồng",
     "Có thiệt hại thực tế",
-    "Hành vi vi phạm là nguyên nhân trực tiếp gây thiệt hại"
+    "Nhân quả với thiệt hại"
    ],
    "answer": 0,
    "explain": "Điều 303 không đòi hỏi lỗi cố ý.",
@@ -71,6 +71,21 @@
     {
      "text": "Chỉ chịu phạt vi phạm",
      "answer": "right"
+    },
+    {
+     "text": "Bên bán vi phạm hợp đồng có thỏa thuận phạt, bên mua vừa đòi phạt vừa đòi bồi thường thiệt hại",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 307 Luật Thương mại 2005"
+    },
+    {
+     "text": "Hợp đồng thương mại có thỏa thuận phạt; bên vi phạm còn phải bồi thường thiệt hại thực tế đã gây ra",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 307 Luật Thương mại 2005; Điều 303"
+    },
+    {
+     "text": "Hai bên đã thỏa thuận phạt nhưng không thỏa thuận bồi thường: bên bị vi phạm chỉ được chọn một trong hai",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 418 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 307 LTM; Điều 418 BLDS."

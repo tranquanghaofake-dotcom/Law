@@ -30,9 +30,9 @@
    "q": "Theo khoản 1 Điều 8, doanh thu tính thu nhập chịu thuế có phụ thuộc việc đã thu tiền chưa?",
    "options": [
     "Không phân biệt đã thu được tiền hay chưa",
-    "Chỉ tính khi đã thu tiền",
-    "Chỉ tính khi xuất hóa đơn đỏ",
-    "Chỉ tính khi khách xác nhận nợ"
+    "Có, phải thu được tiền về tài khoản mới tính",
+    "Có, phải thu tiền và đối chiếu công nợ mới tính",
+    "Có, phải được khách hàng thanh toán đủ mới tính"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 8.",
@@ -48,8 +48,8 @@
    "options": [
     "Phụ thu mà doanh nghiệp được hưởng",
     "Tiền vốn góp của thành viên",
-    "Tiền vay ngân hàng",
-    "Tiền nhận ký quỹ của khách"
+    "Tiền vay của ngân hàng thương mại",
+    "Tiền nhận ký quỹ của khách hàng"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 8.",
@@ -71,6 +71,16 @@
     {
      "text": "Tiền phát hành trái phiếu",
      "answer": "right"
+    },
+    {
+     "text": "Tiền cung ứng dịch vụ tư vấn thu của khách hàng, kể cả khoản phụ thu",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 8 Luật Thuế thu nhập doanh nghiệp 2025"
+    },
+    {
+     "text": "Tiền vay ngân hàng nhận để mua nguyên liệu sản xuất",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 8 Luật Thuế thu nhập doanh nghiệp 2025 (không phải tiền bán hàng, gia công, dịch vụ)"
     }
    ],
    "explain": "Khoản 1 Điều 8 Luật Thuế TNDN."
@@ -111,6 +121,18 @@
     "được hưởng",
     "chưa thu tiền"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Doanh thu để tính thu nhập chịu thuế là toàn bộ tiền bán hàng, tiền gia công, tiền cung ứng dịch vụ kể cả trợ giá, phụ thu, phụ trội mà doanh nghiệp được hưởng, không phân biệt đã thu được tiền hay chưa thu được tiền.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 8 Luật Thuế thu nhập doanh nghiệp 2025 (67/2025/QH15) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 8 Luật Thuế thu nhập doanh nghiệp 2025 (67/2025/QH15)",
+    "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-Thue-thu-nhap-doanh-nghiep-2025-so-67-2025-QH15-580594.aspx"
+   }
   }
  ]
 }

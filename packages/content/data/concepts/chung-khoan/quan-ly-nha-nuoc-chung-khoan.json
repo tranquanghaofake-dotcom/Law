@@ -73,6 +73,11 @@
     {
      "text": "Chỉ đạo việc thực hiện chiến lược, chính sách phát triển thị trường",
      "answer": "left"
+    },
+    {
+     "text": "Cơ quan thuộc Bộ Tài chính thu hồi giấy phép và chứng chỉ hành nghề chứng khoán",
+     "answer": "right",
+     "basis": "Điểm c khoản 1 Điều 9 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Điều 8 và Điều 9."
@@ -83,7 +88,7 @@
    "text": "{{Chính phủ}} thống nhất quản lý nhà nước về chứng khoán; {{Bộ Tài chính}} chịu trách nhiệm trước Chính phủ thực hiện quản lý nhà nước về chứng khoán.",
    "bank_extra": [
     "Quốc hội",
-    "Bộ Kế hoạch và Đầu tư"
+    "Bộ Công Thương"
    ]
   },
   {
@@ -113,6 +118,18 @@
     "Ủy ban Chứng khoán Nhà nước",
     "Ủy ban nhân dân"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chính phủ thống nhất quản lý nhà nước về chứng khoán và thị trường chứng khoán.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 8 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 8 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+   }
   }
  ]
 }

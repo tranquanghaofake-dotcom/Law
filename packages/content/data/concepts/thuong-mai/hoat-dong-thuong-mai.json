@@ -31,7 +31,7 @@
     "Nhằm mục đích sinh lợi",
     "Có sự tham gia của Nhà nước",
     "Phải có hợp đồng công chứng",
-    "Giá trị trên 100 triệu"
+    "Giá trị trên 100 triệu đồng"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 3.",
@@ -46,9 +46,9 @@
    "q": "Hàng hóa theo Luật Thương mại gồm những gì?",
    "options": [
     "Tất cả các loại động sản, kể cả hình thành trong tương lai, và vật gắn liền với đất đai",
-    "Mọi tài sản, kể cả quyền sử dụng đất",
-    "Chỉ động sản hiện có",
-    "Chỉ hàng hóa xuất nhập khẩu"
+    "Mọi tài sản, kể cả quyền sử dụng đất và các quyền tài sản khác của thương nhân",
+    "Chỉ động sản hiện có, không gồm hàng hình thành trong tương lai và vật gắn liền với đất",
+    "Chỉ hàng hóa xuất nhập khẩu do thương nhân nước ngoài cung cấp cho khách hàng"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 3.",
@@ -70,6 +70,16 @@
     {
      "text": "Tặng quà sinh nhật cho bạn",
      "answer": "right"
+    },
+    {
+     "text": "Doanh nghiệp đầu tư cổ phần nhằm thu lợi nhuận",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 3 Luật Thương mại 2005"
+    },
+    {
+     "text": "Hộ gia đình tự sản xuất lương thực để ăn trong nhà",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 3 Luật Thương mại 2005"
     }
    ],
    "explain": "Điều 3."
@@ -110,6 +120,18 @@
     "động sản",
     "đất đai"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hoạt động thương mại là hoạt động nhằm mục đích sinh lợi, bao gồm mua bán hàng hóa, cung ứng dịch vụ, đầu tư, xúc tiến thương mại và các hoạt động nhằm mục đích sinh lợi khác.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 3 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 3 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)",
+    "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+   }
   }
  ]
 }

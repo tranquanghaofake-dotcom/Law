@@ -29,7 +29,7 @@
    "q": "Hai doanh nghiệp chuyển toàn bộ tài sản, quyền, nghĩa vụ để hình thành một doanh nghiệp mới, đồng thời chấm dứt tồn tại. Đây là hình thức nào?",
    "options": [
     "Hợp nhất doanh nghiệp",
-    "Sáp nhập doanh nghiệp",
+    "Sáp nhập doanh nghiệp mới",
     "Liên doanh",
     "Mua lại doanh nghiệp"
    ],
@@ -46,9 +46,9 @@
    "q": "Tập trung kinh tế bị cấm khi nào theo Điều 30?",
    "options": [
     "Gây tác động hoặc có khả năng gây tác động hạn chế cạnh tranh một cách đáng kể trên thị trường Việt Nam",
-    "Khi thị phần kết hợp trên 50%",
-    "Khi giá trị giao dịch trên 1.000 tỷ đồng",
-    "Mọi tập trung kinh tế đều bị cấm"
+    "Khi thị phần kết hợp trên 50% trên thị trường liên quan và tổng giá trị tài sản trên ngưỡng quy định",
+    "Khi giá trị giao dịch trên 1.000 tỷ đồng hoặc khi các bên đều là doanh nghiệp nhà nước lớn",
+    "Mọi tập trung kinh tế đều bị cấm, không phân biệt quy mô, thị phần hay mức độ tác động đến thị trường"
    ],
    "answer": 0,
    "explain": "Điều 30.",
@@ -64,12 +64,22 @@
    "right": "Liên doanh",
    "cases": [
     {
-     "text": "Doanh nghiệp bị sáp nhập chấm dứt tồn tại",
+     "text": "Doanh nghiệp chuyển toàn bộ tài sản, quyền, nghĩa vụ và lợi ích hợp pháp sang doanh nghiệp khác rồi chấm dứt hoạt động",
      "answer": "left"
     },
     {
      "text": "Các bên góp vốn lập doanh nghiệp mới, vẫn tồn tại",
      "answer": "right"
+    },
+    {
+     "text": "Công ty X chuyển toàn bộ tài sản và nghĩa vụ sang công ty Y rồi không còn hoạt động nữa",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 29 Luật Cạnh tranh 2018"
+    },
+    {
+     "text": "Hai doanh nghiệp cùng góp một phần tài sản để thành lập một công ty mới chung",
+     "answer": "right",
+     "basis": "Khoản 5 Điều 29 Luật Cạnh tranh 2018"
     }
    ],
    "explain": "Khoản 2, 5 Điều 29."
@@ -110,6 +120,17 @@
     "mua lại",
     "đáng kể"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tập trung kinh tế bao gồm sáp nhập doanh nghiệp, hợp nhất doanh nghiệp, mua lại doanh nghiệp, liên doanh giữa các doanh nghiệp và các hình thức tập trung kinh tế khác theo quy định của pháp luật.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 29 Luật Cạnh tranh 2018.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 29 Luật Cạnh tranh 2018"
+   }
   }
  ]
 }

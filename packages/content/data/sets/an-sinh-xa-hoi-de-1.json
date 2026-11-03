@@ -9,9 +9,9 @@
       "q": "Bảo hiểm xã hội là gì theo Luật 2024?",
       "options": [
         "Sự bảo đảm thay thế hoặc bù đắp một phần thu nhập khi bị giảm, mất thu nhập do ốm đau, thai sản, tai nạn lao động, bệnh nghề nghiệp, nghỉ hưu hoặc chết",
-        "Khoản tiết kiệm cá nhân",
-        "Trợ cấp từ thiện",
-        "Bảo hiểm thương mại"
+        "Khoản tiết kiệm cá nhân được gửi tại ngân hàng để dùng khi già yếu, bệnh tật hoặc thất nghiệp, do mỗi người tự quyết định số tiền và thời gian gửi tiết kiệm",
+        "Trợ cấp từ thiện do các tổ chức xã hội tự nguyện chi trả cho người khó khăn hằng tháng theo danh sách do cơ quan địa phương lập và công bố công khai",
+        "Bảo hiểm thương mại do doanh nghiệp bảo hiểm cung cấp theo hợp đồng thỏa thuận giữa hai bên và có lợi nhuận chia cho chủ hợp đồng theo năm"
       ],
       "answer": 0,
       "explain": "Khoản 1 Điều 3.",
@@ -21,9 +21,9 @@
     {
       "q": "Loại hình nào là loại hình mới của Luật BHXH 2024, do ngân sách nhà nước bảo đảm?",
       "options": [
-        "BHXH tự nguyện",
+        "Bảo hiểm tai nạn lao động",
         "Trợ cấp hưu trí xã hội",
-        "BHXH bắt buộc",
+        "BHXH bắt buộc theo luật",
         "Bảo hiểm thất nghiệp"
       ],
       "answer": 1,
@@ -73,10 +73,10 @@
     {
       "q": "Mức hưởng BHXH được tính trên cơ sở nào?",
       "options": [
-        "Nhu cầu của người hưởng",
+        "Nhu cầu của người hưởng và hoàn cảnh",
         "Mức đóng và thời gian đóng, có chia sẻ",
-        "Số người phụ thuộc",
-        "Quyết định của công đoàn"
+        "Số người phụ thuộc trong gia đình",
+        "Quyết định của công đoàn cơ sở nơi làm"
       ],
       "answer": 1,
       "explain": "Khoản 1 Điều 5.",
@@ -100,9 +100,9 @@
       "q": "Người từ đủ 70 đến dưới 75 tuổi được hưởng trợ cấp hưu trí xã hội khi nào?",
       "options": [
         "Khi thuộc hộ nghèo, hộ cận nghèo và đủ điều kiện khác",
-        "Không bao giờ",
-        "Khi có con đi làm",
-        "Khi từng là công chức"
+        "Không bao giờ được hưởng chế độ này dù điều kiện gì",
+        "Khi có con đi làm và có thu nhập ổn định trong gia đình",
+        "Khi từng là công chức nhà nước đã về hưu lâu năm"
       ],
       "answer": 0,
       "explain": "Khoản 2 Điều 21.",
@@ -113,9 +113,9 @@
       "q": "Mức đóng BHXH tự nguyện tính trên cơ sở nào?",
       "options": [
         "Thu nhập do người tham gia lựa chọn",
-        "Lương tối thiểu vùng",
-        "Lương cơ sở",
-        "Thu nhập bình quân của tỉnh"
+        "Lương tối thiểu vùng bắt buộc đóng",
+        "Lương cơ sở do Nhà nước quy định",
+        "Thu nhập bình quân của tỉnh hằng năm"
       ],
       "answer": 0,
       "explain": "Khoản 2 Điều 5.",
@@ -126,9 +126,9 @@
       "q": "BHXH bắt buộc gồm chế độ nào?",
       "options": [
         "Ốm đau, thai sản, hưu trí, tử tuất, tai nạn lao động – bệnh nghề nghiệp",
-        "Chỉ hưu trí",
-        "Thất nghiệp và y tế",
-        "Trợ cấp hưu trí xã hội"
+        "Chỉ hưu trí và tử tuất, thai sản và các chế độ khác của người lao động làm việc",
+        "Thất nghiệp và y tế, không có chế độ thai sản đối với lao động nữ",
+        "Trợ cấp hưu trí xã hội dành cho người cao tuổi nghèo không có thu nhập"
       ],
       "answer": 0,
       "explain": "Khoản 2 Điều 4.",

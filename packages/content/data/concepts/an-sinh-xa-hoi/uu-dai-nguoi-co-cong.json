@@ -48,9 +48,9 @@
    "q": "Đối tượng nào là người có công với cách mạng?",
    "options": [
     "Bà mẹ Việt Nam anh hùng",
-    "Người khuyết tật nặng",
+    "Người bệnh hiểm nghèo",
     "Người cao tuổi neo đơn",
-    "Hộ nghèo"
+    "Hộ nghèo vùng sâu, xa"
    ],
    "answer": 0,
    "explain": "Điểm d khoản 1 Điều 3.",
@@ -72,6 +72,16 @@
     {
      "text": "Dành cho người yếu thế, hoàn cảnh khó khăn",
      "answer": "right"
+    },
+    {
+     "text": "Bà mẹ Việt Nam anh hùng được hưởng chế độ ưu đãi người có công với cách mạng",
+     "answer": "left",
+     "basis": "Điểm d khoản 1 Điều 3 Pháp lệnh Ưu đãi người có công với cách mạng 2020"
+    },
+    {
+     "text": "Người dân gặp thiên tai, không tự lo liệu được cuộc sống, được Nhà nước cứu trợ",
+     "answer": "right",
+     "basis": "Giáo trình Luật An sinh xã hội, Trường Đại học Luật Hà Nội (định nghĩa trợ giúp xã hội)"
     }
    ],
    "explain": "Điều 3 Pháp lệnh 02/2020; học thuyết."

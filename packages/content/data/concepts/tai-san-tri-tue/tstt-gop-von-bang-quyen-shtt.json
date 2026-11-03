@@ -29,7 +29,7 @@
    "level": 1,
    "q": "Tài sản nào được góp vốn theo khoản 1 Điều 34 Luật Doanh nghiệp?",
    "options": [
-    "Quyền sở hữu trí tuệ",
+    "Quyền đối với tài sản trí tuệ",
     "Quyền nhân thân của tác giả",
     "Uy tín cá nhân",
     "Danh hiệu thi đua"
@@ -47,15 +47,15 @@
    "q": "Ai được dùng quyền sở hữu trí tuệ để góp vốn?",
    "options": [
     "Chủ sở hữu hợp pháp hoặc người có quyền sử dụng hợp pháp",
-    "Bất kỳ ai biết về tài sản đó",
-    "Chỉ Nhà nước",
-    "Chỉ tác giả, dù không phải chủ sở hữu"
+    "Bất kỳ ai biết rõ về tài sản đó và có nhu cầu đầu tư",
+    "Nhà nước quyết định góp vốn thay chủ sở hữu",
+    "Tác giả, dù không phải chủ sở hữu hay được cấp quyền"
    ],
    "answer": 0,
-   "explain": "Khoản 2 Điều 34.",
+   "explain": "Khoản 2 Điều 34 Luật Doanh nghiệp 2020.",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 2 Điều 34 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+    "cite": "Khoản 2 Điều 34 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
    }
   },
   {
@@ -71,6 +71,16 @@
     {
      "text": "Quyền đứng tên tác giả trên tác phẩm",
      "answer": "right"
+    },
+    {
+     "text": "Bí quyết kỹ thuật do cá nhân nắm giữ được định giá bằng tiền để góp vốn",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 34 Luật Doanh nghiệp 2020"
+    },
+    {
+     "text": "Công sức làm việc của người sáng lập trong tương lai",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 34 Luật Doanh nghiệp 2020 (không phải tài sản có thể định giá)"
     }
    ],
    "explain": "Khoản 1 Điều 34 Luật Doanh nghiệp; quyền nhân thân không chuyển giao."

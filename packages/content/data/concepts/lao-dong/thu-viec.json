@@ -70,6 +70,16 @@
     {
      "text": "Công việc của công nhân kỹ thuật",
      "answer": "right"
+    },
+    {
+     "text": "Thời gian thử việc tối đa đối với công việc của người quản lý doanh nghiệp",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 25 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Thời gian thử việc tối đa đối với nhân viên nghiệp vụ hoặc công nhân kỹ thuật có chức danh trung cấp",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 25 Bộ luật Lao động 2019"
     }
    ],
    "explain": "Điều 25."

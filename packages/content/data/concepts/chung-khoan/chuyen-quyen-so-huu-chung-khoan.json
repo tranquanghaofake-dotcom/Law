@@ -28,9 +28,9 @@
    "q": "Với chứng khoán đã lưu ký tại Tổng công ty, việc chuyển quyền sở hữu có hiệu lực khi nào?",
    "options": [
     "Vào ngày thực hiện bút toán ghi sổ trên tài khoản lưu ký",
-    "Ngay khi khớp lệnh",
-    "Khi người mua trả đủ tiền cho người bán",
-    "Khi công ty phát hành cập nhật sổ cổ đông"
+    "Ngay khi khớp lệnh trên sàn giao dịch chứng khoán",
+    "Khi người mua trả đủ tiền cho người bán theo hợp đồng đã ký",
+    "Khi công ty phát hành cập nhật sổ cổ đông và thông báo rộng rãi"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 64.",
@@ -45,9 +45,9 @@
    "q": "Với chứng khoán thuộc diện đăng ký tập trung nhưng CHƯA lưu ký, quyền sở hữu chuyển khi nào?",
    "options": [
     "Vào ngày ghi Sổ đăng ký người sở hữu chứng khoán do Tổng công ty quản lý",
-    "Khi ký hợp đồng chuyển nhượng",
-    "Khi công chứng hợp đồng",
-    "Khi được Sở giao dịch chấp thuận"
+    "Khi ký hợp đồng chuyển nhượng giữa các bên có liên quan và đã thanh toán",
+    "Khi công chứng hợp đồng chuyển nhượng và đã đóng thuế trước bạ",
+    "Khi được Sở giao dịch chấp thuận bằng văn bản và công bố thông tin"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 64.",
@@ -69,6 +69,16 @@
     {
      "text": "Hiệu lực khi ghi Sổ đăng ký người sở hữu chứng khoán",
      "answer": "right"
+    },
+    {
+     "text": "Chuyển giao chứng khoán đang gửi tại tổ chức lưu ký có hiệu lực vào ngày thực hiện bút toán ghi sổ",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 64 Luật Chứng khoán 2019"
+    },
+    {
+     "text": "Chứng khoán đăng ký tập trung chưa lưu ký có hiệu lực khi ghi vào Sổ đăng ký người sở hữu",
+     "answer": "right",
+     "basis": "Khoản 4 Điều 61 Luật Chứng khoán 2019 (đối chiếu)"
     }
    ],
    "explain": "Khoản 2 và khoản 3 Điều 64."
@@ -97,9 +107,9 @@
    "q": "A khớp lệnh bán cổ phiếu cho B ngày 3/3; bút toán ghi sổ thực hiện ngày 5/3. Ngày 4/3 A chết. Cổ phiếu thuộc về ai tại thời điểm A chết?",
    "options": [
     "Vẫn thuộc A (là di sản), vì quyền sở hữu của B chỉ có hiệu lực từ 5/3; giao dịch tiếp tục thanh toán theo quy định",
-    "Đã thuộc B từ 3/3 khi khớp lệnh",
-    "Thuộc công ty chứng khoán",
-    "Thuộc Nhà nước vì giao dịch bị hủy"
+    "Đã thuộc B từ 3/3 khi khớp lệnh, vì B đã được ghi nhận là chủ sở hữu hợp pháp của số cổ phiếu đó theo thứ tự khớp lệnh",
+    "Thuộc công ty chứng khoán môi giới đã thực hiện giao dịch cho A và B trong ngày đó và nhận phí môi giới",
+    "Thuộc Nhà nước vì giao dịch bị hủy bỏ theo quyết định của cơ quan quản lý nhà nước về chứng khoán và thị trường"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 64: quyền sở hữu chuyển khi có bút toán ghi sổ. Câu hỏi dùng để kiểm tra mốc thời điểm; việc hoàn tất thanh toán do quy định về bù trừ, thanh toán điều chỉnh.",

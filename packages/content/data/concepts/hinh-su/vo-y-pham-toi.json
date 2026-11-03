@@ -30,8 +30,8 @@
    "options": [
     "Vô ý do cẩu thả",
     "Vô ý vì quá tự tin",
-    "Cố ý gián tiếp",
-    "Sự kiện bất ngờ"
+    "Lỗi cố ý gián tiếp",
+    "Sự kiện bất ngờ xảy ra"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 11.",
@@ -46,9 +46,9 @@
    "q": "Điểm khác nhau giữa vô ý vì quá tự tin và cố ý gián tiếp là gì?",
    "options": [
     "Quá tự tin cho rằng hậu quả sẽ không xảy ra hoặc ngăn ngừa được; cố ý gián tiếp thì để mặc",
-    "Quá tự tin không thấy trước hậu quả",
-    "Cố ý gián tiếp mong muốn hậu quả",
-    "Không có điểm khác"
+    "Quá tự tin không thấy trước hậu quả có thể xảy ra của hành vi nguy hiểm đó và thời điểm xảy ra",
+    "Cố ý gián tiếp mong muốn hậu quả xảy ra và đã chuẩn bị đầy đủ phương tiện, công cụ thực hiện",
+    "Không có điểm khác nhau nào về lỗi, về ý thức và về hậu quả xảy ra của hành vi"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 11; khoản 2 Điều 10.",
@@ -70,6 +70,16 @@
     {
      "text": "Không thấy trước dù phải và có thể thấy trước",
      "answer": "right"
+    },
+    {
+     "text": "Người biết nguy cơ cháy nhưng tin rằng không xảy ra nên vẫn đốt lửa trong kho",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 11 Bộ luật Hình sự 2015"
+    },
+    {
+     "text": "Người không lường trước hậu quả dù phải và có thể lường trước, khiến người đi đường chết",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 11 Bộ luật Hình sự 2015"
     }
    ],
    "explain": "Điều 11."
@@ -110,6 +120,18 @@
     "cẩu thả",
     "phải thấy trước"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người phạm tội không thấy trước hành vi của mình có thể gây ra hậu quả nguy hại cho xã hội, mặc dù phải thấy trước và có thể thấy trước hậu quả đó.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 11 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 11 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)",
+    "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+   }
   }
  ]
 }

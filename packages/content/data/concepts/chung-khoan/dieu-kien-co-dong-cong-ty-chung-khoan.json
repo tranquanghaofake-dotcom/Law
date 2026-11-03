@@ -71,6 +71,16 @@
     {
      "text": "Mức sở hữu tối đa (cùng người có liên quan) tại công ty chứng khoán khác",
      "answer": "right"
+    },
+    {
+     "text": "Cổ đông nắm tối thiểu mười phần trăm vốn điều lệ của một công ty chứng khoán",
+     "answer": "left",
+     "basis": "Điểm c khoản 2 Điều 74 Luật Chứng khoán 2019"
+    },
+    {
+     "text": "Cổ đông đã nắm tối thiểu mười phần trăm ở một công ty chứng khoán thì không được sở hữu quá năm phần trăm vốn điều lệ ở công ty chứng khoán khác",
+     "answer": "right",
+     "basis": "Điểm c khoản 2 và khoản 3 Điều 74 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Điểm c khoản 2 Điều 74: sở hữu từ 10% một công ty thì không sở hữu trên 5% công ty khác."
@@ -99,9 +109,9 @@
    "q": "Tập đoàn C sở hữu 12% vốn điều lệ công ty chứng khoán D. Công ty con của C (người có liên quan) muốn mua 8% vốn công ty chứng khoán E. Có hợp lệ không?",
    "options": [
     "Không, vì C và người có liên quan không được sở hữu trên 5% vốn điều lệ của công ty chứng khoán khác",
-    "Có, vì công ty con là pháp nhân độc lập",
-    "Có, nếu E chưa niêm yết",
-    "Có, vì 8% dưới 10%"
+    "Có, vì công ty con là pháp nhân độc lập, không liên quan đến tập đoàn mẹ và các thành viên khác trong nhóm",
+    "Có, nếu E chưa niêm yết trên sàn giao dịch và có đủ vốn điều lệ theo quy định của pháp luật",
+    "Có, vì 8% dưới 10% và chưa vượt ngưỡng sở hữu mà luật chứng khoán quy định đối với công ty con"
    ],
    "answer": 0,
    "explain": "Điểm c khoản 2 Điều 74 tính cả người có liên quan.",

@@ -21,10 +21,10 @@
     {
       "q": "Nguyên đơn chỉ yêu cầu trả nợ gốc. Tòa án có được tự buộc bị đơn trả thêm lãi không?",
       "options": [
-        "Có",
+        "Có, Tòa án được quyền tự quyết định thêm lãi",
         "Không, chỉ giải quyết trong phạm vi đơn khởi kiện",
-        "Có nếu lãi hợp pháp",
-        "Có nếu bị đơn đồng ý ở phiên tòa"
+        "Có nếu lãi hợp pháp và được bị đơn đồng ý trước",
+        "Có nếu bị đơn đồng ý ở phiên tòa và không phản đối"
       ],
       "answer": 1,
       "explain": "Khoản 1 Điều 5.",
@@ -35,9 +35,9 @@
       "q": "Hội thẩm nhân dân không tham gia xét xử sơ thẩm vụ án dân sự trong trường hợp nào?",
       "options": [
         "Xét xử theo thủ tục rút gọn",
-        "Vụ án ly hôn",
+        "Vụ án ly hôn có con chung",
         "Vụ án có yếu tố nước ngoài",
-        "Vụ án lao động"
+        "Vụ án lao động có nhiều người"
       ],
       "answer": 0,
       "explain": "Khoản 1 Điều 11.",
@@ -74,9 +74,9 @@
       "q": "Theo nguyên tắc chung, tranh chấp hợp đồng mua bán giữa hai cá nhân do Tòa án nơi nào giải quyết?",
       "options": [
         "Nơi bị đơn cư trú, làm việc",
-        "Nơi nguyên đơn cư trú",
-        "Nơi ký hợp đồng",
-        "Nơi thanh toán"
+        "Nơi nguyên đơn cư trú tạm thời",
+        "Nơi ký hợp đồng mua bán",
+        "Nơi thanh toán tiền hàng"
       ],
       "answer": 0,
       "explain": "Điểm a khoản 1 Điều 39.",
@@ -86,10 +86,10 @@
     {
       "q": "Người bảo lãnh cho khoản vay trong vụ kiện đòi nợ có thể tham gia tố tụng với tư cách gì?",
       "options": [
-        "Nguyên đơn",
+        "Nguyên đơn trong vụ kiện đòi nợ này",
         "Người có quyền lợi, nghĩa vụ liên quan",
-        "Người làm chứng bắt buộc",
-        "Người giám định"
+        "Người làm chứng bắt buộc phải có mặt",
+        "Người giám định độc lập của Tòa án"
       ],
       "answer": 1,
       "explain": "Khoản 1 Điều 68.",
@@ -125,10 +125,10 @@
     {
       "q": "Tin nhắn điện thoại có thể là nguồn chứng cứ không?",
       "options": [
-        "Không",
-        "Có, là dữ liệu điện tử",
-        "Chỉ khi công chứng",
-        "Chỉ trong vụ án hình sự"
+        "Không, vì không có chữ ký trên giấy",
+        "Có, vì là dữ liệu điện tử theo Điều 94",
+        "Có, nếu đã được công chứng",
+        "Có, nếu là vụ án hình sự"
       ],
       "answer": 1,
       "explain": "Khoản 1 Điều 94.",

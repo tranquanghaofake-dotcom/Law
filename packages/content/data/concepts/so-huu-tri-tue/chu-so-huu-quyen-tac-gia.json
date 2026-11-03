@@ -29,9 +29,9 @@
    "q": "Chủ sở hữu quyền tác giả nắm giữ những quyền nào?",
    "options": [
     "Một, một số hoặc toàn bộ quyền công bố (khoản 3 Điều 19) và quyền tài sản (khoản 1 Điều 20)",
-    "Quyền đứng tên tác giả",
-    "Quyền bảo vệ sự toàn vẹn tác phẩm",
-    "Mọi quyền nhân thân"
+    "Quyền đứng tên tác giả trên tác phẩm đã công bố, chưa công bố và tác phẩm phái sinh",
+    "Quyền bảo vệ sự toàn vẹn tác phẩm của tác giả trước mọi hành vi sửa đổi và cắt xén nội dung",
+    "Mọi quyền nhân thân của tác giả không có thời hạn và không có giới hạn về nội dung"
    ],
    "answer": 0,
    "explain": "Điều 36.",
@@ -48,7 +48,7 @@
     "Công ty giao nhiệm vụ",
     "Nhân viên",
     "Nhà nước",
-    "Cả hai đồng sở hữu đương nhiên"
+    "Cả hai cùng là chủ sở hữu"
    ],
    "answer": 0,
    "explain": "Điều 39.",
@@ -70,6 +70,16 @@
     {
      "text": "Công ty thuê sáng tác, nắm quyền tài sản",
      "answer": "right"
+    },
+    {
+     "text": "Người trực tiếp sáng tạo tác phẩm có quyền đứng tên thật hoặc bút danh trên tác phẩm",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 19 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Doanh nghiệp nhận chuyển nhượng toàn bộ quyền tài sản của tác phẩm theo hợp đồng",
+     "answer": "right",
+     "basis": "Điều 36 và khoản 1 Điều 45 Luật Sở hữu trí tuệ"
     }
    ],
    "explain": "Điều 13, 36, 39."
@@ -110,6 +120,17 @@
     "nhiệm vụ",
     "chuyển giao"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chủ sở hữu quyền tác giả là tổ chức, cá nhân nắm giữ một, một số hoặc toàn bộ quyền quy định tại khoản 3 Điều 19 và khoản 1 Điều 20 của Luật Sở hữu trí tuệ.",
+   "answer": true,
+   "explain": "Đúng. Điều 36 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 36 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
   }
  ]
 }

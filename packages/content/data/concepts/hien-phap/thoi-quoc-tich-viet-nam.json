@@ -29,9 +29,9 @@
    "q": "Chủ thể nào KHÔNG được thôi quốc tịch Việt Nam theo khoản 4 Điều 27?",
    "options": [
     "Cán bộ, công chức và người đang phục vụ trong lực lượng vũ trang nhân dân",
-    "Sinh viên du học",
-    "Người kinh doanh ở nước ngoài",
-    "Người đã nghỉ hưu"
+    "Sinh viên du học ở nước ngoài và học sinh trung học đang học tập",
+    "Người kinh doanh ở nước ngoài và người lao động xuất khẩu hợp pháp",
+    "Người đã nghỉ hưu và đang sống ở nước ngoài lâu dài và có nhà tại đó"
    ],
    "answer": 0,
    "explain": "Khoản 4 Điều 27.",
@@ -68,12 +68,18 @@
      "answer": "left"
     },
     {
-     "text": "Đang là sĩ quan quân đội tại ngũ",
+     "text": "Việc thôi làm phương hại đến lợi ích quốc gia",
      "answer": "right"
     },
     {
-     "text": "Việc thôi làm phương hại đến lợi ích quốc gia",
-     "answer": "right"
+     "text": "Công dân xin thôi quốc tịch Việt Nam nhưng đang bị truy cứu trách nhiệm hình sự",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 27 Luật Quốc tịch Việt Nam 2008"
+    },
+    {
+     "text": "Công dân xin thôi quốc tịch Việt Nam nhưng đang nợ thuế đối với Nhà nước",
+     "answer": "left",
+     "basis": "Điểm a khoản 2 Điều 27 Luật Quốc tịch Việt Nam 2008 (VBHN)"
     }
    ],
    "explain": "Khoản 2, 3, 4 Điều 27."

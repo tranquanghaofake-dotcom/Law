@@ -29,9 +29,9 @@
    "q": "Người lao động tự ý bỏ việc không có lý do chính đáng bao nhiêu ngày làm việc liên tục thì người sử dụng lao động được đơn phương chấm dứt hợp đồng?",
    "options": [
     "Từ 05 ngày làm việc liên tục trở lên",
-    "03 ngày",
-    "10 ngày",
-    "30 ngày"
+    "Từ 03 ngày làm việc liên tục trở lên",
+    "Từ 10 ngày làm việc liên tục trở lên",
+    "Từ 30 ngày làm việc liên tục trở lên"
    ],
    "answer": 0,
    "explain": "Điểm e khoản 1 Điều 36.",
@@ -46,9 +46,9 @@
    "q": "Căn cứ \"thường xuyên không hoàn thành công việc\" được xác định dựa trên đâu?",
    "options": [
     "Tiêu chí đánh giá trong quy chế của người sử dụng lao động",
-    "Ý kiến cá nhân của giám đốc",
-    "Đánh giá của đồng nghiệp",
-    "Quyết định của Sở Lao động"
+    "Ý kiến cá nhân của giám đốc, không cần theo quy chế",
+    "Đánh giá của đồng nghiệp trong cùng bộ phận, không cần văn bản",
+    "Quyết định của Sở Nội vụ nơi người sử dụng lao động đặt trụ sở"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 1 Điều 36.",
@@ -70,6 +70,16 @@
     {
      "text": "Phải có một trong các căn cứ luật định",
      "answer": "right"
+    },
+    {
+     "text": "Người lao động làm hợp đồng 6 tháng nghỉ việc, báo trước ít nhất 03 ngày làm việc",
+     "answer": "left",
+     "basis": "Điểm c khoản 1 Điều 35 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Người lao động thường xuyên không hoàn thành công việc theo tiêu chí trong quy chế của đơn vị",
+     "answer": "right",
+     "basis": "Điểm a khoản 1 Điều 36 Bộ luật Lao động 2019"
     }
    ],
    "explain": "Điều 35, 36."

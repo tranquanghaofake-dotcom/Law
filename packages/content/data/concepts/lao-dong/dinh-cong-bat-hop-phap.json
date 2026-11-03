@@ -29,9 +29,9 @@
    "q": "Đình công khi tranh chấp lao động tập thể đang được cơ quan có thẩm quyền giải quyết thì sao?",
    "options": [
     "Là đình công bất hợp pháp",
-    "Là đình công hợp pháp",
-    "Được Tòa án công nhận",
-    "Chỉ bị nhắc nhở"
+    "Là đình công hợp pháp ngay",
+    "Được Tòa án công nhận ngay",
+    "Chỉ bị nhắc nhở bằng văn bản"
    ],
    "answer": 0,
    "explain": "Khoản 4 Điều 204.",
@@ -46,9 +46,9 @@
    "q": "Trường hợp nào KHÔNG thuộc Điều 204?",
    "options": [
     "Đình công do tổ chức đại diện có quyền lãnh đạo, đúng trình tự, sau khi hòa giải tranh chấp về lợi ích không thành",
-    "Không do tổ chức đại diện có quyền lãnh đạo",
-    "Vi phạm trình tự, thủ tục",
-    "Đã có quyết định ngừng đình công"
+    "Không do tổ chức đại diện có quyền lãnh đạo, tự phát do một nhóm công nhân trong xưởng tổ chức đột xuất",
+    "Vi phạm trình tự, thủ tục đình công, như không lấy ý kiến tập thể người lao động trước khi đình công",
+    "Đã có quyết định hoãn hoặc ngừng đình công của cơ quan có thẩm quyền mà người lao động vẫn tiếp tục đình công"
    ],
    "answer": 0,
    "explain": "Phương án 1 là trường hợp được đình công (Điều 199).",
@@ -70,6 +70,16 @@
     {
      "text": "Đình công đúng trình tự sau khi hòa giải về lợi ích không thành",
      "answer": "right"
+    },
+    {
+     "text": "Đình công do người không phải tổ chức đại diện người lao động có quyền lãnh đạo tổ chức",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 204 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Đình công đúng trường hợp, đúng trình tự, do tổ chức đại diện người lao động lãnh đạo",
+     "answer": "right",
+     "basis": "Khoản 1–3 Điều 204 Bộ luật Lao động 2019 (không vi phạm điều kiện nào)"
     }
    ],
    "explain": "Điều 199, 204, 209."

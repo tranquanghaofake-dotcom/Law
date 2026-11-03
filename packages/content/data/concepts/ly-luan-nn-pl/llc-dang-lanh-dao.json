@@ -31,9 +31,9 @@
    "q": "Theo khoản 1 Điều 4 Hiến pháp 2013, Đảng Cộng sản Việt Nam là gì?",
    "options": [
     "Lực lượng lãnh đạo Nhà nước và xã hội",
-    "Cơ quan quyền lực nhà nước cao nhất",
-    "Cơ quan hành pháp",
-    "Tổ chức xã hội nghề nghiệp"
+    "Cơ quan quyền lực cao nhất của nhà nước",
+    "Cơ quan hành pháp cao nhất của Nhà nước",
+    "Tổ chức nghề nghiệp, xã hội tự nguyện"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 4.",
@@ -48,9 +48,9 @@
    "q": "Tổ chức đảng và đảng viên hoạt động trong khuôn khổ nào?",
    "options": [
     "Hiến pháp và pháp luật",
-    "Chỉ Điều lệ Đảng",
+    "Điều lệ Đảng và nghị quyết",
     "Không bị ràng buộc",
-    "Chỉ nghị quyết của Đảng"
+    "Nghị quyết của Ban Chấp hành"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 4.",
@@ -72,6 +72,16 @@
     {
      "text": "Ban hành luật và tổ chức thi hành",
      "answer": "right"
+    },
+    {
+     "text": "Đảng là lực lượng lãnh đạo Nhà nước và xã hội, lấy chủ nghĩa Mác - Lê nin và tư tưởng Hồ Chí Minh làm nền tảng tư tưởng",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 4 Hiến pháp 2013"
+    },
+    {
+     "text": "Quốc hội thông qua luật và Chính phủ tổ chức thi hành luật",
+     "answer": "right",
+     "basis": "Điều 2 Hiến pháp 2013 (phân công quyền lập pháp, hành pháp)"
     }
    ],
    "explain": "Khoản 1 Điều 4; Điều 8."

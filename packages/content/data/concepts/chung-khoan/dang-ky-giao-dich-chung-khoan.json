@@ -28,9 +28,9 @@
    "q": "Theo khoản 25 Điều 4, đăng ký giao dịch là gì?",
    "options": [
     "Đưa chứng khoán vào giao dịch trên hệ thống giao dịch cho chứng khoán chưa niêm yết",
-    "Đưa chứng khoán đủ điều kiện vào hệ thống cho chứng khoán niêm yết",
-    "Ghi nhận thông tin người sở hữu chứng khoán",
-    "Đăng ký mở tài khoản giao dịch"
+    "Đưa chứng khoán đủ điều kiện vào hệ thống giao dịch cho chứng khoán niêm yết",
+    "Ghi nhận thông tin người sở hữu chứng khoán và thông tin tổ chức phát hành trong sổ",
+    "Đăng ký mở tài khoản giao dịch chứng khoán cho nhà đầu tư tại công ty chứng khoán"
    ],
    "answer": 0,
    "explain": "Khoản 25 Điều 4. Lưu ý phân biệt với \"đăng ký chứng khoán\" (khoản 33): ghi nhận thông tin tổ chức phát hành, chứng khoán, người sở hữu.",
@@ -45,9 +45,9 @@
    "q": "Khái niệm nào dễ nhầm nhất với \"đăng ký giao dịch\"?",
    "options": [
     "Đăng ký chứng khoán (khoản 33 Điều 4)",
-    "Bảo lãnh phát hành",
-    "Tự doanh chứng khoán",
-    "Quỹ mở"
+    "Bảo lãnh phát hành chứng khoán cho tổ chức",
+    "Tự doanh chứng khoán trên sàn giao dịch",
+    "Quỹ mở đầu tư chứng khoán đại chúng"
    ],
    "answer": 0,
    "explain": "Đăng ký chứng khoán là ghi nhận thông tin về tổ chức phát hành, chứng khoán và người sở hữu; đăng ký giao dịch là đưa chứng khoán chưa niêm yết vào giao dịch.",
@@ -69,6 +69,16 @@
     {
      "text": "Ghi nhận thông tin về tổ chức phát hành, chứng khoán và người sở hữu",
      "answer": "right"
+    },
+    {
+     "text": "Đưa cổ phiếu chưa niêm yết của công ty đại chúng vào hệ thống giao dịch",
+     "answer": "left",
+     "basis": "Khoản 25 Điều 4 Luật Chứng khoán 2019"
+    },
+    {
+     "text": "Tổng công ty lưu ký lập Sổ đăng ký người sở hữu chứng khoán",
+     "answer": "right",
+     "basis": "Khoản 4 Điều 61 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 25 và khoản 33 Điều 4."

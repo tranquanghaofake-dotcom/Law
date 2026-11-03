@@ -8,10 +8,10 @@
     {
       "q": "Nhận được 5 triệu chuyển khoản nhầm. Nghĩa vụ hoàn trả phát sinh từ căn cứ nào?",
       "options": [
-        "Hợp đồng",
+        "Hợp đồng vay dân sự có lãi suất theo thỏa thuận",
         "Được lợi về tài sản không có căn cứ pháp luật",
-        "Hành vi pháp lý đơn phương",
-        "Gây thiệt hại"
+        "Hành vi pháp lý đơn phương của người chuyển nhầm",
+        "Gây thiệt hại cho người khác do lỗi của chính mình"
       ],
       "answer": 1,
       "explain": "Khoản 4 Điều 275.",
@@ -34,7 +34,7 @@
     {
       "q": "Vay ngân hàng, bạn dùng căn nhà đang ở để bảo đảm và vẫn ở trong nhà. Đây là biện pháp gì?",
       "options": [
-        "Cầm cố",
+        "Bảo lãnh",
         "Thế chấp",
         "Đặt cọc",
         "Ký cược"
@@ -63,7 +63,7 @@
         "Bên bảo lãnh",
         "Bên được bảo lãnh",
         "Bên nhận bảo lãnh",
-        "Bên thế chấp"
+        "Bên thế chấp tài sản"
       ],
       "answer": 0,
       "explain": "Điều 335.",
@@ -73,10 +73,10 @@
     {
       "q": "Hợp đồng in sẵn của bãi giữ xe ghi \"không chịu trách nhiệm khi mất xe\". Điều khoản này thế nào?",
       "options": [
-        "Có hiệu lực vì khách đã nhận vé",
+        "Có hiệu lực vì khách đã nhận vé gửi xe và đồng ý với điều khoản này trong hợp đồng",
         "Không có hiệu lực vì là điều khoản miễn trách nhiệm của bên đưa ra hợp đồng theo mẫu",
-        "Chỉ có hiệu lực nếu in đậm",
-        "Có hiệu lực với xe giá trị nhỏ"
+        "Có hiệu lực nếu được in đậm và đặt ngay ở trang đầu tiên của hợp đồng gửi xe",
+        "Có hiệu lực với xe có giá trị nhỏ, dưới năm triệu đồng và không đáng kể trong hợp đồng này"
       ],
       "answer": 1,
       "explain": "Khoản 3 Điều 405.",
@@ -99,10 +99,10 @@
     {
       "q": "Hai người thỏa thuận cho vay lãi 36%/năm. Phần lãi nào có hiệu lực?",
       "options": [
-        "Toàn bộ 36%",
+        "Toàn bộ 36%/năm theo đúng thỏa thuận ban đầu",
         "Tối đa 20%/năm; phần vượt không có hiệu lực",
-        "Không có lãi vì hợp đồng vô hiệu",
-        "10%/năm"
+        "Không có lãi vì hợp đồng vô hiệu hoàn toàn",
+        "10%/năm, phần còn lại không có hiệu lực"
       ],
       "answer": 1,
       "explain": "Khoản 1 Điều 468.",
@@ -127,8 +127,8 @@
       "options": [
         "Khi mẹ nói tặng",
         "Khi con nhận nhẫn",
-        "Khi công chứng",
-        "Khi đăng ký"
+        "Khi công chứng xong",
+        "Khi đăng ký nhẫn"
       ],
       "answer": 1,
       "explain": "Khoản 1 Điều 458.",

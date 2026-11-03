@@ -29,9 +29,9 @@
    "q": "Điểm khác nhau cơ bản giữa giám đốc thẩm và tái thẩm là gì?",
    "options": [
     "Giám đốc thẩm do vi phạm pháp luật; tái thẩm do phát hiện tình tiết mới",
-    "Giám đốc thẩm xét bản án chưa có hiệu lực",
-    "Tái thẩm do đương sự kháng cáo",
-    "Không có khác biệt"
+    "Giám đốc thẩm xét bản án chưa có hiệu lực pháp luật của cấp sơ thẩm",
+    "Tái thẩm do đương sự kháng cáo bản án sơ thẩm trong thời hạn luật định",
+    "Không có khác biệt về căn cứ, thẩm quyền và thủ tục xét xử giữa hai thủ tục"
    ],
    "answer": 0,
    "explain": "Điều 325, 351.",
@@ -46,9 +46,9 @@
    "q": "Ai có thẩm quyền kháng nghị giám đốc thẩm bản án có hiệu lực của TAND khu vực trong phạm vi lãnh thổ?",
    "options": [
     "Chánh án TAND cấp tỉnh, Viện trưởng VKSND cấp tỉnh (và cấp tối cao)",
-    "Đương sự",
-    "Luật sư",
-    "Thẩm phán đã xét xử sơ thẩm"
+    "Đương sự có quyền kháng nghị trực tiếp lên Tòa án cấp tối cao",
+    "Luật sư tham gia tố tụng có quyền đưa ra kháng nghị bản án",
+    "Thẩm phán đã xét xử sơ thẩm vụ án đó theo quyết định của mình"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 331.",
@@ -70,6 +70,16 @@
     {
      "text": "Phát hiện tình tiết mới mà đương sự không biết được",
      "answer": "right"
+    },
+    {
+     "text": "Kết luận trong bản án không phù hợp với tình tiết khách quan, gây thiệt hại cho đương sự",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 326 Bộ luật Tố tụng dân sự 2015"
+    },
+    {
+     "text": "Người giám định có kết luận không đúng sự thật hoặc có giả mạo chứng cứ",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 352 Bộ luật Tố tụng dân sự 2015"
     }
    ],
    "explain": "Điều 326, 352."

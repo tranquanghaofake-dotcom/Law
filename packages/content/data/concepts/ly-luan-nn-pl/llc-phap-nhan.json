@@ -30,15 +30,15 @@
    "q": "Điều kiện nào để tổ chức được công nhận là pháp nhân?",
    "options": [
     "Có tài sản độc lập và tự chịu trách nhiệm bằng tài sản của mình",
-    "Có trên 10 thành viên",
-    "Có vốn trên 1 tỷ đồng",
-    "Do Nhà nước thành lập"
+    "Có vốn điều lệ trên một tỷ đồng và đăng ký tại cơ quan thuế địa phương",
+    "Có trên mười thành viên hoạt động thường xuyên trong nước",
+    "Do Nhà nước thành lập và giao quyền quản lý tài sản công"
    ],
    "answer": 0,
    "explain": "Điểm c khoản 1 Điều 74.",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 1 Điều 74 Hiến pháp 2013"
+    "cite": "Khoản 1 Điều 74 Bộ luật Dân sự 2015"
    }
   },
   {
@@ -55,7 +55,7 @@
    "explain": "Doanh nghiệp tư nhân không có tài sản độc lập với chủ (Luật Doanh nghiệp Điều 188).",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 1 Điều 74 Hiến pháp 2013"
+    "cite": "Khoản 1 Điều 74 Bộ luật Dân sự 2015"
    }
   },
   {
@@ -71,6 +71,16 @@
     {
      "text": "Hộ kinh doanh gia đình",
      "answer": "right"
+    },
+    {
+     "text": "Công ty cổ phần được thành lập theo luật, có tài sản độc lập và tên gọi riêng",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 74 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Nhóm bạn góp tiền mua xe chung nhưng không thành lập tổ chức nào theo luật",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 74 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Khoản 1 Điều 74."

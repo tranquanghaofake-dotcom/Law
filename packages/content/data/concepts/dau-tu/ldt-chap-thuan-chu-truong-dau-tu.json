@@ -31,9 +31,9 @@
    "q": "Chấp thuận chủ trương đầu tư là chấp thuận về những nội dung nào?",
    "options": [
     "Mục tiêu, địa điểm, quy mô, tiến độ, thời hạn thực hiện dự án; nhà đầu tư hoặc hình thức lựa chọn nhà đầu tư",
-    "Chỉ về vốn điều lệ doanh nghiệp",
-    "Chỉ về giá đất",
-    "Chỉ về số lao động"
+    "Chỉ về vốn điều lệ doanh nghiệp, tỷ lệ góp vốn và cơ cấu cổ đông của mỗi thành viên trong công ty",
+    "Giá đất và tiền thuê đất trong toàn bộ thời gian thực hiện dự án đầu tư, kể cả tiền sử dụng đất hằng năm",
+    "Số lao động, mức lương và chế độ đãi ngộ của người lao động trong dự án đầu tư tại địa phương"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 3.",
@@ -48,9 +48,9 @@
    "q": "Dự án nào thuộc diện chấp thuận chủ trương đầu tư theo khoản 2 Điều 24?",
    "options": [
     "Chuyển mục đích sử dụng đất trồng hai vụ lúa nước trở lên quy mô từ 500 ha",
-    "Mở cửa hàng tạp hóa",
-    "Góp vốn vào công ty TNHH",
-    "Thuê văn phòng 100 m²"
+    "Mở cửa hàng tạp hóa nhỏ tại khu dân cư đông đúc của thành phố lớn",
+    "Góp vốn vào công ty TNHH có vốn điều lệ dưới một tỷ đồng, ít thành viên",
+    "Thuê văn phòng 100 m² tại khu vực trung tâm thành phố lớn của tỉnh"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 24.",
@@ -72,6 +72,16 @@
     {
      "text": "Văn bản ghi nhận thông tin đăng ký của nhà đầu tư về dự án",
      "answer": "right"
+    },
+    {
+     "text": "Cơ quan nhà nước đồng ý về quy mô và tiến độ dự án trước khi nhà đầu tư triển khai",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 3 Luật Đầu tư 2025"
+    },
+    {
+     "text": "Cơ quan đăng ký đầu tư cấp văn bản ghi nhận dự án sau khi nhà đầu tư đăng ký",
+     "answer": "right",
+     "basis": "Khoản 11 Điều 3 Luật Đầu tư 2025"
     }
    ],
    "explain": "Khoản 1, 11 Điều 3."

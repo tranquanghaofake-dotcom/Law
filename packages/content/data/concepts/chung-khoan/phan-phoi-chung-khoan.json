@@ -46,9 +46,9 @@
    "q": "Tổ chức phát hành phải hoàn thành phân phối chứng khoán trong thời hạn nào kể từ ngày Giấy chứng nhận có hiệu lực?",
    "options": [
     "90 ngày, có thể được gia hạn tối đa 30 ngày",
-    "30 ngày, không được gia hạn",
-    "60 ngày, gia hạn tối đa 60 ngày",
-    "12 tháng"
+    "30 ngày, không được gia hạn trong mọi trường hợp",
+    "60 ngày, gia hạn tối đa 60 ngày theo quyết định",
+    "12 tháng kể từ ngày Giấy chứng nhận có hiệu lực"
    ],
    "answer": 0,
    "explain": "Khoản 4 Điều 26.",
@@ -74,6 +74,11 @@
     {
      "text": "Chuyển giao chứng khoán cho người mua trong 30 ngày",
      "answer": "right"
+    },
+    {
+     "text": "Công bố kết quả đợt chào bán sau khi kết thúc phân phối",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 26 Luật Chứng khoán 2019 (đối chiếu)"
     }
    ],
    "explain": "Khoản 3, 5, 6 Điều 26."

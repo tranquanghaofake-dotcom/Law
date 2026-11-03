@@ -9,9 +9,9 @@
       "q": "Ngôn ngữ trong VBQPPL phải bảo đảm gì?",
       "options": [
         "Tiếng Việt; chính xác, phổ thông, thống nhất, rõ ràng, dễ hiểu",
-        "Trang trọng, giàu hình ảnh",
-        "Tiếng Việt hoặc tiếng Anh",
-        "Ngắn gọn tối đa 10 trang"
+        "Trang trọng, giàu hình ảnh và nhiều thuật ngữ nước ngoài",
+        "Tiếng Việt hoặc tiếng Anh tùy theo đối tượng và địa bàn áp dụng",
+        "Ngắn gọn tối đa 10 trang, dùng nhiều ký hiệu tắt và viết tắt"
       ],
       "answer": 0,
       "explain": "Khoản 1 Điều 7.",
@@ -35,9 +35,9 @@
       "q": "Đơn vị bố cục nào phải có tên?",
       "options": [
         "Phần, chương, mục, tiểu mục, điều",
-        "Khoản",
-        "Điểm",
-        "Khoản và điểm"
+        "Khoản và đoạn trong văn bản pháp luật",
+        "Điểm và số thứ tự của văn bản",
+        "Khoản và điểm, không có tên gọi"
       ],
       "answer": 0,
       "explain": "Khoản 2 Điều 7.",
@@ -48,9 +48,9 @@
       "q": "Số, ký hiệu VBQPPL phải thể hiện yếu tố nào?",
       "options": [
         "Số thứ tự liên tục, năm ban hành, loại văn bản, cơ quan/người ban hành",
-        "Chỉ số thứ tự",
-        "Tên người ký",
-        "Số trang"
+        "Chỉ số thứ tự và loại văn bản do người soạn thảo tự quyết định",
+        "Tên người ký, địa chỉ đơn vị nhận và số lượng bản in của văn bản",
+        "Số trang, số điều, số lượng bản in, dấu mật và chữ ký của người đứng đầu"
       ],
       "answer": 0,
       "explain": "Khoản 3 Điều 7.",
@@ -61,9 +61,9 @@
       "q": "Quốc hội ban hành nghị quyết QPPL để quy định nội dung nào?",
       "options": [
         "Thí điểm chính sách mới khác với luật hiện hành",
-        "Tội phạm và hình phạt",
-        "Các thứ thuế",
-        "Tổ chức Chính phủ"
+        "Tội phạm và hình phạt trong luật hình sự",
+        "Các loại thuế mới và mức thuế suất của thuế hiện hành",
+        "Tổ chức Chính phủ và bộ máy hành chính cấp địa phương"
       ],
       "answer": 0,
       "explain": "Điểm a khoản 2 Điều 10.",
@@ -87,9 +87,9 @@
       "q": "Kiểm tra VBQPPL kết luận về điều gì?",
       "options": [
         "Tính hợp hiến, hợp pháp, thống nhất với hệ thống pháp luật",
-        "Hiệu quả kinh tế",
-        "Mức độ hài lòng",
-        "Số lượng điều khoản"
+        "Hiệu quả kinh tế và lợi ích tài chính của cơ quan ban hành",
+        "Mức độ hài lòng của người dân và doanh nghiệp đối với văn bản",
+        "Số lượng điều khoản, khoản và điểm trong từng văn bản"
       ],
       "answer": 0,
       "explain": "Khoản 6 Điều 3.",
@@ -100,9 +100,9 @@
       "q": "Rà soát VBQPPL nhằm phát hiện gì?",
       "options": [
         "Quy định mâu thuẫn, chồng chéo, hết hiệu lực hoặc không còn phù hợp",
-        "Lỗi in ấn",
-        "Văn bản chưa có dấu",
-        "Văn bản chưa dịch"
+        "Lỗi in ấn, lỗi đánh máy, lỗi trình bày và lỗi chính tả trong văn bản",
+        "Văn bản chưa có dấu, chữ ký và chưa được đăng Công báo đầy đủ",
+        "Văn bản chưa dịch sang tiếng dân tộc thiểu số và tiếng Anh"
       ],
       "answer": 0,
       "explain": "Khoản 5 Điều 3.",
@@ -113,9 +113,9 @@
       "q": "Ai được sửa đổi, bổ sung, thay thế một VBQPPL?",
       "options": [
         "Chính cơ quan, người có thẩm quyền đã ban hành văn bản đó",
-        "Bất kỳ cơ quan cấp trên",
-        "Bộ Tư pháp",
-        "Tòa án"
+        "Bất kỳ cơ quan cấp trên nào có thẩm quyền trong từng trường hợp",
+        "Bộ Tư pháp, sau khi kiểm tra và đề nghị cơ quan ban hành sửa đổi",
+        "Tòa án nhân dân, theo yêu cầu của người dân và tổ chức liên quan"
       ],
       "answer": 0,
       "explain": "Khoản 1 Điều 8.",

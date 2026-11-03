@@ -29,9 +29,9 @@
    "q": "Giá đất là gì theo khoản 19 Điều 3?",
    "options": [
     "Giá trị của quyền sử dụng đất tính bằng tiền trên một đơn vị diện tích đất",
-    "Giá trị của đất đai thuộc sở hữu tư nhân",
-    "Thuế sử dụng đất",
-    "Giá thuê nhà"
+    "Giá trị của đất đai thuộc sở hữu tư nhân trên thị trường bất động sản",
+    "Thuế sử dụng đất hằng năm do Nhà nước thu theo diện tích và loại đất",
+    "Giá thuê nhà ở và mặt bằng kinh doanh theo tháng do bên cho thuê ấn định"
    ],
    "answer": 0,
    "explain": "Khoản 19 Điều 3.",
@@ -46,9 +46,9 @@
    "q": "Người sử dụng đất phải nộp tiền sử dụng đất khi nào?",
    "options": [
     "Được giao đất có thu tiền, được cho phép chuyển mục đích sử dụng đất hoặc trường hợp luật quy định",
-    "Khi thuê đất trả hằng năm",
-    "Khi thừa kế quyền sử dụng đất",
-    "Khi cho người khác mượn đất"
+    "Khi thuê đất trả tiền hằng năm, theo thời hạn đã thỏa thuận trong hợp đồng thuê và đã đăng ký",
+    "Khi thừa kế quyền sử dụng đất theo di chúc hoặc theo pháp luật, kể cả khi đất đã được cấp sổ",
+    "Khi cho người khác mượn đất để canh tác, sử dụng ổn định lâu dài và có thu lợi trong năm"
    ],
    "answer": 0,
    "explain": "Khoản 44 Điều 3.",
@@ -70,6 +70,16 @@
     {
      "text": "Nộp khi được Nhà nước cho thuê đất",
      "answer": "right"
+    },
+    {
+     "text": "Khoản người được Nhà nước giao đất có thu tiền phải nộp cho Nhà nước khi nhận đất",
+     "answer": "left",
+     "basis": "Khoản 44 Điều 3 Luật Đất đai 2024"
+    },
+    {
+     "text": "Khoản tổ chức được Nhà nước cho thuê đất phải trả hằng năm theo quy định",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 120 Luật Đất đai 2024"
     }
    ],
    "explain": "Khoản 44, 45 Điều 3."
@@ -110,6 +120,18 @@
     "giao đất có thu tiền",
     "chuyển mục đích"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Giá đất là giá trị của quyền sử dụng đất tính bằng tiền trên một đơn vị diện tích đất.",
+   "answer": true,
+   "explain": "Đúng. Khoản 19 Điều 3 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 19 Điều 3 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Van-ban-hop-nhat-44-VBHN-VPQH-2026-Luat-Dat-dai-699655.aspx"
+   }
   }
  ]
 }

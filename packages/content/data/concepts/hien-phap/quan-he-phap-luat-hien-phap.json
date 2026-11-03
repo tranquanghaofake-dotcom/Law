@@ -30,9 +30,9 @@
    "q": "Chủ thể nào chỉ đặc trưng cho quan hệ pháp luật Hiến pháp?",
    "options": [
     "Nhân dân, Quốc hội, cử tri, đơn vị bầu cử",
-    "Người bán, người mua",
+    "Người bán, người mua và người thuê nhà ở",
     "Người lao động, người sử dụng lao động",
-    "Bị cáo, người bị hại"
+    "Bị cáo, người bị hại và người làm chứng"
    ],
    "answer": 0,
    "explain": "Quan điểm phổ biến.",
@@ -47,9 +47,9 @@
    "q": "Quan hệ giữa cử tri và tổ bầu cử khi bỏ phiếu là loại quan hệ pháp luật Hiến pháp nào?",
    "options": [
     "Quan hệ cụ thể",
-    "Quan hệ chung",
+    "Quan hệ pháp luật chung",
     "Không phải quan hệ pháp luật",
-    "Quan hệ dân sự"
+    "Quan hệ pháp luật dân sự"
    ],
    "answer": 0,
    "explain": "Phát sinh từ sự kiện pháp lý cụ thể (cuộc bầu cử).",
@@ -71,6 +71,16 @@
     {
      "text": "Giữa cử tri A và tổ bầu cử khu vực X",
      "answer": "right"
+    },
+    {
+     "text": "Giữa Nhà nước và mọi công dân về quyền bầu cử, quan hệ chung của luật Hiến pháp",
+     "answer": "left",
+     "basis": "Giáo trình Luật Hiến pháp (Chương 1, quan hệ pháp luật Hiến pháp chung)"
+    },
+    {
+     "text": "Giữa Viện kiểm sát và bị can trong một vụ án cụ thể về một hành vi phạm tội",
+     "answer": "right",
+     "basis": "Giáo trình Luật Hiến pháp (Chương 1, quan hệ pháp luật Hiến pháp cụ thể)"
     }
    ],
    "explain": "Phân loại phổ biến của giáo trình."

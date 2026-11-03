@@ -9,9 +9,9 @@
       "q": "Nhà nước Việt Nam là nhà nước gì theo khoản 1 Điều 2 Hiến pháp 2013?",
       "options": [
         "Nhà nước pháp quyền xã hội chủ nghĩa của Nhân dân, do Nhân dân, vì Nhân dân",
-        "Nhà nước liên bang",
-        "Nhà nước quân chủ lập hiến",
-        "Nhà nước thần quyền"
+        "Nhà nước liên bang gồm nhiều bang có hiến pháp và quân đội riêng",
+        "Nhà nước quân chủ lập hiến, vua đứng đầu và có quyền lập pháp riêng",
+        "Nhà nước thần quyền do giáo hội đứng đầu và cai trị theo kinh sách tôn giáo"
       ],
       "answer": 0,
       "explain": "Khoản 1 Điều 2.",
@@ -35,9 +35,9 @@
       "q": "Quyền lực nhà nước là thống nhất, có sự gì giữa các cơ quan?",
       "options": [
         "Phân công, phối hợp, kiểm soát",
-        "Phân lập, đối trọng",
-        "Cạnh tranh",
-        "Thay thế"
+        "Phân lập và đối trọng lẫn nhau",
+        "Cạnh tranh quyền lực lẫn nhau",
+        "Thay thế và tranh chấp quyền lực"
       ],
       "answer": 0,
       "explain": "Khoản 3 Điều 2.",
@@ -48,9 +48,9 @@
       "q": "Nhân dân thực hiện quyền lực nhà nước bằng hình thức nào?",
       "options": [
         "Dân chủ trực tiếp và dân chủ đại diện",
-        "Chỉ dân chủ đại diện",
-        "Chỉ trưng cầu ý dân",
-        "Qua các tổ chức xã hội"
+        "Chỉ dân chủ đại diện qua Quốc hội",
+        "Qua bầu cử trực tiếp Chủ tịch nước",
+        "Qua các tổ chức chính trị – xã hội"
       ],
       "answer": 0,
       "explain": "Điều 6.",
@@ -61,9 +61,9 @@
       "q": "Đảng Cộng sản Việt Nam được Hiến pháp xác định là gì?",
       "options": [
         "Lực lượng lãnh đạo Nhà nước và xã hội",
-        "Cơ quan lập pháp",
-        "Cơ quan hành pháp",
-        "Tổ chức xã hội"
+        "Cơ quan quyền lực nhà nước cao nhất",
+        "Cơ quan lập pháp cao nhất, do dân bầu",
+        "Tổ chức xã hội nghề nghiệp, tự nguyện"
       ],
       "answer": 0,
       "explain": "Khoản 1 Điều 4.",
@@ -87,9 +87,9 @@
       "q": "Nhà nước được tổ chức và hoạt động theo gì, thực hiện nguyên tắc nào?",
       "options": [
         "Theo Hiến pháp và pháp luật, nguyên tắc tập trung dân chủ",
-        "Theo nghị quyết, nguyên tắc tam quyền phân lập",
-        "Theo tập quán, nguyên tắc thủ trưởng",
-        "Theo điều lệ, nguyên tắc đồng thuận"
+        "Theo Hiến pháp và pháp luật, nguyên tắc tập quyền thống nhất",
+        "Theo nghị quyết và pháp luật, nguyên tắc tam quyền phân lập",
+        "Theo tập quán và điều lệ, nguyên tắc thủ trưởng và tập trung"
       ],
       "answer": 0,
       "explain": "Khoản 1 Điều 8.",
@@ -100,9 +100,9 @@
       "q": "Nền tảng của liên minh làm chủ quyền lực nhà nước theo khoản 2 Điều 2 gồm ai?",
       "options": [
         "Giai cấp công nhân với giai cấp nông dân và đội ngũ trí thức",
-        "Doanh nhân và trí thức",
-        "Nông dân và tiểu thương",
-        "Công nhân và quân đội"
+        "Giai cấp tư sản, tầng lớp doanh nhân và đội ngũ trí thức",
+        "Doanh nhân và tiểu thương, cùng với đội ngũ công chức nhà nước",
+        "Nông dân và tiểu thương, cùng với giới chủ doanh nghiệp tư nhân"
       ],
       "answer": 0,
       "explain": "Khoản 2 Điều 2.",
@@ -126,9 +126,9 @@
       "q": "Mục tiêu nào được Điều 3 Hiến pháp 2013 nêu?",
       "options": [
         "Dân giàu, nước mạnh, dân chủ, công bằng, văn minh",
-        "Tăng trưởng GDP hai con số",
-        "Xóa bỏ hoàn toàn tư hữu",
-        "Thống nhất tiền tệ khu vực"
+        "Dân giàu, nước mạnh, tự do, bình đẳng, hòa bình",
+        "Xóa bỏ hoàn toàn tư hữu, thực hiện công hữu tuyệt đối",
+        "Thống nhất tiền tệ khu vực, mở rộng hợp tác đa phương"
       ],
       "answer": 0,
       "explain": "Điều 3.",

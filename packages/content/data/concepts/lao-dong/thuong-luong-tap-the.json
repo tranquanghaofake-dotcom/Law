@@ -30,9 +30,9 @@
    "q": "Bên người lao động trong thương lượng tập thể là ai?",
    "options": [
     "Một hoặc nhiều tổ chức đại diện người lao động",
-    "Từng người lao động riêng lẻ",
-    "Cơ quan quản lý lao động",
-    "Hội đồng trọng tài lao động"
+    "Từng người lao động riêng lẻ trong doanh nghiệp",
+    "Cơ quan quản lý nhà nước về lao động tại địa phương",
+    "Hội đồng trọng tài lao động tại tỉnh, thành phố"
    ],
    "answer": 0,
    "explain": "Điều 65.",
@@ -47,9 +47,9 @@
    "q": "Mục đích của thương lượng tập thể là gì?",
    "options": [
     "Xác lập điều kiện lao động, quy định quan hệ giữa các bên, xây dựng quan hệ lao động tiến bộ, hài hòa, ổn định",
-    "Xử lý kỷ luật lao động",
-    "Giải quyết tranh chấp cá nhân",
-    "Thành lập công đoàn"
+    "Xử lý kỷ luật lao động, sa thải người lao động vi phạm nội quy, đồng thời cắt giảm tiền lương của tập thể",
+    "Giải quyết tranh chấp cá nhân về tiền lương và các khoản bồi thường của người lao động với người sử dụng",
+    "Thành lập công đoàn cơ sở và tổ chức đại diện người lao động theo sự chỉ định của doanh nghiệp"
    ],
    "answer": 0,
    "explain": "Điều 65.",
@@ -71,6 +71,16 @@
     {
      "text": "Một nhân viên thỏa thuận mức lương riêng",
      "answer": "right"
+    },
+    {
+     "text": "Tổ chức đại diện người lao động và người sử dụng lao động thương lượng để ký thỏa ước",
+     "answer": "left",
+     "basis": "Điều 65 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Trước khi nhận người lao động vào làm việc, người sử dụng lao động phải giao kết văn bản thỏa thuận riêng với từng người lao động",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 13 Bộ luật Lao động 2019"
     }
    ],
    "explain": "Điều 13, 65."

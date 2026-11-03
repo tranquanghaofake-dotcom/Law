@@ -31,9 +31,9 @@
    "q": "Bảo hiểm y tế theo Luật Bảo hiểm y tế có đặc điểm nào?",
    "options": [
     "Bắt buộc, không vì mục đích lợi nhuận, do Nhà nước tổ chức thực hiện",
-    "Tự nguyện, vì lợi nhuận",
-    "Do doanh nghiệp bảo hiểm tổ chức",
-    "Chỉ dành cho người lao động"
+    "Tự nguyện, vì lợi nhuận và do cá nhân tự quyết định mức đóng",
+    "Do doanh nghiệp bảo hiểm tổ chức thực hiện theo hợp đồng ký kết",
+    "Chỉ dành cho người có hợp đồng lao động không xác định thời hạn"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 2.",
@@ -48,9 +48,9 @@
    "q": "Chi phí khám bệnh, chữa bệnh bảo hiểm y tế do ai chi trả?",
    "options": [
     "Quỹ bảo hiểm y tế và người tham gia cùng chi trả",
-    "Chỉ quỹ bảo hiểm y tế",
-    "Chỉ người bệnh",
-    "Chỉ ngân sách nhà nước"
+    "Cơ sở khám bệnh tự chịu toàn bộ chi phí cho người bệnh",
+    "Do người sử dụng lao động chi trả toàn bộ",
+    "Chỉ ngân sách nhà nước đảm bảo toàn bộ chi phí khám"
    ],
    "answer": 0,
    "explain": "Khoản 4 Điều 3.",
@@ -72,6 +72,16 @@
     {
      "text": "Doanh nghiệp bảo hiểm kinh doanh vì lợi nhuận",
      "answer": "right"
+    },
+    {
+     "text": "Quỹ do Nhà nước tổ chức, bảo đảm chia sẻ rủi ro giữa những người tham gia",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 3 Luật Bảo hiểm y tế"
+    },
+    {
+     "text": "Gói bảo hiểm do doanh nghiệp thương mại thiết kế và thu phí để kinh doanh lợi nhuận",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 2 Luật Bảo hiểm y tế (định nghĩa: không vì mục đích lợi nhuận)"
     }
    ],
    "explain": "Điều 2 Luật BHYT."

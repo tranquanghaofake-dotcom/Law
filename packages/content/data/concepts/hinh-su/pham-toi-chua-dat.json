@@ -28,9 +28,9 @@
    "q": "Yếu tố phân biệt phạm tội chưa đạt với tự ý nửa chừng chấm dứt việc phạm tội là gì?",
    "options": [
     "Phạm tội chưa đạt dừng lại vì nguyên nhân ngoài ý muốn",
-    "Phạm tội chưa đạt chưa bắt đầu thực hiện tội phạm",
-    "Tự ý nửa chừng dừng lại vì bị ngăn cản",
-    "Không có sự khác nhau"
+    "Phạm tội chưa đạt chưa thực hiện hành vi tội phạm nào cả",
+    "Tự ý nửa chừng dừng lại vì bị người khác ngăn cản hành vi",
+    "Không có sự khác nhau về ý chí của người phạm tội"
    ],
    "answer": 0,
    "explain": "Điều 15, 16.",
@@ -46,8 +46,8 @@
    "options": [
     "Chịu TNHS về tội phạm chưa đạt",
     "Được miễn TNHS",
-    "Chỉ chịu TNHS nếu tội đặc biệt nghiêm trọng",
-    "Chịu TNHS như tội hoàn thành, không giảm"
+    "Chỉ chịu TNHS nếu tội rất nặng",
+    "Chịu TNHS như tội hoàn thành"
    ],
    "answer": 0,
    "explain": "Đoạn 2 Điều 15.",
@@ -69,6 +69,16 @@
     {
      "text": "Đang cạy cửa thì tự thấy hối hận, bỏ về dù không ai ngăn",
      "answer": "right"
+    },
+    {
+     "text": "Đang đột nhập nhà, bị chủ nhà phát hiện và bắt giữ trước khi lấy được tài sản",
+     "answer": "left",
+     "basis": "Điều 15 Bộ luật Hình sự 2015"
+    },
+    {
+     "text": "Đang đột nhập, tự thấy hối hận và quay về mà không cần ai can ngăn",
+     "answer": "right",
+     "basis": "Điều 16 Bộ luật Hình sự 2015"
     }
    ],
    "explain": "Điều 15, 16."
@@ -109,6 +119,18 @@
     "ngoài ý muốn",
     "chịu TNHS"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Phạm tội chưa đạt là cố ý thực hiện tội phạm nhưng không thực hiện được đến cùng vì những nguyên nhân ngoài ý muốn của người phạm tội.",
+   "answer": true,
+   "explain": "Đúng. Điều 15 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 15 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)",
+    "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+   }
   }
  ]
 }

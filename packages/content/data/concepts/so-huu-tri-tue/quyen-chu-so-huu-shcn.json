@@ -30,9 +30,9 @@
    "q": "Chủ sở hữu đối tượng sở hữu công nghiệp có những quyền tài sản nào?",
    "options": [
     "Sử dụng, cho phép sử dụng; ngăn cấm người khác sử dụng; định đoạt",
-    "Chỉ quyền đứng tên",
-    "Quyền nhân thân vô thời hạn",
-    "Quyền thu thuế"
+    "Chỉ quyền đứng tên trên sản phẩm và bao bì hàng hóa đã bán",
+    "Quyền nhân thân vô thời hạn và không thể chuyển nhượng nào",
+    "Quyền thu thuế từ hoạt động sử dụng đối tượng sở hữu công nghiệp"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 123.",
@@ -71,6 +71,16 @@
     {
      "text": "Sinh viên dùng sáng chế để làm thí nghiệm nghiên cứu",
      "answer": "right"
+    },
+    {
+     "text": "Bên không được phép sử dụng sáng chế đang được bảo hộ để sản xuất bán ra thị trường",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 125 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Cá nhân sử dụng sáng chế để phục vụ nhu cầu cá nhân hoặc mục đích phi thương mại",
+     "answer": "right",
+     "basis": "Điểm a khoản 2 Điều 125 Luật Sở hữu trí tuệ"
     }
    ],
    "explain": "Điều 125."

@@ -28,9 +28,9 @@
    "q": "Đối tượng của hợp đồng dịch vụ là gì?",
    "options": [
     "Công việc mà bên cung ứng dịch vụ thực hiện",
-    "Tài sản được chuyển quyền sở hữu",
-    "Quyền sử dụng tài sản",
-    "Khoản tiền vay"
+    "Tài sản được chuyển quyền sở hữu cho bên kia",
+    "Quyền sử dụng tài sản trong thời hạn nhất định",
+    "Khoản tiền vay có lãi suất theo thỏa thuận của các bên"
    ],
    "answer": 0,
    "explain": "Điều 513, 514.",
@@ -46,7 +46,7 @@
    "options": [
     "Hợp đồng lao động",
     "Hợp đồng dịch vụ",
-    "Hợp đồng ủy quyền",
+    "Hợp đồng ủy quyền dân sự",
     "Hợp đồng vô hiệu"
    ],
    "answer": 0,
@@ -69,6 +69,16 @@
     {
      "text": "Chịu quản lý, điều hành, giám sát",
      "answer": "right"
+    },
+    {
+     "text": "Thợ sửa điều hòa tự chọn cách làm và được trả tiền khi hoàn thành kết quả công việc",
+     "answer": "left",
+     "basis": "Điều 513 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Nhân viên bán hàng làm việc theo phân công, chịu sự quản lý và giám sát của công ty",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 13 Bộ luật Lao động 2019"
     }
    ],
    "explain": "Điều 513 BLDS; Điều 13 BLLĐ."
@@ -109,6 +119,18 @@
     "quản lý",
     "giám sát"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hợp đồng dịch vụ là sự thỏa thuận giữa các bên, theo đó bên cung ứng dịch vụ thực hiện công việc cho bên sử dụng dịch vụ, bên sử dụng dịch vụ phải trả tiền dịch vụ cho bên cung ứng dịch vụ.",
+   "answer": true,
+   "explain": "Đúng. Điều 513 Bộ luật Dân sự 2015 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 513 Bộ luật Dân sự 2015",
+    "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+   }
   }
  ]
 }

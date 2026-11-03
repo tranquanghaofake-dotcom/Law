@@ -31,9 +31,9 @@
    "q": "Khoản 1 Điều 7 yêu cầu ngôn ngữ VBQPPL phải thế nào?",
    "options": [
     "Tiếng Việt; chính xác, phổ thông, thống nhất, rõ ràng, dễ hiểu",
-    "Tiếng Việt hoặc tiếng Anh tùy chọn",
-    "Trang trọng, nhiều từ Hán Việt",
-    "Giàu hình ảnh, biểu cảm"
+    "Tiếng Việt hoặc tiếng Anh tùy theo đối tượng áp dụng của văn bản",
+    "Trang trọng, nhiều từ Hán Việt cổ để thể hiện tính uy quyền của văn bản",
+    "Giàu hình ảnh, biểu cảm và nhiều câu văn dài để diễn đạt đầy đủ ý"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 7.",
@@ -72,6 +72,16 @@
     {
      "text": "\"Bà con cần hết sức lưu ý nộp hồ sơ cho sớm\"",
      "answer": "right"
+    },
+    {
+     "text": "Văn bản dùng từ ngữ phổ thông, nêu thời hạn bằng số ngày cụ thể",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 7 Luật Ban hành văn bản quy phạm pháp luật 2025"
+    },
+    {
+     "text": "Văn bản dùng từ cảm tính như \"sớm nhất có thể\" thay cho thời hạn cụ thể",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 7 Luật Ban hành văn bản quy phạm pháp luật 2025"
     }
    ],
    "explain": "Khoản 1 Điều 7: chính xác, phổ thông, khách quan."
@@ -113,6 +123,18 @@
     "thống nhất",
     "rõ ràng"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Ngôn ngữ được sử dụng trong văn bản quy phạm pháp luật là tiếng Việt, bảo đảm chính xác, phổ thông, thống nhất, diễn đạt rõ ràng, dễ hiểu.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 7 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 7 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)",
+    "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-54-VBHN-VPQH-2025-Luat-Ban-hanh-van-ban-quy-pham-phap-luat-669858.aspx"
+   }
   }
  ]
 }

@@ -74,6 +74,16 @@
     {
      "text": "Cách chức",
      "answer": "left"
+    },
+    {
+     "text": "Kéo dài thời hạn nâng lương không quá 06 tháng là hình thức xử lý kỷ luật lao động",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 124 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Phạt tiền thay cho việc xử lý kỷ luật lao động đối với người vi phạm nội quy",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 127 Bộ luật Lao động 2019"
     }
    ],
    "explain": "Điều 124, 127."
@@ -114,6 +124,18 @@
     "cách chức",
     "sa thải"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Kỷ luật lao động là những quy định về việc tuân theo thời gian, công nghệ và điều hành sản xuất, kinh doanh do người sử dụng lao động ban hành trong nội quy lao động và do pháp luật quy định.",
+   "answer": true,
+   "explain": "Đúng. Điều 117 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 117 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-18-VBHN-VPQH-2026-Bo-luat-lao-dong-695336.aspx"
+   }
   }
  ]
 }

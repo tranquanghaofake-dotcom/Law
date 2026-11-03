@@ -29,9 +29,9 @@
    "q": "Doanh nghiệp là gì theo khoản 10 Điều 4?",
    "options": [
     "Tổ chức có tên riêng, tài sản, trụ sở giao dịch, được thành lập hoặc đăng ký thành lập theo pháp luật nhằm mục đích kinh doanh",
-    "Mọi cá nhân kinh doanh",
-    "Hộ gia đình buôn bán",
-    "Cơ quan nhà nước có thu"
+    "Mọi cá nhân kinh doanh có đăng ký tại cơ quan thuế địa phương, đóng thuế đầy đủ, có tên riêng và trụ sở hằng năm",
+    "Hộ gia đình buôn bán nhỏ, không đăng ký, không có tên riêng và không có trụ sở giao dịch cố định tại địa phương và không có sổ sách kế toán",
+    "Cơ quan nhà nước có thu từ hoạt động dịch vụ công, được phép kinh doanh hằng năm và có tên riêng theo quy định"
    ],
    "answer": 0,
    "explain": "Khoản 10 Điều 4.",
@@ -72,8 +72,13 @@
      "answer": "right"
     },
     {
-     "text": "Doanh nghiệp tư nhân",
+     "text": "Một tổ chức do cá nhân làm chủ, có tên riêng, tài sản, trụ sở giao dịch, được đăng ký thành lập để kinh doanh",
      "answer": "left"
+    },
+    {
+     "text": "Nhóm bạn tổ chức quỹ từ thiện không nhằm mục đích kinh doanh",
+     "answer": "right",
+     "basis": "Khoản 10 Điều 4 Luật Doanh nghiệp 2020"
     }
    ],
    "explain": "Điều 4."
@@ -114,6 +119,18 @@
     "trụ sở",
     "kinh doanh"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Doanh nghiệp là tổ chức có tên riêng, có tài sản, có trụ sở giao dịch, được thành lập hoặc đăng ký thành lập theo quy định của pháp luật nhằm mục đích kinh doanh.",
+   "answer": true,
+   "explain": "Đúng. Khoản 10 Điều 4 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 10 Điều 4 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+    "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+   }
   }
  ]
 }

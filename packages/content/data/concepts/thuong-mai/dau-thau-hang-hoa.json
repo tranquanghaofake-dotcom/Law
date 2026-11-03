@@ -28,9 +28,9 @@
    "q": "Trong đấu thầu hàng hóa, dịch vụ, bên mời thầu là ai?",
    "options": [
     "Bên mua hàng hóa, dịch vụ",
-    "Bên bán hàng hóa",
-    "Cơ quan nhà nước",
-    "Ngân hàng"
+    "Bên bán hàng hóa, dịch vụ",
+    "Cơ quan nhà nước các cấp",
+    "Ngân hàng thương mại lớn"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 214.",
@@ -46,7 +46,7 @@
    "options": [
     "Không",
     "Có",
-    "Chỉ với dự án dưới 1 tỷ",
+    "Có, với dự án nhỏ",
     "Chỉ khi có yếu tố nước ngoài"
    ],
    "answer": 0,
@@ -69,6 +69,16 @@
     {
      "text": "Các nhà cung cấp nộp hồ sơ",
      "answer": "right"
+    },
+    {
+     "text": "Doanh nghiệp tư nhân mời nhiều nhà cung cấp cạnh tranh để mua máy móc",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 214 Luật Thương mại 2005"
+    },
+    {
+     "text": "Công ty nộp hồ sơ dự thầu để cung cấp máy in cho đơn vị đang mời thầu",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 214 Luật Thương mại 2005"
     }
    ],
    "explain": "Điều 214."

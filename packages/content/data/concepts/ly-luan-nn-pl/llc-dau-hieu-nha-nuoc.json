@@ -30,9 +30,9 @@
    "q": "Dấu hiệu nào chỉ nhà nước mới có?",
    "options": [
     "Ban hành pháp luật và thu thuế bắt buộc",
-    "Có điều lệ riêng",
-    "Có thành viên",
-    "Có trụ sở"
+    "Có điều lệ riêng và cơ cấu tổ chức nội bộ",
+    "Có thành viên và tổ chức họp định kỳ",
+    "Có trụ sở riêng, con dấu và các thành viên"
    ],
    "answer": 0,
    "explain": "Bài 2: chỉ nhà nước được ban hành pháp luật, thu thuế."
@@ -43,9 +43,9 @@
    "q": "Nhà nước quản lý dân cư theo tiêu chí nào?",
    "options": [
     "Lãnh thổ, đơn vị hành chính",
-    "Huyết thống",
-    "Tôn giáo",
-    "Nghề nghiệp"
+    "Huyết thống và dòng họ gia đình",
+    "Tôn giáo và tín ngưỡng dân cư",
+    "Nghề nghiệp và ngành sản xuất"
    ],
    "answer": 0,
    "explain": "Khác thị tộc quản lý theo huyết thống."
@@ -63,6 +63,16 @@
     {
      "text": "Có số lượng thành viên đông",
      "answer": "right"
+    },
+    {
+     "text": "Có quyền lực công cộng, thiết lập bộ máy cưỡng chế và thu thuế để duy trì",
+     "answer": "left",
+     "basis": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), Bài 2"
+    },
+    {
+     "text": "Đông người sinh sống trong cộng đồng gia đình, dòng họ",
+     "answer": "right",
+     "basis": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), Bài 2"
     }
    ],
    "explain": "Bài 2."

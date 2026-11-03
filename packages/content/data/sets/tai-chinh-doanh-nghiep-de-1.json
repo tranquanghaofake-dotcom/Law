@@ -22,9 +22,9 @@
       "q": "Quyền lựa chọn phương thức huy động, sử dụng vốn được quy định ở đâu?",
       "options": [
         "Khoản 3 Điều 7",
-        "Điều 69",
-        "Điều 135",
-        "Điều 201"
+        "Khoản 1 Điều 69",
+        "Khoản 2 Điều 135",
+        "Khoản 1 Điều 201"
       ],
       "answer": 0,
       "explain": "Khoản 3 Điều 7.",
@@ -35,9 +35,9 @@
       "q": "Vốn điều lệ công ty cổ phần khi thành lập là gì?",
       "options": [
         "Tổng mệnh giá cổ phần đã bán hoặc được đăng ký mua",
-        "Tổng giá thị trường cổ phiếu",
-        "Tổng tài sản",
-        "Tổng vốn vay"
+        "Tổng giá thị trường của cổ phiếu đã bán hoặc đăng ký",
+        "Tổng tài sản của công ty tại thời điểm thành lập",
+        "Tổng vốn vay từ ngân hàng và tổ chức tín dụng"
       ],
       "answer": 0,
       "explain": "Khoản 34 Điều 4.",
@@ -61,9 +61,9 @@
       "q": "Định giá tài sản góp vốn cao hơn thực tế khi thành lập thì ai chịu trách nhiệm góp thêm?",
       "options": [
         "Các thành viên, cổ đông sáng lập liên đới",
-        "Riêng người góp tài sản",
-        "Công ty",
-        "Tổ chức thẩm định giá"
+        "Riêng người góp tài sản phải chịu trách nhiệm",
+        "Công ty phải chịu trách nhiệm hoàn trả toàn bộ",
+        "Cơ quan đăng ký kinh doanh chịu trách nhiệm"
       ],
       "answer": 0,
       "explain": "Khoản 2 Điều 36.",
@@ -74,9 +74,9 @@
       "q": "Chào bán cổ phần nhằm mục đích gì?",
       "options": [
         "Tăng vốn điều lệ",
-        "Vay vốn",
-        "Trả nợ",
-        "Giảm vốn"
+        "Vay vốn ngân hàng",
+        "Trả nợ gốc đến hạn",
+        "Giảm bớt vốn điều lệ"
       ],
       "answer": 0,
       "explain": "Khoản 1 Điều 123.",
@@ -100,9 +100,9 @@
       "q": "Trái phiếu xác nhận quyền đối với gì?",
       "options": [
         "Một phần nợ của tổ chức phát hành",
-        "Một phần vốn cổ phần",
-        "Quyền mua cổ phiếu",
-        "Một phần vốn góp của quỹ"
+        "Một phần vốn cổ phần của công ty",
+        "Quyền mua cổ phiếu mới phát hành thêm",
+        "Một phần vốn góp của quỹ đầu tư"
       ],
       "answer": 0,
       "explain": "Khoản 3 Điều 4.",
@@ -126,9 +126,9 @@
       "q": "Tài sản nào là tài sản góp vốn?",
       "options": [
         "Quyền sở hữu trí tuệ",
-        "Quyền bầu cử",
-        "Danh dự cá nhân",
-        "Quyền nhân thân"
+        "Quyền bầu cử công dân",
+        "Danh dự của mỗi cá nhân",
+        "Quyền nhân thân cá nhân"
       ],
       "answer": 0,
       "explain": "Khoản 1 Điều 34.",

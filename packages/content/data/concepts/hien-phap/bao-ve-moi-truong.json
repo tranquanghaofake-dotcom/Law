@@ -29,8 +29,8 @@
    "q": "Theo khoản 3 Điều 63, tổ chức, cá nhân gây ô nhiễm môi trường phải chịu trách nhiệm gì?",
    "options": [
     "Bị xử lý nghiêm, khắc phục, bồi thường thiệt hại",
-    "Chỉ bị nhắc nhở",
-    "Được miễn trách nhiệm nếu là doanh nghiệp nhà nước",
+    "Được nhắc nhở, không phải bồi thường",
+    "Được miễn trách nhiệm nếu là doanh nghiệp công",
     "Chỉ nộp phí bảo vệ môi trường"
    ],
    "answer": 0,
@@ -46,9 +46,9 @@
    "q": "Theo khoản 2 Điều 63, Nhà nước khuyến khích phát triển loại năng lượng nào?",
    "options": [
     "Năng lượng mới, năng lượng tái tạo",
-    "Năng lượng than đá",
-    "Chỉ năng lượng hạt nhân",
-    "Không quy định"
+    "Năng lượng than đá và dầu khí",
+    "Chỉ năng lượng hạt nhân và nhiệt điện than",
+    "Không quy định gì về năng lượng"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 63.",
@@ -70,6 +70,16 @@
     {
      "text": "Nhà nước chủ động phòng, chống thiên tai, ứng phó với biến đổi khí hậu",
      "answer": "right"
+    },
+    {
+     "text": "Mỗi người có nghĩa vụ bảo vệ môi trường",
+     "answer": "left",
+     "basis": "Điều 43 Hiến pháp 2013"
+    },
+    {
+     "text": "Nhà nước có chính sách bảo vệ môi trường và quản lý hiệu quả tài nguyên thiên nhiên",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 63 Hiến pháp 2013"
     }
    ],
    "explain": "Điều 43, 63 Hiến pháp 2013."
@@ -103,7 +113,7 @@
    "type": "recall",
    "level": 5,
    "q": "Trình bày quy định của Hiến pháp 2013 về bảo vệ môi trường.",
-   "model": "Nhà nước có chính sách bảo vệ môi trường, sử dụng bền vững tài nguyên, bảo tồn đa dạng sinh học, phòng chống thiên tai, ứng phó biến đổi khí hậu (khoản 1); khuyến khích năng lượng mới, tái tạo (khoản 2); người gây ô nhiễm phải bị xử lý, khắc phục, bồi thường (khoản 3); Điều 43: quyền sống trong môi trường trong lành.",
+   "model": "Điều 63: Nhà nước có chính sách bảo vệ môi trường, sử dụng bền vững tài nguyên, bảo tồn đa dạng sinh học, phòng chống thiên tai, ứng phó biến đổi khí hậu (khoản 1); khuyến khích năng lượng mới, tái tạo (khoản 2); người gây ô nhiễm phải bị xử lý, khắc phục, bồi thường (khoản 3); Điều 43: quyền sống trong môi trường trong lành.",
    "keywords": [
     "môi trường",
     "biến đổi khí hậu",

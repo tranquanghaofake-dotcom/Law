@@ -28,9 +28,9 @@
    "q": "Đặc điểm của nhà nước đơn nhất?",
    "options": [
     "Một chủ quyền chung, đơn vị hành chính lãnh thổ không có chủ quyền riêng",
-    "Các bang có hiến pháp riêng",
-    "Hai hệ thống pháp luật song song",
-    "Công dân có hai quốc tịch"
+    "Nhiều chủ quyền riêng, mỗi đơn vị lãnh thổ có hiến pháp riêng của chính mình",
+    "Các bang, tiểu bang có hiến pháp và chủ quyền riêng của mình, không phụ thuộc",
+    "Hai hệ thống pháp luật song song tồn tại, mỗi bên áp dụng luật và tòa án riêng"
    ],
    "answer": 0,
    "explain": "Bài 6."
@@ -59,8 +59,18 @@
      "answer": "left"
     },
     {
-     "text": "Hai hệ thống cơ quan nhà nước: liên bang và bang",
+     "text": "Hai hệ thống cơ quan nhà nước song song: ở trung ương chung và ở từng đơn vị thành viên",
      "answer": "right"
+    },
+    {
+     "text": "Các địa phương chịu sự quản lý thống nhất của trung ương, chỉ có một hệ thống pháp luật chung",
+     "answer": "left",
+     "basis": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), Bài 6"
+    },
+    {
+     "text": "Các đơn vị thành viên có hiến pháp và hệ thống cơ quan lập pháp riêng bên cạnh cơ quan trung ương chung",
+     "answer": "right",
+     "basis": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), Bài 6"
     }
    ],
    "explain": "Bài 6."
@@ -101,6 +111,17 @@
     "bang",
     "đơn vị hành chính"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hình thức cấu trúc nhà nước là sự tổ chức nhà nước thành các đơn vị hành chính lãnh thổ và tính chất quan hệ giữa các bộ phận cấu thành nhà nước với nhau, giữa các cơ quan nhà nước ở trung ương và ở địa phương.",
+   "answer": true,
+   "explain": "Đúng. Trích định nghĩa của khái niệm — nguồn: Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (Drive HLU/KÌ I NĂM I/LLCNN&PL/TÀI LIỆU ÔN THI LLC: VD8, VD9, VD11, VD12, VD13) và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình.",
+   "source": {
+    "kind": "textbook",
+    "cite": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (Drive HLU/KÌ I NĂM I/LLCNN&PL/TÀI LIỆU ÔN THI LLC: VD8, VD9, VD11, VD12, VD13) và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình"
+   }
   }
  ]
 }

@@ -47,9 +47,9 @@
    "q": "\"Nghị quý\" theo Điều 3 áp dụng cho ai?",
    "options": [
     "Quan viên có chức sự từ tam phẩm trở lên",
-    "Họ tôn thất",
-    "Con cháu các triều trước",
-    "Người cần cù chăm chỉ"
+    "Dân thường không có chức tước, công danh",
+    "Họ tôn thất trong hoàng tộc nhà vua",
+    "Con cháu các triều đại trước đã bị loại"
    ],
    "answer": 0,
    "explain": "Điều 3, khoản 6.",
@@ -71,6 +71,16 @@
     {
      "text": "Được giảm một bậc",
      "answer": "right"
+    },
+    {
+     "text": "Người thuộc bát nghị như có công huân lớn phạm tử tội, quan nghị án phải tâu để vua xét định",
+     "answer": "left",
+     "basis": "Quốc triều hình luật, Điều 4 (laws/lich-su-su-lieu.txt)"
+    },
+    {
+     "text": "Người thuộc diện được nghị xét giảm tội, phạm tội nhẹ hơn tử tội, thì được giảm một bậc",
+     "answer": "right",
+     "basis": "Quốc triều hình luật, Điều 4 (laws/lich-su-su-lieu.txt)"
     }
    ],
    "explain": "Điều 4."
@@ -99,9 +109,9 @@
    "q": "Bát nghị phản ánh đặc điểm nào của pháp luật thời Hậu Lê?",
    "options": [
     "Tính đẳng cấp: ưu đãi quý tộc, quan lại, người có công; đồng thời bảo vệ vương quyền bằng ngoại lệ thập ác",
-    "Bình đẳng tuyệt đối trước pháp luật",
-    "Chỉ ưu đãi người nghèo",
-    "Xóa bỏ hoàn toàn quyền xét xử của vua"
+    "Tính nhân văn thuần túy: chỉ nhằm giảm hình phạt cho dân nghèo, đồng thời bỏ qua quyền lực của nhà vua",
+    "Tính phân quyền: giao quyền xét xử cho quan lại địa phương, nhà vua không can thiệp vào án thập ác",
+    "Tính bình đẳng trước pháp luật: người thuộc bát nghị phạm tội cũng bị xử như người thường, không được ưu đãi"
    ],
    "answer": 0,
    "explain": "Đánh giá phổ biến của giáo trình dựa trên Điều 3, 4."

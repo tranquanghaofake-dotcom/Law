@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import { render } from '@testing-library/svelte';
-import { ART_NAMES, VIGNETTE_NAMES, artFor, vignetteFor } from '$lib/art/registry';
+import { render, waitFor } from '@testing-library/svelte';
+import { ART_NAMES, ART_MORE, VIGNETTE_NAMES, VIGNETTE_MORE, artFor, vignetteFor } from '$lib/art/registry';
 import Vignette from '$lib/art/Vignette.svelte';
 import SubjectArt from '$lib/art/SubjectArt.svelte';
 import Icon from '$lib/art/Icon.svelte';
@@ -20,10 +20,20 @@ describe('hình minh hoạ theo môn', () => {
       expect(svg?.getAttribute('viewBox')).toBe('0 0 520 325');
     }
   });
-  it('mỗi cảnh và tranh nhỏ vẽ khác nhau (không trùng nội dung)', () => {
-    const scenes = ART_NAMES.map((n) => render(SubjectArt, { props: { name: n } }).container.innerHTML);
+  it('mỗi cảnh và tranh nhỏ vẽ khác nhau (không trùng nội dung); cảnh/tranh bổ sung nạp lười nên chờ vẽ xong', async () => {
+    const scenes: string[] = [];
+    for (const n of ART_NAMES) {
+      const { container } = render(SubjectArt, { props: { name: n } });
+      if (ART_MORE.includes(n)) await waitFor(() => expect(container.querySelectorAll('svg path, svg rect').length).toBeGreaterThan(5));
+      scenes.push(container.innerHTML);
+    }
     expect(new Set(scenes).size).toBe(ART_NAMES.length);
-    const vs = VIGNETTE_NAMES.map((n) => render(Vignette, { props: { name: n } }).container.querySelector('svg'));
+    const vs: (SVGSVGElement | null)[] = [];
+    for (const n of VIGNETTE_NAMES) {
+      const svg = render(Vignette, { props: { name: n } }).container.querySelector('svg');
+      if (VIGNETTE_MORE.includes(n)) await waitFor(() => expect(svg!.children.length).toBeGreaterThan(8));
+      vs.push(svg);
+    }
     expect(vs.every((v) => v?.getAttribute('aria-hidden') === 'true' && v.getAttribute('viewBox') === '0 0 160 100')).toBe(true);
     expect(new Set(vs.map((v) => v?.innerHTML)).size).toBe(VIGNETTE_NAMES.length);
   });
@@ -31,6 +41,7 @@ describe('hình minh hoạ theo môn', () => {
     expect(vignetteFor({ id: 'dat-coc', group: 'dan-su' })).toBe('dat-coc');
     expect(vignetteFor({ id: 'de-moi', group: 'lao-dong' })).toBe('nghi-viec');
     expect(vignetteFor({ id: 'de-moi', group: 'nhom-la' })).toBe('quan-he');
+    expect(vignetteFor({ id: 'de-moi', group: 'hinh-su' })).toBe('toi-pham');
   });
   it('mỗi mục điều hướng có icon nét vẽ riêng', () => {
     const paths = NAV.map((n) => render(Icon, { props: { name: n.name } }).container.querySelector('svg')?.innerHTML);

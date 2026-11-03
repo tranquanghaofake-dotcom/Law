@@ -30,9 +30,9 @@
    "q": "Biện pháp nào là biện pháp khắc phục hậu quả theo Điều 28?",
    "options": [
     "Buộc khôi phục lại tình trạng ban đầu",
-    "Cảnh cáo",
-    "Phạt tiền",
-    "Trục xuất"
+    "Cảnh cáo bằng văn bản, nêu lỗi vi phạm",
+    "Phạt tiền đến mức tối đa của khung",
+    "Trục xuất ra khỏi lãnh thổ Việt Nam"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 1 Điều 28.",
@@ -47,9 +47,9 @@
    "q": "Buộc phá dỡ công trình xây dựng không có giấy phép thuộc loại biện pháp nào?",
    "options": [
     "Biện pháp khắc phục hậu quả",
-    "Hình thức xử phạt chính",
+    "Biện pháp khắc phục hậu quả do Tòa án áp dụng",
     "Biện pháp xử lý hành chính",
-    "Biện pháp ngăn chặn"
+    "Biện pháp ngăn chặn hành vi vi phạm"
    ],
    "answer": 0,
    "explain": "Điểm b khoản 1 Điều 28.",
@@ -75,6 +75,16 @@
     {
      "text": "Buộc thu hồi sản phẩm kém chất lượng",
      "answer": "left"
+    },
+    {
+     "text": "Buộc tiêu hủy hàng hóa gây hại cho sức khỏe con người",
+     "answer": "left",
+     "basis": "Điều 33 Luật Xử lý vi phạm hành chính"
+    },
+    {
+     "text": "Tước quyền sử dụng giấy phép lái xe có thời hạn",
+     "answer": "right",
+     "basis": "Điểm c khoản 1 Điều 21 Luật Xử lý vi phạm hành chính"
     }
    ],
    "explain": "Điều 21, 28."

@@ -29,9 +29,9 @@
    "q": "Quyền khác đối với tài sản theo Điều 159 gồm những quyền nào?",
    "options": [
     "Quyền đối với bất động sản liền kề, quyền hưởng dụng, quyền bề mặt",
-    "Quyền chiếm hữu, sử dụng, định đoạt",
-    "Quyền thế chấp, cầm cố, bảo lãnh",
-    "Quyền thừa kế, tặng cho"
+    "Quyền chiếm hữu, sử dụng và định đoạt tài sản của người khác",
+    "Quyền thế chấp, cầm cố, bảo lãnh và đặt cọc tài sản",
+    "Quyền thừa kế, tặng cho và chuyển nhượng quyền sử dụng đất"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 159.",
@@ -46,9 +46,9 @@
    "q": "Khi chủ sở hữu bán tài sản, quyền khác đối với tài sản đó có còn hiệu lực không?",
    "options": [
     "Vẫn có hiệu lực, trừ trường hợp luật quy định khác",
-    "Tự động chấm dứt",
-    "Chỉ còn hiệu lực 1 năm",
-    "Phải đăng ký lại"
+    "Tự động chấm dứt ngay khi chủ sở hữu bán tài sản đi",
+    "Chỉ còn hiệu lực trong thời hạn một năm sau khi bán",
+    "Phải đăng ký lại với cơ quan có thẩm quyền ngay"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 160.",
@@ -70,6 +70,16 @@
     {
      "text": "Xây công trình trên mặt đất thuộc quyền sử dụng của người khác",
      "answer": "right"
+    },
+    {
+     "text": "Quyền đặt đường ống dẫn nước qua đất của hàng xóm theo thỏa thuận",
+     "answer": "left",
+     "basis": "Điểm a khoản 2 Điều 159 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Người được xây nhà trên mặt đất thuộc quyền sử dụng của người khác, trong thời hạn đã thỏa thuận",
+     "answer": "right",
+     "basis": "Điểm c khoản 2 Điều 159 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 245, 267 Bộ luật Dân sự 2015."
@@ -110,6 +120,18 @@
     "hưởng dụng",
     "bề mặt"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quyền khác đối với tài sản là quyền của chủ thể trực tiếp nắm giữ, chi phối tài sản thuộc quyền sở hữu của chủ thể khác.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 159 Bộ luật Dân sự 2015 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 159 Bộ luật Dân sự 2015",
+    "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+   }
   }
  ]
 }

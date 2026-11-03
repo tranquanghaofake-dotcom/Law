@@ -29,9 +29,9 @@
    "q": "Theo Điều 104, Tòa án nhân dân tối cao có vai trò gì đối với các Tòa án khác?",
    "options": [
     "Giám đốc việc xét xử, trừ trường hợp do luật định",
-    "Chỉ đạo từng phán quyết cụ thể",
-    "Không có quan hệ gì",
-    "Bổ nhiệm mọi Thẩm phán"
+    "Chỉ đạo từng phán quyết của tòa án cấp dưới",
+    "Không có quan hệ gì với các tòa án khác cấp dưới",
+    "Bổ nhiệm mọi Thẩm phán của các tòa án khác"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 104.",
@@ -46,9 +46,9 @@
    "q": "Việc tổng kết thực tiễn xét xử của Tòa án nhân dân tối cao nhằm mục đích gì?",
    "options": [
     "Bảo đảm áp dụng thống nhất pháp luật trong xét xử",
-    "Ban hành luật mới",
-    "Giải thích Hiến pháp",
-    "Xử phạt hành chính"
+    "Ban hành luật mới và thông tư hướng dẫn chung",
+    "Giải thích Hiến pháp và các luật liên quan",
+    "Xử phạt hành chính các vi phạm nhỏ trong nước"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 104.",
@@ -70,6 +70,21 @@
     {
      "text": "Giải thích Hiến pháp, luật, pháp lệnh",
      "answer": "right"
+    },
+    {
+     "text": "Cơ quan xét xử cao nhất giám đốc việc xét xử của các Tòa án khác",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 104 Hiến pháp 2013"
+    },
+    {
+     "text": "Là cơ quan xét xử cao nhất của nước Cộng hòa xã hội chủ nghĩa Việt Nam",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 104 Hiến pháp 2013"
+    },
+    {
+     "text": "Cơ quan thường trực của Quốc hội giải thích Hiến pháp, luật và pháp lệnh",
+     "answer": "right",
+     "basis": "Điều 74 Hiến pháp 2013 (nhiệm vụ Ủy ban thường vụ Quốc hội)"
     }
    ],
    "explain": "Điều 104 và khoản 2 Điều 74."

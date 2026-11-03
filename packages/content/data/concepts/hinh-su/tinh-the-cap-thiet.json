@@ -29,9 +29,9 @@
    "q": "Điều kiện về thiệt hại trong tình thế cấp thiết là gì?",
    "options": [
     "Thiệt hại gây ra phải nhỏ hơn thiệt hại cần ngăn ngừa",
-    "Thiệt hại gây ra bằng thiệt hại cần ngăn ngừa",
-    "Không giới hạn thiệt hại",
-    "Thiệt hại phải dưới 2 triệu đồng"
+    "Thiệt hại gây ra bằng với thiệt hại cần ngăn ngừa",
+    "Không giới hạn thiệt hại gây ra cho người khác",
+    "Thiệt hại phải dưới mức cho phép của cơ quan nhà nước"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 23.",
@@ -70,6 +70,16 @@
     {
      "text": "Dùng vũ lực cần thiết khống chế kẻ trộm đang bỏ chạy",
      "answer": "right"
+    },
+    {
+     "text": "Người phá cửa kính để cứu người bị kẹt trong đám cháy, không còn cách nào khác",
+     "answer": "left",
+     "basis": "Điều 23 Bộ luật Hình sự 2015"
+    },
+    {
+     "text": "Người đuổi theo và dùng vũ lực cần thiết để bắt kẻ vừa cướp giật, không còn cách nào khác",
+     "answer": "right",
+     "basis": "Điều 24 Bộ luật Hình sự 2015"
     }
    ],
    "explain": "Điều 23, 24."
@@ -110,6 +120,18 @@
     "không phải tội phạm",
     "vượt quá"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Trong trường hợp thiệt hại gây ra rõ ràng vượt quá yêu cầu của tình thế cấp thiết, thì người gây thiệt hại đó phải chịu trách nhiệm hình sự.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 23 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 23 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)",
+    "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+   }
   }
  ]
 }

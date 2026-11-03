@@ -29,9 +29,9 @@
    "q": "Quyền nào là quyền chung của người sử dụng đất theo Điều 26?",
    "options": [
     "Được bồi thường, hỗ trợ, tái định cư khi Nhà nước thu hồi đất",
-    "Được miễn mọi nghĩa vụ tài chính",
-    "Được tự ý chuyển mục đích không cần phép",
-    "Được sở hữu đất"
+    "Được miễn mọi nghĩa vụ tài chính đối với đất đã được cấp",
+    "Được tự ý chuyển mục đích sử dụng, không cần phép của cơ quan nhà nước",
+    "Được sở hữu đất đai và tài nguyên trong lòng đất của mình"
    ],
    "answer": 0,
    "explain": "Khoản 7 Điều 26.",
@@ -46,9 +46,9 @@
    "q": "Quyền chuyển mục đích sử dụng đất của người sử dụng đất được thực hiện thế nào?",
    "options": [
     "Theo quy định của Luật Đất đai và pháp luật có liên quan",
-    "Tự do không cần thủ tục",
-    "Chỉ khi có đồng ý của hàng xóm",
-    "Không có quyền này"
+    "Tự do không cần thủ tục và không cần thông báo cơ quan",
+    "Chỉ khi có đồng ý bằng văn bản của hàng xóm liền kề",
+    "Không có quyền này với đất đã được cấp giấy chứng nhận"
    ],
    "answer": 0,
    "explain": "Khoản 6 Điều 26.",
@@ -70,6 +70,16 @@
     {
      "text": "Chuyển nhượng quyền sử dụng đất",
      "answer": "right"
+    },
+    {
+     "text": "Được hưởng thành quả lao động, kết quả đầu tư trên đất sử dụng hợp pháp",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 26 Luật Đất đai 2024"
+    },
+    {
+     "text": "Thừa kế hoặc tặng cho quyền sử dụng đất khi có đủ điều kiện theo luật",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 27 và khoản 1 Điều 45 Luật Đất đai 2024"
     }
    ],
    "explain": "Điều 26, 27, 45."

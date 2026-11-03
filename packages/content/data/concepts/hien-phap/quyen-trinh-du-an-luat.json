@@ -5,7 +5,7 @@
  "term": "Quyền trình dự án luật",
  "definition": "Chủ tịch nước, Ủy ban thường vụ Quốc hội, Hội đồng dân tộc, Ủy ban của Quốc hội, Chính phủ, Tòa án nhân dân tối cao, Viện kiểm sát nhân dân tối cao, Kiểm toán nhà nước, Ủy ban trung ương Mặt trận Tổ quốc Việt Nam và cơ quan trung ương của tổ chức chính trị - xã hội có quyền trình dự án luật trước Quốc hội, trình dự án pháp lệnh trước Ủy ban thường vụ Quốc hội. Đại biểu Quốc hội có quyền trình kiến nghị về luật, pháp lệnh và dự án luật, dự án pháp lệnh trước Quốc hội, Ủy ban thường vụ Quốc hội.",
  "plain": "Quyền \"sáng kiến lập pháp\": ai được đưa dự án luật vào Quốc hội. Thực tế phần lớn dự án luật do Chính phủ trình. Đại biểu Quốc hội có quyền trình cả kiến nghị về luật lẫn dự án luật. Ủy ban trung ương Mặt trận Tổ quốc và cơ quan trung ương của tổ chức chính trị - xã hội (nay trực thuộc Mặt trận) cũng có quyền này. Phân biệt: dự án LUẬT trình Quốc hội; dự án PHÁP LỆNH trình Ủy ban thường vụ Quốc hội.",
- "example": "Tòa án nhân dân tối cao trình dự án Luật Tổ chức Tòa án nhân dân sửa đổi trước Quốc hội: đúng quyền tại khoản 1 Điều 84.",
+ "example": "Tòa án nhân dân tối cao trình dự án Luật Tổ chức Tòa án nhân dân sửa đổi trước Quốc hội: đúng quyền tại khoản 1 Điều 84 Hiến pháp 2013.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1, khoản 2 Điều 84 Hiến pháp 2013",
@@ -31,8 +31,8 @@
    "q": "Chủ thể nào KHÔNG có quyền trình dự án luật trước Quốc hội theo Điều 84?",
    "options": [
     "Ủy ban nhân dân tỉnh",
-    "Chính phủ",
-    "Kiểm toán nhà nước",
+    "Chính phủ (trung ương)",
+    "Kiểm toán nhà nước TW",
     "Đại biểu Quốc hội"
    ],
    "answer": 0,
@@ -48,9 +48,9 @@
    "q": "Dự án pháp lệnh được trình trước cơ quan nào?",
    "options": [
     "Ủy ban thường vụ Quốc hội",
-    "Quốc hội tại kỳ họp",
-    "Chính phủ",
-    "Chủ tịch nước"
+    "Quốc hội tại kỳ họp hằng năm",
+    "Chính phủ và Thủ tướng",
+    "Chủ tịch nước, Phó chủ tịch"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 84.",
@@ -72,6 +72,16 @@
     {
      "text": "Trình trước Ủy ban thường vụ Quốc hội",
      "answer": "right"
+    },
+    {
+     "text": "Chủ tịch nước có quyền trình trước Quốc hội văn bản dự thảo của luật",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 84 Hiến pháp 2013"
+    },
+    {
+     "text": "Chính phủ trình trước Ủy ban thường vụ Quốc hội văn bản dự thảo của pháp lệnh",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 84 Hiến pháp 2013"
     }
    ],
    "explain": "Khoản 1 Điều 84."
@@ -112,6 +122,18 @@
     "đại biểu Quốc hội",
     "pháp lệnh"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Đại biểu Quốc hội có quyền trình kiến nghị về luật, pháp lệnh và dự án luật, dự án pháp lệnh.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 84 Hiến pháp 2013 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 84 Hiến pháp 2013",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+   }
   }
  ]
 }

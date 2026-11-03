@@ -48,7 +48,7 @@
    "q": "Nguồn chi trả trợ cấp hưu trí xã hội là gì?",
    "options": [
     "Ngân sách nhà nước",
-    "Quỹ BHXH bắt buộc",
+    "Quỹ BHXH bắt buộc chung",
     "Người sử dụng lao động",
     "Quỹ bảo hiểm thất nghiệp"
    ],
@@ -72,6 +72,21 @@
     {
      "text": "Cần thời gian đóng BHXH bắt buộc từ đủ 15 năm",
      "answer": "right"
+    },
+    {
+     "text": "Công dân từ đủ 75 tuổi, không hưởng lương hưu hay trợ cấp BHXH hằng tháng, có văn bản đề nghị",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 21 Luật Bảo hiểm xã hội 2024"
+    },
+    {
+     "text": "Công dân từ 70 đến dưới 75 tuổi thuộc hộ nghèo hoặc hộ cận nghèo, đủ điều kiện khác, được hưởng",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 21 Luật Bảo hiểm xã hội 2024"
+    },
+    {
+     "text": "Người có đủ 15 năm đóng BHXH bắt buộc khi nghỉ việc đủ tuổi thì được hưởng khoản định kỳ hằng tháng từ quỹ BHXH",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 64 Luật Bảo hiểm xã hội 2024"
     }
    ],
    "explain": "Điều 21, 64."

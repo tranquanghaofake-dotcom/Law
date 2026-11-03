@@ -30,9 +30,9 @@
    "q": "Chức năng của nhà nước được quyết định bởi yếu tố nào?",
    "options": [
     "Bản chất, nhiệm vụ của nhà nước và điều kiện kinh tế – xã hội",
-    "Ý muốn của người đứng đầu",
-    "Số lượng cơ quan nhà nước",
-    "Diện tích lãnh thổ"
+    "Ý muốn chủ quan của người đứng đầu nhà nước ở từng thời kỳ lịch sử",
+    "Số lượng cơ quan nhà nước và số lượng cán bộ trong các cơ quan",
+    "Diện tích lãnh thổ và dân số quốc gia, không phụ thuộc kinh tế"
    ],
    "answer": 0,
    "explain": "Chức năng phù hợp bản chất, mục đích, nhiệm vụ, điều kiện kinh tế – xã hội."
@@ -43,9 +43,9 @@
    "q": "Hình thức pháp lý thực hiện chức năng nhà nước gồm gì?",
    "options": [
     "Xây dựng pháp luật, tổ chức thực hiện pháp luật, bảo vệ pháp luật",
-    "Thuyết phục, cưỡng chế",
-    "Đối nội, đối ngoại",
-    "Lập pháp, tư pháp"
+    "Xây dựng pháp luật, bảo vệ công dân và xử lý người vi phạm pháp luật",
+    "Thuyết phục bằng tuyên truyền và chỉ dùng cưỡng chế khi thật cần thiết",
+    "Đối nội, đối ngoại và bảo đảm quốc phòng, an ninh cho toàn bộ đất nước"
    ],
    "answer": 0,
    "explain": "Ba hình thức pháp lý; thuyết phục và cưỡng chế là phương pháp."
@@ -63,6 +63,16 @@
     {
      "text": "Hợp tác quốc tế, bảo vệ Tổ quốc",
      "answer": "right"
+    },
+    {
+     "text": "Nhà nước tổ chức hệ thống phòng cháy, chữa cháy để bảo đảm an ninh trong nước",
+     "answer": "left",
+     "basis": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), Phân loại theo phạm vi hoạt động"
+    },
+    {
+     "text": "Nhà nước ký kết điều ước quốc tế và mở rộng quan hệ ngoại giao với các nước",
+     "answer": "right",
+     "basis": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), Phân loại theo phạm vi hoạt động"
     }
    ],
    "explain": "Phân loại theo phạm vi hoạt động."
@@ -103,6 +113,17 @@
     "đối ngoại",
     "bản chất"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chức năng của nhà nước là những phương diện (mặt) hoạt động cơ bản của nhà nước, phù hợp với bản chất, mục đích, nhiệm vụ của nhà nước và được xác định bởi điều kiện kinh tế – xã hội của đất nước trong từng giai đoạn.",
+   "answer": true,
+   "explain": "Đúng. Trích định nghĩa của khái niệm — nguồn: Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (Drive HLU/KÌ I NĂM I/LLCNN&PL/TÀI LIỆU ÔN THI LLC: VD8, VD9, VD11, VD12, VD13) và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình.",
+   "source": {
+    "kind": "textbook",
+    "cite": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (Drive HLU/KÌ I NĂM I/LLCNN&PL/TÀI LIỆU ÔN THI LLC: VD8, VD9, VD11, VD12, VD13) và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình"
+   }
   }
  ]
 }

@@ -47,9 +47,9 @@
    "q": "Theo Điều 3 Luật Đất đai 1987, người sử dụng đất được chuyển, nhượng, bán gì khi không còn sử dụng đất?",
    "options": [
     "Thành quả lao động, kết quả đầu tư trên đất được giao",
-    "Quyền sở hữu đất",
-    "Quyền sử dụng đất",
-    "Không được gì"
+    "Quyền sở hữu đất đai đã được giao cho người sử dụng",
+    "Quyền sử dụng đất được chuyển nhượng, bán tự do như hàng hóa",
+    "Mất toàn bộ tài sản trên đất, không được hưởng lợi ích nào"
    ],
    "answer": 0,
    "explain": "Điều 3.",
@@ -71,6 +71,16 @@
     {
      "text": "Cho hộ gia đình, cá nhân chuyển nhượng, thừa kế, thế chấp quyền sử dụng đất",
      "answer": "right"
+    },
+    {
+     "text": "Nghiêm cấm mua, bán, lấn, chiếm đất đai dưới mọi hình thức",
+     "answer": "left",
+     "basis": "Luật Đất đai 1987, Điều 5 (laws/lich-su-su-lieu.txt)"
+    },
+    {
+     "text": "Hộ gia đình, cá nhân được chuyển đổi và cho thuê quyền sử dụng đất",
+     "answer": "right",
+     "basis": "Luật Đất đai 1993, Điều 3"
     }
    ],
    "explain": "Điều 3, 5 Luật Đất đai 1987; Luật Đất đai 1993."

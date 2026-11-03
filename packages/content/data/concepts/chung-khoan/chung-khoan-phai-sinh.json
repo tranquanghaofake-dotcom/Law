@@ -29,8 +29,8 @@
    "options": [
     "Công cụ tài chính dưới dạng hợp đồng",
     "Giấy tờ xác nhận phần vốn cổ phần",
-    "Giấy tờ xác nhận phần nợ",
-    "Phần vốn góp của quỹ đầu tư"
+    "Giấy tờ xác nhận phần nợ của doanh nghiệp",
+    "Phần vốn góp của quỹ đầu tư chứng khoán"
    ],
    "answer": 0,
    "explain": "Khoản 9 Điều 4: \"công cụ tài chính dưới dạng hợp đồng\".",
@@ -45,9 +45,9 @@
    "q": "Loại nào KHÔNG được liệt kê là chứng khoán phái sinh tại khoản 9 Điều 4?",
    "options": [
     "Hợp đồng bảo lãnh phát hành",
-    "Hợp đồng quyền chọn",
-    "Hợp đồng tương lai",
-    "Hợp đồng kỳ hạn"
+    "Hợp đồng quyền chọn mua bán",
+    "Hợp đồng tương lai tiêu chuẩn",
+    "Hợp đồng kỳ hạn tiêu chuẩn"
    ],
    "answer": 0,
    "explain": "Ba loại: quyền chọn, tương lai, kỳ hạn. Bảo lãnh phát hành là một nghiệp vụ kinh doanh chứng khoán (khoản 31), không phải chứng khoán phái sinh.",
@@ -69,6 +69,16 @@
     {
      "text": "Chứng khoán phái sinh giao dịch thỏa thuận",
      "answer": "right"
+    },
+    {
+     "text": "Hợp đồng phái sinh niêm yết, cam kết mua hoặc bán tài sản cơ sở vào ngày xác định trong tương lai",
+     "answer": "left",
+     "basis": "Khoản 12 Điều 4 Luật Chứng khoán 2019"
+    },
+    {
+     "text": "Hợp đồng phái sinh giao dịch thỏa thuận, cam kết mua hoặc bán tài sản cơ sở theo giá đã xác định",
+     "answer": "right",
+     "basis": "Khoản 13 Điều 4 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 12 và khoản 13 Điều 4."
@@ -97,9 +107,9 @@
    "q": "Hai người ký thỏa thuận riêng: một tháng sau A bán cho B 1.000 cổ phiếu X với giá 30.000 đồng, không qua sàn. Theo khoản 9 và khoản 13 Điều 4, thỏa thuận này gần nhất với loại nào?",
    "options": [
     "Hợp đồng kỳ hạn (giao dịch thỏa thuận)",
-    "Hợp đồng tương lai (niêm yết)",
-    "Chứng chỉ quỹ",
-    "Quyền mua cổ phần"
+    "Hợp đồng tương lai (niêm yết) trên sàn",
+    "Chứng chỉ quỹ đầu tư đại chúng và cổ phiếu",
+    "Quyền mua cổ phần được phát hành thêm"
    ],
    "answer": 0,
    "explain": "Cam kết mua/bán tài sản cơ sở theo giá xác định vào ngày xác định trong tương lai, giao dịch thỏa thuận → hợp đồng kỳ hạn (khoản 13). Hợp đồng tương lai là loại niêm yết (khoản 12).",

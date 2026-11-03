@@ -32,7 +32,7 @@
    "options": [
     "Hàng hóa quá cảnh, chuyển khẩu, trung chuyển",
     "Hàng hóa nhập khẩu qua cửa khẩu biên giới",
-    "Hàng hóa từ khu phi thuế quan nhập vào thị trường trong nước",
+    "Hàng từ khu phi thuế quan nhập vào nội địa",
     "Hàng hóa xuất khẩu tại chỗ"
    ],
    "answer": 0,
@@ -48,9 +48,9 @@
    "q": "Ai là người nộp thuế xuất khẩu, nhập khẩu?",
    "options": [
     "Chủ hàng hóa xuất khẩu, nhập khẩu",
-    "Người tiêu dùng cuối cùng",
-    "Cơ quan hải quan",
-    "Ngân hàng"
+    "Người tiêu dùng cuối cùng mua hàng",
+    "Cơ quan hải quan cửa khẩu biên giới",
+    "Ngân hàng thương mại cho chủ hàng vay vốn"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 3.",
@@ -72,6 +72,16 @@
     {
      "text": "Hàng viện trợ nhân đạo",
      "answer": "right"
+    },
+    {
+     "text": "Hàng hóa xuất khẩu qua cửa khẩu, biên giới Việt Nam",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 2 Luật Thuế xuất khẩu, thuế nhập khẩu"
+    },
+    {
+     "text": "Hàng hóa quá cảnh, chuyển khẩu qua lãnh thổ Việt Nam",
+     "answer": "right",
+     "basis": "Điểm a khoản 4 Điều 2 Luật Thuế xuất khẩu, thuế nhập khẩu"
     }
    ],
    "explain": "Điều 2."

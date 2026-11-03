@@ -46,9 +46,9 @@
    "q": "Xử sự nào KHÔNG phải hành vi khách quan theo luật hình sự?",
    "options": [
     "Cử động do bị người khác cưỡng bức về thân thể, không làm chủ được",
-    "Không cứu giúp người đang nguy hiểm dù có điều kiện",
-    "Dùng dao đâm người",
-    "Lừa đảo qua mạng"
+    "Không cứu giúp người đang nguy hiểm dù có điều kiện và khả năng thực hiện",
+    "Dùng dao đâm người khác gây thương tích nghiêm trọng cho nạn nhân đó",
+    "Lừa đảo qua mạng để chiếm đoạt tài sản của người khác và gây thiệt hại"
    ],
    "answer": 0,
    "explain": "Hành vi phải có ý thức và ý chí.",
@@ -70,6 +70,16 @@
     {
      "text": "Không làm việc pháp luật buộc phải làm dù có đủ điều kiện",
      "answer": "right"
+    },
+    {
+     "text": "Người chủ động lấy trộm xe máy của hàng xóm rồi mang đi giấu",
+     "answer": "left",
+     "basis": "Giáo trình Luật Hình sự Việt Nam (Phần chung), Trường Đại học Luật Hà Nội (⚠ chưa đối chiếu nguyên văn)"
+    },
+    {
+     "text": "Bác sĩ trực có điều kiện nhưng không cứu người đang nguy hiểm đến tính mạng, người đó chết",
+     "answer": "right",
+     "basis": "Điều 132 Bộ luật Hình sự 2015"
     }
    ],
    "explain": "Học thuyết; Điều 132 BLHS."

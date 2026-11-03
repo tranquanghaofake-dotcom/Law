@@ -46,9 +46,9 @@
    "q": "Nhiệm vụ nào thuộc Ủy ban Cạnh tranh Quốc gia?",
    "options": [
     "Quyết định việc miễn trừ đối với thỏa thuận hạn chế cạnh tranh bị cấm",
-    "Xét xử tội phạm kinh tế",
-    "Cấp giấy chứng nhận đăng ký doanh nghiệp",
-    "Ban hành luật"
+    "Xét xử tội phạm kinh tế và các vụ án dân sự liên quan đến tranh chấp hợp đồng",
+    "Cấp giấy chứng nhận đăng ký doanh nghiệp và mã số thuế cho doanh nghiệp",
+    "Ban hành luật, pháp lệnh và các nghị quyết của Quốc hội về lĩnh vực cạnh tranh"
    ],
    "answer": 0,
    "explain": "Điểm b khoản 2 Điều 46.",
@@ -70,6 +70,16 @@
     {
      "text": "Bộ máy giúp việc thực hiện điều tra",
      "answer": "right"
+    },
+    {
+     "text": "Kiểm soát tập trung kinh tế và tiến hành tố tụng cạnh tranh",
+     "answer": "left",
+     "basis": "Điểm b khoản 2 Điều 46 Luật Cạnh tranh 2018"
+    },
+    {
+     "text": "Cơ quan điều tra tổ chức điều tra vụ việc cạnh tranh sau khi phát hiện dấu hiệu vi phạm",
+     "answer": "right",
+     "basis": "Điểm a, b khoản 2 Điều 50 Luật Cạnh tranh 2018"
     }
    ],
    "explain": "Điều 46."

@@ -30,9 +30,9 @@
    "q": "Bên có nghĩa vụ được miễn trách nhiệm dân sự khi nào?",
    "options": [
     "Vi phạm do sự kiện bất khả kháng (trừ khi có thỏa thuận hoặc luật quy định khác)",
-    "Khi vi phạm lần đầu",
-    "Khi giá trị nhỏ",
-    "Khi bên có quyền chưa nhắc nhở"
+    "Vi phạm lần đầu, không gây thiệt hại đáng kể cho bên có quyền nào cả và có lỗi nhẹ",
+    "Khi giá trị vi phạm nhỏ, không ảnh hưởng nhiều đến lợi ích kinh tế của bên có quyền khác",
+    "Khi bên có quyền chưa nhắc nhở và đã biết rõ việc vi phạm từ trước đó, không phản đối"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 351.",
@@ -47,9 +47,9 @@
    "q": "Nếu nghĩa vụ không thực hiện được hoàn toàn do lỗi của bên có quyền thì sao?",
    "options": [
     "Bên có nghĩa vụ không phải chịu trách nhiệm dân sự",
-    "Hai bên chịu trách nhiệm như nhau",
-    "Bên có nghĩa vụ vẫn phải bồi thường",
-    "Hợp đồng vô hiệu"
+    "Cả hai bên đều phải chịu trách nhiệm như nhau",
+    "Bên có nghĩa vụ vẫn phải chịu trách nhiệm dân sự và bồi thường",
+    "Hợp đồng vô hiệu từ khi giao kết, không có trách nhiệm gì"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 351.",
@@ -71,6 +71,16 @@
     {
      "text": "Không giao được hàng do động đất phá hủy kho",
      "answer": "right"
+    },
+    {
+     "text": "Nhà thầu chậm bàn giao công trình không có lý do chính đáng",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 351 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Bên mua chậm thanh toán tiền hàng mà không có lý do chính đáng",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 351 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 351."
@@ -111,6 +121,18 @@
     "bất khả kháng",
     "lỗi của bên có quyền"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Bên có nghĩa vụ mà vi phạm nghĩa vụ thì phải chịu trách nhiệm dân sự đối với bên có quyền.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 351 Bộ luật Dân sự 2015 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 351 Bộ luật Dân sự 2015",
+    "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+   }
   }
  ]
 }

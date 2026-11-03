@@ -33,9 +33,9 @@
    "q": "Hình thức nào là nhận tiền gửi theo khoản 27 Điều 4?",
    "options": [
     "Phát hành chứng chỉ tiền gửi",
-    "Phát hành cổ phiếu",
-    "Bán tài sản bảo đảm",
-    "Mua lại khoản phải thu"
+    "Phát hành cổ phiếu phổ thông mới",
+    "Bán tài sản bảo đảm đã thế chấp",
+    "Mua lại khoản phải thu của khách"
    ],
    "answer": 0,
    "explain": "Khoản 27 Điều 4.",
@@ -50,8 +50,8 @@
    "q": "Nguyên tắc của nhận tiền gửi là gì?",
    "options": [
     "Có hoàn trả đầy đủ tiền gốc, lãi theo thỏa thuận",
-    "Không hoàn trả gốc",
-    "Chỉ hoàn trả lãi",
+    "Không hoàn trả tiền gốc cho người gửi khi đáo hạn",
+    "Chỉ hoàn trả lãi cho người gửi tiền theo tháng",
     "Hoàn trả theo kết quả kinh doanh của ngân hàng"
    ],
    "answer": 0,
@@ -68,12 +68,22 @@
    "right": "Không phải nhận tiền gửi",
    "cases": [
     {
-     "text": "Nhận tiền gửi tiết kiệm có kỳ hạn của cá nhân",
+     "text": "Hoạt động tiếp nhận khoản tiền tiết kiệm có kỳ hạn của cá nhân với nguyên tắc hoàn trả đủ gốc và lãi",
      "answer": "left"
     },
     {
      "text": "Bán cổ phần cho nhà đầu tư khi tăng vốn điều lệ",
      "answer": "right"
+    },
+    {
+     "text": "Ngân hàng nhận tiền không kỳ hạn của khách và phát hành chứng chỉ tiền gửi",
+     "answer": "left",
+     "basis": "Khoản 27 Điều 4 Luật Các tổ chức tín dụng 2024"
+    },
+    {
+     "text": "Công ty cho thuê máy móc thu tiền thuê theo tháng, chỉ nhận tiền thanh toán dịch vụ của khách",
+     "answer": "right",
+     "basis": "Khoản 27 Điều 4 Luật Các tổ chức tín dụng 2024 (không thuộc nhận tiền gửi)"
     }
    ],
    "explain": "Khoản 27 Điều 4."

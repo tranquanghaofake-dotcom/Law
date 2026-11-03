@@ -29,9 +29,9 @@
    "q": "Pháp nhân thương mại phải chịu trách nhiệm hình sự khi nào?",
    "options": [
     "Khi phạm một tội được quy định tại Điều 76 Bộ luật Hình sự",
-    "Khi phạm bất kỳ tội nào trong Bộ luật Hình sự",
-    "Khi người đại diện bị kết án",
-    "Khi vi phạm hành chính nhiều lần"
+    "Khi phạm bất kỳ tội nào trong Bộ luật Hình sự và có lợi nhuận",
+    "Khi người đại diện theo pháp luật bị kết án đã thi hành xong",
+    "Khi vi phạm hành chính nhiều lần trong một năm và có lợi ích"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 2.",
@@ -46,9 +46,9 @@
    "q": "Một người chỉ phải chịu trách nhiệm hình sự khi nào?",
    "options": [
     "Phạm một tội đã được Bộ luật Hình sự quy định",
-    "Có hành vi trái đạo đức",
-    "Bị cơ quan nhà nước kỷ luật",
-    "Gây thiệt hại về tài sản"
+    "Có hành vi trái đạo đức xã hội và gây hậu quả",
+    "Bị cơ quan nhà nước kỷ luật bằng văn bản",
+    "Gây thiệt hại về tài sản cho người khác"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 2.",
@@ -70,6 +70,16 @@
     {
      "text": "Chỉ chịu TNHS về tội liệt kê tại Điều 76",
      "answer": "right"
+    },
+    {
+     "text": "Người từ đủ 16 tuổi phạm một tội đã được Bộ luật Hình sự quy định phải chịu trách nhiệm hình sự",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 2 Bộ luật Hình sự 2015"
+    },
+    {
+     "text": "Công ty cổ phần phạm tội thuộc danh mục tại Điều 76 mới phải chịu trách nhiệm hình sự",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 2 Bộ luật Hình sự 2015"
     }
    ],
    "explain": "Điều 2."
@@ -110,6 +120,18 @@
     "Điều 76",
     "pháp chế"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chỉ người nào phạm một tội đã được Bộ luật Hình sự quy định mới phải chịu trách nhiệm hình sự.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 2 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 2 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)",
+    "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+   }
   }
  ]
 }

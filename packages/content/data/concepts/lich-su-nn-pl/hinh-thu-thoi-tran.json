@@ -31,9 +31,9 @@
    "q": "Năm 1341, ai được giao biên soạn Hoàng triều đại điển và khảo soạn Hình thư?",
    "options": [
     "Trương Hán Siêu, Nguyễn Trung Ngạn",
-    "Lê Văn Hưu, Ngô Sĩ Liên",
-    "Trần Thủ Độ, Trần Quốc Tuấn",
-    "Nguyễn Trãi, Lê Lợi"
+    "Lê Văn Hưu, Ngô Sĩ Liên, Phan Huy Chú",
+    "Trần Thủ Độ và Trần Quốc Tuấn",
+    "Nguyễn Trãi, Lê Lợi, Lê Thánh Tông"
    ],
    "answer": 0,
    "explain": "Toàn thư năm 1341.",
@@ -76,6 +76,11 @@
     {
      "text": "Sau khi ban hành đổi niên hiệu Minh Đạo",
      "answer": "left"
+    },
+    {
+     "text": "Hoàng triều đại điển được khảo soạn dưới triều Trần Dụ Tông, năm 1341",
+     "answer": "right",
+     "basis": "Đại Việt sử ký toàn thư, Bản kỷ quyển VII, Kỷ nhà Trần, Hiến Tông–Dụ Tông, năm 1341 (laws/lich-su-su-lieu.txt)"
     }
    ],
    "explain": "Toàn thư năm 1042 và 1341."

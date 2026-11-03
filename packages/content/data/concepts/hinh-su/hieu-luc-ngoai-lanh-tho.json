@@ -29,9 +29,9 @@
    "q": "Người không quốc tịch thường trú ở Việt Nam phạm tội ở nước ngoài có thể bị truy cứu TNHS tại Việt Nam không?",
    "options": [
     "Có thể, như công dân Việt Nam",
-    "Không bao giờ",
-    "Chỉ khi có yêu cầu của nước ngoài",
-    "Chỉ khi phạm tội xâm phạm an ninh quốc gia"
+    "Không, vì không phải công dân",
+    "Có, nếu có yêu cầu của nước ngoài",
+    "Không, vì tội xảy ra ở nước ngoài"
    ],
    "answer": 0,
    "explain": "Đoạn 2 khoản 1 Điều 6.",
@@ -46,9 +46,9 @@
    "q": "Người nước ngoài phạm tội ở nước ngoài có thể bị truy cứu theo Bộ luật Hình sự Việt Nam khi nào?",
    "options": [
     "Hành vi xâm hại quyền, lợi ích hợp pháp của công dân Việt Nam hoặc lợi ích của Việt Nam",
-    "Trong mọi trường hợp",
-    "Khi người đó du lịch qua Việt Nam",
-    "Không bao giờ"
+    "Trong mọi trường hợp, không phụ thuộc vào địa điểm phạm tội và quốc tịch người phạm",
+    "Khi người đó đã từng du lịch hoặc quá cảnh qua lãnh thổ Việt Nam trước đây",
+    "Khi nạn nhân là công dân nước thứ ba, dù hành vi không liên quan đến Việt Nam"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 6.",
@@ -70,6 +70,16 @@
     {
      "text": "Người nước ngoài ở nước ngoài lừa đảo công dân Việt Nam",
      "answer": "right"
+    },
+    {
+     "text": "Công dân Việt Nam phạm tội ở nước ngoài, bị truy cứu theo Bộ luật Hình sự Việt Nam",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 6 Bộ luật Hình sự 2015"
+    },
+    {
+     "text": "Người nước ngoài phạm tội ở nước ngoài xâm phạm lợi ích của Nhà nước Việt Nam",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 6 Bộ luật Hình sự 2015"
     }
    ],
    "explain": "Điều 6."

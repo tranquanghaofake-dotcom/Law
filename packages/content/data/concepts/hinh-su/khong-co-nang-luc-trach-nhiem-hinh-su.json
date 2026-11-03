@@ -29,7 +29,7 @@
    "q": "Người phạm tội trong tình trạng mất khả năng điều khiển hành vi do say rượu thì sao?",
    "options": [
     "Vẫn phải chịu trách nhiệm hình sự",
-    "Không phải chịu trách nhiệm hình sự",
+    "Không phải chịu trách nhiệm gì",
     "Được miễn hình phạt",
     "Chỉ bị xử phạt hành chính"
    ],
@@ -46,9 +46,9 @@
    "q": "Người thực hiện hành vi nguy hiểm khi đang mắc bệnh tâm thần làm mất khả năng nhận thức thì thế nào?",
    "options": [
     "Không phải chịu trách nhiệm hình sự",
-    "Chịu TNHS nhưng được giảm nhẹ",
+    "Chịu TNHS nhưng được giảm nhẹ hình phạt",
     "Chịu TNHS như người bình thường",
-    "Phải chịu hình phạt bổ sung"
+    "Chịu TNHS nhưng được hoãn thi hành án"
    ],
    "answer": 0,
    "explain": "Điều 21.",
@@ -74,6 +74,11 @@
     {
      "text": "Dùng ma túy rồi gây án",
      "answer": "right"
+    },
+    {
+     "text": "Người bị bệnh khác làm mất hoàn toàn khả năng điều khiển hành vi khi gây thương tích",
+     "answer": "left",
+     "basis": "Điều 21 Bộ luật Hình sự 2015"
     }
    ],
    "explain": "Điều 13, 21."
@@ -114,6 +119,18 @@
     "điều khiển hành vi",
     "rượu, bia"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người thực hiện hành vi nguy hiểm cho xã hội trong khi đang mắc bệnh tâm thần, một bệnh khác làm mất khả năng nhận thức hoặc khả năng điều khiển hành vi của mình, thì không phải chịu trách nhiệm hình sự.",
+   "answer": true,
+   "explain": "Đúng. Điều 21 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 21 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)",
+    "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+   }
   }
  ]
 }

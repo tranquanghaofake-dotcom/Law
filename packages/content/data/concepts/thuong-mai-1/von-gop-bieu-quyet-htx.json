@@ -47,9 +47,9 @@
    "q": "Tại Đại hội thành viên toàn thể của hợp tác xã, mỗi thành viên chính thức có bao nhiêu phiếu biểu quyết?",
    "options": [
     "Một phiếu, không phụ thuộc vốn góp hay chức vụ",
-    "Tương ứng tỷ lệ vốn góp",
-    "Do Hội đồng quản trị quyết định",
-    "Hai phiếu nếu là thành viên sáng lập"
+    "Tương ứng tỷ lệ vốn góp của từng thành viên",
+    "Do Hội đồng quản trị quyết định theo từng vụ việc",
+    "Hai phiếu nếu là thành viên sáng lập đã góp đủ vốn"
    ],
    "answer": 0,
    "explain": "Khoản 4 Điều 61.",
@@ -71,6 +71,16 @@
     {
      "text": "Vốn góp tối đa không quá 40% vốn điều lệ",
      "answer": "right"
+    },
+    {
+     "text": "Tổng vốn góp của thành viên liên kết không quá 30% vốn điều lệ của tổ chức kinh tế tập thể cấp cơ sở",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 74 Luật Hợp tác xã 2023"
+    },
+    {
+     "text": "Tổng vốn góp của thành viên liên kết không quá 40% vốn điều lệ của tổ chức kinh tế tập thể cấp liên kết",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 74 Luật Hợp tác xã 2023"
     }
    ],
    "explain": "Khoản 1 Điều 74."
@@ -111,6 +121,18 @@
     "một phiếu",
     "vốn góp"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Vốn góp tối đa không quá 30% vốn điều lệ đối với hợp tác xã và không quá 40% vốn điều lệ đối với liên hiệp hợp tác xã.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 74 Luật Hợp tác xã 2023 (VBHN 101/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 74 Luật Hợp tác xã 2023 (VBHN 101/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-101-VBHN-VPQH-2026-Luat-Hop-tac-xa-703396.aspx"
+   }
   }
  ]
 }

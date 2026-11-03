@@ -21,10 +21,10 @@
     {
       "q": "Chủ doanh nghiệp tư nhân chịu trách nhiệm thế nào?",
       "options": [
-        "Trong phạm vi vốn đầu tư",
+        "Trong phạm vi vốn đầu tư đăng ký",
         "Bằng toàn bộ tài sản của mình",
-        "Trong phạm vi vốn điều lệ",
-        "Không chịu"
+        "Trong phạm vi vốn điều lệ đã góp",
+        "Chịu trách nhiệm một phần tài sản"
       ],
       "answer": 1,
       "explain": "Khoản 1 Điều 188.",
@@ -47,10 +47,10 @@
     {
       "q": "Thành viên góp vốn trong công ty hợp danh chịu trách nhiệm thế nào?",
       "options": [
-        "Vô hạn",
+        "Vô hạn bằng toàn bộ tài sản cá nhân của mình",
         "Trong phạm vi số vốn đã cam kết góp",
-        "Liên đới với thành viên hợp danh",
-        "Không chịu"
+        "Liên đới với thành viên hợp danh khác",
+        "Không chịu trách nhiệm về khoản nợ chung"
       ],
       "answer": 1,
       "explain": "Điểm c khoản 1 Điều 177.",
@@ -84,12 +84,12 @@
       "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
     },
     {
-      "q": "Chủ sở hữu công ty TNHH một thành viên có thể là ai?",
+      "q": "Phương án nào liệt kê đầy đủ chủ sở hữu có thể có của công ty TNHH một thành viên?",
       "options": [
-        "Chỉ cá nhân",
+        "Cá nhân có quốc tịch Việt Nam",
         "Một tổ chức hoặc một cá nhân",
-        "Hai cá nhân",
-        "Chỉ Nhà nước"
+        "Hai cá nhân trở lên đồng sở hữu",
+        "Tổ chức kinh tế nước ngoài"
       ],
       "answer": 1,
       "explain": "Khoản 1 Điều 74.",
@@ -125,10 +125,10 @@
     {
       "q": "Trong 03 năm đầu, cổ đông sáng lập bán cổ phần phổ thông cho người ngoài cần điều kiện gì?",
       "options": [
-        "Không cần",
+        "Không cần gì, chỉ cần thông báo",
         "Được Đại hội đồng cổ đông chấp thuận",
-        "Được Giám đốc đồng ý",
-        "Bị cấm tuyệt đối"
+        "Được Giám đốc đồng ý bằng văn bản",
+        "Bị cấm tuyệt đối trong mọi trường hợp"
       ],
       "answer": 1,
       "explain": "Khoản 3 Điều 120.",

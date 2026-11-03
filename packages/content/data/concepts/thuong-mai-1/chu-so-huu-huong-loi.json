@@ -30,9 +30,9 @@
    "q": "Chủ sở hữu hưởng lợi của doanh nghiệp là ai?",
    "options": [
     "Cá nhân có quyền sở hữu trên thực tế vốn điều lệ hoặc có quyền chi phối doanh nghiệp",
-    "Mọi cổ đông đứng tên",
-    "Người đại diện theo pháp luật",
-    "Ngân hàng cho vay"
+    "Mọi cổ đông đứng tên trên sổ đăng ký cổ đông và giấy tờ pháp lý của công ty",
+    "Người đại diện theo pháp luật của doanh nghiệp, ký các hợp đồng thay mặt công ty",
+    "Ngân hàng cho vay vốn và nhận tài sản bảo đảm do doanh nghiệp đưa ra để vay"
    ],
    "answer": 0,
    "explain": "Khoản 35 Điều 4.",
@@ -47,9 +47,9 @@
    "q": "Khái niệm chủ sở hữu hưởng lợi được bổ sung bởi văn bản nào?",
    "options": [
     "Luật 76/2025/QH15 sửa đổi Luật Doanh nghiệp",
-    "Luật Doanh nghiệp 2014",
-    "Bộ luật Dân sự 2015",
-    "Luật Đầu tư 2020"
+    "Luật Doanh nghiệp 2014 và văn bản hướng dẫn",
+    "Bộ luật Dân sự 2015 và các luật liên quan",
+    "Luật Đầu tư 2020 và Luật Chứng khoán 2019"
    ],
    "answer": 0,
    "explain": "VBHN 67/VBHN-VPQH 2025.",
@@ -71,6 +71,16 @@
     {
      "text": "Người đại diện phần vốn nhà nước tại công ty cổ phần",
      "answer": "right"
+    },
+    {
+     "text": "Cá nhân thực tế nắm quyền chi phối công ty qua người đứng tên hộ",
+     "answer": "left",
+     "basis": "Khoản 35 Điều 4 Luật Doanh nghiệp 2020"
+    },
+    {
+     "text": "Cổ đông nắm 1% cổ phần, không có quyền chi phối và không hưởng lợi thực tế",
+     "answer": "right",
+     "basis": "Khoản 35 Điều 4 Luật Doanh nghiệp 2020"
     }
    ],
    "explain": "Khoản 35 Điều 4."

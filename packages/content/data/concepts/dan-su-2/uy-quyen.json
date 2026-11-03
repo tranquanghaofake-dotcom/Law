@@ -29,7 +29,7 @@
    "options": [
     "Bên ủy quyền",
     "Chính mình",
-    "Người thứ ba",
+    "Người thứ ba khác",
     "Nhà nước"
    ],
    "answer": 0,
@@ -45,9 +45,9 @@
    "q": "Không có thỏa thuận và luật không quy định thì hợp đồng ủy quyền có hiệu lực bao lâu?",
    "options": [
     "01 năm kể từ ngày xác lập việc ủy quyền",
-    "06 tháng",
-    "05 năm",
-    "Vô thời hạn"
+    "06 tháng kể từ ngày xác lập việc ủy quyền",
+    "05 năm kể từ ngày ký kết hợp đồng ủy quyền",
+    "Vô thời hạn cho đến khi bên ủy quyền hủy"
    ],
    "answer": 0,
    "explain": "Điều 563.",
@@ -69,6 +69,16 @@
     {
      "text": "Bên làm thực hiện công việc nhân danh chính mình",
      "answer": "right"
+    },
+    {
+     "text": "Người được ủy quyền ký hợp đồng bán nhà, nhân danh chủ nhà giao dịch với khách mua",
+     "answer": "left",
+     "basis": "Điều 562 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Thợ sửa xe nhận việc cho khách, thực hiện công việc theo tên của mình và chịu trách nhiệm",
+     "answer": "right",
+     "basis": "Điều 513 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 513, 562."
@@ -109,6 +119,18 @@
     "thỏa thuận",
     "01 năm"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hợp đồng ủy quyền là sự thỏa thuận giữa các bên, theo đó bên được ủy quyền có nghĩa vụ thực hiện công việc nhân danh bên ủy quyền, bên ủy quyền chỉ phải trả thù lao nếu có thỏa thuận hoặc pháp luật có quy định.",
+   "answer": true,
+   "explain": "Đúng. Điều 562 Bộ luật Dân sự 2015 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 562 Bộ luật Dân sự 2015",
+    "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+   }
   }
  ]
 }

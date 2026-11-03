@@ -29,9 +29,9 @@
    "q": "Điều kiện bắt buộc để thỏa thuận hạn chế cạnh tranh bị cấm được miễn trừ là gì?",
    "options": [
     "Có lợi cho người tiêu dùng và đáp ứng một trong các điều kiện tại khoản 1 Điều 14",
-    "Có thị phần dưới 5%",
-    "Được hiệp hội đồng ý",
-    "Đã thực hiện trên 5 năm"
+    "Có thị phần dưới năm phần trăm trên thị trường liên quan và chưa được thông báo cho cơ quan",
+    "Được hiệp hội ngành nghề đồng ý bằng văn bản trước khi thực hiện thoả thuận",
+    "Đã thực hiện trên năm năm và được cơ quan thuế xác nhận ổn định doanh thu hằng năm"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 14.",
@@ -48,7 +48,7 @@
     "Thỏa thuận thông đồng để một bên thắng thầu",
     "Thỏa thuận ấn định giá",
     "Thỏa thuận hạn chế số lượng sản xuất",
-    "Thỏa thuận áp đặt điều kiện ký kết hợp đồng"
+    "Thỏa thuận áp đặt điều kiện ký kết hợp đồng mua bán"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 14 không gồm khoản 4, 5, 6 Điều 11.",
@@ -70,6 +70,16 @@
     {
      "text": "Thỏa thuận loại bỏ đối thủ khỏi thị trường",
      "answer": "right"
+    },
+    {
+     "text": "Các nhà sản xuất hợp tác để nâng cao chất lượng và tiến bộ kỹ thuật của sản phẩm, mang lại lợi ích cho người tiêu dùng",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 14 Luật Cạnh tranh 2018"
+    },
+    {
+     "text": "Các doanh nghiệp cùng thỏa thuận để một bên thắng thầu trong gói thầu cung cấp thiết bị",
+     "answer": "right",
+     "basis": "Khoản 4 Điều 11 và khoản 1 Điều 14 Luật Cạnh tranh 2018"
     }
    ],
    "explain": "Điều 14."

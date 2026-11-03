@@ -28,12 +28,12 @@
   {
    "type": "mcq",
    "level": 1,
-   "q": "Nhà đầu tư theo khoản 18 Điều 3 gồm những loại nào?",
+   "q": "Phương án nào liệt kê đầy đủ các loại nhà đầu tư theo khoản 18 Điều 3?",
    "options": [
     "Nhà đầu tư trong nước, nhà đầu tư nước ngoài và tổ chức kinh tế có vốn đầu tư nước ngoài",
-    "Chỉ doanh nghiệp",
-    "Chỉ cá nhân",
-    "Chỉ cơ quan nhà nước"
+    "Nhà đầu tư trong nước và nhà đầu tư nước ngoài, không gồm tổ chức kinh tế có vốn nước ngoài",
+    "Nhà đầu tư trong nước, nhà đầu tư nước ngoài và doanh nghiệp nhà nước có vốn lớn",
+    "Nhà đầu tư nước ngoài và tổ chức kinh tế có vốn đầu tư nước ngoài, không gồm nhà đầu tư trong nước"
    ],
    "answer": 0,
    "explain": "Khoản 18 Điều 3.",
@@ -72,6 +72,16 @@
     {
      "text": "Tổ chức thành lập theo pháp luật nước ngoài",
      "answer": "right"
+    },
+    {
+     "text": "Công ty cổ phần Việt Nam không có cổ đông là nhà đầu tư nước ngoài",
+     "answer": "left",
+     "basis": "Khoản 20 Điều 3 Luật Đầu tư 2025"
+    },
+    {
+     "text": "Cá nhân mang quốc tịch nước ngoài thực hiện đầu tư kinh doanh tại Việt Nam",
+     "answer": "right",
+     "basis": "Khoản 19 Điều 3 Luật Đầu tư 2025"
     }
    ],
    "explain": "Khoản 19, 20 Điều 3."

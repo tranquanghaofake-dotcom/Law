@@ -59,11 +59,14 @@ test('build PWA có manifest và service worker', async ({ request }) => {
 
 test('axe-core: không có vi phạm serious/critical ở các trang có shell (390 và 1280 px)', async ({ page }) => {
   const axePath = require.resolve('axe-core/axe.min.js');
+  await page.emulateMedia({ reducedMotion: 'reduce' }); // axe không quét giữa lúc phần tử đang mờ dần (color-contrast chập chờn)
   for (const [w, h] of [[390, 844], [1280, 800]]) {
     await page.setViewportSize({ width: w, height: h });
     for (const hash of ['#/', '#/mon', '#/mon/hien-phap', '#/mon/hien-phap/khai-niem/chu-quyen-nhan-dan', '#/luyen-de', '#/toi', '#/cai-dat']) {
       await page.goto(B + hash);
-      await page.locator('main h1, main .hero-card').first().waitFor();
+      // đổi hash không tải lại trang: chờ đúng trang đích (hash khớp, hết "Đang tải…", có tiêu đề) rồi mới quét
+      await page.waitForFunction((h) => location.hash === h && !document.querySelector('.loading') && !!document.querySelector('main h1, main .hero-card'), hash);
+      await page.waitForTimeout(200);
       await page.addScriptTag({ path: axePath });
       const res = await page.evaluate(async () => (window as any).axe.run(document, { resultTypes: ['violations'] }));
       const bad = res.violations.filter((v: any) => v.impact === 'serious' || v.impact === 'critical').map((v: any) => `${v.id}: ${v.nodes.map((n: any) => n.target.join(' ')).slice(0, 3).join(' | ')}`);

@@ -31,9 +31,9 @@
    "q": "Hình thức nào thuộc Điều 18 Luật Đầu tư?",
    "options": [
     "Đầu tư theo hình thức hợp đồng BCC",
-    "Gửi tiền tiết kiệm",
-    "Cho vay nặng lãi",
-    "Mua bảo hiểm nhân thọ"
+    "Gửi tiền tiết kiệm tại ngân hàng",
+    "Cho vay nặng lãi với lãi suất cao",
+    "Mua bảo hiểm nhân thọ cho bản thân mình"
    ],
    "answer": 0,
    "explain": "Điều 18.",
@@ -49,8 +49,8 @@
    "options": [
     "Không",
     "Có, trong mọi trường hợp",
-    "Chỉ khi vốn trên 10 tỷ đồng",
-    "Chỉ khi là cá nhân"
+    "Có, nếu vốn lớn",
+    "Có, khi là cá nhân"
    ],
    "answer": 0,
    "explain": "Điểm c khoản 2 Điều 26.",
@@ -72,6 +72,16 @@
     {
      "text": "Mua hàng hóa để tiêu dùng cá nhân",
      "answer": "right"
+    },
+    {
+     "text": "Doanh nghiệp góp vốn, mua cổ phần của một công ty đang hoạt động",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 18 Luật Đầu tư 2025"
+    },
+    {
+     "text": "Cá nhân mua nhà ở để làm nơi ở cho gia đình",
+     "answer": "right",
+     "basis": "Điều 18 Luật Đầu tư 2025 (không liệt kê hình thức này)"
     }
    ],
    "explain": "Điều 18."

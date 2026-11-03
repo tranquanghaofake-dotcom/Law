@@ -32,9 +32,9 @@
    "q": "Vị trí pháp lý của Ngân hàng Nhà nước Việt Nam?",
    "options": [
     "Cơ quan ngang bộ của Chính phủ, là Ngân hàng trung ương",
-    "Doanh nghiệp nhà nước hoạt động vì lợi nhuận",
-    "Cơ quan thuộc Quốc hội",
-    "Tổ chức tín dụng đặc biệt"
+    "Doanh nghiệp nhà nước hoạt động vì lợi nhuận của cổ đông",
+    "Cơ quan thuộc Quốc hội, chịu trách nhiệm trực tiếp trước Quốc hội",
+    "Tổ chức tín dụng đặc biệt do Thủ tướng Chính phủ thành lập"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 2.",
@@ -73,6 +73,16 @@
     {
      "text": "Phát hành tiền",
      "answer": "right"
+    },
+    {
+     "text": "Ban hành văn bản quy phạm pháp luật về tiền tệ và ngân hàng",
+     "answer": "left",
+     "basis": "Khoản 4 Điều 4 Luật Ngân hàng Nhà nước 2010"
+    },
+    {
+     "text": "Cho tổ chức tín dụng vay tái cấp vốn để ổn định thanh khoản",
+     "answer": "right",
+     "basis": "Điều 11 Luật Ngân hàng Nhà nước 2010"
     }
    ],
    "explain": "Khoản 3 Điều 2."
@@ -113,6 +123,17 @@
     "quản lý nhà nước",
     "phát hành tiền"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Ngân hàng Nhà nước Việt Nam là cơ quan ngang bộ của Chính phủ, là Ngân hàng trung ương của nước Cộng hòa xã hội chủ nghĩa Việt Nam.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 2 Luật Ngân hàng Nhà nước Việt Nam (VBHN 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 2 Luật Ngân hàng Nhà nước Việt Nam (VBHN 2026)"
+   }
   }
  ]
 }

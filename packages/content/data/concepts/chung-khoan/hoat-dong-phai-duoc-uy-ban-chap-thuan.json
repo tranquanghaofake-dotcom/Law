@@ -45,8 +45,8 @@
    "q": "Hoạt động nào phải được Ủy ban chấp thuận trước theo Điều 87?",
    "options": [
     "Thành lập, đóng cửa phòng giao dịch",
-    "Tuyển thêm nhân viên môi giới",
-    "Tăng phí giao dịch",
+    "Tuyển thêm nhân viên môi giới mới",
+    "Tăng phí giao dịch dịch vụ môi giới",
     "Ký hợp đồng với khách hàng mới"
    ],
    "answer": 0,
@@ -73,6 +73,11 @@
     {
      "text": "Tổ chức hội thảo cho nhà đầu tư",
      "answer": "right"
+    },
+    {
+     "text": "Quảng cáo thông thường về dịch vụ của công ty chứng khoán trên báo chí",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 87 Luật Chứng khoán 2019 (không thuộc các hoạt động liệt kê)"
     }
    ],
    "explain": "Khoản 1 Điều 87."

@@ -4,7 +4,7 @@
  "chapter": "v8",
  "term": "Thẩm quyền giải quyết tranh chấp đất đai",
  "definition": "Tranh chấp đất đai mà các bên tranh chấp hoặc một trong các bên tranh chấp có Giấy chứng nhận quyền sử dụng đất, Giấy chứng nhận quyền sở hữu nhà ở và quyền sử dụng đất ở, Giấy chứng nhận quyền sở hữu nhà ở, Giấy chứng nhận quyền sở hữu công trình xây dựng, Giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất, Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất hoặc có một trong các loại giấy tờ quy định tại Điều 137 của Luật này và tranh chấp về tài sản gắn liền với đất thì do Tòa án giải quyết.",
- "plain": "Tiêu chí: CÓ hay KHÔNG CÓ GIẤY CHỨNG NHẬN/giấy tờ theo Điều 137. CÓ (một bên có là đủ) hoặc tranh chấp TÀI SẢN gắn liền với đất → TÒA ÁN. KHÔNG CÓ → các bên CHỌN: UBND cấp có thẩm quyền HOẶC khởi kiện tại Tòa án (khoản 2). LƯU Ý THỰC TIỄN: văn bản hợp nhất vẫn ghi thẩm quyền \"Chủ tịch UBND cấp huyện\" ở khoản 3, trong khi cấp huyện đã kết thúc hoạt động từ 01/7/2025 (Nghị quyết 203/2025/QH15) — phải tra văn bản phân định thẩm quyền chính quyền địa phương hai cấp đang áp dụng.",
+ "plain": "Tiêu chí: CÓ hay KHÔNG CÓ GIẤY CHỨNG NHẬN/giấy tờ theo Điều 137. CÓ (một bên có là đủ) hoặc tranh chấp TÀI SẢN gắn liền với đất → TÒA ÁN. KHÔNG CÓ → các bên CHỌN: UBND cấp có thẩm quyền HOẶC khởi kiện tại Tòa án (khoản 2). LƯU Ý: câu chữ VBHN 44/VBHN-VPQH 2026 vẫn ghi thẩm quyền \"Chủ tịch UBND cấp huyện\" ở khoản 3; từ 01/7/2025 cấp huyện kết thúc hoạt động theo khoản 3 Điều 51 Luật Tổ chức chính quyền địa phương 72/2025/QH15 (hiệu lực 16/6/2025); cơ quan giải quyết thay cấp huyện chưa được đối chiếu.",
  "example": "Ông A có sổ đỏ, bà B không có giấy tờ, tranh chấp ranh giới: sau khi hòa giải không thành tại xã, vụ việc do Tòa án giải quyết (khoản 1 Điều 236).",
  "source": {
   "kind": "statute",
@@ -46,9 +46,9 @@
    "q": "Tranh chấp mà các bên đều không có Giấy chứng nhận, không có giấy tờ theo Điều 137 thì sao?",
    "options": [
     "Các bên lựa chọn UBND cấp có thẩm quyền hoặc khởi kiện tại Tòa án",
-    "Chỉ Tòa án",
-    "Chỉ UBND cấp xã",
-    "Không được giải quyết"
+    "Tòa án nhân dân khu vực giải quyết, UBND không có thẩm quyền",
+    "UBND cấp xã nơi có đất giải quyết, không được khởi kiện ra Tòa án",
+    "Không được giải quyết và các bên phải tự thỏa thuận với nhau"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 236.",
@@ -74,6 +74,11 @@
     {
      "text": "Không bên nào có giấy tờ",
      "answer": "right"
+    },
+    {
+     "text": "Tranh chấp đất đai mà một bên có Giấy chứng nhận quyền sử dụng đất",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 236 Luật Đất đai 2024"
     }
    ],
    "explain": "Điều 236."

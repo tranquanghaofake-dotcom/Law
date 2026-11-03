@@ -46,9 +46,9 @@
    "q": "Cơ quan nào xác định cơ cấu, thành phần những người được giới thiệu ứng cử đại biểu Quốc hội?",
    "options": [
     "Ủy ban Thường vụ Quốc hội",
-    "Mặt trận Tổ quốc",
-    "Chính phủ",
-    "Hội đồng bầu cử quốc gia"
+    "Mặt trận Tổ quốc các cấp",
+    "Chính phủ và các Bộ trưởng",
+    "Tòa án nhân dân tối cao"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 4 Luật Bầu cử.",
@@ -74,6 +74,16 @@
     {
      "text": "Tham gia giám sát việc bầu cử",
      "answer": "left"
+    },
+    {
+     "text": "Việc tổ chức hiệp thương để lựa chọn, giới thiệu người ứng cử đại biểu do Ủy ban Mặt trận cùng cấp chủ trì",
+     "answer": "left",
+     "basis": "Khoản 5 Điều 4 Luật Bầu cử Đại biểu Quốc hội và Đại biểu Hội đồng nhân dân 2015"
+    },
+    {
+     "text": "Dự kiến cơ cấu, thành phần đại biểu Quốc hội chậm nhất 105 ngày trước ngày bầu cử",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 8 Luật Bầu cử Đại biểu Quốc hội và Đại biểu Hội đồng nhân dân"
     }
    ],
    "explain": "Khoản 3, 5 Điều 4 Luật Bầu cử."
@@ -114,6 +124,18 @@
     "giám sát",
     "Ủy ban Thường vụ Quốc hội"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mặt trận Tổ quốc Việt Nam tổ chức hiệp thương lựa chọn, giới thiệu người ứng cử đại biểu Quốc hội và đại biểu Hội đồng nhân dân các cấp; tham gia giám sát việc bầu cử đại biểu Quốc hội và đại biểu Hội đồng nhân dân các cấp.",
+   "answer": true,
+   "explain": "Đúng. Khoản 5 Điều 4 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 5 Điều 4 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026)",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/luat-bau-cu-dai-bieu-quoc-hoi-va-dai-bieu-hoi-dong-nhan-dan-so-85-2015-qh13--70812"
+   }
   }
  ]
 }

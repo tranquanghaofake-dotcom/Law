@@ -45,9 +45,9 @@
    "q": "Chính quyền địa phương ở đơn vị hành chính - kinh tế đặc biệt do ai quy định?",
    "options": [
     "Quốc hội, khi thành lập đơn vị đó",
-    "Thủ tướng",
-    "Chủ tịch nước",
-    "Hội đồng nhân dân tỉnh"
+    "Thủ tướng Chính phủ quy định hằng năm",
+    "Chủ tịch nước quy định đầy đủ",
+    "Hội đồng nhân dân tỉnh quy định chung"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 111 (mới).",
@@ -69,6 +69,16 @@
     {
      "text": "Thành lập, giải thể đơn vị hành chính dưới tỉnh",
      "answer": "right"
+    },
+    {
+     "text": "Đơn vị hành chính - kinh tế đặc biệt được tổ chức theo nghị quyết của Quốc hội",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 110 Hiến pháp 2013"
+    },
+    {
+     "text": "Ủy ban thường vụ Quốc hội quyết định điều chỉnh địa giới đơn vị hành chính cấp xã",
+     "answer": "right",
+     "basis": "Điều 74 Hiến pháp 2013 (theo bản 2013)"
     }
    ],
    "explain": "Khoản 2 Điều 110; khoản 8 Điều 74."

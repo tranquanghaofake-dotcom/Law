@@ -29,9 +29,9 @@
    "q": "Mức bù đắp tổn thất tinh thần tối đa khi không thỏa thuận được cho một người có tính mạng bị xâm phạm là bao nhiêu?",
    "options": [
     "Không quá 100 lần mức lương cơ sở",
-    "Không quá 50 lần",
-    "Không quá 10 lần",
-    "Không giới hạn"
+    "Không quá 50 lần mức lương cơ sở",
+    "Không quá 10 lần mức lương cơ sở",
+    "Không giới hạn mức bù đắp"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 591.",
@@ -46,9 +46,9 @@
    "q": "Khoản bù đắp tổn thất tinh thần trước hết dành cho ai?",
    "options": [
     "Người thân thích thuộc hàng thừa kế thứ nhất của người bị thiệt hại",
-    "Bạn bè của người bị thiệt hại",
-    "Nhà nước",
-    "Người gây thiệt hại"
+    "Bạn bè, người quen của người bị thiệt hại trong cộng đồng",
+    "Nhà nước, cơ quan quản lý địa phương nơi người bị thiệt hại cư trú",
+    "Người gây thiệt hại, kể cả người có hành vi vô ý và đã bồi thường"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 591.",
@@ -70,6 +70,16 @@
     {
      "text": "Khoản tiền bù đắp cho vợ, con nạn nhân",
      "answer": "right"
+    },
+    {
+     "text": "Tiền viện phí, thuốc men chi cho nạn nhân tử vong sau thời gian cấp cứu và chi phí mai táng hợp lý của gia đình",
+     "answer": "left",
+     "basis": "Điểm a, b khoản 1 Điều 591 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Khoản tiền bù đắp tổn thất tinh thần cho cha mẹ của người đã chết vì tai nạn",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 591 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 591."
@@ -110,6 +120,17 @@
     "tinh thần",
     "100 lần"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mức bồi thường bù đắp tổn thất về tinh thần do tính mạng bị xâm phạm do các bên thỏa thuận; nếu không thỏa thuận được thì mức tối đa cho một người có tính mạng bị xâm phạm không quá một trăm lần mức lương cơ sở do Nhà nước quy định.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 591 Bộ luật Dân sự 2015 (nguyên văn, lược chủ thể được hưởng).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 591 Bộ luật Dân sự 2015"
+   }
   }
  ]
 }

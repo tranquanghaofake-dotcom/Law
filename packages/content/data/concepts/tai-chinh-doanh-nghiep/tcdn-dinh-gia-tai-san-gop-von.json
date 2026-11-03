@@ -47,9 +47,9 @@
    "q": "Khi thành lập, nếu tài sản góp vốn bị định giá cao hơn giá trị thực tế thì sao?",
    "options": [
     "Các thành viên, cổ đông sáng lập liên đới góp thêm số chênh lệch",
-    "Công ty giảm vốn điều lệ, không ai chịu trách nhiệm",
-    "Chỉ người góp tài sản bị phạt hành chính",
-    "Hợp đồng góp vốn tự động vô hiệu"
+    "Công ty tự giảm vốn điều lệ tương ứng và không ai phải chịu trách nhiệm",
+    "Chỉ người góp tài sản bị phạt hành chính và không phải góp thêm gì",
+    "Hợp đồng góp vốn tự động vô hiệu toàn bộ, không có hiệu lực pháp lý"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 36.",
@@ -71,6 +71,16 @@
     {
      "text": "Ngoại tệ tự do chuyển đổi",
      "answer": "right"
+    },
+    {
+     "text": "Quyền sở hữu trí tuệ được góp vào công ty như tài sản góp vốn",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 34 và khoản 1 Điều 36 Luật Doanh nghiệp 2020"
+    },
+    {
+     "text": "Đồng Việt Nam tiền mặt góp vốn để thành lập công ty",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 36 Luật Doanh nghiệp 2020"
     }
    ],
    "explain": "Khoản 1 Điều 36."
@@ -111,6 +121,18 @@
     "thẩm định giá",
     "liên đới"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tài sản góp vốn không phải là Đồng Việt Nam, ngoại tệ tự do chuyển đổi, vàng phải được các thành viên, cổ đông sáng lập hoặc tổ chức thẩm định giá định giá và được thể hiện thành Đồng Việt Nam.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 36 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 36 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+    "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+   }
   }
  ]
 }

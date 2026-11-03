@@ -69,6 +69,16 @@
     {
      "text": "Cổ phần ưu đãi hoàn lại",
      "answer": "right"
+    },
+    {
+     "text": "Người sở hữu cổ phần phổ thông là cổ đông phổ thông",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 114 Luật Doanh nghiệp 2020"
+    },
+    {
+     "text": "Cổ phần ưu đãi cổ tức, công ty có thể phát hành nếu có",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 114 Luật Doanh nghiệp 2020"
     }
    ],
    "explain": "Điều 114."
@@ -109,6 +119,18 @@
     "hoàn lại",
     "biểu quyết"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Ngoài cổ phần phổ thông, công ty cổ phần có thể có cổ phần ưu đãi.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 114 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 114 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+    "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+   }
   }
  ]
 }

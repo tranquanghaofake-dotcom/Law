@@ -22,6 +22,7 @@
   "trong quá trình giải quyết tranh chấp",
   "tổ chức đại diện có quyền thương lượng tập thể"
  ],
+ "note": "Câu chữ VBHN 18/VBHN-VPQH 2026 của Bộ luật Lao động vẫn ghi \"Ủy ban nhân dân cấp huyện\" (khoản 3 Điều 202, khoản 3 Điều 205) và \"Chủ tịch Ủy ban nhân dân cấp huyện\" (Điều 211); từ 01/7/2025 cấp huyện kết thúc hoạt động theo khoản 3 Điều 51 Luật Tổ chức chính quyền địa phương 72/2025/QH15 (hiệu lực 16/6/2025). Cơ quan nhận thông báo, xử lý thay cấp huyện chưa được đối chiếu.",
  "items": [
   {
    "type": "mcq",
@@ -29,9 +30,9 @@
    "q": "Ai có quyền tổ chức và lãnh đạo đình công?",
    "options": [
     "Tổ chức đại diện người lao động có quyền thương lượng tập thể là một bên tranh chấp lao động tập thể",
-    "Bất kỳ nhóm người lao động nào",
-    "Người sử dụng lao động",
-    "Ủy ban nhân dân cấp huyện"
+    "Bất kỳ nhóm người lao động nào trong doanh nghiệp, không cần thông qua tổ chức đại diện nào",
+    "Người sử dụng lao động có toàn quyền quyết định việc tổ chức và lãnh đạo đình công theo ý muốn",
+    "Ủy ban nhân dân cấp xã nơi doanh nghiệp đặt trụ sở tổ chức và lãnh đạo đình công tại địa phương"
    ],
    "answer": 0,
    "explain": "Điều 198.",
@@ -46,9 +47,9 @@
    "q": "Đình công được tiến hành nhằm mục đích gì?",
    "options": [
     "Đạt được yêu cầu trong quá trình giải quyết tranh chấp lao động",
-    "Phản đối chính sách nhà nước",
-    "Bày tỏ quan điểm chính trị",
-    "Gây thiệt hại cho doanh nghiệp"
+    "Phản đối chính sách của Nhà nước về tiền lương và thuế thu nhập",
+    "Bày tỏ quan điểm chính trị và yêu cầu thay đổi bộ máy lãnh đạo",
+    "Gây thiệt hại cho doanh nghiệp và đối tác của doanh nghiệp"
    ],
    "answer": 0,
    "explain": "Điều 198.",
@@ -70,6 +71,16 @@
     {
      "text": "Công nhân tự phát bỏ về, không có tổ chức đại diện lãnh đạo",
      "answer": "right"
+    },
+    {
+     "text": "Ngừng việc tạm thời, tự nguyện và có tổ chức, do tổ chức đại diện người lao động đứng ra tổ chức",
+     "answer": "left",
+     "basis": "Điều 198 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Người sử dụng lao động cho công nhân nghỉ việc tạm thời theo lệnh quản lý để tiết giảm sản xuất",
+     "answer": "right",
+     "basis": "Điều 198 Bộ luật Lao động 2019 (đình công là ngừng việc của người lao động có tổ chức)"
     }
    ],
    "explain": "Điều 198, 199."

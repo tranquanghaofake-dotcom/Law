@@ -28,9 +28,9 @@
    "q": "Theo khoản 27 Điều 4, thị trường giao dịch chứng khoán là gì?",
    "options": [
     "Địa điểm hoặc hình thức trao đổi thông tin để tập hợp lệnh mua, bán và giao dịch chứng khoán",
-    "Trụ sở của Ủy ban Chứng khoán Nhà nước",
-    "Nơi doanh nghiệp chào bán chứng khoán lần đầu",
-    "Tổng giá trị vốn hóa của các công ty niêm yết"
+    "Trụ sở của Ủy ban Chứng khoán Nhà nước và các đơn vị trực thuộc đặt tại Hà Nội và các tỉnh thành",
+    "Nơi doanh nghiệp chào bán chứng khoán lần đầu ra công chúng và các nhà đầu tư mua vào",
+    "Tổng giá trị vốn hóa của các công ty niêm yết trên sàn giao dịch trong năm tài chính gần nhất"
    ],
    "answer": 0,
    "explain": "Định nghĩa nhấn vào chức năng: tập hợp lệnh mua, bán; có thể là địa điểm hoặc chỉ là hình thức.",
@@ -45,9 +45,9 @@
    "q": "Theo khoản 26 Điều 4, hệ thống giao dịch chứng khoán do ai tổ chức, vận hành?",
    "options": [
     "Sở giao dịch chứng khoán Việt Nam và công ty con",
-    "Ủy ban Chứng khoán Nhà nước",
-    "Các công ty chứng khoán",
-    "Ngân hàng Nhà nước Việt Nam"
+    "Ủy ban Chứng khoán Nhà nước và các cơ quan liên quan",
+    "Các công ty chứng khoán thành viên của sở",
+    "Ngân hàng Nhà nước Việt Nam và các ngân hàng thương mại"
    ],
    "answer": 0,
    "explain": "Khoản 26 Điều 4: do Sở giao dịch chứng khoán Việt Nam và công ty con tổ chức, vận hành.",
@@ -69,6 +69,16 @@
     {
      "text": "Đưa chứng khoán vào hệ thống giao dịch cho chứng khoán chưa niêm yết",
      "answer": "right"
+    },
+    {
+     "text": "Hình thức trao đổi thông tin để tập hợp lệnh mua, bán chứng khoán niêm yết",
+     "answer": "left",
+     "basis": "Khoản 27 Điều 4 Luật Chứng khoán 2019"
+    },
+    {
+     "text": "Hình thức trao đổi thông tin để tập hợp lệnh mua, bán chứng khoán chưa niêm yết",
+     "answer": "right",
+     "basis": "Khoản 27 Điều 4 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 24 và khoản 25 Điều 4."

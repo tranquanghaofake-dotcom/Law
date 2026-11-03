@@ -45,9 +45,9 @@
    "q": "Khoản 2 Điều 17 Hiến pháp 2013 bảo đảm điều gì cho công dân Việt Nam?",
    "options": [
     "Không thể bị trục xuất, giao nộp cho nhà nước khác",
-    "Không bao giờ bị tước quốc tịch",
-    "Được miễn mọi nghĩa vụ khi ở nước ngoài",
-    "Được có nhiều quốc tịch tùy ý"
+    "Không bao giờ bị tước quốc tịch khi ở nước ngoài",
+    "Được miễn mọi nghĩa vụ khi ở nước ngoài theo quy định",
+    "Được có nhiều quốc tịch tùy ý theo nguyện vọng cá nhân"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 17.",
@@ -73,6 +73,16 @@
     {
      "text": "Được Nhà nước bảo hộ khi ở nước ngoài",
      "answer": "left"
+    },
+    {
+     "text": "Người có quốc tịch Việt Nam đủ mười tám tuổi trở lên có quyền bầu cử vào Quốc hội",
+     "answer": "left",
+     "basis": "Điều 27 Hiến pháp 2013"
+    },
+    {
+     "text": "Cá nhân mang quốc tịch nước khác không có quyền bầu cử đại biểu Quốc hội của Việt Nam",
+     "answer": "right",
+     "basis": "Điều 27 Hiến pháp 2013"
     }
    ],
    "explain": "Điều 17, 18 Hiến pháp 2013."

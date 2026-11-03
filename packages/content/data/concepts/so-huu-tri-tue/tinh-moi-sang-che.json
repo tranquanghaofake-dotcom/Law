@@ -47,9 +47,9 @@
    "q": "Khi nào sáng chế được coi là chưa bị bộc lộ công khai?",
    "options": [
     "Chỉ một số người có hạn biết và có nghĩa vụ giữ bí mật",
-    "Đã đăng trên báo nhưng ít người đọc",
-    "Đã trưng bày tại triển lãm công cộng",
-    "Đã bán sản phẩm ra thị trường"
+    "Đã đăng trên báo nhưng ít người đọc và chưa được thống kê",
+    "Đã trưng bày tại triển lãm công cộng và có nhiều người xem",
+    "Đã bán sản phẩm ra thị trường và có nhiều khách hàng sử dụng"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 60.",
@@ -71,6 +71,16 @@
     {
      "text": "Chỉ nhóm nghiên cứu ký cam kết bảo mật biết",
      "answer": "right"
+    },
+    {
+     "text": "Sáng chế đã được bộc lộ trong đơn đăng ký khác có ngày nộp đơn sớm hơn",
+     "answer": "left",
+     "basis": "Điểm b khoản 1 Điều 60 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Sáng chế bị bộc lộ do chính người có quyền đăng ký trong thời gian được pháp luật cho phép",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 60 Luật Sở hữu trí tuệ"
     }
    ],
    "explain": "Điều 60."
@@ -111,6 +121,18 @@
     "ngày nộp đơn",
     "giữ bí mật"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Sáng chế được coi là chưa bị bộc lộ công khai nếu chỉ có một số người có hạn được biết và có nghĩa vụ giữ bí mật về sáng chế đó.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 60 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 60 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+   }
   }
  ]
 }

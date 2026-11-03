@@ -31,9 +31,9 @@
    "q": "Tác phẩm phái sinh được bảo hộ khi nào?",
    "options": [
     "Khi không gây phương hại đến quyền tác giả đối với tác phẩm gốc",
-    "Trong mọi trường hợp",
-    "Chỉ khi đăng ký",
-    "Không bao giờ"
+    "Khi người tạo ra tác phẩm phái sinh là công dân Việt Nam cư trú trong nước",
+    "Khi đăng ký tại Cục Bản quyền và được cấp giấy chứng nhận",
+    "Không được bảo hộ vì chỉ là bản sao, dù đã được đăng ký"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 14.",
@@ -76,6 +76,16 @@
     {
      "text": "Bản đồ",
      "answer": "left"
+    },
+    {
+     "text": "Bài giảng, bài phát biểu của giảng viên được thể hiện dưới dạng chữ viết",
+     "answer": "left",
+     "basis": "Điểm b khoản 1 Điều 14 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Tin tức thời sự thuần túy đưa tin không thuộc phạm vi bảo hộ quyền tác giả",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 15 Luật Sở hữu trí tuệ"
     }
    ],
    "explain": "Điều 14, 15."
@@ -116,6 +126,17 @@
     "phái sinh",
     "phương hại"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tác phẩm phái sinh chỉ được bảo hộ nếu không gây phương hại đến quyền tác giả đối với tác phẩm được dùng để làm tác phẩm phái sinh.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 14 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 14 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
   }
  ]
 }

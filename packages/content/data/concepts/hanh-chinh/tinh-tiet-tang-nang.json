@@ -47,7 +47,7 @@
    "options": [
     "Tình tiết tăng nặng",
     "Tình tiết giảm nhẹ",
-    "Trường hợp không xử phạt",
+    "Tình tiết tăng nặng đối với người bị xúi giục",
     "Không ảnh hưởng"
    ],
    "answer": 0,
@@ -74,6 +74,16 @@
     {
      "text": "Sau khi vi phạm đã trốn tránh, che giấu",
      "answer": "left"
+    },
+    {
+     "text": "Lợi dụng chức vụ, quyền hạn để vi phạm hành chính",
+     "answer": "left",
+     "basis": "Điểm e khoản 1 Điều 10 Luật Xử lý vi phạm hành chính"
+    },
+    {
+     "text": "Vi phạm do trình độ lạc hậu",
+     "answer": "right",
+     "basis": "Khoản 7 Điều 9 Luật Xử lý vi phạm hành chính"
     }
    ],
    "explain": "Điều 9, 10."
@@ -114,6 +124,17 @@
     "chưa thành niên",
     "chức vụ"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Xúi giục, lôi kéo, sử dụng người chưa thành niên vi phạm hành chính là tình tiết tăng nặng.",
+   "answer": true,
+   "explain": "Đúng. Điều 10 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026): xúi giục, lôi kéo, sử dụng người chưa thành niên vi phạm.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 10 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)"
+   }
   }
  ]
 }

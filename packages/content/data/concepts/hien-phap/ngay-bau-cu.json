@@ -29,7 +29,7 @@
    "q": "Theo Điều 5 Luật Bầu cử, ngày bầu cử phải là ngày nào?",
    "options": [
     "Ngày chủ nhật",
-    "Ngày thứ bảy",
+    "Ngày thứ bảy cuối tháng",
     "Ngày lễ quốc gia",
     "Bất kỳ ngày làm việc nào"
    ],
@@ -70,6 +70,16 @@
     {
      "text": "Công bố số đơn vị bầu cử, danh sách đơn vị bầu cử",
      "answer": "right"
+    },
+    {
+     "text": "Việc công bố ngày bầu cử",
+     "answer": "left",
+     "basis": "Điều 5 Luật Bầu cử Đại biểu Quốc hội và Đại biểu Hội đồng nhân dân 2015"
+    },
+    {
+     "text": "Việc công bố số đơn vị bầu cử, danh sách đơn vị bầu cử và số đại biểu được bầu ở mỗi đơn vị",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 10 Luật Bầu cử Đại biểu Quốc hội và Đại biểu Hội đồng nhân dân 2015"
     }
    ],
    "explain": "Điều 5, khoản 2 Điều 10 Luật Bầu cử."

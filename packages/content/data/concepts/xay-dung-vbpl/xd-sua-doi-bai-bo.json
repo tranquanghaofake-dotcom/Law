@@ -31,9 +31,9 @@
    "q": "Ai có quyền sửa đổi, bổ sung, thay thế một văn bản quy phạm pháp luật?",
    "options": [
     "Chính cơ quan, người có thẩm quyền đã ban hành văn bản đó, bằng VBQPPL",
-    "Bất kỳ cơ quan cấp trên nào",
-    "Bộ Tư pháp",
-    "Tòa án nhân dân tối cao"
+    "Người đứng đầu cơ quan cấp trên trực tiếp, bằng văn bản hành chính nội bộ",
+    "Bộ Tư pháp, sau khi kiểm tra và đề nghị cơ quan ban hành sửa đổi",
+    "Tòa án nhân dân tối cao, theo yêu cầu của người dân và tổ chức có liên quan"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 8.",
@@ -48,9 +48,9 @@
    "q": "Hệ quả của việc văn bản bị đình chỉ việc thi hành là gì?",
    "options": [
     "Tạm ngưng hiệu lực cho đến khi có quyết định xử lý của cơ quan, người có thẩm quyền",
-    "Hết hiệu lực vĩnh viễn ngay",
-    "Vẫn có hiệu lực bình thường",
-    "Tự động được sửa đổi"
+    "Hết hiệu lực vĩnh viễn ngay kể từ ngày bị đình chỉ, không có quyết định xử lý nào",
+    "Vẫn có hiệu lực bình thường và được áp dụng đầy đủ như trước khi bị đình chỉ hiệu lực",
+    "Tự động được sửa đổi, bổ sung bởi cơ quan cấp dưới theo ý kiến của mình"
    ],
    "answer": 0,
    "explain": "Điểm b khoản 1 Điều 56.",
@@ -72,6 +72,16 @@
     {
      "text": "Đình chỉ việc thi hành thông tư trái luật",
      "answer": "right"
+    },
+    {
+     "text": "Bộ trưởng ban hành thông tư sửa đổi một điều của chính thông tư mình đã ban hành",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 8 Luật Ban hành văn bản quy phạm pháp luật 2025"
+    },
+    {
+     "text": "Thủ tướng đình chỉ việc thi hành thông tư của bộ có dấu hiệu trái luật",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 8 Luật Ban hành văn bản quy phạm pháp luật 2025"
     }
    ],
    "explain": "Khoản 1 Điều 8."
@@ -113,6 +123,17 @@
     "bãi bỏ",
     "chính cơ quan"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Văn bản quy phạm pháp luật chỉ được sửa đổi, bổ sung, thay thế bằng văn bản quy phạm pháp luật của chính cơ quan, người có thẩm quyền đã ban hành văn bản đó, trừ trường hợp luật có quy định khác.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 8 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 8 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)"
+   }
   }
  ]
 }

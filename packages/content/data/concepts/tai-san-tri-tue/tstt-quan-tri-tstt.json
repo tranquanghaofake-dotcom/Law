@@ -30,9 +30,9 @@
    "q": "Khâu nào KHÔNG thuộc quy trình quản trị tài sản trí tuệ theo bài giảng?",
    "options": [
     "Nộp thuế thu nhập cá nhân cho tác giả",
-    "Tạo lập, phát triển",
-    "Khai thác, thương mại hóa",
-    "Bảo vệ"
+    "Tạo lập, phát triển tài sản trí tuệ",
+    "Khai thác, thương mại hóa tài sản trí tuệ",
+    "Bảo vệ quyền sở hữu trí tuệ đã xác lập"
    ],
    "answer": 0,
    "explain": "Bốn khâu: tạo lập – xác lập quyền – khai thác – bảo vệ."
@@ -42,10 +42,10 @@
    "level": 1,
    "q": "Vì sao doanh nghiệp nên theo dõi đơn đăng ký của đối thủ cạnh tranh?",
    "options": [
-    "Để kịp thời phản đối nếu đơn ảnh hưởng đến độc quyền tài sản trí tuệ của mình",
-    "Để sao chép sản phẩm",
-    "Để nộp thuế thay",
-    "Không cần thiết"
+    "Để kịp thời phản đối nếu đơn xâm phạm độc quyền sở hữu trí tuệ của mình",
+    "Để sao chép sản phẩm và công nghệ của đối thủ cạnh tranh một cách hợp pháp",
+    "Để nộp thuế thay cho đối thủ cạnh tranh trên thị trường nội địa và quốc tế",
+    "Không cần thiết phải theo dõi vì đã có văn bằng riêng của mình và thị phần"
    ],
    "answer": 0,
    "explain": "Quản lý bên ngoài: theo dõi, cập nhật đăng ký mới của đối thủ để phản đối."
@@ -63,6 +63,16 @@
     {
      "text": "Đăng ký giám sát hải quan ngăn hàng xâm phạm qua biên giới",
      "answer": "right"
+    },
+    {
+     "text": "Lập danh mục tài sản trí tuệ và quy định nội bộ về bảo mật",
+     "answer": "left",
+     "basis": "Ghi chép bài giảng Quản trị tài sản trí tuệ, ĐH Luật Hà Nội (chưa đối chiếu nguyên văn giáo trình) (quản trị nội bộ)"
+    },
+    {
+     "text": "Thuê đơn vị bên ngoài theo dõi và đăng ký bảo hộ ở nước ngoài",
+     "answer": "right",
+     "basis": "Ghi chép bài giảng Quản trị tài sản trí tuệ, ĐH Luật Hà Nội (chưa đối chiếu nguyên văn giáo trình) (quản trị bên ngoài)"
     }
    ],
    "explain": "Bài giảng phân biệt quản lý trong nội bộ và quản lý tài sản bên ngoài."

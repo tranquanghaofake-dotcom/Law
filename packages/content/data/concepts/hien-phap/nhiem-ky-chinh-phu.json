@@ -30,7 +30,7 @@
    "options": [
     "Theo nhiệm kỳ của Quốc hội",
     "Bốn năm",
-    "Theo nhiệm kỳ của Chủ tịch nước",
+    "Theo nhiệm kỳ Chủ tịch nước",
     "Không giới hạn"
    ],
    "answer": 0,
@@ -46,9 +46,9 @@
    "q": "Khi Quốc hội hết nhiệm kỳ, Chính phủ làm gì?",
    "options": [
     "Tiếp tục làm nhiệm vụ cho đến khi Quốc hội khóa mới thành lập Chính phủ",
-    "Giải tán ngay",
-    "Giao quyền cho Chủ tịch nước",
-    "Giao quyền cho Ủy ban thường vụ"
+    "Giải tán ngay lập tức và không còn hoạt động gì nữa trước khi Quốc hội mới họp",
+    "Giao quyền cho Chủ tịch nước và Chủ tịch Quốc hội điều hành tạm thời",
+    "Giao quyền cho Ủy ban thường vụ Quốc hội điều hành tạm thời đến khi có Chính phủ"
    ],
    "answer": 0,
    "explain": "Điều 97.",
@@ -74,6 +74,16 @@
     {
      "text": "Nhiệm kỳ của Thẩm phán do luật định",
      "answer": "right"
+    },
+    {
+     "text": "Nhiệm kỳ của Thủ tướng Chính phủ theo nhiệm kỳ của Quốc hội",
+     "answer": "left",
+     "basis": "Điều 97 Hiến pháp 2013"
+    },
+    {
+     "text": "Nhiệm kỳ của Thẩm phán Tòa án khu vực do luật định",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 105 Hiến pháp 2013"
     }
    ],
    "explain": "Điều 87, 97."
@@ -114,6 +124,18 @@
     "khóa mới",
     "liên tục"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Khi Quốc hội hết nhiệm kỳ, Chính phủ tiếp tục làm nhiệm vụ cho đến khi Quốc hội khoá mới thành lập Chính phủ.",
+   "answer": true,
+   "explain": "Đúng. Điều 97 Hiến pháp 2013 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 97 Hiến pháp 2013",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+   }
   }
  ]
 }

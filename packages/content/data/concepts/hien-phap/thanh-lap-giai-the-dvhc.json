@@ -30,9 +30,9 @@
    "q": "Thành lập, nhập, chia đơn vị hành chính phải đáp ứng yêu cầu gì theo khoản 3 Điều 110?",
    "options": [
     "Lấy ý kiến Nhân dân địa phương và theo trình tự, thủ tục do Quốc hội quy định",
-    "Chỉ cần quyết định của Thủ tướng",
-    "Chỉ cần Hội đồng nhân dân đồng ý",
-    "Trưng cầu ý dân toàn quốc"
+    "Quyết định của Thủ tướng và đề nghị của bộ trưởng, không cần lấy ý kiến",
+    "Hội đồng nhân dân đồng ý và Ủy ban nhân dân xác nhận bằng văn bản",
+    "Trưng cầu ý dân toàn quốc về đơn vị hành chính được đề nghị thành lập"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 110.",
@@ -71,6 +71,16 @@
     {
      "text": "Nhập hai xã thành một xã",
      "answer": "right"
+    },
+    {
+     "text": "Cơ quan quyền lực nhà nước cao nhất quyết định chia một tỉnh thành hai tỉnh",
+     "answer": "left",
+     "basis": "Khoản 3 Điều 110 Hiến pháp 2013 (sửa đổi)"
+    },
+    {
+     "text": "Cơ quan thường trực của Quốc hội quyết định chia một xã thành hai xã",
+     "answer": "right",
+     "basis": "Điều 74 Hiến pháp 2013 (theo bản 2013)"
     }
    ],
    "explain": "Khoản 9 Điều 70; khoản 8 Điều 74."
@@ -111,6 +121,18 @@
     "Ủy ban thường vụ",
     "Chính phủ trình"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Việc thành lập, giải thể, nhập, chia, điều chỉnh địa giới đơn vị hành chính phải lấy ý kiến Nhân dân địa phương và theo trình tự, thủ tục do Quốc hội quy định.",
+   "answer": true,
+   "explain": "Đúng. Khoản 3 Điều 110 Hiến pháp 2013 (sửa đổi bởi NQ 203/2025/QH15) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 110 Hiến pháp 2013 (sửa đổi bởi NQ 203/2025/QH15)",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+   }
   }
  ]
 }

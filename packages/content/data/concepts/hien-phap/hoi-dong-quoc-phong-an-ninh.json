@@ -28,9 +28,9 @@
    "q": "Hội đồng quốc phòng và an ninh làm việc theo chế độ nào?",
    "options": [
     "Tập thể, quyết định theo đa số",
-    "Thủ trưởng",
-    "Một người quyết định",
-    "Đồng thuận tuyệt đối"
+    "Thủ trưởng quyết định mọi việc",
+    "Một người quyết định mọi việc",
+    "Đồng thuận của mọi thành viên"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 89.",
@@ -45,9 +45,9 @@
    "q": "Khi Quốc hội không thể họp được, Hội đồng quốc phòng và an ninh trình cơ quan nào quyết định tình trạng chiến tranh?",
    "options": [
     "Ủy ban thường vụ Quốc hội",
-    "Chính phủ",
+    "Chính phủ và Thủ tướng",
     "Chủ tịch nước",
-    "Bộ Quốc phòng"
+    "Bộ Quốc phòng, Bộ Công an"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 89.",
@@ -69,6 +69,16 @@
     {
      "text": "Công bố quyết định tuyên bố tình trạng chiến tranh",
      "answer": "right"
+    },
+    {
+     "text": "Cơ quan gồm Chủ tịch, Phó Chủ tịch và các Ủy viên; Quốc hội phê chuẩn danh sách theo đề nghị của người đứng đầu Nhà nước",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 89 Hiến pháp 2013"
+    },
+    {
+     "text": "Người đứng đầu Nhà nước quyết định phong, thăng quân hàm cấp tướng",
+     "answer": "right",
+     "basis": "Khoản 5 Điều 88 Hiến pháp 2013"
     }
    ],
    "explain": "Điều 88, 89."
@@ -109,6 +119,18 @@
     "tình trạng chiến tranh",
     "động viên"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Danh sách thành viên Hội đồng quốc phòng và an ninh do Chủ tịch nước trình Quốc hội phê chuẩn.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 89 Hiến pháp 2013 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 89 Hiến pháp 2013",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+   }
   }
  ]
 }

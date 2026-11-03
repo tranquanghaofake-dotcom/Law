@@ -29,9 +29,9 @@
    "q": "Quyền tác giả phát sinh từ khi nào?",
    "options": [
     "Từ khi tác phẩm được sáng tạo và thể hiện dưới hình thức vật chất nhất định",
-    "Từ khi được cấp Giấy chứng nhận đăng ký",
-    "Từ khi tác phẩm được công bố",
-    "Từ khi tác phẩm bán được"
+    "Từ khi được cấp Giấy chứng nhận đăng ký quyền tác giả tại Cục Bản quyền nào",
+    "Từ khi tác phẩm được công bố rộng rãi và có người sử dụng đầu tiên",
+    "Từ khi tác phẩm bán được lần đầu tiên trên thị trường tiêu dùng nào"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 6.",
@@ -46,9 +46,9 @@
    "q": "Quyền sở hữu công nghiệp đối với nhãn hiệu thông thường được xác lập trên cơ sở nào?",
    "options": [
     "Quyết định cấp văn bằng bảo hộ theo thủ tục đăng ký (hoặc công nhận đăng ký quốc tế)",
-    "Tự động từ khi sáng tạo",
-    "Từ khi sử dụng",
-    "Từ khi công bố"
+    "Tự động từ khi sáng tạo ra nhãn hiệu và đưa vào sử dụng hợp pháp nhất định",
+    "Từ khi sử dụng nhãn hiệu đầu tiên trên thị trường trong nước và quảng cáo rộng rãi",
+    "Từ khi công bố nhãn hiệu trên báo chí và các phương tiện truyền thông đại chúng"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 3 Điều 6.",
@@ -74,6 +74,16 @@
     {
      "text": "Quyền đối với nhãn hiệu thông thường",
      "answer": "right"
+    },
+    {
+     "text": "Bản ghi âm phát sinh quyền liên quan kể từ khi được ghi lại dưới hình thức vật chất",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 6 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Kiểu dáng công nghiệp chỉ được bảo hộ khi có quyết định cấp văn bằng của cơ quan nhà nước",
+     "answer": "right",
+     "basis": "Điểm a khoản 3 Điều 6 Luật Sở hữu trí tuệ"
     }
    ],
    "explain": "Điều 6."

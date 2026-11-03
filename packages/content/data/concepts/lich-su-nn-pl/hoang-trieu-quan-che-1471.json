@@ -48,9 +48,9 @@
    "q": "Câu \"không thể không thân hành nắm quyền chế tác\" trong lời dụ năm 1471 thể hiện điều gì?",
    "options": [
     "Vua trực tiếp nắm quyền đặt ra luật lệ, quan chế (tập quyền cao độ)",
-    "Vua giao quyền lập pháp cho triều thần",
-    "Vua chia quyền với các địa phương",
-    "Vua thoái vị"
+    "Vua giao hẳn quyền lập pháp cho các đại thần, không can thiệp vào luật lệ",
+    "Vua chia quyền đặt luật lệ và quan chế cho các địa phương tự quyết định",
+    "Vua thoái vị, giao việc triều chính cho Thái thượng hoàng quyết định"
    ],
    "answer": 0,
    "explain": "Cách hiểu phổ biến dựa trên lời dụ.",
@@ -72,6 +72,16 @@
     {
      "text": "Xét bác trăm ty",
      "answer": "right"
+    },
+    {
+     "text": "Cơ quan quân sự ở trung ương gồm năm đơn vị chia nhau nắm giữ quân vệ trong kinh thành",
+     "answer": "left",
+     "basis": "Đại Việt sử ký toàn thư, Bản kỷ quyển XII, Kỷ nhà Lê, Thánh Tông, năm 1471, tờ 66a–67a (laws/lich-su-su-lieu.txt)"
+    },
+    {
+     "text": "Cơ quan giám sát gồm sáu bộ phận có quyền xem xét, bác bỏ chỉ dụ không đúng",
+     "answer": "right",
+     "basis": "Đại Việt sử ký toàn thư, Bản kỷ quyển XII, Kỷ nhà Lê, Thánh Tông, năm 1471, tờ 67a–67b (laws/lich-su-su-lieu.txt)"
     }
    ],
    "explain": "Lời dụ năm 1471."

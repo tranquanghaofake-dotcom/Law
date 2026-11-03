@@ -29,9 +29,9 @@
    "q": "Điều khoản không rõ ràng trong hợp đồng theo mẫu được giải thích thế nào?",
    "options": [
     "Bên đưa ra hợp đồng theo mẫu phải chịu bất lợi",
-    "Có lợi cho bên đưa ra mẫu",
-    "Do Tòa án tùy ý",
-    "Coi như không có"
+    "Có lợi cho bên đưa ra mẫu, bên kia phải chịu",
+    "Do Tòa án tùy ý quyết định theo từng vụ",
+    "Coi như không có điều khoản đó trong hợp đồng"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 405.",
@@ -46,9 +46,9 @@
    "q": "Điều khoản miễn trách nhiệm của bên đưa ra hợp đồng theo mẫu có hiệu lực không?",
    "options": [
     "Không, trừ trường hợp có thỏa thuận khác",
-    "Luôn có hiệu lực",
-    "Có nếu được in đậm",
-    "Có nếu bên kia đã ký"
+    "Luôn có hiệu lực, không cần thỏa thuận gì thêm",
+    "Có hiệu lực nếu được in đậm và nằm ở trang đầu",
+    "Có hiệu lực nếu có người làm chứng chứng kiến"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 405.",
@@ -70,6 +70,16 @@
     {
      "text": "Điều khoản về giá dịch vụ đã công khai",
      "answer": "right"
+    },
+    {
+     "text": "Điều khoản mẫu miễn trách nhiệm cho bên soạn thảo, khiến khách hàng chịu thêm trách nhiệm",
+     "answer": "left",
+     "basis": "Khoản 3 Điều 405 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Điều khoản mẫu về giá dịch vụ đã công khai cho khách hàng biết trước khi ký",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 405 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 405."

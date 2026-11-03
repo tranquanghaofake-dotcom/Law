@@ -75,6 +75,16 @@
     {
      "text": "\"Phong tục văn minh của đất Lĩnh Nam bắt đầu từ hai thái thú ấy\"",
      "answer": "left"
+    },
+    {
+     "text": "\"Diên mới dạy dân khai khẩn ruộng đất, hàng năm cày trồng, trăm họ no đủ\"",
+     "answer": "left",
+     "basis": "Đại Việt sử ký toàn thư, Ngoại kỷ quyển III, Kỷ thuộc Tây Hán, tờ 1a–1b (laws/lich-su-su-lieu.txt)"
+    },
+    {
+     "text": "Chính sách cai trị của chính quyền đô hộ nhằm đồng hóa văn hóa, pháp luật của người Việt",
+     "answer": "right",
+     "basis": "Giáo trình Lịch sử nhà nước và pháp luật Việt Nam, Trường ĐH Luật Hà Nội 2025 (⚠ chưa đối chiếu nguyên văn); Đại Việt sử ký toàn thư, Ngoại kỷ quyển III"
     }
    ],
    "explain": "Phân biệt sử liệu với nhận định học thuật."
@@ -103,9 +113,9 @@
    "q": "Một bạn viết trong bài thi: \"Theo Toàn thư, người Việt trước thời Tích Quang chưa có văn minh, vì vậy chính sách của nhà Hán là tiến bộ.\" Nhận xét nào phù hợp nhất?",
    "options": [
     "Đã đồng nhất quan điểm Nho giáo của sử quan với sự thật lịch sử; cần nêu đó là chính sách đồng hóa và đánh giá có phê phán",
-    "Hoàn toàn đúng vì Toàn thư ghi như vậy",
-    "Sai vì Toàn thư không nhắc Tích Quang",
-    "Đúng vì nhà Hán không có ý đồ đồng hóa"
+    "Chỉ cần viết theo đúng sử liệu Toàn thư, không cần đối chiếu quan điểm của sử quan, vì Toàn thư luôn khách quan",
+    "Đây là bài viết đúng: nhà Hán đã khai hóa văn minh cho người Việt, sử liệu ghi rõ điều đó nên không cần bàn cãi thêm",
+    "Sai vì Toàn thư không nhắc Tích Quang, nên toàn bộ nhận xét trên không có căn cứ sử liệu nào để tham khảo thêm"
    ],
    "answer": 0,
    "explain": "Khi dùng sử liệu phải đặt trong quan điểm của người viết sử."

@@ -29,9 +29,9 @@
    "q": "Theo khoản 30 Điều 4, tự doanh chứng khoán là gì?",
    "options": [
     "Công ty chứng khoán mua, bán chứng khoán cho chính mình",
-    "Làm trung gian mua, bán cho khách",
-    "Quản lý tài sản theo ủy thác",
-    "Cam kết mua chứng khoán phát hành để bán lại"
+    "Làm trung gian mua, bán cho khách hàng theo lệnh đã nhận",
+    "Quản lý tài sản theo ủy thác của khách hàng cá nhân",
+    "Cam kết mua chứng khoán phát hành để bán lại cho nhà đầu tư"
    ],
    "answer": 0,
    "explain": "Khoản 30 Điều 4.",
@@ -70,6 +70,16 @@
     {
      "text": "Cam kết với tổ chức phát hành nhận mua chứng khoán để bán lại hoặc phân phối",
      "answer": "right"
+    },
+    {
+     "text": "Công ty chứng khoán dùng vốn của mình mua cổ phiếu để đầu tư, bán lại kiếm chênh lệch",
+     "answer": "left",
+     "basis": "Khoản 30 Điều 4 Luật Chứng khoán 2019"
+    },
+    {
+     "text": "Tổ chức bảo lãnh cam kết mua phần chứng khoán còn lại của đợt phát hành",
+     "answer": "right",
+     "basis": "Khoản 31 Điều 4 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 30, 31 Điều 4."
@@ -98,9 +108,9 @@
    "q": "Nhân viên công ty chứng khoán biết khách hàng lớn sắp đặt lệnh mua mạnh mã X, liền cho bộ phận tự doanh mua X trước để hưởng chênh lệch. Vi phạm gì?",
    "options": [
     "Vi phạm nghĩa vụ ưu tiên lệnh khách hàng và ngăn xung đột lợi ích (khoản 1, 5 Điều 89)",
-    "Không vi phạm vì tự doanh là hợp pháp",
-    "Chỉ vi phạm nội quy công ty",
-    "Vi phạm quy định về mệnh giá"
+    "Không vi phạm vì tự doanh là hợp pháp và được phép thực hiện song song với lệnh khách hàng",
+    "Chỉ vi phạm nội quy công ty và không bị xử phạt hành chính nào khác đối với hành vi",
+    "Vi phạm quy định về mệnh giá chứng khoán và thông tin công bố trên thị trường"
    ],
    "answer": 0,
    "explain": "Hành vi \"chạy trước lệnh\" khách hàng.",
@@ -120,6 +130,18 @@
     "môi giới",
     "ưu tiên lệnh"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tự doanh chứng khoán là việc công ty chứng khoán mua, bán chứng khoán cho chính mình.",
+   "answer": true,
+   "explain": "Đúng. Khoản 30 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 30 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+   }
   }
  ]
 }

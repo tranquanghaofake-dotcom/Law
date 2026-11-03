@@ -31,9 +31,9 @@
    "q": "Tài sản hợp pháp của nhà đầu tư được bảo đảm thế nào theo khoản 1 Điều 9?",
    "options": [
     "Không bị quốc hữu hóa hoặc bị tịch thu bằng biện pháp hành chính",
-    "Được miễn mọi loại thuế",
-    "Không bao giờ bị trưng dụng",
-    "Được Nhà nước bảo hiểm"
+    "Được miễn mọi loại thuế trong suốt thời gian hoạt động của dự án đầu tư",
+    "Không bao giờ bị trưng dụng, kể cả khi có lý do quốc phòng",
+    "Được Nhà nước bảo hiểm toàn bộ giá trị tài sản đầu tư của mình"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 9.",
@@ -48,9 +48,9 @@
    "q": "Khi Nhà nước trưng dụng tài sản vì lý do quốc phòng, nhà đầu tư được gì?",
    "options": [
     "Được thanh toán, bồi thường theo pháp luật",
-    "Không được gì",
-    "Được cấp đất mới miễn phí",
-    "Được miễn thuế vĩnh viễn"
+    "Không được gì, phải tự chịu thiệt hại",
+    "Được cấp đất mới miễn phí tại vị trí tốt",
+    "Được miễn thuế vĩnh viễn cho toàn bộ dự án đầu tư"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 9.",
@@ -72,6 +72,16 @@
     {
      "text": "Trưng dụng kho bãi để phòng, chống thiên tai",
      "answer": "right"
+    },
+    {
+     "text": "Tịch thu nhà máy hợp pháp của nhà đầu tư bằng quyết định hành chính",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 9 Luật Đầu tư 2025"
+    },
+    {
+     "text": "Nhà nước trưng mua máy móc của nhà đầu tư để phục vụ quốc phòng và thanh toán cho nhà đầu tư",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 9 Luật Đầu tư 2025"
     }
    ],
    "explain": "Điều 9."
@@ -112,6 +122,18 @@
     "trưng dụng",
     "bồi thường"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tài sản hợp pháp của nhà đầu tư không bị quốc hữu hóa hoặc bị tịch thu bằng biện pháp hành chính.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 9 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 9 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)",
+    "url": "https://thuvienphapluat.vn/van-ban/Dau-tu/Van-ban-hop-nhat-142-2026-VBHN-LQ-VPQH-Luat-Dau-tu-726675.aspx"
+   }
   }
  ]
 }

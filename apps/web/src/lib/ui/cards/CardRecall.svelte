@@ -3,7 +3,7 @@
   import type { ItemRecall } from '$lib/content/types';
   import { gradeRecall, normalize } from '$lib/engine/grading';
   import type { CardProps } from './types';
-  let { concept, item, onanswer, onspeak }: CardProps<ItemRecall> = $props();
+  let { concept, item, meta, onanswer, onspeak }: CardProps<ItemRecall> = $props();
   const start = Date.now();
   let text = $state('');
   let revealed = $state(false);
@@ -37,7 +37,7 @@
 </script>
 
 <article class="card question-card recall" aria-label="Tự trả lời">
-  <p class="kicker">Tự trả lời · {concept.term}</p>
+  <p class="kicker">{meta?.kicker ?? `Tự trả lời · ${concept.term}`}</p>
   <p class="question">{item.q}</p>
   {#if !revealed}
     <textarea rows="4" placeholder="Viết 1–3 câu bằng lời của bạn…" aria-label="Bài trả lời" bind:value={text}></textarea>

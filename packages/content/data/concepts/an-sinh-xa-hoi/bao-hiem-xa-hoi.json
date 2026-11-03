@@ -32,9 +32,9 @@
    "q": "Bảo hiểm xã hội tự nguyện có đặc điểm nào?",
    "options": [
     "Công dân Việt Nam tự nguyện tham gia và được lựa chọn mức đóng, phương thức đóng",
-    "Người sử dụng lao động bắt buộc đóng cho người lao động",
-    "Do ngân sách nhà nước chi trả toàn bộ",
-    "Chỉ dành cho công chức"
+    "Người sử dụng lao động bắt buộc đóng thay cho người lao động theo hợp đồng",
+    "Do ngân sách nhà nước chi trả toàn bộ cho người tham gia tự nguyện theo quy định chung",
+    "Chỉ dành cho công chức, viên chức nhà nước và người có chức vụ trong bộ máy"
    ],
    "answer": 0,
    "explain": "Khoản 4 Điều 3.",
@@ -51,7 +51,7 @@
     "Từ đủ 01 tháng trở lên",
     "Từ đủ 03 tháng trở lên",
     "Từ đủ 12 tháng trở lên",
-    "Mọi hợp đồng không phân biệt thời hạn"
+    "Mọi hợp đồng, bất kể hạn"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 1 Điều 2.",
@@ -73,6 +73,16 @@
     {
      "text": "Người tham gia tự lựa chọn mức đóng",
      "answer": "right"
+    },
+    {
+     "text": "Người lao động thuộc diện bắt buộc không được chọn không tham gia",
+     "answer": "left",
+     "basis": "Khoản 3 Điều 3 Luật Bảo hiểm xã hội 2024"
+    },
+    {
+     "text": "Công dân Việt Nam không thuộc diện bắt buộc, tự nguyện đóng theo mức thu nhập đã chọn",
+     "answer": "right",
+     "basis": "Khoản 4 Điều 3 Luật Bảo hiểm xã hội 2024"
     }
    ],
    "explain": "Điều 3, 4."
@@ -113,6 +123,18 @@
     "mức đóng",
     "hưu trí"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Bảo hiểm xã hội tự nguyện là loại hình bảo hiểm xã hội do Nhà nước tổ chức mà công dân Việt Nam tự nguyện tham gia và được lựa chọn mức đóng, phương thức đóng phù hợp với thu nhập của mình.",
+   "answer": true,
+   "explain": "Đúng. Khoản 4 Điều 3 Luật Bảo hiểm xã hội 2024 (VBHN 19/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 3 Luật Bảo hiểm xã hội 2024 (VBHN 19/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/Bao-hiem/Van-ban-hop-nhat-19-VBHN-VPQH-2026-Luat-Bao-hiem-xa-hoi-696579.aspx"
+   }
   }
  ]
 }

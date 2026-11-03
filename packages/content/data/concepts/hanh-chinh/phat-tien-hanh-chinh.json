@@ -45,9 +45,9 @@
    "q": "Trong khu vực nội thành, mức phạt về giao thông đường bộ có thể cao hơn tối đa bao nhiêu lần?",
    "options": [
     "02 lần mức phạt chung",
-    "03 lần",
-    "05 lần",
-    "Không được cao hơn"
+    "Gấp ba lần mức phạt",
+    "Gấp năm lần mức phạt",
+    "Không được cao hơn nữa"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 23.",
@@ -69,6 +69,16 @@
     {
      "text": "Mức phạt tối đa 2.000.000.000 đồng",
      "answer": "right"
+    },
+    {
+     "text": "Anh A, công dân, bị phạt tiền vì xả rác bừa bãi nơi công cộng",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 23 Luật Xử lý vi phạm hành chính"
+    },
+    {
+     "text": "Công ty TNHH bị phạt tiền khi xả thải vượt quy chuẩn môi trường",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 23 Luật Xử lý vi phạm hành chính (khung tổ chức); điểm e khoản 1 Điều 3"
     }
    ],
    "explain": "Điều 23."
@@ -109,6 +119,17 @@
     "2 tỷ",
     "02 lần"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mức phạt tiền trong xử phạt vi phạm hành chính từ 50.000 đồng đến 1.000.000.000 đồng đối với cá nhân, từ 100.000 đồng đến 2.000.000.000 đồng đối với tổ chức, trừ trường hợp luật có quy định khác.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 23 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 23 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)"
+   }
   }
  ]
 }

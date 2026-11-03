@@ -48,9 +48,9 @@
    "q": "Từ ngày 01/01/2026, hộ kinh doanh nộp thuế theo phương pháp nào?",
    "options": [
     "Không áp dụng khoán thuế; nộp thuế theo pháp luật về quản lý thuế",
-    "Tiếp tục khoán thuế",
-    "Không phải nộp thuế",
-    "Nộp lệ phí môn bài thay thuế"
+    "Tiếp tục khoán thuế theo doanh thu ước tính do cơ quan thuế định",
+    "Được miễn toàn bộ thuế và không phải kê khai thuế hằng năm",
+    "Nộp lệ phí môn bài hằng năm thay cho thuế giá trị gia tăng"
    ],
    "answer": 0,
    "explain": "Khoản 6 Điều 10.",
@@ -72,6 +72,21 @@
     {
      "text": "Hộ kinh doanh nộp thuế theo pháp luật quản lý thuế, không khoán",
      "answer": "right"
+    },
+    {
+     "text": "Hộ kinh doanh còn phải nộp lệ phí môn bài hằng năm",
+     "answer": "left",
+     "basis": "Nghị quyết 198/2025/QH15, khoản 7 Điều 10 (chấm dứt thu từ 01/01/2026)"
+    },
+    {
+     "text": "Hộ kinh doanh nộp thuế theo phương pháp khoán trong năm 2025",
+     "answer": "left",
+     "basis": "Nghị quyết 198/2025/QH15, khoản 6 Điều 10"
+    },
+    {
+     "text": "Hộ kinh doanh không còn nộp thuế khoán, nộp thuế theo pháp luật quản lý thuế",
+     "answer": "right",
+     "basis": "Nghị quyết 198/2025/QH15, khoản 6 Điều 10"
     }
    ],
    "explain": "Khoản 6 Điều 10 Nghị quyết 198/2025/QH15."

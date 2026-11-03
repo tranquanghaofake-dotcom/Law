@@ -45,9 +45,9 @@
    "q": "Mệnh giá trái phiếu chào bán ra công chúng được quy định thế nào?",
    "options": [
     "100 nghìn đồng và bội số của 100 nghìn đồng",
-    "10 nghìn đồng",
+    "10 nghìn đồng và bội số của 10 nghìn đồng",
     "1 triệu đồng và bội số của 1 triệu đồng",
-    "Do tổ chức phát hành tự quyết"
+    "Do tổ chức phát hành tự quyết định theo từng đợt"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 13.",
@@ -73,6 +73,11 @@
     {
      "text": "Mệnh giá trái phiếu chào bán ra công chúng",
      "answer": "right"
+    },
+    {
+     "text": "Trái phiếu chào bán ra công chúng có mệnh giá là bội số của 100 nghìn đồng",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 13 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 2 Điều 13."
@@ -113,6 +118,18 @@
     "100 nghìn",
     "thấp hơn mệnh giá"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mệnh giá chứng khoán chào bán trên lãnh thổ nước Cộng hòa xã hội chủ nghĩa Việt Nam được ghi bằng Đồng Việt Nam.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 13 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 13 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+   }
   }
  ]
 }

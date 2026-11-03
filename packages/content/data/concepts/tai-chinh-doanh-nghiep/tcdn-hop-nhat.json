@@ -30,9 +30,9 @@
    "q": "Kết quả của hợp nhất công ty là gì?",
    "options": [
     "Hình thành một công ty mới, các công ty bị hợp nhất chấm dứt tồn tại",
-    "Một công ty bị sáp nhập vào công ty khác đang tồn tại",
-    "Một công ty chia thành nhiều công ty",
-    "Một công ty mua cổ phần chi phối công ty khác"
+    "Một công ty sáp nhập vào công ty khác, công ty nhận sáp nhập vẫn tồn tại",
+    "Một công ty chia thành nhiều công ty mới, công ty cũ vẫn tồn tại",
+    "Một công ty mua cổ phần chi phối của công ty khác, cả hai cùng tồn tại"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 200.",
@@ -47,9 +47,9 @@
    "q": "Hợp đồng hợp nhất phải có nội dung nào về tài chính?",
    "options": [
     "Thời hạn, thủ tục và điều kiện chuyển đổi tài sản, phần vốn góp, cổ phần, trái phiếu",
-    "Mức lương của giám đốc mới",
-    "Giá cổ phiếu trên sàn sau 1 năm",
-    "Danh sách khách hàng mới"
+    "Mức lương, thưởng và phụ cấp của giám đốc công ty hợp nhất trong ba năm đầu",
+    "Giá cổ phiếu niêm yết trên sàn sau một năm kể từ ngày hợp nhất, có biến động mạnh",
+    "Danh sách khách hàng mới và nhà cung cấp của công ty hợp nhất mới thành lập"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 2 Điều 200.",
@@ -71,6 +71,16 @@
     {
      "text": "Bên bị mua vẫn tồn tại nhưng bị kiểm soát, chi phối",
      "answer": "right"
+    },
+    {
+     "text": "Hai công ty chuyển toàn bộ tài sản để hình thành một công ty mới, cả hai chấm dứt tồn tại",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 200 Luật Doanh nghiệp 2020"
+    },
+    {
+     "text": "Công ty mua toàn bộ vốn góp của công ty khác để kiểm soát, công ty bị mua vẫn tồn tại",
+     "answer": "right",
+     "basis": "Khoản 4 Điều 29 Luật Cạnh tranh 2018"
     }
    ],
    "explain": "Điều 200 Luật Doanh nghiệp; khoản 4 Điều 29 Luật Cạnh tranh."

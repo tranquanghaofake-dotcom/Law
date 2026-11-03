@@ -31,9 +31,9 @@
    "q": "Ai là người nộp thuế tài nguyên?",
    "options": [
     "Tổ chức, cá nhân khai thác tài nguyên thuộc đối tượng chịu thuế",
-    "Người tiêu dùng sản phẩm",
-    "Cơ quan quản lý tài nguyên",
-    "Người mua lại sản phẩm"
+    "Người tiêu dùng sản phẩm cuối cùng của quá trình sản xuất",
+    "Cơ quan quản lý tài nguyên và môi trường của chính quyền xã",
+    "Người mua lại sản phẩm đã khai thác từ tài nguyên rừng"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 3.",
@@ -48,9 +48,9 @@
    "q": "Tài nguyên nào KHÔNG thuộc đối tượng chịu thuế tài nguyên?",
    "options": [
     "Nước thiên nhiên dùng cho nông nghiệp",
-    "Dầu thô",
-    "Khoáng sản kim loại",
-    "Yến sào thiên nhiên"
+    "Dầu thô khai thác từ mỏ ngoài khơi",
+    "Khoáng sản kim loại khai thác tại mỏ",
+    "Yến sào thiên nhiên khai thác tại đảo"
    ],
    "answer": 0,
    "explain": "Khoản 7 Điều 2.",
@@ -72,6 +72,21 @@
     {
      "text": "Nước sông dùng để tưới lúa",
      "answer": "right"
+    },
+    {
+     "text": "Khoáng sản kim loại khai thác để bán",
+     "answer": "left",
+     "basis": "Điều 2 Luật Thuế tài nguyên 2009 (VBHN 23/VBHN-VPQH 2022)"
+    },
+    {
+     "text": "Khí thiên nhiên khai thác từ mỏ",
+     "answer": "left",
+     "basis": "Điều 2 Luật Thuế tài nguyên 2009 (VBHN 23/VBHN-VPQH 2022)"
+    },
+    {
+     "text": "Động vật hoang dã trong rừng tự nhiên bị săn bắt",
+     "answer": "right",
+     "basis": "Điều 2 Luật Thuế tài nguyên 2009 (VBHN 23/VBHN-VPQH 2022): sản phẩm rừng tự nhiên trừ động vật"
     }
    ],
    "explain": "Khoản 7 Điều 2."

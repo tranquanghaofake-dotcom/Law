@@ -30,7 +30,7 @@
     "Từ khi người đó sinh ra",
     "Từ đủ 6 tuổi",
     "Từ đủ 18 tuổi",
-    "Từ khi đăng ký khai sinh"
+    "Từ khi được khai sinh"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 16.",
@@ -45,7 +45,7 @@
    "q": "Năng lực pháp luật dân sự của cá nhân là gì?",
    "options": [
     "Khả năng của cá nhân có quyền dân sự và nghĩa vụ dân sự",
-    "Khả năng bằng hành vi của mình xác lập, thực hiện quyền, nghĩa vụ",
+    "Khả năng bằng hành vi của mình xác lập quyền, nghĩa vụ",
     "Khả năng chịu trách nhiệm hình sự",
     "Khả năng tham gia bầu cử"
    ],
@@ -73,6 +73,11 @@
     {
      "text": "Có từ khi sinh ra",
      "answer": "left"
+    },
+    {
+     "text": "Người 5 tuổi không tự mình xác lập giao dịch mua bán tài sản có giá trị",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 21 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 16, 19 Bộ luật Dân sự 2015."
@@ -113,6 +118,18 @@
     "sinh ra",
     "chết"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Năng lực pháp luật dân sự của cá nhân là khả năng của cá nhân có quyền dân sự và nghĩa vụ dân sự.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 16 Bộ luật Dân sự 2015 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 16 Bộ luật Dân sự 2015",
+    "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+   }
   }
  ]
 }

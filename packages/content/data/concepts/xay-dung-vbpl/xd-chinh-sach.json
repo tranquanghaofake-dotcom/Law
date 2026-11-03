@@ -31,9 +31,9 @@
    "q": "Theo khoản 2 Điều 3, chính sách là gì?",
    "options": [
     "Tập hợp các giải pháp cụ thể của Nhà nước để giải quyết vấn đề của thực tiễn nhằm đạt mục tiêu nhất định",
-    "Quy tắc xử sự chung bắt buộc",
-    "Văn bản hành chính của Chính phủ",
-    "Ý kiến của chuyên gia"
+    "Quy tắc xử sự chung, có hiệu lực bắt buộc thi hành đối với mọi người dân và tổ chức trên cả nước",
+    "Văn bản hành chính của Chính phủ về tổ chức bộ máy, biên chế và cán bộ, công chức của cơ quan",
+    "Ý kiến của chuyên gia, nhà khoa học và các tổ chức xã hội về một vấn đề pháp luật cụ thể đang được xem xét ban hành"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 3.",
@@ -48,9 +48,9 @@
    "q": "Nội dung từng chính sách phải gồm gì theo khoản 2 Điều 28?",
    "options": [
     "Vấn đề cần giải quyết, mục tiêu, giải pháp, đối tượng chịu tác động, giải pháp tối ưu được lựa chọn",
-    "Chỉ cần nêu tên luật dự kiến",
-    "Dự toán kinh phí và tên cơ quan soạn thảo",
-    "Danh sách thành viên ban soạn thảo"
+    "Chỉ cần nêu tên luật dự kiến ban hành, thời gian thông qua và cơ quan trình dự kiến cuối cùng",
+    "Dự toán kinh phí, tên cơ quan soạn thảo, danh sách người tham gia soạn thảo, ngày hoàn thành",
+    "Danh sách thành viên ban soạn thảo và thời gian làm việc, mức thù lao của từng thành viên"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 28.",
@@ -72,6 +72,16 @@
     {
      "text": "\"Doanh nghiệp có doanh thu dưới 3 tỷ đồng áp dụng thuế suất 15%\"",
      "answer": "right"
+    },
+    {
+     "text": "Nhà nước định hướng hỗ trợ đổi mới công nghệ cho doanh nghiệp vừa và nhỏ bằng nhiều giải pháp",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025"
+    },
+    {
+     "text": "Quy tắc xử sự chung: cửa hàng có doanh thu dưới ngưỡng luật định thì không phải kê khai",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025"
     }
    ],
    "explain": "Chính sách là giải pháp; quy phạm là quy tắc xử sự cụ thể hóa giải pháp đó."
@@ -112,6 +122,18 @@
     "mục tiêu",
     "đối tượng tác động"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chính sách là tập hợp các giải pháp cụ thể của Nhà nước để giải quyết một hoặc một số vấn đề của thực tiễn nhằm đạt được mục tiêu nhất định, phù hợp với chủ trương, đường lối của Đảng.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)",
+    "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-54-VBHN-VPQH-2025-Luat-Ban-hanh-van-ban-quy-pham-phap-luat-669858.aspx"
+   }
   }
  ]
 }

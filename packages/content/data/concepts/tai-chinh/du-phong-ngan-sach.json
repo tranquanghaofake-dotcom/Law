@@ -31,9 +31,9 @@
    "q": "Mức bố trí dự phòng ngân sách nhà nước là bao nhiêu?",
    "options": [
     "Từ 2% đến 5% tổng chi ngân sách mỗi cấp",
-    "Từ 5% đến 10%",
-    "Tối đa 1%",
-    "Do Thủ tướng quyết định không giới hạn"
+    "Từ 5% đến 10% tổng thu ngân sách",
+    "Tối đa 1% tổng chi ngân sách trung ương",
+    "Không quá 10%, do Thủ tướng quyết định"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 10.",
@@ -48,9 +48,9 @@
    "q": "Dự phòng ngân sách nhà nước là gì?",
    "options": [
     "Một khoản trong dự toán chi ngân sách chưa phân bổ đã được cơ quan có thẩm quyền quyết định ở từng cấp",
-    "Quỹ dự trữ tài chính",
-    "Khoản kết dư năm trước",
-    "Khoản vay nước ngoài"
+    "Quỹ tiền mặt dự trữ bằng ngoại tệ tại Kho bạc Nhà nước để bảo đảm thanh toán nợ công của Chính phủ hằng năm",
+    "Khoản kết dư ngân sách của năm trước được chuyển sang để chi thường xuyên cho năm sau, phân bổ ngay từ đầu năm",
+    "Khoản vay nước ngoài của Chính phủ ký kết với nhà tài trợ để bù đắp bội chi, đã phân bổ hết cho các bộ, ngành"
    ],
    "answer": 0,
    "explain": "Khoản 8 Điều 4.",
@@ -72,6 +72,16 @@
     {
      "text": "Quỹ của Nhà nước hình thành từ ngân sách và nguồn tài chính khác",
      "answer": "right"
+    },
+    {
+     "text": "Khoản chi dự phòng được bố trí từ 2% đến 5% tổng chi ngân sách mỗi cấp",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 10 Luật Ngân sách nhà nước 2025"
+    },
+    {
+     "text": "Khoản chưa phân bổ trong dự toán chi ngân sách ở từng cấp đã được cơ quan có thẩm quyền quyết định",
+     "answer": "left",
+     "basis": "Khoản 8 Điều 4 Luật Ngân sách nhà nước 2025"
     }
    ],
    "explain": "Khoản 8, 21 Điều 4."

@@ -31,7 +31,7 @@
    "options": [
     "Hội đồng nhân dân và Ủy ban nhân dân",
     "Chỉ Ủy ban nhân dân",
-    "Hội đồng nhân dân và Tòa án nhân dân",
+    "Hội đồng nhân dân và Tòa án nhân dân cùng cấp",
     "Ủy ban nhân dân và Mặt trận Tổ quốc"
    ],
    "answer": 0,
@@ -47,9 +47,9 @@
    "q": "Theo Điều 111 hiện hành, chính quyền địa phương được tổ chức phù hợp với đặc điểm nào?",
    "options": [
     "Nông thôn, đô thị, hải đảo",
-    "Dân tộc, tôn giáo",
-    "Kinh tế, văn hóa",
-    "Diện tích, dân số"
+    "Dân tộc, tôn giáo, tập quán",
+    "Kinh tế, văn hóa và xã hội vùng",
+    "Diện tích, dân số và khí hậu"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 111.",
@@ -71,6 +71,16 @@
     {
      "text": "Hội đồng nhân dân và Ủy ban nhân dân",
      "answer": "right"
+    },
+    {
+     "text": "Thành phố trực thuộc trung ương thuộc cấp tỉnh trong phân định lãnh thổ",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 110 Hiến pháp 2013 (sửa đổi)"
+    },
+    {
+     "text": "Ở mỗi cấp có chính quyền địa phương, cử tri bầu ra Hội đồng nhân dân",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 111 Hiến pháp 2013"
     }
    ],
    "explain": "Điều 110, 111."

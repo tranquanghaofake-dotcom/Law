@@ -46,9 +46,9 @@
    "q": "Công ty hợp danh có tư cách pháp nhân không?",
    "options": [
     "Có, kể từ ngày được cấp Giấy chứng nhận đăng ký doanh nghiệp",
-    "Không",
-    "Chỉ khi có thành viên góp vốn",
-    "Chỉ khi vốn trên 10 tỷ"
+    "Không, công ty hợp danh không có tư cách pháp nhân riêng",
+    "Có, nếu có thành viên góp vốn và có trụ sở đăng ký hợp lệ",
+    "Có, nếu vốn điều lệ trên 10 tỷ đồng và đã có đủ thành viên góp vốn"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 177.",
@@ -74,6 +74,16 @@
     {
      "text": "Có thể là tổ chức",
      "answer": "right"
+    },
+    {
+     "text": "Thành viên phải là cá nhân, công ty có ít nhất hai thành viên chịu trách nhiệm bằng toàn bộ tài sản của mình",
+     "answer": "left",
+     "basis": "Điểm a, b khoản 1 Điều 177 Luật Doanh nghiệp 2020"
+    },
+    {
+     "text": "Những thành viên chịu trách nhiệm vô hạn cùng nhau kinh doanh dưới một tên chung của công ty",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 177 Luật Doanh nghiệp 2020"
     }
    ],
    "explain": "Điều 177."
@@ -114,6 +124,18 @@
     "góp vốn",
     "pháp nhân"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Công ty hợp danh có tư cách pháp nhân kể từ ngày được cấp Giấy chứng nhận đăng ký doanh nghiệp.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 177 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 177 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+    "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+   }
   }
  ]
 }

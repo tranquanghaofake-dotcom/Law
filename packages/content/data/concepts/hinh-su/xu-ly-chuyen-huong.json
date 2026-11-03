@@ -31,9 +31,9 @@
    "q": "Biện pháp xử lý chuyển hướng được ưu tiên áp dụng ở giai đoạn tố tụng nào?",
    "options": [
     "Tất cả các giai đoạn điều tra, truy tố, xét xử",
-    "Chỉ giai đoạn xét xử",
-    "Chỉ giai đoạn điều tra",
-    "Chỉ sau khi chấp hành án"
+    "Chỉ giai đoạn xét xử và thi hành án hình sự",
+    "Chỉ giai đoạn điều tra và chuẩn bị truy tố",
+    "Chỉ sau khi chấp hành xong án phạt tù"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 11.",
@@ -48,9 +48,9 @@
    "q": "Biện pháp nào là biện pháp xử lý chuyển hướng KHÔNG thuộc nhóm tại cộng đồng?",
    "options": [
     "Giáo dục tại trường giáo dưỡng",
-    "Khiển trách",
-    "Xin lỗi bị hại",
-    "Quản thúc tại gia đình"
+    "Khiển trách người chưa thành niên",
+    "Xin lỗi bị hại và gia đình bị hại",
+    "Giáo dục tại xã, phường, đặc khu"
    ],
    "answer": 0,
    "explain": "Khoản 8 Điều 3; khoản 12 Điều 36.",
@@ -76,6 +76,11 @@
     {
      "text": "Thực hiện công việc phục vụ cộng đồng",
      "answer": "left"
+    },
+    {
+     "text": "Quản thúc tại gia đình đối với người chưa thành niên phạm tội",
+     "answer": "left",
+     "basis": "Khoản 5 Điều 36 Luật Tư pháp người chưa thành niên 2024"
     }
    ],
    "explain": "Điều 36."
@@ -116,6 +121,18 @@
     "trường giáo dưỡng",
     "ưu tiên"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Biện pháp xử lý chuyển hướng được ưu tiên áp dụng đối với người chưa thành niên phạm tội trong tất cả các giai đoạn điều tra, truy tố, xét xử.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 11 Luật Tư pháp người chưa thành niên 2024 (VBHN 105/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 11 Luật Tư pháp người chưa thành niên 2024 (VBHN 105/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-105-VBHN-VPQH-2026-Luat-Tu-phap-nguoi-chua-thanh-nien-707997.aspx"
+   }
   }
  ]
 }

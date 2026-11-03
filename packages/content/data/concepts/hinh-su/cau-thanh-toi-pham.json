@@ -30,9 +30,9 @@
    "q": "Bốn yếu tố của tội phạm theo khoa học luật hình sự gồm những gì?",
    "options": [
     "Khách thể, mặt khách quan, chủ thể, mặt chủ quan",
-    "Hành vi, hậu quả, lỗi, động cơ",
-    "Chủ thể, hành vi, công cụ, địa điểm",
-    "Khách thể, đối tượng, hậu quả, hình phạt"
+    "Hành vi, hậu quả, lỗi và động cơ của người phạm tội",
+    "Chủ thể, hành vi, công cụ và địa điểm phạm tội",
+    "Khách thể, đối tượng, hậu quả và hình phạt tương ứng"
    ],
    "answer": 0,
    "explain": "Học thuyết về các yếu tố của tội phạm.",
@@ -47,9 +47,9 @@
    "q": "Cấu thành tội phạm vật chất khác cấu thành tội phạm hình thức ở điểm nào?",
    "options": [
     "Hậu quả là dấu hiệu bắt buộc của cấu thành tội phạm vật chất",
-    "CTTP vật chất chỉ áp dụng cho tội xâm phạm sở hữu",
-    "CTTP hình thức không có dấu hiệu hành vi",
-    "CTTP hình thức luôn có hình phạt nhẹ hơn"
+    "CTTP vật chất chỉ áp dụng cho tội xâm phạm sở hữu tài sản",
+    "CTTP hình thức không có dấu hiệu hành vi và hậu quả",
+    "CTTP hình thức luôn bị phạt nhẹ hơn cấu thành vật chất"
    ],
    "answer": 0,
    "explain": "Phân loại theo cấu trúc mặt khách quan.",
@@ -71,6 +71,16 @@
     {
      "text": "Mô hình pháp lý gồm các dấu hiệu do luật quy định",
      "answer": "right"
+    },
+    {
+     "text": "Vụ việc cụ thể đã xảy ra: người A đánh B gây thương tích tại quán nhậu tối qua",
+     "answer": "left",
+     "basis": "Điều 8 Bộ luật Hình sự 2015 (hành vi nguy hiểm đã xảy ra; ⚠ căn cứ giáo trình, chưa đối chiếu nguyên văn)"
+    },
+    {
+     "text": "Mô hình luật định gồm các dấu hiệu khách thể, mặt khách quan, chủ thể và mặt chủ quan của tội",
+     "answer": "right",
+     "basis": "Điều 8 Bộ luật Hình sự 2015 (dấu hiệu do luật quy định; ⚠ căn cứ giáo trình)"
     }
    ],
    "explain": "Học thuyết."

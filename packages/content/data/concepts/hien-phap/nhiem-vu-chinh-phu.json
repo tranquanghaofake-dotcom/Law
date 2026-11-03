@@ -30,9 +30,9 @@
    "q": "Nhiệm vụ đầu tiên được liệt kê tại khoản 1 Điều 96 là gì?",
    "options": [
     "Tổ chức thi hành Hiến pháp, luật, nghị quyết của Quốc hội, pháp lệnh, lệnh, quyết định của Chủ tịch nước",
-    "Làm luật",
-    "Xét xử vụ án",
-    "Giám sát tối cao"
+    "Làm luật, xây dựng văn bản quy phạm và tổ chức thi hành toàn bộ luật của Quốc hội trên cả nước",
+    "Xét xử vụ án hình sự, dân sự, hành chính và kinh tế của tòa án các cấp trên cả nước",
+    "Giám sát tối cao đối với mọi hoạt động của Nhà nước, các cơ quan và tổ chức xã hội trong cả nước"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 96.",
@@ -75,6 +75,16 @@
     {
      "text": "Trình dự án ngân sách nhà nước",
      "answer": "left"
+    },
+    {
+     "text": "Cơ quan hành chính nhà nước cao nhất trình Quốc hội dự án ngân sách nhà nước",
+     "answer": "left",
+     "basis": "Điều 96 Hiến pháp 2013"
+    },
+    {
+     "text": "Cơ quan quyền lực nhà nước cao nhất quyết định cơ cấu, số lượng thành viên Chính phủ",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 95 Hiến pháp 2013"
     }
    ],
    "explain": "Điều 70, 96."

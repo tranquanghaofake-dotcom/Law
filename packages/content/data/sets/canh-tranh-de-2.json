@@ -8,10 +8,10 @@
     {
       "q": "Công ty A mua 70% vốn của công ty B, đủ để chi phối B. Đây là hình thức tập trung kinh tế nào?",
       "options": [
-        "Sáp nhập",
-        "Hợp nhất",
+        "Sáp nhập doanh nghiệp",
+        "Hợp nhất doanh nghiệp",
         "Mua lại doanh nghiệp",
-        "Liên doanh"
+        "Liên doanh góp vốn"
       ],
       "answer": 2,
       "explain": "Khoản 4 Điều 29.",
@@ -22,9 +22,9 @@
       "q": "Hai doanh nghiệp cùng góp tài sản lập doanh nghiệp mới, cả hai vẫn tồn tại. Đây là hình thức nào?",
       "options": [
         "Liên doanh",
-        "Hợp nhất",
-        "Sáp nhập",
-        "Mua lại"
+        "Hợp nhất DN",
+        "Sáp nhập DN",
+        "Mua lại DN"
       ],
       "answer": 0,
       "explain": "Khoản 5 Điều 29.",
@@ -35,9 +35,9 @@
       "q": "Tập trung kinh tế bị cấm khi nào?",
       "options": [
         "Khi gây tác động hoặc có khả năng gây tác động hạn chế cạnh tranh một cách đáng kể trên thị trường Việt Nam",
-        "Khi thị phần kết hợp trên 30%",
-        "Mọi trường hợp",
-        "Khi có doanh nghiệp nước ngoài tham gia"
+        "Khi thị phần kết hợp trên 30% và có ít nhất ba doanh nghiệp tham gia trên thị trường trong nước",
+        "Mọi trường hợp đều bị cấm, không phân biệt tác động đối với thị trường hay người tiêu dùng cuối cùng",
+        "Khi có doanh nghiệp nước ngoài tham gia vào thị trường Việt Nam và có thị phần lớn nhất trên thị trường liên quan"
       ],
       "answer": 0,
       "explain": "Điều 30.",
@@ -48,9 +48,9 @@
       "q": "Doanh nghiệp thuộc ngưỡng thông báo tập trung kinh tế phải nộp hồ sơ khi nào?",
       "options": [
         "Trước khi tiến hành tập trung kinh tế",
-        "Sau khi hoàn tất",
-        "Trong 90 ngày sau khi hoàn tất",
-        "Không bắt buộc"
+        "Sau khi đã hoàn tất giao dịch tập trung kinh tế",
+        "Trong 90 ngày sau khi hoàn tất giao dịch",
+        "Không bắt buộc, doanh nghiệp tự quyết định"
       ],
       "answer": 0,
       "explain": "Khoản 1 Điều 33.",
@@ -74,9 +74,9 @@
       "q": "Nhân viên cũ mang danh sách khách hàng mật của công ty A sang công ty B, B sử dụng mà không được A cho phép. B có thể vi phạm gì?",
       "options": [
         "Xâm phạm thông tin bí mật trong kinh doanh",
-        "Lạm dụng vị trí thống lĩnh",
-        "Thỏa thuận hạn chế cạnh tranh",
-        "Không vi phạm"
+        "Lạm dụng vị trí thống lĩnh thị trường",
+        "Thỏa thuận hạn chế cạnh tranh trong ngành",
+        "Không vi phạm vì đã thay đổi tên doanh nghiệp"
       ],
       "answer": 0,
       "explain": "Khoản 1 Điều 45.",

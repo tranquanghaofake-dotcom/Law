@@ -26,12 +26,12 @@
   {
    "type": "mcq",
    "level": 1,
-   "q": "Giao dịch dân sự gồm những dạng nào theo Điều 116?",
+   "q": "Phương án nào mô tả đầy đủ các dạng giao dịch dân sự theo Điều 116?",
    "options": [
     "Hợp đồng hoặc hành vi pháp lý đơn phương",
-    "Chỉ hợp đồng",
-    "Chỉ hợp đồng có công chứng",
-    "Quyết định hành chính và hợp đồng"
+    "Hợp đồng dân sự, không có hành vi khác",
+    "Hợp đồng có công chứng đã được đăng ký",
+    "Quyết định hành chính hoặc hợp đồng dân sự"
    ],
    "answer": 0,
    "explain": "Điều 116.",
@@ -48,7 +48,7 @@
     "Hành vi pháp lý đơn phương",
     "Hợp đồng song vụ",
     "Hợp đồng đơn vụ",
-    "Không phải giao dịch dân sự"
+    "Không là giao dịch dân sự"
    ],
    "answer": 0,
    "explain": "Di chúc chỉ cần ý chí của người lập.",
@@ -74,6 +74,16 @@
     {
      "text": "Công bố hứa thưởng tìm đồ thất lạc",
      "answer": "right"
+    },
+    {
+     "text": "Hai doanh nghiệp thỏa thuận cho thuê kho bãi và thỏa thuận giá thuê, cả hai bên cùng ký",
+     "answer": "left",
+     "basis": "Điều 116 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Người sở hữu công bố từ bỏ quyền sở hữu ngôi nhà bỏ hoang của mình",
+     "answer": "right",
+     "basis": "Điều 116 Bộ luật Dân sự 2015 (hành vi pháp lý đơn phương)"
     }
    ],
    "explain": "Điều 116."
@@ -113,6 +123,18 @@
     "đơn phương",
     "phát sinh, thay đổi, chấm dứt"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Giao dịch dân sự là hợp đồng hoặc hành vi pháp lý đơn phương làm phát sinh, thay đổi hoặc chấm dứt quyền, nghĩa vụ dân sự.",
+   "answer": true,
+   "explain": "Đúng. Điều 116 Bộ luật Dân sự 2015 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 116 Bộ luật Dân sự 2015",
+    "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+   }
   }
  ]
 }

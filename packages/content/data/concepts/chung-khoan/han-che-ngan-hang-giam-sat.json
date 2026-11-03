@@ -29,9 +29,9 @@
    "q": "Ngân hàng giám sát không được có quan hệ nào với công ty quản lý quỹ mà mình giám sát?",
    "options": [
     "Là người có liên quan hoặc có quan hệ sở hữu, vay, cho vay",
-    "Ký hợp đồng giám sát",
-    "Trao đổi báo cáo định kỳ",
-    "Đối chiếu sổ kế toán"
+    "Ký hợp đồng giám sát với công ty quản lý quỹ trong năm",
+    "Trao đổi báo cáo định kỳ theo quý với công ty quản lý quỹ",
+    "Đối chiếu sổ kế toán và tài khoản giao dịch của quỹ"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 117.",
@@ -74,6 +74,11 @@
     {
      "text": "Mua lại trái phiếu từ quỹ mình đang giám sát",
      "answer": "right"
+    },
+    {
+     "text": "Cung cấp thông tin về quỹ cho cơ quan quản lý khi được yêu cầu",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 117 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Điều 116, 117."

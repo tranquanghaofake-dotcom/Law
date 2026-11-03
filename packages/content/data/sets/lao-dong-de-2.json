@@ -8,10 +8,10 @@
     {
       "q": "Tổ chức đại diện người lao động tại cơ sở gồm những tổ chức nào?",
       "options": [
-        "Chỉ công đoàn cơ sở",
+        "Chỉ công đoàn cơ sở do cấp trên chỉ định cho từng đơn vị trực thuộc",
         "Công đoàn cơ sở và tổ chức của người lao động tại doanh nghiệp",
-        "Phòng nhân sự",
-        "Hội đồng quản trị"
+        "Phòng nhân sự của doanh nghiệp và bộ phận hành chính nội bộ",
+        "Hội đồng quản trị và ban kiểm soát của doanh nghiệp cổ phần"
       ],
       "answer": 1,
       "explain": "Khoản 3 Điều 3.",
@@ -34,10 +34,10 @@
     {
       "q": "Thỏa ước lao động tập thể quy định thưởng thấp hơn mức luật bắt buộc. Nội dung đó thế nào?",
       "options": [
-        "Có hiệu lực vì các bên đã thỏa thuận",
+        "Có hiệu lực vì các bên đã thỏa thuận với nhau",
         "Không được trái với quy định của pháp luật",
-        "Có hiệu lực nếu Sở Lao động đồng ý",
-        "Có hiệu lực 1 năm"
+        "Có hiệu lực nếu Sở Nội vụ đồng ý bằng văn bản",
+        "Có hiệu lực trong thời hạn 1 năm kể từ khi ký"
       ],
       "answer": 1,
       "explain": "Khoản 2 Điều 75.",
@@ -86,10 +86,10 @@
     {
       "q": "Công ty trừ 200 nghìn lương mỗi lần nhân viên đi muộn thay cho xử lý kỷ luật. Việc này thế nào?",
       "options": [
-        "Hợp pháp nếu có trong nội quy",
+        "Hợp pháp nếu có trong nội quy lao động đã đăng ký hợp lệ",
         "Bị cấm: phạt tiền, cắt lương thay việc xử lý kỷ luật",
-        "Hợp pháp nếu nhân viên ký đồng ý",
-        "Hợp pháp với doanh nghiệp tư nhân"
+        "Hợp pháp nếu nhân viên ký đồng ý trước khi áp dụng",
+        "Hợp pháp với doanh nghiệp tư nhân có vốn trong nước"
       ],
       "answer": 1,
       "explain": "Khoản 2 Điều 127.",
@@ -112,10 +112,10 @@
     {
       "q": "Tranh chấp về việc bị sa thải có bắt buộc phải qua hòa giải viên lao động trước khi khởi kiện không?",
       "options": [
-        "Bắt buộc",
-        "Không bắt buộc",
-        "Chỉ khi người lao động là nữ",
-        "Chỉ khi công ty có công đoàn"
+        "Bắt buộc phải qua hòa giải",
+        "Không bắt buộc, theo Điều 188",
+        "Bắt buộc nếu người lao động là nữ",
+        "Bắt buộc nếu công ty có công đoàn"
       ],
       "answer": 1,
       "explain": "Điểm a khoản 1 Điều 188.",
@@ -125,10 +125,10 @@
     {
       "q": "Đình công được tiến hành trong trường hợp nào theo Điều 199?",
       "options": [
-        "Tranh chấp tập thể về quyền bất kỳ",
+        "Tranh chấp tập thể về quyền bất kỳ của người lao động, không cần hòa giải trước tại cơ sở",
         "Tranh chấp tập thể về lợi ích khi hòa giải không thành hoặc hết thời hạn hòa giải…",
-        "Tranh chấp cá nhân về lương",
-        "Phản đối chính sách thuế"
+        "Tranh chấp cá nhân về lương và các khoản bồi thường của người lao động",
+        "Phản đối chính sách thuế của Nhà nước trong các doanh nghiệp tư nhân"
       ],
       "answer": 1,
       "explain": "Điều 199.",

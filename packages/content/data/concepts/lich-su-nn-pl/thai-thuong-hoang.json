@@ -29,9 +29,9 @@
    "q": "Theo Toàn thư, \"gia pháp họ Trần\" về ngôi vua là gì?",
    "options": [
     "Con đã lớn thì cho nối ngôi chính, cha lui làm Thượng hoàng, cùng trông coi chính sự",
-    "Cha chết con nối, anh chết em thay",
-    "Vua do triều thần bầu",
-    "Ngôi vua truyền cho con gái trưởng"
+    "Cha chết con nối, anh chết em thay theo đúng thứ tự trưởng thứ của dòng họ",
+    "Vua do triều thần bầu chọn từ các hoàng tộc theo ý kiến đa số trong triều",
+    "Ngôi vua truyền cho con gái trưởng, nếu không có con trai nào nối dõi trong nhà"
    ],
    "answer": 0,
    "explain": "Lời Ngô Sĩ Liên năm 1258.",
@@ -46,9 +46,9 @@
    "q": "Năm 1258, Trần Thái Tông nhường ngôi cho ai?",
    "options": [
     "Hoàng thái tử Hoảng (Trần Thánh Tông)",
-    "Trần Hưng Đạo",
-    "Trần Thủ Độ",
-    "Lý Chiêu Hoàng"
+    "Trần Hưng Đạo, người giữ chức Quốc công",
+    "Trần Thủ Độ, người lập ra nhà Trần",
+    "Lý Chiêu Hoàng, con gái Lý Huệ Tông"
    ],
    "answer": 0,
    "explain": "Toàn thư năm 1258.",
@@ -70,6 +70,16 @@
     {
      "text": "Cha còn sống đã nhường ngôi, làm Thượng hoàng cùng trông coi chính sự",
      "answer": "right"
+    },
+    {
+     "text": "Vua truyền ngôi cho con theo phép thường từ thời Hạ Vũ, cha chết con nối",
+     "answer": "left",
+     "basis": "Đại Việt sử ký toàn thư, Bản kỷ quyển V, Kỷ nhà Trần, Thái Tông, năm 1258, tờ 24a (laws/lich-su-su-lieu.txt)"
+    },
+    {
+     "text": "Thượng hoàng tự xưng và đặt tôn hiệu như vua đang trị vì",
+     "answer": "right",
+     "basis": "Đại Việt sử ký toàn thư, Bản kỷ quyển V, Kỷ nhà Trần, Thái Tông, năm 1258, tờ 24a–24b (laws/lich-su-su-lieu.txt)"
     }
    ],
    "explain": "Lời bàn của Ngô Sĩ Liên năm 1258."

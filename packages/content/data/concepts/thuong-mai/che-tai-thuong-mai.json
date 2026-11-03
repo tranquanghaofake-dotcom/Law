@@ -31,9 +31,9 @@
    "q": "Chế tài nào KHÔNG được liệt kê tại Điều 292?",
    "options": [
     "Tịch thu tài sản của bên vi phạm",
-    "Phạt vi phạm",
+    "Phạt vi phạm hợp đồng thương mại",
     "Tạm ngừng thực hiện hợp đồng",
-    "Hủy bỏ hợp đồng"
+    "Hủy bỏ hợp đồng, buộc trả lại"
    ],
    "answer": 0,
    "explain": "Điều 292.",
@@ -48,9 +48,9 @@
    "q": "Các bên có được thỏa thuận chế tài khác ngoài 6 chế tài luật định không?",
    "options": [
     "Có, nếu không trái nguyên tắc cơ bản của pháp luật Việt Nam, điều ước quốc tế, tập quán thương mại quốc tế",
-    "Không",
-    "Chỉ khi được Bộ Công Thương cho phép",
-    "Chỉ với hợp đồng quốc tế"
+    "Không được thỏa thuận chế tài nào khác ngoài luật quy định, dù có sự đồng ý của hai bên trong hợp đồng",
+    "Có, nhưng phải được Bộ Công Thương cho phép bằng văn bản sau khi xin ý kiến cơ quan quản lý",
+    "Chỉ với hợp đồng quốc tế có yếu tố nước ngoài và được Tòa án công nhận trước khi thực hiện hợp đồng"
    ],
    "answer": 0,
    "explain": "Khoản 7 Điều 292.",
@@ -76,6 +76,16 @@
     {
      "text": "Bồi thường thiệt hại",
      "answer": "left"
+    },
+    {
+     "text": "Các bên tạm ngừng thực hiện hợp đồng trong một thời gian nhất định",
+     "answer": "right",
+     "basis": "Khoản 4 Điều 292 Luật Thương mại 2005"
+    },
+    {
+     "text": "Hủy bỏ hợp đồng do vi phạm cơ bản",
+     "answer": "right",
+     "basis": "Khoản 6 Điều 292 Luật Thương mại 2005"
     }
    ],
    "explain": "Điều 292."

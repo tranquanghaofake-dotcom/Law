@@ -29,9 +29,9 @@
    "q": "Hợp đồng là gì theo Điều 385?",
    "options": [
     "Sự thỏa thuận giữa các bên về việc xác lập, thay đổi hoặc chấm dứt quyền, nghĩa vụ dân sự",
-    "Ý chí đơn phương của một bên",
-    "Quyết định của cơ quan nhà nước",
-    "Văn bản có công chứng"
+    "Ý chí đơn phương của một bên về việc xác lập, thay đổi quyền, nghĩa vụ dân sự của mình",
+    "Quyết định của cơ quan nhà nước có thẩm quyền về việc xác lập quyền, nghĩa vụ của cá nhân, tổ chức",
+    "Văn bản có công chứng, chứng thực của cơ quan nhà nước có thẩm quyền đối với các bên"
    ],
    "answer": 0,
    "explain": "Điều 385.",
@@ -70,6 +70,16 @@
     {
      "text": "Tặng cho tài sản không điều kiện",
      "answer": "right"
+    },
+    {
+     "text": "Hai bên thỏa thuận: một bên giao hàng, bên kia thanh toán tiền, mỗi bên đều có nghĩa vụ",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 402 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Hai bên thỏa thuận cho thuê nhà, bên cho thuê giao nhà và bên thuê trả tiền thuê định kỳ",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 402 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 402."
@@ -110,6 +120,18 @@
     "song vụ",
     "đơn vụ"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hợp đồng là sự thỏa thuận giữa các bên về việc xác lập, thay đổi hoặc chấm dứt quyền, nghĩa vụ dân sự.",
+   "answer": true,
+   "explain": "Đúng. Điều 385 Bộ luật Dân sự 2015 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 385 Bộ luật Dân sự 2015",
+    "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+   }
   }
  ]
 }

@@ -48,7 +48,7 @@
    "q": "Đối tượng nào KHÔNG được bảo hộ với danh nghĩa sáng chế?",
    "options": [
     "Phương pháp chữa bệnh cho người",
-    "Sản phẩm thuốc mới có tính mới, trình độ sáng tạo",
+    "Sản phẩm thuốc mới có tính mới",
     "Quy trình sản xuất mới",
     "Máy móc cải tiến"
    ],
@@ -76,6 +76,11 @@
     {
      "text": "Hiệu lực 20 năm từ ngày nộp đơn",
      "answer": "left"
+    },
+    {
+     "text": "Giải pháp kỹ thuật đáp ứng đủ tính mới, trình độ sáng tạo và khả năng áp dụng công nghiệp",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 58 Luật Sở hữu trí tuệ"
     }
    ],
    "explain": "Điều 58, 93."
@@ -116,6 +121,18 @@
     "trình độ sáng tạo",
     "áp dụng công nghiệp"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Sáng chế là giải pháp kỹ thuật dưới dạng sản phẩm hoặc quy trình nhằm giải quyết một vấn đề xác định bằng việc ứng dụng các quy luật tự nhiên.",
+   "answer": true,
+   "explain": "Đúng. Khoản 12 Điều 4 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 12 Điều 4 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+   }
   }
  ]
 }

@@ -28,9 +28,9 @@
    "q": "Người hành nghề chứng khoán được mở tài khoản giao dịch ở công ty chứng khoán khác nơi mình làm việc khi nào?",
    "options": [
     "Khi công ty nơi mình làm việc không có nghiệp vụ môi giới chứng khoán",
-    "Khi được người thân đứng tên",
-    "Khi số dư dưới 100 triệu đồng",
-    "Không bao giờ"
+    "Khi số dư dưới 100 triệu đồng và được công ty chấp thuận bằng văn bản trước",
+    "Khi được người thân đứng tên và có giấy ủy quyền hợp lệ của họ",
+    "Không bao giờ được mở tài khoản ở nơi nào khác kể cả khi được chấp thuận"
    ],
    "answer": 0,
    "explain": "Điểm b khoản 2 Điều 98.",
@@ -45,9 +45,9 @@
    "q": "Hậu quả khi người hành nghề vi phạm khoản 2 Điều 98?",
    "options": [
     "Bị thu hồi chứng chỉ và không được cấp lại",
-    "Chỉ bị nhắc nhở",
-    "Bị đình chỉ hành nghề 01 tháng",
-    "Không có hậu quả pháp lý"
+    "Chỉ bị nhắc nhở bằng văn bản và công khai",
+    "Bị đình chỉ hành nghề 1 tháng và phạt tiền",
+    "Bị phạt tiền và buộc nộp lại lợi nhuận"
    ],
    "answer": 0,
    "explain": "Điểm b khoản 3 và khoản 4 Điều 97.",
@@ -73,6 +73,11 @@
     {
      "text": "Thực hiện giao dịch vượt phạm vi ủy quyền của công ty",
      "answer": "right"
+    },
+    {
+     "text": "Làm việc cho một công ty chứng khoán và được cấp chứng chỉ hành nghề",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 98 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 2, 3 Điều 98."
@@ -101,9 +106,9 @@
    "q": "Môi giới Z làm chính thức ở công ty chứng khoán A, buổi tối nhận làm \"cộng tác viên môi giới\" cho công ty chứng khoán B. Nhận định nào đúng?",
    "options": [
     "Vi phạm điểm a khoản 2 Điều 98, có thể bị thu hồi chứng chỉ vĩnh viễn",
-    "Hợp pháp vì ngoài giờ làm việc",
-    "Hợp pháp nếu A đồng ý",
-    "Hợp pháp nếu không ký hợp đồng lao động với B"
+    "Hợp pháp vì làm ngoài giờ làm việc và không ảnh hưởng đến công việc chính",
+    "Hợp pháp nếu công ty A đồng ý bằng văn bản và thông báo cho khách",
+    "Hợp pháp nếu không ký hợp đồng lao động với công ty B và chỉ nhận hoa hồng"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 2 Điều 98; khoản 3, 4 Điều 97.",

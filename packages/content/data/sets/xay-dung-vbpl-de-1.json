@@ -9,9 +9,9 @@
       "q": "Văn bản quy phạm pháp luật là gì?",
       "options": [
         "Văn bản có chứa quy phạm pháp luật, được ban hành đúng thẩm quyền, hình thức, trình tự, thủ tục",
-        "Mọi văn bản của cơ quan nhà nước",
-        "Văn bản có đóng dấu đỏ",
-        "Văn bản được đăng báo"
+        "Mọi văn bản của cơ quan nhà nước có ký tên, đóng dấu và đăng trên Công báo đầy đủ",
+        "Văn bản có đóng dấu đỏ của cơ quan nhà nước, chữ ký của người đứng đầu và số hiệu cơ quan",
+        "Văn bản được đăng báo, đăng tải trên cổng thông tin điện tử, phát trên đài truyền hình và niêm yết tại trụ sở"
       ],
       "answer": 0,
       "explain": "Điều 2.",
@@ -22,9 +22,9 @@
       "q": "Quy phạm pháp luật có đặc điểm nào?",
       "options": [
         "Quy tắc xử sự chung, hiệu lực bắt buộc chung, được Nhà nước bảo đảm thực hiện",
-        "Áp dụng một lần cho một người",
-        "Chỉ mang tính khuyến nghị",
-        "Do cộng đồng tự thỏa thuận"
+        "Áp dụng một lần cho một người cụ thể trong một vụ việc nhất định, không lặp lại",
+        "Chỉ mang tính khuyến nghị, không bắt buộc đối với cơ quan và cá nhân",
+        "Do cộng đồng tự thỏa thuận và không có ai chịu trách nhiệm pháp lý"
       ],
       "answer": 0,
       "explain": "Khoản 1 Điều 3.",
@@ -48,9 +48,9 @@
       "q": "Chính sách là gì theo khoản 2 Điều 3?",
       "options": [
         "Tập hợp các giải pháp cụ thể của Nhà nước để giải quyết vấn đề thực tiễn nhằm đạt mục tiêu nhất định",
-        "Quy tắc xử sự chung",
-        "Văn bản hành chính",
-        "Nghị quyết của Đảng"
+        "Quy tắc xử sự chung, có hiệu lực bắt buộc đối với mọi cơ quan, tổ chức và cá nhân trên cả nước",
+        "Văn bản hành chính của cơ quan nhà nước về tổ chức bộ máy, biên chế và cán bộ, công chức",
+        "Nghị quyết của Đảng về chủ trương, đường lối lãnh đạo và phát triển đất nước hằng năm"
       ],
       "answer": 0,
       "explain": "Khoản 2 Điều 3.",
@@ -74,9 +74,9 @@
       "q": "Trường hợp nào bắt buộc thực hiện quy trình xây dựng chính sách?",
       "options": [
         "Luật, pháp lệnh mới hoặc thay thế luật, pháp lệnh hiện hành",
-        "Mọi thông tư",
-        "Mọi nghị quyết HĐND",
-        "Mọi quyết định của Thủ tướng"
+        "Thông tư của Bộ trưởng và thủ trưởng cơ quan ngang Bộ về quản lý ngành",
+        "Nghị quyết của HĐND cấp tỉnh về chính sách địa phương",
+        "Quyết định của Thủ tướng Chính phủ về tổ chức bộ máy hành chính"
       ],
       "answer": 0,
       "explain": "Điểm a khoản 1 Điều 27.",
@@ -87,9 +87,9 @@
       "q": "Đánh giá tác động của chính sách nhằm mục đích gì?",
       "options": [
         "Lựa chọn phương án tối ưu, phù hợp với mục tiêu của chính sách",
-        "Xác định cơ quan soạn thảo",
-        "Đăng Công báo",
-        "Công bố luật"
+        "Xác định cơ quan soạn thảo và thời hạn trình dự thảo luật",
+        "Đăng Công báo và đăng tải lên trang thông tin điện tử của Chính phủ",
+        "Công bố luật và các văn bản hướng dẫn thi hành của cơ quan ban hành"
       ],
       "answer": 0,
       "explain": "Khoản 4 Điều 3.",
@@ -113,9 +113,9 @@
       "q": "Cơ quan nào chủ trì thẩm tra dự án luật?",
       "options": [
         "Hội đồng Dân tộc, Ủy ban của Quốc hội",
-        "Bộ Tư pháp",
-        "Chính phủ",
-        "Chủ tịch nước"
+        "Bộ Tư pháp, theo đề nghị của Chính phủ",
+        "Chính phủ và các Bộ trưởng có liên quan",
+        "Chủ tịch nước và Văn phòng Chủ tịch nước"
       ],
       "answer": 0,
       "explain": "Khoản 2 Điều 37.",
@@ -126,9 +126,9 @@
       "q": "Trường hợp nào được áp dụng trình tự, thủ tục rút gọn?",
       "options": [
         "Khẩn cấp, yêu cầu đột xuất vì quốc phòng, an ninh, thiên tai, dịch bệnh",
-        "Cơ quan soạn thảo bận",
-        "Muốn tránh phản biện xã hội",
-        "Văn bản có ít điều"
+        "Cơ quan soạn thảo bận nhiều việc và thiếu nhân lực chuyên môn",
+        "Muốn tránh phản biện xã hội và lấy ý kiến của các chuyên gia độc lập",
+        "Văn bản có ít điều khoản và nội dung đơn giản, không cần thẩm định"
       ],
       "answer": 0,
       "explain": "Điểm a khoản 1 Điều 50.",

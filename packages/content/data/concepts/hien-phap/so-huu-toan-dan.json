@@ -47,9 +47,9 @@
    "q": "Đối tượng nào thuộc sở hữu toàn dân theo Điều 53?",
    "options": [
     "Tài nguyên nước, khoáng sản, nguồn lợi vùng biển, vùng trời",
-    "Nhà ở riêng của công dân",
-    "Vốn góp của cổ đông",
-    "Thu nhập hợp pháp của cá nhân"
+    "Cây trồng, vật nuôi và tài nguyên sinh học do cá nhân tự đầu tư",
+    "Vốn góp của cổ đông vào công ty cổ phần tư nhân và tài sản",
+    "Thu nhập hợp pháp của cá nhân và các khoản tiết kiệm"
    ],
    "answer": 0,
    "explain": "Điều 53.",
@@ -71,6 +71,16 @@
     {
      "text": "Đại diện chủ sở hữu và thống nhất quản lý",
      "answer": "right"
+    },
+    {
+     "text": "Nhân dân giao cho Nhà nước quyền quản lý, sử dụng đất đai và tài nguyên thiên nhiên",
+     "answer": "left",
+     "basis": "Điều 53 Hiến pháp 2013"
+    },
+    {
+     "text": "Chủ thể đại diện chủ sở hữu toàn dân về tài nguyên và thống nhất quản lý",
+     "answer": "right",
+     "basis": "Điều 53 Hiến pháp 2013"
     }
    ],
    "explain": "Điều 53."

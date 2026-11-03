@@ -28,9 +28,9 @@
    "q": "Nguyên tắc chung xác định Tòa án theo lãnh thổ trong vụ án dân sự là gì?",
    "options": [
     "Tòa án nơi bị đơn cư trú, làm việc hoặc có trụ sở",
-    "Tòa án nơi nguyên đơn cư trú",
-    "Tòa án nơi ký hợp đồng",
-    "Tòa án do Chánh án TAND tối cao chỉ định"
+    "Tòa án nơi nguyên đơn cư trú, làm việc hoặc có trụ sở",
+    "Tòa án nơi ký kết hợp đồng giữa các bên trong vụ việc",
+    "Tòa án do Chánh án TAND tối cao chỉ định theo vụ việc"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 1 Điều 39.",
@@ -69,6 +69,16 @@
     {
      "text": "Tranh chấp quyền sử dụng đất",
      "answer": "right"
+    },
+    {
+     "text": "Tranh chấp bồi thường thiệt hại ngoài hợp đồng, bị đơn là cá nhân cư trú ở địa phương khác",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 39 Bộ luật Tố tụng dân sự 2015"
+    },
+    {
+     "text": "Đối tượng tranh chấp là căn hộ, chỉ Tòa án nơi có căn hộ được giải quyết",
+     "answer": "right",
+     "basis": "Điểm c khoản 1 Điều 39 Bộ luật Tố tụng dân sự 2015"
     }
    ],
    "explain": "Điều 39."
@@ -109,6 +119,17 @@
     "bất động sản",
     "lựa chọn"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tòa án nơi bị đơn có trụ sở, nếu bị đơn là cơ quan, tổ chức, có thẩm quyền giải quyết theo thủ tục sơ thẩm những tranh chấp về dân sự, hôn nhân và gia đình, kinh doanh, thương mại, lao động.",
+   "answer": true,
+   "explain": "Đúng. Điểm a khoản 1 Điều 39 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điểm a khoản 1 Điều 39 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)"
+   }
   }
  ]
 }

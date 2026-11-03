@@ -75,6 +75,16 @@
     {
      "text": "Nghị định",
      "answer": "right"
+    },
+    {
+     "text": "Nghị quyết liên tịch giữa Ủy ban Thường vụ Quốc hội với Đoàn Chủ tịch Ủy ban Trung ương Mặt trận",
+     "answer": "left",
+     "basis": "Khoản 3 Điều 4 Luật Ban hành văn bản quy phạm pháp luật 2025"
+    },
+    {
+     "text": "Nghị quyết liên tịch giữa Chính phủ với Đoàn Chủ tịch Ủy ban Trung ương Mặt trận",
+     "answer": "right",
+     "basis": "Khoản 5 Điều 4 Luật Ban hành văn bản quy phạm pháp luật 2025"
     }
    ],
    "explain": "Khoản 3 và khoản 5 Điều 4."

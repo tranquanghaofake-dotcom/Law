@@ -29,9 +29,9 @@
    "q": "Khách thể của tội phạm là gì?",
    "options": [
     "Quan hệ xã hội được luật hình sự bảo vệ và bị tội phạm xâm hại",
-    "Tài sản bị chiếm đoạt",
-    "Người bị hại",
-    "Công cụ phạm tội"
+    "Tài sản bị chiếm đoạt trái pháp luật của người khác trong vụ án",
+    "Người bị hại trực tiếp và gia đình của họ trong vụ án này",
+    "Công cụ phạm tội và phương tiện dùng để thực hiện tội phạm"
    ],
    "answer": 0,
    "explain": "Học thuyết về khách thể.",
@@ -74,6 +74,11 @@
     {
      "text": "Ví dụ: chiếc xe máy bị trộm",
      "answer": "right"
+    },
+    {
+     "text": "Quan hệ xã hội được luật hình sự bảo vệ bị xâm hại, như tính mạng của người khác",
+     "answer": "left",
+     "basis": "Giáo trình Luật Hình sự Việt Nam (Phần chung), Trường Đại học Luật Hà Nội (⚠ chưa đối chiếu nguyên văn)"
     }
    ],
    "explain": "Học thuyết."

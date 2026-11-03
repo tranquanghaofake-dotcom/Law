@@ -7,6 +7,9 @@
   import { settings } from '$lib/store/settings.svelte';
   import { sfx } from '$lib/fx/sfx';
   import { buzz } from '$lib/fx/haptics';
+  import { tts } from '$lib/fx/tts.svelte';
+  import { onDestroy } from 'svelte';
+  import { feedbackSpeech } from '$lib/ui/session/speech';
   import { hashFor, route } from '$lib/router.svelte';
   import { isTypingTarget, KEYS } from '$lib/ui/cards/types';
   import { GROUPS } from '$lib/ui/groups';
@@ -47,13 +50,18 @@
     results = [...results, ok];
     if (ok) score += 1; else wrong = [...wrong, { n: i + 1, q, picked: q.shuffled[k] }];
     sfx.play(ok ? 'correct' : 'wrong'); buzz(ok ? 'ok' : 'bad');
+    // Tự đọc phản hồi ngay trong lượt xử lý cử chỉ (trước mọi await) để trình duyệt cho phát tiếng.
+    if (settings.tts && tts.available) tts.speak(speechFor(ok, q));
     if (q.concept && set) {
       try { await repo.record({ conceptId: q.concept, subject: set.group, correct: ok, elapsedMs: Date.now() - start, now: new Date(), retention: settings.retention }); } catch { /* bỏ qua */ }
     }
     start = Date.now();
   }
+  const speechFor = (ok: boolean, qq: Q) => feedbackSpeech({ type: 'mcq', level: 1, q: qq.q, options: qq.shuffled, answer: qq.answerIdx, explain: qq.explain }, { correct: ok });
+  onDestroy(() => tts.stop());
   async function next() {
     if (chosen === null) return;
+    tts.stop();
     chosen = null;
     if (i + 1 < qs.length) { i += 1; return; }
     finished = true;
@@ -73,6 +81,7 @@
     const n = Number(e.key);
     if (n >= 1 && n <= 4) { e.preventDefault(); pick(n - 1); }
     if (e.key === 'Enter') { e.preventDefault(); next(); }
+    if (e.key === ' ' && chosen !== null && settings.tts && tts.available) { e.preventDefault(); tts.speak(speechFor(chosen === q.answerIdx, q)); }
   }
   const cls = (k: number) => chosen === null ? '' : k === q.answerIdx ? 'correct' : k === chosen ? 'wrong' : 'dim';
   const verdict = $derived(verdictFor(score, qs.length));

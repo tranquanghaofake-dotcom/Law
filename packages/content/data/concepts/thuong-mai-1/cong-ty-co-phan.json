@@ -48,8 +48,8 @@
    "options": [
     "Thành nhiều phần bằng nhau gọi là cổ phần",
     "Theo tỷ lệ thỏa thuận của thành viên",
-    "Thành phần vốn góp không bằng nhau",
-    "Không chia"
+    "Chia thành phần vốn góp không bằng nhau",
+    "Không chia thành phần nào, chỉ có một vốn chung"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 1 Điều 111.",
@@ -71,6 +71,16 @@
     {
      "text": "Tối đa 50 thành viên",
      "answer": "right"
+    },
+    {
+     "text": "Vốn điều lệ được chia thành các phần bằng nhau gọi là cổ phần",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 111 Luật Doanh nghiệp 2020"
+    },
+    {
+     "text": "Có từ 02 đến 50 thành viên là tổ chức, cá nhân",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 46 Luật Doanh nghiệp 2020"
     }
    ],
    "explain": "Điều 46, 111."
@@ -111,6 +121,18 @@
     "vốn đã góp",
     "chuyển nhượng"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Công ty cổ phần có tư cách pháp nhân kể từ ngày được cấp Giấy chứng nhận đăng ký doanh nghiệp.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 111 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 111 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+    "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+   }
   }
  ]
 }

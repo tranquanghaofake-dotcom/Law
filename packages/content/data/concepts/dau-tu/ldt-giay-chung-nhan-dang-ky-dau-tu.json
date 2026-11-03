@@ -31,11 +31,11 @@
    "options": [
     "Dự án đầu tư của nhà đầu tư nước ngoài",
     "Dự án đầu tư của nhà đầu tư trong nước",
-    "Mọi khoản góp vốn mua cổ phần",
-    "Mọi dự án dưới 10 tỷ đồng"
+    "Đầu tư theo hình thức góp vốn, mua cổ phần",
+    "Dự án đầu tư có vốn dưới 10 tỷ đồng"
    ],
    "answer": 0,
-   "explain": "Điểm a khoản 1 Điều 26.",
+   "explain": "Điểm a khoản 1 Điều 26. Dự án của nhà đầu tư trong nước và đầu tư góp vốn, mua cổ phần thuộc khoản 2 Điều 26 (không phải thực hiện thủ tục cấp Giấy chứng nhận đăng ký đầu tư); ngưỡng 10 tỷ đồng không phải căn cứ.",
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 26 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)"
@@ -47,9 +47,9 @@
    "q": "Giấy chứng nhận đăng ký đầu tư có chức năng gì?",
    "options": [
     "Ghi nhận thông tin đăng ký của nhà đầu tư về dự án đầu tư",
-    "Cấp quyền sử dụng đất",
-    "Xác nhận vốn điều lệ doanh nghiệp",
-    "Cho phép xuất cảnh"
+    "Cấp quyền sử dụng đất và tài sản gắn liền với đất cho nhà đầu tư",
+    "Xác nhận vốn điều lệ của doanh nghiệp đã góp đủ theo đăng ký",
+    "Cho phép xuất cảnh của nhà đầu tư và người thân trong gia đình"
    ],
    "answer": 0,
    "explain": "Khoản 11 Điều 3.",
@@ -71,6 +71,16 @@
     {
      "text": "Nhà đầu tư góp vốn, mua cổ phần của tổ chức kinh tế",
      "answer": "right"
+    },
+    {
+     "text": "Nhà đầu tư nước ngoài thực hiện dự án đầu tư mới tại Việt Nam",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 26 Luật Đầu tư 2025"
+    },
+    {
+     "text": "Doanh nghiệp trong nước mua 15% cổ phần của một công ty cổ phần khác, không thực hiện dự án mới",
+     "answer": "right",
+     "basis": "Điểm c khoản 2 Điều 26 Luật Đầu tư 2025"
     }
    ],
    "explain": "Điều 26."
@@ -111,6 +121,18 @@
     "nhà đầu tư nước ngoài",
     "khoản 1 Điều 20"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Giấy chứng nhận đăng ký đầu tư là văn bản bằng bản giấy hoặc bản điện tử ghi nhận thông tin đăng ký của nhà đầu tư về dự án đầu tư.",
+   "answer": true,
+   "explain": "Đúng. Khoản 11 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 11 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)",
+    "url": "https://thuvienphapluat.vn/van-ban/Dau-tu/Van-ban-hop-nhat-142-2026-VBHN-LQ-VPQH-Luat-Dau-tu-726675.aspx"
+   }
   }
  ]
 }

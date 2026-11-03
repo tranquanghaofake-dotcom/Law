@@ -29,9 +29,9 @@
    "q": "Công việc nào KHÔNG phải công việc của lao động là người giúp việc gia đình?",
    "options": [
     "Bán hàng tại cửa hàng kinh doanh của gia đình",
-    "Chăm sóc trẻ em",
-    "Lái xe cho gia đình",
-    "Làm vườn"
+    "Chăm sóc trẻ em và người già trong gia đình",
+    "Lái xe đưa đón các thành viên trong gia đình",
+    "Làm vườn, chăm cây cảnh và trồng rau trong nhà"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 161: không liên quan đến hoạt động thương mại.",
@@ -47,8 +47,8 @@
    "options": [
     "Báo trước ít nhất 15 ngày, không cần căn cứ",
     "Có lý do chính đáng và báo trước 45 ngày",
-    "Được Tòa án cho phép",
-    "Bồi thường 2 tháng lương"
+    "Được Tòa án cho phép trước khi chấm dứt",
+    "Bồi thường hai tháng lương cho người làm"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 162.",
@@ -70,6 +70,16 @@
     {
      "text": "Nhân viên bán hàng tạp hóa của hộ kinh doanh",
      "answer": "right"
+    },
+    {
+     "text": "Người làm việc thường xuyên chăm sóc trẻ em cho một hộ gia đình",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 161 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Thợ sửa ống nước được hộ gia đình thuê sửa chữa theo từng lần",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 161 Bộ luật Lao động 2019 (làm thường xuyên)"
     }
    ],
    "explain": "Khoản 1 Điều 161."
@@ -110,6 +120,18 @@
     "văn bản",
     "15 ngày"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Một bên có quyền đơn phương chấm dứt hợp đồng lao động bất kỳ khi nào nhưng phải báo trước ít nhất 15 ngày.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 162 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 162 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-18-VBHN-VPQH-2026-Bo-luat-lao-dong-695336.aspx"
+   }
   }
  ]
 }

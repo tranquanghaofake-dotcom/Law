@@ -30,9 +30,9 @@
    "q": "Người từ đủ 14 đến dưới 16 tuổi phải chịu TNHS về loại tội nào?",
    "options": [
     "Tội rất nghiêm trọng, đặc biệt nghiêm trọng tại các điều được liệt kê ở khoản 2 Điều 12",
-    "Mọi tội phạm",
-    "Chỉ tội đặc biệt nghiêm trọng",
-    "Không phải chịu TNHS"
+    "Cả tội ít nghiêm trọng do vô ý gây ra và tội do cố ý thực hiện",
+    "Chỉ tội đặc biệt nghiêm trọng do cố ý gây ra, có tổ chức và tái phạm nhiều lần liền",
+    "Không phải chịu TNHS, kể cả với tội rất nghiêm trọng đã thực hiện"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 12.",
@@ -71,6 +71,16 @@
     {
      "text": "Trộm cắp tài sản thuộc khung ít nghiêm trọng",
      "answer": "right"
+    },
+    {
+     "text": "Người 15 tuổi phạm tội hiếp dâm, thuộc các tội mà khoản 2 Điều 12 quy định phải chịu trách nhiệm",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 12 Bộ luật Hình sự 2015"
+    },
+    {
+     "text": "Người 15 tuổi lừa đảo chiếm đoạt tài sản khung ít nghiêm trọng",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 12 Bộ luật Hình sự 2015"
     }
    ],
    "explain": "Khoản 2 Điều 12."

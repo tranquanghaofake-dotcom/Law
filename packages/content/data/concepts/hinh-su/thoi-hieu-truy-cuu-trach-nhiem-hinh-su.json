@@ -47,8 +47,8 @@
    "options": [
     "Từ ngày tội phạm được thực hiện",
     "Từ ngày tội phạm bị phát hiện",
-    "Từ ngày khởi tố vụ án",
-    "Từ ngày có đơn tố giác"
+    "Từ ngày khởi tố vụ án hình sự",
+    "Từ ngày có đơn tố giác đầu tiên"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 27.",
@@ -70,6 +70,16 @@
     {
      "text": "Tội phạm đặc biệt nghiêm trọng",
      "answer": "right"
+    },
+    {
+     "text": "Người phạm tội ít nghiêm trọng, sau 05 năm kể từ ngày phạm tội không còn bị truy cứu",
+     "answer": "left",
+     "basis": "Điểm a khoản 2 Điều 27 Bộ luật Hình sự 2015"
+    },
+    {
+     "text": "Người phạm tội đặc biệt nghiêm trọng, sau 20 năm kể từ ngày phạm tội mới hết thời hiệu",
+     "answer": "right",
+     "basis": "Điểm d khoản 2 Điều 27 Bộ luật Hình sự 2015"
     }
    ],
    "explain": "Khoản 2 Điều 27."

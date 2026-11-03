@@ -47,9 +47,9 @@
    "q": "Các nghiệp vụ của công ty quản lý quỹ được cấp phép thế nào?",
    "options": [
     "Cấp chung trong Giấy phép thành lập và hoạt động kinh doanh chứng khoán",
-    "Cấp riêng từng nghiệp vụ theo bậc thang",
-    "Không cần cấp phép",
-    "Do Sở giao dịch chấp thuận"
+    "Cấp riêng từng nghiệp vụ theo bậc thang và phải có vốn đăng ký riêng",
+    "Không cần cấp phép và được hoạt động tự do theo quy định nội bộ",
+    "Do Sở giao dịch chấp thuận và công bố trên trang thông tin điện tử"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 73.",
@@ -75,6 +75,11 @@
     {
      "text": "Quản lý danh mục đầu tư chứng khoán",
      "answer": "left"
+    },
+    {
+     "text": "Môi giới chứng khoán cho khách hàng",
+     "answer": "right",
+     "basis": "Điều 72 Luật Chứng khoán 2019 (nghiệp vụ công ty chứng khoán)"
     }
    ],
    "explain": "Điều 72 và Điều 73."

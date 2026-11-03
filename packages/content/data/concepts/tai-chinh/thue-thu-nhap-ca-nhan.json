@@ -47,9 +47,9 @@
    "q": "Cá nhân không cư trú nộp thuế TNCN với thu nhập nào?",
    "options": [
     "Thu nhập chịu thuế phát sinh trong lãnh thổ Việt Nam",
-    "Mọi thu nhập trong và ngoài Việt Nam",
-    "Không phải nộp thuế",
-    "Chỉ thu nhập từ bất động sản ở nước ngoài"
+    "Thu nhập phát sinh cả trong và ngoài lãnh thổ",
+    "Không phải nộp thuế đối với mọi khoản thu nhập",
+    "Chỉ thu nhập từ bất động sản ở nước ngoài và cổ tức"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 2.",
@@ -71,6 +71,16 @@
     {
      "text": "Chỉ chịu thuế với thu nhập phát sinh tại Việt Nam",
      "answer": "right"
+    },
+    {
+     "text": "Người cư trú nhận tiền lương từ công ty ở nước ngoài",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 2 Luật Thuế thu nhập cá nhân 2025"
+    },
+    {
+     "text": "Người không cư trú nhận tiền công từ công ty tại Việt Nam",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 2 Luật Thuế thu nhập cá nhân 2025"
     }
    ],
    "explain": "Khoản 1 Điều 2."

@@ -1,11 +1,13 @@
 <script lang="ts">
   // Huy hiệu chương: biểu tượng nội dung chương đặt trong vành trống đồng nhỏ (viewBox 64×64). Trang trí, aria-hidden.
-  import type { EmblemName } from './registry';
+  import { EMBLEM_MORE, type EmblemName } from './registry';
   import { ring } from './kit';
+  import './kit/kit.css';
   let { name, size = 44 }: { name: EmblemName; size?: number } = $props();
 </script>
 
-<svg class="art emblem" viewBox="0 0 64 64" width={size} height={size} aria-hidden="true" focusable="false">
+<svg class="art art-lit emblem" viewBox="0 0 64 64" width={size} height={size} aria-hidden="true" focusable="false">
+  <circle cx="32" cy="33.2" r="31" fill="var(--ink)" opacity=".14" />
   <circle class="f-sun" cx="32" cy="32" r="31" />
   <path class="f-sunline" d={ring(32, 32, 27, 31, 28)} />
   <circle class="kg" cx="32" cy="32" r="25.5" stroke-width="1" stroke-dasharray="1 2.5" />
@@ -121,6 +123,8 @@
     <path class="f-cream k" d="M12 44q10-5 20 0q10-5 20 0V24q-10-5-20 0q-10-5-20 0z" /><path class="k" d="M32 24v20" stroke-width="1" />
     <path class="kw" d="M16 29h12M16 33h12M16 37h9M36 29h12M36 33h12M36 37h9" stroke-width="1" />
     <path class="f-void k" d="M40 9l5 2l-9 19l-2-1z" stroke-width="1" /><path class="ka" d="M35 28l-1 4l3-3" stroke-width="1" />
+  {:else if EMBLEM_MORE.includes(name)}
+    {#await import('./EmblemMore.svelte') then m}<m.default {name} />{/await}
   {:else}
     <rect class="f-card k" x="17" y="12" width="30" height="38" rx="1.5" /><rect class="f-seal" x="17" y="12" width="30" height="5" />
     <text class="f-ink" x="32" y="27" text-anchor="middle" style="font: 800 7px/1 var(--font-ui)">1945</text>
@@ -128,4 +132,5 @@
     <circle class="f-seal" cx="38" cy="44" r="4" /><path class="k" d="M22 45q3-3 5 0t5-1" stroke-width="1" />
   {/if}
   </g>
+  <ellipse cx="25" cy="15" rx="19" ry="8" fill="#fff" opacity=".22" transform="rotate(-24 25 15)" style="pointer-events:none" />
 </svg>

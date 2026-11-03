@@ -29,9 +29,9 @@
    "q": "Người lao động cao tuổi được xác định thế nào?",
    "options": [
     "Người tiếp tục lao động sau độ tuổi theo khoản 2 Điều 169 BLLĐ",
-    "Người từ đủ 55 tuổi",
-    "Người từ đủ 60 tuổi không phân biệt giới",
-    "Người từ đủ 75 tuổi"
+    "Người từ đủ 45 tuổi trở lên đang làm việc hợp pháp ở nơi làm",
+    "Người từ đủ 60 tuổi không phân biệt giới tính và việc làm",
+    "Người từ đủ 75 tuổi trở lên đang làm việc tại nơi làm việc"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 148.",
@@ -46,9 +46,9 @@
    "q": "Người lao động cao tuổi có quyền thỏa thuận điều gì?",
    "options": [
     "Rút ngắn thời giờ làm việc hằng ngày hoặc làm việc không trọn thời gian",
-    "Không đóng thuế thu nhập",
-    "Tăng giờ làm thêm không giới hạn",
-    "Không phải ký HĐLĐ"
+    "Không đóng thuế thu nhập cá nhân trong năm đầu tiên làm việc của mình",
+    "Tăng giờ làm thêm không giới hạn theo thỏa thuận riêng giữa hai bên",
+    "Không phải ký HĐLĐ bằng văn bản với người sử dụng lao động"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 148.",
@@ -70,6 +70,21 @@
     {
      "text": "Chưa đủ 18 tuổi",
      "answer": "right"
+    },
+    {
+     "text": "Người đã nghỉ hưu nhưng tiếp tục làm việc theo hợp đồng lao động",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 148 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Người lao động cao tuổi thỏa thuận rút ngắn thời giờ làm việc hằng ngày",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 148 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Em 17 tuổi làm việc bán thời gian theo hợp đồng",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 143 Bộ luật Lao động 2019"
     }
    ],
    "explain": "Điều 143, 148."

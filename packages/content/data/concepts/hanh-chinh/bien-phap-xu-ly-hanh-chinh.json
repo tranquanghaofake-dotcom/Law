@@ -29,9 +29,9 @@
    "q": "Biện pháp xử lý hành chính áp dụng đối với ai?",
    "options": [
     "Cá nhân vi phạm pháp luật về an ninh, trật tự, an toàn xã hội mà không phải là tội phạm",
-    "Mọi tổ chức vi phạm",
-    "Doanh nghiệp vi phạm thuế",
-    "Cán bộ vi phạm kỷ luật"
+    "Mọi tổ chức vi phạm pháp luật về an ninh, trật tự và an toàn xã hội",
+    "Doanh nghiệp vi phạm pháp luật về thuế, kế toán và tài chính nhà nước trên địa bàn",
+    "Cán bộ vi phạm kỷ luật và bị đình chỉ công tác trong thời gian điều tra vụ việc"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 2.",
@@ -70,6 +70,16 @@
     {
      "text": "Cảnh cáo",
      "answer": "right"
+    },
+    {
+     "text": "Người 13 tuổi có hành vi có dấu hiệu của tội rất nghiêm trọng do cố ý, bị giáo dục tại xã, phường",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 90 Luật Xử lý vi phạm hành chính"
+    },
+    {
+     "text": "Phạt tiền đối với tổ chức vi phạm hành chính",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 5 và khoản 1 Điều 21 Luật Xử lý vi phạm hành chính"
     }
    ],
    "explain": "Điều 2, 21."

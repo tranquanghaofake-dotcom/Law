@@ -32,9 +32,9 @@
    "q": "Giấy tờ có giá là bằng chứng xác nhận điều gì?",
    "options": [
     "Nghĩa vụ trả nợ giữa tổ chức phát hành với người sở hữu",
-    "Quyền sở hữu phần vốn góp",
-    "Quyền sử dụng đất",
-    "Quyền tác giả"
+    "Quyền sở hữu phần vốn góp trong công ty cổ phần niêm yết",
+    "Quyền sử dụng đất ở và tài sản gắn liền với đất đã được cấp",
+    "Quyền tác giả đối với tác phẩm văn học, nghệ thuật, khoa học"
    ],
    "answer": 0,
    "explain": "Khoản 8 Điều 6.",
@@ -49,9 +49,9 @@
    "q": "Loại giấy tờ nào KHÔNG phải giấy tờ có giá theo khoản 8 Điều 6?",
    "options": [
     "Cổ phiếu (xác nhận quyền sở hữu cổ phần)",
-    "Kỳ phiếu",
-    "Trái phiếu",
-    "Tín phiếu"
+    "Kỳ phiếu ngân hàng phát hành và thanh toán",
+    "Trái phiếu doanh nghiệp phát hành công khai",
+    "Tín phiếu kho bạc phát hành ngắn hạn"
    ],
    "answer": 0,
    "explain": "Khoản 8 Điều 6: giấy tờ có giá xác nhận nghĩa vụ trả nợ; cổ phiếu xác nhận quyền sở hữu.",
@@ -73,6 +73,16 @@
     {
      "text": "Cổ phiếu ngân hàng",
      "answer": "right"
+    },
+    {
+     "text": "Kỳ phiếu ngân hàng ghi nhận nghĩa vụ trả nợ kèm lãi suất theo kỳ hạn",
+     "answer": "left",
+     "basis": "Khoản 8 Điều 6 Luật Ngân hàng Nhà nước 2010"
+    },
+    {
+     "text": "Giấy chứng nhận quyền sở hữu nhà ở, không ghi nhận nghĩa vụ trả nợ",
+     "answer": "right",
+     "basis": "Khoản 8 Điều 6 Luật Ngân hàng Nhà nước 2010 (không xác nhận nghĩa vụ trả nợ)"
     }
    ],
    "explain": "Khoản 8 Điều 6."
@@ -113,6 +123,18 @@
     "người sở hữu",
     "trả lãi"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Giấy tờ có giá là bằng chứng xác nhận nghĩa vụ trả nợ giữa tổ chức phát hành giấy tờ có giá với người sở hữu giấy tờ có giá trong một thời hạn nhất định, điều kiện trả lãi và các điều kiện khác.",
+   "answer": true,
+   "explain": "Đúng. Khoản 8 Điều 6 Luật Ngân hàng Nhà nước Việt Nam 2010 (VBHN 141/2026/VBHN-LQ-VPQH) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 8 Điều 6 Luật Ngân hàng Nhà nước Việt Nam 2010 (VBHN 141/2026/VBHN-LQ-VPQH)",
+    "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-141-2026-VBHN-LQ-VPQH-Luat-Ngan-hang-Nha-nuoc-Viet-Nam-726674.aspx"
+   }
   }
  ]
 }

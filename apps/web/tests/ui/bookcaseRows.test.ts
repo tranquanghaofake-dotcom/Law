@@ -98,11 +98,11 @@ describe('màu và chữ gáy (khớp bìa sách thật)', () => {
     expect(spineColor('#0B2468')).toBe('#0b2468');
     expect(sat(spineColor('#44505C'))).toBeGreaterThanOrEqual(0.59);
   });
-  it('spineFont: tên ngắn dùng cỡ tối đa, tên dài co nhỏ nhưng không dưới 6 — luôn giữ nguyên chữ (không cắt)', () => {
-    expect(spineFont('Hiến', 100)).toBe(8.5);
-    const long = spineFont('Lý luận NN&PL', 64);
-    expect(long).toBeLessThan(8.5);
-    expect(long).toBeGreaterThanOrEqual(6);
-    expect(spineFont('x'.repeat(40), 64)).toBe(6);
+  it('spineFont: tên ngắn dùng cỡ tối đa, tên dài co nhỏ nhưng trong khoảng 7–10,5 — luôn giữ nguyên chữ (không cắt)', () => {
+    expect(spineFont('Hiến', 100)).toBe(10.5);
+    const long = spineFont('Lý luận NN&PL', 100);
+    expect(long).toBeLessThan(10.5);
+    expect(long).toBeGreaterThanOrEqual(7);
+    expect(spineFont('x'.repeat(40), 100)).toBe(7);
   });
 });

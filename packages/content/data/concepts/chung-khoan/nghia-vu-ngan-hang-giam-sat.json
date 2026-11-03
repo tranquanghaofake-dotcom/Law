@@ -30,9 +30,9 @@
    "q": "Khi phát hiện công ty quản lý quỹ vi phạm Điều lệ quỹ, ngân hàng giám sát phải làm gì?",
    "options": [
     "Báo cáo Ủy ban Chứng khoán Nhà nước",
-    "Tự xử phạt công ty quản lý quỹ",
-    "Giải thể quỹ ngay",
-    "Không có nghĩa vụ gì"
+    "Tự xử phạt công ty quản lý quỹ vi phạm",
+    "Giải thể quỹ ngay khi phát hiện",
+    "Yêu cầu công ty quản lý quỹ nộp phạt"
    ],
    "answer": 0,
    "explain": "Điểm g khoản 2 Điều 116.",
@@ -47,9 +47,9 @@
    "q": "Ngân hàng giám sát thực hiện thu, chi tài sản của quỹ theo yêu cầu nào?",
    "options": [
     "Yêu cầu hợp pháp của công ty quản lý quỹ",
-    "Mọi yêu cầu của công ty quản lý quỹ",
-    "Yêu cầu của bất kỳ nhà đầu tư nào",
-    "Yêu cầu của Sở giao dịch"
+    "Yêu cầu của đại diện nhóm nhà đầu tư lớn",
+    "Yêu cầu của bất kỳ nhà đầu tư trong quỹ",
+    "Yêu cầu của Sở giao dịch chứng khoán"
    ],
    "answer": 0,
    "explain": "Điểm d khoản 2 Điều 116.",
@@ -75,6 +75,11 @@
     {
      "text": "Tự chọn cổ phiếu để quỹ đầu tư",
      "answer": "right"
+    },
+    {
+     "text": "Thực hiện lưu ký tài sản của quỹ đại chúng",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 116 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 2 Điều 116."
@@ -103,9 +108,9 @@
    "q": "Ngân hàng giám sát G biết công ty quản lý quỹ đầu tư vượt hạn mức 20% vào một tổ chức nhưng im lặng vì là khách hàng lớn. G vi phạm gì?",
    "options": [
     "Nghĩa vụ giám sát tuân thủ và báo cáo Ủy ban khi phát hiện vi phạm",
-    "Không vi phạm vì không phải người ra quyết định đầu tư",
-    "Chỉ vi phạm đạo đức, không vi phạm luật",
-    "Vi phạm nghĩa vụ ưu tiên lệnh khách hàng"
+    "Không vi phạm vì không phải người trực tiếp ra quyết định đầu tư",
+    "Chỉ vi phạm đạo đức, không vi phạm luật và không bị xử lý",
+    "Vi phạm nghĩa vụ ưu tiên lệnh khách hàng và giao dịch cho bản thân"
    ],
    "answer": 0,
    "explain": "Điểm c, g khoản 2 Điều 116.",

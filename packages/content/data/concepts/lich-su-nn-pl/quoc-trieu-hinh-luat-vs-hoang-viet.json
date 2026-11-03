@@ -75,6 +75,11 @@
     {
      "text": "Cho con gái trưởng giữ hương hỏa khi không có con trai trưởng",
      "answer": "left"
+    },
+    {
+     "text": "Bộ luật có điều cho người từ 70 tuổi trở lên hoặc 15 tuổi trở xuống phạm tội lưu trở xuống được chuộc bằng tiền",
+     "answer": "left",
+     "basis": "Quốc triều hình luật, Điều 16 (laws/lich-su-su-lieu.txt)"
     }
    ],
    "explain": "Điều 391 Quốc triều hình luật; đánh giá phổ biến của giáo trình."
@@ -103,9 +108,9 @@
    "q": "Một bạn viết: \"Hoàng Việt luật lệ ra đời sau nên tiến bộ hơn Quốc triều hình luật.\" Nhận xét nào phù hợp nhất với quan điểm phổ biến?",
    "options": [
     "Không chính xác: Hoàng Việt luật lệ có kỹ thuật chặt chẽ nhưng sao chép nhiều từ luật Thanh, kém tiến bộ hơn về quyền phụ nữ và dân sự",
-    "Đúng hoàn toàn vì luật ra đời sau luôn tiến bộ hơn",
-    "Đúng vì Hoàng Việt luật lệ có nhiều điều hơn",
-    "Không so sánh được"
+    "Đúng hoàn toàn vì luật ra đời sau luôn tiến bộ hơn, nên Hoàng Việt luật lệ có giá trị cao hơn luật trước đó rất nhiều",
+    "Đúng vì Hoàng Việt luật lệ có nhiều điều hơn, mỗi điều đều tiến bộ hơn, đồng thời nới rộng quyền dân sự cho phụ nữ và người nghèo ở mọi vùng",
+    "Không so sánh được vì hai bộ luật thuộc hai thời kỳ khác nhau, không có điểm chung nào và không thể đối chiếu về nội dung chế định"
    ],
    "answer": 0,
    "explain": "Ra đời sau không đồng nghĩa với tiến bộ hơn; cần dựa vào nội dung chế định."

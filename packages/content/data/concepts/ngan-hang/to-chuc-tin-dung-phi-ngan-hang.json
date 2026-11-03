@@ -32,9 +32,9 @@
    "q": "Tổ chức tín dụng phi ngân hàng KHÔNG được thực hiện hoạt động nào?",
    "options": [
     "Nhận tiền gửi của cá nhân",
-    "Cho vay",
-    "Bao thanh toán",
-    "Cho thuê tài chính"
+    "Cho vay ngắn hạn có tín chấp",
+    "Bao thanh toán có truy đòi",
+    "Cho thuê tài chính động sản"
    ],
    "answer": 0,
    "explain": "Khoản 41 Điều 4: trừ nhận tiền gửi của cá nhân và cung ứng dịch vụ thanh toán qua tài khoản.",
@@ -49,9 +49,9 @@
    "q": "Các loại hình tổ chức tín dụng phi ngân hàng?",
    "options": [
     "Công ty tài chính tổng hợp và công ty tài chính chuyên ngành",
-    "Quỹ tín dụng nhân dân và tổ chức tài chính vi mô",
-    "Ngân hàng chính sách và ngân hàng hợp tác xã",
-    "Công ty chứng khoán và công ty bảo hiểm"
+    "Ngân hàng thương mại và ngân hàng liên doanh nước ngoài",
+    "Ngân hàng chính sách và ngân hàng hợp tác xã trên toàn quốc",
+    "Công ty chứng khoán và công ty bảo hiểm nhân thọ"
    ],
    "answer": 0,
    "explain": "Khoản 41 Điều 4.",
@@ -73,6 +73,16 @@
     {
      "text": "Nhận tiền gửi tiết kiệm của cá nhân",
      "answer": "right"
+    },
+    {
+     "text": "Ngân hàng thương mại nhận tiền gửi tiết kiệm của cá nhân",
+     "answer": "left",
+     "basis": "Khoản 41 Điều 4 Luật Các tổ chức tín dụng 2024 (ngoại lệ đối với ngân hàng)"
+    },
+    {
+     "text": "Công ty tài chính cung ứng dịch vụ thanh toán qua tài khoản cho khách hàng",
+     "answer": "right",
+     "basis": "Khoản 41 Điều 4 Luật Các tổ chức tín dụng 2024"
     }
    ],
    "explain": "Khoản 21, 41 Điều 4."
@@ -113,6 +123,18 @@
     "thanh toán qua tài khoản",
     "công ty tài chính"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Các loại hình tổ chức tín dụng phi ngân hàng bao gồm công ty tài chính tổng hợp và công ty tài chính chuyên ngành.",
+   "answer": true,
+   "explain": "Đúng. Khoản 41 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 41 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)",
+    "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-143-2026-VBHN-LQ-VPQH-Luat-Cac-to-chuc-tin-dung-729869.aspx"
+   }
   }
  ]
 }

@@ -32,9 +32,9 @@
    "q": "Kiểm tra văn bản quy phạm pháp luật kết luận về điều gì?",
    "options": [
     "Tính hợp hiến, hợp pháp, thống nhất với hệ thống pháp luật của văn bản được kiểm tra",
-    "Hiệu quả kinh tế của văn bản",
-    "Mức độ hài lòng của người dân",
-    "Tính thẩm mỹ của hình thức"
+    "Hiệu quả kinh tế của văn bản trong thực tiễn áp dụng và chi phí ngân sách hằng năm của cơ quan",
+    "Mức độ hài lòng của người dân đối với cơ quan ban hành văn bản và cán bộ thực thi",
+    "Tính thẩm mỹ của hình thức trình bày, màu sắc, kiểu chữ và bố cục của văn bản"
    ],
    "answer": 0,
    "explain": "Khoản 6 Điều 3.",
@@ -49,9 +49,9 @@
    "q": "Chính phủ kiểm tra theo thẩm quyền văn bản của chủ thể nào?",
    "options": [
     "Bộ trưởng, Thủ trưởng cơ quan ngang Bộ, HĐND và UBND cấp tỉnh, Chủ tịch UBND cấp tỉnh",
-    "Quốc hội",
-    "Chủ tịch nước",
-    "Tòa án nhân dân tối cao"
+    "Quốc hội, Ủy ban Thường vụ Quốc hội, các Hội đồng và các ủy ban của Quốc hội thuộc lĩnh vực",
+    "Chủ tịch nước và Chủ tịch Quốc hội, cùng các thành viên Hội đồng quốc phòng và an ninh",
+    "Tòa án nhân dân tối cao và Viện kiểm sát nhân dân tối cao cùng cấp, theo chỉ đạo của Chính phủ"
    ],
    "answer": 0,
    "explain": "Điểm b khoản 1 Điều 63.",
@@ -73,6 +73,16 @@
     {
      "text": "Đánh giá dự thảo thông tư trước khi Bộ trưởng ký",
      "answer": "right"
+    },
+    {
+     "text": "Cơ quan có thẩm quyền xem xét, kết luận về tính hợp pháp của thông tư đã ban hành",
+     "answer": "left",
+     "basis": "Khoản 6 Điều 3 và Điều 63 Luật Ban hành văn bản quy phạm pháp luật 2025"
+    },
+    {
+     "text": "Cơ quan soạn thảo đánh giá dự thảo quyết định trước khi người có thẩm quyền ký ban hành",
+     "answer": "right",
+     "basis": "Điều 34 Luật Ban hành văn bản quy phạm pháp luật 2025 (thẩm định trước ban hành)"
     }
    ],
    "explain": "Kiểm tra sau ban hành (Điều 63); thẩm định trước ban hành (Điều 34)."
@@ -113,6 +123,18 @@
     "tự kiểm tra",
     "theo thẩm quyền"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Kiểm tra văn bản quy phạm pháp luật là việc xem xét, đánh giá, kết luận về tính hợp hiến, tính hợp pháp, tính thống nhất với hệ thống pháp luật của văn bản được kiểm tra.",
+   "answer": true,
+   "explain": "Đúng. Khoản 6 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 6 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)",
+    "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-54-VBHN-VPQH-2025-Luat-Ban-hanh-van-ban-quy-pham-phap-luat-669858.aspx"
+   }
   }
  ]
 }

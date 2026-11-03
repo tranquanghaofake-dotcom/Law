@@ -29,9 +29,9 @@
    "q": "Theo Điều 94 Hiến pháp 2013, Chính phủ là gì?",
    "options": [
     "Cơ quan hành chính nhà nước cao nhất, thực hiện quyền hành pháp, là cơ quan chấp hành của Quốc hội",
-    "Cơ quan quyền lực nhà nước cao nhất",
-    "Cơ quan đứng đầu Nhà nước",
-    "Cơ quan thường trực của Quốc hội"
+    "Cơ quan quyền lực nhà nước cao nhất, thực hiện quyền lập pháp, là cơ quan của Quốc hội",
+    "Cơ quan đứng đầu Nhà nước, thực hiện quyền lập pháp, quyền tư pháp và quyền hành pháp của Nhà nước",
+    "Cơ quan thường trực của Quốc hội, thực hiện quyền lập pháp và quyền giám sát tối cao"
    ],
    "answer": 0,
    "explain": "Điều 94.",
@@ -47,8 +47,8 @@
    "options": [
     "Hành pháp",
     "Lập pháp",
-    "Tư pháp",
-    "Lập hiến"
+    "Kiểm sát",
+    "Kiểm soát"
    ],
    "answer": 0,
    "explain": "Điều 94; khoản 3 Điều 2.",
@@ -70,6 +70,16 @@
     {
      "text": "Lãnh đạo công tác của Ủy ban nhân dân các cấp",
      "answer": "right"
+    },
+    {
+     "text": "Chính phủ chịu trách nhiệm trước Quốc hội và báo cáo công tác trước Quốc hội",
+     "answer": "left",
+     "basis": "Điều 94 Hiến pháp 2013"
+    },
+    {
+     "text": "Thủ tướng lãnh đạo hệ thống hành chính nhà nước từ trung ương đến địa phương",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 98 Hiến pháp 2013"
     }
    ],
    "explain": "Điều 94, 96."
@@ -110,6 +120,18 @@
     "chấp hành của Quốc hội",
     "chịu trách nhiệm"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chính phủ chịu trách nhiệm trước Quốc hội và báo cáo công tác trước Quốc hội, Ủy ban thường vụ Quốc hội, Chủ tịch nước.",
+   "answer": true,
+   "explain": "Đúng. Điều 94 Hiến pháp 2013 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 94 Hiến pháp 2013",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+   }
   }
  ]
 }

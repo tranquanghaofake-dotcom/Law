@@ -30,7 +30,7 @@
    "options": [
     "Thủ tục đăng ký doanh nghiệp",
     "Hành vi hạn chế cạnh tranh",
-    "Hành vi cạnh tranh không lành mạnh",
+    "Cạnh tranh không lành mạnh",
     "Tố tụng cạnh tranh"
    ],
    "answer": 0,
@@ -45,10 +45,10 @@
    "level": 1,
    "q": "Đơn vị sự nghiệp công lập có thuộc đối tượng áp dụng của Luật Cạnh tranh không?",
    "options": [
-    "Có",
-    "Không",
-    "Chỉ khi có vốn nước ngoài",
-    "Chỉ khi niêm yết"
+    "Có, theo khoản 1 Điều 2 Luật Cạnh tranh",
+    "Không, vì không phải là doanh nghiệp",
+    "Có, nếu có vốn nước ngoài",
+    "Có, nếu đã niêm yết"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 2.",
@@ -74,6 +74,16 @@
     {
      "text": "Cấm lạm dụng vị trí thống lĩnh",
      "answer": "left"
+    },
+    {
+     "text": "Các doanh nghiệp cùng thỏa thuận phân chia thị trường tiêu thụ giữa các bên",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 11 và Điều 1 Luật Cạnh tranh 2018"
+    },
+    {
+     "text": "Lôi kéo khách hàng bằng thông tin gian dối về điều kiện giao dịch của doanh nghiệp",
+     "answer": "right",
+     "basis": "Điểm a khoản 5 Điều 45 và Điều 1 Luật Cạnh tranh 2018"
     }
    ],
    "explain": "Điều 1, 3."

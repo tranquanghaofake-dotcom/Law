@@ -31,7 +31,7 @@
    "options": [
     "Không thành lập tổ chức kinh tế",
     "Phải thành lập công ty liên doanh",
-    "Ký giữa Nhà nước và nhà đầu tư",
+    "Ký giữa Nhà nước và nhà đầu tư tư nhân",
     "Chỉ ký với nhà đầu tư nước ngoài"
    ],
    "answer": 0,
@@ -47,9 +47,9 @@
    "q": "Hợp đồng BCC giữa nhà đầu tư trong nước với nhà đầu tư nước ngoài phải làm thủ tục gì?",
    "options": [
     "Cấp Giấy chứng nhận đăng ký đầu tư theo Điều 26",
-    "Không phải làm thủ tục gì",
-    "Chỉ công chứng hợp đồng",
-    "Đăng ký doanh nghiệp mới"
+    "Không phải làm thủ tục gì vì đã có hợp đồng ký kết",
+    "Chỉ công chứng hợp đồng tại văn phòng công chứng",
+    "Đăng ký thành lập doanh nghiệp mới theo quy định của luật"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 22.",
@@ -71,6 +71,16 @@
     {
      "text": "Hai nhà đầu tư cùng góp vốn lập công ty TNHH",
      "answer": "right"
+    },
+    {
+     "text": "Hai nhà đầu tư trong nước thỏa thuận phân chia lợi nhuận từ một dự án chung theo hợp đồng",
+     "answer": "left",
+     "basis": "Khoản 14 Điều 3 và Điều 22 Luật Đầu tư 2025"
+    },
+    {
+     "text": "Nhà đầu tư góp vốn lập công ty cổ phần mới để cùng kinh doanh",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 18 Luật Đầu tư 2025"
     }
    ],
    "explain": "Khoản 14 Điều 3; Điều 18."

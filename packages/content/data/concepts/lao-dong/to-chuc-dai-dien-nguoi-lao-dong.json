@@ -29,9 +29,9 @@
    "q": "Tổ chức đại diện người lao động tại cơ sở gồm những tổ chức nào?",
    "options": [
     "Công đoàn cơ sở và tổ chức của người lao động tại doanh nghiệp",
-    "Chỉ công đoàn cơ sở",
-    "Hội đồng quản trị và ban kiểm soát",
-    "Phòng nhân sự của doanh nghiệp"
+    "Chỉ công đoàn cơ sở do cấp trên chỉ định cho từng đơn vị",
+    "Hội đồng quản trị và ban kiểm soát của doanh nghiệp",
+    "Phòng nhân sự của doanh nghiệp và bộ phận hành chính nội bộ"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 3.",
@@ -46,9 +46,9 @@
    "q": "Tổ chức đại diện người lao động tại cơ sở được thành lập trên cơ sở nào?",
    "options": [
     "Tự nguyện của người lao động tại một đơn vị sử dụng lao động",
-    "Quyết định của người sử dụng lao động",
-    "Chỉ định của Ủy ban nhân dân",
-    "Bắt buộc theo luật"
+    "Quyết định của người sử dụng lao động và phê duyệt của Sở Nội vụ",
+    "Chỉ định của Ủy ban nhân dân cấp xã tại địa phương có thẩm quyền",
+    "Bắt buộc theo luật đối với mọi đơn vị sử dụng lao động"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 3.",
@@ -70,6 +70,16 @@
     {
      "text": "Tổ chức đại diện, bảo vệ quyền lợi của doanh nghiệp trong quan hệ lao động",
      "answer": "right"
+    },
+    {
+     "text": "Tổ chức được thành lập tự nguyện của người lao động tại một đơn vị sử dụng lao động",
+     "answer": "left",
+     "basis": "Khoản 3 Điều 3 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Tổ chức của người sử dụng lao động tham gia thương lượng tập thể với tổ chức đại diện người lao động",
+     "answer": "right",
+     "basis": "Khoản 4 Điều 3 Bộ luật Lao động 2019"
     }
    ],
    "explain": "Khoản 3, 4 Điều 3."
@@ -110,6 +120,18 @@
     "thương lượng tập thể",
     "công đoàn cơ sở"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tổ chức đại diện người lao động tại cơ sở bao gồm công đoàn cơ sở và tổ chức của người lao động tại doanh nghiệp.",
+   "answer": true,
+   "explain": "Đúng. Khoản 3 Điều 3 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 3 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-18-VBHN-VPQH-2026-Bo-luat-lao-dong-695336.aspx"
+   }
   }
  ]
 }

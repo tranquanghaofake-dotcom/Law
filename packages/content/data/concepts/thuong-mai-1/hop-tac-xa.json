@@ -75,6 +75,11 @@
     {
      "text": "Ít nhất 02 thành viên",
      "answer": "right"
+    },
+    {
+     "text": "Được thành lập bởi ít nhất 05 thành viên chính thức tự nguyện",
+     "answer": "left",
+     "basis": "Khoản 7 Điều 4 Luật Hợp tác xã 2023"
     }
    ],
    "explain": "Khoản 7, 21 Điều 4."

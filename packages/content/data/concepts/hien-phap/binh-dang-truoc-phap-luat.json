@@ -42,12 +42,12 @@
   {
    "type": "mcq",
    "level": 1,
-   "q": "Theo khoản 2 Điều 16, không ai bị phân biệt đối xử trong những lĩnh vực nào?",
+   "q": "Phương án nào liệt kê đầy đủ các lĩnh vực mà theo khoản 2 Điều 16, không ai bị phân biệt đối xử?",
    "options": [
     "Chính trị, dân sự, kinh tế, văn hóa, xã hội",
-    "Chỉ chính trị",
-    "Chỉ kinh tế",
-    "Chỉ trong tố tụng"
+    "Chính trị, dân sự, kinh tế, văn hóa, quốc phòng",
+    "Chính trị, dân sự, kinh tế, văn hóa",
+    "Dân sự, kinh tế, xã hội, tố tụng, thi hành án"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 16.",
@@ -69,6 +69,16 @@
     {
      "text": "\"Mọi người đều bình đẳng trước pháp luật\"",
      "answer": "right"
+    },
+    {
+     "text": "Người nước ngoài đang sinh sống tại Việt Nam cũng được bình đẳng trước pháp luật",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 16 Hiến pháp 2013"
+    },
+    {
+     "text": "Mọi người đều bình đẳng trước pháp luật khi bị xét xử về cùng một hành vi",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 16 Hiến pháp 2013"
     }
    ],
    "explain": "Điều 52 Hiến pháp 1992; Điều 16 Hiến pháp 2013."
@@ -108,6 +118,18 @@
     "bình đẳng",
     "phân biệt đối xử"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Không ai bị phân biệt đối xử trong đời sống chính trị, dân sự, kinh tế, văn hóa, xã hội.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 16 Hiến pháp 2013 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 16 Hiến pháp 2013",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+   }
   }
  ]
 }

@@ -30,9 +30,9 @@
    "q": "Tiền lương theo Điều 90 bao gồm những bộ phận nào?",
    "options": [
     "Mức lương theo công việc hoặc chức danh, phụ cấp lương và các khoản bổ sung khác",
-    "Chỉ mức lương cơ bản",
-    "Lương và tiền thưởng cuối năm",
-    "Lương và bảo hiểm xã hội"
+    "Chỉ mức lương cơ bản do người sử dụng lao động quyết định hằng tháng",
+    "Lương và tiền thưởng cuối năm do doanh nghiệp quyết định theo kết quả kinh doanh",
+    "Lương và bảo hiểm xã hội do người lao động tự đóng hằng tháng theo quy định"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 90.",
@@ -71,6 +71,16 @@
     {
      "text": "Trả lương bình đẳng, không phân biệt giới tính",
      "answer": "right"
+    },
+    {
+     "text": "Khoản bổ sung theo thỏa thuận do người sử dụng lao động trả để thực hiện công việc",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 90 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Người sử dụng lao động phải trả lương trực tiếp, đầy đủ, đúng hạn cho người lao động",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 94 Bộ luật Lao động 2019"
     }
    ],
    "explain": "Điều 90."
@@ -111,6 +121,18 @@
     "tối thiểu",
     "bình đẳng"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mức lương theo công việc hoặc chức danh không được thấp hơn mức lương tối thiểu.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 90 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 90 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-18-VBHN-VPQH-2026-Bo-luat-lao-dong-695336.aspx"
+   }
   }
  ]
 }

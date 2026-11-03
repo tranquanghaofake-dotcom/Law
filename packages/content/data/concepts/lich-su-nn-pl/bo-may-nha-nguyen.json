@@ -77,6 +77,16 @@
     {
      "text": "Nội các giúp vua về văn thư",
      "answer": "right"
+    },
+    {
+     "text": "Hình bộ, đổi từ Khâm hình viện, phụ trách việc xử án, đặt cùng năm phủ sáu bộ",
+     "answer": "left",
+     "basis": "Đại Việt sử ký toàn thư, Bản kỷ quyển XII, Kỷ nhà Lê, năm 1466 (laws/lich-su-su-lieu.txt)"
+    },
+    {
+     "text": "Dưới triều Minh Mạng, các bộ đứng đầu bằng Thượng thư, trực tiếp chịu trách nhiệm trước vua",
+     "answer": "right",
+     "basis": "Giáo trình Lịch sử nhà nước và pháp luật Việt Nam, Trường ĐH Luật Hà Nội 2025 (⚠ chưa đối chiếu nguyên văn), Chương 6"
     }
    ],
    "explain": "Theo trình bày phổ biến của giáo trình."
@@ -105,9 +115,9 @@
    "q": "\"Tứ bất\" của nhà Nguyễn nên được hiểu thế nào khi làm bài?",
    "options": [
     "Là cách nói truyền miệng minh họa mức tập quyền, không phải văn bản luật; nên dùng thận trọng",
-    "Là bốn điều luật trong Hoàng Việt luật lệ",
-    "Là bốn cơ quan của triều đình",
-    "Là bốn bậc của hình phạt"
+    "Là bốn điều luật cốt lõi được ghi trong Hoàng Việt luật lệ của nhà Nguyễn, bắt buộc áp dụng",
+    "Là bốn cơ quan trung ương do triều đình thành lập để giúp vua xử lý mọi việc hành chính",
+    "Là bốn bậc hình phạt được ghi trong Hoàng Việt luật lệ, áp dụng theo thứ tự nặng nhẹ"
    ],
    "answer": 0,
    "explain": "Phân biệt nguồn pháp luật với câu nói dân gian."

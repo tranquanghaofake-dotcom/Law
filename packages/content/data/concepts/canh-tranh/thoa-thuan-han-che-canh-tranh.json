@@ -30,9 +30,9 @@
    "q": "Thỏa thuận hạn chế cạnh tranh có thể tồn tại dưới hình thức nào?",
    "options": [
     "Dưới mọi hình thức",
-    "Chỉ bằng văn bản có chữ ký",
-    "Chỉ khi có công chứng",
-    "Chỉ khi đăng ký với cơ quan nhà nước"
+    "Văn bản có chữ ký của các bên",
+    "Văn bản có công chứng",
+    "Văn bản đã đăng ký với cơ quan nhà nước"
    ],
    "answer": 0,
    "explain": "Khoản 4 Điều 3.",
@@ -48,7 +48,7 @@
    "options": [
     "Khoản 4 Điều 11 (thông đồng đấu thầu)",
     "Khoản 1 Điều 11 (ấn định giá)",
-    "Không phải thỏa thuận hạn chế cạnh tranh",
+    "Không phải thỏa thuận hạn chế",
     "Hành vi cạnh tranh không lành mạnh"
    ],
    "answer": 0,
@@ -71,6 +71,16 @@
     {
      "text": "Nhà sản xuất ấn định giá bán lại cho nhà phân phối",
      "answer": "right"
+    },
+    {
+     "text": "Các cửa hàng xăng cùng khu vực thống nhất mức giá bán lẻ xăng",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 11 và khoản 1 Điều 12 Luật Cạnh tranh 2018"
+    },
+    {
+     "text": "Nhà cung cấp quy định nhà phân phối ở công đoạn sau chỉ được bán trong khu vực đã định",
+     "answer": "right",
+     "basis": "Khoản 4 Điều 12 Luật Cạnh tranh 2018"
     }
    ],
    "explain": "Điều 12."
@@ -111,6 +121,18 @@
     "phân chia",
     "đấu thầu"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thỏa thuận hạn chế cạnh tranh là hành vi thỏa thuận giữa các bên dưới mọi hình thức gây tác động hoặc có khả năng gây tác động hạn chế cạnh tranh.",
+   "answer": true,
+   "explain": "Đúng. Khoản 4 Điều 3 Luật Cạnh tranh 2018 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 3 Luật Cạnh tranh 2018",
+    "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx"
+   }
   }
  ]
 }

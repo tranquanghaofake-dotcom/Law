@@ -29,9 +29,9 @@
    "q": "Giao dịch dân sự của người chưa đủ 6 tuổi do ai xác lập, thực hiện?",
    "options": [
     "Người đại diện theo pháp luật",
-    "Chính người đó",
-    "Ủy ban nhân dân xã",
-    "Tòa án"
+    "Chính người đó, không ai đồng ý",
+    "Ủy ban nhân dân cấp xã nơi cư trú",
+    "Tòa án tuyên bố và chỉ định người"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 21.",
@@ -46,9 +46,9 @@
    "q": "Người 16 tuổi muốn bán xe máy của mình thì cần điều kiện gì?",
    "options": [
     "Được người đại diện theo pháp luật đồng ý",
-    "Không cần ai đồng ý",
-    "Phải đợi đủ 18 tuổi mới được bán",
-    "Phải được Tòa án cho phép"
+    "Không cần ai đồng ý vì đủ tuổi lao động",
+    "Phải đợi đủ 18 tuổi mới được bán xe",
+    "Phải được Tòa án cho phép bằng quyết định riêng"
    ],
    "answer": 0,
    "explain": "Khoản 4 Điều 21: giao dịch liên quan động sản phải đăng ký cần người đại diện đồng ý.",
@@ -74,6 +74,11 @@
     {
      "text": "Người 16 tuổi bán căn nhà được tặng",
      "answer": "left"
+    },
+    {
+     "text": "Người 15 tuổi mua vé xe buýt phục vụ việc đi học hằng ngày",
+     "answer": "right",
+     "basis": "Khoản 4 Điều 21 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Khoản 3, 4 Điều 21."
@@ -114,6 +119,18 @@
     "sinh hoạt hàng ngày",
     "bất động sản"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Giao dịch dân sự của người chưa đủ sáu tuổi do người đại diện theo pháp luật của người đó xác lập, thực hiện.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 21 Bộ luật Dân sự 2015 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 21 Bộ luật Dân sự 2015",
+    "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+   }
   }
  ]
 }

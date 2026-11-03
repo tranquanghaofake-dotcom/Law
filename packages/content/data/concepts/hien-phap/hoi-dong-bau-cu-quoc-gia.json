@@ -47,9 +47,9 @@
    "q": "Hội đồng bầu cử quốc gia có bao nhiêu thành viên theo Luật Bầu cử?",
    "options": [
     "Từ mười lăm đến hai mươi mốt thành viên",
-    "Từ năm đến chín thành viên",
-    "Đúng mười một thành viên",
-    "Không giới hạn"
+    "Từ năm đến chín thành viên và thư ký",
+    "Đúng mười một thành viên trong mỗi kỳ",
+    "Không giới hạn số lượng thành viên"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 12 Luật Bầu cử.",
@@ -71,6 +71,16 @@
     {
      "text": "Hội đồng bầu cử quốc gia chỉ đạo, hướng dẫn",
      "answer": "right"
+    },
+    {
+     "text": "Hội đồng bầu cử quốc gia do Quốc hội thành lập để tổ chức việc bầu ra đại biểu Quốc hội",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 117 Hiến pháp 2013"
+    },
+    {
+     "text": "Hội đồng bầu cử quốc gia chỉ đạo, hướng dẫn công tác bầu ra đại biểu Hội đồng nhân dân các cấp",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 117 Hiến pháp 2013"
     }
    ],
    "explain": "Khoản 1 Điều 117 Hiến pháp 2013."

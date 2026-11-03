@@ -46,8 +46,8 @@
    "options": [
     "Sau khi được Ủy ban Chứng khoán Nhà nước chấp thuận",
     "Khi hội viên biểu quyết, không cần ai chấp thuận",
-    "Sau khi Quốc hội thông qua",
-    "Sau khi Sở giao dịch phê duyệt"
+    "Sau khi Quốc hội thông qua nghị quyết hợp lệ về đạo đức",
+    "Sau khi Sở giao dịch phê duyệt và công bố trên trang web"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 10.",
@@ -73,6 +73,11 @@
     {
      "text": "Giám sát tổ chức xã hội - nghề nghiệp",
      "answer": "right"
+    },
+    {
+     "text": "Hiệp hội nghề nghiệp về chứng khoán ban hành bộ quy tắc đạo đức sau khi được Ủy ban chấp thuận",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 10 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Điều 9 và Điều 10."

@@ -47,9 +47,9 @@
    "q": "Ủy ban nhân dân cấp tỉnh ban hành quyết định để quy định nội dung nào?",
    "options": [
     "Chi tiết nội dung được giao; biện pháp thi hành văn bản cấp trên và nghị quyết HĐND cùng cấp; biện pháp quản lý nhà nước ở địa phương",
-    "Tội phạm và hình phạt",
-    "Thuế mới",
-    "Thí điểm chính sách khác luật"
+    "Tội phạm và hình phạt, thủ tục tố tụng hình sự, quyền bào chữa, quyền bất khả xâm phạm và thời hiệu truy cứu trách nhiệm hình sự",
+    "Thuế mới đánh vào hàng hóa nhập khẩu, thu phí môi trường trên toàn quốc và quyền của doanh nghiệp nước ngoài tại Việt Nam",
+    "Thí điểm chính sách khác luật hiện hành trên toàn quốc, không cần Quốc hội cho phép trước và không báo cáo sau khi thực hiện kết quả"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 21.",
@@ -71,6 +71,16 @@
     {
      "text": "Biện pháp thi hành nghị quyết của HĐND cùng cấp",
      "answer": "right"
+    },
+    {
+     "text": "Hội đồng nhân dân tỉnh quy định thí điểm chính sách theo luật tổ chức chính quyền địa phương",
+     "answer": "left",
+     "basis": "Điểm d khoản 1 Điều 21 Luật Ban hành văn bản quy phạm pháp luật 2025"
+    },
+    {
+     "text": "Ủy ban nhân dân tỉnh quy định biện pháp thực hiện chức năng quản lý nhà nước ở địa phương",
+     "answer": "right",
+     "basis": "Điểm c khoản 2 Điều 21 Luật Ban hành văn bản quy phạm pháp luật 2025"
     }
    ],
    "explain": "Điểm c khoản 1 và điểm b khoản 2 Điều 21."

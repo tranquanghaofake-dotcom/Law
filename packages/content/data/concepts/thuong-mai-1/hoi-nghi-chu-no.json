@@ -31,9 +31,9 @@
    "q": "Nghị quyết của Hội nghị chủ nợ được thông qua khi nào?",
    "options": [
     "Số chủ nợ đại diện cho từ 65% tổng số nợ không có bảo đảm trở lên tán thành",
-    "Quá nửa tổng số chủ nợ có mặt tán thành",
-    "Toàn bộ chủ nợ tán thành",
-    "Thẩm phán đồng ý"
+    "Quá nửa tổng số chủ nợ có mặt tán thành, không cần xét đến số nợ",
+    "Toàn bộ chủ nợ có bảo đảm và không có bảo đảm đều phải tán thành bằng văn bản",
+    "Thẩm phán đồng ý bằng văn bản sau khi xem xét đầy đủ hồ sơ vụ việc và ý kiến các bên"
    ],
    "answer": 0,
    "explain": "Khoản 5 Điều 61.",
@@ -72,6 +72,16 @@
     {
      "text": "Biểu quyết theo số cổ phần",
      "answer": "right"
+    },
+    {
+     "text": "Nghị quyết thông qua khi chủ nợ đại diện từ 65% tổng số nợ không có bảo đảm trở lên",
+     "answer": "left",
+     "basis": "Khoản 5 Điều 61 Luật Phục hồi, phá sản 2025"
+    },
+    {
+     "text": "Cơ quan quyết định cao nhất của công ty cổ phần thông qua nghị quyết theo tỷ lệ cổ phần có quyền biểu quyết",
+     "answer": "right",
+     "basis": "Luật Doanh nghiệp 2020 (biểu quyết theo số cổ phần; chưa đối chiếu điều cụ thể)"
     }
    ],
    "explain": "Điều 61 Luật Phục hồi, phá sản; Luật Doanh nghiệp."
@@ -112,6 +122,18 @@
     "không có bảo đảm",
     "bắt buộc"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Nghị quyết của Hội nghị chủ nợ thông qua khi có số chủ nợ đại diện cho từ 65% tổng số nợ không có bảo đảm trở lên biểu quyết tán thành.",
+   "answer": true,
+   "explain": "Đúng. Khoản 5 Điều 61 Luật Phục hồi, phá sản 2025 (142/2025/QH15) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 5 Điều 61 Luật Phục hồi, phá sản 2025 (142/2025/QH15)",
+    "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-Phuc-hoi-pha-san-2025-so-142-2025-QH15-675210.aspx"
+   }
   }
  ]
 }

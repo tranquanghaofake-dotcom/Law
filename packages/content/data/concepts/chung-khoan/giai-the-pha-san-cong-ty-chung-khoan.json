@@ -29,9 +29,9 @@
    "q": "Việc phá sản công ty chứng khoán thực hiện theo luật nào?",
    "options": [
     "Pháp luật về phục hồi, phá sản",
-    "Luật Doanh nghiệp",
-    "Bộ luật Dân sự",
-    "Luật Các tổ chức tín dụng"
+    "Luật Doanh nghiệp về giải thể",
+    "Bộ luật Dân sự và quy định",
+    "Luật Các tổ chức tín dụng 2024"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 96 (sửa đổi bởi Luật Phục hồi, phá sản 142/2025/QH15).",
@@ -46,9 +46,9 @@
    "q": "Việc giải thể công ty chứng khoán thực hiện theo luật nào?",
    "options": [
     "Luật Chứng khoán và Luật Doanh nghiệp",
-    "Chỉ Luật Doanh nghiệp",
-    "Pháp luật về phục hồi, phá sản",
-    "Luật Đầu tư"
+    "Chỉ Luật Doanh nghiệp và quy chế riêng",
+    "Pháp luật về phục hồi và phá sản",
+    "Luật Đầu tư và văn bản hướng dẫn"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 96.",
@@ -68,8 +68,18 @@
      "answer": "left"
     },
     {
-     "text": "Theo pháp luật về phục hồi, phá sản",
+     "text": "Công ty chứng khoán bị Tòa án tuyên bố chấm dứt hoạt động khi không còn khả năng trả nợ đến hạn",
      "answer": "right"
+    },
+    {
+     "text": "Công ty chứng khoán tự nguyện chấm dứt hoạt động theo nghị quyết của Đại hội đồng cổ đông",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 96 Luật Chứng khoán 2019"
+    },
+    {
+     "text": "Chủ nợ nộp đơn yêu cầu Tòa án giải quyết vì công ty chứng khoán mất khả năng thanh toán nợ đến hạn",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 96 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 1 và khoản 3 Điều 96."

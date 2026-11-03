@@ -31,7 +31,7 @@
    "options": [
     "Hợp đồng lao động",
     "Hợp đồng dịch vụ dân sự",
-    "Hợp đồng vô hiệu",
+    "Hợp đồng lao động vô hiệu toàn bộ",
     "Hợp đồng thương mại"
    ],
    "answer": 0,
@@ -47,9 +47,9 @@
    "q": "Người sử dụng lao động phải giao kết hợp đồng lao động khi nào?",
    "options": [
     "Trước khi nhận người lao động vào làm việc",
-    "Sau 2 tháng làm việc",
-    "Khi người lao động yêu cầu",
-    "Sau khi hết thử việc mới bắt buộc"
+    "Sau 2 tháng làm việc liên tục đầu tiên",
+    "Khi người lao động yêu cầu bằng văn bản",
+    "Sau khi hết thử việc mới bắt buộc phải ký"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 13.",
@@ -71,6 +71,16 @@
     {
      "text": "Bên làm dịch vụ tự quyết định cách thực hiện, chỉ giao kết quả",
      "answer": "right"
+    },
+    {
+     "text": "Thỏa thuận có trả công, tiền lương và sự quản lý, giám sát, dù hai bên gọi bằng tên khác",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 13 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Bên cung ứng tự thực hiện công việc theo thỏa thuận, bên thuê trả tiền dịch vụ, không quản lý điều hành",
+     "answer": "right",
+     "basis": "Điều 513 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 13 BLLĐ; Điều 513 BLDS."
@@ -111,6 +121,18 @@
     "giám sát",
     "tên gọi khác"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hợp đồng lao động là sự thỏa thuận giữa người lao động và người sử dụng lao động về việc làm có trả công, tiền lương, điều kiện lao động, quyền và nghĩa vụ của mỗi bên trong quan hệ lao động.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 13 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 13 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-18-VBHN-VPQH-2026-Bo-luat-lao-dong-695336.aspx"
+   }
   }
  ]
 }

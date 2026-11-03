@@ -46,7 +46,7 @@
    "q": "Tuổi bầu cử, ứng cử được tính đến thời điểm nào theo Luật Bầu cử?",
    "options": [
     "Ngày bầu cử được công bố",
-    "Ngày lập danh sách cử tri",
+    "Ngày lập danh sách bầu",
     "Ngày nộp hồ sơ ứng cử",
     "Ngày 01/01 năm bầu cử"
    ],
@@ -74,6 +74,16 @@
     {
      "text": "Tuổi có quyền biểu quyết khi trưng cầu ý dân",
      "answer": "left"
+    },
+    {
+     "text": "Công dân đủ mười tám tuổi trở lên có quyền bầu cử vào Quốc hội và Hội đồng nhân dân",
+     "answer": "left",
+     "basis": "Điều 27 Hiến pháp 2013"
+    },
+    {
+     "text": "Công dân dưới hai mươi mốt tuổi không có quyền ứng cử vào Quốc hội",
+     "answer": "right",
+     "basis": "Điều 27 Hiến pháp 2013"
     }
    ],
    "explain": "Điều 27, 29 Hiến pháp 2013."

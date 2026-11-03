@@ -71,6 +71,16 @@
     {
      "text": "Chia lợi nhuận cho thành viên công ty",
      "answer": "right"
+    },
+    {
+     "text": "Doanh nghiệp kê khai và nộp thuế giá trị gia tăng cho cơ quan thuế",
+     "answer": "left",
+     "basis": "Khoản 10 Điều 4 Luật Doanh nghiệp 2020 (khái niệm doanh nghiệp); cách phân loại quan hệ theo giáo trình, chưa đối chiếu nguyên văn"
+    },
+    {
+     "text": "Cổ đông nhận cổ tức từ lợi nhuận sau thuế của công ty cổ phần",
+     "answer": "right",
+     "basis": "Khoản 5 Điều 4 Luật Doanh nghiệp 2020 (khái niệm cổ tức); cách phân loại quan hệ theo giáo trình, chưa đối chiếu nguyên văn"
     }
    ],
    "explain": "Học thuyết pháp luật tài chính doanh nghiệp."
@@ -111,6 +121,18 @@
     "kinh doanh",
     "chủ sở hữu"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Doanh nghiệp là tổ chức có tên riêng, có tài sản, có trụ sở giao dịch, được thành lập hoặc đăng ký thành lập theo quy định của pháp luật nhằm mục đích kinh doanh.",
+   "answer": true,
+   "explain": "Đúng. Khoản 10 Điều 4 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 10 Điều 4 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+    "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+   }
   }
  ]
 }

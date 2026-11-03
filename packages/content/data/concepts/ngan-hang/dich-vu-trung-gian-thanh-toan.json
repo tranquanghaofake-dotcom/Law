@@ -31,9 +31,9 @@
    "q": "Dịch vụ trung gian thanh toán là hoạt động gì?",
    "options": [
     "Làm trung gian kết nối, truyền dẫn và xử lý dữ liệu điện tử các giao dịch thanh toán",
-    "Nhận tiền gửi không kỳ hạn của cá nhân",
-    "Cho vay tiêu dùng trực tuyến",
-    "Phát hành tiền điện tử thay tiền đồng"
+    "Nhận tiền gửi không kỳ hạn của cá nhân và tổ chức để cho vay ngắn hạn và đầu tư",
+    "Cho vay tiêu dùng trực tuyến qua ứng dụng di động của khách hàng cá nhân",
+    "Phát hành tiền điện tử thay thế tiền đồng và quản lý toàn bộ hệ thống thanh toán"
    ],
    "answer": 0,
    "explain": "Khoản 10 Điều 6.",
@@ -48,9 +48,9 @@
    "q": "Dịch vụ trung gian thanh toán kết nối giữa những chủ thể nào?",
    "options": [
     "Tổ chức cung ứng dịch vụ thanh toán và người sử dụng dịch vụ thanh toán",
-    "Ngân hàng Nhà nước và Quốc hội",
-    "Hai tổ chức tín dụng phi ngân hàng",
-    "Bên vay và bên bảo lãnh"
+    "Ngân hàng Nhà nước, Quốc hội và các cơ quan quản lý thuế trung ương",
+    "Hai tổ chức tín dụng phi ngân hàng cùng cung ứng dịch vụ cho nhau",
+    "Bên vay và bên bảo lãnh trong hợp đồng tín dụng thương mại thông thường"
    ],
    "answer": 0,
    "explain": "Khoản 10 Điều 6.",
@@ -72,6 +72,16 @@
     {
      "text": "Ngân hàng thực hiện ủy nhiệm thu trên tài khoản của khách",
      "answer": "right"
+    },
+    {
+     "text": "Công ty kết nối và xử lý dữ liệu giao dịch thanh toán giữa ngân hàng và người bán",
+     "answer": "left",
+     "basis": "Khoản 10 Điều 6 Luật Ngân hàng Nhà nước 2010"
+    },
+    {
+     "text": "Ngân hàng nhận lệnh chi từ tài khoản thanh toán của khách để trả tiền cho nhà cung cấp",
+     "answer": "right",
+     "basis": "Khoản 14 Điều 4 Luật Các tổ chức tín dụng 2024"
     }
    ],
    "explain": "Khoản 10 Điều 6 Luật Ngân hàng Nhà nước; khoản 14 Điều 4 Luật TCTD."
@@ -112,6 +122,18 @@
     "tổ chức cung ứng",
     "người sử dụng"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Dịch vụ trung gian thanh toán là hoạt động làm trung gian kết nối, truyền dẫn và xử lý dữ liệu điện tử các giao dịch thanh toán giữa tổ chức cung ứng dịch vụ thanh toán và người sử dụng dịch vụ thanh toán.",
+   "answer": true,
+   "explain": "Đúng. Khoản 10 Điều 6 Luật Ngân hàng Nhà nước Việt Nam 2010 (VBHN 141/2026/VBHN-LQ-VPQH) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 10 Điều 6 Luật Ngân hàng Nhà nước Việt Nam 2010 (VBHN 141/2026/VBHN-LQ-VPQH)",
+    "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-141-2026-VBHN-LQ-VPQH-Luat-Ngan-hang-Nha-nuoc-Viet-Nam-726674.aspx"
+   }
   }
  ]
 }

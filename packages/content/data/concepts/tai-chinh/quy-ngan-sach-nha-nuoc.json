@@ -30,9 +30,9 @@
    "q": "Quỹ ngân sách nhà nước là gì?",
    "options": [
     "Toàn bộ các khoản tiền của Nhà nước, kể cả tiền vay, có trên tài khoản của ngân sách nhà nước các cấp tại một thời điểm",
-    "Quỹ dự trữ ngoại hối",
-    "Toàn bộ tài sản công",
-    "Quỹ bảo hiểm xã hội"
+    "Toàn bộ số dư tiền gửi của các quỹ bảo hiểm xã hội và quỹ dự trữ ngoại hối tại các ngân hàng thương mại, không gồm tiền vay",
+    "Toàn bộ tài sản công do các cơ quan nhà nước quản lý, sử dụng, gồm đất đai, trụ sở, phương tiện và tài sản kết cấu hạ tầng",
+    "Toàn bộ các khoản tiền đóng góp của người lao động và người sử dụng lao động vào quỹ hưu trí và tử tuất tại một thời điểm"
    ],
    "answer": 0,
    "explain": "Khoản 22 Điều 4.",
@@ -71,6 +71,16 @@
     {
      "text": "Tiền gửi của tổ chức kinh tế tại Kho bạc",
      "answer": "right"
+    },
+    {
+     "text": "Khoản tiền vay còn trên tài khoản ngân sách trung ương tại một thời điểm",
+     "answer": "left",
+     "basis": "Khoản 22 Điều 4 Luật Ngân sách nhà nước 2025"
+    },
+    {
+     "text": "Khoản tiền vay còn trên tài khoản ngân sách cấp tỉnh tại một thời điểm",
+     "answer": "left",
+     "basis": "Khoản 22 Điều 4 Luật Ngân sách nhà nước 2025"
     }
    ],
    "explain": "Khoản 22 Điều 4; khoản 1 Điều 64."
@@ -111,6 +121,18 @@
     "Kho bạc",
     "tiền gửi"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quỹ ngân sách nhà nước là toàn bộ các khoản tiền của Nhà nước, kể cả tiền vay có trên tài khoản của ngân sách nhà nước các cấp tại một thời điểm.",
+   "answer": true,
+   "explain": "Đúng. Khoản 22 Điều 4 Luật Ngân sách nhà nước 2025 (89/2025/QH15) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 22 Điều 4 Luật Ngân sách nhà nước 2025 (89/2025/QH15)",
+    "url": "https://thuvienphapluat.vn/van-ban/Tai-chinh-nha-nuoc/Luat-ngan-sach-nha-nuoc-2025-so-89-2025-QH15-650061.aspx"
+   }
   }
  ]
 }

@@ -29,9 +29,9 @@
    "q": "Theo Điều 33 Hiến pháp 2013, mọi người có quyền tự do kinh doanh trong phạm vi nào?",
    "options": [
     "Những ngành nghề mà pháp luật không cấm",
-    "Chỉ những ngành nghề được Nhà nước cho phép",
-    "Chỉ ngành nghề có giấy phép",
-    "Mọi ngành nghề không giới hạn"
+    "Ngành nghề thuộc danh mục Nhà nước cho phép",
+    "Những ngành nghề đã được cấp giấy phép kinh doanh",
+    "Ngành nghề tự xác định, không phụ thuộc pháp luật"
    ],
    "answer": 0,
    "explain": "Điều 33.",
@@ -46,7 +46,7 @@
    "q": "Nguyên tắc nào được thể hiện ở Điều 33 Hiến pháp 2013?",
    "options": [
     "Được làm những gì pháp luật không cấm",
-    "Chỉ được làm những gì pháp luật cho phép",
+    "Chỉ được làm những gì luật cho phép",
     "Nhà nước độc quyền kinh doanh",
     "Kinh doanh phải xin phép"
    ],
@@ -70,6 +70,16 @@
     {
      "text": "Mọi người tự do kinh doanh ngành nghề pháp luật không cấm",
      "answer": "right"
+    },
+    {
+     "text": "Quyền tự do kinh doanh là quyền hiến định của mọi người",
+     "answer": "right",
+     "basis": "Điều 33 Hiến pháp 2013"
+    },
+    {
+     "text": "Doanh nghiệp được tự do lựa chọn ngành nghề kinh doanh mà luật không cấm",
+     "answer": "right",
+     "basis": "Điều 33 Hiến pháp 2013"
     }
    ],
    "explain": "Tiến trình pháp luật về tự do kinh doanh."
@@ -110,6 +120,18 @@
     "không cấm",
     "luật"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi người có quyền tự do kinh doanh trong những ngành nghề mà pháp luật không cấm.",
+   "answer": true,
+   "explain": "Đúng. Điều 33 Hiến pháp 2013 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 33 Hiến pháp 2013",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+   }
   }
  ]
 }

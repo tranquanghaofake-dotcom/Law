@@ -32,9 +32,9 @@
    "q": "Quyền nào của doanh nghiệp được ghi tại khoản 3 Điều 7?",
    "options": [
     "Lựa chọn hình thức, phương thức huy động, phân bổ và sử dụng vốn",
-    "Được miễn thuế khi mới thành lập",
-    "Được Nhà nước cấp vốn",
-    "Được vay ngân hàng không cần bảo đảm"
+    "Được miễn thuế thu nhập doanh nghiệp vĩnh viễn khi mới thành lập công ty",
+    "Được Nhà nước cấp vốn điều lệ không cần hoàn trả trong mọi trường hợp",
+    "Được vay ngân hàng không cần bảo đảm tiền vay và không phải trả lãi"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 7.",
@@ -49,9 +49,9 @@
    "q": "Doanh nghiệp có quyền từ chối yêu cầu nào?",
    "options": [
     "Yêu cầu cung cấp nguồn lực không theo quy định của pháp luật",
-    "Yêu cầu nộp thuế theo luật",
-    "Yêu cầu công bố thông tin bắt buộc",
-    "Yêu cầu kiểm toán theo luật"
+    "Yêu cầu nộp thuế theo quy định của pháp luật",
+    "Yêu cầu công bố thông tin bắt buộc theo quy định của luật",
+    "Yêu cầu kiểm toán báo cáo tài chính hằng năm theo luật"
    ],
    "answer": 0,
    "explain": "Khoản 9 Điều 7.",
@@ -73,6 +73,16 @@
     {
      "text": "Từ chối nộp thuế đã phát sinh",
      "answer": "right"
+    },
+    {
+     "text": "Doanh nghiệp tự quyết định hình thức huy động và phân bổ vốn",
+     "answer": "left",
+     "basis": "Khoản 3 Điều 7 Luật Doanh nghiệp 2020"
+    },
+    {
+     "text": "Giám đốc tự ý dùng vốn của cổ đông để chi tiêu cho mục đích cá nhân",
+     "answer": "right",
+     "basis": "Điều 7 Luật Doanh nghiệp 2020 (không liệt kê là quyền của doanh nghiệp)"
     }
    ],
    "explain": "Điều 7, Điều 8 Luật Doanh nghiệp."

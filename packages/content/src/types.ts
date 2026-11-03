@@ -17,7 +17,8 @@ export type ItemPair = {
   level: 2;
   left: string;
   right: string;
-  cases: { text: string; answer: 'left' | 'right' }[];
+  /** basis (đợt 7, tuỳ chọn): căn cứ điều/khoản của riêng tình huống. */
+  cases: { text: string; answer: 'left' | 'right'; basis?: string }[];
   explain: string;
 };
 export type ItemCloze = {

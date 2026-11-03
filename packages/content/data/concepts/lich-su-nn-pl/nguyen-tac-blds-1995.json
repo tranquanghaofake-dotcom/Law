@@ -31,9 +31,9 @@
    "q": "Theo Điều 14 BLDS 1995, khi pháp luật không quy định và các bên không có thỏa thuận thì áp dụng gì?",
    "options": [
     "Tập quán hoặc quy định tương tự của pháp luật, không trái các nguyên tắc của Bộ luật",
-    "Án lệ nước ngoài",
-    "Ý kiến của Ủy ban nhân dân",
-    "Không giải quyết"
+    "Án lệ của các nước phương Tây được áp dụng bắt buộc, không cần xét đến nguyên tắc của Bộ luật",
+    "Ý kiến của Ủy ban nhân dân xã nơi cư trú của các bên có liên quan đến vụ việc",
+    "Không giải quyết, đình chỉ vụ việc và chờ đến khi có văn bản pháp luật mới"
    ],
    "answer": 0,
    "explain": "Điều 14.",
@@ -48,9 +48,9 @@
    "q": "Theo Điều 7 BLDS 1995, cam kết, thỏa thuận hợp pháp có hiệu lực như thế nào?",
    "options": [
     "Bắt buộc thực hiện đối với các bên",
-    "Chỉ có giá trị tham khảo",
+    "Là gợi ý, các bên có thể không theo",
     "Chỉ có hiệu lực khi được công chứng",
-    "Do Tòa án quyết định có hiệu lực hay không"
+    "Tòa án quyết định hiệu lực từng vụ"
    ],
    "answer": 0,
    "explain": "Điều 7.",
@@ -72,6 +72,16 @@
     {
      "text": "Chỉ hành vi được luật quy định mới là tội phạm",
      "answer": "right"
+    },
+    {
+     "text": "Trong quan hệ dân sự các bên hoàn toàn tự nguyện, không bên nào được áp đặt",
+     "answer": "left",
+     "basis": "Bộ luật Dân sự 1995, Điều 7 (laws/lich-su-su-lieu.txt)"
+    },
+    {
+     "text": "Chỉ người nào phạm một tội đã được quy định trong luật về tội phạm và hình phạt mới phải chịu trách nhiệm hình sự",
+     "answer": "right",
+     "basis": "Bộ luật Hình sự 1985, Điều 2 (laws/lich-su-su-lieu.txt)"
     }
    ],
    "explain": "Điều 14 BLDS 1995; Điều 2 BLHS 1985."

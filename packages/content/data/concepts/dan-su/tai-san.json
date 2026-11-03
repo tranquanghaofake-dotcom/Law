@@ -25,12 +25,12 @@
   {
    "type": "mcq",
    "level": 1,
-   "q": "Theo Điều 105, tài sản gồm những loại nào?",
+   "q": "Phương án nào liệt kê đầy đủ các loại tài sản theo Điều 105?",
    "options": [
     "Vật, tiền, giấy tờ có giá và quyền tài sản",
-    "Chỉ vật và tiền",
-    "Vật, tiền và sức lao động",
-    "Chỉ bất động sản"
+    "Vật, tiền, giấy tờ có giá và quyền nhân thân",
+    "Vật, tiền, sức lao động và các quyền nhân thân",
+    "Bất động sản và động sản đã được đăng ký"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 105.",
@@ -69,6 +69,16 @@
     {
      "text": "Căn hộ đang xây dựng chưa hoàn thành",
      "answer": "right"
+    },
+    {
+     "text": "Chiếc tủ lạnh đang nằm trong nhà của bạn",
+     "answer": "left",
+     "basis": "Điều 105 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Mùa vụ lúa chưa gieo trồng, bên mua đặt trước việc mua toàn bộ sản lượng",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 108 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Khoản 2 Điều 105; Điều 108."

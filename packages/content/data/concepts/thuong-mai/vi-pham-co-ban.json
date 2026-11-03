@@ -28,9 +28,9 @@
    "q": "Vi phạm cơ bản là gì?",
    "options": [
     "Vi phạm gây thiệt hại đến mức bên kia không đạt được mục đích của việc giao kết hợp đồng",
-    "Mọi vi phạm về thời hạn",
-    "Vi phạm lần đầu",
-    "Vi phạm có giá trị trên 8%"
+    "Mọi vi phạm về thời hạn giao hàng và thanh toán của các bên trong hợp đồng, không ngoại lệ",
+    "Vi phạm lần đầu, không gây thiệt hại đáng kể cho bên kia trong thời gian thực hiện hợp đồng",
+    "Vi phạm có giá trị trên tám phần trăm tổng giá trị hợp đồng đã ký kết giữa các bên"
    ],
    "answer": 0,
    "explain": "Khoản 13 Điều 3.",
@@ -45,9 +45,9 @@
    "q": "Chế tài hủy bỏ hợp đồng được áp dụng khi nào (trừ trường hợp miễn trách nhiệm)?",
    "options": [
     "Xảy ra vi phạm là điều kiện hủy bỏ đã thỏa thuận hoặc một bên vi phạm cơ bản",
-    "Bất kỳ vi phạm nào",
-    "Chỉ khi Tòa án cho phép",
-    "Khi một bên muốn"
+    "Khi có vi phạm nhỏ không gây thiệt hại đáng kể, nếu bên kia yêu cầu",
+    "Khi Tòa án cho phép và có quyết định bằng văn bản của Tòa án tuyên bố hủy",
+    "Khi một bên muốn chấm dứt hợp đồng với lý do cá nhân và không báo trước cho bên kia"
    ],
    "answer": 0,
    "explain": "Khoản 4 Điều 312.",
@@ -69,6 +69,16 @@
     {
      "text": "Giao chậm 1 ngày, không ảnh hưởng mục đích sử dụng",
      "answer": "right"
+    },
+    {
+     "text": "Bên bán giao hàng không đúng chủng loại, khiến bên mua mất hoàn toàn mục đích mua",
+     "answer": "left",
+     "basis": "Khoản 13 Điều 3 Luật Thương mại 2005"
+    },
+    {
+     "text": "Bên bán giao thiếu một phần nhỏ hàng, không ảnh hưởng đến mục đích sử dụng",
+     "answer": "right",
+     "basis": "Khoản 13 Điều 3 Luật Thương mại 2005"
     }
    ],
    "explain": "Khoản 13 Điều 3."
@@ -109,6 +119,18 @@
     "điều kiện thỏa thuận",
     "một phần"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hủy bỏ hợp đồng bao gồm hủy bỏ toàn bộ hợp đồng và hủy bỏ một phần hợp đồng.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 312 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 312 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)",
+    "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+   }
   }
  ]
 }

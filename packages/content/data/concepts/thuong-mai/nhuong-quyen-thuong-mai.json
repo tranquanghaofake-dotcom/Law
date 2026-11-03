@@ -29,9 +29,9 @@
    "q": "Trong nhượng quyền thương mại, ai tiến hành việc mua bán hàng hóa?",
    "options": [
     "Bên nhận quyền tự mình tiến hành",
-    "Bên nhượng quyền",
-    "Bên môi giới",
-    "Nhà nước"
+    "Bên nhượng quyền trực tiếp tiến hành",
+    "Bên môi giới thực hiện giúp hai bên",
+    "Nhà nước trực tiếp tổ chức quản lý"
    ],
    "answer": 0,
    "explain": "Điều 284.",
@@ -46,9 +46,9 @@
    "q": "Quyền của bên nhượng quyền đối với bên nhận quyền theo khoản 2 Điều 284 là gì?",
    "options": [
     "Kiểm soát và trợ giúp trong việc điều hành kinh doanh",
-    "Không có quyền gì sau khi ký",
-    "Thu toàn bộ lợi nhuận",
-    "Điều hành trực tiếp thay bên nhận quyền"
+    "Không có quyền gì sau khi ký hợp đồng nhượng quyền",
+    "Thu toàn bộ lợi nhuận của bên nhận quyền mỗi năm",
+    "Điều hành trực tiếp thay bên nhận quyền mọi việc"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 284.",
@@ -70,6 +70,16 @@
     {
      "text": "Cửa hàng bán hàng của hãng, hàng vẫn thuộc sở hữu hãng",
      "answer": "right"
+    },
+    {
+     "text": "Bên nhận quyền phải mua bán theo cách thức và nhãn hiệu do bên nhượng quyền quy định",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 284 Luật Thương mại 2005"
+    },
+    {
+     "text": "Bên đại lý nhân danh chính mình mua bán hàng hóa cho bên giao đại lý",
+     "answer": "right",
+     "basis": "Điều 166 Luật Thương mại 2005"
     }
    ],
    "explain": "Điều 166, 284."
@@ -110,6 +120,18 @@
     "nhãn hiệu",
     "kiểm soát"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Bên nhượng quyền có quyền kiểm soát và trợ giúp cho bên nhận quyền trong việc điều hành công việc kinh doanh.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 284 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 284 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)",
+    "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+   }
   }
  ]
 }

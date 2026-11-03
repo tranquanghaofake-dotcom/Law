@@ -29,7 +29,7 @@
    "q": "Người phạm tội nhận thức rõ hành vi nguy hiểm, thấy trước hậu quả có thể xảy ra, không mong muốn nhưng có ý thức để mặc. Đây là lỗi gì?",
    "options": [
     "Cố ý gián tiếp",
-    "Cố ý trực tiếp",
+    "Lỗi cố ý trực tiếp",
     "Vô ý vì quá tự tin",
     "Vô ý do cẩu thả"
    ],
@@ -47,8 +47,8 @@
    "options": [
     "Mong muốn hậu quả xảy ra",
     "Để mặc hậu quả xảy ra",
-    "Cho rằng hậu quả sẽ không xảy ra",
-    "Không thấy trước hậu quả"
+    "Cho rằng hậu quả không xảy ra",
+    "Không thấy trước được hậu quả"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 10.",
@@ -70,6 +70,16 @@
     {
      "text": "Không mong muốn nhưng có ý thức để mặc",
      "answer": "right"
+    },
+    {
+     "text": "Người muốn gây thương tích cho người khác bằng cách đánh vào đầu",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 10 Bộ luật Hình sự 2015"
+    },
+    {
+     "text": "Người biết hành vi có thể gây chết người, không mong muốn nhưng vẫn để mặc hậu quả",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 10 Bộ luật Hình sự 2015"
     }
    ],
    "explain": "Điều 10."
@@ -110,6 +120,18 @@
     "mong muốn",
     "để mặc"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người phạm tội nhận thức rõ hành vi của mình là nguy hiểm cho xã hội, thấy trước hậu quả của hành vi đó có thể xảy ra, tuy không mong muốn nhưng vẫn có ý thức để mặc cho hậu quả xảy ra.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 10 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 10 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)",
+    "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+   }
   }
  ]
 }

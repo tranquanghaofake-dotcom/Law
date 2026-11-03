@@ -47,9 +47,9 @@
    "q": "Cổ đông lớn phải công bố thông tin khi số cổ phiếu sở hữu thay đổi qua ngưỡng nào?",
    "options": [
     "Các ngưỡng 1% số cổ phiếu có quyền biểu quyết",
-    "Các ngưỡng 5%",
-    "Các ngưỡng 10%",
-    "Mỗi giao dịch dù nhỏ"
+    "Các ngưỡng 5% số cổ phiếu có quyền biểu quyết",
+    "Các mức 10% số cổ phiếu có quyền biểu quyết",
+    "Mỗi giao dịch dù nhỏ nhất của cổ đông lớn"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 127.",
@@ -75,6 +75,16 @@
     {
      "text": "Tỷ lệ tăng do công ty đại chúng mua lại cổ phiếu của chính mình",
      "answer": "right"
+    },
+    {
+     "text": "Nhà đầu tư trở thành cổ đông lớn khi nắm giữ đủ tỷ lệ luật định",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 127 Luật Chứng khoán 2019"
+    },
+    {
+     "text": "Đối tượng giữ tỷ lệ sở hữu dưới ngưỡng cổ đông lớn và không thay đổi tỷ lệ",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 127 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 1, 2, 3 Điều 127."
@@ -103,9 +113,9 @@
    "q": "Ông A nắm 3%, vợ ông A nắm 2,5% cổ phiếu có quyền biểu quyết của công ty đại chúng S. Nhóm này có phải công bố thông tin cổ đông lớn không?",
    "options": [
     "Có, vì nhóm người có liên quan cùng sở hữu 5,5%, từ 5% trở lên",
-    "Không, vì mỗi người đều dưới 5%",
-    "Không, vì vợ chồng là tài sản riêng",
-    "Chỉ phải công bố khi đạt 10%"
+    "Không, vì mỗi người đều dưới 5% và không có sự liên quan",
+    "Không, vì vợ chồng là tài sản riêng của từng người trong nhà",
+    "Chỉ phải công bố khi đạt 10% số cổ phiếu có quyền biểu quyết"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 127 tính \"nhóm người có liên quan\"; vợ, chồng là người có liên quan (điểm d khoản 46 Điều 4).",
@@ -125,6 +135,18 @@
     "người có liên quan",
     "ngoại lệ"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tổ chức, cá nhân, nhóm người có liên quan, nhóm nhà đầu tư nước ngoài có liên quan phải công bố thông tin khi trở thành hoặc không còn là cổ đông lớn của công ty đại chúng, công ty đầu tư chứng khoán đại chúng.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 127 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 127 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+   }
   }
  ]
 }

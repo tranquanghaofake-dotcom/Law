@@ -30,9 +30,9 @@
    "q": "Sau khi ngân hàng thực hiện nghĩa vụ bảo lãnh, khách hàng phải làm gì?",
    "options": [
     "Nhận nợ bắt buộc và hoàn trả cho ngân hàng theo thỏa thuận",
-    "Không phải trả gì vì đã có bảo lãnh",
-    "Chỉ trả nếu ngân hàng khởi kiện thắng",
-    "Trả cho bên nhận bảo lãnh thêm một lần nữa"
+    "Không phải trả gì cả vì đã có bảo lãnh của một ngân hàng khác",
+    "Chỉ phải trả nếu ngân hàng khởi kiện và tòa án tuyên thắng kiện",
+    "Trả cho bên nhận bảo lãnh thêm một lần nữa theo ý ngân hàng"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 4.",
@@ -47,9 +47,9 @@
    "q": "Ngân hàng cam kết thực hiện nghĩa vụ thay khi nào?",
    "options": [
     "Khi bên có nghĩa vụ không thực hiện hoặc thực hiện không đầy đủ nghĩa vụ đã cam kết",
-    "Ngay khi ký thư bảo lãnh",
-    "Khi bên nhận bảo lãnh muốn",
-    "Khi ngân hàng có lợi nhuận"
+    "Ngay khi ký thư bảo lãnh, trước khi có bất kỳ vi phạm nghĩa vụ nào của các bên",
+    "Khi bên nhận bảo lãnh có nhu cầu và yêu cầu ngân hàng thanh toán",
+    "Khi ngân hàng có lợi nhuận cao hơn mức trung bình của ngành trong năm"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 4.",
@@ -71,6 +71,16 @@
     {
      "text": "Nhà thầu phải nhận nợ bắt buộc sau khi ngân hàng trả thay",
      "answer": "right"
+    },
+    {
+     "text": "Bên mua hàng được ngân hàng cam kết thanh toán thay nếu bên bán không giao hàng",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 4 Luật Các tổ chức tín dụng 2024"
+    },
+    {
+     "text": "Doanh nghiệp được ngân hàng bảo lãnh nghĩa vụ hợp đồng với đối tác và phải hoàn trả ngân hàng khi được trả thay",
+     "answer": "right",
+     "basis": "Khoản 2 và khoản 4 Điều 4 Luật Các tổ chức tín dụng 2024"
     }
    ],
    "explain": "Khoản 2 Điều 4."

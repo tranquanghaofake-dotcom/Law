@@ -46,9 +46,9 @@
    "q": "Mục đích của đối thoại tại nơi làm việc là gì?",
    "options": [
     "Tăng cường hiểu biết, hợp tác, hướng tới giải pháp các bên cùng có lợi",
-    "Xử lý kỷ luật người lao động",
-    "Giải quyết tranh chấp tại Tòa án",
-    "Quyết định đình công"
+    "Xử lý kỷ luật người lao động vi phạm nội quy và ra quyết định sa thải",
+    "Giải quyết tranh chấp lao động tại Tòa án nhân dân có thẩm quyền",
+    "Quyết định đình công của tổ chức đại diện người lao động tại cơ sở"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 63.",
@@ -70,6 +70,16 @@
     {
      "text": "Đàm phán, thỏa thuận nhằm xác lập điều kiện lao động",
      "answer": "right"
+    },
+    {
+     "text": "Người sử dụng lao động định kỳ ít nhất 01 năm một lần tổ chức trao đổi với người lao động tại nơi làm việc",
+     "answer": "left",
+     "basis": "Điểm a khoản 2 Điều 63 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Đại diện tập thể lao động và người sử dụng lao động đàm phán, thỏa thuận về điều kiện lao động áp dụng cho cả đơn vị",
+     "answer": "right",
+     "basis": "Điều 65 Bộ luật Lao động 2019"
     }
    ],
    "explain": "Điều 63, 65."

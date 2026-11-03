@@ -32,9 +32,9 @@
    "q": "Ai có quyền đăng ký sáng chế do người lao động tạo ra theo giao việc của doanh nghiệp (không có thỏa thuận khác)?",
    "options": [
     "Doanh nghiệp đầu tư kinh phí, phương tiện cho tác giả",
-    "Người lao động",
-    "Cục Sở hữu trí tuệ",
-    "Cả hai cùng đứng tên bắt buộc"
+    "Người lao động trực tiếp tạo ra sáng chế đó và nộp đơn",
+    "Cục Sở hữu trí tuệ tự quyết định người đứng tên đơn",
+    "Cả hai cùng đứng tên bắt buộc trong mọi trường hợp"
    ],
    "answer": 0,
    "explain": "Điểm b khoản 1 Điều 86.",
@@ -49,9 +49,9 @@
    "q": "Tác giả có quyền đăng ký sáng chế khi nào?",
    "options": [
     "Tạo ra sáng chế bằng công sức và chi phí của mình",
-    "Luôn luôn, kể cả khi được thuê",
-    "Khi được Cục Sở hữu trí tuệ chỉ định",
-    "Khi là người nước ngoài"
+    "Luôn luôn, kể cả khi được thuê làm việc cho doanh nghiệp",
+    "Khi được Cục Sở hữu trí tuệ chỉ định làm người nộp đơn",
+    "Khi là người nước ngoài có quốc tịch khác với Việt Nam"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 1 Điều 86.",
@@ -73,6 +73,16 @@
     {
      "text": "Nhân viên tạo kiểu dáng theo đơn đặt hàng và kinh phí của công ty",
      "answer": "right"
+    },
+    {
+     "text": "Kỹ sư tự nghiên cứu sáng chế bằng chi phí cá nhân, không theo hợp đồng",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 86 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Doanh nghiệp đặt hàng nhân viên nghiên cứu và trả toàn bộ kinh phí",
+     "answer": "right",
+     "basis": "Điểm b khoản 1 Điều 86 Luật Sở hữu trí tuệ"
     }
    ],
    "explain": "Khoản 1 Điều 86."

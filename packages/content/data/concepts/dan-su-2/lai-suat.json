@@ -29,9 +29,9 @@
    "q": "Lãi suất thỏa thuận trong hợp đồng vay dân sự không được vượt quá bao nhiêu?",
    "options": [
     "20%/năm của khoản tiền vay",
-    "10%/năm",
-    "150% lãi suất cơ bản",
-    "Không giới hạn"
+    "Mức 10%/năm theo lãi ngân hàng",
+    "150% lãi suất cơ bản của NHNN",
+    "Không giới hạn mức lãi suất"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 468.",
@@ -46,9 +46,9 @@
    "q": "Có thỏa thuận trả lãi nhưng không xác định rõ lãi suất và có tranh chấp thì lãi suất là bao nhiêu?",
    "options": [
     "50% mức lãi suất giới hạn tại thời điểm trả nợ",
-    "20%/năm",
-    "0%",
-    "Lãi suất ngân hàng"
+    "20%/năm của khoản tiền gốc đã vay và chưa trả",
+    "Không phải trả lãi, coi như vay không có lãi suất",
+    "Lãi suất ngân hàng tại thời điểm ký hợp đồng"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 468.",
@@ -70,6 +70,16 @@
     {
      "text": "Phần lãi vượt 20%/năm",
      "answer": "right"
+    },
+    {
+     "text": "Hai bên thỏa thuận lãi suất vay trong mức không vượt giới hạn pháp luật cho phép",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 468 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Phần lãi vượt quá giới hạn theo quy định của Bộ luật Dân sự trong hợp đồng vay tiền",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 468 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 468."
@@ -110,6 +120,17 @@
     "vượt quá",
     "50%"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Trường hợp các bên có thỏa thuận về lãi suất thì lãi suất theo thỏa thuận không được vượt quá 20%/năm của khoản tiền vay, trừ trường hợp luật khác có liên quan quy định khác.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 468 Bộ luật Dân sự 2015 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 468 Bộ luật Dân sự 2015"
+   }
   }
  ]
 }

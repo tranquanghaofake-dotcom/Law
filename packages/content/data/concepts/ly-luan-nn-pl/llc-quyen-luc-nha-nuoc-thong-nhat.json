@@ -31,9 +31,9 @@
    "q": "Theo khoản 3 Điều 2 Hiến pháp 2013, quyền lực nhà nước có đặc điểm gì?",
    "options": [
     "Thống nhất, có phân công, phối hợp, kiểm soát giữa các cơ quan",
-    "Phân lập hoàn toàn thành ba nhánh đối trọng",
-    "Tập trung toàn bộ vào Chính phủ",
-    "Thuộc về các địa phương"
+    "Phân lập hoàn toàn thành ba nhánh đối trọng, không phối hợp với nhau",
+    "Tập trung toàn bộ vào Chính phủ, các cơ quan khác chỉ theo lệnh",
+    "Thuộc về các địa phương và không có sự thống nhất chung trong cả nước"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 2.",
@@ -72,6 +72,16 @@
     {
      "text": "Quốc hội chất vấn, bỏ phiếu tín nhiệm Bộ trưởng",
      "answer": "right"
+    },
+    {
+     "text": "Tòa án độc lập xét xử theo quy định của pháp luật",
+     "answer": "left",
+     "basis": "Khoản 3 Điều 2 Hiến pháp 2013"
+    },
+    {
+     "text": "Hội đồng nhân dân giám sát hoạt động của Ủy ban nhân dân cùng cấp",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 2 Hiến pháp 2013"
     }
    ],
    "explain": "Khoản 3 Điều 2."
@@ -112,6 +122,18 @@
     "phối hợp",
     "kiểm soát"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quyền lực nhà nước là thống nhất, có sự phân công, phối hợp, kiểm soát giữa các cơ quan nhà nước trong việc thực hiện các quyền lập pháp, hành pháp, tư pháp.",
+   "answer": true,
+   "explain": "Đúng. Khoản 3 Điều 2 Hiến pháp 2013 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 2 Hiến pháp 2013",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+   }
   }
  ]
 }

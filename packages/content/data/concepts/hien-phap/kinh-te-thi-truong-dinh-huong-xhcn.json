@@ -47,8 +47,8 @@
    "options": [
     "Bình đẳng, hợp tác và cạnh tranh theo pháp luật",
     "Kinh tế tư nhân phụ thuộc kinh tế nhà nước",
-    "Chỉ hợp tác, không cạnh tranh",
-    "Cạnh tranh không giới hạn"
+    "Chỉ hợp tác, không cạnh tranh theo pháp luật",
+    "Cạnh tranh không giới hạn theo ý mỗi bên"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 51.",
@@ -70,6 +70,16 @@
     {
      "text": "Kinh tế thị trường định hướng xã hội chủ nghĩa",
      "answer": "right"
+    },
+    {
+     "text": "Nhà nước phát triển nền kinh tế hàng hoá nhiều thành phần theo cơ chế thị trường có sự quản lý",
+     "answer": "left",
+     "basis": "Điều 15 Hiến pháp 1992 (hien-phap-lich-su.txt)"
+    },
+    {
+     "text": "Mọi người có quyền tự do kinh doanh trong những ngành nghề mà pháp luật không cấm",
+     "answer": "right",
+     "basis": "Điều 33 Hiến pháp 2013"
     }
    ],
    "explain": "Điều 15 Hiến pháp 1992; khoản 1 Điều 51 Hiến pháp 2013."
@@ -110,6 +120,18 @@
     "bình đẳng",
     "quốc hữu hóa"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tài sản hợp pháp của cá nhân, tổ chức đầu tư, sản xuất, kinh doanh được pháp luật bảo hộ và không bị quốc hữu hóa.",
+   "answer": true,
+   "explain": "Đúng. Khoản 3 Điều 51 Hiến pháp 2013 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 51 Hiến pháp 2013",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+   }
   }
  ]
 }

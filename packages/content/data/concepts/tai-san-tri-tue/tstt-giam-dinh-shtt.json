@@ -31,9 +31,9 @@
    "q": "Giám định về sở hữu trí tuệ là gì?",
    "options": [
     "Tổ chức, cá nhân đủ điều kiện dùng kiến thức, nghiệp vụ chuyên môn để đánh giá, kết luận về vấn đề liên quan đến quyền SHTT",
-    "Quyết định xử phạt của thanh tra",
-    "Bản án của tòa án",
-    "Việc cấp văn bằng bảo hộ"
+    "Quyết định xử phạt của thanh tra chuyên ngành về hành vi xâm phạm quyền sở hữu trí tuệ và mức phạt tương ứng",
+    "Bản án của tòa án xét xử vụ án dân sự về tranh chấp quyền sở hữu trí tuệ, có hiệu lực pháp luật và được thi hành",
+    "Việc cấp văn bằng bảo hộ cho đối tượng đã được Cục Sở hữu trí tuệ thẩm định và đăng trên Công báo sở hữu công nghiệp"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 201.",
@@ -48,9 +48,9 @@
    "q": "Tổ chức nào KHÔNG được kinh doanh dịch vụ giám định SHTT?",
    "options": [
     "Tổ chức hành nghề luật sư nước ngoài hành nghề tại Việt Nam",
-    "Doanh nghiệp có giám định viên SHTT",
-    "Đơn vị sự nghiệp công lập có giám định viên",
-    "Tổ chức hành nghề luật sư Việt Nam có giám định viên"
+    "Doanh nghiệp có giám định viên SHTT đã được cấp phép",
+    "Đơn vị sự nghiệp công lập có giám định viên đã đăng ký",
+    "Tổ chức hành nghề luật sư Việt Nam có giám định viên SHTT"
    ],
    "answer": 0,
    "explain": "Khoản 2a Điều 201.",
@@ -72,6 +72,16 @@
     {
      "text": "Quyết định có hiệu lực bắt buộc bên xâm phạm phải bồi thường",
      "answer": "right"
+    },
+    {
+     "text": "Kết luận của tổ chức giám định về sự giống nhau giữa hai nhãn hiệu",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 201 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Ý kiến cá nhân của người mua hàng không qua giám định chuyên môn",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 201 Luật Sở hữu trí tuệ"
     }
    ],
    "explain": "Khoản 1 Điều 201; kết luận giám định không thay thế quyết định của cơ quan có thẩm quyền."

@@ -47,7 +47,7 @@
    "q": "Bảo hiểm thất nghiệp là loại hình bảo hiểm gì?",
    "options": [
     "Bắt buộc do Nhà nước tổ chức",
-    "Tự nguyện do doanh nghiệp bảo hiểm tổ chức",
+    "Tự nguyện, do công ty tổ chức",
     "Thương mại",
     "Do công đoàn tổ chức"
    ],
@@ -71,6 +71,21 @@
     {
      "text": "Chế độ thai sản",
      "answer": "right"
+    },
+    {
+     "text": "Người lao động bị chấm dứt hợp đồng đúng luật, đóng đủ 12 tháng trong 24 tháng nên được trợ cấp thất nghiệp",
+     "answer": "left",
+     "basis": "Điểm b khoản 1 Điều 38 và Điều 39 Luật Việc làm 2025"
+    },
+    {
+     "text": "Người sử dụng lao động được hỗ trợ kinh phí đào tạo, bồi dưỡng để duy trì việc làm cho người lao động",
+     "answer": "left",
+     "basis": "Điểm d khoản 1 Điều 30 Luật Việc làm 2025"
+    },
+    {
+     "text": "Lao động nữ sinh con được nghỉ việc và nhận tiền thai sản theo quy định",
+     "answer": "right",
+     "basis": "Điểm b khoản 2 Điều 4 Luật Bảo hiểm xã hội 2024"
     }
    ],
    "explain": "Điều 30 Luật Việc làm; Điều 4 Luật BHXH."

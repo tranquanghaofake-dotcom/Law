@@ -29,9 +29,9 @@
    "q": "Thời hiệu khởi kiện tranh chấp thương mại theo Luật Thương mại là bao lâu?",
    "options": [
     "Hai năm kể từ thời điểm quyền và lợi ích hợp pháp bị xâm phạm",
-    "Ba năm",
-    "Một năm",
-    "Mười năm"
+    "Sáu tháng kể từ thời điểm quyền và lợi ích hợp pháp bị xâm phạm",
+    "Một năm kể từ thời điểm quyền và lợi ích hợp pháp của mình bị xâm phạm",
+    "Mười năm kể từ thời điểm quyền và lợi ích hợp pháp bị xâm phạm"
    ],
    "answer": 0,
    "explain": "Điều 319.",
@@ -46,9 +46,9 @@
    "q": "Hình thức nào KHÔNG được liệt kê tại Điều 317?",
    "options": [
     "Khiếu nại lên Ủy ban nhân dân",
-    "Thương lượng",
-    "Hòa giải",
-    "Trọng tài hoặc Tòa án"
+    "Thương lượng giữa các bên",
+    "Hòa giải tại cơ quan trọng tài",
+    "Trọng tài hoặc Tòa án nhân dân"
    ],
    "answer": 0,
    "explain": "Điều 317.",
@@ -74,6 +74,11 @@
     {
      "text": "Tòa án",
      "answer": "left"
+    },
+    {
+     "text": "Hòa giải do bên thứ ba được các bên thỏa thuận chọn làm trung gian",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 317 Luật Thương mại 2005"
     }
    ],
    "explain": "Điều 317."
@@ -114,6 +119,17 @@
     "trọng tài",
     "hai năm"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hình thức giải quyết tranh chấp trong thương mại gồm thương lượng giữa các bên; hòa giải giữa các bên do một cơ quan, tổ chức hoặc cá nhân được các bên thỏa thuận chọn làm trung gian hòa giải; giải quyết tại Trọng tài hoặc Tòa án.",
+   "answer": true,
+   "explain": "Đúng. Điều 317 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 317 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)"
+   }
   }
  ]
 }

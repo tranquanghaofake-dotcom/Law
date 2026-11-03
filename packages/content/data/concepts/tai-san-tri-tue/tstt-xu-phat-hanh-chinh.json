@@ -31,8 +31,8 @@
    "q": "Hành vi nào bị xử phạt vi phạm hành chính theo khoản 1 Điều 211?",
    "options": [
     "Buôn bán hàng hóa giả mạo về sở hữu trí tuệ",
-    "Sử dụng tác phẩm theo hợp đồng",
-    "Nộp đơn đăng ký nhãn hiệu",
+    "Sử dụng tác phẩm theo hợp đồng đã ký kết",
+    "Nộp đơn đăng ký nhãn hiệu cho hàng đã có",
     "Khiếu nại quyết định từ chối cấp văn bằng"
    ],
    "answer": 0,
@@ -48,7 +48,7 @@
    "q": "Muốn được bồi thường thiệt hại, chủ thể quyền nên dùng biện pháp nào?",
    "options": [
     "Khởi kiện dân sự tại tòa án",
-    "Yêu cầu xử phạt hành chính là đủ",
+    "Yêu cầu xử phạt hành chính",
     "Tố cáo hành chính",
     "Đăng ký lại nhãn hiệu"
    ],
@@ -72,6 +72,16 @@
     {
      "text": "Không giải quyết yêu cầu bồi thường cho chủ thể quyền",
      "answer": "right"
+    },
+    {
+     "text": "Cơ quan quản lý ra quyết định xử phạt nhanh, không cần vụ kiện dân sự",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 211 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Mức phạt hành chính không bù đắp hết thiệt hại thực tế của chủ thể quyền",
+     "answer": "right",
+     "basis": "Khoản 1, 2 Điều 211 và Điều 204 Luật Sở hữu trí tuệ"
     }
    ],
    "explain": "Bài giảng so sánh ưu, nhược các biện pháp."

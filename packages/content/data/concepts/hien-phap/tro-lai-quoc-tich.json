@@ -31,7 +31,7 @@
    "q": "Ai có thể xin trở lại quốc tịch Việt Nam?",
    "options": [
     "Người đã mất quốc tịch Việt Nam theo Điều 26",
-    "Mọi người nước ngoài sống ở Việt Nam 05 năm",
+    "Người nước ngoài sống ở Việt Nam đủ 05 năm",
     "Người chưa từng có quốc tịch Việt Nam",
     "Chỉ người có vợ, chồng là công dân Việt Nam"
    ],
@@ -76,6 +76,11 @@
     {
      "text": "Phải lấy lại tên gọi Việt Nam trước đây",
      "answer": "left"
+    },
+    {
+     "text": "Người nước ngoài có nguyện vọng trở thành công dân Việt Nam khi đủ điều kiện luật định",
+     "answer": "right",
+     "basis": "Điều 19 Luật Quốc tịch Việt Nam 2008 (nhập quốc tịch)"
     }
    ],
    "explain": "Điều 19 và Điều 23."

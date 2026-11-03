@@ -30,8 +30,8 @@
    "q": "Chủ tịch nước được bầu như thế nào?",
    "options": [
     "Do Quốc hội bầu trong số đại biểu Quốc hội",
-    "Do Nhân dân bầu trực tiếp",
-    "Do Chính phủ đề cử",
+    "Do Nhân dân bầu trực tiếp trong cả nước",
+    "Do Chính phủ đề cử và Quốc hội phê chuẩn",
     "Do Mặt trận Tổ quốc hiệp thương chỉ định"
    ],
    "answer": 0,
@@ -71,6 +71,16 @@
     {
      "text": "Báo cáo công tác trước Quốc hội, Ủy ban thường vụ Quốc hội, Chủ tịch nước",
      "answer": "right"
+    },
+    {
+     "text": "Người đứng đầu Nhà nước do Quốc hội bầu trong số đại biểu Quốc hội",
+     "answer": "left",
+     "basis": "Điều 87 Hiến pháp 2013"
+    },
+    {
+     "text": "Người đứng đầu cơ quan hành chính nhà nước cao nhất do Quốc hội bầu trong số đại biểu Quốc hội",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 98 Hiến pháp 2013"
     }
    ],
    "explain": "Điều 87 và Điều 94."

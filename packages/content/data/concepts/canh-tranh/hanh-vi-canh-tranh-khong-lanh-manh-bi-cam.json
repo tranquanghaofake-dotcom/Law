@@ -29,7 +29,7 @@
    "q": "So sánh hàng hóa của mình với hàng hóa cùng loại của doanh nghiệp khác nhưng không chứng minh được nội dung là hành vi gì?",
    "options": [
     "Lôi kéo khách hàng bất chính",
-    "Gây rối hoạt động kinh doanh",
+    "Gây rối hoạt động kinh doanh đối thủ",
     "Xâm phạm bí mật kinh doanh",
     "Hành vi hợp pháp"
    ],
@@ -46,9 +46,9 @@
    "q": "Đưa thông tin không trung thực về doanh nghiệp khác gây ảnh hưởng xấu đến uy tín của họ là hành vi nào?",
    "options": [
     "Cung cấp thông tin không trung thực về doanh nghiệp khác",
-    "Thỏa thuận hạn chế cạnh tranh",
-    "Lạm dụng vị trí độc quyền",
-    "Tập trung kinh tế"
+    "Thỏa thuận hạn chế cạnh tranh giữa các doanh nghiệp cùng ngành",
+    "Lạm dụng vị trí độc quyền để ép giá khách hàng nhỏ lẻ",
+    "Tập trung kinh tế bằng hình thức mua lại cổ phần doanh nghiệp"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 45.",
@@ -70,6 +70,16 @@
     {
      "text": "Tiết lộ bí mật kinh doanh mà không được phép của chủ sở hữu",
      "answer": "right"
+    },
+    {
+     "text": "Nhân viên cũ mang danh sách khách hàng và công thức sản xuất của công ty cũ sang đối thủ để dùng",
+     "answer": "right",
+     "basis": "Điểm b khoản 1 Điều 45 Luật Cạnh tranh 2018"
+    },
+    {
+     "text": "Cử người đến trước cửa hàng đối thủ gây rối để khách không vào mua hàng",
+     "answer": "left",
+     "basis": "Khoản 4 Điều 45 Luật Cạnh tranh 2018"
     }
    ],
    "explain": "Điều 45."
@@ -110,6 +120,17 @@
     "thông tin không trung thực",
     "lôi kéo khách hàng"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Gây rối hoạt động kinh doanh của doanh nghiệp khác bằng cách trực tiếp hoặc gián tiếp cản trở, làm gián đoạn hoạt động kinh doanh hợp pháp của doanh nghiệp đó là hành vi cạnh tranh không lành mạnh bị cấm.",
+   "answer": true,
+   "explain": "Đúng. Khoản 4 Điều 45 Luật Cạnh tranh 2018 (Điều 45: các hành vi cạnh tranh không lành mạnh bị cấm).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 45 Luật Cạnh tranh 2018"
+   }
   }
  ]
 }

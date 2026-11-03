@@ -29,9 +29,9 @@
    "q": "Trong 03 năm đầu, cổ đông sáng lập chuyển nhượng cổ phần phổ thông cho người không phải cổ đông sáng lập cần điều kiện gì?",
    "options": [
     "Được Đại hội đồng cổ đông chấp thuận",
-    "Được Hội đồng quản trị đồng ý",
-    "Không cần điều kiện",
-    "Bị cấm tuyệt đối"
+    "Được Hội đồng quản trị đồng ý trước",
+    "Không cần điều kiện, chỉ thông báo",
+    "Bị cấm tuyệt đối mọi trường hợp"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 120.",
@@ -70,6 +70,16 @@
     {
      "text": "Chuyển cho người ngoài",
      "answer": "right"
+    },
+    {
+     "text": "Cổ đông sáng lập bán cổ phần phổ thông cho cổ đông sáng lập khác trong 03 năm đầu",
+     "answer": "left",
+     "basis": "Khoản 3 Điều 120 Luật Doanh nghiệp 2020"
+    },
+    {
+     "text": "Cổ đông sáng lập bán cổ phần cho người không phải sáng lập trong 03 năm đầu, khi có chấp thuận của Đại hội đồng cổ đông",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 120 Luật Doanh nghiệp 2020"
     }
    ],
    "explain": "Khoản 3 Điều 120."

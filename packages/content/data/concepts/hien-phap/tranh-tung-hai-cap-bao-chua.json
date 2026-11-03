@@ -29,9 +29,9 @@
    "q": "Chế độ xét xử nào được Hiến pháp bảo đảm theo khoản 6 Điều 103?",
    "options": [
     "Sơ thẩm, phúc thẩm",
-    "Chỉ sơ thẩm",
-    "Ba cấp xét xử",
-    "Chỉ giám đốc thẩm"
+    "Chỉ sơ thẩm thôi",
+    "Ba cấp xét xử trong nước",
+    "Giám đốc thẩm, tái thẩm"
    ],
    "answer": 0,
    "explain": "Khoản 6 Điều 103.",
@@ -46,7 +46,7 @@
    "q": "Nguyên tắc nào trong xét xử được bảo đảm theo khoản 5 Điều 103?",
    "options": [
     "Tranh tụng",
-    "Thẩm vấn một chiều",
+    "Tranh tụng một chiều: bên buộc tội trình bày, bên bào chữa im lặng",
     "Suy đoán có tội",
     "Xét xử vắng mặt"
    ],
@@ -70,6 +70,16 @@
     {
      "text": "Nguyên đơn, bị đơn trong vụ án dân sự",
      "answer": "right"
+    },
+    {
+     "text": "Bị cáo trong vụ án hình sự có quyền nhờ người bào chữa tại phiên tòa",
+     "answer": "left",
+     "basis": "Khoản 5 Điều 103 Hiến pháp 2013"
+    },
+    {
+     "text": "Người có quyền lợi liên quan trong vụ án dân sự được bảo vệ lợi ích hợp pháp của đương sự",
+     "answer": "right",
+     "basis": "Khoản 5–7 Điều 103 Hiến pháp 2013"
     }
    ],
    "explain": "Khoản 7 Điều 103."
@@ -110,6 +120,18 @@
     "bào chữa",
     "đương sự"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quyền bào chữa của bị can, bị cáo, quyền bảo vệ lợi ích hợp pháp của đương sự được bảo đảm.",
+   "answer": true,
+   "explain": "Đúng. Khoản 7 Điều 103 Hiến pháp 2013 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 7 Điều 103 Hiến pháp 2013",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+   }
   }
  ]
 }

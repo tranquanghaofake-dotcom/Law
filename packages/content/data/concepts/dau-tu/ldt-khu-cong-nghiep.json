@@ -29,9 +29,9 @@
    "q": "Khu công nghiệp chuyên làm gì?",
    "options": [
     "Sản xuất hàng công nghiệp và cung ứng dịch vụ cho sản xuất công nghiệp",
-    "Phát triển du lịch",
-    "Phát triển đô thị",
-    "Trồng trọt"
+    "Phát triển du lịch và dịch vụ nghỉ dưỡng cho khách trong nước và ngoài nước",
+    "Phát triển đô thị và nhà ở cho người dân địa phương trong khu vực",
+    "Trồng trọt và chăn nuôi quy mô lớn tại khu vực nông thôn xa xôi"
    ],
    "answer": 0,
    "explain": "Khoản 16 Điều 3.",
@@ -70,6 +70,16 @@
     {
      "text": "Khu nghỉ dưỡng ven biển",
      "answer": "right"
+    },
+    {
+     "text": "Nhà máy chế biến thủy sản xuất khẩu nằm trong khu vực có ranh giới xác định, chuyên sản xuất công nghiệp",
+     "answer": "left",
+     "basis": "Khoản 16 Điều 3 Luật Đầu tư 2025"
+    },
+    {
+     "text": "Khu đô thị có nhà ở, trường học và công viên cho dân cư",
+     "answer": "right",
+     "basis": "Khoản 16 Điều 3 Luật Đầu tư 2025 (không chuyên sản xuất công nghiệp)"
     }
    ],
    "explain": "Khoản 16 Điều 3."

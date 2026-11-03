@@ -46,9 +46,9 @@
    "q": "Điều kiện bắt buộc đầu tiên để sử dụng người lao động làm thêm giờ là gì?",
    "options": [
     "Phải được sự đồng ý của người lao động",
-    "Phải được Sở Lao động cho phép",
-    "Phải trả gấp 5 lần lương",
-    "Phải có quyết định của công đoàn"
+    "Phải được Sở Nội vụ cho phép bằng văn bản",
+    "Phải trả gấp 5 lần lương cho giờ làm thêm",
+    "Phải có quyết định của công đoàn cấp cơ sở"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 2 Điều 107.",
@@ -70,6 +70,16 @@
     {
      "text": "Sản xuất, gia công hàng dệt, may, da, giày xuất khẩu",
      "answer": "right"
+    },
+    {
+     "text": "Người sử dụng lao động cho làm thêm giờ không quá 200 giờ trong 01 năm",
+     "answer": "left",
+     "basis": "Điểm c khoản 2 Điều 107 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Chế biến thủy sản xuất khẩu, người lao động được làm thêm không quá 300 giờ trong 01 năm",
+     "answer": "right",
+     "basis": "Điểm a khoản 3 Điều 107 Bộ luật Lao động 2019"
     }
    ],
    "explain": "Khoản 2, 3 Điều 107."
@@ -110,6 +120,18 @@
     "đồng ý",
     "40 giờ"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thời giờ làm việc bình thường không quá 08 giờ trong 01 ngày và không quá 48 giờ trong 01 tuần.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 105 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 105 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-18-VBHN-VPQH-2026-Bo-luat-lao-dong-695336.aspx"
+   }
   }
  ]
 }

@@ -29,9 +29,9 @@
    "q": "Nhà nước khuyến khích loại thỏa thuận nào theo khoản 1 Điều 4?",
    "options": [
     "Thỏa thuận bảo đảm cho người lao động điều kiện thuận lợi hơn quy định của pháp luật",
-    "Thỏa thuận giảm lương dưới mức tối thiểu",
-    "Thỏa thuận không đóng bảo hiểm xã hội",
-    "Thỏa thuận làm thêm không giới hạn"
+    "Thỏa thuận giảm lương dưới mức tối thiểu vùng do Chính phủ công bố hằng năm",
+    "Thỏa thuận không đóng bảo hiểm xã hội cho người lao động làm việc lâu dài",
+    "Thỏa thuận làm thêm không giới hạn số giờ, không cần trả thêm tiền lương làm thêm"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 4.",
@@ -45,10 +45,10 @@
    "level": 1,
    "q": "Chính sách của Nhà nước có bảo đảm quyền lợi của người sử dụng lao động không?",
    "options": [
-    "Có, theo khoản 2 Điều 4",
-    "Không, chỉ bảo vệ người lao động",
-    "Chỉ với doanh nghiệp nhà nước",
-    "Chỉ khi có tranh chấp"
+    "Có, theo khoản 2 Điều 4 Bộ luật Lao động",
+    "Không, vì chỉ bảo vệ quyền của người lao động",
+    "Có, nếu là doanh nghiệp nhà nước",
+    "Có, nếu đang có tranh chấp"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 4.",
@@ -70,6 +70,16 @@
     {
      "text": "Quản lý lao động đúng pháp luật, dân chủ, công bằng",
      "answer": "right"
+    },
+    {
+     "text": "Nhà nước hỗ trợ người lao động duy trì, chuyển đổi nghề nghiệp và nâng cao trình độ kỹ năng",
+     "answer": "left",
+     "basis": "Khoản 4 Điều 4 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Nhà nước bảo đảm quyền và lợi ích hợp pháp của người sử dụng lao động",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 4 Bộ luật Lao động 2019"
     }
    ],
    "explain": "Điều 4."

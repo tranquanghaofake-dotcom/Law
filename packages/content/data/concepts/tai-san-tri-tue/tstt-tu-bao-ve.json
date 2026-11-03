@@ -33,9 +33,9 @@
    "q": "Biện pháp nào thuộc quyền tự bảo vệ theo khoản 1 Điều 198?",
    "options": [
     "Yêu cầu bên xâm phạm chấm dứt hành vi, xin lỗi, cải chính công khai, bồi thường thiệt hại",
-    "Tự ý tịch thu hàng hóa của bên xâm phạm",
-    "Bắt giữ người xâm phạm",
-    "Tự phạt tiền bên xâm phạm"
+    "Tự ý tịch thu hàng hóa của bên xâm phạm để làm bằng chứng cho vụ kiện tại tòa",
+    "Bắt giữ người xâm phạm và tạm giữ tài sản của họ để điều tra vụ việc có liên quan",
+    "Tự phạt tiền bên xâm phạm theo mức tự quyết định của chủ thể quyền và công bố rộng rãi"
    ],
    "answer": 0,
    "explain": "Điểm b khoản 1 Điều 198.",
@@ -51,8 +51,8 @@
    "options": [
     "Có, theo khoản 1a Điều 198",
     "Không, phải tự thực hiện",
-    "Chỉ ủy quyền cho luật sư nước ngoài",
-    "Chỉ khi tòa án cho phép"
+    "Có, nếu tòa án cho phép",
+    "Không, trừ luật sư nước ngoài"
    ],
    "answer": 0,
    "explain": "Khoản 1a Điều 198.",
@@ -74,6 +74,21 @@
     {
      "text": "Đột nhập cửa hàng thu giữ hàng giả",
      "answer": "right"
+    },
+    {
+     "text": "Gửi yêu cầu chấm dứt xâm phạm và gỡ bỏ nội dung vi phạm trên mạng",
+     "answer": "left",
+     "basis": "Điểm b khoản 1 Điều 198 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Áp dụng biện pháp công nghệ ngăn chặn sao chép trái phép phần mềm",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 198 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Tự ý vào kho đối thủ lấy hàng giả về",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 198 Luật Sở hữu trí tuệ (không thuộc các biện pháp được liệt kê)"
     }
    ],
    "explain": "Khoản 1 Điều 198."
@@ -114,6 +129,17 @@
     "cơ quan nhà nước",
     "khởi kiện"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chủ thể quyền sở hữu trí tuệ có quyền áp dụng biện pháp công nghệ bảo vệ quyền, đưa thông tin quản lý quyền hoặc áp dụng các biện pháp công nghệ khác nhằm ngăn ngừa hành vi xâm phạm quyền sở hữu trí tuệ.",
+   "answer": true,
+   "explain": "Đúng. Điểm a khoản 1 Điều 198 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điểm a khoản 1 Điều 198 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
   }
  ]
 }

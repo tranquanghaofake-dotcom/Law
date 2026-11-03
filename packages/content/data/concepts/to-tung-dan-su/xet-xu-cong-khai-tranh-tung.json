@@ -28,9 +28,9 @@
    "q": "Quyền tranh tụng được bảo đảm trong những cấp xét xử nào?",
    "options": [
     "Sơ thẩm, phúc thẩm, giám đốc thẩm, tái thẩm",
-    "Chỉ sơ thẩm",
-    "Chỉ sơ thẩm và phúc thẩm",
-    "Chỉ phúc thẩm"
+    "Chỉ sơ thẩm, không có các cấp xét xử khác",
+    "Sơ thẩm và phúc thẩm, không có giám đốc thẩm",
+    "Phúc thẩm và giám đốc thẩm, không có sơ thẩm"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 24.",
@@ -45,8 +45,8 @@
    "q": "Hội thẩm nhân dân tham gia xét xử sơ thẩm vụ án dân sự, trừ trường hợp nào?",
    "options": [
     "Xét xử theo thủ tục rút gọn",
-    "Vụ án ly hôn",
-    "Vụ án lao động",
+    "Vụ án ly hôn có con chung",
+    "Vụ án lao động có nhiều người",
     "Vụ án có yếu tố nước ngoài"
    ],
    "answer": 0,
@@ -69,6 +69,16 @@
     {
      "text": "Vụ việc cần giữ bí mật nhà nước",
      "answer": "right"
+    },
+    {
+     "text": "Vụ án kinh doanh thương mại thông thường, Tòa án xét xử sơ thẩm công khai",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 15 Bộ luật Tố tụng dân sự 2015"
+    },
+    {
+     "text": "Vụ án liên quan đến bí mật kinh doanh, theo yêu cầu của đương sự có thể không công khai",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 15 Bộ luật Tố tụng dân sự 2015"
     }
    ],
    "explain": "Điều 15."

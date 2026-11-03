@@ -29,8 +29,8 @@
    "options": [
     "Cử tri hoặc Quốc hội",
     "Chỉ Chủ tịch nước",
-    "Chỉ Mặt trận Tổ quốc",
-    "Chỉ Hội đồng bầu cử quốc gia"
+    "Mặt trận Tổ quốc các cấp",
+    "Hội đồng bầu cử"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 7.",
@@ -45,9 +45,9 @@
    "q": "Căn cứ để bãi nhiệm đại biểu theo khoản 2 Điều 7 là gì?",
    "options": [
     "Không còn xứng đáng với sự tín nhiệm của Nhân dân",
-    "Hết nhiệm kỳ",
-    "Đến tuổi nghỉ hưu",
-    "Chuyển nơi cư trú"
+    "Hết nhiệm kỳ đại biểu và chuyển sang công tác khác",
+    "Đến tuổi nghỉ hưu theo quy định của pháp luật lao động",
+    "Chuyển nơi cư trú ra khỏi đơn vị bầu cử đã bầu ra mình"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 7.",
@@ -69,6 +69,16 @@
     {
      "text": "Cử tri hoặc cơ quan đại diện rút lại sự ủy quyền",
      "answer": "right"
+    },
+    {
+     "text": "Cử tri bỏ phiếu chọn người trở thành đại biểu Quốc hội",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 7 Hiến pháp 2013"
+    },
+    {
+     "text": "Cử tri rút sự tín nhiệm đối với đại biểu vì đại biểu không còn xứng đáng với sự tín nhiệm",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 7 Hiến pháp 2013"
     }
    ],
    "explain": "Điều 7 Hiến pháp 2013."
@@ -123,6 +133,18 @@
    "statement": "Việc bãi nhiệm đại biểu Quốc hội phải được ít nhất một nửa tổng số đại biểu Quốc hội tán thành.",
    "answer": false,
    "explain": "Sai. Khoản 1 Điều 85 Hiến pháp 2013: phải được ít nhất hai phần ba tổng số đại biểu Quốc hội biểu quyết tán thành. (Nhận định trong bộ câu hỏi ôn tập Luật Hiến pháp, Drive HLU.)"
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Đại biểu Quốc hội, đại biểu Hội đồng nhân dân bị cử tri hoặc Quốc hội, Hội đồng nhân dân bãi nhiệm khi không còn xứng đáng với sự tín nhiệm của Nhân dân.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 7 Hiến pháp 2013 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 7 Hiến pháp 2013",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+   }
   }
  ]
 }

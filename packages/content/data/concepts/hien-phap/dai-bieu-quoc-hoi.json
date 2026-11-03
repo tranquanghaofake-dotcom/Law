@@ -30,9 +30,9 @@
    "q": "Theo khoản 1 Điều 79, đại biểu Quốc hội đại diện cho ai?",
    "options": [
     "Ý chí, nguyện vọng của Nhân dân ở đơn vị bầu cử ra mình và của Nhân dân cả nước",
-    "Chỉ Nhân dân ở đơn vị bầu cử ra mình",
-    "Chỉ tổ chức giới thiệu mình ứng cử",
-    "Chỉ Đảng viên"
+    "Chỉ Nhân dân ở đơn vị bầu cử ra mình, không đại diện cho Nhân dân cả nước",
+    "Tổ chức giới thiệu mình ứng cử và các đảng viên của tổ chức",
+    "Đảng viên của Đảng Cộng sản Việt Nam trong nước và các tổ chức khác"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 79.",
@@ -47,8 +47,8 @@
    "q": "Nghĩa vụ nào của đại biểu Quốc hội đối với cử tri được nêu tại khoản 2 Điều 79?",
    "options": [
     "Thực hiện chế độ tiếp xúc và báo cáo với cử tri",
-    "Nộp thuế thay cho cử tri",
-    "Bảo đảm việc làm cho cử tri",
+    "Nộp thuế thay cho cử tri trong đơn vị bầu cử",
+    "Bảo đảm việc làm cho cử tri trong đơn vị bầu cử",
     "Giải quyết mọi tranh chấp của cử tri"
    ],
    "answer": 0,
@@ -119,6 +119,18 @@
     "giám sát của cử tri",
     "tiếp xúc"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Đại biểu Quốc hội là người đại diện cho ý chí, nguyện vọng của Nhân dân ở đơn vị bầu cử ra mình và của Nhân dân cả nước.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 79 Hiến pháp 2013 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 79 Hiến pháp 2013",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+   }
   }
  ]
 }

@@ -30,9 +30,9 @@
    "q": "Người gây thiệt hại không phải bồi thường trong trường hợp nào theo khoản 2 Điều 584?",
    "options": [
     "Thiệt hại do sự kiện bất khả kháng hoặc hoàn toàn do lỗi của bên bị thiệt hại",
-    "Người gây thiệt hại nghèo",
-    "Thiệt hại dưới 1 triệu",
-    "Người gây thiệt hại không cố ý"
+    "Người gây thiệt hại đang có hoàn cảnh kinh tế khó khăn và không có việc làm",
+    "Thiệt hại dưới một triệu đồng và chưa có ai yêu cầu bồi thường chính thức",
+    "Người gây thiệt hại không cố ý và đã tự nguyện bồi thường một phần"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 584.",
@@ -47,9 +47,9 @@
    "q": "Tài sản gây thiệt hại thì ai chịu trách nhiệm bồi thường?",
    "options": [
     "Chủ sở hữu, người chiếm hữu tài sản",
-    "Nhà nước",
-    "Người bị thiệt hại tự chịu",
-    "Người bán tài sản"
+    "Nhà nước chịu trách nhiệm",
+    "Người bị thiệt hại tự chịu toàn bộ",
+    "Người bán tài sản đó cho người khác trước đây"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 584.",
@@ -71,6 +71,16 @@
     {
      "text": "Thiệt hại hoàn toàn do người bị hại tự lao vào",
      "answer": "right"
+    },
+    {
+     "text": "Người làm rơi biển quảng cáo đè trúng xe của người khác, làm xe hư hỏng",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 584 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Thiệt hại do lũ lụt bất khả kháng gây ra, không có lỗi của người bị coi là gây thiệt hại",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 584 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 584."

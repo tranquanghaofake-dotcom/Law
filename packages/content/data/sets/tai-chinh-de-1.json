@@ -35,9 +35,9 @@
       "q": "Khoản chi ngân sách chỉ được thực hiện khi nào?",
       "options": [
         "Khi có dự toán được cấp có thẩm quyền giao (trừ tạm cấp ngân sách)",
-        "Khi thủ trưởng đơn vị đồng ý",
-        "Khi Kho bạc còn tiền",
-        "Bất kỳ lúc nào"
+        "Khi thủ trưởng đơn vị đồng ý bằng văn bản, không cần dự toán",
+        "Khi Kho bạc Nhà nước còn tiền trong ngân quỹ tại thời điểm chi tiêu",
+        "Bất kỳ lúc nào đơn vị có nhu cầu chi tiêu, không cần dự toán"
       ],
       "answer": 0,
       "explain": "Khoản 4 Điều 8.",
@@ -47,7 +47,7 @@
     {
       "q": "Mức bố trí dự phòng ngân sách mỗi cấp?",
       "options": [
-        "Từ 1% đến 2%",
+        "Từ 1% đến 2% tổng chi",
         "Từ 2% đến 5%",
         "Từ 5% đến 10%",
         "Không giới hạn"
@@ -60,10 +60,10 @@
     {
       "q": "Vay để bù đắp bội chi chỉ được dùng cho mục đích nào?",
       "options": [
-        "Chi thường xuyên",
+        "Chi thường xuyên bộ máy",
         "Chi đầu tư phát triển",
-        "Chi trả lương",
-        "Chi tiếp khách"
+        "Chi trả lương cho cán bộ",
+        "Chi tiếp khách, hội nghị"
       ],
       "answer": 1,
       "explain": "Khoản 3 Điều 7.",
@@ -73,10 +73,10 @@
     {
       "q": "Kết dư ngân sách trung ương, còn lại sau khi trả nợ, được xử lý thế nào?",
       "options": [
-        "Toàn bộ vào thu năm sau",
+        "Toàn bộ 100% vào thu ngân sách của năm sau",
         "50% vào quỹ dự trữ tài chính, 50% vào thu năm sau",
-        "Chia cho các bộ",
-        "Nộp vào quỹ bảo hiểm"
+        "Chia đều cho các bộ, ngành để chi trong năm sau",
+        "Nộp toàn bộ vào quỹ bảo hiểm xã hội của trung ương"
       ],
       "answer": 1,
       "explain": "Khoản 1 Điều 74.",
@@ -87,9 +87,9 @@
       "q": "Kết dư ngân sách cấp xã được xử lý thế nào?",
       "options": [
         "Hạch toán vào thu ngân sách năm sau",
-        "Nộp lên tỉnh",
-        "Trích 50% vào quỹ dự trữ",
-        "Chia thưởng"
+        "Nộp toàn bộ lên ngân sách cấp tỉnh",
+        "Trích 50% vào quỹ dự trữ tài chính",
+        "Chia thưởng cho cán bộ, công chức"
       ],
       "answer": 0,
       "explain": "Khoản 1 Điều 74.",
@@ -99,10 +99,10 @@
     {
       "q": "Quỹ ngân sách nhà nước có bao gồm tiền vay không?",
       "options": [
-        "Có, kể cả tiền vay",
-        "Không",
-        "Chỉ vay nước ngoài",
-        "Chỉ vay trong nước"
+        "Có, bao gồm cả tiền vay",
+        "Không, không gồm tiền vay",
+        "Có, nhưng chỉ vay nước ngoài",
+        "Có, nhưng chỉ vay trong nước"
       ],
       "answer": 0,
       "explain": "Khoản 22 Điều 4.",

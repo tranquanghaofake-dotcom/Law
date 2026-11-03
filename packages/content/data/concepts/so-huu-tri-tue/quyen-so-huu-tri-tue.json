@@ -30,9 +30,9 @@
    "q": "Quyền sở hữu trí tuệ gồm những bộ phận nào?",
    "options": [
     "Quyền tác giả và quyền liên quan, quyền sở hữu công nghiệp, quyền đối với giống cây trồng",
-    "Chỉ quyền tác giả",
-    "Quyền tác giả và quyền sở hữu đất đai",
-    "Quyền nhân thân và quyền thừa kế"
+    "Chỉ quyền tác giả và quyền liên quan đến tác phẩm văn học nghệ thuật trong nước",
+    "Quyền tác giả và quyền sở hữu đất đai, nhà ở và các tài sản gắn liền với đất đai",
+    "Quyền nhân thân và quyền thừa kế tài sản của người đã chết theo di chúc và pháp luật"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 4.",
@@ -47,9 +47,9 @@
    "q": "Quyền tác giả là quyền đối với đối tượng nào?",
    "options": [
     "Tác phẩm do mình sáng tạo ra hoặc sở hữu",
-    "Nhãn hiệu",
-    "Giống cây trồng",
-    "Sáng chế"
+    "Nhãn hiệu hàng hóa đã đăng ký tại Việt Nam",
+    "Giống cây trồng mới được tạo ra và công bố",
+    "Sáng chế đã được cấp văn bằng bảo hộ hợp lệ"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 4.",
@@ -75,6 +75,16 @@
     {
      "text": "Sáng chế",
      "answer": "right"
+    },
+    {
+     "text": "Bức tranh vẽ của họa sĩ là tác phẩm mỹ thuật, được bảo hộ ngay khi được thể hiện dưới hình thức vật chất, không phải làm thủ tục đăng ký",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 14 và khoản 1 Điều 6 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Kiểu dáng công nghiệp của chiếc ghế mới được đăng ký bảo hộ",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 4 Luật Sở hữu trí tuệ"
     }
    ],
    "explain": "Điều 4."
@@ -115,6 +125,18 @@
     "giống cây trồng",
     "tác phẩm"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quyền tác giả là quyền của tổ chức, cá nhân đối với tác phẩm do mình sáng tạo ra hoặc sở hữu.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 4 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 4 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+   }
   }
  ]
 }

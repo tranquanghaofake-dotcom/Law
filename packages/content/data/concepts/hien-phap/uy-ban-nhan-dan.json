@@ -30,9 +30,9 @@
    "q": "Ủy ban nhân dân do ai bầu?",
    "options": [
     "Hội đồng nhân dân cùng cấp",
-    "Nhân dân địa phương",
+    "Nhân dân địa phương bầu",
     "Ủy ban nhân dân cấp trên",
-    "Thủ tướng"
+    "Thủ tướng Chính phủ chỉ định"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 114.",
@@ -47,9 +47,9 @@
    "q": "Ủy ban nhân dân chịu trách nhiệm trước ai?",
    "options": [
     "Hội đồng nhân dân và cơ quan hành chính nhà nước cấp trên",
-    "Chỉ Hội đồng nhân dân",
-    "Chỉ Chính phủ",
-    "Chỉ Nhân dân địa phương"
+    "Hội đồng nhân dân cùng cấp và Ủy ban thường vụ Quốc hội",
+    "Chủ tịch nước và Tòa án nhân dân cùng cấp",
+    "Nhân dân địa phương và Mặt trận Tổ quốc cùng cấp"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 114.",
@@ -71,6 +71,16 @@
     {
      "text": "Thực hiện nhiệm vụ do cơ quan nhà nước cấp trên giao",
      "answer": "right"
+    },
+    {
+     "text": "Ủy ban nhân dân do Hội đồng nhân dân cùng cấp bầu và chịu trách nhiệm trước Hội đồng nhân dân",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 114 Hiến pháp 2013"
+    },
+    {
+     "text": "Ủy ban nhân dân thực hiện nhiệm vụ do Chính phủ giao ở địa phương",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 114 Hiến pháp 2013"
     }
    ],
    "explain": "Khoản 2 Điều 114."

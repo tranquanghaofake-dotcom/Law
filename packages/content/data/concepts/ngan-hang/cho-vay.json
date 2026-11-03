@@ -31,9 +31,9 @@
    "q": "Dấu hiệu nào thuộc định nghĩa cho vay tại khoản 7 Điều 4?",
    "options": [
     "Khoản tiền được sử dụng vào mục đích xác định",
-    "Bên vay không phải hoàn trả gốc",
-    "Ngân hàng mua lại khoản phải thu",
-    "Ngân hàng cam kết trả thay nghĩa vụ"
+    "Bên vay không phải trả tiền gốc theo thỏa thuận",
+    "Ngân hàng mua lại khoản phải thu của bên bán hàng",
+    "Ngân hàng cam kết trả thay nghĩa vụ của bên thứ ba"
    ],
    "answer": 0,
    "explain": "Khoản 7 Điều 4.",
@@ -72,6 +72,16 @@
     {
      "text": "Ngân hàng mua lại khoản phải thu của bên bán",
      "answer": "right"
+    },
+    {
+     "text": "Ngân hàng cho doanh nghiệp vay trong một thời gian nhất định, trả đủ gốc và lãi theo thỏa thuận",
+     "answer": "left",
+     "basis": "Khoản 7 Điều 4 Luật Các tổ chức tín dụng 2024"
+    },
+    {
+     "text": "Ngân hàng mua lại khoản phải thu của doanh nghiệp bán hàng và ứng trước tiền, bên mua sẽ thanh toán cho ngân hàng",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 4 Luật Các tổ chức tín dụng 2024"
     }
    ],
    "explain": "Khoản 1, 7 Điều 4."

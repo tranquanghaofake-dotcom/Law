@@ -30,9 +30,9 @@
    "q": "Các loại hình ngân hàng theo khoản 21 Điều 4?",
    "options": [
     "Ngân hàng thương mại, ngân hàng chính sách, ngân hàng hợp tác xã",
-    "Ngân hàng thương mại, công ty tài chính, quỹ tín dụng",
-    "Ngân hàng nhà nước, ngân hàng tư nhân",
-    "Ngân hàng đầu tư, ngân hàng tiết kiệm"
+    "Ngân hàng thương mại, công ty tài chính, quỹ tín dụng nhân dân",
+    "Ngân hàng nhà nước, ngân hàng tư nhân, ngân hàng liên doanh nội địa",
+    "Ngân hàng đầu tư, ngân hàng tiết kiệm, ngân hàng phát triển nông thôn"
    ],
    "answer": 0,
    "explain": "Khoản 21 Điều 4.",
@@ -71,6 +71,16 @@
     {
      "text": "Ngân hàng của tất cả quỹ tín dụng nhân dân",
      "answer": "right"
+    },
+    {
+     "text": "Ngân hàng thực hiện hoạt động ngân hàng và hoạt động kinh doanh khác nhằm mục tiêu lợi nhuận",
+     "answer": "left",
+     "basis": "Khoản 23 Điều 4 Luật Các tổ chức tín dụng 2024"
+    },
+    {
+     "text": "Ngân hàng do các quỹ tín dụng nhân dân và pháp nhân khác góp vốn thành lập",
+     "answer": "right",
+     "basis": "Khoản 22 Điều 4 Luật Các tổ chức tín dụng 2024"
     }
    ],
    "explain": "Khoản 22, 23 Điều 4."
@@ -111,6 +121,18 @@
     "chính sách",
     "hợp tác xã"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Các loại hình ngân hàng bao gồm ngân hàng thương mại, ngân hàng chính sách, ngân hàng hợp tác xã.",
+   "answer": true,
+   "explain": "Đúng. Khoản 21 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 21 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)",
+    "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-143-2026-VBHN-LQ-VPQH-Luat-Cac-to-chuc-tin-dung-729869.aspx"
+   }
   }
  ]
 }

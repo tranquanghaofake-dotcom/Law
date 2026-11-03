@@ -42,12 +42,12 @@
   {
    "type": "mcq",
    "level": 1,
-   "q": "Theo Điều 3, hoạt động về chứng khoán phải tuân thủ những quy định nào?",
+   "q": "Phương án nào liệt kê đầy đủ các quy định mà hoạt động về chứng khoán phải tuân thủ theo Điều 3?",
    "options": [
     "Luật Chứng khoán và quy định khác của pháp luật có liên quan",
-    "Chỉ Luật Chứng khoán",
-    "Chỉ quy chế của Sở giao dịch chứng khoán",
-    "Chỉ điều lệ công ty"
+    "Luật Chứng khoán và các văn bản hướng dẫn thi hành của Chính phủ",
+    "Quy chế của Sở giao dịch chứng khoán và điều lệ công ty niêm yết",
+    "Điều lệ công ty và quy chế nội bộ của doanh nghiệp phát hành"
    ],
    "answer": 0,
    "explain": "Điều 3: \"phải tuân thủ quy định của Luật này và quy định khác của pháp luật có liên quan\".",
@@ -73,6 +73,11 @@
     {
      "text": "Cơ quan quản lý nhà nước về chứng khoán",
      "answer": "left"
+    },
+    {
+     "text": "Quyền và nghĩa vụ của tổ chức, cá nhân trong lĩnh vực chứng khoán",
+     "answer": "right",
+     "basis": "Điều 1 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Điều 1 trả lời \"luật điều chỉnh việc gì\"; Điều 2 trả lời \"luật áp dụng cho ai\"."

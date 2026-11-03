@@ -29,9 +29,9 @@
    "q": "Người gây thiệt hại có thể được giảm mức bồi thường khi nào?",
    "options": [
     "Không có lỗi hoặc có lỗi vô ý và thiệt hại quá lớn so với khả năng kinh tế",
-    "Khi có lỗi cố ý",
-    "Khi bị hại giàu có",
-    "Khi thiệt hại nhỏ"
+    "Khi có lỗi cố ý và thiệt hại nhỏ mà chủ thể đã tự nguyện đền bù",
+    "Khi bị hại giàu có và có thu nhập ổn định hơn người gây thiệt hại",
+    "Khi thiệt hại nhỏ và người gây thiệt hại có đủ khả năng kinh tế để chi trả ngay"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 585.",
@@ -48,7 +48,7 @@
     "Bồi thường toàn bộ và kịp thời",
     "Bồi thường một nửa",
     "Bồi thường theo khả năng",
-    "Bồi thường sau khi xét xử hình sự"
+    "Bồi thường sau khi xử hình sự"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 585.",
@@ -70,6 +70,16 @@
     {
      "text": "Cố ý đập phá tài sản người khác",
      "answer": "right"
+    },
+    {
+     "text": "Người vô ý làm hư đồ dùng của hàng xóm, thiệt hại vượt quá khả năng kinh tế của mình",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 585 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Người cố ý gây thiệt hại tài sản dù thiệt hại lớn so với thu nhập của họ",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 585 Bộ luật Dân sự 2015 (không áp dụng khi cố ý)"
     }
    ],
    "explain": "Khoản 2 Điều 585."
@@ -110,6 +120,18 @@
     "giảm mức",
     "lỗi"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thiệt hại thực tế phải được bồi thường toàn bộ và kịp thời.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 585 Bộ luật Dân sự 2015 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 585 Bộ luật Dân sự 2015",
+    "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+   }
   }
  ]
 }

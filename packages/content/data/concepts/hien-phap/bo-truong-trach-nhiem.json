@@ -30,9 +30,9 @@
    "q": "Bộ trưởng chịu trách nhiệm cá nhân trước những chủ thể nào?",
    "options": [
     "Thủ tướng, Chính phủ và Quốc hội",
-    "Chỉ Thủ tướng",
-    "Chỉ Chủ tịch nước",
-    "Chỉ Ủy ban thường vụ Quốc hội"
+    "Thủ tướng, Chính phủ và Chủ tịch nước",
+    "Chủ tịch nước và Mặt trận Tổ quốc",
+    "Ủy ban Pháp luật và Hội đồng dân tộc"
    ],
    "answer": 0,
    "explain": "Khoản 4 Điều 95.",
@@ -47,9 +47,9 @@
    "q": "Bộ trưởng báo cáo công tác trước ai theo khoản 2 Điều 99?",
    "options": [
     "Chính phủ, Thủ tướng; và báo cáo trước Nhân dân về vấn đề quan trọng",
-    "Chủ tịch nước",
-    "Tòa án nhân dân tối cao",
-    "Mặt trận Tổ quốc"
+    "Chủ tịch nước và Chủ tịch Quốc hội trước các kỳ họp Quốc hội",
+    "Tòa án nhân dân tối cao và Viện kiểm sát nhân dân tối cao cùng cấp",
+    "Mặt trận Tổ quốc Việt Nam và các tổ chức chính trị - xã hội"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 99.",
@@ -71,6 +71,16 @@
     {
      "text": "Về hoạt động chung của Chính phủ",
      "answer": "right"
+    },
+    {
+     "text": "Bộ trưởng chịu trách nhiệm cá nhân về ngành, lĩnh vực được phân công phụ trách",
+     "answer": "left",
+     "basis": "Khoản 4 Điều 95 Hiến pháp 2013"
+    },
+    {
+     "text": "Chính phủ cùng chịu trách nhiệm về quyết định chung được thông qua theo đa số",
+     "answer": "right",
+     "basis": "Điều 95 Hiến pháp 2013 (chế độ làm việc tập thể)"
     }
    ],
    "explain": "Khoản 4 Điều 95."

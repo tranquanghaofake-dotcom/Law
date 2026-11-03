@@ -31,9 +31,9 @@
    "q": "Khoản chi ngân sách được thực hiện khi nào?",
    "options": [
     "Khi có dự toán được cấp có thẩm quyền giao, trừ trường hợp tạm cấp ngân sách",
-    "Khi thủ trưởng đơn vị đồng ý",
-    "Bất cứ khi nào có nguồn",
-    "Khi được Kho bạc cho vay"
+    "Khi thủ trưởng đơn vị đồng ý bằng văn bản, không cần có dự toán được giao",
+    "Bất cứ khi nào đơn vị có nguồn tiền dư từ năm trước, không cần dự toán được giao",
+    "Khi được Kho bạc Nhà nước cho vay trước để bảo đảm thanh toán công việc phát sinh"
    ],
    "answer": 0,
    "explain": "Khoản 4 Điều 8.",
@@ -48,9 +48,9 @@
    "q": "Nguyên tắc nào đòi hỏi mọi khoản thu, chi phải được đưa vào ngân sách?",
    "options": [
     "Toàn bộ các khoản thu, chi phải được dự toán, tổng hợp đầy đủ vào ngân sách nhà nước",
-    "Nguyên tắc tự chủ tài chính",
-    "Nguyên tắc bí mật ngân sách",
-    "Nguyên tắc lợi nhuận"
+    "Các đơn vị được tự quyết định mọi khoản thu, chi ngoài ngân sách, không cần dự toán",
+    "Các khoản thu, chi chỉ báo cáo cơ quan tài chính cấp trên, không công khai cho dân",
+    "Chỉ các khoản thu, chi lớn hơn mức Chính phủ quy định mới phải đưa vào ngân sách"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 8.",
@@ -72,6 +72,16 @@
     {
      "text": "Khoản chi chưa có dự toán, không thuộc trường hợp tạm cấp",
      "answer": "right"
+    },
+    {
+     "text": "Chi cho bộ máy nhà nước khi dự toán đã được cấp có thẩm quyền giao",
+     "answer": "left",
+     "basis": "Khoản 4 và khoản 6 Điều 8 Luật Ngân sách nhà nước 2025"
+    },
+    {
+     "text": "Ngân sách bảo đảm chi trả các khoản nợ lãi đến hạn",
+     "answer": "left",
+     "basis": "Khoản 8 Điều 8 Luật Ngân sách nhà nước 2025"
     }
    ],
    "explain": "Khoản 4 Điều 8."
@@ -112,6 +122,18 @@
     "dự toán",
     "định mức"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Toàn bộ các khoản thu, chi ngân sách phải được dự toán, tổng hợp đầy đủ vào ngân sách nhà nước.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 8 Luật Ngân sách nhà nước 2025 (89/2025/QH15) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 8 Luật Ngân sách nhà nước 2025 (89/2025/QH15)",
+    "url": "https://thuvienphapluat.vn/van-ban/Tai-chinh-nha-nuoc/Luat-ngan-sach-nha-nuoc-2025-so-89-2025-QH15-650061.aspx"
+   }
   }
  ]
 }

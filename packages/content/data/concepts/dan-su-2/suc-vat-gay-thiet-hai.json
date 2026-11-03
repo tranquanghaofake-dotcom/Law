@@ -47,8 +47,8 @@
    "options": [
     "Liên đới bồi thường thiệt hại",
     "Chỉ chủ sở hữu bồi thường",
-    "Chỉ người thứ ba bồi thường",
-    "Không ai bồi thường"
+    "Người thứ ba tự bồi thường",
+    "Không ai phải bồi thường cả"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 603.",
@@ -70,6 +70,16 @@
     {
      "text": "Người lạ cố tình kích động con bò lao vào người khác, chủ không có lỗi",
      "answer": "right"
+    },
+    {
+     "text": "Con chó nhà ông A cắn người đi đường do cửa lồng bị hỏng, ông A không đóng cửa",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 603 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Người lạ dùng gậy đánh con chó khiến nó cắn người khác, người lạ có lỗi hoàn toàn",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 603 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 603."
@@ -110,6 +120,18 @@
     "người thứ ba",
     "liên đới"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người chiếm hữu, sử dụng súc vật phải bồi thường thiệt hại trong thời gian chiếm hữu, sử dụng súc vật, trừ trường hợp có thỏa thuận khác.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 603 Bộ luật Dân sự 2015 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 603 Bộ luật Dân sự 2015",
+    "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+   }
   }
  ]
 }

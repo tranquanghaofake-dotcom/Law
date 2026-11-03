@@ -28,9 +28,9 @@
    "q": "Theo khoản 1 Điều 69, ngân hàng thanh toán có thể là chủ thể nào?",
    "options": [
     "Ngân hàng Nhà nước Việt Nam hoặc ngân hàng thương mại",
-    "Chỉ ngân hàng thương mại nhà nước",
-    "Mọi tổ chức tín dụng",
-    "Công ty tài chính"
+    "Chỉ ngân hàng thương mại nhà nước và các chi nhánh",
+    "Tổ chức tín dụng phi ngân hàng được phép hoạt động",
+    "Công ty tài chính và công ty cho thuê tài chính"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 69.",
@@ -73,6 +73,11 @@
     {
      "text": "Đã niêm yết trên Sở giao dịch",
      "answer": "right"
+    },
+    {
+     "text": "Ngân hàng thương mại không có giấy phép hoạt động tại Việt Nam",
+     "answer": "right",
+     "basis": "Điểm a khoản 2 Điều 69 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 2 Điều 69."

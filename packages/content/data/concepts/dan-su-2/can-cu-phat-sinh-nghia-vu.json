@@ -30,9 +30,9 @@
    "q": "Người nhận được tiền chuyển khoản nhầm phải trả lại dựa trên căn cứ phát sinh nghĩa vụ nào?",
    "options": [
     "Được lợi về tài sản không có căn cứ pháp luật",
-    "Hợp đồng",
-    "Hành vi pháp lý đơn phương",
-    "Thực hiện công việc không có ủy quyền"
+    "Hợp đồng ký với người gửi tiền có thỏa thuận",
+    "Hành vi pháp lý đơn phương của người chuyển",
+    "Thực hiện công việc không ủy quyền cho người"
    ],
    "answer": 0,
    "explain": "Khoản 4 Điều 275.",
@@ -47,9 +47,9 @@
    "q": "Hứa thưởng cho người tìm được đồ thất lạc làm phát sinh nghĩa vụ từ căn cứ nào?",
    "options": [
     "Hành vi pháp lý đơn phương",
-    "Hợp đồng",
-    "Gây thiệt hại",
-    "Chiếm hữu không có căn cứ"
+    "Hợp đồng dân sự đơn giản",
+    "Gây thiệt hại cho người khác",
+    "Chiếm hữu không có căn cứ rõ"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 275; Điều 570.",
@@ -75,6 +75,16 @@
     {
      "text": "Hoàn trả tài sản nhận nhầm",
      "answer": "right"
+    },
+    {
+     "text": "Bên bán phải giao chiếc xe đã thỏa thuận theo hợp đồng mua bán",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 275 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Người đơn phương hứa thưởng cho ai tìm được thú cưng bị lạc",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 275 Bộ luật Dân sự 2015 (hành vi pháp lý đơn phương)"
     }
    ],
    "explain": "Điều 275."

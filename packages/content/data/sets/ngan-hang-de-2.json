@@ -9,7 +9,7 @@
       "q": "Phát hành chứng chỉ tiền gửi thuộc nghiệp vụ nào?",
       "options": [
         "Nhận tiền gửi",
-        "Cấp tín dụng",
+        "Cấp tín dụng ngắn hạn",
         "Bao thanh toán",
         "Dịch vụ trung gian thanh toán"
       ],
@@ -35,9 +35,9 @@
       "q": "Cho vay của tổ chức tín dụng đòi hỏi khoản tiền được sử dụng thế nào?",
       "options": [
         "Vào mục đích xác định, trong thời gian nhất định",
-        "Tùy ý bên vay",
-        "Chỉ để mua nhà",
-        "Chỉ để sản xuất"
+        "Tùy ý bên vay sử dụng, không ràng buộc mục đích nào",
+        "Để mua nhà ở và đất thổ cư trong thời gian dài",
+        "Để sản xuất kinh doanh trong một thời gian ngắn"
       ],
       "answer": 0,
       "explain": "Khoản 7 Điều 4.",
@@ -61,9 +61,9 @@
       "q": "Sau khi ngân hàng trả thay theo bảo lãnh, khách hàng phải làm gì?",
       "options": [
         "Nhận nợ bắt buộc và hoàn trả",
-        "Không phải trả",
-        "Chỉ trả lãi",
-        "Trả cho bên nhận bảo lãnh"
+        "Không phải trả khoản nào cả",
+        "Chỉ trả lãi theo thỏa thuận",
+        "Trả cho bên nhận bảo lãnh thêm"
       ],
       "answer": 0,
       "explain": "Khoản 2 Điều 4.",
@@ -100,9 +100,9 @@
       "q": "Dịch vụ trung gian thanh toán là gì?",
       "options": [
         "Hoạt động trung gian kết nối, truyền dẫn, xử lý dữ liệu điện tử các giao dịch thanh toán",
-        "Cho vay qua ứng dụng",
-        "Nhận tiền gửi trực tuyến",
-        "Phát hành tiền"
+        "Cho vay qua ứng dụng di động của ngân hàng và các tổ chức tài chính khác trong nước",
+        "Nhận tiền gửi trực tuyến từ khách hàng cá nhân và tổ chức có tài khoản thanh toán",
+        "Phát hành tiền điện tử để thay thế hoàn toàn tiền mặt trong lưu thông tại Việt Nam"
       ],
       "answer": 0,
       "explain": "Khoản 10 Điều 6.",
@@ -113,9 +113,9 @@
       "q": "Vàng là ngoại hối trong trường hợp nào?",
       "options": [
         "Vàng thỏi mang ra khỏi lãnh thổ Việt Nam",
-        "Nhẫn vàng mua ở tiệm",
-        "Vàng trang sức thừa kế",
-        "Mọi trường hợp"
+        "Nhẫn vàng mua ở tiệm vàng để tích trữ",
+        "Vàng trang sức thừa kế được cất giữ",
+        "Mọi trường hợp vàng được mua bán trong nước"
       ],
       "answer": 0,
       "explain": "Điểm d khoản 1 Điều 4.",
@@ -125,10 +125,10 @@
     {
       "q": "Người nước ngoài được phép cư trú tại Việt Nam bao lâu thì là người cư trú?",
       "options": [
-        "Từ 6 tháng",
+        "Từ sáu tháng trở lên",
         "Từ 12 tháng trở lên",
-        "Từ 183 ngày",
-        "Từ 24 tháng"
+        "Từ 9 tháng liên tục",
+        "Từ 3 tháng trở lên"
       ],
       "answer": 1,
       "explain": "Điểm h khoản 2 Điều 4.",

@@ -43,9 +43,9 @@
    "q": "Nhược điểm của văn bản quy phạm pháp luật?",
    "options": [
     "Khái quát nên khó dự liệu hết tình huống, kém linh hoạt, quy trình ban hành lâu, tốn kém",
-    "Không có tính khoa học",
-    "Không được nhà nước bảo đảm",
-    "Chỉ áp dụng một lần"
+    "Được ban hành nhanh, dễ sửa đổi, ít tốn kém chi phí và phù hợp với đa số tình huống",
+    "Không có tính khoa học, nội dung mơ hồ, rất khó áp dụng trong thực tế xét xử",
+    "Không được nhà nước bảo đảm thực hiện, chủ yếu mang tính khuyến nghị đối với các chủ thể"
    ],
    "answer": 0,
    "explain": "VD9."
@@ -63,6 +63,16 @@
     {
      "text": "Chế định luật, ngành luật",
      "answer": "right"
+    },
+    {
+     "text": "Văn bản quy phạm pháp luật do cơ quan nhà nước ban hành đúng thẩm quyền",
+     "answer": "left",
+     "basis": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), VD9"
+    },
+    {
+     "text": "Cấu trúc nội tại của hệ thống pháp luật, chia thành ngành luật và chế định",
+     "answer": "right",
+     "basis": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), VD9"
     }
    ],
    "explain": "VD9."

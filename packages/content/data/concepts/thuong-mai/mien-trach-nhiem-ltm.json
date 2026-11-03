@@ -29,9 +29,9 @@
    "q": "Ai có nghĩa vụ chứng minh các trường hợp miễn trách nhiệm?",
    "options": [
     "Bên vi phạm hợp đồng",
-    "Bên bị vi phạm",
-    "Tòa án",
-    "Trọng tài"
+    "Bên bị vi phạm hợp đồng",
+    "Tòa án nhân dân tỉnh",
+    "Trọng tài thương mại"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 294.",
@@ -46,9 +46,9 @@
    "q": "Căn cứ miễn trách nhiệm nào có trong Luật Thương mại?",
    "options": [
     "Thực hiện quyết định của cơ quan quản lý nhà nước mà các bên không thể biết khi giao kết",
-    "Bên vi phạm gặp khó khăn tài chính",
-    "Giá thị trường biến động",
-    "Bên vi phạm thay đổi lãnh đạo"
+    "Bên vi phạm gặp khó khăn tài chính và không có khả năng thanh toán đúng hạn",
+    "Giá thị trường biến động mạnh làm tăng chi phí thực hiện hợp đồng của bên vi phạm",
+    "Bên vi phạm thay đổi lãnh đạo doanh nghiệp và chuyển trụ sở sang địa phương khác"
    ],
    "answer": 0,
    "explain": "Điểm d khoản 1 Điều 294.",
@@ -70,6 +70,16 @@
     {
      "text": "Doanh nghiệp thiếu vốn nên chậm giao",
      "answer": "right"
+    },
+    {
+     "text": "Lũ lụt bất thường làm hỏng kho, không thể giao hàng đúng hạn",
+     "answer": "left",
+     "basis": "Điểm b khoản 1 Điều 294 Luật Thương mại 2005"
+    },
+    {
+     "text": "Bên mua chậm thanh toán vì không có tiền, bên bán muốn không bị phạt",
+     "answer": "right",
+     "basis": "Điều 294 Luật Thương mại 2005 (không thuộc trường hợp miễn trách nhiệm)"
     }
    ],
    "explain": "Điều 294."
@@ -110,6 +120,18 @@
     "lỗi bên kia",
     "chứng minh"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Bên vi phạm hợp đồng có nghĩa vụ chứng minh các trường hợp miễn trách nhiệm.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 294 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 294 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)",
+    "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+   }
   }
  ]
 }

@@ -46,9 +46,9 @@
    "q": "Giải quyết tranh chấp bằng Trọng tài có công khai không?",
    "options": [
     "Không công khai, trừ khi các bên có thỏa thuận khác",
-    "Bắt buộc công khai",
-    "Chỉ công khai phán quyết",
-    "Do Trọng tài viên tùy ý"
+    "Bắt buộc công khai toàn bộ nội dung vụ việc cho báo chí",
+    "Chỉ công khai phán quyết cuối cùng của hội đồng trọng tài",
+    "Do Trọng tài viên tùy ý quyết định theo từng vụ việc riêng"
    ],
    "answer": 0,
    "explain": "Khoản 4 Điều 4.",
@@ -74,6 +74,11 @@
     {
      "text": "Phán quyết chung thẩm",
      "answer": "left"
+    },
+    {
+     "text": "Người được các bên chọn để giải quyết tranh chấp phải độc lập, khách quan, vô tư",
+     "answer": "left",
+     "basis": "Điều 4 Luật Trọng tài thương mại 2010"
     }
    ],
    "explain": "Điều 4 Luật TTTM; Điều 15 BLTTDS."
@@ -114,6 +119,18 @@
     "không công khai",
     "chung thẩm"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Giải quyết tranh chấp bằng Trọng tài được tiến hành không công khai, trừ trường hợp các bên có thỏa thuận khác.",
+   "answer": true,
+   "explain": "Đúng. Khoản 4 Điều 4 Luật Trọng tài thương mại 2010 (VBHN 60/VBHN-VPQH 2025) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 4 Luật Trọng tài thương mại 2010 (VBHN 60/VBHN-VPQH 2025)",
+    "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-60-VBHN-VPQH-2025-Luat-Trong-tai-thuong-mai-669808.aspx"
+   }
   }
  ]
 }

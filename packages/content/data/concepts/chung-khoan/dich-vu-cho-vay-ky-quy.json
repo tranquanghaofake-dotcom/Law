@@ -47,9 +47,9 @@
    "q": "Trước khi cung cấp dịch vụ tại điểm b khoản 1 Điều 86, công ty chứng khoán phải làm gì?",
    "options": [
     "Được Ủy ban Chứng khoán Nhà nước chấp thuận bằng văn bản",
-    "Chỉ cần thông báo cho khách hàng",
-    "Được Sở giao dịch cấp phép",
-    "Không cần thủ tục gì"
+    "Chỉ cần thông báo cho khách hàng và cơ quan quản lý",
+    "Được Sở giao dịch chứng khoán cấp phép hoạt động kinh doanh",
+    "Được Hội đồng quản trị của công ty phê duyệt bằng nghị quyết"
    ],
    "answer": 0,
    "explain": "Điểm e khoản 1 Điều 87.",
@@ -75,6 +75,16 @@
     {
      "text": "Bảo lãnh phát hành cổ phiếu IPO",
      "answer": "right"
+    },
+    {
+     "text": "Cho khách hàng vay tiền để mua chứng khoán thông qua dịch vụ ký quỹ",
+     "answer": "left",
+     "basis": "Điểm b khoản 1 Điều 86 Luật Chứng khoán 2019"
+    },
+    {
+     "text": "Tư vấn đầu tư miễn phí cho khách hàng qua bản tin nội bộ",
+     "answer": "right",
+     "basis": "Điểm b khoản 1 Điều 86 Luật Chứng khoán 2019 (không thuộc dịch vụ cho vay, ứng trước)"
     }
    ],
    "explain": "Điểm b khoản 1 Điều 86; bảo lãnh là nghiệp vụ riêng (khoản 3 Điều 86)."

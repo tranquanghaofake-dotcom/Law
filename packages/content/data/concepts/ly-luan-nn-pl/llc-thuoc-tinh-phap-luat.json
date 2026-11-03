@@ -29,9 +29,9 @@
    "q": "Thuộc tính nào phân biệt pháp luật với đạo đức rõ nhất?",
    "options": [
     "Tính quyền lực nhà nước — được nhà nước bảo đảm thực hiện",
-    "Tính quy phạm",
-    "Tính ý chí",
-    "Tính xã hội"
+    "Tính quy phạm, bắt buộc chung đối với mọi chủ thể trong xã hội",
+    "Tính ý chí chung của cộng đồng được ghi nhận thành quy tắc",
+    "Tính xã hội, phản ánh lợi ích chung của toàn thể cộng đồng"
    ],
    "answer": 0,
    "explain": "Đạo đức cũng có tính quy phạm và ý chí nhưng không do nhà nước bảo đảm bằng cưỡng chế."
@@ -42,9 +42,9 @@
    "q": "Tính quy phạm phổ biến của pháp luật nghĩa là gì?",
    "options": [
     "Là khuôn mẫu chung cho hành vi, bắt buộc với mọi chủ thể trong điều kiện dự liệu, áp dụng nhiều lần",
-    "Mọi người đều biết pháp luật",
-    "Pháp luật được in phổ biến",
-    "Pháp luật giống nhau ở mọi nước"
+    "Là quy tắc riêng do từng cơ quan tự đặt ra, chỉ áp dụng cho một số người cụ thể trong từng trường hợp",
+    "Là khuôn mẫu chung cho hành vi, bắt buộc với mọi người nhưng chỉ khi có văn bản kèm theo rõ ràng",
+    "Là hướng dẫn chung không bắt buộc, mỗi người tự quyết định có áp dụng hay không trong đời sống"
    ],
    "answer": 0,
    "explain": "VD8."
@@ -62,6 +62,16 @@
     {
      "text": "Tính tự nguyện tuyệt đối",
      "answer": "right"
+    },
+    {
+     "text": "Nội dung quy định được thể hiện rõ ràng, chính thức trong văn bản",
+     "answer": "left",
+     "basis": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), VD8"
+    },
+    {
+     "text": "Người dân tự nguyện tuân thủ hoàn toàn mà không chịu bất kỳ ràng buộc nào của pháp luật",
+     "answer": "right",
+     "basis": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), VD8"
     }
    ],
    "explain": "VD8."

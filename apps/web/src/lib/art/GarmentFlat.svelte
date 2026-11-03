@@ -7,10 +7,12 @@
   // chính các mảnh đó) → chi tiết may (details: đường diễu, túi, khuy, nếp gấp). Vẽ nửa trái rồi lật gương; chi tiết lệch
   // (nẹp khuy, cà vạt, thẻ tên, khăn cài túi, thêu) vẽ riêng. Cả bộ qua filter `cloth`: mép tối dần, ánh đèn.
   // Không quân hàm, cấp hiệu, Quốc huy, huân chương; cầu vai kiểm sát là dải đỏ trơn viền chỉ vàng.
-  let { outfit }: { outfit: string } = $props();
+  // `tone`: chỉ số biến thể màu (showcase/tones.ts); `adorn`: phụ kiện cài áo / khăn lụa (looks.ts). Mặc định = bản gốc.
+  import { TONE_PALETTES, type Pal } from './showcase/tones';
+  let { outfit, tone = 0, adorn = 'khong', pattern = 'tron', neck = 'mac-dinh' }: { outfit: string; tone?: number; adorn?: string; pattern?: string; neck?: string } = $props();
   const uid = `gf${++seq}`;
   const INK = '#2b2420';
-  type Pal = { body: string; sleeve: string; shirt: string; tie: string | null };
+  const SCARF: Record<string, string> = { 'thuong-phuc': '#b3282d', 'cong-so': '#2c5aa0', 'vest-xanh': '#c99a3a', 'vest-den': '#7a2433', 'ao-choang': '#8c2f28', 'ks-xuan-he': '#e8e2d2', 'ks-thu-dong': '#c99a3a' };
   const PAL: Record<string, Pal> = {
     'thuong-phuc': { body: '#ece2cf', sleeve: '#e2d6bf', shirt: '#ece2cf', tie: null },
     'cong-so': { body: '#fbfbf8', sleeve: '#f0f2f3', shirt: '#fbfbf8', tie: null },
@@ -22,7 +24,7 @@
     'ao-dai': { body: '#a8322b', sleeve: '#982c26', shirt: '#f6f1e6', tie: null },
   };
   const o = $derived(PAL[outfit] ? outfit : 'thuong-phuc');
-  const p = $derived(PAL[o]);
+  const p = $derived<Pal>({ ...PAL[o], ...(TONE_PALETTES[o]?.[tone] ?? {}) });
   const dark = $derived(o === 'vest-den' || o === 'ao-choang' || o === 'ks-thu-dong' || o === 'vest-xanh');
   const suit = $derived(o === 'vest-xanh' || o === 'vest-den' || o === 'ks-thu-dong');
   const stitch = $derived(dark ? '#8d8f99' : '#8a7c6c');
@@ -33,7 +35,9 @@
   // cột ma-nơ-canh chỉ lộ dưới gấu áo (không lộ qua khe giữa hai vạt vest)
   const HEM: Record<string, number> = { 'thuong-phuc': 314, 'cong-so': 308, 'vest-xanh': 326, 'vest-den': 326, 'ks-thu-dong': 326, 'ao-choang': 364, 'ks-xuan-he': 292, 'ao-dai': 380 };
   const hem = $derived(HEM[o]);
-  const fb = (c: string, tex: boolean) => (tex ? `url(#${uid}-${TEX})` : c);
+  const pc = $derived(dark ? 'rgba(255,255,255,.2)' : 'rgba(0,0,0,.16)');
+  const showPat = $derived(pattern !== 'tron' && o !== 'ao-dai');
+  const fb = (c: string, tex: boolean, pat = false) => (pat ? `url(#${uid}-pat)` : tex ? `url(#${uid}-${TEX})` : c);
   // dải đan thừng giữa áo len: hai sợi bện chéo nhau
   const cable = (ph: number) => {
     let d = '';
@@ -42,42 +46,42 @@
   };
 </script>
 
-{#snippet sleeveLong(len: number, tex: boolean)}
-  <path d="M86 73C70 81 61 110 56 168L50 {len}L77 {len + 4}L81 186Q86 156 92 142Z" fill={fb(p.sleeve, tex)} />
+{#snippet sleeveLong(len: number, tex: boolean, pat = false)}
+  <path d="M86 73C70 81 61 110 56 168L50 {len}L77 {len + 4}L81 186Q86 156 92 142Z" fill={fb(p.sleeve, tex, pat)} />
 {/snippet}
 
-{#snippet panels(tex: boolean)}
+{#snippet panels(tex: boolean, pat = false)}
   {#if o === 'thuong-phuc'}
-    {@render sleeveLong(272, tex)}
-    <path d="M50 272L77 276L75 298L47 294Z" fill={fb(p.sleeve, tex)} />
-    <path d="M150 70Q133 70 124 57L86 73Q90 110 92 142L95 296L150 296Z" fill={fb(p.body, tex)} />
-    <path d="M95 296L150 296V318H96Z" fill={fb(p.sleeve, tex)} />
-    <path d="M124 57Q130 78 150 80V71Q135 70 129 55Z" fill={fb(p.sleeve, tex)} />
+    {@render sleeveLong(272, tex, pat)}
+    <path d="M50 272L77 276L75 298L47 294Z" fill={fb(p.sleeve, tex, pat)} />
+    <path d="M150 70Q133 70 124 57L86 73Q90 110 92 142L95 296L150 296Z" fill={fb(p.body, tex, pat)} />
+    <path d="M95 296L150 296V318H96Z" fill={fb(p.sleeve, tex, pat)} />
+    <path d="M124 57Q130 78 150 80V71Q135 70 129 55Z" fill={fb(p.sleeve, tex, pat)} />
   {:else if o === 'cong-so'}
-    {@render sleeveLong(254, tex)}
-    <path d="M50 254L77 258L75 284L47 280Z" fill={fb(p.sleeve, tex)} />
-    <path d="M150 74Q133 72 124 57L86 73Q90 110 92 142L96 298Q122 320 150 314Z" fill={fb(p.body, tex)} />
-    <path d="M124 57Q137 66 150 67V61Q139 60 128 53Z" fill={fb(p.body, tex)} />
-    <path d="M127 58L117 66L131 94L148 76Q137 70 127 58Z" fill={fb(p.body, tex)} />
+    {@render sleeveLong(254, tex, pat)}
+    <path d="M50 254L77 258L75 284L47 280Z" fill={fb(p.sleeve, tex, pat)} />
+    <path d="M150 74Q133 72 124 57L86 73Q90 110 92 142L96 298Q122 320 150 314Z" fill={fb(p.body, tex, pat)} />
+    <path d="M124 57Q137 66 150 67V61Q139 60 128 53Z" fill={fb(p.body, tex, pat)} />
+    <path d="M127 58L117 66L131 94L148 76Q137 70 127 58Z" fill={fb(p.body, tex, pat)} />
   {:else if o === 'ks-xuan-he'}
-    <path d="M86 73C70 81 60 100 53 132L84 144L92 140Z" fill={fb(p.sleeve, tex)} />
-    <path d="M53 132L84 144L85 137L56 124Z" fill={fb(p.body, tex)} />
-    <path d="M150 74Q133 72 124 57L86 73Q90 110 92 142L95 296L150 296Z" fill={fb(p.body, tex)} />
-    <path d="M150 84L124 57Q116 64 117 73L136 106L150 92Z" fill={fb(p.body, tex)} />
+    <path d="M86 73C70 81 60 100 53 132L84 144L92 140Z" fill={fb(p.sleeve, tex, pat)} />
+    <path d="M53 132L84 144L85 137L56 124Z" fill={fb(p.body, tex, pat)} />
+    <path d="M150 74Q133 72 124 57L86 73Q90 110 92 142L95 296L150 296Z" fill={fb(p.body, tex, pat)} />
+    <path d="M150 84L124 57Q116 64 117 73L136 106L150 92Z" fill={fb(p.body, tex, pat)} />
   {:else if suit}
-    {@render sleeveLong(286, tex)}
-    <path d="M128 57L84 72Q89 110 92 146L94 330Q120 338 140 334Q149 324 149 300L148 190Z" fill={fb(p.body, tex)} />
+    {@render sleeveLong(286, tex, pat)}
+    <path d="M128 57L84 72Q89 110 92 146L94 330Q120 338 140 334Q149 324 149 300L148 190Z" fill={fb(p.body, tex, pat)} />
     <!-- ve áo (ve chữ K) + cổ trên -->
-    <path d="M128 57L116 65L104 96L114 98L108 108L148 190L150 186Z" fill={fb(p.sleeve, tex)} />
+    <path d="M128 57L116 65L104 96L114 98L108 108L148 190L150 186Z" fill={fb(p.sleeve, tex, pat)} />
   {:else if o === 'ao-choang'}
-    <path d="M84 72C60 86 42 142 30 236L40 254L96 252Q92 190 92 142Z" fill={fb(p.sleeve, tex)} />
-    <path d="M34 236L40 254L96 252L95 240Z" fill={fb(p.body, tex)} />
-    <path d="M128 57L84 72Q80 200 70 366L150 370V100Z" fill={fb(p.body, tex)} />
-    <path d="M128 57L84 72L87 104Q120 112 150 110V100L130 57Z" fill={fb(p.body, tex)} />
+    <path d="M84 72C60 86 42 142 30 236L40 254L96 252Q92 190 92 142Z" fill={fb(p.sleeve, tex, pat)} />
+    <path d="M34 236L40 254L96 252L95 240Z" fill={fb(p.body, tex, pat)} />
+    <path d="M128 57L84 72Q80 200 70 366L150 370V100Z" fill={fb(p.body, tex, pat)} />
+    <path d="M128 57L84 72L87 104Q120 112 150 110V100L130 57Z" fill={fb(p.body, tex, pat)} />
   {:else if o === 'ao-dai'}
-    <path d="M102 76C90 90 84 130 80 200L74 286L90 288L96 204Q102 160 106 142Z" fill={fb(p.sleeve, tex)} />
-    <path d="M150 62H139L102 76Q106 110 106 142Q104 160 110 176L116 196Q110 300 106 384L150 386Z" fill={fb(p.body, tex)} />
-    <rect x="137" y="44" width="13" height="19" rx="2" fill={fb(p.body, tex)} />
+    <path d="M102 76C90 90 84 130 80 200L74 286L90 288L96 204Q102 160 106 142Z" fill={fb(p.sleeve, tex, pat)} />
+    <path d="M150 62H139L102 76Q106 110 106 142Q104 160 110 176L116 196Q110 300 106 384L150 386Z" fill={fb(p.body, tex, pat)} />
+    <rect x="137" y="44" width="13" height="19" rx="2" fill={fb(p.body, tex, pat)} />
   {/if}
 {/snippet}
 
@@ -183,6 +187,12 @@
     <linearGradient id="{uid}-linen" x1="0" x2="1"><stop offset="0" stop-color="#b9a582" /><stop offset=".45" stop-color="#eadcc0" /><stop offset="1" stop-color="#a8936f" /></linearGradient>
     <linearGradient id="{uid}-wood" x1="0" x2="1"><stop offset="0" stop-color="#5a3a22" /><stop offset=".5" stop-color="#9a6a42" /><stop offset="1" stop-color="#4a2e1a" /></linearGradient>
     <linearGradient id="{uid}-tie" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".25" /><stop offset=".45" stop-color="#fff" stop-opacity=".2" /><stop offset="1" stop-color="#000" stop-opacity=".3" /></linearGradient>
+    <pattern id="{uid}-pat" width={pattern === 'ca-ro' ? 16 : 9} height={pattern === 'ca-ro' ? 16 : pattern === 'cham' ? 9 : 8} patternUnits="userSpaceOnUse">
+      {#if pattern === 'soc-doc'}<rect width="3.4" height="9" fill={pc} />
+      {:else if pattern === 'soc-chi'}<rect width="1.1" height="8" fill={pc} />
+      {:else if pattern === 'ca-ro'}<rect width="16" height="2.4" fill={pc} /><rect width="2.4" height="16" fill={pc} />
+      {:else if pattern === 'cham'}<circle cx="4.5" cy="4.5" r="1.5" fill={pc} />{/if}
+    </pattern>
     <pattern id="{uid}-stripe" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-40)"><rect width="7" height="2" fill="#d8b46a" fill-opacity=".55" /></pattern>
   </defs>
   <!-- ma-nơ-canh bán thân: cột + chân đế (sau áo), cổ bọc vải lanh có núm gỗ; lót sau cổ áo cho cảm giác áo đang mặc -->
@@ -200,7 +210,9 @@
   {#if suit || o === 'ao-choang'}
     <path d="M128 57L150 {o === 'ao-choang' ? 104 : 188}L172 57Q150 68 128 57Z" fill={p.shirt} stroke={INK} stroke-width="1.3" />
     <path d="M131 58L141 76L150 66L159 76L169 58" fill={p.shirt} stroke={INK} stroke-width="1.1" />
-    {#if p.tie}
+    {#if p.tie && neck === 'no'}
+      <path d="M150 74L134 64V86ZM150 74L166 64V86Z" fill={p.tie} stroke={INK} stroke-width="1.1" /><rect x="145.5" y="68" width="9" height="12" rx="2.5" fill={p.tie} stroke={INK} stroke-width="1.1" /><path d="M136 70V82M164 70V82" stroke="rgba(255,255,255,.3)" stroke-width="1" />
+    {:else if p.tie && neck !== 'mo-co'}
       <path d="M145 68h10l2 8l-7 4l-7-4Z" fill={p.tie} stroke={INK} stroke-width="1.1" />
       <path d="M144 80L150 77L156 80L{o === 'ao-choang' ? '154 104L146 104' : '161 160L150 177L139 160'}Z" fill={p.tie} stroke={INK} stroke-width="1.1" />
       {#if o === 'vest-xanh'}<path d="M144 80L150 77L156 80L161 160L150 177L139 160Z" fill="url(#{uid}-stripe)" />{/if}
@@ -218,6 +230,12 @@
       {@render panels(true)}
       <g transform="matrix(-1 0 0 1 300 0)">{@render panels(true)}</g>
     </g>
+    {#if showPat}
+      <g class="gf-pat" stroke="none" pointer-events="none">
+        {@render panels(false, true)}
+        <g transform="matrix(-1 0 0 1 300 0)">{@render panels(false, true)}</g>
+      </g>
+    {/if}
     <!-- che đường ghép gương ở giữa với áo liền thân -->
     {#if o === 'thuong-phuc'}<path d="M150 81V295" stroke={p.body} stroke-width="3.2" /><path d="M150 297.5V316.5" stroke={p.sleeve} stroke-width="2.4" />{/if}
     {#if o === 'cong-so'}<path d="M150 84V312" stroke={p.body} stroke-width="3.2" />{/if}
@@ -268,4 +286,23 @@
       {/if}
     </g>
   </g>
+  <!-- phụ kiện cài áo (ngực): ghim cán cân · hoa sen · sách · trống đồng nhỏ; khăn lụa quanh cổ -->
+  {#if adorn === 'khan-lua' && o !== 'ao-dai'}
+    <path d="M126 59Q150 78 174 59L170 70Q150 88 130 70Z" fill={SCARF[o] ?? '#b3282d'} stroke={INK} stroke-width="1.1" />
+    <path d="M138 80L150 98L162 80Q150 88 138 80Z" fill={SCARF[o] ?? '#b3282d'} stroke={INK} stroke-width="1" />
+    <path d="M132 66Q150 80 168 66" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="1.2" />
+  {:else if adorn !== 'khong' && adorn !== 'khan-lua'}
+    <g transform="translate({o === 'ao-dai' ? 119 : o === 'ao-choang' ? 114 : 112} {o === 'ao-dai' ? 134 : 124})" stroke="#6b4c14" stroke-width=".9">
+      <circle r="11" fill="#f1d896" stroke-width="1.3" /><circle r="8.4" fill="none" stroke="#b98d3a" stroke-width=".7" />
+      {#if adorn === 'ghim-can'}
+        <path d="M0-6V6M-6-3Q0-5 6-3M-6-3l-2.4 5h4.8zM6-3l-2.4 5h4.8zM-3 6h6" fill="none" stroke="#5b3d0e" stroke-width="1" />
+      {:else if adorn === 'ghim-sen'}
+        <path d="M0 5Q-6 0 0-6Q6 0 0 5ZM0 5Q-8 4-7-3Q-1 0 0 5ZM0 5Q8 4 7-3Q1 0 0 5Z" fill="#e8a0a6" stroke="#8c3b44" stroke-width=".8" />
+      {:else if adorn === 'ghim-sach'}
+        <path d="M-6-5Q-3-6 0-4Q3-6 6-5V5Q3 4 0 6Q-3 4-6 5Z" fill="#8c2f28" stroke="#5b3d0e" stroke-width=".9" /><path d="M0-4V6" stroke="#f1d896" stroke-width=".9" />
+      {:else}
+        <circle r="5" fill="none" stroke="#5b3d0e" stroke-width="1" /><circle r="1.8" fill="#5b3d0e" stroke="none" /><path d="M0-5.6V-8M0 5.6V8M-5.6 0H-8M5.6 0H8M4-4l1.8-1.8M-4-4l-1.8-1.8M4 4l1.8 1.8M-4 4l-1.8 1.8" stroke="#5b3d0e" stroke-width=".9" />
+      {/if}
+    </g>
+  {/if}
 </svg>

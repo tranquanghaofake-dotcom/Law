@@ -30,9 +30,9 @@
    "q": "Yếu tố phân biệt che giấu tội phạm với người giúp sức trong đồng phạm là gì?",
    "options": [
     "Che giấu tội phạm không có hứa hẹn trước",
-    "Che giấu tội phạm luôn nhận tiền",
+    "Che giấu tội phạm luôn nhận tiền của kẻ phạm",
     "Người giúp sức không biết có tội phạm",
-    "Không có khác biệt"
+    "Không có khác biệt gì về hành vi nào"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 18.",
@@ -71,6 +71,16 @@
     {
      "text": "Hứa trước sẽ cất giấu tài sản trộm được",
      "answer": "right"
+    },
+    {
+     "text": "Sau khi trộm xong, người phạm tội nhờ bạn giữ xe máy, bạn không hứa trước và đã cất giấu",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 18 Bộ luật Hình sự 2015"
+    },
+    {
+     "text": "Người hứa trước sẽ cất giấu tài sản trộm được để chia phần lợi ích",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 17 Bộ luật Hình sự 2015"
     }
    ],
    "explain": "Điều 17, 18."

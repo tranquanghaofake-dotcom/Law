@@ -49,9 +49,9 @@
    "q": "Tổ chức nào KHÔNG phải tham gia bảo hiểm tiền gửi?",
    "options": [
     "Ngân hàng chính sách",
-    "Ngân hàng thương mại nhận tiền gửi của cá nhân",
-    "Quỹ tín dụng nhân dân nhận tiền gửi của cá nhân",
-    "Chi nhánh ngân hàng nước ngoài nhận tiền gửi của cá nhân"
+    "Ngân hàng thương mại",
+    "Quỹ tín dụng nhân dân",
+    "Chi nhánh ngân hàng nước ngoài"
    ],
    "answer": 0,
    "explain": "Điều 6.",
@@ -73,6 +73,16 @@
     {
      "text": "Ngân hàng chính sách",
      "answer": "right"
+    },
+    {
+     "text": "Chi nhánh ngân hàng nước ngoài tại Việt Nam nhận tiền gửi của cá nhân",
+     "answer": "left",
+     "basis": "Khoản 3 Điều 4 và Điều 6 Luật Bảo hiểm tiền gửi 2025"
+    },
+    {
+     "text": "Công ty tài chính chỉ cho vay bằng nguồn vốn của mình, không huy động tiền của cá nhân",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 4 và Điều 6 Luật Bảo hiểm tiền gửi 2025"
     }
    ],
    "explain": "Điều 6."
@@ -113,6 +123,18 @@
     "bắt buộc",
     "Thống đốc"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thống đốc Ngân hàng Nhà nước Việt Nam quy định hạn mức chi trả tiền bảo hiểm trong từng thời kỳ.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 22 Luật Bảo hiểm tiền gửi 2025 (111/2025/QH15) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 22 Luật Bảo hiểm tiền gửi 2025 (111/2025/QH15)",
+    "url": "https://thuvienphapluat.vn/van-ban/Bao-hiem/Luat-Bao-hiem-tien-gui-2025-so-111-2025-QH15-667663.aspx"
+   }
   }
  ]
 }

@@ -30,7 +30,7 @@
    "q": "Một doanh nghiệp có thị phần bao nhiêu trên thị trường liên quan thì được coi là có vị trí thống lĩnh?",
    "options": [
     "Từ 30% trở lên",
-    "Từ 50% trở lên",
+    "Từ 50% trở lên/năm",
     "Từ 25% trở lên",
     "Từ 65% trở lên"
    ],
@@ -71,6 +71,16 @@
     {
      "text": "Không có doanh nghiệp nào cạnh tranh",
      "answer": "right"
+    },
+    {
+     "text": "Hai doanh nghiệp cùng hành động hạn chế cạnh tranh, tổng thị phần 50% trên thị trường",
+     "answer": "left",
+     "basis": "Điểm a khoản 2 Điều 24 Luật Cạnh tranh 2018"
+    },
+    {
+     "text": "Không có doanh nghiệp nào cạnh tranh về dịch vụ cấp nước sạch mà doanh nghiệp này cung cấp trên thị trường liên quan trong một đô thị",
+     "answer": "right",
+     "basis": "Điều 25 Luật Cạnh tranh 2018"
     }
    ],
    "explain": "Điều 24, 25."
@@ -111,6 +121,17 @@
     "65%",
     "10%"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Nhóm doanh nghiệp có vị trí thống lĩnh thị trường không bao gồm doanh nghiệp có thị phần ít hơn 10% trên thị trường liên quan.",
+   "answer": true,
+   "explain": "Đúng. Khoản 3 Điều 24 Luật Cạnh tranh 2018 (nguyên văn, lược dẫn chiếu khoản 2).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 24 Luật Cạnh tranh 2018"
+   }
   }
  ]
 }

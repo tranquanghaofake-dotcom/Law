@@ -48,7 +48,7 @@
    "options": [
     "Đại hội nhà đầu tư",
     "Ủy ban Chứng khoán Nhà nước",
-    "Chính công ty quản lý quỹ",
+    "Ban đại diện của Đại hội nhà đầu tư",
     "Sở giao dịch chứng khoán"
    ],
    "answer": 0,
@@ -75,6 +75,11 @@
     {
      "text": "Quyết định giải thể, sáp nhập quỹ",
      "answer": "left"
+    },
+    {
+     "text": "Đại diện quyền lợi nhà đầu tư giữa hai kỳ đại hội",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 102 Luật Chứng khoán 2019 (Ban đại diện quỹ)"
     }
    ],
    "explain": "Điều 102 và Điều 109."

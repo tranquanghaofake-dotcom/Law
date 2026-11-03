@@ -5,22 +5,31 @@
 <script lang="ts">
   // Tủ trưng bày bộ đồ theo chức danh. Tủ "lên đời" theo bậc: cơ sở gỗ sáng → tỉnh gỗ gụ nẹp đồng → trung ương sơn son
   // thếp vàng → lãnh đạo sơn mài đen thếp vàng có vành trống đồng chìm. Đèn rọi, bụi sáng, bóng phản chiếu trên sàn kính.
+  // Diện mạo (trang phục, màu, phụ kiện, phông, trời, hai đồ vật, chất liệu) lấy từ `look` (lib/game/looks.ts) — mỗi chức một tổ hợp;
+  // `avatar` là lựa chọn tủ đồ của người học (chỉ áp cho chức đang đứng, phần xem trước chức khác dùng nguyên diện mạo của chức đó).
   // `celebrate`: chạy màn nhận chức (cánh kính mở, đèn bật, chữ biển tên hiện dần, hạt vàng) rồi gọi `ondone`.
+  // `locked`: chức chưa mở — bóng mờ khoá. `compact`: chỉ khung ảnh nhỏ (điện thoại, tủ thu gọn).
   // Không quân hàm, cấp hiệu, Quốc huy, huân chương thật.
   import type { Avatar } from '$lib/game/wardrobe';
   import type { PostTier } from '$lib/game/career';
+  import { lookFor, type Look } from '$lib/game/looks';
   import BookSpine from './BookSpine.svelte';
   import GarmentFlat from './GarmentFlat.svelte';
+  import ShowcaseProps from './ShowcaseProps.svelte';
+  import Backdrop from './showcase/Backdrop.svelte';
   import type { BookScheme } from '$lib/ui/shelf';
   import type { BookLevel } from '$lib/game/books';
   import { ring } from './kit';
   type ShelfBook = { key: string; scheme: BookScheme; level: BookLevel; label: string };
-  let { avatar, title = 'Công dân', subtitle = '', books = [], tier = null, celebrate = false, ondone }:
-    { avatar: Avatar; title?: string; subtitle?: string; accent?: string; books?: ShelfBook[]; tier?: PostTier | null; celebrate?: boolean; ondone?: () => void } = $props();
+  let { avatar, look = lookFor(null), title = 'Công dân', subtitle = '', books = [], tier = null, celebrate = false, locked = false, compact = false, ondone }:
+    { avatar: Avatar; look?: Look; title?: string; subtitle?: string; accent?: string; books?: ShelfBook[]; tier?: PostTier | null; celebrate?: boolean; locked?: boolean; compact?: boolean; ondone?: () => void } = $props();
   const uid = `pt${++seq}`;
   const motes = Array.from({ length: 14 }, (_, i) => ({ x: 18 + ((i * 37) % 64), y: 12 + ((i * 53) % 60), d: (i % 5) * 1.3, s: 6 + (i % 4) * 2 }));
   const gold = Array.from({ length: 22 }, (_, i) => ({ x: 4 + ((i * 41) % 92), d: (i % 7) * 0.12, r: (i * 47) % 360 }));
   const rich = $derived(tier === 'trung-uong' || tier === 'lanh-dao');
+  // ánh sáng: lựa chọn tủ đồ nếu có, không thì theo chức
+  const fx = $derived(avatar.effect !== 'khong' ? avatar.effect : look.light);
+  const left = $derived(avatar.accessory !== 'khong' ? avatar.accessory : look.propL);
   $effect(() => {
     if (!celebrate) return;
     const reduce = typeof matchMedia !== 'undefined' && matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -35,30 +44,34 @@
   </svg>
 {/snippet}
 
-<figure class="showcase fx-{avatar.effect}" class:celebrate data-tier={tier ?? 'none'}>
-  {#if rich}{@render corner('tl')}{@render corner('tr')}{@render corner('bl')}{@render corner('br')}{/if}
-  {#if tier === 'lanh-dao'}<span class="sc-lamp l" aria-hidden="true"></span><span class="sc-lamp r" aria-hidden="true"></span>{/if}
+<figure class="showcase fx-{fx}" class:celebrate class:locked class:compact data-tier={tier ?? 'none'} data-mat={look.material} data-look={look.id} aria-label="Tủ trưng bày: {title}{locked ? ' (chưa mở)' : ''}">
+  {#if rich && !compact}{@render corner('tl')}{@render corner('tr')}{@render corner('bl')}{@render corner('br')}{/if}
+  {#if tier === 'lanh-dao' && !compact}<span class="sc-lamp l" aria-hidden="true"></span><span class="sc-lamp r" aria-hidden="true"></span>{/if}
   <header class="sc-head">
     <p class="sc-plaque" style="--len:{title.length}">{title}</p>
     {#if subtitle}<p class="sc-sub">{subtitle}</p>{/if}
   </header>
   <div class="sc-window">
-    {#if tier === 'lanh-dao' || avatar.effect === 'trong-dong' || avatar.effect === 'khung-vang' || avatar.effect === 'hat-sang'}
+    <Backdrop scene={look.backdrop} sky={look.sky} />
+    {#if tier === 'lanh-dao' || fx === 'trong-dong' || fx === 'khung-vang' || fx === 'hat-sang'}
       <svg class="sc-drum" viewBox="0 0 200 200" aria-hidden="true" focusable="false">
         <g class="sun-spin"><path d={ring(100, 100, 84, 96, 48)} fill="currentColor" /><circle cx="100" cy="100" r="76" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="1.5 6" /><circle cx="100" cy="100" r="58" fill="none" stroke="currentColor" stroke-width="1" /></g>
       </svg>
     {/if}
     <span class="sc-cone" aria-hidden="true"></span>
     <span class="sc-floor" aria-hidden="true"></span>
-    <div class="sc-photo"><GarmentFlat outfit={avatar.outfit} /></div>
-    <div class="sc-reflect" aria-hidden="true"><GarmentFlat outfit={avatar.outfit} /></div>
+    <div class="sc-photo"><GarmentFlat outfit={avatar.outfit} tone={look.tone} adorn={look.adorn} pattern={look.pattern} neck={look.neck} /></div>
+    <div class="sc-reflect" aria-hidden="true"><GarmentFlat outfit={avatar.outfit} tone={look.tone} adorn={look.adorn} pattern={look.pattern} neck={look.neck} /></div>
     <span class="sc-bulb" aria-hidden="true"></span>
     <span class="sc-motes" aria-hidden="true">{#each motes as m, i (i)}<i style="left:{m.x}%;top:{m.y}%;animation-delay:-{m.d}s;animation-duration:{m.s}s"></i>{/each}</span>
-    {#if avatar.effect === 'hat-sang' || celebrate}
+    {#if fx === 'hat-sang' || celebrate}
       <span class="sc-gold" aria-hidden="true">{#each gold as g, i (i)}<i style="left:{g.x}%;animation-delay:{1.2 + g.d}s;--r:{g.r}deg"></i>{/each}</span>
     {/if}
     <span class="sc-door l" aria-hidden="true"></span><span class="sc-door r" aria-hidden="true"></span>
     <span class="sc-glass" aria-hidden="true"></span>
+    {#if locked}
+      <span class="sc-lock" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9.5" rx="2" /><path d="M8 11V8a4 4 0 0 1 8 0v3" /></svg></span>
+    {/if}
   </div>
   <div class="sc-plinth">
     <span class="sc-acc left" aria-hidden="true">
@@ -72,15 +85,14 @@
         <svg viewBox="0 0 48 16"><path d="M4 10l34-4l6 2l-6 3l-34 1z" fill="#1d1d22" stroke="#e3c27a" stroke-width="1.2" /><path d="M10 8.5l16-2" stroke="#e3c27a" stroke-width="1" /></svg>
       {:else if avatar.accessory === 'huy-hieu'}
         <svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="11" fill="#e3c27a" stroke="#7a5a26" stroke-width="1.5" /><circle cx="16" cy="16" r="6" fill="none" stroke="#7a5a26" stroke-width="1.2" /><path d="M16 11v10M12 16h8" stroke="#7a5a26" stroke-width="1.2" /></svg>
+      {:else}
+        <ShowcaseProps item={left} mat={look.material} side="left" />
       {/if}
     </span>
     <ul class="sc-books" aria-hidden="true">
       {#each books as b (b.key)}<li><BookSpine scheme={b.scheme} level={b.level} label={b.label} w={22} h={74} /></li>{/each}
       {#each Array(Math.max(0, 6 - books.length)) as _, i (i)}<li class="ghost"><span></span></li>{/each}
     </ul>
-    <span class="sc-acc right" aria-hidden="true">
-      <svg viewBox="0 0 40 40"><defs><linearGradient id="{uid}-br" x1="0" x2="1"><stop offset="0" stop-color="#9c7a3c" /><stop offset=".5" stop-color="#f1d896" /><stop offset="1" stop-color="#9c7a3c" /></linearGradient></defs>
-        <g fill="none" stroke="url(#{uid}-br)" stroke-width="2" stroke-linecap="round"><path d="M20 6v28M8 11h24M8 11l-5 10h10zM32 11l-5 10h10zM14 34h12" /></g><circle cx="20" cy="5" r="2.2" fill="#f1d896" /></svg>
-    </span>
+    <span class="sc-acc right" aria-hidden="true"><ShowcaseProps item={look.propR} mat={look.material} side="right" /></span>
   </div>
 </figure>

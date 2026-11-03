@@ -47,9 +47,9 @@
    "q": "Điều kiện nào KHÔNG phải điều kiện xác lập quyền sở hữu theo Điều 236?",
    "options": [
     "Có đăng ký với Ủy ban nhân dân",
-    "Ngay tình",
-    "Liên tục",
-    "Công khai"
+    "Ngay tình khi chiếm hữu tài sản",
+    "Chiếm hữu liên tục, không gián đoạn",
+    "Công khai, không che giấu tài sản"
    ],
    "answer": 0,
    "explain": "Điều 236 không yêu cầu đăng ký.",
@@ -71,6 +71,16 @@
     {
      "text": "Thời hạn 30 năm",
      "answer": "right"
+    },
+    {
+     "text": "Người chiếm hữu ngay tình, liên tục, công khai chiếc xe máy trong 10 năm, không ai tranh chấp",
+     "answer": "left",
+     "basis": "Điều 236 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Người chiếm hữu ngay tình, công khai và liên tục một thửa đất trong 30 năm",
+     "answer": "right",
+     "basis": "Điều 236 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 236."

@@ -29,9 +29,9 @@
    "q": "Theo khoản 3 Điều 54, việc thu hồi đất phải đáp ứng yêu cầu gì?",
    "options": [
     "Công khai, minh bạch và được bồi thường theo quy định của pháp luật",
-    "Chỉ cần quyết định của Chủ tịch UBND xã",
-    "Không cần bồi thường nếu vì lợi ích công cộng",
-    "Phải có sự đồng ý của mọi hộ dân"
+    "Chỉ cần quyết định của Chủ tịch UBND xã và thông báo cho người dân",
+    "Không cần bồi thường nếu vì lợi ích công cộng và đã có thông báo",
+    "Phải có sự đồng ý của mọi hộ dân trong khu vực bị thu hồi"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 54.",
@@ -46,9 +46,9 @@
    "q": "Theo khoản 2 Điều 54, tổ chức, cá nhân có quyền sử dụng đất qua những hình thức nào?",
    "options": [
     "Được Nhà nước giao đất, cho thuê đất, công nhận quyền sử dụng đất",
-    "Mua đất từ Nhà nước như mua tài sản",
-    "Chiếm hữu ngay tình đủ 30 năm",
-    "Thừa kế quyền sở hữu đất"
+    "Mua đất từ Nhà nước như mua bán tài sản thông thường trên thị trường",
+    "Chiếm hữu ngay tình đủ 30 năm và được cơ quan có thẩm quyền công nhận",
+    "Thừa kế quyền sở hữu đất và tài sản gắn liền với đất đai hiện có của mình"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 54.",
@@ -70,6 +70,16 @@
     {
      "text": "Trong tình trạng chiến tranh, khẩn cấp, phòng, chống thiên tai",
      "answer": "right"
+    },
+    {
+     "text": "Nhà nước lấy lại quyền sử dụng đất của người dân để phát triển kinh tế - xã hội vì lợi ích quốc gia, có bồi thường",
+     "answer": "left",
+     "basis": "Khoản 3 Điều 54 Hiến pháp 2013"
+    },
+    {
+     "text": "Nhà nước sử dụng tạm thời đất của người dân khi có tình trạng khẩn cấp để phòng, chống thiên tai",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 54 Hiến pháp 2013"
     }
    ],
    "explain": "Khoản 3, 4 Điều 54."

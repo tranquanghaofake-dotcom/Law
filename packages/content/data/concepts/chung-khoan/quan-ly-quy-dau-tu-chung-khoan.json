@@ -45,9 +45,9 @@
    "q": "Ai thực hiện nghiệp vụ quản lý quỹ đầu tư chứng khoán?",
    "options": [
     "Công ty quản lý quỹ đầu tư chứng khoán",
-    "Ngân hàng giám sát",
-    "Công ty chứng khoán",
-    "Ủy ban Chứng khoán Nhà nước"
+    "Ngân hàng giám sát và đơn vị quản lý nội bộ",
+    "Công ty chứng khoán và công ty tài chính",
+    "Ủy ban Chứng khoán Nhà nước và Sở giao dịch"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 1 Điều 73.",
@@ -69,6 +69,16 @@
     {
      "text": "Quản lý theo ủy thác của từng nhà đầu tư",
      "answer": "right"
+    },
+    {
+     "text": "Quyết định mua, bán chứng khoán của quỹ theo Điều lệ quỹ",
+     "answer": "left",
+     "basis": "Khoản 36 Điều 4 Luật Chứng khoán 2019"
+    },
+    {
+     "text": "Quản lý tài sản của nhiều nhà đầu tư riêng lẻ theo danh mục đầu tư, trên cơ sở hợp đồng ủy thác",
+     "answer": "right",
+     "basis": "Khoản 35 Điều 4 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 35 và 36 Điều 4."

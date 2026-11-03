@@ -29,8 +29,8 @@
    "options": [
     "Lực lượng lãnh đạo Nhà nước và xã hội",
     "Cơ quan quyền lực nhà nước cao nhất",
-    "Cơ quan hành chính nhà nước cao nhất",
-    "Tổ chức chính trị - xã hội trực thuộc Mặt trận Tổ quốc"
+    "Lực lượng lãnh đạo của riêng Quốc hội",
+    "Tổ chức chính trị - xã hội thông thường"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 4: Đảng là lực lượng lãnh đạo Nhà nước và xã hội. Cơ quan quyền lực nhà nước cao nhất là Quốc hội (Điều 69).",
@@ -45,7 +45,7 @@
    "q": "Theo khoản 3 Điều 4 Hiến pháp 2013, các tổ chức của Đảng và đảng viên hoạt động trong khuôn khổ nào?",
    "options": [
     "Hiến pháp và pháp luật",
-    "Điều lệ Đảng, không chịu sự điều chỉnh của pháp luật",
+    "Điều lệ Đảng, không cần luật",
     "Nghị quyết của Đảng",
     "Hiệp ước quốc tế"
    ],
@@ -73,6 +73,16 @@
     {
      "text": "Đề ra đường lối, chủ trương; không trực tiếp ban hành luật.",
      "answer": "left"
+    },
+    {
+     "text": "Tổ chức của Đảng và đảng viên hoạt động trong khuôn khổ Hiến pháp và pháp luật",
+     "answer": "left",
+     "basis": "Khoản 3 Điều 4 Hiến pháp 2013"
+    },
+    {
+     "text": "Cơ quan quyền lực nhà nước cao nhất thực hiện quyền lập hiến, quyền lập pháp và quyết định các vấn đề quan trọng của đất nước",
+     "answer": "right",
+     "basis": "Điều 69 Hiến pháp 2013"
     }
    ],
    "explain": "Đảng lãnh đạo bằng đường lối, chủ trương; Quốc hội là cơ quan nhà nước thể chế hóa thành Hiến pháp và luật."
@@ -111,10 +121,10 @@
    "level": 4,
    "q": "Một nghị quyết của cấp ủy địa phương yêu cầu doanh nghiệp nộp một khoản đóng góp bắt buộc không có trong luật. Xét theo Điều 4 Hiến pháp 2013, nhận định nào đúng?",
    "options": [
-    "Hợp lệ vì Đảng lãnh đạo Nhà nước và xã hội",
+    "Hợp lệ vì Đảng lãnh đạo Nhà nước và xã hội và cấp ủy địa phương có quyền ra quyết định trong mọi lĩnh vực kinh tế xã hội",
     "Không hợp lệ: tổ chức Đảng phải hoạt động trong khuôn khổ Hiến pháp và pháp luật; nghĩa vụ tài chính bắt buộc phải do luật quy định",
-    "Hợp lệ nếu doanh nghiệp là doanh nghiệp nhà nước",
-    "Hợp lệ nếu được Hội đồng nhân dân thông qua sau đó"
+    "Hợp lệ nếu doanh nghiệp là doanh nghiệp nhà nước và có ý kiến chấp thuận của cấp ủy địa phương và Hội đồng nhân dân",
+    "Hợp lệ nếu được Hội đồng nhân dân thông qua sau đó bằng nghị quyết và có ý kiến của các doanh nghiệp liên quan"
    ],
    "answer": 1,
    "explain": "Khoản 3 Điều 4 ràng buộc tổ chức Đảng trong khuôn khổ pháp luật; thuế và nghĩa vụ tài chính bắt buộc thuộc thẩm quyền quy định của Quốc hội (khoản 4 Điều 70).",

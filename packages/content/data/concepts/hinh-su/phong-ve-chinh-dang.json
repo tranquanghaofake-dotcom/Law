@@ -29,9 +29,9 @@
    "q": "Vượt quá giới hạn phòng vệ chính đáng là gì?",
    "options": [
     "Hành vi chống trả rõ ràng quá mức cần thiết, không phù hợp với tính chất, mức độ nguy hiểm của hành vi xâm hại",
-    "Mọi hành vi gây thương tích cho người tấn công",
-    "Hành vi chống trả sau khi kẻ tấn công đã bỏ đi",
-    "Hành vi gây thiệt hại cho người thứ ba"
+    "Mọi hành vi gây thương tích cho người tấn công, kể cả khi người đó đã bỏ đi và không còn nguy hiểm gì",
+    "Hành vi chống trả vừa đủ để ngăn chặn, phù hợp với tính chất, mức độ nguy hiểm của hành vi xâm hại",
+    "Hành vi gây thiệt hại cho người thứ ba vô tội đứng gần nơi xảy ra vụ việc và không liên quan đến tấn công"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 22.",
@@ -45,10 +45,10 @@
    "level": 1,
    "q": "Người vượt quá giới hạn phòng vệ chính đáng có phải chịu TNHS không?",
    "options": [
-    "Có",
-    "Không",
-    "Chỉ khi gây chết người",
-    "Chỉ bị xử lý kỷ luật"
+    "Có, theo đoạn 2 khoản 2 Điều 22",
+    "Không, vì đang bảo vệ lợi ích hợp pháp",
+    "Có, nếu hành vi gây chết người",
+    "Không, chỉ phải chịu xử lý kỷ luật"
    ],
    "answer": 0,
    "explain": "Đoạn 2 khoản 2 Điều 22.",
@@ -70,6 +70,16 @@
     {
      "text": "Phá cửa nhà hàng xóm để dập lửa cứu người",
      "answer": "right"
+    },
+    {
+     "text": "Người bị kẻ gian dùng dao đe dọa, chống trả trực tiếp để bảo vệ tính mạng của mình",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 22 Bộ luật Hình sự 2015"
+    },
+    {
+     "text": "Người phá cửa xe để lấy thuốc cấp cứu cho người bị ngất khi không còn cách nào khác",
+     "answer": "right",
+     "basis": "Điều 23 Bộ luật Hình sự 2015"
     }
    ],
    "explain": "Điều 22, 23."

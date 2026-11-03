@@ -30,9 +30,9 @@
    "q": "Tác phẩm văn học thông thường có thời hạn bảo hộ quyền tài sản là bao lâu?",
    "options": [
     "Suốt cuộc đời tác giả và 50 năm tiếp theo năm tác giả chết",
-    "75 năm kể từ khi công bố",
-    "20 năm",
-    "Vô thời hạn"
+    "75 năm kể từ khi công bố lần đầu tiên tại Việt Nam",
+    "20 năm kể từ khi tác phẩm được cấp văn bằng bảo hộ",
+    "Vô thời hạn kể từ khi tác giả chết và không bị hạn chế nào"
    ],
    "answer": 0,
    "explain": "Điểm b khoản 2 Điều 27.",
@@ -47,9 +47,9 @@
    "q": "Tác phẩm nhiếp ảnh đã công bố có thời hạn bảo hộ quyền tài sản bao lâu?",
    "options": [
     "75 năm kể từ khi công bố lần đầu tiên",
-    "Suốt đời tác giả + 50 năm",
-    "100 năm",
-    "10 năm"
+    "Suốt đời tác giả và 50 năm sau khi chết",
+    "100 năm kể từ ngày nộp đơn lần đầu tiên",
+    "10 năm kể từ ngày công bố lần đầu"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 2 Điều 27.",
@@ -75,6 +75,11 @@
     {
      "text": "Quyền công bố tác phẩm",
      "answer": "right"
+    },
+    {
+     "text": "Quyền đặt tên cho tác phẩm của tác giả, thời hạn bảo hộ không bị giới hạn",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 27 Luật Sở hữu trí tuệ"
     }
    ],
    "explain": "Điều 27."
@@ -115,6 +120,17 @@
     "50 năm",
     "31/12"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quyền nhân thân quy định tại các khoản 1, 2 và 4 Điều 19 của Luật Sở hữu trí tuệ được bảo hộ vô thời hạn.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 27 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 27 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
   }
  ]
 }

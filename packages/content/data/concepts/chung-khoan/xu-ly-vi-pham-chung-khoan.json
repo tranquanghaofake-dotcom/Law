@@ -29,9 +29,9 @@
    "q": "Theo khoản 1 Điều 132, tổ chức, cá nhân vi phạm pháp luật chứng khoán có thể chịu những trách nhiệm nào?",
    "options": [
     "Xử phạt hành chính hoặc truy cứu trách nhiệm hình sự; nếu gây thiệt hại thì bồi thường",
-    "Chỉ xử phạt hành chính",
-    "Chỉ bồi thường dân sự",
-    "Chỉ bị nhắc nhở"
+    "Chỉ xử phạt hành chính theo mức quy định của luật này và các văn bản liên quan đến thị trường",
+    "Bồi thường dân sự cho nhà đầu tư bị thiệt hại theo phán quyết của tòa án mà không bị xử lý",
+    "Nhắc nhở bằng văn bản, nếu tái phạm thì bị giải thể doanh nghiệp, không bồi thường gì thêm"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 132.",
@@ -46,9 +46,9 @@
    "q": "Ai có thẩm quyền xử phạt vi phạm hành chính trong lĩnh vực chứng khoán theo khoản 6 Điều 132?",
    "options": [
     "Chủ tịch Ủy ban, Chánh Thanh tra, Trưởng đoàn thanh tra chuyên ngành chứng khoán",
-    "Tổng giám đốc Sở giao dịch",
-    "Chủ tịch hiệp hội kinh doanh chứng khoán",
-    "Tòa án nhân dân"
+    "Tổng giám đốc Sở giao dịch chứng khoán và các phó tổng giám đốc của Sở",
+    "Chủ tịch hiệp hội kinh doanh chứng khoán và các thành viên hội đồng của hiệp hội",
+    "Tòa án nhân dân các cấp có thẩm quyền xét xử và xử phạt vi phạm hành chính"
    ],
    "answer": 0,
    "explain": "Khoản 6 Điều 132.",
@@ -70,6 +70,16 @@
     {
      "text": "Do Tòa án xét xử theo Bộ luật Hình sự",
      "answer": "right"
+    },
+    {
+     "text": "Bị phạt tiền do vi phạm quy định về công bố thông tin",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 132 Luật Chứng khoán 2019"
+    },
+    {
+     "text": "Bị Tòa án kết án về tội thao túng thị trường chứng khoán theo Bộ luật Hình sự",
+     "answer": "right",
+     "basis": "Điều 211 Bộ luật Hình sự 2015"
     }
    ],
    "explain": "Điều 132."

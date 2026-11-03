@@ -29,9 +29,9 @@
    "q": "Doanh nghiệp nhà nước theo Luật Doanh nghiệp 2020 là doanh nghiệp do Nhà nước nắm giữ bao nhiêu vốn điều lệ?",
    "options": [
     "Trên 50% vốn điều lệ hoặc tổng số cổ phần có quyền biểu quyết",
-    "100% vốn điều lệ",
-    "Từ 30% trở lên",
-    "Trên 65%"
+    "Đúng 50% vốn điều lệ do Nhà nước nắm giữ và có sự kiểm soát chung",
+    "Từ 30% trở lên vốn điều lệ của công ty cổ phần niêm yết",
+    "Dưới 50% vốn điều lệ do Nhà nước nắm giữ và có quyền biểu quyết"
    ],
    "answer": 0,
    "explain": "Khoản 11 Điều 4.",
@@ -46,9 +46,9 @@
    "q": "Doanh nghiệp nhà nước được tổ chức dưới hình thức nào?",
    "options": [
     "Công ty trách nhiệm hữu hạn, công ty cổ phần",
-    "Doanh nghiệp tư nhân",
-    "Công ty hợp danh",
-    "Hộ kinh doanh"
+    "Doanh nghiệp tư nhân và hộ gia đình kinh doanh",
+    "Công ty hợp danh và công ty hợp tác xã",
+    "Hộ kinh doanh cá thể đăng ký tại địa phương"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 88.",
@@ -70,6 +70,16 @@
     {
      "text": "Nhà nước nắm 40% vốn điều lệ",
      "answer": "right"
+    },
+    {
+     "text": "Nhà nước nắm 100% vốn điều lệ của công ty",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 88 Luật Doanh nghiệp 2020"
+    },
+    {
+     "text": "Nhà nước nắm 50% vốn điều lệ, phần còn lại thuộc tư nhân",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 88 Luật Doanh nghiệp 2020 (phải trên 50%)"
     }
    ],
    "explain": "Điều 4, 88."

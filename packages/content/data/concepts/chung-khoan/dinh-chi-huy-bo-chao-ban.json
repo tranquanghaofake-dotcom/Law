@@ -46,9 +46,9 @@
    "q": "Trường hợp nào dẫn tới HỦY BỎ (không chỉ đình chỉ) đợt chào bán ra công chúng?",
    "options": [
     "Hết thời hạn đình chỉ mà không khắc phục được thiếu sót",
-    "Phát hiện hồ sơ có thông tin sai lệch lần đầu",
-    "Phân phối chưa đúng Điều 26 và đang khắc phục",
-    "Tổ chức phát hành xin gia hạn phân phối"
+    "Phát hiện hồ sơ có thông tin sai lệch lần đầu trong thẩm định",
+    "Phân phối chưa đúng Điều 26 và đang khắc phục theo yêu cầu",
+    "Tổ chức phát hành xin gia hạn phân phối đợt chào bán lần đầu"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 1 Điều 28. Thông tin sai lệch, phân phối sai lúc đầu là căn cứ đình chỉ (khoản 1 Điều 27).",
@@ -74,6 +74,11 @@
     {
      "text": "IPO không đạt tỷ lệ tối thiểu bán cho 100 nhà đầu tư không phải cổ đông lớn",
      "answer": "right"
+    },
+    {
+     "text": "Hồ sơ đăng ký chào bán có thông tin sai lệch ảnh hưởng đến quyết định đầu tư",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 27 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Điều 27 và Điều 28."

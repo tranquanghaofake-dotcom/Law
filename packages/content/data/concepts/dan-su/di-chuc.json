@@ -30,9 +30,9 @@
    "q": "Di chúc của người từ đủ 15 đến chưa đủ 18 tuổi phải đáp ứng điều kiện gì?",
    "options": [
     "Lập thành văn bản và được cha, mẹ hoặc người giám hộ đồng ý",
-    "Phải có công chứng",
-    "Phải có 3 người làm chứng",
-    "Không được lập di chúc"
+    "Phải có công chứng của cơ quan nhà nước có thẩm quyền ký xác nhận",
+    "Phải có ba người làm chứng và có chữ ký xác nhận của họ",
+    "Không được lập di chúc, vì chưa đủ năng lực dân sự và sức khỏe"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 630.",
@@ -47,9 +47,9 @@
    "q": "Di chúc là gì theo Điều 624?",
    "options": [
     "Sự thể hiện ý chí của cá nhân nhằm chuyển tài sản của mình cho người khác sau khi chết",
-    "Hợp đồng tặng cho có điều kiện",
-    "Thỏa thuận chia tài sản khi còn sống",
-    "Quyết định của Tòa án về thừa kế"
+    "Hợp đồng tặng cho có điều kiện ràng buộc, được thực hiện khi cả hai bên còn sống",
+    "Thỏa thuận chia tài sản khi còn sống giữa những người thân trong gia đình và họ hàng",
+    "Quyết định của Tòa án về thừa kế đã có hiệu lực pháp luật cho các bên liên quan"
    ],
    "answer": 0,
    "explain": "Điều 624.",
@@ -75,6 +75,11 @@
     {
      "text": "Không vi phạm điều cấm của luật, không trái đạo đức xã hội",
      "answer": "right"
+    },
+    {
+     "text": "Di chúc bằng văn bản không có chữ ký hoặc điểm chỉ của người lập",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 630 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Khoản 1 Điều 630."

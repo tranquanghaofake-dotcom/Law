@@ -30,9 +30,9 @@
    "q": "Công ty TNHH hai thành viên trở lên chỉ được chia lợi nhuận khi nào?",
    "options": [
     "Sau khi hoàn thành nghĩa vụ thuế, nghĩa vụ tài chính và bảo đảm thanh toán đủ nợ đến hạn sau khi chia",
-    "Bất cứ khi nào Hội đồng thành viên quyết định",
-    "Chỉ khi công ty niêm yết",
-    "Khi đã hoạt động đủ 5 năm"
+    "Bất cứ khi nào Hội đồng thành viên quyết định, không cần xét đến nghĩa vụ thuế của công ty",
+    "Chỉ khi công ty niêm yết trên sàn chứng khoán tại Việt Nam và có vốn điều lệ trên 100 tỷ đồng",
+    "Khi đã hoạt động đủ 5 năm kể từ ngày thành lập và có lợi nhuận đều đặn qua các năm tài chính"
    ],
    "answer": 0,
    "explain": "Điều 69.",
@@ -47,9 +47,9 @@
    "q": "So với công ty TNHH, điều kiện trả cổ tức của công ty cổ phần có thêm yêu cầu gì?",
    "options": [
     "Trích lập các quỹ và bù đắp lỗ trước đó",
-    "Không cần nộp thuế",
-    "Phải trả bằng ngoại tệ",
-    "Phải có ý kiến của Bộ Tài chính"
+    "Không cần nộp thuế với lợi nhuận chia",
+    "Phải trả cổ tức bằng ngoại tệ",
+    "Phải có ý kiến của Bộ Tài chính trước"
    ],
    "answer": 0,
    "explain": "Điểm b khoản 2 Điều 135 so với Điều 69.",
@@ -71,6 +71,16 @@
     {
      "text": "Sau khi chia sẽ không trả được nợ đến hạn",
      "answer": "right"
+    },
+    {
+     "text": "Công ty hoàn thành nghĩa vụ thuế và các nghĩa vụ tài chính khác, sau đó chia lợi nhuận cho thành viên",
+     "answer": "left",
+     "basis": "Điều 69 Luật Doanh nghiệp 2020"
+    },
+    {
+     "text": "Công ty chia lợi nhuận cho thành viên khi chưa nộp thuế, dù công ty vẫn có tiền mặt",
+     "answer": "right",
+     "basis": "Điều 69 Luật Doanh nghiệp 2020"
     }
    ],
    "explain": "Điều 69."
@@ -111,6 +121,17 @@
     "nợ đến hạn",
     "sau khi chia"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Công ty chỉ được chia lợi nhuận cho các thành viên sau khi đã hoàn thành nghĩa vụ thuế và các nghĩa vụ tài chính khác theo quy định của pháp luật, bảo đảm thanh toán đủ các khoản nợ và nghĩa vụ tài sản khác đến hạn trả sau khi chia lợi nhuận.",
+   "answer": true,
+   "explain": "Đúng. Điều 69 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 69 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
   }
  ]
 }

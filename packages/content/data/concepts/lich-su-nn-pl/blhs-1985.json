@@ -31,9 +31,9 @@
    "q": "Theo Điều 2 Bộ luật Hình sự 1985, ai chịu trách nhiệm hình sự?",
    "options": [
     "Chỉ người nào phạm một tội đã được Luật hình sự quy định",
-    "Mọi người có hành vi trái đạo đức",
-    "Người bị Ủy ban nhân dân kết luận có lỗi",
-    "Người bị tố cáo"
+    "Mọi người có hành vi trái với đạo đức xã hội bị nhân dân lên án",
+    "Người bị Ủy ban nhân dân kết luận là có lỗi trong vụ việc",
+    "Người bị người khác tố cáo bằng văn bản có ký tên"
    ],
    "answer": 0,
    "explain": "Điều 2.",
@@ -72,6 +72,16 @@
     {
      "text": "Có quy định trách nhiệm hình sự của pháp nhân thương mại",
      "answer": "right"
+    },
+    {
+     "text": "Nhiệm vụ của bộ luật gồm bảo vệ chế độ xã hội chủ nghĩa, quyền làm chủ tập thể xã hội chủ nghĩa của nhân dân và trật tự pháp luật xã hội chủ nghĩa",
+     "answer": "left",
+     "basis": "Bộ luật Hình sự 1985, Điều 1 (laws/lich-su-su-lieu.txt)"
+    },
+    {
+     "text": "Pháp nhân thương mại phạm tội thuộc danh mục tại Điều 76 bị truy cứu trách nhiệm hình sự",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 2 Bộ luật Hình sự 2015"
     }
    ],
    "explain": "Điều 1 BLHS 1985; BLHS 2015 lần đầu quy định pháp nhân thương mại chịu trách nhiệm hình sự."

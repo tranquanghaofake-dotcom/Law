@@ -29,9 +29,9 @@
    "q": "Căn cứ phân chia các ngành luật?",
    "options": [
     "Đối tượng điều chỉnh và phương pháp điều chỉnh",
-    "Số lượng điều luật",
-    "Cơ quan ban hành",
-    "Thời điểm ban hành"
+    "Số lượng điều luật và độ dài của văn bản",
+    "Cơ quan ban hành và thẩm quyền ký văn bản",
+    "Thời điểm ban hành và thời hạn có hiệu lực pháp lý"
    ],
    "answer": 0,
    "explain": "Lý luận chung về hệ thống pháp luật."
@@ -42,9 +42,9 @@
    "q": "Chế định pháp luật là gì?",
    "options": [
     "Nhóm quy phạm điều chỉnh một nhóm quan hệ xã hội cùng loại trong ngành luật",
-    "Một điều luật",
-    "Một văn bản luật",
-    "Toàn bộ pháp luật của một nước"
+    "Một điều luật cụ thể được ban hành để điều chỉnh một quan hệ xã hội duy nhất",
+    "Một văn bản luật tổng hợp mọi quy định của một ngành luật trong nước",
+    "Toàn bộ quy phạm pháp luật của một nước, không tách theo ngành luật"
    ],
    "answer": 0,
    "explain": "Chế định: hợp đồng, thừa kế, hôn nhân…"
@@ -62,6 +62,16 @@
     {
      "text": "Chế định thừa kế",
      "answer": "right"
+    },
+    {
+     "text": "Luật Hình sự là tập hợp quy phạm điều chỉnh một lĩnh vực quan hệ xã hội rộng, có đối tượng và phương pháp điều chỉnh riêng",
+     "answer": "left",
+     "basis": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), Cấu trúc hệ thống pháp luật"
+    },
+    {
+     "text": "Chế định hợp đồng lao động nằm trong ngành luật lao động",
+     "answer": "right",
+     "basis": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (⚠ chưa đối chiếu nguyên văn giáo trình), Cấu trúc hệ thống pháp luật"
     }
    ],
    "explain": "Cấu trúc hệ thống pháp luật."
@@ -102,6 +112,17 @@
     "đối tượng điều chỉnh",
     "phương pháp điều chỉnh"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hệ thống pháp luật là tổng thể các quy phạm pháp luật có mối liên hệ nội tại thống nhất, được phân định thành các chế định pháp luật và các ngành luật.",
+   "answer": true,
+   "explain": "Đúng. Trích định nghĩa của khái niệm — nguồn: Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (Drive HLU/KÌ I NĂM I/LLCNN&PL/TÀI LIỆU ÔN THI LLC: VD8, VD9, VD11, VD12, VD13) và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình.",
+   "source": {
+    "kind": "textbook",
+    "cite": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (Drive HLU/KÌ I NĂM I/LLCNN&PL/TÀI LIỆU ÔN THI LLC: VD8, VD9, VD11, VD12, VD13) và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình"
+   }
   }
  ]
 }

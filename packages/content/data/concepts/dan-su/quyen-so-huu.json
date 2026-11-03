@@ -46,8 +46,8 @@
    "q": "Bán tài sản là thực hiện quyền năng nào của chủ sở hữu?",
    "options": [
     "Quyền định đoạt",
-    "Quyền chiếm hữu",
-    "Quyền sử dụng",
+    "Quyền chiếm hữu tài sản",
+    "Quyền sử dụng tài sản",
     "Quyền hưởng dụng"
    ],
    "answer": 0,
@@ -74,6 +74,11 @@
     {
      "text": "Tiêu hủy tài sản",
      "answer": "right"
+    },
+    {
+     "text": "Chủ nhà tự ở và sử dụng căn nhà của mình",
+     "answer": "left",
+     "basis": "Điều 158 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 158, 189, 192."
@@ -114,6 +119,18 @@
     "định đoạt",
     "không trái luật"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quyền sở hữu bao gồm quyền chiếm hữu, quyền sử dụng và quyền định đoạt tài sản của chủ sở hữu theo quy định của luật.",
+   "answer": true,
+   "explain": "Đúng. Điều 158 Bộ luật Dân sự 2015 (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 158 Bộ luật Dân sự 2015",
+    "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+   }
   }
  ]
 }

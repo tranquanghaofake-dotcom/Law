@@ -27,9 +27,9 @@
    "q": "Theo Điều 1 Luật Quốc tịch Việt Nam, quốc tịch thể hiện điều gì?",
    "options": [
     "Mối quan hệ gắn bó của cá nhân với Nhà nước, làm phát sinh quyền, nghĩa vụ hai chiều",
-    "Nơi cá nhân đăng ký thường trú",
-    "Dân tộc của cá nhân",
-    "Ngôn ngữ cá nhân sử dụng"
+    "Nơi cá nhân đăng ký thường trú, tạm trú tại địa phương và nơi công tác lâu dài của họ",
+    "Dân tộc của cá nhân và tôn giáo của gia đình họ đang theo trong cộng đồng xã hội",
+    "Ngôn ngữ cá nhân sử dụng hằng ngày trong gia đình, cộng đồng và công việc"
    ],
    "answer": 0,
    "explain": "Điều 1 Luật Quốc tịch.",
@@ -72,6 +72,16 @@
     {
      "text": "Bảo đảm các quyền công dân",
      "answer": "left"
+    },
+    {
+     "text": "Nhà nước bảo hộ công dân Việt Nam ở nước ngoài",
+     "answer": "left",
+     "basis": "Điều 1 Luật Quốc tịch Việt Nam 2008"
+    },
+    {
+     "text": "Công dân Việt Nam có nghĩa vụ thực hiện nghĩa vụ quân sự",
+     "answer": "right",
+     "basis": "Điều 1 Luật Quốc tịch Việt Nam 2008"
     }
    ],
    "explain": "Điều 1, 5, 6 Luật Quốc tịch."
@@ -112,6 +122,18 @@
     "trách nhiệm của Nhà nước",
     "công dân"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người có quốc tịch Việt Nam là công dân Việt Nam.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 5 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 5 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025)",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-53-vbhn-vpqh-quoc-tich-viet-nam--179993"
+   }
   }
  ]
 }

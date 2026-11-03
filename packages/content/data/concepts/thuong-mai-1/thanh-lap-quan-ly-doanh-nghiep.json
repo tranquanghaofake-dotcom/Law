@@ -47,9 +47,9 @@
    "q": "Ngoại lệ cho cán bộ, công chức, viên chức thành lập, quản lý doanh nghiệp được bổ sung theo pháp luật về lĩnh vực nào?",
    "options": [
     "Khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số quốc gia",
-    "Thương mại điện tử",
-    "Bất động sản",
-    "Ngân hàng"
+    "Thương mại điện tử và các hoạt động kinh doanh trực tuyến tại Việt Nam",
+    "Bất động sản và đầu tư xây dựng nhà ở thương mại hằng năm",
+    "Ngân hàng và các tổ chức tín dụng khác trên thị trường"
    ],
    "answer": 0,
    "explain": "Điểm b khoản 2 Điều 17.",
@@ -75,6 +75,11 @@
     {
      "text": "Sĩ quan quân đội tại ngũ",
      "answer": "right"
+    },
+    {
+     "text": "Cơ quan nhà nước dùng tài sản nhà nước để thành lập doanh nghiệp kinh doanh",
+     "answer": "right",
+     "basis": "Điểm a khoản 2 Điều 17 Luật Doanh nghiệp 2020"
     }
    ],
    "explain": "Điều 17."

@@ -37,18 +37,18 @@
    "explain": "Theo VBHN 44/VBHN-VPQH 2026: Luật 31/2024/QH15 có hiệu lực từ 01/8/2024.",
    "source": {
     "kind": "statute",
-    "cite": "Điều 1 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)"
+    "cite": "Luật Đất đai 31/2024/QH15 (VBHN 44/VBHN-VPQH 2026, ghi chú hiệu lực)"
    }
   },
   {
    "type": "mcq",
    "level": 1,
-   "q": "Luật Đất đai quy định về những nội dung nào?",
+   "q": "Phương án nào mô tả đầy đủ nội dung Luật Đất đai quy định (Điều 1)?",
    "options": [
     "Chế độ sở hữu, quản lý, sử dụng đất đai; quyền, nghĩa vụ người sử dụng đất",
-    "Chỉ thủ tục cấp sổ đỏ",
-    "Chỉ giá đất",
-    "Kinh doanh bất động sản"
+    "Thủ tục cấp sổ đỏ, đăng ký thế chấp tài sản và thu thuế nhà đất",
+    "Giá đất, thuế sử dụng đất, lệ phí trước bạ và phí thẩm định hồ sơ",
+    "Kinh doanh bất động sản, đầu tư xây dựng và cho thuê nhà ở thương mại"
    ],
    "answer": 0,
    "explain": "Điều 1.",
@@ -70,6 +70,16 @@
     {
      "text": "Hai hộ chuyển nhượng quyền sử dụng đất",
      "answer": "right"
+    },
+    {
+     "text": "Nhà nước quyết định giao đất, cho thuê đất hoặc thu hồi đất theo quy hoạch",
+     "answer": "left",
+     "basis": "Điều 1 Luật Đất đai 2024"
+    },
+    {
+     "text": "Hai hộ dân thỏa thuận chuyển nhượng quyền sử dụng đất đã có Giấy chứng nhận",
+     "answer": "right",
+     "basis": "Điều 1 và Điều 45 Luật Đất đai 2024"
     }
    ],
    "explain": "Điều 1."

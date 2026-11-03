@@ -28,9 +28,9 @@
    "q": "Theo khoản 1 Điều 6, thị trường chứng khoán nhằm huy động nguồn vốn gì?",
    "options": [
     "Vốn trung hạn và dài hạn cho đầu tư phát triển",
-    "Chỉ vốn ngắn hạn",
+    "Chỉ vốn ngắn hạn để phục vụ nhu cầu tiêu dùng",
     "Vốn cho chi tiêu thường xuyên của Nhà nước",
-    "Ngoại tệ cho dự trữ quốc gia"
+    "Ngoại tệ cho dự trữ quốc gia và ngân sách"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 6.",
@@ -45,9 +45,9 @@
    "q": "Chính sách quản lý, giám sát của Nhà nước nhằm bảo đảm thị trường chứng khoán hoạt động thế nào?",
    "options": [
     "Công bằng, công khai, minh bạch, an toàn và hiệu quả",
-    "Tăng trưởng giá cổ phiếu liên tục",
-    "Chỉ phục vụ doanh nghiệp nhà nước",
-    "Hạn chế nhà đầu tư nước ngoài"
+    "Tăng trưởng giá cổ phiếu liên tục trong nhiều năm liền",
+    "Chỉ phục vụ doanh nghiệp nhà nước và các tập đoàn lớn",
+    "Hạn chế nhà đầu tư nước ngoài tham gia thị trường giao dịch"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 6.",
@@ -73,6 +73,11 @@
     {
      "text": "Đầu tư hiện đại hóa hạ tầng công nghệ thông tin cho thị trường",
      "answer": "left"
+    },
+    {
+     "text": "Quyền tự do giao dịch, đầu tư của tổ chức, cá nhân trên thị trường",
+     "answer": "right",
+     "basis": "Điều 5 Luật Chứng khoán 2019 (nguyên tắc hoạt động)"
     }
    ],
    "explain": "Điều 5 và Điều 6."
@@ -113,6 +118,18 @@
     "minh bạch",
     "hạ tầng"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Nhà nước có chính sách quản lý, giám sát bảo đảm thị trường chứng khoán hoạt động công bằng, công khai, minh bạch, an toàn và hiệu quả.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 6 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 6 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+   }
   }
  ]
 }

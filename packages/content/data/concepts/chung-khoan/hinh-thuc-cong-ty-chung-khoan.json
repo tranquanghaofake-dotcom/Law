@@ -28,7 +28,7 @@
    "q": "Cơ quan nào cấp Giấy phép thành lập và hoạt động kinh doanh chứng khoán cho công ty chứng khoán?",
    "options": [
     "Ủy ban Chứng khoán Nhà nước",
-    "Sở Kế hoạch và Đầu tư (Cơ quan đăng ký kinh doanh)",
+    "Sở Tài chính (Cơ quan đăng ký kinh doanh)",
     "Sở giao dịch chứng khoán Việt Nam",
     "Ngân hàng Nhà nước"
    ],
@@ -45,9 +45,9 @@
    "q": "Công ty chứng khoán được tổ chức dưới hình thức nào?",
    "options": [
     "Công ty trách nhiệm hữu hạn hoặc công ty cổ phần",
-    "Doanh nghiệp tư nhân",
-    "Công ty hợp danh",
-    "Hợp tác xã"
+    "Doanh nghiệp tư nhân do một cá nhân làm chủ",
+    "Công ty hợp danh có từ hai thành viên trở lên",
+    "Hợp tác xã nông nghiệp và dịch vụ tài chính"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 71.",
@@ -69,6 +69,16 @@
     {
      "text": "Đăng ký doanh nghiệp theo Luật Doanh nghiệp",
      "answer": "right"
+    },
+    {
+     "text": "Phải có giấy phép thành lập và hoạt động kinh doanh chứng khoán trước khi hoạt động",
+     "answer": "left",
+     "basis": "Điều 70 Luật Chứng khoán 2019"
+    },
+    {
+     "text": "Sau khi được cấp giấy phép, đăng ký thành lập công ty theo Luật Doanh nghiệp",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 71 Luật Chứng khoán 2019 (đối chiếu)"
     }
    ],
    "explain": "Khoản 1 Điều 71: \"Sau khi được cấp Giấy phép… phải đăng ký doanh nghiệp\"."

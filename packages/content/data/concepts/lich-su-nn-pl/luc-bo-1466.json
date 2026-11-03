@@ -71,6 +71,16 @@
     {
      "text": "Phụ trách việc hình án, xét xử",
      "answer": "right"
+    },
+    {
+     "text": "Bộ phụ trách thăng bổ, thuyên chuyển quan lại, đứng đầu là Thượng thư",
+     "answer": "left",
+     "basis": "Đại Việt sử ký toàn thư, Bản kỷ quyển XII, Kỷ nhà Lê, Thánh Tông, năm 1466, tờ 24a (laws/lich-su-su-lieu.txt)"
+    },
+    {
+     "text": "Hình bộ, đổi từ Khâm hình viện, phụ trách việc xử án",
+     "answer": "right",
+     "basis": "Đại Việt sử ký toàn thư, Bản kỷ quyển XII, Kỷ nhà Lê, Thánh Tông, năm 1466, tờ 24a (laws/lich-su-su-lieu.txt)"
     }
    ],
    "explain": "Chức năng sáu bộ theo cách hiểu phổ biến; Toàn thư năm 1471 nhắc \"Lại bộ thăng bổ\" và \"công việc xử án của Hình bộ\"."

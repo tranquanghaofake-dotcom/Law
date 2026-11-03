@@ -24,7 +24,7 @@
         "Chủ trọ phải trả lại đủ 3 triệu",
         "Chủ trọ được giữ 3 triệu",
         "Chủ trọ trả lại 1,5 triệu",
-        "Bạn phải trả thêm cho chủ trọ 3 triệu"
+        "Bạn phải trả thêm 3 triệu"
       ],
       "answer": 1,
       "explain": "Bên đặt cọc từ chối giao kết, thực hiện hợp đồng thì tài sản đặt cọc thuộc về bên nhận đặt cọc. Bạn là người đổi ý nên mất khoản cọc.",
@@ -47,10 +47,10 @@
     {
       "q": "Hai bên đã ký hợp đồng thuê và thực hiện bình thường. Khoản cọc ban đầu sẽ được xử lý thế nào?",
       "options": [
-        "Đương nhiên thuộc về bên nhận cọc",
-        "Phải gửi vào ngân hàng",
+        "Đương nhiên thuộc về bên nhận cọc, không phải trả lại",
+        "Phải gửi vào ngân hàng để chờ hai bên thống nhất xử lý",
         "Được trả lại cho bên đặt cọc hoặc trừ vào nghĩa vụ trả tiền",
-        "Tự động chuyển thành tiền phạt"
+        "Tự động chuyển thành tiền phạt cho bên nhận cọc và nhà nước"
       ],
       "answer": 2,
       "explain": "Khi hợp đồng được giao kết, thực hiện, tài sản đặt cọc được trả lại cho bên đặt cọc hoặc được trừ để thực hiện nghĩa vụ trả tiền.",
@@ -74,9 +74,9 @@
       "q": "Có thể dùng một chiếc điện thoại để đặt cọc không?",
       "options": [
         "Có, vì đó là vật có giá trị",
-        "Không, chỉ được đặt cọc bằng tiền",
-        "Chỉ được khi có công chứng",
-        "Chỉ được đặt cọc bằng vàng hoặc đá quý"
+        "Không, vì đặt cọc phải bằng tiền mặt",
+        "Có, nếu hợp đồng có công chứng",
+        "Không, vì phải là vàng hoặc đá quý"
       ],
       "answer": 0,
       "explain": "Tài sản đặt cọc gồm khoản tiền, kim khí quý, đá quý hoặc vật có giá trị khác. Điện thoại là vật có giá trị nên có thể dùng để đặt cọc.",
@@ -87,9 +87,9 @@
       "q": "Hợp đồng đặt cọc ghi: nếu bên nhận cọc đổi ý thì phải trả gấp 3 lần tiền cọc. Thỏa thuận này có được áp dụng không?",
       "options": [
         "Không, luật chỉ cho phạt đúng bằng giá trị cọc",
-        "Chỉ có hiệu lực nếu công chứng",
+        "Không, vì mức phạt cọc bị giới hạn tối đa 8% giá trị",
         "Có, vì luật cho phép các bên thỏa thuận khác",
-        "Chỉ áp dụng khi mua bán nhà đất"
+        "Không, thỏa thuận này trái điều cấm của luật"
       ],
       "answer": 2,
       "explain": "Quy định phạt cọc bằng giá trị cọc áp dụng \"trừ trường hợp có thỏa thuận khác\". Các bên có thể tự nguyện thỏa thuận mức khác, miễn không vi phạm điều cấm của luật, không trái đạo đức xã hội.",
@@ -99,10 +99,10 @@
     {
       "q": "Bạn đặt cọc thuê trọ chỉ qua tin nhắn Zalo, không có giấy tay. Theo BLDS 2015, việc đặt cọc này thế nào?",
       "options": [
-        "Vô hiệu, vì đặt cọc bắt buộc phải lập văn bản",
+        "Vô hiệu, vì đặt cọc bắt buộc phải lập văn bản có công chứng",
         "Không vô hiệu chỉ vì hình thức; tin nhắn là chứng cứ quan trọng",
-        "Chỉ hợp lệ nếu có người làm chứng",
-        "Chỉ hợp lệ nếu được công chứng"
+        "Hợp lệ nếu có người làm chứng và có chữ ký đầy đủ của các bên",
+        "Hợp lệ nếu được công chứng tại văn phòng công chứng"
       ],
       "answer": 1,
       "explain": "BLDS 2015 không bắt buộc đặt cọc phải lập văn bản (khác BLDS 2005). Giao dịch dân sự có thể bằng lời nói, văn bản hoặc hành vi; giao dịch qua phương tiện điện tử dưới dạng thông điệp dữ liệu được coi là giao dịch bằng văn bản. Hãy lưu lại tin nhắn.",
@@ -112,10 +112,10 @@
     {
       "q": "Thời hiệu khởi kiện tranh chấp hợp đồng đặt cọc là bao lâu?",
       "options": [
-        "01 năm",
-        "02 năm",
+        "01 năm, kể từ ngày biết hoặc phải biết quyền lợi bị xâm phạm",
+        "02 năm, kể từ ngày biết hoặc phải biết quyền lợi bị xâm phạm",
         "03 năm, kể từ ngày biết hoặc phải biết quyền lợi bị xâm phạm",
-        "Không giới hạn"
+        "Không giới hạn thời gian, kể từ ngày xảy ra việc tranh chấp"
       ],
       "answer": 2,
       "explain": "Thời hiệu khởi kiện tranh chấp hợp đồng là 03 năm, kể từ ngày người có quyền yêu cầu biết hoặc phải biết quyền và lợi ích hợp pháp của mình bị xâm phạm.",
@@ -125,9 +125,9 @@
     {
       "q": "Khi chuyển khoản tiền cọc, ghi nội dung thế nào là an toàn nhất?",
       "options": [
-        "Chỉ ghi số tiền",
-        "Không cần ghi gì, có biên lai ngân hàng là đủ",
-        "Ghi \"cho mượn\"",
+        "Chỉ ghi số tiền đặt cọc và tên người nhận cọc, không ghi gì thêm về điều kiện",
+        "Không cần ghi gì, có biên lai ngân hàng là đủ để chứng minh mọi điều đã thỏa thuận rồi",
+        "Ghi \"cho mượn\" số tiền, thời hạn trả lại và lãi suất đã thỏa thuận giữa các bên",
         "Ghi rõ \"đặt cọc thuê phòng ... từ ngày ...\" và điều kiện mất/phạt cọc đã thỏa thuận"
       ],
       "answer": 3,

@@ -31,9 +31,9 @@
    "q": "Theo Điều thứ 12 Sắc lệnh 47 (1945), luật lệ cũ được tạm giữ chỉ thi hành với điều kiện nào?",
    "options": [
     "Không trái với nền độc lập của nước Việt Nam và chính thể dân chủ cộng hòa",
-    "Được Quốc hội thông qua lại",
-    "Được nhân dân phúc quyết",
-    "Không có điều kiện"
+    "Được Quốc hội thông qua lại trước khi đem ra áp dụng ở mọi địa phương",
+    "Được nhân dân phúc quyết qua trưng cầu ý dân toàn quốc với đa số phiếu",
+    "Không có điều kiện nào, áp dụng ngay không cần xét duyệt gì thêm"
    ],
    "answer": 0,
    "explain": "Điều thứ 12 Sắc lệnh 47.",
@@ -48,9 +48,9 @@
    "q": "Mục đích của Sắc lệnh 47 ngày 10/10/1945 là gì?",
    "options": [
     "Tạm giữ luật lệ cũ cho đến khi ban hành bộ luật thống nhất toàn quốc",
-    "Bãi bỏ ngay toàn bộ luật lệ cũ",
-    "Ban hành Bộ luật Dân sự mới",
-    "Tổ chức tòa án nhân dân"
+    "Bãi bỏ ngay toàn bộ luật lệ cũ, không cho áp dụng bất kỳ điều nào",
+    "Ban hành Bộ luật Dân sự mới ngay trong năm 1945, thay toàn bộ luật cũ",
+    "Tổ chức tòa án nhân dân ở mọi làng xã trên cả nước, không cần chờ luật"
    ],
    "answer": 0,
    "explain": "Điều thứ 1 Sắc lệnh 47.",
@@ -72,6 +72,16 @@
     {
      "text": "Sửa đổi một số quy lệ, chế định trong dân luật theo hướng tiến bộ",
      "answer": "right"
+    },
+    {
+     "text": "Luật lệ hiện hành ở Bắc, Trung, Nam bộ được tạm giữ nguyên nếu không trái nền độc lập",
+     "answer": "left",
+     "basis": "Sắc lệnh 47, Điều thứ 1 và Điều thứ 12 (laws/lich-su-su-lieu.txt)"
+    },
+    {
+     "text": "Văn bản quy định chồng và vợ có địa vị bình đẳng trong gia đình",
+     "answer": "right",
+     "basis": "Sắc lệnh 97/SL, Điều 5 (laws/lich-su-su-lieu.txt)"
     }
    ],
    "explain": "Hai mốc liên tiếp của pháp luật dân sự 1945–1950."

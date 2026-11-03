@@ -28,9 +28,9 @@
    "q": "Theo khoản 6 Điều 12, cho mượn tài khoản bị nghiêm cấm khi nào?",
    "options": [
     "Khi dẫn đến hành vi thao túng giá chứng khoán",
-    "Trong mọi trường hợp, kể cả cho người thân dùng xem bảng giá",
-    "Chỉ khi nhận tiền",
-    "Chỉ khi tài khoản có trên 1 tỷ đồng"
+    "Khi cho người thân xem bảng giá trên tài khoản của mình",
+    "Khi người cho mượn có nhận tiền công từ người mượn",
+    "Khi tài khoản có số dư trên 1 tỷ đồng"
    ],
    "answer": 0,
    "explain": "Khoản 6 Điều 12.",
@@ -44,10 +44,10 @@
    "level": 1,
    "q": "Hành vi nào cùng nhóm với cho mượn tài khoản tại khoản 6 Điều 12?",
    "options": [
-    "Đứng tên sở hữu chứng khoán hộ người khác dẫn đến thao túng giá",
-    "Ủy quyền cho công ty quản lý quỹ quản lý danh mục",
-    "Mở tài khoản tại hai công ty chứng khoán",
-    "Bán cổ phiếu cho người thân qua sàn"
+    "Đứng tên hộ người khác để sở hữu chứng khoán, dẫn đến thao túng giá",
+    "Ủy quyền cho công ty quản lý quỹ quản lý danh mục đầu tư của nhà đầu tư",
+    "Mở tài khoản tại hai công ty chứng khoán khác nhau trong cùng thời kỳ",
+    "Bán số cổ phiếu của mình cho người thân qua sàn giao dịch chính thức"
    ],
    "answer": 0,
    "explain": "Khoản 6 Điều 12.",
@@ -69,6 +69,16 @@
     {
      "text": "Ủy thác hợp pháp cho công ty quản lý quỹ theo hợp đồng",
      "answer": "right"
+    },
+    {
+     "text": "Cho người khác mượn tài khoản để giao dịch chứng khoán",
+     "answer": "left",
+     "basis": "Khoản 6 Điều 12 Luật Chứng khoán 2019"
+    },
+    {
+     "text": "Nhà đầu tư tự đầu tư bằng tài khoản đứng tên chính mình, tự quyết định mua bán",
+     "answer": "right",
+     "basis": "Khoản 6 Điều 12 Luật Chứng khoán 2019 (không thuộc hành vi bị cấm)"
     }
    ],
    "explain": "Khoản 6 Điều 12; khoản 35 Điều 4."

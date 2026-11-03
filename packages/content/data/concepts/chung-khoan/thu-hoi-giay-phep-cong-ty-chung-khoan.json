@@ -46,9 +46,9 @@
    "q": "Khi bị thu hồi giấy phép, công ty chứng khoán phải làm gì với tài sản của khách hàng?",
    "options": [
     "Tất toán tài sản của khách hàng do công ty tiếp nhận, quản lý",
-    "Chuyển toàn bộ cho Nhà nước",
-    "Giữ lại để trả nợ",
-    "Bán hết chứng khoán lấy tiền mặt"
+    "Chuyển toàn bộ cho Nhà nước quản lý theo quyết định của cơ quan",
+    "Giữ lại để trả nợ cho công ty và các chủ nợ khác trong thời gian dài",
+    "Bán hết chứng khoán của khách lấy tiền mặt để trả nợ và phí quản lý"
    ],
    "answer": 0,
    "explain": "Điểm b khoản 3 Điều 95.",
@@ -74,6 +74,11 @@
     {
      "text": "Công ty thay đổi trụ sở trong cùng thành phố",
      "answer": "right"
+    },
+    {
+     "text": "Công ty không chính thức hoạt động trong 12 tháng kể từ ngày được cấp giấy phép",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 95 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 1 Điều 95."
