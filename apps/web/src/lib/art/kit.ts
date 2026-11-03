@@ -77,3 +77,21 @@ export function ripples(x: number, y: number, w: number, rows: number, seed = 1)
   }
   return d;
 }
+
+/** Số nguyên giả ngẫu nhiên ổn định từ chuỗi (đặt "hạt" cho đường chân trời của từng cảnh). */
+export function seedOf(s: string): number {
+  let h = 7;
+  for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) % 100003;
+  return h || 1;
+}
+
+/** Dải núi/đồi xa: đường cong mềm qua các đỉnh ngẫu nhiên (theo hạt), khép đáy tại y = base. */
+export function ridge(seed: number, base: number, amp: number, step = 58, x0 = -20, x1 = 540): string {
+  let s = seed;
+  const rnd = () => ((s = (s * 9301 + 49297) % 233280) / 233280);
+  const pts: [number, number][] = [];
+  for (let x = x0; x <= x1 + step; x += step) pts.push([x, base - amp * (0.25 + 0.75 * rnd())]);
+  let d = `M${f(x0)} ${f(base)}L${f(pts[0][0])} ${f(pts[0][1])}`;
+  for (let i = 0; i < pts.length - 1; i++) d += `Q${f(pts[i][0])} ${f(pts[i][1])} ${f((pts[i][0] + pts[i + 1][0]) / 2)} ${f((pts[i][1] + pts[i + 1][1]) / 2)}`;
+  return d + `L${f(x1)} ${f(base)}z`;
+}
