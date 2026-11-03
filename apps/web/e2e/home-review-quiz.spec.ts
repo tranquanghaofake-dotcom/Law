@@ -1,10 +1,14 @@
 import { expect, test } from '@playwright/test';
+import { readdirSync, readFileSync } from 'node:fs';
 const B = process.env.BASE_PATH ?? '/';
 
 test('trang chủ người mới: thẻ BẮT ĐẦU, môn đang học, một thẻ kiểm tra nhanh', async ({ page }) => {
   await page.goto(B + '');
   await expect(page.locator('.hero-card .kicker')).toHaveText('BẮT ĐẦU');
-  await expect(page.getByRole('link', { name: /Học đợt đầu tiên/ })).toHaveAttribute('href', '#/hoc/hien-phap/hp-1');
+  // môn đầu theo thứ tự chương trình học (lib/ui/shelves.ts), không phải môn đầu bảng chữ cái
+  await expect(page.getByRole('link', { name: /Học đợt đầu tiên/ })).toHaveAttribute('href', '#/hoc/ly-luan-nn-pl/llc1');
+  await expect(page.getByRole('heading', { name: /Bắt đầu từ đâu/ })).toBeVisible();
+  await expect(page.locator('.subject-rows li')).toHaveCount(3);
   await expect(page.getByRole('link', { name: /Luật Hiến pháp/ }).first()).toBeVisible();
   await expect(page.locator('.sets.one .set')).toHaveCount(1);
   await expect(page.getByRole('link', { name: /Tất cả đề/ })).toHaveAttribute('href', '#/luyen-de');
@@ -57,12 +61,23 @@ test('#/on/hien-phap khi chưa có gì → báo rỗng và link về môn', asyn
   await expect(page.getByRole('link', { name: /Về môn/ })).toHaveAttribute('href', '#/mon/hien-phap');
 });
 
+// Số đề đọc từ dữ liệu (không gõ số cố định); nhóm "dan-su" lấy từ trường group của mỗi đề.
+const setsDir = '../../packages/content/data/sets';
+const allSets: { title: string; group: string }[] = readdirSync(setsDir)
+  .filter((f) => f.endsWith('.json'))
+  .map((f) => JSON.parse(readFileSync(`${setsDir}/${f}`, 'utf8')));
+// Chip lọc theo kệ nhóm ngành (PR 3): kệ "Dân sự – Tố tụng" gồm nhóm dan-su và to-tung-dan-su (lib/ui/groups.ts GROUP_SHELF).
+const danSuTitles = allSets.filter((s) => ['dan-su', 'to-tung-dan-su'].includes(s.group)).map((s) => s.title);
+
 test('Luyện đề: lọc theo nhóm chỉ còn đề của nhóm đó', async ({ page }) => {
   await page.goto(B + '#/luyen-de');
-  await expect(page.locator('.set')).toHaveCount(5);
-  await page.getByRole('button', { name: 'Luật Dân sự' }).click();
-  await expect(page.locator('.set')).toHaveCount(1);
-  await expect(page.getByRole('button', { name: 'Luật Dân sự' })).toHaveAttribute('aria-pressed', 'true');
+  await expect(page.locator('.set')).toHaveCount(allSets.length);
+  await page.getByRole('button', { name: 'Dân sự – Tố tụng' }).click();
+  // Lọc xong: số đề bằng số đề của nhóm trong dữ liệu, ít hơn tổng, và mọi đề hiện ra đều thuộc nhóm.
+  await expect(page.locator('.set')).toHaveCount(danSuTitles.length);
+  expect(danSuTitles.length).toBeLessThan(allSets.length);
+  for (const t of await page.locator('.set h3').allTextContents()) expect(danSuTitles).toContain(t);
+  await expect(page.getByRole('button', { name: 'Dân sự – Tố tụng' })).toHaveAttribute('aria-pressed', 'true');
   await page.getByRole('button', { name: 'Tất cả' }).click();
-  await expect(page.locator('.set')).toHaveCount(5);
+  await expect(page.locator('.set')).toHaveCount(allSets.length);
 });

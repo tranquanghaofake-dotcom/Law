@@ -6,7 +6,7 @@ import { basename, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import type { ZodError, ZodType } from 'zod';
 import { conceptSchema, quizSetSchema, subjectSchema } from './schema';
-import type { Concept, ContentIndex, QuizSet, Subject } from './types';
+import type { Concept, ConceptTerms, ContentIndex, QuizSet, Subject } from './types';
 
 type Parsed<T> = { ok: true; value: T } | { ok: false; error: string };
 
@@ -93,6 +93,12 @@ export function buildContent(root: string, outDir: string = root): { errors: str
     rmSync(outDir, { recursive: true, force: true });
     mkdirSync(outDir, { recursive: true });
     for (const d of PUBLISHED_DIRS) if (existsSync(join(root, d))) cpSync(join(root, d), join(outDir, d), { recursive: true });
+  }
+  // dist/terms/<subjectId>.json: tên (term) của mọi khái niệm hợp lệ trong môn, để trang môn tải 1 file thay vì fetch từng khái niệm.
+  mkdirSync(join(outDir, 'terms'), { recursive: true });
+  for (const s of subjects) {
+    const terms: ConceptTerms = Object.fromEntries([...(concepts.get(s.id) ?? new Map<string, Concept>()).values()].map((c) => [c.id, c.term]));
+    writeFileSync(join(outDir, 'terms', `${s.id}.json`), JSON.stringify(terms) + '\n', 'utf8');
   }
   writeFileSync(join(outDir, 'index.json'), JSON.stringify(index, null, 1) + '\n', 'utf8');
   return { errors, index };

@@ -1,20 +1,19 @@
 // Kệ sách: mỗi môn là một cuốn sách luật; sách hiện dần theo % khái niệm thuần thục (cùng ngưỡng MASTERED với % môn), đóng dấu khi đủ 100%.
 import type { Level, Subject } from '$lib/content/types';
 import { subjectSummary } from './subjectSummary';
+import { shelfOf } from './shelves';
 
-export type BookScheme = 'vang' | 'xanh' | 'dem';
+/** Màu bìa/gáy (hex) — lấy từ kệ nhóm ngành, một môn một màu ở mọi nơi (spec phần nhìn đợt 4, Q6). */
+export type BookScheme = string;
 export type BookState = 'ghost' | 'growing' | 'done';
 export type Book = { id: string; title: string; short: string; percent: number; mastered: number; total: number; state: BookState; scheme: BookScheme; href: string };
 
 /** Số ô tối thiểu trên kệ (ô trống vẽ khung "sắp có" cho kệ không trơ trọi). */
 export const SHELF_MIN = 4;
 
-const FIXED: Record<string, BookScheme> = { 'hien-phap': 'vang', 'chung-khoan': 'xanh', 'lich-su-nn-pl': 'dem' };
-const CYCLE: BookScheme[] = ['xanh', 'dem', 'vang'];
-
-/** Bộ màu bìa (cách điệu theo dòng sách luật in trong nước): Hiến pháp vàng; môn khác xoay vòng theo vị trí. */
-export function schemeFor(id: string, index: number): BookScheme {
-  return FIXED[id] ?? CYCLE[index % CYCLE.length];
+/** Màu bìa của môn = màu kệ nhóm ngành. Tham số `index` giữ để không đổi chữ ký nơi gọi (trước đây xoay vòng 3 bộ màu). */
+export function schemeFor(id: string, _index = 0): BookScheme {
+  return shelfOf(id).color;
 }
 
 export function shelfBooks(subjects: Subject[], levels: Record<string, Level>): Book[] {

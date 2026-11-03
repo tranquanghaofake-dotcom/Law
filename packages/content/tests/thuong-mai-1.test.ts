@@ -42,7 +42,7 @@ describe('nội dung Luật Thương mại 1', () => {
   it('đề kiểm tra: 10 câu, có căn cứ điều luật và link', () => {
     for (const id of ["thuong-mai-1-de-1", "thuong-mai-1-de-2", "thuong-mai-1-de-3"]) {
       const s = JSON.parse(readFileSync(join(root, 'sets', `${id}.json`), 'utf8'));
-      expect(s.group).toBe('thuong-mai');
+      expect(s.group).toBe('thuong-mai-1');
       expect(s.questions.length).toBe(10);
       for (const q of s.questions) {
         expect(q.basis).toMatch(/Điều \d+ Luật (Doanh nghiệp|Hợp tác xã|Phục hồi, phá sản)/);

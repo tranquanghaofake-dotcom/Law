@@ -75,7 +75,10 @@ test('cột đợt thành dải chip trên điện thoại; desktop có cột, k
   await page.setViewportSize({ width: 1280, height: 800 });
   await expect(page.locator('.lesson-panel')).toBeVisible();
   await expect(page.locator('.lesson-strip')).toBeHidden();
-  await expect(page.locator('.session-bar .title')).toHaveText('Hiến pháp là gì');
+  // Tên đợt hp-1 lấy từ dữ liệu môn, không gõ tay.
+  const hpSubject = JSON.parse(readFileSync('../../packages/content/data/subjects/hien-phap.json', 'utf8'));
+  const hp1Title = hpSubject.chapters.flatMap((c: any) => c.lessons).find((l: any) => l.id === 'hp-1').title;
+  await expect(page.locator('.session-bar .title')).toHaveText(hp1Title);
 });
 
 test('trả lời sai → màn kết thúc có "Xem lại câu sai", bấm tên khái niệm mở danh mục đúng mục', async ({ page }) => {

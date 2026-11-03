@@ -2,6 +2,7 @@
 import type { Lesson, Level, Subject } from '$lib/content/types';
 import { currentLesson, inProgressLesson, LESSON_DONE_LEVEL } from './lessonState';
 import { REVIEW_MAX_STEPS } from '$lib/engine/session';
+import { byRecency } from './shelves';
 
 export type HeroState =
   | { kind: 'due'; count: number; terms: string[]; minutes: number }
@@ -16,6 +17,8 @@ export type HeroInput = {
   levels: Record<string, Level>;
   /** Số bước của phiên ôn (nếu đã dựng); mặc định = số khái niệm đến hạn. */
   dueSteps?: number;
+  /** Mốc học gần nhất theo môn (lastStudiedBySubject): môn học gần hơn được xét trước, không nhảy sang môn khác chỉ vì đứng trước trong danh sách. */
+  recent?: Record<string, number>;
 };
 
 /** 25 giây một bước, làm tròn, tối thiểu 1 phút. */
@@ -29,7 +32,8 @@ export function knownConcepts(subjects: Subject[]): Set<string> {
   return new Set(subjects.flatMap((s) => s.chapters.flatMap((c) => c.lessons.flatMap((l) => l.concepts))));
 }
 
-export function pickHeroState({ due, subjects, levels, dueSteps }: HeroInput): HeroState {
+export function pickHeroState({ due, subjects: given, levels, dueSteps, recent }: HeroInput): HeroState {
+  const subjects = recent ? byRecency(given, recent) : given;
   const known = knownConcepts(subjects);
   // Tiến độ cũ có thể trỏ tới khái niệm/môn đã bỏ khỏi nội dung: bỏ qua, không để kẹt ở thẻ 'due'.
   const liveDue = due.filter((d) => known.has(d.conceptId));

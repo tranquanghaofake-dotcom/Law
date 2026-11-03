@@ -8,21 +8,22 @@
   import { loadIndex } from '$lib/content/loader';
   import { stats } from '$lib/store/stats';
   import { hashFor } from '$lib/router.svelte';
-  import { GROUPS, filterSets, groupSets } from '$lib/ui/groups';
+  import { GROUPS, filterSetsByShelf, groupSets, shelfOfGroup } from '$lib/ui/groups';
+  import { SHELVES, OTHER_SHELF } from '$lib/ui/shelves';
   import { setRail } from '$lib/ui/rail.svelte';
   import QuizRail from '$lib/ui/QuizRail.svelte';
 
   let index = $state<ContentIndex | null>(null);
   let best = $state<Record<string, number | null>>({});
-  let group = $state<string | null>(null);
+  let pick = $state<string | null>(null);
   let error = $state('');
   document.title = 'Luyện đề · Luyện Luật';
   loadIndex()
     .then(async (i) => { await stats.ensureV1Migrated(i); for (const s of i.sets) best[s.id] = await stats.best(s.id); index = i; })
     .catch((e: Error) => (error = e.message));
 
-  const groupsAll = $derived(groupSets(index?.sets ?? []));
-  const shown = $derived(groupSets(filterSets(index?.sets ?? [], group)));
+  const usedShelves = $derived([...SHELVES, OTHER_SHELF].filter((sh) => (index?.sets ?? []).some((s) => shelfOfGroup(s.group) === sh.id)));
+  const shown = $derived(groupSets(filterSetsByShelf(index?.sets ?? [], pick)));
   const railData = $derived.by(() => {
     const sets = index?.sets ?? [];
     const done = sets.filter((s) => best[s.id] != null);
@@ -36,16 +37,18 @@
 <header class="page-head">
   <SubjectArt name={PAGE_ART.quizzes} class="head-art" />
   <h1>Luyện đề 10 câu</h1>
-  <p class="muted">Bộ 10 câu tình huống đời thường, chia theo ngành luật — tách riêng với các môn ở <a href={hashFor('subjects')}>Môn học</a>. Làm để kiểm tra nhanh; kết quả không ghi vào lịch ôn.</p>
+  <p class="muted">Bộ 10 câu tình huống theo ngành luật; kết quả không ghi vào lịch ôn.</p>
 </header>
 {#if error}
   <section class="card"><p class="muted">Không tải được dữ liệu: {error}</p></section>
 {:else if !index}
   <p class="loading">Đang tải…</p>
 {:else}
-  <div class="filters" role="group" aria-label="Lọc theo nhóm">
-    <button type="button" class="filter" aria-pressed={group === null} onclick={() => (group = null)}>Tất cả</button>
-    {#each groupsAll as [g] (g)}<button type="button" class="filter" aria-pressed={group === g} onclick={() => (group = g)}>{GROUPS[g] ?? g}</button>{/each}
+  <div class="shelf-chips" role="group" aria-label="Lọc theo nhóm ngành">
+    <button type="button" class="filter" aria-pressed={pick === null} onclick={() => (pick = null)}>Tất cả</button>
+    {#each usedShelves as sh (sh.id)}
+      <button type="button" class="filter" aria-pressed={pick === sh.id} onclick={() => (pick = pick === sh.id ? null : sh.id)} style="--shelf:{sh.color}"><span class="dot" aria-hidden="true"></span>{sh.name}</button>
+    {/each}
   </div>
   {#each shown as [g, sets] (g)}
     <p class="kicker">{GROUPS[g] ?? g}</p>

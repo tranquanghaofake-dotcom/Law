@@ -34,6 +34,9 @@ export function artFor(subjectId: string): ArtName {
   return SUBJECT_ART[subjectId] ?? 'tam-quan';
 }
 
+/** Môn có tranh kiến trúc vẽ riêng (không rơi về cổng tam quan); môn khác dùng bìa sách (spec phần nhìn đợt 4 §3.4). */
+export const hasOwnArt = (subjectId: string): boolean => subjectId in SUBJECT_ART;
+
 /** Tranh nhỏ cho bộ đề: theo id, không có thì theo nhóm, cuối cùng là "quan hệ pháp luật". */
 export function vignetteFor(set: { id: string; group: string }): VignetteName {
   return SET_ART[set.id] ?? GROUP_ART[set.group] ?? 'quan-he';

@@ -31,7 +31,7 @@
       </li>
     </ul>
     <div class="plank" aria-hidden="true"></div>
-    <p class="shelf-count small muted">{earned.length}/{shelf.books.length} sách</p>
+    <p class="shelf-count small muted">{#if earned.length === 0}Chưa có sách · học hết 1 chương để nhận{:else}{earned.length}/{shelf.books.length} sách{/if}</p>
   </div>
 {:else}
   <div class="bookcase">

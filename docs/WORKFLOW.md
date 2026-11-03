@@ -30,6 +30,7 @@ Phần video TikTok và web v1 nằm ở nhánh [`archive`](https://github.com/t
 | `npm run ci` | đúng chuỗi CI chạy: content → check → test → build | ~20 s |
 | `npm run e2e` | Playwright vào bản build local (`PW_CHROMIUM=…` nếu Chromium ở chỗ riêng) | ~1 phút |
 | `npm run shots` | chụp Hôm nay/Phiên học/Quiz/Hồ sơ ở 390·820·1280·1440 → `tools/shots/` | ~15 s |
+| `SHOTS_DARK=1 npm run shots` | như trên, thêm bộ ảnh tối `dark-<mobile\|laptop>-<màn>.png` | ~25 s |
 
 Build cho Pages: `BASE_PATH=/Law/ npm run build`.
 

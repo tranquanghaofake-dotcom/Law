@@ -79,6 +79,9 @@ export type QuizSet = {
   questions: QuizQuestion[];
 };
 
+/** dist/terms/<subjectId>.json: `{ "<conceptId>": "<term>" }` cho mọi khái niệm của môn. */
+export type ConceptTerms = Record<string, string>;
+
 export type ContentIndex = {
   subjects: Pick<Subject, 'id' | 'title' | 'short'>[];
   conceptCount: Record<string, number>;

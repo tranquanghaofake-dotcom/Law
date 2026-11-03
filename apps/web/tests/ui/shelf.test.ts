@@ -20,9 +20,10 @@ describe('kệ sách', () => {
     expect(shelfBooks([subj('x', ids)], levels)[0].state).toBe('growing');
     expect(shelfBooks([subj('x', ids)], { ...levels, k249: 6 })[0].state).toBe('done');
   });
-  it('môn không có khái niệm không lên kệ; bộ màu Hiến pháp là vàng, môn khác xen kẽ', () => {
+  it('môn không có khái niệm không lên kệ; màu gáy = màu kệ nhóm ngành (một môn một màu ở mọi nơi — Q6)', () => {
     expect(shelfBooks([subj('rong', [])], {})).toHaveLength(0);
-    expect(schemeFor('hien-phap', 0)).toBe('vang');
+    expect(schemeFor('hien-phap', 0)).toBe('#9E2A22');
+    expect(schemeFor('dan-su', 1)).toBe(schemeFor('to-tung-dan-su', 5));
     expect(schemeFor('dan-su', 1)).not.toBe(schemeFor('lao-dong', 2));
     expect(SHELF_MIN).toBeGreaterThanOrEqual(3);
   });

@@ -1,18 +1,21 @@
 <script lang="ts">
   // Trang môn: tổng quan, chú giải, lưới bậc theo đợt, local nav chương (spec §4.2).
   import type { Level, Subject } from '$lib/content/types';
-  import { loadConcepts, loadSubject } from '$lib/content/loader';
+  import { loadSubject, loadTerms } from '$lib/content/loader';
   import { repo } from '$lib/store/progress-repo';
   import { hashFor, route } from '$lib/router.svelte';
   import { currentLesson, lessonStates } from '$lib/ui/lessonState';
-  import { subjectSummary } from '$lib/ui/subjectSummary';
+  import { chapterCounts, subjectSummary } from '$lib/ui/subjectSummary';
   import { setRail } from '$lib/ui/rail.svelte';
   import MasteryGrid from '$lib/ui/MasteryGrid.svelte';
   import LevelLegend from '$lib/ui/LevelLegend.svelte';
   import SubjectRail from '$lib/ui/SubjectRail.svelte';
   import SubjectArt from '$lib/art/SubjectArt.svelte';
-  import { artFor, emblemFor } from '$lib/art/registry';
+  import { artFor, emblemFor, hasOwnArt } from '$lib/art/registry';
   import Emblem from '$lib/art/Emblem.svelte';
+  import BookCover from '$lib/art/BookCover.svelte';
+  import { shelfOf } from '$lib/ui/shelves';
+  import { coverTitle } from '$lib/ui/bookCover';
   /** Nhãn ngắn cho mục lục chương: "Chương 7. Quốc hội…" → "Chương 7"; "Nâng cao: …" → "Nâng cao". */
   const shortTitle = (t: string) => t.split(/[.:]/)[0].trim();
 
@@ -24,6 +27,7 @@
   let error = $state('');
 
   const summary = $derived(subject ? subjectSummary(subject, levels) : null);
+  const counts = $derived(subject ? chapterCounts(subject, levels) : {});
   const states = $derived(subject ? lessonStates(subject, levels) : {});
   const next = $derived(subject ? currentLesson(subject, levels) : null);
 
@@ -36,9 +40,8 @@
       const known = new Set(ids);
       due = (await repo.due(new Date(), s.id)).filter((p) => known.has(p.conceptId)).length;
       const hard = (await repo.difficult()).filter((p) => p.subject === s.id && known.has(p.conceptId)).slice(0, 5).map((p) => p.conceptId);
-      const loaded = await Promise.allSettled(ids.map((id) => loadConcepts(s.id, [id])));
-      const t: Record<string, string> = {};
-      for (const r of loaded) if (r.status === 'fulfilled') for (const c of r.value) t[c.id] = c.term;
+      let t: Record<string, string> = {};
+      try { t = await loadTerms(s.id); } catch { /* bảng tên lỗi: giữ slug */ }
       terms = t;
       difficult = hard.map((id) => ({ id, term: t[id] ?? id }));
       subject = s;
@@ -59,19 +62,23 @@
 {:else}
   <nav class="crumbs small muted" aria-label="Vị trí"><a href={hashFor('subjects')}>Môn học</a> › {subject.title}</nav>
   <header class="subject-head">
-    <SubjectArt name={artFor(subject.id)} class="head-art" />
+    {#if hasOwnArt(subject.id)}
+      <SubjectArt name={artFor(subject.id)} class="head-art" />
+    {:else}
+      <BookCover class="head-cover" title={coverTitle(subject.title)} color={shelfOf(subject.id).color} percent={summary.percent} state={summary.mastered === summary.total && summary.total > 0 ? 'done' : summary.mastered > 0 ? 'learning' : 'new'} w={132} />
+    {/if}
     <h1>{subject.title}</h1>
-    <p class="muted">Thuần thục <b>{summary.percent}%</b> · {summary.mastered}/{summary.total} khái niệm · {summary.chapters} chương · {summary.lessons} đợt</p>
+    <p class="muted">Thuần thục <b>{summary.percent}%</b> · {summary.mastered}/{summary.total} khái niệm</p>
     <div class="bar" aria-hidden="true"><span style="width:{summary.percent}%"></span></div>
     <div class="row">
+      {#if next}<span class="next-cta"><a class="btn primary" href={hashFor('lesson', { subject: subject.id, lesson: next.id })}>Học tiếp →</a><span class="next-hint small muted">{next.title}</span></span>{/if}
       {#if due}<a class="btn ghost" href={hashFor('review', { subject: subject.id })}>Ôn {due} khái niệm của môn</a>{/if}
-      <a class="btn ghost" href={hashFor('concepts', { subject: subject.id })}>Danh mục khái niệm</a>
-      {#if next}<a class="btn primary" href={hashFor('lesson', { subject: subject.id, lesson: next.id })}>Học đợt tiếp → {next.title}</a>{/if}
+      <a class="more" href={hashFor('concepts', { subject: subject.id })}>Danh mục khái niệm</a>
     </div>
   </header>
   {#if subject.chapters.length > 1}
     <nav class="local-nav small" aria-label="Chương trong môn">
-      {#each subject.chapters as ch (ch.id)}<a href="#chapter-{ch.id}" title={ch.title} onclick={(e) => { e.preventDefault(); document.getElementById(`chapter-${ch.id}`)?.scrollIntoView({ behavior: 'smooth' }); }}><Emblem name={emblemFor(subject.id, ch.id)} size={26} /><span>{shortTitle(ch.title)}</span></a>{/each}
+      {#each subject.chapters as ch (ch.id)}<a href="#chapter-{ch.id}" title={ch.title} onclick={(e) => { e.preventDefault(); document.getElementById(`chapter-${ch.id}`)?.scrollIntoView({ behavior: 'smooth' }); }}><Emblem name={emblemFor(subject.id, ch.id)} size={26} /><span>{shortTitle(ch.title)}</span><small class="cnt">{counts[ch.id]?.mastered ?? 0}/{counts[ch.id]?.total ?? 0}</small></a>{/each}
     </nav>
   {/if}
   <LevelLegend />

@@ -4,19 +4,16 @@
   import type { BookScheme } from '$lib/ui/shelf';
   import type { BookLevel } from '$lib/game/books';
   import { ring } from './kit';
+  import { mixBlack } from '$lib/ui/shelves';
   let { scheme, level, label, w = 30, h = 100, review = false }: { scheme: BookScheme; level: BookLevel; label: string; w?: number; h?: number; review?: boolean } = $props();
-  const C = {
-    vang: { base: '#F1DB8A', dark: '#D9BC5C', band: '#C0282A', text: '#B3261E', leather: '#7A2A1C' },
-    xanh: { base: '#1F4E9E', dark: '#163C7C', band: '#C0282A', text: '#F6D35B', leather: '#15305F' },
-    dem: { base: '#1E2E5C', dark: '#142046', band: '#2E4B8F', text: '#F6D35B', leather: '#1A1630' },
-  } as const;
-  const c = $derived(C[scheme]);
+  // Bảng màu suy từ màu kệ nhóm ngành (shelves.ts): thân = màu kệ, mép tối hơn, đai son, chữ vàng, da bìa cấp 3 tối hơn nữa.
+  const c = $derived({ base: scheme, dark: mixBlack(scheme, 0.28), band: '#C0282A', text: '#F6D35B', leather: mixBlack(scheme, 0.5) });
   const GOLD = '#E2B23C';
   const body = $derived(level === 1 ? { a: '#EDE3CC', b: '#F7F0DE' } : level === 3 ? { a: '#000000', b: c.leather } : { a: c.dark, b: c.base });
   const ink = $derived(level === 1 ? '#5B4A2E' : level === 3 ? GOLD : c.text);
   const text = $derived(label.toUpperCase());
   const fs = $derived(Math.max(4.5, Math.min(8.5, (h - 66) / (text.length * 0.72))));
-  const gid = $derived(`bs-${scheme}-${level}`);
+  const gid = $derived(`bs-${scheme.slice(1)}-${level}`);
 </script>
 
 <svg class="spine lv{level}" viewBox="0 0 {w} {h}" width={w} height={h} aria-hidden="true" focusable="false">

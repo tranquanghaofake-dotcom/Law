@@ -21,3 +21,13 @@ export function subjectSummary(subject: Subject, levels: Record<string, Level>):
   const needForNext = nextGrade && total ? Math.max(0, Math.ceil(((idx + 2) / 10) * total - 1e-9) - mastered) : 0;
   return { chapters: subject.chapters.length, lessons: lessons.length, total, mastered, percent: Math.round(ratio * 100), grade, nextGrade, needForNext };
 }
+
+/** Số khái niệm đạt ngưỡng thuần thục / tổng của từng chương (khoá = id chương). */
+export function chapterCounts(subject: Subject, levels: Record<string, Level>): Record<string, { mastered: number; total: number }> {
+  const out: Record<string, { mastered: number; total: number }> = {};
+  for (const c of subject.chapters) {
+    const ids = c.lessons.flatMap((l) => l.concepts);
+    out[c.id] = { mastered: masteredCount(ids, levels), total: ids.length };
+  }
+  return out;
+}

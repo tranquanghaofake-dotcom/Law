@@ -65,3 +65,20 @@ describe('minutesFor', () => {
     expect(minutesFor(14)).toBe(6);
   });
 });
+
+describe('pickHeroState — ưu tiên môn học gần nhất (spec phần nhìn đợt 4, PR 1)', () => {
+  const mk = (id: string, c: string[]): Subject => ({ id, title: 'Luật ' + id, short: id, chapters: [{ id: 'c', title: 'C', lessons: [{ id: id + '-1', title: 'Đợt 1', concepts: c }, { id: id + '-2', title: 'Đợt 2', concepts: c.map((x) => x + '2') }] }] });
+  const asxh = mk('an-sinh-xa-hoi', ['a1', 'a2']);
+  const hp = mk('hien-phap', ['h1', 'h2']);
+  it('cả hai môn có đợt dở → continue môn học gần hơn dù đứng sau trong danh sách', () => {
+    const s = pickHeroState({ due: [], subjects: [asxh, hp], levels: { a1: 1, h1: 1 }, recent: { 'an-sinh-xa-hoi': 10, 'hien-phap': 20 } });
+    expect(s).toMatchObject({ kind: 'continue', subject: { id: 'hien-phap' } });
+  });
+  it('đợt 1 của Hiến pháp đã xong, An sinh chưa học → next là đợt 2 Hiến pháp, không nhảy sang An sinh', () => {
+    const s = pickHeroState({ due: [], subjects: [asxh, hp], levels: { h1: 3, h2: 3 }, recent: { 'hien-phap': 20 } });
+    expect(s).toMatchObject({ kind: 'next', subject: { id: 'hien-phap' }, lesson: { id: 'hien-phap-2' } });
+  });
+  it('không có recent → giữ thứ tự danh sách đưa vào', () => {
+    expect(pickHeroState({ due: [], subjects: [asxh, hp], levels: {} })).toMatchObject({ kind: 'start', subject: { id: 'an-sinh-xa-hoi' } });
+  });
+});
