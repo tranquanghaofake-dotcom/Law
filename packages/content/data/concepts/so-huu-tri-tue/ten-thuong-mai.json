@@ -30,8 +30,8 @@
    "options": [
     "Chủ thể kinh doanh mang tên gọi đó với chủ thể kinh doanh khác trong cùng lĩnh vực, khu vực",
     "Hàng hóa, dịch vụ được sản xuất và cung ứng trên thị trường trong nước và quốc tế",
-    "Nguồn gốc địa lý sản phẩm và điều kiện tự nhiên của vùng sản xuất đặc trưng nào",
-    "Kiểu dáng sản phẩm và hình thức trình bày bao bì của hàng hóa trên thị trường khác nhất định"
+    "Nguồn gốc địa lý sản phẩm và điều kiện tự nhiên của vùng sản xuất đặc trưng",
+    "Kiểu dáng sản phẩm và hình thức trình bày bao bì của hàng hóa trên thị trường nói riêng"
    ],
    "answer": 0,
    "explain": "Khoản 21 Điều 4.",
@@ -46,7 +46,7 @@
    "q": "Quyền đối với tên thương mại được xác lập trên cơ sở nào?",
    "options": [
     "Sử dụng hợp pháp tên thương mại đó",
-    "Cấp văn bằng bảo hộ cho doanh nghiệp",
+    "Cấp văn bằng bảo hộ cho chủ thể",
     "Đăng ký quốc tế theo Thỏa ước",
     "Quyết định của Bộ Công Thương"
    ],
