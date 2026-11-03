@@ -44,3 +44,10 @@ Mỗi dòng là một tình huống thêm vào câu `pair` (trường `basis` c�
 | `thue` | Thuế giá trị gia tăng | Thuế gián thu | Giáo trình Luật Tài chính, ĐH Luật Hà Nội (chưa đối chiếu nguyên văn) (phân loại thuế trực thu, gián thu) |
 
 Tổng: 38 tình huống mới; 17 khái niệm đạt ≥ 4 tình huống.
+
+## Cờ dò trích dẫn (haiku-2)
+
+| id#item | loại | quyết định | ghi chú |
+|---|---|---|---|
+| `he-thong-nsnn#2` (pair), `#5` (truefalse) | cấp huyện / văn bản cũ | ⚠ opus | thuật ngữ đã đổi (chính quyền 2 cấp); pair "Có ngân sách cấp huyện" là so sánh Luật NSNN 2015 với 2025; để opus xử lý theo loại thuat-ngu-cu |
+| `thue-thu-nhap-doanh-nghiep#-1` | khoản không có trong file | ⚠ opus | "khoản 14a Điều 4" do Luật 09/2026/QH16 bổ sung; file `ltndn-2025.txt` chỉ có 15 khoản. Cần đối chiếu văn bản sửa đổi trước khi giữ |
