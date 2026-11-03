@@ -70,6 +70,16 @@
     {
      "text": "Tối thiểu 03 cổ đông, không giới hạn tối đa",
      "answer": "right"
+    },
+    {
+     "text": "Có từ 02 đến 50 thành viên là tổ chức, cá nhân",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 46 Luật Doanh nghiệp 2020"
+    },
+    {
+     "text": "Phát hành cổ phần để huy động vốn trực tiếp từ công chúng",
+     "answer": "right",
+     "basis": "Điểm a khoản 1 Điều 111 Luật Doanh nghiệp 2020; khoản 3 Điều 46 (không được phát hành cổ phần)"
     }
    ],
    "explain": "Điều 46, 111."
