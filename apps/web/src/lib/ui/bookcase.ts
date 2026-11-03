@@ -7,8 +7,8 @@ import { coverFor } from '$lib/art/covers';
 import { orderedSubjects, shelfOf, type Shelf } from './shelves';
 
 /** Khoảng dày/cao của gáy (px thiết kế). */
-export const SPINE_W = [22, 38] as const;
-export const SPINE_H = [64, 110] as const;
+export const SPINE_W = [30, 44] as const;
+export const SPINE_H = [96, 140] as const;
 /** Khe giữa hai gáy, đệm hai đầu mỗi kệ (cho vách ngăn) — tính vào độ rộng để cân tầng. */
 export const SPINE_GAP = 4;
 export const BAY_PAD = 14;
@@ -17,7 +17,7 @@ const clamp = (n: number, [lo, hi]: readonly [number, number]) => Math.min(hi, M
 
 /** Kích thước gáy: dày theo số khái niệm, cao theo số chương. */
 export function spineSize(chapters: number, concepts: number): { w: number; h: number } {
-  return { w: Math.round(clamp(20 + concepts * 0.17, SPINE_W)), h: Math.round(clamp(50 + chapters * 3.8, SPINE_H)) };
+  return { w: Math.round(clamp(28 + concepts * 0.17, SPINE_W)), h: Math.round(clamp(84 + chapters * 3.8, SPINE_H)) };
 }
 
 /** Nâng độ bão hoà (HSL) của màu thân bìa lên ≥ `min` để gáy trên kệ không bị xám; màu gần trung tính (s < .05) giữ nguyên. */
@@ -34,11 +34,13 @@ export function spineColor(hex: string, min = 0.6): string {
   return '#' + [r1, g1, b1].map((v) => Math.round((v + m) * 255).toString(16).padStart(2, '0')).join('');
 }
 
-/** Cỡ chữ gáy (px thiết kế) để cả tên viết tắt nằm vừa chiều cao gáy (khoảng 74% chiều cao, mỗi ký tự ≈ 0,62 cỡ chữ); không nhỏ hơn 6. */
+/** Cỡ chữ gáy (px thiết kế): tên nằm trong ô khung giữa nhãn kem (đầu gáy) và chân gáy → vùng chữ = h − 44; mỗi ký tự ≈ 0,62 cỡ chữ; kẹp 7–10,5. */
 export function spineFont(short: string, h: number): number {
-  const fit = (h * 0.74) / (Math.max(1, short.length) * 0.62);
-  return Math.round(Math.max(6, Math.min(8.5, fit)) * 10) / 10;
+  const fit = (h - SPINE_CHROME) / (Math.max(1, short.length) * 0.62);
+  return Math.round(Math.max(7, Math.min(10.5, fit)) * 10) / 10;
 }
+/** Phần gáy không dành cho tên: nhãn kem + đai vàng đầu, chân gáy (px thiết kế). */
+export const SPINE_CHROME = 44;
 
 export type CaseBook = {
   id: string; title: string; short: string; href: string; color: string;
