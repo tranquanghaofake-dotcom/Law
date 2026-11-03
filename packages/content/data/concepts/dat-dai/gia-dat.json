@@ -70,6 +70,16 @@
     {
      "text": "Nộp khi được Nhà nước cho thuê đất",
      "answer": "right"
+    },
+    {
+     "text": "Người được Nhà nước giao đất có thu tiền để sử dụng đất phải nộp tiền sử dụng đất",
+     "answer": "left",
+     "basis": "Khoản 44 Điều 3 Luật Đất đai 2024"
+    },
+    {
+     "text": "Tổ chức thuê đất trả tiền thuê đất hằng năm theo quy định của Nhà nước",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 120 Luật Đất đai 2024"
     }
    ],
    "explain": "Khoản 44, 45 Điều 3."

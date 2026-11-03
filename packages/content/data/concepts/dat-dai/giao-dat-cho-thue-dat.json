@@ -70,6 +70,16 @@
     {
      "text": "Doanh nghiệp làm nhà máy trong khu công nghiệp",
      "answer": "right"
+    },
+    {
+     "text": "Cá nhân trực tiếp sản xuất nông nghiệp được giao đất nông nghiệp trong hạn mức",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 118 Luật Đất đai 2024"
+    },
+    {
+     "text": "Dự án sản xuất nông nghiệp của doanh nghiệp, Nhà nước cho thuê đất thu tiền một lần",
+     "answer": "right",
+     "basis": "Điểm a khoản 2 Điều 120 Luật Đất đai 2024"
     }
    ],
    "explain": "Điều 118, 120."
