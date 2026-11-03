@@ -1,0 +1,108 @@
+{
+ "id": "llc-cau-thanh-vppl",
+ "subject": "ly-luan-nn-pl",
+ "chapter": "v8",
+ "term": "Cấu thành vi phạm pháp luật",
+ "definition": "Cấu thành vi phạm pháp luật là toàn bộ những yếu tố làm thành một vi phạm pháp luật cụ thể, gồm mặt khách quan, mặt chủ quan, chủ thể và khách thể của vi phạm pháp luật.",
+ "plain": "MẶT KHÁCH QUAN — biểu hiện ra bên ngoài: hành vi trái pháp luật (hành động/không hành động), hậu quả, quan hệ nhân quả, thời gian, địa điểm, công cụ. MẶT CHỦ QUAN — tâm lý bên trong: LỖI (cố ý trực tiếp: mong muốn hậu quả; cố ý gián tiếp: để mặc; vô ý vì quá tự tin: tin hậu quả không xảy ra; vô ý do cẩu thả: không thấy trước dù phải thấy), ĐỘNG CƠ (chỉ có ở lỗi cố ý), MỤC ĐÍCH (chỉ ở cố ý trực tiếp). CHỦ THỂ — cá nhân, tổ chức có năng lực trách nhiệm pháp lý. KHÁCH THỂ — quan hệ xã hội được pháp luật bảo vệ bị xâm hại; phân biệt với ĐỐI TƯỢNG tác động (vật, người cụ thể). Cấu thành là cơ sở thực tế để truy cứu trách nhiệm pháp lý.",
+ "example": "D lái xe vượt đèn đỏ gây tai nạn: mặt khách quan — hành vi vượt đèn, hậu quả thương tích, quan hệ nhân quả; mặt chủ quan — vô ý vì quá tự tin; chủ thể — D đủ tuổi, nhận thức; khách thể — trật tự an toàn giao thông, sức khỏe người khác.",
+ "source": {
+  "kind": "textbook",
+  "cite": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (Drive HLU/KÌ I NĂM I/LLCNN&PL/TÀI LIỆU ÔN THI LLC: VD8, VD9, VD11, VD12, VD13) và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "llc-vi-pham-phap-luat",
+  "llc-trach-nhiem-phap-ly",
+  "llc-co-cau-qppl"
+ ],
+ "keywords": [
+  "mặt khách quan",
+  "mặt chủ quan",
+  "lỗi cố ý",
+  "lỗi vô ý",
+  "khách thể"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Lỗi cố ý gián tiếp là gì?",
+   "options": [
+    "Chủ thể thấy trước hậu quả, không mong muốn nhưng để mặc xảy ra",
+    "Chủ thể mong muốn hậu quả xảy ra",
+    "Chủ thể tin hậu quả không xảy ra",
+    "Chủ thể không thấy trước hậu quả"
+   ],
+   "answer": 0,
+   "explain": "VD13."
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Yếu tố nào thuộc mặt khách quan của vi phạm pháp luật?",
+   "options": [
+    "Hành vi trái pháp luật, hậu quả, quan hệ nhân quả",
+    "Lỗi",
+    "Động cơ",
+    "Mục đích"
+   ],
+   "answer": 0,
+   "explain": "VD13."
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Khách thể",
+   "right": "Đối tượng tác động",
+   "cases": [
+    {
+     "text": "Quyền sở hữu tài sản của công dân",
+     "answer": "left"
+    },
+    {
+     "text": "Chiếc xe máy bị trộm",
+     "answer": "right"
+    }
+   ],
+   "explain": "VD13."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Cấu thành vi phạm pháp luật gồm mặt {{khách quan}}, mặt {{chủ quan}}, chủ thể và khách thể.",
+   "bank_extra": [
+    "pháp lý",
+    "xã hội"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Lỗi vô ý do {{cẩu thả}}: chủ thể không thấy trước hậu quả dù phải thấy; lỗi vô ý vì {{quá tự tin}}: thấy trước nhưng tin hậu quả không xảy ra.",
+   "bank_extra": [
+    "cố ý",
+    "bất khả kháng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi vi phạm pháp luật đều có yếu tố mục đích.",
+   "answer": false,
+   "explain": "Sai. Mục đích chỉ có ở vi phạm với lỗi cố ý trực tiếp."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày bốn yếu tố cấu thành vi phạm pháp luật.",
+   "model": "Mặt khách quan (hành vi, hậu quả, nhân quả, thời gian, địa điểm); mặt chủ quan (lỗi cố ý/vô ý, động cơ, mục đích); chủ thể có năng lực trách nhiệm pháp lý; khách thể là quan hệ xã hội được pháp luật bảo vệ.",
+   "keywords": [
+    "khách quan",
+    "chủ quan",
+    "chủ thể",
+    "khách thể"
+   ]
+  }
+ ]
+}

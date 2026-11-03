@@ -1,0 +1,106 @@
+{
+ "id": "llc-cau-truc-nha-nuoc",
+ "subject": "ly-luan-nn-pl",
+ "chapter": "v2",
+ "term": "Hình thức cấu trúc nhà nước: đơn nhất và liên bang",
+ "definition": "Hình thức cấu trúc nhà nước là sự tổ chức nhà nước thành các đơn vị hành chính lãnh thổ và tính chất quan hệ giữa các bộ phận cấu thành nhà nước với nhau, giữa các cơ quan nhà nước ở trung ương và ở địa phương; nhà nước đơn nhất có chủ quyền chung, lãnh thổ toàn vẹn thống nhất, các đơn vị hành chính lãnh thổ không có chủ quyền riêng.",
+ "plain": "ĐƠN NHẤT: một chủ quyền, một hiến pháp, một hệ thống pháp luật, một hệ thống cơ quan nhà nước; địa phương là đơn vị hành chính không có chủ quyền (Việt Nam, Pháp, Nhật). LIÊN BANG: hợp thành từ các bang/thành viên có chủ quyền riêng ở mức độ nhất định; hai hệ thống cơ quan, hai hệ thống pháp luật (liên bang và bang); công dân mang hai quốc tịch (Mỹ, Đức, Nga). Phân biệt với LIÊN MINH quốc gia (EU) — không phải nhà nước. Việt Nam 2025 sắp xếp còn hai cấp chính quyền địa phương (tỉnh, xã) nhưng vẫn là nhà nước đơn nhất.",
+ "example": "Bang California có hiến pháp và luật riêng bên cạnh Hiến pháp Hoa Kỳ: cấu trúc liên bang. Tỉnh Nghệ An không có hiến pháp riêng: cấu trúc đơn nhất.",
+ "source": {
+  "kind": "textbook",
+  "cite": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (Drive HLU/KÌ I NĂM I/LLCNN&PL/TÀI LIỆU ÔN THI LLC: VD8, VD9, VD11, VD12, VD13) và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "llc-hinh-thuc-nha-nuoc",
+  "llc-chinh-the"
+ ],
+ "keywords": [
+  "đơn nhất",
+  "liên bang",
+  "chủ quyền",
+  "đơn vị hành chính lãnh thổ"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đặc điểm của nhà nước đơn nhất?",
+   "options": [
+    "Một chủ quyền chung, đơn vị hành chính lãnh thổ không có chủ quyền riêng",
+    "Các bang có hiến pháp riêng",
+    "Hai hệ thống pháp luật song song",
+    "Công dân có hai quốc tịch"
+   ],
+   "answer": 0,
+   "explain": "Bài 6."
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nhà nước nào có cấu trúc liên bang?",
+   "options": [
+    "Hoa Kỳ",
+    "Việt Nam",
+    "Pháp",
+    "Nhật Bản"
+   ],
+   "answer": 0,
+   "explain": "Hoa Kỳ gồm 50 bang có chủ quyền hạn chế."
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Đơn nhất",
+   "right": "Liên bang",
+   "cases": [
+    {
+     "text": "Một hiến pháp, một hệ thống pháp luật thống nhất",
+     "answer": "left"
+    },
+    {
+     "text": "Hai hệ thống cơ quan nhà nước: liên bang và bang",
+     "answer": "right"
+    }
+   ],
+   "explain": "Bài 6."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhà nước {{đơn nhất}} có chủ quyền chung, lãnh thổ toàn vẹn thống nhất; các đơn vị hành chính lãnh thổ không có {{chủ quyền}} riêng.",
+   "bank_extra": [
+    "liên bang",
+    "ngân sách"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hình thức cấu trúc nhà nước thể hiện quan hệ giữa các cơ quan nhà nước ở {{trung ương}} và các cơ quan nhà nước ở {{địa phương}}.",
+   "bank_extra": [
+    "lập pháp",
+    "nước ngoài"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Liên minh châu Âu là một nhà nước liên bang.",
+   "answer": false,
+   "explain": "Sai. EU là liên minh các quốc gia có chủ quyền, không phải nhà nước."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Phân biệt nhà nước đơn nhất và nhà nước liên bang.",
+   "model": "Đơn nhất: một chủ quyền, một hiến pháp, một hệ thống pháp luật và cơ quan, địa phương không có chủ quyền; liên bang: các bang có chủ quyền hạn chế, hai hệ thống pháp luật và cơ quan, hai quốc tịch.",
+   "keywords": [
+    "chủ quyền",
+    "hiến pháp",
+    "bang",
+    "đơn vị hành chính"
+   ]
+  }
+ ]
+}

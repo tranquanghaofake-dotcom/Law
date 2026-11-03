@@ -1,0 +1,106 @@
+{
+ "id": "llc-hinh-thuc-nha-nuoc",
+ "subject": "ly-luan-nn-pl",
+ "chapter": "v2",
+ "term": "Hình thức nhà nước",
+ "definition": "Hình thức nhà nước là cách thức tổ chức quyền lực nhà nước và những phương pháp để thực hiện quyền lực nhà nước, gồm ba yếu tố: hình thức chính thể, hình thức cấu trúc nhà nước và chế độ chính trị.",
+ "plain": "Ba yếu tố: CHÍNH THỂ — cách tổ chức, trình tự lập ra cơ quan quyền lực tối cao và quan hệ giữa chúng với nhau, với nhân dân (quân chủ / cộng hòa); CẤU TRÚC — tổ chức nhà nước thành đơn vị hành chính lãnh thổ, quan hệ trung ương – địa phương (đơn nhất / liên bang); CHẾ ĐỘ CHÍNH TRỊ — toàn bộ phương pháp, cách thức thực hiện quyền lực nhà nước (dân chủ / phản dân chủ). Có quan điểm chỉ gồm hai yếu tố (chính thể, cấu trúc). Hình thức nhà nước do bản chất nhà nước quy định nhưng còn chịu ảnh hưởng của truyền thống, tương quan lực lượng, hoàn cảnh quốc tế.",
+ "example": "Việt Nam: chính thể cộng hòa (Quốc hội do dân bầu, nhiệm kỳ 5 năm), cấu trúc đơn nhất, chế độ chính trị dân chủ xã hội chủ nghĩa.",
+ "source": {
+  "kind": "textbook",
+  "cite": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (Drive HLU/KÌ I NĂM I/LLCNN&PL/TÀI LIỆU ÔN THI LLC: VD8, VD9, VD11, VD12, VD13) và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "llc-chinh-the",
+  "llc-cau-truc-nha-nuoc",
+  "llc-chuc-nang-nha-nuoc"
+ ],
+ "keywords": [
+  "chính thể",
+  "cấu trúc nhà nước",
+  "chế độ chính trị",
+  "tổ chức quyền lực"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hình thức nhà nước gồm những yếu tố nào?",
+   "options": [
+    "Hình thức chính thể, hình thức cấu trúc, chế độ chính trị",
+    "Lập pháp, hành pháp, tư pháp",
+    "Đối nội, đối ngoại",
+    "Trung ương, địa phương"
+   ],
+   "answer": 0,
+   "explain": "Bài 6 (quan điểm 3 yếu tố)."
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chế độ chính trị là gì?",
+   "options": [
+    "Toàn bộ phương pháp, cách thức nhà nước sử dụng để thực hiện quyền lực nhà nước",
+    "Cách tổ chức cơ quan quyền lực tối cao",
+    "Cách chia lãnh thổ thành đơn vị hành chính",
+    "Hệ thống các đảng phái"
+   ],
+   "answer": 0,
+   "explain": "Bài 6."
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hình thức chính thể",
+   "right": "Chế độ chính trị",
+   "cases": [
+    {
+     "text": "Quyền lực tối cao thuộc cơ quan được bầu có nhiệm kỳ",
+     "answer": "left"
+    },
+    {
+     "text": "Nhà nước thực hiện quyền lực bằng phương pháp dân chủ",
+     "answer": "right"
+    }
+   ],
+   "explain": "Bài 6."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hình thức nhà nước là cách thức tổ chức {{quyền lực nhà nước}} và những phương pháp để {{thực hiện}} quyền lực nhà nước.",
+   "bank_extra": [
+    "kinh tế",
+    "bầu cử"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ba yếu tố hợp thành hình thức nhà nước: hình thức {{chính thể}}, hình thức {{cấu trúc}} nhà nước và chế độ chính trị.",
+   "bank_extra": [
+    "chức năng",
+    "pháp luật"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hình thức nhà nước hoàn toàn do ý muốn chủ quan của giai cấp cầm quyền quyết định.",
+   "answer": false,
+   "explain": "Sai. Do bản chất nhà nước quy định, nhưng còn chịu ảnh hưởng của truyền thống, tương quan lực lượng, bối cảnh quốc tế."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm và các yếu tố của hình thức nhà nước.",
+   "model": "Cách thức tổ chức và phương pháp thực hiện quyền lực nhà nước; gồm chính thể (quân chủ/cộng hòa), cấu trúc (đơn nhất/liên bang), chế độ chính trị (dân chủ/phản dân chủ).",
+   "keywords": [
+    "chính thể",
+    "cấu trúc",
+    "chế độ chính trị"
+   ]
+  }
+ ]
+}

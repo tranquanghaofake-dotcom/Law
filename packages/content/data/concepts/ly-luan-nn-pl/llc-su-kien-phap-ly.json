@@ -1,0 +1,107 @@
+{
+ "id": "llc-su-kien-phap-ly",
+ "subject": "ly-luan-nn-pl",
+ "chapter": "v6",
+ "term": "Sự kiện pháp lý",
+ "definition": "Sự kiện pháp lý là những sự kiện thực tế mà khi xuất hiện, theo quy định của pháp luật, làm phát sinh, thay đổi hoặc chấm dứt quan hệ pháp luật cụ thể; gồm sự biến pháp lý (hiện tượng xảy ra ngoài ý chí con người) và hành vi pháp lý (xử sự có ý chí của chủ thể).",
+ "plain": "Điều kiện: sự kiện phải được PHÁP LUẬT DỰ LIỆU gắn với hậu quả pháp lý. Phân loại theo ý chí: SỰ BIẾN (bão, động đất, người chết tự nhiên, thời hạn trôi qua) và HÀNH VI (hợp pháp: ký hợp đồng, kết hôn; trái pháp luật: trộm cắp). Theo hậu quả: sự kiện làm PHÁT SINH, THAY ĐỔI, CHẤM DỨT quan hệ pháp luật. Một sự kiện có thể gây nhiều hậu quả (cái chết: chấm dứt hôn nhân, phát sinh thừa kế). Cùng với quy phạm pháp luật và năng lực chủ thể, sự kiện pháp lý là điều kiện để quan hệ pháp luật xuất hiện trên thực tế.",
+ "example": "Bão làm sập nhà đã mua bảo hiểm: sự biến pháp lý làm phát sinh quan hệ bồi thường bảo hiểm. Hai người đăng ký kết hôn: hành vi pháp lý làm phát sinh quan hệ hôn nhân.",
+ "source": {
+  "kind": "textbook",
+  "cite": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (Drive HLU/KÌ I NĂM I/LLCNN&PL/TÀI LIỆU ÔN THI LLC: VD8, VD9, VD11, VD12, VD13) và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "llc-quan-he-phap-luat",
+  "llc-vi-pham-phap-luat"
+ ],
+ "keywords": [
+  "sự biến",
+  "hành vi",
+  "phát sinh",
+  "thay đổi",
+  "chấm dứt"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Sự biến pháp lý là gì?",
+   "options": [
+    "Hiện tượng xảy ra ngoài ý chí con người nhưng được pháp luật gắn với hậu quả pháp lý",
+    "Hành vi có ý chí của chủ thể",
+    "Quyết định của tòa án",
+    "Quy phạm pháp luật"
+   ],
+   "answer": 0,
+   "explain": "VD11."
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Việc A ký hợp đồng thuê nhà của B là loại sự kiện pháp lý nào?",
+   "options": [
+    "Hành vi pháp lý hợp pháp làm phát sinh quan hệ pháp luật",
+    "Sự biến pháp lý",
+    "Hành vi trái pháp luật",
+    "Không phải sự kiện pháp lý"
+   ],
+   "answer": 0,
+   "explain": "VD11."
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Sự biến pháp lý",
+   "right": "Hành vi pháp lý",
+   "cases": [
+    {
+     "text": "Lũ lụt cuốn trôi tài sản được bảo hiểm",
+     "answer": "left"
+    },
+    {
+     "text": "Lập di chúc",
+     "answer": "right"
+    }
+   ],
+   "explain": "VD11."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Sự kiện pháp lý là sự kiện thực tế được pháp luật quy định, làm {{phát sinh}}, thay đổi hoặc {{chấm dứt}} quan hệ pháp luật.",
+   "bank_extra": [
+    "giải thích",
+    "mô tả"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Căn cứ dấu hiệu ý chí, sự kiện pháp lý chia thành {{sự biến}} pháp lý và {{hành vi}} pháp lý.",
+   "bank_extra": [
+    "quy phạm",
+    "chế tài"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi sự kiện xảy ra trong đời sống đều là sự kiện pháp lý.",
+   "answer": false,
+   "explain": "Sai. Chỉ sự kiện được pháp luật dự liệu gắn với hậu quả pháp lý mới là sự kiện pháp lý."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm và phân loại sự kiện pháp lý.",
+   "model": "Sự kiện thực tế được pháp luật quy định làm phát sinh, thay đổi, chấm dứt quan hệ pháp luật; theo ý chí: sự biến và hành vi (hợp pháp, trái pháp luật); theo hậu quả: phát sinh, thay đổi, chấm dứt.",
+   "keywords": [
+    "sự biến",
+    "hành vi",
+    "phát sinh",
+    "chấm dứt"
+   ]
+  }
+ ]
+}

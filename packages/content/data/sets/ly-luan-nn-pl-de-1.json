@@ -1,0 +1,139 @@
+{
+  "id": "ly-luan-nn-pl-de-1",
+  "group": "ly-luan-nn-pl",
+  "title": "Đề kiểm tra Lý luận NN&PL – Nhà nước",
+  "subtitle": "10 câu, vấn đề 1–3 (câu luật định theo Hiến pháp 2013)",
+  "updated": "2026-11-01",
+  "questions": [
+    {
+      "q": "Nhà nước Việt Nam là nhà nước gì theo khoản 1 Điều 2 Hiến pháp 2013?",
+      "options": [
+        "Nhà nước pháp quyền xã hội chủ nghĩa của Nhân dân, do Nhân dân, vì Nhân dân",
+        "Nhà nước liên bang",
+        "Nhà nước quân chủ lập hiến",
+        "Nhà nước thần quyền"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 2.",
+      "basis": "Khoản 1 Điều 2 Hiến pháp 2013",
+      "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+    },
+    {
+      "q": "Tất cả quyền lực nhà nước thuộc về ai?",
+      "options": [
+        "Nhân dân",
+        "Quốc hội",
+        "Chính phủ",
+        "Đảng"
+      ],
+      "answer": 0,
+      "explain": "Khoản 2 Điều 2.",
+      "basis": "Khoản 2 Điều 2 Hiến pháp 2013",
+      "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+    },
+    {
+      "q": "Quyền lực nhà nước là thống nhất, có sự gì giữa các cơ quan?",
+      "options": [
+        "Phân công, phối hợp, kiểm soát",
+        "Phân lập, đối trọng",
+        "Cạnh tranh",
+        "Thay thế"
+      ],
+      "answer": 0,
+      "explain": "Khoản 3 Điều 2.",
+      "basis": "Khoản 3 Điều 2 Hiến pháp 2013",
+      "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+    },
+    {
+      "q": "Nhân dân thực hiện quyền lực nhà nước bằng hình thức nào?",
+      "options": [
+        "Dân chủ trực tiếp và dân chủ đại diện",
+        "Chỉ dân chủ đại diện",
+        "Chỉ trưng cầu ý dân",
+        "Qua các tổ chức xã hội"
+      ],
+      "answer": 0,
+      "explain": "Điều 6.",
+      "basis": "Điều 6 Hiến pháp 2013",
+      "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+    },
+    {
+      "q": "Đảng Cộng sản Việt Nam được Hiến pháp xác định là gì?",
+      "options": [
+        "Lực lượng lãnh đạo Nhà nước và xã hội",
+        "Cơ quan lập pháp",
+        "Cơ quan hành pháp",
+        "Tổ chức xã hội"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 4.",
+      "basis": "Khoản 1 Điều 4 Hiến pháp 2013",
+      "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+    },
+    {
+      "q": "Tổ chức đảng và đảng viên hoạt động trong khuôn khổ nào?",
+      "options": [
+        "Hiến pháp và pháp luật",
+        "Điều lệ Đảng mà thôi",
+        "Nghị quyết Đảng mà thôi",
+        "Không giới hạn"
+      ],
+      "answer": 0,
+      "explain": "Khoản 3 Điều 4.",
+      "basis": "Khoản 3 Điều 4 Hiến pháp 2013",
+      "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+    },
+    {
+      "q": "Nhà nước được tổ chức và hoạt động theo gì, thực hiện nguyên tắc nào?",
+      "options": [
+        "Theo Hiến pháp và pháp luật, nguyên tắc tập trung dân chủ",
+        "Theo nghị quyết, nguyên tắc tam quyền phân lập",
+        "Theo tập quán, nguyên tắc thủ trưởng",
+        "Theo điều lệ, nguyên tắc đồng thuận"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 8.",
+      "basis": "Khoản 1 Điều 8 Hiến pháp 2013",
+      "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+    },
+    {
+      "q": "Nền tảng của liên minh làm chủ quyền lực nhà nước theo khoản 2 Điều 2 gồm ai?",
+      "options": [
+        "Giai cấp công nhân với giai cấp nông dân và đội ngũ trí thức",
+        "Doanh nhân và trí thức",
+        "Nông dân và tiểu thương",
+        "Công nhân và quân đội"
+      ],
+      "answer": 0,
+      "explain": "Khoản 2 Điều 2.",
+      "basis": "Khoản 2 Điều 2 Hiến pháp 2013",
+      "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+    },
+    {
+      "q": "Cơ quan nào do Nhân dân bầu, thực hiện dân chủ đại diện ở địa phương?",
+      "options": [
+        "Hội đồng nhân dân",
+        "Ủy ban nhân dân",
+        "Tòa án nhân dân",
+        "Viện kiểm sát nhân dân"
+      ],
+      "answer": 0,
+      "explain": "Điều 6.",
+      "basis": "Điều 6 Hiến pháp 2013",
+      "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+    },
+    {
+      "q": "Mục tiêu nào được Điều 3 Hiến pháp 2013 nêu?",
+      "options": [
+        "Dân giàu, nước mạnh, dân chủ, công bằng, văn minh",
+        "Tăng trưởng GDP hai con số",
+        "Xóa bỏ hoàn toàn tư hữu",
+        "Thống nhất tiền tệ khu vực"
+      ],
+      "answer": 0,
+      "explain": "Điều 3.",
+      "basis": "Điều 3 Hiến pháp 2013",
+      "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+    }
+  ]
+}

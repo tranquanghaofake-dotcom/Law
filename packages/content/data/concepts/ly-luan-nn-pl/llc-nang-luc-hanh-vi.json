@@ -1,0 +1,117 @@
+{
+ "id": "llc-nang-luc-hanh-vi",
+ "subject": "ly-luan-nn-pl",
+ "chapter": "v6",
+ "term": "Năng lực hành vi của chủ thể",
+ "definition": "Năng lực hành vi dân sự của cá nhân là khả năng của cá nhân bằng hành vi của mình xác lập, thực hiện quyền, nghĩa vụ dân sự.",
+ "plain": "Lý luận chung: NĂNG LỰC HÀNH VI là khả năng chủ thể BẰNG HÀNH VI CỦA CHÍNH MÌNH xác lập, thực hiện quyền và nghĩa vụ pháp lý; phụ thuộc ĐỘ TUỔI và KHẢ NĂNG NHẬN THỨC, điều khiển hành vi. BLDS: người từ đủ 18 tuổi có năng lực hành vi đầy đủ (Điều 20); chưa đủ 6 tuổi do người đại diện xác lập; 6 đến dưới 15 cần người đại diện đồng ý trừ giao dịch phục vụ nhu cầu hàng ngày; 15 đến dưới 18 tự xác lập trừ giao dịch về bất động sản, động sản phải đăng ký (Điều 21); mất năng lực hành vi (Điều 22), khó khăn trong nhận thức (Điều 23), hạn chế (Điều 24). Khác năng lực pháp luật: có thể có quyền mà chưa tự thực hiện được.",
+ "example": "Học sinh 14 tuổi mua sách vở bằng tiền tiêu vặt: hợp lệ (nhu cầu hàng ngày); nhưng bán xe máy của mình phải được cha mẹ đồng ý.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 19 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "llc-nang-luc-phap-luat",
+  "llc-quan-he-phap-luat",
+  "llc-vi-pham-phap-luat"
+ ],
+ "keywords": [
+  "bằng hành vi của mình",
+  "xác lập, thực hiện",
+  "độ tuổi",
+  "nhận thức"
+ ],
+ "note": "Bộ luật Dân sự 91/2015/QH13 có hiệu lực từ 01/01/2017; chưa có văn bản sửa đổi có hiệu lực.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Năng lực hành vi dân sự của cá nhân là gì?",
+   "options": [
+    "Khả năng bằng hành vi của mình xác lập, thực hiện quyền, nghĩa vụ dân sự",
+    "Khả năng có quyền dân sự",
+    "Khả năng được thừa kế",
+    "Khả năng sinh sống"
+   ],
+   "answer": 0,
+   "explain": "Điều 19.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 19 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Năng lực hành vi của cá nhân phụ thuộc yếu tố nào theo lý luận?",
+   "options": [
+    "Độ tuổi và khả năng nhận thức, điều khiển hành vi",
+    "Tài sản",
+    "Trình độ học vấn",
+    "Nơi cư trú"
+   ],
+   "answer": 0,
+   "explain": "VD11.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 19 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Có năng lực hành vi dân sự đầy đủ",
+   "right": "Chưa đầy đủ",
+   "cases": [
+    {
+     "text": "Người 25 tuổi, nhận thức bình thường",
+     "answer": "left"
+    },
+    {
+     "text": "Người 16 tuổi",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 20, 21 BLDS 2015."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Năng lực hành vi dân sự là khả năng của cá nhân {{bằng hành vi của mình}} xác lập, {{thực hiện}} quyền, nghĩa vụ dân sự.",
+   "bank_extra": [
+    "thông qua người khác",
+    "từ bỏ"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người từ đủ {{18}} tuổi, không thuộc trường hợp mất, hạn chế năng lực hành vi, có năng lực hành vi dân sự {{đầy đủ}}.",
+   "bank_extra": [
+    "16",
+    "một phần"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Năng lực pháp luật và năng lực hành vi của cá nhân phát sinh cùng lúc khi sinh ra.",
+   "answer": false,
+   "explain": "Sai. Năng lực pháp luật có từ khi sinh; năng lực hành vi hình thành dần theo độ tuổi và nhận thức."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Phân biệt năng lực pháp luật và năng lực hành vi.",
+   "model": "Năng lực pháp luật: khả năng có quyền, nghĩa vụ (từ khi sinh, như nhau); năng lực hành vi: khả năng bằng hành vi của mình xác lập, thực hiện quyền, nghĩa vụ (Điều 19), phụ thuộc tuổi và nhận thức; cả hai hợp thành năng lực chủ thể.",
+   "keywords": [
+    "có quyền",
+    "bằng hành vi",
+    "độ tuổi",
+    "nhận thức"
+   ]
+  }
+ ]
+}

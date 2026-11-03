@@ -1,0 +1,109 @@
+{
+ "id": "llc-dau-hieu-nha-nuoc",
+ "subject": "ly-luan-nn-pl",
+ "chapter": "v1",
+ "term": "Các dấu hiệu đặc trưng của nhà nước",
+ "definition": "Nhà nước có năm dấu hiệu đặc trưng: là tổ chức quyền lực chính trị công cộng đặc biệt; có lãnh thổ và quản lý dân cư theo đơn vị hành chính lãnh thổ; có chủ quyền quốc gia; chỉ nhà nước được ban hành pháp luật và bảo đảm thực hiện pháp luật; quy định và tổ chức thu thuế dưới hình thức bắt buộc.",
+ "plain": "Dùng để phân biệt nhà nước với tổ chức thị tộc và với các tổ chức chính trị – xã hội khác (đảng, đoàn thể, doanh nghiệp): (1) QUYỀN LỰC CÔNG CỘNG ĐẶC BIỆT — tách khỏi dân cư, có bộ máy cưỡng chế (quân đội, cảnh sát, tòa án); (2) quản lý dân cư theo LÃNH THỔ, không theo huyết thống; (3) CHỦ QUYỀN — tối cao đối nội, độc lập đối ngoại; (4) độc quyền BAN HÀNH PHÁP LUẬT; (5) THU THUẾ bắt buộc để nuôi bộ máy. Đảng chính trị có điều lệ nhưng không ban hành pháp luật, không thu thuế, không có chủ quyền.",
+ "example": "Một tập đoàn đa quốc gia có nhân viên ở nhiều nước và \"nội quy\" riêng nhưng không phải nhà nước: không có chủ quyền, không ban hành pháp luật, không thu thuế bắt buộc.",
+ "source": {
+  "kind": "textbook",
+  "cite": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (Drive HLU/KÌ I NĂM I/LLCNN&PL/TÀI LIỆU ÔN THI LLC: VD8, VD9, VD11, VD12, VD13) và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "llc-ban-chat-nha-nuoc",
+  "llc-chuc-nang-nha-nuoc",
+  "llc-hinh-thuc-nha-nuoc"
+ ],
+ "keywords": [
+  "quyền lực công cộng",
+  "lãnh thổ",
+  "chủ quyền",
+  "ban hành pháp luật",
+  "thuế"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Dấu hiệu nào chỉ nhà nước mới có?",
+   "options": [
+    "Ban hành pháp luật và thu thuế bắt buộc",
+    "Có điều lệ riêng",
+    "Có thành viên",
+    "Có trụ sở"
+   ],
+   "answer": 0,
+   "explain": "Bài 2: chỉ nhà nước được ban hành pháp luật, thu thuế."
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nhà nước quản lý dân cư theo tiêu chí nào?",
+   "options": [
+    "Lãnh thổ, đơn vị hành chính",
+    "Huyết thống",
+    "Tôn giáo",
+    "Nghề nghiệp"
+   ],
+   "answer": 0,
+   "explain": "Khác thị tộc quản lý theo huyết thống."
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Dấu hiệu của nhà nước",
+   "right": "Không phải dấu hiệu đặc trưng",
+   "cases": [
+    {
+     "text": "Có chủ quyền quốc gia",
+     "answer": "left"
+    },
+    {
+     "text": "Có số lượng thành viên đông",
+     "answer": "right"
+    }
+   ],
+   "explain": "Bài 2."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhà nước là tổ chức quyền lực chính trị {{công cộng}} đặc biệt, quản lý dân cư theo {{lãnh thổ}}.",
+   "bank_extra": [
+    "tư nhân",
+    "huyết thống"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chỉ nhà nước được quyền ban hành {{pháp luật}} và quy định, tổ chức thu {{thuế}} dưới hình thức bắt buộc.",
+   "bank_extra": [
+    "điều lệ",
+    "hội phí"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tổ chức thị tộc trong xã hội nguyên thủy cũng là một nhà nước vì có người đứng đầu.",
+   "answer": false,
+   "explain": "Sai. Thị tộc không có quyền lực công cộng tách khỏi dân cư, không có lãnh thổ hành chính, pháp luật, thuế."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Kể năm dấu hiệu đặc trưng của nhà nước.",
+   "model": "Quyền lực chính trị công cộng đặc biệt; lãnh thổ và quản lý dân cư theo đơn vị hành chính; chủ quyền quốc gia; độc quyền ban hành pháp luật; thu thuế bắt buộc.",
+   "keywords": [
+    "quyền lực công cộng",
+    "lãnh thổ",
+    "chủ quyền",
+    "pháp luật",
+    "thuế"
+   ]
+  }
+ ]
+}

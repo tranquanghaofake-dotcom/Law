@@ -1,0 +1,107 @@
+{
+ "id": "llc-ban-chat-phap-luat",
+ "subject": "ly-luan-nn-pl",
+ "chapter": "v4",
+ "term": "Bản chất của pháp luật",
+ "definition": "Pháp luật có tính giai cấp — là ý chí của giai cấp thống trị được nâng lên thành luật, nội dung ý chí đó do điều kiện sinh hoạt vật chất của giai cấp thống trị quyết định — và tính xã hội — là công cụ điều chỉnh các quan hệ xã hội nhằm thiết lập, củng cố, bảo vệ trật tự chung của xã hội.",
+ "plain": "TÍNH GIAI CẤP: lực lượng cầm quyền biến ý chí của mình thành ý chí nhà nước, thể hiện qua quy định pháp luật để củng cố quyền thống trị; nội dung ý chí do điều kiện kinh tế quyết định. TÍNH XÃ HỘI: pháp luật ghi nhận thói quen, chuẩn mực chung được cộng đồng chấp nhận; điều chỉnh quan hệ xã hội vì trật tự chung. Quan hệ của pháp luật: với KINH TẾ (kinh tế quyết định, pháp luật tác động trở lại); với CHÍNH TRỊ (chính trị là nền tảng, pháp luật là hình thức thể hiện); với NHÀ NƯỚC (nhà nước đặt ra, bảo đảm; pháp luật ràng buộc, kiểm soát nhà nước); với QUY PHẠM XÃ HỘI khác (đạo đức, tập quán, tôn giáo).",
+ "example": "Luật Đất đai thể hiện chế độ sở hữu toàn dân (tính giai cấp – ý chí nhà nước); đồng thời quy định an toàn giao thông, phòng cháy là lợi ích chung của mọi người (tính xã hội).",
+ "source": {
+  "kind": "textbook",
+  "cite": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (Drive HLU/KÌ I NĂM I/LLCNN&PL/TÀI LIỆU ÔN THI LLC: VD8, VD9, VD11, VD12, VD13) và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "llc-thuoc-tinh-phap-luat",
+  "llc-ban-chat-nha-nuoc",
+  "llc-hinh-thuc-phap-luat"
+ ],
+ "keywords": [
+  "tính giai cấp",
+  "tính xã hội",
+  "ý chí giai cấp thống trị",
+  "trật tự chung"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tính giai cấp của pháp luật thể hiện ở đâu?",
+   "options": [
+    "Pháp luật là ý chí của giai cấp thống trị được nâng lên thành luật",
+    "Pháp luật ghi nhận thói quen của cộng đồng",
+    "Pháp luật bảo vệ trật tự chung",
+    "Pháp luật do tòa án giải thích"
+   ],
+   "answer": 0,
+   "explain": "VD8."
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trong quan hệ với kinh tế, pháp luật có vai trò gì?",
+   "options": [
+    "Phụ thuộc kinh tế, phản ánh trình độ kinh tế, tác động trở lại thúc đẩy hoặc kìm hãm",
+    "Quyết định hoàn toàn kinh tế",
+    "Không liên quan kinh tế",
+    "Chỉ ghi chép kinh tế"
+   ],
+   "answer": 0,
+   "explain": "VD8: kinh tế thuộc cơ sở hạ tầng, quyết định; pháp luật tác động trở lại."
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tính giai cấp",
+   "right": "Tính xã hội",
+   "cases": [
+    {
+     "text": "Bảo vệ chế độ sở hữu của lực lượng cầm quyền",
+     "answer": "left"
+    },
+    {
+     "text": "Quy tắc an toàn giao thông vì lợi ích mọi người",
+     "answer": "right"
+    }
+   ],
+   "explain": "VD8."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Pháp luật là ý chí của giai cấp {{thống trị}} được nâng lên thành {{luật}}.",
+   "bank_extra": [
+    "bị trị",
+    "đạo đức"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Pháp luật là công cụ điều chỉnh các quan hệ xã hội nhằm thiết lập, củng cố, bảo vệ {{trật tự}} chung của {{xã hội}}.",
+   "bank_extra": [
+    "lợi nhuận",
+    "giai cấp"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Pháp luật quyết định sự ra đời và phát triển của kinh tế.",
+   "answer": false,
+   "explain": "Sai. Kinh tế (cơ sở hạ tầng) quyết định pháp luật; pháp luật chỉ tác động trở lại."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Phân tích bản chất của pháp luật.",
+   "model": "Tính giai cấp: ý chí giai cấp thống trị được nâng thành luật, nội dung do điều kiện kinh tế quyết định; tính xã hội: ghi nhận chuẩn mực chung, điều chỉnh quan hệ xã hội vì trật tự chung; quan hệ với kinh tế, chính trị, nhà nước, quy phạm xã hội khác.",
+   "keywords": [
+    "tính giai cấp",
+    "tính xã hội",
+    "ý chí",
+    "trật tự chung"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,110 @@
+{
+ "id": "llc-quan-he-phap-luat",
+ "subject": "ly-luan-nn-pl",
+ "chapter": "v6",
+ "term": "Quan hệ pháp luật",
+ "definition": "Quan hệ pháp luật là quan hệ xã hội được pháp luật điều chỉnh, trong đó các bên tham gia có quyền và nghĩa vụ pháp lý đối với nhau được nhà nước bảo đảm thực hiện.",
+ "plain": "Đặc điểm: hình thành trên cơ sở QUY PHẠM PHÁP LUẬT; mang TÍNH Ý CHÍ (ý chí nhà nước và các bên); các bên có QUYỀN, NGHĨA VỤ PHÁP LÝ; được NHÀ NƯỚC BẢO ĐẢM; xác định cụ thể. Cơ cấu: CHỦ THỂ (cá nhân, tổ chức có năng lực chủ thể), KHÁCH THỂ (lợi ích vật chất, tinh thần các bên hướng tới), NỘI DUNG (quyền và nghĩa vụ pháp lý). Phân loại: theo ngành luật; bình đẳng/phụ thuộc; nội dung/thủ tục; tuyệt đối/tương đối; điều chỉnh/bảo vệ. Điều kiện phát sinh, thay đổi, chấm dứt: quy phạm pháp luật + năng lực chủ thể + sự kiện pháp lý. Không phải mọi quan hệ xã hội đều là quan hệ pháp luật (tình bạn, tình yêu).",
+ "example": "A ký hợp đồng mua xe của B: chủ thể A, B; khách thể là quyền sở hữu xe và khoản tiền; nội dung là quyền nhận xe – nghĩa vụ trả tiền của A và ngược lại.",
+ "source": {
+  "kind": "textbook",
+  "cite": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (Drive HLU/KÌ I NĂM I/LLCNN&PL/TÀI LIỆU ÔN THI LLC: VD8, VD9, VD11, VD12, VD13) và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "llc-nang-luc-phap-luat",
+  "llc-nang-luc-hanh-vi",
+  "llc-su-kien-phap-ly",
+  "llc-phap-nhan"
+ ],
+ "keywords": [
+  "chủ thể",
+  "khách thể",
+  "nội dung",
+  "quyền pháp lý",
+  "nghĩa vụ pháp lý"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ba yếu tố cấu thành quan hệ pháp luật?",
+   "options": [
+    "Chủ thể, khách thể, nội dung",
+    "Giả định, quy định, chế tài",
+    "Hành vi, lỗi, hậu quả",
+    "Quyền, nghĩa vụ, chế tài"
+   ],
+   "answer": 0,
+   "explain": "VD11."
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khách thể của quan hệ pháp luật là gì?",
+   "options": [
+    "Lợi ích, giá trị xã hội mà các chủ thể hướng tới khi tham gia quan hệ",
+    "Hành vi vi phạm",
+    "Quy phạm pháp luật",
+    "Cơ quan nhà nước"
+   ],
+   "answer": 0,
+   "explain": "VD11."
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quan hệ pháp luật",
+   "right": "Quan hệ xã hội không phải quan hệ pháp luật",
+   "cases": [
+    {
+     "text": "Quan hệ cho vay tiền có hợp đồng",
+     "answer": "left"
+    },
+    {
+     "text": "Quan hệ bạn bè thân thiết",
+     "answer": "right"
+    }
+   ],
+   "explain": "VD11."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quan hệ pháp luật là quan hệ xã hội được {{pháp luật}} điều chỉnh, các bên có quyền và nghĩa vụ {{pháp lý}} đối với nhau.",
+   "bank_extra": [
+    "đạo đức",
+    "đạo lý"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ba điều kiện làm phát sinh, thay đổi, chấm dứt quan hệ pháp luật: quy phạm pháp luật, {{năng lực chủ thể}} và {{sự kiện pháp lý}}.",
+   "bank_extra": [
+    "tập quán",
+    "ý muốn một bên"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi quan hệ xã hội đều là quan hệ pháp luật.",
+   "answer": false,
+   "explain": "Sai. Chỉ quan hệ xã hội được quy phạm pháp luật điều chỉnh mới là quan hệ pháp luật."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm, đặc điểm và cơ cấu của quan hệ pháp luật.",
+   "model": "Quan hệ xã hội được pháp luật điều chỉnh, các bên có quyền, nghĩa vụ pháp lý, nhà nước bảo đảm; hình thành trên cơ sở quy phạm, mang tính ý chí; cơ cấu: chủ thể, khách thể, nội dung.",
+   "keywords": [
+    "quy phạm",
+    "ý chí",
+    "chủ thể",
+    "khách thể",
+    "nội dung"
+   ]
+  }
+ ]
+}

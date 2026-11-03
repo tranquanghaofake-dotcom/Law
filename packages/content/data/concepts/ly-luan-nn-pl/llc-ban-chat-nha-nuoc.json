@@ -1,0 +1,107 @@
+{
+ "id": "llc-ban-chat-nha-nuoc",
+ "subject": "ly-luan-nn-pl",
+ "chapter": "v1",
+ "term": "Bản chất của nhà nước",
+ "definition": "Bản chất của nhà nước là tất cả những phương diện cơ bản quy định sự tồn tại và phát triển của nhà nước, thể hiện ở hai phương diện: tính giai cấp và tính xã hội.",
+ "plain": "TÍNH GIAI CẤP: nhà nước là bộ máy cưỡng chế đặc biệt của giai cấp cầm quyền, thể hiện ý chí và bảo vệ lợi ích giai cấp thống trị (giai cấp nào tổ chức nên, quyền lực trong tay ai, phục vụ lợi ích ai). TÍNH XÃ HỘI: nhà nước còn phải giải quyết công việc chung (trị thủy, hạ tầng, y tế, giáo dục, trật tự), thể hiện ý chí chung ở mức độ nhất định. Hai mặt thống nhất, tỷ lệ thay đổi theo kiểu nhà nước và thời kỳ. Định nghĩa: nhà nước là tổ chức quyền lực chính trị công cộng đặc biệt, có chức năng quản lý xã hội để phục vụ lợi ích trước hết cho giai cấp thống trị và thực hiện những hoạt động chung nảy sinh từ bản chất xã hội.",
+ "example": "Nhà nước xây đê chống lũ (tính xã hội) đồng thời ban hành luật bảo vệ chế độ sở hữu của giai cấp cầm quyền (tính giai cấp).",
+ "source": {
+  "kind": "textbook",
+  "cite": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (Drive HLU/KÌ I NĂM I/LLCNN&PL/TÀI LIỆU ÔN THI LLC: VD8, VD9, VD11, VD12, VD13) và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "llc-nguon-goc-nha-nuoc",
+  "llc-dau-hieu-nha-nuoc",
+  "llc-ban-chat-phap-luat"
+ ],
+ "keywords": [
+  "tính giai cấp",
+  "tính xã hội",
+  "giai cấp thống trị",
+  "công việc chung"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Bản chất nhà nước thể hiện ở hai phương diện nào?",
+   "options": [
+    "Tính giai cấp và tính xã hội",
+    "Tính dân tộc và tính quốc tế",
+    "Tính pháp lý và tính đạo đức",
+    "Tính kinh tế và tính văn hóa"
+   ],
+   "answer": 0,
+   "explain": "Bài 2: tính giai cấp và tính xã hội."
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Biểu hiện nào thuộc tính xã hội của nhà nước?",
+   "options": [
+    "Tổ chức phòng chống dịch bệnh cho toàn dân",
+    "Bảo vệ đặc quyền của giai cấp cầm quyền",
+    "Trấn áp giai cấp đối kháng",
+    "Duy trì quan hệ sản xuất có lợi cho giai cấp thống trị"
+   ],
+   "answer": 0,
+   "explain": "Giải quyết công việc chung của xã hội."
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tính giai cấp",
+   "right": "Tính xã hội",
+   "cases": [
+    {
+     "text": "Bộ máy cưỡng chế bảo vệ lợi ích giai cấp cầm quyền",
+     "answer": "left"
+    },
+    {
+     "text": "Xây dựng đường sá, trường học cho mọi người",
+     "answer": "right"
+    }
+   ],
+   "explain": "Bài 2."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhà nước là bộ máy {{cưỡng chế}} đặc biệt của giai cấp cầm quyền, là công cụ thực hiện sự {{thống trị}} giai cấp.",
+   "bank_extra": [
+    "phục vụ",
+    "hòa giải"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bên cạnh tính giai cấp, nhà nước còn có tính {{xã hội}}: giải quyết những công việc {{chung}} nảy sinh từ đời sống cộng đồng.",
+   "bank_extra": [
+    "tôn giáo",
+    "riêng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi nhà nước trong lịch sử đều có tính giai cấp và tính xã hội với tỷ lệ như nhau.",
+   "answer": false,
+   "explain": "Sai. Hai mặt luôn tồn tại nhưng mức độ biểu hiện khác nhau theo kiểu nhà nước và điều kiện lịch sử."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Phân tích bản chất của nhà nước.",
+   "model": "Tính giai cấp: bộ máy cưỡng chế của giai cấp cầm quyền, bảo vệ lợi ích giai cấp thống trị; tính xã hội: giải quyết công việc chung của xã hội; hai mặt thống nhất, mức độ thay đổi theo kiểu nhà nước.",
+   "keywords": [
+    "tính giai cấp",
+    "tính xã hội",
+    "cưỡng chế",
+    "công việc chung"
+   ]
+  }
+ ]
+}

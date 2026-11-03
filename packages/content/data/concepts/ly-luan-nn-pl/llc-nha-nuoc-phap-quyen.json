@@ -1,0 +1,118 @@
+{
+ "id": "llc-nha-nuoc-phap-quyen",
+ "subject": "ly-luan-nn-pl",
+ "chapter": "v3",
+ "term": "Nhà nước pháp quyền xã hội chủ nghĩa Việt Nam",
+ "definition": "Nhà nước Cộng hòa xã hội chủ nghĩa Việt Nam là nhà nước pháp quyền xã hội chủ nghĩa của Nhân dân, do Nhân dân, vì Nhân dân.",
+ "plain": "Lý luận: nhà nước pháp quyền là tổ chức quyền lực công được xây dựng trên nền tảng tư tưởng pháp lý tiến bộ (công bằng, dân chủ, pháp chế), bảo đảm quyền con người, sự ngự trị của pháp luật, tính tối cao của luật, phân công quyền lực và chủ quyền nhân dân. Dấu hiệu: nhân dân là chủ thể quyền lực; pháp luật chi phối nhà nước và xã hội; ghi nhận, bảo đảm quyền con người; trách nhiệm tương hỗ nhà nước – công dân; tư pháp độc lập; quyền lực được kiểm soát. Hiến pháp 2013 lần đầu ghi \"kiểm soát\" quyền lực (khoản 3 Điều 2) và yêu cầu nhà nước hoạt động theo Hiến pháp, pháp luật (Điều 8). Đặc thù Việt Nam: \"xã hội chủ nghĩa\", đặt dưới sự lãnh đạo của Đảng (Điều 4).",
+ "example": "Tòa án tuyên hủy quyết định hành chính trái luật của Ủy ban nhân dân: biểu hiện của pháp luật ràng buộc chính nhà nước — dấu hiệu nhà nước pháp quyền.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 2 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "llc-quyen-luc-nha-nuoc-thong-nhat",
+  "llc-nhan-dan-thuc-hien-quyen-luc",
+  "llc-dang-lanh-dao"
+ ],
+ "keywords": [
+  "pháp quyền",
+  "của Nhân dân",
+  "do Nhân dân",
+  "vì Nhân dân",
+  "ngự trị của pháp luật"
+ ],
+ "note": "Hiến pháp 2013 (hiệu lực 01/01/2014) được sửa đổi, bổ sung bởi Nghị quyết 203/2025/QH15 (hiệu lực 16/6/2025) — các điều được trích (Điều 2, 4, 6) không thuộc phạm vi sửa đổi.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khoản 1 Điều 2 Hiến pháp 2013 xác định Nhà nước Việt Nam là gì?",
+   "options": [
+    "Nhà nước pháp quyền xã hội chủ nghĩa của Nhân dân, do Nhân dân, vì Nhân dân",
+    "Nhà nước chuyên chính vô sản",
+    "Nhà nước liên bang",
+    "Nhà nước quân chủ lập hiến"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 2.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 2 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Dấu hiệu nào của nhà nước pháp quyền theo lý luận?",
+   "options": [
+    "Pháp luật giữ vị trí chi phối đối với nhà nước và xã hội",
+    "Nhà nước đứng trên pháp luật",
+    "Tòa án phụ thuộc cơ quan hành chính",
+    "Quyền lực không bị kiểm soát"
+   ],
+   "answer": 0,
+   "explain": "Bài 9: pháp luật ràng buộc cả nhà nước.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 2 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Phù hợp nhà nước pháp quyền",
+   "right": "Trái với nhà nước pháp quyền",
+   "cases": [
+    {
+     "text": "Cơ quan nhà nước chỉ được làm những gì pháp luật cho phép",
+     "answer": "left"
+    },
+    {
+     "text": "Người đứng đầu ra lệnh trái luật mà không ai được xem xét",
+     "answer": "right"
+    }
+   ],
+   "explain": "Bài 9; Điều 8 Hiến pháp 2013."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhà nước Cộng hòa xã hội chủ nghĩa Việt Nam là nhà nước {{pháp quyền}} xã hội chủ nghĩa của Nhân dân, do Nhân dân, {{vì Nhân dân}}.",
+   "bank_extra": [
+    "pháp trị",
+    "vì giai cấp"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Dấu hiệu của nhà nước pháp quyền: tính tối cao của {{luật}}, tư pháp {{độc lập}}, chủ quyền nhân dân.",
+   "bank_extra": [
+    "nghị định",
+    "phụ thuộc"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Nhà nước pháp quyền nghĩa là nhà nước dùng pháp luật làm công cụ cai trị, còn bản thân nhà nước đứng ngoài pháp luật.",
+   "answer": false,
+   "explain": "Sai. Cốt lõi của pháp quyền là pháp luật ràng buộc cả nhà nước; nhà nước tổ chức, hoạt động theo Hiến pháp và pháp luật (Điều 8)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu quy định của Hiến pháp và các dấu hiệu của nhà nước pháp quyền.",
+   "model": "Khoản 1 Điều 2: nhà nước pháp quyền XHCN của Nhân dân, do Nhân dân, vì Nhân dân; dấu hiệu: chủ quyền nhân dân, pháp luật chi phối nhà nước và xã hội, bảo đảm quyền con người, trách nhiệm tương hỗ, tư pháp độc lập, quyền lực được phân công, kiểm soát.",
+   "keywords": [
+    "pháp quyền",
+    "Nhân dân",
+    "quyền con người",
+    "tư pháp độc lập"
+   ]
+  }
+ ]
+}

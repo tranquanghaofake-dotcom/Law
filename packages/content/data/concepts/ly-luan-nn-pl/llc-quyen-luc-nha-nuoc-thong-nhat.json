@@ -1,0 +1,117 @@
+{
+ "id": "llc-quyen-luc-nha-nuoc-thong-nhat",
+ "subject": "ly-luan-nn-pl",
+ "chapter": "v3",
+ "term": "Quyền lực nhà nước thống nhất, có phân công, phối hợp, kiểm soát",
+ "definition": "Quyền lực nhà nước là thống nhất, có sự phân công, phối hợp, kiểm soát giữa các cơ quan nhà nước trong việc thực hiện các quyền lập pháp, hành pháp, tư pháp.",
+ "plain": "Đây là cách Việt Nam tiếp nhận học thuyết phân quyền: KHÔNG \"tam quyền phân lập\" đối trọng kiểu phương Tây mà quyền lực THỐNG NHẤT (thuộc về Nhân dân, do Quốc hội là cơ quan quyền lực nhà nước cao nhất), có PHÂN CÔNG (Quốc hội lập pháp, Chính phủ hành pháp, Tòa án tư pháp — Điều 69, 94, 102), PHỐI HỢP và KIỂM SOÁT lẫn nhau. \"Kiểm soát\" là điểm mới của Hiến pháp 2013 so với Hiến pháp 1992. Lý luận nhà nước pháp quyền coi phân công, kiểm soát quyền lực là dấu hiệu cốt lõi.",
+ "example": "Quốc hội giám sát tối cao và bỏ phiếu tín nhiệm thành viên Chính phủ; Tòa án xét xử vụ án hành chính đối với quyết định của cơ quan hành pháp: cơ chế kiểm soát quyền lực.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 3 Điều 2 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "llc-nha-nuoc-phap-quyen",
+  "llc-nhan-dan-thuc-hien-quyen-luc"
+ ],
+ "keywords": [
+  "thống nhất",
+  "phân công",
+  "phối hợp",
+  "kiểm soát",
+  "lập pháp, hành pháp, tư pháp"
+ ],
+ "note": "Hiến pháp 2013 (hiệu lực 01/01/2014) được sửa đổi, bổ sung bởi Nghị quyết 203/2025/QH15 (hiệu lực 16/6/2025) — các điều được trích (Điều 2, 4, 6) không thuộc phạm vi sửa đổi.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 3 Điều 2 Hiến pháp 2013, quyền lực nhà nước có đặc điểm gì?",
+   "options": [
+    "Thống nhất, có phân công, phối hợp, kiểm soát giữa các cơ quan",
+    "Phân lập hoàn toàn thành ba nhánh đối trọng",
+    "Tập trung toàn bộ vào Chính phủ",
+    "Thuộc về các địa phương"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 2.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 2 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Yếu tố nào được Hiến pháp 2013 bổ sung so với Hiến pháp 1992 về quyền lực nhà nước?",
+   "options": [
+    "Kiểm soát",
+    "Thống nhất",
+    "Phân công",
+    "Phối hợp"
+   ],
+   "answer": 0,
+   "explain": "Hiến pháp 1992 (sửa 2001) chỉ nêu phân công, phối hợp.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 2 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Phân công quyền lực",
+   "right": "Kiểm soát quyền lực",
+   "cases": [
+    {
+     "text": "Quốc hội làm luật, Chính phủ điều hành, Tòa án xét xử",
+     "answer": "left"
+    },
+    {
+     "text": "Quốc hội chất vấn, bỏ phiếu tín nhiệm Bộ trưởng",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 3 Điều 2."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quyền lực nhà nước là {{thống nhất}}, có sự phân công, phối hợp, {{kiểm soát}} giữa các cơ quan nhà nước.",
+   "bank_extra": [
+    "phân chia",
+    "cạnh tranh"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Các cơ quan nhà nước thực hiện các quyền {{lập pháp}}, hành pháp, {{tư pháp}}.",
+   "bank_extra": [
+    "hành chính",
+    "kiểm sát"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Việt Nam tổ chức quyền lực nhà nước theo nguyên tắc tam quyền phân lập.",
+   "answer": false,
+   "explain": "Sai. Khoản 3 Điều 2: quyền lực thống nhất, có phân công, phối hợp, kiểm soát — không phải phân lập đối trọng."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày nguyên tắc tổ chức quyền lực nhà nước theo khoản 3 Điều 2 Hiến pháp 2013.",
+   "model": "Quyền lực nhà nước thống nhất; phân công, phối hợp, kiểm soát giữa các cơ quan trong thực hiện quyền lập pháp, hành pháp, tư pháp; \"kiểm soát\" là điểm mới của Hiến pháp 2013.",
+   "keywords": [
+    "thống nhất",
+    "phân công",
+    "phối hợp",
+    "kiểm soát"
+   ]
+  }
+ ]
+}

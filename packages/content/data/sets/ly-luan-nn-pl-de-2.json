@@ -1,0 +1,139 @@
+{
+  "id": "ly-luan-nn-pl-de-2",
+  "group": "ly-luan-nn-pl",
+  "title": "Đề kiểm tra Lý luận NN&PL – Pháp luật",
+  "subtitle": "10 câu, vấn đề 4–8 (câu luật định theo BLDS, BLHS, Luật XLVPHC, Luật BHVBQPPL)",
+  "updated": "2026-11-01",
+  "questions": [
+    {
+      "q": "Văn bản quy phạm pháp luật phải có đặc điểm nào?",
+      "options": [
+        "Chứa quy phạm pháp luật, ban hành đúng thẩm quyền, hình thức, trình tự, thủ tục",
+        "Áp dụng một lần",
+        "Do tòa án ban hành",
+        "Không cần thủ tục"
+      ],
+      "answer": 0,
+      "explain": "Điều 2.",
+      "basis": "Điều 2 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-54-VBHN-VPQH-2025-Luat-Ban-hanh-van-ban-quy-pham-phap-luat-669858.aspx"
+    },
+    {
+      "q": "Quy phạm pháp luật được ai bảo đảm thực hiện?",
+      "options": [
+        "Nhà nước",
+        "Cộng đồng dân cư",
+        "Tổ chức xã hội",
+        "Người ban hành"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 3.",
+      "basis": "Khoản 1 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-54-VBHN-VPQH-2025-Luat-Ban-hanh-van-ban-quy-pham-phap-luat-669858.aspx"
+    },
+    {
+      "q": "Văn bản nào đứng đầu hệ thống văn bản quy phạm pháp luật?",
+      "options": [
+        "Hiến pháp",
+        "Bộ luật",
+        "Nghị định",
+        "Pháp lệnh"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 4.",
+      "basis": "Khoản 1 Điều 4 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-54-VBHN-VPQH-2025-Luat-Ban-hanh-van-ban-quy-pham-phap-luat-669858.aspx"
+    },
+    {
+      "q": "Năng lực pháp luật dân sự của cá nhân chấm dứt khi nào?",
+      "options": [
+        "Khi người đó chết",
+        "Khi đủ 60 tuổi",
+        "Khi bị kết án",
+        "Khi mất năng lực hành vi"
+      ],
+      "answer": 0,
+      "explain": "Khoản 3 Điều 16.",
+      "basis": "Khoản 3 Điều 16 Bộ luật Dân sự 2015",
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+    },
+    {
+      "q": "Năng lực hành vi dân sự là khả năng gì?",
+      "options": [
+        "Bằng hành vi của mình xác lập, thực hiện quyền, nghĩa vụ dân sự",
+        "Có quyền và nghĩa vụ dân sự",
+        "Được thừa kế",
+        "Được bảo vệ"
+      ],
+      "answer": 0,
+      "explain": "Điều 19.",
+      "basis": "Điều 19 Bộ luật Dân sự 2015",
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+    },
+    {
+      "q": "Pháp nhân phải nhân danh ai khi tham gia quan hệ pháp luật?",
+      "options": [
+        "Nhân danh mình một cách độc lập",
+        "Nhân danh chủ sở hữu",
+        "Nhân danh người đại diện",
+        "Nhân danh Nhà nước"
+      ],
+      "answer": 0,
+      "explain": "Điểm d khoản 1 Điều 74.",
+      "basis": "Khoản 1 Điều 74 Bộ luật Dân sự 2015",
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+    },
+    {
+      "q": "Tội phạm phải được quy định ở đâu?",
+      "options": [
+        "Bộ luật Hình sự",
+        "Nghị định của Chính phủ",
+        "Thông tư",
+        "Nghị quyết HĐND"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 8.",
+      "basis": "Khoản 1 Điều 8 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+    },
+    {
+      "q": "Pháp nhân nào có thể là chủ thể của tội phạm?",
+      "options": [
+        "Pháp nhân thương mại",
+        "Mọi pháp nhân",
+        "Cơ quan nhà nước",
+        "Tổ chức chính trị"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 8.",
+      "basis": "Khoản 1 Điều 8 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+    },
+    {
+      "q": "Vi phạm hành chính là hành vi vi phạm lĩnh vực nào?",
+      "options": [
+        "Quy định của pháp luật về quản lý nhà nước",
+        "Hợp đồng dân sự",
+        "Điều lệ công ty",
+        "Đạo đức xã hội"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 2.",
+      "basis": "Khoản 1 Điều 2 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Vi-pham-hanh-chinh/Van-ban-hop-nhat-90-VBHN-VPQH-2026-Luat-Xu-ly-vi-pham-hanh-chinh-699548.aspx"
+    },
+    {
+      "q": "Vi phạm hành chính có bắt buộc phải có lỗi không?",
+      "options": [
+        "Có",
+        "Không",
+        "Chỉ với cá nhân",
+        "Chỉ với tổ chức"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 2: hành vi có lỗi.",
+      "basis": "Khoản 1 Điều 2 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Vi-pham-hanh-chinh/Van-ban-hop-nhat-90-VBHN-VPQH-2026-Luat-Xu-ly-vi-pham-hanh-chinh-699548.aspx"
+    }
+  ]
+}

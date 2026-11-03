@@ -1,0 +1,108 @@
+{
+ "id": "llc-chinh-the",
+ "subject": "ly-luan-nn-pl",
+ "chapter": "v2",
+ "term": "Hình thức chính thể: quân chủ và cộng hòa",
+ "definition": "Chính thể quân chủ là hình thức chính thể mà quyền lực cao nhất tập trung toàn bộ hoặc một phần vào người đứng đầu nhà nước theo nguyên tắc thừa kế; chính thể cộng hòa là hình thức chính thể mà quyền lực cao nhất thuộc về cơ quan được bầu ra trong một khoảng thời gian nhất định.",
+ "plain": "QUÂN CHỦ: tuyệt đối (vua nắm toàn bộ quyền lực — Ả-rập Xê-út) và hạn chế/lập hiến (vua bị giới hạn bởi hiến pháp, quyền lực thực tế ở nghị viện, chính phủ — Anh, Nhật). CỘNG HÒA: quý tộc (chỉ tầng lớp quý tộc được bầu) và dân chủ; cộng hòa dân chủ hiện đại chia: TỔNG THỐNG (tổng thống do dân bầu, vừa nguyên thủ vừa đứng đầu hành pháp — Mỹ), ĐẠI NGHỊ (chính phủ do nghị viện lập ra và chịu trách nhiệm trước nghị viện — Đức, Ý), LƯỠNG TÍNH/hỗn hợp (Pháp, Nga). Tiêu chí phân biệt cốt lõi: cách thức hình thành quyền lực tối cao — THỪA KẾ hay BẦU CỬ.",
+ "example": "Vương quốc Anh có vua nhưng Thủ tướng và Nghị viện nắm quyền thực tế: quân chủ lập hiến đại nghị. Hoa Kỳ: cộng hòa tổng thống.",
+ "source": {
+  "kind": "textbook",
+  "cite": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (Drive HLU/KÌ I NĂM I/LLCNN&PL/TÀI LIỆU ÔN THI LLC: VD8, VD9, VD11, VD12, VD13) và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "llc-hinh-thuc-nha-nuoc",
+  "llc-cau-truc-nha-nuoc"
+ ],
+ "keywords": [
+  "thừa kế",
+  "bầu cử",
+  "quân chủ lập hiến",
+  "cộng hòa tổng thống",
+  "cộng hòa đại nghị"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tiêu chí phân biệt chính thể quân chủ với cộng hòa?",
+   "options": [
+    "Quyền lực tối cao hình thành theo thừa kế hay theo bầu cử có nhiệm kỳ",
+    "Số lượng đảng phái",
+    "Diện tích lãnh thổ",
+    "Có hiến pháp hay không"
+   ],
+   "answer": 0,
+   "explain": "Bài 6."
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chính thể nào có chính phủ do nghị viện thành lập và chịu trách nhiệm trước nghị viện?",
+   "options": [
+    "Cộng hòa đại nghị",
+    "Cộng hòa tổng thống",
+    "Quân chủ tuyệt đối",
+    "Cộng hòa quý tộc"
+   ],
+   "answer": 0,
+   "explain": "Bài 6."
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quân chủ",
+   "right": "Cộng hòa",
+   "cases": [
+    {
+     "text": "Nhật Bản: Thiên hoàng kế vị, Nội các do Quốc hội lập",
+     "answer": "left"
+    },
+    {
+     "text": "Hoa Kỳ: Tổng thống do dân bầu nhiệm kỳ 4 năm",
+     "answer": "right"
+    }
+   ],
+   "explain": "Bài 6."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chính thể {{quân chủ}}: quyền lực cao nhất tập trung vào người đứng đầu nhà nước theo nguyên tắc {{thừa kế}}.",
+   "bank_extra": [
+    "cộng hòa",
+    "bầu cử"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chính thể cộng hòa: quyền lực cao nhất thuộc cơ quan được {{bầu}} ra trong một khoảng {{thời gian}} nhất định.",
+   "bank_extra": [
+    "chỉ định",
+    "lãnh thổ"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi nhà nước có vua đều là quân chủ tuyệt đối.",
+   "answer": false,
+   "explain": "Sai. Quân chủ hạn chế (lập hiến) vua bị giới hạn bởi hiến pháp, quyền lực thực tế thuộc nghị viện, chính phủ."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Phân biệt chính thể quân chủ và cộng hòa; kể các dạng.",
+   "model": "Quân chủ: quyền lực tối cao theo thừa kế (tuyệt đối, hạn chế/lập hiến); cộng hòa: cơ quan được bầu có nhiệm kỳ (quý tộc, dân chủ: tổng thống, đại nghị, lưỡng tính).",
+   "keywords": [
+    "thừa kế",
+    "bầu cử",
+    "lập hiến",
+    "tổng thống",
+    "đại nghị"
+   ]
+  }
+ ]
+}

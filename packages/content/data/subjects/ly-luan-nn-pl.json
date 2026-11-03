@@ -1,0 +1,133 @@
+{
+  "id": "ly-luan-nn-pl",
+  "title": "Lý luận chung về Nhà nước và Pháp luật",
+  "short": "Lý luận NN&PL",
+  "chapters": [
+    {
+      "id": "v1",
+      "title": "Vấn đề 1. Nguồn gốc, bản chất và dấu hiệu của nhà nước",
+      "lessons": [
+        {
+          "id": "llc1",
+          "title": "Nguồn gốc, bản chất và dấu hiệu của nhà nước",
+          "concepts": [
+            "llc-nguon-goc-nha-nuoc",
+            "llc-ban-chat-nha-nuoc",
+            "llc-dau-hieu-nha-nuoc"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v2",
+      "title": "Vấn đề 2. Chức năng và hình thức nhà nước",
+      "lessons": [
+        {
+          "id": "llc2",
+          "title": "Chức năng và hình thức nhà nước",
+          "concepts": [
+            "llc-chuc-nang-nha-nuoc",
+            "llc-hinh-thuc-nha-nuoc",
+            "llc-chinh-the",
+            "llc-cau-truc-nha-nuoc"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v3",
+      "title": "Vấn đề 3. Nhà nước pháp quyền xã hội chủ nghĩa và hệ thống chính trị Việt Nam",
+      "lessons": [
+        {
+          "id": "llc3",
+          "title": "Nhà nước pháp quyền xã hội chủ nghĩa và hệ thống chính trị Việt Nam",
+          "concepts": [
+            "llc-nha-nuoc-phap-quyen",
+            "llc-quyen-luc-nha-nuoc-thong-nhat",
+            "llc-nhan-dan-thuc-hien-quyen-luc",
+            "llc-dang-lanh-dao"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v4",
+      "title": "Vấn đề 4. Bản chất, thuộc tính và hình thức của pháp luật",
+      "lessons": [
+        {
+          "id": "llc4",
+          "title": "Bản chất, thuộc tính và hình thức của pháp luật",
+          "concepts": [
+            "llc-ban-chat-phap-luat",
+            "llc-thuoc-tinh-phap-luat",
+            "llc-hinh-thuc-phap-luat",
+            "llc-van-ban-qppl"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v5",
+      "title": "Vấn đề 5. Quy phạm pháp luật và hệ thống pháp luật",
+      "lessons": [
+        {
+          "id": "llc5",
+          "title": "Quy phạm pháp luật và hệ thống pháp luật",
+          "concepts": [
+            "llc-quy-pham-phap-luat",
+            "llc-co-cau-qppl",
+            "llc-he-thong-phap-luat"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v6",
+      "title": "Vấn đề 6. Quan hệ pháp luật",
+      "lessons": [
+        {
+          "id": "llc6",
+          "title": "Quan hệ pháp luật",
+          "concepts": [
+            "llc-quan-he-phap-luat",
+            "llc-nang-luc-phap-luat",
+            "llc-nang-luc-hanh-vi",
+            "llc-phap-nhan",
+            "llc-su-kien-phap-ly"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v7",
+      "title": "Vấn đề 7. Thực hiện pháp luật và áp dụng pháp luật",
+      "lessons": [
+        {
+          "id": "llc7",
+          "title": "Thực hiện pháp luật và áp dụng pháp luật",
+          "concepts": [
+            "llc-thuc-hien-phap-luat",
+            "llc-ap-dung-phap-luat"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v8",
+      "title": "Vấn đề 8. Vi phạm pháp luật và trách nhiệm pháp lý",
+      "lessons": [
+        {
+          "id": "llc8",
+          "title": "Vi phạm pháp luật và trách nhiệm pháp lý",
+          "concepts": [
+            "llc-vi-pham-phap-luat",
+            "llc-cau-thanh-vppl",
+            "llc-toi-pham",
+            "llc-vi-pham-hanh-chinh",
+            "llc-trach-nhiem-phap-ly"
+          ]
+        }
+      ]
+    }
+  ]
+}

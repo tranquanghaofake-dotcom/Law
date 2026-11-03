@@ -1,0 +1,117 @@
+{
+ "id": "llc-van-ban-qppl",
+ "subject": "ly-luan-nn-pl",
+ "chapter": "v4",
+ "term": "Văn bản quy phạm pháp luật",
+ "definition": "Văn bản quy phạm pháp luật là văn bản có chứa quy phạm pháp luật, được ban hành đúng thẩm quyền, hình thức, trình tự, thủ tục theo quy định của Luật này.",
+ "plain": "Hai dấu hiệu luật định: NỘI DUNG chứa quy phạm pháp luật (quy tắc xử sự chung, bắt buộc chung, áp dụng nhiều lần); HÌNH THỨC ban hành đúng thẩm quyền, hình thức, trình tự, thủ tục. Phân biệt với VĂN BẢN ÁP DỤNG PHÁP LUẬT (quyết định cá biệt, áp dụng một lần cho chủ thể xác định — bản án, quyết định xử phạt) và VĂN BẢN HÀNH CHÍNH (công văn, thông báo). Hệ thống VBQPPL (Điều 4): Hiến pháp; luật, nghị quyết của Quốc hội; pháp lệnh; lệnh, quyết định của Chủ tịch nước; nghị định; quyết định của Thủ tướng; thông tư; nghị quyết HĐND, quyết định UBND cấp tỉnh, cấp xã… Từ 01/7/2025 cấp huyện không còn.",
+ "example": "Nghị định của Chính phủ quy định mức xử phạt vi phạm giao thông: VBQPPL. Quyết định của Chủ tịch UBND xã xử phạt ông A 500.000 đồng: văn bản áp dụng pháp luật.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 2 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-54-VBHN-VPQH-2025-Luat-Ban-hanh-van-ban-quy-pham-phap-luat-669858.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "llc-quy-pham-phap-luat",
+  "llc-hinh-thuc-phap-luat",
+  "llc-ap-dung-phap-luat"
+ ],
+ "keywords": [
+  "chứa quy phạm pháp luật",
+  "đúng thẩm quyền",
+  "trình tự, thủ tục",
+  "văn bản áp dụng pháp luật"
+ ],
+ "note": "Luật Ban hành văn bản quy phạm pháp luật 64/2025/QH15 có hiệu lực từ 01/4/2025, thay thế Luật 80/2015/QH13; sửa đổi bởi Luật 87/2025/QH15 (hiệu lực 01/7/2025) — văn bản hợp nhất 54/VBHN-VPQH 2025.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Văn bản quy phạm pháp luật phải có dấu hiệu nào?",
+   "options": [
+    "Chứa quy phạm pháp luật và được ban hành đúng thẩm quyền, hình thức, trình tự, thủ tục",
+    "Chỉ cần có con dấu cơ quan nhà nước",
+    "Được đăng báo",
+    "Áp dụng một lần cho một người"
+   ],
+   "answer": 0,
+   "explain": "Điều 2.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 2 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Văn bản nào là văn bản quy phạm pháp luật?",
+   "options": [
+    "Nghị định của Chính phủ",
+    "Bản án của Tòa án",
+    "Quyết định xử phạt vi phạm hành chính",
+    "Công văn hướng dẫn nghiệp vụ"
+   ],
+   "answer": 0,
+   "explain": "Khoản 5 Điều 4; bản án, quyết định xử phạt là văn bản áp dụng pháp luật.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 4 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Văn bản quy phạm pháp luật",
+   "right": "Văn bản áp dụng pháp luật",
+   "cases": [
+    {
+     "text": "Thông tư của Bộ trưởng quy định mẫu hồ sơ",
+     "answer": "left"
+    },
+    {
+     "text": "Quyết định bổ nhiệm ông B làm Vụ trưởng",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 2 Luật BHVBQPPL."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Văn bản quy phạm pháp luật là văn bản có chứa {{quy phạm pháp luật}}, được ban hành đúng {{thẩm quyền}}, hình thức, trình tự, thủ tục.",
+   "bank_extra": [
+    "quyết định cá biệt",
+    "mẫu dấu"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Văn bản có chứa quy phạm nhưng ban hành sai {{trình tự}}, thủ tục thì không phải văn bản quy phạm pháp luật mà là văn bản {{trái pháp luật}}.",
+   "bank_extra": [
+    "ngôn ngữ",
+    "hành chính"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Bản án của Tòa án là văn bản quy phạm pháp luật.",
+   "answer": false,
+   "explain": "Sai. Bản án là văn bản áp dụng pháp luật, giải quyết một vụ việc cụ thể."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm VBQPPL và phân biệt với văn bản áp dụng pháp luật.",
+   "model": "VBQPPL: chứa quy phạm pháp luật, ban hành đúng thẩm quyền, hình thức, trình tự, thủ tục (Điều 2); văn bản áp dụng pháp luật chứa quy tắc cá biệt, áp dụng một lần cho chủ thể xác định.",
+   "keywords": [
+    "quy phạm pháp luật",
+    "thẩm quyền",
+    "trình tự",
+    "cá biệt"
+   ]
+  }
+ ]
+}

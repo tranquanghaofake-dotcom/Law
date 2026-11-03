@@ -1,0 +1,117 @@
+{
+ "id": "llc-quy-pham-phap-luat",
+ "subject": "ly-luan-nn-pl",
+ "chapter": "v5",
+ "term": "Quy phạm pháp luật",
+ "definition": "Quy phạm pháp luật là quy tắc xử sự chung, có hiệu lực bắt buộc chung, được áp dụng đối với cơ quan, tổ chức, cá nhân, trong phạm vi cả nước hoặc trong đơn vị hành chính nhất định, do cơ quan nhà nước, người có thẩm quyền quy định tại Luật này ban hành và được Nhà nước bảo đảm thực hiện.",
+ "plain": "Quy phạm pháp luật là \"tế bào\" của pháp luật. Đặc điểm: QUY TẮC XỬ SỰ CHUNG (khuôn mẫu hành vi, không dành riêng cho ai); BẮT BUỘC CHUNG; do NHÀ NƯỚC ban hành hoặc thừa nhận; được NHÀ NƯỚC BẢO ĐẢM THỰC HIỆN; áp dụng nhiều lần. Phân loại: theo ngành luật; theo tính chất (bắt buộc, cấm đoán, cho phép); theo nội dung (quy phạm định nghĩa, quy phạm điều chỉnh, quy phạm bảo vệ). Phân biệt với quy phạm đạo đức, tập quán (không do nhà nước bảo đảm) và với quyết định cá biệt (áp dụng một lần).",
+ "example": "\"Người điều khiển xe mô tô phải đội mũ bảo hiểm; vi phạm bị phạt tiền\": quy tắc xử sự chung, bắt buộc chung, Nhà nước bảo đảm bằng chế tài — quy phạm pháp luật.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-54-VBHN-VPQH-2025-Luat-Ban-hanh-van-ban-quy-pham-phap-luat-669858.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "llc-co-cau-qppl",
+  "llc-van-ban-qppl",
+  "llc-thuoc-tinh-phap-luat"
+ ],
+ "keywords": [
+  "quy tắc xử sự chung",
+  "bắt buộc chung",
+  "Nhà nước bảo đảm thực hiện",
+  "cơ quan nhà nước"
+ ],
+ "note": "Luật Ban hành văn bản quy phạm pháp luật 64/2025/QH15 có hiệu lực từ 01/4/2025, thay thế Luật 80/2015/QH13; sửa đổi bởi Luật 87/2025/QH15 (hiệu lực 01/7/2025) — văn bản hợp nhất 54/VBHN-VPQH 2025.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quy phạm pháp luật là gì theo khoản 1 Điều 3?",
+   "options": [
+    "Quy tắc xử sự chung, bắt buộc chung, do cơ quan nhà nước, người có thẩm quyền ban hành, được Nhà nước bảo đảm thực hiện",
+    "Lời khuyên của cơ quan nhà nước",
+    "Quyết định cho một người cụ thể",
+    "Thói quen của cộng đồng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 3 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đặc điểm nào KHÔNG phải của quy phạm pháp luật?",
+   "options": [
+    "Chỉ áp dụng một lần cho một chủ thể xác định",
+    "Mang tính bắt buộc chung",
+    "Do nhà nước ban hành hoặc thừa nhận",
+    "Được nhà nước bảo đảm thực hiện"
+   ],
+   "answer": 0,
+   "explain": "Quy phạm áp dụng nhiều lần, với mọi chủ thể trong điều kiện dự liệu.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 3 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quy phạm pháp luật",
+   "right": "Không phải quy phạm pháp luật",
+   "cases": [
+    {
+     "text": "\"Mọi người có quyền tự do kinh doanh trong những ngành nghề mà pháp luật không cấm\"",
+     "answer": "left"
+    },
+    {
+     "text": "\"Con cái nên hiếu thảo với cha mẹ\" trong hương ước",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 3; Điều 33 Hiến pháp 2013."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quy phạm pháp luật là quy tắc xử sự {{chung}}, có hiệu lực {{bắt buộc chung}}.",
+   "bank_extra": [
+    "riêng",
+    "khuyến nghị"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quy phạm pháp luật do cơ quan nhà nước, người có thẩm quyền ban hành và được {{Nhà nước}} {{bảo đảm thực hiện}}.",
+   "bank_extra": [
+    "cộng đồng",
+    "tự nguyện tuân thủ"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quy phạm pháp luật chỉ có hiệu lực trong phạm vi cả nước.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 3: trong phạm vi cả nước hoặc trong đơn vị hành chính nhất định (ví dụ nghị quyết HĐND cấp tỉnh)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm và đặc điểm của quy phạm pháp luật.",
+   "model": "Quy tắc xử sự chung, bắt buộc chung, áp dụng với cơ quan, tổ chức, cá nhân trong cả nước hoặc đơn vị hành chính, do cơ quan nhà nước, người có thẩm quyền ban hành, Nhà nước bảo đảm thực hiện (khoản 1 Điều 3); áp dụng nhiều lần.",
+   "keywords": [
+    "xử sự chung",
+    "bắt buộc",
+    "Nhà nước bảo đảm",
+    "nhiều lần"
+   ]
+  }
+ ]
+}
