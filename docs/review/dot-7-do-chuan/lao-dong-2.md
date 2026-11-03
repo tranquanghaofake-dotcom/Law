@@ -34,3 +34,9 @@ Mỗi dòng là một tình huống thêm vào câu `pair` (trường `basis` c�
 | `nld-di-lam-viec-nuoc-ngoai` | Chị người Hàn Quốc sang Việt Nam làm quản lý cho công ty có giấy phép lao động | Người lao động nước ngoài làm việc tại Việt Nam | Khoản 1 Điều 151 Bộ luật Lao động 2019 |
 
 Tổng: 28 tình huống mới; 12 khái niệm đạt ≥ 4 tình huống.
+
+## Cờ dò trích dẫn (haiku-2)
+
+| id#item | loại | quyết định | ghi chú |
+|---|---|---|---|
+| `lao-dong-chua-thanh-nien#-1` | tên bộ cũ | báo nhầm | bài đã ghi tên Bộ theo văn bản và chức năng nay thuộc Bộ Nội vụ |
