@@ -70,6 +70,16 @@
     {
      "text": "Khoản tiền bù đắp cho vợ, con nạn nhân",
      "answer": "right"
+    },
+    {
+     "text": "Tiền viện phí và thuốc men của nạn nhân bị tai nạn giao thông",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 591 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Khoản tiền bù đắp tổn thất tinh thần cho cha mẹ của người đã chết vì tai nạn",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 591 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 591."

@@ -70,6 +70,16 @@
     {
      "text": "Phần lãi vượt 20%/năm",
      "answer": "right"
+    },
+    {
+     "text": "Hai bên thỏa thuận lãi suất vay trong mức không vượt giới hạn pháp luật cho phép",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 468 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Phần lãi vượt quá giới hạn theo quy định của Bộ luật Dân sự trong hợp đồng vay tiền",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 468 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 468."

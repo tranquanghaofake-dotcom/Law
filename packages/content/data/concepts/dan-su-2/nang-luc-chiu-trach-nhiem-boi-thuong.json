@@ -70,6 +70,16 @@
     {
      "text": "Con 17 tuổi có tài sản riêng gây tai nạn",
      "answer": "right"
+    },
+    {
+     "text": "Em bé 6 tuổi làm đổ cây cảnh của hàng xóm, cha mẹ bồi thường toàn bộ thiệt hại",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 586 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Người 16 tuổi có tài sản riêng làm hư hỏng xe của người khác, bồi thường bằng tài sản riêng",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 586 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 586."

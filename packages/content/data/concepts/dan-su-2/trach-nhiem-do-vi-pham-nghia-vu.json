@@ -71,6 +71,16 @@
     {
      "text": "Không giao được hàng do động đất phá hủy kho",
      "answer": "right"
+    },
+    {
+     "text": "Nhà thầu chậm bàn giao công trình không có lý do chính đáng",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 351 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Bên mua chậm thanh toán tiền hàng mà không có lý do chính đáng",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 351 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 351."

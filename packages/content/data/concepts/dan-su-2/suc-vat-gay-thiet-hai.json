@@ -70,6 +70,16 @@
     {
      "text": "Người lạ cố tình kích động con bò lao vào người khác, chủ không có lỗi",
      "answer": "right"
+    },
+    {
+     "text": "Con chó nhà ông A cắn người đi đường do cửa lồng bị hỏng, ông A không đóng cửa",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 603 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Người lạ dùng gậy đánh con chó khiến nó cắn người khác, người lạ có lỗi hoàn toàn",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 603 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 603."

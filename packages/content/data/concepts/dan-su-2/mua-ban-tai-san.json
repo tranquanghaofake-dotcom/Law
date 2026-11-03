@@ -69,6 +69,16 @@
     {
      "text": "Giao tài sản để sử dụng trong thời hạn, trả tiền thuê",
      "answer": "right"
+    },
+    {
+     "text": "Bên bán giao chiếc tủ lạnh và nhận tiền để chuyển quyền sở hữu cho bên mua",
+     "answer": "left",
+     "basis": "Đoạn 1 Điều 430 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Bên cho thuê giao máy phát điện để bên thuê dùng trong thời hạn, bên thuê trả tiền thuê",
+     "answer": "right",
+     "basis": "Đoạn 1 Điều 472 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 430, 472."
