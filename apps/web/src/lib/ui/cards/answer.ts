@@ -14,6 +14,12 @@ export function promptText(item: StepItem): string {
   }
 }
 
+/** Lời giải thích của một item (recall dùng đáp án mẫu); chuỗi rỗng nếu không có. */
+export function explainText(item: StepItem): string {
+  if (item.type === 'recall') return item.model;
+  return 'explain' in item ? item.explain : '';
+}
+
 export function answerText(item: StepItem): string {
   switch (item.type) {
     case 'mcq': case 'case': return item.options[item.answer];

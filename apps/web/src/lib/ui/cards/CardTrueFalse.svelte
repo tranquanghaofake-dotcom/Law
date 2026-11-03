@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { ItemTrueFalse } from '$lib/content/types';
   import { isTypingTarget, type CardProps } from './types';
-  let { concept, item, onanswer }: CardProps<ItemTrueFalse> = $props();
+  let { concept, item, meta, onanswer }: CardProps<ItemTrueFalse> = $props();
   const start = Date.now();
   let chosen = $state<boolean | null>(null);
   function pick(v: boolean) {
@@ -19,7 +19,7 @@
 
 <svelte:window onkeydown={onkey} />
 <article class="card question-card" aria-label="Nhận định đúng sai">
-  <p class="kicker">Nhận định · {concept.term}</p>
+  <p class="kicker">{meta?.kicker ?? `Nhận định · ${concept.term}`}</p>
   <p class="question">{item.statement}</p>
   <div class="options two" role="group" aria-label="Phương án">
     <button class="opt {cls(true)}" type="button" disabled={chosen !== null} aria-label="1. Đúng" onclick={() => pick(true)}><span class="key" aria-hidden="true">1</span><span>Đúng</span></button>
