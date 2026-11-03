@@ -29,9 +29,9 @@
    "q": "Thị trường liên quan được xác định trên cơ sở những yếu tố nào?",
    "options": [
     "Thị trường sản phẩm liên quan và thị trường địa lý liên quan",
-    "Doanh thu và lợi nhuận",
-    "Số lượng doanh nghiệp",
-    "Vốn điều lệ"
+    "Doanh thu bán ra và lợi nhuận sau thuế của doanh nghiệp",
+    "Số lượng doanh nghiệp tham gia và số lượng người tiêu dùng trong vùng",
+    "Vốn điều lệ và số lượng lao động của doanh nghiệp đăng ký kinh doanh"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 9.",
@@ -46,9 +46,9 @@
    "q": "Thị trường sản phẩm liên quan là thị trường của hàng hóa, dịch vụ có thể thay thế cho nhau về những tiêu chí nào?",
    "options": [
     "Đặc tính, mục đích sử dụng và giá cả",
-    "Màu sắc, kích thước",
-    "Thương hiệu, xuất xứ",
-    "Nhà sản xuất"
+    "Màu sắc, kích thước và kiểu dáng",
+    "Thương hiệu, xuất xứ và nơi sản xuất",
+    "Nhà sản xuất, nhà phân phối và đại lý"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 9.",

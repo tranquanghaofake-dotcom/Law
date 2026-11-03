@@ -46,9 +46,9 @@
    "q": "Hết hạn hợp đồng xác định thời hạn, người lao động vẫn làm việc, quá 30 ngày hai bên không ký hợp đồng mới thì sao?",
    "options": [
     "Hợp đồng trở thành hợp đồng lao động không xác định thời hạn",
-    "Hợp đồng chấm dứt",
-    "Tự động gia hạn 12 tháng",
-    "Người lao động phải nghỉ việc"
+    "Hợp đồng chấm dứt ngay, không cần thông báo cho người lao động",
+    "Tự động gia hạn 12 tháng theo đúng thời hạn hợp đồng đã ký trước đó",
+    "Người lao động phải nghỉ việc và người sử dụng không phải trả lương"
    ],
    "answer": 0,
    "explain": "Điểm b khoản 2 Điều 20.",

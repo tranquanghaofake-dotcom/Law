@@ -30,9 +30,9 @@
    "q": "Đặc điểm nào phân biệt nhượng quyền thương mại với li-xăng nhãn hiệu đơn thuần?",
    "options": [
     "Bên nhận kinh doanh theo cách thức tổ chức do bên nhượng quyền quy định và chịu sự kiểm soát, trợ giúp",
-    "Chỉ được dùng nhãn hiệu",
-    "Không phải trả phí",
-    "Không cần hợp đồng"
+    "Chỉ được dùng nhãn hiệu của bên nhượng quyền trong một khu vực địa lý nhất định và không được thu phí riêng",
+    "Không phải trả phí nhượng quyền ban đầu, phí duy trì hằng tháng và phí quảng cáo chung nào",
+    "Không cần hợp đồng bằng văn bản, không cần đăng ký tại cơ quan nhà nước nào cả và không cần thông báo"
    ],
    "answer": 0,
    "explain": "Điều 284.",
@@ -47,9 +47,9 @@
    "q": "Nhượng quyền thương mại gắn với những đối tượng nào của bên nhượng quyền?",
    "options": [
     "Nhãn hiệu hàng hóa, tên thương mại, bí quyết kinh doanh, khẩu hiệu, biểu tượng kinh doanh, quảng cáo",
-    "Chỉ sáng chế",
-    "Chỉ quyền tác giả",
-    "Chỉ chỉ dẫn địa lý"
+    "Chỉ sáng chế và kiểu dáng công nghiệp của bên nhượng quyền ở nước ngoài và tác phẩm văn học trong nước",
+    "Chỉ quyền tác giả đối với tác phẩm văn học, nghệ thuật và khoa học của bên nhượng quyền",
+    "Chỉ chỉ dẫn địa lý của vùng sản xuất nông nghiệp và tên gọi xuất xứ hàng hóa được bảo hộ"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 284.",

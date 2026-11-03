@@ -30,9 +30,9 @@
    "q": "Hình thức nào thuộc bảo lãnh phát hành theo khoản 31 Điều 4?",
    "options": [
     "Cố gắng tối đa để phân phối số chứng khoán cần phát hành",
-    "Mua chứng khoán cho chính mình trên sàn",
-    "Làm trung gian mua, bán cho khách hàng",
-    "Giữ chứng khoán hộ khách hàng"
+    "Mua chứng khoán cho chính mình trên sàn giao dịch để đầu cơ",
+    "Làm trung gian mua, bán cho khách hàng theo lệnh đã nhận",
+    "Giữ chứng khoán hộ khách hàng và thu phí lưu ký hiện hành"
    ],
    "answer": 0,
    "explain": "Khoản 31 Điều 4 gồm ba hình thức, trong đó có \"cố gắng tối đa\".",
@@ -103,9 +103,9 @@
    "q": "Công ty chứng khoán Q là công ty con của tập đoàn R. R chuẩn bị IPO và muốn Q làm tổ chức bảo lãnh phát hành. Có được không?",
    "options": [
     "Không, vì tổ chức bảo lãnh không được là người có liên quan với tổ chức phát hành",
-    "Có, vì Q đã được cấp phép bảo lãnh",
-    "Có, nếu Q bảo lãnh dưới 50%",
-    "Có, nếu R đồng ý trả phí cao"
+    "Có, vì Q đã được cấp phép bảo lãnh phát hành và có đủ vốn điều lệ theo quy định đó",
+    "Có, nếu Q chỉ bảo lãnh dưới 50% số chứng khoán và R không kiểm soát quyết định đó",
+    "Có, nếu R đồng ý trả phí cao và cam kết không can thiệp vào giá phát hành cụ thể"
    ],
    "answer": 0,
    "explain": "Điểm c khoản 1 Điều 17.",

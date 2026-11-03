@@ -29,9 +29,9 @@
    "q": "Giá đất là gì theo khoản 19 Điều 3?",
    "options": [
     "Giá trị của quyền sử dụng đất tính bằng tiền trên một đơn vị diện tích đất",
-    "Giá trị của đất đai thuộc sở hữu tư nhân",
-    "Thuế sử dụng đất",
-    "Giá thuê nhà"
+    "Giá trị của đất đai thuộc sở hữu tư nhân trên thị trường bất động sản",
+    "Thuế sử dụng đất hằng năm do Nhà nước thu theo diện tích và loại đất sử dụng",
+    "Giá thuê nhà ở và mặt bằng kinh doanh theo tháng do bên cho thuê ấn định"
    ],
    "answer": 0,
    "explain": "Khoản 19 Điều 3.",
@@ -46,9 +46,9 @@
    "q": "Người sử dụng đất phải nộp tiền sử dụng đất khi nào?",
    "options": [
     "Được giao đất có thu tiền, được cho phép chuyển mục đích sử dụng đất hoặc trường hợp luật quy định",
-    "Khi thuê đất trả hằng năm",
-    "Khi thừa kế quyền sử dụng đất",
-    "Khi cho người khác mượn đất"
+    "Khi thuê đất trả tiền hằng năm, theo thời hạn đã thỏa thuận trong hợp đồng thuê và đã đăng ký",
+    "Khi thừa kế quyền sử dụng đất theo di chúc hoặc theo pháp luật, kể cả khi đất đã được cấp sổ",
+    "Khi cho người khác mượn đất để canh tác, sử dụng ổn định lâu dài và có thu lợi trong năm"
    ],
    "answer": 0,
    "explain": "Khoản 44 Điều 3.",

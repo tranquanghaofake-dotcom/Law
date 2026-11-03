@@ -45,8 +45,8 @@
    "q": "Chứng chỉ quỹ thuộc nhóm nào trong khoản 1 Điều 4?",
    "options": [
     "Điểm a, cùng cổ phiếu và trái phiếu",
-    "Điểm b, cùng chứng quyền",
-    "Điểm c, chứng khoán phái sinh",
+    "Điểm b, cùng chứng quyền và trái phiếu",
+    "Điểm c, chứng khoán và hợp đồng nào",
     "Điểm d, loại do Chính phủ quy định"
    ],
    "answer": 0,

@@ -30,9 +30,9 @@
    "q": "Ủy ban được yêu cầu doanh nghiệp viễn thông cung cấp dữ liệu cuộc gọi trong trường hợp nào?",
    "options": [
     "Để xác minh, xử lý hành vi bị nghiêm cấm tại Điều 12",
-    "Bất cứ khi nào Ủy ban muốn",
-    "Khi công ty niêm yết chậm nộp báo cáo",
-    "Để thống kê thị trường"
+    "Bất cứ khi nào Ủy ban muốn và không cần lý do cụ thể",
+    "Khi công ty niêm yết chậm nộp báo cáo định kỳ hằng quý",
+    "Để thống kê thị trường và phục vụ báo cáo nội bộ nào"
    ],
    "answer": 0,
    "explain": "Điểm c khoản 1 Điều 130.",
@@ -47,9 +47,9 @@
    "q": "Yêu cầu cung cấp thông tin theo khoản 1 Điều 130 phải đáp ứng điều kiện hình thức nào?",
    "options": [
     "Được Chủ tịch Ủy ban phê duyệt, bằng văn bản, nêu rõ mục đích, căn cứ, nội dung, phạm vi",
-    "Gọi điện thoại là đủ",
-    "Chỉ cần email của chuyên viên",
-    "Không cần hình thức"
+    "Gọi điện thoại là đủ, không cần giấy tờ, ghi chép và chữ ký của người có thẩm quyền khác",
+    "Chỉ cần email của chuyên viên gửi từ hộp thư công vụ cá nhân và không cần nêu mục đích đó",
+    "Không cần hình thức nào, không cần nêu căn cứ pháp lý và không cần ký tên người yêu cầu"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 130.",

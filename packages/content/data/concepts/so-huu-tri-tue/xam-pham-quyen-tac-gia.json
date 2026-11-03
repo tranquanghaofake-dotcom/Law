@@ -30,9 +30,9 @@
    "q": "Sử dụng tác phẩm theo ngoại lệ Điều 25 nhưng không nêu tên tác giả là gì?",
    "options": [
     "Hành vi xâm phạm quyền tác giả (khoản 3 Điều 28)",
-    "Hợp pháp",
-    "Chỉ vi phạm đạo đức",
-    "Xâm phạm quyền sở hữu công nghiệp"
+    "Hợp pháp, không cần xin phép và không cần ghi tên",
+    "Chỉ vi phạm đạo đức và bị nhắc nhở công khai",
+    "Xâm phạm quyền sở hữu công nghiệp đối với nhãn hiệu"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 28.",
@@ -47,8 +47,8 @@
    "q": "Cố ý vô hiệu hóa biện pháp công nghệ hữu hiệu bảo vệ quyền tác giả để sao chép trái phép là gì?",
    "options": [
     "Hành vi xâm phạm quyền tác giả",
-    "Ngoại lệ hợp pháp",
-    "Quyền của người dùng",
+    "Ngoại lệ hợp pháp của tác giả đó",
+    "Quyền của người dùng hợp pháp",
     "Cạnh tranh không lành mạnh"
    ],
    "answer": 0,

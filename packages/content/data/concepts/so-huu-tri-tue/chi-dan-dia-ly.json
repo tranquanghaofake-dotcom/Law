@@ -30,9 +30,9 @@
    "q": "Điều kiện bảo hộ chỉ dẫn địa lý gồm những gì?",
    "options": [
     "Sản phẩm có nguồn gốc địa lý tương ứng và có danh tiếng, chất lượng, đặc tính chủ yếu do điều kiện địa lý quyết định",
-    "Có tính mới và sáng tạo",
-    "Có khả năng phân biệt chủ thể kinh doanh",
-    "Đã sử dụng 10 năm"
+    "Có tính mới và sáng tạo, đáp ứng đầy đủ điều kiện về sáng chế và kiểu dáng công nghiệp của doanh nghiệp",
+    "Có khả năng phân biệt chủ thể kinh doanh trên thị trường cạnh tranh và có tên thương mại hợp pháp của doanh nghiệp đó",
+    "Đã sử dụng liên tục 10 năm trên thị trường trong nước và đã được công nhận rộng rãi khác trong nước"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 79.",
@@ -47,9 +47,9 @@
    "q": "Chỉ dẫn địa lý là dấu hiệu dùng để làm gì?",
    "options": [
     "Chỉ nguồn gốc địa lý của sản phẩm",
-    "Phân biệt doanh nghiệp",
-    "Phân biệt kiểu dáng",
-    "Bảo vệ bí mật kinh doanh"
+    "Phân biệt doanh nghiệp sản xuất",
+    "Phân biệt kiểu dáng công nghiệp mới",
+    "Bảo vệ bí mật kinh doanh nội bộ"
    ],
    "answer": 0,
    "explain": "Khoản 22 Điều 4.",

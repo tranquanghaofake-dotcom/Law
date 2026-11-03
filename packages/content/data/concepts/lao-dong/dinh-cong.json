@@ -29,9 +29,9 @@
    "q": "Ai có quyền tổ chức và lãnh đạo đình công?",
    "options": [
     "Tổ chức đại diện người lao động có quyền thương lượng tập thể là một bên tranh chấp lao động tập thể",
-    "Bất kỳ nhóm người lao động nào",
-    "Người sử dụng lao động",
-    "Ủy ban nhân dân cấp huyện"
+    "Bất kỳ nhóm người lao động nào trong doanh nghiệp, không cần thông qua tổ chức đại diện nào và không cần thông báo",
+    "Người sử dụng lao động có toàn quyền quyết định việc tổ chức và lãnh đạo đình công theo ý muốn",
+    "Ủy ban nhân dân cấp huyện nơi doanh nghiệp đặt trụ sở tổ chức và lãnh đạo đình công tại địa phương"
    ],
    "answer": 0,
    "explain": "Điều 198.",
@@ -46,9 +46,9 @@
    "q": "Đình công được tiến hành nhằm mục đích gì?",
    "options": [
     "Đạt được yêu cầu trong quá trình giải quyết tranh chấp lao động",
-    "Phản đối chính sách nhà nước",
-    "Bày tỏ quan điểm chính trị",
-    "Gây thiệt hại cho doanh nghiệp"
+    "Phản đối chính sách của Nhà nước về tiền lương và thuế thu nhập",
+    "Bày tỏ quan điểm chính trị và yêu cầu thay đổi bộ máy lãnh đạo",
+    "Gây thiệt hại cho doanh nghiệp và đối tác của doanh nghiệp"
    ],
    "answer": 0,
    "explain": "Điều 198.",

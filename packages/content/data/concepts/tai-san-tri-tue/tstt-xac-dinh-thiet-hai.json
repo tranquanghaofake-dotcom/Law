@@ -32,9 +32,9 @@
    "q": "Khoản nào thuộc thiệt hại vật chất theo điểm a khoản 1 Điều 204?",
    "options": [
     "Chi phí hợp lý để ngăn chặn, khắc phục thiệt hại",
-    "Tổn thất danh dự của tác giả",
-    "Tiền phạt vi phạm hành chính",
-    "Án phí của bị đơn"
+    "Tổn thất danh dự của tác giả trong cộng đồng",
+    "Tiền phạt vi phạm hành chính do cơ quan thuế xử lý",
+    "Án phí của bị đơn trong vụ án dân sự sơ thẩm"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 1 Điều 204.",
@@ -49,9 +49,9 @@
    "q": "Ai được bồi thường thiệt hại về tinh thần theo điểm b khoản 1 Điều 204?",
    "options": [
     "Tác giả tác phẩm, người biểu diễn, tác giả sáng chế, kiểu dáng, thiết kế bố trí, giống cây trồng",
-    "Mọi chủ sở hữu quyền SHTT",
-    "Doanh nghiệp sở hữu nhãn hiệu",
-    "Người tiêu dùng"
+    "Mọi chủ sở hữu quyền SHTT, người được cấp quyền sử dụng và các bên liên quan khác có quyền lợi",
+    "Doanh nghiệp sở hữu nhãn hiệu và tên thương mại đã đăng ký tại cơ quan nhà nước có thẩm quyền đó",
+    "Người tiêu dùng đã mua hàng hóa bị xâm phạm quyền SHTT tại cửa hàng và có hóa đơn đầy đủ"
    ],
    "answer": 0,
    "explain": "Điểm b khoản 1 Điều 204.",

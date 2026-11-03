@@ -31,9 +31,9 @@
    "q": "Biện pháp kiểm soát biên giới về SHTT gồm gì?",
    "options": [
     "Tạm dừng làm thủ tục hải quan và kiểm tra, giám sát phát hiện hàng có dấu hiệu xâm phạm",
-    "Tịch thu toàn bộ hàng nhập khẩu",
-    "Cấm xuất khẩu mọi hàng mang nhãn hiệu",
-    "Thu thuế bổ sung"
+    "Tịch thu toàn bộ hàng nhập khẩu có nhãn hiệu tương tự trên thị trường nội địa hiện nay",
+    "Cấm xuất khẩu mọi hàng hóa mang nhãn hiệu và tên thương mại của doanh nghiệp",
+    "Thu thuế bổ sung trên toàn bộ lô hàng nhập khẩu có dấu hiệu nghi ngờ xâm phạm"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 216.",
@@ -48,9 +48,9 @@
    "q": "Hải quan chủ động tạm dừng thủ tục khi nào?",
    "options": [
     "Khi có căn cứ rõ ràng nghi ngờ hàng hóa xuất khẩu, nhập khẩu là hàng giả mạo về SHTT",
-    "Với mọi lô hàng có nhãn hiệu nước ngoài",
-    "Khi chủ thể quyền chưa đăng ký nhãn hiệu",
-    "Theo yêu cầu của người tiêu dùng"
+    "Với mọi lô hàng có nhãn hiệu nước ngoài đưa vào Việt Nam trong ngày và đã thanh toán",
+    "Khi chủ thể quyền chưa đăng ký nhãn hiệu tại Việt Nam và không có văn bằng",
+    "Theo yêu cầu của người tiêu dùng cá nhân và các tổ chức bảo vệ người tiêu dùng"
    ],
    "answer": 0,
    "explain": "Điểm b khoản 2 Điều 216.",

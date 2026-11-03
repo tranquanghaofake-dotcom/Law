@@ -97,9 +97,9 @@
    "q": "Công ty quản lý quỹ C dùng tạm cổ phiếu của khách ủy thác D để cầm cố vay tiền cho chính công ty. Nhận định nào đúng?",
    "options": [
     "Vi phạm: tài sản ủy thác là của D, phải tách biệt với tài sản công ty",
-    "Hợp pháp nếu trả lại trong 30 ngày",
-    "Hợp pháp vì C đang quản lý tài sản",
-    "Hợp pháp nếu Ủy ban không phản đối"
+    "Hợp pháp nếu trả lại trong 30 ngày kể từ ngày cầm cố và có thông báo cho khách",
+    "Hợp pháp vì C đang quản lý tài sản của khách hàng ủy thác và được ủy quyền",
+    "Hợp pháp nếu Ủy ban không phản đối bằng văn bản trong thời hạn quy định"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 88; khoản 4 Điều 90.",

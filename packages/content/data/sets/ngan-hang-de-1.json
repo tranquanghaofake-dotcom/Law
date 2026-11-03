@@ -9,9 +9,9 @@
       "q": "Hoạt động ngân hàng gồm những nghiệp vụ nào?",
       "options": [
         "Nhận tiền gửi, cấp tín dụng, cung ứng dịch vụ thanh toán qua tài khoản",
-        "Nhận tiền gửi, kinh doanh bất động sản, bảo hiểm",
-        "Cấp tín dụng, môi giới chứng khoán, kiểm toán",
-        "Phát hành tiền, thu thuế, cho vay"
+        "Nhận tiền gửi, kinh doanh bất động sản, kinh doanh bảo hiểm nhân thọ",
+        "Cấp tín dụng, môi giới chứng khoán, kiểm toán báo cáo tài chính và bảo hiểm",
+        "Phát hành tiền, thu thuế, cho vay và quản lý ngân sách nhà nước"
       ],
       "answer": 0,
       "explain": "Khoản 17 Điều 4.",
@@ -34,10 +34,10 @@
     {
       "q": "Chi nhánh ngân hàng nước ngoài có tư cách pháp nhân không?",
       "options": [
-        "Có",
+        "Có, với đầy đủ quyền của pháp nhân như doanh nghiệp",
         "Không, là đơn vị phụ thuộc của ngân hàng nước ngoài",
-        "Có nếu vốn trên 15 triệu USD",
-        "Tùy Ngân hàng Nhà nước quyết định"
+        "Có nếu vốn điều lệ trên 15 triệu USD và đăng ký tại tỉnh",
+        "Tùy Ngân hàng Nhà nước quyết định theo từng thời kỳ"
       ],
       "answer": 1,
       "explain": "Khoản 5 Điều 4.",
@@ -47,10 +47,10 @@
     {
       "q": "Tổ chức tín dụng phi ngân hàng không được làm gì?",
       "options": [
-        "Cho vay",
+        "Cho vay tiêu dùng trả góp",
         "Nhận tiền gửi của cá nhân",
-        "Bao thanh toán",
-        "Cho thuê tài chính"
+        "Bao thanh toán nội địa",
+        "Cho thuê tài chính động sản"
       ],
       "answer": 1,
       "explain": "Khoản 41 Điều 4.",
@@ -60,9 +60,9 @@
     {
       "q": "Ai quyết định đặt tổ chức tín dụng vào kiểm soát đặc biệt?",
       "options": [
-        "Tòa án",
+        "Tòa án nhân dân tỉnh",
         "Ngân hàng Nhà nước",
-        "Bộ Tài chính",
+        "Bộ Tài chính duyệt",
         "Hội đồng quản trị"
       ],
       "answer": 1,
@@ -74,9 +74,9 @@
       "q": "Ngân hàng Nhà nước Việt Nam có vị trí pháp lý gì?",
       "options": [
         "Cơ quan ngang bộ của Chính phủ, là Ngân hàng trung ương",
-        "Doanh nghiệp nhà nước",
-        "Cơ quan của Quốc hội",
-        "Tổ chức tín dụng nhà nước"
+        "Doanh nghiệp nhà nước hoạt động vì lợi nhuận và chịu thuế",
+        "Cơ quan của Quốc hội, chịu trách nhiệm trước Quốc hội",
+        "Tổ chức tín dụng nhà nước do Chính phủ trực tiếp quản lý"
       ],
       "answer": 0,
       "explain": "Khoản 1 Điều 2.",
@@ -112,10 +112,10 @@
     {
       "q": "Luật Bảo hiểm tiền gửi hiện hành là văn bản nào?",
       "options": [
-        "Luật Bảo hiểm tiền gửi 06/2012/QH13",
+        "Luật Bảo hiểm tiền gửi 06/2012/QH13, còn hiệu lực đến nay",
         "Luật Bảo hiểm tiền gửi 111/2025/QH15, hiệu lực 01/5/2026",
-        "Nghị định về bảo hiểm tiền gửi",
-        "Luật Kinh doanh bảo hiểm"
+        "Nghị định về bảo hiểm tiền gửi do Chính phủ ban hành",
+        "Luật Kinh doanh bảo hiểm và các văn bản hướng dẫn liên quan"
       ],
       "answer": 1,
       "explain": "Điều 40.",
@@ -126,9 +126,9 @@
       "q": "Tiền gửi nào được bảo hiểm?",
       "options": [
         "Tiền gửi bằng đồng Việt Nam của cá nhân tại tổ chức tham gia bảo hiểm tiền gửi",
-        "Tiền gửi bằng ngoại tệ của cá nhân",
-        "Tiền gửi của doanh nghiệp",
-        "Mọi khoản tiền gửi"
+        "Tiền gửi bằng ngoại tệ của cá nhân tại tổ chức tín dụng và chi nhánh ngân hàng trong nước",
+        "Tiền gửi của doanh nghiệp tại tổ chức tham gia bảo hiểm tiền gửi và tiền ký quỹ",
+        "Mọi khoản tiền gửi tại tổ chức tham gia bảo hiểm tiền gửi, không phân biệt chủ thể"
       ],
       "answer": 0,
       "explain": "Điều 17.",

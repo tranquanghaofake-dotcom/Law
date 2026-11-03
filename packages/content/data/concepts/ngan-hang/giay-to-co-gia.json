@@ -32,9 +32,9 @@
    "q": "Giấy tờ có giá là bằng chứng xác nhận điều gì?",
    "options": [
     "Nghĩa vụ trả nợ giữa tổ chức phát hành với người sở hữu",
-    "Quyền sở hữu phần vốn góp",
-    "Quyền sử dụng đất",
-    "Quyền tác giả"
+    "Quyền sở hữu phần vốn góp trong công ty cổ phần niêm yết",
+    "Quyền sử dụng đất ở và tài sản gắn liền với đất đã được cấp",
+    "Quyền tác giả đối với tác phẩm văn học, nghệ thuật, khoa học"
    ],
    "answer": 0,
    "explain": "Khoản 8 Điều 6.",
@@ -49,9 +49,9 @@
    "q": "Loại giấy tờ nào KHÔNG phải giấy tờ có giá theo khoản 8 Điều 6?",
    "options": [
     "Cổ phiếu (xác nhận quyền sở hữu cổ phần)",
-    "Kỳ phiếu",
-    "Trái phiếu",
-    "Tín phiếu"
+    "Kỳ phiếu ngân hàng phát hành và thanh toán",
+    "Trái phiếu doanh nghiệp phát hành công khai",
+    "Tín phiếu kho bạc phát hành ngắn hạn"
    ],
    "answer": 0,
    "explain": "Khoản 8 Điều 6: giấy tờ có giá xác nhận nghĩa vụ trả nợ; cổ phiếu xác nhận quyền sở hữu.",

@@ -45,9 +45,9 @@
    "q": "Ai thực hiện nghiệp vụ quản lý quỹ đầu tư chứng khoán?",
    "options": [
     "Công ty quản lý quỹ đầu tư chứng khoán",
-    "Ngân hàng giám sát",
-    "Công ty chứng khoán",
-    "Ủy ban Chứng khoán Nhà nước"
+    "Ngân hàng giám sát và đơn vị quản lý nội bộ",
+    "Công ty chứng khoán và công ty tài chính",
+    "Ủy ban Chứng khoán Nhà nước và Sở giao dịch"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 1 Điều 73.",

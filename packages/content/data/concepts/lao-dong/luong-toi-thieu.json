@@ -29,9 +29,9 @@
    "q": "Mức lương tối thiểu được xác lập theo tiêu chí nào?",
    "options": [
     "Theo vùng, ấn định theo tháng, giờ",
-    "Theo ngành",
-    "Theo từng doanh nghiệp",
-    "Theo trình độ học vấn"
+    "Theo ngành nghề và quy mô doanh nghiệp",
+    "Theo từng doanh nghiệp và từng hợp đồng",
+    "Theo trình độ học vấn và kinh nghiệm"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 91.",
@@ -46,9 +46,9 @@
    "q": "Cơ quan nào quyết định và công bố mức lương tối thiểu?",
    "options": [
     "Chính phủ, trên cơ sở khuyến nghị của Hội đồng tiền lương quốc gia",
-    "Quốc hội",
-    "Tổng Liên đoàn Lao động",
-    "Ủy ban nhân dân cấp tỉnh"
+    "Quốc hội quyết định và công bố mức lương tối thiểu hằng năm cho cả nước",
+    "Tổng Liên đoàn Lao động Việt Nam quyết định và công bố hằng năm",
+    "Ủy ban nhân dân cấp tỉnh quyết định và công bố theo từng vùng"
    ],
    "answer": 0,
    "explain": "Khoản 4 Điều 91.",

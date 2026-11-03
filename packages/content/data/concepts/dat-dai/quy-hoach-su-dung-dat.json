@@ -30,9 +30,9 @@
    "q": "Quy hoạch sử dụng đất là gì?",
    "options": [
     "Việc phân bổ chỉ tiêu sử dụng đất và khoanh vùng đất đai cho các mục đích trong thời kỳ xác định",
-    "Việc cấp Giấy chứng nhận",
-    "Việc định giá đất",
-    "Việc thu thuế đất"
+    "Việc cấp Giấy chứng nhận quyền sử dụng đất cho từng hộ gia đình, không cần thời kỳ xác định cụ thể",
+    "Việc định giá đất theo giá thị trường tại từng thời điểm và từng khu vực cụ thể trong năm",
+    "Việc thu thuế đất hằng năm của người sử dụng đất theo diện tích đã đăng ký và loại đất"
    ],
    "answer": 0,
    "explain": "Khoản 36 Điều 3.",
@@ -47,9 +47,9 @@
    "q": "Quy hoạch sử dụng đất được lập đối với phạm vi nào?",
    "options": [
     "Từng đơn vị hành chính cho thời kỳ xác định",
-    "Từng thửa đất",
-    "Từng hộ gia đình",
-    "Toàn cầu"
+    "Từng thửa đất riêng lẻ của mỗi hộ gia đình",
+    "Từng hộ gia đình và từng cá nhân sử dụng đất",
+    "Toàn cầu và toàn bộ các quốc gia trong khu vực"
    ],
    "answer": 0,
    "explain": "Khoản 36 Điều 3.",

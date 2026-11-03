@@ -29,9 +29,9 @@
    "q": "Đất đai được phân loại căn cứ vào yếu tố nào?",
    "options": [
     "Mục đích sử dụng",
-    "Giá trị",
-    "Vị trí địa lý",
-    "Chủ sử dụng"
+    "Giá trị đất đai",
+    "Vị trí địa lý tỉnh",
+    "Chủ sử dụng đất"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 9.",
@@ -46,9 +46,9 @@
    "q": "Đất ở thuộc nhóm đất nào?",
    "options": [
     "Nhóm đất phi nông nghiệp",
-    "Nhóm đất nông nghiệp",
+    "Nhóm đất nông nghiệp chính",
     "Nhóm đất chưa sử dụng",
-    "Nhóm đất đặc biệt"
+    "Nhóm đất đặc biệt khác"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 3 Điều 9.",

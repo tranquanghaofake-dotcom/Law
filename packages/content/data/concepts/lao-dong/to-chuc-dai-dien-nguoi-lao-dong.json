@@ -29,9 +29,9 @@
    "q": "Tổ chức đại diện người lao động tại cơ sở gồm những tổ chức nào?",
    "options": [
     "Công đoàn cơ sở và tổ chức của người lao động tại doanh nghiệp",
-    "Chỉ công đoàn cơ sở",
-    "Hội đồng quản trị và ban kiểm soát",
-    "Phòng nhân sự của doanh nghiệp"
+    "Chỉ công đoàn cơ sở do cấp trên chỉ định cho từng đơn vị trực thuộc",
+    "Hội đồng quản trị và ban kiểm soát của doanh nghiệp đó",
+    "Phòng nhân sự của doanh nghiệp và bộ phận hành chính nội bộ"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 3.",
@@ -46,9 +46,9 @@
    "q": "Tổ chức đại diện người lao động tại cơ sở được thành lập trên cơ sở nào?",
    "options": [
     "Tự nguyện của người lao động tại một đơn vị sử dụng lao động",
-    "Quyết định của người sử dụng lao động",
-    "Chỉ định của Ủy ban nhân dân",
-    "Bắt buộc theo luật"
+    "Quyết định của người sử dụng lao động và phê duyệt của Sở Lao động",
+    "Chỉ định của Ủy ban nhân dân cấp xã tại địa phương có thẩm quyền",
+    "Bắt buộc theo luật đối với mọi đơn vị sử dụng lao động"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 3.",

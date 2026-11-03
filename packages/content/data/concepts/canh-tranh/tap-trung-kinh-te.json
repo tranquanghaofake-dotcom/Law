@@ -46,9 +46,9 @@
    "q": "Tập trung kinh tế bị cấm khi nào theo Điều 30?",
    "options": [
     "Gây tác động hoặc có khả năng gây tác động hạn chế cạnh tranh một cách đáng kể trên thị trường Việt Nam",
-    "Khi thị phần kết hợp trên 50%",
-    "Khi giá trị giao dịch trên 1.000 tỷ đồng",
-    "Mọi tập trung kinh tế đều bị cấm"
+    "Khi thị phần kết hợp trên 50% trên thị trường liên quan và tổng giá trị tài sản trên ngưỡng quy định",
+    "Khi giá trị giao dịch trên 1.000 tỷ đồng hoặc khi các bên đều là doanh nghiệp nhà nước lớn",
+    "Mọi tập trung kinh tế đều bị cấm, không phân biệt quy mô, thị phần hay mức độ tác động đến thị trường trong nước"
    ],
    "answer": 0,
    "explain": "Điều 30.",

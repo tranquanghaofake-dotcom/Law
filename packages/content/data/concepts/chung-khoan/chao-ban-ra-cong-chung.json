@@ -105,9 +105,9 @@
    "q": "Công ty E chào bán cổ phần cho 120 người: 30 là ngân hàng, công ty chứng khoán (nhà đầu tư chứng khoán chuyên nghiệp), 90 là cá nhân thường; không quảng cáo, danh sách người mua xác định trước. Đây là hình thức chào bán nào?",
    "options": [
     "Chưa phải chào bán ra công chúng theo điểm b, vì chỉ có 90 nhà đầu tư không chuyên nghiệp",
-    "Chào bán ra công chúng vì tổng số là 120 người",
-    "Chào bán ra công chúng vì có ngân hàng tham gia",
-    "Không phải chào bán chứng khoán"
+    "Chào bán ra công chúng vì tổng số người mua là 120 người và có danh sách rõ ràng hiện hành",
+    "Chào bán ra công chúng vì có ngân hàng và công ty chứng khoán tham gia mua cổ phần cụ thể",
+    "Không phải chào bán chứng khoán vì chỉ là thỏa thuận góp vốn nội bộ giữa các bên hiện hành"
    ],
    "answer": 0,
    "explain": "Điểm b khoản 19 Điều 4 đếm từ 100 nhà đầu tư trở lên KHÔNG KỂ nhà đầu tư chuyên nghiệp: 90 < 100; không dùng phương tiện thông tin đại chúng, nhà đầu tư xác định nên không thuộc điểm a, c.",

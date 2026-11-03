@@ -29,9 +29,9 @@
    "q": "Hành vi xâm phạm quyền sở hữu trí tuệ có thể bị xử lý bằng những biện pháp nào?",
    "options": [
     "Dân sự, hành chính hoặc hình sự tùy tính chất, mức độ",
-    "Chỉ dân sự",
-    "Chỉ hình sự",
-    "Chỉ hòa giải"
+    "Chỉ dân sự, theo thủ tục tố tụng dân sự tại Tòa án nào",
+    "Chỉ hình sự, bắt buộc truy cứu trách nhiệm hình sự",
+    "Chỉ hòa giải giữa các bên, không có chế tài nào"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 199.",
@@ -46,9 +46,9 @@
    "q": "Chủ thể quyền yêu cầu người xâm phạm gỡ bỏ nội dung vi phạm trên không gian mạng là biện pháp gì?",
    "options": [
     "Tự bảo vệ (điểm b khoản 1 Điều 198)",
-    "Xử phạt hành chính",
-    "Biện pháp hình sự",
-    "Kiểm soát hải quan"
+    "Xử phạt hành chính về trật tự an ninh",
+    "Biện pháp hình sự bắt giữ người",
+    "Kiểm soát hải quan tại cửa khẩu"
    ],
    "answer": 0,
    "explain": "Điểm b khoản 1 Điều 198.",

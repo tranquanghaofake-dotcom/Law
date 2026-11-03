@@ -29,9 +29,9 @@
    "q": "Bồi thường về đất khi Nhà nước thu hồi được thực hiện ưu tiên bằng hình thức nào?",
    "options": [
     "Giao đất có cùng mục đích sử dụng với loại đất thu hồi",
-    "Tiền theo giá thị trường tự thỏa thuận",
-    "Cổ phần của dự án",
-    "Không bồi thường"
+    "Tiền theo giá thị trường tự thỏa thuận giữa các bên",
+    "Cổ phần của dự án do nhà đầu tư nắm giữ toàn bộ",
+    "Không bồi thường nhưng được miễn thuế đất trong năm"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 91.",
@@ -46,9 +46,9 @@
    "q": "Khi bồi thường bằng tiền, giá đất được xác định tại thời điểm nào?",
    "options": [
     "Thời điểm phê duyệt phương án bồi thường, hỗ trợ, tái định cư",
-    "Thời điểm thông báo thu hồi",
-    "Thời điểm người dân được cấp sổ đỏ",
-    "Thời điểm khởi công dự án"
+    "Thời điểm thông báo thu hồi đất chính thức của Nhà nước",
+    "Thời điểm người dân được cấp sổ đỏ và đăng ký biến động",
+    "Thời điểm khởi công dự án và bắt đầu thi công xây dựng"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 91.",

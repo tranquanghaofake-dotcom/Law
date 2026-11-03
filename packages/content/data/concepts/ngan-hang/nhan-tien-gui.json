@@ -33,9 +33,9 @@
    "q": "Hình thức nào là nhận tiền gửi theo khoản 27 Điều 4?",
    "options": [
     "Phát hành chứng chỉ tiền gửi",
-    "Phát hành cổ phiếu",
-    "Bán tài sản bảo đảm",
-    "Mua lại khoản phải thu"
+    "Phát hành cổ phiếu phổ thông",
+    "Bán tài sản bảo đảm đã thế chấp",
+    "Mua lại khoản phải thu của khách"
    ],
    "answer": 0,
    "explain": "Khoản 27 Điều 4.",
@@ -50,8 +50,8 @@
    "q": "Nguyên tắc của nhận tiền gửi là gì?",
    "options": [
     "Có hoàn trả đầy đủ tiền gốc, lãi theo thỏa thuận",
-    "Không hoàn trả gốc",
-    "Chỉ hoàn trả lãi",
+    "Không hoàn trả tiền gốc cho người gửi tiền khi đáo hạn",
+    "Chỉ hoàn trả lãi cho người gửi tiền theo tháng",
     "Hoàn trả theo kết quả kinh doanh của ngân hàng"
    ],
    "answer": 0,

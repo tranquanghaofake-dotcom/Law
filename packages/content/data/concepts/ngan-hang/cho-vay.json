@@ -31,9 +31,9 @@
    "q": "Dấu hiệu nào thuộc định nghĩa cho vay tại khoản 7 Điều 4?",
    "options": [
     "Khoản tiền được sử dụng vào mục đích xác định",
-    "Bên vay không phải hoàn trả gốc",
-    "Ngân hàng mua lại khoản phải thu",
-    "Ngân hàng cam kết trả thay nghĩa vụ"
+    "Bên vay không phải trả tiền gốc theo thỏa thuận",
+    "Ngân hàng mua lại khoản phải thu của bên bán hàng",
+    "Ngân hàng cam kết trả thay nghĩa vụ của bên thứ ba"
    ],
    "answer": 0,
    "explain": "Khoản 7 Điều 4.",

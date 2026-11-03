@@ -47,9 +47,9 @@
    "q": "Hoạt động nào quỹ đại chúng bị cấm tuyệt đối theo Điều 110?",
    "options": [
     "Cho vay hoặc bảo lãnh cho bất kỳ khoản vay nào",
-    "Mua trái phiếu Chính phủ",
-    "Mua cổ phiếu niêm yết",
-    "Gửi tiền ngân hàng"
+    "Mua trái phiếu Chính phủ và tín phiếu kho bạc",
+    "Mua cổ phiếu niêm yết trên sàn giao dịch cụ thể",
+    "Gửi tiền ngân hàng có kỳ hạn và không rủi ro lớn"
    ],
    "answer": 0,
    "explain": "Điểm e khoản 1 Điều 110.",
@@ -103,9 +103,9 @@
    "q": "Quỹ đại chúng dùng tiền quỹ mua lại chứng chỉ quỹ của chính mình trên sàn để \"đỡ giá\". Nhận định nào đúng?",
    "options": [
     "Vi phạm điểm a khoản 1 Điều 110: cấm đầu tư vào chứng chỉ quỹ của chính quỹ đó",
-    "Hợp pháp vì giúp ổn định giá",
-    "Hợp pháp nếu dưới 10% tài sản",
-    "Hợp pháp nếu Ban đại diện quỹ đồng ý"
+    "Hợp pháp vì giúp ổn định giá cổ phiếu trên thị trường và bảo vệ nhà đầu tư nhỏ lẻ",
+    "Hợp pháp nếu dưới 10% tài sản quỹ và được Ủy ban cho phép trước theo quy định",
+    "Hợp pháp nếu Ban đại diện quỹ đồng ý bằng nghị quyết và thông báo cho nhà đầu tư"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 1 Điều 110.",

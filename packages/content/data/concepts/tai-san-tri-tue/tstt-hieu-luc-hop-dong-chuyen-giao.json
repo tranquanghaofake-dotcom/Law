@@ -31,9 +31,9 @@
    "q": "Hợp đồng chuyển nhượng nhãn hiệu có hiệu lực khi nào?",
    "options": [
     "Khi đã được đăng ký tại cơ quan quản lý nhà nước về quyền SHCN",
-    "Khi hai bên ký",
-    "Khi công chứng",
-    "Khi thanh toán xong"
+    "Khi hai bên ký kết và đóng dấu xác nhận của công chứng",
+    "Khi công chứng viên xác nhận chữ ký của hai bên trong hợp đồng",
+    "Khi thanh toán xong toàn bộ số tiền chuyển nhượng theo thỏa thuận"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 148.",

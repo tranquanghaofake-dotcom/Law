@@ -47,9 +47,9 @@
    "q": "Yêu cầu về kết quả kinh doanh để IPO là gì?",
    "options": [
     "02 năm liên tục liền trước năm đăng ký có lãi, không có lỗ lũy kế",
-    "Năm liền trước có lãi",
-    "03 năm liên tục có lãi",
-    "Không yêu cầu có lãi"
+    "Năm liền trước có lãi nhưng vẫn còn lỗ lũy kế chưa xử lý hiện hành",
+    "03 năm liên tục có lãi nhưng vẫn còn lỗ lũy kế chưa xử lý cụ thể",
+    "Không yêu cầu có lãi trong bất kỳ năm nào trước khi chào bán khác"
    ],
    "answer": 0,
    "explain": "Điểm b khoản 1 Điều 15. Lưu ý: chào bán THÊM của công ty đại chúng chỉ cần năm liền trước có lãi (điểm b khoản 2).",
@@ -103,9 +103,9 @@
    "q": "Công ty G có vốn điều lệ đã góp 1.200 tỷ đồng, lãi 2 năm liền, không lỗ lũy kế, dự định IPO bán 12% cổ phiếu có quyền biểu quyết cho 300 nhà đầu tư không phải cổ đông lớn. Điều kiện về tỷ lệ bán ra (điểm d) đã đạt chưa?",
    "options": [
     "Đạt, vì vốn điều lệ từ 1.000 tỷ đồng trở lên chỉ cần tối thiểu 10%",
-    "Chưa đạt, vì phải tối thiểu 15%",
-    "Chưa đạt, vì phải bán cho ít nhất 1.000 nhà đầu tư",
-    "Đạt, vì không có yêu cầu tỷ lệ"
+    "Chưa đạt, vì phải bán tối thiểu 15% cổ phiếu có quyền biểu quyết đó",
+    "Chưa đạt, vì phải bán cho ít nhất 1.000 nhà đầu tư theo quy định",
+    "Đạt, vì không có yêu cầu tỷ lệ bán ra tối thiểu với công ty này đó"
    ],
    "answer": 0,
    "explain": "Điểm d khoản 1 Điều 15: 15%, nhưng nếu vốn điều lệ từ 1.000 tỷ đồng trở lên thì tối thiểu 10%. 12% ≥ 10%.",

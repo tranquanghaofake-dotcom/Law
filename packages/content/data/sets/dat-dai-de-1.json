@@ -22,9 +22,9 @@
       "q": "Đất đai được phân loại theo tiêu chí nào?",
       "options": [
         "Mục đích sử dụng",
-        "Giá đất",
-        "Diện tích",
-        "Vị trí"
+        "Giá trị đất đai",
+        "Diện tích đất đai",
+        "Vị trí địa lý tỉnh"
       ],
       "answer": 0,
       "explain": "Khoản 1 Điều 9.",
@@ -36,8 +36,8 @@
       "options": [
         "Thế chấp quyền sử dụng đất của dân",
         "Quyết định thu hồi đất, trưng dụng đất",
-        "Thừa kế quyền sử dụng đất",
-        "Góp vốn bằng quyền sử dụng đất"
+        "Thừa kế quyền sử dụng đất của người dân",
+        "Góp vốn bằng quyền sử dụng đất đai"
       ],
       "answer": 1,
       "explain": "Điều 13.",
@@ -48,9 +48,9 @@
       "q": "Cá nhân trực tiếp sản xuất nông nghiệp được giao đất nông nghiệp trong hạn mức theo hình thức nào?",
       "options": [
         "Giao đất không thu tiền sử dụng đất",
-        "Giao đất có thu tiền",
-        "Cho thuê đất hằng năm",
-        "Đấu giá"
+        "Giao đất có thu tiền sử dụng đất",
+        "Cho thuê đất trả tiền hằng năm",
+        "Đấu giá quyền sử dụng đất công khai"
       ],
       "answer": 0,
       "explain": "Khoản 1 Điều 118.",
@@ -60,10 +60,10 @@
     {
       "q": "Nhà nước thu hồi đất để phát triển kinh tế – xã hội vì lợi ích quốc gia, công cộng khi nào?",
       "options": [
-        "Khi nhà đầu tư đề nghị",
+        "Khi nhà đầu tư đề nghị, có đủ vốn đầu tư và cam kết đầu tư dự án trong năm",
         "Trong trường hợp thật cần thiết và thuộc các trường hợp liệt kê tại Điều 79",
-        "Khi giá đất tăng",
-        "Bất kỳ lúc nào"
+        "Khi giá đất tăng cao hơn mức quy định của Chính phủ trong năm đó",
+        "Bất kỳ lúc nào, khi nhà đầu tư và người dân thỏa thuận được với nhau"
       ],
       "answer": 1,
       "explain": "Điều 79.",
@@ -73,10 +73,10 @@
     {
       "q": "Bồi thường về đất khi thu hồi được thực hiện ưu tiên bằng gì?",
       "options": [
-        "Tiền theo giá do nhà đầu tư đưa ra",
+        "Tiền theo giá do nhà đầu tư đưa ra và thỏa thuận với người dân",
         "Giao đất có cùng mục đích sử dụng với loại đất thu hồi",
-        "Cổ phiếu",
-        "Không bồi thường"
+        "Cổ phiếu của dự án do nhà đầu tư nắm giữ toàn bộ",
+        "Không bồi thường nhưng được miễn thuế đất trong năm"
       ],
       "answer": 1,
       "explain": "Khoản 2 Điều 91.",
@@ -86,10 +86,10 @@
     {
       "q": "Khi bồi thường bằng tiền, giá đất cụ thể được xác định tại thời điểm nào?",
       "options": [
-        "Thông báo thu hồi",
+        "Thông báo thu hồi đất chính thức của Nhà nước",
         "Phê duyệt phương án bồi thường, hỗ trợ, tái định cư",
-        "Khởi công dự án",
-        "Cấp sổ đỏ"
+        "Khởi công dự án và bắt đầu thi công xây dựng",
+        "Cấp sổ đỏ cho người dân trong vùng dự án thu hồi"
       ],
       "answer": 1,
       "explain": "Khoản 2 Điều 91.",
@@ -99,10 +99,10 @@
     {
       "q": "Đăng ký đất đai có bắt buộc không?",
       "options": [
-        "Tự nguyện",
+        "Tự nguyện, không phải đăng ký với cơ quan nhà nước nào khi có nhu cầu",
         "Bắt buộc đối với người sử dụng đất và người được giao đất để quản lý",
-        "Chỉ bắt buộc ở đô thị",
-        "Chỉ khi bán đất"
+        "Chỉ bắt buộc ở đô thị, khu công nghiệp và khu kinh tế tập trung",
+        "Chỉ khi bán đất cho người khác và cho thuê dài hạn trong năm"
       ],
       "answer": 1,
       "explain": "Khoản 1 Điều 131.",
@@ -112,10 +112,10 @@
     {
       "q": "Đăng ký nhà ở gắn liền với đất thì thế nào?",
       "options": [
-        "Bắt buộc",
+        "Bắt buộc đối với mọi chủ sở hữu",
         "Theo yêu cầu của chủ sở hữu",
-        "Bị cấm",
-        "Chỉ khi thế chấp"
+        "Bị cấm đối với mọi chủ sở hữu",
+        "Chỉ khi chủ sở hữu thế chấp"
       ],
       "answer": 1,
       "explain": "Khoản 2 Điều 131.",
@@ -125,10 +125,10 @@
     {
       "q": "Giấy chứng nhận quyền sử dụng đất có bản chất gì?",
       "options": [
-        "Văn bản xác lập quyền sở hữu đất",
+        "Văn bản xác lập quyền sở hữu đất của Nhà nước cho người dân",
         "Chứng thư pháp lý để Nhà nước xác nhận quyền hợp pháp",
-        "Hợp đồng",
-        "Giấy phép xây dựng"
+        "Hợp đồng giao dịch giữa Nhà nước và người sử dụng đất",
+        "Giấy phép xây dựng nhà ở và công trình trên đất"
       ],
       "answer": 1,
       "explain": "Khoản 21 Điều 3.",

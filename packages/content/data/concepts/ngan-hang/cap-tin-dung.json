@@ -33,9 +33,9 @@
    "q": "Nghiệp vụ nào KHÔNG phải nghiệp vụ cấp tín dụng theo khoản 4 Điều 4?",
    "options": [
     "Nhận tiền gửi tiết kiệm",
-    "Cho vay",
-    "Bao thanh toán",
-    "Bảo lãnh ngân hàng"
+    "Cho vay ngắn hạn tín chấp",
+    "Bao thanh toán có truy đòi",
+    "Bảo lãnh ngân hàng vay vốn"
    ],
    "answer": 0,
    "explain": "Khoản 4 Điều 4; nhận tiền gửi là nghiệp vụ huy động vốn.",

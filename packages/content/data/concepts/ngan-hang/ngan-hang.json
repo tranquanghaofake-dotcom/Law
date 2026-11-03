@@ -30,9 +30,9 @@
    "q": "Các loại hình ngân hàng theo khoản 21 Điều 4?",
    "options": [
     "Ngân hàng thương mại, ngân hàng chính sách, ngân hàng hợp tác xã",
-    "Ngân hàng thương mại, công ty tài chính, quỹ tín dụng",
-    "Ngân hàng nhà nước, ngân hàng tư nhân",
-    "Ngân hàng đầu tư, ngân hàng tiết kiệm"
+    "Ngân hàng thương mại, công ty tài chính, quỹ tín dụng nhân dân",
+    "Ngân hàng nhà nước, ngân hàng tư nhân, ngân hàng liên doanh nội địa",
+    "Ngân hàng đầu tư, ngân hàng tiết kiệm, ngân hàng phát triển nông thôn"
    ],
    "answer": 0,
    "explain": "Khoản 21 Điều 4.",

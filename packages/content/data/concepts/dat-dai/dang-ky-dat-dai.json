@@ -29,9 +29,9 @@
    "q": "Đăng ký đất đai có bắt buộc không?",
    "options": [
     "Bắt buộc đối với người sử dụng đất và người được giao đất để quản lý",
-    "Tự nguyện",
-    "Chỉ bắt buộc với doanh nghiệp",
-    "Chỉ khi chuyển nhượng"
+    "Tự nguyện đăng ký, do người sử dụng đất quyết định khi có nhu cầu",
+    "Chỉ bắt buộc với doanh nghiệp có vốn nước ngoài và các tổ chức kinh tế lớn",
+    "Chỉ khi chuyển nhượng quyền sử dụng đất cho người khác và cho thuê"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 131.",

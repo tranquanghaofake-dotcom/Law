@@ -32,9 +32,9 @@
    "q": "Tổ chức tín dụng phi ngân hàng KHÔNG được thực hiện hoạt động nào?",
    "options": [
     "Nhận tiền gửi của cá nhân",
-    "Cho vay",
-    "Bao thanh toán",
-    "Cho thuê tài chính"
+    "Cho vay ngắn hạn tín chấp",
+    "Bao thanh toán có truy đòi",
+    "Cho thuê tài chính động sản"
    ],
    "answer": 0,
    "explain": "Khoản 41 Điều 4: trừ nhận tiền gửi của cá nhân và cung ứng dịch vụ thanh toán qua tài khoản.",
@@ -49,9 +49,9 @@
    "q": "Các loại hình tổ chức tín dụng phi ngân hàng?",
    "options": [
     "Công ty tài chính tổng hợp và công ty tài chính chuyên ngành",
-    "Quỹ tín dụng nhân dân và tổ chức tài chính vi mô",
-    "Ngân hàng chính sách và ngân hàng hợp tác xã",
-    "Công ty chứng khoán và công ty bảo hiểm"
+    "Ngân hàng thương mại và ngân hàng liên doanh nước ngoài",
+    "Ngân hàng chính sách và ngân hàng hợp tác xã trên toàn quốc",
+    "Công ty chứng khoán và công ty bảo hiểm nhân thọ đang hoạt động"
    ],
    "answer": 0,
    "explain": "Khoản 41 Điều 4.",

@@ -30,9 +30,9 @@
    "q": "Trong hợp đồng độc quyền, bên chuyển quyền có được tự sử dụng đối tượng SHCN không?",
    "options": [
     "Chỉ khi được bên được chuyển quyền cho phép",
-    "Luôn được",
-    "Không bao giờ",
-    "Chỉ ngoài lãnh thổ Việt Nam"
+    "Luôn được sử dụng trong mọi trường hợp",
+    "Không bao giờ được sử dụng đối tượng SHCN này",
+    "Chỉ ngoài lãnh thổ Việt Nam sau khi hết hạn"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 143.",
@@ -47,9 +47,9 @@
    "q": "Hợp đồng thứ cấp là gì?",
    "options": [
     "Bên chuyển quyền là người được chuyển giao quyền sử dụng theo một hợp đồng khác",
-    "Hợp đồng ký lần thứ hai giữa hai bên cũ",
-    "Hợp đồng có giá trị thấp",
-    "Hợp đồng chưa đăng ký"
+    "Hợp đồng ký lần thứ hai giữa hai bên cũ để gia hạn thời gian sử dụng",
+    "Hợp đồng có giá trị thấp hơn hợp đồng gốc và không có điều khoản độc quyền nào",
+    "Hợp đồng chưa đăng ký tại cơ quan quản lý nhà nước và chưa có hiệu lực"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 143.",

@@ -45,9 +45,9 @@
    "q": "Công ty chứng khoán không đáp ứng chỉ tiêu an toàn tài chính có thể bị Ủy ban đưa vào diện nào?",
    "options": [
     "Cảnh báo, kiểm soát, kiểm soát đặc biệt",
-    "Phá sản ngay lập tức",
-    "Quốc hữu hóa",
-    "Niêm yết bắt buộc"
+    "Phá sản ngay lập tức, không có thủ tục",
+    "Quốc hữu hóa toàn bộ công ty chứng khoán",
+    "Niêm yết bắt buộc trên sàn giao dịch đó"
    ],
    "answer": 0,
    "explain": "Đoạn cuối Điều 92.",

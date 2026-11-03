@@ -33,9 +33,9 @@
    "q": "Biện pháp nào thuộc quyền tự bảo vệ theo khoản 1 Điều 198?",
    "options": [
     "Yêu cầu bên xâm phạm chấm dứt hành vi, xin lỗi, cải chính công khai, bồi thường thiệt hại",
-    "Tự ý tịch thu hàng hóa của bên xâm phạm",
-    "Bắt giữ người xâm phạm",
-    "Tự phạt tiền bên xâm phạm"
+    "Tự ý tịch thu hàng hóa của bên xâm phạm để làm bằng chứng cho vụ kiện tại tòa",
+    "Bắt giữ người xâm phạm và tạm giữ tài sản của họ để điều tra vụ việc có liên quan",
+    "Tự phạt tiền bên xâm phạm theo mức tự quyết định của chủ thể quyền và công bố rộng rãi cho công chúng"
    ],
    "answer": 0,
    "explain": "Điểm b khoản 1 Điều 198.",
