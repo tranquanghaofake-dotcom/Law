@@ -1,0 +1,115 @@
+{
+ "id": "doanh-nghiep-nha-nuoc",
+ "subject": "thuong-mai-1",
+ "chapter": "v9",
+ "term": "Doanh nghiệp nhà nước",
+ "definition": "Doanh nghiệp nhà nước bao gồm các doanh nghiệp do Nhà nước nắm giữ trên 50% vốn điều lệ, tổng số cổ phần có quyền biểu quyết theo quy định tại Điều 88 của Luật này. (…) Doanh nghiệp nhà nước được tổ chức quản lý dưới hình thức công ty trách nhiệm hữu hạn, công ty cổ phần, bao gồm: a) Doanh nghiệp do Nhà nước nắm giữ 100% vốn điều lệ; b) Doanh nghiệp do Nhà nước nắm giữ trên 50% vốn điều lệ hoặc tổng số cổ phần có quyền biểu quyết, trừ doanh nghiệp quy định tại điểm a khoản 1 Điều này.",
+ "plain": "Tiêu chí: Nhà nước nắm giữ TRÊN 50% vốn điều lệ hoặc tổng số cổ phần có quyền biểu quyết (Luật 2014: 100%). Hình thức: CÔNG TY TNHH, CÔNG TY CỔ PHẦN. Hai nhóm: 100% vốn nhà nước (công ty mẹ tập đoàn, tổng công ty…) và trên 50%. DNNN 100% vốn có cơ cấu quản lý riêng (Chương IV) và nghĩa vụ CÔNG BỐ THÔNG TIN định kỳ, bất thường.",
+ "example": "Công ty cổ phần mà Nhà nước sở hữu 65% cổ phần có quyền biểu quyết: là doanh nghiệp nhà nước theo Luật Doanh nghiệp 2020.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 11 Điều 4, khoản 1 Điều 88 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "doanh-nghiep",
+  "cong-ty-me-con"
+ ],
+ "keywords": [
+  "trên 50% vốn điều lệ",
+  "tổng số cổ phần có quyền biểu quyết",
+  "công ty TNHH, công ty cổ phần",
+  "100% vốn nhà nước"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Doanh nghiệp nhà nước theo Luật Doanh nghiệp 2020 là doanh nghiệp do Nhà nước nắm giữ bao nhiêu vốn điều lệ?",
+   "options": [
+    "Trên 50% vốn điều lệ hoặc tổng số cổ phần có quyền biểu quyết",
+    "100% vốn điều lệ",
+    "Từ 30% trở lên",
+    "Trên 65%"
+   ],
+   "answer": 0,
+   "explain": "Khoản 11 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 11 Điều 4 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Doanh nghiệp nhà nước được tổ chức dưới hình thức nào?",
+   "options": [
+    "Công ty trách nhiệm hữu hạn, công ty cổ phần",
+    "Doanh nghiệp tư nhân",
+    "Công ty hợp danh",
+    "Hộ kinh doanh"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 88.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 88 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Doanh nghiệp nhà nước",
+   "right": "Không phải DNNN",
+   "cases": [
+    {
+     "text": "Nhà nước nắm 51% cổ phần có quyền biểu quyết",
+     "answer": "left"
+    },
+    {
+     "text": "Nhà nước nắm 40% vốn điều lệ",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 4, 88."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Doanh nghiệp nhà nước bao gồm các doanh nghiệp do Nhà nước nắm giữ {{trên 50%}} vốn điều lệ, tổng số cổ phần có quyền {{biểu quyết}}.",
+   "bank_extra": [
+    "từ 30%",
+    "ưu đãi"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Doanh nghiệp nhà nước được tổ chức quản lý dưới hình thức công ty trách nhiệm hữu hạn, công ty {{cổ phần}}.",
+   "bank_extra": [
+    "hợp danh",
+    "tư nhân"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo Luật Doanh nghiệp 2020, chỉ doanh nghiệp do Nhà nước nắm 100% vốn mới là doanh nghiệp nhà nước.",
+   "answer": false,
+   "explain": "Sai. Khoản 11 Điều 4: trên 50%."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm doanh nghiệp nhà nước theo Luật Doanh nghiệp 2020.",
+   "model": "Là doanh nghiệp do Nhà nước nắm giữ trên 50% vốn điều lệ hoặc tổng số cổ phần có quyền biểu quyết (khoản 11 Điều 4); tổ chức dưới hình thức công ty TNHH, công ty cổ phần, gồm doanh nghiệp 100% vốn nhà nước và trên 50% (khoản 1 Điều 88).",
+   "keywords": [
+    "trên 50%",
+    "biểu quyết",
+    "TNHH, cổ phần",
+    "100%"
+   ]
+  }
+ ]
+}

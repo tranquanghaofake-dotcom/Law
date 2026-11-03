@@ -1,0 +1,115 @@
+{
+ "id": "cho-thue-lai-lao-dong",
+ "subject": "lao-dong-2",
+ "chapter": "v1",
+ "term": "Cho thuê lại lao động",
+ "definition": "Cho thuê lại lao động là việc người lao động giao kết hợp đồng lao động với một người sử dụng lao động là doanh nghiệp cho thuê lại lao động, sau đó người lao động được chuyển sang làm việc và chịu sự điều hành của người sử dụng lao động khác mà vẫn duy trì quan hệ lao động với người sử dụng lao động đã giao kết hợp đồng lao động. Hoạt động cho thuê lại lao động là ngành, nghề kinh doanh có điều kiện, chỉ được thực hiện bởi các doanh nghiệp có Giấy phép hoạt động cho thuê lại lao động và áp dụng đối với một số công việc nhất định. Thời hạn cho thuê lại lao động đối với người lao động tối đa là 12 tháng.",
+ "plain": "Quan hệ BA BÊN: doanh nghiệp cho thuê lại (ký HĐLĐ, trả lương, là người sử dụng lao động) — người lao động thuê lại — bên thuê lại (điều hành công việc hằng ngày). Điều kiện: ngành nghề kinh doanh CÓ ĐIỀU KIỆN, phải KÝ QUỸ và có GIẤY PHÉP (Điều 54); chỉ cho một số công việc theo danh mục; tối đa 12 THÁNG. Bên thuê lại chỉ được dùng khi: tăng đột ngột nhu cầu tạm thời; thay người nghỉ thai sản, tai nạn, nghĩa vụ công dân; cần lao động trình độ cao (khoản 2 Điều 53); KHÔNG được dùng để thay người đang đình công, giải quyết tranh chấp lao động, thay người bị cho thôi việc do thay đổi cơ cấu, lý do kinh tế (khoản 3 Điều 53); không được chuyển tiếp người lao động thuê lại cho bên khác (khoản 4).",
+ "example": "Công ty X (có giấy phép) ký HĐLĐ với anh H rồi cho Nhà máy Y thuê lại anh H 10 tháng để thay một kỹ sư nghỉ thai sản; X vẫn trả lương, Y điều hành công việc.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, 2 Điều 52; khoản 1 Điều 53 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-18-VBHN-VPQH-2026-Bo-luat-lao-dong-695336.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hop-dong-cho-thue-lai",
+  "lao-dong-nuoc-ngoai"
+ ],
+ "keywords": [
+  "ba bên",
+  "vẫn duy trì quan hệ lao động với doanh nghiệp cho thuê",
+  "ngành nghề kinh doanh có điều kiện",
+  "tối đa 12 tháng"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thời hạn cho thuê lại lao động đối với người lao động tối đa là bao lâu?",
+   "options": [
+    "12 tháng",
+    "06 tháng",
+    "24 tháng",
+    "36 tháng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 53.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 53 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trong cho thuê lại lao động, người lao động duy trì quan hệ lao động với ai?",
+   "options": [
+    "Doanh nghiệp cho thuê lại lao động đã giao kết HĐLĐ",
+    "Bên thuê lại lao động",
+    "Cả hai bên như nhau",
+    "Cơ quan quản lý lao động"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 52.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 52 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Doanh nghiệp cho thuê lại lao động",
+   "right": "Bên thuê lại lao động",
+   "cases": [
+    {
+     "text": "Giao kết hợp đồng lao động với người lao động",
+     "answer": "left"
+    },
+    {
+     "text": "Điều hành người lao động trong thời gian thuê lại",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 52, 56, 57."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hoạt động cho thuê lại lao động là ngành, nghề kinh doanh {{có điều kiện}}, chỉ được thực hiện bởi doanh nghiệp có {{Giấy phép}} hoạt động cho thuê lại lao động.",
+   "bank_extra": [
+    "tự do",
+    "đăng ký thuế"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thời hạn cho thuê lại lao động đối với người lao động tối đa là {{12}} tháng.",
+   "bank_extra": [
+    "24",
+    "36"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Bên thuê lại lao động phải ký hợp đồng lao động với người lao động thuê lại.",
+   "answer": false,
+   "explain": "Sai. Người lao động giao kết HĐLĐ với doanh nghiệp cho thuê lại và vẫn duy trì quan hệ lao động với doanh nghiệp đó (khoản 1 Điều 52)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm và nguyên tắc cơ bản của cho thuê lại lao động.",
+   "model": "Người lao động giao kết HĐLĐ với doanh nghiệp cho thuê lại rồi được chuyển sang làm việc, chịu sự điều hành của người sử dụng lao động khác nhưng vẫn duy trì quan hệ lao động với doanh nghiệp cho thuê lại (khoản 1 Điều 52); ngành nghề có điều kiện, cần giấy phép, ký quỹ; thời hạn tối đa 12 tháng (Điều 53, 54).",
+   "keywords": [
+    "doanh nghiệp cho thuê lại",
+    "điều hành",
+    "giấy phép",
+    "12 tháng"
+   ]
+  }
+ ]
+}

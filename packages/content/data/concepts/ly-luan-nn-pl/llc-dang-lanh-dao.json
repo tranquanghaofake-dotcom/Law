@@ -1,0 +1,117 @@
+{
+ "id": "llc-dang-lanh-dao",
+ "subject": "ly-luan-nn-pl",
+ "chapter": "v3",
+ "term": "Đảng Cộng sản Việt Nam trong hệ thống chính trị",
+ "definition": "Đảng Cộng sản Việt Nam - Đội tiên phong của giai cấp công nhân, đồng thời là đội tiên phong của nhân dân lao động và của dân tộc Việt Nam, đại biểu trung thành lợi ích của giai cấp công nhân, nhân dân lao động và của cả dân tộc, lấy chủ nghĩa Mác - Lê nin và tư tưởng Hồ Chí Minh làm nền tảng tư tưởng, là lực lượng lãnh đạo Nhà nước và xã hội.",
+ "plain": "Hệ thống chính trị Việt Nam gồm: ĐẢNG (lãnh đạo), NHÀ NƯỚC (trung tâm, quản lý), MẶT TRẬN TỔ QUỐC và các tổ chức chính trị – xã hội (Điều 9). Đảng lãnh đạo bằng cương lĩnh, đường lối, công tác cán bộ, kiểm tra — không làm thay nhà nước. Khoản 2, 3 Điều 4: Đảng gắn bó với Nhân dân, chịu sự giám sát, chịu trách nhiệm trước Nhân dân; tổ chức đảng và đảng viên hoạt động trong khuôn khổ Hiến pháp và pháp luật — đây là yêu cầu của nhà nước pháp quyền. Phân biệt LÃNH ĐẠO (Đảng) với QUẢN LÝ (Nhà nước) và LÀM CHỦ (Nhân dân).",
+ "example": "Nghị quyết của Đảng định hướng tinh gọn bộ máy; Quốc hội sau đó sửa Luật Tổ chức chính quyền địa phương để thể chế hóa: Đảng lãnh đạo, Nhà nước quản lý bằng pháp luật.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 4 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "llc-nha-nuoc-phap-quyen",
+  "llc-nhan-dan-thuc-hien-quyen-luc"
+ ],
+ "keywords": [
+  "đội tiên phong",
+  "lực lượng lãnh đạo",
+  "Mác - Lê nin",
+  "tư tưởng Hồ Chí Minh",
+  "khuôn khổ Hiến pháp"
+ ],
+ "note": "Hiến pháp 2013 (hiệu lực 01/01/2014) được sửa đổi, bổ sung bởi Nghị quyết 203/2025/QH15 (hiệu lực 16/6/2025) — các điều được trích (Điều 2, 4, 6) không thuộc phạm vi sửa đổi.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 1 Điều 4 Hiến pháp 2013, Đảng Cộng sản Việt Nam là gì?",
+   "options": [
+    "Lực lượng lãnh đạo Nhà nước và xã hội",
+    "Cơ quan quyền lực nhà nước cao nhất",
+    "Cơ quan hành pháp",
+    "Tổ chức xã hội nghề nghiệp"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 4 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tổ chức đảng và đảng viên hoạt động trong khuôn khổ nào?",
+   "options": [
+    "Hiến pháp và pháp luật",
+    "Chỉ Điều lệ Đảng",
+    "Không bị ràng buộc",
+    "Chỉ nghị quyết của Đảng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 4 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Đảng lãnh đạo",
+   "right": "Nhà nước quản lý",
+   "cases": [
+    {
+     "text": "Ban hành nghị quyết định hướng phát triển kinh tế",
+     "answer": "left"
+    },
+    {
+     "text": "Ban hành luật và tổ chức thi hành",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 4; Điều 8."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đảng Cộng sản Việt Nam là đội {{tiên phong}} của giai cấp công nhân, đồng thời là đội tiên phong của nhân dân lao động và của {{dân tộc}} Việt Nam.",
+   "bank_extra": [
+    "hậu vệ",
+    "quốc tế"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đảng lấy chủ nghĩa {{Mác - Lê nin}} và tư tưởng {{Hồ Chí Minh}} làm nền tảng tư tưởng.",
+   "bank_extra": [
+    "Khổng Tử",
+    "Rousseau"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Đảng Cộng sản Việt Nam trực tiếp ban hành văn bản quy phạm pháp luật.",
+   "answer": false,
+   "explain": "Sai. Đảng lãnh đạo bằng đường lối; ban hành pháp luật là chức năng của Nhà nước (Điều 8, Luật Ban hành VBQPPL)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu vị trí của Đảng trong hệ thống chính trị theo Điều 4 Hiến pháp 2013.",
+   "model": "Đội tiên phong của giai cấp công nhân, nhân dân lao động, dân tộc; nền tảng Mác - Lê nin, tư tưởng Hồ Chí Minh; lực lượng lãnh đạo Nhà nước và xã hội; chịu giám sát, trách nhiệm trước Nhân dân; hoạt động trong khuôn khổ Hiến pháp và pháp luật.",
+   "keywords": [
+    "tiên phong",
+    "lãnh đạo",
+    "Nhân dân",
+    "Hiến pháp"
+   ]
+  }
+ ]
+}

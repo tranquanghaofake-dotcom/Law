@@ -1,0 +1,118 @@
+{
+ "id": "bao-hiem-xa-hoi",
+ "subject": "an-sinh-xa-hoi",
+ "chapter": "v2",
+ "term": "Bảo hiểm xã hội, bảo hiểm xã hội bắt buộc và tự nguyện",
+ "definition": "Bảo hiểm xã hội là sự bảo đảm thay thế hoặc bù đắp một phần thu nhập của người tham gia bảo hiểm xã hội khi họ bị giảm hoặc mất thu nhập do ốm đau, thai sản, tai nạn lao động, bệnh nghề nghiệp, khi nghỉ hưu hoặc chết, trên cơ sở đóng vào quỹ bảo hiểm xã hội hoặc do ngân sách nhà nước bảo đảm. (…) Bảo hiểm xã hội bắt buộc là loại hình bảo hiểm xã hội do Nhà nước tổ chức mà người lao động, người sử dụng lao động thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc phải tham gia. Bảo hiểm xã hội tự nguyện là loại hình bảo hiểm xã hội do Nhà nước tổ chức mà công dân Việt Nam tự nguyện tham gia và được lựa chọn mức đóng, phương thức đóng phù hợp với thu nhập của mình.",
+ "plain": "Luật 2024 có NĂM loại hình (Điều 4): TRỢ CẤP HƯU TRÍ XÃ HỘI (mới, ngân sách bảo đảm), BHXH BẮT BUỘC (ốm đau, thai sản, hưu trí, tử tuất, tai nạn lao động – bệnh nghề nghiệp), BHXH TỰ NGUYỆN (trợ cấp thai sản — mới, hưu trí, tử tuất, bảo hiểm tai nạn lao động), BẢO HIỂM THẤT NGHIỆP (theo Luật Việc làm), BẢO HIỂM HƯU TRÍ BỔ SUNG. Đối tượng bắt buộc mở rộng: người làm việc theo HĐLĐ từ đủ 01 THÁNG trở lên (kể cả hợp đồng tên gọi khác nhưng có trả công và quản lý), chủ hộ kinh doanh có đăng ký…",
+ "example": "Nhân viên ký hợp đồng 2 tháng với cửa hàng: thuộc đối tượng BHXH bắt buộc (điểm a khoản 1 Điều 2); người bán hàng tự do muốn có lương hưu có thể tham gia BHXH tự nguyện và tự chọn mức đóng.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, 3, 4 Điều 3 Luật Bảo hiểm xã hội 2024 (VBHN 19/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bao-hiem/Van-ban-hop-nhat-19-VBHN-VPQH-2026-Luat-Bao-hiem-xa-hoi-696579.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nguyen-tac-bao-hiem-xa-hoi",
+  "dieu-kien-huong-luong-huu",
+  "tro-cap-huu-tri-xa-hoi",
+  "an-sinh-xa-hoi"
+ ],
+ "keywords": [
+  "thay thế hoặc bù đắp một phần thu nhập",
+  "bắt buộc – tự nguyện",
+  "từ đủ 01 tháng",
+  "năm loại hình"
+ ],
+ "note": "Luật Bảo hiểm xã hội 41/2024/QH15 có hiệu lực từ 01/7/2025, thay thế Luật Bảo hiểm xã hội 58/2014/QH13 (đề cương HLU còn dẫn luật 2014).",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Bảo hiểm xã hội tự nguyện có đặc điểm nào?",
+   "options": [
+    "Công dân Việt Nam tự nguyện tham gia và được lựa chọn mức đóng, phương thức đóng",
+    "Người sử dụng lao động bắt buộc đóng cho người lao động",
+    "Do ngân sách nhà nước chi trả toàn bộ",
+    "Chỉ dành cho công chức"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 3 Luật Bảo hiểm xã hội 2024 (VBHN 19/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người làm việc theo hợp đồng lao động có thời hạn từ bao lâu thì thuộc đối tượng BHXH bắt buộc?",
+   "options": [
+    "Từ đủ 01 tháng trở lên",
+    "Từ đủ 03 tháng trở lên",
+    "Từ đủ 12 tháng trở lên",
+    "Mọi hợp đồng không phân biệt thời hạn"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 2.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 2 Luật Bảo hiểm xã hội 2024 (VBHN 19/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "BHXH bắt buộc",
+   "right": "BHXH tự nguyện",
+   "cases": [
+    {
+     "text": "Có chế độ ốm đau",
+     "answer": "left"
+    },
+    {
+     "text": "Người tham gia tự lựa chọn mức đóng",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 3, 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bảo hiểm xã hội là sự bảo đảm {{thay thế hoặc bù đắp}} một phần thu nhập của người tham gia khi họ bị giảm hoặc mất {{thu nhập}}.",
+   "bank_extra": [
+    "thay thế toàn bộ",
+    "tài sản"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bảo hiểm xã hội bắt buộc là loại hình bảo hiểm xã hội do {{Nhà nước}} tổ chức mà người lao động, người sử dụng lao động thuộc đối tượng tham gia bắt buộc {{phải tham gia}}.",
+   "bank_extra": [
+    "doanh nghiệp bảo hiểm",
+    "được lựa chọn"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Bảo hiểm xã hội tự nguyện theo Luật 2024 có chế độ ốm đau.",
+   "answer": false,
+   "explain": "Sai. Khoản 3 Điều 4: gồm trợ cấp thai sản, hưu trí, tử tuất, bảo hiểm tai nạn lao động; không có ốm đau."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Phân biệt bảo hiểm xã hội bắt buộc và tự nguyện.",
+   "model": "Bắt buộc: Nhà nước tổ chức, người lao động và người sử dụng lao động thuộc đối tượng phải tham gia, gồm ốm đau, thai sản, hưu trí, tử tuất, tai nạn lao động – bệnh nghề nghiệp; tự nguyện: công dân tự nguyện tham gia, chọn mức đóng, phương thức đóng, gồm trợ cấp thai sản, hưu trí, tử tuất, tai nạn lao động (Điều 3, 4).",
+   "keywords": [
+    "bắt buộc",
+    "tự nguyện",
+    "mức đóng",
+    "hưu trí"
+   ]
+  }
+ ]
+}

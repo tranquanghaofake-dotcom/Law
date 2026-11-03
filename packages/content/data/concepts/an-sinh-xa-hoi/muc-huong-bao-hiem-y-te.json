@@ -1,0 +1,116 @@
+{
+ "id": "muc-huong-bao-hiem-y-te",
+ "subject": "an-sinh-xa-hoi",
+ "chapter": "v4",
+ "term": "Mức hưởng bảo hiểm y tế",
+ "definition": "Người tham gia bảo hiểm y tế khi khám bệnh, chữa bệnh theo quy định tại Điều 26 và Điều 27 của Luật này được quỹ bảo hiểm y tế thanh toán chi phí khám bệnh, chữa bệnh trong phạm vi được hưởng với mức hưởng như sau: (…) đ) 95% chi phí khám bệnh, chữa bệnh đối với các đối tượng quy định tại điểm a khoản 2, điểm k khoản 3, điểm a và điểm g khoản 4 Điều 12 của Luật này; e) 80% chi phí khám bệnh, chữa bệnh đối với đối tượng khác. Người thuộc nhiều đối tượng tham gia bảo hiểm y tế thì được hưởng quyền lợi bảo hiểm y tế theo đối tượng có quyền lợi cao nhất.",
+ "plain": "Ba mức: 100% (theo điểm a: người có công, trẻ em dưới 6 tuổi, người thuộc hộ nghèo, người hưởng trợ cấp xã hội hằng tháng…; chi phí một lần dưới mức Chính phủ quy định; khám ở cơ sở cấp ban đầu; tham gia 5 năm liên tục và cùng chi trả trong năm vượt 6 lần mức tham chiếu), 95% (theo điểm đ: người hưởng lương hưu, trợ cấp mất sức lao động hằng tháng; thân nhân người có công theo điểm k khoản 3 Điều 12; người thuộc hộ cận nghèo; người dân tộc thiểu số theo điểm g khoản 4 Điều 12), 80% (đối tượng khác — phần lớn người lao động, sinh viên). Khám sai cơ sở đăng ký, không đúng quy định chuyển người bệnh thì được thanh toán theo tỷ lệ giảm (khoản 4). Thuộc nhiều đối tượng thì hưởng theo QUYỀN LỢI CAO NHẤT.",
+ "example": "Một người vừa là thương binh vừa là người lao động có thẻ BHYT: được hưởng theo đối tượng có quyền lợi cao nhất (100% của người có công), không cộng dồn hai thẻ.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, 2 Điều 22 Luật Bảo hiểm y tế (VBHN 40/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bao-hiem/Van-ban-hop-nhat-40-VBHN-VPQH-2026-Luat-Bao-hiem-y-te-699508.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "bao-hiem-y-te",
+  "uu-dai-nguoi-co-cong"
+ ],
+ "keywords": [
+  "100% – 95% – 80%",
+  "trong phạm vi được hưởng",
+  "quyền lợi cao nhất",
+  "đúng quy định chuyển người bệnh"
+ ],
+ "note": "Luật Bảo hiểm y tế 25/2008/QH12 được sửa đổi nhiều lần, gần nhất bởi Luật 51/2024/QH15 (hiệu lực 01/7/2025) và Luật Phòng bệnh 114/2025/QH15 (hiệu lực 01/7/2026); văn bản hợp nhất 40/VBHN-VPQH 2026.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Mức hưởng BHYT của \"đối tượng khác\" (không thuộc nhóm ưu tiên) khi khám chữa bệnh đúng quy định là bao nhiêu?",
+   "options": [
+    "80% chi phí",
+    "100% chi phí",
+    "95% chi phí",
+    "50% chi phí"
+   ],
+   "answer": 0,
+   "explain": "Điểm e khoản 1 Điều 22.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 22 Luật Bảo hiểm y tế (VBHN 40/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người thuộc nhiều đối tượng tham gia BHYT được hưởng thế nào?",
+   "options": [
+    "Theo đối tượng có quyền lợi cao nhất",
+    "Cộng dồn quyền lợi của tất cả đối tượng",
+    "Theo đối tượng đăng ký đầu tiên",
+    "Theo lựa chọn của cơ quan BHXH"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 22.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 22 Luật Bảo hiểm y tế (VBHN 40/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Mức 100%",
+   "right": "Mức 80%",
+   "cases": [
+    {
+     "text": "Khám tại trạm y tế (cơ sở cấp ban đầu)",
+     "answer": "left"
+    },
+    {
+     "text": "Đối tượng khác khám ở cơ sở cấp cơ bản đúng quy định",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 22."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quỹ bảo hiểm y tế thanh toán {{80%}} chi phí khám bệnh, chữa bệnh đối với {{đối tượng khác}}.",
+   "bank_extra": [
+    "100%",
+    "người có công"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người thuộc nhiều đối tượng tham gia bảo hiểm y tế thì được hưởng quyền lợi theo đối tượng có quyền lợi {{cao nhất}}.",
+   "bank_extra": [
+    "thấp nhất",
+    "trung bình"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Khám bệnh tại trạm y tế xã được quỹ BHYT thanh toán 100% chi phí trong phạm vi được hưởng.",
+   "answer": true,
+   "explain": "Đúng. Điểm c khoản 1 Điều 22: cơ sở thuộc cấp khám bệnh, chữa bệnh ban đầu."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các mức hưởng bảo hiểm y tế.",
+   "model": "100% (nhóm đối tượng ưu tiên, chi phí một lần thấp, khám ở cấp ban đầu, tham gia 5 năm liên tục có cùng chi trả vượt 6 lần mức tham chiếu); 95% (nhóm lương hưu, hộ cận nghèo…); 80% (đối tượng khác); thuộc nhiều đối tượng hưởng theo quyền lợi cao nhất (Điều 22).",
+   "keywords": [
+    "100%",
+    "95%",
+    "80%",
+    "cao nhất"
+   ]
+  }
+ ]
+}

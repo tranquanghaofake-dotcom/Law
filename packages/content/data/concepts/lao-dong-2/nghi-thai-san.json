@@ -1,0 +1,115 @@
+{
+ "id": "nghi-thai-san",
+ "subject": "lao-dong-2",
+ "chapter": "v2",
+ "term": "Nghỉ thai sản",
+ "definition": "Lao động nữ được nghỉ thai sản trước và sau khi sinh con là 06 tháng; trường hợp sinh con thứ hai, lao động nữ được nghỉ thai sản trước và sau khi sinh con là 07 tháng; thời gian nghỉ trước khi sinh không quá 02 tháng. Trường hợp lao động nữ sinh đôi trở lên thì tính từ con thứ hai trở đi, cứ mỗi con, người mẹ được nghỉ thêm 01 tháng.",
+ "plain": "Điểm MỚI từ 01/7/2026 (Luật Dân số 113/2025/QH15): sinh con THỨ HAI được nghỉ 07 THÁNG (con thứ nhất, thứ ba trở đi vẫn 06 tháng). Nghỉ trước sinh tối đa 02 tháng; sinh đôi trở lên, từ con thứ hai mỗi con thêm 01 tháng. Trong thời gian nghỉ hưởng chế độ thai sản theo Luật BHXH (khoản 2); có thể nghỉ thêm không lương nếu thỏa thuận (khoản 3); có thể đi làm sớm khi đã nghỉ ít nhất 04 tháng, phải báo trước và được đồng ý (khoản 4).",
+ "example": "Chị L sinh con thứ hai tháng 9/2026: được nghỉ 07 tháng; nếu sinh đôi ở lần sinh đó thì được nghỉ thêm 01 tháng cho đứa trẻ thứ hai.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 139 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-18-VBHN-VPQH-2026-Bo-luat-lao-dong-695336.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "bao-ve-thai-san"
+ ],
+ "keywords": [
+  "06 tháng",
+  "07 tháng khi sinh con thứ hai",
+  "trước sinh không quá 02 tháng",
+  "sinh đôi: thêm 01 tháng mỗi con"
+ ],
+ "note": "Khoản 1 Điều 139 được sửa đổi bởi Luật Dân số 113/2025/QH15, hiệu lực 01/7/2026 (văn bản hợp nhất 18/VBHN-VPQH 2026): sinh con thứ hai được nghỉ 07 tháng.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Từ 01/7/2026, lao động nữ sinh con thứ hai được nghỉ thai sản bao lâu?",
+   "options": [
+    "07 tháng",
+    "06 tháng",
+    "08 tháng",
+    "04 tháng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 139 (sửa đổi bởi Luật Dân số 113/2025/QH15).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 139 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thời gian nghỉ trước khi sinh tối đa là bao lâu?",
+   "options": [
+    "02 tháng",
+    "01 tháng",
+    "03 tháng",
+    "04 tháng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 139.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 139 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "06 tháng",
+   "right": "07 tháng",
+   "cases": [
+    {
+     "text": "Sinh con thứ nhất",
+     "answer": "left"
+    },
+    {
+     "text": "Sinh con thứ hai",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 139."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Lao động nữ được nghỉ thai sản trước và sau khi sinh con là {{06}} tháng; trường hợp sinh con thứ hai là {{07}} tháng.",
+   "bank_extra": [
+    "04",
+    "08"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Trường hợp sinh đôi trở lên thì tính từ con thứ {{hai}} trở đi, cứ mỗi con, người mẹ được nghỉ thêm {{01}} tháng.",
+   "bank_extra": [
+    "ba",
+    "02"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Lao động nữ có thể trở lại làm việc trước khi hết thời gian nghỉ thai sản khi đã nghỉ ít nhất 04 tháng, có báo trước và được người sử dụng lao động đồng ý.",
+   "answer": true,
+   "explain": "Đúng. Khoản 4 Điều 139."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày chế độ nghỉ thai sản theo Bộ luật Lao động hiện hành.",
+   "model": "06 tháng trước và sau sinh; sinh con thứ hai 07 tháng (từ 01/7/2026); trước sinh không quá 02 tháng; sinh đôi trở lên từ con thứ hai mỗi con thêm 01 tháng; hưởng chế độ thai sản theo BHXH; có thể đi làm sớm sau ít nhất 04 tháng (Điều 139).",
+   "keywords": [
+    "06 tháng",
+    "07 tháng",
+    "02 tháng",
+    "04 tháng"
+   ]
+  }
+ ]
+}

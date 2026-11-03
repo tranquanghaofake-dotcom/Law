@@ -1,0 +1,121 @@
+{
+ "id": "bien-phap-bao-dam",
+ "subject": "dan-su-2",
+ "chapter": "v3",
+ "term": "Các biện pháp bảo đảm thực hiện nghĩa vụ",
+ "definition": "Các biện pháp bảo đảm thực hiện nghĩa vụ bao gồm: 1. Cầm cố tài sản. 2. Thế chấp tài sản. 3. Đặt cọc. 4. Ký cược. 5. Ký quỹ. 6. Bảo lưu quyền sở hữu. 7. Bảo lãnh. 8. Tín chấp. 9. Cầm giữ tài sản.",
+ "plain": "Chín biện pháp. Phân loại: ĐỐI VẬT (bằng tài sản: cầm cố, thế chấp, đặt cọc, ký cược, ký quỹ, bảo lưu quyền sở hữu, cầm giữ) và ĐỐI NHÂN (bằng uy tín, khả năng của người khác: bảo lãnh, tín chấp). Mới của BLDS 2015: BẢO LƯU QUYỀN SỞ HỮU và CẦM GIỮ TÀI SẢN. Hiệu lực ĐỐI KHÁNG với người thứ ba phát sinh từ khi ĐĂNG KÝ hoặc bên nhận bảo đảm NẮM GIỮ, CHIẾM GIỮ tài sản (khoản 1 Điều 297).",
+ "example": "Vay ngân hàng có thế chấp sổ đỏ (thế chấp); mua xe trả góp, bên bán giữ quyền sở hữu đến khi trả đủ (bảo lưu quyền sở hữu); hội phụ nữ xác nhận cho hội viên vay vốn (tín chấp).",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 292 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "cam-co",
+  "the-chap",
+  "bao-lanh",
+  "dat-coc"
+ ],
+ "keywords": [
+  "chín biện pháp",
+  "đối vật, đối nhân",
+  "bảo lưu quyền sở hữu, cầm giữ",
+  "hiệu lực đối kháng"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Biện pháp nào KHÔNG thuộc Điều 292?",
+   "options": [
+    "Phạt vi phạm",
+    "Cầm giữ tài sản",
+    "Tín chấp",
+    "Ký quỹ"
+   ],
+   "answer": 0,
+   "explain": "Phạt vi phạm là thỏa thuận trong hợp đồng (Điều 418), không phải biện pháp bảo đảm.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 292 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Biện pháp bảo đảm phát sinh hiệu lực đối kháng với người thứ ba từ khi nào?",
+   "options": [
+    "Từ khi đăng ký biện pháp bảo đảm hoặc bên nhận bảo đảm nắm giữ, chiếm giữ tài sản bảo đảm",
+    "Từ khi ký hợp đồng",
+    "Từ khi đến hạn trả nợ",
+    "Từ khi công chứng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 297.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 297 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Bảo đảm bằng tài sản",
+   "right": "Bảo đảm bằng uy tín, cam kết của người khác",
+   "cases": [
+    {
+     "text": "Thế chấp",
+     "answer": "left"
+    },
+    {
+     "text": "Bảo lãnh",
+     "answer": "right"
+    },
+    {
+     "text": "Tín chấp",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 292."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Các biện pháp bảo đảm gồm cầm cố, thế chấp, đặt cọc, ký cược, ký quỹ, bảo lưu {{quyền sở hữu}}, bảo lãnh, {{tín chấp}}, cầm giữ tài sản.",
+   "bank_extra": [
+    "quyền sử dụng",
+    "phạt vi phạm"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Biện pháp bảo đảm phát sinh hiệu lực {{đối kháng}} với người thứ ba từ khi đăng ký hoặc bên nhận bảo đảm nắm giữ tài sản.",
+   "bank_extra": [
+    "tuyệt đối",
+    "tạm thời"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Phạt vi phạm là một biện pháp bảo đảm thực hiện nghĩa vụ theo Điều 292.",
+   "answer": false,
+   "explain": "Sai. Điều 292 không liệt kê phạt vi phạm."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các biện pháp bảo đảm thực hiện nghĩa vụ và thời điểm phát sinh hiệu lực đối kháng.",
+   "model": "Cầm cố, thế chấp, đặt cọc, ký cược, ký quỹ, bảo lưu quyền sở hữu, bảo lãnh, tín chấp, cầm giữ tài sản (Điều 292); hiệu lực đối kháng từ khi đăng ký hoặc bên nhận bảo đảm nắm giữ, chiếm giữ tài sản (khoản 1 Điều 297).",
+   "keywords": [
+    "cầm cố",
+    "thế chấp",
+    "bảo lãnh",
+    "đối kháng"
+   ]
+  }
+ ]
+}

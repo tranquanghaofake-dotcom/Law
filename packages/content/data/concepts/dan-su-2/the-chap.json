@@ -1,0 +1,115 @@
+{
+ "id": "the-chap",
+ "subject": "dan-su-2",
+ "chapter": "v4",
+ "term": "Thế chấp tài sản",
+ "definition": "Thế chấp tài sản là việc một bên (sau đây gọi là bên thế chấp) dùng tài sản thuộc sở hữu của mình để bảo đảm thực hiện nghĩa vụ và không giao tài sản cho bên kia (sau đây gọi là bên nhận thế chấp). Tài sản thế chấp do bên thế chấp giữ. Các bên có thể thỏa thuận giao cho người thứ ba giữ tài sản thế chấp.",
+ "plain": "Đặc trưng: KHÔNG GIAO tài sản; bên thế chấp vẫn GIỮ, KHAI THÁC tài sản (hoặc thỏa thuận người thứ ba giữ). Tài sản có thể là tài sản HÌNH THÀNH TRONG TƯƠNG LAI. Hiệu lực đối kháng thường phát sinh từ khi ĐĂNG KÝ (quyền sử dụng đất, tàu bay, tàu biển phải đăng ký — Điều 298 và luật chuyên ngành).",
+ "example": "Chủ cửa hàng thế chấp quyền sử dụng đất để vay ngân hàng, vẫn tiếp tục kinh doanh trên mảnh đất đó.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 317 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "cam-co",
+  "bien-phap-bao-dam"
+ ],
+ "keywords": [
+  "không giao tài sản",
+  "bên thế chấp giữ",
+  "người thứ ba giữ",
+  "đăng ký"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tài sản thế chấp do ai giữ (khi không có thỏa thuận khác)?",
+   "options": [
+    "Bên thế chấp",
+    "Bên nhận thế chấp",
+    "Tòa án",
+    "Văn phòng công chứng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 317.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 317 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Các bên có thể thỏa thuận giao tài sản thế chấp cho ai giữ?",
+   "options": [
+    "Người thứ ba",
+    "Không ai được giữ ngoài bên thế chấp",
+    "Chỉ cơ quan nhà nước",
+    "Chỉ ngân hàng nhà nước"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 317.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 317 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thế chấp",
+   "right": "Đặt cọc",
+   "cases": [
+    {
+     "text": "Dùng nhà để bảo đảm khoản vay, vẫn ở trong nhà",
+     "answer": "left"
+    },
+    {
+     "text": "Giao 10 triệu để giữ chỗ thuê nhà",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 317, 328."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thế chấp tài sản là việc bên thế chấp dùng tài sản thuộc sở hữu của mình để bảo đảm thực hiện nghĩa vụ và {{không giao}} tài sản cho bên kia. Tài sản thế chấp do {{bên thế chấp}} giữ.",
+   "bank_extra": [
+    "phải giao",
+    "bên nhận thế chấp"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Các bên có thể thỏa thuận giao cho {{người thứ ba}} giữ tài sản thế chấp.",
+   "bank_extra": [
+    "Tòa án",
+    "bên vay"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Bên thế chấp phải giao tài sản thế chấp cho ngân hàng giữ.",
+   "answer": false,
+   "explain": "Sai. Khoản 1, 2 Điều 317: không giao, bên thế chấp giữ."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm và đặc điểm của thế chấp tài sản.",
+   "model": "Bên thế chấp dùng tài sản thuộc sở hữu để bảo đảm thực hiện nghĩa vụ, không giao tài sản cho bên nhận thế chấp; tài sản do bên thế chấp giữ hoặc người thứ ba giữ theo thỏa thuận (Điều 317).",
+   "keywords": [
+    "không giao",
+    "bên thế chấp giữ",
+    "người thứ ba",
+    "bảo đảm"
+   ]
+  }
+ ]
+}

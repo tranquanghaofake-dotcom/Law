@@ -1,0 +1,115 @@
+{
+ "id": "tcdn-hop-nhat",
+ "subject": "tai-chinh-doanh-nghiep",
+ "chapter": "v5",
+ "term": "Hợp nhất công ty",
+ "definition": "Hai hoặc một số công ty (sau đây gọi là công ty bị hợp nhất) có thể hợp nhất thành một công ty mới (sau đây gọi là công ty hợp nhất), đồng thời chấm dứt tồn tại của các công ty bị hợp nhất.",
+ "plain": "Hợp nhất (consolidation): HAI hoặc MỘT SỐ công ty → MỘT công ty MỚI; TẤT CẢ công ty bị hợp nhất chấm dứt. Hợp đồng hợp nhất phải có: thủ tục, điều kiện; phương án sử dụng lao động; thời hạn, thủ tục, điều kiện chuyển đổi tài sản, phần vốn góp, cổ phần, trái phiếu (điểm a khoản 2). Công ty hợp nhất hưởng quyền, nghĩa vụ và chịu trách nhiệm về các khoản nợ của công ty bị hợp nhất.",
+ "example": "Công ty Q và Công ty R hợp nhất thành Công ty QR mới: Q và R chấm dứt tồn tại, cổ phần của cổ đông Q, R được chuyển đổi thành cổ phần QR theo hợp đồng hợp nhất.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 200 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tcdn-sap-nhap",
+  "tcdn-tap-trung-kinh-te"
+ ],
+ "keywords": [
+  "hai hoặc một số công ty",
+  "công ty mới",
+  "công ty hợp nhất",
+  "chấm dứt tồn tại"
+ ],
+ "note": "Luật Doanh nghiệp 59/2020/QH14 có hiệu lực từ 01/01/2021, thay thế Luật Doanh nghiệp 2014 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 03/2022/QH15 và Luật 76/2025/QH15 (hiệu lực 01/7/2025) — văn bản hợp nhất 67/VBHN-VPQH 2025.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Kết quả của hợp nhất công ty là gì?",
+   "options": [
+    "Hình thành một công ty mới, các công ty bị hợp nhất chấm dứt tồn tại",
+    "Một công ty bị sáp nhập vào công ty khác đang tồn tại",
+    "Một công ty chia thành nhiều công ty",
+    "Một công ty mua cổ phần chi phối công ty khác"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 200.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 200 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hợp đồng hợp nhất phải có nội dung nào về tài chính?",
+   "options": [
+    "Thời hạn, thủ tục và điều kiện chuyển đổi tài sản, phần vốn góp, cổ phần, trái phiếu",
+    "Mức lương của giám đốc mới",
+    "Giá cổ phiếu trên sàn sau 1 năm",
+    "Danh sách khách hàng mới"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 2 Điều 200.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 200 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hợp nhất",
+   "right": "Mua lại doanh nghiệp",
+   "cases": [
+    {
+     "text": "Các công ty cũ chấm dứt, lập công ty mới",
+     "answer": "left"
+    },
+    {
+     "text": "Bên bị mua vẫn tồn tại nhưng bị kiểm soát, chi phối",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 200 Luật Doanh nghiệp; khoản 4 Điều 29 Luật Cạnh tranh."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hai hoặc một số công ty có thể hợp nhất thành một công ty {{mới}}, đồng thời chấm dứt tồn tại của các công ty {{bị hợp nhất}}.",
+   "bank_extra": [
+    "cũ",
+    "nhận sáp nhập"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hợp đồng hợp nhất có điều kiện chuyển đổi tài sản, phần vốn góp, {{cổ phần}}, {{trái phiếu}} của công ty bị hợp nhất.",
+   "bank_extra": [
+    "lương",
+    "thưởng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Sau hợp nhất, một trong các công ty cũ tiếp tục tồn tại.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 200: hình thành công ty mới và các công ty bị hợp nhất đều chấm dứt tồn tại."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm hợp nhất công ty.",
+   "model": "Hai hoặc một số công ty hợp nhất thành một công ty mới (công ty hợp nhất), đồng thời chấm dứt tồn tại của các công ty bị hợp nhất (khoản 1 Điều 200).",
+   "keywords": [
+    "hai hoặc một số",
+    "công ty mới",
+    "chấm dứt tồn tại"
+   ]
+  }
+ ]
+}

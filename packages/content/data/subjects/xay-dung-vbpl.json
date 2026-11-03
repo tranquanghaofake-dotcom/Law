@@ -1,0 +1,99 @@
+{
+  "id": "xay-dung-vbpl",
+  "title": "Xây dựng văn bản pháp luật",
+  "short": "XD VBPL",
+  "chapters": [
+    {
+      "id": "v1",
+      "title": "Vấn đề 1. Khái quát về văn bản pháp luật",
+      "lessons": [
+        {
+          "id": "xd1",
+          "title": "Khái quát về văn bản pháp luật",
+          "concepts": [
+            "xd-van-ban-qppl",
+            "xd-quy-pham-phap-luat",
+            "xd-he-thong-vbqppl",
+            "xd-nguyen-tac-xay-dung",
+            "xd-chinh-sach",
+            "xd-thoi-diem-co-hieu-luc"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v2",
+      "title": "Vấn đề 2. Quy trình xây dựng văn bản pháp luật",
+      "lessons": [
+        {
+          "id": "xd2",
+          "title": "Quy trình xây dựng văn bản pháp luật",
+          "concepts": [
+            "xd-quy-trinh-xay-dung-chinh-sach",
+            "xd-danh-gia-tac-dong",
+            "xd-co-quan-chu-tri-soan-thao",
+            "xd-tham-dinh",
+            "xd-tham-tra",
+            "xd-thu-tuc-rut-gon"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v3",
+      "title": "Vấn đề 3. Ngôn ngữ trong văn bản pháp luật",
+      "lessons": [
+        {
+          "id": "xd3",
+          "title": "Ngôn ngữ trong văn bản pháp luật",
+          "concepts": [
+            "xd-ngon-ngu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v4",
+      "title": "Vấn đề 4. Hình thức văn bản pháp luật",
+      "lessons": [
+        {
+          "id": "xd4",
+          "title": "Hình thức văn bản pháp luật",
+          "concepts": [
+            "xd-bo-cuc-so-ky-hieu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v5",
+      "title": "Vấn đề 5. Soạn thảo nghị quyết, quyết định, chỉ thị",
+      "lessons": [
+        {
+          "id": "xd5",
+          "title": "Soạn thảo nghị quyết, quyết định, chỉ thị",
+          "concepts": [
+            "xd-nghi-quyet-quoc-hoi",
+            "xd-nghi-quyet-hdnd-tinh"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v6",
+      "title": "Vấn đề 6. Kiểm tra, rà soát và xử lý văn bản pháp luật",
+      "lessons": [
+        {
+          "id": "xd6",
+          "title": "Kiểm tra, rà soát và xử lý văn bản pháp luật",
+          "concepts": [
+            "xd-kiem-tra-vbqppl",
+            "xd-ra-soat-vbqppl",
+            "xd-sua-doi-bai-bo",
+            "xd-het-hieu-luc"
+          ]
+        }
+      ]
+    }
+  ]
+}

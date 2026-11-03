@@ -1,0 +1,116 @@
+{
+ "id": "tu-hinh",
+ "subject": "hinh-su",
+ "chapter": "v12",
+ "term": "Tử hình",
+ "definition": "Tử hình là hình phạt đặc biệt chỉ áp dụng đối với người phạm tội đặc biệt nghiêm trọng thuộc một trong nhóm các tội xâm phạm an ninh quốc gia, xâm phạm tính mạng con người, các tội phạm về ma túy, tham nhũng và một số tội phạm đặc biệt nghiêm trọng khác do Bộ luật này quy định. Không áp dụng hình phạt tử hình đối với người dưới 18 tuổi khi phạm tội, phụ nữ có thai, phụ nữ đang nuôi con dưới 36 tháng tuổi hoặc người đủ 75 tuổi trở lên khi phạm tội hoặc khi xét xử.",
+ "plain": "Tử hình là hình phạt ĐẶC BIỆT, chỉ cho tội ĐẶC BIỆT NGHIÊM TRỌNG thuộc các nhóm: an ninh quốc gia, tính mạng con người, ma túy, tham nhũng… KHÔNG ÁP DỤNG: người dưới 18 tuổi khi phạm tội; phụ nữ có thai; phụ nữ nuôi con dưới 36 tháng tuổi; người đủ 75 tuổi trở lên khi phạm tội hoặc khi xét xử. KHÔNG THI HÀNH (khoản 3, sửa đổi bởi Luật 86/2025/QH15): phụ nữ có thai, nuôi con dưới 36 tháng; người đủ 75 tuổi; người mắc bệnh ung thư giai đoạn cuối → chuyển thành tù chung thân (khoản 4).",
+ "example": "Người phạm tội giết người thuộc khung đặc biệt nghiêm trọng, khi xét xử đã đủ 76 tuổi: Tòa án không được tuyên tử hình.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 40 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "he-thong-hinh-phat",
+  "hieu-luc-theo-thoi-gian"
+ ],
+ "keywords": [
+  "hình phạt đặc biệt",
+  "tội đặc biệt nghiêm trọng",
+  "dưới 18 tuổi, phụ nữ có thai",
+  "đủ 75 tuổi"
+ ],
+ "note": "Khoản 3 Điều 40 được sửa đổi, bổ sung bởi Luật 86/2025/QH15 (hiệu lực 01/7/2025); câu chữ khoản 3 trong ghi chú theo VBHN 135/VBHN-VPQH 2025.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Không áp dụng hình phạt tử hình đối với ai?",
+   "options": [
+    "Người đủ 75 tuổi trở lên khi phạm tội hoặc khi xét xử",
+    "Người từ đủ 60 tuổi",
+    "Người phạm tội lần đầu",
+    "Người có trình độ đại học"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 40.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 40 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 3 Điều 40 (VBHN 2025), trường hợp nào KHÔNG thi hành án tử hình?",
+   "options": [
+    "Người mắc bệnh ung thư giai đoạn cuối",
+    "Người có thành tích xuất sắc",
+    "Người đã bồi thường thiệt hại",
+    "Người có con đã thành niên"
+   ],
+   "answer": 0,
+   "explain": "Điểm c khoản 3 Điều 40.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 40 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Không áp dụng tử hình (khoản 2)",
+   "right": "Không thi hành án tử hình (khoản 3)",
+   "cases": [
+    {
+     "text": "Người dưới 18 tuổi khi phạm tội",
+     "answer": "left"
+    },
+    {
+     "text": "Người mắc bệnh ung thư giai đoạn cuối",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 40."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Không áp dụng hình phạt tử hình đối với người dưới {{18}} tuổi khi phạm tội, phụ nữ có thai, phụ nữ đang nuôi con dưới {{36}} tháng tuổi.",
+   "bank_extra": [
+    "16",
+    "24"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tử hình là hình phạt đặc biệt chỉ áp dụng đối với người phạm tội {{đặc biệt nghiêm trọng}}.",
+   "bank_extra": [
+    "rất nghiêm trọng",
+    "nghiêm trọng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người được ân giảm án tử hình thì hình phạt tử hình được chuyển thành tù chung thân.",
+   "answer": true,
+   "explain": "Đúng. Khoản 4 Điều 40."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quy định về hình phạt tử hình.",
+   "model": "Hình phạt đặc biệt chỉ áp dụng với tội đặc biệt nghiêm trọng thuộc nhóm an ninh quốc gia, tính mạng con người, ma túy, tham nhũng và một số tội khác (khoản 1); không áp dụng với người dưới 18 tuổi khi phạm tội, phụ nữ có thai, nuôi con dưới 36 tháng, người đủ 75 tuổi (khoản 2); không thi hành với một số trường hợp, chuyển thành chung thân (khoản 3, 4 Điều 40).",
+   "keywords": [
+    "đặc biệt nghiêm trọng",
+    "dưới 18 tuổi",
+    "75 tuổi",
+    "chung thân"
+   ]
+  }
+ ]
+}

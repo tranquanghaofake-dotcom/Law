@@ -1,0 +1,117 @@
+{
+ "id": "xd-chinh-sach",
+ "subject": "xay-dung-vbpl",
+ "chapter": "v1",
+ "term": "Chính sách",
+ "definition": "Chính sách là tập hợp các giải pháp cụ thể của Nhà nước để giải quyết một hoặc một số vấn đề của thực tiễn nhằm đạt được mục tiêu nhất định, phù hợp với chủ trương, đường lối của Đảng.",
+ "plain": "Chính sách là \"linh hồn\" của văn bản, có trước quy phạm: xác định VẤN ĐỀ thực tiễn → MỤC TIÊU → GIẢI PHÁP → đối tượng tác động (Điều 28). Luật 2025 tách \"quy trình xây dựng chính sách\" (Điều 27–32) khỏi soạn thảo; chỉ luật, pháp lệnh mới hoặc thay thế, luật hạn chế quyền con người, nghị quyết thí điểm mới phải làm quy trình này. Phân biệt với quy phạm: quy phạm là cách \"quy phạm hóa\" chính sách thành quy tắc xử sự.",
+ "example": "Vấn đề: ùn tắc đô thị; mục tiêu: giảm xe cá nhân; giải pháp: thu phí vào nội đô, ưu đãi xe buýt — đó là chính sách; điều khoản \"xe ô tô vào khu vực X phải nộp phí Y\" là quy phạm hóa chính sách.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 2 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-54-VBHN-VPQH-2025-Luat-Ban-hanh-van-ban-quy-pham-phap-luat-669858.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "xd-quy-pham-phap-luat",
+  "xd-quy-trinh-xay-dung-chinh-sach",
+  "xd-danh-gia-tac-dong"
+ ],
+ "keywords": [
+  "giải pháp cụ thể",
+  "vấn đề của thực tiễn",
+  "mục tiêu",
+  "chủ trương, đường lối của Đảng"
+ ],
+ "note": "Luật Ban hành văn bản quy phạm pháp luật 64/2025/QH15 có hiệu lực từ 01/4/2025, thay thế Luật 80/2015/QH13 (sửa đổi bởi Luật 63/2020/QH14) mà đề cương HLU 2019 còn dẫn; được sửa đổi bởi Luật 87/2025/QH15 có hiệu lực từ 01/7/2025 — văn bản hợp nhất 54/VBHN-VPQH ngày 11/8/2025. Luật mới bỏ quy trình \"lập đề nghị xây dựng luật\" theo chương trình hằng năm kiểu cũ, tách \"quy trình xây dựng chính sách\" và bỏ thẩm quyền ban hành VBQPPL của cấp huyện (từ 01/7/2025). Dự án Luật Văn bản quy phạm pháp luật (thay thế) đang được Quốc hội khóa XVI xem xét, chưa có hiệu lực.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 2 Điều 3, chính sách là gì?",
+   "options": [
+    "Tập hợp các giải pháp cụ thể của Nhà nước để giải quyết vấn đề của thực tiễn nhằm đạt mục tiêu nhất định",
+    "Quy tắc xử sự chung bắt buộc",
+    "Văn bản hành chính của Chính phủ",
+    "Ý kiến của chuyên gia"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nội dung từng chính sách phải gồm gì theo khoản 2 Điều 28?",
+   "options": [
+    "Vấn đề cần giải quyết, mục tiêu, giải pháp, đối tượng chịu tác động, giải pháp tối ưu được lựa chọn",
+    "Chỉ cần nêu tên luật dự kiến",
+    "Dự toán kinh phí và tên cơ quan soạn thảo",
+    "Danh sách thành viên ban soạn thảo"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 28.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 28 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Chính sách",
+   "right": "Quy phạm pháp luật",
+   "cases": [
+    {
+     "text": "Giải pháp giảm thuế cho doanh nghiệp nhỏ để tạo việc làm",
+     "answer": "left"
+    },
+    {
+     "text": "\"Doanh nghiệp có doanh thu dưới 3 tỷ đồng áp dụng thuế suất 15%\"",
+     "answer": "right"
+    }
+   ],
+   "explain": "Chính sách là giải pháp; quy phạm là quy tắc xử sự cụ thể hóa giải pháp đó."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chính sách là tập hợp các {{giải pháp}} cụ thể của Nhà nước để giải quyết một hoặc một số {{vấn đề}} của thực tiễn.",
+   "bank_extra": [
+    "hình phạt",
+    "điều ước"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chính sách nhằm đạt được {{mục tiêu}} nhất định, phù hợp với chủ trương, {{đường lối}} của Đảng.",
+   "bank_extra": [
+    "lợi nhuận",
+    "điều lệ"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi dự án luật đều phải thực hiện quy trình xây dựng chính sách trước khi soạn thảo.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 27 chỉ bắt buộc với luật, pháp lệnh mới hoặc thay thế; luật sửa đổi có nội dung hạn chế quyền con người, quyền công dân; nghị quyết thí điểm của Quốc hội."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm chính sách và các nội dung của một chính sách.",
+   "model": "Tập hợp giải pháp cụ thể của Nhà nước để giải quyết vấn đề thực tiễn nhằm đạt mục tiêu, phù hợp chủ trương của Đảng (khoản 2 Điều 3); gồm vấn đề và nguyên nhân, mục tiêu, giải pháp, đối tượng tác động, giải pháp tối ưu (khoản 2 Điều 28).",
+   "keywords": [
+    "giải pháp",
+    "vấn đề",
+    "mục tiêu",
+    "đối tượng tác động"
+   ]
+  }
+ ]
+}

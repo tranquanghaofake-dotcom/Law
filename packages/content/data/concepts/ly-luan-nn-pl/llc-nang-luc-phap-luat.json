@@ -1,0 +1,118 @@
+{
+ "id": "llc-nang-luc-phap-luat",
+ "subject": "ly-luan-nn-pl",
+ "chapter": "v6",
+ "term": "Năng lực pháp luật của chủ thể",
+ "definition": "Năng lực pháp luật dân sự của cá nhân là khả năng của cá nhân có quyền dân sự và nghĩa vụ dân sự. Mọi cá nhân đều có năng lực pháp luật dân sự như nhau. Năng lực pháp luật dân sự của cá nhân có từ khi người đó sinh ra và chấm dứt khi người đó chết.",
+ "plain": "Lý luận chung: NĂNG LỰC PHÁP LUẬT là khả năng chủ thể ĐƯỢC HƯỞNG quyền và GÁNH VÁC nghĩa vụ pháp lý do pháp luật quy định — tiền đề của năng lực hành vi. Đặc điểm (theo BLDS): mọi cá nhân như nhau; có từ khi sinh, chấm dứt khi chết; không thể bị hạn chế trừ trường hợp luật định (Điều 18). Năng lực pháp luật + năng lực hành vi = NĂNG LỰC CHỦ THỂ. Trong các ngành luật khác, năng lực pháp luật có thể phát sinh muộn hơn (ví dụ năng lực pháp luật bầu cử từ 18 tuổi).",
+ "example": "Trẻ sơ sinh có năng lực pháp luật dân sự: có quyền thừa kế, quyền sở hữu tài sản — dù chưa tự thực hiện được.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, 2, 3 Điều 16 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "llc-nang-luc-hanh-vi",
+  "llc-quan-he-phap-luat",
+  "llc-phap-nhan"
+ ],
+ "keywords": [
+  "khả năng có quyền",
+  "nghĩa vụ",
+  "sinh ra",
+  "chết",
+  "như nhau"
+ ],
+ "note": "Bộ luật Dân sự 91/2015/QH13 có hiệu lực từ 01/01/2017; chưa có văn bản sửa đổi có hiệu lực.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Năng lực pháp luật dân sự của cá nhân có từ khi nào?",
+   "options": [
+    "Khi người đó sinh ra",
+    "Khi đủ 6 tuổi",
+    "Khi đủ 18 tuổi",
+    "Khi đăng ký thường trú"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 16.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 16 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Năng lực pháp luật dân sự là gì?",
+   "options": [
+    "Khả năng của cá nhân có quyền dân sự và nghĩa vụ dân sự",
+    "Khả năng bằng hành vi của mình xác lập quyền, nghĩa vụ",
+    "Khả năng chịu trách nhiệm hình sự",
+    "Khả năng lao động"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 16.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 16 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Năng lực pháp luật",
+   "right": "Năng lực hành vi",
+   "cases": [
+    {
+     "text": "Trẻ 2 tuổi có quyền sở hữu tài sản được tặng cho",
+     "answer": "left"
+    },
+    {
+     "text": "Người 20 tuổi tự ký hợp đồng mua nhà",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 16, 19 BLDS 2015."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Năng lực pháp luật dân sự của cá nhân là khả năng của cá nhân có {{quyền}} dân sự và {{nghĩa vụ}} dân sự.",
+   "bank_extra": [
+    "hành vi",
+    "tài sản"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Mọi cá nhân đều có năng lực pháp luật dân sự {{như nhau}}; năng lực này có từ khi sinh ra và chấm dứt khi người đó {{chết}}.",
+   "bank_extra": [
+    "khác nhau",
+    "đủ 18 tuổi"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người bị tâm thần không có năng lực pháp luật dân sự.",
+   "answer": false,
+   "explain": "Sai. Năng lực pháp luật có từ khi sinh ra, như nhau với mọi cá nhân; bệnh tật chỉ ảnh hưởng năng lực hành vi."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm và đặc điểm năng lực pháp luật dân sự của cá nhân.",
+   "model": "Khả năng có quyền và nghĩa vụ dân sự; mọi cá nhân như nhau; có từ khi sinh, chấm dứt khi chết (Điều 16 BLDS 2015); là tiền đề của năng lực hành vi.",
+   "keywords": [
+    "quyền",
+    "nghĩa vụ",
+    "như nhau",
+    "sinh ra"
+   ]
+  }
+ ]
+}

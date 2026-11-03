@@ -1,0 +1,120 @@
+{
+ "id": "thoi-han-bao-ho-quyen-tac-gia",
+ "subject": "so-huu-tri-tue",
+ "chapter": "v3",
+ "term": "Thời hạn bảo hộ quyền tác giả",
+ "definition": "Quyền nhân thân quy định tại các khoản 1, 2 và 4 Điều 19 của Luật này được bảo hộ vô thời hạn. (…) Tác phẩm không thuộc loại hình quy định tại điểm a khoản này có thời hạn bảo hộ là suốt cuộc đời tác giả và năm mươi năm tiếp theo năm tác giả chết; trường hợp tác phẩm có đồng tác giả thì thời hạn bảo hộ chấm dứt vào năm thứ năm mươi sau năm đồng tác giả cuối cùng chết;",
+ "plain": "VÔ THỜI HẠN: đặt tên, đứng tên, toàn vẹn. CÓ THỜI HẠN (công bố + quyền tài sản): (a) điện ảnh, nhiếp ảnh, mỹ thuật ứng dụng, khuyết danh: 75 NĂM từ khi công bố lần đầu (chưa công bố trong 25 năm từ khi định hình: 100 NĂM từ khi định hình); (b) tác phẩm khác: SUỐT ĐỜI TÁC GIẢ + 50 NĂM sau năm tác giả chết (đồng tác giả: tính theo người chết sau cùng). Chấm dứt lúc 24 giờ ngày 31/12 của năm hết hạn.",
+ "example": "Nhà thơ mất năm 2000: quyền tài sản với tập thơ được bảo hộ đến hết 24 giờ ngày 31/12/2050.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, điểm b khoản 2 Điều 27 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quyen-nhan-than-tac-gia",
+  "tac-pham-duoc-bao-ho"
+ ],
+ "keywords": [
+  "vô thời hạn",
+  "suốt đời + 50 năm",
+  "75 năm điện ảnh, nhiếp ảnh",
+  "31 tháng 12"
+ ],
+ "note": "Điều 27 có nội dung được sửa đổi, bổ sung bởi Luật 36/2009/QH12 (hiệu lực 01/01/2010) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tác phẩm văn học thông thường có thời hạn bảo hộ quyền tài sản là bao lâu?",
+   "options": [
+    "Suốt cuộc đời tác giả và 50 năm tiếp theo năm tác giả chết",
+    "75 năm kể từ khi công bố",
+    "20 năm",
+    "Vô thời hạn"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 2 Điều 27.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 27 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tác phẩm nhiếp ảnh đã công bố có thời hạn bảo hộ quyền tài sản bao lâu?",
+   "options": [
+    "75 năm kể từ khi công bố lần đầu tiên",
+    "Suốt đời tác giả + 50 năm",
+    "100 năm",
+    "10 năm"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 2 Điều 27.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 27 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Vô thời hạn",
+   "right": "Có thời hạn",
+   "cases": [
+    {
+     "text": "Quyền đứng tên",
+     "answer": "left"
+    },
+    {
+     "text": "Quyền sao chép tác phẩm",
+     "answer": "right"
+    },
+    {
+     "text": "Quyền công bố tác phẩm",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 27."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tác phẩm không thuộc điểm a có thời hạn bảo hộ là suốt cuộc đời tác giả và {{năm mươi}} năm tiếp theo năm tác giả chết; tác phẩm có đồng tác giả thì tính theo năm đồng tác giả {{cuối cùng}} chết.",
+   "bank_extra": [
+    "bảy mươi",
+    "đầu tiên"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quyền nhân thân quy định tại các khoản 1, 2 và 4 Điều 19 được bảo hộ {{vô thời hạn}}.",
+   "bank_extra": [
+    "50 năm",
+    "75 năm"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quyền công bố tác phẩm được bảo hộ vô thời hạn.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 27: quyền công bố (khoản 3 Điều 19) có thời hạn như quyền tài sản."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày thời hạn bảo hộ quyền tác giả.",
+   "model": "Đặt tên, đứng tên, toàn vẹn: vô thời hạn (khoản 1); quyền công bố và quyền tài sản: điện ảnh, nhiếp ảnh, mỹ thuật ứng dụng, khuyết danh 75 năm từ công bố (chưa công bố 100 năm từ định hình); tác phẩm khác suốt đời tác giả + 50 năm; hết hạn 24 giờ ngày 31/12 (khoản 2 Điều 27).",
+   "keywords": [
+    "vô thời hạn",
+    "75 năm",
+    "50 năm",
+    "31/12"
+   ]
+  }
+ ]
+}

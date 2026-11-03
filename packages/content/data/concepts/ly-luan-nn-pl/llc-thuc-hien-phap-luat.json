@@ -1,0 +1,108 @@
+{
+ "id": "llc-thuc-hien-phap-luat",
+ "subject": "ly-luan-nn-pl",
+ "chapter": "v7",
+ "term": "Thực hiện pháp luật và các hình thức",
+ "definition": "Thực hiện pháp luật là quá trình hoạt động có mục đích nhằm hiện thực hóa nội dung các quy định pháp luật bằng hành vi hợp pháp của các chủ thể; gồm bốn hình thức: tuân thủ pháp luật, thi hành (chấp hành) pháp luật, sử dụng pháp luật và áp dụng pháp luật.",
+ "plain": "Bốn hình thức ứng với loại quy phạm: TUÂN THỦ — kiềm chế không làm điều pháp luật CẤM (không trộm cắp); THI HÀNH — chủ động làm điều pháp luật BẮT BUỘC (nộp thuế, đăng ký nghĩa vụ quân sự); SỬ DỤNG — thực hiện QUYỀN pháp luật cho phép, có thể không dùng (khởi kiện, kinh doanh); ÁP DỤNG — chủ thể CÓ THẨM QUYỀN ra quyết định cá biệt giải quyết vụ việc (tòa tuyên án, UBND cấp sổ đỏ). Ba hình thức đầu mọi chủ thể đều thực hiện; áp dụng chỉ do cơ quan, người có thẩm quyền. Thực hiện pháp luật được bảo đảm bằng biện pháp nhà nước.",
+ "example": "Người đi đường dừng đèn đỏ (tuân thủ); doanh nghiệp nộp thuế (thi hành); công dân nộp đơn kiện (sử dụng); tòa án xét xử (áp dụng).",
+ "source": {
+  "kind": "textbook",
+  "cite": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (Drive HLU/KÌ I NĂM I/LLCNN&PL/TÀI LIỆU ÔN THI LLC: VD8, VD9, VD11, VD12, VD13) và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "llc-ap-dung-phap-luat",
+  "llc-vi-pham-phap-luat",
+  "llc-quan-he-phap-luat"
+ ],
+ "keywords": [
+  "tuân thủ",
+  "thi hành",
+  "sử dụng",
+  "áp dụng",
+  "hành vi hợp pháp"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hình thức thực hiện pháp luật nào chỉ do chủ thể có thẩm quyền tiến hành?",
+   "options": [
+    "Áp dụng pháp luật",
+    "Tuân thủ pháp luật",
+    "Thi hành pháp luật",
+    "Sử dụng pháp luật"
+   ],
+   "answer": 0,
+   "explain": "VD12."
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Doanh nghiệp nộp thuế đúng hạn là hình thức nào?",
+   "options": [
+    "Thi hành pháp luật",
+    "Tuân thủ pháp luật",
+    "Sử dụng pháp luật",
+    "Áp dụng pháp luật"
+   ],
+   "answer": 0,
+   "explain": "Chủ động thực hiện nghĩa vụ pháp luật bắt buộc."
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tuân thủ pháp luật",
+   "right": "Sử dụng pháp luật",
+   "cases": [
+    {
+     "text": "Không vượt đèn đỏ",
+     "answer": "left"
+    },
+    {
+     "text": "Nộp đơn khởi kiện đòi nợ",
+     "answer": "right"
+    }
+   ],
+   "explain": "VD12."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thực hiện pháp luật là quá trình hoạt động có mục đích nhằm hiện thực hóa nội dung pháp luật bằng {{hành vi hợp pháp}} của các {{chủ thể}}.",
+   "bank_extra": [
+    "chế tài",
+    "cơ quan nhà nước"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bốn hình thức thực hiện pháp luật: tuân thủ, {{thi hành}}, {{sử dụng}} và áp dụng pháp luật.",
+   "bank_extra": [
+    "giải thích",
+    "ban hành"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Sử dụng pháp luật là hình thức bắt buộc chủ thể phải thực hiện.",
+   "answer": false,
+   "explain": "Sai. Sử dụng pháp luật là thực hiện quyền được phép, chủ thể có thể không thực hiện."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm và bốn hình thức thực hiện pháp luật, cho ví dụ.",
+   "model": "Hiện thực hóa pháp luật bằng hành vi hợp pháp; tuân thủ (không làm điều cấm), thi hành (làm điều bắt buộc), sử dụng (thực hiện quyền), áp dụng (chủ thể có thẩm quyền ra quyết định cá biệt).",
+   "keywords": [
+    "tuân thủ",
+    "thi hành",
+    "sử dụng",
+    "áp dụng"
+   ]
+  }
+ ]
+}

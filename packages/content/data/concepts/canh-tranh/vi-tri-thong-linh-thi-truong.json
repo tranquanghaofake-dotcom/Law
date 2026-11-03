@@ -1,0 +1,116 @@
+{
+ "id": "vi-tri-thong-linh-thi-truong",
+ "subject": "canh-tranh",
+ "chapter": "v4",
+ "term": "Vị trí thống lĩnh thị trường",
+ "definition": "Doanh nghiệp được coi là có vị trí thống lĩnh thị trường nếu có sức mạnh thị trường đáng kể được xác định theo quy định tại Điều 26 của Luật này hoặc có thị phần từ 30% trở lên trên thị trường liên quan. Nhóm doanh nghiệp được coi là có vị trí thống lĩnh thị trường nếu cùng hành động gây tác động hạn chế cạnh tranh và có sức mạnh thị trường đáng kể được xác định theo quy định tại Điều 26 của Luật này hoặc có tổng thị phần thuộc một trong các trường hợp sau đây: a) Hai doanh nghiệp có tổng thị phần từ 50% trở lên trên thị trường liên quan; b) Ba doanh nghiệp có tổng thị phần từ 65% trở lên trên thị trường liên quan; c) Bốn doanh nghiệp có tổng thị phần từ 75% trở lên trên thị trường liên quan; d) Năm doanh nghiệp trở lên có tổng thị phần từ 85% trở lên trên thị trường liên quan.",
+ "plain": "Hai tiêu chí: SỨC MẠNH THỊ TRƯỜNG ĐÁNG KỂ (Điều 26 — điểm mới 2018) HOẶC THỊ PHẦN: một doanh nghiệp ≥ 30%; nhóm 2 ≥ 50%, 3 ≥ 65%, 4 ≥ 75%, 5 trở lên ≥ 85% và phải CÙNG HÀNH ĐỘNG gây tác động hạn chế cạnh tranh. Nhóm không bao gồm doanh nghiệp có thị phần DƯỚI 10% (khoản 3). VỊ TRÍ ĐỘC QUYỀN (Điều 25): không có doanh nghiệp nào cạnh tranh. Có vị trí thống lĩnh KHÔNG bị cấm; chỉ LẠM DỤNG mới bị cấm.",
+ "example": "Ba hãng hàng không có tổng thị phần 70% trên đường bay nội địa, cùng tăng phụ phí bất hợp lý: có thể bị coi là nhóm doanh nghiệp có vị trí thống lĩnh (ba doanh nghiệp ≥ 65%).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 24 Luật Cạnh tranh 2018",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "lam-dung-vi-tri-thong-linh",
+  "thi-phan",
+  "thi-truong-lien-quan"
+ ],
+ "keywords": [
+  "30% trở lên",
+  "sức mạnh thị trường đáng kể",
+  "50%, 65%, 75%, 85%",
+  "dưới 10% không tính"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Một doanh nghiệp có thị phần bao nhiêu trên thị trường liên quan thì được coi là có vị trí thống lĩnh?",
+   "options": [
+    "Từ 30% trở lên",
+    "Từ 50% trở lên",
+    "Từ 25% trở lên",
+    "Từ 65% trở lên"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 24.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 24 Luật Cạnh tranh 2018"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nhóm ba doanh nghiệp được coi là có vị trí thống lĩnh khi tổng thị phần từ bao nhiêu (và cùng hành động gây tác động hạn chế cạnh tranh)?",
+   "options": [
+    "65% trở lên",
+    "50% trở lên",
+    "75% trở lên",
+    "85% trở lên"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 2 Điều 24.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 24 Luật Cạnh tranh 2018"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Vị trí thống lĩnh",
+   "right": "Vị trí độc quyền",
+   "cases": [
+    {
+     "text": "Thị phần từ 30% trở lên",
+     "answer": "left"
+    },
+    {
+     "text": "Không có doanh nghiệp nào cạnh tranh",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 24, 25."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Doanh nghiệp được coi là có vị trí thống lĩnh thị trường nếu có sức mạnh thị trường {{đáng kể}} hoặc có thị phần từ {{30%}} trở lên trên thị trường liên quan.",
+   "bank_extra": [
+    "nhỏ",
+    "50%"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhóm doanh nghiệp có vị trí thống lĩnh không bao gồm doanh nghiệp có thị phần ít hơn {{10%}} trên thị trường liên quan.",
+   "bank_extra": [
+    "5%",
+    "20%"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Doanh nghiệp có vị trí thống lĩnh thị trường là vi phạm pháp luật cạnh tranh.",
+   "answer": false,
+   "explain": "Sai. Luật chỉ cấm hành vi lạm dụng vị trí thống lĩnh (Điều 27), không cấm việc có vị trí thống lĩnh."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày căn cứ xác định doanh nghiệp, nhóm doanh nghiệp có vị trí thống lĩnh thị trường.",
+   "model": "Doanh nghiệp có sức mạnh thị trường đáng kể (Điều 26) hoặc thị phần từ 30%; nhóm doanh nghiệp cùng hành động gây tác động hạn chế cạnh tranh và có sức mạnh đáng kể hoặc tổng thị phần: 2 DN ≥ 50%, 3 ≥ 65%, 4 ≥ 75%, 5 ≥ 85%; không tính doanh nghiệp dưới 10% (Điều 24).",
+   "keywords": [
+    "sức mạnh thị trường",
+    "30%",
+    "65%",
+    "10%"
+   ]
+  }
+ ]
+}

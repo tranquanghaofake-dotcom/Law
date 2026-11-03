@@ -1,0 +1,119 @@
+{
+ "id": "mua-ban-hang-hoa",
+ "subject": "thuong-mai",
+ "chapter": "v1",
+ "term": "Mua bán hàng hóa và hình thức hợp đồng",
+ "definition": "Mua bán hàng hóa là hoạt động thương mại, theo đó bên bán có nghĩa vụ giao hàng, chuyển quyền sở hữu hàng hóa cho bên mua và nhận thanh toán; bên mua có nghĩa vụ thanh toán cho bên bán, nhận hàng và quyền sở hữu hàng hóa theo thỏa thuận. (…) Hợp đồng mua bán hàng hóa được thể hiện bằng lời nói, bằng văn bản hoặc được xác lập bằng hành vi cụ thể. Đối với các loại hợp đồng mua bán hàng hóa mà pháp luật quy định phải được lập thành văn bản thì phải tuân theo các quy định đó.",
+ "plain": "Nghĩa vụ chính: bên bán GIAO HÀNG, CHUYỂN QUYỀN SỞ HỮU; bên mua THANH TOÁN, NHẬN HÀNG. Hình thức: LỜI NÓI, VĂN BẢN, HÀNH VI CỤ THỂ — trừ khi luật bắt buộc văn bản (ví dụ mua bán hàng hóa quốc tế phải bằng văn bản hoặc hình thức tương đương, Điều 27). Điện báo, telex, fax, thông điệp dữ liệu… có giá trị tương đương văn bản (khoản 15 Điều 3).",
+ "example": "Khách hàng gọi điện đặt 100 thùng nước, đại lý giao hàng và nhận tiền: hợp đồng mua bán hàng hóa bằng lời nói và hành vi, có hiệu lực.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 8 Điều 3, Điều 24 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hoat-dong-thuong-mai",
+  "chuyen-rui-ro",
+  "trach-nhiem-hang-khong-phu-hop"
+ ],
+ "keywords": [
+  "giao hàng, chuyển quyền sở hữu",
+  "thanh toán, nhận hàng",
+  "lời nói, văn bản, hành vi cụ thể"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hợp đồng mua bán hàng hóa có thể được thể hiện dưới hình thức nào?",
+   "options": [
+    "Lời nói, văn bản hoặc hành vi cụ thể",
+    "Chỉ văn bản",
+    "Chỉ văn bản công chứng",
+    "Chỉ hợp đồng điện tử"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 24.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 24 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nghĩa vụ chính của bên mua trong mua bán hàng hóa là gì?",
+   "options": [
+    "Thanh toán, nhận hàng và quyền sở hữu hàng hóa theo thỏa thuận",
+    "Giao hàng",
+    "Bảo hành hàng hóa",
+    "Vận chuyển hàng hóa cho bên bán"
+   ],
+   "answer": 0,
+   "explain": "Khoản 8 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 8 Điều 3 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Nghĩa vụ bên bán",
+   "right": "Nghĩa vụ bên mua",
+   "cases": [
+    {
+     "text": "Giao hàng, chuyển quyền sở hữu",
+     "answer": "left"
+    },
+    {
+     "text": "Thanh toán",
+     "answer": "right"
+    },
+    {
+     "text": "Nhận hàng",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 8 Điều 3."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bên bán có nghĩa vụ giao hàng, chuyển {{quyền sở hữu}} hàng hóa cho bên mua và nhận thanh toán; bên mua có nghĩa vụ {{thanh toán}}, nhận hàng.",
+   "bank_extra": [
+    "quyền sử dụng",
+    "bảo hành"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hợp đồng mua bán hàng hóa được thể hiện bằng lời nói, bằng văn bản hoặc được xác lập bằng {{hành vi cụ thể}}.",
+   "bank_extra": [
+    "quyết định hành chính",
+    "con dấu"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi hợp đồng mua bán hàng hóa giữa thương nhân đều phải lập bằng văn bản.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 24: có thể bằng lời nói, văn bản, hành vi; chỉ bắt buộc văn bản khi luật quy định."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm mua bán hàng hóa và hình thức hợp đồng mua bán hàng hóa.",
+   "model": "Mua bán hàng hóa: bên bán giao hàng, chuyển quyền sở hữu, nhận thanh toán; bên mua thanh toán, nhận hàng và quyền sở hữu (khoản 8 Điều 3); hợp đồng bằng lời nói, văn bản, hành vi cụ thể; luật bắt buộc văn bản thì theo luật (Điều 24).",
+   "keywords": [
+    "giao hàng",
+    "thanh toán",
+    "lời nói",
+    "văn bản"
+   ]
+  }
+ ]
+}

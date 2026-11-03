@@ -1,0 +1,116 @@
+{
+ "id": "nguyen-tac-bao-hiem-xa-hoi",
+ "subject": "an-sinh-xa-hoi",
+ "chapter": "v2",
+ "term": "Nguyên tắc bảo hiểm xã hội",
+ "definition": "Mức hưởng bảo hiểm xã hội bắt buộc và bảo hiểm xã hội tự nguyện được tính trên cơ sở mức đóng và thời gian đóng bảo hiểm xã hội; có chia sẻ giữa những người tham gia bảo hiểm xã hội theo quy định của Luật này. Mức đóng bảo hiểm xã hội bắt buộc được tính trên cơ sở tiền lương làm căn cứ đóng bảo hiểm xã hội bắt buộc. Mức đóng bảo hiểm xã hội tự nguyện được tính trên cơ sở thu nhập làm căn cứ đóng bảo hiểm xã hội tự nguyện do người tham gia lựa chọn.",
+ "plain": "Nguyên tắc cốt lõi: CÓ ĐÓNG – CÓ HƯỞNG (mức hưởng theo mức đóng, thời gian đóng) kết hợp CHIA SẺ (lấy số đông bù số ít). Thời gian đã hưởng BHXH một lần thì không tính lại (khoản 3). Quỹ quản lý tập trung, thống nhất, công khai, hạch toán độc lập theo quỹ thành phần (khoản 4). Thời gian đóng tối thiểu để xét lương hưu tính theo năm (khoản 6).",
+ "example": "Hai người cùng đóng 20 năm nhưng một người đóng trên mức lương cao hơn sẽ có lương hưu cao hơn (mức hưởng theo mức đóng); người ốm nhiều vẫn được chi trả từ quỹ chung (chia sẻ rủi ro).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, 2 Điều 5 Luật Bảo hiểm xã hội 2024 (VBHN 19/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bao-hiem/Van-ban-hop-nhat-19-VBHN-VPQH-2026-Luat-Bao-hiem-xa-hoi-696579.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "bao-hiem-xa-hoi",
+  "dieu-kien-huong-luong-huu"
+ ],
+ "keywords": [
+  "có đóng – có hưởng",
+  "chia sẻ",
+  "tiền lương làm căn cứ đóng",
+  "thu nhập do người tham gia lựa chọn"
+ ],
+ "note": "Luật Bảo hiểm xã hội 41/2024/QH15 có hiệu lực từ 01/7/2025, thay thế Luật Bảo hiểm xã hội 58/2014/QH13 (đề cương HLU còn dẫn luật 2014).",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Mức hưởng bảo hiểm xã hội được tính trên cơ sở nào?",
+   "options": [
+    "Mức đóng và thời gian đóng bảo hiểm xã hội",
+    "Nhu cầu của người hưởng",
+    "Tài sản của người hưởng",
+    "Quyết định của người sử dụng lao động"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 5.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 5 Luật Bảo hiểm xã hội 2024 (VBHN 19/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Mức đóng bảo hiểm xã hội tự nguyện được tính trên cơ sở gì?",
+   "options": [
+    "Thu nhập làm căn cứ đóng do người tham gia lựa chọn",
+    "Lương tối thiểu vùng bắt buộc",
+    "Tiền lương theo hợp đồng lao động",
+    "Mức do cơ quan BHXH ấn định"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 5.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 5 Luật Bảo hiểm xã hội 2024 (VBHN 19/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "BHXH bắt buộc",
+   "right": "BHXH tự nguyện",
+   "cases": [
+    {
+     "text": "Mức đóng tính trên tiền lương làm căn cứ đóng",
+     "answer": "left"
+    },
+    {
+     "text": "Mức đóng tính trên thu nhập do người tham gia lựa chọn",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 2 Điều 5."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Mức hưởng bảo hiểm xã hội được tính trên cơ sở {{mức đóng}} và {{thời gian đóng}} bảo hiểm xã hội.",
+   "bank_extra": [
+    "nhu cầu",
+    "độ tuổi"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Mức hưởng có {{chia sẻ}} giữa những người tham gia bảo hiểm xã hội.",
+   "bank_extra": [
+    "cạnh tranh",
+    "phân biệt"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thời gian đóng đã tính hưởng BHXH một lần vẫn được tính lại để hưởng lương hưu.",
+   "answer": false,
+   "explain": "Sai. Khoản 3 Điều 5: không được tính vào thời gian làm cơ sở tính hưởng."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các nguyên tắc cơ bản của bảo hiểm xã hội.",
+   "model": "Mức hưởng theo mức đóng, thời gian đóng, có chia sẻ; mức đóng bắt buộc theo tiền lương, tự nguyện theo thu nhập tự chọn; thời gian đã hưởng một lần không tính lại; quỹ quản lý tập trung, thống nhất, công khai (Điều 5).",
+   "keywords": [
+    "mức đóng",
+    "chia sẻ",
+    "tiền lương",
+    "quỹ"
+   ]
+  }
+ ]
+}

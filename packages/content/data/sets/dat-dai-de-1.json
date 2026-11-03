@@ -1,0 +1,139 @@
+{
+  "id": "dat-dai-de-1",
+  "group": "dat-dai",
+  "title": "Đề kiểm tra Luật Đất đai – Sở hữu, quản lý, thu hồi đất",
+  "subtitle": "10 câu theo đề cương HLU, vấn đề 1–4 (theo Luật Đất đai 2024)",
+  "updated": "2026-11-01",
+  "questions": [
+    {
+      "q": "Ai là chủ sở hữu đất đai ở Việt Nam?",
+      "options": [
+        "Người có sổ đỏ",
+        "Toàn dân, do Nhà nước đại diện chủ sở hữu",
+        "Ủy ban nhân dân",
+        "Nhà nước và người sử dụng đất đồng sở hữu"
+      ],
+      "answer": 1,
+      "explain": "Điều 12.",
+      "basis": "Điều 12 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Van-ban-hop-nhat-44-VBHN-VPQH-2026-Luat-Dat-dai-699655.aspx"
+    },
+    {
+      "q": "Đất đai được phân loại theo tiêu chí nào?",
+      "options": [
+        "Mục đích sử dụng",
+        "Giá đất",
+        "Diện tích",
+        "Vị trí"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 9.",
+      "basis": "Điều 9 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Van-ban-hop-nhat-44-VBHN-VPQH-2026-Luat-Dat-dai-699655.aspx"
+    },
+    {
+      "q": "Quyền nào thuộc Nhà nước với tư cách đại diện chủ sở hữu?",
+      "options": [
+        "Thế chấp quyền sử dụng đất của dân",
+        "Quyết định thu hồi đất, trưng dụng đất",
+        "Thừa kế quyền sử dụng đất",
+        "Góp vốn bằng quyền sử dụng đất"
+      ],
+      "answer": 1,
+      "explain": "Điều 13.",
+      "basis": "Điều 13 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Van-ban-hop-nhat-44-VBHN-VPQH-2026-Luat-Dat-dai-699655.aspx"
+    },
+    {
+      "q": "Cá nhân trực tiếp sản xuất nông nghiệp được giao đất nông nghiệp trong hạn mức theo hình thức nào?",
+      "options": [
+        "Giao đất không thu tiền sử dụng đất",
+        "Giao đất có thu tiền",
+        "Cho thuê đất hằng năm",
+        "Đấu giá"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 118.",
+      "basis": "Điều 118 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Van-ban-hop-nhat-44-VBHN-VPQH-2026-Luat-Dat-dai-699655.aspx"
+    },
+    {
+      "q": "Nhà nước thu hồi đất để phát triển kinh tế – xã hội vì lợi ích quốc gia, công cộng khi nào?",
+      "options": [
+        "Khi nhà đầu tư đề nghị",
+        "Trong trường hợp thật cần thiết và thuộc các trường hợp liệt kê tại Điều 79",
+        "Khi giá đất tăng",
+        "Bất kỳ lúc nào"
+      ],
+      "answer": 1,
+      "explain": "Điều 79.",
+      "basis": "Điều 79 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Van-ban-hop-nhat-44-VBHN-VPQH-2026-Luat-Dat-dai-699655.aspx"
+    },
+    {
+      "q": "Bồi thường về đất khi thu hồi được thực hiện ưu tiên bằng gì?",
+      "options": [
+        "Tiền theo giá do nhà đầu tư đưa ra",
+        "Giao đất có cùng mục đích sử dụng với loại đất thu hồi",
+        "Cổ phiếu",
+        "Không bồi thường"
+      ],
+      "answer": 1,
+      "explain": "Khoản 2 Điều 91.",
+      "basis": "Điều 91 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Van-ban-hop-nhat-44-VBHN-VPQH-2026-Luat-Dat-dai-699655.aspx"
+    },
+    {
+      "q": "Khi bồi thường bằng tiền, giá đất cụ thể được xác định tại thời điểm nào?",
+      "options": [
+        "Thông báo thu hồi",
+        "Phê duyệt phương án bồi thường, hỗ trợ, tái định cư",
+        "Khởi công dự án",
+        "Cấp sổ đỏ"
+      ],
+      "answer": 1,
+      "explain": "Khoản 2 Điều 91.",
+      "basis": "Điều 91 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Van-ban-hop-nhat-44-VBHN-VPQH-2026-Luat-Dat-dai-699655.aspx"
+    },
+    {
+      "q": "Đăng ký đất đai có bắt buộc không?",
+      "options": [
+        "Tự nguyện",
+        "Bắt buộc đối với người sử dụng đất và người được giao đất để quản lý",
+        "Chỉ bắt buộc ở đô thị",
+        "Chỉ khi bán đất"
+      ],
+      "answer": 1,
+      "explain": "Khoản 1 Điều 131.",
+      "basis": "Điều 131 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Van-ban-hop-nhat-44-VBHN-VPQH-2026-Luat-Dat-dai-699655.aspx"
+    },
+    {
+      "q": "Đăng ký nhà ở gắn liền với đất thì thế nào?",
+      "options": [
+        "Bắt buộc",
+        "Theo yêu cầu của chủ sở hữu",
+        "Bị cấm",
+        "Chỉ khi thế chấp"
+      ],
+      "answer": 1,
+      "explain": "Khoản 2 Điều 131.",
+      "basis": "Điều 131 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Van-ban-hop-nhat-44-VBHN-VPQH-2026-Luat-Dat-dai-699655.aspx"
+    },
+    {
+      "q": "Giấy chứng nhận quyền sử dụng đất có bản chất gì?",
+      "options": [
+        "Văn bản xác lập quyền sở hữu đất",
+        "Chứng thư pháp lý để Nhà nước xác nhận quyền hợp pháp",
+        "Hợp đồng",
+        "Giấy phép xây dựng"
+      ],
+      "answer": 1,
+      "explain": "Khoản 21 Điều 3.",
+      "basis": "Điều 3 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Van-ban-hop-nhat-44-VBHN-VPQH-2026-Luat-Dat-dai-699655.aspx"
+    }
+  ]
+}

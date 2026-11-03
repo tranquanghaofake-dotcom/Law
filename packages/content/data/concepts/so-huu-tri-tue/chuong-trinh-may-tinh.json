@@ -1,0 +1,116 @@
+{
+ "id": "chuong-trinh-may-tinh",
+ "subject": "so-huu-tri-tue",
+ "chapter": "v2",
+ "term": "Chương trình máy tính",
+ "definition": "Chương trình máy tính là tập hợp các chỉ dẫn được thể hiện dưới dạng lệnh, mã, lược đồ hoặc dạng khác, khi gắn vào một phương tiện, thiết bị được vận hành bằng ngôn ngữ lập trình máy tính thì có khả năng làm cho máy tính hoặc thiết bị thực hiện được công việc hoặc đạt được kết quả cụ thể. Chương trình máy tính được bảo hộ như tác phẩm văn học, dù được thể hiện dưới dạng mã nguồn hay mã máy.",
+ "plain": "Phần mềm được bảo hộ theo QUYỀN TÁC GIẢ \"như tác phẩm văn học\" (Hiệp định TRIPS), cả MÃ NGUỒN lẫn MÃ MÁY. Người sử dụng hợp pháp được làm MỘT BẢN SAO DỰ PHÒNG, không chuyển giao cho người khác. Chương trình máy tính \"tự thân\" KHÔNG được bảo hộ dưới danh nghĩa SÁNG CHẾ (khoản 2 Điều 59). Liên hệ người học lập trình: code bạn viết được bảo hộ tự động.",
+ "example": "Bạn viết một ứng dụng web học luật: mã nguồn được bảo hộ quyền tác giả ngay khi viết ra, không cần đăng ký; người khác sao chép nguyên mã để bán là xâm phạm.",
+ "source": {
+  "kind": "statute",
+  "cite": "Đoạn 1 khoản 1 Điều 22 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tac-pham-duoc-bao-ho",
+  "sang-che"
+ ],
+ "keywords": [
+  "tập hợp chỉ dẫn",
+  "mã nguồn hay mã máy",
+  "bảo hộ như tác phẩm văn học",
+  "bản sao dự phòng"
+ ],
+ "note": "Điều 22 có nội dung được sửa đổi, bổ sung bởi Luật 07/2022/QH15 (hiệu lực 01/01/2023) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chương trình máy tính được bảo hộ như loại tác phẩm nào?",
+   "options": [
+    "Tác phẩm văn học",
+    "Tác phẩm mỹ thuật",
+    "Sáng chế",
+    "Kiểu dáng công nghiệp"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 22.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 22 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chương trình máy tính có được bảo hộ dưới danh nghĩa sáng chế không?",
+   "options": [
+    "Không, khoản 2 Điều 59 loại trừ",
+    "Có, luôn luôn",
+    "Có nếu có tính mới",
+    "Có nếu đăng ký ở nước ngoài"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 59.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 59 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quyền tác giả",
+   "right": "Không được bảo hộ dưới danh nghĩa sáng chế",
+   "cases": [
+    {
+     "text": "Mã nguồn một phần mềm",
+     "answer": "left"
+    },
+    {
+     "text": "Chương trình máy tính (với danh nghĩa sáng chế)",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 22, 59."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chương trình máy tính được bảo hộ như tác phẩm {{văn học}}, dù được thể hiện dưới dạng mã nguồn hay {{mã máy}}.",
+   "bank_extra": [
+    "khoa học công nghệ",
+    "phần cứng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chương trình máy tính là tập hợp các {{chỉ dẫn}} được thể hiện dưới dạng lệnh, mã, lược đồ hoặc dạng khác.",
+   "bank_extra": [
+    "thiết bị",
+    "dữ liệu thô"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mã máy (mã nhị phân) của phần mềm không được bảo hộ quyền tác giả, chỉ mã nguồn được bảo hộ.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 22: dù dưới dạng mã nguồn hay mã máy."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quy định về bảo hộ chương trình máy tính.",
+   "model": "Chương trình máy tính là tập hợp chỉ dẫn dưới dạng lệnh, mã, lược đồ… làm máy tính thực hiện công việc; được bảo hộ như tác phẩm văn học dù ở dạng mã nguồn hay mã máy (khoản 1 Điều 22); không bảo hộ dưới danh nghĩa sáng chế (Điều 59).",
+   "keywords": [
+    "chỉ dẫn",
+    "văn học",
+    "mã nguồn",
+    "sáng chế"
+   ]
+  }
+ ]
+}

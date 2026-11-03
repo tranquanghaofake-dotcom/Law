@@ -1,0 +1,119 @@
+{
+ "id": "doanh-nghiep-tu-nhan",
+ "subject": "thuong-mai-1",
+ "chapter": "v2",
+ "term": "Doanh nghiệp tư nhân",
+ "definition": "Doanh nghiệp tư nhân là doanh nghiệp do một cá nhân làm chủ và tự chịu trách nhiệm bằng toàn bộ tài sản của mình về mọi hoạt động của doanh nghiệp. Doanh nghiệp tư nhân không được phát hành bất kỳ loại chứng khoán nào. Mỗi cá nhân chỉ được quyền thành lập một doanh nghiệp tư nhân. Chủ doanh nghiệp tư nhân không được đồng thời là chủ hộ kinh doanh, thành viên hợp danh của công ty hợp danh.",
+ "plain": "Đặc điểm: MỘT CÁ NHÂN làm chủ; TRÁCH NHIỆM VÔ HẠN (bằng toàn bộ tài sản của chủ); KHÔNG CÓ TƯ CÁCH PHÁP NHÂN (không có tài sản độc lập, khoản 1 Điều 74 BLDS); KHÔNG phát hành chứng khoán; mỗi cá nhân chỉ lập MỘT DNTN; chủ DNTN không đồng thời là chủ hộ kinh doanh, thành viên hợp danh; DNTN không được góp vốn, mua cổ phần trong công ty khác (khoản 4).",
+ "example": "Doanh nghiệp tư nhân của ông A nợ ngân hàng 5 tỷ, tài sản doanh nghiệp chỉ còn 2 tỷ: ông A phải trả phần còn lại bằng tài sản riêng (kể cả nhà ở).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1–3 Điều 188 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "doanh-nghiep",
+  "cong-ty-hop-danh"
+ ],
+ "keywords": [
+  "một cá nhân làm chủ",
+  "toàn bộ tài sản",
+  "không phát hành chứng khoán",
+  "mỗi cá nhân một DNTN"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chủ doanh nghiệp tư nhân chịu trách nhiệm thế nào về hoạt động của doanh nghiệp?",
+   "options": [
+    "Bằng toàn bộ tài sản của mình",
+    "Trong phạm vi vốn đầu tư",
+    "Trong phạm vi vốn điều lệ",
+    "Không chịu trách nhiệm"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 188.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 188 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Một cá nhân được thành lập bao nhiêu doanh nghiệp tư nhân?",
+   "options": [
+    "Một",
+    "Hai",
+    "Không giới hạn",
+    "Ba"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 188.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 188 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Doanh nghiệp tư nhân",
+   "right": "Công ty TNHH một thành viên (chủ là cá nhân)",
+   "cases": [
+    {
+     "text": "Chủ chịu trách nhiệm vô hạn",
+     "answer": "left"
+    },
+    {
+     "text": "Chủ chịu trách nhiệm trong phạm vi vốn điều lệ",
+     "answer": "right"
+    },
+    {
+     "text": "Không có tư cách pháp nhân",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 74, 188."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Doanh nghiệp tư nhân là doanh nghiệp do {{một cá nhân}} làm chủ và tự chịu trách nhiệm bằng {{toàn bộ tài sản}} của mình về mọi hoạt động của doanh nghiệp.",
+   "bank_extra": [
+    "hai cá nhân",
+    "vốn góp"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Doanh nghiệp tư nhân không được phát hành bất kỳ loại {{chứng khoán}} nào.",
+   "bank_extra": [
+    "hóa đơn",
+    "hợp đồng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chủ doanh nghiệp tư nhân có thể đồng thời là thành viên hợp danh của công ty hợp danh.",
+   "answer": false,
+   "explain": "Sai. Khoản 3 Điều 188 cấm."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày đặc điểm pháp lý của doanh nghiệp tư nhân.",
+   "model": "Do một cá nhân làm chủ, chịu trách nhiệm bằng toàn bộ tài sản (khoản 1); không phát hành chứng khoán (khoản 2); mỗi cá nhân một DNTN, chủ không đồng thời là chủ hộ kinh doanh, thành viên hợp danh (khoản 3); không góp vốn vào công ty khác (khoản 4 Điều 188); không có tư cách pháp nhân.",
+   "keywords": [
+    "một cá nhân",
+    "toàn bộ tài sản",
+    "chứng khoán",
+    "một doanh nghiệp"
+   ]
+  }
+ ]
+}

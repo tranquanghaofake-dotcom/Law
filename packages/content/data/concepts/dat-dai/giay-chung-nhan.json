@@ -1,0 +1,114 @@
+{
+ "id": "giay-chung-nhan",
+ "subject": "dat-dai",
+ "chapter": "v4",
+ "term": "Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất",
+ "definition": "Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất là chứng thư pháp lý để Nhà nước xác nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất hợp pháp của người có quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất.",
+ "plain": "Giấy chứng nhận (thường gọi \"sổ đỏ\", \"sổ hồng\") là CHỨNG THƯ PHÁP LÝ — xác nhận quyền, KHÔNG tạo ra quyền. Là điều kiện để thực hiện các quyền chuyển nhượng, thế chấp… (điểm a khoản 1 Điều 45). Cấp cho người có giấy tờ về quyền sử dụng đất (Điều 137: giấy tờ trước 15/10/1993 không phải nộp tiền sử dụng đất…) và không có giấy tờ nhưng sử dụng ổn định (Điều 138). Các loại giấy chứng nhận cấp trước đây vẫn có giá trị pháp lý.",
+ "example": "Gia đình có giấy tờ giao đất của chính quyền trước năm 1993, sử dụng ổn định: được cấp Giấy chứng nhận và không phải nộp tiền sử dụng đất (khoản 1 Điều 137).",
+ "source": {
+  "kind": "statute",
+  "cite": "Đoạn 1 khoản 21 Điều 3 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Van-ban-hop-nhat-44-VBHN-VPQH-2026-Luat-Dat-dai-699655.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "dang-ky-dat-dai",
+  "dieu-kien-thuc-hien-quyen"
+ ],
+ "keywords": [
+  "chứng thư pháp lý",
+  "Nhà nước xác nhận",
+  "quyền sử dụng đất hợp pháp"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Giấy chứng nhận quyền sử dụng đất có bản chất pháp lý là gì?",
+   "options": [
+    "Chứng thư pháp lý để Nhà nước xác nhận quyền hợp pháp",
+    "Văn bản tạo ra quyền sở hữu đất",
+    "Hợp đồng giữa Nhà nước và người dân",
+    "Giấy phép xây dựng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 21 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 21 Điều 3 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hộ gia đình, cá nhân đang sử dụng ổn định có giấy tờ về quyền sử dụng đất lập trước ngày 15/10/1993 thì sao?",
+   "options": [
+    "Được cấp Giấy chứng nhận và không phải nộp tiền sử dụng đất",
+    "Phải nộp 100% tiền sử dụng đất",
+    "Không được cấp",
+    "Phải đấu giá lại"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 137.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 137 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Giấy chứng nhận",
+   "right": "Hợp đồng chuyển nhượng",
+   "cases": [
+    {
+     "text": "Nhà nước xác nhận quyền hợp pháp",
+     "answer": "left"
+    },
+    {
+     "text": "Thỏa thuận chuyển giao quyền giữa các bên",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 3, 45."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Giấy chứng nhận là {{chứng thư pháp lý}} để Nhà nước {{xác nhận}} quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất hợp pháp.",
+   "bank_extra": [
+    "hợp đồng",
+    "trao tặng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Giấy chứng nhận xác nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất {{hợp pháp}}.",
+   "bank_extra": [
+    "tạm thời",
+    "dự kiến"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Giấy chứng nhận là văn bản xác nhận quyền sở hữu đất của cá nhân.",
+   "answer": false,
+   "explain": "Sai. Xác nhận quyền sử dụng đất; đất thuộc sở hữu toàn dân (Điều 12)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất.",
+   "model": "Là chứng thư pháp lý để Nhà nước xác nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất hợp pháp của người có quyền (khoản 21 Điều 3); là điều kiện để thực hiện các quyền chuyển nhượng, thế chấp (Điều 45).",
+   "keywords": [
+    "chứng thư pháp lý",
+    "xác nhận",
+    "hợp pháp",
+    "điều kiện"
+   ]
+  }
+ ]
+}

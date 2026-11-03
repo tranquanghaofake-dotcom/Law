@@ -1,0 +1,121 @@
+{
+ "id": "tac-pham-duoc-bao-ho",
+ "subject": "so-huu-tri-tue",
+ "chapter": "v2",
+ "term": "Tác phẩm được bảo hộ quyền tác giả",
+ "definition": "Tác phẩm phái sinh chỉ được bảo hộ theo quy định tại khoản 1 Điều này nếu không gây phương hại đến quyền tác giả đối với tác phẩm được dùng để làm tác phẩm phái sinh.",
+ "plain": "Khoản 1 Điều 14 liệt kê: tác phẩm văn học, khoa học, sách giáo khoa, giáo trình; bài giảng, bài phát biểu; báo chí; âm nhạc; sân khấu; điện ảnh; mỹ thuật, mỹ thuật ứng dụng; nhiếp ảnh; kiến trúc; bản họa đồ, sơ đồ, bản đồ; văn học nghệ thuật dân gian; CHƯƠNG TRÌNH MÁY TÍNH, SƯU TẬP DỮ LIỆU. Tác phẩm phải do tác giả TRỰC TIẾP SÁNG TẠO, không sao chép (khoản 3). TÁC PHẨM PHÁI SINH (dịch, phóng tác, cải biên…) chỉ được bảo hộ nếu không phương hại tác phẩm gốc. KHÔNG bảo hộ (Điều 15): tin tức thời sự thuần túy, văn bản quy phạm pháp luật, quy trình, phương pháp, số liệu.",
+ "example": "Bản dịch tiếng Việt một cuốn tiểu thuyết nước ngoài là tác phẩm phái sinh; chỉ được bảo hộ nếu dịch có phép của chủ sở hữu quyền tác giả tác phẩm gốc.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 2 Điều 14 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "chu-so-huu-quyen-tac-gia",
+  "chuong-trinh-may-tinh",
+  "can-cu-phat-sinh-quyen-shtt"
+ ],
+ "keywords": [
+  "tác phẩm phái sinh",
+  "không gây phương hại",
+  "trực tiếp sáng tạo",
+  "chương trình máy tính"
+ ],
+ "note": "Điều 14 có nội dung được sửa đổi, bổ sung bởi Luật 36/2009/QH12 (hiệu lực 01/01/2010); Luật 07/2022/QH15 (hiệu lực 01/01/2023) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tác phẩm phái sinh được bảo hộ khi nào?",
+   "options": [
+    "Khi không gây phương hại đến quyền tác giả đối với tác phẩm gốc",
+    "Trong mọi trường hợp",
+    "Chỉ khi đăng ký",
+    "Không bao giờ"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 14.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 14 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đối tượng nào được bảo hộ là tác phẩm theo khoản 1 Điều 14?",
+   "options": [
+    "Chương trình máy tính",
+    "Văn bản quy phạm pháp luật",
+    "Tin tức thời sự thuần túy",
+    "Số liệu"
+   ],
+   "answer": 0,
+   "explain": "Điểm m khoản 1 Điều 14; Điều 15.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 14, Điều 15 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Được bảo hộ quyền tác giả",
+   "right": "Không được bảo hộ quyền tác giả",
+   "cases": [
+    {
+     "text": "Tác phẩm nhiếp ảnh",
+     "answer": "left"
+    },
+    {
+     "text": "Văn bản luật",
+     "answer": "right"
+    },
+    {
+     "text": "Bản đồ",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 14, 15."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tác phẩm {{phái sinh}} chỉ được bảo hộ nếu không gây {{phương hại}} đến quyền tác giả đối với tác phẩm được dùng để làm tác phẩm đó.",
+   "bank_extra": [
+    "gốc",
+    "lợi ích"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chương trình máy tính, sưu tập {{dữ liệu}} là loại hình tác phẩm được bảo hộ.",
+   "bank_extra": [
+    "phần cứng",
+    "thuật toán"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Bản dịch trái phép một cuốn sách vẫn được bảo hộ như tác phẩm phái sinh.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 14: chỉ bảo hộ nếu không gây phương hại quyền tác giả tác phẩm gốc."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các loại hình tác phẩm được bảo hộ và điều kiện bảo hộ tác phẩm phái sinh.",
+   "model": "Khoản 1 Điều 14: tác phẩm văn học, khoa học, bài giảng, báo chí, âm nhạc, sân khấu, điện ảnh, mỹ thuật, nhiếp ảnh, kiến trúc, bản đồ, dân gian, chương trình máy tính, sưu tập dữ liệu; tác phẩm phái sinh được bảo hộ nếu không phương hại tác phẩm gốc (khoản 2); phải do tác giả trực tiếp sáng tạo (khoản 3).",
+   "keywords": [
+    "văn học",
+    "chương trình máy tính",
+    "phái sinh",
+    "phương hại"
+   ]
+  }
+ ]
+}

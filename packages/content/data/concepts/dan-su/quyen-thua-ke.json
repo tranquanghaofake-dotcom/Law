@@ -1,0 +1,116 @@
+{
+ "id": "quyen-thua-ke",
+ "subject": "dan-su",
+ "chapter": "v11",
+ "term": "Quyền thừa kế và thời điểm, địa điểm mở thừa kế",
+ "definition": "Cá nhân có quyền lập di chúc để định đoạt tài sản của mình; để lại tài sản của mình cho người thừa kế theo pháp luật; hưởng di sản theo di chúc hoặc theo pháp luật. (…) Thời điểm mở thừa kế là thời điểm người có tài sản chết. (…) Địa điểm mở thừa kế là nơi cư trú cuối cùng của người để lại di sản; nếu không xác định được nơi cư trú cuối cùng thì địa điểm mở thừa kế là nơi có toàn bộ di sản hoặc nơi có phần lớn di sản.",
+ "plain": "THỜI ĐIỂM mở thừa kế (người có tài sản chết; nếu Tòa án tuyên bố chết thì là ngày được xác định trong quyết định) rất quan trọng: xác định người thừa kế (phải còn sống vào thời điểm đó, Điều 613), di sản, thời hiệu. ĐỊA ĐIỂM: nơi cư trú cuối cùng; không xác định được thì nơi có toàn bộ hoặc phần lớn di sản. Mọi cá nhân bình đẳng về quyền thừa kế (Điều 610).",
+ "example": "Ông A chết ngày 1/3/2026 tại nhà ở Hà Nội: thời điểm mở thừa kế là 1/3/2026, địa điểm là nơi cư trú cuối cùng của ông ở Hà Nội; thời hiệu chia di sản tính từ ngày này.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 609, khoản 1, khoản 2 Điều 611 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "di-chuc",
+  "thua-ke-theo-phap-luat",
+  "thoi-hieu-thua-ke"
+ ],
+ "keywords": [
+  "lập di chúc",
+  "thời điểm người có tài sản chết",
+  "nơi cư trú cuối cùng",
+  "bình đẳng"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thời điểm mở thừa kế là khi nào?",
+   "options": [
+    "Thời điểm người có tài sản chết",
+    "Thời điểm công bố di chúc",
+    "Thời điểm chia di sản",
+    "Thời điểm khởi kiện"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 611.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 611 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nếu không xác định được nơi cư trú cuối cùng của người để lại di sản thì địa điểm mở thừa kế ở đâu?",
+   "options": [
+    "Nơi có toàn bộ di sản hoặc nơi có phần lớn di sản",
+    "Nơi người thừa kế cư trú",
+    "Trụ sở Tòa án nhân dân tối cao",
+    "Nơi người để lại di sản sinh ra"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 611.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 611 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thời điểm mở thừa kế",
+   "right": "Địa điểm mở thừa kế",
+   "cases": [
+    {
+     "text": "Thời điểm người có tài sản chết",
+     "answer": "left"
+    },
+    {
+     "text": "Nơi cư trú cuối cùng của người để lại di sản",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 611."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thời điểm mở thừa kế là thời điểm người có tài sản {{chết}}. Địa điểm mở thừa kế là nơi {{cư trú cuối cùng}} của người để lại di sản.",
+   "bank_extra": [
+    "lập di chúc",
+    "sinh ra"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người thừa kế là cá nhân phải là người còn sống vào thời điểm {{mở thừa kế}}.",
+   "bank_extra": [
+    "lập di chúc",
+    "chia di sản"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người con được thành thai trước khi cha chết, sinh ra và còn sống sau thời điểm mở thừa kế vẫn được hưởng thừa kế.",
+   "answer": true,
+   "explain": "Đúng. Điều 613 Bộ luật Dân sự 2015."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quyền thừa kế, thời điểm và địa điểm mở thừa kế.",
+   "model": "Cá nhân có quyền lập di chúc, để lại tài sản cho người thừa kế theo pháp luật, hưởng di sản theo di chúc hoặc pháp luật (Điều 609); bình đẳng (Điều 610); thời điểm mở thừa kế là thời điểm người có tài sản chết; địa điểm là nơi cư trú cuối cùng, không xác định được thì nơi có toàn bộ hoặc phần lớn di sản (Điều 611).",
+   "keywords": [
+    "di chúc",
+    "người có tài sản chết",
+    "cư trú cuối cùng",
+    "phần lớn di sản"
+   ]
+  }
+ ]
+}

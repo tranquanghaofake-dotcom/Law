@@ -1,0 +1,117 @@
+{
+ "id": "bao-hiem-y-te",
+ "subject": "an-sinh-xa-hoi",
+ "chapter": "v4",
+ "term": "Bảo hiểm y tế và nguyên tắc bảo hiểm y tế",
+ "definition": "Bảo hiểm y tế là hình thức bảo hiểm bắt buộc được áp dụng đối với các đối tượng theo quy định của Luật này để chăm sóc sức khỏe, không vì mục đích lợi nhuận do Nhà nước tổ chức thực hiện. Bảo hiểm y tế toàn dân là việc các đối tượng quy định trong Luật này đều tham gia bảo hiểm y tế. (…) Bảo đảm chia sẻ rủi ro giữa những người tham gia bảo hiểm y tế. (…) Chi phí khám bệnh, chữa bệnh bảo hiểm y tế do quỹ bảo hiểm y tế và người tham gia bảo hiểm y tế cùng chi trả.",
+ "plain": "Đặc điểm: BẮT BUỘC, KHÔNG VÌ LỢI NHUẬN, Nhà nước tổ chức; mục tiêu BẢO HIỂM Y TẾ TOÀN DÂN. Năm nhóm đối tượng (Điều 12): do người sử dụng lao động và người lao động đóng; do cơ quan BHXH đóng; do ngân sách nhà nước đóng; được ngân sách hỗ trợ mức đóng; tự đóng. Mức hưởng theo mức độ bệnh tật, nhóm đối tượng, thời gian tham gia (khoản 3 Điều 3), có CÙNG CHI TRẢ (khoản 4) — khác bảo hiểm sức khỏe thương mại (tự nguyện, vì lợi nhuận, theo Luật Kinh doanh bảo hiểm).",
+ "example": "Sinh viên tham gia BHYT học sinh, sinh viên: khám đúng tuyến được quỹ trả 80% chi phí trong phạm vi hưởng, phần còn lại tự trả (cùng chi trả).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, 2 Điều 2; khoản 1, 4 Điều 3 Luật Bảo hiểm y tế (VBHN 40/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bao-hiem/Van-ban-hop-nhat-40-VBHN-VPQH-2026-Luat-Bao-hiem-y-te-699508.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "muc-huong-bao-hiem-y-te",
+  "bao-hiem-xa-hoi",
+  "an-sinh-xa-hoi"
+ ],
+ "keywords": [
+  "bắt buộc",
+  "không vì mục đích lợi nhuận",
+  "toàn dân",
+  "cùng chi trả"
+ ],
+ "note": "Luật Bảo hiểm y tế 25/2008/QH12 được sửa đổi nhiều lần, gần nhất bởi Luật 51/2024/QH15 (hiệu lực 01/7/2025) và Luật Phòng bệnh 114/2025/QH15 (hiệu lực 01/7/2026); văn bản hợp nhất 40/VBHN-VPQH 2026.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Bảo hiểm y tế theo Luật Bảo hiểm y tế có đặc điểm nào?",
+   "options": [
+    "Bắt buộc, không vì mục đích lợi nhuận, do Nhà nước tổ chức thực hiện",
+    "Tự nguyện, vì lợi nhuận",
+    "Do doanh nghiệp bảo hiểm tổ chức",
+    "Chỉ dành cho người lao động"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 2.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 2 Luật Bảo hiểm y tế (VBHN 40/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chi phí khám bệnh, chữa bệnh bảo hiểm y tế do ai chi trả?",
+   "options": [
+    "Quỹ bảo hiểm y tế và người tham gia cùng chi trả",
+    "Chỉ quỹ bảo hiểm y tế",
+    "Chỉ người bệnh",
+    "Chỉ ngân sách nhà nước"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 3 Luật Bảo hiểm y tế (VBHN 40/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Bảo hiểm y tế",
+   "right": "Bảo hiểm sức khỏe thương mại",
+   "cases": [
+    {
+     "text": "Không vì mục đích lợi nhuận",
+     "answer": "left"
+    },
+    {
+     "text": "Doanh nghiệp bảo hiểm kinh doanh vì lợi nhuận",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 2 Luật BHYT."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bảo hiểm y tế là hình thức bảo hiểm {{bắt buộc}} để chăm sóc sức khỏe, không vì mục đích {{lợi nhuận}} do Nhà nước tổ chức thực hiện.",
+   "bank_extra": [
+    "tự nguyện",
+    "công ích"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bảo hiểm y tế {{toàn dân}} là việc các đối tượng quy định trong Luật này đều {{tham gia}} bảo hiểm y tế.",
+   "bank_extra": [
+    "tự chọn",
+    "được miễn"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người tham gia BHYT luôn được quỹ chi trả 100% chi phí khám chữa bệnh.",
+   "answer": false,
+   "explain": "Sai. Khoản 4 Điều 3 và Điều 22: có cùng chi trả; mức hưởng 100%, 95% hoặc 80% tùy đối tượng, trường hợp."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm và nguyên tắc của bảo hiểm y tế.",
+   "model": "Hình thức bảo hiểm bắt buộc để chăm sóc sức khỏe, không vì lợi nhuận, do Nhà nước tổ chức (khoản 1 Điều 2); nguyên tắc: chia sẻ rủi ro; mức đóng theo tỷ lệ tiền lương, lương hưu, trợ cấp hoặc mức tham chiếu; mức hưởng theo mức độ bệnh tật, nhóm đối tượng; cùng chi trả; quỹ quản lý tập trung (Điều 3).",
+   "keywords": [
+    "bắt buộc",
+    "lợi nhuận",
+    "chia sẻ rủi ro",
+    "cùng chi trả"
+   ]
+  }
+ ]
+}

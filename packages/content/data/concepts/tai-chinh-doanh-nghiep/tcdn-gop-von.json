@@ -1,0 +1,117 @@
+{
+ "id": "tcdn-gop-von",
+ "subject": "tai-chinh-doanh-nghiep",
+ "chapter": "v2",
+ "term": "Góp vốn và tài sản góp vốn",
+ "definition": "Góp vốn là việc góp tài sản để tạo thành vốn điều lệ của công ty, bao gồm góp vốn để thành lập công ty hoặc góp thêm vốn điều lệ của công ty đã được thành lập. (…) Tài sản góp vốn là Đồng Việt Nam, ngoại tệ tự do chuyển đổi, vàng, quyền sử dụng đất, quyền sở hữu trí tuệ, công nghệ, bí quyết kỹ thuật, tài sản khác có thể định giá được bằng Đồng Việt Nam.",
+ "plain": "Góp vốn: (1) khi THÀNH LẬP hoặc (2) GÓP THÊM vào công ty đã thành lập. Tài sản góp vốn rất rộng: tiền đồng, ngoại tệ tự do chuyển đổi, vàng, quyền sử dụng đất, quyền sở hữu trí tuệ, công nghệ, bí quyết kỹ thuật và tài sản khác ĐỊNH GIÁ ĐƯỢC bằng Đồng Việt Nam. Chỉ chủ sở hữu hợp pháp hoặc người có quyền sử dụng hợp pháp mới được dùng tài sản để góp (khoản 2 Điều 34).",
+ "example": "Ông C góp vốn vào công ty bằng quyền sử dụng một thửa đất và một bằng độc quyền sáng chế: cả hai đều là tài sản góp vốn hợp lệ, nhưng phải được định giá thành Đồng Việt Nam.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 18 Điều 4; khoản 1 Điều 34 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tcdn-von-dieu-le",
+  "tcdn-dinh-gia-tai-san-gop-von"
+ ],
+ "keywords": [
+  "tạo thành vốn điều lệ",
+  "góp thêm",
+  "quyền sử dụng đất",
+  "quyền sở hữu trí tuệ",
+  "định giá được"
+ ],
+ "note": "Luật Doanh nghiệp 59/2020/QH14 có hiệu lực từ 01/01/2021, thay thế Luật Doanh nghiệp 2014 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 03/2022/QH15 và Luật 76/2025/QH15 (hiệu lực 01/7/2025) — văn bản hợp nhất 67/VBHN-VPQH 2025.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tài sản nào có thể dùng để góp vốn theo khoản 1 Điều 34?",
+   "options": [
+    "Quyền sở hữu trí tuệ",
+    "Uy tín cá nhân không định giá được",
+    "Quyền bầu cử",
+    "Tài sản đang thuê của người khác không được phép"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 34.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 34 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai có quyền dùng tài sản để góp vốn?",
+   "options": [
+    "Chủ sở hữu hợp pháp hoặc người có quyền sử dụng hợp pháp tài sản",
+    "Bất kỳ ai đang giữ tài sản",
+    "Chỉ cổ đông sáng lập",
+    "Chỉ người có quốc tịch Việt Nam"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 34.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 34 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Là tài sản góp vốn hợp lệ",
+   "right": "Không phải tài sản góp vốn",
+   "cases": [
+    {
+     "text": "Bí quyết kỹ thuật định giá được bằng Đồng Việt Nam",
+     "answer": "left"
+    },
+    {
+     "text": "Tài sản mượn của người khác, không có quyền sử dụng hợp pháp để góp vốn",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1, 2 Điều 34."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Góp vốn là việc góp tài sản để tạo thành {{vốn điều lệ}} của công ty, bao gồm góp vốn để thành lập công ty hoặc góp {{thêm}} vốn điều lệ.",
+   "bank_extra": [
+    "vốn vay",
+    "bớt"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tài sản góp vốn gồm Đồng Việt Nam, ngoại tệ tự do chuyển đổi, {{vàng}}, quyền sử dụng đất, quyền sở hữu trí tuệ, công nghệ, bí quyết kỹ thuật, tài sản khác có thể {{định giá}} được bằng Đồng Việt Nam.",
+   "bank_extra": [
+    "bạc",
+    "cho thuê"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quyền sử dụng đất không được dùng để góp vốn vào doanh nghiệp.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 34 liệt kê quyền sử dụng đất là tài sản góp vốn."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm góp vốn và các loại tài sản góp vốn.",
+   "model": "Góp tài sản để tạo thành vốn điều lệ, khi thành lập hoặc góp thêm (khoản 18 Điều 4); tài sản gồm Đồng Việt Nam, ngoại tệ tự do chuyển đổi, vàng, quyền sử dụng đất, quyền sở hữu trí tuệ, công nghệ, bí quyết kỹ thuật, tài sản khác định giá được (khoản 1 Điều 34).",
+   "keywords": [
+    "vốn điều lệ",
+    "góp thêm",
+    "quyền sử dụng đất",
+    "định giá được"
+   ]
+  }
+ ]
+}

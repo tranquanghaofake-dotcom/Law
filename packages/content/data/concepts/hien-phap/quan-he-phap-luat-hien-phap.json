@@ -111,6 +111,13 @@
     "quan hệ chung",
     "sự kiện pháp lý"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người không quốc tịch có thể là chủ thể của quan hệ pháp luật Hiến pháp.",
+   "answer": true,
+   "explain": "Đúng. Hiến pháp 2013 dùng chủ thể \"mọi người\" cho nhiều quyền (ví dụ Điều 16, 19, 20); Luật Quốc tịch cũng điều chỉnh việc người không quốc tịch nhập quốc tịch Việt Nam (khoản 1 Điều 19). (Nhận định trong bộ câu hỏi ôn tập Luật Hiến pháp, Drive HLU.)"
   }
  ]
 }

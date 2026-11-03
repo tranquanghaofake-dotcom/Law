@@ -1,0 +1,116 @@
+{
+ "id": "nguyen-tac-quan-ly-thue",
+ "subject": "tai-chinh",
+ "chapter": "v13",
+ "term": "Nguyên tắc quản lý thuế",
+ "definition": "Quản lý thuế phải bảo đảm nguyên tắc công khai, minh bạch, bình đẳng, lấy người nộp thuế làm trung tâm phục vụ, bảo đảm quyền và lợi ích hợp pháp của người nộp thuế, nâng cao hiệu lực, hiệu quả quản lý thu ngân sách nhà nước. Người nộp thuế có nghĩa vụ nộp thuế, các khoản thu khác thuộc ngân sách nhà nước theo quy định của luật thuế và quy định của pháp luật.",
+ "plain": "Nguyên tắc cốt lõi: TỰ KHAI, TỰ TÍNH, TỰ NỘP (người nộp thuế tự xác định nghĩa vụ, trừ trường hợp cơ quan quản lý thuế tính, thông báo — khoản 2); BẢN CHẤT HOẠT ĐỘNG, GIAO DỊCH QUYẾT ĐỊNH NGHĨA VỤ THUẾ (khoản 4); lấy NGƯỜI NỘP THUẾ LÀM TRUNG TÂM PHỤC VỤ (mới). Luật 2025 bổ sung PHÂN NHÓM người nộp thuế theo ngành nghề, quy mô, mức độ tuân thủ để quản lý theo rủi ro (Điều 3). Nội dung quản lý thuế gồm đăng ký, khai, nộp, hoàn, miễn, giảm, kiểm tra, thanh tra, cưỡng chế, xử phạt (Điều 5).",
+ "example": "Một công ty ký hợp đồng gọi là \"tư vấn\" nhưng thực chất là chuyển giá: cơ quan thuế xác định nghĩa vụ theo bản chất giao dịch, không theo tên gọi (điểm a khoản 4 Điều 6).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, 2 Điều 6 Luật Quản lý thuế 2025 (108/2025/QH15)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thue-Phi-Le-Phi/Luat-Quan-ly-thue-2025-so-108-2025-QH15-675268.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "thue",
+  "thue-gia-tri-gia-tang"
+ ],
+ "keywords": [
+  "công khai, minh bạch, bình đẳng",
+  "người nộp thuế làm trung tâm",
+  "tự khai, tự tính, tự nộp",
+  "bản chất giao dịch quyết định nghĩa vụ thuế"
+ ],
+ "note": "Luật Quản lý thuế 108/2025/QH15 có hiệu lực từ 01/7/2026 (Điều 13 và hóa đơn điện tử hộ kinh doanh từ 01/01/2026), thay thế Luật Quản lý thuế 38/2019/QH14.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Luật Quản lý thuế 2025, quản lý thuế phải lấy ai làm trung tâm phục vụ?",
+   "options": [
+    "Người nộp thuế",
+    "Cơ quan thuế",
+    "Bộ Tài chính",
+    "Ngân hàng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 6.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 6 Luật Quản lý thuế 2025 (108/2025/QH15)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai tự xác định, kê khai và nộp nghĩa vụ thuế (trừ trường hợp cơ quan quản lý thuế tính thuế)?",
+   "options": [
+    "Người nộp thuế",
+    "Cơ quan thuế",
+    "Kho bạc",
+    "Kiểm toán nhà nước"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 6.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 6 Luật Quản lý thuế 2025 (108/2025/QH15)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Người nộp thuế",
+   "right": "Cơ quan quản lý thuế",
+   "cases": [
+    {
+     "text": "Tự kê khai, tự nộp thuế",
+     "answer": "left"
+    },
+    {
+     "text": "Phân nhóm người nộp thuế để quản lý theo rủi ro",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 3, 6."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quản lý thuế phải bảo đảm nguyên tắc công khai, {{minh bạch}}, bình đẳng, lấy {{người nộp thuế}} làm trung tâm phục vụ.",
+   "bank_extra": [
+    "bí mật",
+    "cơ quan thuế"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người nộp thuế có nghĩa vụ nộp thuế, các khoản thu khác thuộc {{ngân sách nhà nước}} theo quy định của {{luật thuế}}.",
+   "bank_extra": [
+    "quỹ doanh nghiệp",
+    "điều lệ"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo Luật Quản lý thuế 2025, cơ quan thuế luôn tính thuế thay cho mọi người nộp thuế.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 6: người nộp thuế tự xác định, tự kê khai, tự nộp, trừ trường hợp cơ quan quản lý thuế tính thuế theo quy định."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các nguyên tắc quản lý thuế theo Luật 2025.",
+   "model": "Công khai, minh bạch, bình đẳng, lấy người nộp thuế làm trung tâm, bảo đảm quyền lợi hợp pháp (khoản 1 Điều 6); người nộp thuế tự xác định, tự kê khai, tự nộp (khoản 2); nguyên tắc bản chất giao dịch quyết định nghĩa vụ thuế (khoản 4).",
+   "keywords": [
+    "công khai",
+    "trung tâm",
+    "tự kê khai",
+    "bản chất"
+   ]
+  }
+ ]
+}

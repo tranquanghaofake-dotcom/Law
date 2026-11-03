@@ -1,0 +1,139 @@
+{
+  "id": "to-tung-dan-su-de-1",
+  "group": "to-tung-dan-su",
+  "title": "Đề kiểm tra Tố tụng dân sự – Nguyên tắc, thẩm quyền, chứng cứ",
+  "subtitle": "10 câu theo đề cương HLU, vấn đề 1–4",
+  "updated": "2026-11-01",
+  "questions": [
+    {
+      "q": "Tòa án có được từ chối giải quyết vụ việc dân sự vì chưa có điều luật để áp dụng không?",
+      "options": [
+        "Được",
+        "Không được",
+        "Được nếu chưa có án lệ",
+        "Được nếu Viện kiểm sát đồng ý"
+      ],
+      "answer": 1,
+      "explain": "Khoản 2 Điều 4.",
+      "basis": "Điều 4 BLTTDS (VBHN 21/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thu-tuc-To-tung/Van-ban-hop-nhat-21-VBHN-VPQH-2026-Bo-luat-To-dung-dan-su-696578.aspx"
+    },
+    {
+      "q": "Nguyên đơn chỉ yêu cầu trả nợ gốc. Tòa án có được tự buộc bị đơn trả thêm lãi không?",
+      "options": [
+        "Có",
+        "Không, chỉ giải quyết trong phạm vi đơn khởi kiện",
+        "Có nếu lãi hợp pháp",
+        "Có nếu bị đơn đồng ý ở phiên tòa"
+      ],
+      "answer": 1,
+      "explain": "Khoản 1 Điều 5.",
+      "basis": "Điều 5 BLTTDS (VBHN 21/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thu-tuc-To-tung/Van-ban-hop-nhat-21-VBHN-VPQH-2026-Bo-luat-To-dung-dan-su-696578.aspx"
+    },
+    {
+      "q": "Hội thẩm nhân dân không tham gia xét xử sơ thẩm vụ án dân sự trong trường hợp nào?",
+      "options": [
+        "Xét xử theo thủ tục rút gọn",
+        "Vụ án ly hôn",
+        "Vụ án có yếu tố nước ngoài",
+        "Vụ án lao động"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 11.",
+      "basis": "Điều 11 BLTTDS (VBHN 21/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thu-tuc-To-tung/Van-ban-hop-nhat-21-VBHN-VPQH-2026-Bo-luat-To-dung-dan-su-696578.aspx"
+    },
+    {
+      "q": "Năm 2026, tranh chấp hợp đồng vay giữa hai cá nhân do Tòa án nào giải quyết sơ thẩm?",
+      "options": [
+        "Tòa án nhân dân cấp huyện",
+        "Tòa án nhân dân khu vực",
+        "Tòa án nhân dân cấp cao",
+        "Tòa án nhân dân tối cao"
+      ],
+      "answer": 1,
+      "explain": "Điều 35 (sửa đổi bởi Luật 85/2025/QH15).",
+      "basis": "Điều 35 BLTTDS (VBHN 21/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thu-tuc-To-tung/Van-ban-hop-nhat-21-VBHN-VPQH-2026-Bo-luat-To-dung-dan-su-696578.aspx"
+    },
+    {
+      "q": "Tranh chấp quyền sử dụng một mảnh đất ở Đà Lạt giữa hai người cư trú ở TP. Hồ Chí Minh. Tòa án nào có thẩm quyền theo lãnh thổ?",
+      "options": [
+        "Tòa án nơi bị đơn cư trú",
+        "Tòa án nơi có bất động sản",
+        "Tòa án nơi nguyên đơn cư trú",
+        "Do các bên tùy chọn"
+      ],
+      "answer": 1,
+      "explain": "Điểm c khoản 1 Điều 39.",
+      "basis": "Điều 39 BLTTDS (VBHN 21/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thu-tuc-To-tung/Van-ban-hop-nhat-21-VBHN-VPQH-2026-Bo-luat-To-dung-dan-su-696578.aspx"
+    },
+    {
+      "q": "Theo nguyên tắc chung, tranh chấp hợp đồng mua bán giữa hai cá nhân do Tòa án nơi nào giải quyết?",
+      "options": [
+        "Nơi bị đơn cư trú, làm việc",
+        "Nơi nguyên đơn cư trú",
+        "Nơi ký hợp đồng",
+        "Nơi thanh toán"
+      ],
+      "answer": 0,
+      "explain": "Điểm a khoản 1 Điều 39.",
+      "basis": "Điều 39 BLTTDS (VBHN 21/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thu-tuc-To-tung/Van-ban-hop-nhat-21-VBHN-VPQH-2026-Bo-luat-To-dung-dan-su-696578.aspx"
+    },
+    {
+      "q": "Người bảo lãnh cho khoản vay trong vụ kiện đòi nợ có thể tham gia tố tụng với tư cách gì?",
+      "options": [
+        "Nguyên đơn",
+        "Người có quyền lợi, nghĩa vụ liên quan",
+        "Người làm chứng bắt buộc",
+        "Người giám định"
+      ],
+      "answer": 1,
+      "explain": "Khoản 1 Điều 68.",
+      "basis": "Điều 68 BLTTDS (VBHN 21/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thu-tuc-To-tung/Van-ban-hop-nhat-21-VBHN-VPQH-2026-Bo-luat-To-dung-dan-su-696578.aspx"
+    },
+    {
+      "q": "Ai có nghĩa vụ chủ yếu thu thập, giao nộp chứng cứ trong tố tụng dân sự?",
+      "options": [
+        "Tòa án",
+        "Đương sự",
+        "Viện kiểm sát",
+        "Thư ký Tòa án"
+      ],
+      "answer": 1,
+      "explain": "Khoản 1 Điều 6.",
+      "basis": "Điều 6 BLTTDS (VBHN 21/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thu-tuc-To-tung/Van-ban-hop-nhat-21-VBHN-VPQH-2026-Bo-luat-To-dung-dan-su-696578.aspx"
+    },
+    {
+      "q": "Người tiêu dùng kiện doanh nghiệp. Ai phải chứng minh về lỗi?",
+      "options": [
+        "Người tiêu dùng chứng minh lỗi của doanh nghiệp",
+        "Doanh nghiệp chứng minh mình không có lỗi",
+        "Tòa án tự chứng minh",
+        "Không ai"
+      ],
+      "answer": 1,
+      "explain": "Điểm a khoản 1 Điều 91.",
+      "basis": "Điều 91 BLTTDS (VBHN 21/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thu-tuc-To-tung/Van-ban-hop-nhat-21-VBHN-VPQH-2026-Bo-luat-To-dung-dan-su-696578.aspx"
+    },
+    {
+      "q": "Tin nhắn điện thoại có thể là nguồn chứng cứ không?",
+      "options": [
+        "Không",
+        "Có, là dữ liệu điện tử",
+        "Chỉ khi công chứng",
+        "Chỉ trong vụ án hình sự"
+      ],
+      "answer": 1,
+      "explain": "Khoản 1 Điều 94.",
+      "basis": "Điều 94 BLTTDS (VBHN 21/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thu-tuc-To-tung/Van-ban-hop-nhat-21-VBHN-VPQH-2026-Bo-luat-To-dung-dan-su-696578.aspx"
+    }
+  ]
+}

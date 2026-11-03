@@ -1,0 +1,106 @@
+{
+ "id": "tstt-tai-san-tri-tue",
+ "subject": "tai-san-tri-tue",
+ "chapter": "v1",
+ "term": "Tài sản trí tuệ của doanh nghiệp",
+ "definition": "Tài sản trí tuệ là kết quả sáng tạo trí tuệ của cá nhân trong lĩnh vực kinh tế, văn hóa, công nghệ; là một loại tài sản vô hình có tính xác định được, có tính sáng tạo, không bị hao mòn, cạn kiệt và có khả năng sinh lời.",
+ "plain": "Đây là khái niệm HỌC THUYẾT (ghi chép bài giảng), Luật Sở hữu trí tuệ không định nghĩa \"tài sản trí tuệ\". Phân biệt ba lớp: TÀI SẢN VÔ HÌNH (rộng: uy tín, quan hệ khách hàng, hợp đồng…) → TÀI SẢN TRÍ TUỆ (kết quả sáng tạo) → QUYỀN SỞ HỮU TRÍ TUỆ (quyền được pháp luật bảo hộ đối với tài sản trí tuệ, có giới hạn về thời gian và lãnh thổ). Đặc điểm: vô hình; xác định, tính toán được; sáng tạo, đổi mới; không hao mòn; sinh lời qua khai thác, chuyển giao.",
+ "example": "Một hộp sữa có thể chứa nhiều tài sản trí tuệ: công thức (sáng chế hoặc bí mật kinh doanh), tên và logo (nhãn hiệu), hình dáng hộp (kiểu dáng công nghiệp), hình vẽ trên bao bì (tác phẩm mỹ thuật ứng dụng).",
+ "source": {
+  "kind": "textbook",
+  "cite": "Ghi chép bài giảng học phần Quản trị tài sản trí tuệ (SHTTTT), ĐH Luật Hà Nội (Drive HLU/Kỳ II năm II/SHTTTT) — chưa đối chiếu nguyên văn giáo trình"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tstt-doi-tuong-quyen-shtt",
+  "tstt-quan-tri-tstt"
+ ],
+ "keywords": [
+  "tài sản vô hình",
+  "kết quả sáng tạo",
+  "không hao mòn",
+  "khả năng sinh lời"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo bài giảng, đặc điểm nào KHÔNG phải của tài sản trí tuệ?",
+   "options": [
+    "Bị hao mòn khi sử dụng",
+    "Bản chất vô hình",
+    "Có khả năng sinh lời",
+    "Có tính sáng tạo"
+   ],
+   "answer": 0,
+   "explain": "Tài sản trí tuệ không bị hao mòn, cạn kiệt khi sử dụng — khác tài sản hữu hình."
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quan hệ giữa tài sản trí tuệ và quyền sở hữu trí tuệ?",
+   "options": [
+    "Quyền SHTT là quyền pháp luật bảo hộ đối với tài sản trí tuệ, có giới hạn thời gian và lãnh thổ",
+    "Hai khái niệm đồng nhất",
+    "Tài sản trí tuệ là một loại quyền SHTT",
+    "Quyền SHTT không giới hạn thời gian"
+   ],
+   "answer": 0,
+   "explain": "Tài sản trí tuệ là đối tượng; quyền SHTT là quyền pháp lý đối với đối tượng đó, giới hạn về không gian và thời hạn bảo hộ."
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tài sản trí tuệ",
+   "right": "Tài sản vô hình khác, không phải tài sản trí tuệ",
+   "cases": [
+    {
+     "text": "Công thức pha chế đồ uống được giữ bí mật",
+     "answer": "left"
+    },
+    {
+     "text": "Mối quan hệ lâu năm với nhà phân phối",
+     "answer": "right"
+    }
+   ],
+   "explain": "Quan hệ khách hàng là tài sản vô hình không thể nhận diện, không chuyển giao được; công thức bí mật là bí mật kinh doanh."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tài sản trí tuệ là kết quả {{sáng tạo}} trí tuệ của cá nhân, là một loại tài sản {{vô hình}}.",
+   "bank_extra": [
+    "lao động chân tay",
+    "hữu hình"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tài sản trí tuệ không bị {{hao mòn}}, cạn kiệt và có khả năng {{sinh lời}} qua khai thác, chuyển giao.",
+   "bank_extra": [
+    "đánh thuế",
+    "tiêu hủy"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Luật Sở hữu trí tuệ hiện hành có điều khoản định nghĩa \"tài sản trí tuệ\".",
+   "answer": false,
+   "explain": "Sai. Luật chỉ định nghĩa \"quyền sở hữu trí tuệ\" (khoản 1 Điều 4) và liệt kê đối tượng quyền (Điều 3); \"tài sản trí tuệ\" là khái niệm học thuật."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm và đặc điểm của tài sản trí tuệ theo bài giảng.",
+   "model": "Kết quả sáng tạo trí tuệ trong kinh tế, văn hóa, công nghệ; tài sản vô hình, xác định được, sáng tạo, không hao mòn, sinh lời; phân biệt với quyền SHTT (quyền pháp lý có giới hạn thời gian, lãnh thổ).",
+   "keywords": [
+    "vô hình",
+    "sáng tạo",
+    "không hao mòn",
+    "sinh lời"
+   ]
+  }
+ ]
+}

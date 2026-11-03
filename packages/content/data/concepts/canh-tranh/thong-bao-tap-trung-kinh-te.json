@@ -1,0 +1,119 @@
+{
+ "id": "thong-bao-tap-trung-kinh-te",
+ "subject": "canh-tranh",
+ "chapter": "v5",
+ "term": "Thông báo và thẩm định sơ bộ tập trung kinh tế",
+ "definition": "Các doanh nghiệp tham gia tập trung kinh tế phải nộp hồ sơ thông báo tập trung kinh tế đến Ủy ban Cạnh tranh Quốc gia theo quy định tại Điều 34 của Luật này trước khi tiến hành tập trung kinh tế nếu thuộc ngưỡng thông báo tập trung kinh tế. Ngưỡng thông báo tập trung kinh tế được xác định căn cứ vào một trong các tiêu chí sau đây: a) Tổng tài sản trên thị trường Việt Nam của doanh nghiệp tham gia tập trung kinh tế; b) Tổng doanh thu trên thị trường Việt Nam của doanh nghiệp tham gia tập trung kinh tế; c) Giá trị giao dịch của tập trung kinh tế; d) Thị phần kết hợp trên thị trường liên quan của doanh nghiệp tham gia tập trung kinh tế.",
+ "plain": "Thông báo TRƯỚC khi tiến hành, nếu thuộc NGƯỠNG (một trong bốn tiêu chí: tổng tài sản, tổng doanh thu, giá trị giao dịch, thị phần kết hợp; mức cụ thể tại Nghị định 35/2020/NĐ-CP). Thẩm định SƠ BỘ trong 30 NGÀY từ khi hồ sơ đầy đủ (Điều 36): kết quả là \"được thực hiện\" hoặc \"phải thẩm định chính thức\"; hết 30 ngày mà Ủy ban không thông báo thì tập trung kinh tế ĐƯỢC THỰC HIỆN.",
+ "example": "Công ty A định mua 60% vốn công ty B; tổng doanh thu tại Việt Nam vượt ngưỡng theo nghị định: hai bên phải nộp hồ sơ thông báo cho Ủy ban Cạnh tranh Quốc gia trước khi ký hoàn tất giao dịch.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 33 Luật Cạnh tranh 2018",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tap-trung-kinh-te",
+  "uy-ban-canh-tranh-quoc-gia"
+ ],
+ "keywords": [
+  "thông báo trước khi tiến hành",
+  "ngưỡng thông báo",
+  "tổng tài sản, doanh thu, giá trị giao dịch, thị phần kết hợp",
+  "thẩm định sơ bộ 30 ngày"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Doanh nghiệp thuộc ngưỡng phải thông báo tập trung kinh tế vào thời điểm nào?",
+   "options": [
+    "Trước khi tiến hành tập trung kinh tế",
+    "Sau khi hoàn tất 30 ngày",
+    "Khi có yêu cầu của Ủy ban",
+    "Không bắt buộc"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 33.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 33 Luật Cạnh tranh 2018"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hết thời hạn thẩm định sơ bộ mà Ủy ban Cạnh tranh Quốc gia chưa ra thông báo kết quả thì sao?",
+   "options": [
+    "Việc tập trung kinh tế được thực hiện",
+    "Phải chờ thẩm định chính thức",
+    "Giao dịch bị cấm",
+    "Phải nộp lại hồ sơ"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 36.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 36 Luật Cạnh tranh 2018"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tiêu chí ngưỡng thông báo",
+   "right": "Không phải tiêu chí ngưỡng",
+   "cases": [
+    {
+     "text": "Giá trị giao dịch của tập trung kinh tế",
+     "answer": "left"
+    },
+    {
+     "text": "Số lượng nhân viên của doanh nghiệp",
+     "answer": "right"
+    },
+    {
+     "text": "Thị phần kết hợp",
+     "answer": "left"
+    }
+   ],
+   "explain": "Khoản 2 Điều 33."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ngưỡng thông báo tập trung kinh tế được xác định căn cứ vào tổng tài sản, tổng {{doanh thu}} trên thị trường Việt Nam, {{giá trị giao dịch}} hoặc thị phần kết hợp.",
+   "bank_extra": [
+    "lợi nhuận",
+    "vốn điều lệ"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Trong thời hạn {{30}} ngày kể từ ngày tiếp nhận hồ sơ đầy đủ, hợp lệ, Ủy ban Cạnh tranh Quốc gia phải ra thông báo kết quả thẩm định sơ bộ.",
+   "bank_extra": [
+    "15",
+    "90"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi giao dịch sáp nhập đều phải thông báo cho Ủy ban Cạnh tranh Quốc gia.",
+   "answer": false,
+   "explain": "Sai. Chỉ khi thuộc ngưỡng thông báo tập trung kinh tế (khoản 1 Điều 33)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày nghĩa vụ thông báo tập trung kinh tế và thẩm định sơ bộ.",
+   "model": "Doanh nghiệp thuộc ngưỡng phải nộp hồ sơ thông báo đến Ủy ban Cạnh tranh Quốc gia trước khi tiến hành; ngưỡng căn cứ tổng tài sản, tổng doanh thu, giá trị giao dịch hoặc thị phần kết hợp (Điều 33); Ủy ban thẩm định sơ bộ trong 30 ngày; quá hạn không thông báo thì được thực hiện (Điều 36).",
+   "keywords": [
+    "trước khi",
+    "ngưỡng",
+    "30 ngày",
+    "được thực hiện"
+   ]
+  }
+ ]
+}

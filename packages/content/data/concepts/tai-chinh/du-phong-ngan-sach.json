@@ -1,0 +1,117 @@
+{
+ "id": "du-phong-ngan-sach",
+ "subject": "tai-chinh",
+ "chapter": "v3",
+ "term": "Dự toán và dự phòng ngân sách nhà nước",
+ "definition": "Dự phòng ngân sách nhà nước là một khoản trong dự toán chi ngân sách chưa phân bổ đã được cơ quan có thẩm quyền quyết định ở từng cấp ngân sách. (…) Mức bố trí dự phòng từ 2% đến 5% tổng chi ngân sách mỗi cấp, trong đó chi của ngân sách cấp trên không bao gồm chi bổ sung cân đối cho ngân sách cấp dưới, chi của ngân sách cấp dưới không bao gồm chi bổ sung có mục tiêu từ ngân sách cấp trên (nếu có).",
+ "plain": "Lập dự toán NSNN là khâu ĐẦU TIÊN của chu trình ngân sách (lập – chấp hành – quyết toán). Căn cứ lập dự toán (Điều 44): nhiệm vụ phát triển kinh tế - xã hội, quốc phòng, an ninh; chức năng, nhiệm vụ của cơ quan; pháp luật thuế, phí; định mức phân bổ; phân cấp nguồn thu, nhiệm vụ chi… Quốc hội thảo luận, quyết định dự toán NSNN (Điều 19, 48); HĐND quyết định dự toán ngân sách địa phương (Điều 31). DỰ PHÒNG 2–5% dùng cho thiên tai, dịch bệnh, quốc phòng, an ninh cấp bách, nhiệm vụ đột xuất (khoản 2 Điều 10).",
+ "example": "Tỉnh có tổng chi ngân sách 20.000 tỷ đồng phải bố trí dự phòng từ 400 đến 1.000 tỷ đồng để xử lý thiên tai, dịch bệnh phát sinh trong năm.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 8 Điều 4; khoản 1 Điều 10 Luật Ngân sách nhà nước 2025 (89/2025/QH15)",
+  "url": "https://thuvienphapluat.vn/van-ban/Tai-chinh-nha-nuoc/Luat-ngan-sach-nha-nuoc-2025-so-89-2025-QH15-650061.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nguyen-tac-quan-ly-nsnn",
+  "boi-chi-ket-du",
+  "quy-ngan-sach-nha-nuoc"
+ ],
+ "keywords": [
+  "khoản chưa phân bổ trong dự toán chi",
+  "từ 2% đến 5% tổng chi",
+  "thiên tai, dịch bệnh, nhiệm vụ cấp bách",
+  "khâu đầu của chu trình ngân sách"
+ ],
+ "note": "Luật Ngân sách nhà nước 89/2025/QH15 có hiệu lực từ năm ngân sách 2026 (một số nội dung từ 01/7/2025), thay thế Luật Ngân sách nhà nước 83/2015/QH13 mà đề cương HLU còn dẫn (Điều 77).",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Mức bố trí dự phòng ngân sách nhà nước là bao nhiêu?",
+   "options": [
+    "Từ 2% đến 5% tổng chi ngân sách mỗi cấp",
+    "Từ 5% đến 10%",
+    "Tối đa 1%",
+    "Do Thủ tướng quyết định không giới hạn"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 10.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 10 Luật Ngân sách nhà nước 2025 (89/2025/QH15)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Dự phòng ngân sách nhà nước là gì?",
+   "options": [
+    "Một khoản trong dự toán chi ngân sách chưa phân bổ đã được cơ quan có thẩm quyền quyết định ở từng cấp",
+    "Quỹ dự trữ tài chính",
+    "Khoản kết dư năm trước",
+    "Khoản vay nước ngoài"
+   ],
+   "answer": 0,
+   "explain": "Khoản 8 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 4 Luật Ngân sách nhà nước 2025 (89/2025/QH15)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Dự phòng ngân sách",
+   "right": "Quỹ dự trữ tài chính",
+   "cases": [
+    {
+     "text": "Một khoản trong dự toán chi chưa phân bổ",
+     "answer": "left"
+    },
+    {
+     "text": "Quỹ của Nhà nước hình thành từ ngân sách và nguồn tài chính khác",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 8, 21 Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Dự phòng ngân sách nhà nước là một khoản trong dự toán chi ngân sách {{chưa phân bổ}} đã được cơ quan có thẩm quyền quyết định ở từng {{cấp ngân sách}}.",
+   "bank_extra": [
+    "đã chi",
+    "đơn vị"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Mức bố trí dự phòng từ {{2%}} đến {{5%}} tổng chi ngân sách mỗi cấp.",
+   "bank_extra": [
+    "10%",
+    "15%"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Dự phòng ngân sách được dùng để chi phòng, chống, khắc phục hậu quả thiên tai, thảm họa, dịch bệnh.",
+   "answer": true,
+   "explain": "Đúng. Điểm a khoản 2 Điều 10."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm, mức bố trí và mục đích sử dụng dự phòng ngân sách.",
+   "model": "Một khoản trong dự toán chi chưa phân bổ đã được quyết định ở từng cấp (khoản 8 Điều 4); mức từ 2% đến 5% tổng chi mỗi cấp; dùng cho thiên tai, thảm họa, dịch bệnh, cứu đói, quốc phòng, an ninh, nhiệm vụ cấp bách (Điều 10).",
+   "keywords": [
+    "chưa phân bổ",
+    "2%",
+    "5%",
+    "thiên tai"
+   ]
+  }
+ ]
+}

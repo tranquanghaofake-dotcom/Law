@@ -1,0 +1,116 @@
+{
+ "id": "tcdn-chia-loi-nhuan-tnhh",
+ "subject": "tai-chinh-doanh-nghiep",
+ "chapter": "v3",
+ "term": "Điều kiện chia lợi nhuận của công ty TNHH hai thành viên trở lên",
+ "definition": "Công ty chỉ được chia lợi nhuận cho các thành viên sau khi đã hoàn thành nghĩa vụ thuế và các nghĩa vụ tài chính khác theo quy định của pháp luật, bảo đảm thanh toán đủ các khoản nợ và nghĩa vụ tài sản khác đến hạn trả sau khi chia lợi nhuận.",
+ "plain": "Hai điều kiện: (1) xong NGHĨA VỤ THUẾ và nghĩa vụ tài chính khác; (2) SAU KHI CHIA vẫn TRẢ ĐỦ nợ, nghĩa vụ tài sản đến hạn. Lợi nhuận chia theo TỶ LỆ PHẦN VỐN GÓP. So sánh công ty cổ phần (Điều 135): thêm điều kiện trích lập quỹ, bù lỗ trước đó. Vi phạm: thành viên phải hoàn trả số đã nhận (Điều 70 — thu hồi phần vốn góp đã hoàn trả hoặc lợi nhuận đã chia).",
+ "example": "Công ty TNHH K chia 2 tỷ đồng lợi nhuận cho thành viên, sau đó không trả được khoản nợ nhà cung cấp đến hạn: việc chia lợi nhuận vi phạm Điều 69.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 69 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tcdn-co-tuc",
+  "tcdn-von-dieu-le"
+ ],
+ "keywords": [
+  "nghĩa vụ thuế",
+  "nghĩa vụ tài chính",
+  "thanh toán đủ nợ",
+  "sau khi chia lợi nhuận"
+ ],
+ "note": "Luật Doanh nghiệp 59/2020/QH14 có hiệu lực từ 01/01/2021, thay thế Luật Doanh nghiệp 2014 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 03/2022/QH15 và Luật 76/2025/QH15 (hiệu lực 01/7/2025) — văn bản hợp nhất 67/VBHN-VPQH 2025.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Công ty TNHH hai thành viên trở lên chỉ được chia lợi nhuận khi nào?",
+   "options": [
+    "Sau khi hoàn thành nghĩa vụ thuế, nghĩa vụ tài chính và bảo đảm thanh toán đủ nợ đến hạn sau khi chia",
+    "Bất cứ khi nào Hội đồng thành viên quyết định",
+    "Chỉ khi công ty niêm yết",
+    "Khi đã hoạt động đủ 5 năm"
+   ],
+   "answer": 0,
+   "explain": "Điều 69.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 69 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "So với công ty TNHH, điều kiện trả cổ tức của công ty cổ phần có thêm yêu cầu gì?",
+   "options": [
+    "Trích lập các quỹ và bù đắp lỗ trước đó",
+    "Không cần nộp thuế",
+    "Phải trả bằng ngoại tệ",
+    "Phải có ý kiến của Bộ Tài chính"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 2 Điều 135 so với Điều 69.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 69 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Được chia lợi nhuận",
+   "right": "Không được chia",
+   "cases": [
+    {
+     "text": "Đã nộp đủ thuế và sau khi chia vẫn trả được nợ đến hạn",
+     "answer": "left"
+    },
+    {
+     "text": "Sau khi chia sẽ không trả được nợ đến hạn",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 69."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công ty chỉ được chia lợi nhuận sau khi đã hoàn thành nghĩa vụ {{thuế}} và các nghĩa vụ {{tài chính}} khác.",
+   "bank_extra": [
+    "lao động",
+    "hành chính"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công ty phải bảo đảm thanh toán đủ các khoản {{nợ}} và nghĩa vụ tài sản khác đến hạn trả {{sau khi}} chia lợi nhuận.",
+   "bank_extra": [
+    "vốn",
+    "trước khi"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Công ty TNHH được chia lợi nhuận dù việc chia làm công ty mất khả năng trả nợ đến hạn.",
+   "answer": false,
+   "explain": "Sai. Điều 69 yêu cầu bảo đảm thanh toán đủ nợ đến hạn sau khi chia lợi nhuận."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu điều kiện chia lợi nhuận của công ty TNHH hai thành viên trở lên.",
+   "model": "Đã hoàn thành nghĩa vụ thuế và nghĩa vụ tài chính khác; bảo đảm thanh toán đủ các khoản nợ, nghĩa vụ tài sản đến hạn sau khi chia (Điều 69).",
+   "keywords": [
+    "nghĩa vụ thuế",
+    "tài chính",
+    "nợ đến hạn",
+    "sau khi chia"
+   ]
+  }
+ ]
+}

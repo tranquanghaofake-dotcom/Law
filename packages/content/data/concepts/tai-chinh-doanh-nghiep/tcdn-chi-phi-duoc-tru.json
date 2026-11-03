@@ -1,0 +1,116 @@
+{
+ "id": "tcdn-chi-phi-duoc-tru",
+ "subject": "tai-chinh-doanh-nghiep",
+ "chapter": "v3",
+ "term": "Điều kiện chi phí được trừ",
+ "definition": "Trừ các khoản chi quy định tại khoản 2 Điều này, doanh nghiệp được trừ các khoản chi khi xác định thu nhập chịu thuế nếu đáp ứng đủ các điều kiện sau đây: a) Khoản chi thực tế phát sinh liên quan đến hoạt động sản xuất, kinh doanh của doanh nghiệp, bao gồm cả khoản chi phí bổ sung được trừ theo tỷ lệ phần trăm tính trên chi phí thực tế phát sinh trong kỳ tính thuế liên quan đến hoạt động nghiên cứu và phát triển của doanh nghiệp; (…) c) Các khoản chi có đủ hoá đơn, chứng từ thanh toán không dùng tiền mặt theo quy định của pháp luật, trừ các trường hợp đặc thù theo quy định của Chính phủ.",
+ "plain": "\"Chi phí hợp lý\" của đề cương chính là CHI PHÍ ĐƯỢC TRỪ: phải đáp ứng ĐỦ điều kiện — (a) THỰC TẾ PHÁT SINH, LIÊN QUAN đến sản xuất kinh doanh (kể cả chi phí bổ sung cho nghiên cứu và phát triển); (b) một số khoản chi khác được luật liệt kê; (c) đủ HÓA ĐƠN, CHỨNG TỪ THANH TOÁN KHÔNG DÙNG TIỀN MẶT (trừ trường hợp đặc thù do Chính phủ quy định), và không thuộc danh mục chi không được trừ (khoản 2). Phân biệt CHI PHÍ THỰC TẾ (doanh nghiệp đã chi) với CHI PHÍ ĐƯỢC TRỪ (được tính khi xác định thu nhập chịu thuế).",
+ "example": "Công ty H chi 30 triệu đồng tiếp khách nhưng trả bằng tiền mặt, không có chứng từ thanh toán qua ngân hàng: khoản chi thực tế có phát sinh nhưng không đủ điều kiện điểm c nên có thể không được trừ.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 9 Luật Thuế thu nhập doanh nghiệp 2025 (67/2025/QH15)",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-Thue-thu-nhap-doanh-nghiep-2025-so-67-2025-QH15-580594.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tcdn-doanh-thu",
+  "tcdn-co-tuc"
+ ],
+ "keywords": [
+  "thực tế phát sinh",
+  "liên quan đến sản xuất, kinh doanh",
+  "hóa đơn, chứng từ",
+  "không dùng tiền mặt"
+ ],
+ "note": "Luật Thuế TNDN 67/2025/QH15 có hiệu lực từ 01/10/2025, áp dụng từ kỳ tính thuế năm 2025, thay thế Luật 14/2008/QH12 mà đề cương còn dẫn; Điều 8, 9 không bị Luật 09/2026/QH16 sửa (đã so với văn bản hợp nhất 113/VBHN-VPQH 2026).",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Điều kiện nào thuộc khoản 1 Điều 9 Luật Thuế TNDN 2025?",
+   "options": [
+    "Khoản chi có đủ hóa đơn, chứng từ thanh toán không dùng tiền mặt theo quy định",
+    "Khoản chi do giám đốc phê duyệt là đủ",
+    "Khoản chi phát sinh ngoài hoạt động kinh doanh",
+    "Khoản chi không cần chứng từ nếu dưới 50 triệu"
+   ],
+   "answer": 0,
+   "explain": "Điểm c khoản 1 Điều 9.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 9 Luật Thuế thu nhập doanh nghiệp 2025 (67/2025/QH15)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khoản chi cho nghiên cứu và phát triển được hưởng ưu đãi gì theo điểm a khoản 1 Điều 9?",
+   "options": [
+    "Có thể có chi phí bổ sung được trừ theo tỷ lệ phần trăm trên chi phí thực tế",
+    "Không được trừ",
+    "Chỉ được trừ 50%",
+    "Được hoàn thuế ngay"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 9.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 9 Luật Thuế thu nhập doanh nghiệp 2025 (67/2025/QH15)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Đáp ứng điều kiện chi phí được trừ",
+   "right": "Không đáp ứng",
+   "cases": [
+    {
+     "text": "Tiền thuê kho có hợp đồng, hóa đơn, chuyển khoản",
+     "answer": "left"
+    },
+    {
+     "text": "Khoản chi cá nhân của giám đốc không liên quan kinh doanh",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 9."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Khoản chi được trừ phải {{thực tế phát sinh}} liên quan đến hoạt động sản xuất, {{kinh doanh}} của doanh nghiệp.",
+   "bank_extra": [
+    "dự kiến",
+    "từ thiện"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Các khoản chi phải có đủ hoá đơn, chứng từ thanh toán {{không dùng tiền mặt}}, trừ các trường hợp đặc thù theo quy định của {{Chính phủ}}.",
+   "bank_extra": [
+    "bằng tiền mặt",
+    "Quốc hội"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi khoản chi thực tế doanh nghiệp bỏ ra đều được trừ khi tính thuế TNDN.",
+   "answer": false,
+   "explain": "Sai. Phải đáp ứng đủ điều kiện khoản 1 Điều 9 và không thuộc khoản 2 (chi không được trừ)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu điều kiện chi phí được trừ khi xác định thu nhập chịu thuế TNDN.",
+   "model": "Ngoài khoản chi không được trừ (khoản 2), khoản chi được trừ nếu: thực tế phát sinh liên quan sản xuất kinh doanh (kể cả chi phí bổ sung nghiên cứu và phát triển); các khoản chi khác luật liệt kê; có đủ hóa đơn, chứng từ thanh toán không dùng tiền mặt (khoản 1 Điều 9).",
+   "keywords": [
+    "thực tế phát sinh",
+    "liên quan",
+    "hóa đơn",
+    "không dùng tiền mặt"
+   ]
+  }
+ ]
+}

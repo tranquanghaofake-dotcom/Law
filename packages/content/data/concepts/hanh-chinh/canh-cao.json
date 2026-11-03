@@ -1,0 +1,115 @@
+{
+ "id": "canh-cao",
+ "subject": "hanh-chinh",
+ "chapter": "v13",
+ "term": "Cảnh cáo",
+ "definition": "Cảnh cáo được áp dụng đối với cá nhân, tổ chức vi phạm hành chính không nghiêm trọng, có tình tiết giảm nhẹ và theo quy định thì bị áp dụng hình thức xử phạt cảnh cáo hoặc đối với mọi hành vi vi phạm hành chính do người chưa thành niên từ đủ 14 tuổi đến dưới 16 tuổi thực hiện. Cảnh cáo được quyết định bằng văn bản.",
+ "plain": "Áp dụng: vi phạm KHÔNG NGHIÊM TRỌNG, CÓ TÌNH TIẾT GIẢM NHẸ và luật quy định hình thức cảnh cáo; hoặc MỌI vi phạm của người TỪ ĐỦ 14 ĐẾN DƯỚI 16 TUỔI (người này không bị phạt tiền). Hình thức: BẰNG VĂN BẢN (khác \"nhắc nhở\" miệng). Có thể xử phạt cảnh cáo không lập biên bản (điểm a khoản 1 Điều 56).",
+ "example": "Em học sinh 15 tuổi cố ý vứt rác nơi công cộng: chỉ bị xử phạt cảnh cáo, không bị phạt tiền.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 22 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Vi-pham-hanh-chinh/Van-ban-hop-nhat-90-VBHN-VPQH-2026-Luat-Xu-ly-vi-pham-hanh-chinh-699548.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hinh-thuc-xu-phat",
+  "doi-tuong-bi-xu-phat",
+  "xu-phat-khong-lap-bien-ban"
+ ],
+ "keywords": [
+  "không nghiêm trọng, có tình tiết giảm nhẹ",
+  "mọi vi phạm của người 14–16 tuổi",
+  "bằng văn bản"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người từ đủ 14 đến dưới 16 tuổi vi phạm hành chính bị áp dụng hình thức xử phạt nào?",
+   "options": [
+    "Cảnh cáo",
+    "Phạt tiền",
+    "Tước giấy phép",
+    "Trục xuất"
+   ],
+   "answer": 0,
+   "explain": "Điều 22.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 22 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Cảnh cáo được quyết định bằng hình thức nào?",
+   "options": [
+    "Bằng văn bản",
+    "Bằng lời nói",
+    "Qua tin nhắn",
+    "Không cần hình thức"
+   ],
+   "answer": 0,
+   "explain": "Điều 22.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 22 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Có thể bị cảnh cáo",
+   "right": "Không thuộc trường hợp cảnh cáo theo Điều 22",
+   "cases": [
+    {
+     "text": "Vi phạm không nghiêm trọng, có tình tiết giảm nhẹ, luật quy định cảnh cáo",
+     "answer": "left"
+    },
+    {
+     "text": "Vi phạm nghiêm trọng, nhiều tình tiết tăng nặng",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 22."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Cảnh cáo được áp dụng đối với vi phạm hành chính không {{nghiêm trọng}}, có tình tiết {{giảm nhẹ}}.",
+   "bank_extra": [
+    "nhỏ",
+    "tăng nặng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Cảnh cáo được quyết định bằng {{văn bản}}.",
+   "bank_extra": [
+    "lời nói",
+    "biên bản miệng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Cảnh cáo có thể chỉ cần nói miệng với người vi phạm.",
+   "answer": false,
+   "explain": "Sai. Điều 22: cảnh cáo được quyết định bằng văn bản."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày hình thức xử phạt cảnh cáo.",
+   "model": "Áp dụng với cá nhân, tổ chức vi phạm không nghiêm trọng, có tình tiết giảm nhẹ và luật quy định cảnh cáo, hoặc mọi vi phạm của người từ đủ 14 đến dưới 16 tuổi; quyết định bằng văn bản (Điều 22).",
+   "keywords": [
+    "không nghiêm trọng",
+    "giảm nhẹ",
+    "14 tuổi",
+    "văn bản"
+   ]
+  }
+ ]
+}

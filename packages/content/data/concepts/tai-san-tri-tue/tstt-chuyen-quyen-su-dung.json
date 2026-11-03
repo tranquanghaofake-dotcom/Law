@@ -1,0 +1,117 @@
+{
+ "id": "tstt-chuyen-quyen-su-dung",
+ "subject": "tai-san-tri-tue",
+ "chapter": "v4",
+ "term": "Chuyển quyền sử dụng đối tượng sở hữu công nghiệp (li-xăng)",
+ "definition": "Chuyển quyền sử dụng đối tượng sở hữu công nghiệp là việc chủ sở hữu đối tượng sở hữu công nghiệp cho phép tổ chức, cá nhân khác sử dụng đối tượng sở hữu công nghiệp thuộc phạm vi quyền sử dụng của mình.",
+ "plain": "Li-xăng: chủ sở hữu CHO PHÉP sử dụng, vẫn giữ quyền sở hữu; bên nhận chỉ được dùng trong PHẠM VI (không gian, thời hạn, đối tượng) thỏa thuận. Phải bằng văn bản (khoản 2 Điều 141). Nội dung hợp đồng (Điều 144): tên, địa chỉ; căn cứ; dạng hợp đồng; phạm vi; thời hạn; giá; quyền nghĩa vụ. Trong hợp đồng sử dụng nhãn hiệu, bên nhận phải ghi chỉ dẫn trên hàng hóa rằng đó là hàng sản xuất theo li-xăng (khoản 4 Điều 142); bên giao thường giữ quyền kiểm soát chất lượng. Lợi ích: bên giao thu phí, mở rộng thị trường; bên nhận tiếp cận công nghệ, thương hiệu.",
+ "example": "Công ty X cho công ty Y sử dụng nhãn hiệu kẹo cao su trên lãnh thổ Việt Nam đến hết hạn Giấy chứng nhận đăng ký nhãn hiệu, có quyền lấy mẫu kiểm tra chất lượng: hợp đồng sử dụng đối tượng SHCN (li-xăng nhãn hiệu).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 141 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tstt-chuyen-nhuong-quyen-shcn",
+  "tstt-dang-hop-dong-li-xang",
+  "tstt-nhuong-quyen-thuong-mai"
+ ],
+ "keywords": [
+  "cho phép sử dụng",
+  "phạm vi quyền sử dụng",
+  "li-xăng",
+  "văn bản"
+ ],
+ "note": "Luật Sở hữu trí tuệ 50/2005/QH11 (hiệu lực 01/7/2006) đã được sửa đổi bởi Luật 36/2009/QH12, 42/2019/QH14, 07/2022/QH15, 93/2025/QH15 và 131/2025/QH15 (hiệu lực 01/4/2026) — văn bản hợp nhất 67/VBHN-VPQH 2026; ghi chép lớp học còn dẫn Nghị định 105/2006/NĐ-CP và Nghị định 99/2013/NĐ-CP, cần tự kiểm tra hiệu lực của các nghị định này trước khi dùng.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chuyển quyền sử dụng đối tượng SHCN là gì?",
+   "options": [
+    "Chủ sở hữu cho phép tổ chức, cá nhân khác sử dụng đối tượng SHCN thuộc phạm vi quyền sử dụng của mình",
+    "Chuyển giao quyền sở hữu",
+    "Từ bỏ quyền SHCN",
+    "Đăng ký lại văn bằng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 141.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 141 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hình thức của hợp đồng sử dụng đối tượng SHCN?",
+   "options": [
+    "Văn bản",
+    "Lời nói",
+    "Hành vi cụ thể",
+    "Bất kỳ hình thức nào"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 141.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 141 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quyền của bên nhận li-xăng",
+   "right": "Không phải quyền của bên nhận li-xăng",
+   "cases": [
+    {
+     "text": "Sử dụng nhãn hiệu trong phạm vi, thời hạn hợp đồng",
+     "answer": "left"
+    },
+    {
+     "text": "Bán đứt nhãn hiệu cho bên thứ ba",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 141: bên nhận chỉ có quyền sử dụng."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chuyển quyền sử dụng là việc chủ sở hữu {{cho phép}} tổ chức, cá nhân khác {{sử dụng}} đối tượng SHCN thuộc phạm vi quyền sử dụng của mình.",
+   "bank_extra": [
+    "bán",
+    "tiêu hủy"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bên nhận li-xăng chỉ được sử dụng trong {{phạm vi}} các bên thỏa thuận, trong không gian và {{thời hạn}} bảo hộ.",
+   "bank_extra": [
+    "toàn cầu",
+    "vô thời hạn"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Sau khi chuyển quyền sử dụng, chủ sở hữu mất quyền sở hữu đối tượng SHCN.",
+   "answer": false,
+   "explain": "Sai. Chuyển quyền sử dụng chỉ cho phép sử dụng; quyền sở hữu vẫn thuộc bên giao (Điều 141)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Phân biệt chuyển nhượng và chuyển quyền sử dụng đối tượng SHCN.",
+   "model": "Chuyển nhượng: chuyển quyền sở hữu, bên nhận thành chủ mới (Điều 138). Chuyển quyền sử dụng: chủ sở hữu cho phép dùng trong phạm vi, thời hạn thỏa thuận, quyền sở hữu không đổi (Điều 141). Cả hai phải bằng văn bản.",
+   "keywords": [
+    "quyền sở hữu",
+    "cho phép sử dụng",
+    "phạm vi",
+    "văn bản"
+   ]
+  }
+ ]
+}

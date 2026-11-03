@@ -115,6 +115,13 @@
     "hệ thống hành chính",
     "Thứ trưởng"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thủ tướng Chính phủ có quyền bổ nhiệm, miễn nhiệm, cách chức Thứ trưởng và chức vụ tương đương thuộc bộ, cơ quan ngang bộ.",
+   "answer": true,
+   "explain": "Đúng. Khoản 3 Điều 98 Hiến pháp 2013. (Nhận định trong bộ câu hỏi ôn tập Luật Hiến pháp, Drive HLU.)"
   }
  ]
 }

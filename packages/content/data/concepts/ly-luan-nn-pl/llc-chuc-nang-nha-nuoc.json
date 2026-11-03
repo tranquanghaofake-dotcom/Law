@@ -1,0 +1,108 @@
+{
+ "id": "llc-chuc-nang-nha-nuoc",
+ "subject": "ly-luan-nn-pl",
+ "chapter": "v2",
+ "term": "Chức năng của nhà nước",
+ "definition": "Chức năng của nhà nước là những phương diện (mặt) hoạt động cơ bản của nhà nước, phù hợp với bản chất, mục đích, nhiệm vụ của nhà nước và được xác định bởi điều kiện kinh tế – xã hội của đất nước trong từng giai đoạn.",
+ "plain": "Phân loại phổ biến: ĐỐI NỘI (kinh tế, xã hội, bảo đảm an ninh trật tự, bảo vệ quyền con người) và ĐỐI NGOẠI (bảo vệ Tổ quốc, hợp tác quốc tế). Chức năng do bản chất và nhiệm vụ của nhà nước quyết định; được thực hiện qua ba hình thức pháp lý: xây dựng pháp luật, tổ chức thực hiện pháp luật, bảo vệ pháp luật; với hai phương pháp: thuyết phục và cưỡng chế. Phân biệt CHỨC NĂNG NHÀ NƯỚC (của cả bộ máy) với chức năng của từng CƠ QUAN nhà nước.",
+ "example": "Nhà nước Việt Nam ban hành Luật Đầu tư, điều hành chính sách tiền tệ (chức năng kinh tế); ký hiệp định thương mại tự do (chức năng đối ngoại).",
+ "source": {
+  "kind": "textbook",
+  "cite": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (Drive HLU/KÌ I NĂM I/LLCNN&PL/TÀI LIỆU ÔN THI LLC: VD8, VD9, VD11, VD12, VD13) và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "llc-dau-hieu-nha-nuoc",
+  "llc-hinh-thuc-nha-nuoc",
+  "llc-ban-chat-nha-nuoc"
+ ],
+ "keywords": [
+  "đối nội",
+  "đối ngoại",
+  "xây dựng pháp luật",
+  "thuyết phục",
+  "cưỡng chế"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chức năng của nhà nước được quyết định bởi yếu tố nào?",
+   "options": [
+    "Bản chất, nhiệm vụ của nhà nước và điều kiện kinh tế – xã hội",
+    "Ý muốn của người đứng đầu",
+    "Số lượng cơ quan nhà nước",
+    "Diện tích lãnh thổ"
+   ],
+   "answer": 0,
+   "explain": "Chức năng phù hợp bản chất, mục đích, nhiệm vụ, điều kiện kinh tế – xã hội."
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hình thức pháp lý thực hiện chức năng nhà nước gồm gì?",
+   "options": [
+    "Xây dựng pháp luật, tổ chức thực hiện pháp luật, bảo vệ pháp luật",
+    "Thuyết phục, cưỡng chế",
+    "Đối nội, đối ngoại",
+    "Lập pháp, tư pháp"
+   ],
+   "answer": 0,
+   "explain": "Ba hình thức pháp lý; thuyết phục và cưỡng chế là phương pháp."
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Chức năng đối nội",
+   "right": "Chức năng đối ngoại",
+   "cases": [
+    {
+     "text": "Bảo đảm trật tự, an toàn xã hội",
+     "answer": "left"
+    },
+    {
+     "text": "Hợp tác quốc tế, bảo vệ Tổ quốc",
+     "answer": "right"
+    }
+   ],
+   "explain": "Phân loại theo phạm vi hoạt động."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chức năng của nhà nước là những phương diện hoạt động {{cơ bản}} của nhà nước, phù hợp với {{bản chất}}, mục đích, nhiệm vụ của nhà nước.",
+   "bank_extra": [
+    "phụ",
+    "hình thức"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hai phương pháp thực hiện chức năng nhà nước: {{thuyết phục}} và {{cưỡng chế}}.",
+   "bank_extra": [
+    "tuyên truyền",
+    "thương lượng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chức năng của Quốc hội đồng nhất với chức năng của nhà nước.",
+   "answer": false,
+   "explain": "Sai. Chức năng nhà nước là của toàn bộ máy; mỗi cơ quan có chức năng riêng góp phần thực hiện chức năng nhà nước."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm và phân loại chức năng nhà nước.",
+   "model": "Phương diện hoạt động cơ bản phù hợp bản chất, nhiệm vụ, điều kiện kinh tế – xã hội; chia thành đối nội (kinh tế, xã hội, an ninh…) và đối ngoại (bảo vệ Tổ quốc, hợp tác quốc tế); thực hiện qua xây dựng, tổ chức thực hiện, bảo vệ pháp luật.",
+   "keywords": [
+    "phương diện hoạt động",
+    "đối nội",
+    "đối ngoại",
+    "bản chất"
+   ]
+  }
+ ]
+}

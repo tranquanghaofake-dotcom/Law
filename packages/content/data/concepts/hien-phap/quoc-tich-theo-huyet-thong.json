@@ -125,6 +125,13 @@
     "không quốc tịch",
     "bỏ rơi"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Trẻ em sinh ra trên lãnh thổ Việt Nam thì có quốc tịch Việt Nam.",
+   "answer": false,
+   "explain": "Sai. Việt Nam chủ yếu theo nguyên tắc huyết thống (Điều 15, 16 Luật Quốc tịch); nơi sinh chỉ là căn cứ trong một số trường hợp, như cha mẹ là người không quốc tịch có nơi thường trú tại Việt Nam (Điều 17) hoặc trẻ bị bỏ rơi (Điều 18). (Nhận định trong bộ câu hỏi ôn tập Luật Hiến pháp, Drive HLU.)"
   }
  ]
 }

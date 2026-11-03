@@ -1,0 +1,120 @@
+{
+ "id": "xu-phat-khong-lap-bien-ban",
+ "subject": "hanh-chinh",
+ "chapter": "v13",
+ "term": "Xử phạt không lập biên bản và thời hạn ra quyết định",
+ "definition": "Xử phạt vi phạm hành chính không lập biên bản được áp dụng đối với các trường hợp sau: a) Xử phạt cảnh cáo hoặc phạt tiền đến 500.000 đồng đối với cá nhân, 1.000.000 đồng đối với tổ chức; (…) Trường hợp vi phạm hành chính được phát hiện bằng phương tiện, thiết bị kỹ thuật, nghiệp vụ, thì phải lập biên bản. (…) Đối với vụ việc không thuộc trường hợp quy định tại điểm b và điểm c khoản này, thời hạn ra quyết định xử phạt là 07 ngày làm việc, kể từ ngày lập biên bản vi phạm hành chính;",
+ "plain": "Hai thủ tục: KHÔNG LẬP BIÊN BẢN (cảnh cáo; phạt đến 500.000 đồng cá nhân / 1.000.000 đồng tổ chức) → quyết định TẠI CHỖ; CÓ LẬP BIÊN BẢN (các trường hợp còn lại; phát hiện bằng thiết bị kỹ thuật như camera phạt nguội luôn phải lập biên bản). Thời hạn ra quyết định (Điều 66, sửa đổi 2025): 07 NGÀY LÀM VIỆC từ ngày lập biên bản (chuyển hồ sơ: 10 ngày làm việc); có giải trình, xác minh: 01 THÁNG; đặc biệt nghiêm trọng, phức tạp: 02 THÁNG. Người vi phạm có quyền GIẢI TRÌNH (Điều 61).",
+ "example": "Cảnh sát giao thông phạt 300.000 đồng người không đội mũ bảo hiểm: có thể xử phạt không lập biên bản, ra quyết định tại chỗ. Vi phạm phát hiện qua camera thì phải lập biên bản.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điểm a khoản 1, khoản 2 Điều 56; đoạn đầu điểm a khoản 1 Điều 66 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Vi-pham-hanh-chinh/Van-ban-hop-nhat-90-VBHN-VPQH-2026-Luat-Xu-ly-vi-pham-hanh-chinh-699548.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "canh-cao",
+  "phat-tien-hanh-chinh",
+  "cuong-che-thi-hanh-xu-phat"
+ ],
+ "keywords": [
+  "cảnh cáo hoặc phạt đến 500.000 đồng cá nhân",
+  "1.000.000 đồng tổ chức",
+  "phát hiện bằng thiết bị kỹ thuật phải lập biên bản",
+  "07 ngày làm việc"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Xử phạt không lập biên bản áp dụng khi phạt tiền cá nhân đến mức nào?",
+   "options": [
+    "Đến 500.000 đồng",
+    "Đến 250.000 đồng",
+    "Đến 1.000.000 đồng",
+    "Đến 5.000.000 đồng"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 56.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 56 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Vi phạm phát hiện bằng camera giám sát giao thông thì sao?",
+   "options": [
+    "Phải lập biên bản",
+    "Không cần lập biên bản",
+    "Chỉ cảnh cáo",
+    "Không xử phạt"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 56.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 56 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Không lập biên bản",
+   "right": "Phải lập biên bản",
+   "cases": [
+    {
+     "text": "Phạt cá nhân 300.000 đồng tại chỗ",
+     "answer": "left"
+    },
+    {
+     "text": "Phạt tổ chức 5.000.000 đồng",
+     "answer": "right"
+    },
+    {
+     "text": "Vi phạm phát hiện qua camera",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 56, 57."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Xử phạt không lập biên bản áp dụng với xử phạt {{cảnh cáo}} hoặc phạt tiền đến 500.000 đồng đối với cá nhân, {{1.000.000}} đồng đối với tổ chức.",
+   "bank_extra": [
+    "tước giấy phép",
+    "2.000.000"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thời hạn ra quyết định xử phạt thông thường là {{07}} ngày làm việc, kể từ ngày lập biên bản vi phạm hành chính.",
+   "bank_extra": [
+    "03",
+    "15"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi vi phạm phạt dưới 500.000 đồng đều được xử phạt không lập biên bản, kể cả khi phát hiện qua camera.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 56: phát hiện bằng phương tiện, thiết bị kỹ thuật thì phải lập biên bản."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày thủ tục xử phạt không lập biên bản và thời hạn ra quyết định xử phạt.",
+   "model": "Không lập biên bản khi cảnh cáo hoặc phạt đến 500.000 đồng (cá nhân), 1.000.000 đồng (tổ chức), ra quyết định tại chỗ; phát hiện bằng thiết bị kỹ thuật phải lập biên bản (Điều 56); thời hạn ra quyết định 07 ngày làm việc, 01 tháng nếu giải trình, xác minh, 02 tháng nếu phức tạp (Điều 66).",
+   "keywords": [
+    "500.000",
+    "tại chỗ",
+    "thiết bị kỹ thuật",
+    "07 ngày"
+   ]
+  }
+ ]
+}

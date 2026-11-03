@@ -1,0 +1,115 @@
+{
+ "id": "cong-ty-me-con",
+ "subject": "thuong-mai-1",
+ "chapter": "v10",
+ "term": "Công ty mẹ, công ty con",
+ "definition": "Một công ty được coi là công ty mẹ của công ty khác nếu thuộc một trong các trường hợp sau đây: a) Sở hữu trên 50% vốn điều lệ hoặc tổng số cổ phần phổ thông của công ty đó; b) Có quyền trực tiếp hoặc gián tiếp quyết định bổ nhiệm đa số hoặc tất cả thành viên Hội đồng quản trị, Giám đốc hoặc Tổng giám đốc của công ty đó; c) Có quyền quyết định việc sửa đổi, bổ sung Điều lệ của công ty đó. Công ty con không được đầu tư mua cổ phần, góp vốn vào công ty mẹ. Các công ty con của cùng một công ty mẹ không được đồng thời cùng góp vốn, mua cổ phần để sở hữu chéo lẫn nhau.",
+ "plain": "Ba tiêu chí (chỉ cần MỘT): SỞ HỮU trên 50% vốn điều lệ/cổ phần phổ thông; quyền BỔ NHIỆM đa số HĐQT, Giám đốc; quyền SỬA ĐỔI ĐIỀU LỆ. CẤM: công ty con góp vốn, mua cổ phần của CÔNG TY MẸ; các công ty con cùng mẹ SỞ HỮU CHÉO lẫn nhau. Công ty con có mẹ là DNNN ≥ 65% vốn không được cùng góp vốn thành lập doanh nghiệp khác (khoản 3). Mỗi công ty vẫn là pháp nhân độc lập; \"nhóm công ty\" (tập đoàn) không có tư cách pháp nhân.",
+ "example": "Công ty A sở hữu 60% vốn công ty B: A là công ty mẹ của B; B không được mua cổ phần của A.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 195 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "doanh-nghiep-nha-nuoc",
+  "to-chuc-lai-doanh-nghiep"
+ ],
+ "keywords": [
+  "sở hữu trên 50%",
+  "quyền bổ nhiệm đa số HĐQT, Giám đốc",
+  "quyền sửa đổi Điều lệ",
+  "cấm sở hữu chéo"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Công ty được coi là công ty mẹ khi sở hữu bao nhiêu vốn điều lệ của công ty khác?",
+   "options": [
+    "Trên 50%",
+    "Từ 30%",
+    "Từ 25%",
+    "100%"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 195.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 195 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Công ty con có được góp vốn, mua cổ phần của công ty mẹ không?",
+   "options": [
+    "Không",
+    "Có",
+    "Có nếu dưới 10%",
+    "Có nếu được HĐQT đồng ý"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 195.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 195 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Căn cứ xác định công ty mẹ",
+   "right": "Hành vi bị cấm",
+   "cases": [
+    {
+     "text": "Có quyền quyết định sửa đổi Điều lệ công ty khác",
+     "answer": "left"
+    },
+    {
+     "text": "Hai công ty con cùng mẹ sở hữu chéo lẫn nhau",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 195."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Một công ty là công ty mẹ nếu sở hữu {{trên 50%}} vốn điều lệ hoặc có quyền bổ nhiệm {{đa số}} thành viên Hội đồng quản trị, Giám đốc.",
+   "bank_extra": [
+    "từ 20%",
+    "thiểu số"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Các công ty con của cùng một công ty mẹ không được đồng thời cùng góp vốn, mua cổ phần để sở hữu {{chéo}} lẫn nhau.",
+   "bank_extra": [
+    "riêng",
+    "chung"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Công ty mẹ và các công ty con hợp thành một pháp nhân duy nhất.",
+   "answer": false,
+   "explain": "Sai. Mỗi công ty là pháp nhân độc lập; nhóm công ty không có tư cách pháp nhân."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày tiêu chí xác định công ty mẹ và các hạn chế đối với công ty con.",
+   "model": "Công ty mẹ: sở hữu trên 50% vốn điều lệ, cổ phần phổ thông; hoặc có quyền bổ nhiệm đa số HĐQT, Giám đốc; hoặc có quyền sửa đổi Điều lệ (khoản 1); công ty con không được góp vốn vào công ty mẹ; các công ty con cùng mẹ không được sở hữu chéo (khoản 2 Điều 195).",
+   "keywords": [
+    "trên 50%",
+    "bổ nhiệm",
+    "Điều lệ",
+    "sở hữu chéo"
+   ]
+  }
+ ]
+}

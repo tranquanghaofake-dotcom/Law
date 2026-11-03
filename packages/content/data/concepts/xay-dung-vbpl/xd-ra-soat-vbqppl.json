@@ -1,0 +1,118 @@
+{
+ "id": "xd-ra-soat-vbqppl",
+ "subject": "xay-dung-vbpl",
+ "chapter": "v6",
+ "term": "Rà soát văn bản quy phạm pháp luật",
+ "definition": "Rà soát văn bản quy phạm pháp luật là việc xem xét, đối chiếu, đánh giá các quy định của văn bản được rà soát nhằm phát hiện, xử lý hoặc kiến nghị xử lý các quy định mâu thuẫn, chồng chéo, hết hiệu lực hoặc không còn phù hợp.",
+ "plain": "Khác KIỂM TRA (xét tính hợp pháp của văn bản bị nghi trái pháp luật), RÀ SOÁT đối chiếu văn bản với tình hình pháp luật và thực tiễn ĐÃ THAY ĐỔI để phát hiện mâu thuẫn, chồng chéo, hết hiệu lực, không còn phù hợp; thường đi cùng HỆ THỐNG HÓA (tập hợp, sắp xếp, công bố danh mục văn bản còn/hết hiệu lực). Trách nhiệm rà soát: Bộ, ngành với văn bản thuộc lĩnh vực mình; UBTVQH quyết định tổng rà soát theo đề xuất của Chính phủ (Điều 64). Cơ sở rà soát: văn bản mới ban hành, thay đổi thực tiễn.",
+ "example": "Luật Đất đai mới có hiệu lực, Bộ Nông nghiệp và Môi trường rà soát các thông tư cũ, phát hiện 5 thông tư mâu thuẫn và đề xuất bãi bỏ, sửa đổi.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 5 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-54-VBHN-VPQH-2025-Luat-Ban-hanh-van-ban-quy-pham-phap-luat-669858.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "xd-kiem-tra-vbqppl",
+  "xd-het-hieu-luc",
+  "xd-sua-doi-bai-bo"
+ ],
+ "keywords": [
+  "xem xét, đối chiếu",
+  "mâu thuẫn, chồng chéo",
+  "hết hiệu lực",
+  "không còn phù hợp",
+  "hệ thống hóa"
+ ],
+ "note": "Luật Ban hành văn bản quy phạm pháp luật 64/2025/QH15 có hiệu lực từ 01/4/2025, thay thế Luật 80/2015/QH13 (sửa đổi bởi Luật 63/2020/QH14) mà đề cương HLU 2019 còn dẫn; được sửa đổi bởi Luật 87/2025/QH15 có hiệu lực từ 01/7/2025 — văn bản hợp nhất 54/VBHN-VPQH ngày 11/8/2025. Luật mới bỏ quy trình \"lập đề nghị xây dựng luật\" theo chương trình hằng năm kiểu cũ, tách \"quy trình xây dựng chính sách\" và bỏ thẩm quyền ban hành VBQPPL của cấp huyện (từ 01/7/2025). Dự án Luật Văn bản quy phạm pháp luật (thay thế) đang được Quốc hội khóa XVI xem xét, chưa có hiệu lực.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Rà soát VBQPPL nhằm phát hiện loại quy định nào?",
+   "options": [
+    "Quy định mâu thuẫn, chồng chéo, hết hiệu lực hoặc không còn phù hợp",
+    "Chỉ quy định trái Hiến pháp",
+    "Chỉ lỗi chính tả",
+    "Chỉ văn bản chưa đăng Công báo"
+   ],
+   "answer": 0,
+   "explain": "Khoản 5 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 5 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai quyết định tổng rà soát hệ thống VBQPPL?",
+   "options": [
+    "Ủy ban Thường vụ Quốc hội trên cơ sở đề xuất của Chính phủ",
+    "Bộ Tư pháp",
+    "Chủ tịch nước",
+    "Tòa án nhân dân tối cao"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 64.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 64 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Rà soát",
+   "right": "Kiểm tra",
+   "cases": [
+    {
+     "text": "Đối chiếu thông tư cũ với luật mới để tìm quy định không còn phù hợp",
+     "answer": "left"
+    },
+    {
+     "text": "Kết luận quyết định của UBND tỉnh trái luật",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 5 và khoản 6 Điều 3."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Rà soát VBQPPL là việc xem xét, {{đối chiếu}}, đánh giá các quy định nhằm phát hiện quy định {{mâu thuẫn, chồng chéo}}, hết hiệu lực hoặc không còn phù hợp.",
+   "bank_extra": [
+    "biểu quyết",
+    "trái Hiến pháp"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "{{Ủy ban Thường vụ Quốc hội}} quyết định tổng rà soát hệ thống văn bản quy phạm pháp luật trên cơ sở đề xuất của {{Chính phủ}}.",
+   "bank_extra": [
+    "Chủ tịch nước",
+    "Bộ Tư pháp"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Rà soát và kiểm tra văn bản quy phạm pháp luật là một hoạt động với cùng nội dung.",
+   "answer": false,
+   "explain": "Sai. Kiểm tra kết luận về hợp hiến, hợp pháp, thống nhất (khoản 6 Điều 3); rà soát phát hiện quy định mâu thuẫn, chồng chéo, hết hiệu lực, không còn phù hợp (khoản 5 Điều 3)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Phân biệt rà soát với kiểm tra văn bản quy phạm pháp luật.",
+   "model": "Rà soát: xem xét, đối chiếu để phát hiện mâu thuẫn, chồng chéo, hết hiệu lực, không còn phù hợp (khoản 5 Điều 3), gắn với hệ thống hóa (Điều 64). Kiểm tra: kết luận về hợp hiến, hợp pháp, thống nhất của văn bản đã ban hành để xử lý văn bản trái pháp luật (khoản 6 Điều 3, Điều 63).",
+   "keywords": [
+    "đối chiếu",
+    "không còn phù hợp",
+    "hợp pháp",
+    "xử lý"
+   ]
+  }
+ ]
+}

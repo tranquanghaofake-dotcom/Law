@@ -1,0 +1,106 @@
+{
+ "id": "llc-co-cau-qppl",
+ "subject": "ly-luan-nn-pl",
+ "chapter": "v5",
+ "term": "Cơ cấu của quy phạm pháp luật",
+ "definition": "Quy phạm pháp luật gồm ba bộ phận: giả định — nêu hoàn cảnh, điều kiện, chủ thể mà quy phạm tác động; quy định — nêu cách xử sự chủ thể phải, được hoặc không được làm; chế tài — nêu biện pháp tác động nhà nước dự kiến áp dụng với chủ thể không thực hiện đúng quy định.",
+ "plain": "GIẢ ĐỊNH trả lời \"ai, khi nào, trong điều kiện nào\"; QUY ĐỊNH trả lời \"phải làm gì, được làm gì, không được làm gì\" — bộ phận trung tâm; CHẾ TÀI trả lời \"hậu quả bất lợi nào nếu vi phạm\" (hình sự, hành chính, dân sự, kỷ luật). Trong thực tế một điều luật có thể không chứa đủ ba bộ phận (chế tài nằm ở văn bản khác) và một điều luật có thể chứa nhiều quy phạm; cần phân biệt QUY PHẠM với ĐIỀU LUẬT. Cách xác định: tìm chủ thể và hoàn cảnh (giả định), tìm mệnh lệnh (quy định), tìm hậu quả (chế tài).",
+ "example": "\"Người nào (giả định: chủ thể) trộm cắp tài sản trị giá từ 2.000.000 đồng (giả định: hoàn cảnh)... thì bị phạt cải tạo không giam giữ đến 03 năm hoặc phạt tù từ 06 tháng đến 03 năm (chế tài)\" — quy định (cấm trộm cắp) được hiểu ngầm.",
+ "source": {
+  "kind": "textbook",
+  "cite": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (Drive HLU/KÌ I NĂM I/LLCNN&PL/TÀI LIỆU ÔN THI LLC: VD8, VD9, VD11, VD12, VD13) và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "llc-quy-pham-phap-luat",
+  "llc-vi-pham-phap-luat",
+  "llc-trach-nhiem-phap-ly"
+ ],
+ "keywords": [
+  "giả định",
+  "quy định",
+  "chế tài",
+  "điều luật"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Bộ phận nào của quy phạm pháp luật nêu hoàn cảnh, điều kiện, chủ thể?",
+   "options": [
+    "Giả định",
+    "Quy định",
+    "Chế tài",
+    "Kết luận"
+   ],
+   "answer": 0,
+   "explain": "Giả định trả lời ai, khi nào."
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Bộ phận nào nêu hậu quả bất lợi khi không thực hiện đúng quy định?",
+   "options": [
+    "Chế tài",
+    "Giả định",
+    "Quy định",
+    "Tiền đề"
+   ],
+   "answer": 0,
+   "explain": "Chế tài."
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Giả định",
+   "right": "Chế tài",
+   "cases": [
+    {
+     "text": "\"Người từ đủ 18 tuổi trở lên\"",
+     "answer": "left"
+    },
+    {
+     "text": "\"bị phạt tiền từ 1.000.000 đồng đến 2.000.000 đồng\"",
+     "answer": "right"
+    }
+   ],
+   "explain": "Cơ cấu quy phạm pháp luật."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ba bộ phận của quy phạm pháp luật: {{giả định}}, quy định và {{chế tài}}.",
+   "bank_extra": [
+    "kết luận",
+    "mục đích"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bộ phận {{quy định}} nêu cách xử sự chủ thể phải, được hoặc không được làm — là bộ phận {{trung tâm}} của quy phạm.",
+   "bank_extra": [
+    "giả định",
+    "phụ"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mỗi điều luật luôn chứa đúng một quy phạm pháp luật với đủ ba bộ phận.",
+   "answer": false,
+   "explain": "Sai. Một điều luật có thể chứa nhiều quy phạm hoặc thiếu bộ phận (chế tài ở văn bản khác); quy phạm và điều luật không đồng nhất."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày cơ cấu quy phạm pháp luật và cách xác định từng bộ phận.",
+   "model": "Giả định (chủ thể, hoàn cảnh, điều kiện), quy định (cách xử sự phải, được, không được làm), chế tài (biện pháp bất lợi khi vi phạm); phân biệt quy phạm với điều luật.",
+   "keywords": [
+    "giả định",
+    "quy định",
+    "chế tài"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,112 @@
+{
+ "id": "llc-trach-nhiem-phap-ly",
+ "subject": "ly-luan-nn-pl",
+ "chapter": "v8",
+ "term": "Trách nhiệm pháp lý",
+ "definition": "Trách nhiệm pháp lý là sự bắt buộc phải gánh chịu hậu quả pháp lý bất lợi do có hành vi vi phạm pháp luật hoặc khi có thiệt hại xảy ra do những nguyên nhân khác được pháp luật quy định.",
+ "plain": "Đặc điểm: cơ sở là VI PHẠM PHÁP LUẬT (hoặc thiệt hại do nguyên nhân khác luật định — trách nhiệm bồi thường không cần lỗi); thể hiện sự LÊN ÁN của nhà nước; luôn BẤT LỢI cho chủ thể; là nghĩa vụ đặc biệt phát sinh từ vi phạm. Bốn loại tương ứng bốn loại vi phạm: HÌNH SỰ (nghiêm khắc nhất, chỉ tòa án áp dụng), HÀNH CHÍNH, KỶ LUẬT nhà nước, DÂN SỰ (bồi thường, khôi phục quyền). Một hành vi có thể đồng thời chịu nhiều loại (cán bộ tham ô: hình sự + kỷ luật + dân sự). TRUY CỨU trách nhiệm pháp lý: hoạt động áp dụng pháp luật của cơ quan có thẩm quyền, cá biệt hóa chế tài; căn cứ pháp lý (thẩm quyền, thủ tục, thời hiệu) và căn cứ thực tế (cấu thành vi phạm); yêu cầu hợp pháp, hợp lý, nhân đạo, kịp thời. Phân biệt trách nhiệm pháp lý với trách nhiệm đạo đức, chính trị.",
+ "example": "Công chức E lái xe công gây tai nạn khi say rượu: trách nhiệm hình sự (nếu đủ cấu thành), kỷ luật (buộc thôi việc), dân sự (bồi thường) có thể cùng áp dụng.",
+ "source": {
+  "kind": "textbook",
+  "cite": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (Drive HLU/KÌ I NĂM I/LLCNN&PL/TÀI LIỆU ÔN THI LLC: VD8, VD9, VD11, VD12, VD13) và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "llc-vi-pham-phap-luat",
+  "llc-cau-thanh-vppl",
+  "llc-toi-pham",
+  "llc-vi-pham-hanh-chinh"
+ ],
+ "keywords": [
+  "hậu quả bất lợi",
+  "vi phạm pháp luật",
+  "hình sự",
+  "hành chính",
+  "kỷ luật",
+  "dân sự",
+  "truy cứu"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Cơ sở của trách nhiệm pháp lý là gì?",
+   "options": [
+    "Vi phạm pháp luật hoặc thiệt hại do nguyên nhân khác được pháp luật quy định",
+    "Chỉ ý định vi phạm",
+    "Dư luận xã hội",
+    "Lỗi đạo đức"
+   ],
+   "answer": 0,
+   "explain": "VD13."
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Loại trách nhiệm pháp lý nào chỉ do Tòa án áp dụng?",
+   "options": [
+    "Trách nhiệm hình sự",
+    "Trách nhiệm hành chính",
+    "Trách nhiệm kỷ luật",
+    "Trách nhiệm dân sự ngoài tố tụng"
+   ],
+   "answer": 0,
+   "explain": "Hình phạt chỉ do Tòa án tuyên."
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Trách nhiệm pháp lý",
+   "right": "Không phải trách nhiệm pháp lý",
+   "cases": [
+    {
+     "text": "Bị phạt tiền do xây nhà không phép",
+     "answer": "left"
+    },
+    {
+     "text": "Bị bạn bè phê bình vì thất hứa",
+     "answer": "right"
+    }
+   ],
+   "explain": "VD13."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Trách nhiệm pháp lý là sự bắt buộc phải gánh chịu hậu quả pháp lý {{bất lợi}} do có hành vi {{vi phạm pháp luật}}.",
+   "bank_extra": [
+    "có lợi",
+    "trái đạo đức"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bốn loại trách nhiệm pháp lý: {{hình sự}}, hành chính, kỷ luật nhà nước và {{dân sự}}.",
+   "bank_extra": [
+    "chính trị",
+    "đạo đức"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Trách nhiệm pháp lý chỉ phát sinh khi có vi phạm pháp luật.",
+   "answer": false,
+   "explain": "Sai. Có trường hợp luật quy định trách nhiệm khi có thiệt hại dù không có vi phạm (ví dụ bồi thường thiệt hại do nguồn nguy hiểm cao độ)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm, đặc điểm, các loại trách nhiệm pháp lý và căn cứ truy cứu.",
+   "model": "Bắt buộc gánh chịu hậu quả bất lợi do vi phạm pháp luật hoặc thiệt hại luật định; bất lợi, thể hiện sự lên án của nhà nước; bốn loại hình sự, hành chính, kỷ luật, dân sự; truy cứu dựa trên căn cứ pháp lý và cấu thành vi phạm.",
+   "keywords": [
+    "bất lợi",
+    "hình sự",
+    "hành chính",
+    "dân sự",
+    "cấu thành"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,119 @@
+{
+ "id": "pham-vi-dieu-chinh-luat-dan-su",
+ "subject": "dan-su",
+ "chapter": "v1",
+ "term": "Phạm vi điều chỉnh của luật dân sự",
+ "definition": "Bộ luật này quy định địa vị pháp lý, chuẩn mực pháp lý về cách ứng xử của cá nhân, pháp nhân; quyền, nghĩa vụ về nhân thân và tài sản của cá nhân, pháp nhân trong các quan hệ được hình thành trên cơ sở bình đẳng, tự do ý chí, độc lập về tài sản và tự chịu trách nhiệm (sau đây gọi chung là quan hệ dân sự).",
+ "plain": "Luật dân sự điều chỉnh hai nhóm quan hệ: quan hệ TÀI SẢN và quan hệ NHÂN THÂN, giữa cá nhân, pháp nhân. Dấu hiệu nhận biết \"quan hệ dân sự\": hình thành trên cơ sở BÌNH ĐẲNG, TỰ DO Ý CHÍ, ĐỘC LẬP VỀ TÀI SẢN, TỰ CHỊU TRÁCH NHIỆM. Bộ luật Dân sự 2015 bỏ chủ thể \"hộ gia đình, tổ hợp tác\" khỏi vị trí chủ thể độc lập (chỉ còn cá nhân, pháp nhân).",
+ "example": "Hai người ký hợp đồng mua bán xe máy là quan hệ dân sự (bình đẳng, tự nguyện); còn người dân nộp phạt vi phạm giao thông cho công an là quan hệ hành chính (quyền lực – phục tùng).",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 1 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nguyen-tac-co-ban-luat-dan-su",
+  "nang-luc-phap-luat-dan-su"
+ ],
+ "keywords": [
+  "quan hệ tài sản",
+  "quan hệ nhân thân",
+  "bình đẳng, tự do ý chí",
+  "độc lập về tài sản"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 1 Bộ luật Dân sự 2015, chủ thể của quan hệ dân sự gồm những ai?",
+   "options": [
+    "Cá nhân, pháp nhân",
+    "Cá nhân, pháp nhân, hộ gia đình, tổ hợp tác",
+    "Chỉ cá nhân",
+    "Cơ quan nhà nước và công dân"
+   ],
+   "answer": 0,
+   "explain": "Điều 1 chỉ nêu cá nhân, pháp nhân.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 1 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quan hệ nào thuộc đối tượng điều chỉnh của luật dân sự?",
+   "options": [
+    "Hai bên thỏa thuận cho thuê nhà",
+    "Công an xử phạt người vi phạm giao thông",
+    "Tòa án tuyên án hình sự",
+    "Cơ quan thuế ấn định thuế"
+   ],
+   "answer": 0,
+   "explain": "Quan hệ dân sự hình thành trên cơ sở bình đẳng, tự do ý chí.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 1 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quan hệ dân sự",
+   "right": "Không phải quan hệ dân sự",
+   "cases": [
+    {
+     "text": "Mua bán, tặng cho tài sản giữa hai người",
+     "answer": "left"
+    },
+    {
+     "text": "Quyền đối với họ, tên của cá nhân",
+     "answer": "left"
+    },
+    {
+     "text": "Quyết định xử phạt vi phạm hành chính",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 1 Bộ luật Dân sự 2015."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quan hệ dân sự được hình thành trên cơ sở bình đẳng, tự do ý chí, độc lập về {{tài sản}} và tự chịu {{trách nhiệm}}.",
+   "bank_extra": [
+    "quyền lực",
+    "phục tùng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bộ luật Dân sự quy định quyền, nghĩa vụ về {{nhân thân}} và tài sản của cá nhân, pháp nhân.",
+   "bank_extra": [
+    "hành chính",
+    "hình sự"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo Bộ luật Dân sự 2015, hộ gia đình vẫn là chủ thể độc lập của quan hệ dân sự như pháp nhân.",
+   "answer": false,
+   "explain": "Sai. Điều 1 chỉ nêu cá nhân, pháp nhân; quan hệ có sự tham gia của hộ gia đình, tổ hợp tác được giải quyết theo quy định riêng (Điều 101)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày phạm vi điều chỉnh của Bộ luật Dân sự 2015.",
+   "model": "Quy định địa vị pháp lý, chuẩn mực ứng xử của cá nhân, pháp nhân; quyền, nghĩa vụ về nhân thân và tài sản trong các quan hệ hình thành trên cơ sở bình đẳng, tự do ý chí, độc lập về tài sản, tự chịu trách nhiệm (Điều 1).",
+   "keywords": [
+    "nhân thân",
+    "tài sản",
+    "bình đẳng",
+    "tự do ý chí"
+   ]
+  }
+ ]
+}

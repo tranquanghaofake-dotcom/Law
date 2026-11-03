@@ -1,0 +1,115 @@
+{
+ "id": "quyen-khac-doi-voi-tai-san",
+ "subject": "dan-su",
+ "chapter": "v9",
+ "term": "Quyền khác đối với tài sản",
+ "definition": "Quyền khác đối với tài sản là quyền của chủ thể trực tiếp nắm giữ, chi phối tài sản thuộc quyền sở hữu của chủ thể khác. Quyền khác đối với tài sản bao gồm: a) Quyền đối với bất động sản liền kề; b) Quyền hưởng dụng; c) Quyền bề mặt.",
+ "plain": "Chế định MỚI của BLDS 2015 gồm ba quyền: QUYỀN ĐỐI VỚI BẤT ĐỘNG SẢN LIỀN KỀ (lối đi qua, cấp thoát nước, mắc đường dây…), QUYỀN HƯỞNG DỤNG (khai thác công dụng, hưởng hoa lợi, lợi tức của tài sản thuộc sở hữu người khác trong một thời hạn), QUYỀN BỀ MẶT (khai thác mặt đất, mặt nước, khoảng không, lòng đất thuộc quyền sử dụng của người khác). Quyền khác đối với tài sản vẫn có hiệu lực khi quyền sở hữu được chuyển giao (khoản 1 Điều 160).",
+ "example": "Nhà B nằm sau nhà A, không có lối ra đường công cộng: B có quyền yêu cầu A dành một lối đi hợp lý (quyền đối với bất động sản liền kề).",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 159 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quyen-so-huu",
+  "bat-dong-san-dong-san"
+ ],
+ "keywords": [
+  "bất động sản liền kề",
+  "hưởng dụng",
+  "bề mặt",
+  "tài sản của chủ thể khác"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quyền khác đối với tài sản theo Điều 159 gồm những quyền nào?",
+   "options": [
+    "Quyền đối với bất động sản liền kề, quyền hưởng dụng, quyền bề mặt",
+    "Quyền chiếm hữu, sử dụng, định đoạt",
+    "Quyền thế chấp, cầm cố, bảo lãnh",
+    "Quyền thừa kế, tặng cho"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 159.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 159 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khi chủ sở hữu bán tài sản, quyền khác đối với tài sản đó có còn hiệu lực không?",
+   "options": [
+    "Vẫn có hiệu lực, trừ trường hợp luật quy định khác",
+    "Tự động chấm dứt",
+    "Chỉ còn hiệu lực 1 năm",
+    "Phải đăng ký lại"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 160.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 160 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quyền đối với bất động sản liền kề",
+   "right": "Quyền bề mặt",
+   "cases": [
+    {
+     "text": "Lối đi qua đất của nhà bên cạnh",
+     "answer": "left"
+    },
+    {
+     "text": "Xây công trình trên mặt đất thuộc quyền sử dụng của người khác",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 245, 267 Bộ luật Dân sự 2015."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quyền khác đối với tài sản là quyền của chủ thể trực tiếp nắm giữ, chi phối tài sản thuộc quyền sở hữu của {{chủ thể khác}}. Gồm quyền đối với bất động sản liền kề, quyền {{hưởng dụng}}, quyền bề mặt.",
+   "bank_extra": [
+    "chính mình",
+    "thế chấp"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quyền bề mặt là một loại quyền {{khác}} đối với tài sản.",
+   "bank_extra": [
+    "sở hữu",
+    "nhân thân"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quyền hưởng dụng là quyền sở hữu tài sản.",
+   "answer": false,
+   "explain": "Sai. Quyền hưởng dụng là quyền khác đối với tài sản thuộc sở hữu của chủ thể khác (Điều 159)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm và các loại quyền khác đối với tài sản.",
+   "model": "Là quyền của chủ thể trực tiếp nắm giữ, chi phối tài sản thuộc quyền sở hữu của chủ thể khác; gồm quyền đối với bất động sản liền kề, quyền hưởng dụng, quyền bề mặt (Điều 159); vẫn có hiệu lực khi quyền sở hữu được chuyển giao (khoản 1 Điều 160).",
+   "keywords": [
+    "chủ thể khác",
+    "liền kề",
+    "hưởng dụng",
+    "bề mặt"
+   ]
+  }
+ ]
+}

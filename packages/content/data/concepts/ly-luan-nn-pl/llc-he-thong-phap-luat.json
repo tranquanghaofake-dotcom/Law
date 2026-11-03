@@ -1,0 +1,107 @@
+{
+ "id": "llc-he-thong-phap-luat",
+ "subject": "ly-luan-nn-pl",
+ "chapter": "v5",
+ "term": "Hệ thống pháp luật, ngành luật và chế định pháp luật",
+ "definition": "Hệ thống pháp luật là tổng thể các quy phạm pháp luật có mối liên hệ nội tại thống nhất, được phân định thành các chế định pháp luật và các ngành luật; ngành luật là tổng thể quy phạm điều chỉnh một lĩnh vực quan hệ xã hội có cùng tính chất bằng phương pháp điều chỉnh đặc thù; chế định pháp luật là nhóm quy phạm điều chỉnh một nhóm quan hệ xã hội cùng loại trong ngành luật.",
+ "plain": "Cấu trúc bên trong: QUY PHẠM → CHẾ ĐỊNH (nhóm quy phạm cùng loại: chế định hợp đồng, thừa kế) → NGÀNH LUẬT (dân sự, hình sự, hành chính, lao động…) → HỆ THỐNG PHÁP LUẬT. Căn cứ phân chia ngành luật: ĐỐI TƯỢNG ĐIỀU CHỈNH (loại quan hệ xã hội) và PHƯƠNG PHÁP ĐIỀU CHỈNH (bình đẳng thỏa thuận — dân sự; mệnh lệnh quyền uy — hành chính, hình sự). Phân biệt \"hệ thống pháp luật\" (cấu trúc bên trong) với \"hệ thống văn bản quy phạm pháp luật\" (hình thức bên ngoài, Điều 4 Luật BHVBQPPL). Tiêu chí đánh giá: toàn diện, đồng bộ, phù hợp, kỹ thuật lập pháp.",
+ "example": "Chế định hợp đồng và chế định thừa kế cùng thuộc ngành Luật Dân sự vì đều điều chỉnh quan hệ tài sản bằng phương pháp bình đẳng, thỏa thuận.",
+ "source": {
+  "kind": "textbook",
+  "cite": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (Drive HLU/KÌ I NĂM I/LLCNN&PL/TÀI LIỆU ÔN THI LLC: VD8, VD9, VD11, VD12, VD13) và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "llc-quy-pham-phap-luat",
+  "llc-hinh-thuc-phap-luat",
+  "llc-co-cau-qppl"
+ ],
+ "keywords": [
+  "ngành luật",
+  "chế định",
+  "đối tượng điều chỉnh",
+  "phương pháp điều chỉnh"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Căn cứ phân chia các ngành luật?",
+   "options": [
+    "Đối tượng điều chỉnh và phương pháp điều chỉnh",
+    "Số lượng điều luật",
+    "Cơ quan ban hành",
+    "Thời điểm ban hành"
+   ],
+   "answer": 0,
+   "explain": "Lý luận chung về hệ thống pháp luật."
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chế định pháp luật là gì?",
+   "options": [
+    "Nhóm quy phạm điều chỉnh một nhóm quan hệ xã hội cùng loại trong ngành luật",
+    "Một điều luật",
+    "Một văn bản luật",
+    "Toàn bộ pháp luật của một nước"
+   ],
+   "answer": 0,
+   "explain": "Chế định: hợp đồng, thừa kế, hôn nhân…"
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Ngành luật",
+   "right": "Chế định pháp luật",
+   "cases": [
+    {
+     "text": "Luật Dân sự",
+     "answer": "left"
+    },
+    {
+     "text": "Chế định thừa kế",
+     "answer": "right"
+    }
+   ],
+   "explain": "Cấu trúc hệ thống pháp luật."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hệ thống pháp luật được phân định thành các {{chế định}} pháp luật và các {{ngành luật}}.",
+   "bank_extra": [
+    "điều luật",
+    "bộ luật"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ngành luật điều chỉnh một lĩnh vực quan hệ xã hội bằng {{phương pháp điều chỉnh}} đặc thù; hai căn cứ phân ngành: {{đối tượng điều chỉnh}} và phương pháp điều chỉnh.",
+   "bank_extra": [
+    "cơ quan ban hành",
+    "số lượng quy phạm"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hệ thống pháp luật và hệ thống văn bản quy phạm pháp luật là một.",
+   "answer": false,
+   "explain": "Sai. Hệ thống pháp luật là cấu trúc bên trong (quy phạm, chế định, ngành); hệ thống VBQPPL là hình thức bên ngoài (Hiến pháp, luật, nghị định…)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày cấu trúc hệ thống pháp luật và căn cứ phân chia ngành luật.",
+   "model": "Quy phạm → chế định → ngành luật → hệ thống pháp luật; phân ngành theo đối tượng điều chỉnh và phương pháp điều chỉnh; phân biệt với hệ thống VBQPPL.",
+   "keywords": [
+    "chế định",
+    "ngành luật",
+    "đối tượng điều chỉnh",
+    "phương pháp điều chỉnh"
+   ]
+  }
+ ]
+}

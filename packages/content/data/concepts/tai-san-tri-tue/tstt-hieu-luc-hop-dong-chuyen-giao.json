@@ -1,0 +1,116 @@
+{
+ "id": "tstt-hieu-luc-hop-dong-chuyen-giao",
+ "subject": "tai-san-tri-tue",
+ "chapter": "v4",
+ "term": "Hiệu lực của hợp đồng chuyển giao quyền sở hữu công nghiệp",
+ "definition": "Đối với các loại quyền sở hữu công nghiệp được xác lập trên cơ sở đăng ký theo quy định tại điểm a khoản 3 Điều 6 của Luật này, hợp đồng chuyển nhượng quyền sở hữu công nghiệp chỉ có hiệu lực khi đã được đăng ký tại cơ quan quản lý nhà nước về quyền sở hữu công nghiệp. (…) hợp đồng sử dụng đối tượng sở hữu công nghiệp có hiệu lực theo thỏa thuận giữa các bên.",
+ "plain": "Quy tắc kép: hợp đồng CHUYỂN NHƯỢNG sáng chế, kiểu dáng, thiết kế bố trí, nhãn hiệu (quyền xác lập bằng đăng ký) chỉ có hiệu lực khi ĐĂNG KÝ tại Cục SHTT; hợp đồng SỬ DỤNG (li-xăng) có hiệu lực theo THỎA THUẬN, nhưng (trừ li-xăng nhãn hiệu) phải đăng ký mới có giá trị pháp lý với BÊN THỨ BA (khoản 3). Li-xăng mặc nhiên chấm dứt nếu quyền SHCN của bên giao chấm dứt (khoản 4). Bí mật kinh doanh, tên thương mại không xác lập bằng đăng ký nên hợp đồng không phải đăng ký.",
+ "example": "Hợp đồng li-xăng nhãn hiệu giữa X và Y có hiệu lực từ ngày ký theo thỏa thuận, không bắt buộc đăng ký; hợp đồng chuyển nhượng chính nhãn hiệu đó cho Y chỉ có hiệu lực khi Cục SHTT ghi nhận.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, 2 Điều 148 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tstt-chuyen-nhuong-quyen-shcn",
+  "tstt-chuyen-quyen-su-dung",
+  "tstt-dang-hop-dong-li-xang"
+ ],
+ "keywords": [
+  "đăng ký",
+  "hiệu lực",
+  "thỏa thuận",
+  "bên thứ ba"
+ ],
+ "note": "Luật Sở hữu trí tuệ 50/2005/QH11 (hiệu lực 01/7/2006) đã được sửa đổi bởi Luật 36/2009/QH12, 42/2019/QH14, 07/2022/QH15, 93/2025/QH15 và 131/2025/QH15 (hiệu lực 01/4/2026) — văn bản hợp nhất 67/VBHN-VPQH 2026; ghi chép lớp học còn dẫn Nghị định 105/2006/NĐ-CP và Nghị định 99/2013/NĐ-CP, cần tự kiểm tra hiệu lực của các nghị định này trước khi dùng.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hợp đồng chuyển nhượng nhãn hiệu có hiệu lực khi nào?",
+   "options": [
+    "Khi đã được đăng ký tại cơ quan quản lý nhà nước về quyền SHCN",
+    "Khi hai bên ký",
+    "Khi công chứng",
+    "Khi thanh toán xong"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 148.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 148 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hợp đồng sử dụng đối tượng SHCN có hiệu lực khi nào?",
+   "options": [
+    "Theo thỏa thuận giữa các bên",
+    "Chỉ khi đăng ký tại Cục SHTT",
+    "Sau 30 ngày kể từ ngày ký",
+    "Khi được Bộ Khoa học và Công nghệ phê duyệt"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 148.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 148 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Phải đăng ký mới có hiệu lực",
+   "right": "Có hiệu lực theo thỏa thuận",
+   "cases": [
+    {
+     "text": "Hợp đồng chuyển nhượng sáng chế",
+     "answer": "left"
+    },
+    {
+     "text": "Hợp đồng sử dụng nhãn hiệu",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1, 2 Điều 148."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hợp đồng {{chuyển nhượng}} quyền SHCN xác lập trên cơ sở đăng ký chỉ có hiệu lực khi đã được {{đăng ký}} tại cơ quan quản lý nhà nước về quyền SHCN.",
+   "bank_extra": [
+    "sử dụng",
+    "công chứng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hợp đồng sử dụng đối tượng SHCN có hiệu lực theo {{thỏa thuận}} giữa các bên; trừ hợp đồng sử dụng {{nhãn hiệu}}, phải đăng ký mới có giá trị pháp lý với bên thứ ba.",
+   "bank_extra": [
+    "quyết định của Cục",
+    "sáng chế"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hợp đồng sử dụng đối tượng SHCN mặc nhiên chấm dứt nếu quyền SHCN của bên giao bị chấm dứt.",
+   "answer": true,
+   "explain": "Đúng. Khoản 4 Điều 148."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu quy tắc hiệu lực của hợp đồng chuyển nhượng và hợp đồng sử dụng đối tượng SHCN.",
+   "model": "Chuyển nhượng quyền xác lập bằng đăng ký: hiệu lực khi đăng ký tại Cục SHTT (khoản 1 Điều 148); hợp đồng sử dụng: hiệu lực theo thỏa thuận (khoản 2), trừ li-xăng nhãn hiệu phải đăng ký mới có giá trị với bên thứ ba (khoản 3); chấm dứt theo quyền của bên giao (khoản 4).",
+   "keywords": [
+    "đăng ký",
+    "thỏa thuận",
+    "bên thứ ba"
+   ]
+  }
+ ]
+}

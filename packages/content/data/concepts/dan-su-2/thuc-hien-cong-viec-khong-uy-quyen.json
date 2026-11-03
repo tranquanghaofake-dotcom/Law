@@ -1,0 +1,115 @@
+{
+ "id": "thuc-hien-cong-viec-khong-uy-quyen",
+ "subject": "dan-su-2",
+ "chapter": "v10",
+ "term": "Thực hiện công việc không có ủy quyền",
+ "definition": "Thực hiện công việc không có ủy quyền là việc một người không có nghĩa vụ thực hiện công việc nhưng đã tự nguyện thực hiện công việc đó vì lợi ích của người có công việc được thực hiện khi người này không biết hoặc biết mà không phản đối.",
+ "plain": "Điều kiện: (1) KHÔNG CÓ NGHĨA VỤ thực hiện; (2) TỰ NGUYỆN; (3) VÌ LỢI ÍCH người có công việc; (4) người có công việc KHÔNG BIẾT hoặc BIẾT MÀ KHÔNG PHẢN ĐỐI. Hậu quả: người có công việc phải thanh toán chi phí hợp lý, có thể trả thù lao (Điều 576); người thực hiện phải làm phù hợp khả năng, điều kiện và báo cho người có công việc.",
+ "example": "Hàng xóm đi vắng, mái nhà bị bão tốc, anh A tự bỏ tiền che chắn tạm để tránh mưa dột: thực hiện công việc không có ủy quyền; hàng xóm phải thanh toán chi phí hợp lý.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 574 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nghia-vu-hoan-tra",
+  "can-cu-phat-sinh-nghia-vu"
+ ],
+ "keywords": [
+  "không có nghĩa vụ",
+  "tự nguyện",
+  "vì lợi ích người có công việc",
+  "không biết hoặc biết mà không phản đối"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Điều kiện nào thuộc thực hiện công việc không có ủy quyền?",
+   "options": [
+    "Người có công việc không biết hoặc biết mà không phản đối",
+    "Có hợp đồng ủy quyền",
+    "Người thực hiện có nghĩa vụ theo luật",
+    "Người có công việc phản đối"
+   ],
+   "answer": 0,
+   "explain": "Điều 574.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 574 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người thực hiện công việc không có ủy quyền có quyền yêu cầu gì?",
+   "options": [
+    "Thanh toán chi phí hợp lý và có thể được trả thù lao",
+    "Được sở hữu tài sản của người có công việc",
+    "Phạt người có công việc",
+    "Không có quyền gì"
+   ],
+   "answer": 0,
+   "explain": "Điều 576.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 576 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thực hiện công việc không có ủy quyền",
+   "right": "Không phải",
+   "cases": [
+    {
+     "text": "Tự sửa ống nước bị vỡ nhà hàng xóm đi vắng",
+     "answer": "left"
+    },
+    {
+     "text": "Tự ý sửa nhà hàng xóm dù họ đã phản đối",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 574."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Một người không có {{nghĩa vụ}} thực hiện công việc nhưng đã {{tự nguyện}} thực hiện công việc đó vì lợi ích của người có công việc.",
+   "bank_extra": [
+    "quyền",
+    "bị ép buộc"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người có công việc không biết hoặc biết mà không {{phản đối}}.",
+   "bank_extra": [
+    "đồng ý bằng văn bản",
+    "khởi kiện"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người thực hiện công việc không có ủy quyền không được thanh toán chi phí vì tự nguyện làm.",
+   "answer": false,
+   "explain": "Sai. Điều 576: người có công việc phải thanh toán chi phí hợp lý."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm và điều kiện của thực hiện công việc không có ủy quyền.",
+   "model": "Là việc người không có nghĩa vụ tự nguyện thực hiện công việc vì lợi ích của người có công việc khi người này không biết hoặc biết mà không phản đối (Điều 574); người có công việc phải thanh toán chi phí hợp lý (Điều 576).",
+   "keywords": [
+    "không có nghĩa vụ",
+    "tự nguyện",
+    "lợi ích",
+    "không phản đối"
+   ]
+  }
+ ]
+}

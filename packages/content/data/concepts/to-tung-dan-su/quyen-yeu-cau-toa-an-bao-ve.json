@@ -1,0 +1,114 @@
+{
+ "id": "quyen-yeu-cau-toa-an-bao-ve",
+ "subject": "to-tung-dan-su",
+ "chapter": "v1",
+ "term": "Quyền yêu cầu Tòa án bảo vệ quyền và lợi ích hợp pháp",
+ "definition": "Cơ quan, tổ chức, cá nhân do Bộ luật này quy định có quyền khởi kiện vụ án dân sự, yêu cầu giải quyết việc dân sự tại Tòa án có thẩm quyền để yêu cầu Tòa án bảo vệ công lý, bảo vệ quyền con người, quyền công dân, bảo vệ lợi ích của Nhà nước, quyền và lợi ích hợp pháp của mình hoặc của người khác. Tòa án không được từ chối giải quyết vụ việc dân sự vì lý do chưa có điều luật để áp dụng.",
+ "plain": "Hai nội dung: (1) QUYỀN KHỞI KIỆN vụ án, YÊU CẦU giải quyết việc dân sự; (2) Tòa án KHÔNG ĐƯỢC TỪ CHỐI vì CHƯA CÓ ĐIỀU LUẬT — khi đó áp dụng TẬP QUÁN, TƯƠNG TỰ PHÁP LUẬT, NGUYÊN TẮC CƠ BẢN của pháp luật dân sự, ÁN LỆ, LẼ CÔNG BẰNG (Điều 5, 6 BLDS; Điều 45 BLTTDS). Phân biệt VỤ ÁN (có tranh chấp, khởi kiện) và VIỆC DÂN SỰ (không tranh chấp, yêu cầu công nhận một sự kiện pháp lý).",
+ "example": "Tranh chấp về một loại tài sản số mới chưa có điều luật riêng: Tòa án vẫn phải thụ lý và giải quyết bằng tương tự pháp luật, nguyên tắc chung, lẽ công bằng.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, đoạn 1 khoản 2 Điều 4 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thu-tuc-To-tung/Van-ban-hop-nhat-21-VBHN-VPQH-2026-Bo-luat-To-dung-dan-su-696578.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quyen-quyet-dinh-tu-dinh-doat",
+  "tham-quyen-theo-vu-viec"
+ ],
+ "keywords": [
+  "quyền khởi kiện, yêu cầu",
+  "không được từ chối vì chưa có điều luật",
+  "vụ án và việc dân sự"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tòa án có được từ chối giải quyết vụ việc dân sự vì chưa có điều luật để áp dụng không?",
+   "options": [
+    "Không được",
+    "Được",
+    "Được nếu vụ việc phức tạp",
+    "Được nếu chưa có án lệ"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 4 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai có quyền khởi kiện vụ án dân sự theo khoản 1 Điều 4?",
+   "options": [
+    "Cơ quan, tổ chức, cá nhân do Bộ luật quy định",
+    "Chỉ công dân Việt Nam",
+    "Chỉ Viện kiểm sát",
+    "Chỉ luật sư"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 4 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Vụ án dân sự",
+   "right": "Việc dân sự",
+   "cases": [
+    {
+     "text": "Tranh chấp hợp đồng vay",
+     "answer": "left"
+    },
+    {
+     "text": "Yêu cầu tuyên bố một người mất tích",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 1, 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Cơ quan, tổ chức, cá nhân có quyền {{khởi kiện}} vụ án dân sự, yêu cầu giải quyết việc dân sự để bảo vệ quyền và lợi ích hợp pháp của mình hoặc của {{người khác}}.",
+   "bank_extra": [
+    "tố cáo",
+    "Nhà nước nước ngoài"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tòa án không được từ chối giải quyết vụ việc dân sự vì lý do chưa có {{điều luật}} để áp dụng.",
+   "bank_extra": [
+    "án lệ",
+    "đơn khởi kiện"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Khi chưa có điều luật áp dụng, Tòa án phải trả lại đơn khởi kiện.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 4: Tòa án không được từ chối vì lý do chưa có điều luật."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quyền yêu cầu Tòa án bảo vệ quyền và lợi ích hợp pháp.",
+   "model": "Cơ quan, tổ chức, cá nhân có quyền khởi kiện vụ án, yêu cầu giải quyết việc dân sự để bảo vệ công lý, quyền con người, lợi ích Nhà nước, quyền lợi của mình hoặc người khác (khoản 1 Điều 4); Tòa án không được từ chối vì chưa có điều luật (khoản 2).",
+   "keywords": [
+    "khởi kiện",
+    "yêu cầu",
+    "không được từ chối",
+    "điều luật"
+   ]
+  }
+ ]
+}

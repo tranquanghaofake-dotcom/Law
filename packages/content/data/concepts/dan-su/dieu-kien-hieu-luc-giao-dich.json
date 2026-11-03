@@ -1,0 +1,120 @@
+{
+ "id": "dieu-kien-hieu-luc-giao-dich",
+ "subject": "dan-su",
+ "chapter": "v4",
+ "term": "Điều kiện có hiệu lực của giao dịch dân sự",
+ "definition": "Giao dịch dân sự có hiệu lực khi có đủ các điều kiện sau đây: a) Chủ thể có năng lực pháp luật dân sự, năng lực hành vi dân sự phù hợp với giao dịch dân sự được xác lập; b) Chủ thể tham gia giao dịch dân sự hoàn toàn tự nguyện; c) Mục đích và nội dung của giao dịch dân sự không vi phạm điều cấm của luật, không trái đạo đức xã hội. Hình thức của giao dịch dân sự là điều kiện có hiệu lực của giao dịch dân sự trong trường hợp luật có quy định.",
+ "plain": "Ba điều kiện bắt buộc: CHỦ THỂ (năng lực phù hợp), TỰ NGUYỆN, MỤC ĐÍCH VÀ NỘI DUNG hợp pháp, hợp đạo đức. Điều kiện thứ tư, HÌNH THỨC, chỉ bắt buộc khi LUẬT có quy định (ví dụ hợp đồng mua bán nhà phải công chứng). Thiếu điều kiện thì giao dịch có thể vô hiệu (Điều 122–129). BLDS 2015 còn cho phép công nhận hiệu lực giao dịch vi phạm hình thức trong một số trường hợp đã thực hiện ít nhất hai phần ba nghĩa vụ (Điều 129).",
+ "example": "Hợp đồng mua bán ma túy vô hiệu vì nội dung vi phạm điều cấm của luật, dù hai bên tự nguyện và đủ năng lực.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 117 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "giao-dich-dan-su",
+  "giao-dich-vo-hieu-gia-tao",
+  "nguyen-tac-co-ban-luat-dan-su"
+ ],
+ "keywords": [
+  "năng lực chủ thể",
+  "tự nguyện",
+  "không vi phạm điều cấm, không trái đạo đức",
+  "hình thức khi luật quy định"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hình thức của giao dịch dân sự là điều kiện có hiệu lực khi nào?",
+   "options": [
+    "Khi luật có quy định",
+    "Trong mọi trường hợp",
+    "Khi các bên muốn",
+    "Không bao giờ"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 117.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 117 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Điều kiện nào thuộc điều kiện có hiệu lực của giao dịch dân sự theo khoản 1 Điều 117?",
+   "options": [
+    "Chủ thể tham gia hoàn toàn tự nguyện",
+    "Phải có người làm chứng",
+    "Phải đăng ký tại Ủy ban nhân dân",
+    "Giá trị trên 10 triệu đồng"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 1 Điều 117.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 117 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Điều kiện luôn bắt buộc",
+   "right": "Điều kiện chỉ bắt buộc khi luật quy định",
+   "cases": [
+    {
+     "text": "Chủ thể hoàn toàn tự nguyện",
+     "answer": "left"
+    },
+    {
+     "text": "Mục đích, nội dung không vi phạm điều cấm của luật",
+     "answer": "left"
+    },
+    {
+     "text": "Hợp đồng phải được công chứng, chứng thực",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1, 2 Điều 117."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Mục đích và nội dung của giao dịch dân sự không vi phạm {{điều cấm}} của luật, không trái {{đạo đức xã hội}}.",
+   "bank_extra": [
+    "chính sách",
+    "tập quán"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chủ thể tham gia giao dịch dân sự hoàn toàn {{tự nguyện}}.",
+   "bank_extra": [
+    "bí mật",
+    "có điều kiện"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi hợp đồng không được lập thành văn bản đều vô hiệu.",
+   "answer": false,
+   "explain": "Sai. Hình thức chỉ là điều kiện có hiệu lực khi luật có quy định (khoản 2 Điều 117)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các điều kiện có hiệu lực của giao dịch dân sự.",
+   "model": "Chủ thể có năng lực pháp luật, năng lực hành vi phù hợp; hoàn toàn tự nguyện; mục đích, nội dung không vi phạm điều cấm của luật, không trái đạo đức xã hội (khoản 1 Điều 117); hình thức là điều kiện có hiệu lực khi luật quy định (khoản 2).",
+   "keywords": [
+    "năng lực",
+    "tự nguyện",
+    "điều cấm",
+    "hình thức"
+   ]
+  }
+ ]
+}

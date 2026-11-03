@@ -1,0 +1,115 @@
+{
+ "id": "tstt-dang-hop-dong-li-xang",
+ "subject": "tai-san-tri-tue",
+ "chapter": "v4",
+ "term": "Các dạng hợp đồng sử dụng đối tượng sở hữu công nghiệp",
+ "definition": "Hợp đồng độc quyền là hợp đồng mà theo đó trong phạm vi và thời hạn chuyển giao, bên được chuyển quyền được độc quyền sử dụng đối tượng sở hữu công nghiệp, bên chuyển quyền không được ký kết hợp đồng sử dụng đối tượng sở hữu công nghiệp với bất kỳ bên thứ ba nào và chỉ được sử dụng đối tượng sở hữu công nghiệp đó nếu được phép của bên được chuyển quyền;",
+ "plain": "Ba dạng: ĐỘC QUYỀN — bên nhận độc quyền, bên giao không được cấp cho bên thứ ba và chỉ tự dùng nếu bên nhận cho phép; KHÔNG ĐỘC QUYỀN — bên giao vẫn được dùng và được ký với người khác (khoản 2); THỨ CẤP — bên chuyển quyền chính là người đã nhận li-xăng theo hợp đồng khác (khoản 3). Khi soạn hợp đồng phải ghi rõ dạng hợp đồng, có cho li-xăng thứ cấp hay không, điều kiện cho phép (Điều 144). Giá li-xăng độc quyền thường cao hơn vì bên giao tự trói tay mình.",
+ "example": "Công ty X cấp li-xăng độc quyền nhãn hiệu cho Y trên toàn Việt Nam: X không được cấp cho Z và muốn tự bán hàng mang nhãn hiệu đó phải được Y đồng ý. Nếu Y cấp tiếp cho Z: hợp đồng thứ cấp, chỉ được khi X cho phép.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 143 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tstt-chuyen-quyen-su-dung",
+  "tstt-hieu-luc-hop-dong-chuyen-giao"
+ ],
+ "keywords": [
+  "độc quyền",
+  "không độc quyền",
+  "thứ cấp",
+  "bên thứ ba"
+ ],
+ "note": "Luật Sở hữu trí tuệ 50/2005/QH11 (hiệu lực 01/7/2006) đã được sửa đổi bởi Luật 36/2009/QH12, 42/2019/QH14, 07/2022/QH15, 93/2025/QH15 và 131/2025/QH15 (hiệu lực 01/4/2026) — văn bản hợp nhất 67/VBHN-VPQH 2026; ghi chép lớp học còn dẫn Nghị định 105/2006/NĐ-CP và Nghị định 99/2013/NĐ-CP, cần tự kiểm tra hiệu lực của các nghị định này trước khi dùng.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trong hợp đồng độc quyền, bên chuyển quyền có được tự sử dụng đối tượng SHCN không?",
+   "options": [
+    "Chỉ khi được bên được chuyển quyền cho phép",
+    "Luôn được",
+    "Không bao giờ",
+    "Chỉ ngoài lãnh thổ Việt Nam"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 143.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 143 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hợp đồng thứ cấp là gì?",
+   "options": [
+    "Bên chuyển quyền là người được chuyển giao quyền sử dụng theo một hợp đồng khác",
+    "Hợp đồng ký lần thứ hai giữa hai bên cũ",
+    "Hợp đồng có giá trị thấp",
+    "Hợp đồng chưa đăng ký"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 143.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 143 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hợp đồng độc quyền",
+   "right": "Hợp đồng không độc quyền",
+   "cases": [
+    {
+     "text": "Bên giao không được ký với bất kỳ bên thứ ba nào",
+     "answer": "left"
+    },
+    {
+     "text": "Bên giao vẫn có quyền sử dụng và ký với người khác",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1, 2 Điều 143."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Trong hợp đồng {{độc quyền}}, bên chuyển quyền không được ký kết hợp đồng sử dụng với bất kỳ {{bên thứ ba}} nào.",
+   "bank_extra": [
+    "thứ cấp",
+    "cơ quan nhà nước"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hợp đồng {{không độc quyền}} là hợp đồng mà bên chuyển quyền vẫn có quyền sử dụng đối tượng SHCN và quyền ký kết hợp đồng sử dụng {{không độc quyền}} với người khác.",
+   "bank_extra": [
+    "độc quyền",
+    "chuyển nhượng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Bên nhận li-xăng không độc quyền có quyền cấm chủ sở hữu sử dụng đối tượng SHCN.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 143: trong hợp đồng không độc quyền, bên chuyển quyền vẫn có quyền sử dụng."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Kể và phân biệt ba dạng hợp đồng sử dụng đối tượng SHCN.",
+   "model": "Độc quyền: bên nhận độc quyền, bên giao không cấp cho bên thứ ba, tự dùng phải được phép; không độc quyền: bên giao vẫn dùng và cấp cho người khác; thứ cấp: bên giao là người nhận li-xăng theo hợp đồng khác (Điều 143).",
+   "keywords": [
+    "độc quyền",
+    "không độc quyền",
+    "thứ cấp"
+   ]
+  }
+ ]
+}

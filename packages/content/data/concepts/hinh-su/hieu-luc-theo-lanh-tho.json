@@ -1,0 +1,119 @@
+{
+ "id": "hieu-luc-theo-lanh-tho",
+ "subject": "hinh-su",
+ "chapter": "v2",
+ "term": "Hiệu lực của Bộ luật Hình sự trên lãnh thổ Việt Nam",
+ "definition": "Bộ luật Hình sự được áp dụng đối với mọi hành vi phạm tội thực hiện trên lãnh thổ nước Cộng hòa xã hội chủ nghĩa Việt Nam. Quy định này cũng được áp dụng đối với hành vi phạm tội hoặc hậu quả của hành vi phạm tội xảy ra trên tàu bay, tàu biển mang quốc tịch Việt Nam hoặc tại vùng đặc quyền kinh tế, thềm lục địa của Việt Nam.",
+ "plain": "Nguyên tắc LÃNH THỔ: mọi hành vi phạm tội trên lãnh thổ Việt Nam (kể cả người nước ngoài) đều bị áp dụng BLHS; mở rộng tới TÀU BAY, TÀU BIỂN mang quốc tịch Việt Nam, VÙNG ĐẶC QUYỀN KINH TẾ, THỀM LỤC ĐỊA. Ngoại lệ: người được hưởng QUYỀN MIỄN TRỪ NGOẠI GIAO, LÃNH SỰ giải quyết theo điều ước, tập quán quốc tế hoặc bằng con đường ngoại giao (khoản 2).",
+ "example": "Một du khách nước ngoài trộm tài sản tại Hà Nội bị xử theo Bộ luật Hình sự Việt Nam; nhưng một nhà ngoại giao có quyền miễn trừ thì giải quyết bằng con đường ngoại giao.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 5 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hieu-luc-ngoai-lanh-tho",
+  "hieu-luc-theo-thoi-gian"
+ ],
+ "keywords": [
+  "mọi hành vi phạm tội trên lãnh thổ",
+  "tàu bay, tàu biển mang quốc tịch Việt Nam",
+  "vùng đặc quyền kinh tế, thềm lục địa",
+  "miễn trừ ngoại giao"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người nước ngoài có quyền miễn trừ ngoại giao phạm tội tại Việt Nam được giải quyết thế nào khi điều ước, tập quán quốc tế không quy định?",
+   "options": [
+    "Bằng con đường ngoại giao",
+    "Xét xử như công dân Việt Nam",
+    "Không bao giờ bị xử lý",
+    "Trục xuất ngay lập tức"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 5.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 5 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hành vi phạm tội xảy ra trên tàu biển mang quốc tịch Việt Nam có được áp dụng Bộ luật Hình sự Việt Nam theo Điều 5 không?",
+   "options": [
+    "Có",
+    "Không",
+    "Chỉ khi tàu đang ở cảng Việt Nam",
+    "Chỉ khi người phạm tội là công dân Việt Nam"
+   ],
+   "answer": 0,
+   "explain": "Đoạn 2 khoản 1 Điều 5.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 5 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Áp dụng theo Điều 5 (trên lãnh thổ)",
+   "right": "Áp dụng theo Điều 6 (ngoài lãnh thổ)",
+   "cases": [
+    {
+     "text": "Người nước ngoài trộm cắp ở TP. Hồ Chí Minh",
+     "answer": "left"
+    },
+    {
+     "text": "Công dân Việt Nam phạm tội ở Nhật Bản",
+     "answer": "right"
+    },
+    {
+     "text": "Phạm tội trên tàu bay mang quốc tịch Việt Nam",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 5, 6."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bộ luật Hình sự được áp dụng đối với {{mọi}} hành vi phạm tội thực hiện trên {{lãnh thổ}} nước Cộng hòa xã hội chủ nghĩa Việt Nam.",
+   "bank_extra": [
+    "một số",
+    "biên giới"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quy định này cũng áp dụng với hành vi phạm tội xảy ra tại vùng đặc quyền kinh tế, {{thềm lục địa}} của Việt Nam.",
+   "bank_extra": [
+    "biển cả",
+    "vùng trời quốc tế"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người nước ngoài phạm tội trên lãnh thổ Việt Nam không bị áp dụng Bộ luật Hình sự Việt Nam.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 5 áp dụng với mọi hành vi phạm tội trên lãnh thổ; chỉ người có quyền miễn trừ ngoại giao, lãnh sự mới được giải quyết riêng (khoản 2)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày hiệu lực của Bộ luật Hình sự đối với hành vi phạm tội trên lãnh thổ Việt Nam.",
+   "model": "Áp dụng với mọi hành vi phạm tội trên lãnh thổ Việt Nam, kể cả trên tàu bay, tàu biển mang quốc tịch Việt Nam, vùng đặc quyền kinh tế, thềm lục địa (khoản 1 Điều 5); người có quyền miễn trừ ngoại giao, lãnh sự giải quyết theo điều ước, tập quán quốc tế hoặc con đường ngoại giao (khoản 2).",
+   "keywords": [
+    "lãnh thổ",
+    "tàu bay, tàu biển",
+    "thềm lục địa",
+    "miễn trừ ngoại giao"
+   ]
+  }
+ ]
+}

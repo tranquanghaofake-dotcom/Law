@@ -1,0 +1,119 @@
+{
+ "id": "cong-ty-hop-danh",
+ "subject": "thuong-mai-1",
+ "chapter": "v3",
+ "term": "Công ty hợp danh",
+ "definition": "Công ty hợp danh là doanh nghiệp, trong đó: a) Phải có ít nhất 02 thành viên là chủ sở hữu chung của công ty, cùng nhau kinh doanh dưới một tên chung (sau đây gọi là thành viên hợp danh). Ngoài các thành viên hợp danh, công ty có thể có thêm thành viên góp vốn; b) Thành viên hợp danh phải là cá nhân, chịu trách nhiệm bằng toàn bộ tài sản của mình về các nghĩa vụ của công ty; c) Thành viên góp vốn là tổ chức, cá nhân và chỉ chịu trách nhiệm về các khoản nợ của công ty trong phạm vi số vốn đã cam kết góp vào công ty. Công ty hợp danh có tư cách pháp nhân kể từ ngày được cấp Giấy chứng nhận đăng ký doanh nghiệp. Công ty hợp danh không được phát hành bất kỳ loại chứng khoán nào.",
+ "plain": "Hai loại thành viên: THÀNH VIÊN HỢP DANH (bắt buộc ít nhất 02, phải là CÁ NHÂN, trách nhiệm VÔ HẠN, LIÊN ĐỚI) và THÀNH VIÊN GÓP VỐN (không bắt buộc, tổ chức hoặc cá nhân, trách nhiệm HỮU HẠN trong vốn cam kết góp, không tham gia quản lý). CÓ tư cách pháp nhân nhưng thành viên hợp danh vẫn chịu trách nhiệm vô hạn — đặc thù của loại hình \"đối nhân\". KHÔNG phát hành chứng khoán. Phù hợp hãng luật, kiểm toán (dựa trên uy tín cá nhân).",
+ "example": "Ba luật sư lập công ty luật hợp danh: mỗi luật sư là thành viên hợp danh, chịu trách nhiệm bằng toàn bộ tài sản về nghĩa vụ của công ty.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1–3 Điều 177 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "doanh-nghiep-tu-nhan",
+  "cong-ty-tnhh-hai-thanh-vien"
+ ],
+ "keywords": [
+  "ít nhất 02 thành viên hợp danh",
+  "thành viên hợp danh là cá nhân, trách nhiệm vô hạn",
+  "thành viên góp vốn trách nhiệm hữu hạn",
+  "có tư cách pháp nhân"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thành viên hợp danh của công ty hợp danh phải là ai?",
+   "options": [
+    "Cá nhân",
+    "Tổ chức",
+    "Cá nhân hoặc tổ chức",
+    "Doanh nghiệp nhà nước"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 1 Điều 177.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 177 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Công ty hợp danh có tư cách pháp nhân không?",
+   "options": [
+    "Có, kể từ ngày được cấp Giấy chứng nhận đăng ký doanh nghiệp",
+    "Không",
+    "Chỉ khi có thành viên góp vốn",
+    "Chỉ khi vốn trên 10 tỷ"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 177.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 177 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thành viên hợp danh",
+   "right": "Thành viên góp vốn",
+   "cases": [
+    {
+     "text": "Chịu trách nhiệm bằng toàn bộ tài sản",
+     "answer": "left"
+    },
+    {
+     "text": "Chịu trách nhiệm trong phạm vi vốn cam kết góp",
+     "answer": "right"
+    },
+    {
+     "text": "Có thể là tổ chức",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 177."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công ty hợp danh phải có ít nhất {{02}} thành viên là chủ sở hữu chung; thành viên hợp danh phải là {{cá nhân}}.",
+   "bank_extra": [
+    "03",
+    "tổ chức"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công ty hợp danh không được phát hành bất kỳ loại {{chứng khoán}} nào.",
+   "bank_extra": [
+    "hóa đơn",
+    "sản phẩm"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Công ty hợp danh không có tư cách pháp nhân vì thành viên hợp danh chịu trách nhiệm vô hạn.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 177: có tư cách pháp nhân."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày đặc điểm pháp lý của công ty hợp danh.",
+   "model": "Có ít nhất 02 thành viên hợp danh là cá nhân, chịu trách nhiệm vô hạn; có thể có thành viên góp vốn chịu trách nhiệm hữu hạn (khoản 1); có tư cách pháp nhân từ ngày được cấp Giấy chứng nhận (khoản 2); không phát hành chứng khoán (khoản 3 Điều 177).",
+   "keywords": [
+    "thành viên hợp danh",
+    "vô hạn",
+    "góp vốn",
+    "pháp nhân"
+   ]
+  }
+ ]
+}

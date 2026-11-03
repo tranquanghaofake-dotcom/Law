@@ -1,0 +1,116 @@
+{
+ "id": "llc-phap-nhan",
+ "subject": "ly-luan-nn-pl",
+ "chapter": "v6",
+ "term": "Pháp nhân — chủ thể là tổ chức",
+ "definition": "Một tổ chức được công nhận là pháp nhân khi có đủ các điều kiện sau đây: a) Được thành lập theo quy định của Bộ luật này, luật khác có liên quan; b) Có cơ cấu tổ chức theo quy định tại Điều 83 của Bộ luật này; c) Có tài sản độc lập với cá nhân, pháp nhân khác và tự chịu trách nhiệm bằng tài sản của mình; d) Nhân danh mình tham gia quan hệ pháp luật một cách độc lập.",
+ "plain": "Chủ thể quan hệ pháp luật gồm CÁ NHÂN (công dân, người nước ngoài, người không quốc tịch), TỔ CHỨC (pháp nhân và tổ chức không có tư cách pháp nhân) và NHÀ NƯỚC (chủ thể đặc biệt). Bốn điều kiện pháp nhân: thành lập hợp pháp; có cơ cấu tổ chức (cơ quan điều hành); TÀI SẢN ĐỘC LẬP và tự chịu trách nhiệm bằng tài sản đó (trách nhiệm hữu hạn); NHÂN DANH MÌNH tham gia quan hệ pháp luật. Năng lực pháp luật của pháp nhân phát sinh từ khi được thành lập (Điều 86). Doanh nghiệp tư nhân, hộ kinh doanh không phải pháp nhân vì tài sản không tách bạch với chủ.",
+ "example": "Công ty TNHH một thành viên có tài sản riêng, tự chịu trách nhiệm trong phạm vi vốn điều lệ, nhân danh mình ký hợp đồng: pháp nhân. Doanh nghiệp tư nhân: chủ chịu trách nhiệm vô hạn, không phải pháp nhân.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 74 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "llc-quan-he-phap-luat",
+  "llc-nang-luc-phap-luat"
+ ],
+ "keywords": [
+  "thành lập hợp pháp",
+  "cơ cấu tổ chức",
+  "tài sản độc lập",
+  "nhân danh mình"
+ ],
+ "note": "Bộ luật Dân sự 91/2015/QH13 có hiệu lực từ 01/01/2017; chưa có văn bản sửa đổi có hiệu lực.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Điều kiện nào để tổ chức được công nhận là pháp nhân?",
+   "options": [
+    "Có tài sản độc lập và tự chịu trách nhiệm bằng tài sản của mình",
+    "Có trên 10 thành viên",
+    "Có vốn trên 1 tỷ đồng",
+    "Do Nhà nước thành lập"
+   ],
+   "answer": 0,
+   "explain": "Điểm c khoản 1 Điều 74.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 74 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tổ chức nào KHÔNG phải pháp nhân?",
+   "options": [
+    "Doanh nghiệp tư nhân",
+    "Công ty cổ phần",
+    "Công ty TNHH hai thành viên trở lên",
+    "Hợp tác xã"
+   ],
+   "answer": 0,
+   "explain": "Doanh nghiệp tư nhân không có tài sản độc lập với chủ (Luật Doanh nghiệp Điều 188).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 74 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Pháp nhân",
+   "right": "Không phải pháp nhân",
+   "cases": [
+    {
+     "text": "Trường đại học công lập",
+     "answer": "left"
+    },
+    {
+     "text": "Hộ kinh doanh gia đình",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 74."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Pháp nhân phải có tài sản {{độc lập}} với cá nhân, pháp nhân khác và tự chịu trách nhiệm bằng {{tài sản}} của mình.",
+   "bank_extra": [
+    "chung",
+    "uy tín"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Pháp nhân {{nhân danh mình}} tham gia quan hệ pháp luật một cách {{độc lập}}.",
+   "bank_extra": [
+    "nhân danh chủ sở hữu",
+    "phụ thuộc"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi tổ chức được thành lập hợp pháp đều là pháp nhân.",
+   "answer": false,
+   "explain": "Sai. Phải đủ cả bốn điều kiện khoản 1 Điều 74; nhiều tổ chức hợp pháp (hộ kinh doanh, doanh nghiệp tư nhân) không có tư cách pháp nhân."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các loại chủ thể quan hệ pháp luật và điều kiện của pháp nhân.",
+   "model": "Cá nhân, tổ chức (pháp nhân và không có tư cách pháp nhân), Nhà nước; pháp nhân cần: thành lập hợp pháp, có cơ cấu tổ chức, tài sản độc lập và tự chịu trách nhiệm, nhân danh mình tham gia quan hệ pháp luật (khoản 1 Điều 74).",
+   "keywords": [
+    "cá nhân",
+    "tổ chức",
+    "tài sản độc lập",
+    "nhân danh mình"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,120 @@
+{
+ "id": "thua-ke-theo-phap-luat",
+ "subject": "dan-su",
+ "chapter": "v13",
+ "term": "Thừa kế theo pháp luật và hàng thừa kế",
+ "definition": "Thừa kế theo pháp luật là thừa kế theo hàng thừa kế, điều kiện và trình tự thừa kế do pháp luật quy định. (…) Hàng thừa kế thứ nhất gồm: vợ, chồng, cha đẻ, mẹ đẻ, cha nuôi, mẹ nuôi, con đẻ, con nuôi của người chết;",
+ "plain": "Áp dụng khi: không có di chúc; di chúc không hợp pháp; người thừa kế theo di chúc chết trước, từ chối, không có quyền hưởng… (Điều 650). Ba hàng thừa kế (Điều 651): HÀNG 1: vợ, chồng, cha mẹ đẻ, cha mẹ nuôi, con đẻ, con nuôi; HÀNG 2: ông bà nội ngoại, anh chị em ruột, cháu ruột (người chết là ông bà); HÀNG 3: cụ, bác, chú, cậu, cô, dì ruột, cháu ruột (người chết là bác, chú…), chắt ruột. Những người cùng hàng hưởng PHẦN BẰNG NHAU; hàng sau chỉ hưởng khi không còn ai ở hàng trước.",
+ "example": "Bà A chết không để di chúc, còn chồng, mẹ đẻ và hai con: bốn người cùng hàng thứ nhất, mỗi người hưởng 1/4 di sản; anh trai bà A (hàng hai) không được hưởng.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 649, điểm a khoản 1 Điều 651 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "thua-ke-the-vi",
+  "nguoi-thua-ke-khong-phu-thuoc-di-chuc",
+  "quyen-thua-ke"
+ ],
+ "keywords": [
+  "theo hàng thừa kế",
+  "hàng thứ nhất",
+  "phần bằng nhau",
+  "hàng sau khi không còn hàng trước"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai thuộc hàng thừa kế thứ nhất?",
+   "options": [
+    "Vợ, chồng, cha mẹ đẻ, cha mẹ nuôi, con đẻ, con nuôi của người chết",
+    "Ông bà nội, ngoại",
+    "Anh, chị, em ruột",
+    "Cô, dì, chú, bác ruột"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 651.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điểm a khoản 1 Điều 651 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trường hợp nào áp dụng thừa kế theo pháp luật?",
+   "options": [
+    "Không có di chúc",
+    "Có di chúc hợp pháp định đoạt toàn bộ di sản",
+    "Người thừa kế theo di chúc còn sống và nhận di sản",
+    "Di chúc có công chứng"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 650.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 650 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hàng thừa kế thứ nhất",
+   "right": "Hàng thừa kế thứ hai",
+   "cases": [
+    {
+     "text": "Con nuôi của người chết",
+     "answer": "left"
+    },
+    {
+     "text": "Anh ruột của người chết",
+     "answer": "right"
+    },
+    {
+     "text": "Bà ngoại của người chết",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 651."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thừa kế theo pháp luật là thừa kế theo {{hàng thừa kế}}, điều kiện và trình tự thừa kế do {{pháp luật}} quy định.",
+   "bank_extra": [
+    "di chúc",
+    "tập quán"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Những người thừa kế cùng hàng được hưởng phần di sản {{bằng nhau}}.",
+   "bank_extra": [
+    "theo tuổi",
+    "theo đóng góp"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Anh ruột của người chết được hưởng thừa kế cùng lúc với con của người chết.",
+   "answer": false,
+   "explain": "Sai. Anh ruột thuộc hàng hai, chỉ được hưởng khi không còn ai ở hàng thứ nhất (khoản 3 Điều 651)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày thừa kế theo pháp luật và các hàng thừa kế.",
+   "model": "Là thừa kế theo hàng, điều kiện, trình tự do pháp luật quy định (Điều 649); áp dụng khi không có di chúc, di chúc không hợp pháp… (Điều 650); ba hàng thừa kế; cùng hàng hưởng phần bằng nhau; hàng sau chỉ hưởng khi không còn ai ở hàng trước (Điều 651).",
+   "keywords": [
+    "hàng thừa kế",
+    "không có di chúc",
+    "bằng nhau",
+    "hàng trước"
+   ]
+  }
+ ]
+}

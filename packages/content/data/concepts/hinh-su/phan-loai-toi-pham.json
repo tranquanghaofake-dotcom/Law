@@ -1,0 +1,121 @@
+{
+ "id": "phan-loai-toi-pham",
+ "subject": "hinh-su",
+ "chapter": "v3",
+ "term": "Phân loại tội phạm",
+ "definition": "Căn cứ vào tính chất và mức độ nguy hiểm cho xã hội của hành vi phạm tội được quy định trong Bộ luật này, tội phạm được phân thành 04 loại sau đây: a) Tội phạm ít nghiêm trọng là tội phạm có tính chất và mức độ nguy hiểm cho xã hội không lớn mà mức cao nhất của khung hình phạt do Bộ luật này quy định đối với tội ấy là phạt tiền, phạt cải tạo không giam giữ hoặc phạt tù đến 03 năm; b) Tội phạm nghiêm trọng là tội phạm có tính chất và mức độ nguy hiểm cho xã hội lớn mà mức cao nhất của khung hình phạt do Bộ luật này quy định đối với tội ấy là từ trên 03 năm tù đến 07 năm tù; c) Tội phạm rất nghiêm trọng là tội phạm có tính chất và mức độ nguy hiểm cho xã hội rất lớn mà mức cao nhất của khung hình phạt do Bộ luật này quy định đối với tội ấy là từ trên 07 năm tù đến 15 năm tù; d) Tội phạm đặc biệt nghiêm trọng là tội phạm có tính chất và mức độ nguy hiểm cho xã hội đặc biệt lớn mà mức cao nhất của khung hình phạt do Bộ luật này quy định đối với tội ấy là từ trên 15 năm tù đến 20 năm tù, tù chung thân hoặc tử hình.",
+ "plain": "Căn cứ phân loại: MỨC CAO NHẤT CỦA KHUNG HÌNH PHẠT do luật quy định (không phải mức Tòa tuyên). Bốn loại: ít nghiêm trọng (đến 03 năm), nghiêm trọng (trên 03–07 năm), rất nghiêm trọng (trên 07–15 năm), đặc biệt nghiêm trọng (trên 15–20 năm, chung thân, tử hình). Ý nghĩa: tuổi chịu TNHS (Điều 12), thời hiệu truy cứu (Điều 27), chuẩn bị phạm tội, tái phạm nguy hiểm…",
+ "example": "Khoản 1 Điều 173 (trộm cắp tài sản) có mức cao nhất 03 năm tù: tội ít nghiêm trọng; khoản 4 Điều 173 (12–20 năm): tội đặc biệt nghiêm trọng.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 9 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "khai-niem-toi-pham",
+  "tuoi-chiu-trach-nhiem-hinh-su",
+  "thoi-hieu-truy-cuu-trach-nhiem-hinh-su"
+ ],
+ "keywords": [
+  "mức cao nhất của khung hình phạt",
+  "03 năm",
+  "07 năm",
+  "15 năm"
+ ],
+ "note": "Điều 9 được sửa đổi, bổ sung bởi Luật 12/2017/QH14 (hiệu lực 01/01/2018); câu chữ trên theo VBHN 135/VBHN-VPQH 2025.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tội phạm có mức cao nhất của khung hình phạt từ trên 07 năm đến 15 năm tù là loại tội gì?",
+   "options": [
+    "Tội phạm rất nghiêm trọng",
+    "Tội phạm nghiêm trọng",
+    "Tội phạm đặc biệt nghiêm trọng",
+    "Tội phạm ít nghiêm trọng"
+   ],
+   "answer": 0,
+   "explain": "Điểm c khoản 1 Điều 9.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điểm c khoản 1 Điều 9 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Căn cứ để xác định một tội thuộc loại nào là gì?",
+   "options": [
+    "Mức cao nhất của khung hình phạt do Bộ luật quy định",
+    "Mức hình phạt Tòa án tuyên",
+    "Giá trị tài sản bị thiệt hại",
+    "Ý kiến của Viện kiểm sát"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 9.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 9 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tội phạm ít nghiêm trọng",
+   "right": "Tội phạm đặc biệt nghiêm trọng",
+   "cases": [
+    {
+     "text": "Mức cao nhất của khung là phạt tù đến 03 năm",
+     "answer": "left"
+    },
+    {
+     "text": "Mức cao nhất của khung là tù chung thân",
+     "answer": "right"
+    },
+    {
+     "text": "Mức cao nhất của khung là phạt tiền",
+     "answer": "left"
+    }
+   ],
+   "explain": "Khoản 1 Điều 9."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tội phạm nghiêm trọng có mức cao nhất của khung hình phạt từ trên {{03}} năm tù đến {{07}} năm tù.",
+   "bank_extra": [
+    "05",
+    "10"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tội phạm đặc biệt nghiêm trọng có mức cao nhất của khung hình phạt từ trên 15 năm tù đến 20 năm tù, tù chung thân hoặc {{tử hình}}.",
+   "bank_extra": [
+    "trục xuất",
+    "cải tạo không giam giữ"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tòa án tuyên phạt 2 năm tù thì tội đó chắc chắn là tội phạm ít nghiêm trọng.",
+   "answer": false,
+   "explain": "Sai. Phân loại căn cứ mức cao nhất của khung hình phạt do luật quy định, không theo mức Tòa án tuyên (khoản 1 Điều 9)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày phân loại tội phạm theo Bộ luật Hình sự.",
+   "model": "Căn cứ tính chất, mức độ nguy hiểm cho xã hội và mức cao nhất của khung hình phạt: ít nghiêm trọng (phạt tiền, cải tạo không giam giữ, tù đến 03 năm); nghiêm trọng (trên 03 đến 07 năm); rất nghiêm trọng (trên 07 đến 15 năm); đặc biệt nghiêm trọng (trên 15 đến 20 năm, chung thân, tử hình) (khoản 1 Điều 9).",
+   "keywords": [
+    "mức cao nhất của khung",
+    "03 năm",
+    "15 năm",
+    "tử hình"
+   ]
+  }
+ ]
+}

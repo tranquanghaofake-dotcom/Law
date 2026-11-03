@@ -1,0 +1,117 @@
+{
+ "id": "chinh-sach-tien-te-quoc-gia",
+ "subject": "ngan-hang",
+ "chapter": "v2",
+ "term": "Chính sách tiền tệ quốc gia và thẩm quyền quyết định",
+ "definition": "Chính sách tiền tệ quốc gia là các quyết định về tiền tệ ở tầm quốc gia của cơ quan nhà nước có thẩm quyền, bao gồm quyết định mục tiêu ổn định giá trị đồng tiền biểu hiện bằng chỉ tiêu lạm phát, quyết định sử dụng các công cụ và biện pháp để thực hiện mục tiêu đề ra. Quốc hội quyết định chỉ tiêu lạm phát hằng năm được thể hiện thông qua việc quyết định chỉ số giá tiêu dùng và giám sát việc thực hiện chính sách tiền tệ quốc gia.",
+ "plain": "Hai bộ phận: (1) MỤC TIÊU — ổn định giá trị đồng tiền, biểu hiện bằng CHỈ TIÊU LẠM PHÁT; (2) CÔNG CỤ, BIỆN PHÁP để đạt mục tiêu. Phân chia thẩm quyền: QUỐC HỘI quyết định chỉ tiêu lạm phát hằng năm (qua chỉ số giá tiêu dùng); CHÍNH PHỦ trình Quốc hội; THỦ TƯỚNG, THỐNG ĐỐC quyết định việc sử dụng công cụ, biện pháp điều hành (khoản 4 Điều 3). Chủ tịch nước đàm phán, ký kết điều ước quốc tế về tiền tệ, ngân hàng (khoản 3).",
+ "example": "Nghị quyết của Quốc hội về kế hoạch phát triển kinh tế - xã hội đặt mục tiêu tốc độ tăng chỉ số giá tiêu dùng; Ngân hàng Nhà nước sau đó điều chỉnh lãi suất điều hành để đạt mục tiêu đó.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, 2 Điều 3 Luật Ngân hàng Nhà nước Việt Nam 2010 (VBHN 141/2026/VBHN-LQ-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-141-2026-VBHN-LQ-VPQH-Luat-Ngan-hang-Nha-nuoc-Viet-Nam-726674.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "cong-cu-chinh-sach-tien-te",
+  "ngan-hang-nha-nuoc"
+ ],
+ "keywords": [
+  "chỉ tiêu lạm phát",
+  "ổn định giá trị đồng tiền",
+  "Quốc hội",
+  "chỉ số giá tiêu dùng",
+  "công cụ và biện pháp"
+ ],
+ "note": "Luật Ngân hàng Nhà nước Việt Nam 46/2010/QH12 có hiệu lực từ 01/01/2011; Luật 23/2026/QH16 sửa đổi nhiều điều (Điều 4, 27, 34, 42, 44, 45, 57, 58, 62…), có hiệu lực từ 01/12/2026 — điều được trích không bị sửa.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Cơ quan nào quyết định chỉ tiêu lạm phát hằng năm?",
+   "options": [
+    "Quốc hội",
+    "Ngân hàng Nhà nước",
+    "Bộ Tài chính",
+    "Chủ tịch nước"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 3 Luật Ngân hàng Nhà nước Việt Nam 2010 (VBHN 141/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Mục tiêu của chính sách tiền tệ quốc gia được biểu hiện bằng gì?",
+   "options": [
+    "Chỉ tiêu lạm phát",
+    "Tốc độ tăng dân số",
+    "Tổng thu ngân sách",
+    "Kim ngạch xuất khẩu"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 3: mục tiêu ổn định giá trị đồng tiền biểu hiện bằng chỉ tiêu lạm phát.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 3 Luật Ngân hàng Nhà nước Việt Nam 2010 (VBHN 141/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quốc hội",
+   "right": "Thủ tướng Chính phủ, Thống đốc Ngân hàng Nhà nước",
+   "cases": [
+    {
+     "text": "Quyết định chỉ tiêu lạm phát hằng năm",
+     "answer": "left"
+    },
+    {
+     "text": "Quyết định việc sử dụng các công cụ, biện pháp điều hành",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 2, 4 Điều 3."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chính sách tiền tệ quốc gia bao gồm quyết định mục tiêu ổn định giá trị đồng tiền biểu hiện bằng chỉ tiêu {{lạm phát}}, quyết định sử dụng các {{công cụ}} và biện pháp để thực hiện mục tiêu đề ra.",
+   "bank_extra": [
+    "tăng trưởng",
+    "ngân sách"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "{{Quốc hội}} quyết định chỉ tiêu lạm phát hằng năm được thể hiện thông qua việc quyết định chỉ số {{giá tiêu dùng}}.",
+   "bank_extra": [
+    "Chính phủ",
+    "giá vàng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thống đốc Ngân hàng Nhà nước quyết định chỉ tiêu lạm phát hằng năm.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 3: Quốc hội quyết định; Chính phủ trình (khoản 4); Thống đốc, Thủ tướng quyết định công cụ, biện pháp điều hành."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm chính sách tiền tệ quốc gia và thẩm quyền quyết định.",
+   "model": "Là các quyết định về tiền tệ ở tầm quốc gia của cơ quan có thẩm quyền, gồm mục tiêu ổn định giá trị đồng tiền (chỉ tiêu lạm phát) và quyết định sử dụng công cụ, biện pháp (khoản 1 Điều 3); Quốc hội quyết định chỉ tiêu lạm phát (khoản 2); Thủ tướng, Thống đốc quyết định công cụ (khoản 4).",
+   "keywords": [
+    "ổn định giá trị đồng tiền",
+    "chỉ tiêu lạm phát",
+    "Quốc hội",
+    "Thống đốc"
+   ]
+  }
+ ]
+}

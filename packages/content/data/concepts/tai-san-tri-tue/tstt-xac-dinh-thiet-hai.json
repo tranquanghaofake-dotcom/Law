@@ -1,0 +1,118 @@
+{
+ "id": "tstt-xac-dinh-thiet-hai",
+ "subject": "tai-san-tri-tue",
+ "chapter": "v3",
+ "term": "Thiệt hại do xâm phạm quyền sở hữu trí tuệ",
+ "definition": "Thiệt hại do hành vi xâm phạm quyền sở hữu trí tuệ bao gồm: a) Thiệt hại về vật chất bao gồm các tổn thất về tài sản, mức giảm sút về thu nhập, lợi nhuận, tổn thất về cơ hội kinh doanh, chi phí hợp lý để ngăn chặn, khắc phục thiệt hại; b) Thiệt hại về tinh thần bao gồm các tổn thất về danh dự, nhân phẩm, uy tín, danh tiếng và những tổn thất khác về tinh thần gây ra cho tác giả của tác phẩm văn học, nghệ thuật, khoa học; người biểu diễn; tác giả của sáng chế, kiểu dáng công nghiệp, thiết kế bố trí, giống cây trồng.",
+ "plain": "Định giá phục vụ tranh tụng dựa vào đây. Thiệt hại VẬT CHẤT: tổn thất tài sản, giảm thu nhập, lợi nhuận, mất cơ hội kinh doanh, chi phí ngăn chặn khắc phục. Thiệt hại TINH THẦN: chỉ dành cho TÁC GIẢ, NGƯỜI BIỂU DIỄN (không dành cho chủ sở hữu là doanh nghiệp). Mức bồi thường (Điều 205): tổng thiệt hại vật chất + lợi nhuận của bị đơn; hoặc GIÁ CHUYỂN GIAO QUYỀN SỬ DỤNG giả định; hoặc cách tính khác; nếu không xác định được, tòa ấn định tối đa 500 triệu đồng. Mức độ thiệt hại xác định trên tổn thất THỰC TẾ (khoản 2).",
+ "example": "Công ty I bị làm giả nhãn hiệu, doanh thu giảm 3 tỷ, chi 200 triệu thuê giám định và luật sư: thiệt hại vật chất gồm cả hai khoản; I là pháp nhân nên không được bồi thường tổn thất tinh thần.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 204 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tstt-dinh-gia-tstt",
+  "tstt-phuong-phap-dinh-gia",
+  "tstt-tu-bao-ve"
+ ],
+ "keywords": [
+  "thiệt hại vật chất",
+  "thiệt hại tinh thần",
+  "cơ hội kinh doanh",
+  "chi phí hợp lý",
+  "tổn thất thực tế"
+ ],
+ "note": "Luật Sở hữu trí tuệ 50/2005/QH11 (hiệu lực 01/7/2006) đã được sửa đổi bởi Luật 36/2009/QH12, 42/2019/QH14, 07/2022/QH15, 93/2025/QH15 và 131/2025/QH15 (hiệu lực 01/4/2026) — văn bản hợp nhất 67/VBHN-VPQH 2026; ghi chép lớp học còn dẫn Nghị định 105/2006/NĐ-CP và Nghị định 99/2013/NĐ-CP, cần tự kiểm tra hiệu lực của các nghị định này trước khi dùng.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khoản nào thuộc thiệt hại vật chất theo điểm a khoản 1 Điều 204?",
+   "options": [
+    "Chi phí hợp lý để ngăn chặn, khắc phục thiệt hại",
+    "Tổn thất danh dự của tác giả",
+    "Tiền phạt vi phạm hành chính",
+    "Án phí của bị đơn"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 204.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 204 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai được bồi thường thiệt hại về tinh thần theo điểm b khoản 1 Điều 204?",
+   "options": [
+    "Tác giả tác phẩm, người biểu diễn, tác giả sáng chế, kiểu dáng, thiết kế bố trí, giống cây trồng",
+    "Mọi chủ sở hữu quyền SHTT",
+    "Doanh nghiệp sở hữu nhãn hiệu",
+    "Người tiêu dùng"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 1 Điều 204.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 204 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thiệt hại vật chất",
+   "right": "Thiệt hại tinh thần",
+   "cases": [
+    {
+     "text": "Mức giảm sút lợi nhuận do hàng giả",
+     "answer": "left"
+    },
+    {
+     "text": "Tổn thất uy tín của tác giả sáng chế",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 204."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thiệt hại về vật chất bao gồm tổn thất về tài sản, mức giảm sút về thu nhập, lợi nhuận, tổn thất về {{cơ hội kinh doanh}}, chi phí hợp lý để {{ngăn chặn}}, khắc phục thiệt hại.",
+   "bank_extra": [
+    "danh dự",
+    "quảng cáo"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Mức độ thiệt hại được xác định trên cơ sở các tổn thất {{thực tế}} mà chủ thể quyền phải chịu do hành vi {{xâm phạm}} gây ra.",
+   "bank_extra": [
+    "dự kiến",
+    "cạnh tranh"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Doanh nghiệp là chủ sở hữu nhãn hiệu được bồi thường thiệt hại về tinh thần khi bị xâm phạm.",
+   "answer": false,
+   "explain": "Sai. Điểm b khoản 1 Điều 204 giới hạn thiệt hại tinh thần cho tác giả, người biểu diễn."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các loại thiệt hại do xâm phạm quyền SHTT.",
+   "model": "Vật chất: tổn thất tài sản, giảm thu nhập, lợi nhuận, mất cơ hội kinh doanh, chi phí hợp lý ngăn chặn, khắc phục; tinh thần: danh dự, nhân phẩm, uy tín, danh tiếng của tác giả, người biểu diễn (khoản 1 Điều 204); mức độ theo tổn thất thực tế.",
+   "keywords": [
+    "vật chất",
+    "tinh thần",
+    "cơ hội kinh doanh",
+    "thực tế"
+   ]
+  }
+ ]
+}

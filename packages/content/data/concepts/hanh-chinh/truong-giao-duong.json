@@ -1,0 +1,115 @@
+{
+ "id": "truong-giao-duong",
+ "subject": "hanh-chinh",
+ "chapter": "v14",
+ "term": "Đưa vào trường giáo dưỡng",
+ "definition": "Người từ đủ 12 tuổi đến dưới 14 tuổi thực hiện hành vi có dấu hiệu của một tội phạm đặc biệt nghiêm trọng quy định tại Bộ luật Hình sự. Người từ đủ 14 tuổi đến dưới 16 tuổi thực hiện hành vi có dấu hiệu của một tội phạm rất nghiêm trọng hoặc một tội phạm đặc biệt nghiêm trọng quy định tại Bộ luật Hình sự, trừ những tội phạm quy định tại khoản 2 Điều 12 của Bộ luật Hình sự.",
+ "plain": "Đối tượng là NGƯỜI CHƯA THÀNH NIÊN có hành vi nguy hiểm nhưng CHƯA ĐỦ TUỔI hoặc KHÔNG THUỘC diện chịu TNHS: 12–14 tuổi có dấu hiệu tội ĐẶC BIỆT NGHIÊM TRỌNG; 14–16 tuổi có dấu hiệu tội rất nghiêm trọng, đặc biệt nghiêm trọng NGOÀI danh sách khoản 2 Điều 12 BLHS (vì nếu thuộc danh sách thì đã phải chịu TNHS); người đã bị giáo dục tại xã mà tái phạm… KHÔNG áp dụng (khoản 5): người không có năng lực trách nhiệm hành chính, người đang MANG THAI… Thời hạn 06–24 tháng (Điều 91); do TÒA ÁN NHÂN DÂN KHU VỰC quyết định (khoản 2 Điều 105). Liên hệ BLHS: Điều 12 tuổi chịu TNHS.",
+ "example": "Em B 13 tuổi có hành vi có dấu hiệu tội giết người (đặc biệt nghiêm trọng) nhưng chưa đủ 14 tuổi nên không chịu TNHS: có thể bị Tòa án quyết định đưa vào trường giáo dưỡng.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 92 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Vi-pham-hanh-chinh/Van-ban-hop-nhat-90-VBHN-VPQH-2026-Luat-Xu-ly-vi-pham-hanh-chinh-699548.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "giao-duc-tai-xa",
+  "bien-phap-xu-ly-hanh-chinh"
+ ],
+ "keywords": [
+  "12 đến dưới 14 tuổi: đặc biệt nghiêm trọng",
+  "14 đến dưới 16 tuổi: ngoài khoản 2 Điều 12 BLHS",
+  "người chưa thành niên",
+  "Tòa án quyết định"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người từ đủ 12 đến dưới 14 tuổi bị đưa vào trường giáo dưỡng khi nào?",
+   "options": [
+    "Thực hiện hành vi có dấu hiệu tội phạm đặc biệt nghiêm trọng",
+    "Vi phạm giao thông",
+    "Trộm cắp tài sản giá trị nhỏ lần đầu",
+    "Đi học muộn nhiều lần"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 92.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 92 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Vì sao khoản 2 Điều 92 loại trừ các tội tại khoản 2 Điều 12 BLHS?",
+   "options": [
+    "Vì người 14–16 tuổi phạm các tội đó phải chịu trách nhiệm hình sự",
+    "Vì các tội đó nhẹ",
+    "Vì đã bị bãi bỏ",
+    "Vì không có tội nào trong danh sách"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 92; khoản 2 Điều 12 BLHS.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 92 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Đưa vào trường giáo dưỡng",
+   "right": "Chịu trách nhiệm hình sự",
+   "cases": [
+    {
+     "text": "Người 13 tuổi có hành vi có dấu hiệu tội giết người",
+     "answer": "left"
+    },
+    {
+     "text": "Người 15 tuổi phạm tội giết người (Điều 123)",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 92 Luật XLVPHC; Điều 12 BLHS."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người từ đủ {{12}} tuổi đến dưới 14 tuổi thực hiện hành vi có dấu hiệu của một tội phạm {{đặc biệt nghiêm trọng}} bị áp dụng biện pháp đưa vào trường giáo dưỡng.",
+   "bank_extra": [
+    "10",
+    "ít nghiêm trọng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đối với người từ đủ 14 đến dưới 16 tuổi, trừ những tội phạm quy định tại khoản 2 Điều {{12}} của Bộ luật Hình sự.",
+   "bank_extra": [
+    "9",
+    "21"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người đang mang thai vẫn có thể bị đưa vào trường giáo dưỡng.",
+   "answer": false,
+   "explain": "Sai. Điểm b khoản 5 Điều 92: không áp dụng với người đang mang thai có chứng nhận."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày đối tượng bị áp dụng biện pháp đưa vào trường giáo dưỡng.",
+   "model": "Người từ đủ 12 đến dưới 14 tuổi có hành vi có dấu hiệu tội đặc biệt nghiêm trọng; từ đủ 14 đến dưới 16 tuổi có dấu hiệu tội rất nghiêm trọng, đặc biệt nghiêm trọng ngoài khoản 2 Điều 12 BLHS; người đã bị giáo dục tại xã tái phạm… (Điều 92); không áp dụng với người không có năng lực trách nhiệm hành chính, người mang thai (khoản 5).",
+   "keywords": [
+    "12 tuổi",
+    "đặc biệt nghiêm trọng",
+    "khoản 2 Điều 12",
+    "mang thai"
+   ]
+  }
+ ]
+}

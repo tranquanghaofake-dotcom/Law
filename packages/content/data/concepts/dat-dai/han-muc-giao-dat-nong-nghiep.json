@@ -1,0 +1,115 @@
+{
+ "id": "han-muc-giao-dat-nong-nghiep",
+ "subject": "dat-dai",
+ "chapter": "v7",
+ "term": "Hạn mức giao đất nông nghiệp",
+ "definition": "Hạn mức giao đất trồng cây hằng năm, đất nuôi trồng thủy sản, đất làm muối cho cá nhân trực tiếp sản xuất nông nghiệp được quy định như sau: a) Không quá 03 ha cho mỗi loại đất đối với tỉnh, thành phố trực thuộc trung ương thuộc khu vực Đông Nam Bộ và khu vực đồng bằng sông Cửu Long; b) Không quá 02 ha cho mỗi loại đất đối với tỉnh, thành phố trực thuộc trung ương khác.",
+ "plain": "Mức: cây hằng năm, thủy sản, muối: 03 ha (Đông Nam Bộ, ĐBSCL) / 02 ha (nơi khác) MỖI LOẠI; cây lâu năm 10 ha (đồng bằng) / 30 ha (trung du, miền núi); rừng phòng hộ, rừng sản xuất là rừng trồng 30 ha mỗi loại; tổng nhiều loại cây hằng năm, thủy sản, muối không quá 05 ha. Phân biệt HẠN MỨC GIAO (Nhà nước giao không thu tiền) với HẠN MỨC NHẬN CHUYỂN QUYỀN (Điều 177: không quá 15 lần hạn mức giao).",
+ "example": "Nông dân ở Đồng Tháp (ĐBSCL) được giao tối đa 03 ha đất trồng lúa (cây hằng năm) không thu tiền.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 176 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Van-ban-hop-nhat-44-VBHN-VPQH-2026-Luat-Dat-dai-699655.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "giao-dat-cho-thue-dat",
+  "dat-su-dung-on-dinh-lau-dai"
+ ],
+ "keywords": [
+  "03 ha Đông Nam Bộ, ĐBSCL",
+  "02 ha nơi khác",
+  "mỗi loại đất",
+  "cá nhân trực tiếp sản xuất nông nghiệp"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hạn mức giao đất trồng cây hằng năm cho cá nhân trực tiếp sản xuất nông nghiệp ở đồng bằng sông Cửu Long là bao nhiêu?",
+   "options": [
+    "Không quá 03 ha",
+    "Không quá 02 ha",
+    "Không quá 05 ha",
+    "Không quá 10 ha"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 176.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 176 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hạn mức giao đất nuôi trồng thủy sản ở các tỉnh không thuộc Đông Nam Bộ, ĐBSCL là bao nhiêu?",
+   "options": [
+    "Không quá 02 ha",
+    "Không quá 03 ha",
+    "Không quá 30 ha",
+    "Không giới hạn"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 1 Điều 176.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 176 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "03 ha",
+   "right": "02 ha",
+   "cases": [
+    {
+     "text": "Đất làm muối ở tỉnh thuộc Đông Nam Bộ",
+     "answer": "left"
+    },
+    {
+     "text": "Đất trồng cây hằng năm ở tỉnh miền Bắc",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 176."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hạn mức giao đất không quá {{03}} ha cho mỗi loại đất đối với khu vực Đông Nam Bộ và đồng bằng sông Cửu Long; không quá {{02}} ha đối với tỉnh khác.",
+   "bank_extra": [
+    "05",
+    "01"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hạn mức áp dụng cho {{cá nhân}} trực tiếp sản xuất nông nghiệp.",
+   "bank_extra": [
+    "doanh nghiệp",
+    "hợp tác xã"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hạn mức giao đất trồng cây hằng năm là như nhau trên cả nước.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 176 phân biệt 03 ha (Đông Nam Bộ, ĐBSCL) và 02 ha (tỉnh khác)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày hạn mức giao đất nông nghiệp đối với đất trồng cây hằng năm, nuôi trồng thủy sản, làm muối.",
+   "model": "Cho cá nhân trực tiếp sản xuất nông nghiệp: không quá 03 ha mỗi loại đất ở Đông Nam Bộ, đồng bằng sông Cửu Long; không quá 02 ha mỗi loại ở tỉnh khác (khoản 1 Điều 176).",
+   "keywords": [
+    "03 ha",
+    "02 ha",
+    "mỗi loại",
+    "cá nhân"
+   ]
+  }
+ ]
+}

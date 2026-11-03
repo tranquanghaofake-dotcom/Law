@@ -1,0 +1,114 @@
+{
+ "id": "hop-dong-cho-thue-lai",
+ "subject": "lao-dong-2",
+ "chapter": "v1",
+ "term": "Hợp đồng cho thuê lại lao động và điều kiện doanh nghiệp",
+ "definition": "Doanh nghiệp cho thuê lại lao động phải ký quỹ và được cấp Giấy phép hoạt động cho thuê lại lao động. (…) Doanh nghiệp cho thuê lại lao động và bên thuê lại lao động phải ký kết hợp đồng cho thuê lại lao động bằng văn bản và được làm thành 02 bản, mỗi bên giữ 01 bản.",
+ "plain": "Hai hợp đồng KHÁC NHAU: (1) HĐLĐ giữa doanh nghiệp cho thuê lại và người lao động (theo quy định chung về HĐLĐ); (2) HỢP ĐỒNG CHO THUÊ LẠI giữa doanh nghiệp cho thuê lại và bên thuê lại — bằng VĂN BẢN, 02 bản; nội dung: địa điểm, vị trí việc làm, thời hạn thuê lại, thời giờ làm việc, an toàn vệ sinh lao động, trách nhiệm bồi thường tai nạn lao động – bệnh nghề nghiệp, nghĩa vụ mỗi bên (khoản 2 Điều 55). Quyền lợi người lao động thuê lại không được thấp hơn HĐLĐ đã ký với doanh nghiệp cho thuê lại (khoản 3 Điều 55).",
+ "example": "Hợp đồng giữa Công ty X và Nhà máy Y phải ghi rõ vị trí việc làm, thời hạn 10 tháng, bên nào bồi thường nếu anh H bị tai nạn lao động.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 54; khoản 1 Điều 55 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-18-VBHN-VPQH-2026-Bo-luat-lao-dong-695336.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "cho-thue-lai-lao-dong"
+ ],
+ "keywords": [
+  "ký quỹ và có giấy phép",
+  "bằng văn bản, 02 bản",
+  "hai hợp đồng khác nhau",
+  "trách nhiệm bồi thường tai nạn lao động"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hợp đồng cho thuê lại lao động được ký giữa những chủ thể nào?",
+   "options": [
+    "Doanh nghiệp cho thuê lại lao động và bên thuê lại lao động",
+    "Người lao động và bên thuê lại",
+    "Người lao động và doanh nghiệp cho thuê lại",
+    "Cơ quan nhà nước và doanh nghiệp"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 55.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 55 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Doanh nghiệp cho thuê lại lao động phải đáp ứng điều kiện nào?",
+   "options": [
+    "Ký quỹ và được cấp Giấy phép hoạt động cho thuê lại lao động",
+    "Có vốn điều lệ trên 100 tỷ đồng",
+    "Là doanh nghiệp nhà nước",
+    "Có ít nhất 1.000 lao động"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 54.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 54 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hợp đồng lao động",
+   "right": "Hợp đồng cho thuê lại lao động",
+   "cases": [
+    {
+     "text": "Doanh nghiệp cho thuê lại – người lao động",
+     "answer": "left"
+    },
+    {
+     "text": "Doanh nghiệp cho thuê lại – bên thuê lại",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 52, 55."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Doanh nghiệp cho thuê lại lao động phải {{ký quỹ}} và được cấp {{Giấy phép}} hoạt động cho thuê lại lao động.",
+   "bank_extra": [
+    "nộp thuế",
+    "chứng chỉ"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hợp đồng cho thuê lại lao động phải ký kết bằng {{văn bản}} và được làm thành {{02}} bản.",
+   "bank_extra": [
+    "lời nói",
+    "03"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hợp đồng cho thuê lại lao động có thể giao kết bằng lời nói.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 55: phải bằng văn bản, 02 bản."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày điều kiện của doanh nghiệp cho thuê lại và hình thức hợp đồng cho thuê lại lao động.",
+   "model": "Doanh nghiệp phải ký quỹ, có Giấy phép hoạt động cho thuê lại (khoản 1 Điều 54); hợp đồng cho thuê lại ký giữa doanh nghiệp cho thuê lại và bên thuê lại, bằng văn bản, 02 bản, gồm vị trí việc làm, thời hạn, thời giờ làm việc, an toàn lao động, trách nhiệm bồi thường (Điều 55).",
+   "keywords": [
+    "ký quỹ",
+    "giấy phép",
+    "văn bản",
+    "bên thuê lại"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,118 @@
+{
+ "id": "llc-toi-pham",
+ "subject": "ly-luan-nn-pl",
+ "chapter": "v8",
+ "term": "Tội phạm — vi phạm hình sự",
+ "definition": "Tội phạm là hành vi nguy hiểm cho xã hội được quy định trong Bộ luật Hình sự, do người có năng lực trách nhiệm hình sự hoặc pháp nhân thương mại thực hiện một cách cố ý hoặc vô ý, xâm phạm độc lập, chủ quyền, thống nhất, toàn vẹn lãnh thổ Tổ quốc, xâm phạm chế độ chính trị, chế độ kinh tế, nền văn hoá, quốc phòng, an ninh, trật tự, an toàn xã hội, quyền, lợi ích hợp pháp của tổ chức, xâm phạm quyền con người, quyền, lợi ích hợp pháp của công dân, xâm phạm những lĩnh vực khác của trật tự pháp luật xã hội chủ nghĩa mà theo quy định của Bộ luật này phải bị xử lý hình sự.",
+ "plain": "Tội phạm là loại vi phạm pháp luật có tính nguy hiểm cho xã hội CAO NHẤT, xâm phạm quan hệ xã hội quan trọng nhất. Định nghĩa luật định chứa đủ bốn dấu hiệu lý luận: hành vi NGUY HIỂM CHO XÃ HỘI; TRÁI PHÁP LUẬT HÌNH SỰ (được quy định trong BLHS — không có tội nếu luật không quy định); chủ thể có NĂNG LỰC TRÁCH NHIỆM HÌNH SỰ hoặc pháp nhân thương mại; có LỖI cố ý hoặc vô ý. Khoản 2 Điều 8: hành vi có dấu hiệu tội phạm nhưng tính nguy hiểm không đáng kể thì không phải tội phạm — ranh giới với vi phạm hành chính. Trách nhiệm hình sự là loại trách nhiệm pháp lý nghiêm khắc nhất, chỉ do Tòa án áp dụng.",
+ "example": "Trộm cắp tài sản 1,5 triệu đồng lần đầu: chưa đủ định lượng BLHS → vi phạm hành chính; trộm 3 triệu đồng → tội phạm (Điều 173).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 8 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "llc-vi-pham-phap-luat",
+  "llc-vi-pham-hanh-chinh",
+  "llc-trach-nhiem-phap-ly"
+ ],
+ "keywords": [
+  "nguy hiểm cho xã hội",
+  "quy định trong Bộ luật Hình sự",
+  "năng lực trách nhiệm hình sự",
+  "pháp nhân thương mại",
+  "cố ý hoặc vô ý"
+ ],
+ "note": "Bộ luật Hình sự 100/2015/QH13 (hiệu lực 01/01/2018) được sửa đổi bởi Luật 12/2017/QH14 và Luật 86/2025/QH15 (hiệu lực 01/7/2025) — văn bản hợp nhất 135/VBHN-VPQH 2025.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chủ thể của tội phạm theo khoản 1 Điều 8 BLHS gồm ai?",
+   "options": [
+    "Người có năng lực trách nhiệm hình sự hoặc pháp nhân thương mại",
+    "Mọi cá nhân, tổ chức",
+    "Chỉ công dân Việt Nam",
+    "Chỉ người từ đủ 18 tuổi"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 8.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 8 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hành vi có dấu hiệu tội phạm nhưng tính nguy hiểm không đáng kể thì sao?",
+   "options": [
+    "Không phải tội phạm, xử lý bằng biện pháp khác",
+    "Vẫn là tội phạm",
+    "Là tội phạm ít nghiêm trọng",
+    "Do tòa án tùy ý"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 8.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 8 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tội phạm",
+   "right": "Vi phạm hành chính",
+   "cases": [
+    {
+     "text": "Hành vi nguy hiểm cho xã hội được quy định trong BLHS",
+     "answer": "left"
+    },
+    {
+     "text": "Vi phạm quy định quản lý nhà nước mà không phải tội phạm",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 8 BLHS; khoản 1 Điều 2 Luật XLVPHC."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tội phạm là hành vi {{nguy hiểm cho xã hội}} được quy định trong {{Bộ luật Hình sự}}.",
+   "bank_extra": [
+    "trái đạo đức",
+    "nghị định"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tội phạm do người có năng lực trách nhiệm hình sự hoặc {{pháp nhân thương mại}} thực hiện một cách {{cố ý hoặc vô ý}}.",
+   "bank_extra": [
+    "cơ quan nhà nước",
+    "có chủ đích"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi pháp nhân đều có thể là chủ thể của tội phạm.",
+   "answer": false,
+   "explain": "Sai. Chỉ pháp nhân thương mại và chỉ với các tội BLHS quy định (Điều 76)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm tội phạm và đối chiếu với dấu hiệu vi phạm pháp luật.",
+   "model": "Hành vi nguy hiểm cho xã hội, quy định trong BLHS, do người có năng lực trách nhiệm hình sự hoặc pháp nhân thương mại thực hiện cố ý hoặc vô ý, xâm phạm các quan hệ được BLHS bảo vệ (khoản 1 Điều 8); tội phạm là vi phạm pháp luật nguy hiểm nhất.",
+   "keywords": [
+    "nguy hiểm",
+    "Bộ luật Hình sự",
+    "năng lực trách nhiệm hình sự",
+    "lỗi"
+   ]
+  }
+ ]
+}

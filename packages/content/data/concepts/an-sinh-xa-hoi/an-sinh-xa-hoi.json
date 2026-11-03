@@ -1,0 +1,115 @@
+{
+ "id": "an-sinh-xa-hoi",
+ "subject": "an-sinh-xa-hoi",
+ "chapter": "v1",
+ "term": "An sinh xã hội và hệ thống an sinh xã hội",
+ "definition": "An sinh xã hội là sự bảo vệ của Nhà nước và xã hội đối với các thành viên của mình thông qua một hệ thống các biện pháp công cộng, nhằm giúp họ chống lại những khó khăn về kinh tế và xã hội do bị ngừng hoặc giảm thu nhập gây ra bởi ốm đau, thai sản, tai nạn lao động, thất nghiệp, tuổi già, chết, đồng thời bảo đảm chăm sóc y tế và trợ cấp cho các gia đình có con nhỏ.",
+ "plain": "Định nghĩa này dựa trên cách tiếp cận của Tổ chức Lao động quốc tế (ILO), được giáo trình HLU sử dụng phổ biến. Hệ thống an sinh xã hội Việt Nam theo giáo trình gồm ba bộ phận chính: BẢO HIỂM XÃ HỘI (theo nghĩa rộng, gồm BHXH, bảo hiểm thất nghiệp, bảo hiểm y tế — có đóng góp), ƯU ĐÃI XÃ HỘI (đối với người có công) và TRỢ GIÚP XÃ HỘI (đối với người yếu thế, không cần đóng góp). Nguyên tắc thường nêu: Nhà nước bảo đảm, xã hội tham gia; công bằng, đoàn kết, chia sẻ rủi ro; mức an sinh phù hợp điều kiện kinh tế - xã hội. Hiến pháp 2013 ghi nhận quyền được bảo đảm an sinh xã hội của công dân (Điều 34).",
+ "example": "Một người lao động bị tai nạn được hưởng BHXH (vì đã đóng); một thương binh hưởng trợ cấp ưu đãi (vì có công); một người khuyết tật nặng không nơi nương tựa hưởng trợ cấp xã hội (trợ giúp xã hội).",
+ "source": {
+  "kind": "textbook",
+  "cite": "Giáo trình Luật An sinh xã hội, Trường Đại học Luật Hà Nội; đề cương Luật An sinh xã hội vấn đề 1 — tóm lược quan điểm học thuật phổ biến, chưa đối chiếu nguyên văn"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "bao-hiem-xa-hoi",
+  "uu-dai-nguoi-co-cong",
+  "tro-giup-xa-hoi"
+ ],
+ "keywords": [
+  "bảo vệ của Nhà nước và xã hội",
+  "ngừng hoặc giảm thu nhập",
+  "bảo hiểm – ưu đãi – trợ giúp",
+  "quyền an sinh Điều 34 Hiến pháp"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Bộ phận nào của hệ thống an sinh xã hội dựa trên nguyên tắc có đóng – có hưởng?",
+   "options": [
+    "Bảo hiểm xã hội",
+    "Trợ giúp xã hội",
+    "Ưu đãi xã hội",
+    "Từ thiện"
+   ],
+   "answer": 0,
+   "explain": "Học thuyết.",
+   "source": {
+    "kind": "statute",
+    "cite": "Học thuyết x"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quyền được bảo đảm an sinh xã hội của công dân được Hiến pháp 2013 ghi nhận tại điều nào?",
+   "options": [
+    "Điều 34",
+    "Điều 14",
+    "Điều 57",
+    "Điều 60"
+   ],
+   "answer": 0,
+   "explain": "Điều 34 Hiến pháp 2013: \"Công dân có quyền được bảo đảm an sinh xã hội.\"",
+   "source": {
+    "kind": "statute",
+    "cite": "Học thuyết x"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Bảo hiểm xã hội",
+   "right": "Trợ giúp xã hội",
+   "cases": [
+    {
+     "text": "Hưởng trên cơ sở đã đóng góp",
+     "answer": "left"
+    },
+    {
+     "text": "Không đòi hỏi đóng góp, dành cho người yếu thế",
+     "answer": "right"
+    }
+   ],
+   "explain": "Học thuyết."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "An sinh xã hội là sự {{bảo vệ}} của Nhà nước và xã hội giúp các thành viên chống lại khó khăn do bị ngừng hoặc giảm {{thu nhập}}.",
+   "bank_extra": [
+    "trừng phạt",
+    "tài sản"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hệ thống an sinh xã hội gồm bảo hiểm xã hội, {{ưu đãi xã hội}} và {{trợ giúp xã hội}}.",
+   "bank_extra": [
+    "bảo hiểm thương mại",
+    "tín dụng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Trợ giúp xã hội chỉ dành cho người đã đóng bảo hiểm xã hội.",
+   "answer": false,
+   "explain": "Sai. Trợ giúp xã hội không đòi hỏi đóng góp; dành cho người yếu thế."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm và các bộ phận của hệ thống an sinh xã hội.",
+   "model": "Sự bảo vệ của Nhà nước và xã hội thông qua các biện pháp công cộng giúp các thành viên chống lại khó khăn do ngừng hoặc giảm thu nhập (ốm đau, thai sản, tai nạn, thất nghiệp, tuổi già, chết), gồm bảo hiểm xã hội, ưu đãi xã hội, trợ giúp xã hội.",
+   "keywords": [
+    "bảo vệ",
+    "thu nhập",
+    "bảo hiểm xã hội",
+    "trợ giúp"
+   ]
+  }
+ ]
+}

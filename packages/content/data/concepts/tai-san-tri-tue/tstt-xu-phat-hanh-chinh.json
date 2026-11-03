@@ -1,0 +1,117 @@
+{
+ "id": "tstt-xu-phat-hanh-chinh",
+ "subject": "tai-san-tri-tue",
+ "chapter": "v5",
+ "term": "Hành vi xâm phạm bị xử phạt vi phạm hành chính",
+ "definition": "Tổ chức, cá nhân thực hiện một trong các hành vi xâm phạm quyền sở hữu trí tuệ sau đây bị xử phạt vi phạm hành chính: a) Xâm phạm quyền sở hữu trí tuệ gây thiệt hại cho tác giả, chủ sở hữu, người tiêu dùng hoặc cho xã hội; b) Sản xuất, nhập khẩu, tàng trữ, vận chuyển, buôn bán hàng hóa giả mạo về sở hữu trí tuệ quy định tại Điều 213 của Luật này hoặc giao cho người khác thực hiện hành vi này; c) Sản xuất, nhập khẩu, vận chuyển, buôn bán, tàng trữ tem, nhãn hoặc vật phẩm khác mang nhãn hiệu hoặc chỉ dẫn địa lý giả mạo hoặc giao cho người khác thực hiện hành vi này.",
+ "plain": "Biện pháp HÀNH CHÍNH — nhanh, chi phí thấp, do thanh tra, quản lý thị trường, hải quan, công an, UBND xử lý; phù hợp khi muốn chấm dứt nhanh hành vi, tịch thu, tiêu hủy hàng giả, nhưng tiền phạt nộp ngân sách — chủ thể quyền muốn BỒI THƯỜNG vẫn phải kiện dân sự. Hồ sơ yêu cầu xử lý: đơn yêu cầu, chứng cứ quyền (văn bằng), chứng cứ xâm phạm (mẫu, ảnh, hóa đơn), kết luận giám định nếu có, giấy ủy quyền. Mức phạt, hình thức xử phạt, thẩm quyền do Chính phủ quy định (khoản 2, 3 Điều 211) — ghi chép bài giảng dẫn Nghị định 99/2013/NĐ-CP, cần kiểm tra văn bản thay thế hiện hành. Phân biệt với VI PHẠM pháp luật về SHTT (vi phạm quy định quản lý nhà nước).",
+ "example": "Cửa hàng B không trả lời thư khuyến cáo; Honda nộp đơn yêu cầu Thanh tra xử lý: hành vi bán phụ tùng gắn \"Hongda\" gây thiệt hại cho chủ sở hữu → điểm a khoản 1 Điều 211; hàng bị tịch thu, tiêu hủy; muốn đòi bồi thường Honda phải kiện dân sự.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 211 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tstt-tu-bao-ve",
+  "tstt-xam-pham-nhan-hieu",
+  "tstt-kiem-soat-bien-gioi"
+ ],
+ "keywords": [
+  "xử phạt vi phạm hành chính",
+  "hàng hóa giả mạo",
+  "tem, nhãn giả mạo",
+  "gây thiệt hại"
+ ],
+ "note": "Luật Sở hữu trí tuệ 50/2005/QH11 (hiệu lực 01/7/2006) đã được sửa đổi bởi Luật 36/2009/QH12, 42/2019/QH14, 07/2022/QH15, 93/2025/QH15 và 131/2025/QH15 (hiệu lực 01/4/2026) — văn bản hợp nhất 67/VBHN-VPQH 2026; ghi chép lớp học còn dẫn Nghị định 105/2006/NĐ-CP và Nghị định 99/2013/NĐ-CP, cần tự kiểm tra hiệu lực của các nghị định này trước khi dùng.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hành vi nào bị xử phạt vi phạm hành chính theo khoản 1 Điều 211?",
+   "options": [
+    "Buôn bán hàng hóa giả mạo về sở hữu trí tuệ",
+    "Sử dụng tác phẩm theo hợp đồng",
+    "Nộp đơn đăng ký nhãn hiệu",
+    "Khiếu nại quyết định từ chối cấp văn bằng"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 1 Điều 211.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 211 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Muốn được bồi thường thiệt hại, chủ thể quyền nên dùng biện pháp nào?",
+   "options": [
+    "Khởi kiện dân sự tại tòa án",
+    "Yêu cầu xử phạt hành chính là đủ",
+    "Tố cáo hành chính",
+    "Đăng ký lại nhãn hiệu"
+   ],
+   "answer": 0,
+   "explain": "Tiền phạt hành chính nộp ngân sách; bồi thường theo Điều 204, 205 do tòa án quyết định.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 205 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Ưu điểm biện pháp hành chính",
+   "right": "Hạn chế biện pháp hành chính",
+   "cases": [
+    {
+     "text": "Nhanh, chi phí thấp, chấm dứt sớm hành vi",
+     "answer": "left"
+    },
+    {
+     "text": "Không giải quyết yêu cầu bồi thường cho chủ thể quyền",
+     "answer": "right"
+    }
+   ],
+   "explain": "Bài giảng so sánh ưu, nhược các biện pháp."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Xâm phạm quyền SHTT gây {{thiệt hại}} cho tác giả, chủ sở hữu, {{người tiêu dùng}} hoặc cho xã hội bị xử phạt vi phạm hành chính.",
+   "bank_extra": [
+    "lợi ích",
+    "cơ quan đăng ký"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Sản xuất, nhập khẩu, vận chuyển, buôn bán, tàng trữ tem, nhãn mang {{nhãn hiệu}} hoặc {{chỉ dẫn địa lý}} giả mạo bị xử phạt vi phạm hành chính.",
+   "bank_extra": [
+    "sáng chế",
+    "tên miền"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi hành vi xâm phạm quyền SHTT đều phải bị xử lý hình sự.",
+   "answer": false,
+   "explain": "Sai. Xâm phạm có thể xử lý bằng biện pháp dân sự, hành chính (Điều 211) hoặc hình sự tùy tính chất, mức độ (Điều 199)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các hành vi bị xử phạt vi phạm hành chính và hạn chế của biện pháp này.",
+   "model": "Xâm phạm gây thiệt hại; sản xuất, buôn bán hàng giả mạo SHTT; sản xuất, buôn bán tem nhãn giả mạo (khoản 1 Điều 211); nhanh, rẻ nhưng không bồi thường cho chủ thể quyền — phải kiện dân sự.",
+   "keywords": [
+    "gây thiệt hại",
+    "hàng giả mạo",
+    "tem nhãn",
+    "bồi thường"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,118 @@
+{
+ "id": "tcdn-chao-ban-co-phan",
+ "subject": "tai-chinh-doanh-nghiep",
+ "chapter": "v2",
+ "term": "Chào bán cổ phần — huy động vốn chủ sở hữu",
+ "definition": "Chào bán cổ phần là việc công ty tăng thêm số lượng cổ phần, loại cổ phần được quyền chào bán để tăng vốn điều lệ. Chào bán cổ phần có thể thực hiện theo các hình thức sau đây: a) Chào bán cổ phần cho cổ đông hiện hữu; b) Chào bán cổ phần riêng lẻ; c) Chào bán cổ phần ra công chúng.",
+ "plain": "Chào bán cổ phần là cách công ty cổ phần huy động VỐN CHỦ SỞ HỮU — làm TĂNG VỐN ĐIỀU LỆ, không phải trả nợ gốc, nhưng làm thay đổi cơ cấu sở hữu (pha loãng). Ba hình thức: cho CỔ ĐÔNG HIỆN HỮU, RIÊNG LẺ, RA CÔNG CHÚNG (theo pháp luật chứng khoán — khoản 3). Sau đợt bán: đăng ký thay đổi vốn điều lệ trong 10 ngày (khoản 4). Chỉ công ty cổ phần được phát hành cổ phần; công ty TNHH huy động vốn chủ sở hữu bằng tiếp nhận thêm vốn góp.",
+ "example": "Công ty cổ phần D chào bán thêm 1 triệu cổ phần cho cổ đông hiện hữu theo tỷ lệ sở hữu để tăng vốn điều lệ từ 50 tỷ lên 60 tỷ đồng.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, 2 Điều 123 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tcdn-trai-phieu",
+  "tcdn-von-dieu-le",
+  "tcdn-trai-phieu-rieng-le"
+ ],
+ "keywords": [
+  "tăng vốn điều lệ",
+  "cổ đông hiện hữu",
+  "riêng lẻ",
+  "ra công chúng",
+  "10 ngày"
+ ],
+ "note": "Luật Doanh nghiệp 59/2020/QH14 có hiệu lực từ 01/01/2021, thay thế Luật Doanh nghiệp 2014 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 03/2022/QH15 và Luật 76/2025/QH15 (hiệu lực 01/7/2025) — văn bản hợp nhất 67/VBHN-VPQH 2025.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Mục đích của chào bán cổ phần theo khoản 1 Điều 123 là gì?",
+   "options": [
+    "Tăng vốn điều lệ",
+    "Vay vốn ngắn hạn",
+    "Giảm vốn điều lệ",
+    "Trả cổ tức"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 123.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 123 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hình thức nào KHÔNG phải hình thức chào bán cổ phần theo khoản 2 Điều 123?",
+   "options": [
+    "Chào bán cổ phần cho ngân hàng để vay vốn",
+    "Chào bán cho cổ đông hiện hữu",
+    "Chào bán riêng lẻ",
+    "Chào bán ra công chúng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 123.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 123 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Huy động vốn chủ sở hữu",
+   "right": "Huy động vốn vay",
+   "cases": [
+    {
+     "text": "Chào bán cổ phần riêng lẻ",
+     "answer": "left"
+    },
+    {
+     "text": "Chào bán trái phiếu riêng lẻ",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 123, 128 Luật Doanh nghiệp."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chào bán cổ phần là việc công ty tăng thêm số lượng cổ phần, loại cổ phần được quyền chào bán để tăng {{vốn điều lệ}}.",
+   "bank_extra": [
+    "vốn vay",
+    "nợ phải trả"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chào bán cổ phần có thể thực hiện cho cổ đông {{hiện hữu}}, chào bán {{riêng lẻ}} hoặc chào bán ra công chúng.",
+   "bank_extra": [
+    "tiềm năng",
+    "bắt buộc"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Công ty TNHH được chào bán cổ phần ra công chúng để huy động vốn.",
+   "answer": false,
+   "explain": "Sai. Chào bán cổ phần là cơ chế của công ty cổ phần (Điều 123); công ty TNHH không phát hành cổ phần."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm và các hình thức chào bán cổ phần.",
+   "model": "Việc công ty tăng thêm số lượng cổ phần, loại cổ phần được quyền chào bán để tăng vốn điều lệ; hình thức: cho cổ đông hiện hữu, riêng lẻ, ra công chúng (khoản 1, 2 Điều 123).",
+   "keywords": [
+    "tăng vốn điều lệ",
+    "cổ đông hiện hữu",
+    "riêng lẻ",
+    "công chúng"
+   ]
+  }
+ ]
+}

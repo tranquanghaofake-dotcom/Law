@@ -1,0 +1,119 @@
+{
+ "id": "nhan-tien-gui",
+ "subject": "ngan-hang",
+ "chapter": "v4",
+ "term": "Nhận tiền gửi",
+ "definition": "Nhận tiền gửi là hoạt động nhận tiền của tổ chức, cá nhân dưới hình thức tiền gửi không kỳ hạn, tiền gửi có kỳ hạn, tiền gửi tiết kiệm, phát hành chứng chỉ tiền gửi và hình thức nhận tiền gửi khác theo nguyên tắc có hoàn trả đầy đủ tiền gốc, lãi theo thỏa thuận cho tổ chức, cá nhân gửi tiền (sau đây gọi là người gửi tiền).",
+ "plain": "Là hình thức HUY ĐỘNG VỐN chủ yếu của TCTD. Hình thức: không kỳ hạn, có kỳ hạn, tiết kiệm, PHÁT HÀNH CHỨNG CHỈ TIỀN GỬI… Nguyên tắc: HOÀN TRẢ ĐẦY ĐỦ GỐC, LÃI theo thỏa thuận. Phân biệt: phát hành chứng chỉ tiền gửi là nhận tiền gửi; còn phát hành TRÁI PHIẾU là vay vốn bằng giấy tờ có giá, không phải nhận tiền gửi. TCTD phi ngân hàng không được nhận tiền gửi của cá nhân (khoản 41).",
+ "example": "Ngân hàng phát hành chứng chỉ tiền gửi kỳ hạn 24 tháng cho khách hàng cá nhân: đây là một hình thức nhận tiền gửi, ngân hàng phải hoàn trả đủ gốc và lãi khi đến hạn.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 27 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-143-2026-VBHN-LQ-VPQH-Luat-Cac-to-chuc-tin-dung-729869.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "bao-hiem-tien-gui",
+  "tien-gui-duoc-bao-hiem",
+  "giay-to-co-gia",
+  "hoat-dong-ngan-hang"
+ ],
+ "keywords": [
+  "tiền gửi không kỳ hạn",
+  "có kỳ hạn",
+  "tiết kiệm",
+  "chứng chỉ tiền gửi",
+  "hoàn trả đầy đủ tiền gốc, lãi"
+ ],
+ "note": "Luật Các tổ chức tín dụng 32/2024/QH15 có hiệu lực từ 01/7/2024, thay thế Luật 47/2010/QH12 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 96/2025/QH15 (hiệu lực 15/10/2025) và Luật 23/2026/QH16 (hiệu lực 01/12/2026, chỉ bổ sung một điểm tại Điều 49) — các khoản Điều 4 được trích không bị sửa.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hình thức nào là nhận tiền gửi theo khoản 27 Điều 4?",
+   "options": [
+    "Phát hành chứng chỉ tiền gửi",
+    "Phát hành cổ phiếu",
+    "Bán tài sản bảo đảm",
+    "Mua lại khoản phải thu"
+   ],
+   "answer": 0,
+   "explain": "Khoản 27 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 27 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nguyên tắc của nhận tiền gửi là gì?",
+   "options": [
+    "Có hoàn trả đầy đủ tiền gốc, lãi theo thỏa thuận",
+    "Không hoàn trả gốc",
+    "Chỉ hoàn trả lãi",
+    "Hoàn trả theo kết quả kinh doanh của ngân hàng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 27 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 27 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Nhận tiền gửi",
+   "right": "Không phải nhận tiền gửi",
+   "cases": [
+    {
+     "text": "Nhận tiền gửi tiết kiệm có kỳ hạn của cá nhân",
+     "answer": "left"
+    },
+    {
+     "text": "Bán cổ phần cho nhà đầu tư khi tăng vốn điều lệ",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 27 Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhận tiền gửi là hoạt động nhận tiền dưới hình thức tiền gửi không kỳ hạn, có kỳ hạn, tiết kiệm, phát hành {{chứng chỉ tiền gửi}} theo nguyên tắc có {{hoàn trả}} đầy đủ tiền gốc, lãi.",
+   "bank_extra": [
+    "cổ phiếu",
+    "chia lợi nhuận"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tổ chức, cá nhân gửi tiền được gọi là {{người gửi tiền}}; tổ chức tín dụng phải hoàn trả đầy đủ tiền {{gốc}}, lãi theo thỏa thuận.",
+   "bank_extra": [
+    "cổ đông",
+    "phạt"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Phát hành cổ phiếu để tăng vốn điều lệ là một hình thức nhận tiền gửi.",
+   "answer": false,
+   "explain": "Sai. Khoản 27 Điều 4: nhận tiền gửi có nguyên tắc hoàn trả gốc, lãi; vốn cổ phần không phải tiền gửi."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm nhận tiền gửi.",
+   "model": "Hoạt động nhận tiền của tổ chức, cá nhân dưới hình thức tiền gửi không kỳ hạn, có kỳ hạn, tiết kiệm, phát hành chứng chỉ tiền gửi và hình thức khác theo nguyên tắc có hoàn trả đầy đủ tiền gốc, lãi theo thỏa thuận (khoản 27 Điều 4).",
+   "keywords": [
+    "không kỳ hạn",
+    "có kỳ hạn",
+    "chứng chỉ tiền gửi",
+    "hoàn trả"
+   ]
+  }
+ ]
+}

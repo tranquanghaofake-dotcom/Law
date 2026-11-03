@@ -1,0 +1,118 @@
+{
+ "id": "xd-sua-doi-bai-bo",
+ "subject": "xay-dung-vbpl",
+ "chapter": "v6",
+ "term": "Sửa đổi, bổ sung, thay thế, bãi bỏ, đình chỉ việc thi hành VBQPPL",
+ "definition": "Văn bản quy phạm pháp luật chỉ được sửa đổi, bổ sung, thay thế bằng văn bản quy phạm pháp luật của chính cơ quan, người có thẩm quyền đã ban hành văn bản đó hoặc bị đình chỉ việc thi hành bằng văn bản của cơ quan, người có thẩm quyền, trừ trường hợp quy định tại điểm a và điểm b khoản 2 Điều 54 của Luật này hoặc luật, nghị quyết của Quốc hội có quy định khác.",
+ "plain": "Các biện pháp xử lý VBQPPL khiếm khuyết: SỬA ĐỔI, BỔ SUNG, THAY THẾ — chỉ do CHÍNH cơ quan đã ban hành, bằng VBQPPL; ĐÌNH CHỈ VIỆC THI HÀNH — bằng văn bản của cơ quan có thẩm quyền (thường là cấp trên), hệ quả là tạm ngưng hiệu lực đến khi có quyết định xử lý (điểm b khoản 1 Điều 56); BÃI BỎ — bằng văn bản của chính cơ quan ban hành hoặc cơ quan, người có thẩm quyền (khoản 2 Điều 8), làm văn bản hết hiệu lực (điểm c khoản 1 Điều 57). Văn bản xử lý phải nêu rõ tên văn bản, điều, khoản, điểm bị xử lý và được đăng tải (khoản 3). Thay thế toàn bộ khi thay đổi cơ bản chính sách, phạm vi hoặc sửa quá một phần hai nội dung (khoản 4). Luật 2025 không còn dùng thuật ngữ \"hủy bỏ\".",
+ "example": "Thông tư của Bộ X trái nghị định: Thủ tướng đình chỉ việc thi hành (thông tư tạm ngưng hiệu lực); Bộ trưởng X sau đó ban hành thông tư mới bãi bỏ/sửa đổi thông tư sai.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 8 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-54-VBHN-VPQH-2025-Luat-Ban-hanh-van-ban-quy-pham-phap-luat-669858.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "xd-het-hieu-luc",
+  "xd-kiem-tra-vbqppl",
+  "xd-ra-soat-vbqppl"
+ ],
+ "keywords": [
+  "sửa đổi, bổ sung, thay thế",
+  "chính cơ quan đã ban hành",
+  "đình chỉ việc thi hành",
+  "bãi bỏ"
+ ],
+ "note": "Luật Ban hành văn bản quy phạm pháp luật 64/2025/QH15 có hiệu lực từ 01/4/2025, thay thế Luật 80/2015/QH13 (sửa đổi bởi Luật 63/2020/QH14) mà đề cương HLU 2019 còn dẫn; được sửa đổi bởi Luật 87/2025/QH15 có hiệu lực từ 01/7/2025 — văn bản hợp nhất 54/VBHN-VPQH ngày 11/8/2025. Luật mới bỏ quy trình \"lập đề nghị xây dựng luật\" theo chương trình hằng năm kiểu cũ, tách \"quy trình xây dựng chính sách\" và bỏ thẩm quyền ban hành VBQPPL của cấp huyện (từ 01/7/2025). Dự án Luật Văn bản quy phạm pháp luật (thay thế) đang được Quốc hội khóa XVI xem xét, chưa có hiệu lực.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai có quyền sửa đổi, bổ sung, thay thế một văn bản quy phạm pháp luật?",
+   "options": [
+    "Chính cơ quan, người có thẩm quyền đã ban hành văn bản đó, bằng VBQPPL",
+    "Bất kỳ cơ quan cấp trên nào",
+    "Bộ Tư pháp",
+    "Tòa án nhân dân tối cao"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 8.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 8 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hệ quả của việc văn bản bị đình chỉ việc thi hành là gì?",
+   "options": [
+    "Tạm ngưng hiệu lực cho đến khi có quyết định xử lý của cơ quan, người có thẩm quyền",
+    "Hết hiệu lực vĩnh viễn ngay",
+    "Vẫn có hiệu lực bình thường",
+    "Tự động được sửa đổi"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 1 Điều 56.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 56 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Phải do chính cơ quan ban hành thực hiện",
+   "right": "Có thể do cơ quan có thẩm quyền khác thực hiện",
+   "cases": [
+    {
+     "text": "Sửa đổi, bổ sung một điều của thông tư",
+     "answer": "left"
+    },
+    {
+     "text": "Đình chỉ việc thi hành thông tư trái luật",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 8."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "VBQPPL chỉ được {{sửa đổi, bổ sung}}, thay thế bằng VBQPPL của chính cơ quan, người có thẩm quyền đã {{ban hành}} văn bản đó.",
+   "bank_extra": [
+    "giải thích",
+    "kiểm tra"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "VBQPPL bị {{đình chỉ việc thi hành}} bằng văn bản của cơ quan, người có thẩm quyền; văn bản bãi bỏ hoặc đình chỉ phải được đăng tải trên {{công báo điện tử}}.",
+   "bank_extra": [
+    "tạm hoãn",
+    "báo in"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Cơ quan cấp trên có thể trực tiếp sửa đổi nội dung văn bản quy phạm pháp luật của cơ quan cấp dưới.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 8: sửa đổi, bổ sung, thay thế chỉ do chính cơ quan đã ban hành; cấp trên chỉ đình chỉ việc thi hành hoặc bãi bỏ theo thẩm quyền (khoản 2 Điều 8)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các hình thức xử lý văn bản quy phạm pháp luật và chủ thể thực hiện.",
+   "model": "Sửa đổi, bổ sung, thay thế: chính cơ quan đã ban hành, bằng VBQPPL; đình chỉ việc thi hành: cơ quan, người có thẩm quyền (khoản 1 Điều 8); bãi bỏ: chính cơ quan ban hành hoặc cơ quan, người có thẩm quyền (khoản 2 Điều 8); văn bản xử lý phải nêu rõ phần bị xử lý và được đăng tải (khoản 3 Điều 8).",
+   "keywords": [
+    "sửa đổi",
+    "thay thế",
+    "đình chỉ",
+    "bãi bỏ",
+    "chính cơ quan"
+   ]
+  }
+ ]
+}

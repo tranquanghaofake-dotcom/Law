@@ -1,0 +1,115 @@
+{
+ "id": "hop-dong-theo-mau",
+ "subject": "dan-su-2",
+ "chapter": "v5",
+ "term": "Hợp đồng theo mẫu",
+ "definition": "Hợp đồng theo mẫu là hợp đồng gồm những điều khoản do một bên đưa ra theo mẫu để bên kia trả lời trong một thời gian hợp lý; nếu bên được đề nghị trả lời chấp nhận thì coi như chấp nhận toàn bộ nội dung hợp đồng theo mẫu mà bên đề nghị đã đưa ra. (…) Trường hợp hợp đồng theo mẫu có điều khoản không rõ ràng thì bên đưa ra hợp đồng theo mẫu phải chịu bất lợi khi giải thích điều khoản đó. Trường hợp hợp đồng theo mẫu có điều khoản miễn trách nhiệm của bên đưa ra hợp đồng theo mẫu, tăng trách nhiệm hoặc loại bỏ quyền lợi chính đáng của bên kia thì điều khoản này không có hiệu lực, trừ trường hợp có thỏa thuận khác.",
+ "plain": "Đặc điểm: điều khoản do MỘT BÊN soạn sẵn; bên kia chỉ CHẤP NHẬN TOÀN BỘ hoặc không. Bảo vệ bên yếu thế: phải CÔNG KHAI; điều khoản không rõ ràng giải thích BẤT LỢI cho bên soạn thảo; điều khoản MIỄN TRÁCH NHIỆM, TĂNG TRÁCH NHIỆM, LOẠI BỎ QUYỀN LỢI chính đáng của bên kia KHÔNG CÓ HIỆU LỰC. Thường gặp: hợp đồng điện, nước, viễn thông, ngân hàng, bảo hiểm (còn chịu Luật Bảo vệ quyền lợi người tiêu dùng).",
+ "example": "Hợp đồng gửi xe in sẵn ghi \"bãi xe không chịu trách nhiệm nếu mất xe\": điều khoản miễn trách nhiệm của bên đưa ra mẫu, không có hiệu lực.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1–3 Điều 405 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hop-dong",
+  "phat-vi-pham"
+ ],
+ "keywords": [
+  "do một bên đưa ra",
+  "chấp nhận toàn bộ",
+  "giải thích bất lợi cho bên soạn",
+  "điều khoản miễn trách nhiệm không có hiệu lực"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Điều khoản không rõ ràng trong hợp đồng theo mẫu được giải thích thế nào?",
+   "options": [
+    "Bên đưa ra hợp đồng theo mẫu phải chịu bất lợi",
+    "Có lợi cho bên đưa ra mẫu",
+    "Do Tòa án tùy ý",
+    "Coi như không có"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 405.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 405 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Điều khoản miễn trách nhiệm của bên đưa ra hợp đồng theo mẫu có hiệu lực không?",
+   "options": [
+    "Không, trừ trường hợp có thỏa thuận khác",
+    "Luôn có hiệu lực",
+    "Có nếu được in đậm",
+    "Có nếu bên kia đã ký"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 405.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 405 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Không có hiệu lực",
+   "right": "Có hiệu lực",
+   "cases": [
+    {
+     "text": "Điều khoản loại bỏ quyền lợi chính đáng của khách hàng",
+     "answer": "left"
+    },
+    {
+     "text": "Điều khoản về giá dịch vụ đã công khai",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 405."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nếu bên được đề nghị trả lời chấp nhận thì coi như chấp nhận {{toàn bộ}} nội dung hợp đồng theo mẫu; điều khoản không rõ ràng thì bên {{đưa ra}} hợp đồng theo mẫu phải chịu bất lợi khi giải thích.",
+   "bank_extra": [
+    "một phần",
+    "nhận"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hợp đồng theo mẫu phải được {{công khai}} để bên được đề nghị biết hoặc phải biết về nội dung.",
+   "bank_extra": [
+    "bảo mật",
+    "công chứng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Khách hàng có thể đàm phán từng điều khoản của hợp đồng theo mẫu như hợp đồng thông thường.",
+   "answer": false,
+   "explain": "Sai. Bản chất hợp đồng theo mẫu: chấp nhận thì chấp nhận toàn bộ (khoản 1 Điều 405)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quy định về hợp đồng theo mẫu.",
+   "model": "Là hợp đồng gồm điều khoản do một bên đưa ra theo mẫu, bên kia chấp nhận thì coi như chấp nhận toàn bộ; phải công khai; điều khoản không rõ ràng giải thích bất lợi cho bên đưa ra; điều khoản miễn trách nhiệm, tăng trách nhiệm, loại bỏ quyền lợi chính đáng của bên kia không có hiệu lực (Điều 405).",
+   "keywords": [
+    "một bên",
+    "toàn bộ",
+    "bất lợi",
+    "miễn trách nhiệm"
+   ]
+  }
+ ]
+}

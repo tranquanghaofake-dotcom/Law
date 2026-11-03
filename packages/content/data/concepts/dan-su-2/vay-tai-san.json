@@ -1,0 +1,115 @@
+{
+ "id": "vay-tai-san",
+ "subject": "dan-su-2",
+ "chapter": "v7",
+ "term": "Hợp đồng vay tài sản",
+ "definition": "Hợp đồng vay tài sản là sự thỏa thuận giữa các bên, theo đó bên cho vay giao tài sản cho bên vay; khi đến hạn trả, bên vay phải hoàn trả cho bên cho vay tài sản cùng loại theo đúng số lượng, chất lượng và chỉ phải trả lãi nếu có thỏa thuận hoặc pháp luật có quy định.",
+ "plain": "Đặc điểm: bên vay trở thành CHỦ SỞ HỮU tài sản vay từ khi nhận (Điều 464); hoàn trả tài sản CÙNG LOẠI (không phải chính tài sản đó — khác hợp đồng mượn). Lãi chỉ phải trả khi CÓ THỎA THUẬN hoặc LUẬT quy định. Phân loại: vay có kỳ hạn, không kỳ hạn; có lãi, không lãi.",
+ "example": "Vay 1 chỉ vàng, đến hạn trả 1 chỉ vàng cùng loại, cùng tuổi vàng; không phải trả chính chiếc nhẫn đã nhận.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 463 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "lai-suat",
+  "thue-tai-san"
+ ],
+ "keywords": [
+  "tài sản cùng loại",
+  "đúng số lượng, chất lượng",
+  "chỉ trả lãi nếu thỏa thuận",
+  "bên vay là chủ sở hữu"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khi đến hạn, bên vay phải hoàn trả gì?",
+   "options": [
+    "Tài sản cùng loại theo đúng số lượng, chất lượng",
+    "Chính tài sản đã nhận",
+    "Tiền tương đương giá trị tại thời điểm vay gấp đôi",
+    "Không phải trả nếu không có văn bản"
+   ],
+   "answer": 0,
+   "explain": "Điều 463.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 463 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Bên vay phải trả lãi khi nào?",
+   "options": [
+    "Khi có thỏa thuận hoặc pháp luật có quy định",
+    "Luôn luôn",
+    "Không bao giờ",
+    "Khi vay trên 100 triệu"
+   ],
+   "answer": 0,
+   "explain": "Điều 463.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 463 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Vay tài sản",
+   "right": "Mượn tài sản",
+   "cases": [
+    {
+     "text": "Trả lại tài sản cùng loại",
+     "answer": "left"
+    },
+    {
+     "text": "Trả lại chính tài sản đã mượn",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 463, 494."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Khi đến hạn trả, bên vay phải hoàn trả cho bên cho vay tài sản {{cùng loại}} theo đúng số lượng, chất lượng và chỉ phải trả {{lãi}} nếu có thỏa thuận hoặc pháp luật có quy định.",
+   "bank_extra": [
+    "chính",
+    "phạt"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Trong hợp đồng vay, bên {{cho vay}} giao tài sản cho bên vay.",
+   "bank_extra": [
+    "thuê",
+    "bảo lãnh"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi hợp đồng vay tiền đều phải trả lãi.",
+   "answer": false,
+   "explain": "Sai. Điều 463: chỉ trả lãi nếu có thỏa thuận hoặc pháp luật có quy định."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm hợp đồng vay tài sản.",
+   "model": "Là thỏa thuận theo đó bên cho vay giao tài sản cho bên vay; đến hạn bên vay hoàn trả tài sản cùng loại đúng số lượng, chất lượng và chỉ trả lãi nếu có thỏa thuận hoặc pháp luật quy định (Điều 463).",
+   "keywords": [
+    "cho vay",
+    "cùng loại",
+    "số lượng, chất lượng",
+    "lãi"
+   ]
+  }
+ ]
+}

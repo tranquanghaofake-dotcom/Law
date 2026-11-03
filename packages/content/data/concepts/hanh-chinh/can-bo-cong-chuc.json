@@ -1,0 +1,116 @@
+{
+ "id": "can-bo-cong-chuc",
+ "subject": "hanh-chinh",
+ "chapter": "v9",
+ "term": "Cán bộ và công chức",
+ "definition": "Cán bộ là công dân Việt Nam, được bầu cử, phê chuẩn, bổ nhiệm hoặc chỉ định giữ chức vụ, chức danh theo nhiệm kỳ trong cơ quan của Đảng Cộng sản Việt Nam, Nhà nước, Mặt trận Tổ quốc Việt Nam, các tổ chức chính trị - xã hội ở trung ương, ở cấp tỉnh, ở cấp xã, trong biên chế và hưởng lương từ ngân sách nhà nước. Công chức là công dân Việt Nam, được tuyển dụng vào vị trí việc làm trong cơ quan của Đảng Cộng sản Việt Nam, Nhà nước, Mặt trận Tổ quốc Việt Nam, các tổ chức chính trị - xã hội ở trung ương, ở cấp tỉnh, ở cấp xã;",
+ "plain": "Phân biệt theo CÁCH HÌNH THÀNH: CÁN BỘ — bầu cử, phê chuẩn, bổ nhiệm, chỉ định, giữ chức vụ THEO NHIỆM KỲ; CÔNG CHỨC — TUYỂN DỤNG vào VỊ TRÍ VIỆC LÀM; Luật 2025 lấy vị trí việc làm làm trung tâm, ngạch công chức xếp tương ứng với vị trí việc làm. Cả hai: công dân Việt Nam, trong biên chế, hưởng lương ngân sách. Luật 2025 bỏ \"cán bộ, công chức cấp xã\" riêng (thống nhất ở trung ương, cấp tỉnh, cấp xã). VIÊN CHỨC (làm việc ở đơn vị sự nghiệp công lập theo hợp đồng làm việc, lương từ quỹ lương của đơn vị) do Luật Viên chức điều chỉnh, không phải công chức.",
+ "example": "Chủ tịch UBND tỉnh do HĐND bầu, giữ chức theo nhiệm kỳ: cán bộ. Chuyên viên Sở Tư pháp trúng tuyển kỳ thi tuyển vào vị trí việc làm: công chức. Giáo viên trường THPT công lập: viên chức.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, 2 Điều 1 Luật Cán bộ, công chức 2025 (80/2025/QH15)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Luat-Can-bo-cong-chuc-2025-so-80-2025-QH15-649688.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nguyen-tac-thi-hanh-cong-vu",
+  "nguyen-tac-to-chuc-chinh-phu"
+ ],
+ "keywords": [
+  "bầu cử, phê chuẩn, bổ nhiệm",
+  "theo nhiệm kỳ",
+  "tuyển dụng vào vị trí việc làm",
+  "biên chế, lương ngân sách"
+ ],
+ "note": "Luật Cán bộ, công chức 80/2025/QH15 có hiệu lực từ 01/7/2025, thay thế Luật Cán bộ, công chức 22/2008/QH12; bỏ cấp huyện, chỉ còn trung ương, cấp tỉnh, cấp xã.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đặc điểm phân biệt cán bộ với công chức theo Luật Cán bộ, công chức 2025?",
+   "options": [
+    "Cán bộ được bầu cử, phê chuẩn, bổ nhiệm hoặc chỉ định giữ chức vụ theo nhiệm kỳ; công chức được tuyển dụng vào vị trí việc làm",
+    "Cán bộ không hưởng lương ngân sách",
+    "Công chức phải là đảng viên",
+    "Cán bộ chỉ làm việc ở trung ương"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1, 2 Điều 1.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 1 Luật Cán bộ, công chức 2025 (80/2025/QH15)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người được tuyển dụng vào vị trí việc làm trong cơ quan nhà nước cấp tỉnh, trong biên chế, hưởng lương ngân sách là ai?",
+   "options": [
+    "Công chức",
+    "Cán bộ",
+    "Viên chức",
+    "Người lao động theo hợp đồng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 1.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 1 Luật Cán bộ, công chức 2025 (80/2025/QH15)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Cán bộ",
+   "right": "Công chức",
+   "cases": [
+    {
+     "text": "Chủ tịch HĐND cấp xã do bầu cử, theo nhiệm kỳ",
+     "answer": "left"
+    },
+    {
+     "text": "Chuyên viên trúng tuyển vào vị trí việc làm tại Bộ Tư pháp",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 1."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Cán bộ là công dân Việt Nam, được {{bầu cử}}, phê chuẩn, bổ nhiệm hoặc chỉ định giữ chức vụ, chức danh theo {{nhiệm kỳ}}.",
+   "bank_extra": [
+    "tuyển dụng",
+    "hợp đồng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công chức là công dân Việt Nam, được {{tuyển dụng}} vào {{vị trí việc làm}} trong cơ quan của Đảng, Nhà nước, Mặt trận Tổ quốc, tổ chức chính trị - xã hội.",
+   "bank_extra": [
+    "bầu",
+    "ngạch lương"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo Luật Cán bộ, công chức 2025, vẫn còn cán bộ, công chức cấp huyện.",
+   "answer": false,
+   "explain": "Sai. Khoản 1, 2 Điều 1 chỉ nêu trung ương, cấp tỉnh, cấp xã."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Phân biệt cán bộ và công chức theo Luật 2025.",
+   "model": "Cán bộ: công dân Việt Nam được bầu cử, phê chuẩn, bổ nhiệm hoặc chỉ định giữ chức vụ theo nhiệm kỳ; công chức: được tuyển dụng vào vị trí việc làm; cả hai trong biên chế, hưởng lương ngân sách, ở trung ương, cấp tỉnh, cấp xã (Điều 1).",
+   "keywords": [
+    "bầu cử",
+    "nhiệm kỳ",
+    "tuyển dụng",
+    "vị trí việc làm"
+   ]
+  }
+ ]
+}

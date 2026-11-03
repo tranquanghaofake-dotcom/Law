@@ -1,0 +1,116 @@
+{
+ "id": "to-cao",
+ "subject": "hanh-chinh",
+ "chapter": "v15",
+ "term": "Tố cáo",
+ "definition": "Tố cáo là việc cá nhân theo thủ tục quy định của Luật này báo cho cơ quan, tổ chức, cá nhân có thẩm quyền biết về hành vi vi phạm pháp luật của bất kỳ cơ quan, tổ chức, cá nhân nào gây thiệt hại hoặc đe dọa gây thiệt hại đến lợi ích của Nhà nước, quyền và lợi ích hợp pháp của cơ quan, tổ chức, cá nhân, bao gồm: a) Tố cáo hành vi vi phạm pháp luật trong việc thực hiện nhiệm vụ, công vụ; b) Tố cáo hành vi vi phạm pháp luật về quản lý nhà nước trong các lĩnh vực. (…) Người tố cáo là cá nhân thực hiện việc tố cáo.",
+ "plain": "Chủ thể tố cáo CHỈ LÀ CÁ NHÂN (khiếu nại: cả cơ quan, tổ chức). Đối tượng: hành vi vi phạm pháp luật của BẤT KỲ ai, gây hoặc đe dọa gây thiệt hại cho lợi ích Nhà nước, quyền lợi người khác — không cần liên quan quyền lợi của người tố cáo. Hai loại: tố cáo vi phạm trong thực hiện NHIỆM VỤ, CÔNG VỤ (của cán bộ, công chức, viên chức, cơ quan, tổ chức) và vi phạm về QUẢN LÝ NHÀ NƯỚC trong các lĩnh vực. Người tố cáo được bảo vệ bí mật thông tin.",
+ "example": "Anh C biết một công chức địa chính nhận tiền để làm nhanh hồ sơ cho người khác: anh C có quyền tố cáo dù bản thân không bị thiệt hại.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, 4 Điều 2 Luật Tố cáo 2018 (VBHN 29/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-29-VBHN-VPQH-2026-Luat-To-cao-697699.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "khieu-nai",
+  "can-bo-cong-chuc"
+ ],
+ "keywords": [
+  "chỉ cá nhân",
+  "hành vi vi phạm pháp luật của bất kỳ ai",
+  "nhiệm vụ, công vụ",
+  "quản lý nhà nước trong các lĩnh vực"
+ ],
+ "note": "Luật 136/2025/QH15 sửa đổi Luật Tiếp công dân, Luật Khiếu nại, Luật Tố cáo có hiệu lực từ 01/7/2026; văn bản hợp nhất đã cập nhật.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chủ thể nào có quyền tố cáo theo Luật Tố cáo?",
+   "options": [
+    "Cá nhân",
+    "Cơ quan nhà nước",
+    "Doanh nghiệp",
+    "Tổ chức chính trị - xã hội"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1, 4 Điều 2: người tố cáo là cá nhân.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 2 Luật Tố cáo 2018 (VBHN 29/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tố cáo gồm những loại nào?",
+   "options": [
+    "Tố cáo vi phạm trong thực hiện nhiệm vụ, công vụ và tố cáo vi phạm về quản lý nhà nước trong các lĩnh vực",
+    "Tố cáo dân sự và tố cáo hình sự",
+    "Tố cáo lần đầu và lần hai",
+    "Tố cáo nội bộ và tố cáo bên ngoài"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 2.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 2 Luật Tố cáo 2018 (VBHN 29/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tố cáo",
+   "right": "Khiếu nại",
+   "cases": [
+    {
+     "text": "Chỉ cá nhân thực hiện",
+     "answer": "left"
+    },
+    {
+     "text": "Có thời hiệu 90 ngày",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 2 Luật Tố cáo; Điều 9 Luật Khiếu nại."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tố cáo là việc {{cá nhân}} báo cho cơ quan, tổ chức, cá nhân có thẩm quyền biết về hành vi vi phạm pháp luật của {{bất kỳ}} cơ quan, tổ chức, cá nhân nào.",
+   "bank_extra": [
+    "tổ chức",
+    "chính"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tố cáo bao gồm tố cáo hành vi vi phạm pháp luật trong việc thực hiện {{nhiệm vụ, công vụ}} và tố cáo hành vi vi phạm pháp luật về {{quản lý nhà nước}} trong các lĩnh vực.",
+   "bank_extra": [
+    "hợp đồng",
+    "dân sự"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Doanh nghiệp có quyền tố cáo hành vi vi phạm pháp luật của công chức theo Luật Tố cáo.",
+   "answer": false,
+   "explain": "Sai. Khoản 1, 4 Điều 2: chỉ cá nhân là người tố cáo; doanh nghiệp có thể khiếu nại nếu quyền lợi của mình bị xâm phạm."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Phân biệt tố cáo với khiếu nại.",
+   "model": "Tố cáo: cá nhân báo cho người có thẩm quyền về hành vi vi phạm pháp luật của bất kỳ ai gây thiệt hại lợi ích Nhà nước, quyền lợi người khác (khoản 1 Điều 2 Luật Tố cáo); khiếu nại: cơ quan, tổ chức, cá nhân đề nghị xem xét lại quyết định, hành vi hành chính xâm phạm quyền, lợi ích của chính mình.",
+   "keywords": [
+    "cá nhân",
+    "bất kỳ",
+    "xem xét lại",
+    "của mình"
+   ]
+  }
+ ]
+}

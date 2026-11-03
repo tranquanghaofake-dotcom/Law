@@ -1,0 +1,116 @@
+{
+ "id": "quyet-dinh-hanh-chinh",
+ "subject": "hanh-chinh",
+ "chapter": "v7",
+ "term": "Quyết định hành chính và hành vi hành chính",
+ "definition": "Quyết định hành chính là văn bản do cơ quan hành chính nhà nước, cơ quan, tổ chức được giao thực hiện quản lý hành chính nhà nước ban hành hoặc người có thẩm quyền trong cơ quan, tổ chức đó ban hành quyết định về vấn đề cụ thể trong hoạt động quản lý hành chính được áp dụng một lần đối với một hoặc một số đối tượng cụ thể. (…) Hành vi hành chính là hành vi của cơ quan hành chính nhà nước hoặc của người có thẩm quyền trong cơ quan hành chính nhà nước hoặc cơ quan, tổ chức được giao thực hiện quản lý hành chính nhà nước thực hiện hoặc không thực hiện nhiệm vụ, công vụ theo quy định của pháp luật.",
+ "plain": "Định nghĩa trong Luật TTHC là quyết định hành chính CÁ BIỆT (đối tượng khởi kiện): giải quyết vấn đề CỤ THỂ, áp dụng MỘT LẦN cho đối tượng CỤ THỂ. Khoa học luật hành chính rộng hơn: quyết định hành chính gồm cả quyết định chủ đạo, quy phạm và cá biệt. Bị kiện được khi làm phát sinh, thay đổi, hạn chế, chấm dứt quyền, lợi ích hợp pháp (khoản 2); hành vi hành chính gồm cả KHÔNG THỰC HIỆN nhiệm vụ, công vụ (khoản 3). Quyết định, hành vi mang tính NỘI BỘ không bị kiện (khoản 6, Điều 30).",
+ "example": "Quyết định của Chủ tịch UBND cấp xã xử phạt ông A 5 triệu đồng về hành vi lấn chiếm vỉa hè là quyết định hành chính (cá biệt, áp dụng một lần cho ông A); việc cơ quan đăng ký đất đai không cấp sổ dù hồ sơ đủ là hành vi hành chính (không thực hiện công vụ).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, 3 Điều 3 Luật Tố tụng hành chính 2015 (VBHN 13/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Vi-pham-hanh-chinh/Van-ban-hop-nhat-13-VBHN-VPQH-2026-Luat-To-tung-hanh-chinh-696357.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nguyen-tac-to-chuc-chinh-phu",
+  "khieu-nai",
+  "xu-phat-vi-pham-hanh-chinh"
+ ],
+ "keywords": [
+  "vấn đề cụ thể",
+  "áp dụng một lần",
+  "đối tượng cụ thể",
+  "thực hiện hoặc không thực hiện công vụ"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Luật Tố tụng hành chính, đặc điểm nào là của quyết định hành chính?",
+   "options": [
+    "Về vấn đề cụ thể, được áp dụng một lần đối với một hoặc một số đối tượng cụ thể",
+    "Áp dụng nhiều lần cho mọi chủ thể",
+    "Do Quốc hội ban hành",
+    "Chỉ là văn bản quy phạm pháp luật"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 3 Luật Tố tụng hành chính 2015 (VBHN 13/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Việc cơ quan có thẩm quyền KHÔNG giải quyết hồ sơ đúng hạn theo luật có thể là gì?",
+   "options": [
+    "Hành vi hành chính",
+    "Quyết định hành chính quy phạm",
+    "Văn bản quy phạm pháp luật",
+    "Không phải đối tượng nào"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 3: gồm cả không thực hiện nhiệm vụ, công vụ.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 3 Luật Tố tụng hành chính 2015 (VBHN 13/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quyết định hành chính",
+   "right": "Hành vi hành chính",
+   "cases": [
+    {
+     "text": "Thể hiện bằng văn bản",
+     "answer": "left"
+    },
+    {
+     "text": "Không thực hiện nhiệm vụ, công vụ theo quy định",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1, 3 Điều 3."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quyết định hành chính là văn bản quyết định về vấn đề {{cụ thể}} trong hoạt động quản lý hành chính được áp dụng {{một lần}} đối với một hoặc một số đối tượng cụ thể.",
+   "bank_extra": [
+    "chung",
+    "nhiều lần"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hành vi hành chính là hành vi thực hiện hoặc {{không thực hiện}} nhiệm vụ, {{công vụ}} theo quy định của pháp luật.",
+   "bank_extra": [
+    "ủy quyền",
+    "dân sự"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quyết định hành chính theo Luật Tố tụng hành chính có thể áp dụng nhiều lần cho mọi đối tượng.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 3: áp dụng một lần đối với một hoặc một số đối tượng cụ thể; áp dụng nhiều lần là văn bản quy phạm."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Phân biệt quyết định hành chính và hành vi hành chính theo Luật Tố tụng hành chính.",
+   "model": "Quyết định hành chính là văn bản về vấn đề cụ thể, áp dụng một lần đối với đối tượng cụ thể (khoản 1 Điều 3); hành vi hành chính là việc thực hiện hoặc không thực hiện nhiệm vụ, công vụ của cơ quan hành chính, người có thẩm quyền (khoản 3 Điều 3).",
+   "keywords": [
+    "văn bản",
+    "vấn đề cụ thể",
+    "một lần",
+    "không thực hiện"
+   ]
+  }
+ ]
+}

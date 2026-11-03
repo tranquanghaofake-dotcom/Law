@@ -1,0 +1,139 @@
+{
+  "id": "dat-dai-de-2",
+  "group": "dat-dai",
+  "title": "Đề kiểm tra Luật Đất đai – Giá đất, quyền người sử dụng đất, tranh chấp",
+  "subtitle": "10 câu theo đề cương HLU, vấn đề 5–8 (theo Luật Đất đai 2024)",
+  "updated": "2026-11-01",
+  "questions": [
+    {
+      "q": "Giá đất là gì?",
+      "options": [
+        "Giá trị của quyền sử dụng đất tính bằng tiền trên một đơn vị diện tích",
+        "Giá trị sở hữu đất",
+        "Thuế đất",
+        "Phí trước bạ"
+      ],
+      "answer": 0,
+      "explain": "Khoản 19 Điều 3.",
+      "basis": "Điều 3 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Van-ban-hop-nhat-44-VBHN-VPQH-2026-Luat-Dat-dai-699655.aspx"
+    },
+    {
+      "q": "Phương pháp định giá đất theo nguyên tắc nào?",
+      "options": [
+        "Nguyên tắc thị trường",
+        "Nguyên tắc hành chính",
+        "Nguyên tắc ổn định",
+        "Nguyên tắc ưu tiên ngân sách"
+      ],
+      "answer": 0,
+      "explain": "Điểm a khoản 1 Điều 158.",
+      "basis": "Điều 158 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Van-ban-hop-nhat-44-VBHN-VPQH-2026-Luat-Dat-dai-699655.aspx"
+    },
+    {
+      "q": "Chuyển đất vườn sang đất ở thì người sử dụng đất phải nộp khoản gì cho Nhà nước?",
+      "options": [
+        "Tiền thuê đất",
+        "Tiền sử dụng đất",
+        "Lệ phí công chứng",
+        "Không nộp gì"
+      ],
+      "answer": 1,
+      "explain": "Khoản 44 Điều 3.",
+      "basis": "Điều 3 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Van-ban-hop-nhat-44-VBHN-VPQH-2026-Luat-Dat-dai-699655.aspx"
+    },
+    {
+      "q": "Quyền nào là quyền chung của mọi người sử dụng đất?",
+      "options": [
+        "Chuyển nhượng quyền sử dụng đất trong mọi trường hợp",
+        "Khiếu nại, tố cáo, khởi kiện về hành vi vi phạm quyền sử dụng đất hợp pháp",
+        "Được miễn thuế",
+        "Tự ý chuyển mục đích"
+      ],
+      "answer": 1,
+      "explain": "Khoản 8 Điều 26.",
+      "basis": "Điều 26 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Van-ban-hop-nhat-44-VBHN-VPQH-2026-Luat-Dat-dai-699655.aspx"
+    },
+    {
+      "q": "Đất đang bị kê biên để thi hành án có được chuyển nhượng không?",
+      "options": [
+        "Có nếu có sổ đỏ",
+        "Không",
+        "Có nếu bán cho người thân",
+        "Có nếu được UBND xã đồng ý"
+      ],
+      "answer": 1,
+      "explain": "Điểm c khoản 1 Điều 45.",
+      "basis": "Điều 45 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Van-ban-hop-nhat-44-VBHN-VPQH-2026-Luat-Dat-dai-699655.aspx"
+    },
+    {
+      "q": "Thừa kế quyền sử dụng đất có bắt buộc phải có Giấy chứng nhận không?",
+      "options": [
+        "Bắt buộc",
+        "Không bắt buộc theo điểm a khoản 1 Điều 45",
+        "Chỉ với đất ở",
+        "Chỉ với đất nông nghiệp"
+      ],
+      "answer": 1,
+      "explain": "Điểm a khoản 1 Điều 45.",
+      "basis": "Điều 45 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Van-ban-hop-nhat-44-VBHN-VPQH-2026-Luat-Dat-dai-699655.aspx"
+    },
+    {
+      "q": "Đất ở được sử dụng theo thời hạn nào?",
+      "options": [
+        "50 năm",
+        "70 năm",
+        "Ổn định lâu dài",
+        "99 năm"
+      ],
+      "answer": 2,
+      "explain": "Khoản 1 Điều 171.",
+      "basis": "Điều 171 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Van-ban-hop-nhat-44-VBHN-VPQH-2026-Luat-Dat-dai-699655.aspx"
+    },
+    {
+      "q": "Hạn mức giao đất trồng cây hằng năm cho cá nhân ở đồng bằng sông Cửu Long là bao nhiêu?",
+      "options": [
+        "02 ha",
+        "03 ha",
+        "05 ha",
+        "10 ha"
+      ],
+      "answer": 1,
+      "explain": "Điểm a khoản 1 Điều 176.",
+      "basis": "Điều 176 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Van-ban-hop-nhat-44-VBHN-VPQH-2026-Luat-Dat-dai-699655.aspx"
+    },
+    {
+      "q": "Trước khi cơ quan có thẩm quyền giải quyết tranh chấp đất đai, các bên phải làm gì?",
+      "options": [
+        "Hòa giải tại UBND cấp xã nơi có đất",
+        "Thuê luật sư",
+        "Nộp án phí",
+        "Đăng báo"
+      ],
+      "answer": 0,
+      "explain": "Khoản 2 Điều 235.",
+      "basis": "Điều 235 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Van-ban-hop-nhat-44-VBHN-VPQH-2026-Luat-Dat-dai-699655.aspx"
+    },
+    {
+      "q": "Một bên tranh chấp có sổ đỏ. Tranh chấp do cơ quan nào giải quyết?",
+      "options": [
+        "UBND cấp xã",
+        "Tòa án",
+        "Do các bên chọn",
+        "Sở Nông nghiệp và Môi trường"
+      ],
+      "answer": 1,
+      "explain": "Khoản 1 Điều 236.",
+      "basis": "Điều 236 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Van-ban-hop-nhat-44-VBHN-VPQH-2026-Luat-Dat-dai-699655.aspx"
+    }
+  ]
+}

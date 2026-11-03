@@ -1,0 +1,116 @@
+{
+ "id": "che-giau-toi-pham",
+ "subject": "hinh-su",
+ "chapter": "v10",
+ "term": "Che giấu tội phạm và không tố giác tội phạm",
+ "definition": "Người nào không hứa hẹn trước, nhưng sau khi biết tội phạm được thực hiện đã che giấu người phạm tội, dấu vết, tang vật của tội phạm hoặc có hành vi khác cản trở việc phát hiện, điều tra, xử lý người phạm tội, thì phải chịu trách nhiệm hình sự về tội che giấu tội phạm trong những trường hợp mà Bộ luật này quy định. (…) Người nào biết rõ tội phạm đang được chuẩn bị, đang được thực hiện hoặc đã được thực hiện mà không tố giác, thì phải chịu trách nhiệm hình sự về tội không tố giác tội phạm quy định tại Điều 390 của Bộ luật này.",
+ "plain": "Hai hành vi LIÊN QUAN ĐẾN TỘI PHẠM, KHÔNG PHẢI đồng phạm. Che giấu: KHÔNG HỨA HẸN TRƯỚC (nếu hứa hẹn trước là đồng phạm – giúp sức). Không tố giác: BIẾT RÕ tội phạm mà không báo. Ngoại lệ người thân (ông, bà, cha, mẹ, con, cháu, anh chị em ruột, vợ, chồng): không chịu TNHS, TRỪ tội xâm phạm an ninh quốc gia hoặc tội đặc biệt nghiêm trọng khác (Điều 18 khoản 2; Điều 19 khoản 2). Người bào chữa không chịu TNHS về không tố giác, trừ các trường hợp tương tự (khoản 3 Điều 19).",
+ "example": "Mẹ của A biết A trộm cắp tài sản (tội ít nghiêm trọng) mà không tố giác: mẹ không chịu TNHS. Bạn A không hứa trước, sau đó giấu xe máy A trộm được: có thể phạm tội che giấu tội phạm nếu thuộc trường hợp Điều 389 quy định.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 18, khoản 1 Điều 19 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "dong-pham",
+  "khai-niem-toi-pham"
+ ],
+ "keywords": [
+  "không hứa hẹn trước",
+  "biết rõ mà không tố giác",
+  "ngoại lệ người thân",
+  "trừ an ninh quốc gia, đặc biệt nghiêm trọng"
+ ],
+ "note": "Điều 19 được sửa đổi, bổ sung bởi Luật 12/2017/QH14 (hiệu lực 01/01/2018); câu chữ trên theo VBHN 135/VBHN-VPQH 2025.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Yếu tố phân biệt che giấu tội phạm với người giúp sức trong đồng phạm là gì?",
+   "options": [
+    "Che giấu tội phạm không có hứa hẹn trước",
+    "Che giấu tội phạm luôn nhận tiền",
+    "Người giúp sức không biết có tội phạm",
+    "Không có khác biệt"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 18.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 18 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Vợ không tố giác chồng phạm tội xâm phạm an ninh quốc gia thì sao?",
+   "options": [
+    "Vẫn phải chịu TNHS",
+    "Không phải chịu TNHS vì là vợ",
+    "Chỉ bị xử phạt hành chính",
+    "Được miễn hình phạt đương nhiên"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 19: ngoại lệ không áp dụng với tội Chương XIII.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 19 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Che giấu tội phạm",
+   "right": "Đồng phạm (giúp sức)",
+   "cases": [
+    {
+     "text": "Sau khi tội phạm xảy ra mới giấu tang vật, không hứa trước",
+     "answer": "left"
+    },
+    {
+     "text": "Hứa trước sẽ cất giấu tài sản trộm được",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 17, 18."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người nào không {{hứa hẹn trước}}, nhưng sau khi biết tội phạm được thực hiện đã che giấu người phạm tội, dấu vết, {{tang vật}} của tội phạm thì chịu TNHS về tội che giấu tội phạm trong trường hợp luật quy định.",
+   "bank_extra": [
+    "bàn bạc",
+    "tài liệu"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người nào biết rõ tội phạm đang được chuẩn bị, đang được thực hiện hoặc đã được thực hiện mà không {{tố giác}} thì phải chịu TNHS về tội không tố giác tội phạm.",
+   "bank_extra": [
+    "ngăn chặn",
+    "bồi thường"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Cha mẹ không tố giác con phạm tội giết người thuộc khung đặc biệt nghiêm trọng thì không phải chịu TNHS.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 19: ngoại lệ người thân không áp dụng với tội phạm đặc biệt nghiêm trọng."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Phân biệt che giấu tội phạm, không tố giác tội phạm với đồng phạm.",
+   "model": "Che giấu tội phạm: không hứa hẹn trước, sau khi biết tội phạm đã che giấu người phạm tội, dấu vết, tang vật (Điều 18); không tố giác: biết rõ tội phạm mà không tố giác (Điều 19); hứa hẹn trước thì là đồng phạm; người thân không chịu TNHS trừ tội an ninh quốc gia, đặc biệt nghiêm trọng.",
+   "keywords": [
+    "không hứa hẹn trước",
+    "không tố giác",
+    "người thân",
+    "đặc biệt nghiêm trọng"
+   ]
+  }
+ ]
+}

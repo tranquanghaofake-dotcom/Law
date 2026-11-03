@@ -1,0 +1,116 @@
+{
+ "id": "thi-phan",
+ "subject": "canh-tranh",
+ "chapter": "v2",
+ "term": "Thị phần và thị phần kết hợp",
+ "definition": "Thị phần kết hợp là tổng thị phần trên thị trường liên quan của các doanh nghiệp tham gia vào hành vi hạn chế cạnh tranh hoặc tập trung kinh tế.",
+ "plain": "Thị phần xác định theo MỘT trong bốn phương pháp (khoản 1): tỷ lệ % DOANH THU BÁN RA; DOANH SỐ MUA VÀO; SỐ ĐƠN VỊ hàng hóa bán ra; SỐ ĐƠN VỊ mua vào — so với tổng của các doanh nghiệp trên thị trường liên quan, theo tháng, quý, năm. Doanh thu theo CHUẨN MỰC KẾ TOÁN VIỆT NAM. Chưa đủ 01 năm tài chính: tính từ khi bắt đầu hoạt động. THỊ PHẦN KẾT HỢP = TỔNG thị phần của các doanh nghiệp tham gia hành vi hoặc tập trung kinh tế.",
+ "example": "A có 20%, B có 15% thị phần, A sáp nhập B: thị phần kết hợp là 35%.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 2 Điều 10 Luật Cạnh tranh 2018",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "thi-truong-lien-quan",
+  "vi-tri-thong-linh-thi-truong",
+  "tap-trung-kinh-te"
+ ],
+ "keywords": [
+  "doanh thu bán ra",
+  "doanh số mua vào",
+  "số đơn vị",
+  "tổng thị phần"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thị phần kết hợp là gì?",
+   "options": [
+    "Tổng thị phần trên thị trường liên quan của các doanh nghiệp tham gia hành vi hạn chế cạnh tranh hoặc tập trung kinh tế",
+    "Thị phần của doanh nghiệp lớn nhất",
+    "Thị phần trung bình",
+    "Thị phần trên thị trường quốc tế"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 10.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 10 Luật Cạnh tranh 2018"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Doanh thu để xác định thị phần được xác định theo chuẩn nào?",
+   "options": [
+    "Chuẩn mực kế toán Việt Nam",
+    "Chuẩn mực IFRS bắt buộc",
+    "Do doanh nghiệp tự khai",
+    "Theo tờ khai thuế"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 10.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 10 Luật Cạnh tranh 2018"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Phương pháp xác định thị phần (khoản 1)",
+   "right": "Thị phần kết hợp (khoản 2)",
+   "cases": [
+    {
+     "text": "Tỷ lệ % doanh thu bán ra so với tổng doanh thu thị trường",
+     "answer": "left"
+    },
+    {
+     "text": "Cộng thị phần của các bên sáp nhập",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 10."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thị phần kết hợp là {{tổng}} thị phần trên thị trường liên quan của các doanh nghiệp tham gia vào hành vi hạn chế cạnh tranh hoặc {{tập trung kinh tế}}.",
+   "bank_extra": [
+    "trung bình",
+    "đấu thầu"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Doanh thu để xác định thị phần được xác định theo chuẩn mực {{kế toán}} Việt Nam.",
+   "bank_extra": [
+    "kiểm toán",
+    "thống kê"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thị phần chỉ có thể xác định theo doanh thu bán ra.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 10 có bốn phương pháp: doanh thu bán ra, doanh số mua vào, số đơn vị bán ra, số đơn vị mua vào."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày cách xác định thị phần và thị phần kết hợp.",
+   "model": "Thị phần xác định theo một trong các phương pháp: tỷ lệ % doanh thu bán ra, doanh số mua vào, số đơn vị bán ra, số đơn vị mua vào so với tổng thị trường liên quan (khoản 1 Điều 10); thị phần kết hợp là tổng thị phần của các doanh nghiệp tham gia hành vi hạn chế cạnh tranh hoặc tập trung kinh tế (khoản 2).",
+   "keywords": [
+    "doanh thu",
+    "mua vào",
+    "đơn vị",
+    "tổng thị phần"
+   ]
+  }
+ ]
+}

@@ -124,6 +124,13 @@
     "tổng số",
     "15 ngày"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi nghị quyết của Quốc hội chỉ cần quá nửa tổng số đại biểu Quốc hội biểu quyết tán thành.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 85 Hiến pháp 2013: làm, sửa đổi Hiến pháp, rút ngắn hoặc kéo dài nhiệm kỳ Quốc hội, bãi nhiệm đại biểu Quốc hội phải được ít nhất hai phần ba tổng số đại biểu tán thành. (Nhận định trong bộ câu hỏi ôn tập Luật Hiến pháp, Drive HLU.)"
   }
  ]
 }

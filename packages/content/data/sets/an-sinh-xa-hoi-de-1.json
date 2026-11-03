@@ -1,0 +1,139 @@
+{
+  "id": "an-sinh-xa-hoi-de-1",
+  "group": "an-sinh-xa-hoi",
+  "title": "Đề kiểm tra An sinh xã hội – Bảo hiểm xã hội",
+  "subtitle": "10 câu theo đề cương HLU, vấn đề 2 (Luật BHXH 2024)",
+  "updated": "2026-11-01",
+  "questions": [
+    {
+      "q": "Bảo hiểm xã hội là gì theo Luật 2024?",
+      "options": [
+        "Sự bảo đảm thay thế hoặc bù đắp một phần thu nhập khi bị giảm, mất thu nhập do ốm đau, thai sản, tai nạn lao động, bệnh nghề nghiệp, nghỉ hưu hoặc chết",
+        "Khoản tiết kiệm cá nhân",
+        "Trợ cấp từ thiện",
+        "Bảo hiểm thương mại"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 3.",
+      "basis": "Điều 3 Luật Bảo hiểm xã hội (VBHN 19/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bao-hiem/Van-ban-hop-nhat-19-VBHN-VPQH-2026-Luat-Bao-hiem-xa-hoi-696579.aspx"
+    },
+    {
+      "q": "Loại hình nào là loại hình mới của Luật BHXH 2024, do ngân sách nhà nước bảo đảm?",
+      "options": [
+        "BHXH tự nguyện",
+        "Trợ cấp hưu trí xã hội",
+        "BHXH bắt buộc",
+        "Bảo hiểm thất nghiệp"
+      ],
+      "answer": 1,
+      "explain": "Khoản 2 Điều 3; khoản 1 Điều 4.",
+      "basis": "Điều 3 Luật Bảo hiểm xã hội (VBHN 19/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bao-hiem/Van-ban-hop-nhat-19-VBHN-VPQH-2026-Luat-Bao-hiem-xa-hoi-696579.aspx"
+    },
+    {
+      "q": "Chế độ nào KHÔNG có trong BHXH tự nguyện?",
+      "options": [
+        "Hưu trí",
+        "Tử tuất",
+        "Ốm đau",
+        "Trợ cấp thai sản"
+      ],
+      "answer": 2,
+      "explain": "Khoản 3 Điều 4.",
+      "basis": "Điều 4 Luật Bảo hiểm xã hội (VBHN 19/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bao-hiem/Van-ban-hop-nhat-19-VBHN-VPQH-2026-Luat-Bao-hiem-xa-hoi-696579.aspx"
+    },
+    {
+      "q": "Người làm việc theo HĐLĐ có thời hạn từ bao lâu thuộc đối tượng BHXH bắt buộc?",
+      "options": [
+        "Từ đủ 01 tháng",
+        "Từ đủ 03 tháng",
+        "Từ đủ 06 tháng",
+        "Từ đủ 12 tháng"
+      ],
+      "answer": 0,
+      "explain": "Điểm a khoản 1 Điều 2.",
+      "basis": "Điều 2 Luật Bảo hiểm xã hội (VBHN 19/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bao-hiem/Van-ban-hop-nhat-19-VBHN-VPQH-2026-Luat-Bao-hiem-xa-hoi-696579.aspx"
+    },
+    {
+      "q": "Thời gian đóng BHXH bắt buộc tối thiểu để hưởng lương hưu khi đủ tuổi?",
+      "options": [
+        "10 năm",
+        "15 năm",
+        "20 năm",
+        "25 năm"
+      ],
+      "answer": 1,
+      "explain": "Khoản 1 Điều 64.",
+      "basis": "Điều 64 Luật Bảo hiểm xã hội (VBHN 19/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bao-hiem/Van-ban-hop-nhat-19-VBHN-VPQH-2026-Luat-Bao-hiem-xa-hoi-696579.aspx"
+    },
+    {
+      "q": "Mức hưởng BHXH được tính trên cơ sở nào?",
+      "options": [
+        "Nhu cầu của người hưởng",
+        "Mức đóng và thời gian đóng, có chia sẻ",
+        "Số người phụ thuộc",
+        "Quyết định của công đoàn"
+      ],
+      "answer": 1,
+      "explain": "Khoản 1 Điều 5.",
+      "basis": "Điều 5 Luật Bảo hiểm xã hội (VBHN 19/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bao-hiem/Van-ban-hop-nhat-19-VBHN-VPQH-2026-Luat-Bao-hiem-xa-hoi-696579.aspx"
+    },
+    {
+      "q": "Công dân từ đủ bao nhiêu tuổi, không có lương hưu, được hưởng trợ cấp hưu trí xã hội?",
+      "options": [
+        "60",
+        "70",
+        "75",
+        "80"
+      ],
+      "answer": 2,
+      "explain": "Điểm a khoản 1 Điều 21.",
+      "basis": "Điều 21 Luật Bảo hiểm xã hội (VBHN 19/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bao-hiem/Van-ban-hop-nhat-19-VBHN-VPQH-2026-Luat-Bao-hiem-xa-hoi-696579.aspx"
+    },
+    {
+      "q": "Người từ đủ 70 đến dưới 75 tuổi được hưởng trợ cấp hưu trí xã hội khi nào?",
+      "options": [
+        "Khi thuộc hộ nghèo, hộ cận nghèo và đủ điều kiện khác",
+        "Không bao giờ",
+        "Khi có con đi làm",
+        "Khi từng là công chức"
+      ],
+      "answer": 0,
+      "explain": "Khoản 2 Điều 21.",
+      "basis": "Điều 21 Luật Bảo hiểm xã hội (VBHN 19/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bao-hiem/Van-ban-hop-nhat-19-VBHN-VPQH-2026-Luat-Bao-hiem-xa-hoi-696579.aspx"
+    },
+    {
+      "q": "Mức đóng BHXH tự nguyện tính trên cơ sở nào?",
+      "options": [
+        "Thu nhập do người tham gia lựa chọn",
+        "Lương tối thiểu vùng",
+        "Lương cơ sở",
+        "Thu nhập bình quân của tỉnh"
+      ],
+      "answer": 0,
+      "explain": "Khoản 2 Điều 5.",
+      "basis": "Điều 5 Luật Bảo hiểm xã hội (VBHN 19/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bao-hiem/Van-ban-hop-nhat-19-VBHN-VPQH-2026-Luat-Bao-hiem-xa-hoi-696579.aspx"
+    },
+    {
+      "q": "BHXH bắt buộc gồm chế độ nào?",
+      "options": [
+        "Ốm đau, thai sản, hưu trí, tử tuất, tai nạn lao động – bệnh nghề nghiệp",
+        "Chỉ hưu trí",
+        "Thất nghiệp và y tế",
+        "Trợ cấp hưu trí xã hội"
+      ],
+      "answer": 0,
+      "explain": "Khoản 2 Điều 4.",
+      "basis": "Điều 4 Luật Bảo hiểm xã hội (VBHN 19/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bao-hiem/Van-ban-hop-nhat-19-VBHN-VPQH-2026-Luat-Bao-hiem-xa-hoi-696579.aspx"
+    }
+  ]
+}

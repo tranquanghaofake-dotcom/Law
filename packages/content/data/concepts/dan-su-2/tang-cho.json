@@ -1,0 +1,114 @@
+{
+ "id": "tang-cho",
+ "subject": "dan-su-2",
+ "chapter": "v6",
+ "term": "Hợp đồng tặng cho tài sản",
+ "definition": "Hợp đồng tặng cho tài sản là sự thỏa thuận giữa các bên, theo đó bên tặng cho giao tài sản của mình và chuyển quyền sở hữu cho bên được tặng cho mà không yêu cầu đền bù, bên được tặng cho đồng ý nhận.",
+ "plain": "Đặc điểm: KHÔNG ĐỀN BÙ; là HỢP ĐỒNG (cần bên được tặng cho ĐỒNG Ý NHẬN), khác di chúc (đơn phương). Hiệu lực: động sản từ khi bên được tặng cho NHẬN tài sản; tài sản phải đăng ký thì từ khi ĐĂNG KÝ (Điều 458); bất động sản phải lập văn bản có công chứng, chứng thực hoặc đăng ký (Điều 459). Tặng cho CÓ ĐIỀU KIỆN (Điều 462): điều kiện không vi phạm điều cấm, không trái đạo đức.",
+ "example": "Mẹ tặng con chiếc nhẫn vàng: hợp đồng có hiệu lực khi con nhận nhẫn. Tặng căn nhà phải lập văn bản công chứng và đăng ký.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 457 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "mua-ban-tai-san",
+  "hop-dong"
+ ],
+ "keywords": [
+  "không yêu cầu đền bù",
+  "bên được tặng cho đồng ý nhận",
+  "chuyển quyền sở hữu"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đặc điểm cơ bản của hợp đồng tặng cho tài sản là gì?",
+   "options": [
+    "Không yêu cầu đền bù và cần bên được tặng cho đồng ý nhận",
+    "Bên được tặng cho phải trả tiền",
+    "Chỉ cần ý chí của bên tặng cho",
+    "Chỉ áp dụng với động sản"
+   ],
+   "answer": 0,
+   "explain": "Điều 457.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 457 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tặng cho động sản không phải đăng ký có hiệu lực từ khi nào (trừ khi có thỏa thuận khác)?",
+   "options": [
+    "Khi bên được tặng cho nhận tài sản",
+    "Khi ký hợp đồng",
+    "Khi công chứng",
+    "Sau 30 ngày"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 458.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 458 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tặng cho",
+   "right": "Di chúc",
+   "cases": [
+    {
+     "text": "Cần bên nhận đồng ý, có hiệu lực khi còn sống",
+     "answer": "left"
+    },
+    {
+     "text": "Ý chí đơn phương, có hiệu lực sau khi chết",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 457, 624."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bên tặng cho giao tài sản của mình và chuyển quyền sở hữu cho bên được tặng cho mà không yêu cầu {{đền bù}}, bên được tặng cho {{đồng ý nhận}}.",
+   "bank_extra": [
+    "điều kiện",
+    "từ chối"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hợp đồng tặng cho tài sản là sự {{thỏa thuận}} giữa các bên.",
+   "bank_extra": [
+    "quyết định",
+    "ý chí đơn phương"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tặng cho là hành vi pháp lý đơn phương, không cần bên được tặng cho đồng ý.",
+   "answer": false,
+   "explain": "Sai. Điều 457: là hợp đồng, bên được tặng cho đồng ý nhận."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm và đặc điểm của hợp đồng tặng cho tài sản.",
+   "model": "Là thỏa thuận theo đó bên tặng cho giao tài sản và chuyển quyền sở hữu cho bên được tặng cho mà không yêu cầu đền bù, bên được tặng cho đồng ý nhận (Điều 457); hiệu lực theo Điều 458, 459; có thể có điều kiện (Điều 462).",
+   "keywords": [
+    "không đền bù",
+    "đồng ý nhận",
+    "quyền sở hữu",
+    "điều kiện"
+   ]
+  }
+ ]
+}

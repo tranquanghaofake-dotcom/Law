@@ -1,0 +1,107 @@
+{
+ "id": "llc-thuoc-tinh-phap-luat",
+ "subject": "ly-luan-nn-pl",
+ "chapter": "v4",
+ "term": "Các thuộc tính (đặc điểm) của pháp luật",
+ "definition": "Pháp luật có tính quyền lực nhà nước, tính quy phạm phổ biến, tính hệ thống, tính xác định về hình thức và tính ý chí.",
+ "plain": "Năm thuộc tính phân biệt pháp luật với đạo đức, tập quán, điều lệ: (1) QUYỀN LỰC NHÀ NƯỚC — do nhà nước đặt ra, thừa nhận, bảo đảm thực hiện kể cả bằng cưỡng chế; (2) QUY PHẠM PHỔ BIẾN — là khuôn mẫu, tiêu chuẩn chung cho hành vi, bắt buộc với mọi chủ thể trong điều kiện dự liệu, áp dụng nhiều lần; (3) HỆ THỐNG — các quy định liên hệ nội tại, thống nhất; (4) XÁC ĐỊNH VỀ HÌNH THỨC — thể hiện trong hình thức nhất định (văn bản, tập quán pháp, án lệ) với ngôn ngữ rõ ràng; (5) Ý CHÍ — thể hiện ý chí nhà nước, giai cấp cầm quyền. Đạo đức cũng có tính quy phạm nhưng không có quyền lực nhà nước và hình thức xác định.",
+ "example": "Quy tắc \"không được xả rác\" trong quy ước thôn chỉ là quy phạm xã hội; khi Luật Bảo vệ môi trường quy định và có chế tài phạt tiền thì trở thành quy phạm pháp luật — có tính quyền lực nhà nước và hình thức xác định.",
+ "source": {
+  "kind": "textbook",
+  "cite": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (Drive HLU/KÌ I NĂM I/LLCNN&PL/TÀI LIỆU ÔN THI LLC: VD8, VD9, VD11, VD12, VD13) và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "llc-ban-chat-phap-luat",
+  "llc-quy-pham-phap-luat",
+  "llc-hinh-thuc-phap-luat"
+ ],
+ "keywords": [
+  "quyền lực nhà nước",
+  "quy phạm phổ biến",
+  "hệ thống",
+  "xác định về hình thức"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thuộc tính nào phân biệt pháp luật với đạo đức rõ nhất?",
+   "options": [
+    "Tính quyền lực nhà nước — được nhà nước bảo đảm thực hiện",
+    "Tính quy phạm",
+    "Tính ý chí",
+    "Tính xã hội"
+   ],
+   "answer": 0,
+   "explain": "Đạo đức cũng có tính quy phạm và ý chí nhưng không do nhà nước bảo đảm bằng cưỡng chế."
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tính quy phạm phổ biến của pháp luật nghĩa là gì?",
+   "options": [
+    "Là khuôn mẫu chung cho hành vi, bắt buộc với mọi chủ thể trong điều kiện dự liệu, áp dụng nhiều lần",
+    "Mọi người đều biết pháp luật",
+    "Pháp luật được in phổ biến",
+    "Pháp luật giống nhau ở mọi nước"
+   ],
+   "answer": 0,
+   "explain": "VD8."
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thuộc tính của pháp luật",
+   "right": "Không phải thuộc tính",
+   "cases": [
+    {
+     "text": "Tính xác định về hình thức",
+     "answer": "left"
+    },
+    {
+     "text": "Tính tự nguyện tuyệt đối",
+     "answer": "right"
+    }
+   ],
+   "explain": "VD8."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Pháp luật có tính {{quyền lực nhà nước}} vì được nhà nước đặt ra, thừa nhận và {{bảo đảm thực hiện}}.",
+   "bank_extra": [
+    "đạo đức",
+    "khuyến khích"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Pháp luật có tính {{hệ thống}}: các quy định không tồn tại biệt lập mà liên hệ nội tại, tạo tính thống nhất; và tính {{xác định}} về hình thức.",
+   "bank_extra": [
+    "ngẫu nhiên",
+    "mơ hồ"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Điều lệ của một công ty cũng có tính quy phạm phổ biến như pháp luật.",
+   "answer": false,
+   "explain": "Sai. Điều lệ chỉ ràng buộc thành viên công ty, không mang tính bắt buộc chung với mọi chủ thể và không do nhà nước ban hành."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Kể và giải thích các thuộc tính của pháp luật.",
+   "model": "Tính quyền lực nhà nước (nhà nước đặt ra, bảo đảm); tính quy phạm phổ biến (khuôn mẫu chung, bắt buộc, áp dụng nhiều lần); tính hệ thống; tính xác định về hình thức; tính ý chí.",
+   "keywords": [
+    "quyền lực nhà nước",
+    "quy phạm phổ biến",
+    "hệ thống",
+    "hình thức"
+   ]
+  }
+ ]
+}

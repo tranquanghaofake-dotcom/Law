@@ -1,0 +1,118 @@
+{
+ "id": "giay-to-co-gia",
+ "subject": "ngan-hang",
+ "chapter": "v4",
+ "term": "Giấy tờ có giá",
+ "definition": "Giấy tờ có giá là bằng chứng xác nhận nghĩa vụ trả nợ giữa tổ chức phát hành giấy tờ có giá với người sở hữu giấy tờ có giá trong một thời hạn nhất định, điều kiện trả lãi và các điều kiện khác.",
+ "plain": "Bản chất: bằng chứng NGHĨA VỤ TRẢ NỢ của TỔ CHỨC PHÁT HÀNH với NGƯỜI SỞ HỮU, có THỜI HẠN và ĐIỀU KIỆN TRẢ LÃI. Ví dụ: trái phiếu, kỳ phiếu, tín phiếu, chứng chỉ tiền gửi. Ý nghĩa trong luật ngân hàng: TCTD phát hành giấy tờ có giá để huy động vốn; TCTD chiết khấu giấy tờ có giá (khoản 6 Điều 4 Luật TCTD); Ngân hàng Nhà nước mua, bán giấy tờ có giá ngắn hạn trong nghiệp vụ thị trường mở. Phân biệt cổ phiếu: xác nhận quyền sở hữu phần vốn, không phải nghĩa vụ trả nợ.",
+ "example": "Ngân hàng thương mại phát hành kỳ phiếu kỳ hạn 12 tháng, lãi 6%/năm: kỳ phiếu là giấy tờ có giá — xác nhận ngân hàng nợ người sở hữu kỳ phiếu.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 8 Điều 6 Luật Ngân hàng Nhà nước Việt Nam 2010 (VBHN 141/2026/VBHN-LQ-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-141-2026-VBHN-LQ-VPQH-Luat-Ngan-hang-Nha-nuoc-Viet-Nam-726674.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nhan-tien-gui",
+  "chiet-khau",
+  "cong-cu-chinh-sach-tien-te"
+ ],
+ "keywords": [
+  "nghĩa vụ trả nợ",
+  "tổ chức phát hành",
+  "người sở hữu",
+  "thời hạn",
+  "điều kiện trả lãi"
+ ],
+ "note": "Luật Ngân hàng Nhà nước Việt Nam 46/2010/QH12 có hiệu lực từ 01/01/2011; Luật 23/2026/QH16 sửa đổi nhiều điều (Điều 4, 27, 34, 42, 44, 45, 57, 58, 62…), có hiệu lực từ 01/12/2026 — điều được trích không bị sửa.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Giấy tờ có giá là bằng chứng xác nhận điều gì?",
+   "options": [
+    "Nghĩa vụ trả nợ giữa tổ chức phát hành với người sở hữu",
+    "Quyền sở hữu phần vốn góp",
+    "Quyền sử dụng đất",
+    "Quyền tác giả"
+   ],
+   "answer": 0,
+   "explain": "Khoản 8 Điều 6.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 8 Điều 6 Luật Ngân hàng Nhà nước Việt Nam 2010 (VBHN 141/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Loại giấy tờ nào KHÔNG phải giấy tờ có giá theo khoản 8 Điều 6?",
+   "options": [
+    "Cổ phiếu (xác nhận quyền sở hữu cổ phần)",
+    "Kỳ phiếu",
+    "Trái phiếu",
+    "Tín phiếu"
+   ],
+   "answer": 0,
+   "explain": "Khoản 8 Điều 6: giấy tờ có giá xác nhận nghĩa vụ trả nợ; cổ phiếu xác nhận quyền sở hữu.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 8 Điều 6 Luật Ngân hàng Nhà nước Việt Nam 2010 (VBHN 141/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Giấy tờ có giá (xác nhận nghĩa vụ trả nợ)",
+   "right": "Không phải (xác nhận quyền sở hữu)",
+   "cases": [
+    {
+     "text": "Trái phiếu do ngân hàng phát hành",
+     "answer": "left"
+    },
+    {
+     "text": "Cổ phiếu ngân hàng",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 8 Điều 6."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Giấy tờ có giá là bằng chứng xác nhận nghĩa vụ {{trả nợ}} giữa tổ chức phát hành với người {{sở hữu}} giấy tờ có giá.",
+   "bank_extra": [
+    "góp vốn",
+    "bảo lãnh"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Giấy tờ có giá xác nhận nghĩa vụ trả nợ trong một {{thời hạn}} nhất định, điều kiện {{trả lãi}} và các điều kiện khác.",
+   "bank_extra": [
+    "vô thời hạn",
+    "chia cổ tức"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Cổ phiếu là giấy tờ có giá theo khoản 8 Điều 6 Luật Ngân hàng Nhà nước.",
+   "answer": false,
+   "explain": "Sai. Cổ phiếu xác nhận quyền sở hữu cổ phần, không xác nhận nghĩa vụ trả nợ."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm giấy tờ có giá.",
+   "model": "Bằng chứng xác nhận nghĩa vụ trả nợ giữa tổ chức phát hành với người sở hữu trong một thời hạn nhất định, điều kiện trả lãi và điều kiện khác (khoản 8 Điều 6 Luật Ngân hàng Nhà nước).",
+   "keywords": [
+    "nghĩa vụ trả nợ",
+    "tổ chức phát hành",
+    "người sở hữu",
+    "trả lãi"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,139 @@
+{
+  "id": "thuong-mai-de-1",
+  "group": "thuong-mai",
+  "title": "Đề kiểm tra Thương mại 2 – Mua bán hàng hóa, dịch vụ thương mại",
+  "subtitle": "10 câu theo đề cương HLU, vấn đề 1–5",
+  "updated": "2026-11-01",
+  "questions": [
+    {
+      "q": "Theo Luật Thương mại, hàng hóa gồm những gì?",
+      "options": [
+        "Mọi tài sản, kể cả quyền sử dụng đất",
+        "Động sản (kể cả hình thành trong tương lai) và vật gắn liền với đất đai",
+        "Chỉ hàng hóa nhập khẩu",
+        "Chỉ động sản hiện có"
+      ],
+      "answer": 1,
+      "explain": "Khoản 2 Điều 3.",
+      "basis": "Điều 3 Luật Thương mại (VBHN 113/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+    },
+    {
+      "q": "Hai thương nhân thỏa thuận mua bán qua điện thoại, rồi giao hàng, thanh toán. Hợp đồng có hiệu lực không (khi luật không bắt buộc văn bản)?",
+      "options": [
+        "Không, phải lập văn bản",
+        "Có, hợp đồng có thể bằng lời nói",
+        "Chỉ có hiệu lực khi công chứng",
+        "Chỉ có hiệu lực với hàng dưới 50 triệu"
+      ],
+      "answer": 1,
+      "explain": "Khoản 1 Điều 24.",
+      "basis": "Điều 24 Luật Thương mại (VBHN 113/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+    },
+    {
+      "q": "Hợp đồng quy định giao hàng tại kho bên mua. Hàng bị cháy trên xe trước khi tới kho. Ai chịu rủi ro (nếu không có thỏa thuận khác)?",
+      "options": [
+        "Bên mua",
+        "Bên bán",
+        "Chia đôi",
+        "Người vận chuyển luôn chịu"
+      ],
+      "answer": 1,
+      "explain": "Điều 57: rủi ro chuyển khi hàng đã giao tại địa điểm.",
+      "basis": "Điều 57 Luật Thương mại (VBHN 113/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+    },
+    {
+      "q": "Bên mua đã biết rõ khiếm khuyết của hàng khi ký hợp đồng. Sau đó khiếu nại khiếm khuyết đó. Bên bán có chịu trách nhiệm không (nếu không có thỏa thuận khác)?",
+      "options": [
+        "Có",
+        "Không",
+        "Chịu một nửa",
+        "Chỉ khi có bảo hành"
+      ],
+      "answer": 1,
+      "explain": "Khoản 1 Điều 40.",
+      "basis": "Điều 40 Luật Thương mại (VBHN 113/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+    },
+    {
+      "q": "Bên trung gian chỉ giới thiệu, kết nối để hai bên tự ký hợp đồng và nhận thù lao. Đây là dịch vụ gì?",
+      "options": [
+        "Môi giới thương mại",
+        "Đại lý thương mại",
+        "Ủy thác mua bán",
+        "Đại diện cho thương nhân"
+      ],
+      "answer": 0,
+      "explain": "Điều 150.",
+      "basis": "Điều 150 Luật Thương mại (VBHN 113/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+    },
+    {
+      "q": "Bên trung gian nhân danh chính mình mua bán hàng hóa theo điều kiện của bên kia, theo từng vụ việc, nhận thù lao. Đây là gì?",
+      "options": [
+        "Ủy thác mua bán hàng hóa",
+        "Đại diện cho thương nhân",
+        "Môi giới",
+        "Nhượng quyền"
+      ],
+      "answer": 0,
+      "explain": "Điều 155.",
+      "basis": "Điều 155 Luật Thương mại (VBHN 113/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+    },
+    {
+      "q": "Hàng hóa giao cho bên đại lý thuộc sở hữu của ai?",
+      "options": [
+        "Bên đại lý",
+        "Bên giao đại lý",
+        "Khách hàng",
+        "Nhà nước"
+      ],
+      "answer": 1,
+      "explain": "Điều 170.",
+      "basis": "Điều 170 Luật Thương mại (VBHN 113/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+    },
+    {
+      "q": "Siêu thị tặng thêm 1 sản phẩm khi khách mua 2 sản phẩm. Đây là gì?",
+      "options": [
+        "Quảng cáo thương mại",
+        "Khuyến mại",
+        "Hội chợ",
+        "Trưng bày hàng hóa"
+      ],
+      "answer": 1,
+      "explain": "Điều 88, 92.",
+      "basis": "Điều 88 Luật Thương mại (VBHN 113/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+    },
+    {
+      "q": "Mở quán cà phê theo mô hình, thương hiệu, công thức của chủ hệ thống và chịu sự kiểm soát của họ. Đây là gì?",
+      "options": [
+        "Đại lý",
+        "Nhượng quyền thương mại",
+        "Môi giới",
+        "Ủy thác"
+      ],
+      "answer": 1,
+      "explain": "Điều 284.",
+      "basis": "Điều 284 Luật Thương mại (VBHN 113/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+    },
+    {
+      "q": "Quy định về đấu thầu trong Luật Thương mại có áp dụng cho đấu thầu mua sắm công không?",
+      "options": [
+        "Có",
+        "Không",
+        "Chỉ với gói thầu nhỏ",
+        "Chỉ với hàng hóa"
+      ],
+      "answer": 1,
+      "explain": "Khoản 2 Điều 214.",
+      "basis": "Điều 214 Luật Thương mại (VBHN 113/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+ "id": "mien-tru-thoa-thuan",
+ "subject": "canh-tranh",
+ "chapter": "v3",
+ "term": "Miễn trừ đối với thỏa thuận hạn chế cạnh tranh bị cấm",
+ "definition": "Thỏa thuận hạn chế cạnh tranh quy định tại các khoản 1, 2, 3, 7, 8, 9, 10 và 11 Điều 11 bị cấm theo quy định tại Điều 12 của Luật này được miễn trừ có thời hạn nếu có lợi cho người tiêu dùng và đáp ứng một trong các điều kiện sau đây: a) Tác động thúc đẩy tiến bộ kỹ thuật, công nghệ, nâng cao chất lượng hàng hóa, dịch vụ; b) Tăng cường sức cạnh tranh của doanh nghiệp Việt Nam trên thị trường quốc tế; c) Thúc đẩy việc áp dụng thống nhất tiêu chuẩn chất lượng, định mức kỹ thuật của chủng loại sản phẩm; d) Thống nhất các điều kiện thực hiện hợp đồng, giao hàng, thanh toán nhưng không liên quan đến giá và các yếu tố của giá.",
+ "plain": "Điều kiện: (1) CÓ LỢI CHO NGƯỜI TIÊU DÙNG (bắt buộc) + (2) MỘT trong bốn điều kiện a–d. Miễn trừ CÓ THỜI HẠN, do Ủy ban Cạnh tranh Quốc gia quyết định trên cơ sở hồ sơ đề nghị. KHÔNG được miễn trừ: thỏa thuận thông đồng đấu thầu, ngăn cản gia nhập, loại bỏ doanh nghiệp khác (khoản 4, 5, 6 Điều 11). Điểm d: thống nhất điều kiện hợp đồng KHÔNG LIÊN QUAN ĐẾN GIÁ.",
+ "example": "Các hãng điện thoại thỏa thuận cùng áp dụng một chuẩn sạc thống nhất, có lợi cho người tiêu dùng: có thể đề nghị miễn trừ có thời hạn theo điểm c khoản 1 Điều 14.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 14 Luật Cạnh tranh 2018",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "thoa-thuan-han-che-canh-tranh-bi-cam",
+  "thoa-thuan-han-che-canh-tranh"
+ ],
+ "keywords": [
+  "miễn trừ có thời hạn",
+  "có lợi cho người tiêu dùng",
+  "tiến bộ kỹ thuật",
+  "không liên quan đến giá"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Điều kiện bắt buộc để thỏa thuận hạn chế cạnh tranh bị cấm được miễn trừ là gì?",
+   "options": [
+    "Có lợi cho người tiêu dùng và đáp ứng một trong các điều kiện tại khoản 1 Điều 14",
+    "Có thị phần dưới 5%",
+    "Được hiệp hội đồng ý",
+    "Đã thực hiện trên 5 năm"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 14.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 14 Luật Cạnh tranh 2018"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thỏa thuận nào KHÔNG thể được miễn trừ theo Điều 14?",
+   "options": [
+    "Thỏa thuận thông đồng để một bên thắng thầu",
+    "Thỏa thuận ấn định giá",
+    "Thỏa thuận hạn chế số lượng sản xuất",
+    "Thỏa thuận áp đặt điều kiện ký kết hợp đồng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 14 không gồm khoản 4, 5, 6 Điều 11.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 14 Luật Cạnh tranh 2018"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Có thể được miễn trừ",
+   "right": "Không thể được miễn trừ",
+   "cases": [
+    {
+     "text": "Thỏa thuận thống nhất tiêu chuẩn kỹ thuật sản phẩm",
+     "answer": "left"
+    },
+    {
+     "text": "Thỏa thuận loại bỏ đối thủ khỏi thị trường",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 14."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thỏa thuận hạn chế cạnh tranh bị cấm được miễn trừ {{có thời hạn}} nếu có lợi cho {{người tiêu dùng}} và đáp ứng một trong các điều kiện luật định.",
+   "bank_extra": [
+    "vĩnh viễn",
+    "doanh nghiệp"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thống nhất các điều kiện thực hiện hợp đồng, giao hàng, thanh toán nhưng không liên quan đến {{giá}} và các yếu tố của giá.",
+   "bank_extra": [
+    "chất lượng",
+    "thời gian"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thỏa thuận thông đồng đấu thầu có thể được miễn trừ nếu có lợi cho người tiêu dùng.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 14 không áp dụng với thỏa thuận tại khoản 4, 5, 6 Điều 11."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày điều kiện miễn trừ đối với thỏa thuận hạn chế cạnh tranh bị cấm.",
+   "model": "Các thỏa thuận tại khoản 1, 2, 3, 7–11 Điều 11 được miễn trừ có thời hạn nếu có lợi cho người tiêu dùng và thúc đẩy tiến bộ kỹ thuật, nâng cao chất lượng; tăng sức cạnh tranh quốc tế; thống nhất tiêu chuẩn; hoặc thống nhất điều kiện hợp đồng không liên quan đến giá (khoản 1 Điều 14).",
+   "keywords": [
+    "có thời hạn",
+    "người tiêu dùng",
+    "tiến bộ kỹ thuật",
+    "không liên quan đến giá"
+   ]
+  }
+ ]
+}

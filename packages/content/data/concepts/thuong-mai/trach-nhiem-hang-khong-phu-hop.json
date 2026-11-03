@@ -1,0 +1,115 @@
+{
+ "id": "trach-nhiem-hang-khong-phu-hop",
+ "subject": "thuong-mai",
+ "chapter": "v1",
+ "term": "Trách nhiệm đối với hàng hóa không phù hợp với hợp đồng",
+ "definition": "Trừ trường hợp các bên có thỏa thuận khác, trách nhiệm đối với hàng hóa không phù hợp với hợp đồng được quy định như sau: 1. Bên bán không chịu trách nhiệm về bất kỳ khiếm khuyết nào của hàng hóa nếu vào thời điểm giao kết hợp đồng bên mua đã biết hoặc phải biết về những khiếm khuyết đó;",
+ "plain": "Nguyên tắc: bên bán chịu trách nhiệm với KHIẾM KHUYẾT CÓ TRƯỚC thời điểm CHUYỂN RỦI RO, kể cả phát hiện sau (khoản 2), trong THỜI HẠN KHIẾU NẠI. Ngoại lệ: bên mua ĐÃ BIẾT HOẶC PHẢI BIẾT khiếm khuyết khi giao kết thì bên bán không chịu trách nhiệm. Khiếm khuyết phát sinh sau chuyển rủi ro do bên bán vi phạm hợp đồng thì bên bán vẫn chịu (khoản 3). Thời hạn khiếu nại (Điều 318): số lượng 3 tháng, chất lượng 6 tháng từ ngày giao hàng (hàng có bảo hành: 3 tháng từ hết bảo hành).",
+ "example": "Bên mua được cho xem kỹ lô máy cũ có vết trầy xước rõ ràng trước khi ký, sau đó khiếu nại vết trầy: bên bán không chịu trách nhiệm.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 40 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "mua-ban-hang-hoa",
+  "chuyen-rui-ro"
+ ],
+ "keywords": [
+  "đã biết hoặc phải biết",
+  "khiếm khuyết trước chuyển rủi ro",
+  "thời hạn khiếu nại",
+  "trừ thỏa thuận khác"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Bên bán không chịu trách nhiệm về khiếm khuyết của hàng hóa khi nào?",
+   "options": [
+    "Khi lúc giao kết hợp đồng bên mua đã biết hoặc phải biết khiếm khuyết",
+    "Khi khiếm khuyết phát hiện sau khi giao hàng",
+    "Khi hàng hóa đắt tiền",
+    "Khi đã xuất hóa đơn"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 40.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 40 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khiếm khuyết đã có trước thời điểm chuyển rủi ro nhưng phát hiện sau đó thì ai chịu trách nhiệm (trong thời hạn khiếu nại)?",
+   "options": [
+    "Bên bán",
+    "Bên mua",
+    "Người vận chuyển",
+    "Không ai"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 40.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 40 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Bên bán chịu trách nhiệm",
+   "right": "Bên bán không chịu trách nhiệm",
+   "cases": [
+    {
+     "text": "Lỗi kỹ thuật ẩn có từ khi sản xuất",
+     "answer": "left"
+    },
+    {
+     "text": "Khiếm khuyết bên mua đã biết khi ký hợp đồng",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 40."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bên bán không chịu trách nhiệm về khiếm khuyết của hàng hóa nếu vào thời điểm giao kết hợp đồng bên mua đã {{biết}} hoặc {{phải biết}} về những khiếm khuyết đó.",
+   "bank_extra": [
+    "quên",
+    "nghi ngờ"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quy định tại Điều 40 áp dụng trừ trường hợp các bên có {{thỏa thuận}} khác.",
+   "bank_extra": [
+    "quyết định",
+    "tập quán"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Bên bán không bao giờ chịu trách nhiệm với khiếm khuyết phát hiện sau khi chuyển rủi ro.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 40: chịu trách nhiệm với khiếm khuyết có trước thời điểm chuyển rủi ro, kể cả phát hiện sau."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày trách nhiệm của bên bán đối với hàng hóa không phù hợp với hợp đồng.",
+   "model": "Trừ thỏa thuận khác: bên bán không chịu trách nhiệm nếu bên mua đã biết hoặc phải biết khiếm khuyết khi giao kết (khoản 1); chịu trách nhiệm với khiếm khuyết có trước thời điểm chuyển rủi ro dù phát hiện sau, trong thời hạn khiếu nại (khoản 2 Điều 40).",
+   "keywords": [
+    "đã biết",
+    "khiếm khuyết",
+    "chuyển rủi ro",
+    "thời hạn khiếu nại"
+   ]
+  }
+ ]
+}

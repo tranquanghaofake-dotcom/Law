@@ -1,0 +1,198 @@
+{
+  "id": "so-huu-tri-tue",
+  "title": "Luật Sở hữu trí tuệ",
+  "short": "SHTT",
+  "chapters": [
+    {
+      "id": "v1",
+      "title": "Vấn đề 1. Khái quát về quyền sở hữu trí tuệ",
+      "lessons": [
+        {
+          "id": "tt1",
+          "title": "Khái quát về quyền sở hữu trí tuệ",
+          "concepts": [
+            "quyen-so-huu-tri-tue",
+            "can-cu-phat-sinh-quyen-shtt"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v2",
+      "title": "Vấn đề 2. Đối tượng và chủ thể của quyền tác giả",
+      "lessons": [
+        {
+          "id": "tt2",
+          "title": "Đối tượng và chủ thể của quyền tác giả",
+          "concepts": [
+            "tac-pham-duoc-bao-ho",
+            "chuong-trinh-may-tinh",
+            "chu-so-huu-quyen-tac-gia"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v3",
+      "title": "Vấn đề 3. Nội dung, giới hạn và thời hạn bảo hộ quyền tác giả",
+      "lessons": [
+        {
+          "id": "tt3",
+          "title": "Nội dung, giới hạn và thời hạn bảo hộ quyền tác giả",
+          "concepts": [
+            "quyen-nhan-than-tac-gia",
+            "thoi-han-bao-ho-quyen-tac-gia",
+            "ngoai-le-khong-xam-pham-quyen-tac-gia"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v4",
+      "title": "Vấn đề 4. Quyền liên quan đến quyền tác giả",
+      "lessons": [
+        {
+          "id": "tt4",
+          "title": "Quyền liên quan đến quyền tác giả",
+          "concepts": [
+            "quyen-lien-quan"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v5",
+      "title": "Vấn đề 5. Xác lập, chuyển giao quyền tác giả, quyền liên quan",
+      "lessons": [
+        {
+          "id": "tt5",
+          "title": "Xác lập, chuyển giao quyền tác giả, quyền liên quan",
+          "concepts": [
+            "chuyen-giao-quyen-tac-gia"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v6",
+      "title": "Vấn đề 6. Hành vi xâm phạm quyền tác giả, quyền liên quan",
+      "lessons": [
+        {
+          "id": "tt6",
+          "title": "Hành vi xâm phạm quyền tác giả, quyền liên quan",
+          "concepts": [
+            "xam-pham-quyen-tac-gia"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v7",
+      "title": "Vấn đề 7. Điều kiện bảo hộ các đối tượng sở hữu công nghiệp mang đặc tính sáng tạo",
+      "lessons": [
+        {
+          "id": "tt7",
+          "title": "Điều kiện bảo hộ các đối tượng sở hữu công nghiệp mang đặc tính sáng tạo",
+          "concepts": [
+            "sang-che",
+            "tinh-moi-sang-che"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v8",
+      "title": "Vấn đề 8. Điều kiện bảo hộ nhãn hiệu và phân loại nhãn hiệu",
+      "lessons": [
+        {
+          "id": "tt8",
+          "title": "Điều kiện bảo hộ nhãn hiệu và phân loại nhãn hiệu",
+          "concepts": [
+            "nhan-hieu",
+            "nhan-hieu-noi-tieng"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v9",
+      "title": "Vấn đề 9. Điều kiện bảo hộ tên thương mại, chỉ dẫn địa lý",
+      "lessons": [
+        {
+          "id": "tt9",
+          "title": "Điều kiện bảo hộ tên thương mại, chỉ dẫn địa lý",
+          "concepts": [
+            "ten-thuong-mai",
+            "chi-dan-dia-ly"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v10",
+      "title": "Vấn đề 10. Xác lập quyền sở hữu công nghiệp",
+      "lessons": [
+        {
+          "id": "tt10",
+          "title": "Xác lập quyền sở hữu công nghiệp",
+          "concepts": [
+            "xac-lap-quyen-shcn",
+            "hieu-luc-van-bang-bao-ho"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v11",
+      "title": "Vấn đề 11. Chủ thể, nội dung, giới hạn quyền, chuyển giao quyền sở hữu công nghiệp",
+      "lessons": [
+        {
+          "id": "tt11",
+          "title": "Chủ thể, nội dung, giới hạn quyền, chuyển giao quyền sở hữu công nghiệp",
+          "concepts": [
+            "quyen-chu-so-huu-shcn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v12",
+      "title": "Vấn đề 12. Xâm phạm quyền sở hữu công nghiệp",
+      "lessons": [
+        {
+          "id": "tt12",
+          "title": "Xâm phạm quyền sở hữu công nghiệp",
+          "concepts": [
+            "xam-pham-sang-che"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v13",
+      "title": "Vấn đề 13. Quyền đối với giống cây trồng",
+      "lessons": [
+        {
+          "id": "tt13",
+          "title": "Quyền đối với giống cây trồng",
+          "concepts": [
+            "giong-cay-trong"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v14",
+      "title": "Vấn đề 14. Các biện pháp bảo vệ quyền sở hữu trí tuệ",
+      "lessons": [
+        {
+          "id": "tt14",
+          "title": "Các biện pháp bảo vệ quyền sở hữu trí tuệ",
+          "concepts": [
+            "bien-phap-xu-ly-xam-pham-shtt"
+          ]
+        }
+      ]
+    }
+  ]
+}

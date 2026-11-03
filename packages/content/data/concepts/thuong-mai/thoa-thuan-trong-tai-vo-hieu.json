@@ -1,0 +1,115 @@
+{
+ "id": "thoa-thuan-trong-tai-vo-hieu",
+ "subject": "thuong-mai",
+ "chapter": "v8",
+ "term": "Thỏa thuận trọng tài vô hiệu",
+ "definition": "1. Tranh chấp phát sinh trong các lĩnh vực không thuộc thẩm quyền của Trọng tài quy định tại Điều 2 của Luật này. 2. Người xác lập thỏa thuận trọng tài không có thẩm quyền theo quy định của pháp luật. 3. Người xác lập thỏa thuận trọng tài không có năng lực hành vi dân sự theo quy định của Bộ luật Dân sự. 4. Hình thức của thỏa thuận trọng tài không phù hợp với quy định tại Điều 16 của Luật này. 5. Một trong các bên bị lừa dối, đe doạ, cưỡng ép trong quá trình xác lập thỏa thuận trọng tài và có yêu cầu tuyên bố thỏa thuận trọng tài đó là vô hiệu. 6. Thỏa thuận trọng tài vi phạm điều cấm của pháp luật.",
+ "plain": "Sáu căn cứ: tranh chấp NGOÀI THẨM QUYỀN trọng tài; người ký KHÔNG CÓ THẨM QUYỀN; không có NĂNG LỰC HÀNH VI; sai HÌNH THỨC (không bằng văn bản — Điều 16); bị LỪA DỐI, ĐE DỌA, CƯỠNG ÉP (và có yêu cầu); VI PHẠM ĐIỀU CẤM. Nguyên tắc ĐỘC LẬP của thỏa thuận trọng tài (Điều 19): hợp đồng chính bị vô hiệu, hủy bỏ không làm mất hiệu lực thỏa thuận trọng tài. Thỏa thuận vô hiệu hoặc không thực hiện được → Tòa án có thẩm quyền thụ lý (Điều 6).",
+ "example": "Nhân viên kinh doanh không được ủy quyền ký hợp đồng có điều khoản trọng tài thay giám đốc: thỏa thuận trọng tài có thể vô hiệu do người xác lập không có thẩm quyền (khoản 2 Điều 18).",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 18 Luật Trọng tài thương mại 2010 (VBHN 60/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-60-VBHN-VPQH-2025-Luat-Trong-tai-thuong-mai-669808.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "trong-tai-thuong-mai",
+  "nguyen-tac-trong-tai"
+ ],
+ "keywords": [
+  "ngoài thẩm quyền trọng tài",
+  "không có thẩm quyền, năng lực",
+  "hình thức không phù hợp",
+  "lừa dối, đe dọa, cưỡng ép"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trường hợp nào thỏa thuận trọng tài vô hiệu?",
+   "options": [
+    "Người xác lập thỏa thuận không có thẩm quyền theo quy định của pháp luật",
+    "Hợp đồng chính bị hủy bỏ",
+    "Giá trị hợp đồng nhỏ",
+    "Các bên ở hai tỉnh khác nhau"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 18.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 18 Luật Trọng tài thương mại 2010 (VBHN 60/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hợp đồng chính bị vô hiệu thì điều khoản trọng tài trong đó thế nào?",
+   "options": [
+    "Vẫn có hiệu lực theo nguyên tắc độc lập của thỏa thuận trọng tài",
+    "Tự động vô hiệu",
+    "Chỉ có hiệu lực nếu Tòa án đồng ý",
+    "Bị thay bằng thẩm quyền Tòa án"
+   ],
+   "answer": 0,
+   "explain": "Điều 19.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 19 Luật Trọng tài thương mại 2010 (VBHN 60/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thỏa thuận trọng tài vô hiệu",
+   "right": "Không làm thỏa thuận vô hiệu",
+   "cases": [
+    {
+     "text": "Bị cưỡng ép khi ký và có yêu cầu tuyên vô hiệu",
+     "answer": "left"
+    },
+    {
+     "text": "Hợp đồng chính bị hủy bỏ",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 18, 19."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thỏa thuận trọng tài vô hiệu khi người xác lập không có năng lực {{hành vi dân sự}}, hoặc hình thức không phù hợp với quy định tại Điều {{16}}.",
+   "bank_extra": [
+    "pháp luật",
+    "24"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thỏa thuận trọng tài vi phạm {{điều cấm}} của pháp luật thì vô hiệu.",
+   "bank_extra": [
+    "tập quán",
+    "thói quen"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Khi hợp đồng mua bán bị tuyên vô hiệu thì điều khoản trọng tài cũng mặc nhiên vô hiệu.",
+   "answer": false,
+   "explain": "Sai. Điều 19: thỏa thuận trọng tài hoàn toàn độc lập với hợp đồng."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các trường hợp thỏa thuận trọng tài vô hiệu.",
+   "model": "Tranh chấp ngoài thẩm quyền trọng tài (Điều 2); người xác lập không có thẩm quyền; không có năng lực hành vi dân sự; hình thức không phù hợp Điều 16; bị lừa dối, đe dọa, cưỡng ép và có yêu cầu; vi phạm điều cấm (Điều 18).",
+   "keywords": [
+    "thẩm quyền",
+    "năng lực",
+    "hình thức",
+    "cưỡng ép"
+   ]
+  }
+ ]
+}

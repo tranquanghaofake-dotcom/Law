@@ -1,0 +1,117 @@
+{
+ "id": "ldt-hinh-thuc-dau-tu",
+ "subject": "dau-tu",
+ "chapter": "v4",
+ "term": "Hình thức đầu tư",
+ "definition": "Đầu tư thành lập tổ chức kinh tế. Đầu tư góp vốn, mua cổ phần, mua phần vốn góp. Thực hiện dự án đầu tư. Đầu tư theo hình thức hợp đồng BCC. Các hình thức đầu tư, loại hình tổ chức kinh tế mới theo quy định của Chính phủ.",
+ "plain": "Năm hình thức: (1) thành lập TỔ CHỨC KINH TẾ; (2) GÓP VỐN, MUA CỔ PHẦN, MUA PHẦN VỐN GÓP; (3) THỰC HIỆN DỰ ÁN đầu tư; (4) HỢP ĐỒNG BCC; (5) hình thức mới theo quy định của Chính phủ. Hình thức (2) không phải xin Giấy chứng nhận đăng ký đầu tư (điểm c khoản 2 Điều 26) nhưng nhà đầu tư nước ngoài phải đăng ký góp vốn trong các trường hợp ở khoản 3 Điều 21.",
+ "example": "Nhà đầu tư Úc mua 30% phần vốn góp của công ty TNHH Việt Nam: hình thức góp vốn, mua phần vốn góp (khoản 2 Điều 18).",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 18 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Dau-tu/Van-ban-hop-nhat-142-2026-VBHN-LQ-VPQH-Luat-Dau-tu-726675.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "ldt-to-chuc-kinh-te",
+  "ldt-hop-dong-bcc",
+  "ldt-du-an-dau-tu"
+ ],
+ "keywords": [
+  "thành lập tổ chức kinh tế",
+  "góp vốn, mua cổ phần",
+  "dự án đầu tư",
+  "hợp đồng BCC"
+ ],
+ "note": "Luật Đầu tư 143/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Đầu tư 61/2020/QH14 mà đề cương HLU 2021 còn dẫn (khoản 4 Điều 51). Luật 24/2026/QH16 sửa đổi có hiệu lực từ 01/3/2027 (riêng một phần Điều 6 từ 01/01/2027), chỉ sửa Điều 6 và Phụ lục IV, không sửa điều được trích — văn bản hợp nhất 142/2026/VBHN-LQ-VPQH.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hình thức nào thuộc Điều 18 Luật Đầu tư?",
+   "options": [
+    "Đầu tư theo hình thức hợp đồng BCC",
+    "Gửi tiền tiết kiệm",
+    "Cho vay nặng lãi",
+    "Mua bảo hiểm nhân thọ"
+   ],
+   "answer": 0,
+   "explain": "Điều 18.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 18 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đầu tư góp vốn, mua cổ phần của tổ chức kinh tế có phải xin Giấy chứng nhận đăng ký đầu tư không?",
+   "options": [
+    "Không",
+    "Có, trong mọi trường hợp",
+    "Chỉ khi vốn trên 10 tỷ đồng",
+    "Chỉ khi là cá nhân"
+   ],
+   "answer": 0,
+   "explain": "Điểm c khoản 2 Điều 26.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 26 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hình thức đầu tư theo Điều 18",
+   "right": "Không phải hình thức đầu tư",
+   "cases": [
+    {
+     "text": "Thực hiện dự án đầu tư",
+     "answer": "left"
+    },
+    {
+     "text": "Mua hàng hóa để tiêu dùng cá nhân",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 18."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hình thức đầu tư gồm đầu tư thành lập {{tổ chức kinh tế}}; đầu tư góp vốn, mua {{cổ phần}}, mua phần vốn góp.",
+   "bank_extra": [
+    "hộ gia đình",
+    "trái phiếu chính phủ"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hình thức đầu tư còn gồm thực hiện {{dự án đầu tư}} và đầu tư theo hình thức hợp đồng {{BCC}}.",
+   "bank_extra": [
+    "đầu tư công",
+    "PPP"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Nhà đầu tư có quyền góp vốn, mua cổ phần, mua phần vốn góp của tổ chức kinh tế.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 21."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Kể các hình thức đầu tư theo Luật Đầu tư 2025.",
+   "model": "Thành lập tổ chức kinh tế; góp vốn, mua cổ phần, mua phần vốn góp; thực hiện dự án đầu tư; hợp đồng BCC; hình thức, loại hình tổ chức kinh tế mới theo quy định của Chính phủ (Điều 18).",
+   "keywords": [
+    "tổ chức kinh tế",
+    "góp vốn",
+    "dự án",
+    "BCC"
+   ]
+  }
+ ]
+}

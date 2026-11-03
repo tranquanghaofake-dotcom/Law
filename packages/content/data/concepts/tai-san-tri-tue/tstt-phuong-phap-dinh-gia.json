@@ -1,0 +1,107 @@
+{
+ "id": "tstt-phuong-phap-dinh-gia",
+ "subject": "tai-san-tri-tue",
+ "chapter": "v3",
+ "term": "Ba phương pháp định giá tài sản trí tuệ",
+ "definition": "Phương pháp tiếp cận theo chi phí ước tính giá trị tài sản trí tuệ dựa trên nguồn lực đã đầu tư để tạo ra tài sản đó hoặc tài sản tương đương; phương pháp tiếp cận theo thu nhập tính giá trị dựa trên lợi ích kinh tế mà tài sản mang lại; phương pháp tiếp cận theo thị trường so sánh với mức giá của các giao dịch tương đương trên thị trường.",
+ "plain": "Theo GHI CHÉP BÀI GIẢNG. CHI PHÍ: chi phí quá khứ (H = F + T: tiền đã đầu tư + lãi suất rủi ro) hoặc chi phí thay thế/tái tạo; dễ tính, số liệu có trong sổ sách, nhưng chi phí không phản ánh lợi nhuận và thiếu khách quan; hợp với tài sản mới, quản trị nội bộ. THU NHẬP: lợi ích quá khứ, hiện tại, dự kiến tương lai; áp dụng cho mọi đối tượng nhưng khó dự báo. THỊ TRƯỜNG: cần thị trường tích cực, giao dịch tương đương được công bố, điều chỉnh được về cùng mặt bằng, giao dịch bình đẳng; khách quan, chính xác nhưng hiếm giao dịch tương tự; cách 2: giá trị doanh nghiệp trừ tài sản khác.",
+ "example": "Định giá nhãn hiệu mới ra mắt 6 tháng: dùng phương pháp chi phí (tra cứu, nộp đơn, phí cấp văn bằng, quảng cáo, tem chống giả). Định giá nhãn hiệu nước giải khát 20 năm tuổi: phương pháp thu nhập (dòng lợi nhuận dự kiến).",
+ "source": {
+  "kind": "textbook",
+  "cite": "Ghi chép bài giảng học phần Quản trị tài sản trí tuệ (SHTTTT), ĐH Luật Hà Nội (Drive HLU/Kỳ II năm II/SHTTTT) — chưa đối chiếu nguyên văn giáo trình"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tstt-dinh-gia-tstt",
+  "tstt-xac-dinh-thiet-hai"
+ ],
+ "keywords": [
+  "chi phí quá khứ",
+  "chi phí thay thế",
+  "thu nhập",
+  "giao dịch tương đương",
+  "thị trường"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Phương pháp nào phù hợp nhất để định giá tài sản trí tuệ mới hình thành, chưa có chỗ đứng trên thị trường?",
+   "options": [
+    "Tiếp cận theo chi phí",
+    "Tiếp cận theo thị trường",
+    "Tiếp cận theo thu nhập",
+    "Không định giá được"
+   ],
+   "answer": 0,
+   "explain": "Bài giảng: phương pháp chi phí phù hợp với tài sản trí tuệ mới hình thành."
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Điều kiện tiên quyết của phương pháp tiếp cận theo thị trường là gì?",
+   "options": [
+    "Có giao dịch tương đương để so sánh",
+    "Có sổ sách kế toán chi phí",
+    "Có dự báo lợi nhuận 10 năm",
+    "Có văn bằng bảo hộ"
+   ],
+   "answer": 0,
+   "explain": "Thị trường tích cực: phải có giao dịch tương đương."
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Ưu điểm phương pháp chi phí",
+   "right": "Hạn chế phương pháp chi phí",
+   "cases": [
+    {
+     "text": "Số liệu rõ ràng, dễ thu thập từ sổ sách kế toán",
+     "answer": "left"
+    },
+    {
+     "text": "Chi phí tạo ra có thể khác xa lợi nhuận thu được",
+     "answer": "right"
+    }
+   ],
+   "explain": "Bài giảng nêu ưu, nhược từng phương pháp."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Phương pháp tiếp cận theo {{chi phí}} dựa trên nguồn lực đã đầu tư; phương pháp tiếp cận theo {{thu nhập}} dựa trên lợi ích kinh tế mà tài sản mang lại.",
+   "bank_extra": [
+    "pháp lý",
+    "rủi ro"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công thức chi phí quá khứ: H = F + T, trong đó F là khoản tiền đã {{đầu tư}} trên thực tế, T là tỷ lệ {{lãi suất}} theo rủi ro cho thời gian đầu tư.",
+   "bank_extra": [
+    "vay",
+    "thuế"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Phương pháp tiếp cận theo thu nhập chỉ áp dụng được cho nhãn hiệu.",
+   "answer": false,
+   "explain": "Sai. Bài giảng: ưu điểm của phương pháp thu nhập là áp dụng được với tất cả các đối tượng SHTT."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "So sánh ba phương pháp định giá tài sản trí tuệ.",
+   "model": "Chi phí: dựa trên nguồn lực đã/sẽ đầu tư, dễ tính nhưng không phản ánh lợi nhuận; thu nhập: dựa trên lợi ích kinh tế quá khứ, hiện tại, tương lai, áp dụng rộng nhưng khó dự báo; thị trường: so sánh giao dịch tương đương, khách quan nhưng hiếm dữ liệu.",
+   "keywords": [
+    "chi phí",
+    "thu nhập",
+    "thị trường",
+    "giao dịch tương đương"
+   ]
+  }
+ ]
+}

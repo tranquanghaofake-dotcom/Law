@@ -1,0 +1,114 @@
+{
+ "id": "xet-xu-cong-khai-tranh-tung",
+ "subject": "to-tung-dan-su",
+ "chapter": "v1",
+ "term": "Xét xử kịp thời, công khai và bảo đảm tranh tụng",
+ "definition": "Tòa án xét xử kịp thời trong thời hạn do Bộ luật này quy định, bảo đảm công bằng. Tòa án xét xử công khai. (…) Tòa án có trách nhiệm bảo đảm cho đương sự, người bảo vệ quyền và lợi ích hợp pháp của đương sự thực hiện quyền tranh tụng trong xét xử sơ thẩm, phúc thẩm, giám đốc thẩm, tái thẩm theo quy định của Bộ luật này.",
+ "plain": "XÉT XỬ CÔNG KHAI là nguyên tắc; XỬ KÍN chỉ trong trường hợp đặc biệt (bí mật nhà nước, thuần phong mỹ tục, bảo vệ người chưa thành niên, bí mật nghề nghiệp, kinh doanh, cá nhân, gia đình theo yêu cầu chính đáng) — nhưng TUYÊN ÁN vẫn công khai. TRANH TỤNG (Điều 24): bảo đảm ở MỌI cấp xét xử (sơ thẩm, phúc thẩm, giám đốc thẩm, tái thẩm); đương sự có quyền thu thập, giao nộp, tiếp cận chứng cứ, trình bày, đối đáp; mọi chứng cứ phải được xem xét đầy đủ, khách quan, công khai. Liên quan Hội thẩm nhân dân (Điều 11): tham gia xét xử sơ thẩm, trừ thủ tục rút gọn; ngang quyền Thẩm phán khi biểu quyết.",
+ "example": "Vụ ly hôn có tình tiết bí mật đời tư, đương sự yêu cầu chính đáng: Tòa án có thể xét xử kín, nhưng vẫn tuyên án công khai.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, câu đầu khoản 2 Điều 15; khoản 1 Điều 24 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thu-tuc-To-tung/Van-ban-hop-nhat-21-VBHN-VPQH-2026-Bo-luat-To-dung-dan-su-696578.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quyen-quyet-dinh-tu-dinh-doat",
+  "nghia-vu-chung-minh"
+ ],
+ "keywords": [
+  "xét xử kịp thời, công bằng",
+  "công khai, trừ trường hợp đặc biệt xử kín",
+  "bảo đảm tranh tụng ở mọi cấp"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quyền tranh tụng được bảo đảm trong những cấp xét xử nào?",
+   "options": [
+    "Sơ thẩm, phúc thẩm, giám đốc thẩm, tái thẩm",
+    "Chỉ sơ thẩm",
+    "Chỉ sơ thẩm và phúc thẩm",
+    "Chỉ phúc thẩm"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 24.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 24 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hội thẩm nhân dân tham gia xét xử sơ thẩm vụ án dân sự, trừ trường hợp nào?",
+   "options": [
+    "Xét xử theo thủ tục rút gọn",
+    "Vụ án ly hôn",
+    "Vụ án lao động",
+    "Vụ án có yếu tố nước ngoài"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 11.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 11 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Xét xử công khai",
+   "right": "Có thể xét xử kín",
+   "cases": [
+    {
+     "text": "Tranh chấp hợp đồng mua bán thông thường",
+     "answer": "left"
+    },
+    {
+     "text": "Vụ việc cần giữ bí mật nhà nước",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 15."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tòa án xét xử {{kịp thời}} trong thời hạn do Bộ luật này quy định, bảo đảm {{công bằng}}.",
+   "bank_extra": [
+    "bí mật",
+    "nhanh nhất có thể"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tòa án có trách nhiệm bảo đảm cho đương sự thực hiện quyền {{tranh tụng}} trong xét xử.",
+   "bank_extra": [
+    "khiếu nại",
+    "im lặng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quyền tranh tụng chỉ được bảo đảm ở phiên tòa sơ thẩm.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 24: sơ thẩm, phúc thẩm, giám đốc thẩm, tái thẩm."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày nguyên tắc xét xử kịp thời, công bằng, công khai và bảo đảm tranh tụng.",
+   "model": "Tòa án xét xử kịp thời, công bằng (khoản 1 Điều 15), công khai, trường hợp đặc biệt có thể xử kín (khoản 2); bảo đảm cho đương sự quyền tranh tụng ở sơ thẩm, phúc thẩm, giám đốc thẩm, tái thẩm (Điều 24).",
+   "keywords": [
+    "kịp thời",
+    "công khai",
+    "tranh tụng",
+    "xử kín"
+   ]
+  }
+ ]
+}

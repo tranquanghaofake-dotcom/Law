@@ -1,0 +1,116 @@
+{
+ "id": "xd-nghi-quyet-hdnd-tinh",
+ "subject": "xay-dung-vbpl",
+ "chapter": "v5",
+ "term": "Nghị quyết của Hội đồng nhân dân cấp tỉnh",
+ "definition": "Hội đồng nhân dân cấp tỉnh ban hành nghị quyết để quy định: (…) Chi tiết điều, khoản, điểm và các nội dung khác được giao trong văn bản quy phạm pháp luật của cơ quan nhà nước cấp trên; (…) Chính sách, biện pháp nhằm bảo đảm thi hành Hiến pháp, luật, văn bản quy phạm pháp luật của cơ quan nhà nước cấp trên;",
+ "plain": "Ở địa phương: HĐND cấp tỉnh ban hành NGHỊ QUYẾT; UBND cấp tỉnh ban hành QUYẾT ĐỊNH (quy định chi tiết, biện pháp thi hành, biện pháp quản lý — khoản 2 Điều 21); Chủ tịch UBND cấp tỉnh ban hành QUYẾT ĐỊNH về chỉ đạo, điều hành, phân cấp (khoản 3 Điều 21 — thẩm quyền mới từ Luật 2025). Nghị quyết HĐND tỉnh còn quy định chính sách phát triển kinh tế - xã hội, ngân sách, quốc phòng, an ninh địa phương, biện pháp đặc thù, phân cấp, thí điểm (điểm c, d). Cấp huyện không còn ban hành VBQPPL; cấp xã có nghị quyết HĐND và quyết định UBND (Điều 22). Chỉ thị không còn là VBQPPL ở bất kỳ cấp nào.",
+ "example": "HĐND tỉnh ban hành nghị quyết quy định mức học phí (được Luật Giáo dục giao): điểm a khoản 1 Điều 21. UBND tỉnh ban hành quyết định quy định hệ số điều chỉnh giá đất: khoản 2 Điều 21.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 21 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-54-VBHN-VPQH-2025-Luat-Ban-hanh-van-ban-quy-pham-phap-luat-669858.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "xd-nghi-quyet-quoc-hoi",
+  "xd-he-thong-vbqppl"
+ ],
+ "keywords": [
+  "Hội đồng nhân dân cấp tỉnh",
+  "quy định chi tiết",
+  "biện pháp thi hành",
+  "Ủy ban nhân dân cấp tỉnh"
+ ],
+ "note": "Luật Ban hành văn bản quy phạm pháp luật 64/2025/QH15 có hiệu lực từ 01/4/2025, thay thế Luật 80/2015/QH13 (sửa đổi bởi Luật 63/2020/QH14) mà đề cương HLU 2019 còn dẫn; được sửa đổi bởi Luật 87/2025/QH15 có hiệu lực từ 01/7/2025 — văn bản hợp nhất 54/VBHN-VPQH ngày 11/8/2025. Luật mới bỏ quy trình \"lập đề nghị xây dựng luật\" theo chương trình hằng năm kiểu cũ, tách \"quy trình xây dựng chính sách\" và bỏ thẩm quyền ban hành VBQPPL của cấp huyện (từ 01/7/2025). Dự án Luật Văn bản quy phạm pháp luật (thay thế) đang được Quốc hội khóa XVI xem xét, chưa có hiệu lực.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hội đồng nhân dân cấp tỉnh ban hành loại VBQPPL nào?",
+   "options": [
+    "Nghị quyết",
+    "Quyết định",
+    "Chỉ thị",
+    "Thông tư"
+   ],
+   "answer": 0,
+   "explain": "Khoản 10 Điều 4; Điều 21.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 21 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ủy ban nhân dân cấp tỉnh ban hành quyết định để quy định nội dung nào?",
+   "options": [
+    "Chi tiết nội dung được giao; biện pháp thi hành văn bản cấp trên và nghị quyết HĐND cùng cấp; biện pháp quản lý nhà nước ở địa phương",
+    "Tội phạm và hình phạt",
+    "Thuế mới",
+    "Thí điểm chính sách khác luật"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 21.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 21 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Nghị quyết của HĐND cấp tỉnh",
+   "right": "Quyết định của UBND cấp tỉnh",
+   "cases": [
+    {
+     "text": "Chính sách hỗ trợ phát triển kinh tế - xã hội địa phương",
+     "answer": "left"
+    },
+    {
+     "text": "Biện pháp thi hành nghị quyết của HĐND cùng cấp",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điểm c khoản 1 và điểm b khoản 2 Điều 21."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hội đồng nhân dân cấp tỉnh ban hành {{nghị quyết}} để quy định chi tiết điều, khoản, điểm được giao trong văn bản quy phạm pháp luật của cơ quan nhà nước {{cấp trên}}.",
+   "bank_extra": [
+    "quyết định",
+    "cấp dưới"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nghị quyết HĐND cấp tỉnh quy định chính sách, {{biện pháp}} nhằm bảo đảm thi hành {{Hiến pháp}}, luật, văn bản quy phạm pháp luật của cơ quan nhà nước cấp trên.",
+   "bank_extra": [
+    "hình phạt",
+    "điều lệ"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chủ tịch Ủy ban nhân dân cấp tỉnh có thẩm quyền ban hành văn bản quy phạm pháp luật.",
+   "answer": true,
+   "explain": "Đúng. Khoản 12 Điều 4 và khoản 3 Điều 21: quyết định của Chủ tịch UBND cấp tỉnh (điểm mới của Luật 2025)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu thẩm quyền ban hành VBQPPL của chính quyền địa phương cấp tỉnh.",
+   "model": "HĐND cấp tỉnh: nghị quyết (quy định chi tiết, biện pháp thi hành, chính sách kinh tế - xã hội, đặc thù, phân cấp, thí điểm); UBND cấp tỉnh: quyết định (quy định chi tiết, biện pháp thi hành, quản lý nhà nước, phân cấp); Chủ tịch UBND cấp tỉnh: quyết định về chỉ đạo, điều hành, phân cấp (Điều 21).",
+   "keywords": [
+    "nghị quyết",
+    "quyết định",
+    "quy định chi tiết",
+    "Chủ tịch"
+   ]
+  }
+ ]
+}

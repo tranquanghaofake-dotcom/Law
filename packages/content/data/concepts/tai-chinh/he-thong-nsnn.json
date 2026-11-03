@@ -1,0 +1,116 @@
+{
+ "id": "he-thong-nsnn",
+ "subject": "tai-chinh",
+ "chapter": "v2",
+ "term": "Hệ thống ngân sách nhà nước và phân cấp quản lý",
+ "definition": "Ngân sách nhà nước bao gồm ngân sách trung ương và ngân sách địa phương. Ngân sách địa phương bao gồm ngân sách cấp tỉnh và ngân sách cấp xã. (…) Phân cấp quản lý ngân sách là việc xác định phạm vi, trách nhiệm và quyền hạn của chính quyền các cấp, các đơn vị dự toán ngân sách trong việc quản lý ngân sách nhà nước phù hợp với phân cấp quản lý kinh tế - xã hội.",
+ "plain": "Điểm mới: hệ thống ngân sách HAI CẤP ĐỊA PHƯƠNG (tỉnh, xã) theo mô hình chính quyền địa phương hai cấp — Luật 2015 có bốn cấp (trung ương, tỉnh, huyện, xã). Ngân sách trung ương giữ VAI TRÒ CHỦ ĐẠO. Quan hệ giữa các cấp: nguồn thu 100%, khoản thu phân chia theo tỷ lệ %, BỔ SUNG CÂN ĐỐI và BỔ SUNG CÓ MỤC TIÊU từ ngân sách cấp trên (Điều 9, 42, 43). Nguồn thu, nhiệm vụ chi của từng cấp tại Điều 36–39.",
+ "example": "Thu từ thuế xuất nhập khẩu thuộc ngân sách trung ương 100%; tỉnh nghèo không cân đối được chi thì nhận bổ sung cân đối từ ngân sách trung ương.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 6; khoản 20 Điều 4 Luật Ngân sách nhà nước 2025 (89/2025/QH15)",
+  "url": "https://thuvienphapluat.vn/van-ban/Tai-chinh-nha-nuoc/Luat-ngan-sach-nha-nuoc-2025-so-89-2025-QH15-650061.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "ngan-sach-nha-nuoc",
+  "nguyen-tac-quan-ly-nsnn"
+ ],
+ "keywords": [
+  "ngân sách trung ương và địa phương",
+  "cấp tỉnh và cấp xã",
+  "phân cấp quản lý ngân sách",
+  "bổ sung cân đối, có mục tiêu"
+ ],
+ "note": "Luật Ngân sách nhà nước 89/2025/QH15 có hiệu lực từ năm ngân sách 2026 (một số nội dung từ 01/7/2025), thay thế Luật Ngân sách nhà nước 83/2015/QH13 mà đề cương HLU còn dẫn (Điều 77).",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Luật NSNN 2025, ngân sách địa phương gồm những cấp nào?",
+   "options": [
+    "Ngân sách cấp tỉnh và ngân sách cấp xã",
+    "Tỉnh, huyện, xã",
+    "Chỉ cấp tỉnh",
+    "Tỉnh, huyện"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 6.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 6 Luật Ngân sách nhà nước 2025 (89/2025/QH15)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Phân cấp quản lý ngân sách là gì?",
+   "options": [
+    "Xác định phạm vi, trách nhiệm, quyền hạn của chính quyền các cấp, đơn vị dự toán trong quản lý NSNN phù hợp với phân cấp quản lý kinh tế - xã hội",
+    "Chia đều ngân sách cho các tỉnh",
+    "Giao toàn bộ ngân sách cho Bộ Tài chính",
+    "Cho phép địa phương tự đặt ra thuế"
+   ],
+   "answer": 0,
+   "explain": "Khoản 20 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 4 Luật Ngân sách nhà nước 2025 (89/2025/QH15)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Luật NSNN 2015",
+   "right": "Luật NSNN 2025",
+   "cases": [
+    {
+     "text": "Có ngân sách cấp huyện",
+     "answer": "left"
+    },
+    {
+     "text": "Ngân sách địa phương chỉ gồm cấp tỉnh và cấp xã",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 6 Luật 2025."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ngân sách nhà nước bao gồm ngân sách {{trung ương}} và ngân sách {{địa phương}}.",
+   "bank_extra": [
+    "tư nhân",
+    "doanh nghiệp"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ngân sách địa phương bao gồm ngân sách cấp {{tỉnh}} và ngân sách cấp {{xã}}.",
+   "bank_extra": [
+    "huyện",
+    "thôn"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo Luật NSNN 2025 vẫn còn ngân sách cấp huyện.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 6: chỉ còn cấp tỉnh và cấp xã."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày hệ thống ngân sách nhà nước theo Luật 2025.",
+   "model": "Gồm ngân sách trung ương và ngân sách địa phương; ngân sách địa phương gồm cấp tỉnh và cấp xã (Điều 6); phân cấp quản lý ngân sách xác định phạm vi, trách nhiệm, quyền hạn của các cấp (khoản 20 Điều 4); quan hệ qua phân chia nguồn thu, bổ sung cân đối, bổ sung có mục tiêu.",
+   "keywords": [
+    "trung ương",
+    "cấp tỉnh",
+    "cấp xã",
+    "phân cấp"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,120 @@
+{
+ "id": "dai-dien-cho-thuong-nhan",
+ "subject": "thuong-mai",
+ "chapter": "v2",
+ "term": "Đại diện cho thương nhân",
+ "definition": "Đại diện cho thương nhân là việc một thương nhân nhận ủy nhiệm (gọi là bên đại diện) của thương nhân khác (gọi là bên giao đại diện) để thực hiện các hoạt động thương mại với danh nghĩa, theo sự chỉ dẫn của thương nhân đó và được hưởng thù lao về việc đại diện. Trong trường hợp thương nhân cử người của mình để làm đại diện cho mình thì áp dụng quy định của Bộ luật Dân sự.",
+ "plain": "Bốn dịch vụ TRUNG GIAN THƯƠNG MẠI: ĐẠI DIỆN, MÔI GIỚI, ỦY THÁC, ĐẠI LÝ. Đại diện: cả hai bên là THƯƠNG NHÂN; bên đại diện hành động VỚI DANH NGHĨA BÊN GIAO ĐẠI DIỆN, theo chỉ dẫn, hưởng THÙ LAO. Cử nhân viên của mình đi giao dịch → áp dụng BLDS (đại diện dân sự), không phải dịch vụ đại diện thương mại.",
+ "example": "Công ty Việt Nam nhận làm đại diện cho hãng Nhật, nhân danh hãng Nhật ký hợp đồng với khách hàng Việt Nam và nhận hoa hồng: đại diện cho thương nhân.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 141 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "moi-gioi-thuong-mai",
+  "uy-thac-mua-ban",
+  "dai-ly-thuong-mai"
+ ],
+ "keywords": [
+  "nhận ủy nhiệm",
+  "với danh nghĩa bên giao đại diện",
+  "theo sự chỉ dẫn",
+  "hưởng thù lao"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trong đại diện cho thương nhân, bên đại diện thực hiện hoạt động thương mại với danh nghĩa của ai?",
+   "options": [
+    "Bên giao đại diện",
+    "Chính mình",
+    "Khách hàng",
+    "Nhà nước"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 141.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 141 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thương nhân cử nhân viên của mình đi giao dịch thì áp dụng luật nào?",
+   "options": [
+    "Bộ luật Dân sự",
+    "Luật Thương mại về đại diện cho thương nhân",
+    "Luật Lao động",
+    "Luật Doanh nghiệp"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 141.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 141 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Nhân danh bên thuê",
+   "right": "Nhân danh chính mình",
+   "cases": [
+    {
+     "text": "Đại diện cho thương nhân",
+     "answer": "left"
+    },
+    {
+     "text": "Ủy thác mua bán hàng hóa",
+     "answer": "right"
+    },
+    {
+     "text": "Đại lý thương mại",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 141, 155, 166."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đại diện cho thương nhân là việc bên đại diện thực hiện các hoạt động thương mại với {{danh nghĩa}}, theo sự {{chỉ dẫn}} của bên giao đại diện và được hưởng thù lao.",
+   "bank_extra": [
+    "tên riêng",
+    "ngẫu hứng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Trong trường hợp thương nhân cử người của mình để làm đại diện cho mình thì áp dụng quy định của {{Bộ luật Dân sự}}.",
+   "bank_extra": [
+    "Luật Thương mại",
+    "Luật Lao động"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Bên đại diện cho thương nhân ký hợp đồng với danh nghĩa của chính mình.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 141: với danh nghĩa của bên giao đại diện."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm đại diện cho thương nhân.",
+   "model": "Là việc thương nhân nhận ủy nhiệm của thương nhân khác để thực hiện hoạt động thương mại với danh nghĩa, theo chỉ dẫn của thương nhân đó và hưởng thù lao; cử người của mình làm đại diện thì áp dụng BLDS (Điều 141).",
+   "keywords": [
+    "ủy nhiệm",
+    "danh nghĩa",
+    "chỉ dẫn",
+    "thù lao"
+   ]
+  }
+ ]
+}

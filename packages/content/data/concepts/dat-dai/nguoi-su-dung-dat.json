@@ -1,0 +1,115 @@
+{
+ "id": "nguoi-su-dung-dat",
+ "subject": "dat-dai",
+ "chapter": "v1",
+ "term": "Người sử dụng đất",
+ "definition": "Người sử dụng đất được Nhà nước giao đất, cho thuê đất, công nhận quyền sử dụng đất; đang sử dụng đất ổn định, đủ điều kiện cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất mà chưa được Nhà nước cấp Giấy chứng nhận quyền sử dụng đất, Giấy chứng nhận quyền sở hữu nhà ở và quyền sử dụng đất ở, Giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất, Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất; nhận quyền sử dụng đất; thuê lại đất theo quy định của Luật này, bao gồm:",
+ "plain": "Căn cứ trở thành người sử dụng đất: được Nhà nước GIAO, CHO THUÊ, CÔNG NHẬN; đang sử dụng ỔN ĐỊNH đủ điều kiện cấp Giấy chứng nhận; NHẬN quyền sử dụng đất; THUÊ LẠI. Các nhóm: tổ chức trong nước; tổ chức tôn giáo; CÁ NHÂN trong nước; cộng đồng dân cư; tổ chức nước ngoài có chức năng ngoại giao; NGƯỜI GỐC VIỆT NAM ĐỊNH CƯ Ở NƯỚC NGOÀI; tổ chức kinh tế có vốn đầu tư nước ngoài. Điểm mới 2024: không còn liệt kê \"hộ gia đình\" là chủ thể được giao đất mới (hộ gia đình đã được giao trước 01/8/2024 vẫn tiếp tục sử dụng — Điều 259).",
+ "example": "Người mua lại mảnh đất của hàng xóm qua hợp đồng chuyển nhượng hợp pháp trở thành người sử dụng đất do \"nhận quyền sử dụng đất\".",
+ "source": {
+  "kind": "statute",
+  "cite": "Đoạn mở đầu Điều 4 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Van-ban-hop-nhat-44-VBHN-VPQH-2026-Luat-Dat-dai-699655.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quyen-chung-nguoi-su-dung-dat",
+  "so-huu-toan-dan-dat-dai"
+ ],
+ "keywords": [
+  "giao, cho thuê, công nhận",
+  "sử dụng ổn định",
+  "nhận quyền sử dụng đất",
+  "thuê lại"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trường hợp nào KHÔNG làm một người trở thành người sử dụng đất theo Điều 4?",
+   "options": [
+    "Mượn đất của người khác để trồng rau không có hợp đồng thuê",
+    "Được Nhà nước giao đất",
+    "Nhận chuyển nhượng quyền sử dụng đất",
+    "Thuê lại đất trong khu công nghiệp"
+   ],
+   "answer": 0,
+   "explain": "Điều 4 liệt kê các căn cứ; mượn đất không phải căn cứ.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 4 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người gốc Việt Nam định cư ở nước ngoài có thể là người sử dụng đất không?",
+   "options": [
+    "Có, theo Điều 4",
+    "Không bao giờ",
+    "Chỉ khi có quốc tịch Việt Nam",
+    "Chỉ đối với đất nông nghiệp"
+   ],
+   "answer": 0,
+   "explain": "Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 4 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Căn cứ trở thành người sử dụng đất",
+   "right": "Không phải căn cứ",
+   "cases": [
+    {
+     "text": "Được Nhà nước công nhận quyền sử dụng đất",
+     "answer": "left"
+    },
+    {
+     "text": "Lấn chiếm đất công",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người sử dụng đất được Nhà nước {{giao đất}}, cho thuê đất, công nhận quyền sử dụng đất; nhận quyền sử dụng đất; {{thuê lại}} đất theo quy định của Luật này.",
+   "bank_extra": [
+    "bán đất",
+    "chiếm đất"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người đang sử dụng đất {{ổn định}}, đủ điều kiện cấp Giấy chứng nhận mà chưa được cấp cũng là người sử dụng đất.",
+   "bank_extra": [
+    "tạm thời",
+    "trái phép"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người chiếm đất trái phép cũng là người sử dụng đất theo Điều 4.",
+   "answer": false,
+   "explain": "Sai. Điều 4 chỉ liệt kê các căn cứ hợp pháp."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm người sử dụng đất theo Luật Đất đai 2024.",
+   "model": "Là chủ thể được Nhà nước giao đất, cho thuê đất, công nhận quyền sử dụng đất; đang sử dụng ổn định đủ điều kiện cấp Giấy chứng nhận; nhận quyền sử dụng đất; thuê lại đất, gồm tổ chức, cá nhân, cộng đồng dân cư, người gốc Việt Nam định cư ở nước ngoài… (Điều 4).",
+   "keywords": [
+    "giao đất",
+    "công nhận",
+    "nhận quyền",
+    "thuê lại"
+   ]
+  }
+ ]
+}

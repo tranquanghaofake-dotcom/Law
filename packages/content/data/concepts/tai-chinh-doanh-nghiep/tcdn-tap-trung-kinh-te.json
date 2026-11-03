@@ -1,0 +1,117 @@
+{
+ "id": "tcdn-tap-trung-kinh-te",
+ "subject": "tai-chinh-doanh-nghiep",
+ "chapter": "v5",
+ "term": "Các hình thức tập trung kinh tế",
+ "definition": "Tập trung kinh tế bao gồm các hình thức sau đây: a) Sáp nhập doanh nghiệp; b) Hợp nhất doanh nghiệp; c) Mua lại doanh nghiệp; d) Liên doanh giữa các doanh nghiệp; đ) Các hình thức tập trung kinh tế khác theo quy định của pháp luật.",
+ "plain": "Bốn hình thức được gọi tên: SÁP NHẬP, HỢP NHẤT, MUA LẠI, LIÊN DOANH, và hình thức khác theo pháp luật. Ý nghĩa với pháp luật tài chính doanh nghiệp: giao dịch M&A vừa chịu Luật Doanh nghiệp (thủ tục, chuyển đổi vốn), vừa chịu Luật Cạnh tranh (thông báo tập trung kinh tế khi đạt ngưỡng — Điều 33; tập trung kinh tế bị cấm nếu gây hoặc có khả năng gây tác động hạn chế cạnh tranh đáng kể — Điều 30), và luật thuế.",
+ "example": "Hai ngân hàng sáp nhập: vừa thực hiện thủ tục theo Luật Các tổ chức tín dụng, Luật Doanh nghiệp, vừa có thể phải thông báo tập trung kinh tế theo Luật Cạnh tranh.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 29 Luật Cạnh tranh 2018",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tcdn-sap-nhap",
+  "tcdn-hop-nhat",
+  "tcdn-mua-lai-doanh-nghiep"
+ ],
+ "keywords": [
+  "sáp nhập",
+  "hợp nhất",
+  "mua lại",
+  "liên doanh"
+ ],
+ "note": "Luật Cạnh tranh 23/2018/QH14 có hiệu lực từ 01/7/2019, thay thế Luật Cạnh tranh 2004 mà đề cương còn dẫn; chưa có văn bản sửa đổi có hiệu lực.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hình thức nào thuộc tập trung kinh tế theo khoản 1 Điều 29 Luật Cạnh tranh?",
+   "options": [
+    "Liên doanh giữa các doanh nghiệp",
+    "Chia doanh nghiệp",
+    "Giải thể doanh nghiệp",
+    "Tạm ngừng kinh doanh"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 29.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 29 Luật Cạnh tranh 2018"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tập trung kinh tế bị cấm khi nào?",
+   "options": [
+    "Khi gây hoặc có khả năng gây tác động hạn chế cạnh tranh một cách đáng kể trên thị trường Việt Nam",
+    "Trong mọi trường hợp",
+    "Khi doanh nghiệp có vốn nước ngoài",
+    "Khi chưa niêm yết"
+   ],
+   "answer": 0,
+   "explain": "Điều 30 Luật Cạnh tranh.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 30 Luật Cạnh tranh 2018"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tập trung kinh tế",
+   "right": "Không phải tập trung kinh tế",
+   "cases": [
+    {
+     "text": "Mua lại doanh nghiệp",
+     "answer": "left"
+    },
+    {
+     "text": "Doanh nghiệp tự giải thể",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 29."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tập trung kinh tế bao gồm sáp nhập, {{hợp nhất}}, mua lại doanh nghiệp, {{liên doanh}} giữa các doanh nghiệp.",
+   "bank_extra": [
+    "chia",
+    "phá sản"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Sáp nhập doanh nghiệp là việc một hoặc một số doanh nghiệp chuyển {{toàn bộ}} tài sản, quyền, nghĩa vụ và lợi ích hợp pháp của mình sang một doanh nghiệp {{khác}}.",
+   "bank_extra": [
+    "một phần",
+    "mới"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chia doanh nghiệp là một hình thức tập trung kinh tế theo khoản 1 Điều 29.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 29 gồm sáp nhập, hợp nhất, mua lại, liên doanh và hình thức khác; chia doanh nghiệp làm phân tán chứ không tập trung."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Kể các hình thức tập trung kinh tế.",
+   "model": "Sáp nhập, hợp nhất, mua lại doanh nghiệp, liên doanh giữa các doanh nghiệp, hình thức khác theo pháp luật (khoản 1 Điều 29 Luật Cạnh tranh 2018).",
+   "keywords": [
+    "sáp nhập",
+    "hợp nhất",
+    "mua lại",
+    "liên doanh"
+   ]
+  }
+ ]
+}

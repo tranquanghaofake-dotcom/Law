@@ -1,0 +1,120 @@
+{
+ "id": "khieu-nai",
+ "subject": "hanh-chinh",
+ "chapter": "v15",
+ "term": "Khiếu nại và thời hiệu khiếu nại",
+ "definition": "Khiếu nại là việc cơ quan, tổ chức, cá nhân theo thủ tục do Luật này quy định đề nghị cơ quan, tổ chức, cá nhân có thẩm quyền xem xét lại quyết định hành chính, hành vi hành chính của cơ quan hành chính nhà nước, của người có thẩm quyền trong cơ quan hành chính nhà nước hoặc quyết định kỷ luật cán bộ, công chức khi có căn cứ cho rằng quyết định hoặc hành vi đó là trái pháp luật, xâm phạm quyền, lợi ích hợp pháp của mình. (…) Thời hiệu khiếu nại là 90 ngày, kể từ ngày nhận được quyết định hành chính hoặc biết được quyết định hành chính, hành vi hành chính.",
+ "plain": "Khiếu nại bảo vệ QUYỀN, LỢI ÍCH CỦA CHÍNH MÌNH (khác tố cáo). Đối tượng: quyết định hành chính, hành vi hành chính, quyết định kỷ luật cán bộ, công chức. Trình tự (Điều 7): khiếu nại LẦN ĐẦU đến người ra quyết định/cơ quan có người có hành vi → LẦN HAI đến thủ trưởng cấp trên trực tiếp → khởi kiện vụ án hành chính; ở mỗi bước có thể chọn khởi kiện ra Tòa án. Thời hiệu 90 ngày; thời gian trở ngại khách quan (ốm đau, thiên tai…) không tính.",
+ "example": "Bà B nhận quyết định thu hồi đất ngày 01/3 và cho rằng mức bồi thường sai luật: bà có 90 ngày để khiếu nại lần đầu đến Chủ tịch UBND đã ra quyết định, hoặc khởi kiện tại Tòa án.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 2; Điều 9 Luật Khiếu nại 2011 (VBHN 28/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-28-VBHN-VPQH-2026-Luat-Khieu-nai-697698.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "to-cao",
+  "quyet-dinh-hanh-chinh"
+ ],
+ "keywords": [
+  "xem xét lại",
+  "quyền, lợi ích hợp pháp của mình",
+  "lần đầu, lần hai, khởi kiện",
+  "90 ngày"
+ ],
+ "note": "Luật 136/2025/QH15 sửa đổi Luật Tiếp công dân, Luật Khiếu nại, Luật Tố cáo có hiệu lực từ 01/7/2026; văn bản hợp nhất đã cập nhật.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thời hiệu khiếu nại quyết định hành chính là bao lâu?",
+   "options": [
+    "90 ngày kể từ ngày nhận được hoặc biết được quyết định, hành vi",
+    "30 ngày",
+    "01 năm",
+    "Không giới hạn"
+   ],
+   "answer": 0,
+   "explain": "Điều 9.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 9 Luật Khiếu nại 2011 (VBHN 28/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Không đồng ý với quyết định giải quyết khiếu nại lần đầu, người khiếu nại có quyền gì?",
+   "options": [
+    "Khiếu nại lần hai đến Thủ trưởng cấp trên trực tiếp hoặc khởi kiện vụ án hành chính",
+    "Chỉ được tố cáo",
+    "Phải chờ 01 năm",
+    "Không còn quyền nào"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 7.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 7 Luật Khiếu nại 2011 (VBHN 28/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Khiếu nại",
+   "right": "Tố cáo",
+   "cases": [
+    {
+     "text": "Bảo vệ quyền, lợi ích hợp pháp của chính người khiếu nại",
+     "answer": "left"
+    },
+    {
+     "text": "Báo hành vi vi phạm pháp luật của bất kỳ ai gây thiệt hại lợi ích Nhà nước, người khác",
+     "answer": "right"
+    },
+    {
+     "text": "Chủ thể có thể là cơ quan, tổ chức",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 2 Luật Khiếu nại; Điều 2 Luật Tố cáo."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Khiếu nại là việc đề nghị cơ quan, tổ chức, cá nhân có thẩm quyền {{xem xét lại}} quyết định hành chính, hành vi hành chính hoặc quyết định {{kỷ luật}} cán bộ, công chức.",
+   "bank_extra": [
+    "hủy bỏ ngay",
+    "khen thưởng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thời hiệu khiếu nại là {{90}} ngày, kể từ ngày {{nhận được}} quyết định hành chính hoặc biết được quyết định hành chính, hành vi hành chính.",
+   "bank_extra": [
+    "60",
+    "ban hành"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người khiếu nại phải khiếu nại xong cả hai lần mới được khởi kiện vụ án hành chính.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 7: có thể khởi kiện ngay thay cho khiếu nại lần đầu."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm khiếu nại, thời hiệu và trình tự khiếu nại.",
+   "model": "Đề nghị người có thẩm quyền xem xét lại quyết định hành chính, hành vi hành chính, quyết định kỷ luật cán bộ, công chức trái pháp luật, xâm phạm quyền, lợi ích của mình (khoản 1 Điều 2); thời hiệu 90 ngày (Điều 9); lần đầu, lần hai hoặc khởi kiện vụ án hành chính (Điều 7).",
+   "keywords": [
+    "xem xét lại",
+    "90 ngày",
+    "lần hai",
+    "khởi kiện"
+   ]
+  }
+ ]
+}

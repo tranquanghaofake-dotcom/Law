@@ -1,0 +1,115 @@
+{
+ "id": "co-so-trach-nhiem-hinh-su",
+ "subject": "hinh-su",
+ "chapter": "v1",
+ "term": "Cơ sở của trách nhiệm hình sự",
+ "definition": "Chỉ người nào phạm một tội đã được Bộ luật Hình sự quy định mới phải chịu trách nhiệm hình sự. Chỉ pháp nhân thương mại nào phạm một tội đã được quy định tại Điều 76 của Bộ luật này mới phải chịu trách nhiệm hình sự.",
+ "plain": "Thể hiện NGUYÊN TẮC PHÁP CHẾ: \"không có tội nếu không có luật\" — chỉ BLHS mới quy định tội phạm (nguồn duy nhất của luật hình sự là Bộ luật Hình sự và luật sửa đổi, bổ sung). Hai chủ thể chịu TNHS: CÁ NHÂN (mọi tội trong BLHS) và PHÁP NHÂN THƯƠNG MẠI (chỉ các tội liệt kê tại Điều 76). Không áp dụng tương tự pháp luật trong luật hình sự.",
+ "example": "Một hành vi gây bức xúc trên mạng nhưng chưa được Bộ luật Hình sự quy định là tội phạm thì không thể truy cứu trách nhiệm hình sự, chỉ có thể xử lý bằng biện pháp khác.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 2 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nhiem-vu-bo-luat-hinh-su",
+  "khai-niem-toi-pham"
+ ],
+ "keywords": [
+  "phạm một tội đã được Bộ luật Hình sự quy định",
+  "pháp nhân thương mại",
+  "Điều 76",
+  "pháp chế"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Pháp nhân thương mại phải chịu trách nhiệm hình sự khi nào?",
+   "options": [
+    "Khi phạm một tội được quy định tại Điều 76 Bộ luật Hình sự",
+    "Khi phạm bất kỳ tội nào trong Bộ luật Hình sự",
+    "Khi người đại diện bị kết án",
+    "Khi vi phạm hành chính nhiều lần"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 2.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 2 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Một người chỉ phải chịu trách nhiệm hình sự khi nào?",
+   "options": [
+    "Phạm một tội đã được Bộ luật Hình sự quy định",
+    "Có hành vi trái đạo đức",
+    "Bị cơ quan nhà nước kỷ luật",
+    "Gây thiệt hại về tài sản"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 2.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 2 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Cá nhân",
+   "right": "Pháp nhân thương mại",
+   "cases": [
+    {
+     "text": "Chịu TNHS về tội được Bộ luật Hình sự quy định",
+     "answer": "left"
+    },
+    {
+     "text": "Chỉ chịu TNHS về tội liệt kê tại Điều 76",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 2."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chỉ người nào phạm một tội đã được {{Bộ luật Hình sự}} quy định mới phải chịu {{trách nhiệm hình sự}}.",
+   "bank_extra": [
+    "Nghị định",
+    "trách nhiệm hành chính"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chỉ pháp nhân thương mại nào phạm một tội đã được quy định tại Điều {{76}} của Bộ luật này mới phải chịu trách nhiệm hình sự.",
+   "bank_extra": [
+    "74",
+    "8"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Pháp nhân phi thương mại (như trường đại học công lập) có thể bị truy cứu trách nhiệm hình sự.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 2 chỉ quy định pháp nhân thương mại."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày cơ sở của trách nhiệm hình sự.",
+   "model": "Chỉ người nào phạm một tội đã được Bộ luật Hình sự quy định mới phải chịu TNHS; chỉ pháp nhân thương mại phạm một tội quy định tại Điều 76 mới phải chịu TNHS (Điều 2); thể hiện nguyên tắc pháp chế.",
+   "keywords": [
+    "Bộ luật Hình sự quy định",
+    "pháp nhân thương mại",
+    "Điều 76",
+    "pháp chế"
+   ]
+  }
+ ]
+}

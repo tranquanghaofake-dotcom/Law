@@ -1,0 +1,117 @@
+{
+ "id": "tstt-chuyen-nhuong-quyen-shcn",
+ "subject": "tai-san-tri-tue",
+ "chapter": "v4",
+ "term": "Chuyển nhượng quyền sở hữu công nghiệp",
+ "definition": "Chuyển nhượng quyền sở hữu công nghiệp là việc chủ sở hữu quyền sở hữu công nghiệp chuyển giao quyền sở hữu của mình cho tổ chức, cá nhân khác. Việc chuyển nhượng quyền sở hữu công nghiệp phải được thực hiện dưới hình thức hợp đồng bằng văn bản (sau đây gọi là hợp đồng chuyển nhượng quyền sở hữu công nghiệp).",
+ "plain": "Bản chất là \"BÁN\" tài sản trí tuệ: chuyển quyền SỞ HỮU, bên nhận trở thành chủ mới. Hình thức: hợp đồng BẰNG VĂN BẢN. Nội dung bắt buộc (Điều 140): tên, địa chỉ các bên; căn cứ chuyển nhượng; giá; quyền và nghĩa vụ. Hạn chế (Điều 139): chỉ trong phạm vi bảo hộ; chỉ dẫn địa lý KHÔNG được chuyển nhượng; tên thương mại chỉ chuyển cùng toàn bộ cơ sở kinh doanh; nhãn hiệu không được gây nhầm lẫn. Hiệu lực (Điều 148): với quyền xác lập trên cơ sở đăng ký, hợp đồng chỉ có hiệu lực khi đã ĐĂNG KÝ tại Cục SHTT. Phân biệt với CHUYỂN QUYỀN SỬ DỤNG (Điều 141): chỉ cho phép dùng, chủ sở hữu không đổi.",
+ "example": "Công ty K bán nhãn hiệu \"Hoa Sữa\" cho công ty L bằng hợp đồng viết tay nhưng chưa đăng ký tại Cục SHTT: hợp đồng chưa có hiệu lực (khoản 1 Điều 148), L chưa phải chủ sở hữu.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 138 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tstt-chuyen-quyen-su-dung",
+  "tstt-hieu-luc-hop-dong-chuyen-giao",
+  "tstt-nhuong-quyen-thuong-mai"
+ ],
+ "keywords": [
+  "chuyển giao quyền sở hữu",
+  "hợp đồng bằng văn bản",
+  "phạm vi bảo hộ",
+  "đăng ký"
+ ],
+ "note": "Luật Sở hữu trí tuệ 50/2005/QH11 (hiệu lực 01/7/2006) đã được sửa đổi bởi Luật 36/2009/QH12, 42/2019/QH14, 07/2022/QH15, 93/2025/QH15 và 131/2025/QH15 (hiệu lực 01/4/2026) — văn bản hợp nhất 67/VBHN-VPQH 2026; ghi chép lớp học còn dẫn Nghị định 105/2006/NĐ-CP và Nghị định 99/2013/NĐ-CP, cần tự kiểm tra hiệu lực của các nghị định này trước khi dùng.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chuyển nhượng quyền sở hữu công nghiệp là gì?",
+   "options": [
+    "Chủ sở hữu chuyển giao quyền sở hữu của mình cho tổ chức, cá nhân khác",
+    "Cho phép người khác sử dụng đối tượng SHCN",
+    "Gia hạn văn bằng bảo hộ",
+    "Góp ý kiến phản đối đơn"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 138.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 138 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quyền nào KHÔNG được chuyển nhượng?",
+   "options": [
+    "Quyền đối với chỉ dẫn địa lý",
+    "Quyền đối với sáng chế",
+    "Quyền đối với nhãn hiệu",
+    "Quyền đối với kiểu dáng công nghiệp"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 139.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 139 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Chuyển nhượng quyền SHCN",
+   "right": "Chuyển quyền sử dụng đối tượng SHCN",
+   "cases": [
+    {
+     "text": "Bên nhận trở thành chủ sở hữu mới của sáng chế",
+     "answer": "left"
+    },
+    {
+     "text": "Bên nhận chỉ được dùng nhãn hiệu trong 5 năm tại miền Bắc",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 138, 141."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chuyển nhượng quyền sở hữu công nghiệp là việc chủ sở hữu chuyển giao quyền {{sở hữu}} của mình cho tổ chức, cá nhân khác, phải lập hợp đồng bằng {{văn bản}}.",
+   "bank_extra": [
+    "sử dụng",
+    "lời nói"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quyền đối với {{tên thương mại}} chỉ được chuyển nhượng cùng với việc chuyển nhượng toàn bộ {{cơ sở kinh doanh}} và hoạt động kinh doanh dưới tên đó.",
+   "bank_extra": [
+    "nhãn hiệu",
+    "văn bằng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hợp đồng chuyển nhượng quyền sở hữu công nghiệp có thể giao kết bằng lời nói.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 138: phải bằng văn bản."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm, hình thức và các hạn chế của chuyển nhượng quyền SHCN.",
+   "model": "Chủ sở hữu chuyển giao quyền sở hữu cho người khác; hợp đồng bằng văn bản (Điều 138); chỉ trong phạm vi bảo hộ, chỉ dẫn địa lý không chuyển nhượng, tên thương mại đi cùng cơ sở kinh doanh, nhãn hiệu không gây nhầm lẫn (Điều 139); hiệu lực khi đăng ký (Điều 148).",
+   "keywords": [
+    "quyền sở hữu",
+    "văn bản",
+    "chỉ dẫn địa lý",
+    "đăng ký"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,116 @@
+{
+ "id": "ho-kinh-doanh",
+ "subject": "thuong-mai-1",
+ "chapter": "v2",
+ "term": "Hộ kinh doanh",
+ "definition": "Hộ kinh doanh do một cá nhân hoặc các thành viên hộ gia đình đăng ký thành lập và chịu trách nhiệm bằng toàn bộ tài sản của mình đối với hoạt động kinh doanh của hộ. (…) Cá nhân, thành viên hộ gia đình là công dân Việt Nam có năng lực hành vi dân sự đầy đủ theo quy định của Bộ luật Dân sự có quyền thành lập hộ kinh doanh theo quy định tại Nghị định này, trừ các trường hợp sau đây: (…) Chủ hộ kinh doanh, thành viên hộ gia đình đăng ký hộ kinh doanh không được đồng thời là chủ doanh nghiệp tư nhân.",
+ "plain": "Hộ kinh doanh KHÔNG phải doanh nghiệp, KHÔNG có tư cách pháp nhân; chủ thể: MỘT CÁ NHÂN hoặc CÁC THÀNH VIÊN HỘ GIA ĐÌNH (công dân Việt Nam, năng lực hành vi dân sự đầy đủ); trách nhiệm VÔ HẠN bằng toàn bộ tài sản; các thành viên chịu trách nhiệm LIÊN ĐỚI (khoản 1 Điều 84). Mỗi người chỉ đăng ký MỘT hộ kinh doanh trên toàn quốc (khoản 1 Điều 83). Đăng ký tại Cơ quan đăng ký kinh doanh CẤP XÃ (Điều 85). So với doanh nghiệp tư nhân: giống ở trách nhiệm vô hạn, khác ở chỗ hộ kinh doanh có thể do nhiều thành viên hộ gia đình lập và không chịu Luật Doanh nghiệp điều chỉnh trực tiếp. Hộ sản xuất nông, lâm, ngư nghiệp, bán hàng rong, kinh doanh thời vụ… thu nhập thấp không phải đăng ký (khoản 3 Điều 82).",
+ "example": "Chị D mở tiệm tạp hóa, đăng ký hộ kinh doanh tại UBND phường: khi tiệm nợ nhà cung cấp, chị phải trả bằng toàn bộ tài sản của mình, kể cả tài sản không dùng để kinh doanh.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, 2 Điều 82; khoản 5 Điều 84 Nghị định 168/2025/NĐ-CP về đăng ký doanh nghiệp",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Nghi-dinh-168-2025-ND-CP-dang-ky-doanh-nghiep-623074.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "doanh-nghiep-tu-nhan",
+  "doanh-nghiep"
+ ],
+ "keywords": [
+  "một cá nhân hoặc thành viên hộ gia đình",
+  "toàn bộ tài sản",
+  "không có tư cách pháp nhân",
+  "không đồng thời là chủ DNTN"
+ ],
+ "note": "Nghị định 168/2025/NĐ-CP có hiệu lực từ 01/7/2025, thay thế Nghị định 01/2021/NĐ-CP; được sửa đổi bởi Nghị định 296/2026/NĐ-CP (hiệu lực 23/7/2026) — theo tóm tắt, không sửa Điều 82, 84; chưa đối chiếu toàn văn Nghị định 296. Nghị định hướng dẫn Luật Doanh nghiệp 59/2020/QH14.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai có thể đăng ký thành lập hộ kinh doanh?",
+   "options": [
+    "Một cá nhân hoặc các thành viên hộ gia đình là công dân Việt Nam có năng lực hành vi dân sự đầy đủ",
+    "Mọi tổ chức kinh tế",
+    "Người nước ngoài bất kỳ",
+    "Pháp nhân thương mại"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1, 2 Điều 82.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 82 Nghị định 168/2025/NĐ-CP về đăng ký doanh nghiệp"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chủ hộ kinh doanh có được đồng thời là chủ doanh nghiệp tư nhân không?",
+   "options": [
+    "Không",
+    "Có, không hạn chế",
+    "Có, nếu được UBND cấp xã đồng ý",
+    "Chỉ khi cùng ngành nghề"
+   ],
+   "answer": 0,
+   "explain": "Khoản 5 Điều 84.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 84 Nghị định 168/2025/NĐ-CP về đăng ký doanh nghiệp"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hộ kinh doanh",
+   "right": "Công ty TNHH",
+   "cases": [
+    {
+     "text": "Chịu trách nhiệm bằng toàn bộ tài sản của chủ hộ, thành viên",
+     "answer": "left"
+    },
+    {
+     "text": "Có tư cách pháp nhân, chịu trách nhiệm trong phạm vi vốn góp",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 82 Nghị định 168/2025/NĐ-CP; Luật Doanh nghiệp."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hộ kinh doanh do một {{cá nhân}} hoặc các thành viên {{hộ gia đình}} đăng ký thành lập.",
+   "bank_extra": [
+    "pháp nhân",
+    "công ty"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hộ kinh doanh chịu trách nhiệm bằng {{toàn bộ tài sản}} của mình đối với hoạt động kinh doanh của hộ.",
+   "bank_extra": [
+    "vốn điều lệ",
+    "phần vốn góp"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Một cá nhân được đăng ký nhiều hộ kinh doanh ở các tỉnh khác nhau.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 83: chỉ được đăng ký một hộ kinh doanh trong phạm vi toàn quốc."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu bản chất pháp lý của hộ kinh doanh.",
+   "model": "Do một cá nhân hoặc các thành viên hộ gia đình là công dân Việt Nam có năng lực hành vi dân sự đầy đủ đăng ký thành lập; chịu trách nhiệm bằng toàn bộ tài sản (khoản 1, 2 Điều 82); không có tư cách pháp nhân; chủ hộ không đồng thời là chủ DNTN (khoản 5 Điều 84).",
+   "keywords": [
+    "cá nhân",
+    "hộ gia đình",
+    "toàn bộ tài sản",
+    "doanh nghiệp tư nhân"
+   ]
+  }
+ ]
+}

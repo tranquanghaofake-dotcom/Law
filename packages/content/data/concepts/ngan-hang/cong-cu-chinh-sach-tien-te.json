@@ -1,0 +1,118 @@
+{
+ "id": "cong-cu-chinh-sach-tien-te",
+ "subject": "ngan-hang",
+ "chapter": "v2",
+ "term": "Công cụ thực hiện chính sách tiền tệ quốc gia",
+ "definition": "Thống đốc Ngân hàng Nhà nước quyết định việc sử dụng công cụ thực hiện chính sách tiền tệ quốc gia, bao gồm tái cấp vốn, lãi suất, tỷ giá hối đoái, dự trữ bắt buộc, nghiệp vụ thị trường mở và các công cụ, biện pháp khác theo quy định của Chính phủ.",
+ "plain": "Năm công cụ được liệt kê: TÁI CẤP VỐN (cho TCTD vay), LÃI SUẤT, TỶ GIÁ HỐI ĐOÁI, DỰ TRỮ BẮT BUỘC (TCTD phải gửi một tỷ lệ tiền gửi tại Ngân hàng Nhà nước), NGHIỆP VỤ THỊ TRƯỜNG MỞ (mua, bán giấy tờ có giá ngắn hạn). Muốn hút bớt tiền khỏi lưu thông: tăng lãi suất, tăng dự trữ bắt buộc, bán giấy tờ có giá; muốn bơm tiền: làm ngược lại. Người quyết định sử dụng: THỐNG ĐỐC.",
+ "example": "Khi lạm phát tăng nhanh, Ngân hàng Nhà nước phát hành tín phiếu (bán giấy tờ có giá trên thị trường mở) để rút bớt tiền đồng từ các ngân hàng thương mại.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 10 Luật Ngân hàng Nhà nước Việt Nam 2010 (VBHN 141/2026/VBHN-LQ-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-141-2026-VBHN-LQ-VPQH-Luat-Ngan-hang-Nha-nuoc-Viet-Nam-726674.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "chinh-sach-tien-te-quoc-gia",
+  "ngan-hang-nha-nuoc",
+  "giay-to-co-gia"
+ ],
+ "keywords": [
+  "tái cấp vốn",
+  "lãi suất",
+  "tỷ giá hối đoái",
+  "dự trữ bắt buộc",
+  "nghiệp vụ thị trường mở"
+ ],
+ "note": "Luật Ngân hàng Nhà nước Việt Nam 46/2010/QH12 có hiệu lực từ 01/01/2011; Luật 23/2026/QH16 sửa đổi nhiều điều (Điều 4, 27, 34, 42, 44, 45, 57, 58, 62…), có hiệu lực từ 01/12/2026 — điều được trích không bị sửa.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai quyết định việc sử dụng công cụ thực hiện chính sách tiền tệ quốc gia?",
+   "options": [
+    "Thống đốc Ngân hàng Nhà nước",
+    "Quốc hội",
+    "Bộ trưởng Bộ Tài chính",
+    "Chủ tịch nước"
+   ],
+   "answer": 0,
+   "explain": "Điều 10.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 10 Luật Ngân hàng Nhà nước Việt Nam 2010 (VBHN 141/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Công cụ nào được Điều 10 liệt kê là công cụ thực hiện chính sách tiền tệ quốc gia?",
+   "options": [
+    "Dự trữ bắt buộc",
+    "Thuế giá trị gia tăng",
+    "Chi đầu tư công",
+    "Hạn ngạch xuất khẩu"
+   ],
+   "answer": 0,
+   "explain": "Điều 10: tái cấp vốn, lãi suất, tỷ giá hối đoái, dự trữ bắt buộc, nghiệp vụ thị trường mở.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 10 Luật Ngân hàng Nhà nước Việt Nam 2010 (VBHN 141/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Công cụ chính sách tiền tệ",
+   "right": "Công cụ chính sách tài khóa (thuế, chi ngân sách)",
+   "cases": [
+    {
+     "text": "Nghiệp vụ thị trường mở",
+     "answer": "left"
+    },
+    {
+     "text": "Tăng thuế suất thuế thu nhập doanh nghiệp",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 10 Luật Ngân hàng Nhà nước."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công cụ thực hiện chính sách tiền tệ quốc gia bao gồm tái cấp vốn, {{lãi suất}}, tỷ giá hối đoái, dự trữ {{bắt buộc}}, nghiệp vụ thị trường mở.",
+   "bank_extra": [
+    "thuế suất",
+    "tự nguyện"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thống đốc Ngân hàng Nhà nước quyết định việc sử dụng công cụ, bao gồm tái cấp vốn, lãi suất, tỷ giá hối đoái, dự trữ bắt buộc, nghiệp vụ {{thị trường mở}} và các công cụ khác theo quy định của {{Chính phủ}}.",
+   "bank_extra": [
+    "chứng khoán phái sinh",
+    "Quốc hội"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thuế là một công cụ thực hiện chính sách tiền tệ quốc gia theo Điều 10.",
+   "answer": false,
+   "explain": "Sai. Điều 10 không liệt kê thuế; thuế là công cụ chính sách tài khóa."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Kể các công cụ thực hiện chính sách tiền tệ quốc gia và chủ thể quyết định.",
+   "model": "Thống đốc Ngân hàng Nhà nước quyết định sử dụng: tái cấp vốn, lãi suất, tỷ giá hối đoái, dự trữ bắt buộc, nghiệp vụ thị trường mở và công cụ khác theo quy định của Chính phủ (Điều 10).",
+   "keywords": [
+    "Thống đốc",
+    "tái cấp vốn",
+    "dự trữ bắt buộc",
+    "thị trường mở"
+   ]
+  }
+ ]
+}

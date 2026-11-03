@@ -1,0 +1,114 @@
+{
+ "id": "uy-thac-mua-ban",
+ "subject": "thuong-mai",
+ "chapter": "v2",
+ "term": "Ủy thác mua bán hàng hóa",
+ "definition": "Ủy thác mua bán hàng hóa là hoạt động thương mại, theo đó bên nhận ủy thác thực hiện việc mua bán hàng hóa với danh nghĩa của mình theo những điều kiện đã thỏa thuận với bên ủy thác và được nhận thù lao ủy thác.",
+ "plain": "Bên nhận ủy thác MUA BÁN VỚI DANH NGHĨA CỦA MÌNH (khác đại diện), theo điều kiện bên ủy thác đặt ra, hưởng thù lao. Bên nhận ủy thác phải là thương nhân kinh doanh mặt hàng phù hợp; bên ủy thác có thể không phải thương nhân. Hợp đồng ủy thác phải bằng văn bản hoặc hình thức tương đương (Điều 159). Thường gặp: ủy thác xuất nhập khẩu.",
+ "example": "Doanh nghiệp nhỏ không có kinh nghiệm nhập khẩu ủy thác cho công ty X nhập máy móc: công ty X đứng tên ký hợp đồng với nhà cung cấp nước ngoài, nhận phí ủy thác.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 155 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "dai-ly-thuong-mai",
+  "dai-dien-cho-thuong-nhan"
+ ],
+ "keywords": [
+  "danh nghĩa của mình",
+  "theo điều kiện đã thỏa thuận",
+  "thù lao ủy thác"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Bên nhận ủy thác mua bán hàng hóa thực hiện giao dịch với danh nghĩa của ai?",
+   "options": [
+    "Của chính mình",
+    "Của bên ủy thác",
+    "Của Nhà nước",
+    "Của khách hàng"
+   ],
+   "answer": 0,
+   "explain": "Điều 155.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 155 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hình thức hợp đồng ủy thác mua bán hàng hóa là gì?",
+   "options": [
+    "Văn bản hoặc hình thức khác có giá trị pháp lý tương đương",
+    "Lời nói",
+    "Không bắt buộc hình thức",
+    "Phải công chứng"
+   ],
+   "answer": 0,
+   "explain": "Điều 159.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 159 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Ủy thác mua bán",
+   "right": "Môi giới",
+   "cases": [
+    {
+     "text": "Bên trung gian đứng tên ký hợp đồng mua bán",
+     "answer": "left"
+    },
+    {
+     "text": "Bên trung gian chỉ giới thiệu, các bên tự ký",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 150, 155."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bên nhận ủy thác thực hiện việc mua bán hàng hóa với {{danh nghĩa của mình}} theo những điều kiện đã thỏa thuận với bên ủy thác và được nhận {{thù lao}} ủy thác.",
+   "bank_extra": [
+    "danh nghĩa bên ủy thác",
+    "tiền phạt"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ủy thác mua bán hàng hóa là hoạt động {{thương mại}}.",
+   "bank_extra": [
+    "dân sự thuần túy",
+    "hành chính"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Bên nhận ủy thác ký hợp đồng mua bán với danh nghĩa bên ủy thác.",
+   "answer": false,
+   "explain": "Sai. Điều 155: với danh nghĩa của mình."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm ủy thác mua bán hàng hóa và phân biệt với đại diện cho thương nhân.",
+   "model": "Ủy thác: bên nhận ủy thác mua bán hàng hóa với danh nghĩa của mình theo điều kiện thỏa thuận với bên ủy thác, hưởng thù lao (Điều 155); đại diện: nhân danh bên giao đại diện (Điều 141).",
+   "keywords": [
+    "danh nghĩa của mình",
+    "điều kiện",
+    "thù lao",
+    "đại diện"
+   ]
+  }
+ ]
+}

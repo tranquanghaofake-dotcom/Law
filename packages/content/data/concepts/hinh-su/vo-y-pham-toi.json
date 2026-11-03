@@ -1,0 +1,115 @@
+{
+ "id": "vo-y-pham-toi",
+ "subject": "hinh-su",
+ "chapter": "v8",
+ "term": "Vô ý phạm tội",
+ "definition": "Vô ý phạm tội là phạm tội trong những trường hợp sau đây: 1. Người phạm tội tuy thấy trước hành vi của mình có thể gây ra hậu quả nguy hại cho xã hội nhưng cho rằng hậu quả đó sẽ không xảy ra hoặc có thể ngăn ngừa được; 2. Người phạm tội không thấy trước hành vi của mình có thể gây ra hậu quả nguy hại cho xã hội, mặc dù phải thấy trước và có thể thấy trước hậu quả đó.",
+ "plain": "Hai loại: VÔ Ý VÌ QUÁ TỰ TIN (khoản 1): thấy trước nhưng CHO RẰNG hậu quả không xảy ra hoặc ngăn ngừa được. VÔ Ý DO CẨU THẢ (khoản 2): KHÔNG THẤY TRƯỚC, dù PHẢI và CÓ THỂ thấy trước. Phân biệt quá tự tin với cố ý gián tiếp: quá tự tin tin rằng hậu quả sẽ không xảy ra (có cơ sở), cố ý gián tiếp thì bỏ mặc. Phân biệt cẩu thả với SỰ KIỆN BẤT NGỜ (Điều 20): sự kiện bất ngờ là không thể thấy trước.",
+ "example": "Tài xế chạy quá tốc độ, nghĩ mình tay lái giỏi sẽ tránh được người đi đường, nhưng vẫn đâm chết người: vô ý vì quá tự tin.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 11 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "co-y-pham-toi",
+  "khai-niem-toi-pham"
+ ],
+ "keywords": [
+  "quá tự tin",
+  "cẩu thả",
+  "phải thấy trước và có thể thấy trước",
+  "sự kiện bất ngờ"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người phạm tội không thấy trước hậu quả, mặc dù phải thấy trước và có thể thấy trước. Đây là lỗi gì?",
+   "options": [
+    "Vô ý do cẩu thả",
+    "Vô ý vì quá tự tin",
+    "Cố ý gián tiếp",
+    "Sự kiện bất ngờ"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 11.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 11 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Điểm khác nhau giữa vô ý vì quá tự tin và cố ý gián tiếp là gì?",
+   "options": [
+    "Quá tự tin cho rằng hậu quả sẽ không xảy ra hoặc ngăn ngừa được; cố ý gián tiếp thì để mặc",
+    "Quá tự tin không thấy trước hậu quả",
+    "Cố ý gián tiếp mong muốn hậu quả",
+    "Không có điểm khác"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 11; khoản 2 Điều 10.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 10, Điều 11 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Vô ý vì quá tự tin",
+   "right": "Vô ý do cẩu thả",
+   "cases": [
+    {
+     "text": "Thấy trước nhưng cho rằng có thể ngăn ngừa được",
+     "answer": "left"
+    },
+    {
+     "text": "Không thấy trước dù phải và có thể thấy trước",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 11."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người phạm tội tuy thấy trước hành vi của mình có thể gây ra hậu quả nguy hại cho xã hội nhưng cho rằng hậu quả đó sẽ {{không xảy ra}} hoặc có thể {{ngăn ngừa}} được.",
+   "bank_extra": [
+    "chắc chắn xảy ra",
+    "khuếch đại"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Vô ý do cẩu thả: không thấy trước hậu quả, mặc dù {{phải}} thấy trước và có thể thấy trước hậu quả đó.",
+   "bank_extra": [
+    "không cần",
+    "không thể"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người không thể thấy trước hậu quả vẫn có lỗi vô ý do cẩu thả.",
+   "answer": false,
+   "explain": "Sai. Cẩu thả đòi hỏi \"phải thấy trước và có thể thấy trước\"; không thể thấy trước là sự kiện bất ngờ (Điều 20), không có lỗi."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Phân biệt hai loại lỗi vô ý.",
+   "model": "Vô ý vì quá tự tin: thấy trước hành vi có thể gây hậu quả nhưng cho rằng hậu quả không xảy ra hoặc ngăn ngừa được; vô ý do cẩu thả: không thấy trước dù phải thấy trước và có thể thấy trước (Điều 11).",
+   "keywords": [
+    "quá tự tin",
+    "ngăn ngừa",
+    "cẩu thả",
+    "phải thấy trước"
+   ]
+  }
+ ]
+}

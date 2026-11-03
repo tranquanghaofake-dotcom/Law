@@ -1,0 +1,139 @@
+{
+  "id": "thuong-mai-1-de-3",
+  "group": "thuong-mai",
+  "title": "Đề kiểm tra Thương mại 1 – Hợp tác xã, phục hồi và phá sản",
+  "subtitle": "10 câu theo đề cương HLU, vấn đề 11–13",
+  "updated": "2026-11-01",
+  "questions": [
+    {
+      "q": "Hợp tác xã phải có ít nhất bao nhiêu thành viên chính thức?",
+      "options": [
+        "02",
+        "03",
+        "05",
+        "07"
+      ],
+      "answer": 2,
+      "explain": "Khoản 7 Điều 4.",
+      "basis": "Điều 4 Luật Hợp tác xã (VBHN 101/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-101-VBHN-VPQH-2026-Luat-Hop-tac-xa-703396.aspx"
+    },
+    {
+      "q": "Vốn góp tối đa của một thành viên chính thức trong hợp tác xã?",
+      "options": [
+        "Không quá 20% vốn điều lệ",
+        "Không quá 30% vốn điều lệ",
+        "Không quá 40% vốn điều lệ",
+        "Không quá 50% vốn điều lệ"
+      ],
+      "answer": 1,
+      "explain": "Khoản 1 Điều 74 (40% áp dụng cho liên hiệp hợp tác xã).",
+      "basis": "Điều 74 Luật Hợp tác xã (VBHN 101/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-101-VBHN-VPQH-2026-Luat-Hop-tac-xa-703396.aspx"
+    },
+    {
+      "q": "Tại Đại hội thành viên toàn thể của hợp tác xã, quyền biểu quyết của thành viên chính thức được xác định thế nào?",
+      "options": [
+        "Theo tỷ lệ vốn góp",
+        "Mỗi thành viên một phiếu có giá trị ngang nhau",
+        "Theo chức vụ",
+        "Theo thâm niên"
+      ],
+      "answer": 1,
+      "explain": "Khoản 4 Điều 61.",
+      "basis": "Điều 61 Luật Hợp tác xã (VBHN 101/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-101-VBHN-VPQH-2026-Luat-Hop-tac-xa-703396.aspx"
+    },
+    {
+      "q": "Thu nhập của hợp tác xã được phân phối cho thành viên chính thức chủ yếu theo tiêu chí nào?",
+      "options": [
+        "Tỷ lệ vốn góp",
+        "Mức độ sử dụng sản phẩm, dịch vụ hoặc đóng góp sức lao động",
+        "Chia đều",
+        "Do Giám đốc quyết định"
+      ],
+      "answer": 1,
+      "explain": "Khoản 3 Điều 8.",
+      "basis": "Điều 8 Luật Hợp tác xã (VBHN 101/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-101-VBHN-VPQH-2026-Luat-Hop-tac-xa-703396.aspx"
+    },
+    {
+      "q": "Doanh nghiệp mất khả năng thanh toán khi không thực hiện nghĩa vụ thanh toán khoản nợ sau thời hạn bao lâu kể từ ngày đến hạn?",
+      "options": [
+        "03 tháng",
+        "06 tháng",
+        "09 tháng",
+        "12 tháng"
+      ],
+      "answer": 1,
+      "explain": "Khoản 2 Điều 5 (Luật Phá sản 2014 trước đây dùng mốc 03 tháng).",
+      "basis": "Điều 5 Luật Phục hồi, phá sản 2025 (142/2025/QH15)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-Phuc-hoi-pha-san-2025-so-142-2025-QH15-675210.aspx"
+    },
+    {
+      "q": "Ai KHÔNG có quyền nộp đơn yêu cầu áp dụng thủ tục phục hồi?",
+      "options": [
+        "Người đại diện theo pháp luật của doanh nghiệp",
+        "Chủ doanh nghiệp tư nhân",
+        "Chủ nợ không có bảo đảm",
+        "Đại hội thành viên của hợp tác xã"
+      ],
+      "answer": 2,
+      "explain": "Khoản 1 Điều 24: chủ nợ chỉ có quyền yêu cầu thủ tục phá sản (Điều 38).",
+      "basis": "Điều 24 Luật Phục hồi, phá sản 2025 (142/2025/QH15)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-Phuc-hoi-pha-san-2025-so-142-2025-QH15-675210.aspx"
+    },
+    {
+      "q": "Người lao động có quyền nộp đơn yêu cầu mở thủ tục phá sản khi nào?",
+      "options": [
+        "Khi doanh nghiệp chậm lương 1 tháng",
+        "Khi hết thời hạn 06 tháng kể từ ngày phải trả lương, các khoản nợ đến hạn mà doanh nghiệp không thanh toán",
+        "Bất cứ lúc nào",
+        "Chỉ khi được công đoàn cho phép"
+      ],
+      "answer": 1,
+      "explain": "Điểm b khoản 1 Điều 38.",
+      "basis": "Điều 38 Luật Phục hồi, phá sản 2025 (142/2025/QH15)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-Phuc-hoi-pha-san-2025-so-142-2025-QH15-675210.aspx"
+    },
+    {
+      "q": "Nghị quyết của Hội nghị chủ nợ được thông qua khi nào?",
+      "options": [
+        "Quá nửa số chủ nợ có mặt tán thành",
+        "Số chủ nợ đại diện cho từ 65% tổng số nợ không có bảo đảm trở lên tán thành",
+        "Toàn bộ chủ nợ tán thành",
+        "Quản tài viên phê duyệt"
+      ],
+      "answer": 1,
+      "explain": "Khoản 5 Điều 61.",
+      "basis": "Điều 61 Luật Phục hồi, phá sản 2025 (142/2025/QH15)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-Phuc-hoi-pha-san-2025-so-142-2025-QH15-675210.aspx"
+    },
+    {
+      "q": "Khoản nào được thanh toán trước khi phân chia tài sản doanh nghiệp bị tuyên bố phá sản?",
+      "options": [
+        "Nghĩa vụ tài chính đối với Nhà nước",
+        "Khoản nợ không có bảo đảm",
+        "Khoản nợ lương",
+        "Phần vốn góp của chủ sở hữu"
+      ],
+      "answer": 2,
+      "explain": "Khoản 1 Điều 46: chi phí phá sản, rồi nợ lương (điểm b) trước nghĩa vụ tài chính với Nhà nước (điểm e).",
+      "basis": "Điều 46 Luật Phục hồi, phá sản 2025 (142/2025/QH15)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-Phuc-hoi-pha-san-2025-so-142-2025-QH15-675210.aspx"
+    },
+    {
+      "q": "Tòa án nào có thẩm quyền giải quyết vụ việc phục hồi, phá sản?",
+      "options": [
+        "Tòa án nhân dân tối cao",
+        "Tòa án nhân dân khu vực",
+        "Tòa án quân sự",
+        "Tòa án nhân dân cấp cao"
+      ],
+      "answer": 1,
+      "explain": "Khoản 1 Điều 6.",
+      "basis": "Điều 6 Luật Phục hồi, phá sản 2025 (142/2025/QH15)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-Phuc-hoi-pha-san-2025-so-142-2025-QH15-675210.aspx"
+    }
+  ]
+}

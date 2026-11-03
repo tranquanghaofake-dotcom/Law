@@ -1,0 +1,110 @@
+{
+  "id": "dau-tu",
+  "title": "Luật Đầu tư",
+  "short": "Đầu tư",
+  "chapters": [
+    {
+      "id": "v1",
+      "title": "Vấn đề 1. Những vấn đề chung về pháp luật đầu tư",
+      "lessons": [
+        {
+          "id": "ldt1",
+          "title": "Những vấn đề chung về pháp luật đầu tư",
+          "concepts": [
+            "ldt-dau-tu-kinh-doanh",
+            "ldt-nha-dau-tu",
+            "ldt-nha-dau-tu-nuoc-ngoai",
+            "ldt-dieu-kien-dau-tu-kinh-doanh"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v2",
+      "title": "Vấn đề 2. Bảo đảm, ưu đãi và hỗ trợ đầu tư",
+      "lessons": [
+        {
+          "id": "ldt2",
+          "title": "Bảo đảm, ưu đãi và hỗ trợ đầu tư",
+          "concepts": [
+            "ldt-bao-dam-quyen-so-huu-tai-san",
+            "ldt-bao-dam-khi-thay-doi-phap-luat",
+            "ldt-uu-dai-dau-tu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v3",
+      "title": "Vấn đề 3. Thủ tục đầu tư và triển khai dự án đầu tư",
+      "lessons": [
+        {
+          "id": "ldt3",
+          "title": "Thủ tục đầu tư và triển khai dự án đầu tư",
+          "concepts": [
+            "ldt-du-an-dau-tu",
+            "ldt-chap-thuan-chu-truong-dau-tu",
+            "ldt-giay-chung-nhan-dang-ky-dau-tu",
+            "ldt-chuyen-nhuong-du-an"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v4",
+      "title": "Vấn đề 4. Đầu tư vào tổ chức kinh tế",
+      "lessons": [
+        {
+          "id": "ldt4",
+          "title": "Đầu tư vào tổ chức kinh tế",
+          "concepts": [
+            "ldt-to-chuc-kinh-te",
+            "ldt-to-chuc-kinh-te-co-von-dtnn",
+            "ldt-hinh-thuc-dau-tu",
+            "ldt-von-dau-tu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v5",
+      "title": "Vấn đề 5. Đầu tư theo hợp đồng",
+      "lessons": [
+        {
+          "id": "ldt5",
+          "title": "Đầu tư theo hợp đồng",
+          "concepts": [
+            "ldt-hop-dong-bcc"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v6",
+      "title": "Vấn đề 6. Đầu tư vào khu công nghiệp, khu kinh tế",
+      "lessons": [
+        {
+          "id": "ldt6",
+          "title": "Đầu tư vào khu công nghiệp, khu kinh tế",
+          "concepts": [
+            "ldt-khu-kinh-te",
+            "ldt-khu-cong-nghiep"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v7",
+      "title": "Vấn đề 7. Đầu tư ra nước ngoài",
+      "lessons": [
+        {
+          "id": "ldt7",
+          "title": "Đầu tư ra nước ngoài",
+          "concepts": [
+            "ldt-hoat-dong-dau-tu-ra-nuoc-ngoai"
+          ]
+        }
+      ]
+    }
+  ]
+}

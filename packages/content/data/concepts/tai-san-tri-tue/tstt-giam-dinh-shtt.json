@@ -1,0 +1,116 @@
+{
+ "id": "tstt-giam-dinh-shtt",
+ "subject": "tai-san-tri-tue",
+ "chapter": "v5",
+ "term": "Giám định về sở hữu trí tuệ",
+ "definition": "Giám định về sở hữu trí tuệ là việc tổ chức, cá nhân quy định tại khoản 2 và khoản 3 Điều này sử dụng kiến thức, nghiệp vụ chuyên môn để đánh giá, kết luận về những vấn đề có liên quan đến quyền sở hữu trí tuệ.",
+ "plain": "Công cụ chứng cứ trong tư vấn tranh chấp: kết luận giám định (ví dụ của Viện Khoa học Sở hữu trí tuệ) đánh giá yếu tố xâm phạm, kèm theo thư khuyến cáo, đơn yêu cầu xử lý hành chính hoặc đơn khởi kiện. Ba lĩnh vực (khoản 1a): quyền tác giả, quyền liên quan; quyền SHCN; giống cây trồng. Tổ chức giám định: doanh nghiệp, hợp tác xã, đơn vị sự nghiệp công lập, tổ chức hành nghề luật sư có ít nhất một giám định viên (khoản 2); tổ chức hành nghề luật sư nước ngoài không được kinh doanh dịch vụ này (khoản 2a). Kết luận giám định là nguồn chứng cứ, không thay thế quyết định của cơ quan có thẩm quyền. Giám định tư pháp về SHTT theo pháp luật giám định tư pháp.",
+ "example": "Trước khi gửi thư khuyến cáo cho cửa hàng bán hàng \"Hongda\", Honda yêu cầu Viện Khoa học SHTT giám định và đính kèm bản sao kết luận: dấu hiệu \"Hongda\" là yếu tố xâm phạm quyền đối với nhãn hiệu \"Honda\".",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 201 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tstt-tu-bao-ve",
+  "tstt-xam-pham-nhan-hieu",
+  "tstt-xu-phat-hanh-chinh"
+ ],
+ "keywords": [
+  "kiến thức, nghiệp vụ chuyên môn",
+  "đánh giá, kết luận",
+  "giám định viên",
+  "chứng cứ"
+ ],
+ "note": "Luật Sở hữu trí tuệ 50/2005/QH11 (hiệu lực 01/7/2006) đã được sửa đổi bởi Luật 36/2009/QH12, 42/2019/QH14, 07/2022/QH15, 93/2025/QH15 và 131/2025/QH15 (hiệu lực 01/4/2026) — văn bản hợp nhất 67/VBHN-VPQH 2026; ghi chép lớp học còn dẫn Nghị định 105/2006/NĐ-CP và Nghị định 99/2013/NĐ-CP, cần tự kiểm tra hiệu lực của các nghị định này trước khi dùng.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Giám định về sở hữu trí tuệ là gì?",
+   "options": [
+    "Tổ chức, cá nhân đủ điều kiện dùng kiến thức, nghiệp vụ chuyên môn để đánh giá, kết luận về vấn đề liên quan đến quyền SHTT",
+    "Quyết định xử phạt của thanh tra",
+    "Bản án của tòa án",
+    "Việc cấp văn bằng bảo hộ"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 201.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 201 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tổ chức nào KHÔNG được kinh doanh dịch vụ giám định SHTT?",
+   "options": [
+    "Tổ chức hành nghề luật sư nước ngoài hành nghề tại Việt Nam",
+    "Doanh nghiệp có giám định viên SHTT",
+    "Đơn vị sự nghiệp công lập có giám định viên",
+    "Tổ chức hành nghề luật sư Việt Nam có giám định viên"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2a Điều 201.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2a Điều 201 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Giá trị của kết luận giám định",
+   "right": "Không phải giá trị của kết luận giám định",
+   "cases": [
+    {
+     "text": "Nguồn chứng cứ để đánh giá yếu tố xâm phạm",
+     "answer": "left"
+    },
+    {
+     "text": "Quyết định có hiệu lực bắt buộc bên xâm phạm phải bồi thường",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 201; kết luận giám định không thay thế quyết định của cơ quan có thẩm quyền."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Giám định về sở hữu trí tuệ là việc sử dụng kiến thức, {{nghiệp vụ chuyên môn}} để đánh giá, {{kết luận}} về những vấn đề có liên quan đến quyền SHTT.",
+   "bank_extra": [
+    "quyền lực nhà nước",
+    "xử phạt"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Giám định về sở hữu trí tuệ bao gồm giám định về {{quyền tác giả}} và quyền liên quan, giám định về quyền {{sở hữu công nghiệp}} và giám định về quyền đối với giống cây trồng.",
+   "bank_extra": [
+    "hợp đồng",
+    "cạnh tranh"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Kết luận giám định SHTT có giá trị như bản án buộc bên xâm phạm bồi thường.",
+   "answer": false,
+   "explain": "Sai. Kết luận giám định là đánh giá chuyên môn, nguồn chứng cứ; bồi thường do tòa án quyết định (Điều 205)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm và vai trò của giám định SHTT trong tư vấn tranh chấp.",
+   "model": "Tổ chức, cá nhân đủ điều kiện dùng kiến thức chuyên môn đánh giá, kết luận vấn đề liên quan quyền SHTT (khoản 1 Điều 201); dùng làm chứng cứ kèm thư khuyến cáo, đơn yêu cầu xử lý, đơn khởi kiện; không thay thế quyết định cơ quan có thẩm quyền.",
+   "keywords": [
+    "chuyên môn",
+    "kết luận",
+    "chứng cứ"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,114 @@
+{
+ "id": "giay-phep-lao-dong",
+ "subject": "lao-dong-2",
+ "chapter": "v4",
+ "term": "Thời hạn và hết hiệu lực của giấy phép lao động",
+ "definition": "Thời hạn của giấy phép lao động tối đa là 02 năm, trường hợp gia hạn thì chỉ được gia hạn một lần với thời hạn tối đa là 02 năm.",
+ "plain": "Thời hạn tối đa 02 NĂM, chỉ gia hạn MỘT LẦN, tối đa 02 năm nữa. Giấy phép hết hiệu lực khi (Điều 156): hết thời hạn; chấm dứt HĐLĐ; nội dung HĐLĐ không đúng giấy phép; làm việc không đúng nội dung giấy phép; hợp đồng trong các lĩnh vực là cơ sở cấp giấy phép hết hạn hoặc chấm dứt; có văn bản thông báo của phía nước ngoài thôi cử lao động; doanh nghiệp, tổ chức sử dụng lao động chấm dứt hoạt động; giấy phép bị thu hồi Cấp, cấp lại, gia hạn, thu hồi theo quy định của Chính phủ (Điều 157).",
+ "example": "Giấy phép lao động của anh R cấp năm 2025 thời hạn 02 năm, gia hạn một lần thêm 02 năm đến 2029: sau đó muốn tiếp tục làm việc thì phải đề nghị cấp giấy phép mới, không được gia hạn lần thứ hai.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 155 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-18-VBHN-VPQH-2026-Bo-luat-lao-dong-695336.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "lao-dong-nuoc-ngoai"
+ ],
+ "keywords": [
+  "tối đa 02 năm",
+  "gia hạn một lần",
+  "tối đa 02 năm khi gia hạn",
+  "hết hiệu lực theo Điều 156"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thời hạn tối đa của giấy phép lao động là bao lâu?",
+   "options": [
+    "02 năm",
+    "03 năm",
+    "05 năm",
+    "01 năm"
+   ],
+   "answer": 0,
+   "explain": "Điều 155.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 155 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Giấy phép lao động được gia hạn mấy lần?",
+   "options": [
+    "Một lần, tối đa 02 năm",
+    "Không giới hạn số lần",
+    "Hai lần",
+    "Không được gia hạn"
+   ],
+   "answer": 0,
+   "explain": "Điều 155.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 155 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Lần cấp đầu",
+   "right": "Lần gia hạn",
+   "cases": [
+    {
+     "text": "Tối đa 02 năm",
+     "answer": "left"
+    },
+    {
+     "text": "Chỉ một lần, tối đa 02 năm",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 155."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thời hạn của giấy phép lao động tối đa là {{02}} năm, trường hợp gia hạn thì chỉ được gia hạn {{một}} lần.",
+   "bank_extra": [
+    "05",
+    "hai"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Gia hạn giấy phép lao động với thời hạn tối đa là {{02 năm}}.",
+   "bank_extra": [
+    "05 năm",
+    "01 năm"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Giấy phép lao động có thể gia hạn nhiều lần, mỗi lần 02 năm.",
+   "answer": false,
+   "explain": "Sai. Điều 155: chỉ được gia hạn một lần."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu quy định về thời hạn của giấy phép lao động.",
+   "model": "Tối đa 02 năm; trường hợp gia hạn thì chỉ một lần với thời hạn tối đa 02 năm (Điều 155); hết hiệu lực trong các trường hợp tại Điều 156.",
+   "keywords": [
+    "02 năm",
+    "một lần",
+    "gia hạn",
+    "Điều 156"
+   ]
+  }
+ ]
+}

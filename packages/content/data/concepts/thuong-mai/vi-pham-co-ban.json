@@ -1,0 +1,114 @@
+{
+ "id": "vi-pham-co-ban",
+ "subject": "thuong-mai",
+ "chapter": "v6",
+ "term": "Vi phạm cơ bản và chế tài hủy bỏ hợp đồng",
+ "definition": "Vi phạm cơ bản là sự vi phạm hợp đồng của một bên gây thiệt hại cho bên kia đến mức làm cho bên kia không đạt được mục đích của việc giao kết hợp đồng. (…) Trừ các trường hợp miễn trách nhiệm quy định tại Điều 294 của Luật này, chế tài hủy bỏ hợp đồng được áp dụng trong các trường hợp sau đây: a) Xảy ra hành vi vi phạm mà các bên đã thỏa thuận là điều kiện để hủy bỏ hợp đồng; b) Một bên vi phạm cơ bản nghĩa vụ hợp đồng.",
+ "plain": "VI PHẠM CƠ BẢN: thiệt hại đến mức bên kia KHÔNG ĐẠT ĐƯỢC MỤC ĐÍCH giao kết hợp đồng. Là điều kiện áp dụng ba chế tài mạnh: TẠM NGỪNG (Điều 308), ĐÌNH CHỈ (Điều 310), HỦY BỎ (Điều 312) — hoặc khi vi phạm là điều kiện đã thỏa thuận. Hủy bỏ: TOÀN BỘ hoặc MỘT PHẦN. Hậu quả hủy bỏ (Điều 314): không phải thực hiện nghĩa vụ, hoàn trả những gì đã nhận, vẫn có quyền đòi bồi thường.",
+ "example": "Đặt may 1.000 bộ đồng phục cho lễ khai giảng 5/9; bên may giao ngày 20/9: bên đặt không đạt được mục đích hợp đồng → vi phạm cơ bản, có thể hủy bỏ hợp đồng.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 13 Điều 3, khoản 4 Điều 312 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "che-tai-thuong-mai",
+  "boi-thuong-thiet-hai-ltm"
+ ],
+ "keywords": [
+  "không đạt được mục đích giao kết",
+  "điều kiện tạm ngừng, đình chỉ, hủy bỏ",
+  "hủy toàn bộ hoặc một phần"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Vi phạm cơ bản là gì?",
+   "options": [
+    "Vi phạm gây thiệt hại đến mức bên kia không đạt được mục đích của việc giao kết hợp đồng",
+    "Mọi vi phạm về thời hạn",
+    "Vi phạm lần đầu",
+    "Vi phạm có giá trị trên 8%"
+   ],
+   "answer": 0,
+   "explain": "Khoản 13 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 13 Điều 3 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chế tài hủy bỏ hợp đồng được áp dụng khi nào (trừ trường hợp miễn trách nhiệm)?",
+   "options": [
+    "Xảy ra vi phạm là điều kiện hủy bỏ đã thỏa thuận hoặc một bên vi phạm cơ bản",
+    "Bất kỳ vi phạm nào",
+    "Chỉ khi Tòa án cho phép",
+    "Khi một bên muốn"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 312.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 312 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Vi phạm cơ bản",
+   "right": "Không phải vi phạm cơ bản",
+   "cases": [
+    {
+     "text": "Giao hàng sau sự kiện mà hàng được mua để phục vụ",
+     "answer": "left"
+    },
+    {
+     "text": "Giao chậm 1 ngày, không ảnh hưởng mục đích sử dụng",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 13 Điều 3."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Vi phạm cơ bản là sự vi phạm hợp đồng gây thiệt hại cho bên kia đến mức làm cho bên kia không đạt được {{mục đích}} của việc {{giao kết}} hợp đồng.",
+   "bank_extra": [
+    "lợi nhuận",
+    "thanh toán"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hủy bỏ hợp đồng bao gồm hủy bỏ toàn bộ hợp đồng và hủy bỏ {{một phần}} hợp đồng.",
+   "bank_extra": [
+    "tạm thời",
+    "có điều kiện"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Bên bị vi phạm có quyền hủy bỏ hợp đồng với mọi vi phạm nhỏ.",
+   "answer": false,
+   "explain": "Sai. Chỉ khi vi phạm là điều kiện đã thỏa thuận hoặc vi phạm cơ bản (khoản 4 Điều 312)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm vi phạm cơ bản và điều kiện áp dụng chế tài hủy bỏ hợp đồng.",
+   "model": "Vi phạm cơ bản là vi phạm gây thiệt hại khiến bên kia không đạt mục đích giao kết hợp đồng (khoản 13 Điều 3); hủy bỏ hợp đồng (toàn bộ hoặc một phần) được áp dụng khi xảy ra vi phạm là điều kiện đã thỏa thuận hoặc vi phạm cơ bản, trừ trường hợp miễn trách nhiệm (Điều 312).",
+   "keywords": [
+    "mục đích giao kết",
+    "hủy bỏ",
+    "điều kiện thỏa thuận",
+    "một phần"
+   ]
+  }
+ ]
+}

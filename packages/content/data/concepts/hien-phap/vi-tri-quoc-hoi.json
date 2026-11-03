@@ -119,6 +119,20 @@
     "lập hiến, lập pháp",
     "giám sát tối cao"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Vị trí, tính chất của Quốc hội chỉ là \"cơ quan quyền lực nhà nước cao nhất\".",
+   "answer": false,
+   "explain": "Sai. Điều 69 Hiến pháp 2013: Quốc hội là cơ quan đại biểu cao nhất của Nhân dân và cơ quan quyền lực nhà nước cao nhất. (Nhận định trong bộ câu hỏi ôn tập Luật Hiến pháp, Drive HLU.)"
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chỉ có Quốc hội mới có quyền giám sát tối cao.",
+   "answer": true,
+   "explain": "Đúng. Điều 69 và khoản 2 Điều 70 Hiến pháp 2013: Quốc hội thực hiện quyền giám sát tối cao. (Nhận định trong bộ câu hỏi ôn tập Luật Hiến pháp, Drive HLU.)"
   }
  ]
 }

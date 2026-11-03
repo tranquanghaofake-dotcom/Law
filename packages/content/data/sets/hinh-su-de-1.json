@@ -1,0 +1,139 @@
+{
+  "id": "hinh-su-de-1",
+  "group": "hinh-su",
+  "title": "Đề kiểm tra Hình sự 1 – Hiệu lực, tội phạm, lỗi, giai đoạn",
+  "subtitle": "10 câu theo đề cương HLU, vấn đề 1–9",
+  "updated": "2026-11-01",
+  "questions": [
+    {
+      "q": "Công ty TNHH X (pháp nhân thương mại) có thể bị truy cứu TNHS về tội nào?",
+      "options": [
+        "Chỉ các tội được quy định tại Điều 76 Bộ luật Hình sự",
+        "Mọi tội trong Bộ luật Hình sự",
+        "Không tội nào",
+        "Chỉ tội xâm phạm an ninh quốc gia"
+      ],
+      "answer": 0,
+      "explain": "Khoản 2 Điều 2.",
+      "basis": "Điều 2 BLHS (VBHN 135/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+    },
+    {
+      "q": "Một người Hàn Quốc trộm cắp tài sản tại Đà Nẵng. Áp dụng luật nào?",
+      "options": [
+        "Bộ luật Hình sự Việt Nam",
+        "Luật hình sự Hàn Quốc",
+        "Do người đó lựa chọn",
+        "Không xử lý được"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 5: mọi hành vi phạm tội trên lãnh thổ Việt Nam.",
+      "basis": "Điều 5 BLHS (VBHN 135/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+    },
+    {
+      "q": "Luật mới có hiệu lực quy định hình phạt nặng hơn cho tội A. Hành vi phạm tội A thực hiện trước ngày đó bị xử theo luật nào?",
+      "options": [
+        "Luật cũ, vì luật mới bất lợi không có hiệu lực hồi tố",
+        "Luật mới",
+        "Luật nào nặng hơn",
+        "Do Tòa án tự chọn"
+      ],
+      "answer": 0,
+      "explain": "Khoản 2 Điều 7.",
+      "basis": "Điều 7 BLHS (VBHN 135/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+    },
+    {
+      "q": "Mức cao nhất của khung hình phạt là 07 năm tù thì tội đó thuộc loại nào?",
+      "options": [
+        "Tội phạm ít nghiêm trọng",
+        "Tội phạm nghiêm trọng",
+        "Tội phạm rất nghiêm trọng",
+        "Tội phạm đặc biệt nghiêm trọng"
+      ],
+      "answer": 1,
+      "explain": "Điểm b khoản 1 Điều 9: từ trên 03 năm đến 07 năm tù.",
+      "basis": "Điều 9 BLHS (VBHN 135/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+    },
+    {
+      "q": "Em B 15 tuổi phạm tội trộm cắp tài sản thuộc khoản 1 Điều 173 (tối đa 03 năm tù). B có phải chịu TNHS không?",
+      "options": [
+        "Không, vì đây là tội ít nghiêm trọng",
+        "Có, vì Điều 173 có trong danh sách khoản 2 Điều 12",
+        "Có, mọi tội đều phải chịu",
+        "Chỉ khi tái phạm"
+      ],
+      "answer": 0,
+      "explain": "Người từ đủ 14 đến dưới 16 chỉ chịu TNHS về tội rất nghiêm trọng, đặc biệt nghiêm trọng tại các điều liệt kê; khoản 1 Điều 173 là tội ít nghiêm trọng.",
+      "basis": "Điều 12 BLHS (VBHN 135/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+    },
+    {
+      "q": "Người say rượu đến mức mất khả năng điều khiển hành vi rồi gây tai nạn chết người thì sao?",
+      "options": [
+        "Vẫn phải chịu TNHS",
+        "Không phải chịu TNHS",
+        "Được miễn hình phạt",
+        "Chỉ bồi thường dân sự"
+      ],
+      "answer": 0,
+      "explain": "Điều 13.",
+      "basis": "Điều 13 BLHS (VBHN 135/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+    },
+    {
+      "q": "A biết đốt rơm cạnh kho xăng có thể gây cháy nổ nhưng tin rằng gió nhẹ nên sẽ không sao; kho bị cháy. Lỗi của A là gì?",
+      "options": [
+        "Cố ý trực tiếp",
+        "Cố ý gián tiếp",
+        "Vô ý vì quá tự tin",
+        "Vô ý do cẩu thả"
+      ],
+      "answer": 2,
+      "explain": "Khoản 1 Điều 11: thấy trước nhưng cho rằng hậu quả sẽ không xảy ra.",
+      "basis": "Điều 11 BLHS (VBHN 135/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+    },
+    {
+      "q": "A đang dùng chìa khóa giả mở cửa nhà B để trộm thì B về, A bỏ chạy. A ở giai đoạn nào?",
+      "options": [
+        "Chuẩn bị phạm tội",
+        "Phạm tội chưa đạt",
+        "Tự ý nửa chừng chấm dứt",
+        "Tội phạm hoàn thành"
+      ],
+      "answer": 1,
+      "explain": "Đã bắt đầu thực hiện, không đến cùng vì nguyên nhân ngoài ý muốn (Điều 15).",
+      "basis": "Điều 15 BLHS (VBHN 135/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+    },
+    {
+      "q": "A tự nguyện dừng việc đầu độc B dù không ai ngăn cản, nhưng hành vi đã làm B bị thương. A chịu TNHS thế nào?",
+      "options": [
+        "Được miễn TNHS về tội giết người nhưng chịu TNHS về tội đã cấu thành (như cố ý gây thương tích)",
+        "Miễn toàn bộ TNHS",
+        "Chịu TNHS tội giết người chưa đạt",
+        "Chịu TNHS tội giết người hoàn thành"
+      ],
+      "answer": 0,
+      "explain": "Điều 16.",
+      "basis": "Điều 16 BLHS (VBHN 135/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+    },
+    {
+      "q": "Người từ đủ 16 tuổi chuẩn bị phạm tội trộm cắp tài sản (Điều 173) có phải chịu TNHS không?",
+      "options": [
+        "Không, vì Điều 173 không có trong danh sách khoản 2 Điều 14",
+        "Có, mọi hành vi chuẩn bị đều bị xử lý",
+        "Có nếu giá trị tài sản lớn",
+        "Chỉ khi có đồng phạm"
+      ],
+      "answer": 0,
+      "explain": "Khoản 2 Điều 14 không liệt kê Điều 173.",
+      "basis": "Điều 14 BLHS (VBHN 135/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+    }
+  ]
+}

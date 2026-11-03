@@ -1,0 +1,117 @@
+{
+ "id": "cho-vay",
+ "subject": "ngan-hang",
+ "chapter": "v5",
+ "term": "Cho vay",
+ "definition": "Cho vay là hình thức cấp tín dụng thông qua việc bên cho vay giao hoặc cam kết giao cho khách hàng một khoản tiền để sử dụng vào mục đích xác định, trong một thời gian nhất định, theo nguyên tắc có hoàn trả đầy đủ tiền gốc, lãi theo thỏa thuận cho bên cho vay.",
+ "plain": "Dấu hiệu: (1) giao hoặc CAM KẾT GIAO một khoản tiền; (2) MỤC ĐÍCH XÁC ĐỊNH — khác vay dân sự thông thường; (3) THỜI GIAN NHẤT ĐỊNH; (4) HOÀN TRẢ ĐẦY ĐỦ GỐC, LÃI. Khách hàng dùng vốn sai mục đích là vi phạm thỏa thuận cho vay. So sánh hợp đồng vay tài sản trong Bộ luật Dân sự: cho vay của TCTD là hợp đồng chuyên biệt, chịu thêm quy định về mục đích, an toàn hoạt động.",
+ "example": "Ngân hàng cho anh E vay 1 tỷ đồng trong 5 năm để mua nhà; nếu anh E dùng tiền để đầu tư tiền mã hóa thì vi phạm mục đích vay đã thỏa thuận.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 7 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-143-2026-VBHN-LQ-VPQH-Luat-Cac-to-chuc-tin-dung-729869.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "cap-tin-dung",
+  "chiet-khau",
+  "bao-thanh-toan"
+ ],
+ "keywords": [
+  "giao hoặc cam kết giao",
+  "mục đích xác định",
+  "thời gian nhất định",
+  "hoàn trả đầy đủ tiền gốc, lãi"
+ ],
+ "note": "Luật Các tổ chức tín dụng 32/2024/QH15 có hiệu lực từ 01/7/2024, thay thế Luật 47/2010/QH12 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 96/2025/QH15 (hiệu lực 15/10/2025) và Luật 23/2026/QH16 (hiệu lực 01/12/2026, chỉ bổ sung một điểm tại Điều 49) — các khoản Điều 4 được trích không bị sửa.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Dấu hiệu nào thuộc định nghĩa cho vay tại khoản 7 Điều 4?",
+   "options": [
+    "Khoản tiền được sử dụng vào mục đích xác định",
+    "Bên vay không phải hoàn trả gốc",
+    "Ngân hàng mua lại khoản phải thu",
+    "Ngân hàng cam kết trả thay nghĩa vụ"
+   ],
+   "answer": 0,
+   "explain": "Khoản 7 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 7 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Cho vay là hình thức gì?",
+   "options": [
+    "Hình thức cấp tín dụng",
+    "Hình thức huy động vốn",
+    "Dịch vụ thanh toán",
+    "Hoạt động ngoại hối"
+   ],
+   "answer": 0,
+   "explain": "Khoản 7 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 7 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Cho vay",
+   "right": "Bao thanh toán",
+   "cases": [
+    {
+     "text": "Ngân hàng giao tiền cho khách để dùng vào mục đích xác định",
+     "answer": "left"
+    },
+    {
+     "text": "Ngân hàng mua lại khoản phải thu của bên bán",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1, 7 Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Cho vay là việc bên cho vay giao hoặc cam kết giao cho khách hàng một khoản tiền để sử dụng vào mục đích {{xác định}}, trong một {{thời gian}} nhất định.",
+   "bank_extra": [
+    "tùy ý",
+    "vô hạn"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Cho vay theo nguyên tắc có hoàn trả đầy đủ tiền {{gốc}}, {{lãi}} theo thỏa thuận cho bên cho vay.",
+   "bank_extra": [
+    "phạt",
+    "cổ tức"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo Luật Các tổ chức tín dụng, khách hàng vay vốn được tự do sử dụng tiền vay vào bất kỳ việc gì.",
+   "answer": false,
+   "explain": "Sai. Khoản 7 Điều 4: khoản tiền để sử dụng vào mục đích xác định."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm cho vay của tổ chức tín dụng.",
+   "model": "Hình thức cấp tín dụng thông qua việc bên cho vay giao hoặc cam kết giao cho khách hàng một khoản tiền để sử dụng vào mục đích xác định, trong thời gian nhất định, theo nguyên tắc hoàn trả đầy đủ gốc, lãi (khoản 7 Điều 4).",
+   "keywords": [
+    "cấp tín dụng",
+    "mục đích xác định",
+    "thời gian nhất định",
+    "gốc, lãi"
+   ]
+  }
+ ]
+}

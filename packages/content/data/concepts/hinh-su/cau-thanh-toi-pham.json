@@ -1,0 +1,116 @@
+{
+ "id": "cau-thanh-toi-pham",
+ "subject": "hinh-su",
+ "chapter": "v4",
+ "term": "Các yếu tố của tội phạm và cấu thành tội phạm",
+ "definition": "Cấu thành tội phạm là tổng hợp những dấu hiệu chung có tính đặc trưng cho một loại tội phạm cụ thể được quy định trong luật hình sự. Mọi tội phạm đều được hợp thành từ bốn yếu tố: khách thể, mặt khách quan, chủ thể và mặt chủ quan.",
+ "plain": "Phân biệt: TỘI PHẠM là hành vi cụ thể ngoài thực tế; CẤU THÀNH TỘI PHẠM là mô hình pháp lý trong luật (điều luật phần các tội phạm + quy định phần chung). Dấu hiệu trong CTTP có tính đặc trưng, bắt buộc, được luật quy định. Hai cách phân loại: theo MỨC ĐỘ NGUY HIỂM (CTTP cơ bản, tăng nặng, giảm nhẹ — tương ứng khoản 1 và các khoản khác của điều luật); theo CẤU TRÚC mặt khách quan (CTTP VẬT CHẤT — có hậu quả là dấu hiệu bắt buộc; CTTP HÌNH THỨC — chỉ cần hành vi). Ý nghĩa: cơ sở pháp lý của TNHS (Điều 2 BLHS: chỉ người phạm một tội đã được BLHS quy định mới phải chịu TNHS), căn cứ ĐỊNH TỘI và ĐỊNH KHUNG hình phạt. Đây là quan điểm học thuật, BLHS không định nghĩa \"cấu thành tội phạm\".",
+ "example": "Tội trộm cắp tài sản (Điều 173 BLHS) có CTTP vật chất: phải chiếm đoạt được tài sản trị giá từ 2 triệu đồng (hoặc dưới 2 triệu kèm tình tiết luật định); khoản 1 là CTTP cơ bản, khoản 2–4 là CTTP tăng nặng.",
+ "source": {
+  "kind": "textbook",
+  "cite": "Giáo trình Luật Hình sự Việt Nam (Phần chung), Trường Đại học Luật Hà Nội; đề cương Luật Hình sự 1 vấn đề 4 — tóm lược quan điểm học thuật phổ biến, chưa đối chiếu nguyên văn"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "khach-the-toi-pham",
+  "mat-khach-quan-toi-pham",
+  "khai-niem-toi-pham",
+  "co-so-trach-nhiem-hinh-su"
+ ],
+ "keywords": [
+  "bốn yếu tố",
+  "dấu hiệu đặc trưng, bắt buộc",
+  "cơ bản – tăng nặng – giảm nhẹ",
+  "vật chất – hình thức"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Bốn yếu tố của tội phạm theo khoa học luật hình sự gồm những gì?",
+   "options": [
+    "Khách thể, mặt khách quan, chủ thể, mặt chủ quan",
+    "Hành vi, hậu quả, lỗi, động cơ",
+    "Chủ thể, hành vi, công cụ, địa điểm",
+    "Khách thể, đối tượng, hậu quả, hình phạt"
+   ],
+   "answer": 0,
+   "explain": "Học thuyết về các yếu tố của tội phạm.",
+   "source": {
+    "kind": "statute",
+    "cite": "Học thuyết BLHS"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Cấu thành tội phạm vật chất khác cấu thành tội phạm hình thức ở điểm nào?",
+   "options": [
+    "Hậu quả là dấu hiệu bắt buộc của cấu thành tội phạm vật chất",
+    "CTTP vật chất chỉ áp dụng cho tội xâm phạm sở hữu",
+    "CTTP hình thức không có dấu hiệu hành vi",
+    "CTTP hình thức luôn có hình phạt nhẹ hơn"
+   ],
+   "answer": 0,
+   "explain": "Phân loại theo cấu trúc mặt khách quan.",
+   "source": {
+    "kind": "statute",
+    "cite": "Học thuyết BLHS"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tội phạm",
+   "right": "Cấu thành tội phạm",
+   "cases": [
+    {
+     "text": "Hành vi cụ thể đã xảy ra trong thực tế",
+     "answer": "left"
+    },
+    {
+     "text": "Mô hình pháp lý gồm các dấu hiệu do luật quy định",
+     "answer": "right"
+    }
+   ],
+   "explain": "Học thuyết."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Cấu thành tội phạm là tổng hợp những dấu hiệu {{chung}} có tính {{đặc trưng}} cho một loại tội phạm cụ thể được quy định trong luật hình sự.",
+   "bank_extra": [
+    "riêng",
+    "ngẫu nhiên"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Theo mức độ nguy hiểm, cấu thành tội phạm chia thành cấu thành cơ bản, cấu thành {{tăng nặng}} và cấu thành {{giảm nhẹ}}.",
+   "bank_extra": [
+    "vật chất",
+    "hình thức"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Bộ luật Hình sự 2015 có một điều luật định nghĩa \"cấu thành tội phạm\".",
+   "answer": false,
+   "explain": "Sai. Đây là khái niệm của khoa học luật hình sự; BLHS không dùng thuật ngữ này, Điều 2 chỉ quy định cơ sở của trách nhiệm hình sự."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm, cách phân loại và ý nghĩa của cấu thành tội phạm.",
+   "model": "Tổng hợp dấu hiệu chung, đặc trưng cho một loại tội phạm do luật hình sự quy định; phân loại theo mức độ nguy hiểm (cơ bản, tăng nặng, giảm nhẹ) và theo cấu trúc (vật chất, hình thức); ý nghĩa: cơ sở pháp lý của TNHS, căn cứ định tội và định khung.",
+   "keywords": [
+    "dấu hiệu",
+    "cơ bản",
+    "vật chất",
+    "định tội"
+   ]
+  }
+ ]
+}

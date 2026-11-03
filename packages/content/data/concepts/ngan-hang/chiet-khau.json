@@ -1,0 +1,119 @@
+{
+ "id": "chiet-khau",
+ "subject": "ngan-hang",
+ "chapter": "v5",
+ "term": "Chiết khấu",
+ "definition": "Chiết khấu là hình thức cấp tín dụng thông qua việc mua có kỳ hạn hoặc mua có bảo lưu quyền truy đòi các công cụ chuyển nhượng, giấy tờ có giá khác của bên thụ hưởng trước khi đến hạn thanh toán.",
+ "plain": "Đối tượng: CÔNG CỤ CHUYỂN NHƯỢNG (hối phiếu, séc…), GIẤY TỜ CÓ GIÁ khác; thời điểm: TRƯỚC KHI ĐẾN HẠN thanh toán; cách thức: MUA CÓ KỲ HẠN hoặc MUA CÓ BẢO LƯU QUYỀN TRUY ĐÒI — nếu người phát hành không trả khi đến hạn, TCTD có quyền đòi lại bên thụ hưởng đã bán. Người được cấp tín dụng là BÊN THỤ HƯỞNG (người đang cầm giấy tờ). Khác bao thanh toán: đối tượng là KHOẢN PHẢI THU từ hợp đồng mua bán, cung ứng dịch vụ.",
+ "example": "Công ty F cầm hối phiếu 1 tỷ đồng đến hạn sau 3 tháng, cần tiền ngay: ngân hàng mua hối phiếu với giá 980 triệu đồng có bảo lưu quyền truy đòi — đó là chiết khấu.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 6 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-143-2026-VBHN-LQ-VPQH-Luat-Cac-to-chuc-tin-dung-729869.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "bao-thanh-toan",
+  "cho-vay",
+  "giay-to-co-gia",
+  "cap-tin-dung"
+ ],
+ "keywords": [
+  "mua có kỳ hạn",
+  "bảo lưu quyền truy đòi",
+  "công cụ chuyển nhượng",
+  "giấy tờ có giá",
+  "trước khi đến hạn"
+ ],
+ "note": "Luật Các tổ chức tín dụng 32/2024/QH15 có hiệu lực từ 01/7/2024, thay thế Luật 47/2010/QH12 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 96/2025/QH15 (hiệu lực 15/10/2025) và Luật 23/2026/QH16 (hiệu lực 01/12/2026, chỉ bổ sung một điểm tại Điều 49) — các khoản Điều 4 được trích không bị sửa.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đối tượng của nghiệp vụ chiết khấu là gì?",
+   "options": [
+    "Công cụ chuyển nhượng, giấy tờ có giá khác",
+    "Khoản phải thu từ hợp đồng mua bán hàng hóa",
+    "Quyền sử dụng đất",
+    "Máy móc, thiết bị cho thuê"
+   ],
+   "answer": 0,
+   "explain": "Khoản 6 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 6 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chiết khấu được thực hiện vào thời điểm nào?",
+   "options": [
+    "Trước khi đến hạn thanh toán",
+    "Sau khi đến hạn thanh toán",
+    "Khi bên phát hành phá sản",
+    "Bất kỳ lúc nào kể cả đã thanh toán"
+   ],
+   "answer": 0,
+   "explain": "Khoản 6 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 6 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Chiết khấu",
+   "right": "Bao thanh toán",
+   "cases": [
+    {
+     "text": "Ngân hàng mua hối phiếu của bên thụ hưởng trước hạn",
+     "answer": "left"
+    },
+    {
+     "text": "Ngân hàng mua lại khoản phải thu theo hợp đồng cung ứng dịch vụ",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1, 6 Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chiết khấu là hình thức cấp tín dụng thông qua việc mua có kỳ hạn hoặc mua có bảo lưu quyền {{truy đòi}} các công cụ {{chuyển nhượng}}, giấy tờ có giá khác.",
+   "bank_extra": [
+    "sở hữu",
+    "lao động"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chiết khấu mua giấy tờ có giá của bên {{thụ hưởng}} trước khi đến hạn {{thanh toán}}.",
+   "bank_extra": [
+    "phát hành",
+    "đăng ký"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chiết khấu là việc mua lại khoản phải thu của bên bán theo hợp đồng mua bán hàng hóa.",
+   "answer": false,
+   "explain": "Sai. Đó là bao thanh toán (khoản 1 Điều 4); chiết khấu có đối tượng là công cụ chuyển nhượng, giấy tờ có giá (khoản 6)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm chiết khấu và phân biệt với bao thanh toán.",
+   "model": "Chiết khấu: mua có kỳ hạn hoặc có bảo lưu quyền truy đòi công cụ chuyển nhượng, giấy tờ có giá của bên thụ hưởng trước hạn (khoản 6 Điều 4); bao thanh toán: mua lại khoản phải thu hoặc ứng trước tiền thanh toán theo hợp đồng mua bán, cung ứng dịch vụ (khoản 1).",
+   "keywords": [
+    "mua có kỳ hạn",
+    "truy đòi",
+    "giấy tờ có giá",
+    "khoản phải thu"
+   ]
+  }
+ ]
+}

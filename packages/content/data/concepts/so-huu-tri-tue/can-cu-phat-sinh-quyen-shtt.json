@@ -1,0 +1,119 @@
+{
+ "id": "can-cu-phat-sinh-quyen-shtt",
+ "subject": "so-huu-tri-tue",
+ "chapter": "v1",
+ "term": "Căn cứ phát sinh quyền tác giả, quyền liên quan",
+ "definition": "Quyền tác giả phát sinh kể từ khi tác phẩm được sáng tạo và được thể hiện dưới một hình thức vật chất nhất định, không phân biệt nội dung, chất lượng, hình thức, phương tiện, ngôn ngữ, đã công bố hay chưa công bố, đã đăng ký hay chưa đăng ký. Quyền liên quan phát sinh kể từ khi cuộc biểu diễn, bản ghi âm, ghi hình, chương trình phát sóng, tín hiệu cáp mang chương trình được mã hóa, tín hiệu vệ tinh mang chương trình được mã hóa được định hình hoặc thực hiện mà không gây phương hại đến quyền tác giả.",
+ "plain": "Nguyên tắc BẢO HỘ TỰ ĐỘNG (Công ước Berne): quyền tác giả phát sinh TỪ KHI TÁC PHẨM ĐƯỢC SÁNG TẠO và ĐỊNH HÌNH dưới hình thức vật chất — KHÔNG CẦN ĐĂNG KÝ (đăng ký chỉ là chứng cứ). Ngược lại, sáng chế, kiểu dáng, nhãn hiệu thông thường phải ĐĂNG KÝ, được cấp VĂN BẰNG (khoản 3). Ngoại lệ đáng nhớ: nhãn hiệu NỔI TIẾNG và TÊN THƯƠNG MẠI xác lập trên cơ sở SỬ DỤNG; bí mật kinh doanh trên cơ sở có được hợp pháp và bảo mật.",
+ "example": "Sinh viên viết một truyện ngắn đăng trên blog cá nhân: quyền tác giả đã phát sinh, dù chưa đăng ký với Cục Bản quyền tác giả.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 6 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quyen-so-huu-tri-tue",
+  "xac-lap-quyen-shcn"
+ ],
+ "keywords": [
+  "phát sinh từ khi sáng tạo và định hình",
+  "không phân biệt đã đăng ký hay chưa",
+  "bảo hộ tự động"
+ ],
+ "note": "Điều 6 có nội dung được sửa đổi, bổ sung bởi Luật 42/2019/QH14 (hiệu lực 01/11/2019); Luật 131/2025/QH15 (hiệu lực 01/4/2026) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quyền tác giả phát sinh từ khi nào?",
+   "options": [
+    "Từ khi tác phẩm được sáng tạo và thể hiện dưới hình thức vật chất nhất định",
+    "Từ khi được cấp Giấy chứng nhận đăng ký",
+    "Từ khi tác phẩm được công bố",
+    "Từ khi tác phẩm bán được"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 6.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 6 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quyền sở hữu công nghiệp đối với nhãn hiệu thông thường được xác lập trên cơ sở nào?",
+   "options": [
+    "Quyết định cấp văn bằng bảo hộ theo thủ tục đăng ký (hoặc công nhận đăng ký quốc tế)",
+    "Tự động từ khi sáng tạo",
+    "Từ khi sử dụng",
+    "Từ khi công bố"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 3 Điều 6.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 6 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Phát sinh tự động",
+   "right": "Phải đăng ký",
+   "cases": [
+    {
+     "text": "Quyền tác giả đối với bài thơ",
+     "answer": "left"
+    },
+    {
+     "text": "Quyền đối với sáng chế",
+     "answer": "right"
+    },
+    {
+     "text": "Quyền đối với nhãn hiệu thông thường",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 6."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quyền tác giả phát sinh kể từ khi tác phẩm được {{sáng tạo}} và được thể hiện dưới một hình thức {{vật chất}} nhất định.",
+   "bank_extra": [
+    "đăng ký",
+    "tinh thần"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quyền tác giả không phân biệt đã công bố hay chưa công bố, đã {{đăng ký}} hay chưa đăng ký.",
+   "bank_extra": [
+    "bán",
+    "dịch"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tác phẩm chưa đăng ký quyền tác giả thì không được bảo hộ.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 6: không phân biệt đã đăng ký hay chưa đăng ký."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày căn cứ phát sinh quyền tác giả, quyền liên quan.",
+   "model": "Quyền tác giả phát sinh từ khi tác phẩm được sáng tạo và thể hiện dưới hình thức vật chất nhất định, không phân biệt nội dung, chất lượng, đã công bố, đã đăng ký hay chưa (khoản 1 Điều 6); quyền liên quan phát sinh từ khi cuộc biểu diễn, bản ghi âm, chương trình phát sóng được định hình hoặc thực hiện mà không phương hại quyền tác giả (khoản 2).",
+   "keywords": [
+    "sáng tạo",
+    "vật chất",
+    "không phân biệt",
+    "định hình"
+   ]
+  }
+ ]
+}

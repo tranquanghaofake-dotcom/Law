@@ -1,0 +1,117 @@
+{
+ "id": "ldt-uu-dai-dau-tu",
+ "subject": "dau-tu",
+ "chapter": "v2",
+ "term": "Đối tượng và hình thức ưu đãi đầu tư",
+ "definition": "Đối tượng được hưởng ưu đãi đầu tư bao gồm: a) Dự án đầu tư thuộc ngành, nghề ưu đãi đầu tư quy định tại Điều 15 của Luật này; b) Dự án đầu tư tại địa bàn ưu đãi đầu tư quy định tại Điều 15 của Luật này;",
+ "plain": "Ưu đãi gắn với DỰ ÁN (không gắn với nhà đầu tư): theo NGÀNH, NGHỀ ưu đãi, theo ĐỊA BÀN ưu đãi (Điều 15), hoặc theo QUY MÔ vốn lớn, sử dụng nhiều lao động, dự án trọng điểm (điểm c). Hình thức ưu đãi (khoản 2): ưu đãi thuế TNDN; miễn thuế nhập khẩu hàng tạo tài sản cố định; miễn, giảm tiền sử dụng đất, thuê đất; khấu hao nhanh, tăng chi phí được trừ. Phân biệt HỖ TRỢ đầu tư (khoản 3): hỗ trợ hạ tầng, đào tạo, tín dụng, mặt bằng…",
+ "example": "Dự án sản xuất chip bán dẫn (ngành ưu đãi) tại địa bàn kinh tế - xã hội khó khăn: hưởng ưu đãi theo cả ngành, nghề và địa bàn.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điểm a, b khoản 1 Điều 14 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Dau-tu/Van-ban-hop-nhat-142-2026-VBHN-LQ-VPQH-Luat-Dau-tu-726675.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "ldt-bao-dam-khi-thay-doi-phap-luat",
+  "ldt-khu-kinh-te"
+ ],
+ "keywords": [
+  "ngành, nghề ưu đãi",
+  "địa bàn ưu đãi",
+  "ưu đãi thuế",
+  "miễn thuế nhập khẩu",
+  "hỗ trợ đầu tư"
+ ],
+ "note": "Luật Đầu tư 143/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Đầu tư 61/2020/QH14 mà đề cương HLU 2021 còn dẫn (khoản 4 Điều 51). Luật 24/2026/QH16 sửa đổi có hiệu lực từ 01/3/2027 (riêng một phần Điều 6 từ 01/01/2027), chỉ sửa Điều 6 và Phụ lục IV, không sửa điều được trích — văn bản hợp nhất 142/2026/VBHN-LQ-VPQH.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đối tượng nào được hưởng ưu đãi đầu tư theo khoản 1 Điều 14?",
+   "options": [
+    "Dự án đầu tư thuộc ngành, nghề ưu đãi đầu tư",
+    "Mọi doanh nghiệp mới thành lập",
+    "Mọi nhà đầu tư nước ngoài",
+    "Doanh nghiệp nhà nước"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 14.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 14 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hình thức nào là ưu đãi đầu tư (không phải hỗ trợ đầu tư)?",
+   "options": [
+    "Miễn, giảm tiền sử dụng đất, tiền thuê đất",
+    "Hỗ trợ đào tạo nguồn nhân lực",
+    "Hỗ trợ tín dụng",
+    "Hỗ trợ tiếp cận mặt bằng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2, 3 Điều 14.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 14 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Ưu đãi đầu tư",
+   "right": "Hỗ trợ đầu tư",
+   "cases": [
+    {
+     "text": "Miễn thuế nhập khẩu hàng hóa tạo tài sản cố định",
+     "answer": "left"
+    },
+    {
+     "text": "Hỗ trợ phát triển hạ tầng kỹ thuật ngoài hàng rào dự án",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 2, 3 Điều 14."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đối tượng được hưởng ưu đãi đầu tư bao gồm dự án đầu tư thuộc {{ngành, nghề}} ưu đãi đầu tư và dự án đầu tư tại {{địa bàn}} ưu đãi đầu tư quy định tại Điều 15.",
+   "bank_extra": [
+    "loại hình doanh nghiệp",
+    "quốc tịch"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hình thức ưu đãi đầu tư gồm ưu đãi thuế {{thu nhập doanh nghiệp}}, miễn thuế {{nhập khẩu}} đối với hàng hóa nhập khẩu để tạo tài sản cố định.",
+   "bank_extra": [
+    "giá trị gia tăng",
+    "xuất khẩu"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hỗ trợ tín dụng là một hình thức ưu đãi đầu tư theo khoản 2 Điều 14.",
+   "answer": false,
+   "explain": "Sai. Hỗ trợ tín dụng là hình thức hỗ trợ đầu tư (điểm c khoản 3 Điều 14)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Kể đối tượng và hình thức ưu đãi đầu tư.",
+   "model": "Đối tượng: dự án thuộc ngành, nghề ưu đãi; dự án tại địa bàn ưu đãi; dự án quy mô vốn lớn, nhiều lao động, trọng điểm (khoản 1 Điều 14). Hình thức: ưu đãi thuế TNDN, miễn thuế nhập khẩu, miễn giảm tiền sử dụng đất/thuê đất, khấu hao nhanh (khoản 2).",
+   "keywords": [
+    "ngành, nghề",
+    "địa bàn",
+    "thuế",
+    "tiền thuê đất"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,117 @@
+{
+ "id": "xd-nghi-quyet-quoc-hoi",
+ "subject": "xay-dung-vbpl",
+ "chapter": "v5",
+ "term": "Nghị quyết quy phạm pháp luật của Quốc hội",
+ "definition": "Quốc hội ban hành nghị quyết để quy định: (…) Thực hiện thí điểm một số chính sách mới thuộc thẩm quyền quyết định của Quốc hội khác với quy định của luật hiện hành; (…) Tạm ngưng, điều chỉnh hiệu lực hoặc kéo dài thời hạn áp dụng toàn bộ hoặc một phần luật, nghị quyết của Quốc hội đáp ứng yêu cầu cấp bách về phát triển kinh tế - xã hội, bảo đảm quyền con người, quyền công dân; (…) Vấn đề khác do Quốc hội quyết định.",
+ "plain": "Cùng một tên \"nghị quyết\" nhưng có hai loại: nghị quyết QUY PHẠM (Điều 4: của Quốc hội, UBTVQH, Chính phủ, HĐTP TANDTC, HĐND) và nghị quyết CÁ BIỆT (phê chuẩn nhân sự, thông qua kế hoạch). Nghị quyết QPPL của Quốc hội dùng cho: thí điểm chính sách mới khác luật; tạm ngưng, điều chỉnh hiệu lực, kéo dài thời hạn áp dụng luật; vấn đề khác. Luật dùng cho nội dung ở khoản 1 Điều 10 (tổ chức bộ máy, quyền con người, chính sách cơ bản, thuế...). Khi soạn thảo: căn cứ pháp lý (Hiến pháp, Luật Tổ chức Quốc hội), các điều nội dung, điều hiệu lực và tổ chức thực hiện.",
+ "example": "Nghị quyết thí điểm cơ chế đặc thù cho một thành phố (cho phép khác luật về đất đai, ngân sách): nghị quyết QPPL theo điểm a khoản 2 Điều 10. Nghị quyết bầu Chủ tịch nước: nghị quyết cá biệt.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 2 Điều 10 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-54-VBHN-VPQH-2025-Luat-Ban-hanh-van-ban-quy-pham-phap-luat-669858.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "xd-nghi-quyet-hdnd-tinh",
+  "xd-he-thong-vbqppl",
+  "xd-thoi-diem-co-hieu-luc"
+ ],
+ "keywords": [
+  "thí điểm",
+  "tạm ngưng",
+  "kéo dài thời hạn áp dụng",
+  "khác với luật hiện hành"
+ ],
+ "note": "Luật Ban hành văn bản quy phạm pháp luật 64/2025/QH15 có hiệu lực từ 01/4/2025, thay thế Luật 80/2015/QH13 (sửa đổi bởi Luật 63/2020/QH14) mà đề cương HLU 2019 còn dẫn; được sửa đổi bởi Luật 87/2025/QH15 có hiệu lực từ 01/7/2025 — văn bản hợp nhất 54/VBHN-VPQH ngày 11/8/2025. Luật mới bỏ quy trình \"lập đề nghị xây dựng luật\" theo chương trình hằng năm kiểu cũ, tách \"quy trình xây dựng chính sách\" và bỏ thẩm quyền ban hành VBQPPL của cấp huyện (từ 01/7/2025). Dự án Luật Văn bản quy phạm pháp luật (thay thế) đang được Quốc hội khóa XVI xem xét, chưa có hiệu lực.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quốc hội ban hành nghị quyết QPPL để quy định nội dung nào?",
+   "options": [
+    "Thực hiện thí điểm chính sách mới khác với luật hiện hành; tạm ngưng, điều chỉnh hiệu lực, kéo dài thời hạn áp dụng luật",
+    "Tội phạm và hình phạt",
+    "Quyền và nghĩa vụ cơ bản của công dân",
+    "Các thứ thuế"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 10; các nội dung còn lại thuộc luật (khoản 1 Điều 10).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 10 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nội dung nào phải quy định bằng luật chứ không phải nghị quyết?",
+   "options": [
+    "Tội phạm và hình phạt; tố tụng tư pháp",
+    "Thí điểm chính sách mới",
+    "Kéo dài thời hạn áp dụng một luật",
+    "Vấn đề khác do Quốc hội quyết định"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 1 Điều 10.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 10 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Nghị quyết quy phạm pháp luật của Quốc hội",
+   "right": "Nghị quyết cá biệt của Quốc hội",
+   "cases": [
+    {
+     "text": "Nghị quyết thí điểm mô hình chính quyền đô thị",
+     "answer": "left"
+    },
+    {
+     "text": "Nghị quyết phê chuẩn bổ nhiệm Phó Thủ tướng",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 2 Điều 10; văn bản cá biệt không chứa quy phạm."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quốc hội ban hành nghị quyết để thực hiện {{thí điểm}} một số chính sách mới thuộc thẩm quyền của Quốc hội khác với quy định của {{luật hiện hành}}.",
+   "bank_extra": [
+    "sửa đổi",
+    "Hiến pháp"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nghị quyết của Quốc hội còn dùng để {{tạm ngưng}}, điều chỉnh hiệu lực hoặc {{kéo dài thời hạn áp dụng}} toàn bộ hoặc một phần luật, nghị quyết của Quốc hội.",
+   "bank_extra": [
+    "bãi bỏ",
+    "giải thích"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi nghị quyết của Quốc hội đều là văn bản quy phạm pháp luật.",
+   "answer": false,
+   "explain": "Sai. Chỉ nghị quyết chứa quy phạm và ban hành theo Luật (Điều 2, khoản 2 Điều 10) mới là VBQPPL; nghị quyết về nhân sự, kế hoạch cụ thể là văn bản cá biệt."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Phân biệt luật và nghị quyết quy phạm pháp luật của Quốc hội về nội dung.",
+   "model": "Luật quy định tổ chức bộ máy, quyền con người, tội phạm, chính sách cơ bản, thuế... (khoản 1 Điều 10); nghị quyết QPPL quy định thí điểm chính sách mới khác luật, tạm ngưng/điều chỉnh/kéo dài hiệu lực luật và vấn đề khác (khoản 2 Điều 10).",
+   "keywords": [
+    "khoản 1 Điều 10",
+    "thí điểm",
+    "tạm ngưng",
+    "kéo dài"
+   ]
+  }
+ ]
+}

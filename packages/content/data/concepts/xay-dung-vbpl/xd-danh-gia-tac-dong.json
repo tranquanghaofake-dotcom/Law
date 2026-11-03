@@ -1,0 +1,119 @@
+{
+ "id": "xd-danh-gia-tac-dong",
+ "subject": "xay-dung-vbpl",
+ "chapter": "v2",
+ "term": "Đánh giá tác động của chính sách",
+ "definition": "Đánh giá tác động của chính sách là việc phân tích, dự báo khả năng ảnh hưởng của từng giải pháp nhằm lựa chọn phương án tối ưu, phù hợp với mục tiêu của chính sách.",
+ "plain": "Còn gọi là RIA. Trách nhiệm thuộc cơ quan lập đề xuất chính sách (khoản 1 Điều 29). Bốn nội dung đánh giá (khoản 2 Điều 29): tác động đối với HỆ THỐNG PHÁP LUẬT (hợp hiến, hợp pháp, thống nhất, tương thích điều ước); tác động KINH TẾ - XÃ HỘI (chi phí, lợi ích); tác động về GIỚI (nếu có); tác động của THỦ TỤC HÀNH CHÍNH (nếu có). Nếu bổ sung chính sách mới trước khi biểu quyết thì phải đánh giá tác động chính sách đó (khoản 3 Điều 29).",
+ "example": "Đề xuất cấm xe máy xăng trong nội đô từ 2030: phải dự báo chi phí cho người dân, lợi ích môi trường, tính tương thích với cam kết quốc tế, thủ tục cấp phép phát sinh — rồi mới chọn phương án.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 4 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-54-VBHN-VPQH-2025-Luat-Ban-hanh-van-ban-quy-pham-phap-luat-669858.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "xd-chinh-sach",
+  "xd-quy-trinh-xay-dung-chinh-sach",
+  "xd-tham-dinh"
+ ],
+ "keywords": [
+  "phân tích, dự báo",
+  "từng giải pháp",
+  "phương án tối ưu",
+  "kinh tế - xã hội",
+  "giới",
+  "thủ tục hành chính"
+ ],
+ "note": "Luật Ban hành văn bản quy phạm pháp luật 64/2025/QH15 có hiệu lực từ 01/4/2025, thay thế Luật 80/2015/QH13 (sửa đổi bởi Luật 63/2020/QH14) mà đề cương HLU 2019 còn dẫn; được sửa đổi bởi Luật 87/2025/QH15 có hiệu lực từ 01/7/2025 — văn bản hợp nhất 54/VBHN-VPQH ngày 11/8/2025. Luật mới bỏ quy trình \"lập đề nghị xây dựng luật\" theo chương trình hằng năm kiểu cũ, tách \"quy trình xây dựng chính sách\" và bỏ thẩm quyền ban hành VBQPPL của cấp huyện (từ 01/7/2025). Dự án Luật Văn bản quy phạm pháp luật (thay thế) đang được Quốc hội khóa XVI xem xét, chưa có hiệu lực.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đánh giá tác động của chính sách nhằm mục đích gì?",
+   "options": [
+    "Lựa chọn phương án tối ưu, phù hợp với mục tiêu của chính sách",
+    "Xác định thẩm quyền ban hành",
+    "Soạn thảo điều khoản cụ thể",
+    "Đăng Công báo"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nội dung đánh giá tác động của chính sách theo khoản 2 Điều 29 gồm?",
+   "options": [
+    "Tác động đối với hệ thống pháp luật, kinh tế - xã hội, về giới (nếu có), của thủ tục hành chính (nếu có)",
+    "Chỉ tác động ngân sách",
+    "Chỉ tác động môi trường",
+    "Chỉ ý kiến cử tri"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 29.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 29 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thuộc đánh giá tác động chính sách",
+   "right": "Không thuộc",
+   "cases": [
+    {
+     "text": "Dự báo chi phí tuân thủ của doanh nghiệp",
+     "answer": "left"
+    },
+    {
+     "text": "Soạn lời văn điều khoản dự thảo",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 2 Điều 29."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đánh giá tác động của chính sách là việc {{phân tích, dự báo}} khả năng ảnh hưởng của từng {{giải pháp}}.",
+   "bank_extra": [
+    "biểu quyết",
+    "điều khoản"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Cơ quan {{lập đề xuất chính sách}} có trách nhiệm đánh giá tác động của chính sách; nội dung gồm tác động đối với hệ thống pháp luật, {{kinh tế - xã hội}}, về giới và của thủ tục hành chính.",
+   "bank_extra": [
+    "thẩm tra",
+    "ngoại giao"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Nếu bổ sung chính sách mới trước khi Quốc hội biểu quyết thông qua thì không cần đánh giá tác động nữa.",
+   "answer": false,
+   "explain": "Sai. Khoản 3 Điều 29: cơ quan trình phải tổ chức đánh giá tác động của chính sách mới đó."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm và nội dung đánh giá tác động của chính sách.",
+   "model": "Phân tích, dự báo ảnh hưởng của từng giải pháp để chọn phương án tối ưu (khoản 4 Điều 3); đánh giá tác động với hệ thống pháp luật, kinh tế - xã hội, giới, thủ tục hành chính (khoản 2 Điều 29).",
+   "keywords": [
+    "phân tích, dự báo",
+    "phương án tối ưu",
+    "hệ thống pháp luật",
+    "kinh tế - xã hội"
+   ]
+  }
+ ]
+}

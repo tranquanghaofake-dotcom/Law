@@ -1,0 +1,114 @@
+{
+ "id": "co-phan",
+ "subject": "thuong-mai-1",
+ "chapter": "v5",
+ "term": "Các loại cổ phần",
+ "definition": "Công ty cổ phần phải có cổ phần phổ thông. Người sở hữu cổ phần phổ thông là cổ đông phổ thông. Ngoài cổ phần phổ thông, công ty cổ phần có thể có cổ phần ưu đãi. Người sở hữu cổ phần ưu đãi gọi là cổ đông ưu đãi. Cổ phần ưu đãi gồm các loại sau đây: a) Cổ phần ưu đãi cổ tức; b) Cổ phần ưu đãi hoàn lại; c) Cổ phần ưu đãi biểu quyết; d) Cổ phần ưu đãi khác theo quy định tại Điều lệ công ty và pháp luật về chứng khoán.",
+ "plain": "BẮT BUỘC có CỔ PHẦN PHỔ THÔNG; CÓ THỂ có CỔ PHẦN ƯU ĐÃI: ưu đãi CỔ TỨC (cổ tức cao hơn, thường không có quyền biểu quyết), ưu đãi HOÀN LẠI (được hoàn lại vốn theo yêu cầu/điều kiện), ưu đãi BIỂU QUYẾT (nhiều phiếu hơn — chỉ tổ chức được Chính phủ ủy quyền và cổ đông sáng lập, hiệu lực 03 năm với cổ đông sáng lập), ưu đãi khác. Cổ phần phổ thông dùng làm tài sản cơ sở phát hành chứng chỉ lưu ký không có quyền biểu quyết gọi là cổ phần phổ thông cơ sở (khoản 6).",
+ "example": "Nhà đầu tư chỉ muốn nhận cổ tức cố định cao, không quan tâm quyền biểu quyết: có thể mua cổ phần ưu đãi cổ tức.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 114 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "cong-ty-co-phan",
+  "co-dong-sang-lap"
+ ],
+ "keywords": [
+  "bắt buộc có cổ phần phổ thông",
+  "ưu đãi cổ tức, hoàn lại, biểu quyết",
+  "cổ đông ưu đãi"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Loại cổ phần nào công ty cổ phần bắt buộc phải có?",
+   "options": [
+    "Cổ phần phổ thông",
+    "Cổ phần ưu đãi cổ tức",
+    "Cổ phần ưu đãi biểu quyết",
+    "Cổ phần ưu đãi hoàn lại"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 114.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 114 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Loại nào KHÔNG được liệt kê là cổ phần ưu đãi tại khoản 2 Điều 114?",
+   "options": [
+    "Cổ phần ưu đãi miễn thuế",
+    "Cổ phần ưu đãi cổ tức",
+    "Cổ phần ưu đãi hoàn lại",
+    "Cổ phần ưu đãi biểu quyết"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 114.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 114 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Bắt buộc",
+   "right": "Không bắt buộc",
+   "cases": [
+    {
+     "text": "Cổ phần phổ thông",
+     "answer": "left"
+    },
+    {
+     "text": "Cổ phần ưu đãi hoàn lại",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 114."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công ty cổ phần phải có cổ phần {{phổ thông}}; ngoài ra có thể có cổ phần {{ưu đãi}}.",
+   "bank_extra": [
+    "ưu đãi",
+    "phổ thông"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Cổ phần ưu đãi gồm cổ phần ưu đãi cổ tức, ưu đãi {{hoàn lại}}, ưu đãi biểu quyết và ưu đãi khác.",
+   "bank_extra": [
+    "miễn thuế",
+    "chuyển nhượng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Công ty cổ phần có thể chỉ phát hành cổ phần ưu đãi mà không có cổ phần phổ thông.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 114: phải có cổ phần phổ thông."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày các loại cổ phần trong công ty cổ phần.",
+   "model": "Bắt buộc có cổ phần phổ thông; có thể có cổ phần ưu đãi: ưu đãi cổ tức, ưu đãi hoàn lại, ưu đãi biểu quyết, ưu đãi khác theo Điều lệ và pháp luật chứng khoán (Điều 114).",
+   "keywords": [
+    "phổ thông",
+    "ưu đãi cổ tức",
+    "hoàn lại",
+    "biểu quyết"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,117 @@
+{
+ "id": "tcdn-co-tuc",
+ "subject": "tai-chinh-doanh-nghiep",
+ "chapter": "v3",
+ "term": "Cổ tức và điều kiện trả cổ tức",
+ "definition": "Cổ tức là khoản lợi nhuận sau thuế được trả cho mỗi cổ phần bằng tiền hoặc bằng tài sản khác. (…) Công ty cổ phần chỉ được trả cổ tức của cổ phần phổ thông khi có đủ các điều kiện sau đây: a) Công ty đã hoàn thành nghĩa vụ thuế và các nghĩa vụ tài chính khác theo quy định của pháp luật; b) Đã trích lập các quỹ công ty và bù đắp lỗ trước đó theo quy định của pháp luật và Điều lệ công ty; c) Ngay sau khi trả hết số cổ tức, công ty vẫn bảo đảm thanh toán đủ các khoản nợ và nghĩa vụ tài sản khác đến hạn.",
+ "plain": "Cổ tức lấy từ LỢI NHUẬN SAU THUẾ — không phải từ vốn. Ba điều kiện trả cổ tức cổ phần phổ thông: (a) xong NGHĨA VỤ THUẾ và nghĩa vụ tài chính; (b) đã TRÍCH LẬP QUỸ và BÙ LỖ trước đó; (c) sau khi trả vẫn THANH TOÁN ĐỦ nợ đến hạn. Hình thức: tiền mặt (bằng Đồng Việt Nam), cổ phần, tài sản khác theo Điều lệ (khoản 3). Cổ tức cổ phần ưu đãi theo điều kiện riêng (khoản 1). Mục đích: bảo vệ chủ nợ — không \"rút vốn trá hình\".",
+ "example": "Công ty cổ phần I có lợi nhuận năm nay nhưng còn lỗ lũy kế của 2 năm trước chưa bù: chưa đủ điều kiện điểm b để trả cổ tức cổ phần phổ thông.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 5 Điều 4; khoản 2 Điều 135 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tcdn-chia-loi-nhuan-tnhh",
+  "tcdn-doanh-thu",
+  "tcdn-chi-phi-duoc-tru"
+ ],
+ "keywords": [
+  "lợi nhuận sau thuế",
+  "nghĩa vụ thuế",
+  "trích lập quỹ, bù lỗ",
+  "thanh toán đủ nợ đến hạn"
+ ],
+ "note": "Luật Doanh nghiệp 59/2020/QH14 có hiệu lực từ 01/01/2021, thay thế Luật Doanh nghiệp 2014 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 03/2022/QH15 và Luật 76/2025/QH15 (hiệu lực 01/7/2025) — văn bản hợp nhất 67/VBHN-VPQH 2025.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Cổ tức được trả từ nguồn nào?",
+   "options": [
+    "Lợi nhuận sau thuế",
+    "Vốn điều lệ",
+    "Tiền vay ngân hàng",
+    "Doanh thu trước thuế"
+   ],
+   "answer": 0,
+   "explain": "Khoản 5 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 5 Điều 4 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Điều kiện nào là điều kiện để trả cổ tức cổ phần phổ thông?",
+   "options": [
+    "Đã trích lập các quỹ và bù đắp lỗ trước đó",
+    "Có ít nhất 100 cổ đông",
+    "Đã niêm yết trên sàn",
+    "Giám đốc đồng ý"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 2 Điều 135.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 135 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Đủ điều kiện trả cổ tức",
+   "right": "Chưa đủ",
+   "cases": [
+    {
+     "text": "Đã nộp đủ thuế, trích quỹ, bù lỗ và sau khi trả vẫn trả được nợ đến hạn",
+     "answer": "left"
+    },
+    {
+     "text": "Còn nợ thuế quá hạn",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 2 Điều 135."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Cổ tức là khoản lợi nhuận {{sau thuế}} được trả cho mỗi cổ phần bằng tiền hoặc bằng {{tài sản khác}}.",
+   "bank_extra": [
+    "trước thuế",
+    "quyền chọn"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ngay sau khi trả hết số cổ tức, công ty vẫn bảo đảm thanh toán đủ các khoản {{nợ}} và nghĩa vụ tài sản khác {{đến hạn}}.",
+   "bank_extra": [
+    "vốn góp",
+    "chưa đến hạn"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Công ty cổ phần có thể dùng vốn điều lệ để trả cổ tức khi năm đó lỗ.",
+   "answer": false,
+   "explain": "Sai. Cổ tức là lợi nhuận sau thuế (khoản 5 Điều 4) và phải đủ điều kiện khoản 2 Điều 135."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu điều kiện trả cổ tức cổ phần phổ thông.",
+   "model": "Đã hoàn thành nghĩa vụ thuế, nghĩa vụ tài chính; đã trích lập quỹ và bù lỗ trước đó; sau khi trả vẫn thanh toán đủ nợ, nghĩa vụ tài sản đến hạn (khoản 2 Điều 135); cổ tức là lợi nhuận sau thuế (khoản 5 Điều 4).",
+   "keywords": [
+    "nghĩa vụ thuế",
+    "bù lỗ",
+    "nợ đến hạn",
+    "lợi nhuận sau thuế"
+   ]
+  }
+ ]
+}

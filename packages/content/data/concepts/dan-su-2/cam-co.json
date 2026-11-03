@@ -1,0 +1,114 @@
+{
+ "id": "cam-co",
+ "subject": "dan-su-2",
+ "chapter": "v4",
+ "term": "Cầm cố tài sản",
+ "definition": "Cầm cố tài sản là việc một bên (sau đây gọi là bên cầm cố) giao tài sản thuộc quyền sở hữu của mình cho bên kia (sau đây gọi là bên nhận cầm cố) để bảo đảm thực hiện nghĩa vụ.",
+ "plain": "Đặc trưng: CÓ CHUYỂN GIAO tài sản cho bên nhận cầm cố; tài sản THUỘC SỞ HỮU của bên cầm cố. Hiệu lực từ khi GIAO KẾT, đối kháng từ khi bên nhận cầm cố NẮM GIỮ tài sản (Điều 310). Phân biệt THẾ CHẤP: không giao tài sản.",
+ "example": "Mang xe máy đến tiệm cầm đồ để vay 10 triệu, tiệm giữ xe: cầm cố tài sản.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 309 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "the-chap",
+  "bien-phap-bao-dam"
+ ],
+ "keywords": [
+  "giao tài sản",
+  "thuộc quyền sở hữu",
+  "bảo đảm thực hiện nghĩa vụ"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Điểm khác biệt cơ bản giữa cầm cố và thế chấp là gì?",
+   "options": [
+    "Cầm cố có giao tài sản cho bên nhận, thế chấp không giao",
+    "Cầm cố chỉ áp dụng với bất động sản",
+    "Thế chấp phải giao tài sản",
+    "Không có khác biệt"
+   ],
+   "answer": 0,
+   "explain": "Điều 309, 317.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 309, 317 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tài sản cầm cố phải thuộc quyền gì của bên cầm cố?",
+   "options": [
+    "Quyền sở hữu",
+    "Quyền thuê",
+    "Quyền mượn",
+    "Quyền quản lý"
+   ],
+   "answer": 0,
+   "explain": "Điều 309.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 309 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Cầm cố",
+   "right": "Thế chấp",
+   "cases": [
+    {
+     "text": "Giao chiếc nhẫn vàng cho người cho vay giữ",
+     "answer": "left"
+    },
+    {
+     "text": "Ngân hàng nhận sổ đỏ, chủ nhà vẫn ở trong nhà",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 309, 317."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Cầm cố tài sản là việc bên cầm cố {{giao}} tài sản thuộc {{quyền sở hữu}} của mình cho bên nhận cầm cố để bảo đảm thực hiện nghĩa vụ.",
+   "bank_extra": [
+    "giữ lại",
+    "quyền sử dụng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bên nhận tài sản trong cầm cố gọi là bên nhận {{cầm cố}}.",
+   "bank_extra": [
+    "thế chấp",
+    "bảo lãnh"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Trong cầm cố, bên cầm cố vẫn giữ tài sản.",
+   "answer": false,
+   "explain": "Sai. Điều 309: bên cầm cố giao tài sản cho bên nhận cầm cố."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm cầm cố tài sản và phân biệt với thế chấp.",
+   "model": "Cầm cố là việc bên cầm cố giao tài sản thuộc sở hữu của mình cho bên nhận cầm cố để bảo đảm thực hiện nghĩa vụ (Điều 309); thế chấp không giao tài sản (Điều 317).",
+   "keywords": [
+    "giao tài sản",
+    "sở hữu",
+    "bảo đảm",
+    "thế chấp"
+   ]
+  }
+ ]
+}

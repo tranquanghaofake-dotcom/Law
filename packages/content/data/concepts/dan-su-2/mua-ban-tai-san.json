@@ -1,0 +1,114 @@
+{
+ "id": "mua-ban-tai-san",
+ "subject": "dan-su-2",
+ "chapter": "v6",
+ "term": "Hợp đồng mua bán tài sản",
+ "definition": "Hợp đồng mua bán tài sản là sự thỏa thuận giữa các bên, theo đó bên bán chuyển quyền sở hữu tài sản cho bên mua và bên mua trả tiền cho bên bán. (…) Tài sản bán thuộc sở hữu của người bán hoặc người bán có quyền bán.",
+ "plain": "Hợp đồng SONG VỤ, CÓ ĐỀN BÙ, ƯNG THUẬN; mục đích là CHUYỂN QUYỀN SỞ HỮU. Đối tượng: mọi tài sản, phù hợp quy định về tài sản cấm, hạn chế chuyển nhượng; tài sản phải THUỘC SỞ HỮU người bán hoặc người bán CÓ QUYỀN BÁN. Mua bán nhà ở còn theo Luật Nhà ở. Thời điểm chuyển quyền sở hữu: theo thỏa thuận hoặc luật; không có thì từ khi CHUYỂN GIAO tài sản (Điều 161), tài sản phải đăng ký thì từ khi đăng ký.",
+ "example": "A bán chiếc xe máy mượn của B cho C mà B không cho phép: A không có quyền bán (khoản 2 Điều 431).",
+ "source": {
+  "kind": "statute",
+  "cite": "Đoạn 1 Điều 430, khoản 2 Điều 431 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tang-cho",
+  "hop-dong"
+ ],
+ "keywords": [
+  "chuyển quyền sở hữu",
+  "trả tiền",
+  "thuộc sở hữu người bán hoặc có quyền bán"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trong hợp đồng mua bán tài sản, bên bán có nghĩa vụ chủ yếu nào?",
+   "options": [
+    "Chuyển quyền sở hữu tài sản cho bên mua",
+    "Cho bên mua sử dụng trong một thời hạn",
+    "Giữ hộ tài sản",
+    "Bảo lãnh cho bên mua"
+   ],
+   "answer": 0,
+   "explain": "Điều 430.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 430 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tài sản bán phải đáp ứng điều kiện gì về chủ thể có quyền?",
+   "options": [
+    "Thuộc sở hữu của người bán hoặc người bán có quyền bán",
+    "Phải là bất động sản",
+    "Phải được công chứng",
+    "Phải là tài sản mới"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 431.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 431 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Mua bán",
+   "right": "Thuê",
+   "cases": [
+    {
+     "text": "Chuyển quyền sở hữu, bên mua trả tiền",
+     "answer": "left"
+    },
+    {
+     "text": "Giao tài sản để sử dụng trong thời hạn, trả tiền thuê",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 430, 472."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hợp đồng mua bán tài sản là sự thỏa thuận, theo đó bên bán chuyển {{quyền sở hữu}} tài sản cho bên mua và bên mua {{trả tiền}} cho bên bán.",
+   "bank_extra": [
+    "quyền sử dụng",
+    "trả lại tài sản"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tài sản bán thuộc sở hữu của người bán hoặc người bán có {{quyền bán}}.",
+   "bank_extra": [
+    "ý định bán",
+    "giấy phép"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người đang thuê nhà có thể tự bán căn nhà đó vì đang chiếm hữu.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 431: tài sản bán phải thuộc sở hữu người bán hoặc người bán có quyền bán."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm hợp đồng mua bán tài sản và điều kiện về tài sản bán.",
+   "model": "Là thỏa thuận theo đó bên bán chuyển quyền sở hữu tài sản cho bên mua và bên mua trả tiền (Điều 430); tài sản phải thuộc sở hữu người bán hoặc người bán có quyền bán, phù hợp quy định về tài sản cấm, hạn chế chuyển nhượng (Điều 431).",
+   "keywords": [
+    "quyền sở hữu",
+    "trả tiền",
+    "có quyền bán",
+    "hạn chế chuyển nhượng"
+   ]
+  }
+ ]
+}

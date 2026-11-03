@@ -1,0 +1,119 @@
+{
+ "id": "khach-the-toi-pham",
+ "subject": "hinh-su",
+ "chapter": "v5",
+ "term": "Khách thể và đối tượng tác động của tội phạm",
+ "definition": "Khách thể của tội phạm là quan hệ xã hội được luật hình sự bảo vệ và bị tội phạm xâm hại. Đối tượng tác động của tội phạm là bộ phận của khách thể bị hành vi phạm tội tác động đến để gây thiệt hại cho quan hệ xã hội được luật hình sự bảo vệ.",
+ "plain": "Ba cấp KHÁCH THỂ: chung (toàn bộ quan hệ xã hội được luật hình sự bảo vệ — liệt kê tại khoản 1 Điều 8 BLHS); loại (nhóm quan hệ cùng tính chất — căn cứ chia các chương Phần các tội phạm); trực tiếp (quan hệ cụ thể bị một tội xâm hại). Ba loại ĐỐI TƯỢNG TÁC ĐỘNG: CON NGƯỜI (chủ thể của quan hệ), ĐỐI TƯỢNG VẬT CHẤT (tài sản, vật), HOẠT ĐỘNG BÌNH THƯỜNG của chủ thể. Phân biệt: khách thể luôn BỊ GÂY THIỆT HẠI; đối tượng tác động có thể không bị thiệt hại (ví dụ tài sản bị trộm vẫn nguyên vẹn).",
+ "example": "A trộm chiếc xe máy của B: khách thể trực tiếp là quan hệ sở hữu của B; đối tượng tác động là chiếc xe máy (đối tượng vật chất) — chiếc xe có thể không hư hỏng nhưng quan hệ sở hữu vẫn bị xâm hại.",
+ "source": {
+  "kind": "textbook",
+  "cite": "Giáo trình Luật Hình sự Việt Nam (Phần chung), Trường Đại học Luật Hà Nội; đề cương Luật Hình sự 1 vấn đề 5 — tóm lược quan điểm học thuật phổ biến, chưa đối chiếu nguyên văn"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "cau-thanh-toi-pham",
+  "mat-khach-quan-toi-pham",
+  "khai-niem-toi-pham"
+ ],
+ "keywords": [
+  "quan hệ xã hội được bảo vệ",
+  "bị tội phạm xâm hại",
+  "chung – loại – trực tiếp",
+  "con người, vật, hoạt động"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khách thể của tội phạm là gì?",
+   "options": [
+    "Quan hệ xã hội được luật hình sự bảo vệ và bị tội phạm xâm hại",
+    "Tài sản bị chiếm đoạt",
+    "Người bị hại",
+    "Công cụ phạm tội"
+   ],
+   "answer": 0,
+   "explain": "Học thuyết về khách thể.",
+   "source": {
+    "kind": "statute",
+    "cite": "Học thuyết BLHS"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Căn cứ để sắp xếp các chương trong Phần các tội phạm của BLHS là loại khách thể nào?",
+   "options": [
+    "Khách thể loại",
+    "Khách thể chung",
+    "Khách thể trực tiếp",
+    "Đối tượng tác động"
+   ],
+   "answer": 0,
+   "explain": "Khách thể loại là nhóm quan hệ xã hội cùng tính chất.",
+   "source": {
+    "kind": "statute",
+    "cite": "Học thuyết BLHS"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Khách thể của tội phạm",
+   "right": "Đối tượng tác động",
+   "cases": [
+    {
+     "text": "Luôn bị gây thiệt hại",
+     "answer": "left"
+    },
+    {
+     "text": "Có thể không bị biến đổi, hư hại",
+     "answer": "right"
+    },
+    {
+     "text": "Ví dụ: chiếc xe máy bị trộm",
+     "answer": "right"
+    }
+   ],
+   "explain": "Học thuyết."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Khách thể của tội phạm là {{quan hệ xã hội}} được luật hình sự bảo vệ và bị tội phạm {{xâm hại}}.",
+   "bank_extra": [
+    "tài sản",
+    "sử dụng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đối tượng tác động gồm: con người, đối tượng {{vật chất}} và {{hoạt động bình thường}} của chủ thể.",
+   "bank_extra": [
+    "tinh thần",
+    "hành vi phạm tội"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Đối tượng tác động của tội phạm luôn bị thiệt hại về vật chất.",
+   "answer": false,
+   "explain": "Sai. Đối tượng tác động có thể còn nguyên vẹn; cái luôn bị thiệt hại là khách thể (quan hệ xã hội)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Phân biệt khách thể của tội phạm với đối tượng tác động của tội phạm.",
+   "model": "Khách thể là quan hệ xã hội được luật hình sự bảo vệ và bị tội phạm xâm hại, luôn bị thiệt hại; đối tượng tác động là bộ phận của khách thể (con người, vật, hoạt động bình thường) bị hành vi tác động, có thể không bị thiệt hại.",
+   "keywords": [
+    "quan hệ xã hội",
+    "bộ phận của khách thể",
+    "con người",
+    "thiệt hại"
+   ]
+  }
+ ]
+}

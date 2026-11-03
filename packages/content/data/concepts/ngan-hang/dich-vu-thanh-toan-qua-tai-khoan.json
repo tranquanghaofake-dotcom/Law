@@ -1,0 +1,118 @@
+{
+ "id": "dich-vu-thanh-toan-qua-tai-khoan",
+ "subject": "ngan-hang",
+ "chapter": "v6",
+ "term": "Cung ứng dịch vụ thanh toán qua tài khoản",
+ "definition": "Cung ứng dịch vụ thanh toán qua tài khoản là việc cung ứng phương tiện thanh toán; thực hiện dịch vụ thanh toán séc, lệnh chi, ủy nhiệm chi, nhờ thu, ủy nhiệm thu, thẻ ngân hàng, dịch vụ thanh toán khác cho khách hàng thông qua tài khoản thanh toán của khách hàng.",
+ "plain": "Là một trong ba nghiệp vụ lõi của hoạt động ngân hàng (khoản 17). Dịch vụ: cung ứng PHƯƠNG TIỆN THANH TOÁN; thanh toán SÉC, LỆNH CHI, ỦY NHIỆM CHI, NHỜ THU, ỦY NHIỆM THU, THẺ NGÂN HÀNG… Điều kiện: THÔNG QUA TÀI KHOẢN THANH TOÁN của khách hàng. TCTD phi ngân hàng không được cung ứng dịch vụ này (khoản 41). Phân biệt dịch vụ trung gian thanh toán (Luật Ngân hàng Nhà nước khoản 10 Điều 6) — do tổ chức không phải ngân hàng được cấp phép thực hiện, chỉ làm trung gian kết nối, xử lý dữ liệu.",
+ "example": "Doanh nghiệp J lập ủy nhiệm chi để ngân hàng trích tiền từ tài khoản thanh toán của J trả cho nhà cung cấp — dịch vụ thanh toán qua tài khoản.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 14 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-143-2026-VBHN-LQ-VPQH-Luat-Cac-to-chuc-tin-dung-729869.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "dich-vu-trung-gian-thanh-toan",
+  "hoat-dong-ngan-hang",
+  "to-chuc-tin-dung-phi-ngan-hang"
+ ],
+ "keywords": [
+  "phương tiện thanh toán",
+  "séc, lệnh chi, ủy nhiệm chi",
+  "nhờ thu, ủy nhiệm thu",
+  "thẻ ngân hàng",
+  "tài khoản thanh toán"
+ ],
+ "note": "Luật Các tổ chức tín dụng 32/2024/QH15 có hiệu lực từ 01/7/2024, thay thế Luật 47/2010/QH12 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 96/2025/QH15 (hiệu lực 15/10/2025) và Luật 23/2026/QH16 (hiệu lực 01/12/2026, chỉ bổ sung một điểm tại Điều 49) — các khoản Điều 4 được trích không bị sửa.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Dịch vụ nào thuộc cung ứng dịch vụ thanh toán qua tài khoản?",
+   "options": [
+    "Ủy nhiệm chi",
+    "Cho thuê tài chính",
+    "Bảo lãnh dự thầu",
+    "Mua bán ngoại tệ tiền mặt"
+   ],
+   "answer": 0,
+   "explain": "Khoản 14 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 14 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tổ chức nào KHÔNG được cung ứng dịch vụ thanh toán qua tài khoản của khách hàng?",
+   "options": [
+    "Tổ chức tín dụng phi ngân hàng",
+    "Ngân hàng thương mại",
+    "Ngân hàng hợp tác xã",
+    "Ngân hàng 100% vốn nước ngoài"
+   ],
+   "answer": 0,
+   "explain": "Khoản 41 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 41 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thanh toán qua tài khoản",
+   "right": "Dịch vụ trung gian thanh toán",
+   "cases": [
+    {
+     "text": "Ngân hàng thực hiện lệnh chi từ tài khoản thanh toán của khách",
+     "answer": "left"
+    },
+    {
+     "text": "Tổ chức không phải ngân hàng kết nối, xử lý dữ liệu giao dịch thanh toán",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 14 Điều 4 Luật TCTD; khoản 10 Điều 6 Luật Ngân hàng Nhà nước."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Cung ứng dịch vụ thanh toán qua tài khoản là việc cung ứng {{phương tiện thanh toán}}; thực hiện dịch vụ thanh toán séc, lệnh chi, {{ủy nhiệm chi}}, nhờ thu, ủy nhiệm thu, thẻ ngân hàng.",
+   "bank_extra": [
+    "tín dụng",
+    "bảo lãnh"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Dịch vụ thanh toán được thực hiện cho khách hàng thông qua {{tài khoản thanh toán}} của {{khách hàng}}.",
+   "bank_extra": [
+    "tài khoản tiết kiệm của ngân hàng",
+    "Ngân hàng Nhà nước"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Công ty tài chính tổng hợp được mở tài khoản thanh toán và cung ứng dịch vụ thanh toán qua tài khoản cho khách hàng.",
+   "answer": false,
+   "explain": "Sai. Khoản 41 Điều 4: tổ chức tín dụng phi ngân hàng không được cung ứng dịch vụ thanh toán qua tài khoản của khách hàng."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm cung ứng dịch vụ thanh toán qua tài khoản.",
+   "model": "Cung ứng phương tiện thanh toán; thực hiện dịch vụ thanh toán séc, lệnh chi, ủy nhiệm chi, nhờ thu, ủy nhiệm thu, thẻ ngân hàng, dịch vụ khác thông qua tài khoản thanh toán của khách hàng (khoản 14 Điều 4).",
+   "keywords": [
+    "phương tiện thanh toán",
+    "séc",
+    "ủy nhiệm chi",
+    "tài khoản thanh toán"
+   ]
+  }
+ ]
+}

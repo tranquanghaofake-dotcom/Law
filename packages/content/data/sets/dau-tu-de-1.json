@@ -1,0 +1,139 @@
+{
+  "id": "dau-tu-de-1",
+  "group": "dau-tu",
+  "title": "Đề kiểm tra Luật Đầu tư – Chủ thể, bảo đảm, thủ tục",
+  "subtitle": "10 câu theo đề cương HLU, vấn đề 1–3",
+  "updated": "2026-11-01",
+  "questions": [
+    {
+      "q": "Đầu tư kinh doanh là gì?",
+      "options": [
+        "Việc nhà đầu tư bỏ vốn đầu tư để thực hiện hoạt động kinh doanh",
+        "Việc Nhà nước chi ngân sách",
+        "Việc vay tiêu dùng",
+        "Việc góp quỹ từ thiện"
+      ],
+      "answer": 0,
+      "explain": "Khoản 8 Điều 3.",
+      "basis": "Khoản 8 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Dau-tu/Van-ban-hop-nhat-142-2026-VBHN-LQ-VPQH-Luat-Dau-tu-726675.aspx"
+    },
+    {
+      "q": "Tổ chức là nhà đầu tư nước ngoài khi nào?",
+      "options": [
+        "Thành lập theo pháp luật nước ngoài",
+        "Có thành viên là người nước ngoài",
+        "Có trụ sở ở khu kinh tế",
+        "Có vốn trên 50 tỷ đồng"
+      ],
+      "answer": 0,
+      "explain": "Khoản 19 Điều 3.",
+      "basis": "Khoản 19 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Dau-tu/Van-ban-hop-nhat-142-2026-VBHN-LQ-VPQH-Luat-Dau-tu-726675.aspx"
+    },
+    {
+      "q": "Điều kiện đầu tư kinh doanh không bao gồm gì?",
+      "options": [
+        "Tiêu chuẩn, quy chuẩn kỹ thuật về chất lượng sản phẩm, dịch vụ",
+        "Giấy phép",
+        "Chứng chỉ hành nghề",
+        "Yêu cầu vốn"
+      ],
+      "answer": 0,
+      "explain": "Khoản 9 Điều 3.",
+      "basis": "Khoản 9 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Dau-tu/Van-ban-hop-nhat-142-2026-VBHN-LQ-VPQH-Luat-Dau-tu-726675.aspx"
+    },
+    {
+      "q": "Tài sản hợp pháp của nhà đầu tư không bị gì?",
+      "options": [
+        "Quốc hữu hóa hoặc tịch thu bằng biện pháp hành chính",
+        "Đánh thuế",
+        "Kiểm toán",
+        "Trưng dụng có bồi thường"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 9.",
+      "basis": "Khoản 1 Điều 9 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Dau-tu/Van-ban-hop-nhat-142-2026-VBHN-LQ-VPQH-Luat-Dau-tu-726675.aspx"
+    },
+    {
+      "q": "Văn bản mới quy định ưu đãi thấp hơn thì nhà đầu tư hưởng thế nào?",
+      "options": [
+        "Tiếp tục hưởng theo quy định trước đó cho thời gian còn lại",
+        "Áp dụng ngay mức mới",
+        "Hoàn trả ưu đãi đã hưởng",
+        "Mất toàn bộ ưu đãi"
+      ],
+      "answer": 0,
+      "explain": "Khoản 2 Điều 12.",
+      "basis": "Khoản 2 Điều 12 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Dau-tu/Van-ban-hop-nhat-142-2026-VBHN-LQ-VPQH-Luat-Dau-tu-726675.aspx"
+    },
+    {
+      "q": "Hình thức nào là hỗ trợ đầu tư (không phải ưu đãi)?",
+      "options": [
+        "Hỗ trợ tín dụng",
+        "Miễn thuế nhập khẩu",
+        "Miễn tiền thuê đất",
+        "Khấu hao nhanh"
+      ],
+      "answer": 0,
+      "explain": "Khoản 3 Điều 14.",
+      "basis": "Khoản 3 Điều 14 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Dau-tu/Van-ban-hop-nhat-142-2026-VBHN-LQ-VPQH-Luat-Dau-tu-726675.aspx"
+    },
+    {
+      "q": "Dự án đầu tư là đề xuất bỏ vốn trong thời hạn nào?",
+      "options": [
+        "Trung hạn hoặc dài hạn",
+        "Dưới 1 tháng",
+        "Không thời hạn",
+        "Chỉ 50 năm"
+      ],
+      "answer": 0,
+      "explain": "Khoản 4 Điều 3.",
+      "basis": "Khoản 4 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Dau-tu/Van-ban-hop-nhat-142-2026-VBHN-LQ-VPQH-Luat-Dau-tu-726675.aspx"
+    },
+    {
+      "q": "Dự án nào thuộc diện chấp thuận chủ trương đầu tư?",
+      "options": [
+        "Chuyển mục đích đất trồng lúa hai vụ trở lên từ 500 ha",
+        "Mở quán cà phê",
+        "Góp vốn vào công ty cổ phần",
+        "Thuê kho 200 m²"
+      ],
+      "answer": 0,
+      "explain": "Khoản 2 Điều 24.",
+      "basis": "Khoản 2 Điều 24 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Dau-tu/Van-ban-hop-nhat-142-2026-VBHN-LQ-VPQH-Luat-Dau-tu-726675.aspx"
+    },
+    {
+      "q": "Dự án nào không phải thực hiện thủ tục cấp Giấy chứng nhận đăng ký đầu tư?",
+      "options": [
+        "Dự án của nhà đầu tư trong nước",
+        "Dự án của nhà đầu tư nước ngoài",
+        "Dự án của tổ chức kinh tế thuộc khoản 1 Điều 20",
+        "Hợp đồng BCC có nhà đầu tư nước ngoài"
+      ],
+      "answer": 0,
+      "explain": "Khoản 2 Điều 26.",
+      "basis": "Khoản 2 Điều 26 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Dau-tu/Van-ban-hop-nhat-142-2026-VBHN-LQ-VPQH-Luat-Dau-tu-726675.aspx"
+    },
+    {
+      "q": "Điều kiện chuyển nhượng dự án đầu tư là gì?",
+      "options": [
+        "Dự án không bị chấm dứt hoạt động theo khoản 1, 2 Điều 36",
+        "Dự án đã có lãi 3 năm",
+        "Bên nhận là doanh nghiệp nhà nước",
+        "Được Thủ tướng đồng ý trong mọi trường hợp"
+      ],
+      "answer": 0,
+      "explain": "Điểm a khoản 1 Điều 34.",
+      "basis": "Khoản 1 Điều 34 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Dau-tu/Van-ban-hop-nhat-142-2026-VBHN-LQ-VPQH-Luat-Dau-tu-726675.aspx"
+    }
+  ]
+}

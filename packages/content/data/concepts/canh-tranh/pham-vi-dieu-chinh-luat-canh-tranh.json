@@ -1,0 +1,119 @@
+{
+ "id": "pham-vi-dieu-chinh-luat-canh-tranh",
+ "subject": "canh-tranh",
+ "chapter": "v1",
+ "term": "Phạm vi điều chỉnh và đối tượng áp dụng của Luật Cạnh tranh",
+ "definition": "Luật này quy định về hành vi hạn chế cạnh tranh, tập trung kinh tế gây tác động hoặc có khả năng gây tác động hạn chế cạnh tranh đến thị trường Việt Nam; hành vi cạnh tranh không lành mạnh; tố tụng cạnh tranh; xử lý vi phạm pháp luật về cạnh tranh; quản lý nhà nước về cạnh tranh.",
+ "plain": "Hai mảng nội dung: (1) CHỐNG HẠN CHẾ CẠNH TRANH (thỏa thuận hạn chế cạnh tranh, lạm dụng vị trí thống lĩnh, độc quyền, tập trung kinh tế) — bảo vệ CẤU TRÚC thị trường; (2) CHỐNG CẠNH TRANH KHÔNG LÀNH MẠNH — bảo vệ đạo đức kinh doanh. Điểm mới 2018: áp dụng theo nguyên tắc \"TÁC ĐỘNG\" (effect doctrine), cả hành vi ở nước ngoài gây tác động đến THỊ TRƯỜNG VIỆT NAM. Đối tượng (Điều 2): doanh nghiệp (kể cả công ích, độc quyền nhà nước, đơn vị sự nghiệp công lập, doanh nghiệp nước ngoài), hiệp hội ngành nghề, cơ quan, tổ chức, cá nhân liên quan.",
+ "example": "Hai tập đoàn nước ngoài sáp nhập ở nước ngoài nhưng cùng có thị phần lớn tại Việt Nam: giao dịch có thể thuộc phạm vi kiểm soát tập trung kinh tế theo Luật Cạnh tranh Việt Nam.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 1 Luật Cạnh tranh 2018",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hanh-vi-han-che-canh-tranh",
+  "canh-tranh-khong-lanh-manh"
+ ],
+ "keywords": [
+  "hạn chế cạnh tranh",
+  "tập trung kinh tế",
+  "cạnh tranh không lành mạnh",
+  "thị trường Việt Nam"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Luật Cạnh tranh 2018 KHÔNG quy định nội dung nào?",
+   "options": [
+    "Thủ tục đăng ký doanh nghiệp",
+    "Hành vi hạn chế cạnh tranh",
+    "Hành vi cạnh tranh không lành mạnh",
+    "Tố tụng cạnh tranh"
+   ],
+   "answer": 0,
+   "explain": "Đăng ký doanh nghiệp thuộc Luật Doanh nghiệp.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 1 Luật Cạnh tranh 2018"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đơn vị sự nghiệp công lập có thuộc đối tượng áp dụng của Luật Cạnh tranh không?",
+   "options": [
+    "Có",
+    "Không",
+    "Chỉ khi có vốn nước ngoài",
+    "Chỉ khi niêm yết"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 2.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 2 Luật Cạnh tranh 2018"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Chống hạn chế cạnh tranh",
+   "right": "Chống cạnh tranh không lành mạnh",
+   "cases": [
+    {
+     "text": "Kiểm soát tập trung kinh tế",
+     "answer": "left"
+    },
+    {
+     "text": "Cấm gièm pha doanh nghiệp khác",
+     "answer": "right"
+    },
+    {
+     "text": "Cấm lạm dụng vị trí thống lĩnh",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 1, 3."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Luật này quy định về hành vi hạn chế cạnh tranh, {{tập trung kinh tế}} gây tác động hạn chế cạnh tranh đến thị trường Việt Nam; hành vi cạnh tranh {{không lành mạnh}}.",
+   "bank_extra": [
+    "đầu tư công",
+    "độc quyền nhà nước"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đối tượng áp dụng gồm cả doanh nghiệp {{nước ngoài}} hoạt động tại Việt Nam và hiệp hội ngành, nghề.",
+   "bank_extra": [
+    "nhà nước",
+    "tư nhân"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Doanh nghiệp hoạt động trong lĩnh vực độc quyền nhà nước không thuộc đối tượng áp dụng Luật Cạnh tranh.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 2 nêu rõ cả doanh nghiệp hoạt động trong ngành, lĩnh vực thuộc độc quyền nhà nước."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày phạm vi điều chỉnh và đối tượng áp dụng của Luật Cạnh tranh 2018.",
+   "model": "Quy định hành vi hạn chế cạnh tranh, tập trung kinh tế gây tác động hạn chế cạnh tranh đến thị trường Việt Nam, cạnh tranh không lành mạnh, tố tụng cạnh tranh, xử lý vi phạm, quản lý nhà nước (Điều 1); áp dụng với doanh nghiệp (kể cả công ích, độc quyền nhà nước, đơn vị sự nghiệp công lập, doanh nghiệp nước ngoài), hiệp hội ngành nghề, cơ quan, tổ chức, cá nhân liên quan (Điều 2).",
+   "keywords": [
+    "hạn chế cạnh tranh",
+    "tập trung kinh tế",
+    "không lành mạnh",
+    "hiệp hội"
+   ]
+  }
+ ]
+}

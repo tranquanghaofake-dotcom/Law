@@ -134,6 +134,13 @@
     "chịu trách nhiệm",
     "khuôn khổ Hiến pháp và pháp luật"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Nguyên tắc Đảng lãnh đạo chỉ được quy định trong Hiến pháp năm 2013.",
+   "answer": false,
+   "explain": "Sai. Điều 4 Hiến pháp 1980 và Điều 4 Hiến pháp 1992 đã quy định vai trò lãnh đạo của Đảng Cộng sản Việt Nam. (Nhận định trong bộ câu hỏi ôn tập Luật Hiến pháp, Drive HLU.)"
   }
  ]
 }

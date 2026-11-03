@@ -1,0 +1,116 @@
+{
+ "id": "ldt-hop-dong-bcc",
+ "subject": "dau-tu",
+ "chapter": "v5",
+ "term": "Hợp đồng hợp tác kinh doanh (BCC)",
+ "definition": "Hợp đồng hợp tác kinh doanh (sau đây gọi là hợp đồng BCC) là hợp đồng được ký giữa các nhà đầu tư nhằm hợp tác kinh doanh, phân chia lợi nhuận, phân chia sản phẩm theo quy định của pháp luật mà không thành lập tổ chức kinh tế.",
+ "plain": "Đặc trưng: ký giữa các NHÀ ĐẦU TƯ; hợp tác kinh doanh, PHÂN CHIA LỢI NHUẬN hoặc SẢN PHẨM; KHÔNG THÀNH LẬP tổ chức kinh tế (không có pháp nhân mới). BCC giữa nhà đầu tư trong nước theo pháp luật dân sự; BCC có nhà đầu tư nước ngoài phải làm thủ tục cấp Giấy chứng nhận đăng ký đầu tư (Điều 22). Các bên thành lập BAN ĐIỀU PHỐI. Phân biệt hợp đồng PPP (đối tác công tư — Luật PPP riêng, chưa có trong kho văn bản của ứng dụng).",
+ "example": "Công ty viễn thông Việt Nam R và công ty Pháp S ký hợp đồng cùng khai thác dịch vụ, chia lợi nhuận theo tỷ lệ 60/40, không lập công ty mới: hợp đồng BCC, phải xin Giấy chứng nhận đăng ký đầu tư.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 14 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Dau-tu/Van-ban-hop-nhat-142-2026-VBHN-LQ-VPQH-Luat-Dau-tu-726675.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "ldt-hinh-thuc-dau-tu",
+  "ldt-to-chuc-kinh-te"
+ ],
+ "keywords": [
+  "phân chia lợi nhuận",
+  "phân chia sản phẩm",
+  "không thành lập tổ chức kinh tế",
+  "ban điều phối"
+ ],
+ "note": "Luật Đầu tư 143/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Đầu tư 61/2020/QH14 mà đề cương HLU 2021 còn dẫn (khoản 4 Điều 51). Luật 24/2026/QH16 sửa đổi có hiệu lực từ 01/3/2027 (riêng một phần Điều 6 từ 01/01/2027), chỉ sửa Điều 6 và Phụ lục IV, không sửa điều được trích — văn bản hợp nhất 142/2026/VBHN-LQ-VPQH.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đặc điểm của hợp đồng BCC theo khoản 14 Điều 3?",
+   "options": [
+    "Không thành lập tổ chức kinh tế",
+    "Phải thành lập công ty liên doanh",
+    "Ký giữa Nhà nước và nhà đầu tư",
+    "Chỉ ký với nhà đầu tư nước ngoài"
+   ],
+   "answer": 0,
+   "explain": "Khoản 14 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 14 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hợp đồng BCC giữa nhà đầu tư trong nước với nhà đầu tư nước ngoài phải làm thủ tục gì?",
+   "options": [
+    "Cấp Giấy chứng nhận đăng ký đầu tư theo Điều 26",
+    "Không phải làm thủ tục gì",
+    "Chỉ công chứng hợp đồng",
+    "Đăng ký doanh nghiệp mới"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 22.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 22 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hợp đồng BCC",
+   "right": "Thành lập tổ chức kinh tế",
+   "cases": [
+    {
+     "text": "Hai công ty hợp tác khai thác mỏ, chia sản phẩm, không lập công ty mới",
+     "answer": "left"
+    },
+    {
+     "text": "Hai nhà đầu tư cùng góp vốn lập công ty TNHH",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 14 Điều 3; Điều 18."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hợp đồng BCC là hợp đồng được ký giữa các nhà đầu tư nhằm hợp tác kinh doanh, phân chia {{lợi nhuận}}, phân chia sản phẩm mà không thành lập {{tổ chức kinh tế}}.",
+   "bank_extra": [
+    "rủi ro",
+    "chi nhánh"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Các bên tham gia hợp đồng BCC thành lập {{ban điều phối}} để thực hiện hợp đồng; chức năng, nhiệm vụ, quyền hạn của ban điều phối do các bên {{thỏa thuận}}.",
+   "bank_extra": [
+    "hội đồng quản trị",
+    "pháp luật quy định"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hợp đồng BCC giữa các nhà đầu tư trong nước thực hiện theo pháp luật về dân sự.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 22."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm và đặc điểm pháp lý của hợp đồng BCC.",
+   "model": "Hợp đồng giữa các nhà đầu tư nhằm hợp tác kinh doanh, phân chia lợi nhuận, sản phẩm mà không thành lập tổ chức kinh tế (khoản 14 Điều 3); BCC có nhà đầu tư nước ngoài phải cấp Giấy chứng nhận đăng ký đầu tư; các bên lập ban điều phối (Điều 22).",
+   "keywords": [
+    "phân chia lợi nhuận",
+    "không thành lập tổ chức kinh tế",
+    "Giấy chứng nhận",
+    "ban điều phối"
+   ]
+  }
+ ]
+}

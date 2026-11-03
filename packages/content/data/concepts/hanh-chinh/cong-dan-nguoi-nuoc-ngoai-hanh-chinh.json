@@ -1,0 +1,115 @@
+{
+ "id": "cong-dan-nguoi-nuoc-ngoai-hanh-chinh",
+ "subject": "hanh-chinh",
+ "chapter": "v11",
+ "term": "Quy chế pháp lý hành chính của công dân, người nước ngoài",
+ "definition": "Năng lực pháp luật hành chính của công dân là khả năng công dân được hưởng quyền và gánh vác nghĩa vụ pháp lý hành chính do Nhà nước quy định. Năng lực hành vi hành chính là khả năng công dân bằng hành vi của mình thực hiện quyền, nghĩa vụ pháp lý hành chính và tự chịu trách nhiệm về hành vi đó.",
+ "plain": "Năng lực PHÁP LUẬT hành chính có từ khi sinh ra, mở rộng dần theo độ tuổi (quyền bầu cử từ 18 tuổi, ứng cử từ 21 tuổi — Điều 27 Hiến pháp); năng lực HÀNH VI phụ thuộc độ tuổi, trình độ, sức khỏe (ví dụ từ đủ 14 tuổi có thể bị xử phạt vi phạm hành chính khi cố ý — Điều 5 Luật XLVPHC). Người nước ngoài: được hưởng chế độ đối xử như công dân Việt Nam trong nhiều lĩnh vực (đối xử quốc gia), nhưng bị hạn chế một số quyền chính trị (bầu cử, ứng cử, làm công chức) và có thể được hưởng quyền ưu đãi, miễn trừ ngoại giao.",
+ "example": "Công dân 16 tuổi có thể bị xử phạt hành chính khi vi phạm, nhưng chưa có quyền bầu cử; người nước ngoài làm việc tại Việt Nam phải tuân theo pháp luật hành chính Việt Nam nhưng không được ứng cử đại biểu Quốc hội.",
+ "source": {
+  "kind": "textbook",
+  "cite": "Giáo trình Luật Hành chính Việt Nam, Trường Đại học Luật Hà Nội; đề cương Luật Hành chính vấn đề 11 — tóm lược quan điểm học thuật phổ biến, chưa đối chiếu nguyên văn"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "to-chuc-xa-hoi",
+  "doi-tuong-bi-xu-phat",
+  "quan-he-phap-luat-hanh-chinh"
+ ],
+ "keywords": [
+  "năng lực pháp luật hành chính",
+  "năng lực hành vi hành chính",
+  "phụ thuộc độ tuổi",
+  "hạn chế quyền chính trị của người nước ngoài"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Năng lực hành vi hành chính của công dân phụ thuộc vào yếu tố nào?",
+   "options": [
+    "Độ tuổi, trình độ, sức khỏe",
+    "Tài sản",
+    "Tôn giáo",
+    "Giới tính"
+   ],
+   "answer": 0,
+   "explain": "Học thuyết.",
+   "source": {
+    "kind": "statute",
+    "cite": "Học thuyết x"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người nước ngoài cư trú tại Việt Nam KHÔNG có quyền nào sau đây?",
+   "options": [
+    "Ứng cử đại biểu Quốc hội Việt Nam",
+    "Được bảo vệ tính mạng, tài sản",
+    "Khiếu nại quyết định hành chính xâm phạm quyền lợi của mình",
+    "Kinh doanh theo pháp luật"
+   ],
+   "answer": 0,
+   "explain": "Học thuyết; Điều 27 Hiến pháp 2013 (quyền của công dân).",
+   "source": {
+    "kind": "statute",
+    "cite": "Học thuyết x"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Năng lực pháp luật hành chính",
+   "right": "Năng lực hành vi hành chính",
+   "cases": [
+    {
+     "text": "Khả năng được hưởng quyền, gánh vác nghĩa vụ",
+     "answer": "left"
+    },
+    {
+     "text": "Khả năng tự mình thực hiện quyền, nghĩa vụ và tự chịu trách nhiệm",
+     "answer": "right"
+    }
+   ],
+   "explain": "Học thuyết."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Năng lực {{pháp luật}} hành chính là khả năng được hưởng quyền và gánh vác nghĩa vụ; năng lực {{hành vi}} hành chính là khả năng tự mình thực hiện và chịu trách nhiệm.",
+   "bank_extra": [
+    "kinh doanh",
+    "tài sản"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người nước ngoài có thể được hưởng quyền ưu đãi, {{miễn trừ}} ngoại giao.",
+   "bank_extra": [
+    "bầu cử",
+    "ứng cử"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người nước ngoài tại Việt Nam được hưởng đầy đủ mọi quyền như công dân Việt Nam, kể cả quyền bầu cử.",
+   "answer": false,
+   "explain": "Sai. Quyền bầu cử, ứng cử là quyền của công dân Việt Nam (Điều 27 Hiến pháp 2013)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Phân biệt năng lực pháp luật hành chính và năng lực hành vi hành chính của công dân; nêu đặc điểm quy chế của người nước ngoài.",
+   "model": "Năng lực pháp luật: khả năng được hưởng quyền, gánh vác nghĩa vụ hành chính; năng lực hành vi: khả năng tự thực hiện và chịu trách nhiệm, phụ thuộc độ tuổi, sức khỏe. Người nước ngoài được đối xử như công dân trong nhiều lĩnh vực nhưng bị hạn chế quyền chính trị, có thể được miễn trừ ngoại giao.",
+   "keywords": [
+    "năng lực pháp luật",
+    "năng lực hành vi",
+    "độ tuổi",
+    "miễn trừ"
+   ]
+  }
+ ]
+}

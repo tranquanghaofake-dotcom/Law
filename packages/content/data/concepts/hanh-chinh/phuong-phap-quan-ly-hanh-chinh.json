@@ -1,0 +1,119 @@
+{
+ "id": "phuong-phap-quan-ly-hanh-chinh",
+ "subject": "hanh-chinh",
+ "chapter": "v5",
+ "term": "Hình thức và phương pháp quản lý hành chính nhà nước",
+ "definition": "Hình thức quản lý hành chính nhà nước là những biểu hiện bên ngoài có tính tổ chức pháp lý của những hoạt động cụ thể cùng loại của chủ thể quản lý hành chính nhà nước nhằm hoàn thành những nhiệm vụ đã đặt ra trước đó. (…) Phương pháp quản lý hành chính nhà nước là cách thức tổ chức và hoạt động quản lý hành chính nhà nước.",
+ "plain": "HÌNH THỨC = \"làm gì\": ban hành văn bản quy phạm pháp luật (quan trọng nhất), ban hành văn bản áp dụng pháp luật (thông dụng nhất), thực hiện hoạt động khác mang tính pháp lý (lập biên bản, cấp phép, công chứng…), áp dụng biện pháp tổ chức trực tiếp, thực hiện tác động nghiệp vụ – kỹ thuật. PHƯƠNG PHÁP = \"tác động bằng cách nào\": slide bài giảng trình bày hai phương pháp THUYẾT PHỤC (phương pháp hàng đầu, áp dụng với mọi đối tượng) và CƯỠNG CHẾ (chỉ khi thuyết phục không đạt, đúng đối tượng, trình tự, chủ thể có thẩm quyền). Chủ thể quản lý hành chính chỉ được áp dụng cưỡng chế hành chính và cưỡng chế kỷ luật. Một số tài liệu khác còn nêu phương pháp hành chính (mệnh lệnh trực tiếp) và phương pháp kinh tế (tác động qua lợi ích vật chất).",
+ "example": "Để giảm ùn tắc, thành phố vừa tuyên truyền (thuyết phục), vừa xử phạt vi phạm (cưỡng chế), vừa giảm phí gửi xe ở ngoại vi (phương pháp kinh tế).",
+ "source": {
+  "kind": "textbook",
+  "cite": "Slide bài giảng Luật Hành chính Việt Nam, Trường Đại học Luật Hà Nội, vấn đề 5 (\"VĐ O5 - HCPC\", TS. Nguyễn Thị Thủy) — đã khớp nguyên văn slide (laws/hc-slide-trich.txt); slide không phải giáo trình, giáo trình chưa đối chiếu"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nguyen-tac-quan-ly-hanh-chinh",
+  "quyet-dinh-hanh-chinh",
+  "cuong-che-thi-hanh-xu-phat"
+ ],
+ "keywords": [
+  "văn bản quy phạm, áp dụng pháp luật",
+  "thuyết phục là cơ bản",
+  "cưỡng chế hỗ trợ",
+  "phương pháp kinh tế tác động gián tiếp"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Phương pháp quản lý nào được coi là cơ bản, áp dụng trước?",
+   "options": [
+    "Thuyết phục",
+    "Cưỡng chế",
+    "Phương pháp kinh tế",
+    "Phương pháp hành chính"
+   ],
+   "answer": 0,
+   "explain": "Slide bài giảng vấn đề 5.",
+   "source": {
+    "kind": "statute",
+    "cite": "Học thuyết x"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Phương pháp cưỡng chế trong quản lý hành chính nhà nước được áp dụng khi nào?",
+   "options": [
+    "Khi thuyết phục không đạt, đúng đối tượng, trình tự và do chủ thể có thẩm quyền áp dụng",
+    "Bất cứ khi nào chủ thể quản lý muốn",
+    "Trước khi thuyết phục",
+    "Chỉ do Tòa án áp dụng"
+   ],
+   "answer": 0,
+   "explain": "Slide bài giảng vấn đề 5: đặc điểm phương pháp cưỡng chế.",
+   "source": {
+    "kind": "statute",
+    "cite": "Học thuyết x"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hình thức quản lý",
+   "right": "Phương pháp quản lý",
+   "cases": [
+    {
+     "text": "Ban hành văn bản áp dụng pháp luật",
+     "answer": "left"
+    },
+    {
+     "text": "Cưỡng chế",
+     "answer": "right"
+    },
+    {
+     "text": "Áp dụng biện pháp tổ chức trực tiếp",
+     "answer": "left"
+    }
+   ],
+   "explain": "Slide bài giảng vấn đề 5."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hình thức quản lý hành chính nhà nước là những biểu hiện {{bên ngoài}} có tính tổ chức {{pháp lý}} của những hoạt động cụ thể cùng loại của chủ thể quản lý.",
+   "bank_extra": [
+    "bên trong",
+    "kinh tế"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Theo slide bài giảng, hai phương pháp quản lý hành chính nhà nước là {{thuyết phục}} và {{cưỡng chế}}.",
+   "bank_extra": [
+    "hòa giải",
+    "thỏa thuận"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Cưỡng chế là phương pháp chủ yếu, luôn áp dụng trước thuyết phục.",
+   "answer": false,
+   "explain": "Sai. Thuyết phục là phương pháp cơ bản; cưỡng chế chỉ áp dụng khi thuyết phục không hiệu quả."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Phân biệt hình thức và phương pháp quản lý hành chính nhà nước.",
+   "model": "Hình thức là biểu hiện bên ngoài có tính tổ chức pháp lý của hoạt động cụ thể cùng loại (ban hành văn bản quy phạm, văn bản áp dụng pháp luật, hoạt động pháp lý khác, biện pháp tổ chức trực tiếp, tác động nghiệp vụ – kỹ thuật); phương pháp là cách thức tổ chức và hoạt động quản lý, gồm thuyết phục và cưỡng chế.",
+   "keywords": [
+    "biểu hiện bên ngoài",
+    "văn bản",
+    "thuyết phục",
+    "cưỡng chế"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "id": "hoat-dong-thuong-mai",
+ "subject": "thuong-mai",
+ "chapter": "v1",
+ "term": "Hoạt động thương mại và hàng hóa",
+ "definition": "Hoạt động thương mại là hoạt động nhằm mục đích sinh lợi, bao gồm mua bán hàng hóa, cung ứng dịch vụ, đầu tư, xúc tiến thương mại và các hoạt động nhằm mục đích sinh lợi khác. Hàng hóa bao gồm: a) Tất cả các loại động sản, kể cả động sản hình thành trong tương lai; b) Những vật gắn liền với đất đai.",
+ "plain": "Dấu hiệu cốt lõi: MỤC ĐÍCH SINH LỢI. Chủ thể chủ yếu là THƯƠNG NHÂN (Điều 6: tổ chức kinh tế thành lập hợp pháp, cá nhân hoạt động thương mại độc lập, thường xuyên, có đăng ký kinh doanh). HÀNG HÓA theo LTM hẹp hơn \"tài sản\" BLDS: động sản (kể cả hình thành trong tương lai) và vật gắn liền với đất đai — KHÔNG gồm quyền sử dụng đất, nhà ở như một bất động sản (mua bán theo luật chuyên ngành). Luật Thương mại là luật chuyên ngành, ưu tiên áp dụng so với BLDS (Điều 4).",
+ "example": "Công ty mua 1.000 tấn gạo để xuất khẩu kiếm lời: hoạt động thương mại. Hai người bạn bán cho nhau chiếc xe cũ để dùng: giao dịch dân sự.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 3 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "mua-ban-hang-hoa",
+  "che-tai-thuong-mai"
+ ],
+ "keywords": [
+  "mục đích sinh lợi",
+  "mua bán, dịch vụ, đầu tư, xúc tiến",
+  "động sản kể cả hình thành trong tương lai",
+  "vật gắn liền với đất đai"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Dấu hiệu đặc trưng của hoạt động thương mại là gì?",
+   "options": [
+    "Nhằm mục đích sinh lợi",
+    "Có sự tham gia của Nhà nước",
+    "Phải có hợp đồng công chứng",
+    "Giá trị trên 100 triệu"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 3 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hàng hóa theo Luật Thương mại gồm những gì?",
+   "options": [
+    "Tất cả các loại động sản, kể cả hình thành trong tương lai, và vật gắn liền với đất đai",
+    "Mọi tài sản, kể cả quyền sử dụng đất",
+    "Chỉ động sản hiện có",
+    "Chỉ hàng hóa xuất nhập khẩu"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 3 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hoạt động thương mại",
+   "right": "Không phải hoạt động thương mại",
+   "cases": [
+    {
+     "text": "Doanh nghiệp bán hàng để thu lợi nhuận",
+     "answer": "left"
+    },
+    {
+     "text": "Tặng quà sinh nhật cho bạn",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 3."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hoạt động thương mại là hoạt động nhằm mục đích {{sinh lợi}}, bao gồm mua bán hàng hóa, cung ứng dịch vụ, đầu tư, {{xúc tiến thương mại}}.",
+   "bank_extra": [
+    "từ thiện",
+    "quản lý nhà nước"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hàng hóa bao gồm tất cả các loại động sản, kể cả động sản hình thành trong {{tương lai}}; những vật gắn liền với {{đất đai}}.",
+   "bank_extra": [
+    "quá khứ",
+    "nhà nước"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quyền sử dụng đất là hàng hóa theo khoản 2 Điều 3 Luật Thương mại.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 3 chỉ gồm động sản và vật gắn liền với đất đai."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm hoạt động thương mại và hàng hóa theo Luật Thương mại 2005.",
+   "model": "Hoạt động thương mại là hoạt động nhằm mục đích sinh lợi: mua bán hàng hóa, cung ứng dịch vụ, đầu tư, xúc tiến thương mại… (khoản 1 Điều 3); hàng hóa gồm mọi động sản, kể cả hình thành trong tương lai, và vật gắn liền với đất đai (khoản 2).",
+   "keywords": [
+    "sinh lợi",
+    "mua bán",
+    "động sản",
+    "đất đai"
+   ]
+  }
+ ]
+}

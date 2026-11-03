@@ -109,6 +109,13 @@
     "kỳ họp",
     "Ủy ban thường vụ"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quyền chất vấn của đại biểu Quốc hội chỉ được thực hiện tại kỳ họp của Quốc hội.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 80 Hiến pháp 2013: người bị chất vấn trả lời tại kỳ họp hoặc tại phiên họp Ủy ban thường vụ Quốc hội giữa hai kỳ họp; cần thiết có thể trả lời bằng văn bản. (Nhận định trong bộ câu hỏi ôn tập Luật Hiến pháp, Drive HLU.)"
   }
  ]
 }

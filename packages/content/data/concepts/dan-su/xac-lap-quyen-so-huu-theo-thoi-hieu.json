@@ -1,0 +1,116 @@
+{
+ "id": "xac-lap-quyen-so-huu-theo-thoi-hieu",
+ "subject": "dan-su",
+ "chapter": "v8",
+ "term": "Xác lập quyền sở hữu theo thời hiệu do chiếm hữu",
+ "definition": "Người chiếm hữu, người được lợi về tài sản không có căn cứ pháp luật nhưng ngay tình, liên tục, công khai trong thời hạn 10 năm đối với động sản, 30 năm đối với bất động sản thì trở thành chủ sở hữu tài sản đó, kể từ thời điểm bắt đầu chiếm hữu, trừ trường hợp Bộ luật này, luật khác có liên quan quy định khác.",
+ "plain": "Bốn điều kiện: (1) KHÔNG CÓ CĂN CỨ PHÁP LUẬT; (2) NGAY TÌNH; (3) LIÊN TỤC; (4) CÔNG KHAI; cộng với đủ thời hạn: 10 NĂM với động sản, 30 NĂM với bất động sản. Quyền sở hữu được tính từ thời điểm bắt đầu chiếm hữu. Đây là một trong các căn cứ xác lập quyền sở hữu tại khoản 6 Điều 221.",
+ "example": "Bà A chiếm hữu ngay tình, liên tục, công khai một mảnh đất (không có giấy tờ) suốt 30 năm, không ai tranh chấp: có thể trở thành chủ sở hữu theo Điều 236, trừ trường hợp luật đất đai có quy định khác.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 236 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "chiem-huu",
+  "bat-dong-san-dong-san",
+  "thoi-hieu"
+ ],
+ "keywords": [
+  "ngay tình, liên tục, công khai",
+  "10 năm động sản",
+  "30 năm bất động sản",
+  "từ thời điểm bắt đầu chiếm hữu"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thời hạn chiếm hữu ngay tình, liên tục, công khai để xác lập quyền sở hữu đối với động sản là bao lâu?",
+   "options": [
+    "10 năm",
+    "5 năm",
+    "20 năm",
+    "30 năm"
+   ],
+   "answer": 0,
+   "explain": "Điều 236.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 236 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Điều kiện nào KHÔNG phải điều kiện xác lập quyền sở hữu theo Điều 236?",
+   "options": [
+    "Có đăng ký với Ủy ban nhân dân",
+    "Ngay tình",
+    "Liên tục",
+    "Công khai"
+   ],
+   "answer": 0,
+   "explain": "Điều 236 không yêu cầu đăng ký.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 236 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Động sản",
+   "right": "Bất động sản",
+   "cases": [
+    {
+     "text": "Thời hạn 10 năm",
+     "answer": "left"
+    },
+    {
+     "text": "Thời hạn 30 năm",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 236."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người chiếm hữu ngay tình, liên tục, {{công khai}} trong thời hạn 10 năm đối với động sản, {{30}} năm đối với bất động sản thì trở thành chủ sở hữu.",
+   "bank_extra": [
+    "bí mật",
+    "20"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quyền sở hữu theo Điều 236 được xác lập kể từ thời điểm bắt đầu {{chiếm hữu}}.",
+   "bank_extra": [
+    "khởi kiện",
+    "đăng ký"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người biết rõ tài sản là của người khác nhưng vẫn chiếm hữu công khai đủ 30 năm thì trở thành chủ sở hữu theo Điều 236.",
+   "answer": false,
+   "explain": "Sai. Điều 236 đòi hỏi chiếm hữu ngay tình; biết rõ tài sản của người khác là không ngay tình."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các điều kiện xác lập quyền sở hữu theo thời hiệu do chiếm hữu.",
+   "model": "Chiếm hữu, được lợi về tài sản không có căn cứ pháp luật nhưng ngay tình, liên tục, công khai trong 10 năm với động sản, 30 năm với bất động sản; trở thành chủ sở hữu kể từ thời điểm bắt đầu chiếm hữu, trừ trường hợp luật quy định khác (Điều 236).",
+   "keywords": [
+    "ngay tình",
+    "liên tục, công khai",
+    "10 năm",
+    "30 năm"
+   ]
+  }
+ ]
+}

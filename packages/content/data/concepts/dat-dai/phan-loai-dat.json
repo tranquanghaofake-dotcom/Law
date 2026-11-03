@@ -1,0 +1,119 @@
+{
+ "id": "phan-loai-dat",
+ "subject": "dat-dai",
+ "chapter": "v1",
+ "term": "Phân loại đất",
+ "definition": "Căn cứ vào mục đích sử dụng, đất đai được phân loại bao gồm nhóm đất nông nghiệp, nhóm đất phi nông nghiệp, nhóm đất chưa sử dụng.",
+ "plain": "Ba nhóm theo MỤC ĐÍCH SỬ DỤNG: NÔNG NGHIỆP (trồng cây hằng năm, lâu năm, lâm nghiệp, nuôi trồng thủy sản, chăn nuôi tập trung, làm muối, nông nghiệp khác); PHI NÔNG NGHIỆP (đất ở, trụ sở, quốc phòng an ninh, công trình sự nghiệp, sản xuất kinh doanh phi nông nghiệp, công cộng, tôn giáo, tín ngưỡng, nghĩa trang…); CHƯA SỬ DỤNG. Mới của Luật 2024: thêm ĐẤT CHĂN NUÔI TẬP TRUNG trong nhóm nông nghiệp. Loại đất quyết định quyền, nghĩa vụ, giá đất, thủ tục chuyển mục đích.",
+ "example": "Thửa đất ghi \"đất trồng cây lâu năm\" muốn xây nhà ở phải xin chuyển mục đích sử dụng đất sang đất ở.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 9 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Van-ban-hop-nhat-44-VBHN-VPQH-2026-Luat-Dat-dai-699655.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "pham-vi-dieu-chinh-luat-dat-dai",
+  "dat-su-dung-on-dinh-lau-dai"
+ ],
+ "keywords": [
+  "căn cứ mục đích sử dụng",
+  "nông nghiệp",
+  "phi nông nghiệp",
+  "chưa sử dụng"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đất đai được phân loại căn cứ vào yếu tố nào?",
+   "options": [
+    "Mục đích sử dụng",
+    "Giá trị",
+    "Vị trí địa lý",
+    "Chủ sử dụng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 9.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 9 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đất ở thuộc nhóm đất nào?",
+   "options": [
+    "Nhóm đất phi nông nghiệp",
+    "Nhóm đất nông nghiệp",
+    "Nhóm đất chưa sử dụng",
+    "Nhóm đất đặc biệt"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 3 Điều 9.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 9 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Nhóm đất nông nghiệp",
+   "right": "Nhóm đất phi nông nghiệp",
+   "cases": [
+    {
+     "text": "Đất nuôi trồng thủy sản",
+     "answer": "left"
+    },
+    {
+     "text": "Đất xây dựng trụ sở cơ quan",
+     "answer": "right"
+    },
+    {
+     "text": "Đất chăn nuôi tập trung",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 9."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đất đai được phân loại gồm nhóm đất {{nông nghiệp}}, nhóm đất phi nông nghiệp, nhóm đất {{chưa sử dụng}}.",
+   "bank_extra": [
+    "công nghiệp",
+    "dự trữ"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Căn cứ vào {{mục đích sử dụng}}, đất đai được phân loại.",
+   "bank_extra": [
+    "giá đất",
+    "diện tích"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Đất làm muối thuộc nhóm đất phi nông nghiệp.",
+   "answer": false,
+   "explain": "Sai. Điểm e khoản 2 Điều 9: thuộc nhóm đất nông nghiệp."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày cách phân loại đất theo Luật Đất đai 2024.",
+   "model": "Căn cứ mục đích sử dụng, đất đai gồm ba nhóm: đất nông nghiệp, đất phi nông nghiệp, đất chưa sử dụng (khoản 1 Điều 9); mỗi nhóm gồm các loại đất cụ thể (khoản 2–4).",
+   "keywords": [
+    "mục đích sử dụng",
+    "nông nghiệp",
+    "phi nông nghiệp",
+    "chưa sử dụng"
+   ]
+  }
+ ]
+}

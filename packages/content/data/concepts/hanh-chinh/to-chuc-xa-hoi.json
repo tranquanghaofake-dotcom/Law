@@ -1,0 +1,114 @@
+{
+ "id": "to-chuc-xa-hoi",
+ "subject": "hanh-chinh",
+ "chapter": "v10",
+ "term": "Quy chế pháp lý hành chính của tổ chức xã hội",
+ "definition": "Tổ chức xã hội là hình thức tổ chức tự nguyện của công dân, tổ chức có chung mục đích, hoạt động theo nguyên tắc tự nguyện, tự quản, tự trang trải kinh phí, không vụ lợi, trong khuôn khổ Hiến pháp và pháp luật. Quy chế pháp lý hành chính của tổ chức xã hội là tổng thể quyền và nghĩa vụ pháp lý hành chính của tổ chức xã hội, được xác lập từ khi tổ chức đó được thành lập hợp pháp.",
+ "plain": "Phân loại thường dùng: tổ chức chính trị – xã hội (Công đoàn, Hội Liên hiệp Phụ nữ, Đoàn Thanh niên, Hội Nông dân, Hội Cựu chiến binh — thành viên Mặt trận Tổ quốc), tổ chức xã hội – nghề nghiệp (Liên đoàn Luật sư, Hội Luật gia), tổ chức xã hội khác (hội, quỹ xã hội, quỹ từ thiện). Hội được thành lập, hoạt động theo quy định của Chính phủ về tổ chức, hoạt động và quản lý hội; quyền lập hội được ghi nhận tại Điều 25 Hiến pháp 2013. Tổ chức xã hội có thể được Nhà nước giao thực hiện một số nhiệm vụ quản lý (ví dụ Liên đoàn Luật sư tham gia quản lý luật sư).",
+ "example": "Một nhóm cựu sinh viên Luật xin thành lập \"Hội cựu sinh viên\": phải được cơ quan có thẩm quyền cho phép thành lập và phê duyệt điều lệ trước khi hoạt động với tư cách hội.",
+ "source": {
+  "kind": "textbook",
+  "cite": "Giáo trình Luật Hành chính Việt Nam, Trường Đại học Luật Hà Nội; đề cương Luật Hành chính vấn đề 10 — tóm lược quan điểm học thuật phổ biến, chưa đối chiếu nguyên văn"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "cong-dan-nguoi-nuoc-ngoai-hanh-chinh",
+  "quan-he-phap-luat-hanh-chinh"
+ ],
+ "keywords": [
+  "tự nguyện, tự quản",
+  "không vụ lợi",
+  "chính trị – xã hội, xã hội – nghề nghiệp",
+  "quyền lập hội"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nguyên tắc hoạt động đặc trưng của tổ chức xã hội là gì?",
+   "options": [
+    "Tự nguyện, tự quản, tự trang trải kinh phí, không vụ lợi",
+    "Mệnh lệnh – phục tùng",
+    "Hạch toán kinh doanh để chia lợi nhuận",
+    "Do Nhà nước bổ nhiệm lãnh đạo"
+   ],
+   "answer": 0,
+   "explain": "Học thuyết.",
+   "source": {
+    "kind": "statute",
+    "cite": "Học thuyết x"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tổ chức nào là tổ chức xã hội – nghề nghiệp?",
+   "options": [
+    "Liên đoàn Luật sư Việt Nam",
+    "Ủy ban nhân dân tỉnh",
+    "Bộ Tư pháp",
+    "Công ty cổ phần"
+   ],
+   "answer": 0,
+   "explain": "Học thuyết.",
+   "source": {
+    "kind": "statute",
+    "cite": "Học thuyết x"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tổ chức chính trị – xã hội",
+   "right": "Tổ chức xã hội – nghề nghiệp",
+   "cases": [
+    {
+     "text": "Tổng Liên đoàn Lao động Việt Nam",
+     "answer": "left"
+    },
+    {
+     "text": "Hội Luật gia Việt Nam",
+     "answer": "right"
+    }
+   ],
+   "explain": "Học thuyết; Điều 9, 10 Hiến pháp 2013."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tổ chức xã hội hoạt động theo nguyên tắc tự nguyện, {{tự quản}}, tự trang trải kinh phí, {{không vụ lợi}}.",
+   "bank_extra": [
+    "bắt buộc",
+    "vì lợi nhuận"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quyền lập hội của công dân được ghi nhận tại Điều {{25}} Hiến pháp 2013.",
+   "bank_extra": [
+    "14",
+    "9"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tổ chức xã hội không bao giờ được thực hiện nhiệm vụ quản lý nhà nước.",
+   "answer": false,
+   "explain": "Sai. Nhà nước có thể giao một số nhiệm vụ cho tổ chức xã hội, ví dụ tổ chức xã hội – nghề nghiệp tham gia quản lý hành nghề."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm và phân loại tổ chức xã hội trong luật hành chính.",
+   "model": "Tổ chức tự nguyện của công dân, tổ chức có chung mục đích, hoạt động tự nguyện, tự quản, tự trang trải, không vụ lợi; gồm tổ chức chính trị – xã hội, tổ chức xã hội – nghề nghiệp, tổ chức xã hội khác (hội, quỹ); quyền lập hội theo Điều 25 Hiến pháp.",
+   "keywords": [
+    "tự nguyện",
+    "tự quản",
+    "chính trị – xã hội",
+    "lập hội"
+   ]
+  }
+ ]
+}

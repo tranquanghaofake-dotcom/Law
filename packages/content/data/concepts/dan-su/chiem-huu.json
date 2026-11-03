@@ -1,0 +1,115 @@
+{
+ "id": "chiem-huu",
+ "subject": "dan-su",
+ "chapter": "v7",
+ "term": "Chiếm hữu",
+ "definition": "Chiếm hữu là việc chủ thể nắm giữ, chi phối tài sản một cách trực tiếp hoặc gián tiếp như chủ thể có quyền đối với tài sản. Chiếm hữu bao gồm chiếm hữu của chủ sở hữu và chiếm hữu của người không phải là chủ sở hữu.",
+ "plain": "BLDS 2015 tách CHIẾM HỮU thành chế định riêng (Điều 179–185), là một TÌNH TRẠNG thực tế được pháp luật bảo vệ. Phân loại: chiếm hữu NGAY TÌNH (có căn cứ để tin mình có quyền) và không ngay tình; chiếm hữu LIÊN TỤC; chiếm hữu CÔNG KHAI. Chiếm hữu của người không phải chủ sở hữu không thể là căn cứ xác lập quyền sở hữu, trừ các trường hợp luật định (như Điều 236). Người chiếm hữu được suy đoán là ngay tình (Điều 184).",
+ "example": "Người mua chiếc điện thoại cũ ở cửa hàng có hóa đơn, không biết đó là đồ trộm cắp: là người chiếm hữu ngay tình.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 179 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quyen-so-huu",
+  "xac-lap-quyen-so-huu-theo-thoi-hieu"
+ ],
+ "keywords": [
+  "nắm giữ, chi phối",
+  "trực tiếp hoặc gián tiếp",
+  "ngay tình",
+  "liên tục, công khai"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chiếm hữu là gì theo khoản 1 Điều 179?",
+   "options": [
+    "Việc chủ thể nắm giữ, chi phối tài sản trực tiếp hoặc gián tiếp như chủ thể có quyền",
+    "Quyền định đoạt tài sản",
+    "Việc đăng ký quyền sở hữu",
+    "Quyền thừa kế tài sản"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 179.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 179 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Việc chiếm hữu của người không phải chủ sở hữu có làm phát sinh quyền sở hữu không?",
+   "options": [
+    "Không, trừ các trường hợp luật quy định",
+    "Luôn luôn có",
+    "Có sau 1 năm",
+    "Có nếu tài sản dưới 10 triệu"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 179.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 179 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Chiếm hữu ngay tình",
+   "right": "Chiếm hữu không ngay tình",
+   "cases": [
+    {
+     "text": "Mua đồ ở cửa hàng có hóa đơn, không biết là đồ gian",
+     "answer": "left"
+    },
+    {
+     "text": "Biết rõ là tài sản trộm cắp nhưng vẫn mua rẻ",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 180, 181 Bộ luật Dân sự 2015."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chiếm hữu là việc chủ thể nắm giữ, {{chi phối}} tài sản một cách trực tiếp hoặc {{gián tiếp}} như chủ thể có quyền đối với tài sản.",
+   "bank_extra": [
+    "đăng ký",
+    "công khai"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chiếm hữu bao gồm chiếm hữu của chủ sở hữu và chiếm hữu của người không phải là {{chủ sở hữu}}.",
+   "bank_extra": [
+    "người thuê",
+    "Nhà nước"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chỉ chủ sở hữu mới có thể chiếm hữu tài sản.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 179: chiếm hữu gồm cả chiếm hữu của người không phải là chủ sở hữu."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm chiếm hữu và các loại chiếm hữu.",
+   "model": "Chiếm hữu là việc nắm giữ, chi phối tài sản trực tiếp hoặc gián tiếp như chủ thể có quyền (khoản 1 Điều 179); gồm chiếm hữu của chủ sở hữu và của người không phải chủ sở hữu; phân loại ngay tình, không ngay tình, liên tục, công khai (Điều 180–183).",
+   "keywords": [
+    "nắm giữ, chi phối",
+    "chủ sở hữu",
+    "ngay tình",
+    "liên tục, công khai"
+   ]
+  }
+ ]
+}

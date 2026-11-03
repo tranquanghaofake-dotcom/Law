@@ -1,0 +1,115 @@
+{
+ "id": "an-treo",
+ "subject": "hinh-su",
+ "chapter": "v14",
+ "term": "Án treo",
+ "definition": "Khi xử phạt tù không quá 03 năm, căn cứ vào nhân thân của người phạm tội và các tình tiết giảm nhẹ, nếu xét thấy không cần phải bắt chấp hành hình phạt tù, thì Tòa án cho hưởng án treo và ấn định thời gian thử thách từ 01 năm đến 05 năm và thực hiện các nghĩa vụ trong thời gian thử thách theo quy định của Luật Thi hành án hình sự.",
+ "plain": "Án treo là biện pháp MIỄN CHẤP HÀNH HÌNH PHẠT TÙ CÓ ĐIỀU KIỆN, KHÔNG PHẢI hình phạt. Điều kiện: bị xử phạt tù KHÔNG QUÁ 03 NĂM; căn cứ NHÂN THÂN và TÌNH TIẾT GIẢM NHẸ; xét thấy không cần bắt chấp hành. Thời gian thử thách 01–05 năm. Trong thời gian thử thách, cố ý vi phạm nghĩa vụ 02 lần trở lên → có thể buộc chấp hành hình phạt tù; phạm tội mới → buộc chấp hành án cũ và tổng hợp với án mới (khoản 5). Đã chấp hành một phần hai thời gian thử thách, nhiều tiến bộ → có thể rút ngắn (khoản 4).",
+ "example": "A bị xử phạt 2 năm tù về tội trộm cắp, phạm tội lần đầu, đã bồi thường, có nơi cư trú rõ ràng: Tòa án có thể cho A hưởng án treo, thời gian thử thách 4 năm.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 65 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "he-thong-hinh-phat",
+  "xoa-an-tich"
+ ],
+ "keywords": [
+  "phạt tù không quá 03 năm",
+  "nhân thân, tình tiết giảm nhẹ",
+  "thời gian thử thách 01 đến 05 năm",
+  "không phải hình phạt"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Án treo chỉ áp dụng khi người phạm tội bị xử phạt tù không quá bao lâu?",
+   "options": [
+    "03 năm",
+    "05 năm",
+    "02 năm",
+    "07 năm"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 65.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 65 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thời gian thử thách của án treo là bao lâu?",
+   "options": [
+    "Từ 01 năm đến 05 năm",
+    "Từ 06 tháng đến 03 năm",
+    "Bằng thời hạn phạt tù",
+    "Từ 02 năm đến 07 năm"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 65.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 65 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Án treo",
+   "right": "Tù có thời hạn",
+   "cases": [
+    {
+     "text": "Không phải chấp hành hình phạt tù nếu không vi phạm trong thời gian thử thách",
+     "answer": "left"
+    },
+    {
+     "text": "Hình phạt chính, phải chấp hành tại cơ sở giam giữ",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 32, 65."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Khi xử phạt tù không quá {{03}} năm, nếu xét thấy không cần phải bắt chấp hành hình phạt tù, Tòa án cho hưởng án treo và ấn định thời gian thử thách từ 01 năm đến {{05}} năm.",
+   "bank_extra": [
+    "05",
+    "07"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người được hưởng án treo đã chấp hành được một phần {{hai}} thời gian thử thách và có nhiều tiến bộ thì Tòa án có thể quyết định rút ngắn thời gian thử thách.",
+   "bank_extra": [
+    "ba",
+    "tư"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Án treo là một loại hình phạt chính.",
+   "answer": false,
+   "explain": "Sai. Án treo là biện pháp miễn chấp hành hình phạt tù có điều kiện (Điều 65), không có trong Điều 32."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày điều kiện cho hưởng án treo và hậu quả khi vi phạm.",
+   "model": "Bị xử phạt tù không quá 03 năm; căn cứ nhân thân, tình tiết giảm nhẹ, xét thấy không cần chấp hành; thời gian thử thách 01–05 năm (khoản 1 Điều 65); cố ý vi phạm nghĩa vụ 02 lần trở lên có thể buộc chấp hành án tù; phạm tội mới thì buộc chấp hành án cũ và tổng hợp với án mới (khoản 5).",
+   "keywords": [
+    "không quá 03 năm",
+    "nhân thân",
+    "thử thách",
+    "tổng hợp"
+   ]
+  }
+ ]
+}

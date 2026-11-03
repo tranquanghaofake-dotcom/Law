@@ -1,0 +1,115 @@
+{
+ "id": "dau-gia-hang-hoa",
+ "subject": "thuong-mai",
+ "chapter": "v5",
+ "term": "Đấu giá hàng hóa",
+ "definition": "Đấu giá hàng hóa là hoạt động thương mại, theo đó người bán hàng tự mình hoặc thuê người tổ chức đấu giá thực hiện việc bán hàng hóa công khai để chọn người mua trả giá cao nhất. Việc đấu giá hàng hóa được thực hiện theo một trong hai phương thức sau đây: a) Phương thức trả giá lên là phương thức bán đấu giá, theo đó người trả giá cao nhất so với giá khởi điểm là người có quyền mua hàng;",
+ "plain": "Mục đích: chọn người TRẢ GIÁ CAO NHẤT, bán CÔNG KHAI. Hai phương thức: TRẢ GIÁ LÊN và ĐẶT GIÁ XUỐNG (người đầu tiên chấp nhận giá khởi điểm hoặc giá hạ thấp). Nguyên tắc: CÔNG KHAI, TRUNG THỰC, bảo đảm quyền lợi các bên (Điều 188). Phân biệt: đấu giá TÀI SẢN theo Luật Đấu giá tài sản 2016 (tài sản thi hành án, quyền sử dụng đất…) với đấu giá hàng hóa trong thương mại theo LTM.",
+ "example": "Doanh nghiệp tự tổ chức bán đấu giá lô hàng tồn kho, giá khởi điểm 100 triệu, người trả 150 triệu cao nhất được mua: đấu giá theo phương thức trả giá lên.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, điểm a khoản 2 Điều 185 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "dau-thau-hang-hoa",
+  "mua-ban-hang-hoa"
+ ],
+ "keywords": [
+  "bán công khai",
+  "người trả giá cao nhất",
+  "trả giá lên",
+  "đặt giá xuống"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Mục đích của đấu giá hàng hóa là gì?",
+   "options": [
+    "Bán hàng hóa công khai để chọn người mua trả giá cao nhất",
+    "Chọn nhà cung cấp giá thấp nhất",
+    "Khuyến mại",
+    "Môi giới"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 185.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 185 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Phương thức đặt giá xuống: ai là người có quyền mua hàng?",
+   "options": [
+    "Người đầu tiên chấp nhận ngay mức giá khởi điểm hoặc mức giá được hạ thấp hơn",
+    "Người trả giá cao nhất",
+    "Người đăng ký sớm nhất",
+    "Người được bên bán chỉ định"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 2 Điều 185.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 185 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Đấu giá hàng hóa",
+   "right": "Đấu thầu hàng hóa",
+   "cases": [
+    {
+     "text": "Bên bán chọn người trả giá cao nhất",
+     "answer": "left"
+    },
+    {
+     "text": "Bên mua chọn nhà cung cấp đáp ứng tốt nhất",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 185, 214."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người bán hàng tự mình hoặc thuê người tổ chức đấu giá thực hiện việc bán hàng hóa {{công khai}} để chọn người mua trả giá {{cao nhất}}.",
+   "bank_extra": [
+    "bí mật",
+    "thấp nhất"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Việc đấu giá hàng hóa phải được thực hiện theo nguyên tắc công khai, {{trung thực}}, bảo đảm quyền, lợi ích hợp pháp của các bên.",
+   "bank_extra": [
+    "nhanh chóng",
+    "bí mật"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Đấu giá hàng hóa chỉ có một phương thức là trả giá lên.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 185 có hai phương thức: trả giá lên và đặt giá xuống."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm và phương thức đấu giá hàng hóa.",
+   "model": "Là hoạt động thương mại theo đó người bán tự mình hoặc thuê người tổ chức đấu giá bán hàng hóa công khai để chọn người trả giá cao nhất (khoản 1 Điều 185); hai phương thức: trả giá lên, đặt giá xuống (khoản 2); nguyên tắc công khai, trung thực (Điều 188).",
+   "keywords": [
+    "công khai",
+    "cao nhất",
+    "trả giá lên",
+    "đặt giá xuống"
+   ]
+  }
+ ]
+}

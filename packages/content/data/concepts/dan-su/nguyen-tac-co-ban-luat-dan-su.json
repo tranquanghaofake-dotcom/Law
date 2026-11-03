@@ -1,0 +1,115 @@
+{
+ "id": "nguyen-tac-co-ban-luat-dan-su",
+ "subject": "dan-su",
+ "chapter": "v1",
+ "term": "Các nguyên tắc cơ bản của pháp luật dân sự",
+ "definition": "Mọi cá nhân, pháp nhân đều bình đẳng, không được lấy bất kỳ lý do nào để phân biệt đối xử; được pháp luật bảo hộ như nhau về các quyền nhân thân và tài sản. Cá nhân, pháp nhân xác lập, thực hiện, chấm dứt quyền, nghĩa vụ dân sự của mình trên cơ sở tự do, tự nguyện cam kết, thỏa thuận. Mọi cam kết, thỏa thuận không vi phạm điều cấm của luật, không trái đạo đức xã hội có hiệu lực thực hiện đối với các bên và phải được chủ thể khác tôn trọng. Cá nhân, pháp nhân phải xác lập, thực hiện, chấm dứt quyền, nghĩa vụ dân sự của mình một cách thiện chí, trung thực.",
+ "plain": "Điều 3 có 5 nguyên tắc: (1) BÌNH ĐẲNG; (2) TỰ DO, TỰ NGUYỆN cam kết, thỏa thuận; (3) THIỆN CHÍ, TRUNG THỰC; (4) không xâm phạm lợi ích quốc gia, công cộng, quyền của người khác; (5) TỰ CHỊU TRÁCH NHIỆM về việc không thực hiện hoặc thực hiện không đúng nghĩa vụ. Thỏa thuận chỉ bị giới hạn bởi \"điều cấm của luật\" và \"đạo đức xã hội\".",
+ "example": "Hai bên tự thỏa thuận lãi suất, phương thức thanh toán trong hợp đồng: được pháp luật tôn trọng nếu không vi phạm điều cấm của luật, không trái đạo đức xã hội.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1–3 Điều 3 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "pham-vi-dieu-chinh-luat-dan-su",
+  "dieu-kien-hieu-luc-giao-dich"
+ ],
+ "keywords": [
+  "bình đẳng",
+  "tự do, tự nguyện thỏa thuận",
+  "thiện chí, trung thực",
+  "điều cấm của luật"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 2 Điều 3, cam kết, thỏa thuận có hiệu lực thực hiện đối với các bên khi nào?",
+   "options": [
+    "Không vi phạm điều cấm của luật, không trái đạo đức xã hội",
+    "Được công chứng",
+    "Được Ủy ban nhân dân xác nhận",
+    "Có người làm chứng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 3 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nguyên tắc nào yêu cầu cá nhân, pháp nhân xác lập, thực hiện quyền, nghĩa vụ dân sự một cách thiện chí?",
+   "options": [
+    "Nguyên tắc thiện chí, trung thực",
+    "Nguyên tắc bình đẳng",
+    "Nguyên tắc tự chịu trách nhiệm",
+    "Nguyên tắc hòa giải"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 3 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Bình đẳng (khoản 1)",
+   "right": "Tự do thỏa thuận (khoản 2)",
+   "cases": [
+    {
+     "text": "Không được lấy bất kỳ lý do nào để phân biệt đối xử",
+     "answer": "left"
+    },
+    {
+     "text": "Thỏa thuận không vi phạm điều cấm của luật có hiệu lực với các bên",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 3 Bộ luật Dân sự 2015."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Mọi cam kết, thỏa thuận không vi phạm {{điều cấm}} của luật, không trái {{đạo đức xã hội}} có hiệu lực thực hiện đối với các bên.",
+   "bank_extra": [
+    "tập quán",
+    "chính sách"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Cá nhân, pháp nhân phải xác lập, thực hiện, chấm dứt quyền, nghĩa vụ dân sự của mình một cách thiện chí, {{trung thực}}.",
+   "bank_extra": [
+    "bí mật",
+    "nhanh chóng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thỏa thuận hợp pháp giữa hai bên chỉ có giá trị với hai bên, người khác không phải tôn trọng.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 3: thỏa thuận hợp pháp có hiệu lực với các bên và phải được chủ thể khác tôn trọng."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các nguyên tắc cơ bản của pháp luật dân sự theo Điều 3 Bộ luật Dân sự 2015.",
+   "model": "Bình đẳng; tự do, tự nguyện cam kết, thỏa thuận; thiện chí, trung thực; không xâm phạm lợi ích quốc gia, công cộng, quyền hợp pháp của người khác; tự chịu trách nhiệm về việc không thực hiện hoặc thực hiện không đúng nghĩa vụ.",
+   "keywords": [
+    "bình đẳng",
+    "tự do thỏa thuận",
+    "thiện chí, trung thực",
+    "tự chịu trách nhiệm"
+   ]
+  }
+ ]
+}

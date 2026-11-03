@@ -1,0 +1,121 @@
+{
+ "id": "che-tai-thuong-mai",
+ "subject": "thuong-mai",
+ "chapter": "v6",
+ "term": "Các loại chế tài trong thương mại",
+ "definition": "1. Buộc thực hiện đúng hợp đồng. 2. Phạt vi phạm. 3. Buộc bồi thường thiệt hại. 4. Tạm ngừng thực hiện hợp đồng. 5. Đình chỉ thực hiện hợp đồng. 6. Hủy bỏ hợp đồng. 7. Các biện pháp khác do các bên thỏa thuận không trái với nguyên tắc cơ bản của pháp luật Việt Nam, điều ước quốc tế mà Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên và tập quán thương mại quốc tế.",
+ "plain": "Sáu chế tài luật định + biện pháp khác do thỏa thuận. Phân nhóm: chế tài BUỘC THỰC HIỆN; chế tài TIỀN (phạt vi phạm, bồi thường); chế tài TẠM NGỪNG, ĐÌNH CHỈ, HỦY BỎ (ba chế tài này áp dụng khi có VI PHẠM CƠ BẢN hoặc vi phạm là điều kiện đã thỏa thuận). Miễn trách nhiệm theo Điều 294.",
+ "example": "Bên mua chậm thanh toán: bên bán có thể buộc thanh toán, đòi lãi chậm trả, phạt vi phạm (nếu có thỏa thuận), bồi thường; nếu bên mua vi phạm cơ bản thì có thể tạm ngừng giao các đợt hàng tiếp theo.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 292 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "phat-vi-pham-ltm",
+  "boi-thuong-thiet-hai-ltm",
+  "mien-trach-nhiem-ltm",
+  "vi-pham-co-ban"
+ ],
+ "keywords": [
+  "buộc thực hiện đúng hợp đồng",
+  "phạt vi phạm, bồi thường",
+  "tạm ngừng, đình chỉ, hủy bỏ",
+  "biện pháp khác do thỏa thuận"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chế tài nào KHÔNG được liệt kê tại Điều 292?",
+   "options": [
+    "Tịch thu tài sản của bên vi phạm",
+    "Phạt vi phạm",
+    "Tạm ngừng thực hiện hợp đồng",
+    "Hủy bỏ hợp đồng"
+   ],
+   "answer": 0,
+   "explain": "Điều 292.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 292 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Các bên có được thỏa thuận chế tài khác ngoài 6 chế tài luật định không?",
+   "options": [
+    "Có, nếu không trái nguyên tắc cơ bản của pháp luật Việt Nam, điều ước quốc tế, tập quán thương mại quốc tế",
+    "Không",
+    "Chỉ khi được Bộ Công Thương cho phép",
+    "Chỉ với hợp đồng quốc tế"
+   ],
+   "answer": 0,
+   "explain": "Khoản 7 Điều 292.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 7 Điều 292 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Chế tài tiền",
+   "right": "Chế tài chấm dứt, tạm dừng hiệu lực",
+   "cases": [
+    {
+     "text": "Phạt vi phạm",
+     "answer": "left"
+    },
+    {
+     "text": "Đình chỉ thực hiện hợp đồng",
+     "answer": "right"
+    },
+    {
+     "text": "Bồi thường thiệt hại",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 292."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Các loại chế tài trong thương mại gồm buộc thực hiện đúng hợp đồng, {{phạt vi phạm}}, buộc bồi thường thiệt hại, tạm ngừng, {{đình chỉ}} thực hiện hợp đồng, hủy bỏ hợp đồng.",
+   "bank_extra": [
+    "phạt hành chính",
+    "tịch thu"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Các biện pháp khác do các bên thỏa thuận không trái với nguyên tắc cơ bản của pháp luật Việt Nam, điều ước quốc tế và {{tập quán thương mại quốc tế}}.",
+   "bank_extra": [
+    "đạo đức kinh doanh",
+    "thói quen địa phương"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Luật Thương mại chỉ cho phép áp dụng các chế tài được liệt kê, cấm các bên thỏa thuận thêm.",
+   "answer": false,
+   "explain": "Sai. Khoản 7 Điều 292 cho phép biện pháp khác do các bên thỏa thuận."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các loại chế tài trong thương mại.",
+   "model": "Buộc thực hiện đúng hợp đồng; phạt vi phạm; buộc bồi thường thiệt hại; tạm ngừng thực hiện hợp đồng; đình chỉ thực hiện hợp đồng; hủy bỏ hợp đồng; biện pháp khác do các bên thỏa thuận không trái nguyên tắc cơ bản của pháp luật, điều ước, tập quán quốc tế (Điều 292).",
+   "keywords": [
+    "buộc thực hiện",
+    "phạt vi phạm",
+    "bồi thường",
+    "hủy bỏ"
+   ]
+  }
+ ]
+}

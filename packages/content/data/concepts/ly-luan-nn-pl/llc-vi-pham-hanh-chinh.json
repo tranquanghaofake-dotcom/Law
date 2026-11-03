@@ -1,0 +1,117 @@
+{
+ "id": "llc-vi-pham-hanh-chinh",
+ "subject": "ly-luan-nn-pl",
+ "chapter": "v8",
+ "term": "Vi phạm hành chính",
+ "definition": "Vi phạm hành chính là hành vi có lỗi do cá nhân, tổ chức thực hiện, vi phạm quy định của pháp luật về quản lý nhà nước mà không phải là tội phạm và theo quy định của pháp luật phải bị xử phạt vi phạm hành chính.",
+ "plain": "Dấu hiệu: có LỖI; do cá nhân, TỔ CHỨC thực hiện (tổ chức là chủ thể phổ biến, khác hình sự chỉ pháp nhân thương mại); vi phạm quy định về QUẢN LÝ NHÀ NƯỚC; KHÔNG PHẢI TỘI PHẠM (tính nguy hiểm thấp hơn); pháp luật quy định PHẢI BỊ XỬ PHẠT. Tính nguy hiểm thấp hơn tội phạm — ranh giới thường ở định lượng, hậu quả, tái phạm. Xử phạt do người có thẩm quyền hành chính (không phải tòa) theo thủ tục Luật XLVPHC; trách nhiệm hành chính gồm hình thức xử phạt (cảnh cáo, phạt tiền…) và biện pháp khắc phục hậu quả.",
+ "example": "Xây nhà không phép, bán hàng không niêm yết giá, vượt đèn đỏ: vi phạm hành chính, bị Chủ tịch UBND, cảnh sát giao thông xử phạt.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 2 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Vi-pham-hanh-chinh/Van-ban-hop-nhat-90-VBHN-VPQH-2026-Luat-Xu-ly-vi-pham-hanh-chinh-699548.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "llc-toi-pham",
+  "llc-vi-pham-phap-luat",
+  "llc-trach-nhiem-phap-ly"
+ ],
+ "keywords": [
+  "có lỗi",
+  "quản lý nhà nước",
+  "không phải là tội phạm",
+  "xử phạt vi phạm hành chính"
+ ],
+ "note": "Luật Xử lý vi phạm hành chính 15/2012/QH13 (hiệu lực 01/7/2013) được sửa đổi nhiều lần, gần nhất bởi Luật 88/2025/QH15 (hiệu lực 01/7/2025) — văn bản hợp nhất 90/VBHN-VPQH 2026; khoản 1 Điều 2 giữ nguyên câu chữ.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Vi phạm hành chính khác tội phạm ở điểm nào?",
+   "options": [
+    "Vi phạm quy định quản lý nhà nước mà không phải tội phạm, bị xử phạt hành chính",
+    "Không cần có lỗi",
+    "Chỉ do tổ chức thực hiện",
+    "Do tòa án xử lý"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 2.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 2 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chủ thể vi phạm hành chính gồm ai?",
+   "options": [
+    "Cá nhân, tổ chức",
+    "Chỉ cá nhân",
+    "Chỉ pháp nhân thương mại",
+    "Chỉ cơ quan nhà nước"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 2.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 2 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Vi phạm hành chính",
+   "right": "Vi phạm dân sự",
+   "cases": [
+    {
+     "text": "Kinh doanh không đăng ký",
+     "answer": "left"
+    },
+    {
+     "text": "Giao hàng chậm so với hợp đồng",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 2; vi phạm dân sự là không thực hiện nghĩa vụ trong quan hệ dân sự."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Vi phạm hành chính là hành vi có {{lỗi}} do cá nhân, tổ chức thực hiện, vi phạm quy định của pháp luật về {{quản lý nhà nước}}.",
+   "bank_extra": [
+    "hậu quả",
+    "hợp đồng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Vi phạm hành chính không phải là {{tội phạm}} và theo quy định của pháp luật phải bị {{xử phạt}} vi phạm hành chính.",
+   "bank_extra": [
+    "vi phạm dân sự",
+    "truy tố"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Vi phạm hành chính không cần yếu tố lỗi.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 2: hành vi có lỗi."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm vi phạm hành chính và phân biệt với tội phạm.",
+   "model": "Hành vi có lỗi của cá nhân, tổ chức vi phạm quy định quản lý nhà nước, không phải tội phạm, phải bị xử phạt hành chính (khoản 1 Điều 2 Luật XLVPHC); khác tội phạm ở mức nguy hiểm, nguồn luật (BLHS) và cơ quan xử lý.",
+   "keywords": [
+    "có lỗi",
+    "quản lý nhà nước",
+    "không phải tội phạm",
+    "xử phạt"
+   ]
+  }
+ ]
+}

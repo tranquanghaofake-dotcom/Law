@@ -1,0 +1,115 @@
+{
+ "id": "ten-thuong-mai",
+ "subject": "so-huu-tri-tue",
+ "chapter": "v9",
+ "term": "Tên thương mại",
+ "definition": "Tên thương mại là tên gọi của tổ chức, cá nhân dùng trong hoạt động kinh doanh để phân biệt chủ thể kinh doanh mang tên gọi đó với chủ thể kinh doanh khác trong cùng lĩnh vực và khu vực kinh doanh. Khu vực kinh doanh quy định tại khoản này là khu vực địa lý nơi chủ thể kinh doanh có bạn hàng, khách hàng hoặc có danh tiếng.",
+ "plain": "Phân biệt CHỦ THỂ KINH DOANH (khác nhãn hiệu phân biệt HÀNG HÓA, DỊCH VỤ). Phạm vi phân biệt: CÙNG LĨNH VỰC và KHU VỰC KINH DOANH (nơi có bạn hàng, khách hàng, danh tiếng). Quyền xác lập trên cơ sở SỬ DỤNG HỢP PHÁP, không cần đăng ký (điểm b khoản 3 Điều 6). Lưu ý: tên doanh nghiệp đăng ký theo Luật Doanh nghiệp là thủ tục hành chính, không tự động là tên thương mại được bảo hộ.",
+ "example": "Hai quán phở cùng tên \"Phở Thìn\" ở hai tỉnh xa nhau, khách hàng không trùng: có thể không bị coi là cùng khu vực kinh doanh.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 21 Điều 4 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nhan-hieu",
+  "chi-dan-dia-ly"
+ ],
+ "keywords": [
+  "phân biệt chủ thể kinh doanh",
+  "cùng lĩnh vực và khu vực kinh doanh",
+  "xác lập trên cơ sở sử dụng hợp pháp"
+ ],
+ "note": "Điều 4 có nội dung được sửa đổi, bổ sung bởi Luật 36/2009/QH12 (hiệu lực 01/01/2010); Luật 07/2022/QH15 (hiệu lực 01/01/2023); Luật 131/2025/QH15 (hiệu lực 01/4/2026) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tên thương mại dùng để phân biệt gì?",
+   "options": [
+    "Chủ thể kinh doanh mang tên gọi đó với chủ thể kinh doanh khác trong cùng lĩnh vực, khu vực",
+    "Hàng hóa, dịch vụ",
+    "Nguồn gốc địa lý sản phẩm",
+    "Kiểu dáng sản phẩm"
+   ],
+   "answer": 0,
+   "explain": "Khoản 21 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 21 Điều 4 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quyền đối với tên thương mại được xác lập trên cơ sở nào?",
+   "options": [
+    "Sử dụng hợp pháp tên thương mại đó",
+    "Cấp văn bằng bảo hộ",
+    "Đăng ký quốc tế",
+    "Quyết định của Bộ Công Thương"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 3 Điều 6.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 6 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tên thương mại",
+   "right": "Nhãn hiệu",
+   "cases": [
+    {
+     "text": "Phân biệt chủ thể kinh doanh",
+     "answer": "left"
+    },
+    {
+     "text": "Phân biệt hàng hóa, dịch vụ",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 16, 21 Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tên thương mại là tên gọi dùng để phân biệt chủ thể kinh doanh với chủ thể khác trong cùng {{lĩnh vực}} và {{khu vực}} kinh doanh.",
+   "bank_extra": [
+    "tỉnh",
+    "quốc gia"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Khu vực kinh doanh là khu vực địa lý nơi chủ thể kinh doanh có bạn hàng, {{khách hàng}} hoặc có danh tiếng.",
+   "bank_extra": [
+    "trụ sở",
+    "tài sản"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tên thương mại phải được cấp văn bằng bảo hộ mới được bảo hộ.",
+   "answer": false,
+   "explain": "Sai. Điểm b khoản 3 Điều 6: xác lập trên cơ sở sử dụng hợp pháp."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm tên thương mại và căn cứ xác lập quyền.",
+   "model": "Tên thương mại là tên gọi của tổ chức, cá nhân trong kinh doanh để phân biệt chủ thể kinh doanh với chủ thể khác trong cùng lĩnh vực, khu vực kinh doanh (khoản 21 Điều 4); quyền xác lập trên cơ sở sử dụng hợp pháp (điểm b khoản 3 Điều 6).",
+   "keywords": [
+    "chủ thể kinh doanh",
+    "lĩnh vực",
+    "khu vực",
+    "sử dụng hợp pháp"
+   ]
+  }
+ ]
+}

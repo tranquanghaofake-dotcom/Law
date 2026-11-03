@@ -1,0 +1,116 @@
+{
+ "id": "quyen-chu-so-huu-shcn",
+ "subject": "so-huu-tri-tue",
+ "chapter": "v11",
+ "term": "Quyền của chủ sở hữu đối tượng sở hữu công nghiệp",
+ "definition": "Chủ sở hữu đối tượng sở hữu công nghiệp có các quyền tài sản sau đây: a) Sử dụng, cho phép người khác sử dụng đối tượng sở hữu công nghiệp theo quy định tại Điều 124 và Chương X của Luật này; b) Ngăn cấm người khác sử dụng đối tượng sở hữu công nghiệp theo quy định tại Điều 125 của Luật này; c) Định đoạt đối tượng sở hữu công nghiệp theo quy định tại Chương X của Luật này.",
+ "plain": "Ba quyền tài sản: SỬ DỤNG và CHO PHÉP sử dụng (li-xăng); NGĂN CẤM người khác sử dụng (độc quyền); ĐỊNH ĐOẠT (chuyển nhượng). GIỚI HẠN (khoản 2 Điều 125): không cấm được việc sử dụng vì nhu cầu cá nhân, phi thương mại, nghiên cứu, giảng dạy; lưu thông sản phẩm do chính chủ sở hữu đưa ra thị trường (NHẬP KHẨU SONG SONG, cạn quyền); người sử dụng trước (Điều 134)… Chủ sở hữu sáng chế còn có NGHĨA VỤ sử dụng, trả thù lao cho tác giả (Điều 135, 136).",
+ "example": "Chủ sở hữu bằng sáng chế cho phép doanh nghiệp khác sản xuất theo hợp đồng li-xăng, thu phí bản quyền: thực hiện quyền \"cho phép người khác sử dụng\".",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 123 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "xam-pham-sang-che",
+  "hieu-luc-van-bang-bao-ho"
+ ],
+ "keywords": [
+  "sử dụng, cho phép sử dụng",
+  "ngăn cấm người khác sử dụng",
+  "định đoạt",
+  "giới hạn quyền"
+ ],
+ "note": "Điều 123 có nội dung được sửa đổi, bổ sung bởi Luật 07/2022/QH15 (hiệu lực 01/01/2023); Luật 131/2025/QH15 (hiệu lực 01/4/2026) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chủ sở hữu đối tượng sở hữu công nghiệp có những quyền tài sản nào?",
+   "options": [
+    "Sử dụng, cho phép sử dụng; ngăn cấm người khác sử dụng; định đoạt",
+    "Chỉ quyền đứng tên",
+    "Quyền nhân thân vô thời hạn",
+    "Quyền thu thuế"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 123.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 123 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chủ sở hữu sáng chế có quyền cấm người khác sử dụng sáng chế chỉ để nghiên cứu, giảng dạy phi thương mại không?",
+   "options": [
+    "Không",
+    "Có",
+    "Có nếu đã thông báo",
+    "Chỉ khi có thiệt hại"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 2 Điều 125.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 125 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Chủ sở hữu được cấm",
+   "right": "Chủ sở hữu không được cấm",
+   "cases": [
+    {
+     "text": "Doanh nghiệp khác sản xuất hàng mang nhãn hiệu để bán",
+     "answer": "left"
+    },
+    {
+     "text": "Sinh viên dùng sáng chế để làm thí nghiệm nghiên cứu",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 125."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chủ sở hữu có quyền sử dụng, {{cho phép}} người khác sử dụng; {{ngăn cấm}} người khác sử dụng; định đoạt đối tượng sở hữu công nghiệp.",
+   "bank_extra": [
+    "buộc",
+    "khuyến khích"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chủ sở hữu có quyền {{định đoạt}} đối tượng sở hữu công nghiệp theo Chương X.",
+   "bank_extra": [
+    "tiêu hủy văn bằng của người khác",
+    "xử phạt"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chủ sở hữu nhãn hiệu có quyền cấm mọi hành vi sử dụng liên quan đến nhãn hiệu, không có giới hạn.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 125 quy định các trường hợp chủ sở hữu không có quyền cấm."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quyền và giới hạn quyền của chủ sở hữu đối tượng sở hữu công nghiệp.",
+   "model": "Quyền: sử dụng, cho phép sử dụng; ngăn cấm người khác sử dụng; định đoạt (khoản 1 Điều 123); giới hạn: không cấm sử dụng vì nhu cầu cá nhân, phi thương mại, nghiên cứu, giảng dạy, lưu thông sản phẩm đã được đưa ra thị trường hợp pháp… (khoản 2 Điều 125).",
+   "keywords": [
+    "sử dụng",
+    "ngăn cấm",
+    "định đoạt",
+    "phi thương mại"
+   ]
+  }
+ ]
+}

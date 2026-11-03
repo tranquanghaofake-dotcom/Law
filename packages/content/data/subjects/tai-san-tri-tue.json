@@ -1,0 +1,87 @@
+{
+  "id": "tai-san-tri-tue",
+  "title": "Quản trị tài sản trí tuệ",
+  "short": "Tài sản trí tuệ",
+  "chapters": [
+    {
+      "id": "v1",
+      "title": "Vấn đề 1. Tổng quan về tài sản trí tuệ trong doanh nghiệp",
+      "lessons": [
+        {
+          "id": "tstt1",
+          "title": "Tổng quan về tài sản trí tuệ trong doanh nghiệp",
+          "concepts": [
+            "tstt-tai-san-tri-tue",
+            "tstt-doi-tuong-quyen-shtt",
+            "tstt-bi-mat-kinh-doanh"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v2",
+      "title": "Vấn đề 2. Quản trị tài sản trí tuệ trong doanh nghiệp",
+      "lessons": [
+        {
+          "id": "tstt2",
+          "title": "Quản trị tài sản trí tuệ trong doanh nghiệp",
+          "concepts": [
+            "tstt-quan-tri-tstt",
+            "tstt-quyen-dang-ky-khi-giao-viec",
+            "tstt-quyen-uu-tien"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v3",
+      "title": "Vấn đề 3. Định giá tài sản trí tuệ",
+      "lessons": [
+        {
+          "id": "tstt3",
+          "title": "Định giá tài sản trí tuệ",
+          "concepts": [
+            "tstt-dinh-gia-tstt",
+            "tstt-phuong-phap-dinh-gia",
+            "tstt-gop-von-bang-quyen-shtt",
+            "tstt-xac-dinh-thiet-hai"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v4",
+      "title": "Vấn đề 4. Khai thác và thương mại hóa tài sản trí tuệ",
+      "lessons": [
+        {
+          "id": "tstt4",
+          "title": "Khai thác và thương mại hóa tài sản trí tuệ",
+          "concepts": [
+            "tstt-chuyen-nhuong-quyen-shcn",
+            "tstt-chuyen-quyen-su-dung",
+            "tstt-dang-hop-dong-li-xang",
+            "tstt-hieu-luc-hop-dong-chuyen-giao",
+            "tstt-nhuong-quyen-thuong-mai"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v5",
+      "title": "Vấn đề 5. Bảo vệ quyền và kỹ năng tư vấn giải quyết tranh chấp",
+      "lessons": [
+        {
+          "id": "tstt5",
+          "title": "Bảo vệ quyền và kỹ năng tư vấn giải quyết tranh chấp",
+          "concepts": [
+            "tstt-tu-bao-ve",
+            "tstt-xam-pham-nhan-hieu",
+            "tstt-giam-dinh-shtt",
+            "tstt-xu-phat-hanh-chinh",
+            "tstt-kiem-soat-bien-gioi"
+          ]
+        }
+      ]
+    }
+  ]
+}

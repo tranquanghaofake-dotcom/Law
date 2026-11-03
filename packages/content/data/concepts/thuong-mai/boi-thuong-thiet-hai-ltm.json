@@ -1,0 +1,116 @@
+{
+ "id": "boi-thuong-thiet-hai-ltm",
+ "subject": "thuong-mai",
+ "chapter": "v6",
+ "term": "Bồi thường thiệt hại và quan hệ với phạt vi phạm",
+ "definition": "Trừ các trường hợp miễn trách nhiệm quy định tại Điều 294 của Luật này, trách nhiệm bồi thường thiệt hại phát sinh khi có đủ các yếu tố sau đây: 1. Có hành vi vi phạm hợp đồng; 2. Có thiệt hại thực tế; 3. Hành vi vi phạm hợp đồng là nguyên nhân trực tiếp gây ra thiệt hại. (…) Trường hợp các bên không có thỏa thuận phạt vi phạm thì bên bị vi phạm chỉ có quyền yêu cầu bồi thường thiệt hại, trừ trường hợp Luật này có quy định khác. Trường hợp các bên có thỏa thuận phạt vi phạm thì bên bị vi phạm có quyền áp dụng cả chế tài phạt vi phạm và buộc bồi thường thiệt hại, trừ trường hợp Luật này có quy định khác.",
+ "plain": "Ba yếu tố: VI PHẠM HỢP ĐỒNG + THIỆT HẠI THỰC TẾ + QUAN HỆ NHÂN QUẢ TRỰC TIẾP. Giá trị bồi thường (Điều 302): tổn thất thực tế, trực tiếp + KHOẢN LỢI TRỰC TIẾP đáng lẽ được hưởng. Bên yêu cầu phải CHỨNG MINH tổn thất (Điều 304) và áp dụng biện pháp HẠN CHẾ TỔN THẤT (Điều 305). Quan hệ với phạt (Điều 307): có thỏa thuận phạt → được áp dụng CẢ HAI — khác BLDS (Điều 418: không thỏa thuận \"vừa phạt vừa bồi thường\" thì chỉ chịu phạt).",
+ "example": "Hợp đồng có điều khoản phạt 8%; bên bán giao hàng lỗi khiến bên mua mất đơn hàng xuất khẩu: bên mua được đòi cả tiền phạt và bồi thường khoản lợi bị mất (nếu chứng minh được).",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 303, Điều 307 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "phat-vi-pham-ltm",
+  "che-tai-thuong-mai",
+  "mien-trach-nhiem-ltm"
+ ],
+ "keywords": [
+  "hành vi vi phạm, thiệt hại thực tế, nguyên nhân trực tiếp",
+  "khoản lợi trực tiếp",
+  "áp dụng cả phạt và bồi thường",
+  "khác Bộ luật Dân sự"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hợp đồng thương mại có thỏa thuận phạt vi phạm. Bên bị vi phạm có quyền gì?",
+   "options": [
+    "Áp dụng cả phạt vi phạm và buộc bồi thường thiệt hại (trừ trường hợp luật quy định khác)",
+    "Chỉ được phạt vi phạm",
+    "Chỉ được bồi thường",
+    "Phải chọn một trong hai"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 307.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 307 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Yếu tố nào KHÔNG thuộc căn cứ phát sinh trách nhiệm bồi thường theo Điều 303?",
+   "options": [
+    "Bên vi phạm có lỗi cố ý",
+    "Có hành vi vi phạm hợp đồng",
+    "Có thiệt hại thực tế",
+    "Hành vi vi phạm là nguyên nhân trực tiếp gây thiệt hại"
+   ],
+   "answer": 0,
+   "explain": "Điều 303 không đòi hỏi lỗi cố ý.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 303 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Luật Thương mại (có thỏa thuận phạt)",
+   "right": "Bộ luật Dân sự (có thỏa thuận phạt, không thỏa thuận vừa phạt vừa bồi thường)",
+   "cases": [
+    {
+     "text": "Được cả phạt và bồi thường",
+     "answer": "left"
+    },
+    {
+     "text": "Chỉ chịu phạt vi phạm",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 307 LTM; Điều 418 BLDS."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Trách nhiệm bồi thường phát sinh khi có hành vi vi phạm hợp đồng, có thiệt hại {{thực tế}}, và hành vi vi phạm là nguyên nhân {{trực tiếp}} gây ra thiệt hại.",
+   "bank_extra": [
+    "dự kiến",
+    "gián tiếp"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Trường hợp các bên không có thỏa thuận phạt vi phạm thì bên bị vi phạm chỉ có quyền yêu cầu {{bồi thường thiệt hại}}.",
+   "bank_extra": [
+    "phạt vi phạm",
+    "hủy hợp đồng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo Luật Thương mại, có thỏa thuận phạt vi phạm thì bên bị vi phạm chỉ được đòi phạt, không được đòi bồi thường.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 307: được áp dụng cả hai."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày căn cứ bồi thường thiệt hại và quan hệ giữa phạt vi phạm với bồi thường thiệt hại trong thương mại.",
+   "model": "Căn cứ: có vi phạm hợp đồng, có thiệt hại thực tế, vi phạm là nguyên nhân trực tiếp (Điều 303); không thỏa thuận phạt thì chỉ đòi bồi thường; có thỏa thuận phạt thì được áp dụng cả phạt và bồi thường (Điều 307).",
+   "keywords": [
+    "vi phạm",
+    "thiệt hại thực tế",
+    "nguyên nhân trực tiếp",
+    "cả hai"
+   ]
+  }
+ ]
+}

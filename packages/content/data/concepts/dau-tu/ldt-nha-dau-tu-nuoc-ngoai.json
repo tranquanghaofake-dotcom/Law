@@ -1,0 +1,115 @@
+{
+ "id": "ldt-nha-dau-tu-nuoc-ngoai",
+ "subject": "dau-tu",
+ "chapter": "v1",
+ "term": "Nhà đầu tư nước ngoài",
+ "definition": "Nhà đầu tư nước ngoài là cá nhân có quốc tịch nước ngoài, tổ chức thành lập theo pháp luật nước ngoài thực hiện hoạt động đầu tư kinh doanh tại Việt Nam.",
+ "plain": "Tiêu chí: cá nhân theo QUỐC TỊCH nước ngoài; tổ chức theo PHÁP LUẬT NƠI THÀNH LẬP là nước ngoài (không xét chủ sở hữu). Nhà đầu tư nước ngoài phải đáp ứng điều kiện tiếp cận thị trường (Điều 8) khi thành lập tổ chức kinh tế, góp vốn, mua cổ phần (Điều 19, 21) và dự án của họ thuộc diện cấp Giấy chứng nhận đăng ký đầu tư (Điều 26).",
+ "example": "Công ty D do người Việt sở hữu 100% nhưng thành lập tại Hồng Kông: vẫn là nhà đầu tư nước ngoài vì thành lập theo pháp luật nước ngoài.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 19 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Dau-tu/Van-ban-hop-nhat-142-2026-VBHN-LQ-VPQH-Luat-Dau-tu-726675.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "ldt-nha-dau-tu",
+  "ldt-to-chuc-kinh-te-co-von-dtnn",
+  "ldt-giay-chung-nhan-dang-ky-dau-tu"
+ ],
+ "keywords": [
+  "quốc tịch nước ngoài",
+  "thành lập theo pháp luật nước ngoài",
+  "tiếp cận thị trường"
+ ],
+ "note": "Luật Đầu tư 143/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Đầu tư 61/2020/QH14 mà đề cương HLU 2021 còn dẫn (khoản 4 Điều 51). Luật 24/2026/QH16 sửa đổi có hiệu lực từ 01/3/2027 (riêng một phần Điều 6 từ 01/01/2027), chỉ sửa Điều 6 và Phụ lục IV, không sửa điều được trích — văn bản hợp nhất 142/2026/VBHN-LQ-VPQH.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tổ chức là nhà đầu tư nước ngoài khi nào?",
+   "options": [
+    "Thành lập theo pháp luật nước ngoài",
+    "Có giám đốc người nước ngoài",
+    "Có trụ sở tại khu kinh tế",
+    "Có vốn trên 100 tỷ đồng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 19 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 19 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nhà đầu tư nước ngoài thành lập tổ chức kinh tế phải đáp ứng điều kiện nào?",
+   "options": [
+    "Điều kiện tiếp cận thị trường đối với nhà đầu tư nước ngoài tại Điều 8",
+    "Có vốn tối thiểu 1 triệu USD",
+    "Có đối tác Việt Nam",
+    "Được Quốc hội chấp thuận"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 19.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 19 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Nhà đầu tư nước ngoài",
+   "right": "Không phải nhà đầu tư nước ngoài",
+   "cases": [
+    {
+     "text": "Cá nhân quốc tịch Hàn Quốc mở công ty tại Việt Nam",
+     "answer": "left"
+    },
+    {
+     "text": "Công ty TNHH thành lập tại Hà Nội, chủ sở hữu là công dân Việt Nam",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 19, 20 Điều 3."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhà đầu tư nước ngoài là cá nhân có {{quốc tịch}} nước ngoài, tổ chức thành lập theo {{pháp luật}} nước ngoài thực hiện hoạt động đầu tư kinh doanh tại Việt Nam.",
+   "bank_extra": [
+    "nơi cư trú",
+    "điều lệ"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhà đầu tư nước ngoài phải đáp ứng điều kiện {{tiếp cận thị trường}} quy định tại Điều {{8}} khi thành lập tổ chức kinh tế.",
+   "bank_extra": [
+    "ưu đãi đầu tư",
+    "15"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Công ty thành lập ở nước ngoài do công dân Việt Nam sở hữu toàn bộ không phải nhà đầu tư nước ngoài.",
+   "answer": false,
+   "explain": "Sai. Khoản 19 Điều 3 xét nơi thành lập của tổ chức: thành lập theo pháp luật nước ngoài là nhà đầu tư nước ngoài."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu tiêu chí xác định nhà đầu tư nước ngoài.",
+   "model": "Cá nhân có quốc tịch nước ngoài; tổ chức thành lập theo pháp luật nước ngoài; thực hiện hoạt động đầu tư kinh doanh tại Việt Nam (khoản 19 Điều 3).",
+   "keywords": [
+    "quốc tịch nước ngoài",
+    "pháp luật nước ngoài",
+    "tại Việt Nam"
+   ]
+  }
+ ]
+}

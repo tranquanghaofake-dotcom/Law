@@ -1,0 +1,114 @@
+{
+ "id": "khang-cao-phuc-tham",
+ "subject": "to-tung-dan-su",
+ "chapter": "v8",
+ "term": "Thời hạn kháng cáo và phạm vi xét xử phúc thẩm",
+ "definition": "Thời hạn kháng cáo đối với bản án của Tòa án cấp sơ thẩm là 15 ngày, kể từ ngày tuyên án; đối với đương sự, đại diện cơ quan, tổ chức hoặc cá nhân khởi kiện không có mặt tại phiên tòa hoặc không có mặt khi tuyên án mà có lý do chính đáng thì thời hạn kháng cáo được tính từ ngày họ nhận được bản án hoặc bản án được niêm yết. (…) Tòa án cấp phúc thẩm chỉ xem xét lại phần của bản án sơ thẩm, quyết định của Tòa án cấp sơ thẩm có kháng cáo, kháng nghị hoặc có liên quan đến việc xem xét nội dung kháng cáo, kháng nghị.",
+ "plain": "Thời hạn kháng cáo: BẢN ÁN 15 NGÀY từ ngày tuyên án (vắng mặt có lý do chính đáng: từ ngày nhận hoặc niêm yết); QUYẾT ĐỊNH tạm đình chỉ, đình chỉ: 07 NGÀY. Phúc thẩm là XÉT XỬ LẠI VỤ ÁN (cả nội dung) nhưng chỉ trong PHẠM VI phần bị KHÁNG CÁO, KHÁNG NGHỊ và phần liên quan. Từ 01/7/2025, phúc thẩm bản án của TAND khu vực do TAND CẤP TỈNH thực hiện.",
+ "example": "Tòa sơ thẩm tuyên ngày 01/6; bị đơn có mặt: phải kháng cáo chậm nhất trong 15 ngày tính từ 01/6. Nếu chỉ kháng cáo phần tiền lãi thì phúc thẩm chỉ xem xét phần tiền lãi (và phần liên quan).",
+ "source": {
+  "kind": "statute",
+  "cite": "Đoạn 1 khoản 1 Điều 273, Điều 293 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thu-tuc-To-tung/Van-ban-hop-nhat-21-VBHN-VPQH-2026-Bo-luat-To-dung-dan-su-696578.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "giam-doc-tham-tai-tham",
+  "tham-quyen-theo-cap"
+ ],
+ "keywords": [
+  "15 ngày kể từ ngày tuyên án",
+  "vắng mặt có lý do chính đáng",
+  "chỉ xem xét phần có kháng cáo, kháng nghị"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thời hạn kháng cáo bản án sơ thẩm là bao lâu?",
+   "options": [
+    "15 ngày kể từ ngày tuyên án",
+    "30 ngày",
+    "07 ngày",
+    "01 tháng kể từ ngày nhận bản án"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 273.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 273 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tòa án cấp phúc thẩm xem xét lại phần nào của bản án sơ thẩm?",
+   "options": [
+    "Phần có kháng cáo, kháng nghị hoặc có liên quan",
+    "Toàn bộ bản án trong mọi trường hợp",
+    "Chỉ phần án phí",
+    "Phần do Tòa phúc thẩm tự chọn"
+   ],
+   "answer": 0,
+   "explain": "Điều 293.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 293 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "15 ngày",
+   "right": "07 ngày",
+   "cases": [
+    {
+     "text": "Kháng cáo bản án sơ thẩm",
+     "answer": "left"
+    },
+    {
+     "text": "Kháng cáo quyết định đình chỉ giải quyết vụ án",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 273."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thời hạn kháng cáo đối với bản án của Tòa án cấp sơ thẩm là {{15}} ngày, kể từ ngày {{tuyên án}}.",
+   "bank_extra": [
+    "30",
+    "nhận đơn"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tòa án cấp phúc thẩm chỉ xem xét lại phần của bản án sơ thẩm có {{kháng cáo, kháng nghị}} hoặc có liên quan.",
+   "bank_extra": [
+    "sai sót",
+    "khiếu nại"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Đương sự vắng mặt khi tuyên án có lý do chính đáng thì thời hạn kháng cáo vẫn tính từ ngày tuyên án.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 273: tính từ ngày nhận được bản án hoặc bản án được niêm yết."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày thời hạn kháng cáo và phạm vi xét xử phúc thẩm.",
+   "model": "Kháng cáo bản án sơ thẩm trong 15 ngày từ ngày tuyên án; vắng mặt có lý do chính đáng thì từ ngày nhận hoặc niêm yết bản án (khoản 1 Điều 273); quyết định tạm đình chỉ, đình chỉ 07 ngày; phúc thẩm chỉ xem xét phần có kháng cáo, kháng nghị hoặc liên quan (Điều 293).",
+   "keywords": [
+    "15 ngày",
+    "tuyên án",
+    "niêm yết",
+    "phạm vi"
+   ]
+  }
+ ]
+}

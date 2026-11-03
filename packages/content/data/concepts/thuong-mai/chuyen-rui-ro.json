@@ -1,0 +1,115 @@
+{
+ "id": "chuyen-rui-ro",
+ "subject": "thuong-mai",
+ "chapter": "v1",
+ "term": "Chuyển rủi ro khi có địa điểm giao hàng xác định",
+ "definition": "Trừ trường hợp có thỏa thuận khác, nếu bên bán có nghĩa vụ giao hàng cho bên mua tại một địa điểm nhất định thì rủi ro về mất mát hoặc hư hỏng hàng hóa được chuyển cho bên mua khi hàng hóa đã được giao cho bên mua hoặc người được bên mua ủy quyền đã nhận hàng tại địa điểm đó, kể cả trong trường hợp bên bán được ủy quyền giữ lại các chứng từ xác lập quyền sở hữu đối với hàng hóa.",
+ "plain": "Rủi ro (mất mát, hư hỏng) chuyển khi nào — quyết định ai chịu thiệt khi hàng hỏng do sự kiện khách quan. Điều 57: có địa điểm giao hàng → khi hàng ĐÃ GIAO tại địa điểm đó (kể cả bên bán giữ chứng từ sở hữu). Điều 58: có vận chuyển, không địa điểm xác định → khi giao cho NGƯỜI VẬN CHUYỂN ĐẦU TIÊN. Điều 59: hàng do bên nhận hàng giữ. Điều 60: hàng đang trên đường vận chuyển → từ khi GIAO KẾT hợp đồng. Rủi ro có thể chuyển trước quyền sở hữu.",
+ "example": "Hợp đồng ghi giao hàng tại kho của bên mua ở Bình Dương: hàng bị lũ cuốn trên đường đi thì bên bán chịu rủi ro; đã giao vào kho bên mua rồi mới cháy thì bên mua chịu.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 57 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "mua-ban-hang-hoa",
+  "trach-nhiem-hang-khong-phu-hop"
+ ],
+ "keywords": [
+  "rủi ro mất mát, hư hỏng",
+  "địa điểm giao hàng nhất định",
+  "đã giao cho bên mua",
+  "kể cả giữ chứng từ"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Có địa điểm giao hàng xác định, rủi ro chuyển cho bên mua khi nào (nếu không có thỏa thuận khác)?",
+   "options": [
+    "Khi hàng hóa đã được giao cho bên mua hoặc người được ủy quyền tại địa điểm đó",
+    "Khi ký hợp đồng",
+    "Khi bên mua thanh toán đủ",
+    "Khi bên bán xuất kho"
+   ],
+   "answer": 0,
+   "explain": "Điều 57.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 57 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hàng hóa đang trên đường vận chuyển mà được bán, rủi ro chuyển khi nào?",
+   "options": [
+    "Kể từ thời điểm giao kết hợp đồng",
+    "Khi hàng đến cảng",
+    "Khi thanh toán",
+    "Khi giao chứng từ"
+   ],
+   "answer": 0,
+   "explain": "Điều 60.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 60 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Bên bán chịu rủi ro",
+   "right": "Bên mua chịu rủi ro",
+   "cases": [
+    {
+     "text": "Hàng hỏng trên đường tới địa điểm giao",
+     "answer": "left"
+    },
+    {
+     "text": "Hàng hỏng sau khi đã giao tại địa điểm thỏa thuận",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 57."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Rủi ro được chuyển cho bên mua khi hàng hóa đã được {{giao}} cho bên mua tại địa điểm đó, kể cả trong trường hợp bên bán được ủy quyền giữ lại các {{chứng từ}} xác lập quyền sở hữu.",
+   "bank_extra": [
+    "quảng cáo",
+    "hóa đơn đỏ"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Điều 57 áp dụng khi bên bán có nghĩa vụ giao hàng tại một {{địa điểm}} nhất định.",
+   "bank_extra": [
+    "thời điểm",
+    "giá"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Rủi ro về hàng hóa luôn chuyển cùng lúc với quyền sở hữu.",
+   "answer": false,
+   "explain": "Sai. Điều 57 nêu rõ rủi ro chuyển khi giao hàng kể cả khi bên bán còn giữ chứng từ sở hữu."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quy định chuyển rủi ro trong mua bán hàng hóa có địa điểm giao hàng xác định.",
+   "model": "Trừ thỏa thuận khác, rủi ro mất mát, hư hỏng chuyển cho bên mua khi hàng đã được giao cho bên mua hoặc người được ủy quyền tại địa điểm đó, kể cả khi bên bán giữ chứng từ sở hữu (Điều 57).",
+   "keywords": [
+    "rủi ro",
+    "địa điểm",
+    "giao",
+    "chứng từ"
+   ]
+  }
+ ]
+}

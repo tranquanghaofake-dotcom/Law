@@ -1,0 +1,117 @@
+{
+ "id": "ngan-sach-nha-nuoc",
+ "subject": "tai-chinh",
+ "chapter": "v1",
+ "term": "Ngân sách nhà nước và phạm vi thu, chi",
+ "definition": "Ngân sách nhà nước là toàn bộ các khoản thu, chi của Nhà nước được dự toán và thực hiện trong một khoảng thời gian nhất định do cơ quan nhà nước có thẩm quyền quyết định để bảo đảm thực hiện các chức năng, nhiệm vụ của Nhà nước. (…) Chi ngân sách nhà nước bao gồm: a) Chi đầu tư phát triển; b) Chi dự trữ quốc gia; c) Chi thường xuyên; d) Chi trả nợ lãi; đ) Chi viện trợ; e) Các khoản chi khác theo quy định của pháp luật.",
+ "plain": "Đặc điểm: là KẾ HOẠCH TÀI CHÍNH CƠ BẢN của Nhà nước; phải được DỰ TOÁN và do CƠ QUAN CÓ THẨM QUYỀN (Quốc hội, HĐND) quyết định; gắn với một khoảng thời gian (NĂM NGÂN SÁCH từ 01/01 đến 31/12 — Điều 14). Thu NSNN gồm thuế, lệ phí, phí từ dịch vụ do cơ quan nhà nước thực hiện, viện trợ không hoàn lại, thu khác (khoản 1 Điều 5). Phạm vi NSNN còn gồm bội chi, tổng mức vay (khoản 3, 4 Điều 5). Trả nợ gốc KHÔNG phải khoản chi NSNN theo nghĩa phân loại khoản 2 Điều 5 (được xử lý riêng).",
+ "example": "Khoản tiền xây trường học công (chi đầu tư phát triển) và lương giáo viên công lập (chi thường xuyên) đều là chi ngân sách nhà nước, được Quốc hội, HĐND quyết định trong dự toán năm.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 17 Điều 4; khoản 2 Điều 5 Luật Ngân sách nhà nước 2025 (89/2025/QH15)",
+  "url": "https://thuvienphapluat.vn/van-ban/Tai-chinh-nha-nuoc/Luat-ngan-sach-nha-nuoc-2025-so-89-2025-QH15-650061.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nguyen-tac-quan-ly-nsnn",
+  "he-thong-nsnn",
+  "boi-chi-ket-du"
+ ],
+ "keywords": [
+  "toàn bộ các khoản thu, chi của Nhà nước",
+  "được dự toán",
+  "cơ quan có thẩm quyền quyết định",
+  "năm ngân sách 01/01–31/12"
+ ],
+ "note": "Luật Ngân sách nhà nước 89/2025/QH15 có hiệu lực từ năm ngân sách 2026 (một số nội dung từ 01/7/2025), thay thế Luật Ngân sách nhà nước 83/2015/QH13 mà đề cương HLU còn dẫn (Điều 77).",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Năm ngân sách nhà nước được xác định thế nào?",
+   "options": [
+    "Từ ngày 01 tháng 01 đến ngày 31 tháng 12 năm dương lịch",
+    "Từ 01/4 năm này đến 31/3 năm sau",
+    "Từ 01/7 năm này đến 30/6 năm sau",
+    "Do Chính phủ quyết định hằng năm"
+   ],
+   "answer": 0,
+   "explain": "Điều 14.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 14 Luật Ngân sách nhà nước 2025 (89/2025/QH15)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khoản nào thuộc chi ngân sách nhà nước theo khoản 2 Điều 5?",
+   "options": [
+    "Chi dự trữ quốc gia",
+    "Tiền gửi của doanh nghiệp tại Kho bạc",
+    "Vốn điều lệ của công ty tư nhân",
+    "Tiền tiết kiệm của dân cư"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 5.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 5 Luật Ngân sách nhà nước 2025 (89/2025/QH15)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Chi đầu tư phát triển",
+   "right": "Chi thường xuyên",
+   "cases": [
+    {
+     "text": "Xây dựng công trình giao thông bằng vốn đầu tư công",
+     "answer": "left"
+    },
+    {
+     "text": "Trả lương cho bộ máy nhà nước",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 3, 5 Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ngân sách nhà nước là toàn bộ các khoản thu, chi của Nhà nước được {{dự toán}} và thực hiện trong một khoảng thời gian nhất định do cơ quan nhà nước có {{thẩm quyền}} quyết định.",
+   "bank_extra": [
+    "ước lượng",
+    "chuyên môn"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chi ngân sách nhà nước bao gồm chi đầu tư phát triển, chi {{dự trữ quốc gia}}, chi thường xuyên, chi trả nợ lãi, chi {{viện trợ}}.",
+   "bank_extra": [
+    "tiêu dùng cá nhân",
+    "kinh doanh"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Năm ngân sách của Việt Nam bắt đầu từ ngày 01 tháng 4.",
+   "answer": false,
+   "explain": "Sai. Điều 14: từ 01/01 đến 31/12 năm dương lịch."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm ngân sách nhà nước và phạm vi chi ngân sách.",
+   "model": "Toàn bộ các khoản thu, chi của Nhà nước được dự toán và thực hiện trong một khoảng thời gian nhất định do cơ quan có thẩm quyền quyết định để bảo đảm chức năng, nhiệm vụ của Nhà nước (khoản 17 Điều 4); chi gồm đầu tư phát triển, dự trữ quốc gia, thường xuyên, trả nợ lãi, viện trợ, chi khác (khoản 2 Điều 5).",
+   "keywords": [
+    "thu, chi",
+    "dự toán",
+    "đầu tư phát triển",
+    "thường xuyên"
+   ]
+  }
+ ]
+}

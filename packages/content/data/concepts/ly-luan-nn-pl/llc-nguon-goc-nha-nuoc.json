@@ -1,0 +1,107 @@
+{
+ "id": "llc-nguon-goc-nha-nuoc",
+ "subject": "ly-luan-nn-pl",
+ "chapter": "v1",
+ "term": "Nguồn gốc của nhà nước (quan điểm Mác – Lênin)",
+ "definition": "Theo chủ nghĩa Mác – Lênin, nhà nước không phải hiện tượng vĩnh cửu, bất biến; nhà nước chỉ xuất hiện khi xã hội phát triển đến giai đoạn có chế độ tư hữu về tư liệu sản xuất và phân hóa thành các giai cấp có lợi ích đối kháng không thể điều hòa.",
+ "plain": "Hai tiền đề: KINH TẾ — tư hữu xuất hiện sau ba lần phân công lao động xã hội (chăn nuôi tách khỏi trồng trọt; thủ công nghiệp tách khỏi nông nghiệp; thương nghiệp ra đời); XÃ HỘI — phân hóa giai cấp, mâu thuẫn không điều hòa được, tổ chức thị tộc – bộ lạc không còn phù hợp. Đối chiếu các học thuyết phi Mác-xít: thần quyền (thượng đế sáng tạo), gia trưởng (gia đình mở rộng), bạo lực (chiến tranh), tâm lý (nhu cầu phụ thuộc thủ lĩnh), khế ước xã hội (Rousseau, Locke: nhà nước là sản phẩm thỏa thuận). Phương Đông: nhà nước ra đời sớm do nhu cầu trị thủy, chống ngoại xâm, khi phân hóa giai cấp chưa sâu sắc.",
+ "example": "Nhà nước Văn Lang hình thành khi phân hóa giai cấp còn yếu nhưng có nhu cầu trị thủy sông Hồng và chống xâm lược — ví dụ điển hình cho con đường phương Đông.",
+ "source": {
+  "kind": "textbook",
+  "cite": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (Drive HLU/KÌ I NĂM I/LLCNN&PL/TÀI LIỆU ÔN THI LLC: VD8, VD9, VD11, VD12, VD13) và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "llc-ban-chat-nha-nuoc",
+  "llc-dau-hieu-nha-nuoc"
+ ],
+ "keywords": [
+  "tư hữu",
+  "giai cấp",
+  "phân công lao động",
+  "khế ước xã hội",
+  "thần quyền"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo chủ nghĩa Mác – Lênin, nhà nước ra đời khi nào?",
+   "options": [
+    "Khi xuất hiện tư hữu và xã hội phân hóa thành giai cấp đối kháng",
+    "Ngay từ khi có loài người",
+    "Khi con người ký khế ước xã hội",
+    "Do thượng đế sắp đặt"
+   ],
+   "answer": 0,
+   "explain": "Nhà nước là sản phẩm của xã hội có giai cấp, gắn với chế độ tư hữu."
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Học thuyết nào cho rằng nhà nước ra đời từ thỏa thuận giữa những con người tự do?",
+   "options": [
+    "Thuyết khế ước xã hội",
+    "Thuyết thần quyền",
+    "Thuyết gia trưởng",
+    "Thuyết bạo lực"
+   ],
+   "answer": 0,
+   "explain": "Rousseau, Locke, Hobbes: nhà nước là sản phẩm của khế ước xã hội."
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Học thuyết Mác – Lênin",
+   "right": "Học thuyết phi Mác-xít",
+   "cases": [
+    {
+     "text": "Nhà nước xuất hiện do tư hữu và đấu tranh giai cấp",
+     "answer": "left"
+    },
+    {
+     "text": "Nhà nước là gia đình mở rộng của quyền gia trưởng",
+     "answer": "right"
+    }
+   ],
+   "explain": "Tài liệu Bài 1."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hai tiền đề ra đời nhà nước: tiền đề kinh tế là chế độ {{tư hữu}}, tiền đề xã hội là sự phân hóa {{giai cấp}}.",
+   "bank_extra": [
+    "công hữu",
+    "dân tộc"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ba lần phân công lao động xã hội: chăn nuôi tách khỏi trồng trọt; {{thủ công nghiệp}} tách khỏi nông nghiệp; {{thương nghiệp}} ra đời.",
+   "bank_extra": [
+    "công nghiệp",
+    "ngân hàng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo quan điểm Mác – Lênin, nhà nước là hiện tượng vĩnh cửu tồn tại cùng xã hội loài người.",
+   "answer": false,
+   "explain": "Sai. Nhà nước chỉ xuất hiện ở giai đoạn nhất định và sẽ tiêu vong khi điều kiện tồn tại không còn."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày nguồn gốc nhà nước theo chủ nghĩa Mác – Lênin.",
+   "model": "Nhà nước không vĩnh cửu; ra đời từ tiền đề kinh tế (tư hữu sau ba lần phân công lao động) và tiền đề xã hội (phân hóa giai cấp đối kháng); phương Đông còn do nhu cầu trị thủy, chống ngoại xâm.",
+   "keywords": [
+    "tư hữu",
+    "giai cấp",
+    "phân công lao động",
+    "trị thủy"
+   ]
+  }
+ ]
+}

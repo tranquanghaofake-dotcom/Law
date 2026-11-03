@@ -1,0 +1,116 @@
+{
+ "id": "tuoi-chiu-trach-nhiem-hinh-su",
+ "subject": "hinh-su",
+ "chapter": "v7",
+ "term": "Tuổi chịu trách nhiệm hình sự",
+ "definition": "Người từ đủ 16 tuổi trở lên phải chịu trách nhiệm hình sự về mọi tội phạm, trừ những tội phạm mà Bộ luật này có quy định khác. Người từ đủ 14 tuổi đến dưới 16 tuổi phải chịu trách nhiệm hình sự về tội phạm rất nghiêm trọng, tội phạm đặc biệt nghiêm trọng quy định tại một trong các điều 123, 134, 141, 142, 143, 144, 150, 151, 168, 169, 170, 171, 173, 178, 248, 249, 250, 251, 252, 265, 266, 286, 287, 289, 290, 299, 303 và 304 của Bộ luật này.",
+ "plain": "Hai mốc: TỪ ĐỦ 16 TUỔI: chịu TNHS về mọi tội phạm (trừ trường hợp luật quy định khác); TỪ ĐỦ 14 ĐẾN DƯỚI 16: chỉ chịu TNHS về tội RẤT NGHIÊM TRỌNG, ĐẶC BIỆT NGHIÊM TRỌNG thuộc 28 điều liệt kê (giết người 123, cố ý gây thương tích 134, hiếp dâm 141, cướp 168, trộm cắp 173, ma túy 248–252…). Dưới 14 tuổi: không chịu TNHS. Chương XII BLHS về người dưới 18 tuổi phạm tội đã được bãi bỏ trong VBHN 2025 (chuyển sang luật riêng về tư pháp người chưa thành niên).",
+ "example": "Em A 15 tuổi trộm chiếc xe máy trị giá 30 triệu (khoản 1 Điều 173, tội ít nghiêm trọng): A không phải chịu TNHS. Nếu A cướp giật gây hậu quả thuộc khung rất nghiêm trọng của Điều 171 thì phải chịu TNHS.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 12 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "phan-loai-toi-pham",
+  "khong-co-nang-luc-trach-nhiem-hinh-su"
+ ],
+ "keywords": [
+  "đủ 16 tuổi mọi tội phạm",
+  "14 đến dưới 16",
+  "rất nghiêm trọng, đặc biệt nghiêm trọng",
+  "điều luật liệt kê"
+ ],
+ "note": "Khoản 2 Điều 12 được sửa đổi, bổ sung bởi Luật 12/2017/QH14 (hiệu lực 01/01/2018); câu chữ trên theo VBHN 135/VBHN-VPQH 2025.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người từ đủ 14 đến dưới 16 tuổi phải chịu TNHS về loại tội nào?",
+   "options": [
+    "Tội rất nghiêm trọng, đặc biệt nghiêm trọng tại các điều được liệt kê ở khoản 2 Điều 12",
+    "Mọi tội phạm",
+    "Chỉ tội đặc biệt nghiêm trọng",
+    "Không phải chịu TNHS"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 12.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 12 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người từ đủ bao nhiêu tuổi phải chịu TNHS về mọi tội phạm (trừ trường hợp luật quy định khác)?",
+   "options": [
+    "Từ đủ 16 tuổi",
+    "Từ đủ 14 tuổi",
+    "Từ đủ 18 tuổi",
+    "Từ đủ 15 tuổi"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 12.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 12 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Người 15 tuổi phải chịu TNHS",
+   "right": "Người 15 tuổi không phải chịu TNHS",
+   "cases": [
+    {
+     "text": "Giết người (Điều 123)",
+     "answer": "left"
+    },
+    {
+     "text": "Trộm cắp tài sản thuộc khung ít nghiêm trọng",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 2 Điều 12."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người từ đủ {{16}} tuổi trở lên phải chịu trách nhiệm hình sự về mọi tội phạm. Người từ đủ {{14}} tuổi đến dưới 16 tuổi chịu TNHS về tội rất nghiêm trọng, đặc biệt nghiêm trọng tại các điều liệt kê.",
+   "bank_extra": [
+    "18",
+    "12"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người từ đủ 14 tuổi đến dưới 16 tuổi chịu TNHS về tội phạm rất nghiêm trọng, tội phạm {{đặc biệt nghiêm trọng}} tại các điều được liệt kê.",
+   "bank_extra": [
+    "ít nghiêm trọng",
+    "nghiêm trọng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người 15 tuổi phải chịu TNHS về mọi tội phạm rất nghiêm trọng trong Bộ luật Hình sự.",
+   "answer": false,
+   "explain": "Sai. Chỉ các tội tại 28 điều được liệt kê ở khoản 2 Điều 12."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quy định về tuổi chịu trách nhiệm hình sự.",
+   "model": "Từ đủ 16 tuổi chịu TNHS về mọi tội phạm, trừ trường hợp luật quy định khác; từ đủ 14 đến dưới 16 tuổi chịu TNHS về tội rất nghiêm trọng, đặc biệt nghiêm trọng tại các điều được liệt kê (Điều 12).",
+   "keywords": [
+    "16 tuổi",
+    "14 tuổi",
+    "rất nghiêm trọng",
+    "liệt kê"
+   ]
+  }
+ ]
+}

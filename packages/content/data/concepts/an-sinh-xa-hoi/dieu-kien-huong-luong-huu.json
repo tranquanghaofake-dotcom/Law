@@ -1,0 +1,117 @@
+{
+ "id": "dieu-kien-huong-luong-huu",
+ "subject": "an-sinh-xa-hoi",
+ "chapter": "v2",
+ "term": "Điều kiện hưởng lương hưu",
+ "definition": "Đối tượng quy định tại các điểm a, b, c, g, h, i, k, l, m và n khoản 1 và khoản 2 Điều 2 của Luật này khi nghỉ việc có thời gian đóng bảo hiểm xã hội bắt buộc từ đủ 15 năm trở lên thì được hưởng lương hưu nếu thuộc một trong các trường hợp sau đây: a) Đủ tuổi nghỉ hưu theo quy định tại khoản 2 Điều 169 của Bộ luật Lao động;",
+ "plain": "Điểm mới quan trọng: thời gian đóng tối thiểu GIẢM từ 20 năm (Luật 2014) xuống 15 NĂM. Hai điều kiện cộng dồn: (1) đủ TUỔI NGHỈ HƯU theo Điều 169 BLLĐ (lộ trình tăng dần đến 62 tuổi với nam, 60 tuổi với nữ); (2) đóng BHXH bắt buộc từ đủ 15 năm. Có các trường hợp nghỉ hưu sớm (nghề nặng nhọc, độc hại, hầm lò, suy giảm khả năng lao động — Điều 65). Người không đủ điều kiện có thể bảo lưu, đóng tiếp hoặc hưởng BHXH một lần trong trường hợp luật cho phép (Điều 70).",
+ "example": "Bà E đủ tuổi nghỉ hưu năm 2026, đã đóng BHXH bắt buộc 16 năm: đủ điều kiện hưởng lương hưu theo Luật 2024 (theo Luật 2014 thì chưa đủ vì cần 20 năm).",
+ "source": {
+  "kind": "statute",
+  "cite": "Điểm a khoản 1 Điều 64 Luật Bảo hiểm xã hội 2024 (VBHN 19/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bao-hiem/Van-ban-hop-nhat-19-VBHN-VPQH-2026-Luat-Bao-hiem-xa-hoi-696579.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "bao-hiem-xa-hoi",
+  "nguyen-tac-bao-hiem-xa-hoi",
+  "tro-cap-huu-tri-xa-hoi"
+ ],
+ "keywords": [
+  "từ đủ 15 năm",
+  "đủ tuổi nghỉ hưu",
+  "Điều 169 Bộ luật Lao động",
+  "giảm từ 20 năm"
+ ],
+ "note": "Luật Bảo hiểm xã hội 41/2024/QH15 có hiệu lực từ 01/7/2025, thay thế Luật Bảo hiểm xã hội 58/2014/QH13 (đề cương HLU còn dẫn luật 2014).",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Luật BHXH 2024, người lao động cần đóng BHXH bắt buộc tối thiểu bao lâu để được hưởng lương hưu (khi đủ tuổi)?",
+   "options": [
+    "Từ đủ 15 năm",
+    "Từ đủ 20 năm",
+    "Từ đủ 10 năm",
+    "Từ đủ 25 năm"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 64.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 64 Luật Bảo hiểm xã hội 2024 (VBHN 19/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tuổi nghỉ hưu làm căn cứ hưởng lương hưu được xác định theo văn bản nào?",
+   "options": [
+    "Khoản 2 Điều 169 Bộ luật Lao động",
+    "Luật Việc làm",
+    "Luật Cán bộ, công chức",
+    "Nghị quyết của Quốc hội hằng năm"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 64.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 64 Luật Bảo hiểm xã hội 2024 (VBHN 19/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Luật BHXH 2014",
+   "right": "Luật BHXH 2024",
+   "cases": [
+    {
+     "text": "Thời gian đóng tối thiểu 20 năm để hưởng lương hưu",
+     "answer": "left"
+    },
+    {
+     "text": "Thời gian đóng tối thiểu 15 năm để hưởng lương hưu",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 64 Luật 2024."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người lao động có thời gian đóng bảo hiểm xã hội bắt buộc từ đủ {{15}} năm trở lên và đủ {{tuổi nghỉ hưu}} thì được hưởng lương hưu.",
+   "bank_extra": [
+    "20",
+    "tuổi lao động"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tuổi nghỉ hưu theo quy định tại khoản {{2}} Điều {{169}} của Bộ luật Lao động.",
+   "bank_extra": [
+    "3",
+    "170"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo Luật BHXH 2024, người đủ tuổi nghỉ hưu và đóng BHXH bắt buộc 17 năm chưa đủ điều kiện hưởng lương hưu.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 64: chỉ cần từ đủ 15 năm."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu điều kiện hưởng lương hưu thông thường theo Luật BHXH 2024.",
+   "model": "Nghỉ việc, có thời gian đóng BHXH bắt buộc từ đủ 15 năm trở lên và đủ tuổi nghỉ hưu theo khoản 2 Điều 169 Bộ luật Lao động (điểm a khoản 1 Điều 64).",
+   "keywords": [
+    "15 năm",
+    "tuổi nghỉ hưu",
+    "Điều 169",
+    "bắt buộc"
+   ]
+  }
+ ]
+}

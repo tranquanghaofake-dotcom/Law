@@ -1,0 +1,119 @@
+{
+ "id": "xd-bo-cuc-so-ky-hieu",
+ "subject": "xay-dung-vbpl",
+ "chapter": "v4",
+ "term": "Bố cục, số và ký hiệu văn bản quy phạm pháp luật",
+ "definition": "Văn bản quy phạm pháp luật có thể được bố cục theo phần, chương, mục, tiểu mục, điều, khoản, điểm; phần, chương, mục, tiểu mục, điều phải có tên. (…) Văn bản quy phạm pháp luật phải đánh số, ký hiệu bảo đảm thể hiện rõ số thứ tự liên tục, năm ban hành, loại văn bản, cơ quan, người có thẩm quyền ban hành văn bản.",
+ "plain": "Thứ bậc bố cục: phần → chương → mục → tiểu mục → điều → khoản → điểm; từ điều trở lên phải có tên, khoản và điểm không có tên. Số, ký hiệu phải thể hiện 4 yếu tố: SỐ THỨ TỰ liên tục, NĂM ban hành, LOẠI văn bản, CƠ QUAN/NGƯỜI ban hành — ví dụ 64/2025/QH15, 34/2016/NĐ-CP, 01/2025/TT-BTP. Văn bản áp dụng pháp luật không có năm trong ký hiệu (ví dụ 123/QĐ-UBND) — dấu hiệu nhận diện nhanh. Thể thức chi tiết do UBTVQH (nghị quyết) và Chính phủ quy định; văn bản hành chính theo Nghị định 30/2020/NĐ-CP.",
+ "example": "Ký hiệu \"15/2024/NQ-HĐND\": số 15, năm 2024, loại nghị quyết, của HĐND → VBQPPL. Ký hiệu \"15/NQ-HĐND\" không có năm → nghị quyết cá biệt.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 2 và 3 Điều 7 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-54-VBHN-VPQH-2025-Luat-Ban-hanh-van-ban-quy-pham-phap-luat-669858.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "xd-ngon-ngu",
+  "xd-van-ban-qppl",
+  "xd-he-thong-vbqppl"
+ ],
+ "keywords": [
+  "phần, chương, mục",
+  "điều, khoản, điểm",
+  "số thứ tự",
+  "năm ban hành",
+  "loại văn bản"
+ ],
+ "note": "Luật Ban hành văn bản quy phạm pháp luật 64/2025/QH15 có hiệu lực từ 01/4/2025, thay thế Luật 80/2015/QH13 (sửa đổi bởi Luật 63/2020/QH14) mà đề cương HLU 2019 còn dẫn; được sửa đổi bởi Luật 87/2025/QH15 có hiệu lực từ 01/7/2025 — văn bản hợp nhất 54/VBHN-VPQH ngày 11/8/2025. Luật mới bỏ quy trình \"lập đề nghị xây dựng luật\" theo chương trình hằng năm kiểu cũ, tách \"quy trình xây dựng chính sách\" và bỏ thẩm quyền ban hành VBQPPL của cấp huyện (từ 01/7/2025). Dự án Luật Văn bản quy phạm pháp luật (thay thế) đang được Quốc hội khóa XVI xem xét, chưa có hiệu lực.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đơn vị bố cục nào của VBQPPL bắt buộc phải có tên?",
+   "options": [
+    "Phần, chương, mục, tiểu mục, điều",
+    "Khoản và điểm",
+    "Chỉ chương",
+    "Chỉ điều"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 7.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 7 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Số, ký hiệu của VBQPPL phải thể hiện những yếu tố nào?",
+   "options": [
+    "Số thứ tự liên tục, năm ban hành, loại văn bản, cơ quan hoặc người ban hành",
+    "Chỉ số thứ tự",
+    "Tên người ký và ngày ký",
+    "Số trang và số điều"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 7.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 7 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Ký hiệu VBQPPL",
+   "right": "Ký hiệu văn bản áp dụng pháp luật",
+   "cases": [
+    {
+     "text": "25/2025/QĐ-UBND",
+     "answer": "left"
+    },
+    {
+     "text": "25/QĐ-UBND",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 3 Điều 7: VBQPPL có năm ban hành trong số, ký hiệu."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Văn bản quy phạm pháp luật có thể được bố cục theo phần, chương, mục, tiểu mục, {{điều}}, {{khoản}}, điểm.",
+   "bank_extra": [
+    "trang",
+    "dòng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "VBQPPL phải đánh số, ký hiệu thể hiện rõ số thứ tự liên tục, {{năm ban hành}}, {{loại văn bản}}, cơ quan, người có thẩm quyền ban hành.",
+   "bank_extra": [
+    "ngày hiệu lực",
+    "tên người ký"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Khoản và điểm trong văn bản quy phạm pháp luật phải có tên.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 7 chỉ yêu cầu phần, chương, mục, tiểu mục, điều phải có tên."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu quy định về bố cục và số, ký hiệu văn bản quy phạm pháp luật.",
+   "model": "Bố cục phần, chương, mục, tiểu mục, điều, khoản, điểm; từ điều trở lên phải có tên (khoản 2 Điều 7); số, ký hiệu thể hiện số thứ tự liên tục, năm ban hành, loại văn bản, cơ quan/người ban hành (khoản 3 Điều 7).",
+   "keywords": [
+    "chương",
+    "điều",
+    "khoản",
+    "năm ban hành",
+    "loại văn bản"
+   ]
+  }
+ ]
+}

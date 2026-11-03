@@ -1,0 +1,114 @@
+{
+ "id": "tai-san",
+ "subject": "dan-su",
+ "chapter": "v6",
+ "term": "Tài sản",
+ "definition": "Tài sản là vật, tiền, giấy tờ có giá và quyền tài sản. Tài sản bao gồm bất động sản và động sản. Bất động sản và động sản có thể là tài sản hiện có và tài sản hình thành trong tương lai.",
+ "plain": "Bốn loại tài sản: VẬT, TIỀN, GIẤY TỜ CÓ GIÁ, QUYỀN TÀI SẢN. Quyền tài sản là quyền trị giá được bằng tiền, gồm quyền tài sản đối với đối tượng sở hữu trí tuệ, quyền sử dụng đất… (Điều 115). Phân loại: BẤT ĐỘNG SẢN – ĐỘNG SẢN (Điều 107); tài sản HIỆN CÓ – HÌNH THÀNH TRONG TƯƠNG LAI (Điều 108); hoa lợi – lợi tức; vật chính – vật phụ; vật chia được – không chia được… Việc phân loại quyết định chế độ pháp lý (đăng ký, thời hiệu, thẩm quyền Tòa án).",
+ "example": "Căn hộ chung cư đang xây dựng là tài sản hình thành trong tương lai; quyền sử dụng đất là quyền tài sản; cổ phiếu là giấy tờ có giá.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 105 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "bat-dong-san-dong-san",
+  "quyen-so-huu"
+ ],
+ "keywords": [
+  "vật, tiền, giấy tờ có giá, quyền tài sản",
+  "bất động sản, động sản",
+  "hiện có, hình thành trong tương lai"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 105, tài sản gồm những loại nào?",
+   "options": [
+    "Vật, tiền, giấy tờ có giá và quyền tài sản",
+    "Chỉ vật và tiền",
+    "Vật, tiền và sức lao động",
+    "Chỉ bất động sản"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 105.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 105 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quyền sử dụng đất thuộc loại tài sản nào?",
+   "options": [
+    "Quyền tài sản",
+    "Vật",
+    "Tiền",
+    "Giấy tờ có giá"
+   ],
+   "answer": 0,
+   "explain": "Điều 115: quyền tài sản bao gồm quyền sử dụng đất.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 115 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tài sản hiện có",
+   "right": "Tài sản hình thành trong tương lai",
+   "cases": [
+    {
+     "text": "Chiếc xe máy đang sử dụng",
+     "answer": "left"
+    },
+    {
+     "text": "Căn hộ đang xây dựng chưa hoàn thành",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 2 Điều 105; Điều 108."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tài sản là vật, tiền, {{giấy tờ có giá}} và {{quyền tài sản}}.",
+   "bank_extra": [
+    "sức lao động",
+    "danh dự"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bất động sản và động sản có thể là tài sản hiện có và tài sản hình thành trong {{tương lai}}.",
+   "bank_extra": [
+    "quá khứ",
+    "hiện tại"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quyền tài sản là quyền trị giá được bằng tiền.",
+   "answer": true,
+   "explain": "Đúng. Điều 115 Bộ luật Dân sự 2015."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm tài sản theo Bộ luật Dân sự 2015.",
+   "model": "Tài sản là vật, tiền, giấy tờ có giá và quyền tài sản; gồm bất động sản và động sản; có thể là tài sản hiện có hoặc hình thành trong tương lai (Điều 105); quyền tài sản là quyền trị giá được bằng tiền (Điều 115).",
+   "keywords": [
+    "vật",
+    "giấy tờ có giá",
+    "quyền tài sản",
+    "tương lai"
+   ]
+  }
+ ]
+}

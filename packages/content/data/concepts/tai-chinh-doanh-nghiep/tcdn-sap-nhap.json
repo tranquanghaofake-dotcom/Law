@@ -1,0 +1,117 @@
+{
+ "id": "tcdn-sap-nhap",
+ "subject": "tai-chinh-doanh-nghiep",
+ "chapter": "v5",
+ "term": "Sáp nhập công ty",
+ "definition": "Một hoặc một số công ty (sau đây gọi là công ty bị sáp nhập) có thể sáp nhập vào một công ty khác (sau đây gọi là công ty nhận sáp nhập) bằng cách chuyển toàn bộ tài sản, quyền, nghĩa vụ và lợi ích hợp pháp sang công ty nhận sáp nhập, đồng thời chấm dứt sự tồn tại của công ty bị sáp nhập.",
+ "plain": "Sáp nhập (merger): công ty BỊ SÁP NHẬP chấm dứt tồn tại; công ty NHẬN SÁP NHẬP vẫn tồn tại và kế thừa TOÀN BỘ tài sản, quyền, nghĩa vụ. Khác HỢP NHẤT: tạo công ty MỚI, tất cả công ty bị hợp nhất chấm dứt (Điều 200). Khác MUA LẠI (acquisition): bên bị mua vẫn tồn tại, chỉ bị kiểm soát (khoản 4 Điều 29 Luật Cạnh tranh). Vấn đề tài chính: định giá, chuyển đổi phần vốn góp, cổ phần, trái phiếu; nghĩa vụ thuế; kế thừa khoản nợ; có thể phải thông báo tập trung kinh tế.",
+ "example": "Công ty N sáp nhập vào Công ty P: N chấm dứt tồn tại, P kế thừa toàn bộ hợp đồng, khoản nợ và người lao động của N.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 201 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tcdn-hop-nhat",
+  "tcdn-mua-lai-doanh-nghiep",
+  "tcdn-tap-trung-kinh-te"
+ ],
+ "keywords": [
+  "công ty bị sáp nhập",
+  "công ty nhận sáp nhập",
+  "chuyển toàn bộ tài sản, quyền, nghĩa vụ",
+  "chấm dứt tồn tại"
+ ],
+ "note": "Luật Doanh nghiệp 59/2020/QH14 có hiệu lực từ 01/01/2021, thay thế Luật Doanh nghiệp 2014 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 03/2022/QH15 và Luật 76/2025/QH15 (hiệu lực 01/7/2025) — văn bản hợp nhất 67/VBHN-VPQH 2025.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Sau khi sáp nhập, công ty nào chấm dứt tồn tại?",
+   "options": [
+    "Công ty bị sáp nhập",
+    "Công ty nhận sáp nhập",
+    "Cả hai công ty",
+    "Không công ty nào"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 201.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 201 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Công ty nhận sáp nhập kế thừa gì từ công ty bị sáp nhập?",
+   "options": [
+    "Toàn bộ tài sản, quyền, nghĩa vụ và lợi ích hợp pháp",
+    "Chỉ tài sản, không kế thừa nợ",
+    "Chỉ quyền sử dụng đất",
+    "Chỉ thương hiệu"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 201.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 201 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Sáp nhập",
+   "right": "Hợp nhất",
+   "cases": [
+    {
+     "text": "Một công ty khác vẫn tồn tại và nhận toàn bộ tài sản",
+     "answer": "left"
+    },
+    {
+     "text": "Hình thành một công ty mới, các công ty cũ chấm dứt",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 200, 201 Luật Doanh nghiệp."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công ty bị sáp nhập chuyển toàn bộ tài sản, quyền, {{nghĩa vụ}} và lợi ích hợp pháp sang công ty {{nhận sáp nhập}}.",
+   "bank_extra": [
+    "cổ tức",
+    "hợp nhất"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Sáp nhập làm chấm dứt sự tồn tại của công ty {{bị sáp nhập}}; công ty nhận sáp nhập {{vẫn tồn tại}}.",
+   "bank_extra": [
+    "nhận sáp nhập",
+    "chấm dứt"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Sau khi sáp nhập, công ty nhận sáp nhập không phải chịu các khoản nợ của công ty bị sáp nhập.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 201: chuyển toàn bộ tài sản, quyền, nghĩa vụ — gồm cả các khoản nợ."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm sáp nhập công ty và phân biệt với hợp nhất.",
+   "model": "Một hoặc một số công ty chuyển toàn bộ tài sản, quyền, nghĩa vụ, lợi ích hợp pháp sang công ty nhận sáp nhập và chấm dứt tồn tại (khoản 1 Điều 201); hợp nhất tạo công ty mới, các công ty bị hợp nhất đều chấm dứt (khoản 1 Điều 200).",
+   "keywords": [
+    "bị sáp nhập",
+    "nhận sáp nhập",
+    "chấm dứt",
+    "công ty mới"
+   ]
+  }
+ ]
+}

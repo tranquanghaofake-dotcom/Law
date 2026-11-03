@@ -1,0 +1,120 @@
+{
+ "id": "bien-phap-tu-phap",
+ "subject": "hinh-su",
+ "chapter": "v12",
+ "term": "Các biện pháp tư pháp",
+ "definition": "Biện pháp tư pháp đối với người phạm tội bao gồm: a) Tịch thu vật, tiền trực tiếp liên quan đến tội phạm; b) Trả lại tài sản, sửa chữa hoặc bồi thường thiệt hại; buộc công khai xin lỗi; c) Bắt buộc chữa bệnh.",
+ "plain": "Biện pháp tư pháp là biện pháp cưỡng chế hình sự KHÔNG PHẢI HÌNH PHẠT, hỗ trợ hoặc thay thế hình phạt. Với người phạm tội: tịch thu vật, tiền liên quan trực tiếp; trả lại tài sản, sửa chữa, bồi thường, buộc công khai xin lỗi; bắt buộc chữa bệnh. Với pháp nhân thương mại (khoản 2): thêm khôi phục lại tình trạng ban đầu; biện pháp khắc phục, ngăn chặn hậu quả. Phân biệt TỊCH THU VẬT, TIỀN (biện pháp tư pháp, chỉ vật liên quan tội phạm) với TỊCH THU TÀI SẢN (hình phạt bổ sung, tài sản của người bị kết án).",
+ "example": "Tòa án tịch thu con dao mà bị cáo dùng để gây án: biện pháp tư pháp. Tịch thu toàn bộ hoặc một phần tài sản của người bị kết án tội tham ô: hình phạt bổ sung.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 46 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hinh-phat",
+  "he-thong-hinh-phat",
+  "khong-co-nang-luc-trach-nhiem-hinh-su"
+ ],
+ "keywords": [
+  "tịch thu vật, tiền",
+  "bồi thường thiệt hại",
+  "bắt buộc chữa bệnh",
+  "không phải hình phạt"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Biện pháp nào là biện pháp tư pháp đối với người phạm tội?",
+   "options": [
+    "Bắt buộc chữa bệnh",
+    "Quản chế",
+    "Cấm cư trú",
+    "Tịch thu tài sản"
+   ],
+   "answer": 0,
+   "explain": "Điểm c khoản 1 Điều 46; các phương án khác là hình phạt bổ sung.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 46 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Biện pháp tư pháp nào chỉ áp dụng với pháp nhân thương mại phạm tội?",
+   "options": [
+    "Khôi phục lại tình trạng ban đầu",
+    "Tịch thu vật, tiền trực tiếp liên quan đến tội phạm",
+    "Bồi thường thiệt hại",
+    "Buộc công khai xin lỗi"
+   ],
+   "answer": 0,
+   "explain": "Điểm c khoản 2 Điều 46.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 46 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Biện pháp tư pháp",
+   "right": "Hình phạt bổ sung",
+   "cases": [
+    {
+     "text": "Tịch thu công cụ dùng để phạm tội",
+     "answer": "left"
+    },
+    {
+     "text": "Tịch thu tài sản của người bị kết án",
+     "answer": "right"
+    },
+    {
+     "text": "Buộc công khai xin lỗi",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 32, 46."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Biện pháp tư pháp đối với người phạm tội gồm tịch thu vật, tiền {{trực tiếp liên quan}} đến tội phạm; trả lại tài sản, sửa chữa hoặc bồi thường thiệt hại; buộc công khai xin lỗi; bắt buộc {{chữa bệnh}}.",
+   "bank_extra": [
+    "gián tiếp",
+    "lao động"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Biện pháp tư pháp đối với pháp nhân thương mại phạm tội gồm cả khôi phục lại {{tình trạng ban đầu}}.",
+   "bank_extra": [
+    "vốn điều lệ",
+    "giấy phép"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tịch thu vật, tiền trực tiếp liên quan đến tội phạm là hình phạt bổ sung.",
+   "answer": false,
+   "explain": "Sai. Đây là biện pháp tư pháp (điểm a khoản 1 Điều 46); tịch thu tài sản mới là hình phạt bổ sung."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các biện pháp tư pháp và phân biệt với hình phạt.",
+   "model": "Với người phạm tội: tịch thu vật, tiền trực tiếp liên quan đến tội phạm; trả lại tài sản, sửa chữa, bồi thường thiệt hại, buộc công khai xin lỗi; bắt buộc chữa bệnh (khoản 1 Điều 46); với pháp nhân thương mại thêm khôi phục tình trạng ban đầu, biện pháp khắc phục, ngăn chặn hậu quả (khoản 2); không phải hình phạt.",
+   "keywords": [
+    "tịch thu vật, tiền",
+    "bồi thường",
+    "bắt buộc chữa bệnh",
+    "không phải hình phạt"
+   ]
+  }
+ ]
+}

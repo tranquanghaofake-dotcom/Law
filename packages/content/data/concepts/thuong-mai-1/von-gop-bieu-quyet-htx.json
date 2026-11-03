@@ -1,0 +1,116 @@
+{
+ "id": "von-gop-bieu-quyet-htx",
+ "subject": "thuong-mai-1",
+ "chapter": "v11",
+ "term": "Vốn góp tối đa và biểu quyết trong hợp tác xã",
+ "definition": "Phần vốn góp của thành viên chính thức được thực hiện theo thỏa thuận và theo quy định của Luật này và Điều lệ về vốn góp tối thiểu và vốn góp tối đa. Vốn góp tối đa không quá 30% vốn điều lệ đối với hợp tác xã và không quá 40% vốn điều lệ đối với liên hiệp hợp tác xã. (…) Đối với Đại hội thành viên của hợp tác xã, mỗi thành viên chính thức tham dự đại hội toàn thể có một phiếu biểu quyết có giá trị ngang nhau, không phụ thuộc vào phần vốn góp hay chức vụ thành viên.",
+ "plain": "Hai cơ chế bảo đảm HTX không bị một người chi phối: TRẦN VỐN GÓP (≤ 30% vốn điều lệ HTX, ≤ 40% với liên hiệp) và MỖI THÀNH VIÊN MỘT PHIẾU tại Đại hội thành viên toàn thể. Vượt vốn góp tối đa liên tục 12 tháng có thể bị thu hồi Giấy chứng nhận đăng ký (điểm đ khoản 1 Điều 103). Nội dung quan trọng (sửa Điều lệ, đổi tổ chức quản trị…) cần ít nhất 65% tổng số phiếu biểu quyết tán thành (khoản 2 Điều 61).",
+ "example": "HTX có vốn điều lệ 2 tỷ đồng: một thành viên chính thức chỉ được góp tối đa 600 triệu đồng và dù góp bao nhiêu vẫn chỉ có một phiếu tại đại hội toàn thể.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 74; khoản 4 Điều 61 Luật Hợp tác xã 2023 (VBHN 101/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-101-VBHN-VPQH-2026-Luat-Hop-tac-xa-703396.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nguyen-tac-hop-tac-xa",
+  "hop-tac-xa",
+  "co-phan"
+ ],
+ "keywords": [
+  "không quá 30% vốn điều lệ",
+  "40% với liên hiệp",
+  "một phiếu biểu quyết",
+  "không phụ thuộc vào phần vốn góp"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Vốn góp tối đa của một thành viên chính thức trong hợp tác xã là bao nhiêu?",
+   "options": [
+    "Không quá 30% vốn điều lệ",
+    "Không quá 20% vốn điều lệ",
+    "Không quá 50% vốn điều lệ",
+    "Không giới hạn"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 74.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 74 Luật Hợp tác xã 2023 (VBHN 101/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tại Đại hội thành viên toàn thể của hợp tác xã, mỗi thành viên chính thức có bao nhiêu phiếu biểu quyết?",
+   "options": [
+    "Một phiếu, không phụ thuộc vốn góp hay chức vụ",
+    "Tương ứng tỷ lệ vốn góp",
+    "Do Hội đồng quản trị quyết định",
+    "Hai phiếu nếu là thành viên sáng lập"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 61.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 61 Luật Hợp tác xã 2023 (VBHN 101/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hợp tác xã",
+   "right": "Liên hiệp hợp tác xã",
+   "cases": [
+    {
+     "text": "Vốn góp tối đa không quá 30% vốn điều lệ",
+     "answer": "left"
+    },
+    {
+     "text": "Vốn góp tối đa không quá 40% vốn điều lệ",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 74."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Vốn góp tối đa không quá {{30%}} vốn điều lệ đối với hợp tác xã và không quá {{40%}} vốn điều lệ đối với liên hiệp hợp tác xã.",
+   "bank_extra": [
+    "20%",
+    "50%"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Mỗi thành viên chính thức tham dự đại hội toàn thể có {{một phiếu}} biểu quyết có giá trị ngang nhau, không phụ thuộc vào phần {{vốn góp}} hay chức vụ thành viên.",
+   "bank_extra": [
+    "hai phiếu",
+    "thu nhập"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thành viên góp 35% vốn điều lệ hợp tác xã là hợp pháp nếu Điều lệ cho phép.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 74: luật giới hạn tối đa 30% với hợp tác xã."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quy định về vốn góp tối đa và biểu quyết trong hợp tác xã.",
+   "model": "Vốn góp tối đa không quá 30% vốn điều lệ với hợp tác xã, 40% với liên hiệp hợp tác xã (khoản 1 Điều 74); tại đại hội toàn thể mỗi thành viên chính thức một phiếu có giá trị ngang nhau, không phụ thuộc vốn góp, chức vụ (khoản 4 Điều 61).",
+   "keywords": [
+    "30%",
+    "40%",
+    "một phiếu",
+    "vốn góp"
+   ]
+  }
+ ]
+}

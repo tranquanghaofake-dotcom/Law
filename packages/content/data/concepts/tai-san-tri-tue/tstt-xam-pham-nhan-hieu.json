@@ -1,0 +1,117 @@
+{
+ "id": "tstt-xam-pham-nhan-hieu",
+ "subject": "tai-san-tri-tue",
+ "chapter": "v5",
+ "term": "Hành vi xâm phạm quyền đối với nhãn hiệu",
+ "definition": "Sử dụng dấu hiệu tương tự với nhãn hiệu được bảo hộ cho hàng hóa, dịch vụ trùng, tương tự hoặc liên quan tới hàng hóa, dịch vụ thuộc danh mục đăng ký kèm theo nhãn hiệu đó, nếu việc sử dụng có khả năng gây nhầm lẫn về nguồn gốc hàng hóa, dịch vụ;",
+ "plain": "Bốn dạng tại khoản 1 Điều 129 theo cặp DẤU HIỆU × HÀNG HÓA: (a) trùng – trùng (không cần chứng minh nhầm lẫn); (b) trùng – tương tự/liên quan, có khả năng nhầm lẫn; (c) TƯƠNG TỰ – trùng/tương tự/liên quan, có khả năng nhầm lẫn; (d) nhãn hiệu NỔI TIẾNG — mọi hàng hóa nếu gây nhầm lẫn hoặc ấn tượng sai lệch. Khi tư vấn phải phân tích: cấu tạo, phát âm, cách trình bày của dấu hiệu; tính chất, chức năng, kênh phân phối của hàng hóa; rồi kết luận khả năng nhầm lẫn về nguồn gốc. Chỉ xâm phạm khi việc sử dụng KHÔNG được phép của chủ sở hữu và nằm trong thời hạn, lãnh thổ bảo hộ.",
+ "example": "\"Hongda\" cho phụ tùng xe máy so với nhãn hiệu \"Honda\" đăng ký cho xe máy, phụ tùng: trùng 5/6 ký tự, cùng cách phát âm hai âm tiết, hàng hóa trùng/liên quan → khả năng nhầm lẫn về nguồn gốc → điểm c khoản 1 Điều 129.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điểm c khoản 1 Điều 129 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tstt-tu-bao-ve",
+  "tstt-giam-dinh-shtt",
+  "tstt-xu-phat-hanh-chinh"
+ ],
+ "keywords": [
+  "dấu hiệu tương tự",
+  "hàng hóa trùng, tương tự, liên quan",
+  "khả năng gây nhầm lẫn",
+  "nguồn gốc"
+ ],
+ "note": "Luật Sở hữu trí tuệ 50/2005/QH11 (hiệu lực 01/7/2006) đã được sửa đổi bởi Luật 36/2009/QH12, 42/2019/QH14, 07/2022/QH15, 93/2025/QH15 và 131/2025/QH15 (hiệu lực 01/4/2026) — văn bản hợp nhất 67/VBHN-VPQH 2026; ghi chép lớp học còn dẫn Nghị định 105/2006/NĐ-CP và Nghị định 99/2013/NĐ-CP, cần tự kiểm tra hiệu lực của các nghị định này trước khi dùng.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Dùng dấu hiệu tương tự nhãn hiệu được bảo hộ cho hàng hóa cùng loại bị coi là xâm phạm khi nào?",
+   "options": [
+    "Khi việc sử dụng có khả năng gây nhầm lẫn về nguồn gốc hàng hóa, dịch vụ",
+    "Trong mọi trường hợp, không cần điều kiện",
+    "Chỉ khi đã bán được hàng",
+    "Chỉ khi dấu hiệu đã được đăng ký"
+   ],
+   "answer": 0,
+   "explain": "Điểm c khoản 1 Điều 129.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 129 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trường hợp nào KHÔNG cần chứng minh khả năng gây nhầm lẫn?",
+   "options": [
+    "Dấu hiệu trùng với nhãn hiệu cho hàng hóa trùng với danh mục đăng ký",
+    "Dấu hiệu tương tự cho hàng hóa tương tự",
+    "Dấu hiệu trùng cho hàng hóa liên quan",
+    "Dấu hiệu tương tự cho hàng hóa liên quan"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 129 không có điều kiện \"có khả năng gây nhầm lẫn\".",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 129 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Xâm phạm theo khoản 1 Điều 129",
+   "right": "Không xâm phạm",
+   "cases": [
+    {
+     "text": "Dùng dấu hiệu \"Hongda\" cho phụ tùng xe máy khi \"Honda\" được bảo hộ cho hàng hóa đó",
+     "answer": "left"
+    },
+    {
+     "text": "Dùng nhãn hiệu theo hợp đồng li-xăng đã ký với chủ sở hữu",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 129: hành vi \"không được phép của chủ sở hữu\"."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Sử dụng dấu hiệu {{tương tự}} với nhãn hiệu được bảo hộ cho hàng hóa, dịch vụ trùng, tương tự hoặc liên quan, nếu việc sử dụng có khả năng gây {{nhầm lẫn}} về nguồn gốc hàng hóa, dịch vụ.",
+   "bank_extra": [
+    "trùng",
+    "thiệt hại"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Các hành vi tại khoản 1 Điều 129 bị coi là xâm phạm khi được thực hiện mà {{không được phép}} của {{chủ sở hữu}} nhãn hiệu.",
+   "bank_extra": [
+    "không đăng ký",
+    "Cục Sở hữu trí tuệ"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Nhãn hiệu nổi tiếng chỉ được bảo vệ chống hành vi dùng dấu hiệu trùng cho hàng hóa cùng loại.",
+   "answer": false,
+   "explain": "Sai. Điểm d khoản 1 Điều 129: bảo vệ với hàng hóa, dịch vụ bất kỳ, kể cả không trùng, không tương tự, nếu gây nhầm lẫn hoặc ấn tượng sai lệch."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các dạng hành vi xâm phạm quyền đối với nhãn hiệu và cách phân tích.",
+   "model": "Trùng–trùng; trùng–tương tự/liên quan có khả năng nhầm lẫn; tương tự–trùng/tương tự/liên quan có khả năng nhầm lẫn; dấu hiệu trùng/tương tự nhãn hiệu nổi tiếng cho hàng hóa bất kỳ (khoản 1 Điều 129); phân tích dấu hiệu (cấu tạo, phát âm, trình bày) và hàng hóa (bản chất, chức năng, kênh phân phối).",
+   "keywords": [
+    "trùng",
+    "tương tự",
+    "nhầm lẫn",
+    "nổi tiếng"
+   ]
+  }
+ ]
+}

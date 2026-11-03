@@ -1,0 +1,139 @@
+{
+  "id": "tai-chinh-doanh-nghiep-de-2",
+  "group": "tai-chinh-doanh-nghiep",
+  "title": "Đề kiểm tra Pháp luật tài chính doanh nghiệp – Lợi nhuận, công bố thông tin, M&A",
+  "subtitle": "10 câu theo đề cương HLU, vấn đề 3–5",
+  "updated": "2026-11-01",
+  "questions": [
+    {
+      "q": "Doanh thu tính thu nhập chịu thuế có phụ thuộc việc đã thu tiền không?",
+      "options": [
+        "Không phân biệt đã thu hay chưa",
+        "Chỉ khi đã thu tiền",
+        "Chỉ khi xuất hóa đơn",
+        "Chỉ khi khách xác nhận"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 8.",
+      "basis": "Khoản 1 Điều 8 Luật Thuế thu nhập doanh nghiệp 2025 (67/2025/QH15)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-Thue-thu-nhap-doanh-nghiep-2025-so-67-2025-QH15-580594.aspx"
+    },
+    {
+      "q": "Chi phí được trừ phải có chứng từ thanh toán thế nào?",
+      "options": [
+        "Không dùng tiền mặt theo quy định, trừ trường hợp đặc thù",
+        "Bằng tiền mặt",
+        "Không cần chứng từ",
+        "Chỉ cần biên lai viết tay"
+      ],
+      "answer": 0,
+      "explain": "Điểm c khoản 1 Điều 9.",
+      "basis": "Khoản 1 Điều 9 Luật Thuế thu nhập doanh nghiệp 2025 (67/2025/QH15)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-Thue-thu-nhap-doanh-nghiep-2025-so-67-2025-QH15-580594.aspx"
+    },
+    {
+      "q": "Cổ tức là gì?",
+      "options": [
+        "Khoản lợi nhuận sau thuế trả cho mỗi cổ phần",
+        "Lãi trái phiếu",
+        "Tiền hoàn vốn góp",
+        "Thưởng cho người lao động"
+      ],
+      "answer": 0,
+      "explain": "Khoản 5 Điều 4.",
+      "basis": "Khoản 5 Điều 4 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+    },
+    {
+      "q": "Điều kiện nào cần để trả cổ tức cổ phần phổ thông?",
+      "options": [
+        "Đã trích lập quỹ và bù lỗ trước đó",
+        "Có lãi trước thuế",
+        "Có trên 100 cổ đông",
+        "Đã niêm yết"
+      ],
+      "answer": 0,
+      "explain": "Điểm b khoản 2 Điều 135.",
+      "basis": "Khoản 2 Điều 135 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+    },
+    {
+      "q": "Công ty TNHH hai thành viên trở lên được chia lợi nhuận khi nào?",
+      "options": [
+        "Đã hoàn thành nghĩa vụ thuế, tài chính và bảo đảm trả đủ nợ đến hạn sau khi chia",
+        "Bất cứ lúc nào",
+        "Khi có lãi 3 năm liền",
+        "Khi được ngân hàng đồng ý"
+      ],
+      "answer": 0,
+      "explain": "Điều 69.",
+      "basis": "Điều 69 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+    },
+    {
+      "q": "Ai là đối tượng công bố thông tin trên thị trường chứng khoán?",
+      "options": [
+        "Công ty đại chúng",
+        "Hộ kinh doanh",
+        "Hợp tác xã",
+        "Cá nhân sở hữu 0,1% cổ phiếu"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 118.",
+      "basis": "Khoản 1 Điều 118 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+      "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+    },
+    {
+      "q": "Doanh nghiệp nhà nước công bố báo cáo tài chính năm đã kiểm toán trong thời hạn nào?",
+      "options": [
+        "150 ngày từ khi kết thúc năm tài chính",
+        "30 ngày",
+        "60 ngày",
+        "1 năm"
+      ],
+      "answer": 0,
+      "explain": "Điểm c khoản 1 Điều 109.",
+      "basis": "Khoản 1 Điều 109 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+    },
+    {
+      "q": "Sau khi sáp nhập, công ty nào chấm dứt tồn tại?",
+      "options": [
+        "Công ty bị sáp nhập",
+        "Công ty nhận sáp nhập",
+        "Cả hai",
+        "Không công ty nào"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 201.",
+      "basis": "Khoản 1 Điều 201 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+    },
+    {
+      "q": "Hợp nhất công ty dẫn đến kết quả nào?",
+      "options": [
+        "Hình thành công ty mới, các công ty bị hợp nhất chấm dứt",
+        "Một công ty vẫn tồn tại nhận tài sản",
+        "Chia công ty",
+        "Chuyển đổi loại hình"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 200.",
+      "basis": "Khoản 1 Điều 200 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+    },
+    {
+      "q": "Mua lại doanh nghiệp đòi hỏi mua đến mức nào?",
+      "options": [
+        "Đủ để kiểm soát, chi phối doanh nghiệp hoặc một ngành, nghề",
+        "Đúng 100%",
+        "Ít nhất 25%",
+        "Không cần mức nào"
+      ],
+      "answer": 0,
+      "explain": "Khoản 4 Điều 29.",
+      "basis": "Khoản 4 Điều 29 Luật Cạnh tranh 2018",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx"
+    }
+  ]
+}

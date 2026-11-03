@@ -1,0 +1,116 @@
+{
+ "id": "lam-dung-vi-tri-thong-linh",
+ "subject": "canh-tranh",
+ "chapter": "v4",
+ "term": "Hành vi lạm dụng vị trí thống lĩnh thị trường bị cấm",
+ "definition": "Doanh nghiệp, nhóm doanh nghiệp có vị trí thống lĩnh thị trường thực hiện hành vi sau đây: a) Bán hàng hóa, cung ứng dịch vụ dưới giá thành toàn bộ dẫn đến hoặc có khả năng dẫn đến loại bỏ đối thủ cạnh tranh; b) Áp đặt giá mua, giá bán hàng hóa, dịch vụ bất hợp lý hoặc ấn định giá bán lại tối thiểu gây ra hoặc có khả năng gây ra thiệt hại cho khách hàng;",
+ "plain": "Các hành vi lạm dụng bị cấm (khoản 1): BÁN DƯỚI GIÁ THÀNH TOÀN BỘ nhằm loại bỏ đối thủ (định giá hủy diệt); ÁP ĐẶT GIÁ bất hợp lý, ẤN ĐỊNH GIÁ BÁN LẠI TỐI THIỂU; HẠN CHẾ sản xuất, phân phối, cản trở công nghệ; PHÂN BIỆT ĐỐI XỬ điều kiện thương mại; ÁP ĐẶT ĐIỀU KIỆN, nghĩa vụ không liên quan (bán kèm); NGĂN CẢN gia nhập; hành vi khác theo luật khác. Doanh nghiệp ĐỘC QUYỀN (khoản 2): thêm áp đặt điều kiện bất lợi cho khách hàng, lợi dụng vị trí đơn phương thay đổi, hủy bỏ hợp đồng không lý do chính đáng.",
+ "example": "Công ty có 40% thị phần bán sản phẩm với giá thấp hơn giá thành toàn bộ trong 6 tháng khiến các đối thủ nhỏ phải rời thị trường: hành vi lạm dụng vị trí thống lĩnh bị cấm (điểm a khoản 1 Điều 27).",
+ "source": {
+  "kind": "statute",
+  "cite": "Điểm a, b khoản 1 Điều 27 Luật Cạnh tranh 2018",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "vi-tri-thong-linh-thi-truong",
+  "thoa-thuan-han-che-canh-tranh",
+  "canh-tranh-khong-lanh-manh"
+ ],
+ "keywords": [
+  "bán dưới giá thành toàn bộ",
+  "áp đặt giá bất hợp lý",
+  "ấn định giá bán lại tối thiểu",
+  "ngăn cản gia nhập"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Doanh nghiệp có vị trí thống lĩnh bán hàng dưới giá thành toàn bộ dẫn đến loại bỏ đối thủ cạnh tranh thì sao?",
+   "options": [
+    "Là hành vi lạm dụng vị trí thống lĩnh bị cấm",
+    "Là khuyến mại hợp pháp",
+    "Là cạnh tranh lành mạnh",
+    "Chỉ bị cấm nếu kéo dài trên 1 năm"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 27.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 27 Luật Cạnh tranh 2018"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ấn định giá bán lại tối thiểu gây thiệt hại cho khách hàng do doanh nghiệp có vị trí thống lĩnh thực hiện thuộc hành vi nào?",
+   "options": [
+    "Lạm dụng vị trí thống lĩnh thị trường",
+    "Cạnh tranh không lành mạnh",
+    "Tập trung kinh tế",
+    "Không vi phạm"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 1 Điều 27.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 27 Luật Cạnh tranh 2018"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Lạm dụng vị trí thống lĩnh",
+   "right": "Hành vi kinh doanh bình thường",
+   "cases": [
+    {
+     "text": "Buộc khách hàng mua kèm sản phẩm không liên quan",
+     "answer": "left"
+    },
+    {
+     "text": "Giảm giá nhờ cải tiến công nghệ, vẫn trên giá thành",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 27."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Doanh nghiệp có vị trí thống lĩnh bị cấm bán hàng hóa, cung ứng dịch vụ dưới giá thành {{toàn bộ}} dẫn đến hoặc có khả năng dẫn đến {{loại bỏ}} đối thủ cạnh tranh.",
+   "bank_extra": [
+    "sản xuất",
+    "hợp tác"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bị cấm áp đặt giá mua, giá bán bất hợp lý hoặc ấn định giá bán lại {{tối thiểu}} gây thiệt hại cho khách hàng.",
+   "bank_extra": [
+    "tối đa",
+    "trung bình"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Doanh nghiệp không có vị trí thống lĩnh bán dưới giá thành vẫn bị xử lý theo Điều 27.",
+   "answer": false,
+   "explain": "Sai. Điều 27 chỉ áp dụng với doanh nghiệp, nhóm doanh nghiệp có vị trí thống lĩnh (hoặc độc quyền); doanh nghiệp khác có thể bị xem xét theo khoản 6 Điều 45 nếu đủ dấu hiệu."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các hành vi lạm dụng vị trí thống lĩnh thị trường bị cấm.",
+   "model": "Bán dưới giá thành toàn bộ loại bỏ đối thủ; áp đặt giá bất hợp lý, ấn định giá bán lại tối thiểu; hạn chế sản xuất, phân phối, cản trở công nghệ; áp dụng điều kiện thương mại khác nhau; áp đặt điều kiện, nghĩa vụ không liên quan; ngăn cản gia nhập; hành vi khác theo luật khác (khoản 1 Điều 27).",
+   "keywords": [
+    "giá thành toàn bộ",
+    "áp đặt giá",
+    "điều kiện thương mại",
+    "ngăn cản"
+   ]
+  }
+ ]
+}

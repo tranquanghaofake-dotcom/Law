@@ -1,0 +1,114 @@
+{
+ "id": "giao-duc-tai-xa",
+ "subject": "hanh-chinh",
+ "chapter": "v14",
+ "term": "Biện pháp giáo dục tại xã, phường, đặc khu",
+ "definition": "Giáo dục tại xã, phường, đặc khu là biện pháp xử lý hành chính áp dụng đối với các đối tượng quy định tại Điều 90 của Luật này để giáo dục, quản lý họ tại nơi cư trú trong trường hợp nhận thấy không cần thiết phải cách ly họ khỏi cộng đồng. Thời hạn áp dụng biện pháp giáo dục tại xã, phường, đặc khu từ 03 tháng đến 06 tháng.",
+ "plain": "Đặc điểm: giáo dục, quản lý TẠI NƠI CƯ TRÚ, KHÔNG CÁCH LY khỏi cộng đồng; 03–06 THÁNG; do Chủ tịch UBND cấp xã quyết định (khoản 1 Điều 105). Đối tượng (Điều 90): người 12–14 tuổi có hành vi có dấu hiệu tội phạm RẤT NGHIÊM TRỌNG do cố ý; 14–16 tuổi có dấu hiệu tội NGHIÊM TRỌNG do cố ý; người chưa thành niên, người từ đủ 18 tuổi đã 02 lần bị xử phạt và bị lập biên bản lần thứ ba trong 06 tháng về các hành vi luật liệt kê (trộm cắp, đánh bạc, gây rối…) nhưng không phải tội phạm (khoản 3, 4, 6). Khoản 5 Điều 90 đã được bãi bỏ.",
+ "example": "Em A 13 tuổi có hành vi có dấu hiệu tội cướp tài sản thuộc khung rất nghiêm trọng: có thể bị áp dụng giáo dục tại xã, phường nơi cư trú 3–6 tháng.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 89 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Vi-pham-hanh-chinh/Van-ban-hop-nhat-90-VBHN-VPQH-2026-Luat-Xu-ly-vi-pham-hanh-chinh-699548.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "bien-phap-xu-ly-hanh-chinh",
+  "truong-giao-duong"
+ ],
+ "keywords": [
+  "giáo dục, quản lý tại nơi cư trú",
+  "không cần cách ly khỏi cộng đồng",
+  "03 tháng đến 06 tháng"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thời hạn áp dụng biện pháp giáo dục tại xã, phường, đặc khu là bao lâu?",
+   "options": [
+    "Từ 03 tháng đến 06 tháng",
+    "Từ 06 tháng đến 24 tháng",
+    "Từ 01 tháng đến 03 tháng",
+    "Từ 12 tháng đến 24 tháng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 89.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 89 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Biện pháp giáo dục tại xã, phường, đặc khu được áp dụng trong trường hợp nào?",
+   "options": [
+    "Không cần thiết phải cách ly người vi phạm khỏi cộng đồng",
+    "Người vi phạm phạm tội đặc biệt nghiêm trọng",
+    "Người vi phạm là tổ chức",
+    "Người vi phạm là người nước ngoài"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 89.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 89 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Giáo dục tại xã, phường, đặc khu",
+   "right": "Đưa vào trường giáo dưỡng",
+   "cases": [
+    {
+     "text": "Quản lý tại nơi cư trú",
+     "answer": "left"
+    },
+    {
+     "text": "Cách ly tại cơ sở tập trung",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 89, 91."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Giáo dục tại xã, phường, đặc khu là biện pháp giáo dục, quản lý họ tại nơi {{cư trú}} khi không cần thiết phải {{cách ly}} họ khỏi cộng đồng.",
+   "bank_extra": [
+    "làm việc",
+    "xử phạt"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thời hạn áp dụng biện pháp giáo dục tại xã, phường, đặc khu từ 03 tháng đến {{06}} tháng.",
+   "bank_extra": [
+    "12",
+    "24"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người bị áp dụng giáo dục tại xã, phường, đặc khu bị đưa vào cơ sở tập trung.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 89: giáo dục, quản lý tại nơi cư trú, không cách ly khỏi cộng đồng."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày biện pháp giáo dục tại xã, phường, đặc khu.",
+   "model": "Là biện pháp xử lý hành chính áp dụng với đối tượng tại Điều 90 để giáo dục, quản lý tại nơi cư trú khi không cần cách ly khỏi cộng đồng; thời hạn 03–06 tháng (Điều 89).",
+   "keywords": [
+    "nơi cư trú",
+    "cách ly",
+    "03 tháng",
+    "06 tháng"
+   ]
+  }
+ ]
+}

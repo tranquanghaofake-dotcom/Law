@@ -1,0 +1,139 @@
+{
+  "id": "thuong-mai-de-2",
+  "group": "thuong-mai",
+  "title": "Đề kiểm tra Thương mại 2 – Chế tài và giải quyết tranh chấp",
+  "subtitle": "10 câu theo đề cương HLU, vấn đề 6–7",
+  "updated": "2026-11-01",
+  "questions": [
+    {
+      "q": "Hợp đồng thương mại ghi phạt 20% nếu giao hàng chậm. Phần nghĩa vụ bị vi phạm trị giá 100 triệu. Mức phạt tối đa được áp dụng là bao nhiêu?",
+      "options": [
+        "20 triệu",
+        "8 triệu",
+        "10 triệu",
+        "Không giới hạn"
+      ],
+      "answer": 1,
+      "explain": "Điều 301: không quá 8% giá trị phần nghĩa vụ bị vi phạm.",
+      "basis": "Điều 301 Luật Thương mại (VBHN 113/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+    },
+    {
+      "q": "Hợp đồng thương mại không có điều khoản phạt vi phạm. Bên bị vi phạm có quyền gì về tiền?",
+      "options": [
+        "Phạt 8%",
+        "Chỉ yêu cầu bồi thường thiệt hại",
+        "Không có quyền gì",
+        "Phạt và bồi thường"
+      ],
+      "answer": 1,
+      "explain": "Khoản 1 Điều 307.",
+      "basis": "Điều 307 Luật Thương mại (VBHN 113/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+    },
+    {
+      "q": "Hợp đồng thương mại có điều khoản phạt vi phạm. Bên bị vi phạm có được đòi cả bồi thường không?",
+      "options": [
+        "Có, được áp dụng cả hai (trừ luật quy định khác)",
+        "Không",
+        "Chỉ khi có thỏa thuận riêng về bồi thường",
+        "Chỉ khi thiệt hại trên 8%"
+      ],
+      "answer": 0,
+      "explain": "Khoản 2 Điều 307.",
+      "basis": "Điều 307 Luật Thương mại (VBHN 113/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+    },
+    {
+      "q": "Yếu tố nào KHÔNG cần để phát sinh trách nhiệm bồi thường theo Điều 303?",
+      "options": [
+        "Lỗi cố ý của bên vi phạm",
+        "Hành vi vi phạm hợp đồng",
+        "Thiệt hại thực tế",
+        "Quan hệ nhân quả trực tiếp"
+      ],
+      "answer": 0,
+      "explain": "Điều 303.",
+      "basis": "Điều 303 Luật Thương mại (VBHN 113/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+    },
+    {
+      "q": "Ai phải chứng minh căn cứ miễn trách nhiệm?",
+      "options": [
+        "Bên bị vi phạm",
+        "Bên vi phạm",
+        "Trọng tài",
+        "Cơ quan nhà nước"
+      ],
+      "answer": 1,
+      "explain": "Khoản 2 Điều 294.",
+      "basis": "Điều 294 Luật Thương mại (VBHN 113/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+    },
+    {
+      "q": "Vi phạm cơ bản là gì?",
+      "options": [
+        "Vi phạm lần đầu",
+        "Vi phạm gây thiệt hại đến mức bên kia không đạt được mục đích giao kết hợp đồng",
+        "Vi phạm có giá trị lớn",
+        "Vi phạm về thanh toán"
+      ],
+      "answer": 1,
+      "explain": "Khoản 13 Điều 3.",
+      "basis": "Điều 3 Luật Thương mại (VBHN 113/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+    },
+    {
+      "q": "Bên bị vi phạm có thể hủy bỏ hợp đồng khi nào (trừ trường hợp miễn trách nhiệm)?",
+      "options": [
+        "Mọi vi phạm",
+        "Vi phạm là điều kiện hủy bỏ đã thỏa thuận hoặc vi phạm cơ bản",
+        "Khi được Tòa án cho phép trước",
+        "Khi bên kia chậm 1 ngày"
+      ],
+      "answer": 1,
+      "explain": "Khoản 4 Điều 312.",
+      "basis": "Điều 312 Luật Thương mại (VBHN 113/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+    },
+    {
+      "q": "Chế tài nào KHÔNG thuộc Điều 292?",
+      "options": [
+        "Buộc thực hiện đúng hợp đồng",
+        "Đình chỉ thực hiện hợp đồng",
+        "Phạt tiền hành chính",
+        "Tạm ngừng thực hiện hợp đồng"
+      ],
+      "answer": 2,
+      "explain": "Điều 292.",
+      "basis": "Điều 292 Luật Thương mại (VBHN 113/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+    },
+    {
+      "q": "Thời hiệu khởi kiện tranh chấp thương mại (trừ logistics) là bao lâu?",
+      "options": [
+        "01 năm",
+        "02 năm",
+        "03 năm",
+        "05 năm"
+      ],
+      "answer": 1,
+      "explain": "Điều 319.",
+      "basis": "Điều 319 Luật Thương mại (VBHN 113/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+    },
+    {
+      "q": "Thời hạn khiếu nại về chất lượng hàng hóa (không có bảo hành, không có thỏa thuận) là bao lâu?",
+      "options": [
+        "03 tháng",
+        "06 tháng từ ngày giao hàng",
+        "09 tháng",
+        "12 tháng"
+      ],
+      "answer": 1,
+      "explain": "Khoản 2 Điều 318.",
+      "basis": "Điều 318 Luật Thương mại (VBHN 113/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+    }
+  ]
+}

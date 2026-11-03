@@ -1,0 +1,115 @@
+{
+ "id": "dat-coc",
+ "subject": "dan-su-2",
+ "chapter": "v4",
+ "term": "Đặt cọc",
+ "definition": "Đặt cọc là việc một bên (sau đây gọi là bên đặt cọc) giao cho bên kia (sau đây gọi là bên nhận đặt cọc) một khoản tiền hoặc kim khí quý, đá quý hoặc vật có giá trị khác (sau đây gọi chung là tài sản đặt cọc) trong một thời hạn để bảo đảm giao kết hoặc thực hiện hợp đồng. Trường hợp hợp đồng được giao kết, thực hiện thì tài sản đặt cọc được trả lại cho bên đặt cọc hoặc được trừ để thực hiện nghĩa vụ trả tiền; nếu bên đặt cọc từ chối việc giao kết, thực hiện hợp đồng thì tài sản đặt cọc thuộc về bên nhận đặt cọc; nếu bên nhận đặt cọc từ chối việc giao kết, thực hiện hợp đồng thì phải trả cho bên đặt cọc tài sản đặt cọc và một khoản tiền tương đương giá trị tài sản đặt cọc, trừ trường hợp có thỏa thuận khác.",
+ "plain": "Mục đích: BẢO ĐẢM GIAO KẾT hoặc THỰC HIỆN hợp đồng. Xử lý: hợp đồng thực hiện → trả lại hoặc TRỪ vào tiền; BÊN ĐẶT CỌC từ chối → MẤT CỌC; BÊN NHẬN CỌC từ chối → trả lại cọc + một khoản TƯƠNG ĐƯƠNG (phạt cọc \"gấp đôi\"), trừ thỏa thuận khác. Phân biệt TIỀN TRẢ TRƯỚC (không có chức năng bảo đảm, chỉ hoàn trả). Có bộ đề riêng \"Đặt cọc\" trong nhóm Luật Dân sự.",
+ "example": "Đặt cọc 20 triệu mua nhà; chủ nhà bán cho người khác giá cao hơn: chủ nhà phải trả 20 triệu cọc và thêm 20 triệu.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 328 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "bien-phap-bao-dam",
+  "phat-vi-pham"
+ ],
+ "keywords": [
+  "bảo đảm giao kết hoặc thực hiện hợp đồng",
+  "mất cọc",
+  "tương đương giá trị tài sản đặt cọc",
+  "trừ thỏa thuận khác"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Bên nhận đặt cọc từ chối giao kết hợp đồng thì phải làm gì (nếu không có thỏa thuận khác)?",
+   "options": [
+    "Trả tài sản đặt cọc và một khoản tiền tương đương giá trị tài sản đặt cọc",
+    "Chỉ trả lại tài sản đặt cọc",
+    "Trả gấp ba",
+    "Không phải trả gì"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 328.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 328 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tài sản đặt cọc có thể gồm những gì?",
+   "options": [
+    "Tiền, kim khí quý, đá quý hoặc vật có giá trị khác",
+    "Chỉ tiền mặt",
+    "Chỉ quyền sử dụng đất",
+    "Chỉ giấy tờ có giá"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 328.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 328 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Bên đặt cọc mất cọc",
+   "right": "Bên nhận cọc phải trả thêm",
+   "cases": [
+    {
+     "text": "Người mua đổi ý không mua nữa",
+     "answer": "left"
+    },
+    {
+     "text": "Người bán bán nhà cho người khác",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 2 Điều 328."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nếu bên đặt cọc từ chối việc giao kết, thực hiện hợp đồng thì tài sản đặt cọc thuộc về {{bên nhận đặt cọc}}; nếu bên nhận đặt cọc từ chối thì phải trả tài sản đặt cọc và một khoản tiền {{tương đương}} giá trị tài sản đặt cọc.",
+   "bank_extra": [
+    "Nhà nước",
+    "gấp ba"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đặt cọc nhằm bảo đảm {{giao kết}} hoặc thực hiện hợp đồng.",
+   "bank_extra": [
+    "hủy bỏ",
+    "sửa đổi"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tiền trả trước và tiền đặt cọc có cùng cơ chế phạt cọc.",
+   "answer": false,
+   "explain": "Sai. Tiền trả trước không có chức năng bảo đảm; chế tài mất cọc, phạt cọc chỉ áp dụng với đặt cọc (Điều 328)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm đặt cọc và cách xử lý tài sản đặt cọc.",
+   "model": "Đặt cọc là giao tiền, kim khí quý, đá quý, vật có giá trị trong một thời hạn để bảo đảm giao kết hoặc thực hiện hợp đồng; hợp đồng thực hiện thì trả lại hoặc trừ vào tiền; bên đặt cọc từ chối thì mất cọc; bên nhận cọc từ chối thì trả cọc và khoản tương đương, trừ thỏa thuận khác (Điều 328).",
+   "keywords": [
+    "bảo đảm",
+    "mất cọc",
+    "tương đương",
+    "thỏa thuận khác"
+   ]
+  }
+ ]
+}

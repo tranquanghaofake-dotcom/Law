@@ -1,0 +1,119 @@
+{
+ "id": "phap-nhan",
+ "subject": "dan-su",
+ "chapter": "v3",
+ "term": "Điều kiện của pháp nhân",
+ "definition": "Một tổ chức được công nhận là pháp nhân khi có đủ các điều kiện sau đây: a) Được thành lập theo quy định của Bộ luật này, luật khác có liên quan; b) Có cơ cấu tổ chức theo quy định tại Điều 83 của Bộ luật này; c) Có tài sản độc lập với cá nhân, pháp nhân khác và tự chịu trách nhiệm bằng tài sản của mình; d) Nhân danh mình tham gia quan hệ pháp luật một cách độc lập.",
+ "plain": "Bốn điều kiện pháp nhân: (1) thành lập hợp pháp; (2) cơ cấu tổ chức chặt chẽ (có cơ quan điều hành, Điều 83); (3) TÀI SẢN ĐỘC LẬP và tự chịu trách nhiệm bằng tài sản đó; (4) NHÂN DANH MÌNH tham gia quan hệ pháp luật độc lập. Hệ quả: thành viên không chịu trách nhiệm thay pháp nhân, trừ trường hợp luật định. Doanh nghiệp tư nhân KHÔNG phải pháp nhân vì không có tài sản độc lập với chủ doanh nghiệp.",
+ "example": "Công ty cổ phần có tư cách pháp nhân: nếu công ty nợ, chủ nợ đòi công ty bằng tài sản của công ty, không đòi cổ đông trả bằng tài sản riêng. Doanh nghiệp tư nhân thì chủ doanh nghiệp chịu trách nhiệm vô hạn.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 74 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nang-luc-phap-luat-dan-su",
+  "dai-dien"
+ ],
+ "keywords": [
+  "thành lập hợp pháp",
+  "cơ cấu tổ chức",
+  "tài sản độc lập",
+  "nhân danh mình"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Điều kiện nào KHÔNG thuộc điều kiện công nhận pháp nhân theo khoản 1 Điều 74?",
+   "options": [
+    "Có ít nhất 50 thành viên",
+    "Được thành lập theo quy định của luật",
+    "Có tài sản độc lập và tự chịu trách nhiệm bằng tài sản đó",
+    "Nhân danh mình tham gia quan hệ pháp luật độc lập"
+   ],
+   "answer": 0,
+   "explain": "Điều 74 không đặt điều kiện số lượng thành viên.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 74 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Vì sao doanh nghiệp tư nhân không có tư cách pháp nhân?",
+   "options": [
+    "Không có tài sản độc lập với chủ doanh nghiệp",
+    "Không được đăng ký kinh doanh",
+    "Không có tên riêng",
+    "Không được thuê lao động"
+   ],
+   "answer": 0,
+   "explain": "Thiếu điều kiện tại điểm c khoản 1 Điều 74.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điểm c khoản 1 Điều 74 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Có tư cách pháp nhân",
+   "right": "Không có tư cách pháp nhân",
+   "cases": [
+    {
+     "text": "Công ty trách nhiệm hữu hạn",
+     "answer": "left"
+    },
+    {
+     "text": "Công ty cổ phần",
+     "answer": "left"
+    },
+    {
+     "text": "Doanh nghiệp tư nhân",
+     "answer": "right"
+    }
+   ],
+   "explain": "Theo điều kiện tài sản độc lập (điểm c khoản 1 Điều 74)."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Pháp nhân có tài sản {{độc lập}} với cá nhân, pháp nhân khác và tự chịu trách nhiệm bằng tài sản của mình; {{nhân danh mình}} tham gia quan hệ pháp luật một cách độc lập.",
+   "bank_extra": [
+    "chung",
+    "nhân danh thành viên"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Mọi cá nhân, pháp nhân đều có quyền {{thành lập}} pháp nhân, trừ trường hợp luật có quy định khác.",
+   "bank_extra": [
+    "giải thể",
+    "kiểm soát"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thành viên pháp nhân luôn phải chịu trách nhiệm bằng tài sản riêng về nghĩa vụ của pháp nhân.",
+   "answer": false,
+   "explain": "Sai. Pháp nhân tự chịu trách nhiệm bằng tài sản của mình (điểm c khoản 1 Điều 74)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các điều kiện để một tổ chức được công nhận là pháp nhân.",
+   "model": "Thành lập theo Bộ luật này, luật khác có liên quan; có cơ cấu tổ chức theo Điều 83; có tài sản độc lập với cá nhân, pháp nhân khác và tự chịu trách nhiệm bằng tài sản đó; nhân danh mình tham gia quan hệ pháp luật độc lập (khoản 1 Điều 74).",
+   "keywords": [
+    "thành lập",
+    "cơ cấu tổ chức",
+    "tài sản độc lập",
+    "nhân danh mình"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "id": "hieu-luc-ngoai-lanh-tho",
+ "subject": "hinh-su",
+ "chapter": "v2",
+ "term": "Hiệu lực của Bộ luật Hình sự ngoài lãnh thổ Việt Nam",
+ "definition": "Công dân Việt Nam hoặc pháp nhân thương mại Việt Nam có hành vi phạm tội ở ngoài lãnh thổ nước Cộng hòa xã hội chủ nghĩa Việt Nam mà Bộ luật này quy định là tội phạm, thì có thể bị truy cứu trách nhiệm hình sự tại Việt Nam theo quy định của Bộ luật này. Quy định này cũng được áp dụng đối với người không quốc tịch thường trú ở Việt Nam.",
+ "plain": "Nguyên tắc QUỐC TỊCH (khoản 1): công dân, pháp nhân thương mại Việt Nam, người không quốc tịch thường trú ở Việt Nam phạm tội ở nước ngoài CÓ THỂ bị truy cứu tại Việt Nam. Nguyên tắc BẢO VỆ (khoản 2): người nước ngoài phạm tội ở nước ngoài xâm hại quyền lợi công dân Việt Nam hoặc lợi ích Việt Nam, hoặc theo điều ước quốc tế. Khoản 3: tàu bay, tàu biển không mang quốc tịch Việt Nam ở biển cả nếu điều ước quốc tế có quy định. Lưu ý chữ \"CÓ THỂ\" — không bắt buộc.",
+ "example": "Công dân Việt Nam lừa đảo chiếm đoạt tài sản khi đang lao động tại Hàn Quốc, về nước: có thể bị truy cứu trách nhiệm hình sự tại Việt Nam theo Bộ luật Hình sự Việt Nam.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 6 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hieu-luc-theo-lanh-tho",
+  "co-so-trach-nhiem-hinh-su"
+ ],
+ "keywords": [
+  "công dân Việt Nam",
+  "người không quốc tịch thường trú",
+  "có thể bị truy cứu",
+  "xâm hại lợi ích Việt Nam"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người không quốc tịch thường trú ở Việt Nam phạm tội ở nước ngoài có thể bị truy cứu TNHS tại Việt Nam không?",
+   "options": [
+    "Có thể, như công dân Việt Nam",
+    "Không bao giờ",
+    "Chỉ khi có yêu cầu của nước ngoài",
+    "Chỉ khi phạm tội xâm phạm an ninh quốc gia"
+   ],
+   "answer": 0,
+   "explain": "Đoạn 2 khoản 1 Điều 6.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 6 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người nước ngoài phạm tội ở nước ngoài có thể bị truy cứu theo Bộ luật Hình sự Việt Nam khi nào?",
+   "options": [
+    "Hành vi xâm hại quyền, lợi ích hợp pháp của công dân Việt Nam hoặc lợi ích của Việt Nam",
+    "Trong mọi trường hợp",
+    "Khi người đó du lịch qua Việt Nam",
+    "Không bao giờ"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 6.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 6 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Nguyên tắc quốc tịch (khoản 1)",
+   "right": "Nguyên tắc bảo vệ (khoản 2)",
+   "cases": [
+    {
+     "text": "Công dân Việt Nam phạm tội ở Úc",
+     "answer": "left"
+    },
+    {
+     "text": "Người nước ngoài ở nước ngoài lừa đảo công dân Việt Nam",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 6."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công dân Việt Nam hoặc pháp nhân thương mại Việt Nam có hành vi phạm tội ở ngoài lãnh thổ Việt Nam thì {{có thể}} bị truy cứu trách nhiệm hình sự tại Việt Nam. Quy định này cũng áp dụng với người {{không quốc tịch}} thường trú ở Việt Nam.",
+   "bank_extra": [
+    "bắt buộc",
+    "hai quốc tịch"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người nước ngoài phạm tội ngoài lãnh thổ Việt Nam có thể bị truy cứu nếu hành vi xâm hại quyền, lợi ích hợp pháp của {{công dân Việt Nam}}.",
+   "bank_extra": [
+    "người nước ngoài",
+    "tổ chức quốc tế"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Công dân Việt Nam phạm tội ở nước ngoài bắt buộc phải bị truy cứu trách nhiệm hình sự tại Việt Nam.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 6 dùng chữ \"có thể bị truy cứu\"."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày hiệu lực của Bộ luật Hình sự đối với hành vi phạm tội ở ngoài lãnh thổ Việt Nam.",
+   "model": "Công dân, pháp nhân thương mại Việt Nam, người không quốc tịch thường trú ở Việt Nam phạm tội ở nước ngoài có thể bị truy cứu tại Việt Nam (khoản 1); người nước ngoài phạm tội xâm hại quyền lợi công dân Việt Nam, lợi ích Việt Nam hoặc theo điều ước quốc tế (khoản 2); tàu bay, tàu biển ở biển cả theo điều ước (khoản 3) (Điều 6).",
+   "keywords": [
+    "công dân Việt Nam",
+    "không quốc tịch",
+    "người nước ngoài",
+    "điều ước quốc tế"
+   ]
+  }
+ ]
+}

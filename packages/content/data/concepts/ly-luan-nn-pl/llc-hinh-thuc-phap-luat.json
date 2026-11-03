@@ -1,0 +1,108 @@
+{
+ "id": "llc-hinh-thuc-phap-luat",
+ "subject": "ly-luan-nn-pl",
+ "chapter": "v4",
+ "term": "Hình thức (nguồn) của pháp luật",
+ "definition": "Hình thức bên ngoài của pháp luật gồm tập quán pháp, tiền lệ pháp (án lệ) và văn bản quy phạm pháp luật; hình thức bên trong gồm các nguyên tắc chung của pháp luật, hệ thống pháp luật, ngành luật, chế định luật và quy phạm pháp luật.",
+ "plain": "TẬP QUÁN PHÁP: tập quán được nhà nước thừa nhận — xuất hiện sớm nhất, khắc phục lỗ hổng luật thành văn nhưng tản mạn, khó thống nhất (Việt Nam: Điều 5 BLDS 2015 cho áp dụng tập quán). TIỀN LỆ PHÁP/ÁN LỆ: bản án, quyết định được dùng làm khuôn mẫu cho vụ việc tương tự — cụ thể, linh hoạt, lấp lỗ hổng nhưng khó khái quát, nguy cơ tòa án lấn quyền lập pháp (Việt Nam công bố án lệ từ 2016, Tòa án nhân dân tối cao lựa chọn). VĂN BẢN QUY PHẠM PHÁP LUẬT: do cơ quan có thẩm quyền ban hành theo trình tự luật định, chứa quy tắc xử sự chung, áp dụng nhiều lần — chặt chẽ, khoa học, kịp thời nhưng khái quát, có thể tạo khoảng trống, kém linh hoạt, tốn kém. Việt Nam: VBQPPL là hình thức chủ yếu.",
+ "example": "Tòa án áp dụng Án lệ số 04/2016/AL (chuyển nhượng nhà đất là tài sản chung vợ chồng mà chỉ một bên ký hợp đồng): tiền lệ pháp. Hai bên tranh chấp ranh giới theo tập quán địa phương được tòa công nhận: tập quán pháp.",
+ "source": {
+  "kind": "textbook",
+  "cite": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (Drive HLU/KÌ I NĂM I/LLCNN&PL/TÀI LIỆU ÔN THI LLC: VD8, VD9, VD11, VD12, VD13) và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "llc-van-ban-qppl",
+  "llc-thuoc-tinh-phap-luat",
+  "llc-he-thong-phap-luat"
+ ],
+ "keywords": [
+  "tập quán pháp",
+  "tiền lệ pháp",
+  "án lệ",
+  "văn bản quy phạm pháp luật",
+  "hình thức bên trong"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hình thức pháp luật nào xuất hiện sớm nhất trong lịch sử?",
+   "options": [
+    "Tập quán pháp",
+    "Văn bản quy phạm pháp luật",
+    "Tiền lệ pháp",
+    "Hiến pháp"
+   ],
+   "answer": 0,
+   "explain": "VD9."
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nhược điểm của văn bản quy phạm pháp luật?",
+   "options": [
+    "Khái quát nên khó dự liệu hết tình huống, kém linh hoạt, quy trình ban hành lâu, tốn kém",
+    "Không có tính khoa học",
+    "Không được nhà nước bảo đảm",
+    "Chỉ áp dụng một lần"
+   ],
+   "answer": 0,
+   "explain": "VD9."
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hình thức bên ngoài",
+   "right": "Hình thức bên trong",
+   "cases": [
+    {
+     "text": "Án lệ",
+     "answer": "left"
+    },
+    {
+     "text": "Chế định luật, ngành luật",
+     "answer": "right"
+    }
+   ],
+   "explain": "VD9."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ba hình thức bên ngoài của pháp luật: {{tập quán pháp}}, tiền lệ pháp và {{văn bản quy phạm pháp luật}}.",
+   "bank_extra": [
+    "đạo đức",
+    "hợp đồng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tiền lệ pháp có ưu điểm cụ thể, linh hoạt, khắc phục {{lỗ hổng}} của luật thành văn nhưng có nguy cơ {{tòa án}} lấn quyền lập pháp.",
+   "bank_extra": [
+    "chi phí",
+    "chính phủ"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Việt Nam không thừa nhận tập quán và án lệ làm nguồn của pháp luật.",
+   "answer": false,
+   "explain": "Sai. BLDS 2015 cho áp dụng tập quán (Điều 5) và Tòa án nhân dân tối cao công bố án lệ để áp dụng."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các hình thức của pháp luật và ưu, nhược điểm của văn bản quy phạm pháp luật.",
+   "model": "Bên ngoài: tập quán pháp, tiền lệ pháp, VBQPPL; bên trong: nguyên tắc, hệ thống, ngành, chế định, quy phạm. VBQPPL: chặt chẽ, khoa học, kịp thời nhưng khái quát, kém linh hoạt, tốn kém.",
+   "keywords": [
+    "tập quán pháp",
+    "án lệ",
+    "văn bản quy phạm pháp luật",
+    "lỗ hổng"
+   ]
+  }
+ ]
+}

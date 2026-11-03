@@ -1,0 +1,116 @@
+{
+ "id": "nhan-hieu-noi-tieng",
+ "subject": "so-huu-tri-tue",
+ "chapter": "v8",
+ "term": "Nhãn hiệu nổi tiếng",
+ "definition": "Nhãn hiệu nổi tiếng là nhãn hiệu được bộ phận công chúng có liên quan biết đến rộng rãi trên lãnh thổ Việt Nam. (…) Quyền sở hữu công nghiệp đối với nhãn hiệu nổi tiếng được xác lập trên cơ sở sử dụng, không phụ thuộc vào thủ tục đăng ký.",
+ "plain": "Đặc điểm: được BỘ PHẬN CÔNG CHÚNG CÓ LIÊN QUAN biết đến RỘNG RÃI trên LÃNH THỔ VIỆT NAM; quyền xác lập trên cơ sở SỬ DỤNG, KHÔNG CẦN ĐĂNG KÝ (ngoại lệ so với nhãn hiệu thông thường). Bảo hộ mạnh hơn: cấm dùng dấu hiệu trùng, tương tự cho cả hàng hóa KHÔNG CÙNG LOẠI nếu gây nhầm lẫn hoặc ảnh hưởng khả năng phân biệt (điểm d khoản 1 Điều 129). Tiêu chí đánh giá: Điều 75 (số lượng người tiêu dùng biết, phạm vi lãnh thổ, doanh số, thời gian sử dụng…).",
+ "example": "Một cửa hàng đặt tên \"Honda\" cho tiệm bánh ngọt: dù khác loại hàng hóa, vẫn có thể xâm phạm nhãn hiệu nổi tiếng.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 20 Điều 4, điểm a khoản 3 Điều 6 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nhan-hieu",
+  "xac-lap-quyen-shcn"
+ ],
+ "keywords": [
+  "bộ phận công chúng có liên quan",
+  "biết đến rộng rãi",
+  "lãnh thổ Việt Nam",
+  "xác lập trên cơ sở sử dụng"
+ ],
+ "note": "Điều 4, 6 có nội dung được sửa đổi, bổ sung bởi Luật 36/2009/QH12 (hiệu lực 01/01/2010); Luật 07/2022/QH15 (hiệu lực 01/01/2023); Luật 131/2025/QH15 (hiệu lực 01/4/2026); Luật 42/2019/QH14 (hiệu lực 01/11/2019) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quyền đối với nhãn hiệu nổi tiếng được xác lập trên cơ sở nào?",
+   "options": [
+    "Sử dụng, không phụ thuộc vào thủ tục đăng ký",
+    "Đăng ký tại Cục Sở hữu trí tuệ",
+    "Quyết định của Tòa án",
+    "Đăng ký quốc tế"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 3 Điều 6.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 6 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nhãn hiệu nổi tiếng là nhãn hiệu được biết đến rộng rãi bởi ai và ở đâu?",
+   "options": [
+    "Bộ phận công chúng có liên quan, trên lãnh thổ Việt Nam",
+    "Toàn thế giới",
+    "Chỉ chủ sở hữu",
+    "Cơ quan nhà nước"
+   ],
+   "answer": 0,
+   "explain": "Khoản 20 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 20 Điều 4 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Nhãn hiệu thông thường",
+   "right": "Nhãn hiệu nổi tiếng",
+   "cases": [
+    {
+     "text": "Quyền xác lập trên cơ sở cấp văn bằng",
+     "answer": "left"
+    },
+    {
+     "text": "Quyền xác lập trên cơ sở sử dụng",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 6."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhãn hiệu nổi tiếng là nhãn hiệu được bộ phận công chúng có liên quan biết đến {{rộng rãi}} trên lãnh thổ {{Việt Nam}}.",
+   "bank_extra": [
+    "ít ỏi",
+    "châu Á"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quyền sở hữu công nghiệp đối với nhãn hiệu nổi tiếng được xác lập trên cơ sở {{sử dụng}}, không phụ thuộc vào thủ tục đăng ký.",
+   "bank_extra": [
+    "đăng ký",
+    "quảng cáo"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Nhãn hiệu nổi tiếng phải được đăng ký tại Việt Nam mới được bảo hộ.",
+   "answer": false,
+   "explain": "Sai. Điểm a khoản 3 Điều 6: xác lập trên cơ sở sử dụng, không phụ thuộc thủ tục đăng ký."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm và cơ chế xác lập quyền đối với nhãn hiệu nổi tiếng.",
+   "model": "Là nhãn hiệu được bộ phận công chúng có liên quan biết đến rộng rãi trên lãnh thổ Việt Nam (khoản 20 Điều 4); quyền xác lập trên cơ sở sử dụng, không phụ thuộc đăng ký (điểm a khoản 3 Điều 6); bảo hộ cả với hàng hóa không cùng loại.",
+   "keywords": [
+    "công chúng có liên quan",
+    "rộng rãi",
+    "sử dụng",
+    "không phụ thuộc đăng ký"
+   ]
+  }
+ ]
+}

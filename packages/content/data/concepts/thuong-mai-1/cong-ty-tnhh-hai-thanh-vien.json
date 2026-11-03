@@ -1,0 +1,115 @@
+{
+ "id": "cong-ty-tnhh-hai-thanh-vien",
+ "subject": "thuong-mai-1",
+ "chapter": "v4",
+ "term": "Công ty trách nhiệm hữu hạn hai thành viên trở lên",
+ "definition": "Công ty trách nhiệm hữu hạn hai thành viên trở lên là doanh nghiệp có từ 02 đến 50 thành viên là tổ chức, cá nhân. Thành viên chịu trách nhiệm về các khoản nợ và nghĩa vụ tài sản khác của doanh nghiệp trong phạm vi số vốn đã góp vào doanh nghiệp, trừ trường hợp quy định tại khoản 4 Điều 47 của Luật này. Phần vốn góp của thành viên chỉ được chuyển nhượng theo quy định tại các điều 51, 52 và 53 của Luật này. Công ty trách nhiệm hữu hạn hai thành viên trở lên có tư cách pháp nhân kể từ ngày được cấp Giấy chứng nhận đăng ký doanh nghiệp.",
+ "plain": "Đặc điểm: 02–50 THÀNH VIÊN; trách nhiệm HỮU HẠN trong VỐN ĐÃ GÓP; chuyển nhượng phần vốn góp bị HẠN CHẾ (phải chào bán cho thành viên còn lại trước — Điều 52); có tư cách pháp nhân; KHÔNG phát hành cổ phần (trừ để chuyển đổi thành công ty cổ phần). Góp vốn (Điều 47): trong 90 NGÀY từ khi được cấp Giấy chứng nhận; hết hạn chưa góp đủ phải điều chỉnh vốn điều lệ. Loại hình \"đối nhân – đối vốn\".",
+ "example": "Ba người bạn lập công ty TNHH, mỗi người góp 1 tỷ; công ty nợ 5 tỷ: mỗi thành viên chỉ chịu trách nhiệm trong phạm vi 1 tỷ đã góp.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 46 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "cong-ty-tnhh-mot-thanh-vien",
+  "cong-ty-co-phan"
+ ],
+ "keywords": [
+  "02 đến 50 thành viên",
+  "trong phạm vi số vốn đã góp",
+  "hạn chế chuyển nhượng phần vốn góp",
+  "tư cách pháp nhân"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Công ty TNHH hai thành viên trở lên có tối đa bao nhiêu thành viên?",
+   "options": [
+    "50",
+    "100",
+    "30",
+    "Không giới hạn"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 46.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 46 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thời hạn góp vốn của thành viên công ty TNHH hai thành viên trở lên là bao lâu?",
+   "options": [
+    "90 ngày kể từ ngày được cấp Giấy chứng nhận đăng ký doanh nghiệp",
+    "30 ngày",
+    "01 năm",
+    "Không có thời hạn"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 47.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 47 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Công ty TNHH hai thành viên trở lên",
+   "right": "Công ty cổ phần",
+   "cases": [
+    {
+     "text": "Tối đa 50 thành viên",
+     "answer": "left"
+    },
+    {
+     "text": "Tối thiểu 03 cổ đông, không giới hạn tối đa",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 46, 111."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Công ty trách nhiệm hữu hạn hai thành viên trở lên là doanh nghiệp có từ {{02}} đến {{50}} thành viên là tổ chức, cá nhân.",
+   "bank_extra": [
+    "03",
+    "100"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thành viên chịu trách nhiệm trong phạm vi số {{vốn đã góp}} vào doanh nghiệp.",
+   "bank_extra": [
+    "vốn điều lệ dự kiến",
+    "tài sản riêng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Công ty TNHH hai thành viên trở lên được phát hành cổ phần để huy động vốn như công ty cổ phần.",
+   "answer": false,
+   "explain": "Sai. Khoản 3 Điều 46: không được phát hành cổ phần, trừ trường hợp để chuyển đổi thành công ty cổ phần."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày đặc điểm pháp lý của công ty TNHH hai thành viên trở lên.",
+   "model": "Có 02–50 thành viên là tổ chức, cá nhân; chịu trách nhiệm trong phạm vi vốn đã góp; phần vốn góp chỉ được chuyển nhượng theo Điều 51–53 (khoản 1); có tư cách pháp nhân (khoản 2); không phát hành cổ phần trừ để chuyển đổi (khoản 3 Điều 46).",
+   "keywords": [
+    "02 đến 50",
+    "vốn đã góp",
+    "chuyển nhượng",
+    "pháp nhân"
+   ]
+  }
+ ]
+}

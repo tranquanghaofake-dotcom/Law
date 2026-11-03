@@ -1,0 +1,117 @@
+{
+ "id": "bao-thanh-toan",
+ "subject": "ngan-hang",
+ "chapter": "v5",
+ "term": "Bao thanh toán",
+ "definition": "Bao thanh toán là hình thức cấp tín dụng thông qua việc mua lại khoản phải thu của bên bán hoặc ứng trước tiền thanh toán thay cho bên mua theo hợp đồng mua, bán hàng hóa, cung ứng dịch vụ giữa bên mua và bên bán.",
+ "plain": "Hai cách: (1) MUA LẠI KHOẢN PHẢI THU của BÊN BÁN; (2) ỨNG TRƯỚC TIỀN THANH TOÁN thay cho BÊN MUA. Cơ sở: HỢP ĐỒNG MUA, BÁN HÀNG HÓA, CUNG ỨNG DỊCH VỤ. Bên bán có tiền ngay thay vì chờ bên mua trả chậm. Công ty tài chính chuyên ngành có thể lấy bao thanh toán làm hoạt động chính (khoản 12 Điều 4). Phân biệt chiết khấu: đối tượng là giấy tờ có giá, công cụ chuyển nhượng.",
+ "example": "Công ty I bán hàng cho siêu thị, siêu thị trả chậm 90 ngày: I bán khoản phải thu đó cho ngân hàng để nhận tiền ngay — bao thanh toán.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-143-2026-VBHN-LQ-VPQH-Luat-Cac-to-chuc-tin-dung-729869.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "chiet-khau",
+  "cho-vay",
+  "cap-tin-dung"
+ ],
+ "keywords": [
+  "mua lại khoản phải thu",
+  "ứng trước tiền thanh toán",
+  "hợp đồng mua, bán hàng hóa",
+  "cung ứng dịch vụ"
+ ],
+ "note": "Luật Các tổ chức tín dụng 32/2024/QH15 có hiệu lực từ 01/7/2024, thay thế Luật 47/2010/QH12 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 96/2025/QH15 (hiệu lực 15/10/2025) và Luật 23/2026/QH16 (hiệu lực 01/12/2026, chỉ bổ sung một điểm tại Điều 49) — các khoản Điều 4 được trích không bị sửa.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đối tượng mà tổ chức tín dụng mua lại trong bao thanh toán là gì?",
+   "options": [
+    "Khoản phải thu của bên bán theo hợp đồng mua bán hàng hóa, cung ứng dịch vụ",
+    "Hối phiếu, séc của bên thụ hưởng",
+    "Cổ phiếu của bên mua",
+    "Tài sản cố định của bên bán"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Bao thanh toán có thể thực hiện bằng cách nào ngoài mua lại khoản phải thu?",
+   "options": [
+    "Ứng trước tiền thanh toán thay cho bên mua",
+    "Cam kết trả thay nghĩa vụ thuế",
+    "Mua có bảo lưu quyền truy đòi giấy tờ có giá",
+    "Nhận tiền gửi của bên bán"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Bao thanh toán",
+   "right": "Chiết khấu",
+   "cases": [
+    {
+     "text": "Mua khoản phải thu theo hợp đồng cung ứng dịch vụ",
+     "answer": "left"
+    },
+    {
+     "text": "Mua kỳ phiếu trước hạn của bên thụ hưởng",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1, 6 Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bao thanh toán là hình thức cấp tín dụng thông qua việc mua lại {{khoản phải thu}} của bên bán hoặc ứng trước tiền thanh toán thay cho bên {{mua}}.",
+   "bank_extra": [
+    "cổ phần",
+    "bảo lãnh"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bao thanh toán dựa trên hợp đồng mua, bán {{hàng hóa}}, cung ứng {{dịch vụ}} giữa bên mua và bên bán.",
+   "bank_extra": [
+    "bất động sản",
+    "lao động"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Bao thanh toán là việc mua giấy tờ có giá trước hạn có bảo lưu quyền truy đòi.",
+   "answer": false,
+   "explain": "Sai. Đó là chiết khấu (khoản 6 Điều 4)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm bao thanh toán.",
+   "model": "Hình thức cấp tín dụng thông qua mua lại khoản phải thu của bên bán hoặc ứng trước tiền thanh toán thay bên mua theo hợp đồng mua bán hàng hóa, cung ứng dịch vụ (khoản 1 Điều 4).",
+   "keywords": [
+    "cấp tín dụng",
+    "khoản phải thu",
+    "ứng trước",
+    "hợp đồng mua, bán"
+   ]
+  }
+ ]
+}

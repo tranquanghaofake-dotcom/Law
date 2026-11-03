@@ -1,0 +1,91 @@
+{
+  "id": "an-sinh-xa-hoi",
+  "title": "Luật An sinh xã hội",
+  "short": "An sinh xã hội",
+  "chapters": [
+    {
+      "id": "v1",
+      "title": "Vấn đề 1. Tổng quan về Luật an sinh xã hội Việt Nam",
+      "lessons": [
+        {
+          "id": "as1",
+          "title": "Tổng quan về Luật an sinh xã hội Việt Nam",
+          "concepts": [
+            "an-sinh-xa-hoi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v2",
+      "title": "Vấn đề 2. Bảo hiểm xã hội",
+      "lessons": [
+        {
+          "id": "as2",
+          "title": "Bảo hiểm xã hội",
+          "concepts": [
+            "bao-hiem-xa-hoi",
+            "nguyen-tac-bao-hiem-xa-hoi",
+            "dieu-kien-huong-luong-huu",
+            "tro-cap-huu-tri-xa-hoi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v3",
+      "title": "Vấn đề 3. Bảo hiểm thất nghiệp",
+      "lessons": [
+        {
+          "id": "as3",
+          "title": "Bảo hiểm thất nghiệp",
+          "concepts": [
+            "bao-hiem-that-nghiep",
+            "dieu-kien-tro-cap-that-nghiep"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v4",
+      "title": "Vấn đề 4. Bảo hiểm y tế",
+      "lessons": [
+        {
+          "id": "as4",
+          "title": "Bảo hiểm y tế",
+          "concepts": [
+            "bao-hiem-y-te",
+            "muc-huong-bao-hiem-y-te"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v5",
+      "title": "Vấn đề 5. Ưu đãi xã hội",
+      "lessons": [
+        {
+          "id": "as5",
+          "title": "Ưu đãi xã hội",
+          "concepts": [
+            "uu-dai-nguoi-co-cong",
+            "che-do-uu-dai-nguoi-co-cong"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v6",
+      "title": "Vấn đề 6. Trợ giúp xã hội",
+      "lessons": [
+        {
+          "id": "as6",
+          "title": "Trợ giúp xã hội",
+          "concepts": [
+            "tro-giup-xa-hoi"
+          ]
+        }
+      ]
+    }
+  ]
+}

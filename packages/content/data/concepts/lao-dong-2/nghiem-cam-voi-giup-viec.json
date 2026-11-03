@@ -1,0 +1,114 @@
+{
+ "id": "nghiem-cam-voi-giup-viec",
+ "subject": "lao-dong-2",
+ "chapter": "v3",
+ "term": "Hành vi bị nghiêm cấm đối với người sử dụng lao động giúp việc gia đình",
+ "definition": "Ngược đãi, quấy rối tình dục, cưỡng bức lao động, dùng vũ lực đối với lao động là người giúp việc gia đình. Giao việc cho người giúp việc gia đình không theo hợp đồng lao động. Giữ giấy tờ tùy thân của người lao động.",
+ "plain": "Ba nhóm hành vi cấm (Điều 165): (1) ngược đãi, quấy rối tình dục, cưỡng bức lao động, dùng vũ lực; (2) giao việc KHÔNG THEO HĐLĐ; (3) GIỮ GIẤY TỜ TÙY THÂN. Nghĩa vụ của người sử dụng lao động (Điều 163): thực hiện đầy đủ thỏa thuận; trả tiền BHXH, BHYT cho người lao động để tự tham gia; tôn trọng danh dự, nhân phẩm; bố trí chỗ ăn, ở hợp vệ sinh nếu có thỏa thuận; tạo cơ hội học văn hóa, học nghề; trả chi phí đi đường khi chấm dứt (trừ trường hợp người lao động tự chấm dứt trước thời hạn).",
+ "example": "Chủ nhà giữ căn cước của người giúp việc \"để tránh bỏ trốn\" và bắt làm thêm việc bán hàng ở cửa hàng: vi phạm khoản 2 và 3 Điều 165.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 165 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-18-VBHN-VPQH-2026-Bo-luat-lao-dong-695336.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "giup-viec-gia-dinh"
+ ],
+ "keywords": [
+  "ngược đãi, quấy rối tình dục",
+  "cưỡng bức lao động",
+  "giao việc không theo hợp đồng",
+  "giữ giấy tờ tùy thân"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hành vi nào bị nghiêm cấm đối với người sử dụng lao động là người giúp việc gia đình?",
+   "options": [
+    "Giữ giấy tờ tùy thân của người lao động",
+    "Thỏa thuận về chỗ ở",
+    "Trả lương theo tháng",
+    "Ký hợp đồng 12 tháng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 165.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 165 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Giao cho người giúp việc gia đình công việc ngoài hợp đồng lao động có hợp pháp không?",
+   "options": [
+    "Không, bị nghiêm cấm",
+    "Có, nếu trả thêm tiền",
+    "Có, trong phạm vi gia đình",
+    "Có, nếu không quá 2 giờ/ngày"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 165.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 165 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Bị nghiêm cấm",
+   "right": "Được phép",
+   "cases": [
+    {
+     "text": "Giữ căn cước của người giúp việc",
+     "answer": "left"
+    },
+    {
+     "text": "Thỏa thuận chỗ ở tại nhà chủ",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 162, 165."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nghiêm cấm ngược đãi, quấy rối tình dục, {{cưỡng bức lao động}}, dùng vũ lực đối với lao động là người giúp việc gia đình.",
+   "bank_extra": [
+    "ký hợp đồng",
+    "trả lương"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nghiêm cấm giữ {{giấy tờ tùy thân}} của người lao động.",
+   "bank_extra": [
+    "hợp đồng lao động",
+    "sổ lương"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người sử dụng lao động được giữ giấy tờ tùy thân của người giúp việc nếu hai bên thỏa thuận.",
+   "answer": false,
+   "explain": "Sai. Khoản 3 Điều 165 nghiêm cấm, không có ngoại lệ thỏa thuận."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các hành vi bị nghiêm cấm đối với người sử dụng lao động là người giúp việc gia đình.",
+   "model": "Ngược đãi, quấy rối tình dục, cưỡng bức lao động, dùng vũ lực; giao việc không theo hợp đồng lao động; giữ giấy tờ tùy thân của người lao động (Điều 165).",
+   "keywords": [
+    "ngược đãi",
+    "cưỡng bức",
+    "không theo hợp đồng",
+    "giấy tờ tùy thân"
+   ]
+  }
+ ]
+}

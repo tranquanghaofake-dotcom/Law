@@ -1,0 +1,114 @@
+{
+ "id": "dich-vu",
+ "subject": "dan-su-2",
+ "chapter": "v9",
+ "term": "Hợp đồng dịch vụ",
+ "definition": "Hợp đồng dịch vụ là sự thỏa thuận giữa các bên, theo đó bên cung ứng dịch vụ thực hiện công việc cho bên sử dụng dịch vụ, bên sử dụng dịch vụ phải trả tiền dịch vụ cho bên cung ứng dịch vụ.",
+ "plain": "Đối tượng là CÔNG VIỆC có thể thực hiện được, không bị cấm, không trái đạo đức (Điều 514). Bên cung ứng tự chủ cách thức thực hiện, chỉ cam kết KẾT QUẢ/công việc. Phân biệt HỢP ĐỒNG LAO ĐỘNG: có sự QUẢN LÝ, ĐIỀU HÀNH, GIÁM SÁT (Điều 13 BLLĐ) — nếu có yếu tố này thì dù đặt tên \"hợp đồng dịch vụ\" vẫn là hợp đồng lao động.",
+ "example": "Thuê thợ sơn lại căn nhà với giá trọn gói 15 triệu, thợ tự sắp xếp giờ làm: hợp đồng dịch vụ.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 513 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "uy-quyen",
+  "hop-dong"
+ ],
+ "keywords": [
+  "thực hiện công việc",
+  "trả tiền dịch vụ",
+  "đối tượng là công việc"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đối tượng của hợp đồng dịch vụ là gì?",
+   "options": [
+    "Công việc mà bên cung ứng dịch vụ thực hiện",
+    "Tài sản được chuyển quyền sở hữu",
+    "Quyền sử dụng tài sản",
+    "Khoản tiền vay"
+   ],
+   "answer": 0,
+   "explain": "Điều 513, 514.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 513 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hợp đồng gọi là \"dịch vụ\" nhưng người làm chịu sự quản lý, điều hành, giám sát và nhận lương thì được coi là gì?",
+   "options": [
+    "Hợp đồng lao động",
+    "Hợp đồng dịch vụ",
+    "Hợp đồng ủy quyền",
+    "Hợp đồng vô hiệu"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 13 BLLĐ 2019.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 513 BLDS; Điều 13 BLLĐ Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hợp đồng dịch vụ",
+   "right": "Hợp đồng lao động",
+   "cases": [
+    {
+     "text": "Bên làm tự chủ cách thức, giao kết quả",
+     "answer": "left"
+    },
+    {
+     "text": "Chịu quản lý, điều hành, giám sát",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 513 BLDS; Điều 13 BLLĐ."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bên cung ứng dịch vụ thực hiện {{công việc}} cho bên sử dụng dịch vụ, bên sử dụng dịch vụ phải trả {{tiền dịch vụ}}.",
+   "bank_extra": [
+    "tài sản",
+    "tiền thuê"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hợp đồng dịch vụ là sự {{thỏa thuận}} giữa các bên.",
+   "bank_extra": [
+    "quyết định",
+    "mệnh lệnh"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi hợp đồng thuê người làm việc đều là hợp đồng dịch vụ.",
+   "answer": false,
+   "explain": "Sai. Có yếu tố quản lý, điều hành, giám sát và trả lương thì là hợp đồng lao động."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm hợp đồng dịch vụ và phân biệt với hợp đồng lao động.",
+   "model": "Là thỏa thuận theo đó bên cung ứng thực hiện công việc cho bên sử dụng, bên sử dụng trả tiền dịch vụ (Điều 513); khác hợp đồng lao động ở chỗ không có sự quản lý, điều hành, giám sát của bên thuê.",
+   "keywords": [
+    "công việc",
+    "tiền dịch vụ",
+    "quản lý",
+    "giám sát"
+   ]
+  }
+ ]
+}

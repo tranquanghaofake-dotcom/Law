@@ -1,0 +1,119 @@
+{
+ "id": "nguon-nguy-hiem-cao-do",
+ "subject": "dan-su-2",
+ "chapter": "v13",
+ "term": "Bồi thường thiệt hại do nguồn nguy hiểm cao độ gây ra",
+ "definition": "Nguồn nguy hiểm cao độ bao gồm phương tiện giao thông vận tải cơ giới, hệ thống tải điện, nhà máy công nghiệp đang hoạt động, vũ khí, chất nổ, chất cháy, chất độc, chất phóng xạ, thú dữ và các nguồn nguy hiểm cao độ khác do pháp luật quy định. (…) Chủ sở hữu nguồn nguy hiểm cao độ phải bồi thường thiệt hại do nguồn nguy hiểm cao độ gây ra; nếu chủ sở hữu đã giao cho người khác chiếm hữu, sử dụng thì người này phải bồi thường, trừ trường hợp có thỏa thuận khác. Chủ sở hữu, người chiếm hữu, sử dụng nguồn nguy hiểm cao độ phải bồi thường thiệt hại cả khi không có lỗi, trừ trường hợp sau đây: a) Thiệt hại xảy ra hoàn toàn do lỗi cố ý của người bị thiệt hại;",
+ "plain": "Trách nhiệm KHÔNG CẦN LỖI (trách nhiệm khách quan): chủ sở hữu, người chiếm hữu, sử dụng phải bồi thường CẢ KHI KHÔNG CÓ LỖI. Chỉ miễn khi: thiệt hại HOÀN TOÀN DO LỖI CỐ Ý của người bị thiệt hại; hoặc do TÌNH THẾ CẤP THIẾT, BẤT KHẢ KHÁNG (trừ luật khác). Bị chiếm hữu, sử dụng trái pháp luật: người chiếm hữu trái luật bồi thường; chủ sở hữu có lỗi thì liên đới (khoản 4). Ô tô, xe máy đang vận hành là nguồn nguy hiểm cao độ.",
+ "example": "Xe máy đang lưu thông đúng luật nhưng nổ lốp bất ngờ, va vào người đi bộ: người điều khiển vẫn phải bồi thường dù không có lỗi.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1–3 Điều 601 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "can-cu-boi-thuong-thiet-hai",
+  "suc-vat-gay-thiet-hai"
+ ],
+ "keywords": [
+  "phương tiện giao thông cơ giới, thú dữ, chất nổ",
+  "bồi thường cả khi không có lỗi",
+  "hoàn toàn do lỗi cố ý của người bị thiệt hại",
+  "giao cho người khác chiếm hữu, sử dụng"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chủ sở hữu nguồn nguy hiểm cao độ có phải bồi thường khi không có lỗi không?",
+   "options": [
+    "Có, trừ các trường hợp luật định như lỗi cố ý hoàn toàn của người bị thiệt hại",
+    "Không",
+    "Chỉ khi có lỗi vô ý",
+    "Chỉ bồi thường một nửa"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 601.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 601 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tài sản nào là nguồn nguy hiểm cao độ theo khoản 1 Điều 601?",
+   "options": [
+    "Phương tiện giao thông vận tải cơ giới",
+    "Xe đạp",
+    "Bàn ghế",
+    "Sách vở"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 601.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 601 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Nguồn nguy hiểm cao độ",
+   "right": "Không phải",
+   "cases": [
+    {
+     "text": "Ô tô đang vận hành",
+     "answer": "left"
+    },
+    {
+     "text": "Thú dữ",
+     "answer": "left"
+    },
+    {
+     "text": "Chiếc xe đạp",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 601."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chủ sở hữu, người chiếm hữu, sử dụng nguồn nguy hiểm cao độ phải bồi thường thiệt hại cả khi {{không có lỗi}}, trừ trường hợp thiệt hại xảy ra hoàn toàn do lỗi {{cố ý}} của người bị thiệt hại.",
+   "bank_extra": [
+    "có lỗi",
+    "vô ý"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nếu chủ sở hữu đã giao nguồn nguy hiểm cao độ cho người khác chiếm hữu, sử dụng thì {{người này}} phải bồi thường, trừ trường hợp có thỏa thuận khác.",
+   "bank_extra": [
+    "chủ sở hữu",
+    "Nhà nước"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người lái xe đúng luật, không có lỗi thì không phải bồi thường khi xe gây thiệt hại.",
+   "answer": false,
+   "explain": "Sai. Khoản 3 Điều 601: bồi thường cả khi không có lỗi, trừ ngoại lệ luật định."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày trách nhiệm bồi thường thiệt hại do nguồn nguy hiểm cao độ gây ra.",
+   "model": "Nguồn nguy hiểm cao độ gồm phương tiện giao thông cơ giới, hệ thống tải điện, nhà máy, vũ khí, chất nổ, chất độc, phóng xạ, thú dữ… (khoản 1); chủ sở hữu hoặc người được giao chiếm hữu, sử dụng bồi thường (khoản 2); bồi thường cả khi không có lỗi, trừ lỗi cố ý hoàn toàn của người bị thiệt hại, tình thế cấp thiết… (khoản 3 Điều 601).",
+   "keywords": [
+    "phương tiện",
+    "không có lỗi",
+    "cố ý",
+    "chủ sở hữu"
+   ]
+  }
+ ]
+}

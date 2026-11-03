@@ -1,0 +1,116 @@
+{
+ "id": "tstt-nhuong-quyen-thuong-mai",
+ "subject": "tai-san-tri-tue",
+ "chapter": "v4",
+ "term": "Nhượng quyền thương mại",
+ "definition": "Nhượng quyền thương mại là hoạt động thương mại, theo đó bên nhượng quyền cho phép và yêu cầu bên nhận quyền tự mình tiến hành việc mua bán hàng hóa, cung ứng dịch vụ theo các điều kiện sau đây: 1. Việc mua bán hàng hóa, cung ứng dịch vụ được tiến hành theo cách thức tổ chức kinh doanh do bên nhượng quyền quy định và được gắn với nhãn hiệu hàng hóa, tên thương mại, bí quyết kinh doanh, khẩu hiệu kinh doanh, biểu tượng kinh doanh, quảng cáo của bên nhượng quyền; 2. Bên nhượng quyền có quyền kiểm soát và trợ giúp cho bên nhận quyền trong việc điều hành công việc kinh doanh.",
+ "plain": "Hình thức thương mại hóa \"trọn gói\" tài sản trí tuệ: bên nhận được dùng NHÃN HIỆU, TÊN THƯƠNG MẠI, BÍ QUYẾT, khẩu hiệu, biểu tượng theo cách thức kinh doanh do bên nhượng quyền quy định; bên nhượng quyền KIỂM SOÁT và TRỢ GIÚP. Khác li-xăng đơn thuần (chỉ cho dùng một đối tượng SHCN): nhượng quyền chuyển cả mô hình kinh doanh và có quyền kiểm soát điều hành. Điều chỉnh bởi Luật Thương mại (Điều 284–291) và việc đăng ký hoạt động nhượng quyền theo Điều 291 cùng nghị định hướng dẫn — phạm vi phải đăng ký đã được thu hẹp, cần tra nghị định hiện hành.",
+ "example": "Chuỗi cà phê M cho ông N mở quán mang thương hiệu M, theo thiết kế, công thức, quy trình phục vụ của M, M kiểm tra định kỳ và đào tạo nhân viên: nhượng quyền thương mại, không chỉ là li-xăng nhãn hiệu.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 284 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tstt-chuyen-quyen-su-dung",
+  "tstt-chuyen-nhuong-quyen-shcn"
+ ],
+ "keywords": [
+  "bên nhượng quyền",
+  "bên nhận quyền",
+  "cách thức tổ chức kinh doanh",
+  "kiểm soát và trợ giúp"
+ ],
+ "note": "Luật Thương mại 36/2005/QH11 có hiệu lực từ 01/01/2006, sửa đổi bởi Luật 05/2017/QH14 và Luật 44/2019/QH14 (hiệu lực 01/01/2021) — văn bản hợp nhất 113/VBHN-VPQH 2025.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đặc điểm nào phân biệt nhượng quyền thương mại với li-xăng nhãn hiệu đơn thuần?",
+   "options": [
+    "Bên nhận kinh doanh theo cách thức tổ chức do bên nhượng quyền quy định và chịu sự kiểm soát, trợ giúp",
+    "Chỉ được dùng nhãn hiệu",
+    "Không phải trả phí",
+    "Không cần hợp đồng"
+   ],
+   "answer": 0,
+   "explain": "Điều 284.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 284 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nhượng quyền thương mại gắn với những đối tượng nào của bên nhượng quyền?",
+   "options": [
+    "Nhãn hiệu hàng hóa, tên thương mại, bí quyết kinh doanh, khẩu hiệu, biểu tượng kinh doanh, quảng cáo",
+    "Chỉ sáng chế",
+    "Chỉ quyền tác giả",
+    "Chỉ chỉ dẫn địa lý"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 284.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 284 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Nhượng quyền thương mại",
+   "right": "Li-xăng nhãn hiệu",
+   "cases": [
+    {
+     "text": "Mở cửa hàng theo đúng mô hình, quy trình của bên nhượng quyền",
+     "answer": "left"
+    },
+    {
+     "text": "Chỉ được in nhãn hiệu lên sản phẩm tự sản xuất theo cách của mình",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 284 Luật Thương mại; Điều 141 Luật SHTT."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhượng quyền thương mại là hoạt động thương mại, theo đó bên {{nhượng quyền}} cho phép và yêu cầu bên {{nhận quyền}} tự mình tiến hành việc mua bán hàng hóa, cung ứng dịch vụ.",
+   "bank_extra": [
+    "chuyển nhượng",
+    "đại lý"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bên nhượng quyền có quyền {{kiểm soát}} và {{trợ giúp}} cho bên nhận quyền trong việc điều hành công việc kinh doanh.",
+   "bank_extra": [
+    "sở hữu",
+    "sa thải"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Trong nhượng quyền thương mại, bên nhận quyền kinh doanh theo cách thức do chính mình tự quyết định.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 284: theo cách thức tổ chức kinh doanh do bên nhượng quyền quy định."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm nhượng quyền thương mại và điểm khác li-xăng.",
+   "model": "Bên nhượng quyền cho phép và yêu cầu bên nhận quyền tự kinh doanh theo cách thức của mình, gắn với nhãn hiệu, tên thương mại, bí quyết…, có quyền kiểm soát, trợ giúp (Điều 284 Luật Thương mại); li-xăng chỉ cho phép sử dụng một đối tượng SHCN (Điều 141 Luật SHTT).",
+   "keywords": [
+    "cách thức tổ chức kinh doanh",
+    "nhãn hiệu",
+    "kiểm soát",
+    "trợ giúp"
+   ]
+  }
+ ]
+}

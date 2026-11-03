@@ -1,0 +1,120 @@
+{
+ "id": "hanh-vi-han-che-canh-tranh",
+ "subject": "canh-tranh",
+ "chapter": "v2",
+ "term": "Hành vi hạn chế cạnh tranh và tác động hạn chế cạnh tranh",
+ "definition": "Hành vi hạn chế cạnh tranh là hành vi gây tác động hoặc có khả năng gây tác động hạn chế cạnh tranh, bao gồm hành vi thỏa thuận hạn chế cạnh tranh, lạm dụng vị trí thống lĩnh thị trường và lạm dụng vị trí độc quyền. Tác động hạn chế cạnh tranh là tác động loại trừ, làm giảm, sai lệch hoặc cản trở cạnh tranh trên thị trường.",
+ "plain": "Ba hành vi hạn chế cạnh tranh: THỎA THUẬN HẠN CHẾ CẠNH TRANH; LẠM DỤNG VỊ TRÍ THỐNG LĨNH; LẠM DỤNG VỊ TRÍ ĐỘC QUYỀN. Tập trung kinh tế KHÔNG phải hành vi hạn chế cạnh tranh mà là đối tượng KIỂM SOÁT riêng. Tác động: LOẠI TRỪ, LÀM GIẢM, SAI LỆCH, CẢN TRỞ cạnh tranh. Chỉ cần \"CÓ KHẢ NĂNG GÂY TÁC ĐỘNG\" là đủ — không đợi thiệt hại thực tế.",
+ "example": "Ba hãng taxi lớn thống nhất cùng tăng giá cước 20%: thỏa thuận hạn chế cạnh tranh (ấn định giá), là một hành vi hạn chế cạnh tranh.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 2, khoản 3 Điều 3 Luật Cạnh tranh 2018",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "thoa-thuan-han-che-canh-tranh",
+  "lam-dung-vi-tri-thong-linh",
+  "canh-tranh-khong-lanh-manh"
+ ],
+ "keywords": [
+  "thỏa thuận hạn chế cạnh tranh",
+  "lạm dụng vị trí thống lĩnh, độc quyền",
+  "loại trừ, làm giảm, sai lệch, cản trở",
+  "có khả năng gây tác động"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hành vi hạn chế cạnh tranh gồm những hành vi nào theo khoản 2 Điều 3?",
+   "options": [
+    "Thỏa thuận hạn chế cạnh tranh, lạm dụng vị trí thống lĩnh thị trường, lạm dụng vị trí độc quyền",
+    "Cạnh tranh không lành mạnh và tập trung kinh tế",
+    "Chỉ tập trung kinh tế",
+    "Bán phá giá hàng nhập khẩu"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 3 Luật Cạnh tranh 2018"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tác động hạn chế cạnh tranh là gì?",
+   "options": [
+    "Tác động loại trừ, làm giảm, sai lệch hoặc cản trở cạnh tranh trên thị trường",
+    "Tác động làm tăng giá",
+    "Tác động làm giảm lợi nhuận doanh nghiệp",
+    "Tác động đến môi trường"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 3 Luật Cạnh tranh 2018"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hành vi hạn chế cạnh tranh",
+   "right": "Hành vi cạnh tranh không lành mạnh",
+   "cases": [
+    {
+     "text": "Lạm dụng vị trí độc quyền",
+     "answer": "left"
+    },
+    {
+     "text": "Gièm pha doanh nghiệp khác",
+     "answer": "right"
+    },
+    {
+     "text": "Thỏa thuận ấn định giá",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 3, 45."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hành vi hạn chế cạnh tranh là hành vi gây tác động hoặc có {{khả năng}} gây tác động hạn chế cạnh tranh, bao gồm thỏa thuận hạn chế cạnh tranh, lạm dụng vị trí {{thống lĩnh}} thị trường và lạm dụng vị trí độc quyền.",
+   "bank_extra": [
+    "ý định",
+    "cạnh tranh"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tác động hạn chế cạnh tranh là tác động loại trừ, làm giảm, {{sai lệch}} hoặc cản trở cạnh tranh trên thị trường.",
+   "bank_extra": [
+    "thúc đẩy",
+    "tăng cường"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tập trung kinh tế là một loại hành vi hạn chế cạnh tranh theo khoản 2 Điều 3.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 3 chỉ gồm thỏa thuận hạn chế cạnh tranh, lạm dụng vị trí thống lĩnh, lạm dụng vị trí độc quyền; tập trung kinh tế được kiểm soát riêng."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm hành vi hạn chế cạnh tranh và tác động hạn chế cạnh tranh.",
+   "model": "Hành vi hạn chế cạnh tranh là hành vi gây tác động hoặc có khả năng gây tác động hạn chế cạnh tranh, gồm thỏa thuận hạn chế cạnh tranh, lạm dụng vị trí thống lĩnh, lạm dụng vị trí độc quyền (khoản 2 Điều 3); tác động hạn chế cạnh tranh là loại trừ, làm giảm, sai lệch, cản trở cạnh tranh (khoản 3).",
+   "keywords": [
+    "thỏa thuận",
+    "thống lĩnh",
+    "độc quyền",
+    "loại trừ"
+   ]
+  }
+ ]
+}

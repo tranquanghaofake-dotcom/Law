@@ -114,6 +114,13 @@
     "không được thôi",
     "cán bộ, công chức"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi công dân Việt Nam xin thôi quốc tịch để nhập quốc tịch nước khác đều được cho thôi.",
+   "answer": false,
+   "explain": "Sai. Khoản 2, 3 Điều 27 Luật Quốc tịch: chưa được thôi nếu đang nợ thuế, đang bị truy cứu trách nhiệm hình sự, đang chấp hành bản án…; không được thôi nếu làm phương hại đến lợi ích quốc gia. (Nhận định trong bộ câu hỏi ôn tập Luật Hiến pháp, Drive HLU.)"
   }
  ]
 }

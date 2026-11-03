@@ -1,0 +1,118 @@
+{
+ "id": "ngan-hang-nha-nuoc",
+ "subject": "ngan-hang",
+ "chapter": "v2",
+ "term": "Vị trí pháp lý và chức năng của Ngân hàng Nhà nước",
+ "definition": "Ngân hàng Nhà nước Việt Nam (sau đây gọi là Ngân hàng Nhà nước) là cơ quan ngang bộ của Chính phủ, là Ngân hàng trung ương của nước Cộng hoà xã hội chủ nghĩa Việt Nam. (…) Ngân hàng Nhà nước thực hiện chức năng quản lý nhà nước về tiền tệ, hoạt động ngân hàng và ngoại hối (sau đây gọi là tiền tệ và ngân hàng); thực hiện chức năng của Ngân hàng trung ương về phát hành tiền, ngân hàng của các tổ chức tín dụng và cung ứng dịch vụ tiền tệ cho Chính phủ.",
+ "plain": "HAI VỊ TRÍ: vừa là CƠ QUAN NGANG BỘ của Chính phủ, vừa là NGÂN HÀNG TRUNG ƯƠNG. Tương ứng HAI CHỨC NĂNG: (1) quản lý nhà nước về tiền tệ, hoạt động ngân hàng và ngoại hối; (2) chức năng ngân hàng trung ương — phát hành tiền, ngân hàng của các tổ chức tín dụng, cung ứng dịch vụ tiền tệ cho Chính phủ. Ngân hàng Nhà nước là pháp nhân, có vốn pháp định thuộc sở hữu nhà nước, trụ sở chính tại Thủ đô Hà Nội (khoản 2 Điều 2). Khác ngân hàng thương mại: không hoạt động vì lợi nhuận.",
+ "example": "Khi ngân hàng thương mại thiếu thanh khoản, Ngân hàng Nhà nước cho vay tái cấp vốn — thể hiện chức năng \"ngân hàng của các tổ chức tín dụng\"; khi cấp giấy phép cho ngân hàng mới — thể hiện chức năng quản lý nhà nước.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, 3 Điều 2 Luật Ngân hàng Nhà nước Việt Nam 2010 (VBHN 141/2026/VBHN-LQ-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-141-2026-VBHN-LQ-VPQH-Luat-Ngan-hang-Nha-nuoc-Viet-Nam-726674.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "chinh-sach-tien-te-quoc-gia",
+  "cong-cu-chinh-sach-tien-te",
+  "ngan-hang"
+ ],
+ "keywords": [
+  "cơ quan ngang bộ",
+  "Ngân hàng trung ương",
+  "phát hành tiền",
+  "ngân hàng của các tổ chức tín dụng",
+  "quản lý nhà nước về tiền tệ"
+ ],
+ "note": "Luật Ngân hàng Nhà nước Việt Nam 46/2010/QH12 có hiệu lực từ 01/01/2011; Luật 23/2026/QH16 sửa đổi nhiều điều (Điều 4, 27, 34, 42, 44, 45, 57, 58, 62…), có hiệu lực từ 01/12/2026 — điều được trích không bị sửa.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Vị trí pháp lý của Ngân hàng Nhà nước Việt Nam?",
+   "options": [
+    "Cơ quan ngang bộ của Chính phủ, là Ngân hàng trung ương",
+    "Doanh nghiệp nhà nước hoạt động vì lợi nhuận",
+    "Cơ quan thuộc Quốc hội",
+    "Tổ chức tín dụng đặc biệt"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 2.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 2 Luật Ngân hàng Nhà nước Việt Nam 2010 (VBHN 141/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chức năng nào thuộc chức năng Ngân hàng trung ương của Ngân hàng Nhà nước?",
+   "options": [
+    "Phát hành tiền",
+    "Thu thuế",
+    "Xét xử tranh chấp tín dụng",
+    "Cho vay tiêu dùng cá nhân"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 2: phát hành tiền, ngân hàng của các tổ chức tín dụng, cung ứng dịch vụ tiền tệ cho Chính phủ.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 2 Luật Ngân hàng Nhà nước Việt Nam 2010 (VBHN 141/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Chức năng quản lý nhà nước",
+   "right": "Chức năng ngân hàng trung ương",
+   "cases": [
+    {
+     "text": "Cấp giấy phép thành lập ngân hàng thương mại",
+     "answer": "left"
+    },
+    {
+     "text": "Phát hành tiền",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 3 Điều 2."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ngân hàng Nhà nước là cơ quan {{ngang bộ}} của Chính phủ, là Ngân hàng {{trung ương}} của nước Cộng hoà xã hội chủ nghĩa Việt Nam.",
+   "bank_extra": [
+    "thuộc Quốc hội",
+    "thương mại"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ngân hàng Nhà nước thực hiện chức năng của Ngân hàng trung ương về {{phát hành tiền}}, ngân hàng của các {{tổ chức tín dụng}} và cung ứng dịch vụ tiền tệ cho Chính phủ.",
+   "bank_extra": [
+    "thu thuế",
+    "hộ gia đình"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Ngân hàng Nhà nước chỉ có chức năng quản lý nhà nước, không thực hiện nghiệp vụ ngân hàng.",
+   "answer": false,
+   "explain": "Sai. Khoản 3 Điều 2: Ngân hàng Nhà nước còn thực hiện chức năng Ngân hàng trung ương (phát hành tiền, ngân hàng của các tổ chức tín dụng, cung ứng dịch vụ tiền tệ cho Chính phủ)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày vị trí pháp lý và chức năng của Ngân hàng Nhà nước Việt Nam.",
+   "model": "Cơ quan ngang bộ của Chính phủ và là Ngân hàng trung ương (khoản 1 Điều 2); chức năng quản lý nhà nước về tiền tệ, hoạt động ngân hàng, ngoại hối và chức năng ngân hàng trung ương về phát hành tiền, ngân hàng của các tổ chức tín dụng, cung ứng dịch vụ tiền tệ cho Chính phủ (khoản 3 Điều 2).",
+   "keywords": [
+    "cơ quan ngang bộ",
+    "Ngân hàng trung ương",
+    "quản lý nhà nước",
+    "phát hành tiền"
+   ]
+  }
+ ]
+}

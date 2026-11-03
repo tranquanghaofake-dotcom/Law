@@ -1,0 +1,119 @@
+{
+ "id": "nguoi-chua-thanh-nien",
+ "subject": "dan-su",
+ "chapter": "v2",
+ "term": "Giao dịch của người chưa thành niên",
+ "definition": "Người chưa thành niên là người chưa đủ mười tám tuổi. Giao dịch dân sự của người chưa đủ sáu tuổi do người đại diện theo pháp luật của người đó xác lập, thực hiện. Người từ đủ sáu tuổi đến chưa đủ mười lăm tuổi khi xác lập, thực hiện giao dịch dân sự phải được người đại diện theo pháp luật đồng ý, trừ giao dịch dân sự phục vụ nhu cầu sinh hoạt hàng ngày phù hợp với lứa tuổi.",
+ "plain": "Ba mốc tuổi: dưới 6 tuổi: người đại diện xác lập thay; từ đủ 6 đến dưới 15: phải được người đại diện đồng ý, trừ giao dịch sinh hoạt hàng ngày phù hợp lứa tuổi; từ đủ 15 đến dưới 18: TỰ MÌNH xác lập, trừ giao dịch liên quan BẤT ĐỘNG SẢN, ĐỘNG SẢN PHẢI ĐĂNG KÝ và giao dịch khác luật quy định phải được người đại diện đồng ý (khoản 4).",
+ "example": "Cậu bé 10 tuổi tự mua bút, vở ở cửa hàng gần nhà: hợp lệ vì là giao dịch sinh hoạt hàng ngày phù hợp lứa tuổi. Nhưng 16 tuổi tự bán xe máy (động sản phải đăng ký) thì cần cha mẹ đồng ý.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1–3 Điều 21 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nang-luc-hanh-vi-dan-su",
+  "dai-dien"
+ ],
+ "keywords": [
+  "dưới 6 tuổi",
+  "6–15 tuổi",
+  "15–18 tuổi",
+  "bất động sản, động sản phải đăng ký"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Giao dịch dân sự của người chưa đủ 6 tuổi do ai xác lập, thực hiện?",
+   "options": [
+    "Người đại diện theo pháp luật",
+    "Chính người đó",
+    "Ủy ban nhân dân xã",
+    "Tòa án"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 21.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 21 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người 16 tuổi muốn bán xe máy của mình thì cần điều kiện gì?",
+   "options": [
+    "Được người đại diện theo pháp luật đồng ý",
+    "Không cần ai đồng ý",
+    "Phải đợi đủ 18 tuổi mới được bán",
+    "Phải được Tòa án cho phép"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 21: giao dịch liên quan động sản phải đăng ký cần người đại diện đồng ý.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 21 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Cần người đại diện đồng ý",
+   "right": "Tự mình xác lập được",
+   "cases": [
+    {
+     "text": "Người 10 tuổi mua máy tính bảng giá trị lớn",
+     "answer": "left"
+    },
+    {
+     "text": "Người 10 tuổi mua bánh mì ăn sáng",
+     "answer": "right"
+    },
+    {
+     "text": "Người 16 tuổi bán căn nhà được tặng",
+     "answer": "left"
+    }
+   ],
+   "explain": "Khoản 3, 4 Điều 21."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người từ đủ sáu tuổi đến chưa đủ {{mười lăm}} tuổi khi xác lập giao dịch phải được người đại diện theo pháp luật đồng ý, trừ giao dịch phục vụ nhu cầu {{sinh hoạt hàng ngày}} phù hợp với lứa tuổi.",
+   "bank_extra": [
+    "mười tám",
+    "học tập"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người chưa thành niên là người chưa đủ {{mười tám}} tuổi.",
+   "bank_extra": [
+    "mười sáu",
+    "hai mươi"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người từ đủ 15 đến dưới 18 tuổi tự mình bán đất của mình mà không cần ai đồng ý.",
+   "answer": false,
+   "explain": "Sai. Khoản 4 Điều 21: giao dịch liên quan đến bất động sản phải được người đại diện theo pháp luật đồng ý."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quy định về giao dịch dân sự của người chưa thành niên.",
+   "model": "Người chưa thành niên là người chưa đủ 18 tuổi; dưới 6 tuổi do người đại diện xác lập; từ đủ 6 đến dưới 15 phải được người đại diện đồng ý, trừ giao dịch sinh hoạt hàng ngày phù hợp lứa tuổi; từ đủ 15 đến dưới 18 tự mình xác lập, trừ giao dịch liên quan bất động sản, động sản phải đăng ký và giao dịch khác luật quy định (Điều 21).",
+   "keywords": [
+    "6 tuổi",
+    "15 tuổi",
+    "sinh hoạt hàng ngày",
+    "bất động sản"
+   ]
+  }
+ ]
+}

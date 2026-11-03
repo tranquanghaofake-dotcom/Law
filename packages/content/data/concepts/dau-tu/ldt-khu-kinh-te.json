@@ -1,0 +1,115 @@
+{
+ "id": "ldt-khu-kinh-te",
+ "subject": "dau-tu",
+ "chapter": "v6",
+ "term": "Khu kinh tế",
+ "definition": "Khu kinh tế là khu vực có ranh giới địa lý xác định, gồm nhiều khu chức năng, được thành lập để thực hiện các mục tiêu thu hút đầu tư, phát triển kinh tế - xã hội và bảo vệ quốc phòng, an ninh.",
+ "plain": "Khu kinh tế: ranh giới xác định, NHIỀU KHU CHỨC NĂNG, mục tiêu thu hút đầu tư, phát triển kinh tế - xã hội, bảo vệ quốc phòng, an ninh. Khác KHU CÔNG NGHIỆP (chuyên sản xuất hàng công nghiệp, khoản 16) và KHU CHẾ XUẤT (khu công nghiệp chuyên sản xuất hàng xuất khẩu, khoản 15). Đề cương HLU 2021 dùng thuật ngữ \"đặc khu\"/khu kinh tế đặc biệt — luật hiện hành không có khái niệm chung \"khu kinh tế đặc biệt\" trong Điều 3.",
+ "example": "Khu kinh tế Vân Phong gồm khu cảng, khu công nghiệp, khu du lịch, khu đô thị: nhiều khu chức năng nên là khu kinh tế, không phải khu công nghiệp.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 17 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Dau-tu/Van-ban-hop-nhat-142-2026-VBHN-LQ-VPQH-Luat-Dau-tu-726675.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "ldt-khu-cong-nghiep",
+  "ldt-uu-dai-dau-tu"
+ ],
+ "keywords": [
+  "ranh giới địa lý xác định",
+  "nhiều khu chức năng",
+  "thu hút đầu tư",
+  "quốc phòng, an ninh"
+ ],
+ "note": "Luật Đầu tư 143/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Đầu tư 61/2020/QH14 mà đề cương HLU 2021 còn dẫn (khoản 4 Điều 51). Luật 24/2026/QH16 sửa đổi có hiệu lực từ 01/3/2027 (riêng một phần Điều 6 từ 01/01/2027), chỉ sửa Điều 6 và Phụ lục IV, không sửa điều được trích — văn bản hợp nhất 142/2026/VBHN-LQ-VPQH.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đặc điểm nào phân biệt khu kinh tế với khu công nghiệp?",
+   "options": [
+    "Khu kinh tế gồm nhiều khu chức năng",
+    "Khu kinh tế không có ranh giới",
+    "Khu kinh tế chỉ sản xuất hàng xuất khẩu",
+    "Khu kinh tế do nhà đầu tư nước ngoài lập"
+   ],
+   "answer": 0,
+   "explain": "Khoản 16, 17 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 17 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khu kinh tế được thành lập để thực hiện mục tiêu nào?",
+   "options": [
+    "Thu hút đầu tư, phát triển kinh tế - xã hội và bảo vệ quốc phòng, an ninh",
+    "Chỉ sản xuất hàng công nghiệp",
+    "Chỉ du lịch",
+    "Chỉ nông nghiệp"
+   ],
+   "answer": 0,
+   "explain": "Khoản 17 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 17 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Khu kinh tế",
+   "right": "Khu công nghiệp",
+   "cases": [
+    {
+     "text": "Gồm khu cảng, khu đô thị, khu du lịch, khu sản xuất",
+     "answer": "left"
+    },
+    {
+     "text": "Chuyên sản xuất hàng công nghiệp và dịch vụ cho sản xuất công nghiệp",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 16, 17 Điều 3."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Khu kinh tế là khu vực có ranh giới {{địa lý}} xác định, gồm nhiều khu {{chức năng}}.",
+   "bank_extra": [
+    "hành chính",
+    "công nghiệp"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Khu kinh tế được thành lập để thực hiện các mục tiêu thu hút {{đầu tư}}, phát triển kinh tế - xã hội và bảo vệ {{quốc phòng}}, an ninh.",
+   "bank_extra": [
+    "du lịch",
+    "môi trường"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Khu kinh tế chỉ có một khu chức năng là sản xuất công nghiệp.",
+   "answer": false,
+   "explain": "Sai. Khoản 17 Điều 3: gồm nhiều khu chức năng."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Phân biệt khu kinh tế và khu công nghiệp.",
+   "model": "Khu kinh tế: ranh giới xác định, nhiều khu chức năng, mục tiêu thu hút đầu tư, phát triển kinh tế - xã hội, quốc phòng, an ninh (khoản 17 Điều 3). Khu công nghiệp: chuyên sản xuất hàng công nghiệp và dịch vụ cho sản xuất công nghiệp (khoản 16).",
+   "keywords": [
+    "nhiều khu chức năng",
+    "sản xuất hàng công nghiệp",
+    "ranh giới"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,116 @@
+{
+ "id": "cong-ty-co-phan",
+ "subject": "thuong-mai-1",
+ "chapter": "v5",
+ "term": "Công ty cổ phần",
+ "definition": "Công ty cổ phần là doanh nghiệp, trong đó: a) Vốn điều lệ được chia thành nhiều phần bằng nhau gọi là cổ phần; b) Cổ đông có thể là tổ chức, cá nhân; số lượng cổ đông tối thiểu là 03 và không hạn chế số lượng tối đa; c) Cổ đông chỉ chịu trách nhiệm về các khoản nợ và nghĩa vụ tài sản khác của doanh nghiệp trong phạm vi số vốn đã góp vào doanh nghiệp; d) Cổ đông có quyền tự do chuyển nhượng cổ phần của mình cho người khác, trừ trường hợp quy định tại khoản 3 Điều 120 và khoản 1 Điều 127 của Luật này. Công ty cổ phần có tư cách pháp nhân kể từ ngày được cấp Giấy chứng nhận đăng ký doanh nghiệp.",
+ "plain": "Loại hình \"ĐỐI VỐN\" điển hình: vốn chia thành CỔ PHẦN bằng nhau; TỐI THIỂU 03 cổ đông, không giới hạn tối đa; trách nhiệm HỮU HẠN; TỰ DO CHUYỂN NHƯỢNG cổ phần (trừ cổ phần cổ đông sáng lập trong 03 năm, cổ phần ưu đãi biểu quyết…); CÓ quyền PHÁT HÀNH cổ phần, trái phiếu, chứng khoán khác (khoản 3) — loại hình duy nhất được niêm yết. Cơ cấu quản lý: Đại hội đồng cổ đông, Hội đồng quản trị, Giám đốc, Ban kiểm soát (hoặc Ủy ban kiểm toán).",
+ "example": "Công ty X niêm yết trên sàn: hàng nghìn cổ đông, mua bán cổ phiếu tự do; mỗi cổ đông chỉ chịu rủi ro trong phạm vi tiền đã góp.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 111 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "co-phan",
+  "co-dong-sang-lap",
+  "cong-ty-tnhh-hai-thanh-vien"
+ ],
+ "keywords": [
+  "vốn chia thành cổ phần",
+  "tối thiểu 03 cổ đông",
+  "trách nhiệm trong phạm vi vốn đã góp",
+  "tự do chuyển nhượng cổ phần"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Số lượng cổ đông tối thiểu của công ty cổ phần là bao nhiêu?",
+   "options": [
+    "03",
+    "02",
+    "05",
+    "07"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 1 Điều 111.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 111 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Vốn điều lệ của công ty cổ phần được chia thế nào?",
+   "options": [
+    "Thành nhiều phần bằng nhau gọi là cổ phần",
+    "Theo tỷ lệ thỏa thuận của thành viên",
+    "Thành phần vốn góp không bằng nhau",
+    "Không chia"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 111.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 111 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Công ty cổ phần",
+   "right": "Công ty TNHH hai thành viên trở lên",
+   "cases": [
+    {
+     "text": "Được phát hành cổ phần huy động vốn",
+     "answer": "left"
+    },
+    {
+     "text": "Tối đa 50 thành viên",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 46, 111."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Vốn điều lệ được chia thành nhiều phần bằng nhau gọi là {{cổ phần}}; số lượng cổ đông tối thiểu là {{03}} và không hạn chế số lượng tối đa.",
+   "bank_extra": [
+    "phần vốn góp",
+    "02"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Cổ đông có quyền tự do {{chuyển nhượng}} cổ phần của mình cho người khác, trừ trường hợp luật quy định.",
+   "bank_extra": [
+    "thế chấp",
+    "tặng cho"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Cổ đông công ty cổ phần chịu trách nhiệm vô hạn về các khoản nợ của công ty.",
+   "answer": false,
+   "explain": "Sai. Điểm c khoản 1 Điều 111: trong phạm vi số vốn đã góp."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày đặc điểm pháp lý của công ty cổ phần.",
+   "model": "Vốn điều lệ chia thành cổ phần bằng nhau; cổ đông là tổ chức, cá nhân, tối thiểu 03, không hạn chế tối đa; chịu trách nhiệm trong phạm vi vốn đã góp; tự do chuyển nhượng cổ phần trừ ngoại lệ (khoản 1); có tư cách pháp nhân (khoản 2); được phát hành cổ phần, trái phiếu (khoản 3 Điều 111).",
+   "keywords": [
+    "cổ phần",
+    "03 cổ đông",
+    "vốn đã góp",
+    "chuyển nhượng"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,139 @@
+{
+  "id": "thuong-mai-1-de-2",
+  "group": "thuong-mai",
+  "title": "Đề kiểm tra Thương mại 1 – Thành lập, quản lý, tổ chức lại doanh nghiệp",
+  "subtitle": "10 câu theo đề cương HLU, vấn đề 6–10",
+  "updated": "2026-11-01",
+  "questions": [
+    {
+      "q": "Viên chức trường đại học công lập có quyền làm giám đốc công ty thương mại không (trừ ngoại lệ luật định)?",
+      "options": [
+        "Có",
+        "Không",
+        "Có nếu được hiệu trưởng đồng ý",
+        "Có nếu không nhận lương"
+      ],
+      "answer": 1,
+      "explain": "Điểm b khoản 2 Điều 17.",
+      "basis": "Điều 17 Luật Doanh nghiệp (VBHN 67/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+    },
+    {
+      "q": "Người chưa thành niên có quyền thành lập, quản lý doanh nghiệp không?",
+      "options": [
+        "Có",
+        "Không",
+        "Có nếu cha mẹ đồng ý",
+        "Chỉ doanh nghiệp tư nhân"
+      ],
+      "answer": 1,
+      "explain": "Điểm đ khoản 2 Điều 17.",
+      "basis": "Điều 17 Luật Doanh nghiệp (VBHN 67/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+    },
+    {
+      "q": "Ai KHÔNG phải người quản lý doanh nghiệp theo khoản 24 Điều 4?",
+      "options": [
+        "Giám đốc",
+        "Chủ tịch Hội đồng quản trị",
+        "Cổ đông phổ thông không giữ chức danh",
+        "Thành viên hợp danh"
+      ],
+      "answer": 2,
+      "explain": "Khoản 24 Điều 4.",
+      "basis": "Điều 4 Luật Doanh nghiệp (VBHN 67/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+    },
+    {
+      "q": "Chủ sở hữu hưởng lợi của doanh nghiệp là ai?",
+      "options": [
+        "Người đứng tên trên giấy tờ",
+        "Cá nhân sở hữu trên thực tế vốn điều lệ hoặc có quyền chi phối doanh nghiệp",
+        "Ngân hàng",
+        "Người lao động"
+      ],
+      "answer": 1,
+      "explain": "Khoản 35 Điều 4 (bổ sung bởi Luật 76/2025/QH15).",
+      "basis": "Điều 4 Luật Doanh nghiệp (VBHN 67/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+    },
+    {
+      "q": "Công ty A tách một bộ phận thành công ty B, A vẫn hoạt động. Đây là hình thức nào?",
+      "options": [
+        "Chia",
+        "Tách",
+        "Sáp nhập",
+        "Hợp nhất"
+      ],
+      "answer": 1,
+      "explain": "Khoản 1 Điều 199.",
+      "basis": "Điều 199 Luật Doanh nghiệp (VBHN 67/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+    },
+    {
+      "q": "Sau khi sáp nhập, công ty nào chấm dứt tồn tại?",
+      "options": [
+        "Công ty nhận sáp nhập",
+        "Công ty bị sáp nhập",
+        "Cả hai",
+        "Không công ty nào"
+      ],
+      "answer": 1,
+      "explain": "Khoản 1 Điều 201.",
+      "basis": "Điều 201 Luật Doanh nghiệp (VBHN 67/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+    },
+    {
+      "q": "Công ty cổ phần chỉ còn 2 cổ đông trong 6 tháng liên tục, không chuyển đổi loại hình. Hệ quả là gì?",
+      "options": [
+        "Không sao",
+        "Thuộc trường hợp giải thể",
+        "Tự động thành công ty hợp danh",
+        "Bị phạt tiền"
+      ],
+      "answer": 1,
+      "explain": "Điểm c khoản 1 Điều 207.",
+      "basis": "Điều 207 Luật Doanh nghiệp (VBHN 67/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+    },
+    {
+      "q": "Điều kiện để doanh nghiệp được giải thể là gì?",
+      "options": [
+        "Bảo đảm thanh toán hết nợ, nghĩa vụ tài sản và không trong quá trình giải quyết tranh chấp",
+        "Có lãi",
+        "Được UBND đồng ý",
+        "Có trên 10 lao động"
+      ],
+      "answer": 0,
+      "explain": "Khoản 2 Điều 207.",
+      "basis": "Điều 207 Luật Doanh nghiệp (VBHN 67/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+    },
+    {
+      "q": "Doanh nghiệp nhà nước theo Luật Doanh nghiệp 2020 là doanh nghiệp do Nhà nước nắm giữ bao nhiêu vốn điều lệ?",
+      "options": [
+        "100%",
+        "Trên 50%",
+        "Từ 30%",
+        "Từ 65%"
+      ],
+      "answer": 1,
+      "explain": "Khoản 11 Điều 4.",
+      "basis": "Điều 4 Luật Doanh nghiệp (VBHN 67/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+    },
+    {
+      "q": "Công ty con có được mua cổ phần của công ty mẹ không?",
+      "options": [
+        "Có",
+        "Không",
+        "Có nếu dưới 5%",
+        "Có nếu niêm yết"
+      ],
+      "answer": 1,
+      "explain": "Khoản 2 Điều 195.",
+      "basis": "Điều 195 Luật Doanh nghiệp (VBHN 67/VBHN-VPQH 2025)",
+      "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+    }
+  ]
+}

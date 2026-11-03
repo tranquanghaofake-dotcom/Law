@@ -1,0 +1,119 @@
+{
+ "id": "tham-quyen-giai-quyet-tranh-chap-dat-dai",
+ "subject": "dat-dai",
+ "chapter": "v8",
+ "term": "Thẩm quyền giải quyết tranh chấp đất đai",
+ "definition": "Tranh chấp đất đai mà các bên tranh chấp hoặc một trong các bên tranh chấp có Giấy chứng nhận quyền sử dụng đất, Giấy chứng nhận quyền sở hữu nhà ở và quyền sử dụng đất ở, Giấy chứng nhận quyền sở hữu nhà ở, Giấy chứng nhận quyền sở hữu công trình xây dựng, Giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất, Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất hoặc có một trong các loại giấy tờ quy định tại Điều 137 của Luật này và tranh chấp về tài sản gắn liền với đất thì do Tòa án giải quyết.",
+ "plain": "Tiêu chí: CÓ hay KHÔNG CÓ GIẤY CHỨNG NHẬN/giấy tờ theo Điều 137. CÓ (một bên có là đủ) hoặc tranh chấp TÀI SẢN gắn liền với đất → TÒA ÁN. KHÔNG CÓ → các bên CHỌN: UBND cấp có thẩm quyền HOẶC khởi kiện tại Tòa án (khoản 2). LƯU Ý THỰC TIỄN: văn bản hợp nhất vẫn ghi thẩm quyền \"Chủ tịch UBND cấp huyện\" ở khoản 3, trong khi cấp huyện đã kết thúc hoạt động từ 01/7/2025 (Nghị quyết 203/2025/QH15) — phải tra văn bản phân định thẩm quyền chính quyền địa phương hai cấp đang áp dụng.",
+ "example": "Ông A có sổ đỏ, bà B không có giấy tờ, tranh chấp ranh giới: sau khi hòa giải không thành tại xã, vụ việc do Tòa án giải quyết (khoản 1 Điều 236).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 236 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Van-ban-hop-nhat-44-VBHN-VPQH-2026-Luat-Dat-dai-699655.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hoa-giai-tranh-chap-dat-dai",
+  "giay-chung-nhan"
+ ],
+ "keywords": [
+  "có Giấy chứng nhận do Tòa án",
+  "tranh chấp tài sản gắn liền với đất",
+  "không có giấy tờ thì lựa chọn",
+  "UBND hoặc Tòa án"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tranh chấp đất đai mà một trong các bên có Giấy chứng nhận thì do cơ quan nào giải quyết?",
+   "options": [
+    "Tòa án",
+    "Ủy ban nhân dân cấp xã",
+    "Ủy ban nhân dân cấp tỉnh",
+    "Do các bên lựa chọn"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 236.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 236 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tranh chấp mà các bên đều không có Giấy chứng nhận, không có giấy tờ theo Điều 137 thì sao?",
+   "options": [
+    "Các bên lựa chọn UBND cấp có thẩm quyền hoặc khởi kiện tại Tòa án",
+    "Chỉ Tòa án",
+    "Chỉ UBND cấp xã",
+    "Không được giải quyết"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 236.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 236 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tòa án giải quyết",
+   "right": "Các bên được lựa chọn",
+   "cases": [
+    {
+     "text": "Một bên có sổ đỏ",
+     "answer": "left"
+    },
+    {
+     "text": "Tranh chấp nhà xây trên đất",
+     "answer": "left"
+    },
+    {
+     "text": "Không bên nào có giấy tờ",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 236."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tranh chấp đất đai mà các bên hoặc một trong các bên có {{Giấy chứng nhận}} hoặc giấy tờ theo Điều 137 và tranh chấp về {{tài sản}} gắn liền với đất thì do Tòa án giải quyết.",
+   "bank_extra": [
+    "hợp đồng thuê",
+    "hộ khẩu"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tranh chấp đất đai có giấy tờ theo Điều {{137}} cũng do Tòa án giải quyết.",
+   "bank_extra": [
+    "138",
+    "45"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chỉ khi cả hai bên đều có Giấy chứng nhận thì Tòa án mới giải quyết.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 236: chỉ cần một trong các bên có."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày thẩm quyền giải quyết tranh chấp đất đai theo Luật Đất đai 2024.",
+   "model": "Có Giấy chứng nhận hoặc giấy tờ theo Điều 137 (một trong các bên) và tranh chấp tài sản gắn liền với đất: Tòa án giải quyết (khoản 1); không có giấy tờ: các bên chọn UBND cấp có thẩm quyền hoặc Tòa án (khoản 2 Điều 236); phải hòa giải tại cấp xã trước (Điều 235).",
+   "keywords": [
+    "Giấy chứng nhận",
+    "Tòa án",
+    "lựa chọn",
+    "hòa giải"
+   ]
+  }
+ ]
+}

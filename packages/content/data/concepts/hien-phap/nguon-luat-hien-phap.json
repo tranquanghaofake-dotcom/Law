@@ -115,6 +115,13 @@
     "nghị quyết",
     "quy phạm luật Hiến pháp"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Nguồn của luật Hiến pháp chỉ có thể là các văn bản luật do Quốc hội ban hành.",
+   "answer": false,
+   "explain": "Sai. Ngoài Hiến pháp, luật, còn có nghị quyết của Quốc hội, pháp lệnh, nghị quyết của Ủy ban thường vụ Quốc hội và văn bản khác có chứa quy phạm luật Hiến pháp. (Nhận định trong bộ câu hỏi ôn tập Luật Hiến pháp, Drive HLU.)"
   }
  ]
 }

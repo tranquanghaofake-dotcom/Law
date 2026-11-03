@@ -1,0 +1,118 @@
+{
+ "id": "xd-thu-tuc-rut-gon",
+ "subject": "xay-dung-vbpl",
+ "chapter": "v2",
+ "term": "Trường hợp xây dựng, ban hành VBQPPL theo trình tự, thủ tục rút gọn",
+ "definition": "Việc xây dựng, ban hành văn bản quy phạm pháp luật được thực hiện theo trình tự, thủ tục rút gọn thuộc trường hợp sau đây: (…) Trường hợp khẩn cấp theo quy định của pháp luật về tình trạng khẩn cấp; khi có yêu cầu đột xuất, cấp bách vì lý do quốc phòng, an ninh, lợi ích quốc gia, phòng, chống thiên tai, dịch bệnh, cháy, nổ; (…) Trường hợp cấp bách để giải quyết vấn đề phát sinh trong thực tiễn;",
+ "plain": "Sáu trường hợp (điểm a–e khoản 1 Điều 50): khẩn cấp/đột xuất vì quốc phòng, an ninh, thiên tai, dịch bệnh; cấp bách giải quyết vấn đề thực tiễn; cần tạm ngưng hiệu lực; cần sửa ngay cho phù hợp văn bản mới hoặc thực hiện điều ước; cần điều chỉnh thời hạn áp dụng; văn bản quy định chi tiết của văn bản rút gọn/đặc biệt. Hệ quả: không phải làm quy trình xây dựng chính sách (khoản 2 Điều 51), được rút ngắn các bước lấy ý kiến, thẩm định, thẩm tra và có thể có hiệu lực ngay (Điều 53). Thẩm quyền quyết định áp dụng thuộc các chủ thể tại khoản 2–4 Điều 50.",
+ "example": "Dịch bệnh bùng phát, Chính phủ cần nghị định hỗ trợ người lao động ngay: thuộc điểm a khoản 1 Điều 50, ban hành theo thủ tục rút gọn, có hiệu lực từ ngày ký.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 50 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-54-VBHN-VPQH-2025-Luat-Ban-hanh-van-ban-quy-pham-phap-luat-669858.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "xd-thoi-diem-co-hieu-luc",
+  "xd-quy-trinh-xay-dung-chinh-sach"
+ ],
+ "keywords": [
+  "khẩn cấp",
+  "cấp bách",
+  "tạm ngưng hiệu lực",
+  "sửa đổi ngay",
+  "điều ước quốc tế"
+ ],
+ "note": "Luật Ban hành văn bản quy phạm pháp luật 64/2025/QH15 có hiệu lực từ 01/4/2025, thay thế Luật 80/2015/QH13 (sửa đổi bởi Luật 63/2020/QH14) mà đề cương HLU 2019 còn dẫn; được sửa đổi bởi Luật 87/2025/QH15 có hiệu lực từ 01/7/2025 — văn bản hợp nhất 54/VBHN-VPQH ngày 11/8/2025. Luật mới bỏ quy trình \"lập đề nghị xây dựng luật\" theo chương trình hằng năm kiểu cũ, tách \"quy trình xây dựng chính sách\" và bỏ thẩm quyền ban hành VBQPPL của cấp huyện (từ 01/7/2025). Dự án Luật Văn bản quy phạm pháp luật (thay thế) đang được Quốc hội khóa XVI xem xét, chưa có hiệu lực.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trường hợp nào được xây dựng, ban hành VBQPPL theo trình tự, thủ tục rút gọn?",
+   "options": [
+    "Trường hợp khẩn cấp, yêu cầu đột xuất vì quốc phòng, an ninh, thiên tai, dịch bệnh",
+    "Khi cơ quan soạn thảo thiếu nhân lực",
+    "Khi muốn tránh lấy ý kiến nhân dân",
+    "Mọi nghị quyết của HĐND"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 50.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 50 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hệ quả của việc áp dụng thủ tục rút gọn với văn bản thuộc khoản 1 Điều 27 là gì?",
+   "options": [
+    "Không phải thực hiện quy trình xây dựng chính sách",
+    "Không cần thẩm tra",
+    "Không cần đăng tải",
+    "Không cần ký ban hành"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 51.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 51 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Được áp dụng thủ tục rút gọn",
+   "right": "Không thuộc trường hợp rút gọn",
+   "cases": [
+    {
+     "text": "Cần sửa ngay nghị định cho phù hợp với luật mới ban hành",
+     "answer": "left"
+    },
+    {
+     "text": "Luật mới quy định toàn diện một lĩnh vực chưa có luật",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điểm d khoản 1 Điều 50; luật mới phải theo quy trình đầy đủ."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thủ tục rút gọn áp dụng trong trường hợp {{khẩn cấp}} theo pháp luật về tình trạng khẩn cấp; khi có yêu cầu đột xuất, {{cấp bách}} vì lý do quốc phòng, an ninh.",
+   "bank_extra": [
+    "thông thường",
+    "tiết kiệm"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thủ tục rút gọn còn áp dụng khi cần {{tạm ngưng hiệu lực}} toàn bộ hoặc một phần VBQPPL, hoặc cần {{sửa đổi ngay}} cho phù hợp với văn bản mới được ban hành.",
+   "bank_extra": [
+    "bãi bỏ",
+    "dịch thuật"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Văn bản ban hành theo thủ tục rút gọn bắt buộc phải chờ đủ 45 ngày mới có hiệu lực.",
+   "answer": false,
+   "explain": "Sai. Đoạn 2 khoản 1 Điều 53: có thể có hiệu lực kể từ ngày thông qua hoặc ký ban hành nhưng phải đăng tải ngay."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Kể các trường hợp áp dụng trình tự, thủ tục rút gọn.",
+   "model": "Khẩn cấp, đột xuất vì quốc phòng, an ninh, thiên tai, dịch bệnh; cấp bách giải quyết vấn đề thực tiễn; tạm ngưng hiệu lực; sửa ngay cho phù hợp văn bản mới hoặc thực hiện điều ước; điều chỉnh thời hạn áp dụng; quy định chi tiết văn bản rút gọn/đặc biệt (khoản 1 Điều 50).",
+   "keywords": [
+    "khẩn cấp",
+    "cấp bách",
+    "tạm ngưng",
+    "điều ước",
+    "quy định chi tiết"
+   ]
+  }
+ ]
+}

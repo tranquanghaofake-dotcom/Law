@@ -1,0 +1,139 @@
+{
+  "id": "hanh-chinh-de-2",
+  "group": "hanh-chinh",
+  "title": "Đề kiểm tra Luật Hành chính – Thủ tục và cưỡng chế hành chính",
+  "subtitle": "10 câu theo đề cương HLU, vấn đề 13–14",
+  "updated": "2026-11-01",
+  "questions": [
+    {
+      "q": "Cảnh sát phạt người không đội mũ bảo hiểm 300.000 đồng, phát hiện trực tiếp. Thủ tục nào được áp dụng?",
+      "options": [
+        "Phải lập biên bản",
+        "Có thể xử phạt không lập biên bản, ra quyết định tại chỗ",
+        "Chuyển Tòa án",
+        "Chỉ nhắc nhở"
+      ],
+      "answer": 1,
+      "explain": "Điểm a khoản 1, khoản 3 Điều 56.",
+      "basis": "Điều 56 Luật XLVPHC (VBHN 90/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Vi-pham-hanh-chinh/Van-ban-hop-nhat-90-VBHN-VPQH-2026-Luat-Xu-ly-vi-pham-hanh-chinh-699548.aspx"
+    },
+    {
+      "q": "Vi phạm bị camera ghi lại (phạt nguội) có cần lập biên bản không?",
+      "options": [
+        "Không",
+        "Có, phải lập biên bản",
+        "Tùy mức phạt",
+        "Chỉ khi người vi phạm yêu cầu"
+      ],
+      "answer": 1,
+      "explain": "Khoản 2 Điều 56.",
+      "basis": "Điều 56 Luật XLVPHC (VBHN 90/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Vi-pham-hanh-chinh/Van-ban-hop-nhat-90-VBHN-VPQH-2026-Luat-Xu-ly-vi-pham-hanh-chinh-699548.aspx"
+    },
+    {
+      "q": "Thời hạn ra quyết định xử phạt thông thường kể từ ngày lập biên bản là bao lâu?",
+      "options": [
+        "03 ngày",
+        "07 ngày làm việc",
+        "30 ngày",
+        "01 tháng"
+      ],
+      "answer": 1,
+      "explain": "Điểm a khoản 1 Điều 66.",
+      "basis": "Điều 66 Luật XLVPHC (VBHN 90/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Vi-pham-hanh-chinh/Van-ban-hop-nhat-90-VBHN-VPQH-2026-Luat-Xu-ly-vi-pham-hanh-chinh-699548.aspx"
+    },
+    {
+      "q": "Người bị xử phạt phải chấp hành quyết định trong thời hạn bao lâu (trừ trường hợp luật khác)?",
+      "options": [
+        "05 ngày",
+        "10 ngày kể từ ngày nhận quyết định",
+        "30 ngày",
+        "01 năm"
+      ],
+      "answer": 1,
+      "explain": "Khoản 1 Điều 73.",
+      "basis": "Điều 73 Luật XLVPHC (VBHN 90/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Vi-pham-hanh-chinh/Van-ban-hop-nhat-90-VBHN-VPQH-2026-Luat-Xu-ly-vi-pham-hanh-chinh-699548.aspx"
+    },
+    {
+      "q": "Doanh nghiệp không nộp phạt sau thời hạn. Biện pháp nào được áp dụng?",
+      "options": [
+        "Tạm giam giám đốc",
+        "Khấu trừ tiền từ tài khoản của doanh nghiệp",
+        "Giải thể doanh nghiệp",
+        "Đưa vào cơ sở giáo dục bắt buộc"
+      ],
+      "answer": 1,
+      "explain": "Điểm a khoản 2 Điều 86.",
+      "basis": "Điều 86 Luật XLVPHC (VBHN 90/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Vi-pham-hanh-chinh/Van-ban-hop-nhat-90-VBHN-VPQH-2026-Luat-Xu-ly-vi-pham-hanh-chinh-699548.aspx"
+    },
+    {
+      "q": "Biện pháp xử lý hành chính áp dụng cho đối tượng nào?",
+      "options": [
+        "Tổ chức vi phạm thuế",
+        "Cá nhân vi phạm pháp luật về an ninh, trật tự, an toàn xã hội mà không phải tội phạm",
+        "Mọi người vi phạm giao thông",
+        "Cán bộ vi phạm kỷ luật"
+      ],
+      "answer": 1,
+      "explain": "Khoản 3 Điều 2.",
+      "basis": "Điều 2 Luật XLVPHC (VBHN 90/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Vi-pham-hanh-chinh/Van-ban-hop-nhat-90-VBHN-VPQH-2026-Luat-Xu-ly-vi-pham-hanh-chinh-699548.aspx"
+    },
+    {
+      "q": "Thời hạn áp dụng biện pháp giáo dục tại xã, phường, đặc khu là bao lâu?",
+      "options": [
+        "01–03 tháng",
+        "03–06 tháng",
+        "06–24 tháng",
+        "12–24 tháng"
+      ],
+      "answer": 1,
+      "explain": "Khoản 2 Điều 89.",
+      "basis": "Điều 89 Luật XLVPHC (VBHN 90/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Vi-pham-hanh-chinh/Van-ban-hop-nhat-90-VBHN-VPQH-2026-Luat-Xu-ly-vi-pham-hanh-chinh-699548.aspx"
+    },
+    {
+      "q": "Ai có thẩm quyền quyết định áp dụng biện pháp giáo dục tại xã, phường, đặc khu?",
+      "options": [
+        "Chủ tịch Ủy ban nhân dân cấp xã",
+        "Tòa án nhân dân tối cao",
+        "Bộ trưởng Bộ Công an",
+        "Hội đồng nhân dân tỉnh"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 105.",
+      "basis": "Điều 105 Luật XLVPHC (VBHN 90/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Vi-pham-hanh-chinh/Van-ban-hop-nhat-90-VBHN-VPQH-2026-Luat-Xu-ly-vi-pham-hanh-chinh-699548.aspx"
+    },
+    {
+      "q": "Em A 13 tuổi có hành vi có dấu hiệu tội phạm đặc biệt nghiêm trọng. Biện pháp có thể áp dụng là gì?",
+      "options": [
+        "Phạt tiền",
+        "Đưa vào trường giáo dưỡng",
+        "Phạt tù",
+        "Không có biện pháp"
+      ],
+      "answer": 1,
+      "explain": "Khoản 1 Điều 92.",
+      "basis": "Điều 92 Luật XLVPHC (VBHN 90/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Vi-pham-hanh-chinh/Van-ban-hop-nhat-90-VBHN-VPQH-2026-Luat-Xu-ly-vi-pham-hanh-chinh-699548.aspx"
+    },
+    {
+      "q": "Thời hạn áp dụng biện pháp đưa vào trường giáo dưỡng là bao lâu?",
+      "options": [
+        "03–06 tháng",
+        "06–24 tháng",
+        "01–05 năm",
+        "Không xác định"
+      ],
+      "answer": 1,
+      "explain": "Khoản 2 Điều 91.",
+      "basis": "Điều 91 Luật XLVPHC (VBHN 90/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Vi-pham-hanh-chinh/Van-ban-hop-nhat-90-VBHN-VPQH-2026-Luat-Xu-ly-vi-pham-hanh-chinh-699548.aspx"
+    }
+  ]
+}

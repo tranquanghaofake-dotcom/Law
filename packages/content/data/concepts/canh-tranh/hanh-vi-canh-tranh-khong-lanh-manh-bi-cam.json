@@ -1,0 +1,115 @@
+{
+ "id": "hanh-vi-canh-tranh-khong-lanh-manh-bi-cam",
+ "subject": "canh-tranh",
+ "chapter": "v6",
+ "term": "Các hành vi cạnh tranh không lành mạnh bị cấm",
+ "definition": "Ép buộc khách hàng, đối tác kinh doanh của doanh nghiệp khác bằng hành vi đe dọa hoặc cưỡng ép để buộc họ không giao dịch hoặc ngừng giao dịch với doanh nghiệp đó. Cung cấp thông tin không trung thực về doanh nghiệp khác bằng cách trực tiếp hoặc gián tiếp đưa thông tin không trung thực về doanh nghiệp gây ảnh hưởng xấu đến uy tín, tình trạng tài chính hoặc hoạt động kinh doanh của doanh nghiệp đó. Gây rối hoạt động kinh doanh của doanh nghiệp khác bằng cách trực tiếp hoặc gián tiếp cản trở, làm gián đoạn hoạt động kinh doanh hợp pháp của doanh nghiệp đó.",
+ "plain": "Điều 45 liệt kê: (1) XÂM PHẠM THÔNG TIN BÍ MẬT trong kinh doanh; (2) ÉP BUỘC khách hàng, đối tác của doanh nghiệp khác; (3) CUNG CẤP THÔNG TIN KHÔNG TRUNG THỰC (gièm pha); (4) GÂY RỐI hoạt động kinh doanh; (5) LÔI KÉO KHÁCH HÀNG BẤT CHÍNH (thông tin gian dối, so sánh không chứng minh được); (6) bán DƯỚI GIÁ THÀNH TOÀN BỘ loại bỏ doanh nghiệp cùng loại; (7) hành vi khác theo luật khác. Mức phạt tối đa với cạnh tranh không lành mạnh: 2 TỶ ĐỒNG (tổ chức), cá nhân bằng một nửa (Điều 111).",
+ "example": "Công ty A cho người đe dọa các đại lý của công ty B, buộc đại lý ngừng nhập hàng của B: hành vi ép buộc khách hàng, đối tác (khoản 2 Điều 45).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 2–4 Điều 45 Luật Cạnh tranh 2018",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "canh-tranh-khong-lanh-manh",
+  "xu-ly-vi-pham-canh-tranh"
+ ],
+ "keywords": [
+  "xâm phạm bí mật kinh doanh",
+  "ép buộc khách hàng, đối tác",
+  "thông tin không trung thực",
+  "lôi kéo khách hàng bất chính"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "So sánh hàng hóa của mình với hàng hóa cùng loại của doanh nghiệp khác nhưng không chứng minh được nội dung là hành vi gì?",
+   "options": [
+    "Lôi kéo khách hàng bất chính",
+    "Gây rối hoạt động kinh doanh",
+    "Xâm phạm bí mật kinh doanh",
+    "Hành vi hợp pháp"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 5 Điều 45.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 5 Điều 45 Luật Cạnh tranh 2018"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đưa thông tin không trung thực về doanh nghiệp khác gây ảnh hưởng xấu đến uy tín của họ là hành vi nào?",
+   "options": [
+    "Cung cấp thông tin không trung thực về doanh nghiệp khác",
+    "Thỏa thuận hạn chế cạnh tranh",
+    "Lạm dụng vị trí độc quyền",
+    "Tập trung kinh tế"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 45.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 45 Luật Cạnh tranh 2018"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Gây rối hoạt động kinh doanh",
+   "right": "Xâm phạm thông tin bí mật kinh doanh",
+   "cases": [
+    {
+     "text": "Cản trở, làm gián đoạn hoạt động kinh doanh hợp pháp của đối thủ",
+     "answer": "left"
+    },
+    {
+     "text": "Tiết lộ bí mật kinh doanh mà không được phép của chủ sở hữu",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 45."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ép buộc khách hàng, đối tác kinh doanh của doanh nghiệp khác bằng hành vi {{đe dọa}} hoặc cưỡng ép để buộc họ không giao dịch hoặc {{ngừng giao dịch}} với doanh nghiệp đó.",
+   "bank_extra": [
+    "khuyến mại",
+    "tăng giao dịch"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Gây rối hoạt động kinh doanh của doanh nghiệp khác bằng cách trực tiếp hoặc gián tiếp cản trở, làm {{gián đoạn}} hoạt động kinh doanh hợp pháp.",
+   "bank_extra": [
+    "tăng cường",
+    "minh bạch"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "So sánh sản phẩm của mình với đối thủ luôn bị cấm.",
+   "answer": false,
+   "explain": "Sai. Chỉ bị cấm khi không chứng minh được nội dung so sánh (điểm b khoản 5 Điều 45)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các hành vi cạnh tranh không lành mạnh bị cấm theo Điều 45.",
+   "model": "Xâm phạm thông tin bí mật kinh doanh; ép buộc khách hàng, đối tác của doanh nghiệp khác; cung cấp thông tin không trung thực về doanh nghiệp khác; gây rối hoạt động kinh doanh; lôi kéo khách hàng bất chính; bán dưới giá thành toàn bộ loại bỏ doanh nghiệp khác; hành vi khác theo luật khác (Điều 45).",
+   "keywords": [
+    "bí mật kinh doanh",
+    "ép buộc",
+    "thông tin không trung thực",
+    "lôi kéo khách hàng"
+   ]
+  }
+ ]
+}

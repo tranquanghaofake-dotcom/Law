@@ -1,0 +1,119 @@
+{
+ "id": "tstt-tu-bao-ve",
+ "subject": "tai-san-tri-tue",
+ "chapter": "v5",
+ "term": "Quyền tự bảo vệ của chủ thể quyền sở hữu trí tuệ",
+ "definition": "Chủ thể quyền sở hữu trí tuệ có quyền áp dụng các biện pháp sau đây để bảo vệ quyền sở hữu trí tuệ của mình: a) Áp dụng biện pháp công nghệ bảo vệ quyền, đưa thông tin quản lý quyền hoặc áp dụng các biện pháp công nghệ khác nhằm ngăn ngừa hành vi xâm phạm quyền sở hữu trí tuệ; b) Yêu cầu tổ chức, cá nhân có hành vi xâm phạm quyền sở hữu trí tuệ phải chấm dứt hành vi xâm phạm, gỡ bỏ và xóa nội dung vi phạm trên không gian mạng, xin lỗi, cải chính công khai, bồi thường thiệt hại; c) Yêu cầu cơ quan nhà nước có thẩm quyền xử lý hành vi xâm phạm quyền sở hữu trí tuệ theo quy định của Luật này và các quy định khác của pháp luật có liên quan; d) Khởi kiện ra tòa án hoặc trọng tài để bảo vệ quyền, lợi ích hợp pháp của mình.",
+ "plain": "Lộ trình tư vấn tranh chấp đi theo đúng thứ tự này: (a) PHÒNG NGỪA bằng công nghệ, thông tin quản lý quyền; (b) THƯ KHUYẾN CÁO yêu cầu chấm dứt, gỡ bỏ, xin lỗi, bồi thường — rẻ, nhanh, giữ quan hệ; (c) yêu cầu CƠ QUAN NHÀ NƯỚC xử lý (hành chính: thanh tra, quản lý thị trường, hải quan; hình sự); (d) KHỞI KIỆN tòa án hoặc trọng tài (dân sự). Chủ thể quyền có thể ỦY QUYỀN cho tổ chức, cá nhân khác (khoản 1a). Thư khuyến cáo cần: khẳng định phạm vi quyền (văn bằng), chứng cứ xâm phạm, phân tích yếu tố xâm phạm (có thể kèm kết luận giám định), yêu cầu cụ thể, thời hạn trả lời.",
+ "example": "Honda phát hiện cửa hàng bán phụ tùng gắn dấu hiệu \"Hongda\": bước đầu gửi thư khuyến cáo yêu cầu chấm dứt, tiêu hủy hàng, bồi thường, ký cam kết (điểm b); không hợp tác thì yêu cầu thanh tra xử phạt (điểm c) hoặc khởi kiện (điểm d).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 198 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tstt-xam-pham-nhan-hieu",
+  "tstt-giam-dinh-shtt",
+  "tstt-xac-dinh-thiet-hai",
+  "tstt-kiem-soat-bien-gioi"
+ ],
+ "keywords": [
+  "biện pháp công nghệ",
+  "chấm dứt hành vi xâm phạm",
+  "xin lỗi, cải chính",
+  "khởi kiện",
+  "ủy quyền"
+ ],
+ "note": "Luật Sở hữu trí tuệ 50/2005/QH11 (hiệu lực 01/7/2006) đã được sửa đổi bởi Luật 36/2009/QH12, 42/2019/QH14, 07/2022/QH15, 93/2025/QH15 và 131/2025/QH15 (hiệu lực 01/4/2026) — văn bản hợp nhất 67/VBHN-VPQH 2026; ghi chép lớp học còn dẫn Nghị định 105/2006/NĐ-CP và Nghị định 99/2013/NĐ-CP, cần tự kiểm tra hiệu lực của các nghị định này trước khi dùng.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Biện pháp nào thuộc quyền tự bảo vệ theo khoản 1 Điều 198?",
+   "options": [
+    "Yêu cầu bên xâm phạm chấm dứt hành vi, xin lỗi, cải chính công khai, bồi thường thiệt hại",
+    "Tự ý tịch thu hàng hóa của bên xâm phạm",
+    "Bắt giữ người xâm phạm",
+    "Tự phạt tiền bên xâm phạm"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 1 Điều 198.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 198 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Chủ thể quyền có thể ủy quyền cho người khác áp dụng các biện pháp tự bảo vệ không?",
+   "options": [
+    "Có, theo khoản 1a Điều 198",
+    "Không, phải tự thực hiện",
+    "Chỉ ủy quyền cho luật sư nước ngoài",
+    "Chỉ khi tòa án cho phép"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1a Điều 198.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1a Điều 198 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Biện pháp tự bảo vệ",
+   "right": "Không phải biện pháp hợp pháp",
+   "cases": [
+    {
+     "text": "Gửi thư khuyến cáo yêu cầu chấm dứt xâm phạm",
+     "answer": "left"
+    },
+    {
+     "text": "Đột nhập cửa hàng thu giữ hàng giả",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 198."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chủ thể quyền có quyền yêu cầu bên xâm phạm {{chấm dứt}} hành vi xâm phạm, gỡ bỏ nội dung vi phạm trên không gian mạng, xin lỗi, cải chính công khai, {{bồi thường thiệt hại}}.",
+   "bank_extra": [
+    "đăng ký",
+    "nộp phạt"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chủ thể quyền có quyền {{khởi kiện}} ra tòa án hoặc {{trọng tài}} để bảo vệ quyền, lợi ích hợp pháp của mình.",
+   "bank_extra": [
+    "tố cáo",
+    "công an"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thư khuyến cáo là thủ tục bắt buộc trước khi khởi kiện xâm phạm quyền SHTT.",
+   "answer": false,
+   "explain": "Sai. Điều 198 liệt kê các biện pháp chủ thể quyền \"có quyền\" áp dụng; không quy định phải khuyến cáo trước khi khởi kiện. Thư khuyến cáo là lựa chọn thực tiễn."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Kể các biện pháp tự bảo vệ quyền SHTT.",
+   "model": "Biện pháp công nghệ, thông tin quản lý quyền; yêu cầu chấm dứt, gỡ bỏ, xin lỗi, cải chính, bồi thường; yêu cầu cơ quan nhà nước xử lý; khởi kiện tòa án hoặc trọng tài (khoản 1 Điều 198); có thể ủy quyền (khoản 1a).",
+   "keywords": [
+    "công nghệ",
+    "chấm dứt",
+    "cơ quan nhà nước",
+    "khởi kiện"
+   ]
+  }
+ ]
+}

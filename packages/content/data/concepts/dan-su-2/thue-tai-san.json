@@ -1,0 +1,115 @@
+{
+ "id": "thue-tai-san",
+ "subject": "dan-su-2",
+ "chapter": "v8",
+ "term": "Hợp đồng thuê tài sản",
+ "definition": "Hợp đồng thuê tài sản là sự thỏa thuận giữa các bên, theo đó bên cho thuê giao tài sản cho bên thuê để sử dụng trong một thời hạn, bên thuê phải trả tiền thuê.",
+ "plain": "Hợp đồng CHUYỂN QUYỀN SỬ DỤNG tài sản (không chuyển quyền sở hữu), có ĐỀN BÙ (tiền thuê), có THỜI HẠN. Hết hạn bên thuê trả lại CHÍNH tài sản thuê. Thuê nhà ở còn theo Luật Nhà ở. Phân biệt: MƯỢN tài sản (Điều 494) — không phải trả tiền; THUÊ KHOÁN (Điều 483) — khai thác công dụng, hưởng hoa lợi, lợi tức.",
+ "example": "Sinh viên thuê phòng trọ 2 triệu/tháng: chủ trọ vẫn là chủ sở hữu, sinh viên chỉ có quyền sử dụng trong thời hạn thuê.",
+ "source": {
+  "kind": "statute",
+  "cite": "Đoạn 1 Điều 472 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "mua-ban-tai-san",
+  "vay-tai-san"
+ ],
+ "keywords": [
+  "giao tài sản để sử dụng",
+  "trong một thời hạn",
+  "trả tiền thuê",
+  "không chuyển quyền sở hữu"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hợp đồng thuê tài sản chuyển giao quyền gì cho bên thuê?",
+   "options": [
+    "Quyền sử dụng tài sản trong một thời hạn",
+    "Quyền sở hữu tài sản",
+    "Quyền định đoạt tài sản",
+    "Quyền thế chấp tài sản"
+   ],
+   "answer": 0,
+   "explain": "Điều 472.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 472 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Điểm khác nhau giữa thuê tài sản và mượn tài sản là gì?",
+   "options": [
+    "Thuê phải trả tiền thuê, mượn không phải trả tiền",
+    "Mượn phải trả tiền",
+    "Thuê chuyển quyền sở hữu",
+    "Không có khác biệt"
+   ],
+   "answer": 0,
+   "explain": "Điều 472, 494.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 472, 494 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thuê tài sản",
+   "right": "Mượn tài sản",
+   "cases": [
+    {
+     "text": "Thuê xe tự lái 800 nghìn/ngày",
+     "answer": "left"
+    },
+    {
+     "text": "Bạn cho mượn xe đạp không lấy tiền",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 472, 494."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bên cho thuê giao tài sản cho bên thuê để {{sử dụng}} trong một {{thời hạn}}, bên thuê phải trả tiền thuê.",
+   "bank_extra": [
+    "sở hữu",
+    "vĩnh viễn"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Trong hợp đồng thuê tài sản, bên thuê phải trả {{tiền thuê}}.",
+   "bank_extra": [
+    "tiền cọc gấp đôi",
+    "tiền lãi"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hợp đồng thuê tài sản làm bên thuê trở thành chủ sở hữu tài sản thuê.",
+   "answer": false,
+   "explain": "Sai. Bên thuê chỉ được sử dụng trong thời hạn (Điều 472)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm hợp đồng thuê tài sản và phân biệt với hợp đồng mượn tài sản.",
+   "model": "Là thỏa thuận theo đó bên cho thuê giao tài sản cho bên thuê sử dụng trong một thời hạn, bên thuê trả tiền thuê (Điều 472); mượn tài sản không phải trả tiền (Điều 494).",
+   "keywords": [
+    "sử dụng",
+    "thời hạn",
+    "tiền thuê",
+    "mượn"
+   ]
+  }
+ ]
+}

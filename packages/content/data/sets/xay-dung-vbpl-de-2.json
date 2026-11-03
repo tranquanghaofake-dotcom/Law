@@ -1,0 +1,139 @@
+{
+  "id": "xay-dung-vbpl-de-2",
+  "group": "xay-dung-vbpl",
+  "title": "Đề kiểm tra Xây dựng VBPL – Ngôn ngữ, hình thức, soạn thảo, xử lý",
+  "subtitle": "10 câu theo đề cương HLU, vấn đề 3–6",
+  "updated": "2026-11-01",
+  "questions": [
+    {
+      "q": "Ngôn ngữ trong VBQPPL phải bảo đảm gì?",
+      "options": [
+        "Tiếng Việt; chính xác, phổ thông, thống nhất, rõ ràng, dễ hiểu",
+        "Trang trọng, giàu hình ảnh",
+        "Tiếng Việt hoặc tiếng Anh",
+        "Ngắn gọn tối đa 10 trang"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 7.",
+      "basis": "Khoản 1 Điều 7 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-54-VBHN-VPQH-2025-Luat-Ban-hanh-van-ban-quy-pham-phap-luat-669858.aspx"
+    },
+    {
+      "q": "Bản dịch VBQPPL ra tiếng nước ngoài có giá trị gì?",
+      "options": [
+        "Tham khảo",
+        "Như bản gốc",
+        "Áp dụng cho người nước ngoài",
+        "Thay thế bản tiếng Việt"
+      ],
+      "answer": 0,
+      "explain": "Khoản 4 Điều 7.",
+      "basis": "Khoản 4 Điều 7 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-54-VBHN-VPQH-2025-Luat-Ban-hanh-van-ban-quy-pham-phap-luat-669858.aspx"
+    },
+    {
+      "q": "Đơn vị bố cục nào phải có tên?",
+      "options": [
+        "Phần, chương, mục, tiểu mục, điều",
+        "Khoản",
+        "Điểm",
+        "Khoản và điểm"
+      ],
+      "answer": 0,
+      "explain": "Khoản 2 Điều 7.",
+      "basis": "Khoản 2 Điều 7 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-54-VBHN-VPQH-2025-Luat-Ban-hanh-van-ban-quy-pham-phap-luat-669858.aspx"
+    },
+    {
+      "q": "Số, ký hiệu VBQPPL phải thể hiện yếu tố nào?",
+      "options": [
+        "Số thứ tự liên tục, năm ban hành, loại văn bản, cơ quan/người ban hành",
+        "Chỉ số thứ tự",
+        "Tên người ký",
+        "Số trang"
+      ],
+      "answer": 0,
+      "explain": "Khoản 3 Điều 7.",
+      "basis": "Khoản 3 Điều 7 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-54-VBHN-VPQH-2025-Luat-Ban-hanh-van-ban-quy-pham-phap-luat-669858.aspx"
+    },
+    {
+      "q": "Quốc hội ban hành nghị quyết QPPL để quy định nội dung nào?",
+      "options": [
+        "Thí điểm chính sách mới khác với luật hiện hành",
+        "Tội phạm và hình phạt",
+        "Các thứ thuế",
+        "Tổ chức Chính phủ"
+      ],
+      "answer": 0,
+      "explain": "Điểm a khoản 2 Điều 10.",
+      "basis": "Khoản 2 Điều 10 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-54-VBHN-VPQH-2025-Luat-Ban-hanh-van-ban-quy-pham-phap-luat-669858.aspx"
+    },
+    {
+      "q": "Hội đồng nhân dân cấp tỉnh ban hành VBQPPL dưới hình thức nào?",
+      "options": [
+        "Nghị quyết",
+        "Quyết định",
+        "Chỉ thị",
+        "Thông tư"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 21.",
+      "basis": "Khoản 1 Điều 21 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-54-VBHN-VPQH-2025-Luat-Ban-hanh-van-ban-quy-pham-phap-luat-669858.aspx"
+    },
+    {
+      "q": "Kiểm tra VBQPPL kết luận về điều gì?",
+      "options": [
+        "Tính hợp hiến, hợp pháp, thống nhất với hệ thống pháp luật",
+        "Hiệu quả kinh tế",
+        "Mức độ hài lòng",
+        "Số lượng điều khoản"
+      ],
+      "answer": 0,
+      "explain": "Khoản 6 Điều 3.",
+      "basis": "Khoản 6 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-54-VBHN-VPQH-2025-Luat-Ban-hanh-van-ban-quy-pham-phap-luat-669858.aspx"
+    },
+    {
+      "q": "Rà soát VBQPPL nhằm phát hiện gì?",
+      "options": [
+        "Quy định mâu thuẫn, chồng chéo, hết hiệu lực hoặc không còn phù hợp",
+        "Lỗi in ấn",
+        "Văn bản chưa có dấu",
+        "Văn bản chưa dịch"
+      ],
+      "answer": 0,
+      "explain": "Khoản 5 Điều 3.",
+      "basis": "Khoản 5 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-54-VBHN-VPQH-2025-Luat-Ban-hanh-van-ban-quy-pham-phap-luat-669858.aspx"
+    },
+    {
+      "q": "Ai được sửa đổi, bổ sung, thay thế một VBQPPL?",
+      "options": [
+        "Chính cơ quan, người có thẩm quyền đã ban hành văn bản đó",
+        "Bất kỳ cơ quan cấp trên",
+        "Bộ Tư pháp",
+        "Tòa án"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 8.",
+      "basis": "Khoản 1 Điều 8 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-54-VBHN-VPQH-2025-Luat-Ban-hanh-van-ban-quy-pham-phap-luat-669858.aspx"
+    },
+    {
+      "q": "Trường hợp nào VBQPPL hết hiệu lực?",
+      "options": [
+        "Bị bãi bỏ theo khoản 2 Điều 8",
+        "Bị đình chỉ việc thi hành chờ xử lý",
+        "Bị dư luận phản đối",
+        "Cơ quan ban hành đổi tên"
+      ],
+      "answer": 0,
+      "explain": "Điểm c khoản 1 Điều 57.",
+      "basis": "Khoản 1 Điều 57 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-54-VBHN-VPQH-2025-Luat-Ban-hanh-van-ban-quy-pham-phap-luat-669858.aspx"
+    }
+  ]
+}

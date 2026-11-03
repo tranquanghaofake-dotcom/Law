@@ -1,0 +1,115 @@
+{
+ "id": "lao-dong-chua-thanh-nien",
+ "subject": "lao-dong-2",
+ "chapter": "v2",
+ "term": "Lao động chưa thành niên",
+ "definition": "Lao động chưa thành niên là người lao động chưa đủ 18 tuổi. Người từ đủ 15 tuổi đến chưa đủ 18 tuổi không được làm công việc hoặc làm việc ở nơi làm việc quy định tại Điều 147 của Bộ luật này. Người từ đủ 13 tuổi đến chưa đủ 15 tuổi chỉ được làm công việc nhẹ theo danh mục do Bộ trưởng Bộ Lao động – Thương binh và Xã hội ban hành. Người chưa đủ 13 tuổi chỉ được làm các công việc theo quy định tại khoản 3 Điều 145 của Bộ luật này.",
+ "plain": "Ba nhóm tuổi: 15–dưới 18 (làm việc nhưng cấm công việc, nơi làm việc ở Điều 147); 13–dưới 15 (chỉ CÔNG VIỆC NHẸ theo danh mục); dưới 13 (chỉ nghệ thuật, thể dục thể thao… không tổn hại phát triển — khoản 3 Điều 145). Với người chưa đủ 15 tuổi: HĐLĐ BẰNG VĂN BẢN ký với cả người đó và người đại diện theo pháp luật; giờ làm không ảnh hưởng học tập; khám sức khỏe 06 tháng/lần (Điều 145). Thời giờ làm việc: dưới 15 tuổi không quá 04 giờ/ngày, 20 giờ/tuần; 15–18 tuổi không quá 08 giờ/ngày, 40 giờ/tuần (Điều 146). Tên Bộ Lao động – Thương binh và Xã hội giữ nguyên theo văn bản (chức năng nay thuộc Bộ Nội vụ).",
+ "example": "Một quán cà phê nhận em M 14 tuổi rửa ly trong dịp hè: chỉ hợp pháp nếu công việc thuộc danh mục công việc nhẹ, có HĐLĐ bằng văn bản ký với cả em M và cha mẹ, không quá 04 giờ/ngày.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 143 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-18-VBHN-VPQH-2026-Bo-luat-lao-dong-695336.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "bao-ve-thai-san",
+  "nguoi-lao-dong-cao-tuoi"
+ ],
+ "keywords": [
+  "chưa đủ 18 tuổi",
+  "13–15 tuổi chỉ công việc nhẹ",
+  "dưới 13 tuổi theo khoản 3 Điều 145",
+  "HĐLĐ văn bản với người đại diện"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Lao động chưa thành niên là người lao động bao nhiêu tuổi?",
+   "options": [
+    "Chưa đủ 18 tuổi",
+    "Chưa đủ 16 tuổi",
+    "Chưa đủ 15 tuổi",
+    "Chưa đủ 21 tuổi"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 143.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 143 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người từ đủ 13 tuổi đến chưa đủ 15 tuổi được làm công việc gì?",
+   "options": [
+    "Chỉ công việc nhẹ theo danh mục do Bộ trưởng ban hành",
+    "Mọi công việc trừ công việc nặng nhọc",
+    "Không được làm việc",
+    "Chỉ công việc nghệ thuật"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 143.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 143 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Người từ đủ 13 đến chưa đủ 15 tuổi",
+   "right": "Người từ đủ 15 đến chưa đủ 18 tuổi",
+   "cases": [
+    {
+     "text": "Chỉ làm công việc nhẹ theo danh mục",
+     "answer": "left"
+    },
+    {
+     "text": "Làm việc, trừ công việc và nơi làm việc bị cấm tại Điều 147",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 143."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Lao động chưa thành niên là người lao động chưa đủ {{18}} tuổi.",
+   "bank_extra": [
+    "16",
+    "15"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người từ đủ {{13}} tuổi đến chưa đủ {{15}} tuổi chỉ được làm công việc nhẹ theo danh mục.",
+   "bank_extra": [
+    "12",
+    "16"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Khi sử dụng người chưa đủ 15 tuổi, có thể giao kết hợp đồng lao động bằng lời nói.",
+   "answer": false,
+   "explain": "Sai. Điểm a khoản 1 Điều 145: phải bằng văn bản với người chưa đủ 15 tuổi và người đại diện theo pháp luật."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Phân loại lao động chưa thành niên và các hạn chế tương ứng.",
+   "model": "Lao động chưa đủ 18 tuổi (Điều 143): 15–18 tuổi không làm công việc, nơi làm việc bị cấm (Điều 147); 13–15 tuổi chỉ công việc nhẹ theo danh mục; dưới 13 tuổi chỉ công việc theo khoản 3 Điều 145; dưới 15 tuổi cần HĐLĐ văn bản ký với người đại diện, khám sức khỏe định kỳ.",
+   "keywords": [
+    "18 tuổi",
+    "công việc nhẹ",
+    "13 tuổi",
+    "văn bản"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,107 @@
+{
+  "id": "canh-tranh",
+  "title": "Luật Cạnh tranh",
+  "short": "Cạnh tranh",
+  "chapters": [
+    {
+      "id": "v1",
+      "title": "Vấn đề 1. Những vấn đề lí luận về cạnh tranh và pháp luật cạnh tranh",
+      "lessons": [
+        {
+          "id": "ct1",
+          "title": "Những vấn đề lí luận về cạnh tranh và pháp luật cạnh tranh",
+          "concepts": [
+            "pham-vi-dieu-chinh-luat-canh-tranh",
+            "hanh-vi-cam-co-quan-nha-nuoc"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v2",
+      "title": "Vấn đề 2. Căn cứ xác định hành vi hạn chế cạnh tranh",
+      "lessons": [
+        {
+          "id": "ct2",
+          "title": "Căn cứ xác định hành vi hạn chế cạnh tranh",
+          "concepts": [
+            "hanh-vi-han-che-canh-tranh",
+            "thi-truong-lien-quan",
+            "thi-phan"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v3",
+      "title": "Vấn đề 3. Pháp luật về kiểm soát thỏa thuận hạn chế cạnh tranh",
+      "lessons": [
+        {
+          "id": "ct3",
+          "title": "Pháp luật về kiểm soát thỏa thuận hạn chế cạnh tranh",
+          "concepts": [
+            "thoa-thuan-han-che-canh-tranh",
+            "thoa-thuan-han-che-canh-tranh-bi-cam",
+            "mien-tru-thoa-thuan"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v4",
+      "title": "Vấn đề 4. Pháp luật về kiểm soát lạm dụng vị trí thống lĩnh thị trường, vị trí độc quyền",
+      "lessons": [
+        {
+          "id": "ct4",
+          "title": "Pháp luật về kiểm soát lạm dụng vị trí thống lĩnh thị trường, vị trí độc quyền",
+          "concepts": [
+            "vi-tri-thong-linh-thi-truong",
+            "lam-dung-vi-tri-thong-linh"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v5",
+      "title": "Vấn đề 5. Pháp luật về kiểm soát tập trung kinh tế",
+      "lessons": [
+        {
+          "id": "ct5",
+          "title": "Pháp luật về kiểm soát tập trung kinh tế",
+          "concepts": [
+            "tap-trung-kinh-te",
+            "thong-bao-tap-trung-kinh-te"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v6",
+      "title": "Vấn đề 6. Pháp luật về cạnh tranh không lành mạnh",
+      "lessons": [
+        {
+          "id": "ct6",
+          "title": "Pháp luật về cạnh tranh không lành mạnh",
+          "concepts": [
+            "canh-tranh-khong-lanh-manh",
+            "hanh-vi-canh-tranh-khong-lanh-manh-bi-cam"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v7",
+      "title": "Vấn đề 7. Tố tụng cạnh tranh, thủ tục miễn trừ và xử lí vi phạm pháp luật cạnh tranh",
+      "lessons": [
+        {
+          "id": "ct7",
+          "title": "Tố tụng cạnh tranh, thủ tục miễn trừ và xử lí vi phạm pháp luật cạnh tranh",
+          "concepts": [
+            "uy-ban-canh-tranh-quoc-gia",
+            "xu-ly-vi-pham-canh-tranh"
+          ]
+        }
+      ]
+    }
+  ]
+}

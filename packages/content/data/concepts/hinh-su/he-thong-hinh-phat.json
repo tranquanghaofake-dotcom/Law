@@ -1,0 +1,120 @@
+{
+ "id": "he-thong-hinh-phat",
+ "subject": "hinh-su",
+ "chapter": "v12",
+ "term": "Hệ thống hình phạt đối với người phạm tội",
+ "definition": "Hình phạt chính bao gồm: a) Cảnh cáo; b) Phạt tiền; c) Cải tạo không giam giữ; d) Trục xuất; đ) Tù có thời hạn; e) Tù chung thân; g) Tử hình. (…) Đối với mỗi tội phạm, người phạm tội chỉ bị áp dụng một hình phạt chính và có thể bị áp dụng một hoặc một số hình phạt bổ sung.",
+ "plain": "7 HÌNH PHẠT CHÍNH (từ nhẹ đến nặng): cảnh cáo, phạt tiền, cải tạo không giam giữ, trục xuất, tù có thời hạn, tù chung thân, tử hình. 7 HÌNH PHẠT BỔ SUNG: cấm đảm nhiệm chức vụ, cấm hành nghề hoặc làm công việc nhất định; cấm cư trú; quản chế; tước một số quyền công dân; tịch thu tài sản; phạt tiền và trục xuất (khi không là hình phạt chính). Mỗi tội: MỘT hình phạt chính, có thể MỘT HOẶC MỘT SỐ hình phạt bổ sung. PHẠT TIỀN và TRỤC XUẤT vừa có thể là hình phạt chính, vừa là bổ sung.",
+ "example": "Người phạm tội tham ô có thể bị tù có thời hạn (chính) kèm cấm đảm nhiệm chức vụ (bổ sung); không thể vừa bị tù có thời hạn vừa bị cảnh cáo cho cùng một tội.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 3 Điều 32 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hinh-phat",
+  "tu-hinh",
+  "bien-phap-tu-phap"
+ ],
+ "keywords": [
+  "7 hình phạt chính",
+  "hình phạt bổ sung",
+  "một hình phạt chính",
+  "phạt tiền, trục xuất"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hình phạt nào vừa có thể là hình phạt chính, vừa có thể là hình phạt bổ sung?",
+   "options": [
+    "Phạt tiền và trục xuất",
+    "Cảnh cáo và tử hình",
+    "Quản chế và cấm cư trú",
+    "Tù chung thân"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1, khoản 2 Điều 32.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 32 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đối với mỗi tội phạm, người phạm tội bị áp dụng bao nhiêu hình phạt chính?",
+   "options": [
+    "Chỉ một hình phạt chính",
+    "Tối đa hai hình phạt chính",
+    "Không giới hạn",
+    "Không bắt buộc có hình phạt chính"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 32.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 32 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hình phạt chính",
+   "right": "Hình phạt bổ sung (chỉ)",
+   "cases": [
+    {
+     "text": "Cải tạo không giam giữ",
+     "answer": "left"
+    },
+    {
+     "text": "Quản chế",
+     "answer": "right"
+    },
+    {
+     "text": "Tịch thu tài sản",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 32."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đối với mỗi tội phạm, người phạm tội chỉ bị áp dụng {{một}} hình phạt chính và có thể bị áp dụng một hoặc một số hình phạt {{bổ sung}}.",
+   "bank_extra": [
+    "hai",
+    "thay thế"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hình phạt chính bao gồm cảnh cáo, phạt tiền, cải tạo không giam giữ, trục xuất, tù có thời hạn, tù {{chung thân}}, tử hình.",
+   "bank_extra": [
+    "treo",
+    "quản chế"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Án treo là một hình phạt chính trong hệ thống hình phạt.",
+   "answer": false,
+   "explain": "Sai. Án treo là biện pháp miễn chấp hành hình phạt tù có điều kiện (Điều 65), không có trong danh mục Điều 32."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày hệ thống hình phạt đối với người phạm tội.",
+   "model": "Hình phạt chính: cảnh cáo, phạt tiền, cải tạo không giam giữ, trục xuất, tù có thời hạn, tù chung thân, tử hình; hình phạt bổ sung: cấm đảm nhiệm chức vụ, hành nghề; cấm cư trú; quản chế; tước một số quyền công dân; tịch thu tài sản; phạt tiền, trục xuất khi không là hình phạt chính; mỗi tội một hình phạt chính (Điều 32).",
+   "keywords": [
+    "hình phạt chính",
+    "bổ sung",
+    "một hình phạt chính",
+    "tịch thu tài sản"
+   ]
+  }
+ ]
+}

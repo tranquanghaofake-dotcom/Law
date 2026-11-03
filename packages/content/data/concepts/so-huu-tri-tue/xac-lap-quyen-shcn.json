@@ -1,0 +1,121 @@
+{
+ "id": "xac-lap-quyen-shcn",
+ "subject": "so-huu-tri-tue",
+ "chapter": "v10",
+ "term": "Căn cứ xác lập quyền sở hữu công nghiệp",
+ "definition": "Quyền sở hữu công nghiệp đối với sáng chế, kiểu dáng công nghiệp, thiết kế bố trí, nhãn hiệu được xác lập trên cơ sở quyết định cấp văn bằng bảo hộ của cơ quan nhà nước có thẩm quyền theo thủ tục đăng ký quy định tại Luật này hoặc công nhận đăng ký quốc tế theo điều ước quốc tế mà Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên. (…) Quyền sở hữu công nghiệp đối với tên thương mại được xác lập trên cơ sở sử dụng hợp pháp tên thương mại đó; c) Quyền sở hữu công nghiệp đối với bí mật kinh doanh được xác lập trên cơ sở có được một cách hợp pháp bí mật kinh doanh và thực hiện việc bảo mật bí mật kinh doanh đó;",
+ "plain": "Ba cơ chế: (1) ĐĂNG KÝ – CẤP VĂN BẰNG: sáng chế, kiểu dáng, thiết kế bố trí, nhãn hiệu thông thường, chỉ dẫn địa lý; (2) SỬ DỤNG: nhãn hiệu nổi tiếng, tên thương mại; (3) CÓ ĐƯỢC HỢP PHÁP + BẢO MẬT: bí mật kinh doanh; quyền chống cạnh tranh không lành mạnh xác lập trên cơ sở hoạt động cạnh tranh trong kinh doanh. Nguyên tắc NỘP ĐƠN ĐẦU TIÊN (first-to-file, Điều 90): nhiều đơn cùng đối tượng thì cấp cho đơn có ngày ưu tiên/ngày nộp sớm nhất.",
+ "example": "Hai công ty cùng thiết kế logo giống nhau; công ty B nộp đơn trước 1 ngày: văn bằng nhãn hiệu thường cấp cho B (nguyên tắc nộp đơn đầu tiên), dù A dùng trước nhưng chưa nổi tiếng.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điểm a, b, c khoản 3 Điều 6 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "can-cu-phat-sinh-quyen-shtt",
+  "hieu-luc-van-bang-bao-ho",
+  "nhan-hieu-noi-tieng"
+ ],
+ "keywords": [
+  "cấp văn bằng bảo hộ",
+  "sử dụng hợp pháp",
+  "có được hợp pháp và bảo mật",
+  "nộp đơn đầu tiên"
+ ],
+ "note": "Điều 6 có nội dung được sửa đổi, bổ sung bởi Luật 42/2019/QH14 (hiệu lực 01/11/2019); Luật 131/2025/QH15 (hiệu lực 01/4/2026) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quyền đối với bí mật kinh doanh được xác lập trên cơ sở nào?",
+   "options": [
+    "Có được một cách hợp pháp và thực hiện việc bảo mật",
+    "Cấp văn bằng bảo hộ",
+    "Đăng ký tại Bộ Công Thương",
+    "Sử dụng công khai"
+   ],
+   "answer": 0,
+   "explain": "Điểm c khoản 3 Điều 6.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 6 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quyền đối với kiểu dáng công nghiệp được xác lập trên cơ sở nào?",
+   "options": [
+    "Quyết định cấp văn bằng bảo hộ theo thủ tục đăng ký (hoặc công nhận đăng ký quốc tế)",
+    "Tự động khi sáng tạo",
+    "Sử dụng hợp pháp",
+    "Bảo mật thông tin"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 3 Điều 6.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 6 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Phải đăng ký, cấp văn bằng",
+   "right": "Không cần đăng ký",
+   "cases": [
+    {
+     "text": "Sáng chế",
+     "answer": "left"
+    },
+    {
+     "text": "Tên thương mại",
+     "answer": "right"
+    },
+    {
+     "text": "Bí mật kinh doanh",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 3 Điều 6."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quyền đối với sáng chế, kiểu dáng công nghiệp, thiết kế bố trí, nhãn hiệu được xác lập trên cơ sở quyết định cấp {{văn bằng bảo hộ}}; tên thương mại xác lập trên cơ sở {{sử dụng hợp pháp}}.",
+   "bank_extra": [
+    "giấy phép kinh doanh",
+    "đăng ký doanh nghiệp"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quyền đối với bí mật kinh doanh xác lập trên cơ sở có được một cách hợp pháp và thực hiện việc {{bảo mật}}.",
+   "bank_extra": [
+    "công bố",
+    "đăng ký"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quyền sở hữu công nghiệp đối với sáng chế phát sinh tự động như quyền tác giả.",
+   "answer": false,
+   "explain": "Sai. Điểm a khoản 3 Điều 6: xác lập trên cơ sở quyết định cấp văn bằng bảo hộ."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày căn cứ xác lập quyền sở hữu công nghiệp.",
+   "model": "Sáng chế, kiểu dáng, thiết kế bố trí, nhãn hiệu: cấp văn bằng theo đăng ký hoặc công nhận đăng ký quốc tế; nhãn hiệu nổi tiếng: sử dụng; chỉ dẫn địa lý: cấp văn bằng; tên thương mại: sử dụng hợp pháp; bí mật kinh doanh: có được hợp pháp và bảo mật; chống cạnh tranh không lành mạnh: hoạt động cạnh tranh (khoản 3 Điều 6).",
+   "keywords": [
+    "văn bằng",
+    "sử dụng",
+    "bảo mật",
+    "đăng ký quốc tế"
+   ]
+  }
+ ]
+}

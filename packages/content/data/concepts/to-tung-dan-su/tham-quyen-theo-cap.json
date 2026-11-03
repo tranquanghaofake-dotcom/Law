@@ -1,0 +1,121 @@
+{
+ "id": "tham-quyen-theo-cap",
+ "subject": "to-tung-dan-su",
+ "chapter": "v2",
+ "term": "Thẩm quyền theo cấp: Tòa án nhân dân khu vực",
+ "definition": "Tòa án nhân dân khu vực có thẩm quyền giải quyết theo thủ tục sơ thẩm những tranh chấp quy định tại các điều 26, 28, 30 và 32 của Bộ luật này; giải quyết những yêu cầu quy định tại các điều 27, 29, 31 và 33 của Bộ luật này, trừ yêu cầu hủy phán quyết trọng tài, đăng ký phán quyết trọng tài vụ việc thuộc thẩm quyền giải quyết của một số Tòa án nhân dân cấp tỉnh theo quy định tại khoản 2 Điều 37 của Bộ luật này.",
+ "plain": "Từ 01/7/2025 (Luật 85/2025/QH15, Luật Tổ chức TAND sửa đổi): bỏ Tòa án cấp huyện và Tòa án cấp cao; thành lập TÒA ÁN NHÂN DÂN KHU VỰC. TAND KHU VỰC: SƠ THẨM hầu hết vụ việc dân sự, HNGĐ, kinh doanh thương mại, lao động (kể cả có yếu tố nước ngoài). TAND CẤP TỈNH: PHÚC THẨM bản án của TAND khu vực; giám đốc thẩm, tái thẩm; hủy, đăng ký phán quyết trọng tài (Điều 37). Đây là thay đổi lớn so với giáo trình cũ (TAND huyện / tỉnh / cấp cao).",
+ "example": "Tranh chấp hợp đồng mua bán giữa hai cá nhân ở Hà Nội năm 2026: TAND khu vực có thẩm quyền sơ thẩm; kháng cáo thì TAND thành phố Hà Nội xét xử phúc thẩm.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 35 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thu-tuc-To-tung/Van-ban-hop-nhat-21-VBHN-VPQH-2026-Bo-luat-To-dung-dan-su-696578.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tham-quyen-theo-vu-viec",
+  "tham-quyen-theo-lanh-tho",
+  "khang-cao-phuc-tham"
+ ],
+ "keywords": [
+  "Tòa án nhân dân khu vực",
+  "sơ thẩm",
+  "Tòa án nhân dân cấp tỉnh phúc thẩm",
+  "từ 01/7/2025"
+ ],
+ "note": "Luật 85/2025/QH15 (hiệu lực 01/7/2025) sửa đổi các điều về thẩm quyền theo mô hình Tòa án nhân dân khu vực; câu chữ trên theo VBHN 21/VBHN-VPQH 2026.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Từ 01/7/2025, Tòa án nào có thẩm quyền sơ thẩm phần lớn tranh chấp dân sự?",
+   "options": [
+    "Tòa án nhân dân khu vực",
+    "Tòa án nhân dân cấp huyện",
+    "Tòa án nhân dân cấp cao",
+    "Tòa án nhân dân tối cao"
+   ],
+   "answer": 0,
+   "explain": "Điều 35 (sửa đổi bởi Luật 85/2025/QH15).",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 35 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Tòa án nhân dân cấp tỉnh có thẩm quyền gì đối với bản án sơ thẩm của TAND khu vực bị kháng cáo?",
+   "options": [
+    "Xét xử phúc thẩm",
+    "Xét xử sơ thẩm lại",
+    "Không có thẩm quyền",
+    "Chỉ giám đốc thẩm"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 37.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 37 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "TAND khu vực",
+   "right": "TAND cấp tỉnh",
+   "cases": [
+    {
+     "text": "Sơ thẩm tranh chấp hợp đồng dân sự",
+     "answer": "left"
+    },
+    {
+     "text": "Phúc thẩm bản án bị kháng cáo",
+     "answer": "right"
+    },
+    {
+     "text": "Hủy phán quyết trọng tài",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 35, 37."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tòa án nhân dân {{khu vực}} có thẩm quyền giải quyết theo thủ tục {{sơ thẩm}} những tranh chấp quy định tại các điều 26, 28, 30 và 32.",
+   "bank_extra": [
+    "huyện",
+    "phúc thẩm"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tòa án nhân dân cấp tỉnh có thẩm quyền giải quyết yêu cầu hủy phán quyết {{trọng tài}}.",
+   "bank_extra": [
+    "hành chính",
+    "thuế"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Năm 2026, tranh chấp dân sự sơ thẩm vẫn do Tòa án nhân dân cấp huyện giải quyết.",
+   "answer": false,
+   "explain": "Sai. Từ 01/7/2025 Tòa án nhân dân khu vực thay thế (Điều 35 sửa đổi bởi Luật 85/2025/QH15)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày thẩm quyền của Tòa án nhân dân khu vực và Tòa án nhân dân cấp tỉnh theo BLTTDS hiện hành.",
+   "model": "TAND khu vực sơ thẩm tranh chấp tại Điều 26, 28, 30, 32 và yêu cầu tại Điều 27, 29, 31, 33, trừ yêu cầu về phán quyết trọng tài (Điều 35); TAND cấp tỉnh phúc thẩm, giám đốc thẩm, tái thẩm bản án của TAND khu vực và giải quyết hủy, đăng ký phán quyết trọng tài (Điều 37).",
+   "keywords": [
+    "khu vực",
+    "sơ thẩm",
+    "cấp tỉnh",
+    "phúc thẩm"
+   ]
+  }
+ ]
+}

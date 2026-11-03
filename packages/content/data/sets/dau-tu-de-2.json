@@ -1,0 +1,139 @@
+{
+  "id": "dau-tu-de-2",
+  "group": "dau-tu",
+  "title": "Đề kiểm tra Luật Đầu tư – Hình thức đầu tư, khu kinh tế, đầu tư ra nước ngoài",
+  "subtitle": "10 câu theo đề cương HLU, vấn đề 4–7",
+  "updated": "2026-11-01",
+  "questions": [
+    {
+      "q": "Tổ chức kinh tế được thành lập theo pháp luật nào?",
+      "options": [
+        "Pháp luật Việt Nam",
+        "Pháp luật nước ngoài",
+        "Tập quán quốc tế",
+        "Điều lệ tự đặt"
+      ],
+      "answer": 0,
+      "explain": "Khoản 21 Điều 3.",
+      "basis": "Khoản 21 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Dau-tu/Van-ban-hop-nhat-142-2026-VBHN-LQ-VPQH-Luat-Dau-tu-726675.aspx"
+    },
+    {
+      "q": "Tổ chức kinh tế có vốn đầu tư nước ngoài là gì?",
+      "options": [
+        "Tổ chức kinh tế có nhà đầu tư nước ngoài là thành viên hoặc cổ đông",
+        "Tổ chức có trên 50% vốn nước ngoài",
+        "Tổ chức thành lập ở nước ngoài",
+        "Tổ chức vay vốn nước ngoài"
+      ],
+      "answer": 0,
+      "explain": "Khoản 22 Điều 3.",
+      "basis": "Khoản 22 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Dau-tu/Van-ban-hop-nhat-142-2026-VBHN-LQ-VPQH-Luat-Dau-tu-726675.aspx"
+    },
+    {
+      "q": "Tổ chức kinh tế phải thực hiện thủ tục như nhà đầu tư nước ngoài khi nhà đầu tư nước ngoài nắm bao nhiêu vốn điều lệ?",
+      "options": [
+        "Trên 50%",
+        "Trên 10%",
+        "Trên 25%",
+        "Bất kỳ tỷ lệ nào"
+      ],
+      "answer": 0,
+      "explain": "Điểm a khoản 1 Điều 20.",
+      "basis": "Khoản 1 Điều 20 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Dau-tu/Van-ban-hop-nhat-142-2026-VBHN-LQ-VPQH-Luat-Dau-tu-726675.aspx"
+    },
+    {
+      "q": "Hình thức nào thuộc Điều 18?",
+      "options": [
+        "Đầu tư góp vốn, mua cổ phần, mua phần vốn góp",
+        "Mua hàng tiêu dùng",
+        "Gửi tiết kiệm",
+        "Mua bảo hiểm"
+      ],
+      "answer": 0,
+      "explain": "Điều 18.",
+      "basis": "Điều 18 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Dau-tu/Van-ban-hop-nhat-142-2026-VBHN-LQ-VPQH-Luat-Dau-tu-726675.aspx"
+    },
+    {
+      "q": "Vốn đầu tư gồm gì?",
+      "options": [
+        "Tiền, tài sản khác theo pháp luật dân sự và điều ước quốc tế",
+        "Chỉ tiền",
+        "Chỉ ngoại tệ",
+        "Chỉ vốn vay"
+      ],
+      "answer": 0,
+      "explain": "Khoản 23 Điều 3.",
+      "basis": "Khoản 23 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Dau-tu/Van-ban-hop-nhat-142-2026-VBHN-LQ-VPQH-Luat-Dau-tu-726675.aspx"
+    },
+    {
+      "q": "Hợp đồng BCC có đặc điểm gì?",
+      "options": [
+        "Không thành lập tổ chức kinh tế",
+        "Phải lập công ty liên doanh",
+        "Ký giữa Nhà nước và nhà đầu tư",
+        "Phải có vốn nhà nước"
+      ],
+      "answer": 0,
+      "explain": "Khoản 14 Điều 3.",
+      "basis": "Khoản 14 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Dau-tu/Van-ban-hop-nhat-142-2026-VBHN-LQ-VPQH-Luat-Dau-tu-726675.aspx"
+    },
+    {
+      "q": "Ai quyết định chức năng của ban điều phối hợp đồng BCC?",
+      "options": [
+        "Các bên thỏa thuận",
+        "Bộ Tài chính",
+        "Ủy ban nhân dân cấp tỉnh",
+        "Tòa án"
+      ],
+      "answer": 0,
+      "explain": "Khoản 3 Điều 22.",
+      "basis": "Khoản 3 Điều 22 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Dau-tu/Van-ban-hop-nhat-142-2026-VBHN-LQ-VPQH-Luat-Dau-tu-726675.aspx"
+    },
+    {
+      "q": "Khu vực có ranh giới xác định, gồm nhiều khu chức năng là gì?",
+      "options": [
+        "Khu kinh tế",
+        "Khu công nghiệp",
+        "Khu chế xuất",
+        "Cụm công nghiệp"
+      ],
+      "answer": 0,
+      "explain": "Khoản 17 Điều 3.",
+      "basis": "Khoản 17 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Dau-tu/Van-ban-hop-nhat-142-2026-VBHN-LQ-VPQH-Luat-Dau-tu-726675.aspx"
+    },
+    {
+      "q": "Khu chế xuất là gì?",
+      "options": [
+        "Khu công nghiệp chuyên sản xuất hàng xuất khẩu",
+        "Khu kinh tế ven biển",
+        "Khu du lịch",
+        "Khu đô thị"
+      ],
+      "answer": 0,
+      "explain": "Khoản 15 Điều 3.",
+      "basis": "Khoản 15 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Dau-tu/Van-ban-hop-nhat-142-2026-VBHN-LQ-VPQH-Luat-Dau-tu-726675.aspx"
+    },
+    {
+      "q": "Nhà đầu tư ra nước ngoài phải tuân thủ pháp luật nào?",
+      "options": [
+        "Luật Việt Nam, pháp luật nước tiếp nhận và điều ước quốc tế liên quan",
+        "Chỉ pháp luật Việt Nam",
+        "Chỉ pháp luật nước tiếp nhận",
+        "Không pháp luật nào"
+      ],
+      "answer": 0,
+      "explain": "Khoản 2 Điều 38.",
+      "basis": "Khoản 2 Điều 38 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)",
+      "url": "https://thuvienphapluat.vn/van-ban/Dau-tu/Van-ban-hop-nhat-142-2026-VBHN-LQ-VPQH-Luat-Dau-tu-726675.aspx"
+    }
+  ]
+}

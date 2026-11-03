@@ -1,0 +1,117 @@
+{
+ "id": "hieu-luc-van-bang-bao-ho",
+ "subject": "so-huu-tri-tue",
+ "chapter": "v10",
+ "term": "Hiệu lực của văn bằng bảo hộ",
+ "definition": "Văn bằng bảo hộ có hiệu lực trên toàn lãnh thổ Việt Nam. Bằng độc quyền sáng chế có hiệu lực từ ngày cấp và kéo dài đến hết hai mươi năm kể từ ngày nộp đơn. Bằng độc quyền giải pháp hữu ích có hiệu lực từ ngày cấp và kéo dài đến hết mười năm kể từ ngày nộp đơn. Bằng độc quyền kiểu dáng công nghiệp có hiệu lực từ ngày cấp và kéo dài đến hết năm năm kể từ ngày nộp đơn, có thể gia hạn hai lần liên tiếp, mỗi lần năm năm.",
+ "plain": "Hiệu lực TOÀN LÃNH THỔ VIỆT NAM (nguyên tắc lãnh thổ). Bắt đầu TỪ NGÀY CẤP, thời hạn tính TỪ NGÀY NỘP ĐƠN. Sáng chế 20 NĂM (không gia hạn); giải pháp hữu ích 10 NĂM; kiểu dáng 5 NĂM, gia hạn 2 lần × 5 năm (tối đa 15 năm); nhãn hiệu 10 NĂM, gia hạn NHIỀU LẦN × 10 năm; chỉ dẫn địa lý VÔ THỜI HẠN; thiết kế bố trí tối đa 10–15 năm (khoản 5).",
+ "example": "Bằng độc quyền sáng chế nộp đơn 01/3/2020, cấp 01/3/2024: hiệu lực từ 01/3/2024 đến hết 01/3/2040.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1–4 Điều 93 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "sang-che",
+  "xac-lap-quyen-shcn",
+  "nhan-hieu"
+ ],
+ "keywords": [
+  "toàn lãnh thổ Việt Nam",
+  "sáng chế 20 năm",
+  "giải pháp hữu ích 10 năm",
+  "kiểu dáng 5 năm gia hạn 2 lần"
+ ],
+ "note": "Điều 93 có nội dung được sửa đổi, bổ sung bởi Luật 07/2022/QH15 (hiệu lực 01/01/2023) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Bằng độc quyền sáng chế có hiệu lực bao lâu?",
+   "options": [
+    "Từ ngày cấp đến hết 20 năm kể từ ngày nộp đơn",
+    "10 năm từ ngày cấp",
+    "Vô thời hạn",
+    "5 năm, gia hạn nhiều lần"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 93.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 93 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Bằng độc quyền kiểu dáng công nghiệp có thể gia hạn bao nhiêu lần?",
+   "options": [
+    "Hai lần liên tiếp, mỗi lần năm năm",
+    "Không được gia hạn",
+    "Nhiều lần, mỗi lần mười năm",
+    "Một lần mười năm"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 93.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 93 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "20 năm từ ngày nộp đơn",
+   "right": "10 năm từ ngày nộp đơn",
+   "cases": [
+    {
+     "text": "Bằng độc quyền sáng chế",
+     "answer": "left"
+    },
+    {
+     "text": "Bằng độc quyền giải pháp hữu ích",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 93."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bằng độc quyền sáng chế có hiệu lực từ ngày cấp và kéo dài đến hết {{hai mươi}} năm kể từ ngày {{nộp đơn}}.",
+   "bank_extra": [
+    "mười lăm",
+    "cấp bằng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Văn bằng bảo hộ có hiệu lực trên toàn lãnh thổ {{Việt Nam}}.",
+   "bank_extra": [
+    "ASEAN",
+    "thế giới"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Bằng độc quyền sáng chế cấp tại Việt Nam có hiệu lực ở mọi quốc gia.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 93: hiệu lực trên toàn lãnh thổ Việt Nam."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày hiệu lực của văn bằng bảo hộ sáng chế, giải pháp hữu ích, kiểu dáng công nghiệp.",
+   "model": "Văn bằng có hiệu lực trên toàn lãnh thổ Việt Nam; sáng chế đến hết 20 năm, giải pháp hữu ích 10 năm, kiểu dáng 5 năm (gia hạn 2 lần × 5 năm) kể từ ngày nộp đơn, hiệu lực từ ngày cấp (Điều 93).",
+   "keywords": [
+    "toàn lãnh thổ",
+    "20 năm",
+    "10 năm",
+    "gia hạn"
+   ]
+  }
+ ]
+}

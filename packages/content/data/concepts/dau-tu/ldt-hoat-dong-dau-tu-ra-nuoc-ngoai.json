@@ -1,0 +1,116 @@
+{
+ "id": "ldt-hoat-dong-dau-tu-ra-nuoc-ngoai",
+ "subject": "dau-tu",
+ "chapter": "v7",
+ "term": "Hoạt động đầu tư ra nước ngoài",
+ "definition": "Hoạt động đầu tư ra nước ngoài là việc nhà đầu tư chuyển vốn đầu tư từ Việt Nam ra nước ngoài, sử dụng lợi nhuận thu được từ nguồn vốn đầu tư này để thực hiện hoạt động đầu tư kinh doanh ở nước ngoài.",
+ "plain": "Hai dấu hiệu: CHUYỂN VỐN đầu tư từ Việt Nam ra nước ngoài; sử dụng LỢI NHUẬN thu được từ vốn đó để đầu tư kinh doanh ở nước ngoài. Hình thức (Điều 39): thành lập tổ chức kinh tế ở nước ngoài; hợp đồng ở nước ngoài; góp vốn, mua cổ phần để tham gia quản lý; mua bán chứng khoán, đầu tư qua quỹ; hình thức khác. Nhà đầu tư tuân thủ pháp luật Việt Nam VÀ pháp luật nước tiếp nhận, tự chịu trách nhiệm về hiệu quả (Điều 38). Cấm đầu tư ra nước ngoài các ngành, nghề tại Điều 40.",
+ "example": "Công ty T chuyển 2 triệu USD sang Lào lập công ty trồng cao su, rồi dùng lợi nhuận mở thêm nhà máy chế biến tại Lào: hoạt động đầu tư ra nước ngoài.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 13 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Dau-tu/Van-ban-hop-nhat-142-2026-VBHN-LQ-VPQH-Luat-Dau-tu-726675.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "ldt-von-dau-tu",
+  "ldt-hinh-thuc-dau-tu"
+ ],
+ "keywords": [
+  "chuyển vốn",
+  "lợi nhuận",
+  "nước tiếp nhận đầu tư",
+  "tự chịu trách nhiệm"
+ ],
+ "note": "Luật Đầu tư 143/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Đầu tư 61/2020/QH14 mà đề cương HLU 2021 còn dẫn (khoản 4 Điều 51). Luật 24/2026/QH16 sửa đổi có hiệu lực từ 01/3/2027 (riêng một phần Điều 6 từ 01/01/2027), chỉ sửa Điều 6 và Phụ lục IV, không sửa điều được trích — văn bản hợp nhất 142/2026/VBHN-LQ-VPQH.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hoạt động đầu tư ra nước ngoài là gì theo khoản 13 Điều 3?",
+   "options": [
+    "Nhà đầu tư chuyển vốn đầu tư từ Việt Nam ra nước ngoài, sử dụng lợi nhuận để đầu tư kinh doanh ở nước ngoài",
+    "Nhà đầu tư nước ngoài vào Việt Nam",
+    "Xuất khẩu hàng hóa",
+    "Du học"
+   ],
+   "answer": 0,
+   "explain": "Khoản 13 Điều 3.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 13 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hình thức nào thuộc đầu tư ra nước ngoài theo Điều 39?",
+   "options": [
+    "Góp vốn, mua cổ phần của tổ chức kinh tế ở nước ngoài để tham gia quản lý",
+    "Nhập khẩu máy móc",
+    "Gửi tiền tiết kiệm trong nước",
+    "Mua bất động sản trong nước"
+   ],
+   "answer": 0,
+   "explain": "Điểm c khoản 1 Điều 39.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 39 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hình thức đầu tư ra nước ngoài",
+   "right": "Không phải",
+   "cases": [
+    {
+     "text": "Thành lập tổ chức kinh tế theo pháp luật nước tiếp nhận đầu tư",
+     "answer": "left"
+    },
+    {
+     "text": "Bán hàng xuất khẩu theo hợp đồng mua bán quốc tế",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 39."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hoạt động đầu tư ra nước ngoài là việc nhà đầu tư chuyển {{vốn đầu tư}} từ Việt Nam ra nước ngoài, sử dụng {{lợi nhuận}} thu được từ nguồn vốn đầu tư này.",
+   "bank_extra": [
+    "hàng hóa",
+    "khoản vay"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhà đầu tư đầu tư ra nước ngoài phải tuân thủ pháp luật của nước {{tiếp nhận}} đầu tư và tự chịu trách nhiệm về {{hiệu quả}} hoạt động đầu tư ở nước ngoài.",
+   "bank_extra": [
+    "xuất xứ",
+    "lợi nhuận"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Nhà đầu tư ra nước ngoài chỉ phải tuân thủ pháp luật Việt Nam.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 38: tuân thủ cả pháp luật nước tiếp nhận đầu tư và điều ước quốc tế liên quan."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm và hình thức đầu tư ra nước ngoài.",
+   "model": "Chuyển vốn đầu tư từ Việt Nam ra nước ngoài, sử dụng lợi nhuận để đầu tư kinh doanh ở nước ngoài (khoản 13 Điều 3); hình thức: thành lập tổ chức kinh tế, hợp đồng ở nước ngoài, góp vốn mua cổ phần để tham gia quản lý, mua bán chứng khoán, hình thức khác (Điều 39).",
+   "keywords": [
+    "chuyển vốn",
+    "lợi nhuận",
+    "tổ chức kinh tế",
+    "góp vốn"
+   ]
+  }
+ ]
+}

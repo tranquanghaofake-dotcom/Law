@@ -1,0 +1,115 @@
+{
+ "id": "nguyen-tac-hop-tac-xa",
+ "subject": "thuong-mai-1",
+ "chapter": "v11",
+ "term": "Nguyên tắc tổ chức, quản lý và hoạt động của hợp tác xã",
+ "definition": "Tự nguyện tham gia và mở rộng kết nạp thành viên. Cá nhân, tổ chức tự nguyện thành lập, gia nhập, ra khỏi tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã. (…) Dân chủ, bình đẳng trong tổ chức, quản lý. (…) Thành viên chính thức của hợp tác xã, liên hiệp hợp tác xã được tham gia vào công việc tổ chức, quản lý và hoạt động của hợp tác xã, liên hiệp hợp tác xã một cách dân chủ, bình đẳng, không phụ thuộc vào phần vốn góp. Trách nhiệm tham gia hoạt động kinh tế của thành viên hợp tác xã, liên hiệp hợp tác xã. Thành viên chính thức góp vốn khi gia nhập và được cùng kiểm soát vốn, quỹ và tài sản của hợp tác xã, liên hiệp hợp tác xã; được phân phối thu nhập chủ yếu theo mức độ sử dụng sản phẩm, dịch vụ hoặc mức độ đóng góp sức lao động. Tự chủ và tự chịu trách nhiệm.",
+ "plain": "Bảy nguyên tắc (Điều 8): tự nguyện, mở rộng kết nạp; DÂN CHỦ, BÌNH ĐẲNG không phụ thuộc vốn góp; trách nhiệm tham gia hoạt động kinh tế; tự chủ, tự chịu trách nhiệm; giáo dục, đào tạo, thông tin; hợp tác, liên kết; quan tâm phát triển cộng đồng. Điểm khác căn bản với công ty: phân phối thu nhập CHỦ YẾU theo MỨC ĐỘ SỬ DỤNG sản phẩm, dịch vụ hoặc sức lao động, không theo tỷ lệ vốn.",
+ "example": "Thành viên góp nhiều vốn nhất của hợp tác xã đòi chia lãi theo tỷ lệ vốn góp như cổ đông: trái nguyên tắc vì thu nhập chủ yếu phân phối theo mức độ sử dụng dịch vụ của HTX.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, 2, 3, 4 Điều 8 Luật Hợp tác xã 2023 (VBHN 101/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-101-VBHN-VPQH-2026-Luat-Hop-tac-xa-703396.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "hop-tac-xa",
+  "von-gop-bieu-quyet-htx"
+ ],
+ "keywords": [
+  "tự nguyện",
+  "dân chủ, bình đẳng",
+  "không phụ thuộc vào phần vốn góp",
+  "theo mức độ sử dụng sản phẩm, dịch vụ"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thu nhập của hợp tác xã được phân phối cho thành viên chính thức chủ yếu theo tiêu chí nào?",
+   "options": [
+    "Mức độ sử dụng sản phẩm, dịch vụ hoặc mức độ đóng góp sức lao động",
+    "Tỷ lệ vốn góp",
+    "Chức vụ trong hợp tác xã",
+    "Thâm niên của thành viên"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 8.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 8 Luật Hợp tác xã 2023 (VBHN 101/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quyền tham gia quản lý hợp tác xã của thành viên chính thức phụ thuộc vào yếu tố nào?",
+   "options": [
+    "Không phụ thuộc vào phần vốn góp",
+    "Tỷ lệ vốn góp",
+    "Số năm là thành viên",
+    "Quyết định của Giám đốc"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 8.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 8 Luật Hợp tác xã 2023 (VBHN 101/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hợp tác xã",
+   "right": "Công ty cổ phần",
+   "cases": [
+    {
+     "text": "Thành viên tham gia quản lý dân chủ, bình đẳng, không phụ thuộc vốn góp",
+     "answer": "left"
+    },
+    {
+     "text": "Quyền biểu quyết tương ứng số cổ phần sở hữu",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 8 Luật HTX; Luật Doanh nghiệp."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Cá nhân, tổ chức {{tự nguyện}} thành lập, gia nhập, ra khỏi tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã.",
+   "bank_extra": [
+    "bắt buộc",
+    "được chỉ định"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thành viên chính thức được phân phối thu nhập chủ yếu theo mức độ {{sử dụng sản phẩm, dịch vụ}} hoặc mức độ đóng góp sức lao động.",
+   "bank_extra": [
+    "vốn góp",
+    "chức vụ"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Thành viên góp nhiều vốn hơn thì có quyền quản lý hợp tác xã lớn hơn.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 8: dân chủ, bình đẳng, không phụ thuộc vào phần vốn góp."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các nguyên tắc chủ yếu về tổ chức, hoạt động của hợp tác xã.",
+   "model": "Tự nguyện tham gia, mở rộng kết nạp; dân chủ, bình đẳng không phụ thuộc vốn góp; trách nhiệm tham gia hoạt động kinh tế, phân phối thu nhập chủ yếu theo mức độ sử dụng dịch vụ hoặc sức lao động; tự chủ, tự chịu trách nhiệm (Điều 8).",
+   "keywords": [
+    "tự nguyện",
+    "dân chủ",
+    "vốn góp",
+    "tự chủ"
+   ]
+  }
+ ]
+}

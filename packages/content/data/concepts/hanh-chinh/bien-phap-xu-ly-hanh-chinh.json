@@ -1,0 +1,115 @@
+{
+ "id": "bien-phap-xu-ly-hanh-chinh",
+ "subject": "hanh-chinh",
+ "chapter": "v14",
+ "term": "Biện pháp xử lý hành chính",
+ "definition": "Biện pháp xử lý hành chính là biện pháp được áp dụng đối với cá nhân vi phạm pháp luật về an ninh, trật tự, an toàn xã hội mà không phải là tội phạm, bao gồm biện pháp giáo dục tại xã, phường, đặc khu; đưa vào trường giáo dưỡng; đưa vào cơ sở giáo dục bắt buộc và đưa đi cai nghiện bắt buộc.",
+ "plain": "Bốn biện pháp chỉ áp dụng với CÁ NHÂN vi phạm AN NINH, TRẬT TỰ, AN TOÀN XÃ HỘI (không phải tội phạm): GIÁO DỤC TẠI XÃ, PHƯỜNG, ĐẶC KHU (3–6 tháng, tại nơi cư trú — Điều 89); ĐƯA VÀO TRƯỜNG GIÁO DƯỠNG (người chưa thành niên); ĐƯA VÀO CƠ SỞ GIÁO DỤC BẮT BUỘC (từ đủ 18 tuổi); ĐƯA ĐI CAI NGHIỆN BẮT BUỘC (theo Luật Phòng, chống ma túy). Từ 2025 đổi \"xã, phường, thị trấn\" thành \"xã, phường, đặc khu\" theo mô hình chính quyền hai cấp. Biện pháp đưa vào trường giáo dưỡng, cơ sở giáo dục bắt buộc, cai nghiện bắt buộc do TÒA ÁN nhân dân xem xét, quyết định.",
+ "example": "Người 15 tuổi có hành vi có dấu hiệu tội phạm nghiêm trọng do cố ý nhưng chưa đủ tuổi chịu TNHS: có thể bị áp dụng biện pháp giáo dục tại xã, phường, đặc khu (khoản 2 Điều 90).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 3 Điều 2 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Vi-pham-hanh-chinh/Van-ban-hop-nhat-90-VBHN-VPQH-2026-Luat-Xu-ly-vi-pham-hanh-chinh-699548.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "vi-pham-hanh-chinh",
+  "xu-phat-vi-pham-hanh-chinh"
+ ],
+ "keywords": [
+  "vi phạm an ninh, trật tự, an toàn xã hội",
+  "giáo dục tại xã, phường, đặc khu",
+  "trường giáo dưỡng, cơ sở giáo dục bắt buộc",
+  "cai nghiện bắt buộc"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Biện pháp xử lý hành chính áp dụng đối với ai?",
+   "options": [
+    "Cá nhân vi phạm pháp luật về an ninh, trật tự, an toàn xã hội mà không phải là tội phạm",
+    "Mọi tổ chức vi phạm",
+    "Doanh nghiệp vi phạm thuế",
+    "Cán bộ vi phạm kỷ luật"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 2.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 2 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Biện pháp nào KHÔNG phải biện pháp xử lý hành chính?",
+   "options": [
+    "Phạt tiền",
+    "Giáo dục tại xã, phường, đặc khu",
+    "Đưa vào trường giáo dưỡng",
+    "Đưa đi cai nghiện bắt buộc"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 2; phạt tiền là hình thức xử phạt.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 2 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Biện pháp xử lý hành chính",
+   "right": "Hình thức xử phạt",
+   "cases": [
+    {
+     "text": "Đưa vào cơ sở giáo dục bắt buộc",
+     "answer": "left"
+    },
+    {
+     "text": "Cảnh cáo",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 2, 21."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Biện pháp xử lý hành chính bao gồm biện pháp giáo dục tại xã, phường, đặc khu; đưa vào {{trường giáo dưỡng}}; đưa vào cơ sở giáo dục bắt buộc và đưa đi {{cai nghiện bắt buộc}}.",
+   "bank_extra": [
+    "trại giam",
+    "tạm giữ"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Biện pháp xử lý hành chính áp dụng đối với cá nhân vi phạm pháp luật về an ninh, trật tự, {{an toàn xã hội}}.",
+   "bank_extra": [
+    "thương mại",
+    "thuế"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Biện pháp xử lý hành chính có thể áp dụng cho tổ chức.",
+   "answer": false,
+   "explain": "Sai. Khoản 3 Điều 2: chỉ áp dụng với cá nhân."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm và các loại biện pháp xử lý hành chính.",
+   "model": "Là biện pháp áp dụng với cá nhân vi phạm pháp luật về an ninh, trật tự, an toàn xã hội mà không phải tội phạm; gồm giáo dục tại xã, phường, đặc khu; đưa vào trường giáo dưỡng; đưa vào cơ sở giáo dục bắt buộc; đưa đi cai nghiện bắt buộc (khoản 3 Điều 2).",
+   "keywords": [
+    "cá nhân",
+    "an ninh, trật tự",
+    "trường giáo dưỡng",
+    "cai nghiện"
+   ]
+  }
+ ]
+}

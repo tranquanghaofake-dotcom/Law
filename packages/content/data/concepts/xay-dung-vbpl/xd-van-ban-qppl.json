@@ -1,0 +1,116 @@
+{
+ "id": "xd-van-ban-qppl",
+ "subject": "xay-dung-vbpl",
+ "chapter": "v1",
+ "term": "Văn bản quy phạm pháp luật",
+ "definition": "Văn bản quy phạm pháp luật là văn bản có chứa quy phạm pháp luật, được ban hành đúng thẩm quyền, hình thức, trình tự, thủ tục theo quy định của Luật này.",
+ "plain": "Hai nhóm dấu hiệu: NỘI DUNG có chứa quy phạm pháp luật (quy tắc xử sự chung) và HÌNH THỨC ban hành đúng thẩm quyền, hình thức, trình tự, thủ tục của Luật. Thiếu một trong hai thì không phải VBQPPL: văn bản có chứa quy phạm nhưng ban hành sai thẩm quyền, hình thức là văn bản trái pháp luật, bị kiểm tra, xử lý (khoản 4 Điều 63). Môn học dùng khái niệm \"văn bản pháp luật\" rộng hơn, gồm cả văn bản áp dụng pháp luật (quyết định xử phạt, quyết định bổ nhiệm) — loại này không do Luật này điều chỉnh.",
+ "example": "Nghị định của Chính phủ quy định mức phạt vi phạm giao thông: VBQPPL. Quyết định của Chủ tịch UBND tỉnh xử phạt ông A 5 triệu đồng: văn bản áp dụng pháp luật, không phải VBQPPL dù cùng tên \"quyết định\".",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 2 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-54-VBHN-VPQH-2025-Luat-Ban-hanh-van-ban-quy-pham-phap-luat-669858.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "xd-quy-pham-phap-luat",
+  "xd-he-thong-vbqppl"
+ ],
+ "keywords": [
+  "chứa quy phạm pháp luật",
+  "đúng thẩm quyền",
+  "hình thức",
+  "trình tự, thủ tục"
+ ],
+ "note": "Luật Ban hành văn bản quy phạm pháp luật 64/2025/QH15 có hiệu lực từ 01/4/2025, thay thế Luật 80/2015/QH13 (sửa đổi bởi Luật 63/2020/QH14) mà đề cương HLU 2019 còn dẫn; được sửa đổi bởi Luật 87/2025/QH15 có hiệu lực từ 01/7/2025 — văn bản hợp nhất 54/VBHN-VPQH ngày 11/8/2025. Luật mới bỏ quy trình \"lập đề nghị xây dựng luật\" theo chương trình hằng năm kiểu cũ, tách \"quy trình xây dựng chính sách\" và bỏ thẩm quyền ban hành VBQPPL của cấp huyện (từ 01/7/2025). Dự án Luật Văn bản quy phạm pháp luật (thay thế) đang được Quốc hội khóa XVI xem xét, chưa có hiệu lực.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 2, văn bản quy phạm pháp luật phải đáp ứng điều kiện gì?",
+   "options": [
+    "Có chứa quy phạm pháp luật và được ban hành đúng thẩm quyền, hình thức, trình tự, thủ tục",
+    "Chỉ cần do cơ quan nhà nước ban hành",
+    "Chỉ cần có tên là luật, nghị định, thông tư",
+    "Chỉ cần được đăng Công báo"
+   ],
+   "answer": 0,
+   "explain": "Điều 2 nêu hai nhóm dấu hiệu: nội dung chứa quy phạm và hình thức ban hành hợp pháp.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 2 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Văn bản có chứa quy phạm pháp luật nhưng ban hành không đúng thẩm quyền, hình thức thì bị xử lý thế nào?",
+   "options": [
+    "Bị cơ quan có thẩm quyền kiểm tra, xử lý như văn bản trái pháp luật",
+    "Đương nhiên là VBQPPL",
+    "Được coi là văn bản hành chính hợp lệ",
+    "Chỉ cần đăng Công báo là hợp pháp"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 63: kiểm tra văn bản có chứa quy phạm pháp luật nhưng không được ban hành đúng thẩm quyền, hình thức, trình tự, thủ tục.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 63 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Văn bản quy phạm pháp luật",
+   "right": "Văn bản áp dụng pháp luật",
+   "cases": [
+    {
+     "text": "Thông tư của Bộ trưởng quy định mẫu hồ sơ áp dụng chung",
+     "answer": "left"
+    },
+    {
+     "text": "Quyết định bổ nhiệm ông B làm Vụ trưởng",
+     "answer": "right"
+    }
+   ],
+   "explain": "VBQPPL chứa quy tắc xử sự chung; văn bản áp dụng pháp luật giải quyết việc cụ thể cho đối tượng xác định."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Văn bản quy phạm pháp luật là văn bản có chứa {{quy phạm pháp luật}}, được ban hành đúng {{thẩm quyền}}, hình thức, trình tự, thủ tục theo quy định của Luật này.",
+   "bank_extra": [
+    "mệnh lệnh cá biệt",
+    "nhu cầu"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Văn bản quy phạm pháp luật được ban hành đúng thẩm quyền, {{hình thức}}, {{trình tự, thủ tục}} theo quy định của Luật này.",
+   "bank_extra": [
+    "mục đích",
+    "ngân sách"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi văn bản do cơ quan nhà nước ban hành đều là văn bản quy phạm pháp luật.",
+   "answer": false,
+   "explain": "Sai. Điều 2 đòi hỏi văn bản phải chứa quy phạm pháp luật và được ban hành đúng thẩm quyền, hình thức, trình tự, thủ tục; văn bản áp dụng pháp luật, văn bản hành chính không phải VBQPPL."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm văn bản quy phạm pháp luật theo Luật Ban hành văn bản quy phạm pháp luật.",
+   "model": "Văn bản có chứa quy phạm pháp luật, được ban hành đúng thẩm quyền, hình thức, trình tự, thủ tục theo quy định của Luật (Điều 2).",
+   "keywords": [
+    "quy phạm pháp luật",
+    "thẩm quyền",
+    "hình thức",
+    "trình tự, thủ tục"
+   ]
+  }
+ ]
+}

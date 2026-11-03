@@ -1,0 +1,118 @@
+{
+ "id": "tcdn-quyen-ve-von",
+ "subject": "tai-chinh-doanh-nghiep",
+ "chapter": "v1",
+ "term": "Quyền tự chủ tài chính của doanh nghiệp",
+ "definition": "Lựa chọn hình thức, phương thức huy động, phân bổ và sử dụng vốn. (…) Chiếm hữu, sử dụng, định đoạt tài sản của doanh nghiệp. Từ chối yêu cầu của cơ quan, tổ chức, cá nhân về cung cấp nguồn lực không theo quy định của pháp luật.",
+ "plain": "Đây là các QUYỀN của doanh nghiệp (Điều 7) làm nền cho tự chủ tài chính: tự quyết cách HUY ĐỘNG vốn (vốn chủ sở hữu hay vốn vay, phát hành cổ phần hay trái phiếu…), PHÂN BỔ và SỬ DỤNG vốn; chiếm hữu, sử dụng, định đoạt tài sản; TỪ CHỐI các yêu cầu đóng góp nguồn lực trái pháp luật. Giới hạn: doanh nghiệp có vốn nhà nước chịu thêm quy định về quản lý, đầu tư vốn nhà nước.",
+ "example": "Công ty cổ phần B chọn phát hành trái phiếu riêng lẻ thay vì vay ngân hàng để tài trợ dự án: đó là quyền lựa chọn phương thức huy động vốn (khoản 3 Điều 7).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 3, 8, 9 Điều 7 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tcdn-doanh-nghiep",
+  "tcdn-chao-ban-co-phan",
+  "tcdn-trai-phieu-rieng-le"
+ ],
+ "keywords": [
+  "huy động",
+  "phân bổ",
+  "sử dụng vốn",
+  "định đoạt tài sản",
+  "từ chối cung cấp nguồn lực"
+ ],
+ "note": "Luật Doanh nghiệp 59/2020/QH14 có hiệu lực từ 01/01/2021, thay thế Luật Doanh nghiệp 2014 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 03/2022/QH15 và Luật 76/2025/QH15 (hiệu lực 01/7/2025) — văn bản hợp nhất 67/VBHN-VPQH 2025.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quyền nào của doanh nghiệp được ghi tại khoản 3 Điều 7?",
+   "options": [
+    "Lựa chọn hình thức, phương thức huy động, phân bổ và sử dụng vốn",
+    "Được miễn thuế khi mới thành lập",
+    "Được Nhà nước cấp vốn",
+    "Được vay ngân hàng không cần bảo đảm"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 7.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 7 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Doanh nghiệp có quyền từ chối yêu cầu nào?",
+   "options": [
+    "Yêu cầu cung cấp nguồn lực không theo quy định của pháp luật",
+    "Yêu cầu nộp thuế theo luật",
+    "Yêu cầu công bố thông tin bắt buộc",
+    "Yêu cầu kiểm toán theo luật"
+   ],
+   "answer": 0,
+   "explain": "Khoản 9 Điều 7.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 9 Điều 7 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Quyền của doanh nghiệp",
+   "right": "Không phải quyền",
+   "cases": [
+    {
+     "text": "Chủ động chọn phát hành trái phiếu để huy động vốn",
+     "answer": "left"
+    },
+    {
+     "text": "Từ chối nộp thuế đã phát sinh",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 7, Điều 8 Luật Doanh nghiệp."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Doanh nghiệp có quyền lựa chọn hình thức, phương thức {{huy động}}, phân bổ và sử dụng {{vốn}}.",
+   "bank_extra": [
+    "thu thuế",
+    "lao động"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Doanh nghiệp có quyền {{chiếm hữu}}, sử dụng, {{định đoạt}} tài sản của doanh nghiệp.",
+   "bank_extra": [
+    "tịch thu",
+    "trưng mua"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Doanh nghiệp buộc phải đáp ứng mọi yêu cầu đóng góp nguồn lực của cơ quan nhà nước.",
+   "answer": false,
+   "explain": "Sai. Khoản 9 Điều 7: được từ chối yêu cầu cung cấp nguồn lực không theo quy định của pháp luật."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các quyền thể hiện tự chủ tài chính của doanh nghiệp theo Điều 7.",
+   "model": "Lựa chọn hình thức, phương thức huy động, phân bổ và sử dụng vốn (khoản 3); chiếm hữu, sử dụng, định đoạt tài sản (khoản 8); từ chối yêu cầu cung cấp nguồn lực trái pháp luật (khoản 9).",
+   "keywords": [
+    "huy động vốn",
+    "sử dụng vốn",
+    "định đoạt tài sản",
+    "từ chối"
+   ]
+  }
+ ]
+}

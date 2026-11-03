@@ -1,0 +1,117 @@
+{
+ "id": "tstt-kiem-soat-bien-gioi",
+ "subject": "tai-san-tri-tue",
+ "chapter": "v5",
+ "term": "Kiểm soát hàng hóa xuất khẩu, nhập khẩu liên quan đến sở hữu trí tuệ",
+ "definition": "Các biện pháp kiểm soát hàng hóa xuất khẩu, nhập khẩu liên quan đến sở hữu trí tuệ bao gồm: a) Tạm dừng làm thủ tục hải quan đối với hàng hóa bị nghi ngờ xâm phạm quyền sở hữu trí tuệ; b) Kiểm tra, giám sát để phát hiện hàng hóa có dấu hiệu xâm phạm quyền sở hữu trí tuệ.",
+ "plain": "Biện pháp quản trị \"bên ngoài\" mà bài giảng khuyên: ĐĂNG KÝ GIÁM SÁT HẢI QUAN để chặn hàng xâm phạm ngay tại cửa khẩu. Hai biện pháp: TẠM DỪNG làm thủ tục hải quan với hàng nghi ngờ xâm phạm — theo yêu cầu của chủ thể quyền để thu thập chứng cứ, hoặc hải quan chủ động khi có căn cứ rõ ràng là hàng giả mạo (khoản 2); KIỂM TRA, GIÁM SÁT để phát hiện hàng có dấu hiệu xâm phạm (khoản 3). Người yêu cầu phải chứng minh quyền, cung cấp thông tin nhận diện hàng và nộp khoản bảo đảm, bồi thường nếu yêu cầu sai (Điều 217).",
+ "example": "Công ty Q sở hữu nhãn hiệu giày đăng ký giám sát với cơ quan hải quan; khi lô hàng nghi giả nhập về cảng Hải Phòng, hải quan tạm dừng thủ tục để Q kiểm tra, thu thập chứng cứ và yêu cầu xử lý.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 216 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tstt-tu-bao-ve",
+  "tstt-xu-phat-hanh-chinh",
+  "tstt-quan-tri-tstt"
+ ],
+ "keywords": [
+  "tạm dừng làm thủ tục hải quan",
+  "kiểm tra, giám sát",
+  "hàng hóa giả mạo",
+  "khoản bảo đảm"
+ ],
+ "note": "Luật Sở hữu trí tuệ 50/2005/QH11 (hiệu lực 01/7/2006) đã được sửa đổi bởi Luật 36/2009/QH12, 42/2019/QH14, 07/2022/QH15, 93/2025/QH15 và 131/2025/QH15 (hiệu lực 01/4/2026) — văn bản hợp nhất 67/VBHN-VPQH 2026; ghi chép lớp học còn dẫn Nghị định 105/2006/NĐ-CP và Nghị định 99/2013/NĐ-CP, cần tự kiểm tra hiệu lực của các nghị định này trước khi dùng.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Biện pháp kiểm soát biên giới về SHTT gồm gì?",
+   "options": [
+    "Tạm dừng làm thủ tục hải quan và kiểm tra, giám sát phát hiện hàng có dấu hiệu xâm phạm",
+    "Tịch thu toàn bộ hàng nhập khẩu",
+    "Cấm xuất khẩu mọi hàng mang nhãn hiệu",
+    "Thu thuế bổ sung"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 216.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 216 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hải quan chủ động tạm dừng thủ tục khi nào?",
+   "options": [
+    "Khi có căn cứ rõ ràng nghi ngờ hàng hóa xuất khẩu, nhập khẩu là hàng giả mạo về SHTT",
+    "Với mọi lô hàng có nhãn hiệu nước ngoài",
+    "Khi chủ thể quyền chưa đăng ký nhãn hiệu",
+    "Theo yêu cầu của người tiêu dùng"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 2 Điều 216.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 216 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tạm dừng làm thủ tục hải quan",
+   "right": "Kiểm tra, giám sát",
+   "cases": [
+    {
+     "text": "Giữ lô hàng nghi xâm phạm để chủ thể quyền thu thập chứng cứ",
+     "answer": "left"
+    },
+    {
+     "text": "Theo dõi thường xuyên để phát hiện hàng có dấu hiệu xâm phạm",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1–3 Điều 216."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Biện pháp kiểm soát gồm {{tạm dừng}} làm thủ tục hải quan đối với hàng hóa bị {{nghi ngờ}} xâm phạm quyền SHTT.",
+   "bank_extra": [
+    "tịch thu",
+    "chứng minh"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tạm dừng làm thủ tục hải quan được tiến hành theo yêu cầu của {{chủ thể quyền}} nhằm thu thập thông tin, {{chứng cứ}} về lô hàng.",
+   "bank_extra": [
+    "người nhập khẩu",
+    "thuế"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chủ thể quyền có thể yêu cầu hải quan tạm dừng thủ tục đối với hàng hóa bị nghi ngờ xâm phạm quyền SHTT.",
+   "answer": true,
+   "explain": "Đúng. Điểm a khoản 2 Điều 216."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các biện pháp kiểm soát biên giới về SHTT và ý nghĩa quản trị.",
+   "model": "Tạm dừng làm thủ tục hải quan với hàng nghi xâm phạm (theo yêu cầu chủ thể quyền hoặc hải quan chủ động với hàng giả mạo); kiểm tra, giám sát phát hiện hàng có dấu hiệu xâm phạm (Điều 216); doanh nghiệp nên đăng ký giám sát hải quan để chặn hàng xâm phạm tại cửa khẩu.",
+   "keywords": [
+    "tạm dừng",
+    "kiểm tra, giám sát",
+    "hải quan",
+    "chứng cứ"
+   ]
+  }
+ ]
+}

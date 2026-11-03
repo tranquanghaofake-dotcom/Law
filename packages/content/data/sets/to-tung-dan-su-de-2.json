@@ -1,0 +1,139 @@
+{
+  "id": "to-tung-dan-su-de-2",
+  "group": "to-tung-dan-su",
+  "title": "Đề kiểm tra Tố tụng dân sự – Khởi kiện, hòa giải, án phí, phúc thẩm",
+  "subtitle": "10 câu theo đề cương HLU, vấn đề 5–9",
+  "updated": "2026-11-01",
+  "questions": [
+    {
+      "q": "Biện pháp nào là biện pháp khẩn cấp tạm thời?",
+      "options": [
+        "Phạt tiền bị đơn",
+        "Cấm chuyển dịch quyền về tài sản đối với tài sản đang tranh chấp",
+        "Tạm giam bị đơn",
+        "Thu hồi sổ đỏ"
+      ],
+      "answer": 1,
+      "explain": "Điều 114.",
+      "basis": "Điều 114 BLTTDS (VBHN 21/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thu-tuc-To-tung/Van-ban-hop-nhat-21-VBHN-VPQH-2026-Bo-luat-To-dung-dan-su-696578.aspx"
+    },
+    {
+      "q": "Bị đơn yêu cầu áp dụng thời hiệu lần đầu tại phiên tòa phúc thẩm. Tòa án xử lý thế nào?",
+      "options": [
+        "Áp dụng thời hiệu",
+        "Không chấp nhận vì yêu cầu phải đưa ra trước khi sơ thẩm ra bản án, quyết định",
+        "Hủy án sơ thẩm",
+        "Tạm đình chỉ"
+      ],
+      "answer": 1,
+      "explain": "Khoản 2 Điều 184.",
+      "basis": "Điều 184 BLTTDS (VBHN 21/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thu-tuc-To-tung/Van-ban-hop-nhat-21-VBHN-VPQH-2026-Bo-luat-To-dung-dan-su-696578.aspx"
+    },
+    {
+      "q": "Hết thời hiệu khởi kiện và đương sự đã yêu cầu áp dụng thời hiệu trước khi sơ thẩm ra bản án. Tòa án làm gì?",
+      "options": [
+        "Trả lại đơn khởi kiện",
+        "Đình chỉ giải quyết vụ án",
+        "Xét xử bình thường",
+        "Chuyển Viện kiểm sát"
+      ],
+      "answer": 1,
+      "explain": "Điểm e khoản 1 Điều 217.",
+      "basis": "Điều 217 BLTTDS (VBHN 21/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thu-tuc-To-tung/Van-ban-hop-nhat-21-VBHN-VPQH-2026-Bo-luat-To-dung-dan-su-696578.aspx"
+    },
+    {
+      "q": "Đương sự hòa giải thành trước khi mở phiên tòa thì chịu án phí sơ thẩm thế nào?",
+      "options": [
+        "Không phải chịu",
+        "50% mức án phí sơ thẩm",
+        "100%",
+        "25%"
+      ],
+      "answer": 1,
+      "explain": "Khoản 3 Điều 147.",
+      "basis": "Điều 147 BLTTDS (VBHN 21/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thu-tuc-To-tung/Van-ban-hop-nhat-21-VBHN-VPQH-2026-Bo-luat-To-dung-dan-su-696578.aspx"
+    },
+    {
+      "q": "Vụ ly hôn do người vợ khởi kiện, Tòa án chấp nhận cho ly hôn. Ai chịu án phí sơ thẩm?",
+      "options": [
+        "Người chồng",
+        "Người vợ (nguyên đơn)",
+        "Mỗi người một nửa",
+        "Không ai"
+      ],
+      "answer": 1,
+      "explain": "Khoản 4 Điều 147.",
+      "basis": "Điều 147 BLTTDS (VBHN 21/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thu-tuc-To-tung/Van-ban-hop-nhat-21-VBHN-VPQH-2026-Bo-luat-To-dung-dan-su-696578.aspx"
+    },
+    {
+      "q": "Hai hộ tranh chấp ranh giới đất nộp đơn thẳng ra Tòa, chưa hòa giải tại UBND cấp xã. Thẩm phán có thể làm gì?",
+      "options": [
+        "Thụ lý ngay",
+        "Trả lại đơn vì chưa có đủ điều kiện khởi kiện",
+        "Đình chỉ",
+        "Chuyển cho UBND tỉnh"
+      ],
+      "answer": 1,
+      "explain": "Điểm b khoản 1 Điều 192; khoản 2 Điều 235 Luật Đất đai 2024.",
+      "basis": "Điều 192 BLTTDS (VBHN 21/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thu-tuc-To-tung/Van-ban-hop-nhat-21-VBHN-VPQH-2026-Bo-luat-To-dung-dan-su-696578.aspx"
+    },
+    {
+      "q": "Thẩm phán có được buộc đương sự thỏa thuận theo phương án Thẩm phán đề xuất không?",
+      "options": [
+        "Có",
+        "Không, phải tôn trọng sự tự nguyện",
+        "Có nếu vụ án đơn giản",
+        "Có nếu đã hòa giải hai lần"
+      ],
+      "answer": 1,
+      "explain": "Điểm a khoản 2 Điều 205.",
+      "basis": "Điều 205 BLTTDS (VBHN 21/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thu-tuc-To-tung/Van-ban-hop-nhat-21-VBHN-VPQH-2026-Bo-luat-To-dung-dan-su-696578.aspx"
+    },
+    {
+      "q": "Thời hạn kháng cáo bản án sơ thẩm (đương sự có mặt khi tuyên án) là bao lâu?",
+      "options": [
+        "07 ngày",
+        "15 ngày kể từ ngày tuyên án",
+        "30 ngày",
+        "01 tháng"
+      ],
+      "answer": 1,
+      "explain": "Khoản 1 Điều 273.",
+      "basis": "Điều 273 BLTTDS (VBHN 21/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thu-tuc-To-tung/Van-ban-hop-nhat-21-VBHN-VPQH-2026-Bo-luat-To-dung-dan-su-696578.aspx"
+    },
+    {
+      "q": "Tòa án cấp phúc thẩm xem xét lại phần nào của bản án sơ thẩm?",
+      "options": [
+        "Toàn bộ",
+        "Phần có kháng cáo, kháng nghị hoặc có liên quan",
+        "Chỉ phần án phí",
+        "Phần do Viện kiểm sát chỉ định"
+      ],
+      "answer": 1,
+      "explain": "Điều 293.",
+      "basis": "Điều 293 BLTTDS (VBHN 21/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thu-tuc-To-tung/Van-ban-hop-nhat-21-VBHN-VPQH-2026-Bo-luat-To-dung-dan-su-696578.aspx"
+    },
+    {
+      "q": "Bản án đã có hiệu lực, sau đó phát hiện tình tiết mới làm thay đổi cơ bản nội dung mà khi xét xử không ai biết. Thủ tục nào áp dụng?",
+      "options": [
+        "Phúc thẩm",
+        "Giám đốc thẩm",
+        "Tái thẩm",
+        "Sơ thẩm lại"
+      ],
+      "answer": 2,
+      "explain": "Điều 351.",
+      "basis": "Điều 351 BLTTDS (VBHN 21/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Thu-tuc-To-tung/Van-ban-hop-nhat-21-VBHN-VPQH-2026-Bo-luat-To-dung-dan-su-696578.aspx"
+    }
+  ]
+}

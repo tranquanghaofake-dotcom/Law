@@ -1,0 +1,118 @@
+{
+ "id": "dat-su-dung-on-dinh-lau-dai",
+ "subject": "dat-dai",
+ "chapter": "v7",
+ "term": "Đất sử dụng ổn định lâu dài và đất có thời hạn",
+ "definition": "Đất ở. (…) Thời hạn giao đất, công nhận quyền sử dụng đất nông nghiệp đối với cá nhân trực tiếp sản xuất nông nghiệp sử dụng đất trồng cây hằng năm, đất nuôi trồng thủy sản, đất làm muối, đất trồng cây lâu năm, đất rừng sản xuất là rừng trồng trong hạn mức quy định tại Điều 176 của Luật này là 50 năm. Khi hết thời hạn sử dụng đất, thì được tiếp tục sử dụng đất theo thời hạn quy định tại điểm này mà không phải làm thủ tục gia hạn;",
+ "plain": "ỔN ĐỊNH LÂU DÀI (Điều 171): ĐẤT Ở; đất quốc phòng, an ninh; đất tín ngưỡng; đất công cộng không kinh doanh; nghĩa trang; rừng đặc dụng, phòng hộ do tổ chức quản lý… CÓ THỜI HẠN (Điều 172): đất nông nghiệp của cá nhân trực tiếp sản xuất trong hạn mức 50 NĂM, hết hạn TỰ ĐỘNG tiếp tục không cần gia hạn; thuê đất nông nghiệp của cá nhân không quá 50 năm; dự án đầu tư theo thời hạn dự án (thường không quá 50 năm, đặc biệt 70 năm).",
+ "example": "Ông A được giao 1 ha đất trồng lúa năm 1993 (hạn mức): hết thời hạn được tiếp tục sử dụng 50 năm mà không phải làm thủ tục gia hạn.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 171, điểm a khoản 1 Điều 172 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Van-ban-hop-nhat-44-VBHN-VPQH-2026-Luat-Dat-dai-699655.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "han-muc-giao-dat-nong-nghiep",
+  "phan-loai-dat"
+ ],
+ "keywords": [
+  "đất ở ổn định lâu dài",
+  "50 năm đất nông nghiệp",
+  "không phải gia hạn"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đất ở được sử dụng theo thời hạn nào?",
+   "options": [
+    "Ổn định lâu dài",
+    "50 năm",
+    "70 năm",
+    "20 năm"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 171.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 171 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hết thời hạn 50 năm, cá nhân trực tiếp sản xuất nông nghiệp được giao đất trong hạn mức thì sao?",
+   "options": [
+    "Được tiếp tục sử dụng 50 năm mà không phải làm thủ tục gia hạn",
+    "Bị thu hồi",
+    "Phải làm thủ tục gia hạn và nộp tiền",
+    "Phải chuyển sang thuê đất"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 172.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 172 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Ổn định lâu dài",
+   "right": "Có thời hạn",
+   "cases": [
+    {
+     "text": "Đất ở",
+     "answer": "left"
+    },
+    {
+     "text": "Đất trồng lúa của cá nhân trong hạn mức",
+     "answer": "right"
+    },
+    {
+     "text": "Đất quốc phòng, an ninh",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 171, 172."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thời hạn giao đất nông nghiệp đối với cá nhân trực tiếp sản xuất nông nghiệp trong hạn mức là {{50}} năm; khi hết thời hạn được tiếp tục sử dụng mà không phải làm thủ tục {{gia hạn}}.",
+   "bank_extra": [
+    "20",
+    "đấu giá"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "{{Đất ở}} là đất sử dụng ổn định lâu dài.",
+   "bank_extra": [
+    "Đất trồng lúa",
+    "Đất thuê"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Đất ở có thời hạn sử dụng 70 năm.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 171: đất ở sử dụng ổn định lâu dài."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Phân biệt đất sử dụng ổn định lâu dài và đất sử dụng có thời hạn.",
+   "model": "Ổn định lâu dài: đất ở, đất quốc phòng, an ninh, tín ngưỡng, công cộng không kinh doanh, nghĩa trang… (Điều 171); có thời hạn: đất nông nghiệp của cá nhân trực tiếp sản xuất trong hạn mức 50 năm, tự động tiếp tục; thuê đất, dự án theo thời hạn luật định (Điều 172).",
+   "keywords": [
+    "đất ở",
+    "lâu dài",
+    "50 năm",
+    "gia hạn"
+   ]
+  }
+ ]
+}

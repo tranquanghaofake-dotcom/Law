@@ -1,0 +1,118 @@
+{
+ "id": "duong-su",
+ "subject": "to-tung-dan-su",
+ "chapter": "v3",
+ "term": "Đương sự trong vụ việc dân sự",
+ "definition": "Đương sự trong vụ án dân sự là cơ quan, tổ chức, cá nhân bao gồm nguyên đơn, bị đơn, người có quyền lợi, nghĩa vụ liên quan. Đương sự trong việc dân sự là cơ quan, tổ chức, cá nhân bao gồm người yêu cầu giải quyết việc dân sự và người có quyền lợi, nghĩa vụ liên quan. Nguyên đơn trong vụ án dân sự là người khởi kiện, người được cơ quan, tổ chức, cá nhân khác do Bộ luật này quy định khởi kiện để yêu cầu Tòa án giải quyết vụ án dân sự khi cho rằng quyền và lợi ích hợp pháp của người đó bị xâm phạm.",
+ "plain": "Vụ án: NGUYÊN ĐƠN, BỊ ĐƠN, NGƯỜI CÓ QUYỀN LỢI, NGHĨA VỤ LIÊN QUAN. Việc dân sự: NGƯỜI YÊU CẦU và người có quyền lợi, nghĩa vụ liên quan (không có nguyên đơn, bị đơn). Nguyên đơn có thể là người TỰ KHỞI KIỆN hoặc người ĐƯỢC KHỞI KIỆN THAY (Điều 187). Cơ quan, tổ chức khởi kiện vì LỢI ÍCH CÔNG CỘNG, lợi ích Nhà nước cũng là nguyên đơn. Phân biệt với NGƯỜI THAM GIA TỐ TỤNG KHÁC: người làm chứng, người giám định, người phiên dịch, người đại diện, người bảo vệ quyền lợi.",
+ "example": "A kiện B đòi tiền vay; C là người bảo lãnh cho B: A là nguyên đơn, B là bị đơn, C có thể là người có quyền lợi, nghĩa vụ liên quan.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, đoạn 1 khoản 2 Điều 68 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thu-tuc-To-tung/Van-ban-hop-nhat-21-VBHN-VPQH-2026-Bo-luat-To-dung-dan-su-696578.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quyen-yeu-cau-toa-an-bao-ve",
+  "nghia-vu-chung-minh"
+ ],
+ "keywords": [
+  "nguyên đơn, bị đơn, người có quyền lợi nghĩa vụ liên quan",
+  "người yêu cầu",
+  "khởi kiện khi cho rằng quyền lợi bị xâm phạm"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Đương sự trong vụ án dân sự gồm những ai?",
+   "options": [
+    "Nguyên đơn, bị đơn, người có quyền lợi, nghĩa vụ liên quan",
+    "Nguyên đơn, bị đơn, người làm chứng",
+    "Thẩm phán, Hội thẩm, Thư ký",
+    "Người yêu cầu và người làm chứng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 68.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 68 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trong việc dân sự, đương sự gồm những ai?",
+   "options": [
+    "Người yêu cầu giải quyết việc dân sự và người có quyền lợi, nghĩa vụ liên quan",
+    "Nguyên đơn và bị đơn",
+    "Chỉ người yêu cầu",
+    "Viện kiểm sát"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 68.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 68 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Đương sự",
+   "right": "Không phải đương sự",
+   "cases": [
+    {
+     "text": "Bị đơn",
+     "answer": "left"
+    },
+    {
+     "text": "Người làm chứng",
+     "answer": "right"
+    },
+    {
+     "text": "Người có quyền lợi, nghĩa vụ liên quan",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 68."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đương sự trong vụ án dân sự gồm {{nguyên đơn}}, bị đơn, người có {{quyền lợi, nghĩa vụ}} liên quan.",
+   "bank_extra": [
+    "người giám định",
+    "danh dự"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đương sự trong việc dân sự gồm người {{yêu cầu}} giải quyết việc dân sự và người có quyền lợi, nghĩa vụ liên quan.",
+   "bank_extra": [
+    "bị kiện",
+    "làm chứng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người làm chứng là đương sự trong vụ án dân sự.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 68 không gồm người làm chứng; đây là người tham gia tố tụng khác."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm đương sự trong vụ việc dân sự.",
+   "model": "Vụ án: nguyên đơn, bị đơn, người có quyền lợi, nghĩa vụ liên quan; việc dân sự: người yêu cầu và người có quyền lợi, nghĩa vụ liên quan (khoản 1 Điều 68); nguyên đơn là người khởi kiện hoặc được khởi kiện thay khi cho rằng quyền lợi bị xâm phạm (khoản 2).",
+   "keywords": [
+    "nguyên đơn",
+    "bị đơn",
+    "người yêu cầu",
+    "liên quan"
+   ]
+  }
+ ]
+}

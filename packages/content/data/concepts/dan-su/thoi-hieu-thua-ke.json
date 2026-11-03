@@ -1,0 +1,120 @@
+{
+ "id": "thoi-hieu-thua-ke",
+ "subject": "dan-su",
+ "chapter": "v11",
+ "term": "Thời hiệu thừa kế",
+ "definition": "Thời hiệu để người thừa kế yêu cầu chia di sản là 30 năm đối với bất động sản, 10 năm đối với động sản, kể từ thời điểm mở thừa kế. Hết thời hạn này thì di sản thuộc về người thừa kế đang quản lý di sản đó. (…) Thời hiệu để người thừa kế yêu cầu xác nhận quyền thừa kế của mình hoặc bác bỏ quyền thừa kế của người khác là 10 năm, kể từ thời điểm mở thừa kế. Thời hiệu yêu cầu người thừa kế thực hiện nghĩa vụ về tài sản của người chết để lại là 03 năm, kể từ thời điểm mở thừa kế.",
+ "plain": "Ba loại thời hiệu, đều tính từ THỜI ĐIỂM MỞ THỪA KẾ: (1) yêu cầu CHIA DI SẢN: 30 năm bất động sản, 10 năm động sản; hết hạn thì di sản thuộc người thừa kế đang quản lý (không có thì theo Điều 236 hoặc thuộc Nhà nước); (2) XÁC NHẬN hoặc BÁC BỎ quyền thừa kế: 10 năm; (3) yêu cầu thực hiện NGHĨA VỤ TÀI SẢN của người chết: 03 năm. BLDS 2015 tăng thời hiệu chia di sản bất động sản từ 10 năm (BLDS 2005) lên 30 năm.",
+ "example": "Cha mất năm 2000, để lại căn nhà; các con chưa chia. Đến năm 2026 (26 năm) vẫn còn trong thời hiệu 30 năm để yêu cầu chia căn nhà.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 623 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quyen-thua-ke",
+  "thoi-hieu",
+  "bat-dong-san-dong-san"
+ ],
+ "keywords": [
+  "30 năm bất động sản",
+  "10 năm động sản",
+  "10 năm xác nhận, bác bỏ",
+  "03 năm nghĩa vụ tài sản"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thời hiệu yêu cầu chia di sản là bất động sản là bao lâu?",
+   "options": [
+    "30 năm kể từ thời điểm mở thừa kế",
+    "10 năm",
+    "20 năm",
+    "03 năm"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 623.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 623 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Thời hiệu yêu cầu người thừa kế thực hiện nghĩa vụ về tài sản của người chết để lại là bao lâu?",
+   "options": [
+    "03 năm kể từ thời điểm mở thừa kế",
+    "10 năm",
+    "30 năm",
+    "01 năm"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 623.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 623 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Thời hiệu 10 năm",
+   "right": "Thời hiệu 30 năm",
+   "cases": [
+    {
+     "text": "Yêu cầu chia di sản là động sản",
+     "answer": "left"
+    },
+    {
+     "text": "Yêu cầu xác nhận quyền thừa kế",
+     "answer": "left"
+    },
+    {
+     "text": "Yêu cầu chia di sản là bất động sản",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 623."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thời hiệu để người thừa kế yêu cầu chia di sản là {{30}} năm đối với bất động sản, {{10}} năm đối với động sản, kể từ thời điểm mở thừa kế.",
+   "bank_extra": [
+    "20",
+    "5"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Thời hiệu yêu cầu người thừa kế thực hiện nghĩa vụ về tài sản của người chết để lại là {{03}} năm.",
+   "bank_extra": [
+    "05",
+    "10"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hết thời hiệu chia di sản thì di sản mặc nhiên thuộc về Nhà nước.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 623: di sản thuộc về người thừa kế đang quản lý; không có thì xử lý theo Điều 236; chỉ khi không có người chiếm hữu mới thuộc Nhà nước."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày các loại thời hiệu thừa kế theo Điều 623.",
+   "model": "Yêu cầu chia di sản: 30 năm bất động sản, 10 năm động sản; hết hạn thì di sản thuộc người thừa kế đang quản lý (không có thì theo Điều 236 hoặc thuộc Nhà nước); xác nhận, bác bỏ quyền thừa kế: 10 năm; yêu cầu thực hiện nghĩa vụ tài sản: 03 năm; đều tính từ thời điểm mở thừa kế.",
+   "keywords": [
+    "30 năm",
+    "10 năm",
+    "03 năm",
+    "mở thừa kế"
+   ]
+  }
+ ]
+}

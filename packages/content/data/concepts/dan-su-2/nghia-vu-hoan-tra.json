@@ -1,0 +1,115 @@
+{
+ "id": "nghia-vu-hoan-tra",
+ "subject": "dan-su-2",
+ "chapter": "v10",
+ "term": "Nghĩa vụ hoàn trả do chiếm hữu, được lợi không có căn cứ pháp luật",
+ "definition": "Người chiếm hữu, người sử dụng tài sản của người khác mà không có căn cứ pháp luật thì phải hoàn trả cho chủ sở hữu, chủ thể có quyền khác đối với tài sản đó; nếu không tìm được chủ sở hữu, chủ thể có quyền khác đối với tài sản thì phải giao cho cơ quan nhà nước có thẩm quyền, trừ trường hợp quy định tại Điều 236 của Bộ luật này. Người được lợi về tài sản mà không có căn cứ pháp luật làm cho người khác bị thiệt hại thì phải hoàn trả khoản lợi đó cho người bị thiệt hại, trừ trường hợp quy định tại Điều 236 của Bộ luật này.",
+ "plain": "Hai trường hợp: CHIẾM HỮU, SỬ DỤNG tài sản không có căn cứ → HOÀN TRẢ tài sản (không tìm được chủ thì giao cơ quan nhà nước); ĐƯỢC LỢI về tài sản không có căn cứ làm người khác thiệt hại → hoàn trả KHOẢN LỢI. Ngoại lệ: Điều 236 (xác lập quyền sở hữu theo thời hiệu). Ngay tình hay không ngay tình ảnh hưởng đến việc hoàn trả hoa lợi, lợi tức (Điều 581). Chiếm giữ tiền chuyển nhầm, cố tình không trả còn có thể bị xử lý hình sự (tội chiếm giữ trái phép tài sản, Điều 176 BLHS).",
+ "example": "Ngân hàng chuyển nhầm 20 triệu vào tài khoản của B: B phải hoàn trả 20 triệu (khoản 2 Điều 579). Bộ đề \"Chuyển khoản nhầm\" trong nhóm Luật Hình sự liên quan.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 579 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "thuc-hien-cong-viec-khong-uy-quyen",
+  "can-cu-phat-sinh-nghia-vu"
+ ],
+ "keywords": [
+  "chiếm hữu, sử dụng không có căn cứ",
+  "hoàn trả",
+  "được lợi không có căn cứ",
+  "giao cơ quan nhà nước"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người nhặt được tài sản không tìm được chủ sở hữu thì phải làm gì?",
+   "options": [
+    "Giao cho cơ quan nhà nước có thẩm quyền",
+    "Được giữ làm của mình ngay",
+    "Bán và giữ tiền",
+    "Tiêu hủy"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 579.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 579 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người được lợi về tài sản không có căn cứ pháp luật làm người khác thiệt hại phải làm gì?",
+   "options": [
+    "Hoàn trả khoản lợi đó cho người bị thiệt hại",
+    "Chỉ xin lỗi",
+    "Nộp phạt cho Nhà nước",
+    "Không phải làm gì"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 579.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 579 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hoàn trả tài sản (khoản 1)",
+   "right": "Hoàn trả khoản lợi (khoản 2)",
+   "cases": [
+    {
+     "text": "Trả lại chiếc xe đã chiếm giữ không có căn cứ",
+     "answer": "left"
+    },
+    {
+     "text": "Trả lại số tiền được chuyển nhầm",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 579."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người chiếm hữu, sử dụng tài sản của người khác mà không có {{căn cứ pháp luật}} thì phải {{hoàn trả}} cho chủ sở hữu.",
+   "bank_extra": [
+    "giấy phép",
+    "bồi thường gấp đôi"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nếu không tìm được chủ sở hữu thì phải giao cho {{cơ quan nhà nước}} có thẩm quyền.",
+   "bank_extra": [
+    "người thân",
+    "hàng xóm"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người nhận nhầm tiền chuyển khoản được giữ lại nếu người chuyển không đòi trong 1 tháng.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 579: phải hoàn trả khoản lợi."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày nghĩa vụ hoàn trả do chiếm hữu, sử dụng, được lợi về tài sản không có căn cứ pháp luật.",
+   "model": "Người chiếm hữu, sử dụng tài sản không có căn cứ phải hoàn trả cho chủ sở hữu; không tìm được chủ thì giao cơ quan nhà nước (khoản 1); người được lợi không có căn cứ làm người khác thiệt hại phải hoàn trả khoản lợi (khoản 2); trừ Điều 236 (Điều 579).",
+   "keywords": [
+    "không có căn cứ",
+    "hoàn trả",
+    "cơ quan nhà nước",
+    "khoản lợi"
+   ]
+  }
+ ]
+}

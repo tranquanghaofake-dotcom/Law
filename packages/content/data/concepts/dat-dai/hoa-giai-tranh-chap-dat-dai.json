@@ -1,0 +1,118 @@
+{
+ "id": "hoa-giai-tranh-chap-dat-dai",
+ "subject": "dat-dai",
+ "chapter": "v8",
+ "term": "Hòa giải tranh chấp đất đai",
+ "definition": "Nhà nước khuyến khích các bên tranh chấp đất đai tự hòa giải, hòa giải ở cơ sở theo quy định của pháp luật về hòa giải ở cơ sở, hòa giải theo quy định của pháp luật về hòa giải thương mại hoặc cơ chế hòa giải khác theo quy định của pháp luật. Trước khi cơ quan nhà nước có thẩm quyền giải quyết tranh chấp đất đai quy định tại Điều 236 của Luật này, các bên tranh chấp phải thực hiện hòa giải tại Ủy ban nhân dân cấp xã nơi có đất tranh chấp.",
+ "plain": "KHUYẾN KHÍCH: tự hòa giải, hòa giải cơ sở, hòa giải thương mại. BẮT BUỘC: hòa giải tại ỦY BAN NHÂN DÂN CẤP XÃ nơi có đất TRƯỚC KHI cơ quan có thẩm quyền giải quyết (Điều 236). Thực tiễn tố tụng: tranh chấp \"ai có quyền sử dụng đất\" chưa hòa giải tại cấp xã thì Tòa án trả lại đơn khởi kiện (chưa đủ điều kiện khởi kiện). Lưu ý: tranh chấp về giao dịch (hợp đồng chuyển nhượng, thừa kế) không nhất thiết phải qua hòa giải cấp xã theo hướng dẫn của Tòa án.",
+ "example": "Hai hộ tranh chấp ranh giới đất: trước khi khởi kiện ra Tòa, phải gửi đơn yêu cầu hòa giải tại Ủy ban nhân dân xã nơi có đất.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, đoạn 1 khoản 2 Điều 235 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Van-ban-hop-nhat-44-VBHN-VPQH-2026-Luat-Dat-dai-699655.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tham-quyen-giai-quyet-tranh-chap-dat-dai",
+  "quyen-chung-nguoi-su-dung-dat"
+ ],
+ "keywords": [
+  "khuyến khích tự hòa giải",
+  "bắt buộc hòa giải tại UBND cấp xã",
+  "trước khi giải quyết theo Điều 236"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trước khi cơ quan có thẩm quyền giải quyết tranh chấp đất đai, các bên phải làm gì?",
+   "options": [
+    "Hòa giải tại Ủy ban nhân dân cấp xã nơi có đất tranh chấp",
+    "Nộp đơn lên Bộ",
+    "Thuê luật sư",
+    "Đấu giá đất"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 235.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 235 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Hình thức hòa giải nào được Nhà nước khuyến khích?",
+   "options": [
+    "Tự hòa giải, hòa giải ở cơ sở, hòa giải thương mại",
+    "Chỉ hòa giải tại Tòa án",
+    "Hòa giải qua mạng xã hội",
+    "Không khuyến khích"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 235.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 235 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Bắt buộc",
+   "right": "Khuyến khích",
+   "cases": [
+    {
+     "text": "Hòa giải tại UBND cấp xã nơi có đất",
+     "answer": "left"
+    },
+    {
+     "text": "Hòa giải thương mại",
+     "answer": "right"
+    },
+    {
+     "text": "Tự hòa giải giữa các bên",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 235."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhà nước {{khuyến khích}} các bên tranh chấp đất đai tự hòa giải; trước khi giải quyết theo Điều 236, các bên phải hòa giải tại Ủy ban nhân dân {{cấp xã}} nơi có đất tranh chấp.",
+   "bank_extra": [
+    "cấm",
+    "cấp tỉnh"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Hòa giải theo quy định của pháp luật về hòa giải {{thương mại}} cũng được khuyến khích.",
+   "bank_extra": [
+    "hành chính",
+    "hình sự"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tranh chấp đất đai có thể đưa thẳng lên cơ quan có thẩm quyền theo Điều 236 mà không cần hòa giải tại cấp xã.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 235: phải thực hiện hòa giải tại UBND cấp xã trước."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày quy định về hòa giải tranh chấp đất đai.",
+   "model": "Nhà nước khuyến khích tự hòa giải, hòa giải ở cơ sở, hòa giải thương mại, cơ chế khác (khoản 1); trước khi cơ quan có thẩm quyền giải quyết theo Điều 236, các bên phải hòa giải tại UBND cấp xã nơi có đất (khoản 2 Điều 235).",
+   "keywords": [
+    "khuyến khích",
+    "cấp xã",
+    "bắt buộc",
+    "Điều 236"
+   ]
+  }
+ ]
+}

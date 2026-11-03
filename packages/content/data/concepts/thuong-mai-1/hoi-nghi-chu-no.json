@@ -1,0 +1,117 @@
+{
+ "id": "hoi-nghi-chu-no",
+ "subject": "thuong-mai-1",
+ "chapter": "v13",
+ "term": "Hội nghị chủ nợ",
+ "definition": "Quản tài viên điều hành phiên họp Hội nghị chủ nợ. Nghị quyết của Hội nghị chủ nợ thông qua khi có số chủ nợ đại diện cho từ 65% tổng số nợ không có bảo đảm trở lên biểu quyết tán thành. Nghị quyết của Hội nghị chủ nợ có hiệu lực bắt buộc đối với tất cả các chủ nợ.",
+ "plain": "Người có quyền tham gia: chủ nợ có tên trong danh sách chủ nợ (có thể ủy quyền, hoặc gửi ý kiến bằng văn bản), đại diện người lao động, công đoàn (khoản 3 Điều 33). Nghị quyết thông qua theo SỐ NỢ: chủ nợ đại diện ≥ 65% tổng số nợ KHÔNG CÓ BẢO ĐẢM tán thành, có hiệu lực bắt buộc với MỌI chủ nợ. Hội nghị có thể đề nghị đình chỉ, thông qua phương án phục hồi, hoặc đề nghị tuyên bố phá sản (khoản 6 Điều 61).",
+ "example": "Ba chủ nợ không có bảo đảm nắm 70% tổng số nợ không có bảo đảm cùng tán thành đề nghị tuyên bố phá sản: nghị quyết được thông qua và ràng buộc cả chủ nợ phản đối.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 4, 5 Điều 61 Luật Phục hồi, phá sản 2025 (142/2025/QH15)",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-Phuc-hoi-pha-san-2025-so-142-2025-QH15-675210.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "thu-tuc-phuc-hoi",
+  "nguoi-nop-don-pha-san",
+  "thu-tu-phan-chia-tai-san"
+ ],
+ "keywords": [
+  "Quản tài viên điều hành",
+  "65% tổng số nợ không có bảo đảm",
+  "hiệu lực bắt buộc",
+  "tất cả các chủ nợ"
+ ],
+ "note": "Luật Phục hồi, phá sản 142/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Phá sản 51/2014/QH13 (khoản 2 Điều 87); riêng khoản 3 Điều 38 (cơ quan quản lý thuế nộp đơn) có hiệu lực từ 01/7/2026.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nghị quyết của Hội nghị chủ nợ được thông qua khi nào?",
+   "options": [
+    "Số chủ nợ đại diện cho từ 65% tổng số nợ không có bảo đảm trở lên tán thành",
+    "Quá nửa tổng số chủ nợ có mặt tán thành",
+    "Toàn bộ chủ nợ tán thành",
+    "Thẩm phán đồng ý"
+   ],
+   "answer": 0,
+   "explain": "Khoản 5 Điều 61.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 61 Luật Phục hồi, phá sản 2025 (142/2025/QH15)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai điều hành phiên họp Hội nghị chủ nợ trong thủ tục phá sản?",
+   "options": [
+    "Quản tài viên",
+    "Thẩm phán",
+    "Chủ nợ lớn nhất",
+    "Viện kiểm sát"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 61.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 61 Luật Phục hồi, phá sản 2025 (142/2025/QH15)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Hội nghị chủ nợ",
+   "right": "Đại hội đồng cổ đông",
+   "cases": [
+    {
+     "text": "Biểu quyết theo tỷ lệ số nợ không có bảo đảm",
+     "answer": "left"
+    },
+    {
+     "text": "Biểu quyết theo số cổ phần",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 61 Luật Phục hồi, phá sản; Luật Doanh nghiệp."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nghị quyết của Hội nghị chủ nợ thông qua khi có số chủ nợ đại diện cho từ {{65%}} tổng số nợ {{không có bảo đảm}} trở lên biểu quyết tán thành.",
+   "bank_extra": [
+    "51%",
+    "có bảo đảm"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nghị quyết của Hội nghị chủ nợ có hiệu lực {{bắt buộc}} đối với tất cả các chủ nợ.",
+   "bank_extra": [
+    "tham khảo",
+    "tùy nghi"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chủ nợ biểu quyết phản đối không bị ràng buộc bởi nghị quyết của Hội nghị chủ nợ.",
+   "answer": false,
+   "explain": "Sai. Khoản 5 Điều 61: nghị quyết có hiệu lực bắt buộc đối với tất cả các chủ nợ."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày điều kiện thông qua và hiệu lực nghị quyết Hội nghị chủ nợ.",
+   "model": "Quản tài viên điều hành phiên họp (khoản 4 Điều 61); nghị quyết thông qua khi chủ nợ đại diện từ 65% tổng số nợ không có bảo đảm tán thành; có hiệu lực bắt buộc với tất cả chủ nợ (khoản 5 Điều 61).",
+   "keywords": [
+    "Quản tài viên",
+    "65%",
+    "không có bảo đảm",
+    "bắt buộc"
+   ]
+  }
+ ]
+}

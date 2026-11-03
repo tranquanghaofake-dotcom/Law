@@ -1,0 +1,115 @@
+{
+ "id": "nhuong-quyen-thuong-mai",
+ "subject": "thuong-mai",
+ "chapter": "v4",
+ "term": "Nhượng quyền thương mại",
+ "definition": "Nhượng quyền thương mại là hoạt động thương mại, theo đó bên nhượng quyền cho phép và yêu cầu bên nhận quyền tự mình tiến hành việc mua bán hàng hóa, cung ứng dịch vụ theo các điều kiện sau đây: 1. Việc mua bán hàng hóa, cung ứng dịch vụ được tiến hành theo cách thức tổ chức kinh doanh do bên nhượng quyền quy định và được gắn với nhãn hiệu hàng hóa, tên thương mại, bí quyết kinh doanh, khẩu hiệu kinh doanh, biểu tượng kinh doanh, quảng cáo của bên nhượng quyền; 2. Bên nhượng quyền có quyền kiểm soát và trợ giúp cho bên nhận quyền trong việc điều hành công việc kinh doanh.",
+ "plain": "Đặc trưng (franchise): bên nhận quyền TỰ MÌNH kinh doanh (tự bỏ vốn, tự chịu rủi ro) nhưng theo CÁCH THỨC TỔ CHỨC KINH DOANH của bên nhượng quyền, gắn với NHÃN HIỆU, TÊN THƯƠNG MẠI, BÍ QUYẾT…; bên nhượng quyền có quyền KIỂM SOÁT và nghĩa vụ TRỢ GIÚP. Hợp đồng bằng văn bản (Điều 285). Khác LI-XĂNG nhãn hiệu thuần túy (chỉ cho dùng nhãn hiệu, không chuyển giao cả mô hình).",
+ "example": "Một người mở cửa hàng trà sữa mang thương hiệu nổi tiếng, theo công thức, quy trình, trang trí do chủ thương hiệu quy định và chịu kiểm tra định kỳ: nhượng quyền thương mại.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 284 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "logistics",
+  "dai-ly-thuong-mai"
+ ],
+ "keywords": [
+  "bên nhận quyền tự mình kinh doanh",
+  "cách thức tổ chức kinh doanh của bên nhượng quyền",
+  "nhãn hiệu, bí quyết kinh doanh",
+  "kiểm soát và trợ giúp"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trong nhượng quyền thương mại, ai tiến hành việc mua bán hàng hóa?",
+   "options": [
+    "Bên nhận quyền tự mình tiến hành",
+    "Bên nhượng quyền",
+    "Bên môi giới",
+    "Nhà nước"
+   ],
+   "answer": 0,
+   "explain": "Điều 284.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 284 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Quyền của bên nhượng quyền đối với bên nhận quyền theo khoản 2 Điều 284 là gì?",
+   "options": [
+    "Kiểm soát và trợ giúp trong việc điều hành kinh doanh",
+    "Không có quyền gì sau khi ký",
+    "Thu toàn bộ lợi nhuận",
+    "Điều hành trực tiếp thay bên nhận quyền"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 284.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 284 Luật Thương mại 2005 (VBHN 113/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Nhượng quyền thương mại",
+   "right": "Đại lý thương mại",
+   "cases": [
+    {
+     "text": "Cửa hàng tự kinh doanh theo mô hình, thương hiệu của chủ hệ thống",
+     "answer": "left"
+    },
+    {
+     "text": "Cửa hàng bán hàng của hãng, hàng vẫn thuộc sở hữu hãng",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 166, 284."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Việc mua bán được tiến hành theo cách thức {{tổ chức kinh doanh}} do bên nhượng quyền quy định và gắn với nhãn hiệu, tên thương mại, {{bí quyết kinh doanh}} của bên nhượng quyền.",
+   "bank_extra": [
+    "quản lý nhà nước",
+    "tài sản cá nhân"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bên nhượng quyền có quyền {{kiểm soát}} và trợ giúp cho bên nhận quyền.",
+   "bank_extra": [
+    "tịch thu",
+    "sở hữu"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Trong nhượng quyền thương mại, bên nhượng quyền trực tiếp bán hàng cho khách tại cửa hàng của bên nhận quyền.",
+   "answer": false,
+   "explain": "Sai. Bên nhận quyền tự mình tiến hành mua bán (Điều 284)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm và đặc điểm nhượng quyền thương mại.",
+   "model": "Bên nhượng quyền cho phép và yêu cầu bên nhận quyền tự mình mua bán hàng hóa, cung ứng dịch vụ theo cách thức tổ chức kinh doanh của bên nhượng quyền, gắn với nhãn hiệu, tên thương mại, bí quyết…; bên nhượng quyền có quyền kiểm soát, trợ giúp (Điều 284).",
+   "keywords": [
+    "tự mình",
+    "cách thức tổ chức",
+    "nhãn hiệu",
+    "kiểm soát"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,116 @@
+{
+ "id": "bao-lanh-ngan-hang",
+ "subject": "ngan-hang",
+ "chapter": "v5",
+ "term": "Bảo lãnh ngân hàng",
+ "definition": "Bảo lãnh ngân hàng là hình thức cấp tín dụng cho khách hàng thông qua việc tổ chức tín dụng, chi nhánh ngân hàng nước ngoài cam kết với bên nhận bảo lãnh về việc sẽ thực hiện nghĩa vụ tài chính thay cho bên có nghĩa vụ khi bên có nghĩa vụ không thực hiện hoặc thực hiện không đầy đủ nghĩa vụ đã cam kết; khách hàng phải nhận nợ bắt buộc và hoàn trả cho tổ chức tín dụng, chi nhánh ngân hàng nước ngoài theo thỏa thuận.",
+ "plain": "Quan hệ ba bên: BÊN BẢO LÃNH (TCTD, chi nhánh ngân hàng nước ngoài) — BÊN ĐƯỢC BẢO LÃNH / khách hàng (bên có nghĩa vụ) — BÊN NHẬN BẢO LÃNH (người có quyền). Ngân hàng chỉ trả thay khi bên có nghĩa vụ KHÔNG THỰC HIỆN hoặc THỰC HIỆN KHÔNG ĐẦY ĐỦ. Sau khi trả thay, khách hàng phải NHẬN NỢ BẮT BUỘC và hoàn trả. Đây là điểm khác bảo lãnh dân sự giữa các cá nhân (Bộ luật Dân sự): bảo lãnh ngân hàng là một nghiệp vụ cấp tín dụng. Các dạng thường gặp: bảo lãnh dự thầu, thực hiện hợp đồng, thanh toán, hoàn trả tiền ứng trước.",
+ "example": "Ngân hàng G phát hành bảo lãnh thực hiện hợp đồng cho nhà thầu H; H bỏ dở công trình, chủ đầu tư yêu cầu G trả tiền bảo lãnh; G trả xong thì H phải nhận nợ bắt buộc với G.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 2 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-143-2026-VBHN-LQ-VPQH-Luat-Cac-to-chuc-tin-dung-729869.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "cap-tin-dung",
+  "cho-vay"
+ ],
+ "keywords": [
+  "cam kết với bên nhận bảo lãnh",
+  "thực hiện nghĩa vụ tài chính thay",
+  "nhận nợ bắt buộc",
+  "bên có nghĩa vụ"
+ ],
+ "note": "Luật Các tổ chức tín dụng 32/2024/QH15 có hiệu lực từ 01/7/2024, thay thế Luật 47/2010/QH12 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 96/2025/QH15 (hiệu lực 15/10/2025) và Luật 23/2026/QH16 (hiệu lực 01/12/2026, chỉ bổ sung một điểm tại Điều 49) — các khoản Điều 4 được trích không bị sửa.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Sau khi ngân hàng thực hiện nghĩa vụ bảo lãnh, khách hàng phải làm gì?",
+   "options": [
+    "Nhận nợ bắt buộc và hoàn trả cho ngân hàng theo thỏa thuận",
+    "Không phải trả gì vì đã có bảo lãnh",
+    "Chỉ trả nếu ngân hàng khởi kiện thắng",
+    "Trả cho bên nhận bảo lãnh thêm một lần nữa"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ngân hàng cam kết thực hiện nghĩa vụ thay khi nào?",
+   "options": [
+    "Khi bên có nghĩa vụ không thực hiện hoặc thực hiện không đầy đủ nghĩa vụ đã cam kết",
+    "Ngay khi ký thư bảo lãnh",
+    "Khi bên nhận bảo lãnh muốn",
+    "Khi ngân hàng có lợi nhuận"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 4.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 4 Luật Các tổ chức tín dụng 2024 (VBHN 143/2026/VBHN-LQ-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Bên nhận bảo lãnh",
+   "right": "Khách hàng (bên được bảo lãnh)",
+   "cases": [
+    {
+     "text": "Chủ đầu tư được ngân hàng cam kết trả tiền nếu nhà thầu vi phạm",
+     "answer": "left"
+    },
+    {
+     "text": "Nhà thầu phải nhận nợ bắt buộc sau khi ngân hàng trả thay",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 2 Điều 4."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bảo lãnh ngân hàng là việc tổ chức tín dụng cam kết với bên {{nhận bảo lãnh}} về việc sẽ thực hiện nghĩa vụ {{tài chính}} thay cho bên có nghĩa vụ.",
+   "bank_extra": [
+    "được bảo lãnh",
+    "hình sự"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Khách hàng phải {{nhận nợ bắt buộc}} và {{hoàn trả}} cho tổ chức tín dụng theo thỏa thuận.",
+   "bank_extra": [
+    "miễn nợ",
+    "khởi kiện"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Bảo lãnh ngân hàng không phải là một hình thức cấp tín dụng.",
+   "answer": false,
+   "explain": "Sai. Khoản 2, 4 Điều 4: bảo lãnh ngân hàng là hình thức cấp tín dụng."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm bảo lãnh ngân hàng và chỉ ra các bên trong quan hệ.",
+   "model": "Hình thức cấp tín dụng: TCTD, chi nhánh ngân hàng nước ngoài cam kết với bên nhận bảo lãnh sẽ thực hiện nghĩa vụ tài chính thay bên có nghĩa vụ khi bên này không thực hiện hoặc thực hiện không đầy đủ; khách hàng phải nhận nợ bắt buộc và hoàn trả (khoản 2 Điều 4). Ba bên: bên bảo lãnh, bên được bảo lãnh, bên nhận bảo lãnh.",
+   "keywords": [
+    "cấp tín dụng",
+    "bên nhận bảo lãnh",
+    "nghĩa vụ tài chính thay",
+    "nhận nợ bắt buộc"
+   ]
+  }
+ ]
+}

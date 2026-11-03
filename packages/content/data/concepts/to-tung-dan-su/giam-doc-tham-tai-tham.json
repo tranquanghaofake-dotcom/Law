@@ -1,0 +1,115 @@
+{
+ "id": "giam-doc-tham-tai-tham",
+ "subject": "to-tung-dan-su",
+ "chapter": "v9",
+ "term": "Giám đốc thẩm và tái thẩm",
+ "definition": "Giám đốc thẩm là xét lại bản án, quyết định của Tòa án đã có hiệu lực pháp luật nhưng bị kháng nghị giám đốc thẩm khi có căn cứ quy định tại Điều 326 của Bộ luật này. (…) Tái thẩm là xét lại bản án, quyết định đã có hiệu lực pháp luật nhưng bị kháng nghị vì có tình tiết mới được phát hiện có thể làm thay đổi cơ bản nội dung của bản án, quyết định mà Tòa án, các đương sự không biết được khi Tòa án ra bản án, quyết định đó.",
+ "plain": "Cả hai là thủ tục ĐẶC BIỆT xét lại bản án ĐÃ CÓ HIỆU LỰC, chỉ khởi động bằng KHÁNG NGHỊ của người có thẩm quyền (Chánh án, Viện trưởng TAND/VKSND tối cao, cấp tỉnh — Điều 331); đương sự chỉ có quyền ĐỀ NGHỊ. GIÁM ĐỐC THẨM: do VI PHẠM (kết luận không phù hợp tình tiết khách quan, vi phạm nghiêm trọng thủ tục, sai lầm áp dụng pháp luật — Điều 326). TÁI THẨM: do TÌNH TIẾT MỚI mà Tòa án, đương sự không biết được (Điều 352).",
+ "example": "Sau khi bản án có hiệu lực, phát hiện giấy tờ chứng minh người làm chứng khai man mà trước đó không ai biết: căn cứ tái thẩm. Nếu Tòa án áp dụng sai điều luật: căn cứ giám đốc thẩm.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 325, Điều 351 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thu-tuc-To-tung/Van-ban-hop-nhat-21-VBHN-VPQH-2026-Bo-luat-To-dung-dan-su-696578.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "khang-cao-phuc-tham",
+  "tham-quyen-theo-cap"
+ ],
+ "keywords": [
+  "xét lại bản án đã có hiệu lực",
+  "kháng nghị",
+  "vi phạm pháp luật (giám đốc thẩm)",
+  "tình tiết mới (tái thẩm)"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Điểm khác nhau cơ bản giữa giám đốc thẩm và tái thẩm là gì?",
+   "options": [
+    "Giám đốc thẩm do vi phạm pháp luật; tái thẩm do phát hiện tình tiết mới",
+    "Giám đốc thẩm xét bản án chưa có hiệu lực",
+    "Tái thẩm do đương sự kháng cáo",
+    "Không có khác biệt"
+   ],
+   "answer": 0,
+   "explain": "Điều 325, 351.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 325, Điều 351 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai có thẩm quyền kháng nghị giám đốc thẩm bản án có hiệu lực của TAND khu vực trong phạm vi lãnh thổ?",
+   "options": [
+    "Chánh án TAND cấp tỉnh, Viện trưởng VKSND cấp tỉnh (và cấp tối cao)",
+    "Đương sự",
+    "Luật sư",
+    "Thẩm phán đã xét xử sơ thẩm"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 331.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 331 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Căn cứ giám đốc thẩm",
+   "right": "Căn cứ tái thẩm",
+   "cases": [
+    {
+     "text": "Sai lầm trong việc áp dụng pháp luật",
+     "answer": "left"
+    },
+    {
+     "text": "Phát hiện tình tiết mới mà đương sự không biết được",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 326, 352."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Giám đốc thẩm là xét lại bản án, quyết định đã có hiệu lực pháp luật nhưng bị {{kháng nghị}}; tái thẩm là xét lại vì có {{tình tiết mới}} được phát hiện.",
+   "bank_extra": [
+    "kháng cáo",
+    "chứng cứ cũ"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tình tiết mới có thể làm thay đổi {{cơ bản}} nội dung của bản án mà Tòa án, các đương sự không biết được.",
+   "bank_extra": [
+    "một phần nhỏ",
+    "hình thức"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Đương sự có quyền kháng nghị giám đốc thẩm.",
+   "answer": false,
+   "explain": "Sai. Chỉ người có thẩm quyền (Điều 331) kháng nghị; đương sự chỉ có quyền đề nghị."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Phân biệt giám đốc thẩm và tái thẩm.",
+   "model": "Đều xét lại bản án, quyết định đã có hiệu lực, khởi động bằng kháng nghị; giám đốc thẩm khi có vi phạm: kết luận không phù hợp tình tiết khách quan, vi phạm nghiêm trọng thủ tục, sai lầm áp dụng pháp luật (Điều 325, 326); tái thẩm khi có tình tiết mới làm thay đổi cơ bản nội dung mà Tòa án, đương sự không biết (Điều 351).",
+   "keywords": [
+    "hiệu lực",
+    "kháng nghị",
+    "vi phạm",
+    "tình tiết mới"
+   ]
+  }
+ ]
+}

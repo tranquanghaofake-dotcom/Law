@@ -1,0 +1,139 @@
+{
+  "id": "dan-su-2-de-1",
+  "group": "dan-su",
+  "title": "Đề kiểm tra Dân sự 2 – Nghĩa vụ, bảo đảm, hợp đồng",
+  "subtitle": "10 câu theo đề cương HLU, vấn đề 1–9",
+  "updated": "2026-11-01",
+  "questions": [
+    {
+      "q": "Nhận được 5 triệu chuyển khoản nhầm. Nghĩa vụ hoàn trả phát sinh từ căn cứ nào?",
+      "options": [
+        "Hợp đồng",
+        "Được lợi về tài sản không có căn cứ pháp luật",
+        "Hành vi pháp lý đơn phương",
+        "Gây thiệt hại"
+      ],
+      "answer": 1,
+      "explain": "Khoản 4 Điều 275.",
+      "basis": "Điều 275 BLDS 2015",
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_275"
+    },
+    {
+      "q": "Biện pháp nào KHÔNG phải biện pháp bảo đảm thực hiện nghĩa vụ?",
+      "options": [
+        "Ký quỹ",
+        "Tín chấp",
+        "Phạt vi phạm",
+        "Cầm giữ tài sản"
+      ],
+      "answer": 2,
+      "explain": "Điều 292.",
+      "basis": "Điều 292 BLDS 2015",
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_292"
+    },
+    {
+      "q": "Vay ngân hàng, bạn dùng căn nhà đang ở để bảo đảm và vẫn ở trong nhà. Đây là biện pháp gì?",
+      "options": [
+        "Cầm cố",
+        "Thế chấp",
+        "Đặt cọc",
+        "Ký cược"
+      ],
+      "answer": 1,
+      "explain": "Điều 317.",
+      "basis": "Điều 317 BLDS 2015",
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_317"
+    },
+    {
+      "q": "Bạn đặt cọc 10 triệu thuê nhà, chủ nhà đổi ý cho người khác thuê. Nếu không có thỏa thuận khác, chủ nhà phải trả bạn bao nhiêu?",
+      "options": [
+        "10 triệu",
+        "20 triệu",
+        "5 triệu",
+        "Không phải trả"
+      ],
+      "answer": 1,
+      "explain": "Khoản 2 Điều 328.",
+      "basis": "Điều 328 BLDS 2015",
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_328"
+    },
+    {
+      "q": "Bố cam kết trả nợ thay nếu con không trả ngân hàng đúng hạn. Bố là ai trong quan hệ bảo lãnh?",
+      "options": [
+        "Bên bảo lãnh",
+        "Bên được bảo lãnh",
+        "Bên nhận bảo lãnh",
+        "Bên thế chấp"
+      ],
+      "answer": 0,
+      "explain": "Điều 335.",
+      "basis": "Điều 335 BLDS 2015",
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_335"
+    },
+    {
+      "q": "Hợp đồng in sẵn của bãi giữ xe ghi \"không chịu trách nhiệm khi mất xe\". Điều khoản này thế nào?",
+      "options": [
+        "Có hiệu lực vì khách đã nhận vé",
+        "Không có hiệu lực vì là điều khoản miễn trách nhiệm của bên đưa ra hợp đồng theo mẫu",
+        "Chỉ có hiệu lực nếu in đậm",
+        "Có hiệu lực với xe giá trị nhỏ"
+      ],
+      "answer": 1,
+      "explain": "Khoản 3 Điều 405.",
+      "basis": "Điều 405 BLDS 2015",
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_405"
+    },
+    {
+      "q": "Hợp đồng dân sự có thỏa thuận phạt vi phạm nhưng không nói gì về bồi thường. Bên vi phạm chịu gì?",
+      "options": [
+        "Chỉ chịu phạt vi phạm",
+        "Vừa phạt vừa bồi thường",
+        "Chỉ bồi thường",
+        "Không chịu gì"
+      ],
+      "answer": 0,
+      "explain": "Khoản 3 Điều 418.",
+      "basis": "Điều 418 BLDS 2015",
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_418"
+    },
+    {
+      "q": "Hai người thỏa thuận cho vay lãi 36%/năm. Phần lãi nào có hiệu lực?",
+      "options": [
+        "Toàn bộ 36%",
+        "Tối đa 20%/năm; phần vượt không có hiệu lực",
+        "Không có lãi vì hợp đồng vô hiệu",
+        "10%/năm"
+      ],
+      "answer": 1,
+      "explain": "Khoản 1 Điều 468.",
+      "basis": "Điều 468 BLDS 2015",
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_468"
+    },
+    {
+      "q": "Không có thỏa thuận về thời hạn và luật không quy định, hợp đồng ủy quyền có hiệu lực bao lâu?",
+      "options": [
+        "06 tháng",
+        "01 năm",
+        "03 năm",
+        "Vô thời hạn"
+      ],
+      "answer": 1,
+      "explain": "Điều 563.",
+      "basis": "Điều 563 BLDS 2015",
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_563"
+    },
+    {
+      "q": "Mẹ tặng con chiếc nhẫn vàng (động sản không phải đăng ký). Hợp đồng có hiệu lực khi nào (nếu không có thỏa thuận khác)?",
+      "options": [
+        "Khi mẹ nói tặng",
+        "Khi con nhận nhẫn",
+        "Khi công chứng",
+        "Khi đăng ký"
+      ],
+      "answer": 1,
+      "explain": "Khoản 1 Điều 458.",
+      "basis": "Điều 458 BLDS 2015",
+      "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx?anchor=dieu_458"
+    }
+  ]
+}

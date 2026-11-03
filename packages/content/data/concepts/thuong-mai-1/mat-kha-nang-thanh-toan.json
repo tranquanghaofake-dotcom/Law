@@ -1,0 +1,117 @@
+{
+ "id": "mat-kha-nang-thanh-toan",
+ "subject": "thuong-mai-1",
+ "chapter": "v12",
+ "term": "Mất khả năng thanh toán và phá sản",
+ "definition": "Doanh nghiệp, hợp tác xã có nguy cơ mất khả năng thanh toán là doanh nghiệp, hợp tác xã không thanh toán được khoản nợ sẽ đến hạn trong 06 tháng hoặc khoản nợ đã đến hạn nhưng chưa quá 06 tháng. Doanh nghiệp, hợp tác xã mất khả năng thanh toán là doanh nghiệp, hợp tác xã không thực hiện nghĩa vụ thanh toán khoản nợ sau thời hạn 06 tháng kể từ ngày đến hạn thanh toán. (…) Phá sản là tình trạng của doanh nghiệp, hợp tác xã mất khả năng thanh toán và đã có quyết định tuyên bố phá sản của Tòa án.",
+ "plain": "Hai ngưỡng: NGUY CƠ mất khả năng thanh toán (nợ sẽ đến hạn trong 06 tháng hoặc quá hạn chưa đến 06 tháng) → mở đường cho THỦ TỤC PHỤC HỒI; MẤT khả năng thanh toán (không trả nợ sau 06 tháng kể từ ngày đến hạn) → có thể yêu cầu thủ tục phá sản. Luật Phá sản 2014 (hết hiệu lực từ 01/3/2026) dùng mốc 03 tháng. PHÁ SẢN chỉ là tình trạng pháp lý khi đã có QUYẾT ĐỊNH TUYÊN BỐ PHÁ SẢN của Tòa án — mất khả năng thanh toán chưa phải là phá sản.",
+ "example": "Công ty X nợ ngân hàng khoản vay đến hạn 01/3; đến 15/9 vẫn chưa trả: đã quá 06 tháng nên X mất khả năng thanh toán, nhưng X chỉ \"phá sản\" khi Tòa án ra quyết định tuyên bố phá sản.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, 2, 4 Điều 5 Luật Phục hồi, phá sản 2025 (142/2025/QH15)",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-Phuc-hoi-pha-san-2025-so-142-2025-QH15-675210.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nguyen-tac-phuc-hoi-pha-san",
+  "nguoi-nop-don-pha-san",
+  "giai-the-doanh-nghiep"
+ ],
+ "keywords": [
+  "nguy cơ mất khả năng thanh toán",
+  "sau thời hạn 06 tháng",
+  "quyết định tuyên bố phá sản của Tòa án",
+  "phục hồi"
+ ],
+ "note": "Luật Phục hồi, phá sản 142/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Phá sản 51/2014/QH13 (khoản 2 Điều 87); riêng khoản 3 Điều 38 (cơ quan quản lý thuế nộp đơn) có hiệu lực từ 01/7/2026.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Luật Phục hồi, phá sản 2025, doanh nghiệp mất khả năng thanh toán khi nào?",
+   "options": [
+    "Không thực hiện nghĩa vụ thanh toán khoản nợ sau thời hạn 06 tháng kể từ ngày đến hạn",
+    "Không trả nợ sau 03 tháng kể từ ngày đến hạn",
+    "Lỗ 3 năm liên tiếp",
+    "Tổng nợ lớn hơn vốn điều lệ"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 5.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 5 Luật Phục hồi, phá sản 2025 (142/2025/QH15)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Doanh nghiệp được coi là phá sản khi nào?",
+   "options": [
+    "Mất khả năng thanh toán và đã có quyết định tuyên bố phá sản của Tòa án",
+    "Ngay khi mất khả năng thanh toán",
+    "Khi chủ nợ nộp đơn",
+    "Khi cơ quan thuế cưỡng chế"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 5.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 5 Luật Phục hồi, phá sản 2025 (142/2025/QH15)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Nguy cơ mất khả năng thanh toán",
+   "right": "Mất khả năng thanh toán",
+   "cases": [
+    {
+     "text": "Khoản nợ sẽ đến hạn trong 06 tháng chưa trả được",
+     "answer": "left"
+    },
+    {
+     "text": "Không trả nợ sau 06 tháng kể từ ngày đến hạn",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1, 2 Điều 5."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Doanh nghiệp, hợp tác xã mất khả năng thanh toán là doanh nghiệp, hợp tác xã không thực hiện nghĩa vụ thanh toán khoản nợ sau thời hạn {{06 tháng}} kể từ ngày {{đến hạn}} thanh toán.",
+   "bank_extra": [
+    "03 tháng",
+    "khởi kiện"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Phá sản là tình trạng của doanh nghiệp, hợp tác xã mất khả năng thanh toán và đã có quyết định {{tuyên bố phá sản}} của {{Tòa án}}.",
+   "bank_extra": [
+    "mở thủ tục phá sản",
+    "Hội nghị chủ nợ"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Doanh nghiệp mất khả năng thanh toán đương nhiên bị coi là phá sản.",
+   "answer": false,
+   "explain": "Sai. Khoản 4 Điều 5: phải có quyết định tuyên bố phá sản của Tòa án."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Phân biệt nguy cơ mất khả năng thanh toán, mất khả năng thanh toán và phá sản.",
+   "model": "Nguy cơ: không thanh toán được nợ sẽ đến hạn trong 06 tháng hoặc đã đến hạn chưa quá 06 tháng (khoản 1 Điều 5); mất khả năng thanh toán: không trả nợ sau 06 tháng kể từ ngày đến hạn (khoản 2); phá sản: mất khả năng thanh toán và đã có quyết định tuyên bố phá sản của Tòa án (khoản 4).",
+   "keywords": [
+    "06 tháng",
+    "đến hạn",
+    "tuyên bố phá sản",
+    "Tòa án"
+   ]
+  }
+ ]
+}

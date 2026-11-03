@@ -1,0 +1,115 @@
+{
+ "id": "nguyen-tac-boi-thuong-khi-thu-hoi",
+ "subject": "dat-dai",
+ "chapter": "v3",
+ "term": "Nguyên tắc bồi thường, hỗ trợ, tái định cư khi Nhà nước thu hồi đất",
+ "definition": "Việc bồi thường, hỗ trợ, tái định cư khi Nhà nước thu hồi đất phải bảo đảm dân chủ, khách quan, công bằng, công khai, minh bạch, kịp thời và đúng quy định của pháp luật; vì lợi ích chung, sự phát triển bền vững, văn minh và hiện đại của cộng đồng, của địa phương; quan tâm đến đối tượng chính sách xã hội, đối tượng trực tiếp sản xuất nông nghiệp. Việc bồi thường về đất được thực hiện bằng việc giao đất có cùng mục đích sử dụng với loại đất thu hồi, trường hợp không có đất để bồi thường thì được bồi thường bằng tiền theo giá đất cụ thể của loại đất thu hồi do Ủy ban nhân dân cấp có thẩm quyền quyết định tại thời điểm phê duyệt phương án bồi thường, hỗ trợ, tái định cư.",
+ "plain": "Nguyên tắc: DÂN CHỦ, KHÁCH QUAN, CÔNG BẰNG, CÔNG KHAI, MINH BẠCH, KỊP THỜI. Bồi thường ưu tiên BẰNG ĐẤT CÙNG MỤC ĐÍCH; không có đất thì BẰNG TIỀN theo GIÁ ĐẤT CỤ THỂ tại thời điểm PHÊ DUYỆT PHƯƠNG ÁN (Luật 2024 bỏ cách tính theo thời điểm quyết định thu hồi). Người được bồi thường bằng đất, nhà ở mà muốn nhận tiền thì được bồi thường bằng tiền theo nguyện vọng. Ngoài bồi thường còn có HỖ TRỢ và TÁI ĐỊNH CƯ.",
+ "example": "Hộ dân bị thu hồi 200 m² đất ở: được bố trí đất ở tái định cư hoặc, nếu không có đất, được trả tiền theo giá đất cụ thể do UBND cấp có thẩm quyền quyết định khi phê duyệt phương án.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, đoạn 1 khoản 2 Điều 91 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Van-ban-hop-nhat-44-VBHN-VPQH-2026-Luat-Dat-dai-699655.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "thu-hoi-dat",
+  "gia-dat"
+ ],
+ "keywords": [
+  "dân chủ, khách quan, công bằng, công khai",
+  "bồi thường bằng đất cùng mục đích",
+  "bằng tiền theo giá đất cụ thể",
+  "thời điểm phê duyệt phương án"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Bồi thường về đất khi Nhà nước thu hồi được thực hiện ưu tiên bằng hình thức nào?",
+   "options": [
+    "Giao đất có cùng mục đích sử dụng với loại đất thu hồi",
+    "Tiền theo giá thị trường tự thỏa thuận",
+    "Cổ phần của dự án",
+    "Không bồi thường"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 91.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 91 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khi bồi thường bằng tiền, giá đất được xác định tại thời điểm nào?",
+   "options": [
+    "Thời điểm phê duyệt phương án bồi thường, hỗ trợ, tái định cư",
+    "Thời điểm thông báo thu hồi",
+    "Thời điểm người dân được cấp sổ đỏ",
+    "Thời điểm khởi công dự án"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 91.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 91 Luật Đất đai 2024 (VBHN 44/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Nguyên tắc bồi thường",
+   "right": "Không phải nguyên tắc",
+   "cases": [
+    {
+     "text": "Công khai, minh bạch",
+     "answer": "left"
+    },
+    {
+     "text": "Bí mật để tránh đầu cơ",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 91."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Việc bồi thường, hỗ trợ, tái định cư phải bảo đảm dân chủ, khách quan, công bằng, {{công khai}}, minh bạch, {{kịp thời}}.",
+   "bank_extra": [
+    "bí mật",
+    "chậm trễ"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Không có đất để bồi thường thì được bồi thường bằng tiền theo giá đất {{cụ thể}} của loại đất thu hồi.",
+   "bank_extra": [
+    "khởi điểm",
+    "do nhà đầu tư"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người có đất thu hồi được bồi thường bằng đất thì bắt buộc phải nhận đất, không được nhận tiền.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 91: có nhu cầu thì được bồi thường bằng tiền theo nguyện vọng đã đăng ký."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày nguyên tắc bồi thường, hỗ trợ, tái định cư khi Nhà nước thu hồi đất.",
+   "model": "Bảo đảm dân chủ, khách quan, công bằng, công khai, minh bạch, kịp thời, đúng pháp luật, quan tâm đối tượng chính sách (khoản 1); bồi thường bằng đất cùng mục đích, không có đất thì bằng tiền theo giá đất cụ thể tại thời điểm phê duyệt phương án; được nhận tiền theo nguyện vọng (khoản 2 Điều 91).",
+   "keywords": [
+    "công khai",
+    "bằng đất",
+    "giá đất cụ thể",
+    "phê duyệt phương án"
+   ]
+  }
+ ]
+}

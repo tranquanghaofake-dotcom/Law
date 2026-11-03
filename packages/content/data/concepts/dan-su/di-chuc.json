@@ -1,0 +1,120 @@
+{
+ "id": "di-chuc",
+ "subject": "dan-su",
+ "chapter": "v12",
+ "term": "Di chúc và di chúc hợp pháp",
+ "definition": "Di chúc là sự thể hiện ý chí của cá nhân nhằm chuyển tài sản của mình cho người khác sau khi chết. (…) Di chúc hợp pháp phải có đủ các điều kiện sau đây: a) Người lập di chúc minh mẫn, sáng suốt trong khi lập di chúc; không bị lừa dối, đe doạ, cưỡng ép; b) Nội dung của di chúc không vi phạm điều cấm của luật, không trái đạo đức xã hội; hình thức di chúc không trái quy định của luật.",
+ "plain": "Di chúc là HÀNH VI PHÁP LÝ ĐƠN PHƯƠNG, có hiệu lực từ thời điểm mở thừa kế. Điều kiện hợp pháp: MINH MẪN, SÁNG SUỐT; TỰ NGUYỆN; NỘI DUNG hợp pháp; HÌNH THỨC đúng luật. Đặc biệt: người từ đủ 15 đến dưới 18 tuổi lập di chúc phải bằng văn bản và được cha, mẹ hoặc người giám hộ đồng ý (khoản 2); người bị hạn chế về thể chất hoặc không biết chữ thì người làm chứng lập văn bản, có công chứng, chứng thực (khoản 3).",
+ "example": "Học sinh 16 tuổi lập di chúc miệng để lại chiếc xe đạp cho bạn: không hợp pháp vì người từ đủ 15 đến dưới 18 tuổi phải lập di chúc bằng văn bản và có cha mẹ đồng ý.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 624, khoản 1 Điều 630 Bộ luật Dân sự 2015",
+  "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "quyen-thua-ke",
+  "nguoi-thua-ke-khong-phu-thuoc-di-chuc",
+  "giao-dich-dan-su"
+ ],
+ "keywords": [
+  "ý chí của cá nhân",
+  "sau khi chết",
+  "minh mẫn, sáng suốt",
+  "không bị lừa dối, đe dọa, cưỡng ép"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Di chúc của người từ đủ 15 đến chưa đủ 18 tuổi phải đáp ứng điều kiện gì?",
+   "options": [
+    "Lập thành văn bản và được cha, mẹ hoặc người giám hộ đồng ý",
+    "Phải có công chứng",
+    "Phải có 3 người làm chứng",
+    "Không được lập di chúc"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 630.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 630 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Di chúc là gì theo Điều 624?",
+   "options": [
+    "Sự thể hiện ý chí của cá nhân nhằm chuyển tài sản của mình cho người khác sau khi chết",
+    "Hợp đồng tặng cho có điều kiện",
+    "Thỏa thuận chia tài sản khi còn sống",
+    "Quyết định của Tòa án về thừa kế"
+   ],
+   "answer": 0,
+   "explain": "Điều 624.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 624 Bộ luật Dân sự 2015"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Điều kiện về người lập di chúc",
+   "right": "Điều kiện về nội dung, hình thức",
+   "cases": [
+    {
+     "text": "Minh mẫn, sáng suốt khi lập di chúc",
+     "answer": "left"
+    },
+    {
+     "text": "Không bị lừa dối, đe dọa, cưỡng ép",
+     "answer": "left"
+    },
+    {
+     "text": "Không vi phạm điều cấm của luật, không trái đạo đức xã hội",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 1 Điều 630."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Di chúc là sự thể hiện {{ý chí}} của cá nhân nhằm chuyển tài sản của mình cho người khác sau khi {{chết}}.",
+   "bank_extra": [
+    "thỏa thuận",
+    "kết hôn"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người lập di chúc {{minh mẫn}}, sáng suốt trong khi lập di chúc; không bị lừa dối, đe doạ, cưỡng ép.",
+   "bank_extra": [
+    "khỏe mạnh",
+    "đủ 21 tuổi"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Pháp nhân có thể lập di chúc.",
+   "answer": false,
+   "explain": "Sai. Điều 624: di chúc là ý chí của cá nhân; pháp nhân chỉ có thể là người được hưởng theo di chúc (Điều 609)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm di chúc và các điều kiện để di chúc hợp pháp.",
+   "model": "Di chúc là sự thể hiện ý chí của cá nhân nhằm chuyển tài sản cho người khác sau khi chết (Điều 624). Hợp pháp khi người lập minh mẫn, sáng suốt, không bị lừa dối, đe dọa, cưỡng ép; nội dung không vi phạm điều cấm, không trái đạo đức; hình thức không trái luật (khoản 1 Điều 630); 15–18 tuổi phải văn bản, cha mẹ đồng ý (khoản 2).",
+   "keywords": [
+    "ý chí cá nhân",
+    "minh mẫn",
+    "không bị cưỡng ép",
+    "hình thức"
+   ]
+  }
+ ]
+}

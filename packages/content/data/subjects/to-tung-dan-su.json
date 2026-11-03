@@ -1,0 +1,131 @@
+{
+  "id": "to-tung-dan-su",
+  "title": "Luật Tố tụng dân sự",
+  "short": "TTDS",
+  "chapters": [
+    {
+      "id": "v1",
+      "title": "Vấn đề 1. Khái niệm và các nguyên tắc cơ bản của luật tố tụng dân sự Việt Nam",
+      "lessons": [
+        {
+          "id": "ttds1",
+          "title": "Khái niệm và các nguyên tắc cơ bản của luật tố tụng dân sự Việt Nam",
+          "concepts": [
+            "quyen-yeu-cau-toa-an-bao-ve",
+            "quyen-quyet-dinh-tu-dinh-doat",
+            "xet-xu-cong-khai-tranh-tung"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v2",
+      "title": "Vấn đề 2. Thẩm quyền của Tòa án nhân dân",
+      "lessons": [
+        {
+          "id": "ttds2",
+          "title": "Thẩm quyền của Tòa án nhân dân",
+          "concepts": [
+            "tham-quyen-theo-vu-viec",
+            "tham-quyen-theo-cap",
+            "tham-quyen-theo-lanh-tho"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v3",
+      "title": "Vấn đề 3. Cơ quan tiến hành tố tụng, người tiến hành tố tụng và người tham gia tố tụng",
+      "lessons": [
+        {
+          "id": "ttds3",
+          "title": "Cơ quan tiến hành tố tụng, người tiến hành tố tụng và người tham gia tố tụng",
+          "concepts": [
+            "duong-su"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v4",
+      "title": "Vấn đề 4. Chứng minh và chứng cứ trong tố tụng dân sự",
+      "lessons": [
+        {
+          "id": "ttds4",
+          "title": "Chứng minh và chứng cứ trong tố tụng dân sự",
+          "concepts": [
+            "nghia-vu-chung-minh",
+            "chung-cu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v5",
+      "title": "Vấn đề 5. Biện pháp khẩn cấp tạm thời; thời hạn tố tụng, thời hiệu khởi kiện",
+      "lessons": [
+        {
+          "id": "ttds5",
+          "title": "Biện pháp khẩn cấp tạm thời; thời hạn tố tụng, thời hiệu khởi kiện",
+          "concepts": [
+            "bien-phap-khan-cap-tam-thoi",
+            "thoi-hieu-khoi-kien-ttds"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v6",
+      "title": "Vấn đề 6. Án phí, lệ phí và chi phí tố tụng",
+      "lessons": [
+        {
+          "id": "ttds6",
+          "title": "Án phí, lệ phí và chi phí tố tụng",
+          "concepts": [
+            "an-phi-so-tham"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v7",
+      "title": "Vấn đề 7. Thủ tục giải quyết vụ án dân sự tại Tòa án cấp sơ thẩm",
+      "lessons": [
+        {
+          "id": "ttds7",
+          "title": "Thủ tục giải quyết vụ án dân sự tại Tòa án cấp sơ thẩm",
+          "concepts": [
+            "tra-lai-don-khoi-kien",
+            "hoa-giai-trong-to-tung-dan-su"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v8",
+      "title": "Vấn đề 8. Thủ tục giải quyết vụ án dân sự tại Tòa án cấp phúc thẩm",
+      "lessons": [
+        {
+          "id": "ttds8",
+          "title": "Thủ tục giải quyết vụ án dân sự tại Tòa án cấp phúc thẩm",
+          "concepts": [
+            "khang-cao-phuc-tham"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "v9",
+      "title": "Vấn đề 9. Thủ tục xét lại bản án, quyết định đã có hiệu lực pháp luật",
+      "lessons": [
+        {
+          "id": "ttds9",
+          "title": "Thủ tục xét lại bản án, quyết định đã có hiệu lực pháp luật",
+          "concepts": [
+            "giam-doc-tham-tai-tham"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+ "id": "tinh-moi-sang-che",
+ "subject": "so-huu-tri-tue",
+ "chapter": "v7",
+ "term": "Tính mới của sáng chế",
+ "definition": "Sáng chế được coi là có tính mới nếu không thuộc một trong các trường hợp sau đây: a) Bị bộc lộ công khai dưới hình thức sử dụng, mô tả bằng văn bản hoặc bất kỳ hình thức nào khác ở trong nước hoặc ở nước ngoài trước ngày nộp đơn đăng ký sáng chế hoặc trước ngày ưu tiên trong trường hợp đơn đăng ký sáng chế được hưởng quyền ưu tiên; b) Bị bộc lộ trong đơn đăng ký sáng chế khác có ngày nộp đơn hoặc ngày ưu tiên sớm hơn nhưng được công bố vào hoặc sau ngày nộp đơn hoặc ngày ưu tiên của đơn đăng ký sáng chế đó. Sáng chế được coi là chưa bị bộc lộ công khai nếu chỉ có một số người có hạn được biết và có nghĩa vụ giữ bí mật về sáng chế đó.",
+ "plain": "Tính mới mang tính TOÀN CẦU (\"ở trong nước hoặc ở nước ngoài\"), mốc là NGÀY NỘP ĐƠN hoặc NGÀY ƯU TIÊN. Mất tính mới khi bị BỘC LỘ CÔNG KHAI (sử dụng, mô tả bằng văn bản…) hoặc bị bộc lộ trong đơn khác nộp sớm hơn. Chưa bộc lộ nếu chỉ một số người có hạn biết và CÓ NGHĨA VỤ GIỮ BÍ MẬT. ÂN HẠN (khoản 3): người có quyền đăng ký tự bộc lộ thì còn 12 THÁNG để nộp đơn tại Việt Nam.",
+ "example": "Nhà nghiên cứu công bố bài báo mô tả đầy đủ giải pháp, 18 tháng sau mới nộp đơn: sáng chế đã mất tính mới (quá ân hạn 12 tháng).",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1, khoản 2 Điều 60 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "sang-che",
+  "xac-lap-quyen-shcn"
+ ],
+ "keywords": [
+  "bộc lộ công khai",
+  "trong nước hoặc nước ngoài",
+  "trước ngày nộp đơn, ngày ưu tiên",
+  "có nghĩa vụ giữ bí mật"
+ ],
+ "note": "Điều 60 có nội dung được sửa đổi, bổ sung bởi Luật 42/2019/QH14 (hiệu lực 01/11/2019); Luật 07/2022/QH15 (hiệu lực 01/01/2023) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Sáng chế đã bị mô tả công khai ở nước ngoài trước ngày nộp đơn tại Việt Nam thì sao?",
+   "options": [
+    "Mất tính mới",
+    "Vẫn có tính mới tại Việt Nam",
+    "Chỉ mất tính mới ở nước ngoài",
+    "Không ảnh hưởng"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 60.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 60 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khi nào sáng chế được coi là chưa bị bộc lộ công khai?",
+   "options": [
+    "Chỉ một số người có hạn biết và có nghĩa vụ giữ bí mật",
+    "Đã đăng trên báo nhưng ít người đọc",
+    "Đã trưng bày tại triển lãm công cộng",
+    "Đã bán sản phẩm ra thị trường"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 60.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 60 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Mất tính mới",
+   "right": "Chưa mất tính mới",
+   "cases": [
+    {
+     "text": "Đã bán sản phẩm công khai trước khi nộp đơn",
+     "answer": "left"
+    },
+    {
+     "text": "Chỉ nhóm nghiên cứu ký cam kết bảo mật biết",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 60."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Sáng chế mất tính mới nếu bị bộc lộ công khai ở trong nước hoặc ở {{nước ngoài}} trước ngày {{nộp đơn}} đăng ký sáng chế hoặc trước ngày ưu tiên.",
+   "bank_extra": [
+    "khu vực",
+    "cấp bằng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Sáng chế được coi là chưa bị bộc lộ công khai nếu chỉ có một số người có hạn được biết và có nghĩa vụ giữ {{bí mật}}.",
+   "bank_extra": [
+    "sổ sách",
+    "liên lạc"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tính mới của sáng chế chỉ xét trong phạm vi lãnh thổ Việt Nam.",
+   "answer": false,
+   "explain": "Sai. Điểm a khoản 1 Điều 60: \"ở trong nước hoặc ở nước ngoài\"."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày điều kiện tính mới của sáng chế.",
+   "model": "Sáng chế có tính mới nếu không bị bộc lộ công khai (sử dụng, mô tả bằng văn bản…) ở trong nước hoặc nước ngoài trước ngày nộp đơn, ngày ưu tiên, và không bị bộc lộ trong đơn khác có ngày nộp sớm hơn (khoản 1 Điều 60); chưa bộc lộ nếu chỉ số người có hạn biết và có nghĩa vụ giữ bí mật (khoản 2).",
+   "keywords": [
+    "bộc lộ công khai",
+    "nước ngoài",
+    "ngày nộp đơn",
+    "giữ bí mật"
+   ]
+  }
+ ]
+}

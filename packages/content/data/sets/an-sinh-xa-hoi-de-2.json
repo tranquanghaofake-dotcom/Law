@@ -1,0 +1,139 @@
+{
+  "id": "an-sinh-xa-hoi-de-2",
+  "group": "an-sinh-xa-hoi",
+  "title": "Đề kiểm tra An sinh xã hội – Thất nghiệp, y tế, ưu đãi",
+  "subtitle": "10 câu theo đề cương HLU, vấn đề 3–5",
+  "updated": "2026-11-01",
+  "questions": [
+    {
+      "q": "Mức hưởng trợ cấp thất nghiệp hằng tháng?",
+      "options": [
+        "50% lương bình quân 12 tháng",
+        "60% bình quân tiền lương tháng đóng BHTN của 06 tháng gần nhất, tối đa 05 lần lương tối thiểu vùng",
+        "75% lương tháng cuối",
+        "Bằng lương tối thiểu vùng"
+      ],
+      "answer": 1,
+      "explain": "Khoản 1 Điều 39.",
+      "basis": "Điều 39 Luật Việc làm 2025 (74/2025/QH15)",
+      "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Luat-Viec-lam-2025-so-74-2025-QH15-530912.aspx"
+    },
+    {
+      "q": "Điều kiện về thời gian đóng BHTN để hưởng trợ cấp thất nghiệp (hợp đồng từ 12 tháng trở lên)?",
+      "options": [
+        "Đủ 12 tháng trong 24 tháng trước khi chấm dứt hợp đồng",
+        "Đủ 6 tháng trong 12 tháng",
+        "Đủ 24 tháng liên tục",
+        "Đủ 36 tháng"
+      ],
+      "answer": 0,
+      "explain": "Điểm b khoản 1 Điều 38.",
+      "basis": "Điều 38 Luật Việc làm 2025 (74/2025/QH15)",
+      "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Luat-Viec-lam-2025-so-74-2025-QH15-530912.aspx"
+    },
+    {
+      "q": "Người lao động phải nộp hồ sơ hưởng trợ cấp thất nghiệp trong thời hạn nào?",
+      "options": [
+        "01 tháng",
+        "03 tháng",
+        "06 tháng",
+        "12 tháng"
+      ],
+      "answer": 1,
+      "explain": "Điểm c khoản 1 Điều 38.",
+      "basis": "Điều 38 Luật Việc làm 2025 (74/2025/QH15)",
+      "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Luat-Viec-lam-2025-so-74-2025-QH15-530912.aspx"
+    },
+    {
+      "q": "Thời gian hưởng trợ cấp thất nghiệp tối đa?",
+      "options": [
+        "06 tháng",
+        "12 tháng",
+        "24 tháng",
+        "36 tháng"
+      ],
+      "answer": 1,
+      "explain": "Khoản 2 Điều 39.",
+      "basis": "Điều 39 Luật Việc làm 2025 (74/2025/QH15)",
+      "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Luat-Viec-lam-2025-so-74-2025-QH15-530912.aspx"
+    },
+    {
+      "q": "Chế độ nào thuộc bảo hiểm thất nghiệp?",
+      "options": [
+        "Hỗ trợ người sử dụng lao động đào tạo để duy trì việc làm",
+        "Chế độ thai sản",
+        "Lương hưu",
+        "Trợ cấp tuất"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 30.",
+      "basis": "Điều 30 Luật Việc làm 2025 (74/2025/QH15)",
+      "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Luat-Viec-lam-2025-so-74-2025-QH15-530912.aspx"
+    },
+    {
+      "q": "Bảo hiểm y tế có tính chất gì?",
+      "options": [
+        "Bắt buộc, không vì lợi nhuận, do Nhà nước tổ chức",
+        "Tự nguyện, vì lợi nhuận",
+        "Do công đoàn tổ chức",
+        "Chỉ cho người nghèo"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 2.",
+      "basis": "Điều 2 Luật Bảo hiểm y tế (VBHN 40/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bao-hiem/Van-ban-hop-nhat-40-VBHN-VPQH-2026-Luat-Bao-hiem-y-te-699508.aspx"
+    },
+    {
+      "q": "Mức hưởng BHYT của đối tượng khác khi khám chữa bệnh đúng quy định?",
+      "options": [
+        "100%",
+        "95%",
+        "80%",
+        "70%"
+      ],
+      "answer": 2,
+      "explain": "Điểm e khoản 1 Điều 22.",
+      "basis": "Điều 22 Luật Bảo hiểm y tế (VBHN 40/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bao-hiem/Van-ban-hop-nhat-40-VBHN-VPQH-2026-Luat-Bao-hiem-y-te-699508.aspx"
+    },
+    {
+      "q": "Người thuộc nhiều đối tượng tham gia BHYT được hưởng theo đối tượng nào?",
+      "options": [
+        "Đối tượng có quyền lợi cao nhất",
+        "Đối tượng đăng ký sau cùng",
+        "Cộng dồn tất cả",
+        "Do cơ sở khám chữa bệnh chọn"
+      ],
+      "answer": 0,
+      "explain": "Khoản 2 Điều 22.",
+      "basis": "Điều 22 Luật Bảo hiểm y tế (VBHN 40/VBHN-VPQH 2026)",
+      "url": "https://thuvienphapluat.vn/van-ban/Bao-hiem/Van-ban-hop-nhat-40-VBHN-VPQH-2026-Luat-Bao-hiem-y-te-699508.aspx"
+    },
+    {
+      "q": "Ai là thân nhân của người có công theo Pháp lệnh 2020?",
+      "options": [
+        "Anh, chị, em ruột",
+        "Cha đẻ, mẹ đẻ, vợ hoặc chồng, con, người có công nuôi liệt sỹ",
+        "Ông bà nội ngoại",
+        "Cháu ruột"
+      ],
+      "answer": 1,
+      "explain": "Khoản 2 Điều 3.",
+      "basis": "Điều 3 Pháp lệnh Ưu đãi người có công 2020 (02/2020/UBTVQH14)",
+      "url": "https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Phap-lenh-02-2020-UBTVQH14-uu-dai-nguoi-co-cong-voi-Cach-mang-460718.aspx"
+    },
+    {
+      "q": "Chế độ nào thuộc \"ưu đãi khác\" với người có công?",
+      "options": [
+        "Trợ cấp thất nghiệp",
+        "Điều dưỡng phục hồi sức khỏe",
+        "Lương hưu",
+        "Trợ cấp thai sản"
+      ],
+      "answer": 1,
+      "explain": "Khoản 2 Điều 5.",
+      "basis": "Điều 5 Pháp lệnh Ưu đãi người có công 2020 (02/2020/UBTVQH14)",
+      "url": "https://thuvienphapluat.vn/van-ban/Van-hoa-Xa-hoi/Phap-lenh-02-2020-UBTVQH14-uu-dai-nguoi-co-cong-voi-Cach-mang-460718.aspx"
+    }
+  ]
+}

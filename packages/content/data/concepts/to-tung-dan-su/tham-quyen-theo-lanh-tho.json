@@ -1,0 +1,114 @@
+{
+ "id": "tham-quyen-theo-lanh-tho",
+ "subject": "to-tung-dan-su",
+ "chapter": "v2",
+ "term": "Thẩm quyền theo lãnh thổ",
+ "definition": "Thẩm quyền giải quyết vụ án dân sự của Tòa án theo lãnh thổ được xác định như sau: a) Tòa án nơi bị đơn cư trú, làm việc, nếu bị đơn là cá nhân hoặc nơi bị đơn có trụ sở, nếu bị đơn là cơ quan, tổ chức có thẩm quyền giải quyết theo thủ tục sơ thẩm những tranh chấp về dân sự, hôn nhân và gia đình, kinh doanh, thương mại, lao động quy định tại các điều 26, 28, 30 và 32 của Bộ luật này; b) Các đương sự có quyền tự thoả thuận với nhau bằng văn bản yêu cầu Tòa án nơi cư trú, làm việc của nguyên đơn, nếu nguyên đơn là cá nhân hoặc nơi có trụ sở của nguyên đơn, nếu nguyên đơn là cơ quan, tổ chức giải quyết những tranh chấp về dân sự, hôn nhân và gia đình, kinh doanh, thương mại, lao động quy định tại các điều 26, 28, 30 và 32 của Bộ luật này;",
+ "plain": "Nguyên tắc chung: TÒA ÁN NƠI BỊ ĐƠN cư trú, làm việc (cá nhân) hoặc có trụ sở (tổ chức). Các bên có thể THỎA THUẬN BẰNG VĂN BẢN chọn Tòa án nơi NGUYÊN ĐƠN. Ngoại lệ bắt buộc: tranh chấp về BẤT ĐỘNG SẢN → Tòa án NƠI CÓ BẤT ĐỘNG SẢN (điểm c). Nguyên đơn được LỰA CHỌN trong một số trường hợp (Điều 40): không biết nơi cư trú của bị đơn, tranh chấp phát sinh từ hoạt động chi nhánh, bồi thường ngoài hợp đồng (nơi xảy ra việc gây thiệt hại)…",
+ "example": "Bị đơn ở Đà Nẵng, nguyên đơn ở Hà Nội tranh chấp hợp đồng vay: mặc định khởi kiện tại Tòa án khu vực nơi bị đơn cư trú ở Đà Nẵng, trừ khi hai bên thỏa thuận bằng văn bản chọn Tòa án ở Hà Nội.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điểm a, b khoản 1 Điều 39 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thu-tuc-To-tung/Van-ban-hop-nhat-21-VBHN-VPQH-2026-Bo-luat-To-dung-dan-su-696578.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tham-quyen-theo-cap",
+  "tham-quyen-theo-vu-viec"
+ ],
+ "keywords": [
+  "nơi bị đơn cư trú, làm việc, có trụ sở",
+  "thỏa thuận bằng văn bản chọn nơi nguyên đơn",
+  "nơi có bất động sản"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nguyên tắc chung xác định Tòa án theo lãnh thổ trong vụ án dân sự là gì?",
+   "options": [
+    "Tòa án nơi bị đơn cư trú, làm việc hoặc có trụ sở",
+    "Tòa án nơi nguyên đơn cư trú",
+    "Tòa án nơi ký hợp đồng",
+    "Tòa án do Chánh án TAND tối cao chỉ định"
+   ],
+   "answer": 0,
+   "explain": "Điểm a khoản 1 Điều 39.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 39 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Các đương sự có thể thỏa thuận chọn Tòa án nơi nguyên đơn cư trú bằng hình thức nào?",
+   "options": [
+    "Bằng văn bản",
+    "Bằng lời nói",
+    "Không được thỏa thuận",
+    "Qua điện thoại"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 1 Điều 39.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 39 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Tòa án nơi bị đơn cư trú",
+   "right": "Tòa án nơi có bất động sản",
+   "cases": [
+    {
+     "text": "Tranh chấp hợp đồng vay tiền",
+     "answer": "left"
+    },
+    {
+     "text": "Tranh chấp quyền sử dụng đất",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 39."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tòa án nơi {{bị đơn}} cư trú, làm việc có thẩm quyền giải quyết theo thủ tục sơ thẩm; các đương sự có quyền tự thoả thuận bằng {{văn bản}} yêu cầu Tòa án nơi nguyên đơn cư trú giải quyết.",
+   "bank_extra": [
+    "nguyên đơn",
+    "lời nói"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nếu bị đơn là cơ quan, tổ chức thì Tòa án nơi bị đơn có {{trụ sở}} có thẩm quyền.",
+   "bank_extra": [
+    "chi nhánh",
+    "kho hàng"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tranh chấp quyền sử dụng đất có thể khởi kiện ở Tòa án nơi bị đơn cư trú dù đất ở tỉnh khác.",
+   "answer": false,
+   "explain": "Sai. Điểm c khoản 1 Điều 39: tranh chấp bất động sản do Tòa án nơi có bất động sản giải quyết."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày nguyên tắc xác định thẩm quyền theo lãnh thổ.",
+   "model": "Tòa án nơi bị đơn cư trú, làm việc (cá nhân) hoặc có trụ sở (tổ chức) (điểm a); đương sự thỏa thuận bằng văn bản chọn Tòa án nơi nguyên đơn (điểm b); tranh chấp bất động sản do Tòa án nơi có bất động sản (điểm c khoản 1 Điều 39); nguyên đơn được lựa chọn trong trường hợp Điều 40.",
+   "keywords": [
+    "bị đơn",
+    "văn bản",
+    "bất động sản",
+    "lựa chọn"
+   ]
+  }
+ ]
+}

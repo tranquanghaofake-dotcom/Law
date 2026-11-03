@@ -1,0 +1,115 @@
+{
+ "id": "co-y-pham-toi",
+ "subject": "hinh-su",
+ "chapter": "v8",
+ "term": "Cố ý phạm tội",
+ "definition": "Cố ý phạm tội là phạm tội trong những trường hợp sau đây: 1. Người phạm tội nhận thức rõ hành vi của mình là nguy hiểm cho xã hội, thấy trước hậu quả của hành vi đó và mong muốn hậu quả xảy ra; 2. Người phạm tội nhận thức rõ hành vi của mình là nguy hiểm cho xã hội, thấy trước hậu quả của hành vi đó có thể xảy ra, tuy không mong muốn nhưng vẫn có ý thức để mặc cho hậu quả xảy ra.",
+ "plain": "Hai loại: CỐ Ý TRỰC TIẾP (khoản 1): nhận thức rõ, thấy trước, MONG MUỐN hậu quả. CỐ Ý GIÁN TIẾP (khoản 2): nhận thức rõ, thấy trước hậu quả CÓ THỂ xảy ra, KHÔNG MONG MUỐN nhưng CÓ Ý THỨC ĐỂ MẶC. Điểm chung: lý trí \"nhận thức rõ\" và \"thấy trước\"; khác nhau ở ý chí (mong muốn hay bỏ mặc). Phạm tội chưa đạt, chuẩn bị phạm tội chỉ có thể với lỗi cố ý trực tiếp.",
+ "example": "A đâm B nhiều nhát vào ngực vì muốn B chết: cố ý trực tiếp. A đốt rẫy gần nhà dân, biết lửa có thể cháy lan nhưng mặc kệ để đốt nhanh: cố ý gián tiếp.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 10 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "vo-y-pham-toi",
+  "khai-niem-toi-pham"
+ ],
+ "keywords": [
+  "nhận thức rõ",
+  "thấy trước hậu quả",
+  "mong muốn",
+  "để mặc"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người phạm tội nhận thức rõ hành vi nguy hiểm, thấy trước hậu quả có thể xảy ra, không mong muốn nhưng có ý thức để mặc. Đây là lỗi gì?",
+   "options": [
+    "Cố ý gián tiếp",
+    "Cố ý trực tiếp",
+    "Vô ý vì quá tự tin",
+    "Vô ý do cẩu thả"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 10.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 10 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Dấu hiệu ý chí đặc trưng của lỗi cố ý trực tiếp là gì?",
+   "options": [
+    "Mong muốn hậu quả xảy ra",
+    "Để mặc hậu quả xảy ra",
+    "Cho rằng hậu quả sẽ không xảy ra",
+    "Không thấy trước hậu quả"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 10.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 10 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Cố ý trực tiếp",
+   "right": "Cố ý gián tiếp",
+   "cases": [
+    {
+     "text": "Mong muốn hậu quả xảy ra",
+     "answer": "left"
+    },
+    {
+     "text": "Không mong muốn nhưng có ý thức để mặc",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 10."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người phạm tội nhận thức rõ hành vi của mình là nguy hiểm cho xã hội, thấy trước hậu quả của hành vi đó và {{mong muốn}} hậu quả xảy ra.",
+   "bank_extra": [
+    "ngăn ngừa",
+    "không thấy"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Cố ý gián tiếp: tuy không mong muốn nhưng vẫn có ý thức {{để mặc}} cho hậu quả xảy ra.",
+   "bank_extra": [
+    "ngăn chặn",
+    "khắc phục"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người không mong muốn hậu quả xảy ra thì không thể có lỗi cố ý.",
+   "answer": false,
+   "explain": "Sai. Cố ý gián tiếp: không mong muốn nhưng có ý thức để mặc hậu quả (khoản 2 Điều 10)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Phân biệt lỗi cố ý trực tiếp và cố ý gián tiếp.",
+   "model": "Cố ý trực tiếp: nhận thức rõ hành vi nguy hiểm, thấy trước hậu quả và mong muốn hậu quả xảy ra; cố ý gián tiếp: nhận thức rõ, thấy trước hậu quả có thể xảy ra, không mong muốn nhưng có ý thức để mặc (Điều 10).",
+   "keywords": [
+    "nhận thức rõ",
+    "thấy trước",
+    "mong muốn",
+    "để mặc"
+   ]
+  }
+ ]
+}

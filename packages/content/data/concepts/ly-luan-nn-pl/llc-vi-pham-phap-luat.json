@@ -1,0 +1,108 @@
+{
+ "id": "llc-vi-pham-phap-luat",
+ "subject": "ly-luan-nn-pl",
+ "chapter": "v8",
+ "term": "Vi phạm pháp luật",
+ "definition": "Vi phạm pháp luật là hành vi trái pháp luật, có lỗi, do chủ thể có năng lực trách nhiệm pháp lý thực hiện, xâm hại các quan hệ xã hội được pháp luật bảo vệ.",
+ "plain": "Bốn dấu hiệu, thiếu một thì không phải vi phạm pháp luật: (1) HÀNH VI xác định của con người (ý nghĩ, hiện tượng tự nhiên không phải); (2) TRÁI PHÁP LUẬT — làm điều cấm, không làm điều bắt buộc, vượt quá quyền; (3) do chủ thể CÓ NĂNG LỰC TRÁCH NHIỆM PHÁP LÝ (đủ tuổi, nhận thức, điều khiển được hành vi); (4) CÓ LỖI — thái độ tâm lý tiêu cực khi chủ thể có thể lựa chọn khác. Phân loại: vi phạm HÌNH SỰ (tội phạm — nguy hiểm cao nhất), HÀNH CHÍNH, KỶ LUẬT nhà nước, DÂN SỰ. Phân biệt hành vi trái pháp luật nhưng không có lỗi (tình thế cấp thiết, sự kiện bất ngờ) — không phải vi phạm.",
+ "example": "Người tâm thần đốt nhà: hành vi trái pháp luật, có thiệt hại, nhưng không có năng lực trách nhiệm pháp lý → không phải vi phạm pháp luật (có thể áp dụng biện pháp bắt buộc chữa bệnh).",
+ "source": {
+  "kind": "textbook",
+  "cite": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (Drive HLU/KÌ I NĂM I/LLCNN&PL/TÀI LIỆU ÔN THI LLC: VD8, VD9, VD11, VD12, VD13) và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "llc-cau-thanh-vppl",
+  "llc-trach-nhiem-phap-ly",
+  "llc-toi-pham",
+  "llc-vi-pham-hanh-chinh"
+ ],
+ "keywords": [
+  "hành vi",
+  "trái pháp luật",
+  "có lỗi",
+  "năng lực trách nhiệm pháp lý"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Dấu hiệu nào KHÔNG phải dấu hiệu của vi phạm pháp luật?",
+   "options": [
+    "Gây thiệt hại vật chất lớn",
+    "Hành vi trái pháp luật",
+    "Có lỗi",
+    "Chủ thể có năng lực trách nhiệm pháp lý"
+   ],
+   "answer": 0,
+   "explain": "Thiệt hại không phải dấu hiệu bắt buộc; nhiều vi phạm chỉ cần hành vi."
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ý định phạm tội chưa thể hiện ra hành vi có phải vi phạm pháp luật không?",
+   "options": [
+    "Không, vì vi phạm pháp luật phải là hành vi xác định",
+    "Có, vì đã có ý định",
+    "Có, nếu ý định nguy hiểm",
+    "Tùy tòa án"
+   ],
+   "answer": 0,
+   "explain": "VD13: dấu hiệu hành vi."
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Vi phạm pháp luật",
+   "right": "Không phải vi phạm pháp luật",
+   "cases": [
+    {
+     "text": "Người 30 tuổi cố ý trốn thuế",
+     "answer": "left"
+    },
+    {
+     "text": "Trẻ 10 tuổi làm vỡ kính cửa hàng",
+     "answer": "right"
+    }
+   ],
+   "explain": "VD13: năng lực trách nhiệm pháp lý."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Vi phạm pháp luật là hành vi {{trái pháp luật}}, có {{lỗi}}, do chủ thể có năng lực trách nhiệm pháp lý thực hiện.",
+   "bank_extra": [
+    "trái đạo đức",
+    "động cơ"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Bốn loại vi phạm pháp luật: hình sự, {{hành chính}}, kỷ luật nhà nước và {{dân sự}}.",
+   "bank_extra": [
+    "đạo đức",
+    "quốc tế"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi hành vi trái pháp luật đều là vi phạm pháp luật.",
+   "answer": false,
+   "explain": "Sai. Còn cần có lỗi và chủ thể có năng lực trách nhiệm pháp lý; hành vi trái luật trong tình thế cấp thiết không có lỗi."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu khái niệm, dấu hiệu và phân loại vi phạm pháp luật.",
+   "model": "Hành vi trái pháp luật, có lỗi, do chủ thể có năng lực trách nhiệm pháp lý thực hiện, xâm hại quan hệ xã hội được pháp luật bảo vệ; bốn dấu hiệu; bốn loại: hình sự, hành chính, kỷ luật, dân sự.",
+   "keywords": [
+    "hành vi",
+    "trái pháp luật",
+    "lỗi",
+    "năng lực trách nhiệm pháp lý"
+   ]
+  }
+ ]
+}

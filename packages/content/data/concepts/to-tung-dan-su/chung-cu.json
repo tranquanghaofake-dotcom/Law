@@ -1,0 +1,119 @@
+{
+ "id": "chung-cu",
+ "subject": "to-tung-dan-su",
+ "chapter": "v4",
+ "term": "Chứng cứ và nguồn chứng cứ",
+ "definition": "Chứng cứ trong vụ việc dân sự là những gì có thật được đương sự và cơ quan, tổ chức, cá nhân khác giao nộp, xuất trình cho Tòa án trong quá trình tố tụng hoặc do Tòa án thu thập được theo trình tự, thủ tục do Bộ luật này quy định và được Tòa án sử dụng làm căn cứ để xác định các tình tiết khách quan của vụ án cũng như xác định yêu cầu hay sự phản đối của đương sự là có căn cứ và hợp pháp. (…) Chứng cứ được thu thập từ các nguồn sau đây: 1. Tài liệu đọc được, nghe được, nhìn được, dữ liệu điện tử; 2. Vật chứng; 3. Lời khai của đương sự; 4. Lời khai của người làm chứng; 5. Kết luận giám định;",
+ "plain": "Ba thuộc tính của chứng cứ: KHÁCH QUAN (\"có thật\"), LIÊN QUAN (dùng xác định tình tiết của vụ án), HỢP PHÁP (thu thập theo TRÌNH TỰ, THỦ TỤC luật định). Nguồn chứng cứ (Điều 94): tài liệu đọc, nghe, nhìn được, DỮ LIỆU ĐIỆN TỬ; vật chứng; lời khai đương sự, người làm chứng; kết luận giám định; biên bản thẩm định tại chỗ; kết quả định giá; vi bằng; văn bản công chứng, chứng thực; nguồn khác. Phân biệt NGUỒN chứng cứ với CHỨNG CỨ (thông tin rút ra từ nguồn).",
+ "example": "Tin nhắn Zalo thừa nhận khoản nợ (dữ liệu điện tử) có thể là nguồn chứng cứ, nếu được xác định có thật và thu thập hợp pháp.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 93, khoản 1–5 Điều 94 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thu-tuc-To-tung/Van-ban-hop-nhat-21-VBHN-VPQH-2026-Bo-luat-To-dung-dan-su-696578.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "nghia-vu-chung-minh",
+  "duong-su"
+ ],
+ "keywords": [
+  "những gì có thật",
+  "thu thập theo trình tự, thủ tục",
+  "dữ liệu điện tử",
+  "kết luận giám định"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Yếu tố nào KHÔNG thuộc khái niệm chứng cứ theo Điều 93?",
+   "options": [
+    "Do Viện kiểm sát phê duyệt",
+    "Là những gì có thật",
+    "Được giao nộp, xuất trình hoặc Tòa án thu thập theo trình tự luật định",
+    "Được Tòa án dùng làm căn cứ xác định tình tiết khách quan"
+   ],
+   "answer": 0,
+   "explain": "Điều 93.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 93 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Dữ liệu điện tử có phải là nguồn chứng cứ không?",
+   "options": [
+    "Có, theo khoản 1 Điều 94",
+    "Không",
+    "Chỉ khi được công chứng",
+    "Chỉ trong vụ án thương mại"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 94.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 94 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Nguồn chứng cứ",
+   "right": "Không phải nguồn chứng cứ theo Điều 94",
+   "cases": [
+    {
+     "text": "Kết luận giám định",
+     "answer": "left"
+    },
+    {
+     "text": "Lời đồn trên mạng không xác định nguồn",
+     "answer": "right"
+    },
+    {
+     "text": "Vật chứng",
+     "answer": "left"
+    }
+   ],
+   "explain": "Điều 94."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chứng cứ trong vụ việc dân sự là những gì có {{thật}} được giao nộp, xuất trình cho Tòa án hoặc do Tòa án thu thập được theo {{trình tự, thủ tục}} do Bộ luật này quy định.",
+   "bank_extra": [
+    "lợi",
+    "thỏa thuận"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chứng cứ được thu thập từ tài liệu đọc được, nghe được, nhìn được, dữ liệu {{điện tử}}.",
+   "bank_extra": [
+    "cá nhân",
+    "mật"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mọi tài liệu đương sự nộp cho Tòa án đều mặc nhiên là chứng cứ.",
+   "answer": false,
+   "explain": "Sai. Phải có thật, thu thập theo trình tự luật định và được Tòa án dùng làm căn cứ (Điều 93)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm chứng cứ và các nguồn chứng cứ.",
+   "model": "Chứng cứ là những gì có thật được giao nộp, xuất trình hoặc Tòa án thu thập theo trình tự luật định và được dùng làm căn cứ xác định tình tiết khách quan, yêu cầu của đương sự (Điều 93); nguồn: tài liệu, dữ liệu điện tử, vật chứng, lời khai, kết luận giám định, thẩm định tại chỗ, định giá, văn bản công chứng… (Điều 94).",
+   "keywords": [
+    "có thật",
+    "trình tự",
+    "dữ liệu điện tử",
+    "giám định"
+   ]
+  }
+ ]
+}

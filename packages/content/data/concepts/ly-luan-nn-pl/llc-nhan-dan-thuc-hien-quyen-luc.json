@@ -1,0 +1,117 @@
+{
+ "id": "llc-nhan-dan-thuc-hien-quyen-luc",
+ "subject": "ly-luan-nn-pl",
+ "chapter": "v3",
+ "term": "Nhân dân thực hiện quyền lực nhà nước",
+ "definition": "Nhân dân thực hiện quyền lực nhà nước bằng dân chủ trực tiếp, bằng dân chủ đại diện thông qua Quốc hội, Hội đồng nhân dân và thông qua các cơ quan khác của Nhà nước.",
+ "plain": "Cụ thể hóa chủ quyền nhân dân (khoản 2 Điều 2: tất cả quyền lực nhà nước thuộc về Nhân dân). Hai phương thức: DÂN CHỦ TRỰC TIẾP — nhân dân tự quyết định (trưng cầu ý dân, bầu cử, biểu quyết ở cộng đồng dân cư, kiến nghị, khiếu nại); DÂN CHỦ ĐẠI DIỆN — qua cơ quan dân cử (Quốc hội, Hội đồng nhân dân) và các cơ quan nhà nước khác. Hiến pháp 2013 bổ sung \"dân chủ trực tiếp\" và \"các cơ quan khác của Nhà nước\" so với Hiến pháp 1992 (chỉ nêu Quốc hội, HĐND). Trong lý luận, nhân dân là chủ thể quyền lực là dấu hiệu đầu tiên của nhà nước pháp quyền.",
+ "example": "Cử tri bỏ phiếu bầu đại biểu Quốc hội (trực tiếp) rồi Quốc hội thay mặt cử tri quyết định ngân sách (đại diện).",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 6 Hiến pháp 2013",
+  "url": "https://vbpl.vn/van-ban/chi-tiet/hien-phap-nam-2013--32801"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "llc-nha-nuoc-phap-quyen",
+  "llc-quyen-luc-nha-nuoc-thong-nhat",
+  "llc-dang-lanh-dao"
+ ],
+ "keywords": [
+  "dân chủ trực tiếp",
+  "dân chủ đại diện",
+  "Quốc hội",
+  "Hội đồng nhân dân"
+ ],
+ "note": "Hiến pháp 2013 (hiệu lực 01/01/2014) được sửa đổi, bổ sung bởi Nghị quyết 203/2025/QH15 (hiệu lực 16/6/2025) — các điều được trích (Điều 2, 4, 6) không thuộc phạm vi sửa đổi.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 6 Hiến pháp 2013, Nhân dân thực hiện quyền lực nhà nước bằng cách nào?",
+   "options": [
+    "Dân chủ trực tiếp và dân chủ đại diện",
+    "Chỉ qua Quốc hội",
+    "Chỉ qua trưng cầu ý dân",
+    "Chỉ qua Đảng"
+   ],
+   "answer": 0,
+   "explain": "Điều 6.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 6 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Điểm mới của Điều 6 Hiến pháp 2013 so với Hiến pháp 1992?",
+   "options": [
+    "Ghi nhận dân chủ trực tiếp và các cơ quan khác của Nhà nước",
+    "Bỏ Hội đồng nhân dân",
+    "Bỏ Quốc hội",
+    "Thêm Tòa án Hiến pháp"
+   ],
+   "answer": 0,
+   "explain": "Hiến pháp 1992 Điều 6 chỉ nêu thông qua Quốc hội và HĐND.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 6 Hiến pháp 2013"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Dân chủ trực tiếp",
+   "right": "Dân chủ đại diện",
+   "cases": [
+    {
+     "text": "Cử tri biểu quyết trong trưng cầu ý dân",
+     "answer": "left"
+    },
+    {
+     "text": "Hội đồng nhân dân tỉnh quyết định mức học phí",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 6."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nhân dân thực hiện quyền lực nhà nước bằng dân chủ {{trực tiếp}}, bằng dân chủ {{đại diện}} thông qua Quốc hội, Hội đồng nhân dân.",
+   "bank_extra": [
+    "tập trung",
+    "gián tiếp qua Đảng"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nước Cộng hòa xã hội chủ nghĩa Việt Nam do {{Nhân dân}} làm chủ; tất cả {{quyền lực nhà nước}} thuộc về Nhân dân.",
+   "bank_extra": [
+    "Quốc hội",
+    "quyền lực kinh tế"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hiến pháp 2013 chỉ ghi nhận hình thức dân chủ đại diện.",
+   "answer": false,
+   "explain": "Sai. Điều 6 ghi nhận cả dân chủ trực tiếp và dân chủ đại diện."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các phương thức Nhân dân thực hiện quyền lực nhà nước theo Điều 6.",
+   "model": "Dân chủ trực tiếp (bầu cử, trưng cầu ý dân…) và dân chủ đại diện thông qua Quốc hội, Hội đồng nhân dân và các cơ quan khác của Nhà nước; cụ thể hóa chủ quyền nhân dân tại khoản 2 Điều 2.",
+   "keywords": [
+    "trực tiếp",
+    "đại diện",
+    "Quốc hội",
+    "Hội đồng nhân dân"
+   ]
+  }
+ ]
+}

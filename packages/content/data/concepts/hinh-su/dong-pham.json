@@ -1,0 +1,119 @@
+{
+ "id": "dong-pham",
+ "subject": "hinh-su",
+ "chapter": "v10",
+ "term": "Đồng phạm và các loại người đồng phạm",
+ "definition": "Đồng phạm là trường hợp có hai người trở lên cố ý cùng thực hiện một tội phạm. Phạm tội có tổ chức là hình thức đồng phạm có sự câu kết chặt chẽ giữa những người cùng thực hiện tội phạm. Người đồng phạm bao gồm người tổ chức, người thực hành, người xúi giục, người giúp sức. Người thực hành là người trực tiếp thực hiện tội phạm. Người tổ chức là người chủ mưu, cầm đầu, chỉ huy việc thực hiện tội phạm. Người xúi giục là người kích động, dụ dỗ, thúc đẩy người khác thực hiện tội phạm. Người giúp sức là người tạo điều kiện tinh thần hoặc vật chất cho việc thực hiện tội phạm. Người đồng phạm không phải chịu trách nhiệm hình sự về hành vi vượt quá của người thực hành.",
+ "plain": "Dấu hiệu: KHÁCH QUAN (từ HAI NGƯỜI trở lên, có đủ điều kiện chủ thể, CÙNG THỰC HIỆN một tội) và CHỦ QUAN (CÙNG CỐ Ý). Không có đồng phạm với lỗi vô ý. Bốn loại người đồng phạm: TỔ CHỨC (chủ mưu, cầm đầu, chỉ huy), THỰC HÀNH (trực tiếp thực hiện), XÚI GIỤC (kích động, dụ dỗ, thúc đẩy), GIÚP SỨC (tạo điều kiện tinh thần, vật chất). PHẠM TỘI CÓ TỔ CHỨC: câu kết chặt chẽ. Đồng phạm không chịu TNHS về hành vi VƯỢT QUÁ của người thực hành.",
+ "example": "A bàn kế hoạch, B canh gác, C trực tiếp vào nhà lấy tài sản: A là người tổ chức, B là người giúp sức, C là người thực hành của tội trộm cắp. Nếu C còn đánh chủ nhà ngoài kế hoạch, A và B không chịu TNHS về hành vi vượt quá đó.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 17 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)",
+  "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "che-giau-toi-pham",
+  "tu-y-nua-chung-cham-dut"
+ ],
+ "keywords": [
+  "hai người trở lên",
+  "cố ý cùng thực hiện",
+  "tổ chức, thực hành, xúi giục, giúp sức",
+  "vượt quá của người thực hành"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người kích động, dụ dỗ, thúc đẩy người khác thực hiện tội phạm là loại người đồng phạm nào?",
+   "options": [
+    "Người xúi giục",
+    "Người tổ chức",
+    "Người giúp sức",
+    "Người thực hành"
+   ],
+   "answer": 0,
+   "explain": "Khoản 3 Điều 17.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 17 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Người đồng phạm có chịu TNHS về hành vi vượt quá của người thực hành không?",
+   "options": [
+    "Không",
+    "Có, như người thực hành",
+    "Có nếu là người tổ chức",
+    "Có nếu hậu quả nghiêm trọng"
+   ],
+   "answer": 0,
+   "explain": "Khoản 4 Điều 17.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 4 Điều 17 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Người tổ chức",
+   "right": "Người giúp sức",
+   "cases": [
+    {
+     "text": "Chủ mưu, cầm đầu, chỉ huy việc thực hiện tội phạm",
+     "answer": "left"
+    },
+    {
+     "text": "Cung cấp xe để tẩu thoát",
+     "answer": "right"
+    },
+    {
+     "text": "Đứng canh gác cho người khác trộm",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 3 Điều 17."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đồng phạm là trường hợp có {{hai người}} trở lên {{cố ý}} cùng thực hiện một tội phạm.",
+   "bank_extra": [
+    "ba người",
+    "vô ý"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Phạm tội có tổ chức là hình thức đồng phạm có sự {{câu kết chặt chẽ}} giữa những người cùng thực hiện tội phạm.",
+   "bank_extra": [
+    "quen biết",
+    "vô tình"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Hai người cùng vô ý gây tai nạn chết người là đồng phạm.",
+   "answer": false,
+   "explain": "Sai. Đồng phạm đòi hỏi các bên cố ý cùng thực hiện tội phạm (khoản 1 Điều 17)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày khái niệm đồng phạm và các loại người đồng phạm.",
+   "model": "Đồng phạm là hai người trở lên cố ý cùng thực hiện một tội phạm; phạm tội có tổ chức là đồng phạm có câu kết chặt chẽ; người đồng phạm gồm người tổ chức, thực hành, xúi giục, giúp sức; không chịu TNHS về hành vi vượt quá của người thực hành (Điều 17).",
+   "keywords": [
+    "hai người trở lên",
+    "cố ý",
+    "tổ chức",
+    "giúp sức"
+   ]
+  }
+ ]
+}

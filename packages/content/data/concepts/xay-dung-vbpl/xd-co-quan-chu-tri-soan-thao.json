@@ -1,0 +1,117 @@
+{
+ "id": "xd-co-quan-chu-tri-soan-thao",
+ "subject": "xay-dung-vbpl",
+ "chapter": "v2",
+ "term": "Cơ quan chủ trì soạn thảo",
+ "definition": "Cơ quan trình tự mình soạn thảo hoặc phân công cho một cơ quan tổ chức soạn thảo (sau đây gọi chung là cơ quan chủ trì soạn thảo) luật, pháp lệnh, nghị quyết. Nội dung dự thảo luật, pháp lệnh, nghị quyết phải bảo đảm các nguyên tắc quy định tại Điều 5 của Luật này.",
+ "plain": "Luật 2025 không còn quy định bắt buộc \"Ban soạn thảo tối thiểu 9 người\" như Luật 2015 (slide cũ còn ghi); cơ quan trình tự soạn hoặc phân công cơ quan chủ trì. Nhiệm vụ cơ quan chủ trì (khoản 3 Điều 33): lấy ý kiến Đoàn ĐBQH, đối tượng chịu tác động, Bộ ngành liên quan (không bắt buộc nếu đã làm quy trình chính sách); lấy ý kiến phản biện xã hội của Mặt trận Tổ quốc; tiếp thu, giải trình công khai. Soạn thảo dựa trên chính sách đã thông qua (điểm a khoản 2).",
+ "example": "Chính phủ trình dự án Luật X, giao Bộ Tài chính chủ trì soạn thảo: Bộ Tài chính đăng dự thảo lấy ý kiến doanh nghiệp, gửi Mặt trận Tổ quốc phản biện, rồi trình Bộ Tư pháp thẩm định.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 33 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)",
+  "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-54-VBHN-VPQH-2025-Luat-Ban-hanh-van-ban-quy-pham-phap-luat-669858.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "xd-tham-dinh",
+  "xd-quy-trinh-xay-dung-chinh-sach",
+  "xd-tham-tra"
+ ],
+ "keywords": [
+  "cơ quan trình",
+  "phân công",
+  "lấy ý kiến",
+  "phản biện xã hội"
+ ],
+ "note": "Luật Ban hành văn bản quy phạm pháp luật 64/2025/QH15 có hiệu lực từ 01/4/2025, thay thế Luật 80/2015/QH13 (sửa đổi bởi Luật 63/2020/QH14) mà đề cương HLU 2019 còn dẫn; được sửa đổi bởi Luật 87/2025/QH15 có hiệu lực từ 01/7/2025 — văn bản hợp nhất 54/VBHN-VPQH ngày 11/8/2025. Luật mới bỏ quy trình \"lập đề nghị xây dựng luật\" theo chương trình hằng năm kiểu cũ, tách \"quy trình xây dựng chính sách\" và bỏ thẩm quyền ban hành VBQPPL của cấp huyện (từ 01/7/2025). Dự án Luật Văn bản quy phạm pháp luật (thay thế) đang được Quốc hội khóa XVI xem xét, chưa có hiệu lực.",
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai là cơ quan chủ trì soạn thảo luật theo khoản 1 Điều 33?",
+   "options": [
+    "Cơ quan trình tự soạn thảo hoặc cơ quan được cơ quan trình phân công",
+    "Luôn là Bộ Tư pháp",
+    "Luôn là Ủy ban Pháp luật và Tư pháp của Quốc hội",
+    "Văn phòng Chủ tịch nước"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 33.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 33 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Cơ quan chủ trì soạn thảo phải lấy ý kiến phản biện xã hội của tổ chức nào?",
+   "options": [
+    "Mặt trận Tổ quốc Việt Nam",
+    "Hội Luật gia",
+    "Phòng Thương mại và Công nghiệp",
+    "Liên đoàn Luật sư"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 3 Điều 33.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 3 Điều 33 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Nhiệm vụ của cơ quan chủ trì soạn thảo",
+   "right": "Nhiệm vụ của cơ quan thẩm định",
+   "cases": [
+    {
+     "text": "Tổ chức lấy ý kiến đối tượng chịu tác động trực tiếp",
+     "answer": "left"
+    },
+    {
+     "text": "Kết luận về tính hợp hiến, hợp pháp của dự thảo trước khi trình Chính phủ",
+     "answer": "right"
+    }
+   ],
+   "explain": "Khoản 3 Điều 33; Điều 34."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Cơ quan trình tự mình {{soạn thảo}} hoặc {{phân công}} cho một cơ quan tổ chức soạn thảo luật, pháp lệnh, nghị quyết.",
+   "bank_extra": [
+    "thẩm tra",
+    "ủy quyền cho tòa án"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Nội dung dự thảo luật, pháp lệnh, nghị quyết phải bảo đảm các {{nguyên tắc}} quy định tại {{Điều 5}} của Luật này.",
+   "bank_extra": [
+    "mục tiêu",
+    "Điều 4"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Luật 2025 vẫn bắt buộc thành lập Ban soạn thảo với tối thiểu 9 thành viên cho mọi dự án luật.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 33 chỉ quy định cơ quan trình tự soạn thảo hoặc phân công cơ quan chủ trì soạn thảo; quy định về Ban soạn thảo của Luật 2015 không còn."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu cách tổ chức soạn thảo và các nhiệm vụ chính của cơ quan chủ trì soạn thảo.",
+   "model": "Cơ quan trình tự soạn hoặc phân công cơ quan chủ trì (khoản 1 Điều 33); chủ trì lấy ý kiến Đoàn ĐBQH, đối tượng chịu tác động, Bộ ngành; lấy ý kiến phản biện xã hội của Mặt trận Tổ quốc; tiếp thu, giải trình (khoản 3 Điều 33).",
+   "keywords": [
+    "cơ quan trình",
+    "phân công",
+    "lấy ý kiến",
+    "Mặt trận Tổ quốc"
+   ]
+  }
+ ]
+}

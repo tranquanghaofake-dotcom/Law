@@ -1,0 +1,139 @@
+{
+  "id": "tai-chinh-de-1",
+  "group": "tai-chinh",
+  "title": "Đề kiểm tra Luật Tài chính – Ngân sách nhà nước",
+  "subtitle": "10 câu theo đề cương HLU, vấn đề 1–5 (Luật NSNN 2025)",
+  "updated": "2026-11-01",
+  "questions": [
+    {
+      "q": "Năm ngân sách bắt đầu và kết thúc khi nào?",
+      "options": [
+        "01/01 – 31/12 năm dương lịch",
+        "01/4 – 31/3",
+        "01/7 – 30/6",
+        "Do Quốc hội quyết định hằng năm"
+      ],
+      "answer": 0,
+      "explain": "Điều 14.",
+      "basis": "Điều 14 Luật Ngân sách nhà nước 2025 (89/2025/QH15)",
+      "url": "https://thuvienphapluat.vn/van-ban/Tai-chinh-nha-nuoc/Luat-ngan-sach-nha-nuoc-2025-so-89-2025-QH15-650061.aspx"
+    },
+    {
+      "q": "Ngân sách địa phương theo Luật 2025 gồm những cấp nào?",
+      "options": [
+        "Tỉnh, huyện, xã",
+        "Tỉnh và xã",
+        "Chỉ cấp tỉnh",
+        "Tỉnh và huyện"
+      ],
+      "answer": 1,
+      "explain": "Khoản 2 Điều 6.",
+      "basis": "Điều 6 Luật Ngân sách nhà nước 2025 (89/2025/QH15)",
+      "url": "https://thuvienphapluat.vn/van-ban/Tai-chinh-nha-nuoc/Luat-ngan-sach-nha-nuoc-2025-so-89-2025-QH15-650061.aspx"
+    },
+    {
+      "q": "Khoản chi ngân sách chỉ được thực hiện khi nào?",
+      "options": [
+        "Khi có dự toán được cấp có thẩm quyền giao (trừ tạm cấp ngân sách)",
+        "Khi thủ trưởng đơn vị đồng ý",
+        "Khi Kho bạc còn tiền",
+        "Bất kỳ lúc nào"
+      ],
+      "answer": 0,
+      "explain": "Khoản 4 Điều 8.",
+      "basis": "Điều 8 Luật Ngân sách nhà nước 2025 (89/2025/QH15)",
+      "url": "https://thuvienphapluat.vn/van-ban/Tai-chinh-nha-nuoc/Luat-ngan-sach-nha-nuoc-2025-so-89-2025-QH15-650061.aspx"
+    },
+    {
+      "q": "Mức bố trí dự phòng ngân sách mỗi cấp?",
+      "options": [
+        "Từ 1% đến 2%",
+        "Từ 2% đến 5%",
+        "Từ 5% đến 10%",
+        "Không giới hạn"
+      ],
+      "answer": 1,
+      "explain": "Khoản 1 Điều 10.",
+      "basis": "Điều 10 Luật Ngân sách nhà nước 2025 (89/2025/QH15)",
+      "url": "https://thuvienphapluat.vn/van-ban/Tai-chinh-nha-nuoc/Luat-ngan-sach-nha-nuoc-2025-so-89-2025-QH15-650061.aspx"
+    },
+    {
+      "q": "Vay để bù đắp bội chi chỉ được dùng cho mục đích nào?",
+      "options": [
+        "Chi thường xuyên",
+        "Chi đầu tư phát triển",
+        "Chi trả lương",
+        "Chi tiếp khách"
+      ],
+      "answer": 1,
+      "explain": "Khoản 3 Điều 7.",
+      "basis": "Điều 7 Luật Ngân sách nhà nước 2025 (89/2025/QH15)",
+      "url": "https://thuvienphapluat.vn/van-ban/Tai-chinh-nha-nuoc/Luat-ngan-sach-nha-nuoc-2025-so-89-2025-QH15-650061.aspx"
+    },
+    {
+      "q": "Kết dư ngân sách trung ương, còn lại sau khi trả nợ, được xử lý thế nào?",
+      "options": [
+        "Toàn bộ vào thu năm sau",
+        "50% vào quỹ dự trữ tài chính, 50% vào thu năm sau",
+        "Chia cho các bộ",
+        "Nộp vào quỹ bảo hiểm"
+      ],
+      "answer": 1,
+      "explain": "Khoản 1 Điều 74.",
+      "basis": "Điều 74 Luật Ngân sách nhà nước 2025 (89/2025/QH15)",
+      "url": "https://thuvienphapluat.vn/van-ban/Tai-chinh-nha-nuoc/Luat-ngan-sach-nha-nuoc-2025-so-89-2025-QH15-650061.aspx"
+    },
+    {
+      "q": "Kết dư ngân sách cấp xã được xử lý thế nào?",
+      "options": [
+        "Hạch toán vào thu ngân sách năm sau",
+        "Nộp lên tỉnh",
+        "Trích 50% vào quỹ dự trữ",
+        "Chia thưởng"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 74.",
+      "basis": "Điều 74 Luật Ngân sách nhà nước 2025 (89/2025/QH15)",
+      "url": "https://thuvienphapluat.vn/van-ban/Tai-chinh-nha-nuoc/Luat-ngan-sach-nha-nuoc-2025-so-89-2025-QH15-650061.aspx"
+    },
+    {
+      "q": "Quỹ ngân sách nhà nước có bao gồm tiền vay không?",
+      "options": [
+        "Có, kể cả tiền vay",
+        "Không",
+        "Chỉ vay nước ngoài",
+        "Chỉ vay trong nước"
+      ],
+      "answer": 0,
+      "explain": "Khoản 22 Điều 4.",
+      "basis": "Điều 4 Luật Ngân sách nhà nước 2025 (89/2025/QH15)",
+      "url": "https://thuvienphapluat.vn/van-ban/Tai-chinh-nha-nuoc/Luat-ngan-sach-nha-nuoc-2025-so-89-2025-QH15-650061.aspx"
+    },
+    {
+      "q": "Cơ quan nào quản lý tập trung, thống nhất ngân quỹ nhà nước?",
+      "options": [
+        "Ngân hàng Nhà nước",
+        "Kho bạc Nhà nước",
+        "Kiểm toán nhà nước",
+        "Bộ Kế hoạch"
+      ],
+      "answer": 1,
+      "explain": "Khoản 2 Điều 64.",
+      "basis": "Điều 64 Luật Ngân sách nhà nước 2025 (89/2025/QH15)",
+      "url": "https://thuvienphapluat.vn/van-ban/Tai-chinh-nha-nuoc/Luat-ngan-sach-nha-nuoc-2025-so-89-2025-QH15-650061.aspx"
+    },
+    {
+      "q": "Luật NSNN 2025 có hiệu lực từ khi nào (nguyên tắc chung)?",
+      "options": [
+        "Từ năm ngân sách 2026",
+        "Từ 01/01/2025",
+        "Từ 01/7/2027",
+        "Từ năm ngân sách 2030"
+      ],
+      "answer": 0,
+      "explain": "Khoản 1 Điều 77.",
+      "basis": "Điều 77 Luật Ngân sách nhà nước 2025 (89/2025/QH15)",
+      "url": "https://thuvienphapluat.vn/van-ban/Tai-chinh-nha-nuoc/Luat-ngan-sach-nha-nuoc-2025-so-89-2025-QH15-650061.aspx"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+ "id": "bien-phap-khan-cap-tam-thoi",
+ "subject": "to-tung-dan-su",
+ "chapter": "v5",
+ "term": "Biện pháp khẩn cấp tạm thời",
+ "definition": "1. Giao người chưa thành niên, người mất năng lực hành vi dân sự, người có khó khăn trong nhận thức, làm chủ hành vi cho cá nhân hoặc tổ chức trông nom, nuôi dưỡng, chăm sóc, giáo dục. 2. Buộc thực hiện trước một phần nghĩa vụ cấp dưỡng. 3. Buộc thực hiện trước một phần nghĩa vụ bồi thường thiệt hại do tính mạng, sức khoẻ bị xâm phạm.",
+ "plain": "Mục đích (Điều 111): tạm thời giải quyết YÊU CẦU CẤP BÁCH, bảo vệ tính mạng, sức khỏe, tài sản, chứng cứ, bảo toàn tình trạng hiện có, bảo đảm thi hành án. Điều 114 liệt kê nhiều biện pháp: giao người cần chăm sóc; buộc thực hiện trước một phần nghĩa vụ CẤP DƯỠNG, BỒI THƯỜNG; tạm đình chỉ quyết định sa thải; KÊ BIÊN tài sản tranh chấp; CẤM CHUYỂN DỊCH quyền tài sản; PHONG TỎA tài khoản; cấm xuất cảnh… Có thể yêu cầu cùng lúc nộp đơn khởi kiện trong tình thế khẩn cấp (khoản 2 Điều 111). Yêu cầu không đúng gây thiệt hại phải BỒI THƯỜNG (Điều 113).",
+ "example": "Người vợ đang ly hôn lo chồng bán căn nhà chung: yêu cầu Tòa án áp dụng biện pháp cấm chuyển dịch quyền về tài sản đối với căn nhà.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1–3 Điều 114 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)",
+  "url": "https://thuvienphapluat.vn/van-ban/Thu-tuc-To-tung/Van-ban-hop-nhat-21-VBHN-VPQH-2026-Bo-luat-To-dung-dan-su-696578.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "tham-quyen-theo-cap",
+  "thoi-hieu-khoi-kien-ttds"
+ ],
+ "keywords": [
+  "yêu cầu cấp bách",
+  "buộc thực hiện trước một phần nghĩa vụ",
+  "kê biên, cấm chuyển dịch, phong tỏa",
+  "bồi thường nếu yêu cầu không đúng"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Biện pháp nào là biện pháp khẩn cấp tạm thời theo Điều 114?",
+   "options": [
+    "Buộc thực hiện trước một phần nghĩa vụ cấp dưỡng",
+    "Phạt tiền bị đơn",
+    "Tạm giam bị đơn",
+    "Thu hồi giấy phép kinh doanh"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 114.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 114 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Mục đích của biện pháp khẩn cấp tạm thời là gì?",
+   "options": [
+    "Tạm thời giải quyết yêu cầu cấp bách, bảo vệ chứng cứ, bảo toàn tình trạng hiện có, bảo đảm thi hành án",
+    "Xử phạt bên vi phạm",
+    "Thay thế bản án",
+    "Kết thúc vụ án"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 111.",
+   "source": {
+    "kind": "statute",
+    "cite": "Điều 111 Bộ luật Tố tụng dân sự 2015 (VBHN 21/VBHN-VPQH 2026)"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Biện pháp khẩn cấp tạm thời",
+   "right": "Không phải",
+   "cases": [
+    {
+     "text": "Kê biên tài sản đang tranh chấp",
+     "answer": "left"
+    },
+    {
+     "text": "Phạt vi phạm hợp đồng",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 114."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Buộc thực hiện trước một phần nghĩa vụ {{cấp dưỡng}}; buộc thực hiện trước một phần nghĩa vụ bồi thường thiệt hại do {{tính mạng, sức khoẻ}} bị xâm phạm.",
+   "bank_extra": [
+    "thuế",
+    "danh dự"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Giao người chưa thành niên cho cá nhân hoặc tổ chức trông nom, nuôi dưỡng, chăm sóc, {{giáo dục}} là một biện pháp khẩn cấp tạm thời.",
+   "bank_extra": [
+    "xử phạt",
+    "cách ly"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Biện pháp khẩn cấp tạm thời chỉ được yêu cầu sau khi Tòa án đã xét xử sơ thẩm.",
+   "answer": false,
+   "explain": "Sai. Có thể yêu cầu trong quá trình giải quyết vụ án và cả cùng lúc nộp đơn khởi kiện khi khẩn cấp (Điều 111)."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày mục đích và một số biện pháp khẩn cấp tạm thời.",
+   "model": "Nhằm tạm thời giải quyết yêu cầu cấp bách, bảo vệ tính mạng, sức khỏe, tài sản, chứng cứ, bảo toàn tình trạng hiện có, bảo đảm thi hành án (Điều 111); biện pháp: giao người cần chăm sóc, buộc thực hiện trước một phần nghĩa vụ cấp dưỡng, bồi thường, kê biên, cấm chuyển dịch, phong tỏa tài khoản… (Điều 114).",
+   "keywords": [
+    "cấp bách",
+    "cấp dưỡng",
+    "kê biên",
+    "bảo toàn"
+   ]
+  }
+ ]
+}

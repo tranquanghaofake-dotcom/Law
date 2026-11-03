@@ -1,0 +1,115 @@
+{
+ "id": "uy-ban-canh-tranh-quoc-gia",
+ "subject": "canh-tranh",
+ "chapter": "v7",
+ "term": "Ủy ban Cạnh tranh Quốc gia",
+ "definition": "Ủy ban Cạnh tranh Quốc gia là cơ quan thuộc Bộ Công Thương gồm Chủ tịch, các Phó Chủ tịch và các thành viên. Cơ quan điều tra vụ việc cạnh tranh và các đơn vị chức năng khác là bộ máy giúp việc của Ủy ban Cạnh tranh Quốc gia.",
+ "plain": "Luật 2018 hợp nhất Cục Quản lý cạnh tranh và Hội đồng cạnh tranh (Luật 2004) thành MỘT cơ quan: ỦY BAN CẠNH TRANH QUỐC GIA, thuộc BỘ CÔNG THƯƠNG. Nhiệm vụ (khoản 2): tham mưu quản lý nhà nước; TIẾN HÀNH TỐ TỤNG CẠNH TRANH; KIỂM SOÁT TẬP TRUNG KINH TẾ; QUYẾT ĐỊNH MIỄN TRỪ; GIẢI QUYẾT KHIẾU NẠI quyết định xử lý vụ việc cạnh tranh. Bộ máy giúp việc: CƠ QUAN ĐIỀU TRA VỤ VIỆC CẠNH TRANH. Lưu ý: tổ chức bộ máy cụ thể do Chính phủ quy định (khoản 3) — cần đối chiếu nghị định hiện hành sau đợt sắp xếp bộ máy 2025.",
+ "example": "Doanh nghiệp muốn đề nghị miễn trừ thỏa thuận hạn chế cạnh tranh nộp hồ sơ đến Ủy ban Cạnh tranh Quốc gia, không nộp cho Tòa án.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 46 Luật Cạnh tranh 2018",
+  "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Luat-canh-tranh-345182.aspx"
+ },
+ "checked": "2026-11-01",
+ "confusables": [
+  "xu-ly-vi-pham-canh-tranh",
+  "thong-bao-tap-trung-kinh-te"
+ ],
+ "keywords": [
+  "thuộc Bộ Công Thương",
+  "Chủ tịch, Phó Chủ tịch, thành viên",
+  "cơ quan điều tra vụ việc cạnh tranh",
+  "tố tụng, miễn trừ, khiếu nại"
+ ],
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ủy ban Cạnh tranh Quốc gia là cơ quan thuộc cơ quan nào?",
+   "options": [
+    "Bộ Công Thương",
+    "Chính phủ trực tiếp",
+    "Bộ Tư pháp",
+    "Quốc hội"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 46.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 46 Luật Cạnh tranh 2018"
+   }
+  },
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Nhiệm vụ nào thuộc Ủy ban Cạnh tranh Quốc gia?",
+   "options": [
+    "Quyết định việc miễn trừ đối với thỏa thuận hạn chế cạnh tranh bị cấm",
+    "Xét xử tội phạm kinh tế",
+    "Cấp giấy chứng nhận đăng ký doanh nghiệp",
+    "Ban hành luật"
+   ],
+   "answer": 0,
+   "explain": "Điểm b khoản 2 Điều 46.",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 46 Luật Cạnh tranh 2018"
+   }
+  },
+  {
+   "type": "pair",
+   "level": 2,
+   "left": "Ủy ban Cạnh tranh Quốc gia",
+   "right": "Cơ quan điều tra vụ việc cạnh tranh",
+   "cases": [
+    {
+     "text": "Quyết định miễn trừ, giải quyết khiếu nại",
+     "answer": "left"
+    },
+    {
+     "text": "Bộ máy giúp việc thực hiện điều tra",
+     "answer": "right"
+    }
+   ],
+   "explain": "Điều 46."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Ủy ban Cạnh tranh Quốc gia là cơ quan thuộc {{Bộ Công Thương}} gồm Chủ tịch, các Phó Chủ tịch và các thành viên; {{Cơ quan điều tra}} vụ việc cạnh tranh là bộ máy giúp việc.",
+   "bank_extra": [
+    "Bộ Tài chính",
+    "Tòa án"
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Chủ tịch Ủy ban Cạnh tranh Quốc gia là người {{đứng đầu}}, chịu trách nhiệm trước pháp luật về tổ chức, hoạt động của Ủy ban.",
+   "bank_extra": [
+    "giúp việc",
+    "đại diện"
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo Luật Cạnh tranh 2018, Hội đồng cạnh tranh và Cục Quản lý cạnh tranh vẫn tồn tại song song như Luật 2004.",
+   "answer": false,
+   "explain": "Sai. Luật 2018 thiết lập Ủy ban Cạnh tranh Quốc gia (Điều 46) thay cho mô hình hai cơ quan."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Trình bày vị trí, cơ cấu và nhiệm vụ của Ủy ban Cạnh tranh Quốc gia.",
+   "model": "Cơ quan thuộc Bộ Công Thương, gồm Chủ tịch, Phó Chủ tịch, thành viên; bộ máy giúp việc là Cơ quan điều tra vụ việc cạnh tranh (khoản 1); tham mưu quản lý nhà nước, tiến hành tố tụng cạnh tranh, kiểm soát tập trung kinh tế, quyết định miễn trừ, giải quyết khiếu nại (khoản 2 Điều 46).",
+   "keywords": [
+    "Bộ Công Thương",
+    "cơ quan điều tra",
+    "tố tụng cạnh tranh",
+    "miễn trừ"
+   ]
+  }
+ ]
+}
