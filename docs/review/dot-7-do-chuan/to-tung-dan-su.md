@@ -54,3 +54,9 @@
 |---|---|---|---|---|
 | `chung-cu` | Lời khai của đương sự được ghi nhận làm nguồn chứng cứ | Lời khai của đương sự được Tòa án ghi nhận, dùng để xác định sự thật vụ án | Khoản 3 Điều 94 Bộ luật Tố tụng dân sự 2015 | viết lại không nhắc nhãn / sửa lỗi theo bảng verify |
 | `nghia-vu-chung-minh` | Nguyên đơn đòi nợ phải chứng minh có khoản vay<br>Người tiêu dùng khởi kiện không phải chứng minh lỗi của tổ chức kinh doanh | Nguyên đơn đòi nợ có nghĩa vụ đưa ra chứng cứ về khoản vay<br>Người tiêu dùng khởi kiện tổ chức kinh doanh hàng hóa, dịch vụ, không bị buộc đưa chứng cứ chứng tỏ lỗi của bê | —<br>Điểm a khoản 1 Điều 91 Bộ luật Tố tụng dân sự 2015 | viết lại không nhắc nhãn / sửa lỗi theo bảng verify |
+## Opus — trọng tài ⚠ opus (03/11/2026)
+
+| id | câu/tình huống | trước → sau | căn cứ | ghi chú |
+|---|---|---|---|---|
+| hoa-giai-trong-to-tung-dan-su#2 | "Vụ án giải quyết theo thủ tục rút gọn" (Không hòa giải) | → "Vụ án giải quyết theo thủ tục rút gọn, trong thời hạn chuẩn bị xét xử" + basis khoản 1 Điều 205 | khoản 1 Điều 205; khoản 3 Điều 320 BLTTDS: phiên tòa rút gọn Thẩm phán vẫn hòa giải | Tình huống cũ dễ hiểu thành "rút gọn thì không bao giờ hòa giải" |
+| hoa-giai-trong-to-tung-dan-su#6 (recall) | mẫu trả lời | thêm "(vụ án rút gọn vẫn được Thẩm phán hòa giải tại phiên tòa — khoản 3 Điều 320)" | như trên | |

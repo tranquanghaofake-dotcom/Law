@@ -128,3 +128,8 @@
 | `sac-lenh-13-toa-an` | Tòa án sơ cấp đặt ở mỗi quận, phủ, huyện, châu, quản hạt địa hạt quận<br>Tòa án đệ nhị cấp đặt ở mỗi tỉnh và các thành phố lớn | Tòa án đặt ở mỗi quận, phủ, huyện, châu, quản hạt là địa hạt quận<br>Tòa án đặt ở mỗi tỉnh và các thành phố lớn | Sắc lệnh 13, Điều thứ 7 (laws/lich-su-su-lieu.txt)<br>Sắc lệnh 13, Điều thứ 12 (laws/lich-su-su-lieu.txt) | viết lại không nhắc nhãn / sửa lỗi theo bảng verify |
 | `sac-lenh-47-luat-cu` | Sắc lệnh 97/SL sửa đổi một số quy lệ và chế định dân luật theo hướng tiến bộ | Văn bản quy định chồng và vợ có địa vị bình đẳng trong gia đình | Sắc lệnh 97/SL, Điều 5 (laws/lich-su-su-lieu.txt) | viết lại không nhắc nhãn / sửa lỗi theo bảng verify |
 | `toi-pham-1985` | Tội phạm nghiêm trọng là hành vi gây nguy hại lớn cho xã hội, Bộ luật Hình sự 1985 chia tội phạm thành hai loạ | Tội phạm nghiêm trọng là tội gây nguy hại lớn cho xã hội, mức cao nhất của khung hình phạt trên năm năm tù; tộ | Bộ luật Hình sự 1985, Điều 8 (laws/lich-su-su-lieu.txt) | viết lại không nhắc nhãn / sửa lỗi theo bảng verify |
+## Opus — trọng tài ⚠ opus (03/11/2026)
+
+| id | câu/tình huống | trước → sau | căn cứ | ghi chú |
+|---|---|---|---|---|
+| cam-mua-ban-dat-1987, chuoc-toi-thap-ac và các tình huống căn cứ giáo trình (⚠ haiku-3) | Luật Đất đai 1993, chiếu 1042, giáo trình chương 6–7 | không sửa | ngoài kho | ⚠ Hào: duyệt theo giáo trình |

@@ -68,8 +68,9 @@
      "answer": "left"
     },
     {
-     "text": "Vụ án giải quyết theo thủ tục rút gọn",
-     "answer": "right"
+     "text": "Vụ án giải quyết theo thủ tục rút gọn, trong thời hạn chuẩn bị xét xử",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 205 Bộ luật Tố tụng dân sự 2015"
     },
     {
      "text": "Tranh chấp chia tài sản chung của vợ chồng, Tòa án hòa giải trong thời hạn chuẩn bị xét xử",
@@ -118,7 +119,7 @@
    "type": "recall",
    "level": 5,
    "q": "Trình bày nguyên tắc và phạm vi hòa giải trong tố tụng dân sự.",
-   "model": "Tòa án có trách nhiệm hòa giải (Điều 10); trong thời hạn chuẩn bị xét xử sơ thẩm phải hòa giải, trừ vụ án không được hòa giải, không hòa giải được, thủ tục rút gọn (khoản 1 Điều 205); nguyên tắc tự nguyện, không vi phạm điều cấm, không trái đạo đức (khoản 2).",
+   "model": "Tòa án có trách nhiệm hòa giải (Điều 10); trong thời hạn chuẩn bị xét xử sơ thẩm phải hòa giải, trừ vụ án không được hòa giải, không hòa giải được, thủ tục rút gọn (khoản 1 Điều 205; vụ án rút gọn vẫn được Thẩm phán hòa giải tại phiên tòa — khoản 3 Điều 320); nguyên tắc tự nguyện, không vi phạm điều cấm, không trái đạo đức (khoản 2).",
    "keywords": [
     "trách nhiệm",
     "tự nguyện",

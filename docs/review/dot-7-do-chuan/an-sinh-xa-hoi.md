@@ -44,3 +44,8 @@
 |---|---|---|---|---|
 | `dieu-kien-tro-cap-that-nghiep` | Người lao động nộp hồ sơ hưởng trợ cấp sau 03 tháng kể từ ngày chấm dứt hợp đồng | Người lao động nộp hồ sơ hưởng trợ cấp sau khi đã quá 03 tháng kể từ ngày chấm dứt hợp đồng | Điểm c khoản 1 Điều 38 Luật Việc làm 2025 | viết lại không nhắc nhãn / sửa lỗi theo bảng verify |
 | `tro-cap-huu-tri-xa-hoi` | Người có đủ 15 năm đóng BHXH bắt buộc khi nghỉ việc đủ tuổi được hưởng lương hưu | Người có đủ 15 năm đóng BHXH bắt buộc khi nghỉ việc đủ tuổi thì được hưởng khoản định kỳ hằng tháng từ quỹ BHX | Khoản 1 Điều 64 Luật Bảo hiểm xã hội 2024 | viết lại không nhắc nhãn / sửa lỗi theo bảng verify |
+## Opus — trọng tài ⚠ opus (03/11/2026)
+
+| id | câu/tình huống | trước → sau | căn cứ | ghi chú |
+|---|---|---|---|---|
+| dieu-kien-huong-luong-huu#6 | mẫu "(điểm a khoản 1 Điều 64)" | → "(điểm a khoản 1 Điều 64 Luật BHXH 2024)" | Điều 64 Luật BHXH 41/2024/QH15 | Câu cùng nhắc Điều 169 BLLĐ nên dễ hiểu nhầm văn bản |

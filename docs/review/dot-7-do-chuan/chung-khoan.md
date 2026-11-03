@@ -158,3 +158,18 @@ Tổng: 105 tình huống mới; 73 khái niệm đạt ≥ 4 tình huống.
 | `thanh-vien-so-giao-dich-chung-khoan` | Công ty chứng khoán đăng ký và được Sở giao dịch chấp thuận làm thành viên giao dịch | Thành viên giao dịch (trái) | Điểm a khoản 1 Điều 47 Luật Chứng khoán 2019 |
 | `thanh-vien-so-giao-dich-chung-khoan` | Tổ chức khác được Sở giao dịch chấp thuận làm thành viên giao dịch đặc biệt | Thành viên giao dịch đặc biệt (phải) | Điểm b khoản 1 Điều 47 Luật Chứng khoán 2019 |
 | `to-chuc-xa-hoi-nghe-nghiep-chung-khoan` | Tổ chức xã hội - nghề nghiệp ban hành bộ quy tắc đạo đức sau khi được Ủy ban chấp thuận | Tổ chức xã hội - nghề nghiệp (trái) | Khoản 2 Điều 10 Luật Chứng khoán 2019 |
+
+## Opus — chế định đổi từ 2025 (xem luat-doi-2025.md)
+
+| id | câu/tình huống | trước → sau | căn cứ | ghi chú |
+|---|---|---|---|---|
+| hinh-thuc-cong-ty-chung-khoan#0 | Cơ quan cấp Giấy phép thành lập và hoạt động công ty chứng khoán (nhiễu) | "Sở Kế hoạch và Đầu tư (Cơ quan đăng ký kinh doanh)" → "Sở Tài chính (Cơ quan đăng ký kinh doanh)" | NQ 176/2025/QH15; Điều 15 NĐ 168/2025/NĐ-CP ("Cơ quan đăng ký kinh doanh thuộc Sở Tài chính") | Nhiễu vẫn sai (giấy phép do UBCKNN cấp) |
+| quan-ly-nha-nuoc-chung-khoan (cloze, bank_extra) | Từ nhiễu | "Bộ Kế hoạch và Đầu tư" → "Bộ Công Thương" | NQ 176/2025/QH15 (Bộ KH&ĐT nhập Bộ Tài chính) | |
+| doc-quyen-to-chuc-thi-truong-giao-dich (cloze, bank_extra) | Từ nhiễu | "Bộ Kế hoạch và Đầu tư" → "Bộ Công Thương" | như trên | |
+| thanh-tra-chung-khoan (note mới) | Định nghĩa nguyên văn khoản 3 Điều 129: "hướng dẫn về nghiệp vụ của Thanh tra Bộ Tài chính" | thêm note về Luật Thanh tra 84/2025/QH15 (Điều 7, hiệu lực 01/7/2025) | Luật Thanh tra 84/2025/QH15 | ⚠ Hào: cần văn bản Chính phủ về tổ chức thanh tra chứng khoán hiện nay; định nghĩa giữ nguyên văn VBHN 102/2026 |
+
+## Opus — trọng tài ⚠ opus (03/11/2026)
+
+| id | câu/tình huống | trước → sau | căn cứ | ghi chú |
+|---|---|---|---|---|
+| an-toan-tai-chinh-cong-ty-chung-khoan#2 | 2 tình huống mới | basis "Khoản 3 Điều 92" → "Khoản 2 Điều 92"; "Mục 3 Chương Luật…" → "Mục 3 Chương VI Luật…" | Điều 92 chỉ có 2 khoản (đoạn cảnh báo, kiểm soát thuộc khoản 2); Mục 3 thuộc Chương VI | |

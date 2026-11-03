@@ -60,3 +60,8 @@
 | `quyen-lien-quan` | Người viết và sáng tác tác phẩm âm nhạc, bản nhạc thuộc quyền tác giả | Người sáng tác ca khúc, bản nhạc là tác giả của tác phẩm âm nhạc | Điểm d khoản 1 Điều 14 Luật Sở hữu trí tuệ | viết lại không nhắc nhãn / sửa lỗi theo bảng verify |
 | `quyen-so-huu-tri-tue` | Bức tranh vẽ của họa sĩ là tác phẩm mỹ thuật được bảo hộ quyền tác giả | Bức tranh vẽ của họa sĩ là tác phẩm mỹ thuật, được bảo hộ ngay khi được thể hiện dưới hình thức vật chất, khôn | Khoản 1 Điều 14 và khoản 1 Điều 6 Luật Sở hữu trí tuệ | viết lại không nhắc nhãn / sửa lỗi theo bảng verify |
 | `thoi-han-bao-ho-quyen-tac-gia` | Quyền đặt tên cho tác phẩm của tác giả được bảo hộ vô thời hạn | Quyền đặt tên cho tác phẩm của tác giả, thời hạn bảo hộ không bị giới hạn | Khoản 1 Điều 27 Luật Sở hữu trí tuệ | viết lại không nhắc nhãn / sửa lỗi theo bảng verify |
+## Opus — trọng tài cờ dò
+
+| id | câu/tình huống | trước → sau | căn cứ | ghi chú |
+|---|---|---|---|---|
+| bien-phap-xu-ly-xam-pham-shtt (plain) | "tội xâm phạm quyền tác giả Điều 225, tội xâm phạm quyền sở hữu công nghiệp Điều 226 BLHS" | → "… Điều 225 BLHS, …" | Điều 225, 226 BLHS (VBHN 135/2025) | Ghi rõ văn bản để không bị hiểu là Điều 225 Luật SHTT |

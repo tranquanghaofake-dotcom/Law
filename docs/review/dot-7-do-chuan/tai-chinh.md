@@ -64,3 +64,8 @@ Tổng: 38 tình huống mới; 17 khái niệm đạt ≥ 4 tình huống.
 | Khái niệm | Trước (đã bỏ/đổi) | Sau | Căn cứ | Ghi chú |
 |---|---|---|---|---|
 | `he-thong-nsnn` | Ngân sách cấp huyện có dự toán riêng do Hội đồng nhân dân huyện quyết định (⚠ quy định cũ, Luật NSNN 2015 chưa | Ngân sách cấp huyện có dự toán riêng do Hội đồng nhân dân huyện quyết định | Luật Ngân sách nhà nước 2015 (đã hết hiệu lực) | ⚠ opus: Luật NSNN 2015 chưa có trong laws/ (quy định cũ, trước 01/7/2025) |
+## Opus — trọng tài ⚠ opus (03/11/2026)
+
+| id | câu/tình huống | trước → sau | căn cứ | ghi chú |
+|---|---|---|---|---|
+| thue-thu-nhap-doanh-nghiep (⚠ haiku-2) | khoản 14a Điều 4 (Luật 09/2026/QH16) | không sửa | note khái niệm đã nêu VBHN 113/VBHN-VPQH 2026 | ⚠ Hào: thay `laws/ltndn-2025.txt` bằng VBHN 113/2026 để test thấy khoản 14a |

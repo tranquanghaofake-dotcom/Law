@@ -51,3 +51,9 @@ Cờ của môn (`audit/flags/canh-tranh.jsonl`): 2. Không có sửa nội dung
 
 **⚠ opus**
 - `hanh-vi-cam-co-quan-nha-nuoc#-1` (ví dụ khái niệm) — "Ủy ban nhân dân huyện ra văn bản đề nghị…": cấp huyện đã kết thúc hoạt động từ 01/7/2025 (chính quyền địa phương 2 cấp); ví dụ đang dùng như hiện hành. Cần viết lại ví dụ (thuật ngữ cũ — opus).
+
+## Opus — chế định đổi từ 2025 (xem luat-doi-2025.md)
+
+| id | câu/tình huống | trước → sau | căn cứ | ghi chú |
+|---|---|---|---|---|
+| hanh-vi-cam-co-quan-nha-nuoc (example) | Ví dụ cơ quan nhà nước ép trường học mua đồng phục | "Ủy ban nhân dân huyện ra văn bản…" → "Ủy ban nhân dân xã ra văn bản…" | khoản 1 Điều 1, khoản 3 Điều 51 Luật Tổ chức CQĐP 72/2025/QH15 (cấp huyện kết thúc 01/7/2025); điểm a khoản 1 Điều 8 Luật Cạnh tranh áp dụng mọi cơ quan nhà nước | Ý ví dụ không đổi |

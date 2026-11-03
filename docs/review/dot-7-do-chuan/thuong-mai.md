@@ -56,3 +56,7 @@ Tổng: 42 tình huống mới; 22 khái niệm đạt ≥ 4 tình huống.
 | `dai-dien-cho-thuong-nhan#6` | lệch nội dung / gán văn bản | **sửa** | đáp án mẫu ghi "BLDS (Điều 141)" → "BLDS (khoản 2 Điều 141 Luật Thương mại)" |
 | `khuyen-mai#-1` | điều không tồn tại | ⚠ opus | Điều 102–116 (quảng cáo thương mại) đã bỏ khỏi VBHN 2025; bài đã ghi chú. Opus cần quyết có bỏ cờ này trong công cụ |
 | `thuong-mai-de-1#7` (bộ đề) | lệch nội dung | báo nhầm | Điều 88 LTM đúng nội dung khuyến mại; điểm thấp do câu diễn đạt đời thường |
+
+## Opus — trọng tài
+
+- `khuyen-mai#-1` (⚠ opus của haiku): **không sửa nội dung** — LTM VBHN 113/2025 ghi "Mục 2 (được bãi bỏ)" (Điều 102–116), bài đã nói rõ "KHÔNG còn trong VBHN 2025". Công cụ dò nay coi "không còn" quanh trích dẫn là dấu hiệu lịch sử nên không gắn cờ.

@@ -69,3 +69,12 @@
 | `thu-viec` | Thử việc công việc của người quản lý doanh nghiệp, thời gian tối đa 180 ngày<br>Thử việc nhân viên nghiệp vụ hoặc công nhân kỹ thuật có chức danh trung cấp, tối đa 30 ngày | Thời gian thử việc tối đa đối với công việc của người quản lý doanh nghiệp<br>Thời gian thử việc tối đa đối với nhân viên nghiệp vụ hoặc công nhân kỹ thuật có chức danh trung cấp | Khoản 1 Điều 25 Bộ luật Lao động 2019<br>Khoản 3 Điều 25 Bộ luật Lao động 2019 | viết lại không nhắc nhãn / sửa lỗi theo bảng verify |
 | `thuong-luong-tap-the` | Hai bên ký hợp đồng lao động cá nhân trước khi nhận người lao động vào làm việc | Trước khi nhận người lao động vào làm việc, người sử dụng lao động phải giao kết văn bản thỏa thuận riêng với  | Khoản 2 Điều 13 Bộ luật Lao động 2019 | viết lại không nhắc nhãn / sửa lỗi theo bảng verify |
 | `tien-luong` | Mức lương theo công việc không được thấp hơn mức lương tối thiểu theo quy định | Người sử dụng lao động phải trả lương trực tiếp, đầy đủ, đúng hạn cho người lao động | Khoản 1 Điều 94 Bộ luật Lao động 2019 | viết lại không nhắc nhãn / sửa lỗi theo bảng verify |
+## Opus — chế định đổi từ 2025 (xem luat-doi-2025.md)
+
+| id | câu/tình huống | trước → sau | căn cứ | ghi chú |
+|---|---|---|---|---|
+| thoi-gio-lam-viec#1 | Điều kiện đầu tiên để làm thêm giờ (nhiễu) | "Phải được Sở Lao động cho phép bằng văn bản" → "Phải được Sở Nội vụ cho phép bằng văn bản" | Điều 8 NĐ 45/2025/NĐ-CP (Sở Nội vụ quản lý lao động, từ 01/3/2025); điểm a khoản 2 Điều 107 BLLĐ | Nhiễu vẫn sai |
+| to-chuc-dai-dien-nguoi-lao-dong#1 | Cơ sở thành lập tổ chức đại diện NLĐ (nhiễu) | "… phê duyệt của Sở Lao động" → "… phê duyệt của Sở Nội vụ" | như trên; khoản 3 Điều 3 BLLĐ | |
+| don-phuong-cham-dut-nguoi-su-dung#1 | Căn cứ "thường xuyên không hoàn thành công việc" (nhiễu) | "Quyết định của Sở Lao động và Thương binh xã hội tại địa phương" → "Quyết định của Sở Nội vụ nơi người sử dụng lao động đặt trụ sở" | như trên; điểm a khoản 1 Điều 36 BLLĐ | |
+| sets/lao-dong-de-2#2 | Thỏa ước quy định thưởng thấp hơn luật (nhiễu) | "Có hiệu lực nếu Sở Lao động đồng ý bằng văn bản" → "Có hiệu lực nếu Sở Nội vụ đồng ý bằng văn bản" | như trên; khoản 2 Điều 75 BLLĐ | |
+| dinh-cong#0 | Nhiễu "Ủy ban nhân dân cấp huyện nơi doanh nghiệp…" | không sửa | BLLĐ VBHN 18/2026 vẫn ghi UBND cấp huyện (Điều 200, 202) | ⚠ Hào: chưa đối chiếu văn bản phân định thẩm quyền lĩnh vực nội vụ; khái niệm đã có ghi chú |

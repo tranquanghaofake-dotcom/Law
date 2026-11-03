@@ -62,3 +62,15 @@
 | `quy-hoach-su-dung-dat` | Nhà nước quyết định giao đất cho hộ gia đình, cá nhân sử dụng ổn định | Nhà nước quyết định trao đất cho hộ gia đình, cá nhân sử dụng ổn định | Khoản 7 Điều 13 Luật Đất đai 2024 | viết lại không nhắc nhãn / sửa lỗi theo bảng verify |
 | `quyen-chung-nguoi-su-dung-dat` | — | Thừa kế hoặc tặng cho quyền sử dụng đất khi có đủ điều kiện theo luật | Khoản 1 Điều 27 và khoản 1 Điều 45 Luật Đất đai 2024 | viết lại không nhắc nhãn / sửa lỗi theo bảng verify |
 | `so-huu-toan-dan-dat-dai` | Nhà nước đại diện chủ sở hữu, thống nhất quản lý đất đai thuộc sở hữu toàn dân | Đất đai thuộc sở hữu của cả cộng đồng, Nhà nước đại diện chủ sở hữu và thống nhất quản lý | Điều 12 Luật Đất đai 2024 | viết lại không nhắc nhãn / sửa lỗi theo bảng verify |
+## Opus — chế định đổi từ 2025 (xem luat-doi-2025.md)
+
+| id | câu/tình huống | trước → sau | căn cứ | ghi chú |
+|---|---|---|---|---|
+| hoa-giai-tranh-chap-dat-dai#0 | Trước khi giải quyết tranh chấp, các bên phải làm gì (nhiễu) | "Nộp đơn lên Bộ Tài nguyên và Môi trường để giải quyết" → "Nộp đơn lên Bộ Nông nghiệp và Môi trường để giải quyết" | NQ 176/2025/QH15 | Nhiễu vẫn sai (phải hòa giải ở UBND cấp xã) |
+| tham-quyen-giai-quyet-tranh-chap-dat-dai#1 | Nhiễu "Chỉ Tòa án nhân dân cấp huyện có thẩm quyền" | không sửa — item do sonnet-b giữ chỗ | Luật 81/2025/QH15 | Đề nghị sonnet-b đổi "cấp huyện" khi viết lại |
+
+## Opus — trọng tài ⚠ opus (03/11/2026)
+
+| id | câu/tình huống | trước → sau | căn cứ | ghi chú |
+|---|---|---|---|---|
+| hoa-giai-tranh-chap-dat-dai (⚠ haiku) | "hòa giải thương mại" ở nhóm khuyến khích | không sửa | khoản 1 Điều 235 Luật Đất đai có nêu "hòa giải theo quy định của pháp luật về hòa giải thương mại" | Báo nhầm |

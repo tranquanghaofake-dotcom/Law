@@ -86,3 +86,16 @@
 | `mat-khach-quan-toi-pham` | Người lấy trộm xe máy của hàng xóm rồi mang đi giấu, thực hiện hành động pháp luật cấm | Người chủ động lấy trộm xe máy của hàng xóm rồi mang đi giấu | Giáo trình Luật Hình sự Việt Nam (Phần chung), Trường Đại học Luật Hà  | viết lại không nhắc nhãn / sửa lỗi theo bảng verify |
 | `nguoi-chua-thanh-nien-pham-toi` | Người chưa thành niên phạm tội không bị tuyên phạt tù chung thân hoặc tử hình | Người dưới 18 tuổi khi phạm tội không bị tuyên phạt tù chung thân hoặc tử hình | Khoản 3 Điều 12 Luật Tư pháp người chưa thành niên 2024 | viết lại không nhắc nhãn / sửa lỗi theo bảng verify |
 | `nhiem-vu-bo-luat-hinh-su` | Quy định cách thức triệu tập người làm chứng khi điều tra vụ án hình sự (⚠ thuộc BLTTHS, chưa có trong laws/) | Quy định cách thức triệu tập người làm chứng khi điều tra vụ án hình sự | Điều 1 Bộ luật Hình sự 2015 (nhiệm vụ BLHS không gồm thủ tục) | ⚠ opus: tình huống thuộc BLTTHS, chưa có BLTTHS trong laws/; căn cứ chỉ gián tiếp (Điều 1 BLHS) |
+## Opus — chế định đổi từ 2025 (xem luat-doi-2025.md)
+
+| id | câu/tình huống | trước → sau | căn cứ | ghi chú |
+|---|---|---|---|---|
+| xu-ly-chuyen-huong#1 | Biện pháp xử lý chuyển hướng KHÔNG thuộc nhóm tại cộng đồng (nhiễu) | "Giáo dục tại xã, phường, thị trấn" → "Giáo dục tại xã, phường, đặc khu" | Điều 43 Luật TPNCTN (VBHN 105/VBHN-VPQH 2026) | Chỉ đổi tên biện pháp ở nhiễu; đáp án giữ nguyên |
+| hinh-phat-nguoi-chua-thanh-nien (plain) | "BLHS cũ (Điều 101, đã bãi bỏ)" | không sửa | điểm a khoản 1 Điều 177 Luật TPNCTN 59/2024/QH15 | Báo nhầm của công cụ (đã có note, nói rõ đã bãi bỏ) |
+
+## Opus — trọng tài ⚠ opus (03/11/2026)
+
+| id | câu/tình huống | trước → sau | căn cứ | ghi chú |
+|---|---|---|---|---|
+| cau-thanh-toi-pham, khach-the-toi-pham, mat-khach-quan-toi-pham, nhiem-vu-bo-luat-hinh-su (⚠ haiku-3) | căn cứ giáo trình / BLTTHS | không sửa | không có văn bản trong kho để đối chiếu | ⚠ Hào: duyệt theo giáo trình |
+| hinh-phat-nguoi-chua-thanh-nien | "BLHS cũ (Điều 101, đã bãi bỏ)" | không sửa | điểm a khoản 1 Điều 177 Luật TPNCTN | Cách ghi đúng; công cụ đã nhận ra dấu hiệu lịch sử |
