@@ -72,6 +72,16 @@
     {
      "text": "Mua kỳ phiếu trước hạn của bên thụ hưởng",
      "answer": "right"
+    },
+    {
+     "text": "Ngân hàng ứng trước tiền thanh toán thay cho bên mua theo hợp đồng mua bán hàng hóa",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 4 Luật Các tổ chức tín dụng 2024"
+    },
+    {
+     "text": "Ngân hàng mua trái phiếu của doanh nghiệp trước khi đến hạn, có bảo lưu quyền truy đòi",
+     "answer": "right",
+     "basis": "Khoản 6 Điều 4 Luật Các tổ chức tín dụng 2024"
     }
    ],
    "explain": "Khoản 1, 6 Điều 4."

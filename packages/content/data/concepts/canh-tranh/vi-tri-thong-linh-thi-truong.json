@@ -71,6 +71,16 @@
     {
      "text": "Không có doanh nghiệp nào cạnh tranh",
      "answer": "right"
+    },
+    {
+     "text": "Hai doanh nghiệp cùng hành động hạn chế cạnh tranh, tổng thị phần 50% trên thị trường",
+     "answer": "left",
+     "basis": "Điểm a khoản 2 Điều 24 Luật Cạnh tranh 2018"
+    },
+    {
+     "text": "Doanh nghiệp duy nhất khai thác nước sạch trong một đô thị, không đối thủ nào hoạt động",
+     "answer": "right",
+     "basis": "Điều 25 Luật Cạnh tranh 2018"
     }
    ],
    "explain": "Điều 24, 25."

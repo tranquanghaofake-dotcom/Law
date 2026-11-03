@@ -73,6 +73,11 @@
     {
      "text": "Trụ sở, vốn chủ sở hữu của công ty chứng khoán",
      "answer": "right"
+    },
+    {
+     "text": "Cổ phiếu do công ty chứng khoán tự doanh mua để giữ cho chính mình",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 65 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 1 Điều 65."

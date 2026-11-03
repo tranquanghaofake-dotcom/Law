@@ -71,6 +71,16 @@
     {
      "text": "Công ty TNHH thành lập tại Hà Nội, chủ sở hữu là công dân Việt Nam",
      "answer": "right"
+    },
+    {
+     "text": "Tổ chức thành lập theo pháp luật Singapore thực hiện hoạt động đầu tư kinh doanh tại Việt Nam",
+     "answer": "left",
+     "basis": "Khoản 19 Điều 3 Luật Đầu tư 2025"
+    },
+    {
+     "text": "Cá nhân mang quốc tịch Việt Nam đầu tư mở quán cà phê tại Đà Nẵng",
+     "answer": "right",
+     "basis": "Khoản 20 Điều 3 Luật Đầu tư 2025"
     }
    ],
    "explain": "Khoản 19, 20 Điều 3."

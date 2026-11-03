@@ -71,6 +71,16 @@
     {
      "text": "Kiểm toán việc quản lý, sử dụng tài chính, tài sản công",
      "answer": "right"
+    },
+    {
+     "text": "Quốc hội quyết định dự toán ngân sách nhà nước",
+     "answer": "left",
+     "basis": "Khoản 4 Điều 70 Hiến pháp 2013"
+    },
+    {
+     "text": "Quốc hội quyết định phân chia các khoản thu và nhiệm vụ chi giữa ngân sách trung ương và địa phương",
+     "answer": "left",
+     "basis": "Khoản 4 Điều 70 Hiến pháp 2013"
     }
    ],
    "explain": "Khoản 4 Điều 70; Điều 118."

@@ -75,6 +75,11 @@
     {
      "text": "Chủ thể có thể là cơ quan, tổ chức",
      "answer": "left"
+    },
+    {
+     "text": "Người khiếu nại quyết định hành chính phải thực hiện trong thời hiệu 90 ngày",
+     "answer": "left",
+     "basis": "Điều 9 Luật Khiếu nại 2011"
     }
    ],
    "explain": "Điều 2 Luật Khiếu nại; Điều 2 Luật Tố cáo."

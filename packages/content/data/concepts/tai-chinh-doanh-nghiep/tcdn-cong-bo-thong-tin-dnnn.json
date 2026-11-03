@@ -71,6 +71,16 @@
     {
      "text": "Bí mật kinh doanh về công thức sản phẩm",
      "answer": "right"
+    },
+    {
+     "text": "Thông tin cơ bản về công ty và Điều lệ công ty, công bố định kỳ trên trang thông tin điện tử",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 109 Luật Doanh nghiệp 2020"
+    },
+    {
+     "text": "Báo cáo tài chính năm đã được kiểm toán độc lập và tóm tắt báo cáo đó",
+     "answer": "left",
+     "basis": "Điểm c khoản 1 Điều 109 Luật Doanh nghiệp 2020"
     }
    ],
    "explain": "Khoản 1 Điều 109."

@@ -70,6 +70,16 @@
     {
      "text": "Sinh con thứ hai",
      "answer": "right"
+    },
+    {
+     "text": "Lao động nữ sinh con đầu lòng, nghỉ trước và sau khi sinh",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 139 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Lao động nữ đã có một con, nay sinh con thứ hai",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 139 Bộ luật Lao động 2019"
     }
    ],
    "explain": "Khoản 1 Điều 139."

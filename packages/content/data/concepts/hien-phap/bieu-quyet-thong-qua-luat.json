@@ -74,6 +74,16 @@
     {
      "text": "Kéo dài nhiệm kỳ Quốc hội",
      "answer": "right"
+    },
+    {
+     "text": "Quốc hội thông qua nghị quyết về kế hoạch phát triển kinh tế – xã hội",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 85 Hiến pháp 2013"
+    },
+    {
+     "text": "Quốc hội quyết định rút ngắn nhiệm kỳ của Quốc hội",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 85 Hiến pháp 2013"
     }
    ],
    "explain": "Khoản 1 Điều 85."

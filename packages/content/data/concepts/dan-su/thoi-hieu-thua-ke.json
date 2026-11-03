@@ -75,6 +75,16 @@
     {
      "text": "Yêu cầu chia di sản là bất động sản",
      "answer": "right"
+    },
+    {
+     "text": "Yêu cầu chia di sản là chiếc xe ô tô của người đã chết",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 623 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Yêu cầu chia thửa đất của người đã chết",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 623 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 623."

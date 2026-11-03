@@ -72,6 +72,16 @@
     {
      "text": "Trưng dụng kho bãi để phòng, chống thiên tai",
      "answer": "right"
+    },
+    {
+     "text": "Tịch thu nhà máy hợp pháp của nhà đầu tư bằng quyết định hành chính",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 9 Luật Đầu tư 2025"
+    },
+    {
+     "text": "Nhà nước trưng mua đất của nhà đầu tư để phục vụ quốc phòng và thanh toán cho nhà đầu tư",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 9 Luật Đầu tư 2025"
     }
    ],
    "explain": "Điều 9."

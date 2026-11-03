@@ -74,6 +74,21 @@
     {
      "text": "Đột nhập cửa hàng thu giữ hàng giả",
      "answer": "right"
+    },
+    {
+     "text": "Gửi yêu cầu chấm dứt xâm phạm và gỡ bỏ nội dung vi phạm trên mạng",
+     "answer": "left",
+     "basis": "Điểm b khoản 1 Điều 198 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Áp dụng biện pháp công nghệ ngăn chặn sao chép trái phép phần mềm",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 198 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Tự ý vào kho đối thủ lấy hàng giả về",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 198 Luật Sở hữu trí tuệ (không thuộc các biện pháp được liệt kê)"
     }
    ],
    "explain": "Khoản 1 Điều 198."

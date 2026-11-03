@@ -74,6 +74,16 @@
     {
      "text": "Trên lãnh thổ Việt Nam chỉ công nhận quốc tịch Việt Nam của người song tịch",
      "answer": "left"
+    },
+    {
+     "text": "Người được Chủ tịch nước cho giữ quốc tịch nước ngoài theo quy định của Luật Quốc tịch",
+     "answer": "left",
+     "basis": "Điều 4 Luật Quốc tịch Việt Nam 2008"
+    },
+    {
+     "text": "Công dân Việt Nam tự ý giữ quốc tịch thứ hai mà không thuộc trường hợp luật định",
+     "answer": "right",
+     "basis": "Điều 4 Luật Quốc tịch Việt Nam 2008"
     }
    ],
    "explain": "Điều 4, khoản 4, 5 Điều 5, khoản 6 Điều 19."

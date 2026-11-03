@@ -74,6 +74,16 @@
     {
      "text": "Kiểm sát viên chịu sự chỉ đạo của Viện trưởng",
      "answer": "left"
+    },
+    {
+     "text": "Viện kiểm sát nhân dân cấp dưới chịu sự lãnh đạo của Viện trưởng Viện kiểm sát cấp trên",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 109 Hiến pháp 2013"
+    },
+    {
+     "text": "Tòa án nhân dân không có cơ quan cấp trên nào can thiệp vào việc xét xử vụ án",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 103 Hiến pháp 2013"
     }
    ],
    "explain": "Điều 103, 109."

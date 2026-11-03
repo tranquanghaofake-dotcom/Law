@@ -71,6 +71,16 @@
     {
      "text": "Mức phạt do các bên thỏa thuận, không trần chung",
      "answer": "right"
+    },
+    {
+     "text": "Hợp đồng thương mại có điều khoản phạt khi bên mua chậm thanh toán",
+     "answer": "left",
+     "basis": "Điều 300 Luật Thương mại 2005"
+    },
+    {
+     "text": "Bên vi phạm chỉ phải chịu phạt, không phải bồi thường nếu các bên có thỏa thuận như vậy",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 418 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 301 LTM; Điều 418 BLDS."

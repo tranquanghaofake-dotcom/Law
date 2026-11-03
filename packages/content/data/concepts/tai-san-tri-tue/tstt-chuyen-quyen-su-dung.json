@@ -72,6 +72,16 @@
     {
      "text": "Bán đứt nhãn hiệu cho bên thứ ba",
      "answer": "right"
+    },
+    {
+     "text": "Được sản xuất sản phẩm theo kiểu dáng công nghiệp đã được cấp phép trong phạm vi hợp đồng",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 141 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Chuyển nhượng quyền sử dụng tên thương mại cho bên thứ ba",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 142 Luật Sở hữu trí tuệ"
     }
    ],
    "explain": "Điều 141: bên nhận chỉ có quyền sử dụng."

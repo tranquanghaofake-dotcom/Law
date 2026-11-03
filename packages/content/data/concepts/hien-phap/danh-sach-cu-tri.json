@@ -76,6 +76,16 @@
     {
      "text": "Người bị Tòa án tước quyền bầu cử",
      "answer": "right"
+    },
+    {
+     "text": "Người mất năng lực hành vi dân sự theo quyết định của Tòa án",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 30 Luật Bầu cử Đại biểu Quốc hội và Đại biểu Hội đồng nhân dân 2015"
+    },
+    {
+     "text": "Người đang chấp hành hình phạt tù mà không được hưởng án treo",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 30 Luật Bầu cử Đại biểu Quốc hội và Đại biểu Hội đồng nhân dân 2015"
     }
    ],
    "explain": "Khoản 5 Điều 29; khoản 1 Điều 30."

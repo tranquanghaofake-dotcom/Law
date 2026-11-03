@@ -75,6 +75,11 @@
     {
      "text": "Bị thu hồi vì làm việc cùng lúc cho 02 công ty chứng khoán",
      "answer": "right"
+    },
+    {
+     "text": "Bị thu hồi vì không còn đáp ứng điều kiện cấp chứng chỉ, nay đáp ứng lại và xin cấp lại",
+     "answer": "left",
+     "basis": "Điểm a khoản 3 và khoản 4 Điều 97 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 3, 4 Điều 97; điểm a khoản 2 Điều 98."

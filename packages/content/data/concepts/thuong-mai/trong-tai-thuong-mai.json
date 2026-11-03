@@ -71,6 +71,16 @@
     {
      "text": "Giải quyết theo đơn khởi kiện, không cần thỏa thuận",
      "answer": "right"
+    },
+    {
+     "text": "Các bên ký thỏa thuận trọng tài để chọn cơ quan trọng tài giải quyết tranh chấp",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 3 Luật Trọng tài thương mại 2010"
+    },
+    {
+     "text": "Các bên không có thỏa thuận trọng tài nên tranh chấp phải đưa ra Tòa án",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 5 Luật Trọng tài thương mại 2010"
     }
    ],
    "explain": "Điều 3, 5, 6."

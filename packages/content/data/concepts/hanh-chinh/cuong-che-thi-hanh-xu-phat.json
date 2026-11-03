@@ -70,6 +70,21 @@
     {
      "text": "Đưa vào cơ sở giáo dục bắt buộc",
      "answer": "right"
+    },
+    {
+     "text": "Kê biên tài sản có giá trị tương ứng với số tiền phạt để bán đấu giá",
+     "answer": "left",
+     "basis": "Điểm b khoản 2 Điều 86 Luật Xử lý vi phạm hành chính"
+    },
+    {
+     "text": "Khấu trừ một phần lương để thu tiền phạt của người không tự nguyện nộp",
+     "answer": "left",
+     "basis": "Điểm a khoản 2 Điều 86 Luật Xử lý vi phạm hành chính"
+    },
+    {
+     "text": "Tịch thu phương tiện được dùng để vi phạm hành chính",
+     "answer": "right",
+     "basis": "Điểm d khoản 1 Điều 21 Luật Xử lý vi phạm hành chính"
     }
    ],
    "explain": "Điều 86, 2."

@@ -70,6 +70,16 @@
     {
      "text": "Tặng cho tài sản không điều kiện",
      "answer": "right"
+    },
+    {
+     "text": "Hai bên thỏa thuận: một bên giao hàng, bên kia thanh toán tiền, mỗi bên đều có nghĩa vụ",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 402 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Hai bên thỏa thuận cho thuê nhà, bên cho thuê giao nhà và bên thuê trả tiền thuê định kỳ",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 402 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 402."

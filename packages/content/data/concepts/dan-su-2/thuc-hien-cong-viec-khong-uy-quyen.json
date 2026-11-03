@@ -70,6 +70,16 @@
     {
      "text": "Tự ý sửa nhà hàng xóm dù họ đã phản đối",
      "answer": "right"
+    },
+    {
+     "text": "Người sơn lại hàng rào của nhà bị bão làm hỏng khi chủ nhà đi xa, vì lợi ích của chủ nhà",
+     "answer": "left",
+     "basis": "Điều 574 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Người tự ý sửa nhà người khác để kiếm tiền công, không vì lợi ích của chủ nhà",
+     "answer": "right",
+     "basis": "Điều 574 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 574."

@@ -75,6 +75,11 @@
     {
      "text": "Quản lý danh mục đầu tư chứng khoán",
      "answer": "left"
+    },
+    {
+     "text": "Môi giới chứng khoán cho khách hàng",
+     "answer": "right",
+     "basis": "Điều 72 Luật Chứng khoán 2019 (nghiệp vụ công ty chứng khoán)"
     }
    ],
    "explain": "Điều 72 và Điều 73."

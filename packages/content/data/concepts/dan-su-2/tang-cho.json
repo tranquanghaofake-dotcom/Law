@@ -69,6 +69,16 @@
     {
      "text": "Ý chí đơn phương, có hiệu lực sau khi chết",
      "answer": "right"
+    },
+    {
+     "text": "Ông A tặng căn nhà cho con, con đồng ý nhận và việc tặng cho có hiệu lực khi ông còn sống",
+     "answer": "left",
+     "basis": "Điều 457 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Bà B lập văn bản để lại tài sản cho cháu, có hiệu lực sau khi bà mất",
+     "answer": "right",
+     "basis": "Điều 624 Bộ luật Dân sự 2015 (di chúc)"
     }
    ],
    "explain": "Điều 457, 624."

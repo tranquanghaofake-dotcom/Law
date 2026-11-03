@@ -70,6 +70,16 @@
     {
      "text": "Tư vấn pháp lý về ly hôn",
      "answer": "right"
+    },
+    {
+     "text": "Nhận hàng từ kho nhà sản xuất, vận chuyển và lưu kho cho khách hàng",
+     "answer": "left",
+     "basis": "Điều 233 Luật Thương mại 2005"
+    },
+    {
+     "text": "Cho thuê văn phòng làm việc tại khu đô thị",
+     "answer": "right",
+     "basis": "Điều 233 Luật Thương mại 2005 (không thuộc công việc logistics được liệt kê)"
     }
    ],
    "explain": "Điều 233."

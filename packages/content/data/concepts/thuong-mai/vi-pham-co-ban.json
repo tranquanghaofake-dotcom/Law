@@ -69,6 +69,16 @@
     {
      "text": "Giao chậm 1 ngày, không ảnh hưởng mục đích sử dụng",
      "answer": "right"
+    },
+    {
+     "text": "Bên bán giao hàng không đúng chủng loại, khiến bên mua mất hoàn toàn mục đích mua",
+     "answer": "left",
+     "basis": "Khoản 13 Điều 3 Luật Thương mại 2005"
+    },
+    {
+     "text": "Bên bán giao thiếu một phần nhỏ hàng, không ảnh hưởng đến mục đích sử dụng",
+     "answer": "right",
+     "basis": "Khoản 13 Điều 3 Luật Thương mại 2005"
     }
    ],
    "explain": "Khoản 13 Điều 3."

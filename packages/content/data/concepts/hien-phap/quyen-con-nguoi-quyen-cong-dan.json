@@ -74,6 +74,16 @@
     {
      "text": "Hiến pháp 2013 thường dùng chủ ngữ \"Mọi người\" khi quy định loại quyền này.",
      "answer": "left"
+    },
+    {
+     "text": "Quyền bất khả xâm phạm về thân thể áp dụng cho mọi người trên lãnh thổ Việt Nam",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 20 Hiến pháp 2013"
+    },
+    {
+     "text": "Quyền ứng cử vào Quốc hội chỉ dành cho công dân Việt Nam",
+     "answer": "right",
+     "basis": "Điều 27 Hiến pháp 2013"
     }
    ],
    "explain": "Hiến pháp 2013 phân biệt \"mọi người\" (quyền con người) và \"công dân\" (quyền công dân, gắn với quốc tịch)."

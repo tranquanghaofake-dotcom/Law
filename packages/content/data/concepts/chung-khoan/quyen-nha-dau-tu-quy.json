@@ -73,6 +73,11 @@
     {
      "text": "Thanh toán đủ tiền mua chứng chỉ quỹ",
      "answer": "right"
+    },
+    {
+     "text": "Được hưởng các lợi ích và tài sản được chia khi quỹ giải thể theo tỷ lệ vốn góp",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 101 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 1, 2 Điều 101."

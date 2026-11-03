@@ -75,6 +75,16 @@
     {
      "text": "Hoàn trả tài sản nhận nhầm",
      "answer": "right"
+    },
+    {
+     "text": "Bên bán phải giao chiếc xe đã thỏa thuận theo hợp đồng mua bán",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 275 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Người đơn phương hứa thưởng cho ai tìm được thú cưng bị lạc",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 275 Bộ luật Dân sự 2015 (hành vi pháp lý đơn phương)"
     }
    ],
    "explain": "Điều 275."

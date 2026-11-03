@@ -74,6 +74,11 @@
     {
      "text": "Cung cấp dịch vụ lưu ký và thanh toán giao dịch cho khách hàng",
      "answer": "left"
+    },
+    {
+     "text": "Tham gia bù trừ, xác định nghĩa vụ thanh toán tiền và chứng khoán",
+     "answer": "right",
+     "basis": "Điểm b khoản 1 Điều 56 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 1, 2 Điều 56."

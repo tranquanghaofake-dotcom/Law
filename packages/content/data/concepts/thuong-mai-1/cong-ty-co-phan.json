@@ -71,6 +71,16 @@
     {
      "text": "Tối đa 50 thành viên",
      "answer": "right"
+    },
+    {
+     "text": "Vốn điều lệ được chia thành các phần bằng nhau gọi là cổ phần",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 111 Luật Doanh nghiệp 2020"
+    },
+    {
+     "text": "Có từ 02 đến 50 thành viên là tổ chức, cá nhân",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 46 Luật Doanh nghiệp 2020"
     }
    ],
    "explain": "Điều 46, 111."

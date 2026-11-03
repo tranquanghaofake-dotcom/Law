@@ -71,6 +71,16 @@
     {
      "text": "Cộng thị phần của các bên sáp nhập",
      "answer": "right"
+    },
+    {
+     "text": "Tính tỷ lệ % số đơn vị hàng hóa mua vào của doanh nghiệp so với tổng mua vào của thị trường",
+     "answer": "left",
+     "basis": "Điểm d khoản 1 Điều 10 Luật Cạnh tranh 2018"
+    },
+    {
+     "text": "Cộng thị phần của hai doanh nghiệp đang thỏa thuận hạn chế cạnh tranh với nhau",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 10 Luật Cạnh tranh 2018"
     }
    ],
    "explain": "Điều 10."

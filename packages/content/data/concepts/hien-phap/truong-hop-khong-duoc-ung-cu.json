@@ -75,6 +75,11 @@
     {
      "text": "Bị Tòa án tuyên mất năng lực hành vi dân sự",
      "answer": "left"
+    },
+    {
+     "text": "Người đang bị khởi tố bị can không được ứng cử đại biểu Quốc hội",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 37 Luật Bầu cử Đại biểu Quốc hội và Đại biểu Hội đồng nhân dân 2015"
     }
    ],
    "explain": "Điều 37 Luật Bầu cử."

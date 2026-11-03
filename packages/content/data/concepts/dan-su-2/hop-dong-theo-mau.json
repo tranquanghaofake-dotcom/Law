@@ -70,6 +70,16 @@
     {
      "text": "Điều khoản về giá dịch vụ đã công khai",
      "answer": "right"
+    },
+    {
+     "text": "Điều khoản mẫu miễn trách nhiệm cho bên soạn thảo, khiến khách hàng chịu thêm trách nhiệm",
+     "answer": "left",
+     "basis": "Khoản 3 Điều 405 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Điều khoản mẫu về giá dịch vụ đã công khai cho khách hàng biết trước khi ký",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 405 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 405."

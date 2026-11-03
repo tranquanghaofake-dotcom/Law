@@ -71,6 +71,16 @@
     {
      "text": "Dịch vụ số do nhà cung cấp nước ngoài cung cấp qua nền tảng số",
      "answer": "right"
+    },
+    {
+     "text": "Phân bón theo quy định của pháp luật",
+     "answer": "left",
+     "basis": "Điểm b khoản 2 Điều 9 Luật Thuế giá trị gia tăng 2024"
+    },
+    {
+     "text": "Sản phẩm cây trồng, rừng trồng chưa chế biến thành sản phẩm khác",
+     "answer": "left",
+     "basis": "Điểm d khoản 2 Điều 9 Luật Thuế giá trị gia tăng 2024"
     }
    ],
    "explain": "Khoản 2, 3 Điều 9."

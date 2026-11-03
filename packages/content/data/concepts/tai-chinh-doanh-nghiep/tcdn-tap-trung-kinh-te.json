@@ -72,6 +72,16 @@
     {
      "text": "Doanh nghiệp tự giải thể",
      "answer": "right"
+    },
+    {
+     "text": "Liên doanh giữa hai doanh nghiệp để thành lập một doanh nghiệp mới",
+     "answer": "left",
+     "basis": "Điểm d khoản 1 và khoản 5 Điều 29 Luật Cạnh tranh 2018"
+    },
+    {
+     "text": "Doanh nghiệp tăng vốn điều lệ bằng cách phát hành cổ phần cho cổ đông hiện hữu",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 29 Luật Cạnh tranh 2018 (không thuộc các hình thức liệt kê)"
     }
    ],
    "explain": "Khoản 1 Điều 29."

@@ -71,6 +71,16 @@
     {
      "text": "Bán hàng xuất khẩu theo hợp đồng mua bán quốc tế",
      "answer": "right"
+    },
+    {
+     "text": "Doanh nghiệp Việt ký hợp đồng hợp tác kinh doanh với đối tác ở Campuchia và chia sản phẩm",
+     "answer": "left",
+     "basis": "Điểm b khoản 1 Điều 39 Luật Đầu tư 2025"
+    },
+    {
+     "text": "Doanh nghiệp Việt nhập khẩu hàng từ Thái Lan để bán trong nước, không chuyển vốn ra nước ngoài",
+     "answer": "right",
+     "basis": "Khoản 13 Điều 3 Luật Đầu tư 2025"
     }
    ],
    "explain": "Điều 39."

@@ -74,6 +74,16 @@
     {
      "text": "Người viết hộ phải bảo đảm bí mật phiếu bầu",
      "answer": "right"
+    },
+    {
+     "text": "Cử tri tự mình bỏ phiếu bầu, không được nhờ người khác bầu thay",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 7 Hiến pháp 2013 và khoản 2 Điều 69 Luật Bầu cử 2015"
+    },
+    {
+     "text": "Phiếu bầu được bỏ kín, người khác không được biết cử tri bầu cho ai",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 7 Hiến pháp 2013"
     }
    ],
    "explain": "Khoản 2, 3, 5 Điều 69 Luật Bầu cử."

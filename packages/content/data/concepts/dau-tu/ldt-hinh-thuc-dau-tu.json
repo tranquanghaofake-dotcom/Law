@@ -72,6 +72,16 @@
     {
      "text": "Mua hàng hóa để tiêu dùng cá nhân",
      "answer": "right"
+    },
+    {
+     "text": "Doanh nghiệp góp vốn, mua cổ phần của một công ty đang hoạt động",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 18 Luật Đầu tư 2025"
+    },
+    {
+     "text": "Cá nhân mua nhà ở để làm nơi ở cho gia đình",
+     "answer": "right",
+     "basis": "Điều 18 Luật Đầu tư 2025 (không liệt kê hình thức này)"
     }
    ],
    "explain": "Điều 18."

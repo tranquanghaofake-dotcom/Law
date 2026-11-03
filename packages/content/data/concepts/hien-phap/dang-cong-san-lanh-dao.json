@@ -73,6 +73,16 @@
     {
      "text": "Đề ra đường lối, chủ trương; không trực tiếp ban hành luật.",
      "answer": "left"
+    },
+    {
+     "text": "Tổ chức của Đảng và đảng viên hoạt động trong khuôn khổ Hiến pháp và pháp luật",
+     "answer": "left",
+     "basis": "Khoản 3 Điều 4 Hiến pháp 2013"
+    },
+    {
+     "text": "Quốc hội thực hiện quyền lập hiến, quyền lập pháp và quyết định các vấn đề quan trọng của đất nước",
+     "answer": "right",
+     "basis": "Điều 69 Hiến pháp 2013"
     }
    ],
    "explain": "Đảng lãnh đạo bằng đường lối, chủ trương; Quốc hội là cơ quan nhà nước thể chế hóa thành Hiến pháp và luật."

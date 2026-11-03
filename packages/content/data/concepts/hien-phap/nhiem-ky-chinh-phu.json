@@ -74,6 +74,16 @@
     {
      "text": "Nhiệm kỳ của Thẩm phán do luật định",
      "answer": "right"
+    },
+    {
+     "text": "Nhiệm kỳ của Thủ tướng Chính phủ theo nhiệm kỳ của Quốc hội",
+     "answer": "left",
+     "basis": "Điều 97 Hiến pháp 2013"
+    },
+    {
+     "text": "Nhiệm kỳ của Thẩm phán Tòa án khu vực do luật định",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 105 Hiến pháp 2013"
     }
    ],
    "explain": "Điều 87, 97."

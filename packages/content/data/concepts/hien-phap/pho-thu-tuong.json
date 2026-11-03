@@ -75,6 +75,11 @@
     {
      "text": "Do Quốc hội bầu trong số đại biểu Quốc hội",
      "answer": "right"
+    },
+    {
+     "text": "Phó Thủ tướng là thành viên Chính phủ do Quốc hội quyết định cơ cấu",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 95 Hiến pháp 2013"
     }
    ],
    "explain": "Khoản 3 Điều 95; Điều 92, 93."

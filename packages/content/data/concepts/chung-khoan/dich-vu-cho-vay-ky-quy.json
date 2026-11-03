@@ -75,6 +75,16 @@
     {
      "text": "Bảo lãnh phát hành cổ phiếu IPO",
      "answer": "right"
+    },
+    {
+     "text": "Cho khách hàng vay tiền để mua chứng khoán thông qua dịch vụ ký quỹ",
+     "answer": "left",
+     "basis": "Điểm b khoản 1 Điều 86 Luật Chứng khoán 2019"
+    },
+    {
+     "text": "Tư vấn đầu tư miễn phí cho khách hàng qua bản tin nội bộ",
+     "answer": "right",
+     "basis": "Điểm b khoản 1 Điều 86 Luật Chứng khoán 2019 (không thuộc dịch vụ cho vay, ứng trước)"
     }
    ],
    "explain": "Điểm b khoản 1 Điều 86; bảo lãnh là nghiệp vụ riêng (khoản 3 Điều 86)."

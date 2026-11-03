@@ -70,6 +70,16 @@
     {
      "text": "Trả lại chính tài sản đã mượn",
      "answer": "right"
+    },
+    {
+     "text": "Người vay một lượng gạo của người khác, khi đến hạn trả lại cùng số lượng và chất lượng gạo đó",
+     "answer": "left",
+     "basis": "Điều 463 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Người mượn chiếc máy khoan để dùng vài ngày rồi trả đúng chiếc máy đó",
+     "answer": "right",
+     "basis": "Điều 494 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 463, 494."

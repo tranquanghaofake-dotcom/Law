@@ -74,6 +74,16 @@
     {
      "text": "Trọng tài thương mại giải quyết theo thỏa thuận trọng tài",
      "answer": "left"
+    },
+    {
+     "text": "Nhà đầu tư khởi kiện công ty chứng khoán vì bị thiệt hại do xâm phạm quyền lợi hợp pháp",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 133 Luật Chứng khoán 2019"
+    },
+    {
+     "text": "Ủy ban xử lý vi phạm hành chính đối với công ty chứng khoán sau khi thanh tra",
+     "answer": "right",
+     "basis": "Khoản 6 Điều 132 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Điều 132 và Điều 133."

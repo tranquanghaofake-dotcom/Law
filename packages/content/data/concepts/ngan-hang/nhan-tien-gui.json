@@ -74,6 +74,16 @@
     {
      "text": "Bán cổ phần cho nhà đầu tư khi tăng vốn điều lệ",
      "answer": "right"
+    },
+    {
+     "text": "Ngân hàng nhận tiền không kỳ hạn của khách và phát hành chứng chỉ tiền gửi",
+     "answer": "left",
+     "basis": "Khoản 27 Điều 4 Luật Các tổ chức tín dụng 2024"
+    },
+    {
+     "text": "Công ty cho thuê máy móc thu tiền thuê theo tháng, không nhận tiền gửi của khách",
+     "answer": "right",
+     "basis": "Khoản 27 Điều 4 Luật Các tổ chức tín dụng 2024 (không thuộc nhận tiền gửi)"
     }
    ],
    "explain": "Khoản 27 Điều 4."

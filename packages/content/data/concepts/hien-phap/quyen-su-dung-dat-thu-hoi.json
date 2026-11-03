@@ -70,6 +70,16 @@
     {
      "text": "Trong tình trạng chiến tranh, khẩn cấp, phòng, chống thiên tai",
      "answer": "right"
+    },
+    {
+     "text": "Nhà nước thu hồi đất để phát triển kinh tế - xã hội vì lợi ích quốc gia, có bồi thường cho người dân",
+     "answer": "left",
+     "basis": "Khoản 3 Điều 54 Hiến pháp 2013"
+    },
+    {
+     "text": "Nhà nước trưng dụng đất khi có tình trạng khẩn cấp để phòng, chống thiên tai",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 54 Hiến pháp 2013"
     }
    ],
    "explain": "Khoản 3, 4 Điều 54."

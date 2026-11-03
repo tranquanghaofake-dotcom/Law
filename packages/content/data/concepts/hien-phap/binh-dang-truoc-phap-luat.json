@@ -69,6 +69,16 @@
     {
      "text": "\"Mọi người đều bình đẳng trước pháp luật\"",
      "answer": "right"
+    },
+    {
+     "text": "Người nước ngoài đang sinh sống tại Việt Nam cũng được bình đẳng trước pháp luật",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 16 Hiến pháp 2013"
+    },
+    {
+     "text": "Mọi người đều bình đẳng trước pháp luật khi bị xét xử về cùng một hành vi",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 16 Hiến pháp 2013"
     }
    ],
    "explain": "Điều 52 Hiến pháp 1992; Điều 16 Hiến pháp 2013."

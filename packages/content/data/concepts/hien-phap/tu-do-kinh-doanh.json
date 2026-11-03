@@ -70,6 +70,16 @@
     {
      "text": "Mọi người tự do kinh doanh ngành nghề pháp luật không cấm",
      "answer": "right"
+    },
+    {
+     "text": "Quyền tự do kinh doanh là quyền hiến định của mọi người",
+     "answer": "right",
+     "basis": "Điều 33 Hiến pháp 2013"
+    },
+    {
+     "text": "Doanh nghiệp được tự do lựa chọn ngành nghề kinh doanh mà luật không cấm",
+     "answer": "right",
+     "basis": "Điều 33 Hiến pháp 2013"
     }
    ],
    "explain": "Tiến trình pháp luật về tự do kinh doanh."

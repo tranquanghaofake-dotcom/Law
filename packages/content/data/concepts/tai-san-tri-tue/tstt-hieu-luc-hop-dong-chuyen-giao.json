@@ -72,6 +72,16 @@
     {
      "text": "Hợp đồng sử dụng nhãn hiệu",
      "answer": "right"
+    },
+    {
+     "text": "Hợp đồng sử dụng sáng chế ký xong nhưng chưa đăng ký tại cơ quan nhà nước",
+     "answer": "left",
+     "basis": "Khoản 2, 3 Điều 148 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Hợp đồng sử dụng nhãn hiệu có hiệu lực kể từ khi các bên ký",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 148 Luật Sở hữu trí tuệ (trừ hợp đồng sử dụng nhãn hiệu)"
     }
    ],
    "explain": "Khoản 1, 2 Điều 148."

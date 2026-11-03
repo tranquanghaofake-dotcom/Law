@@ -71,6 +71,16 @@
     {
      "text": "Chuyên viên trúng tuyển vào vị trí việc làm tại Bộ Tư pháp",
      "answer": "right"
+    },
+    {
+     "text": "Ông B được bầu giữ chức Chủ tịch Hội đồng nhân dân cấp tỉnh theo nhiệm kỳ",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 1 Luật Cán bộ, công chức 2025"
+    },
+    {
+     "text": "Kế toán viên được tuyển dụng vào vị trí việc làm tại Ủy ban nhân dân xã",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 1 Luật Cán bộ, công chức 2025"
     }
    ],
    "explain": "Điều 1."

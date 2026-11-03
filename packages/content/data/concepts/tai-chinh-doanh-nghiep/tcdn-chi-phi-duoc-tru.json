@@ -71,6 +71,16 @@
     {
      "text": "Khoản chi cá nhân của giám đốc không liên quan kinh doanh",
      "answer": "right"
+    },
+    {
+     "text": "Chi phí quảng cáo thực tế phục vụ hoạt động kinh doanh của doanh nghiệp, có chứng từ",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 9 Luật Thuế thu nhập doanh nghiệp 2025"
+    },
+    {
+     "text": "Khoản tài trợ cho giáo dục của doanh nghiệp",
+     "answer": "left",
+     "basis": "Điểm b5 khoản 1 Điều 9 Luật Thuế thu nhập doanh nghiệp 2025"
     }
    ],
    "explain": "Khoản 1 Điều 9."

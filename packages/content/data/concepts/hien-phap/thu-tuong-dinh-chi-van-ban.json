@@ -74,6 +74,11 @@
     {
      "text": "Văn bản trái luật của Chủ tịch Ủy ban nhân dân tỉnh",
      "answer": "left"
+    },
+    {
+     "text": "Quyết định trái luật của Ủy ban nhân dân cấp huyện bị Thủ tướng đình chỉ hoặc bãi bỏ",
+     "answer": "right",
+     "basis": "Khoản 4 Điều 98 Hiến pháp 2013"
     }
    ],
    "explain": "Khoản 4 Điều 98."

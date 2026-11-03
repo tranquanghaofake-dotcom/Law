@@ -70,6 +70,16 @@
     {
      "text": "Người vay tiền",
      "answer": "right"
+    },
+    {
+     "text": "Người thứ ba cam kết với ngân hàng sẽ trả nợ thay nếu người vay không trả",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 335 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Doanh nghiệp vay vốn có người thứ ba bảo lãnh, là bên có nghĩa vụ trả nợ chính",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 335 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 335."

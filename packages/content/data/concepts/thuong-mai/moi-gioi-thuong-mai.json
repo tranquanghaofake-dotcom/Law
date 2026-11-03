@@ -70,6 +70,16 @@
     {
      "text": "Nhân danh bên giao để ký hợp đồng",
      "answer": "right"
+    },
+    {
+     "text": "Trung gian giới thiệu khách mua cho nhà cung cấp rồi để hai bên tự ký hợp đồng",
+     "answer": "left",
+     "basis": "Điều 150 Luật Thương mại 2005"
+    },
+    {
+     "text": "Bên trung gian ký hợp đồng bán hàng nhân danh doanh nghiệp giao đại diện",
+     "answer": "right",
+     "basis": "Điều 141 Luật Thương mại 2005"
     }
    ],
    "explain": "Điều 141, 150."

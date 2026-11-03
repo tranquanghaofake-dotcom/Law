@@ -73,6 +73,11 @@
     {
      "text": "Cho phép mua cổ phiếu phổ thông theo giá xác định trước trong khoảng thời gian xác định",
      "answer": "right"
+    },
+    {
+     "text": "Là loại chứng khoán do công ty cổ phần phát hành",
+     "answer": "left",
+     "basis": "Khoản 7 Điều 4 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 7 và khoản 5 Điều 4."

@@ -70,6 +70,16 @@
     {
      "text": "Doanh nghiệp thiếu vốn nên chậm giao",
      "answer": "right"
+    },
+    {
+     "text": "Lũ lụt bất thường làm hỏng kho, không thể giao hàng đúng hạn",
+     "answer": "left",
+     "basis": "Điểm b khoản 1 Điều 294 Luật Thương mại 2005"
+    },
+    {
+     "text": "Bên mua chậm thanh toán vì không có tiền, bên bán muốn không bị phạt",
+     "answer": "right",
+     "basis": "Điều 294 Luật Thương mại 2005 (không thuộc trường hợp miễn trách nhiệm)"
     }
    ],
    "explain": "Điều 294."

@@ -70,6 +70,16 @@
     {
      "text": "Nhà nước nắm 40% vốn điều lệ",
      "answer": "right"
+    },
+    {
+     "text": "Nhà nước nắm 100% vốn điều lệ của công ty",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 88 Luật Doanh nghiệp 2020"
+    },
+    {
+     "text": "Nhà nước nắm 50% vốn điều lệ, phần còn lại thuộc tư nhân",
+     "answer": "right",
+     "basis": "Khoản 11 Điều 4 Luật Doanh nghiệp 2020 (phải trên 50%)"
     }
    ],
    "explain": "Điều 4, 88."

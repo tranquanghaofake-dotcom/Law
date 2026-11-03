@@ -70,6 +70,16 @@
     {
      "text": "Nhân viên bán hàng tạp hóa của hộ kinh doanh",
      "answer": "right"
+    },
+    {
+     "text": "Người làm việc thường xuyên chăm sóc trẻ em cho một hộ gia đình",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 161 Bộ luật Lao động 2019"
+    },
+    {
+     "text": "Thợ sửa ống nước được hộ gia đình thuê sửa chữa theo từng lần",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 161 Bộ luật Lao động 2019 (làm thường xuyên)"
     }
    ],
    "explain": "Khoản 1 Điều 161."

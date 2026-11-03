@@ -71,6 +71,16 @@
     {
      "text": "Bên giao vẫn có quyền sử dụng và ký với người khác",
      "answer": "right"
+    },
+    {
+     "text": "Bên được chuyển quyền là duy nhất được khai thác nhãn hiệu trong lãnh thổ đã thỏa thuận",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 143 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Bên giao cấp li-xăng cho nhiều doanh nghiệp khác nhau trên cùng lãnh thổ",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 143 Luật Sở hữu trí tuệ"
     }
    ],
    "explain": "Khoản 1, 2 Điều 143."

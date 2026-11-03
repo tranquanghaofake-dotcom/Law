@@ -69,6 +69,16 @@
     {
      "text": "Đưa chứng khoán vào hệ thống giao dịch cho chứng khoán chưa niêm yết",
      "answer": "right"
+    },
+    {
+     "text": "Hình thức trao đổi thông tin để tập hợp lệnh mua, bán chứng khoán niêm yết",
+     "answer": "left",
+     "basis": "Khoản 27 Điều 4 Luật Chứng khoán 2019"
+    },
+    {
+     "text": "Hình thức trao đổi thông tin để tập hợp lệnh mua, bán chứng khoán chưa niêm yết",
+     "answer": "right",
+     "basis": "Khoản 27 Điều 4 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 24 và khoản 25 Điều 4."

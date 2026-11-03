@@ -70,6 +70,16 @@
     {
      "text": "Quyền biểu quyết tương ứng số cổ phần sở hữu",
      "answer": "right"
+    },
+    {
+     "text": "Cá nhân, tổ chức tự nguyện gia nhập và ra khỏi hợp tác xã",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 8 Luật Hợp tác xã 2023"
+    },
+    {
+     "text": "Người góp nhiều vốn được chia lợi nhuận và quyền quyết định theo tỷ lệ vốn góp",
+     "answer": "right",
+     "basis": "Điều 8 Luật Hợp tác xã 2023 (không phụ thuộc vốn góp)"
     }
    ],
    "explain": "Điều 8 Luật HTX; Luật Doanh nghiệp."

@@ -76,6 +76,11 @@
     {
      "text": "Có bằng đại học tại Việt Nam",
      "answer": "right"
+    },
+    {
+     "text": "Có người thân là công dân Việt Nam đang sinh sống ở nước ngoài",
+     "answer": "right",
+     "basis": "Điều 19 Luật Quốc tịch Việt Nam 2008 (điều kiện liệt kê không gồm việc này)"
     }
    ],
    "explain": "Khoản 1 Điều 19."

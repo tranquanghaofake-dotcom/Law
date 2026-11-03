@@ -75,6 +75,16 @@
     {
      "text": "Thỏa thuận ấn định giá",
      "answer": "left"
+    },
+    {
+     "text": "Hai doanh nghiệp cùng thỏa thuận phân chia khu vực tiêu thụ sản phẩm",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 11 Luật Cạnh tranh 2018"
+    },
+    {
+     "text": "Đưa thông tin không trung thực về doanh nghiệp khác làm giảm uy tín của họ",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 45 Luật Cạnh tranh 2018"
     }
    ],
    "explain": "Điều 3, 45."

@@ -69,6 +69,16 @@
     {
      "text": "Bên làm thực hiện công việc nhân danh chính mình",
      "answer": "right"
+    },
+    {
+     "text": "Người được ủy quyền ký hợp đồng bán nhà, nhân danh chủ nhà giao dịch với khách mua",
+     "answer": "left",
+     "basis": "Điều 562 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Thợ sửa xe nhận việc cho khách, thực hiện công việc theo tên của mình và chịu trách nhiệm",
+     "answer": "right",
+     "basis": "Điều 513 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 513, 562."

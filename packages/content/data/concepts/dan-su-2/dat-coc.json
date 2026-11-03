@@ -70,6 +70,16 @@
     {
      "text": "Người bán bán nhà cho người khác",
      "answer": "right"
+    },
+    {
+     "text": "Bên đặt cọc từ chối giao kết hợp đồng khi không có lý do chính đáng, mất khoản cọc",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 328 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Bên nhận đặt cọc từ chối giao kết hợp đồng, phải trả lại tài sản đặt cọc và thêm một khoản tương đương",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 328 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Khoản 2 Điều 328."

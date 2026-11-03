@@ -74,6 +74,16 @@
     {
      "text": "Thuế xuất khẩu, nhập khẩu",
      "answer": "right"
+    },
+    {
+     "text": "Thuế thu nhập cá nhân",
+     "answer": "left",
+     "basis": "Giáo trình Luật Tài chính, ĐH Luật Hà Nội (chưa đối chiếu nguyên văn) (phân loại thuế trực thu, gián thu)"
+    },
+    {
+     "text": "Thuế giá trị gia tăng",
+     "answer": "right",
+     "basis": "Giáo trình Luật Tài chính, ĐH Luật Hà Nội (chưa đối chiếu nguyên văn) (phân loại thuế trực thu, gián thu)"
     }
    ],
    "explain": "Học thuyết."

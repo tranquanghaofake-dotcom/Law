@@ -72,6 +72,16 @@
     {
      "text": "Thu một lần ở khâu sản xuất, nhập khẩu",
      "answer": "right"
+    },
+    {
+     "text": "Doanh nghiệp bán hàng cho người tiêu dùng, thuế tính trên phần giá trị tăng thêm ở từng khâu",
+     "answer": "left",
+     "basis": "Điều 2 Luật Thuế giá trị gia tăng 2024"
+    },
+    {
+     "text": "Bia nhập khẩu để bán tại Việt Nam, thuế thu ngay ở khâu nhập khẩu",
+     "answer": "right",
+     "basis": "Điều 2 Luật Thuế tiêu thụ đặc biệt 2025"
     }
    ],
    "explain": "Điều 2 Luật Thuế GTGT; Luật Thuế TTĐB."

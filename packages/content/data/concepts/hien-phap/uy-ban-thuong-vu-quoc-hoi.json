@@ -79,6 +79,16 @@
     {
      "text": "Quyết định đại xá",
      "answer": "right"
+    },
+    {
+     "text": "Ủy ban thường vụ Quốc hội ban bố tình trạng khẩn cấp trong cả nước",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 73 Hiến pháp 2013 (nhiệm vụ Ủy ban thường vụ Quốc hội, Điều 74)"
+    },
+    {
+     "text": "Quốc hội quyết định việc thành lập, giải thể các Ủy ban của Quốc hội",
+     "answer": "right",
+     "basis": "Điều 76 Hiến pháp 2013"
     }
    ],
    "explain": "Điều 70 và Điều 74."

@@ -69,6 +69,16 @@
     {
      "text": "Bên trung gian chỉ giới thiệu, các bên tự ký",
      "answer": "right"
+    },
+    {
+     "text": "Bên nhận ủy thác mua hàng bằng danh nghĩa của mình theo điều kiện đã thỏa thuận",
+     "answer": "left",
+     "basis": "Điều 155 Luật Thương mại 2005"
+    },
+    {
+     "text": "Bên trung gian chỉ tìm khách mua và nhận hoa hồng, không đứng tên hợp đồng",
+     "answer": "right",
+     "basis": "Điều 150 Luật Thương mại 2005"
     }
    ],
    "explain": "Điều 150, 155."

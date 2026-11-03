@@ -70,6 +70,16 @@
     {
      "text": "Lãnh đạo công tác của Ủy ban nhân dân các cấp",
      "answer": "right"
+    },
+    {
+     "text": "Chính phủ chịu trách nhiệm trước Quốc hội và báo cáo công tác trước Quốc hội",
+     "answer": "left",
+     "basis": "Điều 94 Hiến pháp 2013"
+    },
+    {
+     "text": "Thủ tướng lãnh đạo hệ thống hành chính nhà nước từ trung ương đến địa phương",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 98 Hiến pháp 2013"
     }
    ],
    "explain": "Điều 94, 96."

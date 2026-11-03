@@ -69,6 +69,16 @@
     {
      "text": "Công bố quyết định tuyên bố tình trạng chiến tranh",
      "answer": "right"
+    },
+    {
+     "text": "Hội đồng quốc phòng và an ninh gồm Chủ tịch, Phó Chủ tịch và các Ủy viên",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 89 Hiến pháp 2013"
+    },
+    {
+     "text": "Chủ tịch nước quyết định phong, thăng quân hàm cấp tướng",
+     "answer": "right",
+     "basis": "Khoản 5 Điều 88 Hiến pháp 2013"
     }
    ],
    "explain": "Điều 88, 89."

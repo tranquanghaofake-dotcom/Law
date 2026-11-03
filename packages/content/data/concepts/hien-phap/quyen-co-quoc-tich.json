@@ -70,6 +70,16 @@
     {
      "text": "Chỉ bị tước trong trường hợp Điều 31",
      "answer": "right"
+    },
+    {
+     "text": "Cá nhân được quyền có quốc tịch theo quy định của pháp luật Việt Nam",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 2 Luật Quốc tịch Việt Nam 2008"
+    },
+    {
+     "text": "Công dân cư trú ở nước ngoài bị tước quốc tịch vì hành vi gây phương hại nghiêm trọng",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 31 Luật Quốc tịch Việt Nam 2008"
     }
    ],
    "explain": "Khoản 1 Điều 2."

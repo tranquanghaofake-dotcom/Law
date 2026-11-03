@@ -69,6 +69,16 @@
     {
      "text": "Có chứng chỉ môi giới nhưng làm kế toán cho doanh nghiệp may",
      "answer": "right"
+    },
+    {
+     "text": "Người có chứng chỉ hành nghề phân tích tài chính đang làm việc tại công ty quản lý quỹ",
+     "answer": "left",
+     "basis": "Khoản 47 Điều 4 và điểm b khoản 1 Điều 97 Luật Chứng khoán 2019"
+    },
+    {
+     "text": "Người có chứng chỉ môi giới nhưng không làm việc tại công ty chứng khoán",
+     "answer": "right",
+     "basis": "Khoản 47 Điều 4 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 47 Điều 4."

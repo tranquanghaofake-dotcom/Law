@@ -75,6 +75,11 @@
     {
      "text": "Chỉ gồm nhà đầu tư chứng khoán chuyên nghiệp",
      "answer": "left"
+    },
+    {
+     "text": "Quỹ chào bán chứng chỉ quỹ ra công chúng",
+     "answer": "right",
+     "basis": "Khoản 38 Điều 4 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Điều 108, 113; khoản 41 Điều 4."

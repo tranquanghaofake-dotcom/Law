@@ -75,6 +75,16 @@
     {
      "text": "Phải sau ít nhất 5 năm mới được xem xét cho trở lại",
      "answer": "left"
+    },
+    {
+     "text": "Công dân cư trú ở nước ngoài bị tước quốc tịch do hành vi phương hại nghiêm trọng đến nền độc lập",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 31 Luật Quốc tịch Việt Nam 2008"
+    },
+    {
+     "text": "Công dân tự nguyện xin thôi quốc tịch Việt Nam để nhập quốc tịch nước ngoài",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 27 Luật Quốc tịch Việt Nam 2008"
     }
    ],
    "explain": "Điều 27, 31; khoản 3 Điều 23."

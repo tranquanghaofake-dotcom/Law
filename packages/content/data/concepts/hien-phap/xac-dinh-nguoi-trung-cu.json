@@ -75,6 +75,16 @@
     {
      "text": "Chỉ chọn trong số người ứng cử không trúng cử lần đầu",
      "answer": "left"
+    },
+    {
+     "text": "Số người trúng cử đại biểu Quốc hội chưa đủ số đại biểu được bầu ở đơn vị bầu cử",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 79 Luật Bầu cử Đại biểu Quốc hội và Đại biểu Hội đồng nhân dân 2015"
+    },
+    {
+     "text": "Số cử tri đi bỏ phiếu chưa đạt quá một nửa tổng số cử tri trong danh sách",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 80 Luật Bầu cử Đại biểu Quốc hội và Đại biểu Hội đồng nhân dân 2015"
     }
    ],
    "explain": "Điều 79, 80 Luật Bầu cử."

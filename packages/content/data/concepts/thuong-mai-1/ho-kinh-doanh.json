@@ -71,6 +71,16 @@
     {
      "text": "Có tư cách pháp nhân, chịu trách nhiệm trong phạm vi vốn góp",
      "answer": "right"
+    },
+    {
+     "text": "Hộ gia đình có hai thành viên đăng ký thành lập hộ kinh doanh",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 82 Nghị định 168/2025/NĐ-CP"
+    },
+    {
+     "text": "Công ty có từ hai thành viên trở lên, tài sản công ty tách bạch với tài sản của thành viên",
+     "answer": "right",
+     "basis": "Điều 46 Luật Doanh nghiệp 2020"
     }
    ],
    "explain": "Điều 82 Nghị định 168/2025/NĐ-CP; Luật Doanh nghiệp."

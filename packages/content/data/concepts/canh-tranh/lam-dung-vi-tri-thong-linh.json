@@ -71,6 +71,16 @@
     {
      "text": "Giảm giá nhờ cải tiến công nghệ, vẫn trên giá thành",
      "answer": "right"
+    },
+    {
+     "text": "Doanh nghiệp thống lĩnh bán dưới giá thành toàn bộ để loại đối thủ khỏi thị trường",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 27 Luật Cạnh tranh 2018"
+    },
+    {
+     "text": "Doanh nghiệp thống lĩnh bỏ vốn mở rộng nhà máy để tăng nguồn cung cho thị trường",
+     "answer": "right",
+     "basis": "Điều 27 Luật Cạnh tranh 2018 (các điểm a–g khoản 1 không liệt kê hành vi này)"
     }
    ],
    "explain": "Điều 27."

@@ -70,6 +70,16 @@
     {
      "text": "Bạn cho mượn xe đạp không lấy tiền",
      "answer": "right"
+    },
+    {
+     "text": "Công ty thuê ô tô của đơn vị cho thuê để chạy dịch vụ, trả tiền thuê theo tháng",
+     "answer": "left",
+     "basis": "Đoạn 1 Điều 472 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Hàng xóm cho mượn chiếc thang để sửa mái nhà, không lấy tiền và sẽ trả lại đúng chiếc thang",
+     "answer": "right",
+     "basis": "Điều 494 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 472, 494."

@@ -72,6 +72,21 @@
     {
      "text": "Nước sông dùng để tưới lúa",
      "answer": "right"
+    },
+    {
+     "text": "Khoáng sản kim loại khai thác để bán",
+     "answer": "left",
+     "basis": "Điều 2 Luật Thuế tài nguyên 2009 (VBHN 23/VBHN-VPQH 2022)"
+    },
+    {
+     "text": "Khí thiên nhiên khai thác từ mỏ",
+     "answer": "left",
+     "basis": "Điều 2 Luật Thuế tài nguyên 2009 (VBHN 23/VBHN-VPQH 2022)"
+    },
+    {
+     "text": "Động vật hoang dã trong rừng tự nhiên bị săn bắt",
+     "answer": "right",
+     "basis": "Điều 2 Luật Thuế tài nguyên 2009 (VBHN 23/VBHN-VPQH 2022): sản phẩm rừng tự nhiên trừ động vật"
     }
    ],
    "explain": "Khoản 7 Điều 2."

@@ -70,6 +70,16 @@
     {
      "text": "Chủ chỉ là cá nhân, trách nhiệm vô hạn",
      "answer": "right"
+    },
+    {
+     "text": "Chủ sở hữu công ty chịu trách nhiệm bằng toàn bộ tài sản đến hết số vốn điều lệ",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 74 Luật Doanh nghiệp 2020"
+    },
+    {
+     "text": "Cá nhân làm chủ doanh nghiệp tư nhân không được đồng thời lập thêm doanh nghiệp tư nhân khác",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 188 Luật Doanh nghiệp 2020 (phân biệt với TNHH một thành viên)"
     }
    ],
    "explain": "Điều 74, 188."

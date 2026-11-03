@@ -74,6 +74,16 @@
     {
      "text": "Quy định tại khoản 3 Điều 120.",
      "answer": "right"
+    },
+    {
+     "text": "Ủy ban dự thảo Hiến pháp soạn thảo và tổ chức lấy ý kiến Nhân dân về dự thảo",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 120 Hiến pháp 2013"
+    },
+    {
+     "text": "Quốc hội quyết định việc trưng cầu ý dân về Hiến pháp",
+     "answer": "left",
+     "basis": "Khoản 4 Điều 120 Hiến pháp 2013"
     }
    ],
    "explain": "Lấy ý kiến Nhân dân (khoản 3 Điều 120) là bắt buộc trong soạn thảo; trưng cầu ý dân (khoản 4 Điều 120) là hình thức dân chủ trực tiếp, không bắt buộc."

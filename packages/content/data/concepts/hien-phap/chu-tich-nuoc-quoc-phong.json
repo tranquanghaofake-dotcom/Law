@@ -74,6 +74,16 @@
     {
      "text": "Bổ nhiệm Tổng tham mưu trưởng",
      "answer": "left"
+    },
+    {
+     "text": "Chủ tịch nước giữ chức Chủ tịch Hội đồng quốc phòng và an ninh",
+     "answer": "left",
+     "basis": "Khoản 5 Điều 88 Hiến pháp 2013"
+    },
+    {
+     "text": "Chủ tịch nước công bố quyết định của Quốc hội về việc tuyên bố tình trạng chiến tranh",
+     "answer": "right",
+     "basis": "Khoản 5 Điều 88 Hiến pháp 2013"
     }
    ],
    "explain": "Khoản 5 Điều 88."
