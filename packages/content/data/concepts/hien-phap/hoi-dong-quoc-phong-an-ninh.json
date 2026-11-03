@@ -29,7 +29,7 @@
    "options": [
     "Tập thể, quyết định theo đa số",
     "Thủ trưởng quyết định mọi việc",
-    "Một người quyết định theo ý kiến",
+    "Một người quyết định mọi việc",
     "Đồng thuận của mọi thành viên"
    ],
    "answer": 0,
@@ -46,8 +46,8 @@
    "options": [
     "Ủy ban thường vụ Quốc hội",
     "Chính phủ và Thủ tướng",
-    "Chủ tịch nước hiện nay",
-    "Bộ Quốc phòng và Bộ Công an"
+    "Chủ tịch nước",
+    "Bộ Quốc phòng, Bộ Công an"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 89.",

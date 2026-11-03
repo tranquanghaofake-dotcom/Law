@@ -29,8 +29,8 @@
    "q": "Theo khoản 2 Điều 21, quyền bí mật áp dụng với những hình thức nào?",
    "options": [
     "Thư tín, điện thoại, điện tín và các hình thức trao đổi thông tin riêng tư khác",
-    "Chỉ thư tay và thư gửi cho người thân trong gia đình tại địa phương hiện nay",
-    "Chỉ điện thoại cố định và điện thoại di động của người thân trong gia đình hiện nay",
+    "Chỉ thư tay và thư gửi cho người thân trong gia đình tại địa phương",
+    "Chỉ điện thoại cố định và điện thoại di động của người thân trong gia đình",
     "Chỉ thư của cơ quan nhà nước và thư tín của các tổ chức chính trị xã hội"
    ],
    "answer": 0,
@@ -46,7 +46,7 @@
    "q": "Thông tin về đời sống riêng tư, bí mật cá nhân được Hiến pháp bảo đảm như thế nào?",
    "options": [
     "Được pháp luật bảo đảm an toàn",
-    "Được công khai theo yêu cầu của bất kỳ ai",
+    "Được công khai theo yêu cầu",
     "Không được bảo vệ",
     "Chỉ bảo vệ với người nổi tiếng"
    ],

@@ -31,7 +31,7 @@
     "Chỉ tuân theo pháp luật",
     "Chỉ đạo của Chánh án",
     "Ý kiến của Viện kiểm sát",
-    "Ý kiến của chính quyền địa phương"
+    "Ý kiến chính quyền địa phương"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 103.",
@@ -46,9 +46,9 @@
    "q": "Ai bị nghiêm cấm can thiệp vào việc xét xử của Thẩm phán, Hội thẩm?",
    "options": [
     "Mọi cơ quan, tổ chức, cá nhân",
-    "Chỉ đương sự trong vụ án đó",
+    "Chỉ đương sự trong vụ án",
     "Chỉ báo chí đưa tin về vụ án",
-    "Chỉ luật sư bào chữa trong vụ án"
+    "Chỉ luật sư bào chữa vụ án"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 103.",

@@ -29,8 +29,8 @@
    "q": "Theo khoản 3 Điều 63, tổ chức, cá nhân gây ô nhiễm môi trường phải chịu trách nhiệm gì?",
    "options": [
     "Bị xử lý nghiêm, khắc phục, bồi thường thiệt hại",
-    "Chỉ bị nhắc nhở",
-    "Được miễn trách nhiệm nếu là doanh nghiệp nhà nước",
+    "Được nhắc nhở, không phải bồi thường",
+    "Được miễn trách nhiệm nếu là doanh nghiệp công",
     "Chỉ nộp phí bảo vệ môi trường"
    ],
    "answer": 0,
@@ -47,7 +47,7 @@
    "options": [
     "Năng lượng mới, năng lượng tái tạo",
     "Năng lượng than đá và dầu khí",
-    "Chỉ năng lượng hạt nhân và than đá",
+    "Chỉ năng lượng hạt nhân và nhiệt điện than",
     "Không quy định gì về năng lượng"
    ],
    "answer": 0,

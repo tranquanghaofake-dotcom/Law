@@ -29,8 +29,8 @@
    "options": [
     "Quốc hội, các cơ quan của Quốc hội, Chủ tịch nước, Chính phủ, Tòa án, Viện kiểm sát, các cơ quan khác của Nhà nước và toàn thể Nhân dân",
     "Chỉ Tòa án Hiến pháp và các tòa án cấp dưới trong phạm vi thẩm quyền xét xử của mình, không có ai khác được tham gia cả",
-    "Chỉ Quốc hội và Hội đồng bầu cử quốc gia, các cơ quan của Quốc hội trong phạm vi thẩm quyền của mình, không có chủ thể nào khác",
-    "Chỉ Chủ tịch nước và Chính phủ trong phạm vi quản lý nhà nước của mình, các cơ quan tư pháp và toàn thể Nhân dân không có trách nhiệm"
+    "Quốc hội và Hội đồng bầu cử quốc gia, các cơ quan của Quốc hội trong phạm vi thẩm quyền, trừ Chính phủ và Nhân dân",
+    "Chủ tịch nước và Chính phủ trong phạm vi quản lý nhà nước của mình, còn các cơ quan tư pháp và Nhân dân không có trách nhiệm"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 119 liệt kê rộng: mọi cơ quan nhà nước và toàn thể Nhân dân.",
@@ -113,7 +113,7 @@
    "options": [
     "Sinh viên không liên quan vì bảo vệ Hiến pháp là việc riêng của các cơ quan nhà nước có thẩm quyền và công chức",
     "Sinh viên, với tư cách là một phần của Nhân dân, có trách nhiệm bảo vệ Hiến pháp và có thể kiến nghị cơ quan có thẩm quyền xử lý",
-    "Sinh viên có quyền tự tuyên bố thông tư vô hiệu và buộc cơ quan ban hành thu hồi ngay lập tức văn bản đó và thông báo rộng rãi cho công chúng",
+    "Sinh viên có quyền tự tuyên bố thông tư vô hiệu và buộc cơ quan ban hành thu hồi ngay lập tức văn bản đó và thông báo rộng rãi",
     "Chỉ Tòa án mới được nhận phản ánh này và chỉ Tòa án có quyền xử lý văn bản trái Hiến pháp và thông báo cho Quốc hội"
    ],
    "answer": 1,

@@ -29,7 +29,7 @@
    "q": "Trong trường hợp khuyết Chủ tịch nước, ai giữ quyền Chủ tịch nước?",
    "options": [
     "Phó Chủ tịch nước",
-    "Chủ tịch Quốc hội",
+    "Chủ tịch của Quốc hội",
     "Thủ tướng Chính phủ",
     "Chánh án Tòa án nhân dân tối cao"
    ],
@@ -46,7 +46,7 @@
    "q": "Phó Chủ tịch nước do ai bầu?",
    "options": [
     "Quốc hội, trong số đại biểu Quốc hội",
-    "Chủ tịch nước bổ nhiệm theo đề nghị",
+    "Do Chủ tịch nước bổ nhiệm theo đề nghị",
     "Ủy ban thường vụ Quốc hội và Chính phủ",
     "Nhân dân bầu trực tiếp tại địa phương"
    ],
