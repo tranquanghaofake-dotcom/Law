@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { MASK, clip, coverage, leaks, maskTerms, nearDuplicate, termParts } from '$lib/engine/text';
+import { MASK, clip, coverage, leaks, maskDefiningHead, maskTerms, nearDuplicate, termParts } from '$lib/engine/text';
 
 describe('termParts', () => {
   it('thuật ngữ ghép tách thành các vế ≥ 2 tiếng, giữ cả thuật ngữ gốc, dài trước', () => {
@@ -7,6 +7,12 @@ describe('termParts', () => {
   });
   it('lấy chữ viết tắt trong ngoặc, bỏ vế mở đầu bằng hư từ', () => {
     expect(termParts('Giá trị tài sản ròng (NAV) của quỹ')).toEqual(['Giá trị tài sản ròng (NAV) của quỹ', 'Giá trị tài sản ròng', 'NAV']);
+  });
+  it('tên kiểu giáo trình "Khái niệm …": thêm phần lõi (kể cả 1 tiếng)', () => {
+    expect(termParts('Khái niệm hình phạt')).toContain('hình phạt');
+    expect(termParts('Khái niệm và đặc điểm của thuế')).toContain('thuế');
+    expect(termParts('Khái niệm và phân loại tội phạm trong Bộ luật Hình sự 1985')).toContain('tội phạm');
+    expect(termParts('Khái niệm và đặc điểm của thuế')).not.toContain('Khái niệm');
   });
   it('vế một tiếng không lấy', () => {
     expect(termParts('Hình thức chính thể: quân chủ và cộng hòa')).toEqual(['Hình thức chính thể: quân chủ và cộng hòa', 'Hình thức chính thể', 'quân chủ', 'cộng hòa']);
@@ -25,6 +31,17 @@ describe('maskTerms', () => {
   });
   it('che các vế của thuật ngữ ghép', () => {
     expect(maskTerms('Thừa kế theo pháp luật là thừa kế theo hàng thừa kế', termParts('Thừa kế theo pháp luật và hàng thừa kế'))).toBe(`${MASK} là thừa kế theo ${MASK}`);
+  });
+});
+
+describe('maskDefiningHead', () => {
+  it('che cụm "X là" ở đầu vế khi X trùng phần lớn thuật ngữ', () => {
+    expect(maskDefiningHead('Hình phạt là biện pháp cưỡng chế.', 'Khái niệm hình phạt')).toBe(`${MASK} là biện pháp cưỡng chế.`);
+    expect(maskDefiningHead('Thuế là một khoản nộp. Phí là khoản khác.', 'Khái niệm và đặc điểm của thuế')).toBe(`${MASK} là một khoản nộp. Phí là khoản khác.`);
+    expect(maskDefiningHead('1- Tội phạm là hành vi nguy hiểm', 'Tội phạm hình sự')).toBe(`1- ${MASK} là hành vi nguy hiểm`);
+  });
+  it('không che khi cụm không liên quan', () => {
+    expect(maskDefiningHead('Đó là quy định chung.', 'Quyền sở hữu')).toBe('Đó là quy định chung.');
   });
 });
 
