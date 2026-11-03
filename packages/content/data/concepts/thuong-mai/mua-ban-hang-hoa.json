@@ -29,9 +29,9 @@
    "q": "Hợp đồng mua bán hàng hóa có thể được thể hiện dưới hình thức nào?",
    "options": [
     "Lời nói, văn bản hoặc hành vi cụ thể",
-    "Chỉ văn bản",
-    "Chỉ văn bản công chứng",
-    "Chỉ hợp đồng điện tử"
+    "Chỉ văn bản có chữ ký của hai bên",
+    "Chỉ văn bản công chứng tại văn phòng",
+    "Chỉ hợp đồng điện tử được ký số"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 24.",
@@ -46,9 +46,9 @@
    "q": "Nghĩa vụ chính của bên mua trong mua bán hàng hóa là gì?",
    "options": [
     "Thanh toán, nhận hàng và quyền sở hữu hàng hóa theo thỏa thuận",
-    "Giao hàng",
-    "Bảo hành hàng hóa",
-    "Vận chuyển hàng hóa cho bên bán"
+    "Giao hàng đúng số lượng, chất lượng và thời hạn đã thỏa thuận trước",
+    "Bảo hành hàng hóa trong thời hạn theo hợp đồng đã ký kết",
+    "Vận chuyển hàng hóa cho bên bán đến địa điểm đã thỏa thuận"
    ],
    "answer": 0,
    "explain": "Khoản 8 Điều 3.",

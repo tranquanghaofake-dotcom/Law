@@ -21,10 +21,10 @@
     {
       "q": "Hợp đồng thương mại không có điều khoản phạt vi phạm. Bên bị vi phạm có quyền gì về tiền?",
       "options": [
-        "Phạt 8%",
+        "Phạt 8% giá trị hợp đồng bị vi phạm",
         "Chỉ yêu cầu bồi thường thiệt hại",
-        "Không có quyền gì",
-        "Phạt và bồi thường"
+        "Không có quyền gì sau khi vi phạm",
+        "Phạt và bồi thường thiệt hại đầy đủ"
       ],
       "answer": 1,
       "explain": "Khoản 1 Điều 307.",
@@ -35,9 +35,9 @@
       "q": "Hợp đồng thương mại có điều khoản phạt vi phạm. Bên bị vi phạm có được đòi cả bồi thường không?",
       "options": [
         "Có, được áp dụng cả hai (trừ luật quy định khác)",
-        "Không",
+        "Không, chỉ được áp dụng một trong hai chế tài theo luật",
         "Chỉ khi có thỏa thuận riêng về bồi thường",
-        "Chỉ khi thiệt hại trên 8%"
+        "Chỉ khi thiệt hại trên tám phần trăm giá trị"
       ],
       "answer": 0,
       "explain": "Khoản 2 Điều 307.",
@@ -73,10 +73,10 @@
     {
       "q": "Vi phạm cơ bản là gì?",
       "options": [
-        "Vi phạm lần đầu",
+        "Vi phạm lần đầu, không gây thiệt hại đáng kể cho bên kia trong thời hạn hợp đồng",
         "Vi phạm gây thiệt hại đến mức bên kia không đạt được mục đích giao kết hợp đồng",
-        "Vi phạm có giá trị lớn",
-        "Vi phạm về thanh toán"
+        "Vi phạm có giá trị lớn, gây thiệt hại nặng cho bên kia và nhiều lần liên tiếp",
+        "Vi phạm về thanh toán tiền hàng đúng hạn và đầy đủ theo hợp đồng ký kết"
       ],
       "answer": 1,
       "explain": "Khoản 13 Điều 3.",
@@ -86,10 +86,10 @@
     {
       "q": "Bên bị vi phạm có thể hủy bỏ hợp đồng khi nào (trừ trường hợp miễn trách nhiệm)?",
       "options": [
-        "Mọi vi phạm",
+        "Mọi vi phạm hợp đồng, dù nhỏ nhất và không gây thiệt hại",
         "Vi phạm là điều kiện hủy bỏ đã thỏa thuận hoặc vi phạm cơ bản",
-        "Khi được Tòa án cho phép trước",
-        "Khi bên kia chậm 1 ngày"
+        "Khi được Tòa án cho phép trước khi thực hiện hủy bỏ hợp đồng",
+        "Khi bên kia chậm thanh toán một ngày so với hạn đã ghi trong hợp đồng"
       ],
       "answer": 1,
       "explain": "Khoản 4 Điều 312.",
@@ -125,10 +125,10 @@
     {
       "q": "Thời hạn khiếu nại về chất lượng hàng hóa (không có bảo hành, không có thỏa thuận) là bao lâu?",
       "options": [
-        "03 tháng",
+        "03 tháng kể từ ngày giao hàng",
         "06 tháng từ ngày giao hàng",
-        "09 tháng",
-        "12 tháng"
+        "09 tháng kể từ ngày giao",
+        "12 tháng kể từ ngày giao"
       ],
       "answer": 1,
       "explain": "Khoản 2 Điều 318.",

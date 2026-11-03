@@ -29,9 +29,9 @@
    "q": "Mục đích của đấu giá hàng hóa là gì?",
    "options": [
     "Bán hàng hóa công khai để chọn người mua trả giá cao nhất",
-    "Chọn nhà cung cấp giá thấp nhất",
-    "Khuyến mại",
-    "Môi giới"
+    "Chọn nhà cung cấp có giá thấp nhất và chất lượng tốt nhất",
+    "Khuyến mại để thu hút khách hàng mua hàng với số lượng lớn",
+    "Môi giới để tìm người mua và bán hàng hóa giữa hai bên"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 185.",
@@ -46,9 +46,9 @@
    "q": "Phương thức đặt giá xuống: ai là người có quyền mua hàng?",
    "options": [
     "Người đầu tiên chấp nhận ngay mức giá khởi điểm hoặc mức giá được hạ thấp hơn",
-    "Người trả giá cao nhất",
-    "Người đăng ký sớm nhất",
-    "Người được bên bán chỉ định"
+    "Người trả giá cao nhất được chọn để mua hàng trong mọi trường hợp, không cần phê duyệt",
+    "Người đăng ký sớm nhất trong danh sách được bên bán chọn và phê duyệt",
+    "Người được bên bán chỉ định trước khi phiên đấu giá bắt đầu diễn ra"
    ],
    "answer": 0,
    "explain": "Điểm b khoản 2 Điều 185.",

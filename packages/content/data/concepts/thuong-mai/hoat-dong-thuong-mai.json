@@ -46,9 +46,9 @@
    "q": "Hàng hóa theo Luật Thương mại gồm những gì?",
    "options": [
     "Tất cả các loại động sản, kể cả hình thành trong tương lai, và vật gắn liền với đất đai",
-    "Mọi tài sản, kể cả quyền sử dụng đất",
-    "Chỉ động sản hiện có",
-    "Chỉ hàng hóa xuất nhập khẩu"
+    "Mọi tài sản, kể cả quyền sử dụng đất và các quyền tài sản khác của thương nhân",
+    "Chỉ động sản hiện có, không gồm hàng hình thành trong tương lai và vật gắn liền với đất đai",
+    "Chỉ hàng hóa xuất nhập khẩu do thương nhân nước ngoài cung cấp cho khách hàng"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 3.",

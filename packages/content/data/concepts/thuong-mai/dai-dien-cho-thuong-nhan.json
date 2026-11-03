@@ -30,9 +30,9 @@
    "q": "Trong đại diện cho thương nhân, bên đại diện thực hiện hoạt động thương mại với danh nghĩa của ai?",
    "options": [
     "Bên giao đại diện",
-    "Chính mình",
-    "Khách hàng",
-    "Nhà nước"
+    "Chính mình tự làm",
+    "Khách hàng đại lý",
+    "Nhà nước và cơ quan"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 141.",

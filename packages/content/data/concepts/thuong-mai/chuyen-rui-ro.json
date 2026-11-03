@@ -29,9 +29,9 @@
    "q": "Có địa điểm giao hàng xác định, rủi ro chuyển cho bên mua khi nào (nếu không có thỏa thuận khác)?",
    "options": [
     "Khi hàng hóa đã được giao cho bên mua hoặc người được ủy quyền tại địa điểm đó",
-    "Khi ký hợp đồng",
-    "Khi bên mua thanh toán đủ",
-    "Khi bên bán xuất kho"
+    "Khi ký hợp đồng và hai bên đã thống nhất về giá cả và số lượng hàng",
+    "Khi bên mua thanh toán đủ tiền hàng theo giá đã thỏa thuận và nhận chứng từ",
+    "Khi bên bán xuất kho hàng hóa và lập hóa đơn bán hàng cho bên mua, không cần chờ"
    ],
    "answer": 0,
    "explain": "Điều 57.",
@@ -46,9 +46,9 @@
    "q": "Hàng hóa đang trên đường vận chuyển mà được bán, rủi ro chuyển khi nào?",
    "options": [
     "Kể từ thời điểm giao kết hợp đồng",
-    "Khi hàng đến cảng",
-    "Khi thanh toán",
-    "Khi giao chứng từ"
+    "Khi hàng đến cảng đích theo lịch giao",
+    "Khi thanh toán đầy đủ tiền hàng",
+    "Khi giao chứng từ cho bên mua"
    ],
    "answer": 0,
    "explain": "Điều 60.",

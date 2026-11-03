@@ -46,9 +46,9 @@
    "q": "Giải quyết tranh chấp bằng Trọng tài có công khai không?",
    "options": [
     "Không công khai, trừ khi các bên có thỏa thuận khác",
-    "Bắt buộc công khai",
-    "Chỉ công khai phán quyết",
-    "Do Trọng tài viên tùy ý"
+    "Bắt buộc công khai toàn bộ nội dung vụ việc cho báo chí",
+    "Chỉ công khai phán quyết cuối cùng của hội đồng trọng tài",
+    "Do Trọng tài viên tùy ý quyết định theo từng vụ việc riêng"
    ],
    "answer": 0,
    "explain": "Khoản 4 Điều 4.",
