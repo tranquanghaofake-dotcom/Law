@@ -35,9 +35,10 @@ const concepts = loadConcepts();
 const pairs = concepts.flatMap((c) => c.items.filter((i) => i.type === 'pair').map((i) => ({ c, i })));
 
 /** Các môn còn tình huống lặp nhãn từ trước đợt 7 (chưa được viết lại) — giữ ngưỡng đo được, siết dần. */
-const LEAK_LEGACY: Record<string, number> = { 'hien-phap': 85, 'chung-khoan': 24, 'thuong-mai-1': 10 };
-const LEAK_SUBJECT_MAX = 3;
-const LEAK_MAX = 139;
+// Đã siết sau khi sonnet A, C sửa (03/11/2026): toàn kho 206 → 4 (tai-chinh 2, lao-dong-2 1, tai-san-tri-tue 1).
+const LEAK_LEGACY: Record<string, number> = {};
+const LEAK_SUBJECT_MAX = 2;
+const LEAK_MAX = 4;
 
 function leaks(): { subject: string; id: string; text: string }[] {
   const out: { subject: string; id: string; text: string }[] = [];
