@@ -117,7 +117,7 @@ export const SHELVES = [
   { id: 'hinh-su',  name: 'Hình sự',                    color: '#1E2E5C', subjects: ['hinh-su'] },
   { id: 'kinh-te',  name: 'Thương mại – Kinh tế',       color: '#1F5F4A', subjects: ['thuong-mai-1', 'thuong-mai', 'canh-tranh', 'dau-tu', 'dat-dai', 'chung-khoan'] },
   { id: 'tai-chinh', name: 'Tài chính – Ngân hàng',     color: '#7A5A08', subjects: ['tai-chinh', 'ngan-hang', 'tai-chinh-doanh-nghiep'] },
-  { id: 'lao-dong', name: 'Lao động – An sinh',         color: '#9C4418', subjects: ['lao-dong', 'lao-dong-2', 'an-sinh-xa-hoi'] },
+  { id: 'lao-dong', name: 'Lao động – An sinh',         color: '#44505C', subjects: ['lao-dong', 'lao-dong-2', 'an-sinh-xa-hoi'] }, // xám đá (đổi từ cam gạch #9C4418 vì lẫn với Hiến pháp đỏ-cam ở bìa v3; theo bìa Bộ luật Hình sự thân xám)
   { id: 'so-huu-tri-tue', name: 'Sở hữu trí tuệ',       color: '#5E3A7A', subjects: ['so-huu-tri-tue', 'tai-san-tri-tue'] },
 ] as const;
 ```

@@ -12,7 +12,7 @@ export const SHELVES: readonly Shelf[] = [
   { id: 'hinh-su', name: 'Hình sự', color: '#1E2E5C', subjects: ['hinh-su'] },
   { id: 'kinh-te', name: 'Thương mại – Kinh tế', color: '#1F5F4A', subjects: ['thuong-mai-1', 'thuong-mai', 'canh-tranh', 'dau-tu', 'dat-dai', 'chung-khoan'] },
   { id: 'tai-chinh', name: 'Tài chính – Ngân hàng', color: '#7A5A08', subjects: ['tai-chinh', 'ngan-hang', 'tai-chinh-doanh-nghiep'] },
-  { id: 'lao-dong', name: 'Lao động – An sinh', color: '#9C4418', subjects: ['lao-dong', 'lao-dong-2', 'an-sinh-xa-hoi'] },
+  { id: 'lao-dong', name: 'Lao động – An sinh', color: '#44505C', subjects: ['lao-dong', 'lao-dong-2', 'an-sinh-xa-hoi'] },
   { id: 'so-huu-tri-tue', name: 'Sở hữu trí tuệ', color: '#5E3A7A', subjects: ['so-huu-tri-tue', 'tai-san-tri-tue'] },
 ];
 
@@ -70,14 +70,6 @@ export function mixBlack(hex: string, amount: number): string {
   return '#' + ch.map((c) => c.toString(16).padStart(2, '0')).join('');
 }
 
-/** Pha màu hex với nền sáng (mặc định trắng) theo tỉ lệ 0–1 — khối trên của bìa: mixWhite(màu kệ, .82, '#FBF6EA'). */
-export function mixWhite(hex: string, amount: number, base = '#ffffff'): string {
-  const ch = [1, 3, 5].map((i) => {
-    const c = parseInt(hex.slice(i, i + 2), 16), b = parseInt(base.slice(i, i + 2), 16);
-    return Math.round(c + (b - c) * amount);
-  });
-  return '#' + ch.map((c) => c.toString(16).padStart(2, '0')).join('');
-}
 
 /**
  * Màu chữ tên môn và gradient thân bìa theo màu kệ (bìa v3, theo bìa sách luật NXB): thân xanh (Hình sự, Dân sự) dùng

@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { coverTitle, coverParts, fitTitle, subjectHaystack, matchSubject } from '$lib/ui/bookCover';
-import { mixWhite, mixBlack, coverStyle, SHELVES, contrastRatio } from '$lib/ui/shelves';
+import { mixBlack, coverStyle, SHELVES, contrastRatio } from '$lib/ui/shelves';
 
 const OPTS = { maxWidth: 100, maxLines: 3, maxSize: 17, minSize: 10, charW: 0.62 };
 /** Bề rộng ước tính của dòng dài nhất ở cỡ đã chọn. */
@@ -77,10 +77,7 @@ describe('bìa sách giáo trình (spec phần nhìn đợt 4 §3.2, bìa v3)', 
     expect(widest(one)).toBeLessThanOrEqual(OPTS.maxWidth);
     expect(fitTitle('', OPTS)).toEqual({ lines: [], size: OPTS.maxSize });
   });
-  it('mixWhite/mixBlack: pha màu bìa với trắng/đen', () => {
-    expect(mixWhite('#000000', 1)).toBe('#ffffff');
-    expect(mixWhite('#1F5F4A', 0)).toBe('#1f5f4a');
-    expect(mixWhite('#000000', 0.5)).toBe('#808080');
+  it('mixBlack: pha màu bìa với đen (gáy, da bìa)', () => {
     expect(mixBlack('#ffffff', 0.5)).toBe('#808080');
   });
   it('coverStyle: chữ tên vàng cho kệ Hình sự/Dân sự (thân xanh), trắng cho kệ khác; kệ Hiến pháp có gradient sang cam', () => {
