@@ -148,3 +148,9 @@ Tổng: 56 tình huống mới; 27 khái niệm đạt ≥ 4 tình huống.
 | id | câu/tình huống | trước → sau | căn cứ | ghi chú |
 |---|---|---|---|---|
 | thu-tuc-hanh-chinh (plain) | danh sách nguyên tắc theo Điều 7 NĐ 63/2010 | → "câu chữ cũ ở khoản 1–5 Điều 7 NĐ 63/2010; từ 2025 được thay bằng khoản 1–3 Điều 5 NĐ 78/2025/NĐ-CP (chưa đối chiếu nên không liệt kê)" | luatvietnam.vn (ghi chú hiệu lực NĐ 63/2010) | Bỏ danh sách có thể đã lỗi thời; định nghĩa khoản 1 Điều 3 giữ (đã tra, không đổi) |
+
+## Rà cờ "hai đáp án" trước phát hành (người điều phối)
+
+| Khái niệm | Câu | Trước → sau | Căn cứ | Ghi chú |
+|---|---|---|---|---|
+| Cảnh cáo (`canh-cao#0`) | Người từ đủ 14 đến dưới 16 tuổi vi phạm hành chính bị áp dụng hình thức xử phạt nào? (đáp án: Cảnh cáo) | Nhiễu "Cảnh cáo kèm tước giấy phép" → "Phạt tiền tối đa một nửa mức của người thành niên" | Điều 22; khoản 1 Điều 134 Luật XLVPHC (VBHN 2026): mức ≤ 1/2 chỉ cho người từ đủ 16 đến dưới 18 tuổi | Nhiễu cũ chứa nguyên đáp án, dễ hiểu là đúng một phần. 7 cờ "hai đáp án" còn lại đã đọc: nhiễu sai rõ (sai chủ thể, mâu thuẫn, thêm yếu tố sai) — giữ. |
