@@ -71,6 +71,16 @@
     {
      "text": "Không bị tra tấn, bạo lực, truy bức, nhục hình",
      "answer": "right"
+    },
+    {
+     "text": "Mọi người có quyền sống và tính mạng được pháp luật bảo hộ",
+     "answer": "left",
+     "basis": "Điều 19 Hiến pháp 2013"
+    },
+    {
+     "text": "Không ai bị bắt nếu không có quyết định của Tòa án hoặc phê chuẩn của Viện kiểm sát, trừ trường hợp quả tang",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 20 Hiến pháp 2013"
     }
    ],
    "explain": "Điều 19, 20 Hiến pháp 2013."

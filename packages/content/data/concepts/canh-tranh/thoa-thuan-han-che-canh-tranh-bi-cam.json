@@ -74,6 +74,16 @@
     {
      "text": "Thỏa thuận loại bỏ doanh nghiệp khác khỏi thị trường",
      "answer": "left"
+    },
+    {
+     "text": "Các doanh nghiệp cùng thỏa thuận hạn chế số lượng sản phẩm đưa ra thị trường",
+     "answer": "left",
+     "basis": "Khoản 3 Điều 11 và khoản 1 Điều 12 Luật Cạnh tranh 2018"
+    },
+    {
+     "text": "Thỏa thuận hạn chế đầu tư và phát triển công nghệ giữa các doanh nghiệp cùng thị trường",
+     "answer": "right",
+     "basis": "Khoản 7 Điều 11 và khoản 3 Điều 12 Luật Cạnh tranh 2018"
     }
    ],
    "explain": "Điều 12."

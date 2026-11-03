@@ -78,6 +78,16 @@
     {
      "text": "Chủ tịch Ủy ban nhân dân tỉnh",
      "answer": "right"
+    },
+    {
+     "text": "Bộ trưởng là thành viên Chính phủ",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 95 Hiến pháp 2013"
+    },
+    {
+     "text": "Chánh án Tòa án nhân dân tỉnh không thuộc thành phần Chính phủ",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 95 Hiến pháp 2013"
     }
    ],
    "explain": "Khoản 1 Điều 95."

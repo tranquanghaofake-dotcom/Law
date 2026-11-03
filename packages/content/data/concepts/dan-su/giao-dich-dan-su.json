@@ -74,6 +74,16 @@
     {
      "text": "Công bố hứa thưởng tìm đồ thất lạc",
      "answer": "right"
+    },
+    {
+     "text": "Hai doanh nghiệp ký hợp đồng cho thuê kho bãi và thỏa thuận giá thuê",
+     "answer": "left",
+     "basis": "Điều 116 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Người sở hữu công bố từ bỏ quyền sở hữu ngôi nhà bỏ hoang của mình",
+     "answer": "right",
+     "basis": "Điều 116 Bộ luật Dân sự 2015 (hành vi pháp lý đơn phương)"
     }
    ],
    "explain": "Điều 116."

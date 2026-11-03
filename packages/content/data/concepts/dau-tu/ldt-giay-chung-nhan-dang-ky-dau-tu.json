@@ -71,6 +71,16 @@
     {
      "text": "Nhà đầu tư góp vốn, mua cổ phần của tổ chức kinh tế",
      "answer": "right"
+    },
+    {
+     "text": "Nhà đầu tư nước ngoài thực hiện dự án đầu tư mới tại Việt Nam",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 26 Luật Đầu tư 2025"
+    },
+    {
+     "text": "Doanh nghiệp trong nước mua 15% cổ phần của một công ty cổ phần khác, không thực hiện dự án mới",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 26 Luật Đầu tư 2025 (không thuộc các trường hợp liệt kê)"
     }
    ],
    "explain": "Điều 26."

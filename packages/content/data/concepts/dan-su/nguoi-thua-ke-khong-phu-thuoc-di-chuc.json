@@ -73,6 +73,11 @@
     {
      "text": "Anh ruột của người lập di chúc",
      "answer": "right"
+    },
+    {
+     "text": "Cháu ruột đã thành niên, có khả năng lao động của người lập di chúc",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 644 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Khoản 1 Điều 644."

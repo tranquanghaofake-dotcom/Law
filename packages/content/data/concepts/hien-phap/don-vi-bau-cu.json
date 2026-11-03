@@ -76,6 +76,16 @@
     {
      "text": "Do Hội đồng bầu cử quốc gia ấn định",
      "answer": "left"
+    },
+    {
+     "text": "Đơn vị bầu cử đại biểu Quốc hội được ấn định theo số dân trong từng tỉnh, thành phố",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 10 Luật Bầu cử Đại biểu Quốc hội và Đại biểu Hội đồng nhân dân 2015"
+    },
+    {
+     "text": "Đơn vị bầu cử đại biểu Hội đồng nhân dân cấp xã được chia trong phạm vi xã, phường, đặc khu",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 10 Luật Bầu cử Đại biểu Quốc hội và Đại biểu Hội đồng nhân dân 2015"
     }
    ],
    "explain": "Khoản 2, 3, 4 Điều 10."

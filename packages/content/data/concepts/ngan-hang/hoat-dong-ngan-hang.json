@@ -73,6 +73,16 @@
     {
      "text": "Một người cho bạn thân vay tiền một lần, không lấy lãi",
      "answer": "right"
+    },
+    {
+     "text": "Doanh nghiệp thường xuyên nhận tiền gửi của khách hàng và trả lãi theo kỳ hạn",
+     "answer": "left",
+     "basis": "Khoản 17 Điều 4 Luật Các tổ chức tín dụng 2024"
+    },
+    {
+     "text": "Doanh nghiệp mua hàng của nhà cung cấp rồi bán lại cho khách, không cấp tín dụng và không nhận tiền gửi",
+     "answer": "right",
+     "basis": "Khoản 17 Điều 4 Luật Các tổ chức tín dụng 2024"
     }
    ],
    "explain": "Khoản 17 Điều 4: phải là kinh doanh, cung ứng thường xuyên."

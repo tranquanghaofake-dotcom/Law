@@ -69,6 +69,16 @@
     {
      "text": "Chủ tịch nước",
      "answer": "right"
+    },
+    {
+     "text": "Người đứng đầu cơ quan trung ương của tổ chức chính trị - xã hội được mời dự phiên họp Chính phủ",
+     "answer": "left",
+     "basis": "Điều 101 Hiến pháp 2013"
+    },
+    {
+     "text": "Chủ tịch nước có quyền dự phiên họp của Chính phủ",
+     "answer": "right",
+     "basis": "Điều 90 Hiến pháp 2013"
     }
    ],
    "explain": "Điều 90, 101."

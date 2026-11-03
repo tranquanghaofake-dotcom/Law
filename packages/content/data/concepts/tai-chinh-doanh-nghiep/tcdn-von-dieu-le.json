@@ -72,6 +72,16 @@
     {
      "text": "Tiền thu được từ phát hành trái phiếu",
      "answer": "right"
+    },
+    {
+     "text": "Tổng mệnh giá cổ phần đã bán hoặc được đăng ký mua của công ty cổ phần",
+     "answer": "left",
+     "basis": "Khoản 34 Điều 4 Luật Doanh nghiệp 2020"
+    },
+    {
+     "text": "Khoản vay từ ngân hàng để mua thiết bị, phải trả gốc và lãi theo hợp đồng",
+     "answer": "right",
+     "basis": "Khoản 34 Điều 4 Luật Doanh nghiệp 2020 (vốn điều lệ không gồm vốn vay)"
     }
    ],
    "explain": "Khoản 34 Điều 4 Luật Doanh nghiệp; khoản 3 Điều 4 Luật Chứng khoán."

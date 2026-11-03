@@ -71,6 +71,16 @@
     {
      "text": "Do Quốc hội quyết định",
      "answer": "right"
+    },
+    {
+     "text": "Chủ tịch nước quyết định cho nhập quốc tịch Việt Nam",
+     "answer": "left",
+     "basis": "Khoản 4 Điều 88 Hiến pháp 2013"
+    },
+    {
+     "text": "Quốc hội quyết định đại xá cho người phạm tội",
+     "answer": "right",
+     "basis": "Khoản 11 Điều 70 Hiến pháp 2013"
     }
    ],
    "explain": "Khoản 3 Điều 88; khoản 11 Điều 70."

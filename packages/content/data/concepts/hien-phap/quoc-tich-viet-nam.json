@@ -72,6 +72,16 @@
     {
      "text": "Bảo đảm các quyền công dân",
      "answer": "left"
+    },
+    {
+     "text": "Nhà nước bảo hộ công dân Việt Nam ở nước ngoài",
+     "answer": "left",
+     "basis": "Điều 1 Luật Quốc tịch Việt Nam 2008"
+    },
+    {
+     "text": "Công dân Việt Nam có nghĩa vụ thực hiện nghĩa vụ quân sự",
+     "answer": "right",
+     "basis": "Điều 1 Luật Quốc tịch Việt Nam 2008"
     }
    ],
    "explain": "Điều 1, 5, 6 Luật Quốc tịch."

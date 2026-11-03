@@ -74,6 +74,16 @@
     {
      "text": "Phát hành chứng chỉ tiền gửi",
      "answer": "right"
+    },
+    {
+     "text": "Ngân hàng phát hành thư tín dụng cho doanh nghiệp để nhập khẩu hàng hóa",
+     "answer": "left",
+     "basis": "Khoản 4 Điều 4 Luật Các tổ chức tín dụng 2024"
+    },
+    {
+     "text": "Ngân hàng nhận tiền gửi không kỳ hạn của doanh nghiệp để giữ thanh khoản",
+     "answer": "right",
+     "basis": "Khoản 27 Điều 4 Luật Các tổ chức tín dụng 2024"
     }
    ],
    "explain": "Khoản 4, 27 Điều 4."

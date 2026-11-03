@@ -73,6 +73,16 @@
     {
      "text": "Từ chối nộp thuế đã phát sinh",
      "answer": "right"
+    },
+    {
+     "text": "Doanh nghiệp tự quyết định hình thức huy động và phân bổ vốn",
+     "answer": "left",
+     "basis": "Khoản 3 Điều 7 Luật Doanh nghiệp 2020"
+    },
+    {
+     "text": "Giám đốc tự ý dùng vốn của cổ đông để chi tiêu cho mục đích cá nhân",
+     "answer": "right",
+     "basis": "Điều 7 Luật Doanh nghiệp 2020 (không liệt kê là quyền của doanh nghiệp)"
     }
    ],
    "explain": "Điều 7, Điều 8 Luật Doanh nghiệp."

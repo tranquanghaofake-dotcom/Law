@@ -70,6 +70,16 @@
     {
      "text": "Biết rõ là tài sản trộm cắp nhưng vẫn mua rẻ",
      "answer": "right"
+    },
+    {
+     "text": "Người mua xe từ người bán có giấy tờ hợp lệ, không biết xe là tài sản bị lấy trộm",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 180 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Người nhặt được điện thoại, biết rõ chủ là ai nhưng cố tình giữ lại",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 180 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 180, 181 Bộ luật Dân sự 2015."

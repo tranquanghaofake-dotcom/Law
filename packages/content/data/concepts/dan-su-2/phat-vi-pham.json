@@ -71,6 +71,21 @@
     {
      "text": "Phải chứng minh thiệt hại thực tế",
      "answer": "right"
+    },
+    {
+     "text": "Hai bên thỏa thuận: bên chậm giao hàng phải nộp một khoản tiền phạt theo hợp đồng",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 418 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Mức phạt do các bên thỏa thuận trong hợp đồng mua bán, trừ khi luật liên quan có quy định khác",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 418 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Bên vi phạm phải nộp khoản tiền đã thỏa thuận trong hợp đồng dịch vụ khi không thực hiện đúng cam kết",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 418 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 418, 360."

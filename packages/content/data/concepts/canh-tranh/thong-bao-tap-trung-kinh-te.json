@@ -74,6 +74,16 @@
     {
      "text": "Thị phần kết hợp",
      "answer": "left"
+    },
+    {
+     "text": "Tổng doanh thu trên thị trường Việt Nam của doanh nghiệp tham gia tập trung kinh tế",
+     "answer": "left",
+     "basis": "Điểm b khoản 2 Điều 33 Luật Cạnh tranh 2018"
+    },
+    {
+     "text": "Số năm doanh nghiệp tham gia đã hoạt động trong ngành",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 33 Luật Cạnh tranh 2018 (không liệt kê tiêu chí này)"
     }
    ],
    "explain": "Khoản 2 Điều 33."

@@ -75,6 +75,16 @@
     {
      "text": "Trẻ bị bỏ rơi được tìm thấy ở Việt Nam có quốc tịch Việt Nam",
      "answer": "right"
+    },
+    {
+     "text": "Trẻ em sinh ra có cha mẹ đều là công dân Việt Nam thì có quốc tịch Việt Nam, dù sinh ở nước ngoài",
+     "answer": "left",
+     "basis": "Điều 15 Luật Quốc tịch Việt Nam 2008"
+    },
+    {
+     "text": "Trẻ bị bỏ rơi được tìm thấy ở Việt Nam, không rõ cha mẹ",
+     "answer": "right",
+     "basis": "Điều 16 Luật Quốc tịch Việt Nam 2008 (nguyên tắc nơi sinh, bổ trợ)"
     }
    ],
    "explain": "Điều 15, 17, 18."

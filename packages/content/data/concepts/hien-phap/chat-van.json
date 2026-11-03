@@ -69,6 +69,16 @@
     {
      "text": "Người đứng đầu cơ quan trả lời trong thời hạn luật định",
      "answer": "right"
+    },
+    {
+     "text": "Đại biểu Quốc hội đặt câu hỏi với Bộ trưởng về việc thực hiện chính sách, người bị hỏi phải trả lời",
+     "answer": "left",
+     "basis": "Khoản 1 và khoản 2 Điều 80 Hiến pháp 2013"
+    },
+    {
+     "text": "Đại biểu Quốc hội nêu câu hỏi với Chủ tịch Quốc hội về công việc của Quốc hội trước kỳ họp",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 80 Hiến pháp 2013"
     }
    ],
    "explain": "Khoản 2, 3 Điều 80."

@@ -72,6 +72,16 @@
     {
      "text": "Hai cấp: tỉnh và đơn vị hành chính dưới tỉnh do luật định",
      "answer": "right"
+    },
+    {
+     "text": "Tỉnh được chia thành huyện, thị xã và thành phố thuộc tỉnh theo Hiến pháp 2013 bản gốc",
+     "answer": "left",
+     "basis": "Điều 110 Hiến pháp 2013 (bản gốc, trước sửa đổi năm 2025)"
+    },
+    {
+     "text": "Đơn vị hành chính cấp tỉnh gồm tỉnh và thành phố trực thuộc trung ương",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 110 Hiến pháp 2013 (sửa đổi)"
     }
    ],
    "explain": "Điều 110 trước và sau sửa đổi."

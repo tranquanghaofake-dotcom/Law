@@ -73,6 +73,16 @@
     {
      "text": "Chào bán trái phiếu riêng lẻ",
      "answer": "right"
+    },
+    {
+     "text": "Công ty cổ phần chào bán cổ phần cho cổ đông hiện hữu để tăng vốn điều lệ",
+     "answer": "left",
+     "basis": "Điểm a khoản 2 Điều 123 Luật Doanh nghiệp 2020"
+    },
+    {
+     "text": "Công ty phát hành trái phiếu để huy động vốn vay, phải hoàn trả gốc và lãi cho người sở hữu",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 4 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Điều 123, 128 Luật Doanh nghiệp."

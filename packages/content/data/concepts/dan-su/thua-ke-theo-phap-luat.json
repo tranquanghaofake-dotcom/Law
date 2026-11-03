@@ -75,6 +75,11 @@
     {
      "text": "Bà ngoại của người chết",
      "answer": "right"
+    },
+    {
+     "text": "Vợ của người đã chết, hưởng theo hàng thừa kế thứ nhất",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 651 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Khoản 1 Điều 651."

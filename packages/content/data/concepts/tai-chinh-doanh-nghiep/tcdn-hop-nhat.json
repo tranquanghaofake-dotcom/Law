@@ -71,6 +71,16 @@
     {
      "text": "Bên bị mua vẫn tồn tại nhưng bị kiểm soát, chi phối",
      "answer": "right"
+    },
+    {
+     "text": "Hai công ty chuyển toàn bộ tài sản để hình thành một công ty mới, cả hai chấm dứt tồn tại",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 200 Luật Doanh nghiệp 2020"
+    },
+    {
+     "text": "Công ty mua toàn bộ vốn góp của công ty khác để kiểm soát, công ty bị mua vẫn tồn tại",
+     "answer": "right",
+     "basis": "Khoản 4 Điều 29 Luật Cạnh tranh 2018"
     }
    ],
    "explain": "Điều 200 Luật Doanh nghiệp; khoản 4 Điều 29 Luật Cạnh tranh."

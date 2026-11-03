@@ -71,6 +71,16 @@
     {
      "text": "Thiệt hại hoàn toàn do người bị hại tự lao vào",
      "answer": "right"
+    },
+    {
+     "text": "Người làm rơi biển quảng cáo đè trúng xe của người khác, làm xe hư hỏng",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 584 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Thiệt hại do lũ lụt bất khả kháng gây ra, không có lỗi của người bị coi là gây thiệt hại",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 584 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 584."

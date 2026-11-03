@@ -71,6 +71,16 @@
     {
      "text": "Nơi cư trú cuối cùng của người để lại di sản",
      "answer": "right"
+    },
+    {
+     "text": "Ngày người để lại di sản qua đời",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 611 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Ngày Tòa án tuyên bố người mất tích là đã chết",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 611 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 611."

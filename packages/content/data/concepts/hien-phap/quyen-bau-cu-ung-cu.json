@@ -74,6 +74,16 @@
     {
      "text": "Tuổi có quyền biểu quyết khi trưng cầu ý dân",
      "answer": "left"
+    },
+    {
+     "text": "Công dân đủ mười tám tuổi trở lên có quyền bầu cử vào Quốc hội và Hội đồng nhân dân",
+     "answer": "left",
+     "basis": "Điều 27 Hiến pháp 2013"
+    },
+    {
+     "text": "Công dân dưới hai mươi mốt tuổi không có quyền ứng cử vào Quốc hội",
+     "answer": "right",
+     "basis": "Điều 27 Hiến pháp 2013"
     }
    ],
    "explain": "Điều 27, 29 Hiến pháp 2013."

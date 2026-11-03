@@ -69,6 +69,16 @@
     {
      "text": "Căn hộ đang xây dựng chưa hoàn thành",
      "answer": "right"
+    },
+    {
+     "text": "Chiếc tủ lạnh đang nằm trong nhà của bạn",
+     "answer": "left",
+     "basis": "Điều 105 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Mùa vụ lúa chưa gieo trồng, bên mua đặt trước việc mua toàn bộ sản lượng",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 108 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Khoản 2 Điều 105; Điều 108."

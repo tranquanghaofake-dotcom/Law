@@ -70,6 +70,16 @@
     {
      "text": "Thỏa thuận chia thị trường",
      "answer": "right"
+    },
+    {
+     "text": "Đánh cắp bí mật kinh doanh của đối thủ bằng cách phá vỡ biện pháp bảo mật",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 45 Luật Cạnh tranh 2018"
+    },
+    {
+     "text": "Hai doanh nghiệp cùng thỏa thuận ấn định giá bán sản phẩm cho khách hàng",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 11 Luật Cạnh tranh 2018"
     }
    ],
    "explain": "Điều 3."

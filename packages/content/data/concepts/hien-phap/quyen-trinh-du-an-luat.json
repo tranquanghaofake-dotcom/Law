@@ -72,6 +72,16 @@
     {
      "text": "Trình trước Ủy ban thường vụ Quốc hội",
      "answer": "right"
+    },
+    {
+     "text": "Chủ tịch nước có quyền trình dự án luật trước Quốc hội",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 84 Hiến pháp 2013"
+    },
+    {
+     "text": "Chính phủ trình dự án pháp lệnh trước Ủy ban thường vụ Quốc hội",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 84 Hiến pháp 2013"
     }
    ],
    "explain": "Khoản 1 Điều 84."

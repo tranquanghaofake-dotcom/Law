@@ -70,6 +70,16 @@
     {
      "text": "Dự án đã bị cơ quan đăng ký đầu tư chấm dứt hoạt động",
      "answer": "right"
+    },
+    {
+     "text": "Nhà đầu tư chuyển nhượng một phần dự án cho nhà đầu tư trong nước, đủ điều kiện pháp luật",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 34 Luật Đầu tư 2025"
+    },
+    {
+     "text": "Nhà đầu tư nước ngoài nhận chuyển nhượng dự án nhưng không đáp ứng điều kiện của khoản 2 Điều 21",
+     "answer": "right",
+     "basis": "Điểm b khoản 1 Điều 34 Luật Đầu tư 2025"
     }
    ],
    "explain": "Điều 34, 36."

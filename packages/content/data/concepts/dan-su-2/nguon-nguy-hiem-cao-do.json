@@ -74,6 +74,16 @@
     {
      "text": "Chiếc xe đạp",
      "answer": "right"
+    },
+    {
+     "text": "Nhà máy công nghiệp đang hoạt động gây cháy nổ lan sang nhà dân",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 601 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Người đi bộ đẩy chiếc xe đạp thồ hàng va vào người khác",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 601 Bộ luật Dân sự 2015 (xe đạp không phải phương tiện cơ giới)"
     }
    ],
    "explain": "Khoản 1 Điều 601."

@@ -73,6 +73,16 @@
     {
      "text": "Nhận tiền gửi tiết kiệm của cá nhân",
      "answer": "right"
+    },
+    {
+     "text": "Ngân hàng thương mại nhận tiền gửi tiết kiệm của cá nhân",
+     "answer": "left",
+     "basis": "Khoản 41 Điều 4 Luật Các tổ chức tín dụng 2024 (ngoại lệ đối với ngân hàng)"
+    },
+    {
+     "text": "Công ty tài chính cung ứng dịch vụ thanh toán qua tài khoản cho khách hàng",
+     "answer": "right",
+     "basis": "Khoản 41 Điều 4 Luật Các tổ chức tín dụng 2024"
     }
    ],
    "explain": "Khoản 21, 41 Điều 4."

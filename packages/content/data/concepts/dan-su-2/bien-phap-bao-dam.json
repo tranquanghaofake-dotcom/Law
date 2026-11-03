@@ -76,6 +76,16 @@
     {
      "text": "Tín chấp",
      "answer": "right"
+    },
+    {
+     "text": "Bên vay giao sổ tiết kiệm của mình cho ngân hàng giữ để bảo đảm khoản vay",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 292 Bộ luật Dân sự 2015 (cầm cố tài sản)"
+    },
+    {
+     "text": "Người vay cam kết trả nợ dựa trên uy tín, không có tài sản bảo đảm nào",
+     "answer": "right",
+     "basis": "Khoản 8 Điều 292 Bộ luật Dân sự 2015 (tín chấp)"
     }
    ],
    "explain": "Điều 292."

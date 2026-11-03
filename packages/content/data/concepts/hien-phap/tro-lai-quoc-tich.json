@@ -76,6 +76,11 @@
     {
      "text": "Phải lấy lại tên gọi Việt Nam trước đây",
      "answer": "left"
+    },
+    {
+     "text": "Người nước ngoài có nguyện vọng nhập quốc tịch Việt Nam khi đủ điều kiện luật định",
+     "answer": "right",
+     "basis": "Điều 19 Luật Quốc tịch Việt Nam 2008 (nhập quốc tịch)"
     }
    ],
    "explain": "Điều 19 và Điều 23."

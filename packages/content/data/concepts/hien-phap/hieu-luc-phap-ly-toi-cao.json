@@ -72,6 +72,16 @@
     {
      "text": "Thuộc tính mà các luật thường không có so với \"luật mẹ\".",
      "answer": "left"
+    },
+    {
+     "text": "Văn bản pháp luật khác trái với Hiến pháp phải được bãi bỏ",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 119 Hiến pháp 2013"
+    },
+    {
+     "text": "Hiến pháp là luật cơ bản, có hiệu lực pháp lý cao nhất trong hệ thống pháp luật",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 119 Hiến pháp 2013"
     }
    ],
    "explain": "Hiệu lực pháp lý cao nhất là thuộc tính; Hiến pháp là văn bản mang thuộc tính đó."

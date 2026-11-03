@@ -72,6 +72,16 @@
     {
      "text": "Phải có lãi ngay năm đầu",
      "answer": "right"
+    },
+    {
+     "text": "Kế hoạch bỏ vốn dài hạn để kinh doanh tại một địa bàn trong khoảng thời gian xác định",
+     "answer": "left",
+     "basis": "Khoản 4 Điều 3 Luật Đầu tư 2025"
+    },
+    {
+     "text": "Mua bán hàng theo từng hợp đồng ngắn hạn, không có kế hoạch bỏ vốn trung hạn hoặc dài hạn",
+     "answer": "right",
+     "basis": "Khoản 4 Điều 3 Luật Đầu tư 2025"
     }
    ],
    "explain": "Khoản 4 Điều 3."

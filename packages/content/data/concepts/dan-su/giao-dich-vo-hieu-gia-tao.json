@@ -74,6 +74,16 @@
     {
      "text": "Bán nhà giả để tẩu tán tài sản, trốn nợ",
      "answer": "right"
+    },
+    {
+     "text": "Thỏa thuận thuê người đe dọa tính mạng để buộc con nợ trả tiền",
+     "answer": "left",
+     "basis": "Điều 123 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Giao dịch mua bán chất ma túy giữa hai người",
+     "answer": "left",
+     "basis": "Điều 123 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 123, 124."

@@ -71,6 +71,16 @@
     {
      "text": "Công ty có nhà đầu tư nước ngoài giữ 20% vốn điều lệ",
      "answer": "right"
+    },
+    {
+     "text": "Công ty hợp danh có đa số thành viên hợp danh là cá nhân nước ngoài",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 20 Luật Đầu tư 2025"
+    },
+    {
+     "text": "Công ty cổ phần có nhà đầu tư nước ngoài sở hữu 30% vốn điều lệ",
+     "answer": "right",
+     "basis": "Điểm a khoản 1 Điều 20 Luật Đầu tư 2025 (dưới 50% vốn điều lệ)"
     }
    ],
    "explain": "Khoản 1, 2 Điều 20."

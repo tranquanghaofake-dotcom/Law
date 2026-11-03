@@ -70,6 +70,16 @@
     {
      "text": "Chủ tịch nước được đề nghị Ủy ban thường vụ xem xét lại trong 10 ngày",
      "answer": "right"
+    },
+    {
+     "text": "Chủ tịch nước công bố luật do Quốc hội thông qua, không đề nghị xem xét lại luật",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 88 Hiến pháp 2013"
+    },
+    {
+     "text": "Chủ tịch nước đề nghị Ủy ban thường vụ Quốc hội xem xét lại pháp lệnh trong thời hạn mười ngày",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 88 Hiến pháp 2013"
     }
    ],
    "explain": "Khoản 1 Điều 88."

@@ -73,6 +73,16 @@
     {
      "text": "Vụ ly hôn đương sự yêu cầu giữ bí mật đời tư chính đáng",
      "answer": "right"
+    },
+    {
+     "text": "Phiên tòa xét xử công khai, Thẩm phán và Hội thẩm cùng xét xử tập thể vụ án trộm cắp tài sản",
+     "answer": "left",
+     "basis": "Khoản 3 và khoản 4 Điều 103 Hiến pháp 2013"
+    },
+    {
+     "text": "Vụ án ly hôn có đương sự yêu cầu giữ bí mật đời tư chính đáng được xét xử kín",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 103 Hiến pháp 2013"
     }
    ],
    "explain": "Khoản 3 Điều 103."

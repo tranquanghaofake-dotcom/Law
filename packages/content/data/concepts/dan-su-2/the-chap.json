@@ -70,6 +70,16 @@
     {
      "text": "Giao 10 triệu để giữ chỗ thuê nhà",
      "answer": "right"
+    },
+    {
+     "text": "Doanh nghiệp dùng quyền sử dụng đất làm bảo đảm khoản vay, vẫn tiếp tục sản xuất trên đất",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 317 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Người mua giao tiền cho chủ nhà để giữ chỗ, sau đó sẽ ký hợp đồng mua nhà",
+     "answer": "right",
+     "basis": "Điều 328 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 317, 328."

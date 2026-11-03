@@ -71,6 +71,16 @@
     {
      "text": "Tiền phát hành trái phiếu",
      "answer": "right"
+    },
+    {
+     "text": "Tiền cung ứng dịch vụ tư vấn thu của khách hàng, kể cả khoản phụ thu",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 8 Luật Thuế thu nhập doanh nghiệp 2025"
+    },
+    {
+     "text": "Tiền vay ngân hàng nhận để mua nguyên liệu sản xuất",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 8 Luật Thuế thu nhập doanh nghiệp 2025 (không phải tiền bán hàng, gia công, dịch vụ)"
     }
    ],
    "explain": "Khoản 1 Điều 8 Luật Thuế TNDN."

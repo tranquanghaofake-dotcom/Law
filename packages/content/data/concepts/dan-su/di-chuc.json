@@ -75,6 +75,11 @@
     {
      "text": "Không vi phạm điều cấm của luật, không trái đạo đức xã hội",
      "answer": "right"
+    },
+    {
+     "text": "Di chúc bằng văn bản không có chữ ký hoặc điểm chỉ của người lập",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 630 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Khoản 1 Điều 630."

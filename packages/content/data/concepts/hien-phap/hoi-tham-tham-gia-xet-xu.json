@@ -70,6 +70,16 @@
     {
      "text": "Xét xử theo thủ tục rút gọn",
      "answer": "right"
+    },
+    {
+     "text": "Thẩm phán và Hội thẩm cùng xét xử sơ thẩm vụ án dân sự thông thường",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 103 Hiến pháp 2013"
+    },
+    {
+     "text": "Xét xử theo thủ tục rút gọn không có Hội thẩm tham gia",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 103 Hiến pháp 2013"
     }
    ],
    "explain": "Khoản 1 Điều 103."

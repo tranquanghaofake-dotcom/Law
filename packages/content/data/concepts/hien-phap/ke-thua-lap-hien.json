@@ -72,6 +72,16 @@
     {
      "text": "Đang có hiệu lực, sửa đổi năm 2025",
      "answer": "right"
+    },
+    {
+     "text": "Hiến pháp 1959 là bản Hiến pháp của thời kỳ dân chủ nhân dân, ghi nhận các thắng lợi cách mạng",
+     "answer": "left",
+     "basis": "Lời nói đầu Hiến pháp 1959 (hien-phap-lich-su.txt)"
+    },
+    {
+     "text": "Hiến pháp 2013 kế thừa và phát triển các bản Hiến pháp trước đó",
+     "answer": "right",
+     "basis": "Lời nói đầu Hiến pháp 2013"
     }
    ],
    "explain": "Lịch sử lập hiến Việt Nam."

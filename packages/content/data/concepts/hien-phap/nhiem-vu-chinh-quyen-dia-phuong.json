@@ -71,6 +71,16 @@
     {
      "text": "Chịu sự kiểm tra, giám sát của cơ quan nhà nước cấp trên",
      "answer": "right"
+    },
+    {
+     "text": "Chính quyền địa phương tổ chức và bảo đảm việc thi hành Hiến pháp và pháp luật tại địa phương",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 112 Hiến pháp 2013"
+    },
+    {
+     "text": "Chính quyền địa phương phải chịu sự kiểm tra, giám sát của cơ quan nhà nước cấp trên",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 112 Hiến pháp 2013"
     }
    ],
    "explain": "Khoản 1 Điều 112."

@@ -70,6 +70,16 @@
     {
      "text": "Khu vực có điều kiện cạnh tranh tương tự",
      "answer": "right"
+    },
+    {
+     "text": "Khách hàng dùng sữa đậu nành thay cho sữa bò vì cùng mục đích và giá gần nhau",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 9 Luật Cạnh tranh 2018"
+    },
+    {
+     "text": "Cửa hàng ở hai khu vực cách xa nhau, điều kiện cạnh tranh khác biệt đáng kể",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 9 Luật Cạnh tranh 2018"
     }
    ],
    "explain": "Điều 9."

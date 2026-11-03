@@ -71,6 +71,16 @@
     {
      "text": "Gièm pha doanh nghiệp khác",
      "answer": "right"
+    },
+    {
+     "text": "Doanh nghiệp thỏa thuận ấn định giá bán với đối thủ trên thị trường liên quan",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 111 Luật Cạnh tranh 2018"
+    },
+    {
+     "text": "Doanh nghiệp đăng quảng cáo so sánh sản phẩm của mình nhưng không chứng minh được nội dung",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 111 và điểm b khoản 5 Điều 45 Luật Cạnh tranh 2018"
     }
    ],
    "explain": "Điều 111."

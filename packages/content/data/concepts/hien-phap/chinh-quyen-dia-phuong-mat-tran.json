@@ -71,6 +71,16 @@
     {
      "text": "Chủ tịch Ủy ban Mặt trận được mời dự kỳ họp Hội đồng nhân dân",
      "answer": "right"
+    },
+    {
+     "text": "Người đứng đầu tổ chức chính trị - xã hội ở trung ương được mời dự phiên họp Chính phủ",
+     "answer": "left",
+     "basis": "Điều 101 Hiến pháp 2013"
+    },
+    {
+     "text": "Chính quyền địa phương thông báo tình hình địa phương cho Mặt trận Tổ quốc",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 116 Hiến pháp 2013"
     }
    ],
    "explain": "Điều 101, 116."
