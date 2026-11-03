@@ -1,4 +1,4 @@
-export const GROUPS: Record<string, string> = { pldc: 'Pháp luật đại cương', 'dan-su': 'Luật Dân sự', 'lao-dong': 'Luật Lao động', 'hinh-su': 'Luật Hình sự', 'hien-phap': 'Luật Hiến pháp', 'canh-tranh': 'Luật Cạnh tranh', 'so-huu-tri-tue': 'Luật Sở hữu trí tuệ', 'thuong-mai': 'Luật Thương mại', 'dat-dai': 'Luật Đất đai', 'to-tung-dan-su': 'Luật Tố tụng dân sự', 'hanh-chinh': 'Luật Hành chính', 'an-sinh-xa-hoi': 'Luật An sinh xã hội', 'tai-chinh': 'Luật Tài chính', 'ngan-hang': 'Luật Ngân hàng', 'tai-chinh-doanh-nghiep': 'Pháp luật tài chính doanh nghiệp', 'dau-tu': 'Luật Đầu tư', 'xay-dung-vbpl': 'Xây dựng văn bản pháp luật', 'tai-san-tri-tue': 'Quản trị tài sản trí tuệ', 'ly-luan-nn-pl': 'Lý luận chung NN&PL' };
+export const GROUPS: Record<string, string> = { pldc: 'Pháp luật đại cương', 'dan-su': 'Luật Dân sự', 'lao-dong': 'Luật Lao động', 'hinh-su': 'Luật Hình sự', 'hien-phap': 'Luật Hiến pháp', 'canh-tranh': 'Luật Cạnh tranh', 'so-huu-tri-tue': 'Luật Sở hữu trí tuệ', 'thuong-mai-1': 'Luật Thương mại 1', 'thuong-mai': 'Luật Thương mại 2', 'dat-dai': 'Luật Đất đai', 'to-tung-dan-su': 'Luật Tố tụng dân sự', 'hanh-chinh': 'Luật Hành chính', 'an-sinh-xa-hoi': 'Luật An sinh xã hội', 'tai-chinh': 'Luật Tài chính', 'ngan-hang': 'Luật Ngân hàng', 'tai-chinh-doanh-nghiep': 'Pháp luật tài chính doanh nghiệp', 'dau-tu': 'Luật Đầu tư', 'xay-dung-vbpl': 'Xây dựng văn bản pháp luật', 'tai-san-tri-tue': 'Quản trị tài sản trí tuệ', 'ly-luan-nn-pl': 'Lý luận chung NN&PL' };
 
 /** Nhóm đề → kệ nhóm ngành (id trong SHELVES); nhóm lạ → 'khac'. */
 export const GROUP_SHELF: Record<string, string> = {
@@ -7,7 +7,7 @@ export const GROUP_SHELF: Record<string, string> = {
   'lao-dong': 'lao-dong', 'an-sinh-xa-hoi': 'lao-dong',
   'hinh-su': 'hinh-su',
   'hien-phap': 'cong-phap', 'hanh-chinh': 'cong-phap', 'xay-dung-vbpl': 'cong-phap',
-  'canh-tranh': 'kinh-te', 'thuong-mai': 'kinh-te', 'dat-dai': 'kinh-te', 'dau-tu': 'kinh-te',
+  'canh-tranh': 'kinh-te', 'thuong-mai-1': 'kinh-te', 'thuong-mai': 'kinh-te', 'dat-dai': 'kinh-te', 'dau-tu': 'kinh-te',
   'so-huu-tri-tue': 'so-huu-tri-tue', 'tai-san-tri-tue': 'so-huu-tri-tue',
   'tai-chinh': 'tai-chinh', 'ngan-hang': 'tai-chinh', 'tai-chinh-doanh-nghiep': 'tai-chinh',
 };
