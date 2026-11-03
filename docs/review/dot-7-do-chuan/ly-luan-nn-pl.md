@@ -121,3 +121,15 @@
 | `ly-luan-nn-pl/llc-thuc-hien-phap-luat#7` | Thực hiện pháp luật là quá trình hoạt động có mục đích nhằm hiện thực hóa nội dung pháp luật bằng hành vi hợp pháp của các chủ thể. | Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (Drive HLU/KÌ I NĂM I/LLCNN&PL/TÀI LIỆU ÔN THI LLC: VD8, VD9, VD11, VD12, VD13) và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình | ⚠ không khớp nguyên văn file luật (nguồn giáo trình/tài liệu) |
 | `ly-luan-nn-pl/llc-trach-nhiem-phap-ly#7` | Trách nhiệm pháp lý là sự bắt buộc phải gánh chịu hậu quả pháp lý bất lợi do có hành vi vi phạm pháp luật. | Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (Drive HLU/KÌ I NĂM I/LLCNN&PL/TÀI LIỆU ÔN THI LLC: VD8, VD9, VD11, VD12, VD13) và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình | ⚠ không khớp nguyên văn file luật (nguồn giáo trình/tài liệu) |
 | `ly-luan-nn-pl/llc-vi-pham-phap-luat#7` | Vi phạm pháp luật là hành vi trái pháp luật, có lỗi, do chủ thể có năng lực trách nhiệm pháp lý thực hiện. | Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (Drive HLU/KÌ I NĂM I/LLCNN&PL/TÀI LIỆU ÔN THI LLC: VD8, VD9, VD11, VD12, VD13) và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình | ⚠ không khớp nguyên văn file luật (nguồn giáo trình/tài liệu) |
+
+## Opus — chốt ⚠ 12 câu Đúng theo giáo trình
+
+Quy tắc: câu Đúng phải khớp nguyên văn `definition` của khái niệm (nguồn giáo trình/ghi chép đã có trong dữ liệu, `source.cite`); giải thích ghi "Trích định nghĩa của khái niệm — nguồn: …".
+
+| id | câu/tình huống | trước → sau | căn cứ | ghi chú |
+|---|---|---|---|---|
+| llc-trach-nhiem-phap-ly#7, llc-vi-pham-phap-luat#7 | câu Đúng | giữ (đã nằm nguyên văn trong định nghĩa); sửa giải thích ghi nguồn | `definition` + `source.cite` | |
+| llc-ap-dung-phap-luat#7, llc-chuc-nang-nha-nuoc#7, llc-hinh-thuc-nha-nuoc#7, llc-quan-he-phap-luat#7 | câu Đúng diễn đạt lại | → nguyên văn cả câu định nghĩa | như trên | |
+| llc-cau-truc-nha-nuoc#7, llc-he-thong-phap-luat#7, llc-su-kien-phap-ly#7, llc-thuc-hien-phap-luat#7 | câu Đúng diễn đạt lại | → nguyên văn vế đầu định nghĩa (đến dấu ";") | như trên | |
+| llc-ban-chat-phap-luat#7 | "Pháp luật là công cụ điều chỉnh các quan hệ xã hội …" | **bỏ** | định nghĩa nêu đây là *tính xã hội* của pháp luật, câu tách ra thành định nghĩa pháp luật | |
+| llc-nguon-goc-nha-nuoc#7 | "Hai tiền đề ra đời nhà nước: tiền đề kinh tế …, tiền đề xã hội …" | **bỏ** | không có trong định nghĩa | |
