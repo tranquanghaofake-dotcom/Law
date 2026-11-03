@@ -128,3 +128,18 @@
 | `sac-lenh-13-toa-an` | Tòa án sơ cấp đặt ở mỗi quận, phủ, huyện, châu, quản hạt địa hạt quận<br>Tòa án đệ nhị cấp đặt ở mỗi tỉnh và các thành phố lớn | Tòa án đặt ở mỗi quận, phủ, huyện, châu, quản hạt là địa hạt quận<br>Tòa án đặt ở mỗi tỉnh và các thành phố lớn | Sắc lệnh 13, Điều thứ 7 (laws/lich-su-su-lieu.txt)<br>Sắc lệnh 13, Điều thứ 12 (laws/lich-su-su-lieu.txt) | viết lại không nhắc nhãn / sửa lỗi theo bảng verify |
 | `sac-lenh-47-luat-cu` | Sắc lệnh 97/SL sửa đổi một số quy lệ và chế định dân luật theo hướng tiến bộ | Văn bản quy định chồng và vợ có địa vị bình đẳng trong gia đình | Sắc lệnh 97/SL, Điều 5 (laws/lich-su-su-lieu.txt) | viết lại không nhắc nhãn / sửa lỗi theo bảng verify |
 | `toi-pham-1985` | Tội phạm nghiêm trọng là hành vi gây nguy hại lớn cho xã hội, Bộ luật Hình sự 1985 chia tội phạm thành hai loạ | Tội phạm nghiêm trọng là tội gây nguy hại lớn cho xã hội, mức cao nhất của khung hình phạt trên năm năm tù; tộ | Bộ luật Hình sự 1985, Điều 8 (laws/lich-su-su-lieu.txt) | viết lại không nhắc nhãn / sửa lỗi theo bảng verify |
+
+## Câu hỏi viết lại (sonnet B)
+
+### Câu lộ tên khái niệm trong phương án (2)
+
+| Mã | Câu hỏi | Trước | Sau | Căn cứ | Ghi chú |
+|---|---|---|---|---|---|
+| `lich-su-nn-pl/hai-muoi-bon-lo#0` | Theo Toàn thư, năm 1010 nhà Lý chia lại đơn vị hành chính như thế nào? | **Đổi 10 đạo làm 24 lộ, châu Hoan, châu Ái làm trại**<br>Chia nước làm 12 đạo, châu Hoan, châu Ái làm lộ<br>Chia làm 13 đạo thừa tuyên, giữ nguyên châu Hoan<br>Chia làm 9 quận, đặt chức Thái thú cai quản | **Đổi 10 đạo làm 24 lộ, châu Hoan, châu Ái làm trại**<br>Đổi 10 đạo làm 24 lộ, châu Hoan, châu Ái giữ nguyên làm châu<br>Chia làm 13 đạo thừa tuyên, giữ nguyên châu Hoan<br>Chia làm 9 quận, đặt chức Thái thú cai quản | Theo nguồn cũ của câu (Toàn thư) | Nhiễu cũng chứa '24 lộ' nhưng sai phần châu Hoan, châu Ái. |
+| `lich-su-nn-pl/thua-tuyen-1466#0` | Năm 1466, Lê Thánh Tông chia nước thành đơn vị hành chính nào? | **13 đạo thừa tuyên**<br>24 lộ và 12 phủ<br>12 lộ, 12 trấn phủ<br>9 quận và 3 châu | **13 đạo thừa tuyên**<br>13 đạo thừa tuyên và 12 lộ<br>12 lộ, 12 trấn phủ<br>9 quận và 3 châu | Theo nguồn cũ của câu (Toàn thư) | Nhiễu cũng chứa '13 đạo thừa tuyên' nhưng thêm 12 lộ. |
+
+### Câu Đúng/Sai đáp án Đúng thêm mới (1)
+
+| Mã | Nhận định (Đúng) | Căn cứ | Ghi chú |
+|---|---|---|---|
+| `lich-su-nn-pl/luat-dat-dai-1987#7` | Theo Luật Đất đai 1987, đất đai thuộc sở hữu toàn dân, do Nhà nước thống nhất quản lý. | Điều 1 Luật Đất đai 1987 | Nguyên văn câu đầu Điều 1 (văn bản lịch sử), khớp định nghĩa trong dữ liệu |

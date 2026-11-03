@@ -121,6 +121,18 @@
     "giao đất",
     "quyền sử dụng"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Theo Luật Đất đai 1987, đất đai thuộc sở hữu toàn dân, do Nhà nước thống nhất quản lý.",
+   "answer": true,
+   "explain": "Đúng. Điều 1 Luật Đất đai 1987 (văn bản lịch sử, không còn hiệu lực; luật hiện hành là Luật Đất đai 2024).",
+   "source": {
+    "kind": "primary",
+    "cite": "Luật Đất đai 1987, Điều 1",
+    "url": "https://thuvienphapluat.vn/van-ban/Bat-dong-san/Luat-Dat-dai-1987-3-LCT-HDNN8-37467.aspx"
+   }
   }
  ]
 }
