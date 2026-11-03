@@ -30,9 +30,9 @@
    "q": "Theo khoản 33 Điều 4, đăng ký chứng khoán là gì?",
    "options": [
     "Ghi nhận thông tin về tổ chức phát hành, chứng khoán và người sở hữu chứng khoán",
-    "Đưa chứng khoán chưa niêm yết vào giao dịch",
-    "Nhận ký gửi, bảo quản chứng khoán",
-    "Đăng ký chào bán với Ủy ban Chứng khoán"
+    "Đưa chứng khoán chưa niêm yết vào giao dịch trên thị trường tự do và sàn cụ thể",
+    "Nhận ký gửi, bảo quản chứng khoán và thực hiện thanh toán bù trừ cho khách hàng",
+    "Đăng ký chào bán với Ủy ban Chứng khoán Nhà nước và công bố rộng rãi trong nước"
    ],
    "answer": 0,
    "explain": "Khoản 33 Điều 4.",
@@ -47,9 +47,9 @@
    "q": "Chứng khoán nào PHẢI đăng ký tập trung tại Tổng công ty lưu ký và bù trừ?",
    "options": [
     "Chứng khoán của công ty đại chúng và của tổ chức niêm yết, đăng ký giao dịch",
-    "Mọi phần vốn góp trong công ty TNHH",
-    "Cổ phần của mọi công ty cổ phần",
-    "Chỉ trái phiếu Chính phủ"
+    "Mọi phần vốn góp trong công ty TNHH hai thành viên trở lên và công ty hợp danh",
+    "Cổ phần của mọi công ty cổ phần kể cả công ty chưa đăng ký kinh doanh cụ thể",
+    "Chỉ trái phiếu Chính phủ và trái phiếu chính quyền địa phương được phát hành"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 61.",

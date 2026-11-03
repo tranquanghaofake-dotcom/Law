@@ -30,9 +30,9 @@
    "q": "Chủ thể nào KHÔNG thuộc đối tượng công bố thông tin theo khoản 1 Điều 118?",
    "options": [
     "Nhà đầu tư cá nhân nắm 0,5% cổ phiếu, không phải người nội bộ",
-    "Công ty đại chúng",
-    "Người nội bộ của công ty đại chúng",
-    "Sở giao dịch chứng khoán Việt Nam"
+    "Công ty đại chúng và tổ chức phát hành chứng khoán ra công chúng",
+    "Người nội bộ của công ty đại chúng và người có liên quan khác",
+    "Sở giao dịch chứng khoán Việt Nam và tổ chức niêm yết cụ thể"
    ],
    "answer": 0,
    "explain": "Nhà đầu tư nhỏ không phải người nội bộ, không phải cổ đông lớn thì không thuộc danh sách.",

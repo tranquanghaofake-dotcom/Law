@@ -29,9 +29,9 @@
    "q": "Theo khoản 29 Điều 4, môi giới chứng khoán là gì?",
    "options": [
     "Làm trung gian thực hiện mua, bán chứng khoán cho khách hàng",
-    "Mua, bán chứng khoán cho chính công ty",
-    "Cam kết mua chứng khoán của tổ chức phát hành để bán lại",
-    "Đưa ra khuyến nghị đầu tư"
+    "Mua, bán chứng khoán cho chính công ty và các công ty con đó",
+    "Cam kết mua chứng khoán của tổ chức phát hành để bán lại nào",
+    "Đưa ra khuyến nghị đầu tư và tư vấn tài chính cho khách hàng"
    ],
    "answer": 0,
    "explain": "Khoản 29 Điều 4.",
@@ -46,9 +46,9 @@
    "q": "Nghiệp vụ nào là điều kiện để công ty chứng khoán được cấp phép tự doanh?",
    "options": [
     "Môi giới chứng khoán",
-    "Tư vấn đầu tư",
-    "Bảo lãnh phát hành",
-    "Quản lý danh mục"
+    "Tư vấn đầu tư tài chính",
+    "Bảo lãnh phát hành đó",
+    "Quản lý danh mục đầu tư"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 72.",

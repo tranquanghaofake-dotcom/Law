@@ -100,9 +100,9 @@
    "q": "Huy động vốn quỹ đại chúng không đạt điều kiện. Ai chịu chi phí phát sinh từ đợt huy động?",
    "options": [
     "Công ty quản lý quỹ đầu tư chứng khoán",
-    "Các nhà đầu tư theo tỷ lệ góp",
-    "Ngân hàng giám sát",
-    "Ủy ban Chứng khoán Nhà nước"
+    "Các nhà đầu tư theo tỷ lệ góp vốn khác",
+    "Ngân hàng giám sát của quỹ đại chúng đó",
+    "Ủy ban Chứng khoán Nhà nước và Sở giao dịch"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 108.",

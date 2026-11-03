@@ -47,9 +47,9 @@
    "q": "Cổ đông lớn phải công bố thông tin khi số cổ phiếu sở hữu thay đổi qua ngưỡng nào?",
    "options": [
     "Các ngưỡng 1% số cổ phiếu có quyền biểu quyết",
-    "Các ngưỡng 5%",
-    "Các ngưỡng 10%",
-    "Mỗi giao dịch dù nhỏ"
+    "Các ngưỡng 5% số cổ phiếu có quyền biểu quyết",
+    "Các ngưỡng 10% số cổ phiếu có quyền biểu quyết",
+    "Mỗi giao dịch dù nhỏ nhất của cổ đông lớn nào"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 127.",
@@ -103,9 +103,9 @@
    "q": "Ông A nắm 3%, vợ ông A nắm 2,5% cổ phiếu có quyền biểu quyết của công ty đại chúng S. Nhóm này có phải công bố thông tin cổ đông lớn không?",
    "options": [
     "Có, vì nhóm người có liên quan cùng sở hữu 5,5%, từ 5% trở lên",
-    "Không, vì mỗi người đều dưới 5%",
-    "Không, vì vợ chồng là tài sản riêng",
-    "Chỉ phải công bố khi đạt 10%"
+    "Không, vì mỗi người đều dưới 5% và không có sự liên quan cụ thể",
+    "Không, vì vợ chồng là tài sản riêng của từng người trong gia đình",
+    "Chỉ phải công bố khi đạt 10% số cổ phiếu có quyền biểu quyết đó"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 127 tính \"nhóm người có liên quan\"; vợ, chồng là người có liên quan (điểm d khoản 46 Điều 4).",

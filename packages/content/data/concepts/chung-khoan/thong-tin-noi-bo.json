@@ -27,9 +27,9 @@
    "q": "Đặc điểm nào là điều kiện để một thông tin là thông tin nội bộ theo khoản 44 Điều 4?",
    "options": [
     "Chưa được công bố và nếu công bố có thể ảnh hưởng lớn đến giá chứng khoán",
-    "Do người nội bộ nói ra",
-    "Được ghi trong báo cáo thường niên",
-    "Liên quan đến bất kỳ doanh nghiệp nào"
+    "Do người nội bộ nói ra trong các cuộc họp và trao đổi riêng với bên ngoài",
+    "Được ghi trong báo cáo thường niên và đã được công bố rộng rãi trong nước",
+    "Liên quan đến bất kỳ doanh nghiệp nào trên thị trường và đã được công bố"
    ],
    "answer": 0,
    "explain": "Khoản 44 Điều 4.",
@@ -44,9 +44,9 @@
    "q": "Thông tin nội bộ liên quan đến những tổ chức nào theo khoản 44 Điều 4?",
    "options": [
     "Công ty đại chúng, tổ chức niêm yết, tổ chức đăng ký giao dịch, quỹ đại chúng, công ty đầu tư chứng khoán đại chúng",
-    "Chỉ ngân hàng thương mại",
-    "Chỉ công ty chứng khoán",
-    "Mọi doanh nghiệp tư nhân"
+    "Chỉ ngân hàng thương mại và các tổ chức tín dụng khác đang hoạt động trong lĩnh vực tài chính và bảo hiểm tại Việt Nam",
+    "Chỉ công ty chứng khoán và công ty quản lý quỹ đang hoạt động tại Việt Nam và có giấy phép hợp lệ theo quy định nào",
+    "Mọi doanh nghiệp tư nhân và hợp tác xã trên toàn quốc, không phân biệt quy mô và lĩnh vực hoạt động theo quy định"
    ],
    "answer": 0,
    "explain": "Khoản 44 Điều 4.",

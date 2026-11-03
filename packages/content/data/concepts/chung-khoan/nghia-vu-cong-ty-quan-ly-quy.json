@@ -30,9 +30,9 @@
    "q": "Công ty quản lý quỹ thực hiện quản lý quỹ theo những căn cứ nào?",
    "options": [
     "Luật Chứng khoán, Điều lệ quỹ, hợp đồng với khách hàng ủy thác và hợp đồng với ngân hàng giám sát",
-    "Chỉ ý chí của Tổng giám đốc",
-    "Chỉ chỉ đạo của Sở giao dịch",
-    "Chỉ quyết định của Hội đồng quản trị công ty"
+    "Chỉ ý chí của Tổng giám đốc công ty quản lý quỹ và ý kiến của cổ đông lớn trong năm theo quy định",
+    "Chỉ chỉ đạo của Sở giao dịch chứng khoán và quy định của cơ quan quản lý địa phương theo quy định",
+    "Chỉ quyết định của Hội đồng quản trị công ty, không cần căn cứ vào hợp đồng và luật nào hiện hành"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 90.",
@@ -47,9 +47,9 @@
    "q": "Công ty quản lý quỹ phải xử lý tài sản ủy thác thế nào?",
    "options": [
     "Lưu ký toàn bộ, độc lập và tách biệt tới từng khách hàng, tách biệt với tài sản công ty",
-    "Gộp chung để tối ưu đầu tư",
-    "Giữ tại két sắt công ty",
-    "Chuyển cho Sở giao dịch giữ"
+    "Gộp chung để tối ưu đầu tư và phân bổ lợi nhuận cho các bên liên quan trong công ty nào",
+    "Giữ tại két sắt công ty và không lưu ký tại nơi nào khác theo thỏa thuận riêng hiện hành",
+    "Chuyển cho Sở giao dịch giữ để bảo đảm an toàn cho các nhà đầu tư và khách hàng cụ thể"
    ],
    "answer": 0,
    "explain": "Khoản 4 Điều 90.",

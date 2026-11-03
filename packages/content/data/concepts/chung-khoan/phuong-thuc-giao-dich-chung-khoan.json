@@ -28,9 +28,9 @@
    "q": "Theo khoản 1 Điều 50, chứng khoán niêm yết, đăng ký giao dịch được giao dịch theo phương thức nào?",
    "options": [
     "Khớp lệnh tập trung, giao dịch thỏa thuận và phương thức khác theo Quy chế giao dịch của Sở",
-    "Chỉ khớp lệnh tập trung",
-    "Chỉ giao dịch thỏa thuận ngoài sàn",
-    "Đấu giá công khai do Ủy ban tổ chức"
+    "Chỉ khớp lệnh tập trung trên sàn giao dịch và không có phương thức theo quy định",
+    "Chỉ giao dịch thỏa thuận ngoài sàn giữa các nhà đầu tư và công ty chứng khoán theo quy định",
+    "Đấu giá công khai do Ủy ban tổ chức theo từng đợt cho nhà đầu tư nhỏ lẻ và tổ chức hiện hành"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 50.",
@@ -45,9 +45,9 @@
    "q": "Trường hợp nào chứng khoán niêm yết được chuyển quyền sở hữu bên ngoài hệ thống giao dịch?",
    "options": [
     "Giao dịch không mang tính chất mua bán, như thừa kế",
-    "Hai bên tự thỏa thuận giá cao hơn thị trường",
-    "Người bán cần tiền gấp",
-    "Người mua là người thân của người bán"
+    "Hai bên tự thỏa thuận giá cao hơn thị trường cụ thể",
+    "Người bán cần tiền gấp để trả nợ ngân hàng và chi tiêu",
+    "Người mua là người thân của người bán trong gia đình"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 50: ngoại lệ là giao dịch không mang tính chất mua bán hoặc không thể thực hiện qua hệ thống (Bộ trưởng Bộ Tài chính quy định chi tiết).",
@@ -97,9 +97,9 @@
    "q": "A và B ký hợp đồng mua bán 50.000 cổ phiếu đang niêm yết trên HOSE, thanh toán chuyển khoản, không qua công ty chứng khoán. Nhận định nào đúng?",
    "options": [
     "Trái khoản 2 Điều 50 vì đây là giao dịch mua bán phải thực hiện qua hệ thống giao dịch",
-    "Hợp pháp vì là thỏa thuận dân sự tự nguyện",
-    "Hợp pháp nếu có công chứng",
-    "Hợp pháp vì giá trị dưới 1 tỷ đồng"
+    "Hợp pháp vì là thỏa thuận dân sự tự nguyện giữa hai bên và không có ai ép buộc cụ thể",
+    "Hợp pháp nếu có công chứng hợp đồng và đăng ký tại cơ quan nhà nước có thẩm quyền khác",
+    "Hợp pháp vì giá trị giao dịch dưới 1 tỷ đồng và không vượt ngưỡng quy định trong nước"
    ],
    "answer": 0,
    "explain": "Giao dịch mang tính chất mua bán chứng khoán niêm yết phải qua hệ thống (có thể dùng phương thức giao dịch thỏa thuận).",

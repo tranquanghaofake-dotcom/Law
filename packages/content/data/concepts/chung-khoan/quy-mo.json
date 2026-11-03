@@ -29,9 +29,9 @@
    "q": "Đặc điểm của quỹ mở theo khoản 39 Điều 4 là gì?",
    "options": [
     "Chứng chỉ quỹ phải được mua lại theo yêu cầu của nhà đầu tư",
-    "Chứng chỉ quỹ không được mua lại theo yêu cầu",
-    "Chỉ dành cho nhà đầu tư chuyên nghiệp",
-    "Phải niêm yết trên Sở giao dịch"
+    "Chứng chỉ quỹ không được mua lại theo yêu cầu của nhà đầu tư",
+    "Chỉ dành cho nhà đầu tư chuyên nghiệp và các tổ chức đầu tư lớn",
+    "Phải niêm yết trên Sở giao dịch và không được mua lại cụ thể"
    ],
    "answer": 0,
    "explain": "Khoản 39 Điều 4.",
@@ -46,9 +46,9 @@
    "q": "Trường hợp nào công ty quản lý quỹ KHÔNG phải mua lại chứng chỉ quỹ mở?",
    "options": [
     "Do bất khả kháng không thể thực hiện việc mua lại",
-    "Khi thị trường giảm mạnh",
-    "Khi nhà đầu tư lỗ",
-    "Khi công ty quản lý quỹ thiếu nhân sự"
+    "Khi thị trường giảm mạnh và nhà đầu tư rút tiền ồ ạt",
+    "Khi nhà đầu tư lỗ và yêu cầu bồi thường từ quỹ đó",
+    "Khi công ty quản lý quỹ thiếu nhân sự và kỹ thuật"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 111; phải báo cáo Ủy ban trong 24 giờ và tiếp tục mua lại khi sự kiện chấm dứt.",

@@ -29,9 +29,9 @@
    "q": "Thành viên giao dịch của Sở giao dịch chứng khoán Việt Nam là chủ thể nào?",
    "options": [
     "Công ty chứng khoán được Sở chấp thuận",
-    "Mọi nhà đầu tư có tài khoản",
-    "Công ty niêm yết",
-    "Công ty quản lý quỹ"
+    "Mọi nhà đầu tư có tài khoản tại ngân hàng",
+    "Công ty niêm yết trên sàn giao dịch đó",
+    "Công ty quản lý quỹ đầu tư chứng khoán"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 1 Điều 47.",
@@ -46,9 +46,9 @@
    "q": "Ngân hàng thương mại có thể trở thành loại thành viên nào của Sở?",
    "options": [
     "Thành viên giao dịch đặc biệt",
-    "Thành viên giao dịch",
-    "Thành viên lưu ký",
-    "Thành viên niêm yết"
+    "Thành viên giao dịch thông thường",
+    "Thành viên lưu ký chứng khoán",
+    "Thành viên niêm yết trên sàn"
    ],
    "answer": 0,
    "explain": "Điểm b khoản 1 Điều 47.",

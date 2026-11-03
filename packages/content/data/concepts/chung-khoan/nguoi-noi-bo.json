@@ -28,9 +28,9 @@
    "q": "Theo khoản 45 Điều 4, người nội bộ là ai?",
    "options": [
     "Người giữ vị trí quan trọng trong bộ máy quản trị, điều hành của doanh nghiệp, quỹ đại chúng, công ty đầu tư chứng khoán đại chúng",
-    "Mọi nhân viên của công ty",
-    "Mọi cổ đông",
-    "Nhân viên công ty chứng khoán"
+    "Mọi nhân viên của công ty đại chúng và các đơn vị liên quan trong nội bộ doanh nghiệp, kể cả người lao động thời vụ và thực tập đó",
+    "Mọi cổ đông của công ty đại chúng, kể cả cổ đông nhỏ lẻ và cổ đông không có quyền biểu quyết trong đại hội theo quy định",
+    "Nhân viên công ty chứng khoán và nhân viên của ngân hàng giám sát đang làm việc tại đơn vị đó và các chi nhánh theo quy định"
    ],
    "answer": 0,
    "explain": "Khoản 45 Điều 4.",
@@ -45,9 +45,9 @@
    "q": "Người nội bộ của công ty đại chúng phải công bố thông tin khi nào?",
    "options": [
     "Trước và sau giao dịch cổ phiếu của công ty (hoặc khi có thay đổi sở hữu)",
-    "Chỉ sau khi giao dịch 1 năm",
-    "Chỉ khi giao dịch trên 5%",
-    "Không phải công bố"
+    "Chỉ sau khi giao dịch 1 năm kể từ ngày nhận cổ phiếu và không cần thông báo",
+    "Chỉ khi giao dịch trên 5% số cổ phiếu có quyền biểu quyết của công ty nào",
+    "Không phải công bố trong bất kỳ trường hợp nào và không cần báo cáo cụ thể"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 128.",
