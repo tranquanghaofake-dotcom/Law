@@ -120,6 +120,18 @@
     "không phải tội phạm",
     "vượt quá"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Trong trường hợp thiệt hại gây ra rõ ràng vượt quá yêu cầu của tình thế cấp thiết, thì người gây thiệt hại đó phải chịu trách nhiệm hình sự.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 23 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 23 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)",
+    "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+   }
   }
  ]
 }

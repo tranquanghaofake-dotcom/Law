@@ -45,10 +45,10 @@
    "level": 1,
    "q": "Hành vi phạm tội xảy ra trên tàu biển mang quốc tịch Việt Nam có được áp dụng Bộ luật Hình sự Việt Nam theo Điều 5 không?",
    "options": [
-    "Có",
-    "Không",
-    "Chỉ khi tàu đang ở cảng Việt Nam",
-    "Chỉ khi người phạm tội là công dân Việt Nam"
+    "Có, áp dụng theo đoạn 2 khoản 1 Điều 5",
+    "Không, vì tội xảy ra ngoài lãnh thổ Việt Nam",
+    "Có, nếu tàu đang ở cảng Việt Nam",
+    "Có, nếu người phạm tội là công dân Việt Nam"
    ],
    "answer": 0,
    "explain": "Đoạn 2 khoản 1 Điều 5.",
@@ -124,6 +124,18 @@
     "thềm lục địa",
     "miễn trừ ngoại giao"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Bộ luật Hình sự được áp dụng đối với mọi hành vi phạm tội thực hiện trên lãnh thổ nước Cộng hòa xã hội chủ nghĩa Việt Nam.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 5 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 5 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)",
+    "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
+   }
   }
  ]
 }

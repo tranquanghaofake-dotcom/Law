@@ -29,9 +29,9 @@
    "q": "Người không quốc tịch thường trú ở Việt Nam phạm tội ở nước ngoài có thể bị truy cứu TNHS tại Việt Nam không?",
    "options": [
     "Có thể, như công dân Việt Nam",
-    "Không bao giờ",
-    "Chỉ khi có yêu cầu của nước ngoài",
-    "Chỉ khi phạm tội xâm phạm an ninh quốc gia"
+    "Không, vì không phải công dân",
+    "Có, nếu có yêu cầu của nước ngoài",
+    "Không, vì tội xảy ra ở nước ngoài"
    ],
    "answer": 0,
    "explain": "Đoạn 2 khoản 1 Điều 6.",
