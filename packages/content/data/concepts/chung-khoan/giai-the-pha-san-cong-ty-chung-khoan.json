@@ -68,16 +68,16 @@
      "answer": "left"
     },
     {
-     "text": "Theo pháp luật về phục hồi, phá sản",
+     "text": "Công ty chứng khoán bị Tòa án tuyên bố chấm dứt hoạt động khi không còn khả năng trả nợ đến hạn",
      "answer": "right"
     },
     {
-     "text": "Công ty chứng khoán tự nguyện giải thể theo nghị quyết của Đại hội đồng cổ đông",
+     "text": "Công ty chứng khoán tự nguyện chấm dứt hoạt động theo nghị quyết của Đại hội đồng cổ đông",
      "answer": "left",
      "basis": "Khoản 1 Điều 96 Luật Chứng khoán 2019"
     },
     {
-     "text": "Công ty chứng khoán mất khả năng thanh toán và bị Tòa án mở thủ tục phá sản",
+     "text": "Chủ nợ nộp đơn yêu cầu Tòa án giải quyết vì công ty chứng khoán mất khả năng thanh toán nợ đến hạn",
      "answer": "right",
      "basis": "Khoản 3 Điều 96 Luật Chứng khoán 2019"
     }

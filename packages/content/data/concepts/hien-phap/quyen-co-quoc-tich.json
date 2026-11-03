@@ -64,7 +64,7 @@
    "right": "Bảo đảm không bị tước quốc tịch",
    "cases": [
     {
-     "text": "Mỗi cá nhân ở Việt Nam đều có quyền có quốc tịch",
+     "text": "Mỗi cá nhân ở Việt Nam đều được hưởng quyền mang quốc tịch",
      "answer": "left"
     },
     {
@@ -72,7 +72,7 @@
      "answer": "right"
     },
     {
-     "text": "Cá nhân được quyền có quốc tịch theo quy định của pháp luật Việt Nam",
+     "text": "Cá nhân được hưởng quyền mang quốc tịch theo quy định của pháp luật Việt Nam",
      "answer": "left",
      "basis": "Khoản 1 Điều 2 Luật Quốc tịch Việt Nam 2008"
     },
