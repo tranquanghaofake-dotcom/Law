@@ -112,6 +112,18 @@
     "chỉ dẫn địa lý",
     "đăng ký"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Chuyển nhượng quyền sở hữu công nghiệp là việc chủ sở hữu quyền sở hữu công nghiệp chuyển giao quyền sở hữu của mình cho tổ chức, cá nhân khác.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 138 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 138 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+    "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
+   }
   }
  ]
 }

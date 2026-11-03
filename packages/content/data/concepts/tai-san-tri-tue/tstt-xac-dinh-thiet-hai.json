@@ -113,6 +113,17 @@
     "cơ hội kinh doanh",
     "thực tế"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Mức độ thiệt hại được xác định trên cơ sở các tổn thất thực tế mà chủ thể quyền sở hữu trí tuệ phải chịu do hành vi xâm phạm quyền sở hữu trí tuệ gây ra.",
+   "answer": true,
+   "explain": "Đúng. Khoản 2 Điều 204 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 2 Điều 204 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+   }
   }
  ]
 }
