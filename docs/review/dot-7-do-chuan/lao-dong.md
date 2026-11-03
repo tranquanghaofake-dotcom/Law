@@ -69,3 +69,38 @@
 | `thu-viec` | Thử việc công việc của người quản lý doanh nghiệp, thời gian tối đa 180 ngày<br>Thử việc nhân viên nghiệp vụ hoặc công nhân kỹ thuật có chức danh trung cấp, tối đa 30 ngày | Thời gian thử việc tối đa đối với công việc của người quản lý doanh nghiệp<br>Thời gian thử việc tối đa đối với nhân viên nghiệp vụ hoặc công nhân kỹ thuật có chức danh trung cấp | Khoản 1 Điều 25 Bộ luật Lao động 2019<br>Khoản 3 Điều 25 Bộ luật Lao động 2019 | viết lại không nhắc nhãn / sửa lỗi theo bảng verify |
 | `thuong-luong-tap-the` | Hai bên ký hợp đồng lao động cá nhân trước khi nhận người lao động vào làm việc | Trước khi nhận người lao động vào làm việc, người sử dụng lao động phải giao kết văn bản thỏa thuận riêng với  | Khoản 2 Điều 13 Bộ luật Lao động 2019 | viết lại không nhắc nhãn / sửa lỗi theo bảng verify |
 | `tien-luong` | Mức lương theo công việc không được thấp hơn mức lương tối thiểu theo quy định | Người sử dụng lao động phải trả lương trực tiếp, đầy đủ, đúng hạn cho người lao động | Khoản 1 Điều 94 Bộ luật Lao động 2019 | viết lại không nhắc nhãn / sửa lỗi theo bảng verify |
+
+## Câu hỏi viết lại (sonnet B)
+
+### Câu hỏi kiểu tập hợp (bỏ nhiễu "Chỉ…") (3)
+
+| Mã | Câu hỏi | Trước | Sau | Căn cứ | Ghi chú |
+|---|---|---|---|---|---|
+| `lao-dong/chinh-sach-nha-nuoc-ve-lao-dong#1` | Chính sách của Nhà nước có bảo đảm quyền lợi của người sử dụng lao động không? | **Có, theo khoản 2 Điều 4**<br>Không, chỉ bảo vệ người làm<br>Chỉ với doanh nghiệp nhà nước<br>Chỉ khi có tranh chấp | **Có, theo khoản 2 Điều 4 Bộ luật Lao động**<br>Không, vì chỉ bảo vệ quyền của người lao động<br>Có, nếu là doanh nghiệp nhà nước<br>Có, nếu đang có tranh chấp | Khoản 2 Điều 4 Bộ luật Lao động 2019 | Đáp án vẫn là 'Có'; viết đầy đủ.; Nhiễu viết lại: sai rõ, không cần từ tuyệt đối |
+| `sets/lao-dong-de-2#8` | Tranh chấp về việc bị sa thải có bắt buộc phải qua hòa giải viên lao động trước khi khởi kiện không? | Bắt buộc<br>**Không bắt buộc**<br>Chỉ khi người lao động là nữ<br>Chỉ khi công ty có công đoàn | Bắt buộc phải qua hòa giải<br>**Không bắt buộc, theo Điều 188**<br>Bắt buộc nếu người lao động là nữ<br>Bắt buộc nếu công ty có công đoàn | Điểm a khoản 1 Điều 188 Bộ luật Lao động 2019 | Đáp án vẫn là 'Không bắt buộc'; viết đầy đủ. |
+| `sets/nghi-viec-giu-luong#3` | Công ty liên tục trả lương chậm và không đủ. Bạn có được nghỉ việc ngay mà không cần báo trước không? | Không, vẫn phải báo trước như bình thường theo hợp đồng<br>**Có, đây là một trường hợp được nghỉ không cần báo trước**<br>Chỉ khi chậm lương trên 6 tháng<br>Chỉ khi có quyết định của Tòa án | Không, vẫn phải báo trước như bình thường theo hợp đồng<br>**Có, đây là một trường hợp được nghỉ không cần báo trước**<br>Không, chỉ được nghỉ khi chậm lương trên 6 tháng<br>Không, phải có quyết định của Tòa án | Điểm b khoản 2 Điều 35 Bộ luật Lao động 2019 | Nhiễu viết lại: sai rõ, không cần từ tuyệt đối |
+
+### Câu lộ tên khái niệm trong phương án (1)
+
+| Mã | Câu hỏi | Trước | Sau | Căn cứ | Ghi chú |
+|---|---|---|---|---|---|
+| `lao-dong/hop-dong-lao-dong#0` | Hợp đồng mang tên "hợp đồng dịch vụ" nhưng có nội dung về việc làm có trả lương và sự quản lý, giám sát của một bên thì được coi là gì? | **Hợp đồng lao động**<br>Hợp đồng dịch vụ dân sự<br>Hợp đồng vô hiệu toàn bộ<br>Hợp đồng thương mại | **Hợp đồng lao động**<br>Hợp đồng dịch vụ dân sự<br>Hợp đồng lao động vô hiệu toàn bộ<br>Hợp đồng thương mại | Theo nguồn cũ của câu | Nhiễu cũng chứa tên khái niệm (sai kết luận). |
+
+### Câu Đúng/Sai đáp án Đúng thêm mới (14)
+
+| Mã | Nhận định (Đúng) | Căn cứ | Ghi chú |
+|---|---|---|---|
+| `lao-dong/boi-thuong-thiet-hai-lao-dong#7` | Người lao động làm hư hỏng dụng cụ, thiết bị hoặc có hành vi khác gây thiệt hại tài sản của người sử dụng lao động thì phải bồi thường theo quy định của pháp luật hoặc nội quy lao động của người sử dụng lao động. | Khoản 1 Điều 129 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026) | nguyên văn khớp laws/*.txt |
+| `lao-dong/hop-dong-lao-dong#7` | Hợp đồng lao động là sự thỏa thuận giữa người lao động và người sử dụng lao động về việc làm có trả công, tiền lương, điều kiện lao động, quyền và nghĩa vụ của mỗi bên trong quan hệ lao động. | Khoản 1 Điều 13 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026) | nguyên văn khớp laws/*.txt |
+| `lao-dong/ky-luat-lao-dong#7` | Kỷ luật lao động là những quy định về việc tuân theo thời gian, công nghệ và điều hành sản xuất, kinh doanh do người sử dụng lao động ban hành trong nội quy lao động và do pháp luật quy định. | Điều 117 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026) | nguyên văn khớp laws/*.txt |
+| `lao-dong/luong-toi-thieu#7` | Mức lương tối thiểu được xác lập theo vùng, ấn định theo tháng, giờ. | Khoản 2 Điều 91 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026) | nguyên văn khớp laws/*.txt |
+| `lao-dong/nguoi-lao-dong#7` | Người lao động là người làm việc cho người sử dụng lao động theo thỏa thuận, được trả lương và chịu sự quản lý, điều hành, giám sát của người sử dụng lao động. | Khoản 1 Điều 3 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026) | nguyên văn khớp laws/*.txt |
+| `lao-dong/quan-he-lao-dong#7` | Người làm việc không có quan hệ lao động là người làm việc không trên cơ sở thuê mướn bằng hợp đồng lao động. | Khoản 6 Điều 3 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026) | nguyên văn khớp laws/*.txt |
+| `lao-dong/thoa-uoc-lao-dong-tap-the#7` | Thỏa ước lao động tập thể là thỏa thuận đạt được thông qua thương lượng tập thể và được các bên ký kết bằng văn bản. | Khoản 1 Điều 75 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026) | nguyên văn khớp laws/*.txt |
+| `lao-dong/thoi-gio-lam-viec#7` | Thời giờ làm việc bình thường không quá 08 giờ trong 01 ngày và không quá 48 giờ trong 01 tuần. | Khoản 1 Điều 105 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026) | nguyên văn khớp laws/*.txt |
+| `lao-dong/thoi-hieu-tranh-chap-lao-dong#7` | Thời hiệu yêu cầu Tòa án giải quyết tranh chấp lao động cá nhân là 01 năm kể từ ngày phát hiện ra hành vi mà bên tranh chấp cho rằng quyền và lợi ích hợp pháp của mình bị vi phạm. | Khoản 3 Điều 190 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026) | nguyên văn khớp laws/*.txt |
+| `lao-dong/tien-luong#7` | Mức lương theo công việc hoặc chức danh không được thấp hơn mức lương tối thiểu. | Khoản 2 Điều 90 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026) | nguyên văn khớp laws/*.txt |
+| `lao-dong/to-chuc-dai-dien-nguoi-lao-dong#7` | Tổ chức đại diện người lao động tại cơ sở bao gồm công đoàn cơ sở và tổ chức của người lao động tại doanh nghiệp. | Khoản 3 Điều 3 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026) | nguyên văn khớp laws/*.txt |
+| `lao-dong/nghi-hang-nam#7` | Người lao động làm việc đủ 12 tháng cho một người sử dụng lao động thì được nghỉ hằng năm, hưởng nguyên lương; người làm nghề, công việc đặc biệt nặng nhọc, độc hại, nguy hiểm được nghỉ 16 ngày làm việc. | Điểm c khoản 1 Điều 113 Bộ luật Lao động 2019 | Ghép phần chung và điểm c khoản 1 Điều 113, đối chiếu laws/blld-vbhn-2025.txt |
+| `lao-dong/loai-hop-dong-lao-dong#7` | Nếu hết thời hạn 30 ngày kể từ ngày hợp đồng lao động xác định thời hạn hết hạn mà hai bên không ký kết hợp đồng lao động mới thì hợp đồng đã giao kết trở thành hợp đồng lao động không xác định thời hạn. | Điểm b khoản 2 Điều 20 Bộ luật Lao động 2019 | Trích gần nguyên văn, đối chiếu laws/blld-vbhn-2025.txt |
+| `lao-dong/tro-cap-thoi-viec#7` | Thời gian làm việc để tính trợ cấp thôi việc là tổng thời gian người lao động đã làm việc thực tế cho người sử dụng lao động trừ đi thời gian người lao động đã tham gia bảo hiểm thất nghiệp và thời gian làm việc đã được người sử dụng lao động chi trả trợ cấp thôi việc, trợ cấp mất việc làm. | Khoản 2 Điều 46 Bộ luật Lao động 2019 | Trích gần nguyên văn, đối chiếu laws/blld-vbhn-2025.txt |

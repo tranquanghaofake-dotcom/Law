@@ -49,8 +49,8 @@
       "options": [
         "Không, vẫn phải báo trước như bình thường theo hợp đồng",
         "Có, đây là một trường hợp được nghỉ không cần báo trước",
-        "Chỉ khi chậm lương trên 6 tháng",
-        "Chỉ khi có quyết định của Tòa án"
+        "Không, chỉ được nghỉ khi chậm lương trên 6 tháng",
+        "Không, phải có quyết định của Tòa án"
       ],
       "answer": 1,
       "explain": "Người lao động được đơn phương chấm dứt hợp đồng không cần báo trước nếu không được trả đủ lương hoặc trả lương không đúng thời hạn (trừ trường hợp bất khả kháng theo khoản 4 Điều 97). Hãy giữ bảng lương, sao kê làm chứng cứ.",
