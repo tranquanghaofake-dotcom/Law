@@ -30,9 +30,9 @@
    "q": "Vốn đầu tư theo khoản 23 Điều 3 gồm gì?",
    "options": [
     "Tiền, tài sản khác theo pháp luật dân sự và điều ước quốc tế",
-    "Chỉ tiền mặt do nhà đầu tư góp bằng ngoại tệ đã đổi",
-    "Chỉ ngoại tệ chuyển từ nước ngoài vào Việt Nam theo hợp đồng vay",
-    "Chỉ vốn vay ngân hàng và vốn vay từ các tổ chức tín dụng"
+    "Tiền mặt và tài sản của Nhà nước giao cho nhà đầu tư quản lý",
+    "Ngoại tệ chuyển từ nước ngoài vào Việt Nam và ngân sách nhà nước cấp",
+    "Vốn vay ngân hàng và các khoản nợ phải trả của doanh nghiệp"
    ],
    "answer": 0,
    "explain": "Khoản 23 Điều 3.",

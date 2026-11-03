@@ -30,12 +30,12 @@
    "q": "Dự án nào phải thực hiện thủ tục cấp Giấy chứng nhận đăng ký đầu tư?",
    "options": [
     "Dự án đầu tư của nhà đầu tư nước ngoài",
-    "Dự án đầu tư của mọi nhà đầu tư trong nước",
-    "Mọi khoản góp vốn mua cổ phần",
-    "Mọi dự án dưới 10 tỷ đồng"
+    "Dự án đầu tư của nhà đầu tư trong nước",
+    "Đầu tư theo hình thức góp vốn, mua cổ phần",
+    "Dự án đầu tư có vốn dưới 10 tỷ đồng"
    ],
    "answer": 0,
-   "explain": "Điểm a khoản 1 Điều 26.",
+   "explain": "Điểm a khoản 1 Điều 26. Dự án của nhà đầu tư trong nước và đầu tư góp vốn, mua cổ phần thuộc khoản 2 Điều 26 (không phải thực hiện thủ tục cấp Giấy chứng nhận đăng ký đầu tư); ngưỡng 10 tỷ đồng không phải căn cứ.",
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 26 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)"
@@ -111,6 +111,18 @@
     "nhà đầu tư nước ngoài",
     "khoản 1 Điều 20"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Giấy chứng nhận đăng ký đầu tư là văn bản bằng bản giấy hoặc bản điện tử ghi nhận thông tin đăng ký của nhà đầu tư về dự án đầu tư.",
+   "answer": true,
+   "explain": "Đúng. Khoản 11 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 11 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)",
+    "url": "https://thuvienphapluat.vn/van-ban/Dau-tu/Van-ban-hop-nhat-142-2026-VBHN-LQ-VPQH-Luat-Dau-tu-726675.aspx"
+   }
   }
  ]
 }
