@@ -75,6 +75,11 @@
     {
      "text": "Tên gọi thông thường của hàng hóa",
      "answer": "right"
+    },
+    {
+     "text": "Dấu hiệu gồm nhiều yếu tố dễ nhận biết, dễ ghi nhớ, kết hợp với nhau để phân biệt hàng hóa",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 74 Luật Sở hữu trí tuệ"
     }
    ],
    "explain": "Điều 74."

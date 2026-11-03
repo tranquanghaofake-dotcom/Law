@@ -70,6 +70,16 @@
     {
      "text": "Cho phép đài phát bài hát trong 2 năm",
      "answer": "right"
+    },
+    {
+     "text": "Tác giả chuyển giao quyền sở hữu tài sản của tác phẩm cho công ty bằng văn bản",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 45 Luật Sở hữu trí tuệ"
+    },
+    {
+     "text": "Nhà đài được phép phát bài hát trong 02 năm nhưng chủ sở hữu vẫn giữ quyền sở hữu",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 47 Luật Sở hữu trí tuệ"
     }
    ],
    "explain": "Điều 45, 47."
