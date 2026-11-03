@@ -72,6 +72,16 @@
     {
      "text": "Công ty thành lập tại Thái Lan",
      "answer": "right"
+    },
+    {
+     "text": "Công ty cổ phần được thành lập theo Luật Doanh nghiệp tại Việt Nam",
+     "answer": "left",
+     "basis": "Khoản 21 Điều 3 Luật Đầu tư 2025"
+    },
+    {
+     "text": "Công ty được thành lập theo pháp luật Lào và hoạt động trên lãnh thổ Việt Nam",
+     "answer": "right",
+     "basis": "Khoản 21 Điều 3 Luật Đầu tư 2025 (thành lập theo pháp luật Việt Nam)"
     }
    ],
    "explain": "Khoản 21 Điều 3."

@@ -71,6 +71,16 @@
     {
      "text": "Xây trụ sở cơ quan bằng vốn ngân sách",
      "answer": "right"
+    },
+    {
+     "text": "Cá nhân bỏ vốn mua máy móc để mở xưởng sản xuất bánh kẹo nhằm bán hàng thu lợi",
+     "answer": "left",
+     "basis": "Khoản 8 Điều 3 Luật Đầu tư 2025"
+    },
+    {
+     "text": "Cá nhân cho bạn vay tiền để phục vụ tiêu dùng gia đình, không nhằm hoạt động sản xuất kinh doanh",
+     "answer": "right",
+     "basis": "Khoản 8 Điều 3 Luật Đầu tư 2025"
     }
    ],
    "explain": "Điều 1, khoản 8 Điều 3."

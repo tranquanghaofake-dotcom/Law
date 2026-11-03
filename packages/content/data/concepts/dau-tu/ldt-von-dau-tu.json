@@ -71,6 +71,16 @@
     {
      "text": "Uy tín cá nhân của nhà đầu tư",
      "answer": "right"
+    },
+    {
+     "text": "Tiền mặt và máy móc do nhà đầu tư góp để thực hiện dự án",
+     "answer": "left",
+     "basis": "Khoản 23 Điều 3 Luật Đầu tư 2025"
+    },
+    {
+     "text": "Công sức và kinh nghiệm quản lý của người điều hành, không được định giá thành tiền",
+     "answer": "right",
+     "basis": "Khoản 23 Điều 3 Luật Đầu tư 2025 (không phải tiền hoặc tài sản)"
     }
    ],
    "explain": "Khoản 23 Điều 3; Điều 105 Bộ luật Dân sự 2015."
