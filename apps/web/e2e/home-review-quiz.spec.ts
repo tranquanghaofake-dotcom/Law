@@ -66,17 +66,18 @@ const setsDir = '../../packages/content/data/sets';
 const allSets: { title: string; group: string }[] = readdirSync(setsDir)
   .filter((f) => f.endsWith('.json'))
   .map((f) => JSON.parse(readFileSync(`${setsDir}/${f}`, 'utf8')));
-const danSuTitles = allSets.filter((s) => s.group === 'dan-su').map((s) => s.title);
+// Chip lọc theo kệ nhóm ngành (PR 3): kệ "Dân sự – Tố tụng" gồm nhóm dan-su và to-tung-dan-su (lib/ui/groups.ts GROUP_SHELF).
+const danSuTitles = allSets.filter((s) => ['dan-su', 'to-tung-dan-su'].includes(s.group)).map((s) => s.title);
 
 test('Luyện đề: lọc theo nhóm chỉ còn đề của nhóm đó', async ({ page }) => {
   await page.goto(B + '#/luyen-de');
   await expect(page.locator('.set')).toHaveCount(allSets.length);
-  await page.getByRole('button', { name: 'Luật Dân sự' }).click();
+  await page.getByRole('button', { name: 'Dân sự – Tố tụng' }).click();
   // Lọc xong: số đề bằng số đề của nhóm trong dữ liệu, ít hơn tổng, và mọi đề hiện ra đều thuộc nhóm.
   await expect(page.locator('.set')).toHaveCount(danSuTitles.length);
   expect(danSuTitles.length).toBeLessThan(allSets.length);
   for (const t of await page.locator('.set h3').allTextContents()) expect(danSuTitles).toContain(t);
-  await expect(page.getByRole('button', { name: 'Luật Dân sự' })).toHaveAttribute('aria-pressed', 'true');
+  await expect(page.getByRole('button', { name: 'Dân sự – Tố tụng' })).toHaveAttribute('aria-pressed', 'true');
   await page.getByRole('button', { name: 'Tất cả' }).click();
   await expect(page.locator('.set')).toHaveCount(allSets.length);
 });
