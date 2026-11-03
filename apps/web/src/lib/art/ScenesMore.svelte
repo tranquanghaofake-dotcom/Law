@@ -81,16 +81,24 @@
   <path class="ka" d="M340 182q-30 26-68 30M370 166q-40 34-84 40" stroke-width="1.4" stroke-dasharray="4 4" />
   <rect class="f-seal2 k" x="320" y="262" width="44" height="34" rx="4" stroke-width="1.6" /><path class="k" d="M332 262v-8q0-4 4-4h16q4 0 4 4v8M320 276h44" stroke-width="1.4" /><rect class="f-acc k" x="376" y="274" width="32" height="22" rx="3" stroke-width="1.4" />
 {:else if name === 'ruong-lua'}
-  <!-- ruộng bậc thang, người cấy lúa đội nón, cột mốc, sổ chứng nhận -->
-  <Clouds cy={118} r={100} puffs={false} hills />
-  <clipPath id="sm-ruong"><rect x="24" y="190" width="472" height="112" rx="34" /></clipPath>
+  <!-- ruộng bậc thang nhiều tầng xa–gần: núi xa, tầng ruộng thu nhỏ dần, bờ ruộng uốn, đường đất, người cấy lúa đội nón, cột mốc, sổ chứng nhận -->
+  <Clouds cy={110} r={96} puffs={false} hills ground={false} />
+  <clipPath id="sm-ruong"><rect x="16" y="150" width="488" height="152" rx="34" /></clipPath>
   <g clip-path="url(#sm-ruong)">
-  <path class="f-leaf2 k" d="M0 232q130-30 260-14t260-12v95H0z" stroke-width="1.6" /><path class="f-leaf k" d="M0 258q130-28 260-12t260-12v67H0z" stroke-width="1.6" /><path class="f-leaf2 k" d="M0 284q130-24 260-10t260-10v37H0z" stroke-width="1.6" />
-  <path class="k" d={Array.from({ length: 16 }, (_, i) => `M${20 + i * 32} ${244 + (i % 3) * 3}l-3-9M${26 + i * 32} ${246 + (i % 2) * 3}l2-10`).join('')} stroke-width="1.1" />
+    <path class="f-hill2" d="M0 190q60-34 130-14t140-6t130 8t120-4v140H0z" />
+    <path class="f-leaf2 k" d="M0 196q130-16 260-6t260-4v30q-130-6-260 0t-260-6z" stroke-width="1.2" />
+    <path class="f-leaf k" d="M0 214q130-18 260-8t260-6v34q-130-8-260-2t-260-8z" stroke-width="1.3" />
+    <path class="f-leaf2 k" d="M0 236q130-22 260-10t260-8v40q-130-10-260-2t-260-10z" stroke-width="1.4" />
+    <path class="f-leaf k" d="M0 262q130-26 260-12t260-10v70H0z" stroke-width="1.5" />
+    <path class="f-water" d="M40 242q60-8 110-2v10q-50-4-110 2zM330 236q60-6 120 0v9q-60-4-120 2z" opacity=".55" />
+    <path class="k" d={Array.from({ length: 22 }, (_, i) => `M${12 + i * 24} ${204 + (i % 3)}l-1-5M${18 + i * 24} ${206 - (i % 2)}l1-6`).join('') + Array.from({ length: 16 }, (_, i) => `M${20 + i * 32} ${230 + (i % 3) * 2}l-2-7M${27 + i * 32} ${232}l2-8`).join('')} stroke-width="1" />
+    <path class="f-acc2 k" d="M244 320q-4-30 6-52t14-44t0-34l10-2q-2 18 0 34t-8 46t-2 52z" stroke-width="1.4" />
+    <path class="kw" d="M258 280q6-20 8-36M262 250q4-14 4-26" stroke-width="1" />
   </g>
-  <g transform="translate(160 262)"><path class="f-acc k" d="M-14 -30h28l-14-14z" stroke-width="1.4" /><circle class="f-cream k" cx="0" cy="-24" r="6" stroke-width="1.3" /><path class="f-seal2 k" d="M-9 4q0-22 9-22t9 22z" stroke-width="1.4" /><path class="k" d="M-12 -2l-10 10M12 -2l12 8" stroke-width="2" /></g>
-  <rect class="f-cream k" x="360" y="236" width="14" height="48" stroke-width="1.6" /><path class="f-seal k" d="M374 240h26l-6 8l6 8h-26z" stroke-width="1.3" />
-  <rect class="f-seal2 k" x="410" y="250" width="40" height="30" rx="2" stroke-width="1.5" /><circle class="kg" cx="430" cy="262" r="6" stroke-width="1" /><path class="kg" d="M418 272h24" stroke-width="1" />
+  <Tree x={62} y={198} s={0.5} /><Tree x={452} y={196} s={0.45} />
+  <g transform="translate(150 292)"><path class="f-acc k" d="M-18 -42h36l-18-17z" stroke-width="1.5" /><circle class="f-cream k" cx="0" cy="-34" r="7" stroke-width="1.4" /><path class="f-seal2 k" d="M-11 6q0-28 11-28t11 28z" stroke-width="1.5" /><path class="k" d="M-14 -4l-12 12M14 -4l14 8" stroke-width="2.2" /><path class="kw" d="M-30 12q10-4 20 0M16 8q8-4 16 0" stroke-width="1.2" /></g>
+  <rect class="f-cream k" x="372" y="262" width="12" height="38" stroke-width="1.6" /><path class="f-acc k" d="M384 266h22l-5 7l5 7h-22z" stroke-width="1.3" />
+  <rect class="f-seal2 k" x="424" y="272" width="42" height="28" rx="2" stroke-width="1.5" /><circle class="kg" cx="445" cy="283" r="6" stroke-width="1" /><path class="kg" d="M432 293h26" stroke-width="1" />
 {:else if name === 'toa-ngan-hang'}
   <!-- trụ sở ngân hàng: mặt tiền cột, bậc thềm, két sắt, đồng xu -->
   <Clouds cy={130} r={106} puffs={false} />
@@ -118,12 +126,12 @@
   <path class="f-cream k" d="M392 150h56l20 20v50h-76z" stroke-width="1.6" transform="translate(0 -40)" /><circle class="f-seal k" cx="456" cy="112" r="14" stroke-width="1.6" /><path class="kp" d="M450 118V106h7a4 4 0 0 1 0 8h-7M457 114l5 6" stroke-width="2" />
   <path class="f-acc2 k" d="M70 120l50-50l10 10l-50 50l-18 6z" stroke-width="1.6" />
 {:else if name === 'phap-dinh'}
-  <!-- pháp đình hình sự: bục xét xử, búa, bộ luật, còng; hai cột -->
+  <!-- pháp đình hình sự: bàn hội đồng xét xử, biển chức danh, tập hồ sơ vụ án buộc dây, còng; hai cột (không vẽ búa gỗ) -->
   <Clouds cy={130} r={106} puffs={false} />
   <g class="f-card k" stroke-width="1.7"><rect x="64" y="104" width="30" height="190" /><rect x="426" y="104" width="30" height="190" /></g><rect class="f-acc k" x="56" y="94" width="46" height="12" stroke-width="1.5" /><rect class="f-acc k" x="418" y="94" width="46" height="12" stroke-width="1.5" /><rect class="f-card k" x="52" y="294" width="54" height="8" stroke-width="1.4" /><rect class="f-card k" x="414" y="294" width="54" height="8" stroke-width="1.4" />
   <path class="f-acc2 k" d="M150 170h220v131H150z" stroke-width="1.8" /><path class="kg" d="M150 186h220M164 170v131M356 170v131" stroke-width="1.2" opacity=".8" /><rect class="f-acc k" x="140" y="158" width="240" height="14" rx="2" stroke-width="1.6" />
   <rect class="f-seal2 k" x="172" y="116" width="80" height="42" stroke-width="1.6" /><path class="kg" d="M180 124h64M180 150h64" stroke-width="1.2" /><rect class="f-cream k" x="190" y="130" width="44" height="12" stroke-width="1" />
-  <rect class="f-acc2 k" x="290" y="124" width="60" height="26" rx="3" stroke-width="1.7" transform="rotate(-22 320 137)" /><path class="k" d="M320 150l22 44" stroke-width="5" /><ellipse class="f-cream k" cx="334" cy="206" rx="34" ry="6" stroke-width="1.5" transform="translate(-4 -4)" />
+  <rect class="f-cream k" x="296" y="140" width="64" height="18" rx="2" stroke-width="1.6" /><rect class="f-card k" x="300" y="128" width="56" height="12" rx="2" stroke-width="1.6" /><rect class="f-cream k" x="304" y="117" width="48" height="11" rx="2" stroke-width="1.6" /><path class="ks" d="M328 114v44M316 134h24" stroke-width="2" /><circle class="f-seal" cx="328" cy="134" r="3.4" />
   <path class="kg" d="M200 196h120M200 252h120M258 196v56" stroke-width="1.2" opacity=".7" />
   <g transform="translate(262 149) scale(.5)"><circle class="f-card k" cx="0" cy="0" r="16" stroke-width="4" /><circle class="f-card k" cx="36" cy="0" r="16" stroke-width="4" /><path class="k" d="M16 0h4" stroke-width="5" /></g>
 {:else if name === 'che-cho'}

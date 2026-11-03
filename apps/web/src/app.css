@@ -675,8 +675,11 @@ h1 { font-family: var(--font-display); font-weight: 800; letter-spacing: -.01em;
 .stage .headline b { font-weight: 700; font-size: clamp(var(--fs-xl), 3vw, var(--fs-2xl)); line-height: var(--lh-snug); }
 .page-head > p, .subject-head > p { margin: 0 0 var(--sp-3); font-size: var(--fs-sm); }
 .page-head > :last-child, .subject-head > :last-child { margin-bottom: 0; }
-/* < 600 px: tranh đầu trang đẩy nội dung xuống dưới màn đầu (Môn học y≈470, trang môn y≈660) → ẩn; Hôm nay (.stage) giữ tranh */
-@media (max-width: 599px) { .page-head .head-art, .subject-head .head-art { display: none; } }
+/* < 600 px: tranh đầu trang các trang danh sách ẩn (đẩy nội dung xuống: Môn học y≈470); trang môn thu nhỏ nổi bên phải tiêu đề để mục lục chương vẫn ở y≈290 */
+@media (max-width: 599px) {
+  .page-head .head-art { display: none; }
+  .subject-head .head-art { display: block; position: absolute; right: -6px; top: 4px; width: 44%; max-width: 190px; height: auto; margin: 0; z-index: -1; opacity: .5; pointer-events: none; }
+}
 @media (min-width: 768px) {
   .stage, .subject-head { min-height: 248px; }
   /* đầu trang danh sách (Môn học, Luyện đề, Hồ sơ) không giữ chiều cao tối thiểu: nội dung lên màn đầu (spec phần nhìn đợt 4, PR 0) */

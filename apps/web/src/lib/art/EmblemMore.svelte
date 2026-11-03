@@ -39,9 +39,9 @@
 {:else if name === 'gia-pha'}
   <path class="k" d="M32 22v8M18 30h28M18 30v8M32 30v8M46 30v8" stroke-width="1.4" />
   <circle class="f-acc k" cx="32" cy="17" r="6" /><circle class="f-cream k" cx="18" cy="43" r="5.5" /><circle class="f-cream k" cx="32" cy="43" r="5.5" /><circle class="f-cream k" cx="46" cy="43" r="5.5" />
-{:else if name === 'bua'}
-  <rect class="f-acc2 k" x="14" y="16" width="26" height="12" rx="2" transform="rotate(-28 27 22)" /><path class="k" d="M35 27l14 22" stroke-width="3" />
-  <rect class="f-cream k" x="14" y="46" width="30" height="5" rx="1.5" />
+{:else if name === 'ho-so'}
+  <rect class="f-cream k" x="14" y="38" width="36" height="10" rx="1.5" /><rect class="f-card k" x="15" y="28" width="34" height="10" rx="1.5" /><rect class="f-cream k" x="16" y="18" width="32" height="10" rx="1.5" />
+  <path class="ks" d="M32 16v34M26 33h12" stroke-width="1.6" /><circle class="f-seal" cx="32" cy="33" r="2.4" />
 {:else if name === 'cong-tay'}
   <circle class="f-cream k" cx="22" cy="32" r="10" stroke-width="2" /><circle class="f-cream k" cx="42" cy="32" r="10" stroke-width="2" /><path class="k" d="M30 32h4" stroke-width="3" />
   <circle class="f-void" cx="22" cy="32" r="3.5" /><circle class="f-void" cx="42" cy="32" r="3.5" />

@@ -81,12 +81,12 @@ export type EmblemName =
   | 'sach' | 'sach-hp' | 'cuon-lap-hien' | 'cot-tru' | 'quyen-nguoi' | 'ho-chieu' | 'hom-phieu' | 'nghi-truong' | 'an-trien' | 'tru-so' | 'can-can' | 'lang-xa' | 'kinh-te'
   | 'nen' | 'co-phieu' | 'bang-dien' | 'luu-ky' | 'van-phong' | 'quy' | 'kinh-lup' | 'bat-tay'
   | 'trong-dong' | 'bia-rua' | 'bo-luat-cu' | 'sac-lenh'
-  | 'nguoi' | 'nhom-nguoi' | 'nha' | 'chia-khoa' | 'hop-dong' | 'dong-xu' | 'khien' | 'khoa' | 'dong-ho' | 'lich' | 'di-chuc' | 'gia-pha' | 'bua' | 'cong-tay' | 'canh-bao' | 'thu-tuc' | 'bien-ban'
+  | 'nguoi' | 'nhom-nguoi' | 'nha' | 'chia-khoa' | 'hop-dong' | 'dong-xu' | 'khien' | 'khoa' | 'dong-ho' | 'lich' | 'di-chuc' | 'gia-pha' | 'ho-so' | 'cong-tay' | 'canh-bao' | 'thu-tuc' | 'bien-ban'
   | 'con-dau' | 'the-id' | 'mu-bao-ho' | 'bao-hiem' | 'y-te' | 'tre-em' | 'nu' | 'may-bay' | 'tau' | 'nha-may' | 'ruong' | 'thue' | 'bieu-do' | 'bong-den' | 'ban-quyen' | 'nhan-hieu' | 'giong-cay'
   | 'ban-do' | 'loa' | 'vuong-mien' | 'sap-nhap' | 'mat-na' | 'huan-chuong' | 'trai-tim' | 'tui-do' | 'tranh-chap' | 'quy-trinh' | 'but-long' | 'dieu-luat' | 'xich' | 'cay' | 'muc-tieu' | 'khoi' | 'ngoai-te' | 'pha-san' | 'cam';
 export const EMBLEM_CORE: readonly EmblemName[] = ['sach', 'sach-hp', 'cuon-lap-hien', 'cot-tru', 'quyen-nguoi', 'ho-chieu', 'hom-phieu', 'nghi-truong', 'an-trien', 'tru-so', 'can-can', 'lang-xa', 'kinh-te', 'nen', 'co-phieu', 'bang-dien', 'luu-ky', 'van-phong', 'quy', 'kinh-lup', 'bat-tay', 'trong-dong', 'bia-rua', 'bo-luat-cu', 'sac-lenh'];
 /** Huy hiệu bổ sung (đợt 6) — nạp lười trong EmblemMore.svelte. */
-export const EMBLEM_MORE: readonly EmblemName[] = ['nguoi', 'nhom-nguoi', 'nha', 'chia-khoa', 'hop-dong', 'dong-xu', 'khien', 'khoa', 'dong-ho', 'lich', 'di-chuc', 'gia-pha', 'bua', 'cong-tay', 'canh-bao', 'thu-tuc', 'bien-ban', 'con-dau', 'the-id', 'mu-bao-ho', 'bao-hiem', 'y-te', 'tre-em', 'nu', 'may-bay', 'tau', 'nha-may', 'ruong', 'thue', 'bieu-do', 'bong-den', 'ban-quyen', 'nhan-hieu', 'giong-cay', 'ban-do', 'loa', 'vuong-mien', 'sap-nhap', 'mat-na', 'huan-chuong', 'trai-tim', 'tui-do', 'tranh-chap', 'quy-trinh', 'but-long', 'dieu-luat', 'xich', 'cay', 'muc-tieu', 'khoi', 'ngoai-te', 'pha-san', 'cam'];
+export const EMBLEM_MORE: readonly EmblemName[] = ['nguoi', 'nhom-nguoi', 'nha', 'chia-khoa', 'hop-dong', 'dong-xu', 'khien', 'khoa', 'dong-ho', 'lich', 'di-chuc', 'gia-pha', 'ho-so', 'cong-tay', 'canh-bao', 'thu-tuc', 'bien-ban', 'con-dau', 'the-id', 'mu-bao-ho', 'bao-hiem', 'y-te', 'tre-em', 'nu', 'may-bay', 'tau', 'nha-may', 'ruong', 'thue', 'bieu-do', 'bong-den', 'ban-quyen', 'nhan-hieu', 'giong-cay', 'ban-do', 'loa', 'vuong-mien', 'sap-nhap', 'mat-na', 'huan-chuong', 'trai-tim', 'tui-do', 'tranh-chap', 'quy-trinh', 'but-long', 'dieu-luat', 'xich', 'cay', 'muc-tieu', 'khoi', 'ngoai-te', 'pha-san', 'cam'];
 export const EMBLEM_NAMES: readonly EmblemName[] = [...EMBLEM_CORE, ...EMBLEM_MORE];
 
 /** Môn đánh số "vN" theo thứ tự chương: ghi gọn thành danh sách tên huy hiệu theo thứ tự. */
@@ -104,24 +104,24 @@ const CHAPTER_EMBLEM: Record<string, Record<string, EmblemName>> = {
   },
   'lich-su-nn-pl': { 'c5-co-dai': 'trong-dong', 'c6-trung-dai': 'bia-rua', 'c7-can-dai': 'bo-luat-cu', 'c8-hien-dai': 'sac-lenh' },
   'an-sinh-xa-hoi': V(['bao-hiem', 'quy', 'tui-do', 'y-te', 'huan-chuong', 'trai-tim']),
-  'canh-tranh': V(['bieu-do', 'kinh-lup', 'bat-tay', 'vuong-mien', 'sap-nhap', 'mat-na', 'bua']),
+  'canh-tranh': V(['bieu-do', 'kinh-lup', 'bat-tay', 'vuong-mien', 'sap-nhap', 'mat-na', 'ho-so']),
   'dan-su': V(['sach', 'nguoi', 'nhom-nguoi', 'hop-dong', 'lich', 'dong-xu', 'chia-khoa', 'nha', 'khoa', 'khien', 'gia-pha', 'di-chuc', 'can-can']),
   'dan-su-2': V(['xich', 'dong-ho', 'khien', 'khoa', 'hop-dong', 'dong-xu', 'chia-khoa', 'nha', 'tui-do', 'canh-bao', 'can-can', 'nguoi', 'cay']),
   'dat-dai': V(['sach', 'ban-do', 'ruong', 'con-dau', 'dong-xu', 'nguoi', 'giong-cay', 'tranh-chap']),
   'dau-tu': V(['bieu-do', 'khien', 'thu-tuc', 'tru-so', 'hop-dong', 'nha-may', 'may-bay']),
   'hanh-chinh': V(['tru-so', 'sach', 'cuon-lap-hien', 'cot-tru', 'quy-trinh', 'thu-tuc', 'an-trien', 'lang-xa', 'the-id', 'nhom-nguoi', 'ho-chieu', 'cam', 'bien-ban', 'cong-tay', 'khien']),
-  'hinh-su': V(['sach', 'ban-do', 'canh-bao', 'khoi', 'muc-tieu', 'bien-ban', 'nguoi', 'bong-den', 'quy-trinh', 'nhom-nguoi', 'khien', 'bua', 'can-can', 'khoa', 'tre-em']),
+  'hinh-su': V(['sach', 'ban-do', 'canh-bao', 'khoi', 'muc-tieu', 'bien-ban', 'nguoi', 'bong-den', 'quy-trinh', 'nhom-nguoi', 'khien', 'ho-so', 'can-can', 'khoa', 'tre-em']),
   'lao-dong-2': V(['bat-tay', 'nu', 'nha', 'ho-chieu', 'may-bay']),
   'lao-dong': V(['sach', 'bat-tay', 'hop-dong', 'nhom-nguoi', 'cuon-lap-hien', 'mu-bao-ho', 'canh-bao', 'tranh-chap', 'loa']),
-  'ly-luan-nn-pl': V(['vuong-mien', 'ban-do', 'cot-tru', 'sach', 'dieu-luat', 'bat-tay', 'bua', 'canh-bao']),
+  'ly-luan-nn-pl': V(['vuong-mien', 'ban-do', 'cot-tru', 'sach', 'dieu-luat', 'bat-tay', 'ho-so', 'canh-bao']),
   'ngan-hang': V(['sach', 'an-trien', 'tru-so', 'quy', 'dong-xu', 'the-id', 'ngoai-te']),
   'so-huu-tri-tue': V(['sach', 'but-long', 'ban-quyen', 'loa', 'hop-dong', 'canh-bao', 'bong-den', 'nhan-hieu', 'ban-do', 'con-dau', 'chia-khoa', 'cam', 'giong-cay', 'khien']),
   'tai-chinh-doanh-nghiep': V(['sach', 'dong-xu', 'bieu-do', 'kinh-lup', 'sap-nhap']),
   'tai-chinh': V(['sach', 'quy-trinh', 'but-long', 'thu-tuc', 'quy', 'thue', 'tau', 'canh-bao', 'bieu-do', 'tui-do', 'nha', 'dong-xu', 'kinh-lup']),
   'tai-san-tri-tue': V(['bong-den', 'quy-trinh', 'dong-xu', 'bat-tay', 'khien']),
-  'thuong-mai-1': V(['tui-do', 'nha', 'bat-tay', 'nhom-nguoi', 'co-phieu', 'thu-tuc', 'tru-so', 'sap-nhap', 'nha-may', 'gia-pha', 'ruong', 'pha-san', 'bua']),
-  'thuong-mai': V(['tui-do', 'bat-tay', 'loa', 'tau', 'bua', 'canh-bao', 'tranh-chap', 'can-can']),
-  'to-tung-dan-su': V(['sach', 'tru-so', 'nhom-nguoi', 'kinh-lup', 'dong-ho', 'dong-xu', 'bua', 'quy-trinh', 'dieu-luat']),
+  'thuong-mai-1': V(['tui-do', 'nha', 'bat-tay', 'nhom-nguoi', 'co-phieu', 'thu-tuc', 'tru-so', 'sap-nhap', 'nha-may', 'gia-pha', 'ruong', 'pha-san', 'ho-so']),
+  'thuong-mai': V(['tui-do', 'bat-tay', 'loa', 'tau', 'ho-so', 'canh-bao', 'tranh-chap', 'can-can']),
+  'to-tung-dan-su': V(['sach', 'tru-so', 'nhom-nguoi', 'kinh-lup', 'dong-ho', 'dong-xu', 'ho-so', 'quy-trinh', 'dieu-luat']),
   'xay-dung-vbpl': V(['cuon-lap-hien', 'quy-trinh', 'but-long', 'bien-ban', 'an-trien', 'kinh-lup']),
 };
 

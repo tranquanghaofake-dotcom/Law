@@ -49,7 +49,7 @@
 {:else if name === 'thua-dat'}
   <!-- thửa đất, cột mốc, sổ chứng nhận -->
   <path class="f-leaf2 k" d="M14 74l30-14h54l-14 26H14z" stroke-width="1.3" /><path class="k" d="M24 74l26-10M36 79l34-14M52 82l32-14" stroke-width=".8" />
-  <path class="f-cream k" d="M14 74h70v8H14z" stroke-width="1" /><path class="k" d="M44 60v-14" stroke-width="1.4" /><path class="f-seal k" d="M44 46h14l-4 4l4 4H44z" stroke-width="1" />
+  <path class="f-cream k" d="M14 74h70v8H14z" stroke-width="1" /><path class="k" d="M44 60v-14" stroke-width="1.4" /><path class="f-acc k" d="M44 46h14l-4 4l4 4H44z" stroke-width="1" />
   <path class="k" d="M14 74V62M84 86V74" stroke-width="2" />
   <rect class="f-seal2 k" x="106" y="26" width="34" height="46" rx="2" stroke-width="1.3" /><circle class="kg" cx="123" cy="42" r="7" stroke-width="1" /><path class="kg" d="M123 35v14M116 42h14M110 58h26M112 64h22" stroke-width=".9" />
   <path class="ka" d="M92 52h10l-3-3" stroke-width="1.4" />
@@ -102,7 +102,7 @@
   <circle class="f-void k" cx="82" cy="84" r="6" stroke-width="1.2" /><circle class="f-void k" cx="122" cy="84" r="6" stroke-width="1.2" /><path class="k" d="M76 62h28M76 68h18" stroke-width=".9" />
   <path class="f-cream k" d="M70 14h34v30H70z" stroke-width="1.1" /><path class="k" d="M75 21h24M75 27h24M75 33h14" stroke-width=".8" /><circle class="f-seal" cx="96" cy="37" r="3" />
 {:else if name === 'khoi-kien'}
-  <!-- đơn khởi kiện có dấu, toà án, búa -->
+  <!-- đơn khởi kiện có dấu, toà án -->
   <rect class="f-cream k" x="14" y="16" width="42" height="64" stroke-width="1.3" /><rect class="f-seal" x="14" y="16" width="42" height="9" /><path class="kp" d="M20 20.5h18" stroke-width="1" /><path class="k" d="M20 33h30M20 40h30M20 47h30M20 54h18" stroke-width=".9" /><circle class="f-seal k" cx="44" cy="68" r="6" stroke-width="1" /><path class="kp" d="M41 68l2 2l4-4" stroke-width="1.2" />
   <path class="f-card k" d="M76 44l32-18l32 18z" stroke-width="1.3" /><rect class="f-acc k" x="76" y="44" width="64" height="5" stroke-width="1" /><g class="f-card k" stroke-width="1"><rect x="82" y="49" width="6" height="30" /><rect x="96" y="49" width="6" height="30" /><rect x="114" y="49" width="6" height="30" /><rect x="128" y="49" width="6" height="30" /></g><rect class="f-card k" x="72" y="79" width="72" height="6" stroke-width="1" />
   <path class="ka" d="M60 62h10l-3-3" stroke-width="1.4" />
