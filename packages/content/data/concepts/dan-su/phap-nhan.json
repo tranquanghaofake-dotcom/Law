@@ -74,6 +74,11 @@
     {
      "text": "Doanh nghiệp tư nhân",
      "answer": "right"
+    },
+    {
+     "text": "Hộ kinh doanh cá thể đăng ký tại cơ quan thuế",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 74 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Theo điều kiện tài sản độc lập (điểm c khoản 1 Điều 74)."

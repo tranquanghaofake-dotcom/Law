@@ -75,6 +75,16 @@
     {
      "text": "Hợp đồng phải được công chứng, chứng thực",
      "answer": "right"
+    },
+    {
+     "text": "Người xác lập giao dịch có năng lực hành vi dân sự phù hợp với giao dịch đó",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 117 Bộ luật Dân sự 2015"
+    },
+    {
+     "text": "Giao dịch chuyển nhượng bất động sản phải lập thành văn bản theo quy định của luật",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 117 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Khoản 1, 2 Điều 117."

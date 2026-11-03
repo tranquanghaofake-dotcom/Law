@@ -74,6 +74,11 @@
     {
      "text": "Tiêu hủy tài sản",
      "answer": "right"
+    },
+    {
+     "text": "Chủ nhà tự ở và sử dụng căn nhà của mình",
+     "answer": "left",
+     "basis": "Điều 158 Bộ luật Dân sự 2015"
     }
    ],
    "explain": "Điều 158, 189, 192."
