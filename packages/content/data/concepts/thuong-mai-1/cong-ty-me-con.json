@@ -29,9 +29,9 @@
    "q": "Công ty được coi là công ty mẹ khi sở hữu bao nhiêu vốn điều lệ của công ty khác?",
    "options": [
     "Trên 50%",
-    "Trên 40%",
+    "Dưới 50%",
     "Đúng 50%",
-    "Đúng 100%"
+    "Dưới 30%"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 1 Điều 195.",
