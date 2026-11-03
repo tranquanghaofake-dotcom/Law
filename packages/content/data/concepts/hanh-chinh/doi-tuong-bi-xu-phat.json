@@ -75,6 +75,16 @@
     {
      "text": "Người 17 tuổi vô ý vi phạm",
      "answer": "left"
+    },
+    {
+     "text": "Tổ chức làm ô nhiễm môi trường trong hoạt động sản xuất",
+     "answer": "left",
+     "basis": "Điểm b khoản 1 Điều 5 Luật Xử lý vi phạm hành chính"
+    },
+    {
+     "text": "Người 13 tuổi vi phạm hành chính về trật tự công cộng",
+     "answer": "right",
+     "basis": "Điểm a khoản 1 Điều 5 Luật Xử lý vi phạm hành chính"
     }
    ],
    "explain": "Điều 5."

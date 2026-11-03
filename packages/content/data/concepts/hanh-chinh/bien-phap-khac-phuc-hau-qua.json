@@ -75,6 +75,16 @@
     {
      "text": "Buộc thu hồi sản phẩm kém chất lượng",
      "answer": "left"
+    },
+    {
+     "text": "Buộc tiêu hủy hàng hóa gây hại cho sức khỏe con người",
+     "answer": "left",
+     "basis": "Điều 33 Luật Xử lý vi phạm hành chính"
+    },
+    {
+     "text": "Tước quyền sử dụng giấy phép lái xe có thời hạn",
+     "answer": "right",
+     "basis": "Điểm c khoản 1 Điều 21 Luật Xử lý vi phạm hành chính"
     }
    ],
    "explain": "Điều 21, 28."

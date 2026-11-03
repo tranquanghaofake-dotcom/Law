@@ -74,6 +74,16 @@
     {
      "text": "Vi phạm về hàng giả",
      "answer": "right"
+    },
+    {
+     "text": "Vi phạm về trật tự công cộng",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 6 Luật Xử lý vi phạm hành chính (không thuộc danh mục 02 năm)"
+    },
+    {
+     "text": "Vi phạm về kế toán",
+     "answer": "right",
+     "basis": "Điểm a khoản 1 Điều 6 Luật Xử lý vi phạm hành chính"
     }
    ],
    "explain": "Điều 6."

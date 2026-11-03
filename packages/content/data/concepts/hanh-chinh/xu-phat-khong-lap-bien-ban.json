@@ -75,6 +75,16 @@
     {
      "text": "Vi phạm phát hiện qua camera",
      "answer": "right"
+    },
+    {
+     "text": "Cảnh cáo tại chỗ đối với cá nhân vi phạm",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 56 Luật Xử lý vi phạm hành chính"
+    },
+    {
+     "text": "Phạt tiền 800.000 đồng đối với cá nhân vi phạm",
+     "answer": "right",
+     "basis": "Điểm a khoản 1 Điều 56 Luật Xử lý vi phạm hành chính (trên 500.000 đồng)"
     }
    ],
    "explain": "Điều 56, 57."

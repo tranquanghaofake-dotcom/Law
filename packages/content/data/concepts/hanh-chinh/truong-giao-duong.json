@@ -70,6 +70,16 @@
     {
      "text": "Người 15 tuổi phạm tội giết người (Điều 123)",
      "answer": "right"
+    },
+    {
+     "text": "Người 12 tuổi có hành vi có dấu hiệu của tội đặc biệt nghiêm trọng",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 92 Luật Xử lý vi phạm hành chính"
+    },
+    {
+     "text": "Người 16 tuổi phạm tội trộm cắp tài sản",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 12 Bộ luật Hình sự 2015"
     }
    ],
    "explain": "Điều 92 Luật XLVPHC; Điều 12 BLHS."

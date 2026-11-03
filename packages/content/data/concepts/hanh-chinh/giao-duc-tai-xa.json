@@ -69,6 +69,21 @@
     {
      "text": "Cách ly tại cơ sở tập trung",
      "answer": "right"
+    },
+    {
+     "text": "Người 13 tuổi có hành vi có dấu hiệu của tội rất nghiêm trọng do cố ý",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 90 Luật Xử lý vi phạm hành chính"
+    },
+    {
+     "text": "Người 14 tuổi có hành vi có dấu hiệu của tội nghiêm trọng do cố ý",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 90 Luật Xử lý vi phạm hành chính"
+    },
+    {
+     "text": "Người 13 tuổi có hành vi có dấu hiệu của tội đặc biệt nghiêm trọng",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 92 Luật Xử lý vi phạm hành chính"
     }
    ],
    "explain": "Điều 89, 91."
