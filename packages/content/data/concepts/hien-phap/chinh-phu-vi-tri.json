@@ -29,9 +29,9 @@
    "q": "Theo Điều 94 Hiến pháp 2013, Chính phủ là gì?",
    "options": [
     "Cơ quan hành chính nhà nước cao nhất, thực hiện quyền hành pháp, là cơ quan chấp hành của Quốc hội",
-    "Cơ quan quyền lực nhà nước cao nhất",
-    "Cơ quan đứng đầu Nhà nước",
-    "Cơ quan thường trực của Quốc hội"
+    "Cơ quan quyền lực nhà nước cao nhất, thực hiện quyền lập pháp, là cơ quan của Quốc hội",
+    "Cơ quan đứng đầu Nhà nước, thực hiện quyền lập pháp, quyền tư pháp và quyền hành pháp của Nhà nước",
+    "Cơ quan thường trực của Quốc hội, thực hiện quyền lập pháp và quyền giám sát tối cao"
    ],
    "answer": 0,
    "explain": "Điều 94.",
@@ -47,8 +47,8 @@
    "options": [
     "Hành pháp",
     "Lập pháp",
-    "Tư pháp",
-    "Lập hiến"
+    "Kiểm sát",
+    "Kiểm soát"
    ],
    "answer": 0,
    "explain": "Điều 94; khoản 3 Điều 2.",

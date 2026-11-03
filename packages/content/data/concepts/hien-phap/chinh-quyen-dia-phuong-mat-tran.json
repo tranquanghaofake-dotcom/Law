@@ -30,9 +30,9 @@
    "q": "Hội đồng nhân dân, Ủy ban nhân dân thực hiện chế độ gì với Mặt trận Tổ quốc theo khoản 1 Điều 116?",
    "options": [
     "Thông báo tình hình của địa phương, lắng nghe ý kiến, kiến nghị",
-    "Chỉ đạo hoạt động của Mặt trận",
-    "Phê duyệt nhân sự Mặt trận",
-    "Cấp phép hoạt động cho Mặt trận"
+    "Chỉ đạo toàn diện mọi hoạt động của Mặt trận Tổ quốc địa phương",
+    "Phê duyệt nhân sự Mặt trận Tổ quốc các cấp trong địa phương",
+    "Cấp phép hoạt động cho Mặt trận Tổ quốc và các đoàn thể địa phương"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 116.",
@@ -47,9 +47,9 @@
    "q": "Ai được mời tham dự các kỳ họp Hội đồng nhân dân theo khoản 2 Điều 116?",
    "options": [
     "Chủ tịch Ủy ban Mặt trận Tổ quốc và người đứng đầu tổ chức chính trị - xã hội ở địa phương",
-    "Đại sứ nước ngoài",
-    "Giám đốc các doanh nghiệp",
-    "Đại biểu Quốc hội của tỉnh khác"
+    "Đại sứ nước ngoài và đại diện các tổ chức quốc tế đang công tác tại địa phương này",
+    "Giám đốc các doanh nghiệp trên địa bàn tỉnh, thành phố và các cơ quan trung ương đóng tại đó",
+    "Đại biểu Quốc hội của tỉnh khác và các đại biểu HĐND của tỉnh bên cạnh đến dự"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 116.",

@@ -47,9 +47,9 @@
    "q": "Hội đồng bầu cử quốc gia có bao nhiêu thành viên theo Luật Bầu cử?",
    "options": [
     "Từ mười lăm đến hai mươi mốt thành viên",
-    "Từ năm đến chín thành viên",
-    "Đúng mười một thành viên",
-    "Không giới hạn"
+    "Từ năm đến chín thành viên và các thư ký",
+    "Đúng mười một thành viên trong mỗi kỳ",
+    "Không giới hạn số lượng thành viên"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 12 Luật Bầu cử.",

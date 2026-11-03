@@ -29,9 +29,9 @@
    "q": "Luật thông thường phải được bao nhiêu đại biểu tán thành?",
    "options": [
     "Quá nửa tổng số đại biểu Quốc hội",
-    "Quá nửa số đại biểu có mặt",
-    "Hai phần ba tổng số đại biểu",
-    "Ba phần tư tổng số đại biểu"
+    "Quá nửa số đại biểu có mặt tại phiên",
+    "Hai phần ba tổng số đại biểu Quốc hội",
+    "Ba phần tư tổng số đại biểu Quốc hội"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 85.",
@@ -102,9 +102,9 @@
    "q": "Quốc hội 480 đại biểu biểu quyết bãi nhiệm một đại biểu: 300 tán thành. Kết quả?",
    "options": [
     "Không thông qua, vì 300 chưa đạt hai phần ba tổng số (320)",
-    "Thông qua, vì quá nửa tổng số",
-    "Thông qua, vì quá nửa số có mặt",
-    "Phải trưng cầu ý dân"
+    "Thông qua, vì quá nửa tổng số đại biểu có mặt và tán thành",
+    "Thông qua, vì quá nửa số đại biểu có mặt và đã biểu quyết",
+    "Phải trưng cầu ý dân trước khi quyết định bãi nhiệm đại biểu"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 85: bãi nhiệm đại biểu cần ít nhất 2/3 tổng số: 2/3 × 480 = 320.",

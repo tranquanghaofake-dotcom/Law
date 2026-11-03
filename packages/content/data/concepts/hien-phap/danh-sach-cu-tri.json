@@ -48,9 +48,9 @@
    "q": "Người đang bị tạm giam có được ghi tên vào danh sách cử tri không?",
    "options": [
     "Có, để bầu đại biểu Quốc hội và Hội đồng nhân dân cấp tỉnh nơi bị tạm giam",
-    "Không, vì đang bị tạm giam",
-    "Chỉ được bầu Hội đồng nhân dân cấp xã",
-    "Chỉ khi được Tòa án cho phép"
+    "Không, vì đang bị tạm giam và chưa có bản án có hiệu lực pháp luật",
+    "Chỉ được bầu Hội đồng nhân dân cấp xã nơi có bản án đang thi hành",
+    "Chỉ khi được Tòa án cho phép bằng văn bản và có xác nhận của cơ quan điều tra"
    ],
    "answer": 0,
    "explain": "Khoản 5 Điều 29.",

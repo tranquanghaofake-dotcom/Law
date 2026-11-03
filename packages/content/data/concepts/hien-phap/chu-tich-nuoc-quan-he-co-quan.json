@@ -29,9 +29,9 @@
    "q": "Chủ tịch nước có quyền tham dự phiên họp của cơ quan nào theo Điều 90?",
    "options": [
     "Ủy ban thường vụ Quốc hội và Chính phủ",
-    "Tòa án nhân dân tối cao",
-    "Hội đồng nhân dân tỉnh",
-    "Ban chấp hành Trung ương"
+    "Tòa án nhân dân tối cao và tòa án cấp tỉnh",
+    "Hội đồng nhân dân tỉnh và thành phố",
+    "Ban chấp hành Trung ương Đảng và các ban"
    ],
    "answer": 0,
    "explain": "Điều 90.",

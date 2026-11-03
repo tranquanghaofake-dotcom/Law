@@ -30,9 +30,9 @@
    "q": "Quan hệ nào thuộc đối tượng điều chỉnh của ngành luật Hiến pháp?",
    "options": [
     "Quan hệ giữa Quốc hội và Chính phủ trong việc báo cáo công tác",
-    "Hợp đồng mua bán nhà giữa hai cá nhân",
-    "Quan hệ lao động giữa doanh nghiệp và người lao động",
-    "Quan hệ cho vay giữa ngân hàng và khách hàng"
+    "Hợp đồng mua bán nhà giữa hai cá nhân trong cùng khu dân cư",
+    "Quan hệ lao động giữa doanh nghiệp và người lao động tại địa phương",
+    "Quan hệ cho vay giữa ngân hàng và khách hàng cá nhân trong nước"
    ],
    "answer": 0,
    "explain": "Quan hệ tổ chức bộ máy nhà nước thuộc luật Hiến pháp.",
@@ -47,9 +47,9 @@
    "q": "Đặc điểm của các quan hệ xã hội thuộc đối tượng điều chỉnh của luật Hiến pháp là gì?",
    "options": [
     "Cơ bản và quan trọng nhất, mang tính nền tảng",
-    "Chỉ là quan hệ tài sản",
-    "Chỉ phát sinh trong tố tụng",
-    "Chỉ giữa các cá nhân với nhau"
+    "Chỉ là quan hệ tài sản và thương mại thông thường",
+    "Chỉ phát sinh trong tố tụng hình sự và dân sự",
+    "Chỉ giữa các cá nhân với nhau trong xã hội"
    ],
    "answer": 0,
    "explain": "Quan điểm phổ biến.",

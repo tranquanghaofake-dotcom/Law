@@ -30,9 +30,9 @@
    "q": "Ủy ban nhân dân do ai bầu?",
    "options": [
     "Hội đồng nhân dân cùng cấp",
-    "Nhân dân địa phương",
+    "Nhân dân địa phương bầu",
     "Ủy ban nhân dân cấp trên",
-    "Thủ tướng"
+    "Thủ tướng Chính phủ hiện nay"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 114.",
@@ -47,9 +47,9 @@
    "q": "Ủy ban nhân dân chịu trách nhiệm trước ai?",
    "options": [
     "Hội đồng nhân dân và cơ quan hành chính nhà nước cấp trên",
-    "Chỉ Hội đồng nhân dân",
-    "Chỉ Chính phủ",
-    "Chỉ Nhân dân địa phương"
+    "Chỉ Hội đồng nhân dân cùng cấp và thường trực của mình khác",
+    "Chỉ Chính phủ trung ương và các bộ ngành liên quan",
+    "Chỉ Nhân dân địa phương và các tổ chức đoàn thể tại đó"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 114.",

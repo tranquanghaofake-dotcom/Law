@@ -48,9 +48,9 @@
    "q": "Cơ quan nào ấn định số đơn vị bầu cử đại biểu Quốc hội?",
    "options": [
     "Hội đồng bầu cử quốc gia, theo đề nghị của Ủy ban bầu cử ở tỉnh, thành phố",
-    "Quốc hội",
-    "Ủy ban nhân dân tỉnh",
-    "Mặt trận Tổ quốc"
+    "Quốc hội và Ủy ban thường vụ Quốc hội theo đề nghị của tỉnh, thành phố",
+    "Ủy ban nhân dân tỉnh và Hội đồng nhân dân tỉnh theo đề nghị của Ủy ban bầu cử tỉnh",
+    "Mặt trận Tổ quốc Việt Nam và các tổ chức chính trị - xã hội khác"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 10.",

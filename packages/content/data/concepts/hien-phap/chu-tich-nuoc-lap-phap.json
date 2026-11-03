@@ -29,9 +29,9 @@
    "q": "Chủ tịch nước được đề nghị xem xét lại loại văn bản nào?",
    "options": [
     "Pháp lệnh của Ủy ban thường vụ Quốc hội",
-    "Luật của Quốc hội",
-    "Hiến pháp",
-    "Nghị quyết của Quốc hội"
+    "Luật của Quốc hội và các văn bản dưới luật",
+    "Hiến pháp nước Cộng hòa xã hội chủ nghĩa",
+    "Nghị quyết của Quốc hội tại kỳ họp"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 88.",
@@ -46,9 +46,9 @@
    "q": "Thời hạn Chủ tịch nước đề nghị xem xét lại pháp lệnh là bao lâu?",
    "options": [
     "Mười ngày kể từ ngày pháp lệnh được thông qua",
-    "Mười lăm ngày",
-    "Ba mươi ngày",
-    "Bảy ngày"
+    "Mười lăm ngày kể từ ngày pháp lệnh được ban hành",
+    "Ba mươi ngày kể từ ngày pháp lệnh được thông qua",
+    "Bảy ngày kể từ ngày pháp lệnh được thông qua"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 88.",

@@ -29,9 +29,9 @@
    "q": "Hội thẩm tham gia xét xử ở cấp nào theo khoản 1 Điều 103?",
    "options": [
     "Sơ thẩm (trừ thủ tục rút gọn)",
-    "Phúc thẩm",
-    "Giám đốc thẩm",
-    "Mọi cấp"
+    "Phúc thẩm và giám đốc thẩm",
+    "Giám đốc thẩm và tái thẩm",
+    "Mọi cấp xét xử và thi hành án"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 103.",

@@ -46,9 +46,9 @@
    "q": "Phó Chủ tịch nước do ai bầu?",
    "options": [
     "Quốc hội, trong số đại biểu Quốc hội",
-    "Chủ tịch nước bổ nhiệm",
-    "Ủy ban thường vụ Quốc hội",
-    "Nhân dân bầu trực tiếp"
+    "Chủ tịch nước bổ nhiệm theo đề nghị",
+    "Ủy ban thường vụ Quốc hội và Chính phủ",
+    "Nhân dân bầu trực tiếp tại địa phương"
    ],
    "answer": 0,
    "explain": "Điều 92.",

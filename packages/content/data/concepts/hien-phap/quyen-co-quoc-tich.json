@@ -31,7 +31,7 @@
     "Không, trừ trường hợp quy định tại Điều 31",
     "Có, bất cứ khi nào vi phạm pháp luật",
     "Có, nếu cư trú ở nước ngoài trên 5 năm",
-    "Không bao giờ"
+    "Không bao giờ bị tước quốc tịch khi đang ở nước"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 2.",
@@ -46,9 +46,9 @@
    "q": "Khoản 2 Điều 2 Luật Quốc tịch khẳng định điều gì về các dân tộc?",
    "options": [
     "Mọi thành viên của các dân tộc đều bình đẳng về quyền có quốc tịch Việt Nam",
-    "Dân tộc Kinh được ưu tiên nhập quốc tịch",
-    "Dân tộc thiểu số có thể có hai quốc tịch",
-    "Mỗi dân tộc có quốc tịch riêng"
+    "Dân tộc Kinh được ưu tiên nhập quốc tịch theo quy định hiện hành",
+    "Dân tộc thiểu số có thể có hai quốc tịch theo nguyện vọng của gia đình",
+    "Mỗi dân tộc có quốc tịch riêng và không thuộc quốc tịch Việt Nam trong cộng đồng"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 2.",
