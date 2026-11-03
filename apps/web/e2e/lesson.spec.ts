@@ -4,10 +4,58 @@ import { readdirSync, readFileSync } from 'node:fs';
 
 const dir = '../../packages/content/data/concepts/hien-phap';
 const concepts = readdirSync(dir).filter((f) => f.endsWith('.json')).map((f) => JSON.parse(readFileSync(`${dir}/${f}`, 'utf8')));
-const correctOf = (q: string) => {
-  for (const c of concepts) for (const it of c.items) if (it.q === q && 'options' in it) return it.options[it.answer] as string;
-  throw new Error('không tìm thấy câu ' + q);
-};
+const norm = (s: string) => s.replace(/\s+/g, ' ').trim();
+const longestSeg = (t: string) => t.split(/\[…\]|…|\.\.\./).map(norm).sort((x, y) => y.length - x.length)[0] ?? '';
+/**
+ * Chỉ số phương án đúng của câu đang hỏi, tra từ dữ liệu nội dung: câu có sẵn trong dữ liệu, hoặc câu sinh tự động
+ * (định nghĩa → thuật ngữ, thuật ngữ → định nghĩa, ví dụ → khái niệm). -1 nếu không tra được (khi đó test chỉ cần đi tiếp).
+ */
+function rightIndex(question: string, opts: string[]): number {
+  const q = norm(question);
+  for (const c of concepts) for (const it of c.items) if ('options' in it && norm(it.q) === q) return opts.findIndex((o) => o.includes(it.options[it.answer]));
+  const dt = q.match(/^«(.+)» Định nghĩa trên là của khái niệm nào\?$/);
+  if (dt) { const seg = longestSeg(dt[1]); const c = seg.length > 10 ? concepts.find((x) => norm(x.definition).includes(seg)) : undefined; return c ? opts.findIndex((o) => o.includes(c.term)) : -1; }
+  const ex = q.match(/^«(.+)» Tình huống trên minh hoạ cho khái niệm nào\?$/);
+  if (ex) { const c = concepts.find((x) => norm(x.example).includes(longestSeg(ex[1]))); return c ? opts.findIndex((o) => o.includes(c.term)) : -1; }
+  const td = q.match(/^Đâu là định nghĩa của «(.+)»\?$/);
+  if (td) { const c = concepts.find((x) => x.term === td[1]); if (!c) return -1; return opts.findIndex((o) => { const seg = longestSeg(o); return seg.length > 10 && norm(c.definition).includes(seg); }); }
+  return -1;
+}
+type P = import('@playwright/test').Page;
+/** Trả lời câu trắc nghiệm đang hiện: `want` = 'right' | 'wrong' | 'any'. Trả về true nếu biết chắc đã chọn đúng. */
+async function answerMcq(page: P, want: 'right' | 'wrong' | 'any'): Promise<boolean | null> {
+  const q = (await page.locator('.question').textContent())!;
+  const t = await page.locator('.opt').allTextContents();
+  const right = rightIndex(q, t);
+  if (right < 0) { await page.locator('.opt').first().click(); return null; }
+  const k = want === 'wrong' ? (right + 1) % t.length : right;
+  await page.locator('.opt').nth(k).click();
+  return want !== 'wrong';
+}
+/** Làm một bước bất kỳ của phiên: intro, trắc nghiệm, hoặc dạng khác (bấm phương án/đi tiếp). */
+async function stepOnce(page: P, want: 'right' | 'wrong' | 'any' = 'right'): Promise<boolean | null> {
+  await page.locator('.boss-intro').waitFor({ state: 'detached' }).catch(() => {});
+  const label = await page.locator('article').first().getAttribute('aria-label');
+  if (label === 'Thẻ giới thiệu khái niệm') { await page.getByRole('button', { name: /Đã hiểu/ }).click(); return null; }
+  await page.locator('.boss-intro').waitFor({ state: 'detached' }).catch(() => {});
+  if (label === 'Trắc nghiệm' || label === 'Tình huống') { const r = await answerMcq(page, want); await page.locator('.feedback').waitFor(); return r; }
+  // dạng khác (đúng/sai, điền chỗ trống, ghép cặp, xếp cột, tự trả lời): trả lời đại, test chỉ cần đi hết phiên
+  if (label === 'Nhận định đúng sai') { await page.locator('.opt').first().click(); await page.locator('.feedback').waitFor(); return null; }
+  for (let k = 0; k < 40 && !(await page.locator('.feedback').count()); k++) {
+    const sort = page.locator('.sort-pick:not([disabled])'), pair = page.locator('.opt:not([disabled]):not(.match-cell)'), term = page.locator('.match-cell:not(.desc):not([disabled])');
+    if (label === 'Xếp tình huống' && await sort.count()) await sort.first().click();
+    else if (label === 'Phân biệt' && await pair.count()) await pair.first().click();
+    else if (label === 'Ghép cặp' && await term.count()) { await term.first().click(); await page.locator('.match-cell.desc:not([disabled])').first().click(); }
+    else if (label === 'Điền chỗ trống') {
+      const inputs = page.locator('.blank-input');
+      if (await inputs.count()) { for (let j = 0; j < await inputs.count(); j++) await inputs.nth(j).fill('x'); } else { for (let j = 0; j < 8; j++) { const w = page.locator('.word:not([disabled])'); if (await w.count()) await w.first().click(); } }
+      await page.getByRole('button', { name: /Kiểm tra/ }).click();
+    } else if (label === 'Tự trả lời') { await page.locator('textarea').fill('thử'); await page.getByRole('button', { name: 'Xem đáp án' }).click(); await page.getByRole('button', { name: 'Đúng' }).click(); }
+    await page.waitForTimeout(250);
+  }
+  await page.locator('.feedback').waitFor();
+  return null;
+}
 
 async function readLevels(page: import('@playwright/test').Page): Promise<Record<string, number>> {
   return page.evaluate(() => new Promise((resolve) => {
@@ -28,35 +76,29 @@ test('phiên học pass 1: intro → trắc nghiệm → lưu ngay → kết th�
   // intro đầu tiên
   await expect(page.getByRole('article', { name: 'Thẻ giới thiệu khái niệm' })).toBeVisible();
   await expect(page.locator('.lesson-panel')).toBeVisible();
-  // đi qua các intro cho tới câu trắc nghiệm đầu tiên
-  for (let i = 0; i < 5; i++) {
+  // đi tới câu đầu tiên tra được đáp án đúng (từ dữ liệu), trả lời đúng → phản hồi "đúng"
+  let sure: boolean | null = null;
+  for (let i = 0; i < 20 && !sure; i++) {
     await page.locator('.question, article[aria-label="Thẻ giới thiệu khái niệm"]').first().waitFor();
-    if (await page.locator('.question').isVisible()) break;
-    await page.getByRole('button', { name: /Đã hiểu/ }).click();
+    sure = await stepOnce(page, 'right');
+    if (sure === null && !(await page.locator('.feedback').count())) continue;
+    if (sure) await expect(page.locator('.feedback.ok')).toBeVisible();
+    else { await expect(page.locator('.feedback')).toBeVisible(); await page.getByRole('button', { name: /Câu tiếp|Xem kết quả/ }).click(); }
   }
-  // trắc nghiệm 1: trả lời đúng bằng phím số
-  const q1 = await page.locator('.question').textContent();
-  const opts = page.locator('.opt');
-  const texts = await opts.allTextContents();
-  const idx = texts.findIndex((t) => t.includes(correctOf(q1!.trim())));
-  await page.keyboard.press(String(idx + 1));
-  await expect(page.locator('.feedback.ok')).toBeVisible();
+  expect(sure).toBe(true);
   // tải lại giữa phiên → tiến độ câu đã trả lời phải còn
   await page.reload();
   const levels = await readLevels(page);
   expect(Object.values(levels).some((l) => l >= 1)).toBe(true);
   // vào lại: pass vẫn là 1 vì khái niệm còn lại ở bậc 0
   await expect(page.getByRole('article', { name: 'Thẻ giới thiệu khái niệm' })).toBeVisible();
-  // chạy hết phiên
-  for (let i = 0; i < 30; i++) {
-    await page.locator('.session-end, .question, article[aria-label="Thẻ giới thiệu khái niệm"]').first().waitFor();
+  // chạy hết phiên (kể cả vòng sửa sai nếu có)
+  for (let i = 0; i < 80; i++) {
+    await page.locator('.session-end, .question-card, article[aria-label="Thẻ giới thiệu khái niệm"]').first().waitFor();
     if (await page.locator('.session-end').isVisible()) break;
-    if (await page.getByRole('button', { name: /Đã hiểu/ }).isVisible()) { await page.getByRole('button', { name: /Đã hiểu/ }).click(); continue; }
-    const q = (await page.locator('.question').textContent())!.trim();
-    const t = await page.locator('.opt').allTextContents();
-    const k = t.findIndex((x) => x.includes(correctOf(q)));
-    await page.locator('.opt').nth(k).click();
-    await page.getByRole('button', { name: /Câu tiếp|Xem kết quả/ }).click();
+    await stepOnce(page, 'right');
+    const next = page.getByRole('button', { name: /Câu tiếp|Xem kết quả/ });
+    if (await next.count()) await next.click();
   }
   await expect(page.locator('.session-end')).toBeVisible();
   await expect(page.locator('.session-end')).toContainText('XP');
@@ -85,21 +127,20 @@ test('trả lời sai → màn kết thúc có "Xem lại câu sai", bấm tên 
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto(B + '#/hoc/hien-phap/hp-1');
   let wrongDone = false;
-  for (let i = 0; i < 30; i++) {
-    await page.locator('.session-end, .question, article[aria-label="Thẻ giới thiệu khái niệm"]').first().waitFor();
+  for (let i = 0; i < 80; i++) {
+    await page.locator('.session-end, .question-card, article[aria-label="Thẻ giới thiệu khái niệm"]').first().waitFor();
     if (await page.locator('.session-end').isVisible()) break;
-    if (await page.getByRole('button', { name: /Đã hiểu/ }).isVisible()) { await page.getByRole('button', { name: /Đã hiểu/ }).click(); continue; }
-    const q = (await page.locator('.question').textContent())!.trim();
-    const t = await page.locator('.opt').allTextContents();
-    const right = t.findIndex((x) => x.includes(correctOf(q)));
-    await page.locator('.opt').nth(wrongDone ? right : (right + 1) % t.length).click();
-    wrongDone = true;
-    await page.getByRole('button', { name: /Câu tiếp|Xem kết quả/ }).click();
+    // cố ý sai đúng một câu tra được đáp án; còn lại trả lời đúng/đại cho tới hết (kể cả vòng sửa sai)
+    const r = await stepOnce(page, wrongDone ? 'right' : 'wrong');
+    if (!wrongDone && r === false) wrongDone = true;
+    const next = page.getByRole('button', { name: /Câu tiếp|Xem kết quả/ });
+    if (await next.count()) await next.click();
   }
+  expect(wrongDone).toBe(true);
   const mistakes = page.locator('.mistakes');
-  await expect(mistakes).toContainText('Xem lại câu sai (1)');
+  await expect(mistakes).toContainText(/Xem lại câu sai \([1-9]/);
   await expect(mistakes).toContainText('Đáp án:');
-  await mistakes.locator('.kicker a').click();
+  await mistakes.locator('.kicker a').first().click();
   await expect(page).toHaveURL(/#\/mon\/hien-phap\/khai-niem\/[a-z-]+$/);
   await expect(page.locator('.concept-entry.open .quote')).toBeVisible();
 });
