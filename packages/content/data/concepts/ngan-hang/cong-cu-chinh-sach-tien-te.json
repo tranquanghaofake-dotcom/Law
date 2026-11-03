@@ -32,9 +32,9 @@
    "q": "Ai quyết định việc sử dụng công cụ thực hiện chính sách tiền tệ quốc gia?",
    "options": [
     "Thống đốc Ngân hàng Nhà nước",
-    "Quốc hội",
-    "Bộ trưởng Bộ Tài chính",
-    "Chủ tịch nước"
+    "Quốc hội quyết định ban hành",
+    "Bộ trưởng Bộ Tài chính cho phép",
+    "Chủ tịch nước ký quyết định"
    ],
    "answer": 0,
    "explain": "Điều 10.",

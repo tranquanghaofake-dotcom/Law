@@ -49,8 +49,8 @@
    "q": "Tổ chức nào KHÔNG được cung ứng dịch vụ thanh toán qua tài khoản của khách hàng?",
    "options": [
     "Tổ chức tín dụng phi ngân hàng",
-    "Ngân hàng thương mại",
-    "Ngân hàng hợp tác xã",
+    "Ngân hàng thương mại được cấp phép",
+    "Ngân hàng hợp tác xã được cấp phép",
     "Ngân hàng 100% vốn nước ngoài"
    ],
    "answer": 0,

@@ -31,9 +31,9 @@
    "q": "Đối tượng mà tổ chức tín dụng mua lại trong bao thanh toán là gì?",
    "options": [
     "Khoản phải thu của bên bán theo hợp đồng mua bán hàng hóa, cung ứng dịch vụ",
-    "Hối phiếu, séc của bên thụ hưởng",
-    "Cổ phiếu của bên mua",
-    "Tài sản cố định của bên bán"
+    "Hối phiếu và séc do bên thụ hưởng phát hành để thanh toán cho bên bán hàng",
+    "Cổ phiếu do bên mua hàng phát hành để góp vốn cho doanh nghiệp bán hàng",
+    "Tài sản cố định của bên bán, như nhà xưởng, máy móc và phương tiện vận chuyển"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 4.",
