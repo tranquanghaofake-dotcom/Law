@@ -21,10 +21,13 @@
   let flash = $state<{ term: number; desc: number } | null>(null);
   let finished = $state(false);
   let timers: ReturnType<typeof setTimeout>[] = [];
-  onDestroy(() => timers.forEach(clearTimeout));
+  let flashTimer: ReturnType<typeof setTimeout> | undefined;
+  onDestroy(() => { timers.forEach(clearTimeout); clearTimeout(flashTimer); });
 
   function press(side: Side, idx: number) {
-    if (finished || flash) return;
+    if (finished) return;
+    // chạm kế tiếp trong lúc đang rung báo sai: huỷ hiệu ứng cũ thay vì nuốt chạm
+    if (flash) { clearTimeout(flashTimer); flash = null; }
     const r = tap(st, side, idx);
     st = r.state;
     if (r.outcome === 'select') sfx.play('select');
@@ -38,7 +41,7 @@
     } else if (r.outcome === 'bad') {
       sfx.play('wrong'); buzz('bad');
       flash = { term: r.term!, desc: r.desc! };
-      timers.push(setTimeout(() => (flash = null), 420));
+      flashTimer = setTimeout(() => (flash = null), 420);
     }
   }
   // Phím: 1–4 chọn thuật ngữ theo thứ tự trên màn hình, A–D chọn mô tả.
