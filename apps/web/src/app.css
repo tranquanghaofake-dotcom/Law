@@ -871,3 +871,35 @@ h1 { text-wrap: balance; }
   .shell > .topbar .meta { gap: 6px; }
   .shell > .topbar .meta .rank-title { display: none; }
 }
+
+/* ---- Nén chiều cao (spec §3.5, §5): nội dung lên màn đầu, bớt cuộn ---- */
+@media (max-width: 767px) {
+  .subjects-head { display: flex; align-items: center; gap: 12px; padding: 12px 14px; min-height: 0; margin-bottom: 8px; }
+  .subjects-head h1 { font-size: 22px; margin: 0; flex: none; }
+  .subjects-head .finder { flex: 1; min-width: 0; max-width: none; }
+  .subjects-head .finder input[type="search"] { min-height: 36px; padding: 6px 10px; font-size: 14px; }
+  .subjects-head + .shelf-chips, .shelf-chips { margin: 6px 0 2px; }
+  .shelf-sec .section-title { margin-top: 12px; }
+  .shelf-sec + .shelf-sec .section-title { border-top: 0; padding-top: 0; }
+  .cover-grid { gap: 10px; }
+  .cover-link .name { font-size: 12px; }
+  .crumbs { font-size: 12px; margin: 0; }
+  .subject-head { padding: 14px 16px 16px; }
+  .subject-head h1 { font-size: 26px; margin-bottom: 4px; }
+  .subject-head > p.muted { margin: 0 0 6px; font-size: 14px; }
+  .subject-head .bar { margin: 0 0 8px; }
+  .subject-head .row { flex-wrap: wrap; align-items: center; }
+  .subject-head .next-cta { flex: 1 1 0; min-width: 0; }
+  .subject-head .row .btn.ghost { order: 3; flex: 1 1 100%; }
+  .subject-head .next-hint { max-width: 100%; }
+  .cover-grid { grid-template-columns: repeat(4, 1fr); padding: 0; gap: 10px 8px; }
+}
+@media (min-width: 768px) {
+  .cover-grid { grid-template-columns: repeat(auto-fill, minmax(92px, 1fr)); gap: 12px 10px; }
+  .shelf-sec .plank { margin: 6px 2px 12px; }
+  .shelf-sec .section-title { margin-top: 14px; }
+}
+@media (min-width: 1024px) {
+  .shelves { display: grid; grid-template-columns: 1fr 1fr; column-gap: 28px; align-items: start; }
+  .shelves .empty { grid-column: 1 / -1; }
+}

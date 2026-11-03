@@ -81,6 +81,7 @@
       <ul class="cover-grid">{#each studying as it (it.subject.id)}{@render cover(it, 108)}{/each}</ul>
     </section>
   {/if}
+  <div class="shelves">
   {#each shelves as g (g.shelf.id)}
     <section class="shelf-sec" data-shelf={g.shelf.id} style="--shelf:{g.shelf.color}">
       <h2 class="section-title shelf-title"><span class="dot" aria-hidden="true"></span><b>{g.shelf.name}</b> <span class="small">{g.items.length} môn</span></h2>
@@ -90,4 +91,5 @@
   {:else}
     <p class="muted empty">Không có môn nào khớp “{q}”. Thử gõ không dấu hoặc viết tắt (ví dụ “ds”, “ttds”).</p>
   {/each}
+  </div>
 {/if}
