@@ -76,12 +76,12 @@
      "answer": "right"
     },
     {
-     "text": "Thành viên hợp danh phải là cá nhân, có ít nhất hai thành viên hợp danh",
+     "text": "Thành viên phải là cá nhân, công ty có ít nhất hai thành viên chịu trách nhiệm bằng toàn bộ tài sản của mình",
      "answer": "left",
      "basis": "Điểm a, b khoản 1 Điều 177 Luật Doanh nghiệp 2020"
     },
     {
-     "text": "Thành viên hợp danh cùng nhau kinh doanh dưới một tên chung của công ty",
+     "text": "Những thành viên chịu trách nhiệm vô hạn cùng nhau kinh doanh dưới một tên chung của công ty",
      "answer": "left",
      "basis": "Điểm a khoản 1 Điều 177 Luật Doanh nghiệp 2020"
     }
