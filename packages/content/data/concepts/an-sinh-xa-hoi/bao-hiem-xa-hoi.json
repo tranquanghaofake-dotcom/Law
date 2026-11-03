@@ -32,8 +32,8 @@
    "q": "Bảo hiểm xã hội tự nguyện có đặc điểm nào?",
    "options": [
     "Công dân Việt Nam tự nguyện tham gia và được lựa chọn mức đóng, phương thức đóng",
-    "Người sử dụng lao động bắt buộc đóng cho người lao động theo hợp đồng lao động đã ký",
-    "Do ngân sách nhà nước chi trả toàn bộ cho người tham gia tự nguyện theo quy định",
+    "Người sử dụng lao động bắt buộc đóng thay cho người lao động theo hợp đồng",
+    "Do ngân sách nhà nước chi trả toàn bộ cho người tham gia tự nguyện theo quy định chung",
     "Chỉ dành cho công chức, viên chức nhà nước và người có chức vụ trong bộ máy"
    ],
    "answer": 0,
@@ -51,7 +51,7 @@
     "Từ đủ 01 tháng trở lên",
     "Từ đủ 03 tháng trở lên",
     "Từ đủ 12 tháng trở lên",
-    "Mọi hợp đồng không phân biệt thời hạn"
+    "Mọi hợp đồng, bất kể hạn"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 1 Điều 2.",
