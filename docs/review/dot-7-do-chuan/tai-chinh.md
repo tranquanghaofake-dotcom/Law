@@ -51,3 +51,10 @@ Tổng: 38 tình huống mới; 17 khái niệm đạt ≥ 4 tình huống.
 |---|---|---|---|
 | `he-thong-nsnn#2` (pair), `#5` (truefalse) | cấp huyện / văn bản cũ | ⚠ opus | thuật ngữ đã đổi (chính quyền 2 cấp); pair "Có ngân sách cấp huyện" là so sánh Luật NSNN 2015 với 2025; để opus xử lý theo loại thuat-ngu-cu |
 | `thue-thu-nhap-doanh-nghiep#-1` | khoản không có trong file | ⚠ opus | "khoản 14a Điều 4" do Luật 09/2026/QH16 bổ sung; file `ltndn-2025.txt` chỉ có 15 khoản. Cần đối chiếu văn bản sửa đổi trước khi giữ |
+
+## Tình huống Phân biệt mới (haiku-3)
+
+| Khái niệm | Tình huống | Bên | Căn cứ |
+|---|---|---|---|
+| `he-thong-nsnn` | Ngân sách nhà nước gồm ngân sách trung ương và ngân sách địa phương | Luật NSNN 2025 (phải) | Khoản 1 Điều 6 Luật Ngân sách nhà nước 2025 |
+| `he-thong-nsnn` | Ngân sách cấp huyện có dự toán riêng do Hội đồng nhân dân huyện quyết định (⚠ quy định cũ, Luật NSNN 2015 chưa có trong laws/) | Luật NSNN 2015 (trái) | Luật Ngân sách nhà nước 2015 (⚠ cần đối chiếu) |

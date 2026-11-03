@@ -125,3 +125,36 @@ Tổng: 105 tình huống mới; 73 khái niệm đạt ≥ 4 tình huống.
 | `chuyen-quyen-so-huu-chung-khoan#5` | lệch nội dung | báo nhầm | khớp khoản 2 Điều 64 Luật Chứng khoán 2019 |
 | `muc-phat-tien-chung-khoan#3` (cloze) | lệch nội dung | báo nhầm | khoản 3 Điều 12 đúng với thao túng thị trường; mức phạt nằm ở Điều 132 |
 | `giai-the-pha-san-cong-ty-chung-khoan#-1` | văn bản cũ | báo nhầm | bài đã ghi Luật Phục hồi, phá sản 2025 thay Luật Phá sản 2014 |
+
+## Tình huống Phân biệt mới (haiku-3)
+
+| Khái niệm | Tình huống | Bên | Căn cứ |
+|---|---|---|---|
+| `chung-chi-hanh-nghe-chung-khoan` | Bị thu hồi vì không còn đáp ứng điều kiện cấp chứng chỉ, nay đáp ứng lại và xin cấp lại | Được cấp lại sau khi bị thu hồi (trái) | Điểm a khoản 3 và khoản 4 Điều 97 Luật Chứng khoán 2019 |
+| `dieu-kien-co-dong-cong-ty-chung-khoan` | Cổ đông sở hữu từ 10% trở lên vốn điều lệ của một công ty chứng khoán | Từ 10% (trái) | Điểm c khoản 2 Điều 74 Luật Chứng khoán 2019 |
+| `dieu-kien-co-dong-cong-ty-chung-khoan` | Cổ đông đã sở hữu từ 10% ở một công ty chứng khoán thì không được sở hữu trên 5% ở công ty khác | Trên 5% (phải) | Điểm c khoản 2 và khoản 3 Điều 74 Luật Chứng khoán 2019 |
+| `gia-tri-tai-san-rong` | Công ty quản lý quỹ xác định giá trị tài sản ròng trên một đơn vị quỹ đầu tư chứng khoán | Công ty quản lý quỹ (trái) | Khoản 1 Điều 106 Luật Chứng khoán 2019 |
+| `gia-tri-tai-san-rong` | Ngân hàng giám sát xác nhận giá trị tài sản ròng đã do công ty quản lý quỹ xác định | Ngân hàng giám sát (phải) | Khoản 1 Điều 106 Luật Chứng khoán 2019 |
+| `giai-quyet-tranh-chap-chung-khoan` | Nhà đầu tư khởi kiện công ty chứng khoán vì bị thiệt hại do xâm phạm quyền lợi hợp pháp | Giải quyết tranh chấp (Điều 133) (trái) | Khoản 1 Điều 133 Luật Chứng khoán 2019 |
+| `giai-quyet-tranh-chap-chung-khoan` | Ủy ban xử lý vi phạm hành chính đối với công ty chứng khoán sau khi thanh tra | Xử phạt hành chính (Điều 132) (phải) | Khoản 6 Điều 132 Luật Chứng khoán 2019 |
+| `han-che-quy-dai-chung` | Quỹ đại chúng đầu tư quá 20% tổng giá trị tài sản vào chứng khoán của một tổ chức phát hành | 20% (phải) | Điểm c khoản 1 Điều 110 Luật Chứng khoán 2019 |
+| `hoat-dong-phai-duoc-uy-ban-chap-thuan` | Quảng cáo thông thường về dịch vụ của công ty chứng khoán trên báo chí | Không cần chấp thuận theo Điều 87 (phải) | Khoản 1 Điều 87 Luật Chứng khoán 2019 (không thuộc các hoạt động liệt kê) |
+| `menh-gia-chung-khoan` | Trái phiếu chào bán ra công chúng có mệnh giá là bội số của 100 nghìn đồng | 100 nghìn đồng và bội số (phải) | Khoản 2 Điều 13 Luật Chứng khoán 2019 |
+| `muc-phat-tien-chung-khoan` | Vi phạm quy định công bố thông tin ngoài các hành vi bị cấm tại khoản 2, 3 Điều 12 | Tối đa 03 tỷ đồng (phải) | Khoản 4 Điều 132 Luật Chứng khoán 2019 |
+| `nguoi-hanh-nghe-chung-khoan` | Người có chứng chỉ hành nghề phân tích tài chính đang làm việc tại công ty quản lý quỹ | Là người hành nghề chứng khoán (trái) | Khoản 47 Điều 4 và điểm b khoản 1 Điều 97 Luật Chứng khoán 2019 |
+| `nguoi-hanh-nghe-chung-khoan` | Người có chứng chỉ môi giới nhưng không làm việc tại công ty chứng khoán | Chưa phải người hành nghề chứng khoán (phải) | Khoản 47 Điều 4 Luật Chứng khoán 2019 |
+| `quan-ly-danh-muc-dau-tu` | Công ty quyết định mua, bán chứng khoán thay nhà đầu tư theo ủy thác của từng nhà đầu tư | Quản lý danh mục (trái) | Khoản 35 Điều 4 Luật Chứng khoán 2019 |
+| `quan-ly-danh-muc-dau-tu` | Công ty chỉ phân tích và đưa khuyến nghị để khách hàng tự quyết định mua, bán | Tư vấn đầu tư (phải) | Khoản 32 Điều 4 Luật Chứng khoán 2019 |
+| `quan-ly-nha-nuoc-chung-khoan` | Ủy ban Chứng khoán Nhà nước thu hồi giấy phép và chứng chỉ hành nghề chứng khoán | Ủy ban Chứng khoán Nhà nước (phải) | Điểm c khoản 1 Điều 9 Luật Chứng khoán 2019 |
+| `quy-dai-chung` | Tổng giá trị chứng chỉ quỹ đã bán đạt ít nhất 50 tỷ đồng khi huy động vốn | Huy động thành công (trái) | Điểm b khoản 1 Điều 108 Luật Chứng khoán 2019 |
+| `quy-dai-chung` | Không đạt đủ điều kiện huy động vốn, công ty quản lý quỹ phải hoàn trả tiền cho nhà đầu tư | Huy động không thành công (phải) | Khoản 3 Điều 108 Luật Chứng khoán 2019 |
+| `quy-hoan-doi-danh-muc` | Quỹ mở thông thường có chứng chỉ quỹ được mua lại theo yêu cầu của nhà đầu tư | Quỹ mở thông thường (phải) | Khoản 39 Điều 4 Luật Chứng khoán 2019 |
+| `quy-mo` | Quỹ đóng mà chứng chỉ quỹ đã chào bán ra công chúng không được mua lại theo yêu cầu | Quỹ đóng (phải) | Khoản 40 Điều 4 Luật Chứng khoán 2019 |
+| `quyen-han-uy-ban-trong-thanh-tra` | Tổ chức tín dụng cung cấp thông tin liên quan đến giao dịch trên tài khoản của khách hàng | Ngân hàng cung cấp (trái) | Điểm b khoản 1 Điều 130 Luật Chứng khoán 2019 |
+| `quyen-han-uy-ban-trong-thanh-tra` | Người có thông tin, tài liệu liên quan đến nội dung thanh tra được Ủy ban yêu cầu cung cấp | Ngân hàng cung cấp (trái) | Điểm a khoản 1 Điều 130 Luật Chứng khoán 2019 |
+| `so-dang-ky-ngay-dang-ky-cuoi-cung` | Người có tên trên Sổ đăng ký tại ngày đăng ký cuối cùng được hưởng quyền phát sinh của đợt đó | Có tên trên Sổ tại ngày đăng ký cuối cùng (trái) | Khoản 5 Điều 61 Luật Chứng khoán 2019 |
+| `so-dang-ky-ngay-dang-ky-cuoi-cung` | Người mua chứng khoán sau ngày đăng ký cuối cùng, chưa có tên trên Sổ, không được hưởng quyền của đợt đó | Không có tên trên Sổ tại ngày đăng ký cuối cùng (phải) | Khoản 5 Điều 61 Luật Chứng khoán 2019 |
+| `so-giao-dich-chung-khoan-viet-nam` | Bộ trưởng Bộ Tài chính quyết định nhân sự lãnh đạo chủ chốt của Sở giao dịch chứng khoán | Bộ trưởng Bộ Tài chính (phải) | Khoản 2 Điều 44 Luật Chứng khoán 2019 |
+| `thanh-vien-so-giao-dich-chung-khoan` | Công ty chứng khoán đăng ký và được Sở giao dịch chấp thuận làm thành viên giao dịch | Thành viên giao dịch (trái) | Điểm a khoản 1 Điều 47 Luật Chứng khoán 2019 |
+| `thanh-vien-so-giao-dich-chung-khoan` | Tổ chức khác được Sở giao dịch chấp thuận làm thành viên giao dịch đặc biệt | Thành viên giao dịch đặc biệt (phải) | Điểm b khoản 1 Điều 47 Luật Chứng khoán 2019 |
+| `to-chuc-xa-hoi-nghe-nghiep-chung-khoan` | Tổ chức xã hội - nghề nghiệp ban hành bộ quy tắc đạo đức sau khi được Ủy ban chấp thuận | Tổ chức xã hội - nghề nghiệp (trái) | Khoản 2 Điều 10 Luật Chứng khoán 2019 |

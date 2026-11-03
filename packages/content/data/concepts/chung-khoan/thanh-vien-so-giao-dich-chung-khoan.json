@@ -70,6 +70,16 @@
     {
      "text": "Ngân hàng thương mại, chi nhánh ngân hàng nước ngoài",
      "answer": "right"
+    },
+    {
+     "text": "Công ty chứng khoán đăng ký và được Sở giao dịch chấp thuận làm thành viên giao dịch",
+     "answer": "left",
+     "basis": "Điểm a khoản 1 Điều 47 Luật Chứng khoán 2019"
+    },
+    {
+     "text": "Tổ chức khác được Sở giao dịch chấp thuận làm thành viên giao dịch đặc biệt",
+     "answer": "right",
+     "basis": "Điểm b khoản 1 Điều 47 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 1 Điều 47."

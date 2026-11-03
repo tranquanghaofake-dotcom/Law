@@ -73,6 +73,11 @@
     {
      "text": "Mệnh giá trái phiếu chào bán ra công chúng",
      "answer": "right"
+    },
+    {
+     "text": "Trái phiếu chào bán ra công chúng có mệnh giá là bội số của 100 nghìn đồng",
+     "answer": "right",
+     "basis": "Khoản 2 Điều 13 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 2 Điều 13."

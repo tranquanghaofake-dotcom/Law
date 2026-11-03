@@ -71,6 +71,16 @@
     {
      "text": "Xác nhận giá trị tài sản ròng",
      "answer": "right"
+    },
+    {
+     "text": "Công ty quản lý quỹ xác định giá trị tài sản ròng trên một đơn vị quỹ đầu tư chứng khoán",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 106 Luật Chứng khoán 2019"
+    },
+    {
+     "text": "Ngân hàng giám sát xác nhận giá trị tài sản ròng đã do công ty quản lý quỹ xác định",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 106 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 1 Điều 106."

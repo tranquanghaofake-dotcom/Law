@@ -74,6 +74,11 @@
     {
      "text": "Chậm công bố thông tin định kỳ",
      "answer": "right"
+    },
+    {
+     "text": "Vi phạm quy định công bố thông tin ngoài các hành vi bị cấm tại khoản 2, 3 Điều 12",
+     "answer": "right",
+     "basis": "Khoản 4 Điều 132 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 3, 4 Điều 132."
