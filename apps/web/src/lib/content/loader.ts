@@ -13,3 +13,6 @@ export const loadSubject = (id: string) => getJson<Subject>(`subjects/${encodeUR
 export const loadSet = (id: string) => getJson<QuizSet>(`sets/${encodeURIComponent(id)}.json`);
 export const loadConcepts = (subjectId: string, ids: string[]) =>
   Promise.all(ids.map((id) => getJson<Concept>(`concepts/${encodeURIComponent(subjectId)}/${encodeURIComponent(id)}.json`)));
+/** Bảng tên khái niệm của môn (dist/terms): 1 file thay cho từng `loadConcepts` chỉ để lấy `term`. */
+export const loadTerms = (subjectId: string): Promise<Record<string, string>> =>
+  getJson<Record<string, string>>(`terms/${encodeURIComponent(subjectId)}.json`);
