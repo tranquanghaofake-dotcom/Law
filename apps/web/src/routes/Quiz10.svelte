@@ -128,7 +128,7 @@
   {/if}
 {:else}
   <div class="session-bar">
-    <a class="exit" href="#/luyen-de" aria-label="Về Luyện đề">←</a>
+    <a class="exit qexit" href="#/luyen-de" aria-label="Về Luyện đề">←</a>
     <div class="qdots" role="progressbar" aria-label="Tiến độ bộ câu hỏi" aria-valuemin="0" aria-valuemax={qs.length} aria-valuenow={i} aria-valuetext="Câu {i + 1} trên {qs.length}, đúng {score}">
       {#each qs as _, k (k)}<span class={dotState(k)}></span>{/each}
     </div>
