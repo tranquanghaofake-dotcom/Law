@@ -135,6 +135,18 @@
     "người có liên quan",
     "ngoại lệ"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tổ chức, cá nhân, nhóm người có liên quan, nhóm nhà đầu tư nước ngoài có liên quan phải công bố thông tin khi trở thành hoặc không còn là cổ đông lớn của công ty đại chúng, công ty đầu tư chứng khoán đại chúng.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 127 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 127 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+   }
   }
  ]
 }

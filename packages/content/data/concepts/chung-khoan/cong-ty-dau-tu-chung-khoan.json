@@ -120,6 +120,18 @@
     "đại chúng",
     "50 tỷ"
    ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Công ty đầu tư chứng khoán là quỹ đầu tư chứng khoán được tổ chức theo loại hình công ty cổ phần để đầu tư chứng khoán.",
+   "answer": true,
+   "explain": "Đúng. Khoản 1 Điều 114 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026) (nguyên văn).",
+   "source": {
+    "kind": "statute",
+    "cite": "Khoản 1 Điều 114 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+    "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
+   }
   }
  ]
 }
