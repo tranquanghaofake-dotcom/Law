@@ -69,6 +69,16 @@
     {
      "text": "Chứng khoán phái sinh giao dịch thỏa thuận",
      "answer": "right"
+    },
+    {
+     "text": "Hợp đồng phái sinh niêm yết, cam kết mua hoặc bán tài sản cơ sở vào ngày xác định trong tương lai",
+     "answer": "left",
+     "basis": "Khoản 12 Điều 4 Luật Chứng khoán 2019"
+    },
+    {
+     "text": "Hợp đồng phái sinh giao dịch thỏa thuận, cam kết mua hoặc bán tài sản cơ sở theo giá đã xác định",
+     "answer": "right",
+     "basis": "Khoản 13 Điều 4 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 12 và khoản 13 Điều 4."

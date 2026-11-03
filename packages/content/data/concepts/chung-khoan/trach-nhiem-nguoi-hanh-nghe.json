@@ -73,6 +73,11 @@
     {
      "text": "Thực hiện giao dịch vượt phạm vi ủy quyền của công ty",
      "answer": "right"
+    },
+    {
+     "text": "Làm việc cho một công ty chứng khoán và được cấp chứng chỉ hành nghề",
+     "answer": "left",
+     "basis": "Khoản 2 Điều 98 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 2, 3 Điều 98."

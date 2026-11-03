@@ -74,6 +74,11 @@
     {
      "text": "Công ty thay đổi trụ sở trong cùng thành phố",
      "answer": "right"
+    },
+    {
+     "text": "Công ty không chính thức hoạt động trong 12 tháng kể từ ngày được cấp giấy phép",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 95 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 1 Điều 95."

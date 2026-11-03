@@ -70,6 +70,16 @@
     {
      "text": "Theo pháp luật về phục hồi, phá sản",
      "answer": "right"
+    },
+    {
+     "text": "Công ty chứng khoán tự nguyện giải thể theo nghị quyết của Đại hội đồng cổ đông",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 96 Luật Chứng khoán 2019"
+    },
+    {
+     "text": "Công ty chứng khoán mất khả năng thanh toán và bị Tòa án mở thủ tục phá sản",
+     "answer": "right",
+     "basis": "Khoản 3 Điều 96 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 1 và khoản 3 Điều 96."

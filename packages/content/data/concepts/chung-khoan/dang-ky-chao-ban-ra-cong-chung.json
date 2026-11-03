@@ -71,6 +71,16 @@
     {
      "text": "Tổ chức phát hành công bố Bản thông báo phát hành kể từ khi Giấy chứng nhận có hiệu lực",
      "answer": "right"
+    },
+    {
+     "text": "Hồ sơ đăng ký chào bán đầy đủ, hợp lệ được Ủy ban xem xét trong thời hạn 30 ngày",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 25 Luật Chứng khoán 2019"
+    },
+    {
+     "text": "Tổ chức phát hành công bố thông báo phát hành trong 07 ngày làm việc sau khi Giấy chứng nhận có hiệu lực",
+     "answer": "right",
+     "basis": "Điều 25 Luật Chứng khoán 2019 (khoản 3)"
     }
    ],
    "explain": "Khoản 1 và khoản 3 Điều 25."

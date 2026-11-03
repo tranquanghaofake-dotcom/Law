@@ -69,6 +69,16 @@
     {
      "text": "Ủy thác hợp pháp cho công ty quản lý quỹ theo hợp đồng",
      "answer": "right"
+    },
+    {
+     "text": "Cho người khác mượn tài khoản để giao dịch chứng khoán",
+     "answer": "left",
+     "basis": "Khoản 6 Điều 12 Luật Chứng khoán 2019"
+    },
+    {
+     "text": "Nhà đầu tư tự đầu tư bằng tài khoản đứng tên chính mình, tự quyết định mua bán",
+     "answer": "right",
+     "basis": "Khoản 6 Điều 12 Luật Chứng khoán 2019 (không thuộc hành vi bị cấm)"
     }
    ],
    "explain": "Khoản 6 Điều 12; khoản 35 Điều 4."

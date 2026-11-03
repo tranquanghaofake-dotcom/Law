@@ -74,6 +74,11 @@
     {
      "text": "Chứng khoán công ty mua bằng nghiệp vụ tự doanh",
      "answer": "right"
+    },
+    {
+     "text": "Trụ sở làm việc và trang thiết bị của công ty chứng khoán",
+     "answer": "right",
+     "basis": "Khoản 1 Điều 88 Luật Chứng khoán 2019 (không phải tài sản của khách hàng)"
     }
    ],
    "explain": "Khoản 1 Điều 88."

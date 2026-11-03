@@ -73,6 +73,11 @@
     {
      "text": "Đã niêm yết trên Sở giao dịch",
      "answer": "right"
+    },
+    {
+     "text": "Ngân hàng thương mại không có giấy phép hoạt động tại Việt Nam",
+     "answer": "right",
+     "basis": "Điểm a khoản 2 Điều 69 Luật Chứng khoán 2019"
     }
    ],
    "explain": "Khoản 2 Điều 69."
