@@ -30,9 +30,9 @@
    "q": "Doanh nghiệp nhà nước phải công bố báo cáo tài chính năm đã kiểm toán trong thời hạn nào?",
    "options": [
     "150 ngày kể từ ngày kết thúc năm tài chính",
-    "30 ngày",
-    "90 ngày",
-    "1 năm"
+    "30 ngày kể từ ngày kết thúc năm tài chính",
+    "90 ngày kể từ ngày kết thúc năm tài chính",
+    "120 ngày kể từ ngày kết thúc năm tài chính đó"
    ],
    "answer": 0,
    "explain": "Điểm c khoản 1 Điều 109.",
@@ -47,9 +47,9 @@
    "q": "Thông tin định kỳ của doanh nghiệp nhà nước được công bố ở đâu?",
    "options": [
     "Trang thông tin điện tử của công ty và của cơ quan đại diện chủ sở hữu",
-    "Chỉ niêm yết tại trụ sở",
-    "Chỉ trên Công báo",
-    "Chỉ gửi cơ quan thuế"
+    "Chỉ niêm yết tại trụ sở công ty và tại trụ sở cơ quan thuế địa phương",
+    "Chỉ đăng trên Công báo của Chính phủ và trên báo in hằng ngày",
+    "Chỉ gửi cho cơ quan thuế, cơ quan bảo hiểm xã hội và Sở Tài chính địa phương"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 109.",

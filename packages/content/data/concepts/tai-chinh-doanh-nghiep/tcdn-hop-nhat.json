@@ -30,9 +30,9 @@
    "q": "Kết quả của hợp nhất công ty là gì?",
    "options": [
     "Hình thành một công ty mới, các công ty bị hợp nhất chấm dứt tồn tại",
-    "Một công ty bị sáp nhập vào công ty khác đang tồn tại",
-    "Một công ty chia thành nhiều công ty",
-    "Một công ty mua cổ phần chi phối công ty khác"
+    "Một công ty bị sáp nhập vào công ty khác đang tồn tại và vẫn giữ nguyên",
+    "Một công ty chia thành nhiều công ty mới, công ty cũ vẫn tồn tại",
+    "Một công ty mua cổ phần chi phối của công ty khác, cả hai cùng tồn tại"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 200.",
@@ -47,9 +47,9 @@
    "q": "Hợp đồng hợp nhất phải có nội dung nào về tài chính?",
    "options": [
     "Thời hạn, thủ tục và điều kiện chuyển đổi tài sản, phần vốn góp, cổ phần, trái phiếu",
-    "Mức lương của giám đốc mới",
-    "Giá cổ phiếu trên sàn sau 1 năm",
-    "Danh sách khách hàng mới"
+    "Mức lương, thưởng và phụ cấp của giám đốc công ty hợp nhất trong ba năm đầu",
+    "Giá cổ phiếu niêm yết trên sàn sau một năm kể từ ngày hợp nhất, có biến động mạnh trong năm",
+    "Danh sách khách hàng mới và nhà cung cấp của công ty hợp nhất mới thành lập"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 2 Điều 200.",

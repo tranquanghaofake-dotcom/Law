@@ -48,9 +48,9 @@
    "q": "Điều kiện nào là điều kiện để trả cổ tức cổ phần phổ thông?",
    "options": [
     "Đã trích lập các quỹ và bù đắp lỗ trước đó",
-    "Có ít nhất 100 cổ đông",
-    "Đã niêm yết trên sàn",
-    "Giám đốc đồng ý"
+    "Có ít nhất 100 cổ đông sở hữu cổ phần phổ thông",
+    "Đã niêm yết trên sàn chứng khoán tập trung",
+    "Giám đốc và kế toán trưởng cùng ký duyệt"
    ],
    "answer": 0,
    "explain": "Điểm b khoản 2 Điều 135.",

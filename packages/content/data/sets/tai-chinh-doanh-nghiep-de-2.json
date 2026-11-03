@@ -9,9 +9,9 @@
       "q": "Doanh thu tính thu nhập chịu thuế có phụ thuộc việc đã thu tiền không?",
       "options": [
         "Không phân biệt đã thu hay chưa",
-        "Chỉ khi đã thu tiền",
-        "Chỉ khi xuất hóa đơn",
-        "Chỉ khi khách xác nhận"
+        "Chỉ tính khi đã thu được tiền",
+        "Chỉ khi xuất hóa đơn cho khách",
+        "Chỉ khi khách hàng xác nhận công nợ"
       ],
       "answer": 0,
       "explain": "Khoản 1 Điều 8.",
@@ -22,9 +22,9 @@
       "q": "Chi phí được trừ phải có chứng từ thanh toán thế nào?",
       "options": [
         "Không dùng tiền mặt theo quy định, trừ trường hợp đặc thù",
-        "Bằng tiền mặt",
-        "Không cần chứng từ",
-        "Chỉ cần biên lai viết tay"
+        "Bằng tiền mặt toàn bộ, không cần ghi sổ kế toán nào",
+        "Không cần chứng từ, chỉ cần ghi trong sổ tay cá nhân của kế toán",
+        "Chỉ cần biên lai viết tay có chữ ký của người nhận tiền"
       ],
       "answer": 0,
       "explain": "Điểm c khoản 1 Điều 9.",
@@ -35,9 +35,9 @@
       "q": "Cổ tức là gì?",
       "options": [
         "Khoản lợi nhuận sau thuế trả cho mỗi cổ phần",
-        "Lãi trái phiếu",
-        "Tiền hoàn vốn góp",
-        "Thưởng cho người lao động"
+        "Lãi trái phiếu trả cho chủ nợ hằng năm",
+        "Tiền hoàn vốn góp khi công ty giải thể",
+        "Thưởng cho người lao động có thành tích trong năm"
       ],
       "answer": 0,
       "explain": "Khoản 5 Điều 4.",
@@ -48,9 +48,9 @@
       "q": "Điều kiện nào cần để trả cổ tức cổ phần phổ thông?",
       "options": [
         "Đã trích lập quỹ và bù lỗ trước đó",
-        "Có lãi trước thuế",
-        "Có trên 100 cổ đông",
-        "Đã niêm yết"
+        "Có lãi trước thuế trong năm gần nhất",
+        "Có trên 100 cổ đông nắm giữ cổ phần",
+        "Đã niêm yết trên sàn chứng khoán"
       ],
       "answer": 0,
       "explain": "Điểm b khoản 2 Điều 135.",
@@ -61,9 +61,9 @@
       "q": "Công ty TNHH hai thành viên trở lên được chia lợi nhuận khi nào?",
       "options": [
         "Đã hoàn thành nghĩa vụ thuế, tài chính và bảo đảm trả đủ nợ đến hạn sau khi chia",
-        "Bất cứ lúc nào",
-        "Khi có lãi 3 năm liền",
-        "Khi được ngân hàng đồng ý"
+        "Bất cứ lúc nào Hội đồng thành viên quyết định, không cần xét đến nghĩa vụ thuế của công ty",
+        "Khi có lãi trong ba năm liền và đã trả cổ tức cho các thành viên trước đó",
+        "Khi được ngân hàng cho vay đồng ý bằng văn bản chính thức và có bảo lãnh của cổ đông lớn"
       ],
       "answer": 0,
       "explain": "Điều 69.",
@@ -87,9 +87,9 @@
       "q": "Doanh nghiệp nhà nước công bố báo cáo tài chính năm đã kiểm toán trong thời hạn nào?",
       "options": [
         "150 ngày từ khi kết thúc năm tài chính",
-        "30 ngày",
-        "60 ngày",
-        "1 năm"
+        "30 ngày từ khi kết thúc năm tài chính",
+        "60 ngày từ khi kết thúc năm tài chính",
+        "1 năm từ khi kết thúc năm tài chính đó"
       ],
       "answer": 0,
       "explain": "Điểm c khoản 1 Điều 109.",
@@ -113,9 +113,9 @@
       "q": "Hợp nhất công ty dẫn đến kết quả nào?",
       "options": [
         "Hình thành công ty mới, các công ty bị hợp nhất chấm dứt",
-        "Một công ty vẫn tồn tại nhận tài sản",
-        "Chia công ty",
-        "Chuyển đổi loại hình"
+        "Một công ty vẫn tồn tại và nhận toàn bộ tài sản của công ty kia",
+        "Chia một công ty thành nhiều công ty mới, công ty cũ vẫn tồn tại",
+        "Chuyển đổi loại hình công ty cổ phần thành công ty TNHH"
       ],
       "answer": 0,
       "explain": "Khoản 1 Điều 200.",
@@ -126,9 +126,9 @@
       "q": "Mua lại doanh nghiệp đòi hỏi mua đến mức nào?",
       "options": [
         "Đủ để kiểm soát, chi phối doanh nghiệp hoặc một ngành, nghề",
-        "Đúng 100%",
-        "Ít nhất 25%",
-        "Không cần mức nào"
+        "Đúng 100% vốn điều lệ của doanh nghiệp bị mua lại, kể cả tài sản",
+        "Ít nhất 25% vốn góp, không cần kiểm soát hay chi phối",
+        "Không cần mức nào, chỉ cần thỏa thuận bằng miệng giữa các bên"
       ],
       "answer": 0,
       "explain": "Khoản 4 Điều 29.",

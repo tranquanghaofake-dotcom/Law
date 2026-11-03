@@ -48,9 +48,9 @@
    "q": "Công ty nhận sáp nhập kế thừa gì từ công ty bị sáp nhập?",
    "options": [
     "Toàn bộ tài sản, quyền, nghĩa vụ và lợi ích hợp pháp",
-    "Chỉ tài sản, không kế thừa nợ",
-    "Chỉ quyền sử dụng đất",
-    "Chỉ thương hiệu"
+    "Chỉ kế thừa tài sản, không kế thừa quyền và nghĩa vụ",
+    "Chỉ quyền sử dụng đất và các khoản vay ngân hàng",
+    "Chỉ thương hiệu và nhãn hiệu, không kế thừa nghĩa vụ"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 201.",
