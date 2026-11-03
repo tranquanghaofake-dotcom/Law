@@ -47,9 +47,9 @@
    "q": "Thông tin định kỳ của doanh nghiệp nhà nước được công bố ở đâu?",
    "options": [
     "Trang thông tin điện tử của công ty và của cơ quan đại diện chủ sở hữu",
-    "Niêm yết tại trụ sở công ty và tại trụ sở cơ quan thuế địa phương",
+    "Chỉ niêm yết tại trụ sở công ty và tại trụ sở cơ quan thuế địa phương",
     "Chỉ đăng trên Công báo của Chính phủ và trên báo in hằng ngày",
-    "Gửi cho cơ quan thuế, cơ quan bảo hiểm xã hội và Sở Tài chính"
+    "Chỉ gửi cho cơ quan thuế, cơ quan bảo hiểm xã hội và Sở Tài chính"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 109.",
