@@ -48,9 +48,9 @@
    "q": "Biện pháp bảo đảm phát sinh hiệu lực đối kháng với người thứ ba từ khi nào?",
    "options": [
     "Từ khi đăng ký biện pháp bảo đảm hoặc bên nhận bảo đảm nắm giữ, chiếm giữ tài sản bảo đảm",
-    "Từ khi ký hợp đồng",
-    "Từ khi đến hạn trả nợ",
-    "Từ khi công chứng"
+    "Từ khi ký hợp đồng, có xác nhận của công chứng viên và các bên đồng ý tham gia đầy đủ",
+    "Từ khi đến hạn trả nợ, khi bên nợ đã vi phạm nghĩa vụ và không có văn bản đăng ký nào",
+    "Từ khi công chứng hợp đồng tại cơ quan có thẩm quyền và đóng đủ lệ phí, có đủ hồ sơ ở địa phương"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 297.",

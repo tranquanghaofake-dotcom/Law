@@ -29,9 +29,9 @@
    "q": "Người chưa đủ 15 tuổi gây thiệt hại mà còn cha mẹ thì ai bồi thường trước?",
    "options": [
     "Cha, mẹ bồi thường toàn bộ",
-    "Chính người đó",
-    "Nhà trường",
-    "Nhà nước"
+    "Chính người đó tự bồi thường",
+    "Nhà trường chịu trách nhiệm",
+    "Nhà nước chi trả hộ thiệt hại"
    ],
    "answer": 0,
    "explain": "Đoạn 1 khoản 2 Điều 586.",
@@ -46,9 +46,9 @@
    "q": "Người từ đủ 15 đến dưới 18 tuổi gây thiệt hại bồi thường thế nào?",
    "options": [
     "Bằng tài sản của mình; không đủ thì cha mẹ bù phần còn thiếu",
-    "Cha mẹ bồi thường toàn bộ ngay",
-    "Không phải bồi thường",
-    "Nhà nước bồi thường"
+    "Cha mẹ bồi thường toàn bộ ngay, không cần xét khả năng tài sản",
+    "Không phải bồi thường vì chưa đủ mười tám tuổi và chưa có thu nhập",
+    "Nhà nước bồi thường toàn bộ thiệt hại theo quy định của luật"
    ],
    "answer": 0,
    "explain": "Đoạn 2 khoản 2 Điều 586.",

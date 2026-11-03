@@ -28,9 +28,9 @@
    "q": "Trong hợp đồng mua bán tài sản, bên bán có nghĩa vụ chủ yếu nào?",
    "options": [
     "Chuyển quyền sở hữu tài sản cho bên mua",
-    "Cho bên mua sử dụng trong một thời hạn",
-    "Giữ hộ tài sản",
-    "Bảo lãnh cho bên mua"
+    "Cho bên mua sử dụng trong thời hạn nhất định",
+    "Giữ hộ tài sản cho bên mua đến khi trả",
+    "Bảo lãnh cho bên mua trước khi giao hàng"
    ],
    "answer": 0,
    "explain": "Điều 430.",
@@ -45,9 +45,9 @@
    "q": "Tài sản bán phải đáp ứng điều kiện gì về chủ thể có quyền?",
    "options": [
     "Thuộc sở hữu của người bán hoặc người bán có quyền bán",
-    "Phải là bất động sản",
-    "Phải được công chứng",
-    "Phải là tài sản mới"
+    "Phải là bất động sản đã đăng ký quyền sở hữu tại cơ quan",
+    "Phải được công chứng trước khi giao kết hợp đồng",
+    "Phải là tài sản mới, chưa qua sử dụng lần nào cả"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 431.",

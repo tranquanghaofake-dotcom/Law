@@ -29,9 +29,9 @@
    "q": "Hợp đồng thuê tài sản chuyển giao quyền gì cho bên thuê?",
    "options": [
     "Quyền sử dụng tài sản trong một thời hạn",
-    "Quyền sở hữu tài sản",
-    "Quyền định đoạt tài sản",
-    "Quyền thế chấp tài sản"
+    "Quyền sở hữu tài sản được thuê, không thời hạn",
+    "Quyền sở hữu tài sản được cho thuê lâu dài",
+    "Quyền định đoạt tài sản thuê đã nhận"
    ],
    "answer": 0,
    "explain": "Điều 472.",
@@ -46,9 +46,9 @@
    "q": "Điểm khác nhau giữa thuê tài sản và mượn tài sản là gì?",
    "options": [
     "Thuê phải trả tiền thuê, mượn không phải trả tiền",
-    "Mượn phải trả tiền",
-    "Thuê chuyển quyền sở hữu",
-    "Không có khác biệt"
+    "Mượn phải trả tiền, thuê không phải trả tiền",
+    "Thuê chuyển quyền sở hữu, mượn giữ quyền sở hữu",
+    "Không có khác biệt về nghĩa vụ trả tiền và thời hạn"
    ],
    "answer": 0,
    "explain": "Điều 472, 494.",

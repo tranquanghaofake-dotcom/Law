@@ -29,9 +29,9 @@
    "q": "Lãi suất thỏa thuận trong hợp đồng vay dân sự không được vượt quá bao nhiêu?",
    "options": [
     "20%/năm của khoản tiền vay",
-    "10%/năm",
-    "150% lãi suất cơ bản",
-    "Không giới hạn"
+    "Mức 10%/năm theo ngân hàng",
+    "150% lãi suất cơ bản của NHNN",
+    "Không giới hạn mức lãi suất"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 468.",
@@ -46,9 +46,9 @@
    "q": "Có thỏa thuận trả lãi nhưng không xác định rõ lãi suất và có tranh chấp thì lãi suất là bao nhiêu?",
    "options": [
     "50% mức lãi suất giới hạn tại thời điểm trả nợ",
-    "20%/năm",
-    "0%",
-    "Lãi suất ngân hàng"
+    "20%/năm của khoản tiền gốc đã vay và chưa trả",
+    "Không phải trả lãi, coi như vay không lãi suất",
+    "Lãi suất ngân hàng tại thời điểm ký hợp đồng"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 468.",

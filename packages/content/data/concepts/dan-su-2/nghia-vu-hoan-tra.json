@@ -29,9 +29,9 @@
    "q": "Người nhặt được tài sản không tìm được chủ sở hữu thì phải làm gì?",
    "options": [
     "Giao cho cơ quan nhà nước có thẩm quyền",
-    "Được giữ làm của mình ngay",
-    "Bán và giữ tiền",
-    "Tiêu hủy"
+    "Được giữ làm của mình ngay vì không ai nhận",
+    "Bán tài sản và giữ tiền riêng cho bản thân",
+    "Tiêu hủy tài sản đó để tránh tranh chấp"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 579.",
@@ -46,9 +46,9 @@
    "q": "Người được lợi về tài sản không có căn cứ pháp luật làm người khác thiệt hại phải làm gì?",
    "options": [
     "Hoàn trả khoản lợi đó cho người bị thiệt hại",
-    "Chỉ xin lỗi",
-    "Nộp phạt cho Nhà nước",
-    "Không phải làm gì"
+    "Chỉ xin lỗi người bị thiệt hại và hứa sửa chữa",
+    "Nộp phạt cho Nhà nước theo mức quy định",
+    "Không phải làm gì vì đã có sự thỏa thuận"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 579.",

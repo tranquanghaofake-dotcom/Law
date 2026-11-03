@@ -47,9 +47,9 @@
    "q": "Mức phạt vi phạm theo BLDS do ai xác định?",
    "options": [
     "Các bên thỏa thuận, trừ trường hợp luật liên quan có quy định khác",
-    "Luôn tối đa 8%",
-    "Tòa án ấn định",
-    "Không được vượt quá 5%"
+    "Luôn tối đa 8% giá trị phần nghĩa vụ bị vi phạm theo quy định của luật",
+    "Tòa án ấn định mức phạt theo ý kiến chủ quan của thẩm phán",
+    "Không được vượt quá 5% giá trị phần nghĩa vụ bị vi phạm theo hợp đồng"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 418.",

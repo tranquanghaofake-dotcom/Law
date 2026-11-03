@@ -28,9 +28,9 @@
    "q": "Cam kết không xây nhà cao quá 3 tầng để không che tầm nhìn của hàng xóm là dạng nghĩa vụ nào?",
    "options": [
     "Không được thực hiện công việc nhất định",
-    "Chuyển giao vật",
-    "Trả tiền",
-    "Chuyển giao quyền"
+    "Chuyển giao vật cho bên kia theo thời hạn",
+    "Trả tiền theo kỳ hạn cố định hằng tháng",
+    "Chuyển giao quyền sử dụng tài sản cho hàng xóm"
    ],
    "answer": 0,
    "explain": "Điều 274.",
@@ -45,9 +45,9 @@
    "q": "Ai là bên có quyền trong quan hệ nghĩa vụ?",
    "options": [
     "Chủ thể được hưởng lợi ích từ việc thực hiện nghĩa vụ",
-    "Chủ thể phải chuyển giao vật",
-    "Cơ quan nhà nước",
-    "Người làm chứng"
+    "Người được cử đại diện thực hiện nghĩa vụ trong hợp đồng",
+    "Chủ thể phải chuyển giao vật cho bên còn lại theo hợp đồng",
+    "Cơ quan nhà nước có thẩm quyền quản lý nghĩa vụ đó"
    ],
    "answer": 0,
    "explain": "Điều 274.",

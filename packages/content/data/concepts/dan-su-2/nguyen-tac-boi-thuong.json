@@ -29,9 +29,9 @@
    "q": "Người gây thiệt hại có thể được giảm mức bồi thường khi nào?",
    "options": [
     "Không có lỗi hoặc có lỗi vô ý và thiệt hại quá lớn so với khả năng kinh tế",
-    "Khi có lỗi cố ý",
-    "Khi bị hại giàu có",
-    "Khi thiệt hại nhỏ"
+    "Khi có lỗi cố ý và thiệt hại nhỏ mà chủ thể đã tự nguyện đền bù",
+    "Khi bị hại giàu có và có thu nhập ổn định hơn người gây thiệt hại",
+    "Khi thiệt hại nhỏ và người gây thiệt hại có đủ khả năng kinh tế để chi trả"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 585.",

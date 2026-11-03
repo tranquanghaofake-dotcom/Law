@@ -45,9 +45,9 @@
    "q": "Không có thỏa thuận và luật không quy định thì hợp đồng ủy quyền có hiệu lực bao lâu?",
    "options": [
     "01 năm kể từ ngày xác lập việc ủy quyền",
-    "06 tháng",
-    "05 năm",
-    "Vô thời hạn"
+    "06 tháng kể từ ngày xác lập việc ủy quyền",
+    "05 năm kể từ ngày ký kết hợp đồng ủy quyền",
+    "Vô thời hạn cho đến khi bên ủy quyền hủy"
    ],
    "answer": 0,
    "explain": "Điều 563.",
