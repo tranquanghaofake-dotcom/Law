@@ -67,3 +67,21 @@ Tổng: 56 tình huống mới; 27 khái niệm đạt ≥ 4 tình huống.
 - `khieu-nai` — căn cứ là Luật Khiếu nại 2011 (VBHN 28/VBHN-VPQH 2026), chưa có file trong `laws/`; cần file hoặc tra cứu rồi bổ sung.
 - `nguyen-tac-quan-ly-hanh-chinh` — slide (vấn đề 4) chỉ nêu số lượng nguyên tắc (5 chính trị–xã hội, 2 tổ chức–kỹ thuật), không liệt kê tên; cần giáo trình.
 - `phuong-phap-quan-ly-hanh-chinh` — slide (vấn đề 5) chưa nêu đủ danh mục hình thức/phương pháp; cần giáo trình.
+
+## Cờ dò trích dẫn (haiku-2)
+
+| id#item | loại | quyết định | ghi chú |
+|---|---|---|---|
+| `quyet-dinh-hanh-chinh#-1` | khoản không tồn tại | **sửa** | "khoản 6, Điều 30" → "điểm c khoản 1 Điều 30 Luật Tố tụng hành chính 2015" (Điều 30 chỉ có 4 khoản; nội bộ là điểm c khoản 1) |
+| `thoi-hieu-xu-phat#-1` | khoản không tồn tại | **sửa** | "khoản 3 Điều 65" → "khoản 2 Điều 65 Luật Xử lý vi phạm hành chính" (hết thời hiệu vẫn áp dụng khắc phục hậu quả theo khoản 2) |
+| `truong-giao-duong#-1` | tên văn bản gán nhầm | **sửa** | Điều 91, khoản 2 Điều 105 ghi rõ là Luật Xử lý vi phạm hành chính |
+| `truong-giao-duong#1` | tên văn bản gán nhầm | **sửa** | explain ghi rõ "khoản 2 Điều 92 Luật XLVPHC; khoản 2 Điều 12 BLHS" |
+| `truong-giao-duong#6` | tên văn bản gán nhầm | báo nhầm | Điều 92 đúng là Luật XLVPHC (đã rõ trong ngữ cảnh) |
+| `giao-duc-tai-xa#-1` | khoản không tồn tại | báo nhầm | khoản 5 Điều 90 có trong file nhưng đã bãi bỏ ("5. (được bãi bỏ)"); bài ghi đúng |
+| `cong-dan-nguoi-nuoc-ngoai-hanh-chinh#1` | lệch nội dung | báo nhầm | Điều 27 Hiến pháp 2013 đúng nội dung (quyền bầu cử 18 tuổi, ứng cử 21 tuổi) |
+| `to-chuc-xa-hoi#6` | lệch nội dung | báo nhầm | Điều 25 Hiến pháp 2013 đúng nội dung (ngôn luận, báo chí, lập hội, biểu tình) |
+| `bien-phap-xu-ly-hanh-chinh#-1` | thuật ngữ cũ "thị trấn" | báo nhầm | câu nói về thay đổi từ 2025 (lịch sử) |
+| `can-bo-cong-chuc#5` | thuật ngữ cũ "cấp huyện" | để opus | truefalse, đáp án Sai đúng với Điều 1 Luật Cán bộ, công chức 2025 |
+| `thu-tuc-hanh-chinh#-1`, `#0`, (4 cờ) | văn bản ngoài kho | ⚠ | Nghị định 63/2010/NĐ-CP không có trong `laws/`; nguồn ghi rõ là tài liệu seminar. ⚠ opus/Hào: kiểm tay trên vbpl.vn trước khi giữ |
+
+⚠ opus: `pair` "Có ngân sách cấp huyện" và các câu về cấp huyện thuộc loại thuat-ngu-cu do opus xử lý (không thuộc phạm vi sửa của haiku).
