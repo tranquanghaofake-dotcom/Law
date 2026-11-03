@@ -7,11 +7,22 @@ import { mulberry32 } from '$lib/engine/rng';
 import { typeKey } from '$lib/engine/arrange';
 
 const WORDS = ['tài sản', 'nghĩa vụ', 'hợp đồng', 'thừa kế', 'bồi thường', 'chiếm hữu', 'đại diện', 'thời hiệu'];
+// định nghĩa khác hẳn nhau (câu sinh loại các khái niệm có định nghĩa chồng nhau)
+const DEFS = [
+  'việc một bên chuyển giao tài sản cho bên kia để nhận lại một khoản tiền tương ứng',
+  'quyền của người thừa kế được nhận di sản theo hàng do luật định sẵn',
+  'nghĩa vụ bồi thường khi gây thiệt hại ngoài hợp đồng do lỗi của mình',
+  'sự kiện pháp lý làm chấm dứt tư cách chủ thể của pháp nhân trong doanh nghiệp',
+  'thời hạn mà khi kết thúc thì phát sinh hoặc mất quyền khởi kiện trước tòa',
+  'biện pháp bảo đảm bằng cách giao giữ một vật có giá trị cho người có quyền',
+  'hình thức đại diện theo ủy quyền được xác lập bằng văn bản giữa hai người',
+  'trạng thái nắm giữ, chi phối vật một cách trực tiếp như chủ sở hữu thật',
+];
 function concept(id: string, k = 0, o: Partial<Concept> = {}): Concept {
   const w = WORDS[k % WORDS.length];
   return {
     id, subject: 'hp', chapter: 'c', term: `Chế định ${id}`,
-    definition: `Chế định ${id} là quy định về ${w} giữa các chủ thể, áp dụng trong trường hợp thứ ${k + 1} theo luật.`,
+    definition: `Chế định ${id} là ${DEFS[k % DEFS.length]}.`,
     plain: 'Giải thích ngắn.', example: `Ông K và bà L gặp chuyện về ${w} lần ${k + 1}.`,
     source: { kind: 'statute', cite: 'Đ1' }, checked: '2026-11-01', confusables: [], keywords: ['a', 'b', 'c'],
     items: [

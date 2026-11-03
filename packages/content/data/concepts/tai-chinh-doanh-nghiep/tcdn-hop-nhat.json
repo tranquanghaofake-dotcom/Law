@@ -30,7 +30,7 @@
    "q": "Kết quả của hợp nhất công ty là gì?",
    "options": [
     "Hình thành một công ty mới, các công ty bị hợp nhất chấm dứt tồn tại",
-    "Một công ty bị sáp nhập vào công ty khác đang tồn tại và vẫn giữ nguyên",
+    "Một công ty sáp nhập vào công ty khác, công ty nhận sáp nhập vẫn tồn tại",
     "Một công ty chia thành nhiều công ty mới, công ty cũ vẫn tồn tại",
     "Một công ty mua cổ phần chi phối của công ty khác, cả hai cùng tồn tại"
    ],

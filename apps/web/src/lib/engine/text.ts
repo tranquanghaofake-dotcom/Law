@@ -121,3 +121,29 @@ export function nearDuplicate(a: string, b: string): boolean {
   const union = ga.size + gb.size - inter;
   return union > 0 && inter / union >= 0.9;
 }
+
+/** Bỏ dấu thanh/dấu mũ, đ → d: so khớp không lệ thuộc kiểu bỏ dấu ("hòa"/"hoà"). */
+const fold = (s: string): string => normalize(s).normalize('NFD').replace(/\p{M}+/gu, '').replace(/đ/g, 'd');
+const foldedBigrams = (s: string): Set<string> => {
+  const w = fold(s).split(' ').filter(Boolean);
+  return new Set(w.length < 2 ? w : w.slice(1).map((x, i) => `${w[i]} ${x}`));
+};
+
+/**
+ * Hai mô tả chồng nhau: một bên gần như nằm trong bên kia (hệ số chồng lấn cặp tiếng, đã bỏ dấu, ≥ 0,6),
+ * ví dụ định nghĩa "Hiến pháp" nằm trọn trong định nghĩa "Hiệu lực pháp lý cao nhất của Hiến pháp".
+ * Chỉ xét khi bên ngắn có ≥ 3 cặp tiếng; ngắn hơn thì dùng `nearDuplicate`.
+ */
+export function overlaps(a: string, b: string): boolean {
+  if (nearDuplicate(a, b) || fold(a) === fold(b)) return true;
+  const ga = foldedBigrams(a), gb = foldedBigrams(b);
+  const small = Math.min(ga.size, gb.size);
+  if (small < 3) return false;
+  const inter = [...ga].filter((g) => gb.has(g)).length;
+  return inter / small >= 0.6;
+}
+
+/** Mô tả đủ thông tin: bỏ chỗ che "[…]" và "(…)" vẫn còn ≥ `min` tiếng. */
+export function informative(text: string, min = 6): boolean {
+  return normalize(text.split(MASK).join(' ').replace(/\(…\)/g, ' ')).split(' ').filter(Boolean).length >= min;
+}

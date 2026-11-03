@@ -36,8 +36,8 @@
       "options": [
         "03 ngày làm việc",
         "07 ngày làm việc",
-        "30 ngày làm việc",
-        "01 tháng làm việc"
+        "15 ngày làm việc",
+        "60 ngày làm việc"
       ],
       "answer": 1,
       "explain": "Điểm a khoản 1 Điều 66.",
@@ -100,8 +100,8 @@
       "q": "Ai có thẩm quyền quyết định áp dụng biện pháp giáo dục tại xã, phường, đặc khu?",
       "options": [
         "Chủ tịch Ủy ban nhân dân cấp xã",
-        "Tòa án nhân dân tối cao và tòa án",
-        "Bộ trưởng Bộ Công an hoặc Bộ trưởng",
+        "Chánh án Tòa án nhân dân cấp huyện",
+        "Trưởng Công an cấp tỉnh trực tiếp",
         "Hội đồng nhân dân tỉnh, thành phố"
       ],
       "answer": 0,

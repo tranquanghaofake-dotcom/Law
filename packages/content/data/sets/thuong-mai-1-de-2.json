@@ -114,8 +114,8 @@
       "options": [
         "Đúng 50%",
         "Trên 50%",
-        "Trên 40%",
-        "Trên 65%"
+        "Dưới 30%",
+        "Dưới 50%"
       ],
       "answer": 1,
       "explain": "Khoản 11 Điều 4.",

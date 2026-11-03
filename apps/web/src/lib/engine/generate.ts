@@ -3,7 +3,7 @@
 import type { Concept, ItemMcq, ItemPair, ItemTrueFalse } from '$lib/content/types';
 import { normalize } from './grading';
 import type { MatchItem, SortItem } from './step';
-import { clip, coverage, leaks, maskDefiningHead, maskTerms, nearDuplicate, termParts } from './text';
+import { clip, coverage, informative, leaks, maskDefiningHead, maskTerms, nearDuplicate, overlaps, termParts } from './text';
 
 /** Dữ liệu nạp thêm để làm phương án nhiễu: khái niệm dễ nhầm/cùng chương, bảng tên khái niệm theo môn. */
 export type GenContext = { pool?: Concept[]; terms?: Record<string, Record<string, string>> };
@@ -70,7 +70,7 @@ export function pickDistractors(cands: Cand[], n: number, rng: () => number, tar
   const out: { cand: Cand; text: string }[] = [];
   for (const x of ok) {
     if (out.length >= n) break;
-    if (out.some((o) => nearDuplicate(o.text, x.text))) continue;
+    if (out.some((o) => overlaps(o.text, x.text))) continue;
     out.push({ cand: x.cand, text: x.text });
   }
   return out;
@@ -86,16 +86,42 @@ const explainOf = (c: Concept, lead: string): string => `${lead} ${clip(c.plain,
 
 /** Định nghĩa (đã che thuật ngữ của chính nó và `alsoMask`) để hiển thị. */
 function shownDefinition(c: Concept, max: number, alsoMask: string[] = []): string {
-  let t = maskTerms(c.definition, [...termParts(c.term), ...alsoMask.flatMap(termParts)]);
+  return shownText(c, c.definition, max, alsoMask);
+}
+
+function shownText(c: Concept, text: string, max: number, alsoMask: string[] = []): string {
+  let t = maskTerms(text, [...termParts(c.term), ...alsoMask.flatMap(termParts)]);
   for (const term of [c.term, ...alsoMask]) t = maskDefiningHead(t, term);
   return clip(t, max);
 }
 
-/** Định nghĩa → thuật ngữ (bậc 1). Null nếu định nghĩa sau khi che vẫn lộ thuật ngữ, hoặc thiếu phương án. */
+/** Đếm số lần loại vì mô tả chồng nhau / ít thông tin (để đo trên toàn dữ liệu, ghi engine.md). */
+export const genStats = { defOverlapDistractor: 0, matchPlainFallback: 0, matchDropped: 0, matchNull: 0, lowInfo: 0 };
+export function resetGenStats(): void { for (const k of Object.keys(genStats) as (keyof typeof genStats)[]) genStats[k] = 0; }
+
+/**
+ * Hai khái niệm có định nghĩa chồng nhau (sau khi che cả hai tên): định nghĩa của khái niệm này
+ * cũng mô tả được khái niệm kia → không được cùng xuất hiện trong một câu định nghĩa/ghép cặp.
+ */
+export function definitionsOverlap(a: Concept, b: Concept): boolean {
+  return overlaps(shownDefinition(a, 4000, [b.term]), shownDefinition(b, 4000, [a.term]));
+}
+
+/** Bỏ ứng viên có định nghĩa chồng với `c` (chỉ xét được ứng viên đủ dữ liệu). */
+function distinctFrom(c: Concept, cands: Cand[]): Cand[] {
+  return cands.filter((x) => {
+    if (!x.concept || !definitionsOverlap(c, x.concept)) return true;
+    genStats.defOverlapDistractor++;
+    return false;
+  });
+}
+
+/** Định nghĩa → thuật ngữ (bậc 1). Null nếu định nghĩa sau khi che vẫn lộ thuật ngữ / ít thông tin, hoặc thiếu phương án. */
 export function genDefTerm(c: Concept, cands: Cand[], rng: () => number): ItemMcq | null {
   const text = shownDefinition(c, LIMITS.defQuestion);
   if (leaks(text, c.term) || normalize(text).length < 30) return null;
-  const wrong = pickDistractors(cands, MAX_OPTIONS - 1, rng, c.term.length, (x) => x.term);
+  if (!informative(text)) { genStats.lowInfo++; return null; }
+  const wrong = pickDistractors(distinctFrom(c, cands), MAX_OPTIONS - 1, rng, c.term.length, (x) => x.term);
   return mcq(`«${text}»\nĐịnh nghĩa trên là của khái niệm nào?`, c.term, wrong.map((w) => w.text), explainOf(c, `Đây là định nghĩa «${c.term}» (${c.source.cite}).`), rng, 1, c);
 }
 
@@ -103,9 +129,10 @@ export function genDefTerm(c: Concept, cands: Cand[], rng: () => number): ItemMc
 export function genTermDef(c: Concept, cands: Cand[], rng: () => number): ItemMcq | null {
   const correct = shownDefinition(c, LIMITS.defOption);
   if (normalize(correct).length < 30) return null;
-  const wrong = pickDistractors(cands.filter((x) => x.concept), MAX_OPTIONS - 1, rng, correct.length, (x) => {
+  if (!informative(correct)) { genStats.lowInfo++; return null; }
+  const wrong = pickDistractors(distinctFrom(c, cands.filter((x) => x.concept)), MAX_OPTIONS - 1, rng, correct.length, (x) => {
     const t = shownDefinition(x.concept!, LIMITS.defOption, [c.term]);
-    return nearDuplicate(t, correct) || normalize(t).length < 30 ? null : t;
+    return overlaps(t, correct) || !informative(t) || normalize(t).length < 30 ? null : t;
   });
   return mcq(`Đâu là định nghĩa của «${c.term}»?`, correct, wrong.map((w) => w.text), `«${c.term}»: ${clip(c.definition, LIMITS.explain)} (${c.source.cite}).`, rng, 1, c);
 }
@@ -119,7 +146,7 @@ const nested = (a: string, b: string): boolean => coverage(a, b) >= 0.6 || cover
  */
 export function genExampleConcept(c: Concept, cands: Cand[], rng: () => number): ItemMcq | null {
   if (leaks(c.example, c.term)) return null;
-  const ok = cands.filter((x) => !leaks(c.example, x.term) && !nested(x.term, c.term));
+  const ok = distinctFrom(c, cands.filter((x) => !leaks(c.example, x.term) && !nested(x.term, c.term)));
   const wrong = pickDistractors(ok, MAX_OPTIONS - 1, rng, c.term.length, (x) => x.term);
   return mcq(`«${c.example}»\nTình huống trên minh hoạ cho khái niệm nào?`, c.term, wrong.map((w) => w.text), explainOf(c, `Ví dụ minh hoạ «${c.term}».`), rng, 4, c);
 }
@@ -132,16 +159,15 @@ export function genExampleConcept(c: Concept, cands: Cand[], rng: () => number):
  */
 export function genDefTrueFalse(c: Concept, cands: Cand[], answer: boolean, rng: () => number): ItemTrueFalse | null {
   const text = shownDefinition(c, LIMITS.defQuestion);
-  if (leaks(text, c.term) || normalize(text).length < 30) return null;
+  if (leaks(text, c.term) || normalize(text).length < 30 || !informative(text)) return null;
   const cite = c.source.cite;
   if (answer) {
     return { type: 'truefalse', level: 4, statement: `«${text}» là định nghĩa của «${c.term}».`, answer: true, explain: `Đúng. Đây là định nghĩa «${c.term}» (${cite}).`, source: c.source };
   }
-  const own = shownDefinition(c, LIMITS.defOption);
   const safe = cands.filter((x) => x.concept && x.tier <= 2
     && !nested(x.term, c.term)
     && maskDefiningHead(c.definition, x.term) === c.definition
-    && !nearDuplicate(shownDefinition(x.concept, LIMITS.defOption), own));
+    && !definitionsOverlap(c, x.concept));
   if (!safe.length) return null;
   const x = safe[Math.floor(rng() * safe.length)];
   return {
@@ -150,18 +176,42 @@ export function genDefTrueFalse(c: Concept, cands: Cand[], answer: boolean, rng:
   };
 }
 
-/** Ghép cặp nhanh (bậc 2): `c` + tối đa 3 khái niệm khác (ưu tiên theo thứ tự `others`). Cần ≥ 3 cặp. */
+/**
+ * Ghép cặp nhanh (bậc 2): `c` + tối đa 3 khái niệm khác (ưu tiên theo thứ tự `others`). Cần ≥ 3 cặp.
+ * Mô tả = định nghĩa đã che mọi tên trong nhóm. Hai mô tả chồng nhau (vd "Hiến pháp" và "Hiệu lực pháp lý cao nhất
+ * của Hiến pháp") hoặc mô tả ít thông tin → thử `plain` của khái niệm đó; vẫn không được thì bỏ khái niệm ấy.
+ */
 export function genMatch(c: Concept, others: Concept[], rng: () => number, n = 4): MatchItem | null {
-  const chosen: Concept[] = [c];
+  type Pick = { x: Concept; src: string };
+  const chosen: Pick[] = [];
+  const textOf = (p: Pick, terms: string[]) => shownText(p.x, p.src, LIMITS.matchText, terms.filter((t) => t !== p.x.term));
+  const ok = (p: Pick, terms: string[], with_: Pick[]) => {
+    const t = textOf(p, terms);
+    return normalize(t).length >= 20 && informative(t) && !with_.some((q) => q.x.id !== p.x.id && overlaps(textOf(q, terms), t));
+  };
+  const tryAdd = (x: Concept): boolean => {
+    const terms = [...chosen.map((p) => p.x.term), x.term];
+    for (const src of [x.definition, x.plain]) {
+      const p = { x, src };
+      if (ok(p, terms, chosen)) {
+        if (src === x.plain) genStats.matchPlainFallback++;
+        chosen.push(p);
+        return true;
+      }
+    }
+    return false;
+  };
+  if (!tryAdd(c)) { genStats.matchNull++; return null; }
   for (const x of others) {
     if (chosen.length >= n) break;
-    if (x.subject !== c.subject || chosen.some((y) => y.id === x.id || nearDuplicate(y.term, x.term))) continue;
-    chosen.push(x);
+    if (x.subject !== c.subject || chosen.some((p) => p.x.id === x.id || nearDuplicate(p.x.term, x.term))) continue;
+    if (!tryAdd(x)) genStats.matchDropped++;
   }
-  if (chosen.length < 3) return null;
-  const allTerms = chosen.map((x) => x.term);
-  const pairs = chosen.map((x) => ({ conceptId: x.id, term: x.term, text: shownDefinition(x, LIMITS.matchText, allTerms.filter((t) => t !== x.term)) }));
-  if (pairs.some((p, i) => normalize(p.text).length < 20 || pairs.some((q, j) => j < i && nearDuplicate(p.text, q.text)))) return null;
+  // kiểm lại với đủ tên của cả nhóm (che thêm tên có thể làm mô tả ít thông tin hoặc giống nhau hơn)
+  const all = chosen.map((p) => p.x.term);
+  const final = chosen.filter((p) => ok(p, all, chosen));
+  if (final.length !== chosen.length || final.length < 3 || !final.some((p) => p.x.id === c.id)) { genStats.matchNull++; return null; }
+  const pairs = final.map((p) => ({ conceptId: p.x.id, term: p.x.term, text: textOf(p, all) }));
   return { type: 'match', level: 2, pairs: shuffle(pairs, rng), explain: explainOf(c, `«${c.term}»:`) };
 }
 

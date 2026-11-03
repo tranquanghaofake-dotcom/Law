@@ -2,7 +2,7 @@
 
 Sinh bởi `apply.py`. Đáp án đúng **không đổi** (ký tự và vị trí). Chỉ phương án sai được viết lại để đáp án đúng không còn dài nhất một cách hệ thống. Dòng có ⚠ cần Hào xem kỹ.
 
-Số câu đã sửa: 33 · có ⚠: 0
+Số câu đã sửa: 33 · có ⚠: 1
 
 | Khái niệm / bộ đề | Câu hỏi | Đáp án đúng | Nhiễu cũ → mới | Ghi chú |
 |---|---|---|---|---|
@@ -38,4 +38,4 @@ Số câu đã sửa: 33 · có ⚠: 0
 | Đề kiểm tra Luật Ngân hàng – Huy động vốn, cấp tín dụng, thanh toán, ngoại hối (`ngan-hang-de-2`) | Sau khi ngân hàng trả thay theo bảo lãnh, khách hàng phải làm gì? | Nhận nợ bắt buộc và hoàn trả | **B** Không phải trả → Không phải trả khoản nào cả<br>**C** Chỉ trả lãi → Chỉ trả lãi theo thỏa thuận<br>**D** Trả cho bên nhận bảo lãnh → Trả cho bên nhận bảo lãnh thêm |  |
 | Đề kiểm tra Luật Ngân hàng – Huy động vốn, cấp tín dụng, thanh toán, ngoại hối (`ngan-hang-de-2`) | Dịch vụ trung gian thanh toán là gì? | Hoạt động trung gian kết nối, truyền dẫn, xử lý dữ liệu điện tử các giao dịch thanh toán | **B** Cho vay qua ứng dụng → Cho vay qua ứng dụng di động của ngân hàng và các tổ chức tài chính khác trong nước<br>**C** Nhận tiền gửi trực tuyến → Nhận tiền gửi trực tuyến từ khách hàng cá nhân và tổ chức có tài khoản thanh toán tại Việt Nam<br>**D** Phát hành tiền → Phát hành tiền điện tử để thay thế hoàn toàn tiền mặt trong lưu thông tại Việt Nam |  |
 | Đề kiểm tra Luật Ngân hàng – Huy động vốn, cấp tín dụng, thanh toán, ngoại hối (`ngan-hang-de-2`) | Vàng là ngoại hối trong trường hợp nào? | Vàng thỏi mang ra khỏi lãnh thổ Việt Nam | **B** Nhẫn vàng mua ở tiệm → Nhẫn vàng mua ở tiệm vàng để tích trữ<br>**C** Vàng trang sức thừa kế → Vàng trang sức thừa kế được cất giữ<br>**D** Mọi trường hợp → Mọi trường hợp vàng được mua bán trong nước |  |
-| Đề kiểm tra Luật Ngân hàng – Huy động vốn, cấp tín dụng, thanh toán, ngoại hối (`ngan-hang-de-2`) | Người nước ngoài được phép cư trú tại Việt Nam bao lâu thì là người cư trú? | Từ 12 tháng trở lên | **A** Từ 6 tháng → Từ sáu tháng trở lên<br>**C** Từ 183 ngày → Từ 9 tháng liên tục<br>**D** Từ 24 tháng → Từ 24 tháng trở lên |  |
+| Đề kiểm tra Luật Ngân hàng – Huy động vốn, cấp tín dụng, thanh toán, ngoại hối (`ngan-hang-de-2`) | Người nước ngoài được phép cư trú tại Việt Nam bao lâu thì là người cư trú? | Từ 12 tháng trở lên | **A** Từ 6 tháng → Từ sáu tháng trở lên<br>**C** Từ 183 ngày → Từ 9 tháng liên tục<br>**D** Từ 24 tháng → Từ 3 tháng trở lên | ⚠ nhiễu cũ 'Từ 24 tháng trở lên' là tập con của 'từ 12 tháng trở lên' nên cũng thỏa; bản mới tránh khoảng lồng |

@@ -114,7 +114,7 @@
       "options": [
         "Mọi công việc phù hợp với sức khỏe của người lao động",
         "Chỉ công việc nhẹ theo danh mục do Bộ trưởng ban hành",
-        "Không được làm việc trong mọi trường hợp đặc biệt",
+        "Không được làm việc cho đến khi đủ 16 tuổi trở lên",
         "Công việc nặng nhọc nếu cha mẹ đồng ý bằng văn bản"
       ],
       "answer": 1,
@@ -128,7 +128,7 @@
         "Rút ngắn thời giờ làm việc hằng ngày hoặc làm việc không trọn thời gian",
         "Không ký HĐLĐ bằng văn bản với người sử dụng lao động đó trong mọi trường hợp",
         "Làm thêm giờ không giới hạn theo thỏa thuận riêng với người sử dụng lao động",
-        "Không đóng BHXH trong suốt thời gian làm việc tiếp tục của mình"
+        "Không chịu sự điều chỉnh của Bộ luật Lao động trong suốt thời gian làm việc"
       ],
       "answer": 0,
       "explain": "Khoản 2 Điều 148.",

@@ -48,8 +48,8 @@
    "q": "Chi phí khám bệnh, chữa bệnh bảo hiểm y tế do ai chi trả?",
    "options": [
     "Quỹ bảo hiểm y tế và người tham gia cùng chi trả",
-    "Chỉ quỹ bảo hiểm y tế và không có sự tham gia",
-    "Chỉ người bệnh tự chi trả toàn bộ chi phí điều trị",
+    "Cơ sở khám bệnh tự chịu toàn bộ chi phí cho người bệnh",
+    "Do người sử dụng lao động chi trả toàn bộ",
     "Chỉ ngân sách nhà nước đảm bảo toàn bộ chi phí khám"
    ],
    "answer": 0,

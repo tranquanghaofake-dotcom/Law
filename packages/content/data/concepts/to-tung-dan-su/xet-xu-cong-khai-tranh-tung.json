@@ -29,8 +29,8 @@
    "options": [
     "Sơ thẩm, phúc thẩm, giám đốc thẩm, tái thẩm",
     "Chỉ sơ thẩm, không có các cấp xét xử khác",
-    "Chỉ sơ thẩm và phúc thẩm trong vụ án này",
-    "Chỉ phúc thẩm, không sơ thẩm và giám đốc thẩm"
+    "Sơ thẩm và phúc thẩm, không có giám đốc thẩm",
+    "Phúc thẩm và giám đốc thẩm, không có sơ thẩm"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 24.",

@@ -22,9 +22,9 @@
       "q": "Quyền lựa chọn phương thức huy động, sử dụng vốn được quy định ở đâu?",
       "options": [
         "Khoản 3 Điều 7",
-        "Điều 69 Luật này",
-        "Điều 135 Luật",
-        "Điều 201 Luật"
+        "Khoản 1 Điều 69",
+        "Khoản 2 Điều 135",
+        "Khoản 1 Điều 201"
       ],
       "answer": 0,
       "explain": "Khoản 3 Điều 7.",
@@ -63,7 +63,7 @@
         "Các thành viên, cổ đông sáng lập liên đới",
         "Riêng người góp tài sản phải chịu trách nhiệm",
         "Công ty phải chịu trách nhiệm hoàn trả toàn bộ",
-        "Tổ chức thẩm định giá chịu trách nhiệm pháp lý"
+        "Cơ quan đăng ký kinh doanh chịu trách nhiệm"
       ],
       "answer": 0,
       "explain": "Khoản 2 Điều 36.",

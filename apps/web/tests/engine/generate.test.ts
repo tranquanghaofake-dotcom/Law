@@ -1,14 +1,25 @@
 import { describe, expect, it } from 'vitest';
-import { readdirSync, readFileSync } from 'node:fs';
+import { readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import type { Concept, ItemMcq, ItemPair } from '$lib/content/types';
-import { candidates, genDefTerm, genDefTrueFalse, genExampleConcept, genMatch, genSort, genTermDef, isGenericPair, pickDistractors } from '$lib/engine/generate';
+import { candidates, definitionsOverlap, genDefTerm, genDefTrueFalse, genExampleConcept, genMatch, genSort, genStats, genTermDef, isGenericPair, pickDistractors, resetGenStats } from '$lib/engine/generate';
 import { mulberry32 } from '$lib/engine/rng';
-import { leaks, MASK } from '$lib/engine/text';
+import { informative, leaks, MASK, overlaps } from '$lib/engine/text';
 
+const DEFS: Record<string, string> = {
+  a: 'việc một bên chuyển giao tài sản cho bên kia để nhận lại một khoản tiền tương ứng',
+  b: 'quyền của người thừa kế được nhận di sản theo hàng do luật định sẵn',
+  c: 'nghĩa vụ bồi thường khi gây thiệt hại ngoài hợp đồng do lỗi của mình',
+  d: 'sự kiện pháp lý làm chấm dứt tư cách chủ thể của pháp nhân trong doanh nghiệp',
+  e: 'thời hạn mà khi kết thúc thì phát sinh hoặc mất quyền khởi kiện trước tòa',
+  f: 'biện pháp bảo đảm bằng cách giao giữ một vật có giá trị cho người có quyền',
+  g: 'hình thức đại diện theo ủy quyền được xác lập bằng văn bản giữa hai người',
+  h: 'trạng thái nắm giữ, chi phối vật một cách trực tiếp như chủ sở hữu thật',
+  z: 'chế tài hành chính áp dụng cho tổ chức vi phạm quy định về môi trường sống',
+};
 function C(id: string, o: Partial<Concept> = {}): Concept {
   return {
-    id, subject: 'ds', chapter: 'c1', term: `Chế định ${id}`, definition: `Chế định ${id} là quy định riêng số ${id} về quan hệ dân sự giữa các bên.`,
+    id, subject: 'ds', chapter: 'c1', term: `Chế định ${id}`, definition: `Chế định ${id} là ${DEFS[id] ?? `quy định riêng số ${id} về quan hệ dân sự`}.`,
     plain: `Giải thích dễ hiểu cho ${id}.`, example: `Anh A làm việc thứ ${id} với chị B trong một hợp đồng.`,
     source: { kind: 'statute', cite: `Điều ${id}` }, checked: '2026-11-01', confusables: [], keywords: ['a'], items: [], ...o,
   };
@@ -70,7 +81,7 @@ describe('genTermDef', () => {
     const it = genTermDef(a, candidates(a, [a, C('b'), C('c'), C('d')]), rng)!;
     expect(it.q).toContain(a.term);
     for (const o of it.options) expect(o.includes('Chế định')).toBe(false);
-    expect(it.options[it.answer]).toContain('quy định riêng số a');
+    expect(it.options[it.answer]).toContain(DEFS.a);
   });
   it('chỉ dùng ứng viên có đủ dữ liệu (không dùng bảng tên)', () => {
     const a = C('a');
@@ -210,4 +221,66 @@ describe('genDefTrueFalse', () => {
     const far = C('z', { chapter: 'xa', term: 'Chế định xa' });
     expect(genDefTrueFalse(a, candidates(a, [a, b, far]), false, rng)).toBeNull();
   });
+});
+
+// ---------- Hồi quy đợt 6 (ảnh a5/1280-light-01-match-mid): hai mô tả ghép cặp gần trùng ----------
+describe('mô tả chồng nhau không cùng xuất hiện trong một câu', () => {
+  const hp = all.filter((c) => c.subject === 'hien-phap');
+  const get = (id: string) => hp.find((c) => c.id === id)!;
+  const hienPhap = get('hien-phap');
+  const hieuLuc = get('hieu-luc-phap-ly-toi-cao');
+
+  it('"Hiến pháp" và "Hiệu lực pháp lý cao nhất của Hiến pháp" có định nghĩa chồng nhau ("hòa"/"hoà" coi như một)', () => {
+    expect(definitionsOverlap(hienPhap, hieuLuc)).toBe(true);
+    expect(overlaps('luật cơ bản của nước Cộng hòa xã hội chủ nghĩa Việt Nam', 'Đây là luật cơ bản của nước Cộng hoà xã hội chủ nghĩa Việt Nam, có hiệu lực cao nhất')).toBe(true);
+  });
+  it('mô tả chỉ còn "[…]" + vài chữ là ít thông tin', () => {
+    expect(informative(`${MASK} là ${MASK} của Nhà nước.`)).toBe(false);
+    expect(informative(`${MASK} là luật cơ bản của nước, có hiệu lực pháp lý cao nhất.`)).toBe(true);
+  });
+  it('ghép cặp: không có hai mô tả chồng nhau / ít thông tin (cả hai thứ tự, nhiều seed)', () => {
+    for (let seed = 1; seed <= 30; seed++) {
+      const r = mulberry32(seed);
+      for (const [main, other] of [[hienPhap, hieuLuc], [hieuLuc, hienPhap]]) {
+        const rest = hp.filter((c) => c.chapter === main.chapter && c.id !== main.id && c.id !== other.id);
+        const m = genMatch(main, [other, ...rest], r);
+        if (!m) continue;
+        for (const p of m.pairs) expect(informative(p.text)).toBe(true);
+        for (let i = 0; i < m.pairs.length; i++) for (let j = 0; j < i; j++) expect(overlaps(m.pairs[i].text, m.pairs[j].text)).toBe(false);
+      }
+    }
+  });
+  it('định nghĩa → thuật ngữ của "Hiến pháp" không lấy "Hiệu lực pháp lý cao nhất…" làm nhiễu', () => {
+    for (let seed = 1; seed <= 20; seed++) {
+      const d = genDefTerm(hienPhap, candidates(hienPhap, hp), mulberry32(seed));
+      if (d) expect(d.options).not.toContain(hieuLuc.term);
+    }
+  });
+  it('toàn dữ liệu: ghép cặp không có mô tả chồng nhau; câu định nghĩa không lấy nhiễu có định nghĩa chồng', () => {
+    const r = mulberry32(99);
+    resetGenStats();
+    let match = 0, defTerm = 0;
+    for (const c of all) {
+      const same = all.filter((x) => x.subject === c.subject && x.id !== c.id);
+      const near = same.filter((x) => x.chapter === c.chapter || c.confusables.includes(x.id));
+      const m = genMatch(c, near, r);
+      if (m) {
+        match++;
+        for (let i = 0; i < m.pairs.length; i++) {
+          expect(informative(m.pairs[i].text)).toBe(true);
+          for (let j = 0; j < i; j++) expect(overlaps(m.pairs[i].text, m.pairs[j].text), `${c.id}: ${m.pairs[i].conceptId} ~ ${m.pairs[j].conceptId}`).toBe(false);
+        }
+      }
+      const d = genDefTerm(c, candidates(c, same), r);
+      if (d) {
+        defTerm++;
+        for (const o of d.options) {
+          const x = same.find((y) => y.term === o);
+          if (x) expect(definitionsOverlap(c, x), `${c.id} ~ ${x.id}`).toBe(false);
+        }
+      }
+    }
+    // số liệu ghi engine.md (GEN_STATS_OUT=<file> để ghi ra file)
+    if (process.env.GEN_STATS_OUT) writeFileSync(process.env.GEN_STATS_OUT, JSON.stringify({ match, defTerm, ...genStats }));
+  }, 60000);
 });
