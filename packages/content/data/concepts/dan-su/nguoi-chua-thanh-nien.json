@@ -29,9 +29,9 @@
    "q": "Giao dịch dân sự của người chưa đủ 6 tuổi do ai xác lập, thực hiện?",
    "options": [
     "Người đại diện theo pháp luật",
-    "Chính người đó",
-    "Ủy ban nhân dân xã",
-    "Tòa án"
+    "Chính người đó, không ai đồng ý",
+    "Ủy ban nhân dân xã nơi cư trú",
+    "Tòa án tuyên bố và chỉ định người"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 21.",
@@ -46,9 +46,9 @@
    "q": "Người 16 tuổi muốn bán xe máy của mình thì cần điều kiện gì?",
    "options": [
     "Được người đại diện theo pháp luật đồng ý",
-    "Không cần ai đồng ý",
-    "Phải đợi đủ 18 tuổi mới được bán",
-    "Phải được Tòa án cho phép"
+    "Không cần ai đồng ý vì đã đủ tuổi lao động",
+    "Phải đợi đủ 18 tuổi mới được bán xe",
+    "Phải được Tòa án cho phép bằng quyết định"
    ],
    "answer": 0,
    "explain": "Khoản 4 Điều 21: giao dịch liên quan động sản phải đăng ký cần người đại diện đồng ý.",

@@ -29,9 +29,9 @@
    "q": "Khi giao dịch giả tạo nhằm che giấu một giao dịch khác thì giao dịch bị che giấu có hiệu lực không?",
    "options": [
     "Vẫn có hiệu lực, trừ khi bản thân nó cũng vô hiệu theo luật",
-    "Luôn vô hiệu",
-    "Luôn có hiệu lực",
-    "Do Ủy ban nhân dân quyết định"
+    "Luôn vô hiệu, không cần xét đến nội dung và mục đích thực hiện",
+    "Luôn có hiệu lực, không phụ thuộc vào giao dịch giả tạo",
+    "Do Ủy ban nhân dân quyết định theo từng vụ việc riêng"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 124.",
@@ -46,9 +46,9 @@
    "q": "Theo Điều 123, \"điều cấm của luật\" là gì?",
    "options": [
     "Những quy định của luật không cho phép chủ thể thực hiện những hành vi nhất định",
-    "Những chuẩn mực đạo đức",
-    "Mọi quy định của nghị định",
-    "Tập quán địa phương"
+    "Những chuẩn mực đạo đức của cộng đồng về cách ứng xử trong quan hệ dân sự",
+    "Mọi quy định của nghị định hướng dẫn thi hành luật, không phân biệt nội dung và phạm vi",
+    "Tập quán địa phương được cộng đồng công nhận và áp dụng trong giao dịch"
    ],
    "answer": 0,
    "explain": "Đoạn 2 Điều 123.",

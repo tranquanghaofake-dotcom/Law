@@ -29,9 +29,9 @@
    "q": "Chiếm hữu là gì theo khoản 1 Điều 179?",
    "options": [
     "Việc chủ thể nắm giữ, chi phối tài sản trực tiếp hoặc gián tiếp như chủ thể có quyền",
-    "Quyền định đoạt tài sản",
-    "Việc đăng ký quyền sở hữu",
-    "Quyền thừa kế tài sản"
+    "Quyền định đoạt tài sản của chủ sở hữu, bao gồm cả quyền bán và cho thuê tài sản",
+    "Việc đăng ký quyền sở hữu tại cơ quan đăng ký có thẩm quyền ở địa phương, có đầy đủ hồ sơ",
+    "Quyền thừa kế tài sản của người đã mất, nhận trước khi người đó chết và có di chúc"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 179.",
@@ -46,9 +46,9 @@
    "q": "Việc chiếm hữu của người không phải chủ sở hữu có làm phát sinh quyền sở hữu không?",
    "options": [
     "Không, trừ các trường hợp luật quy định",
-    "Luôn luôn có",
-    "Có sau 1 năm",
-    "Có nếu tài sản dưới 10 triệu"
+    "Luôn luôn có, không cần điều kiện nào",
+    "Có sau một năm chiếm hữu liên tục công khai",
+    "Có nếu tài sản có giá trị dưới mười triệu"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 179.",

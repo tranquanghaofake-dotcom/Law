@@ -47,9 +47,9 @@
    "q": "Điều kiện nào thuộc điều kiện có hiệu lực của giao dịch dân sự theo khoản 1 Điều 117?",
    "options": [
     "Chủ thể tham gia hoàn toàn tự nguyện",
-    "Phải có người làm chứng",
-    "Phải đăng ký tại Ủy ban nhân dân",
-    "Giá trị trên 10 triệu đồng"
+    "Phải có người làm chứng khi giao kết",
+    "Phải đăng ký tại Ủy ban nhân dân xã",
+    "Giá trị trên mười triệu đồng trở lên"
    ],
    "answer": 0,
    "explain": "Điểm b khoản 1 Điều 117.",
