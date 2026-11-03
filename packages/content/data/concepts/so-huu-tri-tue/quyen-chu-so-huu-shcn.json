@@ -30,9 +30,9 @@
    "q": "Chủ sở hữu đối tượng sở hữu công nghiệp có những quyền tài sản nào?",
    "options": [
     "Sử dụng, cho phép sử dụng; ngăn cấm người khác sử dụng; định đoạt",
-    "Chỉ quyền đứng tên",
-    "Quyền nhân thân vô thời hạn",
-    "Quyền thu thuế"
+    "Chỉ quyền đứng tên trên sản phẩm và bao bì hàng hóa đã bán",
+    "Quyền nhân thân vô thời hạn và không thể chuyển nhượng nào",
+    "Quyền thu thuế từ hoạt động sử dụng đối tượng sở hữu công nghiệp nào"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 123.",

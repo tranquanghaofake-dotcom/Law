@@ -31,9 +31,9 @@
    "q": "Bằng độc quyền sáng chế có hiệu lực bao lâu?",
    "options": [
     "Từ ngày cấp đến hết 20 năm kể từ ngày nộp đơn",
-    "10 năm từ ngày cấp",
-    "Vô thời hạn",
-    "5 năm, gia hạn nhiều lần"
+    "10 năm từ ngày cấp văn bằng bảo hộ sáng chế",
+    "Vô thời hạn kể từ ngày nộp đơn và không gia hạn",
+    "5 năm, gia hạn nhiều lần theo quyết định"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 93.",
@@ -48,9 +48,9 @@
    "q": "Bằng độc quyền kiểu dáng công nghiệp có thể gia hạn bao nhiêu lần?",
    "options": [
     "Hai lần liên tiếp, mỗi lần năm năm",
-    "Không được gia hạn",
-    "Nhiều lần, mỗi lần mười năm",
-    "Một lần mười năm"
+    "Không được gia hạn lần nào sau khi cấp",
+    "Nhiều lần, mỗi lần mười năm trong nước",
+    "Một lần mười năm, không được gia hạn"
    ],
    "answer": 0,
    "explain": "Khoản 4 Điều 93.",

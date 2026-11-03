@@ -30,9 +30,9 @@
    "q": "Quyền đối với nhãn hiệu nổi tiếng được xác lập trên cơ sở nào?",
    "options": [
     "Sử dụng, không phụ thuộc vào thủ tục đăng ký",
-    "Đăng ký tại Cục Sở hữu trí tuệ",
-    "Quyết định của Tòa án",
-    "Đăng ký quốc tế"
+    "Đăng ký tại Cục Sở hữu trí tuệ và nộp lệ phí",
+    "Quyết định của Tòa án nhân dân có thẩm quyền",
+    "Đăng ký quốc tế theo Thỏa ước Madrid lần đầu"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 3 Điều 6.",
@@ -47,9 +47,9 @@
    "q": "Nhãn hiệu nổi tiếng là nhãn hiệu được biết đến rộng rãi bởi ai và ở đâu?",
    "options": [
     "Bộ phận công chúng có liên quan, trên lãnh thổ Việt Nam",
-    "Toàn thế giới",
-    "Chỉ chủ sở hữu",
-    "Cơ quan nhà nước"
+    "Toàn thế giới, không phân biệt lãnh thổ quốc gia nào",
+    "Chỉ chủ sở hữu nhãn hiệu và người thân trong gia đình nào",
+    "Cơ quan nhà nước có thẩm quyền quản lý nhãn hiệu"
    ],
    "answer": 0,
    "explain": "Khoản 20 Điều 4.",

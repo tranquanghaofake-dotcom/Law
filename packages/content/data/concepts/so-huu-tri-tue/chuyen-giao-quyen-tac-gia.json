@@ -29,8 +29,8 @@
    "q": "Tác giả có thể chuyển nhượng quyền nhân thân nào?",
    "options": [
     "Quyền công bố tác phẩm",
-    "Quyền đứng tên",
-    "Quyền đặt tên",
+    "Quyền đứng tên tác phẩm",
+    "Quyền đặt tên tác phẩm",
     "Quyền bảo vệ toàn vẹn"
    ],
    "answer": 0,
@@ -46,9 +46,9 @@
    "q": "Chuyển quyền sử dụng quyền tác giả khác chuyển nhượng ở điểm nào?",
    "options": [
     "Chỉ cho phép sử dụng có thời hạn, chủ sở hữu vẫn giữ quyền",
-    "Chuyển giao quyền sở hữu vĩnh viễn",
-    "Không cần hợp đồng",
-    "Chỉ áp dụng với quyền nhân thân"
+    "Chuyển giao quyền sở hữu vĩnh viễn cho bên nhận quyền nào",
+    "Không cần hợp đồng bằng văn bản và không cần đăng ký",
+    "Chỉ áp dụng với quyền nhân thân của tác giả đã mất"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 47.",

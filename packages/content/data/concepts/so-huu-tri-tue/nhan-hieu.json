@@ -30,9 +30,9 @@
    "q": "Điều kiện bảo hộ nhãn hiệu theo Điều 72 gồm những gì?",
    "options": [
     "Là dấu hiệu nhìn thấy được hoặc âm thanh thể hiện được dưới dạng đồ họa, và có khả năng phân biệt",
-    "Có tính mới và trình độ sáng tạo",
-    "Có nguồn gốc địa lý",
-    "Đã sử dụng 5 năm"
+    "Có tính mới và trình độ sáng tạo cao, đáp ứng điều kiện của sáng chế theo pháp luật",
+    "Có nguồn gốc địa lý rõ ràng, gắn với vùng sản xuất đặc trưng và điều kiện tự nhiên của địa phương",
+    "Đã sử dụng liên tục 5 năm trên thị trường trong nước và có doanh thu lớn đáng kể nào"
    ],
    "answer": 0,
    "explain": "Điều 72.",
@@ -47,9 +47,9 @@
    "q": "Dấu hiệu âm thanh có thể được bảo hộ là nhãn hiệu không?",
    "options": [
     "Có, nếu thể hiện được dưới dạng đồ họa và có khả năng phân biệt",
-    "Không bao giờ",
-    "Chỉ nhãn hiệu nổi tiếng",
-    "Chỉ khi kèm hình ảnh"
+    "Không bao giờ được bảo hộ dưới bất kỳ hình thức nào nữa",
+    "Chỉ nhãn hiệu nổi tiếng đã được đăng ký quốc tế và có tính mới nào",
+    "Chỉ khi kèm hình ảnh minh họa và có thể đọc được bằng máy"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 72.",

@@ -30,9 +30,9 @@
    "q": "Sinh viên tự sao chép một bản để học tập cá nhân, không vì mục đích thương mại thì có phải xin phép không?",
    "options": [
     "Không phải xin phép, không trả tiền nhưng phải thông tin tên tác giả, nguồn gốc",
-    "Phải xin phép và trả tiền",
-    "Phải đăng ký với Cục Bản quyền",
-    "Bị cấm tuyệt đối"
+    "Phải xin phép tác giả và trả tiền bản quyền cho mỗi bản sao chép tự học nhất định",
+    "Phải đăng ký với Cục Bản quyền và nộp hồ sơ xin phép trước khi sao chép",
+    "Bị cấm tuyệt đối, không có ngoại lệ nào cho mục đích học tập cá nhân"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 1 Điều 25.",

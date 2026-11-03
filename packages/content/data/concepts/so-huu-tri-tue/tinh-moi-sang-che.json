@@ -47,9 +47,9 @@
    "q": "Khi nào sáng chế được coi là chưa bị bộc lộ công khai?",
    "options": [
     "Chỉ một số người có hạn biết và có nghĩa vụ giữ bí mật",
-    "Đã đăng trên báo nhưng ít người đọc",
-    "Đã trưng bày tại triển lãm công cộng",
-    "Đã bán sản phẩm ra thị trường"
+    "Đã đăng trên báo nhưng ít người đọc và chưa được thống kê",
+    "Đã trưng bày tại triển lãm công cộng và có nhiều người xem",
+    "Đã bán sản phẩm ra thị trường và có nhiều khách hàng sử dụng"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 60.",

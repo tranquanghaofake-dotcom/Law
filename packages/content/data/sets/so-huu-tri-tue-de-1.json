@@ -8,10 +8,10 @@
     {
       "q": "Bạn viết một bài thơ, đăng Facebook, chưa đăng ký ở đâu. Quyền tác giả phát sinh khi nào?",
       "options": [
-        "Khi được Cục Bản quyền cấp giấy chứng nhận",
+        "Khi được Cục Bản quyền cấp giấy chứng nhận và nộp lệ phí đầy đủ",
         "Khi bài thơ được sáng tạo và thể hiện dưới hình thức vật chất nhất định",
-        "Khi có người chia sẻ",
-        "Khi in thành sách"
+        "Khi có người chia sẻ bài thơ trên mạng xã hội và được nhiều người biết nào",
+        "Khi in thành sách và được phát hành rộng rãi trên thị trường nào"
       ],
       "answer": 1,
       "explain": "Khoản 1 Điều 6.",
@@ -21,10 +21,10 @@
     {
       "q": "Mã nguồn ứng dụng do bạn viết được bảo hộ dưới hình thức nào?",
       "options": [
-        "Sáng chế",
+        "Sáng chế được cấp văn bằng bảo hộ",
         "Quyền tác giả như tác phẩm văn học",
-        "Kiểu dáng công nghiệp",
-        "Bí mật kinh doanh bắt buộc"
+        "Kiểu dáng công nghiệp của phần mềm",
+        "Bí mật kinh doanh bắt buộc đăng ký"
       ],
       "answer": 1,
       "explain": "Khoản 1 Điều 22.",
@@ -34,10 +34,10 @@
     {
       "q": "Đối tượng nào KHÔNG được bảo hộ quyền tác giả?",
       "options": [
-        "Tác phẩm nhiếp ảnh",
+        "Tác phẩm nhiếp ảnh chụp",
         "Văn bản quy phạm pháp luật",
-        "Chương trình máy tính",
-        "Tác phẩm kiến trúc"
+        "Chương trình máy tính viết",
+        "Tác phẩm kiến trúc nhà ở"
       ],
       "answer": 1,
       "explain": "Điều 15.",
@@ -61,9 +61,9 @@
       "q": "Quyền nào của tác giả được bảo hộ vô thời hạn?",
       "options": [
         "Quyền đứng tên trên tác phẩm",
-        "Quyền sao chép",
-        "Quyền công bố",
-        "Quyền phân phối"
+        "Quyền sao chép tác phẩm mới",
+        "Quyền biểu diễn tác phẩm",
+        "Quyền phân phối bản sao tác phẩm"
       ],
       "answer": 0,
       "explain": "Khoản 1 Điều 27.",
@@ -74,9 +74,9 @@
       "q": "Nhà văn mất năm 2010. Quyền tài sản với tiểu thuyết của ông được bảo hộ đến khi nào?",
       "options": [
         "Hết ngày 31/12/2060",
-        "Hết năm 2085",
-        "Vô thời hạn",
-        "Hết năm 2030"
+        "Hết ngày 31/12/2085",
+        "Vô thời hạn tự do",
+        "Hết ngày 31/12/2030"
       ],
       "answer": 0,
       "explain": "Điểm b, c khoản 2 Điều 27: suốt đời + 50 năm, chấm dứt 24 giờ ngày 31/12.",
@@ -86,10 +86,10 @@
     {
       "q": "Sinh viên tự chép tay một bản tài liệu đã công bố để tự học, ghi rõ tác giả. Việc này thế nào?",
       "options": [
-        "Xâm phạm quyền tác giả",
+        "Xâm phạm quyền tác giả nghiêm trọng và phải bồi thường",
         "Thuộc ngoại lệ, không phải xin phép, không trả tiền",
-        "Phải trả tiền bản quyền",
-        "Phải xin phép tác giả"
+        "Phải trả tiền bản quyền cho tác giả và chủ sở hữu",
+        "Phải xin phép tác giả trước khi sao chép tài liệu"
       ],
       "answer": 1,
       "explain": "Điểm a khoản 1 Điều 25.",
@@ -112,10 +112,10 @@
     {
       "q": "Tác giả có thể chuyển nhượng quyền nhân thân nào?",
       "options": [
-        "Quyền đứng tên",
+        "Quyền đứng tên tác phẩm",
         "Quyền công bố tác phẩm",
         "Quyền bảo vệ toàn vẹn",
-        "Quyền đặt tên"
+        "Quyền đặt tên tác phẩm"
       ],
       "answer": 1,
       "explain": "Khoản 2 Điều 45.",
@@ -125,10 +125,10 @@
     {
       "q": "Cố ý vô hiệu hóa biện pháp công nghệ bảo vệ của một phần mềm có bản quyền để sao chép là gì?",
       "options": [
-        "Ngoại lệ hợp pháp",
+        "Ngoại lệ hợp pháp của tác giả nào",
         "Hành vi xâm phạm quyền tác giả",
         "Cạnh tranh không lành mạnh",
-        "Không vi phạm"
+        "Không vi phạm bản quyền nào"
       ],
       "answer": 1,
       "explain": "Khoản 4 Điều 28.",
