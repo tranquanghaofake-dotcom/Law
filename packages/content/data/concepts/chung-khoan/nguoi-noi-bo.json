@@ -46,7 +46,7 @@
    "options": [
     "Trước và sau giao dịch cổ phiếu của công ty (hoặc khi có thay đổi sở hữu)",
     "Chỉ sau khi giao dịch 1 năm kể từ ngày nhận cổ phiếu, không cần thông báo",
-    "Khi giao dịch trên 5% số cổ phiếu có quyền biểu quyết của công ty",
+    "Chỉ khi giao dịch trên 5% số cổ phiếu có quyền biểu quyết của công ty",
     "Công bố định kỳ mỗi năm một lần cùng với báo cáo thường niên của công ty"
    ],
    "answer": 0,
