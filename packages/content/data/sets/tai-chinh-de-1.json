@@ -47,7 +47,7 @@
     {
       "q": "Mức bố trí dự phòng ngân sách mỗi cấp?",
       "options": [
-        "Từ 1% đến 2%",
+        "Từ 1% đến 2% tổng chi",
         "Từ 2% đến 5%",
         "Từ 5% đến 10%",
         "Không giới hạn"
@@ -62,7 +62,7 @@
       "options": [
         "Chi thường xuyên bộ máy",
         "Chi đầu tư phát triển",
-        "Chi trả lương cán bộ",
+        "Chi trả lương cho cán bộ",
         "Chi tiếp khách, hội nghị"
       ],
       "answer": 1,
@@ -87,7 +87,7 @@
       "q": "Kết dư ngân sách cấp xã được xử lý thế nào?",
       "options": [
         "Hạch toán vào thu ngân sách năm sau",
-        "Nộp toàn bộ lên ngân sách cấp tỉnh đó",
+        "Nộp toàn bộ lên ngân sách cấp tỉnh",
         "Trích 50% vào quỹ dự trữ tài chính",
         "Chia thưởng cho cán bộ, công chức"
       ],

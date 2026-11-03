@@ -32,7 +32,7 @@
    "options": [
     "Tổ chức, cá nhân khai thác tài nguyên thuộc đối tượng chịu thuế",
     "Người tiêu dùng sản phẩm cuối cùng của quá trình sản xuất",
-    "Cơ quan quản lý tài nguyên, môi trường của chính quyền địa phương",
+    "Cơ quan quản lý tài nguyên và môi trường của chính quyền xã",
     "Người mua lại sản phẩm đã khai thác từ tài nguyên rừng"
    ],
    "answer": 0,
@@ -48,7 +48,7 @@
    "q": "Tài nguyên nào KHÔNG thuộc đối tượng chịu thuế tài nguyên?",
    "options": [
     "Nước thiên nhiên dùng cho nông nghiệp",
-    "Dầu thô khai thác từ các mỏ ngoài khơi",
+    "Dầu thô khai thác từ mỏ ngoài khơi",
     "Khoáng sản kim loại khai thác tại mỏ",
     "Yến sào thiên nhiên khai thác tại đảo"
    ],
