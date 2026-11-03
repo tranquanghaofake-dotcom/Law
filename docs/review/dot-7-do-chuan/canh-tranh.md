@@ -41,3 +41,13 @@ Số khái niệm: 16; số tình huống thêm: 33.
 | vi-tri-thong-linh-thi-truong | Doanh nghiệp duy nhất khai thác nước sạch trong một đô thị, không đối thủ nào hoạt động | Phải: Vị trí độc quyền | Điều 25 Luật Cạnh tranh 2018 |
 | xu-ly-vi-pham-canh-tranh | Doanh nghiệp thỏa thuận ấn định giá bán với đối thủ trên thị trường liên quan | Trái: Tối đa 10% doanh thu | Khoản 1 Điều 111 Luật Cạnh tranh 2018 |
 | xu-ly-vi-pham-canh-tranh | Doanh nghiệp đăng quảng cáo so sánh sản phẩm của mình nhưng không chứng minh được nội dung | Phải: Tối đa 2 tỷ đồng | Khoản 3 Điều 111 và điểm b khoản 5 Điều 45 Luật Cạnh tranh 2018 |
+
+## Giai đoạn 2 — cờ dò trích dẫn (haiku-1)
+
+Cờ của môn (`audit/flags/canh-tranh.jsonl`): 2. Không có sửa nội dung.
+
+**Báo nhầm / ngoài kho**
+- `thong-bao-tap-trung-kinh-te#-1` — ngoài kho (Nghị định 35/2020/NĐ-CP, Điều 36): kho không có toàn văn, chưa kiểm được; giữ nguyên.
+
+**⚠ opus**
+- `hanh-vi-cam-co-quan-nha-nuoc#-1` (ví dụ khái niệm) — "Ủy ban nhân dân huyện ra văn bản đề nghị…": cấp huyện đã kết thúc hoạt động từ 01/7/2025 (chính quyền địa phương 2 cấp); ví dụ đang dùng như hiện hành. Cần viết lại ví dụ (thuật ngữ cũ — opus).
