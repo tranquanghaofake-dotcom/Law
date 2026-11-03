@@ -6,7 +6,7 @@
   import type { Step } from '$lib/engine/session';
   import { hashFor } from '$lib/router.svelte';
   import { LEVEL_NAMES } from '$lib/game/levels';
-  import { answerText, promptText } from './cards/answer';
+  import { reviewTexts } from './cards/answer';
   import type { XpSource } from './session/xpSources';
   let { summary, concepts, streak, streakEvent, dueTomorrow, onhome, onagain, onnext, mistakes = [], promotion = null, sources = [], record = null, retryTotal: retryProp = 0 }: {
     summary: { correct: number; total: number; xp: number; levelUps: { conceptId: string; to: Level }[]; bestCombo?: number; golden?: number; fixed?: number; retried?: number };
@@ -78,16 +78,17 @@
     <h2>Xem lại câu sai ({mistakes.length})</h2>
     {#each mistakes as m, k (k)}
       {@const c = conceptOf(m.conceptId)}
+      {@const rv = reviewTexts(m, concepts)}
       <div class="card item">
         <p class="kicker">{#if c}<a href={hashFor('concepts', { subject: c.subject, concept: c.id })}>{c.term}</a>{:else}{m.conceptId}{/if}</p>
-        <b>{promptText(m.item)}</b>
+        <b>{rv.prompt}</b>
         {#if m.item.type === 'match' || m.item.type === 'pair' || m.item.type === 'sort'}
           <!-- dạng nhiều dòng: gập gọn, chỉ mở khi cần xem đủ -->
-          {@const lines = answerText(m.item).split('\n')}
+          {@const lines = rv.answer.split('\n')}
           <details class="ans-more"><summary>Đáp án ({lines.length} dòng) — bấm để xem</summary>
             <ul>{#each lines as ln, j (j)}<li>{ln.length > 160 ? ln.slice(0, 157) + '…' : ln}</li>{/each}</ul>
           </details>
-        {:else}<p class="ans">Đáp án: {answerText(m.item)}</p>{/if}
+        {:else}<p class="ans">Đáp án: {rv.answer}</p>{/if}
         {#if explainOf(m)}<p>{explainOf(m)}</p>{/if}
       </div>
     {/each}
