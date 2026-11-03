@@ -75,6 +75,21 @@
     {
      "text": "Vay vốn ưu đãi để sản xuất, kinh doanh",
      "answer": "right"
+    },
+    {
+     "text": "Thương binh được nhận phụ cấp hằng tháng theo mức thương tật",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 5 Pháp lệnh Ưu đãi người có công với cách mạng 2020"
+    },
+    {
+     "text": "Thân nhân liệt sỹ được nhận trợ cấp một lần theo quy định",
+     "answer": "left",
+     "basis": "Khoản 1 Điều 5 Pháp lệnh Ưu đãi người có công với cách mạng 2020"
+    },
+    {
+     "text": "Người có công được Nhà nước hỗ trợ để theo học đến trình độ đại học",
+     "answer": "right",
+     "basis": "Điểm đ khoản 2 Điều 5 Pháp lệnh Ưu đãi người có công với cách mạng 2020"
     }
    ],
    "explain": "Điều 5."
