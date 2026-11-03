@@ -1,6 +1,6 @@
 # Luyện Luật — Cải thiện phần nhìn (đợt nâng cấp 4): bớt trống, bớt trùng, tìm môn bằng bìa sách
 
-Phiên bản 0.3 · 03/11/2026 · Trạng thái: **Hào duyệt Q1–Q6 theo đề xuất (03/11/2026); PR 0 và PR 1 đã làm** trên nhánh `claude/nice-mendel-n8ebgl`; PR 2–4 chưa làm.
+Phiên bản 0.4 · 03/11/2026 · Trạng thái: **Hào duyệt Q1–Q6 theo đề xuất (03/11/2026); PR 0, 1, 2 đã làm** trên nhánh `claude/nice-mendel-n8ebgl`; PR 3–4 chưa làm.
 Kế thừa: spec layout (`2026-11-01-layout-redesign-design.md`), ngôn ngữ hình khối (`2026-11-01-ngon-ngu-hinh-khoi-design.md`), thăng chức (`2026-11-02-he-thong-thang-chuc-design.md`). Không đổi engine, FSRS, nội dung luật, bảng màu token "Văn Miếu", 4 đích đến của shell, schema nội dung.
 
 Cách soạn: Claude (Fable) chụp 32 ảnh hiện trạng và đọc code; haiku kiểm kê trùng lặp; sonnet khảo cứu bìa sách và mã nguồn mở; opus phản biện bản 0.1 — những chỗ bản 0.1 sai đã sửa và ghi ở §9.
@@ -233,6 +233,8 @@ Kết quả: 390 px thấy môn đầu tiên ngay màn đầu; laptop đầu tra
 
 - **PR 0** (commit `fix(giao-dien): đầu trang danh sách gọn`): đúng như §7; thêm thu tranh `.page-head` còn 40 % vì sau khi bỏ chiều cao tối thiểu tranh bị cắt ngọn.
 - **PR 1** (commit `feat(mon-hoc): thứ tự môn theo chương trình học`): `lib/ui/shelves.ts` (SHELVES, orderedSubjects, byRecency, lastStudiedBySubject, contrastRatio; test 6 ca), `pickHeroState` nhận `recent` (test 3 ca), Hôm nay ≤ 4 môn đang học / 3 môn "Bắt đầu từ đâu?", Môn học sắp theo chương trình, `StreakFlame` bỏ `aria-label` lệch chữ. E2E local: 2 test Hôm nay xanh; **4 test khác đỏ cả trên `main`** (lưới Hiến pháp mong 10 ô nay 101; lọc đề mong ít đề hơn; tên đợt; đếm khái niệm) — lệch dữ liệu từ các đợt thêm nội dung, cần PR `test/` riêng cập nhật kỳ vọng.
+- **PR 2** (commit `feat(mon-hoc): tủ sách giáo trình`): `lib/ui/bookCover.ts` (coverTitle, wrapTitle, monogramFor, matchSubject có chữ cái đầu; test 4 ca), `lib/art/BookCover.svelte` (120×160, màu phẳng theo kệ, chữ lồng, mép giấy kem, dải lụa khi đang học, dấu son khi xong), trang Môn học viết lại (ô tìm, 8 chip nhóm cuộn ngang, mục "Đang học", lưới `minmax(100px)` 3 cột ở 390 / 6 cột ở ≥ 768, thanh gỗ ở ≥ 768), bìa nhỏ ở hàng môn Hôm nay, bìa ở đầu trang môn cho 20 môn không có tranh riêng, gáy sách thưởng đổi màu theo kệ (Q6: `schemeFor` → `shelfOf().color`, `BookSpine` suy bảng màu từ một màu). Sửa thêm lỗi có sẵn: `.shell` giãn hàng khi trang ngắn (`align-content: start`) — lộ ra khi kết quả tìm chỉ có 3 bìa.
+  Số đo sau PR 2 (so với tiêu chí §3.5): 390 px — ô tìm và 3 bìa trong màn đầu (bìa đầu ở y ≈ 320, **chưa đạt mốc y ≤ 300** vì chip nhóm chiếm 50 px), tổng cao **2 725 px** (mục tiêu ≤ 2 200; trước 4 000); 1280 px — **2 497 px** (mục tiêu ≤ 2 000; trước ≈ 4 000). Chưa đạt mốc cuộn vì mỗi kệ có tiêu đề + thanh gỗ ≈ 90 px; nếu Hào muốn ngắn hơn: bỏ thanh gỗ ở laptop hoặc gộp kệ 1–2 cuốn — để Hào quyết sau khi dùng thử. Tìm "ds" → Dân sự 1, 2, Tố tụng dân sự: đạt. Bản tối: bìa nổi trên nền nhờ mép giấy kem: đạt. `npm run shots` chưa thêm lượt tối (chụp bằng script tạm trong phiên).
 
 ## 10. Sai khác so với bản 0.1 (sau phản biện)
 

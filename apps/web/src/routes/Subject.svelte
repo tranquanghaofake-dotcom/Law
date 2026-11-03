@@ -11,8 +11,11 @@
   import LevelLegend from '$lib/ui/LevelLegend.svelte';
   import SubjectRail from '$lib/ui/SubjectRail.svelte';
   import SubjectArt from '$lib/art/SubjectArt.svelte';
-  import { artFor, emblemFor } from '$lib/art/registry';
+  import { artFor, emblemFor, hasOwnArt, subjectEmblem } from '$lib/art/registry';
   import Emblem from '$lib/art/Emblem.svelte';
+  import BookCover from '$lib/art/BookCover.svelte';
+  import { shelfOf } from '$lib/ui/shelves';
+  import { coverTitle, monogramFor } from '$lib/ui/bookCover';
   /** Nhãn ngắn cho mục lục chương: "Chương 7. Quốc hội…" → "Chương 7"; "Nâng cao: …" → "Nâng cao". */
   const shortTitle = (t: string) => t.split(/[.:]/)[0].trim();
 
@@ -59,7 +62,11 @@
 {:else}
   <nav class="crumbs small muted" aria-label="Vị trí"><a href={hashFor('subjects')}>Môn học</a> › {subject.title}</nav>
   <header class="subject-head">
-    <SubjectArt name={artFor(subject.id)} class="head-art" />
+    {#if hasOwnArt(subject.id)}
+      <SubjectArt name={artFor(subject.id)} class="head-art" />
+    {:else}
+      <BookCover class="head-cover" title={coverTitle(subject.title)} monogram={monogramFor(subject)} color={shelfOf(subject.id).color} emblem={subjectEmblem(subject.id)} percent={summary.percent} state={summary.mastered === summary.total && summary.total > 0 ? 'done' : summary.mastered > 0 ? 'learning' : 'new'} w={132} />
+    {/if}
     <h1>{subject.title}</h1>
     <p class="muted">Thuần thục <b>{summary.percent}%</b> · {summary.mastered}/{summary.total} khái niệm · {summary.chapters} chương · {summary.lessons} đợt</p>
     <div class="bar" aria-hidden="true"><span style="width:{summary.percent}%"></span></div>

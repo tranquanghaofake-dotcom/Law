@@ -63,3 +63,9 @@ export function contrastRatio(a: string, b: string): number {
   const [x, y] = [lum(a), lum(b)];
   return (Math.max(x, y) + 0.05) / (Math.min(x, y) + 0.05);
 }
+
+/** Pha màu hex với đen theo tỉ lệ 0–1 (gáy sách: bóng mép, da bìa cấp 3). */
+export function mixBlack(hex: string, amount: number): string {
+  const ch = [1, 3, 5].map((i) => Math.round(parseInt(hex.slice(i, i + 2), 16) * (1 - amount)));
+  return '#' + ch.map((c) => c.toString(16).padStart(2, '0')).join('');
+}

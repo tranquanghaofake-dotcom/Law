@@ -13,10 +13,10 @@ describe('tranh cho nội dung mới', () => {
     expect(artFor('chung-khoan')).toBe('san-giao-dich');
     expect(artFor('lich-su-nn-pl')).toBe('bia-tien-si');
   });
-  it('màu gáy sách theo bìa thật: Hiến pháp vàng, Chứng khoán xanh, giáo trình Lịch sử xanh đêm', () => {
-    expect(schemeFor('hien-phap', 0)).toBe('vang');
-    expect(schemeFor('chung-khoan', 0)).toBe('xanh');
-    expect(schemeFor('lich-su-nn-pl', 0)).toBe('dem');
+  it('màu gáy sách theo kệ nhóm ngành (spec phần nhìn đợt 4, Q6): Hiến pháp son, Chứng khoán xanh lục, Lịch sử nâu', () => {
+    expect(schemeFor('hien-phap', 0)).toBe('#9E2A22');
+    expect(schemeFor('chung-khoan', 0)).toBe('#1F5F4A');
+    expect(schemeFor('lich-su-nn-pl', 0)).toBe('#6B4A2B');
   });
   it('mọi chương của 3 môn đều có huy hiệu riêng theo nội dung (không rơi vào mặc định)', () => {
     for (const s of ['hien-phap', 'chung-khoan', 'lich-su-nn-pl']) for (const ch of chapters(s)) expect(emblemFor(s, ch), `${s}/${ch}`).not.toBe('sach');
