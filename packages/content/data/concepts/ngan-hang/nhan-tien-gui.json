@@ -68,7 +68,7 @@
    "right": "Không phải nhận tiền gửi",
    "cases": [
     {
-     "text": "Nhận tiền gửi tiết kiệm có kỳ hạn của cá nhân",
+     "text": "Hoạt động tiếp nhận khoản tiền tiết kiệm có kỳ hạn của cá nhân với nguyên tắc hoàn trả đủ gốc và lãi",
      "answer": "left"
     },
     {
@@ -81,7 +81,7 @@
      "basis": "Khoản 27 Điều 4 Luật Các tổ chức tín dụng 2024"
     },
     {
-     "text": "Công ty cho thuê máy móc thu tiền thuê theo tháng, không nhận tiền gửi của khách",
+     "text": "Công ty cho thuê máy móc thu tiền thuê theo tháng, chỉ nhận tiền thanh toán dịch vụ của khách",
      "answer": "right",
      "basis": "Khoản 27 Điều 4 Luật Các tổ chức tín dụng 2024 (không thuộc nhận tiền gửi)"
     }
