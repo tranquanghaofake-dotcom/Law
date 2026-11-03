@@ -29,9 +29,9 @@
    "q": "Hành vi nào thuộc khoản 2 Điều 12 (giao dịch nội gián)?",
    "options": [
     "Tư vấn cho người khác mua chứng khoán trên cơ sở thông tin nội bộ",
-    "Mua cổ phiếu sau khi công ty công bố kết quả kinh doanh tốt cụ thể",
-    "Phân tích báo cáo tài chính đã công bố và đăng tải công khai khác",
-    "Đặt lệnh mua theo khuyến nghị công khai của công ty chứng khoán đó"
+    "Mua cổ phiếu sau khi công ty công bố kết quả kinh doanh tốt trên website",
+    "Phân tích báo cáo tài chính đã công bố và đăng tải công khai",
+    "Đặt lệnh mua theo khuyến nghị công khai của công ty chứng khoán"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 12.",
@@ -46,9 +46,9 @@
    "q": "Mức phạt tiền tối đa với hành vi tại khoản 2 Điều 12 (đối với tổ chức) được tính thế nào?",
    "options": [
     "10 lần khoản thu trái pháp luật có được từ hành vi vi phạm (hoặc mức 03 tỷ nếu cao hơn)",
-    "Cố định 100 triệu đồng cho mỗi lần vi phạm của tổ chức và cá nhân liên quan trong nước",
-    "5 lần vốn điều lệ đã góp của công ty và toàn bộ tài sản thuộc sở hữu nhà nước hiện hành",
-    "Không bị phạt tiền nhưng bị cảnh cáo công khai trên phương tiện truyền thông trong nước"
+    "Cố định 100 triệu đồng cho mỗi lần vi phạm của tổ chức và cá nhân có liên quan",
+    "5 lần vốn điều lệ đã góp của công ty và toàn bộ tài sản thuộc sở hữu của nhà nước",
+    "Không bị phạt tiền nhưng bị cảnh cáo công khai trên phương tiện truyền thông"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 132.",
@@ -102,8 +102,8 @@
    "q": "Luật sư được thuê tư vấn thương vụ sáp nhập (chưa công bố) của công ty niêm yết A. Luật sư mua cổ phiếu A qua tài khoản của mẹ. Nhận định nào đúng?",
    "options": [
     "Vi phạm khoản 2 Điều 12: sử dụng thông tin nội bộ để mua chứng khoán cho người khác",
-    "Không vi phạm vì luật sư không phải người nội bộ của công ty niêm yết A ngay lập tức",
-    "Không vi phạm vì tài khoản đứng tên mẹ của luật sư và được đăng ký hợp pháp cụ thể",
+    "Không vi phạm vì luật sư không phải người nội bộ của công ty niêm yết A",
+    "Không vi phạm vì tài khoản đứng tên mẹ của luật sư và được đăng ký hợp pháp",
     "Chỉ vi phạm đạo đức nghề luật sư và không bị xử phạt hành chính nào đối với hành vi"
    ],
    "answer": 0,

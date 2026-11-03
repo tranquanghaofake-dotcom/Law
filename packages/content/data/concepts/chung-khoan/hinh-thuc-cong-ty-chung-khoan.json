@@ -45,9 +45,9 @@
    "q": "Công ty chứng khoán được tổ chức dưới hình thức nào?",
    "options": [
     "Công ty trách nhiệm hữu hạn hoặc công ty cổ phần",
-    "Doanh nghiệp tư nhân do một cá nhân làm chủ khác",
-    "Công ty hợp danh có hai thành viên trở lên cụ thể",
-    "Hợp tác xã nông nghiệp và dịch vụ tài chính khác"
+    "Doanh nghiệp tư nhân do một cá nhân làm chủ",
+    "Công ty hợp danh có từ hai thành viên trở lên",
+    "Hợp tác xã nông nghiệp và dịch vụ tài chính"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 71.",

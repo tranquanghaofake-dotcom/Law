@@ -101,9 +101,9 @@
    "q": "Nhà đầu tư B chưa từng sở hữu cổ phần công ty C, muốn được phân bổ quyền mua cổ phần trong đợt tăng vốn cho cổ đông hiện hữu. Nhận định nào đúng?",
    "options": [
     "B không được phân bổ vì quyền mua cổ phần dành cho cổ đông hiện hữu",
-    "B được phân bổ vì mọi nhà đầu tư đều bình đẳng trước pháp luật khác",
-    "B được phân bổ nếu có tài khoản chứng khoán tại công ty trong nước",
-    "B được phân bổ nếu là nhà đầu tư chứng khoán chuyên nghiệp hiện hành"
+    "B được phân bổ vì mọi nhà đầu tư đều bình đẳng trước pháp luật",
+    "B được phân bổ nếu có tài khoản chứng khoán tại một công ty chứng khoán",
+    "B được phân bổ nếu là nhà đầu tư chứng khoán chuyên nghiệp"
    ],
    "answer": 0,
    "explain": "Khoản 7 Điều 4: quyền được mua cổ phần mới dành cho cổ đông hiện hữu. B chỉ có được quyền này nếu mua lại quyền từ cổ đông (khi quyền được chuyển nhượng theo điều kiện phát hành).",

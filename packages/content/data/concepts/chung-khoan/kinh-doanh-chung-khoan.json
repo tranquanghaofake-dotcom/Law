@@ -29,7 +29,7 @@
    "q": "Hoạt động nào sau đây KHÔNG phải kinh doanh chứng khoán theo khoản 28 Điều 4?",
    "options": [
     "Cá nhân tự mua, bán cổ phiếu cho chính mình",
-    "Môi giới chứng khoán cho khách hàng cá nhân",
+    "Môi giới chứng khoán cho các khách hàng cá nhân",
     "Quản lý danh mục đầu tư chứng khoán cá nhân",
     "Bảo lãnh phát hành chứng khoán cho doanh nghiệp"
    ],
@@ -103,8 +103,8 @@
    "options": [
     "Đây là kinh doanh chứng khoán (quản lý danh mục) khi không có giấy phép, lại cam kết lợi nhuận: trái luật",
     "Hợp pháp vì là thỏa thuận dân sự giữa các thành viên trong nhóm và không cần giấy phép kinh doanh chứng khoán",
-    "Hợp pháp nếu dưới 100 người tham gia nhóm, không thu phí quản lý và có cam kết lợi nhuận rõ ràng hiện hành",
-    "Chỉ là đầu tư chứng khoán của anh T cho bản thân, không liên quan đến người khác và tiền của họ hiện hành"
+    "Hợp pháp nếu dưới 100 người tham gia nhóm, không thu phí quản lý và có cam kết lợi nhuận rõ ràng",
+    "Chỉ là đầu tư chứng khoán của anh T cho bản thân, không liên quan đến người khác và tiền của họ"
    ],
    "answer": 0,
    "explain": "Khoản 28, 35 Điều 4; Điều 70 (cần giấy phép); khoản 1 Điều 91 (cấm cam kết lợi nhuận).",

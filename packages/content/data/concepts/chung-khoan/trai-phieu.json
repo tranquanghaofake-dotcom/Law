@@ -101,9 +101,9 @@
    "q": "Công ty X phát hành trái phiếu rồi thua lỗ nặng. Người sở hữu trái phiếu yêu cầu trả gốc đúng hạn; công ty trả lời \"trái chủ cũng phải chịu lỗ như cổ đông\". Nhận định nào đúng?",
    "options": [
     "Trái chủ là chủ nợ, có quyền đòi nợ theo điều kiện phát hành; việc công ty lỗ không biến họ thành cổ đông",
-    "Công ty đúng vì trái phiếu cũng là chứng khoán như cổ phiếu và chịu chung rủi ro thua lỗ theo quy định",
-    "Công ty đúng nếu được Đại hội đồng cổ đông đồng ý bằng nghị quyết và không cần thông báo cho trái chủ nào",
-    "Trái chủ chỉ được đòi lãi, không được đòi gốc khi công ty lỗ nặng và đã phá sản theo quyết định hiện hành"
+    "Công ty đúng vì trái phiếu cũng là chứng khoán như cổ phiếu và chịu chung rủi ro thua lỗ của công ty phát hành",
+    "Công ty đúng nếu được Đại hội đồng cổ đông đồng ý bằng nghị quyết và không cần thông báo cho trái chủ",
+    "Trái chủ chỉ được đòi lãi, không được đòi gốc khi công ty lỗ nặng và đã phá sản theo quyết định"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 4: trái phiếu xác nhận quyền đối với một phần NỢ. Rủi ro kinh doanh do chủ sở hữu (cổ đông) gánh trước; trái chủ đòi nợ theo điều kiện phát hành.",

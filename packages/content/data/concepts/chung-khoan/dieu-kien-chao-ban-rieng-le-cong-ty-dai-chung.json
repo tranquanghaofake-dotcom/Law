@@ -103,9 +103,9 @@
    "q": "Công ty đại chúng R muốn chào bán riêng lẻ cổ phiếu cho 15 cá nhân là người thân ban giám đốc, không ai là nhà đầu tư chuyên nghiệp hay chiến lược. Có hợp pháp không?",
    "options": [
     "Không, vì đối tượng tham gia chỉ gồm nhà đầu tư chiến lược và nhà đầu tư chứng khoán chuyên nghiệp",
-    "Có, vì dưới 100 nhà đầu tư nên là chào bán riêng lẻ theo quy định của pháp luật hiện hành hiện hành",
-    "Có, nếu Hội đồng quản trị đồng ý bằng nghị quyết và công bố thông tin đầy đủ cho cổ đông hiện hành",
-    "Có, nếu giá bán bằng mệnh giá và đã có danh sách đầy đủ người mua trước khi chào bán theo quy định"
+    "Có, vì dưới 100 nhà đầu tư nên là chào bán riêng lẻ theo quy định của pháp luật về chứng khoán và doanh nghiệp",
+    "Có, nếu Hội đồng quản trị đồng ý bằng nghị quyết và công bố thông tin đầy đủ cho cổ đông",
+    "Có, nếu giá bán bằng mệnh giá và đã có danh sách đầy đủ người mua trước khi chào bán"
    ],
    "answer": 0,
    "explain": "Dù dưới 100 người (thỏa khoản 20 Điều 4), công ty ĐẠI CHÚNG còn phải đáp ứng điểm b khoản 1 Điều 31 về đối tượng tham gia.",

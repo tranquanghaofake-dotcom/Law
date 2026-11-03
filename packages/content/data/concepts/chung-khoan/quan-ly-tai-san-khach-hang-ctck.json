@@ -46,8 +46,8 @@
    "q": "Khi công ty chứng khoán phá sản, tài sản của khách hàng được xử lý thế nào?",
    "options": [
     "Hoàn trả cho khách hàng sau khi trừ nghĩa vụ nợ của khách hàng đối với công ty",
-    "Đưa vào tài sản phá sản chia cho mọi chủ nợ theo tỷ lệ tổng nợ của công ty nào",
-    "Chuyển cho Nhà nước quản lý để bảo đảm an toàn cho các nhà đầu tư và khách hàng",
+    "Đưa vào tài sản phá sản chia cho mọi chủ nợ theo tỷ lệ tổng nợ của công ty",
+    "Chuyển cho Nhà nước quản lý để bảo đảm an toàn cho nhà đầu tư và khách hàng",
     "Chia đều cho các khách hàng theo số lượng chứng khoán đang nắm giữ tại công ty"
    ],
    "answer": 0,

@@ -28,7 +28,7 @@
    "q": "Theo khoản 20 Điều 4, chào bán riêng lẻ phải KHÔNG thuộc trường hợp nào?",
    "options": [
     "Chào bán thông qua phương tiện thông tin đại chúng",
-    "Chào bán cho nhà đầu tư chiến lược có kinh nghiệm",
+    "Chào bán cho các nhà đầu tư chiến lược có kinh nghiệm",
     "Chào bán cho dưới 100 nhà đầu tư không chuyên nghiệp",
     "Chào bán cho nhà đầu tư chứng khoán chuyên nghiệp"
    ],
@@ -45,9 +45,9 @@
    "q": "Chào bán chứng khoán riêng lẻ của tổ chức phát hành KHÔNG phải công ty đại chúng thực hiện theo luật nào?",
    "options": [
     "Luật Doanh nghiệp và quy định khác của pháp luật có liên quan",
-    "Chỉ Luật Chứng khoán và các văn bản hướng dẫn thi hành cụ thể",
-    "Luật Các tổ chức tín dụng và các văn bản liên quan đến ngân hàng",
-    "Bộ luật Dân sự và các quy định về giao dịch dân sự trong nước"
+    "Chỉ Luật Chứng khoán và các văn bản hướng dẫn thi hành",
+    "Luật Các tổ chức tín dụng và các văn bản liên quan ngân hàng",
+    "Bộ luật Dân sự và các quy định chung về giao dịch dân sự"
    ],
    "answer": 0,
    "explain": "Điều 30 Luật Chứng khoán dẫn chiếu sang Luật Doanh nghiệp.",

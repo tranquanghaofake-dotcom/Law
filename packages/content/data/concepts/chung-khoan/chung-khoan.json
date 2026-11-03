@@ -102,9 +102,9 @@
    "q": "Một công ty phát hành \"phiếu góp vốn dự án\" hứa chia lãi và tự gọi đó là chứng khoán. Loại phiếu này chưa thuộc danh sách khoản 1 Điều 4 và chưa được Chính phủ quy định. Nhận định nào đúng?",
    "options": [
     "Không thể coi là chứng khoán theo Luật Chứng khoán chỉ vì doanh nghiệp tự gọi tên như vậy",
-    "Là chứng khoán vì có hứa chia lãi cho nhà đầu tư và được quảng cáo rộng rãi trên mạng nào",
-    "Là chứng khoán vì doanh nghiệp có quyền tự đặt tên và đã thông báo cho cơ quan trong nước",
-    "Là chứng khoán nếu được bán cho trên 100 người nhà đầu tư và có hợp đồng bảo đảm hiện hành"
+    "Là chứng khoán vì có hứa chia lãi cho nhà đầu tư và được quảng cáo rộng rãi trên mạng",
+    "Là chứng khoán vì doanh nghiệp có quyền tự đặt tên và đã thông báo cho cơ quan quản lý nhà nước",
+    "Là chứng khoán nếu được bán cho trên 100 người nhà đầu tư và có hợp đồng bảo đảm"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 4 xác định chứng khoán bằng danh sách; loại mới phải do Chính phủ quy định (điểm d). Tên gọi do doanh nghiệp đặt không làm phát sinh tư cách chứng khoán.",

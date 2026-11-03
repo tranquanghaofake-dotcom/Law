@@ -28,7 +28,7 @@
    "q": "Ai lập và lưu giữ Sổ đăng ký người sở hữu chứng khoán đối với chứng khoán đăng ký tập trung?",
    "options": [
     "Tổng công ty lưu ký và bù trừ chứng khoán Việt Nam",
-    "Công ty chứng khoán của từng nhà đầu tư cá nhân đó",
+    "Công ty chứng khoán nơi nhà đầu tư cá nhân mở tài khoản",
     "Sở giao dịch chứng khoán Việt Nam và công ty thành viên",
     "Hội đồng quản trị công ty phát hành và ban kiểm soát"
    ],
@@ -45,8 +45,8 @@
    "q": "Ai được nhận các quyền phát sinh (cổ tức, quyền mua) liên quan đến chứng khoán?",
    "options": [
     "Người có tên trên Sổ đăng ký người sở hữu lập tại ngày đăng ký cuối cùng",
-    "Người mua chứng khoán trước ngày trả cổ tức và có tên trên sổ đăng ký đó",
-    "Người nắm giữ lâu nhất trong danh sách cổ đông của công ty đó trong nước",
+    "Người mua chứng khoán trước ngày trả cổ tức và có tên trên sổ đăng ký",
+    "Người nắm giữ lâu nhất trong danh sách cổ đông của công ty phát hành",
     "Người được Hội đồng quản trị chỉ định theo quyết định nội bộ của công ty"
    ],
    "answer": 0,
@@ -97,8 +97,8 @@
    "q": "X bán cổ phiếu Y vào ngày 13/6; cổ phiếu được chuyển khỏi tài khoản của X vào 16/6. Ngày đăng ký cuối cùng để trả cổ tức là 15/6. Ai nhận cổ tức?",
    "options": [
     "X, vì tại ngày đăng ký cuối cùng X vẫn có tên trên Sổ đăng ký",
-    "Người mua, vì đã đặt lệnh và thanh toán trước ngày 15/6 cụ thể",
-    "Chia đôi giữa hai người theo tỷ lệ thời gian nắm giữ hiện hành",
+    "Người mua, vì đã đặt lệnh và thanh toán trước ngày 15/6",
+    "Chia đôi giữa hai người theo tỷ lệ thời gian nắm giữ",
     "Không ai, vì đang trong thời gian chuyển nhượng và chưa hoàn tất"
    ],
    "answer": 0,

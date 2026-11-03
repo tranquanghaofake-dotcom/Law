@@ -45,9 +45,9 @@
    "q": "Nhà đầu tư có quyền khởi kiện chủ thể nào nếu bị vi phạm quyền lợi?",
    "options": [
     "Công ty quản lý quỹ, ngân hàng giám sát hoặc tổ chức liên quan",
-    "Chỉ Ủy ban Chứng khoán Nhà nước và cơ quan công an địa phương",
-    "Chỉ Sở giao dịch chứng khoán và công ty thành viên của sở khác",
-    "Không được khởi kiện vì đã ủy thác và đã ký hợp đồng hiện hành"
+    "Chỉ Ủy ban Chứng khoán Nhà nước và cơ quan công an các địa phương",
+    "Sở giao dịch chứng khoán và các công ty thành viên của Sở giao dịch",
+    "Hội đồng nhân dân tỉnh nơi công ty quản lý quỹ đặt trụ sở"
    ],
    "answer": 0,
    "explain": "Điểm d khoản 1 Điều 101.",

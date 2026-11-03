@@ -29,9 +29,9 @@
    "q": "Đặc điểm nào phân biệt quỹ đầu tư chứng khoán theo khoản 37 Điều 4?",
    "options": [
     "Nhà đầu tư không có quyền kiểm soát hằng ngày đối với việc ra quyết định đầu tư của quỹ",
-    "Nhà đầu tư trực tiếp quyết định từng giao dịch và kiểm soát hằng ngày đối với danh mục",
-    "Quỹ chỉ được đầu tư vào trái phiếu Chính phủ và tín phiếu kho bạc của Nhà nước hiện hành",
-    "Quỹ không có mục đích lợi nhuận và không đầu tư vào bất kỳ tài sản nào của công ty khác"
+    "Nhà đầu tư trực tiếp quyết định từng giao dịch và kiểm soát hằng ngày đối với toàn danh mục",
+    "Quỹ chỉ được đầu tư vào trái phiếu Chính phủ và tín phiếu kho bạc do Nhà nước Việt Nam phát hành",
+    "Quỹ không có mục đích lợi nhuận và không đầu tư vào bất kỳ tài sản nào của công ty"
    ],
    "answer": 0,
    "explain": "Khoản 37 Điều 4.",
@@ -46,9 +46,9 @@
    "q": "Theo Điều 99, quỹ đầu tư chứng khoán gồm những loại nào?",
    "options": [
     "Quỹ đại chúng và quỹ thành viên",
-    "Quỹ mở và quỹ thành viên đầu tư",
-    "Quỹ ngân hàng và quỹ bảo hiểm đó",
-    "Quỹ nhà nước và quỹ tư nhân nào"
+    "Quỹ trong nước và quỹ nước ngoài",
+    "Quỹ của ngân hàng và quỹ bảo hiểm",
+    "Quỹ của Nhà nước và quỹ tư nhân"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 99; quỹ đại chúng gồm quỹ mở và quỹ đóng (khoản 2).",
