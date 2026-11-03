@@ -30,9 +30,9 @@
    "q": "Theo Điều 6 Luật HNGĐ 1959, tuổi kết hôn là bao nhiêu?",
    "options": [
     "Con gái từ 18 tuổi, con trai từ 20 tuổi",
-    "Cả hai từ 18 tuổi",
-    "Con gái từ 16, con trai từ 18",
-    "Cả hai từ 20 tuổi"
+    "Cả hai bên từ 18 tuổi trở lên được kết hôn",
+    "Con gái từ 16 tuổi, con trai từ 18 tuổi",
+    "Con gái từ 20 tuổi, con trai từ 22 tuổi"
    ],
    "answer": 0,
    "explain": "Điều 6.",
@@ -47,9 +47,9 @@
    "q": "Theo Điều 11 Luật HNGĐ 1959, nghi thức kết hôn nào có giá trị pháp lý?",
    "options": [
     "Được Ủy ban hành chính cơ sở công nhận và ghi vào sổ kết hôn",
-    "Lễ cưới theo phong tục",
-    "Lễ tại nhà thờ, chùa",
-    "Hai bên tự thỏa thuận"
+    "Lễ cưới theo phong tục, có họ hàng hai bên chứng kiến và đồng ý",
+    "Lễ tại nhà thờ, chùa hoặc đình làng có thầy cúng làm chứng",
+    "Hai bên tự thỏa thuận với nhau và báo cho họ hàng biết ngày cưới"
    ],
    "answer": 0,
    "explain": "Điều 11.",

@@ -31,8 +31,8 @@
    "q": "Theo Điều thứ 9 Sắc lệnh 47, Bộ \"Hoàng Việt Hình Luật\" áp dụng ở đâu?",
    "options": [
     "Trung bộ",
-    "Bắc bộ",
-    "Nam bộ",
+    "Miền Bắc",
+    "Miền Nam",
     "Cả nước"
    ],
    "answer": 0,
@@ -48,9 +48,9 @@
    "q": "Ở Nam bộ, theo Điều thứ 10 Sắc lệnh 47, bộ hình luật nào vẫn được thi hành?",
    "options": [
     "Bộ hình luật Pháp tu chỉnh do sắc lệnh ngày 31/12/1912",
-    "Luật hình An Nam",
-    "Hoàng Việt hình luật",
-    "Quốc triều hình luật"
+    "Luật hình An Nam ban hành năm 1912 theo sắc lệnh",
+    "Hoàng Việt hình luật do vua Gia Long ban hành năm 1812",
+    "Quốc triều hình luật của nhà Lê, ban hành cuối thế kỷ XV"
    ],
    "answer": 0,
    "explain": "Điều thứ 10 Sắc lệnh 47.",

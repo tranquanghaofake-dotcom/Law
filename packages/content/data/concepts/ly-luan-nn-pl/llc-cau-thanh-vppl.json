@@ -30,9 +30,9 @@
    "q": "Lỗi cố ý gián tiếp là gì?",
    "options": [
     "Chủ thể thấy trước hậu quả, không mong muốn nhưng để mặc xảy ra",
-    "Chủ thể mong muốn hậu quả xảy ra",
-    "Chủ thể tin hậu quả không xảy ra",
-    "Chủ thể không thấy trước hậu quả"
+    "Chủ thể mong muốn hậu quả xảy ra, thực hiện hành vi có chủ đích rõ ràng",
+    "Chủ thể tin hậu quả không xảy ra và thực hiện hành vi bất cẩn",
+    "Chủ thể không thấy trước hậu quả, dù có thể và cần phải thấy trước"
    ],
    "answer": 0,
    "explain": "VD13."
@@ -43,9 +43,9 @@
    "q": "Yếu tố nào thuộc mặt khách quan của vi phạm pháp luật?",
    "options": [
     "Hành vi trái pháp luật, hậu quả, quan hệ nhân quả",
-    "Lỗi",
-    "Động cơ",
-    "Mục đích"
+    "Lỗi cố ý, lỗi vô ý và động cơ phạm tội của chủ thể",
+    "Động cơ, mục đích và năng lực của người vi phạm",
+    "Mục đích, động cơ, lỗi và tình tiết tăng nặng"
    ],
    "answer": 0,
    "explain": "VD13."

@@ -29,9 +29,9 @@
    "q": "Dịch vụ logistics bao gồm những công việc nào?",
    "options": [
     "Một hoặc nhiều công việc như nhận hàng, vận chuyển, lưu kho, làm thủ tục hải quan, đóng gói, giao hàng",
-    "Chỉ vận chuyển",
-    "Chỉ thủ tục hải quan",
-    "Chỉ lưu kho"
+    "Chỉ vận chuyển hàng hóa từ kho đến tay người nhận tại địa điểm được yêu cầu, không có dịch vụ khác kèm theo",
+    "Chỉ thủ tục hải quan và khai báo hàng hóa xuất nhập khẩu với cơ quan nhà nước có thẩm quyền",
+    "Chỉ lưu kho hàng hóa trong thời gian ngắn tại kho bãi của thương nhân và không có dịch vụ khác"
    ],
    "answer": 0,
    "explain": "Điều 233.",
@@ -46,9 +46,9 @@
    "q": "Thương nhân logistics có quyền gì khi khách hàng không thanh toán?",
    "options": [
     "Cầm giữ hàng hóa, chứng từ theo quy định",
-    "Bán ngay hàng hóa không cần thông báo",
-    "Tiêu hủy hàng hóa",
-    "Không có quyền gì"
+    "Bán hàng hóa ngay khi khách chưa trả tiền",
+    "Tiêu hủy hàng hóa khi khách không trả",
+    "Không có quyền gì, phải chịu thiệt hại"
    ],
    "answer": 0,
    "explain": "Điều 239.",

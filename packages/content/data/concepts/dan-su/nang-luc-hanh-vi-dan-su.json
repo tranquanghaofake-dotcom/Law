@@ -46,9 +46,9 @@
    "q": "Trường hợp nào người thành niên KHÔNG có năng lực hành vi dân sự đầy đủ?",
    "options": [
     "Bị Tòa án tuyên bố mất năng lực hành vi dân sự",
-    "Đang là sinh viên",
-    "Chưa có việc làm",
-    "Chưa kết hôn"
+    "Đang là sinh viên đại học và chưa đi làm",
+    "Chưa có việc làm và đang ở nhờ nhà người thân",
+    "Chưa kết hôn nhưng đã sống độc lập từ lâu"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 20 dẫn chiếu Điều 22, 23, 24.",

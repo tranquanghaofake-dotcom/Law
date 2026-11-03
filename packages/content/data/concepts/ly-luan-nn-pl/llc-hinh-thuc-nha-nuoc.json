@@ -29,9 +29,9 @@
    "q": "Hình thức nhà nước gồm những yếu tố nào?",
    "options": [
     "Hình thức chính thể, hình thức cấu trúc, chế độ chính trị",
-    "Lập pháp, hành pháp, tư pháp",
-    "Đối nội, đối ngoại",
-    "Trung ương, địa phương"
+    "Lập pháp, hành pháp, tư pháp và các cơ quan nhà nước trung ương",
+    "Đối nội, đối ngoại và tổ chức bộ máy nhà nước trung ương",
+    "Trung ương, địa phương và các đơn vị hành chính cơ sở"
    ],
    "answer": 0,
    "explain": "Bài 6 (quan điểm 3 yếu tố)."
@@ -42,9 +42,9 @@
    "q": "Chế độ chính trị là gì?",
    "options": [
     "Toàn bộ phương pháp, cách thức nhà nước sử dụng để thực hiện quyền lực nhà nước",
-    "Cách tổ chức cơ quan quyền lực tối cao",
-    "Cách chia lãnh thổ thành đơn vị hành chính",
-    "Hệ thống các đảng phái"
+    "Cách tổ chức cơ quan quyền lực cao nhất của nhà nước theo nhiệm kỳ bầu cử và thẩm quyền",
+    "Cách chia lãnh thổ thành đơn vị hành chính cơ sở, tỉnh, thành phố trực thuộc",
+    "Hệ thống các đảng phái chính trị hoạt động hợp pháp trên lãnh thổ quốc gia"
    ],
    "answer": 0,
    "explain": "Bài 6."

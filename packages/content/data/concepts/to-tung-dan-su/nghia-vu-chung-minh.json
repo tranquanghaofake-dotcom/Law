@@ -46,9 +46,9 @@
    "q": "Người tiêu dùng khởi kiện có phải chứng minh lỗi của tổ chức kinh doanh không?",
    "options": [
     "Không, tổ chức kinh doanh phải chứng minh mình không có lỗi",
-    "Có",
-    "Chỉ khi thiệt hại lớn",
-    "Chỉ khi có luật sư"
+    "Có, phải chứng minh lỗi của tổ chức để đòi bồi thường",
+    "Có, người tiêu dùng phải có đủ chứng cứ về lỗi của tổ chức đó",
+    "Chỉ khi thiệt hại lớn và có giám định của cơ quan nhà nước"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 1 Điều 91.",

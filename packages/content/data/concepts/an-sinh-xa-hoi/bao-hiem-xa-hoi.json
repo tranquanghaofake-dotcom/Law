@@ -32,9 +32,9 @@
    "q": "Bảo hiểm xã hội tự nguyện có đặc điểm nào?",
    "options": [
     "Công dân Việt Nam tự nguyện tham gia và được lựa chọn mức đóng, phương thức đóng",
-    "Người sử dụng lao động bắt buộc đóng cho người lao động",
-    "Do ngân sách nhà nước chi trả toàn bộ",
-    "Chỉ dành cho công chức"
+    "Người sử dụng lao động bắt buộc đóng cho người lao động theo hợp đồng lao động đã ký",
+    "Do ngân sách nhà nước chi trả toàn bộ cho người tham gia tự nguyện theo quy định",
+    "Chỉ dành cho công chức, viên chức nhà nước và người có chức vụ trong bộ máy"
    ],
    "answer": 0,
    "explain": "Khoản 4 Điều 3.",

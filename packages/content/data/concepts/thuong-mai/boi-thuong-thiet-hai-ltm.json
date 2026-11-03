@@ -30,9 +30,9 @@
    "q": "Hợp đồng thương mại có thỏa thuận phạt vi phạm. Bên bị vi phạm có quyền gì?",
    "options": [
     "Áp dụng cả phạt vi phạm và buộc bồi thường thiệt hại (trừ trường hợp luật quy định khác)",
-    "Chỉ được phạt vi phạm",
-    "Chỉ được bồi thường",
-    "Phải chọn một trong hai"
+    "Chỉ được phạt vi phạm và không được đòi bồi thường thêm khoản nào khác, dù thiệt hại lớn",
+    "Chỉ được bồi thường thiệt hại, không được áp dụng phạt vi phạm nào cả và phải chịu",
+    "Phải chọn một trong hai chế tài và không được thay đổi sau đó trong suốt thời gian thực hiện hợp đồng"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 307.",

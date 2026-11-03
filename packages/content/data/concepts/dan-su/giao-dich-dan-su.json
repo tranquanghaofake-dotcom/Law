@@ -29,9 +29,9 @@
    "q": "Giao dịch dân sự gồm những dạng nào theo Điều 116?",
    "options": [
     "Hợp đồng hoặc hành vi pháp lý đơn phương",
-    "Chỉ hợp đồng",
-    "Chỉ hợp đồng có công chứng",
-    "Quyết định hành chính và hợp đồng"
+    "Chỉ hợp đồng dân sự, không có hành vi khác",
+    "Chỉ hợp đồng có công chứng đã được đăng ký",
+    "Quyết định hành chính và hợp đồng dân sự"
    ],
    "answer": 0,
    "explain": "Điều 116.",

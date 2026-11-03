@@ -31,9 +31,9 @@
    "q": "Bảo hiểm y tế theo Luật Bảo hiểm y tế có đặc điểm nào?",
    "options": [
     "Bắt buộc, không vì mục đích lợi nhuận, do Nhà nước tổ chức thực hiện",
-    "Tự nguyện, vì lợi nhuận",
-    "Do doanh nghiệp bảo hiểm tổ chức",
-    "Chỉ dành cho người lao động"
+    "Tự nguyện, vì lợi nhuận và do cá nhân tự quyết định mức đóng",
+    "Do doanh nghiệp bảo hiểm tổ chức thực hiện theo hợp đồng ký kết",
+    "Chỉ dành cho người lao động có hợp đồng lao động không xác định thời hạn"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 2.",
@@ -48,9 +48,9 @@
    "q": "Chi phí khám bệnh, chữa bệnh bảo hiểm y tế do ai chi trả?",
    "options": [
     "Quỹ bảo hiểm y tế và người tham gia cùng chi trả",
-    "Chỉ quỹ bảo hiểm y tế",
-    "Chỉ người bệnh",
-    "Chỉ ngân sách nhà nước"
+    "Chỉ quỹ bảo hiểm y tế và không có sự tham gia",
+    "Chỉ người bệnh tự chi trả toàn bộ chi phí điều trị",
+    "Chỉ ngân sách nhà nước đảm bảo toàn bộ chi phí khám"
    ],
    "answer": 0,
    "explain": "Khoản 4 Điều 3.",

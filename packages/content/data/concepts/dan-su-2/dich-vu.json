@@ -28,9 +28,9 @@
    "q": "Đối tượng của hợp đồng dịch vụ là gì?",
    "options": [
     "Công việc mà bên cung ứng dịch vụ thực hiện",
-    "Tài sản được chuyển quyền sở hữu",
-    "Quyền sử dụng tài sản",
-    "Khoản tiền vay"
+    "Tài sản được chuyển quyền sở hữu cho bên kia",
+    "Quyền sử dụng tài sản trong thời hạn nhất định",
+    "Khoản tiền vay có lãi suất theo thỏa thuận"
    ],
    "answer": 0,
    "explain": "Điều 513, 514.",

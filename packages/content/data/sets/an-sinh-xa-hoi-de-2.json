@@ -8,10 +8,10 @@
     {
       "q": "Mức hưởng trợ cấp thất nghiệp hằng tháng?",
       "options": [
-        "50% lương bình quân 12 tháng",
+        "50% lương bình quân 12 tháng gần nhất, không có giới hạn tối đa nào khác theo luật lao động hiện hành",
         "60% bình quân tiền lương tháng đóng BHTN của 06 tháng gần nhất, tối đa 05 lần lương tối thiểu vùng",
-        "75% lương tháng cuối",
-        "Bằng lương tối thiểu vùng"
+        "75% lương tháng cuối của người lao động trước khi nghỉ việc, không giới hạn mức tối đa",
+        "Bằng lương tối thiểu vùng tại nơi làm việc của người lao động đó hằng tháng và cố định"
       ],
       "answer": 1,
       "explain": "Khoản 1 Điều 39.",
@@ -22,9 +22,9 @@
       "q": "Điều kiện về thời gian đóng BHTN để hưởng trợ cấp thất nghiệp (hợp đồng từ 12 tháng trở lên)?",
       "options": [
         "Đủ 12 tháng trong 24 tháng trước khi chấm dứt hợp đồng",
-        "Đủ 6 tháng trong 12 tháng",
-        "Đủ 24 tháng liên tục",
-        "Đủ 36 tháng"
+        "Đủ 6 tháng trong 12 tháng trước khi chấm dứt hợp đồng",
+        "Đủ 24 tháng liên tục trước khi chấm dứt hợp đồng lao động",
+        "Đủ 36 tháng trước khi chấm dứt hợp đồng lao động"
       ],
       "answer": 0,
       "explain": "Điểm b khoản 1 Điều 38.",
@@ -61,9 +61,9 @@
       "q": "Chế độ nào thuộc bảo hiểm thất nghiệp?",
       "options": [
         "Hỗ trợ người sử dụng lao động đào tạo để duy trì việc làm",
-        "Chế độ thai sản",
-        "Lương hưu",
-        "Trợ cấp tuất"
+        "Chế độ thai sản cho lao động nữ đang làm việc có hợp đồng",
+        "Lương hưu hằng tháng cho người về hưu đủ điều kiện",
+        "Trợ cấp tuất cho thân nhân khi người lao động chết"
       ],
       "answer": 0,
       "explain": "Khoản 1 Điều 30.",
@@ -74,9 +74,9 @@
       "q": "Bảo hiểm y tế có tính chất gì?",
       "options": [
         "Bắt buộc, không vì lợi nhuận, do Nhà nước tổ chức",
-        "Tự nguyện, vì lợi nhuận",
-        "Do công đoàn tổ chức",
-        "Chỉ cho người nghèo"
+        "Tự nguyện, vì lợi nhuận và do cá nhân tự quyết định",
+        "Do công đoàn tổ chức và quản lý toàn bộ quỹ",
+        "Chỉ cho người nghèo và người khuyết tật nặng"
       ],
       "answer": 0,
       "explain": "Khoản 1 Điều 2.",
@@ -100,8 +100,8 @@
       "q": "Người thuộc nhiều đối tượng tham gia BHYT được hưởng theo đối tượng nào?",
       "options": [
         "Đối tượng có quyền lợi cao nhất",
-        "Đối tượng đăng ký sau cùng",
-        "Cộng dồn tất cả",
+        "Đối tượng đăng ký sau cùng nhất",
+        "Cộng dồn toàn bộ quyền lợi lại",
         "Do cơ sở khám chữa bệnh chọn"
       ],
       "answer": 0,
@@ -112,10 +112,10 @@
     {
       "q": "Ai là thân nhân của người có công theo Pháp lệnh 2020?",
       "options": [
-        "Anh, chị, em ruột",
+        "Anh, chị, em ruột của người có công, kể cả con dâu, con rể và cháu",
         "Cha đẻ, mẹ đẻ, vợ hoặc chồng, con, người có công nuôi liệt sỹ",
-        "Ông bà nội ngoại",
-        "Cháu ruột"
+        "Ông bà nội ngoại và người thân xa trong họ hàng nội bên",
+        "Cháu ruột, chắt và người thân xa của người có công đó"
       ],
       "answer": 1,
       "explain": "Khoản 2 Điều 3.",
@@ -125,10 +125,10 @@
     {
       "q": "Chế độ nào thuộc \"ưu đãi khác\" với người có công?",
       "options": [
-        "Trợ cấp thất nghiệp",
+        "Trợ cấp thất nghiệp theo tháng",
         "Điều dưỡng phục hồi sức khỏe",
-        "Lương hưu",
-        "Trợ cấp thai sản"
+        "Lương hưu theo thời gian đóng",
+        "Trợ cấp thai sản cho lao động"
       ],
       "answer": 1,
       "explain": "Khoản 2 Điều 5.",

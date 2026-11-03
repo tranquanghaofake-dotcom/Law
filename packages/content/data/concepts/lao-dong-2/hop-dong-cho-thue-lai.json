@@ -28,9 +28,9 @@
    "q": "Hợp đồng cho thuê lại lao động được ký giữa những chủ thể nào?",
    "options": [
     "Doanh nghiệp cho thuê lại lao động và bên thuê lại lao động",
-    "Người lao động và bên thuê lại",
-    "Người lao động và doanh nghiệp cho thuê lại",
-    "Cơ quan nhà nước và doanh nghiệp"
+    "Người lao động và bên thuê lại lao động trực tiếp theo hợp đồng",
+    "Người lao động và doanh nghiệp cho thuê lại lao động",
+    "Cơ quan nhà nước và doanh nghiệp cho thuê lại lao động đó"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 55.",
@@ -45,9 +45,9 @@
    "q": "Doanh nghiệp cho thuê lại lao động phải đáp ứng điều kiện nào?",
    "options": [
     "Ký quỹ và được cấp Giấy phép hoạt động cho thuê lại lao động",
-    "Có vốn điều lệ trên 100 tỷ đồng",
-    "Là doanh nghiệp nhà nước",
-    "Có ít nhất 1.000 lao động"
+    "Có vốn điều lệ trên 100 tỷ đồng và có văn phòng riêng",
+    "Là doanh nghiệp nhà nước có đủ vốn điều lệ và nhân sự",
+    "Có ít nhất 1.000 lao động làm việc thường xuyên trong công ty"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 54.",

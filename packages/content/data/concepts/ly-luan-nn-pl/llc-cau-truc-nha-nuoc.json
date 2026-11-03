@@ -28,9 +28,9 @@
    "q": "Đặc điểm của nhà nước đơn nhất?",
    "options": [
     "Một chủ quyền chung, đơn vị hành chính lãnh thổ không có chủ quyền riêng",
-    "Các bang có hiến pháp riêng",
-    "Hai hệ thống pháp luật song song",
-    "Công dân có hai quốc tịch"
+    "Nhiều chủ quyền riêng, mỗi đơn vị lãnh thổ có hiến pháp riêng của mình",
+    "Các bang, tiểu bang có hiến pháp và chủ quyền riêng của mình, không phụ thuộc",
+    "Hai hệ thống pháp luật song song tồn tại, mỗi bên áp dụng luật và tòa án riêng"
    ],
    "answer": 0,
    "explain": "Bài 6."

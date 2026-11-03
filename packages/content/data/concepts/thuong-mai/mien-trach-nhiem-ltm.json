@@ -29,9 +29,9 @@
    "q": "Ai có nghĩa vụ chứng minh các trường hợp miễn trách nhiệm?",
    "options": [
     "Bên vi phạm hợp đồng",
-    "Bên bị vi phạm",
-    "Tòa án",
-    "Trọng tài"
+    "Bên bị vi phạm hợp đồng",
+    "Tòa án nhân dân tỉnh",
+    "Trọng tài thương mại"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 294.",
@@ -46,9 +46,9 @@
    "q": "Căn cứ miễn trách nhiệm nào có trong Luật Thương mại?",
    "options": [
     "Thực hiện quyết định của cơ quan quản lý nhà nước mà các bên không thể biết khi giao kết",
-    "Bên vi phạm gặp khó khăn tài chính",
-    "Giá thị trường biến động",
-    "Bên vi phạm thay đổi lãnh đạo"
+    "Bên vi phạm gặp khó khăn tài chính và không có khả năng thanh toán đúng hạn",
+    "Giá thị trường biến động mạnh làm tăng chi phí thực hiện hợp đồng của bên vi phạm đáng kể",
+    "Bên vi phạm thay đổi lãnh đạo doanh nghiệp và chuyển trụ sở sang địa phương khác"
    ],
    "answer": 0,
    "explain": "Điểm d khoản 1 Điều 294.",

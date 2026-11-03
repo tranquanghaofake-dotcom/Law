@@ -29,9 +29,9 @@
    "q": "Trong nhượng quyền thương mại, ai tiến hành việc mua bán hàng hóa?",
    "options": [
     "Bên nhận quyền tự mình tiến hành",
-    "Bên nhượng quyền",
-    "Bên môi giới",
-    "Nhà nước"
+    "Bên nhượng quyền trực tiếp tiến hành",
+    "Bên môi giới thực hiện giúp hai bên",
+    "Nhà nước trực tiếp tổ chức quản lý"
    ],
    "answer": 0,
    "explain": "Điều 284.",
@@ -46,9 +46,9 @@
    "q": "Quyền của bên nhượng quyền đối với bên nhận quyền theo khoản 2 Điều 284 là gì?",
    "options": [
     "Kiểm soát và trợ giúp trong việc điều hành kinh doanh",
-    "Không có quyền gì sau khi ký",
-    "Thu toàn bộ lợi nhuận",
-    "Điều hành trực tiếp thay bên nhận quyền"
+    "Không có quyền gì sau khi ký hợp đồng nhượng quyền",
+    "Thu toàn bộ lợi nhuận của bên nhận quyền mỗi năm",
+    "Điều hành trực tiếp thay bên nhận quyền trong mọi hoạt động"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 284.",

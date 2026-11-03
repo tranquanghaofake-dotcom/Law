@@ -43,9 +43,9 @@
    "q": "Ý định phạm tội chưa thể hiện ra hành vi có phải vi phạm pháp luật không?",
    "options": [
     "Không, vì vi phạm pháp luật phải là hành vi xác định",
-    "Có, vì đã có ý định",
-    "Có, nếu ý định nguy hiểm",
-    "Tùy tòa án"
+    "Có, vì ý định trái pháp luật đã đủ để xử lý người có ý định",
+    "Có, vì đã có ý định và thể hiện thái độ trái pháp luật rõ",
+    "Tùy tòa án quyết định trong từng trường hợp cụ thể"
    ],
    "answer": 0,
    "explain": "VD13: dấu hiệu hành vi."

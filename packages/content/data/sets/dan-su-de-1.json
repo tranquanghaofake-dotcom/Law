@@ -8,10 +8,10 @@
     {
       "q": "Người 14 tuổi tự mua một chiếc điện thoại 15 triệu đồng mà cha mẹ không biết. Theo Bộ luật Dân sự 2015, giao dịch này cần điều kiện gì để có hiệu lực?",
       "options": [
-        "Không cần gì, người 14 tuổi tự quyết",
+        "Không cần gì, người 14 tuổi tự quyết định",
         "Phải được người đại diện theo pháp luật đồng ý",
-        "Phải được công chứng",
-        "Chỉ cần người bán đồng ý"
+        "Phải được công chứng tại Ủy ban xã có dấu xác nhận",
+        "Chỉ cần người bán hàng và hai bên đồng ý"
       ],
       "answer": 1,
       "explain": "Người từ đủ 6 đến chưa đủ 15 tuổi phải được người đại diện đồng ý, trừ giao dịch sinh hoạt hàng ngày phù hợp lứa tuổi; điện thoại 15 triệu khó coi là sinh hoạt hàng ngày.",
@@ -47,10 +47,10 @@
     {
       "q": "Hợp đồng vay tiền để đánh bạc có hiệu lực không?",
       "options": [
-        "Có, vì hai bên tự nguyện",
+        "Có, vì hai bên tự nguyện thỏa thuận với nhau",
         "Vô hiệu vì mục đích vi phạm điều cấm của luật",
-        "Có nếu có giấy viết tay",
-        "Chỉ vô hiệu nếu số tiền trên 100 triệu"
+        "Có nếu có giấy viết tay và chữ ký của hai bên đó",
+        "Chỉ vô hiệu nếu số tiền trên 100 triệu đồng"
       ],
       "answer": 1,
       "explain": "Giao dịch có mục đích, nội dung vi phạm điều cấm của luật thì vô hiệu.",
@@ -60,10 +60,10 @@
     {
       "q": "A và B lập hợp đồng tặng cho nhà để che giấu hợp đồng mua bán nhằm trốn thuế. Hợp đồng nào vô hiệu?",
       "options": [
-        "Cả hai hợp đồng",
+        "Cả hai đều có hiệu lực",
         "Hợp đồng tặng cho giả tạo",
-        "Không hợp đồng nào",
-        "Chỉ hợp đồng mua bán"
+        "Không có hợp đồng nào cả",
+        "Chỉ hợp đồng mua bán vô hiệu"
       ],
       "answer": 1,
       "explain": "Giao dịch giả tạo vô hiệu; giao dịch bị che giấu vẫn có hiệu lực nếu hợp pháp (khoản 1 Điều 124).",
@@ -86,10 +86,10 @@
     {
       "q": "Người được ủy quyền bán xe máy lại tự mua chính chiếc xe đó với giá rẻ. Theo Bộ luật Dân sự 2015, hành vi này thế nào?",
       "options": [
-        "Hợp lệ vì có ủy quyền",
+        "Hợp lệ vì đã có văn bản ủy quyền rõ ràng, có công chứng và chữ ký",
         "Không được phép, trừ trường hợp pháp luật có quy định khác",
-        "Hợp lệ nếu trả đủ tiền",
-        "Chỉ cần báo cho người ủy quyền"
+        "Hợp lệ nếu trả đủ tiền theo giá thị trường đã công bố",
+        "Chỉ cần báo cho người ủy quyền biết trước khi mua bán"
       ],
       "answer": 1,
       "explain": "Người đại diện không được giao dịch với chính mình (khoản 3 Điều 141).",
@@ -99,10 +99,10 @@
     {
       "q": "Bị đơn chỉ yêu cầu áp dụng thời hiệu khởi kiện tại phiên tòa phúc thẩm. Tòa án xử lý thế nào?",
       "options": [
-        "Phải áp dụng thời hiệu",
+        "Phải áp dụng thời hiệu theo yêu cầu của bị đơn tại phiên tòa này, dù muộn",
         "Không áp dụng vì yêu cầu phải đưa ra trước khi Tòa sơ thẩm ra bản án, quyết định",
-        "Đình chỉ ngay vụ án",
-        "Chuyển hồ sơ cho Viện kiểm sát"
+        "Đình chỉ ngay vụ án vì yêu cầu muộn của bị đơn không hợp lệ nữa, và không xét thêm gì",
+        "Chuyển hồ sơ cho Viện kiểm sát để xem xét lại toàn bộ vụ án và các chứng cứ liên quan"
       ],
       "answer": 1,
       "explain": "Khoản 2 Điều 149.",
@@ -125,10 +125,10 @@
     {
       "q": "Theo khoản 2 Điều 3, cam kết, thỏa thuận có hiệu lực thực hiện đối với các bên khi đáp ứng điều kiện gì?",
       "options": [
-        "Được Nhà nước phê duyệt",
+        "Được Nhà nước phê duyệt bằng văn bản có đóng dấu xác nhận",
         "Không vi phạm điều cấm của luật, không trái đạo đức xã hội",
-        "Được lập bằng văn bản",
-        "Có người làm chứng"
+        "Được lập bằng văn bản có công chứng đầy đủ và đúng thời hạn",
+        "Có người làm chứng và có chữ ký của các bên hợp pháp"
       ],
       "answer": 1,
       "explain": "Nguyên tắc tự do, tự nguyện cam kết, thỏa thuận.",

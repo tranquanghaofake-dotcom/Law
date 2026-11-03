@@ -30,9 +30,9 @@
    "q": "Chế độ nào thuộc \"các chế độ ưu đãi khác\" đối với người có công?",
    "options": [
     "Điều dưỡng phục hồi sức khỏe",
-    "Trợ cấp thất nghiệp",
-    "Lương hưu",
-    "Trợ cấp thai sản"
+    "Trợ cấp thất nghiệp hằng tháng",
+    "Lương hưu theo thời gian đóng",
+    "Trợ cấp thai sản cho lao động"
    ],
    "answer": 0,
    "explain": "Điểm b khoản 2 Điều 5.",

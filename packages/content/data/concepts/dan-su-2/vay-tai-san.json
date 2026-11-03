@@ -46,9 +46,9 @@
    "q": "Bên vay phải trả lãi khi nào?",
    "options": [
     "Khi có thỏa thuận hoặc pháp luật có quy định",
-    "Luôn luôn",
-    "Không bao giờ",
-    "Khi vay trên 100 triệu"
+    "Luôn luôn trả lãi, bất kể có thỏa thuận hay không",
+    "Không bao giờ phải trả lãi cho bên cho vay",
+    "Khi vay trên 100 triệu đồng và có thỏa thuận"
    ],
    "answer": 0,
    "explain": "Điều 463.",

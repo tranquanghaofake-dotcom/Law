@@ -29,9 +29,9 @@
    "q": "Vai trò của bên môi giới thương mại là gì?",
    "options": [
     "Làm trung gian cho các bên trong việc đàm phán, giao kết hợp đồng",
-    "Ký hợp đồng thay bên được môi giới",
-    "Mua hàng rồi bán lại",
-    "Bảo lãnh thanh toán"
+    "Ký hợp đồng thay bên được môi giới theo ủy quyền của bên đó",
+    "Mua hàng rồi bán lại để hưởng chênh lệch giá của thị trường",
+    "Bảo lãnh thanh toán cho bên được môi giới khi cần thiết, có thù lao"
    ],
    "answer": 0,
    "explain": "Điều 150.",
@@ -46,9 +46,9 @@
    "q": "Quyền hưởng thù lao môi giới phát sinh khi nào (nếu không có thỏa thuận khác)?",
    "options": [
     "Khi các bên được môi giới đã ký hợp đồng với nhau",
-    "Khi bắt đầu tìm đối tác",
-    "Khi hợp đồng thực hiện xong",
-    "Khi nộp đơn đăng ký"
+    "Khi bắt đầu tìm đối tác cho các bên được môi giới",
+    "Khi hợp đồng thực hiện xong và có nghiệm thu chính thức",
+    "Khi nộp đơn đăng ký môi giới tại cơ quan có thẩm quyền"
    ],
    "answer": 0,
    "explain": "Điều 153.",

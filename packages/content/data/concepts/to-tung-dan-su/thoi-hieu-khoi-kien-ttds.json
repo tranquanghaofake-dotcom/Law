@@ -46,9 +46,9 @@
    "q": "Người được hưởng lợi từ việc áp dụng thời hiệu có quyền từ chối không?",
    "options": [
     "Có, trừ khi nhằm trốn tránh thực hiện nghĩa vụ",
-    "Không",
-    "Chỉ khi được Tòa án cho phép",
-    "Chỉ trong vụ án lao động"
+    "Không, người được hưởng lợi không được từ chối",
+    "Chỉ khi được Tòa án cho phép trước khi xét xử",
+    "Chỉ trong vụ án lao động mới được từ chối"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 184.",

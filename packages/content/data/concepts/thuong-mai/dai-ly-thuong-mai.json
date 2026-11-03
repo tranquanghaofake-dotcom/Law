@@ -47,9 +47,9 @@
    "q": "Hàng hóa giao cho bên đại lý thuộc sở hữu của ai?",
    "options": [
     "Bên giao đại lý",
-    "Bên đại lý",
-    "Khách hàng",
-    "Đồng sở hữu"
+    "Bên nhận đại lý",
+    "Khách hàng mua",
+    "Đồng sở hữu hàng"
    ],
    "answer": 0,
    "explain": "Điều 170.",

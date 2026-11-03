@@ -29,9 +29,9 @@
    "q": "Trường hợp nào Thẩm phán trả lại đơn khởi kiện?",
    "options": [
     "Chưa có đủ điều kiện khởi kiện theo quy định của pháp luật",
-    "Bị đơn vắng mặt",
-    "Vụ án phức tạp",
-    "Nguyên đơn không có luật sư"
+    "Bị đơn vắng mặt tại phiên hòa giải lần đầu và không có lý do",
+    "Vụ án phức tạp và cần nhiều thời gian để xem xét kỹ lưỡng",
+    "Nguyên đơn không có luật sư bảo vệ tại phiên đầu tiên"
    ],
    "answer": 0,
    "explain": "Điểm b khoản 1 Điều 192.",
@@ -46,9 +46,9 @@
    "q": "\"Chưa có đủ điều kiện khởi kiện\" được hiểu là gì?",
    "options": [
     "Pháp luật có quy định điều kiện khởi kiện nhưng người khởi kiện khởi kiện khi còn thiếu một trong các điều kiện đó",
-    "Không có chứng cứ",
-    "Đã hết thời hiệu",
-    "Nguyên đơn chưa đủ 18 tuổi"
+    "Không có chứng cứ nào được đương sự cung cấp kịp thời cho Tòa án xem xét, dù đã có yêu cầu nhiều lần trước đó và đúng hạn",
+    "Đã hết thời hiệu khởi kiện theo quy định của Bộ luật tố tụng dân sự hiện hành và không có lý do chính đáng nào",
+    "Nguyên đơn chưa đủ mười tám tuổi và không có người đại diện theo pháp luật hợp pháp trong vụ việc này"
    ],
    "answer": 0,
    "explain": "Điểm b khoản 1 Điều 192.",

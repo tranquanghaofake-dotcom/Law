@@ -8,10 +8,10 @@
     {
       "q": "Công việc nào KHÔNG thuộc lao động giúp việc gia đình?",
       "options": [
-        "Chăm sóc người già",
-        "Lái xe cho gia đình",
+        "Chăm sóc người già trong gia đình",
+        "Lái xe cho gia đình và đưa đón con",
         "Bán hàng tại cửa hàng của gia đình",
-        "Nội trợ"
+        "Nội trợ hằng ngày trong gia đình"
       ],
       "answer": 2,
       "explain": "Khoản 1 Điều 161.",
@@ -47,10 +47,10 @@
     {
       "q": "Hành vi nào bị nghiêm cấm với người sử dụng lao động giúp việc gia đình?",
       "options": [
-        "Thỏa thuận chỗ ở",
+        "Thỏa thuận chỗ ở và ăn uống trong nhà riêng",
         "Giữ giấy tờ tùy thân của người lao động",
-        "Trả lương theo tuần",
-        "Ký hợp đồng 6 tháng"
+        "Trả lương theo tuần cho người lao động",
+        "Ký hợp đồng 6 tháng có thời hạn rõ"
       ],
       "answer": 1,
       "explain": "Khoản 3 Điều 165.",
@@ -100,9 +100,9 @@
       "q": "Thời hạn HĐLĐ với người lao động nước ngoài?",
       "options": [
         "Không vượt quá thời hạn giấy phép lao động",
-        "Tối thiểu 03 năm",
-        "Không xác định thời hạn",
-        "Do Bộ trưởng quyết định"
+        "Tối thiểu 03 năm kể từ khi ký hợp đồng lao động",
+        "Không xác định thời hạn theo quy định của luật",
+        "Do Bộ trưởng quyết định theo từng vụ việc"
       ],
       "answer": 0,
       "explain": "Khoản 2 Điều 151.",
@@ -126,9 +126,9 @@
       "q": "Hình thức nào thuộc Điều 5 Luật 69/2020/QH14?",
       "options": [
         "Hợp đồng lao động do người lao động trực tiếp giao kết với người sử dụng lao động ở nước ngoài",
-        "Hợp đồng du lịch",
-        "Hợp đồng du học tự túc",
-        "Hợp đồng mua bán hàng hóa"
+        "Hợp đồng du lịch trọn gói cho khách nước ngoài tại Việt Nam và các nước láng giềng",
+        "Hợp đồng du học tự túc ở nước ngoài cho sinh viên, phụ huynh và người bảo lãnh tài chính của họ",
+        "Hợp đồng mua bán hàng hóa xuất khẩu giữa hai doanh nghiệp đối tác lâu năm tại nước ngoài"
       ],
       "answer": 0,
       "explain": "Khoản 3 Điều 5.",

@@ -28,9 +28,9 @@
    "q": "Quyền tranh tụng được bảo đảm trong những cấp xét xử nào?",
    "options": [
     "Sơ thẩm, phúc thẩm, giám đốc thẩm, tái thẩm",
-    "Chỉ sơ thẩm",
-    "Chỉ sơ thẩm và phúc thẩm",
-    "Chỉ phúc thẩm"
+    "Chỉ sơ thẩm, không có các cấp xét xử khác",
+    "Chỉ sơ thẩm và phúc thẩm trong vụ án này",
+    "Chỉ phúc thẩm, không sơ thẩm và giám đốc thẩm"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 24.",
@@ -45,8 +45,8 @@
    "q": "Hội thẩm nhân dân tham gia xét xử sơ thẩm vụ án dân sự, trừ trường hợp nào?",
    "options": [
     "Xét xử theo thủ tục rút gọn",
-    "Vụ án ly hôn",
-    "Vụ án lao động",
+    "Vụ án ly hôn có con chung",
+    "Vụ án lao động có nhiều người",
     "Vụ án có yếu tố nước ngoài"
    ],
    "answer": 0,

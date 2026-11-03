@@ -30,9 +30,9 @@
    "q": "Luật mới quy định ưu đãi cao hơn thì nhà đầu tư được hưởng thế nào?",
    "options": [
     "Theo văn bản mới cho thời gian hưởng ưu đãi còn lại",
-    "Theo văn bản cũ đến hết dự án",
-    "Hưởng cả hai mức cộng lại",
-    "Không được hưởng"
+    "Theo văn bản cũ đến hết dự án, không áp dụng văn bản mới",
+    "Hưởng cả hai mức cộng lại trong thời gian dự án",
+    "Không được hưởng gì, phải chờ văn bản hướng dẫn mới"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 12.",
@@ -47,9 +47,9 @@
    "q": "Luật mới quy định ưu đãi thấp hơn thì sao?",
    "options": [
     "Nhà đầu tư được tiếp tục áp dụng ưu đãi theo quy định trước đó cho thời gian còn lại",
-    "Phải áp dụng ngay mức thấp hơn",
-    "Phải hoàn lại ưu đãi đã hưởng",
-    "Dự án bị chấm dứt"
+    "Phải áp dụng ngay mức ưu đãi thấp hơn theo quy định mới, không được tiếp tục hưởng ưu đãi nào",
+    "Phải hoàn lại toàn bộ ưu đãi đã hưởng từ trước và nộp phạt theo quy định",
+    "Dự án bị chấm dứt hoạt động ngay lập tức, không có thời gian chuyển tiếp nào"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 12.",

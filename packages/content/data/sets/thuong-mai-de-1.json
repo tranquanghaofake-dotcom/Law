@@ -8,10 +8,10 @@
     {
       "q": "Theo Luật Thương mại, hàng hóa gồm những gì?",
       "options": [
-        "Mọi tài sản, kể cả quyền sử dụng đất",
+        "Mọi tài sản, kể cả quyền sử dụng đất và các quyền tài sản khác",
         "Động sản (kể cả hình thành trong tương lai) và vật gắn liền với đất đai",
-        "Chỉ hàng hóa nhập khẩu",
-        "Chỉ động sản hiện có"
+        "Chỉ hàng hóa nhập khẩu từ nước ngoài vào Việt Nam, không gồm hàng xuất khẩu",
+        "Chỉ động sản hiện có tại thời điểm giao kết hợp đồng mua bán giữa các bên"
       ],
       "answer": 1,
       "explain": "Khoản 2 Điều 3.",
@@ -86,10 +86,10 @@
     {
       "q": "Hàng hóa giao cho bên đại lý thuộc sở hữu của ai?",
       "options": [
-        "Bên đại lý",
+        "Bên nhận đại lý",
         "Bên giao đại lý",
-        "Khách hàng",
-        "Nhà nước"
+        "Khách hàng mua",
+        "Nhà nước giao"
       ],
       "answer": 1,
       "explain": "Điều 170.",
@@ -112,10 +112,10 @@
     {
       "q": "Mở quán cà phê theo mô hình, thương hiệu, công thức của chủ hệ thống và chịu sự kiểm soát của họ. Đây là gì?",
       "options": [
-        "Đại lý",
+        "Đại lý thương mại độc lập",
         "Nhượng quyền thương mại",
-        "Môi giới",
-        "Ủy thác"
+        "Môi giới thương mại lớn",
+        "Ủy thác mua bán hàng hóa"
       ],
       "answer": 1,
       "explain": "Điều 284.",

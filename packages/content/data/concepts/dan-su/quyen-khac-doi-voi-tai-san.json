@@ -29,9 +29,9 @@
    "q": "Quyền khác đối với tài sản theo Điều 159 gồm những quyền nào?",
    "options": [
     "Quyền đối với bất động sản liền kề, quyền hưởng dụng, quyền bề mặt",
-    "Quyền chiếm hữu, sử dụng, định đoạt",
-    "Quyền thế chấp, cầm cố, bảo lãnh",
-    "Quyền thừa kế, tặng cho"
+    "Quyền chiếm hữu, sử dụng và định đoạt tài sản của người khác",
+    "Quyền thế chấp, cầm cố, bảo lãnh và đặt cọc đối với tài sản của chủ sở hữu",
+    "Quyền thừa kế, tặng cho và chuyển nhượng quyền sử dụng đất"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 159.",
@@ -46,9 +46,9 @@
    "q": "Khi chủ sở hữu bán tài sản, quyền khác đối với tài sản đó có còn hiệu lực không?",
    "options": [
     "Vẫn có hiệu lực, trừ trường hợp luật quy định khác",
-    "Tự động chấm dứt",
-    "Chỉ còn hiệu lực 1 năm",
-    "Phải đăng ký lại"
+    "Tự động chấm dứt ngay khi chủ sở hữu bán tài sản đi",
+    "Chỉ còn hiệu lực trong thời hạn một năm sau khi bán",
+    "Phải đăng ký lại với cơ quan có thẩm quyền ngay"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 160.",

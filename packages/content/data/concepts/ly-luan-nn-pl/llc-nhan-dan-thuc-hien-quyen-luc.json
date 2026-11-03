@@ -31,9 +31,9 @@
    "q": "Theo Điều 6 Hiến pháp 2013, Nhân dân thực hiện quyền lực nhà nước bằng cách nào?",
    "options": [
     "Dân chủ trực tiếp và dân chủ đại diện",
-    "Chỉ qua Quốc hội",
-    "Chỉ qua trưng cầu ý dân",
-    "Chỉ qua Đảng"
+    "Chỉ qua Quốc hội và Hội đồng nhân dân",
+    "Chỉ qua trưng cầu ý dân ở các địa phương",
+    "Chỉ qua các tổ chức chính trị – xã hội"
    ],
    "answer": 0,
    "explain": "Điều 6.",
@@ -48,9 +48,9 @@
    "q": "Điểm mới của Điều 6 Hiến pháp 2013 so với Hiến pháp 1992?",
    "options": [
     "Ghi nhận dân chủ trực tiếp và các cơ quan khác của Nhà nước",
-    "Bỏ Hội đồng nhân dân",
-    "Bỏ Quốc hội",
-    "Thêm Tòa án Hiến pháp"
+    "Chỉ ghi nhận dân chủ đại diện, bỏ dân chủ trực tiếp hoàn toàn",
+    "Bỏ Hội đồng nhân dân và giao quyền cho Chính phủ thực hiện",
+    "Thêm Tòa án Hiến pháp để thay thế Quốc hội trong việc lập pháp"
    ],
    "answer": 0,
    "explain": "Hiến pháp 1992 Điều 6 chỉ nêu thông qua Quốc hội và HĐND.",

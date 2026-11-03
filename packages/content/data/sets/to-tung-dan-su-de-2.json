@@ -8,10 +8,10 @@
     {
       "q": "Biện pháp nào là biện pháp khẩn cấp tạm thời?",
       "options": [
-        "Phạt tiền bị đơn",
+        "Phạt tiền bị đơn để răn đe, xử phạt hành vi vi phạm trong vụ án này",
         "Cấm chuyển dịch quyền về tài sản đối với tài sản đang tranh chấp",
-        "Tạm giam bị đơn",
-        "Thu hồi sổ đỏ"
+        "Tạm giam bị đơn để chờ kết quả xét xử và thi hành án của Tòa",
+        "Thu hồi sổ đỏ của bị đơn để bảo đảm thi hành án sau này"
       ],
       "answer": 1,
       "explain": "Điều 114.",
@@ -21,10 +21,10 @@
     {
       "q": "Bị đơn yêu cầu áp dụng thời hiệu lần đầu tại phiên tòa phúc thẩm. Tòa án xử lý thế nào?",
       "options": [
-        "Áp dụng thời hiệu",
+        "Áp dụng thời hiệu theo yêu cầu của bị đơn tại phiên tòa này, dù muộn",
         "Không chấp nhận vì yêu cầu phải đưa ra trước khi sơ thẩm ra bản án, quyết định",
-        "Hủy án sơ thẩm",
-        "Tạm đình chỉ"
+        "Hủy án sơ thẩm và xét xử lại vụ án từ đầu theo thủ tục chung của Tòa án có thẩm quyền",
+        "Tạm đình chỉ vụ án để chờ kết quả hòa giải của các bên và thẩm định"
       ],
       "answer": 1,
       "explain": "Khoản 2 Điều 184.",
@@ -34,10 +34,10 @@
     {
       "q": "Hết thời hiệu khởi kiện và đương sự đã yêu cầu áp dụng thời hiệu trước khi sơ thẩm ra bản án. Tòa án làm gì?",
       "options": [
-        "Trả lại đơn khởi kiện",
+        "Trả lại đơn khởi kiện ngay",
         "Đình chỉ giải quyết vụ án",
-        "Xét xử bình thường",
-        "Chuyển Viện kiểm sát"
+        "Xét xử bình thường ngay",
+        "Chuyển Viện kiểm sát xem xét"
       ],
       "answer": 1,
       "explain": "Điểm e khoản 1 Điều 217.",
@@ -47,10 +47,10 @@
     {
       "q": "Đương sự hòa giải thành trước khi mở phiên tòa thì chịu án phí sơ thẩm thế nào?",
       "options": [
-        "Không phải chịu",
+        "Không phải chịu án phí",
         "50% mức án phí sơ thẩm",
-        "100%",
-        "25%"
+        "Chịu toàn bộ 100% án phí",
+        "Chịu 25% án phí sơ thẩm"
       ],
       "answer": 1,
       "explain": "Khoản 3 Điều 147.",
@@ -60,10 +60,10 @@
     {
       "q": "Vụ ly hôn do người vợ khởi kiện, Tòa án chấp nhận cho ly hôn. Ai chịu án phí sơ thẩm?",
       "options": [
-        "Người chồng",
+        "Người chồng bị đơn",
         "Người vợ (nguyên đơn)",
-        "Mỗi người một nửa",
-        "Không ai"
+        "Mỗi người một nửa án phí",
+        "Không ai chịu án phí"
       ],
       "answer": 1,
       "explain": "Khoản 4 Điều 147.",
@@ -73,10 +73,10 @@
     {
       "q": "Hai hộ tranh chấp ranh giới đất nộp đơn thẳng ra Tòa, chưa hòa giải tại UBND cấp xã. Thẩm phán có thể làm gì?",
       "options": [
-        "Thụ lý ngay",
+        "Thụ lý ngay để giải quyết nhanh chóng vụ việc",
         "Trả lại đơn vì chưa có đủ điều kiện khởi kiện",
-        "Đình chỉ",
-        "Chuyển cho UBND tỉnh"
+        "Đình chỉ vụ án vì thiếu điều kiện khởi kiện",
+        "Chuyển cho UBND tỉnh giải quyết trước khi thụ lý"
       ],
       "answer": 1,
       "explain": "Điểm b khoản 1 Điều 192; khoản 2 Điều 235 Luật Đất đai 2024.",
@@ -86,10 +86,10 @@
     {
       "q": "Thẩm phán có được buộc đương sự thỏa thuận theo phương án Thẩm phán đề xuất không?",
       "options": [
-        "Có",
+        "Có, Thẩm phán có quyền buộc các bên",
         "Không, phải tôn trọng sự tự nguyện",
-        "Có nếu vụ án đơn giản",
-        "Có nếu đã hòa giải hai lần"
+        "Có nếu vụ án đơn giản và các bên đồng ý",
+        "Có nếu đã hòa giải hai lần trước đó"
       ],
       "answer": 1,
       "explain": "Điểm a khoản 2 Điều 205.",
@@ -99,10 +99,10 @@
     {
       "q": "Thời hạn kháng cáo bản án sơ thẩm (đương sự có mặt khi tuyên án) là bao lâu?",
       "options": [
-        "07 ngày",
+        "07 ngày kể từ ngày tuyên án đó",
         "15 ngày kể từ ngày tuyên án",
-        "30 ngày",
-        "01 tháng"
+        "30 ngày kể từ ngày tuyên án",
+        "01 tháng kể từ ngày tuyên án"
       ],
       "answer": 1,
       "explain": "Khoản 1 Điều 273.",
@@ -112,10 +112,10 @@
     {
       "q": "Tòa án cấp phúc thẩm xem xét lại phần nào của bản án sơ thẩm?",
       "options": [
-        "Toàn bộ",
+        "Toàn bộ bản án sơ thẩm đã tuyên trong vụ án",
         "Phần có kháng cáo, kháng nghị hoặc có liên quan",
-        "Chỉ phần án phí",
-        "Phần do Viện kiểm sát chỉ định"
+        "Chỉ phần án phí và chi phí tố tụng khác của vụ án",
+        "Phần do Viện kiểm sát chỉ định xét lại theo đề nghị"
       ],
       "answer": 1,
       "explain": "Điều 293.",

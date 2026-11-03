@@ -29,9 +29,9 @@
    "q": "Trong bảo lãnh, bên bảo lãnh là ai?",
    "options": [
     "Người thứ ba cam kết thực hiện nghĩa vụ thay cho bên có nghĩa vụ",
-    "Bên có quyền",
-    "Bên có nghĩa vụ",
-    "Công chứng viên"
+    "Bên có quyền trong quan hệ nghĩa vụ, được yêu cầu bên kia thực hiện",
+    "Bên có nghĩa vụ phải thực hiện trước khi có tranh chấp xảy ra",
+    "Công chứng viên được chỉ định ký kết hợp đồng giữa các bên"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 335.",
@@ -46,9 +46,9 @@
    "q": "Khi nào bên bảo lãnh phải thực hiện nghĩa vụ thay?",
    "options": [
     "Khi đến thời hạn mà bên được bảo lãnh không thực hiện hoặc thực hiện không đúng nghĩa vụ",
-    "Ngay khi ký hợp đồng bảo lãnh",
-    "Khi bên nhận bảo lãnh muốn",
-    "Sau 10 năm"
+    "Ngay khi ký hợp đồng bảo lãnh, không cần chờ đến hạn trả nợ hay vi phạm nào cả",
+    "Khi bên nhận bảo lãnh yêu cầu bằng văn bản, dù bên được bảo lãnh vẫn thực hiện đúng và đầy đủ",
+    "Sau mười năm kể từ ngày ký hợp đồng bảo lãnh, bất kể có vi phạm hay không và có thông báo"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 335.",

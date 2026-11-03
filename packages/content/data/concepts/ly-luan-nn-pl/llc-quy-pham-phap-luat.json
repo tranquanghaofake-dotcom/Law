@@ -31,9 +31,9 @@
    "q": "Quy phạm pháp luật là gì theo khoản 1 Điều 3?",
    "options": [
     "Quy tắc xử sự chung, bắt buộc chung, do cơ quan nhà nước, người có thẩm quyền ban hành, được Nhà nước bảo đảm thực hiện",
-    "Lời khuyên của cơ quan nhà nước",
-    "Quyết định cho một người cụ thể",
-    "Thói quen của cộng đồng"
+    "Quy tắc xử sự chung do nhà nước ban hành nhưng chỉ áp dụng khi các bên đồng ý, không bắt buộc chung cho mọi người",
+    "Lời khuyên và kiến nghị của cơ quan nhà nước, có thể tuân theo hoặc không tùy từng cá nhân, không có chế tài bảo đảm",
+    "Quyết định áp dụng một lần cho một cá nhân, tổ chức cụ thể do cơ quan nhà nước ban hành, có hiệu lực trong thời hạn ngắn"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 3.",
@@ -48,9 +48,9 @@
    "q": "Đặc điểm nào KHÔNG phải của quy phạm pháp luật?",
    "options": [
     "Chỉ áp dụng một lần cho một chủ thể xác định",
-    "Mang tính bắt buộc chung",
-    "Do nhà nước ban hành hoặc thừa nhận",
-    "Được nhà nước bảo đảm thực hiện"
+    "Có tính bắt buộc chung đối với mọi chủ thể",
+    "Do nhà nước ban hành hoặc thừa nhận thành luật",
+    "Được nhà nước bảo đảm thực hiện bằng cưỡng chế"
    ],
    "answer": 0,
    "explain": "Quy phạm áp dụng nhiều lần, với mọi chủ thể trong điều kiện dự liệu.",

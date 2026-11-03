@@ -46,8 +46,8 @@
    "options": [
     "Một lần, tối đa 02 năm",
     "Không giới hạn số lần",
-    "Hai lần",
-    "Không được gia hạn"
+    "Hai lần, mỗi lần 01 năm",
+    "Không được gia hạn thêm"
    ],
    "answer": 0,
    "explain": "Điều 155.",

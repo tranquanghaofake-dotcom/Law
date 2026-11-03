@@ -29,9 +29,9 @@
    "q": "Đương sự phải chịu án phí sơ thẩm khi nào?",
    "options": [
     "Khi yêu cầu của họ không được Tòa án chấp nhận (trừ trường hợp được miễn, không phải chịu)",
-    "Luôn luôn",
-    "Chỉ nguyên đơn",
-    "Chỉ khi có luật sư"
+    "Luôn luôn phải chịu án phí, kể cả khi yêu cầu được Tòa án chấp nhận hoàn toàn và không tranh chấp gì",
+    "Chỉ nguyên đơn phải chịu án phí, bị đơn không phải chịu trong mọi trường hợp tranh chấp",
+    "Chỉ khi có luật sư tham gia tố tụng và đại diện cho đương sự trước Tòa án đó trong vụ án"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 147.",
@@ -46,9 +46,9 @@
    "q": "Hòa giải thành trước khi mở phiên tòa thì các đương sự chịu án phí thế nào?",
    "options": [
     "Chỉ chịu 50% mức án phí sơ thẩm",
-    "Không phải chịu",
-    "Chịu 100%",
-    "Chịu gấp đôi"
+    "Không phải chịu án phí sơ thẩm nào",
+    "Chịu 100% mức án phí sơ thẩm",
+    "Chịu gấp đôi mức án phí sơ thẩm đó"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 147.",

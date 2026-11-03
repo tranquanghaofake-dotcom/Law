@@ -28,9 +28,9 @@
    "q": "Đặc điểm cơ bản của hợp đồng tặng cho tài sản là gì?",
    "options": [
     "Không yêu cầu đền bù và cần bên được tặng cho đồng ý nhận",
-    "Bên được tặng cho phải trả tiền",
-    "Chỉ cần ý chí của bên tặng cho",
-    "Chỉ áp dụng với động sản"
+    "Bên được tặng cho phải trả một khoản tiền đền bù tương ứng",
+    "Chỉ cần ý chí của bên tặng cho, không cần bên nhận đồng ý",
+    "Chỉ áp dụng với động sản, không áp dụng với bất động sản"
    ],
    "answer": 0,
    "explain": "Điều 457.",
@@ -45,9 +45,9 @@
    "q": "Tặng cho động sản không phải đăng ký có hiệu lực từ khi nào (trừ khi có thỏa thuận khác)?",
    "options": [
     "Khi bên được tặng cho nhận tài sản",
-    "Khi ký hợp đồng",
-    "Khi công chứng",
-    "Sau 30 ngày"
+    "Khi ký hợp đồng, có chữ ký của hai bên",
+    "Khi công chứng tại văn phòng công chứng",
+    "Sau 30 ngày kể từ ngày được tặng cho"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 458.",

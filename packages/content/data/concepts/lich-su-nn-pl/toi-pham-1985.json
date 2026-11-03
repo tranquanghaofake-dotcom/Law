@@ -31,9 +31,9 @@
    "q": "Theo Điều 8 Bộ luật Hình sự 1985, tội phạm được chia thành mấy loại?",
    "options": [
     "Hai loại: nghiêm trọng và ít nghiêm trọng",
-    "Bốn loại",
-    "Ba loại",
-    "Năm loại"
+    "Bốn loại: nhẹ, vừa, nặng và rất nặng",
+    "Ba loại: nhẹ, vừa và nghiêm trọng hơn",
+    "Năm loại: nhẹ, vừa, nặng, rất nặng, đặc biệt"
    ],
    "answer": 0,
    "explain": "Điều 8 khoản 2. BLHS 2015 chia bốn loại.",
@@ -48,9 +48,9 @@
    "q": "Theo BLHS 1985, tội phạm nghiêm trọng là tội có mức cao nhất của khung hình phạt như thế nào?",
    "options": [
     "Trên năm năm tù, tù chung thân hoặc tử hình",
-    "Trên ba năm tù",
-    "Trên mười năm tù",
-    "Từ hai năm tù trở lên"
+    "Trên ba năm tù, dưới mười lăm năm tù, theo khung",
+    "Trên mười năm tù, không quá hai mươi năm",
+    "Từ hai năm tù trở lên, không có tù chung thân"
    ],
    "answer": 0,
    "explain": "Điều 8 khoản 2.",

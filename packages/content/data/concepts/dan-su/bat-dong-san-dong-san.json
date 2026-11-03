@@ -29,9 +29,9 @@
    "q": "Động sản được xác định theo cách nào trong Điều 107?",
    "options": [
     "Những tài sản không phải là bất động sản",
-    "Những tài sản di chuyển được",
-    "Những tài sản có giá trị dưới 50 triệu",
-    "Những tài sản phải đăng ký"
+    "Những tài sản di chuyển được trong không gian",
+    "Những tài sản có giá trị dưới năm mươi triệu",
+    "Những tài sản phải đăng ký quyền sở hữu"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 107.",
@@ -46,8 +46,8 @@
    "q": "Tài sản nào là bất động sản?",
    "options": [
     "Nhà gắn liền với đất",
-    "Xe ô tô",
-    "Cổ phiếu",
+    "Xe ô tô tải trọng lớn",
+    "Cổ phiếu niêm yết",
     "Tiền gửi ngân hàng"
    ],
    "answer": 0,

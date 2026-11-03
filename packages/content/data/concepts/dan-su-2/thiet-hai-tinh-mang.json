@@ -29,9 +29,9 @@
    "q": "Mức bù đắp tổn thất tinh thần tối đa khi không thỏa thuận được cho một người có tính mạng bị xâm phạm là bao nhiêu?",
    "options": [
     "Không quá 100 lần mức lương cơ sở",
-    "Không quá 50 lần",
-    "Không quá 10 lần",
-    "Không giới hạn"
+    "Không quá 50 lần mức lương cơ sở",
+    "Không quá 10 lần mức lương cơ sở",
+    "Không giới hạn về mức bù đắp tổn thất"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 591.",
@@ -46,9 +46,9 @@
    "q": "Khoản bù đắp tổn thất tinh thần trước hết dành cho ai?",
    "options": [
     "Người thân thích thuộc hàng thừa kế thứ nhất của người bị thiệt hại",
-    "Bạn bè của người bị thiệt hại",
-    "Nhà nước",
-    "Người gây thiệt hại"
+    "Bạn bè và người quen của người bị thiệt hại trong cộng đồng và xóm giềng",
+    "Nhà nước, cơ quan quản lý địa phương nơi người bị thiệt hại cư trú",
+    "Người gây thiệt hại, kể cả người có hành vi vô ý và đã bồi thường"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 591.",

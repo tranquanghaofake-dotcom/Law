@@ -30,9 +30,9 @@
    "q": "Mức phạt vi phạm tối đa theo Luật Thương mại là bao nhiêu?",
    "options": [
     "Không quá 8% giá trị phần nghĩa vụ hợp đồng bị vi phạm",
-    "8% giá trị toàn bộ hợp đồng",
-    "12%",
-    "Không giới hạn"
+    "Không quá 8% giá trị toàn bộ hợp đồng bị vi phạm",
+    "Không quá 12% giá trị phần nghĩa vụ hợp đồng bị vi phạm",
+    "Không giới hạn mức phạt, do các bên tự thỏa thuận"
    ],
    "answer": 0,
    "explain": "Điều 301.",
@@ -47,9 +47,9 @@
    "q": "Phạt vi phạm được áp dụng khi nào?",
    "options": [
     "Khi trong hợp đồng có thỏa thuận (trừ trường hợp miễn trách nhiệm)",
-    "Mọi trường hợp vi phạm",
-    "Khi Tòa án quyết định",
-    "Khi có thiệt hại"
+    "Mọi trường hợp vi phạm, kể cả khi không có thiệt hại và không có thỏa thuận",
+    "Khi Tòa án quyết định sau khi xem xét đầy đủ hồ sơ vụ việc",
+    "Khi có thiệt hại xảy ra do lỗi của bên vi phạm gây ra cho bên kia"
    ],
    "answer": 0,
    "explain": "Điều 300.",

@@ -30,9 +30,9 @@
    "q": "Thời hiệu yêu cầu chia di sản là bất động sản là bao lâu?",
    "options": [
     "30 năm kể từ thời điểm mở thừa kế",
-    "10 năm",
-    "20 năm",
-    "03 năm"
+    "10 năm kể từ thời điểm mở thừa kế",
+    "20 năm kể từ thời điểm mở thừa kế",
+    "03 năm kể từ thời điểm mở thừa kế"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 623.",
@@ -47,9 +47,9 @@
    "q": "Thời hiệu yêu cầu người thừa kế thực hiện nghĩa vụ về tài sản của người chết để lại là bao lâu?",
    "options": [
     "03 năm kể từ thời điểm mở thừa kế",
-    "10 năm",
-    "30 năm",
-    "01 năm"
+    "10 năm kể từ thời điểm mở thừa kế",
+    "30 năm kể từ thời điểm mở thừa kế",
+    "01 năm kể từ thời điểm mở thừa kế"
    ],
    "answer": 0,
    "explain": "Khoản 3 Điều 623.",

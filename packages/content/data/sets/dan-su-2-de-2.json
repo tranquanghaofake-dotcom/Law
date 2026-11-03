@@ -9,9 +9,9 @@
       "q": "Hàng xóm đi vắng, ống nước nhà họ vỡ, bạn tự gọi thợ sửa và trả tiền. Đây là gì?",
       "options": [
         "Thực hiện công việc không có ủy quyền",
-        "Hợp đồng dịch vụ",
-        "Hợp đồng ủy quyền",
-        "Chiếm hữu không có căn cứ"
+        "Hợp đồng dịch vụ có thỏa thuận giá",
+        "Hợp đồng ủy quyền bằng văn bản có chữ ký",
+        "Chiếm hữu không có căn cứ pháp luật"
       ],
       "answer": 0,
       "explain": "Điều 574.",
@@ -35,9 +35,9 @@
       "q": "Theo BLDS 2015, người bị thiệt hại có buộc phải chứng minh lỗi của người gây thiệt hại không (nguyên tắc chung)?",
       "options": [
         "Không, Điều 584 không đặt lỗi là điều kiện chung",
-        "Có, luôn bắt buộc",
-        "Chỉ khi thiệt hại về tài sản",
-        "Chỉ khi khởi kiện"
+        "Có, luôn bắt buộc phải chứng minh lỗi của người gây",
+        "Chỉ khi thiệt hại về tài sản và có lỗi rõ ràng",
+        "Chỉ khi khởi kiện ra Tòa án nhân dân có thẩm quyền"
       ],
       "answer": 0,
       "explain": "Điều 584.",
@@ -48,8 +48,8 @@
       "q": "Người gây thiệt hại vô ý, thiệt hại quá lớn so với khả năng kinh tế của mình. Họ có thể được gì?",
       "options": [
         "Giảm mức bồi thường",
-        "Miễn hoàn toàn",
-        "Không được gì",
+        "Miễn bồi thường hết",
+        "Không được hưởng gì",
         "Bồi thường gấp đôi"
       ],
       "answer": 0,
@@ -61,9 +61,9 @@
       "q": "Bên bị thiệt hại cũng có lỗi trong việc gây thiệt hại thì sao?",
       "options": [
         "Không được bồi thường phần thiệt hại do lỗi của mình gây ra",
-        "Được bồi thường toàn bộ",
-        "Không được bồi thường gì",
-        "Phải bồi thường cho bên kia"
+        "Được bồi thường toàn bộ thiệt hại, không trừ phần lỗi nào của mình",
+        "Không được bồi thường gì, dù có lỗi hay không có lỗi",
+        "Phải bồi thường cho bên kia toàn bộ thiệt hại đã xảy ra"
       ],
       "answer": 0,
       "explain": "Khoản 4 Điều 585.",
@@ -87,9 +87,9 @@
       "q": "Thanh niên 17 tuổi có tài sản riêng gây thiệt hại. Bồi thường thế nào?",
       "options": [
         "Bằng tài sản của mình; không đủ thì cha mẹ bù",
-        "Cha mẹ bồi thường toàn bộ",
-        "Không phải bồi thường",
-        "Nhà nước bồi thường"
+        "Cha mẹ bồi thường toàn bộ thiệt hại đã xảy ra",
+        "Không phải bồi thường vì chưa đủ mười tám tuổi",
+        "Nhà nước bồi thường thay cho người gây thiệt hại"
       ],
       "answer": 0,
       "explain": "Khoản 2 Điều 586.",
@@ -102,7 +102,7 @@
         "50 lần lương cơ sở",
         "100 lần lương cơ sở",
         "10 lần lương cơ sở",
-        "Không giới hạn"
+        "Không giới hạn tiền"
       ],
       "answer": 1,
       "explain": "Khoản 2 Điều 591.",
@@ -113,9 +113,9 @@
       "q": "Xe máy đang chạy đúng luật bị nổ lốp, va vào người đi bộ. Người lái có phải bồi thường không?",
       "options": [
         "Có, nguồn nguy hiểm cao độ bồi thường cả khi không có lỗi",
-        "Không, vì không có lỗi",
-        "Chỉ khi người đi bộ chết",
-        "Nhà sản xuất lốp bồi thường"
+        "Không, vì người lái không có lỗi nên được miễn bồi thường",
+        "Chỉ khi người đi bộ bị chết và có lỗi của người lái",
+        "Nhà sản xuất lốp xe phải bồi thường toàn bộ thiệt hại"
       ],
       "answer": 0,
       "explain": "Khoản 3 Điều 601.",
@@ -125,10 +125,10 @@
     {
       "q": "Người lạ cố tình chọc giận con chó nhà bạn khiến chó cắn người khác; bạn không có lỗi. Ai bồi thường?",
       "options": [
-        "Bạn",
+        "Bạn, chủ con chó phải bồi thường toàn bộ",
         "Người lạ (người thứ ba hoàn toàn có lỗi)",
-        "Người bị cắn tự chịu",
-        "Liên đới cả hai"
+        "Người bị chó cắn tự chịu thiệt hại đó",
+        "Liên đới cả hai người cùng chịu trách nhiệm"
       ],
       "answer": 1,
       "explain": "Khoản 2 Điều 603.",

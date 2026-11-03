@@ -31,9 +31,9 @@
    "q": "Theo Điều 2 Luật Công ty 1990, thành viên công ty chịu trách nhiệm về nợ của công ty trong phạm vi nào?",
    "options": [
     "Phần vốn của mình góp vào công ty",
-    "Toàn bộ tài sản cá nhân",
-    "Gấp đôi phần vốn góp",
-    "Không chịu trách nhiệm"
+    "Toàn bộ tài sản cá nhân của mình",
+    "Gấp đôi phần vốn góp đã đăng ký",
+    "Không chịu trách nhiệm khoản nợ nào"
    ],
    "answer": 0,
    "explain": "Điều 2.",

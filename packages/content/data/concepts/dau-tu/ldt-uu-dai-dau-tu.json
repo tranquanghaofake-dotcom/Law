@@ -31,9 +31,9 @@
    "q": "Đối tượng nào được hưởng ưu đãi đầu tư theo khoản 1 Điều 14?",
    "options": [
     "Dự án đầu tư thuộc ngành, nghề ưu đãi đầu tư",
-    "Mọi doanh nghiệp mới thành lập",
-    "Mọi nhà đầu tư nước ngoài",
-    "Doanh nghiệp nhà nước"
+    "Mọi doanh nghiệp mới thành lập trong nước, có vốn",
+    "Mọi nhà đầu tư nước ngoài tại Việt Nam",
+    "Doanh nghiệp nhà nước có vốn lớn, ổn định"
    ],
    "answer": 0,
    "explain": "Điểm a khoản 1 Điều 14.",
@@ -48,9 +48,9 @@
    "q": "Hình thức nào là ưu đãi đầu tư (không phải hỗ trợ đầu tư)?",
    "options": [
     "Miễn, giảm tiền sử dụng đất, tiền thuê đất",
-    "Hỗ trợ đào tạo nguồn nhân lực",
-    "Hỗ trợ tín dụng",
-    "Hỗ trợ tiếp cận mặt bằng"
+    "Hỗ trợ đào tạo nguồn nhân lực cho doanh nghiệp",
+    "Hỗ trợ tín dụng lãi suất thấp cho doanh nghiệp",
+    "Hỗ trợ tiếp cận mặt bằng sản xuất và kho bãi"
    ],
    "answer": 0,
    "explain": "Khoản 2, 3 Điều 14.",

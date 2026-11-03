@@ -29,9 +29,9 @@
    "q": "Thời hiệu khởi kiện tranh chấp thương mại theo Luật Thương mại là bao lâu?",
    "options": [
     "Hai năm kể từ thời điểm quyền và lợi ích hợp pháp bị xâm phạm",
-    "Ba năm",
-    "Một năm",
-    "Mười năm"
+    "Ba năm kể từ thời điểm quyền và lợi ích hợp pháp bị xâm phạm đó",
+    "Một năm kể từ thời điểm quyền và lợi ích hợp pháp bị xâm phạm",
+    "Mười năm kể từ thời điểm quyền và lợi ích hợp pháp bị xâm phạm"
    ],
    "answer": 0,
    "explain": "Điều 319.",
@@ -46,9 +46,9 @@
    "q": "Hình thức nào KHÔNG được liệt kê tại Điều 317?",
    "options": [
     "Khiếu nại lên Ủy ban nhân dân",
-    "Thương lượng",
-    "Hòa giải",
-    "Trọng tài hoặc Tòa án"
+    "Thương lượng giữa các bên",
+    "Hòa giải tại cơ quan trọng tài",
+    "Trọng tài hoặc Tòa án nhân dân"
    ],
    "answer": 0,
    "explain": "Điều 317.",

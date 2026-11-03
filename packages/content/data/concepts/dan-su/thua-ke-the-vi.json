@@ -29,9 +29,9 @@
    "q": "Thừa kế thế vị áp dụng khi nào?",
    "options": [
     "Con của người để lại di sản chết trước hoặc cùng thời điểm với người để lại di sản",
-    "Con của người để lại di sản từ chối nhận di sản",
-    "Có di chúc chỉ định cháu hưởng",
-    "Con chết sau người để lại di sản"
+    "Con của người để lại di sản từ chối nhận di sản theo di chúc hoặc pháp luật",
+    "Có di chúc chỉ định cháu hưởng toàn bộ di sản thay cho con đã mất trước đó",
+    "Con chết sau người để lại di sản, khi đã có đầy đủ điều kiện để nhận thừa kế theo luật"
    ],
    "answer": 0,
    "explain": "Điều 652.",

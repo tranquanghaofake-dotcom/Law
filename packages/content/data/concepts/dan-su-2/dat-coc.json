@@ -29,9 +29,9 @@
    "q": "Bên nhận đặt cọc từ chối giao kết hợp đồng thì phải làm gì (nếu không có thỏa thuận khác)?",
    "options": [
     "Trả tài sản đặt cọc và một khoản tiền tương đương giá trị tài sản đặt cọc",
-    "Chỉ trả lại tài sản đặt cọc",
-    "Trả gấp ba",
-    "Không phải trả gì"
+    "Chỉ trả lại tài sản đặt cọc và không phải trả thêm bất kỳ khoản nào khác",
+    "Trả gấp ba lần tài sản đặt cọc cho bên đặt cọc theo thỏa thuận của hai bên",
+    "Không phải trả gì vì đã nhận cọc, bên đặt cọc tự chịu mọi thiệt hại"
    ],
    "answer": 0,
    "explain": "Khoản 2 Điều 328.",
@@ -46,9 +46,9 @@
    "q": "Tài sản đặt cọc có thể gồm những gì?",
    "options": [
     "Tiền, kim khí quý, đá quý hoặc vật có giá trị khác",
-    "Chỉ tiền mặt",
-    "Chỉ quyền sử dụng đất",
-    "Chỉ giấy tờ có giá"
+    "Chỉ tiền mặt do các bên thỏa thuận và xác nhận",
+    "Chỉ quyền sử dụng đất đã đăng ký và có giấy chứng nhận",
+    "Chỉ giấy tờ có giá trị thanh toán tương đương"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 328.",

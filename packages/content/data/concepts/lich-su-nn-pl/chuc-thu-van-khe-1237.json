@@ -31,9 +31,9 @@
    "q": "Chiếu năm 1237 quy định hình thức cho những loại giấy tờ nào?",
    "options": [
     "Chúc thư, văn khế ruộng đất và vay mượn tiền bạc",
-    "Đơn kiện hình sự",
-    "Sổ hộ tịch",
-    "Văn bằng thi cử"
+    "Đơn kiện hình sự về trộm cắp và giết người",
+    "Sổ hộ tịch dân cư và giấy khai sinh, khai tử",
+    "Văn bằng thi cử, bằng cấp và giấy chứng nhận khoa cử"
    ],
    "answer": 0,
    "explain": "Toàn thư năm 1237.",
@@ -100,9 +100,9 @@
    "q": "Quy định năm 1237 phản ánh điều gì về xã hội và pháp luật thời Trần?",
    "options": [
     "Giao dịch dân sự về ruộng đất, vay nợ, thừa kế đã phổ biến; nhà nước quy định hình thức, chứng cứ để hạn chế tranh chấp",
-    "Nhà nước cấm mua bán ruộng đất",
-    "Pháp luật thời Trần chỉ có luật hình",
-    "Mọi giao dịch đều phải do quan lập"
+    "Nhà nước cấm mua bán ruộng đất, mọi giao dịch về đất đai đều bị coi là bất hợp pháp và phải bị tịch thu ngay lập tức",
+    "Pháp luật thời Trần chỉ có luật hình, không có quy định nào về giao dịch dân sự, hôn nhân, thừa kế, tài sản, đất đai và vay mượn",
+    "Mọi giao dịch đều phải do quan lập và đóng dấu, dân thường không được tự làm giấy tờ với nhau trong mọi trường hợp"
    ],
    "answer": 0,
    "explain": "Đánh giá dựa trên câu chữ chiếu năm 1237."

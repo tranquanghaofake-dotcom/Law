@@ -45,9 +45,9 @@
    "q": "Hình thức hợp đồng ủy thác mua bán hàng hóa là gì?",
    "options": [
     "Văn bản hoặc hình thức khác có giá trị pháp lý tương đương",
-    "Lời nói",
-    "Không bắt buộc hình thức",
-    "Phải công chứng"
+    "Lời nói có nhân chứng xác nhận và không cần giấy tờ",
+    "Không bắt buộc hình thức, các bên tự thỏa thuận bằng miệng",
+    "Phải công chứng tại cơ quan có thẩm quyền ở địa phương"
    ],
    "answer": 0,
    "explain": "Điều 159.",

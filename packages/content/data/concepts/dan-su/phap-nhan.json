@@ -46,9 +46,9 @@
    "q": "Vì sao doanh nghiệp tư nhân không có tư cách pháp nhân?",
    "options": [
     "Không có tài sản độc lập với chủ doanh nghiệp",
-    "Không được đăng ký kinh doanh",
-    "Không có tên riêng",
-    "Không được thuê lao động"
+    "Không được đăng ký kinh doanh với cơ quan nhà nước",
+    "Không có tên riêng để giao dịch với bên thứ ba",
+    "Không được thuê lao động theo hợp đồng lao động"
    ],
    "answer": 0,
    "explain": "Thiếu điều kiện tại điểm c khoản 1 Điều 74.",

@@ -28,9 +28,9 @@
    "q": "Theo Toàn thư, ai đổi quốc hiệu Văn Lang thành Âu Lạc?",
    "options": [
     "An Dương Vương (Thục Phán)",
-    "Hùng Vương thứ 18",
-    "Triệu Đà",
-    "Lạc Long Quân"
+    "Hùng Vương thứ mười tám",
+    "Triệu Đà, vua nước Nam Việt",
+    "Lạc Long Quân, tổ người Việt"
    ],
    "answer": 0,
    "explain": "Kỷ Thục: \"Vua đã thôn tính được nước Văn Lang, đổi quốc hiệu là Âu Lạc.\"",
@@ -45,9 +45,9 @@
    "q": "Toàn thư ghi An Dương Vương đóng đô ở đâu?",
    "options": [
     "Phong Khê (nay là thành Cổ Loa)",
-    "Phong Châu",
-    "Hoa Lư",
-    "Mê Linh"
+    "Phong Châu, vùng đất Phú Thọ",
+    "Hoa Lư, Ninh Bình (thời nhà Đinh)",
+    "Mê Linh, Hà Nội (thời Trưng Vương)"
    ],
    "answer": 0,
    "explain": "\"đóng đô ở Phong Khê (nay là thành Cổ Loa)\".",

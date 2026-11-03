@@ -31,9 +31,9 @@
    "q": "Điểm đổi mới căn bản của Luật Doanh nghiệp 1999 so với Luật Công ty 1990 về thủ tục thành lập là gì?",
    "options": [
     "Bỏ xin phép thành lập, chỉ đăng ký kinh doanh",
-    "Bắt buộc xin phép Thủ tướng",
-    "Phải có ít nhất bảy thành viên",
-    "Phải được Trọng tài kinh tế chấp thuận"
+    "Bắt buộc xin phép Thủ tướng trước khi đăng ký",
+    "Phải có ít nhất bảy thành viên góp vốn đầy đủ",
+    "Phải được Trọng tài kinh tế chấp thuận trước"
    ],
    "answer": 0,
    "explain": "Khoản 1, 2 Điều 12 Luật Doanh nghiệp 1999; Điều 14 Luật Công ty 1990.",
