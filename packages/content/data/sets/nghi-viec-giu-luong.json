@@ -34,9 +34,9 @@
     {
       "q": "Hợp đồng lao động xác định thời hạn 6 tháng. Muốn nghỉ, bạn phải báo trước ít nhất bao lâu?",
       "options": [
-        "30 ngày",
-        "15 ngày",
-        "45 ngày",
+        "30 ngày làm việc",
+        "15 ngày làm việc",
+        "45 ngày làm việc",
         "03 ngày làm việc"
       ],
       "answer": 3,
@@ -47,7 +47,7 @@
     {
       "q": "Công ty liên tục trả lương chậm và không đủ. Bạn có được nghỉ việc ngay mà không cần báo trước không?",
       "options": [
-        "Không, vẫn phải báo trước như bình thường",
+        "Không, vẫn phải báo trước như bình thường theo hợp đồng",
         "Có, đây là một trường hợp được nghỉ không cần báo trước",
         "Chỉ khi chậm lương trên 6 tháng",
         "Chỉ khi có quyết định của Tòa án"
@@ -76,7 +76,7 @@
         "Có, nếu nội quy công ty quy định",
         "Có, tối đa 30 ngày",
         "Không, đây không phải trường hợp luật cho phép kéo dài",
-        "Có, nếu người lao động chưa bàn giao xong"
+        "Có, nếu người lao động chưa bàn giao xong công việc cũ"
       ],
       "answer": 2,
       "explain": "Chỉ được kéo dài (tối đa 30 ngày) khi: công ty chấm dứt hoạt động; thay đổi cơ cấu, công nghệ hoặc vì lý do kinh tế; chia, tách, hợp nhất, sáp nhập, bán, cho thuê, chuyển đổi loại hình doanh nghiệp…; hoặc do thiên tai, hỏa hoạn, địch họa, dịch bệnh nguy hiểm. \"Chưa tìm được người thay\" không nằm trong danh sách.",
@@ -87,7 +87,7 @@
       "q": "Khi chấm dứt hợp đồng, công ty có trách nhiệm gì với sổ BHXH và bản chính giấy tờ đã giữ của bạn?",
       "options": [
         "Được giữ lại thêm 01 năm",
-        "Chỉ trả khi bạn ký cam kết không làm cho đối thủ",
+        "Chỉ trả khi bạn ký cam kết không làm việc cho đối thủ cạnh tranh trong hai năm tới",
         "Chuyển thẳng cho công ty mới của bạn",
         "Hoàn thành thủ tục xác nhận thời gian đóng BHXH, BHTN và trả lại bản chính giấy tờ đã giữ"
       ],
@@ -99,7 +99,7 @@
     {
       "q": "Bạn tranh chấp với công ty về tiền lương chưa được trả. Muốn khởi kiện ra Tòa, trước hết phải làm gì?",
       "options": [
-        "Không cần thủ tục gì, nộp đơn kiện ngay",
+        "Không cần thủ tục gì, có thể nộp đơn kiện ngay",
         "Phải qua hòa giải của hòa giải viên lao động",
         "Phải có xác nhận của công an",
         "Phải có đơn của công đoàn"
@@ -113,8 +113,8 @@
       "q": "Thời hiệu yêu cầu hòa giải viên lao động hòa giải tranh chấp lao động cá nhân là bao lâu?",
       "options": [
         "06 tháng kể từ ngày phát hiện hành vi vi phạm",
-        "09 tháng",
-        "01 năm",
+        "09 tháng kể từ ngày phát hiện hành vi vi phạm",
+        "01 năm kể từ ngày phát hiện hành vi vi phạm",
         "03 năm"
       ],
       "answer": 0,
@@ -125,7 +125,7 @@
     {
       "q": "Bạn làm 3 năm, đã đóng bảo hiểm thất nghiệp đủ cả 3 năm, rồi nghỉ việc đúng luật. Công ty có phải trả trợ cấp thôi việc cho 3 năm đó không?",
       "options": [
-        "Có, mỗi năm nửa tháng lương",
+        "Có, mỗi năm làm việc được trả nửa tháng tiền lương vì đã nghỉ việc đúng quy định",
         "Có, mỗi năm 01 tháng lương",
         "Không, vì thời gian đã đóng bảo hiểm thất nghiệp bị trừ khi tính trợ cấp thôi việc",
         "Chỉ khi công ty đồng ý"
