@@ -8,7 +8,7 @@ const s=http.createServer((q,r)=>{let p=decodeURIComponent(q.url.split('?')[0]);
  out.localReq=reqs.length; out.json=reqs.filter(x=>x.endsWith('.json')).length; out.bundle=reqs.filter(x=>x.includes('bundles/'));
  out.entries=await p.evaluate(()=>document.querySelectorAll('.entry-toggle').length);
  out.total=await p.evaluate(()=>document.querySelector('header p.muted')?.textContent.trim().slice(0,30));
- // mở lesson sau trang khái niệm: khái niệm lấy từ bộ nhớ
- const before=reqs.length; await p.goto(U+'#/mon/hien-phap/khai-niem/chu-quyen-nhan-dan');await p.waitForTimeout(800); out.deep=await p.evaluate(()=>document.activeElement.className);
+ // deep-link khái niệm: focus vào mục đang mở
+ await p.goto(U+'#/mon/hien-phap/khai-niem/chu-quyen-nhan-dan');await p.waitForTimeout(800); out.deep=await p.evaluate(()=>document.activeElement.className);
  const f=fs.readFileSync(ROOT+'/content/bundles/hien-phap.json'); out.bundleKB={raw:Math.round(f.length/1024),gzip:Math.round(zlib.gzipSync(f).length/1024)};
  out.bad=bad; console.log(JSON.stringify(out,null,1)); await b.close(); s.close();})();

@@ -3,7 +3,7 @@
   import { PAGE_ART } from '$lib/art/registry';
   // Danh mục khái niệm của một môn: đọc nhanh định nghĩa, căn cứ, khái niệm dễ nhầm; tìm không dấu; ★ đánh dấu.
   import type { Concept, Level, Subject } from '$lib/content/types';
-  import { loadSubject, loadSubjectConcepts } from '$lib/content/loader';
+  import { loadConceptPool, loadSubject, loadSubjectConcepts } from '$lib/content/loader';
   import { repo } from '$lib/store/progress-repo';
   import { stars } from '$lib/store/stars.svelte';
   import { hashFor, route } from '$lib/router.svelte';
@@ -42,7 +42,8 @@
       const s = await loadSubject(route.params.subject);
       const ids = s.chapters.flatMap((c) => c.lessons.flatMap((l) => l.concepts));
       // Một file cho cả môn; khái niệm lỗi schema đã bị loại khi build nên không có trong gói.
-      const all = await loadSubjectConcepts(s.id);
+      // Gói lỗi (mạng, offline chưa có gói trong cache): quay về tải lẻ, thiếu file nào chỉ mất mục đó.
+      const all = await loadSubjectConcepts(s.id).catch(() => loadConceptPool(s.id, ids));
       const m: Record<string, Concept> = {};
       const wanted = new Set(ids);
       for (const c of all) if (wanted.has(c.id)) m[c.id] = c; // giữ như cũ: chỉ khái niệm có trong đợt học
