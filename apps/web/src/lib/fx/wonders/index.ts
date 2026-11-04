@@ -46,6 +46,20 @@ export const WONDERS: Entry[] = [
   { id: 'cho-noi-cai-rang', load: () => import('./cho-noi-cai-rang') },
   { id: 'mui-ca-mau', load: () => import('./mui-ca-mau') },
   { id: 'mu-cang-chai', load: () => import('./mu-cang-chai') },
+  { id: 'cot-co-lung-cu', load: () => import('./cot-co-lung-cu') },
+  { id: 'dinh-fansipan', load: () => import('./dinh-fansipan') },
+  { id: 'nha-san-mai-chau', load: () => import('./nha-san-mai-chau') },
+  { id: 'nha-rong-tay-nguyen', load: () => import('./nha-rong-tay-nguyen') },
+  { id: 'cong-chieng-tay-nguyen', load: () => import('./cong-chieng-tay-nguyen') },
+  { id: 'dinh-lang-bac-bo', load: () => import('./dinh-lang-bac-bo') },
+  { id: 'cay-da-gieng-nuoc-mai-dinh', load: () => import('./cay-da-gieng-nuoc-mai-dinh') },
+  { id: 'mua-roi-nuoc', load: () => import('./mua-roi-nuoc') },
+  { id: 'non-la-ao-dai', load: () => import('./non-la-ao-dai') },
+  { id: 'hoa-sen', load: () => import('./hoa-sen') },
+  { id: 'thuyen-thung', load: () => import('./thuyen-thung') },
+  { id: 'thap-binh-son', load: () => import('./thap-binh-son') },
+  { id: 'chua-dau', load: () => import('./chua-dau') },
+  { id: 'van-mieu-mon', load: () => import('./van-mieu-mon') },
 ];
 
 /** Chọn ngẫu nhiên một kỳ quan cho phiên (`rand` tiêm được để test). */

@@ -58,6 +58,7 @@ describe('kỳ quan', () => {
     expect(WONDERS.length).toBeGreaterThanOrEqual(6);
     expect(new Set(WONDERS.map((e) => e.id)).size).toBe(WONDERS.length);
     const files = Object.keys(import.meta.glob('../../src/lib/fx/wonders/*.ts')).map((p) => p.split('/').pop()!.replace(/\.ts$/, ''));
+    for (const f of files.filter((n) => n !== 'index' && n !== 'lighting')) expect(WONDERS.map((e) => e.id)).toContain(f);
     for (const e of WONDERS) {
       expect(files).toContain(e.id);
       const w = await e.load();
