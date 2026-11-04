@@ -37,7 +37,10 @@
   --lv0: var(--line); --lv1: color-mix(in srgb, var(--accent) 25%, var(--paper)); --lv2: color-mix(in srgb, var(--accent) 40%, var(--paper)); --lv3: color-mix(in srgb, var(--accent) 55%, var(--paper)); --lv4: color-mix(in srgb, var(--accent) 70%, var(--paper)); --lv5: color-mix(in srgb, var(--accent) 85%, var(--paper)); --lv6: var(--ok);
   /* shell (spec §7) */
   --nav-w: 232px; --rail-w: 72px; --aside-w: 280px; --content-max: 760px; --tabbar-h: 56px;
-  --shadow: 0 1px 2px rgba(20, 33, 61, .06), 0 6px 20px rgba(20, 33, 61, .06);
+  /* Thẻ phẳng lúc nghỉ (đợt 2: bỏ bóng đổ ở mọi thẻ — mặc định generic mà audit taste chặn trần 6,5/10).
+     Độ nổi dành cho thẻ chính đầu trang (--shadow-raised) và trạng thái rê chuột của thẻ bấm được. */
+  --shadow: 0 1px 0 rgba(20, 33, 61, .04);
+  --shadow-raised: 0 1px 2px rgba(20, 33, 61, .06), 0 6px 20px rgba(20, 33, 61, .06);
   --font-ui: "Be Vietnam Pro", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --font-quote: "Noto Serif", Georgia, "Times New Roman", serif;
 
@@ -763,7 +766,7 @@ body::before {
     linear-gradient(var(--fc), var(--fc)) right var(--fi) bottom var(--fi) / var(--fl) 2px no-repeat,
     linear-gradient(var(--fc), var(--fc)) right var(--fi) bottom var(--fi) / 2px var(--fl) no-repeat,
     var(--card);
-  box-shadow: inset 0 0 0 6px var(--card), inset 0 0 0 7px var(--line), var(--shadow);
+  box-shadow: inset 0 0 0 6px var(--card), inset 0 0 0 7px var(--line), var(--shadow-raised);
 }
 
 /* Nút: góc vuông vức hơn, viền kép bên trong như biển hiệu */
@@ -796,7 +799,7 @@ h1 { font-family: var(--font-display); font-weight: 800; letter-spacing: -.01em;
   background:
     radial-gradient(70% 90% at 82% 70%, color-mix(in srgb, var(--sun) 80%, transparent) 0%, transparent 70%),
     linear-gradient(180deg, var(--cream) 0%, var(--card) 78%);
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-raised);
 }
 /* mặt đất: hai vạch kẻ + dải sóng nhỏ ở mép dưới */
 .stage::after, .page-head::after, .subject-head::after {
@@ -1778,3 +1781,5 @@ select.qz-sort { min-height: var(--ctl-h); padding: 0 var(--sp-3); border: 1px s
 .qz-shelf-h { display: flex; align-items: center; gap: var(--sp-2); margin: var(--sec-gap) 0 var(--sp-3); font-size: var(--fs-md); }
 .qz-shelf-h .dot { width: 12px; height: 12px; border-radius: 2px; background: var(--shelf); }
 .qz-shelf-h .muted { font-weight: 500; }
+/* Thẻ bấm được: nổi khi rê chuột thay vì đổ bóng lúc nghỉ */
+@media (hover: hover) { a.card:hover, .subject-row:hover, .set:hover { box-shadow: var(--shadow-raised); } }
