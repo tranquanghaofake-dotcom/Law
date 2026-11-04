@@ -10,17 +10,18 @@
 
   if (!shelf.ready) refreshShelf();
   // Tủ rộng (≥ 820 px) gom thành 3 tầng để thấp hơn; hẹp giữ 5 tầng.
-  let boxW = $state(0);
+  // Có độ trễ (hysteresis) quanh ngưỡng: thanh cuộn hiện/ẩn làm .bk rộng/hẹp vài px, không được lật 3↔5 tầng liên tục.
+  let wide = $state(false);
   let boxEl: HTMLDivElement | undefined = $state();
   $effect(() => {
     if (!boxEl) return;
     const el = boxEl;
-    const measure = () => { boxW = el.clientWidth; };
+    const measure = () => { const w = el.clientWidth; if (w >= 840) wide = true; else if (w < 800) wide = false; };
     measure();
     window.addEventListener('resize', measure);
     return () => window.removeEventListener('resize', measure);
   });
-  const rows = $derived(bookcaseRows(shelf.subjects, shelf.books, { tiers: boxW >= 820 ? 3 : 5 }));
+  const rows = $derived(bookcaseRows(shelf.subjects, shelf.books, { tiers: wide ? 3 : 5 }));
   const earned = $derived(shelf.books.filter((b) => b.level > 0).length);
   const ROMAN = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII', 'XIII', 'XIV', 'XV', 'XVI'];
   let selId = $state<string | null>(null);
