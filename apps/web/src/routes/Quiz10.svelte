@@ -11,7 +11,7 @@
   import { onDestroy } from 'svelte';
   import { feedbackSpeech } from '$lib/ui/session/speech';
   import { hashFor, route } from '$lib/router.svelte';
-  import { isTypingTarget, KEYS } from '$lib/ui/cards/types';
+  import { isInteractiveTarget, isTypingTarget, KEYS } from '$lib/ui/cards/types';
   import { GROUPS } from '$lib/ui/groups';
   import { nextAfter, orderIds, shelfFor, ticketNo, verdictFor } from '$lib/ui/quiz';
 
@@ -38,7 +38,8 @@
       i = 0; score = 0; chosen = null; wrong = []; results = []; prevBest = null; finished = false; start = Date.now();
     } catch (e) { error = (e as Error).message; }
   }
-  $effect(() => { void route.params.id; load(); });
+  // Rời màn: route.params về {} trước khi màn huỷ, không tải /content/sets/undefined.json.
+  $effect(() => { if (route.name === 'quiz' && route.params.id) load(); });
   loadIndex().then((x) => (sets = x.sets)).catch(() => { /* không có "Đề tiếp theo" */ });
 
   const q = $derived(qs[i]);
@@ -76,10 +77,14 @@
       else { await navigator.clipboard.writeText(`${data.text} ${data.url}`); shareLabel = 'Đã chép link'; }
     } catch { /* người dùng hủy */ }
   }
+  /** Sau khi chọn: đưa focus (và cuộn) tới nút Câu tiếp, để bàn phím không rơi về body và nút không nằm dưới nếp gấp. */
+  function focusNext(node: HTMLElement) { node.focus(); }
   function onkey(e: KeyboardEvent) {
     if (isTypingTarget(e) || finished) return;
     const n = Number(e.key);
     if (n >= 1 && n <= 4) { e.preventDefault(); pick(n - 1); }
+    // Enter/Space trên link hay nút: để trình duyệt kích hoạt đúng phần tử đó (link Thoát, Xem điều luật, phương án).
+    if ((e.key === 'Enter' || e.key === ' ') && isInteractiveTarget(e)) return;
     if (e.key === 'Enter') { e.preventDefault(); next(); }
     if (e.key === ' ' && chosen !== null && settings.tts && tts.available) { e.preventDefault(); tts.speak(speechFor(chosen === q.answerIdx, q)); }
   }
@@ -157,7 +162,7 @@
       <p class="verdict">{chosen === q.answerIdx ? 'Chính xác.' : `Chưa đúng. Đáp án: ${KEYS[q.answerIdx]}`}</p>
       <p>{q.explain}</p>
       <p class="source muted">Căn cứ: {q.basis}{#if q.url} · <a href={q.url} target="_blank" rel="noopener">Xem điều luật</a>{/if}</p>
-      <button class="btn" type="button" onclick={next}>{i === qs.length - 1 ? 'Xem kết quả' : 'Câu tiếp →'} <kbd>↵</kbd></button>
+      <button class="btn" type="button" onclick={next} use:focusNext>{i === qs.length - 1 ? 'Xem kết quả' : 'Câu tiếp →'} <kbd>↵</kbd></button>
     </div>
   {/if}
 {/if}

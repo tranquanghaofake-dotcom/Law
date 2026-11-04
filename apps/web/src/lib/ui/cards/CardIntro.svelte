@@ -2,7 +2,7 @@
   import Glyph from '$lib/art/Glyph.svelte';
   import type { CardProps } from './types';
   import { introLayers, type IntroItem } from '$lib/engine/session';
-  import { isTypingTarget } from './types';
+  import { isInteractiveTarget, isTypingTarget } from './types';
   let { concept, onanswer, onspeak }: CardProps<IntroItem> = $props();
   const start = Date.now();
   let done = false;
@@ -15,6 +15,7 @@
   function ok() { if (done) return; done = true; onanswer({ correct: true, elapsedMs: Date.now() - start }); }
   function onkey(e: KeyboardEvent) {
     if (isTypingTarget(e)) return;
+    if ((e.key === 'Enter' || e.key === ' ') && isInteractiveTarget(e)) return;
     if (e.key === 'Enter') { e.preventDefault(); ok(); }
     if (e.key === ' ' && onspeak) { e.preventDefault(); onspeak(`${concept.term}. ${concept.definition}`); }
   }

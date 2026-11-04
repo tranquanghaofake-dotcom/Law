@@ -206,6 +206,8 @@
   }
 
   function exit() { tts.stop(); sfx.stopCombo(); sfx.play('exit'); go('home'); }
+  /** Hộp Thoát mở ra: focus vào nút an toàn (Ở lại) thay vì để rơi về body. */
+  function focusOnMount(node: HTMLElement) { node.focus({ preventScroll: true }); }
   function onkey(e: KeyboardEvent) {
     if (e.key === 'Escape' && !ended) { e.preventDefault(); if (isTypingTarget(e)) (e.target as HTMLElement).blur(); confirmExit = !confirmExit; }
   }
@@ -231,7 +233,7 @@
     {#if confirmExit}
       <div class="card confirm" role="dialog" aria-label="Thoát phiên">
         <p>Thoát, giữ tiến độ? Những câu đã trả lời đã được lưu.</p>
-        <div class="row"><button class="btn" type="button" onclick={exit}>Thoát</button><button class="btn ghost" type="button" onclick={() => (confirmExit = false)}>Ở lại</button></div>
+        <div class="row"><button class="btn" type="button" onclick={exit}>Thoát</button><button class="btn ghost" type="button" onclick={() => (confirmExit = false)} use:focusOnMount>Ở lại</button></div>
       </div>
     {/if}
     {#if showBoss}

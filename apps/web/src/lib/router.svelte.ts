@@ -1,3 +1,4 @@
+import { focusRouteHeading } from './ui/routeFocus';
 export type RouteName = 'home' | 'subjects' | 'subject' | 'concepts' | 'quizzes' | 'lesson' | 'review' | 'quiz' | 'profile' | 'settings' | 'notfound';
 export type Route = { name: RouteName; params: Record<string, string> };
 
@@ -46,5 +47,7 @@ if (typeof window !== 'undefined') {
     route.name = r.name;
     route.params = r.params;
     window.scrollTo(0, 0);
+    // Chờ Svelte cập nhật DOM rồi chuyển focus tới tiêu đề màn mới (WCAG 2.4.3).
+    queueMicrotask(() => { requestAnimationFrame(() => { void focusRouteHeading(); }); });
   });
 }

@@ -3,7 +3,7 @@
   import type { Concept } from '$lib/content/types';
   import type { StepItem } from '$lib/engine/session';
   import type { AnswerResult } from './cards/types';
-  import { isTypingTarget } from './cards/types';
+  import { isInteractiveTarget, isTypingTarget } from './cards/types';
   import { answerText, explainText } from './cards/answer';
   import { feedbackSpeech } from './session/speech';
   import { LEVEL_NAMES } from '$lib/game/levels';
@@ -26,6 +26,7 @@
   function focusOnMount(node: HTMLElement) { node.focus({ preventScroll: true }); }
   function onkey(e: KeyboardEvent) {
     if (isTypingTarget(e)) return;
+    if ((e.key === 'Enter' || e.key === ' ') && isInteractiveTarget(e)) return;
     if (e.key === 'Enter') { e.preventDefault(); onnext(); }
     if (e.key === ' ' && onspeak) { e.preventDefault(); onspeak(speakText); }
   }

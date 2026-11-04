@@ -7,6 +7,8 @@
   --muted: #5b6475;
   --line: #e3ddd1;
   --accent: #d97a1e;
+  /* Viền focus: cùng tông hổ phách nhưng sẫm hơn accent để đạt ≥ 3:1 (WCAG 1.4.11) trên giấy 4,6:1, trên trắng 5,1:1, trên gỗ tối 3,2:1. */
+  --focus: #a85a12;
   --accent-ink: #1a1206;
   --seal: #b3261e;
   --ok: #1f7a4d;
@@ -113,7 +115,9 @@ button { font: inherit; color: inherit; }
 .card { background: var(--card); border: 1px solid var(--line); border-radius: var(--r-md); padding: var(--pad-card); box-shadow: var(--shadow); }
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: var(--sp-2); min-height: var(--ctl-h); padding: 0 var(--sp-4); border-radius: var(--r-sm); border: 1px solid transparent; background: var(--ink); color: var(--paper); font-weight: 600; cursor: pointer; text-decoration: none; }
 .btn:hover { filter: brightness(1.08); }
-.btn:focus-visible, .opt:focus-visible, a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.btn:focus-visible, .opt:focus-visible, a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:not([tabindex="-1"]):focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+/* Tiêu đề/khung nhận focus bằng chương trình khi đổi màn (tabindex=-1): không vẽ viền. */
+[tabindex="-1"]:focus { outline: none; }
 .btn.ghost { background: transparent; color: var(--ink); border-color: var(--line); }
 .btn.primary { background: var(--accent); color: var(--accent-ink); }
 .btn:disabled { opacity: .5; cursor: default; }
@@ -518,7 +522,7 @@ kbd { font: 600 var(--fs-xs)/1 var(--font-ui); background: rgba(255,255,255,.18)
 .sug-t.none { font-weight: 600; color: var(--muted); }
 a.sug-t::after { content: ""; position: absolute; inset: 0; border-radius: inherit; }
 a.sug-t:focus-visible { outline: none; }
-a.sug-t:focus-visible::after { outline: 3px solid var(--accent); outline-offset: 2px; }
+a.sug-t:focus-visible::after { outline: 3px solid var(--focus); outline-offset: 2px; }
 .sug-m { margin: var(--sp-1) 0 0; font-size: var(--fs-sm); color: var(--muted); }
 .sug-btn { position: relative; z-index: 1; margin-top: 8px; align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 6px 14px; border: 1px solid var(--line); border-radius: var(--r-md); background: var(--paper); font-size: var(--fs-sm); font-weight: 600; cursor: pointer; }
 .sug-btn:hover { border-color: var(--accent); }
@@ -535,7 +539,7 @@ a.sug-t:focus-visible::after { outline: 3px solid var(--accent); outline-offset:
 @media (min-width: 640px) { .tickets { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .ticket { position: relative; display: flex; flex-direction: column; min-width: 0; overflow: hidden; background: var(--card); border: 1px solid var(--line); border-radius: var(--r-md); text-decoration: none; box-shadow: var(--shadow); transition: transform .14s ease, box-shadow .14s ease, border-color .14s ease; }
 .ticket:hover { transform: translateY(-2px); border-color: var(--shelf); box-shadow: 0 2px 4px rgba(20, 33, 61, .08), 0 10px 24px rgba(20, 33, 61, .12); }
-.ticket:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.ticket:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
 /* hai nốt khuyết ở đường xé giữa thân phiếu và cuống */
 .ticket::before, .ticket::after { content: ""; position: absolute; bottom: 38px; width: 12px; height: 12px; border-radius: 50%; background: var(--paper); border: 1px solid var(--line); z-index: 1; }
 .ticket::before { left: -7px; } .ticket::after { right: -7px; }
@@ -668,7 +672,7 @@ a.sug-t:focus-visible::after { outline: 3px solid var(--accent); outline-offset:
 .concept-tools { display: flex; flex-wrap: wrap; gap: var(--sp-2); align-items: center; margin: 0 0 var(--sec-gap); }
 .concept-tools .search { flex: 1 1 260px; }
 .concept-tools input[type="search"] { width: 100%; min-height: var(--ctl-h); padding: 0 var(--sp-3); border: 1px solid var(--line); border-radius: var(--r-sm); background: var(--card); color: var(--ink); font: inherit; font-size: var(--fs-md); }
-.concept-tools input[type="search"]:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.concept-tools input[type="search"]:focus-visible { outline: 2px solid var(--focus); outline-offset: 1px; }
 .concept-list { list-style: none; padding: 0; margin: 0 0 var(--sec-gap); display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--row-gap); }
 .concept-entry { border: 1px solid var(--line); border-radius: var(--r-md); background: var(--card); scroll-margin-top: 16px; }
 .concept-entry.open { border-color: var(--accent); }
@@ -847,7 +851,7 @@ h1 { font-family: var(--font-display); font-weight: 800; letter-spacing: -.01em;
 .book { position: relative; }
 .book a { display: block; line-height: 0; border-radius: 3px; transform-origin: 50% 100%; transition: transform .28s cubic-bezier(.2, .9, .3, 1.3), filter .28s ease; }
 .book a:hover, .book a:focus-visible { transform: translateY(-8px) rotate(-3deg); filter: drop-shadow(0 0 3px color-mix(in srgb, var(--accent) 85%, transparent)) drop-shadow(0 8px 10px rgba(20, 33, 61, .2)); }
-.book a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.book a:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; }
 .book.done a { filter: drop-shadow(0 0 4px color-mix(in srgb, var(--accent) 55%, transparent)); }
 .book .spine { display: block; overflow: hidden; }
 .book .veil { fill: var(--paper); opacity: .74; transition: opacity .28s ease; }
@@ -1447,7 +1451,7 @@ body:has(dialog.sheet[open]) { overflow: hidden; }
   transition: transform .24s cubic-bezier(.2, .9, .3, 1.3), filter .24s ease, box-shadow .24s ease; }
 .bk-spine:focus-visible { transform: translateY(-8px) rotate(-1.5deg); filter: saturate(calc(.7 + .3 * var(--lit))) brightness(calc(.95 + .12 * var(--lit))); box-shadow: 0 10px 14px rgba(0, 0, 0, .45), inset 0 0 0 1px rgba(0, 0, 0, .28); }
 @media (hover: hover) and (pointer: fine) { .bk-spine:hover { transform: translateY(-8px) rotate(-1.5deg); filter: saturate(calc(.7 + .3 * var(--lit))) brightness(calc(.95 + .12 * var(--lit))); box-shadow: 0 10px 14px rgba(0, 0, 0, .45), inset 0 0 0 1px rgba(0, 0, 0, .28); } }
-.bk-spine:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.bk-spine:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
 .bk-spine.full { box-shadow: 0 0 0 1px var(--bk-gold), 0 0 10px 1px rgba(226, 178, 60, .6), 0 2px 4px rgba(0, 0, 0, .5); }
 .bk-label { position: absolute; z-index: 1; left: calc(3px * var(--k)); right: calc(3px * var(--k)); top: calc(12px * var(--k)); height: calc(14px * var(--k)); display: grid; place-items: center; background: #fbf4df; border: 1px solid #b9a882; border-radius: 1px; color: #5b4a2e; font: 800 calc(5.4px * var(--k))/1 var(--font-ui); letter-spacing: .04em; text-shadow: none; box-shadow: 0 1px 1px rgba(0, 0, 0, .35); }
 .bk-name { position: absolute; z-index: 1; left: calc(3px * var(--k)); right: calc(3px * var(--k)); top: calc(31px * var(--k)); bottom: calc(13px * var(--k)); display: flex; justify-content: center; align-items: center; writing-mode: vertical-rl; white-space: nowrap; padding: 2px 0; border: 1px solid color-mix(in srgb, var(--gold) 80%, transparent); border-radius: 1px; background: rgba(0, 0, 0, .34); font: 800 calc(var(--fs, 9) * 1px * var(--k))/1 var(--font-ui); letter-spacing: .02em; color: #fff6d8; text-shadow: 0 1px 1px rgba(0, 0, 0, .6); }
@@ -1484,7 +1488,7 @@ body:has(dialog.sheet[open]) { overflow: hidden; }
 }
 .finder { display: block; max-width: 420px; }
 .finder input[type="search"] { width: 100%; min-height: var(--ctl-h); padding: 0 var(--sp-3); border: 1px solid var(--line); border-radius: var(--r-sm); background: var(--card); color: var(--ink); font: inherit; font-size: var(--fs-md); }
-.finder input[type="search"]:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.finder input[type="search"]:focus-visible { outline: 2px solid var(--focus); outline-offset: 1px; }
 .shelf-chips { display: flex; gap: var(--sp-2); margin: 0 0 var(--sec-gap); overflow-x: auto; padding-bottom: var(--sp-1); scrollbar-width: thin; -webkit-overflow-scrolling: touch; }
 .shelf-chips .filter { flex: none; display: inline-flex; align-items: center; gap: var(--sp-2); white-space: nowrap; }
 .shelf-chips .dot, .shelf-title .dot { width: 10px; height: 10px; border-radius: 2px; background: var(--shelf, var(--muted)); border: 1px solid rgba(20, 33, 61, .35); flex: none; }
@@ -1498,7 +1502,7 @@ body:has(dialog.sheet[open]) { overflow: hidden; }
 .cover-link { display: grid; justify-items: center; gap: var(--sp-1); text-decoration: none; text-align: center; color: inherit; }
 .cover-link .book-cover { display: block; width: 100%; max-width: 124px; height: auto; transition: transform .22s cubic-bezier(.2, .9, .3, 1.3), filter .22s ease; filter: drop-shadow(1px 2px 2px rgba(20, 33, 61, .22)); }
 .cover-link:hover .book-cover, .cover-link:focus-visible .book-cover { transform: translateY(-4px); filter: drop-shadow(0 0 3px color-mix(in srgb, var(--accent) 70%, transparent)) drop-shadow(0 8px 10px rgba(20, 33, 61, .25)); }
-.cover-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: var(--r-sm); }
+.cover-link:focus-visible { outline: 2px solid var(--focus); outline-offset: 4px; border-radius: var(--r-sm); }
 .cover-link .name { font-size: var(--fs-sm); line-height: var(--lh-snug); font-weight: 600; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .shelf-sec .plank { display: none; }
 .empty { padding: var(--sp-5) 0; text-align: center; }
@@ -1612,7 +1616,7 @@ body:has(dialog.sheet[open]) { overflow: hidden; }
 /* Nút quay lại ở đầu nội dung các trang con (không có ở 4 trang gốc) */
 .back-btn { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; margin: 0 0 var(--sp-2) -8px; padding: 0 12px; border: 0; border-radius: var(--r-md); background: transparent; color: var(--accent-text); font: 700 var(--fs-sm)/1 var(--font-ui); cursor: pointer; }
 .back-btn:hover { background: color-mix(in srgb, var(--accent) 10%, transparent); }
-.back-btn:focus-visible { outline: 3px solid var(--accent); outline-offset: 1px; }
+.back-btn:focus-visible { outline: 3px solid var(--focus); outline-offset: 1px; }
 .session-hint { margin-bottom: var(--sp-3); border-color: var(--accent); }
 .session-hint p { margin: 0 0 var(--sp-2); font-size: var(--fs-sm); line-height: 1.45; }
 .session-hint .kicker { margin: 0 0 4px; }
