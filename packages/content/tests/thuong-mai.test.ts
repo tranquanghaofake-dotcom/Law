@@ -14,7 +14,7 @@ describe('nội dung Luật Thương mại 2', () => {
     for (const f of files) {
       const c = conceptSchema.parse(JSON.parse(readFileSync(join(dir, f), 'utf8')));
       expect(c.source.kind).toBe('statute');
-      expect(c.source.cite).toMatch(/(Luật Thương mại 2005 \(VBHN 113\/VBHN-VPQH 2025\)|Luật Trọng tài thương mại 2010 \(VBHN 60\/VBHN-VPQH 2025\))$/);
+      expect(c.source.cite).toMatch(/(Luật Thương mại 2005 \(sửa đổi, bổ sung năm 2017, 2019, 2025\)|Luật Trọng tài thương mại 2010 \(sửa đổi, bổ sung năm 2025\))$/);
       expect(c.source.url).toMatch(/^https:\/\/thuvienphapluat\.vn\//);
       expect(c.checked).toBe('2026-11-01');
       expect(c.items.filter((i) => i.type === 'recall').length).toBe(1);
@@ -45,7 +45,7 @@ describe('nội dung Luật Thương mại 2', () => {
       expect(s.group).toBe('thuong-mai');
       expect(s.questions.length).toBe(10);
       for (const q of s.questions) {
-        expect(q.basis).toMatch(/Điều \d+ Luật Thương mại \(VBHN 113\/VBHN-VPQH 2025\)/);
+        expect(q.basis).toMatch(/Điều \d+ Luật Thương mại \(sửa đổi, bổ sung năm 2017, 2019, 2025\)/);
         expect(q.url).toMatch(/^https:\/\/thuvienphapluat\.vn\//);
       }
     }

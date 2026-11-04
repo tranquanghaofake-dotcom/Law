@@ -14,7 +14,7 @@ describe('nội dung Luật Chứng khoán', () => {
     for (const f of files) {
       const c = conceptSchema.parse(JSON.parse(readFileSync(join(dir, f), 'utf8')));
       expect(c.source.kind).toBe('statute');
-      expect(c.source.cite).toMatch(/VBHN 102\/VBHN-VPQH/);
+      expect(c.source.cite).toMatch(/Luật Chứng khoán 2019 \(sửa đổi, bổ sung năm 2024, 2025\)/);
       expect(c.source.url).toMatch(/^https:\/\/vbpl\.vn\//);
       expect(c.items.filter((i) => i.type === 'recall').length).toBe(1);
       expect(c.items.filter((i) => i.type === 'cloze').length).toBe(2);

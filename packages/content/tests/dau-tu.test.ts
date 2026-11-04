@@ -19,7 +19,7 @@ describe('nội dung Luật Đầu tư', () => {
         expect(c.source.cite, f).toMatch(/chưa đối chiếu nguyên văn/);
       } else {
         expect(c.source.kind, f).toBe('statute');
-        expect(c.source.cite).toMatch(/Luật Đầu tư 2025 \(VBHN 142\/2026\/VBHN-LQ-VPQH\)$/);
+        expect(c.source.cite).toMatch(/Luật Đầu tư 2025$/);
         expect(c.source.url).toMatch(/^https:\/\/thuvienphapluat\.vn\//);
       }
       expect(c.checked).toBe('2026-11-01');

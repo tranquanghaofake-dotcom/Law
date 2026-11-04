@@ -8,7 +8,7 @@
  "example": "Một công ty công nghệ vận hành cổng thanh toán cho các website bán hàng, truyền lệnh thanh toán từ người mua đến ngân hàng — cung ứng dịch vụ trung gian thanh toán, cần giấy phép của Ngân hàng Nhà nước.",
  "source": {
   "kind": "statute",
-  "cite": "Khoản 10 Điều 6 Luật Ngân hàng Nhà nước Việt Nam 2010 (VBHN 141/2026/VBHN-LQ-VPQH)",
+  "cite": "Khoản 10 Điều 6 Luật Ngân hàng Nhà nước Việt Nam 2010 (sửa đổi, bổ sung năm 2022)",
   "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-141-2026-VBHN-LQ-VPQH-Luat-Ngan-hang-Nha-nuoc-Viet-Nam-726674.aspx"
  },
  "checked": "2026-11-01",
@@ -39,7 +39,7 @@
    "explain": "Khoản 10 Điều 6.",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 10 Điều 6 Luật Ngân hàng Nhà nước Việt Nam 2010 (VBHN 141/2026/VBHN-LQ-VPQH)"
+    "cite": "Khoản 10 Điều 6 Luật Ngân hàng Nhà nước Việt Nam 2010 (sửa đổi, bổ sung năm 2022)"
    }
   },
   {
@@ -56,7 +56,7 @@
    "explain": "Khoản 10 Điều 6.",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 10 Điều 6 Luật Ngân hàng Nhà nước Việt Nam 2010 (VBHN 141/2026/VBHN-LQ-VPQH)"
+    "cite": "Khoản 10 Điều 6 Luật Ngân hàng Nhà nước Việt Nam 2010 (sửa đổi, bổ sung năm 2022)"
    }
   },
   {
@@ -128,10 +128,10 @@
    "level": 4,
    "statement": "Dịch vụ trung gian thanh toán là hoạt động làm trung gian kết nối, truyền dẫn và xử lý dữ liệu điện tử các giao dịch thanh toán giữa tổ chức cung ứng dịch vụ thanh toán và người sử dụng dịch vụ thanh toán.",
    "answer": true,
-   "explain": "Đúng. Khoản 10 Điều 6 Luật Ngân hàng Nhà nước Việt Nam 2010 (VBHN 141/2026/VBHN-LQ-VPQH) (nguyên văn).",
+   "explain": "Đúng. Khoản 10 Điều 6 Luật Ngân hàng Nhà nước Việt Nam 2010 (sửa đổi, bổ sung năm 2022) (nguyên văn).",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 10 Điều 6 Luật Ngân hàng Nhà nước Việt Nam 2010 (VBHN 141/2026/VBHN-LQ-VPQH)",
+    "cite": "Khoản 10 Điều 6 Luật Ngân hàng Nhà nước Việt Nam 2010 (sửa đổi, bổ sung năm 2022)",
     "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-141-2026-VBHN-LQ-VPQH-Luat-Ngan-hang-Nha-nuoc-Viet-Nam-726674.aspx"
    }
   }

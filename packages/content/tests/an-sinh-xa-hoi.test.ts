@@ -19,7 +19,7 @@ describe('nội dung Luật An sinh xã hội', () => {
         expect(c.source.cite, f).toMatch(/chưa đối chiếu nguyên văn/);
       } else {
         expect(c.source.kind, f).toBe('statute');
-        expect(c.source.cite).toMatch(/(Luật Bảo hiểm xã hội 2024 \(VBHN 19\/VBHN-VPQH 2026\)|Luật Việc làm 2025 \(74\/2025\/QH15\)|Luật Bảo hiểm y tế \(VBHN 40\/VBHN-VPQH 2026\)|Pháp lệnh Ưu đãi người có công với cách mạng 2020 \(02\/2020\/UBTVQH14\))$/);
+        expect(c.source.cite).toMatch(/(Luật Bảo hiểm xã hội 2024 \(sửa đổi, bổ sung năm 2025\)|Luật Việc làm 2025 \(74\/2025\/QH15\)|Luật Bảo hiểm y tế \(sửa đổi, bổ sung đến năm 2025\)|Pháp lệnh Ưu đãi người có công với cách mạng 2020 \(02\/2020\/UBTVQH14\))$/);
         expect(c.source.url).toMatch(/^https:\/\/thuvienphapluat\.vn\//);
       }
       expect(c.checked).toBe('2026-11-01');

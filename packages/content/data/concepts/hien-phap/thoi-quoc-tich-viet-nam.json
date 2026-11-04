@@ -8,7 +8,7 @@
  "example": "Anh T đang bị truy cứu trách nhiệm hình sự ở Việt Nam, xin thôi quốc tịch để nhập quốc tịch Canada: CHƯA được thôi (điểm b khoản 2 Điều 27) cho đến khi hết tình trạng đó.",
  "source": {
   "kind": "statute",
-  "cite": "Khoản 1, khoản 4 Điều 27 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025)",
+  "cite": "Khoản 1, khoản 4 Điều 27 Luật Quốc tịch Việt Nam 2008 (sửa đổi, bổ sung năm 2014, 2025)",
   "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-53-vbhn-vpqh-quoc-tich-viet-nam--179993"
  },
  "checked": "2026-11-01",
@@ -37,7 +37,7 @@
    "explain": "Khoản 4 Điều 27.",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 4 Điều 27 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025)"
+    "cite": "Khoản 4 Điều 27 Luật Quốc tịch Việt Nam 2008 (sửa đổi, bổ sung năm 2014, 2025)"
    }
   },
   {
@@ -54,7 +54,7 @@
    "explain": "Điểm a khoản 2 Điều 27.",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 2 Điều 27 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025)"
+    "cite": "Khoản 2 Điều 27 Luật Quốc tịch Việt Nam 2008 (sửa đổi, bổ sung năm 2014, 2025)"
    }
   },
   {
@@ -79,7 +79,7 @@
     {
      "text": "Công dân xin thôi quốc tịch Việt Nam nhưng đang nợ thuế đối với Nhà nước",
      "answer": "left",
-     "basis": "Điểm a khoản 2 Điều 27 Luật Quốc tịch Việt Nam 2008 (VBHN)"
+     "basis": "Điểm a khoản 2 Điều 27 Luật Quốc tịch Việt Nam 2008 (sửa đổi, bổ sung năm 2014, 2025)"
     }
    ],
    "explain": "Khoản 2, 3, 4 Điều 27."

@@ -19,7 +19,7 @@ describe('nội dung Pháp luật tài chính doanh nghiệp', () => {
         expect(c.source.cite, f).toMatch(/chưa đối chiếu nguyên văn/);
       } else {
         expect(c.source.kind, f).toBe('statute');
-        expect(c.source.cite).toMatch(/(Luật Doanh nghiệp 2020 \(VBHN 67\/VBHN-VPQH 2025\)|Luật Chứng khoán 2019 \(VBHN 102\/VBHN-VPQH 2026\)|Luật Thuế thu nhập doanh nghiệp 2025 \(67\/2025\/QH15\)|Luật Cạnh tranh 2018)$/);
+        expect(c.source.cite).toMatch(/(Luật Doanh nghiệp 2020 \(sửa đổi, bổ sung năm 2022, 2025\)|Luật Chứng khoán 2019 \(sửa đổi, bổ sung năm 2024, 2025\)|Luật Thuế thu nhập doanh nghiệp 2025 \(67\/2025\/QH15\)|Luật Cạnh tranh 2018)$/);
         expect(c.source.url).toMatch(/^https:\/\/(thuvienphapluat|vbpl)\.vn\//);
       }
       expect(c.checked).toBe('2026-11-01');

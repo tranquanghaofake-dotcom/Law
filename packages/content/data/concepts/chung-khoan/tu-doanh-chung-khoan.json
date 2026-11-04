@@ -8,7 +8,7 @@
  "example": "Bộ phận tự doanh của công ty chứng khoán Y mua 2 triệu cổ phiếu ngân hàng bằng vốn của Y; nếu giá giảm, Y chịu lỗ, khách hàng không liên quan.",
  "source": {
   "kind": "statute",
-  "cite": "Khoản 30 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+  "cite": "Khoản 30 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)",
   "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
  },
  "checked": "2026-11-01",
@@ -37,7 +37,7 @@
    "explain": "Khoản 30 Điều 4.",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 30 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+    "cite": "Khoản 30 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
    }
   },
   {
@@ -54,7 +54,7 @@
    "explain": "Khoản 2 Điều 86.",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 2 Điều 86 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+    "cite": "Khoản 2 Điều 86 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
    }
   },
   {
@@ -116,7 +116,7 @@
    "explain": "Hành vi \"chạy trước lệnh\" khách hàng.",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 5 Điều 89 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)"
+    "cite": "Khoản 5 Điều 89 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)"
    }
   },
   {
@@ -136,10 +136,10 @@
    "level": 4,
    "statement": "Tự doanh chứng khoán là việc công ty chứng khoán mua, bán chứng khoán cho chính mình.",
    "answer": true,
-   "explain": "Đúng. Khoản 30 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026) (nguyên văn).",
+   "explain": "Đúng. Khoản 30 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025) (nguyên văn).",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 30 Điều 4 Luật Chứng khoán 2019 (VBHN 102/VBHN-VPQH 2026)",
+    "cite": "Khoản 30 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)",
     "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-102-vbhn-vpqh-2026-hop-nhat-luat-chung-khoan-so-54-2019-qh14--21c11fe0-8fea-11f1-bc9a-8fd80d1be486"
    }
   }

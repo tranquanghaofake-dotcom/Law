@@ -8,7 +8,7 @@
  "example": "Nghị định ký ban hành ngày 01/3 ghi \"có hiệu lực từ 15/3\": sai vì chưa đủ 45 ngày; sớm nhất là 15/4. Nghị quyết HĐND tỉnh thông qua 10/7, hiệu lực từ 20/7: hợp lệ (đủ 10 ngày).",
  "source": {
   "kind": "statute",
-  "cite": "Khoản 1 Điều 53 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)",
+  "cite": "Khoản 1 Điều 53 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)",
   "url": "https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Van-ban-hop-nhat-54-VBHN-VPQH-2025-Luat-Ban-hanh-van-ban-quy-pham-phap-luat-669858.aspx"
  },
  "checked": "2026-11-01",
@@ -41,7 +41,7 @@
    "explain": "Khoản 1 Điều 53.",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 1 Điều 53 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)"
+    "cite": "Khoản 1 Điều 53 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)"
    }
   },
   {
@@ -58,7 +58,7 @@
    "explain": "Đoạn 2 khoản 1 Điều 53.",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 1 Điều 53 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)"
+    "cite": "Khoản 1 Điều 53 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)"
    }
   },
   {
@@ -130,10 +130,10 @@
    "level": 4,
    "statement": "Thời điểm có hiệu lực của văn bản quy phạm pháp luật không sớm hơn 45 ngày kể từ ngày thông qua hoặc ký ban hành đối với văn bản của cơ quan nhà nước ở trung ương; không sớm hơn 10 ngày đối với văn bản của chính quyền địa phương.",
    "answer": true,
-   "explain": "Đúng. Khoản 1 Điều 53 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH).",
+   "explain": "Đúng. Khoản 1 Điều 53 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025).",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 1 Điều 53 Luật Ban hành văn bản quy phạm pháp luật 2025 (VBHN 54/VBHN-VPQH)"
+    "cite": "Khoản 1 Điều 53 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)"
    }
   }
  ]

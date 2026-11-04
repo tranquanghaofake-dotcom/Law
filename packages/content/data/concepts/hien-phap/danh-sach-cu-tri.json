@@ -8,7 +8,7 @@
  "example": "Sinh viên tạm trú ở Hà Nội 6 tháng, thường trú ở Nghệ An: được ghi tên ở MỘT nơi; nếu ghi ở nơi tạm trú (chưa đủ 12 tháng) thì bầu đại biểu Quốc hội và Hội đồng nhân dân cấp tỉnh (khoản 3 Điều 29).",
  "source": {
   "kind": "statute",
-  "cite": "Khoản 1, khoản 2 Điều 29 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026)",
+  "cite": "Khoản 1, khoản 2 Điều 29 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (sửa đổi, bổ sung năm 2025)",
   "url": "https://vbpl.vn/van-ban/chi-tiet/luat-bau-cu-dai-bieu-quoc-hoi-va-dai-bieu-hoi-dong-nhan-dan-so-85-2015-qh13--70812"
  },
  "checked": "2026-11-01",
@@ -39,7 +39,7 @@
    "explain": "Khoản 2 Điều 29.",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 2 Điều 29 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026)"
+    "cite": "Khoản 2 Điều 29 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (sửa đổi, bổ sung năm 2025)"
    }
   },
   {
@@ -56,7 +56,7 @@
    "explain": "Khoản 5 Điều 29.",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 5 Điều 29 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026)"
+    "cite": "Khoản 5 Điều 29 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (sửa đổi, bổ sung năm 2025)"
    }
   },
   {
@@ -132,10 +132,10 @@
    "level": 4,
    "statement": "Mọi công dân có quyền bầu cử đều được ghi tên vào danh sách cử tri và được phát thẻ cử tri.",
    "answer": true,
-   "explain": "Đúng. Khoản 1 Điều 29 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026) (nguyên văn).",
+   "explain": "Đúng. Khoản 1 Điều 29 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (sửa đổi, bổ sung năm 2025) (nguyên văn).",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 1 Điều 29 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026)",
+    "cite": "Khoản 1 Điều 29 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (sửa đổi, bổ sung năm 2025)",
     "url": "https://vbpl.vn/van-ban/chi-tiet/luat-bau-cu-dai-bieu-quoc-hoi-va-dai-bieu-hoi-dong-nhan-dan-so-85-2015-qh13--70812"
    }
   }

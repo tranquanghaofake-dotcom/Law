@@ -19,7 +19,7 @@ describe('nội dung Luật Ngân hàng', () => {
         expect(c.source.cite, f).toMatch(/chưa đối chiếu nguyên văn/);
       } else {
         expect(c.source.kind, f).toBe('statute');
-        expect(c.source.cite).toMatch(/(Luật Các tổ chức tín dụng 2024 \(VBHN 143\/2026\/VBHN-LQ-VPQH\)|Luật Ngân hàng Nhà nước Việt Nam 2010 \(VBHN 141\/2026\/VBHN-LQ-VPQH\)|Pháp lệnh Ngoại hối 2005 \(VBHN 140\/2026\/VBHN-PL-VPQH\)|Luật Bảo hiểm tiền gửi 2025 \(111\/2025\/QH15\))$/);
+        expect(c.source.cite).toMatch(/(Luật Các tổ chức tín dụng 2024 \(sửa đổi, bổ sung năm 2024, 2025\)|Luật Ngân hàng Nhà nước Việt Nam 2010 \(sửa đổi, bổ sung năm 2022\)|Pháp lệnh Ngoại hối 2005 \(sửa đổi, bổ sung năm 2013\)|Luật Bảo hiểm tiền gửi 2025 \(111\/2025\/QH15\))$/);
         expect(c.source.url).toMatch(/^https:\/\/thuvienphapluat\.vn\//);
       }
       expect(c.checked).toBe('2026-11-01');

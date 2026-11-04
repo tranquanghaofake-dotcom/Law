@@ -8,7 +8,7 @@
  "example": "Lấy một gói bánh trị giá vài nghìn đồng, không thuộc trường hợp đặc biệt: có dấu hiệu trộm cắp nhưng tính nguy hiểm không đáng kể, thường xử lý hành chính.",
  "source": {
   "kind": "statute",
-  "cite": "Khoản 1, khoản 2 Điều 8 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)",
+  "cite": "Khoản 1, khoản 2 Điều 8 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)",
   "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
  },
  "checked": "2026-11-01",
@@ -38,7 +38,7 @@
    "explain": "Khoản 2 Điều 8.",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 2 Điều 8 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+    "cite": "Khoản 2 Điều 8 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
    }
   },
   {
@@ -55,7 +55,7 @@
    "explain": "Khoản 1 Điều 8.",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 1 Điều 8 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)"
+    "cite": "Khoản 1 Điều 8 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)"
    }
   },
   {
@@ -126,10 +126,10 @@
    "level": 4,
    "statement": "Những hành vi tuy có dấu hiệu của tội phạm nhưng tính chất nguy hiểm cho xã hội không đáng kể thì không phải là tội phạm và được xử lý bằng các biện pháp khác.",
    "answer": true,
-   "explain": "Đúng. Khoản 2 Điều 8 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025) (nguyên văn).",
+   "explain": "Đúng. Khoản 2 Điều 8 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025) (nguyên văn).",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 2 Điều 8 Bộ luật Hình sự 2015 (VBHN 135/VBHN-VPQH 2025)",
+    "cite": "Khoản 2 Điều 8 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)",
     "url": "https://thuvienphapluat.vn/van-ban/Trach-nhiem-hinh-su/Van-ban-hop-nhat-135-VBHN-VPQH-2025-Bo-luat-Hinh-su-672275.aspx"
    }
   }

@@ -8,7 +8,7 @@
  "example": "Nhà máy mua vải 100 (thuế 10), bán áo 150 (thuế 15): nhà máy nộp 15 − 10 = 5, đúng bằng thuế trên phần giá trị tăng thêm 50.",
  "source": {
   "kind": "statute",
-  "cite": "Điều 2, 3 Luật Thuế giá trị gia tăng 2024 (VBHN 114/VBHN-VPQH 2026)",
+  "cite": "Điều 2, 3 Luật Thuế giá trị gia tăng 2024 (đã sửa đổi, bổ sung)",
   "url": "https://thuvienphapluat.vn/van-ban/Thue-Phi-Le-Phi/Van-ban-hop-nhat-114-VBHN-VPQH-2026-Luat-Thue-Gia-tri-gia-tang-708152.aspx"
  },
  "checked": "2026-11-01",
@@ -39,7 +39,7 @@
    "explain": "Điều 2.",
    "source": {
     "kind": "statute",
-    "cite": "Điều 2 Luật Thuế giá trị gia tăng 2024 (VBHN 114/VBHN-VPQH 2026)"
+    "cite": "Điều 2 Luật Thuế giá trị gia tăng 2024 (đã sửa đổi, bổ sung)"
    }
   },
   {
@@ -56,7 +56,7 @@
    "explain": "Điều 3.",
    "source": {
     "kind": "statute",
-    "cite": "Điều 3 Luật Thuế giá trị gia tăng 2024 (VBHN 114/VBHN-VPQH 2026)"
+    "cite": "Điều 3 Luật Thuế giá trị gia tăng 2024 (đã sửa đổi, bổ sung)"
    }
   },
   {
@@ -128,10 +128,10 @@
    "level": 4,
    "statement": "Thuế giá trị gia tăng là thuế tính trên giá trị tăng thêm của hàng hóa, dịch vụ phát sinh trong quá trình từ sản xuất, lưu thông đến tiêu dùng.",
    "answer": true,
-   "explain": "Đúng. Điều 2 3 Luật Thuế giá trị gia tăng 2024 (VBHN 114/VBHN-VPQH 2026) (nguyên văn).",
+   "explain": "Đúng. Điều 2 3 Luật Thuế giá trị gia tăng 2024 (đã sửa đổi, bổ sung) (nguyên văn).",
    "source": {
     "kind": "statute",
-    "cite": "Điều 2 3 Luật Thuế giá trị gia tăng 2024 (VBHN 114/VBHN-VPQH 2026)",
+    "cite": "Điều 2 3 Luật Thuế giá trị gia tăng 2024 (đã sửa đổi, bổ sung)",
     "url": "https://thuvienphapluat.vn/van-ban/Thue-Phi-Le-Phi/Van-ban-hop-nhat-114-VBHN-VPQH-2026-Luat-Thue-Gia-tri-gia-tang-708152.aspx"
    }
   }

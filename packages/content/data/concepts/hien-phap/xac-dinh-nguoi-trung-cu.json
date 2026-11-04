@@ -8,7 +8,7 @@
  "example": "Đơn vị có 10.000 cử tri, 9.000 người đi bầu, 8.800 phiếu hợp lệ, bầu 2 đại biểu. A được 6.000, B 5.000, C 4.500 phiếu: A và B đều quá 4.400 (1/2 phiếu hợp lệ) nên trúng cử; C dù quá nửa nhưng ít phiếu hơn.",
  "source": {
   "kind": "statute",
-  "cite": "Khoản 1, khoản 2 Điều 78 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026)",
+  "cite": "Khoản 1, khoản 2 Điều 78 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (sửa đổi, bổ sung năm 2025)",
   "url": "https://vbpl.vn/van-ban/chi-tiet/luat-bau-cu-dai-bieu-quoc-hoi-va-dai-bieu-hoi-dong-nhan-dan-so-85-2015-qh13--70812"
  },
  "checked": "2026-11-01",
@@ -38,7 +38,7 @@
    "explain": "Khoản 1 Điều 78.",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 1 Điều 78 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026)"
+    "cite": "Khoản 1 Điều 78 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (sửa đổi, bổ sung năm 2025)"
    }
   },
   {
@@ -55,7 +55,7 @@
    "explain": "Khoản 4 Điều 78.",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 4 Điều 78 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026)"
+    "cite": "Khoản 4 Điều 78 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (sửa đổi, bổ sung năm 2025)"
    }
   },
   {
@@ -121,7 +121,7 @@
    "explain": "Khoản 1 Điều 78 và khoản 1 Điều 80: 9.500 chưa quá 10.000.",
    "source": {
     "kind": "statute",
-    "cite": "Điều 78, 80 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026)"
+    "cite": "Điều 78, 80 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (sửa đổi, bổ sung năm 2025)"
    }
   },
   {
@@ -141,10 +141,10 @@
    "level": 4,
    "statement": "Trong trường hợp bầu cử thêm thì ngày bầu cử được tiến hành chậm nhất là 07 ngày sau ngày bầu cử đầu tiên.",
    "answer": true,
-   "explain": "Đúng. Khoản 3 Điều 79 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026) (nguyên văn).",
+   "explain": "Đúng. Khoản 3 Điều 79 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (sửa đổi, bổ sung năm 2025) (nguyên văn).",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 3 Điều 79 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (VBHN 83/VBHN-VPQH 2026)",
+    "cite": "Khoản 3 Điều 79 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (sửa đổi, bổ sung năm 2025)",
     "url": "https://vbpl.vn/van-ban/chi-tiet/luat-bau-cu-dai-bieu-quoc-hoi-va-dai-bieu-hoi-dong-nhan-dan-so-85-2015-qh13--70812"
    }
   }

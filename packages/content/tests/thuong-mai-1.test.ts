@@ -14,7 +14,7 @@ describe('nội dung Luật Thương mại 1', () => {
     for (const f of files) {
       const c = conceptSchema.parse(JSON.parse(readFileSync(join(dir, f), 'utf8')));
       expect(c.source.kind).toBe('statute');
-      expect(c.source.cite).toMatch(/(Luật Doanh nghiệp 2020 \(VBHN 67\/VBHN-VPQH 2025\)|Luật Hợp tác xã 2023 \(VBHN 101\/VBHN-VPQH 2026\)|Luật Phục hồi, phá sản 2025 \(142\/2025\/QH15\)|Nghị định 168\/2025\/NĐ-CP về đăng ký doanh nghiệp)$/);
+      expect(c.source.cite).toMatch(/(Luật Doanh nghiệp 2020 \(sửa đổi, bổ sung năm 2022, 2025\)|Luật Hợp tác xã 2023 \(sửa đổi, bổ sung năm 2025\)|Luật Phục hồi, phá sản 2025 \(142\/2025\/QH15\)|Nghị định 168\/2025\/NĐ-CP về đăng ký doanh nghiệp)$/);
       expect(c.source.url).toMatch(/^https:\/\/thuvienphapluat\.vn\//);
       expect(c.checked).toBe('2026-11-01');
       expect(c.items.filter((i) => i.type === 'recall').length).toBe(1);

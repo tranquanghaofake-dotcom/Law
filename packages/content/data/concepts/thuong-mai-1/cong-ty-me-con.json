@@ -8,7 +8,7 @@
  "example": "Công ty A sở hữu 60% vốn công ty B: A là công ty mẹ của B; B không được mua cổ phần của A.",
  "source": {
   "kind": "statute",
-  "cite": "Khoản 1, khoản 2 Điều 195 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+  "cite": "Khoản 1, khoản 2 Điều 195 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)",
   "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
  },
  "checked": "2026-11-01",
@@ -37,7 +37,7 @@
    "explain": "Điểm a khoản 1 Điều 195.",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 1 Điều 195 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+    "cite": "Khoản 1 Điều 195 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
    }
   },
   {
@@ -54,7 +54,7 @@
    "explain": "Khoản 2 Điều 195.",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 2 Điều 195 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)"
+    "cite": "Khoản 2 Điều 195 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)"
    }
   },
   {
@@ -126,10 +126,10 @@
    "level": 4,
    "statement": "Các công ty con của cùng một công ty mẹ không được đồng thời cùng góp vốn, mua cổ phần để sở hữu chéo lẫn nhau.",
    "answer": true,
-   "explain": "Đúng. Khoản 2 Điều 195 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025) (nguyên văn).",
+   "explain": "Đúng. Khoản 2 Điều 195 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025) (nguyên văn).",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 2 Điều 195 Luật Doanh nghiệp 2020 (VBHN 67/VBHN-VPQH 2025)",
+    "cite": "Khoản 2 Điều 195 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)",
     "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-67-VBHN-VPQH-2025-Luat-Doanh-nghiep-671127.aspx"
    }
   }

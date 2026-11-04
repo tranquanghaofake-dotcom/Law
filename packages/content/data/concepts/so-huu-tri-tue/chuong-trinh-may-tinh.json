@@ -8,7 +8,7 @@
  "example": "Bạn viết một ứng dụng web học luật: mã nguồn được bảo hộ quyền tác giả ngay khi viết ra, không cần đăng ký; người khác sao chép nguyên mã để bán là xâm phạm.",
  "source": {
   "kind": "statute",
-  "cite": "Đoạn 1 khoản 1 Điều 22 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+  "cite": "Đoạn 1 khoản 1 Điều 22 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)",
   "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
  },
  "checked": "2026-11-01",
@@ -38,7 +38,7 @@
    "explain": "Khoản 1 Điều 22.",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 1 Điều 22 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+    "cite": "Khoản 1 Điều 22 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
    }
   },
   {
@@ -55,7 +55,7 @@
    "explain": "Khoản 2 Điều 59.",
    "source": {
     "kind": "statute",
-    "cite": "Điều 59 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)"
+    "cite": "Điều 59 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)"
    }
   },
   {
@@ -127,10 +127,10 @@
    "level": 4,
    "statement": "Chương trình máy tính được bảo hộ như tác phẩm văn học, dù được thể hiện dưới dạng mã nguồn hay mã máy.",
    "answer": true,
-   "explain": "Đúng. Khoản 1 Điều 22 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026) (nguyên văn).",
+   "explain": "Đúng. Khoản 1 Điều 22 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025) (nguyên văn).",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 1 Điều 22 Luật Sở hữu trí tuệ (VBHN 67/VBHN-VPQH 2026)",
+    "cite": "Khoản 1 Điều 22 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)",
     "url": "https://thuvienphapluat.vn/van-ban/So-huu-tri-tue/Van-ban-hop-nhat-67-VBHN-VPQH-2026-Luat-So-huu-tri-tue-700846.aspx"
    }
   }
