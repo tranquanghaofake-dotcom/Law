@@ -15,6 +15,9 @@ export const NAMES: Record<string, string> = {
   nang: 'Đèn rọi sáng', 'trong-dong': 'Vách trống đồng', 'khung-vang': 'Khung mạ vàng', 'hat-sang': 'Hạt sáng trong kính',
 };
 
+/** Mọi trang phục chọn được trong tủ đồ (thứ tự hiển thị); `unlocked` quyết định cái nào đã mở. */
+export const OUTFITS = ['theo-chuc-vu', 'thuong-phuc', 'ba-ba', 'tu-than', 'ao-dai', 'ao-dai-nam', 'nhat-binh'] as const;
+
 const RANK: Record<PostTier, number> = { 'co-so': 0, tinh: 1, 'trung-uong': 2, 'lanh-dao': 3 };
 
 /** Trang phục của chức danh (null = Công dân). */

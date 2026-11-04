@@ -5,7 +5,7 @@
   import Portrait from '$lib/art/Portrait.svelte';
   import { TIER_NAMES, careerState, displayTitle, promotionToCelebrate } from '$lib/game/career';
   import { FIELD_NAMES, type Field } from '$lib/game/fields';
-  import { DEFAULT_AVATAR, NAMES, sanitize, unlocked, resolveOutfit, type Avatar } from '$lib/game/wardrobe';
+  import { DEFAULT_AVATAR, NAMES, OUTFITS, sanitize, unlocked, resolveOutfit, type Avatar } from '$lib/game/wardrobe';
   import { lookFor } from '$lib/game/looks';
   import { shelf, refreshShelf } from './shelf.svelte';
   import { schemeFor } from './shelf';
@@ -39,7 +39,7 @@
   const own = $derived<Avatar>({ ...av, outfit: resolveOutfit(av.outfit, t.post) });
   const drawn = $derived<Avatar>(pv ? { ...DEFAULT_AVATAR, outfit: look.outfit } : own);
   const un = $derived(unlocked(cs.achieved));
-  const ALL = { outfit: ['theo-chuc-vu', 'thuong-phuc', 'ba-ba', 'tu-than', 'ao-dai', 'ao-dai-nam', 'nhat-binh'], hair: ['ngan', 'dai', 'buoc'], accessory: ['khong', 'kinh', 'but', 'so', 'cap', 'huy-hieu'], effect: ['khong', 'nang', 'trong-dong', 'khung-vang', 'hat-sang'] } as const;
+  const ALL = { outfit: OUTFITS, hair: ['ngan', 'dai', 'buoc'], accessory: ['khong', 'kinh', 'but', 'so', 'cap', 'huy-hieu'], effect: ['khong', 'nang', 'trong-dong', 'khung-vang', 'hat-sang'] } as const;
   const GROUP: Partial<Record<keyof Avatar, string>> = { outfit: 'Trang phục', accessory: 'Phụ kiện trên bục', effect: 'Ánh sáng & khung' };
   function db() { try { return typeof indexedDB === 'undefined' ? null : new LuyenLuatDB(); } catch { return null; } }
   (async () => { try { const row = await db()?.settings.get('avatar'); if (row?.value) raw = { ...DEFAULT_AVATAR, ...(row.value as Avatar) }; } catch { /* bỏ qua */ } })();

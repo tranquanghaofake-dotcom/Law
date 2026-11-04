@@ -28,7 +28,7 @@
     'tu-than': { body: '#7a5a3a', sleeve: '#6a4c30', shirt: '#e9a0a2', tie: '#1c1a1c' },
     // áo bà ba chàm, khăn rằn quàng cổ
     'ba-ba': { body: '#2d3a4d', sleeve: '#27334a', shirt: '#2d3a4d', tie: null },
-    // áo nhật bình: thân đỏ thắm, ô vuông gấm vàng ở cổ ngực và gấu (tie), quần lụa trắng
+    // áo nhật bình: thân đỏ thắm, cổ lá gấm vàng vân mây và viền gấu (tie), quần lụa trắng
     'nhat-binh': { body: '#8f1f2b', sleeve: '#7f1a26', shirt: '#f6f1e6', tie: '#d9b45a' },
   };
   const o = $derived(PAL[outfit] ? outfit : 'thuong-phuc');
@@ -101,7 +101,7 @@
     <path d="M150 62H139L102 76Q106 110 106 142Q104 170 108 200Q110 300 108 384L150 386Z" fill={fb(p.body, tex, pat)} />
     <path d="M108 350L150 352V386L108 384Z" fill={fb(p.tie ?? '#d9b45a', tex, pat)} />
     <path d="M52 296L98 300L98 284L55 280Z" fill={fb(p.tie ?? '#d9b45a', tex, pat)} />
-    <path d="M150 60L100 72L96 128L150 140Z" fill={fb(p.tie ?? '#d9b45a', tex, pat)} />
+    <path d="M150 60Q116 64 100 78Q102 106 124 120Q138 126 150 126Z" fill={fb(p.tie ?? '#d9b45a', tex, pat)} />
     <rect x="137" y="44" width="13" height="19" rx="2" fill={fb(p.body, tex, pat)} />
   {:else if o === 'tu-than'}
     <path d="M98 296H150V392H90Z" fill={fb(p.tie ?? '#1c1a1c', tex, pat)} />
@@ -206,11 +206,10 @@
     <path d="M110 220Q108 300 110 380" fill="none" stroke={shine} stroke-width="2.4" opacity=".45" />
     <path d="M108 90Q112 130 108 170" fill="none" stroke={shine} stroke-width="2.4" opacity=".5" />
   {:else if o === 'nhat-binh'}
-    <!-- ô vuông nhật bình ở cổ ngực: viền kép, hoa văn tròn thêu; viền gấu; măng sét gấm; nếp lụa -->
-    <path d="M148 66L103 77L99 125L148 134" fill="none" stroke="#7a4a14" stroke-width="1.4" />
-    <path d="M147 76L109 85L107 120L147 128" fill="none" stroke="#7a4a14" stroke-width=".9" stroke-dasharray="2.5 2" />
-    <circle cx="127" cy="102" r="12" fill="none" stroke="#7a4a14" stroke-width="1" /><circle cx="127" cy="102" r="6.5" fill="#8f1f2b" fill-opacity=".55" stroke="#7a4a14" stroke-width=".9" />
-    <path d="M127 90V114M115 102H139M118.5 93.5l17 17M135.5 93.5l-17 17" stroke="#7a4a14" stroke-width=".6" />
+    <!-- cổ lá tròn ôm vai viền gấm, vân mây thêu; viền gấu; măng sét gấm; nếp lụa -->
+    <path d="M148 66Q116 70 101 82Q104 106 125 118Q138 124 148 124" fill="none" stroke="#7a4a14" stroke-width="1.4" />
+    <path d="M147 74Q122 78 109 87Q112 104 128 112Q138 116 147 116" fill="none" stroke="#7a4a14" stroke-width=".9" stroke-dasharray="2.5 2" />
+    <path d="M112 96q4-7 11-4q5 4 0 8q-4 3-7-1M126 104q4-6 10-3q4 4 0 7q-4 2-6-1M140 112q3-5 8-3" fill="none" stroke="#7a4a14" stroke-width=".9" />
     <path d="M108 358L150 360M108 368L150 370" stroke="#7a4a14" stroke-width=".9" />
     <path d="M55 289L98 293" stroke="#7a4a14" stroke-width=".9" />
     <path d="M139 47h11M139 59h11" stroke="#e2bf6a" stroke-width="1.4" />

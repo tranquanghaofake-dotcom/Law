@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { unlocked, sanitize, outfitFor, resolveOutfit, DEFAULT_AVATAR, NAMES } from '$lib/game/wardrobe';
+import { unlocked, sanitize, outfitFor, resolveOutfit, DEFAULT_AVATAR, NAMES, OUTFITS } from '$lib/game/wardrobe';
 import { POSTS } from '$lib/game/career';
 
 const post = (id: string) => POSTS.find((p) => p.id === id) ?? null;
@@ -55,5 +55,18 @@ describe('tủ đồ', () => {
   it('mọi trang phục mở khoá đều có tên hiển thị', () => {
     const u = unlocked(new Set(POSTS.map((p) => p.id)));
     for (const o of u.outfit) expect(NAMES[o], o).toBeTruthy();
+  });
+  it('sanitize trang phục mới: giữ khi đã mở khoá, trả về theo-chuc-vu khi chưa', () => {
+    const two = new Set(['cong-chuc-xa', 'pho-chu-tich-xa']);
+    expect(sanitize({ ...DEFAULT_AVATAR, outfit: 'ba-ba' }, two).outfit).toBe('ba-ba');
+    expect(sanitize({ ...DEFAULT_AVATAR, outfit: 'tu-than' }, two).outfit).toBe('theo-chuc-vu');
+    const four = new Set(['cong-chuc-xa', 'pho-chu-tich-xa', 'chu-tich-xa', 'chuyen-vien-so']);
+    expect(sanitize({ ...DEFAULT_AVATAR, outfit: 'tu-than' }, four).outfit).toBe('tu-than');
+    expect(sanitize({ ...DEFAULT_AVATAR, outfit: 'ba-ba' }, new Set()).outfit).toBe('theo-chuc-vu');
+    expect(sanitize({ ...DEFAULT_AVATAR, outfit: 'nhat-binh' }, four).outfit).toBe('theo-chuc-vu');
+  });
+  it('OUTFITS gồm đúng các trang phục mà unlocked có thể mở', () => {
+    const all = unlocked(new Set(POSTS.map((p) => p.id))).outfit;
+    expect([...OUTFITS].sort()).toEqual([...all].sort());
   });
 });
