@@ -2,6 +2,7 @@
   import Glyph from '$lib/art/Glyph.svelte';
   import type { Concept, Level } from '$lib/content/types';
   import { clozeModeFor, type Step } from '$lib/engine/session';
+  import { ratingProfile } from '$lib/engine/fsrs';
   import { recordsProgress } from '$lib/engine/step';
   import { answer as runAnswer, createRunner, isLast, mistakes, next as runNext, summary, type RunnerState } from '$lib/engine/runner';
   import { repo } from '$lib/store/progress-repo';
@@ -124,6 +125,7 @@
     const comboBefore = run.combo;
     const r: AnswerResult = r0;
     const isRetry = cur.meta?.kind === 'retry';
+    const clozeAt = clozeMode; // chế độ điền (chọn/gõ) của bước này, trước khi runner ghi kết quả
     const { state, levelUp, sfx: snd, xpGained } = runAnswer(run, r);
     run = state;
     if (cur.item.type === 'intro') { sfx.play('intro'); runNextStep(); return; }
@@ -131,7 +133,7 @@
     if (settings.tts && tts.available) tts.speak(feedbackSpeech(cur.item, r));
     // ghi tiến độ NGAY sau mỗi câu (Review Focus #1); vòng sửa sai và câu đoán trước không ghi, không đổi bậc
     if (recordsProgress(cur)) {
-      try { await repo.record({ conceptId: cur.conceptId, subject: concept.subject, correct: r.correct, elapsedMs: r.elapsedMs, now: new Date(), retention: settings.retention }); } catch (e) { console.warn(e); }
+      try { await repo.record({ conceptId: cur.conceptId, subject: concept.subject, correct: r.correct, elapsedMs: r.elapsedMs, now: new Date(), retention: settings.retention, rating: { ...ratingProfile(cur.item, clozeAt), partial: r.selfGrade === 'gan' } }); } catch (e) { console.warn(e); }
     }
     if (xpGained) await stats.addXp(xpGained);
     const gold = !!cur.meta?.golden;

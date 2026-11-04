@@ -1,5 +1,5 @@
 import type { Level } from '$lib/content/types';
-import { isDue, newCard, ratingFor, review } from '$lib/engine/fsrs';
+import { isDue, newCard, ratingFor, review, type RatingOpts } from '$lib/engine/fsrs';
 import { stepLevel } from '$lib/engine/progress';
 import { LuyenLuatDB, type ConceptProgress, type ReviewRow } from './db';
 import { storage } from './status.svelte';
@@ -7,7 +7,8 @@ import { localDay } from '$lib/game/streak';
 
 export type { ConceptProgress };
 
-export type RecordInput = { conceptId: string; subject: string; correct: boolean; elapsedMs: number; now: Date; retention?: number };
+/** `rating` (tuỳ chọn): cách trả lời + độ dài đề + tự chấm gần đúng, để chấm FSRS công bằng (engine/fsrs `ratingFor`). */
+export type RecordInput = { conceptId: string; subject: string; correct: boolean; elapsedMs: number; now: Date; retention?: number; rating?: RatingOpts };
 
 export type ProgressRepo = {
   available: boolean;
@@ -36,7 +37,7 @@ type Store = {
 function applyRecord(prev: ConceptProgress | undefined, p: RecordInput): { next: ConceptProgress; row: ReviewRow } {
   const level: Level = prev?.level ?? 0;
   const card = prev?.card ?? newCard(p.now);
-  const rating = ratingFor(p.correct, p.elapsedMs, level);
+  const rating = ratingFor(p.correct, p.elapsedMs, level, p.rating);
   const r = review(card, rating, p.now, p.retention ?? 0.9);
   const lv = stepLevel(level, p.correct, prev?.upDay, localDay(p.now));
   const next: ConceptProgress = {
