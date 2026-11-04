@@ -9,6 +9,7 @@
   import { buzz } from '$lib/fx/haptics';
   import { tts } from '$lib/fx/tts.svelte';
   import { onDestroy, tick } from 'svelte';
+  import LegalNote from '$lib/ui/LegalNote.svelte';
   import { feedbackSpeech } from '$lib/ui/session/speech';
   import { hashFor, route } from '$lib/router.svelte';
   import { isInteractiveTarget, isTypingTarget, KEYS } from '$lib/ui/cards/types';
@@ -145,6 +146,7 @@
   {:else}
     <p class="qr-clean" role="status">Không sai câu nào. Bạn có thể sang đề khác.</p>
   {/if}
+  <LegalNote />
 {:else}
   <div class="session-bar">
     <a class="exit qexit" href="#/luyen-de" aria-label="Về Luyện đề">←</a>

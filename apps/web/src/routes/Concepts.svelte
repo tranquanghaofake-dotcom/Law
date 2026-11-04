@@ -12,6 +12,7 @@
   import CompareTable from '$lib/ui/CompareTable.svelte';
   import { compareConcepts } from '$lib/engine/compare';
   import { tick } from 'svelte';
+  import LegalNote from '$lib/ui/LegalNote.svelte';
 
   type Group = { lessonId: string; title: string; concepts: Concept[] };
   let subject = $state<Subject | null>(null);
@@ -127,3 +128,4 @@
     </ul>
   {/each}
 {/if}
+<LegalNote />
