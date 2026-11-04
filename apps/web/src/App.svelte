@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Loading from '$lib/ui/Loading.svelte';
   import type { Component } from 'svelte';
   import { route, type RouteName } from '$lib/router.svelte';
   import { settings, loadSettings } from '$lib/store/settings.svelte';
@@ -40,7 +41,7 @@
 {#snippet view()}
   {#if pending}
     {#await pending}
-      <p class="loading">Đang tải…</p>
+      <Loading />
     {:then m}
       {@const Lazy = m.default}
       <Lazy />

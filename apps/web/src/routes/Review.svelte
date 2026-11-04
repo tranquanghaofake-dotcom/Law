@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Loading from '$lib/ui/Loading.svelte';
   import type { Concept, Level } from '$lib/content/types';
   import { loadIndex, loadSubject, loadConcepts, loadConceptPool, loadTerms } from '$lib/content/loader';
   import { buildReviewSession, type Step } from '$lib/engine/session';
@@ -49,7 +50,7 @@
 {:else if empty}
   <section class="card"><h1>Ôn hôm nay</h1><p>Chưa có gì cần ôn{subjectId ? ' trong môn này' : ''}. Học mới một đợt rồi quay lại nhé.</p>{#if subjectId}<a class="btn primary" href={hashFor('subject', { subject: subjectId })}>Về môn</a>{:else}<a class="btn primary" href="#/">Về Hôm nay</a>{/if}</section>
 {:else if !data}
-  <p class="loading">Đang tải…</p>
+  <Loading />
 {:else}
   <SessionView steps={data.steps} concepts={data.concepts} levels={data.levels} title="Ôn hôm nay" />
 {/if}

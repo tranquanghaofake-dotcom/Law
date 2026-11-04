@@ -1706,3 +1706,19 @@ body:has(dialog.sheet[open]) { overflow: hidden; }
 /* ô chức vừa đạt (chưa xem lễ): vòng vàng toả ba nhịp — transform/opacity trên ::before */
 .org-node.fresh::before { content: ""; position: absolute; inset: -3px; border-radius: inherit; border: 2px solid var(--gold-400); box-shadow: 0 0 16px color-mix(in srgb, var(--gold-400) 70%, transparent); pointer-events: none; opacity: 0; animation: orgfresh 1.6s var(--ease-out) .4s 3; will-change: transform, opacity; }
 @keyframes orgfresh { 0% { transform: scale(1); opacity: .95; } 100% { transform: scale(1.12, 1.4); opacity: 0; } }
+
+/* ---- Khung chờ + danh sách hiện lần lượt (đợt 10) ---- */
+.loading.skel { display: grid; gap: var(--sp-3); text-align: left; padding: var(--sp-4) 0; animation: skel-in var(--dur-2) var(--ease-out) .15s both; }
+@keyframes skel-in { from { opacity: 0; } }
+.skel-h, .skel-card i { position: relative; display: block; overflow: hidden; border-radius: var(--r-sm); background: color-mix(in srgb, var(--line) 70%, var(--paper)); }
+.skel-h { width: 46%; height: 28px; margin-bottom: var(--sp-2); }
+.skel-card { display: grid; gap: var(--sp-2); padding: var(--pad-card); border: 1px solid var(--line); border-radius: var(--r-md); background: var(--card); }
+.skel-card i { height: 12px; } .skel-card i:first-child { width: 38%; height: 16px; } .skel-card i:nth-child(2) { width: 92%; } .skel-card i:nth-child(3) { width: 70%; }
+.skel-h::after, .skel-card i::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, transparent, rgb(255 255 255 / .65), transparent); transform: translateX(-100%); animation: skel-sweep 1.3s var(--ease-in-out) infinite; }
+@keyframes skel-sweep { to { transform: translateX(100%); } }
+/* danh sách: 8 dòng đầu hiện lần lượt (40 ms/dòng), phần sau hiện ngay */
+.concept-list > li:nth-child(-n + 8), .cover-grid > li:nth-child(-n + 8) { animation: rise var(--dur-3) var(--ease-out) both; }
+.concept-list > li:nth-child(2), .cover-grid > li:nth-child(2) { animation-delay: 40ms; } .concept-list > li:nth-child(3), .cover-grid > li:nth-child(3) { animation-delay: 80ms; }
+.concept-list > li:nth-child(4), .cover-grid > li:nth-child(4) { animation-delay: 120ms; } .concept-list > li:nth-child(5), .cover-grid > li:nth-child(5) { animation-delay: 160ms; }
+.concept-list > li:nth-child(6), .cover-grid > li:nth-child(6) { animation-delay: 200ms; } .concept-list > li:nth-child(7), .cover-grid > li:nth-child(7) { animation-delay: 240ms; }
+.concept-list > li:nth-child(8), .cover-grid > li:nth-child(8) { animation-delay: 280ms; }

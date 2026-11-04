@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Loading from '$lib/ui/Loading.svelte';
   import Glyph from '$lib/art/Glyph.svelte';
   import type { QuizSet, QuizQuestion } from '$lib/content/types';
   import { loadIndex, loadSet } from '$lib/content/loader';
@@ -109,7 +110,7 @@
 {#if error}
   <section class="card"><p class="muted">Không tải được bộ câu hỏi: {error}</p><a class="btn ghost" href="#/">Về trang chủ</a></section>
 {:else if !set || !q}
-  <p class="loading">Đang tải…</p>
+  <Loading />
 {:else if finished}
   <section class="card qr {verdict.tier}" style="--shelf:{shelf?.color}" aria-labelledby="qr-h">
     <div class="qr-ring">

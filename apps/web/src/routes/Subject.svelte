@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Loading from '$lib/ui/Loading.svelte';
   // Trang môn: tổng quan, chú giải, lưới bậc theo đợt, local nav chương (spec §4.2).
   import type { Level, Subject } from '$lib/content/types';
   import { loadSubject, loadTerms } from '$lib/content/loader';
@@ -58,7 +59,7 @@
 {#if error}
   <section class="card"><p class="muted">Không tải được môn: {error}</p><a class="btn ghost" href={hashFor('subjects')}>Về Môn học</a></section>
 {:else if !subject || !summary}
-  <p class="loading">Đang tải…</p>
+  <Loading />
 {:else}
   <nav class="crumbs small muted" aria-label="Vị trí"><a href={hashFor('subjects')}>Môn học</a> › {subject.title}</nav>
   <header class="subject-head">

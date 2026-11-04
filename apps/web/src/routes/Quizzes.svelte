@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Loading from '$lib/ui/Loading.svelte';
   import Glyph from '$lib/art/Glyph.svelte';
   import Vignette from '$lib/art/Vignette.svelte';
   import { vignetteFor } from '$lib/art/registry';
@@ -49,7 +50,7 @@
 {#if error}
   <section class="card"><p class="muted">Không tải được dữ liệu: {error}</p></section>
 {:else if !index}
-  <p class="loading">Đang tải…</p>
+  <Loading />
 {:else}
   <ul class="qz-stats" aria-label="Số liệu luyện đề">
     <li>

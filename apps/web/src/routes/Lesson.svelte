@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Loading from '$lib/ui/Loading.svelte';
   import type { Concept, Level, Subject } from '$lib/content/types';
   import { loadConceptPool, loadConcepts, loadSubject, loadTerms } from '$lib/content/loader';
   import { buildLearnSession, type Step } from '$lib/engine/session';
@@ -41,7 +42,7 @@
 {#if error}
   <section class="card"><p class="muted">Không tải được dữ liệu: {error}</p><a class="btn ghost" href="#/">Về Hôm nay</a></section>
 {:else if !data}
-  <p class="loading">Đang tải…</p>
+  <Loading />
 {:else}
   {#key gen}
     <SessionView steps={data.steps} concepts={data.concepts} levels={data.levels} lessonId={data.lessonId} title={data.title} onagain={() => (gen += 1)} onnext={data.next ? () => go('lesson', { subject: data!.subject, lesson: data!.next! }) : undefined} />
