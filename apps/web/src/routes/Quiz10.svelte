@@ -38,6 +38,8 @@
       i = 0; score = 0; chosen = null; wrong = []; results = []; prevBest = null; finished = false; start = Date.now();
     } catch (e) { error = (e as Error).message; }
   }
+  /** Làm lại: tải lại đề rồi focus phương án đầu (không để focus rơi về body). */
+  async function retry() { await load(); await tick(); window.scrollTo(0, 0); document.querySelector<HTMLElement>('.question-card .opt')?.focus({ preventScroll: true }); }
   // Rời màn: route.params về {} trước khi màn huỷ, không tải /content/sets/undefined.json.
   $effect(() => { if (route.name === 'quiz' && route.params.id) load(); });
   loadIndex().then((x) => (sets = x.sets)).catch(() => { /* không có "Đề tiếp theo" */ });
@@ -66,6 +68,7 @@
     chosen = null;
     if (i + 1 < qs.length) { i += 1; await tick(); document.querySelector<HTMLElement>('.question-card .opt')?.focus({ preventScroll: true }); return; }
     finished = true;
+    window.scrollTo(0, 0); // màn kết quả bắt đầu từ vòng điểm, không giữ vị trí cuộn của câu cuối
     const b = await stats.best(set!.id);
     prevBest = b;
     if (b == null || score > b) await stats.setBest(set!.id, score);
@@ -121,7 +124,7 @@
         {#each results as r, k (k)}<li class={r ? 'ok' : 'bad'}><span class="sr-only">Câu {k + 1} {r ? 'đúng' : 'sai'}</span></li>{/each}
       </ol>
       <div class="row">
-        <button class="btn {verdict.tier === 'perfect' && nextSet ? 'ghost' : 'primary'}" type="button" onclick={load}>Làm lại</button>
+        <button class="btn {verdict.tier === 'perfect' && nextSet ? 'ghost' : 'primary'}" type="button" onclick={retry}>Làm lại</button>
         {#if nextSet}<a class="btn {verdict.tier === 'perfect' ? 'primary' : 'ghost'}" href={hashFor('quiz', { id: nextSet.id })}>Đề tiếp theo</a>{/if}
         <a class="btn ghost" href="#/luyen-de">Về Luyện đề</a>
         <button class="btn ghost" type="button" onclick={share}>{shareLabel}</button>

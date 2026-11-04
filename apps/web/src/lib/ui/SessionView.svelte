@@ -214,10 +214,20 @@
     if (e.key === 'Escape' && !ended) {
       e.preventDefault();
       if (isTypingTarget(e)) (e.target as HTMLElement).blur();
-      if (!confirmExit) { const a = document.activeElement as HTMLElement | null; returnFocus = a && a !== document.body ? a : null; }
-      confirmExit = !confirmExit;
-      if (!confirmExit) { const r = returnFocus; returnFocus = null; if (r?.isConnected) tick().then(() => r.focus({ preventScroll: true })); }
+      if (confirmExit) closeConfirm(); else openConfirm();
     }
+  }
+  /** Mở hộp Thoát (Esc hoặc nút ← trên thanh phiên): nhớ phần tử đang focus để trả lại khi đóng. */
+  function openConfirm() {
+    const a = document.activeElement as HTMLElement | null;
+    returnFocus = a && a !== document.body ? a : null;
+    confirmExit = true;
+  }
+  /** Đóng hộp (Esc hoặc "Ở lại"): trả focus về chỗ cũ rồi xoá, tránh nhảy về phần tử cũ ở lần mở sau. */
+  function closeConfirm() {
+    confirmExit = false;
+    const r = returnFocus; returnFocus = null;
+    if (r?.isConnected) tick().then(() => r.focus({ preventScroll: true }));
   }
 </script>
 
@@ -229,7 +239,7 @@
   {#if ended}
     <SessionEnd summary={summary(run)} {sources} {record} retryTotal={summary(run).retried} {concepts} streak={ended.streak} streakEvent={ended.streakEvent} rankBefore={ended.rankBefore} rankAfter={ended.rankAfter} dueTomorrow={ended.dueTomorrow} promotion={ended.promotion} onhome={() => go('home')} {onagain} {onnext} mistakes={mistakes(run)} />
   {:else if step && Card}
-    <SessionBar done={barDone} total={barTotal} {title} combo={run.combo} xp={shownXp} {marks} {inRetry} onexit={() => (confirmExit = true)} />
+    <SessionBar done={barDone} total={barTotal} {title} combo={run.combo} xp={shownXp} {marks} {inRetry} onexit={openConfirm} />
     {#if lessonId}<LessonStrip {concepts} levels={run.levels} current={hideCurrent ? '' : (step?.conceptId ?? '')} />{/if}
     {#if showHint}
       <aside class="card session-hint" aria-label="Gợi ý lần đầu">
@@ -241,7 +251,7 @@
     {#if confirmExit}
       <div class="card confirm" role="dialog" aria-label="Thoát phiên">
         <p>Thoát, giữ tiến độ? Những câu đã trả lời đã được lưu.</p>
-        <div class="row"><button class="btn" type="button" onclick={exit}>Thoát</button><button class="btn ghost" type="button" onclick={() => (confirmExit = false)} use:focusOnMount>Ở lại</button></div>
+        <div class="row"><button class="btn" type="button" onclick={exit}>Thoát</button><button class="btn ghost" type="button" onclick={closeConfirm} use:focusOnMount>Ở lại</button></div>
       </div>
     {/if}
     {#if showBoss}
