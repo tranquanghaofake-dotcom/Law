@@ -35,8 +35,11 @@
   let hard = $state<{ id: string; subject: string; term: string }[]>([]);
   let error = $state('');
 
+  let loading = false;
   async function load() {
-    error = '';
+    if (loading) return; // bấm "Thử lại" liên tiếp không chạy hai lượt song song
+    loading = true;
+    error = ''; hero = null; // thử lại: hiện "Đang tải" thay vì nội dung dở của lượt lỗi
     try {
       document.title = 'Hôm nay · Luyện Luật';
       const idx = await loadIndex();
@@ -81,7 +84,7 @@
       // rail: 7 ngày có phiên, hẹn ôn ngày mai
       week = weekFlags(await repo.reviewDays(weekStart()));
       dueDays = dueByDay((await repo.due(dueWindow(new Date(), 6))).filter((p) => known.has(p.conceptId)).map((p) => p.card.due));
-    } catch (e) { error = (e as Error).message; }
+    } catch (e) { error = (e as Error).message; } finally { loading = false; }
   }
   load();
   $effect(() => { if (hero) return setRail(HomeRail, { week, dueDays }); });

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { tick } from 'svelte';
+  import { onDestroy, tick } from 'svelte';
   import Glyph from '$lib/art/Glyph.svelte';
   import { settings, saveSetting } from '$lib/store/settings.svelte';
   import { repo, parseExport } from '$lib/store/progress-repo';
@@ -19,6 +19,7 @@
     clearTimeout(savedTimer);
     savedTimer = setTimeout(() => (savedKey = ''), 3000);
   }
+  onDestroy(() => clearTimeout(savedTimer));
   let prefPre = $state(getPref('pretest'));
   let msg = $state('');
   async function exportData() {
