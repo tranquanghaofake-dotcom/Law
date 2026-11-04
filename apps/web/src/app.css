@@ -418,11 +418,9 @@ kbd { font: 600 var(--fs-xs)/1 var(--font-ui); background: rgba(255,255,255,.18)
 .stat-list dd { margin: 0; font-size: var(--fs-xl); font-weight: 800; font-variant-numeric: tabular-nums; }
 .record-msg { display: flex; align-items: center; gap: var(--sp-3); font-weight: 700; margin: var(--sp-2) 0; }
 .xp-sources { list-style: none; margin: var(--sp-3) 0; padding: 0; display: grid; gap: var(--sp-2); }
-.xp-sources li { display: grid; grid-template-columns: minmax(96px, 150px) 1fr 52px; gap: var(--sp-3); align-items: center; font-size: var(--fs-sm); }
-.xp-sources i { display: block; height: 8px; border-radius: 4px; background: var(--line); overflow: hidden; }
-.xp-sources i span { display: block; height: 100%; background: var(--accent); border-radius: inherit; }
+.xp-sources li { display: flex; justify-content: space-between; gap: var(--sp-3); padding-bottom: var(--sp-1); border-bottom: 1px dashed var(--line); font-size: var(--fs-sm); }
 .xp-sources b { text-align: right; font-variant-numeric: tabular-nums; }
-@media (max-width: 479px) { .end-top { grid-template-columns: 1fr; justify-items: center; text-align: center; } .xp-sources li { grid-template-columns: 1fr 52px; } .xp-sources i { grid-column: 1 / -1; grid-row: 2; } }
+@media (max-width: 479px) { .end-top { grid-template-columns: 1fr; justify-items: center; text-align: center; } }
 
 /* ---- Trang chủ (state router) ---- */
 .hero-card { border-color: var(--accent); border-width: 2px; display: grid; gap: var(--sp-3); }
@@ -1644,9 +1642,11 @@ body:has(dialog.sheet[open]) { overflow: hidden; }
 .back-btn { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; margin: 0 0 var(--sp-2) -8px; padding: 0 12px; border: 0; border-radius: var(--r-md); background: transparent; color: var(--accent-text); font: 700 var(--fs-sm)/1 var(--font-ui); cursor: pointer; }
 .back-btn:hover { background: color-mix(in srgb, var(--accent) 10%, transparent); }
 .back-btn:focus-visible { outline: 3px solid var(--focus); outline-offset: 1px; }
-.session-hint { margin-bottom: var(--sp-3); border-color: var(--accent); }
-.session-hint p { margin: 0 0 var(--sp-2); font-size: var(--fs-sm); line-height: 1.45; }
-.session-hint .kicker { margin: 0 0 4px; }
+.session-hint { display: flex; align-items: center; gap: var(--sp-2); margin: 0 0 var(--sp-3); padding: var(--sp-1) var(--sp-1) var(--sp-1) var(--sp-3); border-radius: var(--r-sm); background: color-mix(in srgb, var(--accent) 8%, var(--card)); line-height: 1.4; }
+.session-hint > .glyph { flex: none; color: var(--accent-text); }
+.session-hint > span { flex: 1; min-width: 0; }
+.hint-x { flex: none; display: inline-grid; place-items: center; width: 44px; height: 44px; border: 0; border-radius: var(--r-sm); background: none; color: var(--muted); cursor: pointer; }
+.hint-x:hover { color: var(--ink); background: color-mix(in srgb, var(--ink) 6%, transparent); }
 
 /* ---- Đợt 9: khoảnh khắc thưởng — nút đúng nảy ---- */
 .step-wrap .reward-bounce { animation: reward-bounce .45s cubic-bezier(.3, 1.6, .5, 1); }
