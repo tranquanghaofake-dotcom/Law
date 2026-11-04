@@ -9,7 +9,7 @@
   // svelte-ignore state_referenced_locally
   let held = $state(combo);
   $effect(() => { if (combo > 0) held = combo; });
-  const fire = $derived(combo > 0 && !inRetry);
+  const fire = $derived(combo > 0);
   const head = $derived(fire && glowLevel(combo) >= 3);
 </script>
 

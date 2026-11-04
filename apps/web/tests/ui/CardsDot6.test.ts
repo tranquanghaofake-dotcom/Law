@@ -13,6 +13,7 @@ import { xpSources } from '$lib/ui/session/xpSources';
 import { rankFor } from '$lib/game/rank';
 import type { Concept, ItemMcq } from '$lib/content/types';
 import type { MatchItem, SortItem, Step } from '$lib/engine/session';
+import { fireTheme } from '$lib/ui/session/combo';
 
 const concept: Concept = {
   id: 'a', subject: 'hp', chapter: 'c', term: 'Hiến pháp', definition: 'd', plain: 'p', example: 'e',
@@ -145,18 +146,18 @@ describe('SessionBar / mốc / XP nguồn', () => {
     expect(barMarks(steps, 0).map((m) => m.kind)).toEqual(['boss', 'retry']);
     expect(barMarks(steps, 1).map((m) => m.kind)).toEqual(['golden', 'boss', 'retry']);
   });
-  it('SessionBar vẽ lửa từ mốc đầu (1 câu đúng), cùng mốc với viền sáng, và nhuộm thanh cùng màu', () => {
+  it('SessionBar vẽ lửa từ mốc đầu (1 câu đúng), cùng mốc với viền sáng, và nhuộm thanh cùng màu', async () => {
     const { container, rerender } = render(SessionBar, { props: { done: 1, total: 10, combo: 0 } });
     expect(container.querySelector('.combo')).toBeNull();
     expect(container.querySelector('.progress.fire')).toBeNull();
-    rerender({ done: 1, total: 10, combo: 1 });
+    await rerender({ done: 1, total: 10, combo: 1 });
     expect(container.querySelector('.combo.lv1')).toBeTruthy();
     expect(container.querySelector('.progress.fire')).toBeTruthy();
-    rerender({ done: 1, total: 10, combo: 5 });
+    await rerender({ done: 1, total: 10, combo: 5 });
     expect(container.querySelector('.combo.lv4')).toBeTruthy();
     expect(container.querySelector('.head.on')).toBeTruthy();
-    expect((container.querySelector('.session-bar') as HTMLElement).getAttribute('style')).toMatch(/--fire-a:\s*#14161f/);
-    rerender({ done: 1, total: 10, combo: 13 });
+    expect((container.querySelector('.session-bar') as HTMLElement).getAttribute("style")!.replace(/\s/g, "")).toContain(`--fire-a:${fireTheme(5).a}`);
+    await rerender({ done: 1, total: 10, combo: 13 });
     expect(container.querySelector('.combo.lv6')).toBeTruthy();
   });
   it('xpSources chia câu đúng / combo / câu vàng / sửa sai / thưởng', () => {

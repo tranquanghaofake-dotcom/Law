@@ -1,7 +1,7 @@
 <script lang="ts">
   // Viền màn hình sáng dần theo mốc chuỗi đúng 1·2·3·5·8·13; sai (chuỗi 0) thì tắt dịu.
   import { reducedMotion } from '$lib/fx/confetti';
-  import { COMBO_COLORS, edgeGlow, type EdgeGlow } from './combo';
+  import { edgeGlow, fireTheme, GLOW_MILESTONES, type EdgeGlow } from './combo';
 
   let { combo = 0 }: { combo?: number } = $props();
   const spec = $derived(edgeGlow(combo));
@@ -9,8 +9,8 @@
   // svelte-ignore state_referenced_locally
   let shown = $state<EdgeGlow>(spec);
   $effect(() => { if (spec.level > 0) shown = spec; });
-  const c = $derived(COMBO_COLORS[shown.tier ?? 'do']);
-  const rm = reducedMotion();
+  const c = $derived(fireTheme(shown.level ? GLOW_MILESTONES[shown.level - 1] : 0));
+  const rm = $derived(reducedMotion());
 </script>
 
 <div

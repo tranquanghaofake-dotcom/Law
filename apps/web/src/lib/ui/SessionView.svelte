@@ -120,9 +120,10 @@
   }
 
   sfx.preload();
-  onDestroy(() => { tts.stop(); sfx.stopCombo(); });
+  onDestroy(() => { tts.stop(); sfx.stopCombo(); floatTimers.forEach(clearTimeout); });
 
   // chữ "+10" bay lên ở chỗ vừa bấm; bàn phím thì bay từ giữa thẻ câu hỏi
+  const floatTimers = new Set<ReturnType<typeof setTimeout>>();
   function spawnFloat(text: string, gold: boolean) {
     if (reducedMotion() || typeof document === 'undefined') return;
     let x = window.innerWidth / 2, y = window.innerHeight / 2;
@@ -130,7 +131,7 @@
     else { const r = document.querySelector('.question-card')?.getBoundingClientRect(); if (r) { x = r.left + r.width / 2; y = r.top + Math.min(r.height / 2, 160); } }
     const id = (floatId += 1);
     floats = [...floats, { id, x: Math.min(Math.max(x, 40), window.innerWidth - 40), y: Math.max(y, 60), text, golden: gold, fire: run.combo > 0 ? fireStyle(run.combo) : undefined }];
-    setTimeout(() => (floats = floats.filter((f) => f.id !== id)), 1100);
+    floatTimers.add(setTimeout(() => (floats = floats.filter((f) => f.id !== id)), 1100));
   }
   function onpointer(e: PointerEvent) { lastPoint = { x: e.clientX, y: e.clientY, t: Date.now() }; }
 

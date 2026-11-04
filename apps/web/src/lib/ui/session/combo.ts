@@ -51,10 +51,11 @@ const FIRE: Record<GlowTier, { a: string; b: string; c: string }> = {
   do: { a: '#c4220a', b: '#ff6a3a', c: '#ffd9a0' },
   lam: { a: '#0847d6', b: '#38b6ff', c: '#e0f4ff' },
   tim: { a: '#5a0fd0', b: '#b65cff', c: '#f3e4ff' },
-  // thanh tiến độ trên nền giấy sáng: thân tối, ánh bạc, lõi trắng
-  'trang-den': { a: '#14161f', b: '#8da3c4', c: '#ffffff' },
+  // trên nền giấy sáng: viền than đậm, thân trắng sáng, tâm vàng nhạt để vẫn ra "lửa"
+  'trang-den': { a: '#14161f', b: '#f4f6fb', c: '#ffd77a' },
 };
-const SCALE = [1, 1, 1.08, 1.18, 1.3, 1.42, 1.55];
+/** Tối đa 1.3 để ngọn lửa không nhô khỏi viên thuốc. */
+const SCALE = [1, 1, 1.06, 1.12, 1.18, 1.24, 1.3];
 
 export function fireTheme(combo: number): FireTheme {
   const level = glowLevel(combo);
@@ -65,7 +66,7 @@ export function fireTheme(combo: number): FireTheme {
 /** Chuỗi style gán custom property; app.css đã đăng ký @property --fire-* nên đổi mốc là chuyển màu mượt. */
 export function fireStyle(combo: number): string {
   const f = fireTheme(combo);
-  return `--fire-a:${f.a};--fire-b:${f.b};--fire-c:${f.c};--fire-line:${f.line};--fire-glow:${f.glow};--fire-alt:${f.alt}`;
+  return `--fire-a:${f.a};--fire-b:${f.b};--fire-c:${f.c};--fire-glow:${f.glow}`;
 }
 
 /** Một chữ "+10" đang bay: toạ độ viewport nơi vừa bấm. */

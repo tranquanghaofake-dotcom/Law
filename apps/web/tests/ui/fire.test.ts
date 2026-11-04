@@ -22,6 +22,11 @@ describe('fireTheme — một nguồn màu theo mốc', () => {
   it('ba lớp lửa a/b/c đều có màu', () => {
     for (const c of [1, 2, 3, 5]) { const f = fireTheme(c); expect(f.a && f.b && f.c).toBeTruthy(); }
   });
+  it('mốc trắng–đen: viền than đậm, thân trắng sáng, tâm vàng nhạt; scale ≤ 1.3', () => {
+    const f = fireTheme(5);
+    expect(f.a).toBe('#14161f'); expect(f.b).toBe('#f4f6fb'); expect(f.c).toBe('#ffd77a');
+    expect(fireTheme(13).scale).toBeLessThanOrEqual(1.3);
+  });
   it('lửa to dần theo mốc, tăng nghiêm ngặt', () => {
     const s = [1, 2, 3, 5, 8, 13].map((c) => fireTheme(c).scale);
     for (let i = 1; i < s.length; i++) expect(s[i]).toBeGreaterThan(s[i - 1]);
@@ -31,6 +36,6 @@ describe('fireTheme — một nguồn màu theo mốc', () => {
     expect(s).toContain('--fire-a:');
     expect(s).toContain('--fire-b:');
     expect(s).toContain('--fire-c:');
-    expect(s).toContain(`--fire-line:${COMBO_COLORS.lam.line}`);
+    expect(s).toContain(`--fire-glow:${COMBO_COLORS.lam.glow}`);
   });
 });
