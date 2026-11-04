@@ -55,4 +55,14 @@ describe('lookFor — tổ hợp tủ trưng bày cho 29 chức + Công dân', (
   it('không dùng cờ, Quốc huy, quân hàm, sao vàng trong danh mục', () => {
     for (const n of [...PROPS, ...BACKDROPS, ...ADORNS]) expect(n).not.toMatch(/^co-|-co-|quoc-huy|quan-ham|sao-vang/);
   });
+  it('đợt 8: 5 phông Việt Nam mới có trong danh mục và được dùng; các chức dùng ≥ 12 phông khác nhau, không phông nào chiếm quá 5 chức', () => {
+    for (const b of ['hoi-an', 'thien-mu', 'ruong-bac-thang', 'nha-hat-lon', 'dinh-lang']) {
+      expect(BACKDROPS).toContain(b);
+      expect(all.some((l) => l.backdrop === b), b).toBe(true);
+    }
+    const count = new Map<string, number>();
+    for (const l of all.slice(1)) count.set(l.backdrop, (count.get(l.backdrop) ?? 0) + 1);
+    expect(count.size).toBeGreaterThanOrEqual(12);
+    expect(Math.max(...count.values())).toBeLessThanOrEqual(5);
+  });
 });

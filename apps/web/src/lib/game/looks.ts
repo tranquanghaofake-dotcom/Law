@@ -6,14 +6,17 @@ import { POSTS, type PostTier } from './career';
 import { outfitFor } from './wardrobe';
 
 /** Số biến thể màu của từng trang phục (palette nằm ở lib/art/showcase/tones.ts, test giữ hai bên khớp). */
-export const TONES: Record<string, number> = { 'thuong-phuc': 4, 'cong-so': 4, 'vest-xanh': 4, 'vest-den': 6, 'ao-choang': 3, 'ks-xuan-he': 3, 'ks-thu-dong': 3, 'ao-dai': 5 };
+export const TONES: Record<string, number> = { 'thuong-phuc': 4, 'cong-so': 4, 'vest-xanh': 4, 'vest-den': 6, 'ao-choang': 3, 'ks-xuan-he': 3, 'ks-thu-dong': 3, 'ao-dai': 5, 'ao-dai-nam': 5, 'tu-than': 3, 'ba-ba': 4, 'nhat-binh': 4 };
 
 export const PROPS = [
   'con-dau', 'khay-ho-so', 'hom-phieu', 'bo-luat', 'can-can', 'ho-so-vu-an', 'cap-ho-so', 'kinh-lup',
   'so-tay', 'chau-cay', 'micro', 'dong-ho', 'qua-cau', 'binh-sen', 'den-ban', 'chong-sach', 'but-nghien', 'cuon-chieu', 'trong-mini', 'laptop', 'bieu-do',
 ] as const;
 export type PropId = (typeof PROPS)[number];
-export const BACKDROPS = ['khue-van-cac', 'quoc-hoi', 'tam-quan', 'chua-mot-cot', 'ha-long', 'ngo-mon', 'toa-an', 'sach-luat', 'san-giao-dich', 'bia-tien-si'] as const;
+export const BACKDROPS = [
+  'khue-van-cac', 'quoc-hoi', 'tam-quan', 'chua-mot-cot', 'ha-long', 'ngo-mon', 'toa-an', 'sach-luat', 'san-giao-dich', 'bia-tien-si',
+  'hoi-an', 'thien-mu', 'ruong-bac-thang', 'nha-hat-lon', 'dinh-lang', // đợt 8: phố cổ đèn lồng, chùa Thiên Mụ, ruộng bậc thang, Nhà hát Lớn, đình làng
+] as const;
 export type BackdropId = (typeof BACKDROPS)[number];
 export const SKIES = ['ban-mai', 'trua', 'hoang-hon', 'dem'] as const;
 export type SkyId = (typeof SKIES)[number];
@@ -42,11 +45,11 @@ const CITIZEN: Row = [0, 'khong', 'so-tay', 'chau-cay', 'chua-mot-cot', 'ban-mai
 /** id chức → [màu, phụ kiện, đồ vật trái, đồ vật phải, phông, trời]. */
 const TABLE: Record<string, Row> = {
   // Hành pháp — từ chính quyền cấp xã tới Chính phủ
-  'cong-chuc-xa': [1, 'khong', 'so-tay', 'con-dau', 'tam-quan', 'trua'],
-  'pho-chu-tich-xa': [2, 'ghim-sen', 'khay-ho-so', 'chau-cay', 'tam-quan', 'hoang-hon'],
-  'chu-tich-xa': [3, 'ghim-sach', 'dong-ho', 'cap-ho-so', 'chua-mot-cot', 'ban-mai'],
-  'chuyen-vien-so': [0, 'khong', 'laptop', 'khay-ho-so', 'ngo-mon', 'ban-mai'],
-  'giam-doc-so': [1, 'ghim-sach', 'bieu-do', 'con-dau', 'ngo-mon', 'trua'],
+  'cong-chuc-xa': [1, 'khong', 'so-tay', 'con-dau', 'hoi-an', 'trua'],
+  'pho-chu-tich-xa': [2, 'ghim-sen', 'khay-ho-so', 'chau-cay', 'dinh-lang', 'hoang-hon'],
+  'chu-tich-xa': [3, 'ghim-sach', 'dong-ho', 'cap-ho-so', 'thien-mu', 'ban-mai'],
+  'chuyen-vien-so': [0, 'khong', 'laptop', 'khay-ho-so', 'hoi-an', 'dem'],
+  'giam-doc-so': [1, 'ghim-sach', 'bieu-do', 'con-dau', 'nha-hat-lon', 'trua'],
   'chu-tich-tinh': [2, 'khan-lua', 'qua-cau', 'chong-sach', 'tam-quan', 'hoang-hon'],
   'vu-truong': [0, 'ghim-sach', 'laptop', 'cap-ho-so', 'san-giao-dich', 'trua'],
   'thu-truong': [4, 'ghim-can', 'bieu-do', 'khay-ho-so', 'ngo-mon', 'hoang-hon'],
@@ -54,7 +57,7 @@ const TABLE: Record<string, Row> = {
   'pho-thu-tuong': [4, 'ghim-trong', 'dong-ho', 'bieu-do', 'ha-long', 'dem'],
   'thu-tuong': [5, 'ghim-trong', 'qua-cau', 'cuon-chieu', 'ngo-mon', 'dem'],
   // Lập pháp — từ đại biểu HĐND tới Quốc hội
-  'dai-bieu-hdnd-xa': [2, 'ghim-sen', 'hom-phieu', 'so-tay', 'chua-mot-cot', 'trua'],
+  'dai-bieu-hdnd-xa': [2, 'ghim-sen', 'hom-phieu', 'so-tay', 'ruong-bac-thang', 'trua'],
   'dai-bieu-hdnd-tinh': [3, 'khan-lua', 'hom-phieu', 'bo-luat', 'quoc-hoi', 'ban-mai'],
   'dai-bieu-quoc-hoi': [5, 'ghim-can', 'micro', 'bo-luat', 'quoc-hoi', 'trua'],
   'uy-vien-ubtvqh': [1, 'ghim-sach', 'micro', 'chong-sach', 'quoc-hoi', 'hoang-hon'],
@@ -63,13 +66,13 @@ const TABLE: Record<string, Row> = {
   // Xét xử — thư ký, thẩm tra viên, thẩm phán, chánh án
   'thu-ky-toa-an': [3, 'khong', 'so-tay', 'ho-so-vu-an', 'toa-an', 'ban-mai'],
   'tham-tra-vien': [0, 'ghim-sach', 'kinh-lup', 'ho-so-vu-an', 'sach-luat', 'trua'],
-  'tham-phan': [1, 'khong', 'can-can', 'ho-so-vu-an', 'toa-an', 'hoang-hon'],
+  'tham-phan': [1, 'khong', 'can-can', 'ho-so-vu-an', 'dinh-lang', 'hoang-hon'],
   'chanh-an-tinh': [0, 'ghim-can', 'can-can', 'bo-luat', 'toa-an', 'ban-mai'],
   'tham-phan-tc': [2, 'ghim-can', 'but-nghien', 'can-can', 'sach-luat', 'trua'],
   'chanh-an-tc': [1, 'ghim-trong', 'can-can', 'cuon-chieu', 'bia-tien-si', 'dem'],
   // Kiểm sát
-  'kiem-tra-vien': [0, 'khong', 'kinh-lup', 'so-tay', 'toa-an', 'trua'],
-  'kiem-sat-vien': [1, 'ghim-can', 'kinh-lup', 'cap-ho-so', 'sach-luat', 'ban-mai'],
+  'kiem-tra-vien': [0, 'khong', 'kinh-lup', 'so-tay', 'thien-mu', 'trua'],
+  'kiem-sat-vien': [1, 'ghim-can', 'kinh-lup', 'cap-ho-so', 'ruong-bac-thang', 'ban-mai'],
   'vien-truong-tinh': [0, 'ghim-sach', 'cap-ho-so', 'but-nghien', 'toa-an', 'hoang-hon'],
   'kiem-sat-vien-tc': [2, 'ghim-sen', 'kinh-lup', 'bo-luat', 'khue-van-cac', 'hoang-hon'],
   'vien-truong-tc': [1, 'ghim-trong', 'kinh-lup', 'den-ban', 'bia-tien-si', 'dem'],
