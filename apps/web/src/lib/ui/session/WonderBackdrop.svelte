@@ -56,10 +56,7 @@
   .core { stroke: var(--c); stroke-width: 2.2; opacity: .8; }
   .halo { stroke: var(--g); stroke-width: 7; opacity: .22; }
   @keyframes draw { to { stroke-dashoffset: 0; } }
-  /* giảm chuyển động: không vẽ dần, chỉ đổi độ mờ */
+  /* giảm chuyển động (.rm đã gồm cả prefers-reduced-motion qua reducedMotion()): không vẽ dần, chỉ đổi độ mờ */
   .rm .lit path { stroke-dasharray: none; stroke-dashoffset: 0; animation: fade .3s linear var(--d, 0s) backwards; }
   @keyframes fade { from { opacity: 0; } }
-  @media (prefers-reduced-motion: reduce) {
-    .lit path { stroke-dasharray: none; stroke-dashoffset: 0; animation: fade .3s linear var(--d, 0s) backwards; }
-  }
 </style>

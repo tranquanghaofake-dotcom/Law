@@ -3,6 +3,7 @@ import { WONDERS, loadWonder, pickWonderId } from '$lib/fx/wonders';
 import { pickStrokes, strokesPerCorrect } from '$lib/fx/wonders/lighting';
 import { COMBO_COLORS, edgeGlow, glowLevel } from '$lib/ui/session/combo';
 import { comboSfxPlan } from '$lib/fx/comboSfx';
+import { readdirSync } from 'node:fs';
 
 describe('mốc chuỗi và viền sáng', () => {
   it('mốc 1/2/3/5/8/13', () => {
@@ -85,7 +86,7 @@ describe('âm thanh theo mốc', () => {
   it('từ mốc 2 chồng ≥ 2 lớp, mốc 13 chồng ≥ 4 lớp, dùng tệp có sẵn', () => {
     expect(comboSfxPlan(2).length).toBeGreaterThanOrEqual(2);
     expect(comboSfxPlan(13).length).toBeGreaterThanOrEqual(4);
-    const have = ['bong_001', 'confirmation_001', 'drop_002', 'error_004', 'glass_004', 'maximize_006', 'question_003', 'select_001'];
+    const have = readdirSync('static/sfx').filter((f) => f.endsWith('.ogg')).map((f) => f.replace(/\.ogg$/, ''));
     for (const c of [1, 2, 3, 5, 8, 13]) for (const l of comboSfxPlan(c)) expect(have).toContain(l.file);
   });
 });

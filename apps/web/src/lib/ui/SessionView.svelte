@@ -95,16 +95,28 @@
   // nền: một kỳ quan Việt Nam ngẫu nhiên mỗi phiên, mỗi câu đúng sáng thêm vài nét theo mốc chuỗi
   let wonder = $state<Wonder | null>(null);
   let lit = $state<{ i: number; tier: GlowTier }[]>([]);
-  onMount(() => { loadWonder(pickWonderId(rng)).then((w) => (wonder = w)).catch(() => {}); });
+  // câu đúng khi kỳ quan chưa nạp xong: cộng dồn số nét chờ (theo bậc màu lúc đó), áp ngay khi nạp xong
+  let pending: { n: number; tier: GlowTier }[] = [];
+  onMount(() => {
+    loadWonder(pickWonderId(rng)).then((w) => {
+      wonder = w;
+      const q = pending; pending = [];
+      for (const p of q) apply(p.n, p.tier);
+    }).catch(() => {});
+  });
+  function apply(n: number, tier: GlowTier) {
+    if (!wonder) return;
+    const add = pickStrokes(wonder.paths.length, lit.map((l) => l.i), n, rng);
+    if (add.length) lit = [...lit, ...add.map((i) => ({ i, tier }))];
+  }
   function lightWonder(combo: number) {
     const tier = edgeGlow(combo).tier;
-    if (!wonder || !tier) return;
-    const add = pickStrokes(wonder.paths.length, lit.map((l) => l.i), strokesPerCorrect(combo), rng);
-    if (add.length) lit = [...lit, ...add.map((i) => ({ i, tier }))];
+    if (!tier) return;
+    if (!wonder) pending.push({ n: strokesPerCorrect(combo), tier }); else apply(strokesPerCorrect(combo), tier);
   }
 
   sfx.preload();
-  onDestroy(() => tts.stop());
+  onDestroy(() => { tts.stop(); sfx.stopCombo(); });
 
   // chữ "+10" bay lên ở chỗ vừa bấm; bàn phím thì bay từ giữa thẻ câu hỏi
   function spawnFloat(text: string, gold: boolean) {
@@ -155,6 +167,7 @@
   }
 
   async function finish() {
+    sfx.stopCombo();
     const xpBefore = (await stats.xp()) - run.xp;
     let bonus = SESSION_BONUS;
     if (lessonId && (await stats.markLesson(lessonId))) bonus += LESSON_FIRST_BONUS;
@@ -185,7 +198,7 @@
     runNextStep();
   }
 
-  function exit() { tts.stop(); sfx.play('exit'); go('home'); }
+  function exit() { tts.stop(); sfx.stopCombo(); sfx.play('exit'); go('home'); }
   function onkey(e: KeyboardEvent) {
     if (e.key === 'Escape' && !ended) { e.preventDefault(); if (isTypingTarget(e)) (e.target as HTMLElement).blur(); confirmExit = !confirmExit; }
   }
