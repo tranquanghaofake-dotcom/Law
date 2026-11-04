@@ -42,9 +42,9 @@ async function answerOk(container: HTMLElement, _g?: unknown, wrong = false) {
 const next = (container: HTMLElement) => fireEvent.click(container.querySelector('.feedback .btn')!);
 
 describe('SessionView: khoảnh khắc thưởng', () => {
-  it('có dải Thắp sáng và bộ đếm XP ngay từ đầu', () => {
+  it('có bộ đếm XP ngay từ đầu, không còn dải kỳ quan', () => {
     const { container } = render(SessionView, { props: props() });
-    expect(container.querySelector('.wonder-strip')).not.toBeNull();
+    expect(container.querySelector('.wonder-strip')).toBeNull();
     expect(container.querySelector('.session-bar .xp-chip')).not.toBeNull();
   });
   it('câu đúng thứ 2 liên tiếp: dấu mộc "×2 CHUỖI!" và âm thanh dời về lúc dấu chạm giấy', async () => {
@@ -85,31 +85,20 @@ describe('SessionView: khoảnh khắc thưởng', () => {
     expect(sparks).not.toHaveBeenCalled();
     expect(container.querySelector('.reward-bounce')).toBeNull();
   });
-  it('mốc 5: confetti + overlay kỳ quan; sang câu sau là đóng; Esc đóng overlay trước khi hỏi thoát', async () => {
+  it('mốc 5: confetti, không phủ kỳ quan; Esc mở hộp thoát', async () => {
     const { container } = render(SessionView, { props: props() });
     for (let n = 1; n <= 5; n++) { await answerOk(container); if (n < 5) await next(container); }
     await vi.waitFor(() => expect(stampConfetti).toHaveBeenCalledTimes(1));
-    await vi.waitFor(() => expect(container.ownerDocument.querySelector('.wonder-flash')).not.toBeNull(), { timeout: 3000 });
-    await fireEvent.keyDown(window, { key: 'Escape' });
     expect(container.ownerDocument.querySelector('.wonder-flash')).toBeNull();
-    expect(container.querySelector('.confirm')).toBeNull();
     await fireEvent.keyDown(window, { key: 'Escape' });
     expect(container.querySelector('.confirm')).not.toBeNull();
   });
-  it('mốc 5: sang câu sau đóng overlay', async () => {
-    const { container } = render(SessionView, { props: props() });
-    for (let n = 1; n <= 5; n++) { await answerOk(container); if (n < 5) await next(container); }
-    await vi.waitFor(() => expect(container.ownerDocument.querySelector('.wonder-flash')).not.toBeNull(), { timeout: 3000 });
-    await next(container);
-    expect(container.ownerDocument.querySelector('.wonder-flash')).toBeNull();
-  });
-  it('huỷ giữa chừng: timer dọn, không confetti/overlay muộn', async () => {
+  it('huỷ giữa chừng: timer dọn, không confetti muộn', async () => {
     const { container, unmount } = render(SessionView, { props: props() });
     for (let n = 1; n <= 5; n++) { await answerOk(container); if (n < 5) await next(container); }
     unmount();
     stampConfetti.mockClear();
     await new Promise((r) => setTimeout(r, 700));
     expect(stampConfetti).not.toHaveBeenCalled();
-    expect(document.querySelector('.wonder-flash')).toBeNull();
   });
 });

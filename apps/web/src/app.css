@@ -1617,15 +1617,6 @@ body:has(dialog.sheet[open]) { overflow: hidden; }
 .session-hint p { margin: 0 0 var(--sp-2); font-size: var(--fs-sm); line-height: 1.45; }
 .session-hint .kicker { margin: 0 0 4px; }
 
-/* ---- Đợt 9: khoảnh khắc thưởng — nút đúng nảy, thẻ kỳ quan cuối phiên ---- */
+/* ---- Đợt 9: khoảnh khắc thưởng — nút đúng nảy ---- */
 .step-wrap .reward-bounce { animation: reward-bounce .45s cubic-bezier(.3, 1.6, .5, 1); }
 @keyframes reward-bounce { 0% { transform: scale(1); } 35% { transform: scale(1.06); } 100% { transform: scale(1); } }
-.wonder-card { display: grid; grid-template-columns: minmax(120px, 170px) 1fr; gap: var(--sp-4); align-items: center; margin: var(--sp-4) 0; padding: var(--sp-3) var(--sp-4); border: 1px solid var(--line); border-radius: var(--r-md); background: var(--paper); }
-.wonder-card .wc-art { aspect-ratio: 4 / 3; }
-.wonder-card p { margin: 0; }
-.wonder-card .wc-h { font-size: var(--fs-lg); }
-.wonder-card .wc-h b { font-size: var(--fs-2xl); font-weight: 800; color: var(--accent-text, var(--ink)); }
-.wonder-card .wc-n { color: var(--muted); font-size: var(--fs-sm); margin-top: var(--sp-1); }
-.wonder-card .wc-badge { display: inline-flex; align-items: center; gap: var(--sp-2); margin-top: var(--sp-2); font-weight: 700; color: var(--seal); }
-.wonder-card.full { border-color: #d9a21e; background: color-mix(in srgb, #f2c14e 14%, var(--paper)); }
-@media (max-width: 479px) { .wonder-card { grid-template-columns: 110px 1fr; gap: var(--sp-3); } }
