@@ -1,10 +1,9 @@
 // Đợt 7 — engine cho 3 đề xuất trong docs/specs/2026-11-03-phuong-phap-hoc-design.md:
-// ① độ tự tin 3 mức + "chắc mà sai"; ③ đoán trước + thẻ giới thiệu ba lớp; ⑤ xen kẽ có chủ đích cặp dễ nhầm.
+// (① độ tự tin đã bỏ ở đợt 9) ③ đoán trước + thẻ giới thiệu ba lớp; ⑤ xen kẽ có chủ đích cặp dễ nhầm.
 import { describe, expect, it } from 'vitest';
 import { Rating } from 'ts-fsrs';
 import type { Concept, Level } from '$lib/content/types';
 import { ratingFor } from '$lib/engine/fsrs';
-import { calibration, isHypercorrection, shouldAskConfidence } from '$lib/engine/confidence';
 import { buildLearnSession, buildPretest, buildReviewSession, introLayers, pickReviewConcepts, type Step } from '$lib/engine/session';
 import { nearConfusables } from '$lib/engine/arrange';
 import { recordsProgress } from '$lib/engine/step';
@@ -39,57 +38,19 @@ const mcqStep = (conceptId: string, level: Level = 2, meta: Step['meta'] = { kin
   conceptId, level, meta, item: { type: 'mcq', level: 1, q: 'q', options: ['1', '2', '3', '4'], answer: 0, explain: 'e' },
 });
 
-describe('① độ tự tin → rating FSRS', () => {
-  it('không có conf: giữ nguyên quy ước cũ (bản ghi cũ không đổi lịch)', () => {
+describe('rating FSRS', () => {
+  it('quy ước: sai = Again; đúng chậm = Hard; đúng nhanh ở bậc ≥ 3 = Easy', () => {
     expect(ratingFor(true, 3000, 3)).toBe(Rating.Easy);
-    expect(ratingFor(true, 3000, 3, undefined)).toBe(Rating.Easy);
     expect(ratingFor(true, 13000, 1)).toBe(Rating.Hard);
     expect(ratingFor(false, 1000, 5)).toBe(Rating.Again);
   });
-  it('đúng mà "Đoán" = Hard; "Tạm" không lên Easy; "Chắc" như cũ; sai luôn Again', () => {
-    expect(ratingFor(true, 3000, 3, 'doan')).toBe(Rating.Hard);
-    expect(ratingFor(true, 3000, 3, 'tam')).toBe(Rating.Good);
-    expect(ratingFor(true, 3000, 3, 'chac')).toBe(Rating.Easy);
-    expect(ratingFor(true, 13000, 3, 'tam')).toBe(Rating.Hard);
-    expect(ratingFor(false, 3000, 3, 'chac')).toBe(Rating.Again);
-  });
-  it('"chắc mà sai" chỉ khi sai với mức Chắc', () => {
-    expect(isHypercorrection(false, 'chac')).toBe(true);
-    expect(isHypercorrection(false, 'tam')).toBe(false);
-    expect(isHypercorrection(true, 'chac')).toBe(false);
-    expect(isHypercorrection(false, undefined)).toBe(false);
-  });
-  it('hỏi độ tự tin: từ bậc 2, không ở intro/đoán trước/sửa sai/tự nhớ lại, thưa theo `every`', () => {
-    expect(shouldAskConfidence(mcqStep('a', 1), 0)).toBe(false);
-    expect(shouldAskConfidence(mcqStep('a', 2), 0)).toBe(true);
-    expect(shouldAskConfidence(mcqStep('a', 2, { kind: 'retry' }), 0)).toBe(false);
-    expect(shouldAskConfidence(mcqStep('a', 2, { kind: 'pretest' }), 0)).toBe(false);
-    expect(shouldAskConfidence({ conceptId: 'a', level: 5, item: { type: 'recall', level: 5, q: 'q', model: 'm', keywords: ['a', 'b', 'c'] } }, 0)).toBe(false);
-    expect(shouldAskConfidence({ conceptId: 'a', level: 0, item: { type: 'intro' } }, 0)).toBe(false);
-    expect([0, 1, 2, 3, 4, 5].filter((i) => shouldAskConfidence(mcqStep('a', 3), i, { every: 3 }))).toEqual([0, 3]);
-  });
-  it('độ chuẩn tự đánh giá: tỉ lệ đúng theo mức, Brier, số "chắc mà sai"; bỏ qua lượt không có conf', () => {
-    const c = calibration([
-      { conf: 'chac', rating: Rating.Good }, { conf: 'chac', rating: Rating.Again },
-      { conf: 'doan', rating: Rating.Hard }, { rating: Rating.Good },
-    ]);
-    expect(c.n).toBe(3);
-    expect(c.byConf.chac).toEqual({ n: 2, correctRate: 0.5 });
-    expect(c.byConf.tam.correctRate).toBeNull();
-    expect(c.hyper).toBe(1);
-    // (0,9−1)² + (0,9−0)² + (0,3−1)² = 0,01 + 0,81 + 0,49 = 1,31 → /3
-    expect(c.brier).toBeCloseTo(1.31 / 3, 6);
-    expect(calibration([]).brier).toBeNull();
-  });
-  it('runner: ghi conf/"chắc mà sai", đưa câu "chắc mà sai" lên đầu vòng sửa sai, đếm trong tổng kết', () => {
+  it('runner: câu sai vào vòng sửa sai theo thứ tự lượt chính', () => {
     let s = createRunner([mcqStep('a'), mcqStep('b'), mcqStep('c')], { a: 2, b: 2, c: 2 });
-    s = answer(s, { correct: false, elapsedMs: 1000, conf: 'tam' }).state; s = next(s);
-    s = answer(s, { correct: false, elapsedMs: 1000, conf: 'chac' }).state; s = next(s);
-    s = answer(s, { correct: true, elapsedMs: 1000, conf: 'doan' }).state; s = next(s);
-    expect(s.results.map((r) => r.hyper ?? false)).toEqual([false, true, false]);
-    expect(s.results[2].conf).toBe('doan');
-    expect(s.steps.slice(s.retryStart!).map((x) => x.conceptId)).toEqual(['b', 'a']);
-    expect(summary(s).hyper).toBe(1);
+    s = answer(s, { correct: false, elapsedMs: 1000 }).state; s = next(s);
+    s = answer(s, { correct: false, elapsedMs: 1000 }).state; s = next(s);
+    s = answer(s, { correct: true, elapsedMs: 1000 }).state; s = next(s);
+    expect(s.steps.slice(s.retryStart!).map((x) => x.conceptId)).toEqual(['a', 'b']);
+    expect(summary(s)).not.toHaveProperty('hyper');
   });
 });
 

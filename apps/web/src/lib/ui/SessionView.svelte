@@ -2,7 +2,6 @@
   import type { Concept, Level } from '$lib/content/types';
   import { clozeModeFor, type Step } from '$lib/engine/session';
   import { recordsProgress } from '$lib/engine/step';
-  import { isHypercorrection, shouldAskConfidence, type Confidence } from '$lib/engine/confidence';
   import { answer as runAnswer, createRunner, isLast, mistakes, next as runNext, summary, type RunnerState } from '$lib/engine/runner';
   import { repo } from '$lib/store/progress-repo';
   import { stats } from '$lib/store/stats';
@@ -34,8 +33,6 @@
   import type { XpFloat } from '$lib/ui/session/combo';
   import FloatXp from '$lib/ui/session/FloatXp.svelte';
   import BossIntro from '$lib/ui/session/BossIntro.svelte';
-  import ConfidenceBar from '$lib/ui/session/ConfidenceBar.svelte';
-  import HyperNote from '$lib/ui/session/HyperNote.svelte';
   import PretestBar from '$lib/ui/session/PretestBar.svelte';
   import { getPref } from '$lib/ui/session/prefs';
   import { hintSeen, markHintSeen } from '$lib/ui/hints';
@@ -61,9 +58,6 @@
   /** thông tin thưởng của câu vừa trả lời, hiện ở phản hồi */
   let reward = $state<{ xp: number; golden: boolean; levelTo: number | null; retry: boolean }>({ xp: 0, golden: false, levelTo: null, retry: false });
   let bossSeen = $state(-1);
-  /** độ tự tin người học chọn cho bước hiện tại (tuỳ chọn; xoá khi sang bước sau) */
-  let conf = $state<Confidence | undefined>(undefined);
-  const confOn = getPref('confidence');
   let floats = $state<XpFloat[]>([]);
   let floatId = 0;
   let sources = $state<ReturnType<typeof xpSources>>([]);
@@ -90,9 +84,6 @@
   const golden = $derived(!!step?.meta?.golden && step.item.type !== 'intro');
   const retry = $derived(step?.meta?.kind === 'retry');
   const pretest = $derived(step?.meta?.kind === 'pretest');
-  // hỏi độ tự tin ở nửa số câu từ bậc 2 (nhẹ phiên); chỉ khi chưa trả lời; không hỏi ở ghép cặp (dùng phím A–D)
-  const askConf = $derived(confOn && !result && !!step && step.item.type !== 'match' && shouldAskConfidence(step, run.i, { minLevel: 2, every: 2 }));
-  const hyper = $derived(!!result && isHypercorrection(result.correct, result.conf));
   // câu đoán khái niệm từ định nghĩa/ví dụ: không tô khái niệm đang hỏi (lộ đáp án)
   const hideCurrent = $derived(step?.meta?.gen === 'def-term' || step?.meta?.gen === 'example-concept');
 
@@ -137,7 +128,7 @@
 
   async function onanswer(r0: AnswerResult) {
     const cur = step;
-    const r: AnswerResult = askConf && conf ? { ...r0, conf } : r0;
+    const r: AnswerResult = r0;
     const isRetry = cur.meta?.kind === 'retry';
     const { state, levelUp, sfx: snd, xpGained } = runAnswer(run, r);
     run = state;
@@ -146,7 +137,7 @@
     if (settings.tts && tts.available) tts.speak(feedbackSpeech(cur.item, r));
     // ghi tiến độ NGAY sau mỗi câu (Review Focus #1); vòng sửa sai và câu đoán trước không ghi, không đổi bậc
     if (recordsProgress(cur)) {
-      try { await repo.record({ conceptId: cur.conceptId, subject: concept.subject, correct: r.correct, elapsedMs: r.elapsedMs, now: new Date(), retention: settings.retention, conf: r.conf }); } catch (e) { console.warn(e); }
+      try { await repo.record({ conceptId: cur.conceptId, subject: concept.subject, correct: r.correct, elapsedMs: r.elapsedMs, now: new Date(), retention: settings.retention }); } catch (e) { console.warn(e); }
     }
     if (xpGained) await stats.addXp(xpGained);
     const gold = !!cur.meta?.golden;
@@ -166,7 +157,6 @@
   function runNextStep() {
     tts.stop();
     result = null;
-    conf = undefined;
     run = runNext(run);
     if (run.done) finish();
   }
@@ -241,13 +231,11 @@
         {:else if retry}<p class="step-badge retry">Sửa sai · không ghi vào tiến độ nhớ</p>
         {:else if step.meta?.kind === 'boss'}<p class="step-badge boss">Câu chốt</p>{/if}
         {#if pretest}<PretestBar answered={!!result} onskip={skipPretest} />{/if}
-        {#if askConf}<ConfidenceBar value={conf} onpick={(c) => (conf = c)} />{/if}
         {#key run.i}
           <Card {concept} item={step.item} meta={step.meta} {rng} {onanswer} onspeak={speak} mode={clozeMode} />
         {/key}
       </div>
       {#if result}
-        {#if hyper}<HyperNote term={concept.term} confusableTerms={confusableConcepts.map((c) => c.term)} retry={reward.retry} />{/if}
         <Feedback {result} item={step.item} {concept} {confusableTerms} confusables={confusableConcepts} {compareWith} onnext={runNextStep} onspeak={speak} last={isLast(run)} xp={reward.xp} golden={reward.golden} levelTo={reward.levelTo} retry={reward.retry} />
       {/if}
     {/if}
