@@ -36,3 +36,12 @@ Task 3: bắt đầu — base fa968f7
 Task 3: xong — ab388ed (ảnh khung hình: docs/plans/2026-11-04-man-thap-chuoi.png; e2e lesson.spec.ts 3/3 xanh)
 DỪNG theo mốc 2 giờ của CLAUDE.md. Task 4–9 chưa bắt đầu — phiên sau làm tiếp từ Task 4, không làm lại 1–3.
 Rút kinh nghiệm: (1) đo hiệu năng phải ép khung hình bằng vòng requestAnimationFrame — chờ suông thì Chromium headless không vẽ, số liệu sai (lần đo đầu ra 18 ms thay vì ~750 ms). (2) Test ràng buộc "đa dạng" cũ (≥ 12 phông) chính là nguyên nhân lỗi logic — test thẩm mỹ nên ràng buộc ý nghĩa trước, đa dạng sau. (3) Overlay mới che màn kết thúc → phải rà mọi e2e có thao tác sau màn đó; jsdom không có Element.animate → luôn bọc kiểm tra.
+
+## Phiên tiếp (Hào: "tiếp tục; ở thẻ chỉ con số sáng lên, thêm animation tăng số")
+- Sửa màn thắp: bỏ đĩa sáng sau số, chỉ chữ số bừng sáng rồi tắt; số đổi kiểu đồng hồ đếm (số cũ trượt lên, số mới trượt vào) — 469c4dd.
+- Task 4: xong — bce4ccf (View Transitions; focus tiêu đề chuyển vào trong callback).
+- Task 5–9: xong — các commit feat(phien-hoc), feat(ui) số đếm, feat(su-nghiep) mờ chéo + ô chức mới, khung chờ, ngăn kéo kéo xuống.
+- Review cuối (dp-review, opus): 1 CẦN_SỬA + 2 NÊN_SỬA, đã sửa ở 532cf8d. Còn GHI_CHÚ chưa xử lý: okring animate clip-path (0,9 s, một phần tử); thanh tiến độ animate width; 22 đốm sáng có box-shadow + blend trên nền blur; chuyển trang tới màn nạp lười chụp lúc khung xương còn mờ (màn mới trượt vào trống ~150 ms); chưa có test component cho StreakIgnite/CountUp/Sheet.
+- Đo cuối (CPU chậm 4×, ổn định): Hôm nay 81 ms (đầu phiên 817), Hồ sơ 661–729 ms (đầu phiên 1788; sau Task 1 là 547 — dao động, bisect không ra một khối thủ phạm).
+- e2e: 28/29; đỏ duy nhất home-review-quiz "BẮT ĐẦU" là lỗi có sẵn từ trước nhánh (nhãn không còn in hoa sau audit) — ngoài phạm vi, chưa sửa.
+Rút kinh nghiệm: (4) cổng chuyển động "lắng" phải được đánh thức bởi MỌI nguồn kích hoạt hiệu ứng (prop celebrate), không chỉ rê chuột — reviewer bắt được, test hàm thuần không bắt được. (5) Component hiển thị số liệu bất đồng bộ cần cờ "đã tải" — giá trị mặc định 0 không phải dữ liệu.
