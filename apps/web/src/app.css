@@ -1788,3 +1788,6 @@ select.qz-sort { min-height: var(--ctl-h); padding: 0 var(--sp-3); border: 1px s
 .review-empty .re-ok .glyph { color: var(--ok); flex: none; }
 .review-empty .re-stale { display: flex; gap: var(--sp-2); align-items: flex-start; } .review-empty .re-stale .glyph { color: var(--seal); flex: none; margin-top: 2px; }
 .review-empty .row .btn { flex: 0 1 auto; }
+/* Kết quả quiz: điều hướng phụ là link chữ (đợt 3) */
+.qr-more { display: flex; flex-wrap: wrap; align-items: center; gap: var(--sp-2) var(--sp-4); margin: var(--sp-3) 0 0; }
+.qr-more a, .qr-more .linklike { min-height: 24px; }
