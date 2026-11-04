@@ -136,3 +136,14 @@ describe('shelfFor / shelfProgress', () => {
     expect(r[0].color).toMatch(/^#/);
   });
 });
+
+import { quizConceptSubject } from '$lib/ui/quiz';
+describe('quizConceptSubject — môn để ghi tiến độ câu Luyện đề có `concept`', () => {
+  const subjects = ['hinh-su', 'dan-su', 'hien-phap'];
+  it('group là mã môn có thật → dùng group', () => {
+    expect(quizConceptSubject('hinh-su', subjects)).toBe('hinh-su');
+  });
+  it('group không phải mã môn (vd. "pldc") → null: không ghi, tránh lưu tiến độ sai môn', () => {
+    expect(quizConceptSubject('pldc', subjects)).toBeNull();
+  });
+});

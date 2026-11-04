@@ -15,7 +15,7 @@
   import { reviewTexts } from './cards/answer';
   import type { XpSource } from './session/xpSources';
   let { summary, concepts, streak, streakEvent, dueTomorrow, onhome, onagain, onnext, mistakes = [], promotion = null, sources = [], record = null, retryTotal: retryProp = 0}: {
-    summary: { correct: number; total: number; xp: number; levelUps: { conceptId: string; to: Level }[]; bestCombo?: number; golden?: number; fixed?: number; retried?: number; pretest?: { total: number; correct: number } };
+    summary: { correct: number; total: number; xp: number; levelUps: { conceptId: string; to: Level }[]; bestCombo?: number; golden?: number; fixed?: number; retried?: number; pretest?: { total: number; correct: number }; held?: number };
     concepts: Concept[]; streak: number; streakEvent: StreakEvent; rankBefore: RankInfo; rankAfter: RankInfo; dueTomorrow: number;
     onhome: () => void; onagain?: () => void; onnext?: () => void; mistakes?: Step[]; promotion?: string | null;
     /** XP chia theo nguồn */
@@ -49,6 +49,8 @@
 
 <section class="card session-end" aria-label="Kết thúc phiên">
   <p class="kicker">Xong phiên</p>
+  <p class="memory-line">{#if summary.levelUps.length}<b>{summary.levelUps.length} khái niệm nhớ chắc hơn</b> (lên bậc){:else}Chưa khái niệm nào lên bậc phiên này{/if}</p>
+  {#if summary.held}<p class="held-note muted small">{summary.held} khái niệm trả lời đúng nhưng giữ bậc: từ bậc 4 cần ôn lại vào một ngày khác mới lên — nhớ qua nhiều ngày mới tính là thuần thục.</p>{/if}
   <div class="end-top">
     <div class="end-ring" role="img" aria-label="Tỉ lệ đúng {Math.round(rate * 100)} phần trăm">
       <svg viewBox="0 0 120 120" aria-hidden="true" focusable="false"><circle class="trk" cx="60" cy="60" r={R} /><circle class="val" cx="60" cy="60" r={R} stroke-dasharray={C} stroke-dashoffset={C * (1 - rate)} transform="rotate(-90 60 60)" style="--c:{C}" /></svg>

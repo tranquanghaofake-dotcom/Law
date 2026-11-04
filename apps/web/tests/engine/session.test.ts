@@ -209,3 +209,15 @@ describe('dữ liệu thật: mọi đợt học ghép được phiên hợp l�
     expect(unbalanced / sessions).toBeLessThan(0.1);
   }, 60000);
 });
+
+describe('buildReviewSession — ưu tiên khái niệm sắp quên', () => {
+  it('quá số bước tối đa: lấy các khái niệm có xác suất còn nhớ thấp nhất', () => {
+    const list = Array.from({ length: 10 }, (_, k) => concept(`r${k}`, k));
+    const lv = Object.fromEntries(list.map((c) => [c.id, 1])) as Record<string, Level>;
+    const urgency = Object.fromEntries(list.map((c, k) => [c.id, k / 10])); // r0 sắp quên nhất
+    for (const seed of [1, 2, 3]) {
+      const steps = buildReviewSession(list, lv, mulberry32(seed), 3, {}, urgency);
+      expect(new Set(steps.map((s) => s.conceptId))).toEqual(new Set(['r0', 'r1', 'r2']));
+    }
+  });
+});

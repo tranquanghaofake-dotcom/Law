@@ -306,10 +306,16 @@ export function buildLearnSession(concepts: Concept[], levels: Record<string, Le
 /** Số bước tối đa của một phiên ôn. */
 export { REVIEW_MAX_STEPS };
 
-/** Ôn: mỗi khái niệm 1 bước ở bậc hiện tại (bậc 6 → dạng nhớ chủ động 3–5), tối đa `max`, xen dạng, có câu chốt + câu vàng. */
-export function buildReviewSession(concepts: Concept[], levels: Record<string, Level>, rng: () => number, max = REVIEW_MAX_STEPS, ctx: GenContext = {}): Step[] {
+/**
+ * Ôn: mỗi khái niệm 1 bước ở bậc hiện tại (bậc 6 → dạng nhớ chủ động 3–5), tối đa `max`, xen dạng, có câu chốt + câu vàng.
+ * `urgency` (tuỳ chọn): xác suất còn nhớ theo khái niệm (FSRS retrievability) — thấp hơn được chọn trước khi đến hạn nhiều hơn `max`;
+ * thiếu thì coi như 1, bằng nhau thì ngẫu nhiên.
+ */
+export function buildReviewSession(concepts: Concept[], levels: Record<string, Level>, rng: () => number, max = REVIEW_MAX_STEPS, ctx: GenContext = {}, urgency: Record<string, number> = {}): Step[] {
+  const u = (c: Concept) => urgency[c.id] ?? 1;
+  const ordered = shuffle(concepts, rng).sort((a, b) => u(a) - u(b));
   // (đợt 7, đề xuất ⑤) giữ cặp dễ nhầm cùng vào phiên, rồi đặt chúng cách nhau 1–3 câu.
-  const chosen = pickReviewConcepts(shuffle(concepts, rng), max);
+  const chosen = pickReviewConcepts(ordered, max);
   const picker = new Picker(chosen, ctx, rng);
   const queues = chosen.map((c) => {
     const lv = (levels[c.id] ?? 1) as Level;

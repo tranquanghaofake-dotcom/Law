@@ -114,3 +114,11 @@ export function shelfProgress(sets: readonly SetLike[], best: BestMap): { id: st
     })
     .filter((k) => k.total > 0);
 }
+
+/**
+ * Môn để ghi tiến độ cho câu Luyện đề có `concept` (id khái niệm, không kèm môn). Nhóm đề (`group`) chỉ trùng mã môn ở một số bộ
+ * (vd. "hinh-su"); nhóm khác (vd. "pldc", "thuong-mai-1" chưa chắc) không suy ra được môn → trả null để KHÔNG ghi sai môn.
+ */
+export function quizConceptSubject(group: string, subjectIds: readonly string[]): string | null {
+  return subjectIds.includes(group) ? group : null;
+}
