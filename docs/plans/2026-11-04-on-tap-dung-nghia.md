@@ -8,9 +8,11 @@ Quyết định: thuần thục đã đạt trước đây GIỮ NGUYÊN, luật
 
 | # | Task | File | Kiểm tra | Trạng thái |
 |---|---|---|---|---|
-| 1 | Bậc ≥ 4 chỉ lên khi khác ngày với lần lên bậc trước (`upDay`) → thuần thục (bậc 5) cần ≥ 3 ngày | engine/progress.ts, engine/runner.ts, store/{db,progress-repo}.ts, ui/SessionView.svelte, routes/{Lesson,Review}.svelte | tests/engine/progress, runner, store | chờ |
+| 1 | Bậc ≥ 4 chỉ lên khi khác ngày với lần lên bậc trước (`upDay`) → thuần thục (bậc 5) cần ≥ 3 ngày | engine/progress.ts, engine/runner.ts, store/{db,progress-repo}.ts, ui/SessionView.svelte, routes/{Lesson,Review}.svelte | tests/engine/progress, runner, store | xong |
 | 2 | `ratingFor`: mốc Hard theo độ dài đề; nhận biết không bao giờ Easy; dạng gõ/tự nhớ không bị Hard vì chậm; "Gần đúng" = Hard | engine/fsrs.ts, store/progress-repo.ts, ui/SessionView.svelte | tests/engine/fsrs | chờ |
 | 3 | Ôn hôm nay ưu tiên khái niệm có retrievability thấp nhất | engine/fsrs.ts, engine/session.ts, routes/Review.svelte | tests/engine/session | chờ |
 | 4 | Màn kết thúc: "n khái niệm nhớ chắc hơn" + giải thích luật giãn cách | ui/SessionEnd.svelte | check, shots | chờ |
 
 Task 1: bắt đầu — base 7419b6b
+Task 1: xong — ea05b0d
+Task 2: bắt đầu — base ea05b0d
