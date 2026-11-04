@@ -336,7 +336,6 @@ kbd { font: 600 var(--fs-xs)/1 var(--font-ui); background: rgba(255,255,255,.18)
 @keyframes sheen { 0% { transform: translateX(-120%); } 55%, 100% { transform: translateX(120%); } }
 .step-wrap.retry .question-card { border-top-color: var(--ok); border-style: dashed; }
 .step-wrap.boss .question-card { border-top-color: var(--seal); }
-@keyframes bossIn { from { transform: scale(1.6); opacity: 0; } to { transform: scale(1); opacity: 1; } }
 /* chữ XP bay lên chỗ vừa bấm */
 .xp-floats { position: fixed; inset: 0; pointer-events: none; z-index: 60; overflow: hidden; }
 .xp-float { position: absolute; transform: translate(-50%, -50%); font-weight: 800; font-size: var(--fs-xl); color: var(--accent-text); text-shadow: 0 1px 0 var(--card), 0 0 8px var(--card); animation: floatUp 1.05s ease-out forwards; }
