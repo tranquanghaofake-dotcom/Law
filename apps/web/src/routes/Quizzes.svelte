@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Glyph from '$lib/art/Glyph.svelte';
   import Vignette from '$lib/art/Vignette.svelte';
   import { vignetteFor } from '$lib/art/registry';
   // Luyện đề: phiếu đề thi 10 câu, dải số liệu, gợi ý, lọc theo kệ và sắp xếp (spec §5.1; đợt 5 mục 3).
@@ -55,7 +56,7 @@
       <svg class="qz-ring" viewBox="0 0 44 44" aria-hidden="true" focusable="false"><circle class="trk" cx="22" cy="22" r={R} /><circle class="val" cx="22" cy="22" r={R} stroke-dasharray={C} stroke-dashoffset={C * (1 - st.donePct / 100)} transform="rotate(-90 22 22)" /></svg>
       <span class="qs-t"><b>{st.done}<small>/{st.total}</small></b><span>Đã làm</span></span>
     </li>
-    <li><span class="qs-t"><b>{st.perfect}<small aria-hidden="true">★</small></b><span>Đạt tối đa</span></span></li>
+    <li><span class="qs-t"><b>{st.perfect}<small><Glyph name="star-fill" size={14} /></small></b><span>Đạt tối đa</span></span></li>
     <li><span class="qs-t"><b>{st.avgPct === null ? '—' : `${st.avgPct}%`}</b><span>Điểm trung bình</span></span></li>
   </ul>
 
@@ -125,7 +126,7 @@
         </div>
         <div class="tk-foot">
           <span class="tk-meta">{set.count} câu · ~{estMinutes(set.count)} phút</span>
-          {#if status === 'new'}<span class="tk-st new">Mới</span>{:else if status === 'perfect'}<span class="tk-st perfect">Tối đa <span aria-hidden="true">★</span></span>{:else}<span class="tk-st done">Đã làm</span>{/if}
+          {#if status === 'new'}<span class="tk-st new">Mới</span>{:else if status === 'perfect'}<span class="tk-st perfect">Tối đa <Glyph name="star-fill" size={12} /></span>{:else}<span class="tk-st done">Đã làm</span>{/if}
         </div>
       </a>
     {/each}

@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Glyph from '$lib/art/Glyph.svelte';
   // Lưới bậc kiểu Khan Academy: mỗi đợt một hàng, mỗi khái niệm một ô tô theo bậc 0–6 (spec §4.2).
   import type { Level, Subject } from '$lib/content/types';
   import { hashFor } from '$lib/router.svelte';
@@ -22,7 +23,7 @@
         <li class="lesson-row {st}" id="lesson-{l.id}">
           <div class="head">
             <a href={hashFor('lesson', { subject: subject.id, lesson: l.id })} onclick={(e) => onclick(e, st)}>{l.title}</a>
-            {#if st === 'current'}<span class="next-tag">TIẾP THEO CHO BẠN</span>{:else if st === 'done'}<span class="muted small">✓ đã qua</span>{/if}
+            {#if st === 'current'}<span class="next-tag">Tiếp theo cho bạn</span>{:else if st === 'done'}<span class="muted small"><Glyph name="check" size={14} /> đã qua</span>{/if}
           </div>
           <ul class="cells" aria-label="Bậc từng khái niệm của đợt {l.title}">
             {#each l.concepts as c (c)}

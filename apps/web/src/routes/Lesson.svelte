@@ -34,7 +34,8 @@
       document.title = `${lesson.title} · Luyện Luật`;
     } catch (e) { error = (e as Error).message; }
   }
-  $effect(() => { void route.params.subject; void route.params.lesson; void gen; load(); });
+  // Rời màn: route.params về {} trước khi màn huỷ, không tải /content/subjects/undefined.json.
+  $effect(() => { void gen; if (route.name === 'lesson' && route.params.subject && route.params.lesson) load(); });
 </script>
 
 {#if error}

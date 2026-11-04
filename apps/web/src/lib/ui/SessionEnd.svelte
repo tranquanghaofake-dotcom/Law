@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Glyph from '$lib/art/Glyph.svelte';
   import StreakCard from '$lib/art/StreakCard.svelte';
   import type { Concept, Level } from '$lib/content/types';
   import type { StreakEvent } from '$lib/game/streak';
@@ -48,7 +49,7 @@
       </dl>
     </div>
   </div>
-  {#if recordMsg}<p class="record-msg" role="status"><span class="seal-stamp" aria-hidden="true">★</span> {recordMsg}</p>{/if}
+  {#if recordMsg}<p class="record-msg" role="status"><span class="seal-stamp" aria-hidden="true"><Glyph name="star-fill" size={14} /></span> {recordMsg}</p>{/if}
   {#if sources.length}
     <ul class="xp-sources" aria-label="XP theo nguồn">
       {#each sources as s (s.key)}

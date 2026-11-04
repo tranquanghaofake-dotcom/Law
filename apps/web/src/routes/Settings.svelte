@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Glyph from '$lib/art/Glyph.svelte';
   import { settings, saveSetting } from '$lib/store/settings.svelte';
   import { repo } from '$lib/store/progress-repo';
   import { storage } from '$lib/store/status.svelte';
@@ -32,7 +33,7 @@
 
 <section class="card settings">
   <h2 style="margin-top:0">Cài đặt</h2>
-  {#if !storage.available}<p class="muted">⚠ Trình duyệt đang chặn lưu trữ (chế độ riêng tư?). Tiến độ sẽ không được lưu.</p>{/if}
+  {#if !storage.available}<p class="muted"><Glyph name="warn" size={16} /> Trình duyệt đang chặn lưu trữ (chế độ riêng tư?). Tiến độ sẽ không được lưu.</p>{/if}
   <label class="setting"><span>Âm thanh</span><input type="checkbox" checked={settings.sound} onchange={(e) => { saveSetting('sound', e.currentTarget.checked); if (e.currentTarget.checked) sfx.play('select'); }} /></label>
   <label class="setting"><span>Tự đọc phản hồi sau khi chọn đáp án (giọng neural dựng sẵn nếu có, không thì giọng vi-VN của trình duyệt)</span><input type="checkbox" checked={settings.tts} onchange={(e) => saveSetting('tts', e.currentTarget.checked)} /></label>
   {#if ttsOk}<button class="btn ghost" type="button" onclick={() => tts.speak('Hiến pháp là luật cơ bản của nước Cộng hòa xã hội chủ nghĩa Việt Nam.')}>Nghe thử</button>

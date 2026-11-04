@@ -3,6 +3,7 @@
   import { route, type RouteName } from '$lib/router.svelte';
   import { settings, loadSettings } from '$lib/store/settings.svelte';
   import Shell from '$lib/ui/Shell.svelte';
+  import Glyph from '$lib/art/Glyph.svelte';
   import Home from './routes/Home.svelte';
   import Subjects from './routes/Subjects.svelte';
   import Subject from './routes/Subject.svelte';
@@ -54,7 +55,7 @@
 
 {#if inSession}
   {#if !storage.available}
-    <p class="banner" role="alert">⚠ Trình duyệt đang chặn lưu trữ (chế độ riêng tư?). Bạn vẫn học được nhưng tiến độ sẽ mất khi đóng tab.</p>
+    <p class="banner" role="alert"><Glyph name="warn" size={16} /> Trình duyệt đang chặn lưu trữ (chế độ riêng tư?). Bạn vẫn học được nhưng tiến độ sẽ mất khi đóng tab.</p>
   {/if}
   <main class="layout" class:with-aside={route.name === 'lesson' || route.name === 'review'} id="main" tabindex="-1">
     {@render view()}

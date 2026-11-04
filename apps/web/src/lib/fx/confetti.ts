@@ -1,10 +1,14 @@
 import confetti from 'canvas-confetti';
 import { settings } from '$lib/store/settings.svelte';
+import { MediaQuery } from 'svelte/reactivity';
+
+// MediaQuery phản ứng (đổi cài đặt hệ điều hành khi trang đang mở thì giao diện cập nhật theo); môi trường không có matchMedia (test) → null.
+const reduceQuery = typeof window !== 'undefined' && typeof window.matchMedia === 'function' ? new MediaQuery('(prefers-reduced-motion: reduce)') : null;
 
 export function reducedMotion(): boolean {
   if (settings.reducedMotion === 'on') return true;
   if (settings.reducedMotion === 'off') return false;
-  return typeof matchMedia !== 'undefined' && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  return reduceQuery?.current ?? false;
 }
 
 function colors(): string[] {

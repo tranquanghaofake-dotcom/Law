@@ -3,6 +3,7 @@
 </script>
 
 <script lang="ts">
+  import Glyph from '$lib/art/Glyph.svelte';
   // Hộp thoại chi tiết dùng chung ở Hồ sơ (cây chức vụ, tủ sách): <dialog> modal gốc của trình duyệt — focus bị giữ trong hộp,
   // Esc đóng, chạm nền tối đóng, đóng xong focus về nút đã mở. Điện thoại: ngăn kéo trượt lên từ đáy; ≥ 768: hộp giữa màn hình.
   import type { Snippet } from 'svelte';
@@ -32,7 +33,7 @@
           {#if kicker}<p class="kicker">{kicker}</p>{/if}
           <h2 {id}>{title}</h2>
         </div>
-        <button type="button" class="sheet-x" onclick={() => (open = false)}><span aria-hidden="true">×</span> Đóng</button>
+        <button type="button" class="sheet-x" onclick={() => (open = false)}><Glyph name="close" size={16} /> Đóng</button>
       </header>
       <div class="sheet-body">{@render children()}</div>
     </div>

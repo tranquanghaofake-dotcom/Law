@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { ItemCloze } from '$lib/content/types';
   import { buildBank, gradeCloze, parseCloze } from '$lib/engine/grading';
-  import { isTypingTarget, type CardProps } from './types';
+  import { isInteractiveTarget, isTypingTarget, type CardProps } from './types';
   let { concept, item, meta, rng, onanswer, mode = 'type' }: CardProps<ItemCloze> & { mode?: 'bank' | 'type' } = $props();
   // Thẻ được remount theo từng bước (key), nên cố ý lấy giá trị ban đầu của item/rng.
   // svelte-ignore state_referenced_locally
@@ -28,7 +28,10 @@
     onanswer({ correct: result.correct, elapsedMs: Date.now() - start, chosen: answers.join(' | ') });
   }
   function onkey(e: KeyboardEvent) {
-    if (e.key === 'Enter' && (mode === 'type' ? true : !isTypingTarget(e))) { e.preventDefault(); check(); }
+    if (e.key !== 'Enter') return;
+    // Ở chế độ gõ, Enter trong ô nhập là nộp; Enter trên nút/link khác thì để phần tử đó tự xử lý.
+    if (mode === 'type' ? !isTypingTarget(e) && isInteractiveTarget(e) : isInteractiveTarget(e)) return;
+    e.preventDefault(); check();
   }
 </script>
 

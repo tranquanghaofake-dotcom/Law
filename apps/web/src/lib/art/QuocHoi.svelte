@@ -107,9 +107,9 @@
 
 
 <style>
-  .cloud-drift { animation: qa-drift 38s ease-in-out infinite alternate; }
-  .lamp { animation: qa-lamp 4.2s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
-  .ripple { animation: qa-rip 7s ease-in-out infinite alternate; }
+  .cloud-drift { animation: qa-drift 38s ease-in-out 2 alternate; }
+  .lamp { animation: qa-lamp 4.2s ease-in-out 2; transform-box: fill-box; transform-origin: center; }
+  .ripple { animation: qa-rip 7s ease-in-out 2 alternate; }
   @keyframes qa-drift { to { transform: translateX(22px); } }
   @keyframes qa-lamp { 50% { opacity: .55; } }
   @keyframes qa-rip { to { transform: translateX(6px); } }

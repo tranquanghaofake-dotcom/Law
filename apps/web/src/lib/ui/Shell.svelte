@@ -45,9 +45,9 @@
 
   <main class="content" id="main" tabindex="-1">
     {#if !storage.available}
-      <p class="banner" role="alert">⚠ Trình duyệt đang chặn lưu trữ (chế độ riêng tư?). Bạn vẫn học được nhưng tiến độ sẽ mất khi đóng tab.</p>
+      <p class="banner" role="alert"><Glyph name="warn" size={16} /> Trình duyệt đang chặn lưu trữ (chế độ riêng tư?). Bạn vẫn học được nhưng tiến độ sẽ mất khi đóng tab.</p>
     {/if}
-    {#if hasParent}<button type="button" class="back-btn" aria-label="Quay lại" onclick={() => goBack(route)}><span aria-hidden="true">←</span> Quay lại</button>{/if}
+    {#if hasParent}<button type="button" class="back-btn" aria-label="Quay lại" onclick={() => goBack(route)}><Glyph name="back" size={16} /> Quay lại</button>{/if}
     {@render children()}
   </main>
 

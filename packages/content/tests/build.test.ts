@@ -54,3 +54,16 @@ describe('buildContent', () => {
     expect(errors.join('\n')).toMatch(/b\.json.*chapter 'c1'.*'c2'/);
   });
 });
+
+describe('buildContent — gói khái niệm theo môn (đợt 4 audit, HT12)', () => {
+  it('dist/bundles/<môn>.json chứa đủ khái niệm hợp lệ của môn trong một file', () => {
+    const root = fixture(true);
+    const out = mkdtempSync(join(tmpdir(), 'll-dist-'));
+    buildContent(root, out);
+    const file = join(out, 'bundles', 'hp.json');
+    expect(existsSync(file)).toBe(true);
+    const bundle = JSON.parse(readFileSync(file, 'utf8')) as Array<{ id: string }>;
+    // c.json sai schema (items rỗng) → không có trong gói
+    expect(bundle.map((c) => c.id).sort()).toEqual(['a', 'b']);
+  });
+});

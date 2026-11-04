@@ -1,9 +1,10 @@
 <script lang="ts">
+  import Glyph from '$lib/art/Glyph.svelte';
   import SubjectArt from '$lib/art/SubjectArt.svelte';
   import { PAGE_ART } from '$lib/art/registry';
   // Danh mục khái niệm của một môn: đọc nhanh định nghĩa, căn cứ, khái niệm dễ nhầm; tìm không dấu; ★ đánh dấu.
   import type { Concept, Level, Subject } from '$lib/content/types';
-  import { loadConcepts, loadSubject } from '$lib/content/loader';
+  import { loadConceptPool, loadSubject, loadSubjectConcepts } from '$lib/content/loader';
   import { repo } from '$lib/store/progress-repo';
   import { stars } from '$lib/store/stars.svelte';
   import { hashFor, route } from '$lib/router.svelte';
@@ -12,6 +13,7 @@
   import CompareTable from '$lib/ui/CompareTable.svelte';
   import { compareConcepts } from '$lib/engine/compare';
   import { tick } from 'svelte';
+  import LegalNote from '$lib/ui/LegalNote.svelte';
 
   type Group = { lessonId: string; title: string; concepts: Concept[] };
   let subject = $state<Subject | null>(null);
@@ -40,9 +42,12 @@
     try {
       const s = await loadSubject(route.params.subject);
       const ids = s.chapters.flatMap((c) => c.lessons.flatMap((l) => l.concepts));
-      const loaded = await Promise.allSettled(ids.map((id) => loadConcepts(s.id, [id])));
+      // Một file cho cả môn; khái niệm lỗi schema đã bị loại khi build nên không có trong gói.
+      // Gói lỗi (mạng, offline chưa có gói trong cache): quay về tải lẻ, thiếu file nào chỉ mất mục đó.
+      const all = await loadSubjectConcepts(s.id).catch(() => loadConceptPool(s.id, ids));
       const m: Record<string, Concept> = {};
-      for (const r of loaded) if (r.status === 'fulfilled') for (const c of r.value) m[c.id] = c;
+      const wanted = new Set(ids);
+      for (const c of all) if (wanted.has(c.id)) m[c.id] = c; // giữ như cũ: chỉ khái niệm có trong đợt học
       byId = m;
       levels = await repo.levels(ids);
       await stars.load();
@@ -52,11 +57,14 @@
       if (target) {
         open = [target];
         await tick();
-        document.getElementById(`c-${target}`)?.scrollIntoView({ block: 'start' });
+        const el = document.getElementById(`c-${target}`);
+        el?.scrollIntoView({ block: 'start' });
+        // Deep-link: focus nút của mục đang mở để Tab đi tiếp từ đây, không nhảy về đầu trang.
+        el?.querySelector<HTMLElement>('.entry-toggle')?.focus({ preventScroll: true });
       }
     } catch (e) { error = (e as Error).message; }
   }
-  $effect(() => { void route.params.subject; void route.params.concept; load(); });
+  $effect(() => { void route.params.concept; if (route.name === 'concepts' && route.params.subject) load(); });
 
   function toggle(id: string) { open = open.includes(id) ? open.filter((x) => x !== id) : [...open, id]; }
   const termOf = (id: string) => byId[id]?.term ?? id;
@@ -72,6 +80,7 @@
     <SubjectArt name={PAGE_ART.concepts} class="head-art" />
     <h1>Khái niệm · {subject.short}</h1>
     <p class="muted">{total} khái niệm. Bấm vào tên để xem định nghĩa nguyên văn, căn cứ và khái niệm dễ nhầm.</p>
+    <LegalNote compact />
   </header>
 
   <div class="concept-tools">
@@ -79,11 +88,11 @@
       <span class="sr-only">Tìm khái niệm</span>
       <input type="search" placeholder="Tìm khái niệm (gõ không dấu cũng được)" bind:value={query} autocomplete="off" />
     </label>
-    <button type="button" class="filter" aria-pressed={onlyStarred} onclick={() => (onlyStarred = !onlyStarred)}>★ Đã đánh dấu ({starredCount})</button>
+    <button type="button" class="filter" aria-pressed={onlyStarred} onclick={() => (onlyStarred = !onlyStarred)}><Glyph name="star-fill" size={16} /> Đã đánh dấu ({starredCount})</button>
   </div>
 
   {#if !shown}
-    <section class="card"><p class="muted">{onlyStarred && !starredCount ? 'Chưa đánh dấu khái niệm nào. Bấm ☆ cạnh tên để đánh dấu.' : 'Không có khái niệm khớp.'}</p></section>
+    <section class="card"><p class="muted">{onlyStarred && !starredCount ? 'Chưa đánh dấu khái niệm nào. Bấm dấu sao cạnh tên để đánh dấu.' : 'Không có khái niệm khớp.'}</p></section>
   {/if}
 
   {#each groups as g (g.lessonId)}
@@ -98,9 +107,9 @@
               <span class="cell lv{lv}" title="Bậc {lv} · {LEVEL_NAMES[lv]}" aria-hidden="true"></span>
               <span class="entry-term">{c.term}</span>
               <span class="sr-only">, bậc {lv} {LEVEL_NAMES[lv]}</span>
-              <span class="chev" aria-hidden="true">{isOpen ? '▾' : '▸'}</span>
+              <span class="chev" aria-hidden="true"><Glyph name={isOpen ? 'chevron-down' : 'chevron-right'} size={16} /></span>
             </button>
-            <button type="button" class="star" aria-pressed={stars.has(c.id)} aria-label="Đánh dấu {c.term}" title={stars.has(c.id) ? 'Bỏ đánh dấu' : 'Đánh dấu'} onclick={() => stars.toggle(c.id)}>{stars.has(c.id) ? '★' : '☆'}</button>
+            <button type="button" class="star" aria-pressed={stars.has(c.id)} aria-label="Đánh dấu {c.term}" title={stars.has(c.id) ? 'Bỏ đánh dấu' : 'Đánh dấu'} onclick={() => stars.toggle(c.id)}><Glyph name={stars.has(c.id) ? 'star-fill' : 'star'} size={20} /></button>
           </div>
           {#if isOpen}
             <div class="entry-body" id="body-{c.id}">

@@ -119,8 +119,8 @@
   <div class="idc-top">
     <span class="idc-seal" aria-hidden="true">§</span>
     <div class="idc-who">
-      <h1 id="idc-h1" class="idc-eyebrow">Hồ sơ</h1>
-      <p class="idc-title">{t.title}</p>
+      <p class="idc-eyebrow" aria-hidden="true">Hồ sơ</p>
+      <h1 id="idc-h1" class="idc-title"><span class="sr-only">{'Hồ sơ: '}</span>{t.title}</h1>
       <p class="idc-sub">{t.tier ? TIER_NAMES[t.tier] : 'Khởi đầu'} · {BRANCH_NAMES[career.branch]}</p>
     </div>
   </div>
