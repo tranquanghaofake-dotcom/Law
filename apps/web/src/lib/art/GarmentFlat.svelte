@@ -25,7 +25,7 @@
     // áo dài nam gấm xanh lam (cài nút chéo, quần lụa trắng), khăn đóng đội đầu
     'ao-dai-nam': { body: '#26467f', sleeve: '#203c6e', shirt: '#fbfbf8', tie: null },
     // áo tứ thân nâu non, yếm đào (shirt), váy lĩnh (tie), nón quai thao
-    'tu-than': { body: '#7a5a3a', sleeve: '#6a4c30', shirt: '#e9a0a2', tie: '#2f2622' },
+    'tu-than': { body: '#7a5a3a', sleeve: '#6a4c30', shirt: '#e9a0a2', tie: '#1c1a1c' },
     // áo bà ba chàm, khăn rằn quàng cổ
     'ba-ba': { body: '#2d3a4d', sleeve: '#27334a', shirt: '#2d3a4d', tie: null },
     // áo nhật bình: thân đỏ thắm, ô vuông gấm vàng ở cổ ngực và gấu (tie), quần lụa trắng
@@ -43,7 +43,7 @@
   const TEX = $derived(o === 'thuong-phuc' ? 'knit' : o === 'cong-so' || o === 'ks-xuan-he' || o === 'ba-ba' ? 'oxford' : o === 'ao-dai' ? 'silk' : o === 'ao-dai-nam' || o === 'nhat-binh' ? 'brocade' : 'twill');
   const F = `url(#${uid}-cloth)`;
   // cột ma-nơ-canh chỉ lộ dưới gấu áo (không lộ qua khe giữa hai vạt vest)
-  const HEM: Record<string, number> = { 'thuong-phuc': 314, 'cong-so': 308, 'vest-xanh': 326, 'vest-den': 326, 'ks-thu-dong': 326, 'ao-choang': 364, 'ks-xuan-he': 292, 'ao-dai': 380, 'ao-dai-nam': 380, 'tu-than': 392, 'ba-ba': 304, 'nhat-binh': 380 };
+  const HEM: Record<string, number> = { 'thuong-phuc': 314, 'cong-so': 308, 'vest-xanh': 326, 'vest-den': 326, 'ks-thu-dong': 326, 'ao-choang': 364, 'ks-xuan-he': 292, 'ao-dai': 380, 'ao-dai-nam': 380, 'tu-than': 392, 'ba-ba': 284, 'nhat-binh': 380 };
   const hem = $derived(HEM[o]);
   const pc = $derived(dark ? 'rgba(255,255,255,.2)' : 'rgba(0,0,0,.16)');
   const showPat = $derived(pattern !== 'tron' && !robe && o !== 'tu-than' && o !== 'ba-ba');
@@ -104,14 +104,12 @@
     <path d="M150 60L100 72L96 128L150 140Z" fill={fb(p.tie ?? '#d9b45a', tex, pat)} />
     <rect x="137" y="44" width="13" height="19" rx="2" fill={fb(p.body, tex, pat)} />
   {:else if o === 'tu-than'}
-    <path d="M98 296H150V392H90Z" fill={fb(p.tie ?? '#2f2622', tex, pat)} />
+    <path d="M98 296H150V392H90Z" fill={fb(p.tie ?? '#1c1a1c', tex, pat)} />
     <path d="M86 73C68 82 58 112 52 170L44 262L76 266L82 190Q88 156 92 142Z" fill={fb(p.sleeve, tex, pat)} />
     <path d="M128 57L86 73Q90 110 92 142L90 300Q112 328 150 322L150 200Q142 120 128 57Z" fill={fb(p.body, tex, pat)} />
   {:else if o === 'ba-ba'}
-    {@render sleeveLong(262, tex, pat)}
-    <path d="M50 262L77 266L75 290L47 286Z" fill={fb(p.sleeve, tex, pat)} />
-    <path d="M150 74Q133 72 124 57L86 73Q90 110 92 142L97 302Q122 312 150 306Z" fill={fb(p.body, tex, pat)} />
-    <path d="M124 57Q137 66 150 67V61Q139 60 128 53Z" fill={fb(p.sleeve, tex, pat)} />
+    <path d="M86 73C68 82 58 112 52 168L44 258L78 262L82 186Q86 156 92 142Z" fill={fb(p.sleeve, tex, pat)} />
+    <path d="M150 74Q136 72 126 58L86 73Q90 110 92 142L95 246L90 276Q122 284 150 280Z" fill={fb(p.body, tex, pat)} />
   {/if}
 {/snippet}
 
@@ -230,14 +228,14 @@
     <path d="M110 330L112 390M126 326L128 392" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="1.2" />
     <path d="M94 366Q124 372 150 368" fill="none" stroke="#c8a24a" stroke-width="1.4" stroke-opacity=".7" />
   {:else if o === 'ba-ba'}
-    <!-- cổ đứng thấp, túi có nắp, xẻ tay, măng sét, nếp vải -->
-    <path d="M121 66L132 90M128 62L145 76" stroke={stitch} stroke-width=".8" stroke-dasharray="2 1.6" />
-    <path d="M50 270L76 274" stroke={stitch} stroke-width=".8" stroke-dasharray="2 1.6" />
-    <rect x="99" y="236" width="30" height="34" rx="1.5" fill={p.body} /><path d="M99 244h30" stroke={stitch} stroke-width=".8" stroke-dasharray="2 1.6" />
-    <path d="M97 236h34" stroke-width="1.2" />
-    <path d="M94 150L97 300M100 302Q124 312 146 308" fill="none" stroke={stitch} stroke-width=".8" stroke-dasharray="2.5 2" />
-    <path d="M58 176q9 5 21 3M56 192q10 6 23 2M52 238q10 4 22 4M118 180q8 6 18 4M104 286q14 6 30 2" fill="none" stroke={fold} stroke-width="1" />
-    <path d="M84 80Q70 96 64 140" fill="none" stroke={shine} stroke-width="2" />
+    <!-- cổ tròn thấp viền nẹp, thân ngắn ngang hông xẻ tà hai bên, tay rộng mềm, 2 túi đắp vuông không nắp -->
+    <path d="M126 59Q138 73 150 73M127 63Q138 77 150 77" fill="none" stroke={stitch} stroke-width=".8" stroke-dasharray="2 1.6" />
+    <path d="M44 258L78 262" stroke={stitch} stroke-width=".8" stroke-dasharray="2 1.6" />
+    <rect x="102" y="214" width="32" height="36" rx="1" fill={p.body} /><path d="M105 219h26M105 247h26" stroke={stitch} stroke-width=".7" stroke-dasharray="2 1.6" />
+    <path d="M95 246L91 276M96 246L101 276" fill="none" stroke={stitch} stroke-width=".8" />
+    <path d="M92 144L95 246" fill="none" stroke={stitch} stroke-width=".8" stroke-dasharray="2.5 2" />
+    <path d="M58 172q9 5 21 3M52 200q10 6 23 2M48 236q10 4 22 4M116 170q8 6 18 4M112 262q10 4 22 2" fill="none" stroke={fold} stroke-width="1" />
+    <path d="M84 80Q70 96 64 140" fill="none" stroke={shine} stroke-width="1.4" />
   {/if}
 {/snippet}
 
@@ -321,7 +319,7 @@
     <!-- che đường ghép gương ở giữa với áo liền thân -->
     {#if o === 'thuong-phuc'}<path d="M150 81V295" stroke={p.body} stroke-width="3.2" /><path d="M150 297.5V316.5" stroke={p.sleeve} stroke-width="2.4" />{/if}
     {#if o === 'cong-so'}<path d="M150 84V312" stroke={p.body} stroke-width="3.2" />{/if}
-    {#if robe}<path d="M150 64V384" stroke={p.body} stroke-width="3.2" />{/if}{#if o === 'tu-than'}<path d="M150 322V392" stroke={p.tie ?? '#2f2622'} stroke-width="3.2" />{/if}{#if o === 'ba-ba'}<path d="M150 70V306" stroke={p.body} stroke-width="3.2" />{/if}
+    {#if robe}<path d="M150 64V384" stroke={p.body} stroke-width="3.2" />{/if}{#if o === 'tu-than'}<path d="M150 322V392" stroke={p.tie ?? '#1c1a1c'} stroke-width="3.2" />{/if}{#if o === 'ba-ba'}<path d="M150 76V279" stroke={p.body} stroke-width="3.2" />{/if}
     <g stroke={INK} stroke-width="1.2">
       {@render details()}
       <g transform="matrix(-1 0 0 1 300 0)">{@render details()}</g>
@@ -338,6 +336,11 @@
         <path d="M144 {o === 'cong-so' ? 70 : 92}V{o === 'cong-so' ? 314 : 296}M156 {o === 'cong-so' ? 70 : 92}V{o === 'cong-so' ? 314 : 296}" fill="none" />
         <path d="M146.5 {o === 'cong-so' ? 72 : 94}V{o === 'cong-so' ? 312 : 294}" fill="none" stroke={stitch} stroke-width=".7" stroke-dasharray="2 1.6" />
         {#each o === 'cong-so' ? [68, 100, 136, 172, 208, 244, 280] : [112, 150, 188, 226, 264] as y, k (y)}<circle cx="150" cy={y} r={o === 'cong-so' && k === 0 ? 1.8 : 2.6} fill="#f4f1ea" stroke-width="1" /><path d="M148.8 {y - 0.6}h2.4" stroke-width=".6" />{/each}
+      {/if}
+      {#if o === 'ba-ba'}
+        <!-- hàng nút vải (cúc bọc) giữa ngực từ cổ xuống, nẹp cài thẳng -->
+        <path d="M148.4 78V280M151.6 78V280" fill="none" stroke={stitch} stroke-width=".7" />
+        {#each [86, 112, 138, 164, 190, 216, 242, 266] as y (y)}<circle cx="150" cy={y} r="2.6" fill={p.sleeve} stroke-width="1" /><path d="M147.6 {y}h4.8M150 {y - 2.4}v4.8" stroke={stitch} stroke-width=".6" />{/each}
       {/if}
       {#if o === 'ks-xuan-he'}<rect x="170" y="110" width="28" height="7" rx="1.5" fill="#24314f" stroke-width="1" /><path d="M173 113.5h22" stroke="#8fa6c8" stroke-width=".8" />{/if}
       {#if o === 'cong-so'}
@@ -369,11 +372,14 @@
     </g>
   </g>
   {#if o === 'tu-than'}
-    <!-- nút thắt hai vạt trước bụng: hai vòng + hai tà buông -->
+    <!-- hai vạt trước buộc lỏng + thắt lưng bao lụa quanh eo, nút lệch phải, hai tà buông -->
     <g stroke={INK} stroke-width="1.2">
-      <path d="M150 204Q126 188 118 206Q126 224 150 208Z" fill={p.sleeve} /><path d="M150 204Q174 188 182 206Q174 224 150 208Z" fill={p.sleeve} />
-      <path d="M150 208L136 262Q142 270 150 262Z" fill={p.body} /><path d="M150 208L164 262Q158 270 150 262Z" fill={p.body} />
-      <circle cx="150" cy="206" r="4.2" fill={p.sleeve} />
+      <path d="M150 190Q132 178 124 192Q132 206 150 194Z" fill={p.sleeve} /><path d="M150 190Q168 178 176 192Q168 206 150 194Z" fill={p.sleeve} />
+      <path d="M150 194L141 226Q146 230 151 226Z" fill={p.body} /><path d="M150 194L159 226Q154 230 149 226Z" fill={p.body} />
+      <path d="M88 232Q150 250 212 232V248Q150 266 88 248Z" fill="#3f8a86" />
+      <path d="M96 236Q150 252 204 236" fill="none" stroke="rgba(255,255,255,.3)" stroke-width="1" />
+      <path d="M164 246Q176 238 184 246Q176 256 164 250Z" fill="#3f8a86" /><circle cx="164" cy="249" r="3.6" fill="#35756f" />
+      <path d="M164 252L152 306Q158 310 164 304L170 256Z" fill="#3f8a86" /><path d="M168 252L184 300Q179 306 172 302L164 254Z" fill="#35756f" />
     </g>
   {/if}
   {#if o === 'ba-ba'}
