@@ -16,19 +16,19 @@
 
 <div class="mastery">
   {#each subject.chapters as ch (ch.id)}
-    <p class="kicker chapter" id="chapter-{ch.id}"><Emblem name={emblemFor(subject.id, ch.id)} size={42} /><span class="chapter-title">{ch.title}</span>{#if ch.advanced} <span class="advanced-tag" title="Ngoài giáo trình">Nâng cao</span>{/if}</p>
+    <h2 class="chapter" id="chapter-{ch.id}"><Emblem name={emblemFor(subject.id, ch.id)} size={42} /><span class="chapter-title">{ch.title}</span>{#if ch.advanced} <span class="advanced-tag" title="Ngoài giáo trình">Nâng cao</span>{/if}</h2>
     <ol class="lesson-rows">
       {#each ch.lessons as l (l.id)}
         {@const st = states[l.id] ?? 'locked'}
         <li class="lesson-row {st}" id="lesson-{l.id}">
           <div class="head">
-            <a href={hashFor('lesson', { subject: subject.id, lesson: l.id })} onclick={(e) => onclick(e, st)}>{l.title}</a>
-            {#if st === 'current'}<span class="next-tag">Tiếp theo cho bạn</span>{:else if st === 'done'}<span class="muted small"><Glyph name="check" size={14} /> đã qua</span>{/if}
+            <h3 class="lesson-h"><a href={hashFor('lesson', { subject: subject.id, lesson: l.id })} onclick={(e) => onclick(e, st)}>{l.title}</a></h3>
+            {#if st === 'locked'}<span class="locked-tag">Chưa mở</span>{:else if st === 'current'}<span class="next-tag">Tiếp theo cho bạn</span>{:else if st === 'done'}<span class="muted small"><Glyph name="check" size={14} /> đã qua</span>{/if}
           </div>
           <ul class="cells" aria-label="Bậc từng khái niệm của đợt {l.title}">
             {#each l.concepts as c (c)}
               {@const lv = levels[c] ?? 0}
-              <li><a class="cell-item" href={hashFor('concepts', { subject: subject.id, concept: c })} title="{terms[c] ?? c} · bậc {lv} · {LEVEL_NAMES[lv]}" aria-label="{terms[c] ?? c}: bậc {lv}, {LEVEL_NAMES[lv]}"><span class="cell lv{lv}" aria-hidden="true"></span><span class="cell-term" aria-hidden="true">{terms[c] ?? c}</span></a></li>
+              <li><a class="cell-item" href={hashFor('concepts', { subject: subject.id, concept: c })} title="{terms[c] ?? c} · bậc {lv} · {LEVEL_NAMES[lv]}" aria-label="{terms[c] ?? c}: bậc {lv}, {LEVEL_NAMES[lv]}"><span class="cell cell-n lv{lv}" aria-hidden="true">{lv}</span><span class="cell-term" aria-hidden="true">{terms[c] ?? c}</span></a></li>
             {/each}
           </ul>
         </li>
