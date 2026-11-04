@@ -30,10 +30,15 @@ Rút kinh nghiệm: không task nào phải làm lại. Reviewer bắt được 
 ## Đợt bổ sung — 3 việc ngoài phạm vi (Hào: "làm 3 việc trên")
 | # | Task | File | Kiểm tra | Trạng thái |
 |---|---|---|---|---|
-| 5 | Tự chấm "Gần đúng" giữ nguyên bậc (không +1), runner và repo cùng luật | engine/{progress,runner}.ts, store/progress-repo.ts | tests/engine/progress, runner, store | chờ |
-| 6 | Luyện đề: môn của câu gắn `concept` lấy từ `group` chỉ khi group là mã môn có thật; không thì không ghi | ui/quiz.ts, routes/Quiz10.svelte | tests/ui/quiz | chờ |
-| 7 | Test SessionView truyền `rating` (cách trả lời, độ dài đề, gần đúng) vào repo.record | tests/ui/SessionViewRating.test.ts | vitest | chờ |
+| 5 | Tự chấm "Gần đúng" giữ nguyên bậc (không +1), runner và repo cùng luật | engine/{progress,runner}.ts, store/progress-repo.ts | tests/engine/progress, runner, store | xong |
+| 6 | Luyện đề: môn của câu gắn `concept` lấy từ `group` chỉ khi group là mã môn có thật; không thì không ghi | ui/quiz.ts, routes/Quiz10.svelte | tests/ui/quiz | xong |
+| 7 | Test SessionView truyền `rating` (cách trả lời, độ dài đề, gần đúng) vào repo.record | tests/ui/SessionViewRating.test.ts | vitest | xong |
 
 Task 5: bắt đầu — base 194ed29
 Task 5: xong — 12e6ef8
 Task 6: bắt đầu — base 12e6ef8
+Task 6: xong — 9d00153
+Task 7: bắt đầu — base 9d00153
+Task 7: xong — ff4ed09
+Kiểm tra cuối đợt bổ sung: `npm run ci` xanh (content 146, web 618). Không review riêng (3 task nhỏ, có test đỏ→xanh).
+Rút kinh nghiệm (đợt bổ sung): viết test giá trị enum của thư viện bằng hằng số (`Rating.Hard`), không bằng số nhớ trong đầu; chép đầu file test mẫu phải bỏ dòng import trùng.
