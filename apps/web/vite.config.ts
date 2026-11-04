@@ -9,6 +9,14 @@ const base = process.env.BASE_PATH ?? '/';
 
 export default defineConfig({
   base,
+  build: {
+    rollupOptions: {
+      output: {
+        // Kỳ quan nền phiên học vào thư mục riêng để PWA bỏ khỏi precache (xem workbox.globIgnores).
+        chunkFileNames: (c) => (c.facadeModuleId?.includes('/lib/fx/wonders/') ? 'assets/wonders/[name]-[hash].js' : 'assets/[name]-[hash].js'),
+      },
+    },
+  },
   plugins: [
     svelte(),
     contentDir({ src: fileURLToPath(new URL('../../packages/content/dist', import.meta.url)) }),
@@ -39,10 +47,15 @@ export default defineConfig({
           'content/subjects/*.json',
           'content/terms/*.json',
         ],
+        // 50 kỳ quan nền phiên học (~450 kB): không precache, mỗi phiên chỉ dùng 1 — runtime cache bên dưới.
+        globIgnores: ['**/assets/wonders/**'],
         runtimeCaching: [
           // Khái niệm (3,6 MB) và bộ đề: đặt TRƯỚC luật chung bên dưới (workbox khớp theo thứ tự).
           // Giọng đọc dựng sẵn (tools/tts): không precache (~100 MB), nghe tới đâu lưu tới đó.
-          { urlPattern: /\/tts\/.*\.(mp3|json)$/, handler: 'CacheFirst', options: { cacheName: 'tts', expiration: { maxEntries: 600 } } },
+          { urlPattern: /\/assets\/wonders\/.*\.js$/, handler: 'CacheFirst', options: { cacheName: 'wonders', expiration: { maxEntries: 60 } } },
+          { urlPattern: /\/tts\/.*\.mp3$/, handler: 'CacheFirst', options: { cacheName: 'tts', expiration: { maxEntries: 600 } } },
+          // Danh sách câu đã có mp3 đổi mỗi tuần: luôn hỏi mạng trước.
+          { urlPattern: /\/tts\/manifest\.json$/, handler: 'NetworkFirst', options: { cacheName: 'tts-manifest' } },
           { urlPattern: /\/content\/(concepts|sets)\/.*\.json$/, handler: 'StaleWhileRevalidate', options: { cacheName: 'content-detail', expiration: { maxEntries: 300 } } },
           { urlPattern: /\/content\/.*\.json$/, handler: 'StaleWhileRevalidate', options: { cacheName: 'content' } },
           { urlPattern: /^https:\/\/fonts\.(googleapis|gstatic)\.com\//, handler: 'CacheFirst', options: { cacheName: 'fonts', expiration: { maxEntries: 20, maxAgeSeconds: 60 * 60 * 24 * 365 } } },

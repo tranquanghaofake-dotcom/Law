@@ -45,7 +45,7 @@ jobs:
           path: .tts-cache
           key: tts-none
           restore-keys: tts-
-      - run: if [ -f .tts-cache/manifest.json ]; then mkdir -p apps/web/dist/tts && cp .tts-cache/*.mp3 .tts-cache/manifest.json apps/web/dist/tts/; fi
+      - run: if ls .tts-cache/*.mp3 >/dev/null 2>&1 && [ -f .tts-cache/manifest.json ]; then mkdir -p apps/web/dist/tts && cp .tts-cache/*.mp3 .tts-cache/manifest.json apps/web/dist/tts/; fi
       - uses: actions/upload-pages-artifact@v5
         with: { path: apps/web/dist }
 

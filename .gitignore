@@ -30,3 +30,4 @@ Thumbs.db
 tools/shots/
 .superpowers/
 .tts-cache/
+__pycache__/
