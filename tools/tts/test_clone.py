@@ -82,6 +82,16 @@ class ChiaViec(unittest.TestCase):
         loads = [sum(map(len, p)) for p in parts]
         self.assertLessEqual(max(loads) - min(loads), 12)
 
+    def test_mau_thu_chia_deu_loai_cau(self):
+        texts = ['Chính xác.', 'Khoản 2, 3 Điều 5.', 'Theo Điều 19 Bộ luật Dân sự.', 'Nghị quyết 51/2001/QH10.', 'BHXH bắt buộc.',
+                 'Thị phần ≥ 30%.', 'Ngày 25/12/2001 là ngày thông qua.', 'Hiến pháp là gì?', 'Đáp án: Quốc hội.'] + [f'Câu thường số {i} về pháp luật.' for i in range(20)]
+        got = clone.sample(texts, 10)
+        self.assertEqual(len(got), 10)
+        self.assertEqual(len(set(got)), 10)
+        for must in ['Chính xác.', 'Khoản 2, 3 Điều 5.', 'Thị phần ≥ 30%.', 'Hiến pháp là gì?']:
+            self.assertIn(must, got)
+        self.assertEqual(clone.sample(texts, 10), got)  # cố định theo seed: lần chạy nào cũng cùng mẫu
+
     def test_it_cau_hon_so_may(self):
         self.assertEqual(len(clone.plan(['A.', 'B.'], set(), 20)), 2)
         self.assertEqual(clone.plan([], set(), 20), [])

@@ -126,6 +126,40 @@ def plan(texts: list[str], done: set[str], shards: int) -> list[list[str]]:
     return [p for p in parts if p]
 
 
+SAMPLE_KINDS = [  # (tên, điều kiện) — mỗi loại một cái bẫy đọc khác nhau
+    ('ngắn', lambda t: is_short(t)),
+    ('điều-khoản', lambda t: re.search(r'\b(?:[Đđ]iều|[Kk]hoản|[Đđ]iểm)\s+\d', t)),
+    ('dãy-số', lambda t: re.search(r'\b(?:[Đđ]iều|[Kk]hoản|[Đđ]iểm)\s+\w+\s*,\s*\w+', t)),
+    ('số-hiệu', lambda t: re.search(r'\d+/\d{4}/|VBHN|\d+/[A-ZĐ]', t)),
+    ('viết-tắt', lambda t: re.search(r'\b[A-ZĐ]{2,}\b', t)),
+    ('ký-hiệu', lambda t: re.search(r'[=≥≤·+×%↔]|\d\s*[–-]\s*\d', t)),
+    ('ngày-năm', lambda t: re.search(r'\d{1,2}/\d{1,2}/\d{4}|năm \d{4}', t)),
+    ('câu-hỏi', lambda t: t.rstrip().endswith('?')),
+    ('đáp-án', lambda t: t.startswith('Đáp án')),
+    ('định-nghĩa-dài', lambda t: len(t) > 220),
+    ('thường', lambda t: True),
+]
+
+
+def sample(texts: list[str], n: int, seed: int = 7) -> list[str]:
+    """Mẫu thử có chủ đích: chia đều cho các loại câu khó (vòng tròn), mỗi câu chỉ chọn một lần."""
+    import random
+    rnd = random.Random(seed)
+    pools = []
+    for _, cond in SAMPLE_KINDS:
+        pool = [t for t in texts if cond(t)]
+        rnd.shuffle(pool)
+        pools.append(pool)
+    out, seen = [], set()
+    while len(out) < n and any(pools):
+        for pool in pools:
+            while pool and pool[-1] in seen:
+                pool.pop()
+            if pool and len(out) < n:
+                seen.add(pool[-1]); out.append(pool.pop())
+    return out
+
+
 def eq_gains(hz: list[float], db: list[float], freqs):
     """Nội suy đường cong EQ (theo log tần số) tại các tần số cho trước; ngoài dải thì giữ mức biên."""
     import numpy as np
@@ -244,6 +278,8 @@ class Engine:
 
     def make(self, text: str) -> tuple[object, dict]:
         spoken = normalize(text)
+        if not re.search(r'\w', spoken):  # mảnh câu không có gì để đọc ("VD11.", "(…)."): im lặng ngắn để cả lời vẫn dùng giọng clone
+            return self.np.zeros(int(0.05 * OUT_SR), dtype=self.np.float32), {'text': text, 'spoken': spoken, 'tries': 0, 'ok': True, 'silent': True}
         short = is_short(text)
         cands = []
         for k in range(BEST_OF if short else TRIES):
@@ -294,6 +330,8 @@ def cmd_plan(a):
     texts = load_texts(a.texts)
     if a.limit:
         texts = texts[: a.limit]
+    if a.sample:
+        texts = sample(texts, a.sample)
     m = read_manifest(a.cache)
     same = m.get('style') == STYLE and m.get('voice') == VOICE
     done = {k for k in m.get('keys', []) if os.path.exists(os.path.join(a.cache, k + '.mp3'))} if same else set()
@@ -402,6 +440,7 @@ def main():
     p = sub.add_parser('plan')
     p.add_argument('--texts'); p.add_argument('--cache', required=True); p.add_argument('--shards', type=int, default=20)
     p.add_argument('--out', required=True); p.add_argument('--limit', type=int, default=0); p.add_argument('--github-output')
+    p.add_argument('--sample', type=int, default=0, help='chạy thử N câu chọn đều theo loại câu khó (số điều khoản, viết tắt, ký hiệu…)')
     r = sub.add_parser('run')
     r.add_argument('--todo'); r.add_argument('--text'); r.add_argument('--onnx-dir', required=True); r.add_argument('--out', required=True)
     r.add_argument('--threads', type=int, default=4); r.add_argument('--limit', type=int, default=0)

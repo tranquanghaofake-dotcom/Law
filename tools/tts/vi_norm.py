@@ -25,10 +25,34 @@ ABBR = {
     'KHXH': 'khoa học xã hội', 'NXB': 'nhà xuất bản', 'HLU': 'đại học luật hà nội', 'CTTP': 'cấu thành tội phạm',
     'BCC': 'bê xê xê', 'IPO': 'i pi âu', 'ETF': 'i ti ép', 'NAV': 'en ây vi', 'ILO': 'i eo âu', 'WTO': 'vê kép tê âu',
     'CISG': 'xi ai ét gi', 'GATT': 'gát', 'ĐH': 'đại học', 'QH': 'quốc hội', 'CP': 'chính phủ', 'VN': 'việt nam',
+    # bổ sung sau khi quét toàn bộ câu app đọc
+    'CHXHCN': 'cộng hòa xã hội chủ nghĩa', 'XHCN': 'xã hội chủ nghĩa', 'BHVBQPPL': 'ban hành văn bản quy phạm pháp luật',
+    'LLVTND': 'lực lượng vũ trang nhân dân', 'ĐHĐCĐ': 'đại hội đồng cổ đông', 'HĐQT': 'hội đồng quản trị',
+    'HĐTV': 'hội đồng thành viên', 'HĐTP': 'hội đồng thẩm phán', 'ĐBSCL': 'đồng bằng sông cửu long', 'QLHC': 'quản lý hành chính',
+    'TTHC': 'thủ tục hành chính', 'UBHC': 'ủy ban hành chính', 'VPCP': 'văn phòng chính phủ', 'VPQH': 'văn phòng quốc hội',
+    'LTM': 'luật thương mại', 'TCN': 'trước công nguyên', 'ThS': 'thạc sĩ', 'PGS': 'phó giáo sư', 'TS': 'tiến sĩ', 'GS': 'giáo sư',
+    'NĐ': 'nghị định', 'NQ': 'nghị quyết', 'SL': 'sắc lệnh', 'PL': 'pháp lệnh', 'LQ': 'luật', 'ĐB': 'đại biểu', 'DN': 'doanh nghiệp',
+    'NT': 'nguyên tắc', 'HC': 'hành chính', 'HOSE': 'hô xê', 'HNX': 'hát en ích', 'VSDC': 'vê ét đê xê', 'VNM': 'vê en em',
+    'CPTPP': 'xê pê tê pê pê', 'EVFTA': 'e vê ép tê a', 'TRIPS': 'tríp', 'UPOV': 'u pốp', 'FATF': 'ép a tê ép', 'RIA': 'ri a',
+    'EPS': 'e pê ét', 'BTU': 'bê tê u', 'HCFC': 'hát xê ép xê', 'NHNN': 'ngân hàng nhà nước', 'QPPL': 'quy phạm pháp luật',
+    'XNK': 'xuất nhập khẩu', 'TTTM': 'trọng tài thương mại', 'DNNN': 'doanh nghiệp nhà nước', 'VBPL': 'văn bản pháp luật',
+    'TP': 'thành phố', 'VD': 'ví dụ',
 }
-ROMAN = {'I': 1, 'II': 2, 'III': 3, 'IV': 4, 'V': 5, 'VI': 6, 'VII': 7, 'VIII': 8, 'IX': 9, 'X': 10, 'XI': 11, 'XII': 12,
-         'XIII': 13, 'XIV': 14, 'XV': 15, 'XVI': 16, 'XVII': 17, 'XVIII': 18, 'XIX': 19, 'XX': 20}
+# mã học phần / mã bài nội bộ trong ghi chú nguồn: không đọc
+CODES = re.compile(r'\s*\(?\b(?:SHTTTT|HCPC|LHC\.VĐ\d*|VĐ\d+|VD\d+(?:\s*,\s*VD\d+)*)\b\)?')
+SYMBOLS = {'≥': ' lớn hơn hoặc bằng ', '≤': ' nhỏ hơn hoặc bằng ', '≈': ' xấp xỉ ', '×': ' nhân ', '↔': ' tương ứng với ',
+           '=': ' là ', '+': ' và ', '<': ' dưới ', '>': ' trên ', '·': ', ', '，': ', ', '；': ', ', '：': ', ', '%': ' phần trăm', '⊂': ' thuộc '}
+UNITS = {'ha': 'héc ta', 'km': 'ki lô mét', 'cm': 'xăng ti mét', 'm2': 'mét vuông', 'm²': 'mét vuông', 'kg': 'ki lô gam', 'g': 'gam', 'mL': 'mi li lít', 'ml': 'mi li lít'}
 DIGITS = ['không', 'một', 'hai', 'ba', 'bốn', 'năm', 'sáu', 'bảy', 'tám', 'chín']
+
+
+def roman(r: str) -> int:
+    """Số La Mã → số (XXVI = 26); không hợp lệ → 0."""
+    v = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100}
+    if not r or any(c not in v for c in r):
+        return 0
+    n = sum(-v[a] if v[a] < v[b] else v[a] for a, b in zip(r, r[1:])) + v[r[-1]]
+    return n if 0 < n < 400 else 0
 
 
 def _under_1000(n: int, full: bool) -> str:
@@ -117,9 +141,36 @@ def _expand_list(m: re.Match) -> str:
     return out
 
 
+def clean_source(t: str) -> str:
+    """Bỏ khỏi LỜI ĐỌC phần máy móc trong ghi chú nguồn (đường dẫn Drive, tên tệp, tên miền, mã học phần/mã bài) —
+    chữ hiển thị và tên tệp âm thanh không đổi. GIỮ trích dẫn luật và mọi cảnh báo độ tin cậy ("chưa đối chiếu nguyên văn",
+    "quan điểm học thuật", "slide không phải giáo trình") vì người học cần phân biệt luật hiện hành với tài liệu giảng dạy."""
+    t = re.sub(r'\s*\(Drive [^()]*(?:\([^()]*\)[^()]*)*(?:\)|$)', '', t)  # câu bị cắt giữa ngoặc: bỏ tới hết câu
+    t = re.sub(r'\b(?:https?://)?[\w-]+(?:\.[\w-]+)*\.(?:vn|com|org|gov|net)\b[^\s,;)]*\s*:?', '', t)
+    t = re.sub(r',?\s*\bDrive\s+HLU[^;(),]*', '', t)  # "…, Drive HLU/Kỳ II năm II/…" giữa ngoặc
+    t = CODES.sub('', t)
+    t = re.sub(r'\s*\(?[\w./-]+\.(?:txt|pdf|docx?|json|md)\)?', '', t)
+    t = re.sub(r'\("[^"]*"\s*,\s*', '(', t)
+    t = re.sub(r'\s*\("[^"]*"\)', '', t)  # mã bài trong ngoặc kép: ("VĐ 04 -HCPC")
+    t = re.sub(r'\s*\(\s*\)', '', t)
+    return t
+
+
 def normalize(text: str) -> str:
     t = unicodedata.normalize('NFC', text)
+    t = clean_source(t)
     t = _LIST.sub(_expand_list, t)
+    # trích dẫn văn bản hợp nhất: "VBHN 67/VBHN-VPQH 2025" → "văn bản hợp nhất số 67 năm 2025" (không lặp "văn bản hợp nhất")
+    t = re.sub(r'(?:\bVBHN|[Vv]ăn bản hợp nhất)\s*(\d+)/(?:\d{4}/)?VBHN-[A-ZĐ-]+(?:\s+(\d{4}))?', lambda m: f'văn bản hợp nhất số {m.group(1)}' + (f' năm {m.group(2)}' if m.group(2) else ''), t)
+    t = re.sub(r'\bVBHN\s*(\d+)/(\d{4})\b', r'văn bản hợp nhất số \1 năm \2', t)
+    t = re.sub(r'[\u3400-\u9fff]+', ' ', t)  # chữ Hán (trích cổ văn): bỏ, phần dịch tiếng Việt vẫn đọc
+    t = re.sub(r'(?<=\d)\s*(ha|km|cm|m2|m²|kg|mL|ml|g)\b', lambda m: ' ' + UNITS[m.group(1)], t)
+    t = re.sub(r'\b0(\d)\b', r'\1', t)  # 03 ha, 02 cổ đông, 01/7 → đọc như số, không đọc từng chữ số
+    t = t.replace('[…]', ' ').replace('[...]', ' ')  # chỗ trống trong đáp án điền từ
+    t = re.sub(r'(?<![\w,.])(\d{1,2})\s*-\s+(?=\w)', r'\1, ', t)  # mục đánh số "1- Phần vốn…" → "một, phần vốn…"
+    t = re.sub(r'(?<=\d)\s*[–—-]\s*(?=\d)', ' đến ', t)  # khoảng số 24.000–90.000, 2019-2020
+    t = re.sub(r'(?<=\d)\s*cm3\b', ' phân khối', t)
+    t = re.sub(r'(?<=\w)\s*-\s+(?=\w)|\s+-\s+', ' ', t)  # "xã hội - nghề nghiệp", "kinh tế- xã hội" là một cụm
     # số hiệu văn bản: 51/2001/QH10 → số 51 năm 2001 QH 10; 102/VBHN-VPQH → số 102 VBHN-VPQH
     t = re.sub(r'(\d+)/(\d{4})/([A-ZĐ][\wĐđ-]*)', r'số \1 năm \2 \3', t)
     t = re.sub(r'(\d+)/([A-ZĐ])', r'số \1 \2', t)
@@ -127,13 +178,15 @@ def normalize(text: str) -> str:
     for k in sorted(ABBR, key=len, reverse=True):
         t = re.sub(rf'(?<![\w]){re.escape(k)}(?![\w])', ABBR[k], t)
     # số La Mã sau "chương/phần/mục/khoá"
-    t = re.sub(r'\b(Chương|chương|Phần|phần|Mục|mục|Khoá|khoá|Khóa|khóa)\s+([IVX]{1,6})\b',
-               lambda m: f'{m.group(1)} {number_words(ROMAN.get(m.group(2), 0)) if m.group(2) in ROMAN else m.group(2)}', t)
+    t = re.sub(r'\b(Chương|chương|Phần|phần|Mục|mục|Khoá|khoá|Khóa|khóa)\s+([IVXLC]{1,7})\b',
+               lambda m: f'{m.group(1)} {number_words(roman(m.group(2)))}' if roman(m.group(2)) else m.group(0), t)
     t = re.sub(r'(\d+(?:[.,]\d+)*)\s*%', r'\1 phần trăm', t)
     t = re.sub(r'(\d+)/(\d+)/(\d{4})', lambda m: f'ngày {m.group(1)} tháng {m.group(2)} năm {m.group(3)}', t)
     t = re.sub(r'(\d+)/(\d+)', r'\1 trên \2', t)
     t = re.sub(r'\d{1,3}(?:\.\d{3})+|\d+,\d+|\d+', _num, t)
     t = t.replace('&', ' và ').replace('→', ', ').replace('…', '.').replace('(…)', '')
+    for k, v in SYMBOLS.items():
+        t = t.replace(k, v)
     t = re.sub(r'\s*[(\[]\s*', ', ', t)
     t = re.sub(r'\s*[)\]]\s*(?=[.,!?]|$)', '', t)
     t = re.sub(r'\s*[)\]]\s*', ', ', t)
@@ -149,4 +202,6 @@ def normalize(text: str) -> str:
     t = re.sub(r'^,\s*', '', t)
     t = re.sub(r',\s*([.!?])', r'\1', t)
     t = re.sub(r'(,\s*)+', ', ', t)
+    t = re.sub(r'\.{2,}', '.', t)
+    t = re.sub(r',\s*\.', '.', t)
     return t

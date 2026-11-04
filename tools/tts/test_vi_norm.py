@@ -31,7 +31,9 @@ class ChuanHoaCau(unittest.TestCase):
 
     def test_viet_tat(self):
         self.assertEqual(normalize('BHXH bắt buộc theo NĐ-CP.'), 'bảo hiểm xã hội bắt buộc theo nghị định chính phủ.')
-        self.assertIn('văn bản hợp nhất văn phòng quốc hội', normalize('(VBHN 19/VBHN-VPQH 2026)'))
+        self.assertEqual(normalize('(VBHN 19/VBHN-VPQH 2026)'), 'văn bản hợp nhất số mười chín năm hai nghìn không trăm hai mươi sáu')
+        self.assertEqual(normalize('Luật 2015 (VBHN 54/VBHN-VPQH).'), 'luật hai nghìn không trăm mười lăm, văn bản hợp nhất số năm mươi tư.')
+        self.assertEqual(normalize('(VBHN 142/2026).'), 'văn bản hợp nhất số một trăm bốn mươi hai năm hai nghìn không trăm hai mươi sáu.')
 
     def test_phan_tram_va_dau(self):
         self.assertEqual(normalize('Mức đóng 8% tiền lương.'), 'mức đóng tám phần trăm tiền lương.')
@@ -59,6 +61,34 @@ class ChuanHoaCau(unittest.TestCase):
         self.assertEqual(normalize('Theo khoản 1, a là người thuê.'), 'theo khoản một, a là người thuê.')
         self.assertEqual(normalize('Các điểm a, b, c, d và đ khoản 1.'), 'các điểm a, b, c, d và đ khoản một.')
         self.assertEqual(normalize('Nghị quyết 51/2001/QH10.'), 'nghị quyết số năm mươi mốt năm hai nghìn không trăm lẻ một quốc hội mười.')
+
+    def test_ky_hieu_don_vi_la_ma(self):
+        self.assertEqual(normalize('Đáp án: Nhà nước · phải tham gia.'), 'đáp án, nhà nước, phải tham gia.')
+        self.assertEqual(normalize('Tự doanh = đầu tư bằng tiền của mình.'), 'tự doanh là đầu tư bằng tiền của mình.')
+        self.assertEqual(normalize('Thị phần ≥ 30%.'), 'thị phần lớn hơn hoặc bằng ba mươi phần trăm.')
+        self.assertEqual(normalize('Mức: 03 ha.'), 'mức, ba héc ta.')
+        self.assertEqual(normalize('Tội tại Chương XXVI.'), 'tội tại chương hai mươi sáu.')
+        self.assertEqual(normalize('Nước CHXHCN Việt Nam.'), 'nước cộng hòa xã hội chủ nghĩa việt nam.')
+        self.assertEqual(normalize('Sắc lệnh 63/SL (1945).'), 'sắc lệnh số sáu mươi ba sắc lệnh, một nghìn chín trăm bốn mươi lăm.')
+
+    def test_muc_danh_so_khoang_so_cho_trong(self):
+        self.assertEqual(normalize('Công ty trong đó: 1- Phần vốn góp phải đóng đủ.'), 'công ty trong đó, một, phần vốn góp phải đóng đủ.')
+        self.assertEqual(normalize('Điều hòa 24.000–90.000 BTU.'), 'điều hòa hai mươi tư nghìn đến chín mươi nghìn bê tê u.')
+        self.assertEqual(normalize('Mô tô trên 125 cm3.'), 'mô tô trên một trăm hai mươi lăm phân khối.')
+        self.assertEqual(normalize('Đáp án: 1- […] là hành vi nguy hiểm (…).'), 'đáp án, một, là hành vi nguy hiểm.')
+        self.assertEqual(normalize('Phát triển kinh tế- xã hội.'), 'phát triển kinh tế xã hội.')
+        self.assertEqual(normalize('Văn bản 51/2001/QH10 và NĐ-CP.'), 'văn bản số năm mươi mốt năm hai nghìn không trăm lẻ một quốc hội mười và nghị định chính phủ.')
+
+    def test_bo_ghi_chu_noi_bo_ve_nguon(self):
+        self.assertEqual(normalize('Nguyễn Ngọc Bích) — đã khớp nguyên văn slide (laws/hc-slide-trich.txt); slide không phải giáo trình, giáo trình chưa đối chiếu).'),
+                         'nguyễn ngọc bích, đã khớp nguyên văn slide, slide không phải giáo trình, giáo trình chưa đối chiếu.')  # giữ cảnh báo độ tin cậy
+        self.assertEqual(normalize('Đây là định nghĩa «A» (Ghi chép ôn thi Lý luận chung (Drive HLU/KÌ I/LLC: VD8) và Tài liệu hướng dẫn).'),
+                         'đây là định nghĩa a, ghi chép ôn thi lý luận chung và tài liệu hướng dẫn.')
+        self.assertEqual(normalize('(Slide bài giảng, vấn đề 1 ("LMS Vấn đề 1", ThS.'), 'slide bài giảng, vấn đề một, thạc sĩ.')
+        self.assertEqual(normalize('Trường Đại học Luật Hà Nội, vấn đề 4 ("VĐ 04 -HCPC") — đã khớp nguyên văn slide (laws/a.txt).'), 'trường đại học luật hà nội, vấn đề bốn, đã khớp nguyên văn slide.')
+        self.assertEqual(normalize('Điều thứ 1 (vbpl.vn: hết hiệu lực toàn bộ).'), 'điều thứ một, hết hiệu lực toàn bộ.')
+        self.assertEqual(normalize('(Nghị định 63/2010/NĐ-CP, khoản 1 Điều 3 — đã khớp nguyên văn Văn bản hợp nhất 10272/VBHN-VPCP ngày 27/9/2017 (tài liệu seminar, Drive HLU); chưa đối chiếu nguyên văn Văn bản hợp nhất 2/VBHN-VPCP năm 2025).'),
+                         'nghị định số sáu mươi ba năm hai nghìn không trăm mười nghị định chính phủ, khoản một điều ba, đã khớp nguyên văn văn bản hợp nhất số mười nghìn hai trăm bảy mươi hai ngày hai mươi bảy tháng chín năm hai nghìn không trăm mười bảy, tài liệu seminar, chưa đối chiếu nguyên văn văn bản hợp nhất số hai năm hai nghìn không trăm hai mươi lăm.')
 
     def test_khong_doi_cau_thuong(self):
         self.assertEqual(normalize('Chính xác.'), 'chính xác.')
