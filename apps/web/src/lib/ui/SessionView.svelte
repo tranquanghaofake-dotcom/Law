@@ -11,7 +11,8 @@
   import { applySession, type StreakEvent } from '$lib/game/streak';
   import { sfx } from '$lib/fx/sfx';
   import { burst, reducedMotion } from '$lib/fx/confetti';
-  import { buzz } from '$lib/fx/haptics';
+  import { buzz, buzzCombo } from '$lib/fx/haptics';
+  import { sparks, stampConfetti } from '$lib/fx/sparks';
   import { tts } from '$lib/fx/tts.svelte';
   import { refreshHeader } from '$lib/ui/header.svelte';
   import { refreshSidenav } from '$lib/ui/sidenav.svelte';
@@ -25,7 +26,7 @@
   import LessonStrip from '$lib/ui/LessonStrip.svelte';
   import SessionEnd from '$lib/ui/SessionEnd.svelte';
   import { isTypingTarget } from '$lib/ui/cards/types';
-  import { onDestroy, onMount } from 'svelte';
+  import { onDestroy, onMount, tick } from 'svelte';
   import { feedbackSpeech } from '$lib/ui/session/speech';
   import { barMarks } from '$lib/ui/session/marks';
   import { submitRecord } from '$lib/ui/session/record';
@@ -41,7 +42,11 @@
   import WonderBackdrop from '$lib/ui/session/WonderBackdrop.svelte';
   import { loadWonder, pickWonderId, type Wonder } from '$lib/fx/wonders';
   import { pickStrokes, strokesPerCorrect } from '$lib/fx/wonders/lighting';
-  import { edgeGlow, fireStyle, type GlowTier } from '$lib/ui/session/combo';
+  import { edgeGlow, fireStyle, glowLevel, type GlowTier } from '$lib/ui/session/combo';
+  import ComboStamp from '$lib/ui/session/ComboStamp.svelte';
+  import WonderFlash from '$lib/ui/session/WonderFlash.svelte';
+  import WonderStrip from '$lib/ui/session/WonderStrip.svelte';
+  import { litPercent, stampFor, TIMING, type Stamp } from '$lib/ui/session/reward';
 
   let { steps, concepts, levels, lessonId, onagain, onnext, title }: {
     steps: Step[]; concepts: Concept[]; levels: Record<string, Level>; lessonId?: string; onagain?: () => void; onnext?: () => void; title?: string;
@@ -58,6 +63,10 @@
   /** thông tin thưởng của câu vừa trả lời, hiện ở phản hồi */
   let reward = $state<{ xp: number; golden: boolean; levelTo: number | null; retry: boolean }>({ xp: 0, golden: false, levelTo: null, retry: false });
   let bossSeen = $state(-1);
+  /** dấu mộc "×3 CHUỖI!", overlay kỳ quan sáng rực (mốc 5·8·13) và XP đang hiện ở bộ đếm (đếm lên sau khi chữ +XP bay tới) */
+  let stamp = $state<Stamp | null>(null);
+  let flash = $state(false);
+  let shownXp = $state(0);
   let floats = $state<XpFloat[]>([]);
   let floatId = 0;
   let sources = $state<ReturnType<typeof xpSources>>([]);
@@ -111,8 +120,14 @@
   }
 
   sfx.preload();
-  onDestroy(() => { tts.stop(); sfx.stopCombo(); floatTimers.forEach(clearTimeout); });
+  onDestroy(() => { tts.stop(); sfx.stopCombo(); floatTimers.forEach(clearTimeout); floatTimers.clear(); });
+  /** hẹn giờ có dọn khi huỷ component */
+  function later(fn: () => void, ms: number) {
+    const t = setTimeout(() => { floatTimers.delete(t); fn(); }, ms);
+    floatTimers.add(t);
+  }
 
+  const wonderCard = $derived(ended && wonder && lit.length ? { wonder, lit, percent: litPercent(lit.length, wonder.paths.length) } : null);
   // chữ "+10" bay lên ở chỗ vừa bấm; bàn phím thì bay từ giữa thẻ câu hỏi
   const floatTimers = new Set<ReturnType<typeof setTimeout>>();
   function spawnFloat(text: string, gold: boolean) {
@@ -121,13 +136,17 @@
     if (lastPoint && Date.now() - lastPoint.t < 1500) { x = lastPoint.x; y = lastPoint.y; }
     else { const r = document.querySelector('.question-card')?.getBoundingClientRect(); if (r) { x = r.left + r.width / 2; y = r.top + Math.min(r.height / 2, 160); } }
     const id = (floatId += 1);
-    floats = [...floats, { id, x: Math.min(Math.max(x, 40), window.innerWidth - 40), y: Math.max(y, 60), text, golden: gold, fire: run.combo > 0 ? fireStyle(run.combo) : undefined }];
+    const fx = Math.min(Math.max(x, 40), window.innerWidth - 40), fy = Math.max(y, 60);
+    const chip = document.querySelector('.session-bar .xp-chip')?.getBoundingClientRect();
+    const fly = chip ? { dx: chip.left + chip.width / 2 - fx, dy: chip.top + chip.height / 2 - fy } : {};
+    floats = [...floats, { id, x: fx, y: fy, text, golden: gold, fire: run.combo > 0 ? fireStyle(run.combo) : undefined, ...fly }];
     floatTimers.add(setTimeout(() => (floats = floats.filter((f) => f.id !== id)), 1100));
   }
   function onpointer(e: PointerEvent) { lastPoint = { x: e.clientX, y: e.clientY, t: Date.now() }; }
 
   async function onanswer(r0: AnswerResult) {
     const cur = step;
+    const comboBefore = run.combo;
     const r: AnswerResult = r0;
     const isRetry = cur.meta?.kind === 'retry';
     const { state, levelUp, sfx: snd, xpGained } = runAnswer(run, r);
@@ -141,17 +160,45 @@
     }
     if (xpGained) await stats.addXp(xpGained);
     const gold = !!cur.meta?.golden;
-    if (r.correct && snd === 'correct') sfx.playCombo(run.combo); else sfx.play(snd, { combo: run.combo });
-    buzz(r.correct ? 'ok' : 'bad');
+    // khoảnh khắc thưởng: dấu mộc ở mốc chuỗi (âm thanh dời về lúc dấu chạm giấy), overlay kỳ quan ở mốc 5·8·13
+    const calm = reducedMotion();
+    const fx = r.correct && snd === 'correct' ? stampFor(comboBefore, run.combo) : null;
+    const showStamp = !!fx && !calm;
+    if (r.correct && snd === 'correct') sfx.playCombo(run.combo, showStamp ? TIMING.stampLand : 0); else sfx.play(snd, { combo: run.combo });
+    if (!r.correct) buzz('bad'); else if (glowLevel(run.combo) > 0) buzzCombo(glowLevel(run.combo)); else buzz('ok');
     if (r.correct) {
       if (gold) sfx.play('golden');
       lightWonder(run.combo);
     }
+    if (fx && showStamp) {
+      stamp = fx;
+      if (fx.confetti) later(() => stampConfetti(fx.tier, fx.combo >= 10), TIMING.stampLand);
+      if (fx.overlay) later(() => { if (wonder && lit.length) flash = true; }, TIMING.flashDelay);
+    }
     const up = levelUp && !isRetry;
     if (up) { sfx.play('levelup'); burst(run.levels[cur.conceptId] >= 6 ? 'levelup' : 'small'); }
     if (xpGained > 0) spawnFloat(`+${xpGained}`, gold);
+    // bộ đếm XP cộng dồn khi chữ +XP bay tới nơi (giảm chuyển động: cộng ngay)
+    if (xpGained > 0 && !calm) later(() => (shownXp = run.xp), TIMING.xpFly); else shownXp = run.xp;
     reward = { xp: xpGained, golden: gold && r.correct, levelTo: up ? run.levels[cur.conceptId] : null, retry: isRetry };
     result = r;
+    if (r.correct && !calm) { await tick(); celebrate(); }
+  }
+
+  /** nút đáp án đúng nảy lên và bung hạt sáng theo màu bậc, ngay từ nút đó (không có nút → chỗ vừa bấm / giữa thẻ câu hỏi) */
+  function celebrate() {
+    if (typeof document === 'undefined') return;
+    const el = document.querySelector<HTMLElement>('.step-wrap .opt.correct, .step-wrap .opt.locked');
+    let x = window.innerWidth / 2, y = window.innerHeight / 2;
+    if (el) { const b = el.getBoundingClientRect(); x = b.left + b.width / 2; y = b.top + b.height / 2; }
+    else if (lastPoint && Date.now() - lastPoint.t < 1500) { x = lastPoint.x; y = lastPoint.y; }
+    else { const b = document.querySelector('.question-card')?.getBoundingClientRect(); if (b) { x = b.left + b.width / 2; y = b.top + Math.min(b.height / 2, 160); } }
+    const level = glowLevel(run.combo);
+    sparks(x, y, edgeGlow(run.combo).tier ?? 'do', 10 + level * 5);
+    if (el) {
+      el.classList.remove('reward-bounce'); void el.offsetWidth; el.classList.add('reward-bounce');
+      later(() => el.classList.remove('reward-bounce'), 600);
+    }
   }
 
   function runNextStep() {
@@ -200,20 +247,23 @@
 </script>
 
 <svelte:window onkeydown={onkey} onpointerdowncapture={onpointer} />
-<WonderBackdrop {wonder} {lit} complete={!!ended} />
+<WonderBackdrop {wonder} {lit} complete={!!ended && !!wonder && litPercent(lit.length, wonder.paths.length) === 100} />
+{#if stamp}{#key stamp}<ComboStamp {stamp} onend={() => (stamp = null)} />{/key}{/if}
+{#if flash && wonder}<WonderFlash {wonder} {lit} onend={() => (flash = false)} />{/if}
 <ComboEdge combo={ended ? 0 : run.combo} />
 <FloatXp {floats} />
 <div class="session-main">
   <h1 class="sr-only">{title ?? 'Phiên học'}</h1>
   {#if ended}
-    <SessionEnd summary={summary(run)} {sources} {record} retryTotal={summary(run).retried} {concepts} streak={ended.streak} streakEvent={ended.streakEvent} rankBefore={ended.rankBefore} rankAfter={ended.rankAfter} dueTomorrow={ended.dueTomorrow} promotion={ended.promotion} onhome={() => go('home')} {onagain} {onnext} mistakes={mistakes(run)} />
+    <SessionEnd summary={summary(run)} {sources} {record} retryTotal={summary(run).retried} {concepts} streak={ended.streak} streakEvent={ended.streakEvent} rankBefore={ended.rankBefore} rankAfter={ended.rankAfter} dueTomorrow={ended.dueTomorrow} promotion={ended.promotion} onhome={() => go('home')} {onagain} {onnext} mistakes={mistakes(run)} {wonderCard} />
   {:else if step && Card}
-    <SessionBar done={barDone} total={barTotal} {title} combo={run.combo} {marks} {inRetry} onexit={() => (confirmExit = true)} />
+    <SessionBar done={barDone} total={barTotal} {title} combo={run.combo} xp={shownXp} {marks} {inRetry} onexit={() => (confirmExit = true)} />
+    <WonderStrip {wonder} {lit} tier={edgeGlow(run.combo).tier} />
     {#if lessonId}<LessonStrip {concepts} levels={run.levels} current={hideCurrent ? '' : (step?.conceptId ?? '')} />{/if}
     {#if showHint}
       <aside class="card session-hint" aria-label="Gợi ý lần đầu">
         <p class="kicker">Lần đầu học ở đây</p>
-        <p>Trả lời đúng liên tiếp, <b>viền màn hình sáng dần</b> theo từng mốc chuỗi. Mỗi câu đúng cũng <b>thắp thêm một nét</b> của bức tranh kỳ quan Việt Nam ở nền. Sai thì chuỗi về 0, không mất điểm đã có.</p>
+        <p>Trả lời đúng liên tiếp, <b>viền màn hình sáng dần</b> theo từng mốc chuỗi. Mỗi câu đúng cũng <b>thắp thêm vài nét</b> của kỳ quan Việt Nam ở dải Thắp sáng; lên mốc chuỗi sẽ có dấu mộc và kỳ quan sáng rực. Sai thì chuỗi về 0, không mất điểm đã có.</p>
         <button class="btn" type="button" onclick={dismissHint}>Ẩn gợi ý</button>
       </aside>
     {/if}

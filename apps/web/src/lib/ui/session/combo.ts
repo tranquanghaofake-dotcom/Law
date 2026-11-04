@@ -70,4 +70,5 @@ export function fireStyle(combo: number): string {
 }
 
 /** Một chữ "+10" đang bay: toạ độ viewport nơi vừa bấm. */
-export type XpFloat = { id: number; x: number; y: number; text: string; golden: boolean; fire?: string };
+/** `dx/dy`: độ dời tới bộ đếm XP (bay vào bộ đếm); không có thì chỉ bay lên. */
+export type XpFloat = { id: number; x: number; y: number; text: string; golden: boolean; fire?: string; dx?: number; dy?: number };

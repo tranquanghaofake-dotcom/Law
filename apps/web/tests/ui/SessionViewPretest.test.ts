@@ -9,7 +9,7 @@ vi.mock('$lib/store/stats', () => ({
 const playCombo = vi.fn();
 vi.mock('$lib/fx/sfx', () => ({ sfx: { preload() {}, play() {}, playCombo: (...a: unknown[]) => playCombo(...a), stopCombo() {} } }));
 vi.mock('$lib/fx/confetti', () => ({ burst() {}, reducedMotion: () => true }));
-vi.mock('$lib/fx/haptics', () => ({ buzz() {} }));
+vi.mock('$lib/fx/haptics', () => ({ buzz() {}, buzzCombo() {} }));
 vi.mock('$lib/ui/header.svelte', () => ({ refreshHeader: async () => {} }));
 vi.mock('$lib/ui/sidenav.svelte', () => ({ refreshSidenav: async () => {} }));
 vi.mock('$lib/ui/shelf.svelte', () => ({ refreshShelf: async () => {} }));
@@ -62,7 +62,7 @@ describe('SessionView: hiệu ứng chuỗi đúng', () => {
     await click(container, true);
     await vi.waitFor(() => expect(edge().dataset.level).toBe('1'));
     expect(edge().dataset.tier).toBe('do');
-    expect(playCombo).toHaveBeenCalledWith(1);
+    expect(playCombo).toHaveBeenCalledWith(1, 0);
     await vi.waitFor(() => expect(container.querySelectorAll('.wonder .lit .core').length).toBe(3));
     await fireEvent.click(getByRole('button', { name: /Câu tiếp/ }));
     await click(container, false);

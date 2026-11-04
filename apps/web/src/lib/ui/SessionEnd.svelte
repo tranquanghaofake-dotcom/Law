@@ -8,7 +8,10 @@
   import { LEVEL_NAMES } from '$lib/game/levels';
   import { reviewTexts } from './cards/answer';
   import type { XpSource } from './session/xpSources';
-  let { summary, concepts, streak, streakEvent, dueTomorrow, onhome, onagain, onnext, mistakes = [], promotion = null, sources = [], record = null, retryTotal: retryProp = 0 }: {
+  import type { Wonder } from '$lib/fx/wonders';
+  import type { GlowTier } from './session/combo';
+  import WonderArt from './session/WonderArt.svelte';
+  let { summary, concepts, streak, streakEvent, dueTomorrow, onhome, onagain, onnext, mistakes = [], promotion = null, sources = [], record = null, retryTotal: retryProp = 0, wonderCard = null }: {
     summary: { correct: number; total: number; xp: number; levelUps: { conceptId: string; to: Level }[]; bestCombo?: number; golden?: number; fixed?: number; retried?: number; pretest?: { total: number; correct: number } };
     concepts: Concept[]; streak: number; streakEvent: StreakEvent; rankBefore: RankInfo; rankAfter: RankInfo; dueTomorrow: number;
     onhome: () => void; onagain?: () => void; onnext?: () => void; mistakes?: Step[]; promotion?: string | null;
@@ -18,6 +21,8 @@
     record?: { comboBeaten: boolean; rateBeaten: boolean; before: { bestCombo: number; bestRate: number } } | null;
     /** số câu bước vào vòng sửa sai (mẫu số của "sửa được x/y") */
     retryTotal?: number;
+    /** kỳ quan đã thắp trong phiên: hình sáng theo đúng phần trăm đạt được */
+    wonderCard?: { wonder: Wonder; lit: { i: number; tier: GlowTier }[]; percent: number } | null;
   } = $props();
   const retryTotal = $derived(retryProp || summary.retried || 0);
   const term = (id: string) => concepts.find((c) => c.id === id)?.term ?? id;
@@ -48,6 +53,16 @@
       </dl>
     </div>
   </div>
+  {#if wonderCard}
+    <div class="wonder-card" class:full={wonderCard.percent === 100}>
+      <div class="wc-art"><WonderArt wonder={wonderCard.wonder} lit={wonderCard.lit} px={150} label="{wonderCard.wonder.name} đã sáng {wonderCard.percent} phần trăm" /></div>
+      <div class="wc-text">
+        <p class="wc-h">Đã thắp sáng <b>{wonderCard.percent}%</b></p>
+        <p class="wc-n">{wonderCard.wonder.name} · {wonderCard.wonder.place}</p>
+        {#if wonderCard.percent === 100}<p class="wc-badge"><span class="seal-stamp" aria-hidden="true">★</span> Thắp sáng trọn vẹn</p>{/if}
+      </div>
+    </div>
+  {/if}
   {#if recordMsg}<p class="record-msg" role="status"><span class="seal-stamp" aria-hidden="true">★</span> {recordMsg}</p>{/if}
   {#if sources.length}
     <ul class="xp-sources" aria-label="XP theo nguồn">
