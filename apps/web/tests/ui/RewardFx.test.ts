@@ -1,5 +1,6 @@
+import { readFileSync } from 'node:fs';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import { cleanup, fireEvent, render } from '@testing-library/svelte';
+import { cleanup, render } from '@testing-library/svelte';
 
 let calm = false;
 vi.mock('$lib/fx/confetti', () => ({ burst() {}, reducedMotion: () => calm }));
@@ -34,13 +35,13 @@ describe('ComboStamp', () => {
 });
 
 describe('WonderFlash', () => {
-  it('tự tắt sau ~1,2 s; bấm để bỏ qua (chỉ gọi onend một lần)', async () => {
+  it('trang trí thuần: aria-hidden, không nhận cú chạm; hiện %', () => {
     const onend = vi.fn();
     const { container } = render(WonderFlash, { props: { wonder, lit: lit(10), onend } });
     expect(container.textContent).toContain('Đã thắp sáng 25%');
-    await fireEvent.click(container.querySelector('.wonder-flash')!);
-    expect(onend).toHaveBeenCalledTimes(1);
-    vi.advanceTimersByTime(2000); expect(onend).toHaveBeenCalledTimes(1);
+    const el = container.querySelector('.wonder-flash')!;
+    expect(el.getAttribute('aria-hidden')).toBe('true');
+    expect(readFileSync('src/lib/ui/session/WonderFlash.svelte', 'utf8')).toMatch(/pointer-events: none/);
   });
   it('không bấm: tự gọi onend', () => {
     const onend = vi.fn();
@@ -55,6 +56,8 @@ describe('WonderStrip', () => {
     expect(container.querySelector('.name')?.textContent).toBe('Khuê Văn Các');
     expect(container.querySelector('.place')?.textContent).toBe('Hà Nội');
     expect(container.querySelector('.pct b')?.textContent).toBe('35');
+    expect(container.querySelector('.pct .sr-only')?.textContent).toContain('35 phần trăm');
+    expect(container.querySelector('section')).toBeNull();
     expect(container.querySelectorAll('.lit .core')).toHaveLength(14);
   });
   it('chưa nạp kỳ quan: vẫn giữ chỗ, 0%', () => {

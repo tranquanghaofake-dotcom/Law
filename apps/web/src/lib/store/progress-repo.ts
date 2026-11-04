@@ -58,6 +58,9 @@ export function parseExport(json: string): ExportFile {
     if (typeof c.conceptId !== 'string' || typeof c.subject !== 'string' || typeof c.level !== 'number' || !c.card || c.card.due == null)
       throw new Error(`Khái niệm '${(c as { conceptId?: string }).conceptId ?? '?'}' trong file thiếu trường bắt buộc.`);
   }
+  // đợt 9: file xuất cũ có thể còn trường độ tự tin đã bỏ (`hyperAt`, `conf`) — gỡ trước khi nhập
+  for (const c of d.concepts ?? []) delete (c as { hyperAt?: unknown }).hyperAt;
+  for (const r of d.reviews ?? []) delete (r as { conf?: unknown }).conf;
   return d as ExportFile;
 }
 

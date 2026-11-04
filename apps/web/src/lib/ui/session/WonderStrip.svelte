@@ -24,16 +24,16 @@
   });
 </script>
 
-<section class="wonder-strip" class:flash class:rm data-tier={tier ?? ''} aria-label="Thắp sáng kỳ quan">
+<div class="wonder-strip" class:flash class:rm data-tier={tier ?? ''}>
   <div class="thumb">{#if wonder}<WonderArt {wonder} {lit} />{/if}</div>
   <div class="meta">
     <p class="kick">Thắp sáng</p>
     <p class="name">{wonder ? wonder.name : 'Đang dựng kỳ quan…'}</p>
     {#if wonder}<p class="place">{wonder.place}</p>{/if}
   </div>
-  <p class="pct" aria-label="Đã sáng {pct} phần trăm"><b>{pct}</b><small>%</small></p>
+  <p class="pct"><b aria-hidden="true">{pct}</b><small aria-hidden="true">%</small><span class="sr-only">Đã thắp sáng {pct} phần trăm {wonder ? wonder.name : 'kỳ quan'}</span></p>
   <i class="fill" aria-hidden="true"><span style="transform:scaleX({pct / 100})"></span></i>
-</section>
+</div>
 
 <style>
   .wonder-strip {

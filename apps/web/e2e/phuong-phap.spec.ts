@@ -32,12 +32,3 @@ test('đoán trước (bật trong Cài đặt): câu đoán → Bỏ qua → th
   }));
   expect(levels).toBe(0);
 });
-
-test('độ tự tin bật theo mặc định, tắt được trong Cài đặt', async ({ page }) => {
-  await page.goto(B + '#/cai-dat');
-  const box = page.getByLabel('Hỏi độ tự tin (Chắc / Tạm / Đoán) ở một nửa số câu từ bậc 2');
-  await expect(box).toBeChecked();
-  await box.uncheck();
-  await page.reload();
-  await expect(box).not.toBeChecked();
-});

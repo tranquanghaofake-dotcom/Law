@@ -28,7 +28,7 @@
   onDestroy(() => { cancelAnimationFrame(raf); clearTimeout(bumpTimer); });
 </script>
 
-<span class="xp-chip" class:bump aria-label="XP phiên này: {value}"><b>{shown}</b> XP</span>
+<span class="xp-chip" class:bump><b>{shown}</b> XP</span>
 
 <style>
   .xp-chip { flex: none; font-size: var(--fs-sm); font-weight: 700; color: var(--accent-text, var(--ink)); font-variant-numeric: tabular-nums; min-width: 52px; text-align: right; transform-origin: 100% 50%; }

@@ -203,6 +203,7 @@
 
   function runNextStep() {
     tts.stop();
+    flash = false;
     result = null;
     run = runNext(run);
     if (run.done) finish();
@@ -242,6 +243,8 @@
 
   function exit() { tts.stop(); sfx.stopCombo(); sfx.play('exit'); go('home'); }
   function onkey(e: KeyboardEvent) {
+    // overlay kỳ quan đang hiện: phím bất kỳ đóng nó trước; Esc chỉ đóng overlay, chưa mở hộp thoát
+    if (flash) { flash = false; if (e.key === 'Escape') { e.preventDefault(); return; } }
     if (e.key === 'Escape' && !ended) { e.preventDefault(); if (isTypingTarget(e)) (e.target as HTMLElement).blur(); confirmExit = !confirmExit; }
   }
 </script>

@@ -10,8 +10,9 @@ vi.mock('$lib/store/stats', () => ({
 const playCombo = vi.fn();
 vi.mock('$lib/fx/sfx', () => ({ sfx: { preload() {}, play() {}, playCombo: (...a: unknown[]) => playCombo(...a), stopCombo() {} } }));
 vi.mock('$lib/fx/confetti', () => ({ burst() {}, reducedMotion: () => calm }));
-vi.mock('$lib/fx/sparks', () => ({ sparks() {}, stampConfetti() {} }));
-vi.mock('$lib/fx/haptics', () => ({ buzz() {}, buzzCombo() {} }));
+const sparks = vi.fn(), stampConfetti = vi.fn(), buzzCombo = vi.fn();
+vi.mock('$lib/fx/sparks', () => ({ sparks: (...a: unknown[]) => sparks(...a), stampConfetti: (...a: unknown[]) => stampConfetti(...a) }));
+vi.mock('$lib/fx/haptics', () => ({ buzz() {}, buzzCombo: (...a: unknown[]) => buzzCombo(...a) }));
 vi.mock('$lib/ui/header.svelte', () => ({ refreshHeader: async () => {} }));
 vi.mock('$lib/ui/sidenav.svelte', () => ({ refreshSidenav: async () => {} }));
 vi.mock('$lib/ui/shelf.svelte', () => ({ refreshShelf: async () => {} }));
@@ -26,10 +27,10 @@ const concept: Concept = {
   source: { kind: 'statute', cite: 'Điều 119' }, checked: '2026-11-01', confusables: [], keywords: ['a', 'b'], items: [],
 };
 const mcq = (): Step['item'] => ({ type: 'mcq', level: 1, q: 'Câu hỏi?', options: ['Đúng', 'Sai 1', 'Sai 2', 'Sai 3'], answer: 0, explain: 'e' });
-const steps = (): Step[] => Array.from({ length: 4 }, () => ({ conceptId: 'a', level: 1, item: mcq() }));
+const steps = (): Step[] => Array.from({ length: 8 }, () => ({ conceptId: 'a', level: 1, item: mcq() }));
 const props = () => ({ steps: steps(), concepts: [concept], levels: { a: 1 as const } });
 
-beforeEach(() => { calm = false; record.mockClear(); playCombo.mockClear(); localStorage.clear(); });
+beforeEach(() => { calm = false; sparks.mockClear(); stampConfetti.mockClear(); buzzCombo.mockClear(); record.mockClear(); playCombo.mockClear(); localStorage.clear(); });
 afterEach(() => cleanup());
 
 async function answerOk(container: HTMLElement, _g?: unknown, wrong = false) {
@@ -68,5 +69,47 @@ describe('SessionView: khoảnh khắc thưởng', () => {
     await answerOk(container, getByRole as never); await next(container);
     await answerOk(container, getByRole as never, true);
     expect(playCombo).toHaveBeenCalledTimes(1);
+  });
+
+  it('câu đúng: hạt sáng bung, rung theo mốc, nút đúng nảy', async () => {
+    const { container } = render(SessionView, { props: props() });
+    await answerOk(container);
+    await vi.waitFor(() => expect(sparks).toHaveBeenCalledTimes(1));
+    expect(buzzCombo).toHaveBeenCalledWith(1);
+    expect(container.querySelector('.opt.correct')?.classList.contains('reward-bounce')).toBe(true);
+  });
+  it('giảm chuyển động: không hạt sáng, không nảy', async () => {
+    calm = true;
+    const { container } = render(SessionView, { props: props() });
+    await answerOk(container);
+    expect(sparks).not.toHaveBeenCalled();
+    expect(container.querySelector('.reward-bounce')).toBeNull();
+  });
+  it('mốc 5: confetti + overlay kỳ quan; sang câu sau là đóng; Esc đóng overlay trước khi hỏi thoát', async () => {
+    const { container } = render(SessionView, { props: props() });
+    for (let n = 1; n <= 5; n++) { await answerOk(container); if (n < 5) await next(container); }
+    await vi.waitFor(() => expect(stampConfetti).toHaveBeenCalledTimes(1));
+    await vi.waitFor(() => expect(container.ownerDocument.querySelector('.wonder-flash')).not.toBeNull(), { timeout: 3000 });
+    await fireEvent.keyDown(window, { key: 'Escape' });
+    expect(container.ownerDocument.querySelector('.wonder-flash')).toBeNull();
+    expect(container.querySelector('.confirm')).toBeNull();
+    await fireEvent.keyDown(window, { key: 'Escape' });
+    expect(container.querySelector('.confirm')).not.toBeNull();
+  });
+  it('mốc 5: sang câu sau đóng overlay', async () => {
+    const { container } = render(SessionView, { props: props() });
+    for (let n = 1; n <= 5; n++) { await answerOk(container); if (n < 5) await next(container); }
+    await vi.waitFor(() => expect(container.ownerDocument.querySelector('.wonder-flash')).not.toBeNull(), { timeout: 3000 });
+    await next(container);
+    expect(container.ownerDocument.querySelector('.wonder-flash')).toBeNull();
+  });
+  it('huỷ giữa chừng: timer dọn, không confetti/overlay muộn', async () => {
+    const { container, unmount } = render(SessionView, { props: props() });
+    for (let n = 1; n <= 5; n++) { await answerOk(container); if (n < 5) await next(container); }
+    unmount();
+    stampConfetti.mockClear();
+    await new Promise((r) => setTimeout(r, 700));
+    expect(stampConfetti).not.toHaveBeenCalled();
+    expect(document.querySelector('.wonder-flash')).toBeNull();
   });
 });
