@@ -2,7 +2,8 @@
 
 App đọc lời theo 2 lớp (`apps/web/src/lib/fx/tts.svelte.ts`):
 
-1. **mp3 neural dựng sẵn** — giọng `vi-VN-NamMinhNeural` (nam, trầm) qua [edge-tts](https://github.com/rany2/edge-tts), đọc chậm, hạ giọng cuối câu theo mẫu video "kiến thức xã hội". Chỉ phát khi mọi câu của lời đều có tệp (không trộn hai giọng).
+1. **mp3 neural dựng sẵn** — giọng `vi-VN-NamMinhNeural` qua [edge-tts](https://github.com/rany2/edge-tts), một kiểu đọc cho mọi câu (`STYLE` trong gen.py; đổi kiểu → lần chạy sau sinh lại toàn bộ). Mỗi tệp đã cắt khoảng lặng; app tải song song mọi câu của một lời và ghép thành một đoạn liền, nghỉ đều 0,16 s giữa các câu. Chỉ phát khi mọi câu của lời đều có tệp (không trộn hai giọng).
+   Danh sách câu = dữ liệu luật + `npm run tts:texts -w @luyen-luat/web` (chạy chính code app để gom cả câu sinh tự động: giải thích, "Đáp án: …").
 2. **Giọng trình duyệt** (Web Speech) — tách cụm ý, mỗi cụm tốc độ/cao độ/khoảng nghỉ riêng (`lib/fx/prosody.ts`). Edge có giọng "Microsoft HoaiMy/NamMinh Online (Natural)" tự nhiên hơn Chrome.
 
 ## Sinh mp3

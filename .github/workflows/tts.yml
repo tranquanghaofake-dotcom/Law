@@ -20,6 +20,13 @@ jobs:
     timeout-minutes: 120
     steps:
       - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      # Gom mọi câu app có thể đọc (kể cả câu sinh tự động) bằng chính code app → .tts-texts.json
+      - run: npm run content && npm run tts:texts -w @luyen-luat/web
       - uses: actions/setup-python@v6
         with: { python-version: '3.12' }
       - run: pip install edge-tts==7.2.3 && sudo apt-get install -y -qq ffmpeg
@@ -28,7 +35,7 @@ jobs:
           path: .tts-cache
           key: tts-${{ github.run_id }}
           restore-keys: tts-
-      - run: python tools/tts/gen.py --out .tts-cache
+      - run: python tools/tts/gen.py --out .tts-cache --texts .tts-texts.json
       - uses: actions/cache/save@v5
         if: always()
         with:
