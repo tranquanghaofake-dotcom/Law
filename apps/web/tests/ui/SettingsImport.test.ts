@@ -33,7 +33,7 @@ describe('Cài đặt — Nhập dữ liệu (P1 nhóm B)', () => {
     expect(importAll).not.toHaveBeenCalled();
     await fireEvent.click(getByRole('button', { name: /Nhập và ghi đè/ }));
     await waitFor(() => expect(importAll).toHaveBeenCalledTimes(1));
-    await waitFor(() => expect(container.querySelector('[role=status]')?.textContent).toContain('Đã nhập 2 khái niệm, 3 lượt ôn'));
+    await waitFor(() => expect(container.querySelector('.import-msg')?.textContent).toContain('Đã nhập 2 khái niệm, 3 lượt ôn'));
   });
   it('Huỷ thì không nhập', async () => {
     const { container, getByRole } = render(Settings);

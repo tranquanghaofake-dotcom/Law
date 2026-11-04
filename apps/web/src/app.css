@@ -1791,3 +1791,8 @@ select.qz-sort { min-height: var(--ctl-h); padding: 0 var(--sp-3); border: 1px s
 /* Kết quả quiz: điều hướng phụ là link chữ (đợt 3) */
 .qr-more { display: flex; flex-wrap: wrap; align-items: center; gap: var(--sp-2) var(--sp-4); margin: var(--sp-3) 0 0; }
 .qr-more a, .qr-more .linklike { min-height: 24px; }
+/* Link bỏ qua: ẩn tới khi được focus bằng bàn phím (C7) */
+.skip-link { position: absolute; left: var(--sp-3); top: var(--sp-3); z-index: 1000; padding: var(--sp-2) var(--sp-4); border-radius: var(--r-sm); background: var(--ink); color: var(--paper); font-weight: 600; text-decoration: none; transform: translateY(-200%); }
+.skip-link:focus { transform: none; }
+/* Cài đặt: "Đã lưu" cạnh mục vừa đổi (đợt 3) */
+.settings .saved { display: inline-flex; align-items: center; gap: 2px; margin-left: var(--sp-2); font-size: var(--fs-xs); font-weight: 600; color: var(--ok); }

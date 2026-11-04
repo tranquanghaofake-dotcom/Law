@@ -11,6 +11,14 @@
   import { refreshShelf } from '$lib/ui/shelf.svelte';
   import { getPref, setPref } from '$lib/ui/session/prefs';
   const ttsOk = $derived(tts.available);
+  // Báo "Đã lưu" sau mỗi thay đổi (lưu ngay ở onchange nên trước đây người dùng không biết đã lưu chưa); tự ẩn sau 3 s.
+  let savedKey = $state('');
+  let savedTimer: ReturnType<typeof setTimeout> | undefined;
+  function saved(key: string) {
+    savedKey = key;
+    clearTimeout(savedTimer);
+    savedTimer = setTimeout(() => (savedKey = ''), 3000);
+  }
   let prefPre = $state(getPref('pretest'));
   let msg = $state('');
   async function exportData() {
@@ -58,23 +66,26 @@
   }
 </script>
 
+{#snippet ok(key: string)}{#if savedKey === key}<span class="saved" aria-hidden="true"><Glyph name="check" size={14} />Đã lưu</span>{/if}{/snippet}
+
 <section class="card settings">
+  <p class="sr-only" role="status">{savedKey ? 'Đã lưu' : ''}</p>
   <h2 style="margin-top:0">Cài đặt</h2>
   {#if !storage.available}<p class="muted"><Glyph name="warn" size={16} /> Trình duyệt đang chặn lưu trữ (chế độ riêng tư?). Tiến độ sẽ không được lưu.</p>{/if}
-  <label class="setting"><span>Âm thanh</span><input type="checkbox" checked={settings.sound} onchange={(e) => { saveSetting('sound', e.currentTarget.checked); if (e.currentTarget.checked) sfx.play('select'); }} /></label>
-  <label class="setting"><span>Tự đọc phản hồi sau khi chọn đáp án</span><input type="checkbox" checked={settings.tts} onchange={(e) => saveSetting('tts', e.currentTarget.checked)} /></label>
+  <label class="setting"><span>Âm thanh{@render ok('sound')}</span><input type="checkbox" checked={settings.sound} onchange={(e) => { saveSetting('sound', e.currentTarget.checked); saved('sound'); if (e.currentTarget.checked) sfx.play('select'); }} /></label>
+  <label class="setting"><span>Tự đọc phản hồi sau khi chọn đáp án{@render ok('tts')}</span><input type="checkbox" checked={settings.tts} onchange={(e) => { saveSetting('tts', e.currentTarget.checked); saved('tts'); }} /></label>
   <p class="muted small">Dùng giọng đọc dựng sẵn nếu có, không thì giọng tiếng Việt của trình duyệt.</p>
   {#if ttsOk}<button class="btn ghost" type="button" onclick={() => tts.speak('Hiến pháp là luật cơ bản của nước Cộng hòa xã hội chủ nghĩa Việt Nam.')}>Nghe thử</button>
   {:else}<p class="muted small">Trình duyệt này không có giọng tiếng Việt; nút nghe sẽ được ẩn.</p>{/if}
-  <label class="setting"><span>Giảm chuyển động</span>
-    <select value={settings.reducedMotion} onchange={(e) => saveSetting('reducedMotion', e.currentTarget.value as 'auto' | 'on' | 'off')}>
+  <label class="setting"><span>Giảm chuyển động{@render ok('motion')}</span>
+    <select value={settings.reducedMotion} onchange={(e) => { saveSetting('reducedMotion', e.currentTarget.value as 'auto' | 'on' | 'off'); saved('motion'); }}>
       <option value="auto">Theo hệ thống</option><option value="on">Bật</option><option value="off">Tắt</option>
     </select></label>
-  <label class="setting"><span>Mục tiêu nhớ <b>{Math.round(settings.retention * 100)}%</b></span>
-    <input class="range" type="range" min="0.8" max="0.95" step="0.01" value={settings.retention} aria-describedby="retention-help" onchange={(e) => saveSetting('retention', Number(e.currentTarget.value))} /></label>
+  <label class="setting"><span>Mục tiêu nhớ <b>{Math.round(settings.retention * 100)}%</b>{@render ok('retention')}</span>
+    <input class="range" type="range" min="0.8" max="0.95" step="0.01" value={settings.retention} aria-describedby="retention-help" onchange={(e) => { saveSetting('retention', Number(e.currentTarget.value)); saved('retention'); }} /></label>
   <p class="muted small" id="retention-help">Cao hơn = ôn dày hơn nhưng nhớ chắc hơn. Mặc định 90%.</p>
   <h3 class="settings-h">Cách học</h3>
-  <label class="setting"><span>Đoán trước 1–2 câu ở đầu đợt học mới, trước khi đọc thẻ giới thiệu</span><input type="checkbox" checked={prefPre} onchange={(e) => { prefPre = e.currentTarget.checked; setPref('pretest', prefPre); }} /></label>
+  <label class="setting"><span>Đoán trước 1–2 câu ở đầu đợt học mới, trước khi đọc thẻ giới thiệu{@render ok('pretest')}</span><input type="checkbox" checked={prefPre} onchange={(e) => { prefPre = e.currentTarget.checked; setPref('pretest', prefPre); saved('pretest'); }} /></label>
   <p class="muted small">Tuỳ chọn này lưu riêng trong trình duyệt (không nằm trong file xuất dữ liệu).</p>
   <h3 class="settings-h">Dữ liệu</h3>
   <p class="muted small">Tiến độ lưu trong trình duyệt này. Xuất file để chuyển máy hoặc lưu dự phòng.</p>
@@ -93,5 +104,5 @@
     </div>
   {/if}
   {#if err}<p role="alert" class="import-err"><Glyph name="warn" size={16} /> {err}</p>{/if}
-  {#if msg}<p role="status">{msg}</p>{/if}
+  {#if msg}<p class="import-msg" role="status">{msg}</p>{/if}
 </section>

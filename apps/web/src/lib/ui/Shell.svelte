@@ -12,6 +12,7 @@
   import RankBadge from './RankBadge.svelte';
   import Icon from '$lib/art/Icon.svelte';
   import { route } from '$lib/router.svelte';
+  import { focusRouteHeading } from './routeFocus';
   import { parentHash, goBack } from './back';
 
   let { active, children }: { active: RouteName; children: Snippet } = $props();
@@ -25,6 +26,8 @@
 </script>
 
 <div class="shell" class:has-rail={!!Rail}>
+  <!-- Bỏ qua điều hướng (WCAG 2.4.1). Router dùng hash: href="#main" sẽ thành route 404 → chặn mặc định, chỉ chuyển focus. -->
+  <a class="skip-link" href="#main" onclick={(e) => { e.preventDefault(); focusRouteHeading(); }}>Bỏ qua tới nội dung</a>
   <header class="topbar">
     <a class="brand" href="#/"><span class="mark" aria-hidden="true">§</span> Luyện Luật</a>
     <div class="meta"><StreakFlame count={header.streak} longest={header.longest} /><RankBadge /></div>
