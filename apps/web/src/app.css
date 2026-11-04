@@ -1700,3 +1700,9 @@ body:has(dialog.sheet[open]) { overflow: hidden; }
 .opt.correct::after, .opt.locked::after { content: ""; position: absolute; inset: -4px; border-radius: calc(var(--r-md) + 4px); border: 2px solid var(--ok); box-shadow: 0 0 14px color-mix(in srgb, var(--ok) 45%, transparent); pointer-events: none; animation: okring .9s var(--ease-out) both; }
 @keyframes okring { 0% { clip-path: inset(0 100% 0 0); opacity: 1; } 55% { clip-path: inset(0 0 0 0); opacity: 1; } 100% { clip-path: inset(0 0 0 0); opacity: 0; } }
 .opt.correct, .opt.locked { animation: pop .35s var(--ease-spring); }
+
+/* ---- Thăng chức (đợt 10) ---- */
+.sc-xf { position: absolute; inset: 0; z-index: 0; pointer-events: none; } /* lớp bọc phông để mờ chéo, giữ nguyên vị trí .sc-back */
+/* ô chức vừa đạt (chưa xem lễ): vòng vàng toả ba nhịp — transform/opacity trên ::before */
+.org-node.fresh::before { content: ""; position: absolute; inset: -3px; border-radius: inherit; border: 2px solid var(--gold-400); box-shadow: 0 0 16px color-mix(in srgb, var(--gold-400) 70%, transparent); pointer-events: none; opacity: 0; animation: orgfresh 1.6s var(--ease-out) .4s 3; will-change: transform, opacity; }
+@keyframes orgfresh { 0% { transform: scale(1); opacity: .95; } 100% { transform: scale(1.12, 1.4); opacity: 0; } }
