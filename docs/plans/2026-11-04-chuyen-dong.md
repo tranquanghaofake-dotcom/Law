@@ -26,3 +26,5 @@ Task 1: bắt đầu — base 7665b2c
 - sau Task 1: Hôm nay 90 ms · Hồ sơ 547 ms (ổn định); ngay khi mở Hồ sơ 752 ms
 - Nguyên nhân: animation trong <svg> có filter/mask bắt vẽ lại + layout lại cả khối mỗi khung hình (cảnh đầu trang: 242 lần layout/4 s); `orgnext` animate box-shadow.
 - Sửa: lib/fx/motionGate.ts (dừng khi ngoài màn hình/tab ẩn, lắng sau 12–15 s, rê chuột chạy lại); vân giấy thành ảnh dựng sẵn; orgnext/firepulse chuyển sang ::before/::after opacity+transform; token --dur-1..4, --ease-*.
+Task 1: xong — a662e13
+Task 2: bắt đầu — base a662e13
