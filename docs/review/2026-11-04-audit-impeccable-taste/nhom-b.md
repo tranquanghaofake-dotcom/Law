@@ -24,7 +24,7 @@ Token, thang chữ, motion, theming: phần lớn đã gom ở README. Chỉ ghi
 |---|---|---|---|
 | 7 quiz | 14 (Good) | 29/40 | Ít nhồi hơn lesson; dính HT1, HT2, HT3 |
 | 8 lesson | 13 (Acceptable) | 28/40 | Màn nhồi nhất: gợi ý + dải + panel + thanh phiên |
-| 9 review | 14 (Good) | 29/40 | Dùng chung SessionView; trạng thái rỗng sơ sài |
+| 9 review | 14 (Good) | 28/40 | Dùng chung SessionView; trạng thái rỗng sơ sài |
 | 10 profile | 12 (Acceptable) | 23/36 = 64% (Acceptable; H5 n/a) | h1 kiểu eyebrow, tủ sách trống chiếm màn đầu |
 | 11 settings | 13 (Acceptable) | 28/40 | Nhập dữ liệu ghi đè không xác nhận |
 | 12 notfound | 15 (Good) | 29/36 = 81% (Good; H5 n/a) | Sạch; vẫn dính HT2, HT3 |

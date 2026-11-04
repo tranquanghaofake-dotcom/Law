@@ -17,7 +17,7 @@ Người chấm: S1. Phạm vi: `#/`, `#/mon`, `#/mon/hien-phap`, `#/mon/hien-ph
 
 **Implementation Integrity verdict: ĐẠT (có điều kiện).** Hệ thống mạch lạc và rất đặc thù sản phẩm (tranh kiến trúc VN, bìa sách thật, vé đề thi, thang token 4/8/12 và cỡ chữ). Không có drift giữa token và component. Điều kiện: các lỗi hệ thống HT2, HT3 (P1) và 4 lỗi P1 riêng của màn (SJ-1, SJ-2, CL-1, CN-1).
 
-Điểm tham chiếu cho phần chung: A1 3 · A2 3 · A3 3 · A4 3 · A5 3 = **15/20 (Good)**.
+Điểm tham chiếu cho phần chung: A1 2 · A2 3 · A3 3 · A4 3 · A5 3 = **14/20 (Good)** (A1 hạ vì HT2, HT3).
 
 ### Phát hiện dùng chung
 
@@ -63,12 +63,12 @@ Người chấm: S1. Phạm vi: `#/`, `#/mon`, `#/mon/hien-phap`, `#/mon/hien-ph
 
 | Chiều impeccable | Điểm | Ghi chú |
 |---|---|---|
-| A1 Accessibility | 3 | contrast đạt, h1/h2 đúng, target ≥ 44; trừ HT2, HT3, HT4 |
+| A1 Accessibility | 2 | contrast đạt, h1/h2 đúng, target ≥ 44; trừ HT2, HT3, HT4; hạ còn 2 vì HT2, HT3 (P1) áp cho mọi màn, đồng chuẩn với nhóm B |
 | A2 Performance | 3 | tải 24 JSON (cả 23 môn) cho ≤ 4 hàng (xem H-6); 6 animation trang trí |
 | A3 Theming | 3 | token tốt; hex thô ở tủ sidebar |
 | A4 Responsive | 3 | 320/390/640/1280 không cuộn ngang; tranh hero đè chữ (H-2) |
 | A5 Impl. Integrity | 3 | mạch lạc; lặp CTA, kicker |
-| **Tổng** | **15/20 (Good)** | |
+| **Tổng** | **14/20 (Good)** | |
 
 Nielsen (H5 n/a: không có hành động phá huỷ): H1 3 · H2 2 · H3 3 · H4 3 · H6 3 · H7 3 · H8 3 · H9 2 · H10 3 = **25/36 (69 %, Acceptable sát Good)**; H8 nâng 2→3 vì lý do cũ là chrome tủ gỗ ([BRAND], không trừ).
 Cognitive load trượt: C4 (thứ bậc: hero + danh sách + thẻ quiz cùng nặng), C5 (hai CTA cùng đích) → 2 (vừa). Persona: **Jordan** (5 giây: nhận ra “Bắt đầu” + nút cam, nhưng “bậc/đợt/sách/chức danh” lạ); **Casey** (CTA hero ở y≈545/844 trên 390, ngón cái với tới được, thanh tab dưới đạt).
@@ -95,12 +95,12 @@ Taste tells chạm: TS-X7/IMP-B3 (kicker “BẮT ĐẦU”), TS-W1/X21 (tiêu �
 
 | Chiều | Điểm | Ghi chú |
 |---|---|---|
-| A1 | 3 | target ≥ 44 ở mọi chip/thẻ (đã đo); heading đúng (h1, h2 theo kệ) |
+| A1 | 2 | target ≥ 44 ở mọi chip/thẻ (đã đo); heading đúng (h1, h2 theo kệ); hạ còn 2 vì HT2, HT3 (P1) áp cho mọi màn, đồng chuẩn với nhóm B |
 | A2 | 3 | 1347 node, 38 SVG, 24 JSON; ổn |
 | A3 | 3 | |
 | A4 | 3 | không tràn ngang 320; chip cuộn ngang bị cắt ở 1280 (S-1) |
 | A5 | 3 | |
-| **Tổng** | **15/20 (Good)** | |
+| **Tổng** | **14/20 (Good)** | |
 
 Nielsen (H5 n/a): H1 3 · H2 3 · H3 3 · H4 3 · H6 3 · H7 3 (tìm không dấu, viết tắt “ds”) · H8 3 · H9 3 · H10 3 = **27/36 (75 %, Good)**; H8 nâng 2→3 vì lý do cũ là bìa/ván gỗ ([BRAND], không trừ).
 Cognitive load trượt: C6 (8 chip lọc = quá tải), C3 → 2. Persona **Alex** hưởng lợi từ tìm viết tắt; **Casey**: lưới 4 cột 358 px, chạm 44 px ok.
@@ -115,7 +115,7 @@ Taste tells: TS-C8 (cầu vồng 8 hue bìa) **[BRAND]**, TS-X17/X19 (ván gỗ,
 
 **S-4 — [BRAND] — Banner chồng 3 bìa lặp lại chính lưới bên dưới; ván gỗ.** `Subjects.svelte:59-61`, `app.css:1476-1483` (bìa thứ hai che chữ bìa thứ nhất), ván `.plank` (`:861`, `:1503-1507`). Mã: TS-A2, IMP-H8, TS-C8. **[BRAND]**. Ảnh: `[shots/1280-light-subjects](anh/shots-1280-light-subjects.webp)` (đầu trang).
 
-**S-5 — P2 — Tiêu đề kệ IN HOA kèm số đếm nhỏ.** `Subjects.svelte:89` (“HIẾN PHÁP – HÀNH CHÍNH 3 MÔN”), `app.css:126,764-765`. Mã: TS-T7, X12 (xem C8). Sửa: sentence case.
+**S-5 — (thuộc HT6, không đếm riêng) — Tiêu đề kệ IN HOA kèm số đếm nhỏ.** `Subjects.svelte:89` (“HIẾN PHÁP – HÀNH CHÍNH 3 MÔN”), `app.css:126,764-765`. Mã: TS-T7, X12 (xem C8). Sửa: sentence case.
 
 **S-6 — P3 — Ô tìm chỉ có placeholder trực quan.** `Subjects.svelte:65-66` nhãn `sr-only`, placeholder “Tìm môn, vd. ds” (mặc định 4,61:1 trên trắng, đo bằng màu #757575 giả định mặc định của Chrome). TS-A9: nhãn nên hiện. Nhẹ vì ô tìm tự nói rõ.
 
@@ -185,7 +185,7 @@ TS-F4 phụ: 7 · 7,5 · 7 · 8 → thô 7,25; **overall theo cap = 6,5** (kicke
 
 **CL-5 — P3 — H1 “Khái niệm · Hiến pháp” để mồ côi dấu “·”.** `Concepts.svelte:73`, ảnh `[shots/1280-light-concepts-list](anh/shots-1280-light-concepts-list.webp)` (dòng 1 “Khái niệm ·”, dòng 2 “Hiến pháp”; `text-wrap:balance` ở `app.css:917` không cứu vì `.page-head > :not(.head-art){max-width:50%}` `:811`). Mã: TS-T11. Sửa: “Khái niệm Hiến pháp” hoặc ngắt có chủ đích.
 
-**CL-6 — P2 — (hệ thống) bậc chỉ bằng màu; ký tự ★ ☆ ▸ ▾.** Xem SJ-2, C10. `Concepts.svelte:98,101,103`; chevron đổi bằng ký tự `▾/▸` (không animate).
+**CL-6 — (thuộc SJ-2 và HT14, không đếm riêng) — bậc chỉ bằng màu; ký tự ★ ☆ ▸ ▾.** Xem SJ-2, C10. `Concepts.svelte:98,101,103`; chevron đổi bằng ký tự `▾/▸` (không animate).
 
 ---
 
@@ -208,6 +208,8 @@ Cognitive load trượt: C1 (định nghĩa, giải thích, ví dụ, dễ nhầ
 
 **CN-1 — P1 — Deep-link không đưa focus tới mục vừa mở, trang không nêu tên khái niệm.** `Concepts.svelte:52-56` (`open=[target]`, `scrollIntoView`, không `.focus()`); `h1` giữ “Khái niệm · Hiến pháp” (`:73`) dù `document.title` đổi (`:50`). Mã: IMP-A1, IMP-H1, IMP-A5. Tác động: người dùng bàn phím/đọc màn hình từ liên kết “Dễ nhầm với…” đứng yên ở đầu trang, không biết nội dung ở đâu; mọi người nhìn thấy khái niệm mở nằm giữa 100 mục khác. Sửa: sau `tick()` focus nút `entry-toggle` của mục mở, thông báo qua `aria-live`; hoặc làm trang chi tiết thật. Đã xác minh bằng đọc code + ảnh.
 
+Ảnh 390 px của ba màn nhóm A: [subjects](anh/shots-390-light-subjects.webp) · [concepts-list](anh/shots-390-light-concepts-list.webp) · [concept](anh/shots-390-light-concept.webp).
+
 **CN-2 — P2 — Nguồn pháp lý là phần yếu nhất của khối.** `Concepts.svelte:119` dòng `Nguồn: … · Xem văn bản · đối chiếu {c.checked}` dùng `class="source muted small"` = 12 px xám, nằm **dưới** hai accordion “So sánh” (`[crops/a-1280-c-2](anh/crops-a-1280-c-2.webp)`); ngày hiển thị dạng ISO “2026-11-01” (VN-4: nên `01/11/2026`); link “Xem văn bản” cao 15 px, `target="_blank"` không báo mở tab mới. Mã: VN-5, VN-4, IMP-T1, IMP-R3. Tác động: người học luật cần căn cứ ngay cạnh trích dẫn. Sửa: đặt `Nguồn` ngay dưới blockquote, 14 px, `<cite>`, ngày `dd/mm/yyyy`, “(mở tab mới)”. Lệnh: `/impeccable clarify`.
 
 **CN-3 — P2 — Thân mục: thứ bậc phẳng, “Dễ nhầm với” 12 px, vùng chạm nhỏ.** `Concepts.svelte:107-118`: định nghĩa (serif 16 px), giải thích (16 px), “Ví dụ” (16 px xám) rồi “Dễ nhầm với” (12 px). Đo 390: link “Nhà nước pháp quyền xã hội chủ nghĩa” 224×15, link thứ hai 300×34 (hai dòng). Ảnh: `[crops/a-390-c-2](anh/crops-a-390-c-2.webp)`. Mã: IMP-T1/X4 (nội dung đọc ≥ 16 px), IMP-R3, IMP-L1. Sửa: “Dễ nhầm với” thành chip/danh sách cao 44 px, 14–16 px.
@@ -224,12 +226,12 @@ Cognitive load trượt: C1 (định nghĩa, giải thích, ví dụ, dễ nhầ
 
 | Chiều | Điểm | Ghi chú |
 |---|---|---|
-| A1 | 3 | 47 phiếu là `<a>` với h3, `aria-live` + `role=status`; ring ở thẻ gợi ý tốt |
+| A1 | 2 | 47 phiếu là `<a>` với h3, `aria-live` + `role=status`; ring ở thẻ gợi ý tốt; hạ còn 2 vì HT2, HT3 (P1) áp cho mọi màn, đồng chuẩn với nhóm B |
 | A2 | 3 | 1918 node, 61 SVG, 47 vignette, không phân trang |
 | A3 | 3 | |
 | A4 | 3 | chip/ sắp xếp cao 44 ở mobile; carousel gợi ý cuộn ngang |
 | A5 | 3 | |
-| **Tổng** | **15/20 (Good)** | |
+| **Tổng** | **14/20 (Good)** | |
 
 Nielsen (H5 n/a): H1 3 · H2 3 · H3 3 · H4 3 · H6 3 · H7 3 · H8 2 · H9 3 · H10 3 = **26/36 (72 %, Good)**.
 Cognitive load trượt: C1 (stats + 3 gợi ý + 2 hàng điều khiển + 47 phiếu), C2/C6 (8 chip + 3 sắp xếp + 3 thẻ gợi ý), C8 → 3 (vừa). Persona **Casey**: phiếu đầu tiên bắt đầu ở y=665/844 trên 390 (79 %); **Alex**: sắp xếp + “Xáo đề khác” hữu ích.
@@ -281,7 +283,7 @@ Taste tells: IMP-B3/TS-X7 (kicker trên thẻ gợi ý), IMP-B8 (`border-left 4p
 
 ## 10. Tổng hợp
 
-- Điểm impeccable /20: Home 15 · Subjects 15 · Subject 14 · Concepts-list 13 · Concept 12 · Quizzes 15 (trung bình 14,0, Good). Nielsen: Home 25/36 · Subjects 27/36 · Subject 28/40 · Concepts-list 27/36 · Concept 24/36 · Quizzes 26/36 (H5 n/a ở các màn /36). TS-F4 overall theo cap: cả 6 màn = 6,5 (điểm thô 7,1–7,6 bị cap vì kicker + bóng lúc nghỉ). Mục [BRAND] không trừ điểm.
+- Điểm impeccable /20: Home 14 · Subjects 14 · Subject 14 · Concepts-list 13 · Concept 12 · Quizzes 14 (trung bình 13,5, Acceptable cao). Nielsen: Home 25/36 · Subjects 27/36 · Subject 28/40 · Concepts-list 27/36 · Concept 24/36 · Quizzes 26/36 (H5 n/a ở các màn /36). TS-F4 overall theo cap: cả 6 màn = 6,5 (điểm thô 7,1–7,6 bị cap vì kicker + bóng lúc nghỉ). Mục [BRAND] không trừ điểm.
 - Phát hiện riêng của nhóm A sau khi gộp: **P0 = 0 · P1 = 4 (SJ-1, SJ-2, CL-1, CN-1) · P2 = 24 · P3 = 12**. Tách riêng: 6 mục **[BRAND]** (C5, C11, C15, S-4, CL-4, Q-5) dẫn về mục [BRAND] của README, không tính vào tổng. Lỗi hệ thống đã gộp sang README, không tính lại ở đây: HT2, HT3 (P1), HT4–HT10, HT12 (P2), HT13, HT14 (P3).
 - Ưu tiên: HT2, HT3, SJ-1/CL-1 (heading), SJ-2 (bậc không chỉ màu), CN-1 (focus deep-link), rồi HT10, HT7.
 - Ngoài phạm vi, ghi lại: gói JSON theo môn (HT12); chụp/kiểm trạng thái có dữ liệu + rail ≥ 1440; kiểm bằng trình đọc màn hình và thiết bị thật.

@@ -16,7 +16,7 @@ Theo yêu cầu của Hào, bảng màu và brand cũng bị chấm thẳng, k�
 - Thay vào đó dùng script Playwright tự viết, nằm trong [do-dac/](do-dac/), chạy với Chromium 390/320/640/1280 px.
 - Các phép đo gồm: contrast tính bằng màu đã render, kích thước vùng bấm, reflow, thứ tự Tab, `prefers-reduced-motion`, request mạng, đi trọn một phiên quiz và một phiên bài học.
 - Chưa kiểm: máy thật hoặc cảm ứng thật, trình đọc màn hình, Safari/Firefox, offline, các trạng thái có dữ liệu ở Hôm nay, rail ≥ 1440 px, thẻ cloze/sort/match/pair/recall.
-- Web không có dark mode (`app.css:3` `color-scheme: light`), nên ảnh dark trong `do-dac/` chỉ dùng để xác nhận điều đó.
+- Web không có dark mode (`app.css:3` `color-scheme: light`). Ảnh chụp ở chế độ dark chỉ dùng để xác nhận điều này nên không đưa vào repo.
 
 ## Chi tiết từng màn
 
@@ -30,15 +30,15 @@ Thang impeccable audit tính trên /20. Nielsen tính trên /40; màn nào H5 kh
 
 | Màn | Route | impeccable /20 | Nielsen |
 |---|---|---|---|
-| Hôm nay | `#/` | 15 Good | 25/36 |
-| Môn học | `#/mon` | 15 Good | 27/36 |
+| Hôm nay | `#/` | 14 Good | 25/36 |
+| Môn học | `#/mon` | 14 Good | 27/36 |
 | Trang môn | `#/mon/:môn` | 14 Good | 28/40 |
 | Danh mục khái niệm | `#/mon/:môn/khai-niem` | 13 Acceptable | 27/36 |
 | Khái niệm | `#/mon/:môn/khai-niem/:id` | 12 Acceptable | 24/36 |
-| Luyện đề | `#/luyen-de` | 15 Good | 26/36 |
+| Luyện đề | `#/luyen-de` | 14 Good | 26/36 |
 | Quiz | `#/bo/:id` | 14 Good | 29/40 |
 | Bài học | `#/hoc/:môn/:bài` | 13 Acceptable | 28/40 |
-| Ôn tập | `#/on` | 14 Good | 29/40 |
+| Ôn tập | `#/on` | 14 Good | 28/40 |
 | Hồ sơ | `#/toi` | 12 Acceptable | 23/36 |
 | Cài đặt | `#/cai-dat` | 13 Acceptable | 28/40 |
 | 404 | (route không có) | 15 Good | 29/36 |
@@ -60,8 +60,8 @@ Thang impeccable audit tính trên /20. Nielsen tính trên /40; màn nào H5 kh
 | HT1 | P1 | Enter/Space bị bắt toàn cục trong phiên học. Enter trên link Thoát hoặc "Xem nguyên văn" không chạy đúng mà lại trả lời thẻ hoặc chuyển câu. Enter trên nút phương án không chọn được. Space bị chiếm khi máy có TTS. Hộp Thoát mở bằng Esc thì focus nằm ở `body`. (WCAG 2.1.1/2.4.3) | `Quiz10.svelte`, `SessionView.svelte`, `CardIntro.svelte`, `Feedback.svelte`, `CardCloze.svelte:31` |
 | HT2 | P1 | Đổi route không chuyển focus và không báo cho trình đọc màn hình. Sau khi trả lời quiz, focus rơi về `body` và nút "Câu tiếp" nằm dưới nếp gấp ở 390×844. (WCAG 2.4.3, 4.1.3) | `router.svelte.ts`, `Shell.svelte:46` |
 | HT3 | P1 | Focus ring màu accent `#d97a1e` trên `--paper` chỉ đạt 2,83:1, dưới 3:1. `summary` dùng ring mặc định của trình duyệt. (WCAG 1.4.11) | `app.css:116` |
-| HT4 | P2 | Bật `prefers-reduced-motion` thì mọi animation/transition bị tắt hẳn (`none !important`), mất luôn phản hồi trạng thái. Có công tắc "motion-on" làm lối thoát. | `app.css:106-110` |
-| HT5 | P2 | Hôm nay chạy 6 vòng lặp trang trí vô hạn (mây, mặt trời, sóng…), không mang thông tin. | `lib/art/kit`, `QuocHoi.svelte` |
+| HT4 | P2 | Bật `prefers-reduced-motion` thì mọi animation/transition bị tắt hẳn (`none !important`), mất phản hồi chuyển động (thông tin đúng/sai vẫn còn qua màu nền và chữ). Có công tắc "motion-on" làm lối thoát. | `app.css:106-110` |
+| HT5 | P2 | Hôm nay chạy 6 vòng lặp trang trí vô hạn (mây, mặt trời, sóng…), không mang thông tin. | `app.css:816-821` (sunspin, drift, sway), `lib/art/kit/kit.css:26-28` (kit-sweep, kit-farcloud), `Clouds.svelte` |
 | HT6 | P2 | Eyebrow/kicker IN HOA có ở khắp nơi. Đây là mục duy nhất craft-floor cấm thật sự. Tiếng Việt in hoa có dấu chồng nên khó đọc. | `app.css:235` `.kicker`, `app.css:126` `.section-title` |
 | HT7 | P2 | Chữ dưới 12 px: sidebar 10,5 px, gáy sách 5,4–10,5 px, các nhãn 10 px. Thang cỡ chữ ở 1280 px có 9 giá trị. | `app.css:175,185`, `BookSpine.svelte` |
 | HT8 | P2 | Hex hard-code ngoài token, tập trung ở tủ gỗ và sidebar. | `app.css:171, 826-834, 305` |
