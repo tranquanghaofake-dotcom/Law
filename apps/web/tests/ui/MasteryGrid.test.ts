@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
 import { render } from '@testing-library/svelte';
 import type { Subject } from '$lib/content/types';
 import MasteryGrid from '$lib/ui/MasteryGrid.svelte';
@@ -63,5 +63,22 @@ describe('MasteryGrid — tên truy cập khớp chữ nhìn thấy (axe label-c
     expect(a.hasAttribute('aria-label')).toBe(false);
     expect(a.querySelector('.cell')?.getAttribute('aria-hidden')).toBe('true');
     expect(a.querySelector('.sr-only')?.textContent).toBe(', bậc 6, Tinh thông');
+  });
+});
+
+describe('MasteryGrid — đợt khoá mở hộp trong app, không dùng confirm() (SJ-6)', () => {
+  it('bấm đợt khoá: không gọi confirm, mở Sheet nói đợt đang học; "Ở lại" đóng; "Học vượt" trỏ đúng đợt', async () => {
+    const { fireEvent, waitFor } = await import('@testing-library/svelte');
+    const conf = vi.spyOn(window, 'confirm');
+    const r = render(MasteryGrid, { props: { subject, levels: {}, terms, states: { 'hp-1': 'current', 'hp-2': 'locked' } } });
+    await fireEvent.click(r.container.querySelector('#lesson-hp-2 a')!);
+    expect(conf).not.toHaveBeenCalled();
+    const dlg = r.container.querySelector('dialog.sheet')!;
+    await waitFor(() => expect(dlg.hasAttribute('open')).toBe(true));
+    expect(dlg.textContent).toContain('Hiến pháp là gì');
+    expect(dlg.textContent).not.toMatch(/Thi vượt/);
+    expect(dlg.querySelector('a.btn')?.getAttribute('href')).toBe('#/hoc/hp/hp-2');
+    await fireEvent.click(r.getByRole('button', { name: 'Ở lại' }));
+    await waitFor(() => expect(dlg.hasAttribute('open')).toBe(false));
   });
 });
