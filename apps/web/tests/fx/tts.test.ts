@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it, vi } from 'vitest';
-import { createTts } from '$lib/fx/tts.svelte';
+import { createTts, trimBounds } from '$lib/fx/tts.svelte';
 import { textKey } from '$lib/fx/prosody';
 
 function fakeSynth(voices: { lang: string; name: string }[]) {
@@ -92,7 +92,7 @@ describe('tts — giọng dựng sẵn (mp3)', () => {
     const { synth, speak } = fakeSynth([{ lang: 'vi-VN', name: 'Linh' }]);
     (globalThis as any).speechSynthesis = synth;
     const played: string[] = [];
-    const tts = createTts({ loadManifest: async () => [textKey('Chính xác.'), textKey('Hiến pháp.')], play: async (url) => { played.push(url); } , audioBase: '/tts/' });
+    const tts = createTts({ loadManifest: async () => [textKey('Chính xác.'), textKey('Hiến pháp.')], playAll: async (urls) => { played.push(...urls); }, audioBase: '/tts/' });
     await tts.ready;
     expect(tts.available).toBe(true);
     tts.speak('Chính xác. Hiến pháp.');
@@ -104,7 +104,7 @@ describe('tts — giọng dựng sẵn (mp3)', () => {
     const { synth, speak } = fakeSynth([{ lang: 'vi-VN', name: 'Linh' }]);
     (globalThis as any).speechSynthesis = synth;
     const played: string[] = [];
-    const tts = createTts({ loadManifest: async () => [textKey('Chính xác.')], play: async (url) => { played.push(url); } });
+    const tts = createTts({ loadManifest: async () => [textKey('Chính xác.')], playAll: async (urls) => { played.push(...urls); } });
     await tts.ready;
     tts.speak('Chính xác. Câu lạ.');
     expect(played).toEqual([]);
@@ -113,8 +113,36 @@ describe('tts — giọng dựng sẵn (mp3)', () => {
   it('không có giọng vi nhưng có mp3 → vẫn available', async () => {
     const { synth } = fakeSynth([]);
     (globalThis as any).speechSynthesis = synth;
-    const tts = createTts({ loadManifest: async () => ['abcd1234'], play: async () => {} });
+    const tts = createTts({ loadManifest: async () => ['abcd1234'], playAll: async () => {} });
     await tts.ready;
     expect(tts.available).toBe(true);
+  });
+});
+
+describe('tts — mp3 lỗi', () => {
+  it('phát mp3 lỗi → đọc bằng giọng trình duyệt', async () => {
+    const { synth, speak } = fakeSynth([{ lang: 'vi-VN', name: 'Linh' }]);
+    (globalThis as any).speechSynthesis = synth;
+    const tts = createTts({ loadManifest: async () => [textKey('Chính xác.')], playAll: async () => { throw new Error('decode'); } });
+    await tts.ready;
+    tts.speak('Chính xác.');
+    await new Promise((r) => setTimeout(r, 0));
+    expect(speak).toHaveBeenCalledTimes(1);
+  });
+});
+
+describe('tts — cắt khoảng lặng đầu/cuối câu', () => {
+  it('giữ phần có tiếng + 30 ms hai đầu', () => {
+    const sr = 1000;
+    const d = new Float32Array(1000);
+    for (let i = 300; i < 700; i++) d[i] = 0.5;
+    expect(trimBounds(d, sr)).toEqual([270, 730]);
+  });
+  it('toàn im lặng → đoạn rỗng', () => {
+    expect(trimBounds(new Float32Array(500), 1000)).toEqual([0, 0]);
+  });
+  it('tiếng sát mép → không vượt biên', () => {
+    const d = new Float32Array(100).fill(0.3);
+    expect(trimBounds(d, 1000)).toEqual([0, 100]);
   });
 });

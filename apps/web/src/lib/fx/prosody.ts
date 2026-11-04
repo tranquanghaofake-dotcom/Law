@@ -56,18 +56,18 @@ function strong(chunk: string): boolean {
 
 function pauseFor(chunk: string, endOfSentence: boolean): number {
   const last = chunk.at(-1) ?? '';
-  if (endOfSentence) return last === '?' || last === '!' ? 560 : 480;
-  if (last === ';' || last === ':') return 320;
-  if (last === ',') return 200;
-  return 120; // ngắt trước từ nối
+  if (endOfSentence) return last === '?' || last === '!' ? 320 : 260;
+  if (last === ';' || last === ':') return 180;
+  if (last === ',') return 90;
+  return 40; // ngắt trước từ nối
 }
 
 export function phrases(text: string): Phrase[] {
   const out: Phrase[] = [];
   for (const s of sentences(text)) {
     const plain = bare(s.replace(/\s+/g, ''));
-    if (plain === 'chínhxác' || plain === 'đúngrồi') { out.push({ text: s, rate: 1, pitch: 1.15, pauseAfter: 380 }); continue; }
-    if (plain === 'chưađúng' || plain === 'sairồi') { out.push({ text: s, rate: 0.85, pitch: 0.9, pauseAfter: 420 }); continue; }
+    if (plain === 'chínhxác' || plain === 'đúngrồi') { out.push({ text: s, rate: 1, pitch: 1.15, pauseAfter: 200 }); continue; }
+    if (plain === 'chưađúng' || plain === 'sairồi') { out.push({ text: s, rate: 0.9, pitch: 0.92, pauseAfter: 220 }); continue; }
     const chunks = s.split(/(?<=[,;:])\s+/).flatMap(splitLong).filter(Boolean);
     const question = /\?$/.test(s);
     chunks.forEach((c, i) => {
