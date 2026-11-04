@@ -88,8 +88,19 @@ jobs:
             ~/.cache/huggingface
             ~/.cache/voicefixer
           key: giongmodel-v1
-      - name: Tải model VieNeu (ONNX, chép thật vào models/ để onnxruntime đọc được dữ liệu ngoài)
-        run: python -c "from huggingface_hub import snapshot_download as d; d('pnnbao-ump/VieNeu-TTS-v3-Turbo', allow_patterns=['onnx_update/*'], local_dir='models/vieneu')"
+      - name: Tải model VieNeu + bộ giải mã MOSS (tệp thật, không symlink — onnxruntime từ chối dữ liệu ngoài nằm ngoài thư mục model)
+        run: |
+          python - <<'PY'
+          import os, shutil
+          from huggingface_hub import snapshot_download as d
+          d('pnnbao-ump/VieNeu-TTS-v3-Turbo', allow_patterns=['onnx_update/*'], local_dir='models/vieneu')
+          snap = d('OpenMOSS-Team/MOSS-Audio-Tokenizer-Nano-ONNX')
+          for f in os.listdir(snap):
+              p = os.path.join(snap, f)
+              if os.path.islink(p):
+                  real = os.path.realpath(p); os.unlink(p); shutil.copy2(real, p)
+          print('bộ giải mã:', snap, os.listdir(snap))
+          PY
       - uses: actions/download-artifact@v7
         with:
           name: plan
