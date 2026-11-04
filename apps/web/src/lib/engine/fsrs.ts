@@ -55,6 +55,11 @@ export function review(card: MemoryCard, rating: Rating, now: Date, retention = 
   return { card: r.card, log: r.log };
 }
 
+/** Xác suất còn nhớ (0–1) của thẻ tại `now` theo FSRS — dùng xếp ưu tiên ôn (thấp = sắp quên). */
+export function retrievability(card: MemoryCard, now: Date): number {
+  return fsrs().get_retrievability(card, now, false);
+}
+
 export function isDue(card: MemoryCard, now: Date): boolean {
   return new Date(card.due).getTime() <= now.getTime();
 }

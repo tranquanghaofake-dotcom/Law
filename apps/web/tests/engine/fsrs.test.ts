@@ -54,3 +54,16 @@ describe('review', () => {
     expect(isDue(card, new Date(now.getTime() + 30 * 86400000))).toBe(true);
   });
 });
+
+import { retrievability } from '$lib/engine/fsrs';
+describe('retrievability', () => {
+  it('giảm dần theo thời gian kể từ lần ôn', () => {
+    const now = new Date('2026-11-01T08:00:00Z');
+    const { card } = review(newCard(now), Rating.Good, now);
+    const r1 = retrievability(card, new Date(now.getTime() + 86400000));
+    const r10 = retrievability(card, new Date(now.getTime() + 10 * 86400000));
+    expect(r1).toBeGreaterThan(r10);
+    expect(r10).toBeGreaterThan(0);
+    expect(r1).toBeLessThanOrEqual(1);
+  });
+});

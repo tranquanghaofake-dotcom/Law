@@ -5,6 +5,7 @@
   import { buildReviewSession, type Step } from '$lib/engine/session';
   import { reviewPoolIds } from '$lib/engine/pool';
   import { repo } from '$lib/store/progress-repo';
+  import { retrievability } from '$lib/engine/fsrs';
   import SessionView from '$lib/ui/SessionView.svelte';
   import { hashFor, route } from '$lib/router.svelte';
   const subjectId = route.params.subject as string | undefined;
@@ -31,6 +32,9 @@
       }
       if (!concepts.length) { empty = true; return; }
       const levels = Object.fromEntries(due.map((p) => [p.conceptId, p.level])) as Record<string, Level>;
+      // sắp quên nhất ôn trước khi đến hạn nhiều hơn số bước một phiên
+      const now = new Date();
+      const urgency = Object.fromEntries(due.map((p) => [p.conceptId, retrievability(p.card, now)]));
       const upDays = Object.fromEntries(due.flatMap((p) => (p.upDay ? [[p.conceptId, p.upDay]] : []))) as Record<string, string>;
       // phương án nhiễu: khái niệm dễ nhầm (≤ 8) + bảng tên của các môn đang ôn
       const extra = reviewPoolIds(concepts);
@@ -40,7 +44,7 @@
         Promise.all(subjectsInUse.map((sid) => loadTerms(sid).catch(() => ({})))),
       ]);
       const ctx = { pool: pools.flat(), terms: Object.fromEntries(subjectsInUse.map((sid, k) => [sid, termList[k]])) };
-      data = { steps: buildReviewSession(concepts, levels, Math.random, undefined, ctx), concepts, levels, upDays };
+      data = { steps: buildReviewSession(concepts, levels, Math.random, undefined, ctx, urgency), concepts, levels, upDays };
     } catch (e) { error = (e as Error).message; }
   }
   load();
