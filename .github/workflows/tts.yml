@@ -1,14 +1,14 @@
 # Giọng đọc clone v5b (tools/tts/clone.py): chia câu cho nhiều máy chạy song song → gộp vào cache Actions → deploy lấy cache chép vào trang.
 # Chạy tay: Actions → "Giọng đọc" → Run workflow. Chạy lại / tự chạy chỉ sinh câu mới hoặc câu đã sửa.
-# Lần đầu (~13 800 câu, ~20 giờ âm thanh) mất khoảng 3–4 giờ với 20 máy. Báo cáo (câu cần nghe lại) ở trang tóm tắt của lần chạy.
+# Lần đầu (~13 800 câu, ~20 giờ âm thanh) mất khoảng 5–6 giờ (40 phần, 20 máy cùng lúc, đo thật trên máy GitHub). Báo cáo (câu cần nghe lại) ở trang tóm tắt của lần chạy.
 name: Giọng đọc
 
 on:
   workflow_dispatch:
     inputs:
       shards:
-        description: Số máy chạy song song (tối đa 20 máy cùng lúc)
-        default: '20'
+        description: Số phần chia việc (chạy tối đa 20 máy cùng lúc; 40 phần ≈ 2,8 giờ/phần, không chạm giới hạn 6 giờ)
+        default: '40'
       limit:
         description: Chỉ sinh N câu đầu để thử (0 = tất cả)
         default: '0'
@@ -52,7 +52,7 @@ jobs:
           key: tts-${{ github.run_id }}
           restore-keys: tts-
       - id: plan
-        run: python3 tools/tts/clone.py plan --texts .tts-texts.json --cache .tts-cache --shards "${{ inputs.shards || '20' }}" --limit "${{ inputs.limit || '0' }}" --sample "${{ inputs.sample || '0' }}" --out plan --github-output "$GITHUB_OUTPUT"
+        run: python3 tools/tts/clone.py plan --texts .tts-texts.json --cache .tts-cache --shards "${{ inputs.shards || '40' }}" --limit "${{ inputs.limit || '0' }}" --sample "${{ inputs.sample || '0' }}" --out plan --github-output "$GITHUB_OUTPUT"
       - uses: actions/upload-artifact@v6
         with:
           name: plan

@@ -29,7 +29,7 @@ Actions → **Giọng đọc** → Run workflow:
 
 **Cách đọc đúng logic** (`vi_norm.py`, có test): dãy "Khoản 2, 3, 4" → "khoản hai, khoản ba, khoản bốn"; "VBHN 67/VBHN-VPQH 2025" → "văn bản hợp nhất số sáu mươi bảy năm hai nghìn không trăm hai mươi lăm"; ký hiệu (= ≥ · ×…), đơn vị (ha, cm3…), số La Mã, khoảng số "24.000–90.000" đọc ra chữ; bỏ khỏi lời đọc đường dẫn Drive, tên tệp, tên miền, mã học phần — nhưng GIỮ cảnh báo độ tin cậy ("chưa đối chiếu nguyên văn", "quan điểm học thuật"). Đã quét cả ~13 000 câu: không còn chữ số, ký hiệu hay chữ viết tắt chưa đọc được.
 
-Lần đầu ~13 800 câu ≈ 3–4 giờ với 20 máy (miễn phí với repo public). Sau đó workflow tự chạy khi dữ liệu luật đổi và mỗi tuần một lần — chỉ sinh câu mới, vài phút.
+Lần đầu ~13 800 câu ≈ 5–6 giờ: mặc định chia 40 phần, chạy 20 máy cùng lúc (đo thật: máy GitHub ~5,6 giây máy cho mỗi giây âm thanh; miễn phí với repo public). Sau đó workflow tự chạy khi dữ liệu luật đổi và mỗi tuần một lần — chỉ sinh câu mới, vài phút.
 
 **Báo cáo**: trang tóm tắt của lần chạy (và artifact `bao-cao-giong-doc`) liệt kê câu bị gắn cờ: câu gốc, chữ Whisper nghe được, số lỗi. Chỉ cần nghe các câu này; đọc sai thì sửa cách đọc trong `vi_norm.py` (chữ viết tắt mới, số hiệu lạ) rồi chạy lại.
 
