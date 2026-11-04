@@ -1,6 +1,7 @@
 <script lang="ts">
   import Glyph from '$lib/art/Glyph.svelte';
   import StreakCard from '$lib/art/StreakCard.svelte';
+  import CountUp from './CountUp.svelte';
   import StreakIgnite from '$lib/art/StreakIgnite.svelte';
   import { shouldIgnite, IGNITE_KEY } from './ignite';
   import { localDay } from '$lib/game/streak';
@@ -54,7 +55,7 @@
       <p class="score"><b>{summary.correct}</b><small>/{summary.total} đúng</small></p>
     </div>
     <div class="end-stats">
-      <p class="xp">+{summary.xp} XP</p>
+      <p class="xp">+<CountUp value={summary.xp} from={0} duration={1100} /> XP</p>
       <dl class="stat-list">
         {#if summary.bestCombo !== undefined}<div><dt>Combo dài nhất</dt><dd>{summary.bestCombo}</dd></div>{/if}
         {#if summary.golden}<div><dt>Câu vàng</dt><dd>{summary.golden}</dd></div>{/if}

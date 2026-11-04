@@ -5,6 +5,7 @@
   // Rail hẹp (< 1280 px): chỉ huy hiệu + số ngày + ấn; chữ khác ẩn khỏi mắt nhưng giữ cho trình đọc màn hình.
   import StreakBadge from '$lib/art/StreakBadge.svelte';
   import Bookshelf from './Bookshelf.svelte';
+  import CountUp from './CountUp.svelte';
   import { careerState, displayTitle } from '$lib/game/career';
   import { header } from './header.svelte';
   import { shelf } from './shelf.svelte';
@@ -31,7 +32,7 @@
   <a class="me-next" href="#/toi">
     {#if pp}
       <span class="bar" aria-hidden="true"><span style="width:{pp.pct}%"></span></span>
-      <span class="me-next-t">{pp.have}/{pp.need} sách · kế tiếp: {pp.title}</span>
+      <span class="me-next-t"><CountUp value={pp.have} key="post-have" />/{pp.need} sách · kế tiếp: {pp.title}</span>
     {:else}
       <span class="me-next-t">Đã đạt chức cao nhất của nhánh</span>
     {/if}
