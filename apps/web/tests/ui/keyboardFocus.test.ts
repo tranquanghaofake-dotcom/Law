@@ -1,14 +1,15 @@
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import { cleanup, fireEvent, render, screen } from '@testing-library/svelte';
 import CardIntro from '$lib/ui/cards/CardIntro.svelte';
+import CardCloze from '$lib/ui/cards/CardCloze.svelte';
+import Feedback from '$lib/ui/Feedback.svelte';
 import { isInteractiveTarget } from '$lib/ui/cards/types';
 import { focusRouteHeading } from '$lib/ui/routeFocus';
 import type { Concept } from '$lib/content/types';
 
 afterEach(() => { cleanup(); document.body.innerHTML = ''; });
 
-const key = (el: Element, k: string) => new KeyboardEvent('keydown', { key: k, bubbles: true }) as KeyboardEvent & { target: Element } & Record<string, unknown>;
-const evOn = (el: Element) => { const e = key(el, 'Enter'); Object.defineProperty(e, 'target', { value: el }); return e; };
+const evOn = (el: Element) => { const e = new KeyboardEvent('keydown', { key: 'Enter', bubbles: true }); Object.defineProperty(e, 'target', { value: el }); return e; };
 
 describe('isInteractiveTarget (HT1)', () => {
   it('link, nút, summary, phần tử con của nút → true; div/body → false', () => {
@@ -68,5 +69,47 @@ describe('focusRouteHeading (HT2)', () => {
     document.getElementById('b')!.focus();
     await focusRouteHeading(document, 20);
     expect(document.activeElement?.id).toBe('b');
+  });
+});
+
+describe('Feedback: Enter/Space (HT1)', () => {
+  const props = (o: Record<string, unknown> = {}) => ({ result: { correct: true, elapsedMs: 1 }, item: { type: 'intro' as const }, concept: { ...concept, source: { ...concept.source, url: 'https://vbpl.vn/x' } }, onnext: vi.fn(), onspeak: vi.fn(), ...o });
+  it('Enter trên link "Xem văn bản" không chuyển câu', async () => {
+    const p = props();
+    render(Feedback, { props: p });
+    const link = screen.getByRole('link', { name: 'Xem văn bản' });
+    link.focus();
+    await fireEvent.keyDown(link, { key: 'Enter' });
+    expect(p.onnext).not.toHaveBeenCalled();
+  });
+  it('nút Câu tiếp tự nhận focus; Space trên nó là Nghe, không chuyển câu', async () => {
+    const p = props();
+    render(Feedback, { props: p });
+    const next = screen.getByRole('button', { name: /Câu tiếp/ });
+    expect(document.activeElement).toBe(next);
+    await fireEvent.keyDown(next, { key: ' ' });
+    expect(p.onspeak).toHaveBeenCalledTimes(1);
+    expect(p.onnext).not.toHaveBeenCalled();
+  });
+});
+
+describe('CardCloze: Enter (HT1)', () => {
+  const item = { type: 'cloze' as const, level: 3 as const, text: 'Tài sản là vật và {{quyền tài sản}}.', bank_extra: ['hoa lợi'] };
+  it('mode bank: Enter trên nút từ không nộp bài', async () => {
+    const onanswer = vi.fn();
+    render(CardCloze, { props: { concept, item, rng: () => 0.5, onanswer, mode: 'bank' } });
+    const w = screen.getByRole('button', { name: 'quyền tài sản' });
+    await fireEvent.click(w);
+    w.focus();
+    await fireEvent.keyDown(w, { key: 'Enter' });
+    expect(onanswer).not.toHaveBeenCalled();
+  });
+  it('mode type: Enter trong ô nhập vẫn nộp', async () => {
+    const onanswer = vi.fn();
+    render(CardCloze, { props: { concept, item, rng: () => 0.5, onanswer, mode: 'type' } });
+    const input = screen.getByRole('textbox');
+    await fireEvent.input(input, { target: { value: 'quyền tài sản' } });
+    await fireEvent.keyDown(input, { key: 'Enter' });
+    expect(onanswer).toHaveBeenCalledTimes(1);
   });
 });

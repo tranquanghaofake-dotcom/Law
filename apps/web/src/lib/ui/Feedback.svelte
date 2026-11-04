@@ -26,6 +26,9 @@
   function focusOnMount(node: HTMLElement) { node.focus({ preventScroll: true }); }
   function onkey(e: KeyboardEvent) {
     if (isTypingTarget(e)) return;
+    // Nút Câu tiếp được focus tự động: Space vẫn là phím Nghe như title của nút loa; Enter kích hoạt nút gốc.
+    const onNextBtn = (e.target as HTMLElement | null)?.hasAttribute?.('data-next') ?? false;
+    if (e.key === ' ' && onNextBtn && onspeak) { e.preventDefault(); onspeak(speakText); return; }
     if ((e.key === 'Enter' || e.key === ' ') && isInteractiveTarget(e)) return;
     if (e.key === 'Enter') { e.preventDefault(); onnext(); }
     if (e.key === ' ' && onspeak) { e.preventDefault(); onspeak(speakText); }
@@ -45,5 +48,5 @@
   {#if retry}<p class="muted small">Vòng sửa sai: câu này không ghi vào tiến độ nhớ, chỉ để bạn gỡ lại.</p>{/if}
   <p class="source muted">Nguồn: {source.cite}{#if source.url} · <a href={source.url} target="_blank" rel="noopener">Xem văn bản</a>{/if}</p>
   {#if !result.correct && confusableTerms.length && !confusables.length}<p class="muted">Dễ nhầm với: <b>{confusableTerms.join(', ')}</b></p>{/if}
-  <button class="btn" type="button" onclick={onnext} use:focusOnMount>{last ? 'Xem kết quả' : 'Câu tiếp →'} <kbd>↵</kbd></button>
+  <button class="btn" type="button" data-next onclick={onnext} use:focusOnMount>{last ? 'Xem kết quả' : 'Câu tiếp →'} <kbd>↵</kbd></button>
 </div>

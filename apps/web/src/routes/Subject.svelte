@@ -48,7 +48,7 @@
       document.title = `${s.title} · Luyện Luật`;
     } catch (e) { error = (e as Error).message; }
   }
-  $effect(() => { void route.params.subject; load(); });
+  $effect(() => { if (route.name === 'subject' && route.params.subject) load(); });
   $effect(() => {
     if (!subject || !summary) return;
     return setRail(SubjectRail, { subjectId: subject.id, due, difficult });

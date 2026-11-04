@@ -8,7 +8,7 @@
   import { sfx } from '$lib/fx/sfx';
   import { buzz } from '$lib/fx/haptics';
   import { tts } from '$lib/fx/tts.svelte';
-  import { onDestroy } from 'svelte';
+  import { onDestroy, tick } from 'svelte';
   import { feedbackSpeech } from '$lib/ui/session/speech';
   import { hashFor, route } from '$lib/router.svelte';
   import { isInteractiveTarget, isTypingTarget, KEYS } from '$lib/ui/cards/types';
@@ -64,7 +64,7 @@
     if (chosen === null) return;
     tts.stop();
     chosen = null;
-    if (i + 1 < qs.length) { i += 1; return; }
+    if (i + 1 < qs.length) { i += 1; await tick(); document.querySelector<HTMLElement>('.question-card .opt')?.focus({ preventScroll: true }); return; }
     finished = true;
     const b = await stats.best(set!.id);
     prevBest = b;
@@ -84,6 +84,8 @@
     const n = Number(e.key);
     if (n >= 1 && n <= 4) { e.preventDefault(); pick(n - 1); }
     // Enter/Space trên link hay nút: để trình duyệt kích hoạt đúng phần tử đó (link Thoát, Xem điều luật, phương án).
+    const onNextBtn = (e.target as HTMLElement | null)?.hasAttribute?.('data-next') ?? false;
+    if (e.key === ' ' && onNextBtn && chosen !== null && settings.tts && tts.available) { e.preventDefault(); tts.speak(speechFor(chosen === q.answerIdx, q)); return; }
     if ((e.key === 'Enter' || e.key === ' ') && isInteractiveTarget(e)) return;
     if (e.key === 'Enter') { e.preventDefault(); next(); }
     if (e.key === ' ' && chosen !== null && settings.tts && tts.available) { e.preventDefault(); tts.speak(speechFor(chosen === q.answerIdx, q)); }
@@ -111,7 +113,7 @@
     </div>
     <div class="qr-body">
       <p class="kicker">{no ? `Đề ${no} · ` : ''}{GROUPS[set.group] ?? set.group}</p>
-      <h1 id="qr-h">{verdict.title}</h1>
+      <h1 id="qr-h" tabindex="-1" use:focusNext>{verdict.title}</h1>
       <p class="qr-set">{set.title}</p>
       <p class="msg">{verdict.msg}</p>
       <p class="qr-rec small muted">{record}</p>
@@ -162,7 +164,7 @@
       <p class="verdict">{chosen === q.answerIdx ? 'Chính xác.' : `Chưa đúng. Đáp án: ${KEYS[q.answerIdx]}`}</p>
       <p>{q.explain}</p>
       <p class="source muted">Căn cứ: {q.basis}{#if q.url} · <a href={q.url} target="_blank" rel="noopener">Xem điều luật</a>{/if}</p>
-      <button class="btn" type="button" onclick={next} use:focusNext>{i === qs.length - 1 ? 'Xem kết quả' : 'Câu tiếp →'} <kbd>↵</kbd></button>
+      <button class="btn" type="button" data-next onclick={next} use:focusNext>{i === qs.length - 1 ? 'Xem kết quả' : 'Câu tiếp →'} <kbd>↵</kbd></button>
     </div>
   {/if}
 {/if}

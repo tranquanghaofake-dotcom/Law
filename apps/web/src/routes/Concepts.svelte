@@ -52,11 +52,14 @@
       if (target) {
         open = [target];
         await tick();
-        document.getElementById(`c-${target}`)?.scrollIntoView({ block: 'start' });
+        const el = document.getElementById(`c-${target}`);
+        el?.scrollIntoView({ block: 'start' });
+        // Deep-link: focus nút của mục đang mở để Tab đi tiếp từ đây, không nhảy về đầu trang.
+        el?.querySelector<HTMLElement>('.entry-toggle')?.focus({ preventScroll: true });
       }
     } catch (e) { error = (e as Error).message; }
   }
-  $effect(() => { void route.params.subject; void route.params.concept; load(); });
+  $effect(() => { void route.params.concept; if (route.name === 'concepts' && route.params.subject) load(); });
 
   function toggle(id: string) { open = open.includes(id) ? open.filter((x) => x !== id) : [...open, id]; }
   const termOf = (id: string) => byId[id]?.term ?? id;

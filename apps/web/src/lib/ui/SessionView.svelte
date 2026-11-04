@@ -51,6 +51,8 @@
   let result = $state<AnswerResult | null>(null);
   let ended = $state<null | { streak: number; streakEvent: StreakEvent; rankBefore: RankInfo; rankAfter: RankInfo; dueTomorrow: number; promotion: string | null }>(null);
   let confirmExit = $state(false);
+  /** Phần tử đang có focus trước khi mở hộp Thoát bằng Esc, để trả về khi đóng. */
+  let returnFocus: HTMLElement | null = null;
   // gợi ý một lần: lửa chuỗi và dấu mộc theo mốc (không chặn học, tắt bằng một chạm)
   let showHint = $state(!hintSeen('session-glow'));
   function dismissHint() { showHint = false; markHintSeen('session-glow'); }
@@ -209,7 +211,13 @@
   /** Hộp Thoát mở ra: focus vào nút an toàn (Ở lại) thay vì để rơi về body. */
   function focusOnMount(node: HTMLElement) { node.focus({ preventScroll: true }); }
   function onkey(e: KeyboardEvent) {
-    if (e.key === 'Escape' && !ended) { e.preventDefault(); if (isTypingTarget(e)) (e.target as HTMLElement).blur(); confirmExit = !confirmExit; }
+    if (e.key === 'Escape' && !ended) {
+      e.preventDefault();
+      if (isTypingTarget(e)) (e.target as HTMLElement).blur();
+      if (!confirmExit) { const a = document.activeElement as HTMLElement | null; returnFocus = a && a !== document.body ? a : null; }
+      confirmExit = !confirmExit;
+      if (!confirmExit) { const r = returnFocus; returnFocus = null; if (r?.isConnected) tick().then(() => r.focus({ preventScroll: true })); }
+    }
   }
 </script>
 
