@@ -1597,8 +1597,10 @@ body:has(dialog.sheet[open]) { overflow: hidden; }
   .cover-grid { grid-template-columns: repeat(auto-fill, minmax(92px, 1fr)); gap: var(--sp-3); }
 }
 @media (min-width: 1024px) {
-  .shelves { display: grid; grid-template-columns: 1fr 1fr; column-gap: var(--sp-6); align-items: start; }
-  .shelves .empty { grid-column: 1 / -1; }
+  /* Cột kiểu báo thay lưới 2 cột: kệ ngắn không để hố trống (S-3). Thứ tự Tab theo DOM = đọc hết cột trái rồi cột phải. */
+  .shelves { columns: 2; column-gap: var(--sp-6); }
+  .shelves > .shelf-sec { break-inside: avoid; display: inline-block; width: 100%; }
+  .shelves .empty { column-span: all; }
 }
 
 /* ---- Bản tối Hồ sơ: gốc cây và chip nhánh không đảo nền trắng; cột bậc 0 tối hơn đường kẻ ---- */
@@ -1798,3 +1800,6 @@ select.qz-sort { min-height: var(--ctl-h); padding: 0 var(--sp-3); border: 1px s
 .settings .saved { display: inline-flex; align-items: center; gap: 2px; margin-left: var(--sp-2); font-size: var(--fs-xs); font-weight: 600; color: var(--ok); }
 /* Hôm nay: tên môn là dòng phụ trên tiêu đề đợt (H-1) */
 .hero-card .hero-subj { margin: 0; font-size: var(--fs-sm); font-weight: 600; color: var(--muted); }
+/* Môn học: chip lọc xuống dòng từ 768 (S-1); tên môn hiện đủ, không cắt "…" — hai môn trùng đầu tên vẫn phân biệt được (S-2) */
+@media (min-width: 768px) { .shelf-chips { flex-wrap: wrap; overflow: visible; } }
+.cover-link .name { display: block; -webkit-line-clamp: unset; line-clamp: unset; overflow: visible; }
