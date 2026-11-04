@@ -26,6 +26,16 @@ export const WONDERS: Entry[] = [
   { id: 'nha-tho-lon-ha-noi', load: () => import('./nha-tho-lon-ha-noi') },
   { id: 'ngo-mon-hue', load: () => import('./ngo-mon-hue') },
   { id: 'thap-phuoc-duyen', load: () => import('./thap-phuoc-duyen') },
+  { id: 'cau-truong-tien', load: () => import('./cau-truong-tien') },
+  { id: 'thanh-dia-my-son', load: () => import('./thanh-dia-my-son') },
+  { id: 'thap-ba-ponagar', load: () => import('./thap-ba-ponagar') },
+  { id: 'thap-po-klong-garai', load: () => import('./thap-po-klong-garai') },
+  { id: 'cau-rong-da-nang', load: () => import('./cau-rong-da-nang') },
+  { id: 'cau-vang-ba-na', load: () => import('./cau-vang-ba-na') },
+  { id: 'ngu-hanh-son', load: () => import('./ngu-hanh-son') },
+  { id: 'pho-co-hoi-an', load: () => import('./pho-co-hoi-an') },
+  { id: 'thanh-nha-ho', load: () => import('./thanh-nha-ho') },
+  { id: 'trang-an-ninh-binh', load: () => import('./trang-an-ninh-binh') },
 ];
 
 /** Chọn ngẫu nhiên một kỳ quan cho phiên (`rand` tiêm được để test). */
