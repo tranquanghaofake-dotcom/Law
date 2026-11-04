@@ -6,7 +6,8 @@ vi.mock('$lib/store/progress-repo', () => ({ repo: { record: (...a: unknown[]) =
 vi.mock('$lib/store/stats', () => ({
   stats: { addXp: async () => 0, xp: async () => 0, markLesson: async () => false, streak: async () => ({ count: 0, longest: 0, lastDay: null, freezes: 0 }), setStreak: async () => {} },
 }));
-vi.mock('$lib/fx/sfx', () => ({ sfx: { preload() {}, play() {} } }));
+const playCombo = vi.fn();
+vi.mock('$lib/fx/sfx', () => ({ sfx: { preload() {}, play() {}, playCombo: (...a: unknown[]) => playCombo(...a), stopCombo() {} } }));
 vi.mock('$lib/fx/confetti', () => ({ burst() {}, reducedMotion: () => true }));
 vi.mock('$lib/fx/haptics', () => ({ buzz() {} }));
 vi.mock('$lib/ui/header.svelte', () => ({ refreshHeader: async () => {} }));
@@ -29,7 +30,7 @@ const steps = (kind?: 'pretest'): Step[] => [
   ...(kind ? [] : []),
 ];
 
-beforeEach(() => { record.mockClear(); localStorage.clear(); });
+beforeEach(() => { record.mockClear(); playCombo.mockClear(); localStorage.clear(); });
 afterEach(() => cleanup());
 
 describe('SessionView: độ tự tin', () => {
@@ -78,5 +79,23 @@ describe('SessionView: đoán trước', () => {
     await vi.waitFor(() => expect(container.querySelector('.feedback')).not.toBeNull());
     expect(record).not.toHaveBeenCalled();
     expect(container.querySelector('.pretest-bar')?.textContent).toContain('Đoán sai không sao');
+  });
+});
+
+describe('SessionView: hiệu ứng chuỗi đúng', () => {
+  const click = (c: HTMLElement, right: boolean) => fireEvent.click([...c.querySelectorAll('.opt')].find((o) => !!o.textContent?.includes('Đúng') === right)!);
+  it('đúng → viền lên mốc 1, nét kỳ quan sáng thêm, phát playCombo(1); sai → viền về 0, nét giữ nguyên', async () => {
+    const { container, getByRole } = render(SessionView, { props: { steps: steps(), concepts: [concept], levels: { a: 2 } } });
+    const edge = () => container.querySelector('.combo-edge') as HTMLElement;
+    expect(edge().dataset.level).toBe('0');
+    await click(container, true);
+    await vi.waitFor(() => expect(edge().dataset.level).toBe('1'));
+    expect(edge().dataset.tier).toBe('do');
+    expect(playCombo).toHaveBeenCalledWith(1);
+    await vi.waitFor(() => expect(container.querySelectorAll('.wonder .lit .core').length).toBe(3));
+    await fireEvent.click(getByRole('button', { name: /Câu tiếp/ }));
+    await click(container, false);
+    await vi.waitFor(() => expect(edge().dataset.level).toBe('0'));
+    expect(container.querySelectorAll('.wonder .lit .core').length).toBe(3);
   });
 });

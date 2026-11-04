@@ -10,5 +10,39 @@ export function comboTier(combo: number): ComboTier {
   return { tier: 0, mult: 1, label: '', next: 5, progress: c / 5 };
 }
 
+// ───────── Viền sáng theo chuỗi đúng liên tiếp ─────────
+/** Mốc chuỗi đúng: 1 → 2 → 3 → 5 → 8 → 13 (Fibonacci sau mốc 5). Bốn mốc đầu đi hết dải bậc màu thẻ chuyên cần. */
+export const GLOW_MILESTONES = [1, 2, 3, 5, 8, 13] as const;
+export type GlowTier = 'do' | 'lam' | 'tim' | 'trang-den';
+/** Bậc màu theo mốc (chỉ số 1…6); mốc 8 và 13 giữ "Trắng – đen giao thoa" nhưng dày và rực hơn. */
+const LEVEL_TIER: GlowTier[] = ['do', 'lam', 'tim', 'trang-den', 'trang-den', 'trang-den'];
+
+/** Màu theo bậc (cùng gam thẻ chuyên cần, lib/ui/streakView.ts): line = nét, glow = quầng, alt = nét xen kẽ (chỉ Trắng – đen). */
+export const COMBO_COLORS: Record<GlowTier, { line: string; glow: string; alt: string }> = {
+  do: { line: '#e3300b', glow: '#ff6a3a', alt: 'transparent' },
+  lam: { line: '#0a5cff', glow: '#38b6ff', alt: 'transparent' },
+  tim: { line: '#7417ff', glow: '#b65cff', alt: 'transparent' },
+  'trang-den': { line: '#ffffff', glow: '#9db2cf', alt: '#050507' },
+};
+
+/** Số mốc đã đạt: 0 (chưa có chuỗi) … 6. */
+export function glowLevel(combo: number): number {
+  const c = Math.max(0, Math.floor(combo));
+  let n = 0;
+  for (const m of GLOW_MILESTONES) if (c >= m) n += 1;
+  return n;
+}
+
+export type EdgeGlow = { level: number; tier: GlowTier | null; width: number; blur: number; alpha: number };
+const WIDTH = [0, 2, 3, 4, 5, 6, 8];
+const BLUR = [0, 10, 16, 24, 32, 42, 56];
+const ALPHA = [0, 0.5, 0.6, 0.7, 0.82, 0.92, 1];
+
+/** Viền màn hình theo chuỗi: mỗi mốc dày hơn, quầng rộng hơn, đậm hơn và đổi bậc màu. Chuỗi 0 → tắt. */
+export function edgeGlow(combo: number): EdgeGlow {
+  const level = glowLevel(combo);
+  return { level, tier: level ? LEVEL_TIER[level - 1] : null, width: WIDTH[level], blur: BLUR[level], alpha: ALPHA[level] };
+}
+
 /** Một chữ "+10" đang bay: toạ độ viewport nơi vừa bấm. */
 export type XpFloat = { id: number; x: number; y: number; text: string; golden: boolean };
