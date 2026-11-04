@@ -38,6 +38,14 @@ jobs:
         env:
           # Trang nằm tại https://<user>.github.io/Law/ nên mọi đường dẫn phải bắt đầu bằng /Law/
           BASE_PATH: /${{ github.event.repository.name }}/
+      # Giọng đọc dựng sẵn (workflow tts.yml): có cache thì chép vào bản build, không có thì bỏ qua.
+      - uses: actions/cache/restore@v5
+        continue-on-error: true
+        with:
+          path: .tts-cache
+          key: tts-none
+          restore-keys: tts-
+      - run: if [ -f .tts-cache/manifest.json ]; then mkdir -p apps/web/dist/tts && cp .tts-cache/*.mp3 .tts-cache/manifest.json apps/web/dist/tts/; fi
       - uses: actions/upload-pages-artifact@v5
         with: { path: apps/web/dist }
 

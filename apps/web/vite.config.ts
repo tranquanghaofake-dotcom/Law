@@ -41,6 +41,8 @@ export default defineConfig({
         ],
         runtimeCaching: [
           // Khái niệm (3,6 MB) và bộ đề: đặt TRƯỚC luật chung bên dưới (workbox khớp theo thứ tự).
+          // Giọng đọc dựng sẵn (tools/tts): không precache (~100 MB), nghe tới đâu lưu tới đó.
+          { urlPattern: /\/tts\/.*\.(mp3|json)$/, handler: 'CacheFirst', options: { cacheName: 'tts', expiration: { maxEntries: 600 } } },
           { urlPattern: /\/content\/(concepts|sets)\/.*\.json$/, handler: 'StaleWhileRevalidate', options: { cacheName: 'content-detail', expiration: { maxEntries: 300 } } },
           { urlPattern: /\/content\/.*\.json$/, handler: 'StaleWhileRevalidate', options: { cacheName: 'content' } },
           { urlPattern: /^https:\/\/fonts\.(googleapis|gstatic)\.com\//, handler: 'CacheFirst', options: { cacheName: 'fonts', expiration: { maxEntries: 20, maxAgeSeconds: 60 * 60 * 24 * 365 } } },

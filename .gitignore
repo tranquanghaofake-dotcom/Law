@@ -29,3 +29,4 @@ Thumbs.db
 # ảnh chụp đối chiếu (sinh bằng npm run shots)
 tools/shots/
 .superpowers/
+.tts-cache/
