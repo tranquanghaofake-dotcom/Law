@@ -19,7 +19,7 @@ describe('nội dung Quản trị tài sản trí tuệ', () => {
         expect(c.source.cite, f).toMatch(/chưa đối chiếu nguyên văn/);
       } else {
         expect(c.source.kind, f).toBe('statute');
-        expect(c.source.cite).toMatch(/(Luật Sở hữu trí tuệ \(VBHN 67\/VBHN-VPQH 2026\)|Luật Doanh nghiệp 2020 \(VBHN 67\/VBHN-VPQH 2025\)|Luật Thương mại 2005 \(VBHN 113\/VBHN-VPQH 2025\))$/);
+        expect(c.source.cite).toMatch(/(Luật Sở hữu trí tuệ \(sửa đổi, bổ sung năm 2009, 2019, 2022, 2025\)|Luật Doanh nghiệp 2020 \(sửa đổi, bổ sung năm 2022, 2025\)|Luật Thương mại 2005 \(sửa đổi, bổ sung năm 2017, 2019, 2025\))$/);
         expect(c.source.url).toMatch(/^https:\/\/thuvienphapluat\.vn\//);
       }
       expect(c.checked).toBe('2026-11-01');

@@ -12,17 +12,22 @@
   import RankBadge from './RankBadge.svelte';
   import Icon from '$lib/art/Icon.svelte';
   import { route } from '$lib/router.svelte';
+  import { focusRouteHeading } from './routeFocus';
   import { parentHash, goBack } from './back';
 
   let { active, children }: { active: RouteName; children: Snippet } = $props();
   const current = $derived(activeNav(active));
   const Rail = $derived(rail.current?.component);
   const hasParent = $derived(parentHash(route) !== null);
+  // Trang có breadcrumb riêng (Subject, Concepts): ≥ 768 ẩn nút Quay lại ngay từ lúc tải (không chờ breadcrumb → không giật)
+  const hasCrumbs = $derived(route.name === 'subject' || route.name === 'concepts');
   refreshSidenav();
   const railProps = $derived(rail.current?.props ?? {});
 </script>
 
 <div class="shell" class:has-rail={!!Rail}>
+  <!-- Bỏ qua điều hướng (WCAG 2.4.1). Router dùng hash: href="#main" sẽ thành route 404 → chặn mặc định, chỉ chuyển focus. -->
+  <a class="skip-link" href="#main" onclick={(e) => { e.preventDefault(); focusRouteHeading(); }}>Bỏ qua tới nội dung</a>
   <header class="topbar">
     <a class="brand" href="#/"><span class="mark" aria-hidden="true">§</span> Luyện Luật</a>
     <div class="meta"><StreakFlame count={header.streak} longest={header.longest} /><RankBadge /></div>
@@ -45,9 +50,9 @@
 
   <main class="content" id="main" tabindex="-1">
     {#if !storage.available}
-      <p class="banner" role="alert">⚠ Trình duyệt đang chặn lưu trữ (chế độ riêng tư?). Bạn vẫn học được nhưng tiến độ sẽ mất khi đóng tab.</p>
+      <p class="banner" role="alert"><Glyph name="warn" size={16} /> Trình duyệt đang chặn lưu trữ (chế độ riêng tư?). Bạn vẫn học được nhưng tiến độ sẽ mất khi đóng tab.</p>
     {/if}
-    {#if hasParent}<button type="button" class="back-btn" aria-label="Quay lại" onclick={() => goBack(route)}><span aria-hidden="true">←</span> Quay lại</button>{/if}
+    {#if hasParent}<button type="button" class="back-btn" class:has-crumbs={hasCrumbs} aria-label="Quay lại" onclick={() => goBack(route)}><Glyph name="back" size={16} /> Quay lại</button>{/if}
     {@render children()}
   </main>
 

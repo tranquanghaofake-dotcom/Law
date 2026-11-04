@@ -8,7 +8,7 @@
  "example": "Tỉnh cần đất làm đường cứu hộ khi lũ lụt, trưng dụng kho của công ty E: hợp pháp nhưng công ty E được bồi thường theo pháp luật về trưng mua, trưng dụng.",
  "source": {
   "kind": "statute",
-  "cite": "Khoản 1 Điều 9 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)",
+  "cite": "Khoản 1 Điều 9 Luật Đầu tư 2025",
   "url": "https://thuvienphapluat.vn/van-ban/Dau-tu/Van-ban-hop-nhat-142-2026-VBHN-LQ-VPQH-Luat-Dau-tu-726675.aspx"
  },
  "checked": "2026-11-01",
@@ -39,7 +39,7 @@
    "explain": "Khoản 1 Điều 9.",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 1 Điều 9 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)"
+    "cite": "Khoản 1 Điều 9 Luật Đầu tư 2025"
    }
   },
   {
@@ -56,7 +56,7 @@
    "explain": "Khoản 2 Điều 9.",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 2 Điều 9 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)"
+    "cite": "Khoản 2 Điều 9 Luật Đầu tư 2025"
    }
   },
   {
@@ -128,10 +128,10 @@
    "level": 4,
    "statement": "Tài sản hợp pháp của nhà đầu tư không bị quốc hữu hóa hoặc bị tịch thu bằng biện pháp hành chính.",
    "answer": true,
-   "explain": "Đúng. Khoản 1 Điều 9 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH) (nguyên văn).",
+   "explain": "Đúng. Khoản 1 Điều 9 Luật Đầu tư 2025 (nguyên văn).",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 1 Điều 9 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)",
+    "cite": "Khoản 1 Điều 9 Luật Đầu tư 2025",
     "url": "https://thuvienphapluat.vn/van-ban/Dau-tu/Van-ban-hop-nhat-142-2026-VBHN-LQ-VPQH-Luat-Dau-tu-726675.aspx"
    }
   }

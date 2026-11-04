@@ -2,13 +2,15 @@ import { expect, test } from '@playwright/test';
 import { readdirSync, readFileSync } from 'node:fs';
 const B = process.env.BASE_PATH ?? '/';
 
-test('trang chủ người mới: thẻ BẮT ĐẦU, môn đang học, một thẻ kiểm tra nhanh', async ({ page }) => {
+test('trang chủ người mới: thẻ Bắt đầu, môn đang học, một thẻ kiểm tra nhanh', async ({ page }) => {
   await page.goto(B + '');
-  await expect(page.locator('.hero-card .kicker')).toHaveText('BẮT ĐẦU');
+  await expect(page.locator('.hero-card .kicker')).toHaveText('Bắt đầu');
   // môn đầu theo thứ tự chương trình học (lib/ui/shelves.ts), không phải môn đầu bảng chữ cái
   await expect(page.getByRole('link', { name: /Học đợt đầu tiên/ })).toHaveAttribute('href', '#/hoc/ly-luan-nn-pl/llc1');
-  await expect(page.getByRole('heading', { name: /Bắt đầu từ đâu/ })).toBeVisible();
+  await expect(page.getByRole('heading', { name: /Hoặc chọn môn khác/ })).toBeVisible();
   await expect(page.locator('.subject-rows li')).toHaveCount(3);
+  // H-3: môn ở thẻ chính không lặp lại trong danh sách bên dưới
+  await expect(page.locator('.subject-rows a[href="#/mon/ly-luan-nn-pl"]')).toHaveCount(0);
   await expect(page.getByRole('link', { name: /Luật Hiến pháp/ }).first()).toBeVisible();
   await expect(page.locator('.sets.one .set')).toHaveCount(1);
   await expect(page.getByRole('link', { name: /Tất cả đề/ })).toHaveAttribute('href', '#/luyen-de');
@@ -50,15 +52,16 @@ test('cài đặt ẩn nút Nghe thử khi không có giọng vi', async ({ page
   await expect(page.getByRole('button', { name: 'Nghe thử' })).toHaveCount(0);
 });
 
-test('ôn hôm nay khi không có gì → báo và về trang chủ', async ({ page }) => {
+test('ôn hôm nay khi chưa học gì → báo rỗng và dẫn tới đợt đầu tiên', async ({ page }) => {
   await page.goto(B + '#/on');
-  await expect(page.getByText(/Chưa có gì cần ôn/)).toBeVisible();
+  await expect(page.getByText(/chưa học khái niệm nào/)).toBeVisible();
+  await expect(page.getByRole('link', { name: /Học đợt đầu tiên/ })).toHaveAttribute('href', '#/');
 });
 
 test('#/on/hien-phap khi chưa có gì → báo rỗng và link về môn', async ({ page }) => {
   await page.goto(B + '#/on/hien-phap');
-  await expect(page.getByText(/Chưa có gì cần ôn/)).toBeVisible();
-  await expect(page.getByRole('link', { name: /Về môn/ })).toHaveAttribute('href', '#/mon/hien-phap');
+  await expect(page.getByText(/chưa học khái niệm nào trong môn này/)).toBeVisible();
+  await expect(page.getByRole('link', { name: /Học đợt đầu tiên/ })).toHaveAttribute('href', '#/mon/hien-phap');
 });
 
 // Số đề đọc từ dữ liệu (không gõ số cố định); nhóm "dan-su" lấy từ trường group của mỗi đề.

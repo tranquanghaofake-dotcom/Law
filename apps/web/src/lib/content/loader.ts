@@ -54,6 +54,20 @@ export async function loadConceptPool(subjectId: string, ids: string[]): Promise
   return r.flatMap((x) => (x.status === 'fulfilled' ? [x.value] : []));
 }
 
+/**
+ * Mọi khái niệm của môn trong 1 file (dist/bundles): dùng cho trang Khái niệm thay vì ~100 request lẻ.
+ * Nạp xong thì ghi sẵn từng khái niệm vào bộ nhớ, để `loadConcepts`/`loadConceptPool` sau đó không tải lại.
+ */
+export const loadSubjectConcepts = (subjectId: string): Promise<Concept[]> =>
+  once(`bundle:${subjectId}`, async () => {
+    const all = await getJson<Concept[]>(`bundles/${encodeURIComponent(subjectId)}.json`);
+    for (const c of all) {
+      const key = `concept:${subjectId}/${c.id}`;
+      if (!memo.has(key)) memo.set(key, Promise.resolve(c));
+    }
+    return all;
+  });
+
 /** Bảng tên khái niệm của môn (dist/terms): 1 file thay cho từng `loadConcepts` chỉ để lấy `term`. */
 export const loadTerms = (subjectId: string): Promise<Record<string, string>> =>
   once(`terms:${subjectId}`, () => getJson<Record<string, string>>(`terms/${encodeURIComponent(subjectId)}.json`));

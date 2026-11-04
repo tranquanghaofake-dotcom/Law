@@ -19,7 +19,7 @@ describe('nội dung Luật Hành chính', () => {
         expect(c.source.cite, f).toMatch(/chưa đối chiếu nguyên văn|đã khớp nguyên văn slide|giáo trình chưa đối chiếu/);
       } else {
         expect(c.source.kind, f).toBe('statute');
-        expect(c.source.cite).toMatch(/(Luật Xử lý vi phạm hành chính \(VBHN 90\/VBHN-VPQH 2026\)|Luật Tố tụng hành chính 2015 \(VBHN 13\/VBHN-VPQH 2026\)|Luật Tổ chức Chính phủ 2025 \(63\/2025\/QH15\)|Luật Cán bộ, công chức 2025 \(80\/2025\/QH15\)|Luật Khiếu nại 2011 \(VBHN 28\/VBHN-VPQH 2026\)|Luật Tố cáo 2018 \(VBHN 29\/VBHN-VPQH 2026\))$/);
+        expect(c.source.cite).toMatch(/(Luật Xử lý vi phạm hành chính \(sửa đổi, bổ sung đến năm 2025\)|Luật Tố tụng hành chính 2015 \(sửa đổi, bổ sung đến năm 2025\)|Luật Tổ chức Chính phủ 2025 \(63\/2025\/QH15\)|Luật Cán bộ, công chức 2025 \(80\/2025\/QH15\)|Luật Khiếu nại 2011 \(sửa đổi, bổ sung đến năm 2025\)|Luật Tố cáo 2018 \(sửa đổi, bổ sung đến năm 2025\))$/);
         expect(c.source.url).toMatch(/^https:\/\/thuvienphapluat\.vn\//);
       }
       expect(c.checked).toBe('2026-11-01');

@@ -5,7 +5,7 @@
   import BookSpine from '$lib/art/BookSpine.svelte';
   import { LEVEL_LABEL, type BookRec } from '$lib/game/books';
   import { shelf, refreshShelf } from './shelf.svelte';
-  import { bookcaseRows, spineFont, type CaseBook } from './bookcase';
+  import { bookcaseRows, spineFont, spineLabel, type CaseBook } from './bookcase';
   import Sheet from './Sheet.svelte';
 
   if (!shelf.ready) refreshShelf();
@@ -30,7 +30,8 @@
   const selBays = $derived(rows.flatMap((r) => r.bays).find((bay) => bay.books.some((b) => b.id === selId)) ?? null);
   const chapters = $derived<BookRec[]>(shelf.books.filter((b) => b.subject === selId));
   function pick(b: CaseBook) { selId = b.id; open = true; }
-  const name = (b: CaseBook) => `${b.short}: ${b.title}, ${b.got}/${b.total} sách${b.needsReview ? ', cần ôn' : ''}`;
+  // Tên truy cập phải chứa đúng chữ hiện trên gáy (WCAG 2.5.3); gáy viết tắt thì đọc cả nhãn tắt lẫn tên đầy đủ.
+  const name = (b: CaseBook, label: string) => `${label === b.short ? b.short : `${label} (${b.short})`}: ${b.title}, ${b.got}/${b.total} sách${b.needsReview ? ', cần ôn' : ''}`;
   const chapterName = (t: string) => t.replace(/^[^.:]*[.:]\s*/, '');
 </script>
 
@@ -46,12 +47,13 @@
             <div class="bk-bay" style="flex-grow:{bay.width}">
               <ul class="bk-books" aria-label="Kệ {bay.name}">
                 {#each bay.books as b (b.id)}
+                  {@const label = spineLabel(b.short, b.h)}
                   <li>
                     <button type="button" class="bk-spine" class:full={b.lit === 1} aria-haspopup="dialog" onclick={() => pick(b)}
-                      style="--c:{b.color};--w:{b.w}px;--h:{b.h}px;--lit:{b.lit};--fs:{spineFont(b.short, b.h)}">
-                      <span class="sr-only">{name(b)}</span>
+                      style="--c:{b.color};--w:{b.w}px;--h:{b.h}px;--lit:{b.lit};--fs:{spineFont(label, b.h)}">
+                      <span class="sr-only">{name(b, label)}</span>
                       <span class="bk-label" aria-hidden="true">LUẬT</span>
-                      <span class="bk-name" aria-hidden="true">{b.short}</span>
+                      <span class="bk-name" aria-hidden="true" title={label !== b.short ? b.short : undefined}>{label}</span>
                       <span class="bk-ribbon" aria-hidden="true"></span>
                       {#if b.needsReview}<span class="bk-dot" aria-hidden="true"></span>{/if}
                     </button>

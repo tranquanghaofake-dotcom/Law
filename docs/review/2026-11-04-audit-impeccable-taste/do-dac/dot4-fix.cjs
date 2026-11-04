@@ -1,0 +1,14 @@
+const { chromium } = require('playwright'); const http=require('node:http'),fs=require('node:fs'),path=require('node:path');
+const ROOT='/home/user/Law/apps/web/dist'; const T={'.html':'text/html','.js':'text/javascript','.css':'text/css','.json':'application/json','.svg':'image/svg+xml'};
+const s=http.createServer((q,r)=>{let p=decodeURIComponent(q.url.split('?')[0]);if(p==='/')p='/index.html';fs.readFile(path.join(ROOT,p),(e,d)=>{if(e){r.statusCode=404;return r.end();}r.setHeader('content-type',T[path.extname(p)]??'application/octet-stream');r.end(d)})});
+(async()=>{await new Promise(r=>s.listen(0,r));const U=`http://localhost:${s.address().port}/`;const b=await chromium.launch({executablePath:process.env.PW_CHROMIUM});const out={};
+ const ctx=await b.newContext({serviceWorkers:'block'});const p=await ctx.newPage();
+ await p.route('**/content/bundles/**',r=>r.fulfill({status:500,body:''}));
+ await p.goto(U+'#/mon/hien-phap/khai-niem');await p.waitForTimeout(3000);
+ out.fallback=await p.evaluate(()=>({entries:document.querySelectorAll('.entry-toggle').length,err:document.querySelector('main .card .muted')?.textContent?.slice(0,60)??null}));
+ await p.unroute('**/content/bundles/**');
+ await p.setViewportSize({width:1280,height:900});await p.goto(U+'#/');await p.waitForTimeout(1500);
+ out.smilNormal=await p.evaluate(()=>document.querySelectorAll('animate').length);
+ await p.emulateMedia({reducedMotion:'reduce'});await p.waitForTimeout(300);
+ out.smilAfterOsChange=await p.evaluate(()=>document.querySelectorAll('animate').length);
+ console.log(JSON.stringify(out));await b.close();s.close();})();

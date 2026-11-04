@@ -1,0 +1,16 @@
+const { chromium } = require('playwright'); const http=require('node:http'),fs=require('node:fs'),path=require('node:path');
+const ROOT='/home/user/Law/apps/web/dist'; const T={'.html':'text/html','.js':'text/javascript','.css':'text/css','.json':'application/json','.webp':'image/webp','.svg':'image/svg+xml'};
+const s=http.createServer((q,r)=>{let p=decodeURIComponent(q.url.split('?')[0]);if(p.startsWith('/Law/'))p=p.slice(4);if(p==='/')p='/index.html';fs.readFile(path.join(ROOT,p),(e,d)=>{if(e){r.statusCode=404;return r.end();}r.setHeader('content-type',T[path.extname(p)]??'application/octet-stream');r.end(d)})});
+(async()=>{await new Promise(r=>s.listen(0,r));const U=`http://localhost:${s.address().port}/Law/`;const b=await chromium.launch(process.env.PW_CHROMIUM?{executablePath:process.env.PW_CHROMIUM}:{});const out={};
+ let p=await b.newPage({viewport:{width:1280,height:800}});await p.goto(U+'#/');await p.waitForTimeout(1500);
+ out.homeInfinite=await p.evaluate(()=>document.getAnimations().filter(a=>a.effect?.getComputedTiming().iterations===Infinity).map(a=>a.animationName));
+ out.homeFinite=await p.evaluate(()=>document.getAnimations().map(a=>a.animationName+':'+a.effect?.getComputedTiming().iterations));
+ out.sidebarFs=await p.evaluate(()=>[...document.querySelectorAll('.me-sub,.me-next-t')].map(e=>getComputedStyle(e).fontSize));
+ await p.goto(U+'#/mon/hien-phap/khai-niem');await p.waitForTimeout(1500);out.legalConcepts=await p.evaluate(()=>!!document.querySelector('.legal-line'));
+ await p.close();
+ p=await b.newPage({viewport:{width:390,height:844},reducedMotion:'reduce'});await p.goto(U+'#/bo/dat-coc');await p.waitForSelector('.opt');
+ out.rmOpt=await p.evaluate(()=>{const s=getComputedStyle(document.querySelector('.opt'));return s.transitionProperty+' / '+s.transitionDuration;});
+ out.rmAnims=await p.evaluate(()=>document.getAnimations().length);
+ await p.close();
+ out.fontReq=[]; p=await b.newPage();p.on('request',r=>{if(r.url().includes('fonts.googleapis'))out.fontReq.push(r.url().slice(0,140))});await p.goto(U+'#/');await p.waitForTimeout(500);
+ console.log(JSON.stringify(out,null,1));await b.close();s.close();})();

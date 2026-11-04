@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Glyph from '$lib/art/Glyph.svelte';
   // Tủ trưng bày chức danh: chân dung + chức danh, xem trước chức người học chạm trên cây (OrgChart), điều kiện lên chức, tủ đồ.
   // LUÔN có chân dung (kể cả 0 sách: người mới thấy Công dân). Chức chưa mở: bóng mờ khoá + "cần x/y sách" + nút "Về chức hiện tại".
   // Bố cục 2 cột: chi tiết điều kiện hiện ngay trong khung (không cần hộp thoại). Hẹp (`stacked`): khung ảnh nhỏ ở trên cây, bấm để mở rộng.
@@ -130,7 +131,7 @@
           <div class="filters">
             {#each ALL[key] as v (v)}
               {@const open = (un[key] as string[]).includes(v)}
-              <button type="button" class="filter" aria-pressed={av[key] === v} disabled={!open} title={open ? NAMES[v] : `${NAMES[v]} — chưa mở khoá`} onclick={() => pick(key, v)}>{open ? '' : '🔒 '}{NAMES[v]}</button>
+              <button type="button" class="filter" aria-pressed={av[key] === v} disabled={!open} title={open ? NAMES[v] : `${NAMES[v]} — chưa mở khoá`} onclick={() => pick(key, v)}>{#if !open}<Glyph name="lock" size={14} /> {/if}{NAMES[v]}</button>
             {/each}
           </div>
         {/each}

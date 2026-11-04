@@ -20,3 +20,12 @@ export function isTypingTarget(e: KeyboardEvent): boolean {
   const t = e.target as HTMLElement | null;
   return !!t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable);
 }
+
+const INTERACTIVE = 'a[href], button, summary, select, input, textarea, [role="button"], [role="link"], [contenteditable=""], [contenteditable="true"]';
+
+/** Phím Enter/Space đang nhắm vào một phần tử tự xử lý được (link, nút, ô nhập…): phím tắt toàn cục phải nhường cho hành vi gốc. */
+export function isInteractiveTarget(e: KeyboardEvent): boolean {
+  const t = e.target as HTMLElement | null;
+  if (!t || typeof t.closest !== 'function') return false;
+  return t.isContentEditable || !!t.closest(INTERACTIVE);
+}

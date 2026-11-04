@@ -46,6 +46,8 @@ export default defineConfig({
           // Danh sách câu đã có mp3 đổi mỗi tuần: luôn hỏi mạng trước.
           { urlPattern: /\/tts\/manifest\.json$/, handler: 'NetworkFirst', options: { cacheName: 'tts-manifest' } },
           { urlPattern: /\/content\/(concepts|sets)\/.*\.json$/, handler: 'StaleWhileRevalidate', options: { cacheName: 'content-detail', expiration: { maxEntries: 300 } } },
+          // Gói khái niệm theo môn (vài trăm KB/môn): cache riêng để không đẩy khái niệm lẻ của bài học ra khỏi LRU.
+          { urlPattern: /\/content\/bundles\/.*\.json$/, handler: 'StaleWhileRevalidate', options: { cacheName: 'content-bundles', expiration: { maxEntries: 30 } } },
           { urlPattern: /\/content\/.*\.json$/, handler: 'StaleWhileRevalidate', options: { cacheName: 'content' } },
           { urlPattern: /^https:\/\/fonts\.(googleapis|gstatic)\.com\//, handler: 'CacheFirst', options: { cacheName: 'fonts', expiration: { maxEntries: 20, maxAgeSeconds: 60 * 60 * 24 * 365 } } },
         ],

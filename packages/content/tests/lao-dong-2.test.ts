@@ -19,7 +19,7 @@ describe('nội dung Luật Lao động 2', () => {
         expect(c.source.cite, f).toMatch(/chưa đối chiếu nguyên văn/);
       } else {
         expect(c.source.kind, f).toBe('statute');
-        expect(c.source.cite).toMatch(/(Bộ luật Lao động 2019 \(VBHN 18\/VBHN-VPQH 2026\)|Luật Người lao động Việt Nam đi làm việc ở nước ngoài theo hợp đồng 2020 \(69\/2020\/QH14\))$/);
+        expect(c.source.cite).toMatch(/(Bộ luật Lao động 2019 \(sửa đổi, bổ sung đến năm 2025\)|Luật Người lao động Việt Nam đi làm việc ở nước ngoài theo hợp đồng 2020 \(69\/2020\/QH14\))$/);
         expect(c.source.url).toMatch(/^https:\/\/thuvienphapluat\.vn\//);
       }
       expect(c.checked).toBe('2026-11-01');
@@ -51,7 +51,7 @@ describe('nội dung Luật Lao động 2', () => {
       expect(s.group).toBe('lao-dong');
       expect(s.questions.length).toBe(10);
       for (const q of s.questions) {
-        expect(q.basis).toMatch(/Điều \d+ (BLLĐ 2019 \(VBHN 18\/VBHN-VPQH 2026\)|Luật 69\/2020\/QH14)/);
+        expect(q.basis).toMatch(/Điều \d+ (BLLĐ 2019 \(sửa đổi, bổ sung đến năm 2025\)|Luật 69\/2020\/QH14)/);
         expect(q.url).toMatch(/^https:\/\/thuvienphapluat\.vn\//);
       }
     }

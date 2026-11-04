@@ -13,13 +13,14 @@
   import SceneBack from './kit/SceneBack.svelte';
   import SceneFront from './kit/SceneFront.svelte';
   import './kit/kit.css';
+  import { motionGate } from '$lib/fx/motionGate';
   let { name, class: cls = '' }: { name: ArtName; class?: string } = $props();
   const SCENES = { 'khue-van-cac': KhueVanCac, 'tam-quan': TamQuan, 'chua-mot-cot': ChuaMotCot, 'ha-long': HaLong, 'ngo-mon': NgoMon, 'toa-an': ToaAn, 'sach-luat': SachLuat, 'san-giao-dich': SanGiaoDich, 'bia-tien-si': BiaTienSi };
   const Scene = $derived(SCENES[name as keyof typeof SCENES] ?? TamQuan);
   const more = $derived(ART_MORE.includes(name));
 </script>
 
-<svg class="art art-lit scene-lit {cls}" viewBox="0 0 520 325" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMax meet">
+<svg use:motionGate={{ settle: 12000 }} class="art art-lit scene-lit {cls}" viewBox="0 0 520 325" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMax meet">
   <SceneBack {name} />
   {#if more}
     {#await import('./ScenesMore.svelte') then m}<m.default {name} />{/await}

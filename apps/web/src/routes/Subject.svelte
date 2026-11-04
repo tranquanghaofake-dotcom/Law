@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Loading from '$lib/ui/Loading.svelte';
   // Trang môn: tổng quan, chú giải, lưới bậc theo đợt, local nav chương (spec §4.2).
   import type { Level, Subject } from '$lib/content/types';
   import { loadSubject, loadTerms } from '$lib/content/loader';
@@ -48,7 +49,7 @@
       document.title = `${s.title} · Luyện Luật`;
     } catch (e) { error = (e as Error).message; }
   }
-  $effect(() => { void route.params.subject; load(); });
+  $effect(() => { if (route.name === 'subject' && route.params.subject) load(); });
   $effect(() => {
     if (!subject || !summary) return;
     return setRail(SubjectRail, { subjectId: subject.id, due, difficult });
@@ -58,7 +59,7 @@
 {#if error}
   <section class="card"><p class="muted">Không tải được môn: {error}</p><a class="btn ghost" href={hashFor('subjects')}>Về Môn học</a></section>
 {:else if !subject || !summary}
-  <p class="loading">Đang tải…</p>
+  <Loading />
 {:else}
   <nav class="crumbs small muted" aria-label="Vị trí"><a href={hashFor('subjects')}>Môn học</a> › {subject.title}</nav>
   <header class="subject-head">
@@ -77,9 +78,12 @@
     </div>
   </header>
   {#if subject.chapters.length > 1}
+    <details class="toc">
+    <summary>Mục lục · {subject.chapters.length} chương</summary>
     <nav class="local-nav small" aria-label="Chương trong môn">
       {#each subject.chapters as ch (ch.id)}<a href="#chapter-{ch.id}" title={ch.title} onclick={(e) => { e.preventDefault(); document.getElementById(`chapter-${ch.id}`)?.scrollIntoView({ behavior: 'smooth' }); }}><Emblem name={emblemFor(subject.id, ch.id)} size={26} /><span>{shortTitle(ch.title)}</span><small class="cnt">{counts[ch.id]?.mastered ?? 0}/{counts[ch.id]?.total ?? 0}</small></a>{/each}
     </nav>
+    </details>
   {/if}
   <LevelLegend />
   <MasteryGrid {subject} {levels} {terms} {states} />

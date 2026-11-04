@@ -6,6 +6,7 @@ import {
   loadSet,
   loadSubject,
   loadTerms,
+  loadSubjectConcepts,
 } from '$lib/content/loader';
 
 // fetch giả: trả JSON theo đường dẫn; `fail` đặt trước các lần lỗi (status hoặc reject mạng).
@@ -109,5 +110,21 @@ describe('content/loader — mỗi file chỉ tải một lần', () => {
     clearContentCache();
     await loadIndex();
     expect(f).toHaveBeenCalledTimes(2);
+  });
+});
+
+describe('content/loader — gói khái niệm theo môn (HT12)', () => {
+  beforeEach(() => clearContentCache());
+  afterEach(() => vi.unstubAllGlobals());
+
+  it('loadSubjectConcepts tải 1 file bundles/<môn>.json; loadConcepts sau đó không fetch lại', async () => {
+    const f = mockFetch((url) => (url.includes('bundles/') ? [{ id: 'a', term: 'A' }, { id: 'b', term: 'B' }] : { id: 'x' }));
+    vi.stubGlobal('fetch', f);
+    const all = await loadSubjectConcepts('hp');
+    expect(all.map((c) => c.id)).toEqual(['a', 'b']);
+    expect(f.mock.calls[0][0]).toBe('/content/bundles/hp.json');
+    const [a] = await loadConcepts('hp', ['a']);
+    expect(a.id).toBe('a');
+    expect(f).toHaveBeenCalledTimes(1);
   });
 });

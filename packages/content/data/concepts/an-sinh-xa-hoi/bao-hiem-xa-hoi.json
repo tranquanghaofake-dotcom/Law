@@ -8,7 +8,7 @@
  "example": "Nhân viên ký hợp đồng 2 tháng với cửa hàng: thuộc đối tượng BHXH bắt buộc (điểm a khoản 1 Điều 2); người bán hàng tự do muốn có lương hưu có thể tham gia BHXH tự nguyện và tự chọn mức đóng.",
  "source": {
   "kind": "statute",
-  "cite": "Khoản 1, 3, 4 Điều 3 Luật Bảo hiểm xã hội 2024 (VBHN 19/VBHN-VPQH 2026)",
+  "cite": "Khoản 1, 3, 4 Điều 3 Luật Bảo hiểm xã hội 2024 (sửa đổi, bổ sung năm 2025)",
   "url": "https://thuvienphapluat.vn/van-ban/Bao-hiem/Van-ban-hop-nhat-19-VBHN-VPQH-2026-Luat-Bao-hiem-xa-hoi-696579.aspx"
  },
  "checked": "2026-11-01",
@@ -40,7 +40,7 @@
    "explain": "Khoản 4 Điều 3.",
    "source": {
     "kind": "statute",
-    "cite": "Điều 3 Luật Bảo hiểm xã hội 2024 (VBHN 19/VBHN-VPQH 2026)"
+    "cite": "Điều 3 Luật Bảo hiểm xã hội 2024 (sửa đổi, bổ sung năm 2025)"
    }
   },
   {
@@ -57,7 +57,7 @@
    "explain": "Điểm a khoản 1 Điều 2.",
    "source": {
     "kind": "statute",
-    "cite": "Điều 2 Luật Bảo hiểm xã hội 2024 (VBHN 19/VBHN-VPQH 2026)"
+    "cite": "Điều 2 Luật Bảo hiểm xã hội 2024 (sửa đổi, bổ sung năm 2025)"
    }
   },
   {
@@ -129,10 +129,10 @@
    "level": 4,
    "statement": "Bảo hiểm xã hội tự nguyện là loại hình bảo hiểm xã hội do Nhà nước tổ chức mà công dân Việt Nam tự nguyện tham gia và được lựa chọn mức đóng, phương thức đóng phù hợp với thu nhập của mình.",
    "answer": true,
-   "explain": "Đúng. Khoản 4 Điều 3 Luật Bảo hiểm xã hội 2024 (VBHN 19/VBHN-VPQH 2026) (nguyên văn).",
+   "explain": "Đúng. Khoản 4 Điều 3 Luật Bảo hiểm xã hội 2024 (sửa đổi, bổ sung năm 2025) (nguyên văn).",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 4 Điều 3 Luật Bảo hiểm xã hội 2024 (VBHN 19/VBHN-VPQH 2026)",
+    "cite": "Khoản 4 Điều 3 Luật Bảo hiểm xã hội 2024 (sửa đổi, bổ sung năm 2025)",
     "url": "https://thuvienphapluat.vn/van-ban/Bao-hiem/Van-ban-hop-nhat-19-VBHN-VPQH-2026-Luat-Bao-hiem-xa-hoi-696579.aspx"
    }
   }

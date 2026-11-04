@@ -14,7 +14,7 @@ describe('nội dung Luật Tố tụng dân sự', () => {
     for (const f of files) {
       const c = conceptSchema.parse(JSON.parse(readFileSync(join(dir, f), 'utf8')));
       expect(c.source.kind).toBe('statute');
-      expect(c.source.cite).toMatch(/Bộ luật Tố tụng dân sự 2015 \(VBHN 21\/VBHN-VPQH 2026\)$/);
+      expect(c.source.cite).toMatch(/Bộ luật Tố tụng dân sự 2015 \(sửa đổi, bổ sung năm 2019, 2020, 2022, 2023, 2024, 2025\)$/);
       expect(c.source.url).toMatch(/^https:\/\/thuvienphapluat\.vn\//);
       expect(c.checked).toBe('2026-11-01');
       expect(c.items.filter((i) => i.type === 'recall').length).toBe(1);

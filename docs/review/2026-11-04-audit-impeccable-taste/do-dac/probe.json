@@ -1,0 +1,1184 @@
+{
+ "390-light-home": {
+  "overflowX": false,
+  "lowContrast": [
+   "1.00 12px \"Pháp luật đại cương\" <span.chip>"
+  ],
+  "smallTargets": [
+   "118x19 <a> \"Tất cả 23 môn →\"",
+   "84x19 <a> \"Tất cả đề →\""
+  ],
+  "noName": [],
+  "headings": [
+   "H1:Hôm nay",
+   "H2:Bắt đầu từ đâu? Tất cả 23 môn →",
+   "H2:Kiểm tra nhanh Tất cả đề →",
+   "H3:Quan hệ pháp luật"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=2 header=1",
+  "errors": []
+ },
+ "390-light-subjects": {
+  "overflowX": false,
+  "lowContrast": [],
+  "smallTargets": [],
+  "noName": [],
+  "headings": [
+   "H1:Môn học",
+   "H2:Lý luận – Lịch sử 2 môn",
+   "H2:Hiến pháp – Hành chính 3 môn",
+   "H2:Dân sự – Tố tụng 3 môn",
+   "H2:Hình sự 1 môn",
+   "H2:Thương mại – Kinh tế 6 môn",
+   "H2:Tài chính – Ngân hàng 3 môn",
+   "H2:Lao động – An sinh 3 môn",
+   "H2:Sở hữu trí tuệ 2 môn"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=2 header=2",
+  "errors": []
+ },
+ "390-light-subject": {
+  "overflowX": false,
+  "lowContrast": [
+   "1.31 16px \"Ngành luật Hiến pháp: đối tượn\" <a.>",
+   "1.00 12px \"TIẾP THEO CHO BẠN\" <span.next-tag>"
+  ],
+  "smallTargets": [
+   "50x15 <a> \"Môn học\"",
+   "139x22 <a> \"Danh mục khái niệm\""
+  ],
+  "noName": [],
+  "headings": [
+   "H1:Luật Hiến pháp"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=4 header=2",
+  "errors": []
+ },
+ "390-light-concepts-list": {
+  "overflowX": false,
+  "lowContrast": [],
+  "smallTargets": [
+   "50x15 <a> \"Môn học\"",
+   "89x15 <a> \"Luật Hiến pháp\""
+  ],
+  "noName": [],
+  "headings": [
+   "H1:Khái niệm · Hiến pháp"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=3 header=2",
+  "errors": []
+ },
+ "390-light-concept": {
+  "overflowX": false,
+  "lowContrast": [
+   "1.00 12px \"Nhân dân làm chủ\" <span.chip>",
+   "1.00 12px \"tất cả quyền lực nhà nước thuộ\" <span.chip>",
+   "1.00 12px \"liên minh công nhân, nông dân,\" <span.chip>",
+   "1.00 12px \"pháp quyền\" <span.chip>",
+   "1.00 12px \"của Nhân dân, do Nhân dân, vì \" <span.chip>",
+   "1.00 12px \"thượng tôn pháp luật\" <span.chip>",
+   "1.00 12px \"thống nhất\" <span.chip>",
+   "1.00 12px \"phân công\" <span.chip>",
+   "1.00 12px \"phối hợp\" <span.chip>",
+   "1.00 12px \"kiểm soát\" <span.chip>",
+   "1.00 12px \"lập pháp, hành pháp, tư pháp\" <span.chip>"
+  ],
+  "smallTargets": [
+   "50x15 <a> \"Môn học\"",
+   "89x15 <a> \"Luật Hiến pháp\"",
+   "224x15 <a> \"Nhà nước pháp quyền xã hộ\"",
+   "76x15 <a> \"Xem văn bản\""
+  ],
+  "noName": [],
+  "headings": [
+   "H1:Khái niệm · Hiến pháp"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=3 header=2",
+  "errors": []
+ },
+ "390-light-quizzes": {
+  "overflowX": false,
+  "lowContrast": [
+   "1.00 12px \"Mới\" <span.tk-st>"
+  ],
+  "smallTargets": [
+   "240x21 <a> \"Quan hệ pháp luật\"",
+   "148x20 <a> \"Quan hệ pháp luật\""
+  ],
+  "noName": [],
+  "headings": [
+   "H1:Luyện đề 10 câu",
+   "H2:Gợi ý cho bạn",
+   "H2:Tất cả đề",
+   "H3:Quan hệ pháp luật",
+   "H3:Vi phạm pháp luật & trách nhiệm pháp lý",
+   "H3:Đề kiểm tra Dân sự 2 – Nghĩa vụ, bảo đảm",
+   "H3:Đề kiểm tra Dân sự 2 – Nghĩa vụ ngoài hợ",
+   "H3:Đề kiểm tra Dân sự 1 – Chủ thể, giao dịc",
+   "H3:Đề kiểm tra Dân sự 1 – Tài sản, sở hữu, ",
+   "H3:Đặt cọc",
+   "H3:Đề kiểm tra Lao động 2 – Cho thuê lại, l",
+   "H3:Đề kiểm tra Lao động 2 – Giúp việc gia đ",
+   "H3:Đề kiểm tra Luật Lao động – Hợp đồng lao",
+   "H3:Đề kiểm tra Luật Lao động – Điều kiện la",
+   "H3:Nghỉ việc & giữ lương",
+   "H3:Chuyển khoản nhầm",
+   "H3:Đề kiểm tra Hình sự 1 – Hiệu lực, tội ph",
+   "H3:Đề kiểm tra Hình sự 1 – Đồng phạm, loại ",
+   "H3:Đề kiểm tra Luật Cạnh tranh – Hạn chế cạ",
+   "H3:Đề kiểm tra Luật Cạnh tranh – Tập trung ",
+   "H3:Đề kiểm tra SHTT – Quyền tác giả, quyền ",
+   "H3:Đề kiểm tra SHTT – Sở hữu công nghiệp, g",
+   "H3:Đề kiểm tra Thương mại 1 – Loại hình doa",
+   "H3:Đề kiểm tra Thương mại 1 – Thành lập, qu",
+   "H3:Đề kiểm tra Thương mại 1 – Hợp tác xã, p",
+   "H3:Đề kiểm tra Thương mại 2 – Mua bán hàng ",
+   "H3:Đề kiểm tra Thương mại 2 – Chế tài và gi",
+   "H3:Đề kiểm tra Luật Đất đai – Sở hữu, quản ",
+   "H3:Đề kiểm tra Luật Đất đai – Giá đất, quyề",
+   "H3:Đề kiểm tra Tố tụng dân sự – Nguyên tắc,",
+   "H3:Đề kiểm tra Tố tụng dân sự – Khởi kiện, ",
+   "H3:Đề kiểm tra Luật Hành chính – Vi phạm và",
+   "H3:Đề kiểm tra Luật Hành chính – Thủ tục và",
+   "H3:Đề kiểm tra Luật Hành chính – Quyết định",
+   "H3:Đề kiểm tra An sinh xã hội – Bảo hiểm xã",
+   "H3:Đề kiểm tra An sinh xã hội – Thất nghiệp",
+   "H3:Đề kiểm tra Luật Tài chính – Ngân sách n",
+   "H3:Đề kiểm tra Luật Tài chính – Pháp luật t",
+   "H3:Đề kiểm tra Luật Ngân hàng – Chủ thể và ",
+   "H3:Đề kiểm tra Luật Ngân hàng – Huy động vố",
+   "H3:Đề kiểm tra Pháp luật tài chính doanh ng",
+   "H3:Đề kiểm tra Pháp luật tài chính doanh ng",
+   "H3:Đề kiểm tra Luật Đầu tư – Chủ thể, bảo đ",
+   "H3:Đề kiểm tra Luật Đầu tư – Hình thức đầu ",
+   "H3:Đề kiểm tra Xây dựng VBPL – Khái quát và",
+   "H3:Đề kiểm tra Xây dựng VBPL – Ngôn ngữ, hì",
+   "H3:Đề kiểm tra Quản trị tài sản trí tuệ – N",
+   "H3:Đề kiểm tra Quản trị tài sản trí tuệ – T",
+   "H3:Đề kiểm tra Lý luận NN&PL – Nhà nước",
+   "H3:Đề kiểm tra Lý luận NN&PL – Pháp luật"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=2 header=2",
+  "errors": []
+ },
+ "390-light-quiz": {
+  "overflowX": false,
+  "lowContrast": [],
+  "smallTargets": [],
+  "noName": [],
+  "headings": [
+   "H1:Đặt cọc"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=0 header=0",
+  "errors": [
+   "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ]
+ },
+ "390-light-lesson": {
+  "overflowX": false,
+  "lowContrast": [
+   "1.00 12px \"cao nhất\" <li.chip>",
+   "1.00 12px \"phù hợp với Hiến pháp\" <li.chip>",
+   "1.00 12px \"vi phạm Hiến pháp bị xử lý(tóm\" <li.chip>",
+   "1.00 12px \"(tóm tắt, không phải nguyên vă\" <span.sr-only>"
+  ],
+  "smallTargets": [],
+  "noName": [],
+  "headings": [
+   "H1:Hiến pháp: khái niệm, hiệu lực, sửa đổi ",
+   "H2:Hiệu lực pháp lý cao nhất của Hiến pháp"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=0 header=0",
+  "errors": [
+   "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ]
+ },
+ "390-light-review": {
+  "overflowX": false,
+  "lowContrast": [],
+  "smallTargets": [],
+  "noName": [],
+  "headings": [
+   "H1:Ôn hôm nay"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=0 header=0",
+  "errors": [
+   "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ]
+ },
+ "390-light-profile": {
+  "overflowX": false,
+  "lowContrast": [
+   "1.31 18px \"0 ngày\" <b.>",
+   "3.50 12px \"Chưa có chuỗi · 0 XP\" <span.muted>",
+   "1.31 18px \"0/212 sách\" <b.>",
+   "3.50 14px \"/212 sách\" <span.idc-of>",
+   "3.50 12px \"đã nhận\" <span.muted>",
+   "1.31 16px \"Tổng quan\" <a.on>",
+   "3.50 16px \"Cài đặt\" <a.>",
+   "1.57 16px \"Thương mại 2: Luật Thương mại \" <span.sr-only>",
+   "1.57 9.4px \"Thương mại 2\" <span.bk-name>",
+   "1.31 14px \"Lập pháp\" <span.>",
+   "3.50 12px \"0/6\" <small.>",
+   "1.31 14px \"Xét xử\" <span.>",
+   "1.31 14px \"Kiểm sát\" <span.>",
+   "3.50 12px \"0/5\" <small.>",
+   "3.50 14px \"Chủ tịch nước\" <span.org-name>",
+   "3.50 12px \"Chưa mở\" <span.org-meta>",
+   "1.31 12px \"Lãnh đạo cấp cao\" <span.>",
+   "3.50 10px \"0/2\" <small.>",
+   "3.50 14px \"Thủ tướng Chính phủ\" <span.org-name>",
+   "3.50 14px \"Phó Thủ tướng Chính phủ\" <span.org-name>",
+   "1.31 12px \"Trung ương\" <span.>",
+   "3.50 10px \"0/3\" <small.>",
+   "3.50 14px \"Bộ trưởng\" <span.org-name>",
+   "3.50 14px \"Thứ trưởng\" <span.org-name>",
+   "3.50 14px \"Vụ trưởng\" <span.org-name>"
+  ],
+  "smallTargets": [],
+  "noName": [],
+  "headings": [
+   "H1:Hồ sơ",
+   "H2:Sự nghiệp 0/29 chức",
+   "H2:Chuyên cần & tiến độ 0 ngày"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=2 header=2",
+  "errors": []
+ },
+ "390-light-settings": {
+  "overflowX": false,
+  "lowContrast": [
+   "3.50 16px \"Tổng quan\" <a.>",
+   "1.31 16px \"Cài đặt\" <a.on>"
+  ],
+  "smallTargets": [
+   "22x22 <input> \"\"",
+   "129x16 <input> \"\"",
+   "1x1 <input> \"\""
+  ],
+  "noName": [],
+  "headings": [
+   "H1:Hồ sơ",
+   "H2:Cài đặt",
+   "H3:Cách học",
+   "H3:Dữ liệu"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=2 header=1",
+  "errors": []
+ },
+ "390-light-notfound": {
+  "overflowX": false,
+  "lowContrast": [],
+  "smallTargets": [],
+  "noName": [],
+  "headings": [
+   "H1:Không tìm thấy trang"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=2 header=1",
+  "errors": []
+ },
+ "390-dark-home": {
+  "overflowX": false,
+  "lowContrast": [
+   "1.00 12px \"Pháp luật đại cương\" <span.chip>"
+  ],
+  "smallTargets": [
+   "118x19 <a> \"Tất cả 23 môn →\"",
+   "84x19 <a> \"Tất cả đề →\""
+  ],
+  "noName": [],
+  "headings": [
+   "H1:Hôm nay",
+   "H2:Bắt đầu từ đâu? Tất cả 23 môn →",
+   "H2:Kiểm tra nhanh Tất cả đề →",
+   "H3:Quan hệ pháp luật"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=2 header=1",
+  "errors": []
+ },
+ "390-dark-subjects": {
+  "overflowX": false,
+  "lowContrast": [],
+  "smallTargets": [],
+  "noName": [],
+  "headings": [
+   "H1:Môn học",
+   "H2:Lý luận – Lịch sử 2 môn",
+   "H2:Hiến pháp – Hành chính 3 môn",
+   "H2:Dân sự – Tố tụng 3 môn",
+   "H2:Hình sự 1 môn",
+   "H2:Thương mại – Kinh tế 6 môn",
+   "H2:Tài chính – Ngân hàng 3 môn",
+   "H2:Lao động – An sinh 3 môn",
+   "H2:Sở hữu trí tuệ 2 môn"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=2 header=2",
+  "errors": []
+ },
+ "390-dark-subject": {
+  "overflowX": false,
+  "lowContrast": [
+   "1.31 16px \"Ngành luật Hiến pháp: đối tượn\" <a.>",
+   "1.00 12px \"TIẾP THEO CHO BẠN\" <span.next-tag>"
+  ],
+  "smallTargets": [
+   "50x15 <a> \"Môn học\"",
+   "139x22 <a> \"Danh mục khái niệm\""
+  ],
+  "noName": [],
+  "headings": [
+   "H1:Luật Hiến pháp"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=4 header=2",
+  "errors": []
+ },
+ "390-dark-concepts-list": {
+  "overflowX": false,
+  "lowContrast": [],
+  "smallTargets": [
+   "50x15 <a> \"Môn học\"",
+   "89x15 <a> \"Luật Hiến pháp\""
+  ],
+  "noName": [],
+  "headings": [
+   "H1:Khái niệm · Hiến pháp"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=3 header=2",
+  "errors": []
+ },
+ "390-dark-concept": {
+  "overflowX": false,
+  "lowContrast": [
+   "1.00 12px \"Nhân dân làm chủ\" <span.chip>",
+   "1.00 12px \"tất cả quyền lực nhà nước thuộ\" <span.chip>",
+   "1.00 12px \"liên minh công nhân, nông dân,\" <span.chip>",
+   "1.00 12px \"pháp quyền\" <span.chip>",
+   "1.00 12px \"của Nhân dân, do Nhân dân, vì \" <span.chip>",
+   "1.00 12px \"thượng tôn pháp luật\" <span.chip>",
+   "1.00 12px \"thống nhất\" <span.chip>",
+   "1.00 12px \"phân công\" <span.chip>",
+   "1.00 12px \"phối hợp\" <span.chip>",
+   "1.00 12px \"kiểm soát\" <span.chip>",
+   "1.00 12px \"lập pháp, hành pháp, tư pháp\" <span.chip>"
+  ],
+  "smallTargets": [
+   "50x15 <a> \"Môn học\"",
+   "89x15 <a> \"Luật Hiến pháp\"",
+   "224x15 <a> \"Nhà nước pháp quyền xã hộ\"",
+   "76x15 <a> \"Xem văn bản\""
+  ],
+  "noName": [],
+  "headings": [
+   "H1:Khái niệm · Hiến pháp"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=3 header=2",
+  "errors": []
+ },
+ "390-dark-quizzes": {
+  "overflowX": false,
+  "lowContrast": [
+   "1.00 12px \"Mới\" <span.tk-st>"
+  ],
+  "smallTargets": [
+   "240x21 <a> \"Quan hệ pháp luật\""
+  ],
+  "noName": [],
+  "headings": [
+   "H1:Luyện đề 10 câu",
+   "H2:Gợi ý cho bạn",
+   "H2:Tất cả đề",
+   "H3:Quan hệ pháp luật",
+   "H3:Vi phạm pháp luật & trách nhiệm pháp lý",
+   "H3:Đề kiểm tra Dân sự 2 – Nghĩa vụ, bảo đảm",
+   "H3:Đề kiểm tra Dân sự 2 – Nghĩa vụ ngoài hợ",
+   "H3:Đề kiểm tra Dân sự 1 – Chủ thể, giao dịc",
+   "H3:Đề kiểm tra Dân sự 1 – Tài sản, sở hữu, ",
+   "H3:Đặt cọc",
+   "H3:Đề kiểm tra Lao động 2 – Cho thuê lại, l",
+   "H3:Đề kiểm tra Lao động 2 – Giúp việc gia đ",
+   "H3:Đề kiểm tra Luật Lao động – Hợp đồng lao",
+   "H3:Đề kiểm tra Luật Lao động – Điều kiện la",
+   "H3:Nghỉ việc & giữ lương",
+   "H3:Chuyển khoản nhầm",
+   "H3:Đề kiểm tra Hình sự 1 – Hiệu lực, tội ph",
+   "H3:Đề kiểm tra Hình sự 1 – Đồng phạm, loại ",
+   "H3:Đề kiểm tra Luật Cạnh tranh – Hạn chế cạ",
+   "H3:Đề kiểm tra Luật Cạnh tranh – Tập trung ",
+   "H3:Đề kiểm tra SHTT – Quyền tác giả, quyền ",
+   "H3:Đề kiểm tra SHTT – Sở hữu công nghiệp, g",
+   "H3:Đề kiểm tra Thương mại 1 – Loại hình doa",
+   "H3:Đề kiểm tra Thương mại 1 – Thành lập, qu",
+   "H3:Đề kiểm tra Thương mại 1 – Hợp tác xã, p",
+   "H3:Đề kiểm tra Thương mại 2 – Mua bán hàng ",
+   "H3:Đề kiểm tra Thương mại 2 – Chế tài và gi",
+   "H3:Đề kiểm tra Luật Đất đai – Sở hữu, quản ",
+   "H3:Đề kiểm tra Luật Đất đai – Giá đất, quyề",
+   "H3:Đề kiểm tra Tố tụng dân sự – Nguyên tắc,",
+   "H3:Đề kiểm tra Tố tụng dân sự – Khởi kiện, ",
+   "H3:Đề kiểm tra Luật Hành chính – Vi phạm và",
+   "H3:Đề kiểm tra Luật Hành chính – Thủ tục và",
+   "H3:Đề kiểm tra Luật Hành chính – Quyết định",
+   "H3:Đề kiểm tra An sinh xã hội – Bảo hiểm xã",
+   "H3:Đề kiểm tra An sinh xã hội – Thất nghiệp",
+   "H3:Đề kiểm tra Luật Tài chính – Ngân sách n",
+   "H3:Đề kiểm tra Luật Tài chính – Pháp luật t",
+   "H3:Đề kiểm tra Luật Ngân hàng – Chủ thể và ",
+   "H3:Đề kiểm tra Luật Ngân hàng – Huy động vố",
+   "H3:Đề kiểm tra Pháp luật tài chính doanh ng",
+   "H3:Đề kiểm tra Pháp luật tài chính doanh ng",
+   "H3:Đề kiểm tra Luật Đầu tư – Chủ thể, bảo đ",
+   "H3:Đề kiểm tra Luật Đầu tư – Hình thức đầu ",
+   "H3:Đề kiểm tra Xây dựng VBPL – Khái quát và",
+   "H3:Đề kiểm tra Xây dựng VBPL – Ngôn ngữ, hì",
+   "H3:Đề kiểm tra Quản trị tài sản trí tuệ – N",
+   "H3:Đề kiểm tra Quản trị tài sản trí tuệ – T",
+   "H3:Đề kiểm tra Lý luận NN&PL – Nhà nước",
+   "H3:Đề kiểm tra Lý luận NN&PL – Pháp luật"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=2 header=2",
+  "errors": []
+ },
+ "390-dark-quiz": {
+  "overflowX": false,
+  "lowContrast": [],
+  "smallTargets": [],
+  "noName": [],
+  "headings": [
+   "H1:Đặt cọc"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=0 header=0",
+  "errors": [
+   "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ]
+ },
+ "390-dark-lesson": {
+  "overflowX": false,
+  "lowContrast": [
+   "1.00 12px \"toàn thể Nhân dân\" <li.chip>",
+   "1.00 12px \"cơ chế bảo vệ Hiến pháp do luậ\" <li.chip>",
+   "1.00 12px \"không có Tòa án Hiến pháp(tóm \" <li.chip>",
+   "1.00 12px \"(tóm tắt, không phải nguyên vă\" <span.sr-only>"
+  ],
+  "smallTargets": [],
+  "noName": [],
+  "headings": [
+   "H1:Hiến pháp: khái niệm, hiệu lực, sửa đổi ",
+   "H2:Trách nhiệm bảo vệ Hiến pháp"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=0 header=0",
+  "errors": [
+   "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ]
+ },
+ "390-dark-review": {
+  "overflowX": false,
+  "lowContrast": [],
+  "smallTargets": [],
+  "noName": [],
+  "headings": [
+   "H1:Ôn hôm nay"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=0 header=0",
+  "errors": [
+   "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ]
+ },
+ "390-dark-profile": {
+  "overflowX": false,
+  "lowContrast": [
+   "1.31 18px \"0 ngày\" <b.>",
+   "3.50 12px \"Chưa có chuỗi · 0 XP\" <span.muted>",
+   "1.31 18px \"0/212 sách\" <b.>",
+   "3.50 14px \"/212 sách\" <span.idc-of>",
+   "3.50 12px \"đã nhận\" <span.muted>",
+   "1.31 16px \"Tổng quan\" <a.on>",
+   "3.50 16px \"Cài đặt\" <a.>",
+   "1.57 16px \"Thương mại 2: Luật Thương mại \" <span.sr-only>",
+   "1.57 9.4px \"Thương mại 2\" <span.bk-name>",
+   "1.31 14px \"Lập pháp\" <span.>",
+   "3.50 12px \"0/6\" <small.>",
+   "1.31 14px \"Xét xử\" <span.>",
+   "1.31 14px \"Kiểm sát\" <span.>",
+   "3.50 12px \"0/5\" <small.>",
+   "3.50 14px \"Chủ tịch nước\" <span.org-name>",
+   "3.50 12px \"Chưa mở\" <span.org-meta>",
+   "1.31 12px \"Lãnh đạo cấp cao\" <span.>",
+   "3.50 10px \"0/2\" <small.>",
+   "3.50 14px \"Thủ tướng Chính phủ\" <span.org-name>",
+   "3.50 14px \"Phó Thủ tướng Chính phủ\" <span.org-name>",
+   "1.31 12px \"Trung ương\" <span.>",
+   "3.50 10px \"0/3\" <small.>",
+   "3.50 14px \"Bộ trưởng\" <span.org-name>",
+   "3.50 14px \"Thứ trưởng\" <span.org-name>",
+   "3.50 14px \"Vụ trưởng\" <span.org-name>"
+  ],
+  "smallTargets": [],
+  "noName": [],
+  "headings": [
+   "H1:Hồ sơ",
+   "H2:Sự nghiệp 0/29 chức",
+   "H2:Chuyên cần & tiến độ 0 ngày"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=2 header=2",
+  "errors": []
+ },
+ "390-dark-settings": {
+  "overflowX": false,
+  "lowContrast": [
+   "3.50 16px \"Tổng quan\" <a.>",
+   "1.31 16px \"Cài đặt\" <a.on>"
+  ],
+  "smallTargets": [
+   "22x22 <input> \"\"",
+   "129x16 <input> \"\"",
+   "1x1 <input> \"\""
+  ],
+  "noName": [],
+  "headings": [
+   "H1:Hồ sơ",
+   "H2:Cài đặt",
+   "H3:Cách học",
+   "H3:Dữ liệu"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=2 header=1",
+  "errors": []
+ },
+ "390-dark-notfound": {
+  "overflowX": false,
+  "lowContrast": [],
+  "smallTargets": [],
+  "noName": [],
+  "headings": [
+   "H1:Không tìm thấy trang"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=2 header=1",
+  "errors": []
+ },
+ "1280-light-home": {
+  "overflowX": false,
+  "lowContrast": [
+   "1.31 16px \"Hôm nay\" <span.lbl>",
+   "1.00 12px \"Pháp luật đại cương\" <span.chip>"
+  ],
+  "smallTargets": [
+   "118x19 <a> \"Tất cả 23 môn →\"",
+   "84x19 <a> \"Tất cả đề →\""
+  ],
+  "noName": [],
+  "headings": [
+   "H1:Hôm nay",
+   "H2:Bắt đầu từ đâu? Tất cả 23 môn →",
+   "H2:Kiểm tra nhanh Tất cả đề →",
+   "H3:Quan hệ pháp luật"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=2 header=1",
+  "errors": []
+ },
+ "1280-light-subjects": {
+  "overflowX": false,
+  "lowContrast": [
+   "1.31 16px \"Môn học\" <span.lbl>"
+  ],
+  "smallTargets": [],
+  "noName": [],
+  "headings": [
+   "H1:Môn học",
+   "H2:Lý luận – Lịch sử 2 môn",
+   "H2:Hiến pháp – Hành chính 3 môn",
+   "H2:Dân sự – Tố tụng 3 môn",
+   "H2:Hình sự 1 môn",
+   "H2:Thương mại – Kinh tế 6 môn",
+   "H2:Tài chính – Ngân hàng 3 môn",
+   "H2:Lao động – An sinh 3 môn",
+   "H2:Sở hữu trí tuệ 2 môn"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=2 header=2",
+  "errors": []
+ },
+ "1280-light-subject": {
+  "overflowX": false,
+  "lowContrast": [
+   "1.31 16px \"Môn học\" <span.lbl>",
+   "1.31 16px \"Ngành luật Hiến pháp: đối tượn\" <a.>",
+   "1.00 12px \"TIẾP THEO CHO BẠN\" <span.next-tag>"
+  ],
+  "smallTargets": [
+   "50x15 <a> \"Môn học\"",
+   "139x22 <a> \"Danh mục khái niệm\""
+  ],
+  "noName": [],
+  "headings": [
+   "H1:Luật Hiến pháp"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=4 header=2",
+  "errors": []
+ },
+ "1280-light-concepts-list": {
+  "overflowX": false,
+  "lowContrast": [
+   "1.31 16px \"Môn học\" <span.lbl>"
+  ],
+  "smallTargets": [
+   "50x15 <a> \"Môn học\"",
+   "89x15 <a> \"Luật Hiến pháp\""
+  ],
+  "noName": [],
+  "headings": [
+   "H1:Khái niệm · Hiến pháp"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=3 header=2",
+  "errors": []
+ },
+ "1280-light-concept": {
+  "overflowX": false,
+  "lowContrast": [
+   "1.31 16px \"Môn học\" <span.lbl>",
+   "1.31 14px \"Chủ quyền Nhân dân (tất cả quy\" <span.cmp-a>",
+   "1.31 14px \"Nhà nước pháp quyền xã hội chủ\" <span.cmp-b>",
+   "1.00 12px \"Nhân dân làm chủ\" <span.chip>",
+   "1.00 12px \"tất cả quyền lực nhà nước thuộ\" <span.chip>",
+   "1.00 12px \"liên minh công nhân, nông dân,\" <span.chip>",
+   "1.00 12px \"pháp quyền\" <span.chip>",
+   "1.00 12px \"của Nhân dân, do Nhân dân, vì \" <span.chip>",
+   "1.00 12px \"thượng tôn pháp luật\" <span.chip>",
+   "1.31 14px \"Quyền lực nhà nước thống nhất,\" <span.cmp-b>",
+   "1.00 12px \"thống nhất\" <span.chip>",
+   "1.00 12px \"phân công\" <span.chip>",
+   "1.00 12px \"phối hợp\" <span.chip>",
+   "1.00 12px \"kiểm soát\" <span.chip>",
+   "1.00 12px \"lập pháp, hành pháp, tư pháp\" <span.chip>"
+  ],
+  "smallTargets": [
+   "50x15 <a> \"Môn học\"",
+   "89x15 <a> \"Luật Hiến pháp\"",
+   "224x15 <a> \"Nhà nước pháp quyền xã hộ\"",
+   "76x15 <a> \"Xem văn bản\""
+  ],
+  "noName": [],
+  "headings": [
+   "H1:Khái niệm · Hiến pháp"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=3 header=2",
+  "errors": []
+ },
+ "1280-light-quizzes": {
+  "overflowX": false,
+  "lowContrast": [
+   "1.31 16px \"Luyện đề\" <span.lbl>",
+   "1.00 12px \"Mới\" <span.tk-st>"
+  ],
+  "smallTargets": [
+   "190x21 <a> \"Quan hệ pháp luật\""
+  ],
+  "noName": [],
+  "headings": [
+   "H1:Luyện đề 10 câu",
+   "H2:Gợi ý cho bạn",
+   "H2:Tất cả đề",
+   "H3:Quan hệ pháp luật",
+   "H3:Vi phạm pháp luật & trách nhiệm pháp lý",
+   "H3:Đề kiểm tra Dân sự 2 – Nghĩa vụ, bảo đảm",
+   "H3:Đề kiểm tra Dân sự 2 – Nghĩa vụ ngoài hợ",
+   "H3:Đề kiểm tra Dân sự 1 – Chủ thể, giao dịc",
+   "H3:Đề kiểm tra Dân sự 1 – Tài sản, sở hữu, ",
+   "H3:Đặt cọc",
+   "H3:Đề kiểm tra Lao động 2 – Cho thuê lại, l",
+   "H3:Đề kiểm tra Lao động 2 – Giúp việc gia đ",
+   "H3:Đề kiểm tra Luật Lao động – Hợp đồng lao",
+   "H3:Đề kiểm tra Luật Lao động – Điều kiện la",
+   "H3:Nghỉ việc & giữ lương",
+   "H3:Chuyển khoản nhầm",
+   "H3:Đề kiểm tra Hình sự 1 – Hiệu lực, tội ph",
+   "H3:Đề kiểm tra Hình sự 1 – Đồng phạm, loại ",
+   "H3:Đề kiểm tra Luật Cạnh tranh – Hạn chế cạ",
+   "H3:Đề kiểm tra Luật Cạnh tranh – Tập trung ",
+   "H3:Đề kiểm tra SHTT – Quyền tác giả, quyền ",
+   "H3:Đề kiểm tra SHTT – Sở hữu công nghiệp, g",
+   "H3:Đề kiểm tra Thương mại 1 – Loại hình doa",
+   "H3:Đề kiểm tra Thương mại 1 – Thành lập, qu",
+   "H3:Đề kiểm tra Thương mại 1 – Hợp tác xã, p",
+   "H3:Đề kiểm tra Thương mại 2 – Mua bán hàng ",
+   "H3:Đề kiểm tra Thương mại 2 – Chế tài và gi",
+   "H3:Đề kiểm tra Luật Đất đai – Sở hữu, quản ",
+   "H3:Đề kiểm tra Luật Đất đai – Giá đất, quyề",
+   "H3:Đề kiểm tra Tố tụng dân sự – Nguyên tắc,",
+   "H3:Đề kiểm tra Tố tụng dân sự – Khởi kiện, ",
+   "H3:Đề kiểm tra Luật Hành chính – Vi phạm và",
+   "H3:Đề kiểm tra Luật Hành chính – Thủ tục và",
+   "H3:Đề kiểm tra Luật Hành chính – Quyết định",
+   "H3:Đề kiểm tra An sinh xã hội – Bảo hiểm xã",
+   "H3:Đề kiểm tra An sinh xã hội – Thất nghiệp",
+   "H3:Đề kiểm tra Luật Tài chính – Ngân sách n",
+   "H3:Đề kiểm tra Luật Tài chính – Pháp luật t",
+   "H3:Đề kiểm tra Luật Ngân hàng – Chủ thể và ",
+   "H3:Đề kiểm tra Luật Ngân hàng – Huy động vố",
+   "H3:Đề kiểm tra Pháp luật tài chính doanh ng",
+   "H3:Đề kiểm tra Pháp luật tài chính doanh ng",
+   "H3:Đề kiểm tra Luật Đầu tư – Chủ thể, bảo đ",
+   "H3:Đề kiểm tra Luật Đầu tư – Hình thức đầu ",
+   "H3:Đề kiểm tra Xây dựng VBPL – Khái quát và",
+   "H3:Đề kiểm tra Xây dựng VBPL – Ngôn ngữ, hì",
+   "H3:Đề kiểm tra Quản trị tài sản trí tuệ – N",
+   "H3:Đề kiểm tra Quản trị tài sản trí tuệ – T",
+   "H3:Đề kiểm tra Lý luận NN&PL – Nhà nước",
+   "H3:Đề kiểm tra Lý luận NN&PL – Pháp luật"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=2 header=2",
+  "errors": []
+ },
+ "1280-light-quiz": {
+  "overflowX": false,
+  "lowContrast": [],
+  "smallTargets": [],
+  "noName": [],
+  "headings": [
+   "H1:Đặt cọc"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=0 header=0",
+  "errors": [
+   "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ]
+ },
+ "1280-light-lesson": {
+  "overflowX": false,
+  "lowContrast": [
+   "1.00 12px \"trưng cầu ý dân\" <li.chip>",
+   "1.00 12px \"do Quốc hội quyết định\" <li.chip>",
+   "1.00 12px \"không bắt buộc(tóm tắt, không \" <li.chip>",
+   "1.00 12px \"(tóm tắt, không phải nguyên vă\" <span.sr-only>",
+   "1.00 12px \"lấy ý kiến Nhân dân(tóm tắt, k\" <li.chip>"
+  ],
+  "smallTargets": [],
+  "noName": [],
+  "headings": [
+   "H1:Hiến pháp: khái niệm, hiệu lực, sửa đổi ",
+   "H2:Trưng cầu ý dân về Hiến pháp"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=0 header=0",
+  "errors": [
+   "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ]
+ },
+ "1280-light-review": {
+  "overflowX": false,
+  "lowContrast": [],
+  "smallTargets": [],
+  "noName": [],
+  "headings": [
+   "H1:Ôn hôm nay"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=0 header=0",
+  "errors": [
+   "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ]
+ },
+ "1280-light-profile": {
+  "overflowX": false,
+  "lowContrast": [
+   "1.31 16px \"Hồ sơ\" <span.lbl>",
+   "1.31 18px \"0 ngày\" <b.>",
+   "3.50 12px \"Chưa có chuỗi · 0 XP\" <span.muted>",
+   "1.31 18px \"0/212 sách\" <b.>",
+   "3.50 14px \"/212 sách\" <span.idc-of>",
+   "3.50 12px \"đã nhận\" <span.muted>",
+   "1.31 16px \"Tổng quan\" <a.on>",
+   "3.50 16px \"Cài đặt\" <a.>",
+   "1.57 16px \"Thương mại 2: Luật Thương mại \" <span.sr-only>",
+   "1.57 13.63px \"Thương mại 2\" <span.bk-name>",
+   "3.50 12px \"Chủ tịch nước\" <span.org-name>",
+   "3.50 12px \"Chưa mở\" <span.org-meta>",
+   "1.31 11px \"Lãnh đạo cấp cao\" <span.>",
+   "3.50 12px \"Thủ tướng Chính phủ\" <span.org-name>",
+   "3.50 12px \"Phó Thủ tướng Chính phủ\" <span.org-name>",
+   "1.31 11px \"Trung ương\" <span.>",
+   "3.50 12px \"Bộ trưởng\" <span.org-name>",
+   "3.50 12px \"Thứ trưởng\" <span.org-name>",
+   "3.50 12px \"Vụ trưởng\" <span.org-name>",
+   "1.31 11px \"Cấp tỉnh\" <span.>",
+   "3.50 12px \"Chủ tịch UBND cấp tỉnh\" <span.org-name>",
+   "3.50 12px \"Giám đốc sở\" <span.org-name>",
+   "3.50 12px \"Chuyên viên sở\" <span.org-name>",
+   "1.31 11px \"Cơ sở\" <span.>",
+   "3.50 12px \"Chủ tịch UBND cấp xã\" <span.org-name>"
+  ],
+  "smallTargets": [],
+  "noName": [],
+  "headings": [
+   "H1:Hồ sơ",
+   "H2:Sự nghiệp 0/29 chức",
+   "H2:Chuyên cần & tiến độ 0 ngày"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=2 header=2",
+  "errors": []
+ },
+ "1280-light-settings": {
+  "overflowX": false,
+  "lowContrast": [
+   "1.31 16px \"Hồ sơ\" <span.lbl>",
+   "3.50 16px \"Tổng quan\" <a.>",
+   "1.31 16px \"Cài đặt\" <a.on>"
+  ],
+  "smallTargets": [
+   "22x22 <input> \"\"",
+   "129x16 <input> \"\"",
+   "1x1 <input> \"\""
+  ],
+  "noName": [],
+  "headings": [
+   "H1:Hồ sơ",
+   "H2:Cài đặt",
+   "H3:Cách học",
+   "H3:Dữ liệu"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=2 header=1",
+  "errors": []
+ },
+ "1280-light-notfound": {
+  "overflowX": false,
+  "lowContrast": [],
+  "smallTargets": [],
+  "noName": [],
+  "headings": [
+   "H1:Không tìm thấy trang"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=2 header=1",
+  "errors": []
+ },
+ "1280-dark-home": {
+  "overflowX": false,
+  "lowContrast": [
+   "1.31 16px \"Hôm nay\" <span.lbl>",
+   "1.00 12px \"Pháp luật đại cương\" <span.chip>"
+  ],
+  "smallTargets": [
+   "118x19 <a> \"Tất cả 23 môn →\"",
+   "84x19 <a> \"Tất cả đề →\""
+  ],
+  "noName": [],
+  "headings": [
+   "H1:Hôm nay",
+   "H2:Bắt đầu từ đâu? Tất cả 23 môn →",
+   "H2:Kiểm tra nhanh Tất cả đề →",
+   "H3:Quan hệ pháp luật"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=2 header=1",
+  "errors": []
+ },
+ "1280-dark-subjects": {
+  "overflowX": false,
+  "lowContrast": [
+   "1.31 16px \"Môn học\" <span.lbl>"
+  ],
+  "smallTargets": [],
+  "noName": [],
+  "headings": [
+   "H1:Môn học",
+   "H2:Lý luận – Lịch sử 2 môn",
+   "H2:Hiến pháp – Hành chính 3 môn",
+   "H2:Dân sự – Tố tụng 3 môn",
+   "H2:Hình sự 1 môn",
+   "H2:Thương mại – Kinh tế 6 môn",
+   "H2:Tài chính – Ngân hàng 3 môn",
+   "H2:Lao động – An sinh 3 môn",
+   "H2:Sở hữu trí tuệ 2 môn"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=2 header=2",
+  "errors": []
+ },
+ "1280-dark-subject": {
+  "overflowX": false,
+  "lowContrast": [
+   "1.31 16px \"Môn học\" <span.lbl>",
+   "1.31 16px \"Ngành luật Hiến pháp: đối tượn\" <a.>",
+   "1.00 12px \"TIẾP THEO CHO BẠN\" <span.next-tag>"
+  ],
+  "smallTargets": [
+   "50x15 <a> \"Môn học\"",
+   "139x22 <a> \"Danh mục khái niệm\""
+  ],
+  "noName": [],
+  "headings": [
+   "H1:Luật Hiến pháp"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=4 header=2",
+  "errors": []
+ },
+ "1280-dark-concepts-list": {
+  "overflowX": false,
+  "lowContrast": [
+   "1.31 16px \"Môn học\" <span.lbl>"
+  ],
+  "smallTargets": [
+   "50x15 <a> \"Môn học\"",
+   "89x15 <a> \"Luật Hiến pháp\""
+  ],
+  "noName": [],
+  "headings": [
+   "H1:Khái niệm · Hiến pháp"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=3 header=2",
+  "errors": []
+ },
+ "1280-dark-concept": {
+  "overflowX": false,
+  "lowContrast": [
+   "1.31 16px \"Môn học\" <span.lbl>",
+   "1.31 14px \"Chủ quyền Nhân dân (tất cả quy\" <span.cmp-a>",
+   "1.31 14px \"Nhà nước pháp quyền xã hội chủ\" <span.cmp-b>",
+   "1.00 12px \"Nhân dân làm chủ\" <span.chip>",
+   "1.00 12px \"tất cả quyền lực nhà nước thuộ\" <span.chip>",
+   "1.00 12px \"liên minh công nhân, nông dân,\" <span.chip>",
+   "1.00 12px \"pháp quyền\" <span.chip>",
+   "1.00 12px \"của Nhân dân, do Nhân dân, vì \" <span.chip>",
+   "1.00 12px \"thượng tôn pháp luật\" <span.chip>",
+   "1.31 14px \"Quyền lực nhà nước thống nhất,\" <span.cmp-b>",
+   "1.00 12px \"thống nhất\" <span.chip>",
+   "1.00 12px \"phân công\" <span.chip>",
+   "1.00 12px \"phối hợp\" <span.chip>",
+   "1.00 12px \"kiểm soát\" <span.chip>",
+   "1.00 12px \"lập pháp, hành pháp, tư pháp\" <span.chip>"
+  ],
+  "smallTargets": [
+   "50x15 <a> \"Môn học\"",
+   "89x15 <a> \"Luật Hiến pháp\"",
+   "224x15 <a> \"Nhà nước pháp quyền xã hộ\"",
+   "76x15 <a> \"Xem văn bản\""
+  ],
+  "noName": [],
+  "headings": [
+   "H1:Khái niệm · Hiến pháp"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=3 header=2",
+  "errors": []
+ },
+ "1280-dark-quizzes": {
+  "overflowX": false,
+  "lowContrast": [
+   "1.31 16px \"Luyện đề\" <span.lbl>",
+   "1.00 12px \"Mới\" <span.tk-st>"
+  ],
+  "smallTargets": [
+   "190x21 <a> \"Quan hệ pháp luật\""
+  ],
+  "noName": [],
+  "headings": [
+   "H1:Luyện đề 10 câu",
+   "H2:Gợi ý cho bạn",
+   "H2:Tất cả đề",
+   "H3:Quan hệ pháp luật",
+   "H3:Vi phạm pháp luật & trách nhiệm pháp lý",
+   "H3:Đề kiểm tra Dân sự 2 – Nghĩa vụ, bảo đảm",
+   "H3:Đề kiểm tra Dân sự 2 – Nghĩa vụ ngoài hợ",
+   "H3:Đề kiểm tra Dân sự 1 – Chủ thể, giao dịc",
+   "H3:Đề kiểm tra Dân sự 1 – Tài sản, sở hữu, ",
+   "H3:Đặt cọc",
+   "H3:Đề kiểm tra Lao động 2 – Cho thuê lại, l",
+   "H3:Đề kiểm tra Lao động 2 – Giúp việc gia đ",
+   "H3:Đề kiểm tra Luật Lao động – Hợp đồng lao",
+   "H3:Đề kiểm tra Luật Lao động – Điều kiện la",
+   "H3:Nghỉ việc & giữ lương",
+   "H3:Chuyển khoản nhầm",
+   "H3:Đề kiểm tra Hình sự 1 – Hiệu lực, tội ph",
+   "H3:Đề kiểm tra Hình sự 1 – Đồng phạm, loại ",
+   "H3:Đề kiểm tra Luật Cạnh tranh – Hạn chế cạ",
+   "H3:Đề kiểm tra Luật Cạnh tranh – Tập trung ",
+   "H3:Đề kiểm tra SHTT – Quyền tác giả, quyền ",
+   "H3:Đề kiểm tra SHTT – Sở hữu công nghiệp, g",
+   "H3:Đề kiểm tra Thương mại 1 – Loại hình doa",
+   "H3:Đề kiểm tra Thương mại 1 – Thành lập, qu",
+   "H3:Đề kiểm tra Thương mại 1 – Hợp tác xã, p",
+   "H3:Đề kiểm tra Thương mại 2 – Mua bán hàng ",
+   "H3:Đề kiểm tra Thương mại 2 – Chế tài và gi",
+   "H3:Đề kiểm tra Luật Đất đai – Sở hữu, quản ",
+   "H3:Đề kiểm tra Luật Đất đai – Giá đất, quyề",
+   "H3:Đề kiểm tra Tố tụng dân sự – Nguyên tắc,",
+   "H3:Đề kiểm tra Tố tụng dân sự – Khởi kiện, ",
+   "H3:Đề kiểm tra Luật Hành chính – Vi phạm và",
+   "H3:Đề kiểm tra Luật Hành chính – Thủ tục và",
+   "H3:Đề kiểm tra Luật Hành chính – Quyết định",
+   "H3:Đề kiểm tra An sinh xã hội – Bảo hiểm xã",
+   "H3:Đề kiểm tra An sinh xã hội – Thất nghiệp",
+   "H3:Đề kiểm tra Luật Tài chính – Ngân sách n",
+   "H3:Đề kiểm tra Luật Tài chính – Pháp luật t",
+   "H3:Đề kiểm tra Luật Ngân hàng – Chủ thể và ",
+   "H3:Đề kiểm tra Luật Ngân hàng – Huy động vố",
+   "H3:Đề kiểm tra Pháp luật tài chính doanh ng",
+   "H3:Đề kiểm tra Pháp luật tài chính doanh ng",
+   "H3:Đề kiểm tra Luật Đầu tư – Chủ thể, bảo đ",
+   "H3:Đề kiểm tra Luật Đầu tư – Hình thức đầu ",
+   "H3:Đề kiểm tra Xây dựng VBPL – Khái quát và",
+   "H3:Đề kiểm tra Xây dựng VBPL – Ngôn ngữ, hì",
+   "H3:Đề kiểm tra Quản trị tài sản trí tuệ – N",
+   "H3:Đề kiểm tra Quản trị tài sản trí tuệ – T",
+   "H3:Đề kiểm tra Lý luận NN&PL – Nhà nước",
+   "H3:Đề kiểm tra Lý luận NN&PL – Pháp luật"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=2 header=2",
+  "errors": []
+ },
+ "1280-dark-quiz": {
+  "overflowX": false,
+  "lowContrast": [],
+  "smallTargets": [],
+  "noName": [],
+  "headings": [
+   "H1:Đặt cọc"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=0 header=0",
+  "errors": [
+   "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ]
+ },
+ "1280-dark-lesson": {
+  "overflowX": false,
+  "lowContrast": [
+   "1.00 12px \"cao nhất\" <li.chip>",
+   "1.00 12px \"phù hợp với Hiến pháp\" <li.chip>",
+   "1.00 12px \"vi phạm Hiến pháp bị xử lý(tóm\" <li.chip>",
+   "1.00 12px \"(tóm tắt, không phải nguyên vă\" <span.sr-only>"
+  ],
+  "smallTargets": [],
+  "noName": [],
+  "headings": [
+   "H1:Hiến pháp: khái niệm, hiệu lực, sửa đổi ",
+   "H2:Hiệu lực pháp lý cao nhất của Hiến pháp"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=0 header=0",
+  "errors": [
+   "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ]
+ },
+ "1280-dark-review": {
+  "overflowX": false,
+  "lowContrast": [],
+  "smallTargets": [],
+  "noName": [],
+  "headings": [
+   "H1:Ôn hôm nay"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=0 header=0",
+  "errors": [
+   "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ]
+ },
+ "1280-dark-profile": {
+  "overflowX": false,
+  "lowContrast": [
+   "1.31 16px \"Hồ sơ\" <span.lbl>",
+   "1.31 18px \"0 ngày\" <b.>",
+   "3.50 12px \"Chưa có chuỗi · 0 XP\" <span.muted>",
+   "1.31 18px \"0/212 sách\" <b.>",
+   "3.50 14px \"/212 sách\" <span.idc-of>",
+   "3.50 12px \"đã nhận\" <span.muted>",
+   "1.31 16px \"Tổng quan\" <a.on>",
+   "3.50 16px \"Cài đặt\" <a.>",
+   "1.57 16px \"Thương mại 2: Luật Thương mại \" <span.sr-only>",
+   "1.57 13.63px \"Thương mại 2\" <span.bk-name>",
+   "3.50 12px \"Chủ tịch nước\" <span.org-name>",
+   "3.50 12px \"Chưa mở\" <span.org-meta>",
+   "1.31 11px \"Lãnh đạo cấp cao\" <span.>",
+   "3.50 12px \"Thủ tướng Chính phủ\" <span.org-name>",
+   "3.50 12px \"Phó Thủ tướng Chính phủ\" <span.org-name>",
+   "1.31 11px \"Trung ương\" <span.>",
+   "3.50 12px \"Bộ trưởng\" <span.org-name>",
+   "3.50 12px \"Thứ trưởng\" <span.org-name>",
+   "3.50 12px \"Vụ trưởng\" <span.org-name>",
+   "1.31 11px \"Cấp tỉnh\" <span.>",
+   "3.50 12px \"Chủ tịch UBND cấp tỉnh\" <span.org-name>",
+   "3.50 12px \"Giám đốc sở\" <span.org-name>",
+   "3.50 12px \"Chuyên viên sở\" <span.org-name>",
+   "1.31 11px \"Cơ sở\" <span.>",
+   "3.50 12px \"Chủ tịch UBND cấp xã\" <span.org-name>"
+  ],
+  "smallTargets": [],
+  "noName": [],
+  "headings": [
+   "H1:Hồ sơ",
+   "H2:Sự nghiệp 0/29 chức",
+   "H2:Chuyên cần & tiến độ 0 ngày"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=2 header=2",
+  "errors": []
+ },
+ "1280-dark-settings": {
+  "overflowX": false,
+  "lowContrast": [
+   "1.31 16px \"Hồ sơ\" <span.lbl>",
+   "3.50 16px \"Tổng quan\" <a.>",
+   "1.31 16px \"Cài đặt\" <a.on>"
+  ],
+  "smallTargets": [
+   "22x22 <input> \"\"",
+   "129x16 <input> \"\"",
+   "1x1 <input> \"\""
+  ],
+  "noName": [],
+  "headings": [
+   "H1:Hồ sơ",
+   "H2:Cài đặt",
+   "H3:Cách học",
+   "H3:Dữ liệu"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=2 header=1",
+  "errors": []
+ },
+ "1280-dark-notfound": {
+  "overflowX": false,
+  "lowContrast": [],
+  "smallTargets": [],
+  "noName": [],
+  "headings": [
+   "H1:Không tìm thấy trang"
+  ],
+  "imgNoAlt": 0,
+  "landmarks": "main=1 nav=2 header=1",
+  "errors": []
+ }
+}

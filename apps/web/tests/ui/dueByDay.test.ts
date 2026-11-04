@@ -23,3 +23,26 @@ describe('dueByDay', () => {
     expect(dueByDay([new Date(2027, 0, 1, 7, 0)], dec)).toEqual([0, 0, 1, 0, 0, 0, 0]);
   });
 });
+
+describe('nextReview — Ôn tập rỗng nói khi nào có bài (đợt 2)', () => {
+  it('ngày gần nhất có hẹn + số khái niệm ngày đó', async () => {
+    const { nextReview } = await import('$lib/ui/dueByDay');
+    const today = new Date(2026, 10, 4, 10);
+    const r = nextReview([new Date(2026, 10, 6, 8), new Date(2026, 10, 5, 9), new Date(2026, 10, 5, 22)], today);
+    expect(r).toMatchObject({ inDays: 1, count: 2, date: '05/11/2026' });
+  });
+  it('vắt qua 00:00: 23:59 hôm nay hẹn 00:01 mai là "1 ngày"', async () => {
+    const { nextReview } = await import('$lib/ui/dueByDay');
+    expect(nextReview([new Date(2026, 10, 5, 0, 1)], new Date(2026, 10, 4, 23, 59))?.inDays).toBe(1);
+  });
+  it('hẹn còn trong hôm nay (FSRS learning step 1–10 phút) → inDays 0, giờ sớm nhất, chỉ đếm hẹn chưa tới', async () => {
+    const { nextReview } = await import('$lib/ui/dueByDay');
+    const now = new Date(2026, 10, 4, 10, 5);
+    const r = nextReview([new Date(2026, 10, 4, 10, 2), new Date(2026, 10, 4, 10, 10), new Date(2026, 10, 4, 10, 16), new Date(2026, 10, 5, 9)], now);
+    expect(r).toMatchObject({ inDays: 0, count: 2, time: '10:10' });
+  });
+  it('không có hẹn → null', async () => {
+    const { nextReview } = await import('$lib/ui/dueByDay');
+    expect(nextReview([], new Date())).toBeNull();
+  });
+});

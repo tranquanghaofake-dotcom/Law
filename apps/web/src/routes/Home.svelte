@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Loading from '$lib/ui/Loading.svelte';
   // Trang Hôm nay = state router: một thẻ hành động, môn đang học, một thẻ kiểm tra nhanh (spec §3).
   import type { ContentIndex, Level, Subject } from '$lib/content/types';
   import { loadIndex, loadSubject, loadConcepts } from '$lib/content/loader';
@@ -8,7 +9,7 @@
   import { weekFlags, weekStart } from '$lib/ui/week';
   import { hashFor } from '$lib/router.svelte';
   import { GROUPS, pickQuickQuiz } from '$lib/ui/groups';
-  import { knownConcepts, pickHeroState, type HeroState } from '$lib/ui/today';
+  import { knownConcepts, pickHeroState, startAlternatives, type HeroState } from '$lib/ui/today';
   import { dueWindow } from '$lib/ui/sideStudy';
   import { dueByDay } from '$lib/ui/dueByDay';
   import { orderedSubjects, byRecency, lastStudiedBySubject } from '$lib/ui/shelves';
@@ -34,7 +35,11 @@
   let hard = $state<{ id: string; subject: string; term: string }[]>([]);
   let error = $state('');
 
+  let loading = false;
   async function load() {
+    if (loading) return; // bấm "Thử lại" liên tiếp không chạy hai lượt song song
+    loading = true;
+    error = ''; hero = null; // thử lại: hiện "Đang tải" thay vì nội dung dở của lượt lỗi
     try {
       document.title = 'Hôm nay · Luyện Luật';
       const idx = await loadIndex();
@@ -60,7 +65,7 @@
       // Môn đang học: ≤ 4 môn có tiến độ, học gần nhất trước. Chưa học gì: 3 môn đầu chương trình (spec phần nhìn đợt 4 §4), không liệt kê cả kho.
       const started = subjects.filter((s) => recent[s.id] != null);
       studying = started.length > 0;
-      rows = (studying ? byRecency(started, recent).slice(0, 4) : subjects.slice(0, 3))
+      rows = (studying ? byRecency(started, recent).slice(0, 4) : startAlternatives(subjects, hero && 'subject' in hero ? hero.subject.id : undefined, 3))
         .map((s) => { const x = subjectSummary(s, levels); return { subject: s, grade: x.grade, mastered: x.mastered, total: x.total }; });
 
       // khái niệm khó: sai ≥ 3 lần liên tiếp, tối đa 5 (Memrise "Difficult words")
@@ -79,22 +84,27 @@
       // rail: 7 ngày có phiên, hẹn ôn ngày mai
       week = weekFlags(await repo.reviewDays(weekStart()));
       dueDays = dueByDay((await repo.due(dueWindow(new Date(), 6))).filter((p) => known.has(p.conceptId)).map((p) => p.card.due));
-    } catch (e) { error = (e as Error).message; }
+    } catch (e) { error = (e as Error).message; } finally { loading = false; }
   }
   load();
   $effect(() => { if (hero) return setRail(HomeRail, { week, dueDays }); });
 </script>
 
 {#if error}
-  <section class="card"><p class="muted">Không tải được dữ liệu ({error}). Nếu mở file trực tiếp, hãy chạy <code>npm run dev</code> ở gốc repo.</p></section>
+  <section class="card load-error" role="alert">
+    <h1>Hôm nay</h1>
+    <p>Không tải được nội dung bài học. Kiểm tra kết nối mạng rồi thử lại; tiến độ của bạn vẫn lưu trong trình duyệt.</p>
+    <button type="button" class="btn primary" onclick={load}>Thử lại</button>
+    <p class="small muted">Chi tiết lỗi: {error}</p>
+  </section>
 {:else if !index || !hero}
-  <p class="loading">Đang tải…</p>
+  <Loading />
 {:else}
   <h1 class="sr-only">Hôm nay</h1>
   <HeroCard state={hero} />
 
   {#if rows.length}
-    <h2 class="section-title"><b>{studying ? 'Môn đang học' : 'Bắt đầu từ đâu?'}</b> <a class="more" href={hashFor('subjects')}>Tất cả {subjectCount} môn →</a></h2>
+    <h2 class="section-title"><b>{studying ? 'Môn đang học' : 'Hoặc chọn môn khác'}</b> <a class="more" href={hashFor('subjects')}>Tất cả {subjectCount} môn →</a></h2>
     <ul class="subject-rows">
       {#each rows as r (r.subject.id)}
         <li><a class="subject-row" href={hashFor('subject', { subject: r.subject.id })}>

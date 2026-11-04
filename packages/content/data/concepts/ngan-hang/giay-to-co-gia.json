@@ -8,7 +8,7 @@
  "example": "Ngân hàng thương mại phát hành kỳ phiếu kỳ hạn 12 tháng, lãi 6%/năm: kỳ phiếu là giấy tờ có giá — xác nhận ngân hàng nợ người sở hữu kỳ phiếu.",
  "source": {
   "kind": "statute",
-  "cite": "Khoản 8 Điều 6 Luật Ngân hàng Nhà nước Việt Nam 2010 (VBHN 141/2026/VBHN-LQ-VPQH)",
+  "cite": "Khoản 8 Điều 6 Luật Ngân hàng Nhà nước Việt Nam 2010 (sửa đổi, bổ sung năm 2022)",
   "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-141-2026-VBHN-LQ-VPQH-Luat-Ngan-hang-Nha-nuoc-Viet-Nam-726674.aspx"
  },
  "checked": "2026-11-01",
@@ -40,7 +40,7 @@
    "explain": "Khoản 8 Điều 6.",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 8 Điều 6 Luật Ngân hàng Nhà nước Việt Nam 2010 (VBHN 141/2026/VBHN-LQ-VPQH)"
+    "cite": "Khoản 8 Điều 6 Luật Ngân hàng Nhà nước Việt Nam 2010 (sửa đổi, bổ sung năm 2022)"
    }
   },
   {
@@ -57,7 +57,7 @@
    "explain": "Khoản 8 Điều 6: giấy tờ có giá xác nhận nghĩa vụ trả nợ; cổ phiếu xác nhận quyền sở hữu.",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 8 Điều 6 Luật Ngân hàng Nhà nước Việt Nam 2010 (VBHN 141/2026/VBHN-LQ-VPQH)"
+    "cite": "Khoản 8 Điều 6 Luật Ngân hàng Nhà nước Việt Nam 2010 (sửa đổi, bổ sung năm 2022)"
    }
   },
   {
@@ -129,10 +129,10 @@
    "level": 4,
    "statement": "Giấy tờ có giá là bằng chứng xác nhận nghĩa vụ trả nợ giữa tổ chức phát hành giấy tờ có giá với người sở hữu giấy tờ có giá trong một thời hạn nhất định, điều kiện trả lãi và các điều kiện khác.",
    "answer": true,
-   "explain": "Đúng. Khoản 8 Điều 6 Luật Ngân hàng Nhà nước Việt Nam 2010 (VBHN 141/2026/VBHN-LQ-VPQH) (nguyên văn).",
+   "explain": "Đúng. Khoản 8 Điều 6 Luật Ngân hàng Nhà nước Việt Nam 2010 (sửa đổi, bổ sung năm 2022) (nguyên văn).",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 8 Điều 6 Luật Ngân hàng Nhà nước Việt Nam 2010 (VBHN 141/2026/VBHN-LQ-VPQH)",
+    "cite": "Khoản 8 Điều 6 Luật Ngân hàng Nhà nước Việt Nam 2010 (sửa đổi, bổ sung năm 2022)",
     "url": "https://thuvienphapluat.vn/van-ban/Tien-te-Ngan-hang/Van-ban-hop-nhat-141-2026-VBHN-LQ-VPQH-Luat-Ngan-hang-Nha-nuoc-Viet-Nam-726674.aspx"
    }
   }

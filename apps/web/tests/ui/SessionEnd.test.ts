@@ -40,4 +40,27 @@ describe('SessionEnd', () => {
     expect(d.querySelectorAll('li')).toHaveLength(3);
     expect(d.querySelector('li')!.textContent!.length).toBeLessThanOrEqual(160);
   });
+  it('dòng "nhớ chắc hơn" đứng đầu: số khái niệm lên bậc; có khái niệm giữ bậc thì giải thích luật giãn cách', () => {
+    const levelUps = [{ conceptId: 'a', to: 2 as const }, { conceptId: 'b', to: 4 as const }];
+    const { container } = render(SessionEnd, { props: { ...base, summary: { ...base.summary, levelUps, held: 3 } } });
+    const m = container.querySelector('.memory-line')!;
+    expect(m.textContent).toContain('2 khái niệm nhớ chắc hơn');
+    expect(container.querySelector('.held-note')!.textContent).toMatch(/3 khái niệm.*ngày khác/);
+    const { container: c2 } = render(SessionEnd, { props: base });
+    expect(c2.querySelector('.memory-line')!.textContent).toContain('Chưa khái niệm nào lên bậc');
+    expect(c2.querySelector('.held-note')).toBeNull();
+  });
+});
+
+
+describe('SessionEnd — không lặp số liệu (đợt 2)', () => {
+  it('tỉ lệ đúng chỉ ở vòng điểm, không lặp trong danh sách; XP theo nguồn không vẽ thanh trang trí', async () => {
+    const { render } = await import('@testing-library/svelte');
+    const SessionEnd = (await import('$lib/ui/SessionEnd.svelte')).default;
+    const { container } = render(SessionEnd, { props: { summary: { correct: 2, total: 5, xp: 40, levelUps: [], bestCombo: 2 }, sources: [{ key: 'base', label: 'Trả lời đúng', xp: 40 }], record: null, retryTotal: 0, concepts: [], streak: 1, streakEvent: 'started', dueTomorrow: 3, onhome() {} } as never });
+    expect(container.querySelector('.end-ring')?.getAttribute('aria-label')).toContain('40');
+    expect([...container.querySelectorAll('.stat-list dt')].map((d) => d.textContent)).not.toContain('Tỉ lệ đúng');
+    expect(container.querySelector('.xp-sources i')).toBeNull();
+    expect(container.querySelector('.xp-sources')?.textContent).toContain('+40');
+  });
 });

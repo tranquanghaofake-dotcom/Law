@@ -14,7 +14,7 @@ describe('nội dung Luật Sở hữu trí tuệ', () => {
     for (const f of files) {
       const c = conceptSchema.parse(JSON.parse(readFileSync(join(dir, f), 'utf8')));
       expect(c.source.kind).toBe('statute');
-      expect(c.source.cite).toMatch(/Luật Sở hữu trí tuệ \(VBHN 67\/VBHN-VPQH 2026\)$/);
+      expect(c.source.cite).toMatch(/Luật Sở hữu trí tuệ \(sửa đổi, bổ sung năm 2009, 2019, 2022, 2025\)$/);
       expect(c.source.url).toMatch(/^https:\/\/thuvienphapluat\.vn\//);
       expect(c.checked).toBe('2026-11-01');
       expect(c.items.filter((i) => i.type === 'recall').length).toBe(1);
@@ -41,7 +41,7 @@ describe('nội dung Luật Sở hữu trí tuệ', () => {
       expect(s.group).toBe('so-huu-tri-tue');
       expect(s.questions.length).toBe(10);
       for (const q of s.questions) {
-        expect(q.basis).toMatch(/Điều \d+ Luật SHTT \(VBHN 67\/VBHN-VPQH 2026\)/);
+        expect(q.basis).toMatch(/Điều \d+ Luật SHTT \(sửa đổi, bổ sung năm 2009, 2019, 2022, 2025\)/);
         expect(q.url).toMatch(/^https:\/\/thuvienphapluat\.vn\//);
       }
     }

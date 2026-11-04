@@ -1,5 +1,11 @@
 <script lang="ts">
+  import Glyph from '$lib/art/Glyph.svelte';
   import StreakCard from '$lib/art/StreakCard.svelte';
+  import CountUp from './CountUp.svelte';
+  import StreakIgnite from '$lib/art/StreakIgnite.svelte';
+  import { shouldIgnite, IGNITE_KEY } from './ignite';
+  import { localDay } from '$lib/game/streak';
+  import { onMount } from 'svelte';
   import type { Concept, Level } from '$lib/content/types';
   import type { StreakEvent } from '$lib/game/streak';
   import type { RankInfo } from '$lib/game/rank';
@@ -9,7 +15,7 @@
   import { reviewTexts } from './cards/answer';
   import type { XpSource } from './session/xpSources';
   let { summary, concepts, streak, streakEvent, dueTomorrow, onhome, onagain, onnext, mistakes = [], promotion = null, sources = [], record = null, retryTotal: retryProp = 0}: {
-    summary: { correct: number; total: number; xp: number; levelUps: { conceptId: string; to: Level }[]; bestCombo?: number; golden?: number; fixed?: number; retried?: number; pretest?: { total: number; correct: number } };
+    summary: { correct: number; total: number; xp: number; levelUps: { conceptId: string; to: Level }[]; bestCombo?: number; golden?: number; fixed?: number; retried?: number; pretest?: { total: number; correct: number }; held?: number };
     concepts: Concept[]; streak: number; streakEvent: StreakEvent; rankBefore: RankInfo; rankAfter: RankInfo; dueTomorrow: number;
     onhome: () => void; onagain?: () => void; onnext?: () => void; mistakes?: Step[]; promotion?: string | null;
     /** XP chia theo nguồn */
@@ -20,44 +26,56 @@
     retryTotal?: number;
   } = $props();
   const retryTotal = $derived(retryProp || summary.retried || 0);
+  // màn thắp chuỗi toàn màn hình: lần đầu chuỗi tăng trong ngày (ghi ngày đã chiếu ở localStorage)
+  let igniting = $state(false);
+  let mini: HTMLSpanElement | undefined = $state();
+  onMount(() => {
+    const today = localDay(new Date());
+    let shown: string | null = null;
+    try { shown = localStorage.getItem(IGNITE_KEY); } catch { /* bỏ qua */ }
+    if (!shouldIgnite(streakEvent, today, shown)) return;
+    try { localStorage.setItem(IGNITE_KEY, today); } catch { /* bỏ qua */ }
+    igniting = true;
+  });
   const term = (id: string) => concepts.find((c) => c.id === id)?.term ?? id;
   const conceptOf = (id: string) => concepts.find((c) => c.id === id);
   const explainOf = (s: Step) => ('explain' in s.item ? s.item.explain : '');
   const streakMsg = $derived(({ started: 'Bắt đầu chuỗi ngày.', extended: 'Chuỗi +1 ngày.', 'same-day': 'Hôm nay đã tính chuỗi.', froze: 'Bùa giữ chuỗi đã cứu bạn.', reset: 'Chuỗi bắt đầu lại từ 1.' } as Record<StreakEvent, string>)[streakEvent]);
   const rate = $derived(summary.total ? summary.correct / summary.total : 0);
   const R = 52, C = 2 * Math.PI * R;
-  const maxSrc = $derived(Math.max(1, ...sources.map((s) => s.xp)));
   const recordMsg = $derived(!record ? '' : record.comboBeaten && record.rateBeaten ? 'Kỷ lục phiên mới: cả combo và tỉ lệ đúng.' : record.comboBeaten ? `Kỷ lục combo mới: ${summary.bestCombo} liên tiếp (trước đó ${record.before.bestCombo}).` : record.rateBeaten ? `Kỷ lục tỉ lệ đúng mới: ${Math.round(rate * 100)}% (trước đó ${Math.round(record.before.bestRate * 100)}%).` : '');
 </script>
 
 <section class="card session-end" aria-label="Kết thúc phiên">
   <p class="kicker">Xong phiên</p>
+  <p class="memory-line">{#if summary.levelUps.length}<b>{summary.levelUps.length} khái niệm nhớ chắc hơn</b> (lên bậc){:else}Chưa khái niệm nào lên bậc phiên này{/if}</p>
+  {#if summary.held}<p class="held-note muted small">{summary.held} khái niệm trả lời đúng nhưng giữ bậc: từ bậc 4 cần ôn lại vào một ngày khác mới lên — nhớ qua nhiều ngày mới tính là thuần thục.</p>{/if}
   <div class="end-top">
     <div class="end-ring" role="img" aria-label="Tỉ lệ đúng {Math.round(rate * 100)} phần trăm">
       <svg viewBox="0 0 120 120" aria-hidden="true" focusable="false"><circle class="trk" cx="60" cy="60" r={R} /><circle class="val" cx="60" cy="60" r={R} stroke-dasharray={C} stroke-dashoffset={C * (1 - rate)} transform="rotate(-90 60 60)" style="--c:{C}" /></svg>
       <p class="score"><b>{summary.correct}</b><small>/{summary.total} đúng</small></p>
     </div>
     <div class="end-stats">
-      <p class="xp">+{summary.xp} XP</p>
+      <p class="xp">+<CountUp value={summary.xp} from={0} duration={1100} /> XP</p>
       <dl class="stat-list">
         {#if summary.bestCombo !== undefined}<div><dt>Combo dài nhất</dt><dd>{summary.bestCombo}</dd></div>{/if}
         {#if summary.golden}<div><dt>Câu vàng</dt><dd>{summary.golden}</dd></div>{/if}
         {#if retryTotal > 0}<div><dt>Sửa được</dt><dd>{summary.fixed ?? 0}/{retryTotal}</dd></div>{/if}
-        <div><dt>Tỉ lệ đúng</dt><dd>{Math.round(rate * 100)}%</dd></div>
         {#if summary.pretest && summary.pretest.total > 0}<div><dt>Đoán trước đúng</dt><dd>{summary.pretest.correct}/{summary.pretest.total}</dd></div>{/if}
       </dl>
     </div>
   </div>
-  {#if recordMsg}<p class="record-msg" role="status"><span class="seal-stamp" aria-hidden="true">★</span> {recordMsg}</p>{/if}
+  {#if recordMsg}<p class="record-msg" role="status"><span class="seal-stamp" aria-hidden="true"><Glyph name="star-fill" size={14} /></span> {recordMsg}</p>{/if}
   {#if sources.length}
     <ul class="xp-sources" aria-label="XP theo nguồn">
       {#each sources as s (s.key)}
-        <li><span>{s.label}</span><i aria-hidden="true"><span style="width:{(s.xp / maxSrc) * 100}%"></span></i><b>+{s.xp}</b></li>
+        <li><span>{s.label}</span><b>+{s.xp}</b></li>
       {/each}
     </ul>
   {/if}
   {#if promotion}<p class="promotion"><span class="seal-stamp" aria-hidden="true">§</span> Thăng chức: <b>{promotion}</b> <span class="muted small">(chức danh mô phỏng)</span></p>{/if}
-  <p class="streak"><StreakCard count={streak} longest={streak} size="mini" /> Chuỗi {streak} ngày · {streakMsg}</p>
+  <p class="streak"><span class="streak-mini" class:away={igniting} bind:this={mini}><StreakCard count={streak} longest={streak} size="mini" /></span> Chuỗi {streak} ngày · {streakMsg}</p>
+  {#if igniting}<StreakIgnite count={streak} longest={streak} origin={mini} onclose={() => (igniting = false)} />{/if}
   {#if summary.levelUps.length}
     <h2>Khái niệm lên bậc</h2>
     <ul class="levelups">

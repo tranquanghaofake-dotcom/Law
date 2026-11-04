@@ -39,8 +39,8 @@ const mcqStep = (conceptId: string, level: Level = 2, meta: Step['meta'] = { kin
 });
 
 describe('rating FSRS', () => {
-  it('quy ước: sai = Again; đúng chậm = Hard; đúng nhanh ở bậc ≥ 3 = Easy', () => {
-    expect(ratingFor(true, 3000, 3)).toBe(Rating.Easy);
+  it('quy ước (sửa 04/11): sai = Again; đúng chậm = Hard; nhận biết nhanh vẫn chỉ Good, không Easy', () => {
+    expect(ratingFor(true, 3000, 3)).toBe(Rating.Good);
     expect(ratingFor(true, 13000, 1)).toBe(Rating.Hard);
     expect(ratingFor(false, 1000, 5)).toBe(Rating.Again);
   });

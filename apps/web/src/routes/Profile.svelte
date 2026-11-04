@@ -27,6 +27,7 @@
   let byLevel = $state<number[]>([0, 0, 0, 0, 0, 0, 0]);
   let week = $state<boolean[]>(Array(7).fill(false));
   let msg = $state('');
+  let loaded = $state(false); // số liệu thật đã về (CountUp chỉ so/đếm khi true)
   let careerSec = $state<{ scrollToNext: () => void } | null>(null);
 
   if (!shelf.ready) refreshShelf();
@@ -48,6 +49,7 @@
       for (const p of all) counts[p.level] += 1;
       byLevel = counts;
       week = weekFlags(await repo.reviewDays(weekStart()));
+      loaded = true;
     } catch (e) { msg = `Không tải được dữ liệu: ${(e as Error).message}`; }
   }
   $effect(() => { document.title = onSettings ? 'Cài đặt · Luyện Luật' : 'Hồ sơ · Luyện Luật'; });
@@ -119,8 +121,8 @@
   <div class="idc-top">
     <span class="idc-seal" aria-hidden="true">§</span>
     <div class="idc-who">
-      <h1 id="idc-h1" class="idc-eyebrow">Hồ sơ</h1>
-      <p class="idc-title">{t.title}</p>
+      <p class="idc-eyebrow" aria-hidden="true">Hồ sơ</p>
+      <h1 id="idc-h1" class="idc-title"><span class="sr-only">{'Hồ sơ: '}</span>{t.title}</h1>
       <p class="idc-sub">{t.tier ? TIER_NAMES[t.tier] : 'Khởi đầu'} · {BRANCH_NAMES[career.branch]}</p>
     </div>
   </div>
@@ -148,18 +150,18 @@
       <p class="idc-promo" role="status">Chúc mừng! Bạn vừa nhận chức mới: <b>{fresh.title}</b>. <button type="button" class="idc-link" onclick={() => reveal('su-nghiep')}>Xem lễ nhận chức →</button></p>
     {/if}
   {/if}
-  <div class="tabs idc-tabs" role="tablist" aria-label="Hồ sơ">
-    <a role="tab" href={hashFor('profile')} aria-selected={!onSettings} class:on={!onSettings}>Tổng quan</a>
-    <a role="tab" href={hashFor('settings')} aria-selected={onSettings} class:on={onSettings}><Glyph name="gear" size={16} /> Cài đặt</a>
-  </div>
+  <nav class="tabs idc-tabs" aria-label="Hồ sơ">
+    <a href={hashFor('profile')} aria-current={onSettings ? undefined : 'page'} class:on={!onSettings}>Tổng quan</a>
+    <a href={hashFor('settings')} aria-current={onSettings ? 'page' : undefined} class:on={onSettings}><Glyph name="gear" size={16} /> Cài đặt</a>
+  </nav>
 </section>
 {#if !onSettings}<Bookcase />{/if}
 </div>
 
 {#if onSettings}
-  <div role="tabpanel"><Settings /></div>
+  <div><Settings /></div>
 {:else}
-  <div role="tabpanel" class="acc-list">
+  <div class="acc-list">
     {#each SECTIONS as s (s.id)}
       {@const open = isOpen(s.id)}
       <section class="acc" class:open id="sec-{s.id}">
@@ -178,7 +180,7 @@
                 {#if s.id === 'su-nghiep'}
                   <CareerSection bind:this={careerSec} />
                 {:else}
-                  <StreakPanel {streak} {xp} {week} {byLevel} />
+                  <StreakPanel {streak} {xp} {week} {byLevel} ready={loaded} />
                 {/if}
               </div>
             {/if}

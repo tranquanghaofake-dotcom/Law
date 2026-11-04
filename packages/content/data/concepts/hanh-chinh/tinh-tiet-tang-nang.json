@@ -8,7 +8,7 @@
  "example": "Một người bị lập biên bản vi phạm, công an yêu cầu dừng nhưng vẫn tiếp tục bán hàng lấn chiếm vỉa hè: có tình tiết tăng nặng (điểm i khoản 1 Điều 10).",
  "source": {
   "kind": "statute",
-  "cite": "Điểm a–c khoản 1 Điều 10 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)",
+  "cite": "Điểm a–c khoản 1 Điều 10 Luật Xử lý vi phạm hành chính (sửa đổi, bổ sung đến năm 2025)",
   "url": "https://thuvienphapluat.vn/van-ban/Vi-pham-hanh-chinh/Van-ban-hop-nhat-90-VBHN-VPQH-2026-Luat-Xu-ly-vi-pham-hanh-chinh-699548.aspx"
  },
  "checked": "2026-11-01",
@@ -37,7 +37,7 @@
    "explain": "Điểm a khoản 1 Điều 10.",
    "source": {
     "kind": "statute",
-    "cite": "Điều 10 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)"
+    "cite": "Điều 10 Luật Xử lý vi phạm hành chính (sửa đổi, bổ sung đến năm 2025)"
    }
   },
   {
@@ -54,7 +54,7 @@
    "explain": "Điểm c khoản 1 Điều 10.",
    "source": {
     "kind": "statute",
-    "cite": "Điều 10 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)"
+    "cite": "Điều 10 Luật Xử lý vi phạm hành chính (sửa đổi, bổ sung đến năm 2025)"
    }
   },
   {
@@ -130,10 +130,10 @@
    "level": 4,
    "statement": "Xúi giục, lôi kéo, sử dụng người chưa thành niên vi phạm hành chính là tình tiết tăng nặng.",
    "answer": true,
-   "explain": "Đúng. Điều 10 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026): xúi giục, lôi kéo, sử dụng người chưa thành niên vi phạm.",
+   "explain": "Đúng. Điều 10 Luật Xử lý vi phạm hành chính (sửa đổi, bổ sung đến năm 2025): xúi giục, lôi kéo, sử dụng người chưa thành niên vi phạm.",
    "source": {
     "kind": "statute",
-    "cite": "Điều 10 Luật Xử lý vi phạm hành chính (VBHN 90/VBHN-VPQH 2026)"
+    "cite": "Điều 10 Luật Xử lý vi phạm hành chính (sửa đổi, bổ sung đến năm 2025)"
    }
   }
  ]

@@ -1,7 +1,8 @@
 import type { Level } from '$lib/content/types';
 import { xpBreakdown, type XpParts } from '$lib/game/xp';
 import type { AnswerResult } from '$lib/ui/cards/types';
-import { nextLevel } from './progress';
+import { stepLevel } from './progress';
+import { localDay } from '$lib/game/streak';
 import { spreadByConcept } from './arrange';
 import type { Step } from './session';
 
@@ -13,6 +14,8 @@ export type StepResult = {
   /** Bước thuộc vòng sửa sai (không tính điểm phiên, không đổi bậc). */
   retry?: boolean;
   golden?: boolean;
+  /** Đúng nhưng giữ bậc vì luật giãn cách (cùng ngày với lần lên bậc trước, bậc ≥ 4). */
+  held?: boolean;
   /** (đợt 7) Bước đoán trước: không đổi bậc, không XP, không combo, không tính điểm phiên, không vào vòng sửa sai. */
   pretest?: boolean;
 };
@@ -26,6 +29,10 @@ export type RunnerState = {
   /** XP từ câu trả lời, chia theo nguồn (chưa gồm thưởng phiên/đợt do SessionView cộng). */
   xpParts: XpParts;
   levels: Record<string, Level>;
+  /** Ngày lên bậc gần nhất theo khái niệm (luật giãn cách, cùng luật với repo.record). */
+  upDays: Record<string, string>;
+  /** Ngày cố định cho phiên (test). Không có thì lấy ngày lúc trả lời từng câu — khớp repo.record khi phiên vắt qua nửa đêm. */
+  today?: string;
   results: StepResult[];
   /** Chỉ số bước retry đầu tiên trong `steps`; null = chưa nối vòng sửa sai. */
   retryStart: number | null;
@@ -43,8 +50,8 @@ const isPretest = (st: Step | undefined): boolean => st?.meta?.kind === 'pretest
 /** Bước không tính vào lượt chính (điểm phiên, vòng sửa sai). */
 const offMain = (st: Step | undefined): boolean => isIntro(st) || isRetry(st) || isPretest(st);
 
-export function createRunner(steps: Step[], levels: Record<string, Level>): RunnerState {
-  return { steps, i: 0, combo: 0, bestCombo: 0, xp: 0, xpParts: ZERO, levels: { ...levels }, results: [], retryStart: null, done: steps.length === 0 };
+export function createRunner(steps: Step[], levels: Record<string, Level>, upDays: Record<string, string> = {}, today?: string): RunnerState {
+  return { steps, i: 0, combo: 0, bestCombo: 0, xp: 0, xpParts: ZERO, levels: { ...levels }, upDays: { ...upDays }, today, results: [], retryStart: null, done: steps.length === 0 };
 }
 
 /**
@@ -59,7 +66,9 @@ export function answer(s: RunnerState, r: AnswerResult): { state: RunnerState; l
   const retry = isRetry(step);
   const pretest = isPretest(step);
   const golden = !retry && !pretest && !!step.meta?.golden;
-  const after = intro || retry || pretest ? before : nextLevel(before, r.correct);
+  const off = intro || retry || pretest;
+  const lv = off ? null : stepLevel(before, r.correct, s.upDays[step.conceptId], s.today ?? localDay(new Date()), r.selfGrade === 'gan');
+  const after = lv ? lv.level : before;
   const parts = intro || pretest ? ZERO : xpBreakdown(r.correct, s.combo, { golden, retry });
   const combo = intro || retry || pretest ? s.combo : r.correct ? s.combo + 1 : 0;
   const state: RunnerState = {
@@ -69,9 +78,10 @@ export function answer(s: RunnerState, r: AnswerResult): { state: RunnerState; l
     xp: s.xp + parts.total,
     xpParts: addParts(s.xpParts, parts),
     levels: { ...s.levels, [step.conceptId]: after },
+    upDays: lv?.upDay ? { ...s.upDays, [step.conceptId]: lv.upDay } : s.upDays,
     results: [...s.results, {
       conceptId: step.conceptId, correct: r.correct, levelBefore: before, levelAfter: after,
-      retry: retry || undefined, golden: golden || undefined, pretest: pretest || undefined,
+      retry: retry || undefined, golden: golden || undefined, pretest: pretest || undefined, held: lv?.held || undefined,
     }],
   };
   return { state, levelUp: after > before, sfx: r.correct ? 'correct' : 'wrong', xpGained: parts.total };
@@ -121,6 +131,8 @@ export type SessionSummary = {
   xpParts: XpParts;
   /** (đợt 7) Đoán trước: số câu / số câu đoán đúng (không tính vào correct/total). */
   pretest: { total: number; correct: number };
+  /** Số khái niệm trả lời đúng nhưng giữ bậc vì luật giãn cách (hẹn ngày sau mới lên). */
+  held: number;
 };
 
 export function summary(s: RunnerState): SessionSummary {
@@ -144,6 +156,7 @@ export function summary(s: RunnerState): SessionSummary {
     fixed: retries.filter((r) => r.correct).length,
     xpParts: s.xpParts,
     pretest: { total: pre.length, correct: pre.filter((r) => r.correct).length },
+    held: new Set(s.results.filter((r) => r.held).map((r) => r.conceptId)).size,
   };
 }
 

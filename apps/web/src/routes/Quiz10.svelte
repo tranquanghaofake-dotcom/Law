@@ -1,4 +1,6 @@
 <script lang="ts">
+  import Loading from '$lib/ui/Loading.svelte';
+  import Glyph from '$lib/art/Glyph.svelte';
   import type { QuizSet, QuizQuestion } from '$lib/content/types';
   import { loadIndex, loadSet } from '$lib/content/loader';
   import { shuffle } from '$lib/engine/session';
@@ -8,12 +10,14 @@
   import { sfx } from '$lib/fx/sfx';
   import { buzz } from '$lib/fx/haptics';
   import { tts } from '$lib/fx/tts.svelte';
-  import { onDestroy } from 'svelte';
+  import { onDestroy, tick } from 'svelte';
+  import LegalNote from '$lib/ui/LegalNote.svelte';
+  import Sheet from '$lib/ui/Sheet.svelte';
   import { feedbackSpeech } from '$lib/ui/session/speech';
   import { hashFor, route } from '$lib/router.svelte';
-  import { isTypingTarget, KEYS } from '$lib/ui/cards/types';
+  import { isInteractiveTarget, isTypingTarget, KEYS } from '$lib/ui/cards/types';
   import { GROUPS } from '$lib/ui/groups';
-  import { nextAfter, orderIds, shelfFor, ticketNo, verdictFor } from '$lib/ui/quiz';
+  import { nextAfter, orderIds, quizConceptSubject, shelfFor, ticketNo, verdictFor } from '$lib/ui/quiz';
 
   type Q = QuizQuestion & { shuffled: string[]; answerIdx: number };
   let set = $state<QuizSet | null>(null);
@@ -25,9 +29,13 @@
   let results = $state<boolean[]>([]);
   let prevBest = $state<number | null>(null);
   let sets = $state<{ id: string; group: string }[]>([]);
+  /** Mã các môn (để biết nhóm đề có phải mã môn không khi ghi tiến độ câu có `concept`). */
+  let subjectIds: string[] = [];
   let finished = $state(false);
   let error = $state('');
   let shareLabel = $state('Chia sẻ');
+  // Thoát giữa bài: đã trả lời ≥ 1 câu thì hỏi trước (kết quả lần làm dở không được lưu)
+  let exitOpen = $state(false);
   let start = Date.now();
 
   async function load() {
@@ -38,8 +46,11 @@
       i = 0; score = 0; chosen = null; wrong = []; results = []; prevBest = null; finished = false; start = Date.now();
     } catch (e) { error = (e as Error).message; }
   }
-  $effect(() => { void route.params.id; load(); });
-  loadIndex().then((x) => (sets = x.sets)).catch(() => { /* không có "Đề tiếp theo" */ });
+  /** Làm lại: tải lại đề rồi focus phương án đầu (không để focus rơi về body). */
+  async function retry() { await load(); await tick(); window.scrollTo(0, 0); document.querySelector<HTMLElement>('.question-card .opt')?.focus({ preventScroll: true }); }
+  // Rời màn: route.params về {} trước khi màn huỷ, không tải /content/sets/undefined.json.
+  $effect(() => { if (route.name === 'quiz' && route.params.id) load(); });
+  loadIndex().then((x) => { sets = x.sets; subjectIds = x.subjects.map((s) => s.id); }).catch(() => { /* không có "Đề tiếp theo" */ });
 
   const q = $derived(qs[i]);
 
@@ -52,8 +63,9 @@
     sfx.play(ok ? 'correct' : 'wrong'); buzz(ok ? 'ok' : 'bad');
     // Tự đọc phản hồi ngay trong lượt xử lý cử chỉ (trước mọi await) để trình duyệt cho phát tiếng.
     if (settings.tts && tts.available) tts.speak(speechFor(ok, q));
-    if (q.concept && set) {
-      try { await repo.record({ conceptId: q.concept, subject: set.group, correct: ok, elapsedMs: Date.now() - start, now: new Date(), retention: settings.retention }); } catch { /* bỏ qua */ }
+    const subject = set ? quizConceptSubject(set.group, subjectIds) : null;
+    if (q.concept && subject) {
+      try { await repo.record({ conceptId: q.concept, subject, correct: ok, elapsedMs: Date.now() - start, now: new Date(), retention: settings.retention, rating: { mode: 'recognize', chars: q.q.length + q.options.join('').length } }); } catch { /* bỏ qua */ }
     }
     start = Date.now();
   }
@@ -63,8 +75,9 @@
     if (chosen === null) return;
     tts.stop();
     chosen = null;
-    if (i + 1 < qs.length) { i += 1; return; }
+    if (i + 1 < qs.length) { i += 1; await tick(); document.querySelector<HTMLElement>('.question-card .opt')?.focus({ preventScroll: true }); return; }
     finished = true;
+    window.scrollTo(0, 0); // màn kết quả bắt đầu từ vòng điểm, không giữ vị trí cuộn của câu cuối
     const b = await stats.best(set!.id);
     prevBest = b;
     if (b == null || score > b) await stats.setBest(set!.id, score);
@@ -76,10 +89,16 @@
       else { await navigator.clipboard.writeText(`${data.text} ${data.url}`); shareLabel = 'Đã chép link'; }
     } catch { /* người dùng hủy */ }
   }
+  /** Sau khi chọn: đưa focus (và cuộn) tới nút Câu tiếp, để bàn phím không rơi về body và nút không nằm dưới nếp gấp. */
+  function focusNext(node: HTMLElement) { node.focus(); }
   function onkey(e: KeyboardEvent) {
-    if (isTypingTarget(e) || finished) return;
+    if (isTypingTarget(e) || finished || exitOpen) return;
     const n = Number(e.key);
     if (n >= 1 && n <= 4) { e.preventDefault(); pick(n - 1); }
+    // Enter/Space trên link hay nút: để trình duyệt kích hoạt đúng phần tử đó (link Thoát, Xem điều luật, phương án).
+    const onNextBtn = (e.target as HTMLElement | null)?.hasAttribute?.('data-next') ?? false;
+    if (e.key === ' ' && onNextBtn && chosen !== null && settings.tts && tts.available) { e.preventDefault(); tts.speak(speechFor(chosen === q.answerIdx, q)); return; }
+    if ((e.key === 'Enter' || e.key === ' ') && isInteractiveTarget(e)) return;
     if (e.key === 'Enter') { e.preventDefault(); next(); }
     if (e.key === ' ' && chosen !== null && settings.tts && tts.available) { e.preventDefault(); tts.speak(speechFor(chosen === q.answerIdx, q)); }
   }
@@ -97,7 +116,7 @@
 {#if error}
   <section class="card"><p class="muted">Không tải được bộ câu hỏi: {error}</p><a class="btn ghost" href="#/">Về trang chủ</a></section>
 {:else if !set || !q}
-  <p class="loading">Đang tải…</p>
+  <Loading />
 {:else if finished}
   <section class="card qr {verdict.tier}" style="--shelf:{shelf?.color}" aria-labelledby="qr-h">
     <div class="qr-ring">
@@ -106,19 +125,24 @@
     </div>
     <div class="qr-body">
       <p class="kicker">{no ? `Đề ${no} · ` : ''}{GROUPS[set.group] ?? set.group}</p>
-      <h1 id="qr-h">{verdict.title}</h1>
+      <h1 id="qr-h" tabindex="-1" use:focusNext>{verdict.title}</h1>
       <p class="qr-set">{set.title}</p>
       <p class="msg">{verdict.msg}</p>
       <p class="qr-rec small muted">{record}</p>
       <ol class="qdots done" aria-label="Kết quả từng câu">
         {#each results as r, k (k)}<li class={r ? 'ok' : 'bad'}><span class="sr-only">Câu {k + 1} {r ? 'đúng' : 'sai'}</span></li>{/each}
       </ol>
+      <!-- Một nút chính (đạt tối đa → đề tiếp; chưa → làm lại) + một nút phụ; điều hướng khác là link chữ -->
       <div class="row">
-        <button class="btn {verdict.tier === 'perfect' && nextSet ? 'ghost' : 'primary'}" type="button" onclick={load}>Làm lại</button>
-        {#if nextSet}<a class="btn {verdict.tier === 'perfect' ? 'primary' : 'ghost'}" href={hashFor('quiz', { id: nextSet.id })}>Đề tiếp theo</a>{/if}
-        <a class="btn ghost" href="#/luyen-de">Về Luyện đề</a>
-        <button class="btn ghost" type="button" onclick={share}>{shareLabel}</button>
+        {#if verdict.tier === 'perfect' && nextSet}
+          <a class="btn primary" href={hashFor('quiz', { id: nextSet.id })}>Đề tiếp theo →</a>
+          <button class="btn ghost" type="button" onclick={retry}>Làm lại</button>
+        {:else}
+          <button class="btn primary" type="button" onclick={retry}>Làm lại</button>
+          {#if nextSet}<a class="btn ghost" href={hashFor('quiz', { id: nextSet.id })}>Đề tiếp theo</a>{/if}
+        {/if}
       </div>
+      <p class="qr-more small"><a href="#/luyen-de">Về Luyện đề</a><button type="button" class="linklike" onclick={share}>{shareLabel}</button></p>
     </div>
   </section>
   {#if wrong.length}
@@ -135,9 +159,11 @@
   {:else}
     <p class="qr-clean" role="status">Không sai câu nào. Bạn có thể sang đề khác.</p>
   {/if}
+  <LegalNote />
 {:else}
   <div class="session-bar">
-    <a class="exit qexit" href="#/luyen-de" aria-label="Về Luyện đề">←</a>
+    {#if results.length}<button type="button" class="exit qexit" aria-label="Thoát đề" onclick={() => (exitOpen = true)}><Glyph name="back" size={20} /></button>
+    {:else}<a class="exit qexit" href="#/luyen-de" aria-label="Về Luyện đề"><Glyph name="back" size={20} /></a>{/if}
     <div class="qdots" role="progressbar" aria-label="Tiến độ bộ câu hỏi" aria-valuemin="0" aria-valuemax={qs.length} aria-valuenow={i} aria-valuetext="Câu {i + 1} trên {qs.length}, đúng {score}">
       {#each qs as _, k (k)}<span class={dotState(k)}></span>{/each}
     </div>
@@ -157,7 +183,16 @@
       <p class="verdict">{chosen === q.answerIdx ? 'Chính xác.' : `Chưa đúng. Đáp án: ${KEYS[q.answerIdx]}`}</p>
       <p>{q.explain}</p>
       <p class="source muted">Căn cứ: {q.basis}{#if q.url} · <a href={q.url} target="_blank" rel="noopener">Xem điều luật</a>{/if}</p>
-      <button class="btn" type="button" onclick={next}>{i === qs.length - 1 ? 'Xem kết quả' : 'Câu tiếp →'} <kbd>↵</kbd></button>
+      <LegalNote compact />
+      <button class="btn" type="button" data-next onclick={next} use:focusNext>{i === qs.length - 1 ? 'Xem kết quả' : 'Câu tiếp →'} <kbd>↵</kbd></button>
     </div>
   {/if}
+  <Sheet bind:open={exitOpen} title="Thoát đề?">
+    <p>Bạn đã làm {results.length}/{qs.length} câu. Kết quả lần làm dở này sẽ không được lưu.</p>
+    <div class="row">
+      <!-- svelte-ignore a11y_autofocus -->
+      <button type="button" class="btn primary" autofocus onclick={() => (exitOpen = false)}>Làm tiếp</button>
+      <a class="btn ghost" href="#/luyen-de" onclick={() => (exitOpen = false)}>Thoát</a>
+    </div>
+  </Sheet>
 {/if}

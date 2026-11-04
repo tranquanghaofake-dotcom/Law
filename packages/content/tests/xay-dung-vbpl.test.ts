@@ -19,7 +19,7 @@ describe('nội dung Xây dựng văn bản pháp luật', () => {
         expect(c.source.cite, f).toMatch(/chưa đối chiếu nguyên văn/);
       } else {
         expect(c.source.kind, f).toBe('statute');
-        expect(c.source.cite).toMatch(/Luật Ban hành văn bản quy phạm pháp luật 2025 \(VBHN 54\/VBHN-VPQH\)$/);
+        expect(c.source.cite).toMatch(/Luật Ban hành văn bản quy phạm pháp luật 2025 \(sửa đổi, bổ sung năm 2025\)$/);
         expect(c.source.url).toMatch(/^https:\/\/thuvienphapluat\.vn\//);
       }
       expect(c.checked).toBe('2026-11-01');

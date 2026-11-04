@@ -100,6 +100,12 @@ export function buildContent(root: string, outDir: string = root): { errors: str
     const terms: ConceptTerms = Object.fromEntries([...(concepts.get(s.id) ?? new Map<string, Concept>()).values()].map((c) => [c.id, c.term]));
     writeFileSync(join(outDir, 'terms', `${s.id}.json`), JSON.stringify(terms) + '\n', 'utf8');
   }
+  // dist/bundles/<subjectId>.json: mọi khái niệm hợp lệ của môn trong 1 file, cho trang Khái niệm (thay ~100 request lẻ).
+  mkdirSync(join(outDir, 'bundles'), { recursive: true });
+  for (const s of subjects) {
+    const all = [...(concepts.get(s.id) ?? new Map<string, Concept>()).values()];
+    writeFileSync(join(outDir, 'bundles', `${s.id}.json`), JSON.stringify(all) + '\n', 'utf8');
+  }
   writeFileSync(join(outDir, 'index.json'), JSON.stringify(index, null, 1) + '\n', 'utf8');
   return { errors, index };
 }

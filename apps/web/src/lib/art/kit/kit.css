@@ -25,7 +25,7 @@
 
 @keyframes kit-sweep { from { transform: translateX(0); } to { transform: translateX(700px); } }
 @keyframes kit-farcloud { to { transform: translateX(18px); } }
-.art-lit .kit-sweep { animation: kit-sweep 16s linear infinite; }
-.art-lit .kit-farcloud { animation: kit-farcloud 42s ease-in-out infinite alternate; }
+.art-lit .kit-sweep { animation: kit-sweep 16s linear 1; }
+.art-lit .kit-farcloud { animation: kit-farcloud 42s ease-in-out 2 alternate; }
 @media (prefers-reduced-motion: reduce) { :root:not(.motion-on) .art-lit .kit-sweep, :root:not(.motion-on) .art-lit .kit-farcloud { animation: none; } }
 .reduced-motion .art-lit .kit-sweep, .reduced-motion .art-lit .kit-farcloud { animation: none; }

@@ -4,11 +4,11 @@
  "chapter": "v6",
  "term": "Thời giờ làm việc bình thường và làm thêm giờ",
  "definition": "Thời giờ làm việc bình thường không quá 08 giờ trong 01 ngày và không quá 48 giờ trong 01 tuần. (…) Thời gian làm thêm giờ là khoảng thời gian làm việc ngoài thời giờ làm việc bình thường theo quy định của pháp luật, thỏa ước lao động tập thể hoặc nội quy lao động.",
- "plain": "Bình thường: tối đa 08 GIỜ/NGÀY, 48 GIỜ/TUẦN (theo tuần: tối đa 10 giờ/ngày); khuyến khích tuần 40 giờ. Làm thêm giờ (khoản 2 Điều 107): phải được NGƯỜI LAO ĐỘNG ĐỒNG Ý; không quá 50% giờ bình thường/ngày (hoặc tổng 12 giờ/ngày nếu theo tuần); không quá 40 GIỜ/THÁNG; không quá 200 GIỜ/NĂM, một số ngành nghề tối đa 300 GIỜ/NĂM (khoản 3). Lưu ý: mức 40 giờ/tháng theo VBHN 2025; các quy định tạm thời nới trần làm thêm giờ trong giai đoạn phục hồi sau dịch đã hết thời hạn, cần tra văn bản hiện hành nếu có quy định mới.",
+ "plain": "Bình thường: tối đa 08 GIỜ/NGÀY, 48 GIỜ/TUẦN (theo tuần: tối đa 10 giờ/ngày); khuyến khích tuần 40 giờ. Làm thêm giờ (khoản 2 Điều 107): phải được NGƯỜI LAO ĐỘNG ĐỒNG Ý; không quá 50% giờ bình thường/ngày (hoặc tổng 12 giờ/ngày nếu theo tuần); không quá 40 GIỜ/THÁNG; không quá 200 GIỜ/NĂM, một số ngành nghề tối đa 300 GIỜ/NĂM (khoản 3). Lưu ý: mức 40 giờ/tháng theo điểm b khoản 2 Điều 107 Bộ luật Lao động 2019; các quy định tạm thời nới trần làm thêm giờ trong giai đoạn phục hồi sau dịch đã hết thời hạn, cần tra văn bản hiện hành nếu có quy định mới.",
  "example": "Công nhân dệt may làm 8 giờ/ngày, được bố trí làm thêm 3 giờ/ngày suốt 20 ngày (60 giờ/tháng): vượt giới hạn 40 giờ/tháng.",
  "source": {
   "kind": "statute",
-  "cite": "Khoản 1 Điều 105, khoản 1 Điều 107 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)",
+  "cite": "Khoản 1 Điều 105, khoản 1 Điều 107 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)",
   "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-18-VBHN-VPQH-2026-Bo-luat-lao-dong-695336.aspx"
  },
  "checked": "2026-11-01",
@@ -37,7 +37,7 @@
    "explain": "Khoản 1 Điều 105.",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 1 Điều 105 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)"
+    "cite": "Khoản 1 Điều 105 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
    }
   },
   {
@@ -54,7 +54,7 @@
    "explain": "Điểm a khoản 2 Điều 107.",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 2 Điều 107 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)"
+    "cite": "Khoản 2 Điều 107 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
    }
   },
   {
@@ -126,10 +126,10 @@
    "level": 4,
    "statement": "Thời giờ làm việc bình thường không quá 08 giờ trong 01 ngày và không quá 48 giờ trong 01 tuần.",
    "answer": true,
-   "explain": "Đúng. Khoản 1 Điều 105 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026) (nguyên văn).",
+   "explain": "Đúng. Khoản 1 Điều 105 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025) (nguyên văn).",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 1 Điều 105 Bộ luật Lao động 2019 (VBHN 18/VBHN-VPQH 2026)",
+    "cite": "Khoản 1 Điều 105 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)",
     "url": "https://thuvienphapluat.vn/van-ban/Lao-dong-Tien-luong/Van-ban-hop-nhat-18-VBHN-VPQH-2026-Bo-luat-lao-dong-695336.aspx"
    }
   }

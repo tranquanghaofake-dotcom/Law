@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import type { Subject } from '$lib/content/types';
 import type { BookLevel, BookRec } from '$lib/game/books';
 import { SHELVES, orderedSubjects } from '$lib/ui/shelves';
-import { bookcaseRows, spineColor, spineFont, spineSize, SPINE_W, SPINE_H } from '$lib/ui/bookcase';
+import { abbreviate, bookcaseRows, spineColor, spineFont, spineLabel, spineSize, SPINE_W, SPINE_H } from '$lib/ui/bookcase';
 import { coverFor } from '$lib/art/covers';
 
 // 23 môn thật (số chương / số khái niệm lấy từ nội dung hiện có)
@@ -98,11 +98,20 @@ describe('màu và chữ gáy (khớp bìa sách thật)', () => {
     expect(spineColor('#0B2468')).toBe('#0b2468');
     expect(sat(spineColor('#44505C'))).toBeGreaterThanOrEqual(0.59);
   });
-  it('spineFont: tên ngắn dùng cỡ tối đa, tên dài co nhỏ nhưng trong khoảng 7–10,5 — luôn giữ nguyên chữ (không cắt)', () => {
-    expect(spineFont('Hiến', 100)).toBe(10.5);
-    const long = spineFont('Lý luận NN&PL', 100);
-    expect(long).toBeLessThan(10.5);
-    expect(long).toBeGreaterThanOrEqual(7);
-    expect(spineFont('x'.repeat(40), 100)).toBe(7);
+  it('spineFont: kẹp 12–13 px (không còn chữ gáy < 12 px, audit HT7)', () => {
+    expect(spineFont('Hiến', 100)).toBe(13);
+    expect(spineFont('x'.repeat(40), 100)).toBe(12);
+  });
+  it('abbreviate: chữ cái đầu của từ thường, giữ từ viết tắt sẵn và số', () => {
+    expect(abbreviate('Tài sản trí tuệ')).toBe('TSTT');
+    expect(abbreviate('An sinh xã hội')).toBe('ASXH');
+    expect(abbreviate('Thương mại 1')).toBe('TM 1');
+    expect(abbreviate('Lý luận NN&PL')).toBe('LLNN&PL');
+    expect(abbreviate('Tài chính DN')).toBe('TCDN');
+  });
+  it('spineLabel: tên vừa ở 12 px thì giữ nguyên, không vừa thì viết tắt', () => {
+    expect(spineLabel('Hiến', 96)).toBe('Hiến');
+    expect(spineLabel('Tài sản trí tuệ', 96)).toBe('TSTT');
+    expect(spineLabel('LSNN&PL', 99)).toBe('LSNNPL');
   });
 });

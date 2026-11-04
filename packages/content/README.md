@@ -9,7 +9,7 @@ data/sets/<id>.json               bộ luyện đề 10 câu (định dạng k�
 data/laws/<văn-bản>.txt           toàn văn để test đối chiếu nguyên văn (không ship lên web)
 data/SOURCES.md                   nguồn đã dùng
 src/schema.ts · src/types.ts      zod + kiểu TS (app import qua @luyen-luat/content)
-src/build.ts                      kiểm tra + sinh dist/ (subjects, concepts, sets, index.json)
+src/build.ts                      kiểm tra + sinh dist/ (subjects, concepts, sets, terms/ tên khái niệm theo môn, bundles/ gói khái niệm theo môn, index.json)
 tests/                            schema, build, nguyên văn Hiến pháp
 ```
 

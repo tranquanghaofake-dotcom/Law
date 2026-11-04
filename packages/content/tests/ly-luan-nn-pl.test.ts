@@ -19,7 +19,7 @@ describe('nội dung Lý luận chung về Nhà nước và Pháp luật', () =>
         expect(c.source.cite, f).toMatch(/chưa đối chiếu nguyên văn/);
       } else {
         expect(c.source.kind, f).toBe('statute');
-        expect(c.source.cite).toMatch(/(Hiến pháp 2013|Bộ luật Dân sự 2015|Bộ luật Hình sự 2015 \(VBHN 135\/VBHN-VPQH 2025\)|Luật Xử lý vi phạm hành chính \(VBHN 90\/VBHN-VPQH 2026\)|Luật Ban hành văn bản quy phạm pháp luật 2025 \(VBHN 54\/VBHN-VPQH\))$/);
+        expect(c.source.cite).toMatch(/(Hiến pháp 2013|Bộ luật Dân sự 2015|Bộ luật Hình sự 2015 \(sửa đổi, bổ sung năm 2017, 2025\)|Luật Xử lý vi phạm hành chính \(sửa đổi, bổ sung đến năm 2025\)|Luật Ban hành văn bản quy phạm pháp luật 2025 \(sửa đổi, bổ sung năm 2025\))$/);
         expect(c.source.url).toMatch(/^https:\/\/(thuvienphapluat|vbpl)\.vn\//);
       }
       expect(c.checked).toBe('2026-11-01');

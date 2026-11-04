@@ -8,7 +8,7 @@
  "example": "Công dân Việt Nam bị bắt giữ trái phép ở nước ngoài: Nhà nước có trách nhiệm bảo hộ thông qua cơ quan đại diện; ngược lại, công dân nam đủ tuổi có nghĩa vụ quân sự với Nhà nước.",
  "source": {
   "kind": "statute",
-  "cite": "Điều 1 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025)",
+  "cite": "Điều 1 Luật Quốc tịch Việt Nam 2008 (sửa đổi, bổ sung năm 2014, 2025)",
   "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-53-vbhn-vpqh-quoc-tich-viet-nam--179993"
  },
  "checked": "2026-11-01",
@@ -35,7 +35,7 @@
    "explain": "Điều 1 Luật Quốc tịch.",
    "source": {
     "kind": "statute",
-    "cite": "Điều 1 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025)"
+    "cite": "Điều 1 Luật Quốc tịch Việt Nam 2008 (sửa đổi, bổ sung năm 2014, 2025)"
    }
   },
   {
@@ -52,7 +52,7 @@
    "explain": "Điều 1 Luật Quốc tịch.",
    "source": {
     "kind": "statute",
-    "cite": "Điều 1 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025)"
+    "cite": "Điều 1 Luật Quốc tịch Việt Nam 2008 (sửa đổi, bổ sung năm 2014, 2025)"
    }
   },
   {
@@ -128,10 +128,10 @@
    "level": 4,
    "statement": "Người có quốc tịch Việt Nam là công dân Việt Nam.",
    "answer": true,
-   "explain": "Đúng. Khoản 1 Điều 5 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025) (nguyên văn).",
+   "explain": "Đúng. Khoản 1 Điều 5 Luật Quốc tịch Việt Nam 2008 (sửa đổi, bổ sung năm 2014, 2025) (nguyên văn).",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 1 Điều 5 Luật Quốc tịch Việt Nam 2008 (VBHN 53/VBHN-VPQH 2025)",
+    "cite": "Khoản 1 Điều 5 Luật Quốc tịch Việt Nam 2008 (sửa đổi, bổ sung năm 2014, 2025)",
     "url": "https://vbpl.vn/van-ban/chi-tiet/van-ban-hop-nhat-so-53-vbhn-vpqh-quoc-tich-viet-nam--179993"
    }
   }
