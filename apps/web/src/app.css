@@ -1591,3 +1591,11 @@ body:has(dialog.sheet[open]) { overflow: hidden; }
 .cab .bk-case { margin: 0 4px 20px; }
 @media (min-width: 768px) { .cab:not(.solo) { padding: 16px 18px 18px; } }
 .idc-streak p { white-space: normal; }
+
+/* Nút quay lại ở đầu nội dung các trang con (không có ở 4 trang gốc) */
+.back-btn { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; margin: 0 0 var(--sp-2) -8px; padding: 0 12px; border: 0; border-radius: var(--r-md); background: transparent; color: var(--accent-text); font: 700 var(--fs-sm)/1 var(--font-ui); cursor: pointer; }
+.back-btn:hover { background: color-mix(in srgb, var(--accent) 10%, transparent); }
+.back-btn:focus-visible { outline: 3px solid var(--accent); outline-offset: 1px; }
+.session-hint { margin-bottom: var(--sp-3); border-color: var(--accent); }
+.session-hint p { margin: 0 0 var(--sp-2); font-size: var(--fs-sm); line-height: 1.45; }
+.session-hint .kicker { margin: 0 0 4px; }

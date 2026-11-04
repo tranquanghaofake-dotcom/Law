@@ -38,6 +38,7 @@
   import HyperNote from '$lib/ui/session/HyperNote.svelte';
   import PretestBar from '$lib/ui/session/PretestBar.svelte';
   import { getPref } from '$lib/ui/session/prefs';
+  import { hintSeen, markHintSeen } from '$lib/ui/hints';
   import { go } from '$lib/router.svelte';
   import ComboEdge from '$lib/ui/session/ComboEdge.svelte';
   import WonderBackdrop from '$lib/ui/session/WonderBackdrop.svelte';
@@ -54,6 +55,9 @@
   let result = $state<AnswerResult | null>(null);
   let ended = $state<null | { streak: number; streakEvent: StreakEvent; rankBefore: RankInfo; rankAfter: RankInfo; dueTomorrow: number; promotion: string | null }>(null);
   let confirmExit = $state(false);
+  // gợi ý một lần: viền sáng theo chuỗi đúng và nền kỳ quan sáng dần (không chặn học, tắt bằng một chạm)
+  let showHint = $state(!hintSeen('session-glow'));
+  function dismissHint() { showHint = false; markHintSeen('session-glow'); }
   /** thông tin thưởng của câu vừa trả lời, hiện ở phản hồi */
   let reward = $state<{ xp: number; golden: boolean; levelTo: number | null; retry: boolean }>({ xp: 0, golden: false, levelTo: null, retry: false });
   let bossSeen = $state(-1);
@@ -215,6 +219,13 @@
   {:else if step && Card}
     <SessionBar done={barDone} total={barTotal} {title} combo={run.combo} {marks} {inRetry} onexit={() => (confirmExit = true)} />
     {#if lessonId}<LessonStrip {concepts} levels={run.levels} current={hideCurrent ? '' : (step?.conceptId ?? '')} />{/if}
+    {#if showHint}
+      <aside class="card session-hint" aria-label="Gợi ý lần đầu">
+        <p class="kicker">Lần đầu học ở đây</p>
+        <p>Trả lời đúng liên tiếp, <b>viền màn hình sáng dần</b> theo từng mốc chuỗi. Mỗi câu đúng cũng <b>thắp thêm một nét</b> của bức tranh kỳ quan Việt Nam ở nền. Sai thì chuỗi về 0, không mất điểm đã có.</p>
+        <button class="btn" type="button" onclick={dismissHint}>Ẩn gợi ý</button>
+      </aside>
+    {/if}
     {#if confirmExit}
       <div class="card confirm" role="dialog" aria-label="Thoát phiên">
         <p>Thoát, giữ tiến độ? Những câu đã trả lời đã được lưu.</p>

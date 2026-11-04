@@ -12,10 +12,13 @@
   import RankBadge from './RankBadge.svelte';
   import Icon from '$lib/art/Icon.svelte';
   import Bookshelf from './Bookshelf.svelte';
+  import { route } from '$lib/router.svelte';
+  import { parentHash, goBack } from './back';
 
   let { active, children }: { active: RouteName; children: Snippet } = $props();
   const current = $derived(activeNav(active));
   const Rail = $derived(rail.current?.component);
+  const hasParent = $derived(parentHash(route) !== null);
   refreshSidenav();
   const railProps = $derived(rail.current?.props ?? {});
 </script>
@@ -48,6 +51,7 @@
     {#if !storage.available}
       <p class="banner" role="alert">⚠ Trình duyệt đang chặn lưu trữ (chế độ riêng tư?). Bạn vẫn học được nhưng tiến độ sẽ mất khi đóng tab.</p>
     {/if}
+    {#if hasParent}<button type="button" class="back-btn" aria-label="Quay lại" onclick={() => goBack(route)}><span aria-hidden="true">←</span> Quay lại</button>{/if}
     {@render children()}
   </main>
 
