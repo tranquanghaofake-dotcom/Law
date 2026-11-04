@@ -82,3 +82,12 @@ describe('pickHeroState — ưu tiên môn học gần nhất (spec phần nhìn
     expect(pickHeroState({ due: [], subjects: [asxh, hp], levels: {} })).toMatchObject({ kind: 'start', subject: { id: 'an-sinh-xa-hoi' } });
   });
 });
+
+describe('startAlternatives — Hôm nay lần đầu không lặp môn của thẻ chính (H-3)', () => {
+  it('bỏ môn đã ở thẻ chính, lấy n môn kế theo thứ tự', async () => {
+    const { startAlternatives } = await import('$lib/ui/today');
+    const subs = ['a', 'b', 'c', 'd'].map((id) => ({ id })) as never[];
+    expect(startAlternatives(subs, 'a', 3).map((x: { id: string }) => x.id)).toEqual(['b', 'c', 'd']);
+    expect(startAlternatives(subs, 'c', 2).map((x: { id: string }) => x.id)).toEqual(['a', 'b']);
+  });
+});

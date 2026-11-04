@@ -7,8 +7,10 @@ test('trang chủ người mới: thẻ Bắt đầu, môn đang học, một th
   await expect(page.locator('.hero-card .kicker')).toHaveText('Bắt đầu');
   // môn đầu theo thứ tự chương trình học (lib/ui/shelves.ts), không phải môn đầu bảng chữ cái
   await expect(page.getByRole('link', { name: /Học đợt đầu tiên/ })).toHaveAttribute('href', '#/hoc/ly-luan-nn-pl/llc1');
-  await expect(page.getByRole('heading', { name: /Bắt đầu từ đâu/ })).toBeVisible();
+  await expect(page.getByRole('heading', { name: /Hoặc chọn môn khác/ })).toBeVisible();
   await expect(page.locator('.subject-rows li')).toHaveCount(3);
+  // H-3: môn ở thẻ chính không lặp lại trong danh sách bên dưới
+  await expect(page.locator('.subject-rows a[href="#/mon/ly-luan-nn-pl"]')).toHaveCount(0);
   await expect(page.getByRole('link', { name: /Luật Hiến pháp/ }).first()).toBeVisible();
   await expect(page.locator('.sets.one .set')).toHaveCount(1);
   await expect(page.getByRole('link', { name: /Tất cả đề/ })).toHaveAttribute('href', '#/luyen-de');

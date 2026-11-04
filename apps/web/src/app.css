@@ -1796,3 +1796,5 @@ select.qz-sort { min-height: var(--ctl-h); padding: 0 var(--sp-3); border: 1px s
 .skip-link:focus { transform: none; }
 /* Cài đặt: "Đã lưu" cạnh mục vừa đổi (đợt 3) */
 .settings .saved { display: inline-flex; align-items: center; gap: 2px; margin-left: var(--sp-2); font-size: var(--fs-xs); font-weight: 600; color: var(--ok); }
+/* Hôm nay: tên môn là dòng phụ trên tiêu đề đợt (H-1) */
+.hero-card .hero-subj { margin: 0; font-size: var(--fs-sm); font-weight: 600; color: var(--muted); }

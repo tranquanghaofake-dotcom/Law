@@ -56,3 +56,8 @@ export function pickHeroState({ due, subjects: given, levels, dueSteps, recent }
   }
   return { kind: 'done' };
 }
+
+/** Hôm nay lần đầu: các môn gợi ý ngoài môn đã ở thẻ chính (H-3: tránh hai nút cùng đích). */
+export function startAlternatives<T extends { id: string }>(subjects: readonly T[], exclude: string | undefined, n = 3): T[] {
+  return subjects.filter((s) => s.id !== exclude).slice(0, n);
+}
