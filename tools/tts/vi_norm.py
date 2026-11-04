@@ -91,8 +91,35 @@ def _num(m: re.Match) -> str:
     return ' ' + number_words(int(raw)) + ' '
 
 
+# "Khoản 2, 3, 4 Điều 27" đọc liền dễ dính số ("khoản 2,34,27") → lặp tên đơn vị: "khoản 2, khoản 3 và khoản 4 Điều 27".
+_UNIT = r'(Khoản|khoản|Điều|điều|Điểm|điểm|Mục|mục|Chương|chương)'
+_ITEM = r'(?:\d+[a-zđ]?|[a-zđ]|[IVX]{1,5})'
+_LIST = re.compile(rf'\b{_UNIT}\s+({_ITEM}(?:\s*,\s*{_ITEM})*(?:\s*,?\s+(?:và|hoặc|đến)\s+{_ITEM})?)(?![\w/])')
+
+
+def _expand_list(m: re.Match) -> str:
+    unit, body = m.group(1), m.group(2)
+    parts = re.split(r'\s*,?\s+(và|hoặc|đến)\s+|\s*,\s*', body)
+    items, seps = parts[0::2], parts[1::2]
+    if len(items) < 2 or any(not re.fullmatch(_ITEM, i) for i in items):
+        return m.group(0)
+    # chữ cái đơn chỉ hợp lệ sau "điểm"; số La Mã chỉ sau "chương/mục" → câu thường không bị đổi nhầm
+    letters = any(re.fullmatch(r'[a-zđ]', i) for i in items)
+    if letters and unit.lower() != 'điểm':
+        return m.group(0)
+    # danh sách chữ cái dài ("các điểm a, b, c, …, m và n"): không dính số nên giữ nguyên cho đỡ nặng nề
+    if letters and len(items) > 3:
+        return m.group(0)
+    lower = unit.lower()
+    out = f'{unit} {items[0]}'
+    for sep, it in zip(seps, items[1:]):
+        out += (f' {sep} ' if sep else ', ') + f'{lower} {it}'
+    return out
+
+
 def normalize(text: str) -> str:
     t = unicodedata.normalize('NFC', text)
+    t = _LIST.sub(_expand_list, t)
     # số hiệu văn bản: 51/2001/QH10 → số 51 năm 2001 QH 10; 102/VBHN-VPQH → số 102 VBHN-VPQH
     t = re.sub(r'(\d+)/(\d{4})/([A-ZĐ][\wĐđ-]*)', r'số \1 năm \2 \3', t)
     t = re.sub(r'(\d+)/([A-ZĐ])', r'số \1 \2', t)
