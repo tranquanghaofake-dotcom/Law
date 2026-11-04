@@ -6,6 +6,6 @@
 
 <div class="xp-floats" aria-hidden="true">
   {#each floats as f (f.id)}
-    <span class="xp-float" class:gold={f.golden} style="left:{f.x}px;top:{f.y}px">{f.text}</span>
+    <span class="xp-float" class:gold={f.golden} class:fire={!!f.fire} style="left:{f.x}px;top:{f.y}px;{f.fire ?? ''}">{f.text}</span>
   {/each}
 </div>
