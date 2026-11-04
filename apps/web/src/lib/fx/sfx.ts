@@ -1,5 +1,6 @@
 import { Howl } from 'howler';
 import { settings } from '$lib/store/settings.svelte';
+import { comboSfxPlan } from './comboSfx';
 
 /** Âm thanh Kenney Interface Sounds (CC0), xem static/sfx/LICENSE.txt. */
 export type SfxName = 'correct' | 'wrong' | 'levelup' | 'combo' | 'select' | 'rankup' | 'intro' | 'exit' | 'golden';
@@ -17,22 +18,34 @@ const FILES: Record<SfxName, string> = {
 };
 
 const base = `${import.meta.env.BASE_URL ?? '/'}sfx/`;
-const cache = new Map<SfxName, Howl>();
+const cache = new Map<string, Howl>();
 
-function howl(name: SfxName): Howl {
-  let h = cache.get(name);
+function howlFile(file: string): Howl {
+  let h = cache.get(file);
   if (!h) {
-    h = new Howl({ src: [`${base}${FILES[name]}.ogg`], preload: true, volume: 0.6 });
-    cache.set(name, h);
+    h = new Howl({ src: [`${base}${file}.ogg`], preload: true, volume: 0.6 });
+    cache.set(file, h);
   }
   return h;
 }
+const howl = (name: SfxName): Howl => howlFile(FILES[name]);
 
 export const sfx = {
   preload(): void {
     for (const n of Object.keys(FILES) as SfxName[]) howl(n);
+    for (const c of [1, 2, 3, 5, 8, 13]) for (const l of comboSfxPlan(c)) howlFile(l.file);
   },
-  /** `combo` = số đúng liên tiếp; cao độ tăng 4%/bậc, tối đa 6 bậc. */
+  /** Trả lời đúng với chuỗi `combo`: ghép tệp/tốc độ/độ trễ theo mốc 1/2/3/5/8/13 (xem comboSfx.ts). Tôn trọng settings.sound. */
+  playCombo(combo: number): void {
+    if (!settings.sound) return;
+    for (const l of comboSfxPlan(combo)) {
+      const go = () => {
+        try { const h = howlFile(l.file); const id = h.play(); h.rate(l.rate, id); h.volume(l.volume, id); } catch { /* autoplay bị chặn: bỏ qua */ }
+      };
+      if (l.delay > 0) setTimeout(go, l.delay); else go();
+    }
+  },
+  /** Phát hiệu ứng đơn. (Câu đúng trong phiên dùng playCombo.) */
   play(name: SfxName, opts: { combo?: number } = {}): void {
     if (!settings.sound) return;
     try {

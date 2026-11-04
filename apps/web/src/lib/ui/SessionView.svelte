@@ -14,7 +14,6 @@
   import { burst, reducedMotion } from '$lib/fx/confetti';
   import { buzz } from '$lib/fx/haptics';
   import { tts } from '$lib/fx/tts.svelte';
-  import { createReveal } from '$lib/fx/reveal.svelte';
   import { refreshHeader } from '$lib/ui/header.svelte';
   import { refreshSidenav } from '$lib/ui/sidenav.svelte';
   import { refreshShelf } from '$lib/ui/shelf.svelte';
@@ -26,9 +25,8 @@
   import LessonPanel from '$lib/ui/LessonPanel.svelte';
   import LessonStrip from '$lib/ui/LessonStrip.svelte';
   import SessionEnd from '$lib/ui/SessionEnd.svelte';
-  import Reveal from '$lib/ui/Reveal.svelte';
   import { isTypingTarget } from '$lib/ui/cards/types';
-  import { onDestroy } from 'svelte';
+  import { onDestroy, onMount } from 'svelte';
   import { feedbackSpeech } from '$lib/ui/session/speech';
   import { barMarks } from '$lib/ui/session/marks';
   import { submitRecord } from '$lib/ui/session/record';
@@ -41,6 +39,11 @@
   import PretestBar from '$lib/ui/session/PretestBar.svelte';
   import { getPref } from '$lib/ui/session/prefs';
   import { go } from '$lib/router.svelte';
+  import ComboEdge from '$lib/ui/session/ComboEdge.svelte';
+  import WonderBackdrop from '$lib/ui/session/WonderBackdrop.svelte';
+  import { loadWonder, pickWonderId, type Wonder } from '$lib/fx/wonders';
+  import { pickStrokes, strokesPerCorrect } from '$lib/fx/wonders/lighting';
+  import { edgeGlow, type GlowTier } from '$lib/ui/session/combo';
 
   let { steps, concepts, levels, lessonId, onagain, onnext, title }: {
     steps: Step[]; concepts: Concept[]; levels: Record<string, Level>; lessonId?: string; onagain?: () => void; onnext?: () => void; title?: string;
@@ -48,8 +51,6 @@
 
   // svelte-ignore state_referenced_locally
   let run = $state<RunnerState>(createRunner(steps, levels));
-  // svelte-ignore state_referenced_locally
-  const reveal = createReveal(Math.max(12, steps.filter((s) => s.item.type !== 'intro').length));
   let result = $state<AnswerResult | null>(null);
   let ended = $state<null | { streak: number; streakEvent: StreakEvent; rankBefore: RankInfo; rankAfter: RankInfo; dueTomorrow: number; promotion: string | null }>(null);
   let confirmExit = $state(false);
@@ -65,7 +66,6 @@
   let record = $state<ReturnType<typeof submitRecord> | null>(null);
   let lastPoint: { x: number; y: number; t: number } | null = null;
   const rng = Math.random;
-  const art = `${import.meta.env.BASE_URL ?? '/'}art/van-mieu-01.webp`;
 
   const step = $derived(run.steps[run.i]);
   const concept = $derived(concepts.find((c) => c.id === step?.conceptId)!);
@@ -91,6 +91,17 @@
   const hyper = $derived(!!result && isHypercorrection(result.correct, result.conf));
   // câu đoán khái niệm từ định nghĩa/ví dụ: không tô khái niệm đang hỏi (lộ đáp án)
   const hideCurrent = $derived(step?.meta?.gen === 'def-term' || step?.meta?.gen === 'example-concept');
+
+  // nền: một kỳ quan Việt Nam ngẫu nhiên mỗi phiên, mỗi câu đúng sáng thêm vài nét theo mốc chuỗi
+  let wonder = $state<Wonder | null>(null);
+  let lit = $state<{ i: number; tier: GlowTier }[]>([]);
+  onMount(() => { loadWonder(pickWonderId(rng)).then((w) => (wonder = w)).catch(() => {}); });
+  function lightWonder(combo: number) {
+    const tier = edgeGlow(combo).tier;
+    if (!wonder || !tier) return;
+    const add = pickStrokes(wonder.paths.length, lit.map((l) => l.i), strokesPerCorrect(combo), rng);
+    if (add.length) lit = [...lit, ...add.map((i) => ({ i, tier }))];
+  }
 
   sfx.preload();
   onDestroy(() => tts.stop());
@@ -122,12 +133,11 @@
     }
     if (xpGained) await stats.addXp(xpGained);
     const gold = !!cur.meta?.golden;
-    sfx.play(snd, { combo: run.combo });
+    if (r.correct && snd === 'correct') sfx.playCombo(run.combo); else sfx.play(snd, { combo: run.combo });
     buzz(r.correct ? 'ok' : 'bad');
     if (r.correct) {
-      reveal.reveal();
       if (gold) sfx.play('golden');
-      else if (run.combo > 0 && run.combo % 5 === 0) sfx.play('combo');
+      lightWonder(run.combo);
     }
     const up = levelUp && !isRetry;
     if (up) { sfx.play('levelup'); burst(run.levels[cur.conceptId] >= 6 ? 'levelup' : 'small'); }
@@ -182,7 +192,8 @@
 </script>
 
 <svelte:window onkeydown={onkey} onpointerdowncapture={onpointer} />
-<Reveal {reveal} src={art} />
+<WonderBackdrop {wonder} {lit} complete={!!ended} />
+<ComboEdge combo={ended ? 0 : run.combo} />
 <FloatXp {floats} />
 <div class="session-main">
   <h1 class="sr-only">{title ?? 'Phiên học'}</h1>
