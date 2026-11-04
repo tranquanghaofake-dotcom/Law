@@ -106,6 +106,7 @@ async def main():
     ap.add_argument('--voice', default='vi-VN-NamMinhNeural', help='vi-VN-NamMinhNeural (nam) hoặc vi-VN-HoaiMyNeural (nữ)')
     ap.add_argument('--limit', type=int, default=0)
     ap.add_argument('--jobs', type=int, default=8)
+    ap.add_argument('--force-edge', action='store_true', help='ghi đè cả bộ giọng clone đã nhập (mặc định: giữ nguyên)')
     ap.add_argument('--texts', help='JSON mảng câu do app gom (npm run tts:texts): phủ cả câu sinh tự động')
     ap.add_argument('--bitrate', default='24k', help="nén bằng ffmpeg; '' để giữ nguyên")
     a = ap.parse_args()
@@ -124,6 +125,10 @@ async def main():
     if os.path.exists(man_path):
         with open(man_path, encoding='utf-8') as fh:
             old = json.load(fh)
+    if str(old.get('voice', '')).startswith('clone:') and not a.force_edge:
+        # bộ giọng clone (tools/tts/clone_colab.ipynb) không sinh thêm được ở đây: giữ nguyên, câu mới đọc bằng giọng trình duyệt
+        print(f"cache đang là giọng clone {old['voice']} ({len(old.get('keys', []))} câu): bỏ qua edge-tts. Câu mới → chạy lại notebook clone.")
+        return
     fresh = old.get('style') == STYLE and old.get('voice') == a.voice
     if not fresh:
         print(f'kiểu giọng đổi ({old.get("style")}/{old.get("voice")} → {STYLE}/{a.voice}): sinh lại toàn bộ', flush=True)

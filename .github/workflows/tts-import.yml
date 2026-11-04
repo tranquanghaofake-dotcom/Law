@@ -1,0 +1,50 @@
+# Nhập bộ giọng clone (sinh bằng tools/tts/clone_colab.ipynb) vào cache giọng đọc rồi deploy lại trang.
+# Cách dùng: tải tts-clone.zip lên một GitHub Release (mặc định tag "giong-clone") → Actions → "Nhập giọng clone" → Run workflow.
+name: Nhập giọng clone
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Tag của Release chứa tệp zip
+        default: giong-clone
+      asset:
+        description: Tên tệp zip trong Release
+        default: tts-clone.zip
+
+permissions:
+  contents: read
+  actions: write
+
+concurrency:
+  group: tts
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Tải bộ giọng từ Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release download "${{ inputs.tag }}" --repo "${{ github.repository }}" --pattern "${{ inputs.asset }}" --dir .
+          mkdir -p .tts-cache
+          unzip -q -o "${{ inputs.asset }}" -d .tts-cache
+          python3 - <<'PY'
+          import json, os
+          m = json.load(open('.tts-cache/manifest.json', encoding='utf-8'))
+          assert str(m.get('voice', '')).startswith('clone:'), 'manifest không phải giọng clone'
+          miss = [k for k in m['keys'] if not os.path.exists(f'.tts-cache/{k}.mp3')]
+          assert not miss, f'thiếu {len(miss)} tệp mp3'
+          print(f"giọng {m['voice']} · {m.get('style')} · {len(m['keys'])} câu")
+          PY
+      - uses: actions/cache/save@v5
+        with:
+          path: .tts-cache
+          key: tts-${{ github.run_id }}
+      - name: Deploy lại trang để dùng giọng mới
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --repo "${{ github.repository }}" --ref main
