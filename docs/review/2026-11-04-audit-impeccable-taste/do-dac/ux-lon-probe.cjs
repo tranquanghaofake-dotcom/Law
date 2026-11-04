@@ -50,6 +50,6 @@ const inPage = () => {
     for (const k of ['skips', 'small', 'contrast', 'console']) for (const x of r[k].slice(0, 6)) console.log(`   ${k}: ${x}`);
     await page.close();
   }
-  console.log('TỔNG', total); fs.writeFileSync(path.join(__dirname, 'report.json'), JSON.stringify(report, null, 1));
+  console.log('TỔNG', total); fs.writeFileSync(path.join(process.env.REPORT_DIR || require('node:os').tmpdir(), 'ux-probe-report.json'), JSON.stringify(report, null, 1));
   await browser.close(); server.close();
 })();

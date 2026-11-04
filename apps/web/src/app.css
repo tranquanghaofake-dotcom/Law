@@ -1236,6 +1236,10 @@ h1 { text-wrap: balance; }
   .idcard { grid-template-columns: minmax(0, 1.25fr) minmax(0, 1.1fr) minmax(0, 1.25fr); column-gap: 28px; }
   .idcard .idc-stats { grid-column: 2; grid-row: 1; }
   .idcard .idc-next { grid-column: 3; grid-row: 1; margin-top: 0; align-self: center; }
+  /* hai ô số liệu xếp dọc: ô chuỗi không bị bóp 4 dòng ở 1280 (P3 nhóm B) */
+  .idcard .idc-stats { grid-template-columns: minmax(0, 1fr); gap: 6px; }
+  .idcard .idc-stat { padding: 6px 10px; }
+  .idcard .idc-streak p { white-space: nowrap; }
 }
 /* Hồ sơ dùng bề rộng nội dung rộng hơn khi ≥ 1024 (trước: cột 760, bên phải bỏ trống); Cài đặt giữ thẻ vừa phải */
 @media (min-width: 1024px) { .shell:has(.profile-page) { --content-max: 1120px; } }
@@ -1783,3 +1787,8 @@ select.qz-sort { min-height: var(--ctl-h); padding: 0 var(--sp-3); border: 1px s
 .qz-shelf-h .muted { font-weight: 500; }
 /* Thẻ bấm được: nổi khi rê chuột thay vì đổ bóng lúc nghỉ */
 @media (hover: hover) { a.card:hover, .subject-row:hover, .set:hover { box-shadow: var(--shadow-raised); } }
+/* Ôn tập rỗng: trạng thái + hẹn lần tới + hành động (đợt 2) */
+.review-empty p { margin: 0 0 var(--sp-3); }
+.review-empty .re-ok { display: flex; align-items: center; gap: var(--sp-2); font-weight: 600; }
+.review-empty .re-ok .glyph { color: var(--ok); flex: none; }
+.review-empty .row .btn { flex: 0 1 auto; }

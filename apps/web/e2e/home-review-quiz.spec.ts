@@ -50,15 +50,16 @@ test('cài đặt ẩn nút Nghe thử khi không có giọng vi', async ({ page
   await expect(page.getByRole('button', { name: 'Nghe thử' })).toHaveCount(0);
 });
 
-test('ôn hôm nay khi không có gì → báo và về trang chủ', async ({ page }) => {
+test('ôn hôm nay khi chưa học gì → báo rỗng và dẫn tới đợt đầu tiên', async ({ page }) => {
   await page.goto(B + '#/on');
-  await expect(page.getByText(/Chưa có gì cần ôn/)).toBeVisible();
+  await expect(page.getByText(/chưa học khái niệm nào/)).toBeVisible();
+  await expect(page.getByRole('link', { name: /Học đợt đầu tiên/ })).toHaveAttribute('href', '#/');
 });
 
 test('#/on/hien-phap khi chưa có gì → báo rỗng và link về môn', async ({ page }) => {
   await page.goto(B + '#/on/hien-phap');
-  await expect(page.getByText(/Chưa có gì cần ôn/)).toBeVisible();
-  await expect(page.getByRole('link', { name: /Về môn/ })).toHaveAttribute('href', '#/mon/hien-phap');
+  await expect(page.getByText(/chưa học khái niệm nào trong môn này/)).toBeVisible();
+  await expect(page.getByRole('link', { name: /Học đợt đầu tiên/ })).toHaveAttribute('href', '#/mon/hien-phap');
 });
 
 // Số đề đọc từ dữ liệu (không gõ số cố định); nhóm "dan-su" lấy từ trường group của mỗi đề.

@@ -13,3 +13,17 @@ export function dueByDay(dues: readonly (Date | number)[], today: Date = new Dat
   }
   return out;
 }
+
+/** Lần ôn gần nhất trong tương lai (ngày địa phương): số ngày tới, số khái niệm hẹn ngày đó, ngày dd/mm/yyyy. Dùng cho trang Ôn tập khi chưa có gì đến hạn. */
+export function nextReview(dues: readonly (Date | number)[], today: Date = new Date()): { inDays: number; count: number; date: string } | null {
+  const t = dayNo(today);
+  let best = Infinity, count = 0, at: Date | null = null;
+  for (const raw of dues) {
+    const d = new Date(raw), n = dayNo(d) - t;
+    if (n < 1) continue; // hôm nay/quá hạn đã nằm trong phiên ôn, không phải "lần tới"
+    if (n < best) { best = n; count = 1; at = d; } else if (n === best) count++;
+  }
+  if (!at) return null;
+  const p = (x: number) => String(x).padStart(2, '0');
+  return { inDays: best, count, date: `${p(at.getDate())}/${p(at.getMonth() + 1)}/${at.getFullYear()}` };
+}
