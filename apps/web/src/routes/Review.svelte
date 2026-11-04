@@ -15,10 +15,11 @@
   let data = $state<{ steps: Step[]; concepts: Concept[]; levels: Record<string, Level>; upDays: Record<string, string> } | null>(null);
   let empty = $state(false);
   // Trạng thái rỗng: lần ôn tới (null = chưa có hẹn) và đã học khái niệm nào chưa
-  let upcoming = $state<{ learned: number; next: ReturnType<typeof nextReview> }>({ learned: 0, next: null });
-  async function loadUpcoming() {
+  let upcoming = $state<{ learned: number; next: ReturnType<typeof nextReview>; stale: number }>({ learned: 0, next: null, stale: 0 });
+  // stale: số khái niệm đến hạn mà nội dung không còn (đổi id/bị xoá) — không được nói "hết bài"
+  async function loadUpcoming(stale = 0) {
     const all = await repo.all(subjectId);
-    upcoming = { learned: all.length, next: nextReview(all.map((c) => c.card.due)) };
+    upcoming = { learned: all.length, next: nextReview(all.map((c) => c.card.due)), stale };
     empty = true;
   }
   let error = $state('');
@@ -39,7 +40,7 @@
         const loaded = await Promise.allSettled(ids.map((id) => loadConcepts(sid, [id])));
         for (const r of loaded) if (r.status === 'fulfilled') concepts.push(...r.value);
       }
-      if (!concepts.length) { await loadUpcoming(); return; }
+      if (!concepts.length) { await loadUpcoming(due.length); return; }
       const levels = Object.fromEntries(due.map((p) => [p.conceptId, p.level])) as Record<string, Level>;
       // sắp quên nhất ôn trước khi đến hạn nhiều hơn số bước một phiên
       const now = new Date();
@@ -68,8 +69,15 @@
       <p>Bạn chưa học khái niệm nào{subjectId ? ' trong môn này' : ''}. Học một đợt (khoảng 5 phút), khái niệm sẽ được hẹn ôn đúng lúc sắp quên.</p>
       <a class="btn primary" href={subjectId ? hashFor('subject', { subject: subjectId }) : hashFor('home')}>Học đợt đầu tiên →</a>
     {:else}
-      <p class="re-ok"><Glyph name="check" size={20} /> Hôm nay không còn khái niệm nào cần ôn{subjectId ? ' trong môn này' : ''}.</p>
-      {#if upcoming.next}<p class="re-next">Lần ôn tới: <b>{upcoming.next.inDays === 1 ? 'ngày mai' : `${upcoming.next.inDays} ngày nữa`}</b> ({upcoming.next.date}) · {upcoming.next.count} khái niệm.</p>{/if}
+      {#if upcoming.stale}
+        <p class="re-stale"><Glyph name="warn" size={18} /> Có {upcoming.stale} khái niệm đến hạn nhưng không còn trong nội dung hiện tại (có thể đã được sửa hoặc gộp). Tiến độ của chúng vẫn được giữ.</p>
+      {:else if upcoming.next?.inDays === 0}
+        <p class="re-ok"><Glyph name="check" size={20} /> Chưa tới giờ ôn — vừa học xong nên khái niệm được hẹn ôn lại sau ít phút.</p>
+        <p class="re-next">Quay lại lúc <b>{upcoming.next.time} hôm nay</b> · {upcoming.next.count} khái niệm.</p>
+      {:else}
+        <p class="re-ok"><Glyph name="check" size={20} /> Hôm nay không còn khái niệm nào cần ôn{subjectId ? ' trong môn này' : ''}.</p>
+        {#if upcoming.next}<p class="re-next">Lần ôn tới: <b>{upcoming.next.inDays === 1 ? 'ngày mai' : `${upcoming.next.inDays} ngày nữa`}</b> ({upcoming.next.date}) · {upcoming.next.count} khái niệm.</p>{/if}
+      {/if}
       <div class="row">
         <a class="btn primary" href={subjectId ? hashFor('subject', { subject: subjectId }) : hashFor('home')}>Học đợt mới →</a>
         <a class="btn ghost" href={hashFor('quizzes')}>Luyện đề</a>

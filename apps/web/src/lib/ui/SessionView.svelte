@@ -257,7 +257,7 @@
       <div class="step-wrap" class:golden class:retry class:boss={step.meta?.kind === 'boss'}>
         {#if golden}<p class="step-badge gold"><Glyph name="star-fill" size={14} /> Câu vàng · đúng được ×2 XP</p>
         {:else if retry}<p class="step-badge retry">Sửa sai · không ghi vào tiến độ nhớ</p>
-        {:else if step.meta?.kind === 'boss'}<p class="step-badge boss">Câu chốt · câu cuối của phiên</p>{/if}
+        {:else if step.meta?.kind === 'boss'}<p class="step-badge boss">Câu chốt · tổng hợp đợt vừa học</p>{/if}
         {#if pretest}<PretestBar answered={!!result} onskip={skipPretest} />{/if}
         {#key run.i}
           <div class="step-in"><Card {concept} item={step.item} meta={step.meta} {rng} {onanswer} onspeak={speak} mode={clozeMode} /></div>

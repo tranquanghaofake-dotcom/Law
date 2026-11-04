@@ -26,7 +26,7 @@ describe('Luyện đề — gọn phần đầu, heading kệ (Q-1, Q-2, Q-3, Q-
     expect(next.textContent).toContain('Đặt cọc'); // đề chưa đạt có mặt dưới dạng lựa chọn phụ
     expect(next.querySelector('button')?.textContent).toContain('Xáo đề khác');
   });
-  it('sắp xếp là <select> 3 lựa chọn; chip lọc xuống dòng (không cuộn ngang)', async () => {
+  it('sắp xếp là <select> 3 lựa chọn; sắp khác "Theo kệ" thì không gom heading kệ', async () => {
     const { container } = render(Quizzes);
     await ready(container);
     const sel = container.querySelector('select.qz-sort') as HTMLSelectElement;

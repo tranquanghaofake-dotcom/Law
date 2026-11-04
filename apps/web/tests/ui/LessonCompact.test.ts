@@ -37,11 +37,22 @@ describe('Bài học gọn hơn (đợt 2: phần nhìn)', () => {
     expect(hint.textContent).toMatch(/giữ lửa chuỗi/);
     getByRole('button', { name: 'Ẩn gợi ý' });
   });
+  it('bấm "Ẩn gợi ý" thì gợi ý biến mất và không hiện lại ở phiên sau', async () => {
+    const props = { steps: [{ conceptId: 'a', level: 2, item: mcq() }] as Step[], concepts: [concept], levels: { a: 1 as const } };
+    const a = render(SessionView, { props });
+    await fireEvent.click(a.getByRole('button', { name: 'Ẩn gợi ý' }));
+    expect(a.container.querySelector('.session-hint')).toBeNull();
+    cleanup();
+    const b = render(SessionView, { props });
+    expect(b.container.querySelector('.session-hint')).toBeNull();
+  });
   it('câu chốt hiện câu hỏi ngay (không chen màn chờ), nhãn nói rõ là câu cuối', () => {
     const boss: Step = { conceptId: 'a', level: 2, item: mcq(), meta: { kind: 'boss' } } as Step;
     const { container } = render(SessionView, { props: { steps: [boss], concepts: [concept], levels: { a: 1 } } });
     expect(container.querySelector('.boss-intro')).toBeNull();
-    expect(container.querySelector('.step-badge.boss')?.textContent).toMatch(/Câu chốt.*câu cuối/);
+    // không hứa "câu cuối": vòng sửa sai có thể nối sau câu chốt (engine/runner.ts)
+    expect(container.querySelector('.step-badge.boss')?.textContent).toMatch(/Câu chốt/);
+    expect(container.querySelector('.step-badge.boss')?.textContent).not.toMatch(/câu cuối/);
     expect(container.textContent).toContain('Câu hỏi?');
   });
 });
