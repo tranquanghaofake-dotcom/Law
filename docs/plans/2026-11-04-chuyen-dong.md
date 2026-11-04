@@ -31,3 +31,5 @@ Task 2: bắt đầu — base a662e13
 Task 2: phông theo nơi làm việc (5 cảnh mới ScenesCongSo: trụ sở xã, tỉnh, bộ, Viện kiểm sát, dinh thự nguyên thủ; xét xử/kiểm sát dùng thêm phòng xử án), luật vải theo cấp (đồng phục trơn, không nơ, chấm bi/ca-rô chỉ cấp cơ sở), đồ vật đúng nghề. Ảnh: docs/plans/2026-11-04-tu-trung-bay-sau.png.
 Quyết định: bỏ test cũ "≥ 12 phông, không phông nào quá 5 chức" — vì chính ràng buộc đa dạng đó ép Thẩm phán đứng trước đình làng — sai thì tốn: khôi phục test + bảng cũ (1 commit).
 Chưa chắc: trang phục Thư ký Tòa án tại phiên tòa (giữ công sở như cũ, không đổi).
+Task 2: xong — fa968f7
+Task 3: bắt đầu — base fa968f7
