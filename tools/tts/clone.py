@@ -78,6 +78,26 @@ def errors(hyp: str, ref: str) -> int:
     return d[-1]
 
 
+def tail_cut(hyp_words: list[str], ref_words: list[str]) -> int:
+    """Số từ ĐẦU của lời nghe được cần giữ: nếu sau từ cuối của câu gốc model nói thêm ("lãi thịt", "hẹn gặp lại các bạn…")
+    thì trả về vị trí cắt; không thừa → len(hyp_words). Chọn tiền tố khớp câu gốc nhất (ít lỗi nhất, ưu tiên dài hơn khi hoà)."""
+    if len(hyp_words) <= len(ref_words):
+        return len(hyp_words)
+    def dist(h):
+        d = list(range(len(h) + 1))
+        for i, x in enumerate(ref_words, 1):
+            prev, d[0] = d[:], i
+            for j, y in enumerate(h, 1):
+                d[j] = min(prev[j] + 1, d[j - 1] + 1, prev[j - 1] + (x != y))
+        return d[-1]
+    best_j, best_d = len(hyp_words), dist(hyp_words)
+    for j in range(len(ref_words), len(hyp_words)):
+        dj = dist(hyp_words[:j])
+        if dj < best_d:
+            best_j, best_d = j, dj
+    return best_j
+
+
 def allowed_errors(n_words: int) -> int:
     """Whisper small cũng nghe nhầm: câu dưới 6 từ phải đúng hết; từ 6 từ cho phép ~1 lỗi mỗi 12 từ (làm tròn)."""
     return 0 if n_words < 6 else (n_words + 6) // 12
@@ -267,6 +287,23 @@ class Engine:
         segs, _ = model.transcribe(w16, language='vi', beam_size=5 if careful else 1, condition_on_previous_text=False)
         return ' '.join(s.text for s in segs).strip()
 
+    def cut_tail(self, audio, text: str):
+        """Cắt phần nói thừa sau từ cuối của câu (lỗi hay gặp của model với câu ngắn). Trả về (audio, đã_cắt)."""
+        np = self.np
+        w16 = self.librosa.resample(np.asarray(audio, dtype=np.float32), orig_sr=self.tts.sample_rate, target_sr=16000)
+        segs, _ = self.whisper_short.transcribe(w16, language='vi', beam_size=5, word_timestamps=True, condition_on_previous_text=False)
+        ws = [w for s in segs for w in (s.words or [])]
+        hyp = [words(w.word)[0] if words(w.word) else '' for w in ws]
+        keep = tail_cut(hyp, words(text))
+        if keep >= len(ws) or keep == 0:
+            return audio, False
+        end = min(ws[keep - 1].end + 0.12, ws[keep].start + 0.02) if keep < len(ws) else ws[-1].end
+        n = int(end * self.tts.sample_rate)
+        fade = np.linspace(1, 0, int(0.03 * self.tts.sample_rate), dtype=np.float32)
+        out = np.asarray(audio[:n], dtype=np.float32).copy()
+        out[-len(fade):] *= fade[: len(out)]
+        return out, True
+
     def recheck(self, c: dict, audio, text: str) -> dict:
         """Nghe lại lần hai bằng Whisper medium: tách lỗi do Whisper small nghe nhầm thuật ngữ khỏi lỗi đọc thật."""
         w16 = self.librosa.resample(self.np.asarray(audio, dtype=self.np.float32), orig_sr=self.tts.sample_rate, target_sr=16000)
@@ -322,6 +359,10 @@ class Engine:
         for k in range(BEST_OF if short else TRIES):
             a = self.synth(spoken)
             c = self.score(a, text)
+            if not passes(c, text) and len(words(c['heard'])) > len(words(text)):  # nói thừa: cắt đuôi rồi chấm lại
+                a2, cut = self.cut_tail(a, text)
+                if cut:
+                    a, c = a2, {**self.score(a2, text), 'tail_cut': True}
             c['k'] = k
             cands.append((c, a))
             if not short and k + 1 >= MIN_TAKES and any(passes(x, text) for x, _ in cands):
@@ -329,7 +370,7 @@ class Engine:
         if not any(passes(x, text) for x, _ in cands) and len(words(text)) >= SHORT_CHECK:
             cands = [(self.recheck(x, a, text), a) for x, a in cands]
         c, a = min(cands, key=lambda p: rank(p[0], text))
-        info = {'text': text, 'spoken': spoken, 'tries': len(cands), 'ok': passes(c, text), **{k: c[k] for k in ('err', 'num', 'sim', 'pv', 'heard')}, 'rechecked': c.get('rechecked', False)}
+        info = {'text': text, 'spoken': spoken, 'tries': len(cands), 'ok': passes(c, text), **{k: c[k] for k in ('err', 'num', 'sim', 'pv', 'heard')}, 'rechecked': c.get('rechecked', False), 'tail_cut': c.get('tail_cut', False)}
         return self.post(a), info
 
 

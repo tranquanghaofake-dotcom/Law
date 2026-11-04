@@ -50,6 +50,13 @@ class ChanLoi(unittest.TestCase):
         self.assertEqual(clone.errors('miễn điểm C, điểm D, điểm E khoản 1', 'miễn điểm c, đ, e khoản 1.'), 0)  # tên chữ cái; Whisper viết đ thành D
         self.assertEqual(clone.errors('Năng lực thành vi dân sự là gì?', 'Năng lực hành vi dân sự là gì?'), 1)
 
+    def test_cat_duoi_noi_thua(self):
+        ref = clone.words('Đáp án: cùng loại · lãi.')
+        self.assertEqual(clone.tail_cut(clone.words('Đáp án cùng loại lãi thịt'), ref), 5)
+        self.assertEqual(clone.tail_cut(clone.words('Hội nghị chủ nợ. Hẹn gặp lại các bạn'), clone.words('Hội nghị chủ nợ.')), 4)
+        self.assertEqual(clone.tail_cut(clone.words('Chính xác'), clone.words('Chính xác.')), 2)  # không thừa: giữ nguyên
+        self.assertEqual(clone.tail_cut(clone.words('Đáp án cùng loại lại chia sẻ'), ref), 5)  # sai thanh vẫn giữ, chỉ cắt phần thừa
+
     def test_nguong_loi_theo_do_dai(self):
         self.assertEqual(clone.allowed_errors(5), 0)
         self.assertEqual(clone.allowed_errors(7), 1)

@@ -209,7 +209,8 @@ def normalize(text: str) -> str:
     t = re.sub(r'(\d+)/(\d+)', r'\1 trên \2', t)
     t = re.sub(r'(?<=[^\W\d_])/(?=\s*\d)', ' trên ', t)  # "5 gam/100 mi li lít"
     t = re.sub(r'\d{1,3}(?:\.\d{3})+|\d+,\d+|\d+', _num, t)
-    t = t.replace('&', ' và ').replace('→', ', ').replace('…', '.').replace('(…)', '')
+    t = re.sub(r'\(\s*(?:…|\.\.\.)\s*\)', ' ', t)  # "(…)" = lược bớt: bỏ hẳn (phải làm TRƯỚC khi đổi "…" thành dấu chấm)
+    t = t.replace('&', ' và ').replace('→', ', ').replace('…', '.')
     for k, v in SYMBOLS.items():
         t = t.replace(k, v)
     t = re.sub(r'\s*[(\[]\s*', ', ', t)
@@ -224,9 +225,10 @@ def normalize(text: str) -> str:
     t = re.sub(r',\s*,', ',', t)
     t = re.sub(r'\s+', ' ', t).strip().lower()
     t = re.sub(r'\bngày ngày\b', 'ngày', t)
-    t = re.sub(r'^,\s*', '', t)
+    t = re.sub(r'^[\s,.;:]+', '', t)  # không mở đầu lời đọc bằng dấu câu
     t = re.sub(r',\s*([.!?])', r'\1', t)
     t = re.sub(r'(,\s*)+', ', ', t)
     t = re.sub(r'\.{2,}', '.', t)
     t = re.sub(r',\s*\.', '.', t)
+    t = re.sub(r'\.\s*,', ',', t)  # "hằng tháng.), chi phí" → một chỗ ngắt
     return t

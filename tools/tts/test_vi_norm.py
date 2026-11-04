@@ -89,6 +89,11 @@ class ChuanHoaCau(unittest.TestCase):
         self.assertEqual(normalize('Từ ngày 01/01.'), 'từ ngày một tháng một.')
         self.assertEqual(normalize('Đường trên 5g/100mL.'), 'đường trên năm gam trên một trăm mi li lít.')
 
+    def test_luoc_bot_dau_cau(self):
+        self.assertEqual(normalize('(…) Các cổ đông sáng lập phải mua ít nhất 20% cổ phần.'), 'các cổ đông sáng lập phải mua ít nhất hai mươi phần trăm cổ phần.')
+        self.assertEqual(normalize('Làm thêm giờ: phải được đồng ý; (…).'), 'làm thêm giờ, phải được đồng ý.')
+        self.assertEqual(normalize('Gồm trợ cấp (hằng tháng.), chi phí mai táng.'), 'gồm trợ cấp, hằng tháng, chi phí mai táng.')
+
     def test_bo_ghi_chu_noi_bo_ve_nguon(self):
         self.assertEqual(normalize('Nguyễn Ngọc Bích) — đã khớp nguyên văn slide (laws/hc-slide-trich.txt); slide không phải giáo trình, giáo trình chưa đối chiếu).'),
                          'nguyễn ngọc bích, đã khớp nguyên văn slide, slide không phải giáo trình, giáo trình chưa đối chiếu.')  # giữ cảnh báo độ tin cậy
