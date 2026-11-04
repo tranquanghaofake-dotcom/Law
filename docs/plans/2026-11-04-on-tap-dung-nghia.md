@@ -26,3 +26,12 @@ Review cuối (dp-review, opus): ĐẠT, 3 điểm nhẹ → đã sửa: Luyện
 Kiểm tra cuối: `npm run ci` xanh.
 Ngoài phạm vi (ghi lại, không sửa): Quiz10 ghi `subject: set.group` (group có thể không phải mã môn; hiện 0/470 câu có `concept` nên chưa chạy); tự chấm "Gần đúng" vẫn +1 bậc (chỉ đổi rating thành Hard); chưa có test SessionView truyền `rating` vào repo.record.
 Rút kinh nghiệm: không task nào phải làm lại. Reviewer bắt được lệch ngày runner/repo qua nửa đêm — lần sau khi thêm luật theo ngày, brief/test phải có ca "vắt qua 00:00". `npm run shots` không chụp được màn kết thúc phiên → dùng spec Playwright tạm (xoá sau khi chụp).
+
+## Đợt bổ sung — 3 việc ngoài phạm vi (Hào: "làm 3 việc trên")
+| # | Task | File | Kiểm tra | Trạng thái |
+|---|---|---|---|---|
+| 5 | Tự chấm "Gần đúng" giữ nguyên bậc (không +1), runner và repo cùng luật | engine/{progress,runner}.ts, store/progress-repo.ts | tests/engine/progress, runner, store | chờ |
+| 6 | Luyện đề: môn của câu gắn `concept` lấy từ `group` chỉ khi group là mã môn có thật; không thì không ghi | ui/quiz.ts, routes/Quiz10.svelte | tests/ui/quiz | chờ |
+| 7 | Test SessionView truyền `rating` (cách trả lời, độ dài đề, gần đúng) vào repo.record | tests/ui/SessionViewRating.test.ts | vitest | chờ |
+
+Task 5: bắt đầu — base 194ed29
