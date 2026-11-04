@@ -2,9 +2,9 @@ import { expect, test } from '@playwright/test';
 import { readdirSync, readFileSync } from 'node:fs';
 const B = process.env.BASE_PATH ?? '/';
 
-test('trang chủ người mới: thẻ BẮT ĐẦU, môn đang học, một thẻ kiểm tra nhanh', async ({ page }) => {
+test('trang chủ người mới: thẻ Bắt đầu, môn đang học, một thẻ kiểm tra nhanh', async ({ page }) => {
   await page.goto(B + '');
-  await expect(page.locator('.hero-card .kicker')).toHaveText('BẮT ĐẦU');
+  await expect(page.locator('.hero-card .kicker')).toHaveText('Bắt đầu');
   // môn đầu theo thứ tự chương trình học (lib/ui/shelves.ts), không phải môn đầu bảng chữ cái
   await expect(page.getByRole('link', { name: /Học đợt đầu tiên/ })).toHaveAttribute('href', '#/hoc/ly-luan-nn-pl/llc1');
   await expect(page.getByRole('heading', { name: /Bắt đầu từ đâu/ })).toBeVisible();

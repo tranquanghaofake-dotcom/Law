@@ -18,6 +18,8 @@
   const current = $derived(activeNav(active));
   const Rail = $derived(rail.current?.component);
   const hasParent = $derived(parentHash(route) !== null);
+  // Trang có breadcrumb riêng (Subject, Concepts): ≥ 768 ẩn nút Quay lại ngay từ lúc tải (không chờ breadcrumb → không giật)
+  const hasCrumbs = $derived(route.name === 'subject' || route.name === 'concepts');
   refreshSidenav();
   const railProps = $derived(rail.current?.props ?? {});
 </script>
@@ -47,7 +49,7 @@
     {#if !storage.available}
       <p class="banner" role="alert"><Glyph name="warn" size={16} /> Trình duyệt đang chặn lưu trữ (chế độ riêng tư?). Bạn vẫn học được nhưng tiến độ sẽ mất khi đóng tab.</p>
     {/if}
-    {#if hasParent}<button type="button" class="back-btn" aria-label="Quay lại" onclick={() => goBack(route)}><Glyph name="back" size={16} /> Quay lại</button>{/if}
+    {#if hasParent}<button type="button" class="back-btn" class:has-crumbs={hasCrumbs} aria-label="Quay lại" onclick={() => goBack(route)}><Glyph name="back" size={16} /> Quay lại</button>{/if}
     {@render children()}
   </main>
 

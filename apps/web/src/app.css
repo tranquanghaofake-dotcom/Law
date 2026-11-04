@@ -1759,7 +1759,7 @@ body:has(dialog.sheet[open]) { overflow: hidden; }
 .toc .local-nav { margin-bottom: 0; }
 /* Một lối quay lại mỗi kích cỡ (SJ-5): điện thoại dùng nút Quay lại, ≥ 768 dùng breadcrumb */
 @media (max-width: 767px) { .crumbs { display: none; } }
-@media (min-width: 768px) { main:has(> .crumbs) > .back-btn { display: none; } }
+@media (min-width: 768px) { .back-btn.has-crumbs { display: none; } }
 /* Tranh đầu trang môn không còn nằm sau tiêu đề ở điện thoại (SJ-4) */
 @media (max-width: 599px) { .subject-head .head-art { display: none; } }
 /* Gợi ý đợt tiếp: tối đa 2 dòng thay vì cắt 1 dòng (SJ-4) */
