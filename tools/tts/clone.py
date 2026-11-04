@@ -52,6 +52,8 @@ TONES = {'\u0300', '\u0301', '\u0303', '\u0309', '\u0323'}  # huyền, sắc, ng
 def sound(w: str) -> str:
     """So theo ÂM, không theo chữ viết: dấu thanh đặt kiểu cũ/mới như nhau (hoạ = họa);
     giọng Bắc đọc x = s, tr = ch, d = gi = r nên Whisper không phân biệt được."""
+    if w == 'đê':  # tên chữ cái "đ": Whisper viết thành "D" (dê)
+        w = 'dê'
     d = unicodedata.normalize('NFD', w)
     w = unicodedata.normalize('NFC', ''.join(c for c in d if c not in TONES)) + ''.join(c for c in d if c in TONES)
     for a, b in (('tr', 'ch'), ('gi', 'd'), ('x', 's'), ('r', 'd')):

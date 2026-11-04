@@ -181,8 +181,9 @@ def normalize(text: str) -> str:
     t = re.sub(r'(?:\bVBHN|[Vv]ăn bản hợp nhất)\s*(\d+)/(?:\d{4}/)?VBHN-[A-ZĐ-]+(?:\s+(\d{4}))?', lambda m: f'văn bản hợp nhất số {m.group(1)}' + (f' năm {m.group(2)}' if m.group(2) else ''), t)
     t = re.sub(r'\bVBHN\s*(\d+)/(\d{4})\b', r'văn bản hợp nhất số \1 năm \2', t)
     # "điểm b", "điểm a, b và c": chữ cái đứng một mình sau "điểm" (và sau dấu phẩy/và/hoặc trong dãy điểm) → tên chữ cái
-    t = re.sub(r'\b([Đđ]iểm)\s+([a-zđ](?:\s*(?:,|và|hoặc)\s*[a-zđ])*)(?![\w])',
-               lambda m: m.group(1) + ' ' + re.sub(r'(?<![\w])[a-zđ](?![\w])', lambda x: LETTERS.get(x.group(0), x.group(0)), m.group(2)), t)
+    # (không phân biệt hoa/thường: Whisper hay viết "điểm C, điểm D" — so khớp cần cùng một dạng)
+    t = re.sub(r'\b([Đđ]iểm)\s+([a-zđA-ZĐ](?:\s*(?:,|và|hoặc)\s*(?:[Đđ]iểm\s+)?[a-zđA-ZĐ])*)(?![\w])',
+               lambda m: m.group(1) + ' ' + re.sub(r'(?<![\w])[a-zđA-ZĐ](?![\w])', lambda x: LETTERS.get(x.group(0).lower(), x.group(0)), m.group(2)), t)
     t = re.sub(r'[\u3400-\u9fff]+', ' ', t)  # chữ Hán (trích cổ văn): bỏ, phần dịch tiếng Việt vẫn đọc
     t = re.sub(r'(?<=\d)\s*(ha|km|cm|m2|m²|kg|mL|ml|g)\b', lambda m: ' ' + UNITS[m.group(1)], t)
     t = re.sub(r'\b0(\d)\b', r'\1', t)  # 03 ha, 02 cổ đông, 01/7 → đọc như số, không đọc từng chữ số

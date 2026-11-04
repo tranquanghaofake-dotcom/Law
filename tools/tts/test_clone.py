@@ -47,6 +47,7 @@ class ChanLoi(unittest.TestCase):
         self.assertEqual(clone.errors('chẻ dất', 'trẻ giất'), 0)
         self.assertEqual(clone.errors('minh họa, hòa giải, thủy lợi', 'minh hoạ, hoà giải, thuỷ lợi'), 0)  # dấu thanh kiểu cũ/mới
         self.assertEqual(clone.errors('sơ thầm', 'sơ thẩm'), 1)  # khác thanh vẫn là lỗi
+        self.assertEqual(clone.errors('miễn điểm C, điểm D, điểm E khoản 1', 'miễn điểm c, đ, e khoản 1.'), 0)  # tên chữ cái; Whisper viết đ thành D
         self.assertEqual(clone.errors('Năng lực thành vi dân sự là gì?', 'Năng lực hành vi dân sự là gì?'), 1)
 
     def test_nguong_loi_theo_do_dai(self):
