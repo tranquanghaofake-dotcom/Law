@@ -20,6 +20,7 @@
   import type { BookScheme } from '$lib/ui/shelf';
   import type { BookLevel } from '$lib/game/books';
   import { ring } from './kit';
+  import { motionGate } from '$lib/fx/motionGate';
   type ShelfBook = { key: string; scheme: BookScheme; level: BookLevel; label: string };
   let { avatar, look = lookFor(null), title = 'Công dân', subtitle = '', books = [], tier = null, celebrate = false, locked = false, compact = false, ondone }:
     { avatar: Avatar; look?: Look; title?: string; subtitle?: string; accent?: string; books?: ShelfBook[]; tier?: PostTier | null; celebrate?: boolean; locked?: boolean; compact?: boolean; ondone?: () => void } = $props();
@@ -44,7 +45,7 @@
   </svg>
 {/snippet}
 
-<figure class="showcase fx-{fx}" class:celebrate class:locked class:compact data-tier={tier ?? 'none'} data-mat={look.material} data-look={look.id} aria-label="Tủ trưng bày: {title}{locked ? ' (chưa mở)' : ''}">
+<figure use:motionGate={{ settle: 12000 }} class="showcase fx-{fx}" class:celebrate class:locked class:compact data-tier={tier ?? 'none'} data-mat={look.material} data-look={look.id} aria-label="Tủ trưng bày: {title}{locked ? ' (chưa mở)' : ''}">
   {#if rich && !compact}{@render corner('tl')}{@render corner('tr')}{@render corner('bl')}{@render corner('br')}{/if}
   {#if tier === 'lanh-dao' && !compact}<span class="sc-lamp l" aria-hidden="true"></span><span class="sc-lamp r" aria-hidden="true"></span>{/if}
   <header class="sc-head">

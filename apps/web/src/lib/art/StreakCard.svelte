@@ -9,6 +9,7 @@
   import { cardFor, justLit, isMilestone, TIER_NAMES, type Tier } from '$lib/game/card';
   import { CARD_GLYPHS } from './cardGlyphs';
   import { reducedMotion } from '$lib/fx/confetti';
+  import { motionGate } from '$lib/fx/motionGate';
   let { count = 0, longest = 0, size = 'full', ignite = false }: { count?: number; longest?: number; size?: 'full' | 'mini'; ignite?: boolean } = $props();
   const c = $derived(cardFor(count, longest));
   const uid = `sc${++seq}`;
@@ -111,7 +112,7 @@
   const spark = $derived(newest >= 0 ? { x: doodles[newest].x, y: doodles[newest].y } : { x: 428, y: 262 });
 </script>
 
-<div class="sc-wrap {size}" class:on class:lighting bind:this={el} onpointermove={move} onpointerleave={leave} role="img" aria-label={label}
+<div use:motionGate={{ settle: 15000 }} class="sc-wrap {size}" class:on class:lighting bind:this={el} onpointermove={move} onpointerleave={leave} role="img" aria-label={label}
   style="--rx:{tilt.rx.toFixed(2)}deg; --ry:{tilt.ry.toFixed(2)}deg; --mx:{tilt.mx.toFixed(1)}%; --my:{tilt.my.toFixed(1)}%; --px:{tilt.px.toFixed(3)}; --py:{tilt.py.toFixed(3)}">
   <svg class="streak-card {size} tier-{c.tier ?? 'none'}" class:burst={c.burst} viewBox="0 0 856 540" aria-hidden="true" focusable="false">
     <defs>

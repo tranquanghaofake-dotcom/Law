@@ -21,3 +21,8 @@ Quyết định: Hào chọn "làm tất cả" 9 mục trong 1 phiên; vẫn gi�
 
 ## Nhật ký
 Task 1: bắt đầu — base 7665b2c
+Đo (Chromium CPU chậm 4×, 390 px, chuỗi 12 ngày, thời gian bận luồng chính trong 4 s, script scratchpad perf.cjs):
+- trước: Hôm nay 817 ms · Hồ sơ 1788 ms (ổn định sau 14 s); 811/1610 ms (ngay khi mở)
+- sau Task 1: Hôm nay 90 ms · Hồ sơ 547 ms (ổn định); ngay khi mở Hồ sơ 752 ms
+- Nguyên nhân: animation trong <svg> có filter/mask bắt vẽ lại + layout lại cả khối mỗi khung hình (cảnh đầu trang: 242 lần layout/4 s); `orgnext` animate box-shadow.
+- Sửa: lib/fx/motionGate.ts (dừng khi ngoài màn hình/tab ẩn, lắng sau 12–15 s, rê chuột chạy lại); vân giấy thành ảnh dựng sẵn; orgnext/firepulse chuyển sang ::before/::after opacity+transform; token --dur-1..4, --ease-*.
