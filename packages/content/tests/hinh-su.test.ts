@@ -19,7 +19,7 @@ describe('nội dung Luật Hình sự 1', () => {
         expect(c.source.cite, f).toMatch(/chưa đối chiếu nguyên văn/);
       } else {
         expect(c.source.kind, f).toBe('statute');
-        expect(c.source.cite).toMatch(/(Bộ luật Hình sự 2015 \(VBHN 135\/VBHN-VPQH 2025\)|Luật Tư pháp người chưa thành niên 2024 \(VBHN 105\/VBHN-VPQH 2026\))$/);
+        expect(c.source.cite).toMatch(/(Bộ luật Hình sự 2015 \(sửa đổi, bổ sung năm 2017, 2025\)|Luật Tư pháp người chưa thành niên 2024 \(sửa đổi, bổ sung năm 2025\))$/);
         expect(c.source.url).toMatch(/^https:\/\/thuvienphapluat\.vn\//);
       }
       expect(c.checked).toBe('2026-11-01');
@@ -51,7 +51,7 @@ describe('nội dung Luật Hình sự 1', () => {
       expect(s.group).toBe('hinh-su');
       expect(s.questions.length).toBe(10);
       for (const q of s.questions) {
-        expect(q.basis).toMatch(/Điều \d+ BLHS \(VBHN 135\/VBHN-VPQH 2025\)/);
+        expect(q.basis).toMatch(/Điều \d+ BLHS \(sửa đổi, bổ sung năm 2017, 2025\)/);
         expect(q.url).toMatch(/^https:\/\/thuvienphapluat\.vn\//);
       }
     }

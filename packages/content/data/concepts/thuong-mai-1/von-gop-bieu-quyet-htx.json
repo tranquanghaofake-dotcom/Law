@@ -8,7 +8,7 @@
  "example": "HTX có vốn điều lệ 2 tỷ đồng: một thành viên chính thức chỉ được góp tối đa 600 triệu đồng và dù góp bao nhiêu vẫn chỉ có một phiếu tại đại hội toàn thể.",
  "source": {
   "kind": "statute",
-  "cite": "Khoản 1 Điều 74; khoản 4 Điều 61 Luật Hợp tác xã 2023 (VBHN 101/VBHN-VPQH 2026)",
+  "cite": "Khoản 1 Điều 74; khoản 4 Điều 61 Luật Hợp tác xã 2023 (sửa đổi, bổ sung năm 2025)",
   "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-101-VBHN-VPQH-2026-Luat-Hop-tac-xa-703396.aspx"
  },
  "checked": "2026-11-01",
@@ -38,7 +38,7 @@
    "explain": "Khoản 1 Điều 74.",
    "source": {
     "kind": "statute",
-    "cite": "Điều 74 Luật Hợp tác xã 2023 (VBHN 101/VBHN-VPQH 2026)"
+    "cite": "Điều 74 Luật Hợp tác xã 2023 (sửa đổi, bổ sung năm 2025)"
    }
   },
   {
@@ -55,7 +55,7 @@
    "explain": "Khoản 4 Điều 61.",
    "source": {
     "kind": "statute",
-    "cite": "Điều 61 Luật Hợp tác xã 2023 (VBHN 101/VBHN-VPQH 2026)"
+    "cite": "Điều 61 Luật Hợp tác xã 2023 (sửa đổi, bổ sung năm 2025)"
    }
   },
   {
@@ -127,10 +127,10 @@
    "level": 4,
    "statement": "Vốn góp tối đa không quá 30% vốn điều lệ đối với hợp tác xã và không quá 40% vốn điều lệ đối với liên hiệp hợp tác xã.",
    "answer": true,
-   "explain": "Đúng. Khoản 1 Điều 74 Luật Hợp tác xã 2023 (VBHN 101/VBHN-VPQH 2026) (nguyên văn).",
+   "explain": "Đúng. Khoản 1 Điều 74 Luật Hợp tác xã 2023 (sửa đổi, bổ sung năm 2025) (nguyên văn).",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 1 Điều 74 Luật Hợp tác xã 2023 (VBHN 101/VBHN-VPQH 2026)",
+    "cite": "Khoản 1 Điều 74 Luật Hợp tác xã 2023 (sửa đổi, bổ sung năm 2025)",
     "url": "https://thuvienphapluat.vn/van-ban/Doanh-nghiep/Van-ban-hop-nhat-101-VBHN-VPQH-2026-Luat-Hop-tac-xa-703396.aspx"
    }
   }

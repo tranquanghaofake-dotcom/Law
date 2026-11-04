@@ -14,7 +14,7 @@ describe('nội dung Luật Đất đai', () => {
     for (const f of files) {
       const c = conceptSchema.parse(JSON.parse(readFileSync(join(dir, f), 'utf8')));
       expect(c.source.kind).toBe('statute');
-      expect(c.source.cite).toMatch(/Luật Đất đai 2024 \(VBHN 44\/VBHN-VPQH 2026\)$/);
+      expect(c.source.cite).toMatch(/Luật Đất đai 2024 \(sửa đổi, bổ sung năm 2024, 2025\)$/);
       expect(c.source.url).toMatch(/^https:\/\/thuvienphapluat\.vn\//);
       expect(c.checked).toBe('2026-11-01');
       expect(c.items.filter((i) => i.type === 'recall').length).toBe(1);

@@ -19,7 +19,7 @@ describe('nội dung Luật Tài chính', () => {
         expect(c.source.cite, f).toMatch(/chưa đối chiếu nguyên văn/);
       } else {
         expect(c.source.kind, f).toBe('statute');
-        expect(c.source.cite).toMatch(/(Luật Ngân sách nhà nước 2025 \(89\/2025\/QH15\)|Luật Thuế giá trị gia tăng 2024 \(VBHN 114\/VBHN-VPQH 2026\)|Luật Thuế thu nhập doanh nghiệp 2025 \(67\/2025\/QH15\)|Luật Thuế thu nhập cá nhân 2025 \(109\/2025\/QH15\)|Luật Thuế tiêu thụ đặc biệt 2025 \(66\/2025\/QH15\)|Luật Quản lý thuế 2025 \(108\/2025\/QH15\)|Luật Thuế xuất khẩu, thuế nhập khẩu 2016 \(VBHN 96\/VBHN-VPQH 2026\)|Luật Thuế sử dụng đất phi nông nghiệp 2010 \(VBHN 05\/VBHN-VPQH 2024\)|Luật Thuế tài nguyên 2009 \(VBHN 23\/VBHN-VPQH 2022\)|Nghị quyết 198\/2025\/QH15 về phát triển kinh tế tư nhân)$/);
+        expect(c.source.cite).toMatch(/(Luật Ngân sách nhà nước 2025 \(89\/2025\/QH15\)|Luật Thuế giá trị gia tăng 2024 \(đã sửa đổi, bổ sung\)|Luật Thuế thu nhập doanh nghiệp 2025 \(67\/2025\/QH15\)|Luật Thuế thu nhập cá nhân 2025 \(109\/2025\/QH15\)|Luật Thuế tiêu thụ đặc biệt 2025 \(66\/2025\/QH15\)|Luật Quản lý thuế 2025 \(108\/2025\/QH15\)|Luật Thuế xuất khẩu, thuế nhập khẩu 2016 \(sửa đổi, bổ sung năm 2025\)|Luật Thuế sử dụng đất phi nông nghiệp 2010 \(sửa đổi, bổ sung năm 2024\)|Luật Thuế tài nguyên 2009 \(sửa đổi, bổ sung năm 2014, 2022\)|Nghị quyết 198\/2025\/QH15 về phát triển kinh tế tư nhân)$/);
         expect(c.source.url).toMatch(/^https:\/\/thuvienphapluat\.vn\//);
       }
       expect(c.checked).toBe('2026-11-01');

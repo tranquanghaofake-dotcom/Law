@@ -8,7 +8,7 @@
  "example": "Công ty Nhật Bản K thực hiện dự án nhà máy tại Bắc Ninh: phải xin Giấy chứng nhận đăng ký đầu tư. Công ty Việt Nam L làm dự án tương tự (không thuộc Điều 24): không phải xin.",
  "source": {
   "kind": "statute",
-  "cite": "Khoản 11 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)",
+  "cite": "Khoản 11 Điều 3 Luật Đầu tư 2025",
   "url": "https://thuvienphapluat.vn/van-ban/Dau-tu/Van-ban-hop-nhat-142-2026-VBHN-LQ-VPQH-Luat-Dau-tu-726675.aspx"
  },
  "checked": "2026-11-01",
@@ -38,7 +38,7 @@
    "explain": "Điểm a khoản 1 Điều 26. Dự án của nhà đầu tư trong nước và đầu tư góp vốn, mua cổ phần thuộc khoản 2 Điều 26 (không phải thực hiện thủ tục cấp Giấy chứng nhận đăng ký đầu tư); ngưỡng 10 tỷ đồng không phải căn cứ.",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 1 Điều 26 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)"
+    "cite": "Khoản 1 Điều 26 Luật Đầu tư 2025"
    }
   },
   {
@@ -55,7 +55,7 @@
    "explain": "Khoản 11 Điều 3.",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 11 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)"
+    "cite": "Khoản 11 Điều 3 Luật Đầu tư 2025"
    }
   },
   {
@@ -127,10 +127,10 @@
    "level": 4,
    "statement": "Giấy chứng nhận đăng ký đầu tư là văn bản bằng bản giấy hoặc bản điện tử ghi nhận thông tin đăng ký của nhà đầu tư về dự án đầu tư.",
    "answer": true,
-   "explain": "Đúng. Khoản 11 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH) (nguyên văn).",
+   "explain": "Đúng. Khoản 11 Điều 3 Luật Đầu tư 2025 (nguyên văn).",
    "source": {
     "kind": "statute",
-    "cite": "Khoản 11 Điều 3 Luật Đầu tư 2025 (VBHN 142/2026/VBHN-LQ-VPQH)",
+    "cite": "Khoản 11 Điều 3 Luật Đầu tư 2025",
     "url": "https://thuvienphapluat.vn/van-ban/Dau-tu/Van-ban-hop-nhat-142-2026-VBHN-LQ-VPQH-Luat-Dau-tu-726675.aspx"
    }
   }
