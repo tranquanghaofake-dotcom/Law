@@ -1015,6 +1015,12 @@ h1 { text-wrap: balance; }
 @keyframes cgborn { 0% { transform: scale(.4); opacity: 0; filter: brightness(3); } 60% { transform: scale(1.22); opacity: 1; filter: brightness(1.8); } 100% { transform: scale(1); filter: brightness(1); } }
 @keyframes cgfadein { from { opacity: 0; } to { opacity: 1; } }
 .sc-wrap.mini .streak-card * { animation: none !important; }
+/* màn thắp chuỗi: con số bừng sáng (phóng nhẹ + sáng rực) rồi tắt dần trong ~1,8 s; số khắc bên dưới giữ nguyên */
+.cg-numflare, .cg-numflash { transform-box: fill-box; transform-origin: center; opacity: 0; pointer-events: none; }
+.cg-numflare { animation: cgnumflare 1.9s var(--ease-out) both; }
+.cg-numflash { animation: cgnumflash 1.4s var(--ease-out) both; }
+@keyframes cgnumflare { 0% { opacity: 0; transform: scale(.8); } 14% { opacity: 1; transform: scale(1.22); } 34% { opacity: 1; transform: scale(1); } 100% { opacity: 0; transform: scale(1); } }
+@keyframes cgnumflash { 0% { opacity: 0; transform: scale(.4); } 18% { opacity: .95; } 100% { opacity: 0; transform: scale(1.9); } }
 .cg-inter { stroke-dasharray: 2.5 21; stroke-width: 1.1; opacity: .75; animation: cginter 2.6s linear infinite; }
 .cg-inter.slow { stroke-dasharray: 2 26; animation-duration: 4s; opacity: .55; }
 .cg-sheen { opacity: 0; }
@@ -1655,3 +1661,21 @@ body:has(dialog.sheet[open]) { overflow: hidden; }
 /* ---- Cổng chuyển động (lib/fx/motionGate.ts): khối ngoài màn hình/tab ẩn/đã lắng thì dừng animation để không vẽ lại ---- */
 [data-motion="off"], [data-motion="off"] *, [data-motion="off"] *::before, [data-motion="off"] *::after,
 [data-motion="rest"], [data-motion="rest"] *, [data-motion="rest"] *::before, [data-motion="rest"] *::after { animation-play-state: paused !important; }
+
+/* ---- Màn thắp chuỗi toàn màn hình (StreakIgnite, đợt 10) ---- */
+.ig { position: fixed; inset: 0; z-index: 90; display: grid; place-content: center; justify-items: center; gap: var(--sp-4); padding: var(--sp-4); outline: none; cursor: pointer; }
+.ig-veil { position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 45%, rgb(24 20 30 / .78), rgb(8 6 12 / .94)); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+.ig-stage { position: relative; width: min(96vw, calc((100dvh - 140px) * 1.585)); transform-origin: center; will-change: transform; }
+.ig-stage .sc-caption { display: none; }
+.ig-stage .sc-wrap { box-shadow: 0 30px 80px rgb(0 0 0 / .55), 0 0 0 1px rgb(255 255 255 / .06), 0 0 120px -20px var(--glow); }
+.ig-motes { position: absolute; inset: 0; pointer-events: none; overflow: visible; }
+.ig-mote { position: absolute; left: 0; top: 0; width: var(--s); height: var(--s); margin: calc(var(--s) / -2) 0 0 calc(var(--s) / -2); border-radius: 50%; opacity: 0; will-change: transform, opacity;
+  background: radial-gradient(circle, #fff 0 22%, var(--fire) 45%, color-mix(in srgb, var(--glow) 0%, transparent) 72%); box-shadow: 0 0 calc(var(--s) * 1.6) calc(var(--s) * .3) color-mix(in srgb, var(--glow) 70%, transparent); mix-blend-mode: screen; }
+.ig-cap { position: relative; margin: 0; color: #f4efe6; font-size: var(--fs-lg); text-align: center; opacity: 0; transform: translateY(8px); transition: opacity var(--dur-3) var(--ease-out), transform var(--dur-3) var(--ease-out); }
+.ig-cap.on { opacity: 1; transform: none; }
+.ig-cap b { color: var(--fire); }
+.ig-btn { position: relative; background: #f4efe6; color: #14213d; }
+.reduced-motion .ig-cap { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) { :root:not(.motion-on) .ig-cap { opacity: 1; transform: none; } }
+.streak-mini { display: inline-flex; line-height: 0; transition: opacity var(--dur-2) var(--ease-out); }
+.streak-mini.away { opacity: 0; }
