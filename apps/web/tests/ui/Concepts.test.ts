@@ -6,8 +6,8 @@ const subject: Subject = { id: 'hp', title: 'Luật Hiến pháp', short: 'Hiế
   { id: 'hp-1', title: 'Hiến pháp là gì', concepts: ['a', 'b'] },
   { id: 'hp-2', title: 'Sửa đổi', concepts: ['c'] },
 ] }] };
-const mk = (id: string, term: string): Concept => ({ id, term, definition: 'Định nghĩa ' + term, plain: 'Giải thích', example: 'Ví dụ', confusables: [], source: { cite: 'Điều 1 Hiến pháp 2013', url: 'https://vbpl.vn/x' }, checked: '2026-11-01', items: [] } as unknown as Concept);
-const all = [mk('a', 'Chủ quyền'), mk('b', 'Hiệu lực'), mk('c', 'Sửa đổi Hiến pháp')];
+const mk = (id: string, term: string): Concept => ({ id, term, definition: 'Định nghĩa ' + term, plain: 'Giải thích', example: 'Ví dụ', confusables: [], keywords: [], source: { cite: 'Điều 1 Hiến pháp 2013', url: 'https://vbpl.vn/x' }, checked: '2026-11-01', items: [] } as unknown as Concept);
+const all = [mk('a', 'Chủ quyền'), { ...mk('b', 'Hiệu lực'), confusables: ['a', 'c'], note: 'Luật sửa đổi 2025 đã thay khoản 2.' } as Concept, mk('c', 'Sửa đổi Hiến pháp')];
 
 vi.mock('$lib/content/loader', () => ({
   loadSubject: async () => subject,
@@ -54,5 +54,15 @@ describe('Concepts — cấu trúc và deep-link (CL-1, CL-3, CN-1, SJ-2)', () =
     expect(body.querySelector('.quote')?.nextElementSibling).toBe(src);
     expect(src.textContent).toContain('01/11/2026');
     expect(src.querySelector('a')?.textContent).toContain('mở tab mới');
+  });
+  it('"Dễ nhầm với" là danh sách link riêng từng dòng; lưu ý cập nhật luật có tiêu đề + icon cảnh báo, cỡ chữ thường', async () => {
+    const { container } = render(Concepts);
+    await waitFor(() => expect(container.querySelector('#body-b')).not.toBeNull());
+    const links = [...container.querySelectorAll('#body-b ul.confuse-list li a')].map((a) => a.textContent);
+    expect(links).toEqual(['Chủ quyền', 'Sửa đổi Hiến pháp']);
+    const note = container.querySelector('#body-b .note')!;
+    expect(note.classList.contains('small')).toBe(false);
+    expect(note.querySelector('svg.glyph')).not.toBeNull();
+    expect(note.textContent).toContain('Cập nhật luật');
   });
 });

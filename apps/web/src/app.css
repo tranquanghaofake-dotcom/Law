@@ -1764,3 +1764,14 @@ body:has(dialog.sheet[open]) { overflow: hidden; }
 .cell-term { overflow: visible; text-overflow: clip; white-space: normal; overflow-wrap: anywhere; }
 /* Tranh thẻ chính không lấn vào chữ ở ≥ 1100 (chữ ≤ 50 %, tranh bắt đầu sau 50 %) */
 @media (min-width: 1100px) { .stage-art, .page-head .head-art, .subject-head .head-art { width: 50%; } }
+/* Khái niệm: "Dễ nhầm với" thành danh sách link đủ lớn để chạm (CN-3); lưu ý cập nhật luật cỡ chữ thường (CN-4) */
+.confuse-h { margin: var(--sp-3) 0 var(--sp-1); font-size: var(--fs-sm); font-weight: 600; }
+.confuse-list { list-style: none; margin: 0 0 var(--sp-2); padding: 0; display: flex; flex-wrap: wrap; gap: var(--sp-2); }
+.confuse-list a, .confuse-list span { display: inline-flex; align-items: center; min-height: var(--ctl-h); padding: var(--sp-1) var(--sp-3); border: 1px solid var(--line); border-radius: var(--r-sm); background: var(--card); font-size: var(--fs-sm); line-height: var(--lh-snug); }
+.confuse-list a { color: var(--ink); text-decoration: none; } .confuse-list a:hover { border-color: var(--accent); }
+.entry-body .note { font-size: var(--fs-sm); }
+.entry-body .note .glyph { vertical-align: -3px; color: var(--seal); }
+/* Tóm tắt "So sánh với…": vùng bấm cao bằng nút, focus ring chung (CN-5) */
+.cmp-wrap > summary { display: flex; align-items: center; min-height: var(--ctl-h); border-radius: var(--r-sm); }
+/* Phương án đã khoá sau khi trả lời vẫn đọc lại được (≥ 4.5:1 thay vì .45) */
+.opt.dim { opacity: .72; }

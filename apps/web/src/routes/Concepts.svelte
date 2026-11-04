@@ -123,11 +123,12 @@
               <p class="source muted">Nguồn: <cite>{c.source.cite}</cite>{#if c.source.url}{' · '}<a href={c.source.url} target="_blank" rel="noopener">Xem văn bản<span class="sr-only"> (mở tab mới)</span><Glyph name="external" size={14} /></a>{/if}{' · '}đối chiếu {viDate(c.checked)}</p>
               <p>{c.plain}</p>
               <p class="muted"><b>Ví dụ:</b> {c.example}</p>
-              {#if c.note}<p class="note small"><b>Cập nhật luật:</b> {c.note}</p>{/if}
+              {#if c.note}<p class="note"><Glyph name="warn" size={16} /> <b>Cập nhật luật:</b> {c.note}</p>{/if}
               {#if c.confusables.length}
-                <p class="small">Dễ nhầm với:
-                  {#each c.confusables as id, k (id)}{#if k}{', '}{/if}{#if byId[id]}<a href={hashFor('concepts', { subject: subject.id, concept: id })}>{termOf(id)}</a>{:else}{termOf(id)}{/if}{/each}
-                </p>
+                <p class="confuse-h" id="cf-{c.id}">Dễ nhầm với</p>
+                <ul class="confuse-list" aria-labelledby="cf-{c.id}">
+                  {#each c.confusables as id (id)}<li>{#if byId[id]}<a href={hashFor('concepts', { subject: subject.id, concept: id })}>{termOf(id)}</a>{:else}<span>{termOf(id)}</span>{/if}</li>{/each}
+                </ul>
               {/if}
               {#each c.confusables.filter((id) => byId[id] && compareConcepts(c, byId[id])) as id (id)}
                 <details class="cmp-wrap"><summary>So sánh với «{termOf(id)}»</summary><CompareTable a={c} b={byId[id]} /></details>
