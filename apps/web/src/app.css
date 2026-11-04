@@ -741,7 +741,7 @@ body::before {
 .art .s-goldline { fill: none; stroke: var(--gold); stroke-width: 1.6; }
 .art .s-water { stroke: color-mix(in srgb, var(--ink) 30%, var(--paper)); }
 .art .f-lotus2 { fill: var(--lotus2); } .art .f-leaf2 { fill: var(--leaf2); } .art .f-seal2 { fill: var(--seal2); }
-.art .f-acc2 { fill: var(--acc2); } .art .f-shade { fill: var(--shade); } .art .f-cream { fill: var(--cream); } .art .f-skin { fill: var(--skin); } .art .f-ksu { fill: #2c4f86; } .art .f-ksu2 { fill: #1d3762; }
+.art .f-acc2 { fill: var(--acc2); } .art .f-shade { fill: var(--shade); } .art .f-cream { fill: var(--cream); } .art .f-skin { fill: var(--skin); } .art .f-ksu { fill: #2c4f86; } .art .f-ochre { fill: #ecc66e; } .art .f-ochre2 { fill: #d3a548; } .art .f-stone { fill: #dde2e8; } .art .f-stone2 { fill: #bcc5d0; } .art .f-ksu2 { fill: #1d3762; }
 /* nét tô theo độ dày đặt trong SVG (tranh khung 520×325): k mực · kp nền thẻ · ka cam · ks đỏ sẫm · kg vành mặt trời · kw gợn nước */
 .art .k { stroke: var(--ink); } .art .kp { stroke: var(--card); } .art .ka { stroke: var(--accent); }
 .art .ks { stroke: var(--seal2); } .art .kg { stroke: var(--sunline); } .art .kw { stroke: color-mix(in srgb, var(--ink) 28%, var(--paper)); }
@@ -1086,7 +1086,7 @@ h1 { text-wrap: balance; }
   background: radial-gradient(60% 100% at 50% 0%, rgba(255, 236, 190, .95), rgba(255, 230, 170, .35) 55%, transparent 80%); clip-path: polygon(40% 0, 60% 0, 100% 100%, 0 100%); }
 .sc-bulb { position: absolute; z-index: 5; left: 50%; top: 0; width: 14%; height: 2.4%; transform: translateX(-50%); border-radius: 0 0 40% 40%; background: linear-gradient(#5d5650, #2e2a27); box-shadow: 0 1.2cqw 3cqw 1cqw rgba(255, 228, 160, .55); }
 .sc-floor { position: absolute; z-index: 1; left: 0; right: 0; bottom: 0; height: 15%; background: linear-gradient(180deg, rgba(255, 255, 255, .55), rgba(255, 255, 255, .15) 8%, rgba(120, 90, 50, .14)); border-top: 1px solid rgba(255, 255, 255, .8); }
-.sc-photo { position: absolute; z-index: 2; inset: 1.5% 2% 13%; transition: transform 1.2s cubic-bezier(.2, .8, .2, 1); filter: drop-shadow(0 8px 10px rgba(50, 30, 10, .28)); }
+.sc-photo { position: absolute; z-index: 2; inset: 1.5% 2% 13%; transition: transform 1.2s var(--ease-out); filter: drop-shadow(0 2px 2px rgba(40, 25, 10, .3)) drop-shadow(0 14px 18px rgba(50, 30, 10, .24)); } /* hai lớp bóng: bóng tiếp xúc sắc + bóng môi trường mềm → áo nổi khối */
 .sc-photo .garment, .sc-reflect .garment { display: block; width: 100%; height: 100%; }
 .sc-reflect { position: absolute; z-index: 1; left: 2%; right: 2%; top: 87%; height: 82%; transform: scaleY(-1); transform-origin: top; opacity: .16; filter: blur(.6px);
   -webkit-mask-image: linear-gradient(to top, transparent 76%, #000 100%); mask-image: linear-gradient(to top, transparent 76%, #000 100%); pointer-events: none; }
@@ -1116,6 +1116,9 @@ h1 { text-wrap: balance; }
 .sc-acc svg { width: 100%; height: auto; max-height: 17cqw; filter: drop-shadow(0 3px 2px rgba(0, 0, 0, .5)); }
 /* Phông sau chân dung (đợt 6): bầu trời + cảnh kiến trúc phóng to; chức chưa mở → bóng mờ khoá; thu gọn (điện thoại) → chỉ khung ảnh nhỏ */
 .sc-back { position: absolute; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; }
+/* đợt 10: quầng sáng sau ma-nơ-canh (đèn rọi hắt lên phông) + tối dần về đáy → phông lùi ra sau, áo là tâm điểm */
+.sc-back::after { content: ""; position: absolute; inset: 0; z-index: 1; background: radial-gradient(ellipse 46% 52% at 50% 40%, rgb(255 250 236 / .6), rgb(255 250 236 / 0) 72%), linear-gradient(180deg, rgb(30 20 10 / 0) 55%, rgb(30 20 10 / .16)); }
+.sc-back[data-sky="dem"]::after { background: radial-gradient(ellipse 46% 52% at 50% 40%, rgb(255 226 160 / .32), rgb(255 226 160 / 0) 72%), linear-gradient(180deg, rgb(0 0 0 / 0) 55%, rgb(0 0 0 / .25)); }
 .sc-back .sc-scene { position: absolute; left: 50%; bottom: 9%; width: 175%; max-width: none; height: auto; transform: translateX(-50%); opacity: .62; }
 .sc-stars { position: absolute; inset: 0; background-image: radial-gradient(1.6px 1.6px at 14% 12%, #fff, transparent), radial-gradient(1.2px 1.2px at 32% 26%, #fff, transparent), radial-gradient(1.8px 1.8px at 58% 10%, #fff, transparent), radial-gradient(1.2px 1.2px at 76% 22%, #fff, transparent), radial-gradient(1.5px 1.5px at 90% 8%, #fff, transparent), radial-gradient(1.2px 1.2px at 46% 34%, #fff, transparent), radial-gradient(1.4px 1.4px at 8% 36%, #fff, transparent); opacity: .85; }
 /* chức chưa mở: xem trước bằng màu thật hơi dịu (bão hoà ~60 %), đèn rọi/bụi sáng tắt, chỉ một huy hiệu khoá nhỏ ở góc */

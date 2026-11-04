@@ -16,6 +16,7 @@ export type PropId = (typeof PROPS)[number];
 export const BACKDROPS = [
   'khue-van-cac', 'quoc-hoi', 'tam-quan', 'chua-mot-cot', 'ha-long', 'ngo-mon', 'toa-an', 'sach-luat', 'san-giao-dich', 'bia-tien-si',
   'hoi-an', 'thien-mu', 'ruong-bac-thang', 'nha-hat-lon', 'dinh-lang', // đợt 8: phố cổ đèn lồng, chùa Thiên Mụ, ruộng bậc thang, Nhà hát Lớn, đình làng
+  'phap-dinh', 'tru-so-xa', 'tru-so-tinh', 'tru-so-bo', 'vien-kiem-sat', 'phu-chu-tich', // đợt 10: phòng xử án + nơi làm việc theo cấp
 ] as const;
 export type BackdropId = (typeof BACKDROPS)[number];
 export const SKIES = ['ban-mai', 'trua', 'hoang-hon', 'dem'] as const;
@@ -42,52 +43,54 @@ const LIGHT: Record<PostTier, Light> = { 'co-so': 'khong', tinh: 'nang', 'trung-
 type Row = [tone: number, adorn: AdornId, left: PropId, right: PropId, backdrop: BackdropId, sky: SkyId];
 const CITIZEN: Row = [0, 'khong', 'so-tay', 'chau-cay', 'chua-mot-cot', 'ban-mai'];
 
-/** id chức → [màu, phụ kiện, đồ vật trái, đồ vật phải, phông, trời]. */
+/** id chức → [màu, phụ kiện, đồ vật trái, đồ vật phải, phông, trời].
+ *  Đợt 10 — phông là NƠI LÀM VIỆC của chức: xã → trụ sở UBND xã (HĐND xã họp cùng trụ sở), tỉnh/sở → trụ sở cấp tỉnh,
+ *  bộ/Chính phủ → trụ sở bộ, Quốc hội → nhà Quốc hội, xét xử → toà nhà Tòa án hoặc phòng xử án, kiểm sát → trụ sở Viện kiểm sát
+ *  hoặc phòng xử án (thực hành quyền công tố tại phiên tòa), Chủ tịch nước → dinh thự nguyên thủ. Đa dạng giữ bằng trời/màu/đồ vật. */
 const TABLE: Record<string, Row> = {
   // Hành pháp — từ chính quyền cấp xã tới Chính phủ
-  'cong-chuc-xa': [1, 'khong', 'so-tay', 'con-dau', 'hoi-an', 'trua'],
-  'pho-chu-tich-xa': [2, 'ghim-sen', 'khay-ho-so', 'chau-cay', 'dinh-lang', 'hoang-hon'],
-  'chu-tich-xa': [3, 'ghim-sach', 'dong-ho', 'cap-ho-so', 'thien-mu', 'ban-mai'],
-  'chuyen-vien-so': [0, 'khong', 'laptop', 'khay-ho-so', 'hoi-an', 'dem'],
-  'giam-doc-so': [1, 'ghim-sach', 'bieu-do', 'con-dau', 'nha-hat-lon', 'trua'],
-  'chu-tich-tinh': [2, 'khan-lua', 'qua-cau', 'chong-sach', 'tam-quan', 'hoang-hon'],
-  'vu-truong': [0, 'ghim-sach', 'laptop', 'cap-ho-so', 'san-giao-dich', 'trua'],
-  'thu-truong': [4, 'ghim-can', 'bieu-do', 'khay-ho-so', 'ngo-mon', 'hoang-hon'],
-  'bo-truong': [2, 'ghim-sen', 'qua-cau', 'con-dau', 'khue-van-cac', 'ban-mai'],
-  'pho-thu-tuong': [4, 'ghim-trong', 'dong-ho', 'bieu-do', 'ha-long', 'dem'],
-  'thu-tuong': [5, 'ghim-trong', 'qua-cau', 'cuon-chieu', 'ngo-mon', 'dem'],
+  'cong-chuc-xa': [1, 'khong', 'so-tay', 'con-dau', 'tru-so-xa', 'trua'],
+  'pho-chu-tich-xa': [2, 'ghim-sen', 'khay-ho-so', 'chau-cay', 'tru-so-xa', 'hoang-hon'],
+  'chu-tich-xa': [3, 'ghim-sach', 'dong-ho', 'cap-ho-so', 'tru-so-xa', 'ban-mai'],
+  'chuyen-vien-so': [0, 'khong', 'laptop', 'khay-ho-so', 'tru-so-tinh', 'trua'],
+  'giam-doc-so': [1, 'ghim-sach', 'bieu-do', 'con-dau', 'tru-so-tinh', 'ban-mai'],
+  'chu-tich-tinh': [2, 'khan-lua', 'qua-cau', 'chong-sach', 'tru-so-tinh', 'hoang-hon'],
+  'vu-truong': [0, 'ghim-sach', 'laptop', 'cap-ho-so', 'tru-so-bo', 'trua'],
+  'thu-truong': [4, 'ghim-can', 'bieu-do', 'khay-ho-so', 'tru-so-bo', 'hoang-hon'],
+  'bo-truong': [2, 'ghim-sen', 'qua-cau', 'con-dau', 'tru-so-bo', 'ban-mai'],
+  'pho-thu-tuong': [4, 'ghim-trong', 'dong-ho', 'bieu-do', 'tru-so-bo', 'dem'],
+  'thu-tuong': [5, 'ghim-trong', 'qua-cau', 'cuon-chieu', 'tru-so-bo', 'dem'],
   // Lập pháp — từ đại biểu HĐND tới Quốc hội
-  'dai-bieu-hdnd-xa': [2, 'ghim-sen', 'hom-phieu', 'so-tay', 'ruong-bac-thang', 'trua'],
-  'dai-bieu-hdnd-tinh': [3, 'khan-lua', 'hom-phieu', 'bo-luat', 'quoc-hoi', 'ban-mai'],
+  'dai-bieu-hdnd-xa': [2, 'ghim-sen', 'hom-phieu', 'so-tay', 'tru-so-xa', 'trua'],
+  'dai-bieu-hdnd-tinh': [3, 'khan-lua', 'hom-phieu', 'bo-luat', 'tru-so-tinh', 'ban-mai'],
   'dai-bieu-quoc-hoi': [5, 'ghim-can', 'micro', 'bo-luat', 'quoc-hoi', 'trua'],
   'uy-vien-ubtvqh': [1, 'ghim-sach', 'micro', 'chong-sach', 'quoc-hoi', 'hoang-hon'],
-  'pho-chu-tich-qh': [2, 'ghim-sen', 'binh-sen', 'cuon-chieu', 'khue-van-cac', 'dem'],
-  'chu-tich-qh': [3, 'ghim-trong', 'micro', 'den-ban', 'quoc-hoi', 'dem'],
-  // Xét xử — thư ký, thẩm tra viên, thẩm phán, chánh án
+  'pho-chu-tich-qh': [2, 'ghim-sen', 'binh-sen', 'cuon-chieu', 'quoc-hoi', 'dem'],
+  'chu-tich-qh': [3, 'ghim-trong', 'micro', 'den-ban', 'quoc-hoi', 'ban-mai'],
+  // Xét xử — đồng phục áo choàng không cài ghim trang trí; đồ vật: cán cân, hồ sơ vụ án
   'thu-ky-toa-an': [3, 'khong', 'so-tay', 'ho-so-vu-an', 'toa-an', 'ban-mai'],
-  'tham-tra-vien': [0, 'ghim-sach', 'kinh-lup', 'ho-so-vu-an', 'sach-luat', 'trua'],
-  'tham-phan': [1, 'khong', 'can-can', 'ho-so-vu-an', 'dinh-lang', 'hoang-hon'],
-  'chanh-an-tinh': [0, 'ghim-can', 'can-can', 'bo-luat', 'toa-an', 'ban-mai'],
-  'tham-phan-tc': [2, 'ghim-can', 'but-nghien', 'can-can', 'sach-luat', 'trua'],
-  'chanh-an-tc': [1, 'ghim-trong', 'can-can', 'cuon-chieu', 'bia-tien-si', 'dem'],
-  // Kiểm sát
-  'kiem-tra-vien': [0, 'khong', 'kinh-lup', 'so-tay', 'thien-mu', 'trua'],
-  'kiem-sat-vien': [1, 'ghim-can', 'kinh-lup', 'cap-ho-so', 'ruong-bac-thang', 'ban-mai'],
-  'vien-truong-tinh': [0, 'ghim-sach', 'cap-ho-so', 'but-nghien', 'toa-an', 'hoang-hon'],
-  'kiem-sat-vien-tc': [2, 'ghim-sen', 'kinh-lup', 'bo-luat', 'khue-van-cac', 'hoang-hon'],
-  'vien-truong-tc': [1, 'ghim-trong', 'kinh-lup', 'den-ban', 'bia-tien-si', 'dem'],
+  'tham-tra-vien': [0, 'ghim-sach', 'kinh-lup', 'ho-so-vu-an', 'phap-dinh', 'trua'],
+  'tham-phan': [1, 'khong', 'can-can', 'ho-so-vu-an', 'phap-dinh', 'hoang-hon'],
+  'chanh-an-tinh': [0, 'khong', 'can-can', 'bo-luat', 'toa-an', 'ban-mai'],
+  'tham-phan-tc': [2, 'khong', 'but-nghien', 'can-can', 'phap-dinh', 'trua'],
+  'chanh-an-tc': [1, 'khong', 'can-can', 'cuon-chieu', 'toa-an', 'dem'],
+  // Kiểm sát — đồng phục ngành, không ghim; đồ vật: kính lúp, hồ sơ
+  'kiem-tra-vien': [0, 'khong', 'kinh-lup', 'so-tay', 'vien-kiem-sat', 'trua'],
+  'kiem-sat-vien': [1, 'khong', 'kinh-lup', 'ho-so-vu-an', 'phap-dinh', 'ban-mai'],
+  'vien-truong-tinh': [0, 'khong', 'cap-ho-so', 'but-nghien', 'vien-kiem-sat', 'hoang-hon'],
+  'kiem-sat-vien-tc': [2, 'khong', 'kinh-lup', 'bo-luat', 'vien-kiem-sat', 'hoang-hon'],
+  'vien-truong-tc': [1, 'khong', 'kinh-lup', 'den-ban', 'vien-kiem-sat', 'dem'],
   // Đỉnh chung
-  'chu-tich-nuoc': [1, 'ghim-trong', 'trong-mini', 'binh-sen', 'ngo-mon', 'dem'],
+  'chu-tich-nuoc': [1, 'ghim-trong', 'trong-mini', 'binh-sen', 'phu-chu-tich', 'dem'],
 };
 
-/** id chức → [hoạ tiết vải, kiểu cổ]; không khai báo = vải trơn, cà vạt/cổ mặc định. */
+/** id chức → [hoạ tiết vải, kiểu cổ]; không khai báo = vải trơn, cà vạt/cổ mặc định.
+ *  Đợt 10: đồng phục ngành luôn trơn; không nơ bướm; chấm bi/kẻ ca-rô chỉ ở cấp cơ sở; trung ương trở lên trơn hoặc sọc chỉ. */
 const FABRIC: Record<string, [PatternId, NeckId]> = {
-  'pho-chu-tich-xa': ['soc-doc', 'mac-dinh'], 'chu-tich-xa': ['ca-ro', 'mac-dinh'], 'giam-doc-so': ['soc-chi', 'mac-dinh'], 'chu-tich-tinh': ['tron', 'no'],
-  'vu-truong': ['soc-chi', 'mac-dinh'], 'thu-truong': ['tron', 'no'], 'bo-truong': ['cham', 'mac-dinh'], 'pho-thu-tuong': ['soc-doc', 'mac-dinh'], 'thu-tuong': ['soc-chi', 'no'],
-  'dai-bieu-hdnd-xa': ['soc-doc', 'mac-dinh'], 'dai-bieu-hdnd-tinh': ['ca-ro', 'mac-dinh'], 'dai-bieu-quoc-hoi': ['soc-chi', 'mac-dinh'], 'uy-vien-ubtvqh': ['tron', 'no'],
-  'pho-chu-tich-qh': ['soc-doc', 'mac-dinh'], 'chu-tich-qh': ['ca-ro', 'mac-dinh'], 'thu-ky-toa-an': ['ca-ro', 'mac-dinh'], 'tham-tra-vien': ['soc-doc', 'mac-dinh'],
-  'tham-phan-tc': ['soc-doc', 'mac-dinh'], 'chanh-an-tc': ['cham', 'mac-dinh'], 'kiem-sat-vien': ['soc-doc', 'mac-dinh'], 'vien-truong-tinh': ['soc-chi', 'no'],
-  'kiem-sat-vien-tc': ['ca-ro', 'mac-dinh'], 'vien-truong-tc': ['cham', 'mac-dinh'], 'chu-tich-nuoc': ['soc-chi', 'mac-dinh'],
+  'cong-chuc-xa': ['tron', 'mo-co'], 'pho-chu-tich-xa': ['soc-doc', 'mac-dinh'], 'chu-tich-xa': ['soc-chi', 'mac-dinh'], 'giam-doc-so': ['soc-chi', 'mac-dinh'],
+  'vu-truong': ['soc-chi', 'mac-dinh'], 'pho-thu-tuong': ['soc-chi', 'mac-dinh'],
+  'dai-bieu-hdnd-xa': ['soc-doc', 'mac-dinh'], 'dai-bieu-hdnd-tinh': ['soc-doc', 'mac-dinh'], 'dai-bieu-quoc-hoi': ['soc-chi', 'mac-dinh'],
+  'chu-tich-qh': ['soc-chi', 'mac-dinh'], 'tham-tra-vien': ['soc-doc', 'mac-dinh'], 'chu-tich-nuoc': ['soc-chi', 'mac-dinh'],
 };
 
 export function lookFor(postId: string | null): Look {

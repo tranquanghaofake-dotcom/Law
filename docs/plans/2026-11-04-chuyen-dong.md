@@ -28,3 +28,6 @@ Task 1: bắt đầu — base 7665b2c
 - Sửa: lib/fx/motionGate.ts (dừng khi ngoài màn hình/tab ẩn, lắng sau 12–15 s, rê chuột chạy lại); vân giấy thành ảnh dựng sẵn; orgnext/firepulse chuyển sang ::before/::after opacity+transform; token --dur-1..4, --ease-*.
 Task 1: xong — a662e13
 Task 2: bắt đầu — base a662e13
+Task 2: phông theo nơi làm việc (5 cảnh mới ScenesCongSo: trụ sở xã, tỉnh, bộ, Viện kiểm sát, dinh thự nguyên thủ; xét xử/kiểm sát dùng thêm phòng xử án), luật vải theo cấp (đồng phục trơn, không nơ, chấm bi/ca-rô chỉ cấp cơ sở), đồ vật đúng nghề. Ảnh: docs/plans/2026-11-04-tu-trung-bay-sau.png.
+Quyết định: bỏ test cũ "≥ 12 phông, không phông nào quá 5 chức" — vì chính ràng buộc đa dạng đó ép Thẩm phán đứng trước đình làng — sai thì tốn: khôi phục test + bảng cũ (1 commit).
+Chưa chắc: trang phục Thư ký Tòa án tại phiên tòa (giữ công sở như cũ, không đổi).

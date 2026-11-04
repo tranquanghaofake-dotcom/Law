@@ -2,6 +2,7 @@
 // Giới hạn lặp (test tests/ui/registry*.test.ts): một cảnh ≤ 2 môn, một tranh nhỏ ≤ 3 bộ đề, huy hiệu không trùng trong một môn.
 export type ArtName =
   | 'khue-van-cac' | 'quoc-hoi' | 'tam-quan' | 'chua-mot-cot' | 'ha-long' | 'ngo-mon' | 'toa-an' | 'sach-luat' | 'san-giao-dich' | 'bia-tien-si'
+  | 'tru-so-xa' | 'tru-so-tinh' | 'tru-so-bo' | 'vien-kiem-sat' | 'phu-chu-tich'
   | 'nha-lang' | 'hop-dong' | 'cang-bien' | 'pho-hang' | 'nha-may' | 'san-bay' | 'ruong-lua' | 'hoi-an' | 'thien-mu' | 'ruong-bac-thang' | 'nha-hat-lon' | 'dinh-lang' | 'toa-ngan-hang' | 'ngan-sach' | 'tri-tue' | 'phap-dinh' | 'che-cho' | 'cuon-van-ban';
 export type VignetteName =
   | 'quan-he' | 'vi-pham' | 'dat-coc' | 'chuyen-khoan' | 'nghi-viec'
@@ -12,7 +13,9 @@ export const ART_CORE: readonly ArtName[] = ['khue-van-cac', 'tam-quan', 'chua-m
 /** Năm phông Việt Nam đợt 8 (vẽ trong ScenesVN.svelte). */
 export const ART_VN: readonly ArtName[] = ['hoi-an', 'thien-mu', 'ruong-bac-thang', 'nha-hat-lon', 'dinh-lang'];
 /** Cảnh bổ sung (đợt 6) — nạp lười trong ScenesMore.svelte. */
-export const ART_MORE: readonly ArtName[] = ['quoc-hoi', 'nha-lang', 'hop-dong', 'cang-bien', 'pho-hang', 'nha-may', 'san-bay', 'ruong-lua', 'toa-ngan-hang', 'ngan-sach', 'tri-tue', 'phap-dinh', 'che-cho', 'cuon-van-ban', ...ART_VN];
+/** Năm phông nơi làm việc đợt 10 (vẽ trong ScenesCongSo.svelte) — chỉ dùng cho tủ trưng bày sự nghiệp. */
+export const ART_CS: readonly ArtName[] = ['tru-so-xa', 'tru-so-tinh', 'tru-so-bo', 'vien-kiem-sat', 'phu-chu-tich'];
+export const ART_MORE: readonly ArtName[] = ['quoc-hoi', 'nha-lang', 'hop-dong', 'cang-bien', 'pho-hang', 'nha-may', 'san-bay', 'ruong-lua', 'toa-ngan-hang', 'ngan-sach', 'tri-tue', 'phap-dinh', 'che-cho', 'cuon-van-ban', ...ART_VN, ...ART_CS];
 export const ART_NAMES: readonly ArtName[] = [...ART_CORE, ...ART_MORE];
 export const VIGNETTE_CORE: readonly VignetteName[] = ['quan-he', 'vi-pham', 'dat-coc', 'chuyen-khoan', 'nghi-viec'];
 export const VIGNETTE_MORE: readonly VignetteName[] = ['nha-nuoc', 'thu-tuc', 'thua-ke', 'boi-thuong', 'toi-pham', 'lao-dong-dac-thu', 'thua-dat', 'du-an', 'ngan-sach-thue', 'von-dn', 'canh-tranh', 'ban-quyen', 'nhan-hieu', 'bao-hiem', 'doanh-nghiep', 'mua-ban', 'khoi-kien', 'van-ban'];
