@@ -11,7 +11,6 @@
   import SideProfile from './SideProfile.svelte';
   import RankBadge from './RankBadge.svelte';
   import Icon from '$lib/art/Icon.svelte';
-  import Bookshelf from './Bookshelf.svelte';
   import { route } from '$lib/router.svelte';
   import { parentHash, goBack } from './back';
 
@@ -40,11 +39,8 @@
     {#if sidenav.study}
       <div class="side-study"><p class="kicker">Đang học</p><p class="ss-subject" title={sidenav.study.subject}>{sidenav.study.subject}</p><p class="ss-lesson small muted">{sidenav.study.lesson}</p><a class="ss-go small" href={sidenav.study.href}>Học tiếp →</a></div>
     {/if}
-    <!-- Tủ kính mini + thẻ chuyên cần = MỘT khối gỗ-kính: kệ sách sau ô kính, thẻ chuỗi/chức danh/tiến độ là biển gắn chân tủ -->
-    <div class="side-cab">
-      <div class="side-shelf"><p class="kicker">Tủ sách</p><div class="side-glass"><Bookshelf size="side" /></div></div>
-      <SideProfile />
-    </div>
+    <!-- Tủ gọn: biển tên + chuỗi + kệ sách một hàng + tiến độ — một khối gỗ-kính, thấp ~230 px -->
+    <div class="side-cab"><SideProfile /></div>
   </nav>
 
   <main class="content" id="main" tabindex="-1">
