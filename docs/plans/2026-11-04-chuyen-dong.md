@@ -33,3 +33,6 @@ Quyết định: bỏ test cũ "≥ 12 phông, không phông nào quá 5 chức"
 Chưa chắc: trang phục Thư ký Tòa án tại phiên tòa (giữ công sở như cũ, không đổi).
 Task 2: xong — fa968f7
 Task 3: bắt đầu — base fa968f7
+Task 3: xong — ab388ed (ảnh khung hình: docs/plans/2026-11-04-man-thap-chuoi.png; e2e lesson.spec.ts 3/3 xanh)
+DỪNG theo mốc 2 giờ của CLAUDE.md. Task 4–9 chưa bắt đầu — phiên sau làm tiếp từ Task 4, không làm lại 1–3.
+Rút kinh nghiệm: (1) đo hiệu năng phải ép khung hình bằng vòng requestAnimationFrame — chờ suông thì Chromium headless không vẽ, số liệu sai (lần đo đầu ra 18 ms thay vì ~750 ms). (2) Test ràng buộc "đa dạng" cũ (≥ 12 phông) chính là nguyên nhân lỗi logic — test thẩm mỹ nên ràng buộc ý nghĩa trước, đa dạng sau. (3) Overlay mới che màn kết thúc → phải rà mọi e2e có thao tác sau màn đó; jsdom không có Element.animate → luôn bọc kiểm tra.
