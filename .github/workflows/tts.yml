@@ -1,0 +1,36 @@
+# Sinh mp3 giọng neural (tools/tts/gen.py) và lưu vào cache của Actions. Deploy lấy lại cache này và chép vào bản build.
+# Chạy tay: Actions → "Giọng đọc" → Run workflow. Chạy lại chỉ sinh câu mới/sửa. Lỗi/không có cache → app dùng giọng trình duyệt.
+name: Giọng đọc
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 19 * * 0' # mỗi tuần một lần: bổ sung câu mới và giữ cache không bị xoá sau 7 ngày
+
+permissions:
+  contents: read
+
+concurrency:
+  group: tts
+  cancel-in-progress: false
+
+jobs:
+  tts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v6
+        with: { python-version: '3.12' }
+      - run: pip install edge-tts==7.2.3 && sudo apt-get install -y -qq ffmpeg
+      - uses: actions/cache/restore@v5
+        with:
+          path: .tts-cache
+          key: tts-${{ github.run_id }}
+          restore-keys: tts-
+      - run: python tools/tts/gen.py --out .tts-cache
+      - uses: actions/cache/save@v5
+        if: always()
+        with:
+          path: .tts-cache
+          key: tts-${{ github.run_id }}

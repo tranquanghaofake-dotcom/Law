@@ -31,18 +31,19 @@ describe('Profile (thẻ căn cước + 2 tab + 3 phần đóng/mở)', () => {
     expect(card.querySelector('h1')?.textContent).toBe('Hồ sơ');
     expect(card.querySelector('.idc-title')?.textContent).toBe('Công dân');
     expect(card.textContent).toContain('ngày');
+    expect(card.textContent).toContain('Chưa có chuỗi'); // nhãn bậc màu/tiến độ vòng 30 ngày ("Đỏ · 5/30" khi có chuỗi)
     expect(card.textContent).toMatch(/0\s*\/\s*0 sách|0\/0/);
     expect(card.textContent).toContain('Chức kế tiếp');
     expect(card.querySelector('[role="progressbar"]')).not.toBeNull();
     expect(container.textContent).not.toContain('Thuần thục theo môn');
     expect(container.querySelector('.page-head')).toBeNull();
   });
-  it('3 phần accordion (Sự nghiệp · Tủ sách · Chuyên cần & tiến độ): button[aria-expanded] + vùng role=region; mặc định chỉ mở "Sự nghiệp"', async () => {
+  it('2 phần accordion (Sự nghiệp · Chuyên cần & tiến độ): button[aria-expanded] + vùng role=region; mặc định chỉ mở "Sự nghiệp"', async () => {
     stubFetch(); route.name = 'profile';
     const { container } = render(Profile);
     const btns = [...container.querySelectorAll<HTMLButtonElement>('.acc-btn')];
-    expect(btns.map((b) => b.querySelector('.acc-t')?.textContent)).toEqual(['Sự nghiệp', 'Tủ sách', 'Chuyên cần & tiến độ']);
-    expect(btns.map((b) => b.getAttribute('aria-expanded'))).toEqual(['true', 'false', 'false']);
+    expect(btns.map((b) => b.querySelector('.acc-t')?.textContent)).toEqual(['Sự nghiệp', 'Chuyên cần & tiến độ']);
+    expect(btns.map((b) => b.getAttribute('aria-expanded'))).toEqual(['true', 'false']);
     for (const b of btns) {
       const panel = container.querySelector(`#${b.getAttribute('aria-controls')}`)!;
       expect(panel.getAttribute('role')).toBe('region');
@@ -50,7 +51,8 @@ describe('Profile (thẻ căn cước + 2 tab + 3 phần đóng/mở)', () => {
     }
     expect(container.querySelector('.org')).not.toBeNull();
     expect(container.querySelector('.showcase')).not.toBeNull(); // cây và tủ trưng bày cùng một phần
-    expect(container.querySelector('.bk')).toBeNull(); // phần chưa mở chưa dựng
+    expect(container.querySelector('.cab > .idcard + .bk')).not.toBeNull(); // thẻ căn cước (đầu tủ) + tủ kính là MỘT khối, luôn hiện
+    expect(container.querySelector('.sp')).toBeNull(); // phần Chuyên cần chưa mở chưa dựng
     expect(container.textContent).not.toContain('Xuất dữ liệu'); // "Dữ liệu" đã chuyển sang Cài đặt
     await new Promise((r) => setTimeout(r, 20));
   });
@@ -68,25 +70,25 @@ describe('Profile (thẻ căn cước + 2 tab + 3 phần đóng/mở)', () => {
   });
   it('mở lại theo phần đã nhớ; localStorage hỏng thì dùng mặc định', async () => {
     stubFetch(); route.name = 'profile';
-    localStorage.setItem(LS_KEY, JSON.stringify(['tu-sach', 'khong-co']));
+    localStorage.setItem(LS_KEY, JSON.stringify(['chuyen-can', 'khong-co']));
     const first = render(Profile);
-    expect([...first.container.querySelectorAll('.acc-btn')].map((b) => b.getAttribute('aria-expanded'))).toEqual(['false', 'true', 'false']);
-    expect(first.container.querySelector('.bk')).not.toBeNull();
+    expect([...first.container.querySelectorAll('.acc-btn')].map((b) => b.getAttribute('aria-expanded'))).toEqual(['false', 'true']);
+    expect(first.container.querySelector('.sp')).not.toBeNull();
     await new Promise((r) => setTimeout(r, 50)); cleanup();
     localStorage.setItem(LS_KEY, '{không phải json');
     const second = render(Profile);
     expect(second.container.querySelector('.acc-btn')?.getAttribute('aria-expanded')).toBe('true');
     await new Promise((r) => setTimeout(r, 20));
   });
-  it('đổi id phần: giá trị cũ của đợt 5 (cay · tu · trung-bay · chuyen-can · du-lieu) được chuyển đổi êm', async () => {
+  it('đổi id phần: giá trị cũ của đợt 5 (cay · trung-bay · chuyen-can · du-lieu) được chuyển đổi êm', async () => {
     stubFetch(); route.name = 'profile';
-    localStorage.setItem(LS_KEY, JSON.stringify(['tu', 'trung-bay', 'du-lieu']));
+    localStorage.setItem(LS_KEY, JSON.stringify(['trung-bay', 'du-lieu']));
     const { container } = render(Profile);
-    expect([...container.querySelectorAll('.acc-btn')].map((b) => b.getAttribute('aria-expanded'))).toEqual(['true', 'true', 'false']);
+    expect([...container.querySelectorAll('.acc-btn')].map((b) => b.getAttribute('aria-expanded'))).toEqual(['true', 'false']);
     await new Promise((r) => setTimeout(r, 50)); cleanup();
     localStorage.setItem(LS_KEY, JSON.stringify(['cay', 'chuyen-can']));
     const second = render(Profile);
-    expect([...second.container.querySelectorAll('.acc-btn')].map((b) => b.getAttribute('aria-expanded'))).toEqual(['true', 'false', 'true']);
+    expect([...second.container.querySelectorAll('.acc-btn')].map((b) => b.getAttribute('aria-expanded'))).toEqual(['true', 'true']);
     await new Promise((r) => setTimeout(r, 20));
   });
   it('ở #/cai-dat hiện nội dung Cài đặt trong tab (không có các phần Hồ sơ)', async () => {

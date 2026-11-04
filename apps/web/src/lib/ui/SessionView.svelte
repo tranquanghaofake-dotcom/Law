@@ -14,7 +14,6 @@
   import { burst, reducedMotion } from '$lib/fx/confetti';
   import { buzz } from '$lib/fx/haptics';
   import { tts } from '$lib/fx/tts.svelte';
-  import { createReveal } from '$lib/fx/reveal.svelte';
   import { refreshHeader } from '$lib/ui/header.svelte';
   import { refreshSidenav } from '$lib/ui/sidenav.svelte';
   import { refreshShelf } from '$lib/ui/shelf.svelte';
@@ -26,9 +25,8 @@
   import LessonPanel from '$lib/ui/LessonPanel.svelte';
   import LessonStrip from '$lib/ui/LessonStrip.svelte';
   import SessionEnd from '$lib/ui/SessionEnd.svelte';
-  import Reveal from '$lib/ui/Reveal.svelte';
   import { isTypingTarget } from '$lib/ui/cards/types';
-  import { onDestroy } from 'svelte';
+  import { onDestroy, onMount } from 'svelte';
   import { feedbackSpeech } from '$lib/ui/session/speech';
   import { barMarks } from '$lib/ui/session/marks';
   import { submitRecord } from '$lib/ui/session/record';
@@ -40,7 +38,13 @@
   import HyperNote from '$lib/ui/session/HyperNote.svelte';
   import PretestBar from '$lib/ui/session/PretestBar.svelte';
   import { getPref } from '$lib/ui/session/prefs';
+  import { hintSeen, markHintSeen } from '$lib/ui/hints';
   import { go } from '$lib/router.svelte';
+  import ComboEdge from '$lib/ui/session/ComboEdge.svelte';
+  import WonderBackdrop from '$lib/ui/session/WonderBackdrop.svelte';
+  import { loadWonder, pickWonderId, type Wonder } from '$lib/fx/wonders';
+  import { pickStrokes, strokesPerCorrect } from '$lib/fx/wonders/lighting';
+  import { edgeGlow, fireStyle, type GlowTier } from '$lib/ui/session/combo';
 
   let { steps, concepts, levels, lessonId, onagain, onnext, title }: {
     steps: Step[]; concepts: Concept[]; levels: Record<string, Level>; lessonId?: string; onagain?: () => void; onnext?: () => void; title?: string;
@@ -48,11 +52,12 @@
 
   // svelte-ignore state_referenced_locally
   let run = $state<RunnerState>(createRunner(steps, levels));
-  // svelte-ignore state_referenced_locally
-  const reveal = createReveal(Math.max(12, steps.filter((s) => s.item.type !== 'intro').length));
   let result = $state<AnswerResult | null>(null);
   let ended = $state<null | { streak: number; streakEvent: StreakEvent; rankBefore: RankInfo; rankAfter: RankInfo; dueTomorrow: number; promotion: string | null }>(null);
   let confirmExit = $state(false);
+  // gợi ý một lần: viền sáng theo chuỗi đúng và nền kỳ quan sáng dần (không chặn học, tắt bằng một chạm)
+  let showHint = $state(!hintSeen('session-glow'));
+  function dismissHint() { showHint = false; markHintSeen('session-glow'); }
   /** thông tin thưởng của câu vừa trả lời, hiện ở phản hồi */
   let reward = $state<{ xp: number; golden: boolean; levelTo: number | null; retry: boolean }>({ xp: 0, golden: false, levelTo: null, retry: false });
   let bossSeen = $state(-1);
@@ -65,7 +70,6 @@
   let record = $state<ReturnType<typeof submitRecord> | null>(null);
   let lastPoint: { x: number; y: number; t: number } | null = null;
   const rng = Math.random;
-  const art = `${import.meta.env.BASE_URL ?? '/'}art/van-mieu-01.webp`;
 
   const step = $derived(run.steps[run.i]);
   const concept = $derived(concepts.find((c) => c.id === step?.conceptId)!);
@@ -92,18 +96,42 @@
   // câu đoán khái niệm từ định nghĩa/ví dụ: không tô khái niệm đang hỏi (lộ đáp án)
   const hideCurrent = $derived(step?.meta?.gen === 'def-term' || step?.meta?.gen === 'example-concept');
 
+  // nền: một kỳ quan Việt Nam ngẫu nhiên mỗi phiên, mỗi câu đúng sáng thêm vài nét theo mốc chuỗi
+  let wonder = $state<Wonder | null>(null);
+  let lit = $state<{ i: number; tier: GlowTier }[]>([]);
+  // câu đúng khi kỳ quan chưa nạp xong: cộng dồn số nét chờ (theo bậc màu lúc đó), áp ngay khi nạp xong
+  let pending: { n: number; tier: GlowTier }[] = [];
+  onMount(() => {
+    loadWonder(pickWonderId(rng)).then((w) => {
+      wonder = w;
+      const q = pending; pending = [];
+      for (const p of q) apply(p.n, p.tier);
+    }).catch(() => {});
+  });
+  function apply(n: number, tier: GlowTier) {
+    if (!wonder) return;
+    const add = pickStrokes(wonder.paths.length, lit.map((l) => l.i), n, rng);
+    if (add.length) lit = [...lit, ...add.map((i) => ({ i, tier }))];
+  }
+  function lightWonder(combo: number) {
+    const tier = edgeGlow(combo).tier;
+    if (!tier) return;
+    if (!wonder) pending.push({ n: strokesPerCorrect(combo), tier }); else apply(strokesPerCorrect(combo), tier);
+  }
+
   sfx.preload();
-  onDestroy(() => tts.stop());
+  onDestroy(() => { tts.stop(); sfx.stopCombo(); floatTimers.forEach(clearTimeout); });
 
   // chữ "+10" bay lên ở chỗ vừa bấm; bàn phím thì bay từ giữa thẻ câu hỏi
+  const floatTimers = new Set<ReturnType<typeof setTimeout>>();
   function spawnFloat(text: string, gold: boolean) {
     if (reducedMotion() || typeof document === 'undefined') return;
     let x = window.innerWidth / 2, y = window.innerHeight / 2;
     if (lastPoint && Date.now() - lastPoint.t < 1500) { x = lastPoint.x; y = lastPoint.y; }
     else { const r = document.querySelector('.question-card')?.getBoundingClientRect(); if (r) { x = r.left + r.width / 2; y = r.top + Math.min(r.height / 2, 160); } }
     const id = (floatId += 1);
-    floats = [...floats, { id, x: Math.min(Math.max(x, 40), window.innerWidth - 40), y: Math.max(y, 60), text, golden: gold }];
-    setTimeout(() => (floats = floats.filter((f) => f.id !== id)), 1100);
+    floats = [...floats, { id, x: Math.min(Math.max(x, 40), window.innerWidth - 40), y: Math.max(y, 60), text, golden: gold, fire: run.combo > 0 ? fireStyle(run.combo) : undefined }];
+    floatTimers.add(setTimeout(() => (floats = floats.filter((f) => f.id !== id)), 1100));
   }
   function onpointer(e: PointerEvent) { lastPoint = { x: e.clientX, y: e.clientY, t: Date.now() }; }
 
@@ -122,12 +150,11 @@
     }
     if (xpGained) await stats.addXp(xpGained);
     const gold = !!cur.meta?.golden;
-    sfx.play(snd, { combo: run.combo });
+    if (r.correct && snd === 'correct') sfx.playCombo(run.combo); else sfx.play(snd, { combo: run.combo });
     buzz(r.correct ? 'ok' : 'bad');
     if (r.correct) {
-      reveal.reveal();
       if (gold) sfx.play('golden');
-      else if (run.combo > 0 && run.combo % 5 === 0) sfx.play('combo');
+      lightWonder(run.combo);
     }
     const up = levelUp && !isRetry;
     if (up) { sfx.play('levelup'); burst(run.levels[cur.conceptId] >= 6 ? 'levelup' : 'small'); }
@@ -145,6 +172,7 @@
   }
 
   async function finish() {
+    sfx.stopCombo();
     const xpBefore = (await stats.xp()) - run.xp;
     let bonus = SESSION_BONUS;
     if (lessonId && (await stats.markLesson(lessonId))) bonus += LESSON_FIRST_BONUS;
@@ -175,14 +203,15 @@
     runNextStep();
   }
 
-  function exit() { tts.stop(); sfx.play('exit'); go('home'); }
+  function exit() { tts.stop(); sfx.stopCombo(); sfx.play('exit'); go('home'); }
   function onkey(e: KeyboardEvent) {
     if (e.key === 'Escape' && !ended) { e.preventDefault(); if (isTypingTarget(e)) (e.target as HTMLElement).blur(); confirmExit = !confirmExit; }
   }
 </script>
 
 <svelte:window onkeydown={onkey} onpointerdowncapture={onpointer} />
-<Reveal {reveal} src={art} />
+<WonderBackdrop {wonder} {lit} complete={!!ended} />
+<ComboEdge combo={ended ? 0 : run.combo} />
 <FloatXp {floats} />
 <div class="session-main">
   <h1 class="sr-only">{title ?? 'Phiên học'}</h1>
@@ -191,6 +220,13 @@
   {:else if step && Card}
     <SessionBar done={barDone} total={barTotal} {title} combo={run.combo} {marks} {inRetry} onexit={() => (confirmExit = true)} />
     {#if lessonId}<LessonStrip {concepts} levels={run.levels} current={hideCurrent ? '' : (step?.conceptId ?? '')} />{/if}
+    {#if showHint}
+      <aside class="card session-hint" aria-label="Gợi ý lần đầu">
+        <p class="kicker">Lần đầu học ở đây</p>
+        <p>Trả lời đúng liên tiếp, <b>viền màn hình sáng dần</b> theo từng mốc chuỗi. Mỗi câu đúng cũng <b>thắp thêm một nét</b> của bức tranh kỳ quan Việt Nam ở nền. Sai thì chuỗi về 0, không mất điểm đã có.</p>
+        <button class="btn" type="button" onclick={dismissHint}>Ẩn gợi ý</button>
+      </aside>
+    {/if}
     {#if confirmExit}
       <div class="card confirm" role="dialog" aria-label="Thoát phiên">
         <p>Thoát, giữ tiến độ? Những câu đã trả lời đã được lưu.</p>
