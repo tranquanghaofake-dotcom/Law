@@ -19,17 +19,20 @@
     <a class="btn primary" href={hashFor('review')}>Ôn ngay →</a>
   {:else if state.kind === 'continue'}
     <p class="kicker" id="hero-kicker">Tiếp tục</p>
-    <p class="headline"><b>{state.subject.title} › {state.lesson.title}</b></p>
+    <p class="hero-subj">{state.subject.title}</p>
+    <p class="headline"><b>{state.lesson.title}</b></p>
     <p class="progress-line"><span class="bar" aria-hidden="true"><span style="width:{(state.done / state.total) * 100}%"></span></span><span class="muted">{state.done}/{state.total} khái niệm đã nhớ</span></p>
     <a class="btn primary" href={lessonHref(state)}>Học tiếp →</a>
   {:else if state.kind === 'next'}
     <p class="kicker" id="hero-kicker">Đợt mới</p>
-    <p class="headline"><b>{state.subject.title} › {state.lesson.title}</b></p>
+    <p class="hero-subj">{state.subject.title}</p>
+    <p class="headline"><b>{state.lesson.title}</b></p>
     <p class="muted">{state.lesson.concepts.length} khái niệm · ~{state.minutes} phút</p>
     <a class="btn primary" href={lessonHref(state)}>Bắt đầu →</a>
   {:else if state.kind === 'start'}
     <p class="kicker" id="hero-kicker">Bắt đầu</p>
-    <p class="headline"><b>{state.subject.title} › {state.lesson.title}</b></p>
+    <p class="hero-subj">{state.subject.title}</p>
+    <p class="headline"><b>{state.lesson.title}</b></p>
     <p class="muted">Mỗi khái niệm đi qua 6 bậc: gặp → nhận biết → phân biệt → điền → tình huống → tự trả lời. Ôn đúng lúc sắp quên.</p>
     <a class="btn primary" href={lessonHref(state)}>Học đợt đầu tiên →</a>
   {:else}

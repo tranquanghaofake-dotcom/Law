@@ -1,6 +1,6 @@
 <script lang="ts">
   // Icon nét nhỏ thay emoji màu (🔥 🔊 ⚙) và ký tự Unicode (★ ▸ ← ⚠ ✓, HT14) để đồng bộ phong cách nét vẽ. stroke = currentColor.
-  let { name, size = 18 }: { name: 'flame' | 'speaker' | 'gear' | 'star' | 'star-fill' | 'chevron-right' | 'chevron-down' | 'back' | 'warn' | 'check' | 'close' | 'lock' | 'dot' | 'dot-empty'; size?: number } = $props();
+  let { name, size = 18 }: { name: 'flame' | 'speaker' | 'gear' | 'star' | 'star-fill' | 'chevron-right' | 'chevron-down' | 'back' | 'warn' | 'check' | 'close' | 'lock' | 'dot' | 'dot-empty' | 'external'; size?: number } = $props();
 </script>
 
 <svg class="glyph" viewBox="0 0 24 24" width={size} height={size} aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -25,6 +25,8 @@
     <path d="M6 6l12 12M18 6L6 18" />
   {:else if name === 'lock'}
     <path d="M6.5 11h11v9h-11zM8.5 11V8a3.5 3.5 0 0 1 7 0v3" />
+  {:else if name === 'external'}
+    <path d="M14 5h5v5M19 5l-8 8M17 14v4.5a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H10" />
   {:else if name === 'dot' || name === 'dot-empty'}
     <circle cx="12" cy="12" r="5" fill={name === 'dot' ? 'currentColor' : 'none'} />
   {:else}

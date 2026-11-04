@@ -150,18 +150,18 @@
       <p class="idc-promo" role="status">Chúc mừng! Bạn vừa nhận chức mới: <b>{fresh.title}</b>. <button type="button" class="idc-link" onclick={() => reveal('su-nghiep')}>Xem lễ nhận chức →</button></p>
     {/if}
   {/if}
-  <div class="tabs idc-tabs" role="tablist" aria-label="Hồ sơ">
-    <a role="tab" href={hashFor('profile')} aria-selected={!onSettings} class:on={!onSettings}>Tổng quan</a>
-    <a role="tab" href={hashFor('settings')} aria-selected={onSettings} class:on={onSettings}><Glyph name="gear" size={16} /> Cài đặt</a>
-  </div>
+  <nav class="tabs idc-tabs" aria-label="Hồ sơ">
+    <a href={hashFor('profile')} aria-current={onSettings ? undefined : 'page'} class:on={!onSettings}>Tổng quan</a>
+    <a href={hashFor('settings')} aria-current={onSettings ? 'page' : undefined} class:on={onSettings}><Glyph name="gear" size={16} /> Cài đặt</a>
+  </nav>
 </section>
 {#if !onSettings}<Bookcase />{/if}
 </div>
 
 {#if onSettings}
-  <div role="tabpanel"><Settings /></div>
+  <div><Settings /></div>
 {:else}
-  <div role="tabpanel" class="acc-list">
+  <div class="acc-list">
     {#each SECTIONS as s (s.id)}
       {@const open = isOpen(s.id)}
       <section class="acc" class:open id="sec-{s.id}">

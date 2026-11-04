@@ -78,9 +78,12 @@
     </div>
   </header>
   {#if subject.chapters.length > 1}
+    <details class="toc">
+    <summary>Mục lục · {subject.chapters.length} chương</summary>
     <nav class="local-nav small" aria-label="Chương trong môn">
       {#each subject.chapters as ch (ch.id)}<a href="#chapter-{ch.id}" title={ch.title} onclick={(e) => { e.preventDefault(); document.getElementById(`chapter-${ch.id}`)?.scrollIntoView({ behavior: 'smooth' }); }}><Emblem name={emblemFor(subject.id, ch.id)} size={26} /><span>{shortTitle(ch.title)}</span><small class="cnt">{counts[ch.id]?.mastered ?? 0}/{counts[ch.id]?.total ?? 0}</small></a>{/each}
     </nav>
+    </details>
   {/if}
   <LevelLegend />
   <MasteryGrid {subject} {levels} {terms} {states} />

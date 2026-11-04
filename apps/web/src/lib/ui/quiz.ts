@@ -122,3 +122,16 @@ export function shelfProgress(sets: readonly SetLike[], best: BestMap): { id: st
 export function quizConceptSubject(group: string, subjectIds: readonly string[]): string | null {
   return subjectIds.includes(group) ? group : null;
 }
+
+/** Gom đề theo kệ (heading mỗi kệ ở Luyện đề — Q-3). Kệ theo thứ tự xuất hiện đầu tiên, đề trong kệ giữ thứ tự đầu vào.
+ *  Không chỉ gom liên tiếp: thứ tự "theo kệ" của sortSets đi theo nhóm môn, một kệ có thể bị nhóm khác chen giữa. */
+export function groupByShelf<T extends { group: string }>(sets: readonly T[]): { id: string; name: string; color: string; sets: T[] }[] {
+  const out: { id: string; name: string; color: string; sets: T[] }[] = [];
+  for (const s of sets) {
+    const sh = shelfFor(s.group);
+    const hit = out.find((g) => g.id === sh.id);
+    if (hit) hit.sets.push(s);
+    else out.push({ id: sh.id, name: sh.name, color: sh.color, sets: [s] });
+  }
+  return out;
+}

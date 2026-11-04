@@ -43,7 +43,6 @@
   const streakMsg = $derived(({ started: 'Bắt đầu chuỗi ngày.', extended: 'Chuỗi +1 ngày.', 'same-day': 'Hôm nay đã tính chuỗi.', froze: 'Bùa giữ chuỗi đã cứu bạn.', reset: 'Chuỗi bắt đầu lại từ 1.' } as Record<StreakEvent, string>)[streakEvent]);
   const rate = $derived(summary.total ? summary.correct / summary.total : 0);
   const R = 52, C = 2 * Math.PI * R;
-  const maxSrc = $derived(Math.max(1, ...sources.map((s) => s.xp)));
   const recordMsg = $derived(!record ? '' : record.comboBeaten && record.rateBeaten ? 'Kỷ lục phiên mới: cả combo và tỉ lệ đúng.' : record.comboBeaten ? `Kỷ lục combo mới: ${summary.bestCombo} liên tiếp (trước đó ${record.before.bestCombo}).` : record.rateBeaten ? `Kỷ lục tỉ lệ đúng mới: ${Math.round(rate * 100)}% (trước đó ${Math.round(record.before.bestRate * 100)}%).` : '');
 </script>
 
@@ -62,7 +61,6 @@
         {#if summary.bestCombo !== undefined}<div><dt>Combo dài nhất</dt><dd>{summary.bestCombo}</dd></div>{/if}
         {#if summary.golden}<div><dt>Câu vàng</dt><dd>{summary.golden}</dd></div>{/if}
         {#if retryTotal > 0}<div><dt>Sửa được</dt><dd>{summary.fixed ?? 0}/{retryTotal}</dd></div>{/if}
-        <div><dt>Tỉ lệ đúng</dt><dd>{Math.round(rate * 100)}%</dd></div>
         {#if summary.pretest && summary.pretest.total > 0}<div><dt>Đoán trước đúng</dt><dd>{summary.pretest.correct}/{summary.pretest.total}</dd></div>{/if}
       </dl>
     </div>
@@ -71,7 +69,7 @@
   {#if sources.length}
     <ul class="xp-sources" aria-label="XP theo nguồn">
       {#each sources as s (s.key)}
-        <li><span>{s.label}</span><i aria-hidden="true"><span style="width:{(s.xp / maxSrc) * 100}%"></span></i><b>+{s.xp}</b></li>
+        <li><span>{s.label}</span><b>+{s.xp}</b></li>
       {/each}
     </ul>
   {/if}

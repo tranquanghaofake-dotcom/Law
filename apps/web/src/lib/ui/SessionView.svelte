@@ -35,7 +35,6 @@
   import { xpSources } from '$lib/ui/session/xpSources';
   import type { XpFloat } from '$lib/ui/session/combo';
   import FloatXp from '$lib/ui/session/FloatXp.svelte';
-  import BossIntro from '$lib/ui/session/BossIntro.svelte';
   import PretestBar from '$lib/ui/session/PretestBar.svelte';
   import { getPref } from '$lib/ui/session/prefs';
   import { hintSeen, markHintSeen } from '$lib/ui/hints';
@@ -63,7 +62,6 @@
   function dismissHint() { showHint = false; markHintSeen('session-glow'); }
   /** thông tin thưởng của câu vừa trả lời, hiện ở phản hồi */
   let reward = $state<{ xp: number; golden: boolean; levelTo: number | null; retry: boolean }>({ xp: 0, golden: false, levelTo: null, retry: false });
-  let bossSeen = $state(-1);
   /** dấu mộc "×3 CHUỖI!" và XP đang hiện ở bộ đếm (đếm lên sau khi chữ +XP bay tới) */
   let stamp = $state<Stamp | null>(null);
   let shownXp = $state(0);
@@ -89,7 +87,6 @@
   const barTotal = $derived(inRetry ? run.steps.length - run.retryStart! : (run.retryStart ?? run.steps.length));
   const barDone = $derived(inRetry ? run.i - run.retryStart! : run.i);
   const marks = $derived(inRetry ? [] : barMarks(run.steps.slice(0, run.retryStart ?? run.steps.length), run.i));
-  const showBoss = $derived(step?.meta?.kind === 'boss' && step.item.type !== 'intro' && bossSeen !== run.i);
   const golden = $derived(!!step?.meta?.golden && step.item.type !== 'intro');
   const retry = $derived(step?.meta?.kind === 'retry');
   const pretest = $derived(step?.meta?.kind === 'pretest');
@@ -248,11 +245,8 @@
     <SessionBar done={barDone} total={barTotal} {title} combo={run.combo} xp={shownXp} {marks} {inRetry} onexit={openConfirm} />
     {#if lessonId}<LessonStrip {concepts} levels={run.levels} current={hideCurrent ? '' : (step?.conceptId ?? '')} />{/if}
     {#if showHint}
-      <aside class="card session-hint" aria-label="Gợi ý lần đầu">
-        <p class="kicker">Lần đầu học ở đây</p>
-        <p>Trả lời đúng liên tiếp để <b>giữ lửa chuỗi</b>: lửa đổi màu theo từng mốc, lên mốc sẽ có <b>dấu mộc</b> và thưởng XP nhân thêm. Sai thì chuỗi về 0, không mất điểm đã có.</p>
-        <button class="btn" type="button" onclick={dismissHint}>Ẩn gợi ý</button>
-      </aside>
+      <!-- Một dòng (không phải hộp): thẻ học vẫn ở màn đầu trên điện thoại -->
+      <p class="session-hint small"><Glyph name="flame" size={16} /> <span>Mẹo: trả lời đúng liên tiếp để <b>giữ lửa chuỗi</b> và nhận XP nhân thêm; sai thì chuỗi về 0, điểm đã có vẫn giữ.</span><button class="hint-x" type="button" aria-label="Ẩn gợi ý" onclick={dismissHint}><Glyph name="close" size={16} /></button></p>
     {/if}
     {#if confirmExit}
       <div class="card confirm" role="dialog" aria-label="Thoát phiên">
@@ -260,13 +254,10 @@
         <div class="row"><button class="btn" type="button" onclick={exit}>Thoát</button><button class="btn ghost" type="button" onclick={closeConfirm} use:focusOnMount>Ở lại</button></div>
       </div>
     {/if}
-    {#if showBoss}
-      {#key run.i}<BossIntro ondone={() => (bossSeen = run.i)} />{/key}
-    {:else}
       <div class="step-wrap" class:golden class:retry class:boss={step.meta?.kind === 'boss'}>
         {#if golden}<p class="step-badge gold"><Glyph name="star-fill" size={14} /> Câu vàng · đúng được ×2 XP</p>
         {:else if retry}<p class="step-badge retry">Sửa sai · không ghi vào tiến độ nhớ</p>
-        {:else if step.meta?.kind === 'boss'}<p class="step-badge boss">Câu chốt</p>{/if}
+        {:else if step.meta?.kind === 'boss'}<p class="step-badge boss">Câu chốt · tổng hợp đợt vừa học</p>{/if}
         {#if pretest}<PretestBar answered={!!result} onskip={skipPretest} />{/if}
         {#key run.i}
           <div class="step-in"><Card {concept} item={step.item} meta={step.meta} {rng} {onanswer} onspeak={speak} mode={clozeMode} /></div>
@@ -275,7 +266,6 @@
       {#if result}
         <Feedback {result} item={step.item} {concept} {confusableTerms} confusables={confusableConcepts} {compareWith} onnext={runNextStep} onspeak={speak} last={isLast(run)} xp={reward.xp} golden={reward.golden} levelTo={reward.levelTo} retry={reward.retry} />
       {/if}
-    {/if}
   {/if}
 </div>
 {#if !ended}

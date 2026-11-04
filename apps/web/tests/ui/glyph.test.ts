@@ -5,7 +5,7 @@ import Glyph from '$lib/art/Glyph.svelte';
 afterEach(() => cleanup());
 
 describe('Glyph — icon nét thay ký tự Unicode (HT14)', () => {
-  const names = ['star', 'star-fill', 'chevron-right', 'chevron-down', 'back', 'warn', 'check', 'close', 'lock', 'dot', 'dot-empty'] as const;
+  const names = ['star', 'star-fill', 'chevron-right', 'chevron-down', 'back', 'warn', 'check', 'close', 'lock', 'dot', 'dot-empty', 'external'] as const;
   it.each(names)('%s: vẽ được, ẩn với trình đọc màn hình, không chứa ký tự', (name) => {
     const { container } = render(Glyph, { props: { name } });
     const svg = container.querySelector('svg')!;

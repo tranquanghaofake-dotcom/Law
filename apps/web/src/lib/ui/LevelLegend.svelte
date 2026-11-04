@@ -3,5 +3,5 @@
 </script>
 
 <ul class="legend" aria-label="Chú giải bậc ghi nhớ">
-  {#each LEVEL_NAMES as name, i (i)}<li><span class="cell lv{i}" aria-hidden="true"></span>{i} {name}</li>{/each}
+  {#each LEVEL_NAMES as name, i (i)}<li><span class="cell cell-n lv{i}" aria-hidden="true">{i}</span>{name}</li>{/each}
 </ul>

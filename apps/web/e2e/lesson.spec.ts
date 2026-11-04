@@ -34,10 +34,8 @@ async function answerMcq(page: P, want: 'right' | 'wrong' | 'any'): Promise<bool
 }
 /** Làm một bước bất kỳ của phiên: intro, trắc nghiệm, hoặc dạng khác (bấm phương án/đi tiếp). */
 async function stepOnce(page: P, want: 'right' | 'wrong' | 'any' = 'right'): Promise<boolean | null> {
-  await page.locator('.boss-intro').waitFor({ state: 'detached' }).catch(() => {});
   const label = await page.locator('article').first().getAttribute('aria-label');
   if (label === 'Thẻ giới thiệu khái niệm') { await page.getByRole('button', { name: /Đã hiểu/ }).click(); return null; }
-  await page.locator('.boss-intro').waitFor({ state: 'detached' }).catch(() => {});
   if (label === 'Trắc nghiệm' || label === 'Tình huống') { const r = await answerMcq(page, want); await page.locator('.feedback').waitFor(); return r; }
   // dạng khác (đúng/sai, điền chỗ trống, ghép cặp, xếp cột, tự trả lời): trả lời đại, test chỉ cần đi hết phiên
   if (label === 'Nhận định đúng sai') { await page.locator('.opt').first().click(); await page.locator('.feedback').waitFor(); return null; }

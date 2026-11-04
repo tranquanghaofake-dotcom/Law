@@ -59,7 +59,7 @@
         open = [target];
         await tick();
         const el = document.getElementById(`c-${target}`);
-        el?.scrollIntoView({ block: 'start' });
+        el?.scrollIntoView?.({ block: 'start' });
         // Deep-link: focus nút của mục đang mở để Tab đi tiếp từ đây, không nhảy về đầu trang.
         el?.querySelector<HTMLElement>('.entry-toggle')?.focus({ preventScroll: true });
       }
@@ -69,6 +69,9 @@
 
   function toggle(id: string) { open = open.includes(id) ? open.filter((x) => x !== id) : [...open, id]; }
   const termOf = (id: string) => byId[id]?.term ?? id;
+  // ISO 2026-11-01 → 01/11/2026 (cách viết ngày quen thuộc với người Việt)
+  const viDate = (iso: string) => iso.split('-').reverse().join('/');
+  const target = $derived(route.params.concept && byId[route.params.concept] ? route.params.concept : '');
 </script>
 
 {#if error}
@@ -79,7 +82,7 @@
   <nav class="crumbs small muted" aria-label="Vị trí"><a href={hashFor('subjects')}>Môn học</a> › <a href={hashFor('subject', { subject: subject.id })}>{subject.title}</a> › Khái niệm</nav>
   <header class="page-head">
     <SubjectArt name={PAGE_ART.concepts} class="head-art" />
-    <h1>Khái niệm · {subject.short}</h1>
+    <h1>Khái niệm {subject.short}</h1>
     <p class="muted">{total} khái niệm. Bấm vào tên để xem định nghĩa nguyên văn, căn cứ và khái niệm dễ nhầm.</p>
     <LegalNote compact />
   </header>
@@ -92,41 +95,44 @@
     <button type="button" class="filter" aria-pressed={onlyStarred} onclick={() => (onlyStarred = !onlyStarred)}><Glyph name="star-fill" size={16} /> Đã đánh dấu ({starredCount})</button>
   </div>
 
+  <p class="small muted concept-count" role="status">Hiện {shown}/{total} khái niệm{#if target && open.includes(target)} · đang mở «{termOf(target)}»{/if}</p>
+
   {#if !shown}
     <section class="card"><p class="muted">{onlyStarred && !starredCount ? 'Chưa đánh dấu khái niệm nào. Bấm dấu sao cạnh tên để đánh dấu.' : 'Không có khái niệm khớp.'}</p></section>
   {/if}
 
   {#each groups as g (g.lessonId)}
-    <p class="kicker">{g.title}</p>
+    <h2 class="concept-group">{g.title}</h2>
     <ul class="concept-list">
       {#each g.concepts as c (c.id)}
         {@const lv = levels[c.id] ?? 0}
         {@const isOpen = open.includes(c.id)}
         <li class="concept-entry" class:open={isOpen} id="c-{c.id}">
           <div class="entry-head">
-            <button type="button" class="entry-toggle" aria-expanded={isOpen} aria-controls="body-{c.id}" onclick={() => toggle(c.id)}>
-              <span class="cell lv{lv}" title="Bậc {lv} · {LEVEL_NAMES[lv]}" aria-hidden="true"></span>
+            <h3 class="entry-h"><button type="button" class="entry-toggle" aria-expanded={isOpen} aria-controls="body-{c.id}" onclick={() => toggle(c.id)}>
+              <span class="cell cell-n lv{lv}" title="Bậc {lv} · {LEVEL_NAMES[lv]}" aria-hidden="true">{lv}</span>
               <span class="entry-term">{c.term}</span>
               <span class="sr-only">, bậc {lv} {LEVEL_NAMES[lv]}</span>
               <span class="chev" aria-hidden="true"><Glyph name={isOpen ? 'chevron-down' : 'chevron-right'} size={16} /></span>
-            </button>
+            </button></h3>
             <button type="button" class="star" aria-pressed={stars.has(c.id)} aria-label="Đánh dấu {c.term}" title={stars.has(c.id) ? 'Bỏ đánh dấu' : 'Đánh dấu'} onclick={() => stars.toggle(c.id)}><Glyph name={stars.has(c.id) ? 'star-fill' : 'star'} size={20} /></button>
           </div>
           {#if isOpen}
             <div class="entry-body" id="body-{c.id}">
               <blockquote class="quote">{c.definition}</blockquote>
+              <p class="source muted">Nguồn: <cite>{c.source.cite}</cite>{#if c.source.url}{' · '}<a href={c.source.url} target="_blank" rel="noopener">Xem văn bản<span class="sr-only"> (mở tab mới)</span><Glyph name="external" size={14} /></a>{/if}{' · '}đối chiếu {viDate(c.checked)}</p>
               <p>{c.plain}</p>
               <p class="muted"><b>Ví dụ:</b> {c.example}</p>
-              {#if c.note}<p class="note small"><b>Cập nhật luật:</b> {c.note}</p>{/if}
+              {#if c.note}<p class="note"><Glyph name="warn" size={16} /> <b>Cập nhật luật:</b> {c.note}</p>{/if}
               {#if c.confusables.length}
-                <p class="small">Dễ nhầm với:
-                  {#each c.confusables as id, k (id)}{#if k}{', '}{/if}{#if byId[id]}<a href={hashFor('concepts', { subject: subject.id, concept: id })}>{termOf(id)}</a>{:else}{termOf(id)}{/if}{/each}
-                </p>
+                <p class="confuse-h" id="cf-{c.id}">Dễ nhầm với</p>
+                <ul class="confuse-list" aria-labelledby="cf-{c.id}">
+                  {#each c.confusables as id (id)}<li>{#if byId[id]}<a href={hashFor('concepts', { subject: subject.id, concept: id })}>{termOf(id)}</a>{:else}<span>{termOf(id)}</span>{/if}</li>{/each}
+                </ul>
               {/if}
               {#each c.confusables.filter((id) => byId[id] && compareConcepts(c, byId[id])) as id (id)}
                 <details class="cmp-wrap"><summary>So sánh với «{termOf(id)}»</summary><CompareTable a={c} b={byId[id]} /></details>
               {/each}
-              <p class="source muted small">Nguồn: {c.source.cite}{#if c.source.url}{' · '}<a href={c.source.url} target="_blank" rel="noopener">Xem văn bản</a>{/if}{' · '}đối chiếu {c.checked}</p>
             </div>
           {/if}
         </li>

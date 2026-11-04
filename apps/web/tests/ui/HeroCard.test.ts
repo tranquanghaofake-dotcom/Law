@@ -20,7 +20,10 @@ describe('HeroCard', () => {
   it('continue: TIẾP TỤC, môn › đợt, 2/5, nút Học tiếp → đợt', () => {
     const { container } = render(HeroCard, { props: { state: { kind: 'continue', subject, lesson, done: 2, total: 5 } } });
     expect(q(container, '.kicker')?.textContent).toBe('Tiếp tục');
-    expect(container.textContent).toContain('Luật Hiến pháp › Hiến pháp là gì');
+    // H-1: tiêu đề chỉ là tên đợt; tên môn ở dòng phụ, không ghép "Môn › Đợt"
+    expect(q(container, '.headline')?.textContent?.trim()).toBe('Hiến pháp là gì');
+    expect(q(container, '.hero-subj')?.textContent).toBe('Luật Hiến pháp');
+    expect(container.textContent).not.toContain('›');
     expect(container.textContent).toContain('2/5');
     const btn = q(container, 'a.btn.primary');
     expect(btn?.textContent).toContain('Học tiếp');

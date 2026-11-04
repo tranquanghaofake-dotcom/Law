@@ -17,10 +17,12 @@ describe('Profile (thẻ căn cước + 2 tab + 3 phần đóng/mở)', () => {
   it('tab Tổng quan được chọn ở #/toi; có tab Cài đặt trỏ #/cai-dat', async () => {
     stubFetch(); route.name = 'profile';
     const { container } = render(Profile);
-    const tabs = container.querySelectorAll('[role="tab"]');
+    // Hai link điều hướng (không giả làm tablist ARIA): trang hiện tại có aria-current="page"
+    expect(container.querySelectorAll('[role="tab"], [role="tablist"], [role="tabpanel"]')).toHaveLength(0);
+    const tabs = container.querySelectorAll('nav.idc-tabs a');
     expect(tabs).toHaveLength(2);
-    expect(tabs[0].getAttribute('aria-selected')).toBe('true');
-    expect(tabs[1].getAttribute('aria-selected')).toBe('false');
+    expect(tabs[0].getAttribute('aria-current')).toBe('page');
+    expect(tabs[1].hasAttribute('aria-current')).toBe(false);
     expect(tabs[1].getAttribute('href')).toBe('#/cai-dat');
     await waitFor(() => expect(container.querySelector(".idc-title")).not.toBeNull());
   });
@@ -95,7 +97,7 @@ describe('Profile (thẻ căn cước + 2 tab + 3 phần đóng/mở)', () => {
   it('ở #/cai-dat hiện nội dung Cài đặt trong tab (không có các phần Hồ sơ)', async () => {
     stubFetch(); route.name = 'settings';
     const { container } = render(Profile);
-    expect(container.querySelectorAll('[role="tab"]')[1].getAttribute('aria-selected')).toBe('true');
+    expect(container.querySelectorAll('nav.idc-tabs a')[1].getAttribute('aria-current')).toBe('page');
     expect(container.querySelector('.settings')).not.toBeNull();
     expect(container.querySelector('.acc-list')).toBeNull();
     expect(container.textContent).toContain('Xuất dữ liệu'); // khối Dữ liệu (xuất/nhập) ở Cài đặt

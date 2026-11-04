@@ -52,3 +52,15 @@ describe('SessionEnd', () => {
   });
 });
 
+
+describe('SessionEnd — không lặp số liệu (đợt 2)', () => {
+  it('tỉ lệ đúng chỉ ở vòng điểm, không lặp trong danh sách; XP theo nguồn không vẽ thanh trang trí', async () => {
+    const { render } = await import('@testing-library/svelte');
+    const SessionEnd = (await import('$lib/ui/SessionEnd.svelte')).default;
+    const { container } = render(SessionEnd, { props: { summary: { correct: 2, total: 5, xp: 40, levelUps: [], bestCombo: 2 }, sources: [{ key: 'base', label: 'Trả lời đúng', xp: 40 }], record: null, retryTotal: 0, concepts: [], streak: 1, streakEvent: 'started', dueTomorrow: 3, onhome() {} } as never });
+    expect(container.querySelector('.end-ring')?.getAttribute('aria-label')).toContain('40');
+    expect([...container.querySelectorAll('.stat-list dt')].map((d) => d.textContent)).not.toContain('Tỉ lệ đúng');
+    expect(container.querySelector('.xp-sources i')).toBeNull();
+    expect(container.querySelector('.xp-sources')?.textContent).toContain('+40');
+  });
+});

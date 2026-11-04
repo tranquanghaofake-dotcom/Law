@@ -69,4 +69,13 @@ describe('Shell: nút Quay lại', () => {
     const b = render(Shell, { props: { active: 'subject', children } });
     expect(b.container.querySelector('button.back-btn')?.getAttribute('aria-label')).toBe('Quay lại');
   });
+  it('trang có breadcrumb (môn, khái niệm): nút gắn cờ ngay từ đầu để CSS ẩn ở ≥ 768, không chờ breadcrumb tải xong (chống giật)', () => {
+    route.name = 'subject'; route.params = { subject: 'hien-phap' };
+    const a = render(Shell, { props: { active: 'subject', children } });
+    expect(a.container.querySelector('.back-btn')?.classList.contains('has-crumbs')).toBe(true);
+    cleanup();
+    route.name = 'lesson'; route.params = { subject: 'hien-phap', lesson: 'hp-1' };
+    const b = render(Shell, { props: { active: 'subjects', children } });
+    expect(b.container.querySelector('.back-btn')?.classList.contains('has-crumbs')).toBe(false);
+  });
 });
