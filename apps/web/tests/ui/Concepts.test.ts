@@ -1,5 +1,5 @@
-import { describe, expect, it, vi } from 'vitest';
-import { render, waitFor } from '@testing-library/svelte';
+import { afterEach, describe, expect, it, vi } from 'vitest';
+import { cleanup, render, waitFor } from '@testing-library/svelte';
 import type { Concept, Subject } from '$lib/content/types';
 
 const subject: Subject = { id: 'hp', title: 'Luật Hiến pháp', short: 'Hiến pháp', chapters: [{ id: 'c1', title: 'Khái quát', lessons: [
@@ -24,6 +24,7 @@ vi.mock('$lib/router.svelte', () => ({
 const Concepts = (await import('../../src/routes/Concepts.svelte')).default;
 
 describe('Concepts — cấu trúc và deep-link (CL-1, CL-3, CN-1, SJ-2)', () => {
+  afterEach(() => cleanup()); // không có auto-cleanup: tránh trùng id #c-b giữa các lần render
   it('nhóm là h2, tên khái niệm là h3 bọc nút mở; ô bậc có chữ số', async () => {
     const { container } = render(Concepts);
     await waitFor(() => expect(container.querySelector('h1')).not.toBeNull());

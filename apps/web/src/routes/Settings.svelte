@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { tick } from 'svelte';
   import Glyph from '$lib/art/Glyph.svelte';
   import { settings, saveSetting } from '$lib/store/settings.svelte';
   import { repo, parseExport } from '$lib/store/progress-repo';
@@ -22,6 +23,7 @@
   // Nhập dữ liệu hai bước: đọc + tóm tắt file trước, chỉ ghi khi người dùng xác nhận (ghi đè không hoàn tác được).
   let pending = $state<{ json: string; name: string; concepts: number; reviews: number; overwrite: number } | null>(null);
   let err = $state('');
+  let confirmBox = $state<HTMLElement | null>(null);
   async function pickFile(e: Event) {
     const input = e.target as HTMLInputElement;
     const f = input.files?.[0];
@@ -34,8 +36,13 @@
       const ids = new Set((d.concepts ?? []).map((c) => c.conceptId));
       const overwrite = (await repo.all()).filter((c) => ids.has(c.conceptId)).length;
       pending = { json, name: f.name, concepts: ids.size, reviews: d.reviews?.length ?? 0, overwrite };
+      await tick();
+      confirmBox?.focus(); // báo cho bàn phím/trình đọc màn hình biết có bước xác nhận
     } catch (x) {
-      err = x instanceof SyntaxError ? 'File không đúng định dạng JSON.' : (x as Error).message || 'File không hợp lệ.';
+      // chỉ hiện lỗi tiếng Việt do parseExport ném ra; lỗi JS khác (TypeError…) quy về câu chung
+      err = x instanceof SyntaxError ? 'File không đúng định dạng JSON.'
+        : x instanceof TypeError || !(x as Error).message ? 'File không đúng cấu trúc dữ liệu Luyện Luật.'
+        : (x as Error).message;
     }
   }
   async function confirmImport() {
@@ -47,7 +54,7 @@
       await Promise.all([refreshHeader(), refreshSidenav(), refreshShelf()]);
       pending = null;
       msg = `Đã nhập ${p.concepts} khái niệm, ${p.reviews} lượt ôn.`;
-    } catch (x) { pending = null; err = `Không nhập được: ${(x as Error).message}`; }
+    } catch { pending = null; err = 'Không ghi được dữ liệu vào trình duyệt. Tiến độ cũ chưa bị đổi — thử lại hoặc tải lại trang.'; }
   }
 </script>
 
@@ -76,10 +83,9 @@
     <label class="btn ghost plain">Nhập dữ liệu<input type="file" accept="application/json" class="sr-only" onchange={pickFile} /></label>
   </div>
   {#if pending}
-    <div class="import-confirm" role="group" aria-label="Xác nhận nhập dữ liệu">
+    <div class="import-confirm" role="group" aria-label="Xác nhận nhập dữ liệu" tabindex="-1" bind:this={confirmBox}>
       <p>File <b>{pending.name}</b> có <b>{pending.concepts} khái niệm</b> và <b>{pending.reviews} lượt ôn</b>.</p>
-      {#if pending.overwrite}<p class="small"><Glyph name="warn" size={16} /> {pending.overwrite} khái niệm đang có tiến độ trên máy này sẽ bị ghi đè bằng dữ liệu trong file. Không hoàn tác được — nên <button type="button" class="linklike" onclick={exportData}>xuất bản sao lưu</button> trước.</p>
-      {:else}<p class="small muted">Không khái niệm nào trên máy này bị ghi đè.</p>{/if}
+      <p class="small"><Glyph name="warn" size={16} /> Dữ liệu trong file sẽ thay dữ liệu trên máy này: tiến độ của {pending.overwrite} khái niệm trùng, lịch sử ôn, XP và chuỗi ngày, cài đặt (kể cả khái niệm đánh dấu sao). Không hoàn tác được — nên <button type="button" class="linklike" onclick={exportData}>xuất bản sao lưu</button> trước.</p>
       <div class="row">
         <button type="button" class="btn" onclick={confirmImport}>Nhập và ghi đè</button>
         <button type="button" class="btn ghost plain" onclick={() => (pending = null)}>Huỷ</button>

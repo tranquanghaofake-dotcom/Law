@@ -1750,8 +1750,12 @@ body:has(dialog.sheet[open]) { overflow: hidden; }
 /* ---- Đợt UX lớn (checklist ui-ux-pro-max, 04/11/2026) ---- */
 /* Mục lục chương thu gọn: 12 chip chương không còn đẩy đợt học tiếp xuống 3 hàng (SJ-3) */
 .toc { margin: 0 0 var(--sp-3); }
-.toc > summary { display: inline-flex; align-items: center; min-height: var(--ctl-h); padding: 0 var(--sp-3); border: 1px solid var(--line); border-radius: var(--r-sm); background: var(--card); font-size: var(--fs-sm); font-weight: 600; cursor: pointer; }
+.toc > summary { display: inline-flex; align-items: center; gap: var(--sp-2); list-style: none; min-height: var(--ctl-h); padding: 0 var(--sp-3); border: 1px solid var(--line); border-radius: var(--r-sm); background: var(--card); font-size: var(--fs-sm); font-weight: 600; cursor: pointer; }
 .toc[open] > summary { margin-bottom: var(--sp-2); }
+.toc > summary::-webkit-details-marker { display: none; }
+/* thay tam giác mặc định (mất khi summary là flex) bằng chevron xoay theo trạng thái */
+.toc > summary::before { content: ""; width: 7px; height: 7px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(-45deg); transition: transform .15s; }
+.toc[open] > summary::before { transform: rotate(45deg); }
 .toc .local-nav { margin-bottom: 0; }
 /* Một lối quay lại mỗi kích cỡ (SJ-5): điện thoại dùng nút Quay lại, ≥ 768 dùng breadcrumb */
 @media (max-width: 767px) { .crumbs { display: none; } }
@@ -1773,7 +1777,9 @@ body:has(dialog.sheet[open]) { overflow: hidden; }
 .entry-body .note .glyph { vertical-align: -3px; color: var(--seal); }
 /* Tóm tắt "So sánh với…": vùng bấm cao bằng nút, focus ring chung (CN-5) */
 .cmp-wrap > summary { display: flex; align-items: center; min-height: var(--ctl-h); border-radius: var(--r-sm); }
-/* Phương án đã khoá sau khi trả lời vẫn đọc lại được (≥ 4.5:1 thay vì .45) */
+/* Phương án đã khoá sau khi trả lời vẫn đọc lại được (chữ ≈ 6,4:1 thay vì 2,78:1 ở .45) */
 .opt.dim { opacity: .72; }
+.opt.dim .key { color: var(--ink); } /* ký tự A–D không mờ hai lần (muted × opacity) */
+.import-confirm:focus { outline: 2px solid var(--focus); outline-offset: 2px; }
 /* Thanh trượt Cài đặt: màu thương hiệu, vùng chạm cao bằng nút (P2 nhóm B) */
 .settings input.range { accent-color: var(--accent); min-height: var(--ctl-h); min-width: 160px; cursor: pointer; }

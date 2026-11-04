@@ -1,5 +1,5 @@
-import { describe, expect, it, vi, beforeEach } from 'vitest';
-import { fireEvent, render, waitFor } from '@testing-library/svelte';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
+import { cleanup, fireEvent, render, waitFor } from '@testing-library/svelte';
 
 const importAll = vi.fn(async () => {});
 vi.mock('$lib/store/progress-repo', async (orig) => {
@@ -21,12 +21,15 @@ const pick = (input: HTMLInputElement, text: string) => {
 
 describe('Cài đặt — Nhập dữ liệu (P1 nhóm B)', () => {
   beforeEach(() => importAll.mockClear());
+  afterEach(() => cleanup());
   it('chọn file chưa ghi ngay: hiện tóm tắt + số khái niệm sẽ bị ghi đè, chờ xác nhận', async () => {
     const { container, getByRole } = render(Settings);
     await pick(container.querySelector('input[type=file]')!, good);
     await waitFor(() => expect(container.textContent).toContain('2 khái niệm'));
     expect(container.textContent).toContain('3 lượt ôn');
-    expect(container.textContent).toMatch(/1 khái niệm .*ghi đè/);
+    expect(container.textContent).toMatch(/1 khái niệm trùng/);
+    // ghi đè không chỉ khái niệm: XP, chuỗi, cài đặt, lịch sử ôn cũng bị thay (dexie bulkPut stats/settings/reviews)
+    expect(container.textContent).toMatch(/lịch sử ôn, XP và chuỗi ngày, cài đặt/);
     expect(importAll).not.toHaveBeenCalled();
     await fireEvent.click(getByRole('button', { name: /Nhập và ghi đè/ }));
     await waitFor(() => expect(importAll).toHaveBeenCalledTimes(1));
@@ -39,6 +42,12 @@ describe('Cài đặt — Nhập dữ liệu (P1 nhóm B)', () => {
     await fireEvent.click(getByRole('button', { name: 'Huỷ' }));
     expect(importAll).not.toHaveBeenCalled();
     expect(container.textContent).not.toContain('Nhập và ghi đè');
+  });
+  it('lỗi JS lạ (TypeError) không hiện tiếng Anh cho người dùng', async () => {
+    const { container } = render(Settings);
+    await pick(container.querySelector('input[type=file]')!, '{"v":1,"concepts":[null]}');
+    await waitFor(() => expect(container.querySelector('[role=alert]')?.textContent).toContain('không đúng cấu trúc dữ liệu Luyện Luật'));
+    expect(container.querySelector('[role=alert]')?.textContent).not.toMatch(/Cannot|null|reading/);
   });
   it('file sai định dạng: báo lý do cụ thể, không hỏi xác nhận', async () => {
     const { container } = render(Settings);
