@@ -1,6 +1,6 @@
 # Bảng tiêu chí audit giao diện — Luyện Luật
 
-Chưng cất từ `impeccable` (IMP-*) và `taste-skill` (TS-*). Đối tượng: **app** (màn học, quiz, hồ sơ), mobile-first, PWA, Svelte 5, tiếng Việt có dấu, có game hoá. Mode impeccable = **Operate** (+ Read cho màn định nghĩa luật). Mỗi mục kiểm được bằng ảnh chụp (390 px + 1280 px) hoặc đọc code; cột cuối ghi cách kiểm: [A]=ảnh, [C]=code.
+Chưng cất từ [`impeccable`](https://github.com/pbakaus/impeccable) (IMP-*, `.claude/skills/impeccable/`) và [`taste-skill`](https://github.com/leonxlnx/taste-skill) (TS-*, `skills/taste-skill/`), bản clone ngày 04/11/2026. Đối tượng: **app** (màn học, quiz, hồ sơ), mobile-first, PWA, Svelte 5, tiếng Việt có dấu, có game hoá. Mode impeccable = **Operate** (+ Read cho màn định nghĩa luật). Mỗi mục kiểm được bằng ảnh chụp (390 px + 1280 px) hoặc đọc code; cột cuối ghi cách kiểm: [A]=ảnh, [C]=code.
 Cách trích: `IMP-B3`, `TS-T4`, `VN-2`. Mức nặng mặc định khi vi phạm: xem mục 1.3.
 
 **Đã bỏ** (chỉ cho native/landing/marketing/công cụ chạy script): mode Persuade/Experience, iOS/Android, adapt cho email/print, live/generate/overdrive/bolder; taste: `draw.mjs`, hero blueprint, scroll scene, preloader/counter/cursor/Lenis, đếm ảnh thật ≥4, "live thing", logo/competitor test, Awwwards cap về ảnh/motion trang, quy tắc font `<link>` từ direction sheet, mọi lệnh `inspect/lint/detect` (không chạy được, thay bằng ảnh + đọc code).
@@ -67,10 +67,11 @@ Casey (mobile, một tay, hay bị ngắt: nút chính vùng ngón cái, tiến 
 ### 2.5 "Floor" kiểm trên bản dựng (craft-floor "Verify", IMP-V*)
 V1 contrast chữ thân ≥4.5, placeholder ≥4.5, chữ lớn ≥3; chữ trên nền màu tô theo hue nền, không xám · V2 bóng có offset + blur mềm; halo zero-offset là trang trí · V3 spacing: nhóm chặt, tách rộng, trên tiêu đề > dưới · V4 type: measure 65–75ch (45–75 chấp nhận), tracking ≥ -0.04em, heading `balance`, bước size/weight rõ; chạy nội dung thật mọi breakpoint · V5 motion: tối đa một khoảnh khắc có chủ đích; ease-out mũ; không cùng một entrance cho mọi khối · V6 states: hover, disabled, loading, error, empty + focus bàn phím + nội dung thật · V7 browser surfaces: `::selection`, caret, scrollbar, focus ring, `text-underline-offset`, `tabular-nums` được theme theo palette · V8 copy: nút nêu hành động, lỗi nêu vấn đề + cách sửa · V9 coverage: mọi yêu cầu của spec có mặt và tìm được trong vài giây.
 
-### 2.6 "AI slop" / bans (craft-floor "Refuse", nguyên văn rút gọn). IMP-B1…B16
+### 2.6 "AI slop" / mặc định cần tránh (craft-floor "Refuse"; gốc: "defaults, not bans", chỉ B3 là cấm thật). IMP-B1…B16
+Gốc `craft-floor.md` (dòng 20): đây là mặc định của category, không phải lệnh cấm; brief có thể "chuộc" lại từng mục. Dùng mã B* để trích, nhưng chỉ coi là vi phạm khi chọn theo phản xạ, không có quyết định thiết kế. Riêng B3 gốc ghi "This one is a ban, not a default".
 - **B1** Thẻ cùng cỡ icon+tiêu đề+chữ làm cấu trúc trang; card lồng card luôn sai. [A]
 - **B2** Hero-metric template: số lớn, nhãn nhỏ, stat phụ, accent. [A]
-- **B3** Kicker/eyebrow phía trên heading — **cấm tuyệt đối**, không brief nào chuộc lại. [A][C]
+- **B3** Kicker/eyebrow phía trên heading. Đây là mục DUY NHẤT gốc ghi là cấm thật ("a ban, not a default": không brief nào chuộc lại). [A][C]
 - **B4** Số section 01/02/03 trừ khi thứ tự mang thông tin. [A]
 - **B5** Modal cho tác vụ không cần ngắt/khoá focus. [A]
 - **B6** Gradient text; nhấn bằng weight/size. [A]
@@ -111,7 +112,7 @@ V1 contrast chữ thân ≥4.5, placeholder ≥4.5, chữ lớn ≥3; chữ trê
 - TS-X12 Dashboard giả từ thanh xám/donut. [A]
 - TS-X13 Chấm trạng thái trang trí (pulsing "live"). [A][C]
 - TS-X14 Fade-and-rise ở mọi khối. [C]
-- TS-X15 Nền kem vàng + terracotta/rust (cấm đi cặp; riêng terracotta cũng cấm). [A]
+- TS-X15 Nền kem vàng + terracotta/rust. Gốc `tells.md`: đi cặp = banned (inspect.mjs FAIL); terracotta riêng = banned; kem riêng = warned; `colour.md`: "either half alone is suspect". Giữ theo `tells.md`. Màu thuộc brand thì ghi [BRAND], xem X3. [A]
 - TS-X16 Serif display/nghiêng lớn như đường tắt cho "cao cấp". [A]
 - TS-X17 Broadsheet cosplay: hairline khắp nơi, bo 0, cột dày. [A]
 - TS-X18 Mono micro-label; đánh số chỉ mục 01/02, "Bước 02" (chỉ cho phép khi là dữ liệu như hạng "1."). [A]
@@ -206,10 +207,10 @@ V1 contrast chữ thân ≥4.5, placeholder ≥4.5, chữ lớn ≥3; chữ trê
 - TS-P9 Điện thoại là bố cục riêng, không phải desktop bị bóp; không cuộn ngang. [A]
 
 ### 3.9 Pre-flight (SKILL.md "Gate/Look" + `app-screens.md` §2.7 + `critique.md`, rút gọn cho ảnh/code)
-- TS-F1 Mỗi `FAIL` thuộc "banned" ở 3.1 = P1; mỗi "warned" không biện minh được bằng một câu = P2.
+- TS-F1 Quy ước CỦA BẢN AUDIT NÀY (gốc taste-skill chỉ có FAIL/WARN của inspect.mjs, không có P0–P3): tell "banned" ở 3.1 = P1; "warned" không biện minh được bằng một câu = P2. Ngoại lệ đã chốt: eyebrow (X12) = P2 dù "banned".
 - TS-F2 Bảy câu trả lời bằng văn bản cho app: (1) khối lớn nhất trả lời câu hỏi của màn? (2) khối nào cũng chạm mép, có dải chết/ô mồ côi/thẻ kéo dãn? (3) màu chỉ trên dữ liệu/trạng thái/nút chính, dữ liệu chính mang hue? (4) số có cộng đúng, thẳng hàng, mọi số lặp hai lần có khớp? (5) zero giống zero, thiếu giống thiếu, badge đúng chỗ? (6) legend khớp mark, nhãn không đè? (7) điện thoại: nav gập, mỗi khối vẫn trả lời câu hỏi?
 - TS-F3 14 lượt nhìn (`critique.md`) áp dụng được: 1s/5s (nhìn là biết đây là gì), 2 squint, 4 cạnh trái, 5 không gian và khung, 6 type, 7 màu, 9 sameness (mỗi section bố cục khác?), 10 điện thoại, 12 substance (đủ thông tin), 13 collision (không gì đè tiêu đề/nút, không tràn mép). Bỏ lượt 3, 8, 11, 14 (cover-logo, ảnh, fullness kiểu poster, đối thủ).
-- TS-F4 Điểm: design 40% · usability 30% · creativity 20% · content 10% (thang 1–10, trung bình dự án thật ≈7–8). Caps dùng được cho app: tiêu đề ≥3 dòng/eyebrow/mono/đánh số/gradient/hairline trang trí/bóng ở trạng thái nghỉ → tổng ≤6.5; lề không đều/dải trống >nửa màn → design ≤6.5; placeholder/lorem → content ≤5; không nút thật cho hành động chính ở màn đầu → usability ≤7; 5 giây không biết đây là gì → usability ≤6; thứ gì đè lên tiêu đề → usability ≤6; dải trắng do reveal lỗi/nội dung bị cắt → usability ≤5.
+- TS-F4 Điểm: design 40% · usability 30% · creativity 20% · content 10% (thang 1–10, trung bình dự án thật ≈7–8). Caps dùng được cho app: tiêu đề ≥3 dòng/eyebrow/mono/đánh số/gradient/hairline trang trí/bóng ở trạng thái nghỉ → tổng ≤6.5; lề không đều/dải trống >nửa màn → design ≤6.5; placeholder/lorem → content ≤5; không nút thật cho hành động chính ở màn đầu → usability ≤7; 5 giây không biết đây là gì → usability ≤6; đoạn văn chạy không có heading đặt tên → usability ≤7; thứ gì đè lên tiêu đề → usability ≤6; dải trắng do reveal lỗi/nội dung bị cắt → usability ≤5.
 - TS-F5 Thứ tự sửa: ý tưởng → hierarchy → bố cục → type → màu → chi tiết (state, focus) → motion. Tối đa ba vòng; vòng ba vẫn <7.5 phải nói thẳng.
 
 ---
@@ -219,7 +220,7 @@ V1 contrast chữ thân ≥4.5, placeholder ≥4.5, chữ lớn ≥3; chữ trê
 |---|---|---|
 | X1 | Viền/đường 1px: TS house rule cấm; TS app-screens cho phép (1.1–1.3:1, hoặc bóng, không cả hai); impeccable chỉ cấm viền màu >1px | **App → dùng TS-A (app-screens).** Viền 1px trung tính chấp nhận; chỉ phạt hairline trang trí, viền màu `border-left` >1px (IMP-B8), viền+bóng cùng lúc. |
 | X2 | Bóng: IMP-V2 "bóng có offset+blur mềm"; TS cấm bóng ở trạng thái nghỉ | Bóng chỉ cho thứ nổi (menu, popover, dialog); thẻ nghỉ ≤ blur nhỏ <8% đen; halo zero-offset và hard-offset đều phạt. |
-| X3 | Màu: IMP-operate "chỉ xám + một accent là mặc định category, hãy có palette cam kết" ↔ TS "màu trên dữ liệu, không trên chrome, nút near-black" | CLAUDE.md dự án **cố định** palette "Văn Miếu" (brief thắng, IMP "The brief wins", TS `--keep palette`): KHÔNG chấm palette. Chỉ chấm cách dùng: một họ accent/màn (TS-C9), accent không trên heading/icon trang trí (TS-C3), contrast (TS-C5/IMP-K4). Nếu "Văn Miếu" là nền kem + đỏ/đất nung thì ghi chú TS-X15 là ngoại lệ do brand, không trừ điểm. |
+| X3 | Màu: IMP-operate "chỉ xám + một accent là mặc định category, hãy có palette cam kết" ↔ TS "màu trên dữ liệu, không trên chrome, nút near-black" | Theo lệnh chủ dự án: CHẤM cả palette/brand ("Văn Miếu"). Phát hiện về brand (chọn hue, kem/đất nung, tỉ lệ accent, nút chính màu brand…) vẫn ghi đầy đủ nhưng gắn nhãn **[BRAND]**, gom vào mục [BRAND] riêng của README và KHÔNG trừ điểm từng màn (tránh phạt lặp một quyết định brand ở mọi màn). Phần cách dùng màu (một họ accent/màn TS-C9, accent không trên heading/icon trang trí TS-C3, contrast TS-C5/IMP-K4) vẫn chấm và trừ điểm bình thường theo từng màn. Gốc IMP "The brief wins" và TS `--keep palette` chỉ nói không ép đổi brand; không cấm nêu nhận xét. |
 | X4 | Cỡ chữ thân: IMP-T1 ≥16px; TS-T4 app thân 13–16px, nhãn 11–12px | Nội dung đọc (định nghĩa luật, câu quiz, giải thích) **≥16px**; UI dày (nhãn, meta, bảng) ≥13px, tuyệt đối ≥12px; <11px = P1. |
 | X5 | Thang cỡ: TS page "≤5 cỡ, cách xa" ↔ TS app "4–9 cỡ" ↔ IMP-Operate "tỉ số 1.125–1.2, nhiều bước hơn brand" | Dùng 4–9 cỡ, bước phân biệt được bằng mắt; hai cỡ gần như nhau thì gộp. |
 | X6 | Display leading/tracking: TS-T "leading 0.85–1.05, tracking -0.035em" ↔ **tiếng Việt có dấu chồng** | **Ghi đè (VN-2):** tiêu đề leading ≥1.2, thân ≥1.45, không tracking dưới -0.02em; không dùng leading <1 vì dấu bị cắt/đè dòng trên. Tiêu đề app cỡ 18–32px nên đây không phải hy sinh lớn. |
