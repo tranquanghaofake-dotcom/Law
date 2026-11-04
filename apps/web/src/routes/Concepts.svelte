@@ -76,6 +76,7 @@
     <SubjectArt name={PAGE_ART.concepts} class="head-art" />
     <h1>Khái niệm · {subject.short}</h1>
     <p class="muted">{total} khái niệm. Bấm vào tên để xem định nghĩa nguyên văn, căn cứ và khái niệm dễ nhầm.</p>
+    <LegalNote compact />
   </header>
 
   <div class="concept-tools">
@@ -128,4 +129,3 @@
     </ul>
   {/each}
 {/if}
-<LegalNote />

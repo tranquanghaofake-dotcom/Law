@@ -81,6 +81,14 @@ Nhóm này đi ngược mặc định của hai bộ skill nhưng là chủ đí
 - **Tranh kiến trúc Việt Nam và bìa sách thật.** Cả hai nhóm đều coi đây là điểm mạnh: đặc thù sản phẩm, không generic (IMP-A5 đạt).
 - **Kết luận brand:** giữ hệ hình ảnh. Nên làm dịu chrome sidebar (`/impeccable quieter`) và đổi accent cho focus ring (HT3) mà không phải bỏ palette.
 
+## Trạng thái sửa (04/11/2026)
+
+- **Đợt 1 — đã sửa:** HT1, HT2, HT3, HT11. Chi tiết ở `docs/plans/2026-11-04-audit-ui.md`.
+- **Đợt 2 — đã sửa:** HT4, HT5, HT7, HT9, HT10. Còn ba món nợ kỹ thuật:
+  - **HT7:** chữ tên môn trên gáy sách ở tủ sách Hồ sơ vẫn 7–11,5 px. Giới hạn nằm ở `lib/ui/bookcase.ts` (`spineFont`). Đây là nhãn nhìn thấy duy nhất của nút gáy sách; tên đầy đủ chỉ hiện trong sheet sau khi bấm. Muốn sửa phải rút gọn `short` hoặc làm gáy rộng hơn, tức là việc thiết kế, để sang đợt 3.
+  - **HT5:** `lib/art/StreakCard.svelte` dùng SMIL `<animate repeatCount="indefinite">`. CSS giảm chuyển động không tắt được loại này, phải chặn bằng JS theo setting. Lỗi có từ trước đợt sửa.
+  - **HT5:** các vòng lặp báo trạng thái được giữ nguyên có chủ ý: lửa chuỗi, các `cg-*` trên thẻ chuỗi, thanh lửa trong phiên, ComboMeter, ánh sáng câu vàng, chức kế tiếp (`orgnext`).
+
 ## Thứ tự sửa đề xuất (cần Hào duyệt từng đợt)
 
 1. **Đợt `fix/`:** HT1, HT2, HT3, HT11. Đây là lỗi bàn phím, focus và request sai; ít rủi ro, sửa nhiều file nhưng nhỏ.

@@ -8,6 +8,7 @@
   import { feedbackSpeech } from './session/speech';
   import { LEVEL_NAMES } from '$lib/game/levels';
   import WhyPanel from './WhyPanel.svelte';
+  import LegalNote from './LegalNote.svelte';
   import CompareTable from './CompareTable.svelte';
   let { result, item, concept, confusableTerms = [], confusables = [], compareWith = null, onnext, onspeak, last = false, xp = 0, golden = false, levelTo = null, retry = false }: {
     result: AnswerResult; item: StepItem; concept: Concept; confusableTerms?: string[];
@@ -47,6 +48,7 @@
   {#if compareWith}<details class="cmp-wrap" open={!result.correct}><summary>So sánh «{concept.term}» và «{compareWith.term}»</summary><CompareTable a={concept} b={compareWith} /></details>{/if}
   {#if retry}<p class="muted small">Vòng sửa sai: câu này không ghi vào tiến độ nhớ, chỉ để bạn gỡ lại.</p>{/if}
   <p class="source muted">Nguồn: {source.cite}{#if source.url} · <a href={source.url} target="_blank" rel="noopener">Xem văn bản</a>{/if}</p>
+  <LegalNote compact />
   {#if !result.correct && confusableTerms.length && !confusables.length}<p class="muted">Dễ nhầm với: <b>{confusableTerms.join(', ')}</b></p>{/if}
   <button class="btn" type="button" data-next onclick={onnext} use:focusOnMount>{last ? 'Xem kết quả' : 'Câu tiếp →'} <kbd>↵</kbd></button>
 </div>
