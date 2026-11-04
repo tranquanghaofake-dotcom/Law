@@ -1746,3 +1746,21 @@ body:has(dialog.sheet[open]) { overflow: hidden; }
 .sheet-grip { display: block; width: 40px; height: 5px; margin: 8px auto 0; border-radius: 999px; background: color-mix(in srgb, var(--muted) 45%, transparent); }
 .sheet-card { will-change: transform; }
 @media (min-width: 768px) { .sheet-grip { display: none; } .sheet-drag { touch-action: auto; } }
+
+/* ---- Đợt UX lớn (checklist ui-ux-pro-max, 04/11/2026) ---- */
+/* Mục lục chương thu gọn: 12 chip chương không còn đẩy đợt học tiếp xuống 3 hàng (SJ-3) */
+.toc { margin: 0 0 var(--sp-3); }
+.toc > summary { display: inline-flex; align-items: center; min-height: var(--ctl-h); padding: 0 var(--sp-3); border: 1px solid var(--line); border-radius: var(--r-sm); background: var(--card); font-size: var(--fs-sm); font-weight: 600; cursor: pointer; }
+.toc[open] > summary { margin-bottom: var(--sp-2); }
+.toc .local-nav { margin-bottom: 0; }
+/* Một lối quay lại mỗi kích cỡ (SJ-5): điện thoại dùng nút Quay lại, ≥ 768 dùng breadcrumb */
+@media (max-width: 767px) { .crumbs { display: none; } }
+@media (min-width: 768px) { main:has(> .crumbs) > .back-btn { display: none; } }
+/* Tranh đầu trang môn không còn nằm sau tiêu đề ở điện thoại (SJ-4) */
+@media (max-width: 599px) { .subject-head .head-art { display: none; } }
+/* Gợi ý đợt tiếp: tối đa 2 dòng thay vì cắt 1 dòng (SJ-4) */
+.subject-head .next-hint { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; white-space: normal; max-width: 36ch; }
+/* Tên khái niệm trong chip đợt xuống dòng, không cắt "…" (SJ-8) */
+.cell-term { overflow: visible; text-overflow: clip; white-space: normal; overflow-wrap: anywhere; }
+/* Tranh thẻ chính không lấn vào chữ ở ≥ 1100 (chữ ≤ 50 %, tranh bắt đầu sau 50 %) */
+@media (min-width: 1100px) { .stage-art, .page-head .head-art, .subject-head .head-art { width: 50%; } }
