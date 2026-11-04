@@ -264,7 +264,7 @@
         {:else if step.meta?.kind === 'boss'}<p class="step-badge boss">Câu chốt</p>{/if}
         {#if pretest}<PretestBar answered={!!result} onskip={skipPretest} />{/if}
         {#key run.i}
-          <Card {concept} item={step.item} meta={step.meta} {rng} {onanswer} onspeak={speak} mode={clozeMode} />
+          <div class="step-in"><Card {concept} item={step.item} meta={step.meta} {rng} {onanswer} onspeak={speak} mode={clozeMode} /></div>
         {/key}
       </div>
       {#if result}

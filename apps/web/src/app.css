@@ -211,7 +211,7 @@ h2 { font-size: var(--fs-xl); line-height: var(--lh-snug); font-weight: 700; mar
 /* ---- Thanh phiên ---- */
 .session-bar { display: flex; align-items: center; gap: var(--sp-3); margin: var(--sp-1) 0 var(--sp-4); }
 .session-bar .progress { position: relative; flex: 1; height: 8px; background: var(--line); border-radius: 999px; }
-.session-bar .progress span { display: block; height: 100%; background: var(--accent); border-radius: inherit; transition: width var(--dur-2) var(--ease-out); }
+.session-bar .progress span { display: block; height: 100%; background: var(--accent); border-radius: inherit; transition: width var(--dur-3) var(--ease-in-out); }
 /* mốc trên thanh tiến độ: câu chốt (son), vòng sửa sai (xanh), câu vàng đã qua (vàng) */
 .session-bar .progress .mark { position: absolute; top: 50%; width: 4px; height: 16px; border-radius: 2px; background: var(--muted); transform: translate(-50%, -50%); pointer-events: none; opacity: .9; }
 .session-bar .progress .mark.boss { background: var(--seal); width: 6px; height: 20px; }
@@ -1690,3 +1690,13 @@ body:has(dialog.sheet[open]) { overflow: hidden; }
 ::view-transition-group(page) { animation-duration: var(--dur-3); }
 @keyframes vt-out { to { opacity: 0; transform: translateY(-6px); } }
 @keyframes vt-in { from { opacity: 0; transform: translateY(14px); } }
+
+/* ---- Phản hồi khi trả lời (đợt 10) ---- */
+/* câu mới trượt vào từ phải (chỉ transform/opacity) */
+.step-in { animation: step-in var(--dur-3) var(--ease-out) both; }
+@keyframes step-in { from { opacity: 0; transform: translateX(24px); } }
+/* đáp án đúng: vệt viền xanh chạy quanh rồi tan; sai giữ rung có sẵn (shake) */
+.opt { position: relative; }
+.opt.correct::after, .opt.locked::after { content: ""; position: absolute; inset: -4px; border-radius: calc(var(--r-md) + 4px); border: 2px solid var(--ok); box-shadow: 0 0 14px color-mix(in srgb, var(--ok) 45%, transparent); pointer-events: none; animation: okring .9s var(--ease-out) both; }
+@keyframes okring { 0% { clip-path: inset(0 100% 0 0); opacity: 1; } 55% { clip-path: inset(0 0 0 0); opacity: 1; } 100% { clip-path: inset(0 0 0 0); opacity: 0; } }
+.opt.correct, .opt.locked { animation: pop .35s var(--ease-spring); }
