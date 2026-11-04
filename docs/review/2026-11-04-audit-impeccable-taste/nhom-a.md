@@ -1,13 +1,13 @@
 # Audit giao diện Luyện Luật — nhóm A (6 màn + phần chung)
 
-Người chấm: S1. Phạm vi: `#/`, `#/mon`, `#/mon/hien-phap`, `#/mon/hien-phap/khai-niem`, `#/mon/hien-phap/khai-niem/chu-quyen-nhan-dan`, `#/luyen-de` + Shell/nav/token. Bộ tiêu chí: `criteria.md` (impeccable + taste-skill). Chấm thẳng, không miễn trừ "Văn Miếu"; phát hiện đụng palette/brand gắn **[BRAND]**.
+Người chấm: S1. Phạm vi: `#/`, `#/mon`, `#/mon/hien-phap`, `#/mon/hien-phap/khai-niem`, `#/mon/hien-phap/khai-niem/chu-quyen-nhan-dan`, `#/luyen-de` + Shell/nav/token. Bộ tiêu chí: `tieu-chi.md` (impeccable + taste-skill). Chấm thẳng, không miễn trừ "Văn Miếu"; phát hiện đụng palette/brand gắn **[BRAND]**; các mục này dẫn về mục [BRAND] của [README](README.md) và **không trừ điểm màn**.
 
 ## 0. Cách đo và giới hạn (đọc trước)
 
 - **Detector impeccable KHÔNG chạy được** (bị chặn). IMP-A5 chấm bằng đọc code + ảnh. Không chạy script nào trong `ext/`.
-- Ảnh: `shots/<390|1280>-light-<màn>.png`; ảnh dark chỉ xác nhận **web không có dark mode** (`app.css:3` `color-scheme: light`, chủ dự án chủ động bỏ). Vì vậy IMP-A3 chấm theo mức dùng token, không trừ vì thiếu dark.
+- Ảnh: [anh/](anh/) (`shots-<390|1280>-light-<màn>.webp`); ảnh dark chỉ xác nhận **web không có dark mode** (`app.css:3` `color-scheme: light`, chủ dự án chủ động bỏ). Vì vậy IMP-A3 chấm theo mức dùng token, không trừ vì thiếu dark.
 - **Probe cũ (`probe.json`) cho dương tính giả**: contrast "1.00 / 1.31" xuất hiện ở `.chip`, `.lbl`, `.next-tag`, `.tk-st`, `.cmp-a`… là do Chromium trả màu dạng `color(srgb …)` (kết quả `color-mix`) mà regex `rgba()` đọc sai. **Đã xác minh lại** bằng script mới `verify-a.cjs` (chuẩn hoá màu qua canvas, trộn alpha qua chuỗi tổ tiên, nền gradient lấy mẫu pixel thật): **0 lỗi contrast chữ** trên 6 màn × 2 viewport (thấp nhất 4,86:1 ở chip "Mới"). Bằng chứng: `verify-a.json`.
-- Đã xác minh bằng Playwright/Chromium: contrast, kích thước target, thứ tự Tab + kiểu focus ring, reflow ở 320 px và 640 px (≈ zoom 200 % của 1280), số request mạng (`net-a.cjs`), emulate `prefers-reduced-motion`, danh sách animation chạy, font nạp (`document.fonts`).
+- Đã xác minh bằng Playwright/Chromium: contrast, kích thước target, thứ tự Tab + kiểu focus ring, reflow ở 320 px và 640 px (≈ zoom 200 % của 1280), số request mạng (`net-a.cjs`, `net2.cjs`), emulate `prefers-reduced-motion`, danh sách animation chạy, font nạp (`document.fonts`).
 - **Chưa xác minh / không phủ**: (1) mọi trạng thái **có dữ liệu** (hero `due/continue/next/done`, danh sách "Khái niệm khó", chip "Đang học", tem điểm trên phiếu đề, `.note` Cập nhật luật) — ảnh chỉ có first-run rỗng; (2) rail phải ≥ 1440 px (`HomeRail/SubjectRail/QuizRail`) chưa chụp, chỉ đọc code; (3) máy thật/cảm ứng thật, trình đọc màn hình thật, offline/SW; (4) hover/pressed.
 - Dòng số trong báo cáo là dòng tôi đã mở xem.
 
@@ -15,43 +15,43 @@ Người chấm: S1. Phạm vi: `#/`, `#/mon`, `#/mon/hien-phap`, `#/mon/hien-ph
 
 ## 1. Phần chung (Shell / nav / token) — để các màn khỏi lặp lại
 
-**Implementation Integrity verdict: ĐẠT (có điều kiện).** Hệ thống mạch lạc và rất đặc thù sản phẩm (tranh kiến trúc VN, bìa sách thật, vé đề thi, thang token 4/8/12 và cỡ chữ). Không có drift giữa token và component. Điều kiện: 4 lỗi hệ thống P1 bên dưới.
+**Implementation Integrity verdict: ĐẠT (có điều kiện).** Hệ thống mạch lạc và rất đặc thù sản phẩm (tranh kiến trúc VN, bìa sách thật, vé đề thi, thang token 4/8/12 và cỡ chữ). Không có drift giữa token và component. Điều kiện: các lỗi hệ thống HT2, HT3 (P1) và 4 lỗi P1 riêng của màn (SJ-1, SJ-2, CL-1, CN-1).
 
 Điểm tham chiếu cho phần chung: A1 3 · A2 3 · A3 3 · A4 3 · A5 3 = **15/20 (Good)**.
 
 ### Phát hiện dùng chung
 
-**C1 — P1 — Giảm chuyển động tắt sạch mọi animation/transition.** `app.css:106-110` (`:root:not(.motion-on) * { animation:none !important; transition:none !important }`). Đã xác minh: emulate `reduce` → `.ticket` `transition-duration: 0s`; ngược lại ở chế độ thường trang Hôm nay chạy 6 animation vô hạn trang trí (`kit-farcloud, sunspin, drift, sway×2, kit-sweep`) không truyền trạng thái. Mã: IMP-A1, IMP-M7, X11; TS-X13/M5. Tác động: người bật reduce mất cả phản hồi đổi màu/độ mờ; người không bật phải xem 6 vòng lặp mây/mặt trời. Giảm nhẹ: có công tắc `motion-on` ở Cài đặt (`App.svelte:32-35`). Sửa: nhánh reduce chỉ bỏ `transform`/vòng lặp, giữ `opacity/color/border` ≤150 ms; vòng lặp tranh trang trí tạm dừng khi ngoài màn hình. Lệnh: `/impeccable animate` + `/impeccable harden`.
+**C1 — xem HT4 (P2) và HT5 (P2) trong [README](README.md).** Bằng chứng nhóm A: emulate `reduce` → `.ticket` `transition-duration: 0s`; Hôm nay chạy 6 animation vô hạn (`kit-farcloud, sunspin, drift, sway×2, kit-sweep`). Mức P theo README (trước đó tôi ghi P1).
 
-**C2 — P1 — Đổi route không quản lý focus/thông báo.** `lib/router.svelte.ts` (handler `hashchange`) chỉ `window.scrollTo(0,0)`; `Shell.svelte:46` có `<main id="main" tabindex="-1">` nhưng không ai focus nó; grep `\.focus\(` trong `src/` = 0 kết quả; `.loading` không có `role="status"` (`Home.svelte:91`, `Subjects.svelte:72`…). Mã: IMP-A1, WCAG 2.4.3/4.1.3. Tác động: người dùng bàn phím mất focus (liên kết vừa bấm biến mất → focus về `body`), người dùng đọc màn hình không được báo đã sang trang. Đã xác minh bằng đọc code + grep (chưa thử bằng trình đọc màn hình). Sửa: sau khi trang render, focus `h1` (thêm `tabindex="-1"`) hoặc cập nhật vùng `aria-live` với `document.title`. Lệnh: `/impeccable harden`.
+**C2 — xem HT2 (P1) trong [README](README.md).** Bằng chứng nhóm A: `router.svelte.ts` (handler `hashchange`) chỉ `window.scrollTo(0,0)`; `Shell.svelte:46` có `<main tabindex="-1">` nhưng không ai focus nó. Grep `\.focus\(` trong `src/` chỉ có 2 kết quả, `Feedback.svelte:26` và `BossIntro.svelte:8`, đều là focus cục bộ trong phiên học, không phải khi đổi route; kết luận giữ nguyên. `.loading` không có `role="status"` (`Home.svelte:91`, `Subjects.svelte:72`). Chưa thử bằng trình đọc màn hình.
 
-**C3 — P2 — Focus ring màu accent < 3:1.** `app.css:116` `outline: 3px solid var(--accent)`; accent `#d97a1e` trên `--paper` = **2,83:1**, trên thẻ trắng 3,11:1 (đo bằng màu tính toán). Mã: IMP-K4, IMP-A1 (WCAG 1.4.11). Ring 3 px + offset 2 px nên vẫn thấy, nhưng dưới ngưỡng trên nền giấy (nền của đa số trang). Ngoại lệ tốt: `a.sug-t` ring qua `::after` (`app.css:519-521`). `summary` không được phủ bởi selector ring (xác minh: `outline: auto 1px #101010`, trình duyệt mặc định) — lệch kiểu. Sửa: ring `--ink` 2 px + offset (14,5:1), thêm `summary:focus-visible`. Lệnh: `/impeccable polish`.
+**C3 — xem HT3 (P1) trong [README](README.md).** Bằng chứng nhóm A: accent `#d97a1e` trên `--paper` 2,83:1, trên thẻ trắng 3,11:1 (màu tính toán); `summary` dùng ring mặc định (`outline: auto 1px #101010`, `Concepts.svelte:117`).
 
-**C4 — P1 — Chữ < 11 px ở sidebar ≥ 1280 trên mọi màn.** `app.css:175` `.me-sub` 10,5 px (“0 sách · 0 cấp 3”); `app.css:185` `.me-next-t` 11,5 px; đo thực tế DOM: 10,5 và 11,5 xuất hiện ở cả 6 màn 1280 (`verify-a.json`, `fsSet`). Mã: X4 (<11 = P1), TS-T4. Contrast của chúng đạt (8,1:1 trên nền tối), nhưng cỡ nhỏ. Cũng đẩy số cỡ chữ ở 1280 lên 9 giá trị (10,5/11,5/12/13/14/16/18/22/28, trong đó 4 giá trị sát nhau) so với 5 giá trị ở 390 → TS-X21/TS-T3. Sửa: sàn 12 px, gộp 13 → 12/14. Lệnh: `/impeccable typeset`.
+**C4 — xem HT7 (P2) trong [README](README.md).** Bằng chứng nhóm A: `app.css:175` `.me-sub` 10,5 px, `:185` `.me-next-t` 11,5 px, có mặt ở cả 6 màn 1280 (`verify-a.json`); số cỡ chữ ở 1280 là 9 (10,5/11,5/12/13/14/16/18/22/28) so với 5 ở 390. Contrast các chữ này đạt (8,1:1).
 
-**C5 — P2 — Tủ gỗ-kính ở sidebar: tối, bão hoà, skeuomorphic, lặp mọi màn.** `Shell.svelte:43`, `SideProfile.svelte`, `app.css:171` (nền gradient `#2a1f17→#17110c`, viền vàng kép), `app.css:826-834` (gỗ `#4b2e18…`, ô kính phản quang `.side-glass::after`). Ảnh: `[shots/1280-light-home](anh/shots-1280-light-home.webp)` (khối ~270 px cuối sidebar). Mã: TS-A13 (sidebar không tối/bão hoà trên màn sáng), TS-X4, IMP-B7 (glass trang trí), IMP-H8, TS-F3#7. Tác động: điểm tối/bão hoà nhất của mọi trang ≥ 1280 là chrome chứ không phải nội dung học; kéo thêm ~15 hex thô. Đây là chữ ký game hoá nên **[BRAND]**. Sửa: ở sidebar chỉ một thẻ phẳng tông giấy (chức danh + thanh tiến độ), giữ gỗ-kính riêng ở Hồ sơ. Lệnh: `/impeccable quieter`.
+**C5 — [BRAND] — Tủ gỗ-kính ở sidebar: tối, bão hoà, skeuomorphic, lặp mọi màn.** `Shell.svelte:43`, `SideProfile.svelte`, `app.css:171` (nền gradient `#2a1f17→#17110c`, viền vàng kép), `app.css:826-834` (gỗ `#4b2e18…`, ô kính phản quang `.side-glass::after`). Ảnh: `[shots/1280-light-home](anh/shots-1280-light-home.webp)` (khối ~270 px cuối sidebar). Mã: TS-A13 (sidebar không tối/bão hoà trên màn sáng), TS-X4, IMP-B7 (glass trang trí), IMP-H8, TS-F3#7. Tác động: điểm tối/bão hoà nhất của mọi trang ≥ 1280 là chrome chứ không phải nội dung học; kéo thêm ~15 hex thô. Đây là chữ ký game hoá nên **[BRAND]**. Sửa: ở sidebar chỉ một thẻ phẳng tông giấy (chức danh + thanh tiến độ), giữ gỗ-kính riêng ở Hồ sơ. Lệnh: `/impeccable quieter`.
 
 **C6 — P2 — Thuật ngữ game hoá chưa giải nghĩa cho người mới.** `SideProfile.svelte:24,34`: “CÔNG DÂN · 0 sách · 0 cấp 3”, “0/2 sách · kế tiếp: Công chức cấp xã”; mobile `Shell.svelte:28` + `RankBadge.svelte:11-14` chỉ còn ấn đỏ “§” (nhãn bị ẩn ở ≤ 479 px, `app.css:1548`), chỉ `title`/`aria-label` mô tả. Ảnh: `[shots/390-light-home](anh/shots-390-light-home.webp)` (góc phải trên: ngọn lửa xám “0” + ấn “§”). Mã: IMP-H2, H6, H10; VN-6. Tác động: Jordan không biết “sách”, “cấp 3”, “chức danh mô phỏng” là gì và “§” là nút gì. Sửa: nhãn chữ hoặc tooltip bấm được; một dòng onboarding ở lần đầu. Lệnh: `/impeccable clarify`.
 
 **C7 — P2 — Không có skip-link; 7 điểm Tab trước nội dung.** Đã xác minh thứ tự Tab ở 1280 trên Hôm nay: `a.brand → 4 × a.item → a.me → a.me-next → a.btn (nội dung)`. Landmark `main` có nên WCAG 2.4.1 vẫn qua bằng landmark, nhưng bàn phím tốn 7 lần Tab mỗi lần tải trang. Mã: IMP-H7, persona Sam/Alex. Sửa: skip-link tới `#main` (lưu ý hash router: dùng nút JS focus `main` thay vì `href="#main"`). Lệnh: `/impeccable harden`.
 
-**C8 — P2 — Kicker/eyebrow và tiêu đề IN HOA gắn khắp nơi.** `app.css:235` `.kicker` uppercase, tracking .08em; dùng ở `HeroCard.svelte:16,21,26,31,36` (5 biến thể hero), `Shell.svelte:40` (“Đang học”), `SubjectRail.svelte:12,17,24`, `HomeRail.svelte:29,44`, `QuizRail.svelte:7`, `MasteryGrid.svelte:18,25`, `Concepts.svelte:90`, `Quizzes.svelte:66,75,84` (`.sug-k`, `app.css:516`). Thêm `.section-title` IN HOA tracking .06em (`app.css:126`). Mã: IMP-B3 (cấm tuyệt đối), TS-X7, TS-T7 (CAPS ≤ 3 từ), X12. Tiếng Việt in hoa + dấu chồng khó đọc hơn (xem “NGÀNH LUẬT HIẾN PHÁP: ĐỐI TƯỢNG, PHƯƠNG PHÁP, NGUỒN, QUAN HỆ PHÁP LUẬT” 70 ký tự, `[shots/1280-light-concepts-list](anh/shots-1280-light-concepts-list.webp)`). Lặp ≥ 3 chỗ → mục hệ thống. Sửa: sentence case, bỏ kicker khi đã có heading. Lệnh: `/impeccable typeset` + `/impeccable distill`.
+**C8 — xem HT6 (P2) trong [README](README.md).** Bằng chứng nhóm A: kicker ở `HeroCard.svelte:16,21,26,31,36`, `Shell.svelte:40`, `MasteryGrid.svelte:18,25`, `Concepts.svelte:90`, `Quizzes.svelte:66,75,84` (`.sug-k`, `app.css:516`); ví dụ “NGÀNH LUẬT HIẾN PHÁP: ĐỐI TƯỢNG, PHƯƠNG PHÁP, NGUỒN, QUAN HỆ PHÁP LUẬT” 70 ký tự ([ảnh](anh/shots-1280-light-concepts-list.webp)).
 
-**C9 — P2 — Viền màu `border-left` > 1 px lặp ≥ 3 chỗ.** `.sug` 4 px (`app.css:513`), `.quote` 3 px đỏ ấn (`:121`), `.note` 3 px (`:459`), `.hard-list a` 3 px (`:487`), `.why` 3 px (`:1576`), `.rv` 4 px (`:604`, ngoài 6 màn). Mã: IMP-B8. Sửa: nền tông nhạt + icon/nhãn, hoặc viền đầy đủ 1 px. Lệnh: `/impeccable polish`.
+**C9 — xem HT13 (P3) trong [README](README.md).** Vị trí nhóm A: `.sug` 4 px (`app.css:513`), `.quote` 3 px (`:121`), `.note` 3 px (`:459`), `.hard-list a` 3 px (`:487`).
 
-**C10 — P2 — Icon trộn SVG với ký tự Unicode.** Bộ nav SVG nét là tốt (`Icon.svelte`, `Glyph.svelte`), nhưng nơi khác dùng ký tự: ★ ☆ ▸ ▾ (`Concepts.svelte:82,101,103`), → ← › (`Shell.svelte:50`, `HeroCard.svelte:19-34`, `Home.svelte:97`), ⚠ (`Shell.svelte:48`), ✓ (`MasteryGrid.svelte:25`), ★ (`Quizzes.svelte:58,128`). Mã: IMP-B13, TS-X6 (X9 ngoại lệ không áp: chưa có spec mascot). Tác động: nét/độ đậm/baseline không đồng bộ theo font, chevron không xoay. Sửa: thêm ≤ 6 glyph SVG (star, star-fill, chevron, arrow, check, alert) vào `Glyph.svelte`. Lệnh: `/impeccable extract`.
+**C10 — xem HT14 (P3) trong [README](README.md).** Vị trí nhóm A: ★ ☆ ▸ ▾ (`Concepts.svelte:82,101,103`), → ← › (`Shell.svelte:50`, `HeroCard.svelte:19-34`), ⚠ (`Shell.svelte:48`), ✓ (`MasteryGrid.svelte:25`), ★ (`Quizzes.svelte:58,128`).
 
-**C11 — P2 — Hairline/viền kép trang trí.** `.btn` inset kép (`app.css:757`), `.filter[aria-pressed=true]` (`:906`), `.section-title` hình thoi + đường kép (`:764-765`), `.stage::after` hai vạch “mặt đất” (`:789-792`), tabbar `3px double` (`:772`), sidenav `4px double` (`:773`). Mã: TS-X17, TS-X19, IMP-V2. **[BRAND]** (ngôn ngữ “viền kép” là chủ đích của spec hình khối). Sửa: giữ một chỗ (khung hero), bỏ ở nút/chip/tiêu đề mục.
+**C11 — [BRAND] — Hairline/viền kép trang trí.** `.btn` inset kép (`app.css:757`), `.filter[aria-pressed=true]` (`:906`), `.section-title` hình thoi + đường kép (`:764-765`), `.stage::after` hai vạch “mặt đất” (`:789-792`), tabbar `3px double` (`:772`), sidenav `4px double` (`:773`). Mã: TS-X17, TS-X19, IMP-V2. **[BRAND]** (ngôn ngữ “viền kép” là chủ đích của spec hình khối). Sửa: giữ một chỗ (khung hero), bỏ ở nút/chip/tiêu đề mục.
 
 **C12 — P2 — Bóng + viền mọi thẻ, hover-lift mọi thẻ, overshoot.** `--shadow` (`app.css:38`) dưới `.card`, `.subject-row`, `.set`, `.ticket`, `.qz-stats`, `.stage` (`:113,412,431,499,536,786`) cùng viền 1 px (X1 cấm viền + bóng cùng lúc). Hover-lift `translateY(-1…-4px)` ở `.subject-row, .set, .sug, .ticket, .btn, .opt, .cover-link` (`:413,432,514,537,758,1500`) **không** bọc `(hover:hover)` → hover dính khi chạm. Đường cong có overshoot `cubic-bezier(.2,.9,.3,1.3)` ở `.book a` (`:848`) và `.cover-link .book-cover` (`:1499`). Mã: TS-X4, TS-X24, TS-M2, IMP-M4, IMP-R4. Sửa: một trong hai (viền hoặc bóng), hover trong `@media (hover:hover)`, ease-out không overshoot. Lệnh: `/impeccable quieter` + `/impeccable animate`.
 
-**C13 — P2 — Kiểu chữ: 3 họ font, cỡ px cố định, nhiều chữ 12 px.** `index.html:13` nạp Be Vietnam Pro + Noto Serif + Noto Serif Display (`app.css:39-40,778`) → vi phạm TS-T1 (không bao giờ ba; Noto Serif và Display là hai họ nạp riêng). Thang chữ khai báo bằng px (`app.css:20`) nên không theo cỡ chữ mặc định của người dùng (IMP-T6; xác minh bằng đọc code, chưa thử đổi cỡ chữ trình duyệt). Số nút chữ 12 px: 153 nút DOM trên Quizzes 390 (đo `fsSet`). Không có `::selection`/`caret-color` theo palette (IMP-V7); chỉ `h1` có `text-wrap: balance` (`app.css:917`), không có `pretty` cho thân. Đạt: có subset `vietnamese` (xem Positive). Lệnh: `/impeccable typeset`.
+**C13 — xem HT9 (P2) trong [README](README.md).** Bổ sung nhóm A: thang chữ khai báo bằng px (`app.css:20`) nên không theo cỡ chữ mặc định của người dùng (IMP-T6, xác minh bằng đọc code); không có `::selection`/`caret-color`; chỉ `h1` có `text-wrap: balance`.
 
-**C14 — P3 — Palette thứ hai trong component.** 157 mã hex và 85 `rgba()` ngoài khối token (đếm `grep` trên `app.css`): gỗ/vàng sidebar, `#f2c14e`, `#8e1f19`, `.f-ksu`… Mã: IMP-A3, TS-C1. Phần lớn nằm trong minh hoạ/tủ gỗ nên P3.
+**C14 — xem HT8 (P2) trong [README](README.md).** Bằng chứng nhóm A: 157 hex và 85 `rgba()` ngoài khối token (đếm `grep` trên `app.css`).
 
-**C15 — P3 — Dùng accent rải khắp (kem + cam).** Accent `#d97a1e` xuất hiện ở CTA, kicker, link “Tất cả…”, ring focus, ô bậc 1–5, tab active, chip, thanh tiến độ, diamond tiêu đề mục (`app.css:122,399,410,457,764,…`). TS-C2/C3/C9: accent nên < 5 % pixel, không dành cho heading/icon/bullet. Cặp nền kem + cam là TS-X15; **[BRAND]** (X3 cho là ngoại lệ do brief, tôi ghi lại theo yêu cầu chấm thẳng). Serif display ở mọi `h1` (`app.css:779`, TS-X16) cũng **[BRAND]**. Contrast của bảng màu đều đạt (xem Positive).
+**C15 — [BRAND] — Dùng accent rải khắp (kem + cam).** Accent `#d97a1e` xuất hiện ở CTA, kicker, link “Tất cả…”, ring focus, ô bậc 1–5, tab active, chip, thanh tiến độ, diamond tiêu đề mục (`app.css:122,399,410,457,764,…`). TS-C2/C3/C9: accent nên < 5 % pixel, không dành cho heading/icon/bullet. Cặp nền kem + cam là TS-X15; **[BRAND]** (X3 cho là ngoại lệ do brief, tôi ghi lại theo yêu cầu chấm thẳng). Serif display ở mọi `h1` (`app.css:779`, TS-X16) cũng **[BRAND]**. Contrast của bảng màu đều đạt (xem Positive).
 
-**C16 — P1 — Màn hiển thị nguyên văn luật không có lưu ý “thông tin pháp luật chung, không phải tư vấn”.** Chỉ có ở `Profile.svelte:193`; `app.css:939` ghi chú “chỉ ở trang Hồ sơ”; `Shell.svelte` không có footer (CSS `.shell > .foot` còn nhưng Shell không render). Cả 6 màn của nhóm này không có (đã xác minh bằng grep `không phải tư vấn` chỉ ra duy nhất `Profile.svelte`). Mã: VN-5; CLAUDE.md (“Nội dung luật… không phải tư vấn”). Ảnh: `[crops/a-1280-c-2](anh/crops-a-1280-c-2.webp)` (định nghĩa + nguồn, không có lưu ý). Sửa: một dòng 12–14 px dưới dòng `Nguồn` ở mỗi mục mở của `Concepts`, hoặc footer Shell. Lệnh: `/impeccable clarify`.
+**C16 — xem HT10 (P2) trong [README](README.md).** Bằng chứng nhóm A: grep `không phải tư vấn` chỉ ra duy nhất `Profile.svelte:193`; cả 6 màn nhóm A không có ([ảnh](anh/crops-a-1280-c-2.webp): định nghĩa + nguồn, không có lưu ý).
 
 ### Khác (shell)
 - Cấu trúc 4 đích đến, nhãn chữ, `aria-current`, `aria-label` — đạt; tabbar 4 mục, vùng chạm ≥ 44 px (xem Positive). Mobile trang con tốn chrome dọc: topbar 64 px + “← Quay lại” 44 px + breadcrumb 15 px (xem SJ-5).
@@ -63,16 +63,16 @@ Người chấm: S1. Phạm vi: `#/`, `#/mon`, `#/mon/hien-phap`, `#/mon/hien-ph
 
 | Chiều impeccable | Điểm | Ghi chú |
 |---|---|---|
-| A1 Accessibility | 3 | contrast đạt, h1/h2 đúng, target ≥ 44; trừ C1–C3 |
+| A1 Accessibility | 3 | contrast đạt, h1/h2 đúng, target ≥ 44; trừ HT2, HT3, HT4 |
 | A2 Performance | 3 | tải 24 JSON (cả 23 môn) cho ≤ 4 hàng (xem H-6); 6 animation trang trí |
 | A3 Theming | 3 | token tốt; hex thô ở tủ sidebar |
 | A4 Responsive | 3 | 320/390/640/1280 không cuộn ngang; tranh hero đè chữ (H-2) |
 | A5 Impl. Integrity | 3 | mạch lạc; lặp CTA, kicker |
 | **Tổng** | **15/20 (Good)** | |
 
-Nielsen (H5 n/a: không có hành động phá huỷ): H1 3 · H2 2 · H3 3 · H4 3 · H6 3 · H7 3 · H8 2 · H9 2 · H10 3 = **24/36 (67 %, Acceptable sát Good)**.
+Nielsen (H5 n/a: không có hành động phá huỷ): H1 3 · H2 2 · H3 3 · H4 3 · H6 3 · H7 3 · H8 3 · H9 2 · H10 3 = **25/36 (69 %, Acceptable sát Good)**; H8 nâng 2→3 vì lý do cũ là chrome tủ gỗ ([BRAND], không trừ).
 Cognitive load trượt: C4 (thứ bậc: hero + danh sách + thẻ quiz cùng nặng), C5 (hai CTA cùng đích) → 2 (vừa). Persona: **Jordan** (5 giây: nhận ra “Bắt đầu” + nút cam, nhưng “bậc/đợt/sách/chức danh” lạ); **Casey** (CTA hero ở y≈545/844 trên 390, ngón cái với tới được, thanh tab dưới đạt).
-IMP-S1: đặc thù (cổng Văn Miếu, bìa sách thật) → đạt. TS-F4 phụ (không cộng với thang chính): design 7,5 · usability 7,5 · creativity 8 · content 7,5.
+IMP-S1: đặc thù (cổng Văn Miếu, bìa sách thật) → đạt. TS-F4 phụ: design 7,5 · usability 7,5 · creativity 8 · content 7,5 → thô 7,6; **overall theo cap = 6,5** (có kicker + bóng lúc nghỉ).
 Taste tells chạm: TS-X7/IMP-B3 (kicker “BẮT ĐẦU”), TS-W1/X21 (tiêu đề hero 4 dòng), TS-X8 (chip trên h3), TS-X4/X24 (bóng + hover-lift), TS-X15 [BRAND], TS-X16 [BRAND], TS-A2 (hero minh hoạ ở màn công cụ), TS-F3#13 (art chạm chữ).
 
 **H-1 — P2 — Tiêu đề hero 4 dòng, ghép “Môn › Đợt”.** `HeroCard.svelte:22,27,32` (`{state.subject.title} › {state.lesson.title}`), `app.css:797` (serif 22–28 px). Ảnh: `[shots/390-light-home](anh/shots-390-light-home.webp)`, `[shots/1280-light-home](anh/shots-1280-light-home.webp)` (cả hai 4 dòng: “Lý luận chung về Nhà nước và Pháp luật › Nguồn gốc, bản chất và dấu hiệu của nhà nước”). Mã: TS-W1 (≤ 2 dòng), TS-X21, IMP-C4. Tác động: người học phải đọc cả câu để biết “làm gì tiếp”; “›” là dấu điều hướng, không phải chữ. Sửa: tiêu đề = tên đợt (≤ 2 dòng), tên môn thành dòng phụ 14 px. Đã xác minh bằng ảnh. Lệnh: `/impeccable typeset`.
@@ -85,7 +85,7 @@ Taste tells chạm: TS-X7/IMP-B3 (kicker “BẮT ĐẦU”), TS-W1/X21 (tiêu �
 
 **H-5 — P2 — Lỗi tải hiện lời nhắc cho dev, không có Thử lại.** `Home.svelte:89` “Nếu mở file trực tiếp, hãy chạy `npm run dev` ở gốc repo.”; không có nút thử lại. Mã: IMP-H9, TS-S4. **Chưa xác minh bằng ảnh** (không kích hoạt được lỗi). Sửa: câu cho người dùng + nút “Tải lại”; lời nhắc dev đưa vào console.
 
-**H-6 — P3 — Chờ tải là chữ giữa khoảng trống; tải thừa dữ liệu.** `Home.svelte:91` + `app.css:52` (`min-height:60vh`, chữ “Đang tải…”), không skeleton (TS-S3). `Home.svelte:44` `loadSubject` cho cả 23 môn để chọn ≤ 4 hàng; đo thực tế Hôm nay ở 390: 31 request, 24 JSON, 360 KB (`net-a.cjs`). Mã: IMP-A2, TS-S3. Lệnh: `/impeccable optimize`.
+**H-6 — P3 — Chờ tải là chữ giữa khoảng trống; tải thừa dữ liệu.** `Home.svelte:91` + `app.css:52` (`min-height:60vh`, chữ “Đang tải…”), không skeleton (TS-S3). `Home.svelte:44` `loadSubject` cho cả 23 môn để chọn ≤ 4 hàng; đo thực tế Hôm nay ở 390: 24 JSON; 31 request localhost, 44–45 gồm font (cache trống, có SW) (`net-a.cjs`, `net2.cjs`). Mã: IMP-A2, TS-S3. Lệnh: `/impeccable optimize`.
 
 **H-7 — P3 — Chip trên tiêu đề; số lớn màu accent.** `Home.svelte:123` chip “Pháp luật đại cương” nằm trên h3 (TS-X8); `HeroCard.svelte:17`/`app.css:401` số `.big` 36 px màu accent ở trạng thái `due` (TS-A3 “không in màu brand”). **Trạng thái `due` chưa chụp → chưa xác minh bằng ảnh**.
 
@@ -102,9 +102,9 @@ Taste tells chạm: TS-X7/IMP-B3 (kicker “BẮT ĐẦU”), TS-W1/X21 (tiêu �
 | A5 | 3 | |
 | **Tổng** | **15/20 (Good)** | |
 
-Nielsen (H5 n/a): H1 3 · H2 3 · H3 3 · H4 3 · H6 3 · H7 3 (tìm không dấu, viết tắt “ds”) · H8 2 · H9 3 · H10 3 = **26/36 (72 %, Good)**.
+Nielsen (H5 n/a): H1 3 · H2 3 · H3 3 · H4 3 · H6 3 · H7 3 (tìm không dấu, viết tắt “ds”) · H8 3 · H9 3 · H10 3 = **27/36 (75 %, Good)**; H8 nâng 2→3 vì lý do cũ là bìa/ván gỗ ([BRAND], không trừ).
 Cognitive load trượt: C6 (8 chip lọc = quá tải), C3 → 2. Persona **Alex** hưởng lợi từ tìm viết tắt; **Casey**: lưới 4 cột 358 px, chạm 44 px ok.
-IMP-S1 đạt (kệ sách + bìa thật). TS-F4 phụ: 7,5 · 7,5 · 8 · 7,5.
+IMP-S1 đạt (kệ sách + bìa thật). TS-F4 phụ: 7,5 · 7,5 · 8 · 7,5 → thô 7,6; **overall theo cap = 6,5** (tiêu đề mục IN HOA + bóng lúc nghỉ).
 Taste tells: TS-C8 (cầu vồng 8 hue bìa) **[BRAND]**, TS-X17/X19 (ván gỗ, đường kép), TS-A2 (banner `head-stack`), TS-L3 (hố trống).
 
 **S-1 — P2 — 8 chip lọc, hàng cuộn ngang bị cắt, desktop vẫn cuộn.** `Subjects.svelte:74-79`, `app.css:1488-1489` (`overflow-x:auto; flex:none`). Ảnh: `[shots/1280-light-subjects](anh/shots-1280-light-subjects.webp)` (chip cuối “Hìn…” cụt tại mép phải). Mã: IMP-C6 (≥ 8 lựa chọn), TS-P4. Tác động: người dùng không biết còn chip; trên 1280 còn nhiều chỗ để xuống dòng. Sửa: `flex-wrap:wrap` từ 768 px, hoặc `<select>`. Cũng có ở `Quizzes.svelte:98-103`. Lệnh: `/impeccable adapt`.
@@ -113,7 +113,7 @@ Taste tells: TS-C8 (cầu vồng 8 hue bìa) **[BRAND]**, TS-X17/X19 (ván gỗ,
 
 **S-3 — P2 — Lưới 2 cột kệ để lại hố trống.** `app.css:1568-1571` (`.shelves` 2 cột ≥ 1024). Ảnh: `[shots/1280-light-subjects](anh/shots-1280-light-subjects.webp)`: dưới “Tài chính – Ngân hàng” trống ≈ 240 px cạnh khối “Thương mại” 2 hàng; “Hình sự 1 môn” đứng lẻ cạnh “Dân sự”. Mã: TS-L2, TS-L3. Sửa: CSS columns/masonry hoặc gộp kệ ít môn. Lệnh: `/impeccable layout`.
 
-**S-4 — P3 — Banner chồng 3 bìa lặp lại chính lưới bên dưới; ván gỗ.** `Subjects.svelte:59-61`, `app.css:1476-1483` (bìa thứ hai che chữ bìa thứ nhất), ván `.plank` (`:861`, `:1503-1507`). Mã: TS-A2, IMP-H8, TS-C8. **[BRAND]**. Ảnh: `[shots/1280-light-subjects](anh/shots-1280-light-subjects.webp)` (đầu trang).
+**S-4 — [BRAND] — Banner chồng 3 bìa lặp lại chính lưới bên dưới; ván gỗ.** `Subjects.svelte:59-61`, `app.css:1476-1483` (bìa thứ hai che chữ bìa thứ nhất), ván `.plank` (`:861`, `:1503-1507`). Mã: TS-A2, IMP-H8, TS-C8. **[BRAND]**. Ảnh: `[shots/1280-light-subjects](anh/shots-1280-light-subjects.webp)` (đầu trang).
 
 **S-5 — P2 — Tiêu đề kệ IN HOA kèm số đếm nhỏ.** `Subjects.svelte:89` (“HIẾN PHÁP – HÀNH CHÍNH 3 MÔN”), `app.css:126,764-765`. Mã: TS-T7, X12 (xem C8). Sửa: sentence case.
 
@@ -136,7 +136,7 @@ Taste tells: TS-C8 (cầu vồng 8 hue bìa) **[BRAND]**, TS-X17/X19 (ván gỗ,
 
 Nielsen: H1 3 · H2 3 · H3 3 · H4 3 · H5 3 (có `confirm` đợt khoá) · H6 2 · H7 3 · H8 2 · H9 3 (lỗi có link về Môn học) · H10 3 = **28/40 (70 %, Good)**.
 Cognitive load trượt: C1 (nhiều tiêu điểm: hero, 12 chip chương, chú giải, đợt), C6 (12 chip), C8 → 3 (vừa). Persona: **Sam** (không heading, bậc theo màu); **Casey** (hint “Ngành luật Hiến pháp: đối t…” cụt).
-TS-F4 phụ: 7 · 7 · 7,5 · 7,5. IMP-S2: “Học tiếp” rõ; chưa thấy thông điệp trấn an khi tụt bậc (chưa có dữ liệu).
+TS-F4 phụ: 7 · 7 · 7,5 · 7,5 → thô 7,15; **overall theo cap = 6,5** (kicker + bóng). IMP-S2: “Học tiếp” rõ; chưa thấy thông điệp trấn an khi tụt bậc (chưa có dữ liệu).
 
 **SJ-1 — P1 — Không có cấu trúc heading dưới h1.** `MasteryGrid.svelte:18` `<p class="kicker chapter">` (tên chương), đợt là `<a>` trong `<li>` (`:24`); probe DOM: headings = chỉ `H1:Luật Hiến pháp` (`probe.json`). Mã: IMP-A1 (WCAG 1.3.1/2.4.6), TS-L4. Tác động: trang 8338 px (390) có 12 chương/nhiều đợt mà người dùng đọc màn hình không nhảy được. Sửa: `h2` cho chương, `h3` cho đợt (giữ style hiện tại). Lệnh: `/impeccable harden`.
 
@@ -173,15 +173,15 @@ TS-F4 phụ: 7 · 7 · 7,5 · 7,5. IMP-S2: “Học tiếp” rõ; chưa thấy 
 
 Nielsen (H5 n/a): H1 3 · H2 3 · H3 3 · H4 3 · H6 3 · H7 3 · H8 3 · H9 3 · H10 3 = **27/36 (75 %, Good)**.
 Cognitive load trượt: C8 (không progressive disclosure theo nhóm), C3 → 2. Persona **Riley** (101 mục; chuỗi dài gói được vì wrap), **Sam**.
-TS-F4 phụ: 7 · 7,5 · 7 · 8.
+TS-F4 phụ: 7 · 7,5 · 7 · 8 → thô 7,25; **overall theo cap = 6,5** (kicker + bóng).
 
 **CL-1 — P1 — Không có heading cho 12 nhóm và 101 mục.** `Concepts.svelte:90` (`<p class="kicker">`), tên khái niệm nằm trong `<button>` (`:97-102`). Probe: chỉ `H1:Khái niệm · Hiến pháp`. Mã: IMP-A1 (WCAG 1.3.1/2.4.6), TS-L4. Sửa: `h2` cho nhóm, `h3` bao nút tên khái niệm (mẫu accordion chuẩn). Cùng loại với SJ-1.
 
-**CL-2 — P2 — Mỗi khái niệm một request; render cả 101 mục.** `Concepts.svelte:43` `ids.map((id) => loadConcepts(s.id, [id]))`. Đo (390, tải nguội): **135 request, 125 JSON, 527 KB** (`net-a.cjs`) so với 31 request ở Hôm nay; DOM 1196 node; trang cao 9050 px (390) / 7327 px (1280). Mã: IMP-A2. Tác động: màn danh mục đọc nhanh chậm hơn và nặng pin; SW cache giảm lần sau. Sửa: bảng `terms` đã có (`loadTerms`) cho danh sách, chỉ tải thân khi mở mục, hoặc một gói JSON theo môn (thay đổi pipeline `packages/content` → việc riêng). Lệnh: `/impeccable optimize`.
+**CL-2 — P2 — Mỗi khái niệm một request; render cả 101 mục.** `Concepts.svelte:43` `ids.map((id) => loadConcepts(s.id, [id]))`. Xem HT12 (P2) trong [README](README.md). Đo (390 px, context mới = cache trống, service worker có đăng ký): **danh mục 146–147 request, Hôm nay 44–45 request** khi đếm mọi request gồm font Google (11–13 request ngoài localhost); chỉ đếm request tới localhost (không font) là **135 và 31**; trong đó 125 JSON, 527 KB. Chênh ±1 giữa các lần đo do favicon/manifest; DOM 1196 node; trang cao 9050 px (390) / 7327 px (1280). Mã: IMP-A2. Tác động: màn danh mục đọc nhanh chậm hơn và nặng pin; SW cache giảm lần sau. Sửa: bảng `terms` đã có (`loadTerms`) cho danh sách, chỉ tải thân khi mở mục, hoặc một gói JSON theo môn (thay đổi pipeline `packages/content` → việc riêng). Lệnh: `/impeccable optimize`.
 
 **CL-3 — P2 — Danh sách dài không có mốc nhảy; tìm kiếm không báo số kết quả.** `Concepts.svelte:77-87` (không có `role="status"` đếm như `Quizzes.svelte:111`). Mã: IMP-H1, IMP-C8. Sửa: dòng “Hiện n/101” `role="status"`, nhóm có thể thu gọn.
 
-**CL-4 — P2 — Banner minh hoạ 200 px trước ô tìm ở trang công cụ.** `Concepts.svelte:72`, `app.css:806-812`. Ảnh: `[shots/1280-light-concepts-list](anh/shots-1280-light-concepts-list.webp)`. Mã: TS-A2, IMP-B1/H8 (trang danh mục tra cứu, câu hỏi của màn là “tìm khái niệm”). **[BRAND]** (tranh là chữ ký hình khối). Sửa: thu nhỏ còn dải 64 px hoặc bỏ ở màn công cụ.
+**CL-4 — [BRAND] — Banner minh hoạ 200 px trước ô tìm ở trang công cụ.** `Concepts.svelte:72`, `app.css:806-812`. Ảnh: `[shots/1280-light-concepts-list](anh/shots-1280-light-concepts-list.webp)`. Mã: TS-A2, IMP-B1/H8 (trang danh mục tra cứu, câu hỏi của màn là “tìm khái niệm”). **[BRAND]** (tranh là chữ ký hình khối). Sửa: thu nhỏ còn dải 64 px hoặc bỏ ở màn công cụ.
 
 **CL-5 — P3 — H1 “Khái niệm · Hiến pháp” để mồ côi dấu “·”.** `Concepts.svelte:73`, ảnh `[shots/1280-light-concepts-list](anh/shots-1280-light-concepts-list.webp)` (dòng 1 “Khái niệm ·”, dòng 2 “Hiến pháp”; `text-wrap:balance` ở `app.css:917` không cứu vì `.page-head > :not(.head-art){max-width:50%}` `:811`). Mã: TS-T11. Sửa: “Khái niệm Hiến pháp” hoặc ngắt có chủ đích.
 
@@ -204,7 +204,7 @@ Lưu ý cấu trúc: route này **không phải trang riêng**; là danh sách 1
 
 Nielsen (H5 n/a): H1 2 · H2 3 · H3 3 · H4 3 · H6 3 · H7 2 · H8 3 · H9 3 · H10 2 = **24/36 (67 %, Acceptable)**.
 Cognitive load trượt: C1 (định nghĩa, giải thích, ví dụ, dễ nhầm, 2 so sánh, nguồn cùng nặng), C4 → 2. Persona: **Sam** (focus), **Jordan** (không giải thích “Nguồn/đối chiếu”).
-**IMP-S1 + Read mode**: nội dung luật hiển thị nguyên văn kèm nguồn — làm đúng VN-5 về mặt dữ liệu. TS-F4 phụ: 7 · 7 · 7 · 8.
+**IMP-S1 + Read mode**: nội dung luật hiển thị nguyên văn kèm nguồn — làm đúng VN-5 về mặt dữ liệu. TS-F4 phụ: 7 · 7 · 7 · 8 → thô 7,1; **overall theo cap = 6,5** (kicker + bóng).
 
 **CN-1 — P1 — Deep-link không đưa focus tới mục vừa mở, trang không nêu tên khái niệm.** `Concepts.svelte:52-56` (`open=[target]`, `scrollIntoView`, không `.focus()`); `h1` giữ “Khái niệm · Hiến pháp” (`:73`) dù `document.title` đổi (`:50`). Mã: IMP-A1, IMP-H1, IMP-A5. Tác động: người dùng bàn phím/đọc màn hình từ liên kết “Dễ nhầm với…” đứng yên ở đầu trang, không biết nội dung ở đâu; mọi người nhìn thấy khái niệm mở nằm giữa 100 mục khác. Sửa: sau `tick()` focus nút `entry-toggle` của mục mở, thông báo qua `aria-live`; hoặc làm trang chi tiết thật. Đã xác minh bằng đọc code + ảnh.
 
@@ -233,7 +233,7 @@ Cognitive load trượt: C1 (định nghĩa, giải thích, ví dụ, dễ nhầ
 
 Nielsen (H5 n/a): H1 3 · H2 3 · H3 3 · H4 3 · H6 3 · H7 3 · H8 2 · H9 3 · H10 3 = **26/36 (72 %, Good)**.
 Cognitive load trượt: C1 (stats + 3 gợi ý + 2 hàng điều khiển + 47 phiếu), C2/C6 (8 chip + 3 sắp xếp + 3 thẻ gợi ý), C8 → 3 (vừa). Persona **Casey**: phiếu đầu tiên bắt đầu ở y=665/844 trên 390 (79 %); **Alex**: sắp xếp + “Xáo đề khác” hữu ích.
-IMP-S1 đạt (vé đề thi, vignette luật). TS-F4 phụ: 7 · 7 · 7,5 · 7,5.
+IMP-S1 đạt (vé đề thi, vignette luật). TS-F4 phụ: 7 · 7 · 7,5 · 7,5 → thô 7,15; **overall theo cap = 6,5** (kicker + bóng).
 Taste tells: IMP-B3/TS-X7 (kicker trên thẻ gợi ý), IMP-B8 (`border-left 4px`), TS-X24 (hover-lift), TS-L2 (3 thẻ chiều cao lệch), TS-A8 (nhãn “Mới” ×47 không mang thông tin), TS-A7/F3#9 (47 phiếu cùng khuôn).
 
 **Q-1 — P2 — Hai hàng điều khiển + dòng đếm trước phiếu đầu tiên.** `Quizzes.svelte:96-111` (chip kệ 8 + sắp xếp 3 + đếm), `app.css:526-532`. Ảnh: `[shots/390-light-quizzes](anh/shots-390-light-quizzes.webp)` (phiếu “ĐỀ 01” ở y≈665; chip sắp xếp xuống 2 hàng ở 390). Mã: TS-P4 (≤ 60 %, tối đa một hàng điều khiển), IMP-C6. Sửa: sắp xếp thành một `<select>`/menu, chip kệ chung hàng; chiều cao điều khiển trên `.qz-sort .filter` 32 px ở desktop (`app.css:530`) trong khi chip kệ 40 px (không nhất quán).
@@ -244,7 +244,7 @@ Taste tells: IMP-B3/TS-X7 (kicker trên thẻ gợi ý), IMP-B8 (`border-left 4p
 
 **Q-4 — P3 — Phụ đề phiếu cắt 2 dòng; tên đề không đồng nhất.** `app.css:547` (line-clamp 2): “…tuổi chịu trách nhiệm hình sự và hành…”; tiêu đề lẫn “Đặt cọc”, “Chuyển khoản nhầm” với “Đề kiểm tra Dân sự 2 – Nghĩa vụ, bảo đảm, hợp đồng” (nội dung dữ liệu). Mã: IMP-H4, VN-3.
 
-**Q-5 — P3 — Trang trí phiếu lặp ×47.** Khuyết xé (`app.css:540-541`), chân kẻ đứt (`:552`), tem xoay −12° (`:550`), dải đầu in hoa 12 px màu kệ (`:542`), khung tranh nền kem (`:549`). Contrast chữ trắng trên 8 màu dải đều đạt (đã đo). Mã: TS-X17/X19. **[BRAND]** (ý tưởng “vé thi” đặc thù, nhưng nặng khi nhân 47).
+**Q-5 — [BRAND] — Trang trí phiếu lặp ×47.** Khuyết xé (`app.css:540-541`), chân kẻ đứt (`:552`), tem xoay −12° (`:550`), dải đầu in hoa 12 px màu kệ (`:542`), khung tranh nền kem (`:549`). Contrast chữ trắng trên 8 màu dải đều đạt (đã đo). Mã: TS-X17/X19. **[BRAND]** (ý tưởng “vé thi” đặc thù, nhưng nặng khi nhân 47).
 
 **Q-6 — P3 — Dải số liệu ở đầu trang nằm trước câu trả lời cho “làm đề nào”.** `Quizzes.svelte:53-60`; ring `app.css:506-510` vẽ vòng rỗng ở 0 %. Mã: TS-A1, TS-A3, X7 (đạt điều kiện ≤ 40 px, không icon trong vòng; “–” cho điểm trung bình đúng TS-S1). Sửa: đưa xuống dưới gợi ý hoặc gộp vào dòng phụ.
 
@@ -281,7 +281,7 @@ Taste tells: IMP-B3/TS-X7 (kicker trên thẻ gợi ý), IMP-B8 (`border-left 4p
 
 ## 10. Tổng hợp
 
-- Điểm impeccable /20: Home 15 · Subjects 15 · Subject 14 · Concepts-list 13 · Concept 12 · Quizzes 15 (trung bình 14,0, Good). Nielsen: 24 · 26 · 28/40 · 27 · 24 · 26 (/36 trừ H5 n/a).
-- Số phát hiện (đếm theo ID): **P0 = 0 · P1 = 8 (C1, C2, C4, C16, SJ-1, SJ-2, CL-1, CN-1) · P2 = 34 · P3 = 16**.
-- Ưu tiên sửa trước release: C2 (focus route), C1 (reduced-motion), SJ-1/CL-1 (heading), SJ-2 (bậc không chỉ màu), C16 (lưu ý pháp lý), C4 (chữ < 11 px).
-- Việc ngoài phạm vi, ghi lại để làm riêng: gói JSON theo môn cho Concepts (CL-2); chụp/kiểm trạng thái có dữ liệu + rail ≥ 1440; kiểm bằng trình đọc màn hình và thiết bị thật.
+- Điểm impeccable /20: Home 15 · Subjects 15 · Subject 14 · Concepts-list 13 · Concept 12 · Quizzes 15 (trung bình 14,0, Good). Nielsen: Home 25/36 · Subjects 27/36 · Subject 28/40 · Concepts-list 27/36 · Concept 24/36 · Quizzes 26/36 (H5 n/a ở các màn /36). TS-F4 overall theo cap: cả 6 màn = 6,5 (điểm thô 7,1–7,6 bị cap vì kicker + bóng lúc nghỉ). Mục [BRAND] không trừ điểm.
+- Phát hiện riêng của nhóm A sau khi gộp: **P0 = 0 · P1 = 4 (SJ-1, SJ-2, CL-1, CN-1) · P2 = 24 · P3 = 12**. Tách riêng: 6 mục **[BRAND]** (C5, C11, C15, S-4, CL-4, Q-5) dẫn về mục [BRAND] của README, không tính vào tổng. Lỗi hệ thống đã gộp sang README, không tính lại ở đây: HT2, HT3 (P1), HT4–HT10, HT12 (P2), HT13, HT14 (P3).
+- Ưu tiên: HT2, HT3, SJ-1/CL-1 (heading), SJ-2 (bậc không chỉ màu), CN-1 (focus deep-link), rồi HT10, HT7.
+- Ngoài phạm vi, ghi lại: gói JSON theo môn (HT12); chụp/kiểm trạng thái có dữ liệu + rail ≥ 1440; kiểm bằng trình đọc màn hình và thiết bị thật.
