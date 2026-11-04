@@ -147,3 +147,25 @@ describe('quizConceptSubject — môn để ghi tiến độ câu Luyện đề 
     expect(quizConceptSubject('pldc', subjects)).toBeNull();
   });
 });
+
+describe('groupByShelf — heading mỗi kệ ở Luyện đề (Q-3)', () => {
+  it('gom liên tiếp theo kệ, giữ thứ tự đầu vào, kèm tên + màu kệ', async () => {
+    const { groupByShelf, shelfFor } = await import('$lib/ui/quiz');
+    const sets = [{ id: 'a', group: 'dan-su' }, { id: 'b', group: 'dan-su' }, { id: 'c', group: 'hien-phap' }];
+    const g = groupByShelf(sets);
+    expect(g.map((x) => x.sets.map((s) => s.id))).toEqual([['a', 'b'], ['c']]);
+    expect(g[0].name).toBe(shelfFor('dan-su').name);
+    expect(g[1].color).toBe(shelfFor('hien-phap').color);
+  });
+  it('cùng kệ nhưng không liền nhau vẫn gộp một nhóm (khoá không trùng — từng làm vỡ trang)', async () => {
+    const { groupByShelf, shelfFor } = await import('$lib/ui/quiz');
+    const sets = [{ id: 'a', group: 'dan-su' }, { id: 'c', group: 'hien-phap' }, { id: 'b', group: 'dan-su' }];
+    const g = groupByShelf(sets);
+    expect(new Set(g.map((x) => x.id)).size).toBe(g.length);
+    expect(g.find((x) => x.id === shelfFor('dan-su').id)?.sets.map((s) => s.id)).toEqual(['a', 'b']);
+  });
+  it('rỗng → []', async () => {
+    const { groupByShelf } = await import('$lib/ui/quiz');
+    expect(groupByShelf([])).toEqual([]);
+  });
+});
