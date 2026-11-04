@@ -87,7 +87,7 @@
   style="--fire:{view.flame}; --glow:{view.glow}">
   <div class="ig-veil" aria-hidden="true"></div>
   <div class="ig-stage" bind:this={stage}>
-    <StreakCard count={shown} {longest} ignite={arrived && !still} flare={arrived && !still} />
+    <StreakCard count={shown} {longest} ignite={arrived && !still} flare={arrived && !still} from={Math.max(0, count - 1)} />
     <div class="ig-motes" aria-hidden="true">
       {#each motes as m, i (i)}<i class="ig-mote {m.kind}" data-i={i} style="--s:{m.size.toFixed(1)}px"></i>{/each}
     </div>

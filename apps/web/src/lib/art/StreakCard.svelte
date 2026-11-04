@@ -30,7 +30,7 @@
   import { CARD_GLYPHS } from './cardGlyphs';
   import { reducedMotion } from '$lib/fx/confetti';
   import { motionGate } from '$lib/fx/motionGate';
-  let { count = 0, longest = 0, size = 'full', ignite = false, flare = false }: { count?: number; longest?: number; size?: 'full' | 'mini'; ignite?: boolean; flare?: boolean } = $props();
+  let { count = 0, longest = 0, size = 'full', ignite = false, flare = false, from = null }: { count?: number; longest?: number; size?: 'full' | 'mini'; ignite?: boolean; flare?: boolean; from?: number | null } = $props();
   const c = $derived(cardFor(count, longest));
   const uid = `sc${++seq}`;
   // SMIL không chịu CSS giảm chuyển động: tự bỏ <animate> khi người dùng chọn giảm chuyển động (HT5).
@@ -138,6 +138,7 @@
       <filter id="{uid}-hand" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="7" /><feDisplacementMap in="SourceGraphic" scale="2.2" /></filter>
       <filter id="{uid}-soft" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="14" /></filter>
       <!-- lửa: làm nhoè rồi xé mép bằng nhiễu chuyển động, cộng quầng rộng -->
+      <clipPath id="{uid}-numclip"><circle r="56" /></clipPath>
       <clipPath id="{uid}-clip"><rect width="856" height="540" rx="40" /></clipPath>
       <linearGradient id="{uid}-sheen" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0" /><stop offset=".5" stop-color="#fff" stop-opacity=".09" /><stop offset="1" stop-color="#fff" stop-opacity="0" /></linearGradient>
       <linearGradient id="{uid}-edge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".22" /><stop offset=".35" stop-color="#fff" stop-opacity=".04" /><stop offset="1" stop-color="#000" stop-opacity=".5" /></linearGradient>
@@ -231,15 +232,19 @@
       <circle r="53" fill="none" stroke={lg ? lg.mid : '#55555c'} stroke-width="1" stroke-dasharray="1 4" />
       {#if lg}<circle r="40" fill={lg.glow} opacity=".3" filter="url(#{uid}-soft)" class="cg-core" />{/if}
       <!-- số khắc chìm: bóng tối lệch xuống + viền sáng mảnh lệch lên, rồi chữ chính -->
-      <text class="cg-count" y="2.4" text-anchor="middle" dominant-baseline="central" font-size={fs} fill="#000" opacity=".6">{count}</text>
-      <text class="cg-count" y="-.6" text-anchor="middle" dominant-baseline="central" font-size={fs} fill="#fff" opacity=".18">{count}</text>
-      <text class="cg-count" y="1" text-anchor="middle" dominant-baseline="central" font-size={fs}
-        fill={lg ? `url(#${uid}-lotus)` : `url(#${uid}-ash)`} filter={lg ? `url(#${uid}-hot)` : undefined}>{count}</text>
-      <!-- màn thắp chuỗi (flare): bản sao con số màu lửa bừng sáng rồi tắt dần, để lại số khắc như cũ -->
-      {#if flare && cur}{#key count}
-        <circle class="cg-numflash" r="58" fill={cur.glow} filter="url(#{uid}-soft)" />
-        <text class="cg-count cg-numflare" y="1" text-anchor="middle" dominant-baseline="central" font-size={fs} fill={cur.core} stroke={cur.mid} stroke-width="2" filter="url(#{uid}-hot)">{count}</text>
-      {/key}{/if}
+      <!-- con số: khi thắp (flare) số cũ trượt lên biến mất, số mới trượt từ dưới lên như đồng hồ đếm; chỉ CHỮ SỐ bừng sáng rồi tắt dần -->
+      <g clip-path="url(#{uid}-numclip)">
+        {#if flare && cur && from !== null}{#key count}<text class="cg-count cg-roll-out" y="1" text-anchor="middle" dominant-baseline="central" font-size={fs} fill="url(#{uid}-ash)">{from}</text>{/key}{/if}
+        {#key flare ? count : -1}
+          <g class:cg-roll-in={flare && !!cur}>
+            <text class="cg-count" y="2.4" text-anchor="middle" dominant-baseline="central" font-size={fs} fill="#000" opacity=".6">{count}</text>
+            <text class="cg-count" y="-.6" text-anchor="middle" dominant-baseline="central" font-size={fs} fill="#fff" opacity=".18">{count}</text>
+            <text class="cg-count" y="1" text-anchor="middle" dominant-baseline="central" font-size={fs}
+              fill={lg ? `url(#${uid}-lotus)` : `url(#${uid}-ash)`} filter={lg ? `url(#${uid}-hot)` : undefined}>{count}</text>
+            {#if flare && cur}<text class="cg-count cg-numflare halo" y="1" text-anchor="middle" dominant-baseline="central" font-size={fs} fill={cur.glow} stroke={cur.glow} stroke-width="6" filter="url(#{uid}-soft)">{count}</text><text class="cg-count cg-numflare" y="1" text-anchor="middle" dominant-baseline="central" font-size={fs} fill={cur.core} stroke={cur.mid} stroke-width="1.6" filter="url(#{uid}-hot)">{count}</text>{/if}
+          </g>
+        {/key}
+      </g>
     </g></g>
     <!-- màn vừa thắp: tia lửa bay từ logo tới ký hoạ mới → bùng cháy + sóng lửa; ngày 28–30 thì sóng lớn quanh logo -->
     {#if lighting && cur}
