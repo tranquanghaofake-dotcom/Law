@@ -29,7 +29,7 @@ Phần video TikTok và web v1 nằm ở nhánh [`archive`](https://github.com/t
 | `npm run build` | build web (tự chạy content trước) | ~5 s |
 | `npm run ci` | đúng chuỗi CI chạy: content → check → test → build | ~20 s |
 | `npm run e2e` | Playwright vào bản build local (`PW_CHROMIUM=…` nếu Chromium ở chỗ riêng) | ~1 phút |
-| `npm run shots` | chụp Hôm nay/Phiên học/Quiz/Hồ sơ ở 390·820·1280·1440 → `tools/shots/` | ~15 s |
+| `npm run shots` | chụp Hôm nay/Phiên học/Quiz/Hồ sơ ở 390·820·1280·1440, thêm lượt giảm chuyển động (`rm-*`, 390·1280), ảnh ghép `sheet.png` và báo cáo tương phản đo trên ảnh thật `contrast.txt` → `tools/shots/` | ~80 s |
 
 Build cho Pages: `BASE_PATH=/Law/ npm run build`.
 
