@@ -37,8 +37,11 @@
     {#if sidenav.study}
       <div class="side-study"><p class="kicker">Đang học</p><p class="ss-subject" title={sidenav.study.subject}>{sidenav.study.subject}</p><p class="ss-lesson small muted">{sidenav.study.lesson}</p><a class="ss-go small" href={sidenav.study.href}>Học tiếp →</a></div>
     {/if}
-    <div class="side-shelf"><p class="kicker">Tủ sách</p><Bookshelf size="side" /></div>
-    <SideProfile />
+    <!-- Tủ kính mini + thẻ chuyên cần = MỘT khối gỗ-kính: kệ sách sau ô kính, thẻ chuỗi/chức danh/tiến độ là biển gắn chân tủ -->
+    <div class="side-cab">
+      <div class="side-shelf"><p class="kicker">Tủ sách</p><div class="side-glass"><Bookshelf size="side" /></div></div>
+      <SideProfile />
+    </div>
   </nav>
 
   <main class="content" id="main" tabindex="-1">
