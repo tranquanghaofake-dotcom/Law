@@ -18,7 +18,7 @@ describe('sách theo chương', () => {
   });
   it('mỗi chương một sách, gắn lĩnh vực; khái niệm chưa học tính bậc 0', () => {
     const books = collectBooks([hp], { a: 3, b: 4, c: 5, d: 6 }, {});
-    expect(books.map((b) => [b.key, b.level, b.field])).toEqual([['hien-phap/c7-quoc-hoi', 1, 'lap-phap'], ['hien-phap/c9-chinh-phu', 3, 'hanh-phap']]);
+    expect(books.map((b) => [b.key, b.level, b.field])).toEqual([['hien-phap/c7-quoc-hoi', 1, 'lap-phap'], ['hien-phap/c9-chinh-phu', 3, 'bo-may']]);
   });
   it('sách giữ cấp cao nhất đã đạt; tụt bậc chỉ bật cờ "cần ôn"', () => {
     const stored = { 'hien-phap/c7-quoc-hoi': { level: 3 as const, at: '2026-11-01' } };

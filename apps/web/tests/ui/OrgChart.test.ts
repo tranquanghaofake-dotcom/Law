@@ -37,7 +37,7 @@ describe('OrgChart (cây chức vụ dọc)', () => {
     const first = render(OrgChart);
     expect(first.container.querySelector('.org-col .org-start')?.getAttribute('data-rail')).toBe('live');
     cleanup();
-    shelf.books = [book('a', 'dia-phuong', 1), book('b', 'hien-phap', 1)];
+    shelf.books = [book('a', 'hanh-chinh', 1), book('b', 'hien-phap', 1)];
     const { container } = render(OrgChart);
     expect(container.querySelector('.org-col .org-start')?.getAttribute('data-rail')).toBe('fill');
     expect(nodeOf(container, 'Công chức cấp xã').closest('.org-prow')?.getAttribute('data-rail')).toBe('live');
@@ -63,7 +63,7 @@ describe('OrgChart (cây chức vụ dọc)', () => {
     expect(items[3].textContent).toContain('0/5 chức');
   });
   it('có sách đủ cho chức đầu: nút đó "done" (ấn son), chức sau "next"', () => {
-    shelf.books = [book('a', 'dia-phuong', 1), book('b', 'hien-phap', 1)];
+    shelf.books = [book('a', 'hanh-chinh', 1), book('b', 'hien-phap', 1)];
     const { container } = render(OrgChart);
     const first = nodeOf(container, 'Công chức cấp xã');
     expect(first.dataset.status).toBe('done');

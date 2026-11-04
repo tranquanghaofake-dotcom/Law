@@ -47,7 +47,7 @@ describe('tủ trưng bày gắn với cây (CareerPanel + CareerSection)', () =
     await settle();
   });
   it('xem trước chức đã đạt: không khoá, ghi "Đã đạt"', async () => {
-    shelf.books = [book('a', 'dia-phuong', 1), book('b', 'hien-phap', 1), book('c', 'hien-phap', 1)];
+    shelf.books = [book('a', 'hanh-chinh', 1), book('b', 'hien-phap', 1), book('c', 'hien-phap', 1)];
     const { container } = render(CareerPanel, { props: { stacked: false, selected: postOf('pho-chu-tich-xa', shelf.books) } });
     // phó chủ tịch xã chưa đạt (cần thêm sách) → khoá; công chức xã đã đạt và là chức hiện tại → không phải xem trước
     expect(container.querySelector('figure.showcase')?.classList.contains('locked')).toBe(true);
