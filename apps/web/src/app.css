@@ -381,6 +381,10 @@ kbd { font: 600 var(--fs-xs)/1 var(--font-ui); background: rgba(255,255,255,.18)
 .confirm { margin-bottom: var(--sp-3); border-color: var(--accent); }
 .row { display: flex; gap: var(--sp-3); flex-wrap: wrap; margin-top: var(--sp-3); }
 .row .btn { flex: 1; }
+.import-confirm { margin-top: var(--sp-3); padding: var(--sp-3) var(--sp-4); border: 1px solid var(--accent); border-radius: var(--r-md); background: color-mix(in srgb, var(--accent) 6%, var(--card)); }
+.import-confirm p { margin: 0 0 var(--sp-2); }
+.import-err { color: var(--bad, var(--ink)); }
+.linklike { padding: 0; border: 0; background: none; font: inherit; color: var(--accent-text); text-decoration: underline; cursor: pointer; }
 .lesson-panel ul { list-style: none; padding: 0; margin: 0 0 var(--sp-3); display: grid; gap: var(--row-gap); }
 .lesson-panel li { display: flex; align-items: center; gap: var(--sp-3); padding: var(--sp-2) var(--sp-3); border-radius: var(--r-md); border: 1px solid var(--line); background: var(--card); }
 .lesson-panel li.current { border-color: var(--accent); box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 30%, transparent); }

@@ -1,7 +1,7 @@
 <script lang="ts">
   import Glyph from '$lib/art/Glyph.svelte';
   import { settings, saveSetting } from '$lib/store/settings.svelte';
-  import { repo } from '$lib/store/progress-repo';
+  import { repo, parseExport } from '$lib/store/progress-repo';
   import { storage } from '$lib/store/status.svelte';
   import { tts } from '$lib/fx/tts.svelte';
   import { sfx } from '$lib/fx/sfx';
@@ -19,15 +19,35 @@
     a.href = URL.createObjectURL(blob); a.download = `luyen-luat-${new Date().toISOString().slice(0, 10)}.json`; a.click();
     URL.revokeObjectURL(a.href);
   }
-  async function importData(e: Event) {
-    const f = (e.target as HTMLInputElement).files?.[0];
+  // Nhập dữ liệu hai bước: đọc + tóm tắt file trước, chỉ ghi khi người dùng xác nhận (ghi đè không hoàn tác được).
+  let pending = $state<{ json: string; name: string; concepts: number; reviews: number; overwrite: number } | null>(null);
+  let err = $state('');
+  async function pickFile(e: Event) {
+    const input = e.target as HTMLInputElement;
+    const f = input.files?.[0];
+    input.value = ''; // chọn lại cùng file vẫn kích hoạt change
     if (!f) return;
+    msg = ''; err = ''; pending = null;
     try {
-      await repo.importAll(await f.text());
+      const json = await f.text();
+      const d = parseExport(json);
+      const ids = new Set((d.concepts ?? []).map((c) => c.conceptId));
+      const overwrite = (await repo.all()).filter((c) => ids.has(c.conceptId)).length;
+      pending = { json, name: f.name, concepts: ids.size, reviews: d.reviews?.length ?? 0, overwrite };
+    } catch (x) {
+      err = x instanceof SyntaxError ? 'File không đúng định dạng JSON.' : (x as Error).message || 'File không hợp lệ.';
+    }
+  }
+  async function confirmImport() {
+    if (!pending) return;
+    const p = pending;
+    try {
+      await repo.importAll(p.json);
       // làm mới các số liệu đang hiển thị (header, thanh bên, tủ sách) để không phải tải lại trang
       await Promise.all([refreshHeader(), refreshSidenav(), refreshShelf()]);
-      msg = 'Đã nhập dữ liệu.';
-    } catch { msg = 'File không hợp lệ.'; }
+      pending = null;
+      msg = `Đã nhập ${p.concepts} khái niệm, ${p.reviews} lượt ôn.`;
+    } catch (x) { pending = null; err = `Không nhập được: ${(x as Error).message}`; }
   }
 </script>
 
@@ -52,7 +72,19 @@
   <p class="muted small">Tiến độ lưu trong trình duyệt này. Xuất file để chuyển máy hoặc lưu dự phòng.</p>
   <div class="row">
     <button class="btn ghost plain" type="button" onclick={exportData}>Xuất dữ liệu</button>
-    <label class="btn ghost plain">Nhập dữ liệu<input type="file" accept="application/json" class="sr-only" onchange={importData} /></label>
+    <label class="btn ghost plain">Nhập dữ liệu<input type="file" accept="application/json" class="sr-only" onchange={pickFile} /></label>
   </div>
+  {#if pending}
+    <div class="import-confirm" role="group" aria-label="Xác nhận nhập dữ liệu">
+      <p>File <b>{pending.name}</b> có <b>{pending.concepts} khái niệm</b> và <b>{pending.reviews} lượt ôn</b>.</p>
+      {#if pending.overwrite}<p class="small"><Glyph name="warn" size={16} /> {pending.overwrite} khái niệm đang có tiến độ trên máy này sẽ bị ghi đè bằng dữ liệu trong file. Không hoàn tác được — nên <button type="button" class="linklike" onclick={exportData}>xuất bản sao lưu</button> trước.</p>
+      {:else}<p class="small muted">Không khái niệm nào trên máy này bị ghi đè.</p>{/if}
+      <div class="row">
+        <button type="button" class="btn" onclick={confirmImport}>Nhập và ghi đè</button>
+        <button type="button" class="btn ghost plain" onclick={() => (pending = null)}>Huỷ</button>
+      </div>
+    </div>
+  {/if}
+  {#if err}<p role="alert" class="import-err"><Glyph name="warn" size={16} /> {err}</p>{/if}
   {#if msg}<p role="status">{msg}</p>{/if}
 </section>
