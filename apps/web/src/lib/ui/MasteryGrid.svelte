@@ -28,7 +28,7 @@
           <ul class="cells" aria-label="Bậc từng khái niệm của đợt {l.title}">
             {#each l.concepts as c (c)}
               {@const lv = levels[c] ?? 0}
-              <li><a class="cell-item" href={hashFor('concepts', { subject: subject.id, concept: c })} title="{terms[c] ?? c} · bậc {lv} · {LEVEL_NAMES[lv]}" aria-label="{terms[c] ?? c}: bậc {lv}, {LEVEL_NAMES[lv]}"><span class="cell cell-n lv{lv}" aria-hidden="true">{lv}</span><span class="cell-term" aria-hidden="true">{terms[c] ?? c}</span></a></li>
+              <li><a class="cell-item" href={hashFor('concepts', { subject: subject.id, concept: c })} title="{terms[c] ?? c} · bậc {lv} · {LEVEL_NAMES[lv]}"><span class="cell cell-n lv{lv}" aria-hidden="true">{lv}</span><span class="cell-term">{terms[c] ?? c}</span><span class="sr-only">, bậc {lv}, {LEVEL_NAMES[lv]}</span></a></li>
             {/each}
           </ul>
         </li>

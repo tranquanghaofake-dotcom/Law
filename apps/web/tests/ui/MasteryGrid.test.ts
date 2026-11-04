@@ -55,3 +55,13 @@ describe('MasteryGrid — cấu trúc heading và bậc không chỉ bằng màu
     expect(container.querySelector('#lesson-hp-1')?.textContent).not.toContain('Chưa mở');
   });
 });
+
+describe('MasteryGrid — tên truy cập khớp chữ nhìn thấy (axe label-content-name-mismatch)', () => {
+  it('ô khái niệm không dùng aria-label; tên = tên khái niệm + bậc (chữ số trong ô ẩn với trình đọc)', () => {
+    const { container } = render(MasteryGrid, { props: { subject, levels: { a: 6 }, terms, states: {} } });
+    const a = container.querySelector('.cell-item')!;
+    expect(a.hasAttribute('aria-label')).toBe(false);
+    expect(a.querySelector('.cell')?.getAttribute('aria-hidden')).toBe('true');
+    expect(a.querySelector('.sr-only')?.textContent).toBe(', bậc 6, Tinh thông');
+  });
+});
