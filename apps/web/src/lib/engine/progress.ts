@@ -18,9 +18,11 @@ export const SPACED_FROM = 4;
 /**
  * Bậc sau một câu trả lời có xét giãn cách. `upDay` = ngày (YYYY-MM-DD, giờ địa phương) lần lên bậc gần nhất; `today` = ngày trả lời.
  * `held` = đúng nhưng bị giữ bậc vì cùng ngày (để giao diện giải thích). Dữ liệu cũ không có `upDay` thì được lên.
+ * `partial` = tự chấm "Gần đúng" (tự nhớ lại): giữ nguyên bậc — nhớ chưa đủ để lên, cũng không phải quên.
  */
-export function stepLevel(level: Level, correct: boolean, upDay: string | undefined, today: string): { level: Level; upDay?: string; held: boolean } {
+export function stepLevel(level: Level, correct: boolean, upDay: string | undefined, today: string, partial = false): { level: Level; upDay?: string; held: boolean } {
   if (!correct) return { level: nextLevel(level, false), upDay, held: false };
+  if (partial) return { level, upDay, held: false };
   const to = nextLevel(level, true);
   if (to === level) return { level, upDay, held: false };
   if (to >= SPACED_FROM && upDay === today) return { level, upDay, held: true };

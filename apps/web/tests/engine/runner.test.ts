@@ -155,4 +155,10 @@ describe('runner đợt 6: câu vàng, combo dài nhất, vòng sửa sai', () =
     expect(r.state.levels.a).toBe(3);
     expect(summary(r.state).held).toBe(1);
   });
+  it('tự chấm "Gần đúng": vẫn tính đúng (XP, combo) nhưng giữ bậc', () => {
+    const r = answer(createRunner([mcq('a')], { a: 2 }, {}, '2026-11-04'), { correct: true, elapsedMs: 9000, selfGrade: 'gan' });
+    expect(r.state.levels.a).toBe(2);
+    expect(r.levelUp).toBe(false);
+    expect(r.xpGained).toBe(10);
+  });
 });

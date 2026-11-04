@@ -1,6 +1,7 @@
 import { beforeEach, describe, expect, it } from 'vitest';
 import { IDBFactory } from 'fake-indexeddb';
 import Dexie from 'dexie';
+import { Rating } from 'ts-fsrs';
 import { createRepo } from '$lib/store/progress-repo';
 
 const now = new Date('2026-11-01T08:00:00Z');
@@ -35,6 +36,14 @@ describe('progress repo (IndexedDB)', () => {
     expect(p.level).toBe(4);
     expect(p.upDay).toBeTruthy();
     expect((await repo.upDays(['a', 'zzz']))).toEqual({ a: p.upDay });
+  });
+
+  it('tự chấm "Gần đúng" (rating.partial): giữ bậc, rating Hard', async () => {
+    const repo = createRepo('t-partial');
+    await repo.record({ conceptId: 'a', subject: 'hp', correct: true, elapsedMs: 3000, now });
+    const p = await repo.record({ conceptId: 'a', subject: 'hp', correct: true, elapsedMs: 3000, now: new Date(now.getTime() + 86400000), rating: { mode: 'produce', partial: true } });
+    expect(p.level).toBe(1);
+    expect(JSON.parse(await repo.exportAll()).reviews.at(-1).rating).toBe(Rating.Hard);
   });
 
   it('levels: thiếu → 0', async () => {

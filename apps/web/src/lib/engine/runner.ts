@@ -67,7 +67,7 @@ export function answer(s: RunnerState, r: AnswerResult): { state: RunnerState; l
   const pretest = isPretest(step);
   const golden = !retry && !pretest && !!step.meta?.golden;
   const off = intro || retry || pretest;
-  const lv = off ? null : stepLevel(before, r.correct, s.upDays[step.conceptId], s.today ?? localDay(new Date()));
+  const lv = off ? null : stepLevel(before, r.correct, s.upDays[step.conceptId], s.today ?? localDay(new Date()), r.selfGrade === 'gan');
   const after = lv ? lv.level : before;
   const parts = intro || pretest ? ZERO : xpBreakdown(r.correct, s.combo, { golden, retry });
   const combo = intro || retry || pretest ? s.combo : r.correct ? s.combo + 1 : 0;

@@ -41,3 +41,9 @@ describe('stepLevel — bậc ≥ 4 phải qua giãn cách', () => {
     expect(stepLevel(4, true, undefined, d1)).toEqual({ level: 5, upDay: d1, held: false });
   });
 });
+
+describe('stepLevel — tự chấm "Gần đúng"', () => {
+  it('giữ nguyên bậc (không lên, không tụt), không đổi ngày lên bậc', () => {
+    expect(stepLevel(4, true, '2026-11-01', '2026-11-04', true)).toEqual({ level: 4, upDay: '2026-11-01', held: false });
+  });
+});

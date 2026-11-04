@@ -39,7 +39,7 @@ function applyRecord(prev: ConceptProgress | undefined, p: RecordInput): { next:
   const card = prev?.card ?? newCard(p.now);
   const rating = ratingFor(p.correct, p.elapsedMs, level, p.rating);
   const r = review(card, rating, p.now, p.retention ?? 0.9);
-  const lv = stepLevel(level, p.correct, prev?.upDay, localDay(p.now));
+  const lv = stepLevel(level, p.correct, prev?.upDay, localDay(p.now), !!p.rating?.partial);
   const next: ConceptProgress = {
     conceptId: p.conceptId,
     subject: p.subject,
