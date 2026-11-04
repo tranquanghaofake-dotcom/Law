@@ -2,7 +2,6 @@
   import type { Concept, Level } from '$lib/content/types';
   import { clozeModeFor, type Step } from '$lib/engine/session';
   import { recordsProgress } from '$lib/engine/step';
-  import { isHypercorrection, shouldAskConfidence, type Confidence } from '$lib/engine/confidence';
   import { answer as runAnswer, createRunner, isLast, mistakes, next as runNext, summary, type RunnerState } from '$lib/engine/runner';
   import { repo } from '$lib/store/progress-repo';
   import { stats } from '$lib/store/stats';
@@ -12,7 +11,8 @@
   import { applySession, type StreakEvent } from '$lib/game/streak';
   import { sfx } from '$lib/fx/sfx';
   import { burst, reducedMotion } from '$lib/fx/confetti';
-  import { buzz } from '$lib/fx/haptics';
+  import { buzz, buzzCombo } from '$lib/fx/haptics';
+  import { sparks, stampConfetti } from '$lib/fx/sparks';
   import { tts } from '$lib/fx/tts.svelte';
   import { refreshHeader } from '$lib/ui/header.svelte';
   import { refreshSidenav } from '$lib/ui/sidenav.svelte';
@@ -26,7 +26,7 @@
   import LessonStrip from '$lib/ui/LessonStrip.svelte';
   import SessionEnd from '$lib/ui/SessionEnd.svelte';
   import { isTypingTarget } from '$lib/ui/cards/types';
-  import { onDestroy, onMount } from 'svelte';
+  import { onDestroy, onMount, tick } from 'svelte';
   import { feedbackSpeech } from '$lib/ui/session/speech';
   import { barMarks } from '$lib/ui/session/marks';
   import { submitRecord } from '$lib/ui/session/record';
@@ -34,17 +34,13 @@
   import type { XpFloat } from '$lib/ui/session/combo';
   import FloatXp from '$lib/ui/session/FloatXp.svelte';
   import BossIntro from '$lib/ui/session/BossIntro.svelte';
-  import ConfidenceBar from '$lib/ui/session/ConfidenceBar.svelte';
-  import HyperNote from '$lib/ui/session/HyperNote.svelte';
   import PretestBar from '$lib/ui/session/PretestBar.svelte';
   import { getPref } from '$lib/ui/session/prefs';
   import { hintSeen, markHintSeen } from '$lib/ui/hints';
   import { go } from '$lib/router.svelte';
-  import ComboEdge from '$lib/ui/session/ComboEdge.svelte';
-  import WonderBackdrop from '$lib/ui/session/WonderBackdrop.svelte';
-  import { loadWonder, pickWonderId, type Wonder } from '$lib/fx/wonders';
-  import { pickStrokes, strokesPerCorrect } from '$lib/fx/wonders/lighting';
-  import { edgeGlow, fireStyle, type GlowTier } from '$lib/ui/session/combo';
+  import { edgeGlow, fireStyle, glowLevel } from '$lib/ui/session/combo';
+  import ComboStamp from '$lib/ui/session/ComboStamp.svelte';
+  import { stampFor, TIMING, type Stamp } from '$lib/ui/session/reward';
 
   let { steps, concepts, levels, lessonId, onagain, onnext, title }: {
     steps: Step[]; concepts: Concept[]; levels: Record<string, Level>; lessonId?: string; onagain?: () => void; onnext?: () => void; title?: string;
@@ -55,15 +51,15 @@
   let result = $state<AnswerResult | null>(null);
   let ended = $state<null | { streak: number; streakEvent: StreakEvent; rankBefore: RankInfo; rankAfter: RankInfo; dueTomorrow: number; promotion: string | null }>(null);
   let confirmExit = $state(false);
-  // gợi ý một lần: viền sáng theo chuỗi đúng và nền kỳ quan sáng dần (không chặn học, tắt bằng một chạm)
+  // gợi ý một lần: lửa chuỗi và dấu mộc theo mốc (không chặn học, tắt bằng một chạm)
   let showHint = $state(!hintSeen('session-glow'));
   function dismissHint() { showHint = false; markHintSeen('session-glow'); }
   /** thông tin thưởng của câu vừa trả lời, hiện ở phản hồi */
   let reward = $state<{ xp: number; golden: boolean; levelTo: number | null; retry: boolean }>({ xp: 0, golden: false, levelTo: null, retry: false });
   let bossSeen = $state(-1);
-  /** độ tự tin người học chọn cho bước hiện tại (tuỳ chọn; xoá khi sang bước sau) */
-  let conf = $state<Confidence | undefined>(undefined);
-  const confOn = getPref('confidence');
+  /** dấu mộc "×3 CHUỖI!" và XP đang hiện ở bộ đếm (đếm lên sau khi chữ +XP bay tới) */
+  let stamp = $state<Stamp | null>(null);
+  let shownXp = $state(0);
   let floats = $state<XpFloat[]>([]);
   let floatId = 0;
   let sources = $state<ReturnType<typeof xpSources>>([]);
@@ -90,37 +86,16 @@
   const golden = $derived(!!step?.meta?.golden && step.item.type !== 'intro');
   const retry = $derived(step?.meta?.kind === 'retry');
   const pretest = $derived(step?.meta?.kind === 'pretest');
-  // hỏi độ tự tin ở nửa số câu từ bậc 2 (nhẹ phiên); chỉ khi chưa trả lời; không hỏi ở ghép cặp (dùng phím A–D)
-  const askConf = $derived(confOn && !result && !!step && step.item.type !== 'match' && shouldAskConfidence(step, run.i, { minLevel: 2, every: 2 }));
-  const hyper = $derived(!!result && isHypercorrection(result.correct, result.conf));
   // câu đoán khái niệm từ định nghĩa/ví dụ: không tô khái niệm đang hỏi (lộ đáp án)
   const hideCurrent = $derived(step?.meta?.gen === 'def-term' || step?.meta?.gen === 'example-concept');
 
-  // nền: một kỳ quan Việt Nam ngẫu nhiên mỗi phiên, mỗi câu đúng sáng thêm vài nét theo mốc chuỗi
-  let wonder = $state<Wonder | null>(null);
-  let lit = $state<{ i: number; tier: GlowTier }[]>([]);
-  // câu đúng khi kỳ quan chưa nạp xong: cộng dồn số nét chờ (theo bậc màu lúc đó), áp ngay khi nạp xong
-  let pending: { n: number; tier: GlowTier }[] = [];
-  onMount(() => {
-    loadWonder(pickWonderId(rng)).then((w) => {
-      wonder = w;
-      const q = pending; pending = [];
-      for (const p of q) apply(p.n, p.tier);
-    }).catch(() => {});
-  });
-  function apply(n: number, tier: GlowTier) {
-    if (!wonder) return;
-    const add = pickStrokes(wonder.paths.length, lit.map((l) => l.i), n, rng);
-    if (add.length) lit = [...lit, ...add.map((i) => ({ i, tier }))];
-  }
-  function lightWonder(combo: number) {
-    const tier = edgeGlow(combo).tier;
-    if (!tier) return;
-    if (!wonder) pending.push({ n: strokesPerCorrect(combo), tier }); else apply(strokesPerCorrect(combo), tier);
-  }
-
   sfx.preload();
-  onDestroy(() => { tts.stop(); sfx.stopCombo(); floatTimers.forEach(clearTimeout); });
+  onDestroy(() => { tts.stop(); sfx.stopCombo(); floatTimers.forEach(clearTimeout); floatTimers.clear(); });
+  /** hẹn giờ có dọn khi huỷ component */
+  function later(fn: () => void, ms: number) {
+    const t = setTimeout(() => { floatTimers.delete(t); fn(); }, ms);
+    floatTimers.add(t);
+  }
 
   // chữ "+10" bay lên ở chỗ vừa bấm; bàn phím thì bay từ giữa thẻ câu hỏi
   const floatTimers = new Set<ReturnType<typeof setTimeout>>();
@@ -130,14 +105,18 @@
     if (lastPoint && Date.now() - lastPoint.t < 1500) { x = lastPoint.x; y = lastPoint.y; }
     else { const r = document.querySelector('.question-card')?.getBoundingClientRect(); if (r) { x = r.left + r.width / 2; y = r.top + Math.min(r.height / 2, 160); } }
     const id = (floatId += 1);
-    floats = [...floats, { id, x: Math.min(Math.max(x, 40), window.innerWidth - 40), y: Math.max(y, 60), text, golden: gold, fire: run.combo > 0 ? fireStyle(run.combo) : undefined }];
+    const fx = Math.min(Math.max(x, 40), window.innerWidth - 40), fy = Math.max(y, 60);
+    const chip = document.querySelector('.session-bar .xp-chip')?.getBoundingClientRect();
+    const fly = chip ? { dx: chip.left + chip.width / 2 - fx, dy: chip.top + chip.height / 2 - fy } : {};
+    floats = [...floats, { id, x: fx, y: fy, text, golden: gold, fire: run.combo > 0 ? fireStyle(run.combo) : undefined, ...fly }];
     floatTimers.add(setTimeout(() => (floats = floats.filter((f) => f.id !== id)), 1100));
   }
   function onpointer(e: PointerEvent) { lastPoint = { x: e.clientX, y: e.clientY, t: Date.now() }; }
 
   async function onanswer(r0: AnswerResult) {
     const cur = step;
-    const r: AnswerResult = askConf && conf ? { ...r0, conf } : r0;
+    const comboBefore = run.combo;
+    const r: AnswerResult = r0;
     const isRetry = cur.meta?.kind === 'retry';
     const { state, levelUp, sfx: snd, xpGained } = runAnswer(run, r);
     run = state;
@@ -146,27 +125,50 @@
     if (settings.tts && tts.available) tts.speak(feedbackSpeech(cur.item, r));
     // ghi tiến độ NGAY sau mỗi câu (Review Focus #1); vòng sửa sai và câu đoán trước không ghi, không đổi bậc
     if (recordsProgress(cur)) {
-      try { await repo.record({ conceptId: cur.conceptId, subject: concept.subject, correct: r.correct, elapsedMs: r.elapsedMs, now: new Date(), retention: settings.retention, conf: r.conf }); } catch (e) { console.warn(e); }
+      try { await repo.record({ conceptId: cur.conceptId, subject: concept.subject, correct: r.correct, elapsedMs: r.elapsedMs, now: new Date(), retention: settings.retention }); } catch (e) { console.warn(e); }
     }
     if (xpGained) await stats.addXp(xpGained);
     const gold = !!cur.meta?.golden;
-    if (r.correct && snd === 'correct') sfx.playCombo(run.combo); else sfx.play(snd, { combo: run.combo });
-    buzz(r.correct ? 'ok' : 'bad');
-    if (r.correct) {
-      if (gold) sfx.play('golden');
-      lightWonder(run.combo);
+    // khoảnh khắc thưởng: dấu mộc ở mốc chuỗi (âm thanh dời về lúc dấu chạm giấy)
+    const calm = reducedMotion();
+    const fx = r.correct && snd === 'correct' ? stampFor(comboBefore, run.combo) : null;
+    const showStamp = !!fx && !calm;
+    if (r.correct && snd === 'correct') sfx.playCombo(run.combo, showStamp ? TIMING.stampLand : 0); else sfx.play(snd, { combo: run.combo });
+    if (!r.correct) buzz('bad'); else if (glowLevel(run.combo) > 0) buzzCombo(glowLevel(run.combo)); else buzz('ok');
+    if (r.correct && gold) sfx.play('golden');
+    if (fx && showStamp) {
+      stamp = fx;
+      if (fx.confetti) later(() => stampConfetti(fx.tier, fx.combo >= 10), TIMING.stampLand);
     }
     const up = levelUp && !isRetry;
     if (up) { sfx.play('levelup'); burst(run.levels[cur.conceptId] >= 6 ? 'levelup' : 'small'); }
     if (xpGained > 0) spawnFloat(`+${xpGained}`, gold);
+    // bộ đếm XP cộng dồn khi chữ +XP bay tới nơi (giảm chuyển động: cộng ngay)
+    if (xpGained > 0 && !calm) later(() => (shownXp = run.xp), TIMING.xpFly); else shownXp = run.xp;
     reward = { xp: xpGained, golden: gold && r.correct, levelTo: up ? run.levels[cur.conceptId] : null, retry: isRetry };
     result = r;
+    if (r.correct && !calm) { await tick(); celebrate(); }
+  }
+
+  /** nút đáp án đúng nảy lên và bung hạt sáng theo màu bậc, ngay từ nút đó (không có nút → chỗ vừa bấm / giữa thẻ câu hỏi) */
+  function celebrate() {
+    if (typeof document === 'undefined') return;
+    const el = document.querySelector<HTMLElement>('.step-wrap .opt.correct, .step-wrap .opt.locked');
+    let x = window.innerWidth / 2, y = window.innerHeight / 2;
+    if (el) { const b = el.getBoundingClientRect(); x = b.left + b.width / 2; y = b.top + b.height / 2; }
+    else if (lastPoint && Date.now() - lastPoint.t < 1500) { x = lastPoint.x; y = lastPoint.y; }
+    else { const b = document.querySelector('.question-card')?.getBoundingClientRect(); if (b) { x = b.left + b.width / 2; y = b.top + Math.min(b.height / 2, 160); } }
+    const level = glowLevel(run.combo);
+    sparks(x, y, edgeGlow(run.combo).tier ?? 'do', 10 + level * 5);
+    if (el) {
+      el.classList.remove('reward-bounce'); void el.offsetWidth; el.classList.add('reward-bounce');
+      later(() => el.classList.remove('reward-bounce'), 600);
+    }
   }
 
   function runNextStep() {
     tts.stop();
     result = null;
-    conf = undefined;
     run = runNext(run);
     if (run.done) finish();
   }
@@ -210,20 +212,19 @@
 </script>
 
 <svelte:window onkeydown={onkey} onpointerdowncapture={onpointer} />
-<WonderBackdrop {wonder} {lit} complete={!!ended} />
-<ComboEdge combo={ended ? 0 : run.combo} />
+{#if stamp}{#key stamp}<ComboStamp {stamp} onend={() => (stamp = null)} />{/key}{/if}
 <FloatXp {floats} />
 <div class="session-main">
   <h1 class="sr-only">{title ?? 'Phiên học'}</h1>
   {#if ended}
     <SessionEnd summary={summary(run)} {sources} {record} retryTotal={summary(run).retried} {concepts} streak={ended.streak} streakEvent={ended.streakEvent} rankBefore={ended.rankBefore} rankAfter={ended.rankAfter} dueTomorrow={ended.dueTomorrow} promotion={ended.promotion} onhome={() => go('home')} {onagain} {onnext} mistakes={mistakes(run)} />
   {:else if step && Card}
-    <SessionBar done={barDone} total={barTotal} {title} combo={run.combo} {marks} {inRetry} onexit={() => (confirmExit = true)} />
+    <SessionBar done={barDone} total={barTotal} {title} combo={run.combo} xp={shownXp} {marks} {inRetry} onexit={() => (confirmExit = true)} />
     {#if lessonId}<LessonStrip {concepts} levels={run.levels} current={hideCurrent ? '' : (step?.conceptId ?? '')} />{/if}
     {#if showHint}
       <aside class="card session-hint" aria-label="Gợi ý lần đầu">
         <p class="kicker">Lần đầu học ở đây</p>
-        <p>Trả lời đúng liên tiếp, <b>viền màn hình sáng dần</b> theo từng mốc chuỗi. Mỗi câu đúng cũng <b>thắp thêm một nét</b> của bức tranh kỳ quan Việt Nam ở nền. Sai thì chuỗi về 0, không mất điểm đã có.</p>
+        <p>Trả lời đúng liên tiếp để <b>giữ lửa chuỗi</b>: lửa đổi màu theo từng mốc, lên mốc sẽ có <b>dấu mộc</b> và thưởng XP nhân thêm. Sai thì chuỗi về 0, không mất điểm đã có.</p>
         <button class="btn" type="button" onclick={dismissHint}>Ẩn gợi ý</button>
       </aside>
     {/if}
@@ -241,13 +242,11 @@
         {:else if retry}<p class="step-badge retry">Sửa sai · không ghi vào tiến độ nhớ</p>
         {:else if step.meta?.kind === 'boss'}<p class="step-badge boss">Câu chốt</p>{/if}
         {#if pretest}<PretestBar answered={!!result} onskip={skipPretest} />{/if}
-        {#if askConf}<ConfidenceBar value={conf} onpick={(c) => (conf = c)} />{/if}
         {#key run.i}
           <Card {concept} item={step.item} meta={step.meta} {rng} {onanswer} onspeak={speak} mode={clozeMode} />
         {/key}
       </div>
       {#if result}
-        {#if hyper}<HyperNote term={concept.term} confusableTerms={confusableConcepts.map((c) => c.term)} retry={reward.retry} />{/if}
         <Feedback {result} item={step.item} {concept} {confusableTerms} confusables={confusableConcepts} {compareWith} onnext={runNextStep} onspeak={speak} last={isLast(run)} xp={reward.xp} golden={reward.golden} levelTo={reward.levelTo} retry={reward.retry} />
       {/if}
     {/if}

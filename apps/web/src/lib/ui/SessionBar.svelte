@@ -1,8 +1,9 @@
 <script lang="ts">
   import ComboMeter from '$lib/ui/session/ComboMeter.svelte';
   import { fireStyle, glowLevel } from '$lib/ui/session/combo';
+  import XpCounter from '$lib/ui/session/XpCounter.svelte';
   import type { BarMark } from '$lib/ui/session/marks';
-  let { done = 0, total = 1, onexit, title, combo = 0, marks = [], inRetry = false }: { done?: number; total?: number; onexit?: () => void; title?: string; combo?: number; marks?: BarMark[]; inRetry?: boolean } = $props();
+  let { done = 0, total = 1, onexit, title, combo = 0, marks = [], inRetry = false, xp }: { xp?: number; done?: number; total?: number; onexit?: () => void; title?: string; combo?: number; marks?: BarMark[]; inRetry?: boolean } = $props();
   const pct = $derived(total ? Math.min(100, (done / total) * 100) : 0);
 
   // màu thanh theo đúng mốc của viền và ngọn lửa (combo.ts); chuỗi về 0 thì giữ màu cũ trong lúc mờ đi
@@ -22,5 +23,6 @@
     <em class="head" class:on={head} aria-hidden="true" style="left:{pct}%"></em>
   </div>
   <ComboMeter {combo} />
+  {#if xp !== undefined}<XpCounter value={xp} />{/if}
   <span class="count">{inRetry ? 'Sửa sai ' : ''}{done}/{total}</span>
 </div>

@@ -1,7 +1,6 @@
 <script lang="ts">
   import StreakPanel from '$lib/ui/StreakPanel.svelte';
-  import CalibrationPanel from '$lib/ui/CalibrationPanel.svelte';
-  import StreakBadge from '$lib/art/StreakBadge.svelte';
+    import StreakBadge from '$lib/art/StreakBadge.svelte';
   import Bookcase from '$lib/ui/Bookcase.svelte';
   import CareerSection from '$lib/ui/career/CareerSection.svelte';
   import Glyph from '$lib/art/Glyph.svelte';
@@ -180,7 +179,6 @@
                   <CareerSection bind:this={careerSec} />
                 {:else}
                   <StreakPanel {streak} {xp} {week} {byLevel} />
-                  <CalibrationPanel />
                 {/if}
               </div>
             {/if}

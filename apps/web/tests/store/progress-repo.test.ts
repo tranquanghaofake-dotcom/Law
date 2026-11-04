@@ -101,4 +101,18 @@ describe('progress repo — fallback chỉ khi IndexedDB không mở được (C
     expect([...days].sort()).toEqual(['2026-10-30', '2026-10-31']);
     expect((await repo.reviewDays(new Date(2026, 9, 31))).has('2026-10-30')).toBe(false);
   });
+
+  it('importAll file xuất cũ: bỏ hyperAt/conf, giữ phần còn lại', async () => {
+    const repo = createRepo('t-old');
+    const old = JSON.stringify({ v: 1,
+      concepts: [{ conceptId: 'a', subject: 'hp', level: 2, card: { due: '2026-11-02T00:00:00Z' }, wrongStreak: 0, updatedAt: 5, hyperAt: 9 }],
+      reviews: [{ id: 1, conceptId: 'a', rating: 3, level: 1, elapsedMs: 900, at: 7, conf: 'chac' }] });
+    await repo.importAll(old);
+    const c = (await repo.all())[0] as unknown as Record<string, unknown>;
+    expect(c.level).toBe(2);
+    expect('hyperAt' in c).toBe(false);
+    const exported = JSON.parse(await repo.exportAll());
+    expect('conf' in exported.reviews[0]).toBe(false);
+    expect(exported.reviews[0].rating).toBe(3);
+  });
 });

@@ -46,7 +46,7 @@ describe('cây chức vụ (orgTree)', () => {
     expect(t.head?.status).toBe('locked');
   });
   it('có sách cấp 1 đủ cho chức đầu: chức đó "done", chức sau thành "next", số đếm khớp', () => {
-    const books = [...many('dia-phuong', 1, 1), ...many('hien-phap', 1, 1)];
+    const books = [...many('hanh-chinh', 1, 1), ...many('hien-phap', 1, 1)];
     const t = build(books);
     const hp = t.branches.find((b) => b.branch === 'hanh-phap')!;
     const posts = hp.tiers.flatMap((x) => x.posts);
@@ -58,7 +58,7 @@ describe('cây chức vụ (orgTree)', () => {
     expect(t.done).toBeGreaterThanOrEqual(1);
   });
   it('mỗi chức mang điều kiện sách (detail) và số sách đang có/cần; chức đã đạt có have = need', () => {
-    const books = [...many('dia-phuong', 1, 1), ...many('hien-phap', 1, 1)];
+    const books = [...many('hanh-chinh', 1, 1), ...many('hien-phap', 1, 1)];
     const t = build(books);
     const [first, second] = t.branches[0].tiers[0].posts;
     expect(first.detail.length).toBe(first.post.reqs.length);
@@ -73,7 +73,7 @@ describe('cây chức vụ (orgTree)', () => {
     expect(none.head?.status).toBe('locked');
   });
   it('trạng thái nhất quán với careerState; mỗi nhánh tối đa một "next"', () => {
-    const books = [...many('dia-phuong', 2, 3), ...many('hien-phap', 2, 6), ...many('quyen-cong-dan', 2, 2), ...many('hanh-phap', 2, 1), ...many('bau-cu', 2, 1), ...many('lap-phap', 2, 1)];
+    const books = [...many('hanh-chinh', 2, 3), ...many('hien-phap', 2, 6), ...many('quyen-cong-dan', 2, 2), ...many('bo-may', 2, 1), ...many('ly-luan', 2, 1), ...many('lap-phap', 2, 1)];
     const cs = careerState(books);
     const t = orgTree(POSTS, cs, books);
     for (const p of flat(t)) expect(p.status === 'done').toBe(cs.achieved.has(p.id));
@@ -118,14 +118,14 @@ describe('orgColumn — cột dọc của một nhánh (lãnh đạo ở trên, 
     for (const r of c.rows.slice(2)) expect(r.rail).toBe('dim');
   });
   it('đã đạt chức đầu: đường từ gốc tới chức đó tô màu; đoạn nối tới chức kế tiếp chạy; phía trên mờ', () => {
-    const c = col([...many('dia-phuong', 1, 1), ...many('hien-phap', 1, 1)]);
+    const c = col([...many('hanh-chinh', 1, 1), ...many('hien-phap', 1, 1)]);
     expect(c.start).toBe('fill');
     expect(c.nextId).toBe('pho-chu-tich-xa');
     expect(c.rows[idx(c, 'cong-chuc-xa')].rail).toBe('live');
     expect(c.rows[idx(c, 'chu-tich-xa')].rail).toBe('dim');
   });
   it('đã đạt hai chức đầu: đoạn dưới chức kế tiếp chạy, đoạn dưới chức đã đạt tô màu', () => {
-    const c = col([...many('dia-phuong', 1, 1), ...many('hien-phap', 1, 2), ...many('quyen-cong-dan', 1, 1), ...many('hanh-phap', 1, 2)]);
+    const c = col([...many('hanh-chinh', 1, 6), ...many('hien-phap', 1, 1), ...many('ly-luan', 1, 2), ...many('quyen-cong-dan', 1, 1), ...many('bo-may', 1, 1)]);
     expect(c.done).toBe(2);
     expect(c.nextId).toBe('chu-tich-xa');
     expect(c.rows[idx(c, 'chu-tich-xa')].rail).toBe('dim');

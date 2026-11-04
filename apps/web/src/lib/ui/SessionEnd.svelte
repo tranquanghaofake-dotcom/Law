@@ -8,8 +8,8 @@
   import { LEVEL_NAMES } from '$lib/game/levels';
   import { reviewTexts } from './cards/answer';
   import type { XpSource } from './session/xpSources';
-  let { summary, concepts, streak, streakEvent, dueTomorrow, onhome, onagain, onnext, mistakes = [], promotion = null, sources = [], record = null, retryTotal: retryProp = 0 }: {
-    summary: { correct: number; total: number; xp: number; levelUps: { conceptId: string; to: Level }[]; bestCombo?: number; golden?: number; fixed?: number; retried?: number; hyper?: number; pretest?: { total: number; correct: number } };
+  let { summary, concepts, streak, streakEvent, dueTomorrow, onhome, onagain, onnext, mistakes = [], promotion = null, sources = [], record = null, retryTotal: retryProp = 0}: {
+    summary: { correct: number; total: number; xp: number; levelUps: { conceptId: string; to: Level }[]; bestCombo?: number; golden?: number; fixed?: number; retried?: number; pretest?: { total: number; correct: number } };
     concepts: Concept[]; streak: number; streakEvent: StreakEvent; rankBefore: RankInfo; rankAfter: RankInfo; dueTomorrow: number;
     onhome: () => void; onagain?: () => void; onnext?: () => void; mistakes?: Step[]; promotion?: string | null;
     /** XP chia theo nguồn */
@@ -44,7 +44,6 @@
         {#if summary.golden}<div><dt>Câu vàng</dt><dd>{summary.golden}</dd></div>{/if}
         {#if retryTotal > 0}<div><dt>Sửa được</dt><dd>{summary.fixed ?? 0}/{retryTotal}</dd></div>{/if}
         <div><dt>Tỉ lệ đúng</dt><dd>{Math.round(rate * 100)}%</dd></div>
-        {#if summary.hyper}<div><dt>Chắc mà sai</dt><dd>{summary.hyper}</dd></div>{/if}
         {#if summary.pretest && summary.pretest.total > 0}<div><dt>Đoán trước đúng</dt><dd>{summary.pretest.correct}/{summary.pretest.total}</dd></div>{/if}
       </dl>
     </div>
@@ -68,7 +67,6 @@
     </ul>
   {/if}
   <p class="muted">Hẹn ôn ngày mai: {dueTomorrow} khái niệm.</p>
-  {#if summary.hyper}<p class="hyper-end">Bạn có {summary.hyper} câu tin chắc mà sai. <a href={hashFor('review', { subject: 'chac-sai' })}>Sửa kỹ các khái niệm này</a> để lỗi tự tin cao không lặp lại.</p>{/if}
   <div class="row">
     <button class="btn primary" type="button" onclick={onhome}>Về Hôm nay</button>
     {#if onnext}<button class="btn ghost" type="button" onclick={onnext}>Học đợt tiếp →</button>

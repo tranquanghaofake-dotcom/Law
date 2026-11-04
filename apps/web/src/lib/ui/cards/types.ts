@@ -1,9 +1,7 @@
 import type { Concept } from '$lib/content/types';
 import type { StepItem, StepMeta } from '$lib/engine/session';
-import type { Confidence } from '$lib/engine/confidence';
 
-/** (đợt 7) `conf` tuỳ chọn: độ tự tin người học chọn trước khi xem đáp án (xem engine/confidence.ts). */
-export type AnswerResult = { correct: boolean; elapsedMs: number; chosen?: string; selfGrade?: 'dung' | 'gan' | 'sai'; conf?: Confidence };
+export type AnswerResult = { correct: boolean; elapsedMs: number; chosen?: string; selfGrade?: 'dung' | 'gan' | 'sai' };
 
 export type CardProps<I = StepItem> = {
   concept: Concept;

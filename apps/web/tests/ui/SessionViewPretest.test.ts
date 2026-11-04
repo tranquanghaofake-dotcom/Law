@@ -9,7 +9,7 @@ vi.mock('$lib/store/stats', () => ({
 const playCombo = vi.fn();
 vi.mock('$lib/fx/sfx', () => ({ sfx: { preload() {}, play() {}, playCombo: (...a: unknown[]) => playCombo(...a), stopCombo() {} } }));
 vi.mock('$lib/fx/confetti', () => ({ burst() {}, reducedMotion: () => true }));
-vi.mock('$lib/fx/haptics', () => ({ buzz() {} }));
+vi.mock('$lib/fx/haptics', () => ({ buzz() {}, buzzCombo() {} }));
 vi.mock('$lib/ui/header.svelte', () => ({ refreshHeader: async () => {} }));
 vi.mock('$lib/ui/sidenav.svelte', () => ({ refreshSidenav: async () => {} }));
 vi.mock('$lib/ui/shelf.svelte', () => ({ refreshShelf: async () => {} }));
@@ -33,41 +33,12 @@ const steps = (kind?: 'pretest'): Step[] => [
 beforeEach(() => { record.mockClear(); playCombo.mockClear(); localStorage.clear(); });
 afterEach(() => cleanup());
 
-describe('SessionView: độ tự tin', () => {
-  it('bước đầu (chỉ số 0) có thanh Chắc/Tạm/Đoán; chọn Chắc rồi trả lời sai → HyperNote + ghi conf vào repo.record', async () => {
-    const { container } = render(SessionView, { props: { steps: steps(), concepts: [concept], levels: { a: 2 } } });
-    expect(container.querySelector('.conf-bar')).not.toBeNull();
-    await fireEvent.click(container.querySelector('.conf-btn.conf-chac')!);
-    const opts = [...container.querySelectorAll('.opt')];
-    // phương án sai: bất kỳ nút không phải "Đúng"
-    await fireEvent.click(opts.find((o) => !o.textContent?.includes('Đúng'))!);
-    await vi.waitFor(() => expect(container.querySelector('.hyper-note')).not.toBeNull());
-    expect(record).toHaveBeenCalledTimes(1);
-    expect((record.mock.calls[0] as unknown[])[0]).toMatchObject({ conceptId: 'a', correct: false, conf: 'chac' });
-    expect(container.querySelector('.conf-bar')).toBeNull();
-  });
-  it('không chọn gì vẫn trả lời bình thường: không có conf, không có HyperNote', async () => {
-    const { container } = render(SessionView, { props: { steps: steps(), concepts: [concept], levels: { a: 2 } } });
-    await fireEvent.click([...container.querySelectorAll('.opt')].find((o) => !o.textContent?.includes('Đúng'))!);
-    await vi.waitFor(() => expect(container.querySelector('.feedback')).not.toBeNull());
-    expect(container.querySelector('.hyper-note')).toBeNull();
-    expect((record.mock.calls[0] as unknown[])[0]).toMatchObject({ correct: false });
-    expect((record.mock.calls[0] as { conf?: unknown }[])[0].conf).toBeUndefined();
-  });
-  it('tắt trong cài đặt (localStorage) thì không hiện thanh', () => {
-    localStorage.setItem('ll.pref.confidence', '0');
-    const { container } = render(SessionView, { props: { steps: steps(), concepts: [concept], levels: { a: 2 } } });
-    expect(container.querySelector('.conf-bar')).toBeNull();
-  });
-});
-
 describe('SessionView: đoán trước', () => {
   it('câu pretest: có "Bỏ qua"; bỏ qua sang thẻ giới thiệu ngay, KHÔNG ghi tiến độ', async () => {
     const pre: Step = { conceptId: 'a', level: 1, item: mcq(), meta: { kind: 'pretest', gen: 'example-concept', kicker: 'Đoán trước' } };
     const intro: Step = { conceptId: 'a', level: 0, item: { type: 'intro' } };
     const { container, getByRole } = render(SessionView, { props: { steps: [pre, intro, { conceptId: 'a', level: 1, item: mcq() }], concepts: [concept], levels: { a: 0 } } });
     expect(container.querySelector('.pretest-bar')).not.toBeNull();
-    expect(container.querySelector('.conf-bar')).toBeNull();
     await fireEvent.click(getByRole('button', { name: 'Bỏ qua' }));
     await vi.waitFor(() => expect(container.querySelector('.intro-layers')).not.toBeNull());
     expect(record).not.toHaveBeenCalled();
@@ -84,18 +55,14 @@ describe('SessionView: đoán trước', () => {
 
 describe('SessionView: hiệu ứng chuỗi đúng', () => {
   const click = (c: HTMLElement, right: boolean) => fireEvent.click([...c.querySelectorAll('.opt')].find((o) => !!o.textContent?.includes('Đúng') === right)!);
-  it('đúng → viền lên mốc 1, nét kỳ quan sáng thêm, phát playCombo(1); sai → viền về 0, nét giữ nguyên', async () => {
+  it('đúng → phát playCombo(1), không còn viền sáng hay nền kỳ quan; sai → chuỗi về 0', async () => {
     const { container, getByRole } = render(SessionView, { props: { steps: steps(), concepts: [concept], levels: { a: 2 } } });
-    const edge = () => container.querySelector('.combo-edge') as HTMLElement;
-    expect(edge().dataset.level).toBe('0');
     await click(container, true);
-    await vi.waitFor(() => expect(edge().dataset.level).toBe('1'));
-    expect(edge().dataset.tier).toBe('do');
-    expect(playCombo).toHaveBeenCalledWith(1);
-    await vi.waitFor(() => expect(container.querySelectorAll('.wonder .lit .core').length).toBe(3));
+    await vi.waitFor(() => expect(playCombo).toHaveBeenCalledWith(1, 0));
+    expect(container.querySelector('.combo-edge')).toBeNull();
+    expect(container.ownerDocument.querySelector('.wonder')).toBeNull();
     await fireEvent.click(getByRole('button', { name: /Câu tiếp/ }));
     await click(container, false);
-    await vi.waitFor(() => expect(edge().dataset.level).toBe('0'));
-    expect(container.querySelectorAll('.wonder .lit .core').length).toBe(3);
+    await vi.waitFor(() => expect(container.querySelector('.combo')?.textContent ?? '').not.toMatch(/\b1\b/));
   });
 });

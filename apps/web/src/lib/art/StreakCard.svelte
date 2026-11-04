@@ -8,7 +8,7 @@
   // (học kỹ thuật biến CSS theo con trỏ của pokemon-cards-css (GPL-3.0) và vanilla-tilt (MIT) — tự viết, không chép mã).
   import { cardFor, justLit, isMilestone, TIER_NAMES, type Tier } from '$lib/game/card';
   import { CARD_GLYPHS } from './cardGlyphs';
-  let { count = 0, longest = 0, size = 'full', ignite = false }: { count?: number; longest?: number; size?: 'full' | 'mini' | 'side'; ignite?: boolean } = $props();
+  let { count = 0, longest = 0, size = 'full', ignite = false }: { count?: number; longest?: number; size?: 'full' | 'mini'; ignite?: boolean } = $props();
   const c = $derived(cardFor(count, longest));
   const uid = `sc${++seq}`;
   // Nền doodle nét đơn phủ kín: 27 doodle pháp luật xếp 4 hàng so le (7 + 6 + 6 + 8), hai hàng giữa chừa chỗ logo;
@@ -68,7 +68,7 @@
   const lf = $derived(c.logo ? `url(#${uid}-lotus)` : `url(#${uid}-ash)`);
   const lg = $derived(c.logo ? FIRE[c.logo] : null);
   const fs = $derived(String(count).length >= 3 ? 40 : 54);
-  // size: 'full' (đầy đủ, nghiêng 3D, chú thích) · 'mini' (54 px) · 'side' (sidebar: rộng theo khung, cố định, không nghiêng/chuyển động).
+  // size: 'full' (đầy đủ, nghiêng 3D, chú thích) · 'mini' (54 px).
   // Rê chuột: độ nghiêng chạy theo lò xo (mỗi khung hình tiến 12% về đích) nên mượt, có quán tính; lớp doodle trôi ngược
   // chiều (parallax), logo nổi lên. Rời chuột: trôi êm về giữa rồi dừng vòng lặp.
   let el: HTMLDivElement | undefined = $state();

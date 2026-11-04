@@ -35,16 +35,17 @@ export const sfx = {
     for (const n of Object.keys(FILES) as SfxName[]) howl(n);
     for (const c of [1, 2, 3, 5, 8, 13]) for (const l of comboSfxPlan(c)) howlFile(l.file);
   },
-  /** Trả lời đúng với chuỗi `combo`: ghép tệp/tốc độ/độ trễ theo mốc 1/2/3/5/8/13 (xem comboSfx.ts). Tôn trọng settings.sound, kể cả lúc lớp trễ phát. */
-  playCombo(combo: number): void {
+  /** `lead` (ms) dời cả dàn âm về sau để khớp lúc dấu mộc chạm giấy. Trả lời đúng với chuỗi `combo`: ghép tệp/tốc độ/độ trễ theo mốc 1/2/3/5/8/13 (xem comboSfx.ts). Tôn trọng settings.sound, kể cả lúc lớp trễ phát. */
+  playCombo(combo: number, lead = 0): void {
     if (!settings.sound) return;
     for (const l of comboSfxPlan(combo)) {
+      const delay = l.delay + lead;
       const go = () => {
         if (!settings.sound) return;
         try { const h = howlFile(l.file); const id = h.play(); h.rate(l.rate, id); h.volume(l.volume, id); } catch { /* autoplay bị chặn: bỏ qua */ }
       };
-      if (l.delay > 0) {
-        const t = setTimeout(() => { comboTimers.delete(t); go(); }, l.delay);
+      if (delay > 0) {
+        const t = setTimeout(() => { comboTimers.delete(t); go(); }, delay);
         comboTimers.add(t);
       } else go();
     }
