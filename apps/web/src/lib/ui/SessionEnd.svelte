@@ -18,7 +18,6 @@
     record?: { comboBeaten: boolean; rateBeaten: boolean; before: { bestCombo: number; bestRate: number } } | null;
     /** số câu bước vào vòng sửa sai (mẫu số của "sửa được x/y") */
     retryTotal?: number;
-    /** kỳ quan đã thắp trong phiên: hình sáng theo đúng phần trăm đạt được */
   } = $props();
   const retryTotal = $derived(retryProp || summary.retried || 0);
   const term = (id: string) => concepts.find((c) => c.id === id)?.term ?? id;
