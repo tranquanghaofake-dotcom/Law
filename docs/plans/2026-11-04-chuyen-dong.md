@@ -1,0 +1,23 @@
+# Sổ việc — Nâng cấp tủ trưng bày sự nghiệp, làm mượt toàn web, hiệu ứng thắp chuỗi + animation chức năng (04/11/2026)
+
+Nhánh: `claude/kind-archimedes-oxfd21`. Tự làm tuần tự (CLAUDE.md cấm fan-out cho việc < 1 ngày). Không thêm thư viện.
+Ràng buộc chung: chỉ animate `transform`/`opacity`/`filter` nhẹ; mọi hiệu ứng tôn trọng `prefers-reduced-motion`.
+
+Quyết định: màn thắp chuỗi chạy **mỗi ngày** lần đầu chuỗi tăng — vì đã có cơ chế `justLit` theo ngày — sai thì tốn: đổi 1 điều kiện.
+Quyết định: màn thắp hiện ở **cuối phiên học** (SessionEnd), lúc chuỗi vừa cộng — vì đó là khoảnh khắc thật — sai thì tốn: đổi chỗ gắn component.
+Quyết định: Hào chọn "làm tất cả" 9 mục trong 1 phiên; vẫn giữ mốc dừng-báo-cáo 2 giờ của CLAUDE.md.
+
+| # | Task | File chính | Kiểm tra |
+|---|---|---|---|
+| 1 | Bộ thông số chuyển động chung + hiệu năng (dừng animation ngoài màn hình/tab ẩn, content-visibility) | app.css, StreakCard, fx/ | `npm run ci`; đo khung hình trước/sau |
+| 2 | Tủ trưng bày: nền/đồ vật đúng logic nhánh–cấp, nền mới trụ sở VKS/UBND, chi tiết áo | game/looks.ts, art/showcase, art/Portrait | test looks mới đỏ→xanh; shots |
+| 3 | Màn thắp chuỗi toàn màn hình (FLIP, đốm sáng bay tới số + ký hoạ, số sáng rồi tắt) | art/StreakIgnite.svelte, SessionEnd | test logic bật; shots |
+| 4 | Chuyển trang bằng View Transitions | router, Shell | ci |
+| 5 | Phản hồi trả lời: đúng sáng viền, sai rung; thẻ kế trượt vào; thanh tiến độ mượt | app.css, cards/ | ci |
+| 6 | Số đếm tăng dần (XP, % tiến độ) | ui/CountUp.svelte | test hàm nội suy |
+| 7 | Thăng chức: ô chức sáng, tủ đổi áo/nền mờ chéo | OrgChart, CareerSection | ci |
+| 8 | Skeleton khi tải + danh sách hiện lần lượt | Shell/routes | ci |
+| 9 | Bottom sheet kéo xuống để đóng | sheet | ci |
+
+## Nhật ký
+Task 1: bắt đầu — base 7665b2c
