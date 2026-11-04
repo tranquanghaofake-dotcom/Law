@@ -28,8 +28,9 @@ describe('Profile (thẻ căn cước + 2 tab + 3 phần đóng/mở)', () => {
     stubFetch(); route.name = 'profile';
     const { container } = render(Profile);
     const card = container.querySelector('.idcard')!;
-    expect(card.querySelector('h1')?.textContent).toBe('Hồ sơ');
-    expect(card.querySelector('.idc-title')?.textContent).toBe('Công dân');
+    // h1 là chức danh (thấy được), kèm "Hồ sơ:" cho trình đọc màn hình (HT6: bỏ eyebrow IN HOA làm h1)
+    expect(card.querySelector('h1')?.textContent).toBe('Hồ sơ: Công dân');
+    expect(card.querySelector('h1')?.classList.contains('idc-title')).toBe(true);
     expect(card.textContent).toContain('ngày');
     expect(card.textContent).toContain('Chưa có chuỗi'); // nhãn bậc màu/tiến độ vòng 30 ngày ("Đỏ · 5/30" khi có chuỗi)
     expect(card.textContent).toMatch(/0\s*\/\s*0 sách|0\/0/);

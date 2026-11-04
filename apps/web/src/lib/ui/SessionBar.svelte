@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Glyph from '$lib/art/Glyph.svelte';
   import ComboMeter from '$lib/ui/session/ComboMeter.svelte';
   import { fireStyle, glowLevel } from '$lib/ui/session/combo';
   import XpCounter from '$lib/ui/session/XpCounter.svelte';
@@ -15,7 +16,7 @@
 </script>
 
 <div class="session-bar" style={fireStyle(held)}>
-  <button class="exit" type="button" onclick={onexit} aria-label="Thoát phiên, giữ tiến độ">←</button>
+  <button class="exit" type="button" onclick={onexit} aria-label="Thoát phiên, giữ tiến độ"><Glyph name="back" size={20} /></button>
   {#if title}<span class="title">{title}</span>{/if}
   <div class="progress" class:retry={inRetry} class:fire role="progressbar" aria-label={inRetry ? 'Tiến độ vòng sửa sai' : 'Tiến độ phiên'} aria-valuemin="0" aria-valuemax={total} aria-valuenow={done}>
     <span style="width:{pct}%"></span>

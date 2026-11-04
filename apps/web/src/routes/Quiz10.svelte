@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Glyph from '$lib/art/Glyph.svelte';
   import type { QuizSet, QuizQuestion } from '$lib/content/types';
   import { loadIndex, loadSet } from '$lib/content/loader';
   import { shuffle } from '$lib/engine/session';
@@ -149,7 +150,7 @@
   <LegalNote />
 {:else}
   <div class="session-bar">
-    <a class="exit qexit" href="#/luyen-de" aria-label="Về Luyện đề">←</a>
+    <a class="exit qexit" href="#/luyen-de" aria-label="Về Luyện đề"><Glyph name="back" size={20} /></a>
     <div class="qdots" role="progressbar" aria-label="Tiến độ bộ câu hỏi" aria-valuemin="0" aria-valuemax={qs.length} aria-valuenow={i} aria-valuetext="Câu {i + 1} trên {qs.length}, đúng {score}">
       {#each qs as _, k (k)}<span class={dotState(k)}></span>{/each}
     </div>

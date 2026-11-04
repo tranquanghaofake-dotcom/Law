@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Glyph from '$lib/art/Glyph.svelte';
   import SubjectArt from '$lib/art/SubjectArt.svelte';
   import { PAGE_ART } from '$lib/art/registry';
   // Danh mục khái niệm của một môn: đọc nhanh định nghĩa, căn cứ, khái niệm dễ nhầm; tìm không dấu; ★ đánh dấu.
@@ -87,11 +88,11 @@
       <span class="sr-only">Tìm khái niệm</span>
       <input type="search" placeholder="Tìm khái niệm (gõ không dấu cũng được)" bind:value={query} autocomplete="off" />
     </label>
-    <button type="button" class="filter" aria-pressed={onlyStarred} onclick={() => (onlyStarred = !onlyStarred)}>★ Đã đánh dấu ({starredCount})</button>
+    <button type="button" class="filter" aria-pressed={onlyStarred} onclick={() => (onlyStarred = !onlyStarred)}><Glyph name="star-fill" size={16} /> Đã đánh dấu ({starredCount})</button>
   </div>
 
   {#if !shown}
-    <section class="card"><p class="muted">{onlyStarred && !starredCount ? 'Chưa đánh dấu khái niệm nào. Bấm ☆ cạnh tên để đánh dấu.' : 'Không có khái niệm khớp.'}</p></section>
+    <section class="card"><p class="muted">{onlyStarred && !starredCount ? 'Chưa đánh dấu khái niệm nào. Bấm dấu sao cạnh tên để đánh dấu.' : 'Không có khái niệm khớp.'}</p></section>
   {/if}
 
   {#each groups as g (g.lessonId)}
@@ -106,9 +107,9 @@
               <span class="cell lv{lv}" title="Bậc {lv} · {LEVEL_NAMES[lv]}" aria-hidden="true"></span>
               <span class="entry-term">{c.term}</span>
               <span class="sr-only">, bậc {lv} {LEVEL_NAMES[lv]}</span>
-              <span class="chev" aria-hidden="true">{isOpen ? '▾' : '▸'}</span>
+              <span class="chev" aria-hidden="true"><Glyph name={isOpen ? 'chevron-down' : 'chevron-right'} size={16} /></span>
             </button>
-            <button type="button" class="star" aria-pressed={stars.has(c.id)} aria-label="Đánh dấu {c.term}" title={stars.has(c.id) ? 'Bỏ đánh dấu' : 'Đánh dấu'} onclick={() => stars.toggle(c.id)}>{stars.has(c.id) ? '★' : '☆'}</button>
+            <button type="button" class="star" aria-pressed={stars.has(c.id)} aria-label="Đánh dấu {c.term}" title={stars.has(c.id) ? 'Bỏ đánh dấu' : 'Đánh dấu'} onclick={() => stars.toggle(c.id)}><Glyph name={stars.has(c.id) ? 'star-fill' : 'star'} size={20} /></button>
           </div>
           {#if isOpen}
             <div class="entry-body" id="body-{c.id}">
