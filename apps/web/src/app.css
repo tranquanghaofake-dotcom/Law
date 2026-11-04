@@ -60,8 +60,10 @@
 @media (max-width: 767px) { :root { --ctl-h: 44px; --sec-gap: var(--sp-4); } } /* điện thoại: nhịp mục 16 (giữ trang ngắn); từ 768: 24 */
 @media (min-width: 768px) { :root { --pad-card: var(--sp-5); --pad-head: var(--sp-6); } }
 * { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; }
-body { margin: 0; background: var(--paper); color: var(--ink); font: 400 var(--fs-md)/var(--lh-body) var(--font-ui); }
+html { -webkit-text-size-adjust: 100%; scrollbar-color: color-mix(in srgb, var(--muted) 45%, var(--paper)) transparent; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 400 var(--fs-md)/var(--lh-body) var(--font-ui); caret-color: var(--accent-text); }
+/* Bề mặt trình duyệt tự vẽ (bôi đen, con trỏ nhập, thanh cuộn) theo bảng màu Văn Miếu thay vì xanh mặc định. Chữ bôi đen giữ --ink: tương phản > 10:1. */
+::selection { background: color-mix(in srgb, var(--accent) 30%, var(--paper)); color: var(--ink); }
 a { color: inherit; }
 button { font: inherit; color: inherit; }
 .brand { font-weight: 800; font-size: var(--fs-xl); text-decoration: none; letter-spacing: -.01em; }
@@ -140,7 +142,7 @@ button { font: inherit; color: inherit; }
 .btn.primary { background: var(--accent); color: var(--accent-ink); }
 .btn:disabled { opacity: .5; cursor: default; }
 .muted { color: var(--muted); }
-.quote { font-family: var(--font-quote); font-size: var(--fs-lg); line-height: 1.6; border-left: 2px solid color-mix(in srgb, var(--seal) 45%, var(--line)); padding-left: var(--sp-4); margin: var(--sp-3) 0; }
+.quote { font-family: var(--font-quote); font-size: var(--fs-lg); line-height: 1.6; max-inline-size: 75ch; text-wrap: pretty; /* độ dài dòng dễ đọc ≤ 75ch (tính cả lề trái); hiện ~71ch ở 1440 px, chỉ chặn khi khung rộng thêm */border-left: 2px solid color-mix(in srgb, var(--seal) 45%, var(--line)); padding-left: var(--sp-4); margin: var(--sp-3) 0; }
 .chip { display: inline-block; font-size: var(--fs-xs); line-height: var(--lh-tight); font-weight: 600; padding: var(--sp-1) var(--sp-2); border-radius: var(--r-sm); background: color-mix(in srgb, var(--accent) 16%, transparent); color: color-mix(in srgb, var(--accent) 55%, var(--ink)); }
 h1 { font-size: var(--fs-2xl); line-height: var(--lh-tight); letter-spacing: -.02em; font-weight: 800; margin: 0 0 var(--sp-2); }
 @media (min-width: 768px) { h1 { font-size: var(--fs-3xl); } }
