@@ -1775,3 +1775,5 @@ body:has(dialog.sheet[open]) { overflow: hidden; }
 .cmp-wrap > summary { display: flex; align-items: center; min-height: var(--ctl-h); border-radius: var(--r-sm); }
 /* Phương án đã khoá sau khi trả lời vẫn đọc lại được (≥ 4.5:1 thay vì .45) */
 .opt.dim { opacity: .72; }
+/* Thanh trượt Cài đặt: màu thương hiệu, vùng chạm cao bằng nút (P2 nhóm B) */
+.settings input.range { accent-color: var(--accent); min-height: var(--ctl-h); min-width: 160px; cursor: pointer; }
