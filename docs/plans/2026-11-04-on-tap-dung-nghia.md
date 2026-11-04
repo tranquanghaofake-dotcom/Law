@@ -35,3 +35,5 @@ Rút kinh nghiệm: không task nào phải làm lại. Reviewer bắt được 
 | 7 | Test SessionView truyền `rating` (cách trả lời, độ dài đề, gần đúng) vào repo.record | tests/ui/SessionViewRating.test.ts | vitest | chờ |
 
 Task 5: bắt đầu — base 194ed29
+Task 5: xong — 12e6ef8
+Task 6: bắt đầu — base 12e6ef8

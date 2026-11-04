@@ -16,7 +16,7 @@
   import { hashFor, route } from '$lib/router.svelte';
   import { isInteractiveTarget, isTypingTarget, KEYS } from '$lib/ui/cards/types';
   import { GROUPS } from '$lib/ui/groups';
-  import { nextAfter, orderIds, shelfFor, ticketNo, verdictFor } from '$lib/ui/quiz';
+  import { nextAfter, orderIds, quizConceptSubject, shelfFor, ticketNo, verdictFor } from '$lib/ui/quiz';
 
   type Q = QuizQuestion & { shuffled: string[]; answerIdx: number };
   let set = $state<QuizSet | null>(null);
@@ -28,6 +28,8 @@
   let results = $state<boolean[]>([]);
   let prevBest = $state<number | null>(null);
   let sets = $state<{ id: string; group: string }[]>([]);
+  /** Mã các môn (để biết nhóm đề có phải mã môn không khi ghi tiến độ câu có `concept`). */
+  let subjectIds: string[] = [];
   let finished = $state(false);
   let error = $state('');
   let shareLabel = $state('Chia sẻ');
@@ -45,7 +47,7 @@
   async function retry() { await load(); await tick(); window.scrollTo(0, 0); document.querySelector<HTMLElement>('.question-card .opt')?.focus({ preventScroll: true }); }
   // Rời màn: route.params về {} trước khi màn huỷ, không tải /content/sets/undefined.json.
   $effect(() => { if (route.name === 'quiz' && route.params.id) load(); });
-  loadIndex().then((x) => (sets = x.sets)).catch(() => { /* không có "Đề tiếp theo" */ });
+  loadIndex().then((x) => { sets = x.sets; subjectIds = x.subjects.map((s) => s.id); }).catch(() => { /* không có "Đề tiếp theo" */ });
 
   const q = $derived(qs[i]);
 
@@ -58,8 +60,9 @@
     sfx.play(ok ? 'correct' : 'wrong'); buzz(ok ? 'ok' : 'bad');
     // Tự đọc phản hồi ngay trong lượt xử lý cử chỉ (trước mọi await) để trình duyệt cho phát tiếng.
     if (settings.tts && tts.available) tts.speak(speechFor(ok, q));
-    if (q.concept && set) {
-      try { await repo.record({ conceptId: q.concept, subject: set.group, correct: ok, elapsedMs: Date.now() - start, now: new Date(), retention: settings.retention, rating: { mode: 'recognize', chars: q.q.length + q.options.join('').length } }); } catch { /* bỏ qua */ }
+    const subject = set ? quizConceptSubject(set.group, subjectIds) : null;
+    if (q.concept && subject) {
+      try { await repo.record({ conceptId: q.concept, subject, correct: ok, elapsedMs: Date.now() - start, now: new Date(), retention: settings.retention, rating: { mode: 'recognize', chars: q.q.length + q.options.join('').length } }); } catch { /* bỏ qua */ }
     }
     start = Date.now();
   }
