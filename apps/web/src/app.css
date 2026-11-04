@@ -391,6 +391,9 @@ kbd { font: 600 var(--fs-xs)/1 var(--font-ui); background: rgba(255,255,255,.18)
 .ring b { width: 30px; height: 30px; border-radius: 50%; background: var(--card); display: grid; place-items: center; font-size: var(--fs-xs); }
 .session-end .score { font-size: var(--fs-3xl); font-weight: 800; margin: 0; letter-spacing: -.02em; }
 .session-end .score small { font-size: var(--fs-lg); color: var(--muted); font-weight: 500; }
+.session-end .memory-line { font-size: var(--fs-lg); margin: 0 0 var(--sp-1); }
+.session-end .memory-line b { color: var(--accent); }
+.session-end .held-note { margin: 0 0 var(--sp-2); }
 .session-end .xp { font-size: var(--fs-xl); font-weight: 700; color: var(--accent); margin: var(--sp-1) 0; display: flex; gap: var(--sp-3); align-items: center; }
 .levelups { list-style: none; padding: 0; margin: 0; display: grid; gap: var(--row-gap); }
 .levelups li { display: flex; align-items: center; gap: var(--sp-3); }
