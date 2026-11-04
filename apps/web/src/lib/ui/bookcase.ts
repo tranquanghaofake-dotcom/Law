@@ -34,10 +34,40 @@ export function spineColor(hex: string, min = 0.6): string {
   return '#' + [r1, g1, b1].map((v) => Math.round((v + m) * 255).toString(16).padStart(2, '0')).join('');
 }
 
-/** Cỡ chữ gáy (px thiết kế): tên nằm trong ô khung giữa nhãn kem (đầu gáy) và chân gáy → vùng chữ = h − 44; mỗi ký tự ≈ 0,62 cỡ chữ; kẹp 7–10,5. */
-export function spineFont(short: string, h: number): number {
-  const fit = (h - SPINE_CHROME) / (Math.max(1, short.length) * 0.62);
-  return Math.round(Math.max(7, Math.min(10.5, fit)) * 10) / 10;
+/** Sàn cỡ chữ trên gáy (px thiết kế, tủ hẹp nhất --k = 1): không để chữ có thông tin < 12 px (audit HT7). */
+export const SPINE_FONT_MIN = 12;
+export const SPINE_FONT_MAX = 13;
+/** Bề dài chữ (đơn vị = cỡ chữ) khi xếp dọc: đo thực tế Be Vietnam Pro 800 có dấu ≈ 0,7/ký tự, khoảng trắng ≈ 0,35. */
+const textLen = (text: string) => [...text].reduce((n, ch) => n + (ch === ' ' ? 0.35 : 0.7), 0);
+/** Vùng chữ thực = h − khung gáy − đệm/viền ô tên (4 px). */
+const fitFont = (text: string, h: number) => (h - SPINE_CHROME - 4) / Math.max(0.7, textLen(text));
+
+/**
+ * Viết tắt tên môn cho gáy: từ thường → chữ cái đầu viết hoa, giữ nguyên từ đã viết tắt (NN&PL, DN, VBPL) và số.
+ * "Tài sản trí tuệ" → "TSTT", "Thương mại 1" → "TM 1", "Lý luận NN&PL" → "LLNN&PL".
+ */
+export function abbreviate(short: string): string {
+  const words = short.trim().split(/\s+/);
+  let out = '';
+  for (const w of words) {
+    if (/^\d+$/.test(w)) out += ` ${w}`;
+    else if (w.length > 1 && w === w.toUpperCase()) out += w;
+    else out += w[0].toUpperCase();
+  }
+  return out.trim();
+}
+
+/** Nhãn trên gáy: tên đầy đủ nếu vừa ở cỡ ≥ 12 px, không thì viết tắt (tên đầy đủ vẫn có trong nhãn trợ năng và ngăn chi tiết). */
+export function spineLabel(short: string, h: number): string {
+  if (fitFont(short, h) >= SPINE_FONT_MIN) return short;
+  const ab = abbreviate(short);
+  if (fitFont(ab, h) >= SPINE_FONT_MIN) return ab;
+  return ab.replace(/[^\p{L}\p{N}]/gu, ''); // gáy rất thấp: bỏ cả dấu & và khoảng trắng ("LSNN&PL" → "LSNNPL")
+}
+
+/** Cỡ chữ gáy (px thiết kế) cho nhãn đã chọn bằng `spineLabel`: kẹp 12–13. */
+export function spineFont(label: string, h: number): number {
+  return Math.round(Math.max(SPINE_FONT_MIN, Math.min(SPINE_FONT_MAX, fitFont(label, h))) * 10) / 10;
 }
 /** Phần gáy không dành cho tên: nhãn kem + đai vàng đầu, chân gáy (px thiết kế). */
 export const SPINE_CHROME = 44;
