@@ -36,7 +36,7 @@
     "Năm loại: nhẹ, vừa, nặng, đặc biệt nặng"
    ],
    "answer": 0,
-   "explain": "Điều 8 khoản 2. BLHS 2015 chia bốn loại.",
+   "explain": "Khoản 2 Điều 8. BLHS 2015 chia bốn loại.",
    "source": {
     "kind": "primary",
     "cite": "Bộ luật Hình sự 1985, Điều 8"
@@ -53,7 +53,7 @@
     "Từ hai năm tù trở lên, không có tù chung thân"
    ],
    "answer": 0,
-   "explain": "Điều 8 khoản 2.",
+   "explain": "Khoản 2 Điều 8.",
    "source": {
     "kind": "primary",
     "cite": "Bộ luật Hình sự 1985, Điều 8"
@@ -115,7 +115,7 @@
    "type": "recall",
    "level": 5,
    "q": "Trình bày khái niệm và phân loại tội phạm theo Bộ luật Hình sự 1985.",
-   "model": "Tội phạm là hành vi nguy hiểm cho xã hội, được quy định trong Bộ luật hình sự, do người có năng lực trách nhiệm hình sự thực hiện cố ý hoặc vô ý, xâm phạm các quan hệ xã hội được bảo vệ (Điều 8 khoản 1). Hai loại: nghiêm trọng (khung cao nhất trên 5 năm tù, chung thân, tử hình) và ít nghiêm trọng (khoản 2). BLHS 2015 chia 4 loại.",
+   "model": "Tội phạm là hành vi nguy hiểm cho xã hội, được quy định trong Bộ luật hình sự, do người có năng lực trách nhiệm hình sự thực hiện cố ý hoặc vô ý, xâm phạm các quan hệ xã hội được bảo vệ (khoản 1 Điều 8). Hai loại: nghiêm trọng (khung cao nhất trên 5 năm tù, chung thân, tử hình) và ít nghiêm trọng (khoản 2). BLHS 2015 chia 4 loại.",
    "keywords": [
     "nguy hiểm cho xã hội",
     "năng lực trách nhiệm hình sự",
