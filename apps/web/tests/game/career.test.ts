@@ -76,12 +76,45 @@ describe('thăng chức theo bộ máy nhà nước', () => {
     for (const id of ['chuyen-vien-so', 'giam-doc-so', 'chu-tich-tinh', 'vu-truong', 'thu-truong', 'bo-truong']) for (const f of ['hanh-chinh', 'dat-dai', 'tai-chinh'] as const) expect(has(id, f), `${id}:${f}`).toBe(true);
     for (const id of ['dai-bieu-hdnd-tinh', 'dai-bieu-quoc-hoi', 'uy-vien-ubtvqh', 'chu-tich-qh']) expect(has(id, 'lap-phap'), id).toBe(true);
   });
-  it('lên tuần tự: thiếu chức dưới thì không giữ chức trên dù đủ sách', () => {
-    const books = [...many('hien-phap', 3, 4), ...many('ly-luan', 3, 8), ...many('bo-may', 3, 4), ...many('hanh-chinh', 3, 15), ...many('tai-chinh', 3, 30), ...many('dat-dai', 3, 8), ...many('lich-su', 3, 4)];
-    const s = careerState(books);
+  it('lên tuần tự: đủ sách cho chức cao nhưng thiếu chức dưới thì careerState dừng ở chức dưới', () => {
     const hp = branchPosts('hanh-phap');
-    let gap = false;
-    for (const p of hp) { if (!s.achieved.has(p.id)) gap = true; else expect(gap, p.id).toBe(false); }
+    const [first, third] = [hp[0], hp[2]];
+    const books: B[] = third.reqs.flatMap((q) => many(q.field === 'any' ? 'hanh-chinh' : q.field, 3, q.count));
+    const saved = first.reqs;
+    first.reqs = [...saved, { field: 'lich-su', level: 3, count: 1 }]; // chức dưới đòi thêm một cuốn Lịch sử mà bộ sách không có
+    try {
+      expect(satisfies(third.reqs, books).ok).toBe(true);
+      expect(books.some((b) => b.field === 'lich-su')).toBe(false);
+      const s = careerState(books);
+      for (const p of hp) expect(s.achieved.has(p.id), p.id).toBe(false);
+      expect(s.next['hanh-phap']?.post.id).toBe(first.id);
+    } finally { first.reqs = saved; }
+  });
+  it('thang không giảm theo từng lĩnh vực: giữa hai chức liền kề cùng nhánh, số sách và cấp mỗi lĩnh vực (kể cả "bất kỳ") không giảm', () => {
+    for (const b of BRANCHES) {
+      const ps = branchPosts(b);
+      for (let i = 1; i < ps.length; i++) {
+        for (const q of ps[i - 1].reqs) {
+          const nx = ps[i].reqs.find((x) => x.field === q.field);
+          expect(nx, `${ps[i].id} bỏ ${q.field}`).toBeDefined();
+          expect(nx!.count, `${ps[i].id}:${q.field} số sách`).toBeGreaterThanOrEqual(q.count);
+          expect(nx!.level, `${ps[i].id}:${q.field} cấp`).toBeGreaterThanOrEqual(q.level);
+        }
+      }
+    }
+  });
+  it('khung số sách: lãnh đạo ≤ 160, Chủ tịch nước 155–170, Bộ trưởng ≤ 135, không đòi trọn một lĩnh vực trừ lĩnh vực ≤ 4 chương', () => {
+    for (const p of POSTS) {
+      expect(totalNeed(p), p.id).toBeLessThanOrEqual(p.id === 'chu-tich-nuoc' ? 170 : p.tier === 'lanh-dao' ? 160 : 135);
+      for (const q of p.reqs) if (q.field !== 'any' && (CAP.get(q.field) ?? 0) > 4) expect(q.count, `${p.id}:${q.field}`).toBeLessThan(CAP.get(q.field)!);
+    }
+    expect(totalNeed(POSTS.find((p) => p.id === 'chu-tich-nuoc')!)).toBeGreaterThanOrEqual(155);
+  });
+  it('thang Xét xử/Kiểm sát tăng đều: mỗi bước không nhảy quá 55 sách', () => {
+    for (const b of ['xet-xu', 'kiem-sat'] as const) {
+      const ps = branchPosts(b);
+      for (let i = 1; i < ps.length; i++) expect(totalNeed(ps[i]) - totalNeed(ps[i - 1]), ps[i].id).toBeLessThanOrEqual(55);
+    }
   });
   it('một cuốn không đếm hai lần: sách đã dùng cho lĩnh vực riêng không tính vào "bất kỳ"', () => {
     const post: Post = { id: 'x', title: 'X', branch: 'hanh-phap', tier: 'co-so', reqs: [{ field: 'bo-may', level: 1, count: 1 }, { field: 'any', level: 1, count: 1 }] };

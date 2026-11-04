@@ -98,6 +98,8 @@ Mỗi chương gắn một **lĩnh vực** để làm điều kiện thăng ch�
 | `hien-phap` | Lý luận NN&PL (nền tảng); môn lạ chưa khai báo cũng rơi về đây (`DEFAULT_FIELD`) |
 | `lich-su` | Lịch sử NN&PL |
 
+> **Thay thế bởi bảng lĩnh vực đợt 9 (04/11/2026), xem `lib/game/fields.ts`.** Hai bảng trên giữ làm lịch sử. Bảng hiện hành (14 lĩnh vực, 212 chương): `ly-luan` 8 (Lý luận NN&PL) · `lich-su` 4 · `hien-phap` 4 (HP c1–c3 + nâng cao) · `quyen-cong-dan` 3 (HP c4–c6, gồm bầu cử) · `lap-phap` 7 (HP c7 + Xây dựng VBPL) · `bo-may` 4 (HP c8–c11) · `hanh-chinh` 15 · `dan-su` 45 · `hinh-su` 15 · `to-tung` 9 · `lao-dong` 20 · `dat-dai` 8 · `thuong-mai` 35 (Thương mại 1, Thương mại, Cạnh tranh, Đầu tư) · `tai-chinh` 35 (Ngân hàng, Tài chính, Tài chính DN, Chứng khoán). Các lĩnh vực chỉ có 1 chương (`bau-cu`, `nguyen-thu`, `hanh-phap`, `tu-phap`, `dia-phuong`) đã bỏ; `kinh-te-tai-chinh` tách đôi; `ly-luan` tách khỏi `hien-phap`. Điều kiện từng chức xem comment đầu `lib/game/career.ts`. Sách lưu theo khoá `môn/chương` nên không mất sách khi đổi bảng.
+
 `FUTURE_FIELDS` hiện rỗng (mọi lĩnh vực đã có môn). Kho sách lưu (`settings` khoá `books`) chỉ có `level` và `at`, không lưu lĩnh vực, nên đọc lại theo bảng mới không mất cấp đã đạt; sách Dân sự… cũ chỉ đổi lĩnh vực từ `hien-phap` sang đúng loại.
 
 ### 2.3 Tủ sách
@@ -123,7 +125,7 @@ Ai cũng bắt đầu là **Công dân**.
 | Lập pháp | Đại biểu HĐND cấp xã → Đại biểu HĐND cấp tỉnh → Đại biểu Quốc hội → Ủy viên Ủy ban Thường vụ Quốc hội → Phó Chủ tịch Quốc hội → Chủ tịch Quốc hội |
 | Xét xử | Thư ký Tòa án → Thẩm phán (cấp dưới, tên theo luật) → Thẩm phán TAND cấp tỉnh → Chánh án TAND cấp tỉnh → Thẩm phán TAND tối cao → Chánh án TAND tối cao |
 | Kiểm sát | Kiểm tra viên → Kiểm sát viên (cấp dưới) → Viện trưởng VKSND cấp tỉnh → Kiểm sát viên VKSND tối cao → Viện trưởng VKSND tối cao |
-| Đỉnh chung | **Chủ tịch nước**: đã đạt ít nhất cấp "trung ương" ở hai nhánh và có đủ sách `nguyen-thu`, `hien-phap` cấp 3 |
+| Đỉnh chung | **Chủ tịch nước**: đã đạt ít nhất cấp "trung ương" ở hai nhánh và có đủ sách `nguyen-thu`, `hien-phap` cấp 3 | *(đợt 9: điều kiện sách nay là hiến pháp, lý luận, lập pháp, bộ máy, hành chính, dân sự, hình sự, tố tụng cấp 3 và 35 sách bất kỳ, tổng ~161; xem `career.ts`)*
 
 Không đưa chức danh của tổ chức Đảng (không thuộc bộ máy nhà nước theo Hiến pháp).
 
