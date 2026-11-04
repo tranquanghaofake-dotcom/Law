@@ -26,6 +26,17 @@ describe('progress repo (IndexedDB)', () => {
     expect(d.map((x) => x.conceptId)).toEqual(['a']);
   });
 
+  it('học dồn trong 1 ngày dừng ở bậc 3; ngày sau mới lên 4 (giãn cách)', async () => {
+    const repo = createRepo('t-spaced');
+    let p;
+    for (let i = 0; i < 6; i++) p = await repo.record({ conceptId: 'a', subject: 'hp', correct: true, elapsedMs: 3000, now: new Date(now.getTime() + i * 60000) });
+    expect(p!.level).toBe(3);
+    p = await repo.record({ conceptId: 'a', subject: 'hp', correct: true, elapsedMs: 3000, now: new Date(now.getTime() + 86400000) });
+    expect(p.level).toBe(4);
+    expect(p.upDay).toBeTruthy();
+    expect((await repo.upDays(['a', 'zzz']))).toEqual({ a: p.upDay });
+  });
+
   it('levels: thiếu → 0', async () => {
     const repo = createRepo('t3');
     await repo.record({ conceptId: 'a', subject: 'hp', correct: true, elapsedMs: 3000, now });

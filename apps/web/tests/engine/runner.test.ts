@@ -137,4 +137,22 @@ describe('runner đợt 6: câu vàng, combo dài nhất, vòng sửa sai', () =
     const s = play(createRunner([intro, mcq('a')], { a: 0 }), [true, true]);
     expect(s.done).toBe(true);
   });
+  it('giãn cách: cùng ngày với lần lên bậc trước thì đúng vẫn giữ bậc 3, ghi held', () => {
+    const st = [{ ...mcq('a'), level: 3 as Level }];
+    const r = answer(createRunner(st, { a: 3 }, { a: '2026-11-04' }, '2026-11-04'), { correct: true, elapsedMs: 2000 });
+    expect(r.levelUp).toBe(false);
+    expect(r.state.levels.a).toBe(3);
+    expect(r.state.results[0].held).toBe(true);
+    expect(r.xpGained).toBe(10); // vẫn có XP: câu đúng là câu đúng
+    const r2 = answer(createRunner(st, { a: 3 }, { a: '2026-11-03' }, '2026-11-04'), { correct: true, elapsedMs: 2000 });
+    expect(r2.state.levels.a).toBe(4);
+  });
+  it('giãn cách trong phiên: 2 câu cùng khái niệm ở bậc 3 → chỉ câu đầu bị giữ, không lên 2 lần', () => {
+    let s = createRunner([mcq('a'), mcq('b'), mcq('a')], { a: 2, b: 0 }, {}, '2026-11-04');
+    s = next(answer(s, { correct: true, elapsedMs: 1 }).state); // a 2→3 (upDay = hôm nay)
+    s = next(answer(s, { correct: true, elapsedMs: 1 }).state);
+    const r = answer(s, { correct: true, elapsedMs: 1 }); // a 3→4 bị giữ
+    expect(r.state.levels.a).toBe(3);
+    expect(summary(r.state).held).toBe(1);
+  });
 });

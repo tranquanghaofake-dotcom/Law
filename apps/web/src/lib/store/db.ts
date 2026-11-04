@@ -9,6 +9,8 @@ export type ConceptProgress = {
   card: MemoryCard;
   wrongStreak: number;
   updatedAt: number;
+  /** Ngày (YYYY-MM-DD, giờ địa phương) lần lên bậc gần nhất — luật giãn cách bậc ≥ 4 (engine/progress `stepLevel`). Dữ liệu cũ không có. */
+  upDay?: string;
 };
 export type ReviewRow = { id?: number; conceptId: string; rating: number; level: Level; elapsedMs: number; at: number };
 export type StatRow = { key: string; value: unknown };

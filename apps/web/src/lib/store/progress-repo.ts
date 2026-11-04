@@ -1,6 +1,6 @@
 import type { Level } from '$lib/content/types';
 import { isDue, newCard, ratingFor, review } from '$lib/engine/fsrs';
-import { nextLevel } from '$lib/engine/progress';
+import { stepLevel } from '$lib/engine/progress';
 import { LuyenLuatDB, type ConceptProgress, type ReviewRow } from './db';
 import { storage } from './status.svelte';
 import { localDay } from '$lib/game/streak';
@@ -13,6 +13,8 @@ export type ProgressRepo = {
   available: boolean;
   get(id: string): Promise<ConceptProgress | undefined>;
   levels(ids: string[]): Promise<Record<string, Level>>;
+  /** Ngày lên bậc gần nhất của từng khái niệm (chỉ khái niệm có dữ liệu) — để phiên học áp cùng luật giãn cách. */
+  upDays(ids: string[]): Promise<Record<string, string>>;
   record(p: RecordInput): Promise<ConceptProgress>;
   due(now: Date, subject?: string): Promise<ConceptProgress[]>;
   difficult(): Promise<ConceptProgress[]>;
@@ -36,16 +38,22 @@ function applyRecord(prev: ConceptProgress | undefined, p: RecordInput): { next:
   const card = prev?.card ?? newCard(p.now);
   const rating = ratingFor(p.correct, p.elapsedMs, level);
   const r = review(card, rating, p.now, p.retention ?? 0.9);
+  const lv = stepLevel(level, p.correct, prev?.upDay, localDay(p.now));
   const next: ConceptProgress = {
     conceptId: p.conceptId,
     subject: p.subject,
-    level: nextLevel(level, p.correct),
+    level: lv.level,
     card: r.card,
     wrongStreak: p.correct ? 0 : (prev?.wrongStreak ?? 0) + 1,
     updatedAt: p.now.getTime(),
+    ...(lv.upDay ? { upDay: lv.upDay } : {}),
   };
   const row: ReviewRow = { conceptId: p.conceptId, rating, level, elapsedMs: p.elapsedMs, at: p.now.getTime() };
   return { next, row };
+}
+
+function upDayMap(rows: (ConceptProgress | undefined)[]): Record<string, string> {
+  return Object.fromEntries(rows.flatMap((r) => (r?.upDay ? [[r.conceptId, r.upDay]] : [])));
 }
 
 type ExportFile = { v: number; concepts?: ConceptProgress[]; reviews?: ReviewRow[]; stats?: { key: string; value: unknown }[]; settings?: { key: string; value: unknown }[] };
@@ -71,6 +79,7 @@ function memoryRepo(): ProgressRepo {
     available: false,
     async get(id) { return s.concepts.get(id); },
     async levels(ids) { return Object.fromEntries(ids.map((id) => [id, s.concepts.get(id)?.level ?? 0])) as Record<string, Level>; },
+    async upDays(ids) { return upDayMap(ids.map((id) => s.concepts.get(id))); },
     async record(p) {
       const { next, row } = applyRecord(s.concepts.get(p.conceptId), p);
       s.concepts.set(p.conceptId, next);
@@ -100,6 +109,7 @@ function dexieRepo(db: LuyenLuatDB): ProgressRepo {
       const rows = await db.concepts.bulkGet(ids);
       return Object.fromEntries(ids.map((id, i) => [id, rows[i]?.level ?? 0])) as Record<string, Level>;
     },
+    async upDays(ids) { return upDayMap(await db.concepts.bulkGet(ids)); },
     async record(p) {
       return db.transaction('rw', db.concepts, db.reviews, async () => {
         const { next, row } = applyRecord(await db.concepts.get(p.conceptId), p);
@@ -158,6 +168,7 @@ export function createRepo(name = 'luyen-luat'): ProgressRepo {
       get available() { return target.available; },
       get: (id) => guard(() => target.get(id)),
       levels: (ids) => guard(() => target.levels(ids)),
+      upDays: (ids) => guard(() => target.upDays(ids)),
       record: (p) => guard(() => target.record(p)),
       due: (n, s) => guard(() => target.due(n, s)),
       difficult: () => guard(() => target.difficult()),

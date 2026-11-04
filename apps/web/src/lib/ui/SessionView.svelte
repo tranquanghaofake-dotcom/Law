@@ -43,12 +43,15 @@
   import ComboStamp from '$lib/ui/session/ComboStamp.svelte';
   import { stampFor, TIMING, type Stamp } from '$lib/ui/session/reward';
 
-  let { steps, concepts, levels, lessonId, onagain, onnext, title }: {
-    steps: Step[]; concepts: Concept[]; levels: Record<string, Level>; lessonId?: string; onagain?: () => void; onnext?: () => void; title?: string;
+  let { steps, concepts, levels, upDays = {}, lessonId, onagain, onnext, title }: {
+    steps: Step[]; concepts: Concept[]; levels: Record<string, Level>;
+    /** Ngày lên bậc gần nhất theo khái niệm (luật giãn cách bậc ≥ 4, cùng luật với repo.record). */
+    upDays?: Record<string, string>;
+    lessonId?: string; onagain?: () => void; onnext?: () => void; title?: string;
   } = $props();
 
   // svelte-ignore state_referenced_locally
-  let run = $state<RunnerState>(createRunner(steps, levels));
+  let run = $state<RunnerState>(createRunner(steps, levels, upDays));
   let result = $state<AnswerResult | null>(null);
   let ended = $state<null | { streak: number; streakEvent: StreakEvent; rankBefore: RankInfo; rankAfter: RankInfo; dueTomorrow: number; promotion: string | null }>(null);
   let confirmExit = $state(false);
