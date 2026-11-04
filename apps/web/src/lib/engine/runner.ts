@@ -31,8 +31,8 @@ export type RunnerState = {
   levels: Record<string, Level>;
   /** Ngày lên bậc gần nhất theo khái niệm (luật giãn cách, cùng luật với repo.record). */
   upDays: Record<string, string>;
-  /** Ngày của phiên (YYYY-MM-DD giờ địa phương). */
-  today: string;
+  /** Ngày cố định cho phiên (test). Không có thì lấy ngày lúc trả lời từng câu — khớp repo.record khi phiên vắt qua nửa đêm. */
+  today?: string;
   results: StepResult[];
   /** Chỉ số bước retry đầu tiên trong `steps`; null = chưa nối vòng sửa sai. */
   retryStart: number | null;
@@ -50,7 +50,7 @@ const isPretest = (st: Step | undefined): boolean => st?.meta?.kind === 'pretest
 /** Bước không tính vào lượt chính (điểm phiên, vòng sửa sai). */
 const offMain = (st: Step | undefined): boolean => isIntro(st) || isRetry(st) || isPretest(st);
 
-export function createRunner(steps: Step[], levels: Record<string, Level>, upDays: Record<string, string> = {}, today = localDay(new Date())): RunnerState {
+export function createRunner(steps: Step[], levels: Record<string, Level>, upDays: Record<string, string> = {}, today?: string): RunnerState {
   return { steps, i: 0, combo: 0, bestCombo: 0, xp: 0, xpParts: ZERO, levels: { ...levels }, upDays: { ...upDays }, today, results: [], retryStart: null, done: steps.length === 0 };
 }
 
@@ -67,7 +67,7 @@ export function answer(s: RunnerState, r: AnswerResult): { state: RunnerState; l
   const pretest = isPretest(step);
   const golden = !retry && !pretest && !!step.meta?.golden;
   const off = intro || retry || pretest;
-  const lv = off ? null : stepLevel(before, r.correct, s.upDays[step.conceptId], s.today);
+  const lv = off ? null : stepLevel(before, r.correct, s.upDays[step.conceptId], s.today ?? localDay(new Date()));
   const after = lv ? lv.level : before;
   const parts = intro || pretest ? ZERO : xpBreakdown(r.correct, s.combo, { golden, retry });
   const combo = intro || retry || pretest ? s.combo : r.correct ? s.combo + 1 : 0;

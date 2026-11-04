@@ -59,7 +59,7 @@
     // Tự đọc phản hồi ngay trong lượt xử lý cử chỉ (trước mọi await) để trình duyệt cho phát tiếng.
     if (settings.tts && tts.available) tts.speak(speechFor(ok, q));
     if (q.concept && set) {
-      try { await repo.record({ conceptId: q.concept, subject: set.group, correct: ok, elapsedMs: Date.now() - start, now: new Date(), retention: settings.retention }); } catch { /* bỏ qua */ }
+      try { await repo.record({ conceptId: q.concept, subject: set.group, correct: ok, elapsedMs: Date.now() - start, now: new Date(), retention: settings.retention, rating: { mode: 'recognize', chars: q.q.length + q.options.join('').length } }); } catch { /* bỏ qua */ }
     }
     start = Date.now();
   }
