@@ -1613,4 +1613,4 @@ body:has(dialog.sheet[open]) { overflow: hidden; }
 .me-fig .sc-plinth, .me-fig .sc-reflect, .me-fig .sc-gold, .me-fig .sc-motes, .me-fig .sc-corner, .me-fig .sc-lamp { display: none; }
 .me-fig .showcase::before { inset: 3px; }
 .me-fig .sc-photo { transition: none; }
-.me-fig .showcase:hover .sc-photo, .me-fig .showcase:hover .sc-glass { transform: none; }
+.me-fig .sc-photo, .me-fig .sc-glass { transform: none !important; }
