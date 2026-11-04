@@ -5,6 +5,8 @@
   import Clouds from './Clouds.svelte';
   import Tree from './parts/Tree.svelte';
   import QuocHoi from './QuocHoi.svelte';
+  import ScenesVN from './ScenesVN.svelte';
+  const VN = ['hoi-an', 'thien-mu', 'ruong-bac-thang', 'nha-hat-lon', 'dinh-lang'];
   import { bricks, tiles } from './kit';
   let { name }: { name: ArtName } = $props();
   const grid = (x: number, y: number, w: number, h: number, nx: number, ny: number) => {
@@ -18,6 +20,8 @@
 
 {#if name === 'quoc-hoi'}
   <QuocHoi />
+{:else if VN.includes(name)}
+  <ScenesVN {name} />
 {:else if name === 'nha-lang'}
   <!-- ngôi nhà ba gian mái ngói, sân, cây cau; hợp đồng dân sự gắn với nhà ở, tài sản, gia đình -->
   <Clouds cy={128} r={104} puffs={false} />

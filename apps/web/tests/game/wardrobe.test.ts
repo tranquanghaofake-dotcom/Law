@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { unlocked, sanitize, outfitFor, resolveOutfit, DEFAULT_AVATAR } from '$lib/game/wardrobe';
+import { unlocked, sanitize, outfitFor, resolveOutfit, DEFAULT_AVATAR, NAMES } from '$lib/game/wardrobe';
 import { POSTS } from '$lib/game/career';
 
 const post = (id: string) => POSTS.find((p) => p.id === id) ?? null;
@@ -41,5 +41,19 @@ describe('tủ đồ', () => {
     expect(resolveOutfit('theo-chuc-vu', post('tham-phan'))).toBe('ao-choang');
     expect(resolveOutfit('thuong-phuc', post('tham-phan'))).toBe('thuong-phuc');
     expect(sanitize({ ...DEFAULT_AVATAR, outfit: 'ao-dai', effect: 'hat-sang' }, new Set())).toMatchObject({ outfit: 'theo-chuc-vu', effect: 'khong' });
+  });
+  it('trang phục truyền thống mở theo tiến độ: bà ba (2 chức) → tứ thân (4 chức) → áo dài + khăn đóng (cấp tỉnh) → nhật bình (trung ương)', () => {
+    const ids = POSTS.map((p) => p.id);
+    expect(unlocked(new Set(ids.slice(0, 1))).outfit).not.toContain('ba-ba');
+    expect(unlocked(new Set(ids.slice(0, 2))).outfit).toContain('ba-ba');
+    expect(unlocked(new Set(['cong-chuc-xa', 'pho-chu-tich-xa', 'chu-tich-xa'])).outfit).not.toContain('tu-than');
+    const tinh = unlocked(new Set(['cong-chuc-xa', 'pho-chu-tich-xa', 'chu-tich-xa', 'chuyen-vien-so', 'giam-doc-so']));
+    expect(tinh.outfit).toEqual(expect.arrayContaining(['ba-ba', 'tu-than', 'ao-dai', 'ao-dai-nam']));
+    expect(tinh.outfit).not.toContain('nhat-binh');
+    expect(unlocked(new Set(ids.filter((id) => POSTS.find((p) => p.id === id)!.tier !== 'lanh-dao'))).outfit).toContain('nhat-binh');
+  });
+  it('mọi trang phục mở khoá đều có tên hiển thị', () => {
+    const u = unlocked(new Set(POSTS.map((p) => p.id)));
+    for (const o of u.outfit) expect(NAMES[o], o).toBeTruthy();
   });
 });
