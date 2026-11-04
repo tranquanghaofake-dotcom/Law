@@ -84,6 +84,7 @@ Nhóm này đi ngược mặc định của hai bộ skill nhưng là chủ đí
 ## Trạng thái sửa (04/11/2026)
 
 - **Đợt 1 — đã sửa:** HT1, HT2, HT3, HT11. Chi tiết ở `docs/plans/2026-11-04-audit-ui.md`.
+- **Đợt 4 — đã sửa:** HT12. Trang Khái niệm giờ tải một gói `bundles/<môn>.json` thay cho từng file khái niệm. Nợ SMIL của `StreakCard` (ghi ở đợt 2) cũng đã xử lý.
 - **Đợt 2 — đã sửa:** HT4, HT5, HT7, HT9, HT10. Còn ba món nợ kỹ thuật:
   - **HT7:** chữ tên môn trên gáy sách ở tủ sách Hồ sơ vẫn 7–11,5 px. Giới hạn nằm ở `lib/ui/bookcase.ts` (`spineFont`). Đây là nhãn nhìn thấy duy nhất của nút gáy sách; tên đầy đủ chỉ hiện trong sheet sau khi bấm. Muốn sửa phải rút gọn `short` hoặc làm gáy rộng hơn, tức là việc thiết kế, để sang đợt 3.
   - **HT5:** `lib/art/StreakCard.svelte` dùng SMIL `<animate repeatCount="indefinite">`. CSS giảm chuyển động không tắt được loại này, phải chặn bằng JS theo setting. Lỗi có từ trước đợt sửa.

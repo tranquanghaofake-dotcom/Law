@@ -45,7 +45,7 @@ export default defineConfig({
           { urlPattern: /\/tts\/.*\.mp3$/, handler: 'CacheFirst', options: { cacheName: 'tts', expiration: { maxEntries: 600 } } },
           // Danh sách câu đã có mp3 đổi mỗi tuần: luôn hỏi mạng trước.
           { urlPattern: /\/tts\/manifest\.json$/, handler: 'NetworkFirst', options: { cacheName: 'tts-manifest' } },
-          { urlPattern: /\/content\/(concepts|sets)\/.*\.json$/, handler: 'StaleWhileRevalidate', options: { cacheName: 'content-detail', expiration: { maxEntries: 300 } } },
+          { urlPattern: /\/content\/(concepts|sets|bundles)\/.*\.json$/, handler: 'StaleWhileRevalidate', options: { cacheName: 'content-detail', expiration: { maxEntries: 300 } } },
           { urlPattern: /\/content\/.*\.json$/, handler: 'StaleWhileRevalidate', options: { cacheName: 'content' } },
           { urlPattern: /^https:\/\/fonts\.(googleapis|gstatic)\.com\//, handler: 'CacheFirst', options: { cacheName: 'fonts', expiration: { maxEntries: 20, maxAgeSeconds: 60 * 60 * 24 * 365 } } },
         ],

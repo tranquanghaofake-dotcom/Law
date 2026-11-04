@@ -8,9 +8,12 @@
   // (học kỹ thuật biến CSS theo con trỏ của pokemon-cards-css (GPL-3.0) và vanilla-tilt (MIT) — tự viết, không chép mã).
   import { cardFor, justLit, isMilestone, TIER_NAMES, type Tier } from '$lib/game/card';
   import { CARD_GLYPHS } from './cardGlyphs';
+  import { reducedMotion } from '$lib/fx/confetti';
   let { count = 0, longest = 0, size = 'full', ignite = false }: { count?: number; longest?: number; size?: 'full' | 'mini'; ignite?: boolean } = $props();
   const c = $derived(cardFor(count, longest));
   const uid = `sc${++seq}`;
+  // SMIL không chịu CSS giảm chuyển động: tự bỏ <animate> khi người dùng chọn giảm chuyển động (HT5).
+  const still = $derived(reducedMotion());
   // Nền doodle nét đơn phủ kín: 27 doodle pháp luật xếp 4 hàng so le (7 + 6 + 6 + 8), hai hàng giữa chừa chỗ logo;
   // khe trống lấp bằng hình phụ nhỏ (chấm, sao, xoắn, §, gạch). Lệch vị trí/góc nhẹ cho cảm giác vẽ tay.
   const jit = (i: number, k: number) => (((i * 9301 + k * 49297) % 233280) / 233280 - 0.5);
@@ -130,7 +133,7 @@
       <linearGradient id="{uid}-edge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".22" /><stop offset=".35" stop-color="#fff" stop-opacity=".04" /><stop offset="1" stop-color="#000" stop-opacity=".5" /></linearGradient>
       <filter id="{uid}-flame" x="-6%" y="-12%" width="112%" height="124%">
         <feTurbulence type="fractalNoise" baseFrequency=".016 .06" numOctaves="3" seed="3" result="n">
-          <animate attributeName="baseFrequency" dur="2.4s" values=".016 .06;.02 .08;.014 .05;.016 .06" repeatCount="indefinite" />
+          {#if !still}<animate attributeName="baseFrequency" dur="2.4s" values=".016 .06;.02 .08;.014 .05;.016 .06" repeatCount="indefinite" />{/if}
         </feTurbulence>
         <feGaussianBlur in="SourceGraphic" stdDeviation="2.6" result="b" />
         <feDisplacementMap in="b" in2="n" scale="18" xChannelSelector="R" yChannelSelector="G" result="f" />

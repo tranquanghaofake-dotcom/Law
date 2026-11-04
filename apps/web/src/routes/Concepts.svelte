@@ -3,7 +3,7 @@
   import { PAGE_ART } from '$lib/art/registry';
   // Danh mục khái niệm của một môn: đọc nhanh định nghĩa, căn cứ, khái niệm dễ nhầm; tìm không dấu; ★ đánh dấu.
   import type { Concept, Level, Subject } from '$lib/content/types';
-  import { loadConcepts, loadSubject } from '$lib/content/loader';
+  import { loadSubject, loadSubjectConcepts } from '$lib/content/loader';
   import { repo } from '$lib/store/progress-repo';
   import { stars } from '$lib/store/stars.svelte';
   import { hashFor, route } from '$lib/router.svelte';
@@ -41,9 +41,11 @@
     try {
       const s = await loadSubject(route.params.subject);
       const ids = s.chapters.flatMap((c) => c.lessons.flatMap((l) => l.concepts));
-      const loaded = await Promise.allSettled(ids.map((id) => loadConcepts(s.id, [id])));
+      // Một file cho cả môn; khái niệm lỗi schema đã bị loại khi build nên không có trong gói.
+      const all = await loadSubjectConcepts(s.id);
       const m: Record<string, Concept> = {};
-      for (const r of loaded) if (r.status === 'fulfilled') for (const c of r.value) m[c.id] = c;
+      const wanted = new Set(ids);
+      for (const c of all) if (wanted.has(c.id)) m[c.id] = c; // giữ như cũ: chỉ khái niệm có trong đợt học
       byId = m;
       levels = await repo.levels(ids);
       await stars.load();
