@@ -53,13 +53,14 @@ class ChuanHoaCau(unittest.TestCase):
     def test_day_so_dieu_khoan(self):
         self.assertEqual(normalize('Khoản 2, 3, 4 Điều 27.'), 'khoản hai, khoản ba, khoản bốn điều hai mươi bảy.')
         self.assertEqual(normalize('Khoản 1 và 2 Điều 5.'), 'khoản một và khoản hai điều năm.')
-        self.assertEqual(normalize('Điểm a, b khoản 1.'), 'điểm a, điểm b khoản một.')
+        self.assertEqual(normalize('Điểm a, b khoản 1.'), 'điểm a, điểm bê khoản một.')
+        self.assertEqual(normalize('Điểm đ khoản 2 Điều 9.'), 'điểm đê khoản hai điều chín.')
         self.assertEqual(normalize('Điều 1, 5, 6 Hiến pháp.'), 'điều một, điều năm, điều sáu hiến pháp.')
 
     def test_day_so_khong_doi_nham(self):
         self.assertEqual(normalize('Khoản 1, khoản 2 Điều 3.'), 'khoản một, khoản hai điều ba.')
         self.assertEqual(normalize('Theo khoản 1, a là người thuê.'), 'theo khoản một, a là người thuê.')
-        self.assertEqual(normalize('Các điểm a, b, c, d và đ khoản 1.'), 'các điểm a, b, c, d và đ khoản một.')
+        self.assertEqual(normalize('Các điểm a, b, c, d và đ khoản 1.'), 'các điểm a, bê, xê, dê và đê khoản một.')
         self.assertEqual(normalize('Nghị quyết 51/2001/QH10.'), 'nghị quyết số năm mươi mốt năm hai nghìn không trăm lẻ một quốc hội mười.')
 
     def test_ky_hieu_don_vi_la_ma(self):

@@ -113,6 +113,18 @@ class HauKy(unittest.TestCase):
         self.assertLessEqual(float(np.abs(y).max()), 0.89 + 1e-6)
         self.assertAlmostEqual(float(y[100]), float(x[100]), places=6)  # xa đỉnh: không đổi
 
+    def test_de_esser_chi_ha_am_xi(self):
+        import numpy as np
+        sr = 44100; t = np.arange(sr) / sr
+        tone = (0.3 * np.sin(2 * np.pi * 300 * t)).astype(np.float32)
+        self.assertLess(float(np.abs(clone.deess(tone, sr) - tone).max()), 1e-4)  # nguyên âm/giọng trầm: đi qua nguyên vẹn
+        rng = np.random.default_rng(0)
+        hiss = np.fft.irfft(np.fft.rfft(rng.standard_normal(sr)) * ((np.fft.rfftfreq(sr, 1 / sr) > 5000) & (np.fft.rfftfreq(sr, 1 / sr) < 10000))).astype(np.float32) * 0.1
+        y = clone.deess(tone * 0.05 + hiss, sr)
+        drop = 20 * np.log10(np.sqrt(np.mean(hiss ** 2)) / np.sqrt(np.mean((y - tone * 0.05) ** 2)))
+        self.assertGreater(drop, 3.0)  # âm xì bị hạ
+        self.assertLessEqual(drop, clone.DEESS_CUT + 0.5)  # nhưng không quá mức cắt tối đa
+
     def test_cat_im_lang_giu_mep(self):
         import numpy as np
         x = np.zeros(1000, dtype=np.float32); x[400:500] = 0.5

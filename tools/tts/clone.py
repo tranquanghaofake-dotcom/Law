@@ -23,7 +23,7 @@ from vi_norm import normalize  # noqa: E402
 from gen import FIXED, collect, norm, text_key  # noqa: E402
 
 # Đổi bất kỳ tham số giọng nào dưới đây → đổi STYLE để lần chạy sau sinh lại TOÀN BỘ (không lẫn hai kiểu trong một lời).
-STYLE = 'v5b'
+STYLE = 'v5b-2'       # v5b + de-esser
 VOICE = 'clone:kienthucxahoi0'
 STYLE_ID = 17          # VieNeu v3: 16 tự nhiên · 17 tin tức · 18 đọc truyện
 TEMPERATURE = 0.5
@@ -39,6 +39,8 @@ OUT_SR = 44100
 PRE_LUFS = -16.0       # độ lớn vào chuỗi phòng thu (đo: −16 cho chất âm bằng bản v5b đã duyệt, −13 làm nén quá tay)
 TARGET_LUFS = -16.0    # độ lớn cuối của MỌI câu (chuẩn podcast; câu ghép liền nhau không to nhỏ thất thường)
 BITRATE = '64k'
+DEESS_DB = -5.0        # đo trên 40 câu: đỉnh dải xì −6,8 → −11,7 dB (CD Media −10,8, kênh gốc −8,9); chất âm và độ giống không đổi
+DEESS_CUT = 4.0
 EDGE = 0.03            # giữ 30 ms hai đầu khi cắt im lặng (app tự chèn khoảng nghỉ giữa câu)
 
 
@@ -181,6 +183,38 @@ def peak_limit(x, sr: int, ceiling: float = 0.89):
     return (x * np.minimum(g, need)).astype(x.dtype)
 
 
+def deess(x, sr: int, threshold_db: float = DEESS_DB, max_cut_db: float = DEESS_CUT, lo: float = 4500.0, hi: float = 12000.0):
+    """De-esser: hạ dải xì (s, x, ch ~4,5–12 kHz) CHỈ ở khung mà dải này chiếm quá `threshold_db` so với tổng năng lượng —
+    âm s/x/ch hết chói, nguyên âm giữ nguyên độ sáng. STFT 1024/256, hệ số làm mượt theo thời gian để không nghe "bập bùng"."""
+    import numpy as np
+    from scipy.ndimage import uniform_filter1d, maximum_filter1d
+    n_fft, hop = 1024, 256
+    if len(x) < n_fft:
+        return x
+    win = np.hanning(n_fft).astype(np.float32)
+    pad = np.concatenate([np.zeros(n_fft, np.float32), x.astype(np.float32), np.zeros(n_fft, np.float32)])
+    frames = 1 + (len(pad) - n_fft) // hop
+    idx = np.arange(n_fft)[None, :] + hop * np.arange(frames)[:, None]
+    F = np.fft.rfft(pad[idx] * win, axis=1)
+    fr = np.fft.rfftfreq(n_fft, 1 / sr)
+    P = np.abs(F) ** 2
+    band = (fr >= lo) & (fr < hi)
+    ratio_db = 10 * np.log10(P[:, band].sum(1) / (P.sum(1) + 1e-12) + 1e-12)
+    loud = P.sum(1) > 1e-7 * n_fft
+    cut = np.where(loud, np.clip(ratio_db - threshold_db, 0, max_cut_db), 0.0)
+    cut = uniform_filter1d(maximum_filter1d(cut, size=3), size=3)  # giữ cắt trọn âm xì, mượt hai đầu
+    shape = np.clip((fr - (lo - 1000)) / 1000, 0, 1)  # dốc 3,5→4,5 kHz, không cắt cụt
+    G = 10 ** (-(cut[:, None] * shape[None, :]) / 20)
+    y = np.fft.irfft(F * G, n_fft, axis=1) * win
+    out = np.zeros(len(pad), np.float32)
+    norm_ = np.zeros(len(pad), np.float32)
+    for k in range(frames):  # cộng chồng (overlap-add)
+        out[k * hop: k * hop + n_fft] += y[k]
+        norm_[k * hop: k * hop + n_fft] += win ** 2
+    out = out / np.maximum(norm_, 1e-6)
+    return out[n_fft: n_fft + len(x)].astype(x.dtype)
+
+
 def trim(x, sr: int, threshold: float = 0.012):
     import numpy as np
     nz = np.where(np.abs(x) > threshold)[0]
@@ -273,6 +307,7 @@ class Engine:
         x = self.gain_to(x, PRE_LUFS)
         y = self.chain(x[None], OUT_SR)[0]
         y = 0.97 * y + 0.03 * np.tanh(2 * y) / np.tanh(2)  # bão hoà rất nhẹ cho giọng dày
+        y = deess(y, OUT_SR)  # s, x, ch hết chói (đỉnh dải xì về mức giọng đọc chuyên nghiệp)
         y = trim(y, OUT_SR)  # cắt im lặng TRƯỚC khi đo độ lớn: câu ngắn hay dài đều cùng mức
         return peak_limit(self.gain_to(y, TARGET_LUFS), OUT_SR)
 
