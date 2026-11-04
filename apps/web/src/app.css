@@ -1015,12 +1015,14 @@ h1 { text-wrap: balance; }
 @keyframes cgborn { 0% { transform: scale(.4); opacity: 0; filter: brightness(3); } 60% { transform: scale(1.22); opacity: 1; filter: brightness(1.8); } 100% { transform: scale(1); filter: brightness(1); } }
 @keyframes cgfadein { from { opacity: 0; } to { opacity: 1; } }
 .sc-wrap.mini .streak-card * { animation: none !important; }
-/* màn thắp chuỗi: con số bừng sáng (phóng nhẹ + sáng rực) rồi tắt dần trong ~1,8 s; số khắc bên dưới giữ nguyên */
-.cg-numflare, .cg-numflash { transform-box: fill-box; transform-origin: center; opacity: 0; pointer-events: none; }
-.cg-numflare { animation: cgnumflare 1.9s var(--ease-out) both; }
-.cg-numflash { animation: cgnumflash 1.4s var(--ease-out) both; }
-@keyframes cgnumflare { 0% { opacity: 0; transform: scale(.8); } 14% { opacity: 1; transform: scale(1.22); } 34% { opacity: 1; transform: scale(1); } 100% { opacity: 0; transform: scale(1); } }
-@keyframes cgnumflash { 0% { opacity: 0; transform: scale(.4); } 18% { opacity: .95; } 100% { opacity: 0; transform: scale(1.9); } }
+/* màn thắp chuỗi: số cũ trượt lên mất, số mới trượt từ dưới lên (đồng hồ đếm) rồi chỉ chữ số bừng sáng và tắt dần (~1,8 s) */
+.cg-roll-out, .cg-roll-in, .cg-numflare { transform-box: view-box; pointer-events: none; }
+.cg-roll-out { animation: cgrollout .55s var(--ease-in) both; }
+.cg-roll-in { animation: cgrollin .7s var(--ease-spring) .12s both; }
+.cg-numflare { opacity: 0; transform-box: fill-box; transform-origin: center; animation: cgnumflare 2.6s var(--ease-out) .25s both; }
+@keyframes cgrollout { to { transform: translateY(-64px); opacity: 0; } }
+@keyframes cgrollin { from { transform: translateY(64px); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes cgnumflare { 0% { opacity: 0; transform: scale(1); } 12% { opacity: 1; transform: scale(1.14); } 30% { opacity: 1; transform: scale(1); } 50% { opacity: 1; } 100% { opacity: 0; transform: scale(1); } }
 .cg-inter { stroke-dasharray: 2.5 21; stroke-width: 1.1; opacity: .75; animation: cginter 2.6s linear infinite; }
 .cg-inter.slow { stroke-dasharray: 2 26; animation-duration: 4s; opacity: .55; }
 .cg-sheen { opacity: 0; }
@@ -1679,3 +1681,12 @@ body:has(dialog.sheet[open]) { overflow: hidden; }
 @media (prefers-reduced-motion: reduce) { :root:not(.motion-on) .ig-cap { opacity: 1; transform: none; } }
 .streak-mini { display: inline-flex; line-height: 0; transition: opacity var(--dur-2) var(--ease-out); }
 .streak-mini.away { opacity: 0; }
+
+/* ---- Chuyển trang (View Transitions, đợt 10): khung đứng yên, nội dung cũ mờ–lên nhanh, nội dung mới trượt lên vào ---- */
+#main { view-transition-name: page; }
+::view-transition-old(root), ::view-transition-new(root) { animation: none; }
+::view-transition-old(page) { animation: vt-out var(--dur-2) var(--ease-in) both; }
+::view-transition-new(page) { animation: vt-in var(--dur-3) var(--ease-out) both; }
+::view-transition-group(page) { animation-duration: var(--dur-3); }
+@keyframes vt-out { to { opacity: 0; transform: translateY(-6px); } }
+@keyframes vt-in { from { opacity: 0; transform: translateY(14px); } }

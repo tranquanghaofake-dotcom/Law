@@ -1,3 +1,4 @@
+import { flushSync } from 'svelte';
 import { focusRouteHeading } from './ui/routeFocus';
 export type RouteName = 'home' | 'subjects' | 'subject' | 'concepts' | 'quizzes' | 'lesson' | 'review' | 'quiz' | 'profile' | 'settings' | 'notfound';
 export type Route = { name: RouteName; params: Record<string, string> };
@@ -44,10 +45,15 @@ export function go(name: RouteName, params: Record<string, string> = {}): void {
 if (typeof window !== 'undefined') {
   window.addEventListener('hashchange', () => {
     const r = parseHash(location.hash);
-    route.name = r.name;
-    route.params = r.params;
-    window.scrollTo(0, 0);
-    // Chờ Svelte cập nhật DOM rồi chuyển focus tới tiêu đề màn mới (WCAG 2.4.3).
-    queueMicrotask(() => { requestAnimationFrame(() => { void focusRouteHeading(); }); });
+    const apply = () => {
+      route.name = r.name; route.params = r.params; flushSync(); window.scrollTo(0, 0);
+      // Chờ Svelte cập nhật DOM rồi chuyển focus tới tiêu đề màn mới (WCAG 2.4.3).
+      requestAnimationFrame(() => { void focusRouteHeading(); });
+    };
+    // Chuyển trang bằng View Transitions (đợt 10): khung điều hướng đứng yên, chỉ vùng nội dung (view-transition-name: page) mờ–trượt.
+    // Không hỗ trợ / giảm chuyển động / đổi tham số trong cùng màn (vd. mở khái niệm khác) → đổi ngay như cũ.
+    const doc = document as Document & { startViewTransition?: (cb: () => void) => unknown };
+    const reduce = document.documentElement.classList.contains('reduced-motion') || (matchMedia('(prefers-reduced-motion: reduce)').matches && !document.documentElement.classList.contains('motion-on'));
+    if (doc.startViewTransition && !reduce && r.name !== route.name) doc.startViewTransition(apply); else apply();
   });
 }
