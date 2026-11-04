@@ -36,6 +36,16 @@ export const WONDERS: Entry[] = [
   { id: 'pho-co-hoi-an', load: () => import('./pho-co-hoi-an') },
   { id: 'thanh-nha-ho', load: () => import('./thanh-nha-ho') },
   { id: 'trang-an-ninh-binh', load: () => import('./trang-an-ninh-binh') },
+  { id: 'chua-bai-dinh', load: () => import('./chua-bai-dinh') },
+  { id: 'hang-son-doong', load: () => import('./hang-son-doong') },
+  { id: 'cho-ben-thanh', load: () => import('./cho-ben-thanh') },
+  { id: 'nha-tho-duc-ba', load: () => import('./nha-tho-duc-ba') },
+  { id: 'buu-dien-sai-gon', load: () => import('./buu-dien-sai-gon') },
+  { id: 'landmark-81', load: () => import('./landmark-81') },
+  { id: 'toa-nha-bitexco', load: () => import('./toa-nha-bitexco') },
+  { id: 'cho-noi-cai-rang', load: () => import('./cho-noi-cai-rang') },
+  { id: 'mui-ca-mau', load: () => import('./mui-ca-mau') },
+  { id: 'mu-cang-chai', load: () => import('./mu-cang-chai') },
 ];
 
 /** Chọn ngẫu nhiên một kỳ quan cho phiên (`rand` tiêm được để test). */
