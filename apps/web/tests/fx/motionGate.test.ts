@@ -33,3 +33,18 @@ describe('motionGate', () => {
     expect(el.getAttribute('data-motion')).toBe('run');
   });
 });
+
+describe('motionGate — update', () => {
+  it('đổi settle về 0 (vd. đang chạy lễ nhận chức) thì đánh thức khối đã lắng và không lắng nữa', () => {
+    vi.useFakeTimers();
+    const el = document.createElement('div');
+    const g = motionGate(el, { settle: 1000 });
+    vi.advanceTimersByTime(1001);
+    expect(el.getAttribute('data-motion')).toBe('rest');
+    g.update({ settle: 0 });
+    expect(el.getAttribute('data-motion')).toBe('run');
+    vi.advanceTimersByTime(60_000);
+    expect(el.getAttribute('data-motion')).toBe('run');
+    vi.useRealTimers();
+  });
+});

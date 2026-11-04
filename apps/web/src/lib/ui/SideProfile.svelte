@@ -32,7 +32,7 @@
   <a class="me-next" href="#/toi">
     {#if pp}
       <span class="bar" aria-hidden="true"><span style="width:{pp.pct}%"></span></span>
-      <span class="me-next-t"><CountUp value={pp.have} key="post-have" />/{pp.need} sách · kế tiếp: {pp.title}</span>
+      <span class="me-next-t"><CountUp value={pp.have} key="post-have" ready={shelf.ready} />/{pp.need} sách · kế tiếp: {pp.title}</span>
     {:else}
       <span class="me-next-t">Đã đạt chức cao nhất của nhánh</span>
     {/if}

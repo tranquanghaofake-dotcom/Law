@@ -7,7 +7,7 @@
   import { LEVEL_NAMES } from '$lib/game/levels';
   import type { StreakState } from '$lib/game/streak';
   import { hashFor } from '$lib/router.svelte';
-  let { streak, xp, week, byLevel }: { streak: StreakState; xp: number; week: boolean[]; byLevel: number[] } = $props();
+  let { streak, xp, week, byLevel, ready = true }: { streak: StreakState; xp: number; week: boolean[]; byLevel: number[]; ready?: boolean } = $props();
   const learned = $derived(byLevel.slice(1).reduce((a, b) => a + b, 0));
   const maxCol = $derived(Math.max(1, ...byLevel));
   const stats = $derived([
@@ -21,9 +21,9 @@
 <div class="sp">
   <div class="sp-card"><StreakCard count={streak.count} longest={streak.longest} /></div>
   <div class="sp-side">
-    <p class="sp-big"><b><CountUp value={streak.count} key="streak" /></b><span>ngày liên tiếp</span></p>
+    <p class="sp-big"><b><CountUp value={streak.count} key="streak" {ready} /></b><span>ngày liên tiếp</span></p>
     <dl class="sp-stats">
-      {#each stats as s (s.k)}<div><dt>{s.k}</dt><dd>{#if s.k === 'Điểm kinh nghiệm'}<CountUp value={xp} key="xp" /> XP{:else}{s.v}{/if}</dd></div>{/each}
+      {#each stats as s (s.k)}<div><dt>{s.k}</dt><dd>{#if s.k === 'Điểm kinh nghiệm'}<CountUp value={xp} key="xp" {ready} /> XP{:else}{s.v}{/if}</dd></div>{/each}
     </dl>
     <p class="kicker sp-k">7 ngày gần nhất</p>
     <WeekDots days={week} todayLabel />

@@ -4,7 +4,7 @@
   import { onMount, untrack } from 'svelte';
   import { countAt, startOf } from './countUp';
   import { reducedMotion } from '$lib/fx/confetti';
-  let { value, key, from, duration = 800 }: { value: number; key?: string; from?: number; duration?: number } = $props();
+  let { value, key, from, duration = 800, ready = true }: { value: number; key?: string; from?: number; duration?: number; ready?: boolean } = $props();
   let shown = $state(untrack(() => from ?? value));
   let raf = 0;
   const K = (k: string) => `ll-count-${k}`;
@@ -17,20 +17,22 @@
     const f = (now: number) => { const t = (now - t0) / duration; shown = countAt(start, end, t); if (t < 1) raf = requestAnimationFrame(f); };
     shown = start; raf = requestAnimationFrame(f);
   }
-  let mounted = false;
-  onMount(() => {
-    let seen: number | null = null;
-    if (key) { try { const v = localStorage.getItem(K(key)); seen = v === null ? null : Number(v); } catch { /* bỏ qua */ } }
-    run(startOf(value, seen, from), value);
-    mounted = true;
-    return stop;
-  });
-  // số đổi khi đang mở trang → đếm từ số đang hiện
+  // `ready = false` khi dữ liệu chưa tải xong (số tạm, vd. 0): hiện thẳng, KHÔNG ghi "số đã thấy", không đếm.
+  let started = false;
   $effect(() => {
-    const v = value;
-    if (key) { try { localStorage.setItem(K(key), String(v)); } catch { /* bỏ qua */ } }
-    if (mounted) untrack(() => run(shown, v));
+    const v = value, r = ready;
+    untrack(() => {
+      if (!r) { stop(); shown = v; return; }
+      if (!started) {
+        started = true;
+        let seen: number | null = null;
+        if (key) { try { const x = localStorage.getItem(K(key)); seen = x === null ? null : Number(x); } catch { /* bỏ qua */ } }
+        run(startOf(v, seen, from), v);
+      } else run(shown, v); // số đổi khi đang mở trang → đếm từ số đang hiện
+      if (key) { try { localStorage.setItem(K(key), String(v)); } catch { /* bỏ qua */ } }
+    });
   });
+  onMount(() => stop);
 </script>
 
 <span class="count-up" aria-hidden="true">{shown}</span><span class="sr-only">{value}</span>

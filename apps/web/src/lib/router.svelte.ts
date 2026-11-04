@@ -46,7 +46,9 @@ if (typeof window !== 'undefined') {
   window.addEventListener('hashchange', () => {
     const r = parseHash(location.hash);
     const apply = () => {
-      route.name = r.name; route.params = r.params; flushSync(); window.scrollTo(0, 0);
+      // đọc lại hash lúc áp dụng: callback của View Transition chạy trễ, điều hướng dồn (lùi/tới liên tiếp) không được ghi đè trạng thái mới hơn
+      const now = parseHash(location.hash);
+      route.name = now.name; route.params = now.params; flushSync(); window.scrollTo(0, 0);
       // Chờ Svelte cập nhật DOM rồi chuyển focus tới tiêu đề màn mới (WCAG 2.4.3).
       requestAnimationFrame(() => { void focusRouteHeading(); });
     };

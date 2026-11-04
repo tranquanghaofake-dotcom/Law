@@ -49,7 +49,7 @@
   </svg>
 {/snippet}
 
-<figure use:motionGate={{ settle: 12000 }} class="showcase fx-{fx}" class:celebrate class:locked class:compact data-tier={tier ?? 'none'} data-mat={look.material} data-look={look.id} aria-label="Tủ trưng bày: {title}{locked ? ' (chưa mở)' : ''}">
+<figure use:motionGate={{ settle: celebrate ? 0 : 12000 }} class="showcase fx-{fx}" class:celebrate class:locked class:compact data-tier={tier ?? 'none'} data-mat={look.material} data-look={look.id} aria-label="Tủ trưng bày: {title}{locked ? ' (chưa mở)' : ''}">
   {#if rich && !compact}{@render corner('tl')}{@render corner('tr')}{@render corner('bl')}{@render corner('br')}{/if}
   {#if tier === 'lanh-dao' && !compact}<span class="sc-lamp l" aria-hidden="true"></span><span class="sc-lamp r" aria-hidden="true"></span>{/if}
   <header class="sc-head">
