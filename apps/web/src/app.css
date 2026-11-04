@@ -1610,3 +1610,18 @@ body:has(dialog.sheet[open]) { overflow: hidden; }
 .session-hint { margin-bottom: var(--sp-3); border-color: var(--accent); }
 .session-hint p { margin: 0 0 var(--sp-2); font-size: var(--fs-sm); line-height: 1.45; }
 .session-hint .kicker { margin: 0 0 4px; }
+
+/* Sidebar ≥ 1280: thẻ chuyên cần + biển tên/ma-nơ-canh trong tủ; cỡ cố định theo cột (không phụ thuộc vòng container query) */
+.sc-wrap.side { width: 100%; transform: none; perspective: none; border-radius: 4.7% / 7.4%; box-shadow: 0 2px 6px rgba(0, 0, 0, .45), 0 0 0 1px rgba(226, 178, 60, .55); }
+.sc-wrap.side .streak-card * { animation: none !important; }
+.sidenav .me.wide { gap: 8px; padding: 8px; }
+.me-card, .me-fig { display: block; width: 100%; min-width: 0; }
+.me-fig .showcase { --sc-side: 1; border-radius: 4px; padding: 6px 6px 0; box-shadow: 0 2px 6px rgba(0, 0, 0, .4); }
+.me-fig .sc-head { margin: 0 0 6px; padding: 5px 6px; }
+.me-fig .sc-plaque { font-size: 13px; animation: none; }
+.me-fig .sc-sub { font-size: 10.5px; margin-top: 2px; }
+.me-fig .sc-window { aspect-ratio: 6 / 5; }
+.me-fig .sc-plinth, .me-fig .sc-reflect, .me-fig .sc-gold, .me-fig .sc-motes, .me-fig .sc-corner, .me-fig .sc-lamp { display: none; }
+.me-fig .showcase::before { inset: 3px; }
+.me-fig .sc-photo { transition: none; }
+.me-fig .sc-photo, .me-fig .sc-glass { transform: none !important; }

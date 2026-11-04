@@ -1,10 +1,11 @@
 <!-- Cảnh đầu trang bổ sung (đợt 6) cho các môn chưa có cảnh riêng. Khung 520×325, mặt đất y=301, khối phẳng + nét mảnh như các cảnh khác.
      Cách điệu, không phải công trình/thương hiệu cụ thể; không Quốc huy, Quốc kỳ, chân dung, logo. Nạp lười từ SubjectArt.svelte. -->
 <script lang="ts">
-  import type { ArtName } from './registry';
+  import { ART_VN, type ArtName } from './registry';
   import Clouds from './Clouds.svelte';
   import Tree from './parts/Tree.svelte';
   import QuocHoi from './QuocHoi.svelte';
+  import ScenesVN from './ScenesVN.svelte';
   import { bricks, tiles } from './kit';
   let { name }: { name: ArtName } = $props();
   const grid = (x: number, y: number, w: number, h: number, nx: number, ny: number) => {
@@ -18,6 +19,8 @@
 
 {#if name === 'quoc-hoi'}
   <QuocHoi />
+{:else if ART_VN.includes(name)}
+  <ScenesVN {name} />
 {:else if name === 'nha-lang'}
   <!-- ngôi nhà ba gian mái ngói, sân, cây cau; hợp đồng dân sự gắn với nhà ở, tài sản, gia đình -->
   <Clouds cy={128} r={104} puffs={false} />

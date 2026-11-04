@@ -11,6 +11,10 @@ export const TONE_PALETTES: Record<string, Partial<Pal>[]> = {
   'ks-xuan-he': [{}, { body: '#8fb4de', sleeve: '#82a8d4' }, { body: '#c3d9ef', sleeve: '#b4cde8' }],
   'ks-thu-dong': [{}, { body: '#1f2f50', sleeve: '#1a2845', tie: '#1f2f50' }, { body: '#33466e', sleeve: '#2c3d62', tie: '#33466e' }],
   'ao-dai': [{}, { body: '#2f7f78', sleeve: '#296f69' }, { body: '#6a3f8c', sleeve: '#5c3579' }, { body: '#c8962b', sleeve: '#b58624' }, { body: '#2f5e9a', sleeve: '#285186' }],
+  'ao-dai-nam': [{}, { body: '#7a2433', sleeve: '#6a1e2c' }, { body: '#b88a24', sleeve: '#a67a1e' }, { body: '#1f6f6a', sleeve: '#1a5f5a' }, { body: '#2a2b30', sleeve: '#222328' }],
+  'tu-than': [{}, { body: '#7a3a30', sleeve: '#6a3028', shirt: '#f0c070' }, { body: '#9a7a4a', sleeve: '#8a6a3c', shirt: '#d98aa0' }],
+  'ba-ba': [{}, { body: '#26262b', sleeve: '#1f1f24', shirt: '#26262b' }, { body: '#6a4a3a', sleeve: '#5c4032', shirt: '#6a4a3a' }, { body: '#4a6a5a', sleeve: '#3f5c4e', shirt: '#4a6a5a' }],
+  'nhat-binh': [{}, { body: '#1f6f6a', sleeve: '#1a5f5a', tie: '#e2bf6a' }, { body: '#c8962b', sleeve: '#b58624', tie: '#8f1f2b' }, { body: '#5c3579', sleeve: '#4e2c69', tie: '#e2bf6a' }],
 };
 
 /** Phông bầu trời sau phông kiến trúc: gradient dọc từ trên xuống. */

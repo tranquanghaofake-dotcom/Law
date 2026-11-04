@@ -214,7 +214,7 @@ describe('genDefTrueFalse', () => {
     expect(f.answer).toBe(false);
     expect(f.statement).toContain(`«${b.term}»`);
     expect(f.explain).toContain(a.term);
-  });
+  }, 120_000); // quét toàn bộ 690 khái niệm: ~30 s khi máy bận, mặc định 30 s gây đỏ ngẫu nhiên
   it('Sai: không dùng khái niệm có định nghĩa gần trùng, tên bao hàm, hay khái niệm khác chương xa', () => {
     const a = C('a', { term: 'Quỹ đóng', definition: 'Quỹ đóng là quỹ đại chúng mà chứng chỉ quỹ không được mua lại theo yêu cầu.', confusables: ['b'] });
     const b = C('b', { term: 'Quỹ đóng đại chúng', definition: 'Một định nghĩa khác hẳn về tổ chức quỹ.' });

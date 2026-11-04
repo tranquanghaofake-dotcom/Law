@@ -8,12 +8,15 @@ export type Avatar = { outfit: string; hair: string; accessory: string; effect: 
 export const DEFAULT_AVATAR: Avatar = { outfit: 'theo-chuc-vu', hair: 'ngan', accessory: 'khong', effect: 'khong' };
 
 export const NAMES: Record<string, string> = {
-  'theo-chuc-vu': 'Theo chức vụ', 'thuong-phuc': 'Thường phục', 'ao-dai': 'Áo dài',
+  'theo-chuc-vu': 'Theo chức vụ', 'thuong-phuc': 'Thường phục', 'ao-dai': 'Áo dài', 'ao-dai-nam': 'Áo dài khăn đóng', 'tu-than': 'Áo tứ thân, nón quai thao', 'ba-ba': 'Áo bà ba, khăn rằn', 'nhat-binh': 'Áo nhật bình',
   'cong-so': 'Công sở', 'vest-xanh': 'Vest xanh than', 'vest-den': 'Vest đen', 'ao-choang': 'Áo choàng xét xử', 'ks-xuan-he': 'Trang phục kiểm sát (xuân hè)', 'ks-thu-dong': 'Trang phục kiểm sát (thu đông)',
   ngan: 'Tóc ngắn', dai: 'Tóc dài', buoc: 'Tóc buộc',
   khong: 'Cán cân (mặc định)', kinh: 'Kính', but: 'Bút cài túi', so: 'Chồng sách luật', cap: 'Cặp tài liệu', 'huy-hieu': 'Huy hiệu cài áo',
   nang: 'Đèn rọi sáng', 'trong-dong': 'Vách trống đồng', 'khung-vang': 'Khung mạ vàng', 'hat-sang': 'Hạt sáng trong kính',
 };
+
+/** Mọi trang phục chọn được trong tủ đồ (thứ tự hiển thị); `unlocked` quyết định cái nào đã mở. */
+export const OUTFITS = ['theo-chuc-vu', 'thuong-phuc', 'ba-ba', 'tu-than', 'ao-dai', 'ao-dai-nam', 'nhat-binh'] as const;
 
 const RANK: Record<PostTier, number> = { 'co-so': 0, tinh: 1, 'trung-uong': 2, 'lanh-dao': 3 };
 
@@ -35,7 +38,10 @@ export function unlocked(achieved: Set<string>): { outfit: string[]; hair: strin
   const n = posts.length;
   const top = posts.reduce((m, p) => Math.max(m, RANK[p.tier]), -1);
   const outfit = ['theo-chuc-vu', 'thuong-phuc'];
-  if (top >= 1) outfit.push('ao-dai');
+  if (n >= 2) outfit.push('ba-ba');
+  if (n >= 4) outfit.push('tu-than');
+  if (top >= 1) outfit.push('ao-dai', 'ao-dai-nam');
+  if (top >= 2) outfit.push('nhat-binh');
   const accessory = ['khong', 'kinh'];
   if (n >= 1) accessory.push('but');
   if (n >= 2) accessory.push('so');
