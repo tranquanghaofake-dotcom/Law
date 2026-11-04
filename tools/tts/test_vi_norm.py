@@ -80,6 +80,15 @@ class ChuanHoaCau(unittest.TestCase):
         self.assertEqual(normalize('Phát triển kinh tế- xã hội.'), 'phát triển kinh tế xã hội.')
         self.assertEqual(normalize('Văn bản 51/2001/QH10 và NĐ-CP.'), 'văn bản số năm mươi mốt năm hai nghìn không trăm lẻ một quốc hội mười và nghị định chính phủ.')
 
+    def test_thu_tu_thang_phan_so(self):
+        self.assertEqual(normalize('Điều thứ 1 và người thứ 4.'), 'điều thứ nhất và người thứ tư.')
+        self.assertEqual(normalize('Kỳ họp thứ 11.'), 'kỳ họp thứ mười một.')
+        self.assertEqual(normalize('Ngày 30/4/1975.'), 'ngày ba mươi tháng tư năm một nghìn chín trăm bảy mươi lăm.')
+        self.assertEqual(normalize('Thông qua với 2/3 tổng số đại biểu.'), 'thông qua với hai phần ba tổng số đại biểu.')
+        self.assertEqual(normalize('Hạn chót 31/12 hằng năm.'), 'hạn chót ngày ba mươi mốt tháng mười hai hằng năm.')
+        self.assertEqual(normalize('Từ ngày 01/01.'), 'từ ngày một tháng một.')
+        self.assertEqual(normalize('Đường trên 5g/100mL.'), 'đường trên năm gam trên một trăm mi li lít.')
+
     def test_bo_ghi_chu_noi_bo_ve_nguon(self):
         self.assertEqual(normalize('Nguyễn Ngọc Bích) — đã khớp nguyên văn slide (laws/hc-slide-trich.txt); slide không phải giáo trình, giáo trình chưa đối chiếu).'),
                          'nguyễn ngọc bích, đã khớp nguyên văn slide, slide không phải giáo trình, giáo trình chưa đối chiếu.')  # giữ cảnh báo độ tin cậy
@@ -87,7 +96,7 @@ class ChuanHoaCau(unittest.TestCase):
                          'đây là định nghĩa a, ghi chép ôn thi lý luận chung và tài liệu hướng dẫn.')
         self.assertEqual(normalize('(Slide bài giảng, vấn đề 1 ("LMS Vấn đề 1", ThS.'), 'slide bài giảng, vấn đề một, thạc sĩ.')
         self.assertEqual(normalize('Trường Đại học Luật Hà Nội, vấn đề 4 ("VĐ 04 -HCPC") — đã khớp nguyên văn slide (laws/a.txt).'), 'trường đại học luật hà nội, vấn đề bốn, đã khớp nguyên văn slide.')
-        self.assertEqual(normalize('Điều thứ 1 (vbpl.vn: hết hiệu lực toàn bộ).'), 'điều thứ một, hết hiệu lực toàn bộ.')
+        self.assertEqual(normalize('Điều thứ 1 (vbpl.vn: hết hiệu lực toàn bộ).'), 'điều thứ nhất, hết hiệu lực toàn bộ.')
         self.assertEqual(normalize('(Nghị định 63/2010/NĐ-CP, khoản 1 Điều 3 — đã khớp nguyên văn Văn bản hợp nhất 10272/VBHN-VPCP ngày 27/9/2017 (tài liệu seminar, Drive HLU); chưa đối chiếu nguyên văn Văn bản hợp nhất 2/VBHN-VPCP năm 2025).'),
                          'nghị định số sáu mươi ba năm hai nghìn không trăm mười nghị định chính phủ, khoản một điều ba, đã khớp nguyên văn văn bản hợp nhất số mười nghìn hai trăm bảy mươi hai ngày hai mươi bảy tháng chín năm hai nghìn không trăm mười bảy, tài liệu seminar, chưa đối chiếu nguyên văn văn bản hợp nhất số hai năm hai nghìn không trăm hai mươi lăm.')
 

@@ -147,6 +147,17 @@ def _expand_list(m: re.Match) -> str:
     return out
 
 
+def _day_or_fraction(m: re.Match) -> str:
+    """"a/b" không kèm năm: phân số nhỏ (2/3 → "2 phần 3") hay ngày tháng (31/12 → "ngày 31 tháng 12")."""
+    a, b = int(m.group(1)), int(m.group(2))
+    before = m.string[max(0, m.start() - 6): m.start()].lower()
+    if 'ngày' in before or (a >= b and 1 <= a <= 31 and 1 <= b <= 12):
+        return f'ngày {a} tháng {b}'
+    if 0 < a < b <= 10:
+        return f'{a} phần {b}'
+    return f'{a} trên {b}'
+
+
 def clean_source(t: str) -> str:
     """Bỏ khỏi LỜI ĐỌC phần máy móc trong ghi chú nguồn (đường dẫn Drive, tên tệp, tên miền, mã học phần/mã bài) —
     chữ hiển thị và tên tệp âm thanh không đổi. GIỮ trích dẫn luật và mọi cảnh báo độ tin cậy ("chưa đối chiếu nguyên văn",
@@ -191,7 +202,11 @@ def normalize(text: str) -> str:
                lambda m: f'{m.group(1)} {number_words(roman(m.group(2)))}' if roman(m.group(2)) else m.group(0), t)
     t = re.sub(r'(\d+(?:[.,]\d+)*)\s*%', r'\1 phần trăm', t)
     t = re.sub(r'(\d+)/(\d+)/(\d{4})', lambda m: f'ngày {m.group(1)} tháng {m.group(2)} năm {m.group(3)}', t)
+    t = re.sub(r'(?<![\d/])(\d{1,2})/(\d{1,2})(?![\d/])', _day_or_fraction, t)  # 31/12 → ngày; 2/3 → hai phần ba
+    t = re.sub(r'\btháng\s+0?4\b', 'tháng tư', t)
+    t = re.sub(r'\b(thứ)\s+0?([14])\b', lambda m: m.group(1) + (' nhất' if m.group(2) == '1' else ' tư'), t)
     t = re.sub(r'(\d+)/(\d+)', r'\1 trên \2', t)
+    t = re.sub(r'(?<=[^\W\d_])/(?=\s*\d)', ' trên ', t)  # "5 gam/100 mi li lít"
     t = re.sub(r'\d{1,3}(?:\.\d{3})+|\d+,\d+|\d+', _num, t)
     t = t.replace('&', ' và ').replace('→', ', ').replace('…', '.').replace('(…)', '')
     for k, v in SYMBOLS.items():
