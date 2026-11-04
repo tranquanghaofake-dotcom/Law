@@ -1722,3 +1722,9 @@ body:has(dialog.sheet[open]) { overflow: hidden; }
 .concept-list > li:nth-child(4), .cover-grid > li:nth-child(4) { animation-delay: 120ms; } .concept-list > li:nth-child(5), .cover-grid > li:nth-child(5) { animation-delay: 160ms; }
 .concept-list > li:nth-child(6), .cover-grid > li:nth-child(6) { animation-delay: 200ms; } .concept-list > li:nth-child(7), .cover-grid > li:nth-child(7) { animation-delay: 240ms; }
 .concept-list > li:nth-child(8), .cover-grid > li:nth-child(8) { animation-delay: 280ms; }
+
+/* ---- Ngăn kéo: thanh nắm kéo xuống để đóng (điện thoại, đợt 10) ---- */
+.sheet-drag { touch-action: none; }
+.sheet-grip { display: block; width: 40px; height: 5px; margin: 8px auto 0; border-radius: 999px; background: color-mix(in srgb, var(--muted) 45%, transparent); }
+.sheet-card { will-change: transform; }
+@media (min-width: 768px) { .sheet-grip { display: none; } .sheet-drag { touch-action: auto; } }
