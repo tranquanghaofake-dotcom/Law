@@ -24,6 +24,35 @@ Theo yêu cầu của Hào, bảng màu và brand cũng bị chấm thẳng, k�
 - [nhom-b.md](nhom-b.md): Quiz, Bài học, Ôn tập, Hồ sơ, Cài đặt, 404.
 - Ảnh dẫn chứng nằm trong [anh/](anh/).
 
+## Điểm từng màn
+
+Thang impeccable audit tính trên /20. Nielsen tính trên /40; màn nào H5 không áp dụng được (n/a) thì quy về /36. Hai thang này không cộng với nhau.
+
+| Màn | Route | impeccable /20 | Nielsen |
+|---|---|---|---|
+| Hôm nay | `#/` | 15 Good | 25/36 |
+| Môn học | `#/mon` | 15 Good | 27/36 |
+| Trang môn | `#/mon/:môn` | 14 Good | 28/40 |
+| Danh mục khái niệm | `#/mon/:môn/khai-niem` | 13 Acceptable | 27/36 |
+| Khái niệm | `#/mon/:môn/khai-niem/:id` | 12 Acceptable | 24/36 |
+| Luyện đề | `#/luyen-de` | 15 Good | 26/36 |
+| Quiz | `#/bo/:id` | 14 Good | 29/40 |
+| Bài học | `#/hoc/:môn/:bài` | 13 Acceptable | 28/40 |
+| Ôn tập | `#/on` | 14 Good | 29/40 |
+| Hồ sơ | `#/toi` | 12 Acceptable | 23/36 |
+| Cài đặt | `#/cai-dat` | 13 Acceptable | 28/40 |
+| 404 | (route không có) | 15 Good | 29/36 |
+
+**Điểm taste-skill (TS-F4):** cả 12 màn bị chặn trần ở 6,5/10, điểm thô là 7,1–7,6. Trần áp vì màn nào cũng có `.card` đổ bóng ở trạng thái nghỉ (`app.css:113`), và hầu hết có kicker/eyebrow.
+
+**Implementation Integrity: ĐẠT một phần.** Hệ hình ảnh rất đặc thù sản phẩm và token nhất quán. Nhưng còn lỗi lặp có hệ thống HT1, HT2, HT3 (bàn phím, focus) và HT6, HT13 (mặc định generic).
+
+**Số lỗi (không tính các mục [BRAND]):**
+- Lỗi hệ thống: 3 P1, 9 P2, 2 P3.
+- Lỗi riêng nhóm A: 4 P1, 24 P2, 12 P3.
+- Lỗi riêng nhóm B: 1 P1, 14 P2, 10 P3.
+- Không có lỗi P0 nào.
+
 ## Lỗi hệ thống (mỗi lỗi chỉ ghi ở đây một lần, kèm mức P thống nhất)
 
 | Mã | Mức | Lỗi | Vị trí chính |
