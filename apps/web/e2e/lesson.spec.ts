@@ -103,6 +103,13 @@ test('phiên học pass 1: intro → trắc nghiệm → lưu ngay → kết th�
   await expect(page.locator('.session-end')).toBeVisible();
   await expect(page.locator('.session-end')).toContainText('XP');
   await expect(page.getByRole('button', { name: 'Về Hôm nay' })).toBeVisible();
+  // lần đầu chuỗi tăng trong ngày: thẻ chuyên cần phóng toàn màn hình, số đổi 0 → 1 rồi đóng bằng Esc
+  const ig = page.getByRole('dialog', { name: 'Thắp chuỗi 1 ngày' });
+  await expect(ig).toBeVisible();
+  await expect(ig.getByRole('button', { name: 'Tiếp tục' })).toBeFocused();
+  await expect(ig.locator('.cg-count').last()).toHaveText('1', { timeout: 4000 });
+  await page.keyboard.press('Escape');
+  await expect(ig).toHaveCount(0);
 });
 
 test('cột đợt thành dải chip trên điện thoại; desktop có cột, không dải; không tab bar trong phiên', async ({ page }) => {
@@ -137,6 +144,7 @@ test('trả lời sai → màn kết thúc có "Xem lại câu sai", bấm tên 
     if (await next.count()) await next.click();
   }
   expect(wrongDone).toBe(true);
+  await page.getByRole('dialog', { name: /Thắp chuỗi/ }).getByRole('button', { name: 'Tiếp tục' }).click(); // màn thắp chuỗi lần đầu trong ngày
   const mistakes = page.locator('.mistakes');
   await expect(mistakes).toContainText(/Xem lại câu sai \([1-9]/);
   await expect(mistakes).toContainText('Đáp án:');

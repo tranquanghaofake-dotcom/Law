@@ -27,6 +27,7 @@
   let byLevel = $state<number[]>([0, 0, 0, 0, 0, 0, 0]);
   let week = $state<boolean[]>(Array(7).fill(false));
   let msg = $state('');
+  let loaded = $state(false); // số liệu thật đã về (CountUp chỉ so/đếm khi true)
   let careerSec = $state<{ scrollToNext: () => void } | null>(null);
 
   if (!shelf.ready) refreshShelf();
@@ -48,6 +49,7 @@
       for (const p of all) counts[p.level] += 1;
       byLevel = counts;
       week = weekFlags(await repo.reviewDays(weekStart()));
+      loaded = true;
     } catch (e) { msg = `Không tải được dữ liệu: ${(e as Error).message}`; }
   }
   $effect(() => { document.title = onSettings ? 'Cài đặt · Luyện Luật' : 'Hồ sơ · Luyện Luật'; });
@@ -178,7 +180,7 @@
                 {#if s.id === 'su-nghiep'}
                   <CareerSection bind:this={careerSec} />
                 {:else}
-                  <StreakPanel {streak} {xp} {week} {byLevel} />
+                  <StreakPanel {streak} {xp} {week} {byLevel} ready={loaded} />
                 {/if}
               </div>
             {/if}

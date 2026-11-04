@@ -55,14 +55,39 @@ describe('lookFor — tổ hợp tủ trưng bày cho 29 chức + Công dân', (
   it('không dùng cờ, Quốc huy, quân hàm, sao vàng trong danh mục', () => {
     for (const n of [...PROPS, ...BACKDROPS, ...ADORNS]) expect(n).not.toMatch(/^co-|-co-|quoc-huy|quan-ham|sao-vang/);
   });
-  it('đợt 8: 5 phông Việt Nam mới có trong danh mục và được dùng; các chức dùng ≥ 12 phông khác nhau, không phông nào chiếm quá 5 chức', () => {
-    for (const b of ['hoi-an', 'thien-mu', 'ruong-bac-thang', 'nha-hat-lon', 'dinh-lang']) {
-      expect(BACKDROPS).toContain(b);
-      expect(all.some((l) => l.backdrop === b), b).toBe(true);
+  // Đợt 10: phông = nơi làm việc thật của chức danh (không chọn ngẫu hứng cho đa dạng); trang phục càng cao càng trang trọng.
+  const WORKPLACE = (p: (typeof POSTS)[number]): string[] => {
+    if (p.branch === 'xet-xu') return ['toa-an', 'phap-dinh'];
+    if (p.branch === 'kiem-sat') return ['vien-kiem-sat', 'phap-dinh'];
+    if (p.branch === 'nguyen-thu') return ['phu-chu-tich'];
+    if (p.tier === 'co-so') return ['tru-so-xa'];
+    if (p.tier === 'tinh') return ['tru-so-tinh'];
+    return p.branch === 'lap-phap' ? ['quoc-hoi'] : ['tru-so-bo'];
+  };
+  it('đợt 10: phông là nơi làm việc của chức (xã → trụ sở xã, tỉnh → trụ sở tỉnh, bộ/Chính phủ, Quốc hội, Tòa án, Viện kiểm sát, dinh thự nguyên thủ)', () => {
+    for (const p of POSTS) expect(WORKPLACE(p), p.id).toContain(lookFor(p.id).backdrop);
+  });
+  it('đợt 10: đồng phục ngành (áo choàng xét xử, kiểm sát) trơn, cổ mặc định, không cài ghim trang trí', () => {
+    for (const p of POSTS) {
+      const l = lookFor(p.id);
+      if (!['ao-choang', 'ks-xuan-he', 'ks-thu-dong'].includes(l.outfit)) continue;
+      expect([l.pattern, l.neck, l.adorn], p.id).toEqual(['tron', 'mac-dinh', 'khong']);
     }
-    const count = new Map<string, number>();
-    for (const l of all.slice(1)) count.set(l.backdrop, (count.get(l.backdrop) ?? 0) + 1);
-    expect(count.size).toBeGreaterThanOrEqual(12);
-    expect(Math.max(...count.values())).toBeLessThanOrEqual(5);
+  });
+  it('đợt 10: không nơ bướm cho chức danh nhà nước; chấm bi/kẻ ca-rô chỉ ở cấp cơ sở; trung ương trở lên vải trơn hoặc sọc chỉ', () => {
+    for (const p of POSTS) {
+      const l = lookFor(p.id);
+      expect(l.neck, p.id).not.toBe('no');
+      if (p.tier !== 'co-so') expect(['cham', 'ca-ro'], p.id).not.toContain(l.pattern);
+      if (p.tier === 'trung-uong' || p.tier === 'lanh-dao') expect(['tron', 'soc-chi'], p.id).toContain(l.pattern);
+    }
+  });
+  it('đợt 10: đồ vật trên bục đúng nghề — xét xử có cán cân hoặc hồ sơ vụ án; kiểm sát có kính lúp/hồ sơ; lập pháp có hòm phiếu/micro/bộ luật/cuộn chiếu', () => {
+    const need: Record<string, string[]> = { 'xet-xu': ['can-can', 'ho-so-vu-an'], 'kiem-sat': ['kinh-lup', 'ho-so-vu-an', 'cap-ho-so'], 'lap-phap': ['hom-phieu', 'micro', 'bo-luat', 'cuon-chieu'] };
+    for (const p of POSTS) {
+      const want = need[p.branch]; if (!want) continue;
+      const l = lookFor(p.id);
+      expect(want.some((w) => w === l.propL || w === l.propR), p.id).toBe(true);
+    }
   });
 });

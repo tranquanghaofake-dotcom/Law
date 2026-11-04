@@ -1,5 +1,25 @@
 <script lang="ts" module>
   let seq = 0;
+  // Hình học thẻ (khung 856×540) ở phạm vi module để màn thắp chuỗi (StreakIgnite) biết đích bay của đốm sáng.
+  const jit = (i: number, k: number) => (((i * 9301 + k * 49297) % 233280) / 233280 - 0.5);
+  const slots: [number, number][] = [
+    ...Array.from({ length: 7 }, (_, i) => [74 + i * 118, 78] as [number, number]),
+    ...[40, 138, 232, 624, 718, 816].map((x) => [x, 206] as [number, number]),
+    ...[86, 188, 286, 570, 672, 774].map((x) => [x, 334] as [number, number]),
+    ...Array.from({ length: 8 }, (_, i) => [54 + i * 107, 466] as [number, number]),
+  ];
+  const doodles = slots.map(([x, y], i) => ({ x: x + jit(i, 1) * 16, y: y + jit(i, 2) * 12, rot: jit(i, 3) * 22, s: 1.32 + jit(i, 4) * 0.14 }));
+  // thứ tự sáng: từ giữa lan ra (ngày 1 gần logo nhất)
+  const order = [...doodles.keys()].sort((a, b) => Math.hypot(doodles[a].x - 428, (doodles[a].y - 268) * 1.6) - Math.hypot(doodles[b].x - 428, (doodles[b].y - 268) * 1.6));
+  const rankOf = Array(27).fill(0); order.forEach((g, k) => (rankOf[g] = k));
+  /** Toạ độ tâm con số trong khung thẻ. */
+  export const NUM_POINT = { x: 428, y: 262 };
+  /** Toạ độ ký hoạ được thắp ở ngày tiến độ `day` (1–27); ngày 28–30 không có ký hoạ mới → null. */
+  export function glyphPoint(day: number): { x: number; y: number } | null {
+    if (day < 1 || day > 27) return null;
+    const d = doodles[order[day - 1]];
+    return { x: d.x, y: d.y };
+  }
 </script>
 
 <script lang="ts">
@@ -9,21 +29,14 @@
   import { cardFor, justLit, isMilestone, TIER_NAMES, type Tier } from '$lib/game/card';
   import { CARD_GLYPHS } from './cardGlyphs';
   import { reducedMotion } from '$lib/fx/confetti';
-  let { count = 0, longest = 0, size = 'full', ignite = false }: { count?: number; longest?: number; size?: 'full' | 'mini'; ignite?: boolean } = $props();
+  import { motionGate } from '$lib/fx/motionGate';
+  let { count = 0, longest = 0, size = 'full', ignite = false, flare = false, from = null }: { count?: number; longest?: number; size?: 'full' | 'mini'; ignite?: boolean; flare?: boolean; from?: number | null } = $props();
   const c = $derived(cardFor(count, longest));
   const uid = `sc${++seq}`;
   // SMIL không chịu CSS giảm chuyển động: tự bỏ <animate> khi người dùng chọn giảm chuyển động (HT5).
   const still = $derived(reducedMotion());
   // Nền doodle nét đơn phủ kín: 27 doodle pháp luật xếp 4 hàng so le (7 + 6 + 6 + 8), hai hàng giữa chừa chỗ logo;
   // khe trống lấp bằng hình phụ nhỏ (chấm, sao, xoắn, §, gạch). Lệch vị trí/góc nhẹ cho cảm giác vẽ tay.
-  const jit = (i: number, k: number) => (((i * 9301 + k * 49297) % 233280) / 233280 - 0.5);
-  const slots: [number, number][] = [
-    ...Array.from({ length: 7 }, (_, i) => [74 + i * 118, 78] as [number, number]),
-    ...[40, 138, 232, 624, 718, 816].map((x) => [x, 206] as [number, number]),
-    ...[86, 188, 286, 570, 672, 774].map((x) => [x, 334] as [number, number]),
-    ...Array.from({ length: 8 }, (_, i) => [54 + i * 107, 466] as [number, number]),
-  ];
-  const doodles = slots.map(([x, y], i) => ({ x: x + jit(i, 1) * 16, y: y + jit(i, 2) * 12, rot: jit(i, 3) * 22, s: 1.32 + jit(i, 4) * 0.14 }));
   // hình phụ lấp khe
   const FILL = [
     'M0-4v8M-4 0h8', 'M0-5l1.4 3.6l3.6 1.4l-3.6 1.4l-1.4 3.6l-1.4-3.6l-3.6-1.4l3.6-1.4z', 'M-3 0a3 3 0 1 0 6 0a3 3 0 1 0-6 0',
@@ -36,9 +49,6 @@
     if (doodles.some((d) => Math.abs(d.x - x) < 52 && Math.abs(d.y - y) < 50)) continue;
     fillers.push({ x, y, d: FILL[Math.abs(Math.floor(jit(k, 7) * 1000)) % FILL.length], rot: jit(k, 8) * 60 });
   }
-  // thứ tự sáng: từ giữa lan ra (ngày 1 gần logo nhất)
-  const order = [...doodles.keys()].sort((a, b) => Math.hypot(doodles[a].x - 428, (doodles[a].y - 268) * 1.6) - Math.hypot(doodles[b].x - 428, (doodles[b].y - 268) * 1.6));
-  const rankOf = Array(27).fill(0); order.forEach((g, k) => (rankOf[g] = k));
   // hoa văn hoa thị (rosette) của huy hiệu: elip xoay lồng nhau
   const rosette = Array.from({ length: 36 }, (_, k) => k * 5);
   // cán cân của huy hiệu (gốc toạ độ = tâm đĩa số): cột xuyên qua đĩa, đòn cân và hai đĩa cân phía trên, đế phía dưới
@@ -111,7 +121,7 @@
   const spark = $derived(newest >= 0 ? { x: doodles[newest].x, y: doodles[newest].y } : { x: 428, y: 262 });
 </script>
 
-<div class="sc-wrap {size}" class:on class:lighting bind:this={el} onpointermove={move} onpointerleave={leave} role="img" aria-label={label}
+<div use:motionGate={{ settle: 15000 }} class="sc-wrap {size}" class:on class:lighting bind:this={el} onpointermove={move} onpointerleave={leave} role="img" aria-label={label}
   style="--rx:{tilt.rx.toFixed(2)}deg; --ry:{tilt.ry.toFixed(2)}deg; --mx:{tilt.mx.toFixed(1)}%; --my:{tilt.my.toFixed(1)}%; --px:{tilt.px.toFixed(3)}; --py:{tilt.py.toFixed(3)}">
   <svg class="streak-card {size} tier-{c.tier ?? 'none'}" class:burst={c.burst} viewBox="0 0 856 540" aria-hidden="true" focusable="false">
     <defs>
@@ -128,6 +138,7 @@
       <filter id="{uid}-hand" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="7" /><feDisplacementMap in="SourceGraphic" scale="2.2" /></filter>
       <filter id="{uid}-soft" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="14" /></filter>
       <!-- lửa: làm nhoè rồi xé mép bằng nhiễu chuyển động, cộng quầng rộng -->
+      <clipPath id="{uid}-numclip"><circle r="56" /></clipPath>
       <clipPath id="{uid}-clip"><rect width="856" height="540" rx="40" /></clipPath>
       <linearGradient id="{uid}-sheen" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0" /><stop offset=".5" stop-color="#fff" stop-opacity=".09" /><stop offset="1" stop-color="#fff" stop-opacity="0" /></linearGradient>
       <linearGradient id="{uid}-edge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".22" /><stop offset=".35" stop-color="#fff" stop-opacity=".04" /><stop offset="1" stop-color="#000" stop-opacity=".5" /></linearGradient>
@@ -221,10 +232,19 @@
       <circle r="53" fill="none" stroke={lg ? lg.mid : '#55555c'} stroke-width="1" stroke-dasharray="1 4" />
       {#if lg}<circle r="40" fill={lg.glow} opacity=".3" filter="url(#{uid}-soft)" class="cg-core" />{/if}
       <!-- số khắc chìm: bóng tối lệch xuống + viền sáng mảnh lệch lên, rồi chữ chính -->
-      <text class="cg-count" y="2.4" text-anchor="middle" dominant-baseline="central" font-size={fs} fill="#000" opacity=".6">{count}</text>
-      <text class="cg-count" y="-.6" text-anchor="middle" dominant-baseline="central" font-size={fs} fill="#fff" opacity=".18">{count}</text>
-      <text class="cg-count" y="1" text-anchor="middle" dominant-baseline="central" font-size={fs}
-        fill={lg ? `url(#${uid}-lotus)` : `url(#${uid}-ash)`} filter={lg ? `url(#${uid}-hot)` : undefined}>{count}</text>
+      <!-- con số: khi thắp (flare) số cũ trượt lên biến mất, số mới trượt từ dưới lên như đồng hồ đếm; chỉ CHỮ SỐ bừng sáng rồi tắt dần -->
+      <g clip-path="url(#{uid}-numclip)">
+        {#if flare && cur && from !== null}{#key count}<text class="cg-count cg-roll-out" y="1" text-anchor="middle" dominant-baseline="central" font-size={fs} fill="url(#{uid}-ash)">{from}</text>{/key}{/if}
+        {#key flare ? count : -1}
+          <g class:cg-roll-in={flare && !!cur}>
+            <text class="cg-count" y="2.4" text-anchor="middle" dominant-baseline="central" font-size={fs} fill="#000" opacity=".6">{count}</text>
+            <text class="cg-count" y="-.6" text-anchor="middle" dominant-baseline="central" font-size={fs} fill="#fff" opacity=".18">{count}</text>
+            <text class="cg-count" y="1" text-anchor="middle" dominant-baseline="central" font-size={fs}
+              fill={lg ? `url(#${uid}-lotus)` : `url(#${uid}-ash)`} filter={lg ? `url(#${uid}-hot)` : undefined}>{count}</text>
+            {#if flare && cur}<text class="cg-count cg-numflare halo" y="1" text-anchor="middle" dominant-baseline="central" font-size={fs} fill={cur.glow} stroke={cur.glow} stroke-width="6" filter="url(#{uid}-soft)">{count}</text><text class="cg-count cg-numflare" y="1" text-anchor="middle" dominant-baseline="central" font-size={fs} fill={cur.core} stroke={cur.mid} stroke-width="1.6" filter="url(#{uid}-hot)">{count}</text>{/if}
+          </g>
+        {/key}
+      </g>
     </g></g>
     <!-- màn vừa thắp: tia lửa bay từ logo tới ký hoạ mới → bùng cháy + sóng lửa; ngày 28–30 thì sóng lớn quanh logo -->
     {#if lighting && cur}

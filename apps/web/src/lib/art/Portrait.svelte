@@ -20,6 +20,11 @@
   import type { BookScheme } from '$lib/ui/shelf';
   import type { BookLevel } from '$lib/game/books';
   import { ring } from './kit';
+  import { motionGate } from '$lib/fx/motionGate';
+  import { fade } from 'svelte/transition';
+  import { reducedMotion } from '$lib/fx/confetti';
+  // đổi chức đang xem: áo + phông mờ chéo (hai lớp tuyệt đối chồng nhau trong lúc chuyển)
+  const xf = (ms: number) => ({ duration: reducedMotion() ? 0 : ms });
   type ShelfBook = { key: string; scheme: BookScheme; level: BookLevel; label: string };
   let { avatar, look = lookFor(null), title = 'Công dân', subtitle = '', books = [], tier = null, celebrate = false, locked = false, compact = false, ondone }:
     { avatar: Avatar; look?: Look; title?: string; subtitle?: string; accent?: string; books?: ShelfBook[]; tier?: PostTier | null; celebrate?: boolean; locked?: boolean; compact?: boolean; ondone?: () => void } = $props();
@@ -44,7 +49,7 @@
   </svg>
 {/snippet}
 
-<figure class="showcase fx-{fx}" class:celebrate class:locked class:compact data-tier={tier ?? 'none'} data-mat={look.material} data-look={look.id} aria-label="Tủ trưng bày: {title}{locked ? ' (chưa mở)' : ''}">
+<figure use:motionGate={{ settle: celebrate ? 0 : 12000 }} class="showcase fx-{fx}" class:celebrate class:locked class:compact data-tier={tier ?? 'none'} data-mat={look.material} data-look={look.id} aria-label="Tủ trưng bày: {title}{locked ? ' (chưa mở)' : ''}">
   {#if rich && !compact}{@render corner('tl')}{@render corner('tr')}{@render corner('bl')}{@render corner('br')}{/if}
   {#if tier === 'lanh-dao' && !compact}<span class="sc-lamp l" aria-hidden="true"></span><span class="sc-lamp r" aria-hidden="true"></span>{/if}
   <header class="sc-head">
@@ -52,7 +57,7 @@
     {#if subtitle}<p class="sc-sub">{subtitle}</p>{/if}
   </header>
   <div class="sc-window">
-    <Backdrop scene={look.backdrop} sky={look.sky} />
+    {#key look.backdrop + look.sky}<div class="sc-xf" in:fade={xf(420)} out:fade={xf(320)}><Backdrop scene={look.backdrop} sky={look.sky} /></div>{/key}
     {#if tier === 'lanh-dao' || fx === 'trong-dong' || fx === 'khung-vang' || fx === 'hat-sang'}
       <svg class="sc-drum" viewBox="0 0 200 200" aria-hidden="true" focusable="false">
         <g class="sun-spin"><path d={ring(100, 100, 84, 96, 48)} fill="currentColor" /><circle cx="100" cy="100" r="76" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="1.5 6" /><circle cx="100" cy="100" r="58" fill="none" stroke="currentColor" stroke-width="1" /></g>
@@ -60,8 +65,10 @@
     {/if}
     <span class="sc-cone" aria-hidden="true"></span>
     <span class="sc-floor" aria-hidden="true"></span>
-    <div class="sc-photo"><GarmentFlat outfit={avatar.outfit} tone={look.tone} adorn={look.adorn} pattern={look.pattern} neck={look.neck} /></div>
-    <div class="sc-reflect" aria-hidden="true"><GarmentFlat outfit={avatar.outfit} tone={look.tone} adorn={look.adorn} pattern={look.pattern} neck={look.neck} /></div>
+    {#key avatar.outfit + look.id}
+      <div class="sc-photo" in:fade={xf(420)} out:fade={xf(320)}><GarmentFlat outfit={avatar.outfit} tone={look.tone} adorn={look.adorn} pattern={look.pattern} neck={look.neck} /></div>
+      <div class="sc-reflect" aria-hidden="true" in:fade={xf(420)} out:fade={xf(320)}><GarmentFlat outfit={avatar.outfit} tone={look.tone} adorn={look.adorn} pattern={look.pattern} neck={look.neck} /></div>
+    {/key}
     <span class="sc-bulb" aria-hidden="true"></span>
     <span class="sc-motes" aria-hidden="true">{#each motes as m, i (i)}<i style="left:{m.x}%;top:{m.y}%;animation-delay:-{m.d}s;animation-duration:{m.s}s"></i>{/each}</span>
     {#if fx === 'hat-sang' || celebrate}

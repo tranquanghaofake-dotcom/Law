@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Loading from '$lib/ui/Loading.svelte';
   // Trang Hôm nay = state router: một thẻ hành động, môn đang học, một thẻ kiểm tra nhanh (spec §3).
   import type { ContentIndex, Level, Subject } from '$lib/content/types';
   import { loadIndex, loadSubject, loadConcepts } from '$lib/content/loader';
@@ -88,7 +89,7 @@
 {#if error}
   <section class="card"><p class="muted">Không tải được dữ liệu ({error}). Nếu mở file trực tiếp, hãy chạy <code>npm run dev</code> ở gốc repo.</p></section>
 {:else if !index || !hero}
-  <p class="loading">Đang tải…</p>
+  <Loading />
 {:else}
   <h1 class="sr-only">Hôm nay</h1>
   <HeroCard state={hero} />

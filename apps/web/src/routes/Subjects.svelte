@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Loading from '$lib/ui/Loading.svelte';
   // Tủ sách giáo trình: mỗi môn một bìa, xếp theo kệ nhóm ngành + thứ tự chương trình học, có ô tìm và chip lọc (spec phần nhìn đợt 4 §3.3).
   import type { Level, Subject } from '$lib/content/types';
   import { loadIndex, loadSubject } from '$lib/content/loader';
@@ -69,7 +70,7 @@
 {#if error}
   <section class="card"><p class="muted">Không tải được dữ liệu: {error}</p></section>
 {:else if !items}
-  <p class="loading">Đang tải…</p>
+  <Loading />
 {:else}
   <div class="shelf-chips" role="group" aria-label="Lọc theo nhóm ngành">
     <button type="button" class="filter" aria-pressed={pick === null} onclick={() => (pick = null)}>Tất cả</button>

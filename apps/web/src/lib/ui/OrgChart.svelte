@@ -11,6 +11,7 @@
   import { career, setBranch } from './career.svelte';
   import { orgColumn, orgTree, shortPostTitle, type OrgPost, type OrgStatus } from './orgTree';
   import Sheet from './Sheet.svelte';
+  import { LuyenLuatDB } from '$lib/store/db';
 
   let { selectedId = null, onpick, onshowcase, detail = 'sheet' }:
     { selectedId?: string | null; onpick?: (p: OrgPost) => void; onshowcase?: () => void; detail?: 'sheet' | 'none' } = $props();
@@ -18,6 +19,11 @@
   if (!shelf.ready) refreshShelf();
   const tree = $derived(orgTree(POSTS, careerState(shelf.books), shelf.books));
   const cols = $derived(tree.branches.map(orgColumn));
+  // Chức vừa đạt mà chưa xem lễ nhận chức (settings 'career-seen', cùng nguồn với CareerPanel): ô toả vòng vàng ba nhịp (đợt 10).
+  let seenIds = $state<string[] | null>(null);
+  const db = () => { try { return typeof indexedDB === 'undefined' ? null : new LuyenLuatDB(); } catch { return null; } };
+  (async () => { try { const row = await db()?.settings.get('career-seen'); seenIds = (row?.value as string[] | undefined) ?? null; } catch { /* bỏ qua */ } })();
+  const isFresh = (p: OrgPost) => p.status === 'done' && seenIds !== null && !seenIds.includes(p.id);
   const STATE_TEXT: Record<OrgStatus, string> = { done: 'Đã đạt', next: 'Chức kế tiếp', locked: 'Chưa mở' };
   let sel = $state<OrgPost | null>(null);
   let open = $state(false);
@@ -70,7 +76,7 @@
 {/snippet}
 
 {#snippet node(p: OrgPost, i: number, cls = '')}
-  <button type="button" class="org-node {cls}" class:pv={selectedId === p.id} data-status={p.status} aria-pressed={selectedId === p.id} aria-haspopup={detail === 'sheet' ? 'dialog' : undefined} title={p.title} onclick={() => pick(p)} use:appear={i}>
+  <button type="button" class="org-node {cls}" class:pv={selectedId === p.id} class:fresh={isFresh(p)} data-status={p.status} aria-pressed={selectedId === p.id} aria-haspopup={detail === 'sheet' ? 'dialog' : undefined} title={p.title} onclick={() => pick(p)} use:appear={i}>
     <span class="org-mark" aria-hidden="true">
       {#if p.status === 'done'}<svg viewBox="0 0 20 20" width="20" height="20"><rect x="1.5" y="1.5" width="17" height="17" rx="2.5" /><path d="M5.5 10.5l3 3l6-7" /></svg>
       {:else if p.status === 'next'}<svg viewBox="0 0 20 20" width="20" height="20"><circle cx="10" cy="10" r="7.5" /><circle class="dot" cx="10" cy="10" r="3" /></svg>

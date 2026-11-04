@@ -116,7 +116,7 @@
   }
 
   .meter { position: absolute; left: var(--sp-2); right: var(--sp-2); bottom: -5px; height: 3px; border-radius: 2px; background: var(--line); overflow: hidden; }
-  .meter span { display: block; height: 100%; background: linear-gradient(90deg, var(--fire-a), var(--fire-b)); transition: width .25s ease; }
+  .meter span { display: block; height: 100%; background: linear-gradient(90deg, var(--fire-a), var(--fire-b)); transition: width var(--dur-2) var(--ease-out); }
 
   @keyframes combo-in { from { opacity: 0; transform: scale(.85); } to { opacity: 1; transform: none; } }
   @keyframes sway-a { from { transform: scale(1, 1) skewX(-2deg); } to { transform: scale(.96, 1.08) skewX(2.5deg); } }

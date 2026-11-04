@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Loading from '$lib/ui/Loading.svelte';
   import Glyph from '$lib/art/Glyph.svelte';
   import SubjectArt from '$lib/art/SubjectArt.svelte';
   import { PAGE_ART } from '$lib/art/registry';
@@ -73,7 +74,7 @@
 {#if error}
   <section class="card"><p class="muted">Không tải được môn: {error}</p><a class="btn ghost" href={hashFor('subjects')}>Về Môn học</a></section>
 {:else if !subject}
-  <p class="loading">Đang tải…</p>
+  <Loading />
 {:else}
   <nav class="crumbs small muted" aria-label="Vị trí"><a href={hashFor('subjects')}>Môn học</a> › <a href={hashFor('subject', { subject: subject.id })}>{subject.title}</a> › Khái niệm</nav>
   <header class="page-head">

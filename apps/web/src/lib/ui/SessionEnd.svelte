@@ -1,6 +1,11 @@
 <script lang="ts">
   import Glyph from '$lib/art/Glyph.svelte';
   import StreakCard from '$lib/art/StreakCard.svelte';
+  import CountUp from './CountUp.svelte';
+  import StreakIgnite from '$lib/art/StreakIgnite.svelte';
+  import { shouldIgnite, IGNITE_KEY } from './ignite';
+  import { localDay } from '$lib/game/streak';
+  import { onMount } from 'svelte';
   import type { Concept, Level } from '$lib/content/types';
   import type { StreakEvent } from '$lib/game/streak';
   import type { RankInfo } from '$lib/game/rank';
@@ -21,6 +26,17 @@
     retryTotal?: number;
   } = $props();
   const retryTotal = $derived(retryProp || summary.retried || 0);
+  // màn thắp chuỗi toàn màn hình: lần đầu chuỗi tăng trong ngày (ghi ngày đã chiếu ở localStorage)
+  let igniting = $state(false);
+  let mini: HTMLSpanElement | undefined = $state();
+  onMount(() => {
+    const today = localDay(new Date());
+    let shown: string | null = null;
+    try { shown = localStorage.getItem(IGNITE_KEY); } catch { /* bỏ qua */ }
+    if (!shouldIgnite(streakEvent, today, shown)) return;
+    try { localStorage.setItem(IGNITE_KEY, today); } catch { /* bỏ qua */ }
+    igniting = true;
+  });
   const term = (id: string) => concepts.find((c) => c.id === id)?.term ?? id;
   const conceptOf = (id: string) => concepts.find((c) => c.id === id);
   const explainOf = (s: Step) => ('explain' in s.item ? s.item.explain : '');
@@ -39,7 +55,7 @@
       <p class="score"><b>{summary.correct}</b><small>/{summary.total} đúng</small></p>
     </div>
     <div class="end-stats">
-      <p class="xp">+{summary.xp} XP</p>
+      <p class="xp">+<CountUp value={summary.xp} from={0} duration={1100} /> XP</p>
       <dl class="stat-list">
         {#if summary.bestCombo !== undefined}<div><dt>Combo dài nhất</dt><dd>{summary.bestCombo}</dd></div>{/if}
         {#if summary.golden}<div><dt>Câu vàng</dt><dd>{summary.golden}</dd></div>{/if}
@@ -58,7 +74,8 @@
     </ul>
   {/if}
   {#if promotion}<p class="promotion"><span class="seal-stamp" aria-hidden="true">§</span> Thăng chức: <b>{promotion}</b> <span class="muted small">(chức danh mô phỏng)</span></p>{/if}
-  <p class="streak"><StreakCard count={streak} longest={streak} size="mini" /> Chuỗi {streak} ngày · {streakMsg}</p>
+  <p class="streak"><span class="streak-mini" class:away={igniting} bind:this={mini}><StreakCard count={streak} longest={streak} size="mini" /></span> Chuỗi {streak} ngày · {streakMsg}</p>
+  {#if igniting}<StreakIgnite count={streak} longest={streak} origin={mini} onclose={() => (igniting = false)} />{/if}
   {#if summary.levelUps.length}
     <h2>Khái niệm lên bậc</h2>
     <ul class="levelups">
