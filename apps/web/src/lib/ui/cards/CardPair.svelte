@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Glyph from '$lib/art/Glyph.svelte';
   import type { ItemPair } from '$lib/content/types';
   import { shuffle } from '$lib/engine/session';
   import { isTypingTarget, type CardProps } from './types';
@@ -44,5 +45,5 @@
     <button class="opt {cls('left')}" type="button" disabled={last !== null || finished} aria-label="1. {item.left}" onclick={() => pick('left')}><span class="key" aria-hidden="true">1</span><span>{item.left}</span></button>
     <button class="opt {cls('right')}" type="button" disabled={last !== null || finished} aria-label="2. {item.right}" onclick={() => pick('right')}><span class="key" aria-hidden="true">2</span><span>{item.right}</span></button>
   </div>
-  <p class="marks" aria-label="Kết quả từng tình huống">{#each marks as m}<span class={m ? 'ok' : 'bad'}>{m ? '●' : '○'}</span>{/each}</p>
+  <p class="marks" aria-label="Kết quả từng tình huống">{#each marks as m}<span class={m ? 'ok' : 'bad'}><Glyph name={m ? 'dot' : 'dot-empty'} size={14} /></span>{/each}</p>
 </article>

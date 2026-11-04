@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Glyph from '$lib/art/Glyph.svelte';
   import type { Concept, Level } from '$lib/content/types';
   import { clozeModeFor, type Step } from '$lib/engine/session';
   import { recordsProgress } from '$lib/engine/step';
@@ -258,7 +259,7 @@
       {#key run.i}<BossIntro ondone={() => (bossSeen = run.i)} />{/key}
     {:else}
       <div class="step-wrap" class:golden class:retry class:boss={step.meta?.kind === 'boss'}>
-        {#if golden}<p class="step-badge gold"><span aria-hidden="true">★</span> Câu vàng · đúng được ×2 XP</p>
+        {#if golden}<p class="step-badge gold"><Glyph name="star-fill" size={14} /> Câu vàng · đúng được ×2 XP</p>
         {:else if retry}<p class="step-badge retry">Sửa sai · không ghi vào tiến độ nhớ</p>
         {:else if step.meta?.kind === 'boss'}<p class="step-badge boss">Câu chốt</p>{/if}
         {#if pretest}<PretestBar answered={!!result} onskip={skipPretest} />{/if}

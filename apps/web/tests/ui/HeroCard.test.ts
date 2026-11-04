@@ -8,7 +8,7 @@ const lesson = subject.chapters[0].lessons[0];
 const q = (c: HTMLElement, sel: string) => c.querySelector(sel);
 
 describe('HeroCard', () => {
-  it('due: kicker ÔN HÔM NAY, số 12, tối đa 3 chip, nút Ôn ngay → #/on', () => {
+  it('due: kicker Ôn hôm nay, số 12, tối đa 3 chip, nút Ôn ngay → #/on', () => {
     const { container } = render(HeroCard, { props: { state: { kind: 'due', count: 12, terms: ['A', 'B', 'C'], minutes: 5 } } });
     expect(q(container, '.kicker')?.textContent).toBe('Ôn hôm nay');
     expect(q(container, '.big')?.textContent).toBe('12');
