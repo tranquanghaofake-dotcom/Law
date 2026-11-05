@@ -6,6 +6,7 @@ Cách dùng:
   python3 kiem_tra_ban_thao.py ban-cuoi.md --nop         # bản nộp: còn nhãn = lỗi CHẶN
   python3 kiem_tra_ban_thao.py ban-cuoi.md --an-danh "Nguyễn Văn A,Đại học Luật X"
   python3 kiem_tra_ban_thao.py khoa-luan/de-tai/0*.md   # nhiều file: kiểm cả tham chiếu "Phụ lục N" giữa các file
+  python3 kiem_tra_ban_thao.py 06-chuong-2.md --nguyen-van 05-nguon/nguyen-van.md   # trích dẫn phải có trong file nguyên văn
 
 Mức: CHẶN (phải sửa), NẶNG, NHẸ. Thoát mã 1 nếu có lỗi CHẶN.
 Script chỉ bắt lỗi hình thức có quy luật; KHÔNG thay việc kiểm nguồn và hiệu lực bằng tay.
@@ -46,10 +47,34 @@ def tieu_de(van):
     return [m.group(1).strip() for m in RE_TIEU_DE.finditer(van)]
 
 
-def kiem_tra(van, nop=False, an_danh=None, tieu_de_khac=None):
+def _doan_trich(van):
+    """Các đoạn trích (vị trí, nội dung) ≥ 25 ký tự. Ngoặc thẳng ghép theo cặp liên tiếp trong từng dòng."""
+    kq = []
+    vt_dong = 0
+    for dong in van.split("\n"):
+        mo = None
+        for i, ch in enumerate(dong):
+            if ch == "“" or (ch == '"' and mo is None):
+                mo = i
+            elif (ch == "”" or ch == '"') and mo is not None:
+                noi_dung = dong[mo + 1:i]
+                if len(noi_dung) >= 25:
+                    kq.append((vt_dong + mo, noi_dung))
+                mo = None
+        vt_dong += len(dong) + 1
+    return kq
+
+
+def _chuan_hoa(s):
+    return re.sub(r"[\s*_]+", " ", s.replace("“", '"').replace("”", '"')).strip().lower()
+
+
+def kiem_tra(van, nop=False, an_danh=None, tieu_de_khac=None, nguyen_van=None):
     """Trả về danh sách vi phạm: {ma, muc, dong, noi_dung}.
 
     tieu_de_khac: tiêu đề của các file khác trong cùng dự án (để kiểm "Phụ lục N" có tồn tại).
+    nguyen_van: nội dung file trích nguyên văn (05-nguon/nguyen-van.md). Có thì mọi đoạn trích
+        trong ngoặc kép dài ≥ 25 ký tự phải xuất hiện trong đó.
     """
     kq = []
 
@@ -105,7 +130,18 @@ def kiem_tra(van, nop=False, an_danh=None, tieu_de_khac=None):
                  f"nhắc 'Phụ lục {so}' nhưng không có tiêu đề '# Phụ lục {so}' trong dự án")
             da_bao.add(so)
 
-    # 6. Cụm từ sáo rỗng
+    # 6. Trích dẫn phải có trong file nguyên văn (chống trích theo trí nhớ, sửa chữ)
+    if nguyen_van is not None:
+        kho = _chuan_hoa(nguyen_van)
+        for vt, noi_dung in _doan_trich(van):
+            if van.rfind("[^", 0, vt) > van.rfind("\n", 0, vt):
+                continue  # bỏ qua tên bài trong footnote
+            manh = [p for p in re.split(r"…|\.\.\.", noi_dung) if len(p.strip()) >= 10]
+            if any(_chuan_hoa(p) not in kho for p in manh):
+                them("trich-ngoai-nguyen-van", "NẶNG", _dong(van, vt),
+                     f"trích \"{noi_dung[:50]}…\" không có trong file nguyên văn")
+
+    # 7. Cụm từ sáo rỗng
     thap = van.lower()
     for cum in SAO_RONG:
         vt = thap.find(cum)
@@ -121,7 +157,12 @@ def main():
     ap.add_argument("tep", nargs="+")
     ap.add_argument("--nop", action="store_true", help="bản nộp: còn nhãn nghiên cứu là lỗi CHẶN")
     ap.add_argument("--an-danh", default=None, help="các chuỗi không được xuất hiện, cách nhau dấu phẩy")
+    ap.add_argument("--nguyen-van", default=None, help="file trích nguyên văn; đoạn trích ≥ 25 ký tự phải có trong đó")
     a = ap.parse_args()
+    nv = None
+    if a.nguyen_van:
+        with open(a.nguyen_van, encoding="utf-8") as f:
+            nv = f.read()
     an_danh = a.an_danh.split(",") if a.an_danh is not None else None
 
     van_ban = {}
@@ -131,7 +172,7 @@ def main():
     co_chan = False
     for tep, van in van_ban.items():
         khac = [t for t2, v2 in van_ban.items() if t2 != tep for t in tieu_de(v2)]
-        kq = kiem_tra(van, nop=a.nop, an_danh=an_danh, tieu_de_khac=khac)
+        kq = kiem_tra(van, nop=a.nop, an_danh=an_danh, tieu_de_khac=khac, nguyen_van=nv)
         dem = {m: sum(1 for v in kq if v["muc"] == m) for m in ("CHẶN", "NẶNG", "NHẸ")}
         print(f"== {tep}: CHẶN {dem['CHẶN']} · NẶNG {dem['NẶNG']} · NHẸ {dem['NHẸ']}")
         for v in sorted(kq, key=lambda v: (("CHẶN", "NẶNG", "NHẸ").index(v["muc"]), v["dong"])):

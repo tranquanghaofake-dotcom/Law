@@ -63,3 +63,32 @@ Thang chấm: TT 45/2020/TT-BGDĐT, Điều 13, khoản 2 (đề tài sinh viên
 7. Với hỏi đáp, công văn, phải tách **lời người hỏi** và **lời cơ quan trả lời**. Chỉ phần trả lời là quan điểm của cơ quan.
 8. Dịch thuật ngữ nước ngoài thành tên một loại VBQPPL Việt Nam ("circular" → "thông tư") gây nhầm, và script cũng báo nhầm theo. Cần quy tắc dịch.
 9. So sánh luật: phải chọn hệ thống có cơ chế **tương đương chức năng với đúng câu hỏi**. Vòng 1 chọn Delaware theo thói quen.
+
+## Vòng 3 (sau khi sửa skill lần 2)
+
+Đã sửa: lỗi CHẶN gán sai người nói (đọc trực tiếp phần TRẢ LỜI của hỏi đáp 154897 và viết lại đoạn "mẫu số tổng tài sản"); bỏ vế "hoặc báo cáo tài chính hợp nhất" vì nguồn bị cắt, chưa đọc được; Điều 9c(4), (5), (8) đã đọc nguyên văn trên EUR-Lex; mọi đoạn trích đã có trong `nguyen-van.md` (script `--nguyen-van`: 0 lỗi); sửa đoạn trích kết luận thanh tra cho đúng chữ gốc.
+
+### Vai 1 — phản biện học thuật
+- Không còn lỗi CHẶN trong mục 2.2.
+- NẶNG (còn từ vòng 2): chưa có giải thích theo mục đích (tờ trình, báo cáo thẩm tra 2019–2020). Đã tìm 2 lần, chưa ra toàn văn. Theo quy tắc "một hướng thử 3 lần không ra thì bỏ": thử thêm ở thư viện Quốc hội; nếu không có thì ghi thành giới hạn của đề tài.
+- NHẸ: câu trả lời mã 080525-25 (được dẫn trong 154897) chưa tìm thấy. Đã ghi ở footnote.
+
+### Vai 2 — người làm thực tiễn
+- Mục 2.2 giờ cho pháp chế một câu trả lời dùng được: hạn mức được cơ quan quản lý chấp nhận nhưng chưa chắc qua được tòa án, và có chuẩn tham khảo (SGX Rule 920) để soạn nghị quyết an toàn hơn.
+
+### Vai 3 — thư ký chấm (TT 45/2020, Điều 13, khoản 2)
+| Tiêu chí | Tối đa | V1 | V2 | V3 | Ghi chú V3 |
+|---|---|---|---|---|---|
+| Tổng quan | 10 | 7 | 8 | 8 | |
+| Nội dung | 20 | 13 | 16 | 17 | thêm phân tích mẫu số Điều 293 sau NĐ 245 có căn cứ đúng |
+| Phương pháp | 15 | 9 | 11 | 11 | chờ dữ liệu N ≥ 20 |
+| Kết quả | 40 | 22 | 27 | 30 | hết lỗi gán nguồn; kết luận (i), (ii) có phản chứng và đánh giá giá trị pháp lý |
+| Hình thức | 5 | 4 | 5 | 5 | |
+| Công bố | 10 | 0 | 0 | 0 | |
+| **Tổng** | 100 | **55** | **67** | **71** | ≥ 70: đủ điều kiện xét giải khuyến khích (Điều 13 khoản 3) |
+
+**Giới hạn của việc tự chấm.** Phần còn thiếu để đạt ≥ 85 (vào chung khảo) **không nằm ở câu chữ**: (1) khảo sát N ≥ 20 nghị quyết (Phụ lục 1), dự kiến +6–8 điểm Kết quả, +2 Phương pháp; (2) công bố hoặc trình bày seminar, +5–10. Cả hai là việc của người làm đề tài. Điểm tự chấm do chính người viết chấm nên có thiên lệch; hội đồng thật có thể chấm thấp hơn.
+
+### Bài học cho skill (vòng 3)
+10. Một vế nguồn bị cắt (đã ghi `[CẦN KIỂM]` trong `nguyen-van.md`) vẫn bị viết thành khẳng định trong bài, và không nhãn nào bắt được vì nhãn nằm ở file khác. → Script có tùy chọn `--nguyen-van`: mọi đoạn trích phải có trong file nguyên văn.
+11. Tự sửa chữ trong ngoặc kép cho "đúng" (ND-CP → NĐ-CP) là trích sai. → Quy tắc chép đúng chữ của nguồn; muốn sửa thì để ngoài ngoặc kép.

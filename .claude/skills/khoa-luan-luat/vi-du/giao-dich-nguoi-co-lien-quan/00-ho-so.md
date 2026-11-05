@@ -5,7 +5,9 @@
 - GVHD và định hướng: chưa có
 - Cuộc thi: không (khóa luận không được gửi xét giải Bộ theo TT 45/2020, Điều 4 khoản 2 điểm đ)
 - Đã có gì: [NGƯỜI DÙNG] định hướng pháp chế doanh nghiệp
+- Loại sản phẩm đổi ở vòng 1: NCKH sinh viên (để dự giải; khóa luận không được gửi xét giải Bộ)
 - Quy định về AI của trường: chưa rõ — cần hỏi khoa
 
 ## NHẬT KÝ PHIÊN
 - 05/11/2026 · pha 0–4 (chạy thử) · đã làm: thẩm định đề tài, tổng quan sơ bộ 4 nguồn, khung, đề cương · việc tiếp theo: mở rộng ma trận lên ≥ 15 nguồn (cổng pha 2 CHƯA QUA), kiểm Điều 167 sau Luật 76/2025
+- 05/11/2026 · vòng 1–3 (pha 1–7) · đổi đề tài sang ngách D "chấp thuận theo hạn mức" (Điều 167 LDN ↔ Điều 293 NĐ 155 sửa đổi bởi NĐ 245/2025); ma trận 22 nguồn; mục 2.2 viết mẫu; tự chấm 55 → 67 → 71 · việc tiếp theo **của người làm đề tài**: thu N ≥ 20 nghị quyết theo Phụ lục 1; trình bày seminar cấp khoa; kiểm "Luật Chứng khoán sửa đổi" ban hành 17/10/2026

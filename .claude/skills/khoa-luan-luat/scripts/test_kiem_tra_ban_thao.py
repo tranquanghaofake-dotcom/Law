@@ -66,6 +66,35 @@ class KiemTraBanThao(unittest.TestCase):
         kq = kiem_tra("Xem Phụ lục 2.\n\n## Phụ lục 2. Bảng hỏi\n…")
         self.assertEqual(len(muc(kq, "tham-chieu-hong")), 0)
 
+    def test_trich_dan_khong_co_trong_nguyen_van(self):
+        nv = "K5: \"Hợp đồng, giao dịch bị vô hiệu theo quyết định của Tòa án\""
+        van = "Khoản 5 quy định \"Hợp đồng, giao dịch bị hủy bỏ theo quyết định của Tòa án\"."
+        kq = kiem_tra(van, nguyen_van=nv)
+        self.assertEqual(len(muc(kq, "trich-ngoai-nguyen-van")), 1)
+
+    def test_trich_dan_co_trong_nguyen_van(self):
+        nv = "K5: \"Hợp đồng, giao dịch bị vô hiệu theo quyết định của Tòa án và xử lý\""
+        van = "Khoản 5 quy định hợp đồng “bị vô hiệu theo quyết định của Tòa án và xử lý”."
+        kq = kiem_tra(van, nguyen_van=nv)
+        self.assertEqual(len(muc(kq, "trich-ngoai-nguyen-van")), 0)
+
+    def test_ngoac_thang_ghep_dung_cap(self):
+        nv = "\"trình dự thảo hợp đồng, giao dịch hoặc giải trình\" và \"nội dung chủ yếu của hợp đồng, giao dịch\""
+        van = ("Khoản 4 yêu cầu \"trình dự thảo hợp đồng, giao dịch hoặc giải trình\". Đoạn văn của người viết "
+               "dài hơn hai mươi lăm ký tự ở giữa. Rồi \"nội dung chủ yếu của hợp đồng, giao dịch\".")
+        kq = kiem_tra(van, nguyen_van=nv)
+        self.assertEqual(len(muc(kq, "trich-ngoai-nguyen-van")), 0)
+
+    def test_trich_co_dau_luoc_bo(self):
+        nv = "\"ủy quyền cho HĐQT phê duyệt việc triển khai thực hiện các hợp đồng, giao dịch nêu trên, đảm bảo những hợp đồng này được thực hiện công bằng\""
+        van = "Tờ trình đề nghị \"ủy quyền cho HĐQT phê duyệt việc triển khai … đảm bảo những hợp đồng này được thực hiện công bằng\"."
+        kq = kiem_tra(van, nguyen_van=nv)
+        self.assertEqual(len(muc(kq, "trich-ngoai-nguyen-van")), 0)
+
+    def test_trich_ngan_bo_qua(self):
+        kq = kiem_tra("Luật dùng chữ \"hoặc\".", nguyen_van="")
+        self.assertEqual(len(muc(kq, "trich-ngoai-nguyen-van")), 0)
+
     def test_ban_sach_khong_loi_chan(self):
         van = (
             "Khoản 1 Điều 4 Luật Doanh nghiệp (Luật số 59/2020/QH14) quy định…[^1]\n\n"

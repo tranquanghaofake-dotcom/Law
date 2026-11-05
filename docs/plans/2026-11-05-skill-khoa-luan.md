@@ -63,3 +63,13 @@ Task 5: bắt đầu — base 371af63
 - Cờ: thuvienphapluat liệt kê "văn bản liên quan" ban hành 12/08/2026, chưa xem được → ghi cảnh báo trong tieu-chi-cham.md.
 Rút kinh nghiệm: vòng 2 lần trước gán nhầm thang điểm cho "Điều 10" vì dựa câu chữ Công văn ("đáp ứng quy định tại Điều 10") — phải đọc mục lục văn bản gốc trước khi gán số điều.
 Task 5: xong — 5f8d625
+
+## Phiên lặp tự chấm (Hào: "làm tất cả, thử 1 đề tự chấm, tìm ngách, cải thiện, lặp 2–3 lần")
+Task 6: bắt đầu — base e693567
+- Vòng 1 (b95fdf5): chạy pha 2–7 trên đề tài mẫu → phát hiện ngách "chấp thuận theo hạn mức" qua hỏi đáp Bộ Tài chính, kết luận thanh tra UBCKNN, tài liệu ĐHĐCĐ. Tự chấm 55/100. Lỗi: sai khoản (k4↔k5 Điều 167, từ vòng 0), bỏ sót trả lời chính thức, phụ lục không tồn tại, nhầm giá trị pháp lý của hỏi đáp.
+- Sửa skill 1 (4def75b): references/tim-ngach.md (7 nguồn tín hiệu, phép thử 4 điều kiện, quay lại pha 1); kiểm phản chứng bắt buộc ở pha 6; nguyen-van.md; bảng giá trị pháp lý nguồn; script bắt "Phụ lục N" hỏng.
+- Vòng 2 + sửa skill 2 (413f82f): 67/100. Lỗi: suýt nhận tính mới cho kiến nghị đã có (Huyền 2025); gán lời người hỏi thành lời Bộ; dịch "circular" thành "thông tư"; chọn Delaware theo thói quen → skill thêm cột "Kiến nghị đã đưa ra" + kiểm trùng, quy tắc hỏi đáp, chọn hệ thống so sánh theo câu hỏi, quy tắc dịch.
+- Vòng 3 + sửa skill 3: 71/100. Lỗi: trích vế nguồn bị cắt; tự sửa chữ trong ngoặc kép → script --nguyen-van (trích dẫn phải có trong file nguyên văn), 22 unit test.
+Nguồn mới đã kiểm: Luật 76/2025/QH15 (không sửa Điều 167, k23 Điều 4); NĐ 245/2025/NĐ-CP (k84 Điều 1 sửa k3–5 Điều 293); VBHN 67/VBHN-VPQH; SGX Rule 920; HKEX 14A.53; Directive 2017/828 Điều 9c(4)(5)(8) (EUR-Lex).
+Quyết định: dừng ở vòng 3 — vì điểm còn thiếu (dữ liệu N ≥ 20, công bố) không cải thiện được bằng viết; vòng 4 sẽ phải bịa dữ liệu — sai thì tốn: không.
+Rút kinh nghiệm: tự chấm có thiên lệch (người viết tự chấm); vòng 1 đáng lẽ phát hiện được trả lời của Bộ nếu đọc hết trang nguồn đã dẫn ngay từ đầu → skill nay bắt đọc phần "Trả lời" trước khi dẫn.
