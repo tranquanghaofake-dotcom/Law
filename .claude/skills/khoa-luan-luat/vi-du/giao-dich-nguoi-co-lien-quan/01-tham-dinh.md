@@ -18,3 +18,16 @@
 **Khác biệt dự kiến** [SUY LUẬN]: cả 3 công trình chủ yếu bàn quy tắc chấp thuận và quản trị; chưa thấy công trình nào **khảo sát có hệ thống bản án** về yêu cầu tuyên vô hiệu, bồi thường theo khoản 4 Điều 167. Đây là giả thuyết, phải kiểm ở pha 2 (cổng chưa qua).
 
 Cổng pha 1: chờ người dùng chọn phương án.
+
+## Vòng 1 — ngách mới tìm được ở pha 2 và pha 5 (05/11/2026)
+Lúc kiểm nguồn, gặp ba tín hiệu cho thấy vướng mắc đang có thật:
+- Mục Hỏi đáp chính sách tài chính của Bộ Tài chính năm 2025–2026 có nhiều câu hỏi của doanh nghiệp về Điều 293 Nghị định 155/2020/NĐ-CP: tính ngưỡng 35% trên báo cáo tài chính riêng hay hợp nhất; cộng dồn 12 tháng; và **Đại hội đồng cổ đông thông qua "hạn mức" giao dịch nhiều năm với người có liên quan** thì có phải xét lại từng giao dịch không.
+- Thực tiễn: Tờ trình 09/VTX/TTr-HĐQT ngày 29/5/2024 đề nghị Đại hội đồng cổ đông thông qua khung giao dịch với danh sách bên có liên quan và ủy quyền Hội đồng quản trị triển khai.
+- Thực thi chủ yếu qua Thanh tra Ủy ban Chứng khoán Nhà nước (ví dụ Kết luận thanh tra 50/KL-TT ngày 18/8/2025), ít qua tòa án.
+
+| Phương án | Cấp thiết | Tính mới | Khả thi nguồn | Vừa độ dài | Hợp định hướng | Tổng |
+|---|---|---|---|---|---|---|
+| D. **Chấp thuận giao dịch với người có liên quan theo hạn mức tại công ty đại chúng — khoảng trống giữa Điều 167 Luật Doanh nghiệp và Điều 293 Nghị định 155/2020/NĐ-CP (sửa đổi năm 2025)** | 5 | 5 | 5 (tài liệu Đại hội đồng cổ đông, báo cáo quản trị, hỏi đáp, kết luận thanh tra đều công khai) | 4 | 5 | 24 |
+
+[SUY LUẬN] D tốt hơn A–C: tính mới có bằng chứng (chưa thấy công trình nào trong ma trận bàn về chấp thuận theo hạn mức); dữ liệu không phụ thuộc cổng bản án.
+Cổng pha 1: người dùng chọn D (chạy thử: giả định chọn D).
