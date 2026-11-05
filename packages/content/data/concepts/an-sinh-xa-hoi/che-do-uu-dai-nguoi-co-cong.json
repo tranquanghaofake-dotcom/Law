@@ -24,10 +24,13 @@
  ],
  "note": "Pháp lệnh 02/2020/UBTVQH14 có hiệu lực từ 01/7/2021. Pháp lệnh sửa đổi 05/2026/UBTVQH16 (ban hành 08/7/2026) có hiệu lực từ 01/01/2027 — CHƯA áp dụng tại thời điểm đối chiếu; khi có hiệu lực, Điều 3 được viết lại (thêm định nghĩa người có công tại khoản 1, danh sách đối tượng chuyển sang khoản 2).",
  "memo": {
-  "hook": "Hai nhóm: TIỀN (trợ cấp, phụ cấp) và ƯU ĐÃI KHÁC.",
+  "gist": "Người có công và gia đình được nhận tiền hằng tháng hoặc một lần, cùng các ưu tiên về y tế, học hành, nhà ở.",
+  "kind": "compare",
+  "hook": "Như lời cảm ơn có hai phần: phong bì tiền và những cánh cửa được mở trước.",
   "tree": [
    {
     "label": "Bằng tiền",
+    "icon": "💵",
     "children": [
      "Trợ cấp, phụ cấp hằng tháng",
      "Trợ cấp một lần"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Ưu đãi khác",
+    "icon": "🎁",
     "children": [
      "Bảo hiểm y tế, điều dưỡng",
      "Ưu tiên tuyển sinh, việc làm",
@@ -44,9 +48,20 @@
    },
    {
     "label": "Nguyên tắc",
+    "icon": "⚖️",
     "children": [
      "Điều chỉnh theo kinh tế - xã hội"
     ]
+   }
+  ],
+  "case": {
+   "q": "Con của thương binh được ưu tiên tuyển sinh và hỗ trợ học phí. Đây là chế độ bằng tiền hay ưu đãi khác?",
+   "a": "Ưu đãi khác: ưu tiên trong giáo dục, không phải khoản trợ cấp."
+  },
+  "contrast": [
+   {
+    "with": "uu-dai-nguoi-co-cong",
+    "text": "Bài này nói được hưởng gì; còn bài người có công nói ai được hưởng."
    }
   ]
  },

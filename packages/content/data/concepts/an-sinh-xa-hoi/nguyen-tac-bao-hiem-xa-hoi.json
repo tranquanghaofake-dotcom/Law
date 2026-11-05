@@ -24,10 +24,13 @@
  ],
  "note": "Luật Bảo hiểm xã hội 41/2024/QH15 có hiệu lực từ 01/7/2025, thay thế Luật Bảo hiểm xã hội 58/2014/QH13 (đề cương HLU còn dẫn luật 2014).",
  "memo": {
-  "hook": "CÓ ĐÓNG – CÓ HƯỞNG, kết hợp CHIA SẺ.",
+  "gist": "Đóng nhiều, đóng lâu thì hưởng nhiều; đồng thời người tham gia san sẻ rủi ro cho nhau qua quỹ chung.",
+  "kind": "tree",
+  "hook": "Như góp gạo thổi cơm chung: góp nhiều được phần nhiều, nhưng ai đói cũng có bát.",
   "tree": [
    {
     "label": "Mức hưởng",
+    "icon": "⚖️",
     "children": [
      "Theo mức đóng",
      "Theo thời gian đóng",
@@ -36,6 +39,7 @@
    },
    {
     "label": "Mức đóng",
+    "icon": "💵",
     "children": [
      "Bắt buộc: theo tiền lương",
      "Tự nguyện: theo thu nhập tự chọn"
@@ -43,15 +47,27 @@
    },
    {
     "label": "Quỹ",
+    "icon": "🏦",
     "children": [
      "Tập trung, thống nhất, công khai"
     ]
    },
    {
     "label": "Đã hưởng một lần",
+    "icon": "🚫",
     "children": [
      "Không tính lại"
     ]
+   }
+  ],
+  "case": {
+   "q": "Hai người cùng đóng 20 năm nhưng một người đóng trên mức lương cao hơn. Lương hưu có bằng nhau không?",
+   "a": "Không. Mức hưởng tính theo mức đóng, nên người đóng cao hơn có lương hưu cao hơn."
+  },
+  "contrast": [
+   {
+    "with": "bao-hiem-xa-hoi",
+    "text": "Nguyên tắc là luật chơi tính tiền đóng và hưởng; bảo hiểm xã hội là cả chế độ áp dụng luật chơi đó."
    }
   ]
  },

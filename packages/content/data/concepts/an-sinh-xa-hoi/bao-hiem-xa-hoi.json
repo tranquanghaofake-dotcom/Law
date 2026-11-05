@@ -5,7 +5,7 @@
  "term": "Bảo hiểm xã hội, bảo hiểm xã hội bắt buộc và tự nguyện",
  "definition": "Bảo hiểm xã hội là sự bảo đảm thay thế hoặc bù đắp một phần thu nhập của người tham gia bảo hiểm xã hội khi họ bị giảm hoặc mất thu nhập do ốm đau, thai sản, tai nạn lao động, bệnh nghề nghiệp, khi nghỉ hưu hoặc chết, trên cơ sở đóng vào quỹ bảo hiểm xã hội hoặc do ngân sách nhà nước bảo đảm. (…) Bảo hiểm xã hội bắt buộc là loại hình bảo hiểm xã hội do Nhà nước tổ chức mà người lao động, người sử dụng lao động thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc phải tham gia. Bảo hiểm xã hội tự nguyện là loại hình bảo hiểm xã hội do Nhà nước tổ chức mà công dân Việt Nam tự nguyện tham gia và được lựa chọn mức đóng, phương thức đóng phù hợp với thu nhập của mình.",
  "plain": "Luật 2024 có NĂM loại hình (Điều 4): TRỢ CẤP HƯU TRÍ XÃ HỘI (mới, ngân sách bảo đảm), BHXH BẮT BUỘC (ốm đau, thai sản, hưu trí, tử tuất, tai nạn lao động – bệnh nghề nghiệp), BHXH TỰ NGUYỆN (trợ cấp thai sản — mới, hưu trí, tử tuất, bảo hiểm tai nạn lao động), BẢO HIỂM THẤT NGHIỆP (theo Luật Việc làm), BẢO HIỂM HƯU TRÍ BỔ SUNG. Đối tượng bắt buộc mở rộng: người làm việc theo HĐLĐ từ đủ 01 THÁNG trở lên (kể cả hợp đồng tên gọi khác nhưng có trả công và quản lý), chủ hộ kinh doanh có đăng ký…",
- "example": "Nhân viên ký hợp đồng 2 tháng với cửa hàng: thuộc đối tượng BHXH bắt buộc (điểm a khoản 1 Điều 2); người bán hàng tự do muốn có lương hưu có thể tham gia BHXH tự nguyện và tự chọn mức đóng.",
+ "example": "Nhân viên ký hợp đồng 2 tháng với cửa hàng phải tham gia bảo hiểm xã hội bắt buộc; người bán hàng tự do muốn có lương hưu thì tham gia loại tự nguyện và tự chọn mức đóng.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1, 3, 4 Điều 3 Luật Bảo hiểm xã hội 2024 (sửa đổi, bổ sung năm 2025)",
@@ -26,16 +26,20 @@
  ],
  "note": "Luật Bảo hiểm xã hội 41/2024/QH15 có hiệu lực từ 01/7/2025, thay thế Luật Bảo hiểm xã hội 58/2014/QH13 (đề cương HLU còn dẫn luật 2014).",
  "memo": {
-  "hook": "Luật 2024 có NĂM loại hình; bắt buộc từ hợp đồng đủ 01 THÁNG.",
+  "gist": "Bảo hiểm xã hội bù một phần thu nhập khi người tham gia ốm, sinh con, tai nạn, già hoặc mất, nhờ tiền đã đóng.",
+  "kind": "tree",
+  "hook": "Như ống heo chung cả xã hội: lúc khỏe góp vào, lúc gặp chuyện thì được rút ra.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "💰",
     "children": [
      "Thay thế hoặc bù đắp một phần thu nhập"
     ]
    },
    {
     "label": "Năm loại hình",
+    "icon": "5️⃣",
     "children": [
      "Trợ cấp hưu trí xã hội (mới)",
      "Bắt buộc",
@@ -45,6 +49,7 @@
    },
    {
     "label": "Bắt buộc",
+    "icon": "📌",
     "children": [
      "Ốm đau, thai sản, hưu trí, tử tuất",
      "Tai nạn lao động – bệnh nghề nghiệp"
@@ -52,9 +57,20 @@
    },
    {
     "label": "Mở rộng",
+    "icon": "➕",
     "children": [
      "Hợp đồng từ đủ 01 tháng"
     ]
+   }
+  ],
+  "case": {
+   "q": "Nhân viên ký hợp đồng 2 tháng với cửa hàng. Có phải đóng bảo hiểm xã hội bắt buộc không?",
+   "a": "Có. Luật 2024 bắt buộc với hợp đồng từ đủ 1 tháng trở lên."
+  },
+  "contrast": [
+   {
+    "with": "an-sinh-xa-hoi",
+    "text": "Bảo hiểm xã hội đòi phải đóng tiền mới được hưởng; an sinh xã hội rộng hơn, gồm cả phần không cần đóng như trợ giúp, ưu đãi."
    }
   ]
  },

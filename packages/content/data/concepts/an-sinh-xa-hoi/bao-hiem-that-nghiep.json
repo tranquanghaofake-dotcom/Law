@@ -5,7 +5,7 @@
  "term": "Bảo hiểm thất nghiệp và các chế độ",
  "definition": "Bảo hiểm thất nghiệp là loại hình bảo hiểm bắt buộc do Nhà nước tổ chức mà người lao động, người sử dụng lao động tham gia để hỗ trợ duy trì việc làm, đào tạo, tư vấn, giới thiệu việc làm và bù đắp một phần thu nhập cho người lao động khi bị mất việc làm trên cơ sở đóng vào Quỹ bảo hiểm thất nghiệp. (…) Các chế độ bảo hiểm thất nghiệp bao gồm: a) Tư vấn, giới thiệu việc làm; b) Hỗ trợ người lao động tham gia đào tạo, nâng cao trình độ kỹ năng nghề; c) Trợ cấp thất nghiệp; d) Hỗ trợ người sử dụng lao động đào tạo, bồi dưỡng, nâng cao trình độ kỹ năng nghề để duy trì việc làm cho người lao động.",
  "plain": "Mục đích kép: KHÔNG CHỈ bù đắp thu nhập (trợ cấp thất nghiệp) mà còn PHÒNG NGỪA thất nghiệp (tư vấn, giới thiệu việc làm; đào tạo; hỗ trợ doanh nghiệp đào tạo để giữ việc làm). Đối tượng tham gia mở rộng (Điều 31) gồm cả hợp đồng từ đủ 01 tháng. Nguyên tắc (Điều 29): chia sẻ rủi ro; mức đóng theo tiền lương tháng; mức hưởng theo mức đóng, thời gian đóng; quỹ tập trung, được Nhà nước bảo hộ.",
- "example": "Công ty dệt gặp khó khăn được hỗ trợ kinh phí đào tạo lại công nhân để không phải cho nghỉ việc: đó là chế độ hỗ trợ người sử dụng lao động của bảo hiểm thất nghiệp.",
+ "example": "Công ty dệt gặp khó khăn được hỗ trợ tiền đào tạo lại công nhân để không phải cho họ nghỉ việc.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 4 Điều 2; khoản 1 Điều 30 Luật Việc làm 2025 (74/2025/QH15)",
@@ -24,10 +24,13 @@
  ],
  "note": "Luật Việc làm 74/2025/QH15 có hiệu lực từ 01/01/2026, thay thế Luật Việc làm 38/2013/QH13 (đề cương HLU còn dẫn luật 2013).",
  "memo": {
-  "hook": "Không chỉ BÙ thu nhập mà còn PHÒNG NGỪA thất nghiệp.",
+  "gist": "Bảo hiểm thất nghiệp vừa giúp người lao động giữ việc, học nghề, tìm việc mới, vừa trả bớt tiền khi họ mất việc.",
+  "kind": "tree",
+  "hook": "Như áo phao kèm lớp dạy bơi: vừa đỡ khi chìm, vừa giúp khỏi chìm lần sau.",
   "tree": [
    {
     "label": "Tính chất",
+    "icon": "📋",
     "children": [
      "Bảo hiểm bắt buộc",
      "Đóng vào Quỹ bảo hiểm thất nghiệp"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Phòng ngừa",
+    "icon": "🧭",
     "children": [
      "Tư vấn, giới thiệu việc làm",
      "Đào tạo",
@@ -43,15 +47,27 @@
    },
    {
     "label": "Bù đắp",
+    "icon": "💵",
     "children": [
      "Trợ cấp thất nghiệp"
     ]
    },
    {
     "label": "Tham gia",
+    "icon": "✍️",
     "children": [
      "Hợp đồng từ đủ 01 tháng"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty khó khăn được quỹ hỗ trợ tiền đào tạo lại công nhân để khỏi cho nghỉ việc. Đây có phải chế độ bảo hiểm thất nghiệp không?",
+   "a": "Có. Đó là chế độ hỗ trợ đào tạo để duy trì việc làm, thuộc phần phòng ngừa thất nghiệp."
+  },
+  "contrast": [
+   {
+    "with": "dieu-kien-tro-cap-that-nghiep",
+    "text": "Bảo hiểm thất nghiệp là cả chế độ; trợ cấp thất nghiệp chỉ là khoản tiền trả cho người đã mất việc khi đủ điều kiện."
    }
   ]
  },

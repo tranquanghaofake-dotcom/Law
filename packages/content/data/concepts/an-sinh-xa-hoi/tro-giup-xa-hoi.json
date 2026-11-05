@@ -23,10 +23,13 @@
   "thường xuyên – đột xuất"
  ],
  "memo": {
-  "hook": "Cho người YẾU THẾ, KHÔNG cần đóng góp, giữ mức sống TỐI THIỂU.",
+  "gist": "Trợ giúp xã hội là tiền, đồ dùng Nhà nước và xã hội cho người gặp khó khăn để họ đủ sống tối thiểu.",
+  "kind": "compare",
+  "hook": "Như chiếc phao cứu sinh: không hỏi đã mua vé chưa, ai sắp chìm thì ném.",
   "tree": [
    {
     "label": "Đặc điểm",
+    "icon": "🤲",
     "children": [
      "Không yêu cầu đóng góp",
      "Cho người yếu thế",
@@ -35,6 +38,7 @@
    },
    {
     "label": "Thường xuyên",
+    "icon": "📅",
     "children": [
      "Trợ cấp xã hội hằng tháng",
      "Nuôi dưỡng ở cộng đồng, cơ sở"
@@ -42,9 +46,24 @@
    },
    {
     "label": "Đột xuất",
+    "icon": "🌪️",
     "children": [
      "Thiên tai, hỏa hoạn, mất mùa"
     ]
+   }
+  ],
+  "case": {
+   "q": "Một gia đình bị lũ cuốn trôi nhà được hỗ trợ gạo và tiền dựng lại nhà. Đây là trợ giúp thường xuyên hay đột xuất?",
+   "a": "Đột xuất, vì do thiên tai bất ngờ."
+  },
+  "contrast": [
+   {
+    "with": "an-sinh-xa-hoi",
+    "text": "Trợ giúp xã hội chỉ là một trụ cho người khó khăn; an sinh xã hội là cả ba trụ."
+   },
+   {
+    "with": "uu-dai-nguoi-co-cong",
+    "text": "Trợ giúp xã hội vì hoàn cảnh khó khăn; ưu đãi người có công vì công lao với đất nước."
    }
   ]
  },
