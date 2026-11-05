@@ -74,3 +74,6 @@ Nguồn mới đã kiểm: Luật 76/2025/QH15 (không sửa Điều 167, k23 Đ
 Quyết định: dừng ở vòng 3 — vì điểm còn thiếu (dữ liệu N ≥ 20, công bố) không cải thiện được bằng viết; vòng 4 sẽ phải bịa dữ liệu — sai thì tốn: không.
 Rút kinh nghiệm: tự chấm có thiên lệch (người viết tự chấm); vòng 1 đáng lẽ phát hiện được trả lời của Bộ nếu đọc hết trang nguồn đã dẫn ngay từ đầu → skill nay bắt đọc phần "Trả lời" trước khi dẫn.
 Task 6: xong — 87b5e5a
+
+## Phiên đề thứ hai (Hào: "tiếp tục làm thêm đề, kiểm, tìm ngách rồi cải thiện")
+Task 7: bắt đầu — base 16c5980 — đề mẫu 2: bảo vệ dữ liệu cá nhân của người lao động (ngành luật lao động + dữ liệu, kiểm skill ngoài luật doanh nghiệp)
