@@ -40,7 +40,8 @@ export type ItemTrueFalse = {
 };
 export type Item = ItemMcq | ItemPair | ItemCloze | ItemRecall | ItemTrueFalse;
 
-export type Memo = { hook?: string; tree?: { label: string; children?: string[] }[] };
+export type MemoKind = 'ladder' | 'checklist' | 'steps' | 'compare' | 'tree';
+export type Memo = { gist?: string; kind?: MemoKind; hook?: string; tree?: { label: string; children?: string[] }[] };
 
 export type Concept = {
   id: string;

@@ -76,10 +76,31 @@ export const itemSchema = z.discriminatedUnion('type', [
 const slug = z.string().regex(/^[a-z0-9-]+$/, 'id chỉ gồm chữ thường, số, gạch nối');
 
 const memoLabel = z.string().min(1).max(60, 'nhãn sơ đồ tối đa 60 ký tự');
+/** Lời thường (thẻ hiện mặc định, giọng đọc): không viết tắt / IN HOA (≥ 2 chữ hoa liền nhau), không "(…)". */
+export function plainIssue(s: string): string | null {
+  if (/\p{Lu}{2,}/u.test(s)) return `"${s}": có viết tắt hoặc IN HOA`;
+  if (/\(…\)|\.\.\./.test(s)) return `"${s}": có dấu (…)`;
+  return null;
+}
+export const MEMO_KINDS = ['ladder', 'checklist', 'steps', 'compare', 'tree'] as const;
+
 export const memoSchema = z.object({
+  /** Hiểu nhanh: câu lời thường ≤ 25 chữ nói khái niệm là gì, để làm gì. */
+  gist: z.string().min(1).refine((g) => g.trim().split(/\s+/).length <= 25, 'Hiểu nhanh tối đa 25 chữ').optional(),
+  /** Kiểu hình: bậc thang, danh sách điều kiện, các bước, hai cột, cây. */
+  kind: z.enum(MEMO_KINDS).optional(),
   hook: z.string().min(1).max(160, 'mẹo nhớ tối đa 160 ký tự').optional(),
   tree: z.array(z.object({ label: memoLabel, children: z.array(memoLabel).max(4, 'mỗi nhánh tối đa 4 ý').optional() })).min(2, 'sơ đồ cần 2–6 nhánh').max(6, 'sơ đồ cần 2–6 nhánh').optional(),
-}).refine((m) => !!m.hook || !!m.tree, { message: 'memo cần hook hoặc tree' });
+}).refine((m) => !!m.hook || !!m.tree, { message: 'memo cần hook hoặc tree' })
+  // có gist = khái niệm đã chuyển sang "lời thường": mọi chữ hiện mặc định phải đạt luật viết
+  .superRefine((m, ctx) => {
+    if (!m.gist) return;
+    const texts = [m.gist, m.hook ?? '', ...(m.tree ?? []).flatMap((n) => [n.label, ...(n.children ?? [])])].filter(Boolean);
+    for (const t of texts) {
+      const issue = plainIssue(t);
+      if (issue) ctx.addIssue({ code: z.ZodIssueCode.custom, message: `phải là lời thường — ${issue}` });
+    }
+  });
 
 export const conceptSchema = z.object({
   id: slug,

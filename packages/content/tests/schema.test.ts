@@ -65,3 +65,32 @@ describe('conceptSchema: memo (sơ đồ/mẹo nhớ do người soạn — di�
     expect(conceptSchema.safeParse({ ...base, memo: {} }).success).toBe(false);
   });
 });
+
+describe('memo.gist + kind — luật viết lời thường (thí điểm 05/11/2026)', () => {
+  const tree = [{ label: 'Cao nhất', children: ['Hiến pháp'] }, { label: 'Dưới', children: ['Luật'] }];
+  const ok = { gist: 'Văn bản luật có thứ bậc: cấp dưới không được trái cấp trên.', kind: 'ladder', hook: 'Cao nhất là Hiến pháp.', tree };
+  it('chấp nhận gist ngắn, lời thường, kind hợp lệ', () => {
+    expect(conceptSchema.safeParse({ ...base, memo: ok }).success).toBe(true);
+  });
+  it('từ chối gist quá 25 chữ', () => {
+    const r = conceptSchema.safeParse({ ...base, memo: { ...ok, gist: 'chữ '.repeat(26).trim() + '.' } });
+    expect(r.success).toBe(false);
+    expect(JSON.stringify(r.error?.issues)).toMatch(/25 chữ/);
+  });
+  it.each([
+    ['viết tắt trong gist', { gist: 'Do UBTVQH ban hành.' }],
+    ['IN HOA trong mẹo nhớ', { hook: 'Nhớ HIẾN PHÁP cao nhất.' }],
+    ['dấu (…) trong gist', { gist: 'Hiến pháp (…) cao nhất.' }],
+    ['viết tắt trong nhánh', { tree: [{ label: 'Trung ương', children: ['VBQPPL'] }, tree[1]] }],
+  ])('có gist thì từ chối %s', (_n, patch) => {
+    const r = conceptSchema.safeParse({ ...base, memo: { ...ok, ...patch } });
+    expect(r.success).toBe(false);
+    expect(JSON.stringify(r.error?.issues)).toMatch(/lời thường/);
+  });
+  it('từ chối kind lạ', () => {
+    expect(conceptSchema.safeParse({ ...base, memo: { ...ok, kind: 'pie' } }).success).toBe(false);
+  });
+  it('memo cũ chưa có gist vẫn hợp lệ (chưa áp luật viết)', () => {
+    expect(conceptSchema.safeParse({ ...base, memo: { hook: 'Nhớ HIẾN PHÁP.', tree } }).success).toBe(true);
+  });
+});
