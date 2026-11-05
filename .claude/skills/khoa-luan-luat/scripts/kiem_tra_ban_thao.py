@@ -1,0 +1,115 @@
+#!/usr/bin/env python3
+"""Kiểm bản thảo khóa luận / NCKH luật viết bằng Markdown.
+
+Cách dùng:
+  python3 kiem_tra_ban_thao.py chuong-2.md               # bản nháp: nhãn chỉ là cảnh báo
+  python3 kiem_tra_ban_thao.py ban-cuoi.md --nop         # bản nộp: còn nhãn = lỗi CHẶN
+  python3 kiem_tra_ban_thao.py ban-cuoi.md --an-danh "Nguyễn Văn A,Đại học Luật X"
+
+Mức: CHẶN (phải sửa), NẶNG, NHẸ. Thoát mã 1 nếu có lỗi CHẶN.
+Script chỉ bắt lỗi hình thức có quy luật; KHÔNG thay việc kiểm nguồn và hiệu lực bằng tay.
+"""
+import argparse
+import re
+import sys
+
+NHAN = ["CẦN KIỂM", "NGUYÊN VĂN", "NGUỒN NÓI", "SUY LUẬN", "ĐỀ XUẤT", "NGƯỜI DÙNG", "TODO"]
+RE_NHAN = re.compile(r"\[(" + "|".join(re.escape(n) for n in NHAN) + r")[^\]]*\]")
+
+# Văn bản dưới luật thường bị nhắc mà quên số hiệu.
+LOAI_VB = ["Nghị định", "Thông tư liên tịch", "Thông tư", "Nghị quyết", "Quyết định", "Pháp lệnh"]
+# 01/2021/NĐ-CP · 59/2020/QH14 · 57-NQ/TW · 1140/BGDĐT-KHCNTT
+RE_SO_HIEU = re.compile(r"\d+/\d{4}/[A-ZĐ\-]+|\d+-[A-ZĐ]+/[A-ZĐ]+|\d+/[A-ZĐ]+-[A-ZĐ]+")
+RE_LOAI_VB = re.compile(r"\b(" + "|".join(LOAI_VB) + r")\b")
+
+SAO_RONG = [
+    "vô cùng quan trọng", "hết sức cấp thiết", "hết sức quan trọng", "bối cảnh hội nhập",
+    "ngày càng sâu rộng", "tăng cường tuyên truyền", "nâng cao nhận thức", "đóng vai trò then chốt",
+    "không thể phủ nhận", "có thể thấy rằng",
+]
+
+RE_FN_DUNG = re.compile(r"\[\^([^\]]+)\](?!:)")
+RE_FN_DN = re.compile(r"^\[\^([^\]]+)\]:", re.M)
+
+
+def _dong(van, vi_tri):
+    return van.count("\n", 0, vi_tri) + 1
+
+
+def kiem_tra(van, nop=False, an_danh=None):
+    """Trả về danh sách vi phạm: {ma, muc, dong, noi_dung}."""
+    kq = []
+
+    def them(ma, muc, dong, noi_dung):
+        kq.append({"ma": ma, "muc": muc, "dong": dong, "noi_dung": noi_dung})
+
+    # 1. Nhãn nghiên cứu còn sót
+    for m in RE_NHAN.finditer(van):
+        muc = "CHẶN" if nop else ("NẶNG" if m.group(1) == "CẦN KIỂM" else "NHẸ")
+        them("nhan-con-sot", muc, _dong(van, m.start()), m.group(0))
+
+    # 2. Footnote dùng mà không định nghĩa, hoặc ngược lại
+    dung = {}
+    for m in RE_FN_DUNG.finditer(van):
+        dung.setdefault(m.group(1), m.start())
+    dinh_nghia = {m.group(1): m.start() for m in RE_FN_DN.finditer(van)}
+    for ma, vt in dung.items():
+        if ma not in dinh_nghia:
+            them("footnote-thieu", "CHẶN", _dong(van, vt), f"[^{ma}] chưa có nội dung chú thích")
+    for ma, vt in dinh_nghia.items():
+        if ma not in dung:
+            them("footnote-thua", "NẶNG", _dong(van, vt), f"[^{ma}] định nghĩa nhưng không dùng")
+
+    # 3. Văn bản dưới luật thiếu số hiệu trong cùng câu
+    for m in RE_LOAI_VB.finditer(van):
+        dau = max(van.rfind(".", 0, m.start()), van.rfind("\n", 0, m.start())) + 1
+        cuoi_cau = re.search(r"[.;\n]", van[m.end():])
+        cuoi = m.end() + (cuoi_cau.start() if cuoi_cau else len(van) - m.end())
+        if not RE_SO_HIEU.search(van[dau:cuoi]):
+            them("thieu-so-hieu", "NẶNG", _dong(van, m.start()),
+                 f"'{m.group(1)}' không kèm số hiệu trong câu")
+
+    # 4. Lộ danh tính (bài dự giải)
+    if an_danh is not None:
+        thap = van.lower()
+        for chuoi in an_danh:
+            chuoi = chuoi.strip()
+            if chuoi and chuoi.lower() in thap:
+                them("lo-danh-tinh", "CHẶN", _dong(van, thap.find(chuoi.lower())), f"xuất hiện '{chuoi}'")
+        m = re.search(r"^#+\s*l[ờo]i c[ảa]m [ơo]n", van, re.I | re.M)
+        if m:
+            them("lo-danh-tinh", "CHẶN", _dong(van, m.start()), "bài ẩn danh không được có Lời cảm ơn")
+
+    # 5. Cụm từ sáo rỗng
+    thap = van.lower()
+    for cum in SAO_RONG:
+        vt = thap.find(cum)
+        while vt != -1:
+            them("van-sao-rong", "NHẸ", _dong(van, vt), f"'{cum}' — thay bằng căn cứ cụ thể")
+            vt = thap.find(cum, vt + 1)
+
+    return kq
+
+
+def main():
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("tep", nargs="+")
+    ap.add_argument("--nop", action="store_true", help="bản nộp: còn nhãn nghiên cứu là lỗi CHẶN")
+    ap.add_argument("--an-danh", default=None, help="các chuỗi không được xuất hiện, cách nhau dấu phẩy")
+    a = ap.parse_args()
+    an_danh = a.an_danh.split(",") if a.an_danh is not None else None
+
+    co_chan = False
+    for tep in a.tep:
+        with open(tep, encoding="utf-8") as f:
+            kq = kiem_tra(f.read(), nop=a.nop, an_danh=an_danh)
+        dem = {m: sum(1 for v in kq if v["muc"] == m) for m in ("CHẶN", "NẶNG", "NHẸ")}
+        print(f"== {tep}: CHẶN {dem['CHẶN']} · NẶNG {dem['NẶNG']} · NHẸ {dem['NHẸ']}")
+        for v in sorted(kq, key=lambda v: (("CHẶN", "NẶNG", "NHẸ").index(v["muc"]), v["dong"])):
+            print(f"  [{v['muc']}] dòng {v['dong']}: {v['ma']} — {v['noi_dung']}")
+        co_chan = co_chan or dem["CHẶN"] > 0
+    sys.exit(1 if co_chan else 0)
+
+
+if __name__ == "__main__":
+    main()
