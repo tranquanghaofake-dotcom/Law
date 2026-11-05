@@ -5,6 +5,7 @@
   import { isInteractiveTarget, isTypingTarget } from './types';
   import LegalNote from '../LegalNote.svelte';
   import MemoCard from '../MemoCard.svelte';
+  import { promptSpeech } from '../session/speech';
   let { concept, onanswer, onspeak }: CardProps<IntroItem> = $props();
   const start = Date.now();
   let done = false;
@@ -20,7 +21,7 @@
     if (isTypingTarget(e)) return;
     if ((e.key === 'Enter' || e.key === ' ') && isInteractiveTarget(e)) return;
     if (e.key === 'Enter') { e.preventDefault(); ok(); }
-    if (e.key === ' ' && onspeak) { e.preventDefault(); onspeak(`${concept.term}. ${concept.definition}`); }
+    if (e.key === ' ' && onspeak) { e.preventDefault(); onspeak(promptSpeech({ type: 'intro' }, concept)); }
   }
 </script>
 
@@ -28,7 +29,7 @@
 <article class="card concept-card intro-layers" aria-label="Thẻ giới thiệu khái niệm">
   <p class="kicker">Khái niệm mới</p>
   <h2 class="term">{concept.term}
-    {#if onspeak}<button class="speak" type="button" aria-label="Nghe định nghĩa" title="Nghe (Space)" onclick={() => onspeak?.(`${concept.term}. ${concept.definition}`)}><Glyph name="speaker" /></button>{/if}
+    {#if onspeak}<button class="speak" type="button" aria-label="Nghe định nghĩa" title="Nghe (Space)" onclick={() => onspeak?.(promptSpeech({ type: 'intro' }, concept))}><Glyph name="speaker" /></button>{/if}
   </h2>
   <MemoCard {concept} />
   {#if !concept.memo}<p class="plain">{layers.plain}</p>{/if}

@@ -110,6 +110,11 @@ describe('promptSpeech — đọc đề/khái niệm ngay khi thẻ hiện, KHÔ
     const t = promptSpeech({ type: 'intro' }, { term: 'X', definition: 'X là a;', memo: { hook: 'Nhớ a' } } as Concept);
     expect(sentences(t).at(-1)).toBe('Mẹo nhớ: Nhớ a.');
   });
+  it('có Hiểu nhanh: đọc tên + Hiểu nhanh + mẹo nhớ, KHÔNG đọc nguyên văn định nghĩa', () => {
+    const t = promptSpeech({ type: 'intro' }, { ...concept, memo: { gist: 'Mọi thứ có giá trị mà luật cho sở hữu.', hook: 'Nhớ vật và tiền' } } as Concept);
+    expect(t).toBe('Tài sản. Mọi thứ có giá trị mà luật cho sở hữu. Mẹo nhớ: Nhớ vật và tiền.');
+    expect(t).not.toContain('Tài sản là vật, tiền');
+  });
   it('chữ cái phương án là câu riêng "Phương án A." để giọng dựng sẵn dùng lại được cho mọi câu', async () => {
     const { sentences } = await import('$lib/fx/prosody');
     const t = promptSpeech({ type: 'mcq', level: 1, q: 'Hỏi?', options: ['Vật', 'Ý tưởng'], answer: 0, explain: '' }, concept);
