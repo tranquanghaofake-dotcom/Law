@@ -5,6 +5,7 @@ Cách dùng:
   python3 kiem_tra_ban_thao.py chuong-2.md               # bản nháp: nhãn chỉ là cảnh báo
   python3 kiem_tra_ban_thao.py ban-cuoi.md --nop         # bản nộp: còn nhãn = lỗi CHẶN
   python3 kiem_tra_ban_thao.py ban-cuoi.md --an-danh "Nguyễn Văn A,Đại học Luật X"
+  python3 kiem_tra_ban_thao.py khoa-luan/de-tai/0*.md   # nhiều file: kiểm cả tham chiếu "Phụ lục N" giữa các file
 
 Mức: CHẶN (phải sửa), NẶNG, NHẸ. Thoát mã 1 nếu có lỗi CHẶN.
 Script chỉ bắt lỗi hình thức có quy luật; KHÔNG thay việc kiểm nguồn và hiệu lực bằng tay.
@@ -36,8 +37,20 @@ def _dong(van, vi_tri):
     return van.count("\n", 0, vi_tri) + 1
 
 
-def kiem_tra(van, nop=False, an_danh=None):
-    """Trả về danh sách vi phạm: {ma, muc, dong, noi_dung}."""
+RE_PHU_LUC = re.compile(r"Phụ lục\s+(\d+)")
+RE_TIEU_DE = re.compile(r"^#+\s*(.+)$", re.M)
+
+
+def tieu_de(van):
+    """Danh sách tiêu đề Markdown trong văn bản (dùng để kiểm tham chiếu chéo)."""
+    return [m.group(1).strip() for m in RE_TIEU_DE.finditer(van)]
+
+
+def kiem_tra(van, nop=False, an_danh=None, tieu_de_khac=None):
+    """Trả về danh sách vi phạm: {ma, muc, dong, noi_dung}.
+
+    tieu_de_khac: tiêu đề của các file khác trong cùng dự án (để kiểm "Phụ lục N" có tồn tại).
+    """
     kq = []
 
     def them(ma, muc, dong, noi_dung):
@@ -80,7 +93,19 @@ def kiem_tra(van, nop=False, an_danh=None):
         if m:
             them("lo-danh-tinh", "CHẶN", _dong(van, m.start()), "bài ẩn danh không được có Lời cảm ơn")
 
-    # 5. Cụm từ sáo rỗng
+    # 5. Tham chiếu "Phụ lục N" phải có tiêu đề tương ứng (trong file này hoặc file khác của dự án)
+    co_tieu_de = tieu_de(van) + list(tieu_de_khac or [])
+    da_bao = set()
+    for m in RE_PHU_LUC.finditer(van):
+        so = m.group(1)
+        if so in da_bao:
+            continue
+        if not any(re.match(rf"Phụ lục\s+{so}\b", t) for t in co_tieu_de):
+            them("tham-chieu-hong", "NẶNG", _dong(van, m.start()),
+                 f"nhắc 'Phụ lục {so}' nhưng không có tiêu đề '# Phụ lục {so}' trong dự án")
+            da_bao.add(so)
+
+    # 6. Cụm từ sáo rỗng
     thap = van.lower()
     for cum in SAO_RONG:
         vt = thap.find(cum)
@@ -99,10 +124,14 @@ def main():
     a = ap.parse_args()
     an_danh = a.an_danh.split(",") if a.an_danh is not None else None
 
-    co_chan = False
+    van_ban = {}
     for tep in a.tep:
         with open(tep, encoding="utf-8") as f:
-            kq = kiem_tra(f.read(), nop=a.nop, an_danh=an_danh)
+            van_ban[tep] = f.read()
+    co_chan = False
+    for tep, van in van_ban.items():
+        khac = [t for t2, v2 in van_ban.items() if t2 != tep for t in tieu_de(v2)]
+        kq = kiem_tra(van, nop=a.nop, an_danh=an_danh, tieu_de_khac=khac)
         dem = {m: sum(1 for v in kq if v["muc"] == m) for m in ("CHẶN", "NẶNG", "NHẸ")}
         print(f"== {tep}: CHẶN {dem['CHẶN']} · NẶNG {dem['NẶNG']} · NHẸ {dem['NHẸ']}")
         for v in sorted(kq, key=lambda v: (("CHẶN", "NẶNG", "NHẸ").index(v["muc"]), v["dong"])):

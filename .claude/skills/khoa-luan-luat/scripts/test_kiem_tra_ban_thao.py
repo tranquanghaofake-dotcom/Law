@@ -54,6 +54,18 @@ class KiemTraBanThao(unittest.TestCase):
         kq = kiem_tra("Vấn đề này vô cùng quan trọng trong bối cảnh hội nhập quốc tế sâu rộng.")
         self.assertGreaterEqual(len(muc(kq, "van-sao-rong")), 1)
 
+    def test_tham_chieu_phu_luc_khong_ton_tai(self):
+        kq = kiem_tra("Tiêu chí chọn mẫu tại Phụ lục 1.", tieu_de_khac=[])
+        self.assertEqual(len(muc(kq, "tham-chieu-hong")), 1)
+
+    def test_tham_chieu_phu_luc_co_trong_file_khac(self):
+        kq = kiem_tra("Xem Phụ lục 1.", tieu_de_khac=["Phụ lục 1. Tiêu chí chọn mẫu"])
+        self.assertEqual(len(muc(kq, "tham-chieu-hong")), 0)
+
+    def test_tham_chieu_phu_luc_co_trong_cung_file(self):
+        kq = kiem_tra("Xem Phụ lục 2.\n\n## Phụ lục 2. Bảng hỏi\n…")
+        self.assertEqual(len(muc(kq, "tham-chieu-hong")), 0)
+
     def test_ban_sach_khong_loi_chan(self):
         van = (
             "Khoản 1 Điều 4 Luật Doanh nghiệp (Luật số 59/2020/QH14) quy định…[^1]\n\n"

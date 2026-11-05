@@ -48,7 +48,7 @@ Tạo `khoa-luan/<slug-de-tai>/` trong thư mục làm việc (hoặc nơi ngư�
 02-tong-quan.md    chiến lược tìm + ma trận tài liệu + khoảng trống nghiên cứu
 03-khung.md        câu hỏi, giả thuyết, khung lý thuyết, phương pháp ↔ câu hỏi
 04-de-cuong.md     đề cương chi tiết + phân bổ trang
-05-nguon/          so-nguon.md (sổ nguồn), van-ban.md (bảng hiệu lực), ban-an.md
+05-nguon/          so-nguon.md (sổ nguồn), van-ban.md (bảng hiệu lực), nguyen-van.md (trích nguyên văn), ban-an.md
 06-chuong-*.md     bản nháp từng chương
 07-phan-bien.md    phiếu chấm giả lập + danh sách sửa
 08-hoan-thien.md   checklist nộp + câu hỏi bảo vệ
@@ -63,12 +63,14 @@ Mỗi pha có: **Làm** → **Sản phẩm** → **Cổng** (điều kiện cụ
 
 ### Pha 0 — Tiếp nhận
 Làm: hỏi gom **một lượt**: loại sản phẩm; trường, khoa (có file quy định trình bày không); hạn nộp; GVHD và định hướng của GVHD; cuộc thi và năm (thể lệ đổi theo năm); người dùng đã có gì (đọc gì, dữ liệu, nghề định hướng). Thiếu thông tin thì dùng mặc định trong `references/trinh-bay-trich-dan.md` và ghi rõ là mặc định.
+Nếu dự giải Bộ GD&ĐT: lập mốc thời gian ngược từ hạn 30/6. Kết quả phải được công bố hoặc ứng dụng **ít nhất 01 năm** trước ngày nộp (seminar cấp khoa trở lên cũng được tính). Công bố khoa học được tối đa 10 điểm.
 Cổng: `00-ho-so.md` có đủ 6 mục trên (mục chưa biết ghi "mặc định: …").
 
 ### Pha 1 — Thẩm định và mài đề tài
 Làm: từ đề tài thô, đưa ra **3 phương án** (hẹp / vừa / tham vọng). Chấm mỗi phương án 1–5 theo: tính cấp thiết (văn bản mới, bất cập có bằng chứng, vụ việc nổi bật); **tính mới** (đã tìm các công trình gần nhất chưa? khác ở đâu?); khả thi về nguồn (có bản án, số liệu, tài liệu nước ngoài đọc được không?); vừa độ dài; hợp với định hướng nghề.
 Tên đề tài phải nêu đối tượng + phạm vi + góc tiếp cận. Ví dụ khuôn: "Pháp luật về X — thực trạng và kiến nghị hoàn thiện"; "X theo pháp luật [nước A] và kinh nghiệm cho Việt Nam"; "Thực tiễn áp dụng X tại Tòa án…".
 Sai lầm cần chặn: đề tài rộng như giáo trình ("Pháp luật về hợp đồng"); trùng hoàn toàn khóa luận hoặc luận văn trước; văn bản nền sắp bị thay thế mà không xử lý.
+**Tìm ngách**: quét 7 nguồn tín hiệu và áp phép thử 4 điều kiện trong `references/tim-ngach.md`. Nếu ở pha 2 hoặc pha 5 lộ ra ngách tốt hơn, **quay lại pha 1**.
 Cổng: người dùng chọn 1 phương án; đã ghi ≥ 3 công trình gần nhất (đã kiểm có thật) và 1 câu "đề tài này khác các công trình đó ở …".
 
 ### Pha 2 — Tổng quan tình hình nghiên cứu
@@ -85,14 +87,17 @@ Làm: theo `references/de-cuong-mau.md`. Phần mở đầu đủ 6 mục; ≥ 2
 Cổng: mỗi mục có 1 dòng "mục này trả lời câu hỏi nào, dùng nguồn nào"; người dùng (hoặc GVHD) duyệt đề cương.
 
 ### Pha 5 — Thu thập và kiểm nguồn
-Làm: `05-nguon/van-ban.md` là bảng hiệu lực (số hiệu, tên, ngày ban hành, ngày hiệu lực, tình trạng, link vbpl.vn, ngày kiểm). `ban-an.md`: số bản án, tòa, ngày, tóm tắt tình tiết, vấn đề pháp lý, link nguồn. Trích nguyên văn điều luật ngay khi đọc, kèm điều/khoản/điểm. Tài liệu nước ngoài: ghi bản gốc, tự dịch thì ghi "người viết dịch".
+Làm: `05-nguon/van-ban.md` là bảng hiệu lực (số hiệu, tên, ngày ban hành, ngày hiệu lực, tình trạng, link vbpl.vn, ngày kiểm). `05-nguon/nguyen-van.md` chép **nguyên văn** từng điều, khoản, điểm sẽ viện dẫn, kèm nguồn; khi viết chỉ được dẫn số điều khoản từ file này, không dẫn theo trí nhớ. `ban-an.md`: số bản án, tòa, ngày, tóm tắt tình tiết, vấn đề pháp lý, link nguồn. Tài liệu nước ngoài: ghi bản gốc, tự dịch thì ghi "người viết dịch".
+Mỗi nguồn ghi **giá trị pháp lý** theo bảng trong `references/nguon-tra-cuu.md`. Ví dụ: hỏi đáp, công văn của bộ là quan điểm cơ quan quản lý, không phải VBQPPL và không ràng buộc tòa án.
+Không tìm được bản án đúng vấn đề: đổi sang nguồn thực tiễn khác (kết luận thanh tra, xử phạt, tài liệu doanh nghiệp, hỏi đáp) và ghi giới hạn. Không khái quát từ bản án gần giống.
 Cổng: mọi VBQPPL được nhắc trong đề cương có dòng trong bảng hiệu lực; mỗi bất cập dự định nêu có ≥ 1 bằng chứng (điều luật mâu thuẫn, bản án, số liệu, bài phân tích).
 
 ### Pha 6 — Viết từng chương
 Làm: viết **một chương một lần**, theo đề cương; sau mỗi chương dừng cho người dùng xem. Mỗi luận điểm theo chuỗi:
 **Vấn đề → Quy định hiện hành (nguyên văn, điều/khoản) → Quan điểm khoa học (đồng thuận và tranh luận) → Thực tiễn (bản án, số liệu) → Đánh giá của tác giả theo khung lý thuyết → (nếu có) Kiến nghị.**
 Chương lý luận: định nghĩa có nguồn, so sánh các định nghĩa rồi đưa định nghĩa của tác giả; đặc điểm; phân loại; nội dung điều chỉnh. Không chép giáo trình. Chương thực trạng: chia **ưu điểm / hạn chế / nguyên nhân** (nguyên nhân từ pháp luật, từ thực thi, từ nhận thức); hội đồng hay bắt lỗi thiếu phân tích nguyên nhân cốt lõi. Chương kiến nghị: mỗi kiến nghị phải **(a) gắn với 1 hạn chế đã chứng minh, (b) nói sửa điều/khoản nào của văn bản nào, (c) đề xuất câu chữ cụ thể nếu được, (d) lường tác động hoặc phản biện**. Kiến nghị chung chung ("tăng cường tuyên truyền") chỉ đặt cuối, không làm trọng tâm.
-Cổng mỗi chương: chạy `python3 scripts/kiem_tra_ban_thao.py <file>`, không còn lỗi chặn; người dùng duyệt.
+**Kiểm phản chứng (bắt buộc trước khi chốt mỗi hạn chế):** tìm câu trả lời chính thức cho **đúng câu hỏi pháp lý** đó: hỏi đáp, công văn của cơ quan quản lý, án lệ, giải đáp của TANDTC, quan điểm học giả trái chiều. Có thì phải viết vào bài: nêu quan điểm đó, đánh giá giá trị pháp lý, rồi mới kết luận. Hạn chế nào chưa qua bước này thì giữ nhãn `[CẦN KIỂM: phản chứng]`.
+Cổng mỗi chương: chạy `python3 scripts/kiem_tra_ban_thao.py <các file của dự án>` (truyền nhiều file để kiểm cả tham chiếu "Phụ lục N"), không còn lỗi chặn; mọi số điều, khoản khớp `05-nguon/nguyen-van.md`; người dùng duyệt.
 
 ### Pha 7 — Phản biện giả lập hội đồng
 Làm: đóng 3 vai **độc lập**, mỗi vai đọc toàn bài: (1) phản biện khắt khe về học thuật; (2) người làm thực tiễn (thẩm phán, luật sư, pháp chế); (3) thư ký chấm theo phiếu điểm đúng cuộc thi hoặc trường (`references/tieu-chi-cham.md`). Dùng checklist `references/phan-bien-hoi-dong.md`. Kết quả: điểm từng tiêu chí kèm lý do, danh sách sửa xếp theo mức tác động lên điểm.
@@ -107,6 +112,7 @@ Cổng: `kiem_tra_ban_thao.py` chạy trên bản cuối báo 0 lỗi; checklist
 | Cần | Đọc |
 |---|---|
 | Thang điểm Euréka, Bộ GD&ĐT, cấp trường; ẩn danh | `references/tieu-chi-cham.md` |
+| Tìm ngách: 7 nguồn tín hiệu, phép thử 4 điều kiện | `references/tim-ngach.md` |
 | Chọn và viết phương pháp nghiên cứu luật học | `references/phuong-phap-luat-hoc.md` |
 | Tìm văn bản, bản án, án lệ, tạp chí, tài liệu nước ngoài | `references/nguon-tra-cuu.md` |
 | Khung phần mở đầu, đề cương, ma trận tài liệu | `references/de-cuong-mau.md` |
@@ -136,4 +142,8 @@ Không có công cụ tìm kiếm thì nói rõ: mọi nguồn ở pha 2 và pha
 | Kiến nghị không gắn hạn chế, không chỉ ra điều khoản | Mẫu 4 điểm (a)–(d) ở pha 6 |
 | Bài dự thi lộ tên trường hoặc tác giả | Checklist ẩn danh pha 8 |
 | Câu chữ trơn tru nhưng lập luận rỗng | Pha 7 vai (1) chấm lập luận, bỏ qua văn phong |
+| Kết luận "luật chưa quy định" trong khi cơ quan quản lý đã trả lời | Bước kiểm phản chứng ở pha 6 |
+| Dẫn sai khoản (viết theo trí nhớ) | `05-nguon/nguyen-van.md`, chỉ dẫn từ file này |
+| Coi hỏi đáp, công văn như luật | Cột giá trị pháp lý trong sổ nguồn |
+| Tham chiếu "Phụ lục 1" nhưng không có phụ lục | Script kiểm `tham-chieu-hong` |
 | Footnote không có trang, danh mục lẫn VBQPPL với sách | `trinh-bay-trich-dan.md` |
