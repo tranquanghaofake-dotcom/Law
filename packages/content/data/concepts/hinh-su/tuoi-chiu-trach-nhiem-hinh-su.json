@@ -5,7 +5,7 @@
  "term": "Tuổi chịu trách nhiệm hình sự",
  "definition": "Người từ đủ 16 tuổi trở lên phải chịu trách nhiệm hình sự về mọi tội phạm, trừ những tội phạm mà Bộ luật này có quy định khác. Người từ đủ 14 tuổi đến dưới 16 tuổi phải chịu trách nhiệm hình sự về tội phạm rất nghiêm trọng, tội phạm đặc biệt nghiêm trọng quy định tại một trong các điều 123, 134, 141, 142, 143, 144, 150, 151, 168, 169, 170, 171, 173, 178, 248, 249, 250, 251, 252, 265, 266, 286, 287, 289, 290, 299, 303 và 304 của Bộ luật này.",
  "plain": "Hai mốc: TỪ ĐỦ 16 TUỔI: chịu TNHS về mọi tội phạm (trừ trường hợp luật quy định khác); TỪ ĐỦ 14 ĐẾN DƯỚI 16: chỉ chịu TNHS về tội RẤT NGHIÊM TRỌNG, ĐẶC BIỆT NGHIÊM TRỌNG thuộc 28 điều liệt kê (giết người 123, cố ý gây thương tích 134, hiếp dâm 141, cướp 168, trộm cắp 173, ma túy 248–252…). Dưới 14 tuổi: không chịu TNHS. Chương XII BLHS về người dưới 18 tuổi phạm tội đã được bãi bỏ trong VBHN 2025 (chuyển sang luật riêng về tư pháp người chưa thành niên).",
- "example": "Em A 15 tuổi trộm chiếc xe máy trị giá 30 triệu (khoản 1 Điều 173, tội ít nghiêm trọng): A không phải chịu TNHS. Nếu A cướp giật gây hậu quả thuộc khung rất nghiêm trọng của Điều 171 thì phải chịu TNHS.",
+ "example": "Em A 15 tuổi trộm chiếc xe máy 30 triệu (khoản 1 Điều 173, tội ít nghiêm trọng): không chịu trách nhiệm hình sự. Nếu A cướp giật thuộc khung rất nghiêm trọng của Điều 171 thì phải chịu.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1, khoản 2 Điều 12 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)",
@@ -24,10 +24,13 @@
  ],
  "note": "Khoản 2 Điều 12 được sửa đổi, bổ sung bởi Luật 12/2017/QH14 (hiệu lực 01/01/2018); câu chữ trên theo VBHN 135/VBHN-VPQH 2025.",
  "memo": {
-  "hook": "Từ 16: MỌI tội; 14–16: chỉ tội RẤT và ĐẶC BIỆT nghiêm trọng được LIỆT KÊ.",
+  "gist": "Đủ 16 tuổi chịu trách nhiệm mọi tội; 14 đến dưới 16 chỉ chịu tội rất, đặc biệt nghiêm trọng được liệt kê.",
+  "kind": "ladder",
+  "hook": "Mười sáu chịu tất; mười bốn chỉ chịu tội nặng có tên.",
   "tree": [
    {
     "label": "Từ đủ 16",
+    "icon": "🧑",
     "children": [
      "Mọi tội phạm",
      "Trừ luật quy định khác"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Từ đủ 14 đến dưới 16",
+    "icon": "🧒",
     "children": [
      "Rất nghiêm trọng, đặc biệt nghiêm trọng",
      "Chỉ điều luật liệt kê"
@@ -42,9 +46,20 @@
    },
    {
     "label": "Dưới 14",
+    "icon": "👶",
     "children": [
      "Không chịu"
     ]
+   }
+  ],
+  "case": {
+   "q": "Em A 15 tuổi trộm xe máy 30 triệu (tội ít nghiêm trọng). Có phải chịu trách nhiệm hình sự không?",
+   "a": "Không."
+  },
+  "contrast": [
+   {
+    "with": "khong-co-nang-luc-trach-nhiem-hinh-su",
+    "text": "Tuổi chịu trách nhiệm là vì chưa đủ tuổi; không có năng lực là vì bệnh."
    }
   ]
  },

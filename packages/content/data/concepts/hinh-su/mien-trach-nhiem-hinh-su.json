@@ -5,7 +5,7 @@
  "term": "Căn cứ miễn trách nhiệm hình sự",
  "definition": "Người phạm tội được miễn trách nhiệm hình sự khi có một trong những căn cứ sau đây: a) Khi tiến hành điều tra, truy tố hoặc xét xử, do có sự thay đổi chính sách, pháp luật làm cho hành vi phạm tội không còn nguy hiểm cho xã hội nữa; b) Khi có quyết định đại xá.",
  "plain": "Hai nhóm: BẮT BUỘC miễn (\"được miễn\", khoản 1): thay đổi chính sách, pháp luật làm hành vi không còn nguy hiểm; có quyết định ĐẠI XÁ. CÓ THỂ miễn (\"có thể được miễn\", khoản 2): chuyển biến tình hình; mắc bệnh hiểm nghèo; tự thú, lập công lớn…; khoản 3: tội nghiêm trọng do vô ý hoặc tội ít nghiêm trọng gây thiệt hại tính mạng, sức khỏe, danh dự, tài sản, đã khắc phục và được người bị hại tự nguyện HÒA GIẢI, đề nghị miễn. Phân biệt ĐẠI XÁ (Quốc hội, miễn TNHS) với ĐẶC XÁ (Chủ tịch nước, tha tù trước thời hạn).",
- "example": "A vô ý gây thương tích cho B (tội ít nghiêm trọng), A đã bồi thường đầy đủ, B tự nguyện hòa giải và đề nghị miễn TNHS cho A: A có thể được miễn TNHS (khoản 3 Điều 29).",
+ "example": "A vô ý gây thương tích cho B (tội ít nghiêm trọng), đã bồi thường đầy đủ, B tự nguyện hòa giải và đề nghị miễn: A có thể được miễn trách nhiệm hình sự (khoản 3 Điều 29).",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1 Điều 29 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)",
@@ -24,10 +24,13 @@
  ],
  "note": "Điều 29 được sửa đổi, bổ sung bởi Luật 12/2017/QH14 (hiệu lực 01/01/2018); câu chữ trên theo VBHN 135/VBHN-VPQH 2025.",
  "memo": {
-  "hook": "BẮT BUỘC miễn: luật đổi, ĐẠI XÁ; CÓ THỂ miễn: tự thú, bệnh hiểm nghèo, HÒA GIẢI.",
+  "gist": "Được miễn khi luật thay đổi hoặc có đại xá; có thể được miễn khi tự thú, bệnh nặng, hòa giải tội nhẹ.",
+  "kind": "compare",
+  "hook": "Hai cửa: cửa bắt buộc mở và cửa Tòa cân nhắc mở.",
   "tree": [
    {
     "label": "Được miễn",
+    "icon": "✅",
     "children": [
      "Chính sách, pháp luật thay đổi",
      "Có đại xá"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Có thể được miễn",
+    "icon": "🤔",
     "children": [
      "Chuyển biến tình hình",
      "Bệnh hiểm nghèo",
@@ -43,9 +47,20 @@
    },
    {
     "label": "Hòa giải",
+    "icon": "🤝",
     "children": [
      "Tội nhẹ, bị hại tự nguyện"
     ]
+   }
+  ],
+  "case": {
+   "q": "A vô ý gây thương tích (tội ít nghiêm trọng), đã bồi thường, B tự nguyện hòa giải xin miễn. A có thể được miễn không?",
+   "a": "Có thể, theo trường hợp hòa giải."
+  },
+  "contrast": [
+   {
+    "with": "thoi-hieu-truy-cuu-trach-nhiem-hinh-su",
+    "text": "Miễn là có căn cứ được tha; thời hiệu là hết thời gian nên không truy cứu."
    }
   ]
  },

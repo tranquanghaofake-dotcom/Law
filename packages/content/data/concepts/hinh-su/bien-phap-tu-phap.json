@@ -24,10 +24,13 @@
   "không phải hình phạt"
  ],
  "memo": {
-  "hook": "Biện pháp tư pháp KHÔNG phải hình phạt: TỊCH THU – BỒI THƯỜNG – CHỮA BỆNH.",
+  "gist": "Biện pháp tư pháp không phải hình phạt: tịch thu vật liên quan tội phạm, buộc bồi thường, xin lỗi, bắt buộc chữa bệnh.",
+  "kind": "tree",
+  "hook": "Hình phạt trừng người; biện pháp tư pháp dọn dẹp hậu quả.",
   "tree": [
    {
     "label": "Người phạm tội",
+    "icon": "👤",
     "children": [
      "Tịch thu vật, tiền liên quan",
      "Trả lại, bồi thường, xin lỗi",
@@ -36,15 +39,27 @@
    },
    {
     "label": "Pháp nhân thương mại",
+    "icon": "🏢",
     "children": [
      "Thêm khôi phục tình trạng ban đầu"
     ]
    },
    {
     "label": "Vai trò",
+    "icon": "🧩",
     "children": [
      "Hỗ trợ hoặc thay thế hình phạt"
     ]
+   }
+  ],
+  "case": {
+   "q": "Tòa tịch thu con dao bị cáo dùng gây án. Đây là hình phạt hay biện pháp tư pháp?",
+   "a": "Biện pháp tư pháp."
+  },
+  "contrast": [
+   {
+    "with": "hinh-phat",
+    "text": "Biện pháp tư pháp hỗ trợ hoặc thay thế; hình phạt là cưỡng chế nghiêm khắc nhất."
    }
   ]
  },

@@ -5,7 +5,7 @@
  "term": "Tình trạng không có năng lực trách nhiệm hình sự",
  "definition": "Người thực hiện hành vi nguy hiểm cho xã hội trong khi đang mắc bệnh tâm thần, một bệnh khác làm mất khả năng nhận thức hoặc khả năng điều khiển hành vi của mình, thì không phải chịu trách nhiệm hình sự.",
  "plain": "Hai dấu hiệu: Y HỌC (mắc bệnh tâm thần hoặc bệnh khác) và TÂM LÝ (mất khả năng nhận thức HOẶC điều khiển hành vi). Đây là trường hợp loại trừ TNHS (Chương IV). Người này có thể bị áp dụng biện pháp tư pháp BẮT BUỘC CHỮA BỆNH (Điều 49). Phân biệt: mất khả năng do DÙNG RƯỢU, BIA, CHẤT KÍCH THÍCH thì VẪN chịu TNHS (Điều 13) vì tự đặt mình vào tình trạng đó.",
- "example": "Người bệnh tâm thần phân liệt đang lên cơn, không nhận thức được hành vi, đánh người gây thương tích: không phải chịu TNHS nhưng có thể bị bắt buộc chữa bệnh. Người say rượu đánh người thì vẫn chịu TNHS.",
+ "example": "Người bệnh tâm thần phân liệt đang lên cơn, không nhận thức được hành vi, đánh người gây thương tích: không chịu trách nhiệm hình sự nhưng có thể bị bắt buộc chữa bệnh. Người say rượu đánh người thì vẫn chịu.",
  "source": {
   "kind": "statute",
   "cite": "Điều 21 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)",
@@ -23,10 +23,13 @@
   "rượu, bia vẫn chịu TNHS"
  ],
  "memo": {
-  "hook": "Bệnh làm MẤT nhận thức/điều khiển → không chịu; SAY RƯỢU vẫn chịu.",
+  "gist": "Người mắc bệnh làm mất nhận thức hoặc điều khiển hành vi thì không chịu trách nhiệm hình sự; say rượu vẫn chịu.",
+  "kind": "compare",
+  "hook": "Mất phanh vì xe hỏng khác với tự tay tháo phanh.",
   "tree": [
    {
     "label": "Dấu hiệu",
+    "icon": "🧠",
     "children": [
      "Y học: mắc bệnh tâm thần, bệnh khác",
      "Tâm lý: mất nhận thức hoặc điều khiển"
@@ -34,6 +37,7 @@
    },
    {
     "label": "Hệ quả",
+    "icon": "⚖️",
     "children": [
      "Không chịu trách nhiệm hình sự",
      "Có thể bắt buộc chữa bệnh"
@@ -41,9 +45,20 @@
    },
    {
     "label": "Vẫn chịu",
+    "icon": "🍺",
     "children": [
      "Do rượu, bia, chất kích thích"
     ]
+   }
+  ],
+  "case": {
+   "q": "Người say rượu đánh người gây thương tích. Có được coi là không có năng lực trách nhiệm hình sự không?",
+   "a": "Không. Say do rượu, bia, chất kích thích vẫn phải chịu."
+  },
+  "contrast": [
+   {
+    "with": "tuoi-chiu-trach-nhiem-hinh-su",
+    "text": "Không có năng lực là vì bệnh; tuổi chịu trách nhiệm là vì chưa đủ tuổi."
    }
   ]
  },

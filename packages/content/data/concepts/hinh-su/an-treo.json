@@ -23,10 +23,13 @@
   "không phải hình phạt"
  ],
  "memo": {
-  "hook": "Án treo KHÔNG phải hình phạt: tù ≤ 3 NĂM được miễn chấp hành CÓ ĐIỀU KIỆN, thử thách 1–5 năm.",
+  "gist": "Người bị phạt tù đến 3 năm được Tòa cho không phải vào tù, kèm thời gian thử thách từ 1 đến 5 năm.",
+  "kind": "checklist",
+  "hook": "Như vé tạm tha có điều kiện: sai lần nữa là phải vào.",
   "tree": [
    {
     "label": "Điều kiện",
+    "icon": "✅",
     "children": [
      "Phạt tù không quá 03 năm",
      "Nhân thân tốt, có giảm nhẹ",
@@ -35,16 +38,28 @@
    },
    {
     "label": "Thử thách",
+    "icon": "⏳",
     "children": [
      "01 đến 05 năm"
     ]
    },
    {
     "label": "Vi phạm",
+    "icon": "⚠️",
     "children": [
      "Cố ý vi phạm nghĩa vụ 02 lần",
      "Có thể buộc chấp hành tù"
     ]
+   }
+  ],
+  "case": {
+   "q": "A bị phạt 2 năm tù về trộm cắp, phạm tội lần đầu, đã bồi thường, có nơi cư trú rõ. Có thể được hưởng án treo không?",
+   "a": "Có thể, với thời gian thử thách, ví dụ 4 năm."
+  },
+  "contrast": [
+   {
+    "with": "he-thong-hinh-phat",
+    "text": "Án treo không phải hình phạt mà là cách miễn chấp hành tù có điều kiện."
    }
   ]
  },

@@ -22,23 +22,37 @@
   "tước bỏ hoặc hạn chế quyền, lợi ích"
  ],
  "memo": {
-  "hook": "Hình phạt: cưỡng chế NGHIÊM KHẮC NHẤT, chỉ trong BLHS, chỉ TÒA ÁN quyết định.",
+  "gist": "Hình phạt là biện pháp cưỡng chế nghiêm khắc nhất, chỉ ghi trong Bộ luật Hình sự và chỉ Tòa án quyết định.",
+  "kind": "tree",
+  "hook": "Chỉ một người cầm búa: Tòa án.",
   "tree": [
    {
     "label": "Đặc điểm",
+    "icon": "⚖️",
     "children": [
      "Nghiêm khắc nhất",
-     "Chỉ quy định trong BLHS",
+     "Chỉ quy định trong Bộ luật Hình sự",
      "Chỉ Tòa án quyết định",
      "Tước bỏ, hạn chế quyền"
     ]
    },
    {
     "label": "Mục đích",
+    "icon": "🎯",
     "children": [
      "Trừng trị",
      "Giáo dục, phòng ngừa"
     ]
+   }
+  ],
+  "case": {
+   "q": "Phạt tiền do công an giao thông quyết định có phải hình phạt không?",
+   "a": "Không. Đó là xử phạt hành chính; hình phạt chỉ do Tòa tuyên trong bản án hình sự."
+  },
+  "contrast": [
+   {
+    "with": "bien-phap-tu-phap",
+    "text": "Hình phạt là cưỡng chế nghiêm khắc nhất; biện pháp tư pháp chỉ hỗ trợ hoặc thay thế."
    }
   ]
  },

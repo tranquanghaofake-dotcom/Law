@@ -23,26 +23,41 @@
   "pháp chế"
  ],
  "memo": {
-  "hook": "KHÔNG CÓ LUẬT thì KHÔNG CÓ TỘI; không áp dụng tương tự.",
+  "gist": "Chỉ người phạm tội được Bộ luật Hình sự quy định mới phải chịu trách nhiệm hình sự; không áp dụng tương tự.",
+  "kind": "tree",
+  "hook": "Luật không ghi tên thì không có tội.",
   "tree": [
    {
     "label": "Cá nhân",
+    "icon": "👤",
     "children": [
-     "Phạm tội đã được BLHS quy định"
+     "Phạm tội đã được Bộ luật Hình sự quy định"
     ]
    },
    {
     "label": "Pháp nhân thương mại",
+    "icon": "🏢",
     "children": [
      "Chỉ tội tại Điều 76"
     ]
    },
    {
     "label": "Nguyên tắc",
+    "icon": "📜",
     "children": [
      "Pháp chế",
      "Không áp dụng tương tự"
     ]
+   }
+  ],
+  "case": {
+   "q": "Một hành vi gây bức xúc trên mạng nhưng Bộ luật Hình sự chưa quy định là tội. Có truy cứu trách nhiệm hình sự được không?",
+   "a": "Không."
+  },
+  "contrast": [
+   {
+    "with": "khai-niem-toi-pham",
+    "text": "Cơ sở trách nhiệm là điều kiện để bị xử; khái niệm tội phạm là các dấu hiệu nhận ra tội."
    }
   ]
  },

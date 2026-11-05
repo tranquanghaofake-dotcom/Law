@@ -22,10 +22,13 @@
   "nguyên nhân ngoài ý muốn"
  ],
  "memo": {
-  "hook": "Chưa đạt: ĐÃ BẮT ĐẦU, KHÔNG làm đến cùng vì lý do NGOÀI Ý MUỐN; luôn chịu trách nhiệm.",
+  "gist": "Đã bắt đầu phạm tội nhưng không làm đến cùng vì lý do ngoài ý muốn; luôn phải chịu trách nhiệm.",
+  "kind": "checklist",
+  "hook": "Vấp chân giữa đường vẫn bị tính là đã chạy.",
   "tree": [
    {
     "label": "Dấu hiệu",
+    "icon": "✅",
     "children": [
      "Đã bắt đầu thực hiện",
      "Không thực hiện được đến cùng",
@@ -34,15 +37,27 @@
    },
    {
     "label": "Lỗi",
+    "icon": "🧠",
     "children": [
      "Chỉ cố ý"
     ]
    },
    {
     "label": "Trách nhiệm",
+    "icon": "⚖️",
     "children": [
      "Luôn chịu (khác chuẩn bị)"
     ]
+   }
+  ],
+  "case": {
+   "q": "A cạy cửa nhà B để trộm thì bị bảo vệ bắt. A phạm tội ở giai đoạn nào?",
+   "a": "Phạm tội trộm cắp chưa đạt."
+  },
+  "contrast": [
+   {
+    "with": "tu-y-nua-chung-cham-dut",
+    "text": "Chưa đạt là bị ngăn ngoài ý muốn; tự ý nửa chừng là tự mình dừng."
    }
   ]
  },

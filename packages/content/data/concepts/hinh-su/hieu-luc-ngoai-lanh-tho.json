@@ -23,10 +23,13 @@
   "xâm hại lợi ích Việt Nam"
  ],
  "memo": {
-  "hook": "Ngoài lãnh thổ: theo QUỐC TỊCH (công dân Việt Nam) và BẢO VỆ (hại lợi ích Việt Nam).",
+  "gist": "Luật hình sự Việt Nam vẫn áp cho công dân phạm tội ở nước ngoài, và người nước ngoài xâm hại lợi ích Việt Nam.",
+  "kind": "compare",
+  "hook": "Đi đâu cũng mang theo luật nước mình; ai đụng tới nhà mình cũng bị xét.",
   "tree": [
    {
     "label": "Nguyên tắc quốc tịch",
+    "icon": "🛂",
     "children": [
      "Công dân, pháp nhân Việt Nam",
      "Người không quốc tịch thường trú"
@@ -34,15 +37,27 @@
    },
    {
     "label": "Nguyên tắc bảo vệ",
+    "icon": "🛡️",
     "children": [
      "Người nước ngoài xâm hại lợi ích Việt Nam"
     ]
    },
    {
     "label": "Mức độ",
+    "icon": "⚖️",
     "children": [
      "Có thể bị truy cứu"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công dân Việt Nam lừa đảo khi lao động ở Hàn Quốc, rồi về nước. Có bị truy cứu ở Việt Nam không?",
+   "a": "Có thể, theo Bộ luật Hình sự Việt Nam."
+  },
+  "contrast": [
+   {
+    "with": "hieu-luc-theo-lanh-tho",
+    "text": "Ngoài lãnh thổ xét theo quốc tịch và bảo vệ; trên lãnh thổ thì áp cho mọi người."
    }
   ]
  },

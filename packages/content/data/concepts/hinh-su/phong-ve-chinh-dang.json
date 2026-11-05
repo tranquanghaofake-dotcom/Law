@@ -23,10 +23,13 @@
   "rõ ràng quá mức cần thiết"
  ],
  "memo": {
-  "hook": "Chống trả CẦN THIẾT vào chính NGƯỜI ĐANG XÂM PHẠM; RÕ RÀNG QUÁ MỨC thì chịu tội.",
+  "gist": "Chống trả cần thiết vào chính người đang tấn công để bảo vệ mình hay người khác; rõ ràng quá mức thì vẫn chịu tội.",
+  "kind": "checklist",
+  "hook": "Đỡ đòn là đúng; đuổi theo đánh khi người ta chạy là sai.",
   "tree": [
    {
     "label": "Điều kiện",
+    "icon": "✅",
     "children": [
      "Đang có hành vi xâm phạm",
      "Chống trả chính người xâm phạm",
@@ -35,16 +38,28 @@
    },
    {
     "label": "Hệ quả",
+    "icon": "🆓",
     "children": [
      "Không phải tội phạm"
     ]
    },
    {
     "label": "Vượt quá",
+    "icon": "⚠️",
     "children": [
      "Rõ ràng quá mức cần thiết",
      "Vẫn chịu, được giảm nhẹ"
     ]
+   }
+  ],
+  "case": {
+   "q": "Kẻ cướp đã bỏ chạy, A đuổi theo đâm chết. Còn là phòng vệ chính đáng không?",
+   "a": "Không, vì sự tấn công đã chấm dứt."
+  },
+  "contrast": [
+   {
+    "with": "tinh-the-cap-thiet",
+    "text": "Phòng vệ đánh vào người tấn công; tình thế cấp thiết gây thiệt hại cho người thứ ba để tránh hại lớn hơn."
    }
   ]
  },
