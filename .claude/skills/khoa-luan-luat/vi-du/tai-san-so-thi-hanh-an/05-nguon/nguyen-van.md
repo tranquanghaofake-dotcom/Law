@@ -12,7 +12,7 @@
 # Hoàng Thu Thủy, thads.moj.gov.vn 24/6/2026
 "Một trong những điểm mới rõ nhất của Luật năm 2025 là biện pháp phong tỏa tài khoản không còn chỉ gắn với tiền trong tài khoản theo cách hiểu truyền thống, mà được mở rộng tới tiền, tài sản số và tài sản khác trong tài khoản."
 
-# NQ 05/2025/NQ-CP (luatvietnam.vn, đọc 05/11/2026) — phần giải thích từ ngữ [CẦN KIỂM: số điều]
+# NQ 05/2025/NQ-CP — Điều 3 "Giải thích từ ngữ" (luatvietnam.vn; số điều xác nhận qua ketoananpha.vn, agent R2 05/11/2026)
 k6: "Lưu ký tài sản mã hóa là việc nhận lưu trữ, bảo quản, chuyển giao tài sản mã hóa cho khách hàng, giúp khách hàng thực hiện các quyền liên quan đến tài sản mã hóa lưu ký."
 Chưa tìm thấy điều nào về phong tỏa theo yêu cầu cơ quan thi hành án (đọc trích đoạn, chưa đọc toàn văn).
 
@@ -27,3 +27,6 @@ Chưa tìm thấy điều nào về phong tỏa theo yêu cầu cơ quan thi hà
 Đ67 k1: "Việc phong tỏa tài khoản, tài sản ở nơi gửi giữ được thực hiện trong trường hợp người phải thi hành án có tài khoản, tài sản gửi giữ."
 Đ67 k2: "Quyết định phong tỏa tài khoản, tài sản ở nơi gửi giữ phải xác định rõ số tiền, tài sản bị phong tỏa. Chấp hành viên phải giao quyết định phong toả cho cơ quan, tổ chức, cá nhân đang quản lý tài khoản, tài sản của người phải thi hành án."
 Đ67 k3: "Trong thời hạn 10 ngày, kể từ ngày ra quyết định phong tỏa tài khoản, tài sản ở nơi gửi giữ, Chấp hành viên phải áp dụng biện pháp cưỡng chế hoặc ra quyết định chấm dứt việc phong tỏa theo quy định của Luật này."
+
+# NQ 05/2025/NQ-CP Điều 15 (ketoananpha.vn, agent R2)
+Đ15 k2 o: "Báo cáo theo yêu cầu của cơ quan quản lý;"

@@ -70,3 +70,18 @@ Luận điểm nào cột bằng chứng trống, hoặc cột cuối là "có",
 | # | Người góp ý | Nội dung góp ý (ghi đúng ý) | Tiếp thu / giữ nguyên | Đã sửa ở đâu, hoặc căn cứ giải trình | Ngày |
 |---|---|---|---|---|---|
 Mọi góp ý đều có dòng. Giữ nguyên thì giải trình bằng căn cứ (điều luật, nguồn, phạm vi đề tài), không viết "em xin tiếp thu" chung chung khi thật ra không sửa. Góp ý mâu thuẫn nhau giữa GVHD và phản biện thì hỏi người dùng, không tự chọn.
+
+## Phản biện độc lập bằng subagent (khi người dùng cho phép)
+Chạy 3 agent riêng, mỗi agent một vai, song song. Khuôn brief:
+```
+Bạn là [PHẢN BIỆN HỌC THUẬT | NGƯỜI LÀM THỰC TIỄN (nghề cụ thể) | THƯ KÝ CHẤM theo phiếu điểm].
+CÁCH LY: chỉ đọc đúng các file sau, không mở file khác (đặc biệt không đọc 07-phan-bien.md, nhật ký, sổ việc):
+- <file chương>, <phụ lục>
+- 05-nguon/nguyen-van.md, 05-nguon/van-ban.md   (để kiểm trích đúng, có vượt bằng chứng không)
+- references/phan-bien-hoi-dong.md               (khuôn góp ý)  [thư ký: thêm references/tieu-chi-cham.md và hồ sơ, đề cương]
+Việc: [học thuật: bảng luận điểm → bằng chứng + ≤ 8 góp ý] [thực tiễn: ≤ 8 góp ý về vận hành thật, ghi "[kinh nghiệm thực tiễn, cần kiểm]" khi không có nguồn] [thư ký: điểm từng tiêu chí, phần chưa viết không có điểm, 3 việc lợi điểm nhất].
+Mỗi góp ý đủ: Vị trí · Quan sát · Căn cứ · Vì sao quan trọng · Yêu cầu sửa · Tiêu chí đóng · Mức.
+Không sửa file. Không khen chung chung.
+```
+Gộp kết quả vào `07-phan-bien-doc-lap.md`: bảng điểm từng vai cạnh điểm tự chấm; **lỗi cả 3 vai cùng thấy** (độ tin cao, sửa trước); lỗi chỉ một vai thấy nhưng nặng; vì sao script không bắt được. Không để agent sửa bài; agent chính sửa và ghi tiêu chí đóng nào đã đạt.
+Kết quả chạy thử (đề 1): thư ký 52/100 so với tự chấm 71. Phản biện học thuật bắt được chú thích khai "theo VBHN" khi chưa đọc VBHN và câu hỏi lõi bị bỏ (ủy quyền lại cho HĐQT). Người làm thực tiễn bắt được việc chưa xét ai kiện, thời hạn yêu cầu hủy nghị quyết, bên thứ ba ngay tình. Tự chấm không thấy các lỗi này.

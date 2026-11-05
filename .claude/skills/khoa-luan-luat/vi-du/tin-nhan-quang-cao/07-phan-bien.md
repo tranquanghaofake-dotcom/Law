@@ -33,3 +33,10 @@
 | L3 | 2.1.2 | Điều 28 có thể không áp dụng cho doanh nghiệp tự quảng cáo | k1 Đ28; k4 Đ2 NĐ 91/2020 | chưa xét định nghĩa "kinh doanh dịch vụ quảng cáo" (Luật Quảng cáo) | **có** — cần đọc Luật Quảng cáo |
 | L4 | 2.1.3 (iii) | Chưa có số liệu công khai về tuân thủ yêu cầu từ chối | tìm 05/11/2026 | báo cáo tổng kết Bộ Công an có số liệu phản ánh? (chưa đọc hết) | không (đã nói "chưa tìm thấy") |
 Bảng này lộ 2 luận điểm vượt bằng chứng (L1, L3) mà script không bắt được → điểm Kết quả giữ 18, thêm 2 việc sửa vào danh sách.
+
+## Vòng 2 (05/11/2026, sau tra cứu của agent R1)
+- L1 đã đóng: có định nghĩa "xử lý dữ liệu cá nhân" (k6 Đ2) và đã đọc Đ19 — không có căn cứ kiểu lợi ích chính đáng.
+- L3 đã đóng một phần: Luật Quảng cáo (VBHN 88/VBHN-VPQH) xác nhận "người kinh doanh dịch vụ quảng cáo" phải có "hợp đồng quảng cáo"; câu hỏi chuyển thành: nghị định có là "quy định của pháp luật" theo điểm đ k1 Đ19 không → đây mới là lõi lý luận của đề tài.
+- Lỗi suýt mắc: nếu không tra, đã dùng định nghĩa bản gốc 2012 ("hợp đồng cung ứng dịch vụ quảng cáo với người quảng cáo") trong khi bản hiện hành đã sửa từ 01/01/2026.
+- Kết quả 18 → 23; Tính mới 12 → 13 (lõi lý luận rõ hơn). **Tổng 61/100.**
+30. Nguồn thứ cấp (ketoananpha.vn, hethongphapluat.com) dùng được để định hướng, nhưng footnote phải ghi đúng trang đã đọc và giữ nhãn đối chiếu vbpl.vn; vbpl.vn và thuvienphapluat chặn curl trong container.

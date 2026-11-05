@@ -12,6 +12,8 @@ Bài dự giải: **bỏ** lời cam đoan có tên, lời cảm ơn, mọi thô
 
 ## 2. Trích dẫn trong bài
 
+Ngoặc kép chỉ dùng cho **lời trích**. Từ khóa tìm kiếm, câu mẫu, tên thuật ngữ tự đặt thì viết nghiêng. Script coi mọi ngoặc kép dài từ 25 ký tự là trích dẫn và đối chiếu với file nguyên văn.
+
 - Mọi nội dung lấy từ tài liệu khác, **trừ quy định pháp luật**, phải có chú thích nguồn. Quy định pháp luật nêu trong lời văn: "khoản 2 Điều 3 Luật …".
 - Trích nguyên văn đặt trong "…"; dài hơn 3 câu hoặc 5 dòng thì tách đoạn riêng, lùi trái 1,27 cm, bỏ ngoặc kép.
 - Trích qua tài liệu thứ hai (không đọc được bản gốc): nói rõ "dẫn theo …"; không đưa bản gốc vào danh mục.

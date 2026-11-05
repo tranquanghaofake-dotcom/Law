@@ -7,7 +7,7 @@
 |---|---|---|---|---|
 | Kết quả biểu quyết BLHS (sửa đổi) | chặn cứng | không được viết phân tích Điều 65 dự thảo | (a) chờ sau 21/11/2026; (b) viết phần lý luận chung | (b) trong lúc chờ |
 | Cổng pha 2: 8/15 nguồn, 3/5 học thuật | chờ người dùng | tổng quan ≤ 5/10 | (a) tìm Tạp chí Kiểm sát, Luật học qua thư viện; (b) giảm phạm vi | (a) |
-| Phạm vi sau khi Chương XII BLHS bị bãi bỏ | chờ người dùng | đối tượng nghiên cứu | (a) chỉ người từ đủ 18 tuổi; (b) thêm mục về Luật 59/2024/QH15 | (a) |
+| Phạm vi sau khi Chương XII BLHS bị bãi bỏ (đã kiểm: Điều 177 k1 Luật 59/2024) | chờ người dùng | đối tượng nghiên cứu | (a) chỉ người từ đủ 18 tuổi; (b) thêm mục về Luật 59/2024/QH15 | (a) |
 
 ## NHẬT KÝ PHIÊN
 - 05/11/2026 · pha 0–2 + 5 · đề thô "áp dụng án treo" → đề bão hòa; chọn góc chuyển tiếp D3 · dừng trước pha 4 vì phụ thuộc kết quả biểu quyết của Quốc hội (phương án A/B dưới đây)

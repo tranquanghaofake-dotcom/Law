@@ -92,3 +92,6 @@ Thang chấm: TT 45/2020/TT-BGDĐT, Điều 13, khoản 2 (đề tài sinh viên
 ### Bài học cho skill (vòng 3)
 10. Một vế nguồn bị cắt (đã ghi `[CẦN KIỂM]` trong `nguyen-van.md`) vẫn bị viết thành khẳng định trong bài, và không nhãn nào bắt được vì nhãn nằm ở file khác. → Script có tùy chọn `--nguyen-van`: mọi đoạn trích phải có trong file nguyên văn.
 11. Tự sửa chữ trong ngoặc kép cho "đúng" (ND-CP → NĐ-CP) là trích sai. → Quy tắc chép đúng chữ của nguồn; muốn sửa thì để ngoài ngoặc kép.
+
+## Sau phản biện độc lập (05/11/2026)
+Điểm 71 ở trên là **tự chấm, đã tính cả phần chưa viết**. Ba subagent cách ly chấm **52/100** (xem `07-phan-bien-doc-lap.md`). Từ nay dùng 52 làm điểm hiện tại của đề 1.

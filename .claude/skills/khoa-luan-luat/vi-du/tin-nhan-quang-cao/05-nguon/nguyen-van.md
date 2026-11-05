@@ -16,3 +16,18 @@ k1 (chủ thể): "Tổ chức, cá nhân kinh doanh dịch vụ quảng cáo ch
 # Dự thảo NĐ thay thế NĐ 91/2020 (bocongan.gov.vn, hồ sơ 09/2026) — DỰ THẢO [CẦN KIỂM: số điều]
 "Người quảng cáo chỉ được phép gửi một (01) tin nhắn đăng ký quảng cáo đầu tiên và duy nhất để đề nghị người sử dụng đăng ký nhận quảng cáo."
 "Việc thu thập, ghi nhận và quản lý sự đồng ý của Người sử dụng để nhận quảng cáo phải được thực hiện theo quy định của pháp luật về bảo vệ dữ liệu cá nhân và pháp luật có liên quan."
+
+# Bổ sung 05/11/2026 (agent tra cứu R1) — NGUỒN THỨ CẤP, đã đọc toàn văn HTML; chưa đối chiếu vbpl.vn [CẦN KIỂM trước khi ghi checked]
+## Luật 91/2025/QH15 (ketoananpha.vn, đối chiếu số điều với hethongphapluat.com)
+Đ2 k6: "Xử lý dữ liệu cá nhân là hoạt động tác động đến dữ liệu cá nhân, bao gồm một hoặc nhiều hoạt động như sau: thu thập, phân tích, tổng hợp, mã hóa, giải mã, chỉnh sửa, xóa, hủy, khử nhận dạng, cung cấp, công khai, chuyển giao dữ liệu cá nhân và hoạt động khác tác động đến dữ liệu cá nhân."
+Đ19 k1 d: "Thực hiện thỏa thuận của chủ thể dữ liệu cá nhân với cơ quan, tổ chức, cá nhân có liên quan theo quy định của pháp luật;"
+Đ19 k1 đ: "Trường hợp khác theo quy định của pháp luật."
+Đ19 k1 (các điểm a–c): bảo vệ tính mạng… trong trường hợp cấp bách; tình trạng khẩn cấp, an ninh quốc gia, phòng chống tội phạm; hoạt động của cơ quan nhà nước — không có điểm nào về quảng cáo hay lợi ích chính đáng của doanh nghiệp.
+Đ38 k1: "Luật này có hiệu lực thi hành từ ngày 01 tháng 01 năm 2026."
+## Luật Quảng cáo 16/2012/QH13 — VBHN 88/VBHN-VPQH (luatvietnam.vn), sửa bởi Luật 75/2025/QH15 (hiệu lực 01/01/2026)
+Đ2 k5: "Người quảng cáo là tổ chức, cá nhân có yêu cầu quảng cáo sản phẩm, hàng hóa, dịch vụ của mình hoặc bản thân tổ chức, cá nhân đó."
+Đ2 k6 (sau sửa đổi): "Người kinh doanh dịch vụ quảng cáo là tổ chức, cá nhân thực hiện một, một số hoặc tất cả các công đoạn của quá trình quảng cáo theo hợp đồng quảng cáo."
+(Bản gốc 2012, k6: "… theo hợp đồng cung ứng dịch vụ quảng cáo với người quảng cáo.")
+## NĐ 330/2026/NĐ-CP (hethongphapluat.com; khớp EY, GV Lawyers)
+"Hà Nội, ngày 19 tháng 8 năm 2026"; Đ80: "Nghị định này có hiệu lực thi hành kể từ ngày 19 tháng 8 năm 2026."
+Không tìm thấy điều bãi bỏ Điều 94 NĐ 15/2020/NĐ-CP (toàn văn không có chuỗi "15/2020") — chưa kết luận NĐ 15/2020 phần này còn hay hết hiệu lực.
