@@ -20,8 +20,6 @@
           <div class="mix-col theirs"><p class="mix-h">{why.mixup.picked ? 'Bạn chọn' : 'Dễ nhầm'}: «{why.mixup.term}»</p><ul>{#each why.mixup.theirs as k (k)}<li>{k}</li>{/each}</ul></div>
           <div class="mix-col ours"><p class="mix-h">Đúng: «{concept.term}»</p><ul>{#each why.mixup.ours as k (k)}<li>{k}</li>{/each}</ul></div>
         </div>
-      {:else if confusables.length}
-        <p class="why-names small">Dễ nhầm với: <b>{confusables.map((c) => c.term).join(', ')}</b></p>
       {/if}
   </section>
 {/if}

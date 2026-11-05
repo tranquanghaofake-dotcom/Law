@@ -1819,27 +1819,21 @@ select.qz-sort { min-height: var(--ctl-h); padding: 0 var(--sp-3); border: 1px s
 @media (min-width: 768px) { .shelf-chips { flex-wrap: wrap; overflow: visible; } }
 .cover-link .name { display: block; -webkit-line-clamp: unset; line-clamp: unset; overflow: visible; }
 
-/* ── Ghi nhớ nhanh (MemoCard) + hộp đáp án gọn (05/11/2026) ── */
+/* ── Ghi nhớ nhanh (MemoCard) + hộp đáp án gọn (05/11/2026, gọn thêm đợt 3) ── */
 .memo { margin: var(--sp-2) 0; }
-.memo-map { display: flex; align-items: center; gap: var(--sp-3); flex-wrap: wrap; margin-bottom: var(--sp-2); }
-.memo-root { margin: 0; padding: var(--sp-1) var(--sp-3); border-radius: var(--r-sm); background: var(--seal); color: #fff4ea; font-weight: 800; font-size: var(--fs-sm); max-width: 16rem; box-shadow: 0 2px 0 color-mix(in srgb, var(--seal) 55%, #000); }
-.memo-tree { list-style: none; margin: 0; padding: 0 0 0 var(--sp-4); border-left: 2px solid color-mix(in srgb, var(--seal) 45%, var(--line)); display: grid; gap: 6px; flex: 1 1 14rem; min-width: 0; }
-.memo-branch { position: relative; animation: memo-in .38s var(--ease-spring) both; animation-delay: calc(var(--i) * 90ms + 120ms); }
-.memo-branch::before { content: ''; position: absolute; left: calc(-1 * var(--sp-4)); top: .85em; width: calc(var(--sp-4) - 4px); border-top: 2px solid color-mix(in srgb, var(--seal) 45%, var(--line)); }
-.memo-node { display: inline-block; padding: 2px var(--sp-2); border-radius: var(--r-sm); border: 1px solid color-mix(in srgb, var(--accent) 40%, var(--line)); background: color-mix(in srgb, var(--accent) 10%, var(--card)); font-size: var(--fs-sm); font-weight: 700; color: var(--ink); }
-.memo-leaves { list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px; }
-.memo-leaf { font-size: var(--fs-sm); padding: 0 var(--sp-2); border-radius: 999px; border: 1px dashed var(--line); color: var(--ink); }
+.memo-rows { list-style: none; margin: 0 0 var(--sp-2); padding: 0 0 0 var(--sp-3); border-left: 3px solid color-mix(in srgb, var(--seal) 55%, var(--line)); display: grid; gap: 4px; }
+.memo-row { line-height: 1.45; animation: memo-in .32s var(--ease-out) both; animation-delay: calc(var(--i) * 70ms + 80ms); }
+.memo-k { color: var(--seal); font-weight: 800; }
+.memo-v { color: var(--ink); }
 .memo-hook { margin: 0 0 var(--sp-1); font-weight: 600; }
 .memo-hook b, .memo-lead b { color: var(--seal); }
-.memo-tag { margin: 0 0 var(--sp-1); font-style: italic; }
-.memo-lead { margin: 0 0 var(--sp-1); font-size: 1.05em; line-height: 1.5; }
-.memo-more-row { display: flex; flex-wrap: wrap; gap: 0 var(--sp-4); }
-.memo-more { margin: 0; } .memo-more[open] { flex-basis: 100%; }
-.memo-more > summary, .fb-source > summary { cursor: pointer; font-weight: 600; font-size: var(--fs-sm); color: var(--muted); min-height: 32px; display: flex; align-items: center; gap: var(--sp-1); list-style: none; }
-.memo-more > summary::-webkit-details-marker, .fb-source > summary::-webkit-details-marker { display: none; }
-.memo-more > summary::before { content: '▸'; transition: transform .15s; } .memo-more[open] > summary::before { transform: rotate(90deg); }
-.memo-more p { margin: 0 0 var(--sp-1); }
-.fb-source { margin: var(--sp-1) 0 0; } .fb-source p { margin: 0 0 var(--sp-1); }
+.memo-tag { margin-left: var(--sp-1); padding: 0 6px; border-radius: 999px; border: 1px solid var(--line); font-size: var(--fs-xs, 12px); font-weight: 600; font-style: italic; color: var(--muted); white-space: nowrap; }
+.memo-lead { margin: 0 0 var(--sp-1); line-height: 1.5; }
+.fb-more { margin: var(--sp-1) 0 0; }
+.fb-more > summary { cursor: pointer; font-weight: 600; color: var(--muted); min-height: 32px; display: flex; align-items: center; gap: var(--sp-1); list-style: none; }
+.fb-more > summary::-webkit-details-marker { display: none; }
+.fb-more > summary::before { content: '▸'; transition: transform .15s; } .fb-more[open] > summary::before { transform: rotate(90deg); }
+.fb-more p { margin: 0 0 var(--sp-1); }
 .why-mixup { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-2); margin-top: var(--sp-2); }
 .mix-col { padding: var(--sp-1) var(--sp-2); border-radius: var(--r-sm); border: 1px solid var(--line); }
 .mix-col.theirs { border-color: color-mix(in srgb, var(--bad) 45%, var(--line)); } .mix-col.ours { border-color: color-mix(in srgb, var(--ok) 55%, var(--line)); background: color-mix(in srgb, var(--ok) 6%, var(--card)); }

@@ -47,12 +47,16 @@
   </p>
   <WhyPanel {concept} {item} correct={result.correct} {explain} chosen={result.chosen} {confusables} />
   {#if item.type !== 'intro'}<MemoCard {concept} {item} />{/if}
-  {#if compareWith}<details class="cmp-wrap" open={!result.correct}><summary>So sánh «{concept.term}» và «{compareWith.term}»</summary><CompareTable a={concept} b={compareWith} /></details>{/if}
-  {#if retry}<p class="muted small">Vòng sửa sai: câu này không ghi vào tiến độ nhớ, chỉ để bạn gỡ lại.</p>{/if}
-  <details class="fb-source small"><summary><span aria-hidden="true">ⓘ</span> Nguồn</summary>
-    <p class="source muted">{source.cite}{#if source.url} · <a href={source.url} target="_blank" rel="noopener">Xem văn bản</a>{/if}</p>
+  {#if compareWith && !result.correct}<details class="cmp-wrap" open><summary>So sánh «{concept.term}» và «{compareWith.term}»</summary><CompareTable a={concept} b={compareWith} /></details>{/if}
+  {#if retry}<p class="muted small">Vòng sửa sai: không ghi vào tiến độ nhớ.</p>{/if}
+  <details class="fb-more small"><summary>Xem thêm</summary>
+    {#if explain}<p>{explain}</p>{/if}
+    {#if concept.example}<p><b>Ví dụ:</b> {concept.example}</p>{/if}
+    {#if compareWith && result.correct}<p class="muted">So sánh «{concept.term}» và «{compareWith.term}»:</p><CompareTable a={concept} b={compareWith} />{/if}
+    {#if confusableTerms.length}<p>Dễ nhầm với: <b>{confusableTerms.join(', ')}</b></p>{/if}
+    {#if concept.memo}<p class="muted">Sơ đồ và mẹo nhớ là diễn giải để học, không phải nguyên văn.</p>{/if}
+    <p class="source muted">Nguồn: {source.cite}{#if source.url} · <a href={source.url} target="_blank" rel="noopener">Xem văn bản</a>{/if}</p>
     <LegalNote compact />
   </details>
-  {#if !result.correct && confusableTerms.length && !confusables.length}<p class="muted">Dễ nhầm với: <b>{confusableTerms.join(', ')}</b></p>{/if}
   <button class="btn" type="button" data-next onclick={onnext} use:focusOnMount>{last ? 'Xem kết quả' : 'Câu tiếp →'} <kbd>↵</kbd></button>
 </div>

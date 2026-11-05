@@ -26,9 +26,9 @@ describe('WhyPanel', () => {
     expect(container.querySelector('.why-mixup')?.textContent).toContain('KN b');
     expect(container.querySelectorAll('.why-mixup .mix-col')).toHaveLength(2);
   });
-  it('dễ nhầm nhưng chưa đủ dữ liệu để so dấu hiệu: chỉ nêu tên', () => {
+  it('dễ nhầm nhưng chưa đủ dữ liệu để so dấu hiệu: không thêm dòng tên (đã nằm trong "Xem thêm")', () => {
     const { container } = render(WhyPanel, { props: { concept: c('a'), item, correct: false, explain: 'x', confusables: [c('b')] } });
-    expect(container.querySelector('.why-names')?.textContent).toContain('KN b');
+    expect(container.querySelector('.why-names')).toBeNull();
     expect(container.querySelector('.why-mixup')).toBeNull();
   });
 });
