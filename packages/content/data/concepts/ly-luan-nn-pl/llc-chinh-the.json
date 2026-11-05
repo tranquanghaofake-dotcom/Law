@@ -22,6 +22,33 @@
   "cộng hòa tổng thống",
   "cộng hòa đại nghị"
  ],
+ "memo": {
+  "hook": "QUÂN CHỦ: quyền lực theo THỪA KẾ; CỘNG HÒA: cơ quan được BẦU.",
+  "tree": [
+   {
+    "label": "Quân chủ",
+    "children": [
+     "Tuyệt đối",
+     "Hạn chế, lập hiến"
+    ]
+   },
+   {
+    "label": "Cộng hòa",
+    "children": [
+     "Quý tộc",
+     "Dân chủ"
+    ]
+   },
+   {
+    "label": "Cộng hòa dân chủ hiện đại",
+    "children": [
+     "Tổng thống",
+     "Đại nghị",
+     "Hỗn hợp"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

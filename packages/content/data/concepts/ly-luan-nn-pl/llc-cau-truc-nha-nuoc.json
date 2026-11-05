@@ -21,6 +21,26 @@
   "chủ quyền",
   "đơn vị hành chính lãnh thổ"
  ],
+ "memo": {
+  "hook": "ĐƠN NHẤT: một chủ quyền, một hệ thống; LIÊN BANG: hai hệ thống.",
+  "tree": [
+   {
+    "label": "Đơn nhất",
+    "children": [
+     "Một chủ quyền, một hiến pháp",
+     "Địa phương không có chủ quyền",
+     "Ví dụ Việt Nam, Pháp"
+    ]
+   },
+   {
+    "label": "Liên bang",
+    "children": [
+     "Bang có chủ quyền nhất định",
+     "Hai hệ thống cơ quan, pháp luật"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

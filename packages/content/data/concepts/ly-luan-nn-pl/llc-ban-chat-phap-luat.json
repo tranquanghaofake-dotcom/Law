@@ -22,6 +22,25 @@
   "ý chí giai cấp thống trị",
   "trật tự chung"
  ],
+ "memo": {
+  "hook": "Pháp luật: Ý CHÍ giai cấp thống trị (giai cấp) + công cụ giữ TRẬT TỰ chung (xã hội).",
+  "tree": [
+   {
+    "label": "Tính giai cấp",
+    "children": [
+     "Ý chí giai cấp thống trị",
+     "Do điều kiện kinh tế quyết định"
+    ]
+   },
+   {
+    "label": "Tính xã hội",
+    "children": [
+     "Ghi nhận chuẩn mực chung",
+     "Giữ trật tự chung"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

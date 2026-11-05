@@ -22,6 +22,32 @@
   "không phải là tội phạm",
   "rõ ràng quá mức cần thiết"
  ],
+ "memo": {
+  "hook": "Chống trả CẦN THIẾT vào chính NGƯỜI ĐANG XÂM PHẠM; RÕ RÀNG QUÁ MỨC thì chịu tội.",
+  "tree": [
+   {
+    "label": "Điều kiện",
+    "children": [
+     "Đang có hành vi xâm phạm",
+     "Chống trả chính người xâm phạm",
+     "Chống trả cần thiết"
+    ]
+   },
+   {
+    "label": "Hệ quả",
+    "children": [
+     "Không phải tội phạm"
+    ]
+   },
+   {
+    "label": "Vượt quá",
+    "children": [
+     "Rõ ràng quá mức cần thiết",
+     "Vẫn chịu, được giảm nhẹ"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

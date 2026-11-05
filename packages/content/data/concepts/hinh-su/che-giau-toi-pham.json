@@ -23,6 +23,31 @@
   "trừ an ninh quốc gia, đặc biệt nghiêm trọng"
  ],
  "note": "Điều 19 được sửa đổi, bổ sung bởi Luật 12/2017/QH14 (hiệu lực 01/01/2018); câu chữ trên theo VBHN 135/VBHN-VPQH 2025.",
+ "memo": {
+  "hook": "Che giấu KHÔNG HỨA TRƯỚC (hứa trước là đồng phạm); người thân được miễn, TRỪ tội an ninh, đặc biệt nghiêm trọng.",
+  "tree": [
+   {
+    "label": "Che giấu",
+    "children": [
+     "Không hứa hẹn trước",
+     "Biết sau khi tội thực hiện"
+    ]
+   },
+   {
+    "label": "Không tố giác",
+    "children": [
+     "Biết rõ mà không báo"
+    ]
+   },
+   {
+    "label": "Người thân",
+    "children": [
+     "Không chịu trách nhiệm hình sự",
+     "Trừ an ninh quốc gia, đặc biệt nghiêm trọng"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -23,6 +23,26 @@
   "miễn TNHS về tội định phạm",
   "tội khác"
  ],
+ "memo": {
+  "hook": "TỰ MÌNH dừng khi KHÔNG AI NGĂN → miễn tội ĐỊNH PHẠM (vẫn chịu tội khác đã đủ cấu thành).",
+  "tree": [
+   {
+    "label": "Điều kiện",
+    "children": [
+     "Tự mình dừng lại",
+     "Không có gì ngăn cản",
+     "Tội phạm chưa hoàn thành"
+    ]
+   },
+   {
+    "label": "Hệ quả",
+    "children": [
+     "Miễn trách nhiệm về tội định phạm",
+     "Vẫn chịu tội khác đã cấu thành"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

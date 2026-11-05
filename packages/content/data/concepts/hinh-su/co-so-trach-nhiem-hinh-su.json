@@ -22,6 +22,30 @@
   "Điều 76",
   "pháp chế"
  ],
+ "memo": {
+  "hook": "KHÔNG CÓ LUẬT thì KHÔNG CÓ TỘI; không áp dụng tương tự.",
+  "tree": [
+   {
+    "label": "Cá nhân",
+    "children": [
+     "Phạm tội đã được BLHS quy định"
+    ]
+   },
+   {
+    "label": "Pháp nhân thương mại",
+    "children": [
+     "Chỉ tội tại Điều 76"
+    ]
+   },
+   {
+    "label": "Nguyên tắc",
+    "children": [
+     "Pháp chế",
+     "Không áp dụng tương tự"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

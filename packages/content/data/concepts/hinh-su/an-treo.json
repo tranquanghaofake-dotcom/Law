@@ -22,6 +22,32 @@
   "thời gian thử thách 01 đến 05 năm",
   "không phải hình phạt"
  ],
+ "memo": {
+  "hook": "Án treo KHÔNG phải hình phạt: tù ≤ 3 NĂM được miễn chấp hành CÓ ĐIỀU KIỆN, thử thách 1–5 năm.",
+  "tree": [
+   {
+    "label": "Điều kiện",
+    "children": [
+     "Phạt tù không quá 03 năm",
+     "Nhân thân tốt, có giảm nhẹ",
+     "Không cần bắt chấp hành"
+    ]
+   },
+   {
+    "label": "Thử thách",
+    "children": [
+     "01 đến 05 năm"
+    ]
+   },
+   {
+    "label": "Vi phạm",
+    "children": [
+     "Cố ý vi phạm nghĩa vụ 02 lần",
+     "Có thể buộc chấp hành tù"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -22,6 +22,30 @@
   "vùng đặc quyền kinh tế, thềm lục địa",
   "miễn trừ ngoại giao"
  ],
+ "memo": {
+  "hook": "MỌI hành vi phạm tội trên lãnh thổ Việt Nam, kể cả TÀU BAY, TÀU BIỂN Việt Nam.",
+  "tree": [
+   {
+    "label": "Lãnh thổ",
+    "children": [
+     "Mọi hành vi, kể cả người nước ngoài"
+    ]
+   },
+   {
+    "label": "Mở rộng",
+    "children": [
+     "Tàu bay, tàu biển Việt Nam",
+     "Vùng đặc quyền kinh tế, thềm lục địa"
+    ]
+   },
+   {
+    "label": "Ngoại lệ",
+    "children": [
+     "Quyền miễn trừ ngoại giao, lãnh sự"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

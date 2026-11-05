@@ -23,6 +23,34 @@
   "một hình phạt chính",
   "phạt tiền, trục xuất"
  ],
+ "memo": {
+  "hook": "7 hình phạt CHÍNH (cảnh cáo → tử hình); mỗi tội MỘT hình phạt chính.",
+  "tree": [
+   {
+    "label": "Hình phạt chính",
+    "children": [
+     "Cảnh cáo, phạt tiền",
+     "Cải tạo không giam giữ, trục xuất",
+     "Tù có thời hạn, chung thân",
+     "Tử hình"
+    ]
+   },
+   {
+    "label": "Hình phạt bổ sung",
+    "children": [
+     "Cấm đảm nhiệm chức vụ, hành nghề",
+     "Cấm cư trú, quản chế",
+     "Tước quyền, tịch thu tài sản"
+    ]
+   },
+   {
+    "label": "Nguyên tắc",
+    "children": [
+     "Một hình phạt chính"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

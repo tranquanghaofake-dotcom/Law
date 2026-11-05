@@ -22,6 +22,40 @@
   "tổ chức, thực hành, xúi giục, giúp sức",
   "vượt quá của người thực hành"
  ],
+ "memo": {
+  "hook": "Đồng phạm: từ 2 NGƯỜI, CÙNG CỐ Ý; bốn vai: TỔ CHỨC – THỰC HÀNH – XÚI GIỤC – GIÚP SỨC.",
+  "tree": [
+   {
+    "label": "Khách quan",
+    "children": [
+     "Từ hai người trở lên",
+     "Cùng thực hiện một tội"
+    ]
+   },
+   {
+    "label": "Chủ quan",
+    "children": [
+     "Cùng cố ý",
+     "Không có đồng phạm vô ý"
+    ]
+   },
+   {
+    "label": "Bốn vai",
+    "children": [
+     "Tổ chức",
+     "Thực hành",
+     "Xúi giục",
+     "Giúp sức"
+    ]
+   },
+   {
+    "label": "Vượt quá",
+    "children": [
+     "Người thực hành tự chịu"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

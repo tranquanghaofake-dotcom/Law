@@ -22,6 +22,26 @@
   "nhân thân",
   "tình tiết giảm nhẹ, tăng nặng"
  ],
+ "memo": {
+  "hook": "Bốn căn cứ: LUẬT – MỨC NGUY HIỂM – NHÂN THÂN – GIẢM NHẸ/TĂNG NẶNG.",
+  "tree": [
+   {
+    "label": "Căn cứ",
+    "children": [
+     "Quy định của BLHS",
+     "Tính chất, mức độ nguy hiểm",
+     "Nhân thân người phạm tội",
+     "Tình tiết giảm nhẹ, tăng nặng"
+    ]
+   },
+   {
+    "label": "Phạt tiền",
+    "children": [
+     "Thêm tình hình tài sản"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -22,6 +22,30 @@
   "có thể bị truy cứu",
   "xâm hại lợi ích Việt Nam"
  ],
+ "memo": {
+  "hook": "Ngoài lãnh thổ: theo QUỐC TỊCH (công dân Việt Nam) và BẢO VỆ (hại lợi ích Việt Nam).",
+  "tree": [
+   {
+    "label": "Nguyên tắc quốc tịch",
+    "children": [
+     "Công dân, pháp nhân Việt Nam",
+     "Người không quốc tịch thường trú"
+    ]
+   },
+   {
+    "label": "Nguyên tắc bảo vệ",
+    "children": [
+     "Người nước ngoài xâm hại lợi ích Việt Nam"
+    ]
+   },
+   {
+    "label": "Mức độ",
+    "children": [
+     "Có thể bị truy cứu"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

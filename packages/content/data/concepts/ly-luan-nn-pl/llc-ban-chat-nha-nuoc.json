@@ -22,6 +22,25 @@
   "giai cấp thống trị",
   "công việc chung"
  ],
+ "memo": {
+  "hook": "Nhà nước có HAI mặt: TÍNH GIAI CẤP và TÍNH XÃ HỘI.",
+  "tree": [
+   {
+    "label": "Tính giai cấp",
+    "children": [
+     "Bộ máy cưỡng chế của giai cấp cầm quyền",
+     "Bảo vệ lợi ích giai cấp thống trị"
+    ]
+   },
+   {
+    "label": "Tính xã hội",
+    "children": [
+     "Giải quyết công việc chung",
+     "Trị thủy, hạ tầng, trật tự"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

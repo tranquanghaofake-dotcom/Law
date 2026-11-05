@@ -24,6 +24,27 @@
   "xử phạt vi phạm hành chính"
  ],
  "note": "Luật Xử lý vi phạm hành chính 15/2012/QH13 (hiệu lực 01/7/2013) được sửa đổi nhiều lần, gần nhất bởi Luật 88/2025/QH15 (hiệu lực 01/7/2025) — văn bản hợp nhất 90/VBHN-VPQH 2026; khoản 1 Điều 2 giữ nguyên câu chữ.",
+ "memo": {
+  "hook": "Vi phạm hành chính: CÓ LỖI, về QUẢN LÝ NHÀ NƯỚC, CHƯA phải tội phạm.",
+  "tree": [
+   {
+    "label": "Dấu hiệu",
+    "children": [
+     "Có lỗi",
+     "Vi phạm quản lý nhà nước",
+     "Không phải tội phạm",
+     "Phải bị xử phạt"
+    ]
+   },
+   {
+    "label": "Chủ thể",
+    "children": [
+     "Cá nhân",
+     "Tổ chức (phổ biến)"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

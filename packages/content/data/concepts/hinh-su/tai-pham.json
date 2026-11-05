@@ -22,6 +22,26 @@
   "rất nghiêm trọng do vô ý",
   "tái phạm nguy hiểm"
  ],
+ "memo": {
+  "hook": "Tái phạm: CHƯA XÓA ÁN TÍCH mà lại phạm tội CỐ Ý (hoặc rất nghiêm trọng do vô ý).",
+  "tree": [
+   {
+    "label": "Tái phạm",
+    "children": [
+     "Đã bị kết án, chưa xóa án tích",
+     "Lại phạm tội do cố ý",
+     "Hoặc rất nghiêm trọng do vô ý"
+    ]
+   },
+   {
+    "label": "Tái phạm nguy hiểm",
+    "children": [
+     "Án cũ và mới đều rất nghiêm trọng cố ý",
+     "Đã tái phạm lại phạm tội cố ý"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

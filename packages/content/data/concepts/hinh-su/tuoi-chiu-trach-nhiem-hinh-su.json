@@ -23,6 +23,31 @@
   "điều luật liệt kê"
  ],
  "note": "Khoản 2 Điều 12 được sửa đổi, bổ sung bởi Luật 12/2017/QH14 (hiệu lực 01/01/2018); câu chữ trên theo VBHN 135/VBHN-VPQH 2025.",
+ "memo": {
+  "hook": "Từ 16: MỌI tội; 14–16: chỉ tội RẤT và ĐẶC BIỆT nghiêm trọng được LIỆT KÊ.",
+  "tree": [
+   {
+    "label": "Từ đủ 16",
+    "children": [
+     "Mọi tội phạm",
+     "Trừ luật quy định khác"
+    ]
+   },
+   {
+    "label": "Từ đủ 14 đến dưới 16",
+    "children": [
+     "Rất nghiêm trọng, đặc biệt nghiêm trọng",
+     "Chỉ điều luật liệt kê"
+    ]
+   },
+   {
+    "label": "Dưới 14",
+    "children": [
+     "Không chịu"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

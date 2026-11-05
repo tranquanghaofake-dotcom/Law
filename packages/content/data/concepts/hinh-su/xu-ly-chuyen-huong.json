@@ -24,6 +24,32 @@
   "ưu tiên ở mọi giai đoạn"
  ],
  "note": "Từ 01/01/2026, Luật Tư pháp người chưa thành niên 59/2024/QH15 có hiệu lực và bãi bỏ Chương XII Bộ luật Hình sự (Điều 90–107) về người dưới 18 tuổi phạm tội (điểm a khoản 1 Điều 177). Giáo trình, đề cương cũ dẫn Điều 90–107 BLHS là đã hết hiệu lực. Luật 59/2024/QH15 được sửa đổi bởi Luật 85/2025/QH15 (hiệu lực 01/7/2025) và Luật 05/2026/QH16 (hiệu lực 01/01/2027); văn bản hợp nhất 105/VBHN-VPQH 2026.",
+ "memo": {
+  "hook": "12 biện pháp GIÁM SÁT, GIÁO DỤC thay cho hình phạt; 11 tại CỘNG ĐỒNG + trường giáo dưỡng.",
+  "tree": [
+   {
+    "label": "Tại cộng đồng (11)",
+    "children": [
+     "Khiển trách, xin lỗi, bồi thường",
+     "Quản thúc tại gia đình",
+     "Học tập, dạy nghề",
+     "Phục vụ cộng đồng"
+    ]
+   },
+   {
+    "label": "Cách ly",
+    "children": [
+     "Trường giáo dưỡng"
+    ]
+   },
+   {
+    "label": "Nguyên tắc",
+    "children": [
+     "Ưu tiên ở mọi giai đoạn"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

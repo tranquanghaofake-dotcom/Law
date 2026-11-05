@@ -24,6 +24,33 @@
   "quyền pháp lý",
   "nghĩa vụ pháp lý"
  ],
+ "memo": {
+  "hook": "Ba yếu tố: CHỦ THỂ – KHÁCH THỂ – NỘI DUNG (quyền, nghĩa vụ).",
+  "tree": [
+   {
+    "label": "Đặc điểm",
+    "children": [
+     "Dựa trên quy phạm",
+     "Mang tính ý chí",
+     "Nhà nước bảo đảm"
+    ]
+   },
+   {
+    "label": "Cơ cấu",
+    "children": [
+     "Chủ thể",
+     "Khách thể",
+     "Nội dung: quyền và nghĩa vụ"
+    ]
+   },
+   {
+    "label": "Phát sinh do",
+    "children": [
+     "Sự kiện pháp lý"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

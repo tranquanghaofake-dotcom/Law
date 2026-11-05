@@ -22,6 +22,31 @@
   "không phải là tội phạm",
   "vượt quá yêu cầu"
  ],
+ "memo": {
+  "hook": "Gây thiệt hại NHỎ HƠN để tránh thiệt hại LỚN HƠN, khi KHÔNG CÒN CÁCH KHÁC.",
+  "tree": [
+   {
+    "label": "Điều kiện",
+    "children": [
+     "Nguy cơ thiệt hại thực tế",
+     "Không còn cách nào khác",
+     "Thiệt hại gây ra nhỏ hơn"
+    ]
+   },
+   {
+    "label": "Hệ quả",
+    "children": [
+     "Không phải tội phạm"
+    ]
+   },
+   {
+    "label": "Khác phòng vệ",
+    "children": [
+     "Thiệt hại thường gây cho người thứ ba"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

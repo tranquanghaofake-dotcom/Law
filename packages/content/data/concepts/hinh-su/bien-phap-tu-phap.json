@@ -23,6 +23,31 @@
   "bắt buộc chữa bệnh",
   "không phải hình phạt"
  ],
+ "memo": {
+  "hook": "Biện pháp tư pháp KHÔNG phải hình phạt: TỊCH THU – BỒI THƯỜNG – CHỮA BỆNH.",
+  "tree": [
+   {
+    "label": "Người phạm tội",
+    "children": [
+     "Tịch thu vật, tiền liên quan",
+     "Trả lại, bồi thường, xin lỗi",
+     "Bắt buộc chữa bệnh"
+    ]
+   },
+   {
+    "label": "Pháp nhân thương mại",
+    "children": [
+     "Thêm khôi phục tình trạng ban đầu"
+    ]
+   },
+   {
+    "label": "Vai trò",
+    "children": [
+     "Hỗ trợ hoặc thay thế hình phạt"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

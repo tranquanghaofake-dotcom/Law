@@ -22,6 +22,29 @@
   "chế độ chính trị",
   "tổ chức quyền lực"
  ],
+ "memo": {
+  "hook": "Ba yếu tố: CHÍNH THỂ – CẤU TRÚC – CHẾ ĐỘ CHÍNH TRỊ.",
+  "tree": [
+   {
+    "label": "Chính thể",
+    "children": [
+     "Quân chủ / cộng hòa"
+    ]
+   },
+   {
+    "label": "Cấu trúc",
+    "children": [
+     "Đơn nhất / liên bang"
+    ]
+   },
+   {
+    "label": "Chế độ chính trị",
+    "children": [
+     "Dân chủ / phản dân chủ"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

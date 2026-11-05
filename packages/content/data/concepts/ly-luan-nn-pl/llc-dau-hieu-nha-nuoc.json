@@ -23,6 +23,33 @@
   "ban hành pháp luật",
   "thuế"
  ],
+ "memo": {
+  "hook": "Năm dấu hiệu: QUYỀN LỰC CÔNG – LÃNH THỔ – CHỦ QUYỀN – BAN HÀNH LUẬT – THU THUẾ.",
+  "tree": [
+   {
+    "label": "Tổ chức quyền lực",
+    "children": [
+     "Quyền lực công cộng đặc biệt",
+     "Quản lý dân cư theo lãnh thổ",
+     "Chủ quyền quốc gia"
+    ]
+   },
+   {
+    "label": "Độc quyền",
+    "children": [
+     "Ban hành pháp luật",
+     "Thu thuế"
+    ]
+   },
+   {
+    "label": "Phân biệt",
+    "children": [
+     "Thị tộc",
+     "Tổ chức chính trị - xã hội"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

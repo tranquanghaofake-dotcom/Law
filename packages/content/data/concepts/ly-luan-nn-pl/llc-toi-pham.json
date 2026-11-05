@@ -25,6 +25,27 @@
   "cố ý hoặc vô ý"
  ],
  "note": "Bộ luật Hình sự 100/2015/QH13 (hiệu lực 01/01/2018) được sửa đổi bởi Luật 12/2017/QH14 và Luật 86/2025/QH15 (hiệu lực 01/7/2025) — văn bản hợp nhất 135/VBHN-VPQH 2025.",
+ "memo": {
+  "hook": "Tội phạm có tính nguy hiểm CAO NHẤT; không có tội nếu BLHS không quy định.",
+  "tree": [
+   {
+    "label": "Dấu hiệu",
+    "children": [
+     "Nguy hiểm cho xã hội",
+     "Được quy định trong BLHS",
+     "Có năng lực trách nhiệm hình sự",
+     "Có lỗi"
+    ]
+   },
+   {
+    "label": "Chủ thể",
+    "children": [
+     "Cá nhân",
+     "Pháp nhân thương mại"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

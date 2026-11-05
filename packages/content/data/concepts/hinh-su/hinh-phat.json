@@ -21,6 +21,27 @@
   "Tòa án quyết định",
   "tước bỏ hoặc hạn chế quyền, lợi ích"
  ],
+ "memo": {
+  "hook": "Hình phạt: cưỡng chế NGHIÊM KHẮC NHẤT, chỉ trong BLHS, chỉ TÒA ÁN quyết định.",
+  "tree": [
+   {
+    "label": "Đặc điểm",
+    "children": [
+     "Nghiêm khắc nhất",
+     "Chỉ quy định trong BLHS",
+     "Chỉ Tòa án quyết định",
+     "Tước bỏ, hạn chế quyền"
+    ]
+   },
+   {
+    "label": "Mục đích",
+    "children": [
+     "Trừng trị",
+     "Giáo dục, phòng ngừa"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

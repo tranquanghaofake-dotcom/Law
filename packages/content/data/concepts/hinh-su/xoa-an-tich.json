@@ -22,6 +22,32 @@
   "không thực hiện hành vi phạm tội mới",
   "01, 02, 03, 05 năm"
  ],
+ "memo": {
+  "hook": "Xóa án tích = coi như CHƯA bị kết án; ba cách: ĐƯƠNG NHIÊN – TÒA QUYẾT ĐỊNH – ĐẶC BIỆT.",
+  "tree": [
+   {
+    "label": "Hình thức",
+    "children": [
+     "Đương nhiên",
+     "Theo quyết định của Tòa án",
+     "Trường hợp đặc biệt"
+    ]
+   },
+   {
+    "label": "Đương nhiên khi",
+    "children": [
+     "Xong hình phạt chính, bổ sung",
+     "Không phạm tội mới trong thời hạn"
+    ]
+   },
+   {
+    "label": "Thời hạn",
+    "children": [
+     "01, 02, 03, 05 năm"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

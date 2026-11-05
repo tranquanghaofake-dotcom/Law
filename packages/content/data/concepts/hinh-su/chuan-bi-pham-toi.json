@@ -23,6 +23,26 @@
   "chỉ tội được liệt kê"
  ],
  "note": "Điều 14 được sửa đổi, bổ sung bởi Luật 12/2017/QH14 (hiệu lực 01/01/2018); câu chữ trên theo VBHN 135/VBHN-VPQH 2025.",
+ "memo": {
+  "hook": "Chuẩn bị: TÌM, SỬA SOẠN công cụ; chỉ bị xử với các tội LIỆT KÊ.",
+  "tree": [
+   {
+    "label": "Hành vi",
+    "children": [
+     "Tìm kiếm, sửa soạn công cụ",
+     "Tạo điều kiện khác",
+     "Thành lập, tham gia nhóm tội phạm"
+    ]
+   },
+   {
+    "label": "Chịu trách nhiệm",
+    "children": [
+     "Chỉ tội được liệt kê",
+     "Theo độ tuổi"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

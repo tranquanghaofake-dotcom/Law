@@ -22,6 +22,36 @@
   "chế tài",
   "điều luật"
  ],
+ "memo": {
+  "hook": "Ba bộ phận: GIẢ ĐỊNH (ai, khi nào) – QUY ĐỊNH (làm gì) – CHẾ TÀI (hậu quả).",
+  "tree": [
+   {
+    "label": "Giả định",
+    "children": [
+     "Ai, khi nào, điều kiện nào"
+    ]
+   },
+   {
+    "label": "Quy định",
+    "children": [
+     "Phải làm, được làm, không được làm",
+     "Bộ phận trung tâm"
+    ]
+   },
+   {
+    "label": "Chế tài",
+    "children": [
+     "Hậu quả bất lợi khi vi phạm"
+    ]
+   },
+   {
+    "label": "Thực tế",
+    "children": [
+     "Điều luật có thể thiếu bộ phận"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

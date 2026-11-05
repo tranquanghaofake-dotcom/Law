@@ -22,6 +22,36 @@
   "phòng ngừa, đấu tranh",
   "tội phạm và hình phạt"
  ],
+ "memo": {
+  "hook": "Ba nhiệm vụ: BẢO VỆ – GIÁO DỤC – PHÒNG NGỪA, ĐẤU TRANH.",
+  "tree": [
+   {
+    "label": "Bảo vệ",
+    "children": [
+     "Chủ quyền, an ninh",
+     "Quyền con người, quyền công dân"
+    ]
+   },
+   {
+    "label": "Giáo dục",
+    "children": [
+     "Ý thức tuân theo pháp luật"
+    ]
+   },
+   {
+    "label": "Phòng ngừa",
+    "children": [
+     "Đấu tranh chống tội phạm"
+    ]
+   },
+   {
+    "label": "Phương pháp",
+    "children": [
+     "Quyền uy"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

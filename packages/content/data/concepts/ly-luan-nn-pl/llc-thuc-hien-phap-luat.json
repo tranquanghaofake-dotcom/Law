@@ -23,6 +23,36 @@
   "áp dụng",
   "hành vi hợp pháp"
  ],
+ "memo": {
+  "hook": "Bốn hình thức: TUÂN THỦ (không làm điều cấm) – THI HÀNH (làm điều buộc) – SỬ DỤNG (dùng quyền) – ÁP DỤNG.",
+  "tree": [
+   {
+    "label": "Tuân thủ",
+    "children": [
+     "Không làm điều cấm"
+    ]
+   },
+   {
+    "label": "Thi hành",
+    "children": [
+     "Làm điều bắt buộc"
+    ]
+   },
+   {
+    "label": "Sử dụng",
+    "children": [
+     "Thực hiện quyền",
+     "Có thể không dùng"
+    ]
+   },
+   {
+    "label": "Áp dụng",
+    "children": [
+     "Chủ thể có thẩm quyền"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

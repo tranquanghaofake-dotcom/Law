@@ -21,6 +21,31 @@
   "không thực hiện được đến cùng",
   "nguyên nhân ngoài ý muốn"
  ],
+ "memo": {
+  "hook": "Chưa đạt: ĐÃ BẮT ĐẦU, KHÔNG làm đến cùng vì lý do NGOÀI Ý MUỐN; luôn chịu trách nhiệm.",
+  "tree": [
+   {
+    "label": "Dấu hiệu",
+    "children": [
+     "Đã bắt đầu thực hiện",
+     "Không thực hiện được đến cùng",
+     "Nguyên nhân ngoài ý muốn"
+    ]
+   },
+   {
+    "label": "Lỗi",
+    "children": [
+     "Chỉ cố ý"
+    ]
+   },
+   {
+    "label": "Trách nhiệm",
+    "children": [
+     "Luôn chịu (khác chuẩn bị)"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -22,6 +22,32 @@
   "khế ước xã hội",
   "thần quyền"
  ],
+ "memo": {
+  "hook": "Nhà nước ra đời khi có TƯ HỮU và GIAI CẤP đối kháng (quan điểm Mác – Lênin).",
+  "tree": [
+   {
+    "label": "Tiền đề kinh tế",
+    "children": [
+     "Tư hữu",
+     "Ba lần phân công lao động"
+    ]
+   },
+   {
+    "label": "Tiền đề xã hội",
+    "children": [
+     "Phân hóa giai cấp",
+     "Mâu thuẫn không điều hòa được"
+    ]
+   },
+   {
+    "label": "Học thuyết khác",
+    "children": [
+     "Thần quyền",
+     "Khế ước xã hội"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -25,6 +25,31 @@
   "như nhau"
  ],
  "note": "Bộ luật Dân sự 91/2015/QH13 có hiệu lực từ 01/01/2017; chưa có văn bản sửa đổi có hiệu lực.",
+ "memo": {
+  "hook": "Năng lực PHÁP LUẬT: CÓ quyền; tiền đề của năng lực hành vi.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Được hưởng quyền",
+     "Gánh vác nghĩa vụ"
+    ]
+   },
+   {
+    "label": "Đặc điểm (cá nhân)",
+    "children": [
+     "Mọi người như nhau",
+     "Từ khi sinh đến khi chết"
+    ]
+   },
+   {
+    "label": "Quan hệ",
+    "children": [
+     "Pháp luật + hành vi = năng lực chủ thể"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",
