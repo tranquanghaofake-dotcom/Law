@@ -22,3 +22,8 @@ Chưa tìm thấy điều nào về phong tỏa theo yêu cầu cơ quan thi hà
 
 # Tạp chí Pháp luật và Thực tiễn số 66/2026, tr. 132 (Trần Vang Phủ, Phan Hồng Thái) — trích qua ResearchGate, bản PDF mất dấu cách
 "bổ sung cơ chế buộc người giữ tài sản số phải thi hành án kê khai, giao nộp khóa riêng, khôi phục và chế tài xử lý nếu không tuân thủ"
+
+# Luật THADS 26/2008/QH12 — VĂN BẢN HỢP NHẤT (quochoi.vn ItemID=93155, đọc 05/11/2026) [CẦN KIỂM: số VBHN]
+Đ67 k1: "Việc phong tỏa tài khoản, tài sản ở nơi gửi giữ được thực hiện trong trường hợp người phải thi hành án có tài khoản, tài sản gửi giữ."
+Đ67 k2: "Quyết định phong tỏa tài khoản, tài sản ở nơi gửi giữ phải xác định rõ số tiền, tài sản bị phong tỏa. Chấp hành viên phải giao quyết định phong toả cho cơ quan, tổ chức, cá nhân đang quản lý tài khoản, tài sản của người phải thi hành án."
+Đ67 k3: "Trong thời hạn 10 ngày, kể từ ngày ra quyết định phong tỏa tài khoản, tài sản ở nơi gửi giữ, Chấp hành viên phải áp dụng biện pháp cưỡng chế hoặc ra quyết định chấm dứt việc phong tỏa theo quy định của Luật này."

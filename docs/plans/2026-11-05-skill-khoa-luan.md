@@ -98,3 +98,7 @@ Task 10: bắt đầu — base d31b9ce — giải các CẦN KIỂM đề 3, 4; 
 Task 10: xong — (commit này) — đề 4: giải 5 CẦN KIỂM (nơi đăng bài #1, khoản/điểm Điều 37, 80, 83, số hiệu Luật 71/2025/QH15), thêm phản chứng, NQ 05/2025 định nghĩa lưu ký; 61/100. Đề 3: Luật 59/2024/QH15 xác định là Luật Tư pháp người chưa thành niên. Skill: mục "Bản gốc hay bản đang có hiệu lực" trong nguon-tra-cuu.md.
 Quyết định: không tính 3 bài ResearchGate chỉ có tiêu đề vào cổng pha 2 — vì chưa biết tác giả, nơi đăng — sai thì tốn chỉ là cổng mở chậm hơn.
 Rút kinh nghiệm: cổng pha 2 của cả hai đề không qua được chỉ bằng tìm kiếm web (tài liệu học thuật cần đăng nhập/thư viện) → đây là việc của người dùng, skill nên nói rõ sớm. Tra Luật 59/2024 hai lần không ra điều sửa BLHS → dừng theo luật 2 lần.
+
+Task 11: bắt đầu — base a7e08b9 — tra tiếp 3 mục còn lại bằng nguồn khác (VBHN THADS 2008 Điều 67; số điều NQ 05/2025; Luật 59/2024 sửa BLHS); nếu còn thời gian: đề 5 mảng hành chính/đất đai
+Task 11: xong — (commit này) — Luật 59/2024/QH15 CÓ sửa BLHS (bãi bỏ Chương XII từ 01/01/2026) → đính chính Task 10 và đề 3, thêm hệ quả phạm vi D3 (người từ đủ 18 tuổi); VBHN Luật THADS 2008 Điều 67 đã áp dụng cho "tài sản gửi giữ" → viết lại 2.3.1 đề 4 (63/100); nguon-tra-cuu.md: luật chuyên ngành có thể sửa bộ luật, một lần tra không thấy chưa đủ để kết luận.
+Rút kinh nghiệm: Task 10 tôi viết "đã sai" chỉ dựa trên một lần tra không thấy — lỗi sửa quá tay, tốn một vòng đính chính. Quy tắc: phủ định kết luận cũ cần nguồn khẳng định, không chỉ thiếu nguồn. Đề 5 chưa làm, để phiên sau.

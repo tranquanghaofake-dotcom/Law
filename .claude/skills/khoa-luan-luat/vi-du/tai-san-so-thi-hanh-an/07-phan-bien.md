@@ -35,4 +35,9 @@
 | **Tổng** | **57** | **61** | |
 
 25. Trang văn bản của Chính phủ là **bản gốc**: Luật THADS 2008 bản gốc khác bản sửa 2014 (thời hạn 05 ngày làm việc so với 10 ngày). So luật cũ phải dùng VBHN cuối cùng → thêm vào `nguon-tra-cuu.md`.
-26. Lỗi "Luật 59/2024/QH15" của đề 3 là **gán nhầm một luật có thật** (Luật Tư pháp người chưa thành niên, hiệu lực 01/01/2026) sang việc sửa BLHS; ngày hiệu lực khớp nên rất khó tự phát hiện → khi xác minh phải ghi cả tên luật.
+26. ~~Lỗi "Luật 59/2024/QH15" là gán nhầm~~ — **đính chính ở vòng 3**: Luật 59/2024/QH15 (Luật Tư pháp người chưa thành niên) thật sự sửa BLHS (bãi bỏ Chương XII từ 01/01/2026). Bài học đúng: (a) luật chuyên ngành có thể sửa bộ luật qua điều "sửa đổi luật khác", nên tìm "được sửa đổi bởi" trong VBHN mới nhất, không chỉ tìm "Luật sửa đổi BLHS"; (b) khi một lần tra phủ định kết luận cũ, chưa được viết "đã sai" trước khi tra được nguồn khẳng định — tôi đã sửa quá tay một lần.
+
+## Vòng 3 (05/11/2026)
+- Bản hợp nhất Điều 67 Luật 2008 đã áp dụng cho "tài sản gửi giữ" → câu "luật mới mở rộng phong tỏa tới tài sản ngoài tiền" là quá mức; đã viết lại 2.3.1 và chỉ ra nhận định của bài cơ quan chỉ đúng so với thực tiễn. Đây đúng là trường hợp kiểm tra `khang-dinh-so-sanh-khong-nguon` nhắm tới: nguồn thứ cấp có uy tín vẫn có thể so sai.
+- Điểm: Kết quả 24 → 26 (so sánh đúng văn bản). **Tổng 63/100.**
+27. Nguồn thứ cấp của chính cơ quan áp dụng luật (bài của Tổng cục THADS) vẫn có thể mô tả sai mức thay đổi so với luật cũ → so trực tiếp với VBHN.

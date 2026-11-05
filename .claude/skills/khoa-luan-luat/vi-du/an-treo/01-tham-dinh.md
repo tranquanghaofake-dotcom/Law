@@ -3,7 +3,7 @@
 ## Kiểm đường ống lập pháp (bước mới phải thêm vào skill)
 | Văn bản | Trạng thái 05/11/2026 | Ảnh hưởng |
 |---|---|---|
-| BLHS 2015, sửa đổi 2017, [CẦN KIỂM: 2024], 2025 (Luật 86/2025/QH15, hiệu lực 01/7/2025); VBHN 135/VBHN-VPQH | hiện hành | Điều 65: tù ≤ 03 năm |
+| BLHS 2015, sửa đổi 2017, 2024 (Luật 59/2024/QH15 — Luật Tư pháp người chưa thành niên, bãi bỏ Chương XII từ 01/01/2026), 2025 (Luật 86/2025/QH15, hiệu lực 01/7/2025); VBHN 135/VBHN-VPQH | hiện hành | Điều 65: tù ≤ 03 năm |
 | NQ 02/2018/NQ-HĐTP, sửa bởi NQ 01/2022/NQ-HĐTP và NQ 02/2025/NQ-HĐTP (27/6/2025, hiệu lực 01/7/2025) | hiện hành | hướng dẫn Điều 65 |
 | Luật Thi hành án hình sự 127/2025/QH15 (10/12/2025, hiệu lực 01/7/2026) | hiện hành; Luật THAHS 2019 hết hiệu lực 01/7/2026 | giám sát người hưởng án treo |
 | **Dự thảo BLHS (sửa đổi)** — nhiều phiên bản: 26/6/2026 (lấy ý kiến), 22/9/2026, bản chỉnh lý trình Quốc hội 17/10/2026 (416 điều theo Tạp chí Tòa án) | **dự thảo, chưa thông qua** [CẦN KIỂM: kết quả biểu quyết kỳ họp thứ 2]; Reuters: nếu thông qua, hiệu lực khoảng 3/2027 | Điều 65 dự thảo: tù ≤ 05 năm, có trường hợp **nộp tiền thay thế hình phạt tù** để hưởng án treo; bỏ giao giám sát |
@@ -24,4 +24,5 @@ Cổng pha 1: chờ người dùng chọn; **không viết pha 4 trước khi bi
 
 ## Cập nhật 05/11/2026 (lần 2)
 - Đến 05/11/2026 BLHS (sửa đổi) **vẫn là dự thảo**; có thêm các bản ngày 09/10/2026 và 26/10/2026 (quochoi.vn). Kỳ họp thứ 2 kết thúc đợt 1 ngày 13/11/2026, bế mạc 21/11/2026 (quochoi.vn, tin ngày 04/11/2026) → **kiểm lại sau 21/11/2026**; tạm theo kế hoạch B.
-- Luật 59/2024/QH15 là **Luật Tư pháp người chưa thành niên** (danh mục tại khoản 3 Điều 115 Luật 106/2025/QH15, luatvietnam). Ban hành 30/11/2024, hiệu lực 01/01/2026 (vanban.chinhphu.vn). Ngày hiệu lực này trùng với dòng tôi đã ghi theo trí nhớ trước đó → lỗi là **gán nhầm một luật có thật sang việc sửa BLHS**. Luật này có điều sửa BLHS không: trang luatvietnam chỉ hiện một phần, tra 2 lần không ra → [CẦN KIỂM: đọc phần "điều khoản sửa đổi luật khác" của Luật 59/2024/QH15].
+- Luật 59/2024/QH15 là **Luật Tư pháp người chưa thành niên** (ban hành 30/11/2024, hiệu lực 01/01/2026, vanban.chinhphu.vn) và **có sửa BLHS**: bãi bỏ toàn bộ Chương XII "người dưới 18 tuổi phạm tội" từ 01/01/2026 [NGUỒN NÓI: thuvienphapluat.vn, tin 12/2024] [CẦN KIỂM: điều khoản sửa đổi trong VBHN 107/VBHN-VPQH]. **Đính chính lần cập nhật trước**: tôi từng kết luận dòng "sửa 2024 (Luật 59/2024/QH15, hiệu lực 01/01/2026)" là gán nhầm — kết luận đó sai; ghi nhớ ban đầu đúng về số hiệu và ngày, chỉ thiếu tên luật.
+- Hệ quả cho đề D3: án treo với người dưới 18 tuổi nay theo Luật 59/2024/QH15, không theo Chương XII BLHS → phạm vi đề tài phải ghi "người từ đủ 18 tuổi", hoặc thêm một mục về Luật 59/2024. VBHN 135/VBHN-VPQH có thể chưa phản ánh việc bãi bỏ này [CẦN KIỂM: ngày của VBHN 135].
