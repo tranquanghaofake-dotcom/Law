@@ -29,3 +29,11 @@ Rút kinh nghiệm: (1) Svelte 5 — effect đọc `run.i` vẫn chạy lại m�
 - Tương phản kệ sách: làm đậm nền chữ bảng tên kệ (.74) và nhãn gáy (.58) — 3bd41df. Ảnh thật đọc rõ; `contrast.txt` vẫn báo 14 dòng do công cụ lấy phân vị 10 % điểm ảnh xấu nhất trúng viền sáng 1 px của nhãn nhỏ (đo sai, không phải lỗi giao diện).
 - `memo` cho cả 101 khái niệm Hiến pháp (96 mới), chỉ rút từ definition/plain; diff chỉ thêm dòng (2649+, 0−); `npm run content` 0 lỗi.
 Rút kinh nghiệm: (4) chạy vitest của một package phải đứng trong thư mục package — `--root` từ gốc làm alias `$lib` hỏng, báo đỏ giả.
+
+## Đợt 3 (Hào: "làm" — mặc định D1: tự soạn memo, không agent con; không chạy workflow Giọng đọc)
+| Task | Việc | Trạng thái |
+|---|---|---|
+| A | Thẻ đáp án gọn thêm: sơ đồ một dòng/nhánh + mẹo nhớ; còn lại gộp "Xem thêm" | chưa |
+| B | Thẻ khái niệm đầu dùng sơ đồ + mẹo nhớ | chưa |
+| C | Danh sách câu giọng đọc gồm đề, phương án, mẹo nhớ; chữ cái phương án thành câu riêng | chưa |
+| D | memo cho 22 môn còn lại (nhiều phiên) | chưa |
