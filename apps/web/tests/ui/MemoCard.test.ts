@@ -51,3 +51,15 @@ describe('Feedback gọn', () => {
     expect(container.querySelector('.memo')).toBeTruthy();
   });
 });
+
+describe('Feedback: dấu "ĐÚNG" khi trả lời đúng', () => {
+  it('câu đúng có dấu mộc nhỏ (ẩn với trình đọc màn hình), câu sai không', () => {
+    const ok = render(Feedback, { props: { result: { correct: true, elapsedMs: 1 }, item, concept: c(), onnext: () => {} } });
+    const seal = ok.container.querySelector('.ok-seal');
+    expect(seal?.textContent).toContain('ĐÚNG');
+    expect(seal?.getAttribute('aria-hidden')).toBe('true');
+    cleanup();
+    const bad = render(Feedback, { props: { result: { correct: false, elapsedMs: 1 }, item, concept: c(), onnext: () => {} } });
+    expect(bad.container.querySelector('.ok-seal')).toBeNull();
+  });
+});

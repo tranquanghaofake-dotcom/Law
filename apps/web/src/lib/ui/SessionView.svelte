@@ -141,6 +141,8 @@
     if (r.correct && snd === 'correct') sfx.playCombo(run.combo, showStamp ? TIMING.stampLand : 0); else sfx.play(snd, { combo: run.combo });
     if (!r.correct) buzz('bad'); else if (glowLevel(run.combo) > 0) buzzCombo(glowLevel(run.combo)); else buzz('ok');
     if (r.correct && gold) sfx.play('golden');
+    // tiếng đóng mộc: dấu mốc chuỗi (to) hoặc dấu "ĐÚNG" nhỏ trên hộp đáp án — khớp lúc dấu chạm giấy
+    if (r.correct) sfx.stamp({ heavy: showStamp, delay: showStamp ? TIMING.stampLand : TIMING.sealLand });
     if (fx && showStamp) {
       stamp = fx;
       if (fx.confetti) later(() => stampConfetti(fx.tier, fx.combo >= 10), TIMING.stampLand);

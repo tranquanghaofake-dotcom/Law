@@ -7,8 +7,8 @@ vi.mock('$lib/store/progress-repo', () => ({ repo: { record: (...a: unknown[]) =
 vi.mock('$lib/store/stats', () => ({
   stats: { addXp: async () => 0, xp: async () => 0, markLesson: async () => false, streak: async () => ({ count: 0, longest: 0, lastDay: null, freezes: 0 }), setStreak: async () => {} },
 }));
-const playCombo = vi.fn();
-vi.mock('$lib/fx/sfx', () => ({ sfx: { preload() {}, play() {}, playCombo: (...a: unknown[]) => playCombo(...a), stopCombo() {} } }));
+const playCombo = vi.fn(), stamp = vi.fn();
+vi.mock('$lib/fx/sfx', () => ({ sfx: { preload() {}, play() {}, playCombo: (...a: unknown[]) => playCombo(...a), stamp: (...a: unknown[]) => stamp(...a), stopCombo() {} } }));
 vi.mock('$lib/fx/confetti', () => ({ burst() {}, reducedMotion: () => calm }));
 const sparks = vi.fn(), stampConfetti = vi.fn(), buzzCombo = vi.fn();
 vi.mock('$lib/fx/sparks', () => ({ sparks: (...a: unknown[]) => sparks(...a), stampConfetti: (...a: unknown[]) => stampConfetti(...a) }));
@@ -54,6 +54,8 @@ describe('SessionView: khoảnh khắc thưởng', () => {
     await answerOk(container, getByRole as never);
     await vi.waitFor(() => expect(container.ownerDocument.querySelector('.stamp')?.textContent).toContain('×2'));
     expect(playCombo).toHaveBeenLastCalledWith(2, 130);
+    // tiếng đóng mộc: lần 1 dấu "ĐÚNG" nhỏ (260 ms), lần 2 mộc mốc chuỗi to đúng lúc chạm giấy (130 ms)
+    expect(stamp.mock.calls.slice(-2)).toEqual([[{ heavy: false, delay: 260 }], [{ heavy: true, delay: 130 }]]);
   });
   it('giảm chuyển động: không dấu mộc, không dời âm thanh, XP hiện ngay', async () => {
     calm = true;

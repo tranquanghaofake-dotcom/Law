@@ -39,6 +39,7 @@
 
 <svelte:window onkeydown={onkey} />
 <div class="feedback {result.correct ? 'ok' : 'bad'}" role="status" aria-live="polite">
+  {#if result.correct}<span class="ok-seal" aria-hidden="true">ĐÚNG</span>{/if}
   <p class="verdict"><span class="vtext">{result.correct ? 'Chính xác.' : `Chưa đúng.${correctText ? ` Đáp án: ${correctText}` : ''}`}</span>
     {#if xp > 0}<span class="chip xp-chip" class:gold={golden}>+{xp} XP{golden ? ' · câu vàng' : ''}</span>{/if}
     {#if levelTo !== null}<span class="chip level-chip">Lên bậc {levelTo}<small> · {LEVEL_NAMES[levelTo]}</small></span>{/if}
