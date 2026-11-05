@@ -10,10 +10,10 @@ Quyết định: kiểm thử skill bằng chạy thử trên 1 đề tài mẫu
 ## Task
 | # | Việc | File | Kiểm tra | Trạng thái |
 |---|---|---|---|---|
-| 1 | 5 vòng nghiên cứu, ghi link | sổ việc này | có ≥ 5 mục vòng | |
+| 1 | 5 vòng nghiên cứu, ghi link | sổ việc này | có ≥ 5 mục vòng | xong |
 | 2 | Viết SKILL.md + references/ + script kiểm tra | .claude/skills/khoa-luan-luat/** | python3 .claude/skills/khoa-luan-luat/scripts/kiem_tra_skill.py xanh | |
-| 3 | Chạy thử trên đề tài mẫu → đề cương | scratchpad | file đề cương đủ mục theo checklist | |
-| 4 | Đóng gói .zip, commit, push | dist zip | unzip -l | |
+| 3 | Chạy thử trên đề tài mẫu → đề cương | scratchpad | file đề cương đủ mục theo checklist | xong |
+| 4 | Đóng gói .zip, commit, push | dist zip | unzip -l | xong (zip ngoài repo) |
 
 Task 1: bắt đầu — base 911ed8c
 
@@ -46,3 +46,13 @@ Task 1: bắt đầu — base 911ed8c
 
 Task 1: xong — (chỉ sổ việc)
 Task 2: bắt đầu — base 0f50223
+Task 2: xong — 2331e72 (kiem_tra_skill.py XANH, 11 unit test OK)
+Task 3: bắt đầu — base 2331e72
+Task 3: xong — 6593cdf (vi-du/giao-dich-nguoi-co-lien-quan: pha 0–4; script bắt đủ [CẦN KIỂM] còn mở)
+Task 4: xong — zip ở scratchpad (21 mục), không commit file nhị phân; `npm run ci` exit 0
+
+Quyết định: không chạy pressure-test bằng subagent theo superpowers:writing-skills — vì Hào cấm subagent — sai thì tốn: lỗi diễn giải skill chỉ lộ khi dùng thật.
+Quyết định: không đưa "bài mẫu đạt giải" vào skill — vì không tìm được toàn văn công khai; chỉ dùng tiêu chí chấm có nguồn — sai thì tốn: thiếu ví dụ văn phong.
+
+Rút kinh nghiệm: chạy thử phát hiện trang thứ cấp (mylaw.vn) ghi sai ngày hiệu lực Luật 76/2025/QH15 → đã bổ sung quy tắc "ngày hiệu lực lấy từ chính văn bản" và "kiểm văn bản hợp nhất" vào references/nguon-tra-cuu.md. Không có task phải làm lại.
+Rút kinh nghiệm: nguyên văn Điều 10 TT 45/2020 chưa đọc được (thuvienphapluat link 404) → thang điểm Bộ đang ghi "theo bản dẫn của các trường", lần sau thử vbpl.vn hoặc moet.gov.vn PDF.
