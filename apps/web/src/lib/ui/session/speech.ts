@@ -77,7 +77,7 @@ export function promptSpeech(item: StepItem, concept: Pick<Concept, 'term' | 'de
       const hook = concept.memo?.hook;
       // có Hiểu nhanh (lời thường): đọc nó thay cho nguyên văn — nghe dễ hiểu, không có "(…)" hay viết tắt
       const gist = concept.memo?.gist;
-      if (gist) return [sentence(concept.term), sentence(gist), diagramSpeech(concept.memo ?? {}), hook ? `Mẹo nhớ: ${sentence(hook)}` : ''].filter(Boolean).join(' ');
+      if (gist) return [sentence(concept.term), sentence(gist), diagramSpeech(concept.memo ?? {}), hook ? `Mẹo nhớ: ${sentence(hook)}` : '', concept.memo?.case ? `Thử nghĩ: ${sentence(concept.memo.case.q)}` : ''].filter(Boolean).join(' ');
       // giữ đúng dạng cũ "tên. định nghĩa" (trùng nút Nghe của thẻ) để dùng lại mp3 đã sinh
       const base = `${concept.term}. ${concept.definition}`;
       // định nghĩa kết thúc bằng ; hoặc : thì chốt câu để mẹo nhớ thành câu riêng (tệp riêng)

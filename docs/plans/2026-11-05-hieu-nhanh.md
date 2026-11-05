@@ -19,8 +19,10 @@ Rút kinh nghiệm: (1) dòng trong danh sách flex phải bọc nội dung tron
 ## Đợt 2 (Hào: "làm tất cả")
 | Task | Việc | Trạng thái |
 |---|---|---|
-| 5 | Giọng đọc đọc cả hình (bậc thang, bước, điều kiện, hai cột) | chưa |
-| 6 | Mẹo nhớ là so sánh/vần/chữ tắt; luật kiểm: mẹo không trùng quá nửa chữ với Hiểu nhanh | chưa |
-| 7 | Ví dụ dạng hỏi – đáp (`memo.case`), bấm mới hiện đáp; luật kiểm | chưa |
-| 8 | Câu phân biệt theo cặp hay nhầm (`memo.contrast`) thay hai cột cụm từ | chưa |
-| 9 | Hình vẽ thật: kim tự tháp SVG cho bậc thang, mũi tên nối các bước, biểu tượng nhánh | chưa |
+| 5 | Giọng đọc đọc cả hình (bậc thang, bước, điều kiện, hai cột) | xong |
+| 6 | Mẹo nhớ là so sánh/vần/chữ tắt; luật kiểm: mẹo không trùng quá nửa chữ với Hiểu nhanh | xong |
+| 7 | Ví dụ dạng hỏi – đáp (`memo.case`), bấm mới hiện đáp; luật kiểm | xong |
+| 8 | Câu phân biệt theo cặp hay nhầm (`memo.contrast`) thay hai cột cụm từ | xong |
+| 9 | Hình vẽ thật: kim tự tháp SVG cho bậc thang, mũi tên nối các bước, biểu tượng nhánh | xong |
+
+Rút kinh nghiệm đợt 2: (1) `git checkout <file>` để bỏ một sửa nhỏ sẽ xoá luôn mọi sửa chưa commit của file đó — muốn bỏ một chỗ thì sửa ngược, hoặc commit trước. (2) Biểu tượng ✓ của danh sách điều kiện không hợp với nhánh "thiếu một điều" — nhánh phủ định nên đưa vào mẹo nhớ, không đặt trong danh sách ✓. (3) SVG trong hàng flex lấy chiều cao theo tỉ lệ khung nhìn; muốn kéo theo chiều cao chữ thì đặt tuyệt đối trong `li` có `position: relative`.

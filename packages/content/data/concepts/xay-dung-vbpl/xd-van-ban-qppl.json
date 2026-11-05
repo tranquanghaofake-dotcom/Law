@@ -43,13 +43,6 @@
      "Đúng tên loại văn bản",
      "Đúng trình tự, thủ tục"
     ]
-   },
-   {
-    "label": "Thiếu một điều",
-    "icon": "❌",
-    "children": [
-     "Không phải văn bản quy phạm"
-    ]
    }
   ],
   "case": {

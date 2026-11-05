@@ -123,7 +123,7 @@ describe('promptSpeech — đọc đề/khái niệm ngay khi thẻ hiện, KHÔ
     expect(diagramSpeech({ kind: 'checklist', tree })).toBe('Cần đủ ba điều. Một, Hiến pháp. Hai, Luật: Quốc hội. Ba, Nghị định: Chính phủ, Thủ tướng.');
     expect(diagramSpeech({ kind: 'compare', tree: tree.slice(1) })).toBe('So sánh. Luật: Quốc hội. Còn Nghị định: Chính phủ, Thủ tướng.');
     expect(diagramSpeech({ kind: 'tree', tree })).toBe('Gồm ba ý. Một, Hiến pháp. Hai, Luật: Quốc hội. Ba, Nghị định: Chính phủ, Thủ tướng.');
-    expect(diagramSpeech({ hook: 'x' })).toBe('');
+    expect(diagramSpeech({ kind: 'tree' })).toBe('');
   });
   it('thẻ có Hiểu nhanh: đọc tên, Hiểu nhanh, hình, mẹo nhớ theo thứ tự', () => {
     const t = promptSpeech({ type: 'intro' }, { ...concept, memo: { gist: 'Câu gọn.', kind: 'steps', hook: 'Mẹo', tree: [{ label: 'A' }, { label: 'B' }] } } as Concept);
@@ -149,5 +149,14 @@ describe('promptSpeech — đọc đề/khái niệm ngay khi thẻ hiện, KHÔ
   it('xếp cột/ghép cặp: đọc yêu cầu ngắn, không đọc danh sách', () => {
     expect(promptSpeech({ type: 'sort', level: 2, left: 'A', right: 'B', cases: [{ text: 'dài', answer: 'left' }], explain: '' }, concept)).toBe('Phân biệt: A hay B.');
     expect(promptSpeech({ type: 'match', level: 2, pairs: [{ conceptId: 'a', term: 'T', text: 'x' }], explain: '' }, concept)).toBe('Ghép thuật ngữ với mô tả.');
+  });
+});
+
+describe('promptSpeech: tình huống của thẻ khái niệm', () => {
+  it('có memo.case: đọc câu hỏi cuối cùng, không đọc đáp', async () => {
+    const { promptSpeech } = await import('$lib/ui/session/speech');
+    const t = promptSpeech({ type: 'intro' }, { term: 'X', definition: 'd', memo: { gist: 'Gọn.', hook: 'Mẹo.', case: { q: 'Hỏi gì?', a: 'Đáp kín.' } } });
+    expect(t.endsWith('Thử nghĩ: Hỏi gì?')).toBe(true);
+    expect(t).not.toContain('Đáp kín');
   });
 });

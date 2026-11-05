@@ -1,5 +1,6 @@
 <script lang="ts">
   // "Ghi nhớ nhanh": Hiểu nhanh (câu lời thường) → hình theo loại khái niệm → mẹo nhớ. Dùng ở thẻ đáp án và thẻ khái niệm đầu.
+  // Hình vẽ: bậc thang = lát kim tự tháp SVG (rộng dần xuống dưới), các bước nối bằng mũi tên ↓, nhánh có biểu tượng (memo.tree[].icon).
   // Kiểu hình (memo.kind): ladder = bậc thang thứ bậc, checklist = điều kiện ✓, steps = các bước 1-2-3, compare = hai cột, tree = mỗi nhánh một dòng.
   // Chưa có sơ đồ người soạn: nhánh = dấu hiệu (keywords) và thêm một câu gọn (nếu có item). Dữ liệu dựng bởi engine/memo.ts.
   import type { Concept } from '$lib/content/types';
@@ -13,16 +14,22 @@
   const lead = $derived(!gist && !map.authored && !hook && item ? gistOf(concept, item).lead : null);
   const cols = $derived(kind === 'compare' ? map.nodes.slice(0, 2) : []);
   const rest = $derived(kind === 'compare' ? map.nodes.slice(2) : map.nodes);
+  // lát thứ i của kim tự tháp n tầng (khung 100×100): cạnh trên rộng i/n, cạnh dưới (i+1)/n
+  const r1 = (x: number) => String(Math.round(x * 10) / 10);
+  const tier = (i: number, n: number) => {
+    const t = (50 * i) / n, b = (50 * (i + 1)) / n;
+    return `${r1(50 - t)},0 ${r1(50 + t)},0 ${r1(50 + b)},100 ${r1(50 - b)},100`;
+  };
 </script>
 
-{#snippet line(n: { label: string; children: string[] })}<b class="memo-k">{n.label}</b>{#if n.children.length}: <span class="memo-v">{n.children.join(' · ')}</span>{/if}{/snippet}
+{#snippet line(n: { label: string; children: string[]; icon?: string })}{#if n.icon}<span class="memo-icon" aria-hidden="true">{n.icon}</span>{/if}<b class="memo-k">{n.label}</b>{#if n.children.length}: <span class="memo-v">{n.children.join(' · ')}</span>{/if}{/snippet}
 
 <section class="memo" aria-label="Ghi nhớ nhanh" data-kind={kind}>
   {#if gist}<p class="memo-gist">{gist}</p>{/if}
   {#if map.nodes.length}
     {#if kind === 'ladder'}
       <ol class="memo-ladder" aria-label="Thứ bậc, từ cao xuống thấp">
-        {#each map.nodes as n, i (i)}<li style="--i:{i}">{@render line(n)}</li>{/each}
+        {#each map.nodes as n, i (i)}<li style="--i:{i}"><svg class="memo-tier" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><polygon points={tier(i, map.nodes.length)} /></svg><span class="memo-tier-t">{@render line(n)}</span></li>{/each}
       </ol>
     {:else if kind === 'checklist'}
       <ul class="memo-check" aria-label="Điều kiện">
@@ -30,12 +37,12 @@
       </ul>
     {:else if kind === 'steps'}
       <ol class="memo-steps" aria-label="Các bước">
-        {#each map.nodes as n, i (i)}<li style="--i:{i}"><span class="memo-num" aria-hidden="true">{i + 1}</span><span>{@render line(n)}</span></li>{/each}
+        {#each map.nodes as n, i (i)}<li style="--i:{i}"><span class="memo-num" aria-hidden="true">{i + 1}{#if i < map.nodes.length - 1}<span class="memo-arrow">↓</span>{/if}</span><span>{@render line(n)}</span></li>{/each}
       </ol>
     {:else}
       {#if cols.length}
         <div class="memo-compare">
-          {#each cols as n, i (i)}<div class="memo-col"><p class="memo-col-h">{n.label}</p>{#if n.children.length}<ul>{#each n.children as ch, j (j)}<li>{ch}</li>{/each}</ul>{/if}</div>{/each}
+          {#each cols as n, i (i)}<div class="memo-col"><p class="memo-col-h">{#if n.icon}<span class="memo-icon" aria-hidden="true">{n.icon}</span>{/if}{n.label}</p>{#if n.children.length}<ul>{#each n.children as ch, j (j)}<li>{ch}</li>{/each}</ul>{/if}</div>{/each}
         </div>
       {/if}
       {#if rest.length}

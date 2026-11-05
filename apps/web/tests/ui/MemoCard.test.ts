@@ -91,3 +91,24 @@ describe('MemoCard: Hiểu nhanh + hình theo loại khái niệm', () => {
     expect(container.querySelector('ol.memo-ladder li')?.textContent).toContain('Hiến pháp');
   });
 });
+
+describe('MemoCard: hình vẽ', () => {
+  const tree = [{ label: 'Hiến pháp', icon: '📜' }, { label: 'Luật', icon: '🏛️', children: ['Quốc hội'] }, { label: 'Nghị định', children: ['Chính phủ'] }];
+  it('bậc thang: mỗi bậc có một lát kim tự tháp SVG, rộng dần xuống dưới', () => {
+    const { container } = render(MemoCard, { props: { concept: c({ memo: { gist: 'g', kind: 'ladder', hook: 'h', tree } }) } });
+    const polys = [...container.querySelectorAll('.memo-ladder svg.memo-tier polygon')];
+    expect(polys).toHaveLength(3);
+    expect(polys[0].getAttribute('points')).toBe('50,0 50,0 66.7,100 33.3,100');
+    expect(polys[2].getAttribute('points')).toBe('16.7,0 83.3,0 100,100 0,100');
+  });
+  it('các bước: mũi tên nối giữa hai bước (không có sau bước cuối)', () => {
+    const { container } = render(MemoCard, { props: { concept: c({ memo: { gist: 'g', kind: 'steps', hook: 'h', tree } }) } });
+    expect(container.querySelectorAll('.memo-steps .memo-arrow')).toHaveLength(2);
+  });
+  it('biểu tượng nhánh hiện trước nhãn, ẩn với trình đọc màn hình', () => {
+    const { container } = render(MemoCard, { props: { concept: c({ memo: { gist: 'g', kind: 'tree', hook: 'h', tree } }) } });
+    const icons = [...container.querySelectorAll('.memo-icon')];
+    expect(icons.map((i) => i.textContent)).toEqual(['📜', '🏛️']);
+    expect(icons[0].getAttribute('aria-hidden')).toBe('true');
+  });
+});

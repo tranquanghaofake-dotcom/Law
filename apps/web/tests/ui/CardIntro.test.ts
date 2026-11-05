@@ -54,3 +54,18 @@ describe('CardIntro ba lớp', () => {
     expect(onanswer.mock.calls[0][0]).toMatchObject({ correct: true });
   });
 });
+
+describe('CardIntro: tình huống hỏi–đáp (memo.case)', () => {
+  const withCase: Concept = { ...concept, memo: { gist: 'Giao tiền trước để giữ chắc việc ký.', hook: 'Như giữ chỗ.', tree: [{ label: 'a' }, { label: 'b' }], case: { q: 'An đưa 5 triệu trước khi ký, đó là gì?', a: 'Là đặt cọc.' } } };
+  it('hiện câu hỏi, đáp ẩn tới khi bấm "Xem đáp"; thay đoạn ví dụ; bấm thì đọc đáp', async () => {
+    const onspeak = vi.fn();
+    const { container } = render(CardIntro, { props: { concept: withCase, item, rng, onanswer: vi.fn(), onspeak } });
+    expect(container.querySelector('.intro-example')).toBeNull();
+    expect(container.querySelector('.intro-case-q')?.textContent).toContain('An đưa 5 triệu');
+    expect(container.querySelector('.intro-case-a')).toBeNull();
+    await fireEvent.click(screen.getByRole('button', { name: 'Xem đáp' }));
+    expect(container.querySelector('.intro-case-a')?.textContent).toContain('Là đặt cọc.');
+    expect(onspeak).toHaveBeenLastCalledWith('Đáp: Là đặt cọc.');
+    expect(screen.queryByRole('button', { name: 'Xem đáp' })).toBeNull();
+  });
+});

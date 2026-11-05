@@ -42,11 +42,11 @@ export function gistOf(concept: Concept, item: StepItem): { lead: string; full: 
   return { lead, full: explain.length > lead.length + 10 ? explain : null, fromPlain: false };
 }
 
-export type Branch = { label: string; children: string[] };
+export type Branch = { label: string; children: string[]; icon?: string };
 
 /** Nhánh sơ đồ: sơ đồ do người soạn (`memo.tree`) nếu có, không thì ≤ 4 dấu hiệu (`keywords`). */
 export function branchesOf(concept: Concept): { authored: boolean; nodes: Branch[] } {
   const tree = concept.memo?.tree;
-  if (tree?.length) return { authored: true, nodes: tree.map((n) => ({ label: n.label, children: n.children ?? [] })) };
+  if (tree?.length) return { authored: true, nodes: tree.map((n) => ({ label: n.label, children: n.children ?? [], ...(n.icon ? { icon: n.icon } : {}) })) };
   return { authored: false, nodes: concept.keywords.filter((k) => k.trim()).slice(0, 4).map((label) => ({ label, children: [] })) };
 }

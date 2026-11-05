@@ -1853,12 +1853,15 @@ select.qz-sort { min-height: var(--ctl-h); padding: 0 var(--sp-3); border: 1px s
 /* ── Hiểu nhanh + hình theo loại khái niệm (thí điểm 05/11/2026) ── */
 .memo-gist { margin: 0 0 var(--sp-2); font-size: 1.12em; line-height: 1.5; font-weight: 600; color: var(--ink); }
 .memo-ladder, .memo-check, .memo-steps { list-style: none; margin: 0 0 var(--sp-2); padding: 0; display: grid; gap: 6px; }
-.memo-ladder li { margin-left: calc(var(--i) * 14px); padding: 4px var(--sp-2); border-left: 4px solid var(--seal); border-radius: 0 var(--r-sm) var(--r-sm) 0;
-  background: color-mix(in srgb, var(--seal) calc(14% - var(--i) * 2%), var(--card)); line-height: 1.4; animation: memo-in .32s var(--ease-out) both; animation-delay: calc(var(--i) * 70ms + 80ms); }
+.memo-ladder { gap: 0; }
+.memo-ladder li { position: relative; min-height: 30px; padding-left: calc(72px + var(--sp-2)); display: flex; align-items: center; line-height: 1.4; animation: memo-in .32s var(--ease-out) both; animation-delay: calc(var(--i) * 70ms + 80ms); }
+.memo-tier { position: absolute; left: 0; top: 0; width: 72px; height: 100%; display: block; }
+.memo-tier polygon { fill: color-mix(in srgb, var(--seal) calc(92% - var(--i) * 11%), var(--card)); stroke: var(--card); stroke-width: 3; vector-effect: non-scaling-stroke; }
+.memo-tier-t { align-self: center; padding: 3px 0; }
 .memo-check li { display: flex; gap: var(--sp-2); align-items: baseline; line-height: 1.45; animation: memo-in .32s var(--ease-out) both; animation-delay: calc(var(--i) * 70ms + 80ms); }
 .memo-tick { flex: none; display: inline-grid; place-items: center; width: 1.3em; height: 1.3em; border-radius: 50%; background: var(--ok); color: #fff; font-size: .8em; font-weight: 800; }
 .memo-steps li { display: flex; gap: var(--sp-2); align-items: baseline; line-height: 1.45; animation: memo-in .32s var(--ease-out) both; animation-delay: calc(var(--i) * 70ms + 80ms); }
-.memo-num { flex: none; display: inline-grid; place-items: center; width: 1.5em; height: 1.5em; border-radius: 50%; background: var(--seal); color: #fff4ea; font-size: .85em; font-weight: 800; }
+.memo-num { position: relative; flex: none; display: inline-grid; place-items: center; width: 1.5em; height: 1.5em; border-radius: 50%; background: var(--seal); color: #fff4ea; font-size: .85em; font-weight: 800; }
 .memo-compare { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-2); margin: 0 0 var(--sp-2); }
 .memo-col { padding: var(--sp-1) var(--sp-2); border: 1px solid var(--line); border-top: 4px solid var(--seal); border-radius: var(--r-sm); background: var(--card); }
 .memo-col + .memo-col { border-top-color: var(--accent); }
@@ -1866,3 +1869,13 @@ select.qz-sort { min-height: var(--ctl-h); padding: 0 var(--sp-3); border: 1px s
 .memo-col ul { margin: 0; padding-left: 1.1em; }
 .intro-changed { display: inline-flex; align-items: center; gap: var(--sp-1); min-height: 32px; padding: 0 var(--sp-2); margin: 0 var(--sp-2) var(--sp-2) 0; border: 1px solid color-mix(in srgb, var(--seal) 45%, var(--line)); border-radius: 999px;
   background: color-mix(in srgb, var(--seal) 7%, var(--card)); color: var(--seal); font: inherit; font-size: var(--fs-sm); font-weight: 700; cursor: pointer; }
+
+/* hình vẽ đợt 2: mũi tên nối bước, biểu tượng nhánh, tình huống hỏi–đáp, câu phân biệt */
+.memo-steps { gap: 14px; }
+.memo-arrow { position: absolute; top: calc(100% + 0px); left: 50%; transform: translateX(-50%); color: var(--seal); font-size: 12px; line-height: 14px; font-weight: 800; }
+.memo-icon { display: inline-block; margin-right: .3em; font-size: 1.05em; line-height: 1; }
+.intro-case { margin: var(--sp-2) 0; padding: var(--sp-2); border: 1px dashed color-mix(in srgb, var(--seal) 45%, var(--line)); border-radius: var(--r-sm); background: color-mix(in srgb, var(--seal) 5%, var(--card)); }
+.intro-case-q, .intro-case-a { margin: 0; line-height: 1.5; }
+.intro-case-a { margin-top: var(--sp-1); color: var(--ink); animation: memo-in .32s var(--ease-out) both; }
+.intro-case-btn { margin-top: var(--sp-1); min-height: 36px; }
+.why-contrast { margin: var(--sp-2) 0 0; line-height: 1.5; padding-left: var(--sp-2); border-left: 3px solid var(--accent); }

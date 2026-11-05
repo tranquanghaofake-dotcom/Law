@@ -72,7 +72,7 @@ describe('whyOf', () => {
   it('"dễ nhầm" chỉ khi dữ liệu đủ: cả hai bên ≥ 2 dấu hiệu; chọn đúng khái niệm đó thì picked', () => {
     const other = c({ id: 'hd', term: 'Hợp đồng thử việc', keywords: ['hủy bỏ không báo trước', 'lương ít nhất 85 %'] });
     const w = whyOf(c(), mcq('Q', 'A'), { correct: false, chosen: 'Hợp đồng thử việc', confusables: [other] })!;
-    expect(w.mixup).toEqual({ term: 'Hợp đồng thử việc', theirs: ['hủy bỏ không báo trước', 'lương ít nhất 85 %'], ours: ['chỉ thử việc một lần', '60 ngày', '30 ngày'], picked: true });
+    expect(w.mixup).toEqual({ id: 'hd', term: 'Hợp đồng thử việc', theirs: ['hủy bỏ không báo trước', 'lương ít nhất 85 %'], ours: ['chỉ thử việc một lần', '60 ngày', '30 ngày'], picked: true });
     expect(whyOf(c(), mcq('Q', 'A'), { correct: false, confusables: [other] })!.mixup).toBeNull(); // không chọn, không được nhắc → không gán
     expect(whyOf(c(), mcq('Hợp đồng thử việc khác gì?', 'A'), { correct: false, confusables: [other] })!.mixup?.picked).toBe(false); // có nhắc tên
     expect(whyOf(c(), mcq('Q', 'A'), { correct: false, confusables: [c({ id: 'x', keywords: ['một'] })] })!.mixup).toBeNull();
