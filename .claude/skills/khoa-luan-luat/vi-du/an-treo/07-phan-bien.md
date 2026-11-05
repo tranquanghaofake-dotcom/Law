@@ -19,3 +19,7 @@
 19. Kiểm đường ống lập pháp trước khi chấm phương án; một đề có điểm cấp thiết cao nhưng sẽ lỗi thời sau 4 tháng là đề yếu.
 20. Đề góp ý dự thảo: giới thực hành viết rất nhanh (bài LSVN ra trong vòng 2 tuần sau mỗi bản dự thảo) → tính mới gần như bằng 0.
 21. Khi dự thảo có nhiều phiên bản (26/6, 22/9, chỉnh lý 10/2026), ghi rõ đang dùng bản nào; điều khoản đổi số giữa các bản.
+
+## Phản biện độc lập — thư ký (subagent cách ly, 05/11/2026)
+⚠ Bảng tự chấm ở trên dùng **sai khung** (tự đặt nhóm "tính mới", "ứng dụng"); khung đúng xem `references/tieu-chi-cham.md`.
+Thư ký độc lập (chỉ tính phần đã viết, dữ liệu chưa thu chấm 0): **16/100**. Việc lợi điểm nhất: chờ biểu quyết rồi viết phần quy định lai so với tiền lệ NQ 41/2017/QH14; công bố sớm cho mùa 2028.

@@ -1,5 +1,6 @@
 # Phương án thực nghiệm (chưa thực hiện — KHÔNG có kết quả)
 
+**Vai trò**: chỉ là minh họa phụ cho hạn chế (iii); không kiểm chứng luận điểm chính về căn cứ xử lý dữ liệu.
 **Câu hỏi phụ**: người quảng cáo có ngừng gửi sau yêu cầu từ chối như khoản 4 Điều 13 NĐ 91/2020/NĐ-CP không?
 **Thiết kế**: thực nghiệm kiểm chứng (audit test) trên số điện thoại của chính người nghiên cứu.
 1. Trong 30 ngày, ghi lại mọi tin nhắn quảng cáo đến 01–02 số điện thoại của người nghiên cứu vào bảng ở Phụ lục 1 (không ghi số điện thoại người khác).

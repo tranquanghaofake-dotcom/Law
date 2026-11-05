@@ -21,7 +21,7 @@ Tuy vậy, chủ thể mang nghĩa vụ trong câu trên là bên "đang quản 
 [^3]: Điểm đ khoản 2 Điều 80 Luật số 106/2025/QH15.
 [^4]: Điểm b khoản 2 Điều 7 Luật số 106/2025/QH15.
 [^5]: Khoản 1 Điều 37 Luật số 106/2025/QH15.
-[^6]: Hoàng Thu Thủy (2026), "Quy định mới về áp dụng biện pháp bảo đảm thi hành án của Luật Thi hành án dân sự 2025 và Nghị định số 152/2026/NĐ-CP", Cổng thông tin Tổng cục THADS, đăng 24/6/2026, https://thads.moj.gov.vn (truy cập 05/11/2026). Bản gốc Luật số 26/2008/QH12 chỉ cho phong tỏa "tiền trong tài khoản" (khoản 1 Điều 67, chinhphu.vn); 
+[^6]: Hoàng Thu Thủy (2026), "Quy định mới về áp dụng biện pháp bảo đảm thi hành án của Luật Thi hành án dân sự 2025 và Nghị định số 152/2026/NĐ-CP", Cổng thông tin Tổng cục THADS, đăng 24/6/2026, https://thads.moj.gov.vn (truy cập 05/11/2026).
 [^7]: Điểm c khoản 4 Điều 37 Luật số 106/2025/QH15.
 [^8]: Nghị quyết số 05/2025/NQ-CP ngày 09/9/2025 của Chính phủ về triển khai thí điểm thị trường tài sản mã hóa tại Việt Nam, khoản 6 Điều 3 (Giải thích từ ngữ) (ketoananpha.vn, truy cập 05/11/2026).
 [^9]: Khoản 1 Điều 67 Luật Thi hành án dân sự số 26/2008/QH12, văn bản hợp nhất trên quochoi.vn (ItemID=93155, truy cập 05/11/2026); văn bản hợp nhất cuối cùng là số 115/VBHN-VPQH ngày 27/8/2025 [CẦN KIỂM: đối chiếu Điều 67 trong bản 115].

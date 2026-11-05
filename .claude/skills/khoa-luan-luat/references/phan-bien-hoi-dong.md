@@ -32,6 +32,7 @@ Mỗi vai đọc toàn bài, **không đọc nhận xét của vai khác trướ
 
 ## Phiếu kết quả (07-phan-bien.md)
 
+Dùng **đúng khung của cuộc thi** trong `tieu-chi-cham.md`; không tự đặt nhóm tiêu chí. Giải Bộ GD&ĐT (Điều 13 khoản 2 TT 45/2020): Tổng quan 10 · Nội dung 20 · Phương pháp 15 · Kết quả 40 · Hình thức báo cáo 5 · Công bố 10 (không có mục "tính mới" hay "ứng dụng" riêng; tính mới chấm trong Tổng quan và Kết quả). Chạy thử: 3 phiếu tự chấm dùng sai khung, cả 2 agent thư ký độc lập đều phát hiện.
 ```
 | Tiêu chí | Tối đa | Điểm | Lý do | Sửa để tăng điểm |
 Tổng: …/100 → xếp loại dự kiến: …

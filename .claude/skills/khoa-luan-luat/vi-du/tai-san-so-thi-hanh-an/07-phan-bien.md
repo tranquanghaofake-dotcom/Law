@@ -41,3 +41,7 @@
 - Bản hợp nhất Điều 67 Luật 2008 đã áp dụng cho "tài sản gửi giữ" → câu "luật mới mở rộng phong tỏa tới tài sản ngoài tiền" là quá mức; đã viết lại 2.3.1 và chỉ ra nhận định của bài cơ quan chỉ đúng so với thực tiễn. Đây đúng là trường hợp kiểm tra `khang-dinh-so-sanh-khong-nguon` nhắm tới: nguồn thứ cấp có uy tín vẫn có thể so sai.
 - Điểm: Kết quả 24 → 26 (so sánh đúng văn bản). **Tổng 63/100.**
 27. Nguồn thứ cấp của chính cơ quan áp dụng luật (bài của Tổng cục THADS) vẫn có thể mô tả sai mức thay đổi so với luật cũ → so trực tiếp với VBHN.
+
+## Phản biện độc lập — thư ký (subagent cách ly, 05/11/2026)
+⚠ Bảng tự chấm ở trên dùng **sai khung** (tự đặt nhóm "tính mới", "ứng dụng"); khung đúng xem `references/tieu-chi-cham.md`.
+Thư ký độc lập (chỉ tính phần đã viết, dữ liệu chưa thu chấm 0): **32/100**. Xếp **thứ nhất** về tiềm năng trong 3 đề (nền pháp lý ổn định, câu hỏi có/không, kiến nghị lập pháp tự nhiên). Việc lợi điểm nhất: lấy toàn văn bài học thuật; viết kiến nghị (giao nộp khóa riêng, chỉ định địa chỉ nhận, quy chế lưu ký).

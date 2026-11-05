@@ -40,3 +40,7 @@ Bảng này lộ 2 luận điểm vượt bằng chứng (L1, L3) mà script kh�
 - Lỗi suýt mắc: nếu không tra, đã dùng định nghĩa bản gốc 2012 ("hợp đồng cung ứng dịch vụ quảng cáo với người quảng cáo") trong khi bản hiện hành đã sửa từ 01/01/2026.
 - Kết quả 18 → 23; Tính mới 12 → 13 (lõi lý luận rõ hơn). **Tổng 61/100.**
 30. Nguồn thứ cấp (ketoananpha.vn, hethongphapluat.com) dùng được để định hướng, nhưng footnote phải ghi đúng trang đã đọc và giữ nhãn đối chiếu vbpl.vn; vbpl.vn và thuvienphapluat chặn curl trong container.
+
+## Phản biện độc lập — thư ký (subagent cách ly, 05/11/2026)
+⚠ Bảng tự chấm ở trên dùng **sai khung** (tự đặt nhóm "tính mới", "ứng dụng"); khung đúng xem `references/tieu-chi-cham.md`.
+Thư ký độc lập (chỉ tính phần đã viết, dữ liệu chưa thu chấm 0): **33/100**. Thực nghiệm kiểm câu hỏi phụ, không kiểm luận điểm chính → ghi rõ là minh họa phụ. Khẳng định về Điều 19 dựa trên nguồn thứ cấp → giữ nhãn đối chiếu vbpl.vn.

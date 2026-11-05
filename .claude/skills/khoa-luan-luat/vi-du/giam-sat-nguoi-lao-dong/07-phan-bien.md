@@ -42,3 +42,6 @@ Còn thiếu để ≥ 85: khảo sát nội quy, chính sách nhân sự (giả
 16. Cổng pha 2 cần **tối thiểu nguồn học thuật** (≥ 5 bài tạp chí, sách hoặc luận án), không chỉ tổng số nguồn.
 17. Nguồn có thể **tự sai** (bài #H dẫn "BLDS 2025"). Không chép dẫn chiếu của người khác khi chưa đối chiếu văn bản.
 18. Ghi chú tự đặt trong ngoặc vuông lọt qua script → thêm lỗi `ghi-chu-ngoac-vuong`.
+
+## Sau phản biện độc lập (05/11/2026)
+Điểm 71 ở trên là tự chấm theo **khung sai** và tính cả phần chưa viết. Ba subagent cách ly: **47/100** (xem `07-phan-bien-doc-lap.md`).

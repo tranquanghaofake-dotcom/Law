@@ -27,3 +27,13 @@ Mỗi agent chỉ được đọc bài, phụ lục, file nguồn và khuôn ph�
 - trích trong **footnote** bị bỏ qua (để không bắt nhầm tên bài) → cụm ở [^7], [^9] không được đối chiếu;
 - **sự kiện** không đặt trong ngoặc kép (trần theo % tổng tài sản, "khắc phục trong 30 ngày", "sửa án sơ thẩm") không đo được bằng so khớp chuỗi;
 - **khai đã kiểm** ("theo VBHN …") là lời tự mô tả, script không biết người viết đã đọc gì.
+
+## Đã sửa theo phản biện (vòng 2, 05/11/2026)
+| Góp ý | Tiêu chí đóng | Trạng thái |
+|---|---|---|
+| Học thuật G3: ủy quyền lại cho HĐQT | 2.2.2 có đoạn riêng; câu về Bộ Tài chính giới hạn đúng phạm vi | **đạt một phần** — có đoạn, còn CẦN KIỂM điều về thẩm quyền ĐHĐCĐ |
+| Thực tiễn G4: phân tầng loại giao dịch | có câu nối danh sách VTX với điểm b k3 Điều 167 và giới hạn SGX | **đạt** |
+| Học thuật G1: dòng thời gian | ghi rõ nguồn ứng với bản Điều 293 nào | **đạt** (đoạn dòng thời gian trong 2.2.2) |
+| Thực tiễn G3: ai kiện, thời hạn, bên thứ ba | 2.2.4 nêu thành biến số rủi ro | **đạt một phần** — hạn chế (v), còn CẦN KIỂM điều về hủy nghị quyết |
+| Học thuật G2: [^2] khai đã đối chiếu VBHN | chú thích đúng nguồn đã đọc | **đạt** |
+| G6, G7 (dữ liệu thực thi, khảo sát N ≥ 20) | — | **chưa** — cần người dùng thu dữ liệu |
