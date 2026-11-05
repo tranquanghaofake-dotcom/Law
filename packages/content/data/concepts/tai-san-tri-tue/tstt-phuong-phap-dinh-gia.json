@@ -22,6 +22,33 @@
   "giao dịch tương đương",
   "thị trường"
  ],
+ "memo": {
+  "hook": "Ba cách: CHI PHÍ (đã bỏ ra) – THU NHẬP (sẽ đem lại) – THỊ TRƯỜNG (so giá).",
+  "tree": [
+   {
+    "label": "Chi phí",
+    "children": [
+     "Chi phí quá khứ",
+     "Chi phí thay thế",
+     "Dễ tính, kém khách quan"
+    ]
+   },
+   {
+    "label": "Thu nhập",
+    "children": [
+     "Lợi ích kinh tế mang lại",
+     "Khó dự báo"
+    ]
+   },
+   {
+    "label": "Thị trường",
+    "children": [
+     "So với giao dịch tương đương",
+     "Cần thị trường đủ dữ liệu"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

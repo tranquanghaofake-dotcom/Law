@@ -20,6 +20,24 @@
   "Sở giao dịch chứng khoán Việt Nam và công ty con",
   "không tổ chức, cá nhân nào khác"
  ],
+ "memo": {
+  "hook": "Chỉ SỞ GIAO DỊCH Việt Nam và công ty con (HOSE, HNX) được tổ chức thị trường.",
+  "tree": [
+   {
+    "label": "Được phép",
+    "children": [
+     "Sở giao dịch chứng khoán Việt Nam",
+     "Công ty con: HOSE, HNX"
+    ]
+   },
+   {
+    "label": "Cấm",
+    "children": [
+     "Mọi tổ chức, cá nhân khác"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

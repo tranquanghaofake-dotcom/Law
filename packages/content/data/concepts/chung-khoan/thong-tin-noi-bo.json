@@ -20,6 +20,37 @@
   "chưa được công bố",
   "ảnh hưởng lớn đến giá"
  ],
+ "memo": {
+  "hook": "Thông tin nội bộ: CHƯA CÔNG BỐ + có thể ẢNH HƯỞNG LỚN đến giá.",
+  "tree": [
+   {
+    "label": "Dấu hiệu",
+    "children": [
+     "Chưa được công bố",
+     "Ảnh hưởng lớn đến giá"
+    ]
+   },
+   {
+    "label": "Ví dụ",
+    "children": [
+     "Kết quả kinh doanh đột biến",
+     "Sắp sáp nhập"
+    ]
+   },
+   {
+    "label": "Hết là nội bộ",
+    "children": [
+     "Khi đã công bố"
+    ]
+   },
+   {
+    "label": "Phân biệt",
+    "children": [
+     "Người nội bộ"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

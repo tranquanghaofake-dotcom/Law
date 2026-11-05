@@ -23,6 +23,36 @@
   "có chứa quy phạm luật Hiến pháp"
  ],
  "note": "Thẻ dạng tóm lược quan điểm học thuật, chưa đối chiếu nguyên văn giáo trình; cần Hào đối chiếu trang 1–9 của sách.",
+ "memo": {
+  "hook": "Tiêu chí là CÓ CHỨA quy phạm luật Hiến pháp, không phụ thuộc tên gọi.",
+  "tree": [
+   {
+    "label": "Nguồn chủ yếu",
+    "children": [
+     "Hiến pháp"
+    ]
+   },
+   {
+    "label": "Luật",
+    "children": [
+     "Tổ chức bộ máy nhà nước",
+     "Bầu cử, Quốc tịch, Trưng cầu ý dân"
+    ]
+   },
+   {
+    "label": "Nghị quyết",
+    "children": [
+     "Của Quốc hội"
+    ]
+   },
+   {
+    "label": "Văn bản khác",
+    "children": [
+     "Pháp lệnh, nghị quyết Ủy ban thường vụ"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -23,6 +23,27 @@
   "chỉ áp dụng theo yêu cầu",
   "trước khi sơ thẩm ra bản án"
  ],
+ "memo": {
+  "hook": "Tòa KHÔNG tự áp dụng thời hiệu; chỉ khi có YÊU CẦU trước khi xử sơ thẩm.",
+  "tree": [
+   {
+    "label": "Bốn loại",
+    "children": [
+     "Hưởng quyền",
+     "Miễn trừ nghĩa vụ",
+     "Khởi kiện",
+     "Yêu cầu việc dân sự"
+    ]
+   },
+   {
+    "label": "Áp dụng",
+    "children": [
+     "Chỉ theo yêu cầu",
+     "Trước khi sơ thẩm ra bản án"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

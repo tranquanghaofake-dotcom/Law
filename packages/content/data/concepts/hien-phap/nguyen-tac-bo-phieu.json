@@ -22,6 +22,37 @@
   "viết hộ nhưng tự bỏ phiếu",
   "hòm phiếu phụ"
  ],
+ "memo": {
+  "hook": "Nhờ VIẾT hộ được, nhưng phải TỰ BỎ phiếu.",
+  "tree": [
+   {
+    "label": "Số phiếu",
+    "children": [
+     "Một phiếu cho mỗi cấp"
+    ]
+   },
+   {
+    "label": "Tự đi bầu",
+    "children": [
+     "Xuất trình thẻ cử tri",
+     "Không nhờ bầu thay"
+    ]
+   },
+   {
+    "label": "Ngoại lệ",
+    "children": [
+     "Không tự viết được: nhờ viết hộ",
+     "Ốm đau, già yếu: hòm phiếu phụ"
+    ]
+   },
+   {
+    "label": "Bí mật",
+    "children": [
+     "Không ai được xem khi viết phiếu"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

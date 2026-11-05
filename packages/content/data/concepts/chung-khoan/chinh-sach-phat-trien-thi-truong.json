@@ -21,6 +21,32 @@
   "khuyến khích trong nước, nước ngoài",
   "công bằng, công khai, minh bạch, an toàn, hiệu quả"
  ],
+ "memo": {
+  "hook": "Chứng khoán là kênh vốn TRUNG, DÀI HẠN, bổ sung cho ngân hàng.",
+  "tree": [
+   {
+    "label": "Vai trò",
+    "children": [
+     "Huy động vốn trung, dài hạn",
+     "Bổ sung tín dụng ngân hàng"
+    ]
+   },
+   {
+    "label": "Nhà nước",
+    "children": [
+     "Khuyến khích trong, ngoài nước",
+     "Quản lý, giám sát"
+    ]
+   },
+   {
+    "label": "Mục tiêu",
+    "children": [
+     "Công bằng, công khai",
+     "Minh bạch, an toàn"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

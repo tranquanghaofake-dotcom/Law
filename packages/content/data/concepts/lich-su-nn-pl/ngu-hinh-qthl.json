@@ -25,6 +25,37 @@
   "tử",
   "722 điều"
  ],
+ "memo": {
+  "hook": "NGŨ HÌNH từ nhẹ đến nặng: XUY – TRƯỢNG – ĐỒ – LƯU – TỬ.",
+  "tree": [
+   {
+    "label": "Đánh",
+    "children": [
+     "Xuy: đánh roi",
+     "Trượng: đánh trượng"
+    ]
+   },
+   {
+    "label": "Lao dịch, đày",
+    "children": [
+     "Đồ: lao dịch",
+     "Lưu: đày xa"
+    ]
+   },
+   {
+    "label": "Nặng nhất",
+    "children": [
+     "Tử"
+    ]
+   },
+   {
+    "label": "Bộ luật",
+    "children": [
+     "Quốc triều hình luật, 722 điều"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

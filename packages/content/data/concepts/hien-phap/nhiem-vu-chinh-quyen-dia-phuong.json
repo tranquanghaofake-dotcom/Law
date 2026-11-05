@@ -23,6 +23,36 @@
   "phân định thẩm quyền",
   "kiểm tra, giám sát của cấp trên"
  ],
+ "memo": {
+  "hook": "Ba vai trò: THI HÀNH, QUYẾT ĐỊNH, chịu GIÁM SÁT.",
+  "tree": [
+   {
+    "label": "Thi hành",
+    "children": [
+     "Hiến pháp, pháp luật ở địa phương"
+    ]
+   },
+   {
+    "label": "Quyết định",
+    "children": [
+     "Vấn đề địa phương do luật định"
+    ]
+   },
+   {
+    "label": "Chịu",
+    "children": [
+     "Kiểm tra, giám sát của cấp trên"
+    ]
+   },
+   {
+    "label": "Nguyên tắc",
+    "children": [
+     "Phân định thẩm quyền trung ương – địa phương",
+     "Cấp trên có thể ủy quyền kèm bảo đảm"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

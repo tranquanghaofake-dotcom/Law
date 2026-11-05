@@ -23,6 +23,31 @@
   "một phiếu biểu quyết",
   "không phụ thuộc vào phần vốn góp"
  ],
+ "memo": {
+  "hook": "Trần vốn 30% (liên hiệp 40%) + MỖI thành viên MỘT phiếu.",
+  "tree": [
+   {
+    "label": "Vốn góp tối đa",
+    "children": [
+     "HTX: ≤ 30% vốn điều lệ",
+     "Liên hiệp: ≤ 40%"
+    ]
+   },
+   {
+    "label": "Biểu quyết",
+    "children": [
+     "Mỗi thành viên một phiếu",
+     "Không phụ thuộc vốn"
+    ]
+   },
+   {
+    "label": "Vượt trần 12 tháng",
+    "children": [
+     "Có thể bị thu hồi giấy"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

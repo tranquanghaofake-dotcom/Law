@@ -23,6 +23,38 @@
   "biện pháp xử lý hành chính"
  ],
  "note": "Luật 83/2025/QH15 (hiệu lực 01/7/2025) thay từ \"thị trấn\" bằng \"đặc khu\" tại khoản 5 Điều 37, phù hợp với mô hình chính quyền địa phương 2 cấp (tỉnh, xã). Giáo trình in trước 2025 còn ghi \"giáo dục tại xã, phường, thị trấn\".",
+ "memo": {
+  "hook": "Bị KHỞI TỐ vẫn có thể được BẦU cử nhưng KHÔNG được ỨNG cử.",
+  "tree": [
+   {
+    "label": "Theo Tòa án",
+    "children": [
+     "Bị tước quyền ứng cử",
+     "Đang chấp hành án tù"
+    ]
+   },
+   {
+    "label": "Năng lực",
+    "children": [
+     "Bị hạn chế hoặc mất năng lực hành vi"
+    ]
+   },
+   {
+    "label": "Hình sự",
+    "children": [
+     "Đang bị khởi tố bị can",
+     "Đang chấp hành bản án",
+     "Chưa được xóa án tích"
+    ]
+   },
+   {
+    "label": "Hành chính",
+    "children": [
+     "Đang chấp hành biện pháp xử lý hành chính"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

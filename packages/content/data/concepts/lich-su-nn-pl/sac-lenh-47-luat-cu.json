@@ -24,6 +24,30 @@
   "chính thể dân chủ cộng hòa"
  ],
  "note": "Văn bản đã hết hiệu lực; học để hiểu lịch sử pháp luật.",
+ "memo": {
+  "hook": "Sắc lệnh 47 (10/10/1945): TẠM GIỮ luật cũ nếu KHÔNG TRÁI độc lập, dân chủ.",
+  "tree": [
+   {
+    "label": "Mốc",
+    "children": [
+     "10/10/1945"
+    ]
+   },
+   {
+    "label": "Nội dung",
+    "children": [
+     "Tạm giữ luật lệ cũ"
+    ]
+   },
+   {
+    "label": "Điều kiện",
+    "children": [
+     "Không trái nền độc lập",
+     "Không trái chính thể dân chủ cộng hòa"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

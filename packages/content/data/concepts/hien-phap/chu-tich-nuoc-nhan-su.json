@@ -22,6 +22,27 @@
   "căn cứ nghị quyết Quốc hội bổ nhiệm Bộ trưởng",
   "Chánh án, Viện trưởng"
  ],
+ "memo": {
+  "hook": "Mô hình ĐỀ NGHỊ → Quốc hội quyết → CĂN CỨ đó BỔ NHIỆM.",
+  "tree": [
+   {
+    "label": "Đề nghị Quốc hội bầu",
+    "children": [
+     "Phó Chủ tịch nước",
+     "Thủ tướng",
+     "Chánh án, Viện trưởng tối cao"
+    ]
+   },
+   {
+    "label": "Bổ nhiệm theo nghị quyết",
+    "children": [
+     "Phó Thủ tướng",
+     "Bộ trưởng, thành viên Chính phủ",
+     "Thẩm phán Tòa án nhân dân tối cao"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

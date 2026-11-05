@@ -22,6 +22,38 @@
   "trước khi sơ thẩm ra bản án",
   "quyền từ chối áp dụng thời hiệu"
  ],
+ "memo": {
+  "hook": "Tòa chỉ áp dụng thời hiệu khi CÓ YÊU CẦU, trước khi xử SƠ THẨM.",
+  "tree": [
+   {
+    "label": "Căn cứ",
+    "children": [
+     "Theo Bộ luật Dân sự",
+     "Luật chuyên ngành"
+    ]
+   },
+   {
+    "label": "Điều kiện áp dụng",
+    "children": [
+     "Có yêu cầu của đương sự",
+     "Trước khi sơ thẩm ra bản án"
+    ]
+   },
+   {
+    "label": "Người hưởng lợi",
+    "children": [
+     "Được từ chối áp dụng",
+     "Trừ để trốn nghĩa vụ"
+    ]
+   },
+   {
+    "label": "Hết thời hiệu",
+    "children": [
+     "Đình chỉ giải quyết"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

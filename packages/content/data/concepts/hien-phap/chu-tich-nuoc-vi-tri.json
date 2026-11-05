@@ -22,6 +22,34 @@
   "thay mặt về đối nội và đối ngoại",
   "nguyên thủ quốc gia"
  ],
+ "memo": {
+  "hook": "Đứng đầu NHÀ NƯỚC, không phải đứng đầu Chính phủ.",
+  "tree": [
+   {
+    "label": "Vị trí",
+    "children": [
+     "Người đứng đầu Nhà nước",
+     "Nguyên thủ quốc gia"
+    ]
+   },
+   {
+    "label": "Thay mặt",
+    "children": [
+     "Đối nội",
+     "Đối ngoại"
+    ]
+   },
+   {
+    "label": "Quyền hạn trải rộng",
+    "children": [
+     "Lập pháp",
+     "Hành pháp",
+     "Tư pháp",
+     "Quốc phòng"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

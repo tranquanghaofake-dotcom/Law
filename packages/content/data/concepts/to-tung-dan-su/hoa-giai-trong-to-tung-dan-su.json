@@ -22,6 +22,39 @@
   "không vi phạm điều cấm",
   "trừ vụ án không được hòa giải"
  ],
+ "memo": {
+  "hook": "Hòa giải là BẮT BUỘC trước xét xử sơ thẩm, trừ việc KHÔNG ĐƯỢC hòa giải.",
+  "tree": [
+   {
+    "label": "Vị trí",
+    "children": [
+     "Nguyên tắc",
+     "Thủ tục bắt buộc khi chuẩn bị xét xử"
+    ]
+   },
+   {
+    "label": "Nguyên tắc",
+    "children": [
+     "Tự nguyện",
+     "Không vi phạm điều cấm"
+    ]
+   },
+   {
+    "label": "Ngoại lệ",
+    "children": [
+     "Vụ án không được hòa giải",
+     "Không tiến hành được",
+     "Thủ tục rút gọn"
+    ]
+   },
+   {
+    "label": "Hòa giải thành",
+    "children": [
+     "Quyết định công nhận sau 07 ngày"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

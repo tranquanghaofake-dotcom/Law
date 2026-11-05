@@ -23,6 +23,37 @@
   "chủ sở hữu là Nhà nước"
  ],
  "note": "Điều 4, 79 có nội dung được sửa đổi, bổ sung bởi Luật 36/2009/QH12 (hiệu lực 01/01/2010); Luật 07/2022/QH15 (hiệu lực 01/01/2023); Luật 131/2025/QH15 (hiệu lực 01/4/2026) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
+ "memo": {
+  "hook": "Chất lượng DO ĐỊA LÝ quyết định; chủ sở hữu là NHÀ NƯỚC.",
+  "tree": [
+   {
+    "label": "Điều kiện",
+    "children": [
+     "Nguồn gốc địa lý tương ứng",
+     "Chất lượng do điều kiện địa lý quyết định"
+    ]
+   },
+   {
+    "label": "Yếu tố địa lý",
+    "children": [
+     "Tự nhiên: khí hậu, thổ nhưỡng",
+     "Con người: kỹ năng truyền thống"
+    ]
+   },
+   {
+    "label": "Chủ sở hữu",
+    "children": [
+     "Nhà nước"
+    ]
+   },
+   {
+    "label": "Thời hạn",
+    "children": [
+     "Vô thời hạn"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

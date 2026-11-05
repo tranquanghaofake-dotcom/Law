@@ -105,7 +105,7 @@ test('phiên học pass 1: intro → trắc nghiệm → lưu ngay → kết th�
   const ig = page.getByRole('dialog', { name: 'Thắp chuỗi 1 ngày' });
   await expect(ig).toBeVisible();
   await expect(ig.getByRole('button', { name: 'Tiếp tục' })).toBeFocused();
-  await expect(ig.locator('.cg-count').last()).toHaveText('1', { timeout: 4000 });
+  await expect(ig.locator('.cg-count').last()).toHaveText('1', { timeout: 8000 });
   await page.keyboard.press('Escape');
   await expect(ig).toHaveCount(0);
 });

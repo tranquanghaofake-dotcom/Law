@@ -22,6 +22,31 @@
   "kiện tụng oan uổng",
   "vua xét xử tối cao"
  ],
+ "memo": {
+  "hook": "1029: đặt LẦU CHUÔNG để dân kêu oan thẳng lên VUA.",
+  "tree": [
+   {
+    "label": "Mốc",
+    "children": [
+     "1029, Lý Thái Tông"
+    ]
+   },
+   {
+    "label": "Thiết chế",
+    "children": [
+     "Lầu chuông hai bên thềm rồng"
+    ]
+   },
+   {
+    "label": "Ý nghĩa",
+    "children": [
+     "Quyền kêu oan trực tiếp",
+     "Vua xét xử tối cao",
+     "Tư tưởng thân dân"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

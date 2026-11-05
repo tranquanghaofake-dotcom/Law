@@ -21,6 +21,33 @@
   "chào bán hoặc niêm yết",
   "tài liệu hoặc dữ liệu điện tử"
  ],
+ "memo": {
+  "hook": "Bản cáo bạch = HỒ SƠ BỆNH ÁN của đợt chào bán; sai lệch thì bị ĐÌNH CHỈ, HỦY.",
+  "tree": [
+   {
+    "label": "Yêu cầu",
+    "children": [
+     "Chính xác",
+     "Trung thực, khách quan"
+    ]
+   },
+   {
+    "label": "Dùng khi",
+    "children": [
+     "Chào bán",
+     "Niêm yết"
+    ]
+   },
+   {
+    "label": "Nội dung",
+    "children": [
+     "Tổ chức phát hành",
+     "Rủi ro",
+     "Kế hoạch dùng tiền"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

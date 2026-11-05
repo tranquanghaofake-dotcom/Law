@@ -23,6 +23,36 @@
   "phối hợp động viên Nhân dân",
   "mời dự kỳ họp"
  ],
+ "memo": {
+  "hook": "Ba cơ chế: THÔNG BÁO, LẮNG NGHE, PHỐI HỢP.",
+  "tree": [
+   {
+    "label": "Thông báo",
+    "children": [
+     "Tình hình địa phương cho Mặt trận"
+    ]
+   },
+   {
+    "label": "Lắng nghe",
+    "children": [
+     "Ý kiến, kiến nghị"
+    ]
+   },
+   {
+    "label": "Phối hợp",
+    "children": [
+     "Động viên Nhân dân"
+    ]
+   },
+   {
+    "label": "Mời dự",
+    "children": [
+     "Kỳ họp Hội đồng nhân dân",
+     "Hội nghị Ủy ban nhân dân"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -21,6 +21,25 @@
   "tập hợp lệnh mua, bán",
   "thị trường thứ cấp"
  ],
+ "memo": {
+  "hook": "Thị trường không nhất thiết là SÀN VẬT LÝ: chỉ cần nơi/cách TẬP HỢP LỆNH.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Địa điểm hoặc hình thức",
+     "Tập hợp lệnh mua, bán"
+    ]
+   },
+   {
+    "label": "Lý luận",
+    "children": [
+     "Sơ cấp: phát hành",
+     "Thứ cấp: mua bán lại"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

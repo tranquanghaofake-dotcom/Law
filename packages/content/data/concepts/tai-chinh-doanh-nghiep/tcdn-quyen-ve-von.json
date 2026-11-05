@@ -25,6 +25,36 @@
   "từ chối cung cấp nguồn lực"
  ],
  "note": "Luật Doanh nghiệp 59/2020/QH14 có hiệu lực từ 01/01/2021, thay thế Luật Doanh nghiệp 2014 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 03/2022/QH15 và Luật 76/2025/QH15 (hiệu lực 01/7/2025) — văn bản hợp nhất 67/VBHN-VPQH 2025.",
+ "memo": {
+  "hook": "Doanh nghiệp TỰ CHỦ: tự huy động, tự dùng vốn, được TỪ CHỐI đóng góp trái luật.",
+  "tree": [
+   {
+    "label": "Vốn",
+    "children": [
+     "Chọn cách huy động",
+     "Phân bổ, sử dụng"
+    ]
+   },
+   {
+    "label": "Tài sản",
+    "children": [
+     "Chiếm hữu, sử dụng, định đoạt"
+    ]
+   },
+   {
+    "label": "Được từ chối",
+    "children": [
+     "Yêu cầu nguồn lực trái pháp luật"
+    ]
+   },
+   {
+    "label": "Giới hạn",
+    "children": [
+     "Doanh nghiệp có vốn nhà nước"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -24,6 +24,38 @@
   "xã trưởng",
   "Quảng Nam (1471)"
  ],
+ "memo": {
+  "hook": "1466: chia 13 ĐẠO THỪA TUYÊN; lộ → PHỦ, trấn → CHÂU, xã quan → XÃ TRƯỞNG.",
+  "tree": [
+   {
+    "label": "Mốc",
+    "children": [
+     "1466; thêm Quảng Nam 1471"
+    ]
+   },
+   {
+    "label": "Chia",
+    "children": [
+     "12 đạo",
+     "Phủ Trung Đô"
+    ]
+   },
+   {
+    "label": "Đổi tên",
+    "children": [
+     "Lộ → phủ",
+     "Trấn → châu",
+     "Xã quan → xã trưởng"
+    ]
+   },
+   {
+    "label": "Mỗi thừa tuyên",
+    "children": [
+     "Ba ty"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

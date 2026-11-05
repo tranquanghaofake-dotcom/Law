@@ -22,6 +22,33 @@
   "tính lại",
   "truy nã"
  ],
+ "memo": {
+  "hook": "Thời hiệu 5 – 10 – 15 – 20 NĂM theo bốn loại tội, tính từ ngày phạm tội.",
+  "tree": [
+   {
+    "label": "Mức",
+    "children": [
+     "Ít nghiêm trọng: 05 năm",
+     "Nghiêm trọng: 10 năm",
+     "Rất nghiêm trọng: 15 năm",
+     "Đặc biệt nghiêm trọng: 20 năm"
+    ]
+   },
+   {
+    "label": "Tính lại",
+    "children": [
+     "Phạm tội mới",
+     "Trốn tránh, bị truy nã"
+    ]
+   },
+   {
+    "label": "Mốc",
+    "children": [
+     "Từ ngày tội phạm thực hiện"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

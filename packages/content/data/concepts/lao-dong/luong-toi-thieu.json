@@ -22,6 +22,37 @@
   "theo vùng",
   "theo tháng, giờ"
  ],
+ "memo": {
+  "hook": "Lương tối thiểu là MỨC SÀN, theo VÙNG, theo THÁNG và GIỜ.",
+  "tree": [
+   {
+    "label": "Áp dụng",
+    "children": [
+     "Công việc giản đơn nhất",
+     "Điều kiện bình thường"
+    ]
+   },
+   {
+    "label": "Mục tiêu",
+    "children": [
+     "Mức sống tối thiểu của người lao động và gia đình"
+    ]
+   },
+   {
+    "label": "Cách xác lập",
+    "children": [
+     "Theo vùng",
+     "Theo tháng, theo giờ"
+    ]
+   },
+   {
+    "label": "Ai quyết định",
+    "children": [
+     "Chính phủ, theo Hội đồng tiền lương"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

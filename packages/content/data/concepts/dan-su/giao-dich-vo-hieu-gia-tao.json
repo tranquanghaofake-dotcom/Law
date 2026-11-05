@@ -22,6 +22,25 @@
   "giả tạo",
   "giao dịch bị che giấu"
  ],
+ "memo": {
+  "hook": "GIẢ TẠO vô hiệu, giao dịch BỊ CHE GIẤU vẫn có hiệu lực nếu hợp pháp.",
+  "tree": [
+   {
+    "label": "Vi phạm điều cấm",
+    "children": [
+     "Mục đích, nội dung bị cấm",
+     "Trái đạo đức xã hội"
+    ]
+   },
+   {
+    "label": "Giả tạo",
+    "children": [
+     "Giao dịch giả tạo vô hiệu",
+     "Giao dịch bị che giấu xét riêng"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

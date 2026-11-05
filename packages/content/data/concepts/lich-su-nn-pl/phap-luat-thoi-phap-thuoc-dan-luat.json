@@ -25,6 +25,31 @@
   "Dụ của vua"
  ],
  "note": "Các bộ luật nêu ở đây đã hết hiệu lực; Sắc lệnh 47 chỉ tạm giữ chúng sau năm 1945.",
+ "memo": {
+  "hook": "Dân luật Pháp thuộc chia BA KHỐI: Bắc Kỳ 1931, Trung Kỳ 1936–1939, Nam Kỳ giữ cũ.",
+  "tree": [
+   {
+    "label": "Bắc Kỳ",
+    "children": [
+     "Dân luật Bắc kỳ 1931",
+     "Nghị định Thống sứ, Toàn quyền"
+    ]
+   },
+   {
+    "label": "Trung Kỳ",
+    "children": [
+     "Dân luật Trung kỳ 1936–1939",
+     "Dụ của vua"
+    ]
+   },
+   {
+    "label": "Nam Kỳ",
+    "children": [
+     "Luật hộ giữ như cũ"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

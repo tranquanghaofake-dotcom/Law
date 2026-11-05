@@ -22,6 +22,30 @@
   "lựa chọn, giới thiệu người ứng cử",
   "giám sát"
  ],
+ "memo": {
+  "hook": "Người ứng cử, kể cả TỰ ỨNG CỬ, đều qua HIỆP THƯƠNG.",
+  "tree": [
+   {
+    "label": "Chủ trì",
+    "children": [
+     "Mặt trận Tổ quốc"
+    ]
+   },
+   {
+    "label": "Hiệp thương",
+    "children": [
+     "Lựa chọn, giới thiệu người ứng cử",
+     "Lấy ý kiến cử tri"
+    ]
+   },
+   {
+    "label": "Giám sát",
+    "children": [
+     "Việc bầu cử"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -44,6 +44,8 @@ export function countAt(from: number, to: number, p: number): number {
 export const TIMING = {
   /** dấu chạm mặt giấy (đồng bộ với keyframes của ComboStamp) */
   stampLand: 130,
+  /** dấu "ĐÚNG" nhỏ trên hộp đáp án chạm giấy (đồng bộ với keyframes ok-seal) */
+  sealLand: 260,
   /** cả đoạn: đóng dấu → giữ → bay về ô lửa */
   stampTotal: 1100,
   /** chữ +XP bay tới bộ đếm */

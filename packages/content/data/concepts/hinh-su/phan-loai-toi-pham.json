@@ -24,6 +24,41 @@
   "15 năm"
  ],
  "note": "Điều 9 được sửa đổi, bổ sung bởi Luật 12/2017/QH14 (hiệu lực 01/01/2018); câu chữ trên theo VBHN 135/VBHN-VPQH 2025.",
+ "memo": {
+  "hook": "Theo mức CAO NHẤT của khung: 3 – 7 – 15 năm chia bốn loại.",
+  "tree": [
+   {
+    "label": "Ít nghiêm trọng",
+    "children": [
+     "Đến 03 năm"
+    ]
+   },
+   {
+    "label": "Nghiêm trọng",
+    "children": [
+     "Trên 03 đến 07 năm"
+    ]
+   },
+   {
+    "label": "Rất nghiêm trọng",
+    "children": [
+     "Trên 07 đến 15 năm"
+    ]
+   },
+   {
+    "label": "Đặc biệt nghiêm trọng",
+    "children": [
+     "Trên 15 năm, chung thân, tử hình"
+    ]
+   },
+   {
+    "label": "Căn cứ",
+    "children": [
+     "Mức cao nhất của khung, không phải mức tuyên"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

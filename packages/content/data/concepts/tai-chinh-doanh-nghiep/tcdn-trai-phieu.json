@@ -24,6 +24,37 @@
   "chủ nợ"
  ],
  "note": "Luật Chứng khoán 54/2019/QH14 có hiệu lực từ 01/01/2021, sửa đổi bởi Luật 56/2024/QH15 (hiệu lực 01/01/2025) — văn bản hợp nhất 102/VBHN-VPQH 2026.",
+ "memo": {
+  "hook": "Trái phiếu = VỐN VAY (người mua là CHỦ NỢ); cổ phiếu = VỐN CHỦ SỞ HỮU.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Chứng khoán",
+     "Xác nhận một phần nợ"
+    ]
+   },
+   {
+    "label": "Người mua",
+    "children": [
+     "Chủ nợ",
+     "Nhận gốc và lãi"
+    ]
+   },
+   {
+    "label": "Khác cổ phiếu",
+    "children": [
+     "Không đổi quyền sở hữu"
+    ]
+   },
+   {
+    "label": "Ai phát hành",
+    "children": [
+     "Công ty cổ phần, TNHH"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

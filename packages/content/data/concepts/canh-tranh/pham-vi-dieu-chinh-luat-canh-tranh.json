@@ -22,6 +22,32 @@
   "cạnh tranh không lành mạnh",
   "thị trường Việt Nam"
  ],
+ "memo": {
+  "hook": "Hai mảng: chống HẠN CHẾ cạnh tranh và chống KHÔNG LÀNH MẠNH; áp dụng theo TÁC ĐỘNG.",
+  "tree": [
+   {
+    "label": "Hạn chế cạnh tranh",
+    "children": [
+     "Thỏa thuận, lạm dụng",
+     "Tập trung kinh tế",
+     "Bảo vệ cấu trúc thị trường"
+    ]
+   },
+   {
+    "label": "Không lành mạnh",
+    "children": [
+     "Bảo vệ đạo đức kinh doanh"
+    ]
+   },
+   {
+    "label": "Phạm vi",
+    "children": [
+     "Cả hành vi ở nước ngoài",
+     "Gây tác động tới thị trường Việt Nam"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

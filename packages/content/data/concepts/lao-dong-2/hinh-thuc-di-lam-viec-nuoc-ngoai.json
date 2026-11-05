@@ -22,6 +22,32 @@
   "trực tiếp giao kết"
  ],
  "note": "Luật 69/2020/QH14 có hiệu lực từ 01/01/2022, thay thế Luật 72/2006/QH11; đã được sửa đổi bởi Luật 22/2026/QH16 (hiệu lực 01/3/2027, VBHN 145/2026/VBHN-LQ-VPQH); điều được trích chưa thay đổi đến 02/11/2026.",
+ "memo": {
+  "hook": "Ba đường: qua NHÀ NƯỚC, qua DOANH NGHIỆP, hoặc TỰ ký.",
+  "tree": [
+   {
+    "label": "Đơn vị sự nghiệp",
+    "children": [
+     "Thực hiện thỏa thuận quốc tế"
+    ]
+   },
+   {
+    "label": "Doanh nghiệp, tổ chức",
+    "children": [
+     "Doanh nghiệp dịch vụ (giấy phép, ký quỹ)",
+     "Trúng thầu công trình ở nước ngoài",
+     "Đầu tư ra nước ngoài"
+    ]
+   },
+   {
+    "label": "Trực tiếp",
+    "children": [
+     "Tự giao kết với chủ nước ngoài",
+     "Phải đăng ký"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

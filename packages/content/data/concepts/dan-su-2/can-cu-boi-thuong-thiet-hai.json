@@ -23,6 +23,32 @@
   "bất khả kháng",
   "hoàn toàn do lỗi bên bị thiệt hại"
  ],
+ "memo": {
+  "hook": "Bồi thường ngoài hợp đồng: HÀNH VI XÂM PHẠM + THIỆT HẠI + NHÂN QUẢ; không cần chứng minh LỖI.",
+  "tree": [
+   {
+    "label": "Yếu tố",
+    "children": [
+     "Hành vi xâm phạm",
+     "Thiệt hại thực tế",
+     "Quan hệ nhân quả"
+    ]
+   },
+   {
+    "label": "Miễn",
+    "children": [
+     "Bất khả kháng",
+     "Hoàn toàn do lỗi bên bị hại"
+    ]
+   },
+   {
+    "label": "Tài sản gây hại",
+    "children": [
+     "Chủ sở hữu, người chiếm hữu bồi thường"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

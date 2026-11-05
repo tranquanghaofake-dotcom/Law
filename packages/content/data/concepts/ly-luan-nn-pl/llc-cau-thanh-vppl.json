@@ -23,6 +23,38 @@
   "lỗi vô ý",
   "khách thể"
  ],
+ "memo": {
+  "hook": "Bốn yếu tố: KHÁCH QUAN – CHỦ QUAN – CHỦ THỂ – KHÁCH THỂ.",
+  "tree": [
+   {
+    "label": "Mặt khách quan",
+    "children": [
+     "Hành vi trái pháp luật",
+     "Hậu quả, quan hệ nhân quả"
+    ]
+   },
+   {
+    "label": "Mặt chủ quan",
+    "children": [
+     "Lỗi cố ý trực tiếp, gián tiếp",
+     "Lỗi vô ý: quá tự tin, cẩu thả",
+     "Động cơ, mục đích"
+    ]
+   },
+   {
+    "label": "Chủ thể",
+    "children": [
+     "Có năng lực trách nhiệm"
+    ]
+   },
+   {
+    "label": "Khách thể",
+    "children": [
+     "Quan hệ xã hội bị xâm hại"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

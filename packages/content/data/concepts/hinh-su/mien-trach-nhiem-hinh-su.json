@@ -23,6 +23,32 @@
   "hòa giải"
  ],
  "note": "Điều 29 được sửa đổi, bổ sung bởi Luật 12/2017/QH14 (hiệu lực 01/01/2018); câu chữ trên theo VBHN 135/VBHN-VPQH 2025.",
+ "memo": {
+  "hook": "BẮT BUỘC miễn: luật đổi, ĐẠI XÁ; CÓ THỂ miễn: tự thú, bệnh hiểm nghèo, HÒA GIẢI.",
+  "tree": [
+   {
+    "label": "Được miễn",
+    "children": [
+     "Chính sách, pháp luật thay đổi",
+     "Có đại xá"
+    ]
+   },
+   {
+    "label": "Có thể được miễn",
+    "children": [
+     "Chuyển biến tình hình",
+     "Bệnh hiểm nghèo",
+     "Tự thú, lập công lớn"
+    ]
+   },
+   {
+    "label": "Hòa giải",
+    "children": [
+     "Tội nhẹ, bị hại tự nguyện"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -22,6 +22,32 @@
   "phải thấy trước và có thể thấy trước",
   "sự kiện bất ngờ"
  ],
+ "memo": {
+  "hook": "QUÁ TỰ TIN: thấy trước nhưng TIN không xảy ra; CẨU THẢ: KHÔNG thấy dù PHẢI thấy.",
+  "tree": [
+   {
+    "label": "Quá tự tin",
+    "children": [
+     "Thấy trước hậu quả",
+     "Cho rằng không xảy ra, ngăn được"
+    ]
+   },
+   {
+    "label": "Cẩu thả",
+    "children": [
+     "Không thấy trước",
+     "Phải thấy và có thể thấy"
+    ]
+   },
+   {
+    "label": "Phân biệt",
+    "children": [
+     "Cố ý gián tiếp: để mặc",
+     "Sự kiện bất ngờ: không thể thấy"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -24,6 +24,32 @@
   "lập pháp, hành pháp, tư pháp"
  ],
  "note": "Hiến pháp 2013 (hiệu lực 01/01/2014) được sửa đổi, bổ sung bởi Nghị quyết 203/2025/QH15 (hiệu lực 16/6/2025) — các điều được trích (Điều 2, 4, 6) không thuộc phạm vi sửa đổi.",
+ "memo": {
+  "hook": "THỐNG NHẤT + PHÂN CÔNG + PHỐI HỢP + KIỂM SOÁT; không tam quyền phân lập.",
+  "tree": [
+   {
+    "label": "Thống nhất",
+    "children": [
+     "Thuộc về Nhân dân"
+    ]
+   },
+   {
+    "label": "Phân công",
+    "children": [
+     "Quốc hội: lập pháp",
+     "Chính phủ: hành pháp",
+     "Tòa án: tư pháp"
+    ]
+   },
+   {
+    "label": "Giữa các cơ quan",
+    "children": [
+     "Phối hợp",
+     "Kiểm soát"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

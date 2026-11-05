@@ -3,13 +3,14 @@
   //  1) thẻ chuyên cần mini bay lên và phóng to giữa màn hình (FLIP, chỉ animate transform);
   //  2) đốm sáng màu lửa của chu kỳ bay từ ngoài mép vào hai đích: con số giữa huy hiệu và ký hoạ của ngày;
   //  3) đốm tới nơi: con số đổi sang ngày mới, bừng sáng rồi tắt dần (số khắc giữ nguyên), ký hoạ thắp và giữ sáng;
-  //  4) chạm/Esc/nút "Tiếp tục" hoặc sau 7 s: thẻ thu về chỗ thẻ mini.
+  //  4) chạm/Esc/nút "Tiếp tục" hoặc tự đóng (IGNITE_TIMING.autoClose): thẻ thu về chỗ thẻ mini.
+  //  05/11/2026: chậm ~2 lần, thêm chặng tụ lửa (thẻ rung sáng trước khi đốm bay), sóng sáng khi số đổi, tàn lửa bay lên, chú thích hiện từng dòng.
   // Giảm chuyển động: chỉ hiện thẻ trạng thái mới, không bay, không đốm. Đốm sáng là phần tử HTML animate transform/opacity (compositor).
   import { onMount, tick, untrack } from 'svelte';
   import StreakCard, { NUM_POINT, glyphPoint } from './StreakCard.svelte';
   import { cardFor } from '$lib/game/card';
   import { streakView } from '$lib/ui/streakView';
-  import { flight, type Mote } from '$lib/ui/ignite';
+  import { embers as mkEmbers, flight, IGNITE_TIMING as T, type Ember, type Mote } from '$lib/ui/ignite';
   import { reducedMotion } from '$lib/fx/confetti';
   let { count, longest, origin, onclose }: { count: number; longest: number; origin?: HTMLElement | null; onclose: () => void } = $props();
 
@@ -22,9 +23,11 @@
   let dialog: HTMLDivElement | undefined = $state();
   let btn: HTMLButtonElement | undefined = $state();
   let motes: (Mote & { kind: 'num' | 'glyph' })[] = $state([]);
+  let charging = $state(false);
+  let sparks: Ember[] = $state([]);
   const timers: ReturnType<typeof setTimeout>[] = [];
   const later = (ms: number, f: () => void) => timers.push(setTimeout(f, ms));
-  const FLY = 950;
+  const FLY = T.fly;
   // Web Animations có thể vắng (jsdom, trình duyệt rất cũ) → bỏ qua chuyển động, giữ nội dung
   const anim = (el: Element | undefined, k: Keyframe[], o: KeyframeAnimationOptions): Animation | null => (el && typeof el.animate === 'function' ? el.animate(k, o) : null);
 
@@ -41,10 +44,12 @@
     btn?.focus({ preventScroll: true });
     if (!still && stage) {
       const from = fromOrigin();
-      if (from) anim(stage, [{ transform: from }, { transform: 'none' }], { duration: 640, easing: 'cubic-bezier(.2, .8, .2, 1)' });
-      anim(dialog, [{ opacity: 0 }, { opacity: 1 }], { duration: 320, easing: 'ease-out', fill: 'both' });
+      if (from) anim(stage, [{ transform: from }, { transform: 'scale(1.03)', offset: 0.8 }, { transform: 'none' }], { duration: T.cardIn, easing: 'cubic-bezier(.2, .8, .2, 1)' });
+      anim(dialog, [{ opacity: 0 }, { opacity: 1 }], { duration: T.veil, easing: 'ease-out', fill: 'both' });
+      // tụ lửa: thẻ rung sáng nhẹ, báo trước đốm sẽ bay vào
+      later(T.charge, () => { charging = true; });
       // đốm sáng: 14 về con số, 8 về ký hoạ (nếu ngày có ký hoạ mới)
-      later(520, async () => {
+      later(T.motes, async () => {
         if (!stage) return;
         const w = stage.clientWidth, h = stage.clientHeight, k = w / 856;
         const day = cardFor(count, longest).day;
@@ -62,9 +67,10 @@
         }
       });
       // con số đổi + bừng sáng khi dòng đốm đầu tiên chạm đích
-      later(520 + FLY + 260, () => { shown = count; arrived = true; });
+      later(T.arrive, () => { shown = count; arrived = true; charging = false; });
+      later(T.embers, () => { sparks = mkEmbers(18, count); });
     }
-    later(7000, close);
+    later(T.autoClose, close);
     return () => { timers.forEach(clearTimeout); prevFocus?.focus?.({ preventScroll: true }); };
   });
 
@@ -72,8 +78,8 @@
     if (leaving) return; leaving = true;
     if (still || !stage) return onclose();
     const to = fromOrigin();
-    const a = anim(stage, [{ transform: 'none', opacity: 1 }, { transform: to ?? 'scale(.6)', opacity: to ? 1 : 0 }], { duration: 420, easing: 'cubic-bezier(.4, 0, 1, 1)', fill: 'forwards' });
-    anim(dialog, [{ opacity: 1 }, { opacity: 0 }], { duration: 420, easing: 'ease-in', fill: 'forwards' });
+    const a = anim(stage, [{ transform: 'none', opacity: 1 }, { transform: to ?? 'scale(.6)', opacity: to ? 1 : 0 }], { duration: T.close, easing: 'cubic-bezier(.4, 0, 1, 1)', fill: 'forwards' });
+    anim(dialog, [{ opacity: 1 }, { opacity: 0 }], { duration: T.close, easing: 'ease-in', fill: 'forwards' });
     if (a) a.onfinish = () => onclose(); else onclose();
   }
   function key(e: KeyboardEvent) {
@@ -86,14 +92,19 @@
 <div class="ig" bind:this={dialog} role="dialog" aria-modal="true" aria-label="Thắp chuỗi {count} ngày" tabindex="-1" onclick={close} onkeydown={key}
   style="--fire:{view.flame}; --glow:{view.glow}">
   <div class="ig-veil" aria-hidden="true"></div>
-  <div class="ig-stage" bind:this={stage}>
+  <div class="ig-stage" class:charging bind:this={stage}>
     <StreakCard count={shown} {longest} ignite={arrived && !still} flare={arrived && !still} from={Math.max(0, count - 1)} />
     <div class="ig-motes" aria-hidden="true">
       {#each motes as m, i (i)}<i class="ig-mote {m.kind}" data-i={i} style="--s:{m.size.toFixed(1)}px"></i>{/each}
+      {#if arrived && !still}<i class="ig-wave" style="left:{(NUM_POINT.x / 856) * 100}%; top:{(NUM_POINT.y / 540) * 100}%"></i>{/if}
+    </div>
+    <div class="ig-embers" aria-hidden="true">
+      {#each sparks as e, i (i)}<i class="ig-ember" style="left:{e.x}%; --d:{e.delay}ms; --rise:-{e.rise}px; --drift:{e.drift}px; --dur:{e.dur}ms; --s:{e.size}px"></i>{/each}
     </div>
   </div>
   <p class="ig-cap" class:on={arrived} role="status">
-    <b>Chuỗi {count} ngày</b>{#if view.tierName} · {view.tierName} {view.day}/{view.total}{/if}
+    <b class="ig-l1">Chuỗi {count} ngày</b>{#if view.tierName}<span class="ig-l2">&nbsp;· {view.tierName} {view.day}/{view.total}</span>{/if}
+    <span class="ig-l3">{count >= longest && count > 1 ? 'Kỷ lục mới của bạn!' : 'Ngày mai quay lại để giữ lửa.'}</span>
   </p>
   <button class="btn ig-btn" type="button" bind:this={btn} onclick={(e) => { e.stopPropagation(); close(); }}>Tiếp tục</button>
 </div>

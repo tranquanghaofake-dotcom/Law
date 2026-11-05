@@ -21,6 +21,36 @@
   "khởi kiện",
   "Đại hội nhà đầu tư"
  ],
+ "memo": {
+  "hook": "Nhà đầu tư quỹ: HƯỞNG LỢI theo tỷ lệ, được KHỞI KIỆN, BIỂU QUYẾT ở Đại hội.",
+  "tree": [
+   {
+    "label": "Hưởng",
+    "children": [
+     "Lợi nhuận theo tỷ lệ vốn góp",
+     "Tài sản khi thanh lý"
+    ]
+   },
+   {
+    "label": "Đòi",
+    "children": [
+     "Mua lại (quỹ mở)"
+    ]
+   },
+   {
+    "label": "Bảo vệ",
+    "children": [
+     "Khởi kiện công ty quản lý quỹ, ngân hàng giám sát"
+    ]
+   },
+   {
+    "label": "Quản trị",
+    "children": [
+     "Biểu quyết tại Đại hội nhà đầu tư"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

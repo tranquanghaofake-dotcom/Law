@@ -22,6 +22,38 @@
   "chỉ Quốc hội đặt ra bằng luật",
   "trực thu – gián thu"
  ],
+ "memo": {
+  "hook": "Thuế: BẮT BUỘC, KHÔNG HOÀN TRẢ trực tiếp, chỉ QUỐC HỘI đặt ra.",
+  "tree": [
+   {
+    "label": "Đặc điểm",
+    "children": [
+     "Bắt buộc",
+     "Không hoàn trả trực tiếp",
+     "Gắn quyền lực nhà nước"
+    ]
+   },
+   {
+    "label": "Ai đặt ra",
+    "children": [
+     "Chỉ Quốc hội, bằng luật"
+    ]
+   },
+   {
+    "label": "Phân loại",
+    "children": [
+     "Trực thu: người nộp là người chịu",
+     "Gián thu: người tiêu dùng chịu"
+    ]
+   },
+   {
+    "label": "Khác phí",
+    "children": [
+     "Phí có đối giá cụ thể"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

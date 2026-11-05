@@ -22,6 +22,32 @@
   "thay đổi",
   "chấm dứt"
  ],
+ "memo": {
+  "hook": "SỰ BIẾN (ngoài ý chí) và HÀNH VI (có ý chí) làm quan hệ PHÁT SINH, THAY ĐỔI, CHẤM DỨT.",
+  "tree": [
+   {
+    "label": "Điều kiện",
+    "children": [
+     "Pháp luật dự liệu"
+    ]
+   },
+   {
+    "label": "Theo ý chí",
+    "children": [
+     "Sự biến: bão, chết tự nhiên",
+     "Hành vi: ký hợp đồng, trộm cắp"
+    ]
+   },
+   {
+    "label": "Theo hậu quả",
+    "children": [
+     "Phát sinh",
+     "Thay đổi",
+     "Chấm dứt"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

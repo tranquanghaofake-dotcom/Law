@@ -21,6 +21,30 @@
   "thành viên bù trừ đóng góp",
   "tách biệt với tài sản của Tổng công ty"
  ],
+ "memo": {
+  "hook": "Hai TÚI DỰ PHÒNG để một thành viên vỡ nợ không kéo sập hệ thống.",
+  "tree": [
+   {
+    "label": "Quỹ hỗ trợ thanh toán",
+    "children": [
+     "Thành viên lưu ký góp",
+     "Thanh toán thay khi tạm mất khả năng"
+    ]
+   },
+   {
+    "label": "Quỹ bù trừ",
+    "children": [
+     "Thành viên bù trừ góp"
+    ]
+   },
+   {
+    "label": "Tài sản",
+    "children": [
+     "Tách biệt với Tổng công ty"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

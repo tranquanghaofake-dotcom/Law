@@ -23,6 +23,39 @@
   "thuyết phục",
   "cưỡng chế"
  ],
+ "memo": {
+  "hook": "Chức năng: ĐỐI NỘI và ĐỐI NGOẠI, thực hiện bằng thuyết phục và cưỡng chế.",
+  "tree": [
+   {
+    "label": "Đối nội",
+    "children": [
+     "Kinh tế, xã hội",
+     "An ninh, trật tự",
+     "Quyền con người"
+    ]
+   },
+   {
+    "label": "Đối ngoại",
+    "children": [
+     "Bảo vệ Tổ quốc",
+     "Hợp tác quốc tế"
+    ]
+   },
+   {
+    "label": "Hình thức",
+    "children": [
+     "Xây dựng, thực hiện, bảo vệ pháp luật"
+    ]
+   },
+   {
+    "label": "Phương pháp",
+    "children": [
+     "Thuyết phục",
+     "Cưỡng chế"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

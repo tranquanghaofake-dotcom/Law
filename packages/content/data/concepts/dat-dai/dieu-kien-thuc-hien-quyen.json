@@ -23,6 +23,33 @@
   "không bị kê biên",
   "trong thời hạn sử dụng đất"
  ],
+ "memo": {
+  "hook": "Chuyển nhượng, thế chấp cần: SỔ – KHÔNG TRANH CHẤP – KHÔNG KÊ BIÊN – CÒN HẠN.",
+  "tree": [
+   {
+    "label": "Điều kiện",
+    "children": [
+     "Có Giấy chứng nhận",
+     "Không tranh chấp",
+     "Không bị kê biên",
+     "Còn thời hạn sử dụng"
+    ]
+   },
+   {
+    "label": "Thêm",
+    "children": [
+     "Không bị biện pháp khẩn cấp tạm thời"
+    ]
+   },
+   {
+    "label": "Ngoại lệ sổ",
+    "children": [
+     "Thừa kế",
+     "Tặng cho Nhà nước"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

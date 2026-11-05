@@ -22,6 +22,33 @@
   "quản lý và sử dụng đất đai",
   "quyền và nghĩa vụ người sử dụng đất"
  ],
+ "memo": {
+  "hook": "Ba quan hệ: SỞ HỮU – QUẢN LÝ – SỬ DỤNG đất.",
+  "tree": [
+   {
+    "label": "Điều chỉnh",
+    "children": [
+     "Chế độ sở hữu",
+     "Quản lý đất đai",
+     "Sử dụng đất"
+    ]
+   },
+   {
+    "label": "Phương pháp",
+    "children": [
+     "Mệnh lệnh – hành chính",
+     "Bình đẳng – thỏa thuận"
+    ]
+   },
+   {
+    "label": "Văn bản",
+    "children": [
+     "Luật Đất đai 2024",
+     "Hiệu lực 01/8/2024"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

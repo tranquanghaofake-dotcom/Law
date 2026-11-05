@@ -1,8 +1,11 @@
-// Lời đọc sau khi chọn đáp án: "Chính xác." / "Chưa đúng. Đáp án: …." + giải thích.
+// Lời đọc đề ngay khi thẻ hiện (promptSpeech, không lộ đáp án) và lời đọc sau khi chọn đáp án: "Chính xác." / "Chưa đúng. Đáp án: …." + giải thích.
 // Dạng nhiều dòng (ghép cặp, xếp cột) chỉ đọc tóm tắt đúng/sai và giải thích, không đọc cả danh sách.
 import type { StepItem } from '$lib/engine/session';
 import type { AnswerResult } from '$lib/ui/cards/types';
+import type { Concept } from '$lib/content/types';
 import { answerText, explainText } from '$lib/ui/cards/answer';
+import { KEYS } from '$lib/ui/cards/types';
+import { MASK } from '$lib/engine/text';
 
 const ratio = (chosen?: string) => {
   const m = chosen?.match(/^(\d+)\/(\d+)$/);
@@ -18,7 +21,11 @@ const sentence = (s: string) => {
 export function feedbackSpeech(item: StepItem, result: Pick<AnswerResult, 'correct' | 'chosen'>): string {
   const explain = sentence(explainText(item));
   const parts: string[] = [];
-  if (result.correct) parts.push('Chính xác.');
+  const single = item.type === 'mcq' || item.type === 'case' || item.type === 'truefalse' || item.type === 'cloze';
+  if (result.correct) {
+    const a = single ? answerText(item) : '';
+    parts.push(a ? `Chính xác. Đáp án: ${sentence(a)}` : 'Chính xác.');
+  }
   else if (item.type === 'pair' || item.type === 'sort') {
     const r = ratio(result.chosen);
     parts.push(r ? `Chưa đúng. Xếp đúng ${r.ok} trên ${r.total} tình huống.` : 'Chưa đúng.');
@@ -33,4 +40,34 @@ export function feedbackSpeech(item: StepItem, result: Pick<AnswerResult, 'corre
   }
   if (explain) parts.push(explain);
   return parts.join(' ');
+}
+
+/** "[…]" (che tên khái niệm) đọc thành "chỗ trống". */
+const unmask = (s: string) => s.split(MASK).join('chỗ trống');
+
+/**
+ * Lời đọc đề/khái niệm khi thẻ vừa hiện. Không bao giờ chứa đáp án hay giải thích.
+ * `shown`: thứ tự phương án đang hiện trên thẻ (thẻ trắc nghiệm xáo phương án); thiếu thì theo dữ liệu.
+ */
+export function promptSpeech(item: StepItem, concept: Pick<Concept, 'term' | 'definition' | 'memo'>, shown?: string[]): string {
+  switch (item.type) {
+    case 'intro': {
+      const hook = concept.memo?.hook;
+      // giữ đúng dạng cũ "tên. định nghĩa" (trùng nút Nghe của thẻ) để dùng lại mp3 đã sinh
+      const base = `${concept.term}. ${concept.definition}`;
+      // định nghĩa kết thúc bằng ; hoặc : thì chốt câu để mẹo nhớ thành câu riêng (tệp riêng)
+      return hook ? `${sentence(base.replace(/[;:,]\s*$/, ''))} Mẹo nhớ: ${sentence(hook)}` : base;
+    }
+    case 'mcq': case 'case': {
+      // chữ cái là câu riêng → mp3 "Phương án A." dùng lại cho mọi câu hỏi
+      const opts = (shown ?? item.options).map((o, i) => `Phương án ${KEYS[i] ?? i + 1}. ${sentence(unmask(o))}`);
+      return [sentence(unmask(item.q)), ...opts].join(' ');
+    }
+    case 'recall': return sentence(unmask(item.q));
+    case 'truefalse': return `Đúng hay sai? ${sentence(unmask(item.statement))}`;
+    case 'cloze': return `Điền vào chỗ trống: ${sentence(unmask(item.text.replace(/\{\{[^{}]+\}\}/g, 'chỗ trống')))}`;
+    case 'pair': case 'sort': return `Phân biệt: ${item.left} hay ${item.right}.`;
+    case 'match': return 'Ghép thuật ngữ với mô tả.';
+    default: return '';
+  }
 }

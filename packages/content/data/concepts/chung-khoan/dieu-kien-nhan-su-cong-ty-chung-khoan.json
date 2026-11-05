@@ -21,6 +21,30 @@
   "01 kiểm soát tuân thủ",
   "Tổng giám đốc 02 năm kinh nghiệm"
  ],
+ "memo": {
+  "hook": "Mỗi nghiệp vụ ≥ 3 người có CHỨNG CHỈ + 1 KIỂM SOÁT TUÂN THỦ; Tổng giám đốc 2 NĂM kinh nghiệm.",
+  "tree": [
+   {
+    "label": "Mỗi nghiệp vụ",
+    "children": [
+     "Ít nhất 03 người có chứng chỉ"
+    ]
+   },
+   {
+    "label": "Tuân thủ",
+    "children": [
+     "Ít nhất 01 nhân viên"
+    ]
+   },
+   {
+    "label": "Tổng giám đốc",
+    "children": [
+     "02 năm kinh nghiệm tài chính",
+     "Chứng chỉ phân tích hoặc quản lý quỹ"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

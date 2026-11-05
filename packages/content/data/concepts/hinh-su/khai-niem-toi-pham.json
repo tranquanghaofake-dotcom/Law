@@ -23,6 +23,26 @@
   "có lỗi",
   "không đáng kể"
  ],
+ "memo": {
+  "hook": "Bốn dấu hiệu: NGUY HIỂM – CÓ LỖI – TRÁI LUẬT HÌNH SỰ – PHẢI CHỊU HÌNH PHẠT.",
+  "tree": [
+   {
+    "label": "Dấu hiệu",
+    "children": [
+     "Nguy hiểm cho xã hội (cơ bản)",
+     "Có lỗi",
+     "Được quy định trong BLHS",
+     "Phải chịu hình phạt"
+    ]
+   },
+   {
+    "label": "Loại trừ",
+    "children": [
+     "Nguy hiểm không đáng kể"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

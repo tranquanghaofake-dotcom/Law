@@ -22,6 +22,28 @@
   "có ý thức và ý chí",
   "hành động – không hành động"
  ],
+ "memo": {
+  "hook": "Mặt khách quan: HÀNH VI (bắt buộc) + HẬU QUẢ + NHÂN QUẢ + thủ đoạn, thời gian…",
+  "tree": [
+   {
+    "label": "Nội dung",
+    "children": [
+     "Hành vi khách quan (bắt buộc)",
+     "Hậu quả",
+     "Quan hệ nhân quả",
+     "Công cụ, thủ đoạn, thời gian"
+    ]
+   },
+   {
+    "label": "Hành vi",
+    "children": [
+     "Nguy hiểm cho xã hội",
+     "Có ý thức, ý chí",
+     "Hành động hoặc không hành động"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

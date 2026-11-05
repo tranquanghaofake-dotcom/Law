@@ -23,6 +23,31 @@
   "đối tượng cụ thể",
   "thực hiện hoặc không thực hiện công vụ"
  ],
+ "memo": {
+  "hook": "Quyết định bị kiện: vấn đề CỤ THỂ, áp dụng MỘT LẦN, cho đối tượng CỤ THỂ.",
+  "tree": [
+   {
+    "label": "Dấu hiệu",
+    "children": [
+     "Vấn đề cụ thể",
+     "Áp dụng một lần",
+     "Đối tượng cụ thể"
+    ]
+   },
+   {
+    "label": "Hành vi hành chính",
+    "children": [
+     "Làm hoặc không làm công vụ"
+    ]
+   },
+   {
+    "label": "Khoa học",
+    "children": [
+     "Quyết định chủ đạo, quy phạm, cá biệt"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

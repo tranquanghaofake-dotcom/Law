@@ -23,6 +23,34 @@
   "quy phạm và sự kiện pháp lý"
  ],
  "note": "Thẻ dạng tóm lược quan điểm học thuật, chưa đối chiếu nguyên văn giáo trình; cần Hào đối chiếu trang 1–9 của sách.",
+ "memo": {
+  "hook": "Nhớ 3 ý: CHỦ THỂ đặc biệt, hai loại QUAN HỆ, phát sinh từ QUY PHẠM và SỰ KIỆN.",
+  "tree": [
+   {
+    "label": "Chủ thể đặc biệt",
+    "children": [
+     "Nhân dân",
+     "Quốc hội",
+     "Chủ tịch nước",
+     "cử tri"
+    ]
+   },
+   {
+    "label": "Hai loại quan hệ",
+    "children": [
+     "Chung: không cần sự kiện pháp lý",
+     "Cụ thể: cử tri – tổ bầu cử"
+    ]
+   },
+   {
+    "label": "Cơ sở phát sinh",
+    "children": [
+     "Quy phạm luật Hiến pháp",
+     "Sự kiện pháp lý"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

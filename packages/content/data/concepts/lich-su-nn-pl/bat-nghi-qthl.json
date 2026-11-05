@@ -23,6 +23,41 @@
   "giảm một bậc",
   "trừ thập ác"
  ],
+ "memo": {
+  "hook": "BÁT NGHỊ: 8 diện được XÉT GIẢM tội, trừ tội THẬP ÁC.",
+  "tree": [
+   {
+    "label": "Thân thế",
+    "children": [
+     "Nghị thân",
+     "Nghị cố",
+     "Nghị tân"
+    ]
+   },
+   {
+    "label": "Phẩm chất",
+    "children": [
+     "Nghị hiền",
+     "Nghị năng",
+     "Nghị cần"
+    ]
+   },
+   {
+    "label": "Địa vị, công lao",
+    "children": [
+     "Nghị công",
+     "Nghị quý"
+    ]
+   },
+   {
+    "label": "Xử lý",
+    "children": [
+     "Tâu vua xét định",
+     "Trừ thập ác"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

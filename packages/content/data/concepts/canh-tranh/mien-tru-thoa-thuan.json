@@ -22,6 +22,32 @@
   "tiến bộ kỹ thuật",
   "không liên quan đến giá"
  ],
+ "memo": {
+  "hook": "Miễn trừ: CÓ LỢI cho người tiêu dùng + MỘT điều kiện; có THỜI HẠN.",
+  "tree": [
+   {
+    "label": "Bắt buộc",
+    "children": [
+     "Có lợi cho người tiêu dùng"
+    ]
+   },
+   {
+    "label": "Cộng một trong",
+    "children": [
+     "Tiến bộ kỹ thuật, chất lượng",
+     "Sức cạnh tranh doanh nghiệp Việt Nam",
+     "Điều kiện hợp đồng không liên quan giá"
+    ]
+   },
+   {
+    "label": "Không được miễn",
+    "children": [
+     "Thông đồng đấu thầu",
+     "Ngăn cản gia nhập, loại bỏ"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

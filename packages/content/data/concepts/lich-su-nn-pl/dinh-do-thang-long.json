@@ -24,6 +24,37 @@
   "Thăng Long",
   "Đại Việt (1054)"
  ],
+ "memo": {
+  "hook": "1010: Lý Thái Tổ dời đô HOA LƯ → ĐẠI LA, đổi tên THĂNG LONG.",
+  "tree": [
+   {
+    "label": "Mốc",
+    "children": [
+     "1010",
+     "Chiếu dời đô"
+    ]
+   },
+   {
+    "label": "Dời",
+    "children": [
+     "Hoa Lư → Đại La",
+     "Đổi tên Thăng Long"
+    ]
+   },
+   {
+    "label": "Tư tưởng",
+    "children": [
+     "Kính mệnh trời, theo ý dân"
+    ]
+   },
+   {
+    "label": "Quốc hiệu",
+    "children": [
+     "Đại Việt (1054)"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

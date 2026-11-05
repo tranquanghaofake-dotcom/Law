@@ -25,6 +25,33 @@
   "10 ngày"
  ],
  "note": "Luật Doanh nghiệp 59/2020/QH14 có hiệu lực từ 01/01/2021, thay thế Luật Doanh nghiệp 2014 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 03/2022/QH15 và Luật 76/2025/QH15 (hiệu lực 01/7/2025) — văn bản hợp nhất 67/VBHN-VPQH 2025.",
+ "memo": {
+  "hook": "Chào bán cổ phần = VỐN CHỦ SỞ HỮU: tăng vốn điều lệ, không trả nợ, nhưng PHA LOÃNG.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Tăng vốn điều lệ",
+     "Không phải trả nợ gốc",
+     "Có thể pha loãng sở hữu"
+    ]
+   },
+   {
+    "label": "Ba hình thức",
+    "children": [
+     "Cổ đông hiện hữu",
+     "Riêng lẻ",
+     "Ra công chúng"
+    ]
+   },
+   {
+    "label": "Sau chào bán",
+    "children": [
+     "Đăng ký vốn điều lệ trong 10 ngày"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

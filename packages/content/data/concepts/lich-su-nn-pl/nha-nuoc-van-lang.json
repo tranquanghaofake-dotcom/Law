@@ -20,6 +20,36 @@
   "Phong Châu",
   "15 bộ"
  ],
+ "memo": {
+  "hook": "Văn Lang: nhà nước ĐẦU TIÊN, HÙNG VƯƠNG đứng đầu, 15 BỘ, đô PHONG CHÂU.",
+  "tree": [
+   {
+    "label": "Đứng đầu",
+    "children": [
+     "Hùng Vương"
+    ]
+   },
+   {
+    "label": "Kinh đô",
+    "children": [
+     "Phong Châu"
+    ]
+   },
+   {
+    "label": "Lãnh thổ",
+    "children": [
+     "15 bộ"
+    ]
+   },
+   {
+    "label": "Đặc điểm",
+    "children": [
+     "Sơ khai",
+     "Cha truyền con nối"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -25,6 +25,32 @@
   "không đặt tể tướng"
  ],
  "note": "Thẻ dạng tóm lược giáo trình, chưa có trích nguyên văn Hoàng Việt luật lệ hay Đại Nam thực lục; cần đối chiếu sách in trước khi dùng làm tài liệu chính.",
+ "memo": {
+  "hook": "Nhà Nguyễn: chuyên chế TẬP QUYỀN CAO ĐỘ, KHÔNG đặt tể tướng.",
+  "tree": [
+   {
+    "label": "Vua",
+    "children": [
+     "Nắm mọi quyền lực"
+    ]
+   },
+   {
+    "label": "Trung ương",
+    "children": [
+     "Lục bộ",
+     "Nội các",
+     "Cơ mật viện",
+     "Đô sát viện"
+    ]
+   },
+   {
+    "label": "Đặc điểm",
+    "children": [
+     "Không đặt tể tướng"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

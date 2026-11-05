@@ -22,6 +22,34 @@
   "kê biên, cấm chuyển dịch, phong tỏa",
   "bồi thường nếu yêu cầu không đúng"
  ],
+ "memo": {
+  "hook": "Giải quyết TẠM yêu cầu CẤP BÁCH; yêu cầu sai phải BỒI THƯỜNG.",
+  "tree": [
+   {
+    "label": "Mục đích",
+    "children": [
+     "Yêu cầu cấp bách",
+     "Bảo vệ chứng cứ, tài sản",
+     "Bảo đảm thi hành án"
+    ]
+   },
+   {
+    "label": "Về người",
+    "children": [
+     "Giao người cần chăm sóc",
+     "Buộc trước một phần cấp dưỡng, bồi thường"
+    ]
+   },
+   {
+    "label": "Về tài sản",
+    "children": [
+     "Kê biên",
+     "Cấm chuyển dịch",
+     "Phong tỏa tài khoản"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -21,6 +21,30 @@
   "không cần cách ly khỏi cộng đồng",
   "03 tháng đến 06 tháng"
  ],
+ "memo": {
+  "hook": "Giáo dục TẠI NƠI CƯ TRÚ, KHÔNG cách ly, 3–6 THÁNG.",
+  "tree": [
+   {
+    "label": "Đặc điểm",
+    "children": [
+     "Tại nơi cư trú",
+     "Không cách ly khỏi cộng đồng"
+    ]
+   },
+   {
+    "label": "Thời hạn",
+    "children": [
+     "03 đến 06 tháng"
+    ]
+   },
+   {
+    "label": "Ai quyết định",
+    "children": [
+     "Chủ tịch Ủy ban nhân dân cấp xã"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

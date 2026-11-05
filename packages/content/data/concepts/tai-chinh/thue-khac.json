@@ -22,6 +22,33 @@
   "thuế tuyệt đối",
   "xăng dầu, than, túi ni lông"
  ],
+ "memo": {
+  "hook": "Thuế GIÁN THU, thu MỘT LẦN vào hàng gây hại môi trường.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Thuế gián thu",
+     "Thuế tuyệt đối"
+    ]
+   },
+   {
+    "label": "Đánh vào",
+    "children": [
+     "Xăng dầu, mỡ nhờn",
+     "Than đá",
+     "Túi ni lông",
+     "Thuốc bảo vệ thực vật hạn chế"
+    ]
+   },
+   {
+    "label": "Thu",
+    "children": [
+     "Một lần khi sản xuất, nhập khẩu"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

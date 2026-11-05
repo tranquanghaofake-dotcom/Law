@@ -22,6 +22,30 @@
   "xem xét lại pháp lệnh trong 10 ngày",
   "không có quyền phủ quyết luật"
  ],
+ "memo": {
+  "hook": "KHÔNG phủ quyết luật; chỉ được đề nghị xem xét lại PHÁP LỆNH trong 10 ngày.",
+  "tree": [
+   {
+    "label": "Luật, Hiến pháp",
+    "children": [
+     "Chỉ công bố"
+    ]
+   },
+   {
+    "label": "Pháp lệnh",
+    "children": [
+     "Đề nghị xem xét lại trong 10 ngày",
+     "Vẫn không nhất trí: trình Quốc hội"
+    ]
+   },
+   {
+    "label": "Khác tổng thống Mỹ",
+    "children": [
+     "Không có quyền phủ quyết luật"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

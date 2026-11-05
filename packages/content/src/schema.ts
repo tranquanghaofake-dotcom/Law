@@ -75,6 +75,12 @@ export const itemSchema = z.discriminatedUnion('type', [
 
 const slug = z.string().regex(/^[a-z0-9-]+$/, 'id chỉ gồm chữ thường, số, gạch nối');
 
+const memoLabel = z.string().min(1).max(60, 'nhãn sơ đồ tối đa 60 ký tự');
+export const memoSchema = z.object({
+  hook: z.string().min(1).max(160, 'mẹo nhớ tối đa 160 ký tự').optional(),
+  tree: z.array(z.object({ label: memoLabel, children: z.array(memoLabel).max(4, 'mỗi nhánh tối đa 4 ý').optional() })).min(2, 'sơ đồ cần 2–6 nhánh').max(6, 'sơ đồ cần 2–6 nhánh').optional(),
+}).refine((m) => !!m.hook || !!m.tree, { message: 'memo cần hook hoặc tree' });
+
 export const conceptSchema = z.object({
   id: slug,
   subject: slug,
@@ -89,6 +95,8 @@ export const conceptSchema = z.object({
   keywords: z.array(z.string().min(1)),
   // Ghi chú khi luật hiện hành đã khác giáo trình (giáo trình là kim chỉ nam, luật mới ghi kèm).
   note: z.string().min(1).optional(),
+  // Sơ đồ/mẹo nhớ do người soạn: DIỄN GIẢI để học, không phải nguyên văn (giao diện gắn nhãn rõ).
+  memo: memoSchema.optional(),
   items: z.array(itemSchema).refine((items) => items.some((i) => i.level === 1), { message: 'thiếu item bậc 1 (mcq)' })
     .refine((items) => items.some((i) => i.level === 3), { message: 'thiếu item bậc 3 (cloze)' })
     .refine((items) => items.some((i) => i.level === 4), { message: 'thiếu item bậc 4 (case hoặc truefalse)' }),

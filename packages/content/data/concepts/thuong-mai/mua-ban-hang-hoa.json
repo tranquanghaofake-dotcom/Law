@@ -22,6 +22,32 @@
   "thanh toán, nhận hàng",
   "lời nói, văn bản, hành vi cụ thể"
  ],
+ "memo": {
+  "hook": "Bán: GIAO + CHUYỂN SỞ HỮU; Mua: TRẢ TIỀN + NHẬN HÀNG.",
+  "tree": [
+   {
+    "label": "Bên bán",
+    "children": [
+     "Giao hàng",
+     "Chuyển quyền sở hữu"
+    ]
+   },
+   {
+    "label": "Bên mua",
+    "children": [
+     "Thanh toán",
+     "Nhận hàng"
+    ]
+   },
+   {
+    "label": "Hình thức",
+    "children": [
+     "Lời nói, văn bản, hành vi",
+     "Quốc tế: bằng văn bản"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

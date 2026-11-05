@@ -22,6 +22,32 @@
   "xác lập, thay đổi, chấm dứt",
   "song vụ, đơn vụ"
  ],
+ "memo": {
+  "hook": "Hợp đồng là SỰ THỎA THUẬN; giao kết qua ĐỀ NGHỊ và CHẤP NHẬN.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Thỏa thuận giữa các bên"
+    ]
+   },
+   {
+    "label": "Hệ quả",
+    "children": [
+     "Xác lập, thay đổi, chấm dứt quyền"
+    ]
+   },
+   {
+    "label": "Phân loại",
+    "children": [
+     "Song vụ – đơn vụ",
+     "Chính – phụ",
+     "Vì lợi ích người thứ ba",
+     "Có điều kiện"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

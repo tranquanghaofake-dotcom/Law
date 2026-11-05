@@ -23,6 +23,32 @@
   "được lợi không có căn cứ pháp luật",
   "gây thiệt hại trái pháp luật"
  ],
+ "memo": {
+  "hook": "Sáu căn cứ, nhiều nhất là HỢP ĐỒNG.",
+  "tree": [
+   {
+    "label": "Thỏa thuận, ý chí",
+    "children": [
+     "Hợp đồng",
+     "Hành vi pháp lý đơn phương"
+    ]
+   },
+   {
+    "label": "Ngoài hợp đồng",
+    "children": [
+     "Thực hiện công việc không ủy quyền",
+     "Được lợi không có căn cứ",
+     "Gây thiệt hại trái pháp luật"
+    ]
+   },
+   {
+    "label": "Khác",
+    "children": [
+     "Căn cứ khác do luật định"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

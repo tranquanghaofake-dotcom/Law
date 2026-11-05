@@ -22,6 +22,33 @@
   "quản lý, điều hành, giám sát",
   "đủ 15 tuổi"
  ],
+ "memo": {
+  "hook": "Ba dấu hiệu: THỎA THUẬN – TRẢ LƯƠNG – chịu QUẢN LÝ; tuổi tối thiểu 15.",
+  "tree": [
+   {
+    "label": "Dấu hiệu",
+    "children": [
+     "Làm việc theo thỏa thuận",
+     "Được trả lương",
+     "Chịu quản lý, điều hành, giám sát"
+    ]
+   },
+   {
+    "label": "Độ tuổi",
+    "children": [
+     "Đủ 15 tuổi",
+     "Trừ lao động chưa thành niên"
+    ]
+   },
+   {
+    "label": "Người sử dụng",
+    "children": [
+     "Doanh nghiệp, tổ chức",
+     "Hộ gia đình, cá nhân"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

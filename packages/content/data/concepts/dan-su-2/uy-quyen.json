@@ -21,6 +21,30 @@
   "thù lao nếu có thỏa thuận",
   "thời hạn 01 năm nếu không thỏa thuận"
  ],
+ "memo": {
+  "hook": "Ủy quyền: làm NHÂN DANH người ủy quyền; không thỏa thuận thời hạn thì 01 NĂM.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Nhân danh bên ủy quyền"
+    ]
+   },
+   {
+    "label": "Thù lao",
+    "children": [
+     "Chỉ khi thỏa thuận hoặc luật quy định"
+    ]
+   },
+   {
+    "label": "Thời hạn",
+    "children": [
+     "Theo thỏa thuận",
+     "Không có: 01 năm"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

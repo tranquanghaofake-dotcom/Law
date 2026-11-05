@@ -24,6 +24,31 @@
   "nhận thức"
  ],
  "note": "Bộ luật Dân sự 91/2015/QH13 có hiệu lực từ 01/01/2017; chưa có văn bản sửa đổi có hiệu lực.",
+ "memo": {
+  "hook": "Năng lực HÀNH VI: TỰ MÌNH làm; phụ thuộc TUỔI và NHẬN THỨC.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Bằng hành vi của chính mình",
+     "Xác lập, thực hiện quyền"
+    ]
+   },
+   {
+    "label": "Phụ thuộc",
+    "children": [
+     "Độ tuổi",
+     "Khả năng nhận thức, điều khiển"
+    ]
+   },
+   {
+    "label": "Dân sự",
+    "children": [
+     "Từ đủ 18: đầy đủ"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -24,6 +24,27 @@
   "Hội đồng nhân dân"
  ],
  "note": "Hiến pháp 2013 (hiệu lực 01/01/2014) được sửa đổi, bổ sung bởi Nghị quyết 203/2025/QH15 (hiệu lực 16/6/2025) — các điều được trích (Điều 2, 4, 6) không thuộc phạm vi sửa đổi.",
+ "memo": {
+  "hook": "Hai đường: DÂN CHỦ TRỰC TIẾP và DÂN CHỦ ĐẠI DIỆN.",
+  "tree": [
+   {
+    "label": "Trực tiếp",
+    "children": [
+     "Trưng cầu ý dân",
+     "Bầu cử",
+     "Kiến nghị, khiếu nại"
+    ]
+   },
+   {
+    "label": "Đại diện",
+    "children": [
+     "Quốc hội",
+     "Hội đồng nhân dân",
+     "Cơ quan nhà nước khác"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

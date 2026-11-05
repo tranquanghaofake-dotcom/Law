@@ -21,6 +21,32 @@
   "hai hợp đồng khác nhau",
   "trách nhiệm bồi thường tai nạn lao động"
  ],
+ "memo": {
+  "hook": "HAI hợp đồng khác nhau: hợp đồng lao động và hợp đồng cho thuê lại.",
+  "tree": [
+   {
+    "label": "Điều kiện doanh nghiệp",
+    "children": [
+     "Ký quỹ",
+     "Giấy phép cho thuê lại"
+    ]
+   },
+   {
+    "label": "Hợp đồng lao động",
+    "children": [
+     "Doanh nghiệp cho thuê – người lao động"
+    ]
+   },
+   {
+    "label": "Hợp đồng cho thuê lại",
+    "children": [
+     "Doanh nghiệp cho thuê – bên thuê lại",
+     "Văn bản, 02 bản",
+     "Có trách nhiệm bồi thường tai nạn"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

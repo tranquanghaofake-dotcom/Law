@@ -22,6 +22,37 @@
   "công bố lý do thay đổi",
   "đồng thời báo cáo Ủy ban"
  ],
+ "memo": {
+  "hook": "Ba chữ vàng: ĐẦY ĐỦ – CHÍNH XÁC – KỊP THỜI.",
+  "tree": [
+   {
+    "label": "Yêu cầu",
+    "children": [
+     "Đầy đủ",
+     "Chính xác",
+     "Kịp thời"
+    ]
+   },
+   {
+    "label": "Trách nhiệm",
+    "children": [
+     "Người công bố chịu về nội dung"
+    ]
+   },
+   {
+    "label": "Khi sửa",
+    "children": [
+     "Công bố lý do thay đổi"
+    ]
+   },
+   {
+    "label": "Đồng thời",
+    "children": [
+     "Báo cáo Ủy ban, nơi niêm yết"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

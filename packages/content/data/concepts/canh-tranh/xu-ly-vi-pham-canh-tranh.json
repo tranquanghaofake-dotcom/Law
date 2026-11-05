@@ -23,6 +23,33 @@
   "2 tỷ đồng cạnh tranh không lành mạnh",
   "cá nhân bằng một nửa"
  ],
+ "memo": {
+  "hook": "Mức tối đa: 10% – 5% – 2 TỶ – 200 TRIỆU; cá nhân bằng MỘT NỬA.",
+  "tree": [
+   {
+    "label": "Hình thức chính",
+    "children": [
+     "Cảnh cáo",
+     "Phạt tiền"
+    ]
+   },
+   {
+    "label": "Tối đa (tổ chức)",
+    "children": [
+     "Hạn chế cạnh tranh: 10% doanh thu",
+     "Tập trung kinh tế: 05%",
+     "Không lành mạnh: 2 tỷ đồng",
+     "Vi phạm khác: 200 triệu"
+    ]
+   },
+   {
+    "label": "Cá nhân",
+    "children": [
+     "Bằng một nửa tổ chức"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

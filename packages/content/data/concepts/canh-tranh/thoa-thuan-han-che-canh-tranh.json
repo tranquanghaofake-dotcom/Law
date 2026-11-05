@@ -23,6 +23,34 @@
   "phân chia thị trường",
   "thông đồng đấu thầu"
  ],
+ "memo": {
+  "hook": "DƯỚI MỌI HÌNH THỨC: văn bản, miệng, ngầm định.",
+  "tree": [
+   {
+    "label": "Hình thức",
+    "children": [
+     "Văn bản, miệng, ngầm",
+     "Quyết định của hiệp hội"
+    ]
+   },
+   {
+    "label": "Loại chính",
+    "children": [
+     "Ấn định giá",
+     "Phân chia thị trường",
+     "Hạn chế số lượng",
+     "Thông đồng đấu thầu"
+    ]
+   },
+   {
+    "label": "Phân loại",
+    "children": [
+     "Ngang: cùng thị trường",
+     "Dọc: các công đoạn"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

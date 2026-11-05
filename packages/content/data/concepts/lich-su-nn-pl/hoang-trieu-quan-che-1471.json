@@ -24,6 +24,37 @@
   "năm phủ, sáu bộ, sáu khoa, sáu tự",
   "ràng buộc lẫn nhau"
  ],
+ "memo": {
+  "hook": "1471: Lê Thánh Tông THÂN HÀNH nắm quyền chế tác; cơ quan RÀNG BUỘC lẫn nhau.",
+  "tree": [
+   {
+    "label": "Mốc",
+    "children": [
+     "1471 (Hồng Đức)",
+     "Lê Thánh Tông"
+    ]
+   },
+   {
+    "label": "Tư tưởng",
+    "children": [
+     "Vua thân hành nắm quyền chế tác"
+    ]
+   },
+   {
+    "label": "Trung ương",
+    "children": [
+     "Năm phủ, sáu bộ",
+     "Sáu khoa, sáu tự"
+    ]
+   },
+   {
+    "label": "Nguyên tắc",
+    "children": [
+     "Ràng buộc lẫn nhau"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

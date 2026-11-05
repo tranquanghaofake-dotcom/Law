@@ -22,6 +22,27 @@
   "phân biệt đối xử",
   "trừ độc quyền nhà nước, khẩn cấp"
  ],
+ "memo": {
+  "hook": "Cơ quan nhà nước không được ÉP, KHUYẾN NGHỊ mua của doanh nghiệp CỤ THỂ.",
+  "tree": [
+   {
+    "label": "Cấm",
+    "children": [
+     "Ép buộc, yêu cầu, khuyến nghị giao dịch",
+     "Phân biệt đối xử doanh nghiệp",
+     "Ép liên kết hạn chế cạnh tranh",
+     "Lợi dụng chức vụ can thiệp"
+    ]
+   },
+   {
+    "label": "Ngoại lệ",
+    "children": [
+     "Độc quyền nhà nước",
+     "Trường hợp khẩn cấp"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

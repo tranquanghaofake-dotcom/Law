@@ -22,6 +22,31 @@
   "phụ thuộc độ tuổi",
   "hạn chế quyền chính trị của người nước ngoài"
  ],
+ "memo": {
+  "hook": "Năng lực PHÁP LUẬT từ khi sinh; năng lực HÀNH VI theo độ tuổi, sức khỏe.",
+  "tree": [
+   {
+    "label": "Năng lực pháp luật",
+    "children": [
+     "Có từ khi sinh ra",
+     "Mở rộng theo độ tuổi"
+    ]
+   },
+   {
+    "label": "Năng lực hành vi",
+    "children": [
+     "Phụ thuộc tuổi, trình độ, sức khỏe",
+     "Từ đủ 14 có thể bị xử phạt khi cố ý"
+    ]
+   },
+   {
+    "label": "Người nước ngoài",
+    "children": [
+     "Hạn chế quyền chính trị"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

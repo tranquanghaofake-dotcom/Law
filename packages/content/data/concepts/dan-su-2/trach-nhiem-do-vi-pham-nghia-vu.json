@@ -23,6 +23,33 @@
   "không đúng nội dung",
   "bất khả kháng"
  ],
+ "memo": {
+  "hook": "Ba dạng vi phạm: SAI HẠN – THIẾU – SAI NỘI DUNG.",
+  "tree": [
+   {
+    "label": "Vi phạm",
+    "children": [
+     "Không đúng thời hạn",
+     "Không đầy đủ",
+     "Không đúng nội dung"
+    ]
+   },
+   {
+    "label": "Miễn",
+    "children": [
+     "Bất khả kháng",
+     "Hoàn toàn do lỗi bên có quyền"
+    ]
+   },
+   {
+    "label": "Trách nhiệm",
+    "children": [
+     "Buộc thực hiện",
+     "Bồi thường, phạt vi phạm"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -21,6 +21,32 @@
   "chịu sự giám sát của Nhân dân",
   "hoạt động trong khuôn khổ Hiến pháp và pháp luật"
  ],
+ "memo": {
+  "hook": "Đảng LÃNH ĐẠO nhưng phải hoạt động TRONG KHUÔN KHỔ Hiến pháp, pháp luật.",
+  "tree": [
+   {
+    "label": "Vị trí",
+    "children": [
+     "Lực lượng lãnh đạo Nhà nước và xã hội"
+    ]
+   },
+   {
+    "label": "Nền tảng tư tưởng",
+    "children": [
+     "Chủ nghĩa Mác - Lênin",
+     "Tư tưởng Hồ Chí Minh"
+    ]
+   },
+   {
+    "label": "Ràng buộc",
+    "children": [
+     "Chịu giám sát của Nhân dân",
+     "Chịu trách nhiệm trước Nhân dân",
+     "Trong khuôn khổ Hiến pháp, pháp luật"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

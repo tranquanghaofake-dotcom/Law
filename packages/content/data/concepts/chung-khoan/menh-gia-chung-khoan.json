@@ -21,6 +21,30 @@
   "100 nghìn đồng",
   "Đồng Việt Nam"
  ],
+ "memo": {
+  "hook": "Mệnh giá cổ phiếu 10 NGHÌN, trái phiếu 100 NGHÌN; khác GIÁ THỊ TRƯỜNG.",
+  "tree": [
+   {
+    "label": "Đơn vị",
+    "children": [
+     "Đồng Việt Nam"
+    ]
+   },
+   {
+    "label": "Mức",
+    "children": [
+     "Cổ phiếu, chứng chỉ quỹ: 10.000 đồng",
+     "Trái phiếu: 100.000 đồng"
+    ]
+   },
+   {
+    "label": "Phân biệt",
+    "children": [
+     "Giá thị trường khác mệnh giá"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

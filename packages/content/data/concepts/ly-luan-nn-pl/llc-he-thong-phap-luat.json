@@ -22,6 +22,27 @@
   "đối tượng điều chỉnh",
   "phương pháp điều chỉnh"
  ],
+ "memo": {
+  "hook": "QUY PHẠM → CHẾ ĐỊNH → NGÀNH LUẬT → HỆ THỐNG; chia ngành theo ĐỐI TƯỢNG và PHƯƠNG PHÁP.",
+  "tree": [
+   {
+    "label": "Cấu trúc",
+    "children": [
+     "Quy phạm",
+     "Chế định",
+     "Ngành luật",
+     "Hệ thống pháp luật"
+    ]
+   },
+   {
+    "label": "Căn cứ chia ngành",
+    "children": [
+     "Đối tượng điều chỉnh",
+     "Phương pháp điều chỉnh"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

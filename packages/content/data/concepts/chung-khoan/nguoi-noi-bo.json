@@ -21,6 +21,32 @@
   "người có liên quan",
   "công bố trước và sau giao dịch"
  ],
+ "memo": {
+  "hook": "Người nội bộ (HĐQT, Tổng giám đốc, kế toán trưởng…) và người liên quan phải công bố TRƯỚC và SAU giao dịch.",
+  "tree": [
+   {
+    "label": "Là",
+    "children": [
+     "Thành viên HĐQT, Tổng giám đốc",
+     "Kế toán trưởng",
+     "Người công bố thông tin"
+    ]
+   },
+   {
+    "label": "Người có liên quan",
+    "children": [
+     "Vợ, chồng, cha mẹ, con, anh chị em"
+    ]
+   },
+   {
+    "label": "Nghĩa vụ",
+    "children": [
+     "Công bố trước giao dịch",
+     "Công bố sau giao dịch"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

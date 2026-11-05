@@ -20,6 +20,29 @@
   "phù hợp với Hiến pháp",
   "vi phạm Hiến pháp bị xử lý"
  ],
+ "memo": {
+  "hook": "Hiến pháp ở ĐỈNH THÁP văn bản pháp luật.",
+  "tree": [
+   {
+    "label": "Hiệu lực",
+    "children": [
+     "Cao nhất"
+    ]
+   },
+   {
+    "label": "Văn bản khác",
+    "children": [
+     "Phải phù hợp với Hiến pháp"
+    ]
+   },
+   {
+    "label": "Vi phạm",
+    "children": [
+     "Đều bị xử lý"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

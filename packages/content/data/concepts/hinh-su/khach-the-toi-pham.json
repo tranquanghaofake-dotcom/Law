@@ -22,6 +22,27 @@
   "chung – loại – trực tiếp",
   "con người, vật, hoạt động"
  ],
+ "memo": {
+  "hook": "KHÁCH THỂ: quan hệ xã hội bị hại; ĐỐI TƯỢNG TÁC ĐỘNG: bộ phận bị hành vi chạm tới.",
+  "tree": [
+   {
+    "label": "Ba cấp khách thể",
+    "children": [
+     "Chung",
+     "Loại (chia chương)",
+     "Trực tiếp"
+    ]
+   },
+   {
+    "label": "Đối tượng tác động",
+    "children": [
+     "Con người",
+     "Đối tượng vật chất",
+     "Hoạt động bình thường của chủ thể"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

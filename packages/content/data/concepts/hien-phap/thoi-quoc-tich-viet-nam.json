@@ -22,6 +22,33 @@
   "không được thôi",
   "cán bộ, công chức, lực lượng vũ trang"
  ],
+ "memo": {
+  "hook": "THÔI là tự nguyện, TƯỚC là chế tài; ba mức: được, chưa được, không được.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Tự nguyện xin chấm dứt"
+    ]
+   },
+   {
+    "label": "Chưa được thôi",
+    "children": [
+     "Nợ thuế, nghĩa vụ tài sản",
+     "Đang bị truy cứu hình sự",
+     "Đang chấp hành án"
+    ]
+   },
+   {
+    "label": "Không được thôi",
+    "children": [
+     "Phương hại lợi ích quốc gia",
+     "Cán bộ, công chức",
+     "Lực lượng vũ trang"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

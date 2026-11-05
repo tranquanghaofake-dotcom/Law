@@ -23,6 +23,30 @@
   "giá trị phần nghĩa vụ bị vi phạm",
   "trừ Điều 266"
  ],
+ "memo": {
+  "hook": "Phải CÓ THỎA THUẬN; tối đa 8% PHẦN NGHĨA VỤ bị vi phạm.",
+  "tree": [
+   {
+    "label": "Điều kiện",
+    "children": [
+     "Hợp đồng có thỏa thuận phạt"
+    ]
+   },
+   {
+    "label": "Mức trần",
+    "children": [
+     "8% giá trị phần nghĩa vụ vi phạm",
+     "Không phải 8% cả hợp đồng"
+    ]
+   },
+   {
+    "label": "So với BLDS",
+    "children": [
+     "BLDS không giới hạn mức phạt"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

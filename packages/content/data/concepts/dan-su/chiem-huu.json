@@ -22,6 +22,33 @@
   "ngay tình",
   "liên tục, công khai"
  ],
+ "memo": {
+  "hook": "Chiếm hữu là TÌNH TRẠNG thực tế nắm giữ, được pháp luật bảo vệ.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Nắm giữ, chi phối tài sản",
+     "Trực tiếp hoặc gián tiếp"
+    ]
+   },
+   {
+    "label": "Chủ thể",
+    "children": [
+     "Chủ sở hữu",
+     "Người không phải chủ sở hữu"
+    ]
+   },
+   {
+    "label": "Phân loại",
+    "children": [
+     "Ngay tình / không ngay tình",
+     "Liên tục",
+     "Công khai"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

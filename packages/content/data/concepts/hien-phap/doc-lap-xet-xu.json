@@ -22,6 +22,32 @@
   "chỉ tuân theo pháp luật",
   "nghiêm cấm can thiệp"
  ],
+ "memo": {
+  "hook": "ĐỘC LẬP và CHỈ TUÂN THEO PHÁP LUẬT; nghiêm cấm CAN THIỆP.",
+  "tree": [
+   {
+    "label": "Ai",
+    "children": [
+     "Thẩm phán",
+     "Hội thẩm"
+    ]
+   },
+   {
+    "label": "Vế 1",
+    "children": [
+     "Độc lập",
+     "Chỉ tuân theo pháp luật"
+    ]
+   },
+   {
+    "label": "Vế 2",
+    "children": [
+     "Nghiêm cấm can thiệp",
+     "Kể cả Tòa cấp trên trong vụ cụ thể"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

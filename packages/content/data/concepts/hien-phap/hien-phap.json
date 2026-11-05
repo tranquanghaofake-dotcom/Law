@@ -20,6 +20,29 @@
   "hiệu lực pháp lý cao nhất",
   "Điều 119"
  ],
+ "memo": {
+  "hook": "Hiến pháp là LUẬT MẸ: luật CƠ BẢN, hiệu lực CAO NHẤT.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Luật cơ bản"
+    ]
+   },
+   {
+    "label": "Hiệu lực",
+    "children": [
+     "Cao nhất"
+    ]
+   },
+   {
+    "label": "Căn cứ",
+    "children": [
+     "Khoản 1 Điều 119"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

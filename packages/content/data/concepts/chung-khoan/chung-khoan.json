@@ -22,6 +22,31 @@
   "liệt kê",
   "Chính phủ quy định loại khác"
  ],
+ "memo": {
+  "hook": "Chứng khoán là TÀI SẢN, luật định nghĩa bằng LIỆT KÊ.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Tài sản"
+    ]
+   },
+   {
+    "label": "Loại",
+    "children": [
+     "Cổ phiếu, trái phiếu, chứng chỉ quỹ",
+     "Chứng quyền, quyền mua cổ phần",
+     "Chứng khoán phái sinh"
+    ]
+   },
+   {
+    "label": "Mở",
+    "children": [
+     "Chính phủ quy định loại khác"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

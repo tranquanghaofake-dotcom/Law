@@ -23,6 +23,38 @@
   "giảm còn 8% đến 31/12/2026"
  ],
  "note": "Luật Thuế GTGT 48/2024/QH15 có hiệu lực từ 01/7/2025, thay thế Luật 13/2008/QH12; được sửa đổi bởi Luật 90/2025/QH15, Luật 149/2025/QH15, Luật 09/2026/QH16 (văn bản hợp nhất 114/VBHN-VPQH 2026); Nghị quyết 204/2025/QH15 giảm 2% thuế suất 10% xuống 8% cho nhiều nhóm hàng hóa, dịch vụ, từ 01/7/2025 đến hết 31/12/2026.",
+ "memo": {
+  "hook": "Ba mức: 0% (xuất khẩu) – 5% (thiết yếu) – 10% (phổ thông).",
+  "tree": [
+   {
+    "label": "0%",
+    "children": [
+     "Hàng, dịch vụ xuất khẩu",
+     "Được khấu trừ, hoàn thuế đầu vào"
+    ]
+   },
+   {
+    "label": "5%",
+    "children": [
+     "Nước sạch, phân bón",
+     "Thiết bị y tế"
+    ]
+   },
+   {
+    "label": "10%",
+    "children": [
+     "Mức phổ thông",
+     "Cả dịch vụ số nước ngoài"
+    ]
+   },
+   {
+    "label": "Phân biệt",
+    "children": [
+     "Không chịu thuế: không được khấu trừ"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

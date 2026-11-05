@@ -23,6 +23,32 @@
   "xác lập điều kiện lao động",
   "tiến bộ, hài hòa, ổn định"
  ],
+ "memo": {
+  "hook": "Thương lượng do TỔ CHỨC ĐẠI DIỆN làm, không phải từng người; kết quả là THỎA ƯỚC.",
+  "tree": [
+   {
+    "label": "Chủ thể",
+    "children": [
+     "Tổ chức đại diện người lao động",
+     "Người sử dụng hoặc đại diện"
+    ]
+   },
+   {
+    "label": "Mục đích",
+    "children": [
+     "Xác lập điều kiện lao động",
+     "Quan hệ hài hòa, ổn định"
+    ]
+   },
+   {
+    "label": "Kết quả",
+    "children": [
+     "Thành: thỏa ước",
+     "Không thành: tranh chấp"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

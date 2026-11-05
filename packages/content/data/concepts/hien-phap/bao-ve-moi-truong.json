@@ -22,6 +22,33 @@
   "năng lượng tái tạo",
   "gây ô nhiễm phải khắc phục, bồi thường"
  ],
+ "memo": {
+  "hook": "NGƯỜI GÂY Ô NHIỄM PHẢI TRẢ TIỀN.",
+  "tree": [
+   {
+    "label": "Nhà nước",
+    "children": [
+     "Chính sách bảo vệ môi trường",
+     "Ứng phó biến đổi khí hậu",
+     "Năng lượng mới, tái tạo"
+    ]
+   },
+   {
+    "label": "Người gây ô nhiễm",
+    "children": [
+     "Bị xử lý nghiêm",
+     "Khắc phục, bồi thường"
+    ]
+   },
+   {
+    "label": "Điều 43",
+    "children": [
+     "Quyền sống trong môi trường trong lành",
+     "Nghĩa vụ bảo vệ môi trường"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

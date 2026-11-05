@@ -23,6 +23,31 @@
   "chấm dứt tồn tại"
  ],
  "note": "Luật Doanh nghiệp 59/2020/QH14 có hiệu lực từ 01/01/2021, thay thế Luật Doanh nghiệp 2014 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 03/2022/QH15 và Luật 76/2025/QH15 (hiệu lực 01/7/2025) — văn bản hợp nhất 67/VBHN-VPQH 2025.",
+ "memo": {
+  "hook": "Hợp nhất: NHIỀU công ty → MỘT công ty MỚI; tất cả bên cũ chấm dứt.",
+  "tree": [
+   {
+    "label": "Cơ chế",
+    "children": [
+     "Hai hoặc một số công ty",
+     "Thành một công ty mới"
+    ]
+   },
+   {
+    "label": "Hệ quả",
+    "children": [
+     "Các công ty bị hợp nhất chấm dứt",
+     "Công ty mới chịu mọi nợ cũ"
+    ]
+   },
+   {
+    "label": "Phân biệt",
+    "children": [
+     "Sáp nhập: bên nhận vẫn tồn tại"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

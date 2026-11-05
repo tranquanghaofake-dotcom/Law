@@ -22,6 +22,38 @@
   "tái phạm khi chưa xóa kỷ luật",
   "bỏ việc 05 ngày cộng dồn trong 30 ngày"
  ],
+ "memo": {
+  "hook": "Sa thải NẶNG NHẤT, chỉ 4 nhóm; bỏ việc 5 ngày CỘNG DỒN trong 30 ngày.",
+  "tree": [
+   {
+    "label": "Tại nơi làm việc",
+    "children": [
+     "Trộm cắp, tham ô, đánh bạc",
+     "Cố ý gây thương tích, ma túy"
+    ]
+   },
+   {
+    "label": "Gây hại",
+    "children": [
+     "Tiết lộ bí mật",
+     "Quấy rối tình dục"
+    ]
+   },
+   {
+    "label": "Tái phạm",
+    "children": [
+     "Khi chưa xóa kỷ luật"
+    ]
+   },
+   {
+    "label": "Bỏ việc",
+    "children": [
+     "05 ngày cộng dồn trong 30 ngày",
+     "Không có lý do chính đáng"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

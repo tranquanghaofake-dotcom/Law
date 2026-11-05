@@ -22,6 +22,32 @@
   "giải thích bất lợi cho bên soạn",
   "điều khoản miễn trách nhiệm không có hiệu lực"
  ],
+ "memo": {
+  "hook": "Do MỘT BÊN soạn; điều khoản mơ hồ giải thích BẤT LỢI cho bên soạn.",
+  "tree": [
+   {
+    "label": "Đặc điểm",
+    "children": [
+     "Một bên soạn sẵn",
+     "Bên kia chấp nhận toàn bộ"
+    ]
+   },
+   {
+    "label": "Bảo vệ bên yếu",
+    "children": [
+     "Phải công khai",
+     "Giải thích bất lợi cho bên soạn",
+     "Điều khoản miễn trách vô hiệu"
+    ]
+   },
+   {
+    "label": "Ví dụ",
+    "children": [
+     "Điện, nước, viễn thông"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

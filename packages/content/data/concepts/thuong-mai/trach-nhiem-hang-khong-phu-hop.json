@@ -22,6 +22,30 @@
   "thời hạn khiếu nại",
   "trừ thỏa thuận khác"
  ],
+ "memo": {
+  "hook": "Bán chịu lỗi có TRƯỚC khi chuyển rủi ro; mua ĐÃ BIẾT lỗi thì bán không chịu.",
+  "tree": [
+   {
+    "label": "Bên bán chịu",
+    "children": [
+     "Khiếm khuyết có trước chuyển rủi ro",
+     "Kể cả phát hiện sau"
+    ]
+   },
+   {
+    "label": "Bên bán không chịu",
+    "children": [
+     "Bên mua đã biết hoặc phải biết"
+    ]
+   },
+   {
+    "label": "Giới hạn",
+    "children": [
+     "Trong thời hạn khiếu nại"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

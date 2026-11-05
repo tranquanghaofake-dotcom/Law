@@ -24,6 +24,31 @@
   "giấy phép"
  ],
  "note": "Luật Ngân hàng Nhà nước Việt Nam 46/2010/QH12 có hiệu lực từ 01/01/2011; Luật 23/2026/QH16 sửa đổi nhiều điều (Điều 4, 27, 34, 42, 44, 45, 57, 58, 62…), có hiệu lực từ 01/12/2026 — điều được trích không bị sửa.",
+ "memo": {
+  "hook": "Chỉ KẾT NỐI, TRUYỀN DẪN dữ liệu; không nhận tiền gửi, không cho vay.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Kết nối, truyền dẫn",
+     "Xử lý dữ liệu điện tử"
+    ]
+   },
+   {
+    "label": "Giữa",
+    "children": [
+     "Tổ chức cung ứng dịch vụ thanh toán",
+     "Người sử dụng dịch vụ"
+    ]
+   },
+   {
+    "label": "Điều kiện",
+    "children": [
+     "Giấy phép của Ngân hàng Nhà nước"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

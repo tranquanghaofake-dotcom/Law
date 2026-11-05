@@ -22,6 +22,33 @@
   "tổ chức của người lao động tại doanh nghiệp",
   "thương lượng tập thể"
  ],
+ "memo": {
+  "hook": "Ngoài CÔNG ĐOÀN, nay có thể lập TỔ CHỨC CỦA NGƯỜI LAO ĐỘNG tại doanh nghiệp.",
+  "tree": [
+   {
+    "label": "Đặc điểm",
+    "children": [
+     "Thành lập tự nguyện",
+     "Tại một đơn vị",
+     "Bảo vệ người lao động"
+    ]
+   },
+   {
+    "label": "Hai loại",
+    "children": [
+     "Công đoàn cơ sở",
+     "Tổ chức của người lao động tại doanh nghiệp"
+    ]
+   },
+   {
+    "label": "Nhiệm vụ",
+    "children": [
+     "Thương lượng tập thể",
+     "Đối thoại"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -24,6 +24,37 @@
   "IPO thành công"
  ],
  "note": "Luật 56/2024/QH15 (hiệu lực 01/01/2025) sửa điểm a khoản 1 Điều 32 (theo chú thích của VBHN 102/VBHN-VPQH). Bản hiện hành đòi cả vốn điều lệ đã góp từ 30 tỷ đồng và vốn chủ sở hữu từ 30 tỷ đồng. Khi đọc giáo trình 2021, đối chiếu xem giáo trình có nêu điều kiện vốn chủ sở hữu hay không.",
+ "memo": {
+  "hook": "Công ty đại chúng: VỐN 30 TỶ + 10% cho 100 NHÀ ĐẦU TƯ, hoặc IPO thành công.",
+  "tree": [
+   {
+    "label": "Loại hình",
+    "children": [
+     "Công ty cổ phần"
+    ]
+   },
+   {
+    "label": "Con đường 1",
+    "children": [
+     "Vốn điều lệ và vốn chủ sở hữu từ 30 tỷ",
+     "10% cổ phiếu do 100 nhà đầu tư nắm"
+    ]
+   },
+   {
+    "label": "Con đường 2",
+    "children": [
+     "IPO thành công"
+    ]
+   },
+   {
+    "label": "Nghĩa vụ",
+    "children": [
+     "Công bố thông tin",
+     "Lưu ký tập trung"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

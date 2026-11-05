@@ -25,6 +25,38 @@
   "bắt tội kẻ xui xiểm",
   "tự thú được tha"
  ],
+ "memo": {
+  "hook": "Già, trẻ, tàn tật được CHUỘC tội theo ba bậc tuổi; TỰ THÚ được tha.",
+  "tree": [
+   {
+    "label": "Bậc 1",
+    "children": [
+     "70 tuổi trở lên, 15 trở xuống",
+     "Tội lưu trở xuống được chuộc"
+    ]
+   },
+   {
+    "label": "Bậc 2",
+    "children": [
+     "80 tuổi trở lên, 10 trở xuống",
+     "Tội chết tâu vua"
+    ]
+   },
+   {
+    "label": "Bậc 3",
+    "children": [
+     "90 tuổi trở lên, 7 trở xuống",
+     "Bắt tội kẻ xui xiểm"
+    ]
+   },
+   {
+    "label": "Ngoại lệ",
+    "children": [
+     "Thập ác"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -21,6 +21,31 @@
   "bình đẳng trước pháp luật",
   "không bị phân biệt đối xử"
  ],
+ "memo": {
+  "hook": "Chủ thể là MỌI NGƯỜI, không chỉ công dân.",
+  "tree": [
+   {
+    "label": "Ai",
+    "children": [
+     "Mọi người",
+     "Cả người nước ngoài, không quốc tịch"
+    ]
+   },
+   {
+    "label": "Vế 1",
+    "children": [
+     "Bình đẳng trước pháp luật"
+    ]
+   },
+   {
+    "label": "Vế 2",
+    "children": [
+     "Không bị phân biệt đối xử",
+     "chính trị, dân sự, kinh tế, văn hóa, xã hội"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

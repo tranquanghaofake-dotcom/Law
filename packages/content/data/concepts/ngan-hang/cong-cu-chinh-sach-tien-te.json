@@ -25,6 +25,33 @@
   "nghiệp vụ thị trường mở"
  ],
  "note": "Luật Ngân hàng Nhà nước Việt Nam 46/2010/QH12 có hiệu lực từ 01/01/2011; Luật 23/2026/QH16 sửa đổi nhiều điều (Điều 4, 27, 34, 42, 44, 45, 57, 58, 62…), có hiệu lực từ 01/12/2026 — điều được trích không bị sửa.",
+ "memo": {
+  "hook": "Năm công cụ: TÁI CẤP VỐN – LÃI SUẤT – TỶ GIÁ – DỰ TRỮ BẮT BUỘC – THỊ TRƯỜNG MỞ.",
+  "tree": [
+   {
+    "label": "Công cụ",
+    "children": [
+     "Tái cấp vốn",
+     "Lãi suất, tỷ giá",
+     "Dự trữ bắt buộc",
+     "Nghiệp vụ thị trường mở"
+    ]
+   },
+   {
+    "label": "Hút tiền",
+    "children": [
+     "Tăng lãi suất, dự trữ",
+     "Bán giấy tờ có giá"
+    ]
+   },
+   {
+    "label": "Ai quyết định",
+    "children": [
+     "Thống đốc"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

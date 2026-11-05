@@ -22,6 +22,32 @@
   "tối đa 03 tháng tiền lương",
   "khấu trừ hằng tháng"
  ],
+ "memo": {
+  "hook": "Sơ suất, thiệt hại ≤ 10 THÁNG lương tối thiểu → bồi thường tối đa 3 THÁNG lương.",
+  "tree": [
+   {
+    "label": "Thiệt hại nhẹ",
+    "children": [
+     "Do sơ suất, không nghiêm trọng",
+     "≤ 10 tháng lương tối thiểu vùng",
+     "Bồi thường tối đa 03 tháng lương"
+    ]
+   },
+   {
+    "label": "Cách trả",
+    "children": [
+     "Khấu trừ hằng tháng",
+     "Không quá 30% lương thực trả"
+    ]
+   },
+   {
+    "label": "Căn cứ",
+    "children": [
+     "Pháp luật hoặc nội quy"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

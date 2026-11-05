@@ -22,6 +22,34 @@
   "thừa kế",
   "bồi thường ngoài hợp đồng"
  ],
+ "memo": {
+  "hook": "Thẩm quyền xét theo BA bình diện: VỤ VIỆC – CẤP – LÃNH THỔ.",
+  "tree": [
+   {
+    "label": "Theo vụ việc",
+    "children": [
+     "Dân sự",
+     "Hôn nhân gia đình",
+     "Kinh doanh thương mại",
+     "Lao động"
+    ]
+   },
+   {
+    "label": "Tranh chấp dân sự",
+    "children": [
+     "Giao dịch, hợp đồng",
+     "Thừa kế",
+     "Bồi thường ngoài hợp đồng"
+    ]
+   },
+   {
+    "label": "Lưu ý",
+    "children": [
+     "Sở hữu trí tuệ vì lợi nhuận: thương mại"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

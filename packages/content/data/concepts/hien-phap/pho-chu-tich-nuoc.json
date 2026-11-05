@@ -22,6 +22,31 @@
   "giữ quyền Chủ tịch nước",
   "khuyết Chủ tịch nước"
  ],
+ "memo": {
+  "hook": "Phó Chủ tịch nước GIỮ QUYỀN Chủ tịch nước trong 2 trường hợp.",
+  "tree": [
+   {
+    "label": "Bầu",
+    "children": [
+     "Quốc hội bầu trong số đại biểu"
+    ]
+   },
+   {
+    "label": "Nhiệm vụ",
+    "children": [
+     "Giúp Chủ tịch nước",
+     "Được ủy nhiệm một số việc"
+    ]
+   },
+   {
+    "label": "Giữ quyền Chủ tịch nước",
+    "children": [
+     "Chủ tịch nước không làm việc được thời gian dài",
+     "Khuyết Chủ tịch nước"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

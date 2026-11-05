@@ -24,6 +24,37 @@
   "không được đòi thêm giấy tờ"
  ],
  "note": "Luật Doanh nghiệp 1999 có hiệu lực từ 01/01/2000, đã hết hiệu lực (thay bằng Luật Doanh nghiệp 2005); hiện hành là Luật Doanh nghiệp 59/2020/QH14 (đã được sửa đổi). Học để hiểu lịch sử.",
+ "memo": {
+  "hook": "Luật DN 1999: bỏ XIN PHÉP, chuyển sang ĐĂNG KÝ; tự do kinh doanh ngành không cấm.",
+  "tree": [
+   {
+    "label": "Mốc",
+    "children": [
+     "12/6/1999",
+     "Hiệu lực 01/01/2000"
+    ]
+   },
+   {
+    "label": "Bước ngoặt",
+    "children": [
+     "Bỏ xin phép thành lập",
+     "Đăng ký kinh doanh"
+    ]
+   },
+   {
+    "label": "Doanh nghiệp",
+    "children": [
+     "Tự chủ đăng ký ngành nghề"
+    ]
+   },
+   {
+    "label": "Cơ quan đăng ký",
+    "children": [
+     "Không đòi thêm giấy tờ"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -24,6 +24,33 @@
   "bảo lưu quyền sở hữu, cầm giữ",
   "hiệu lực đối kháng"
  ],
+ "memo": {
+  "hook": "Chín biện pháp: ĐỐI VẬT (7, bằng tài sản) và ĐỐI NHÂN (2: bảo lãnh, tín chấp).",
+  "tree": [
+   {
+    "label": "Đối vật",
+    "children": [
+     "Cầm cố, thế chấp",
+     "Đặt cọc, ký cược, ký quỹ",
+     "Bảo lưu quyền sở hữu",
+     "Cầm giữ tài sản"
+    ]
+   },
+   {
+    "label": "Đối nhân",
+    "children": [
+     "Bảo lãnh",
+     "Tín chấp"
+    ]
+   },
+   {
+    "label": "Đối kháng",
+    "children": [
+     "Từ khi đăng ký hoặc nắm giữ"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

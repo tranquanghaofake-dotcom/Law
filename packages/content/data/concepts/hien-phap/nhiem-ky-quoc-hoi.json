@@ -23,6 +23,31 @@
   "2/3 để rút ngắn, kéo dài",
   "không quá 12 tháng"
  ],
+ "memo": {
+  "hook": "5 NĂM; khóa mới bầu xong trước 60 NGÀY; kéo dài tối đa 12 THÁNG.",
+  "tree": [
+   {
+    "label": "Nhiệm kỳ",
+    "children": [
+     "Năm năm"
+    ]
+   },
+   {
+    "label": "Bầu khóa mới",
+    "children": [
+     "Xong 60 ngày trước khi hết nhiệm kỳ"
+    ]
+   },
+   {
+    "label": "Rút ngắn, kéo dài",
+    "children": [
+     "Ít nhất 2/3 tổng số đại biểu",
+     "Theo đề nghị Ủy ban thường vụ",
+     "Kéo dài không quá 12 tháng, trừ chiến tranh"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

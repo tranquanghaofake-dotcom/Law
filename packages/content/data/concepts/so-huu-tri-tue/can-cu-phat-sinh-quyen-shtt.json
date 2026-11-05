@@ -22,6 +22,36 @@
   "bảo hộ tự động"
  ],
  "note": "Điều 6 có nội dung được sửa đổi, bổ sung bởi Luật 42/2019/QH14 (hiệu lực 01/11/2019); Luật 131/2025/QH15 (hiệu lực 01/4/2026) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
+ "memo": {
+  "hook": "Quyền TÁC GIẢ: TỰ ĐỘNG khi sáng tạo; SÁNG CHẾ, NHÃN HIỆU: phải ĐĂNG KÝ.",
+  "tree": [
+   {
+    "label": "Quyền tác giả",
+    "children": [
+     "Phát sinh khi sáng tạo và định hình",
+     "Không cần đăng ký"
+    ]
+   },
+   {
+    "label": "Đăng ký",
+    "children": [
+     "Chỉ là chứng cứ"
+    ]
+   },
+   {
+    "label": "Sở hữu công nghiệp",
+    "children": [
+     "Sáng chế, kiểu dáng, nhãn hiệu: văn bằng"
+    ]
+   },
+   {
+    "label": "Ngoại lệ",
+    "children": [
+     "Nhãn hiệu nổi tiếng: do sử dụng"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

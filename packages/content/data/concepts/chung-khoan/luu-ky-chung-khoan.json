@@ -21,6 +21,32 @@
   "lưu ký tập trung",
   "trước khi giao dịch"
  ],
+ "memo": {
+  "hook": "Lưu ký = GỬI GIỮ chứng khoán (bút toán điện tử); phải lưu ký TẬP TRUNG TRƯỚC khi giao dịch.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Ký gửi, bảo quản",
+     "Chuyển giao",
+     "Giúp thực hiện quyền"
+    ]
+   },
+   {
+    "label": "Bắt buộc",
+    "children": [
+     "Lưu ký tập trung",
+     "Trước khi giao dịch"
+    ]
+   },
+   {
+    "label": "Qua",
+    "children": [
+     "Thành viên lưu ký"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

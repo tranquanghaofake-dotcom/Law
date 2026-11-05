@@ -23,6 +23,26 @@
   "giao dịch trực tuyến",
   "phải được Ủy ban chấp thuận"
  ],
+ "memo": {
+  "hook": "Dịch vụ RỦI RO CAO (margin, ứng trước) phải được ỦY BAN chấp thuận.",
+  "tree": [
+   {
+    "label": "Dịch vụ",
+    "children": [
+     "Cho vay mua chứng khoán (margin)",
+     "Ứng trước tiền bán",
+     "Giao dịch trực tuyến"
+    ]
+   },
+   {
+    "label": "Điều kiện",
+    "children": [
+     "Có nghiệp vụ môi giới",
+     "Ủy ban chấp thuận"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

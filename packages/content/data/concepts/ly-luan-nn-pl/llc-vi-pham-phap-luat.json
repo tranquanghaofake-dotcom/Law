@@ -23,6 +23,27 @@
   "có lỗi",
   "năng lực trách nhiệm pháp lý"
  ],
+ "memo": {
+  "hook": "Bốn dấu hiệu, thiếu một là KHÔNG vi phạm: HÀNH VI – TRÁI LUẬT – NĂNG LỰC – LỖI.",
+  "tree": [
+   {
+    "label": "Dấu hiệu",
+    "children": [
+     "Hành vi xác định",
+     "Trái pháp luật",
+     "Chủ thể có năng lực trách nhiệm",
+     "Có lỗi"
+    ]
+   },
+   {
+    "label": "Không phải vi phạm",
+    "children": [
+     "Chỉ là ý nghĩ",
+     "Hiện tượng tự nhiên"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

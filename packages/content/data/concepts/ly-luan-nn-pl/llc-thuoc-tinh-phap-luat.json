@@ -22,6 +22,32 @@
   "hệ thống",
   "xác định về hình thức"
  ],
+ "memo": {
+  "hook": "Pháp luật khác đạo đức ở: QUYỀN LỰC NHÀ NƯỚC – QUY PHẠM PHỔ BIẾN – HỆ THỐNG – XÁC ĐỊNH HÌNH THỨC.",
+  "tree": [
+   {
+    "label": "Nguồn gốc",
+    "children": [
+     "Quyền lực nhà nước",
+     "Tính ý chí"
+    ]
+   },
+   {
+    "label": "Cấu tạo",
+    "children": [
+     "Quy phạm phổ biến",
+     "Tính hệ thống",
+     "Xác định về hình thức"
+    ]
+   },
+   {
+    "label": "Phân biệt",
+    "children": [
+     "Đạo đức, tập quán, điều lệ"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -22,6 +22,40 @@
   "khiển trách, kéo dài nâng lương, cách chức, sa thải",
   "cấm phạt tiền, cắt lương"
  ],
+ "memo": {
+  "hook": "Bốn hình thức: KHIỂN TRÁCH → KÉO DÀI NÂNG LƯƠNG → CÁCH CHỨC → SA THẢI; CẤM phạt tiền.",
+  "tree": [
+   {
+    "label": "Nội dung",
+    "children": [
+     "Tuân theo thời gian, công nghệ",
+     "Điều hành sản xuất"
+    ]
+   },
+   {
+    "label": "Nằm trong",
+    "children": [
+     "Nội quy lao động",
+     "Pháp luật"
+    ]
+   },
+   {
+    "label": "Hình thức",
+    "children": [
+     "Khiển trách",
+     "Kéo dài nâng lương ≤ 06 tháng",
+     "Cách chức",
+     "Sa thải"
+    ]
+   },
+   {
+    "label": "Cấm",
+    "children": [
+     "Phạt tiền, cắt lương"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

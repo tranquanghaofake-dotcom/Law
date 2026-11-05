@@ -23,6 +23,36 @@
   "10 năm xác nhận, bác bỏ",
   "03 năm nghĩa vụ tài sản"
  ],
+ "memo": {
+  "hook": "Chia di sản: 30 NĂM bất động sản, 10 NĂM động sản; nghĩa vụ người chết: 3 NĂM.",
+  "tree": [
+   {
+    "label": "Chia di sản",
+    "children": [
+     "Bất động sản: 30 năm",
+     "Động sản: 10 năm"
+    ]
+   },
+   {
+    "label": "Xác nhận, bác bỏ quyền",
+    "children": [
+     "10 năm"
+    ]
+   },
+   {
+    "label": "Nghĩa vụ tài sản người chết",
+    "children": [
+     "03 năm"
+    ]
+   },
+   {
+    "label": "Mốc tính",
+    "children": [
+     "Thời điểm mở thừa kế"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

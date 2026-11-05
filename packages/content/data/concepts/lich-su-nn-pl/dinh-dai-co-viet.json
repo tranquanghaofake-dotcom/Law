@@ -24,6 +24,37 @@
   "Hoa Lư",
   "Đại Thắng Minh Hoàng Đế"
  ],
+ "memo": {
+  "hook": "968: Đinh Bộ Lĩnh xưng ĐẾ, quốc hiệu ĐẠI CỒ VIỆT, đô HOA LƯ.",
+  "tree": [
+   {
+    "label": "Mốc",
+    "children": [
+     "968",
+     "Dẹp 12 sứ quân"
+    ]
+   },
+   {
+    "label": "Quốc hiệu",
+    "children": [
+     "Đại Cồ Việt"
+    ]
+   },
+   {
+    "label": "Kinh đô",
+    "children": [
+     "Hoa Lư"
+    ]
+   },
+   {
+    "label": "Ý nghĩa",
+    "children": [
+     "Xưng đế ngang phương Bắc",
+     "Triều đại chính thống đầu tiên"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

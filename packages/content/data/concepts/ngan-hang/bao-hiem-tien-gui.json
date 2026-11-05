@@ -25,6 +25,36 @@
   "phí bảo hiểm tiền gửi"
  ],
  "note": "Luật Bảo hiểm tiền gửi 111/2025/QH15 có hiệu lực từ 01/5/2026, thay thế Luật Bảo hiểm tiền gửi 06/2012/QH13 mà đề cương HLU 2021 còn dẫn.",
+ "memo": {
+  "hook": "BẮT BUỘC, chỉ trả TRONG HẠN MỨC, chỉ cho CÁ NHÂN.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Bảo đảm hoàn trả tiền gửi",
+     "Trong hạn mức chi trả"
+    ]
+   },
+   {
+    "label": "Người được bảo hiểm",
+    "children": [
+     "Cá nhân có tiền gửi được bảo hiểm"
+    ]
+   },
+   {
+    "label": "Phải tham gia",
+    "children": [
+     "Tổ chức tín dụng nhận tiền gửi cá nhân"
+    ]
+   },
+   {
+    "label": "Không phải tham gia",
+    "children": [
+     "Ngân hàng chính sách"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

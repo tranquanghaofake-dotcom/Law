@@ -22,6 +22,25 @@
   "không cần sự đồng ý của bên kia",
   "chịu trách nhiệm trước Nhà nước"
  ],
+ "memo": {
+  "hook": "Ít nhất MỘT bên mang QUYỀN LỰC nhà nước; KHÔNG cần bên kia đồng ý.",
+  "tree": [
+   {
+    "label": "Đặc điểm",
+    "children": [
+     "Một bên mang quyền lực nhà nước",
+     "Phát sinh theo yêu cầu của bất kỳ bên nào",
+     "Không cần sự đồng ý của bên kia"
+    ]
+   },
+   {
+    "label": "Vi phạm",
+    "children": [
+     "Chịu trách nhiệm trước Nhà nước"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

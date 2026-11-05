@@ -23,6 +23,37 @@
   "20% trong 01 năm"
  ],
  "note": "Luật 56/2024/QH15 (hiệu lực 01/01/2025) bổ sung điểm k khoản 1 Điều 18: hồ sơ IPO phải có báo cáo về vốn điều lệ đã góp được kiểm toán bởi tổ chức kiểm toán độc lập. Giáo trình 2021 chưa có yêu cầu này. Các điểm a–i khoản 1 Điều 15 không đổi.",
+ "memo": {
+  "hook": "IPO: VỐN 30 TỶ – 2 NĂM CÓ LÃI – 15% bán cho 100 NHÀ ĐẦU TƯ.",
+  "tree": [
+   {
+    "label": "Vốn",
+    "children": [
+     "Vốn điều lệ đã góp từ 30 tỷ"
+    ]
+   },
+   {
+    "label": "Kinh doanh",
+    "children": [
+     "02 năm liền có lãi",
+     "Không lỗ lũy kế"
+    ]
+   },
+   {
+    "label": "Phân phối",
+    "children": [
+     "15% cho ít nhất 100 nhà đầu tư",
+     "10% nếu vốn từ 1.000 tỷ"
+    ]
+   },
+   {
+    "label": "Khác",
+    "children": [
+     "Tổng 9 điều kiện"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

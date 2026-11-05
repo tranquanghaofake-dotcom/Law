@@ -22,6 +22,31 @@
   "không phải chịu TNHS",
   "rượu, bia vẫn chịu TNHS"
  ],
+ "memo": {
+  "hook": "Bệnh làm MẤT nhận thức/điều khiển → không chịu; SAY RƯỢU vẫn chịu.",
+  "tree": [
+   {
+    "label": "Dấu hiệu",
+    "children": [
+     "Y học: mắc bệnh tâm thần, bệnh khác",
+     "Tâm lý: mất nhận thức hoặc điều khiển"
+    ]
+   },
+   {
+    "label": "Hệ quả",
+    "children": [
+     "Không chịu trách nhiệm hình sự",
+     "Có thể bắt buộc chữa bệnh"
+    ]
+   },
+   {
+    "label": "Vẫn chịu",
+    "children": [
+     "Do rượu, bia, chất kích thích"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

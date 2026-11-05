@@ -21,6 +21,31 @@
   "Nhà nước xác nhận",
   "quyền sử dụng đất hợp pháp"
  ],
+ "memo": {
+  "hook": "Sổ đỏ XÁC NHẬN quyền, KHÔNG TẠO RA quyền.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Chứng thư pháp lý",
+     "Nhà nước xác nhận quyền hợp pháp"
+    ]
+   },
+   {
+    "label": "Vai trò",
+    "children": [
+     "Điều kiện chuyển nhượng, thế chấp"
+    ]
+   },
+   {
+    "label": "Cấp cho",
+    "children": [
+     "Người có giấy tờ",
+     "Không giấy tờ nhưng dùng ổn định"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

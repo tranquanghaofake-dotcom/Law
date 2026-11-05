@@ -23,6 +23,32 @@
   "người sử dụng lao động ở nước ngoài"
  ],
  "note": "Luật 69/2020/QH14 có hiệu lực từ 01/01/2022, thay thế Luật 72/2006/QH11; đã được sửa đổi bởi Luật 22/2026/QH16 (hiệu lực 01/3/2027, VBHN 145/2026/VBHN-LQ-VPQH); điều được trích chưa thay đổi đến 02/11/2026.",
+ "memo": {
+  "hook": "CÔNG DÂN Việt Nam, từ đủ 18 TUỔI, CƯ TRÚ tại Việt Nam.",
+  "tree": [
+   {
+    "label": "Người lao động",
+    "children": [
+     "Công dân Việt Nam",
+     "Từ đủ 18 tuổi",
+     "Cư trú tại Việt Nam"
+    ]
+   },
+   {
+    "label": "Người sử dụng",
+    "children": [
+     "Doanh nghiệp, tổ chức, cá nhân ở nước ngoài"
+    ]
+   },
+   {
+    "label": "Quyền chính",
+    "children": [
+     "Được bảo hộ",
+     "Chấm dứt khi bị ngược đãi, cưỡng bức"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -22,6 +22,32 @@
   "văn bản của Bộ trưởng, Ủy ban nhân dân",
   "nghị quyết Hội đồng nhân dân tỉnh chỉ đình chỉ"
  ],
+ "memo": {
+  "hook": "Văn bản hành chính: đình chỉ HOẶC bãi bỏ. Nghị quyết HĐND tỉnh: CHỈ đình chỉ.",
+  "tree": [
+   {
+    "label": "Đình chỉ hoặc bãi bỏ",
+    "children": [
+     "Văn bản Bộ trưởng",
+     "Văn bản Ủy ban nhân dân tỉnh",
+     "Văn bản Chủ tịch Ủy ban nhân dân tỉnh"
+    ]
+   },
+   {
+    "label": "Chỉ đình chỉ",
+    "children": [
+     "Nghị quyết Hội đồng nhân dân tỉnh",
+     "Đề nghị Ủy ban thường vụ bãi bỏ"
+    ]
+   },
+   {
+    "label": "Điều kiện",
+    "children": [
+     "Trái Hiến pháp, luật, văn bản cấp trên"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

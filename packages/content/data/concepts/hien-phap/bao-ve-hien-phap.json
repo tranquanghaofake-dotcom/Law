@@ -21,6 +21,32 @@
   "cơ chế bảo vệ Hiến pháp do luật định",
   "không có Tòa án Hiến pháp"
  ],
+ "memo": {
+  "hook": "Bảo vệ Hiến pháp là việc của TẤT CẢ, cách làm do LUẬT định.",
+  "tree": [
+   {
+    "label": "Ai bảo vệ",
+    "children": [
+     "Quốc hội và cơ quan của Quốc hội",
+     "Chủ tịch nước, Chính phủ",
+     "Tòa án, Viện kiểm sát",
+     "toàn thể Nhân dân"
+    ]
+   },
+   {
+    "label": "Cơ chế",
+    "children": [
+     "Do luật định"
+    ]
+   },
+   {
+    "label": "Đặc thù Việt Nam",
+    "children": [
+     "Không có Tòa án Hiến pháp riêng"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

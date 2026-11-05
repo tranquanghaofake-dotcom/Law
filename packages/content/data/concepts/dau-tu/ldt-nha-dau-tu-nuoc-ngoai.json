@@ -23,6 +23,30 @@
   "tiếp cận thị trường"
  ],
  "note": "Luật Đầu tư 143/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Đầu tư 61/2020/QH14 mà đề cương HLU 2021 còn dẫn (khoản 4 Điều 51). Luật 24/2026/QH16 sửa đổi có hiệu lực từ 01/3/2027 (riêng một phần Điều 6 từ 01/01/2027), chỉ sửa Điều 6 và Phụ lục IV, không sửa điều được trích — văn bản hợp nhất 142/2026/VBHN-LQ-VPQH.",
+ "memo": {
+  "hook": "Cá nhân xét QUỐC TỊCH; tổ chức xét NƠI THÀNH LẬP.",
+  "tree": [
+   {
+    "label": "Cá nhân",
+    "children": [
+     "Quốc tịch nước ngoài"
+    ]
+   },
+   {
+    "label": "Tổ chức",
+    "children": [
+     "Thành lập theo pháp luật nước ngoài"
+    ]
+   },
+   {
+    "label": "Hệ quả",
+    "children": [
+     "Điều kiện tiếp cận thị trường",
+     "Thường phải xin Giấy chứng nhận"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

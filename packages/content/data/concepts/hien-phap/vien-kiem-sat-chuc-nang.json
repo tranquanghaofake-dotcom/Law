@@ -21,6 +21,37 @@
   "kiểm sát hoạt động tư pháp",
   "bảo vệ pháp luật"
  ],
+ "memo": {
+  "hook": "Viện kiểm sát: CÔNG TỐ + KIỂM SÁT; bảo vệ PHÁP LUẬT, không xét xử.",
+  "tree": [
+   {
+    "label": "Chức năng 1",
+    "children": [
+     "Thực hành quyền công tố",
+     "Buộc tội nhân danh Nhà nước"
+    ]
+   },
+   {
+    "label": "Chức năng 2",
+    "children": [
+     "Kiểm sát hoạt động tư pháp",
+     "Điều tra, xét xử, thi hành án"
+    ]
+   },
+   {
+    "label": "Nhiệm vụ trung tâm",
+    "children": [
+     "Bảo vệ pháp luật"
+    ]
+   },
+   {
+    "label": "Phân biệt",
+    "children": [
+     "Tòa án bảo vệ công lý"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

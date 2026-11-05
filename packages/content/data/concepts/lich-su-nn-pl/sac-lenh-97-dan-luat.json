@@ -24,6 +24,37 @@
   "thành niên 18 tuổi"
  ],
  "note": "Văn bản đã hết hiệu lực; học để hiểu lịch sử pháp luật.",
+ "memo": {
+  "hook": "Sắc lệnh 97 (22/5/1950): dân luật DÂN CHỦ: VỢ CHỒNG BÌNH ĐẲNG, phụ nữ TOÀN NĂNG LỰC.",
+  "tree": [
+   {
+    "label": "Mốc",
+    "children": [
+     "22/5/1950"
+    ]
+   },
+   {
+    "label": "Nguyên tắc",
+    "children": [
+     "Quyền dân sự hợp quyền lợi nhân dân",
+     "Vợ chồng bình đẳng",
+     "Phụ nữ có chồng toàn năng lực"
+    ]
+   },
+   {
+    "label": "Hôn nhân",
+    "children": [
+     "Thành niên lấy vợ chồng không cần cha mẹ đồng ý"
+    ]
+   },
+   {
+    "label": "Thành niên",
+    "children": [
+     "18 tuổi"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

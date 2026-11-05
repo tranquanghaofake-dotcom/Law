@@ -22,6 +22,31 @@
   "lãnh đạo thống nhất",
   "Kiểm sát viên chịu sự chỉ đạo"
  ],
+ "memo": {
+  "hook": "Viện kiểm sát: cấp dưới THEO cấp trên. Tòa án: xét xử ĐỘC LẬP.",
+  "tree": [
+   {
+    "label": "Trong một Viện",
+    "children": [
+     "Viện trưởng lãnh đạo",
+     "Kiểm sát viên chịu sự chỉ đạo"
+    ]
+   },
+   {
+    "label": "Giữa các cấp",
+    "children": [
+     "Cấp dưới chịu lãnh đạo cấp trên",
+     "Lãnh đạo thống nhất của Viện trưởng tối cao"
+    ]
+   },
+   {
+    "label": "Đối lập",
+    "children": [
+     "Thẩm phán xét xử độc lập"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

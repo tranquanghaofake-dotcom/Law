@@ -22,6 +22,31 @@
   "chỉ trả lãi nếu thỏa thuận",
   "bên vay là chủ sở hữu"
  ],
+ "memo": {
+  "hook": "Bên vay thành CHỦ SỞ HỮU; trả tài sản CÙNG LOẠI (không phải chính tài sản đó).",
+  "tree": [
+   {
+    "label": "Đặc điểm",
+    "children": [
+     "Bên vay là chủ sở hữu khi nhận",
+     "Trả tài sản cùng loại",
+     "Đúng số lượng, chất lượng"
+    ]
+   },
+   {
+    "label": "Lãi",
+    "children": [
+     "Chỉ khi thỏa thuận hoặc luật định"
+    ]
+   },
+   {
+    "label": "Phân biệt",
+    "children": [
+     "Mượn: trả chính tài sản"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

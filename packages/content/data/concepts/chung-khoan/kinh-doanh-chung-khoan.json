@@ -22,6 +22,33 @@
   "dịch vụ theo Điều 86",
   "khác đầu tư chứng khoán"
  ],
+ "memo": {
+  "hook": "Sáu nghiệp vụ: 4 của CÔNG TY CHỨNG KHOÁN + 2 của CÔNG TY QUẢN LÝ QUỸ.",
+  "tree": [
+   {
+    "label": "Công ty chứng khoán",
+    "children": [
+     "Môi giới",
+     "Tự doanh",
+     "Bảo lãnh phát hành",
+     "Tư vấn đầu tư"
+    ]
+   },
+   {
+    "label": "Công ty quản lý quỹ",
+    "children": [
+     "Quản lý quỹ",
+     "Quản lý danh mục"
+    ]
+   },
+   {
+    "label": "Tính chất",
+    "children": [
+     "Kinh doanh có điều kiện"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -23,6 +23,31 @@
   "kiểm soát và trợ giúp"
  ],
  "note": "Luật Thương mại 36/2005/QH11 có hiệu lực từ 01/01/2006, sửa đổi bởi Luật 05/2017/QH14 và Luật 44/2019/QH14 (hiệu lực 01/01/2021) — văn bản hợp nhất 113/VBHN-VPQH 2025.",
+ "memo": {
+  "hook": "Nhượng quyền = chuyển CẢ MÔ HÌNH kinh doanh, kèm KIỂM SOÁT và TRỢ GIÚP.",
+  "tree": [
+   {
+    "label": "Bên nhận được dùng",
+    "children": [
+     "Nhãn hiệu, tên thương mại",
+     "Bí quyết, khẩu hiệu"
+    ]
+   },
+   {
+    "label": "Bên nhượng",
+    "children": [
+     "Kiểm soát",
+     "Trợ giúp"
+    ]
+   },
+   {
+    "label": "Khác li-xăng",
+    "children": [
+     "Chuyển cả cách tổ chức kinh doanh"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

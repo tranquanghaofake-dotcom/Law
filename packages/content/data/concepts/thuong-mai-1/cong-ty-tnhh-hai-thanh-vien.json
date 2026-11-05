@@ -22,6 +22,42 @@
   "hạn chế chuyển nhượng phần vốn góp",
   "tư cách pháp nhân"
  ],
+ "memo": {
+  "hook": "2–50 THÀNH VIÊN; hữu hạn; muốn bán vốn phải CHÀO thành viên cũ trước.",
+  "tree": [
+   {
+    "label": "Thành viên",
+    "children": [
+     "02 đến 50",
+     "Tổ chức, cá nhân"
+    ]
+   },
+   {
+    "label": "Trách nhiệm",
+    "children": [
+     "Trong phạm vi vốn đã góp"
+    ]
+   },
+   {
+    "label": "Chuyển nhượng",
+    "children": [
+     "Chào bán thành viên còn lại trước"
+    ]
+   },
+   {
+    "label": "Góp vốn",
+    "children": [
+     "Trong 90 ngày"
+    ]
+   },
+   {
+    "label": "Không được",
+    "children": [
+     "Phát hành cổ phần"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

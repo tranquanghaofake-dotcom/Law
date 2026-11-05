@@ -23,6 +23,37 @@
   "nhu cầu chung của thành viên",
   "tổ hợp tác ít nhất 02 thành viên"
  ],
+ "memo": {
+  "hook": "Ba mức: TỔ HỢP TÁC (≥2, không pháp nhân) → HỢP TÁC XÃ (≥5) → LIÊN HIỆP (≥3 HTX).",
+  "tree": [
+   {
+    "label": "Tổ hợp tác",
+    "children": [
+     "Ít nhất 02 thành viên",
+     "Không có pháp nhân"
+    ]
+   },
+   {
+    "label": "Hợp tác xã",
+    "children": [
+     "Ít nhất 05 thành viên chính thức",
+     "Có pháp nhân"
+    ]
+   },
+   {
+    "label": "Liên hiệp",
+    "children": [
+     "Ít nhất 03 hợp tác xã"
+    ]
+   },
+   {
+    "label": "Mục đích",
+    "children": [
+     "Nhu cầu chung của thành viên"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

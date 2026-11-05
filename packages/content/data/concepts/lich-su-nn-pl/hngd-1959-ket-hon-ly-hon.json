@@ -23,6 +23,33 @@
   "hạn chế quyền ly hôn của chồng"
  ],
  "note": "Luật Hôn nhân và gia đình 1959 đã hết hiệu lực; hiện hành là Luật Hôn nhân và gia đình 52/2014/QH13. Học để hiểu lịch sử.",
+ "memo": {
+  "hook": "Luật HNGĐ 1959: nữ 18, nam 20; kết hôn phải ĐĂNG KÝ, cưới theo phong tục KHÔNG có giá trị pháp lý.",
+  "tree": [
+   {
+    "label": "Điều kiện",
+    "children": [
+     "Tự nguyện",
+     "Nữ từ 18, nam từ 20",
+     "Không đang có vợ, chồng"
+    ]
+   },
+   {
+    "label": "Hình thức",
+    "children": [
+     "Đăng ký tại Ủy ban hành chính",
+     "Nghi lễ khác không có giá trị"
+    ]
+   },
+   {
+    "label": "Ly hôn",
+    "children": [
+     "Tòa án giải quyết",
+     "Hạn chế quyền ly hôn của chồng"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -23,6 +23,33 @@
   "thông tư",
   "kiểm tra, xử lý văn bản trái pháp luật"
  ],
+ "memo": {
+  "hook": "Chính phủ: NGHỊ ĐỊNH; Thủ tướng: QUYẾT ĐỊNH; Bộ trưởng: THÔNG TƯ.",
+  "tree": [
+   {
+    "label": "Hình thức",
+    "children": [
+     "Chính phủ: nghị định",
+     "Thủ tướng: quyết định",
+     "Bộ trưởng: thông tư"
+    ]
+   },
+   {
+    "label": "Kèm nghĩa vụ",
+    "children": [
+     "Kiểm tra việc thi hành",
+     "Xử lý văn bản trái pháp luật"
+    ]
+   },
+   {
+    "label": "Bị kiểm soát",
+    "children": [
+     "Ủy ban thường vụ đình chỉ",
+     "Quốc hội bãi bỏ"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

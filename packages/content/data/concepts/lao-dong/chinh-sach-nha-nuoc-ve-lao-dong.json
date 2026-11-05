@@ -22,6 +22,26 @@
   "quyền của người sử dụng lao động",
   "trách nhiệm xã hội"
  ],
+ "memo": {
+  "hook": "Bảo vệ NGƯỜI LAO ĐỘNG nhưng cũng bảo vệ NGƯỜI SỬ DỤNG; khuyến khích thỏa thuận CÓ LỢI HƠN.",
+  "tree": [
+   {
+    "label": "Nguyên tắc (học thuyết)",
+    "children": [
+     "Bảo vệ người lao động",
+     "Bảo vệ người sử dụng lao động",
+     "Hài hòa kinh tế – xã hội",
+     "Phù hợp chuẩn mực quốc tế"
+    ]
+   },
+   {
+    "label": "Khuyến khích",
+    "children": [
+     "Thỏa thuận có lợi hơn luật"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

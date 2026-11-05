@@ -22,6 +22,39 @@
   "sự việc đã được giải quyết",
   "khiếu nại, kiến nghị"
  ],
+ "memo": {
+  "hook": "Trả đơn khi KHÔNG CÓ QUYỀN, CHƯA ĐỦ ĐIỀU KIỆN, ĐÃ GIẢI QUYẾT, SAI THẨM QUYỀN.",
+  "tree": [
+   {
+    "label": "Người kiện",
+    "children": [
+     "Không có quyền khởi kiện",
+     "Thiếu năng lực hành vi tố tụng"
+    ]
+   },
+   {
+    "label": "Vụ việc",
+    "children": [
+     "Chưa đủ điều kiện khởi kiện",
+     "Đã giải quyết bằng bản án",
+     "Không thuộc thẩm quyền"
+    ]
+   },
+   {
+    "label": "Thủ tục",
+    "children": [
+     "Không nộp tạm ứng án phí",
+     "Không sửa đơn"
+    ]
+   },
+   {
+    "label": "Phản đối",
+    "children": [
+     "Khiếu nại, kiến nghị"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

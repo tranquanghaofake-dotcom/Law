@@ -24,6 +24,38 @@
   "50 tỷ đồng",
   "90 ngày"
  ],
+ "memo": {
+  "hook": "Quỹ đại chúng thành lập khi có ≥ 100 NHÀ ĐẦU TƯ và ≥ 50 TỶ, huy động trong 90 NGÀY.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Chào bán chứng chỉ quỹ ra công chúng"
+    ]
+   },
+   {
+    "label": "Điều kiện",
+    "children": [
+     "Ít nhất 100 nhà đầu tư",
+     "Ít nhất 50 tỷ"
+    ]
+   },
+   {
+    "label": "Huy động",
+    "children": [
+     "Trong 90 ngày",
+     "Tiền bị phong tỏa"
+    ]
+   },
+   {
+    "label": "Loại",
+    "children": [
+     "Quỹ mở",
+     "Quỹ đóng"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

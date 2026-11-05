@@ -22,6 +22,26 @@
   "thu tài sản khi tẩu tán",
   "không tự nguyện chấp hành"
  ],
+ "memo": {
+  "hook": "Cưỡng chế khi KHÔNG TỰ NGUYỆN chấp hành quyết định xử phạt.",
+  "tree": [
+   {
+    "label": "Khi nào",
+    "children": [
+     "Không tự nguyện chấp hành"
+    ]
+   },
+   {
+    "label": "Biện pháp",
+    "children": [
+     "Khấu trừ lương, tài khoản",
+     "Kê biên để bán đấu giá",
+     "Thu tài sản bị tẩu tán",
+     "Buộc khắc phục hậu quả"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

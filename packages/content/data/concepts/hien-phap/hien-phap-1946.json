@@ -25,6 +25,40 @@
   "toàn dân phúc quyết"
  ],
  "note": "Hiến pháp đã hết hiệu lực; học để hiểu lịch sử lập hiến, không áp dụng như luật hiện hành.",
+ "memo": {
+  "hook": "Bản ĐẦU TIÊN, sửa phải đưa toàn dân PHÚC QUYẾT.",
+  "tree": [
+   {
+    "label": "Thông qua",
+    "children": [
+     "9/11/1946",
+     "Quốc hội khóa I"
+    ]
+   },
+   {
+    "label": "Ba nguyên tắc",
+    "children": [
+     "Đoàn kết toàn dân",
+     "Quyền tự do dân chủ",
+     "Chính quyền mạnh mẽ, sáng suốt"
+    ]
+   },
+   {
+    "label": "Bộ máy",
+    "children": [
+     "Nghị viện nhân dân",
+     "Chính phủ",
+     "Hội đồng nhân dân, Ủy ban hành chính"
+    ]
+   },
+   {
+    "label": "Sửa đổi",
+    "children": [
+     "Toàn dân phúc quyết"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

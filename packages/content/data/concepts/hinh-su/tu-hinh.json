@@ -23,6 +23,26 @@
   "đủ 75 tuổi"
  ],
  "note": "Khoản 3 Điều 40 được sửa đổi, bổ sung bởi Luật 86/2025/QH15 (hiệu lực 01/7/2025); câu chữ khoản 3 trong ghi chú theo VBHN 135/VBHN-VPQH 2025.",
+ "memo": {
+  "hook": "Tử hình KHÔNG áp dụng: DƯỚI 18 tuổi, phụ nữ CÓ THAI hoặc nuôi con dưới 36 tháng, người từ 75 TUỔI.",
+  "tree": [
+   {
+    "label": "Áp dụng",
+    "children": [
+     "Tội đặc biệt nghiêm trọng",
+     "An ninh, tính mạng, ma túy, tham nhũng"
+    ]
+   },
+   {
+    "label": "Không áp dụng",
+    "children": [
+     "Người dưới 18 tuổi khi phạm tội",
+     "Phụ nữ có thai, nuôi con dưới 36 tháng",
+     "Người đủ 75 tuổi trở lên"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

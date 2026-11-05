@@ -23,6 +23,32 @@
   "phát hiện bằng thiết bị kỹ thuật phải lập biên bản",
   "07 ngày làm việc"
  ],
+ "memo": {
+  "hook": "Không lập biên bản: CẢNH CÁO hoặc phạt ≤ 500 NGHÌN (cá nhân) / 1 TRIỆU (tổ chức).",
+  "tree": [
+   {
+    "label": "Không lập biên bản",
+    "children": [
+     "Cảnh cáo",
+     "Cá nhân ≤ 500.000 đồng",
+     "Tổ chức ≤ 1.000.000 đồng"
+    ]
+   },
+   {
+    "label": "Phải lập biên bản",
+    "children": [
+     "Trường hợp còn lại",
+     "Phát hiện bằng camera"
+    ]
+   },
+   {
+    "label": "Ra quyết định",
+    "children": [
+     "07 ngày làm việc"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

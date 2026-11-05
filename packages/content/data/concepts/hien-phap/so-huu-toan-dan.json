@@ -23,6 +23,33 @@
   "thống nhất quản lý",
   "tài sản công"
  ],
+ "memo": {
+  "hook": "TOÀN DÂN là chủ sở hữu; NHÀ NƯỚC là ĐẠI DIỆN.",
+  "tree": [
+   {
+    "label": "Chủ sở hữu",
+    "children": [
+     "Toàn dân"
+    ]
+   },
+   {
+    "label": "Nhà nước",
+    "children": [
+     "Đại diện chủ sở hữu",
+     "Thống nhất quản lý"
+    ]
+   },
+   {
+    "label": "Đối tượng",
+    "children": [
+     "Đất đai",
+     "Nước, khoáng sản",
+     "Biển, vùng trời",
+     "Tài sản do Nhà nước đầu tư"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

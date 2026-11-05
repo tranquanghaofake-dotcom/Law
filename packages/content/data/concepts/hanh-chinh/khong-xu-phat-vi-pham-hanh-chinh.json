@@ -23,6 +23,26 @@
   "sự kiện bất ngờ, bất khả kháng",
   "không có năng lực trách nhiệm hành chính"
  ],
+ "memo": {
+  "hook": "Năm trường hợp: CẤP THIẾT – PHÒNG VỆ – BẤT NGỜ – BẤT KHẢ KHÁNG – KHÔNG NĂNG LỰC.",
+  "tree": [
+   {
+    "label": "Không xử phạt",
+    "children": [
+     "Tình thế cấp thiết",
+     "Phòng vệ chính đáng",
+     "Sự kiện bất ngờ, bất khả kháng",
+     "Không có năng lực, chưa đủ tuổi"
+    ]
+   },
+   {
+    "label": "Lưu ý",
+    "children": [
+     "Vượt quá giới hạn vẫn bị xử phạt"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

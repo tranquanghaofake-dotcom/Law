@@ -22,6 +22,36 @@
   "21 tuổi ứng cử",
   "tính đến ngày bầu cử được công bố"
  ],
+ "memo": {
+  "hook": "18 tuổi BẦU, 21 tuổi ỨNG CỬ.",
+  "tree": [
+   {
+    "label": "Bầu cử",
+    "children": [
+     "Đủ 18 tuổi"
+    ]
+   },
+   {
+    "label": "Ứng cử",
+    "children": [
+     "Đủ 21 tuổi",
+     "Đạt tiêu chuẩn đại biểu"
+    ]
+   },
+   {
+    "label": "Mốc tính tuổi",
+    "children": [
+     "Ngày bầu cử được công bố"
+    ]
+   },
+   {
+    "label": "Chủ thể",
+    "children": [
+     "Chỉ công dân"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -24,6 +24,33 @@
   "người nội bộ"
  ],
  "note": "Luật Chứng khoán 54/2019/QH14 có hiệu lực từ 01/01/2021, sửa đổi bởi Luật 56/2024/QH15 (hiệu lực 01/01/2025) — văn bản hợp nhất 102/VBHN-VPQH 2026.",
+ "memo": {
+  "hook": "Phải công bố: CÔNG TY ĐẠI CHÚNG, bên phát hành, CỔ ĐÔNG LỚN 5%, NGƯỜI NỘI BỘ.",
+  "tree": [
+   {
+    "label": "Tổ chức phát hành",
+    "children": [
+     "Công ty đại chúng",
+     "Phát hành trái phiếu ra công chúng",
+     "Niêm yết trái phiếu"
+    ]
+   },
+   {
+    "label": "Tổ chức thị trường",
+    "children": [
+     "Công ty chứng khoán, quản lý quỹ",
+     "Sở giao dịch, lưu ký"
+    ]
+   },
+   {
+    "label": "Cá nhân",
+    "children": [
+     "Cổ đông lớn từ 5%",
+     "Người nội bộ"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

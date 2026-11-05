@@ -12,23 +12,23 @@ const c = (id: string, o: Partial<Concept> = {}): Concept => ({
 const item: StepItem = { type: 'mcq', level: 1, q: 'Câu hỏi điều kiện thứ hai?', options: ['A', 'B', 'C'], answer: 1, explain: 'Khoản 2 Điều 1.' };
 
 describe('WhyPanel', () => {
-  it('trả lời đúng: một dòng "Dấu hiệu quyết định", không khối "Vì sao"', () => {
+  it('trả lời đúng: không hiện gì (dấu hiệu đã nằm trong sơ đồ Ghi nhớ nhanh)', () => {
     const { container } = render(WhyPanel, { props: { concept: c('a'), item, correct: true, explain: 'Khoản 2 Điều 1.' } });
-    expect(container.textContent).toContain('Dấu hiệu quyết định');
-    expect(container.textContent).toContain('dấu hiệu a một');
-    expect(container.querySelector('.why')).toBeNull();
+    expect(container.textContent?.trim()).toBe('');
   });
-  it('trả lời sai: có "Vì sao?", đoạn định nghĩa nguyên văn, giải nghĩa gọn, dấu hiệu, dễ nhầm', () => {
+  it('trả lời sai: có "Vì sao?", đoạn định nghĩa nguyên văn, dễ nhầm; không lặp lời gọn/dấu hiệu', () => {
     const { container } = render(WhyPanel, { props: { concept: c('a'), item, correct: false, explain: 'Khoản 2 Điều 1.', chosen: 'KN b', confusables: [c('b')] } });
     const t = container.textContent ?? '';
     expect(t).toContain('Vì sao?');
     expect(t).toContain('điều kiện thứ hai của a');
-    expect(t).toContain('Nói gọn: Giải nghĩa a.');
-    expect(t).toContain('Bạn chọn «KN b»');
+    expect(t).not.toContain('Nói gọn');
+    expect(container.querySelector('.why-signs')).toBeNull();
+    expect(container.querySelector('.why-mixup')?.textContent).toContain('KN b');
+    expect(container.querySelectorAll('.why-mixup .mix-col')).toHaveLength(2);
   });
-  it('dễ nhầm nhưng chưa đủ dữ liệu để so dấu hiệu: chỉ nêu tên', () => {
+  it('dễ nhầm nhưng chưa đủ dữ liệu để so dấu hiệu: không thêm dòng tên (đã nằm trong "Xem thêm")', () => {
     const { container } = render(WhyPanel, { props: { concept: c('a'), item, correct: false, explain: 'x', confusables: [c('b')] } });
-    expect(container.querySelector('.why-names')?.textContent).toContain('KN b');
+    expect(container.querySelector('.why-names')).toBeNull();
     expect(container.querySelector('.why-mixup')).toBeNull();
   });
 });

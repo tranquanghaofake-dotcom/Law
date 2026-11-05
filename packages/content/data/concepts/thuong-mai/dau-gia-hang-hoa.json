@@ -22,6 +22,31 @@
   "trả giá lên",
   "đặt giá xuống"
  ],
+ "memo": {
+  "hook": "Bán CÔNG KHAI, chọn người trả giá CAO NHẤT.",
+  "tree": [
+   {
+    "label": "Mục đích",
+    "children": [
+     "Bán công khai",
+     "Chọn giá cao nhất"
+    ]
+   },
+   {
+    "label": "Phương thức",
+    "children": [
+     "Trả giá lên",
+     "Đặt giá xuống"
+    ]
+   },
+   {
+    "label": "Phân biệt",
+    "children": [
+     "Đấu giá tài sản: luật riêng"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

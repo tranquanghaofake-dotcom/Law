@@ -24,6 +24,36 @@
   "huyện, kỳ chỉ có UBHC"
  ],
  "note": "Văn bản đã hết hiệu lực; học để hiểu lịch sử pháp luật.",
+ "memo": {
+  "hook": "Sắc lệnh 63 (22/11/1945): XÃ, TỈNH có HĐND + UBHC; HUYỆN, KỲ chỉ có UBHC.",
+  "tree": [
+   {
+    "label": "Mốc",
+    "children": [
+     "22/11/1945"
+    ]
+   },
+   {
+    "label": "Cơ quan",
+    "children": [
+     "Hội đồng nhân dân: dân bầu",
+     "Ủy ban hành chính: HĐND bầu"
+    ]
+   },
+   {
+    "label": "Xã, tỉnh",
+    "children": [
+     "Có cả hai"
+    ]
+   },
+   {
+    "label": "Huyện, kỳ",
+    "children": [
+     "Chỉ có Ủy ban hành chính"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

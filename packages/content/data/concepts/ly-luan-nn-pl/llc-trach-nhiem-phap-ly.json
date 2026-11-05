@@ -26,6 +26,34 @@
   "dân sự",
   "truy cứu"
  ],
+ "memo": {
+  "hook": "Trách nhiệm pháp lý: hậu quả BẤT LỢI do VI PHẠM; bốn loại.",
+  "tree": [
+   {
+    "label": "Cơ sở",
+    "children": [
+     "Vi phạm pháp luật",
+     "Thiệt hại luật định"
+    ]
+   },
+   {
+    "label": "Đặc điểm",
+    "children": [
+     "Nhà nước lên án",
+     "Luôn bất lợi"
+    ]
+   },
+   {
+    "label": "Bốn loại",
+    "children": [
+     "Hình sự (chỉ Tòa án)",
+     "Hành chính",
+     "Dân sự",
+     "Kỷ luật"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

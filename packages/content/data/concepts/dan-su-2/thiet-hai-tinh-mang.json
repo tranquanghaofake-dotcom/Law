@@ -22,6 +22,26 @@
   "tổn thất tinh thần",
   "100 lần mức lương cơ sở"
  ],
+ "memo": {
+  "hook": "Tính mạng bị xâm phạm: CỨU CHỮA + MAI TÁNG + CẤP DƯỠNG + TỔN THẤT TINH THẦN.",
+  "tree": [
+   {
+    "label": "Vật chất",
+    "children": [
+     "Chi phí cứu chữa",
+     "Chi phí mai táng",
+     "Tiền cấp dưỡng"
+    ]
+   },
+   {
+    "label": "Tinh thần",
+    "children": [
+     "Cho người thân hàng thừa kế thứ nhất",
+     "Không thỏa thuận: tối đa 100 lần lương cơ sở"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

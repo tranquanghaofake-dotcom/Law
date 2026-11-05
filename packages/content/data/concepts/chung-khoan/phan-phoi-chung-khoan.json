@@ -22,6 +22,37 @@
   "tài khoản phong tỏa",
   "phân bổ theo tỷ lệ"
  ],
+ "memo": {
+  "hook": "Mốc phân phối: đăng ký mua ≥ 20 NGÀY, xong trong 90 NGÀY, tiền vào TÀI KHOẢN PHONG TỎA.",
+  "tree": [
+   {
+    "label": "Nguyên tắc",
+    "children": [
+     "Công bằng, công khai"
+    ]
+   },
+   {
+    "label": "Mốc",
+    "children": [
+     "Đăng ký mua tối thiểu 20 ngày",
+     "Hoàn thành trong 90 ngày",
+     "Báo cáo kết quả trong 10 ngày"
+    ]
+   },
+   {
+    "label": "Tiền mua",
+    "children": [
+     "Tài khoản phong tỏa"
+    ]
+   },
+   {
+    "label": "Vượt cung",
+    "children": [
+     "Phân bổ theo tỷ lệ"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

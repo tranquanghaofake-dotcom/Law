@@ -23,6 +23,34 @@
   "thi sát hạch",
   "03 năm không hành nghề"
  ],
+ "memo": {
+  "hook": "Ba chứng chỉ: MÔI GIỚI – PHÂN TÍCH – QUẢN LÝ QUỸ; 3 NĂM không hành nghề thì bị thu hồi.",
+  "tree": [
+   {
+    "label": "Ba loại",
+    "children": [
+     "Môi giới",
+     "Phân tích tài chính",
+     "Quản lý quỹ"
+    ]
+   },
+   {
+    "label": "Điều kiện",
+    "children": [
+     "Năng lực hành vi đầy đủ",
+     "Đại học trở lên",
+     "Thi sát hạch"
+    ]
+   },
+   {
+    "label": "Thu hồi",
+    "children": [
+     "03 năm không hành nghề",
+     "Vi phạm hành vi bị cấm"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

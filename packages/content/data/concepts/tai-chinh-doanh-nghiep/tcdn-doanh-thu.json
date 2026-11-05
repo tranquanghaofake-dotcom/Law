@@ -23,6 +23,32 @@
   "không phân biệt đã thu tiền"
  ],
  "note": "Luật Thuế TNDN 67/2025/QH15 có hiệu lực từ 01/10/2025, áp dụng từ kỳ tính thuế năm 2025, thay thế Luật 14/2008/QH12 mà đề cương còn dẫn; Điều 8, 9 không bị Luật 09/2026/QH16 sửa (đã so với văn bản hợp nhất 113/VBHN-VPQH 2026).",
+ "memo": {
+  "hook": "Ghi doanh thu khi ĐƯỢC HƯỞNG, KHÔNG phân biệt đã thu tiền hay chưa.",
+  "tree": [
+   {
+    "label": "Gồm",
+    "children": [
+     "Tiền bán hàng, gia công, dịch vụ",
+     "Trợ giá, phụ thu, phụ trội"
+    ]
+   },
+   {
+    "label": "Thời điểm",
+    "children": [
+     "Khi được hưởng",
+     "Không phân biệt đã thu tiền"
+    ]
+   },
+   {
+    "label": "Thu nhập chịu thuế",
+    "children": [
+     "Doanh thu − chi phí được trừ",
+     "Cộng thu nhập khác"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

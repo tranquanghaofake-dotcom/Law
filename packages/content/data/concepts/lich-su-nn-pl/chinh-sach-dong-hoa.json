@@ -23,6 +23,30 @@
   "lễ nghĩa",
   "đồng hóa"
  ],
+ "memo": {
+  "hook": "Tích Quang, Nhâm Diên 'dạy lễ nghĩa' — thực chất là ĐỒNG HÓA.",
+  "tree": [
+   {
+    "label": "Nhân vật",
+    "children": [
+     "Tích Quang (Giao Chỉ)",
+     "Nhâm Diên (Cửu Chân)"
+    ]
+   },
+   {
+    "label": "Sử cũ",
+    "children": [
+     "Ca ngợi dạy lễ nghĩa"
+    ]
+   },
+   {
+    "label": "Giáo trình hiện đại",
+    "children": [
+     "Chính sách đồng hóa"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

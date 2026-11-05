@@ -23,6 +23,32 @@
   "theo sự chỉ dẫn",
   "hưởng thù lao"
  ],
+ "memo": {
+  "hook": "ĐẠI DIỆN: hành động NHÂN DANH bên giao, cả hai đều là THƯƠNG NHÂN.",
+  "tree": [
+   {
+    "label": "Dấu hiệu",
+    "children": [
+     "Nhận ủy nhiệm",
+     "Nhân danh bên giao đại diện",
+     "Theo chỉ dẫn, hưởng thù lao"
+    ]
+   },
+   {
+    "label": "Chủ thể",
+    "children": [
+     "Cả hai là thương nhân"
+    ]
+   },
+   {
+    "label": "Bốn trung gian",
+    "children": [
+     "Đại diện, môi giới",
+     "Ủy thác, đại lý"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

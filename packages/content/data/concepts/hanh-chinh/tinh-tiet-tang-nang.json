@@ -22,6 +22,34 @@
   "sử dụng người chưa thành niên",
   "lợi dụng chức vụ"
  ],
+ "memo": {
+  "hook": "Tăng nặng: CÓ TỔ CHỨC, TÁI PHẠM, dùng NGƯỜI CHƯA THÀNH NIÊN, LỢI DỤNG chức vụ, dịch bệnh…",
+  "tree": [
+   {
+    "label": "Cách thực hiện",
+    "children": [
+     "Có tổ chức",
+     "Nhiều lần, tái phạm",
+     "Côn đồ"
+    ]
+   },
+   {
+    "label": "Lợi dụng",
+    "children": [
+     "Chức vụ",
+     "Chiến tranh, thiên tai, dịch bệnh",
+     "Người chưa thành niên"
+    ]
+   },
+   {
+    "label": "Sau vi phạm",
+    "children": [
+     "Tiếp tục vi phạm",
+     "Trốn tránh, che giấu"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

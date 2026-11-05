@@ -23,6 +23,38 @@
   "Thượng thư",
   "năm phủ, sáu tự"
  ],
+ "memo": {
+  "hook": "1466: SÁU BỘ Lại – Hộ – Lễ – Binh – Hình – Công, mỗi bộ có THƯỢNG THƯ.",
+  "tree": [
+   {
+    "label": "Mốc",
+    "children": [
+     "1466, Lê Thánh Tông"
+    ]
+   },
+   {
+    "label": "Sáu bộ",
+    "children": [
+     "Lại: quan lại",
+     "Hộ: ruộng đất, thuế",
+     "Lễ, Binh",
+     "Hình: xét xử; Công: xây dựng"
+    ]
+   },
+   {
+    "label": "Đứng đầu",
+    "children": [
+     "Thượng thư"
+    ]
+   },
+   {
+    "label": "Kèm theo",
+    "children": [
+     "Năm phủ, sáu tự"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

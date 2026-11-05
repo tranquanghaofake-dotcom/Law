@@ -21,6 +21,27 @@
   "chính trị – xã hội, xã hội – nghề nghiệp",
   "quyền lập hội"
  ],
+ "memo": {
+  "hook": "Tổ chức xã hội: TỰ NGUYỆN, TỰ QUẢN, KHÔNG VỤ LỢI.",
+  "tree": [
+   {
+    "label": "Nguyên tắc",
+    "children": [
+     "Tự nguyện, tự quản",
+     "Tự trang trải",
+     "Không vụ lợi"
+    ]
+   },
+   {
+    "label": "Loại",
+    "children": [
+     "Chính trị – xã hội",
+     "Xã hội – nghề nghiệp",
+     "Hội, quỹ khác"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

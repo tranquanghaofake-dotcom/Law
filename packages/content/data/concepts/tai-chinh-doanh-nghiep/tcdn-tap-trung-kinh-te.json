@@ -24,6 +24,27 @@
   "liên doanh"
  ],
  "note": "Luật Cạnh tranh 23/2018/QH14 có hiệu lực từ 01/7/2019, thay thế Luật Cạnh tranh 2004 mà đề cương còn dẫn; chưa có văn bản sửa đổi có hiệu lực.",
+ "memo": {
+  "hook": "M&A chịu HAI luật: Doanh nghiệp (thủ tục) và Cạnh tranh (thông báo).",
+  "tree": [
+   {
+    "label": "Bốn hình thức",
+    "children": [
+     "Sáp nhập",
+     "Hợp nhất",
+     "Mua lại",
+     "Liên doanh"
+    ]
+   },
+   {
+    "label": "Luật áp dụng",
+    "children": [
+     "Luật Doanh nghiệp: thủ tục",
+     "Luật Cạnh tranh: thông báo, kiểm soát"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

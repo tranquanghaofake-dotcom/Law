@@ -22,6 +22,37 @@
   "không phát hành chứng khoán",
   "mỗi cá nhân một DNTN"
  ],
+ "memo": {
+  "hook": "Một CÁ NHÂN, VÔ HẠN, KHÔNG pháp nhân, KHÔNG phát hành chứng khoán, MỖI người một cái.",
+  "tree": [
+   {
+    "label": "Chủ",
+    "children": [
+     "Một cá nhân"
+    ]
+   },
+   {
+    "label": "Trách nhiệm",
+    "children": [
+     "Vô hạn, toàn bộ tài sản"
+    ]
+   },
+   {
+    "label": "Tư cách",
+    "children": [
+     "Không có pháp nhân"
+    ]
+   },
+   {
+    "label": "Hạn chế",
+    "children": [
+     "Không phát hành chứng khoán",
+     "Mỗi người chỉ một DNTN",
+     "Không góp vốn vào công ty khác"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

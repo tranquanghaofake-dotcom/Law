@@ -22,6 +22,30 @@
   "03 tỷ đồng",
   "cá nhân bằng 1/2 tổ chức"
  ],
+ "memo": {
+  "hook": "Nội gián, thao túng: tối đa 10 LẦN khoản thu trái phép; vi phạm khác: 3 TỶ; cá nhân bằng MỘT NỬA.",
+  "tree": [
+   {
+    "label": "Nội gián, thao túng",
+    "children": [
+     "Tối đa 10 lần khoản thu trái phép",
+     "Không thấp hơn mức 03 tỷ"
+    ]
+   },
+   {
+    "label": "Vi phạm khác",
+    "children": [
+     "Tối đa 03 tỷ"
+    ]
+   },
+   {
+    "label": "Cá nhân",
+    "children": [
+     "Bằng 1/2 tổ chức"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

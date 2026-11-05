@@ -25,6 +25,26 @@
   "Thập đạo tướng quân",
   "quân mười đạo"
  ],
+ "memo": {
+  "hook": "971: nhà Đinh lần đầu định CẤP BẬC văn võ, tăng đạo; 974 lập quân MƯỜI ĐẠO.",
+  "tree": [
+   {
+    "label": "Mốc",
+    "children": [
+     "971: cấp bậc văn võ",
+     "974: quân mười đạo"
+    ]
+   },
+   {
+    "label": "Chức danh",
+    "children": [
+     "Định quốc công: Nguyễn Bặc",
+     "Đô hộ phủ sĩ sư: Lưu Cơ",
+     "Thập đạo tướng quân: Lê Hoàn"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

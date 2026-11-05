@@ -22,6 +22,32 @@
   "giao đất có thu tiền",
   "cho thuê trả một lần hoặc hằng năm"
  ],
+ "memo": {
+  "hook": "Ba cách trao đất: GIAO KHÔNG THU TIỀN, GIAO CÓ THU TIỀN, CHO THUÊ.",
+  "tree": [
+   {
+    "label": "Giao không thu tiền",
+    "children": [
+     "Nông dân trong hạn mức",
+     "Trụ sở, quốc phòng, công cộng"
+    ]
+   },
+   {
+    "label": "Giao có thu tiền",
+    "children": [
+     "Đất ở cho cá nhân",
+     "Dự án nhà ở"
+    ]
+   },
+   {
+    "label": "Cho thuê",
+    "children": [
+     "Trường hợp còn lại",
+     "Trả một lần hoặc hằng năm"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

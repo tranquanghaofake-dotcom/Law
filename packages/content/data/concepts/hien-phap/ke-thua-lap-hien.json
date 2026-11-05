@@ -24,6 +24,39 @@
   "28/11/2013"
  ],
  "note": "Nghị quyết 203/2025/QH15 (hiệu lực 16/6/2025) sửa đổi một số điều Hiến pháp 2013 (Điều 9, 10, 84, 110, 111); Lời nói đầu không thay đổi.",
+ "memo": {
+  "hook": "Năm bản: 1946 – 1959 – 1980 – 1992 – 2013.",
+  "tree": [
+   {
+    "label": "Hiến pháp 2013",
+    "children": [
+     "Thông qua 28/11/2013",
+     "Hiệu lực 01/01/2014"
+    ]
+   },
+   {
+    "label": "Kế thừa",
+    "children": [
+     "1946",
+     "1959",
+     "1980",
+     "1992"
+    ]
+   },
+   {
+    "label": "Chủ thể",
+    "children": [
+     "Nhân dân xây dựng, thi hành, bảo vệ"
+    ]
+   },
+   {
+    "label": "Sửa đổi",
+    "children": [
+     "Nghị quyết 203/2025/QH15"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

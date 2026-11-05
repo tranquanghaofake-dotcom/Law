@@ -23,6 +23,34 @@
   "bất hiếu",
   "không được bát nghị, chuộc tội"
  ],
+ "memo": {
+  "hook": "THẬP ÁC: mười tội nặng nhất, KHÔNG được bát nghị, KHÔNG được chuộc.",
+  "tree": [
+   {
+    "label": "Xâm phạm vua, nhà nước",
+    "children": [
+     "Mưu phản",
+     "Mưu đại nghịch",
+     "Mưu chống đối",
+     "Đại bất kính"
+    ]
+   },
+   {
+    "label": "Xâm phạm luân thường",
+    "children": [
+     "Ác nghịch, bất hiếu",
+     "Bất mục, bất nghĩa",
+     "Bất đạo, nội loạn"
+    ]
+   },
+   {
+    "label": "Hệ quả",
+    "children": [
+     "Không bát nghị, không chuộc"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

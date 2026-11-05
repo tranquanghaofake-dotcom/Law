@@ -22,6 +22,32 @@
   "một hoặc nhiều công việc",
   "hưởng thù lao"
  ],
+ "memo": {
+  "hook": "Chuỗi dịch vụ quanh HÀNG HÓA; được CẦM GIỮ hàng khi khách không trả.",
+  "tree": [
+   {
+    "label": "Công việc",
+    "children": [
+     "Nhận hàng, vận chuyển",
+     "Lưu kho, lưu bãi",
+     "Thủ tục hải quan",
+     "Đóng gói, giao hàng"
+    ]
+   },
+   {
+    "label": "Quyền",
+    "children": [
+     "Cầm giữ hàng, chứng từ"
+    ]
+   },
+   {
+    "label": "Giới hạn trách nhiệm",
+    "children": [
+     "Không quá giá trị hàng hóa"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

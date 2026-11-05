@@ -21,6 +21,33 @@
   "tư vấn đầu tư",
   "một, một số hoặc toàn bộ"
  ],
+ "memo": {
+  "hook": "Bậc thang: MÔI GIỚI → TỰ DOANH → BẢO LÃNH; TƯ VẤN đứng riêng.",
+  "tree": [
+   {
+    "label": "Nghiệp vụ",
+    "children": [
+     "Môi giới",
+     "Tự doanh",
+     "Bảo lãnh phát hành",
+     "Tư vấn đầu tư"
+    ]
+   },
+   {
+    "label": "Bậc thang",
+    "children": [
+     "Tự doanh cần môi giới",
+     "Bảo lãnh cần tự doanh"
+    ]
+   },
+   {
+    "label": "Không làm",
+    "children": [
+     "Quản lý quỹ, danh mục"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

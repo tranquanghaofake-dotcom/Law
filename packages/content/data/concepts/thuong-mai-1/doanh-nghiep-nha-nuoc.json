@@ -22,6 +22,38 @@
   "công ty TNHH, công ty cổ phần",
   "100% vốn nhà nước"
  ],
+ "memo": {
+  "hook": "Nhà nước nắm TRÊN 50% vốn (Luật 2014: 100%).",
+  "tree": [
+   {
+    "label": "Tiêu chí",
+    "children": [
+     "Trên 50% vốn điều lệ",
+     "Hoặc trên 50% cổ phần biểu quyết"
+    ]
+   },
+   {
+    "label": "Hình thức",
+    "children": [
+     "Công ty TNHH",
+     "Công ty cổ phần"
+    ]
+   },
+   {
+    "label": "Hai nhóm",
+    "children": [
+     "100% vốn nhà nước",
+     "Trên 50%"
+    ]
+   },
+   {
+    "label": "Nghĩa vụ",
+    "children": [
+     "Công bố thông tin"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

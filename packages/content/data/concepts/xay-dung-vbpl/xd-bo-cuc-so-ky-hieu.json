@@ -25,6 +25,34 @@
   "loại văn bản"
  ],
  "note": "Luật Ban hành văn bản quy phạm pháp luật 64/2025/QH15 có hiệu lực từ 01/4/2025, thay thế Luật 80/2015/QH13 (sửa đổi bởi Luật 63/2020/QH14) mà đề cương HLU 2019 còn dẫn; được sửa đổi bởi Luật 87/2025/QH15 có hiệu lực từ 01/7/2025 — văn bản hợp nhất 54/VBHN-VPQH ngày 11/8/2025. Luật mới bỏ quy trình \"lập đề nghị xây dựng luật\" theo chương trình hằng năm kiểu cũ, tách \"quy trình xây dựng chính sách\" và bỏ thẩm quyền ban hành VBQPPL của cấp huyện (từ 01/7/2025). Dự án Luật Văn bản quy phạm pháp luật (thay thế) đang được Quốc hội khóa XVI xem xét, chưa có hiệu lực.",
+ "memo": {
+  "hook": "Số hiệu có 4 yếu tố: SỐ – NĂM – LOẠI – CƠ QUAN (vd 64/2025/QH15).",
+  "tree": [
+   {
+    "label": "Bố cục",
+    "children": [
+     "Phần → chương → mục → tiểu mục",
+     "Điều → khoản → điểm",
+     "Từ điều trở lên phải có tên"
+    ]
+   },
+   {
+    "label": "Số, ký hiệu",
+    "children": [
+     "Số thứ tự",
+     "Năm ban hành",
+     "Loại văn bản",
+     "Cơ quan ban hành"
+    ]
+   },
+   {
+    "label": "Nhận diện",
+    "children": [
+     "Văn bản áp dụng: không có năm"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -23,6 +23,37 @@
   "trách nhiệm trong phạm vi vốn đã góp",
   "tự do chuyển nhượng cổ phần"
  ],
+ "memo": {
+  "hook": "Đối vốn điển hình: ≥ 3 CỔ ĐÔNG, HỮU HẠN, TỰ DO chuyển nhượng, được PHÁT HÀNH cổ phần.",
+  "tree": [
+   {
+    "label": "Vốn",
+    "children": [
+     "Chia thành cổ phần bằng nhau"
+    ]
+   },
+   {
+    "label": "Cổ đông",
+    "children": [
+     "Tối thiểu 03",
+     "Không giới hạn tối đa"
+    ]
+   },
+   {
+    "label": "Trách nhiệm",
+    "children": [
+     "Trong phạm vi vốn đã góp"
+    ]
+   },
+   {
+    "label": "Đặc quyền",
+    "children": [
+     "Tự do chuyển nhượng",
+     "Phát hành cổ phần, trái phiếu"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -22,6 +22,37 @@
   "Giám đốc, Tổng giám đốc",
   "chức danh khác theo Điều lệ"
  ],
+ "memo": {
+  "hook": "Người quản lý theo loại hình; KIỂM SOÁT VIÊN không phải người quản lý.",
+  "tree": [
+   {
+    "label": "DNTN",
+    "children": [
+     "Chủ doanh nghiệp"
+    ]
+   },
+   {
+    "label": "Hợp danh",
+    "children": [
+     "Thành viên hợp danh"
+    ]
+   },
+   {
+    "label": "TNHH",
+    "children": [
+     "Hội đồng thành viên, Chủ tịch công ty",
+     "Giám đốc"
+    ]
+   },
+   {
+    "label": "Cổ phần",
+    "children": [
+     "Hội đồng quản trị",
+     "Giám đốc, Tổng giám đốc"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

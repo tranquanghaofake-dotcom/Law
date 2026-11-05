@@ -23,6 +23,31 @@
   "tự chủ",
   "Dương Đình Nghệ"
  ],
+ "memo": {
+  "hook": "Họ Khúc: thực quyền của người VIỆT nhưng vẫn mang danh TIẾT ĐỘ SỨ phương Bắc.",
+  "tree": [
+   {
+    "label": "Nhân vật",
+    "children": [
+     "Khúc Hạo",
+     "Khúc Thừa Mỹ",
+     "Dương Đình Nghệ"
+    ]
+   },
+   {
+    "label": "Danh nghĩa",
+    "children": [
+     "Tiết độ sứ"
+    ]
+   },
+   {
+    "label": "Bản chất",
+    "children": [
+     "Tự chủ trong khung đô hộ"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

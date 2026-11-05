@@ -23,6 +23,31 @@
   "Khâm sứ Trung Kỳ"
  ],
  "note": "Thẻ dạng tóm lược giáo trình, chưa có trích nguyên văn Hiệp ước 1884 hay sắc lệnh của chính quyền Pháp; cần đối chiếu sách in.",
+ "memo": {
+  "hook": "1887: Liên bang Đông Dương — TOÀN QUYỀN đứng đầu; THỐNG ĐỐC Nam, THỐNG SỨ Bắc, KHÂM SỨ Trung.",
+  "tree": [
+   {
+    "label": "Mốc",
+    "children": [
+     "1887"
+    ]
+   },
+   {
+    "label": "Đứng đầu",
+    "children": [
+     "Toàn quyền Đông Dương"
+    ]
+   },
+   {
+    "label": "Từng kỳ",
+    "children": [
+     "Nam Kỳ: Thống đốc",
+     "Bắc Kỳ: Thống sứ",
+     "Trung Kỳ: Khâm sứ"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

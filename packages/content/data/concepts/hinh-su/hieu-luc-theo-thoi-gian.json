@@ -21,6 +21,31 @@
   "không hồi tố điều luật bất lợi",
   "hồi tố điều luật có lợi"
  ],
+ "memo": {
+  "hook": "Áp luật lúc THỰC HIỆN hành vi; luật BẤT LỢI không hồi tố, luật CÓ LỢI được hồi tố.",
+  "tree": [
+   {
+    "label": "Nguyên tắc",
+    "children": [
+     "Luật có hiệu lực khi thực hiện hành vi"
+    ]
+   },
+   {
+    "label": "Không hồi tố",
+    "children": [
+     "Tội mới",
+     "Hình phạt nặng hơn",
+     "Tình tiết tăng nặng mới"
+    ]
+   },
+   {
+    "label": "Hồi tố",
+    "children": [
+     "Điều luật có lợi"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

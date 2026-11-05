@@ -24,6 +24,37 @@
   "khâu đầu của chu trình ngân sách"
  ],
  "note": "Luật Ngân sách nhà nước 89/2025/QH15 có hiệu lực từ năm ngân sách 2026 (một số nội dung từ 01/7/2025), thay thế Luật Ngân sách nhà nước 83/2015/QH13 mà đề cương HLU còn dẫn (Điều 77).",
+ "memo": {
+  "hook": "Dự phòng 2–5% tổng chi, để dành cho THIÊN TAI, DỊCH BỆNH, việc CẤP BÁCH.",
+  "tree": [
+   {
+    "label": "Chu trình",
+    "children": [
+     "Lập dự toán → chấp hành → quyết toán"
+    ]
+   },
+   {
+    "label": "Dự phòng",
+    "children": [
+     "Khoản chưa phân bổ trong dự toán chi",
+     "Từ 2% đến 5% tổng chi"
+    ]
+   },
+   {
+    "label": "Dùng cho",
+    "children": [
+     "Thiên tai, dịch bệnh",
+     "Nhiệm vụ cấp bách"
+    ]
+   },
+   {
+    "label": "Quyết định dự toán",
+    "children": [
+     "Quốc hội, HĐND"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

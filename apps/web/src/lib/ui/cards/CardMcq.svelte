@@ -2,7 +2,7 @@
   import type { ItemMcq } from '$lib/content/types';
   import { shuffle } from '$lib/engine/session';
   import { isTypingTarget, KEYS, type CardProps } from './types';
-  let { concept, item, meta, rng, onanswer, kind = 'mcq' }: CardProps<ItemMcq> & { kind?: 'mcq' | 'case' } = $props();
+  let { concept, item, meta, rng, onanswer, onshown, kind = 'mcq' }: CardProps<ItemMcq> & { kind?: 'mcq' | 'case' } = $props();
   // Thẻ được remount theo từng bước (key), nên cố ý lấy giá trị ban đầu của item/rng.
   // svelte-ignore state_referenced_locally
   const start = Date.now();
@@ -12,6 +12,8 @@
   const options = order.map((i) => item.options[i]);
   // svelte-ignore state_referenced_locally
   const answerIdx = order.indexOf(item.answer);
+  // svelte-ignore state_referenced_locally
+  onshown?.(options);
   let chosen = $state<number | null>(null);
 
   function pick(k: number) {

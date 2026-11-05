@@ -22,6 +22,32 @@
   "cùng trông coi chính sự",
   "gia pháp họ Trần"
  ],
+ "memo": {
+  "hook": "Nhà Trần: vua cha NHƯỜNG NGÔI khi còn sống, làm THƯỢNG HOÀNG cùng trông coi chính sự.",
+  "tree": [
+   {
+    "label": "Cơ chế",
+    "children": [
+     "Nhường ngôi khi còn sống",
+     "Thượng hoàng cùng trông coi"
+    ]
+   },
+   {
+    "label": "Mục đích",
+    "children": [
+     "Chuyển giao êm thấm",
+     "Tránh tranh ngôi",
+     "Đào tạo vua mới"
+    ]
+   },
+   {
+    "label": "Đặc điểm",
+    "children": [
+     "Gia pháp họ Trần"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

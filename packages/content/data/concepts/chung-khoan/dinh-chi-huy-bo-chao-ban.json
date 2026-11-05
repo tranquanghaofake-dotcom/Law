@@ -22,6 +22,31 @@
   "hoàn tiền trong 15 ngày"
  ],
  "note": "Luật 56/2024/QH15 (hiệu lực 01/01/2025) bổ sung điểm d, đ khoản 1 Điều 28 (hủy bỏ khi phát hiện vi phạm sau khi kết thúc đợt chào bán) và khoản 2a (không hủy bỏ khi cổ phiếu đã niêm yết, đăng ký giao dịch). Giáo trình 2021 chưa có.",
+ "memo": {
+  "hook": "ĐÌNH CHỈ = tạm dừng tối đa 60 NGÀY; HỦY BỎ = chấm dứt, hoàn tiền trong 15 NGÀY.",
+  "tree": [
+   {
+    "label": "Đình chỉ",
+    "children": [
+     "Tối đa 60 ngày",
+     "Để sửa sai hồ sơ"
+    ]
+   },
+   {
+    "label": "Hủy bỏ",
+    "children": [
+     "Hết đình chỉ không khắc phục",
+     "IPO không đủ 100 nhà đầu tư"
+    ]
+   },
+   {
+    "label": "Hệ quả hủy",
+    "children": [
+     "Hoàn tiền trong 15 ngày"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

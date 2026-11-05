@@ -23,6 +23,34 @@
   "đứng đầu bộ",
   "quản lý ngành, lĩnh vực"
  ],
+ "memo": {
+  "hook": "Bộ trưởng gánh HAI trách nhiệm: CÁ NHÂN và TẬP THỂ.",
+  "tree": [
+   {
+    "label": "Cá nhân",
+    "children": [
+     "Trước Thủ tướng",
+     "Trước Chính phủ",
+     "Trước Quốc hội",
+     "Về ngành, lĩnh vực phụ trách"
+    ]
+   },
+   {
+    "label": "Tập thể",
+    "children": [
+     "Cùng thành viên Chính phủ",
+     "Về hoạt động của Chính phủ"
+    ]
+   },
+   {
+    "label": "Vai trò",
+    "children": [
+     "Thành viên Chính phủ",
+     "Người đứng đầu bộ"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -25,6 +25,30 @@
   "chỉ dẫn địa lý"
  ],
  "note": "Luật Sở hữu trí tuệ 50/2005/QH11 (hiệu lực 01/7/2006) đã được sửa đổi bởi Luật 36/2009/QH12, 42/2019/QH14, 07/2022/QH15, 93/2025/QH15 và 131/2025/QH15 (hiệu lực 01/4/2026) — văn bản hợp nhất 67/VBHN-VPQH 2026; ghi chép lớp học còn dẫn Nghị định 105/2006/NĐ-CP và Nghị định 99/2013/NĐ-CP, cần tự kiểm tra hiệu lực của các nghị định này trước khi dùng.",
+ "memo": {
+  "hook": "Ba nhánh: TÁC GIẢ – SỞ HỮU CÔNG NGHIỆP (7 đối tượng) – GIỐNG CÂY TRỒNG.",
+  "tree": [
+   {
+    "label": "Quyền tác giả",
+    "children": [
+     "Tác phẩm",
+     "Quyền liên quan"
+    ]
+   },
+   {
+    "label": "Sở hữu công nghiệp",
+    "children": [
+     "Sáng chế, kiểu dáng, mạch tích hợp",
+     "Bí mật kinh doanh",
+     "Nhãn hiệu, tên thương mại",
+     "Chỉ dẫn địa lý"
+    ]
+   },
+   {
+    "label": "Giống cây trồng"
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -23,6 +23,32 @@
   "nơi cư trú cuối cùng",
   "bình đẳng"
  ],
+ "memo": {
+  "hook": "Mở thừa kế: lúc người có tài sản CHẾT, tại nơi CƯ TRÚ CUỐI CÙNG.",
+  "tree": [
+   {
+    "label": "Quyền",
+    "children": [
+     "Lập di chúc",
+     "Để lại theo pháp luật",
+     "Hưởng di sản"
+    ]
+   },
+   {
+    "label": "Thời điểm",
+    "children": [
+     "Khi người có tài sản chết"
+    ]
+   },
+   {
+    "label": "Địa điểm",
+    "children": [
+     "Nơi cư trú cuối cùng",
+     "Không rõ: nơi có phần lớn di sản"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -28,8 +28,8 @@
   import LessonStrip from '$lib/ui/LessonStrip.svelte';
   import SessionEnd from '$lib/ui/SessionEnd.svelte';
   import { isTypingTarget } from '$lib/ui/cards/types';
-  import { onDestroy, onMount, tick } from 'svelte';
-  import { feedbackSpeech } from '$lib/ui/session/speech';
+  import { onDestroy, onMount, tick, untrack } from 'svelte';
+  import { feedbackSpeech, promptSpeech } from '$lib/ui/session/speech';
   import { barMarks } from '$lib/ui/session/marks';
   import { submitRecord } from '$lib/ui/session/record';
   import { xpSources } from '$lib/ui/session/xpSources';
@@ -93,6 +93,21 @@
   // câu đoán khái niệm từ định nghĩa/ví dụ: không tô khái niệm đang hỏi (lộ đáp án)
   const hideCurrent = $derived(step?.meta?.gen === 'def-term' || step?.meta?.gen === 'example-concept');
 
+  // Giọng đọc đề/khái niệm ngay khi thẻ hiện (05/11/2026); đáp án chỉ đọc sau khi trả lời (onanswer → feedbackSpeech).
+  // Thẻ trắc nghiệm báo thứ tự phương án đã xáo qua onshown (chạy lúc khởi tạo thẻ, trước effect này).
+  let shownOptions: string[] | undefined;
+  function onshown(o: string[]) { shownOptions = o; }
+  // chỉ chạy khi CHỈ SỐ câu đổi (run bị gán lại ở mỗi lần trả lời — theo dõi thẳng `run` sẽ đọc đề đè lên đáp án)
+  const stepIndex = $derived(run.i);
+  $effect(() => {
+    const i = stepIndex;
+    untrack(() => {
+      const s = run.steps[i];
+      if (!s || run.done || ended || result || !concept || !settings.tts || !tts.available) return;
+      tts.speak(promptSpeech(s.item, concept, shownOptions));
+    });
+  });
+
   sfx.preload();
   onDestroy(() => { tts.stop(); sfx.stopCombo(); floatTimers.forEach(clearTimeout); floatTimers.clear(); });
   /** hẹn giờ có dọn khi huỷ component */
@@ -141,6 +156,8 @@
     if (r.correct && snd === 'correct') sfx.playCombo(run.combo, showStamp ? TIMING.stampLand : 0); else sfx.play(snd, { combo: run.combo });
     if (!r.correct) buzz('bad'); else if (glowLevel(run.combo) > 0) buzzCombo(glowLevel(run.combo)); else buzz('ok');
     if (r.correct && gold) sfx.play('golden');
+    // tiếng đóng mộc: dấu mốc chuỗi (to) hoặc dấu "ĐÚNG" nhỏ trên hộp đáp án — khớp lúc dấu chạm giấy
+    if (r.correct) sfx.stamp({ heavy: showStamp, delay: showStamp ? TIMING.stampLand : TIMING.sealLand });
     if (fx && showStamp) {
       stamp = fx;
       if (fx.confetti) later(() => stampConfetti(fx.tier, fx.combo >= 10), TIMING.stampLand);
@@ -173,6 +190,7 @@
 
   function runNextStep() {
     tts.stop();
+    shownOptions = undefined;
     result = null;
     run = runNext(run);
     if (run.done) finish();
@@ -260,7 +278,7 @@
         {:else if step.meta?.kind === 'boss'}<p class="step-badge boss">Câu chốt · tổng hợp đợt vừa học</p>{/if}
         {#if pretest}<PretestBar answered={!!result} onskip={skipPretest} />{/if}
         {#key run.i}
-          <div class="step-in"><Card {concept} item={step.item} meta={step.meta} {rng} {onanswer} onspeak={speak} mode={clozeMode} /></div>
+          <div class="step-in"><Card {concept} item={step.item} meta={step.meta} {rng} {onanswer} {onshown} onspeak={speak} mode={clozeMode} /></div>
         {/key}
       </div>
       {#if result}

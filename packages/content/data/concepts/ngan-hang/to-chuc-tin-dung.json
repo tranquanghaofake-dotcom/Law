@@ -25,6 +25,26 @@
   "quỹ tín dụng nhân dân"
  ],
  "note": "Luật Các tổ chức tín dụng 32/2024/QH15 có hiệu lực từ 01/7/2024, thay thế Luật 47/2010/QH12 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 96/2025/QH15 (hiệu lực 15/10/2025) và Luật 23/2026/QH16 (hiệu lực 01/12/2026, chỉ bổ sung một điểm tại Điều 49) — các khoản Điều 4 được trích không bị sửa.",
+ "memo": {
+  "hook": "Bốn loại: NGÂN HÀNG – PHI NGÂN HÀNG – VI MÔ – QUỸ TÍN DỤNG NHÂN DÂN.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Tổ chức kinh tế có tư cách pháp nhân"
+    ]
+   },
+   {
+    "label": "Bốn loại",
+    "children": [
+     "Ngân hàng",
+     "Phi ngân hàng",
+     "Tài chính vi mô",
+     "Quỹ tín dụng nhân dân"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -24,6 +24,38 @@
   "không bắt bớ trừ có trát hoặc quả tang"
  ],
  "note": "Văn bản đã hết hiệu lực; học để hiểu lịch sử pháp luật.",
+ "memo": {
+  "hook": "Sắc lệnh 13 (24/01/1946): tòa án đầu tiên, có PHỤ THẨM NHÂN DÂN; KHÔNG bắt người trừ có TRÁT hay QUẢ TANG.",
+  "tree": [
+   {
+    "label": "Mốc",
+    "children": [
+     "24/01/1946"
+    ]
+   },
+   {
+    "label": "Hệ thống",
+    "children": [
+     "Ban tư pháp xã",
+     "Tòa sơ cấp",
+     "Tòa đệ nhị cấp",
+     "Tòa thượng thẩm"
+    ]
+   },
+   {
+    "label": "Điểm mới",
+    "children": [
+     "Phụ thẩm nhân dân"
+    ]
+   },
+   {
+    "label": "Bảo đảm",
+    "children": [
+     "Không bắt trừ có trát hoặc quả tang"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

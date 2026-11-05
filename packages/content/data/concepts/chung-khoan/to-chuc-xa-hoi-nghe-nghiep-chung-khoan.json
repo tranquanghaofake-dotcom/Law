@@ -21,6 +21,36 @@
   "quy tắc đạo đức nghề nghiệp",
   "Ủy ban giám sát"
  ],
+ "memo": {
+  "hook": "Kênh TỰ QUẢN của giới nghề: theo luật về hội; quy tắc đạo đức cần Ủy ban CHẤP THUẬN.",
+  "tree": [
+   {
+    "label": "Thành lập",
+    "children": [
+     "Theo pháp luật về hội"
+    ]
+   },
+   {
+    "label": "Việc làm",
+    "children": [
+     "Bộ quy tắc đạo đức nghề nghiệp",
+     "Phổ biến pháp luật"
+    ]
+   },
+   {
+    "label": "Kiểm soát",
+    "children": [
+     "Ủy ban chấp thuận, giám sát"
+    ]
+   },
+   {
+    "label": "Không phải",
+    "children": [
+     "Cơ quan nhà nước"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

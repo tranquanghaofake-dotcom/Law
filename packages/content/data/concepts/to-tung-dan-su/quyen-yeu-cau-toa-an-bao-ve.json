@@ -21,6 +21,34 @@
   "không được từ chối vì chưa có điều luật",
   "vụ án và việc dân sự"
  ],
+ "memo": {
+  "hook": "Tòa KHÔNG được từ chối vì CHƯA CÓ ĐIỀU LUẬT.",
+  "tree": [
+   {
+    "label": "Quyền",
+    "children": [
+     "Khởi kiện vụ án",
+     "Yêu cầu giải quyết việc dân sự"
+    ]
+   },
+   {
+    "label": "Chưa có luật thì áp dụng",
+    "children": [
+     "Tập quán",
+     "Tương tự pháp luật",
+     "Nguyên tắc cơ bản, án lệ",
+     "Lẽ công bằng"
+    ]
+   },
+   {
+    "label": "Phân biệt",
+    "children": [
+     "Vụ án: có tranh chấp",
+     "Việc: không tranh chấp"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

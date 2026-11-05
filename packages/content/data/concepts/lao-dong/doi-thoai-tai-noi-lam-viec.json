@@ -22,6 +22,32 @@
   "khi có yêu cầu",
   "các bên cùng có lợi"
  ],
+ "memo": {
+  "hook": "Đối thoại là CHIA SẺ, THẢO LUẬN, không bắt buộc ra thỏa thuận; ít nhất 1 LẦN/NĂM.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Chia sẻ thông tin",
+     "Tham khảo, thảo luận"
+    ]
+   },
+   {
+    "label": "Bắt buộc khi",
+    "children": [
+     "Định kỳ ít nhất 01 năm/lần",
+     "Một bên yêu cầu",
+     "Cho thôi việc, sáp nhập, nội quy"
+    ]
+   },
+   {
+    "label": "Khác thương lượng",
+    "children": [
+     "Không nhất thiết thỏa thuận"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -24,6 +24,31 @@
   "bên thứ ba"
  ],
  "note": "Luật Sở hữu trí tuệ 50/2005/QH11 (hiệu lực 01/7/2006) đã được sửa đổi bởi Luật 36/2009/QH12, 42/2019/QH14, 07/2022/QH15, 93/2025/QH15 và 131/2025/QH15 (hiệu lực 01/4/2026) — văn bản hợp nhất 67/VBHN-VPQH 2026; ghi chép lớp học còn dẫn Nghị định 105/2006/NĐ-CP và Nghị định 99/2013/NĐ-CP, cần tự kiểm tra hiệu lực của các nghị định này trước khi dùng.",
+ "memo": {
+  "hook": "Chuyển NHƯỢNG: hiệu lực khi ĐĂNG KÝ. Li-XĂNG: theo THỎA THUẬN, đăng ký để chống bên thứ ba.",
+  "tree": [
+   {
+    "label": "Chuyển nhượng",
+    "children": [
+     "Sáng chế, kiểu dáng, nhãn hiệu",
+     "Có hiệu lực khi đăng ký"
+    ]
+   },
+   {
+    "label": "Li-xăng",
+    "children": [
+     "Hiệu lực theo thỏa thuận",
+     "Đăng ký để có giá trị với bên thứ ba"
+    ]
+   },
+   {
+    "label": "Chấm dứt",
+    "children": [
+     "Quyền của bên giao chấm dứt"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

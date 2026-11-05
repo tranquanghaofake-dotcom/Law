@@ -23,6 +23,31 @@
   "ban điều phối"
  ],
  "note": "Luật Đầu tư 143/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Đầu tư 61/2020/QH14 mà đề cương HLU 2021 còn dẫn (khoản 4 Điều 51). Luật 24/2026/QH16 sửa đổi có hiệu lực từ 01/3/2027 (riêng một phần Điều 6 từ 01/01/2027), chỉ sửa Điều 6 và Phụ lục IV, không sửa điều được trích — văn bản hợp nhất 142/2026/VBHN-LQ-VPQH.",
+ "memo": {
+  "hook": "BCC: hợp tác chia LỢI NHUẬN/SẢN PHẨM, KHÔNG lập pháp nhân mới.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Ký giữa các nhà đầu tư",
+     "Chia lợi nhuận hoặc sản phẩm",
+     "Không thành lập tổ chức kinh tế"
+    ]
+   },
+   {
+    "label": "Có bên nước ngoài",
+    "children": [
+     "Cấp Giấy chứng nhận đăng ký đầu tư"
+    ]
+   },
+   {
+    "label": "Điều hành",
+    "children": [
+     "Ban điều phối"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

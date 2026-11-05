@@ -22,6 +22,30 @@
   "người thứ ba giữ",
   "đăng ký"
  ],
+ "memo": {
+  "hook": "Thế chấp KHÔNG GIAO tài sản; đối kháng thường từ khi ĐĂNG KÝ.",
+  "tree": [
+   {
+    "label": "Đặc trưng",
+    "children": [
+     "Không giao tài sản",
+     "Bên thế chấp giữ, khai thác"
+    ]
+   },
+   {
+    "label": "Tài sản",
+    "children": [
+     "Có thể hình thành trong tương lai"
+    ]
+   },
+   {
+    "label": "Đối kháng",
+    "children": [
+     "Từ khi đăng ký"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

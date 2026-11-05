@@ -21,6 +21,33 @@
   "chuyển giao vật, quyền, trả tiền",
   "thực hiện hoặc không thực hiện công việc"
  ],
+ "memo": {
+  "hook": "Năm dạng: GIAO VẬT – GIAO QUYỀN – TRẢ TIỀN – LÀM – KHÔNG LÀM.",
+  "tree": [
+   {
+    "label": "Hai bên",
+    "children": [
+     "Bên có nghĩa vụ",
+     "Bên có quyền"
+    ]
+   },
+   {
+    "label": "Hành vi",
+    "children": [
+     "Chuyển giao vật, quyền",
+     "Trả tiền, giấy tờ có giá",
+     "Thực hiện công việc",
+     "Không thực hiện công việc"
+    ]
+   },
+   {
+    "label": "Đối tượng",
+    "children": [
+     "Phải xác định được"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -23,6 +23,31 @@
   "Luật Đất đai 1993 cho chuyển nhượng quyền sử dụng"
  ],
  "note": "Luật Đất đai 1987 đã hết hiệu lực (thay bằng Luật Đất đai 1993); hiện hành là Luật Đất đai 31/2024/QH15. Học để hiểu lịch sử.",
+ "memo": {
+  "hook": "Luật Đất đai 1987 CẤM mua bán đất; chỉ bán THÀNH QUẢ trên đất.",
+  "tree": [
+   {
+    "label": "Cấm",
+    "children": [
+     "Mua bán đất",
+     "Phát canh thu tô"
+    ]
+   },
+   {
+    "label": "Được",
+    "children": [
+     "Bán thành quả lao động",
+     "Kết quả đầu tư trên đất"
+    ]
+   },
+   {
+    "label": "Chuyển biến",
+    "children": [
+     "Luật 1993 cho chuyển nhượng quyền sử dụng"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -22,6 +22,37 @@
   "trừ thời gian đóng bảo hiểm thất nghiệp",
   "bình quân 06 tháng"
  ],
+ "memo": {
+  "hook": "Đủ 12 THÁNG; mỗi năm NỬA THÁNG lương; TRỪ thời gian đã đóng bảo hiểm thất nghiệp.",
+  "tree": [
+   {
+    "label": "Điều kiện",
+    "children": [
+     "Làm thường xuyên từ đủ 12 tháng"
+    ]
+   },
+   {
+    "label": "Mức",
+    "children": [
+     "Mỗi năm nửa tháng lương",
+     "Lương bình quân 06 tháng"
+    ]
+   },
+   {
+    "label": "Thời gian tính",
+    "children": [
+     "Trừ thời gian đóng thất nghiệp"
+    ]
+   },
+   {
+    "label": "Không hưởng",
+    "children": [
+     "Đủ điều kiện lương hưu",
+     "Tự ý bỏ việc 05 ngày"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

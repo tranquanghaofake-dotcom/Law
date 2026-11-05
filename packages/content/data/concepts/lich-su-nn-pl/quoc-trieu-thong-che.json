@@ -24,6 +24,37 @@
   "kế thừa luật triều trước",
   "đồ: Cảo điền hoành, Lao thành binh"
  ],
+ "memo": {
+  "hook": "1230: nhà Trần soạn QUỐC TRIỀU THÔNG CHẾ (20 quyển), KẾ THỪA luật nhà Lý.",
+  "tree": [
+   {
+    "label": "Mốc",
+    "children": [
+     "1230, Trần Thái Tông"
+    ]
+   },
+   {
+    "label": "Bộ luật",
+    "children": [
+     "Quốc triều thông chế",
+     "20 quyển"
+    ]
+   },
+   {
+    "label": "Tính chất",
+    "children": [
+     "Kế thừa luật triều trước"
+    ]
+   },
+   {
+    "label": "Hình phạt đồ",
+    "children": [
+     "Cảo điền hoành",
+     "Lao thành binh"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

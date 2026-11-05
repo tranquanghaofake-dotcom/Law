@@ -23,6 +23,37 @@
   "Đại hội đồng cổ đông"
  ],
  "note": "Luật 56/2024/QH15 (hiệu lực 01/01/2025) sửa điểm a, b, c khoản 1 và khoản 2 Điều 31 (đối tượng mua, hạn chế chuyển nhượng, trái phiếu doanh nghiệp riêng lẻ chỉ giao dịch giữa nhà đầu tư chuyên nghiệp), đồng thời bổ sung Điều 31a (Ủy ban được đình chỉ đợt chào bán riêng lẻ tối đa 60 ngày) và Điều 31b (hủy bỏ đợt chào bán riêng lẻ). Phần liên quan đến nhà đầu tư chuyên nghiệp mua trái phiếu doanh nghiệp riêng lẻ có hiệu lực từ 01/01/2026. Đọc giáo trình 2021 phần này phải đối chiếu luật hiện hành.",
+ "memo": {
+  "hook": "Riêng lẻ của công ty đại chúng: chỉ CHIẾN LƯỢC/CHUYÊN NGHIỆP; khóa 3 NĂM/1 NĂM; cách đợt 6 THÁNG.",
+  "tree": [
+   {
+    "label": "Quyết định",
+    "children": [
+     "Đại hội đồng cổ đông"
+    ]
+   },
+   {
+    "label": "Người mua",
+    "children": [
+     "Nhà đầu tư chiến lược",
+     "Nhà đầu tư chuyên nghiệp"
+    ]
+   },
+   {
+    "label": "Hạn chế chuyển nhượng",
+    "children": [
+     "Chiến lược: 03 năm",
+     "Chuyên nghiệp: 01 năm"
+    ]
+   },
+   {
+    "label": "Giữa các đợt",
+    "children": [
+     "Ít nhất 06 tháng"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

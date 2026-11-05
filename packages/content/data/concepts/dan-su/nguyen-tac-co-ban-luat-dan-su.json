@@ -22,6 +22,27 @@
   "thiện chí, trung thực",
   "điều cấm của luật"
  ],
+ "memo": {
+  "hook": "Năm nguyên tắc: BÌNH ĐẲNG – TỰ DO THỎA THUẬN – THIỆN CHÍ – không xâm phạm – TỰ CHỊU TRÁCH NHIỆM.",
+  "tree": [
+   {
+    "label": "Nguyên tắc",
+    "children": [
+     "Bình đẳng",
+     "Tự do, tự nguyện",
+     "Thiện chí, trung thực",
+     "Tự chịu trách nhiệm"
+    ]
+   },
+   {
+    "label": "Giới hạn thỏa thuận",
+    "children": [
+     "Điều cấm của luật",
+     "Đạo đức xã hội"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

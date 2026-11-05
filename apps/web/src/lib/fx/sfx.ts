@@ -1,6 +1,7 @@
 import { Howl } from 'howler';
 import { settings } from '$lib/store/settings.svelte';
 import { comboSfxPlan } from './comboSfx';
+import { playThud } from './stampSfx';
 
 /** Âm thanh Kenney Interface Sounds (CC0), xem static/sfx/LICENSE.txt. */
 export type SfxName = 'correct' | 'wrong' | 'levelup' | 'select' | 'rankup' | 'intro' | 'exit' | 'golden';
@@ -49,6 +50,16 @@ export const sfx = {
         comboTimers.add(t);
       } else go();
     }
+  },
+  /** Tiếng đóng mộc (Web Audio) sau `delay` ms — khớp lúc dấu chạm giấy. heavy: mộc mốc chuỗi. Tôn trọng settings.sound; stopCombo huỷ. */
+  stamp(opts: { heavy?: boolean; delay?: number; onplay?: () => void } = {}): void {
+    if (!settings.sound) return;
+    const go = () => { if (!settings.sound) return; if (playThud(!!opts.heavy)) opts.onplay?.(); };
+    const delay = opts.delay ?? 0;
+    if (delay > 0) {
+      const t = setTimeout(() => { comboTimers.delete(t); go(); }, delay);
+      comboTimers.add(t);
+    } else go();
   },
   /** Huỷ các lớp âm combo còn chờ phát (gọi khi thoát/hết phiên). */
   stopCombo(): void {

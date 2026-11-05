@@ -21,6 +21,32 @@
   "cá nhân và tập thể",
   "sự phụ thuộc pháp lý"
  ],
+ "memo": {
+  "hook": "Đặc điểm cốt lõi: người lao động PHỤ THUỘC PHÁP LÝ vào người sử dụng.",
+  "tree": [
+   {
+    "label": "Phát sinh",
+    "children": [
+     "Thuê mướn, sử dụng lao động",
+     "Trả lương"
+    ]
+   },
+   {
+    "label": "Cá nhân",
+    "children": [
+     "Người lao động – người sử dụng",
+     "Căn cứ hợp đồng lao động"
+    ]
+   },
+   {
+    "label": "Tập thể",
+    "children": [
+     "Tổ chức đại diện – người sử dụng",
+     "Đối thoại, thương lượng, đình công"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -23,6 +23,38 @@
   "bốn chế độ"
  ],
  "note": "Luật Việc làm 74/2025/QH15 có hiệu lực từ 01/01/2026, thay thế Luật Việc làm 38/2013/QH13 (đề cương HLU còn dẫn luật 2013).",
+ "memo": {
+  "hook": "Không chỉ BÙ thu nhập mà còn PHÒNG NGỪA thất nghiệp.",
+  "tree": [
+   {
+    "label": "Tính chất",
+    "children": [
+     "Bảo hiểm bắt buộc",
+     "Đóng vào Quỹ bảo hiểm thất nghiệp"
+    ]
+   },
+   {
+    "label": "Phòng ngừa",
+    "children": [
+     "Tư vấn, giới thiệu việc làm",
+     "Đào tạo",
+     "Hỗ trợ duy trì việc làm"
+    ]
+   },
+   {
+    "label": "Bù đắp",
+    "children": [
+     "Trợ cấp thất nghiệp"
+    ]
+   },
+   {
+    "label": "Tham gia",
+    "children": [
+     "Hợp đồng từ đủ 01 tháng"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

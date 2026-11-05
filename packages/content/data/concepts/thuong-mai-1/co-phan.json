@@ -21,6 +21,32 @@
   "ưu đãi cổ tức, hoàn lại, biểu quyết",
   "cổ đông ưu đãi"
  ],
+ "memo": {
+  "hook": "BẮT BUỘC có cổ phần PHỔ THÔNG; CÓ THỂ có cổ phần ƯU ĐÃI.",
+  "tree": [
+   {
+    "label": "Bắt buộc",
+    "children": [
+     "Cổ phần phổ thông"
+    ]
+   },
+   {
+    "label": "Ưu đãi (tùy chọn)",
+    "children": [
+     "Ưu đãi cổ tức",
+     "Ưu đãi hoàn lại",
+     "Ưu đãi biểu quyết",
+     "Ưu đãi khác theo Điều lệ"
+    ]
+   },
+   {
+    "label": "Biểu quyết",
+    "children": [
+     "Chỉ cổ đông sáng lập, tổ chức được ủy quyền"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

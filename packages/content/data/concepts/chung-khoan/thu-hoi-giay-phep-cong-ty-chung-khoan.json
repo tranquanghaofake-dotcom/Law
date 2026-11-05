@@ -22,6 +22,27 @@
   "tất toán tài sản khách hàng",
   "chỉ định công ty thay thế"
  ],
+ "memo": {
+  "hook": "Thu hồi giấy phép = 'ÁN TỬ'; ví dụ 12 THÁNG không hoạt động sau cấp phép.",
+  "tree": [
+   {
+    "label": "Căn cứ",
+    "children": [
+     "12 tháng không hoạt động",
+     "Tự đề nghị rút",
+     "Không khắc phục đình chỉ",
+     "Giải thể, phá sản, sáp nhập"
+    ]
+   },
+   {
+    "label": "Hệ quả",
+    "children": [
+     "Tất toán tài sản khách",
+     "Chỉ định công ty thay thế"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

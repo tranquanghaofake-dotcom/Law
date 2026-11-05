@@ -24,6 +24,38 @@
   "Hội đồng Chính phủ"
  ],
  "note": "Hiến pháp đã hết hiệu lực; học để hiểu lịch sử lập hiến, không áp dụng như luật hiện hành.",
+ "memo": {
+  "hook": "Lần đầu hiến định TẬP TRUNG DÂN CHỦ; bỏ phúc quyết.",
+  "tree": [
+   {
+    "label": "Thông qua",
+    "children": [
+     "31/12/1959",
+     "Danh nghĩa sửa đổi Hiến pháp 1946"
+    ]
+   },
+   {
+    "label": "Mục tiêu",
+    "children": [
+     "Đưa miền Bắc lên chủ nghĩa xã hội"
+    ]
+   },
+   {
+    "label": "Điểm mới",
+    "children": [
+     "Tập trung dân chủ",
+     "Quốc hội",
+     "Hội đồng Chính phủ"
+    ]
+   },
+   {
+    "label": "Sửa đổi",
+    "children": [
+     "Chỉ Quốc hội"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

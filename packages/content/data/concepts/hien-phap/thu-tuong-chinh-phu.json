@@ -23,6 +23,38 @@
   "lãnh đạo hệ thống hành chính",
   "chịu trách nhiệm trước Quốc hội"
  ],
+ "memo": {
+  "hook": "Thủ tướng: ĐỨNG ĐẦU Chính phủ, chịu trách nhiệm trước QUỐC HỘI.",
+  "tree": [
+   {
+    "label": "Bầu",
+    "children": [
+     "Quốc hội bầu trong số đại biểu",
+     "Theo đề nghị Chủ tịch nước"
+    ]
+   },
+   {
+    "label": "Vị trí",
+    "children": [
+     "Đứng đầu Chính phủ",
+     "Lãnh đạo hệ thống hành chính"
+    ]
+   },
+   {
+    "label": "Trách nhiệm",
+    "children": [
+     "Trước Quốc hội"
+    ]
+   },
+   {
+    "label": "Quyền nhân sự",
+    "children": [
+     "Trình phê chuẩn Phó Thủ tướng, Bộ trưởng",
+     "Bổ nhiệm Thứ trưởng"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

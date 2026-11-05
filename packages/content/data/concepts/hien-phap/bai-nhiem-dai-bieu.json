@@ -21,6 +21,31 @@
   "không còn xứng đáng",
   "tín nhiệm của Nhân dân"
  ],
+ "memo": {
+  "hook": "Bầu cử là trao quyền; BÃI NHIỆM là rút lại khi không còn xứng đáng.",
+  "tree": [
+   {
+    "label": "Ai bị bãi nhiệm",
+    "children": [
+     "Đại biểu Quốc hội",
+     "Đại biểu Hội đồng nhân dân"
+    ]
+   },
+   {
+    "label": "Ai bãi nhiệm",
+    "children": [
+     "Cử tri",
+     "Quốc hội, Hội đồng nhân dân"
+    ]
+   },
+   {
+    "label": "Khi nào",
+    "children": [
+     "Không còn xứng đáng với sự tín nhiệm của Nhân dân"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

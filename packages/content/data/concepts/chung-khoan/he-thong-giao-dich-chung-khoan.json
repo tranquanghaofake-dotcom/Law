@@ -20,6 +20,31 @@
   "niêm yết và chưa niêm yết",
   "Sở giao dịch chứng khoán Việt Nam và công ty con"
  ],
+ "memo": {
+  "hook": "MỘT hệ thống, HAI nhánh: NIÊM YẾT và CHƯA NIÊM YẾT.",
+  "tree": [
+   {
+    "label": "Hai nhánh",
+    "children": [
+     "Chứng khoán niêm yết",
+     "Chứng khoán chưa niêm yết"
+    ]
+   },
+   {
+    "label": "Vận hành",
+    "children": [
+     "Sở giao dịch Việt Nam và công ty con"
+    ]
+   },
+   {
+    "label": "Phân biệt",
+    "children": [
+     "Hệ thống là hạ tầng",
+     "Thị trường là không gian giao dịch"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

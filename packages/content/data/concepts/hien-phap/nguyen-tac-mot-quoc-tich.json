@@ -22,6 +22,36 @@
   "chỉ công nhận quốc tịch Việt Nam trên lãnh thổ Việt Nam"
  ],
  "note": "Luật 79/2025/QH15 (hiệu lực 01/7/2025) sửa khoản 4 và bổ sung các khoản 5–8 Điều 5. Theo đó: người giữ chức vụ theo nhiệm kỳ trong cơ quan Đảng, Nhà nước, Mặt trận, tổ chức chính trị - xã hội; người làm cơ yếu; người trong lực lượng vũ trang phải chỉ có quốc tịch Việt Nam và thường trú tại Việt Nam. Quyết định hành chính về quốc tịch không bị khiếu nại, khiếu kiện. Giáo trình in trước 2025 chưa có các nội dung này.",
+ "memo": {
+  "hook": "MỘT quốc tịch là nguyên tắc, có NGOẠI LỆ do Luật quy định.",
+  "tree": [
+   {
+    "label": "Nguyên tắc",
+    "children": [
+     "Công dân có một quốc tịch Việt Nam"
+    ]
+   },
+   {
+    "label": "Ngoại lệ",
+    "children": [
+     "Chủ tịch nước cho giữ quốc tịch nước ngoài",
+     "Người định cư ở nước ngoài chưa mất quốc tịch"
+    ]
+   },
+   {
+    "label": "Trên lãnh thổ Việt Nam",
+    "children": [
+     "Chỉ công nhận quốc tịch Việt Nam"
+    ]
+   },
+   {
+    "label": "Chức vụ nhà nước",
+    "children": [
+     "Chỉ được một quốc tịch Việt Nam"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

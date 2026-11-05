@@ -11,6 +11,8 @@ export type CardProps<I = StepItem> = {
   rng: () => number;
   onanswer: (r: AnswerResult) => void;
   onspeak?: (text: string) => void;
+  /** Thẻ báo thứ tự phương án ĐANG HIỆN (sau khi xáo) để giọng đọc đề đọc đúng A/B/C/D. Gọi khi khởi tạo thẻ. */
+  onshown?: (options: string[]) => void;
 };
 
 export const KEYS = ['A', 'B', 'C', 'D'] as const;

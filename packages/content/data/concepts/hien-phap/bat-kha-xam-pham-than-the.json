@@ -23,6 +23,39 @@
   "không bị bắt nếu không có quyết định Tòa án, Viện kiểm sát",
   "trừ quả tang"
  ],
+ "memo": {
+  "hook": "Bắt người cần quyết định TÒA ÁN hoặc VIỆN KIỂM SÁT, trừ QUẢ TANG.",
+  "tree": [
+   {
+    "label": "Điều 19",
+    "children": [
+     "Quyền sống",
+     "Không bị tước tính mạng trái luật"
+    ]
+   },
+   {
+    "label": "Điều 20",
+    "children": [
+     "Bất khả xâm phạm thân thể",
+     "Không bị tra tấn, nhục hình"
+    ]
+   },
+   {
+    "label": "Điều kiện bắt",
+    "children": [
+     "Quyết định của Tòa án",
+     "Quyết định/phê chuẩn của Viện kiểm sát",
+     "Trừ phạm tội quả tang"
+    ]
+   },
+   {
+    "label": "Bắt, giam, giữ",
+    "children": [
+     "Do luật định"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

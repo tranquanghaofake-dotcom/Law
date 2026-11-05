@@ -21,6 +21,32 @@
   "phối hợp với Mặt trận",
   "báo cáo trước Nhân dân"
  ],
+ "memo": {
+  "hook": "Chính phủ không làm việc khép kín: PHỐI HỢP, MỜI DỰ, BÁO CÁO.",
+  "tree": [
+   {
+    "label": "Phối hợp",
+    "children": [
+     "Mặt trận Tổ quốc",
+     "Tổ chức chính trị - xã hội"
+    ]
+   },
+   {
+    "label": "Mời dự phiên họp",
+    "children": [
+     "Chủ tịch Ủy ban trung ương Mặt trận",
+     "Khi bàn vấn đề liên quan"
+    ]
+   },
+   {
+    "label": "Báo cáo trước Nhân dân",
+    "children": [
+     "Thủ tướng, Bộ trưởng",
+     "Qua thông tin đại chúng"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

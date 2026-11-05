@@ -24,6 +24,28 @@
   "cơ quan nhà nước"
  ],
  "note": "Luật Ban hành văn bản quy phạm pháp luật 64/2025/QH15 có hiệu lực từ 01/4/2025, thay thế Luật 80/2015/QH13; sửa đổi bởi Luật 87/2025/QH15 (hiệu lực 01/7/2025) — văn bản hợp nhất 54/VBHN-VPQH 2025.",
+ "memo": {
+  "hook": "Quy phạm là TẾ BÀO của pháp luật: CHUNG, BẮT BUỘC, Nhà nước BẢO ĐẢM.",
+  "tree": [
+   {
+    "label": "Đặc điểm",
+    "children": [
+     "Quy tắc xử sự chung",
+     "Bắt buộc chung",
+     "Nhà nước ban hành, thừa nhận",
+     "Áp dụng nhiều lần"
+    ]
+   },
+   {
+    "label": "Phân loại",
+    "children": [
+     "Bắt buộc",
+     "Cấm đoán",
+     "Cho phép"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

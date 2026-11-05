@@ -24,6 +24,38 @@
   "nộp đơn đầu tiên"
  ],
  "note": "Điều 6 có nội dung được sửa đổi, bổ sung bởi Luật 42/2019/QH14 (hiệu lực 01/11/2019); Luật 131/2025/QH15 (hiệu lực 01/4/2026) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
+ "memo": {
+  "hook": "Ba cơ chế: ĐĂNG KÝ – SỬ DỤNG – BẢO MẬT.",
+  "tree": [
+   {
+    "label": "Đăng ký, cấp văn bằng",
+    "children": [
+     "Sáng chế, kiểu dáng",
+     "Nhãn hiệu thông thường",
+     "Chỉ dẫn địa lý"
+    ]
+   },
+   {
+    "label": "Do sử dụng",
+    "children": [
+     "Nhãn hiệu nổi tiếng",
+     "Tên thương mại"
+    ]
+   },
+   {
+    "label": "Có được hợp pháp, bảo mật",
+    "children": [
+     "Bí mật kinh doanh"
+    ]
+   },
+   {
+    "label": "Nguyên tắc",
+    "children": [
+     "Nộp đơn đầu tiên"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

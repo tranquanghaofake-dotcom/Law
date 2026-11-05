@@ -25,6 +25,32 @@
   "tài khoản thanh toán"
  ],
  "note": "Luật Các tổ chức tín dụng 32/2024/QH15 có hiệu lực từ 01/7/2024, thay thế Luật 47/2010/QH12 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 96/2025/QH15 (hiệu lực 15/10/2025) và Luật 23/2026/QH16 (hiệu lực 01/12/2026, chỉ bổ sung một điểm tại Điều 49) — các khoản Điều 4 được trích không bị sửa.",
+ "memo": {
+  "hook": "Một trong ba nghiệp vụ LÕI; phải qua TÀI KHOẢN thanh toán.",
+  "tree": [
+   {
+    "label": "Dịch vụ",
+    "children": [
+     "Cung ứng phương tiện thanh toán",
+     "Séc, lệnh chi, ủy nhiệm chi",
+     "Nhờ thu, ủy nhiệm thu",
+     "Thẻ ngân hàng"
+    ]
+   },
+   {
+    "label": "Điều kiện",
+    "children": [
+     "Qua tài khoản thanh toán"
+    ]
+   },
+   {
+    "label": "Không được làm",
+    "children": [
+     "Tổ chức tín dụng phi ngân hàng"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -21,6 +21,32 @@
   "50 năm đất nông nghiệp",
   "không phải gia hạn"
  ],
+ "memo": {
+  "hook": "ĐẤT Ở dùng lâu dài; đất nông nghiệp trong hạn mức 50 NĂM, tự động tiếp tục.",
+  "tree": [
+   {
+    "label": "Ổn định lâu dài",
+    "children": [
+     "Đất ở",
+     "Quốc phòng, an ninh",
+     "Tín ngưỡng, nghĩa trang"
+    ]
+   },
+   {
+    "label": "Có thời hạn",
+    "children": [
+     "Nông nghiệp trong hạn mức: 50 năm",
+     "Hết hạn tự động tiếp tục"
+    ]
+   },
+   {
+    "label": "Dự án",
+    "children": [
+     "Theo thời hạn dự án"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

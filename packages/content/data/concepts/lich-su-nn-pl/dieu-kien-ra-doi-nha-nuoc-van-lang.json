@@ -21,6 +21,31 @@
   "trị thủy",
   "chống ngoại xâm"
  ],
+ "memo": {
+  "hook": "Văn Lang ra đời SỚM vì TRỊ THỦY và CHỐNG NGOẠI XÂM, khi phân hóa còn SƠ KHAI.",
+  "tree": [
+   {
+    "label": "Kinh tế",
+    "children": [
+     "Nông nghiệp lúa nước",
+     "Kỹ thuật đồng thau"
+    ]
+   },
+   {
+    "label": "Xã hội",
+    "children": [
+     "Phân hóa sơ khai"
+    ]
+   },
+   {
+    "label": "Thúc đẩy",
+    "children": [
+     "Trị thủy",
+     "Chống ngoại xâm"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

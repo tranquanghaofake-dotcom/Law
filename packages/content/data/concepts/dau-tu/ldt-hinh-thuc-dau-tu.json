@@ -24,6 +24,41 @@
   "hợp đồng BCC"
  ],
  "note": "Luật Đầu tư 143/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Đầu tư 61/2020/QH14 mà đề cương HLU 2021 còn dẫn (khoản 4 Điều 51). Luật 24/2026/QH16 sửa đổi có hiệu lực từ 01/3/2027 (riêng một phần Điều 6 từ 01/01/2027), chỉ sửa Điều 6 và Phụ lục IV, không sửa điều được trích — văn bản hợp nhất 142/2026/VBHN-LQ-VPQH.",
+ "memo": {
+  "hook": "Năm hình thức: LẬP tổ chức – GÓP VỐN – DỰ ÁN – BCC – hình thức mới.",
+  "tree": [
+   {
+    "label": "Thành lập",
+    "children": [
+     "Tổ chức kinh tế"
+    ]
+   },
+   {
+    "label": "Góp vốn",
+    "children": [
+     "Mua cổ phần, phần vốn góp"
+    ]
+   },
+   {
+    "label": "Dự án",
+    "children": [
+     "Thực hiện dự án đầu tư"
+    ]
+   },
+   {
+    "label": "Hợp đồng",
+    "children": [
+     "Hợp đồng BCC"
+    ]
+   },
+   {
+    "label": "Khác",
+    "children": [
+     "Theo quy định của Chính phủ"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

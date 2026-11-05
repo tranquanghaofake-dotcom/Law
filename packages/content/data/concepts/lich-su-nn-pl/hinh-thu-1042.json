@@ -25,6 +25,38 @@
   "Minh Đạo",
   "không còn lưu lại"
  ],
+ "memo": {
+  "hook": "HÌNH THƯ 1042: bộ luật THÀNH VĂN ĐẦU TIÊN được chính sử ghi nhận, nay KHÔNG CÒN.",
+  "tree": [
+   {
+    "label": "Mốc",
+    "children": [
+     "1042, Lý Thái Tông",
+     "Niên hiệu Minh Đạo"
+    ]
+   },
+   {
+    "label": "Lý do",
+    "children": [
+     "Kiện tụng phiền nhiễu",
+     "Quan lại xử khắc nghiệt"
+    ]
+   },
+   {
+    "label": "Kỹ thuật",
+    "children": [
+     "Chia môn loại",
+     "Biên thành điều khoản"
+    ]
+   },
+   {
+    "label": "Hiện trạng",
+    "children": [
+     "Không còn lưu lại"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

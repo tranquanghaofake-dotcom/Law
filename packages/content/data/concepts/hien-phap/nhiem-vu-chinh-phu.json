@@ -23,6 +23,40 @@
   "trình dự án luật, ngân sách",
   "quản lý nền hành chính quốc gia"
  ],
+ "memo": {
+  "hook": "Việc đầu tiên của Chính phủ là TỔ CHỨC THI HÀNH Hiến pháp, luật.",
+  "tree": [
+   {
+    "label": "Thi hành",
+    "children": [
+     "Hiến pháp, luật, nghị quyết Quốc hội",
+     "Pháp lệnh, lệnh của Chủ tịch nước"
+    ]
+   },
+   {
+    "label": "Đề xuất",
+    "children": [
+     "Chính sách",
+     "Dự án luật, ngân sách"
+    ]
+   },
+   {
+    "label": "Quản lý thống nhất",
+    "children": [
+     "Kinh tế, văn hóa, xã hội",
+     "Quốc phòng, an ninh, đối ngoại",
+     "Nền hành chính quốc gia"
+    ]
+   },
+   {
+    "label": "Khác",
+    "children": [
+     "Bảo vệ quyền con người",
+     "Ký điều ước nhân danh Chính phủ"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

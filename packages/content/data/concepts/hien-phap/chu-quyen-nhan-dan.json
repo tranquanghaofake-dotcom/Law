@@ -21,6 +21,33 @@
   "tất cả quyền lực nhà nước thuộc về Nhân dân",
   "liên minh công nhân, nông dân, trí thức"
  ],
+ "memo": {
+  "hook": "Mọi quyền lực nhà nước có nguồn gốc từ NHÂN DÂN.",
+  "tree": [
+   {
+    "label": "Nguyên tắc",
+    "children": [
+     "Nhân dân làm chủ",
+     "Quyền lực thuộc về Nhân dân"
+    ]
+   },
+   {
+    "label": "Nền tảng",
+    "children": [
+     "Công nhân",
+     "Nông dân",
+     "Trí thức"
+    ]
+   },
+   {
+    "label": "Cách thực hiện",
+    "children": [
+     "Trực tiếp: bầu cử, trưng cầu ý dân",
+     "Gián tiếp: Quốc hội, Hội đồng nhân dân"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

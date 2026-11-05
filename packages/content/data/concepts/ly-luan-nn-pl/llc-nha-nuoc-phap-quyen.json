@@ -25,6 +25,26 @@
   "ngự trị của pháp luật"
  ],
  "note": "Hiến pháp 2013 (hiệu lực 01/01/2014) được sửa đổi, bổ sung bởi Nghị quyết 203/2025/QH15 (hiệu lực 16/6/2025) — các điều được trích (Điều 2, 4, 6) không thuộc phạm vi sửa đổi.",
+ "memo": {
+  "hook": "Pháp quyền: PHÁP LUẬT ngự trị, NHÂN DÂN là chủ thể quyền lực.",
+  "tree": [
+   {
+    "label": "Hiến định",
+    "children": [
+     "Của Nhân dân, do Nhân dân, vì Nhân dân"
+    ]
+   },
+   {
+    "label": "Dấu hiệu (lý luận)",
+    "children": [
+     "Nhân dân là chủ thể quyền lực",
+     "Pháp luật tối cao",
+     "Bảo đảm quyền con người",
+     "Phân công, kiểm soát quyền lực"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

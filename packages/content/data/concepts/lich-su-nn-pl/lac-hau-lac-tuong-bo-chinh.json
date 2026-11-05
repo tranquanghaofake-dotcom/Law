@@ -21,6 +21,37 @@
   "Bồ Chính",
   "cha truyền con nối"
  ],
+ "memo": {
+  "hook": "Văn Lang ba cấp: HÙNG VƯƠNG (Lạc hầu giúp) – LẠC TƯỚNG (bộ) – BỒ CHÍNH (chiềng chạ).",
+  "tree": [
+   {
+    "label": "Trung ương",
+    "children": [
+     "Hùng Vương",
+     "Lạc hầu: tướng văn"
+    ]
+   },
+   {
+    "label": "Bộ",
+    "children": [
+     "Lạc tướng: tướng võ"
+    ]
+   },
+   {
+    "label": "Chiềng chạ",
+    "children": [
+     "Bồ chính"
+    ]
+   },
+   {
+    "label": "Đặc điểm",
+    "children": [
+     "Cha truyền con nối",
+     "Dấu ấn thị tộc"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

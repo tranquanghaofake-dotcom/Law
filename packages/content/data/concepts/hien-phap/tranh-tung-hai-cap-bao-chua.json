@@ -22,6 +22,32 @@
   "sơ thẩm, phúc thẩm",
   "quyền bào chữa"
  ],
+ "memo": {
+  "hook": "Ba bảo đảm: TRANH TỤNG – HAI CẤP – BÀO CHỮA.",
+  "tree": [
+   {
+    "label": "Tranh tụng",
+    "children": [
+     "Các bên bình đẳng đưa chứng cứ",
+     "Lần đầu hiến định năm 2013"
+    ]
+   },
+   {
+    "label": "Hai cấp xét xử",
+    "children": [
+     "Sơ thẩm",
+     "Phúc thẩm"
+    ]
+   },
+   {
+    "label": "Bào chữa",
+    "children": [
+     "Bị can, bị cáo",
+     "Bảo vệ lợi ích đương sự"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

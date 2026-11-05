@@ -21,6 +21,24 @@
   "không bị trục xuất",
   "không bị giao nộp"
  ],
+ "memo": {
+  "hook": "QUỐC TỊCH là tiêu chí duy nhất xác định công dân.",
+  "tree": [
+   {
+    "label": "Là ai",
+    "children": [
+     "Người có quốc tịch Việt Nam"
+    ]
+   },
+   {
+    "label": "Bảo đảm",
+    "children": [
+     "Không bị trục xuất",
+     "Không bị giao nộp cho nhà nước khác"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

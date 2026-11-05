@@ -23,6 +23,28 @@
   "nhân danh mình"
  ],
  "note": "Bộ luật Dân sự 91/2015/QH13 có hiệu lực từ 01/01/2017; chưa có văn bản sửa đổi có hiệu lực.",
+ "memo": {
+  "hook": "Ba loại chủ thể: CÁ NHÂN – TỔ CHỨC – NHÀ NƯỚC; pháp nhân cần 4 điều kiện.",
+  "tree": [
+   {
+    "label": "Chủ thể",
+    "children": [
+     "Cá nhân",
+     "Tổ chức",
+     "Nhà nước (đặc biệt)"
+    ]
+   },
+   {
+    "label": "Pháp nhân",
+    "children": [
+     "Thành lập hợp pháp",
+     "Cơ cấu tổ chức",
+     "Tài sản độc lập",
+     "Nhân danh mình"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

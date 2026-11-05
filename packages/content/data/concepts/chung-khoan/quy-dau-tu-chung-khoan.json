@@ -22,6 +22,32 @@
   "thu lợi nhuận",
   "không kiểm soát hằng ngày"
  ],
+ "memo": {
+  "hook": "Quỹ: tiền GÓP CHUNG để SINH LỜI; nhà đầu tư KHÔNG kiểm soát hằng ngày.",
+  "tree": [
+   {
+    "label": "Dấu hiệu",
+    "children": [
+     "Vốn góp của nhiều nhà đầu tư",
+     "Mục đích lợi nhuận",
+     "Không kiểm soát hằng ngày"
+    ]
+   },
+   {
+    "label": "Loại",
+    "children": [
+     "Quỹ đại chúng",
+     "Quỹ thành viên"
+    ]
+   },
+   {
+    "label": "Điều hành",
+    "children": [
+     "Công ty quản lý quỹ"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

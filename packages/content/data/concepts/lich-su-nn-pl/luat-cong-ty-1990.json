@@ -24,6 +24,37 @@
   "xin phép thành lập"
  ],
  "note": "Luật Công ty 1990 đã hết hiệu lực (được thay bằng Luật Doanh nghiệp 1999); hiện hành là Luật Doanh nghiệp 59/2020/QH14 (đã được sửa đổi). Học để hiểu lịch sử.",
+ "memo": {
+  "hook": "Luật Công ty 1990: TRÁCH NHIỆM HỮU HẠN lần đầu, nhưng vẫn phải XIN PHÉP thành lập.",
+  "tree": [
+   {
+    "label": "Mốc",
+    "children": [
+     "21/12/1990",
+     "Hiệu lực 15/4/1991"
+    ]
+   },
+   {
+    "label": "Điểm cốt lõi",
+    "children": [
+     "Trách nhiệm hữu hạn",
+     "Tính sinh lợi hợp pháp"
+    ]
+   },
+   {
+    "label": "Hạn chế",
+    "children": [
+     "Phải xin phép thành lập"
+    ]
+   },
+   {
+    "label": "Ý nghĩa",
+    "children": [
+     "Thời Đổi mới, nhiều thành phần"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

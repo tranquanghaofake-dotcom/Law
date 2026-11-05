@@ -22,6 +22,35 @@
   "hoán đổi danh mục chứng khoán cơ cấu",
   "niêm yết"
  ],
+ "memo": {
+  "hook": "ETF: bản chất là QUỸ MỞ nhưng mua bán TRÊN SÀN như cổ phiếu; hoán đổi RỔ chứng khoán.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Quỹ mở"
+    ]
+   },
+   {
+    "label": "Nhà đầu tư lớn",
+    "children": [
+     "Đổi rổ chứng khoán lấy chứng chỉ quỹ"
+    ]
+   },
+   {
+    "label": "Nhà đầu tư nhỏ",
+    "children": [
+     "Mua bán trên sàn"
+    ]
+   },
+   {
+    "label": "Thường mô phỏng",
+    "children": [
+     "Chỉ số, ví dụ VN30"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

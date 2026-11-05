@@ -21,6 +21,26 @@
   "dưới 100 nhà đầu tư",
   "chỉ nhà đầu tư chuyên nghiệp"
  ],
+ "memo": {
+  "hook": "Riêng lẻ: KHÔNG quảng cáo và (DƯỚI 100 người hoặc chỉ nhà đầu tư CHUYÊN NGHIỆP).",
+  "tree": [
+   {
+    "label": "Điều kiện",
+    "children": [
+     "Không qua thông tin đại chúng",
+     "Dưới 100 nhà đầu tư",
+     "Hoặc chỉ nhà đầu tư chuyên nghiệp"
+    ]
+   },
+   {
+    "label": "Đổi lại",
+    "children": [
+     "Hạn chế chuyển nhượng",
+     "Giới hạn người mua"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

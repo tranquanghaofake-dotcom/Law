@@ -23,6 +23,31 @@
   "chủ sở hữu hợp pháp"
  ],
  "note": "Luật Doanh nghiệp 59/2020/QH14 có hiệu lực từ 01/01/2021, sửa đổi bởi Luật 03/2022/QH15 và Luật 76/2025/QH15 (hiệu lực 01/7/2025) — văn bản hợp nhất 67/VBHN-VPQH 2025.",
+ "memo": {
+  "hook": "Góp vốn bằng quyền SHTT được, nhưng phải là CHỦ HỢP PHÁP và phải ĐỊNH GIÁ.",
+  "tree": [
+   {
+    "label": "Được góp",
+    "children": [
+     "Quyền sở hữu trí tuệ",
+     "Công nghệ, bí quyết kỹ thuật"
+    ]
+   },
+   {
+    "label": "Điều kiện",
+    "children": [
+     "Chủ sở hữu hoặc người có quyền hợp pháp",
+     "Định giá bằng Đồng Việt Nam"
+    ]
+   },
+   {
+    "label": "Định giá sai",
+    "children": [
+     "Liên đới chịu trách nhiệm"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

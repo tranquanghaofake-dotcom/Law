@@ -24,6 +24,37 @@
   "sửa đổi 2001"
  ],
  "note": "Hiến pháp đã hết hiệu lực; học để hiểu lịch sử lập hiến, không áp dụng như luật hiện hành. Nghị quyết 51/2001/QH10 sửa đổi, bổ sung một số điều; câu chữ trích ở đây là bản gốc năm 1992.",
+ "memo": {
+  "hook": "Hiến pháp ĐỔI MỚI: kinh tế hàng hóa nhiều thành phần.",
+  "tree": [
+   {
+    "label": "Thông qua",
+    "children": [
+     "15/4/1992"
+    ]
+   },
+   {
+    "label": "Điểm mới",
+    "children": [
+     "Kinh tế hàng hóa nhiều thành phần",
+     "Lần đầu dùng quyền con người",
+     "Chủ tịch nước cá nhân"
+    ]
+   },
+   {
+    "label": "Sửa đổi 2001",
+    "children": [
+     "Nhà nước pháp quyền xã hội chủ nghĩa"
+    ]
+   },
+   {
+    "label": "Hết hiệu lực",
+    "children": [
+     "01/01/2014"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

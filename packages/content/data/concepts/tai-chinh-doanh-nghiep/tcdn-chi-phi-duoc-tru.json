@@ -23,6 +23,26 @@
   "không dùng tiền mặt"
  ],
  "note": "Luật Thuế TNDN 67/2025/QH15 có hiệu lực từ 01/10/2025, áp dụng từ kỳ tính thuế năm 2025, thay thế Luật 14/2008/QH12 mà đề cương còn dẫn; Điều 8, 9 không bị Luật 09/2026/QH16 sửa (đã so với văn bản hợp nhất 113/VBHN-VPQH 2026).",
+ "memo": {
+  "hook": "Chi phí được trừ: THỰC TẾ, LIÊN QUAN kinh doanh, có HÓA ĐƠN, KHÔNG TIỀN MẶT.",
+  "tree": [
+   {
+    "label": "Điều kiện",
+    "children": [
+     "Thực tế phát sinh",
+     "Liên quan sản xuất, kinh doanh",
+     "Đủ hóa đơn, chứng từ",
+     "Thanh toán không dùng tiền mặt"
+    ]
+   },
+   {
+    "label": "Loại trừ",
+    "children": [
+     "Khoản chi không được trừ"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

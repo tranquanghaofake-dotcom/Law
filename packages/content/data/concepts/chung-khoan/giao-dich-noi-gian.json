@@ -22,6 +22,32 @@
   "tiết lộ, cung cấp",
   "tư vấn dựa trên thông tin nội bộ"
  ],
+ "memo": {
+  "hook": "Nội gián: DÙNG, TIẾT LỘ hoặc MÁCH NƯỚC dựa trên thông tin nội bộ — áp dụng với BẤT KỲ AI.",
+  "tree": [
+   {
+    "label": "Ba dạng",
+    "children": [
+     "Tự dùng để giao dịch",
+     "Tiết lộ, cung cấp",
+     "Tư vấn người khác giao dịch"
+    ]
+   },
+   {
+    "label": "Chủ thể",
+    "children": [
+     "Bất kỳ ai nắm thông tin nội bộ"
+    ]
+   },
+   {
+    "label": "Chế tài",
+    "children": [
+     "Hành chính",
+     "Có thể hình sự"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

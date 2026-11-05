@@ -23,6 +23,30 @@
   "chỉ chịu phạt vi phạm",
   "vừa phạt vừa bồi thường"
  ],
+ "memo": {
+  "hook": "Phạt chỉ khi THỎA THUẬN; BLDS không giới hạn mức (thương mại tối đa 8%).",
+  "tree": [
+   {
+    "label": "Điều kiện",
+    "children": [
+     "Các bên thỏa thuận"
+    ]
+   },
+   {
+    "label": "Mức",
+    "children": [
+     "Do các bên thỏa thuận",
+     "Luật Thương mại: tối đa 8%"
+    ]
+   },
+   {
+    "label": "Với bồi thường",
+    "children": [
+     "Không thỏa thuận cả hai → chỉ chịu phạt"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

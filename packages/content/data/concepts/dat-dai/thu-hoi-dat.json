@@ -22,6 +22,35 @@
   "lợi ích quốc gia, công cộng",
   "các trường hợp liệt kê"
  ],
+ "memo": {
+  "hook": "Bốn căn cứ: QUỐC PHÒNG – LỢI ÍCH CÔNG CỘNG – VI PHẠM – CHẤM DỨT sử dụng.",
+  "tree": [
+   {
+    "label": "Quốc phòng, an ninh"
+   },
+   {
+    "label": "Phát triển kinh tế - xã hội",
+    "children": [
+     "Lợi ích quốc gia, công cộng",
+     "Thật cần thiết, liệt kê cụ thể"
+    ]
+   },
+   {
+    "label": "Vi phạm",
+    "children": [
+     "Pháp luật đất đai"
+    ]
+   },
+   {
+    "label": "Chấm dứt",
+    "children": [
+     "Theo pháp luật",
+     "Tự nguyện trả lại",
+     "Nguy hiểm tính mạng"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

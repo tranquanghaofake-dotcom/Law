@@ -22,6 +22,31 @@
   "bỏ lửng vợ 5 tháng",
   "mất vợ"
  ],
+ "memo": {
+  "hook": "Quốc triều hình luật NHÂN VĂN: buộc quan THU NUÔI người cô quả; chồng bỏ vợ 5 THÁNG thì MẤT VỢ.",
+  "tree": [
+   {
+    "label": "Người yếu thế",
+    "children": [
+     "Quan sở tại phải thu nuôi",
+     "Góa, mồ côi, tàn tật"
+    ]
+   },
+   {
+    "label": "Phụ nữ",
+    "children": [
+     "Chồng bỏ lửng vợ 5 tháng",
+     "Thì mất vợ"
+    ]
+   },
+   {
+    "label": "Đánh giá",
+    "children": [
+     "Giá trị nhân văn nổi bật"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

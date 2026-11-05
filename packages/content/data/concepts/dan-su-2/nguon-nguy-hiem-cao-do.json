@@ -22,6 +22,34 @@
   "hoàn toàn do lỗi cố ý của người bị thiệt hại",
   "giao cho người khác chiếm hữu, sử dụng"
  ],
+ "memo": {
+  "hook": "Nguồn nguy hiểm cao độ: đền CẢ KHI KHÔNG CÓ LỖI.",
+  "tree": [
+   {
+    "label": "Ví dụ",
+    "children": [
+     "Xe cơ giới",
+     "Điện, nhà máy",
+     "Vũ khí, chất nổ",
+     "Thú dữ"
+    ]
+   },
+   {
+    "label": "Trách nhiệm",
+    "children": [
+     "Chủ sở hữu, người sử dụng",
+     "Không cần lỗi"
+    ]
+   },
+   {
+    "label": "Miễn",
+    "children": [
+     "Lỗi cố ý của người bị hại",
+     "Bất khả kháng, tình thế cấp thiết"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

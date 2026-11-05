@@ -21,6 +21,31 @@
   "từng nhà đầu tư",
   "tài sản của nhà đầu tư"
  ],
+ "memo": {
+  "hook": "Quản lý danh mục = đầu tư hộ tài sản RIÊNG của TỪNG nhà đầu tư theo ỦY THÁC.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Ủy thác của từng nhà đầu tư"
+    ]
+   },
+   {
+    "label": "Tài sản",
+    "children": [
+     "Vẫn của nhà đầu tư",
+     "Lưu ký toàn bộ",
+     "Tách biệt từng khách"
+    ]
+   },
+   {
+    "label": "Phân biệt",
+    "children": [
+     "Quản lý quỹ: tiền chung"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

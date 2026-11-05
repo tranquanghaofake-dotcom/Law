@@ -21,6 +21,31 @@
   "TNHH hoặc cổ phần",
   "giấy phép trước, đăng ký doanh nghiệp sau"
  ],
+ "memo": {
+  "hook": "Công ty chứng khoán: GIẤY PHÉP TRƯỚC, ĐĂNG KÝ DOANH NGHIỆP SAU.",
+  "tree": [
+   {
+    "label": "Cấp phép",
+    "children": [
+     "Ủy ban Chứng khoán Nhà nước"
+    ]
+   },
+   {
+    "label": "Loại hình",
+    "children": [
+     "Công ty TNHH",
+     "Công ty cổ phần"
+    ]
+   },
+   {
+    "label": "Thứ tự",
+    "children": [
+     "Giấy phép trước",
+     "Đăng ký doanh nghiệp sau"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

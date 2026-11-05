@@ -23,6 +23,36 @@
   "Thanh tra Bộ Tài chính hướng dẫn nghiệp vụ"
  ],
  "note": "Câu chữ VBHN 102/VBHN-VPQH 2026 (khoản 3 Điều 129) vẫn ghi \"hướng dẫn về nghiệp vụ của Thanh tra Bộ Tài chính\"; từ 01/7/2025, Luật Thanh tra 84/2025/QH15 (hiệu lực 01/7/2025, Điều 7) chỉ còn Thanh tra Chính phủ, Thanh tra tỉnh, thanh tra trong Quân đội, Công an, Ngân hàng Nhà nước và Thanh tra Cơ yếu, không còn Thanh tra Bộ Tài chính. Văn bản quy định tổ chức thanh tra chứng khoán hiện nay chưa được đối chiếu.",
+ "memo": {
+  "hook": "Thanh tra chứng khoán: CHUYÊN NGÀNH, do CHỦ TỊCH ỦY BAN chỉ đạo trực tiếp.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Thanh tra chuyên ngành"
+    ]
+   },
+   {
+    "label": "Chỉ đạo",
+    "children": [
+     "Chủ tịch Ủy ban"
+    ]
+   },
+   {
+    "label": "Hướng dẫn nghiệp vụ",
+    "children": [
+     "Thanh tra Bộ Tài chính"
+    ]
+   },
+   {
+    "label": "Quyền",
+    "children": [
+     "Thanh tra, kiểm tra",
+     "Xử phạt hoặc kiến nghị xử phạt"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -23,6 +23,40 @@
   "90 ngày"
  ],
  "note": "Luật 136/2025/QH15 sửa đổi Luật Tiếp công dân, Luật Khiếu nại, Luật Tố cáo có hiệu lực từ 01/7/2026; văn bản hợp nhất đã cập nhật.",
+ "memo": {
+  "hook": "KHIẾU NẠI bảo vệ quyền của MÌNH: lần đầu → lần hai → khởi kiện.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Đề nghị xem xét lại",
+     "Bảo vệ quyền lợi của mình"
+    ]
+   },
+   {
+    "label": "Đối tượng",
+    "children": [
+     "Quyết định hành chính",
+     "Hành vi hành chính",
+     "Quyết định kỷ luật công chức"
+    ]
+   },
+   {
+    "label": "Trình tự",
+    "children": [
+     "Lần đầu",
+     "Lần hai",
+     "Khởi kiện hành chính"
+    ]
+   },
+   {
+    "label": "Thời hiệu",
+    "children": [
+     "90 ngày"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

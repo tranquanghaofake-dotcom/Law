@@ -23,6 +23,37 @@
   "chịu trách nhiệm trước Nhân dân và cấp trên",
   "quyết định, giám sát"
  ],
+ "memo": {
+  "hook": "Quốc hội thu nhỏ ở địa phương, chịu trách nhiệm HAI CHIỀU.",
+  "tree": [
+   {
+    "label": "Vị trí",
+    "children": [
+     "Cơ quan quyền lực nhà nước ở địa phương"
+    ]
+   },
+   {
+    "label": "Hình thành",
+    "children": [
+     "Nhân dân địa phương bầu"
+    ]
+   },
+   {
+    "label": "Chịu trách nhiệm",
+    "children": [
+     "Trước Nhân dân địa phương",
+     "Trước cơ quan nhà nước cấp trên"
+    ]
+   },
+   {
+    "label": "Chức năng",
+    "children": [
+     "Quyết định vấn đề địa phương",
+     "Giám sát"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

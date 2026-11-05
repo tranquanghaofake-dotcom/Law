@@ -23,6 +23,25 @@
   "05 nhân viên chứng chỉ quản lý quỹ",
   "Tổng giám đốc 04 năm"
  ],
+ "memo": {
+  "hook": "Giống công ty chứng khoán, nhưng nhóm 30% có cả CÔNG TY CHỨNG KHOÁN; cần 5 người có chứng chỉ quỹ.",
+  "tree": [
+   {
+    "label": "Cơ cấu",
+    "children": [
+     "Tổ chức nắm 65%",
+     "30% gồm cả công ty chứng khoán"
+    ]
+   },
+   {
+    "label": "Nhân sự",
+    "children": [
+     "05 nhân viên chứng chỉ quản lý quỹ",
+     "Tổng giám đốc 04 năm kinh nghiệm"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

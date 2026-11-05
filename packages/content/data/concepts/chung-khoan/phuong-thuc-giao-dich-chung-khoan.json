@@ -21,6 +21,30 @@
   "giao dịch thỏa thuận",
   "không giao dịch ngoài hệ thống"
  ],
+ "memo": {
+  "hook": "KHỚP LỆNH tập trung hoặc THỎA THUẬN; KHÔNG giao dịch ngoài hệ thống.",
+  "tree": [
+   {
+    "label": "Khớp lệnh tập trung",
+    "children": [
+     "Hệ thống tự ghép lệnh"
+    ]
+   },
+   {
+    "label": "Thỏa thuận",
+    "children": [
+     "Hai bên tự chốt giá, khối lượng",
+     "Thường lô lớn"
+    ]
+   },
+   {
+    "label": "Cấm",
+    "children": [
+     "Giao dịch ngoài hệ thống"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

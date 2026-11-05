@@ -23,6 +23,37 @@
   "đại tư xã, tiểu tư xã",
   "xã quan"
  ],
+ "memo": {
+  "hook": "1242: nhà Trần chia 12 LỘ và lần đầu đặt XÃ QUAN do triều đình cử.",
+  "tree": [
+   {
+    "label": "Mốc",
+    "children": [
+     "1242"
+    ]
+   },
+   {
+    "label": "Lộ",
+    "children": [
+     "12 lộ",
+     "An phủ sứ, trấn phủ sứ"
+    ]
+   },
+   {
+    "label": "Xã",
+    "children": [
+     "Đại tư xã",
+     "Tiểu tư xã"
+    ]
+   },
+   {
+    "label": "Ý nghĩa",
+    "children": [
+     "Trung ương với xuống tận xã"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

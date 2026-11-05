@@ -24,6 +24,33 @@
   "Quốc hội phê chuẩn quyết toán"
  ],
  "note": "Luật Ngân sách nhà nước 89/2025/QH15 có hiệu lực từ năm ngân sách 2026 (một số nội dung từ 01/7/2025), thay thế Luật Ngân sách nhà nước 83/2015/QH13 mà đề cương HLU còn dẫn (Điều 77).",
+ "memo": {
+  "hook": "BỘI CHI: chi > thu (chỉ trung ương, tỉnh). KẾT DƯ: thu > chi.",
+  "tree": [
+   {
+    "label": "Bội chi",
+    "children": [
+     "Chi lớn hơn thu",
+     "Chỉ trung ương và cấp tỉnh",
+     "Nhỏ hơn chi đầu tư phát triển"
+    ]
+   },
+   {
+    "label": "Kết dư",
+    "children": [
+     "Thu lớn hơn chi sau năm ngân sách",
+     "50% quỹ dự trữ, 50% thu năm sau"
+    ]
+   },
+   {
+    "label": "Quyết toán",
+    "children": [
+     "Khâu cuối",
+     "Quốc hội, HĐND phê chuẩn"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -23,6 +23,36 @@
   "văn bản quy phạm pháp luật",
   "hình thức bên trong"
  ],
+ "memo": {
+  "hook": "Ba nguồn bên ngoài: TẬP QUÁN PHÁP – ÁN LỆ – VĂN BẢN QUY PHẠM.",
+  "tree": [
+   {
+    "label": "Tập quán pháp",
+    "children": [
+     "Tập quán được thừa nhận",
+     "Có sớm nhất"
+    ]
+   },
+   {
+    "label": "Tiền lệ pháp, án lệ",
+    "children": [
+     "Bản án làm khuôn mẫu"
+    ]
+   },
+   {
+    "label": "Văn bản quy phạm",
+    "children": [
+     "Chủ yếu ở Việt Nam"
+    ]
+   },
+   {
+    "label": "Hình thức bên trong",
+    "children": [
+     "Nguyên tắc, ngành, chế định, quy phạm"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

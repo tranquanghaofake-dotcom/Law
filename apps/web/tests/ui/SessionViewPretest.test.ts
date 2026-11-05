@@ -7,7 +7,7 @@ vi.mock('$lib/store/stats', () => ({
   stats: { addXp: async () => 0, xp: async () => 0, markLesson: async () => false, streak: async () => ({ count: 0, longest: 0, lastDay: null, freezes: 0 }), setStreak: async () => {} },
 }));
 const playCombo = vi.fn();
-vi.mock('$lib/fx/sfx', () => ({ sfx: { preload() {}, play() {}, playCombo: (...a: unknown[]) => playCombo(...a), stopCombo() {} } }));
+vi.mock('$lib/fx/sfx', () => ({ sfx: { preload() {}, play() {}, playCombo: (...a: unknown[]) => playCombo(...a), stamp() {}, stopCombo() {} } }));
 vi.mock('$lib/fx/confetti', () => ({ burst() {}, reducedMotion: () => true }));
 vi.mock('$lib/fx/haptics', () => ({ buzz() {}, buzzCombo() {} }));
 vi.mock('$lib/ui/header.svelte', () => ({ refreshHeader: async () => {} }));

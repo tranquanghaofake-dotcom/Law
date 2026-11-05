@@ -23,6 +23,27 @@
   "vi phạm pháp luật về quản lý nhà nước",
   "không phải là tội phạm"
  ],
+ "memo": {
+  "hook": "Bốn dấu hiệu: HÀNH VI – TRÁI LUẬT – CÓ LỖI – CHƯA phải tội phạm.",
+  "tree": [
+   {
+    "label": "Dấu hiệu",
+    "children": [
+     "Hành vi",
+     "Trái pháp luật về quản lý nhà nước",
+     "Có lỗi",
+     "Không phải tội phạm"
+    ]
+   },
+   {
+    "label": "Chủ thể",
+    "children": [
+     "Cá nhân",
+     "Tổ chức"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

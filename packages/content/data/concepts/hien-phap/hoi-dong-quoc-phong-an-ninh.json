@@ -21,6 +21,31 @@
   "Chủ tịch nước trình Quốc hội phê chuẩn",
   "tình trạng chiến tranh"
  ],
+ "memo": {
+  "hook": "Chủ tịch nước làm Chủ tịch; làm việc TẬP THỂ.",
+  "tree": [
+   {
+    "label": "Thành phần",
+    "children": [
+     "Chủ tịch, Phó Chủ tịch, Ủy viên",
+     "Quốc hội phê chuẩn theo đề nghị Chủ tịch nước"
+    ]
+   },
+   {
+    "label": "Làm việc",
+    "children": [
+     "Tập thể, quyết định theo đa số"
+    ]
+   },
+   {
+    "label": "Nhiệm vụ",
+    "children": [
+     "Trình quyết định tình trạng chiến tranh",
+     "Động viên lực lượng bảo vệ Tổ quốc"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

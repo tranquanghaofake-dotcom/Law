@@ -21,6 +21,31 @@
   "tổ chức thị trường",
   "quản lý nhà nước"
  ],
+ "memo": {
+  "hook": "Luật Chứng khoán phủ bốn nhóm: HOẠT ĐỘNG – QUYỀN NGHĨA VỤ – TỔ CHỨC THỊ TRƯỜNG – QUẢN LÝ NHÀ NƯỚC.",
+  "tree": [
+   {
+    "label": "Hoạt động",
+    "children": [
+     "Chào bán, niêm yết",
+     "Giao dịch"
+    ]
+   },
+   {
+    "label": "Chủ thể",
+    "children": [
+     "Quyền, nghĩa vụ"
+    ]
+   },
+   {
+    "label": "Nhà nước",
+    "children": [
+     "Tổ chức thị trường",
+     "Quản lý nhà nước"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

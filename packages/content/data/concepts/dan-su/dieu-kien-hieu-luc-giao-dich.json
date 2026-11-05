@@ -23,6 +23,36 @@
   "không vi phạm điều cấm, không trái đạo đức",
   "hình thức khi luật quy định"
  ],
+ "memo": {
+  "hook": "Ba điều kiện bắt buộc: NĂNG LỰC – TỰ NGUYỆN – MỤC ĐÍCH hợp pháp; HÌNH THỨC chỉ khi luật đòi.",
+  "tree": [
+   {
+    "label": "Chủ thể",
+    "children": [
+     "Năng lực phù hợp"
+    ]
+   },
+   {
+    "label": "Ý chí",
+    "children": [
+     "Hoàn toàn tự nguyện"
+    ]
+   },
+   {
+    "label": "Nội dung",
+    "children": [
+     "Không vi phạm điều cấm",
+     "Không trái đạo đức"
+    ]
+   },
+   {
+    "label": "Hình thức",
+    "children": [
+     "Chỉ khi luật quy định"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -23,6 +23,32 @@
   "từng đơn vị hành chính",
   "thời kỳ xác định"
  ],
+ "memo": {
+  "hook": "Quy hoạch là CĂN CỨ để giao, thuê, thu hồi, chuyển mục đích.",
+  "tree": [
+   {
+    "label": "Nội dung",
+    "children": [
+     "Phân bổ chỉ tiêu",
+     "Khoanh vùng đất đai"
+    ]
+   },
+   {
+    "label": "Phạm vi",
+    "children": [
+     "Từng đơn vị hành chính",
+     "Thời kỳ xác định"
+    ]
+   },
+   {
+    "label": "Vai trò",
+    "children": [
+     "Căn cứ giao, cho thuê",
+     "Căn cứ thu hồi, chuyển mục đích"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -21,6 +21,36 @@
   "cổ phần mới",
   "công ty cổ phần"
  ],
+ "memo": {
+  "hook": "Quyền mua cổ phần giúp cổ đông HIỆN HỮU mua cổ phần MỚI để không bị PHA LOÃNG.",
+  "tree": [
+   {
+    "label": "Ai phát hành",
+    "children": [
+     "Công ty cổ phần"
+    ]
+   },
+   {
+    "label": "Cho ai",
+    "children": [
+     "Cổ đông hiện hữu"
+    ]
+   },
+   {
+    "label": "Quyền",
+    "children": [
+     "Mua cổ phần mới",
+     "Theo điều kiện xác định"
+    ]
+   },
+   {
+    "label": "Mục đích",
+    "children": [
+     "Tránh pha loãng"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

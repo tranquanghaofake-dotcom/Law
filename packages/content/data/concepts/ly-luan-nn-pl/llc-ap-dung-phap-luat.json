@@ -23,6 +23,34 @@
   "trình tự, thủ tục",
   "áp dụng tương tự"
  ],
+ "memo": {
+  "hook": "Áp dụng pháp luật: chủ thể CÓ THẨM QUYỀN ra quyết định CÁ BIỆT.",
+  "tree": [
+   {
+    "label": "Đặc điểm",
+    "children": [
+     "Quyền lực nhà nước",
+     "Chủ thể có thẩm quyền",
+     "Trình tự, thủ tục chặt chẽ",
+     "Điều chỉnh cá biệt"
+    ]
+   },
+   {
+    "label": "Khi cần",
+    "children": [
+     "Quyền không mặc nhiên phát sinh",
+     "Có tranh chấp",
+     "Có vi phạm"
+    ]
+   },
+   {
+    "label": "Thiếu luật",
+    "children": [
+     "Áp dụng tương tự"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

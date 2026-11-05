@@ -22,6 +22,35 @@
   "quyền hành pháp",
   "cơ quan chấp hành của Quốc hội"
  ],
+ "memo": {
+  "hook": "Ba tính chất: HÀNH CHÍNH cao nhất, HÀNH PHÁP, CHẤP HÀNH của Quốc hội.",
+  "tree": [
+   {
+    "label": "Hành chính cao nhất",
+    "children": [
+     "Đứng đầu hệ thống hành chính"
+    ]
+   },
+   {
+    "label": "Quyền hành pháp",
+    "children": [
+     "Hiến pháp 2013 ghi nhận rõ"
+    ]
+   },
+   {
+    "label": "Chấp hành của Quốc hội",
+    "children": [
+     "Tổ chức thi hành luật, nghị quyết"
+    ]
+   },
+   {
+    "label": "Trách nhiệm",
+    "children": [
+     "Trước Quốc hội"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -23,6 +23,32 @@
   "trên 100 tỷ đồng"
  ],
  "note": "Luật 56/2024/QH15 (hiệu lực 01/01/2025) bổ sung điểm e khoản 1 (nhà đầu tư nước ngoài là cá nhân có quốc tịch nước ngoài, tổ chức thành lập theo pháp luật nước ngoài thực hiện hoạt động đầu tư kinh doanh tại Việt Nam) và khoản 1a, 1b. Theo đó, cá nhân là nhà đầu tư chuyên nghiệp chỉ được mua, giao dịch trái phiếu doanh nghiệp riêng lẻ có xếp hạng tín nhiệm và có tài sản bảo đảm hoặc bảo lãnh thanh toán của tổ chức tín dụng. Quy định về trái phiếu doanh nghiệp riêng lẻ có hiệu lực từ 01/01/2026. Giáo trình 2021 chưa có các nội dung này.",
+ "memo": {
+  "hook": "Nhà đầu tư chuyên nghiệp 'tự lo được': mua riêng lẻ, KHÔNG được đếm khi xét chào bán công chúng.",
+  "tree": [
+   {
+    "label": "Tổ chức",
+    "children": [
+     "Ngân hàng, công ty chứng khoán",
+     "Công ty vốn góp trên 100 tỷ"
+    ]
+   },
+   {
+    "label": "Cá nhân",
+    "children": [
+     "Có chứng chỉ hành nghề",
+     "Danh mục từ 02 tỷ",
+     "Thu nhập chịu thuế 01 tỷ"
+    ]
+   },
+   {
+    "label": "Ưu thế",
+    "children": [
+     "Mua chào bán riêng lẻ"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

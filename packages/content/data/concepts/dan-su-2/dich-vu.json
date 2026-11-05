@@ -21,6 +21,31 @@
   "trả tiền dịch vụ",
   "đối tượng là công việc"
  ],
+ "memo": {
+  "hook": "Đối tượng là CÔNG VIỆC; có quản lý, điều hành thì là hợp đồng LAO ĐỘNG.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Bên cung ứng làm công việc",
+     "Bên sử dụng trả tiền"
+    ]
+   },
+   {
+    "label": "Đặc điểm",
+    "children": [
+     "Tự chủ cách làm",
+     "Cam kết kết quả"
+    ]
+   },
+   {
+    "label": "Phân biệt",
+    "children": [
+     "Có quản lý, giám sát → lao động"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -23,6 +23,32 @@
   "lưu ký toàn bộ tài sản ủy thác",
   "tách biệt"
  ],
+ "memo": {
+  "hook": "Gánh nghĩa vụ như công ty chứng khoán + quản lý ĐÚNG ĐIỀU LỆ, tính NAV, LƯU KÝ toàn bộ tài sản ủy thác.",
+  "tree": [
+   {
+    "label": "Như công ty chứng khoán",
+    "children": [
+     "Kiểm soát nội bộ",
+     "Ưu tiên lệnh khách"
+    ]
+   },
+   {
+    "label": "Thêm",
+    "children": [
+     "Đúng Điều lệ quỹ, hợp đồng",
+     "Xác định NAV",
+     "Lưu ký toàn bộ tài sản ủy thác"
+    ]
+   },
+   {
+    "label": "Tài sản",
+    "children": [
+     "Tách biệt"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

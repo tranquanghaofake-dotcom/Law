@@ -24,6 +24,39 @@
   "kiểu dáng 5 năm gia hạn 2 lần"
  ],
  "note": "Điều 93 có nội dung được sửa đổi, bổ sung bởi Luật 07/2022/QH15 (hiệu lực 01/01/2023) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
+ "memo": {
+  "hook": "Sáng chế 20 NĂM, giải pháp hữu ích 10, kiểu dáng 5 (+2 lần), nhãn hiệu 10 (gia hạn mãi).",
+  "tree": [
+   {
+    "label": "Phạm vi",
+    "children": [
+     "Toàn lãnh thổ Việt Nam"
+    ]
+   },
+   {
+    "label": "Tính thời hạn",
+    "children": [
+     "Hiệu lực từ ngày cấp",
+     "Đếm từ ngày nộp đơn"
+    ]
+   },
+   {
+    "label": "Thời hạn",
+    "children": [
+     "Sáng chế: 20 năm",
+     "Giải pháp hữu ích: 10 năm",
+     "Kiểu dáng: 5 năm, gia hạn 2 lần",
+     "Nhãn hiệu: 10 năm, gia hạn nhiều lần"
+    ]
+   },
+   {
+    "label": "Chỉ dẫn địa lý",
+    "children": [
+     "Vô thời hạn"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

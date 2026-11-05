@@ -22,6 +22,30 @@
   "tiếp tục làm nhiệm vụ",
   "Quốc hội khóa mới thành lập Chính phủ"
  ],
+ "memo": {
+  "hook": "Theo nhiệm kỳ Quốc hội; hết nhiệm kỳ vẫn làm tới khi có Chính phủ MỚI.",
+  "tree": [
+   {
+    "label": "Nhiệm kỳ",
+    "children": [
+     "Theo nhiệm kỳ Quốc hội"
+    ]
+   },
+   {
+    "label": "Khi hết nhiệm kỳ",
+    "children": [
+     "Tiếp tục làm nhiệm vụ",
+     "Đến khi Quốc hội khóa mới thành lập Chính phủ"
+    ]
+   },
+   {
+    "label": "Mục đích",
+    "children": [
+     "Tránh khoảng trống hành pháp"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -22,6 +22,31 @@
   "tài khoản tự doanh",
   "ưu tiên lệnh khách hàng"
  ],
+ "memo": {
+  "hook": "Tự doanh = công ty dùng TIỀN MÌNH đầu tư, TỰ CHỊU lãi lỗ; lệnh khách phải đi TRƯỚC.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Mua bán cho chính mình",
+     "Tài khoản tự doanh"
+    ]
+   },
+   {
+    "label": "Rủi ro",
+    "children": [
+     "Xung đột lợi ích với khách"
+    ]
+   },
+   {
+    "label": "Bắt buộc",
+    "children": [
+     "Ưu tiên lệnh khách hàng",
+     "Phải có môi giới trước"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

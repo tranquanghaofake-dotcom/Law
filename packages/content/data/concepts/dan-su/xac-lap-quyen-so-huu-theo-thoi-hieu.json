@@ -23,6 +23,33 @@
   "30 năm bất động sản",
   "từ thời điểm bắt đầu chiếm hữu"
  ],
+ "memo": {
+  "hook": "NGAY TÌNH, LIÊN TỤC, CÔNG KHAI đủ 10 năm (động sản) / 30 năm (bất động sản) thì thành chủ.",
+  "tree": [
+   {
+    "label": "Điều kiện",
+    "children": [
+     "Không có căn cứ pháp luật",
+     "Ngay tình",
+     "Liên tục",
+     "Công khai"
+    ]
+   },
+   {
+    "label": "Thời hạn",
+    "children": [
+     "Động sản: 10 năm",
+     "Bất động sản: 30 năm"
+    ]
+   },
+   {
+    "label": "Tính từ",
+    "children": [
+     "Khi bắt đầu chiếm hữu"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -22,6 +22,33 @@
   "bảo hiểm – ưu đãi – trợ giúp",
   "quyền an sinh Điều 34 Hiến pháp"
  ],
+ "memo": {
+  "hook": "Ba trụ: BẢO HIỂM (có đóng) – ƯU ĐÃI (người có công) – TRỢ GIÚP (không đóng).",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Bảo vệ của Nhà nước và xã hội",
+     "Khi ngừng hoặc giảm thu nhập"
+    ]
+   },
+   {
+    "label": "Rủi ro",
+    "children": [
+     "Ốm đau, thai sản, tai nạn",
+     "Thất nghiệp, tuổi già, chết"
+    ]
+   },
+   {
+    "label": "Ba bộ phận",
+    "children": [
+     "Bảo hiểm xã hội (có đóng góp)",
+     "Ưu đãi xã hội (người có công)",
+     "Trợ giúp xã hội (không đóng góp)"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -23,6 +23,32 @@
   "lưu ký và giám sát",
   "hai chìa khóa"
  ],
+ "memo": {
+  "hook": "Cơ chế HAI CHÌA KHÓA: công ty quản lý quỹ QUYẾT ĐỊNH, ngân hàng giám sát GIỮ TÀI SẢN và GIÁM SÁT.",
+  "tree": [
+   {
+    "label": "Là",
+    "children": [
+     "Ngân hàng thương mại",
+     "Có giấy chứng nhận lưu ký"
+    ]
+   },
+   {
+    "label": "Nhiệm vụ",
+    "children": [
+     "Lưu ký tài sản quỹ",
+     "Giám sát công ty quản lý quỹ"
+    ]
+   },
+   {
+    "label": "Ý nghĩa",
+    "children": [
+     "Hai chìa khóa",
+     "Khó ôm tiền bỏ trốn"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

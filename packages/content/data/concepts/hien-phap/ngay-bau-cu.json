@@ -22,6 +22,29 @@
   "Quốc hội quyết định"
  ],
  "note": "Luật 83/2025/QH15 (hiệu lực 01/7/2025) rút ngắn nhiều mốc thời gian trong quy trình bầu cử (ví dụ hạn nộp hồ sơ ứng cử từ 70 ngày xuống 42 ngày trước ngày bầu cử; bầu cử thêm, bầu cử lại từ 15 ngày xuống 07 ngày). Mốc công bố ngày bầu cử 115 ngày tại Điều 5 không đổi.",
+ "memo": {
+  "hook": "CHỦ NHẬT, công bố trước ít nhất 115 ngày.",
+  "tree": [
+   {
+    "label": "Ngày",
+    "children": [
+     "Chủ nhật"
+    ]
+   },
+   {
+    "label": "Công bố",
+    "children": [
+     "Chậm nhất 115 ngày trước"
+    ]
+   },
+   {
+    "label": "Ai quyết định",
+    "children": [
+     "Quốc hội"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

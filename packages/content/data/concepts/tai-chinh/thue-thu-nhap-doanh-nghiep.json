@@ -24,6 +24,33 @@
   "doanh thu kỳ trước liền kề"
  ],
  "note": "Luật Thuế TNDN 67/2025/QH15 có hiệu lực từ 01/10/2025, áp dụng từ kỳ tính thuế năm 2025, thay thế Luật 14/2008/QH12; Luật 09/2026/QH16 bổ sung khoản 14a Điều 4 (miễn thuế cho doanh nghiệp có doanh thu năm dưới mức Chính phủ quy định, áp dụng từ 01/01/2026); văn bản hợp nhất mới nhất 113/VBHN-VPQH (20/5/2026, gồm cả Luật 09/2026/QH16) — Điều 2, 10 không đổi (đối chiếu 02/11/2026).",
+ "memo": {
+  "hook": "Thuế suất theo QUY MÔ: 15% – 17% – 20%.",
+  "tree": [
+   {
+    "label": "Người nộp",
+    "children": [
+     "Doanh nghiệp trong, ngoài nước",
+     "Hợp tác xã, tổ chức khác"
+    ]
+   },
+   {
+    "label": "Thuế suất",
+    "children": [
+     "≤ 03 tỷ: 15%",
+     "Trên 03 đến 50 tỷ: 17%",
+     "Phổ thông: 20%"
+    ]
+   },
+   {
+    "label": "Đặc biệt",
+    "children": [
+     "Dầu khí 25–50%",
+     "Tài nguyên quý hiếm 50%"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

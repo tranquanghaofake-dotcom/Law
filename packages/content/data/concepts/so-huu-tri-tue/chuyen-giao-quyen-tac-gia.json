@@ -22,6 +22,31 @@
   "không chuyển nhượng quyền nhân thân trừ công bố",
   "đồng chủ sở hữu thỏa thuận"
  ],
+ "memo": {
+  "hook": "CHUYỂN NHƯỢNG = bán quyền; CHUYỂN QUYỀN SỬ DỤNG = cho dùng có thời hạn.",
+  "tree": [
+   {
+    "label": "Chuyển nhượng",
+    "children": [
+     "Chuyển quyền sở hữu",
+     "Bên nhận thành chủ mới"
+    ]
+   },
+   {
+    "label": "Chuyển quyền sử dụng",
+    "children": [
+     "Có thời hạn",
+     "Chủ vẫn giữ quyền"
+    ]
+   },
+   {
+    "label": "Không chuyển được",
+    "children": [
+     "Quyền nhân thân (trừ công bố)"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

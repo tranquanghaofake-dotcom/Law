@@ -22,6 +22,31 @@
   "xác lập trên cơ sở sử dụng hợp pháp"
  ],
  "note": "Điều 4 có nội dung được sửa đổi, bổ sung bởi Luật 36/2009/QH12 (hiệu lực 01/01/2010); Luật 07/2022/QH15 (hiệu lực 01/01/2023); Luật 131/2025/QH15 (hiệu lực 01/4/2026) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
+ "memo": {
+  "hook": "Tên thương mại phân biệt CHỦ THỂ; nhãn hiệu phân biệt HÀNG HÓA.",
+  "tree": [
+   {
+    "label": "Chức năng",
+    "children": [
+     "Phân biệt chủ thể kinh doanh"
+    ]
+   },
+   {
+    "label": "Phạm vi",
+    "children": [
+     "Cùng lĩnh vực",
+     "Cùng khu vực kinh doanh"
+    ]
+   },
+   {
+    "label": "Xác lập",
+    "children": [
+     "Sử dụng hợp pháp",
+     "Không cần đăng ký"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

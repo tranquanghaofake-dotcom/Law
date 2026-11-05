@@ -22,6 +22,33 @@
   "Quốc hội quyết định cơ cấu",
   "tập thể, đa số"
  ],
+ "memo": {
+  "hook": "THỨ TRƯỞNG không phải thành viên Chính phủ.",
+  "tree": [
+   {
+    "label": "Thành viên",
+    "children": [
+     "Thủ tướng",
+     "Phó Thủ tướng",
+     "Bộ trưởng",
+     "Thủ trưởng cơ quan ngang bộ"
+    ]
+   },
+   {
+    "label": "Cơ cấu, số lượng",
+    "children": [
+     "Quốc hội quyết định"
+    ]
+   },
+   {
+    "label": "Chế độ làm việc",
+    "children": [
+     "Tập thể, quyết định theo đa số",
+     "Trách nhiệm cá nhân"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

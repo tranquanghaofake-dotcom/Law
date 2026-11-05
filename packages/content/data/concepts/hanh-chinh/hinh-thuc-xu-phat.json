@@ -23,6 +23,33 @@
   "một hình thức chính",
   "bổ sung"
  ],
+ "memo": {
+  "hook": "CẢNH CÁO, PHẠT TIỀN chỉ là hình thức CHÍNH; mỗi vi phạm MỘT hình thức chính.",
+  "tree": [
+   {
+    "label": "Chỉ là chính",
+    "children": [
+     "Cảnh cáo",
+     "Phạt tiền"
+    ]
+   },
+   {
+    "label": "Chính hoặc bổ sung",
+    "children": [
+     "Tước giấy phép, đình chỉ",
+     "Tịch thu tang vật",
+     "Trục xuất"
+    ]
+   },
+   {
+    "label": "Nguyên tắc",
+    "children": [
+     "Một hình thức chính",
+     "Có thể nhiều bổ sung"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

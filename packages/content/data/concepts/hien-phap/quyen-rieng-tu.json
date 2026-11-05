@@ -22,6 +22,32 @@
   "bí mật thư tín, điện thoại",
   "không bóc mở, thu giữ trái luật"
  ],
+ "memo": {
+  "hook": "Riêng tư, bí mật, thư tín: không ai được bóc mở, thu giữ TRÁI LUẬT.",
+  "tree": [
+   {
+    "label": "Bảo vệ",
+    "children": [
+     "Đời sống riêng tư",
+     "Bí mật cá nhân, gia đình",
+     "Danh dự, uy tín"
+    ]
+   },
+   {
+    "label": "Thông tin",
+    "children": [
+     "Được bảo đảm an toàn"
+    ]
+   },
+   {
+    "label": "Liên lạc",
+    "children": [
+     "Thư tín, điện thoại, điện tín",
+     "Các hình thức trao đổi riêng tư khác"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

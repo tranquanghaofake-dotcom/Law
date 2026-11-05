@@ -22,6 +22,31 @@
   "ngành luật – khoa học – môn học"
  ],
  "note": "Thẻ dạng tóm lược quan điểm học thuật, chưa đối chiếu nguyên văn giáo trình; cần Hào đối chiếu trang 1–9 của sách.",
+ "memo": {
+  "hook": "Phân biệt NGÀNH LUẬT – KHOA HỌC – MÔN HỌC.",
+  "tree": [
+   {
+    "label": "Vị trí",
+    "children": [
+     "Ngành luật chủ đạo"
+    ]
+   },
+   {
+    "label": "Điều chỉnh",
+    "children": [
+     "Quan hệ xã hội cơ bản, quan trọng nhất"
+    ]
+   },
+   {
+    "label": "Phân biệt",
+    "children": [
+     "Ngành luật: hệ thống quy phạm",
+     "Khoa học: hệ thống tri thức",
+     "Môn học: chương trình đào tạo"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

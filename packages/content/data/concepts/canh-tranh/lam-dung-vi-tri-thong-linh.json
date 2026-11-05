@@ -23,6 +23,33 @@
   "ấn định giá bán lại tối thiểu",
   "ngăn cản gia nhập"
  ],
+ "memo": {
+  "hook": "Có thống lĩnh thì CẤM: bán phá giá, áp đặt giá, bán kèm, ngăn gia nhập.",
+  "tree": [
+   {
+    "label": "Về giá",
+    "children": [
+     "Bán dưới giá thành toàn bộ",
+     "Áp đặt giá bất hợp lý",
+     "Ấn định giá bán lại tối thiểu"
+    ]
+   },
+   {
+    "label": "Về thị trường",
+    "children": [
+     "Hạn chế sản xuất, phân phối",
+     "Ngăn cản gia nhập"
+    ]
+   },
+   {
+    "label": "Về điều kiện",
+    "children": [
+     "Phân biệt đối xử",
+     "Áp đặt nghĩa vụ không liên quan"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

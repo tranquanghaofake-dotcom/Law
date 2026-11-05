@@ -24,6 +24,37 @@
   "đặt trăm quan",
   "triều nghi phẩm phục"
  ],
+ "memo": {
+  "hook": "939: Ngô Quyền xưng VƯƠNG, đô CỔ LOA — mở đầu nhà nước độc lập.",
+  "tree": [
+   {
+    "label": "Mốc",
+    "children": [
+     "939, sau Bạch Đằng 938"
+    ]
+   },
+   {
+    "label": "Làm gì",
+    "children": [
+     "Xưng vương",
+     "Bỏ chức Tiết độ sứ",
+     "Đặt trăm quan"
+    ]
+   },
+   {
+    "label": "Kinh đô",
+    "children": [
+     "Cổ Loa"
+    ]
+   },
+   {
+    "label": "Hạn chế",
+    "children": [
+     "Chưa xưng đế, đặt niên hiệu"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

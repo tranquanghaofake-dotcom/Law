@@ -22,6 +22,39 @@
   "hai lớp chấp thuận"
  ],
  "note": "Luật 56/2024/QH15 (hiệu lực 01/01/2025) sửa điểm a khoản 4 Điều 56: khi bù trừ, thanh toán giao dịch chứng khoán phái sinh, thành viên bù trừ là ngân hàng thương mại, chi nhánh ngân hàng nước ngoài chỉ được bù trừ, thanh toán giao dịch cho chính mình (không làm cho khách hàng). Giáo trình 2021 chưa có giới hạn này.",
+ "memo": {
+  "hook": "Hai cửa vào Tổng công ty: thành viên LƯU KÝ và thành viên BÙ TRỪ; cần HAI lớp chấp thuận.",
+  "tree": [
+   {
+    "label": "Thành viên lưu ký",
+    "children": [
+     "Giữ chứng khoán",
+     "Thanh toán cho khách"
+    ]
+   },
+   {
+    "label": "Thành viên bù trừ",
+    "children": [
+     "Bù trừ, thanh toán",
+     "Nhất là phái sinh"
+    ]
+   },
+   {
+    "label": "Là",
+    "children": [
+     "Công ty chứng khoán",
+     "Ngân hàng"
+    ]
+   },
+   {
+    "label": "Chấp thuận",
+    "children": [
+     "Ủy ban cấp giấy",
+     "Tổng công ty chấp thuận"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

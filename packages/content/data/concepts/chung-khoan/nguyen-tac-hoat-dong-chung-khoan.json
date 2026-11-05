@@ -21,6 +21,36 @@
   "bảo vệ nhà đầu tư",
   "tự chịu trách nhiệm về rủi ro"
  ],
+ "memo": {
+  "hook": "Bốn nguyên tắc: TÔN TRỌNG SỞ HỮU – CÔNG BẰNG, MINH BẠCH – BẢO VỆ NHÀ ĐẦU TƯ – TỰ CHỊU RỦI RO.",
+  "tree": [
+   {
+    "label": "Tôn trọng",
+    "children": [
+     "Quyền sở hữu",
+     "Tự do giao dịch"
+    ]
+   },
+   {
+    "label": "Thị trường",
+    "children": [
+     "Công bằng, công khai, minh bạch"
+    ]
+   },
+   {
+    "label": "Bảo vệ",
+    "children": [
+     "Quyền lợi nhà đầu tư"
+    ]
+   },
+   {
+    "label": "Rủi ro",
+    "children": [
+     "Tự chịu trách nhiệm"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

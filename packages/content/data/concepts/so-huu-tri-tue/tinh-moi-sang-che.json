@@ -23,6 +23,31 @@
   "có nghĩa vụ giữ bí mật"
  ],
  "note": "Điều 60 có nội dung được sửa đổi, bổ sung bởi Luật 42/2019/QH14 (hiệu lực 01/11/2019); Luật 07/2022/QH15 (hiệu lực 01/01/2023) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
+ "memo": {
+  "hook": "Tính mới tính TOÀN CẦU; bị BỘC LỘ CÔNG KHAI trước ngày nộp đơn là mất.",
+  "tree": [
+   {
+    "label": "Mất tính mới khi",
+    "children": [
+     "Bộc lộ công khai",
+     "Trong hoặc ngoài nước",
+     "Trước ngày nộp đơn, ưu tiên"
+    ]
+   },
+   {
+    "label": "Chưa bộc lộ",
+    "children": [
+     "Ít người biết, có nghĩa vụ giữ bí mật"
+    ]
+   },
+   {
+    "label": "Ân hạn",
+    "children": [
+     "Trường hợp khoản 3"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

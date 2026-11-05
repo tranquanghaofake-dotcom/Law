@@ -22,6 +22,38 @@
   "động sản kể cả hình thành trong tương lai",
   "vật gắn liền với đất đai"
  ],
+ "memo": {
+  "hook": "Dấu hiệu cốt lõi: MỤC ĐÍCH SINH LỢI.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Mục đích sinh lợi"
+    ]
+   },
+   {
+    "label": "Gồm",
+    "children": [
+     "Mua bán hàng hóa",
+     "Cung ứng dịch vụ",
+     "Đầu tư, xúc tiến"
+    ]
+   },
+   {
+    "label": "Hàng hóa",
+    "children": [
+     "Động sản, kể cả hình thành tương lai",
+     "Vật gắn liền với đất"
+    ]
+   },
+   {
+    "label": "Chủ thể",
+    "children": [
+     "Thương nhân"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

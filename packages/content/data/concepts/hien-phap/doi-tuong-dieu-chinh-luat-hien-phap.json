@@ -23,6 +23,26 @@
   "tổ chức bộ máy nhà nước"
  ],
  "note": "Thẻ dạng tóm lược quan điểm học thuật, chưa đối chiếu nguyên văn giáo trình; cần Hào đối chiếu trang 1–9 của sách.",
+ "memo": {
+  "hook": "Điều chỉnh các quan hệ NỀN TẢNG; ngành luật khác cụ thể hóa tiếp.",
+  "tree": [
+   {
+    "label": "Tính chất",
+    "children": [
+     "Quan hệ xã hội cơ bản, quan trọng nhất"
+    ]
+   },
+   {
+    "label": "Nhóm quan hệ",
+    "children": [
+     "Chế độ chính trị",
+     "Nhà nước – công dân",
+     "Kinh tế, xã hội, văn hóa",
+     "Tổ chức bộ máy nhà nước"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

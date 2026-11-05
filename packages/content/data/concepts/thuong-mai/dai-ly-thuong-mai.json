@@ -23,6 +23,36 @@
   "hàng hóa thuộc sở hữu bên giao đại lý",
   "hưởng thù lao"
  ],
+ "memo": {
+  "hook": "ĐẠI LÝ: NHÂN DANH MÌNH, LÂU DÀI; hàng vẫn của bên GIAO đại lý.",
+  "tree": [
+   {
+    "label": "Dấu hiệu",
+    "children": [
+     "Nhân danh chính mình",
+     "Hưởng thù lao"
+    ]
+   },
+   {
+    "label": "Chủ thể",
+    "children": [
+     "Cả hai là thương nhân"
+    ]
+   },
+   {
+    "label": "Hàng hóa",
+    "children": [
+     "Thuộc sở hữu bên giao"
+    ]
+   },
+   {
+    "label": "Khác ủy thác",
+    "children": [
+     "Lâu dài, thường xuyên"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

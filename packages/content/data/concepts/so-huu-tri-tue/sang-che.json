@@ -24,6 +24,34 @@
   "không phải hiểu biết thông thường"
  ],
  "note": "Điều 4, 58 có nội dung được sửa đổi, bổ sung bởi Luật 36/2009/QH12 (hiệu lực 01/01/2010); Luật 07/2022/QH15 (hiệu lực 01/01/2023); Luật 131/2025/QH15 (hiệu lực 01/4/2026) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
+ "memo": {
+  "hook": "Sáng chế: MỚI + SÁNG TẠO + ÁP DỤNG CÔNG NGHIỆP → bằng 20 NĂM.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Giải pháp kỹ thuật",
+     "Sản phẩm hoặc quy trình"
+    ]
+   },
+   {
+    "label": "Bằng sáng chế",
+    "children": [
+     "Tính mới",
+     "Trình độ sáng tạo",
+     "Khả năng áp dụng công nghiệp",
+     "20 năm"
+    ]
+   },
+   {
+    "label": "Giải pháp hữu ích",
+    "children": [
+     "Không cần trình độ sáng tạo",
+     "10 năm"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

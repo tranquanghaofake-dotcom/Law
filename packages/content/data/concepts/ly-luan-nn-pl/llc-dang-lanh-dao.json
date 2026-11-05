@@ -24,6 +24,33 @@
   "khuôn khổ Hiến pháp"
  ],
  "note": "Hiến pháp 2013 (hiệu lực 01/01/2014) được sửa đổi, bổ sung bởi Nghị quyết 203/2025/QH15 (hiệu lực 16/6/2025) — các điều được trích (Điều 2, 4, 6) không thuộc phạm vi sửa đổi.",
+ "memo": {
+  "hook": "Đảng LÃNH ĐẠO, Nhà nước QUẢN LÝ, Mặt trận và đoàn thể THAM GIA.",
+  "tree": [
+   {
+    "label": "Hệ thống chính trị",
+    "children": [
+     "Đảng lãnh đạo",
+     "Nhà nước trung tâm",
+     "Mặt trận, tổ chức chính trị - xã hội"
+    ]
+   },
+   {
+    "label": "Cách lãnh đạo",
+    "children": [
+     "Cương lĩnh, đường lối",
+     "Công tác cán bộ",
+     "Không làm thay nhà nước"
+    ]
+   },
+   {
+    "label": "Ràng buộc",
+    "children": [
+     "Trong khuôn khổ Hiến pháp"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

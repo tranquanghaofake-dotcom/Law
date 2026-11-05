@@ -23,6 +23,34 @@
   "bồi thường thiệt hại",
   "cổ phần hóa"
  ],
+ "memo": {
+  "hook": "Định giá để QUẢN TRỊ, THƯƠNG MẠI HÓA, TRANH TỤNG, M&A (học thuyết).",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Ước tính giá trị bằng tiền"
+    ]
+   },
+   {
+    "label": "Mục đích",
+    "children": [
+     "Quản trị nội bộ",
+     "Bán, cấp phép, góp vốn, thế chấp",
+     "Xác định thiệt hại",
+     "Cổ phần hóa, M&A"
+    ]
+   },
+   {
+    "label": "Cách tiếp cận",
+    "children": [
+     "Chi phí",
+     "Thu nhập",
+     "Thị trường"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

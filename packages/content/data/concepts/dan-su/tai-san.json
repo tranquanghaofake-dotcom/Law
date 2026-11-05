@@ -21,6 +21,27 @@
   "bất động sản, động sản",
   "hiện có, hình thành trong tương lai"
  ],
+ "memo": {
+  "hook": "Bốn loại: VẬT – TIỀN – GIẤY TỜ CÓ GIÁ – QUYỀN TÀI SẢN.",
+  "tree": [
+   {
+    "label": "Gồm",
+    "children": [
+     "Vật",
+     "Tiền",
+     "Giấy tờ có giá",
+     "Quyền tài sản"
+    ]
+   },
+   {
+    "label": "Phân loại",
+    "children": [
+     "Bất động sản, động sản",
+     "Hiện có, hình thành trong tương lai"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

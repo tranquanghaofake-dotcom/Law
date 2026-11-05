@@ -4,11 +4,12 @@
   import type { StepItem } from '$lib/engine/session';
   import type { AnswerResult } from './cards/types';
   import { isInteractiveTarget, isTypingTarget } from './cards/types';
-  import { answerText, explainText } from './cards/answer';
+  import { answerText } from './cards/answer';
   import { feedbackSpeech } from './session/speech';
   import { LEVEL_NAMES } from '$lib/game/levels';
   import WhyPanel from './WhyPanel.svelte';
   import LegalNote from './LegalNote.svelte';
+  import MemoCard from './MemoCard.svelte';
   import CompareTable from './CompareTable.svelte';
   let { result, item, concept, confusableTerms = [], confusables = [], compareWith = null, onnext, onspeak, last = false, xp = 0, golden = false, levelTo = null, retry = false }: {
     result: AnswerResult; item: StepItem; concept: Concept; confusableTerms?: string[];
@@ -20,7 +21,7 @@
   } = $props();
 
   const correctText = $derived(item.type === 'pair' || item.type === 'sort' || item.type === 'match' || item.type === 'recall' ? '' : answerText(item));
-  const explain = $derived(explainText(item));
+  const explain = $derived(item.type === 'recall' ? item.model : 'explain' in item ? item.explain : '');
   const source = $derived(('source' in item && item.source) ? item.source : concept.source);
   const speakText = $derived(feedbackSpeech(item, result));
 
@@ -38,17 +39,24 @@
 
 <svelte:window onkeydown={onkey} />
 <div class="feedback {result.correct ? 'ok' : 'bad'}" role="status" aria-live="polite">
+  {#if result.correct}<span class="ok-seal" aria-hidden="true">ĐÚNG</span>{/if}
   <p class="verdict"><span class="vtext">{result.correct ? 'Chính xác.' : `Chưa đúng.${correctText ? ` Đáp án: ${correctText}` : ''}`}</span>
     {#if xp > 0}<span class="chip xp-chip" class:gold={golden}>+{xp} XP{golden ? ' · câu vàng' : ''}</span>{/if}
     {#if levelTo !== null}<span class="chip level-chip">Lên bậc {levelTo}<small> · {LEVEL_NAMES[levelTo]}</small></span>{/if}
     {#if onspeak}<button class="speak" type="button" aria-label="Nghe giải thích" title="Nghe (Space)" onclick={() => onspeak?.(speakText)}><Glyph name="speaker" /></button>{/if}
   </p>
-  {#if explain}<p>{explain}</p>{/if}
   <WhyPanel {concept} {item} correct={result.correct} {explain} chosen={result.chosen} {confusables} />
-  {#if compareWith}<details class="cmp-wrap" open={!result.correct}><summary>So sánh «{concept.term}» và «{compareWith.term}»</summary><CompareTable a={concept} b={compareWith} /></details>{/if}
-  {#if retry}<p class="muted small">Vòng sửa sai: câu này không ghi vào tiến độ nhớ, chỉ để bạn gỡ lại.</p>{/if}
-  <p class="source muted">Nguồn: {source.cite}{#if source.url} · <a href={source.url} target="_blank" rel="noopener">Xem văn bản</a>{/if}</p>
-  <LegalNote compact />
-  {#if !result.correct && confusableTerms.length && !confusables.length}<p class="muted">Dễ nhầm với: <b>{confusableTerms.join(', ')}</b></p>{/if}
+  {#if item.type !== 'intro'}<MemoCard {concept} {item} />{/if}
+  {#if compareWith && !result.correct}<details class="cmp-wrap" open><summary>So sánh «{concept.term}» và «{compareWith.term}»</summary><CompareTable a={concept} b={compareWith} /></details>{/if}
+  {#if retry}<p class="muted small">Vòng sửa sai: không ghi vào tiến độ nhớ.</p>{/if}
+  <details class="fb-more small"><summary>Xem thêm</summary>
+    {#if explain}<p>{explain}</p>{/if}
+    {#if concept.example}<p><b>Ví dụ:</b> {concept.example}</p>{/if}
+    {#if compareWith && result.correct}<p class="muted">So sánh «{concept.term}» và «{compareWith.term}»:</p><CompareTable a={concept} b={compareWith} />{/if}
+    {#if confusableTerms.length}<p>Dễ nhầm với: <b>{confusableTerms.join(', ')}</b></p>{/if}
+    {#if concept.memo}<p class="muted">Sơ đồ và mẹo nhớ là diễn giải để học, không phải nguyên văn.</p>{/if}
+    <p class="source muted">Nguồn: {source.cite}{#if source.url} · <a href={source.url} target="_blank" rel="noopener">Xem văn bản</a>{/if}</p>
+    <LegalNote compact />
+  </details>
   <button class="btn" type="button" data-next onclick={onnext} use:focusOnMount>{last ? 'Xem kết quả' : 'Câu tiếp →'} <kbd>↵</kbd></button>
 </div>

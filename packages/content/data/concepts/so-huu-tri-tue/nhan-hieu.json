@@ -23,6 +23,38 @@
   "khả năng phân biệt"
  ],
  "note": "Điều 4, 72 có nội dung được sửa đổi, bổ sung bởi Luật 36/2009/QH12 (hiệu lực 01/01/2010); Luật 07/2022/QH15 (hiệu lực 01/01/2023); Luật 131/2025/QH15 (hiệu lực 01/4/2026) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
+ "memo": {
+  "hook": "Nhãn hiệu: NHÌN THẤY (hoặc ÂM THANH) + có KHẢ NĂNG PHÂN BIỆT.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Phân biệt hàng hóa, dịch vụ"
+    ]
+   },
+   {
+    "label": "Điều kiện 1",
+    "children": [
+     "Dấu hiệu nhìn thấy được",
+     "Hoặc âm thanh (từ 2022)"
+    ]
+   },
+   {
+    "label": "Điều kiện 2",
+    "children": [
+     "Khả năng phân biệt"
+    ]
+   },
+   {
+    "label": "Phân loại",
+    "children": [
+     "Tập thể",
+     "Chứng nhận",
+     "Liên kết, nổi tiếng"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

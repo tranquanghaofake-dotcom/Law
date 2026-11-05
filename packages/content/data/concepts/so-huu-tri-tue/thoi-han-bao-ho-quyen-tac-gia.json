@@ -23,6 +23,36 @@
   "31 tháng 12"
  ],
  "note": "Điều 27 có nội dung được sửa đổi, bổ sung bởi Luật 36/2009/QH12 (hiệu lực 01/01/2010) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
+ "memo": {
+  "hook": "Thường: SUỐT ĐỜI + 50 NĂM; điện ảnh, nhiếp ảnh: 75 NĂM.",
+  "tree": [
+   {
+    "label": "Vô thời hạn",
+    "children": [
+     "Đặt tên, đứng tên",
+     "Toàn vẹn tác phẩm"
+    ]
+   },
+   {
+    "label": "Tác phẩm thông thường",
+    "children": [
+     "Suốt đời tác giả + 50 năm"
+    ]
+   },
+   {
+    "label": "Điện ảnh, nhiếp ảnh, khuyết danh",
+    "children": [
+     "75 năm từ khi công bố"
+    ]
+   },
+   {
+    "label": "Mốc kết thúc",
+    "children": [
+     "31 tháng 12"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

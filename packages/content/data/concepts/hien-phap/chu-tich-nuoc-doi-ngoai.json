@@ -21,6 +21,31 @@
   "bổ nhiệm đại sứ căn cứ nghị quyết Ủy ban thường vụ",
   "điều ước quốc tế nhân danh Nhà nước"
  ],
+ "memo": {
+  "hook": "Chủ tịch nước thay mặt Nhà nước về ĐỐI NGOẠI.",
+  "tree": [
+   {
+    "label": "Đại sứ nước ngoài",
+    "children": [
+     "Tiếp nhận"
+    ]
+   },
+   {
+    "label": "Đại sứ Việt Nam",
+    "children": [
+     "Bổ nhiệm, miễn nhiệm",
+     "Căn cứ nghị quyết Ủy ban thường vụ"
+    ]
+   },
+   {
+    "label": "Điều ước quốc tế",
+    "children": [
+     "Đàm phán, ký nhân danh Nhà nước",
+     "Chính phủ ký theo ủy quyền"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

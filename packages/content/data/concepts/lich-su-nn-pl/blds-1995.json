@@ -24,6 +24,31 @@
   "bình đẳng và an toàn pháp lý"
  ],
  "note": "Bộ luật Dân sự 1995 có hiệu lực từ 01/7/1996, đã hết hiệu lực (thay bằng Bộ luật Dân sự 2005); hiện hành là Bộ luật Dân sự 91/2015/QH13. Học để hiểu lịch sử.",
+ "memo": {
+  "hook": "BLDS ĐẦU TIÊN: thông qua 28/10/1995, hiệu lực 01/7/1996.",
+  "tree": [
+   {
+    "label": "Mốc",
+    "children": [
+     "Thông qua 28/10/1995",
+     "Hiệu lực 01/7/1996"
+    ]
+   },
+   {
+    "label": "Vị trí",
+    "children": [
+     "Bộ luật dân sự đầu tiên"
+    ]
+   },
+   {
+    "label": "Nhiệm vụ",
+    "children": [
+     "Bình đẳng, an toàn pháp lý",
+     "Thể chế hóa kinh tế thị trường"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

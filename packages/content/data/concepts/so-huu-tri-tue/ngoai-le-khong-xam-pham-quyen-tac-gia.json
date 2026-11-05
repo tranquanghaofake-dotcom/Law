@@ -23,6 +23,33 @@
   "không nhằm mục đích thương mại"
  ],
  "note": "Điều 25 có nội dung được sửa đổi, bổ sung bởi Luật 36/2009/QH12 (hiệu lực 01/01/2010) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
+ "memo": {
+  "hook": "Dùng tác phẩm ĐÃ CÔNG BỐ không xin phép, không trả tiền, nhưng PHẢI NÊU TÊN.",
+  "tree": [
+   {
+    "label": "Điều kiện chung",
+    "children": [
+     "Tác phẩm đã công bố",
+     "Không xin phép, không trả tiền",
+     "Phải nêu tên tác giả, nguồn"
+    ]
+   },
+   {
+    "label": "Ví dụ",
+    "children": [
+     "Tự sao một bản để học",
+     "Trích dẫn hợp lý",
+     "Minh họa bài giảng"
+    ]
+   },
+   {
+    "label": "Giới hạn",
+    "children": [
+     "Không ảnh hưởng khai thác bình thường"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

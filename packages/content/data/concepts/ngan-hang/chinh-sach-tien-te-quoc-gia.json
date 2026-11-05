@@ -24,6 +24,26 @@
   "công cụ và biện pháp"
  ],
  "note": "Luật Ngân hàng Nhà nước Việt Nam 46/2010/QH12 có hiệu lực từ 01/01/2011; Luật 23/2026/QH16 sửa đổi nhiều điều (Điều 4, 27, 34, 42, 44, 45, 57, 58, 62…), có hiệu lực từ 01/12/2026 — điều được trích không bị sửa.",
+ "memo": {
+  "hook": "MỤC TIÊU là chỉ tiêu LẠM PHÁT (Quốc hội quyết); CÔNG CỤ do Thủ tướng, Thống đốc dùng.",
+  "tree": [
+   {
+    "label": "Mục tiêu",
+    "children": [
+     "Ổn định giá trị đồng tiền",
+     "Chỉ tiêu lạm phát"
+    ]
+   },
+   {
+    "label": "Thẩm quyền",
+    "children": [
+     "Quốc hội: chỉ tiêu lạm phát",
+     "Chính phủ: trình",
+     "Thủ tướng, Thống đốc: dùng công cụ"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

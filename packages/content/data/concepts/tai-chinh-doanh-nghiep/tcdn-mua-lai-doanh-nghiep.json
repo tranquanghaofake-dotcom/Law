@@ -24,6 +24,36 @@
   "ngành, nghề"
  ],
  "note": "Luật Cạnh tranh 23/2018/QH14 có hiệu lực từ 01/7/2019, thay thế Luật Cạnh tranh 2004 mà đề cương còn dẫn; chưa có văn bản sửa đổi có hiệu lực.",
+ "memo": {
+  "hook": "Mua lại: ĐỦ ĐỂ KIỂM SOÁT; bên bị mua VẪN TỒN TẠI.",
+  "tree": [
+   {
+    "label": "Cách mua",
+    "children": [
+     "Trực tiếp hoặc gián tiếp",
+     "Toàn bộ hoặc một phần vốn, tài sản"
+    ]
+   },
+   {
+    "label": "Ngưỡng",
+    "children": [
+     "Đủ kiểm soát, chi phối"
+    ]
+   },
+   {
+    "label": "Khác sáp nhập",
+    "children": [
+     "Bên bị mua vẫn tồn tại"
+    ]
+   },
+   {
+    "label": "Cạnh tranh",
+    "children": [
+     "Đạt ngưỡng thì thông báo trước"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

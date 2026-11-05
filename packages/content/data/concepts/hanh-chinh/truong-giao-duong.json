@@ -22,6 +22,30 @@
   "người chưa thành niên",
   "Tòa án quyết định"
  ],
+ "memo": {
+  "hook": "Trường giáo dưỡng: NGƯỜI CHƯA THÀNH NIÊN nguy hiểm nhưng CHƯA phải chịu hình sự; TÒA quyết định.",
+  "tree": [
+   {
+    "label": "12 đến dưới 14",
+    "children": [
+     "Dấu hiệu tội đặc biệt nghiêm trọng"
+    ]
+   },
+   {
+    "label": "14 đến dưới 16",
+    "children": [
+     "Tội rất, đặc biệt nghiêm trọng",
+     "Ngoài khoản 2 Điều 12 BLHS"
+    ]
+   },
+   {
+    "label": "Ai quyết định",
+    "children": [
+     "Tòa án"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

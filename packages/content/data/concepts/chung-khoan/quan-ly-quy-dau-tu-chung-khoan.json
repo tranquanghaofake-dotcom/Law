@@ -21,6 +21,36 @@
   "tài sản của quỹ",
   "mua, bán, nắm giữ"
  ],
+ "memo": {
+  "hook": "Quản lý quỹ = quản lý TIỀN CHUNG của quỹ; nhà đầu tư KHÔNG can thiệp hằng ngày.",
+  "tree": [
+   {
+    "label": "Đối tượng",
+    "children": [
+     "Tài sản của quỹ"
+    ]
+   },
+   {
+    "label": "Hoạt động",
+    "children": [
+     "Mua, bán, nắm giữ"
+    ]
+   },
+   {
+    "label": "Căn cứ",
+    "children": [
+     "Điều lệ quỹ",
+     "Hợp đồng với ngân hàng giám sát"
+    ]
+   },
+   {
+    "label": "Phân biệt",
+    "children": [
+     "Danh mục: tiền từng người"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

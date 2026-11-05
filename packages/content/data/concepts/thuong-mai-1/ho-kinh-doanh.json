@@ -23,6 +23,38 @@
   "không đồng thời là chủ DNTN"
  ],
  "note": "Nghị định 168/2025/NĐ-CP có hiệu lực từ 01/7/2025, thay thế Nghị định 01/2021/NĐ-CP; được sửa đổi bởi Nghị định 296/2026/NĐ-CP (hiệu lực 23/7/2026) — theo tóm tắt, không sửa Điều 82, 84; chưa đối chiếu toàn văn Nghị định 296. Nghị định hướng dẫn Luật Doanh nghiệp 59/2020/QH14.",
+ "memo": {
+  "hook": "Hộ kinh doanh KHÔNG phải doanh nghiệp, KHÔNG pháp nhân, VÔ HẠN.",
+  "tree": [
+   {
+    "label": "Chủ thể",
+    "children": [
+     "Một cá nhân",
+     "Hoặc thành viên hộ gia đình"
+    ]
+   },
+   {
+    "label": "Trách nhiệm",
+    "children": [
+     "Vô hạn",
+     "Thành viên liên đới"
+    ]
+   },
+   {
+    "label": "Tư cách",
+    "children": [
+     "Không phải doanh nghiệp",
+     "Không có pháp nhân"
+    ]
+   },
+   {
+    "label": "Giới hạn",
+    "children": [
+     "Mỗi người một hộ"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

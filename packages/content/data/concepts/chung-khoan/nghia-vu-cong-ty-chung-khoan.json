@@ -22,6 +22,38 @@
   "ưu tiên lệnh của khách hàng",
   "tư vấn phù hợp"
  ],
+ "memo": {
+  "hook": "Ba nghĩa vụ nghề: TÁCH BIỆT tài sản – HỢP ĐỒNG văn bản – lệnh KHÁCH đi TRƯỚC lệnh tự doanh.",
+  "tree": [
+   {
+    "label": "Tài sản",
+    "children": [
+     "Tách biệt từng khách",
+     "Tách với tài sản công ty"
+    ]
+   },
+   {
+    "label": "Hợp đồng",
+    "children": [
+     "Bằng văn bản",
+     "Thông tin trung thực"
+    ]
+   },
+   {
+    "label": "Lệnh",
+    "children": [
+     "Ưu tiên lệnh khách hàng",
+     "Chống chạy trước lệnh"
+    ]
+   },
+   {
+    "label": "Tư vấn",
+    "children": [
+     "Phù hợp khả năng chịu rủi ro"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

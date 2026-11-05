@@ -21,6 +21,31 @@
   "Nhà nước nắm giữ trên 50%",
   "Thủ tướng Chính phủ quyết định thành lập"
  ],
+ "memo": {
+  "hook": "Sở giao dịch là DOANH NGHIỆP (Nhà nước > 50%), KHÔNG phải cơ quan nhà nước.",
+  "tree": [
+   {
+    "label": "Địa vị",
+    "children": [
+     "Doanh nghiệp",
+     "Nhà nước nắm trên 50%"
+    ]
+   },
+   {
+    "label": "Thành lập",
+    "children": [
+     "Thủ tướng quyết định"
+    ]
+   },
+   {
+    "label": "Quản lý",
+    "children": [
+     "Bộ trưởng Tài chính phê chuẩn Điều lệ",
+     "Ủy ban giám sát"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -21,6 +21,32 @@
   "theo điều kiện đã thỏa thuận",
   "thù lao ủy thác"
  ],
+ "memo": {
+  "hook": "ỦY THÁC: NHÂN DANH MÌNH, theo điều kiện bên ủy thác, từng vụ việc.",
+  "tree": [
+   {
+    "label": "Dấu hiệu",
+    "children": [
+     "Nhân danh chính mình",
+     "Theo điều kiện đã thỏa thuận",
+     "Hưởng thù lao"
+    ]
+   },
+   {
+    "label": "Chủ thể",
+    "children": [
+     "Bên nhận là thương nhân",
+     "Bên ủy thác có thể không"
+    ]
+   },
+   {
+    "label": "Hình thức",
+    "children": [
+     "Văn bản"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

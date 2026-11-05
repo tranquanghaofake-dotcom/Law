@@ -23,6 +23,38 @@
   "minh bạch, phòng chống rửa tiền"
  ],
  "note": "Khoản 35 Điều 4 được bổ sung bởi Luật 76/2025/QH15 (hiệu lực 01/7/2025); câu chữ theo VBHN 67/VBHN-VPQH 2025.",
+ "memo": {
+  "hook": "Người SỞ HỮU THẬT hoặc CHI PHỐI thật, không phải người đứng tên; để chống RỬA TIỀN.",
+  "tree": [
+   {
+    "label": "Là",
+    "children": [
+     "Cá nhân",
+     "Sở hữu thực tế vốn điều lệ",
+     "Hoặc có quyền chi phối"
+    ]
+   },
+   {
+    "label": "Mục đích",
+    "children": [
+     "Minh bạch",
+     "Phòng chống rửa tiền"
+    ]
+   },
+   {
+    "label": "Doanh nghiệp phải",
+    "children": [
+     "Thu thập, lưu giữ, cung cấp thông tin"
+    ]
+   },
+   {
+    "label": "Hiệu lực",
+    "children": [
+     "Từ 01/7/2025"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

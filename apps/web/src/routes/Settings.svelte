@@ -74,7 +74,7 @@
   <h2 style="margin-top:0">Cài đặt</h2>
   {#if !storage.available}<p class="muted"><Glyph name="warn" size={16} /> Trình duyệt đang chặn lưu trữ (chế độ riêng tư?). Tiến độ sẽ không được lưu.</p>{/if}
   <label class="setting"><span>Âm thanh{@render ok('sound')}</span><input type="checkbox" checked={settings.sound} onchange={(e) => { saveSetting('sound', e.currentTarget.checked); saved('sound'); if (e.currentTarget.checked) sfx.play('select'); }} /></label>
-  <label class="setting"><span>Tự đọc phản hồi sau khi chọn đáp án{@render ok('tts')}</span><input type="checkbox" checked={settings.tts} onchange={(e) => { saveSetting('tts', e.currentTarget.checked); saved('tts'); }} /></label>
+  <label class="setting"><span>Tự đọc đề khi hiện, đọc đáp án sau khi trả lời{@render ok('tts')}</span><input type="checkbox" checked={settings.tts} onchange={(e) => { saveSetting('tts', e.currentTarget.checked); saved('tts'); }} /></label>
   <p class="muted small">Dùng giọng đọc dựng sẵn nếu có, không thì giọng tiếng Việt của trình duyệt.</p>
   {#if ttsOk}<button class="btn ghost" type="button" onclick={() => tts.speak('Hiến pháp là luật cơ bản của nước Cộng hòa xã hội chủ nghĩa Việt Nam.')}>Nghe thử</button>
   {:else}<p class="muted small">Trình duyệt này không có giọng tiếng Việt; nút nghe sẽ được ẩn.</p>{/if}

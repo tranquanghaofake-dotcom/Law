@@ -22,6 +22,26 @@
   "thuế theo luật quản lý thuế",
   "đã kết thúc, đang thực hiện"
  ],
+ "memo": {
+  "hook": "Thường 1 NĂM, một số lĩnh vực 2 NĂM; đã kết thúc tính từ lúc DỪNG, đang diễn ra tính từ lúc PHÁT HIỆN.",
+  "tree": [
+   {
+    "label": "Thời hiệu",
+    "children": [
+     "01 năm",
+     "02 năm: kế toán, xây dựng, đất đai…",
+     "Thuế: theo luật quản lý thuế"
+    ]
+   },
+   {
+    "label": "Mốc tính",
+    "children": [
+     "Đã kết thúc: từ khi chấm dứt",
+     "Đang thực hiện: từ khi phát hiện"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

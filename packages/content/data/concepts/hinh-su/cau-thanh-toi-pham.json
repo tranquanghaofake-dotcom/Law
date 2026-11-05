@@ -23,6 +23,35 @@
   "cơ bản – tăng nặng – giảm nhẹ",
   "vật chất – hình thức"
  ],
+ "memo": {
+  "hook": "TỘI PHẠM là việc thật; CẤU THÀNH là MÔ HÌNH trong luật; bốn yếu tố.",
+  "tree": [
+   {
+    "label": "Bốn yếu tố",
+    "children": [
+     "Khách thể",
+     "Mặt khách quan",
+     "Chủ thể",
+     "Mặt chủ quan"
+    ]
+   },
+   {
+    "label": "Theo mức nguy hiểm",
+    "children": [
+     "Cơ bản",
+     "Tăng nặng",
+     "Giảm nhẹ"
+    ]
+   },
+   {
+    "label": "Theo cấu trúc",
+    "children": [
+     "Vật chất (cần hậu quả)",
+     "Hình thức"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

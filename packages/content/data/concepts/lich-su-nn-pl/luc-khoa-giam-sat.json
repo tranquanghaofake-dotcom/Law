@@ -23,6 +23,32 @@
   "kiểm chế lẫn nhau",
   "không phải tam quyền phân lập"
  ],
+ "memo": {
+  "hook": "Sáu KHOA giám sát sáu BỘ + NGỰ SỬ ĐÀI: cơ quan KIỂM CHẾ lẫn nhau (không phải tam quyền phân lập).",
+  "tree": [
+   {
+    "label": "Sáu khoa",
+    "children": [
+     "Mỗi bộ một khoa",
+     "Bác bỏ việc sai",
+     "Hặc tâu lên vua"
+    ]
+   },
+   {
+    "label": "Ngự sử đài",
+    "children": [
+     "Hặc tâu quan làm bậy"
+    ]
+   },
+   {
+    "label": "Mục đích",
+    "children": [
+     "Kiểm chế lẫn nhau",
+     "Uy quyền tập trung ở vua"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

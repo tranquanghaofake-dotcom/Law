@@ -1465,7 +1465,7 @@ body:has(dialog.sheet[open]) { overflow: hidden; }
 .bk-books { list-style: none; margin: 0; padding: 0 6px; height: calc(var(--tier-h) * var(--k)); display: flex; align-items: flex-end; justify-content: center; gap: calc(4px * var(--k)); }
 .bk-books li { display: flex; align-items: flex-end; }
 .bk-plate { position: relative; z-index: 1; margin: 0; min-height: 32px; display: grid; place-items: center; padding: 3px 6px; background: linear-gradient(180deg, #c8955e 0, var(--w1) 30%, var(--w2)); box-shadow: 0 3px 4px rgba(0, 0, 0, .4), inset 0 1px 0 rgba(255, 255, 255, .3); }
-.bk-plate span { padding: 1px 8px; border-radius: 2px; background: rgba(40, 20, 8, .28); box-shadow: inset 0 0 0 1px rgba(246, 227, 180, .5); color: var(--gold-100); font: 700 12px/1.2 var(--font-ui); letter-spacing: .04em; text-align: center; text-wrap: balance; }
+.bk-plate span { padding: 1px 8px; border-radius: 2px; background: rgba(40, 20, 8, .74); box-shadow: inset 0 0 0 1px rgba(246, 227, 180, .5); color: var(--gold-100); font: 700 12px/1.2 var(--font-ui); letter-spacing: .04em; text-align: center; text-wrap: balance; }
 .bk-spine { --gold: var(--bk-gold); position: relative; display: block; width: calc(var(--w) * var(--k)); height: calc(var(--h) * var(--k)); padding: 0; border: 0; border-radius: 2px 2px 0 0; color: var(--gold-50); cursor: pointer; transform-origin: 50% 100%;
   background:
     linear-gradient(var(--gold), var(--gold)) 0 calc(4px * var(--k)) / 100% calc(2px * var(--k)) no-repeat,
@@ -1482,7 +1482,7 @@ body:has(dialog.sheet[open]) { overflow: hidden; }
 .bk-spine:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; } /* nền gỗ sáng: ink 6,2–8,8:1 */
 .bk-spine.full { box-shadow: 0 0 0 1px var(--bk-gold), 0 0 10px 1px rgba(226, 178, 60, .6), 0 2px 4px rgba(0, 0, 0, .5); }
 .bk-label { position: absolute; z-index: 1; left: calc(3px * var(--k)); right: calc(3px * var(--k)); top: calc(12px * var(--k)); height: calc(14px * var(--k)); display: grid; place-items: center; background: var(--paper-label); border: 1px solid var(--paper-edge); border-radius: 1px; color: var(--ink-wood); font: 800 calc(5.4px * var(--k))/1 var(--font-ui); letter-spacing: .04em; text-shadow: none; box-shadow: 0 1px 1px rgba(0, 0, 0, .35); }
-.bk-name { position: absolute; z-index: 1; left: calc(3px * var(--k)); right: calc(3px * var(--k)); top: calc(31px * var(--k)); bottom: calc(13px * var(--k)); display: flex; justify-content: center; align-items: center; writing-mode: vertical-rl; white-space: nowrap; padding: 2px 0; border: 1px solid color-mix(in srgb, var(--gold) 80%, transparent); border-radius: 1px; background: rgba(0, 0, 0, .34); font: 800 calc(var(--fs, 9) * 1px * var(--k))/1 var(--font-ui); letter-spacing: .02em; color: var(--gold-50); text-shadow: 0 1px 1px rgba(0, 0, 0, .6); }
+.bk-name { position: absolute; z-index: 1; left: calc(3px * var(--k)); right: calc(3px * var(--k)); top: calc(31px * var(--k)); bottom: calc(13px * var(--k)); display: flex; justify-content: center; align-items: center; writing-mode: vertical-rl; white-space: nowrap; padding: 2px 0; border: 1px solid color-mix(in srgb, var(--gold) 80%, transparent); border-radius: 1px; background: rgba(0, 0, 0, .58); font: 800 calc(var(--fs, 9) * 1px * var(--k))/1 var(--font-ui); letter-spacing: .02em; color: var(--gold-50); text-shadow: 0 1px 1px rgba(0, 0, 0, .6); }
 .bk-ribbon { position: absolute; left: 0; right: 0; bottom: 0; height: calc(var(--lit) * 100%); pointer-events: none; background: linear-gradient(0deg, rgba(255, 224, 130, .4), rgba(255, 224, 130, 0)); }
 .bk-dot { position: absolute; top: 2px; left: 50%; width: 9px; height: 9px; margin-left: -4.5px; border-radius: 50%; background: var(--bk-gold); border: 1.5px solid var(--ink); }
 .bk-base { position: relative; height: 16px; margin: 0 -8px; border-radius: 0 0 3px 3px; background: linear-gradient(180deg, var(--w2), var(--w3)); box-shadow: 0 2px 0 rgba(0, 0, 0, .3), 0 14px 14px -6px rgba(0, 0, 0, .3); }
@@ -1670,12 +1670,26 @@ body:has(dialog.sheet[open]) { overflow: hidden; }
 .ig-motes { position: absolute; inset: 0; pointer-events: none; overflow: visible; }
 .ig-mote { position: absolute; left: 0; top: 0; width: var(--s); height: var(--s); margin: calc(var(--s) / -2) 0 0 calc(var(--s) / -2); border-radius: 50%; opacity: 0; will-change: transform, opacity;
   background: radial-gradient(circle, #fff 0 22%, var(--fire) 45%, color-mix(in srgb, var(--glow) 0%, transparent) 72%); box-shadow: 0 0 calc(var(--s) * 1.6) calc(var(--s) * .3) color-mix(in srgb, var(--glow) 70%, transparent); mix-blend-mode: screen; }
-.ig-cap { position: relative; margin: 0; color: #f4efe6; font-size: var(--fs-lg); text-align: center; opacity: 0; transform: translateY(8px); transition: opacity var(--dur-3) var(--ease-out), transform var(--dur-3) var(--ease-out); }
-.ig-cap.on { opacity: 1; transform: none; }
+.ig-cap { position: relative; margin: 0; color: #f4efe6; font-size: var(--fs-lg); text-align: center; }
+.ig-cap > * { display: inline-block; opacity: 0; transform: translateY(10px); transition: opacity .6s var(--ease-out), transform .6s var(--ease-out); }
+.ig-cap .ig-l3 { display: block; font-size: var(--fs-sm); color: color-mix(in srgb, #f4efe6 78%, transparent); margin-top: var(--sp-1); }
+.ig-cap.on > * { opacity: 1; transform: none; }
+.ig-cap.on .ig-l2 { transition-delay: .35s; } .ig-cap.on .ig-l3 { transition-delay: .8s; }
+/* tụ lửa: thẻ rung sáng trước khi đốm bay vào (05/11/2026) */
+.ig-stage.charging .sc-wrap { animation: ig-charge 1.1s ease-in-out infinite; }
+@keyframes ig-charge { 0%, 100% { filter: brightness(1); } 50% { filter: brightness(1.18) saturate(1.15); } }
+/* sóng sáng tỏa ra từ con số khi đổi ngày */
+.ig-wave { position: absolute; width: 24%; aspect-ratio: 1; margin: -12% 0 0 -12%; border-radius: 50%; border: 3px solid var(--fire); box-shadow: 0 0 24px var(--glow); opacity: 0; animation: ig-wave 1.4s cubic-bezier(.2, .7, .3, 1) both; pointer-events: none; }
+@keyframes ig-wave { 0% { opacity: .95; transform: scale(.2); } 100% { opacity: 0; transform: scale(2.4); } }
+/* tàn lửa bay lên từ đáy thẻ, lặp nhẹ cho tới khi đóng */
+.ig-embers { position: absolute; inset: 0; pointer-events: none; overflow: visible; }
+.ig-ember { position: absolute; bottom: 6%; width: var(--s); height: var(--s); border-radius: 50%; background: radial-gradient(circle, #fff6d8 0 25%, var(--fire) 60%, transparent 75%); box-shadow: 0 0 8px var(--glow); opacity: 0; mix-blend-mode: screen;
+  animation: ig-ember var(--dur) ease-out var(--d) infinite; will-change: transform, opacity; }
+@keyframes ig-ember { 0% { opacity: 0; transform: translate(0, 0) scale(1); } 15% { opacity: 1; } 100% { opacity: 0; transform: translate(var(--drift), var(--rise)) scale(.4); } }
 .ig-cap b { color: var(--fire); }
 .ig-btn { position: relative; background: #f4efe6; color: #14213d; }
-.reduced-motion .ig-cap { opacity: 1; transform: none; }
-@media (prefers-reduced-motion: reduce) { :root:not(.motion-on) .ig-cap { opacity: 1; transform: none; } }
+.reduced-motion .ig-cap > * { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) { :root:not(.motion-on) .ig-cap > * { opacity: 1; transform: none; } }
 .streak-mini { display: inline-flex; line-height: 0; transition: opacity var(--dur-2) var(--ease-out); }
 .streak-mini.away { opacity: 0; }
 
@@ -1804,3 +1818,34 @@ select.qz-sort { min-height: var(--ctl-h); padding: 0 var(--sp-3); border: 1px s
 /* Môn học: chip lọc xuống dòng từ 768 (S-1); tên môn hiện đủ, không cắt "…" — hai môn trùng đầu tên vẫn phân biệt được (S-2) */
 @media (min-width: 768px) { .shelf-chips { flex-wrap: wrap; overflow: visible; } }
 .cover-link .name { display: block; -webkit-line-clamp: unset; line-clamp: unset; overflow: visible; }
+
+/* ── Ghi nhớ nhanh (MemoCard) + hộp đáp án gọn (05/11/2026, gọn thêm đợt 3) ── */
+.memo { margin: var(--sp-2) 0; }
+.memo-rows { list-style: none; margin: 0 0 var(--sp-2); padding: 0 0 0 var(--sp-3); border-left: 3px solid color-mix(in srgb, var(--seal) 55%, var(--line)); display: grid; gap: 4px; }
+.memo-row { line-height: 1.45; animation: memo-in .32s var(--ease-out) both; animation-delay: calc(var(--i) * 70ms + 80ms); }
+.memo-k { color: var(--seal); font-weight: 800; }
+.memo-v { color: var(--ink); }
+.memo-hook { margin: 0 0 var(--sp-1); font-weight: 600; }
+.memo-hook b, .memo-lead b { color: var(--seal); }
+.memo-tag { margin-left: var(--sp-1); padding: 0 6px; border-radius: 999px; border: 1px solid var(--line); font-size: var(--fs-xs, 12px); font-weight: 600; font-style: italic; color: var(--muted); white-space: nowrap; }
+.memo-lead { margin: 0 0 var(--sp-1); line-height: 1.5; }
+.fb-more { margin: var(--sp-1) 0 0; }
+.fb-more > summary { cursor: pointer; font-weight: 600; color: var(--muted); min-height: 32px; display: flex; align-items: center; gap: var(--sp-1); list-style: none; }
+.fb-more > summary::-webkit-details-marker { display: none; }
+.fb-more > summary::before { content: '▸'; transition: transform .15s; } .fb-more[open] > summary::before { transform: rotate(90deg); }
+.fb-more p { margin: 0 0 var(--sp-1); }
+.why-mixup { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-2); margin-top: var(--sp-2); }
+.mix-col { padding: var(--sp-1) var(--sp-2); border-radius: var(--r-sm); border: 1px solid var(--line); }
+.mix-col.theirs { border-color: color-mix(in srgb, var(--bad) 45%, var(--line)); } .mix-col.ours { border-color: color-mix(in srgb, var(--ok) 55%, var(--line)); background: color-mix(in srgb, var(--ok) 6%, var(--card)); }
+.mix-col ul { margin: 0; padding-left: 1.1em; } .mix-h { margin: 0 0 2px; font-weight: 700; }
+@keyframes memo-in { from { opacity: 0; transform: translateX(-8px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { :root:not(.motion-on) .memo-branch { animation: none; } }
+
+/* Dấu "ĐÚNG" đóng lên hộp đáp án + viền xanh loang khi trả lời đúng (05/11/2026). Chạm giấy ở ~260 ms = TIMING.sealLand. */
+.feedback { position: relative; }
+.feedback.ok { animation: rise .3s ease, ok-glow 1.1s ease-out .25s both; }
+.ok-seal { position: absolute; top: var(--sp-3); right: var(--sp-3); padding: 2px 10px; border: 3px double var(--seal); border-radius: 6px; color: var(--seal); font-family: var(--font-quote); font-weight: 900; letter-spacing: .14em; font-size: var(--fs-sm);
+  transform: rotate(-9deg); opacity: .85; pointer-events: none; animation: ok-seal .5s cubic-bezier(.3, .7, .3, 1) both; mix-blend-mode: multiply; }
+.feedback.ok .verdict { padding-right: 84px; }
+@keyframes ok-seal { 0% { opacity: 0; transform: rotate(-9deg) scale(2.4); } 52% { opacity: .9; transform: rotate(-9deg) scale(1); } 64% { transform: rotate(-9deg) scale(1.08); } 78%, 100% { opacity: .85; transform: rotate(-9deg) scale(1); } }
+@keyframes ok-glow { 0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--ok) 45%, transparent); } 100% { box-shadow: 0 0 0 14px color-mix(in srgb, var(--ok) 0%, transparent); } }

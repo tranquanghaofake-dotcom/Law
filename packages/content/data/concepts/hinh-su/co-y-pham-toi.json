@@ -22,6 +22,31 @@
   "mong muốn",
   "để mặc"
  ],
+ "memo": {
+  "hook": "Cố ý TRỰC TIẾP: MONG MUỐN hậu quả; cố ý GIÁN TIẾP: ĐỂ MẶC.",
+  "tree": [
+   {
+    "label": "Chung",
+    "children": [
+     "Nhận thức rõ",
+     "Thấy trước hậu quả"
+    ]
+   },
+   {
+    "label": "Trực tiếp",
+    "children": [
+     "Mong muốn hậu quả xảy ra"
+    ]
+   },
+   {
+    "label": "Gián tiếp",
+    "children": [
+     "Không mong muốn",
+     "Có ý thức để mặc"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

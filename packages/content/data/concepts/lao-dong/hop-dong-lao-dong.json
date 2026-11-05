@@ -23,6 +23,32 @@
   "quản lý, điều hành, giám sát",
   "tên gọi khác"
  ],
+ "memo": {
+  "hook": "TRỌNG NỘI DUNG hơn tên gọi: có việc làm trả lương + chịu QUẢN LÝ là hợp đồng lao động.",
+  "tree": [
+   {
+    "label": "Nội dung",
+    "children": [
+     "Việc làm có trả công",
+     "Điều kiện lao động",
+     "Quyền, nghĩa vụ"
+    ]
+   },
+   {
+    "label": "Đặc trưng",
+    "children": [
+     "Phụ thuộc pháp lý",
+     "Tự mình thực hiện"
+    ]
+   },
+   {
+    "label": "Tên gọi khác",
+    "children": [
+     "Có trả lương và quản lý → vẫn là hợp đồng lao động"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

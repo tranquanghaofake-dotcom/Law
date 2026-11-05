@@ -24,6 +24,39 @@
   "chia để trị"
  ],
  "note": "Thẻ dạng tóm lược giáo trình, chưa có trích nguyên văn Hiệp ước 1884 hay sắc lệnh của chính quyền Pháp; cần đối chiếu sách in.",
+ "memo": {
+  "hook": "Hiệp ước 1884 → CHIA ĐỂ TRỊ: Nam Kỳ THUỘC ĐỊA, Bắc và Trung Kỳ BẢO HỘ.",
+  "tree": [
+   {
+    "label": "Mốc",
+    "children": [
+     "6/6/1884",
+     "Nhà Nguyễn mất độc lập"
+    ]
+   },
+   {
+    "label": "Nam Kỳ",
+    "children": [
+     "Thuộc địa",
+     "Cai trị trực tiếp"
+    ]
+   },
+   {
+    "label": "Bắc Kỳ",
+    "children": [
+     "Bảo hộ",
+     "Quyền thực tế ở người Pháp"
+    ]
+   },
+   {
+    "label": "Trung Kỳ",
+    "children": [
+     "Bảo hộ",
+     "Triều Nguyễn danh nghĩa"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -24,6 +24,32 @@
   "yến sào thiên nhiên"
  ],
  "note": "Luật Thuế tài nguyên 45/2009/QH12 có hiệu lực từ 01/7/2010, sửa đổi bởi Luật 71/2014/QH13 và Luật Dầu khí 12/2022/QH15; văn bản hợp nhất 23/VBHN-VPQH 2022 — chưa kiểm tra sửa đổi sau năm 2022.",
+ "memo": {
+  "hook": "Ai KHAI THÁC tài nguyên thiên nhiên thì nộp.",
+  "tree": [
+   {
+    "label": "Đối tượng",
+    "children": [
+     "Khoáng sản, dầu thô, khí",
+     "Sản phẩm rừng tự nhiên",
+     "Hải sản tự nhiên",
+     "Nước thiên nhiên, yến sào"
+    ]
+   },
+   {
+    "label": "Người nộp",
+    "children": [
+     "Tổ chức, cá nhân khai thác"
+    ]
+   },
+   {
+    "label": "Loại trừ",
+    "children": [
+     "Nước cho nông, lâm, ngư, diêm nghiệp"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

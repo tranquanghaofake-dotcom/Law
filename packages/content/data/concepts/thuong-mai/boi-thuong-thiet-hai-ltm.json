@@ -23,6 +23,39 @@
   "áp dụng cả phạt và bồi thường",
   "khác Bộ luật Dân sự"
  ],
+ "memo": {
+  "hook": "Ba yếu tố: VI PHẠM + THIỆT HẠI THỰC + NHÂN QUẢ TRỰC TIẾP; được áp dụng CẢ phạt lẫn bồi thường.",
+  "tree": [
+   {
+    "label": "Điều kiện",
+    "children": [
+     "Vi phạm hợp đồng",
+     "Thiệt hại thực tế",
+     "Nguyên nhân trực tiếp"
+    ]
+   },
+   {
+    "label": "Giá trị",
+    "children": [
+     "Tổn thất thực tế",
+     "Khoản lợi trực tiếp bị mất"
+    ]
+   },
+   {
+    "label": "Bên yêu cầu",
+    "children": [
+     "Chứng minh tổn thất",
+     "Hạn chế tổn thất"
+    ]
+   },
+   {
+    "label": "Với phạt",
+    "children": [
+     "Áp dụng cả hai"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

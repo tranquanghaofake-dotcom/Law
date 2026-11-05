@@ -23,6 +23,32 @@
   "tự chịu trách nhiệm"
  ],
  "note": "Luật Đầu tư 143/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Đầu tư 61/2020/QH14 mà đề cương HLU 2021 còn dẫn (khoản 4 Điều 51). Luật 24/2026/QH16 sửa đổi có hiệu lực từ 01/3/2027 (riêng một phần Điều 6 từ 01/01/2027), chỉ sửa Điều 6 và Phụ lục IV, không sửa điều được trích — văn bản hợp nhất 142/2026/VBHN-LQ-VPQH.",
+ "memo": {
+  "hook": "CHUYỂN VỐN ra nước ngoài, dùng LỢI NHUẬN để đầu tư tiếp.",
+  "tree": [
+   {
+    "label": "Dấu hiệu",
+    "children": [
+     "Chuyển vốn từ Việt Nam ra",
+     "Dùng lợi nhuận để đầu tư"
+    ]
+   },
+   {
+    "label": "Hình thức",
+    "children": [
+     "Lập tổ chức ở nước ngoài",
+     "Góp vốn, mua cổ phần",
+     "Đầu tư qua quỹ, chứng khoán"
+    ]
+   },
+   {
+    "label": "Tuân thủ",
+    "children": [
+     "Luật Việt Nam và nước tiếp nhận"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

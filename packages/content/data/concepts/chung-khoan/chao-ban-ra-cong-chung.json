@@ -21,6 +21,31 @@
   "từ 100 nhà đầu tư",
   "nhà đầu tư không xác định"
  ],
+ "memo": {
+  "hook": "Chỉ cần MỘT trong ba: QUẢNG CÁO đại chúng, từ 100 NHÀ ĐẦU TƯ, hoặc người KHÔNG XÁC ĐỊNH.",
+  "tree": [
+   {
+    "label": "Phương thức (một trong)",
+    "children": [
+     "Qua phương tiện thông tin đại chúng",
+     "Từ 100 nhà đầu tư",
+     "Nhà đầu tư không xác định"
+    ]
+   },
+   {
+    "label": "Không đếm",
+    "children": [
+     "Nhà đầu tư chuyên nghiệp"
+    ]
+   },
+   {
+    "label": "Thủ tục",
+    "children": [
+     "Đăng ký với Ủy ban Chứng khoán"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

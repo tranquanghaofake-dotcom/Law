@@ -22,6 +22,32 @@
   "mức sống tối thiểu",
   "thường xuyên – đột xuất"
  ],
+ "memo": {
+  "hook": "Cho người YẾU THẾ, KHÔNG cần đóng góp, giữ mức sống TỐI THIỂU.",
+  "tree": [
+   {
+    "label": "Đặc điểm",
+    "children": [
+     "Không yêu cầu đóng góp",
+     "Cho người yếu thế",
+     "Bảo đảm mức sống tối thiểu"
+    ]
+   },
+   {
+    "label": "Thường xuyên",
+    "children": [
+     "Trợ cấp xã hội hằng tháng",
+     "Nuôi dưỡng ở cộng đồng, cơ sở"
+    ]
+   },
+   {
+    "label": "Đột xuất",
+    "children": [
+     "Thiên tai, hỏa hoạn, mất mùa"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

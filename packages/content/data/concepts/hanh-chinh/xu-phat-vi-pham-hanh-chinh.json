@@ -23,6 +23,27 @@
   "chỉ xử phạt một lần",
   "mỗi người đều bị xử phạt"
  ],
+ "memo": {
+  "hook": "MỘT hành vi chỉ phạt MỘT LẦN; nhiều người cùng làm thì MỖI NGƯỜI đều bị phạt.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Người có thẩm quyền áp dụng",
+     "Hình thức xử phạt",
+     "Biện pháp khắc phục"
+    ]
+   },
+   {
+    "label": "Nguyên tắc",
+    "children": [
+     "Pháp chế",
+     "Một hành vi một lần",
+     "Mỗi người đều bị xử phạt"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

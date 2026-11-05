@@ -24,6 +24,32 @@
   "ba phần năm"
  ],
  "note": "Từ 01/01/2026, Luật Tư pháp người chưa thành niên 59/2024/QH15 có hiệu lực và bãi bỏ Chương XII Bộ luật Hình sự (Điều 90–107) về người dưới 18 tuổi phạm tội (điểm a khoản 1 Điều 177). Giáo trình, đề cương cũ dẫn Điều 90–107 BLHS là đã hết hiệu lực. Luật 59/2024/QH15 được sửa đổi bởi Luật 85/2025/QH15 (hiệu lực 01/7/2025) và Luật 05/2026/QH16 (hiệu lực 01/01/2027); văn bản hợp nhất 105/VBHN-VPQH 2026.",
+ "memo": {
+  "hook": "Người chưa thành niên chỉ 4 hình phạt, MỖI tội MỘT; tù tối đa 15 NĂM (16–18 tuổi).",
+  "tree": [
+   {
+    "label": "Hình phạt",
+    "children": [
+     "Cảnh cáo",
+     "Phạt tiền",
+     "Cải tạo không giam giữ",
+     "Tù có thời hạn"
+    ]
+   },
+   {
+    "label": "16 đến dưới 18",
+    "children": [
+     "Tối đa 15 năm hoặc 3/5"
+    ]
+   },
+   {
+    "label": "Nguyên tắc",
+    "children": [
+     "Một hình phạt mỗi tội"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",
