@@ -76,7 +76,7 @@ Cổng: người dùng chọn 1 phương án; đã ghi ≥ 3 công trình gần 
 ### Pha 2 — Tổng quan tình hình nghiên cứu
 Làm: lập chiến lược tìm (từ khóa Việt và Anh, nguồn: `references/nguon-tra-cuu.md`). Đọc 3 lượt (lướt → đọc lập luận → đọc phê phán). Ghi **ma trận tài liệu**: tác giả, năm, loại, câu hỏi, phương pháp, kết luận, hạn chế, liên quan tới mục nào của đề cương.
 Viết tổng quan **theo chủ đề**, không theo danh sách tác giả: nhóm A đã làm rõ…, nhóm B tranh luận…, **chưa ai** làm… → khoảng trống mà đề tài lấp.
-Cổng: ma trận ≥ 15 nguồn cho khóa luận hoặc NCKH (≥ 8 cho tiểu luận), có cả trong và ngoài nước nếu đề tài có so sánh; khoảng trống nghiên cứu nêu được trong 2–3 câu; mọi nguồn trong ma trận đều đã mở được hoặc ghi rõ "chỉ có tóm tắt".
+Cổng: ma trận ≥ 15 nguồn cho khóa luận hoặc NCKH (≥ 8 cho tiểu luận), có cả trong và ngoài nước nếu đề tài có so sánh; khoảng trống nghiên cứu nêu được trong 2–3 câu **và đã kiểm trùng với cột "Kiến nghị đã đưa ra"**; mọi nguồn trong ma trận đều đã mở được hoặc ghi rõ "chỉ có tóm tắt".
 
 ### Pha 3 — Câu hỏi, khung lý thuyết, phương pháp
 Làm: 1 câu hỏi chính + 2–4 câu hỏi phụ (mỗi câu ứng với ≥ 1 mục đề cương). Giả thuyết nghiên cứu nếu có. Khung lý thuyết: học thuyết hoặc nguyên tắc làm thước đo đánh giá (ví dụ: tự do hợp đồng, bảo vệ bên yếu thế, tương xứng, chi phí giao dịch). Phương pháp chọn theo `references/phuong-phap-luat-hoc.md`, **mỗi phương pháp gắn với câu hỏi và chương cụ thể**; cấm viết chung chung "phân tích, tổng hợp, so sánh…" mà không nói dùng ở đâu, để làm gì.
@@ -146,4 +146,8 @@ Không có công cụ tìm kiếm thì nói rõ: mọi nguồn ở pha 2 và pha
 | Dẫn sai khoản (viết theo trí nhớ) | `05-nguon/nguyen-van.md`, chỉ dẫn từ file này |
 | Coi hỏi đáp, công văn như luật | Cột giá trị pháp lý trong sổ nguồn |
 | Tham chiếu "Phụ lục 1" nhưng không có phụ lục | Script kiểm `tham-chieu-hong` |
+| Nhận tính mới cho kiến nghị người khác đã nêu | Cột "Kiến nghị đã đưa ra" + kiểm trùng (`de-cuong-mau.md`) |
+| Gán lời người hỏi thành lời cơ quan trả lời | Quy tắc hỏi đáp trong bảng giá trị pháp lý |
+| So sánh với nước "quen" chứ không phải nước có cơ chế tương đương | Chọn hệ thống theo câu hỏi (`phuong-phap-luat-hoc.md`) |
+| Điểm thấp do thiếu dữ liệu hoặc chưa công bố mà cố bù bằng văn | Pha 7 ghi rõ phần nào chỉ người làm đề tài mới làm được (thu dữ liệu, công bố) |
 | Footnote không có trang, danh mục lẫn VBQPPL với sách | `trinh-bay-trich-dan.md` |

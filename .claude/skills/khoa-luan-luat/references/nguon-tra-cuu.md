@@ -9,7 +9,7 @@ Thứ bậc tin cậy: **nguồn chính thức > tạp chí có phản biện > 
 | VBQPPL (Hiến pháp, luật, nghị định, thông tư…) | bắt buộc áp dụng | "Khoản x Điều y Luật …quy định…" |
 | Án lệ đã công bố | Tòa án phải nghiên cứu, áp dụng trong xét xử | "Án lệ số …/AL xác định…" |
 | Bản án, quyết định thông thường | chỉ là bằng chứng thực tiễn, không ràng buộc vụ khác | "Trong Bản án số…, Tòa án đã…" |
-| Hỏi đáp, công văn, giải đáp của bộ, ngành, TANDTC | quan điểm cơ quan có thẩm quyền; **không phải VBQPPL**, không ràng buộc tòa án | "Theo trả lời của …, …; quan điểm này không phải văn bản quy phạm pháp luật nên…" |
+| Hỏi đáp, công văn, giải đáp của bộ, ngành, TANDTC | quan điểm cơ quan có thẩm quyền; **không phải VBQPPL**, không ràng buộc tòa án. **Chỉ phần "Trả lời" là quan điểm của cơ quan.** Phần câu hỏi là lời của người hỏi, kể cả khi người hỏi trích luật hoặc thuật lại ý kiến của Bộ. | "Theo trả lời của …, …; quan điểm này không phải văn bản quy phạm pháp luật nên…" |
 | Kết luận thanh tra, quyết định xử phạt | bằng chứng thực thi hành chính; không quyết định hiệu lực giao dịch dân sự | "Kết luận thanh tra số … xác định vi phạm…" |
 | Tài liệu doanh nghiệp (tờ trình, nghị quyết, điều lệ) | bằng chứng thực tiễn của một chủ thể | "Tờ trình số … của Công ty … đề nghị…"; không khái quát từ 1 trường hợp |
 | Sách, bài tạp chí, luận án | quan điểm học thuật | "Theo tác giả …" |

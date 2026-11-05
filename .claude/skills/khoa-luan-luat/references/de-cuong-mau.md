@@ -41,9 +41,11 @@ Biến thể so sánh: Ch.1 lý luận → Ch.2 pháp luật [nước A, B] → 
 
 ## C. Ma trận tài liệu (02-tong-quan.md)
 
-| # | Tác giả (năm) | Loại | Câu hỏi hoặc trọng tâm | Phương pháp | Kết luận chính | Hạn chế, khoảng trống | Dùng ở mục | Đã đọc |
-|---|---|---|---|---|---|---|---|---|
-| 1 | … | bài tạp chí | … | phân tích luật viết | … | chưa xét luật mới 2024 | 2.1 | toàn văn |
+| # | Tác giả (năm) | Loại | Câu hỏi hoặc trọng tâm | Phương pháp | Kết luận chính | **Kiến nghị đã đưa ra** | Hạn chế, khoảng trống | Dùng ở mục | Đã đọc |
+|---|---|---|---|---|---|---|---|---|---|
+| 1 | … | bài tạp chí | … | phân tích luật viết | … | bổ sung định nghĩa X | chưa xét luật mới 2024 | 2.1 | toàn văn |
+
+**Kiểm trùng kiến nghị** (trước khi chốt "tính mới" ở pha 2 và trước Chương 3): so từng kiến nghị dự định với cột "Kiến nghị đã đưa ra". Trùng thì tính mới phải dời sang chỗ khác: chứng minh mới, điều kiện cụ thể hơn, dữ liệu mới, hoặc so sánh mới. Ghi rõ "khác công trình #n ở …".
 
 ## D. Sổ nguồn (05-nguon/so-nguon.md)
 

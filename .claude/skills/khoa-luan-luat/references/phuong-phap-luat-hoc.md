@@ -23,6 +23,8 @@ Dùng khi: học kinh nghiệm nước ngoài, hoặc so giữa các chế đị
 4 cấp độ: quy phạm → chế định → ngành luật → hệ thống pháp luật.
 Nguyên tắc: **tương đương chức năng** (so cách hai hệ thống giải quyết cùng một vấn đề, không so tên gọi); lý giải được vì sao chọn quốc gia đó (tương đồng truyền thống pháp luật, Việt Nam đang tham khảo, có điều ước chung); đặt quy định trong bối cảnh (án lệ, thực thi); tránh "cấy ghép" máy móc. (Van Hoecke, "Methodology of Comparative Legal Research", Law and Method, 2015.)
 Kết quả phải là bảng so sánh theo tiêu chí, rồi "bài học có thể áp dụng / không áp dụng được vì …".
+**Chọn hệ thống theo câu hỏi, không theo thói quen.** Trước khi chọn, tìm xem hệ thống đó có cơ chế giải quyết **đúng câu hỏi nghiên cứu** không, và đọc nguyên văn quy định đó. Ví dụ khi chạy thử: câu hỏi là "phê duyệt trước theo hạn mức". Delaware (chọn theo thói quen) không có cơ chế tương ứng. SGX Rule 920 ("general mandate") và HKEX 14A.53 ("annual cap") thì có. Không tìm được hệ thống nào có cơ chế tương đương thì bỏ phần so sánh, không so cho có.
+**Dịch thuật ngữ**: không dịch thuật ngữ nước ngoài thành tên một loại VBQPPL Việt Nam (ví dụ "circular" của sàn giao dịch không dịch là "thông tư"). Lần đầu dùng thì ghi kèm nguyên gốc trong ngoặc.
 
 ### 3. Lịch sử
 Dùng khi: giải thích vì sao quy định hiện nay như vậy, hoặc chứng minh xu hướng. Viết ngắn, chỉ giữ mốc phục vụ lập luận.
