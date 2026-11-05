@@ -81,3 +81,6 @@ Task 7: bắt đầu — base 16c5980 — đề mẫu 2: bảo vệ dữ liệu 
 - Sửa skill (bài học 12–18): tim-ngach.md lên 9 nguồn tín hiệu (bất đối xứng câu chữ; dự thảo so với bản thông qua) + khoảng trống thời gian; phép thử tính mới tính cả bài thực hành; cổng pha 2 cần ≥ 5 nguồn học thuật + cột ngày đăng; kiểm phản chứng gồm dự thảo; không chép dẫn chiếu sai của nguồn; script lỗi `ghi-chu-ngoac-vuong` (24 test).
 Rút kinh nghiệm: ở đề 2 chính tôi bỏ bước kiểm phản chứng dù skill đã bắt buộc → luật viết ra chưa đủ, cần cổng có thứ kiểm được. Lần sau nên cân nhắc thêm vào script: hạn chế chưa có nguồn "phản chứng" thì báo.
 Task 7: xong — (commit tiếp theo)
+
+## Phiên đề 3 (Hào: "làm")
+Task 8: bắt đầu — base a48c2ba — (1) script kiểm phản chứng ở mục 'hạn chế'; (2) đề mẫu 3 mảng hình sự, thử phân tích bản án
