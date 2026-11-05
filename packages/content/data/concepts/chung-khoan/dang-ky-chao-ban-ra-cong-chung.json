@@ -24,10 +24,13 @@
  ],
  "note": "Luật 56/2024/QH15 (hiệu lực 01/01/2025) bổ sung Điều 11a: cơ quan tiếp nhận chỉ xem xét tính hợp lệ của hồ sơ; tổ chức, cá nhân lập, xác nhận, tư vấn hồ sơ (kể cả kiểm toán) chịu trách nhiệm trước pháp luật về tính chính xác của hồ sơ. Giáo trình 2021 chưa có điều này.",
  "memo": {
-  "hook": "Giấy chứng nhận đăng ký chào bán chỉ xác nhận HỒ SƠ ĐỦ, KHÔNG bảo đảm chất lượng cổ phiếu.",
+  "gist": "Muốn chào bán ra công chúng phải đăng ký với Ủy ban Chứng khoán; giấy chứng nhận chỉ xác nhận hồ sơ đủ.",
+  "kind": "steps",
+  "hook": "Ủy ban duyệt hồ sơ, không bảo hành món hàng.",
   "tree": [
    {
     "label": "Ai đăng ký",
+    "icon": "🙋",
     "children": [
      "Tổ chức phát hành",
      "Cổ đông công ty đại chúng"
@@ -35,16 +38,28 @@
    },
    {
     "label": "Nơi đăng ký",
+    "icon": "🏛️",
     "children": [
      "Ủy ban Chứng khoán Nhà nước"
     ]
    },
    {
     "label": "Kết quả",
+    "icon": "📜",
     "children": [
      "Giấy chứng nhận đăng ký",
      "Không bảo đảm chất lượng"
     ]
+   }
+  ],
+  "case": {
+   "q": "Có Giấy chứng nhận đăng ký chào bán thì cổ phiếu đó chắc chắn tốt không?",
+   "a": "Không. Giấy chỉ xác nhận hồ sơ đủ, không bảo đảm chất lượng."
+  },
+  "contrast": [
+   {
+    "with": "ban-cao-bach",
+    "text": "Đăng ký là thủ tục với Ủy ban; bản cáo bạch là tài liệu thông tin cho nhà đầu tư."
    }
   ]
  },

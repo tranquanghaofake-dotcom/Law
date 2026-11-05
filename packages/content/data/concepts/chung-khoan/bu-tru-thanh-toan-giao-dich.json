@@ -25,16 +25,20 @@
  ],
  "note": "Luật 56/2024/QH15 (hiệu lực 01/01/2025) sửa khoản 1 Điều 63: bù trừ được thực hiện qua Tổng công ty lưu ký và bù trừ HOẶC công ty con của Tổng công ty. Giáo trình 2021 chỉ nói Tổng công ty.",
  "memo": {
-  "hook": "Khớp lệnh → BÙ TRỪ → THANH TOÁN: giao chứng khoán và trả tiền ĐỒNG THỜI.",
+  "gist": "Sau khi khớp lệnh, hệ thống tính bù trừ ai giao bao nhiêu, rồi giao chứng khoán và trả tiền cùng lúc.",
+  "kind": "steps",
+  "hook": "Như chốt sổ cuối ngày: cộng trừ rồi chỉ chuyển phần chênh.",
   "tree": [
    {
     "label": "Bù trừ",
+    "icon": "🧮",
     "children": [
      "Xác định phải giao bao nhiêu"
     ]
    },
    {
     "label": "Thanh toán",
+    "icon": "💳",
     "children": [
      "Chứng khoán: tài khoản lưu ký",
      "Tiền: ngân hàng thanh toán"
@@ -42,9 +46,20 @@
    },
    {
     "label": "Nguyên tắc",
+    "icon": "🤝",
     "children": [
      "Giao và trả đồng thời"
     ]
+   }
+  ],
+  "case": {
+   "q": "Trong ngày khách công ty A mua 100.000 và bán 70.000 cổ phiếu X. Sau bù trừ A phải nhận bao nhiêu?",
+   "a": "Nhận ròng 30.000 cổ phiếu và trả tiền tương ứng."
+  },
+  "contrast": [
+   {
+    "with": "chuyen-quyen-so-huu-chung-khoan",
+    "text": "Bù trừ, thanh toán là quy trình; chuyển quyền sở hữu là thời điểm thành chủ."
    }
   ]
  },

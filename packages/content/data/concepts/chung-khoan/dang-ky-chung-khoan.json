@@ -24,10 +24,13 @@
   "đăng ký tập trung"
  ],
  "memo": {
-  "hook": "ĐĂNG KÝ chứng khoán = ghi AI SỞ HỮU GÌ; khác ĐĂNG KÝ GIAO DỊCH (đưa lên UPCoM).",
+  "gist": "Đăng ký chứng khoán là ghi lại tổ chức phát hành, loại chứng khoán và ai sở hữu, tại Tổng công ty lưu ký.",
+  "kind": "tree",
+  "hook": "Như sổ hộ khẩu của cổ phiếu: ghi ai đang giữ cái gì.",
   "tree": [
    {
     "label": "Ghi nhận",
+    "icon": "📒",
     "children": [
      "Tổ chức phát hành",
      "Chứng khoán",
@@ -36,6 +39,7 @@
    },
    {
     "label": "Bắt buộc tập trung",
+    "icon": "🏢",
     "children": [
      "Công ty đại chúng",
      "Tổ chức niêm yết, đăng ký giao dịch"
@@ -43,9 +47,20 @@
    },
    {
     "label": "Nơi đăng ký",
+    "icon": "🏛️",
     "children": [
      "Tổng công ty lưu ký và bù trừ"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty đại chúng phải gửi danh sách cổ đông cho ai để lập sổ đăng ký?",
+   "a": "Tổng công ty lưu ký và bù trừ chứng khoán."
+  },
+  "contrast": [
+   {
+    "with": "dang-ky-giao-dich-chung-khoan",
+    "text": "Đăng ký chứng khoán ghi ai sở hữu; đăng ký giao dịch là đưa lên sàn chưa niêm yết."
    }
   ]
  },

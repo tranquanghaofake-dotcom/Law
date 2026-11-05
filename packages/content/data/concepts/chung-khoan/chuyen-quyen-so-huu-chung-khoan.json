@@ -22,10 +22,13 @@
   "Sổ đăng ký người sở hữu"
  ],
  "memo": {
-  "hook": "KHỚP LỆNH chưa phải thành chủ; quyền sở hữu chuyển khi GHI SỔ.",
+  "gist": "Khớp lệnh chưa làm bạn thành chủ; quyền sở hữu chuyển khi chứng khoán được ghi vào tài khoản lưu ký.",
+  "kind": "compare",
+  "hook": "Bắt tay mua xong chưa phải chủ, sang tên xong mới là chủ.",
   "tree": [
    {
     "label": "Đã lưu ký",
+    "icon": "📒",
     "children": [
      "Khi có bút toán ghi sổ",
      "Trên tài khoản lưu ký"
@@ -33,15 +36,27 @@
    },
    {
     "label": "Chưa lưu ký",
+    "icon": "📖",
     "children": [
      "Khi ghi Sổ đăng ký người sở hữu"
     ]
    },
    {
     "label": "Lưu ý",
+    "icon": "💡",
     "children": [
      "Khớp lệnh chưa chuyển quyền"
     ]
+   }
+  ],
+  "case": {
+   "q": "Khớp lệnh mua sáng thứ Hai, cổ phiếu về tài khoản thứ Tư. Bạn thành chủ khi nào?",
+   "a": "Thứ Tư, khi có bút toán ghi sổ."
+  },
+  "contrast": [
+   {
+    "with": "bu-tru-thanh-toan-giao-dich",
+    "text": "Chuyển quyền sở hữu là thời điểm thành chủ; bù trừ, thanh toán là quy trình dẫn tới đó."
    }
   ]
  },

@@ -22,10 +22,13 @@
   "dẫn đến thao túng"
  ],
  "memo": {
-  "hook": "Cho mượn tài khoản, đứng tên hộ bị cấm khi DẪN ĐẾN THAO TÚNG giá.",
+  "gist": "Cho người khác mượn tài khoản hoặc đứng tên sở hữu chứng khoán hộ bị cấm khi việc đó dẫn tới thao túng giá.",
+  "kind": "tree",
+  "hook": "Cho mượn mặt nạ để kẻ khác giấu mặt.",
   "tree": [
    {
     "label": "Hành vi",
+    "icon": "🎭",
     "children": [
      "Cho mượn tài khoản",
      "Đứng tên sở hữu hộ"
@@ -33,15 +36,27 @@
    },
    {
     "label": "Bị cấm khi",
+    "icon": "⚠️",
     "children": [
      "Dẫn đến thao túng giá"
     ]
    },
    {
     "label": "Vai trò",
+    "icon": "🙈",
     "children": [
      "Che giấu chủ thể thật"
     ]
+   }
+  ],
+  "case": {
+   "q": "Sinh viên được trả 2 triệu một tháng để cho thuê tài khoản; tài khoản bị dùng đẩy giá cổ phiếu. Sinh viên có vi phạm không?",
+   "a": "Có. Cho mượn tài khoản dẫn đến thao túng giá là hành vi bị cấm."
+  },
+  "contrast": [
+   {
+    "with": "thao-tung-thi-truong",
+    "text": "Cho mượn tài khoản là công cụ; thao túng là hành vi làm méo giá."
    }
   ]
  },

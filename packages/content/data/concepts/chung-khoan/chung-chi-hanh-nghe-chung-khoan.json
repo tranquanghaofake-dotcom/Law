@@ -24,10 +24,13 @@
   "03 năm không hành nghề"
  ],
  "memo": {
-  "hook": "Ba chứng chỉ: MÔI GIỚI – PHÂN TÍCH – QUẢN LÝ QUỸ; 3 NĂM không hành nghề thì bị thu hồi.",
+  "gist": "Người làm môi giới, phân tích, quản lý quỹ phải có chứng chỉ hành nghề; không hành nghề 3 năm thì bị thu hồi.",
+  "kind": "tree",
+  "hook": "Như bằng lái: không lái lâu ngày thì mất bằng.",
   "tree": [
    {
     "label": "Ba loại",
+    "icon": "3️⃣",
     "children": [
      "Môi giới",
      "Phân tích tài chính",
@@ -36,6 +39,7 @@
    },
    {
     "label": "Điều kiện",
+    "icon": "🎓",
     "children": [
      "Năng lực hành vi đầy đủ",
      "Đại học trở lên",
@@ -44,10 +48,21 @@
    },
    {
     "label": "Thu hồi",
+    "icon": "⛔",
     "children": [
      "03 năm không hành nghề",
      "Vi phạm hành vi bị cấm"
     ]
+   }
+  ],
+  "case": {
+   "q": "Môi giới bị thu hồi chứng chỉ vì tham gia thao túng giá. Có được cấp lại không?",
+   "a": "Không, vĩnh viễn không được cấp lại."
+  },
+  "contrast": [
+   {
+    "with": "nguoi-hanh-nghe-chung-khoan",
+    "text": "Chứng chỉ là giấy tờ; người hành nghề là người cầm giấy và làm việc."
    }
   ]
  },

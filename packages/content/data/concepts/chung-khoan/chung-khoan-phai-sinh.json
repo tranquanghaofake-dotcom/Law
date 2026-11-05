@@ -5,7 +5,7 @@
  "term": "Chứng khoán phái sinh",
  "definition": "Chứng khoán phái sinh là công cụ tài chính dưới dạng hợp đồng, bao gồm hợp đồng quyền chọn, hợp đồng tương lai, hợp đồng kỳ hạn, trong đó xác nhận quyền, nghĩa vụ của các bên đối với việc thanh toán tiền, chuyển giao số lượng tài sản cơ sở nhất định theo mức giá đã được xác định trong khoảng thời gian hoặc vào ngày đã xác định trong tương lai.",
  "plain": "Phái sinh là hợp đồng mà giá trị \"phái sinh\" (bắt nguồn) từ một tài sản khác gọi là tài sản cơ sở, ví dụ chỉ số VN30. Các bên chốt giá hôm nay cho việc thanh toán hoặc giao tài sản trong tương lai.",
- "example": "Hợp đồng tương lai chỉ số VN30 đáo hạn tháng sau: bạn cam kết \"mua\" chỉ số ở mức 1.300 điểm; đến hạn, nếu chỉ số là 1.350 thì bạn được thanh toán phần chênh lệch.",
+ "example": "Hợp đồng tương lai chỉ số 30 cổ phiếu lớn đáo hạn tháng sau: bạn cam kết mua chỉ số ở mức 1.300 điểm; đến hạn, nếu chỉ số là 1.350 thì bạn được thanh toán phần chênh lệch.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 9 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)",
@@ -22,10 +22,13 @@
   "quyền chọn, tương lai, kỳ hạn"
  ],
  "memo": {
-  "hook": "Phái sinh: HỢP ĐỒNG có giá trị bắt nguồn từ TÀI SẢN CƠ SỞ (vd VN30).",
+  "gist": "Hợp đồng tài chính có giá trị dựa trên một tài sản khác, như chỉ số; chốt giá hôm nay, thanh toán ngày sau.",
+  "kind": "tree",
+  "hook": "Không mua quả cam, mà mua lời hứa về giá quả cam tháng sau.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "📄",
     "children": [
      "Công cụ tài chính dạng hợp đồng",
      "Dựa trên tài sản cơ sở"
@@ -33,6 +36,7 @@
    },
    {
     "label": "Loại",
+    "icon": "3️⃣",
     "children": [
      "Quyền chọn",
      "Tương lai",
@@ -41,10 +45,21 @@
    },
    {
     "label": "Cơ chế",
+    "icon": "⏳",
     "children": [
      "Chốt giá hôm nay",
      "Thanh toán tương lai"
     ]
+   }
+  ],
+  "case": {
+   "q": "Bạn cam kết mua chỉ số ở mức 1.300 điểm; đến hạn chỉ số là 1.350. Bạn được gì?",
+   "a": "Được thanh toán phần chênh lệch 50 điểm."
+  },
+  "contrast": [
+   {
+    "with": "chung-quyen",
+    "text": "Phái sinh là hợp đồng dựa trên tài sản cơ sở; chứng quyền là quyền mua cổ phiếu kèm theo chứng khoán khác."
    }
   ]
  },

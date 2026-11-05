@@ -22,10 +22,13 @@
   "giá xác định trước"
  ],
  "memo": {
-  "hook": "Chứng quyền = QUÀ KÈM trái phiếu/cổ phiếu ưu đãi: quyền MUA cổ phiếu phổ thông GIÁ CHỐT TRƯỚC.",
+  "gist": "Chứng quyền phát hành kèm trái phiếu hoặc cổ phiếu ưu đãi, cho quyền mua cổ phiếu phổ thông với giá chốt trước.",
+  "kind": "tree",
+  "hook": "Như phiếu mua hàng tặng kèm: được mua sau này với giá hôm nay.",
   "tree": [
    {
     "label": "Phát hành cùng",
+    "icon": "🎁",
     "children": [
      "Trái phiếu",
      "Cổ phiếu ưu đãi"
@@ -33,6 +36,7 @@
    },
    {
     "label": "Quyền",
+    "icon": "🔑",
     "children": [
      "Mua cổ phiếu phổ thông",
      "Giá xác định trước"
@@ -40,9 +44,20 @@
    },
    {
     "label": "Phân biệt",
+    "icon": "↔️",
     "children": [
      "Chứng quyền có bảo đảm: công ty chứng khoán phát hành"
     ]
+   }
+  ],
+  "case": {
+   "q": "Mỗi trái phiếu kèm 10 chứng quyền, mỗi chứng quyền mua 1 cổ phiếu giá 20.000 đồng trong 2 năm. Người cầm chứng quyền được gì?",
+   "a": "Quyền mua cổ phiếu phổ thông với giá 20.000 đồng trong 2 năm."
+  },
+  "contrast": [
+   {
+    "with": "quyen-mua-co-phan",
+    "text": "Chứng quyền kèm theo trái phiếu, cổ phiếu ưu đãi; quyền mua cổ phần dành cho cổ đông hiện hữu."
    }
   ]
  },

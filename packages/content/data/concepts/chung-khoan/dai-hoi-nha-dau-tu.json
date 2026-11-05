@@ -24,10 +24,13 @@
   "hằng năm hoặc bất thường"
  ],
  "memo": {
-  "hook": "Đại hội nhà đầu tư = 'ĐHĐCĐ' của quỹ: được THAY công ty quản lý quỹ và ngân hàng giám sát.",
+  "gist": "Gồm mọi người góp vốn vào quỹ, là cơ quan quyết định cao nhất, được thay công ty quản lý quỹ.",
+  "kind": "tree",
+  "hook": "Như họp cổ đông của rổ tiền chung.",
   "tree": [
    {
     "label": "Vị trí",
+    "icon": "👥",
     "children": [
      "Gồm tất cả nhà đầu tư",
      "Quyết định cao nhất"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Quyền",
+    "icon": "🔄",
     "children": [
      "Thay công ty quản lý quỹ",
      "Thay ngân hàng giám sát",
@@ -43,9 +47,20 @@
    },
    {
     "label": "Họp",
+    "icon": "📅",
     "children": [
      "Hằng năm hoặc bất thường"
     ]
+   }
+  ],
+  "case": {
+   "q": "Quỹ mở thua lỗ vì công ty quản lý đầu tư trái chính sách. Ai có quyền thay công ty quản lý quỹ?",
+   "a": "Đại hội nhà đầu tư."
+  },
+  "contrast": [
+   {
+    "with": "quyen-nha-dau-tu-quy",
+    "text": "Đại hội là cơ quan tập thể; quyền nhà đầu tư là quyền của từng người."
    }
   ]
  },

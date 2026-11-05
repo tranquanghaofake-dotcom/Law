@@ -22,10 +22,13 @@
   "quyền sở hữu"
  ],
  "memo": {
-  "hook": "Chứng chỉ quỹ = phần của bạn trong RỔ TIỀN CHUNG, không phải cổ phần công ty quản lý quỹ.",
+  "gist": "Chứng chỉ quỹ xác nhận bạn sở hữu một phần vốn góp của quỹ đầu tư, không phải cổ phần công ty quản lý quỹ.",
+  "kind": "tree",
+  "hook": "Một suất trong rổ tiền chung, người khác đi chợ hộ.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "🧺",
     "children": [
      "Chứng khoán",
      "Sở hữu một phần vốn góp của quỹ"
@@ -33,10 +36,21 @@
    },
    {
     "label": "Quỹ",
+    "icon": "👥",
     "children": [
      "Nhiều nhà đầu tư góp",
      "Công ty quản lý quỹ đầu tư hộ"
     ]
+   }
+  ],
+  "case": {
+   "q": "Mua chứng chỉ quỹ mở, bạn có thành cổ đông của công ty quản lý quỹ không?",
+   "a": "Không. Bạn sở hữu một phần vốn của quỹ."
+  },
+  "contrast": [
+   {
+    "with": "co-phieu",
+    "text": "Chứng chỉ quỹ là phần của quỹ; cổ phiếu là phần của công ty."
    }
   ]
  },

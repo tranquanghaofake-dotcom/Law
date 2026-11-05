@@ -22,10 +22,13 @@
   "chỉ nhà đầu tư chuyên nghiệp"
  ],
  "memo": {
-  "hook": "Riêng lẻ: KHÔNG quảng cáo và (DƯỚI 100 người hoặc chỉ nhà đầu tư CHUYÊN NGHIỆP).",
+  "gist": "Chào bán không quảng cáo, cho dưới 100 nhà đầu tư hoặc chỉ nhà đầu tư chuyên nghiệp; đổi lại bị hạn chế chuyển nhượng.",
+  "kind": "checklist",
+  "hook": "Tiệc kín: không dán thông báo, có danh sách khách mời.",
   "tree": [
    {
     "label": "Điều kiện",
+    "icon": "🤫",
     "children": [
      "Không qua thông tin đại chúng",
      "Dưới 100 nhà đầu tư",
@@ -34,10 +37,21 @@
    },
    {
     "label": "Đổi lại",
+    "icon": "⚖️",
     "children": [
      "Hạn chế chuyển nhượng",
      "Giới hạn người mua"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty đại chúng phát hành riêng lẻ cho 3 quỹ và 1 nhà đầu tư chiến lược. Số cổ phiếu này có bán lại ngay được không?",
+   "a": "Không, bị hạn chế chuyển nhượng một thời gian."
+  },
+  "contrast": [
+   {
+    "with": "chao-ban-ra-cong-chung",
+    "text": "Riêng lẻ không quảng cáo, giới hạn người; ra công chúng thì mở cho mọi người."
    }
   ]
  },

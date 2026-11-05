@@ -5,7 +5,7 @@
  "term": "Bản cáo bạch",
  "definition": "Bản cáo bạch là tài liệu hoặc dữ liệu điện tử công khai những thông tin chính xác, trung thực, khách quan liên quan đến việc chào bán hoặc niêm yết chứng khoán của tổ chức phát hành.",
  "plain": "Bản cáo bạch là \"hồ sơ bệnh án\" của đợt chào bán: thông tin về tổ chức phát hành, đợt chào bán, rủi ro, kế hoạch dùng tiền. Nhà đầu tư dựa vào đó để quyết định mua, nên thông tin sai lệch trong bản cáo bạch là căn cứ để đình chỉ, hủy bỏ đợt chào bán và xử lý trách nhiệm.",
- "example": "Trước khi mua cổ phiếu IPO, bạn đọc mục \"các yếu tố rủi ro\" trong bản cáo bạch. Phân phối chỉ được thực hiện sau khi tổ chức phát hành bảo đảm người mua tiếp cận được bản cáo bạch (khoản 1 Điều 26).",
+ "example": "Trước khi mua cổ phiếu phát hành lần đầu ra công chúng, bạn đọc mục \"các yếu tố rủi ro\" trong bản cáo bạch. Phân phối chỉ được làm sau khi người mua tiếp cận được bản cáo bạch.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 23 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)",
@@ -22,10 +22,13 @@
   "tài liệu hoặc dữ liệu điện tử"
  ],
  "memo": {
-  "hook": "Bản cáo bạch = HỒ SƠ BỆNH ÁN của đợt chào bán; sai lệch thì bị ĐÌNH CHỈ, HỦY.",
+  "gist": "Tài liệu công khai thông tin chính xác về tổ chức phát hành, rủi ro, kế hoạch dùng tiền, khi chào bán hoặc niêm yết.",
+  "kind": "tree",
+  "hook": "Như tờ hướng dẫn kèm hộp thuốc: đọc kỹ trước khi dùng.",
   "tree": [
    {
     "label": "Yêu cầu",
+    "icon": "✅",
     "children": [
      "Chính xác",
      "Trung thực, khách quan"
@@ -33,6 +36,7 @@
    },
    {
     "label": "Dùng khi",
+    "icon": "📢",
     "children": [
      "Chào bán",
      "Niêm yết"
@@ -40,11 +44,22 @@
    },
    {
     "label": "Nội dung",
+    "icon": "📋",
     "children": [
      "Tổ chức phát hành",
      "Rủi ro",
      "Kế hoạch dùng tiền"
     ]
+   }
+  ],
+  "case": {
+   "q": "Trước khi mua cổ phiếu phát hành lần đầu, nên đọc phần nào của bản cáo bạch?",
+   "a": "Phần các yếu tố rủi ro."
+  },
+  "contrast": [
+   {
+    "with": "dang-ky-chao-ban-ra-cong-chung",
+    "text": "Bản cáo bạch là tài liệu thông tin; đăng ký chào bán là thủ tục xin chào bán."
    }
   ]
  },

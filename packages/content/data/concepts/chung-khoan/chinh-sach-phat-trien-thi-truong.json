@@ -22,10 +22,13 @@
   "công bằng, công khai, minh bạch, an toàn, hiệu quả"
  ],
  "memo": {
-  "hook": "Chứng khoán là kênh vốn TRUNG, DÀI HẠN, bổ sung cho ngân hàng.",
+  "gist": "Nhà nước phát triển thị trường chứng khoán làm kênh vốn trung, dài hạn, bổ sung cho vay ngân hàng.",
+  "kind": "tree",
+  "hook": "Ngân hàng là vòi nước ngắn, chứng khoán là đường ống dài.",
   "tree": [
    {
     "label": "Vai trò",
+    "icon": "🎯",
     "children": [
      "Huy động vốn trung, dài hạn",
      "Bổ sung tín dụng ngân hàng"
@@ -33,6 +36,7 @@
    },
    {
     "label": "Nhà nước",
+    "icon": "🏛️",
     "children": [
      "Khuyến khích trong, ngoài nước",
      "Quản lý, giám sát"
@@ -40,10 +44,21 @@
    },
    {
     "label": "Mục tiêu",
+    "icon": "⚖️",
     "children": [
      "Công bằng, công khai",
      "Minh bạch, an toàn"
     ]
+   }
+  ],
+  "case": {
+   "q": "Doanh nghiệp cần 1.000 tỷ cho nhà máy 20 năm. Kênh nào phù hợp ngoài vay ngân hàng?",
+   "a": "Phát hành cổ phiếu hoặc trái phiếu dài hạn trên thị trường chứng khoán."
+  },
+  "contrast": [
+   {
+    "with": "nguyen-tac-hoat-dong-chung-khoan",
+    "text": "Chính sách là định hướng của Nhà nước; nguyên tắc là luật chơi của người tham gia."
    }
   ]
  },

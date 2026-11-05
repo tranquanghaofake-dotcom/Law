@@ -5,7 +5,7 @@
  "term": "Bảo lãnh phát hành chứng khoán",
  "definition": "Bảo lãnh phát hành chứng khoán là việc cam kết với tổ chức phát hành nhận mua một phần hoặc toàn bộ chứng khoán của tổ chức phát hành để bán lại hoặc mua số chứng khoán còn lại chưa được phân phối hết hoặc cố gắng tối đa để phân phối số chứng khoán cần phát hành của tổ chức phát hành.",
  "plain": "Ba \"mức\" cam kết: (1) mua chắc một phần hoặc toàn bộ rồi bán lại; (2) mua phần còn thừa chưa bán hết; (3) chỉ cố gắng tối đa để phân phối (không cam kết mua). Bảo lãnh ra công chúng chỉ do công ty chứng khoán, tổ chức được cấp phép, đáp ứng an toàn tài chính, KHÔNG là người có liên quan với tổ chức phát hành; nếu cam kết mua thì tổng giá trị bảo lãnh không vượt vốn chủ sở hữu (Điều 17).",
- "example": "Công ty chứng khoán Z cam kết với công ty P: đợt IPO 10 triệu cổ phiếu bán không hết thì Z mua phần còn lại. Đây là bảo lãnh theo hình thức mua số chứng khoán chưa phân phối hết.",
+ "example": "Công ty chứng khoán Z cam kết với công ty P: đợt phát hành 10 triệu cổ phiếu bán không hết thì Z mua phần còn lại. Đây là bảo lãnh mua số chứng khoán chưa phân phối hết.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 31 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)",
@@ -24,10 +24,13 @@
   "không là người có liên quan"
  ],
  "memo": {
-  "hook": "Ba mức cam kết: MUA CHẮC – MUA PHẦN THỪA – CỐ GẮNG TỐI ĐA.",
+  "gist": "Công ty chứng khoán cam kết giúp bán chứng khoán: mua hết để bán lại, mua phần còn thừa, hoặc cố gắng tối đa.",
+  "kind": "ladder",
+  "hook": "Ba mức hứa: ôm hết, ôm phần ế, hoặc chỉ hứa cố gắng.",
   "tree": [
    {
     "label": "Mức cam kết",
+    "icon": "📜",
     "children": [
      "Nhận mua để bán lại",
      "Mua phần chưa phân phối hết",
@@ -36,6 +39,7 @@
    },
    {
     "label": "Ai được làm",
+    "icon": "🏢",
     "children": [
      "Công ty chứng khoán được cấp phép",
      "Đủ an toàn tài chính"
@@ -43,9 +47,20 @@
    },
    {
     "label": "Hạn chế",
+    "icon": "📏",
     "children": [
      "Không là người có liên quan"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty chứng khoán cam kết đợt phát hành bán không hết thì sẽ mua phần còn lại. Đây là hình thức nào?",
+   "a": "Bảo lãnh mua số chứng khoán chưa phân phối hết."
+  },
+  "contrast": [
+   {
+    "with": "tu-doanh-chung-khoan",
+    "text": "Bảo lãnh là giúp tổ chức phát hành bán; tự doanh là công ty tự mua bán cho mình."
    }
   ]
  },

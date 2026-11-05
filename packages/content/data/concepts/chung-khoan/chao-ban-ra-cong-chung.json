@@ -5,7 +5,7 @@
  "term": "Chào bán chứng khoán ra công chúng",
  "definition": "Chào bán chứng khoán ra công chúng là việc chào bán chứng khoán theo một trong các phương thức sau đây: a) Chào bán thông qua phương tiện thông tin đại chúng; b) Chào bán cho từ 100 nhà đầu tư trở lên, không kể nhà đầu tư chứng khoán chuyên nghiệp; c) Chào bán cho các nhà đầu tư không xác định.",
  "plain": "Chỉ cần thỏa MỘT trong ba phương thức là đã chào bán ra công chúng: quảng cáo trên báo/mạng, hoặc từ 100 nhà đầu tư (không đếm nhà đầu tư chuyên nghiệp) trở lên, hoặc nhắm tới nhà đầu tư không xác định. Chào bán ra công chúng phải đăng ký với Ủy ban Chứng khoán Nhà nước, vì người mua đông và dễ bị thiệt.",
- "example": "Công ty đăng quảng cáo \"mở bán cổ phần, lãi 20%/năm\" trên Facebook cho bất kỳ ai, dù mới có 30 người mua: vẫn là chào bán ra công chúng (điểm a và c), nên phải đăng ký với Ủy ban Chứng khoán Nhà nước.",
+ "example": "Công ty quảng cáo \"mở bán cổ phần, lãi 20% một năm\" trên mạng xã hội cho bất kỳ ai, dù mới có 30 người mua: vẫn là chào bán ra công chúng, phải đăng ký với Ủy ban.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 19 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)",
@@ -22,10 +22,13 @@
   "nhà đầu tư không xác định"
  ],
  "memo": {
-  "hook": "Chỉ cần MỘT trong ba: QUẢNG CÁO đại chúng, từ 100 NHÀ ĐẦU TƯ, hoặc người KHÔNG XÁC ĐỊNH.",
+  "gist": "Chào bán qua quảng cáo đại chúng, hoặc cho từ 100 nhà đầu tư, hoặc cho người không xác định.",
+  "kind": "checklist",
+  "hook": "Chỉ cần một dấu hiệu là đã ra công chúng.",
   "tree": [
    {
     "label": "Phương thức (một trong)",
+    "icon": "📢",
     "children": [
      "Qua phương tiện thông tin đại chúng",
      "Từ 100 nhà đầu tư",
@@ -34,15 +37,27 @@
    },
    {
     "label": "Không đếm",
+    "icon": "🚫",
     "children": [
      "Nhà đầu tư chuyên nghiệp"
     ]
    },
    {
     "label": "Thủ tục",
+    "icon": "📋",
     "children": [
      "Đăng ký với Ủy ban Chứng khoán"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty quảng cáo bán cổ phần trên mạng xã hội cho bất kỳ ai, mới có 30 người mua. Có phải chào bán ra công chúng không?",
+   "a": "Có, vì đã quảng cáo đại chúng cho người không xác định."
+  },
+  "contrast": [
+   {
+    "with": "chao-ban-rieng-le",
+    "text": "Ra công chúng chỉ cần một dấu hiệu; riêng lẻ phải không quảng cáo và giới hạn người mua."
    }
   ]
  },
