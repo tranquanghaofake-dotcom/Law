@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Nguyên tắc",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Dân chủ, khách quan, công bằng",
      "Công khai, minh bạch, kịp thời"
@@ -37,14 +37,14 @@
    },
    {
     "label": "Bằng đất",
-    "icon": "🏠",
+    "icon": "home",
     "children": [
      "Cùng mục đích sử dụng"
     ]
    },
    {
     "label": "Bằng tiền",
-    "icon": "💵",
+    "icon": "money",
     "children": [
      "Giá đất cụ thể",
      "Tại thời điểm phê duyệt phương án"
@@ -52,7 +52,7 @@
    },
    {
     "label": "Ngoài bồi thường",
-    "icon": "🤲",
+    "icon": "handshake",
     "children": [
      "Hỗ trợ",
      "Tái định cư"

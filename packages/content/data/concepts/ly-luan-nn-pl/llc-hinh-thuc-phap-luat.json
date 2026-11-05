@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Tập quán pháp",
-    "icon": "🏘️",
+    "icon": "village",
     "children": [
      "Tập quán được thừa nhận",
      "Có sớm nhất"
@@ -38,21 +38,21 @@
    },
    {
     "label": "Tiền lệ pháp, án lệ",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Bản án làm khuôn mẫu"
     ]
    },
    {
     "label": "Văn bản quy phạm",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Chủ yếu ở Việt Nam"
     ]
    },
    {
     "label": "Hình thức bên trong",
-    "icon": "🧩",
+    "icon": "puzzle",
     "children": [
      "Nguyên tắc, ngành, chế định, quy phạm"
     ]

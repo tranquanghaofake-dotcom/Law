@@ -29,14 +29,14 @@
   "tree": [
    {
     "label": "Chiếm hữu",
-    "icon": "✋",
+    "icon": "ban",
     "children": [
      "Nắm giữ, chi phối"
     ]
    },
    {
     "label": "Sử dụng",
-    "icon": "🚗",
+    "icon": "vehicle",
     "children": [
      "Khai thác công dụng",
      "Hưởng hoa lợi, lợi tức"
@@ -44,7 +44,7 @@
    },
    {
     "label": "Định đoạt",
-    "icon": "🔑",
+    "icon": "key",
     "children": [
      "Chuyển giao",
      "Từ bỏ, tiêu hủy"
@@ -52,7 +52,7 @@
    },
    {
     "label": "Giới hạn",
-    "icon": "🚧",
+    "icon": "ban",
     "children": [
      "Không trái luật, không hại người khác"
     ]

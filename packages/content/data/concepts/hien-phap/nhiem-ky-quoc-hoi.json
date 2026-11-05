@@ -30,21 +30,21 @@
   "tree": [
    {
     "label": "Nhiệm kỳ",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "Năm năm"
     ]
    },
    {
     "label": "Bầu khóa mới",
-    "icon": "🗳️",
+    "icon": "vote",
     "children": [
      "Xong 60 ngày trước khi hết nhiệm kỳ"
     ]
    },
    {
     "label": "Rút ngắn, kéo dài",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Ít nhất 2/3 tổng số đại biểu",
      "Theo đề nghị Ủy ban thường vụ",

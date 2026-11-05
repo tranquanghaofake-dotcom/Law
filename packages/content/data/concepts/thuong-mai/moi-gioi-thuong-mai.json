@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Vai trò",
-    "icon": "🌉",
+    "icon": "link",
     "children": [
      "Trung gian kết nối",
      "Không là bên của hợp đồng"
@@ -37,14 +37,14 @@
    },
    {
     "label": "Chủ thể",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Bên môi giới là thương nhân"
     ]
    },
    {
     "label": "Thù lao",
-    "icon": "💵",
+    "icon": "money",
     "children": [
      "Khi các bên đã ký hợp đồng"
     ]

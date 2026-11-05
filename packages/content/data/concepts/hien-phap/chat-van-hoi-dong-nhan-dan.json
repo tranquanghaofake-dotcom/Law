@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Bị chất vấn",
-    "icon": "🎯",
+    "icon": "target",
     "children": [
      "Chủ tịch, thành viên Ủy ban nhân dân",
      "Chánh án, Viện trưởng",
@@ -39,14 +39,14 @@
    },
    {
     "label": "Nghĩa vụ",
-    "icon": "🗣️",
+    "icon": "announce",
     "children": [
      "Trả lời trước Hội đồng nhân dân"
     ]
    },
    {
     "label": "Quyền đi kèm",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Kiến nghị với cơ quan, tổ chức địa phương"
     ]

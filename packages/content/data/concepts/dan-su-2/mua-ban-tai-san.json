@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Nghĩa vụ",
-    "icon": "🔄",
+    "icon": "cycle",
     "children": [
      "Bên bán chuyển quyền sở hữu",
      "Bên mua trả tiền"
@@ -36,14 +36,14 @@
    },
    {
     "label": "Tính chất",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Song vụ, có đền bù"
     ]
    },
    {
     "label": "Tài sản",
-    "icon": "🔑",
+    "icon": "key",
     "children": [
      "Thuộc sở hữu người bán",
      "Hoặc người có quyền bán"

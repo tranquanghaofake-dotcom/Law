@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Đặc điểm",
-    "icon": "📏",
+    "icon": "measure",
     "children": [
      "Quy tắc xử sự chung",
      "Bắt buộc chung",
@@ -41,7 +41,7 @@
    },
    {
     "label": "Phân loại",
-    "icon": "🗂️",
+    "icon": "list",
     "children": [
      "Bắt buộc",
      "Cấm đoán",

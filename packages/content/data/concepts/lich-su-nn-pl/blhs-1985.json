@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Mốc",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "Thông qua 27 tháng 6 năm 1985",
      "Hiệu lực 1 tháng 1 năm 1986"
@@ -39,7 +39,7 @@
    },
    {
     "label": "Nguyên tắc",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Chỉ phạm tội luật quy định",
      "Tòa án quyết định hình phạt"
@@ -47,7 +47,7 @@
    },
    {
     "label": "Ý nghĩa",
-    "icon": "📚",
+    "icon": "book",
     "children": [
      "Pháp điển hóa sắc lệnh rời rạc"
     ]

@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Dịch vụ",
-    "icon": "💳",
+    "icon": "money",
     "children": [
      "Cho vay mua chứng khoán (margin)",
      "Ứng trước tiền bán",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Điều kiện",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "Có nghiệp vụ môi giới",
      "Ủy ban chấp thuận"

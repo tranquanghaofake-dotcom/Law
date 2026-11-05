@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Điều kiện",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "Xong nghĩa vụ thuế, tài chính",
      "Sau khi chia vẫn trả đủ nợ đến hạn"
@@ -38,14 +38,14 @@
    },
    {
     "label": "Cách chia",
-    "icon": "➗",
+    "icon": "calc",
     "children": [
      "Theo tỷ lệ phần vốn góp"
     ]
    },
    {
     "label": "Vi phạm",
-    "icon": "↩️",
+    "icon": "cycle",
     "children": [
      "Thành viên hoàn trả số đã nhận"
     ]

@@ -31,14 +31,14 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "🔬",
+    "icon": "search",
     "children": [
      "Dùng chuyên môn đánh giá, kết luận"
     ]
    },
    {
     "label": "Lĩnh vực",
-    "icon": "📚",
+    "icon": "book",
     "children": [
      "Quyền tác giả, liên quan",
      "Sở hữu công nghiệp",
@@ -47,7 +47,7 @@
    },
    {
     "label": "Vai trò",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Chứng cứ khi tranh chấp"
     ]

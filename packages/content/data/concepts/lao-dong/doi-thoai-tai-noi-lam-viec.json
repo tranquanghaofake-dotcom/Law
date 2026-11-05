@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "💬",
+    "icon": "announce",
     "children": [
      "Chia sẻ thông tin",
      "Tham khảo, thảo luận"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Bắt buộc khi",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "Định kỳ ít nhất mỗi năm một lần",
      "Một bên yêu cầu",
@@ -46,7 +46,7 @@
    },
    {
     "label": "Khác thương lượng",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Không nhất thiết thỏa thuận"
     ]

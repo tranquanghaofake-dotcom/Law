@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Từ đủ 16",
-    "icon": "🧑",
+    "icon": "person",
     "children": [
      "Mọi tội phạm",
      "Trừ luật quy định khác"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Từ đủ 14 đến dưới 16",
-    "icon": "🧒",
+    "icon": "child",
     "children": [
      "Rất nghiêm trọng, đặc biệt nghiêm trọng",
      "Chỉ điều luật liệt kê"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Dưới 14",
-    "icon": "👶",
+    "icon": "child",
     "children": [
      "Không chịu"
     ]

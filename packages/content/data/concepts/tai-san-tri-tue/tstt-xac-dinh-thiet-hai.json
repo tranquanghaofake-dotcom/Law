@@ -32,7 +32,7 @@
   "tree": [
    {
     "label": "Vật chất",
-    "icon": "💸",
+    "icon": "money",
     "children": [
      "Tổn thất tài sản",
      "Giảm thu nhập, lợi nhuận",
@@ -42,7 +42,7 @@
    },
    {
     "label": "Tinh thần",
-    "icon": "💔",
+    "icon": "heart",
     "children": [
      "Danh dự, nhân phẩm",
      "Chỉ tác giả, người biểu diễn"

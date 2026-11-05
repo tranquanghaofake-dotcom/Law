@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "🤝",
+    "icon": "handshake",
     "children": [
      "Nhân danh người được đại diện",
      "Vì lợi ích của họ"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Hai loại",
-    "icon": "2️⃣",
+    "icon": "n2",
     "children": [
      "Theo pháp luật",
      "Theo ủy quyền"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Giới hạn",
-    "icon": "🚧",
+    "icon": "ban",
     "children": [
      "Trong phạm vi đại diện",
      "Không giao dịch với chính mình"

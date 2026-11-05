@@ -28,14 +28,14 @@
   "tree": [
    {
     "label": "Đặc trưng",
-    "icon": "🔒",
+    "icon": "lock",
     "children": [
      "Không mua lại theo yêu cầu"
     ]
    },
    {
     "label": "Thoát vốn",
-    "icon": "🚪",
+    "icon": "door",
     "children": [
      "Bán trên sàn",
      "Phải niêm yết"
@@ -43,14 +43,14 @@
    },
    {
     "label": "Đầu tư",
-    "icon": "🏠",
+    "icon": "home",
     "children": [
      "Tối đa 10% vào bất động sản"
     ]
    },
    {
     "label": "Tăng vốn",
-    "icon": "📈",
+    "icon": "chart",
     "children": [
      "Cần Ủy ban chấp thuận"
     ]

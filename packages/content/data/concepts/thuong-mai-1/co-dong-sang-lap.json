@@ -29,21 +29,21 @@
   "tree": [
    {
     "label": "Số lượng",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Ít nhất 03 (công ty mới)"
     ]
    },
    {
     "label": "Mua",
-    "icon": "🛒",
+    "icon": "cart",
     "children": [
      "Ít nhất 20% cổ phần phổ thông"
     ]
    },
    {
     "label": "Hạn chế 03 năm",
-    "icon": "🔒",
+    "icon": "lock",
     "children": [
      "Giữa sáng lập: tự do",
      "Cho người ngoài: Đại hội đồng cổ đông chấp thuận"

@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Tiêu chí",
-    "icon": "🌟",
+    "icon": "star",
     "children": [
      "Công chúng liên quan biết rộng rãi",
      "Trên lãnh thổ Việt Nam"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Xác lập",
-    "icon": "📢",
+    "icon": "announce",
     "children": [
      "Do sử dụng",
      "Không cần đăng ký"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Bảo hộ mạnh hơn",
-    "icon": "🛡️",
+    "icon": "shield",
     "children": [
      "Cả hàng hóa không cùng loại"
     ]

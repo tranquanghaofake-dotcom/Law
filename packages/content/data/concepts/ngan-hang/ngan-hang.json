@@ -30,14 +30,14 @@
   "tree": [
    {
     "label": "Đặc điểm",
-    "icon": "🏦",
+    "icon": "bank",
     "children": [
      "Làm được tất cả hoạt động ngân hàng"
     ]
    },
    {
     "label": "Ba loại",
-    "icon": "3️⃣",
+    "icon": "n3",
     "children": [
      "Thương mại: vì lợi nhuận",
      "Chính sách: không vì lợi nhuận",

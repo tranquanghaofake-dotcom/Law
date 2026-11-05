@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Nguyên tắc",
-    "icon": "🤝",
+    "icon": "handshake",
     "children": [
      "Tự nguyện, mở rộng kết nạp",
      "Dân chủ, bình đẳng",
@@ -38,7 +38,7 @@
    },
    {
     "label": "Khác công ty",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Biểu quyết không theo vốn",
      "Chia theo mức độ sử dụng dịch vụ"

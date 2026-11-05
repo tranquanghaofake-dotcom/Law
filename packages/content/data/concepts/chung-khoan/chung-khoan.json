@@ -29,14 +29,14 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "💎",
+    "icon": "money",
     "children": [
      "Tài sản"
     ]
    },
    {
     "label": "Loại",
-    "icon": "🗂️",
+    "icon": "list",
     "children": [
      "Cổ phiếu, trái phiếu, chứng chỉ quỹ",
      "Chứng quyền, quyền mua cổ phần",
@@ -45,7 +45,7 @@
    },
    {
     "label": "Mở",
-    "icon": "➕",
+    "icon": "calc",
     "children": [
      "Chính phủ quy định loại khác"
     ]

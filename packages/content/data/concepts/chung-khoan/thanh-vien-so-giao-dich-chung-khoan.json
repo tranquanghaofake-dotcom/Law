@@ -29,14 +29,14 @@
   "tree": [
    {
     "label": "Thành viên giao dịch",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Công ty chứng khoán"
     ]
    },
    {
     "label": "Thành viên đặc biệt",
-    "icon": "🏦",
+    "icon": "bank",
     "children": [
      "Ngân hàng thương mại…",
      "Thường mảng trái phiếu Chính phủ"
@@ -44,7 +44,7 @@
    },
    {
     "label": "Nhà đầu tư",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Đặt lệnh qua thành viên"
     ]

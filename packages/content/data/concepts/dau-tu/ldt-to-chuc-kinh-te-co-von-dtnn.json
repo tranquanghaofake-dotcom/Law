@@ -30,14 +30,14 @@
   "tree": [
    {
     "label": "Định nghĩa",
-    "icon": "🧩",
+    "icon": "puzzle",
     "children": [
      "Có thành viên hoặc cổ đông nước ngoài"
     ]
    },
    {
     "label": "Trên 50% vốn",
-    "icon": "➗",
+    "icon": "calc",
     "children": [
      "Thủ tục như nhà đầu tư nước ngoài",
      "Khoản 1 Điều 20"

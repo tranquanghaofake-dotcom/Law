@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Tôn trọng",
-    "icon": "🤝",
+    "icon": "handshake",
     "children": [
      "Quyền sở hữu",
      "Tự do giao dịch"
@@ -36,21 +36,21 @@
    },
    {
     "label": "Thị trường",
-    "icon": "👁️",
+    "icon": "eye",
     "children": [
      "Công bằng, công khai, minh bạch"
     ]
    },
    {
     "label": "Bảo vệ",
-    "icon": "🛡️",
+    "icon": "shield",
     "children": [
      "Quyền lợi nhà đầu tư"
     ]
    },
    {
     "label": "Rủi ro",
-    "icon": "🎲",
+    "icon": "question",
     "children": [
      "Tự chịu trách nhiệm"
     ]

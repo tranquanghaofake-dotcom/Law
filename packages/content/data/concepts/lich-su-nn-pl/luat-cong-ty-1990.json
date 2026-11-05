@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Mốc",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "21/12/1990",
      "Hiệu lực 15/4/1991"
@@ -39,7 +39,7 @@
    },
    {
     "label": "Điểm cốt lõi",
-    "icon": "🛡️",
+    "icon": "shield",
     "children": [
      "Trách nhiệm hữu hạn",
      "Tính sinh lợi hợp pháp"
@@ -47,14 +47,14 @@
    },
    {
     "label": "Hạn chế",
-    "icon": "🔒",
+    "icon": "lock",
     "children": [
      "Phải xin phép thành lập"
     ]
    },
    {
     "label": "Ý nghĩa",
-    "icon": "🌱",
+    "icon": "plant",
     "children": [
      "Thời Đổi mới, nhiều thành phần"
     ]

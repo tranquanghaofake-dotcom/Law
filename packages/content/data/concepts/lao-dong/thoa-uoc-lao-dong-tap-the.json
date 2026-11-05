@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Hình thành",
-    "icon": "🤝",
+    "icon": "handshake",
     "children": [
      "Qua thương lượng tập thể",
      "Bằng văn bản"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Loại",
-    "icon": "🗂️",
+    "icon": "list",
     "children": [
      "Doanh nghiệp",
      "Ngành",
@@ -47,14 +47,14 @@
    },
    {
     "label": "Hiệu lực",
-    "icon": "📏",
+    "icon": "measure",
     "children": [
      "Hợp đồng lao động không thấp hơn"
     ]
    },
    {
     "label": "Nội dung",
-    "icon": "👍",
+    "icon": "check",
     "children": [
      "Khuyến khích có lợi hơn luật"
     ]

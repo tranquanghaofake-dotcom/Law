@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Chia đất",
-    "icon": "🗺️",
+    "icon": "map",
     "children": [
      "9 quận",
      "Ba quận đất Việt: Giao Chỉ, Cửu Chân, Nhật Nam"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Quan lại",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Thứ sử: châu",
      "Thái thú: quận"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Mục đích",
-    "icon": "💰",
+    "icon": "money",
     "children": [
      "Cai trị, thu cống phú"
     ]

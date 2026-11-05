@@ -29,28 +29,28 @@
   "tree": [
    {
     "label": "Chủ",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Một cá nhân"
     ]
    },
    {
     "label": "Trách nhiệm",
-    "icon": "♾️",
+    "icon": "infinity",
     "children": [
      "Vô hạn, toàn bộ tài sản"
     ]
    },
    {
     "label": "Tư cách",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Không có pháp nhân"
     ]
    },
    {
     "label": "Hạn chế",
-    "icon": "⛔",
+    "icon": "ban",
     "children": [
      "Không phát hành chứng khoán",
      "Mỗi người chỉ một doanh nghiệp tư nhân",

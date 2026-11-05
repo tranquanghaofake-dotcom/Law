@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Thời hạn",
-    "icon": "⏰",
+    "icon": "clock",
     "children": [
      "Bản án: 15 ngày từ tuyên án",
      "Quyết định: 07 ngày",
@@ -37,7 +37,7 @@
    },
    {
     "label": "Phạm vi",
-    "icon": "🎯",
+    "icon": "target",
     "children": [
      "Phần bị kháng cáo, kháng nghị",
      "Phần liên quan"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Từ 01/7/2025",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Tòa án cấp tỉnh phúc thẩm"
     ]

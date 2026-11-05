@@ -29,11 +29,11 @@
   "tree": [
    {
     "label": "Quốc phòng, an ninh",
-    "icon": "🛡️"
+    "icon": "shield"
    },
    {
     "label": "Phát triển kinh tế - xã hội",
-    "icon": "🛣️",
+    "icon": "map",
     "children": [
      "Lợi ích quốc gia, công cộng",
      "Thật cần thiết, liệt kê cụ thể"
@@ -41,14 +41,14 @@
    },
    {
     "label": "Vi phạm",
-    "icon": "⚠️",
+    "icon": "warn",
     "children": [
      "Pháp luật đất đai"
     ]
    },
    {
     "label": "Chấm dứt",
-    "icon": "🔚",
+    "icon": "end",
     "children": [
      "Theo pháp luật",
      "Tự nguyện trả lại",

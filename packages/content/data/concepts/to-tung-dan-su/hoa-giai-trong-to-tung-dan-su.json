@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Vị trí",
-    "icon": "📍",
+    "icon": "pin",
     "children": [
      "Nguyên tắc",
      "Thủ tục bắt buộc khi chuẩn bị xét xử"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Nguyên tắc",
-    "icon": "🕊️",
+    "icon": "unlock",
     "children": [
      "Tự nguyện",
      "Không vi phạm điều cấm"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Ngoại lệ",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Vụ án không được hòa giải",
      "Không tiến hành được",
@@ -54,7 +54,7 @@
    },
    {
     "label": "Hòa giải thành",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "Quyết định công nhận sau 07 ngày"
     ]

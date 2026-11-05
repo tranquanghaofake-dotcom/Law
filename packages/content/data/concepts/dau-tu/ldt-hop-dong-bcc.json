@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "🤝",
+    "icon": "handshake",
     "children": [
      "Ký giữa các nhà đầu tư",
      "Chia lợi nhuận hoặc sản phẩm",
@@ -39,14 +39,14 @@
    },
    {
     "label": "Có bên nước ngoài",
-    "icon": "🌍",
+    "icon": "globe",
     "children": [
      "Cấp Giấy chứng nhận đăng ký đầu tư"
     ]
    },
    {
     "label": "Điều hành",
-    "icon": "🧭",
+    "icon": "arrow",
     "children": [
      "Ban điều phối"
     ]

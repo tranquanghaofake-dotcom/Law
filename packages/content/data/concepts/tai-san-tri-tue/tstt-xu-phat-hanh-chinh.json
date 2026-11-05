@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Hành vi",
-    "icon": "⚠️",
+    "icon": "warn",
     "children": [
      "Xâm phạm gây thiệt hại",
      "Hàng giả mạo",
@@ -40,7 +40,7 @@
    },
    {
     "label": "Cơ quan",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Thanh tra, quản lý thị trường",
      "Hải quan, công an"
@@ -48,7 +48,7 @@
    },
    {
     "label": "Hạn chế",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Không có bồi thường"
     ]

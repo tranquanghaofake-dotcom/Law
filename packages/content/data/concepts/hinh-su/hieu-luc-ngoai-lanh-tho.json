@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Nguyên tắc quốc tịch",
-    "icon": "🛂",
+    "icon": "globe",
     "children": [
      "Công dân, pháp nhân Việt Nam",
      "Người không quốc tịch thường trú"
@@ -37,14 +37,14 @@
    },
    {
     "label": "Nguyên tắc bảo vệ",
-    "icon": "🛡️",
+    "icon": "shield",
     "children": [
      "Người nước ngoài xâm hại lợi ích Việt Nam"
     ]
    },
    {
     "label": "Mức độ",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Có thể bị truy cứu"
     ]

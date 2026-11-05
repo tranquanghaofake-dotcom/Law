@@ -31,14 +31,14 @@
   "tree": [
    {
     "label": "Phạm vi",
-    "icon": "🇻🇳",
+    "icon": "flag",
     "children": [
      "Toàn lãnh thổ Việt Nam"
     ]
    },
    {
     "label": "Tính thời hạn",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "Hiệu lực từ ngày cấp",
      "Đếm từ ngày nộp đơn"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Thời hạn",
-    "icon": "⏳",
+    "icon": "clock",
     "children": [
      "Sáng chế: 20 năm",
      "Giải pháp hữu ích: 10 năm",
@@ -56,7 +56,7 @@
    },
    {
     "label": "Chỉ dẫn địa lý",
-    "icon": "♾️",
+    "icon": "infinity",
     "children": [
      "Vô thời hạn"
     ]

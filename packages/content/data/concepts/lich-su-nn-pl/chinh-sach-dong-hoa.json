@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Nhân vật",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Tích Quang (Giao Chỉ)",
      "Nhâm Diên (Cửu Chân)"
@@ -38,14 +38,14 @@
    },
    {
     "label": "Sử cũ",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Ca ngợi dạy lễ nghĩa"
     ]
    },
    {
     "label": "Giáo trình hiện đại",
-    "icon": "🔍",
+    "icon": "search",
     "children": [
      "Chính sách đồng hóa"
     ]

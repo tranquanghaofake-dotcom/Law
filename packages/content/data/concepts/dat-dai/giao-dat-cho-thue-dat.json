@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Giao không thu tiền",
-    "icon": "🎁",
+    "icon": "gift",
     "children": [
      "Nông dân trong hạn mức",
      "Trụ sở, quốc phòng, công cộng"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Giao có thu tiền",
-    "icon": "💰",
+    "icon": "money",
     "children": [
      "Đất ở cho cá nhân",
      "Dự án nhà ở"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Cho thuê",
-    "icon": "🔑",
+    "icon": "key",
     "children": [
      "Trường hợp còn lại",
      "Trả một lần hoặc hằng năm"

@@ -32,14 +32,14 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Tổ chức kinh tế có tư cách pháp nhân"
     ]
    },
    {
     "label": "Bốn loại",
-    "icon": "4️⃣",
+    "icon": "n4",
     "children": [
      "Ngân hàng",
      "Phi ngân hàng",

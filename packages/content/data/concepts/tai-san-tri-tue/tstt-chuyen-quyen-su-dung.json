@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "🔓",
+    "icon": "unlock",
     "children": [
      "Cho phép sử dụng",
      "Chủ sở hữu vẫn giữ quyền"
@@ -39,7 +39,7 @@
    },
    {
     "label": "Phạm vi",
-    "icon": "📏",
+    "icon": "measure",
     "children": [
      "Không gian, thời hạn",
      "Đối tượng thỏa thuận"
@@ -47,7 +47,7 @@
    },
    {
     "label": "Hình thức",
-    "icon": "📝",
+    "icon": "pen",
     "children": [
      "Văn bản"
     ]

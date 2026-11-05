@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Cư trú",
-    "icon": "🏠",
+    "icon": "home",
     "children": [
      "Có mặt từ 183 ngày",
      "Hoặc có nơi ở thường xuyên",
@@ -39,14 +39,14 @@
    },
    {
     "label": "Không cư trú",
-    "icon": "✈️",
+    "icon": "globe",
     "children": [
      "Chỉ thu nhập trong Việt Nam"
     ]
    },
    {
     "label": "Tiền lương",
-    "icon": "💵",
+    "icon": "money",
     "children": [
      "Lũy tiến 5 bậc",
      "Sau giảm trừ gia cảnh"

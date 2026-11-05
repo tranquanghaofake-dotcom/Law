@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Quản lý",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Thống nhất, tập trung dân chủ",
      "Công khai, minh bạch"
@@ -39,14 +39,14 @@
    },
    {
     "label": "Toàn diện",
-    "icon": "📋",
+    "icon": "list",
     "children": [
      "Mọi khoản thu, chi vào dự toán"
     ]
    },
    {
     "label": "Cân đối",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Thu thuế, phí lớn hơn chi thường xuyên",
      "Vay bù bội chi chỉ cho đầu tư"
@@ -54,7 +54,7 @@
    },
    {
     "label": "Chi",
-    "icon": "💳",
+    "icon": "money",
     "children": [
      "Có dự toán",
      "Đúng chế độ, định mức"

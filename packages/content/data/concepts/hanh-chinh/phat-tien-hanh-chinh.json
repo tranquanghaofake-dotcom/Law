@@ -28,14 +28,14 @@
   "tree": [
    {
     "label": "Cá nhân",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "50.000 đồng đến 1 tỷ"
     ]
    },
    {
     "label": "Tổ chức",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "100.000 đồng đến 2 tỷ",
      "Gấp 2 lần cá nhân"
@@ -43,7 +43,7 @@
    },
    {
     "label": "Nội thành",
-    "icon": "🏙️",
+    "icon": "state",
     "children": [
      "Có thể cao hơn, tối đa 02 lần"
     ]

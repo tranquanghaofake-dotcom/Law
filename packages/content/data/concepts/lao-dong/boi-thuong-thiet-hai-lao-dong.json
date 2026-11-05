@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Thiệt hại nhẹ",
-    "icon": "🔧",
+    "icon": "tool",
     "children": [
      "Do sơ suất, không nghiêm trọng",
      "Không quá 10 tháng lương tối thiểu vùng",
@@ -38,7 +38,7 @@
    },
    {
     "label": "Cách trả",
-    "icon": "💳",
+    "icon": "money",
     "children": [
      "Khấu trừ hằng tháng",
      "Không quá 30% lương thực trả"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Căn cứ",
-    "icon": "📚",
+    "icon": "book",
     "children": [
      "Pháp luật hoặc nội quy"
     ]

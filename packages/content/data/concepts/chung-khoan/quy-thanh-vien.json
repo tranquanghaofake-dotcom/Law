@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Thành viên",
-    "icon": "👔",
+    "icon": "person",
     "children": [
      "02 đến 99",
      "Chỉ nhà đầu tư chuyên nghiệp"
@@ -38,21 +38,21 @@
    },
    {
     "label": "Vốn",
-    "icon": "💰",
+    "icon": "money",
     "children": [
      "Tối thiểu 50 tỷ"
     ]
    },
    {
     "label": "Thành lập",
-    "icon": "📝",
+    "icon": "pen",
     "children": [
      "Hợp đồng góp vốn"
     ]
    },
    {
     "label": "Quản lý",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "01 công ty quản lý quỹ",
      "01 ngân hàng lưu ký"

@@ -28,14 +28,14 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "🇻🇳",
+    "icon": "flag",
     "children": [
      "Của Nhân dân, do Nhân dân, vì Nhân dân"
     ]
    },
    {
     "label": "Pháp quyền",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Hoạt động trên cơ sở Hiến pháp và luật",
      "Hiến pháp tối thượng",

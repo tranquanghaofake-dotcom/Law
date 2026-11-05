@@ -31,14 +31,14 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "📢",
+    "icon": "announce",
     "children": [
      "Chào bán chứng chỉ quỹ ra công chúng"
     ]
    },
    {
     "label": "Điều kiện",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "Ít nhất 100 nhà đầu tư",
      "Ít nhất 50 tỷ"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Huy động",
-    "icon": "⏳",
+    "icon": "clock",
     "children": [
      "Trong 90 ngày",
      "Tiền bị phong tỏa"
@@ -54,7 +54,7 @@
    },
    {
     "label": "Loại",
-    "icon": "🔀",
+    "icon": "compare",
     "children": [
      "Quỹ mở",
      "Quỹ đóng"

@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Dấu hiệu",
-    "icon": "🗺️",
+    "icon": "map",
     "children": [
      "Ranh giới xác định",
      "Nhiều khu chức năng"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Mục tiêu",
-    "icon": "🎯",
+    "icon": "target",
     "children": [
      "Thu hút đầu tư",
      "Phát triển kinh tế - xã hội",
@@ -47,7 +47,7 @@
    },
    {
     "label": "Phân biệt",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Khu công nghiệp",
      "Khu chế xuất"

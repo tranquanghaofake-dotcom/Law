@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Phương thức (một trong)",
-    "icon": "📢",
+    "icon": "announce",
     "children": [
      "Qua phương tiện thông tin đại chúng",
      "Từ 100 nhà đầu tư",
@@ -37,14 +37,14 @@
    },
    {
     "label": "Không đếm",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Nhà đầu tư chuyên nghiệp"
     ]
    },
    {
     "label": "Thủ tục",
-    "icon": "📋",
+    "icon": "list",
     "children": [
      "Đăng ký với Ủy ban Chứng khoán"
     ]

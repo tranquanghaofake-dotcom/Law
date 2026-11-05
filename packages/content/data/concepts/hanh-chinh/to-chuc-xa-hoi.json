@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Nguyên tắc",
-    "icon": "🤝",
+    "icon": "handshake",
     "children": [
      "Tự nguyện, tự quản",
      "Tự trang trải",
@@ -37,7 +37,7 @@
    },
    {
     "label": "Loại",
-    "icon": "🗂️",
+    "icon": "list",
     "children": [
      "Chính trị – xã hội",
      "Xã hội – nghề nghiệp",

@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Hình thức",
-    "icon": "🧽",
+    "icon": "trash",
     "children": [
      "Đương nhiên",
      "Theo quyết định của Tòa án",
@@ -38,7 +38,7 @@
    },
    {
     "label": "Đương nhiên khi",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "Xong hình phạt chính, bổ sung",
      "Không phạm tội mới trong thời hạn"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Thời hạn",
-    "icon": "⏳",
+    "icon": "clock",
     "children": [
      "01, 02, 03, 05 năm"
     ]

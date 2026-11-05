@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Sáu khoa",
-    "icon": "👁️",
+    "icon": "eye",
     "children": [
      "Mỗi bộ một khoa",
      "Bác bỏ việc sai",
@@ -39,14 +39,14 @@
    },
    {
     "label": "Ngự sử đài",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Hặc tâu quan làm bậy"
     ]
    },
    {
     "label": "Mục đích",
-    "icon": "🎯",
+    "icon": "target",
     "children": [
      "Kiểm chế lẫn nhau",
      "Uy quyền tập trung ở vua"

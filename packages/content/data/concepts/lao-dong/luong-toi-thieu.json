@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Áp dụng",
-    "icon": "🧹",
+    "icon": "trash",
     "children": [
      "Công việc giản đơn nhất",
      "Điều kiện bình thường"
@@ -37,14 +37,14 @@
    },
    {
     "label": "Mục tiêu",
-    "icon": "🏠",
+    "icon": "home",
     "children": [
      "Mức sống tối thiểu của người lao động và gia đình"
     ]
    },
    {
     "label": "Cách xác lập",
-    "icon": "🗺️",
+    "icon": "map",
     "children": [
      "Theo vùng",
      "Theo tháng, theo giờ"
@@ -52,7 +52,7 @@
    },
    {
     "label": "Ai quyết định",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Chính phủ, theo Hội đồng tiền lương"
     ]

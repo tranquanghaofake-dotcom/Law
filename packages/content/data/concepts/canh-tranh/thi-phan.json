@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Cách tính",
-    "icon": "🧮",
+    "icon": "calc",
     "children": [
      "Doanh thu bán ra",
      "Doanh số mua vào",
@@ -39,14 +39,14 @@
    },
    {
     "label": "So với",
-    "icon": "📊",
+    "icon": "chart",
     "children": [
      "Tổng của thị trường liên quan"
     ]
    },
    {
     "label": "Thị phần kết hợp",
-    "icon": "➕",
+    "icon": "calc",
     "children": [
      "Tổng thị phần các doanh nghiệp tham gia"
     ]

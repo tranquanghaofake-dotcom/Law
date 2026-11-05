@@ -32,7 +32,7 @@
   "tree": [
    {
     "label": "Quyền tác giả",
-    "icon": "✍️",
+    "icon": "pen",
     "children": [
      "Tác phẩm",
      "Quyền liên quan"
@@ -40,7 +40,7 @@
    },
    {
     "label": "Sở hữu công nghiệp",
-    "icon": "🏭",
+    "icon": "company",
     "children": [
      "Sáng chế, kiểu dáng, mạch tích hợp",
      "Bí mật kinh doanh",
@@ -50,7 +50,7 @@
    },
    {
     "label": "Giống cây trồng",
-    "icon": "🌱"
+    "icon": "plant"
    }
   ],
   "case": {

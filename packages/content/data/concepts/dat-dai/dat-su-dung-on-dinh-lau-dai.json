@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Ổn định lâu dài",
-    "icon": "♾️",
+    "icon": "infinity",
     "children": [
      "Đất ở",
      "Quốc phòng, an ninh",
@@ -37,7 +37,7 @@
    },
    {
     "label": "Có thời hạn",
-    "icon": "⏳",
+    "icon": "clock",
     "children": [
      "Nông nghiệp trong hạn mức: 50 năm",
      "Hết hạn tự động tiếp tục"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Dự án",
-    "icon": "🏗️",
+    "icon": "company",
     "children": [
      "Theo thời hạn dự án"
     ]

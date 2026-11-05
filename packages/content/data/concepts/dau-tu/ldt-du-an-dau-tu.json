@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Dấu hiệu",
-    "icon": "📌",
+    "icon": "pin",
     "children": [
      "Đề xuất bỏ vốn",
      "Trung hạn hoặc dài hạn",
@@ -41,7 +41,7 @@
    },
    {
     "label": "Thủ tục gắn với",
-    "icon": "🔗",
+    "icon": "link",
     "children": [
      "Chấp thuận chủ trương",
      "Đăng ký đầu tư",

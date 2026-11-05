@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Căn cứ",
-    "icon": "📚",
+    "icon": "book",
     "children": [
      "Theo Bộ luật Dân sự",
      "Luật chuyên ngành"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Điều kiện áp dụng",
-    "icon": "✋",
+    "icon": "ban",
     "children": [
      "Có yêu cầu của đương sự",
      "Trước khi sơ thẩm ra bản án"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Người hưởng lợi",
-    "icon": "🙅",
+    "icon": "ban",
     "children": [
      "Được từ chối áp dụng",
      "Trừ để trốn nghĩa vụ"
@@ -53,7 +53,7 @@
    },
    {
     "label": "Hết thời hiệu",
-    "icon": "⛔",
+    "icon": "ban",
     "children": [
      "Đình chỉ giải quyết"
     ]

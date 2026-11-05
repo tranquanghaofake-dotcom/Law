@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Cấp tỉnh",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Tỉnh",
      "Thành phố trực thuộc trung ương"
@@ -39,14 +39,14 @@
    },
    {
     "label": "Dưới tỉnh",
-    "icon": "🏘️",
+    "icon": "village",
     "children": [
      "Do luật định: xã, phường, đặc khu"
     ]
    },
    {
     "label": "Mốc thay đổi",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "Cấp huyện kết thúc từ 01/7/2025"
     ]

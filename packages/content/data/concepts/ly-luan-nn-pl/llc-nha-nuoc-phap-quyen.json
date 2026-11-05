@@ -32,14 +32,14 @@
   "tree": [
    {
     "label": "Hiến định",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Của Nhân dân, do Nhân dân, vì Nhân dân"
     ]
    },
    {
     "label": "Dấu hiệu (lý luận)",
-    "icon": "🔎",
+    "icon": "search",
     "children": [
      "Nhân dân là chủ thể quyền lực",
      "Pháp luật tối cao",

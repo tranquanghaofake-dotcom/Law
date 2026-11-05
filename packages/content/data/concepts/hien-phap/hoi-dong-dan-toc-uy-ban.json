@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Gồm",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Hội đồng dân tộc",
      "Các Ủy ban",
@@ -38,7 +38,7 @@
    },
    {
     "label": "Nhiệm vụ",
-    "icon": "🔍",
+    "icon": "search",
     "children": [
      "Thẩm tra dự án luật",
      "Giám sát theo lĩnh vực",
@@ -47,7 +47,7 @@
    },
    {
     "label": "Người đứng đầu",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Do Quốc hội bầu"
     ]

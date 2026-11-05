@@ -29,14 +29,14 @@
   "tree": [
    {
     "label": "Nhiệm kỳ",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "Theo nhiệm kỳ Quốc hội"
     ]
    },
    {
     "label": "Khi hết nhiệm kỳ",
-    "icon": "⏳",
+    "icon": "clock",
     "children": [
      "Tiếp tục làm nhiệm vụ",
      "Đến khi Quốc hội khóa mới thành lập Chính phủ"
@@ -44,7 +44,7 @@
    },
    {
     "label": "Mục đích",
-    "icon": "🎯",
+    "icon": "target",
     "children": [
      "Tránh khoảng trống hành pháp"
     ]

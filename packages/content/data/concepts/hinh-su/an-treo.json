@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Điều kiện",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "Phạt tù không quá 03 năm",
      "Nhân thân tốt, có giảm nhẹ",
@@ -38,14 +38,14 @@
    },
    {
     "label": "Thử thách",
-    "icon": "⏳",
+    "icon": "clock",
     "children": [
      "01 đến 05 năm"
     ]
    },
    {
     "label": "Vi phạm",
-    "icon": "⚠️",
+    "icon": "warn",
     "children": [
      "Cố ý vi phạm nghĩa vụ 02 lần",
      "Có thể buộc chấp hành tù"

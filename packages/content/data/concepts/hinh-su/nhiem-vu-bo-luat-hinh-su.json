@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Bảo vệ",
-    "icon": "🛡️",
+    "icon": "shield",
     "children": [
      "Chủ quyền, an ninh",
      "Quyền con người, quyền công dân"
@@ -37,21 +37,21 @@
    },
    {
     "label": "Giáo dục",
-    "icon": "📚",
+    "icon": "book",
     "children": [
      "Ý thức tuân theo pháp luật"
     ]
    },
    {
     "label": "Phòng ngừa",
-    "icon": "🚧",
+    "icon": "ban",
     "children": [
      "Đấu tranh chống tội phạm"
     ]
    },
    {
     "label": "Phương pháp",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Quyền uy"
     ]

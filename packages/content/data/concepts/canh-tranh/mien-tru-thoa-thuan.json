@@ -29,14 +29,14 @@
   "tree": [
    {
     "label": "Bắt buộc",
-    "icon": "🛒",
+    "icon": "cart",
     "children": [
      "Có lợi cho người tiêu dùng"
     ]
    },
    {
     "label": "Cộng một trong",
-    "icon": "➕",
+    "icon": "calc",
     "children": [
      "Tiến bộ kỹ thuật, chất lượng",
      "Sức cạnh tranh doanh nghiệp Việt Nam",
@@ -45,7 +45,7 @@
    },
    {
     "label": "Không được miễn",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Thông đồng đấu thầu",
      "Ngăn cản gia nhập, loại bỏ"

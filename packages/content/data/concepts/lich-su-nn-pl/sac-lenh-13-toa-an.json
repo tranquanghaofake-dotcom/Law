@@ -31,14 +31,14 @@
   "tree": [
    {
     "label": "Mốc",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "24 tháng 1 năm 1946"
     ]
    },
    {
     "label": "Hệ thống",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Ban tư pháp xã",
      "Tòa sơ cấp",
@@ -48,14 +48,14 @@
    },
    {
     "label": "Điểm mới",
-    "icon": "💡",
+    "icon": "idea",
     "children": [
      "Phụ thẩm nhân dân"
     ]
    },
    {
     "label": "Bảo đảm",
-    "icon": "🛡️",
+    "icon": "shield",
     "children": [
      "Không bắt trừ có trát hoặc quả tang"
     ]

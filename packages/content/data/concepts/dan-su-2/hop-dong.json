@@ -29,21 +29,21 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "🤝",
+    "icon": "handshake",
     "children": [
      "Thỏa thuận giữa các bên"
     ]
    },
    {
     "label": "Hệ quả",
-    "icon": "🔄",
+    "icon": "cycle",
     "children": [
      "Xác lập, thay đổi, chấm dứt quyền"
     ]
    },
    {
     "label": "Phân loại",
-    "icon": "🗂️",
+    "icon": "list",
     "children": [
      "Song vụ – đơn vụ",
      "Chính – phụ",

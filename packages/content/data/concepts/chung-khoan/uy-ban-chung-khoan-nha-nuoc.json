@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Vị trí",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Thuộc Bộ Tài chính",
      "Tham mưu Bộ trưởng"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Quyền",
-    "icon": "🔑",
+    "icon": "key",
     "children": [
      "Cấp, thu hồi giấy phép",
      "Giám sát Sở giao dịch, Tổng công ty",

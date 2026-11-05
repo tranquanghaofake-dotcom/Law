@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Quân chủ",
-    "icon": "👑",
+    "icon": "crown",
     "children": [
      "Tuyệt đối",
      "Hạn chế, lập hiến"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Cộng hòa",
-    "icon": "🗳️",
+    "icon": "vote",
     "children": [
      "Quý tộc",
      "Dân chủ"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Cộng hòa dân chủ hiện đại",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Tổng thống",
      "Đại nghị",

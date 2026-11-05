@@ -29,21 +29,21 @@
   "tree": [
    {
     "label": "Giám sát",
-    "icon": "👁️",
+    "icon": "eye",
     "children": [
      "An ninh, an toàn thị trường"
     ]
    },
    {
     "label": "Xử lý sự cố",
-    "icon": "🧯",
+    "icon": "shield",
     "children": [
      "Ứng phó, khắc phục"
     ]
    },
    {
     "label": "Tạm ngừng",
-    "icon": "⏸️",
+    "icon": "pause",
     "children": [
      "Giao dịch một mã",
      "Sở giao dịch, Tổng công ty lưu ký"
@@ -51,7 +51,7 @@
    },
    {
     "label": "Chế tài",
-    "icon": "⛔",
+    "icon": "ban",
     "children": [
      "Cấm đảm nhiệm chức vụ",
      "Phong tỏa tài khoản"

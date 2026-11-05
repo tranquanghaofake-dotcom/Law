@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Đối tượng",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Công dân cư trú ở nước ngoài",
      "Người đã nhập quốc tịch Việt Nam"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Hành vi",
-    "icon": "⚠️",
+    "icon": "warn",
     "children": [
      "Phương hại nghiêm trọng độc lập dân tộc",
      "Hại xây dựng, bảo vệ Tổ quốc",
@@ -47,7 +47,7 @@
    },
    {
     "label": "Phân biệt",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Khác thôi quốc tịch tự nguyện"
     ]

@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Nguyên tắc",
-    "icon": "📋",
+    "icon": "list",
     "children": [
      "Ai có quyền bầu cử đều được ghi tên",
      "Được phát thẻ cử tri"
@@ -39,7 +39,7 @@
    },
    {
     "label": "Ở đâu",
-    "icon": "📍",
+    "icon": "pin",
     "children": [
      "Một danh sách",
      "Nơi thường trú hoặc tạm trú"
@@ -47,7 +47,7 @@
    },
    {
     "label": "Không ghi tên",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Bị Tòa án tước quyền bầu cử",
      "Đang chấp hành án tù",
@@ -56,7 +56,7 @@
    },
    {
     "label": "Vẫn được bầu",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "Người đang bị tạm giam, tạm giữ"
     ]

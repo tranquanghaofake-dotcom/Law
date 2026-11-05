@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Mốc",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "1471 (Hồng Đức)",
      "Lê Thánh Tông"
@@ -39,14 +39,14 @@
    },
    {
     "label": "Tư tưởng",
-    "icon": "💭",
+    "icon": "idea",
     "children": [
      "Vua thân hành nắm quyền chế tác"
     ]
    },
    {
     "label": "Trung ương",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Năm phủ, sáu bộ",
      "Sáu khoa, sáu tự"
@@ -54,7 +54,7 @@
    },
    {
     "label": "Nguyên tắc",
-    "icon": "🔗",
+    "icon": "link",
     "children": [
      "Ràng buộc lẫn nhau"
     ]

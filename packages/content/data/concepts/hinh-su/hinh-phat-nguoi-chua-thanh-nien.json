@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Hình phạt",
-    "icon": "4️⃣",
+    "icon": "n4",
     "children": [
      "Cảnh cáo",
      "Phạt tiền",
@@ -41,14 +41,14 @@
    },
    {
     "label": "16 đến dưới 18",
-    "icon": "🧑",
+    "icon": "person",
     "children": [
      "Tối đa 15 năm hoặc 3/5"
     ]
    },
    {
     "label": "Nguyên tắc",
-    "icon": "1️⃣",
+    "icon": "n1",
     "children": [
      "Một hình phạt mỗi tội"
     ]

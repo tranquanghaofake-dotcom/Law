@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Nhân vật",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Khúc Hạo",
      "Khúc Thừa Mỹ",
@@ -39,14 +39,14 @@
    },
    {
     "label": "Danh nghĩa",
-    "icon": "🏷️",
+    "icon": "doc",
     "children": [
      "Tiết độ sứ"
     ]
    },
    {
     "label": "Bản chất",
-    "icon": "🧩",
+    "icon": "puzzle",
     "children": [
      "Tự chủ trong khung đô hộ"
     ]

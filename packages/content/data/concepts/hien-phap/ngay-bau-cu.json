@@ -29,21 +29,21 @@
   "tree": [
    {
     "label": "Ngày",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "Chủ nhật"
     ]
    },
    {
     "label": "Công bố",
-    "icon": "📢",
+    "icon": "announce",
     "children": [
      "Chậm nhất 115 ngày trước"
     ]
    },
    {
     "label": "Ai quyết định",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Quốc hội"
     ]

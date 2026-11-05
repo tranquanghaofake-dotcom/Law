@@ -30,28 +30,28 @@
   "tree": [
    {
     "label": "Thi hành",
-    "icon": "⚙️",
+    "icon": "tool",
     "children": [
      "Hiến pháp, pháp luật ở địa phương"
     ]
    },
    {
     "label": "Quyết định",
-    "icon": "🗳️",
+    "icon": "vote",
     "children": [
      "Vấn đề địa phương do luật định"
     ]
    },
    {
     "label": "Chịu",
-    "icon": "👁️",
+    "icon": "eye",
     "children": [
      "Kiểm tra, giám sát của cấp trên"
     ]
    },
    {
     "label": "Nguyên tắc",
-    "icon": "📏",
+    "icon": "measure",
     "children": [
      "Phân định thẩm quyền trung ương – địa phương",
      "Cấp trên có thể ủy quyền kèm bảo đảm"

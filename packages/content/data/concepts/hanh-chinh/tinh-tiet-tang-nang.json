@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Cách thực hiện",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Có tổ chức",
      "Nhiều lần, tái phạm",
@@ -38,7 +38,7 @@
    },
    {
     "label": "Lợi dụng",
-    "icon": "🎭",
+    "icon": "mask",
     "children": [
      "Chức vụ",
      "Chiến tranh, thiên tai, dịch bệnh",
@@ -47,7 +47,7 @@
    },
    {
     "label": "Sau vi phạm",
-    "icon": "🏃",
+    "icon": "person",
     "children": [
      "Tiếp tục vi phạm",
      "Trốn tránh, che giấu"

@@ -30,14 +30,14 @@
   "tree": [
    {
     "label": "Quyền tác giả",
-    "icon": "✍️",
+    "icon": "pen",
     "children": [
      "Quyền liên quan"
     ]
    },
    {
     "label": "Sở hữu công nghiệp",
-    "icon": "🏭",
+    "icon": "company",
     "children": [
      "Sáng chế, kiểu dáng",
      "Nhãn hiệu, tên thương mại",
@@ -46,11 +46,11 @@
    },
    {
     "label": "Giống cây trồng",
-    "icon": "🌱"
+    "icon": "plant"
    },
    {
     "label": "Đặc điểm",
-    "icon": "💡",
+    "icon": "idea",
     "children": [
      "Tài sản vô hình"
     ]

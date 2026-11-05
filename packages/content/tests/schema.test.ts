@@ -120,7 +120,7 @@ describe('mẹo nhớ phải thêm cách nhớ mới, không nhắc lại Hiểu
 });
 
 describe('memo.case (hỏi – đáp), memo.contrast (câu phân biệt), icon nhánh', () => {
-  const tree = [{ label: 'A', icon: '🏛️' }, { label: 'B' }];
+  const tree = [{ label: 'A', icon: 'state' }, { label: 'B' }];
   const memo = { gist: 'Câu ngắn.', hook: 'Mẹo khác hẳn.', tree };
   it('chấp nhận hỏi – đáp đúng dạng và câu phân biệt', () => {
     const ok = { ...memo, case: { q: 'Chỉ thị có phải văn bản quy phạm không?', a: 'Không, vì luật không đưa chỉ thị vào danh sách.' }, contrast: [{ with: 'quyen-tai-san', text: 'Tài sản là cái có giá trị; quyền tài sản là quyền đòi được cái đó.' }] };
@@ -133,7 +133,9 @@ describe('memo.case (hỏi – đáp), memo.contrast (câu phân biệt), icon n
   it('câu phân biệt phải là lời thường', () => {
     expect(conceptSchema.safeParse({ ...base, memo: { ...memo, contrast: [{ with: 'x', text: 'VBQPPL khác QPPL.' }] } }).success).toBe(false);
   });
-  it('icon nhánh tối đa một biểu tượng ngắn', () => {
-    expect(conceptSchema.safeParse({ ...base, memo: { ...memo, tree: [{ label: 'A', icon: 'quá dài' }, { label: 'B' }] } }).success).toBe(false);
+  it('icon nhánh phải là tên trong bộ icon (không còn emoji)', () => {
+    expect(conceptSchema.safeParse({ ...base, memo: { ...memo, tree: [{ label: 'A', icon: '🏛️' }, { label: 'B' }] } }).success).toBe(false);
+    expect(conceptSchema.safeParse({ ...base, memo: { ...memo, tree: [{ label: 'A', icon: 'khong-co' }, { label: 'B' }] } }).success).toBe(false);
+    expect(conceptSchema.safeParse({ ...base, memo: { ...memo, tree: [{ label: 'A', icon: 'scales' }, { label: 'B' }] } }).success).toBe(true);
   });
 });

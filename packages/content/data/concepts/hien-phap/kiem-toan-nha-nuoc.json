@@ -30,14 +30,14 @@
   "tree": [
    {
     "label": "Thành lập",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Quốc hội"
     ]
    },
    {
     "label": "Hoạt động",
-    "icon": "📏",
+    "icon": "measure",
     "children": [
      "Độc lập",
      "Chỉ tuân theo pháp luật"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Kiểm toán",
-    "icon": "💰",
+    "icon": "money",
     "children": [
      "Tài chính công",
      "Tài sản công"
@@ -53,7 +53,7 @@
    },
    {
     "label": "Tổng Kiểm toán",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Quốc hội bầu",
      "Báo cáo trước Quốc hội"

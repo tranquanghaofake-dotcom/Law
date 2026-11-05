@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Cách mua",
-    "icon": "🛒",
+    "icon": "cart",
     "children": [
      "Trực tiếp hoặc gián tiếp",
      "Toàn bộ hoặc một phần vốn, tài sản"
@@ -39,21 +39,21 @@
    },
    {
     "label": "Ngưỡng",
-    "icon": "🎯",
+    "icon": "target",
     "children": [
      "Đủ kiểm soát, chi phối"
     ]
    },
    {
     "label": "Khác sáp nhập",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Bên bị mua vẫn tồn tại"
     ]
    },
    {
     "label": "Cạnh tranh",
-    "icon": "📣",
+    "icon": "announce",
     "children": [
      "Đạt ngưỡng thì thông báo trước"
     ]

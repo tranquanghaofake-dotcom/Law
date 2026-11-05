@@ -31,14 +31,14 @@
   "tree": [
    {
     "label": "Thông qua",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "15/4/1992"
     ]
    },
    {
     "label": "Điểm mới",
-    "icon": "🆕",
+    "icon": "new",
     "children": [
      "Kinh tế hàng hóa nhiều thành phần",
      "Lần đầu dùng quyền con người",
@@ -47,14 +47,14 @@
    },
    {
     "label": "Sửa đổi 2001",
-    "icon": "✏️",
+    "icon": "pen",
     "children": [
      "Nhà nước pháp quyền xã hội chủ nghĩa"
     ]
    },
    {
     "label": "Hết hiệu lực",
-    "icon": "⏹️",
+    "icon": "pause",
     "children": [
      "01/01/2014"
     ]

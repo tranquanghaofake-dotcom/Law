@@ -30,21 +30,21 @@
   "tree": [
    {
     "label": "Cá nhân",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Quốc tịch nước ngoài"
     ]
    },
    {
     "label": "Tổ chức",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Thành lập theo pháp luật nước ngoài"
     ]
    },
    {
     "label": "Hệ quả",
-    "icon": "📋",
+    "icon": "list",
     "children": [
      "Điều kiện tiếp cận thị trường",
      "Thường phải xin Giấy chứng nhận"

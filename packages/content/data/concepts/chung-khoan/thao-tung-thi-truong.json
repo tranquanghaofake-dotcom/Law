@@ -31,14 +31,14 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "🎭",
+    "icon": "mask",
     "children": [
      "Cung cầu, giá giả tạo"
     ]
    },
    {
     "label": "Dạng",
-    "icon": "📊",
+    "icon": "chart",
     "children": [
      "Nhiều tài khoản, thông đồng",
      "Mua bán vòng tròn",

@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Quyền",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Lập di chúc",
      "Để lại theo pháp luật",
@@ -39,14 +39,14 @@
    },
    {
     "label": "Thời điểm",
-    "icon": "⏰",
+    "icon": "clock",
     "children": [
      "Khi người có tài sản chết"
     ]
    },
    {
     "label": "Địa điểm",
-    "icon": "📍",
+    "icon": "pin",
     "children": [
      "Nơi cư trú cuối cùng",
      "Không rõ: nơi có phần lớn di sản"

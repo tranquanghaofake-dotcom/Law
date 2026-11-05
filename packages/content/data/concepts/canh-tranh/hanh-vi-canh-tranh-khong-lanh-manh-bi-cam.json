@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Thông tin",
-    "icon": "🔐",
+    "icon": "lock",
     "children": [
      "Xâm phạm bí mật kinh doanh",
      "Thông tin không trung thực"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Gây sức ép",
-    "icon": "✊",
+    "icon": "fist",
     "children": [
      "Ép buộc khách hàng, đối tác",
      "Gây rối hoạt động kinh doanh"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Giành khách",
-    "icon": "🎯",
+    "icon": "target",
     "children": [
      "Lôi kéo khách hàng bất chính",
      "Bán dưới giá thành toàn bộ"

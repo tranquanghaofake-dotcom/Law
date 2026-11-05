@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Dấu hiệu",
-    "icon": "🏷️",
+    "icon": "doc",
     "children": [
      "Nhân danh chính mình",
      "Hưởng thù lao"
@@ -38,21 +38,21 @@
    },
    {
     "label": "Chủ thể",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Cả hai là thương nhân"
     ]
    },
    {
     "label": "Hàng hóa",
-    "icon": "📦",
+    "icon": "box",
     "children": [
      "Thuộc sở hữu bên giao"
     ]
    },
    {
     "label": "Khác ủy thác",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Lâu dài, thường xuyên"
     ]

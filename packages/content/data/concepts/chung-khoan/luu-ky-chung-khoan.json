@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "🏦",
+    "icon": "bank",
     "children": [
      "Ký gửi, bảo quản",
      "Chuyển giao",
@@ -37,7 +37,7 @@
    },
    {
     "label": "Bắt buộc",
-    "icon": "❗",
+    "icon": "warn",
     "children": [
      "Lưu ký tập trung",
      "Trước khi giao dịch"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Qua",
-    "icon": "🔗",
+    "icon": "link",
     "children": [
      "Thành viên lưu ký"
     ]

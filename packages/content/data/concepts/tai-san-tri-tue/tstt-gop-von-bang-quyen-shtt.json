@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Được góp",
-    "icon": "🎁",
+    "icon": "gift",
     "children": [
      "Quyền sở hữu trí tuệ",
      "Công nghệ, bí quyết kỹ thuật"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Điều kiện",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "Chủ sở hữu hoặc người có quyền hợp pháp",
      "Định giá bằng Đồng Việt Nam"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Định giá sai",
-    "icon": "⚠️",
+    "icon": "warn",
     "children": [
      "Liên đới chịu trách nhiệm"
     ]

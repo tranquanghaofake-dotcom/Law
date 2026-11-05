@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Ba loại",
-    "icon": "3️⃣",
+    "icon": "n3",
     "children": [
      "Môi giới",
      "Phân tích tài chính",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Điều kiện",
-    "icon": "🎓",
+    "icon": "book",
     "children": [
      "Năng lực hành vi đầy đủ",
      "Đại học trở lên",
@@ -48,7 +48,7 @@
    },
    {
     "label": "Thu hồi",
-    "icon": "⛔",
+    "icon": "ban",
     "children": [
      "03 năm không hành nghề",
      "Vi phạm hành vi bị cấm"

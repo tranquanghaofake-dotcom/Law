@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Cha mẹ đều là công dân",
-    "icon": "👪",
+    "icon": "family",
     "children": [
      "Con có quốc tịch Việt Nam",
      "Dù sinh trong hay ngoài lãnh thổ"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Một bên là công dân",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Bên kia không quốc tịch: con có quốc tịch Việt Nam",
      "Bên kia nước ngoài: cha mẹ thỏa thuận"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Nơi sinh",
-    "icon": "📍",
+    "icon": "pin",
     "children": [
      "Chỉ bổ trợ, tránh không quốc tịch"
     ]

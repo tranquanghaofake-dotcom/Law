@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Phát sinh",
-    "icon": "🤝",
+    "icon": "handshake",
     "children": [
      "Thuê mướn, sử dụng lao động",
      "Trả lương"
@@ -36,7 +36,7 @@
    },
    {
     "label": "Cá nhân",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Người lao động – người sử dụng",
      "Căn cứ hợp đồng lao động"
@@ -44,7 +44,7 @@
    },
    {
     "label": "Tập thể",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Tổ chức đại diện – người sử dụng",
      "Đối thoại, thương lượng, đình công"

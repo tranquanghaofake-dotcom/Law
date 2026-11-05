@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Ai đăng ký",
-    "icon": "🙋",
+    "icon": "person",
     "children": [
      "Tổ chức phát hành",
      "Cổ đông công ty đại chúng"
@@ -38,14 +38,14 @@
    },
    {
     "label": "Nơi đăng ký",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Ủy ban Chứng khoán Nhà nước"
     ]
    },
    {
     "label": "Kết quả",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Giấy chứng nhận đăng ký",
      "Không bảo đảm chất lượng"

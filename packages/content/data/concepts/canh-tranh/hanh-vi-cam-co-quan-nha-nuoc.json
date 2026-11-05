@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Cấm",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Ép buộc, yêu cầu, khuyến nghị giao dịch",
      "Phân biệt đối xử doanh nghiệp",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Ngoại lệ",
-    "icon": "🆗",
+    "icon": "check",
     "children": [
      "Độc quyền nhà nước",
      "Trường hợp khẩn cấp"

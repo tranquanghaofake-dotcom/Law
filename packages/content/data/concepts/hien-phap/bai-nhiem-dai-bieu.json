@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Ai bị bãi nhiệm",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Đại biểu Quốc hội",
      "Đại biểu Hội đồng nhân dân"
@@ -36,7 +36,7 @@
    },
    {
     "label": "Ai bãi nhiệm",
-    "icon": "🗳️",
+    "icon": "vote",
     "children": [
      "Cử tri",
      "Quốc hội, Hội đồng nhân dân"
@@ -44,7 +44,7 @@
    },
    {
     "label": "Khi nào",
-    "icon": "⚠️",
+    "icon": "warn",
     "children": [
      "Không còn xứng đáng với sự tín nhiệm của Nhân dân"
     ]

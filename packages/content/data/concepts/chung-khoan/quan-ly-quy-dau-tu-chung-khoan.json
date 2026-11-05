@@ -28,21 +28,21 @@
   "tree": [
    {
     "label": "Đối tượng",
-    "icon": "🧺",
+    "icon": "box",
     "children": [
      "Tài sản của quỹ"
     ]
    },
    {
     "label": "Hoạt động",
-    "icon": "🔄",
+    "icon": "cycle",
     "children": [
      "Mua, bán, nắm giữ"
     ]
    },
    {
     "label": "Căn cứ",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Điều lệ quỹ",
      "Hợp đồng với ngân hàng giám sát"
@@ -50,7 +50,7 @@
    },
    {
     "label": "Phân biệt",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Danh mục: tiền từng người"
     ]

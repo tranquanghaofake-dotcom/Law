@@ -31,35 +31,35 @@
   "tree": [
    {
     "label": "Thành lập",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Tổ chức kinh tế"
     ]
    },
    {
     "label": "Góp vốn",
-    "icon": "💵",
+    "icon": "money",
     "children": [
      "Mua cổ phần, phần vốn góp"
     ]
    },
    {
     "label": "Dự án",
-    "icon": "🏗️",
+    "icon": "company",
     "children": [
      "Thực hiện dự án đầu tư"
     ]
    },
    {
     "label": "Hợp đồng",
-    "icon": "🤝",
+    "icon": "handshake",
     "children": [
      "Hợp đồng hợp tác kinh doanh"
     ]
    },
    {
     "label": "Khác",
-    "icon": "➕",
+    "icon": "calc",
     "children": [
      "Theo quy định của Chính phủ"
     ]

@@ -31,14 +31,14 @@
   "tree": [
    {
     "label": "Nội dung",
-    "icon": "📏",
+    "icon": "measure",
     "children": [
      "Chứa quy phạm pháp luật"
     ]
    },
    {
     "label": "Hình thức",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Đúng thẩm quyền",
      "Đúng trình tự, thủ tục"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Phân biệt",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Văn bản áp dụng: bản án, quyết định xử phạt"
     ]

@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Gồm",
-    "icon": "💵",
+    "icon": "money",
     "children": [
      "Tiền bán hàng, gia công, dịch vụ",
      "Trợ giá, phụ thu, phụ trội"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Thời điểm",
-    "icon": "⏱️",
+    "icon": "clock",
     "children": [
      "Khi được hưởng",
      "Không phân biệt đã thu tiền"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Thu nhập chịu thuế",
-    "icon": "🧮",
+    "icon": "calc",
     "children": [
      "Doanh thu − chi phí được trừ",
      "Cộng thu nhập khác"

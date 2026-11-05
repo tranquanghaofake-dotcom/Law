@@ -29,35 +29,35 @@
   "tree": [
    {
     "label": "Hòa giải viên",
-    "icon": "🤝",
+    "icon": "handshake",
     "children": [
      "06 tháng"
     ]
    },
    {
     "label": "Hội đồng trọng tài",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "09 tháng"
     ]
    },
    {
     "label": "Tòa án",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "01 năm"
     ]
    },
    {
     "label": "Mốc tính",
-    "icon": "📍",
+    "icon": "pin",
     "children": [
      "Ngày phát hiện vi phạm"
     ]
    },
    {
     "label": "Không tính",
-    "icon": "⏸️",
+    "icon": "pause",
     "children": [
      "Bất khả kháng, trở ngại khách quan"
     ]

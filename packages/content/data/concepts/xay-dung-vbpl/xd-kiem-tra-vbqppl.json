@@ -32,19 +32,19 @@
   "tree": [
    {
     "label": "Có hợp Hiến pháp không",
-    "icon": "📜"
+    "icon": "scroll"
    },
    {
     "label": "Có hợp luật cấp trên không",
-    "icon": "⚖️"
+    "icon": "scales"
    },
    {
     "label": "Có thống nhất với văn bản khác không",
-    "icon": "🧩"
+    "icon": "puzzle"
    },
    {
     "label": "Ai kiểm tra",
-    "icon": "🔍",
+    "icon": "search",
     "children": [
      "Cơ quan tự kiểm tra",
      "Cấp trên kiểm tra cấp dưới"

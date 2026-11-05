@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Vô thời hạn",
-    "icon": "♾️",
+    "icon": "infinity",
     "children": [
      "Đặt tên, đứng tên",
      "Toàn vẹn tác phẩm"
@@ -38,21 +38,21 @@
    },
    {
     "label": "Tác phẩm thông thường",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Suốt đời tác giả + 50 năm"
     ]
    },
    {
     "label": "Điện ảnh, nhiếp ảnh, khuyết danh",
-    "icon": "🎬",
+    "icon": "bolt",
     "children": [
      "75 năm từ khi công bố"
     ]
    },
    {
     "label": "Mốc kết thúc",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "31 tháng 12"
     ]

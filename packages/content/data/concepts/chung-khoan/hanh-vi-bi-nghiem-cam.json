@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Thông tin",
-    "icon": "📰",
+    "icon": "announce",
     "children": [
      "Gian lận, lừa đảo",
      "Thông tin sai lệch"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Giao dịch",
-    "icon": "📊",
+    "icon": "chart",
     "children": [
      "Nội gián",
      "Thao túng thị trường"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Hoạt động",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Kinh doanh không phép",
      "Dùng trái phép tài sản khách"
@@ -53,7 +53,7 @@
    },
    {
     "label": "Khác",
-    "icon": "➕",
+    "icon": "calc",
     "children": [
      "Cho mượn tài khoản dẫn đến thao túng"
     ]

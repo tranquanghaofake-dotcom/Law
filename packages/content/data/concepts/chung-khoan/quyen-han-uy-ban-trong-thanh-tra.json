@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Được yêu cầu",
-    "icon": "🏦",
+    "icon": "bank",
     "children": [
      "Ngân hàng: giao dịch tài khoản",
      "Nhà mạng: dữ liệu cuộc gọi"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Điều kiện",
-    "icon": "✍️",
+    "icon": "pen",
     "children": [
      "Có dấu hiệu vi phạm Điều 12",
      "Chủ tịch Ủy ban phê duyệt",

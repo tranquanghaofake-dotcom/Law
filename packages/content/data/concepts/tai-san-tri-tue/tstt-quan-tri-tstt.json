@@ -30,21 +30,21 @@
   "tree": [
    {
     "label": "Tạo lập",
-    "icon": "🌱",
+    "icon": "plant",
     "children": [
      "Nhận dạng, phân loại"
     ]
    },
    {
     "label": "Xác lập quyền",
-    "icon": "📋",
+    "icon": "list",
     "children": [
      "Đăng ký sớm, đồng bộ"
     ]
    },
    {
     "label": "Khai thác",
-    "icon": "💰",
+    "icon": "money",
     "children": [
      "Tự dùng",
      "Chuyển nhượng, li-xăng, góp vốn"
@@ -52,7 +52,7 @@
    },
    {
     "label": "Bảo vệ",
-    "icon": "🛡️",
+    "icon": "shield",
     "children": [
      "Phòng ngừa",
      "Giám sát, xử lý xâm phạm"

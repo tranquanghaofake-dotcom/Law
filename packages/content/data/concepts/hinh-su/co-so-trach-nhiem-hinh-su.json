@@ -29,21 +29,21 @@
   "tree": [
    {
     "label": "Cá nhân",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Phạm tội đã được Bộ luật Hình sự quy định"
     ]
    },
    {
     "label": "Pháp nhân thương mại",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Chỉ tội tại Điều 76"
     ]
    },
    {
     "label": "Nguyên tắc",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Pháp chế",
      "Không áp dụng tương tự"

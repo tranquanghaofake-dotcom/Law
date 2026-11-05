@@ -29,21 +29,21 @@
   "tree": [
    {
     "label": "Chính thể",
-    "icon": "👑",
+    "icon": "crown",
     "children": [
      "Quân chủ / cộng hòa"
     ]
    },
    {
     "label": "Cấu trúc",
-    "icon": "🗺️",
+    "icon": "map",
     "children": [
      "Đơn nhất / liên bang"
     ]
    },
    {
     "label": "Chế độ chính trị",
-    "icon": "🗳️",
+    "icon": "vote",
     "children": [
      "Dân chủ / phản dân chủ"
     ]

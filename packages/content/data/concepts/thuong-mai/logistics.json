@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Công việc",
-    "icon": "🚚",
+    "icon": "vehicle",
     "children": [
      "Nhận hàng, vận chuyển",
      "Lưu kho, lưu bãi",
@@ -39,14 +39,14 @@
    },
    {
     "label": "Quyền",
-    "icon": "🔒",
+    "icon": "lock",
     "children": [
      "Cầm giữ hàng, chứng từ"
     ]
    },
    {
     "label": "Giới hạn trách nhiệm",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Không quá giá trị hàng hóa"
     ]

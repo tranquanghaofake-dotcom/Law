@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Khi nào",
-    "icon": "⏰",
+    "icon": "clock",
     "children": [
      "Thành lập công ty",
      "Góp thêm vốn điều lệ"
@@ -39,7 +39,7 @@
    },
    {
     "label": "Tài sản góp",
-    "icon": "🎒",
+    "icon": "box",
     "children": [
      "Tiền đồng, ngoại tệ, vàng",
      "Quyền sử dụng đất",
@@ -49,7 +49,7 @@
    },
    {
     "label": "Ai được góp",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Chủ sở hữu hoặc người có quyền hợp pháp"
     ]

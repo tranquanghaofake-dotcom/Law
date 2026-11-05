@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "0%",
-    "icon": "🚢",
+    "icon": "vehicle",
     "children": [
      "Hàng, dịch vụ xuất khẩu",
      "Được khấu trừ, hoàn thuế đầu vào"
@@ -38,7 +38,7 @@
    },
    {
     "label": "5%",
-    "icon": "💧",
+    "icon": "plant",
     "children": [
      "Nước sạch, phân bón",
      "Thiết bị y tế"
@@ -46,7 +46,7 @@
    },
    {
     "label": "10%",
-    "icon": "🛍️",
+    "icon": "cart",
     "children": [
      "Mức phổ thông",
      "Cả dịch vụ số nước ngoài"
@@ -54,7 +54,7 @@
    },
    {
     "label": "Phân biệt",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Không chịu thuế: không được khấu trừ"
     ]

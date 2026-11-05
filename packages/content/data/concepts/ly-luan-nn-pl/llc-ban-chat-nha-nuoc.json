@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Tính giai cấp",
-    "icon": "👑",
+    "icon": "crown",
     "children": [
      "Bộ máy cưỡng chế của giai cấp cầm quyền",
      "Bảo vệ lợi ích giai cấp thống trị"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Tính xã hội",
-    "icon": "🤝",
+    "icon": "handshake",
     "children": [
      "Giải quyết công việc chung",
      "Trị thủy, hạ tầng, trật tự"

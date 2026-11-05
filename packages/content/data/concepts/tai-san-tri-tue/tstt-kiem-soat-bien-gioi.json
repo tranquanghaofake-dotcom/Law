@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Biện pháp",
-    "icon": "🛃",
+    "icon": "globe",
     "children": [
      "Tạm dừng thủ tục hải quan",
      "Kiểm tra, giám sát"
@@ -39,7 +39,7 @@
    },
    {
     "label": "Ai yêu cầu",
-    "icon": "🙋",
+    "icon": "person",
     "children": [
      "Chủ thể quyền",
      "Hải quan chủ động với hàng giả"
@@ -47,7 +47,7 @@
    },
    {
     "label": "Điều kiện",
-    "icon": "💵",
+    "icon": "money",
     "children": [
      "Nộp khoản bảo đảm"
     ]

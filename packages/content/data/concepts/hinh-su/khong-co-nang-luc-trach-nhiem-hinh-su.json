@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Dấu hiệu",
-    "icon": "🧠",
+    "icon": "idea",
     "children": [
      "Y học: mắc bệnh tâm thần, bệnh khác",
      "Tâm lý: mất nhận thức hoặc điều khiển"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Hệ quả",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Không chịu trách nhiệm hình sự",
      "Có thể bắt buộc chữa bệnh"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Vẫn chịu",
-    "icon": "🍺",
+    "icon": "warn",
     "children": [
      "Do rượu, bia, chất kích thích"
     ]

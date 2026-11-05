@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Mục đích",
-    "icon": "🚨",
+    "icon": "warn",
     "children": [
      "Yêu cầu cấp bách",
      "Bảo vệ chứng cứ, tài sản",
@@ -38,7 +38,7 @@
    },
    {
     "label": "Về người",
-    "icon": "👶",
+    "icon": "child",
     "children": [
      "Giao người cần chăm sóc",
      "Buộc trước một phần cấp dưỡng, bồi thường"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Về tài sản",
-    "icon": "🔒",
+    "icon": "lock",
     "children": [
      "Kê biên",
      "Cấm chuyển dịch",

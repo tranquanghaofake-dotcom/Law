@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Người có công",
-    "icon": "🎖️",
+    "icon": "star",
     "children": [
      "12 nhóm",
      "Liệt sỹ, Bà mẹ Việt Nam anh hùng",
@@ -40,7 +40,7 @@
    },
    {
     "label": "Thân nhân",
-    "icon": "👪",
+    "icon": "family",
     "children": [
      "Cha mẹ đẻ",
      "Vợ hoặc chồng",
@@ -50,7 +50,7 @@
    },
    {
     "label": "Bản chất",
-    "icon": "🙏",
+    "icon": "handshake",
     "children": [
      "Đền đáp, không cần đóng góp"
     ]

@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Chuyển nhượng",
-    "icon": "🔑",
+    "icon": "key",
     "children": [
      "Chuyển quyền sở hữu",
      "Bên nhận thành chủ mới"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Chuyển quyền sử dụng",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "Có thời hạn",
      "Chủ vẫn giữ quyền"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Không chuyển được",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Quyền nhân thân (trừ công bố)"
     ]

@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Nguyên tắc",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Công khai, minh bạch, bình đẳng",
      "Người nộp thuế là trung tâm"
@@ -38,21 +38,21 @@
    },
    {
     "label": "Người nộp thuế",
-    "icon": "🙋",
+    "icon": "person",
     "children": [
      "Tự khai, tự tính, tự nộp"
     ]
    },
    {
     "label": "Xác định nghĩa vụ",
-    "icon": "🔍",
+    "icon": "search",
     "children": [
      "Theo bản chất giao dịch"
     ]
    },
    {
     "label": "Luật 2025",
-    "icon": "🆕",
+    "icon": "new",
     "children": [
      "Phân nhóm người nộp thuế",
      "Quản lý theo rủi ro"

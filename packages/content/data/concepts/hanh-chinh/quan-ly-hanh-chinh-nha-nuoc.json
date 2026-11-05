@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Tính chất",
-    "icon": "🔁",
+    "icon": "cycle",
     "children": [
      "Chấp hành",
      "Điều hành",
@@ -38,7 +38,7 @@
    },
    {
     "label": "Đặc điểm",
-    "icon": "📌",
+    "icon": "pin",
     "children": [
      "Quyền lực nhà nước",
      "Dưới luật"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Chủ thể",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Cơ quan hành chính nhà nước"
     ]

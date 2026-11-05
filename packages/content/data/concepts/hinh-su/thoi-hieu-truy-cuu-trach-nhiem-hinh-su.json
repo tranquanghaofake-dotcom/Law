@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Mức",
-    "icon": "⏳",
+    "icon": "clock",
     "children": [
      "Ít nghiêm trọng: 05 năm",
      "Nghiêm trọng: 10 năm",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Tính lại",
-    "icon": "🔁",
+    "icon": "cycle",
     "children": [
      "Phạm tội mới",
      "Trốn tránh, bị truy nã"
@@ -47,7 +47,7 @@
    },
    {
     "label": "Mốc",
-    "icon": "📍",
+    "icon": "pin",
     "children": [
      "Từ ngày tội phạm thực hiện"
     ]

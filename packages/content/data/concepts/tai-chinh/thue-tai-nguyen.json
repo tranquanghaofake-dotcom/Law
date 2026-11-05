@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Đối tượng",
-    "icon": "⛏️",
+    "icon": "tool",
     "children": [
      "Khoáng sản, dầu thô, khí",
      "Sản phẩm rừng tự nhiên",
@@ -41,14 +41,14 @@
    },
    {
     "label": "Người nộp",
-    "icon": "👷",
+    "icon": "person",
     "children": [
      "Tổ chức, cá nhân khai thác"
     ]
    },
    {
     "label": "Loại trừ",
-    "icon": "🌾",
+    "icon": "plant",
     "children": [
      "Nước cho nông, lâm, ngư, diêm nghiệp"
     ]

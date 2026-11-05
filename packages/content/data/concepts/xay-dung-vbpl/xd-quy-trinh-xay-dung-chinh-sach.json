@@ -31,19 +31,19 @@
   "tree": [
    {
     "label": "Xác định chính sách",
-    "icon": "🔎"
+    "icon": "search"
    },
    {
     "label": "Đánh giá tác động",
-    "icon": "⚖️"
+    "icon": "scales"
    },
    {
     "label": "Lấy ý kiến, thẩm định",
-    "icon": "🗣️"
+    "icon": "announce"
    },
    {
     "label": "Thông qua chính sách",
-    "icon": "✅"
+    "icon": "check"
    }
   ],
   "case": {

@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Dấu hiệu",
-    "icon": "🔎",
+    "icon": "search",
     "children": [
      "Nhận ủy nhiệm",
      "Nhân danh bên giao đại diện",
@@ -39,14 +39,14 @@
    },
    {
     "label": "Chủ thể",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Cả hai là thương nhân"
     ]
    },
    {
     "label": "Bốn trung gian",
-    "icon": "🧩",
+    "icon": "puzzle",
     "children": [
      "Đại diện, môi giới",
      "Ủy thác, đại lý"

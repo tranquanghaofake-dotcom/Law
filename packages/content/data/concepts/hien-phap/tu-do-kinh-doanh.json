@@ -29,28 +29,28 @@
   "tree": [
    {
     "label": "Chủ thể",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Mọi người"
     ]
    },
    {
     "label": "Phạm vi",
-    "icon": "🗺️",
+    "icon": "map",
     "children": [
      "Ngành nghề pháp luật không cấm"
     ]
    },
    {
     "label": "Hạn chế",
-    "icon": "🚧",
+    "icon": "ban",
     "children": [
      "Chỉ bằng luật"
     ]
    },
    {
     "label": "Lịch sử",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "Luật Công ty 1990: xin phép",
      "Luật Doanh nghiệp 1999: đăng ký",

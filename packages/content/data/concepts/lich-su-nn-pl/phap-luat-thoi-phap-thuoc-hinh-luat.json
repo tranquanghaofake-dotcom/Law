@@ -31,14 +31,14 @@
   "tree": [
    {
     "label": "Bắc Kỳ",
-    "icon": "🏔️",
+    "icon": "map",
     "children": [
      "Luật hình An Nam 1921"
     ]
    },
    {
     "label": "Trung Kỳ",
-    "icon": "🏯",
+    "icon": "state",
     "children": [
      "Hoàng Việt hình luật 1933",
      "Khác Hoàng Việt luật lệ 1815"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Nam Kỳ",
-    "icon": "🌴",
+    "icon": "map",
     "children": [
      "Hình luật Pháp tu chỉnh 1912"
     ]

@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Phạm vi",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Giữa các bên quan hệ lao động",
      "Giữa các tổ chức đại diện",
@@ -38,11 +38,11 @@
    },
    {
     "label": "Cá nhân",
-    "icon": "👤"
+    "icon": "person"
    },
    {
     "label": "Tập thể",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Về quyền",
      "Về lợi ích"

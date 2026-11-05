@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Theo vụ việc",
-    "icon": "🗂️",
+    "icon": "list",
     "children": [
      "Dân sự",
      "Hôn nhân gia đình",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Tranh chấp dân sự",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Giao dịch, hợp đồng",
      "Thừa kế",
@@ -48,7 +48,7 @@
    },
    {
     "label": "Lưu ý",
-    "icon": "💡",
+    "icon": "idea",
     "children": [
      "Sở hữu trí tuệ vì lợi nhuận: thương mại"
     ]

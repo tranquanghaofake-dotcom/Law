@@ -29,14 +29,14 @@
   "tree": [
    {
     "label": "Nguyên tắc",
-    "icon": "🛡️",
+    "icon": "shield",
     "children": [
      "Không bị tước đoạt trái luật"
     ]
    },
    {
     "label": "Biện pháp",
-    "icon": "🧰",
+    "icon": "tool",
     "children": [
      "Tự bảo vệ",
      "Kiện đòi tài sản",
@@ -46,7 +46,7 @@
    },
    {
     "label": "Nhà nước",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Trưng mua, trưng dụng có bồi thường"
     ]

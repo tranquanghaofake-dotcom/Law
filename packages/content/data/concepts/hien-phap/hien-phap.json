@@ -27,21 +27,21 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Luật cơ bản"
     ]
    },
    {
     "label": "Hiệu lực",
-    "icon": "🔝",
+    "icon": "top",
     "children": [
      "Cao nhất"
     ]
    },
    {
     "label": "Căn cứ",
-    "icon": "📌",
+    "icon": "pin",
     "children": [
      "Khoản 1 Điều 119"
     ]

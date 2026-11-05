@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Người có thẩm quyền áp dụng",
      "Hình thức xử phạt",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Nguyên tắc",
-    "icon": "📏",
+    "icon": "measure",
     "children": [
      "Pháp chế",
      "Một hành vi một lần",

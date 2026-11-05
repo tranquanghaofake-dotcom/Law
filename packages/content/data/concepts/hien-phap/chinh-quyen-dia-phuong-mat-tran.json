@@ -30,28 +30,28 @@
   "tree": [
    {
     "label": "Thông báo",
-    "icon": "📢",
+    "icon": "announce",
     "children": [
      "Tình hình địa phương cho Mặt trận"
     ]
    },
    {
     "label": "Lắng nghe",
-    "icon": "👂",
+    "icon": "eye",
     "children": [
      "Ý kiến, kiến nghị"
     ]
    },
    {
     "label": "Phối hợp",
-    "icon": "🤝",
+    "icon": "handshake",
     "children": [
      "Động viên Nhân dân"
     ]
    },
    {
     "label": "Mời dự",
-    "icon": "🪑",
+    "icon": "people",
     "children": [
      "Kỳ họp Hội đồng nhân dân",
      "Hội nghị Ủy ban nhân dân"

@@ -31,14 +31,14 @@
   "tree": [
    {
     "label": "Thống nhất",
-    "icon": "✊",
+    "icon": "fist",
     "children": [
      "Thuộc về Nhân dân"
     ]
    },
    {
     "label": "Phân công",
-    "icon": "📋",
+    "icon": "list",
     "children": [
      "Quốc hội: lập pháp",
      "Chính phủ: hành pháp",
@@ -47,7 +47,7 @@
    },
    {
     "label": "Giữa các cơ quan",
-    "icon": "🔁",
+    "icon": "cycle",
     "children": [
      "Phối hợp",
      "Kiểm soát"

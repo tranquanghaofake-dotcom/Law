@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Ai bồi thường",
-    "icon": "🐕",
+    "icon": "animal",
     "children": [
      "Chủ sở hữu",
      "Người chiếm hữu, sử dụng",
@@ -38,14 +38,14 @@
    },
    {
     "label": "Cùng có lỗi",
-    "icon": "🤝",
+    "icon": "handshake",
     "children": [
      "Liên đới"
     ]
    },
    {
     "label": "Thả rông",
-    "icon": "🐄",
+    "icon": "animal",
     "children": [
      "Theo tập quán, không trái luật"
     ]

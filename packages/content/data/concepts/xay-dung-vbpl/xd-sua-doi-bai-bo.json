@@ -31,14 +31,14 @@
   "tree": [
    {
     "label": "Sửa đổi, bổ sung, thay thế",
-    "icon": "✏️",
+    "icon": "pen",
     "children": [
      "Chỉ chính cơ quan đã ban hành"
     ]
    },
    {
     "label": "Đình chỉ thi hành",
-    "icon": "⏸️",
+    "icon": "pause",
     "children": [
      "Cơ quan có thẩm quyền",
      "Văn bản tạm ngưng hiệu lực"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Bãi bỏ",
-    "icon": "🗑️",
+    "icon": "trash",
     "children": [
      "Cơ quan ban hành",
      "Hoặc cơ quan có thẩm quyền"

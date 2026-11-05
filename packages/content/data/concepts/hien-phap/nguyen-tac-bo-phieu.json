@@ -29,14 +29,14 @@
   "tree": [
    {
     "label": "Số phiếu",
-    "icon": "1️⃣",
+    "icon": "n1",
     "children": [
      "Một phiếu cho mỗi cấp"
     ]
    },
    {
     "label": "Tự đi bầu",
-    "icon": "🙋",
+    "icon": "person",
     "children": [
      "Xuất trình thẻ cử tri",
      "Không nhờ bầu thay"
@@ -44,7 +44,7 @@
    },
    {
     "label": "Ngoại lệ",
-    "icon": "✍️",
+    "icon": "pen",
     "children": [
      "Không tự viết được: nhờ viết hộ",
      "Ốm đau, già yếu: hòm phiếu phụ"
@@ -52,7 +52,7 @@
    },
    {
     "label": "Bí mật",
-    "icon": "🤫",
+    "icon": "lock",
     "children": [
      "Không ai được xem khi viết phiếu"
     ]

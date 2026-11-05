@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Bất động sản liền kề",
-    "icon": "🚶",
+    "icon": "person",
     "children": [
      "Lối đi qua",
      "Cấp thoát nước"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Hưởng dụng",
-    "icon": "🍎",
+    "icon": "plant",
     "children": [
      "Khai thác, hưởng hoa lợi",
      "Có thời hạn"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Bề mặt",
-    "icon": "🏗️",
+    "icon": "company",
     "children": [
      "Mặt đất, mặt nước",
      "Khoảng không, lòng đất"

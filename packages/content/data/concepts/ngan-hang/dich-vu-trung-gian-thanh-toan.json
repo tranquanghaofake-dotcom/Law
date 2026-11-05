@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "📡",
+    "icon": "announce",
     "children": [
      "Kết nối, truyền dẫn",
      "Xử lý dữ liệu điện tử"
@@ -39,7 +39,7 @@
    },
    {
     "label": "Giữa",
-    "icon": "🔗",
+    "icon": "link",
     "children": [
      "Tổ chức cung ứng dịch vụ thanh toán",
      "Người sử dụng dịch vụ"
@@ -47,7 +47,7 @@
    },
    {
     "label": "Điều kiện",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Giấy phép của Ngân hàng Nhà nước"
     ]

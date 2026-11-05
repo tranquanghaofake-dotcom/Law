@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Không lập biên bản",
-    "icon": "⚡",
+    "icon": "bolt",
     "children": [
      "Cảnh cáo",
      "Cá nhân: đến 500.000 đồng",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Phải lập biên bản",
-    "icon": "📝",
+    "icon": "pen",
     "children": [
      "Trường hợp còn lại",
      "Phát hiện bằng camera"
@@ -47,7 +47,7 @@
    },
    {
     "label": "Ra quyết định",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "07 ngày làm việc"
     ]

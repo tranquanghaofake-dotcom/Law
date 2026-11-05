@@ -30,28 +30,28 @@
   "tree": [
    {
     "label": "14 đến dưới 16",
-    "icon": "🧒",
+    "icon": "child",
     "children": [
      "Chỉ vi phạm do cố ý"
     ]
    },
    {
     "label": "Từ đủ 16",
-    "icon": "🧑",
+    "icon": "person",
     "children": [
      "Mọi vi phạm"
     ]
    },
    {
     "label": "Tổ chức",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Mọi vi phạm"
     ]
    },
    {
     "label": "Người nước ngoài",
-    "icon": "🌍",
+    "icon": "globe",
     "children": [
      "Vi phạm trên lãnh thổ, vùng biển Việt Nam"
     ]

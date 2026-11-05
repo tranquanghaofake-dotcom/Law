@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Chính trị – xã hội",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Đảng lãnh đạo",
      "Nhân dân tham gia",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Tổ chức – kỹ thuật",
-    "icon": "⚙️",
+    "icon": "tool",
     "children": [
      "Ngành kết hợp lãnh thổ",
      "Tách quản lý nhà nước với sản xuất kinh doanh"

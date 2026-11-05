@@ -32,7 +32,7 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "🧱",
+    "icon": "stairs",
     "children": [
      "Tăng vốn điều lệ",
      "Không phải trả nợ gốc",
@@ -41,7 +41,7 @@
    },
    {
     "label": "Ba hình thức",
-    "icon": "3️⃣",
+    "icon": "n3",
     "children": [
      "Cổ đông hiện hữu",
      "Riêng lẻ",
@@ -50,7 +50,7 @@
    },
    {
     "label": "Sau chào bán",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "Đăng ký vốn điều lệ trong 10 ngày"
     ]

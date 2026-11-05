@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Bầu",
-    "icon": "🗳️",
+    "icon": "vote",
     "children": [
      "Do Quốc hội bầu",
      "Trong số đại biểu Quốc hội"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Trách nhiệm",
-    "icon": "📢",
+    "icon": "announce",
     "children": [
      "Chịu trách nhiệm trước Quốc hội",
      "Báo cáo công tác trước Quốc hội"
@@ -46,14 +46,14 @@
    },
    {
     "label": "Nhiệm kỳ",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "Theo nhiệm kỳ Quốc hội"
     ]
    },
    {
     "label": "Sau khi bầu",
-    "icon": "🙋",
+    "icon": "person",
     "children": [
      "Tuyên thệ"
     ]

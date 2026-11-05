@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Chức năng 1",
-    "icon": "📢",
+    "icon": "announce",
     "children": [
      "Thực hành quyền công tố",
      "Buộc tội nhân danh Nhà nước"
@@ -36,7 +36,7 @@
    },
    {
     "label": "Chức năng 2",
-    "icon": "👁️",
+    "icon": "eye",
     "children": [
      "Kiểm sát hoạt động tư pháp",
      "Điều tra, xét xử, thi hành án"
@@ -44,14 +44,14 @@
    },
    {
     "label": "Nhiệm vụ trung tâm",
-    "icon": "🎯",
+    "icon": "target",
     "children": [
      "Bảo vệ pháp luật"
     ]
    },
    {
     "label": "Phân biệt",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Tòa án bảo vệ công lý"
     ]

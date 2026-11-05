@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Loại",
-    "icon": "📚",
+    "icon": "book",
     "children": [
      "Văn học, khoa học, giáo trình",
      "Âm nhạc, điện ảnh, mỹ thuật",
@@ -40,14 +40,14 @@
    },
    {
     "label": "Điều kiện",
-    "icon": "✍️",
+    "icon": "pen",
     "children": [
      "Tác giả trực tiếp sáng tạo"
     ]
    },
    {
     "label": "Phái sinh",
-    "icon": "🔁",
+    "icon": "cycle",
     "children": [
      "Không phương hại tác phẩm gốc"
     ]

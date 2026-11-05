@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Ba cấp khách thể",
-    "icon": "🧩",
+    "icon": "puzzle",
     "children": [
      "Chung",
      "Loại (chia chương)",
@@ -38,7 +38,7 @@
    },
    {
     "label": "Đối tượng tác động",
-    "icon": "🎯",
+    "icon": "target",
     "children": [
      "Con người",
      "Đối tượng vật chất",

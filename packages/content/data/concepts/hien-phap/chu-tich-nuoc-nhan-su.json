@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Đề nghị Quốc hội bầu",
-    "icon": "🗳️",
+    "icon": "vote",
     "children": [
      "Phó Chủ tịch nước",
      "Thủ tướng",
@@ -38,7 +38,7 @@
    },
    {
     "label": "Bổ nhiệm theo nghị quyết",
-    "icon": "✍️",
+    "icon": "pen",
     "children": [
      "Phó Thủ tướng",
      "Bộ trưởng, thành viên Chính phủ",

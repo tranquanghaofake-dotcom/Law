@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "📄",
+    "icon": "doc",
     "children": [
      "Công cụ tài chính dạng hợp đồng",
      "Dựa trên tài sản cơ sở"
@@ -36,7 +36,7 @@
    },
    {
     "label": "Loại",
-    "icon": "3️⃣",
+    "icon": "n3",
     "children": [
      "Quyền chọn",
      "Tương lai",
@@ -45,7 +45,7 @@
    },
    {
     "label": "Cơ chế",
-    "icon": "⏳",
+    "icon": "clock",
     "children": [
      "Chốt giá hôm nay",
      "Thanh toán tương lai"

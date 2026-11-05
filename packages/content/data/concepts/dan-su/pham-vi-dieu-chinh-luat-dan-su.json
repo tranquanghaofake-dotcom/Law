@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Điều chỉnh",
-    "icon": "📚",
+    "icon": "book",
     "children": [
      "Quan hệ tài sản",
      "Quan hệ nhân thân"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Dấu hiệu",
-    "icon": "🔎",
+    "icon": "search",
     "children": [
      "Bình đẳng",
      "Tự do ý chí",
@@ -47,7 +47,7 @@
    },
    {
     "label": "Chủ thể",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Cá nhân",
      "Pháp nhân"

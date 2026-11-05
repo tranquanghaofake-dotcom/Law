@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Đối vật",
-    "icon": "📦",
+    "icon": "box",
     "children": [
      "Cầm cố, thế chấp",
      "Đặt cọc, ký cược, ký quỹ",
@@ -41,7 +41,7 @@
    },
    {
     "label": "Đối nhân",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Bảo lãnh",
      "Tín chấp"
@@ -49,7 +49,7 @@
    },
    {
     "label": "Đối kháng",
-    "icon": "🛡️",
+    "icon": "shield",
     "children": [
      "Từ khi đăng ký hoặc nắm giữ"
     ]

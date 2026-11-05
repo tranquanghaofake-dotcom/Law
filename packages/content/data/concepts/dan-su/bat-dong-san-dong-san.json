@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Bất động sản",
-    "icon": "🏠",
+    "icon": "home",
     "children": [
      "Đất đai",
      "Nhà, công trình gắn với đất",
@@ -38,14 +38,14 @@
    },
    {
     "label": "Động sản",
-    "icon": "🚲",
+    "icon": "vehicle",
     "children": [
      "Không phải bất động sản"
     ]
    },
    {
     "label": "Ý nghĩa",
-    "icon": "📌",
+    "icon": "pin",
     "children": [
      "Thời hiệu 10 hay 30 năm",
      "Thẩm quyền Tòa án"

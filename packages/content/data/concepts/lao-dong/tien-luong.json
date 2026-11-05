@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Gồm",
-    "icon": "💵",
+    "icon": "money",
     "children": [
      "Mức lương theo công việc",
      "Phụ cấp lương",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Nguyên tắc",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Theo thỏa thuận",
      "Không thấp hơn lương tối thiểu",
@@ -48,7 +48,7 @@
    },
    {
     "label": "Làm thêm",
-    "icon": "⏰",
+    "icon": "clock",
     "children": [
      "Ngày thường: ít nhất 150%",
      "Ngày nghỉ: ít nhất 200%"

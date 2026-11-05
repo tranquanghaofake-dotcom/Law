@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Hành vi",
-    "icon": "🔪",
+    "icon": "conflict",
     "children": [
      "Tìm kiếm, sửa soạn công cụ",
      "Tạo điều kiện khác",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Chịu trách nhiệm",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Chỉ tội được liệt kê",
      "Theo độ tuổi"

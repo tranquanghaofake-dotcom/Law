@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Đặc điểm",
-    "icon": "📦",
+    "icon": "box",
     "children": [
      "Bên vay là chủ sở hữu khi nhận",
      "Trả tài sản cùng loại",
@@ -38,14 +38,14 @@
    },
    {
     "label": "Lãi",
-    "icon": "💵",
+    "icon": "money",
     "children": [
      "Chỉ khi thỏa thuận hoặc luật định"
     ]
    },
    {
     "label": "Phân biệt",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Mượn: trả chính tài sản"
     ]

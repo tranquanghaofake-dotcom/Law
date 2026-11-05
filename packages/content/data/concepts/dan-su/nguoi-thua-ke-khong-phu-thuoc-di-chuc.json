@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Ai",
-    "icon": "👪",
+    "icon": "family",
     "children": [
      "Con chưa thành niên",
      "Cha, mẹ",
@@ -38,14 +38,14 @@
    },
    {
     "label": "Được hưởng",
-    "icon": "➗",
+    "icon": "calc",
     "children": [
      "Hai phần ba một suất theo pháp luật"
     ]
    },
    {
     "label": "Không áp dụng",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Từ chối nhận",
      "Không có quyền hưởng"

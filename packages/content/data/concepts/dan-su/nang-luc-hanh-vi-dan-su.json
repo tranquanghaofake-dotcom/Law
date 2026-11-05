@@ -29,21 +29,21 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "🙋",
+    "icon": "person",
     "children": [
      "Tự mình xác lập quyền, nghĩa vụ"
     ]
    },
    {
     "label": "Đầy đủ",
-    "icon": "🔞",
+    "icon": "child",
     "children": [
      "Từ đủ 18 tuổi"
     ]
    },
    {
     "label": "Không đầy đủ",
-    "icon": "⚠️",
+    "icon": "warn",
     "children": [
      "Chưa thành niên",
      "Mất năng lực",

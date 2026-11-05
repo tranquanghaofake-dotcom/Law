@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Đặc điểm",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Một bên mang quyền lực nhà nước",
      "Phát sinh theo yêu cầu của bất kỳ bên nào",
@@ -38,7 +38,7 @@
    },
    {
     "label": "Vi phạm",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Chịu trách nhiệm trước Nhà nước"
     ]

@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Quyền chung",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Được cấp Giấy chứng nhận",
      "Hưởng thành quả",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Quyền riêng",
-    "icon": "🔄",
+    "icon": "cycle",
     "children": [
      "Chuyển nhượng, cho thuê",
      "Thừa kế, tặng cho",
@@ -48,7 +48,7 @@
    },
    {
     "label": "Phụ thuộc",
-    "icon": "🧩",
+    "icon": "puzzle",
     "children": [
      "Chủ thể, hình thức giao đất"
     ]

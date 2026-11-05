@@ -30,14 +30,14 @@
   "tree": [
    {
     "label": "Nội dung",
-    "icon": "🟡",
+    "icon": "warn",
     "children": [
      "Có quy tắc chung cho nhiều người"
     ]
    },
    {
     "label": "Hình thức",
-    "icon": "🥚",
+    "icon": "doc",
     "children": [
      "Đúng thẩm quyền",
      "Đúng tên loại văn bản",

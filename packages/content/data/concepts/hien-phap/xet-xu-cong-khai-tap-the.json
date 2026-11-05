@@ -28,14 +28,14 @@
   "tree": [
    {
     "label": "Công khai",
-    "icon": "👀",
+    "icon": "eye",
     "children": [
      "Nguyên tắc"
     ]
    },
    {
     "label": "Xét xử kín",
-    "icon": "🔒",
+    "icon": "lock",
     "children": [
      "Bí mật nhà nước",
      "Thuần phong mỹ tục",
@@ -45,7 +45,7 @@
    },
    {
     "label": "Tập thể",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Quyết định theo đa số",
      "Trừ thủ tục rút gọn"

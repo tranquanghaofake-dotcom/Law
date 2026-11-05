@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Tổ chức quyền lực",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Quyền lực công cộng đặc biệt",
      "Quản lý dân cư theo lãnh thổ",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Độc quyền",
-    "icon": "🔑",
+    "icon": "key",
     "children": [
      "Ban hành pháp luật",
      "Thu thuế"
@@ -47,7 +47,7 @@
    },
    {
     "label": "Phân biệt",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Thị tộc",
      "Tổ chức chính trị - xã hội"

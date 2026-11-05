@@ -31,14 +31,14 @@
   "tree": [
    {
     "label": "Mốc",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "22 tháng 11 năm 1945"
     ]
    },
    {
     "label": "Cơ quan",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Hội đồng nhân dân: dân bầu",
      "Ủy ban hành chính: Hội đồng nhân dân bầu"
@@ -46,14 +46,14 @@
    },
    {
     "label": "Xã, tỉnh",
-    "icon": "🏘️",
+    "icon": "village",
     "children": [
      "Có cả hai"
     ]
    },
    {
     "label": "Huyện, kỳ",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Chỉ có Ủy ban hành chính"
     ]

@@ -31,14 +31,14 @@
   "tree": [
    {
     "label": "Nhận việc",
-    "icon": "📥",
+    "icon": "list",
     "children": [
      "Cơ quan trình tự soạn hoặc giao"
     ]
    },
    {
     "label": "Lấy ý kiến",
-    "icon": "🗣️",
+    "icon": "announce",
     "children": [
      "Người chịu tác động",
      "Các bộ, ngành liên quan"
@@ -46,14 +46,14 @@
    },
    {
     "label": "Phản biện",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Mặt trận Tổ quốc"
     ]
    },
    {
     "label": "Chỉnh sửa",
-    "icon": "✏️",
+    "icon": "pen",
     "children": [
      "Tiếp thu ý kiến"
     ]

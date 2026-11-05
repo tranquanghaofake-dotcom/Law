@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Nhà nước",
-    "icon": "🌱",
+    "icon": "plant",
     "children": [
      "Chính sách bảo vệ môi trường",
      "Ứng phó biến đổi khí hậu",
@@ -38,7 +38,7 @@
    },
    {
     "label": "Người gây ô nhiễm",
-    "icon": "🏭",
+    "icon": "company",
     "children": [
      "Bị xử lý nghiêm",
      "Khắc phục, bồi thường"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Điều 43",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Quyền sống trong môi trường trong lành",
      "Nghĩa vụ bảo vệ môi trường"

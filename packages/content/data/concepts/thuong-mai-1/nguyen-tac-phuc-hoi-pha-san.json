@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Nguyên tắc",
-    "icon": "🩺",
+    "icon": "health",
     "children": [
      "Ưu tiên phục hồi",
      "Kịp thời, hiệu quả",
@@ -41,14 +41,14 @@
    },
    {
     "label": "Thẩm quyền",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Tòa án nhân dân khu vực"
     ]
    },
    {
     "label": "Phân biệt",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Phá sản: tư pháp",
      "Giải thể: doanh nghiệp tự làm"

@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Sở hữu",
-    "icon": "🏠",
+    "icon": "home",
     "children": [
      "Không còn tuyệt đối",
      "Không hại quyền lợi nhân dân"
@@ -39,7 +39,7 @@
    },
    {
     "label": "Khế ước",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Có thể vô hiệu",
      "Khi một bên bị bóc lột"
@@ -47,7 +47,7 @@
    },
    {
     "label": "Khác",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Dân luật cũ theo luật Pháp"
     ]

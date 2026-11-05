@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Thành viên hợp danh",
-    "icon": "🤝",
+    "icon": "handshake",
     "children": [
      "Ít nhất 02",
      "Phải là cá nhân",
@@ -38,7 +38,7 @@
    },
    {
     "label": "Thành viên góp vốn",
-    "icon": "💼",
+    "icon": "box",
     "children": [
      "Không bắt buộc",
      "Trách nhiệm hữu hạn",
@@ -47,7 +47,7 @@
    },
    {
     "label": "Đặc biệt",
-    "icon": "⭐",
+    "icon": "star",
     "children": [
      "Có tư cách pháp nhân"
     ]

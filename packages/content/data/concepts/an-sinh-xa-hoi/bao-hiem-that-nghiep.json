@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Tính chất",
-    "icon": "📋",
+    "icon": "list",
     "children": [
      "Bảo hiểm bắt buộc",
      "Đóng vào Quỹ bảo hiểm thất nghiệp"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Phòng ngừa",
-    "icon": "🧭",
+    "icon": "arrow",
     "children": [
      "Tư vấn, giới thiệu việc làm",
      "Đào tạo",
@@ -47,14 +47,14 @@
    },
    {
     "label": "Bù đắp",
-    "icon": "💵",
+    "icon": "money",
     "children": [
      "Trợ cấp thất nghiệp"
     ]
    },
    {
     "label": "Tham gia",
-    "icon": "✍️",
+    "icon": "pen",
     "children": [
      "Hợp đồng từ đủ 01 tháng"
     ]

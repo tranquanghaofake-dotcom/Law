@@ -31,35 +31,35 @@
   "tree": [
    {
     "label": "Mốc",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "1815, Gia Long"
     ]
    },
    {
     "label": "Quy mô",
-    "icon": "🔢",
+    "icon": "calc",
     "children": [
      "398 điều"
     ]
    },
    {
     "label": "Nguồn",
-    "icon": "📚",
+    "icon": "book",
     "children": [
      "Đại Thanh luật lệ"
     ]
    },
    {
     "label": "Người phụ trách",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Nguyễn Văn Thành"
     ]
    },
    {
     "label": "Chế định",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Ngũ hình, thập ác, bát nghị"
     ]

@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Đơn vị bầu cử",
-    "icon": "🗺️",
+    "icon": "map",
     "children": [
      "Không quá 3 đại biểu Quốc hội",
      "Không quá 5 đại biểu Hội đồng nhân dân"
@@ -39,7 +39,7 @@
    },
    {
     "label": "Ai ấn định",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Hội đồng bầu cử quốc gia",
      "Ủy ban bầu cử cấp tương ứng"
@@ -47,14 +47,14 @@
    },
    {
     "label": "Công bố",
-    "icon": "📢",
+    "icon": "announce",
     "children": [
      "Chậm nhất 80 ngày trước"
     ]
    },
    {
     "label": "Chia nhỏ",
-    "icon": "📦",
+    "icon": "box",
     "children": [
      "Khu vực bỏ phiếu"
     ]

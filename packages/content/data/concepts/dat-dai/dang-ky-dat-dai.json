@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Bắt buộc",
-    "icon": "❗",
+    "icon": "warn",
     "children": [
      "Người sử dụng đất",
      "Người được giao đất để quản lý"
@@ -37,14 +37,14 @@
    },
    {
     "label": "Theo yêu cầu",
-    "icon": "🙋",
+    "icon": "person",
     "children": [
      "Nhà ở, công trình trên đất"
     ]
    },
    {
     "label": "Hai loại",
-    "icon": "🔁",
+    "icon": "cycle",
     "children": [
      "Lần đầu",
      "Biến động"
@@ -52,7 +52,7 @@
    },
    {
     "label": "Hình thức",
-    "icon": "💻",
+    "icon": "device",
     "children": [
      "Giấy hoặc điện tử, giá trị như nhau"
     ]

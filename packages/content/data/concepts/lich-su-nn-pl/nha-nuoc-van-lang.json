@@ -27,28 +27,28 @@
   "tree": [
    {
     "label": "Đứng đầu",
-    "icon": "👑",
+    "icon": "crown",
     "children": [
      "Hùng Vương"
     ]
    },
    {
     "label": "Kinh đô",
-    "icon": "🏯",
+    "icon": "state",
     "children": [
      "Phong Châu"
     ]
    },
    {
     "label": "Lãnh thổ",
-    "icon": "🗺️",
+    "icon": "map",
     "children": [
      "15 bộ"
     ]
    },
    {
     "label": "Đặc điểm",
-    "icon": "🌱",
+    "icon": "plant",
     "children": [
      "Sơ khai",
      "Cha truyền con nối"

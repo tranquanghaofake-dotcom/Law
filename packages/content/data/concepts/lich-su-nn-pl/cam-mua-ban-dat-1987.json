@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Cấm",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Mua bán đất",
      "Phát canh thu tô"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Được",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "Bán thành quả lao động",
      "Kết quả đầu tư trên đất"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Chuyển biến",
-    "icon": "🔄",
+    "icon": "cycle",
     "children": [
      "Luật 1993 cho chuyển nhượng quyền sử dụng"
     ]

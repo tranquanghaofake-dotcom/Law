@@ -31,14 +31,14 @@
   "tree": [
    {
     "label": "Buộc thực hiện",
-    "icon": "👉",
+    "icon": "arrow",
     "children": [
      "Buộc thực hiện đúng hợp đồng"
     ]
    },
    {
     "label": "Bằng tiền",
-    "icon": "💵",
+    "icon": "money",
     "children": [
      "Phạt vi phạm",
      "Bồi thường thiệt hại"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Dừng hợp đồng",
-    "icon": "⏹️",
+    "icon": "pause",
     "children": [
      "Tạm ngừng",
      "Đình chỉ",
@@ -55,7 +55,7 @@
    },
    {
     "label": "Khác",
-    "icon": "➕",
+    "icon": "calc",
     "children": [
      "Do các bên thỏa thuận"
     ]

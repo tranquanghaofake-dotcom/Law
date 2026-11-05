@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Mốc",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "6/6/1884",
      "Nhà Nguyễn mất độc lập"
@@ -39,7 +39,7 @@
    },
    {
     "label": "Nam Kỳ",
-    "icon": "🌴",
+    "icon": "map",
     "children": [
      "Thuộc địa",
      "Cai trị trực tiếp"
@@ -47,7 +47,7 @@
    },
    {
     "label": "Bắc Kỳ",
-    "icon": "🏔️",
+    "icon": "map",
     "children": [
      "Bảo hộ",
      "Quyền thực tế ở người Pháp"
@@ -55,7 +55,7 @@
    },
    {
     "label": "Trung Kỳ",
-    "icon": "🏯",
+    "icon": "state",
     "children": [
      "Bảo hộ",
      "Triều Nguyễn danh nghĩa"

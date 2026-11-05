@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "📒",
+    "icon": "book",
     "children": [
      "Toàn bộ thu, chi của Nhà nước",
      "Được dự toán",
@@ -40,14 +40,14 @@
    },
    {
     "label": "Năm ngân sách",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "01/01 đến 31/12"
     ]
    },
    {
     "label": "Thu",
-    "icon": "⬇️",
+    "icon": "arrow",
     "children": [
      "Thuế, phí, lệ phí",
      "Viện trợ không hoàn lại"
@@ -55,7 +55,7 @@
    },
    {
     "label": "Chi",
-    "icon": "⬆️",
+    "icon": "top",
     "children": [
      "Đầu tư phát triển",
      "Chi thường xuyên"

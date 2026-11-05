@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Dấu hiệu",
-    "icon": "🤫",
+    "icon": "lock",
     "children": [
      "Không qua phương tiện thông tin đại chúng",
      "Dưới 100 nhà đầu tư"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Người mua",
-    "icon": "👔",
+    "icon": "person",
     "children": [
      "Nhà đầu tư chiến lược",
      "Nhà đầu tư chứng khoán chuyên nghiệp"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Áp dụng",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Công ty cổ phần không đại chúng"
     ]

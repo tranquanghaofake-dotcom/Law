@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "🆕",
+    "icon": "new",
     "children": [
      "Loại hình mới của Luật 2024",
      "Ngân sách nhà nước bảo đảm"
@@ -39,7 +39,7 @@
    },
    {
     "label": "Điều kiện",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "Từ đủ 75 tuổi",
      "70–75 tuổi thuộc hộ nghèo, cận nghèo",
@@ -48,7 +48,7 @@
    },
    {
     "label": "Chế độ",
-    "icon": "🎁",
+    "icon": "gift",
     "children": [
      "Trợ cấp hằng tháng",
      "Hỗ trợ mai táng",

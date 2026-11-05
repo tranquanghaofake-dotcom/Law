@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Xác lập quyền",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Giao đất",
      "Cho thuê đất",
@@ -38,7 +38,7 @@
    },
    {
     "label": "Người sử dụng",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Được chuyển quyền",
      "Được pháp luật bảo hộ"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Thu hồi",
-    "icon": "🔙",
+    "icon": "cycle",
     "children": [
      "Thật cần thiết, do luật định",
      "Quốc phòng, an ninh, lợi ích quốc gia",
@@ -55,7 +55,7 @@
    },
    {
     "label": "Trưng dụng",
-    "icon": "⏳",
+    "icon": "clock",
     "children": [
      "Có thời hạn, khẩn cấp"
     ]

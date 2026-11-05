@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Không được",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Bắt, giam, giữ",
      "Khởi tố"
@@ -36,7 +36,7 @@
    },
    {
     "label": "Trừ khi",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "Quốc hội đồng ý",
      "Ủy ban thường vụ đồng ý khi Quốc hội không họp"
@@ -44,7 +44,7 @@
    },
    {
     "label": "Quả tang",
-    "icon": "⚡",
+    "icon": "bolt",
     "children": [
      "Tạm giữ ngay",
      "Lập tức báo cáo"

@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Ba bên",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Bên bảo lãnh (người thứ ba)",
      "Bên nhận bảo lãnh (có quyền)",
@@ -38,14 +38,14 @@
    },
    {
     "label": "Loại",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Biện pháp đối nhân"
     ]
    },
    {
     "label": "Phát sinh khi",
-    "icon": "⏰",
+    "icon": "clock",
     "children": [
      "Đến hạn không thực hiện",
      "Hoặc thực hiện không đúng"

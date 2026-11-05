@@ -31,14 +31,14 @@
   "tree": [
    {
     "label": "Điều hành",
-    "icon": "🧭",
+    "icon": "arrow",
     "children": [
      "Quản tài viên"
     ]
    },
    {
     "label": "Tham gia",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Chủ nợ trong danh sách",
      "Đại diện người lao động"
@@ -46,14 +46,14 @@
    },
    {
     "label": "Thông qua",
-    "icon": "🗳️",
+    "icon": "vote",
     "children": [
      "Từ 65% tổng nợ không có bảo đảm"
     ]
    },
    {
     "label": "Hiệu lực",
-    "icon": "📌",
+    "icon": "pin",
     "children": [
      "Bắt buộc với mọi chủ nợ"
     ]

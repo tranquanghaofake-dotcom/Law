@@ -32,7 +32,7 @@
   "tree": [
    {
     "label": "Mốc",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "29 tháng 12 năm 1959",
      "Đạo luật hôn nhân gia đình đầu tiên"
@@ -40,7 +40,7 @@
    },
    {
     "label": "Nguyên tắc",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Tự do, tiến bộ",
      "Một vợ một chồng",
@@ -50,7 +50,7 @@
    },
    {
     "label": "Xóa bỏ",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Đa thê, vợ lẽ"
     ]

@@ -29,21 +29,21 @@
   "tree": [
    {
     "label": "Mốc",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "1029, Lý Thái Tông"
     ]
    },
    {
     "label": "Thiết chế",
-    "icon": "🔔",
+    "icon": "announce",
     "children": [
      "Lầu chuông hai bên thềm rồng"
     ]
    },
    {
     "label": "Ý nghĩa",
-    "icon": "💡",
+    "icon": "idea",
     "children": [
      "Quyền kêu oan trực tiếp",
      "Vua xét xử tối cao",

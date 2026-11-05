@@ -46,7 +46,7 @@
   {:else}
     <p class="intro-example"><b>Ví dụ:</b> {layers.example}</p>
   {/if}
-  {#if concept.note && !open}<button class="intro-changed" type="button" aria-controls="intro-verbatim" onclick={() => (open = true)}><span aria-hidden="true">⚠</span> Luật đã thay đổi</button>{/if}
+  {#if concept.note && !open}<button class="intro-changed" type="button" aria-controls="intro-verbatim" onclick={() => (open = true)}><Glyph name="warn" size={15} /> Luật đã thay đổi</button>{/if}
   <button class="btn ghost plain intro-toggle" type="button" aria-expanded={open} aria-controls="intro-verbatim" onclick={() => (open = !open)}>
     {open ? 'Ẩn nguyên văn điều luật' : 'Xem nguyên văn điều luật'}
   </button>

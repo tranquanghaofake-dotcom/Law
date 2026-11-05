@@ -31,25 +31,25 @@
   "tree": [
    {
     "label": "Khẩn cấp",
-    "icon": "🚨",
+    "icon": "warn",
     "children": [
      "Thiên tai, dịch bệnh, quốc phòng"
     ]
    },
    {
     "label": "Cấp bách",
-    "icon": "⚡",
+    "icon": "bolt",
     "children": [
      "Vấn đề thực tế cần xử lý ngay"
     ]
    },
    {
     "label": "Cần tạm ngưng hiệu lực",
-    "icon": "⏸️"
+    "icon": "pause"
    },
    {
     "label": "Cần sửa ngay",
-    "icon": "🛠️",
+    "icon": "tool",
     "children": [
      "Cho phù hợp văn bản mới, điều ước"
     ]

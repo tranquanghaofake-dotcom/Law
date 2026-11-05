@@ -29,35 +29,35 @@
   "tree": [
    {
     "label": "Định nghĩa",
-    "icon": "👦",
+    "icon": "child",
     "children": [
      "Chưa đủ 18 tuổi"
     ]
    },
    {
     "label": "15 đến dưới 18",
-    "icon": "🧑",
+    "icon": "person",
     "children": [
      "Được làm, trừ việc ở Điều 147"
     ]
    },
    {
     "label": "13 đến dưới 15",
-    "icon": "🧒",
+    "icon": "child",
     "children": [
      "Chỉ công việc nhẹ theo danh mục"
     ]
    },
    {
     "label": "Dưới 13",
-    "icon": "👶",
+    "icon": "child",
     "children": [
      "Theo khoản 3 Điều 145"
     ]
    },
    {
     "label": "Dưới 15",
-    "icon": "📝",
+    "icon": "pen",
     "children": [
      "Hợp đồng văn bản, có người đại diện"
     ]

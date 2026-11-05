@@ -29,28 +29,28 @@
   "tree": [
    {
     "label": "Phổ thông",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Mọi công dân đủ tuổi"
     ]
    },
    {
     "label": "Bình đẳng",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Mỗi cử tri một phiếu mỗi cấp"
     ]
    },
    {
     "label": "Trực tiếp",
-    "icon": "✋",
+    "icon": "ban",
     "children": [
      "Tự mình bầu, không bầu thay"
     ]
    },
    {
     "label": "Bỏ phiếu kín",
-    "icon": "🤫",
+    "icon": "lock",
     "children": [
      "Không ai được xem phiếu"
     ]

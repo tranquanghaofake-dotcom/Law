@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Giới hạn",
-    "icon": "📏",
+    "icon": "measure",
     "children": [
      "Tối đa 10% chứng khoán của 01 tổ chức",
      "Tối đa 20% tài sản quỹ vào 01 tổ chức",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Cấm",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Mua chứng chỉ quỹ của chính quỹ"
     ]

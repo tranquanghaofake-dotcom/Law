@@ -29,14 +29,14 @@
   "tree": [
    {
     "label": "Khi nào",
-    "icon": "⏰",
+    "icon": "clock",
     "children": [
      "Không tự nguyện chấp hành"
     ]
    },
    {
     "label": "Biện pháp",
-    "icon": "🔒",
+    "icon": "lock",
     "children": [
      "Khấu trừ lương, tài khoản",
      "Kê biên để bán đấu giá",

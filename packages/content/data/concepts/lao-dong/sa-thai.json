@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Tại nơi làm việc",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Trộm cắp, tham ô, đánh bạc",
      "Cố ý gây thương tích, ma túy"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Gây hại",
-    "icon": "💥",
+    "icon": "warn",
     "children": [
      "Tiết lộ bí mật",
      "Quấy rối tình dục"
@@ -45,14 +45,14 @@
    },
    {
     "label": "Tái phạm",
-    "icon": "🔁",
+    "icon": "cycle",
     "children": [
      "Khi chưa xóa kỷ luật"
     ]
    },
    {
     "label": "Bỏ việc",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "05 ngày cộng dồn trong 30 ngày",
      "Không có lý do chính đáng"

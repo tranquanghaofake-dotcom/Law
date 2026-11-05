@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Đặc điểm",
-    "icon": "🔒",
+    "icon": "lock",
     "children": [
      "Bắt buộc",
      "Không hoàn trả trực tiếp",
@@ -38,14 +38,14 @@
    },
    {
     "label": "Ai đặt ra",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Chỉ Quốc hội, bằng luật"
     ]
    },
    {
     "label": "Phân loại",
-    "icon": "🔀",
+    "icon": "compare",
     "children": [
      "Trực thu: người nộp là người chịu",
      "Gián thu: người tiêu dùng chịu"
@@ -53,7 +53,7 @@
    },
    {
     "label": "Khác phí",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Phí có đối giá cụ thể"
     ]

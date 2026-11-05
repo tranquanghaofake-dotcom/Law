@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Khách quan",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Từ hai người trở lên",
      "Cùng thực hiện một tội"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Chủ quan",
-    "icon": "🧠",
+    "icon": "idea",
     "children": [
      "Cùng cố ý",
      "Không có đồng phạm vô ý"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Bốn vai",
-    "icon": "🎭",
+    "icon": "mask",
     "children": [
      "Tổ chức",
      "Thực hành",
@@ -55,7 +55,7 @@
    },
    {
     "label": "Vượt quá",
-    "icon": "⚠️",
+    "icon": "warn",
     "children": [
      "Người thực hành tự chịu"
     ]

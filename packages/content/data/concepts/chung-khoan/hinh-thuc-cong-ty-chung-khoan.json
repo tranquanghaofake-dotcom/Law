@@ -28,14 +28,14 @@
   "tree": [
    {
     "label": "Cấp phép",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Ủy ban Chứng khoán Nhà nước"
     ]
    },
    {
     "label": "Loại hình",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Công ty trách nhiệm hữu hạn",
      "Công ty cổ phần"
@@ -43,7 +43,7 @@
    },
    {
     "label": "Thứ tự",
-    "icon": "🔢",
+    "icon": "calc",
     "children": [
      "Giấy phép trước",
      "Đăng ký doanh nghiệp sau"

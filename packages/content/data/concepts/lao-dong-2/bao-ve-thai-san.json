@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Khi nào",
-    "icon": "🤰",
+    "icon": "family",
     "children": [
      "Mang thai từ tháng thứ 07",
      "Tháng thứ 06 nếu vùng khó khăn",
@@ -38,7 +38,7 @@
    },
    {
     "label": "Không được giao",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Làm đêm",
      "Làm thêm giờ",
@@ -47,7 +47,7 @@
    },
    {
     "label": "Không được sa thải vì",
-    "icon": "🛡️",
+    "icon": "shield",
     "children": [
      "Kết hôn, mang thai",
      "Nghỉ thai sản, nuôi con nhỏ"

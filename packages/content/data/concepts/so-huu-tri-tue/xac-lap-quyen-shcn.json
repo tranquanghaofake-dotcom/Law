@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Đăng ký, cấp văn bằng",
-    "icon": "📋",
+    "icon": "list",
     "children": [
      "Sáng chế, kiểu dáng",
      "Nhãn hiệu thông thường",
@@ -40,7 +40,7 @@
    },
    {
     "label": "Do sử dụng",
-    "icon": "🏪",
+    "icon": "cart",
     "children": [
      "Nhãn hiệu nổi tiếng",
      "Tên thương mại"
@@ -48,14 +48,14 @@
    },
    {
     "label": "Có được hợp pháp, bảo mật",
-    "icon": "🔐",
+    "icon": "lock",
     "children": [
      "Bí mật kinh doanh"
     ]
    },
    {
     "label": "Nguyên tắc",
-    "icon": "🥇",
+    "icon": "star",
     "children": [
      "Nộp đơn đầu tiên"
     ]

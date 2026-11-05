@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Điều kiện",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "Thực tế phát sinh",
      "Liên quan sản xuất, kinh doanh",
@@ -40,7 +40,7 @@
    },
    {
     "label": "Loại trừ",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Khoản chi không được trừ"
     ]

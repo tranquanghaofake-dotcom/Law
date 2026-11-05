@@ -31,14 +31,14 @@
   "tree": [
    {
     "label": "Chu trình",
-    "icon": "🔄",
+    "icon": "cycle",
     "children": [
      "Lập dự toán → chấp hành → quyết toán"
     ]
    },
    {
     "label": "Dự phòng",
-    "icon": "🧰",
+    "icon": "tool",
     "children": [
      "Khoản chưa phân bổ trong dự toán chi",
      "Từ 2% đến 5% tổng chi"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Dùng cho",
-    "icon": "🌪️",
+    "icon": "warn",
     "children": [
      "Thiên tai, dịch bệnh",
      "Nhiệm vụ cấp bách"
@@ -54,7 +54,7 @@
    },
    {
     "label": "Quyết định dự toán",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Quốc hội, Hội đồng nhân dân"
     ]

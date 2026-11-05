@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Chuyển nhượng",
-    "icon": "📋",
+    "icon": "list",
     "children": [
      "Sáng chế, kiểu dáng, nhãn hiệu",
      "Có hiệu lực khi đăng ký"
@@ -39,7 +39,7 @@
    },
    {
     "label": "Li-xăng",
-    "icon": "🤝",
+    "icon": "handshake",
     "children": [
      "Hiệu lực theo thỏa thuận",
      "Đăng ký để có giá trị với bên thứ ba"
@@ -47,7 +47,7 @@
    },
    {
     "label": "Chấm dứt",
-    "icon": "🔚",
+    "icon": "end",
     "children": [
      "Quyền của bên giao chấm dứt"
     ]

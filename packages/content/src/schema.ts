@@ -88,6 +88,9 @@ export function overlap(a: string, b: string): number {
   const ta = tokens(a), tb = new Set(tokens(b));
   return ta.length ? ta.filter((w) => tb.has(w)).length / ta.length : 0;
 }
+/** Bộ icon nhánh sơ đồ (hình vẽ ở apps/web/src/lib/art/memoIcons.ts). */
+export const MEMO_ICONS = ['state', 'scales', 'scroll', 'book', 'doc', 'list', 'pen', 'vote', 'announce', 'stamp', 'calendar', 'clock', 'pause', 'end', 'cycle', 'infinity', 'check', 'ban', 'warn', 'question', 'idea', 'bolt', 'star', 'crown', 'new', 'person', 'people', 'family', 'child', 'handshake', 'fist', 'mask', 'heart', 'conflict', 'eye', 'search', 'compare', 'arrow', 'top', 'stairs', 'door', 'target', 'link', 'puzzle', 'measure', 'chart', 'calc', 'money', 'bank', 'cart', 'gift', 'box', 'tool', 'company', 'home', 'village', 'key', 'lock', 'unlock', 'shield', 'map', 'globe', 'flag', 'pin', 'plant', 'vehicle', 'health', 'device', 'trash', 'cut', 'animal', 'n1', 'n2', 'n3', 'n4', 'n5', 'n6'] as const;
+
 export const MEMO_KINDS = ['ladder', 'checklist', 'steps', 'compare', 'tree'] as const;
 
 export const memoSchema = z.object({
@@ -96,7 +99,7 @@ export const memoSchema = z.object({
   /** Kiểu hình: bậc thang, danh sách điều kiện, các bước, hai cột, cây. */
   kind: z.enum(MEMO_KINDS).optional(),
   hook: z.string().min(1).max(160, 'mẹo nhớ tối đa 160 ký tự').optional(),
-  tree: z.array(z.object({ label: memoLabel, icon: z.string().max(4, 'biểu tượng nhánh tối đa 1 ký hiệu').optional(), children: z.array(memoLabel).max(4, 'mỗi nhánh tối đa 4 ý').optional() })).min(2, 'sơ đồ cần 2–6 nhánh').max(6, 'sơ đồ cần 2–6 nhánh').optional(),
+  tree: z.array(z.object({ label: memoLabel, icon: z.enum(MEMO_ICONS, { message: 'icon nhánh phải là tên trong bộ icon' }).optional(), children: z.array(memoLabel).max(4, 'mỗi nhánh tối đa 4 ý').optional() })).min(2, 'sơ đồ cần 2–6 nhánh').max(6, 'sơ đồ cần 2–6 nhánh').optional(),
   /** Tình huống hỏi – đáp: tự trả lời trong đầu trước khi xem đáp. */
   case: z.object({
     q: z.string().min(1).refine((q) => q.trim().endsWith('?'), 'câu hỏi tình huống phải kết thúc bằng dấu hỏi'),

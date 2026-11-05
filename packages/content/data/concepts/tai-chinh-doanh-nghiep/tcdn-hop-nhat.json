@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Cơ chế",
-    "icon": "🔀",
+    "icon": "compare",
     "children": [
      "Hai hoặc một số công ty",
      "Thành một công ty mới"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Hệ quả",
-    "icon": "📌",
+    "icon": "pin",
     "children": [
      "Các công ty bị hợp nhất chấm dứt",
      "Công ty mới chịu mọi nợ cũ"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Phân biệt",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Sáp nhập: bên nhận vẫn tồn tại"
     ]

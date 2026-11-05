@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Thành viên",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "02 đến 50",
      "Tổ chức, cá nhân"
@@ -37,28 +37,28 @@
    },
    {
     "label": "Trách nhiệm",
-    "icon": "🛡️",
+    "icon": "shield",
     "children": [
      "Trong phạm vi vốn đã góp"
     ]
    },
    {
     "label": "Chuyển nhượng",
-    "icon": "🔁",
+    "icon": "cycle",
     "children": [
      "Chào bán thành viên còn lại trước"
     ]
    },
    {
     "label": "Góp vốn",
-    "icon": "⏳",
+    "icon": "clock",
     "children": [
      "Trong 90 ngày"
     ]
    },
    {
     "label": "Không được",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Phát hành cổ phần"
     ]

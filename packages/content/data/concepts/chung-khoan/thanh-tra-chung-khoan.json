@@ -30,28 +30,28 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "🔎",
+    "icon": "search",
     "children": [
      "Thanh tra chuyên ngành"
     ]
    },
    {
     "label": "Chỉ đạo",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Chủ tịch Ủy ban"
     ]
    },
    {
     "label": "Hướng dẫn nghiệp vụ",
-    "icon": "📚",
+    "icon": "book",
     "children": [
      "Thanh tra Bộ Tài chính"
     ]
    },
    {
     "label": "Quyền",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Thanh tra, kiểm tra",
      "Xử phạt hoặc kiến nghị xử phạt"

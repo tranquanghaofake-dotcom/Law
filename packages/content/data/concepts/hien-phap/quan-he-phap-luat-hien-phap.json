@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Chủ thể đặc biệt",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Nhân dân",
      "Quốc hội",
@@ -40,7 +40,7 @@
    },
    {
     "label": "Hai loại quan hệ",
-    "icon": "2️⃣",
+    "icon": "n2",
     "children": [
      "Chung: không cần sự kiện pháp lý",
      "Cụ thể: cử tri – tổ bầu cử"
@@ -48,7 +48,7 @@
    },
    {
     "label": "Cơ sở phát sinh",
-    "icon": "📌",
+    "icon": "pin",
     "children": [
      "Quy phạm luật Hiến pháp",
      "Sự kiện pháp lý"

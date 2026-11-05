@@ -31,28 +31,28 @@
   "tree": [
    {
     "label": "Cách 1",
-    "icon": "🧾",
+    "icon": "doc",
     "children": [
      "Mua lại khoản phải thu của bên bán"
     ]
    },
    {
     "label": "Cách 2",
-    "icon": "💸",
+    "icon": "money",
     "children": [
      "Ứng trước tiền thay bên mua"
     ]
    },
    {
     "label": "Cơ sở",
-    "icon": "📝",
+    "icon": "pen",
     "children": [
      "Hợp đồng mua bán hàng, dịch vụ"
     ]
    },
    {
     "label": "Lợi ích",
-    "icon": "⚡",
+    "icon": "bolt",
     "children": [
      "Bên bán có tiền ngay"
     ]

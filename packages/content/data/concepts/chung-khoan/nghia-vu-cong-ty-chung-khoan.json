@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Tài sản",
-    "icon": "🔒",
+    "icon": "lock",
     "children": [
      "Tách biệt từng khách",
      "Tách với tài sản công ty"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Hợp đồng",
-    "icon": "📝",
+    "icon": "pen",
     "children": [
      "Bằng văn bản",
      "Thông tin trung thực"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Lệnh",
-    "icon": "🥇",
+    "icon": "star",
     "children": [
      "Ưu tiên lệnh khách hàng",
      "Chống chạy trước lệnh"
@@ -53,7 +53,7 @@
    },
    {
     "label": "Tư vấn",
-    "icon": "🎯",
+    "icon": "target",
     "children": [
      "Phù hợp khả năng chịu rủi ro"
     ]

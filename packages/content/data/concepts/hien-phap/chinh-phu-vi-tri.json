@@ -29,28 +29,28 @@
   "tree": [
    {
     "label": "Hành chính cao nhất",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Đứng đầu hệ thống hành chính"
     ]
    },
    {
     "label": "Quyền hành pháp",
-    "icon": "⚙️",
+    "icon": "tool",
     "children": [
      "Hiến pháp 2013 ghi nhận rõ"
     ]
    },
    {
     "label": "Chấp hành của Quốc hội",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Tổ chức thi hành luật, nghị quyết"
     ]
    },
    {
     "label": "Trách nhiệm",
-    "icon": "📋",
+    "icon": "list",
     "children": [
      "Trước Quốc hội"
     ]

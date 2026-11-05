@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Đơn vị",
-    "icon": "🗺️",
+    "icon": "map",
     "children": [
      "24 lộ",
      "Trại: châu Hoan, châu Ái"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Dưới lộ",
-    "icon": "🏘️",
+    "icon": "village",
     "children": [
      "Phủ, huyện",
      "Hương, giáp"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Mốc",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "1010"
     ]

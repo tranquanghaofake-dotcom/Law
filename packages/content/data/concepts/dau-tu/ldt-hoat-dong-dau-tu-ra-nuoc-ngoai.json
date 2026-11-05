@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Dấu hiệu",
-    "icon": "✈️",
+    "icon": "globe",
     "children": [
      "Chuyển vốn từ Việt Nam ra",
      "Dùng lợi nhuận để đầu tư"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Hình thức",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Lập tổ chức ở nước ngoài",
      "Góp vốn, mua cổ phần",
@@ -47,7 +47,7 @@
    },
    {
     "label": "Tuân thủ",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Luật Việt Nam và nước tiếp nhận"
     ]

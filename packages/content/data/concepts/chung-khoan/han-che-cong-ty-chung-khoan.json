@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Không được",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Bảo đảm lợi nhuận, không lỗ",
      "Tiết lộ thông tin khách hàng",
@@ -37,14 +37,14 @@
    },
    {
     "label": "Ngoại lệ",
-    "icon": "🔓",
+    "icon": "unlock",
     "children": [
      "Chứng khoán thu nhập cố định"
     ]
    },
    {
     "label": "Cổ đông sáng lập",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Hạn chế 03 năm"
     ]

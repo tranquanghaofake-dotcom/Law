@@ -27,14 +27,14 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "🔗",
+    "icon": "link",
     "children": [
      "Quan hệ gắn bó cá nhân – Nhà nước"
     ]
    },
    {
     "label": "Công dân",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Quyền với Nhà nước",
      "Nghĩa vụ với Nhà nước"
@@ -42,7 +42,7 @@
    },
    {
     "label": "Nhà nước",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Quyền với công dân",
      "Trách nhiệm, ví dụ bảo hộ"

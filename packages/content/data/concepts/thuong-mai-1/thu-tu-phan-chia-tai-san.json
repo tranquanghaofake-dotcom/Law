@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Trước",
-    "icon": "1️⃣",
+    "icon": "n1",
     "children": [
      "Chi phí phá sản",
      "Nợ lương",
@@ -40,7 +40,7 @@
    },
    {
     "label": "Tiếp",
-    "icon": "2️⃣",
+    "icon": "n2",
     "children": [
      "Quyền lợi người lao động",
      "Nợ phát sinh để phục hồi"
@@ -48,7 +48,7 @@
    },
    {
     "label": "Sau",
-    "icon": "3️⃣",
+    "icon": "n3",
     "children": [
      "Nghĩa vụ với Nhà nước",
      "Nợ không có bảo đảm"
@@ -56,7 +56,7 @@
    },
    {
     "label": "Không đủ",
-    "icon": "➗",
+    "icon": "calc",
     "children": [
      "Chia theo tỷ lệ cùng hàng"
     ]

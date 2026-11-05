@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Phát hành cùng",
-    "icon": "🎁",
+    "icon": "gift",
     "children": [
      "Trái phiếu",
      "Cổ phiếu ưu đãi"
@@ -36,7 +36,7 @@
    },
    {
     "label": "Quyền",
-    "icon": "🔑",
+    "icon": "key",
     "children": [
      "Mua cổ phiếu phổ thông",
      "Giá xác định trước"
@@ -44,7 +44,7 @@
    },
    {
     "label": "Phân biệt",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Chứng quyền có bảo đảm: công ty chứng khoán phát hành"
     ]

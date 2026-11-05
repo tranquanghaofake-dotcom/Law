@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Quyền tác giả",
-    "icon": "✍️",
+    "icon": "pen",
     "children": [
      "Phát sinh khi sáng tạo và định hình",
      "Không cần đăng ký"
@@ -37,21 +37,21 @@
    },
    {
     "label": "Đăng ký",
-    "icon": "📋",
+    "icon": "list",
     "children": [
      "Chỉ là chứng cứ"
     ]
    },
    {
     "label": "Sở hữu công nghiệp",
-    "icon": "🏭",
+    "icon": "company",
     "children": [
      "Sáng chế, kiểu dáng, nhãn hiệu: văn bằng"
     ]
    },
    {
     "label": "Ngoại lệ",
-    "icon": "⭐",
+    "icon": "star",
     "children": [
      "Nhãn hiệu nổi tiếng: do sử dụng"
     ]

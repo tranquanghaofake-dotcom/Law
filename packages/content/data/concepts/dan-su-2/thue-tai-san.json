@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "🔑",
+    "icon": "key",
     "children": [
      "Chuyển quyền sử dụng",
      "Không chuyển quyền sở hữu"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Đặc điểm",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "Có thời hạn",
      "Trả tiền thuê"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Phân biệt",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Mượn: không trả tiền",
      "Thuê khoán: hưởng hoa lợi"

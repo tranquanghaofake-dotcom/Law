@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Thay đổi",
-    "icon": "🔄",
+    "icon": "cycle",
     "children": [
      "Bỏ Tòa án cấp huyện",
      "Bỏ Tòa án cấp cao"
@@ -39,7 +39,7 @@
    },
    {
     "label": "Tòa khu vực",
-    "icon": "🏠",
+    "icon": "home",
     "children": [
      "Sơ thẩm hầu hết vụ việc",
      "Kể cả có yếu tố nước ngoài"
@@ -47,7 +47,7 @@
    },
    {
     "label": "Tòa cấp tỉnh",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Phúc thẩm",
      "Giám đốc thẩm, tái thẩm",

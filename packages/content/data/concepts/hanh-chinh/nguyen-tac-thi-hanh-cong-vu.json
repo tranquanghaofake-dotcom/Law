@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Nguyên tắc",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "Tuân thủ Hiến pháp, pháp luật",
      "Bảo vệ quyền con người",
@@ -40,7 +40,7 @@
    },
    {
     "label": "Phân biệt",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Nguyên tắc quản lý cán bộ, công chức"
     ]

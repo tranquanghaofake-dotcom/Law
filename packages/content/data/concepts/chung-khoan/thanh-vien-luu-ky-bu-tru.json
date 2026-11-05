@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Thành viên lưu ký",
-    "icon": "🏦",
+    "icon": "bank",
     "children": [
      "Giữ chứng khoán",
      "Thanh toán cho khách"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Thành viên bù trừ",
-    "icon": "🧮",
+    "icon": "calc",
     "children": [
      "Bù trừ, thanh toán",
      "Nhất là phái sinh"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Là",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Công ty chứng khoán",
      "Ngân hàng"
@@ -53,7 +53,7 @@
    },
    {
     "label": "Chấp thuận",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "Ủy ban cấp giấy",
      "Tổng công ty chấp thuận"

@@ -32,7 +32,7 @@
   "tree": [
    {
     "label": "Đánh",
-    "icon": "🪶",
+    "icon": "pen",
     "children": [
      "Xuy: đánh roi",
      "Trượng: đánh trượng"
@@ -40,7 +40,7 @@
    },
    {
     "label": "Lao dịch, đày",
-    "icon": "⚔️",
+    "icon": "conflict",
     "children": [
      "Đồ: lao dịch",
      "Lưu: đày xa"
@@ -48,14 +48,14 @@
    },
    {
     "label": "Nặng nhất",
-    "icon": "💀",
+    "icon": "end",
     "children": [
      "Tử"
     ]
    },
    {
     "label": "Bộ luật",
-    "icon": "📚",
+    "icon": "book",
     "children": [
      "Quốc triều hình luật, 722 điều"
     ]

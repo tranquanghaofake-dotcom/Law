@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Ai làm",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Bộ Tư pháp chủ trì",
      "Các bộ liên quan phối hợp"
@@ -39,7 +39,7 @@
    },
    {
     "label": "Khi nào",
-    "icon": "⏰",
+    "icon": "clock",
     "children": [
      "Trước khi trình Chính phủ",
      "Trong 30 ngày từ khi đủ hồ sơ"
@@ -47,7 +47,7 @@
    },
    {
     "label": "Xem gì",
-    "icon": "🔍",
+    "icon": "search",
     "children": [
      "Hợp chính sách đã thông qua",
      "Hợp Hiến pháp, hợp luật, thống nhất"

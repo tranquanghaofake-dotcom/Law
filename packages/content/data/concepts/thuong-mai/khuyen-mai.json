@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "🎁",
+    "icon": "gift",
     "children": [
      "Xúc tiến thương mại",
      "Dành lợi ích cho khách"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Hình thức",
-    "icon": "🏷️",
+    "icon": "doc",
     "children": [
      "Hàng mẫu, tặng hàng",
      "Giảm giá",
@@ -46,7 +46,7 @@
    },
    {
     "label": "Hạn mức",
-    "icon": "📏",
+    "icon": "measure",
     "children": [
      "Do nghị định quy định"
     ]

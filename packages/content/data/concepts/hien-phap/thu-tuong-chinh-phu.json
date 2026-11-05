@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Bầu",
-    "icon": "🗳️",
+    "icon": "vote",
     "children": [
      "Quốc hội bầu trong số đại biểu",
      "Theo đề nghị Chủ tịch nước"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Vị trí",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Đứng đầu Chính phủ",
      "Lãnh đạo hệ thống hành chính"
@@ -46,14 +46,14 @@
    },
    {
     "label": "Trách nhiệm",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Trước Quốc hội"
     ]
    },
    {
     "label": "Quyền nhân sự",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Trình phê chuẩn Phó Thủ tướng, Bộ trưởng",
      "Bổ nhiệm Thứ trưởng"

@@ -29,14 +29,14 @@
   "tree": [
    {
     "label": "Chủ thể",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Doanh nghiệp"
     ]
    },
    {
     "label": "Trái với",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Thiện chí, trung thực",
      "Tập quán thương mại",
@@ -45,7 +45,7 @@
    },
    {
     "label": "Hậu quả",
-    "icon": "💥",
+    "icon": "warn",
     "children": [
      "Gây hoặc có thể gây thiệt hại",
      "Cho doanh nghiệp khác"
@@ -53,7 +53,7 @@
    },
    {
     "label": "Không cần",
-    "icon": "🆓",
+    "icon": "unlock",
     "children": [
      "Vị trí thống lĩnh, thị phần lớn"
     ]

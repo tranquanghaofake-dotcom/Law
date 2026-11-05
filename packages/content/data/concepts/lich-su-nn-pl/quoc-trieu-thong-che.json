@@ -31,14 +31,14 @@
   "tree": [
    {
     "label": "Mốc",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "1230, Trần Thái Tông"
     ]
    },
    {
     "label": "Bộ luật",
-    "icon": "📚",
+    "icon": "book",
     "children": [
      "Quốc triều thông chế",
      "20 quyển"
@@ -46,14 +46,14 @@
    },
    {
     "label": "Tính chất",
-    "icon": "🔁",
+    "icon": "cycle",
     "children": [
      "Kế thừa luật triều trước"
     ]
    },
    {
     "label": "Hình phạt đồ",
-    "icon": "🚜",
+    "icon": "plant",
     "children": [
      "Cảo điền hoành",
      "Lao thành binh"

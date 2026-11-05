@@ -32,7 +32,7 @@
   "tree": [
    {
     "label": "Cơ quan ngang bộ",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Quản lý nhà nước về tiền tệ",
      "Ngân hàng, ngoại hối"
@@ -40,7 +40,7 @@
    },
    {
     "label": "Ngân hàng trung ương",
-    "icon": "🏦",
+    "icon": "bank",
     "children": [
      "Phát hành tiền",
      "Ngân hàng của các tổ chức tín dụng",

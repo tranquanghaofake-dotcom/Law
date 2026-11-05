@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Trung ương",
-    "icon": "👑",
+    "icon": "crown",
     "children": [
      "Hùng Vương",
      "Lạc hầu: tướng văn"
@@ -36,21 +36,21 @@
    },
    {
     "label": "Bộ",
-    "icon": "⚔️",
+    "icon": "conflict",
     "children": [
      "Lạc tướng: tướng võ"
     ]
    },
    {
     "label": "Chiềng chạ",
-    "icon": "🏘️",
+    "icon": "village",
     "children": [
      "Bồ chính"
     ]
    },
    {
     "label": "Đặc điểm",
-    "icon": "🧬",
+    "icon": "link",
     "children": [
      "Cha truyền con nối",
      "Dấu ấn thị tộc"

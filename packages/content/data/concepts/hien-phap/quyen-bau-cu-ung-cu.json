@@ -29,14 +29,14 @@
   "tree": [
    {
     "label": "Bầu cử",
-    "icon": "🗳️",
+    "icon": "vote",
     "children": [
      "Đủ 18 tuổi"
     ]
    },
    {
     "label": "Ứng cử",
-    "icon": "🙋",
+    "icon": "person",
     "children": [
      "Đủ 21 tuổi",
      "Đạt tiêu chuẩn đại biểu"
@@ -44,14 +44,14 @@
    },
    {
     "label": "Mốc tính tuổi",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "Ngày bầu cử được công bố"
     ]
    },
    {
     "label": "Chủ thể",
-    "icon": "🇻🇳",
+    "icon": "flag",
     "children": [
      "Chỉ công dân"
     ]

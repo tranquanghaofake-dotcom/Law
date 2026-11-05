@@ -28,14 +28,14 @@
   "tree": [
    {
     "label": "Đối tượng",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Quan hệ trong quản lý hành chính"
     ]
    },
    {
     "label": "Phương pháp",
-    "icon": "📢",
+    "icon": "announce",
     "children": [
      "Mệnh lệnh – phục tùng",
      "Bất bình đẳng"
@@ -43,7 +43,7 @@
    },
    {
     "label": "Khác dân sự",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Dân sự: bình đẳng, thỏa thuận"
     ]

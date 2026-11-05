@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Chứng khoán",
      "Xác nhận một phần nợ"
@@ -39,7 +39,7 @@
    },
    {
     "label": "Người mua",
-    "icon": "🧾",
+    "icon": "doc",
     "children": [
      "Chủ nợ",
      "Nhận gốc và lãi"
@@ -47,14 +47,14 @@
    },
    {
     "label": "Khác cổ phiếu",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Không đổi quyền sở hữu"
     ]
    },
    {
     "label": "Ai phát hành",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Công ty cổ phần, trách nhiệm hữu hạn"
     ]

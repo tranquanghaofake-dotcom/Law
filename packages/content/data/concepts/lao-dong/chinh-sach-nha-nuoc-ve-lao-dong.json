@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Nguyên tắc (học thuyết)",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Bảo vệ người lao động",
      "Bảo vệ người sử dụng lao động",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Khuyến khích",
-    "icon": "👍",
+    "icon": "check",
     "children": [
      "Thỏa thuận có lợi hơn luật"
     ]

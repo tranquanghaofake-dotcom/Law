@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Gồm",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Ngân sách trung ương (chủ đạo)",
      "Ngân sách địa phương"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Địa phương",
-    "icon": "🏘️",
+    "icon": "village",
     "children": [
      "Cấp tỉnh",
      "Cấp xã"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Quan hệ giữa các cấp",
-    "icon": "🔁",
+    "icon": "cycle",
     "children": [
      "Thu hưởng 100%",
      "Thu phân chia theo tỷ lệ",

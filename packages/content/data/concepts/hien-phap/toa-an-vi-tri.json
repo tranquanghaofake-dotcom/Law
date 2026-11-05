@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Vị trí",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Cơ quan xét xử",
      "Thực hiện quyền tư pháp"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Nhiệm vụ",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Bảo vệ công lý",
      "Bảo vệ quyền con người, quyền công dân",
@@ -46,7 +46,7 @@
    },
    {
     "label": "Hệ thống",
-    "icon": "🪜",
+    "icon": "stairs",
     "children": [
      "Tòa án nhân dân tối cao",
      "Các Tòa án khác do luật định"

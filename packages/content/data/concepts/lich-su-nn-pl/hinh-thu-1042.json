@@ -32,7 +32,7 @@
   "tree": [
    {
     "label": "Mốc",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "1042, Lý Thái Tông",
      "Niên hiệu Minh Đạo"
@@ -40,7 +40,7 @@
    },
    {
     "label": "Lý do",
-    "icon": "❓",
+    "icon": "question",
     "children": [
      "Kiện tụng phiền nhiễu",
      "Quan lại xử khắc nghiệt"
@@ -48,7 +48,7 @@
    },
    {
     "label": "Kỹ thuật",
-    "icon": "✍️",
+    "icon": "pen",
     "children": [
      "Chia môn loại",
      "Biên thành điều khoản"
@@ -56,7 +56,7 @@
    },
    {
     "label": "Hiện trạng",
-    "icon": "👻",
+    "icon": "end",
     "children": [
      "Không còn lưu lại"
     ]

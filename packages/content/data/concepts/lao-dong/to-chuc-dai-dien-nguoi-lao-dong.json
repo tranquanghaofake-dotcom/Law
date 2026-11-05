@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Đặc điểm",
-    "icon": "🛡️",
+    "icon": "shield",
     "children": [
      "Thành lập tự nguyện",
      "Tại một đơn vị",
@@ -38,7 +38,7 @@
    },
    {
     "label": "Hai loại",
-    "icon": "2️⃣",
+    "icon": "n2",
     "children": [
      "Công đoàn cơ sở",
      "Tổ chức của người lao động tại doanh nghiệp"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Nhiệm vụ",
-    "icon": "🗣️",
+    "icon": "announce",
     "children": [
      "Thương lượng tập thể",
      "Đối thoại"

@@ -29,14 +29,14 @@
   "tree": [
    {
     "label": "Nguyên tắc",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Công bằng, công khai"
     ]
    },
    {
     "label": "Mốc",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "Đăng ký mua tối thiểu 20 ngày",
      "Hoàn thành trong 90 ngày",
@@ -45,14 +45,14 @@
    },
    {
     "label": "Tiền mua",
-    "icon": "🔒",
+    "icon": "lock",
     "children": [
      "Tài khoản phong tỏa"
     ]
    },
    {
     "label": "Vượt cung",
-    "icon": "➗",
+    "icon": "calc",
     "children": [
      "Phân bổ theo tỷ lệ"
     ]

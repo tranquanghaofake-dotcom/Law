@@ -31,14 +31,14 @@
   "tree": [
    {
     "label": "Ai",
-    "icon": "🙋",
+    "icon": "person",
     "children": [
      "Người đã mất quốc tịch Việt Nam"
     ]
    },
    {
     "label": "Không được",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Phương hại lợi ích quốc gia",
      "Bị tước: phải sau 05 năm"
@@ -46,14 +46,14 @@
    },
    {
     "label": "Hệ quả",
-    "icon": "🔁",
+    "icon": "cycle",
     "children": [
      "Lấy lại tên Việt Nam"
     ]
    },
    {
     "label": "Giữ quốc tịch nước ngoài",
-    "icon": "🔀",
+    "icon": "compare",
     "children": [
      "Chủ tịch nước cho phép"
     ]

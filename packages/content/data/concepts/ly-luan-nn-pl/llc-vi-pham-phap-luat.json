@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Dấu hiệu",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "Hành vi xác định",
      "Trái pháp luật",
@@ -40,7 +40,7 @@
    },
    {
     "label": "Không phải vi phạm",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Chỉ là ý nghĩ",
      "Hiện tượng tự nhiên"

@@ -28,14 +28,14 @@
   "tree": [
    {
     "label": "Bắt buộc",
-    "icon": "🎫",
+    "icon": "doc",
     "children": [
      "Cổ phần phổ thông"
     ]
    },
    {
     "label": "Ưu đãi (tùy chọn)",
-    "icon": "⭐",
+    "icon": "star",
     "children": [
      "Ưu đãi cổ tức",
      "Ưu đãi hoàn lại",
@@ -45,7 +45,7 @@
    },
    {
     "label": "Biểu quyết",
-    "icon": "🗳️",
+    "icon": "vote",
     "children": [
      "Chỉ cổ đông sáng lập, tổ chức được ủy quyền"
     ]

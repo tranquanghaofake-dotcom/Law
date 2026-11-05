@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Gồm",
-    "icon": "🧩",
+    "icon": "puzzle",
     "children": [
      "Ngân sách trung ương (chủ đạo)",
      "Ngân sách địa phương"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Thu, chi",
-    "icon": "💵",
+    "icon": "money",
     "children": [
      "Phải được dự toán",
      "Do luật định"
@@ -46,14 +46,14 @@
    },
    {
     "label": "Quản lý",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Công khai, minh bạch"
     ]
    },
    {
     "label": "Tiền tệ",
-    "icon": "💴",
+    "icon": "money",
     "children": [
      "Đồng Việt Nam",
      "Ổn định giá trị"

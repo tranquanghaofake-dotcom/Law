@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Dân sự",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Tòa án buộc chấm dứt",
      "Xin lỗi, bồi thường, tiêu hủy"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Hành chính",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Xử phạt hành vi gây thiệt hại",
      "Hàng giả mạo"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Hình sự",
-    "icon": "🚔",
+    "icon": "shield",
     "children": [
      "Tội xâm phạm quyền tác giả",
      "Tội xâm phạm sở hữu công nghiệp"
@@ -53,7 +53,7 @@
    },
    {
     "label": "Bổ trợ",
-    "icon": "🧰",
+    "icon": "tool",
     "children": [
      "Biện pháp khẩn cấp tạm thời",
      "Kiểm soát biên giới"

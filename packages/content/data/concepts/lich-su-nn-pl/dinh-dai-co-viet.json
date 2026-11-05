@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Mốc",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "968",
      "Dẹp 12 sứ quân"
@@ -39,21 +39,21 @@
    },
    {
     "label": "Quốc hiệu",
-    "icon": "🏷️",
+    "icon": "doc",
     "children": [
      "Đại Cồ Việt"
     ]
    },
    {
     "label": "Kinh đô",
-    "icon": "🏯",
+    "icon": "state",
     "children": [
      "Hoa Lư"
     ]
    },
    {
     "label": "Ý nghĩa",
-    "icon": "⭐",
+    "icon": "star",
     "children": [
      "Xưng đế ngang phương Bắc",
      "Triều đại chính thống đầu tiên"

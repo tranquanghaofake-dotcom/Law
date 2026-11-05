@@ -28,14 +28,14 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "🧾",
+    "icon": "doc",
     "children": [
      "Phần nợ của tổ chức phát hành"
     ]
    },
    {
     "label": "Người giữ",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Chủ nợ",
      "Nhận lãi và gốc"
@@ -43,7 +43,7 @@
    },
    {
     "label": "Không phải",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Đồng chủ sở hữu"
     ]

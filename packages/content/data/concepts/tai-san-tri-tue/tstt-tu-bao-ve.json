@@ -33,7 +33,7 @@
   "tree": [
    {
     "label": "Phòng ngừa",
-    "icon": "🔒",
+    "icon": "lock",
     "children": [
      "Biện pháp công nghệ",
      "Thông tin quản lý quyền"
@@ -41,7 +41,7 @@
    },
    {
     "label": "Yêu cầu bên vi phạm",
-    "icon": "✉️",
+    "icon": "doc",
     "children": [
      "Chấm dứt",
      "Xin lỗi, cải chính, bồi thường"
@@ -49,14 +49,14 @@
    },
    {
     "label": "Cơ quan nhà nước",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Xử lý hành chính, hình sự"
     ]
    },
    {
     "label": "Khởi kiện",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Tòa án, trọng tài"
     ]

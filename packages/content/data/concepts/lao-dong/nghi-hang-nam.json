@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Mức",
-    "icon": "🏖️",
+    "icon": "calendar",
     "children": [
      "Bình thường: 12 ngày",
      "Nặng nhọc: 14 ngày",
@@ -38,21 +38,21 @@
    },
    {
     "label": "Thâm niên",
-    "icon": "⭐",
+    "icon": "star",
     "children": [
      "Đủ 05 năm thêm 01 ngày"
     ]
    },
    {
     "label": "Chưa nghỉ hết",
-    "icon": "💵",
+    "icon": "money",
     "children": [
      "Được thanh toán khi thôi việc"
     ]
    },
    {
     "label": "Gộp",
-    "icon": "📦",
+    "icon": "box",
     "children": [
      "Tối đa 03 năm"
     ]

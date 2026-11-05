@@ -27,21 +27,21 @@
   "tree": [
    {
     "label": "Hiệu lực",
-    "icon": "🔝",
+    "icon": "top",
     "children": [
      "Cao nhất"
     ]
    },
    {
     "label": "Văn bản khác",
-    "icon": "📚",
+    "icon": "book",
     "children": [
      "Phải phù hợp với Hiến pháp"
     ]
    },
    {
     "label": "Vi phạm",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Đều bị xử lý"
     ]

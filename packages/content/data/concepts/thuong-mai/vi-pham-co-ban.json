@@ -28,14 +28,14 @@
   "tree": [
    {
     "label": "Định nghĩa",
-    "icon": "💔",
+    "icon": "heart",
     "children": [
      "Thiệt hại đến mức mất mục đích hợp đồng"
     ]
    },
    {
     "label": "Là điều kiện cho",
-    "icon": "🔑",
+    "icon": "key",
     "children": [
      "Tạm ngừng",
      "Đình chỉ",
@@ -44,7 +44,7 @@
    },
    {
     "label": "Hủy bỏ",
-    "icon": "✂️",
+    "icon": "cut",
     "children": [
      "Toàn bộ hoặc một phần"
     ]

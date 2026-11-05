@@ -29,14 +29,14 @@
   "tree": [
    {
     "label": "Điều kiện",
-    "icon": "📖",
+    "icon": "book",
     "children": [
      "Pháp luật dự liệu"
     ]
    },
    {
     "label": "Theo ý chí",
-    "icon": "🌪️",
+    "icon": "warn",
     "children": [
      "Sự biến: bão, chết tự nhiên",
      "Hành vi: ký hợp đồng, trộm cắp"
@@ -44,7 +44,7 @@
    },
    {
     "label": "Theo hậu quả",
-    "icon": "🔄",
+    "icon": "cycle",
     "children": [
      "Phát sinh",
      "Thay đổi",

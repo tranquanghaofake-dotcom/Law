@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Đặc điểm",
-    "icon": "🤲",
+    "icon": "handshake",
     "children": [
      "Không yêu cầu đóng góp",
      "Cho người yếu thế",
@@ -38,7 +38,7 @@
    },
    {
     "label": "Thường xuyên",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "Trợ cấp xã hội hằng tháng",
      "Nuôi dưỡng ở cộng đồng, cơ sở"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Đột xuất",
-    "icon": "🌪️",
+    "icon": "warn",
     "children": [
      "Thiên tai, hỏa hoạn, mất mùa"
     ]

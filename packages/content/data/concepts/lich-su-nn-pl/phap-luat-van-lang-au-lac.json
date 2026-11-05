@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Sử liệu",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Mã Viện tâu năm 43",
      "Hậu Hán thư"
@@ -37,21 +37,21 @@
    },
    {
     "label": "Nội dung",
-    "icon": "🔢",
+    "icon": "calc",
     "children": [
      "Khác luật Hán hơn mười điều"
     ]
    },
    {
     "label": "Bản chất",
-    "icon": "🏘️",
+    "icon": "village",
     "children": [
      "Chủ yếu tập quán pháp"
     ]
    },
    {
     "label": "Tranh luận",
-    "icon": "❓",
+    "icon": "question",
     "children": [
      "Có luật thành văn hay không"
     ]

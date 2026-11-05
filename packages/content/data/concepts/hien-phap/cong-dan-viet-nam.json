@@ -28,14 +28,14 @@
   "tree": [
    {
     "label": "Là ai",
-    "icon": "🛂",
+    "icon": "globe",
     "children": [
      "Người có quốc tịch Việt Nam"
     ]
    },
    {
     "label": "Bảo đảm",
-    "icon": "🛡️",
+    "icon": "shield",
     "children": [
      "Không bị trục xuất",
      "Không bị giao nộp cho nhà nước khác"

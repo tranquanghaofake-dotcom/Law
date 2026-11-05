@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Chỉ là chính",
-    "icon": "🥇",
+    "icon": "star",
     "children": [
      "Cảnh cáo",
      "Phạt tiền"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Chính hoặc bổ sung",
-    "icon": "🔀",
+    "icon": "compare",
     "children": [
      "Tước giấy phép, đình chỉ",
      "Tịch thu tang vật",
@@ -47,7 +47,7 @@
    },
    {
     "label": "Nguyên tắc",
-    "icon": "📏",
+    "icon": "measure",
     "children": [
      "Một hình thức chính",
      "Có thể nhiều bổ sung"

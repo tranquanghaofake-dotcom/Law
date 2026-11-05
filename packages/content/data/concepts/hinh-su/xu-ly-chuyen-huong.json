@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Tại cộng đồng (11)",
-    "icon": "🏘️",
+    "icon": "village",
     "children": [
      "Khiển trách, xin lỗi, bồi thường",
      "Quản thúc tại gia đình",
@@ -41,14 +41,14 @@
    },
    {
     "label": "Cách ly",
-    "icon": "🏫",
+    "icon": "book",
     "children": [
      "Trường giáo dưỡng"
     ]
    },
    {
     "label": "Nguyên tắc",
-    "icon": "📌",
+    "icon": "pin",
     "children": [
      "Ưu tiên ở mọi giai đoạn"
     ]

@@ -31,14 +31,14 @@
   "tree": [
    {
     "label": "Định nghĩa",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Thành lập theo pháp luật Việt Nam"
     ]
    },
    {
     "label": "Gồm",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Doanh nghiệp",
      "Hợp tác xã, liên hiệp",
@@ -47,7 +47,7 @@
    },
    {
     "label": "Nhà đầu tư nước ngoài",
-    "icon": "🌍",
+    "icon": "globe",
     "children": [
      "Lập tổ chức sau khi có Giấy chứng nhận"
     ]

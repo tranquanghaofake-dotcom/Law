@@ -29,14 +29,14 @@
   "tree": [
    {
     "label": "Nguyên tắc",
-    "icon": "1️⃣",
+    "icon": "n1",
     "children": [
      "Công dân có một quốc tịch Việt Nam"
     ]
    },
    {
     "label": "Ngoại lệ",
-    "icon": "🔀",
+    "icon": "compare",
     "children": [
      "Chủ tịch nước cho giữ quốc tịch nước ngoài",
      "Người định cư ở nước ngoài chưa mất quốc tịch"
@@ -44,14 +44,14 @@
    },
    {
     "label": "Trên lãnh thổ Việt Nam",
-    "icon": "🇻🇳",
+    "icon": "flag",
     "children": [
      "Chỉ công nhận quốc tịch Việt Nam"
     ]
    },
    {
     "label": "Chức vụ nhà nước",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Chỉ được một quốc tịch Việt Nam"
     ]

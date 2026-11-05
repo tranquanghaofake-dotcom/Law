@@ -29,35 +29,35 @@
   "tree": [
    {
     "label": "Sáp nhập",
-    "icon": "➡️",
+    "icon": "arrow",
     "children": [
      "Bên bị sáp nhập chấm dứt"
     ]
    },
    {
     "label": "Hợp nhất",
-    "icon": "🔀",
+    "icon": "compare",
     "children": [
      "Lập doanh nghiệp mới, các bên chấm dứt"
     ]
    },
    {
     "label": "Mua lại",
-    "icon": "🛒",
+    "icon": "cart",
     "children": [
      "Đủ để kiểm soát, chi phối"
     ]
    },
    {
     "label": "Liên doanh",
-    "icon": "🤝",
+    "icon": "handshake",
     "children": [
      "Lập doanh nghiệp mới, các bên vẫn còn"
     ]
    },
    {
     "label": "Bị cấm khi",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Hạn chế cạnh tranh đáng kể"
     ]

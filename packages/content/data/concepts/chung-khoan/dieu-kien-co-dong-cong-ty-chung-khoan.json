@@ -30,14 +30,14 @@
   "tree": [
    {
     "label": "Sáng lập",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Ít nhất 02 là tổ chức"
     ]
    },
    {
     "label": "Tỷ lệ",
-    "icon": "📊",
+    "icon": "chart",
     "children": [
      "Tổ chức nắm tối thiểu 65%",
      "Bảo hiểm, ngân hàng tối thiểu 30%"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Chống sở hữu chéo",
-    "icon": "🔗",
+    "icon": "link",
     "children": [
      "Quy tắc 10% – 5%"
     ]

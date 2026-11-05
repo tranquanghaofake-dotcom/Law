@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Phạm vi",
-    "icon": "🧩",
+    "icon": "puzzle",
     "children": [
      "Toàn bộ dự án",
      "Một phần dự án"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Điều kiện",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "Dự án không bị chấm dứt",
      "Bên nước ngoài đủ điều kiện",

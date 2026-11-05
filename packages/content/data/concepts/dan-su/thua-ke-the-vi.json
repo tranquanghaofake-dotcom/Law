@@ -29,14 +29,14 @@
   "tree": [
    {
     "label": "Điều kiện",
-    "icon": "⏰",
+    "icon": "clock",
     "children": [
      "Con chết trước hoặc cùng thời điểm"
     ]
    },
    {
     "label": "Ai thế vị",
-    "icon": "👶",
+    "icon": "child",
     "children": [
      "Cháu",
      "Chắt nếu cháu cũng chết"
@@ -44,14 +44,14 @@
    },
    {
     "label": "Phạm vi",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Chỉ thừa kế theo pháp luật"
     ]
    },
    {
     "label": "Phần hưởng",
-    "icon": "🍰",
+    "icon": "gift",
     "children": [
      "Phần cha mẹ đáng được"
     ]

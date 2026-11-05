@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Nguyên tắc",
-    "icon": "📏",
+    "icon": "measure",
     "children": [
      "Theo thị trường",
      "Đúng phương pháp, trình tự",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Phương pháp",
-    "icon": "🧮",
+    "icon": "calc",
     "children": [
      "So sánh",
      "Thu nhập",

@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Chủ thể",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Người cư trú",
      "Người không cư trú"
@@ -39,7 +39,7 @@
    },
    {
     "label": "Giao dịch",
-    "icon": "🔁",
+    "icon": "cycle",
     "children": [
      "Vãng lai: không chuyển vốn",
      "Vốn: đầu tư, vay trả nợ"
@@ -47,7 +47,7 @@
    },
    {
     "label": "Khác",
-    "icon": "💱",
+    "icon": "money",
     "children": [
      "Sử dụng ngoại hối trong nước",
      "Cung ứng dịch vụ ngoại hối"

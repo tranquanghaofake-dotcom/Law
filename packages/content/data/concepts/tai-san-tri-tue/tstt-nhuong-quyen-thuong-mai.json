@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Bên nhận được dùng",
-    "icon": "🏷️",
+    "icon": "doc",
     "children": [
      "Nhãn hiệu, tên thương mại",
      "Bí quyết, khẩu hiệu"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Bên nhượng",
-    "icon": "🧭",
+    "icon": "arrow",
     "children": [
      "Kiểm soát",
      "Trợ giúp"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Khác li-xăng",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Chuyển cả cách tổ chức kinh doanh"
     ]

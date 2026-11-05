@@ -29,28 +29,28 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "🔄",
+    "icon": "cycle",
     "children": [
      "Quỹ mở"
     ]
    },
    {
     "label": "Nhà đầu tư lớn",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Đổi rổ chứng khoán lấy chứng chỉ quỹ"
     ]
    },
    {
     "label": "Nhà đầu tư nhỏ",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Mua bán trên sàn"
     ]
    },
    {
     "label": "Thường mô phỏng",
-    "icon": "📊",
+    "icon": "chart",
     "children": [
      "Chỉ số, ví dụ chỉ số 30 cổ phiếu lớn"
     ]

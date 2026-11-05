@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Như công ty chứng khoán",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Kiểm soát nội bộ",
      "Ưu tiên lệnh khách"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Thêm",
-    "icon": "➕",
+    "icon": "calc",
     "children": [
      "Đúng Điều lệ quỹ, hợp đồng",
      "Xác định giá trị tài sản ròng",
@@ -47,7 +47,7 @@
    },
    {
     "label": "Tài sản",
-    "icon": "🔒",
+    "icon": "lock",
     "children": [
      "Tách biệt"
     ]

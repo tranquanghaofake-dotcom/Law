@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Chủ thể",
-    "icon": "👪",
+    "icon": "family",
     "children": [
      "Một cá nhân",
      "Hoặc thành viên hộ gia đình"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Trách nhiệm",
-    "icon": "♾️",
+    "icon": "infinity",
     "children": [
      "Vô hạn",
      "Thành viên liên đới"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Tư cách",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Không phải doanh nghiệp",
      "Không có pháp nhân"
@@ -54,7 +54,7 @@
    },
    {
     "label": "Giới hạn",
-    "icon": "1️⃣",
+    "icon": "n1",
     "children": [
      "Mỗi người một hộ"
     ]

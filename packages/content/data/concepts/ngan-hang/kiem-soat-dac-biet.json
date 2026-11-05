@@ -31,21 +31,21 @@
   "tree": [
    {
     "label": "Ai quyết định",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Ngân hàng Nhà nước"
     ]
    },
    {
     "label": "Nội dung",
-    "icon": "🔍",
+    "icon": "search",
     "children": [
      "Kiểm soát trực tiếp tổ chức tín dụng"
     ]
    },
    {
     "label": "Phân biệt",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Can thiệp sớm: tự khắc phục, nhẹ hơn"
     ]

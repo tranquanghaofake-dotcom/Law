@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Điều kiện",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "Nguy cơ thiệt hại thực tế",
      "Không còn cách nào khác",
@@ -38,14 +38,14 @@
    },
    {
     "label": "Hệ quả",
-    "icon": "🆓",
+    "icon": "unlock",
     "children": [
      "Không phải tội phạm"
     ]
    },
    {
     "label": "Khác phòng vệ",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Thiệt hại thường gây cho người thứ ba"
     ]

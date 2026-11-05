@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Đặc trưng",
-    "icon": "🔄",
+    "icon": "cycle",
     "children": [
      "Mua lại theo yêu cầu",
      "Liên tục phát hành thêm"
@@ -37,14 +37,14 @@
    },
    {
     "label": "Giá",
-    "icon": "💲",
+    "icon": "money",
     "children": [
      "Theo giá trị tài sản ròng"
     ]
    },
    {
     "label": "Hạn chế",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Không đầu tư bất động sản"
     ]

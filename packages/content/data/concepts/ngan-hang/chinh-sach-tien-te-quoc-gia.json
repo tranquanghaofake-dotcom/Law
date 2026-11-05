@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Mục tiêu",
-    "icon": "🎯",
+    "icon": "target",
     "children": [
      "Ổn định giá trị đồng tiền",
      "Chỉ tiêu lạm phát"
@@ -39,7 +39,7 @@
    },
    {
     "label": "Thẩm quyền",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Quốc hội: chỉ tiêu lạm phát",
      "Chính phủ: trình",

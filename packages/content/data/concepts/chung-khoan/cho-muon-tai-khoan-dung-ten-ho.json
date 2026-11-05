@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Hành vi",
-    "icon": "🎭",
+    "icon": "mask",
     "children": [
      "Cho mượn tài khoản",
      "Đứng tên sở hữu hộ"
@@ -36,14 +36,14 @@
    },
    {
     "label": "Bị cấm khi",
-    "icon": "⚠️",
+    "icon": "warn",
     "children": [
      "Dẫn đến thao túng giá"
     ]
    },
    {
     "label": "Vai trò",
-    "icon": "🙈",
+    "icon": "mask",
     "children": [
      "Che giấu chủ thể thật"
     ]

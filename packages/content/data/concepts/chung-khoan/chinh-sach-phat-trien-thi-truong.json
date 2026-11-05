@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Vai trò",
-    "icon": "🎯",
+    "icon": "target",
     "children": [
      "Huy động vốn trung, dài hạn",
      "Bổ sung tín dụng ngân hàng"
@@ -36,7 +36,7 @@
    },
    {
     "label": "Nhà nước",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Khuyến khích trong, ngoài nước",
      "Quản lý, giám sát"
@@ -44,7 +44,7 @@
    },
    {
     "label": "Mục tiêu",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Công bằng, công khai",
      "Minh bạch, an toàn"

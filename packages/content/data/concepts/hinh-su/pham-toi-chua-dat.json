@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Dấu hiệu",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "Đã bắt đầu thực hiện",
      "Không thực hiện được đến cùng",
@@ -37,14 +37,14 @@
    },
    {
     "label": "Lỗi",
-    "icon": "🧠",
+    "icon": "idea",
     "children": [
      "Chỉ cố ý"
     ]
    },
    {
     "label": "Trách nhiệm",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Luôn chịu (khác chuẩn bị)"
     ]

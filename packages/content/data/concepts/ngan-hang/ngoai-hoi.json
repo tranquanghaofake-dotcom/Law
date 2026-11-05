@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Gồm",
-    "icon": "💱",
+    "icon": "money",
     "children": [
      "Ngoại tệ",
      "Phương tiện thanh toán bằng ngoại tệ",
@@ -41,7 +41,7 @@
    },
    {
     "label": "Đồng Việt Nam",
-    "icon": "🇻🇳",
+    "icon": "flag",
     "children": [
      "Khi chuyển vào, ra lãnh thổ",
      "Khi dùng thanh toán quốc tế"

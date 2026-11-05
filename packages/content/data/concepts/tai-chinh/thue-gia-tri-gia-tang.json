@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "🔗",
+    "icon": "link",
     "children": [
      "Giá trị tăng thêm",
      "Mọi khâu: sản xuất đến tiêu dùng",
@@ -40,7 +40,7 @@
    },
    {
     "label": "Phạm vi",
-    "icon": "🎯",
+    "icon": "target",
     "children": [
      "Hàng, dịch vụ tiêu dùng ở Việt Nam",
      "Trừ danh mục không chịu thuế"
@@ -48,7 +48,7 @@
    },
    {
     "label": "Phương pháp",
-    "icon": "🧮",
+    "icon": "calc",
     "children": [
      "Khấu trừ",
      "Trực tiếp"

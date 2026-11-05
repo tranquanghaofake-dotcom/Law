@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Gồm",
-    "icon": "💵",
+    "icon": "money",
     "children": [
      "Tiền",
      "Tài sản khác theo luật dân sự"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Tài sản khác",
-    "icon": "🧾",
+    "icon": "doc",
     "children": [
      "Giấy tờ có giá",
      "Quyền sở hữu trí tuệ",
@@ -47,7 +47,7 @@
    },
    {
     "label": "Mục đích",
-    "icon": "🎯",
+    "icon": "target",
     "children": [
      "Đầu tư kinh doanh"
     ]

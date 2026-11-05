@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Yếu tố",
-    "icon": "💰",
+    "icon": "money",
     "children": [
      "Bỏ vốn đầu tư",
      "Thực hiện hoạt động kinh doanh"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Phạm vi",
-    "icon": "🌍",
+    "icon": "globe",
     "children": [
      "Tại Việt Nam",
      "Từ Việt Nam ra nước ngoài"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Không gồm",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Đầu tư công"
     ]

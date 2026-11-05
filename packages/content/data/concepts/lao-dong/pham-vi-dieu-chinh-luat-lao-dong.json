@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Quan hệ lao động",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Cá nhân",
      "Tập thể"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Liên quan trực tiếp",
-    "icon": "🔗",
+    "icon": "link",
     "children": [
      "Việc làm, học nghề",
      "Bảo hiểm, tranh chấp"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Phương pháp",
-    "icon": "⚙️",
+    "icon": "tool",
     "children": [
      "Thỏa thuận (chủ yếu)",
      "Mệnh lệnh",

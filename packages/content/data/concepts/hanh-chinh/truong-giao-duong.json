@@ -29,14 +29,14 @@
   "tree": [
    {
     "label": "12 đến dưới 14",
-    "icon": "🧒",
+    "icon": "child",
     "children": [
      "Dấu hiệu tội đặc biệt nghiêm trọng"
     ]
    },
    {
     "label": "14 đến dưới 16",
-    "icon": "👦",
+    "icon": "child",
     "children": [
      "Tội rất, đặc biệt nghiêm trọng",
      "Ngoài khoản 2 Điều 12 Bộ luật Hình sự"
@@ -44,7 +44,7 @@
    },
    {
     "label": "Ai quyết định",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Tòa án"
     ]

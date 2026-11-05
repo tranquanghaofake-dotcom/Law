@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Mất tính mới khi",
-    "icon": "📢",
+    "icon": "announce",
     "children": [
      "Bộc lộ công khai",
      "Trong hoặc ngoài nước",
@@ -39,14 +39,14 @@
    },
    {
     "label": "Chưa bộc lộ",
-    "icon": "🤫",
+    "icon": "lock",
     "children": [
      "Ít người biết, có nghĩa vụ giữ bí mật"
     ]
    },
    {
     "label": "Ân hạn",
-    "icon": "⏳",
+    "icon": "clock",
     "children": [
      "Trường hợp khoản 3"
     ]

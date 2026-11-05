@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Quyết định",
-    "icon": "🧭",
+    "icon": "arrow",
     "children": [
      "Quy hoạch",
      "Mục đích sử dụng",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Trao quyền",
-    "icon": "🤲",
+    "icon": "handshake",
     "children": [
      "Giao đất, cho thuê",
      "Công nhận quyền"
@@ -47,7 +47,7 @@
    },
    {
     "label": "Lấy lại",
-    "icon": "↩️",
+    "icon": "cycle",
     "children": [
      "Thu hồi",
      "Trưng dụng"
@@ -55,7 +55,7 @@
    },
    {
     "label": "Tài chính",
-    "icon": "💵",
+    "icon": "money",
     "children": [
      "Giá đất",
      "Điều tiết giá trị tăng thêm"

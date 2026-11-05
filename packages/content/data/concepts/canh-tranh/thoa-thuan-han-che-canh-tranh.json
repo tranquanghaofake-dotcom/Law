@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Hình thức",
-    "icon": "🗣️",
+    "icon": "announce",
     "children": [
      "Văn bản, miệng, ngầm",
      "Quyết định của hiệp hội"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Loại chính",
-    "icon": "📋",
+    "icon": "list",
     "children": [
      "Ấn định giá",
      "Phân chia thị trường",
@@ -48,7 +48,7 @@
    },
    {
     "label": "Phân loại",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Ngang: cùng thị trường",
      "Dọc: các công đoạn"

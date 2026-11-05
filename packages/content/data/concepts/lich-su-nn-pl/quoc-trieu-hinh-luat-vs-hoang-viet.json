@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Giống",
-    "icon": "🤝",
+    "icon": "handshake",
     "children": [
      "Bộ luật tổng hợp",
      "Ngũ hình, thập ác, bát nghị",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Quốc triều hình luật",
-    "icon": "🌸",
+    "icon": "star",
     "children": [
      "Từ Đường luật, có sáng tạo",
      "Bảo vệ quyền phụ nữ"
@@ -47,7 +47,7 @@
    },
    {
     "label": "Hoàng Việt luật lệ",
-    "icon": "📚",
+    "icon": "book",
     "children": [
      "Sao chép Thanh luật"
     ]

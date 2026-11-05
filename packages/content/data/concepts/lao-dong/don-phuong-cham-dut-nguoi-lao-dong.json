@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Báo trước",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "Không xác định thời hạn: 45 ngày",
      "12–36 tháng: 30 ngày",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Không cần báo trước",
-    "icon": "🚪",
+    "icon": "door",
     "children": [
      "Không trả đủ lương",
      "Bị ngược đãi, quấy rối",

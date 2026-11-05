@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Yêu cầu",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "Chính xác",
      "Trung thực, khách quan"
@@ -36,7 +36,7 @@
    },
    {
     "label": "Dùng khi",
-    "icon": "📢",
+    "icon": "announce",
     "children": [
      "Chào bán",
      "Niêm yết"
@@ -44,7 +44,7 @@
    },
    {
     "label": "Nội dung",
-    "icon": "📋",
+    "icon": "list",
     "children": [
      "Tổ chức phát hành",
      "Rủi ro",

@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Yếu tố",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "Đối tượng đang được bảo hộ",
      "Có hành vi sử dụng",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Kiểu dáng",
-    "icon": "🎨",
+    "icon": "pen",
     "children": [
      "Cả loại không khác biệt đáng kể"
     ]

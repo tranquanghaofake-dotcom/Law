@@ -32,7 +32,7 @@
   "tree": [
    {
     "label": "Nghiệp vụ",
-    "icon": "🏦",
+    "icon": "bank",
     "children": [
      "Nhận tiền gửi",
      "Cấp tín dụng",
@@ -41,7 +41,7 @@
    },
    {
     "label": "Dấu hiệu",
-    "icon": "🔁",
+    "icon": "cycle",
     "children": [
      "Kinh doanh",
      "Thường xuyên"
@@ -49,7 +49,7 @@
    },
    {
     "label": "Điều kiện",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Có Giấy phép"
     ]

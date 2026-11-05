@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Cử tri đi bầu",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Quá 1/2 tổng số cử tri",
      "Không đạt: bầu cử lại"
@@ -38,21 +38,21 @@
    },
    {
     "label": "Người trúng cử",
-    "icon": "🏆",
+    "icon": "star",
     "children": [
      "Quá 1/2 số phiếu hợp lệ"
     ]
    },
    {
     "label": "Bằng phiếu",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Người nhiều tuổi hơn trúng"
     ]
    },
    {
     "label": "Chưa đủ đại biểu",
-    "icon": "➕",
+    "icon": "calc",
     "children": [
      "Bầu cử thêm trong 07 ngày"
     ]

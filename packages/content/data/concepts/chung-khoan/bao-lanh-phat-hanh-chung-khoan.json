@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Mức cam kết",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Nhận mua để bán lại",
      "Mua phần chưa phân phối hết",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Ai được làm",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Công ty chứng khoán được cấp phép",
      "Đủ an toàn tài chính"
@@ -47,7 +47,7 @@
    },
    {
     "label": "Hạn chế",
-    "icon": "📏",
+    "icon": "measure",
     "children": [
      "Không là người có liên quan"
     ]

@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Thời hiệu",
-    "icon": "⏳",
+    "icon": "clock",
     "children": [
      "01 năm",
      "02 năm: kế toán, xây dựng, đất đai",
@@ -38,7 +38,7 @@
    },
    {
     "label": "Mốc tính",
-    "icon": "📍",
+    "icon": "pin",
     "children": [
      "Đã kết thúc: từ khi chấm dứt",
      "Đang thực hiện: từ khi phát hiện"

@@ -32,7 +32,7 @@
   "tree": [
    {
     "label": "Bậc 1",
-    "icon": "1️⃣",
+    "icon": "n1",
     "children": [
      "70 tuổi trở lên, 15 trở xuống",
      "Tội lưu trở xuống được chuộc"
@@ -40,7 +40,7 @@
    },
    {
     "label": "Bậc 2",
-    "icon": "2️⃣",
+    "icon": "n2",
     "children": [
      "80 tuổi trở lên, 10 trở xuống",
      "Tội chết tâu vua"
@@ -48,7 +48,7 @@
    },
    {
     "label": "Bậc 3",
-    "icon": "3️⃣",
+    "icon": "n3",
     "children": [
      "90 tuổi trở lên, 7 trở xuống",
      "Bắt tội kẻ xui xiểm"
@@ -56,7 +56,7 @@
    },
    {
     "label": "Ngoại lệ",
-    "icon": "⛔",
+    "icon": "ban",
     "children": [
      "Thập ác"
     ]

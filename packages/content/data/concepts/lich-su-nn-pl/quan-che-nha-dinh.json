@@ -32,7 +32,7 @@
   "tree": [
    {
     "label": "Mốc",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "971: cấp bậc văn võ",
      "974: quân mười đạo"
@@ -40,7 +40,7 @@
    },
    {
     "label": "Chức danh",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Định quốc công: Nguyễn Bặc",
      "Đô hộ phủ sĩ sư: Lưu Cơ",

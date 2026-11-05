@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Áp dụng",
-    "icon": "🟨",
+    "icon": "warn",
     "children": [
      "Vi phạm không nghiêm trọng",
      "Có tình tiết giảm nhẹ",
@@ -38,7 +38,7 @@
    },
    {
     "label": "Hình thức",
-    "icon": "📄",
+    "icon": "doc",
     "children": [
      "Bằng văn bản",
      "Có thể không lập biên bản"

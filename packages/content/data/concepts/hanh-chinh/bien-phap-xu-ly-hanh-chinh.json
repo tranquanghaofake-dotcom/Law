@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Biện pháp",
-    "icon": "🏫",
+    "icon": "book",
     "children": [
      "Giáo dục tại xã, phường, đặc khu",
      "Trường giáo dưỡng (chưa thành niên)",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Đối tượng",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Cá nhân",
      "Vi phạm an ninh, trật tự"

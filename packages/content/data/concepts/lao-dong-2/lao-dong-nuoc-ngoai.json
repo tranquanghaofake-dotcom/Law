@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Điều kiện",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "Đủ 18 tuổi, năng lực hành vi đầy đủ",
      "Trình độ, tay nghề, sức khỏe",
@@ -40,14 +40,14 @@
    },
    {
     "label": "Ngoại lệ",
-    "icon": "🆓",
+    "icon": "unlock",
     "children": [
      "Trường hợp miễn giấy phép"
     ]
    },
    {
     "label": "Hợp đồng",
-    "icon": "📝",
+    "icon": "pen",
     "children": [
      "Không quá thời hạn giấy phép"
     ]

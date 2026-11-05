@@ -32,7 +32,7 @@
   "tree": [
    {
     "label": "Thông qua",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "9/11/1946",
      "Quốc hội khóa I"
@@ -40,7 +40,7 @@
    },
    {
     "label": "Ba nguyên tắc",
-    "icon": "🤝",
+    "icon": "handshake",
     "children": [
      "Đoàn kết toàn dân",
      "Quyền tự do dân chủ",
@@ -49,7 +49,7 @@
    },
    {
     "label": "Bộ máy",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Nghị viện nhân dân",
      "Chính phủ",
@@ -58,7 +58,7 @@
    },
    {
     "label": "Sửa đổi",
-    "icon": "🗳️",
+    "icon": "vote",
     "children": [
      "Toàn dân phúc quyết"
     ]

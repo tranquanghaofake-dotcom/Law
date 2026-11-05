@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Nội dung",
-    "icon": "📋",
+    "icon": "list",
     "children": [
      "Mục tiêu, địa điểm, quy mô",
      "Tiến độ, thời hạn",
@@ -40,14 +40,14 @@
    },
    {
     "label": "Áp dụng",
-    "icon": "📌",
+    "icon": "pin",
     "children": [
      "Dự án thuộc Điều 24"
     ]
    },
    {
     "label": "Phân biệt",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Giấy chứng nhận đăng ký: chỉ ghi nhận"
     ]

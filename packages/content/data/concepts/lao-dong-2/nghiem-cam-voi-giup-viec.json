@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Bạo lực, xâm hại",
-    "icon": "✋",
+    "icon": "ban",
     "children": [
      "Ngược đãi",
      "Quấy rối tình dục",
@@ -37,14 +37,14 @@
    },
    {
     "label": "Ngoài hợp đồng",
-    "icon": "📄",
+    "icon": "doc",
     "children": [
      "Giao việc không theo hợp đồng"
     ]
    },
    {
     "label": "Giấy tờ",
-    "icon": "🪪",
+    "icon": "doc",
     "children": [
      "Giữ giấy tờ tùy thân"
     ]

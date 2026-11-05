@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Các bên",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Bên mời thầu (bên mua)",
      "Bên dự thầu",
@@ -37,14 +37,14 @@
    },
    {
     "label": "Tiêu chí",
-    "icon": "🏆",
+    "icon": "star",
     "children": [
      "Đáp ứng tốt nhất yêu cầu"
     ]
    },
    {
     "label": "Hình thức",
-    "icon": "📢",
+    "icon": "announce",
     "children": [
      "Rộng rãi",
      "Hạn chế"
@@ -52,7 +52,7 @@
    },
    {
     "label": "Không áp dụng",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Mua sắm công"
     ]

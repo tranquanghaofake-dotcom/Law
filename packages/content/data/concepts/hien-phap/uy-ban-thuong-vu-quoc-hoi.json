@@ -30,14 +30,14 @@
   "tree": [
    {
     "label": "Vị trí",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Cơ quan thường trực của Quốc hội"
     ]
    },
    {
     "label": "Thành phần",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Chủ tịch Quốc hội",
      "Các Phó Chủ tịch",
@@ -46,7 +46,7 @@
    },
    {
     "label": "Việc chính",
-    "icon": "📋",
+    "icon": "list",
     "children": [
      "Ra pháp lệnh",
      "Giải thích Hiến pháp, luật",
@@ -55,7 +55,7 @@
    },
    {
     "label": "Hạn chế",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Không đồng thời là thành viên Chính phủ"
     ]

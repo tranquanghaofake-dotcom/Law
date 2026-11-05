@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Hệ thống chính trị",
-    "icon": "🧭",
+    "icon": "arrow",
     "children": [
      "Đảng lãnh đạo",
      "Nhà nước trung tâm",
@@ -40,7 +40,7 @@
    },
    {
     "label": "Cách lãnh đạo",
-    "icon": "📋",
+    "icon": "list",
     "children": [
      "Cương lĩnh, đường lối",
      "Công tác cán bộ",
@@ -49,7 +49,7 @@
    },
    {
     "label": "Ràng buộc",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Trong khuôn khổ Hiến pháp"
     ]

@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Được chuộc (1042)",
-    "icon": "💰",
+    "icon": "money",
     "children": [
      "Người già, trẻ, ốm yếu",
      "Thân thuộc nhà vua"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Ý nghĩa",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Nhân đạo",
      "Đặc quyền đẳng cấp"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Không được chuộc",
-    "icon": "⛔",
+    "icon": "ban",
     "children": [
      "Tội thập ác"
     ]

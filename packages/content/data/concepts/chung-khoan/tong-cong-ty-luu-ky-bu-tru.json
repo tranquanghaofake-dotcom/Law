@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Địa vị",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Doanh nghiệp",
      "Nhà nước nắm trên 50%"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Việc làm",
-    "icon": "📒",
+    "icon": "book",
     "children": [
      "Đăng ký người sở hữu",
      "Lưu ký",

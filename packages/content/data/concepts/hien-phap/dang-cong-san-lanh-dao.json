@@ -28,14 +28,14 @@
   "tree": [
    {
     "label": "Vị trí",
-    "icon": "🧭",
+    "icon": "arrow",
     "children": [
      "Lực lượng lãnh đạo Nhà nước và xã hội"
     ]
    },
    {
     "label": "Nền tảng tư tưởng",
-    "icon": "📚",
+    "icon": "book",
     "children": [
      "Chủ nghĩa Mác - Lênin",
      "Tư tưởng Hồ Chí Minh"
@@ -43,7 +43,7 @@
    },
    {
     "label": "Ràng buộc",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Chịu giám sát của Nhân dân",
      "Chịu trách nhiệm trước Nhân dân",

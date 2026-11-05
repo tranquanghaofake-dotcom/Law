@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Hưởng",
-    "icon": "💰",
+    "icon": "money",
     "children": [
      "Lợi nhuận theo tỷ lệ vốn góp",
      "Tài sản khi thanh lý"
@@ -36,21 +36,21 @@
    },
    {
     "label": "Đòi",
-    "icon": "🔄",
+    "icon": "cycle",
     "children": [
      "Mua lại (quỹ mở)"
     ]
    },
    {
     "label": "Bảo vệ",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Khởi kiện công ty quản lý quỹ, ngân hàng giám sát"
     ]
    },
    {
     "label": "Quản trị",
-    "icon": "🗳️",
+    "icon": "vote",
     "children": [
      "Biểu quyết tại Đại hội nhà đầu tư"
     ]

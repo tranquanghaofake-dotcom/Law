@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Nội dung",
-    "icon": "🗺️",
+    "icon": "map",
     "children": [
      "Phân bổ chỉ tiêu",
      "Khoanh vùng đất đai"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Phạm vi",
-    "icon": "📍",
+    "icon": "pin",
     "children": [
      "Từng đơn vị hành chính",
      "Thời kỳ xác định"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Vai trò",
-    "icon": "📏",
+    "icon": "measure",
     "children": [
      "Căn cứ giao, cho thuê",
      "Căn cứ thu hồi, chuyển mục đích"

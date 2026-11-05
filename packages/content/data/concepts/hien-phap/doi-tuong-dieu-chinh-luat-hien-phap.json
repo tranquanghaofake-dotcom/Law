@@ -30,14 +30,14 @@
   "tree": [
    {
     "label": "Tính chất",
-    "icon": "🧱",
+    "icon": "stairs",
     "children": [
      "Quan hệ xã hội cơ bản, quan trọng nhất"
     ]
    },
    {
     "label": "Nhóm quan hệ",
-    "icon": "🗂️",
+    "icon": "list",
     "children": [
      "Chế độ chính trị",
      "Nhà nước – công dân",

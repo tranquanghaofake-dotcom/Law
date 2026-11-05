@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Năng lực pháp luật",
-    "icon": "👶",
+    "icon": "child",
     "children": [
      "Có từ khi sinh ra",
      "Mở rộng theo độ tuổi"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Năng lực hành vi",
-    "icon": "🧑",
+    "icon": "person",
     "children": [
      "Phụ thuộc tuổi, trình độ, sức khỏe",
      "Từ đủ 14 có thể bị xử phạt khi cố ý"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Người nước ngoài",
-    "icon": "🌍",
+    "icon": "globe",
     "children": [
      "Hạn chế quyền chính trị"
     ]

@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Đặc điểm",
-    "icon": "📄",
+    "icon": "doc",
     "children": [
      "Một bên soạn sẵn",
      "Bên kia chấp nhận toàn bộ"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Bảo vệ bên yếu",
-    "icon": "🛡️",
+    "icon": "shield",
     "children": [
      "Phải công khai",
      "Giải thích bất lợi cho bên soạn",
@@ -46,7 +46,7 @@
    },
    {
     "label": "Ví dụ",
-    "icon": "💡",
+    "icon": "idea",
     "children": [
      "Điện, nước, viễn thông"
     ]

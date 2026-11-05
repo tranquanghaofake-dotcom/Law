@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Phối hợp",
-    "icon": "🤝",
+    "icon": "handshake",
     "children": [
      "Mặt trận Tổ quốc",
      "Tổ chức chính trị - xã hội"
@@ -36,7 +36,7 @@
    },
    {
     "label": "Mời dự phiên họp",
-    "icon": "🪑",
+    "icon": "people",
     "children": [
      "Chủ tịch Ủy ban trung ương Mặt trận",
      "Khi bàn vấn đề liên quan"
@@ -44,7 +44,7 @@
    },
    {
     "label": "Báo cáo trước Nhân dân",
-    "icon": "📢",
+    "icon": "announce",
     "children": [
      "Thủ tướng, Bộ trưởng",
      "Qua thông tin đại chúng"

@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Chi phí",
-    "icon": "🧾",
+    "icon": "doc",
     "children": [
      "Chi phí quá khứ",
      "Chi phí thay thế",
@@ -38,7 +38,7 @@
    },
    {
     "label": "Thu nhập",
-    "icon": "📈",
+    "icon": "chart",
     "children": [
      "Lợi ích kinh tế mang lại",
      "Khó dự báo"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Thị trường",
-    "icon": "🏪",
+    "icon": "cart",
     "children": [
      "So với giao dịch tương đương",
      "Cần thị trường đủ dữ liệu"

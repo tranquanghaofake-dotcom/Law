@@ -32,7 +32,7 @@
   "tree": [
    {
     "label": "Vốn",
-    "icon": "💵",
+    "icon": "money",
     "children": [
      "Chọn cách huy động",
      "Phân bổ, sử dụng"
@@ -40,21 +40,21 @@
    },
    {
     "label": "Tài sản",
-    "icon": "🏠",
+    "icon": "home",
     "children": [
      "Chiếm hữu, sử dụng, định đoạt"
     ]
    },
    {
     "label": "Được từ chối",
-    "icon": "✋",
+    "icon": "ban",
     "children": [
      "Yêu cầu nguồn lực trái pháp luật"
     ]
    },
    {
     "label": "Giới hạn",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Doanh nghiệp có vốn nhà nước"
     ]

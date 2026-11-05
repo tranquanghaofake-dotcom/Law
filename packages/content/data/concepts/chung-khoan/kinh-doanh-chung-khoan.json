@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Công ty chứng khoán",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Môi giới",
      "Tự doanh",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Công ty quản lý quỹ",
-    "icon": "🧺",
+    "icon": "box",
     "children": [
      "Quản lý quỹ",
      "Quản lý danh mục"
@@ -47,7 +47,7 @@
    },
    {
     "label": "Tính chất",
-    "icon": "💡",
+    "icon": "idea",
     "children": [
      "Kinh doanh có điều kiện"
     ]

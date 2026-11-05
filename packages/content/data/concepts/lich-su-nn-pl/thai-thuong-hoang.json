@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Cơ chế",
-    "icon": "🔄",
+    "icon": "cycle",
     "children": [
      "Nhường ngôi khi còn sống",
      "Thượng hoàng cùng trông coi"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Mục đích",
-    "icon": "🎯",
+    "icon": "target",
     "children": [
      "Chuyển giao êm thấm",
      "Tránh tranh ngôi",
@@ -46,7 +46,7 @@
    },
    {
     "label": "Đặc điểm",
-    "icon": "🏠",
+    "icon": "home",
     "children": [
      "Gia pháp họ Trần"
     ]

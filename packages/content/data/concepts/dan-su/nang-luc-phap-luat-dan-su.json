@@ -28,14 +28,14 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "🎫",
+    "icon": "doc",
     "children": [
      "Khả năng có quyền, nghĩa vụ"
     ]
    },
    {
     "label": "Đặc điểm",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Mọi người như nhau",
      "Từ khi sinh ra đến khi chết",
@@ -44,7 +44,7 @@
    },
    {
     "label": "Phân biệt",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Năng lực hành vi: tự mình làm"
     ]

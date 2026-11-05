@@ -31,21 +31,21 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "🔑",
+    "icon": "key",
     "children": [
      "Chuyển quyền sở hữu"
     ]
    },
    {
     "label": "Hình thức",
-    "icon": "📝",
+    "icon": "pen",
     "children": [
      "Hợp đồng bằng văn bản"
     ]
    },
    {
     "label": "Hạn chế",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Chỉ dẫn địa lý: không được chuyển",
      "Tên thương mại: kèm cơ sở kinh doanh"
@@ -53,7 +53,7 @@
    },
    {
     "label": "Nội dung",
-    "icon": "📋",
+    "icon": "list",
     "children": [
      "Các bên, căn cứ, giá",
      "Quyền và nghĩa vụ"

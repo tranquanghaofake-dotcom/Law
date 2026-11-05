@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Quá tự tin",
-    "icon": "😎",
+    "icon": "person",
     "children": [
      "Thấy trước hậu quả",
      "Cho rằng không xảy ra, ngăn được"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Cẩu thả",
-    "icon": "😶",
+    "icon": "person",
     "children": [
      "Không thấy trước",
      "Phải thấy và có thể thấy"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Phân biệt",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Cố ý gián tiếp: để mặc",
      "Sự kiện bất ngờ: không thể thấy"

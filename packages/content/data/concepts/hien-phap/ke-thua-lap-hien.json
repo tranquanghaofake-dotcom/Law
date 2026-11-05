@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Hiến pháp 2013",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "Thông qua 28/11/2013",
      "Hiệu lực 01/01/2014"
@@ -39,7 +39,7 @@
    },
    {
     "label": "Kế thừa",
-    "icon": "🔗",
+    "icon": "link",
     "children": [
      "1946",
      "1959",
@@ -49,14 +49,14 @@
    },
    {
     "label": "Chủ thể",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Nhân dân xây dựng, thi hành, bảo vệ"
     ]
    },
    {
     "label": "Sửa đổi",
-    "icon": "✏️",
+    "icon": "pen",
     "children": [
      "Nghị quyết 203/2025 của Quốc hội khóa 15"
     ]

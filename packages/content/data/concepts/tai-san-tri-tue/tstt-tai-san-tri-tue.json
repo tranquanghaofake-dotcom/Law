@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "💡",
+    "icon": "idea",
     "children": [
      "Kết quả sáng tạo trí tuệ",
      "Tài sản vô hình"
@@ -36,7 +36,7 @@
    },
    {
     "label": "Đặc điểm",
-    "icon": "⭐",
+    "icon": "star",
     "children": [
      "Xác định được",
      "Không hao mòn, cạn kiệt",
@@ -45,7 +45,7 @@
    },
    {
     "label": "Phân biệt",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Quyền sở hữu trí tuệ: được luật bảo hộ"
     ]

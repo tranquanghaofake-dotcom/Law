@@ -33,7 +33,7 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "🤝",
+    "icon": "handshake",
     "children": [
      "Thỏa thuận cho sử dụng tiền",
      "Hoặc cam kết cho phép sử dụng",
@@ -42,7 +42,7 @@
    },
    {
     "label": "Nghiệp vụ",
-    "icon": "🧩",
+    "icon": "puzzle",
     "children": [
      "Cho vay, chiết khấu",
      "Cho thuê tài chính, bao thanh toán",

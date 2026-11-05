@@ -28,21 +28,21 @@
   "tree": [
    {
     "label": "Ai phát hành",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Công ty cổ phần"
     ]
    },
    {
     "label": "Cho ai",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Cổ đông hiện hữu"
     ]
    },
    {
     "label": "Quyền",
-    "icon": "🔑",
+    "icon": "key",
     "children": [
      "Mua cổ phần mới",
      "Theo điều kiện xác định"
@@ -50,7 +50,7 @@
    },
    {
     "label": "Mục đích",
-    "icon": "🛡️",
+    "icon": "shield",
     "children": [
      "Tránh pha loãng"
     ]

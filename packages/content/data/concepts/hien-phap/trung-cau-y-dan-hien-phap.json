@@ -29,14 +29,14 @@
   "tree": [
    {
     "label": "Thông qua",
-    "icon": "🗳️",
+    "icon": "vote",
     "children": [
      "Ít nhất 2/3 tổng số đại biểu"
     ]
    },
    {
     "label": "Trưng cầu ý dân",
-    "icon": "❓",
+    "icon": "question",
     "children": [
      "Do Quốc hội quyết định",
      "Không bắt buộc"
@@ -44,7 +44,7 @@
    },
    {
     "label": "Phân biệt",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Lấy ý kiến Nhân dân: bắt buộc khi soạn thảo"
     ]

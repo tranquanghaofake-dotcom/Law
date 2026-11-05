@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Đặc điểm",
-    "icon": "🏘️",
+    "icon": "village",
     "children": [
      "Tại nơi cư trú",
      "Không cách ly khỏi cộng đồng"
@@ -36,14 +36,14 @@
    },
    {
     "label": "Thời hạn",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "03 đến 06 tháng"
     ]
    },
    {
     "label": "Ai quyết định",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Chủ tịch Ủy ban nhân dân cấp xã"
     ]

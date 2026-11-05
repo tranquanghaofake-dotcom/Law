@@ -31,14 +31,14 @@
   "tree": [
    {
     "label": "Mốc",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "544, Lý Bí"
     ]
    },
    {
     "label": "Lần đầu",
-    "icon": "🥇",
+    "icon": "star",
     "children": [
      "Xưng đế: Nam Việt Đế",
      "Niên hiệu Thiên Đức",
@@ -47,7 +47,7 @@
    },
    {
     "label": "Triều đình",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Lập trăm quan",
      "Điện Vạn Thọ"

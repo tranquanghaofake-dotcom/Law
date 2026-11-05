@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Điều kiện",
-    "icon": "📌",
+    "icon": "pin",
     "children": [
      "Đơn đầu tiên tại nước thành viên",
      "Cùng một đối tượng"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Thời hạn ưu tiên",
-    "icon": "⏳",
+    "icon": "clock",
     "children": [
      "Sáng chế: 12 tháng",
      "Kiểu dáng, nhãn hiệu: 6 tháng"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Lợi ích",
-    "icon": "🏆",
+    "icon": "star",
     "children": [
      "Thắng đơn nộp xen giữa",
      "Không mất tính mới"

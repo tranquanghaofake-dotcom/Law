@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Nguồn",
-    "icon": "💰",
+    "icon": "money",
     "children": [
      "Lợi nhuận sau thuế",
      "Không từ vốn"
@@ -39,7 +39,7 @@
    },
    {
     "label": "Điều kiện (phổ thông)",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "Xong nghĩa vụ thuế",
      "Đã trích quỹ, bù lỗ",
@@ -48,7 +48,7 @@
    },
    {
     "label": "Hình thức",
-    "icon": "🎁",
+    "icon": "gift",
     "children": [
      "Tiền",
      "Cổ phần",

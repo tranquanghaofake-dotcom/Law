@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Khi nào",
-    "icon": "⏰",
+    "icon": "clock",
     "children": [
      "Trước khi tiến hành",
      "Nếu thuộc ngưỡng thông báo"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Ngưỡng (một trong)",
-    "icon": "📏",
+    "icon": "measure",
     "children": [
      "Tổng tài sản",
      "Tổng doanh thu",
@@ -47,7 +47,7 @@
    },
    {
     "label": "Thẩm định sơ bộ",
-    "icon": "🔍",
+    "icon": "search",
     "children": [
      "30 ngày từ khi đủ hồ sơ",
      "Quá hạn không báo: được thực hiện"

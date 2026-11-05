@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Bằng tiền",
-    "icon": "💵",
+    "icon": "money",
     "children": [
      "Trợ cấp, phụ cấp hằng tháng",
      "Trợ cấp một lần"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Ưu đãi khác",
-    "icon": "🎁",
+    "icon": "gift",
     "children": [
      "Bảo hiểm y tế, điều dưỡng",
      "Ưu tiên tuyển sinh, việc làm",
@@ -48,7 +48,7 @@
    },
    {
     "label": "Nguyên tắc",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Điều chỉnh theo kinh tế - xã hội"
     ]

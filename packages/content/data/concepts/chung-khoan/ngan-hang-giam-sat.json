@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Là",
-    "icon": "🏦",
+    "icon": "bank",
     "children": [
      "Ngân hàng thương mại",
      "Có giấy chứng nhận lưu ký"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Nhiệm vụ",
-    "icon": "🔐",
+    "icon": "lock",
     "children": [
      "Lưu ký tài sản quỹ",
      "Giám sát công ty quản lý quỹ"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Ý nghĩa",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Hai chìa khóa",
      "Khó ôm tiền bỏ trốn"

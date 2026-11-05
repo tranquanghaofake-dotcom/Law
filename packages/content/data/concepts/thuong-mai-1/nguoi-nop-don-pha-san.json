@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Có quyền",
-    "icon": "🙋",
+    "icon": "person",
     "children": [
      "Chủ nợ không bảo đảm",
      "Người lao động, công đoàn",
@@ -41,7 +41,7 @@
    },
    {
     "label": "Có nghĩa vụ",
-    "icon": "📌",
+    "icon": "pin",
     "children": [
      "Người đại diện theo pháp luật",
      "Chủ doanh nghiệp tư nhân, hội đồng quản lý"

@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Áp dụng chung",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Cho mọi người trong hoàn cảnh đó",
      "Dùng nhiều lần"
@@ -37,15 +37,15 @@
    },
    {
     "label": "Bắt buộc",
-    "icon": "❗"
+    "icon": "warn"
    },
    {
     "label": "Do cơ quan có thẩm quyền ban hành",
-    "icon": "🏛️"
+    "icon": "state"
    },
    {
     "label": "Nhà nước bảo đảm thực hiện",
-    "icon": "🛡️"
+    "icon": "shield"
    }
   ],
   "case": {

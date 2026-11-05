@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Định nghĩa",
-    "icon": "👴",
+    "icon": "person",
     "children": [
      "Tiếp tục lao động sau tuổi nghỉ hưu",
      "Khoản 2 Điều 169"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Quyền",
-    "icon": "🕐",
+    "icon": "clock",
     "children": [
      "Rút ngắn thời giờ làm việc",
      "Làm không trọn thời gian"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Sử dụng",
-    "icon": "💼",
+    "icon": "box",
     "children": [
      "Nhiều lần hợp đồng xác định thời hạn",
      "Vẫn nhận lương ngoài lương hưu"

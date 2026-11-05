@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Đơn nhất",
-    "icon": "🏠",
+    "icon": "home",
     "children": [
      "Một chủ quyền, một hiến pháp",
      "Địa phương không có chủ quyền",
@@ -37,7 +37,7 @@
    },
    {
     "label": "Liên bang",
-    "icon": "🏘️",
+    "icon": "village",
     "children": [
      "Bang có chủ quyền nhất định",
      "Hai hệ thống cơ quan, pháp luật"

@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Đối nội",
-    "icon": "🏠",
+    "icon": "home",
     "children": [
      "Kinh tế, xã hội",
      "An ninh, trật tự",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Đối ngoại",
-    "icon": "🌍",
+    "icon": "globe",
     "children": [
      "Bảo vệ Tổ quốc",
      "Hợp tác quốc tế"
@@ -47,14 +47,14 @@
    },
    {
     "label": "Hình thức",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Xây dựng, thực hiện, bảo vệ pháp luật"
     ]
    },
    {
     "label": "Phương pháp",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Thuyết phục",
      "Cưỡng chế"

@@ -31,25 +31,25 @@
   "tree": [
    {
     "label": "Hết thời hạn",
-    "icon": "⏰",
+    "icon": "clock",
     "children": [
      "Ghi sẵn trong văn bản"
     ]
    },
    {
     "label": "Bị thay thế, sửa đổi",
-    "icon": "🔄",
+    "icon": "cycle",
     "children": [
      "Bởi chính cơ quan đã ban hành"
     ]
    },
    {
     "label": "Bị bãi bỏ",
-    "icon": "🗑️"
+    "icon": "trash"
    },
    {
     "label": "Kéo theo",
-    "icon": "🔗",
+    "icon": "link",
     "children": [
      "Văn bản hướng dẫn cũng hết",
      "Trừ phần được giữ lại"

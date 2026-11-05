@@ -30,21 +30,21 @@
   "tree": [
    {
     "label": "Vị trí",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Cơ quan quyền lực nhà nước ở địa phương"
     ]
    },
    {
     "label": "Hình thành",
-    "icon": "🗳️",
+    "icon": "vote",
     "children": [
      "Nhân dân địa phương bầu"
     ]
    },
    {
     "label": "Chịu trách nhiệm",
-    "icon": "↕️",
+    "icon": "compare",
     "children": [
      "Trước Nhân dân địa phương",
      "Trước cơ quan nhà nước cấp trên"
@@ -52,7 +52,7 @@
    },
    {
     "label": "Chức năng",
-    "icon": "⚙️",
+    "icon": "tool",
     "children": [
      "Quyết định vấn đề địa phương",
      "Giám sát"

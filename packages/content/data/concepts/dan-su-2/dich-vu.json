@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "🛠️",
+    "icon": "tool",
     "children": [
      "Bên cung ứng làm công việc",
      "Bên sử dụng trả tiền"
@@ -36,7 +36,7 @@
    },
    {
     "label": "Đặc điểm",
-    "icon": "🧭",
+    "icon": "arrow",
     "children": [
      "Tự chủ cách làm",
      "Cam kết kết quả"
@@ -44,7 +44,7 @@
    },
    {
     "label": "Phân biệt",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Có quản lý, giám sát → lao động"
     ]

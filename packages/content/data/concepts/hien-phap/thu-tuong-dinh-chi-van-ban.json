@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Đình chỉ hoặc bãi bỏ",
-    "icon": "✂️",
+    "icon": "cut",
     "children": [
      "Văn bản Bộ trưởng",
      "Văn bản Ủy ban nhân dân tỉnh",
@@ -38,7 +38,7 @@
    },
    {
     "label": "Chỉ đình chỉ",
-    "icon": "⏸️",
+    "icon": "pause",
     "children": [
      "Nghị quyết Hội đồng nhân dân tỉnh",
      "Đề nghị Ủy ban thường vụ bãi bỏ"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Điều kiện",
-    "icon": "📏",
+    "icon": "measure",
     "children": [
      "Trái Hiến pháp, luật, văn bản cấp trên"
     ]

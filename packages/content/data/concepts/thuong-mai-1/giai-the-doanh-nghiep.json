@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Trường hợp",
-    "icon": "🚪",
+    "icon": "door",
     "children": [
      "Hết thời hạn hoạt động",
      "Tự nguyện theo quyết định",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Điều kiện",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "Thanh toán hết nợ",
      "Không đang giải quyết tranh chấp"

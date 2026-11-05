@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Doanh nghiệp",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Công ty đại chúng",
      "Tổ chức phát hành, niêm yết trái phiếu"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Hạ tầng",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Sở giao dịch",
      "Tổng công ty lưu ký"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Cá nhân, nhóm",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Cổ đông lớn từ 5%",
      "Người nội bộ"

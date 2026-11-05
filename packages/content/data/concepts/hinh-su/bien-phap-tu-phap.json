@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Người phạm tội",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Tịch thu vật, tiền liên quan",
      "Trả lại, bồi thường, xin lỗi",
@@ -39,14 +39,14 @@
    },
    {
     "label": "Pháp nhân thương mại",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Thêm khôi phục tình trạng ban đầu"
     ]
    },
    {
     "label": "Vai trò",
-    "icon": "🧩",
+    "icon": "puzzle",
     "children": [
      "Hỗ trợ hoặc thay thế hình phạt"
     ]

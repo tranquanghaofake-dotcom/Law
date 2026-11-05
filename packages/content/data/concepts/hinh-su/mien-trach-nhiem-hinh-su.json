@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Được miễn",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "Chính sách, pháp luật thay đổi",
      "Có đại xá"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Có thể được miễn",
-    "icon": "🤔",
+    "icon": "question",
     "children": [
      "Chuyển biến tình hình",
      "Bệnh hiểm nghèo",
@@ -47,7 +47,7 @@
    },
    {
     "label": "Hòa giải",
-    "icon": "🤝",
+    "icon": "handshake",
     "children": [
      "Tội nhẹ, bị hại tự nguyện"
     ]

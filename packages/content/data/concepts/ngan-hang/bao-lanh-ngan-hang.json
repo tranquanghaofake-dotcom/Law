@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Ba bên",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Bên bảo lãnh: ngân hàng",
      "Bên được bảo lãnh: khách hàng",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Khi nào trả thay",
-    "icon": "⚠️",
+    "icon": "warn",
     "children": [
      "Khách không thực hiện",
      "Thực hiện không đầy đủ"
@@ -47,7 +47,7 @@
    },
    {
     "label": "Sau khi trả",
-    "icon": "🧾",
+    "icon": "doc",
     "children": [
      "Khách nhận nợ bắt buộc"
     ]

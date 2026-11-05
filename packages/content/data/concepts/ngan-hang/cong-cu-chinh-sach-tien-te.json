@@ -32,7 +32,7 @@
   "tree": [
    {
     "label": "Công cụ",
-    "icon": "🎛️",
+    "icon": "tool",
     "children": [
      "Tái cấp vốn",
      "Lãi suất, tỷ giá",
@@ -42,7 +42,7 @@
    },
    {
     "label": "Hút tiền",
-    "icon": "🧲",
+    "icon": "tool",
     "children": [
      "Tăng lãi suất, dự trữ",
      "Bán giấy tờ có giá"
@@ -50,7 +50,7 @@
    },
    {
     "label": "Ai quyết định",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Thống đốc"
     ]

@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Là",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Cá nhân",
      "Sở hữu thực tế vốn điều lệ",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Mục đích",
-    "icon": "🔍",
+    "icon": "search",
     "children": [
      "Minh bạch",
      "Phòng chống rửa tiền"
@@ -47,14 +47,14 @@
    },
    {
     "label": "Doanh nghiệp phải",
-    "icon": "📋",
+    "icon": "list",
     "children": [
      "Thu thập, lưu giữ, cung cấp thông tin"
     ]
    },
    {
     "label": "Hiệu lực",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "Từ 01/7/2025"
     ]

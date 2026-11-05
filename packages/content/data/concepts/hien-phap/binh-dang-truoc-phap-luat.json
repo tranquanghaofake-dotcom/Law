@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Ai",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Mọi người",
      "Cả người nước ngoài, không quốc tịch"
@@ -36,14 +36,14 @@
    },
    {
     "label": "Vế 1",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Bình đẳng trước pháp luật"
     ]
    },
    {
     "label": "Vế 2",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Không bị phân biệt đối xử",
      "chính trị, dân sự, kinh tế, văn hóa, xã hội"

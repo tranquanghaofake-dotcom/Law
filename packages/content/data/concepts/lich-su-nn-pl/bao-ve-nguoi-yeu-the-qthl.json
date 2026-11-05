@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Người yếu thế",
-    "icon": "🤲",
+    "icon": "handshake",
     "children": [
      "Quan sở tại phải thu nuôi",
      "Góa, mồ côi, tàn tật"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Phụ nữ",
-    "icon": "👩",
+    "icon": "person",
     "children": [
      "Chồng bỏ lửng vợ 5 tháng",
      "Thì mất vợ"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Đánh giá",
-    "icon": "⭐",
+    "icon": "star",
     "children": [
      "Giá trị nhân văn nổi bật"
     ]

@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Thỏa thuận, ý chí",
-    "icon": "🤝",
+    "icon": "handshake",
     "children": [
      "Hợp đồng",
      "Hành vi pháp lý đơn phương"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Ngoài hợp đồng",
-    "icon": "🚪",
+    "icon": "door",
     "children": [
      "Thực hiện công việc không ủy quyền",
      "Được lợi không có căn cứ",
@@ -47,7 +47,7 @@
    },
    {
     "label": "Khác",
-    "icon": "➕",
+    "icon": "calc",
     "children": [
      "Căn cứ khác do luật định"
     ]

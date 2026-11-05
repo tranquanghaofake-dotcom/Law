@@ -33,28 +33,28 @@
   "tree": [
    {
     "label": "Tác động tới hệ thống pháp luật",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Có trái Hiến pháp, luật khác không"
     ]
    },
    {
     "label": "Tác động kinh tế, xã hội",
-    "icon": "📊",
+    "icon": "chart",
     "children": [
      "Chi phí và lợi ích"
     ]
    },
    {
     "label": "Tác động về giới",
-    "icon": "👫",
+    "icon": "people",
     "children": [
      "Nếu có"
     ]
    },
    {
     "label": "Tác động của thủ tục hành chính",
-    "icon": "📝",
+    "icon": "pen",
     "children": [
      "Nếu có"
     ]

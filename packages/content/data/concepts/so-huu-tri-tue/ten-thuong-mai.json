@@ -29,14 +29,14 @@
   "tree": [
    {
     "label": "Chức năng",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Phân biệt chủ thể kinh doanh"
     ]
    },
    {
     "label": "Phạm vi",
-    "icon": "📍",
+    "icon": "pin",
     "children": [
      "Cùng lĩnh vực",
      "Cùng khu vực kinh doanh"
@@ -44,7 +44,7 @@
    },
    {
     "label": "Xác lập",
-    "icon": "✍️",
+    "icon": "pen",
     "children": [
      "Sử dụng hợp pháp",
      "Không cần đăng ký"

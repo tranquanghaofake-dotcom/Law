@@ -31,32 +31,32 @@
   "tree": [
    {
     "label": "Tiếng Việt",
-    "icon": "🗣️"
+    "icon": "announce"
    },
    {
     "label": "Chính xác",
-    "icon": "🎯",
+    "icon": "target",
     "children": [
      "Một nghĩa, đúng thuật ngữ"
     ]
    },
    {
     "label": "Phổ thông",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Không tiếng địa phương, tiếng lóng"
     ]
    },
    {
     "label": "Thống nhất",
-    "icon": "🔁",
+    "icon": "cycle",
     "children": [
      "Một khái niệm một từ"
     ]
    },
    {
     "label": "Rõ ràng, dễ hiểu",
-    "icon": "💡"
+    "icon": "idea"
    }
   ],
   "case": {

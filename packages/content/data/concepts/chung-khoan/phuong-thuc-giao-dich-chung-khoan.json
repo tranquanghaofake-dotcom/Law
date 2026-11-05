@@ -28,14 +28,14 @@
   "tree": [
    {
     "label": "Khớp lệnh tập trung",
-    "icon": "🤖",
+    "icon": "device",
     "children": [
      "Hệ thống tự ghép lệnh"
     ]
    },
    {
     "label": "Thỏa thuận",
-    "icon": "🤝",
+    "icon": "handshake",
     "children": [
      "Hai bên tự chốt giá, khối lượng",
      "Thường lô lớn"
@@ -43,7 +43,7 @@
    },
    {
     "label": "Cấm",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Giao dịch ngoài hệ thống"
     ]

@@ -29,14 +29,14 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "🙋",
+    "icon": "person",
     "children": [
      "Tự nguyện xin chấm dứt"
     ]
    },
    {
     "label": "Chưa được thôi",
-    "icon": "⏸️",
+    "icon": "pause",
     "children": [
      "Nợ thuế, nghĩa vụ tài sản",
      "Đang bị truy cứu hình sự",
@@ -45,7 +45,7 @@
    },
    {
     "label": "Không được thôi",
-    "icon": "⛔",
+    "icon": "ban",
     "children": [
      "Phương hại lợi ích quốc gia",
      "Cán bộ, công chức",

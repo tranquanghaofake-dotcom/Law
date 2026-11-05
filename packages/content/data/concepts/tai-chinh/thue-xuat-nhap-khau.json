@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Chịu thuế",
-    "icon": "🛃",
+    "icon": "globe",
     "children": [
      "Hàng qua cửa khẩu, biên giới",
      "Nội địa ↔ khu phi thuế quan",
@@ -40,7 +40,7 @@
    },
    {
     "label": "Không áp dụng",
-    "icon": "🆓",
+    "icon": "unlock",
     "children": [
      "Quá cảnh, chuyển khẩu",
      "Viện trợ nhân đạo"
@@ -48,7 +48,7 @@
    },
    {
     "label": "Thuế suất",
-    "icon": "📊",
+    "icon": "chart",
     "children": [
      "Ưu đãi",
      "Ưu đãi đặc biệt",

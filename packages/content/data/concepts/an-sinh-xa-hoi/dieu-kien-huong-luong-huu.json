@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Điều kiện 1",
-    "icon": "🎂",
+    "icon": "calendar",
     "children": [
      "Đủ tuổi nghỉ hưu",
      "Khoản 2 Điều 169 Bộ luật Lao động"
@@ -39,7 +39,7 @@
    },
    {
     "label": "Điều kiện 2",
-    "icon": "📆",
+    "icon": "calendar",
     "children": [
      "Đóng bảo hiểm xã hội bắt buộc từ đủ 15 năm",
      "Luật 2014: 20 năm"
@@ -47,14 +47,14 @@
    },
    {
     "label": "Ngoại lệ",
-    "icon": "⚡",
+    "icon": "bolt",
     "children": [
      "Nghỉ hưu sớm: nghề nặng nhọc, suy giảm khả năng"
     ]
    },
    {
     "label": "Chưa đủ",
-    "icon": "⏳",
+    "icon": "clock",
     "children": [
      "Bảo lưu, đóng tiếp hoặc hưởng một lần"
     ]

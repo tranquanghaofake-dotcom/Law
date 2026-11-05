@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Chia di sản",
-    "icon": "⏳",
+    "icon": "clock",
     "children": [
      "Bất động sản: 30 năm",
      "Động sản: 10 năm"
@@ -38,21 +38,21 @@
    },
    {
     "label": "Xác nhận, bác bỏ quyền",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "10 năm"
     ]
    },
    {
     "label": "Nghĩa vụ tài sản người chết",
-    "icon": "💳",
+    "icon": "money",
     "children": [
      "03 năm"
     ]
    },
    {
     "label": "Mốc tính",
-    "icon": "📍",
+    "icon": "pin",
     "children": [
      "Thời điểm mở thừa kế"
     ]

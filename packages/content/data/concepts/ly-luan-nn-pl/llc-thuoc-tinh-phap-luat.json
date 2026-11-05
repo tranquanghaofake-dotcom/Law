@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Nguồn gốc",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Quyền lực nhà nước",
      "Tính ý chí"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Cấu tạo",
-    "icon": "🧱",
+    "icon": "stairs",
     "children": [
      "Quy phạm phổ biến",
      "Tính hệ thống",
@@ -46,7 +46,7 @@
    },
    {
     "label": "Phân biệt",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Đạo đức, tập quán, điều lệ"
     ]

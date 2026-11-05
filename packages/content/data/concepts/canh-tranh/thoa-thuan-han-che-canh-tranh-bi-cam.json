@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Cấm tuyệt đối",
-    "icon": "⛔",
+    "icon": "ban",
     "children": [
      "Ấn định giá, chia thị trường (cùng thị trường)",
      "Thông đồng đấu thầu",
@@ -38,14 +38,14 @@
    },
    {
     "label": "Cấm có điều kiện",
-    "icon": "⚠️",
+    "icon": "warn",
     "children": [
      "Khi tác động hạn chế đáng kể"
     ]
    },
    {
     "label": "Luật 2018",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "Bỏ ngưỡng thị phần 30%"
     ]

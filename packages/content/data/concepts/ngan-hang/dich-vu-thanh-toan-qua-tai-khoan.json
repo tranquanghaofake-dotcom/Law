@@ -32,7 +32,7 @@
   "tree": [
    {
     "label": "Dịch vụ",
-    "icon": "💳",
+    "icon": "money",
     "children": [
      "Cung ứng phương tiện thanh toán",
      "Séc, lệnh chi, ủy nhiệm chi",
@@ -42,14 +42,14 @@
    },
    {
     "label": "Điều kiện",
-    "icon": "🏦",
+    "icon": "bank",
     "children": [
      "Qua tài khoản thanh toán"
     ]
    },
    {
     "label": "Không được làm",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Tổ chức tín dụng phi ngân hàng"
     ]

@@ -33,7 +33,7 @@
   "tree": [
    {
     "label": "Cơ sở",
-    "icon": "⚠️",
+    "icon": "warn",
     "children": [
      "Vi phạm pháp luật",
      "Thiệt hại luật định"
@@ -41,7 +41,7 @@
    },
    {
     "label": "Đặc điểm",
-    "icon": "📌",
+    "icon": "pin",
     "children": [
      "Nhà nước lên án",
      "Luôn bất lợi"
@@ -49,7 +49,7 @@
    },
    {
     "label": "Bốn loại",
-    "icon": "4️⃣",
+    "icon": "n4",
     "children": [
      "Hình sự (chỉ Tòa án)",
      "Hành chính",

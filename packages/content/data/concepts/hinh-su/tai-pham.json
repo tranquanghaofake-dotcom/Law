@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Tái phạm",
-    "icon": "🔁",
+    "icon": "cycle",
     "children": [
      "Đã bị kết án, chưa xóa án tích",
      "Lại phạm tội do cố ý",
@@ -38,7 +38,7 @@
    },
    {
     "label": "Tái phạm nguy hiểm",
-    "icon": "🔴",
+    "icon": "ban",
     "children": [
      "Án cũ và mới đều rất nghiêm trọng cố ý",
      "Đã tái phạm lại phạm tội cố ý"

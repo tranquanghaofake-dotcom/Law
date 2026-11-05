@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Hạn chế cạnh tranh",
-    "icon": "🏗️",
+    "icon": "company",
     "children": [
      "Thỏa thuận, lạm dụng",
      "Tập trung kinh tế",
@@ -38,14 +38,14 @@
    },
    {
     "label": "Không lành mạnh",
-    "icon": "🤝",
+    "icon": "handshake",
     "children": [
      "Bảo vệ đạo đức kinh doanh"
     ]
    },
    {
     "label": "Phạm vi",
-    "icon": "🌏",
+    "icon": "globe",
     "children": [
      "Cả hành vi ở nước ngoài",
      "Gây tác động tới thị trường Việt Nam"

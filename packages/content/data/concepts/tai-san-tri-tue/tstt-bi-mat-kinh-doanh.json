@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Điều kiện",
-    "icon": "🔐",
+    "icon": "lock",
     "children": [
      "Không phải hiểu biết thông thường",
      "Tạo lợi thế kinh doanh",
@@ -40,7 +40,7 @@
    },
    {
     "label": "Quản trị",
-    "icon": "📋",
+    "icon": "list",
     "children": [
      "Quy chế bảo mật",
      "Hợp đồng giữ bí mật"

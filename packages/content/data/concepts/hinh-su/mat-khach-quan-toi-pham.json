@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Nội dung",
-    "icon": "🎬",
+    "icon": "bolt",
     "children": [
      "Hành vi khách quan (bắt buộc)",
      "Hậu quả",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Hành vi",
-    "icon": "🔎",
+    "icon": "search",
     "children": [
      "Nguy hiểm cho xã hội",
      "Có ý thức, ý chí",

@@ -28,14 +28,14 @@
   "tree": [
    {
     "label": "Thành lập",
-    "icon": "🤝",
+    "icon": "handshake",
     "children": [
      "Theo pháp luật về hội"
     ]
    },
    {
     "label": "Việc làm",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Bộ quy tắc đạo đức nghề nghiệp",
      "Phổ biến pháp luật"
@@ -43,14 +43,14 @@
    },
    {
     "label": "Kiểm soát",
-    "icon": "👁️",
+    "icon": "eye",
     "children": [
      "Ủy ban chấp thuận, giám sát"
     ]
    },
    {
     "label": "Không phải",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Cơ quan nhà nước"
     ]

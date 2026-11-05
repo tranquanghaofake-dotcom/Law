@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Chủ thể",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Cá nhân",
      "Tổ chức",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Pháp nhân",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "Thành lập hợp pháp",
      "Cơ cấu tổ chức",

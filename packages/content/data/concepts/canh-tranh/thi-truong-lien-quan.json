@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Sản phẩm",
-    "icon": "🔄",
+    "icon": "cycle",
     "children": [
      "Thay thế về đặc tính",
      "Mục đích sử dụng",
@@ -38,7 +38,7 @@
    },
    {
     "label": "Địa lý",
-    "icon": "🗺️",
+    "icon": "map",
     "children": [
      "Điều kiện cạnh tranh tương tự",
      "Khác biệt với khu vực lân cận"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Vai trò",
-    "icon": "📐",
+    "icon": "measure",
     "children": [
      "Cơ sở tính thị phần, thống lĩnh"
     ]

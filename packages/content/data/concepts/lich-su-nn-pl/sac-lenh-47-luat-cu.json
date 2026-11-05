@@ -31,21 +31,21 @@
   "tree": [
    {
     "label": "Mốc",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "10 tháng 10 năm 1945"
     ]
    },
    {
     "label": "Nội dung",
-    "icon": "⏸️",
+    "icon": "pause",
     "children": [
      "Tạm giữ luật lệ cũ"
     ]
    },
    {
     "label": "Điều kiện",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Không trái nền độc lập",
      "Không trái chính thể dân chủ cộng hòa"

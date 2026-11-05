@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Tranh tụng",
-    "icon": "🗣️",
+    "icon": "announce",
     "children": [
      "Các bên bình đẳng đưa chứng cứ",
      "Lần đầu hiến định năm 2013"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Hai cấp xét xử",
-    "icon": "2️⃣",
+    "icon": "n2",
     "children": [
      "Sơ thẩm",
      "Phúc thẩm"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Bào chữa",
-    "icon": "🛡️",
+    "icon": "shield",
     "children": [
      "Bị can, bị cáo",
      "Bảo vệ lợi ích đương sự"

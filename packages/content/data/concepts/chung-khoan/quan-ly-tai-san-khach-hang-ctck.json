@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Gồm",
-    "icon": "💼",
+    "icon": "box",
     "children": [
      "Tiền gửi giao dịch",
      "Chứng khoán lưu ký"
@@ -37,14 +37,14 @@
    },
    {
     "label": "Thuộc",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Khách hàng"
     ]
    },
    {
     "label": "Khi phá sản",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Hoàn trả khách",
      "Chỉ trừ khoản khách nợ công ty"

@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "🔧",
+    "icon": "tool",
     "children": [
      "Giải pháp kỹ thuật",
      "Sản phẩm hoặc quy trình"
@@ -39,7 +39,7 @@
    },
    {
     "label": "Bằng sáng chế",
-    "icon": "🥇",
+    "icon": "star",
     "children": [
      "Tính mới",
      "Trình độ sáng tạo",
@@ -49,7 +49,7 @@
    },
    {
     "label": "Giải pháp hữu ích",
-    "icon": "🥈",
+    "icon": "star",
     "children": [
      "Không cần trình độ sáng tạo",
      "10 năm"

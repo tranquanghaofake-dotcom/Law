@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Cấm",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Làm cùng lúc 02 công ty",
      "Mở tài khoản ở công ty khác",
@@ -37,7 +37,7 @@
    },
    {
     "label": "Mục đích",
-    "icon": "🎯",
+    "icon": "target",
     "children": [
      "Chống xung đột lợi ích"
     ]

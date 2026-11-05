@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Tổ chức",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Ngân hàng, công ty chứng khoán",
      "Công ty vốn góp trên 100 tỷ"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Cá nhân",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Có chứng chỉ hành nghề",
      "Danh mục từ 02 tỷ",
@@ -47,7 +47,7 @@
    },
    {
     "label": "Ưu thế",
-    "icon": "⭐",
+    "icon": "star",
     "children": [
      "Mua chào bán riêng lẻ"
     ]

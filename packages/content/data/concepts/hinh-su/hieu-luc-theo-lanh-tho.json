@@ -29,14 +29,14 @@
   "tree": [
    {
     "label": "Lãnh thổ",
-    "icon": "🇻🇳",
+    "icon": "flag",
     "children": [
      "Mọi hành vi, kể cả người nước ngoài"
     ]
    },
    {
     "label": "Mở rộng",
-    "icon": "✈️",
+    "icon": "globe",
     "children": [
      "Tàu bay, tàu biển Việt Nam",
      "Vùng đặc quyền kinh tế, thềm lục địa"
@@ -44,7 +44,7 @@
    },
    {
     "label": "Ngoại lệ",
-    "icon": "🛡️",
+    "icon": "shield",
     "children": [
      "Quyền miễn trừ ngoại giao, lãnh sự"
     ]

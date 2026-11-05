@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Người kiện",
-    "icon": "🙋",
+    "icon": "person",
     "children": [
      "Không có quyền khởi kiện",
      "Thiếu năng lực hành vi tố tụng"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Vụ việc",
-    "icon": "📂",
+    "icon": "list",
     "children": [
      "Chưa đủ điều kiện khởi kiện",
      "Đã giải quyết bằng bản án",
@@ -46,7 +46,7 @@
    },
    {
     "label": "Thủ tục",
-    "icon": "💵",
+    "icon": "money",
     "children": [
      "Không nộp tạm ứng án phí",
      "Không sửa đơn"
@@ -54,7 +54,7 @@
    },
    {
     "label": "Phản đối",
-    "icon": "📣",
+    "icon": "announce",
     "children": [
      "Khiếu nại, kiến nghị"
     ]

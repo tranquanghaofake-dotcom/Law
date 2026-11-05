@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Điều kiện",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "Chứng chỉ do Ủy ban cấp",
      "Làm việc tại tổ chức kinh doanh chứng khoán"
@@ -36,14 +36,14 @@
    },
    {
     "label": "Hành nghề",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Nhân danh công ty"
     ]
    },
    {
     "label": "Chưa phải",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Có chứng chỉ mà không làm đâu"
     ]

@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Thân thế",
-    "icon": "👪",
+    "icon": "family",
     "children": [
      "Nghị thân",
      "Nghị cố",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Phẩm chất",
-    "icon": "🌟",
+    "icon": "star",
     "children": [
      "Nghị hiền",
      "Nghị năng",
@@ -48,7 +48,7 @@
    },
    {
     "label": "Địa vị, công lao",
-    "icon": "🏅",
+    "icon": "star",
     "children": [
      "Nghị công",
      "Nghị quý"
@@ -56,7 +56,7 @@
    },
    {
     "label": "Xử lý",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Tâu vua xét định",
      "Trừ thập ác"

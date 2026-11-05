@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Quyền",
-    "icon": "🔑",
+    "icon": "key",
     "children": [
      "Sử dụng, cho phép sử dụng",
      "Ngăn cấm người khác",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Giới hạn",
-    "icon": "🚧",
+    "icon": "ban",
     "children": [
      "Dùng cá nhân, phi thương mại",
      "Nghiên cứu, giảng dạy",

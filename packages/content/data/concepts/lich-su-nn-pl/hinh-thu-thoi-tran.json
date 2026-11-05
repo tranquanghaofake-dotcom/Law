@@ -31,14 +31,14 @@
   "tree": [
    {
     "label": "Mốc",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "1341"
     ]
    },
    {
     "label": "Người soạn",
-    "icon": "✍️",
+    "icon": "pen",
     "children": [
      "Trương Hán Siêu",
      "Nguyễn Trung Ngạn"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Bộ luật",
-    "icon": "📚",
+    "icon": "book",
     "children": [
      "Hoàng triều đại điển: điển chế",
      "Hình thư: luật hình"
@@ -54,7 +54,7 @@
    },
    {
     "label": "Hiện trạng",
-    "icon": "👻",
+    "icon": "end",
     "children": [
      "Không còn"
     ]

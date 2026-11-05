@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Trong một Viện",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Viện trưởng lãnh đạo",
      "Kiểm sát viên chịu sự chỉ đạo"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Giữa các cấp",
-    "icon": "🪜",
+    "icon": "stairs",
     "children": [
      "Cấp dưới chịu lãnh đạo cấp trên",
      "Lãnh đạo thống nhất của Viện trưởng tối cao"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Đối lập",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Thẩm phán xét xử độc lập"
     ]

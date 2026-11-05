@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Dấu hiệu",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "Nguy hiểm cho xã hội (cơ bản)",
      "Có lỗi",
@@ -40,7 +40,7 @@
    },
    {
     "label": "Loại trừ",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Nguy hiểm không đáng kể"
     ]

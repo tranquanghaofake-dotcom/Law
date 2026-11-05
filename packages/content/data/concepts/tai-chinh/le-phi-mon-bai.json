@@ -31,14 +31,14 @@
   "tree": [
    {
     "label": "Lệ phí môn bài",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Chấm dứt thu từ 01/01/2026"
     ]
    },
    {
     "label": "Thuế khoán",
-    "icon": "📝",
+    "icon": "pen",
     "children": [
      "Bỏ với hộ, cá nhân kinh doanh",
      "Chuyển sang tự kê khai"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Căn cứ",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Nghị quyết 198/2025 của Quốc hội khóa 15"
     ]

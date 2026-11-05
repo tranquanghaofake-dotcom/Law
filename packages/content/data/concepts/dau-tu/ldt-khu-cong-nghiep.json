@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Khu công nghiệp",
-    "icon": "🏭",
+    "icon": "company",
     "children": [
      "Ranh giới xác định",
      "Sản xuất hàng công nghiệp",
@@ -38,14 +38,14 @@
    },
    {
     "label": "Khu chế xuất",
-    "icon": "📦",
+    "icon": "box",
     "children": [
      "Chuyên hàng xuất khẩu"
     ]
    },
    {
     "label": "Ưu đãi",
-    "icon": "🎁",
+    "icon": "gift",
     "children": [
      "Thường là địa bàn ưu đãi"
     ]

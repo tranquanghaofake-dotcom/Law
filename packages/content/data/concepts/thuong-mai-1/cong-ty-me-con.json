@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Tiêu chí (một trong)",
-    "icon": "🌳",
+    "icon": "plant",
     "children": [
      "Sở hữu trên 50%",
      "Bổ nhiệm đa số Hội đồng quản trị, Giám đốc",
@@ -38,7 +38,7 @@
    },
    {
     "label": "Cấm",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Con góp vốn vào mẹ",
      "Các con sở hữu chéo"

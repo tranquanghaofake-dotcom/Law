@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Vụ án",
-    "icon": "⚔️",
+    "icon": "conflict",
     "children": [
      "Nguyên đơn",
      "Bị đơn",
@@ -37,7 +37,7 @@
    },
    {
     "label": "Việc dân sự",
-    "icon": "📝",
+    "icon": "pen",
     "children": [
      "Người yêu cầu",
      "Người có quyền lợi, nghĩa vụ liên quan"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Không phải đương sự",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Người làm chứng, giám định",
      "Người phiên dịch, đại diện"

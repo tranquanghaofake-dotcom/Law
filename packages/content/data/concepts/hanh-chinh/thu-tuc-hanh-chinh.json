@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Gồm",
-    "icon": "📋",
+    "icon": "list",
     "children": [
      "Trình tự, cách thức",
      "Hồ sơ",
@@ -37,14 +37,14 @@
    },
    {
     "label": "Mục đích",
-    "icon": "🎯",
+    "icon": "target",
     "children": [
      "Giải quyết công việc cụ thể"
     ]
    },
    {
     "label": "Đối tượng",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Cá nhân, tổ chức"
     ]

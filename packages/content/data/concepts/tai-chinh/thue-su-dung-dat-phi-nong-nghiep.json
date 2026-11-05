@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Đối tượng",
-    "icon": "🏠",
+    "icon": "home",
     "children": [
      "Đất ở nông thôn, đô thị",
      "Đất sản xuất, kinh doanh phi nông nghiệp"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Người nộp",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Người có quyền sử dụng đất",
      "Chưa có giấy: người đang sử dụng"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Thuế suất đất ở",
-    "icon": "📈",
+    "icon": "chart",
     "children": [
      "Trong hạn mức: 0,03%",
      "Vượt đến 3 lần: 0,07%",

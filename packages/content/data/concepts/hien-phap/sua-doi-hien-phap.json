@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Ai đề nghị",
-    "icon": "🙋",
+    "icon": "person",
     "children": [
      "Chủ tịch nước",
      "Ủy ban thường vụ Quốc hội",
@@ -39,14 +39,14 @@
    },
    {
     "label": "Quyết định",
-    "icon": "🗳️",
+    "icon": "vote",
     "children": [
      "Ít nhất 2/3 tổng số đại biểu"
     ]
    },
    {
     "label": "Quy trình",
-    "icon": "🔁",
+    "icon": "cycle",
     "children": [
      "Ủy ban dự thảo",
      "Lấy ý kiến Nhân dân"

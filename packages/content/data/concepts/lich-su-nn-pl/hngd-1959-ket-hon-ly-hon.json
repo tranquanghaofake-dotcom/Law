@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Điều kiện",
-    "icon": "💍",
+    "icon": "family",
     "children": [
      "Tự nguyện",
      "Nữ từ 18, nam từ 20",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Hình thức",
-    "icon": "📝",
+    "icon": "pen",
     "children": [
      "Đăng ký tại Ủy ban hành chính",
      "Nghi lễ khác không có giá trị"
@@ -47,7 +47,7 @@
    },
    {
     "label": "Ly hôn",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Tòa án giải quyết",
      "Hạn chế quyền ly hôn của chồng"

@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Điều kiện",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "Thành lập hợp pháp",
      "Cơ cấu tổ chức",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Hệ quả",
-    "icon": "🛡️",
+    "icon": "shield",
     "children": [
      "Thành viên không chịu thay"
     ]

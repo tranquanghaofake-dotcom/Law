@@ -30,14 +30,14 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "🏷️",
+    "icon": "doc",
     "children": [
      "Phân biệt hàng hóa, dịch vụ"
     ]
    },
    {
     "label": "Điều kiện 1",
-    "icon": "👁️",
+    "icon": "eye",
     "children": [
      "Dấu hiệu nhìn thấy được",
      "Hoặc âm thanh (từ 2022)"
@@ -45,14 +45,14 @@
    },
    {
     "label": "Điều kiện 2",
-    "icon": "🎯",
+    "icon": "target",
     "children": [
      "Khả năng phân biệt"
     ]
    },
    {
     "label": "Phân loại",
-    "icon": "🧩",
+    "icon": "puzzle",
     "children": [
      "Tập thể",
      "Chứng nhận",

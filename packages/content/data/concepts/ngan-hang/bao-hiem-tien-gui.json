@@ -32,7 +32,7 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "🛟",
+    "icon": "shield",
     "children": [
      "Bảo đảm hoàn trả tiền gửi",
      "Trong hạn mức chi trả"
@@ -40,21 +40,21 @@
    },
    {
     "label": "Người được bảo hiểm",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Cá nhân có tiền gửi được bảo hiểm"
     ]
    },
    {
     "label": "Phải tham gia",
-    "icon": "🏦",
+    "icon": "bank",
     "children": [
      "Tổ chức tín dụng nhận tiền gửi cá nhân"
     ]
    },
    {
     "label": "Không phải tham gia",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Ngân hàng chính sách"
     ]

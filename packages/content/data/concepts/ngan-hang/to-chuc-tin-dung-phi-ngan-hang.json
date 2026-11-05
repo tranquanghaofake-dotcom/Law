@@ -32,7 +32,7 @@
   "tree": [
    {
     "label": "Không được",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Nhận tiền gửi của cá nhân",
      "Thanh toán qua tài khoản"
@@ -40,7 +40,7 @@
    },
    {
     "label": "Hai loại",
-    "icon": "2️⃣",
+    "icon": "n2",
     "children": [
      "Công ty tài chính tổng hợp",
      "Công ty tài chính chuyên ngành"
@@ -48,7 +48,7 @@
    },
    {
     "label": "Chuyên ngành",
-    "icon": "🛍️",
+    "icon": "cart",
     "children": [
      "Bao thanh toán",
      "Tín dụng tiêu dùng",

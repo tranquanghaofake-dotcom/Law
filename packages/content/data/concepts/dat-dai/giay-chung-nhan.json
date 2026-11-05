@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Chứng thư pháp lý",
      "Nhà nước xác nhận quyền hợp pháp"
@@ -36,14 +36,14 @@
    },
    {
     "label": "Vai trò",
-    "icon": "🔑",
+    "icon": "key",
     "children": [
      "Điều kiện chuyển nhượng, thế chấp"
     ]
    },
    {
     "label": "Cấp cho",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Người có giấy tờ",
      "Không giấy tờ nhưng dùng ổn định"

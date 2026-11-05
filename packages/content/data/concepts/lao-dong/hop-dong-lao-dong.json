@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Nội dung",
-    "icon": "📝",
+    "icon": "pen",
     "children": [
      "Việc làm có trả công",
      "Điều kiện lao động",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Đặc trưng",
-    "icon": "🔗",
+    "icon": "link",
     "children": [
      "Phụ thuộc pháp lý",
      "Tự mình thực hiện"
@@ -47,7 +47,7 @@
    },
    {
     "label": "Tên gọi khác",
-    "icon": "🏷️",
+    "icon": "doc",
     "children": [
      "Có trả lương và quản lý thì vẫn là hợp đồng lao động"
     ]

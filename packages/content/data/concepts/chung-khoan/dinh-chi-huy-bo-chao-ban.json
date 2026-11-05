@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Đình chỉ",
-    "icon": "⏸️",
+    "icon": "pause",
     "children": [
      "Tối đa 60 ngày",
      "Để sửa sai hồ sơ"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Hủy bỏ",
-    "icon": "❌",
+    "icon": "ban",
     "children": [
      "Hết đình chỉ không khắc phục",
      "Phát hành lần đầu ra công chúng không đủ 100 nhà đầu tư"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Hệ quả hủy",
-    "icon": "💸",
+    "icon": "money",
     "children": [
      "Hoàn tiền trong 15 ngày"
     ]

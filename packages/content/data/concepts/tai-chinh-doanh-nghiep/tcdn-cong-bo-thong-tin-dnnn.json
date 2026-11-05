@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Nơi công bố",
-    "icon": "🌐",
+    "icon": "globe",
     "children": [
      "Trang web của công ty",
      "Trang web cơ quan đại diện chủ sở hữu"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Nội dung",
-    "icon": "📄",
+    "icon": "doc",
     "children": [
      "Thông tin cơ bản, Điều lệ",
      "Kế hoạch kinh doanh",
@@ -47,7 +47,7 @@
    },
    {
     "label": "Hạn",
-    "icon": "⏰",
+    "icon": "clock",
     "children": [
      "Báo cáo năm đã kiểm toán: 150 ngày",
      "Báo cáo giữa năm: trước 31/7"

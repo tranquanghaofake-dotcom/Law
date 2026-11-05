@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Thành phần",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Chủ tịch, Phó Chủ tịch, Ủy viên",
      "Quốc hội phê chuẩn theo đề nghị Chủ tịch nước"
@@ -36,14 +36,14 @@
    },
    {
     "label": "Làm việc",
-    "icon": "🗳️",
+    "icon": "vote",
     "children": [
      "Tập thể, quyết định theo đa số"
     ]
    },
    {
     "label": "Nhiệm vụ",
-    "icon": "⚔️",
+    "icon": "conflict",
     "children": [
      "Trình quyết định tình trạng chiến tranh",
      "Động viên lực lượng bảo vệ Tổ quốc"

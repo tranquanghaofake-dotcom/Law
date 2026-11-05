@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Mức hưởng",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Theo mức đóng",
      "Theo thời gian đóng",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Mức đóng",
-    "icon": "💵",
+    "icon": "money",
     "children": [
      "Bắt buộc: theo tiền lương",
      "Tự nguyện: theo thu nhập tự chọn"
@@ -47,14 +47,14 @@
    },
    {
     "label": "Quỹ",
-    "icon": "🏦",
+    "icon": "bank",
     "children": [
      "Tập trung, thống nhất, công khai"
     ]
    },
    {
     "label": "Đã hưởng một lần",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Không tính lại"
     ]

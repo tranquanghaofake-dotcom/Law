@@ -29,14 +29,14 @@
   "tree": [
    {
     "label": "Từ đủ 18",
-    "icon": "🧑",
+    "icon": "person",
     "children": [
      "Tự bồi thường"
     ]
    },
    {
     "label": "Dưới 15",
-    "icon": "👶",
+    "icon": "child",
     "children": [
      "Cha mẹ bồi thường toàn bộ",
      "Thiếu thì lấy tài sản của con"
@@ -44,7 +44,7 @@
    },
    {
     "label": "15 đến dưới 18",
-    "icon": "🧒",
+    "icon": "child",
     "children": [
      "Con dùng tài sản mình trước",
      "Cha mẹ bù phần thiếu"
@@ -52,7 +52,7 @@
    },
    {
     "label": "Người được giám hộ",
-    "icon": "🛡️",
+    "icon": "shield",
     "children": [
      "Người giám hộ"
     ]

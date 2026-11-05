@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Đặc điểm",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Nghiêm khắc nhất",
      "Chỉ quy định trong Bộ luật Hình sự",
@@ -38,7 +38,7 @@
    },
    {
     "label": "Mục đích",
-    "icon": "🎯",
+    "icon": "target",
     "children": [
      "Trừng trị",
      "Giáo dục, phòng ngừa"

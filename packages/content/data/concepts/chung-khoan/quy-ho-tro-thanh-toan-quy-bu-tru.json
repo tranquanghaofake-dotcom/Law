@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Quỹ hỗ trợ thanh toán",
-    "icon": "🛟",
+    "icon": "shield",
     "children": [
      "Thành viên lưu ký góp",
      "Thanh toán thay khi tạm mất khả năng"
@@ -36,14 +36,14 @@
    },
    {
     "label": "Quỹ bù trừ",
-    "icon": "🧮",
+    "icon": "calc",
     "children": [
      "Thành viên bù trừ góp"
     ]
    },
    {
     "label": "Tài sản",
-    "icon": "🔒",
+    "icon": "lock",
     "children": [
      "Tách biệt với Tổng công ty"
     ]

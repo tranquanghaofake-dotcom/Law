@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Kinh tế",
-    "icon": "🌾",
+    "icon": "plant",
     "children": [
      "Nông nghiệp lúa nước",
      "Kỹ thuật đồng thau"
@@ -36,14 +36,14 @@
    },
    {
     "label": "Xã hội",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Phân hóa sơ khai"
     ]
    },
    {
     "label": "Thúc đẩy",
-    "icon": "🌊",
+    "icon": "map",
     "children": [
      "Trị thủy",
      "Chống ngoại xâm"

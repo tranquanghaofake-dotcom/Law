@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Hình thức",
-    "icon": "📋",
+    "icon": "list",
     "children": [
      "Ban hành văn bản quy phạm",
      "Ban hành văn bản áp dụng",
@@ -38,7 +38,7 @@
    },
    {
     "label": "Phương pháp",
-    "icon": "🎯",
+    "icon": "target",
     "children": [
      "Thuyết phục (cơ bản)",
      "Cưỡng chế (hỗ trợ)",

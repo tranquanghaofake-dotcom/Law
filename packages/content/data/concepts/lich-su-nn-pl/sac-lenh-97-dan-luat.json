@@ -31,14 +31,14 @@
   "tree": [
    {
     "label": "Mốc",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "22 tháng 5 năm 1950"
     ]
    },
    {
     "label": "Nguyên tắc",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Quyền dân sự hợp quyền lợi nhân dân",
      "Vợ chồng bình đẳng",
@@ -47,7 +47,7 @@
    },
    {
     "label": "Hôn nhân",
-    "icon": "💍",
+    "icon": "family",
     "children": [
      "Thành niên lấy vợ chồng không cần cha mẹ đồng ý"
     ]

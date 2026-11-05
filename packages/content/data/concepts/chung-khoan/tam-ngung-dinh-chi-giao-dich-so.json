@@ -29,14 +29,14 @@
   "tree": [
    {
     "label": "Ai quyết định",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Ủy ban Chứng khoán Nhà nước"
     ]
    },
    {
     "label": "Căn cứ",
-    "icon": "⚠️",
+    "icon": "warn",
     "children": [
      "Bất khả kháng",
      "Thị trường biến động bất thường",
@@ -45,7 +45,7 @@
    },
    {
     "label": "Sau đó",
-    "icon": "🔄",
+    "icon": "cycle",
     "children": [
      "Khôi phục khi khắc phục xong"
     ]

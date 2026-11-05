@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Nguyên tắc",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Tôn trọng thỏa thuận",
      "Trọng tài viên độc lập, vô tư",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Phán quyết",
-    "icon": "🔚",
+    "icon": "end",
     "children": [
      "Chung thẩm",
      "Chỉ có thể yêu cầu Tòa hủy"

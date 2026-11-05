@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "🙋",
+    "icon": "person",
     "children": [
      "Đề nghị xem xét lại",
      "Bảo vệ quyền lợi của mình"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Đối tượng",
-    "icon": "📄",
+    "icon": "doc",
     "children": [
      "Quyết định hành chính",
      "Hành vi hành chính",
@@ -47,7 +47,7 @@
    },
    {
     "label": "Trình tự",
-    "icon": "🔁",
+    "icon": "cycle",
     "children": [
      "Lần đầu",
      "Lần hai",
@@ -56,7 +56,7 @@
    },
    {
     "label": "Thời hiệu",
-    "icon": "⏳",
+    "icon": "clock",
     "children": [
      "90 ngày"
     ]

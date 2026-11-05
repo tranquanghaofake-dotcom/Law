@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Là",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Thành viên Hội đồng quản trị, Tổng giám đốc",
      "Kế toán trưởng",
@@ -37,14 +37,14 @@
    },
    {
     "label": "Người có liên quan",
-    "icon": "👪",
+    "icon": "family",
     "children": [
      "Vợ, chồng, cha mẹ, con, anh chị em"
     ]
    },
    {
     "label": "Nghĩa vụ",
-    "icon": "📢",
+    "icon": "announce",
     "children": [
      "Công bố trước giao dịch",
      "Công bố sau giao dịch"

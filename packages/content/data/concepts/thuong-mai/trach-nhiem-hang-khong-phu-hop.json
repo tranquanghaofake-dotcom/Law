@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Bên bán chịu",
-    "icon": "🔧",
+    "icon": "tool",
     "children": [
      "Khiếm khuyết có trước chuyển rủi ro",
      "Kể cả phát hiện sau"
@@ -37,14 +37,14 @@
    },
    {
     "label": "Bên bán không chịu",
-    "icon": "👀",
+    "icon": "eye",
     "children": [
      "Bên mua đã biết hoặc phải biết"
     ]
    },
    {
     "label": "Giới hạn",
-    "icon": "⏳",
+    "icon": "clock",
     "children": [
      "Trong thời hạn khiếu nại"
     ]

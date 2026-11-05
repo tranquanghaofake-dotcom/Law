@@ -29,14 +29,14 @@
   "tree": [
    {
     "label": "Hợp đồng",
-    "icon": "🤝",
+    "icon": "handshake",
     "children": [
      "Thỏa thuận hai hay nhiều bên"
     ]
    },
    {
     "label": "Đơn phương",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Lập di chúc",
      "Hứa thưởng"
@@ -44,7 +44,7 @@
    },
    {
     "label": "Hệ quả",
-    "icon": "🔄",
+    "icon": "cycle",
     "children": [
      "Phát sinh, thay đổi, chấm dứt quyền"
     ]

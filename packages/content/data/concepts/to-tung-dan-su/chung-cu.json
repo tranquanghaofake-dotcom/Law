@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Thuộc tính",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "Có thật",
      "Dùng xác định tình tiết",
@@ -38,7 +38,7 @@
    },
    {
     "label": "Nguồn",
-    "icon": "📂",
+    "icon": "list",
     "children": [
      "Tài liệu, dữ liệu điện tử",
      "Vật chứng",
@@ -48,7 +48,7 @@
    },
    {
     "label": "Phân biệt",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Nguồn chứng cứ khác chứng cứ"
     ]

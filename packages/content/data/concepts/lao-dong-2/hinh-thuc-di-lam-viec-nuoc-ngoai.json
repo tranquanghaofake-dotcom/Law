@@ -29,14 +29,14 @@
   "tree": [
    {
     "label": "Đơn vị sự nghiệp",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Thực hiện thỏa thuận quốc tế"
     ]
    },
    {
     "label": "Doanh nghiệp, tổ chức",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Doanh nghiệp dịch vụ (giấy phép, ký quỹ)",
      "Trúng thầu công trình ở nước ngoài",
@@ -45,7 +45,7 @@
    },
    {
     "label": "Trực tiếp",
-    "icon": "✍️",
+    "icon": "pen",
     "children": [
      "Tự giao kết với chủ nước ngoài",
      "Phải đăng ký"

@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Nghị quyết quy phạm",
-    "icon": "📘",
+    "icon": "book",
     "children": [
      "Thí điểm chính sách khác luật",
      "Tạm ngưng, kéo dài áp dụng luật"
@@ -39,7 +39,7 @@
    },
    {
     "label": "Nghị quyết cá biệt",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Bầu, phê chuẩn nhân sự",
      "Thông qua kế hoạch"

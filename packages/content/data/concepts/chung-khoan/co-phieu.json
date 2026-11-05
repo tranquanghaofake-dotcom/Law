@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "🧩",
+    "icon": "puzzle",
     "children": [
      "Phần vốn cổ phần",
      "Người sở hữu là cổ đông"
@@ -36,7 +36,7 @@
    },
    {
     "label": "Quyền",
-    "icon": "🗳️",
+    "icon": "vote",
     "children": [
      "Theo phần vốn",
      "Cổ tức khi có lãi"
@@ -44,7 +44,7 @@
    },
    {
     "label": "Khác chủ nợ",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Không được trả lại vốn theo hạn"
     ]

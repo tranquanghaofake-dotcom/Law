@@ -29,14 +29,14 @@
   "tree": [
    {
     "label": "Đại diện",
-    "icon": "🗣️",
+    "icon": "announce",
     "children": [
      "Ý chí, nguyện vọng Nhân dân địa phương"
     ]
    },
    {
     "label": "Nghĩa vụ",
-    "icon": "📋",
+    "icon": "list",
     "children": [
      "Tiếp xúc, báo cáo cử tri",
      "Trả lời kiến nghị",
@@ -45,7 +45,7 @@
    },
    {
     "label": "Quyền",
-    "icon": "🔑",
+    "icon": "key",
     "children": [
      "Chất vấn cùng cấp",
      "Kiến nghị với cơ quan địa phương"

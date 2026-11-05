@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Nghiệp vụ",
-    "icon": "🧾",
+    "icon": "doc",
     "children": [
      "Môi giới",
      "Tự doanh",
@@ -38,7 +38,7 @@
    },
    {
     "label": "Bậc thang",
-    "icon": "🪜",
+    "icon": "stairs",
     "children": [
      "Tự doanh cần môi giới",
      "Bảo lãnh cần tự doanh"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Không làm",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Quản lý quỹ, danh mục"
     ]

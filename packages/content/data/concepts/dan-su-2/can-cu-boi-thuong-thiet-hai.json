@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Yếu tố",
-    "icon": "🔗",
+    "icon": "link",
     "children": [
      "Hành vi xâm phạm",
      "Thiệt hại thực tế",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Miễn",
-    "icon": "🛡️",
+    "icon": "shield",
     "children": [
      "Bất khả kháng",
      "Hoàn toàn do lỗi bên bị hại"
@@ -47,7 +47,7 @@
    },
    {
     "label": "Tài sản gây hại",
-    "icon": "🌳",
+    "icon": "plant",
     "children": [
      "Chủ sở hữu, người chiếm hữu bồi thường"
     ]

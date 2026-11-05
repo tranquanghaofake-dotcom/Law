@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "✋",
+    "icon": "ban",
     "children": [
      "Nắm giữ, chi phối tài sản",
      "Trực tiếp hoặc gián tiếp"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Chủ thể",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Chủ sở hữu",
      "Người không phải chủ sở hữu"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Phân loại",
-    "icon": "🗂️",
+    "icon": "list",
     "children": [
      "Ngay tình / không ngay tình",
      "Liên tục",

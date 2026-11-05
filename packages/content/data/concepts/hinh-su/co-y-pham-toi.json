@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Chung",
-    "icon": "🧠",
+    "icon": "idea",
     "children": [
      "Nhận thức rõ",
      "Thấy trước hậu quả"
@@ -37,14 +37,14 @@
    },
    {
     "label": "Trực tiếp",
-    "icon": "🎯",
+    "icon": "target",
     "children": [
      "Mong muốn hậu quả xảy ra"
     ]
    },
    {
     "label": "Gián tiếp",
-    "icon": "🤷",
+    "icon": "person",
     "children": [
      "Không mong muốn",
      "Có ý thức để mặc"

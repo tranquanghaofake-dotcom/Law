@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "🛡️",
+    "icon": "shield",
     "children": [
      "Bảo vệ của Nhà nước và xã hội",
      "Khi ngừng hoặc giảm thu nhập"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Rủi ro",
-    "icon": "⚠️",
+    "icon": "warn",
     "children": [
      "Ốm đau, thai sản, tai nạn",
      "Thất nghiệp, tuổi già, chết"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Ba bộ phận",
-    "icon": "🧩",
+    "icon": "puzzle",
     "children": [
      "Bảo hiểm xã hội (có đóng góp)",
      "Ưu đãi xã hội (người có công)",

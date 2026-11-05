@@ -30,21 +30,21 @@
   "tree": [
    {
     "label": "Mốc",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "1887"
     ]
    },
    {
     "label": "Đứng đầu",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Toàn quyền Đông Dương"
     ]
    },
    {
     "label": "Từng kỳ",
-    "icon": "🗺️",
+    "icon": "map",
     "children": [
      "Nam Kỳ: Thống đốc",
      "Bắc Kỳ: Thống sứ",

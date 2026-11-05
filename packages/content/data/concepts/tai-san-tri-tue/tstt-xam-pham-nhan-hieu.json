@@ -31,14 +31,14 @@
   "tree": [
    {
     "label": "Trùng – trùng",
-    "icon": "🎯",
+    "icon": "target",
     "children": [
      "Không cần chứng minh nhầm lẫn"
     ]
    },
    {
     "label": "Trùng hoặc tương tự",
-    "icon": "🔍",
+    "icon": "search",
     "children": [
      "Hàng trùng, tương tự, liên quan",
      "Có khả năng nhầm lẫn"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Nhãn hiệu nổi tiếng",
-    "icon": "⭐",
+    "icon": "star",
     "children": [
      "Mọi hàng hóa nếu gây nhầm lẫn"
     ]

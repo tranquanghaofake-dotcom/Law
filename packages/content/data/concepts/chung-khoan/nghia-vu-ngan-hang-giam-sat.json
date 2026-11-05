@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Giữ",
-    "icon": "🔐",
+    "icon": "lock",
     "children": [
      "Lưu ký tài sản quỹ",
      "Tách biệt với tài sản ngân hàng"
@@ -38,14 +38,14 @@
    },
    {
     "label": "Chi",
-    "icon": "💳",
+    "icon": "money",
     "children": [
      "Thu, chi theo yêu cầu hợp pháp"
     ]
    },
    {
     "label": "Canh",
-    "icon": "👁️",
+    "icon": "eye",
     "children": [
      "Giám sát tuân thủ",
      "Đối chiếu sổ sách",

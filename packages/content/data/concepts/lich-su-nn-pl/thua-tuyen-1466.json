@@ -31,14 +31,14 @@
   "tree": [
    {
     "label": "Mốc",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "1466; thêm Quảng Nam 1471"
     ]
    },
    {
     "label": "Chia",
-    "icon": "🗺️",
+    "icon": "map",
     "children": [
      "12 đạo",
      "Phủ Trung Đô"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Đổi tên",
-    "icon": "🔄",
+    "icon": "cycle",
     "children": [
      "Lộ thành phủ",
      "Trấn thành châu",
@@ -55,7 +55,7 @@
    },
    {
     "label": "Mỗi thừa tuyên",
-    "icon": "3️⃣",
+    "icon": "n3",
     "children": [
      "Ba ty"
     ]

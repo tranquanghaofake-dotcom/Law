@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Đặc điểm",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Quyền lực nhà nước",
      "Chủ thể có thẩm quyền",
@@ -40,7 +40,7 @@
    },
    {
     "label": "Khi cần",
-    "icon": "📌",
+    "icon": "pin",
     "children": [
      "Quyền không mặc nhiên phát sinh",
      "Có tranh chấp",
@@ -49,7 +49,7 @@
    },
    {
     "label": "Thiếu luật",
-    "icon": "🧩",
+    "icon": "puzzle",
     "children": [
      "Áp dụng tương tự"
     ]

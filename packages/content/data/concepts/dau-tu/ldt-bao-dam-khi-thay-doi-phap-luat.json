@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Ưu đãi cao hơn",
-    "icon": "📈",
+    "icon": "chart",
     "children": [
      "Theo luật mới",
      "Cho thời gian còn lại"
@@ -38,14 +38,14 @@
    },
    {
     "label": "Ưu đãi thấp hơn",
-    "icon": "📉",
+    "icon": "chart",
     "children": [
      "Tiếp tục theo quy định cũ"
     ]
    },
    {
     "label": "Ngoại lệ",
-    "icon": "⭐",
+    "icon": "star",
     "children": [
      "Ưu đãi đầu tư đặc biệt"
     ]

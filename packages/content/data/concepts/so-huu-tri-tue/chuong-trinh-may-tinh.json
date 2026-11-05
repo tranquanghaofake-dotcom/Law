@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Định nghĩa",
-    "icon": "💻",
+    "icon": "device",
     "children": [
      "Tập hợp chỉ dẫn",
      "Mã nguồn hoặc mã máy"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Bảo hộ",
-    "icon": "📚",
+    "icon": "book",
     "children": [
      "Quyền tác giả",
      "Như tác phẩm văn học"
@@ -46,14 +46,14 @@
    },
    {
     "label": "Người dùng hợp pháp",
-    "icon": "💾",
+    "icon": "device",
     "children": [
      "Một bản sao dự phòng"
     ]
    },
    {
     "label": "Không bảo hộ",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Dưới dạng sáng chế tự thân"
     ]

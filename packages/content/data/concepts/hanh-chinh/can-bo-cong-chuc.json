@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Cán bộ",
-    "icon": "🗳️",
+    "icon": "vote",
     "children": [
      "Bầu cử, phê chuẩn, bổ nhiệm",
      "Theo nhiệm kỳ"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Công chức",
-    "icon": "📝",
+    "icon": "pen",
     "children": [
      "Tuyển dụng",
      "Vào vị trí việc làm"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Chung",
-    "icon": "🇻🇳",
+    "icon": "flag",
     "children": [
      "Công dân Việt Nam",
      "Trong biên chế, lương ngân sách"

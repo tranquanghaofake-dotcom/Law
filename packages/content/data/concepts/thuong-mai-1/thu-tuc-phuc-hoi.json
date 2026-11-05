@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Ai nộp",
-    "icon": "🙋",
+    "icon": "person",
     "children": [
      "Người đại diện theo pháp luật",
      "Hội đồng quản lý, chủ sở hữu",
@@ -40,14 +40,14 @@
    },
    {
     "label": "Khi nào",
-    "icon": "⏰",
+    "icon": "clock",
     "children": [
      "Nguy cơ mất hoặc mất khả năng thanh toán"
     ]
    },
    {
     "label": "Phương án",
-    "icon": "📋",
+    "icon": "list",
     "children": [
      "Trình Hội nghị chủ nợ",
      "Kế hoạch trả nợ"

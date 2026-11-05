@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Điều kiện",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "Không có căn cứ pháp luật",
      "Ngay tình",
@@ -40,7 +40,7 @@
    },
    {
     "label": "Thời hạn",
-    "icon": "⏳",
+    "icon": "clock",
     "children": [
      "Động sản: 10 năm",
      "Bất động sản: 30 năm"
@@ -48,7 +48,7 @@
    },
    {
     "label": "Tính từ",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "Khi bắt đầu chiếm hữu"
     ]

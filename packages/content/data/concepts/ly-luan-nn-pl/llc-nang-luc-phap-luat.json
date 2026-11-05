@@ -32,7 +32,7 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "🎫",
+    "icon": "doc",
     "children": [
      "Được hưởng quyền",
      "Gánh vác nghĩa vụ"
@@ -40,7 +40,7 @@
    },
    {
     "label": "Đặc điểm (cá nhân)",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Mọi người như nhau",
      "Từ khi sinh đến khi chết"
@@ -48,7 +48,7 @@
    },
    {
     "label": "Quan hệ",
-    "icon": "➕",
+    "icon": "calc",
     "children": [
      "Pháp luật + hành vi = năng lực chủ thể"
     ]

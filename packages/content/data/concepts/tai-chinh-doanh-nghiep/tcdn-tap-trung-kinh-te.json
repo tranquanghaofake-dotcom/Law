@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Bốn hình thức",
-    "icon": "🧩",
+    "icon": "puzzle",
     "children": [
      "Sáp nhập",
      "Hợp nhất",
@@ -41,7 +41,7 @@
    },
    {
     "label": "Luật áp dụng",
-    "icon": "📚",
+    "icon": "book",
     "children": [
      "Luật Doanh nghiệp: thủ tục",
      "Luật Cạnh tranh: thông báo, kiểm soát"

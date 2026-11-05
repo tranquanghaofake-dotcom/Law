@@ -32,7 +32,7 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Nghĩa vụ trả nợ",
      "Có thời hạn, điều kiện trả lãi"
@@ -40,7 +40,7 @@
    },
    {
     "label": "Ví dụ",
-    "icon": "🧾",
+    "icon": "doc",
     "children": [
      "Trái phiếu, kỳ phiếu",
      "Tín phiếu, chứng chỉ tiền gửi"
@@ -48,7 +48,7 @@
    },
    {
     "label": "Dùng để",
-    "icon": "🎯",
+    "icon": "target",
     "children": [
      "Huy động vốn",
      "Chiết khấu"

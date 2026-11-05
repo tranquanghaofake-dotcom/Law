@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Bình thường",
-    "icon": "🕗",
+    "icon": "clock",
     "children": [
      "Tối đa 08 giờ mỗi ngày",
      "Tối đa 48 giờ mỗi tuần"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Làm thêm giờ",
-    "icon": "⏰",
+    "icon": "clock",
     "children": [
      "Người lao động đồng ý",
      "Tối đa 40 giờ mỗi tháng",

@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Vô thời hạn",
-    "icon": "♾️",
+    "icon": "infinity",
     "children": [
      "Đặt tên",
      "Đứng tên, được nêu tên",
@@ -40,7 +40,7 @@
    },
    {
     "label": "Có thời hạn",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "Công bố tác phẩm",
      "Chuyển nhượng được"

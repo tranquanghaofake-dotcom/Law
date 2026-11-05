@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Tổ hợp tác",
-    "icon": "🤝",
+    "icon": "handshake",
     "children": [
      "Ít nhất 02 thành viên",
      "Không có pháp nhân"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Hợp tác xã",
-    "icon": "🏘️",
+    "icon": "village",
     "children": [
      "Ít nhất 05 thành viên chính thức",
      "Có pháp nhân"
@@ -46,14 +46,14 @@
    },
    {
     "label": "Liên hiệp",
-    "icon": "🔗",
+    "icon": "link",
     "children": [
      "Ít nhất 03 hợp tác xã"
     ]
    },
    {
     "label": "Mục đích",
-    "icon": "🎯",
+    "icon": "target",
     "children": [
      "Nhu cầu chung của thành viên"
     ]

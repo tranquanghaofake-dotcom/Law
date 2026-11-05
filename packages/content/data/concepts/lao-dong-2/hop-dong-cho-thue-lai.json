@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Điều kiện doanh nghiệp",
-    "icon": "🔑",
+    "icon": "key",
     "children": [
      "Ký quỹ",
      "Giấy phép cho thuê lại"
@@ -36,14 +36,14 @@
    },
    {
     "label": "Hợp đồng lao động",
-    "icon": "📄",
+    "icon": "doc",
     "children": [
      "Doanh nghiệp cho thuê – người lao động"
     ]
    },
    {
     "label": "Hợp đồng cho thuê lại",
-    "icon": "🤝",
+    "icon": "handshake",
     "children": [
      "Doanh nghiệp cho thuê – bên thuê lại",
      "Văn bản, 02 bản",

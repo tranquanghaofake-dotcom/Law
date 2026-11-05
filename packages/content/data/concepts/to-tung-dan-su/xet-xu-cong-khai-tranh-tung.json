@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Kịp thời",
-    "icon": "⏱️",
+    "icon": "clock",
     "children": [
      "Trong thời hạn luật định",
      "Công bằng"
@@ -36,7 +36,7 @@
    },
    {
     "label": "Công khai",
-    "icon": "👀",
+    "icon": "eye",
     "children": [
      "Nguyên tắc",
      "Xử kín khi đặc biệt",
@@ -45,7 +45,7 @@
    },
    {
     "label": "Tranh tụng",
-    "icon": "🗣️",
+    "icon": "announce",
     "children": [
      "Mọi cấp xét xử",
      "Chứng cứ xem xét công khai"

@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Mục đích",
-    "icon": "🎯",
+    "icon": "target",
     "children": [
      "Bảo đảm giao kết",
      "Hoặc thực hiện hợp đồng"
@@ -37,21 +37,21 @@
    },
    {
     "label": "Thực hiện xong",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "Trả lại hoặc trừ vào tiền"
     ]
    },
    {
     "label": "Bên đặt cọc từ chối",
-    "icon": "❌",
+    "icon": "ban",
     "children": [
      "Mất cọc"
     ]
    },
    {
     "label": "Bên nhận cọc từ chối",
-    "icon": "💸",
+    "icon": "money",
     "children": [
      "Trả cọc + khoản tương đương"
     ]

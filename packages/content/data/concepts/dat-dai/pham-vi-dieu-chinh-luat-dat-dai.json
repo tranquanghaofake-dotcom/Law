@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Điều chỉnh",
-    "icon": "📚",
+    "icon": "book",
     "children": [
      "Chế độ sở hữu",
      "Quản lý đất đai",
@@ -38,7 +38,7 @@
    },
    {
     "label": "Phương pháp",
-    "icon": "⚙️",
+    "icon": "tool",
     "children": [
      "Mệnh lệnh – hành chính",
      "Bình đẳng – thỏa thuận"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Văn bản",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Luật Đất đai 2024",
      "Hiệu lực 01/8/2024"

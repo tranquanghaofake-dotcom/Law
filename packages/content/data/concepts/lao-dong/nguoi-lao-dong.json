@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Dấu hiệu",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "Làm việc theo thỏa thuận",
      "Được trả lương",
@@ -38,7 +38,7 @@
    },
    {
     "label": "Độ tuổi",
-    "icon": "🎂",
+    "icon": "calendar",
     "children": [
      "Đủ 15 tuổi",
      "Trừ lao động chưa thành niên"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Người sử dụng",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Doanh nghiệp, tổ chức",
      "Hộ gia đình, cá nhân"

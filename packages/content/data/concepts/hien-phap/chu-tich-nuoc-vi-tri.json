@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Vị trí",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Người đứng đầu Nhà nước",
      "Nguyên thủ quốc gia"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Thay mặt",
-    "icon": "🤝",
+    "icon": "handshake",
     "children": [
      "Đối nội",
      "Đối ngoại"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Quyền hạn trải rộng",
-    "icon": "🧩",
+    "icon": "puzzle",
     "children": [
      "Lập pháp",
      "Hành pháp",

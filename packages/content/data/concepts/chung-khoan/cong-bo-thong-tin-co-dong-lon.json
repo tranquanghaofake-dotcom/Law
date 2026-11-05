@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Cổ đông lớn",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Từ 5% cổ phiếu biểu quyết",
      "Tính cả nhóm liên quan"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Phải công bố",
-    "icon": "📢",
+    "icon": "announce",
     "children": [
      "Trở thành, không còn là cổ đông lớn",
      "Mỗi lần qua ngưỡng 1%"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Mục đích",
-    "icon": "🎯",
+    "icon": "target",
     "children": [
      "Biết ai đang gom, thoái"
     ]

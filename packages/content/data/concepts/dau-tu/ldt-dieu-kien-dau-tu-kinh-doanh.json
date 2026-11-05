@@ -28,21 +28,21 @@
   "tree": [
    {
     "label": "Áp dụng",
-    "icon": "🔑",
+    "icon": "key",
     "children": [
      "Ngành, nghề kinh doanh có điều kiện"
     ]
    },
    {
     "label": "Không gồm",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Tiêu chuẩn, quy chuẩn kỹ thuật"
     ]
    },
    {
     "label": "Phân biệt",
-    "icon": "⛔",
+    "icon": "ban",
     "children": [
      "Ngành nghề cấm: không được làm"
     ]

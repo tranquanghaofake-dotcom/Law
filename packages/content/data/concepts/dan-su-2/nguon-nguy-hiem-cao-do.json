@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Ví dụ",
-    "icon": "⚡",
+    "icon": "bolt",
     "children": [
      "Xe cơ giới",
      "Điện, nhà máy",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Trách nhiệm",
-    "icon": "💥",
+    "icon": "warn",
     "children": [
      "Chủ sở hữu, người sử dụng",
      "Không cần lỗi"
@@ -47,7 +47,7 @@
    },
    {
     "label": "Miễn",
-    "icon": "🛡️",
+    "icon": "shield",
     "children": [
      "Lỗi cố ý của người bị hại",
      "Bất khả kháng, tình thế cấp thiết"

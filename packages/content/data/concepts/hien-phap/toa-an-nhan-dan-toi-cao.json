@@ -29,21 +29,21 @@
   "tree": [
    {
     "label": "Xét xử",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Cơ quan xét xử cao nhất"
     ]
    },
    {
     "label": "Giám đốc",
-    "icon": "👁️",
+    "icon": "eye",
     "children": [
      "Việc xét xử của Tòa án khác"
     ]
    },
    {
     "label": "Thống nhất pháp luật",
-    "icon": "📏",
+    "icon": "measure",
     "children": [
      "Tổng kết thực tiễn",
      "Án lệ"
@@ -51,7 +51,7 @@
    },
    {
     "label": "Chánh án",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Quốc hội bầu",
      "Nhiệm kỳ theo Quốc hội"

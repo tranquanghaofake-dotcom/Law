@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Trong nước",
-    "icon": "🇻🇳",
+    "icon": "flag",
     "children": [
      "Cá nhân quốc tịch Việt Nam",
      "Tổ chức không có thành viên nước ngoài"
@@ -39,21 +39,21 @@
    },
    {
     "label": "Nước ngoài",
-    "icon": "🌍",
+    "icon": "globe",
     "children": [
      "Cá nhân, tổ chức nước ngoài"
     ]
    },
    {
     "label": "Tổ chức có vốn nước ngoài",
-    "icon": "🧩",
+    "icon": "puzzle",
     "children": [
      "Có thành viên, cổ đông nước ngoài"
     ]
    },
    {
     "label": "Ý nghĩa",
-    "icon": "📌",
+    "icon": "pin",
     "children": [
      "Quyết định thủ tục"
     ]

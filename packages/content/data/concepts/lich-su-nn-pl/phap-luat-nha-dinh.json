@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Nguồn luật",
-    "icon": "📢",
+    "icon": "announce",
     "children": [
      "Mệnh lệnh nhà vua",
      "Tập quán"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Hình phạt",
-    "icon": "🔥",
+    "icon": "warn",
     "children": [
      "Vạc dầu, cũi hổ",
      "Hà khắc, răn đe"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Lý do",
-    "icon": "❓",
+    "icon": "question",
     "children": [
      "Mới thống nhất sau 12 sứ quân"
     ]

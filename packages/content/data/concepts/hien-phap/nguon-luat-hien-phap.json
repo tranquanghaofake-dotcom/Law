@@ -30,14 +30,14 @@
   "tree": [
    {
     "label": "Nguồn chủ yếu",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Hiến pháp"
     ]
    },
    {
     "label": "Luật",
-    "icon": "📘",
+    "icon": "book",
     "children": [
      "Tổ chức bộ máy nhà nước",
      "Bầu cử, Quốc tịch, Trưng cầu ý dân"
@@ -45,14 +45,14 @@
    },
    {
     "label": "Nghị quyết",
-    "icon": "📄",
+    "icon": "doc",
     "children": [
      "Của Quốc hội"
     ]
    },
    {
     "label": "Văn bản khác",
-    "icon": "➕",
+    "icon": "calc",
     "children": [
      "Pháp lệnh, nghị quyết Ủy ban thường vụ"
     ]

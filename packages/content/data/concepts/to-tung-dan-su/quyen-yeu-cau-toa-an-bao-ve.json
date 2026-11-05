@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Quyền",
-    "icon": "🙋",
+    "icon": "person",
     "children": [
      "Khởi kiện vụ án",
      "Yêu cầu giải quyết việc dân sự"
@@ -36,7 +36,7 @@
    },
    {
     "label": "Chưa có luật thì áp dụng",
-    "icon": "📚",
+    "icon": "book",
     "children": [
      "Tập quán",
      "Tương tự pháp luật",
@@ -46,7 +46,7 @@
    },
    {
     "label": "Phân biệt",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Vụ án: có tranh chấp",
      "Việc: không tranh chấp"

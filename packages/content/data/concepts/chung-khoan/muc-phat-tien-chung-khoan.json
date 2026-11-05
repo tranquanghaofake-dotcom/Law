@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Nội gián, thao túng",
-    "icon": "🔟",
+    "icon": "calc",
     "children": [
      "Tối đa 10 lần khoản thu trái phép",
      "Không thấp hơn mức 03 tỷ"
@@ -37,14 +37,14 @@
    },
    {
     "label": "Vi phạm khác",
-    "icon": "3️⃣",
+    "icon": "n3",
     "children": [
      "Tối đa 03 tỷ"
     ]
    },
    {
     "label": "Cá nhân",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Bằng một nửa tổ chức"
     ]

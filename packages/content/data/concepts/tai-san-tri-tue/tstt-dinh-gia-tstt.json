@@ -30,14 +30,14 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "💰",
+    "icon": "money",
     "children": [
      "Ước tính giá trị bằng tiền"
     ]
    },
    {
     "label": "Mục đích",
-    "icon": "🎯",
+    "icon": "target",
     "children": [
      "Quản trị nội bộ",
      "Bán, cấp phép, góp vốn, thế chấp",
@@ -47,7 +47,7 @@
    },
    {
     "label": "Cách tiếp cận",
-    "icon": "🧮",
+    "icon": "calc",
     "children": [
      "Chi phí",
      "Thu nhập",

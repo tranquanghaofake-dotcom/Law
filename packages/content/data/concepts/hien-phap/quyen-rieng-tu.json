@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Bảo vệ",
-    "icon": "🔒",
+    "icon": "lock",
     "children": [
      "Đời sống riêng tư",
      "Bí mật cá nhân, gia đình",
@@ -38,14 +38,14 @@
    },
    {
     "label": "Thông tin",
-    "icon": "🤫",
+    "icon": "lock",
     "children": [
      "Được bảo đảm an toàn"
     ]
    },
    {
     "label": "Liên lạc",
-    "icon": "✉️",
+    "icon": "doc",
     "children": [
      "Thư tín, điện thoại, điện tín",
      "Các hình thức trao đổi riêng tư khác"

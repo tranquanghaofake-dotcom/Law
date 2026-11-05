@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Hình thức chính",
-    "icon": "📢",
+    "icon": "announce",
     "children": [
      "Cảnh cáo",
      "Phạt tiền"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Tối đa (tổ chức)",
-    "icon": "💸",
+    "icon": "money",
     "children": [
      "Hạn chế cạnh tranh: 10% doanh thu",
      "Tập trung kinh tế: 05%",
@@ -48,7 +48,7 @@
    },
    {
     "label": "Cá nhân",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Bằng một nửa tổ chức"
     ]

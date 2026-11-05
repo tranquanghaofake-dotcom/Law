@@ -29,14 +29,14 @@
   "tree": [
    {
     "label": "Về tranh chấp",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Ngoài thẩm quyền trọng tài"
     ]
    },
    {
     "label": "Về người ký",
-    "icon": "✍️",
+    "icon": "pen",
     "children": [
      "Không có thẩm quyền",
      "Không có năng lực hành vi"
@@ -44,7 +44,7 @@
    },
    {
     "label": "Về ý chí, hình thức",
-    "icon": "📄",
+    "icon": "doc",
     "children": [
      "Không bằng văn bản",
      "Bị lừa dối, đe dọa"
@@ -52,7 +52,7 @@
    },
    {
     "label": "Về nội dung",
-    "icon": "⛔",
+    "icon": "ban",
     "children": [
      "Vi phạm điều cấm"
     ]

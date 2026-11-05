@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Hội thẩm",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Đại diện Nhân dân",
      "Ngang quyền Thẩm phán khi xét xử"
@@ -37,14 +37,14 @@
    },
    {
     "label": "Áp dụng",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Xét xử sơ thẩm"
     ]
    },
    {
     "label": "Ngoại lệ",
-    "icon": "⚡",
+    "icon": "bolt",
     "children": [
      "Thủ tục rút gọn"
     ]

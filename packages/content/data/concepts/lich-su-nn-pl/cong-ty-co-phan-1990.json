@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Công ty trách nhiệm hữu hạn",
-    "icon": "🔒",
+    "icon": "lock",
     "children": [
      "Góp đủ vốn khi thành lập",
      "Không phát hành chứng khoán",
@@ -38,7 +38,7 @@
    },
    {
     "label": "Công ty cổ phần",
-    "icon": "📈",
+    "icon": "chart",
     "children": [
      "Ít nhất bảy cổ đông",
      "Vốn chia cổ phần bằng nhau",

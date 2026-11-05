@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Tính chất",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Cơ quan đại biểu cao nhất",
      "Cơ quan quyền lực nhà nước cao nhất"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Chức năng",
-    "icon": "⚙️",
+    "icon": "tool",
     "children": [
      "Lập hiến, lập pháp",
      "Quyết định vấn đề quan trọng",

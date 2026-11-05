@@ -30,28 +30,28 @@
   "tree": [
    {
     "label": "Hình thành",
-    "icon": "🗳️",
+    "icon": "vote",
     "children": [
      "Hội đồng nhân dân cùng cấp bầu"
     ]
    },
    {
     "label": "Tư cách 1",
-    "icon": "1️⃣",
+    "icon": "n1",
     "children": [
      "Cơ quan chấp hành của Hội đồng nhân dân"
     ]
    },
    {
     "label": "Tư cách 2",
-    "icon": "2️⃣",
+    "icon": "n2",
     "children": [
      "Cơ quan hành chính nhà nước ở địa phương"
     ]
    },
    {
     "label": "Chịu trách nhiệm",
-    "icon": "↕️",
+    "icon": "compare",
     "children": [
      "Trước Hội đồng nhân dân",
      "Trước hành chính cấp trên"

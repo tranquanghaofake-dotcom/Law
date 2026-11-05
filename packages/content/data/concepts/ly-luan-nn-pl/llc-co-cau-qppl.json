@@ -29,14 +29,14 @@
   "tree": [
    {
     "label": "Giả định",
-    "icon": "❓",
+    "icon": "question",
     "children": [
      "Ai, khi nào, điều kiện nào"
     ]
    },
    {
     "label": "Quy định",
-    "icon": "📏",
+    "icon": "measure",
     "children": [
      "Phải làm, được làm, không được làm",
      "Bộ phận trung tâm"
@@ -44,14 +44,14 @@
    },
    {
     "label": "Chế tài",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Hậu quả bất lợi khi vi phạm"
     ]
    },
    {
     "label": "Thực tế",
-    "icon": "📌",
+    "icon": "pin",
     "children": [
      "Điều luật có thể thiếu bộ phận"
     ]

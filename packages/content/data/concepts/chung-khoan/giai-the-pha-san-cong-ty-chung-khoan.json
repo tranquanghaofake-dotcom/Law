@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Giải thể",
-    "icon": "🚪",
+    "icon": "door",
     "children": [
      "Luật Chứng khoán",
      "Luật Doanh nghiệp"
@@ -37,14 +37,14 @@
    },
    {
     "label": "Phá sản",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Luật Phục hồi, phá sản"
     ]
    },
    {
     "label": "Tài sản khách hàng",
-    "icon": "🛡️",
+    "icon": "shield",
     "children": [
      "Tất toán riêng"
     ]

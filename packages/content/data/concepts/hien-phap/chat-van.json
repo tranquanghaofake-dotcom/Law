@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Bị chất vấn",
-    "icon": "🎯",
+    "icon": "target",
     "children": [
      "Chủ tịch nước, Chủ tịch Quốc hội",
      "Thủ tướng, thành viên Chính phủ",
@@ -38,7 +38,7 @@
    },
    {
     "label": "Trả lời ở đâu",
-    "icon": "📍",
+    "icon": "pin",
     "children": [
      "Tại kỳ họp Quốc hội",
      "Phiên họp Ủy ban thường vụ giữa hai kỳ họp"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Ngoại lệ",
-    "icon": "⚠️",
+    "icon": "warn",
     "children": [
      "Bằng văn bản khi cần thiết"
     ]

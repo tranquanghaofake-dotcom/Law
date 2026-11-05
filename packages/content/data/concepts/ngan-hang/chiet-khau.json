@@ -33,7 +33,7 @@
   "tree": [
    {
     "label": "Đối tượng",
-    "icon": "📄",
+    "icon": "doc",
     "children": [
      "Công cụ chuyển nhượng",
      "Giấy tờ có giá khác"
@@ -41,14 +41,14 @@
    },
    {
     "label": "Thời điểm",
-    "icon": "⏰",
+    "icon": "clock",
     "children": [
      "Trước khi đến hạn"
     ]
    },
    {
     "label": "Cách mua",
-    "icon": "🛒",
+    "icon": "cart",
     "children": [
      "Mua có kỳ hạn",
      "Mua có bảo lưu quyền truy đòi"
@@ -56,7 +56,7 @@
    },
    {
     "label": "Người được cấp tín dụng",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Bên thụ hưởng"
     ]

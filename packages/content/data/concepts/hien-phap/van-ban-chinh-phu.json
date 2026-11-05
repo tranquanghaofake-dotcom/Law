@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Hình thức",
-    "icon": "📄",
+    "icon": "doc",
     "children": [
      "Chính phủ: nghị định",
      "Thủ tướng: quyết định",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Kèm nghĩa vụ",
-    "icon": "📌",
+    "icon": "pin",
     "children": [
      "Kiểm tra việc thi hành",
      "Xử lý văn bản trái pháp luật"
@@ -47,7 +47,7 @@
    },
    {
     "label": "Bị kiểm soát",
-    "icon": "👁️",
+    "icon": "eye",
     "children": [
      "Ủy ban thường vụ đình chỉ",
      "Quốc hội bãi bỏ"

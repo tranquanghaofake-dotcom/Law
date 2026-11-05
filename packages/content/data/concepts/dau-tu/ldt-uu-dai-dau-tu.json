@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Đối tượng",
-    "icon": "🎯",
+    "icon": "target",
     "children": [
      "Ngành, nghề ưu đãi",
      "Địa bàn ưu đãi",
@@ -40,7 +40,7 @@
    },
    {
     "label": "Hình thức",
-    "icon": "🎁",
+    "icon": "gift",
     "children": [
      "Ưu đãi thuế thu nhập doanh nghiệp",
      "Miễn thuế nhập khẩu",
@@ -49,7 +49,7 @@
    },
    {
     "label": "Phân biệt",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Hỗ trợ đầu tư"
     ]

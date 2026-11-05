@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Thành viên",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Thủ tướng",
      "Phó Thủ tướng",
@@ -39,14 +39,14 @@
    },
    {
     "label": "Cơ cấu, số lượng",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Quốc hội quyết định"
     ]
    },
    {
     "label": "Chế độ làm việc",
-    "icon": "⚙️",
+    "icon": "tool",
     "children": [
      "Tập thể, quyết định theo đa số",
      "Trách nhiệm cá nhân"

@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Bội chi",
-    "icon": "📉",
+    "icon": "chart",
     "children": [
      "Chi lớn hơn thu",
      "Chỉ trung ương và cấp tỉnh",
@@ -40,7 +40,7 @@
    },
    {
     "label": "Kết dư",
-    "icon": "📈",
+    "icon": "chart",
     "children": [
      "Thu lớn hơn chi sau năm ngân sách",
      "50% quỹ dự trữ, 50% thu năm sau"
@@ -48,7 +48,7 @@
    },
    {
     "label": "Quyết toán",
-    "icon": "🧾",
+    "icon": "doc",
     "children": [
      "Khâu cuối",
      "Quốc hội, Hội đồng nhân dân phê chuẩn"

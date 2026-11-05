@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Người lao động",
-    "icon": "🇻🇳",
+    "icon": "flag",
     "children": [
      "Công dân Việt Nam",
      "Từ đủ 18 tuổi",
@@ -39,14 +39,14 @@
    },
    {
     "label": "Người sử dụng",
-    "icon": "🌍",
+    "icon": "globe",
     "children": [
      "Doanh nghiệp, tổ chức, cá nhân ở nước ngoài"
     ]
    },
    {
     "label": "Quyền chính",
-    "icon": "🛡️",
+    "icon": "shield",
     "children": [
      "Được bảo hộ",
      "Chấm dứt khi bị ngược đãi, cưỡng bức"

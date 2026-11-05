@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Dấu hiệu",
-    "icon": "📄",
+    "icon": "doc",
     "children": [
      "Vấn đề cụ thể",
      "Áp dụng một lần",
@@ -39,14 +39,14 @@
    },
    {
     "label": "Hành vi hành chính",
-    "icon": "🙅",
+    "icon": "ban",
     "children": [
      "Làm hoặc không làm công vụ"
     ]
    },
    {
     "label": "Khoa học",
-    "icon": "📚",
+    "icon": "book",
     "children": [
      "Quyết định chủ đạo, quy phạm, cá biệt"
     ]

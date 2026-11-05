@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Điều kiện",
-    "icon": "🤫",
+    "icon": "lock",
     "children": [
      "Không qua thông tin đại chúng",
      "Dưới 100 nhà đầu tư",
@@ -37,7 +37,7 @@
    },
    {
     "label": "Đổi lại",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Hạn chế chuyển nhượng",
      "Giới hạn người mua"

@@ -30,14 +30,14 @@
   "tree": [
    {
     "label": "Khởi kiện",
-    "icon": "📝",
+    "icon": "pen",
     "children": [
      "Đương sự quyết định"
     ]
    },
    {
     "label": "Tòa án",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Chỉ thụ lý khi có đơn",
      "Chỉ giải quyết trong phạm vi đơn"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Đương sự được",
-    "icon": "🔄",
+    "icon": "cycle",
     "children": [
      "Rút, thay đổi yêu cầu",
      "Thỏa thuận"
@@ -53,7 +53,7 @@
    },
    {
     "label": "Giới hạn",
-    "icon": "🚧",
+    "icon": "ban",
     "children": [
      "Điều cấm, đạo đức xã hội"
     ]

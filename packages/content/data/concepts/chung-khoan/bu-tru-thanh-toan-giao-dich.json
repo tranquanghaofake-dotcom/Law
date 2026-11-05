@@ -31,14 +31,14 @@
   "tree": [
    {
     "label": "Bù trừ",
-    "icon": "🧮",
+    "icon": "calc",
     "children": [
      "Xác định phải giao bao nhiêu"
     ]
    },
    {
     "label": "Thanh toán",
-    "icon": "💳",
+    "icon": "money",
     "children": [
      "Chứng khoán: tài khoản lưu ký",
      "Tiền: ngân hàng thanh toán"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Nguyên tắc",
-    "icon": "🤝",
+    "icon": "handshake",
     "children": [
      "Giao và trả đồng thời"
     ]

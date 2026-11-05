@@ -29,14 +29,14 @@
   "tree": [
    {
     "label": "Bầu",
-    "icon": "🗳️",
+    "icon": "vote",
     "children": [
      "Quốc hội bầu trong số đại biểu"
     ]
    },
    {
     "label": "Nhiệm vụ",
-    "icon": "🤝",
+    "icon": "handshake",
     "children": [
      "Giúp Chủ tịch nước",
      "Được ủy nhiệm một số việc"
@@ -44,7 +44,7 @@
    },
    {
     "label": "Giữ quyền Chủ tịch nước",
-    "icon": "🔑",
+    "icon": "key",
     "children": [
      "Chủ tịch nước không làm việc được thời gian dài",
      "Khuyết Chủ tịch nước"

@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Điều kiện",
-    "icon": "📝",
+    "icon": "pen",
     "children": [
      "Có thỏa thuận trọng tài",
      "Lập trước hoặc sau tranh chấp",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Thẩm quyền",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Tranh chấp thương mại",
      "Một bên có hoạt động thương mại"
@@ -47,7 +47,7 @@
    },
    {
     "label": "Hình thức",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Trọng tài quy chế",
      "Trọng tài vụ việc"

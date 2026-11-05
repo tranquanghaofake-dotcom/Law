@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Nguyên tắc",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Bình đẳng",
      "Tự do, tự nguyện",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Giới hạn thỏa thuận",
-    "icon": "🚧",
+    "icon": "ban",
     "children": [
      "Điều cấm của luật",
      "Đạo đức xã hội"

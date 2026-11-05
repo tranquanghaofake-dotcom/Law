@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Hình phạt chính",
-    "icon": "🪜",
+    "icon": "stairs",
     "children": [
      "Cảnh cáo, phạt tiền",
      "Cải tạo không giam giữ, trục xuất",
@@ -40,7 +40,7 @@
    },
    {
     "label": "Hình phạt bổ sung",
-    "icon": "➕",
+    "icon": "calc",
     "children": [
      "Cấm đảm nhiệm chức vụ, hành nghề",
      "Cấm cư trú, quản chế",
@@ -49,7 +49,7 @@
    },
    {
     "label": "Nguyên tắc",
-    "icon": "1️⃣",
+    "icon": "n1",
     "children": [
      "Một hình phạt chính"
     ]

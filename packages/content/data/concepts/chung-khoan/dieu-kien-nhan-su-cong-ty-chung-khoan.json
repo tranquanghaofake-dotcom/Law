@@ -28,21 +28,21 @@
   "tree": [
    {
     "label": "Mỗi nghiệp vụ",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Ít nhất 03 người có chứng chỉ"
     ]
    },
    {
     "label": "Tuân thủ",
-    "icon": "👮",
+    "icon": "shield",
     "children": [
      "Ít nhất 01 nhân viên"
     ]
    },
    {
     "label": "Tổng giám đốc",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "02 năm kinh nghiệm tài chính",
      "Chứng chỉ phân tích hoặc quản lý quỹ"

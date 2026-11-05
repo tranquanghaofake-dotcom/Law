@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Dấu hiệu",
-    "icon": "🔎",
+    "icon": "search",
     "children": [
      "Tên riêng",
      "Tài sản",
@@ -40,7 +40,7 @@
    },
    {
     "label": "Quan hệ tài chính với",
-    "icon": "🔗",
+    "icon": "link",
     "children": [
      "Chủ sở hữu",
      "Nhà nước",

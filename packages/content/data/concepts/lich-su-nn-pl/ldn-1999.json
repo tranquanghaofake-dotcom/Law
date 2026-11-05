@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Mốc",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "12/6/1999",
      "Hiệu lực 01/01/2000"
@@ -39,7 +39,7 @@
    },
    {
     "label": "Bước ngoặt",
-    "icon": "🔓",
+    "icon": "unlock",
     "children": [
      "Bỏ xin phép thành lập",
      "Đăng ký kinh doanh"
@@ -47,14 +47,14 @@
    },
    {
     "label": "Doanh nghiệp",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Tự chủ đăng ký ngành nghề"
     ]
    },
    {
     "label": "Cơ quan đăng ký",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Không đòi thêm giấy tờ"
     ]

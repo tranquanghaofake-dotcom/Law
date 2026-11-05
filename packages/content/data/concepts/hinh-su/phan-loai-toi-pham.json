@@ -31,35 +31,35 @@
   "tree": [
    {
     "label": "Ít nghiêm trọng",
-    "icon": "🟢",
+    "icon": "check",
     "children": [
      "Đến 03 năm"
     ]
    },
    {
     "label": "Nghiêm trọng",
-    "icon": "🟡",
+    "icon": "warn",
     "children": [
      "Trên 03 đến 07 năm"
     ]
    },
    {
     "label": "Rất nghiêm trọng",
-    "icon": "🟠",
+    "icon": "warn",
     "children": [
      "Trên 07 đến 15 năm"
     ]
    },
    {
     "label": "Đặc biệt nghiêm trọng",
-    "icon": "🔴",
+    "icon": "ban",
     "children": [
      "Trên 15 năm, chung thân, tử hình"
     ]
    },
    {
     "label": "Căn cứ",
-    "icon": "📏",
+    "icon": "measure",
     "children": [
      "Mức cao nhất của khung, không phải mức tuyên"
     ]

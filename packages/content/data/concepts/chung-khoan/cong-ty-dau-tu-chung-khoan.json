@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Quỹ dạng công ty cổ phần",
      "Nhà đầu tư là cổ đông"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Hình thức",
-    "icon": "🔀",
+    "icon": "compare",
     "children": [
      "Riêng lẻ",
      "Đại chúng"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Điều kiện",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Giấy phép của Ủy ban",
      "Vốn tối thiểu 50 tỷ"
@@ -53,7 +53,7 @@
    },
    {
     "label": "Phân biệt",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Công ty chứng khoán",
      "Công ty quản lý quỹ"

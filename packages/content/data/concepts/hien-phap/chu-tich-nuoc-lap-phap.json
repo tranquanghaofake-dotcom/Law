@@ -29,14 +29,14 @@
   "tree": [
    {
     "label": "Luật, Hiến pháp",
-    "icon": "📢",
+    "icon": "announce",
     "children": [
      "Chỉ công bố"
     ]
    },
    {
     "label": "Pháp lệnh",
-    "icon": "🔁",
+    "icon": "cycle",
     "children": [
      "Đề nghị xem xét lại trong 10 ngày",
      "Vẫn không nhất trí: trình Quốc hội"
@@ -44,7 +44,7 @@
    },
    {
     "label": "Khác tổng thống Mỹ",
-    "icon": "🇺🇸",
+    "icon": "flag",
     "children": [
      "Không có quyền phủ quyết luật"
     ]

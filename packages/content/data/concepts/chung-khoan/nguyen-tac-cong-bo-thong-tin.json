@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Yêu cầu",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "Đầy đủ",
      "Chính xác",
@@ -38,21 +38,21 @@
    },
    {
     "label": "Trách nhiệm",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Người công bố chịu về nội dung"
     ]
    },
    {
     "label": "Khi sửa",
-    "icon": "✏️",
+    "icon": "pen",
     "children": [
      "Công bố lý do thay đổi"
     ]
    },
    {
     "label": "Đồng thời",
-    "icon": "📤",
+    "icon": "list",
     "children": [
      "Báo cáo Ủy ban, nơi niêm yết"
     ]

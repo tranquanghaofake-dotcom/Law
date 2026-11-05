@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Độc quyền",
-    "icon": "🥇",
+    "icon": "star",
     "children": [
      "Bên nhận dùng độc quyền",
      "Bên giao không cấp cho ai khác"
@@ -38,14 +38,14 @@
    },
    {
     "label": "Không độc quyền",
-    "icon": "🤝",
+    "icon": "handshake",
     "children": [
      "Bên giao vẫn dùng và cấp tiếp"
     ]
    },
    {
     "label": "Thứ cấp",
-    "icon": "🔁",
+    "icon": "cycle",
     "children": [
      "Bên giao là người đã nhận li-xăng"
     ]

@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Vị trí",
-    "icon": "🎖️",
+    "icon": "star",
     "children": [
      "Thống lĩnh lực lượng vũ trang",
      "Chủ tịch Hội đồng quốc phòng và an ninh"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Nhân sự quân đội",
-    "icon": "⭐",
+    "icon": "star",
     "children": [
      "Quân hàm cấp tướng, đô đốc",
      "Tổng tham mưu trưởng"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Chiến tranh, khẩn cấp",
-    "icon": "⚔️",
+    "icon": "conflict",
     "children": [
      "Công bố theo nghị quyết Quốc hội/Ủy ban thường vụ",
      "Tự công bố khẩn cấp khi Ủy ban thường vụ không họp được"

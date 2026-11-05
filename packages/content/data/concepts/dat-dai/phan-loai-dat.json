@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Nông nghiệp",
-    "icon": "🌾",
+    "icon": "plant",
     "children": [
      "Trồng cây, lâm nghiệp",
      "Thủy sản, làm muối",
@@ -38,7 +38,7 @@
    },
    {
     "label": "Phi nông nghiệp",
-    "icon": "🏙️",
+    "icon": "state",
     "children": [
      "Đất ở",
      "Trụ sở, quốc phòng",
@@ -47,7 +47,7 @@
    },
    {
     "label": "Chưa sử dụng",
-    "icon": "🌫️"
+    "icon": "question"
    }
   ],
   "case": {

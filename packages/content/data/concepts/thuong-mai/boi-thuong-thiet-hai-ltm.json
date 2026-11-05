@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Điều kiện",
-    "icon": "🔗",
+    "icon": "link",
     "children": [
      "Vi phạm hợp đồng",
      "Thiệt hại thực tế",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Giá trị",
-    "icon": "💰",
+    "icon": "money",
     "children": [
      "Tổn thất thực tế",
      "Khoản lợi trực tiếp bị mất"
@@ -47,7 +47,7 @@
    },
    {
     "label": "Bên yêu cầu",
-    "icon": "📋",
+    "icon": "list",
     "children": [
      "Chứng minh tổn thất",
      "Hạn chế tổn thất"
@@ -55,7 +55,7 @@
    },
    {
     "label": "Với phạt",
-    "icon": "➕",
+    "icon": "calc",
     "children": [
      "Áp dụng cả hai"
     ]

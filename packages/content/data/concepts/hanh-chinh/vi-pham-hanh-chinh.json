@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Dấu hiệu",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "Hành vi",
      "Trái pháp luật về quản lý nhà nước",
@@ -40,7 +40,7 @@
    },
    {
     "label": "Chủ thể",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Cá nhân",
      "Tổ chức"

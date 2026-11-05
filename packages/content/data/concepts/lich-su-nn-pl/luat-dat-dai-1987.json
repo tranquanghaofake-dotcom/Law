@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Mốc",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "29 tháng 12 năm 1987",
      "Luật đất đai đầu tiên"
@@ -39,7 +39,7 @@
    },
    {
     "label": "Chế độ",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Sở hữu toàn dân",
      "Nhà nước thống nhất quản lý"
@@ -47,7 +47,7 @@
    },
    {
     "label": "Người sử dụng",
-    "icon": "🌾",
+    "icon": "plant",
     "children": [
      "Được giao đất ổn định, lâu dài",
      "Chỉ có quyền sử dụng"

@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Quỹ ngân sách",
-    "icon": "👛",
+    "icon": "money",
     "children": [
      "Tiền trên tài khoản ngân sách",
      "Tại một thời điểm"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Ngân quỹ nhà nước",
-    "icon": "🗄️",
+    "icon": "list",
     "children": [
      "Rộng hơn",
      "Gồm cả tiền gửi tại Kho bạc"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Quản lý",
-    "icon": "🏦",
+    "icon": "bank",
     "children": [
      "Kho bạc Nhà nước",
      "Tập trung, thống nhất"

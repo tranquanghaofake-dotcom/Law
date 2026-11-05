@@ -30,35 +30,35 @@
   "tree": [
    {
     "label": "Xác lập nguyên tắc chung",
-    "icon": "🧭",
+    "icon": "arrow",
     "children": [
      "Định hướng, ngành khác cụ thể hóa"
     ]
    },
    {
     "label": "Cho phép",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "Trao quyền, ví dụ quyền bầu cử"
     ]
    },
    {
     "label": "Bắt buộc",
-    "icon": "❗",
+    "icon": "warn",
     "children": [
      "Đặt nghĩa vụ, ví dụ nộp thuế"
     ]
    },
    {
     "label": "Nghiêm cấm",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Ví dụ không bắt người trái luật"
     ]
    },
    {
     "label": "Đặc điểm",
-    "icon": "💡",
+    "icon": "idea",
     "children": [
      "Thường thiếu chế tài"
     ]

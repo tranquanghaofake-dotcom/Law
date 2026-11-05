@@ -30,14 +30,14 @@
   "tree": [
    {
     "label": "Điều kiện",
-    "icon": "📝",
+    "icon": "pen",
     "children": [
      "Các bên thỏa thuận"
     ]
    },
    {
     "label": "Mức",
-    "icon": "💵",
+    "icon": "money",
     "children": [
      "Do các bên thỏa thuận",
      "Luật Thương mại: tối đa 8%"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Với bồi thường",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Không thỏa thuận cả hai thì chỉ chịu phạt"
     ]

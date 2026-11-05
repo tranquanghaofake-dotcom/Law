@@ -28,14 +28,14 @@
   "tree": [
    {
     "label": "Đại sứ nước ngoài",
-    "icon": "🤝",
+    "icon": "handshake",
     "children": [
      "Tiếp nhận"
     ]
    },
    {
     "label": "Đại sứ Việt Nam",
-    "icon": "🇻🇳",
+    "icon": "flag",
     "children": [
      "Bổ nhiệm, miễn nhiệm",
      "Căn cứ nghị quyết Ủy ban thường vụ"
@@ -43,7 +43,7 @@
    },
    {
     "label": "Điều ước quốc tế",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Đàm phán, ký nhân danh Nhà nước",
      "Chính phủ ký theo ủy quyền"

@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Hàng 1",
-    "icon": "🥇",
+    "icon": "star",
     "children": [
      "Vợ, chồng",
      "Cha mẹ đẻ, nuôi",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Hàng 2",
-    "icon": "🥈",
+    "icon": "star",
     "children": [
      "Ông bà",
      "Anh chị em ruột",
@@ -48,7 +48,7 @@
    },
    {
     "label": "Hàng 3",
-    "icon": "🥉",
+    "icon": "star",
     "children": [
      "Cụ",
      "Bác, chú, cậu, cô, dì"
@@ -56,7 +56,7 @@
    },
    {
     "label": "Chia",
-    "icon": "➗",
+    "icon": "calc",
     "children": [
      "Cùng hàng: bằng nhau"
     ]

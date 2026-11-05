@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Gồm hai cơ quan",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Hội đồng nhân dân",
      "Ủy ban nhân dân"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Tổ chức phù hợp",
-    "icon": "🏘️",
+    "icon": "village",
     "children": [
      "Nông thôn",
      "Đô thị",
@@ -47,7 +47,7 @@
    },
    {
     "label": "Ai quy định",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Quốc hội"
     ]

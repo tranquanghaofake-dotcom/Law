@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Ai xin",
-    "icon": "🙋",
+    "icon": "person",
     "children": [
      "Công dân nước ngoài",
      "Người không quốc tịch"
@@ -39,7 +39,7 @@
    },
    {
     "label": "Điều kiện chung",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "Năng lực hành vi đầy đủ",
      "Biết tiếng Việt",
@@ -49,14 +49,14 @@
    },
    {
     "label": "Được miễn 3 điều kiện",
-    "icon": "🆓",
+    "icon": "unlock",
     "children": [
      "Có vợ, chồng, con đẻ là công dân"
     ]
    },
    {
     "label": "Quyết định",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Chủ tịch nước"
     ]

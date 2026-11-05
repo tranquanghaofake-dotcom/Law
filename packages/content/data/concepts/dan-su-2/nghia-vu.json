@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Hai bên",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Bên có nghĩa vụ",
      "Bên có quyền"
@@ -36,7 +36,7 @@
    },
    {
     "label": "Hành vi",
-    "icon": "📋",
+    "icon": "list",
     "children": [
      "Chuyển giao vật, quyền",
      "Trả tiền, giấy tờ có giá",
@@ -46,7 +46,7 @@
    },
    {
     "label": "Đối tượng",
-    "icon": "🎯",
+    "icon": "target",
     "children": [
      "Phải xác định được"
     ]

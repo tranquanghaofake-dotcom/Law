@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Bên bán",
-    "icon": "📦",
+    "icon": "box",
     "children": [
      "Giao hàng",
      "Chuyển quyền sở hữu"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Bên mua",
-    "icon": "💵",
+    "icon": "money",
     "children": [
      "Thanh toán",
      "Nhận hàng"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Hình thức",
-    "icon": "📝",
+    "icon": "pen",
     "children": [
      "Lời nói, văn bản, hành vi",
      "Quốc tế: bằng văn bản"

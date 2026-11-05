@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Mốc",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "1010",
      "Chiếu dời đô"
@@ -39,7 +39,7 @@
    },
    {
     "label": "Dời",
-    "icon": "➡️",
+    "icon": "arrow",
     "children": [
      "Hoa Lư → Đại La",
      "Đổi tên Thăng Long"
@@ -47,14 +47,14 @@
    },
    {
     "label": "Tư tưởng",
-    "icon": "💭",
+    "icon": "idea",
     "children": [
      "Kính mệnh trời, theo ý dân"
     ]
    },
    {
     "label": "Quốc hiệu",
-    "icon": "🏷️",
+    "icon": "doc",
     "children": [
      "Đại Việt (1054)"
     ]

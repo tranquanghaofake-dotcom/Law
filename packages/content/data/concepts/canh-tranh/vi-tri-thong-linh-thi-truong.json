@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Một doanh nghiệp",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Sức mạnh thị trường đáng kể",
      "Hoặc thị phần từ 30%"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Nhóm doanh nghiệp",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "2: 50% · 3: 65%",
      "4: 75% · 5+: 85%",
@@ -47,7 +47,7 @@
    },
    {
     "label": "Không tính",
-    "icon": "🆓",
+    "icon": "unlock",
     "children": [
      "Doanh nghiệp dưới 10%"
     ]

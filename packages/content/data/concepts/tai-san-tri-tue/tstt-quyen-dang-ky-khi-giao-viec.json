@@ -32,14 +32,14 @@
   "tree": [
    {
     "label": "Tự làm",
-    "icon": "🏠",
+    "icon": "home",
     "children": [
      "Tác giả bỏ công sức, chi phí"
     ]
    },
    {
     "label": "Giao việc, thuê việc",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Tổ chức đầu tư kinh phí, phương tiện",
      "Có quyền đăng ký"
@@ -47,7 +47,7 @@
    },
    {
     "label": "Ngoại lệ",
-    "icon": "📝",
+    "icon": "pen",
     "children": [
      "Thỏa thuận khác"
     ]

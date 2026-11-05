@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Ai bảo vệ",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Quốc hội và cơ quan của Quốc hội",
      "Chủ tịch nước, Chính phủ",
@@ -38,14 +38,14 @@
    },
    {
     "label": "Cơ chế",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Do luật định"
     ]
    },
    {
     "label": "Đặc thù Việt Nam",
-    "icon": "🇻🇳",
+    "icon": "flag",
     "children": [
      "Không có Tòa án Hiến pháp riêng"
     ]

@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "🙋",
+    "icon": "person",
     "children": [
      "Bằng hành vi của chính mình",
      "Xác lập, thực hiện quyền"
@@ -39,7 +39,7 @@
    },
    {
     "label": "Phụ thuộc",
-    "icon": "🧠",
+    "icon": "idea",
     "children": [
      "Độ tuổi",
      "Khả năng nhận thức, điều khiển"
@@ -47,7 +47,7 @@
    },
    {
     "label": "Dân sự",
-    "icon": "🔞",
+    "icon": "child",
     "children": [
      "Từ đủ 18: đầy đủ"
     ]

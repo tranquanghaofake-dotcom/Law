@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Quyền",
-    "icon": "🔑",
+    "icon": "key",
     "children": [
      "Ban hành quy chế (Ủy ban chấp thuận)",
      "Cảnh báo, kiểm soát, hạn chế mã",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Nghĩa vụ",
-    "icon": "📋",
+    "icon": "list",
     "children": [
      "Công khai, công bằng, trật tự"
     ]

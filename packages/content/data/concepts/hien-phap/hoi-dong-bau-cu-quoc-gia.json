@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Thành lập",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Quốc hội",
      "Lần đầu hiến định năm 2013"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Nhiệm vụ",
-    "icon": "📋",
+    "icon": "list",
     "children": [
      "Tổ chức bầu cử đại biểu Quốc hội",
      "Chỉ đạo, hướng dẫn bầu cử Hội đồng nhân dân"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Tổ chức",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "15–21 thành viên",
      "Tập thể, đa số"

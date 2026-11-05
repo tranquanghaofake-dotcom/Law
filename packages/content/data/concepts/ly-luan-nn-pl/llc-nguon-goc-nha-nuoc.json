@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Tiền đề kinh tế",
-    "icon": "💰",
+    "icon": "money",
     "children": [
      "Tư hữu",
      "Ba lần phân công lao động"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Tiền đề xã hội",
-    "icon": "⚔️",
+    "icon": "conflict",
     "children": [
      "Phân hóa giai cấp",
      "Mâu thuẫn không điều hòa được"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Học thuyết khác",
-    "icon": "📚",
+    "icon": "book",
     "children": [
      "Thần quyền",
      "Khế ước xã hội"

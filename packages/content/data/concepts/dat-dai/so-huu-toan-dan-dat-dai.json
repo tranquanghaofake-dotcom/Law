@@ -29,14 +29,14 @@
   "tree": [
    {
     "label": "Chủ sở hữu",
-    "icon": "🌏",
+    "icon": "globe",
     "children": [
      "Toàn dân"
     ]
    },
    {
     "label": "Nhà nước",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Đại diện chủ sở hữu",
      "Thống nhất quản lý"
@@ -44,7 +44,7 @@
    },
    {
     "label": "Người sử dụng",
-    "icon": "🏠",
+    "icon": "home",
     "children": [
      "Có quyền sử dụng đất",
      "Quyền tài sản"
@@ -52,7 +52,7 @@
    },
    {
     "label": "Hệ quả",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Không có sở hữu tư nhân về đất"
     ]

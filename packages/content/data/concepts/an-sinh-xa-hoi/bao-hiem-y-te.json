@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Đặc điểm",
-    "icon": "📋",
+    "icon": "list",
     "children": [
      "Bắt buộc",
      "Không vì lợi nhuận",
@@ -40,14 +40,14 @@
    },
    {
     "label": "Mục tiêu",
-    "icon": "🎯",
+    "icon": "target",
     "children": [
      "Ai cũng tham gia"
     ]
    },
    {
     "label": "Mức hưởng",
-    "icon": "💊",
+    "icon": "health",
     "children": [
      "Theo bệnh, đối tượng, thời gian",
      "Người bệnh trả thêm một phần"
@@ -55,7 +55,7 @@
    },
    {
     "label": "Khác bảo hiểm sức khỏe tư",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Bảo hiểm tư: tự nguyện, vì lợi nhuận"
     ]

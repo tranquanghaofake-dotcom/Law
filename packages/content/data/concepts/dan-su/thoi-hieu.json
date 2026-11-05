@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Bốn loại",
-    "icon": "4️⃣",
+    "icon": "n4",
     "children": [
      "Hưởng quyền",
      "Miễn trừ nghĩa vụ",
@@ -40,7 +40,7 @@
    },
    {
     "label": "Áp dụng",
-    "icon": "✋",
+    "icon": "ban",
     "children": [
      "Chỉ theo yêu cầu",
      "Trước khi sơ thẩm ra bản án"

@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Cơ quan nhà nước",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Chủ tịch nước, Ủy ban thường vụ",
      "Hội đồng dân tộc, Ủy ban của Quốc hội",
@@ -41,7 +41,7 @@
    },
    {
     "label": "Tổ chức",
-    "icon": "🤝",
+    "icon": "handshake",
     "children": [
      "Ủy ban trung ương Mặt trận",
      "Tổ chức chính trị - xã hội"
@@ -49,7 +49,7 @@
    },
    {
     "label": "Đại biểu Quốc hội",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Kiến nghị về luật",
      "Dự án luật"

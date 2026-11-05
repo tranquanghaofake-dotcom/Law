@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Bên nhận quyền",
-    "icon": "🏪",
+    "icon": "cart",
     "children": [
      "Tự mình kinh doanh",
      "Theo cách thức bên nhượng"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Gắn với",
-    "icon": "🏷️",
+    "icon": "doc",
     "children": [
      "Nhãn hiệu, tên thương mại",
      "Bí quyết kinh doanh"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Bên nhượng quyền",
-    "icon": "🔍",
+    "icon": "search",
     "children": [
      "Kiểm soát",
      "Trợ giúp"
@@ -53,7 +53,7 @@
    },
    {
     "label": "Hình thức",
-    "icon": "📝",
+    "icon": "pen",
     "children": [
      "Văn bản"
     ]

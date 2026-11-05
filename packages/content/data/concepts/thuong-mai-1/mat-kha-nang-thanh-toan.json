@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Nguy cơ mất khả năng",
-    "icon": "🟡",
+    "icon": "warn",
     "children": [
      "Nợ sẽ đến hạn trong 06 tháng",
      "Quá hạn chưa đến 06 tháng",
@@ -40,7 +40,7 @@
    },
    {
     "label": "Mất khả năng",
-    "icon": "🔴",
+    "icon": "ban",
     "children": [
      "Không trả nợ sau 06 tháng",
      "Dẫn tới yêu cầu phá sản"
@@ -48,7 +48,7 @@
    },
    {
     "label": "Phá sản",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Chỉ khi Tòa án tuyên bố"
     ]

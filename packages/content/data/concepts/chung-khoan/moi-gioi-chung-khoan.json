@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "🤝",
+    "icon": "handshake",
     "children": [
      "Trung gian mua bán cho khách",
      "Hưởng phí"
@@ -37,14 +37,14 @@
    },
    {
     "label": "Không",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Chịu lãi lỗ thay khách"
     ]
    },
    {
     "label": "Là điều kiện cho",
-    "icon": "🔑",
+    "icon": "key",
     "children": [
      "Tự doanh",
      "Lưu ký",

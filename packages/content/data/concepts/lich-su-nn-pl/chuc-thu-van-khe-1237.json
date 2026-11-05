@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Áp dụng",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Chúc thư",
      "Văn khế ruộng đất",
@@ -40,7 +40,7 @@
    },
    {
     "label": "Hình thức",
-    "icon": "✍️",
+    "icon": "pen",
     "children": [
      "Lập thành giấy tờ",
      "Người làm chứng",
@@ -49,7 +49,7 @@
    },
    {
     "label": "Ý nghĩa",
-    "icon": "💡",
+    "icon": "idea",
     "children": [
      "Bằng chứng sớm về hình thức giao dịch"
     ]

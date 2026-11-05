@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Che giấu",
-    "icon": "🙈",
+    "icon": "mask",
     "children": [
      "Không hứa hẹn trước",
      "Biết sau khi tội thực hiện"
@@ -38,14 +38,14 @@
    },
    {
     "label": "Không tố giác",
-    "icon": "🤐",
+    "icon": "lock",
     "children": [
      "Biết rõ mà không báo"
     ]
    },
    {
     "label": "Người thân",
-    "icon": "👪",
+    "icon": "family",
     "children": [
      "Không chịu trách nhiệm hình sự",
      "Trừ an ninh quốc gia, đặc biệt nghiêm trọng"

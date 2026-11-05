@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Thời gian",
-    "icon": "⏳",
+    "icon": "clock",
     "children": [
      "Quản lý doanh nghiệp: 180 ngày",
      "Cao đẳng trở lên: 60 ngày",
@@ -39,14 +39,14 @@
    },
    {
     "label": "Lương",
-    "icon": "💵",
+    "icon": "money",
     "children": [
      "Ít nhất 85%"
     ]
    },
    {
     "label": "Số lần",
-    "icon": "1️⃣",
+    "icon": "n1",
     "children": [
      "Một lần cho một công việc"
     ]

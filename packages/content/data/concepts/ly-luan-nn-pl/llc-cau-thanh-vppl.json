@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Mặt khách quan",
-    "icon": "🎬",
+    "icon": "bolt",
     "children": [
      "Hành vi trái pháp luật",
      "Hậu quả, quan hệ nhân quả"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Mặt chủ quan",
-    "icon": "🧠",
+    "icon": "idea",
     "children": [
      "Lỗi cố ý trực tiếp, gián tiếp",
      "Lỗi vô ý: quá tự tin, cẩu thả",
@@ -47,14 +47,14 @@
    },
    {
     "label": "Chủ thể",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Có năng lực trách nhiệm"
     ]
    },
    {
     "label": "Khách thể",
-    "icon": "🎯",
+    "icon": "target",
     "children": [
      "Quan hệ xã hội bị xâm hại"
     ]

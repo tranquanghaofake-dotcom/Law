@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Điều 19",
-    "icon": "❤️",
+    "icon": "heart",
     "children": [
      "Quyền sống",
      "Không bị tước tính mạng trái luật"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Điều 20",
-    "icon": "🛡️",
+    "icon": "shield",
     "children": [
      "Bất khả xâm phạm thân thể",
      "Không bị tra tấn, nhục hình"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Điều kiện bắt",
-    "icon": "📄",
+    "icon": "doc",
     "children": [
      "Quyết định của Tòa án",
      "Quyết định/phê chuẩn của Viện kiểm sát",
@@ -55,7 +55,7 @@
    },
    {
     "label": "Bắt, giam, giữ",
-    "icon": "🔒",
+    "icon": "lock",
     "children": [
      "Do luật định"
     ]

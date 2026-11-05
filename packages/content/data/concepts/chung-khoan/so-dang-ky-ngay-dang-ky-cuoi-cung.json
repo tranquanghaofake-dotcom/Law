@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Sổ",
-    "icon": "📒",
+    "icon": "book",
     "children": [
      "Tổng công ty lập, lưu giữ",
      "Ghi người sở hữu"
@@ -36,14 +36,14 @@
    },
    {
     "label": "Ngày đăng ký cuối cùng",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "Chốt danh sách hưởng quyền"
     ]
    },
    {
     "label": "Hệ quả",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Mua sau ngày không hưởng quyền: người bán hưởng"
     ]

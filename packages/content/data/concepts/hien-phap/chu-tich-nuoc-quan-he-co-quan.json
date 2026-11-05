@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Được tham dự",
-    "icon": "🪑",
+    "icon": "people",
     "children": [
      "Phiên họp Ủy ban thường vụ",
      "Phiên họp Chính phủ"
@@ -37,14 +37,14 @@
    },
    {
     "label": "Được yêu cầu",
-    "icon": "📣",
+    "icon": "announce",
     "children": [
      "Chính phủ họp bàn vấn đề"
     ]
    },
    {
     "label": "Chính phủ",
-    "icon": "📋",
+    "icon": "list",
     "children": [
      "Báo cáo công tác trước Chủ tịch nước",
      "Chịu trách nhiệm trước Quốc hội"

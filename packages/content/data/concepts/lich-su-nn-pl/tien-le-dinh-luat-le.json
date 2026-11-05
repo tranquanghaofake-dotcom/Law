@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Mốc",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "1002",
      "Lê Hoàn lên ngôi 980"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Việc làm",
-    "icon": "🛠️",
+    "icon": "tool",
     "children": [
      "Định luật lệnh",
      "Cải tổ quân đội",
@@ -47,7 +47,7 @@
    },
    {
     "label": "Hiện trạng",
-    "icon": "❓",
+    "icon": "question",
     "children": [
      "Nội dung luật không còn"
     ]

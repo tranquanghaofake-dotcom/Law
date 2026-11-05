@@ -30,14 +30,14 @@
   "tree": [
    {
     "label": "Điều kiện",
-    "icon": "📝",
+    "icon": "pen",
     "children": [
      "Hợp đồng có thỏa thuận phạt"
     ]
    },
    {
     "label": "Mức trần",
-    "icon": "🔝",
+    "icon": "top",
     "children": [
      "8% giá trị phần nghĩa vụ vi phạm",
      "Không phải 8% cả hợp đồng"
@@ -45,7 +45,7 @@
    },
    {
     "label": "So với luật dân sự",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Luật dân sự không giới hạn mức phạt"
     ]

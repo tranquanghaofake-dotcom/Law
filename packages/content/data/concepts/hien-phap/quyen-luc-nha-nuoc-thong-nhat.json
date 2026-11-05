@@ -30,14 +30,14 @@
   "tree": [
    {
     "label": "Quyền lực",
-    "icon": "✊",
+    "icon": "fist",
     "children": [
      "Thống nhất, thuộc về Nhân dân"
     ]
    },
    {
     "label": "Phân công",
-    "icon": "📋",
+    "icon": "list",
     "children": [
      "Lập pháp: Quốc hội",
      "Hành pháp: Chính phủ",
@@ -46,7 +46,7 @@
    },
    {
     "label": "Giữa các cơ quan",
-    "icon": "🔁",
+    "icon": "cycle",
     "children": [
      "Phối hợp",
      "Kiểm soát"

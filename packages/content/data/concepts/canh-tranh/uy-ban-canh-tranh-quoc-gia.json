@@ -29,21 +29,21 @@
   "tree": [
    {
     "label": "Vị trí",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Thuộc Bộ Công Thương"
     ]
    },
    {
     "label": "Thành phần",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Chủ tịch, Phó Chủ tịch, thành viên"
     ]
    },
    {
     "label": "Nhiệm vụ",
-    "icon": "📋",
+    "icon": "list",
     "children": [
      "Tố tụng cạnh tranh",
      "Kiểm soát tập trung kinh tế",
@@ -53,7 +53,7 @@
    },
    {
     "label": "Giúp việc",
-    "icon": "🔎",
+    "icon": "search",
     "children": [
      "Cơ quan điều tra vụ việc cạnh tranh"
     ]

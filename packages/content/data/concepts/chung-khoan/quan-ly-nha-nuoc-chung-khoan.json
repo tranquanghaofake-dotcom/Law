@@ -28,21 +28,21 @@
   "tree": [
    {
     "label": "Chính phủ",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Thống nhất quản lý"
     ]
    },
    {
     "label": "Bộ Tài chính",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Chịu trách nhiệm trước Chính phủ"
     ]
    },
    {
     "label": "Ủy ban Chứng khoán",
-    "icon": "👁️",
+    "icon": "eye",
     "children": [
      "Thuộc Bộ Tài chính",
      "Trực tiếp quản lý, giám sát"

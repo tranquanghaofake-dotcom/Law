@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Quyền",
-    "icon": "🙋",
+    "icon": "person",
     "children": [
      "Mỗi cá nhân có quyền có quốc tịch",
      "Các dân tộc bình đẳng"
@@ -37,14 +37,14 @@
    },
    {
     "label": "Bảo đảm",
-    "icon": "🛡️",
+    "icon": "shield",
     "children": [
      "Không bị tước quốc tịch"
     ]
    },
    {
     "label": "Ngoại lệ",
-    "icon": "⚠️",
+    "icon": "warn",
     "children": [
      "Trường hợp Điều 31"
     ]

@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Ghi nhận",
-    "icon": "📒",
+    "icon": "book",
     "children": [
      "Tổ chức phát hành",
      "Chứng khoán",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Bắt buộc tập trung",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Công ty đại chúng",
      "Tổ chức niêm yết, đăng ký giao dịch"
@@ -47,7 +47,7 @@
    },
    {
     "label": "Nơi đăng ký",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Tổng công ty lưu ký và bù trừ"
     ]

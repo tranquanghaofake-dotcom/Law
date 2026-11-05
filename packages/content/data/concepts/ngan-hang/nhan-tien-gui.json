@@ -33,7 +33,7 @@
   "tree": [
    {
     "label": "Hình thức",
-    "icon": "💰",
+    "icon": "money",
     "children": [
      "Không kỳ hạn, có kỳ hạn",
      "Tiết kiệm",
@@ -42,14 +42,14 @@
    },
    {
     "label": "Nguyên tắc",
-    "icon": "🔁",
+    "icon": "cycle",
     "children": [
      "Hoàn trả đủ gốc, lãi"
     ]
    },
    {
     "label": "Phân biệt",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Phát hành trái phiếu: vay vốn"
     ]

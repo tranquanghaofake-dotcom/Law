@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Người nộp",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Doanh nghiệp trong, ngoài nước",
      "Hợp tác xã, tổ chức khác"
@@ -39,7 +39,7 @@
    },
    {
     "label": "Thuế suất",
-    "icon": "📊",
+    "icon": "chart",
     "children": [
      "Doanh thu đến 3 tỷ: 15%",
      "Trên 3 đến 50 tỷ: 17%",
@@ -48,7 +48,7 @@
    },
    {
     "label": "Đặc biệt",
-    "icon": "💎",
+    "icon": "money",
     "children": [
      "Dầu khí 25–50%",
      "Tài nguyên quý hiếm 50%"

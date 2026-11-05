@@ -29,14 +29,14 @@
   "tree": [
    {
     "label": "Điều kiện",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "Làm thường xuyên từ đủ 12 tháng"
     ]
    },
    {
     "label": "Mức",
-    "icon": "💵",
+    "icon": "money",
     "children": [
      "Mỗi năm nửa tháng lương",
      "Lương bình quân 06 tháng"
@@ -44,14 +44,14 @@
    },
    {
     "label": "Thời gian tính",
-    "icon": "➖",
+    "icon": "calc",
     "children": [
      "Trừ thời gian đóng thất nghiệp"
     ]
    },
    {
     "label": "Không hưởng",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Đủ điều kiện lương hưu",
      "Tự ý bỏ việc 05 ngày"

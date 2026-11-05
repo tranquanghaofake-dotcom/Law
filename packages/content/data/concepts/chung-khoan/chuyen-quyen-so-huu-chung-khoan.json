@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Đã lưu ký",
-    "icon": "📒",
+    "icon": "book",
     "children": [
      "Khi có bút toán ghi sổ",
      "Trên tài khoản lưu ký"
@@ -36,14 +36,14 @@
    },
    {
     "label": "Chưa lưu ký",
-    "icon": "📖",
+    "icon": "book",
     "children": [
      "Khi ghi Sổ đăng ký người sở hữu"
     ]
    },
    {
     "label": "Lưu ý",
-    "icon": "💡",
+    "icon": "idea",
     "children": [
      "Khớp lệnh chưa chuyển quyền"
     ]

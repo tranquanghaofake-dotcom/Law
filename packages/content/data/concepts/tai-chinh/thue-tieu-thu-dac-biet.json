@@ -31,14 +31,14 @@
   "tree": [
    {
     "label": "Mục đích",
-    "icon": "🎯",
+    "icon": "target",
     "children": [
      "Điều tiết tiêu dùng"
     ]
    },
    {
     "label": "Hàng hóa",
-    "icon": "🍺",
+    "icon": "warn",
     "children": [
      "Thuốc lá, rượu, bia",
      "Ô tô dưới 24 chỗ",
@@ -47,7 +47,7 @@
    },
    {
     "label": "Dịch vụ",
-    "icon": "🎤",
+    "icon": "announce",
     "children": [
      "Karaoke, casino",
      "Đặt cược, golf"
@@ -55,7 +55,7 @@
    },
    {
     "label": "Thu",
-    "icon": "1️⃣",
+    "icon": "n1",
     "children": [
      "Một lần khi sản xuất, nhập khẩu"
     ]

@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Có Giấy chứng nhận",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Một bên có là đủ",
      "Tòa án giải quyết"
@@ -37,14 +37,14 @@
    },
    {
     "label": "Tranh chấp tài sản trên đất",
-    "icon": "🏚️",
+    "icon": "home",
     "children": [
      "Tòa án"
     ]
    },
    {
     "label": "Không có giấy tờ",
-    "icon": "❓",
+    "icon": "question",
     "children": [
      "Chọn Ủy ban nhân dân",
      "Hoặc khởi kiện tại Tòa"

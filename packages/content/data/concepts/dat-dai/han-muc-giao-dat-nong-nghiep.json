@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Hằng năm, thủy sản, muối",
-    "icon": "🌾",
+    "icon": "plant",
     "children": [
      "03 ha: Đông Nam Bộ, đồng bằng sông Cửu Long",
      "02 ha: nơi khác",
@@ -38,7 +38,7 @@
    },
    {
     "label": "Cây lâu năm",
-    "icon": "🌳",
+    "icon": "plant",
     "children": [
      "10 ha đồng bằng",
      "30 ha trung du, miền núi"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Phân biệt",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Hạn mức nhận chuyển quyền khác"
     ]

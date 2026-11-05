@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Nội dung",
-    "icon": "📏",
+    "icon": "measure",
     "children": [
      "Tuân theo thời gian, công nghệ",
      "Điều hành sản xuất"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Nằm trong",
-    "icon": "📚",
+    "icon": "book",
     "children": [
      "Nội quy lao động",
      "Pháp luật"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Hình thức",
-    "icon": "🪜",
+    "icon": "stairs",
     "children": [
      "Khiển trách",
      "Kéo dài nâng lương tối đa 06 tháng",
@@ -55,7 +55,7 @@
    },
    {
     "label": "Cấm",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Phạt tiền, cắt lương"
     ]

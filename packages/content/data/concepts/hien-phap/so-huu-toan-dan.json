@@ -30,14 +30,14 @@
   "tree": [
    {
     "label": "Chủ sở hữu",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Toàn dân"
     ]
    },
    {
     "label": "Nhà nước",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Đại diện chủ sở hữu",
      "Thống nhất quản lý"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Đối tượng",
-    "icon": "⛰️",
+    "icon": "map",
     "children": [
      "Đất đai",
      "Nước, khoáng sản",

@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Mất",
-    "icon": "❌",
+    "icon": "ban",
     "children": [
      "Công ty quản lý quỹ",
      "Hoặc ngân hàng giám sát"
@@ -37,21 +37,21 @@
    },
    {
     "label": "Thời hạn thay thế",
-    "icon": "⏳",
+    "icon": "clock",
     "children": [
      "02 tháng"
     ]
    },
    {
     "label": "Ai tìm",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Ban đại diện quỹ"
     ]
    },
    {
     "label": "Không thay được",
-    "icon": "🚪",
+    "icon": "door",
     "children": [
      "Giải thể quỹ"
     ]

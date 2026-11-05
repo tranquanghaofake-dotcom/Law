@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Tiêu chí",
-    "icon": "📊",
+    "icon": "chart",
     "children": [
      "Trên 50% vốn điều lệ",
      "Hoặc trên 50% cổ phần biểu quyết"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Hình thức",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Công ty trách nhiệm hữu hạn",
      "Công ty cổ phần"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Hai nhóm",
-    "icon": "➗",
+    "icon": "calc",
     "children": [
      "100% vốn nhà nước",
      "Trên 50%"
@@ -53,7 +53,7 @@
    },
    {
     "label": "Nghĩa vụ",
-    "icon": "📢",
+    "icon": "announce",
     "children": [
      "Công bố thông tin"
     ]

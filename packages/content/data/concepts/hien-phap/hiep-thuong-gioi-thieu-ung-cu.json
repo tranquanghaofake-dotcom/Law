@@ -29,14 +29,14 @@
   "tree": [
    {
     "label": "Chủ trì",
-    "icon": "🤝",
+    "icon": "handshake",
     "children": [
      "Mặt trận Tổ quốc"
     ]
    },
    {
     "label": "Hiệp thương",
-    "icon": "🗣️",
+    "icon": "announce",
     "children": [
      "Lựa chọn, giới thiệu người ứng cử",
      "Lấy ý kiến cử tri"
@@ -44,7 +44,7 @@
    },
    {
     "label": "Giám sát",
-    "icon": "👁️",
+    "icon": "eye",
     "children": [
      "Việc bầu cử"
     ]

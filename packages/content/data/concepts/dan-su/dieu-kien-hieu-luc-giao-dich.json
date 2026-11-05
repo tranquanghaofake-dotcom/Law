@@ -30,21 +30,21 @@
   "tree": [
    {
     "label": "Chủ thể",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Năng lực phù hợp"
     ]
    },
    {
     "label": "Ý chí",
-    "icon": "💭",
+    "icon": "idea",
     "children": [
      "Hoàn toàn tự nguyện"
     ]
    },
    {
     "label": "Nội dung",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Không vi phạm điều cấm",
      "Không trái đạo đức"
@@ -52,7 +52,7 @@
    },
    {
     "label": "Hình thức",
-    "icon": "📄",
+    "icon": "doc",
     "children": [
      "Chỉ khi luật quy định"
     ]

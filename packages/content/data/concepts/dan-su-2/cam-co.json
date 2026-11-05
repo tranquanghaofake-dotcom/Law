@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Đặc trưng",
-    "icon": "🤲",
+    "icon": "handshake",
     "children": [
      "Giao tài sản cho bên nhận",
      "Tài sản thuộc sở hữu bên cầm cố"
@@ -36,21 +36,21 @@
    },
    {
     "label": "Hiệu lực",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "Từ khi giao kết"
     ]
    },
    {
     "label": "Đối kháng",
-    "icon": "🔒",
+    "icon": "lock",
     "children": [
      "Từ khi bên nhận nắm giữ"
     ]
    },
    {
     "label": "Phân biệt",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Thế chấp: không giao"
     ]

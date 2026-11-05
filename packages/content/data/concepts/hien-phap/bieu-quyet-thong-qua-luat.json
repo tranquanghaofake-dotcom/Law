@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Quá nửa tổng số",
-    "icon": "✋",
+    "icon": "ban",
     "children": [
      "Luật",
      "Nghị quyết"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Ít nhất hai phần ba tổng số",
-    "icon": "✌️",
+    "icon": "n2",
     "children": [
      "Làm, sửa Hiến pháp",
      "Rút ngắn, kéo dài nhiệm kỳ",
@@ -46,7 +46,7 @@
    },
    {
     "label": "Công bố",
-    "icon": "📢",
+    "icon": "announce",
     "children": [
      "Chậm nhất 15 ngày"
     ]

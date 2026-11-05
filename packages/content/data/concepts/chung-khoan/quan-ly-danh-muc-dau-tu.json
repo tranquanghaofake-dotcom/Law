@@ -28,14 +28,14 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "📝",
+    "icon": "pen",
     "children": [
      "Ủy thác của từng nhà đầu tư"
     ]
    },
    {
     "label": "Tài sản",
-    "icon": "🔒",
+    "icon": "lock",
     "children": [
      "Vẫn của nhà đầu tư",
      "Lưu ký toàn bộ",
@@ -44,7 +44,7 @@
    },
    {
     "label": "Phân biệt",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Quản lý quỹ: tiền chung"
     ]

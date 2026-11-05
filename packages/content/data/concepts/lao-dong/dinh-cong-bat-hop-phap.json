@@ -29,28 +29,28 @@
   "tree": [
    {
     "label": "Sai căn cứ",
-    "icon": "❌",
+    "icon": "ban",
     "children": [
      "Không thuộc trường hợp được đình công"
     ]
    },
    {
     "label": "Sai chủ thể",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Không do tổ chức đại diện có quyền"
     ]
    },
    {
     "label": "Sai thủ tục",
-    "icon": "📋",
+    "icon": "list",
     "children": [
      "Không lấy ý kiến, thông báo trước 05 ngày"
     ]
    },
    {
     "label": "Sai thời điểm, nơi",
-    "icon": "⏰",
+    "icon": "clock",
     "children": [
      "Tranh chấp đang được giải quyết",
      "Nơi không được đình công"

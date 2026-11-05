@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Đương sự",
-    "icon": "🙋",
+    "icon": "person",
     "children": [
      "Chủ động thu thập, giao nộp",
      "Chứng minh yêu cầu có căn cứ"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Tòa án",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Hỗ trợ",
      "Tự thu thập khi luật định"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Ngoại lệ",
-    "icon": "🛡️",
+    "icon": "shield",
     "children": [
      "Người tiêu dùng",
      "Người lao động"

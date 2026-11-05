@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Thời gian",
-    "icon": "🍼",
+    "icon": "child",
     "children": [
      "06 tháng",
      "Con thứ hai: 07 tháng"
@@ -37,21 +37,21 @@
    },
    {
     "label": "Trước khi sinh",
-    "icon": "⏮️",
+    "icon": "clock",
     "children": [
      "Không quá 02 tháng"
     ]
    },
    {
     "label": "Sinh đôi trở lên",
-    "icon": "👶",
+    "icon": "child",
     "children": [
      "Từ con thứ hai: thêm 01 tháng mỗi con"
     ]
    },
    {
     "label": "Đi làm sớm",
-    "icon": "🏃",
+    "icon": "person",
     "children": [
      "Đã nghỉ ít nhất 04 tháng, có đồng ý"
     ]

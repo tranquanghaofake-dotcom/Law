@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Chủ thể",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Tổ chức đại diện người lao động",
      "Người sử dụng hoặc đại diện"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Mục đích",
-    "icon": "🎯",
+    "icon": "target",
     "children": [
      "Xác lập điều kiện lao động",
      "Quan hệ hài hòa, ổn định"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Kết quả",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Thành: thỏa ước",
      "Không thành: tranh chấp"

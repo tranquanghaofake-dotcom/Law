@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Thi hành",
-    "icon": "⚙️",
+    "icon": "tool",
     "children": [
      "Hiến pháp, luật, nghị quyết Quốc hội",
      "Pháp lệnh, lệnh của Chủ tịch nước"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Đề xuất",
-    "icon": "💡",
+    "icon": "idea",
     "children": [
      "Chính sách",
      "Dự án luật, ngân sách"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Quản lý thống nhất",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Kinh tế, văn hóa, xã hội",
      "Quốc phòng, an ninh, đối ngoại",
@@ -55,7 +55,7 @@
    },
    {
     "label": "Khác",
-    "icon": "➕",
+    "icon": "calc",
     "children": [
      "Bảo vệ quyền con người",
      "Ký điều ước nhân danh Chính phủ"

@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Thông qua",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "31/12/1959",
      "Danh nghĩa sửa đổi Hiến pháp 1946"
@@ -39,14 +39,14 @@
    },
    {
     "label": "Mục tiêu",
-    "icon": "🎯",
+    "icon": "target",
     "children": [
      "Đưa miền Bắc lên chủ nghĩa xã hội"
     ]
    },
    {
     "label": "Điểm mới",
-    "icon": "🆕",
+    "icon": "new",
     "children": [
      "Tập trung dân chủ",
      "Quốc hội",
@@ -55,7 +55,7 @@
    },
    {
     "label": "Sửa đổi",
-    "icon": "✏️",
+    "icon": "pen",
     "children": [
      "Chỉ Quốc hội"
     ]

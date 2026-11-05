@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Vốn góp tối đa",
-    "icon": "💰",
+    "icon": "money",
     "children": [
      "Hợp tác xã: không quá 30% vốn điều lệ",
      "Liên hiệp: không quá 40%"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Biểu quyết",
-    "icon": "🗳️",
+    "icon": "vote",
     "children": [
      "Mỗi thành viên một phiếu",
      "Không phụ thuộc vốn"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Vượt trần 12 tháng",
-    "icon": "⚠️",
+    "icon": "warn",
     "children": [
      "Có thể bị thu hồi giấy"
     ]

@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Đưa chứng khoán đủ điều kiện vào giao dịch",
      "Hệ thống cho chứng khoán niêm yết"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Phải niêm yết",
-    "icon": "📋",
+    "icon": "list",
     "children": [
      "Chứng chỉ quỹ đóng, quỹ hoán đổi danh mục",
      "Chứng quyền có bảo đảm",
@@ -46,7 +46,7 @@
    },
    {
     "label": "Điều kiện",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "Chính phủ quy định"
     ]

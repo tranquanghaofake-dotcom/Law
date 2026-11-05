@@ -30,14 +30,14 @@
   "tree": [
    {
     "label": "Nguyên tắc",
-    "icon": "🚪",
+    "icon": "door",
     "children": [
      "Mọi tổ chức, cá nhân"
     ]
    },
    {
     "label": "Không được",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Cán bộ, công chức, viên chức",
      "Sĩ quan, quân nhân, công an",
@@ -47,7 +47,7 @@
    },
    {
     "label": "Phân biệt",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Quyền góp vốn rộng hơn"
     ]

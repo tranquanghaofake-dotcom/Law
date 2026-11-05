@@ -30,14 +30,14 @@
   "tree": [
    {
     "label": "Quốc tịch",
-    "icon": "🛂",
+    "icon": "globe",
     "children": [
      "Nhập, thôi, trở lại, tước"
     ]
    },
    {
     "label": "Khen thưởng",
-    "icon": "🏅",
+    "icon": "star",
     "children": [
      "Huân chương, huy chương",
      "Giải thưởng, danh hiệu nhà nước"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Đặc xá",
-    "icon": "🕊️",
+    "icon": "unlock",
     "children": [
      "Chủ tịch nước quyết định",
      "Khác đại xá do Quốc hội"

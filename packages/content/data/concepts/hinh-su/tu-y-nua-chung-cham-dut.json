@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Điều kiện",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "Tự mình dừng lại",
      "Không có gì ngăn cản",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Hệ quả",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Miễn trách nhiệm về tội định phạm",
      "Vẫn chịu tội khác đã cấu thành"

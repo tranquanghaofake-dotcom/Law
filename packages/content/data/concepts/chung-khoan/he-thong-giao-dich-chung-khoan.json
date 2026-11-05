@@ -27,7 +27,7 @@
   "tree": [
    {
     "label": "Hai nhánh",
-    "icon": "🛣️",
+    "icon": "map",
     "children": [
      "Chứng khoán niêm yết",
      "Chứng khoán chưa niêm yết"
@@ -35,14 +35,14 @@
    },
    {
     "label": "Vận hành",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Sở giao dịch Việt Nam và công ty con"
     ]
    },
    {
     "label": "Phân biệt",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Hệ thống là hạ tầng",
      "Thị trường là không gian giao dịch"

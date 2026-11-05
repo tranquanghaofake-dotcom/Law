@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Thái độ",
-    "icon": "🙏",
+    "icon": "handshake",
     "children": [
      "Ngăn chặn, khắc phục hậu quả",
      "Tự khai báo, hối lỗi"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Hoàn cảnh",
-    "icon": "🌪️",
+    "icon": "warn",
     "children": [
      "Bị kích động, bị ép buộc",
      "Vượt quá phòng vệ, cấp thiết"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Người vi phạm",
-    "icon": "👵",
+    "icon": "person",
     "children": [
      "Phụ nữ mang thai, người già yếu",
      "Hoàn cảnh đặc biệt khó khăn"

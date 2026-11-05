@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Chấm dứt hợp đồng",
-    "icon": "📄",
+    "icon": "doc",
     "children": [
      "Hợp pháp",
      "Không: tự ý nghỉ trái luật, đủ lương hưu"
@@ -38,21 +38,21 @@
    },
    {
     "label": "Đã đóng",
-    "icon": "📆",
+    "icon": "calendar",
     "children": [
      "Đủ 12 tháng trong 24 tháng"
     ]
    },
    {
     "label": "Hồ sơ",
-    "icon": "⏰",
+    "icon": "clock",
     "children": [
      "Nộp trong 03 tháng"
     ]
    },
    {
     "label": "Mức hưởng",
-    "icon": "💵",
+    "icon": "money",
     "children": [
      "60% bình quân 06 tháng",
      "Tối đa 05 lần lương tối thiểu vùng"

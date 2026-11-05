@@ -29,21 +29,21 @@
   "tree": [
    {
     "label": "Nguyên tắc",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Yêu cầu không được chấp nhận thì chịu"
     ]
    },
    {
     "label": "Hòa giải thành",
-    "icon": "🤝",
+    "icon": "handshake",
     "children": [
      "Chịu 50%"
     ]
    },
    {
     "label": "Ly hôn",
-    "icon": "💔",
+    "icon": "heart",
     "children": [
      "Nguyên đơn chịu",
      "Thuận tình: mỗi bên một nửa"
@@ -51,7 +51,7 @@
    },
    {
     "label": "Phân biệt",
-    "icon": "💵",
+    "icon": "money",
     "children": [
      "Tạm ứng án phí nộp trước"
     ]

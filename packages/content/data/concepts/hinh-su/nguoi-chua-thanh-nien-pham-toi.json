@@ -32,14 +32,14 @@
   "tree": [
    {
     "label": "Độ tuổi",
-    "icon": "🧒",
+    "icon": "child",
     "children": [
      "Từ đủ 14 đến dưới 18"
     ]
    },
    {
     "label": "Nguyên tắc",
-    "icon": "📚",
+    "icon": "book",
     "children": [
      "Chủ yếu giáo dục",
      "Ưu tiên xử lý chuyển hướng",
@@ -48,7 +48,7 @@
    },
    {
     "label": "Không áp dụng",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Tù chung thân, tử hình",
      "Hình phạt bổ sung"

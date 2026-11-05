@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Địa vị",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Doanh nghiệp",
      "Nhà nước nắm trên 50%"
@@ -36,14 +36,14 @@
    },
    {
     "label": "Thành lập",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Thủ tướng quyết định"
     ]
    },
    {
     "label": "Quản lý",
-    "icon": "👁️",
+    "icon": "eye",
     "children": [
      "Bộ trưởng Tài chính phê chuẩn Điều lệ",
      "Ủy ban giám sát"

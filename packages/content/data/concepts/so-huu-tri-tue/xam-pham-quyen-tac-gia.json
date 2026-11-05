@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Xâm phạm",
-    "icon": "⚠️",
+    "icon": "warn",
     "children": [
      "Quyền nhân thân",
      "Quyền tài sản"
@@ -38,14 +38,14 @@
    },
    {
     "label": "Dùng ngoại lệ sai",
-    "icon": "📝",
+    "icon": "pen",
     "children": [
      "Không nêu tên tác giả"
     ]
    },
    {
     "label": "Hành vi khác",
-    "icon": "🔓",
+    "icon": "unlock",
     "children": [
      "Vô hiệu biện pháp công nghệ",
      "Xóa thông tin quản lý quyền"

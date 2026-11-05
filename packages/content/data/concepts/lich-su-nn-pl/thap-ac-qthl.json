@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Xâm phạm vua, nhà nước",
-    "icon": "👑",
+    "icon": "crown",
     "children": [
      "Mưu phản",
      "Mưu đại nghịch",
@@ -40,7 +40,7 @@
    },
    {
     "label": "Xâm phạm luân thường",
-    "icon": "👪",
+    "icon": "family",
     "children": [
      "Ác nghịch, bất hiếu",
      "Bất mục, bất nghĩa",
@@ -49,7 +49,7 @@
    },
    {
     "label": "Hệ quả",
-    "icon": "⛔",
+    "icon": "ban",
     "children": [
      "Không bát nghị, không chuộc"
     ]

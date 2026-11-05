@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Mốc",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "Năm 40",
      "Tồn tại đến năm 43"
@@ -39,7 +39,7 @@
    },
    {
     "label": "Nguyên nhân",
-    "icon": "🔥",
+    "icon": "warn",
     "children": [
      "Tô Định dùng pháp luật trói buộc",
      "Thù giết chồng"
@@ -47,7 +47,7 @@
    },
    {
     "label": "Kết quả",
-    "icon": "👑",
+    "icon": "crown",
     "children": [
      "Đóng đô Mê Linh",
      "65 thành theo về"

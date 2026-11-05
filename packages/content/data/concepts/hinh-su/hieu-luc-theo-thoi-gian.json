@@ -28,14 +28,14 @@
   "tree": [
    {
     "label": "Nguyên tắc",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "Luật có hiệu lực khi thực hiện hành vi"
     ]
    },
    {
     "label": "Không hồi tố",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Tội mới",
      "Hình phạt nặng hơn",
@@ -44,7 +44,7 @@
    },
    {
     "label": "Hồi tố",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "Điều luật có lợi"
     ]

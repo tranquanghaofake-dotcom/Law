@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Chia",
-    "icon": "✂️",
+    "icon": "cut",
     "children": [
      "Công ty bị chia chấm dứt",
      "Lập 2+ công ty mới"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Tách",
-    "icon": "🔪",
+    "icon": "conflict",
     "children": [
      "Công ty bị tách còn",
      "Lập thêm công ty mới"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Hợp nhất",
-    "icon": "🔀",
+    "icon": "compare",
     "children": [
      "Các công ty chấm dứt",
      "Lập một công ty mới"
@@ -53,7 +53,7 @@
    },
    {
     "label": "Sáp nhập",
-    "icon": "➡️",
+    "icon": "arrow",
     "children": [
      "Bị sáp nhập chấm dứt",
      "Bên nhận còn tồn tại"

@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Nguồn gốc",
-    "icon": "🌱",
+    "icon": "plant",
     "children": [
      "Chọn tạo",
      "Phát hiện và phát triển"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Điều kiện",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "Tính mới, khác biệt",
      "Đồng nhất, ổn định",
@@ -46,7 +46,7 @@
    },
    {
     "label": "Văn bằng",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Bằng bảo hộ giống cây trồng"
     ]

@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Hương hỏa",
-    "icon": "🕯️",
+    "icon": "end",
     "children": [
      "Một phần hai mươi ruộng đất",
      "Giao con trai trưởng",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Phần còn lại",
-    "icon": "👫",
+    "icon": "people",
     "children": [
      "Anh em chị em chia nhau",
      "Con gái được thừa kế"

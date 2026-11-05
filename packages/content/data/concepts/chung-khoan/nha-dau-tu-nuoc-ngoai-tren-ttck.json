@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Giới hạn",
-    "icon": "📏",
+    "icon": "measure",
     "children": [
      "Tỷ lệ sở hữu nước ngoài",
      "Theo công ty, ngành nghề"
@@ -36,14 +36,14 @@
    },
    {
     "label": "Quy định chi tiết",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Chính phủ"
     ]
    },
    {
     "label": "Hệ quả",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Đã đầy tỷ lệ: không mua thêm"
     ]

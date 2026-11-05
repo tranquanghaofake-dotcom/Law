@@ -31,21 +31,21 @@
   "tree": [
    {
     "label": "Trách nhiệm hữu hạn, hợp danh",
-    "icon": "🤝",
+    "icon": "handshake",
     "children": [
      "Tài sản đã góp hoặc cam kết góp"
     ]
    },
    {
     "label": "Cổ phần",
-    "icon": "📈",
+    "icon": "chart",
     "children": [
      "Tổng mệnh giá cổ phần đã bán, đăng ký mua"
     ]
    },
    {
     "label": "Bản chất",
-    "icon": "💎",
+    "icon": "money",
     "children": [
      "Vốn chủ sở hữu",
      "Khác vốn vay"
@@ -53,7 +53,7 @@
    },
    {
     "label": "Vai trò",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Tỷ lệ sở hữu, biểu quyết",
      "Chia lợi nhuận"

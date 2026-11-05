@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Dấu hiệu",
-    "icon": "✋",
+    "icon": "ban",
     "children": [
      "Tạm thời, tự nguyện, có tổ chức",
      "Trong giải quyết tranh chấp"
@@ -38,14 +38,14 @@
    },
    {
     "label": "Ai tổ chức",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Tổ chức đại diện có quyền thương lượng"
     ]
    },
    {
     "label": "Chỉ được khi",
-    "icon": "🔑",
+    "icon": "key",
     "children": [
      "Tranh chấp tập thể về lợi ích",
      "Hòa giải, trọng tài không thành"

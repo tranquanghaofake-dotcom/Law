@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Dấu hiệu",
-    "icon": "🔎",
+    "icon": "search",
     "children": [
      "Tên riêng",
      "Tài sản",
@@ -39,14 +39,14 @@
    },
    {
     "label": "Mục đích",
-    "icon": "🎯",
+    "icon": "target",
     "children": [
      "Kinh doanh"
     ]
    },
    {
     "label": "Có pháp nhân",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Trách nhiệm hữu hạn một, hai thành viên",
      "Cổ phần, hợp danh"
@@ -54,7 +54,7 @@
    },
    {
     "label": "Không pháp nhân",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Doanh nghiệp tư nhân"
     ]

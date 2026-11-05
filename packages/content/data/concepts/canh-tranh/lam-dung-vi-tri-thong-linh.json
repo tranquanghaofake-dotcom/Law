@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Về giá",
-    "icon": "💲",
+    "icon": "money",
     "children": [
      "Bán dưới giá thành toàn bộ",
      "Áp đặt giá bất hợp lý",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Về thị trường",
-    "icon": "🚪",
+    "icon": "door",
     "children": [
      "Hạn chế sản xuất, phân phối",
      "Ngăn cản gia nhập"
@@ -47,7 +47,7 @@
    },
    {
     "label": "Về điều kiện",
-    "icon": "📋",
+    "icon": "list",
     "children": [
      "Phân biệt đối xử",
      "Áp đặt nghĩa vụ không liên quan"

@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Điều kiện",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "Có Giấy chứng nhận",
      "Không tranh chấp",
@@ -40,14 +40,14 @@
    },
    {
     "label": "Thêm",
-    "icon": "➕",
+    "icon": "calc",
     "children": [
      "Không bị biện pháp khẩn cấp tạm thời"
     ]
    },
    {
     "label": "Ngoại lệ sổ",
-    "icon": "🆓",
+    "icon": "unlock",
     "children": [
      "Thừa kế",
      "Tặng cho Nhà nước"

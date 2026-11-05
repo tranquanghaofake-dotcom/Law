@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Không xử phạt",
-    "icon": "🛡️",
+    "icon": "shield",
     "children": [
      "Tình thế cấp thiết",
      "Phòng vệ chính đáng",
@@ -40,7 +40,7 @@
    },
    {
     "label": "Lưu ý",
-    "icon": "⚠️",
+    "icon": "warn",
     "children": [
      "Vượt quá giới hạn vẫn bị xử phạt"
     ]

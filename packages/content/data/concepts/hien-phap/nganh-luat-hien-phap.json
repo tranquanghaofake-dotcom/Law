@@ -29,21 +29,21 @@
   "tree": [
    {
     "label": "Vị trí",
-    "icon": "🔝",
+    "icon": "top",
     "children": [
      "Ngành luật chủ đạo"
     ]
    },
    {
     "label": "Điều chỉnh",
-    "icon": "📚",
+    "icon": "book",
     "children": [
      "Quan hệ xã hội cơ bản, quan trọng nhất"
     ]
    },
    {
     "label": "Phân biệt",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Ngành luật: hệ thống quy phạm",
      "Khoa học: hệ thống tri thức",

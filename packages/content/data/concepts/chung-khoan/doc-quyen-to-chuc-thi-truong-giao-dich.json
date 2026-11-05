@@ -27,7 +27,7 @@
   "tree": [
    {
     "label": "Được phép",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Sở giao dịch chứng khoán Việt Nam",
      "Công ty con: sàn Thành phố Hồ Chí Minh, sàn Hà Nội"
@@ -35,7 +35,7 @@
    },
    {
     "label": "Cấm",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Mọi tổ chức, cá nhân khác"
     ]

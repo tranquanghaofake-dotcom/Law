@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Cá nhân",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Trước Thủ tướng",
      "Trước Chính phủ",
@@ -40,7 +40,7 @@
    },
    {
     "label": "Tập thể",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Cùng thành viên Chính phủ",
      "Về hoạt động của Chính phủ"
@@ -48,7 +48,7 @@
    },
    {
     "label": "Vai trò",
-    "icon": "🎯",
+    "icon": "target",
     "children": [
      "Thành viên Chính phủ",
      "Người đứng đầu bộ"

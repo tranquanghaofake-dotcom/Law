@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Chung",
-    "icon": "🔁",
+    "icon": "cycle",
     "children": [
      "Xét lại bản án đã có hiệu lực",
      "Chỉ khởi động bằng kháng nghị",
@@ -38,7 +38,7 @@
    },
    {
     "label": "Giám đốc thẩm",
-    "icon": "🧑‍⚖️",
+    "icon": "scales",
     "children": [
      "Kết luận sai tình tiết",
      "Vi phạm nghiêm trọng thủ tục",
@@ -47,7 +47,7 @@
    },
    {
     "label": "Tái thẩm",
-    "icon": "🆕",
+    "icon": "new",
     "children": [
      "Tình tiết mới không ai biết"
     ]

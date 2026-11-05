@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Dấu hiệu",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "Có lỗi",
      "Vi phạm quản lý nhà nước",
@@ -41,7 +41,7 @@
    },
    {
     "label": "Chủ thể",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Cá nhân",
      "Tổ chức (phổ biến)"

@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Áp dụng",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Công ty chứng khoán",
      "Công ty quản lý quỹ"
@@ -36,7 +36,7 @@
    },
    {
     "label": "Chỉ tiêu",
-    "icon": "📏",
+    "icon": "measure",
     "children": [
      "Bộ trưởng Bộ Tài chính quy định",
      "Ví dụ tỷ lệ vốn khả dụng"
@@ -44,7 +44,7 @@
    },
    {
     "label": "Không đạt",
-    "icon": "⚠️",
+    "icon": "warn",
     "children": [
      "Cảnh báo",
      "Kiểm soát",

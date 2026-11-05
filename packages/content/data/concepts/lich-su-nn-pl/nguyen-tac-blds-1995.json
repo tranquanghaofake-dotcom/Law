@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Nguyên tắc",
-    "icon": "🤝",
+    "icon": "handshake",
     "children": [
      "Tự do, tự nguyện thỏa thuận",
      "Bình đẳng",
@@ -40,7 +40,7 @@
    },
    {
     "label": "Tôn trọng",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Lợi ích Nhà nước, công cộng",
      "Đạo đức, truyền thống"
@@ -48,7 +48,7 @@
    },
    {
     "label": "Thiếu luật",
-    "icon": "❓",
+    "icon": "question",
     "children": [
      "Áp dụng tập quán, tương tự"
     ]

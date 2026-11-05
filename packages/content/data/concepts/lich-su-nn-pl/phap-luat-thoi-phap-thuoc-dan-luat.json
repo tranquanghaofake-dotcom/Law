@@ -32,7 +32,7 @@
   "tree": [
    {
     "label": "Bắc Kỳ",
-    "icon": "🏔️",
+    "icon": "map",
     "children": [
      "Dân luật Bắc kỳ 1931",
      "Nghị định Thống sứ, Toàn quyền"
@@ -40,7 +40,7 @@
    },
    {
     "label": "Trung Kỳ",
-    "icon": "🏯",
+    "icon": "state",
     "children": [
      "Dân luật Trung kỳ 1936–1939",
      "Dụ của vua"
@@ -48,7 +48,7 @@
    },
    {
     "label": "Nam Kỳ",
-    "icon": "🌴",
+    "icon": "map",
     "children": [
      "Luật hộ giữ như cũ"
     ]

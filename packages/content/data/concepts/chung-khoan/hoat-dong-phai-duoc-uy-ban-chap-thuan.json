@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Phải xin trước",
-    "icon": "📝",
+    "icon": "pen",
     "children": [
      "Tạm ngừng (trừ bất khả kháng)",
      "Chào bán, niêm yết ở nước ngoài",
@@ -38,7 +38,7 @@
    },
    {
     "label": "Hình thức",
-    "icon": "📄",
+    "icon": "doc",
     "children": [
      "Chấp thuận bằng văn bản"
     ]

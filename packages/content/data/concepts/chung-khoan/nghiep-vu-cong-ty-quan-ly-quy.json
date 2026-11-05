@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Nghiệp vụ",
-    "icon": "🧺",
+    "icon": "box",
     "children": [
      "Quản lý quỹ",
      "Quản lý danh mục",
@@ -39,14 +39,14 @@
    },
    {
     "label": "Cấp phép",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Chung một lần"
     ]
    },
    {
     "label": "Không được",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Môi giới, tự doanh",
      "Bảo lãnh phát hành"

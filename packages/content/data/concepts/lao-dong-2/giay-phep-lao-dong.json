@@ -28,14 +28,14 @@
   "tree": [
    {
     "label": "Thời hạn",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "Tối đa 02 năm"
     ]
    },
    {
     "label": "Gia hạn",
-    "icon": "🔁",
+    "icon": "cycle",
     "children": [
      "Chỉ một lần",
      "Tối đa 02 năm"
@@ -43,7 +43,7 @@
    },
    {
     "label": "Hết hiệu lực",
-    "icon": "⛔",
+    "icon": "ban",
     "children": [
      "Hết hạn",
      "Chấm dứt hợp đồng lao động",

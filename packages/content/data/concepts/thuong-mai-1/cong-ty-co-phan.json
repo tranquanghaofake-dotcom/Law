@@ -30,14 +30,14 @@
   "tree": [
    {
     "label": "Vốn",
-    "icon": "🍰",
+    "icon": "gift",
     "children": [
      "Chia thành cổ phần bằng nhau"
     ]
    },
    {
     "label": "Cổ đông",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Tối thiểu 03",
      "Không giới hạn tối đa"
@@ -45,14 +45,14 @@
    },
    {
     "label": "Trách nhiệm",
-    "icon": "🛡️",
+    "icon": "shield",
     "children": [
      "Trong phạm vi vốn đã góp"
     ]
    },
    {
     "label": "Đặc quyền",
-    "icon": "⭐",
+    "icon": "star",
     "children": [
      "Tự do chuyển nhượng",
      "Phát hành cổ phần, trái phiếu"

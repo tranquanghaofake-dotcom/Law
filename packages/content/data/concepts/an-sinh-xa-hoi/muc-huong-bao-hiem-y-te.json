@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "100%",
-    "icon": "🥇",
+    "icon": "star",
     "children": [
      "Người có công, trẻ dưới 6 tuổi",
      "Hộ nghèo",
@@ -39,7 +39,7 @@
    },
    {
     "label": "95%",
-    "icon": "🥈",
+    "icon": "star",
     "children": [
      "Người hưởng lương hưu",
      "Hộ cận nghèo"
@@ -47,14 +47,14 @@
    },
    {
     "label": "80%",
-    "icon": "🥉",
+    "icon": "star",
     "children": [
      "Các đối tượng còn lại"
     ]
    },
    {
     "label": "Điều kiện",
-    "icon": "🏥",
+    "icon": "health",
     "children": [
      "Đúng quy định chuyển người bệnh"
     ]

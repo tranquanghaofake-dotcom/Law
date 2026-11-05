@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Điều kiện chung",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "Tác phẩm đã công bố",
      "Không xin phép, không trả tiền",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Ví dụ",
-    "icon": "📚",
+    "icon": "book",
     "children": [
      "Tự sao một bản để học",
      "Trích dẫn hợp lý",
@@ -48,7 +48,7 @@
    },
    {
     "label": "Giới hạn",
-    "icon": "⚠️",
+    "icon": "warn",
     "children": [
      "Không ảnh hưởng khai thác bình thường"
     ]

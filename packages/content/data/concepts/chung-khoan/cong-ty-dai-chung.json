@@ -31,14 +31,14 @@
   "tree": [
    {
     "label": "Loại hình",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Công ty cổ phần"
     ]
    },
    {
     "label": "Con đường 1",
-    "icon": "🛤️",
+    "icon": "map",
     "children": [
      "Vốn điều lệ và vốn chủ sở hữu từ 30 tỷ",
      "10% cổ phiếu do 100 nhà đầu tư nắm"
@@ -46,14 +46,14 @@
    },
    {
     "label": "Con đường 2",
-    "icon": "🛤️",
+    "icon": "map",
     "children": [
      "Phát hành lần đầu ra công chúng thành công"
     ]
    },
    {
     "label": "Nghĩa vụ",
-    "icon": "📢",
+    "icon": "announce",
     "children": [
      "Công bố thông tin",
      "Lưu ký tập trung"

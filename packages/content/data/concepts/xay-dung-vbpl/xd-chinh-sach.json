@@ -31,28 +31,28 @@
   "tree": [
    {
     "label": "Vấn đề",
-    "icon": "❗",
+    "icon": "warn",
     "children": [
      "Điều gì đang bất cập"
     ]
    },
    {
     "label": "Mục tiêu",
-    "icon": "🎯",
+    "icon": "target",
     "children": [
      "Muốn đạt được điều gì"
     ]
    },
    {
     "label": "Giải pháp",
-    "icon": "🛠️",
+    "icon": "tool",
     "children": [
      "Nhà nước sẽ làm gì"
     ]
    },
    {
     "label": "Viết thành luật",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Biến giải pháp thành quy định"
     ]

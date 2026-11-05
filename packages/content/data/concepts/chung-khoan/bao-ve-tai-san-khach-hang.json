@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Nguyên tắc",
-    "icon": "🔒",
+    "icon": "lock",
     "children": [
      "Tài sản của chủ sở hữu",
      "Tách biệt"
@@ -36,7 +36,7 @@
    },
    {
     "label": "Hệ quả",
-    "icon": "🛡️",
+    "icon": "shield",
     "children": [
      "Không dùng trả nợ công ty",
      "Kể cả khi phá sản"

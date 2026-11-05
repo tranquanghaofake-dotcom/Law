@@ -31,14 +31,14 @@
   "tree": [
    {
     "label": "Mốc",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "939, sau Bạch Đằng 938"
     ]
    },
    {
     "label": "Làm gì",
-    "icon": "👑",
+    "icon": "crown",
     "children": [
      "Xưng vương",
      "Bỏ chức Tiết độ sứ",
@@ -47,14 +47,14 @@
    },
    {
     "label": "Kinh đô",
-    "icon": "🏯",
+    "icon": "state",
     "children": [
      "Cổ Loa"
     ]
    },
    {
     "label": "Hạn chế",
-    "icon": "⚠️",
+    "icon": "warn",
     "children": [
      "Chưa xưng đế, đặt niên hiệu"
     ]

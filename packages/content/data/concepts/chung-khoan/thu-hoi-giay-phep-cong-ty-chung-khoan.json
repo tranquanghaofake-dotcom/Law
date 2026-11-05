@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Căn cứ",
-    "icon": "📋",
+    "icon": "list",
     "children": [
      "12 tháng không hoạt động",
      "Tự đề nghị rút",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Hệ quả",
-    "icon": "🔄",
+    "icon": "cycle",
     "children": [
      "Tất toán tài sản khách",
      "Chỉ định công ty thay thế"

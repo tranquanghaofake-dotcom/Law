@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Công thức",
-    "icon": "🧮",
+    "icon": "calc",
     "children": [
      "Tài sản trừ nợ",
      "Chia số đơn vị quỹ"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Kiểm soát",
-    "icon": "👁️",
+    "icon": "eye",
     "children": [
      "Công ty quản lý quỹ tính",
      "Ngân hàng giám sát xác nhận"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Định giá",
-    "icon": "📏",
+    "icon": "measure",
     "children": [
      "Giá đóng cửa gần nhất"
     ]

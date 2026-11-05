@@ -28,21 +28,21 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "🖋️",
+    "icon": "pen",
     "children": [
      "Nhân danh bên ủy quyền"
     ]
    },
    {
     "label": "Thù lao",
-    "icon": "💵",
+    "icon": "money",
     "children": [
      "Chỉ khi thỏa thuận hoặc luật quy định"
     ]
    },
    {
     "label": "Thời hạn",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "Theo thỏa thuận",
      "Không có: 01 năm"

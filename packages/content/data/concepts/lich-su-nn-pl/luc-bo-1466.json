@@ -30,14 +30,14 @@
   "tree": [
    {
     "label": "Mốc",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "1466, Lê Thánh Tông"
     ]
    },
    {
     "label": "Sáu bộ",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Lại: quan lại",
      "Hộ: ruộng đất, thuế",
@@ -47,14 +47,14 @@
    },
    {
     "label": "Đứng đầu",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Thượng thư"
     ]
    },
    {
     "label": "Kèm theo",
-    "icon": "➕",
+    "icon": "calc",
     "children": [
      "Năm phủ, sáu tự"
     ]

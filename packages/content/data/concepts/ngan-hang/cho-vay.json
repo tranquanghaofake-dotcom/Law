@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Dấu hiệu",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "Giao hoặc cam kết giao tiền",
      "Mục đích xác định",
@@ -41,7 +41,7 @@
    },
    {
     "label": "Vi phạm",
-    "icon": "⚠️",
+    "icon": "warn",
     "children": [
      "Dùng vốn sai mục đích"
     ]

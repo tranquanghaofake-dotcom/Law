@@ -29,21 +29,21 @@
   "tree": [
    {
     "label": "Doanh nghiệp tư nhân",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Chủ doanh nghiệp"
     ]
    },
    {
     "label": "Hợp danh",
-    "icon": "🤝",
+    "icon": "handshake",
     "children": [
      "Thành viên hợp danh"
     ]
    },
    {
     "label": "Trách nhiệm hữu hạn",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Hội đồng thành viên, Chủ tịch công ty",
      "Giám đốc"
@@ -51,7 +51,7 @@
    },
    {
     "label": "Cổ phần",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Hội đồng quản trị",
      "Giám đốc, Tổng giám đốc"

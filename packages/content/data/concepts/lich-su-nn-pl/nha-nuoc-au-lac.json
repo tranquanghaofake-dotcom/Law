@@ -28,28 +28,28 @@
   "tree": [
    {
     "label": "Người lập",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Thục Phán – An Dương Vương"
     ]
    },
    {
     "label": "Mốc",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "257 trước Công nguyên"
     ]
    },
    {
     "label": "Kinh đô",
-    "icon": "🏯",
+    "icon": "state",
     "children": [
      "Phong Khê (Cổ Loa)"
     ]
    },
    {
     "label": "Đặc điểm",
-    "icon": "💪",
+    "icon": "fist",
     "children": [
      "Giữ mô hình Văn Lang",
      "Quyền lực trung ương mạnh hơn"

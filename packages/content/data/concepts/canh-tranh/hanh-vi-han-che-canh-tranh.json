@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Gồm",
-    "icon": "🧩",
+    "icon": "puzzle",
     "children": [
      "Thỏa thuận hạn chế cạnh tranh",
      "Lạm dụng vị trí thống lĩnh",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Tác động",
-    "icon": "📉",
+    "icon": "chart",
     "children": [
      "Loại trừ, làm giảm",
      "Sai lệch, cản trở"
@@ -47,14 +47,14 @@
    },
    {
     "label": "Ngưỡng",
-    "icon": "⚠️",
+    "icon": "warn",
     "children": [
      "Chỉ cần có khả năng gây tác động"
     ]
    },
    {
     "label": "Không gồm",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Tập trung kinh tế (kiểm soát riêng)"
     ]

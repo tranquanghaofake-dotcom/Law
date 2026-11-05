@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "📄",
+    "icon": "doc",
     "children": [
      "Ghi nhận thông tin đăng ký",
      "Bản giấy hoặc điện tử"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Phải cấp",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "Nhà đầu tư nước ngoài",
      "Tổ chức kinh tế khoản 1 Điều 20"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Không phải cấp",
-    "icon": "🆓",
+    "icon": "unlock",
     "children": [
      "Nhà đầu tư trong nước",
      "Góp vốn, mua cổ phần"

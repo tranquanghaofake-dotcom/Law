@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Gồm",
-    "icon": "🎒",
+    "icon": "box",
     "children": [
      "Vật",
      "Tiền",
@@ -38,7 +38,7 @@
    },
    {
     "label": "Phân loại",
-    "icon": "🗂️",
+    "icon": "list",
     "children": [
      "Bất động sản, động sản",
      "Hiện có, hình thành trong tương lai"

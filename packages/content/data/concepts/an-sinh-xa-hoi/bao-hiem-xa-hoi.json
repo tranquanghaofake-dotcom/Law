@@ -32,14 +32,14 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "💰",
+    "icon": "money",
     "children": [
      "Thay thế hoặc bù đắp một phần thu nhập"
     ]
    },
    {
     "label": "Năm loại hình",
-    "icon": "5️⃣",
+    "icon": "n5",
     "children": [
      "Trợ cấp hưu trí xã hội (mới)",
      "Bắt buộc",
@@ -49,7 +49,7 @@
    },
    {
     "label": "Bắt buộc",
-    "icon": "📌",
+    "icon": "pin",
     "children": [
      "Ốm đau, thai sản, hưu trí, tử tuất",
      "Tai nạn lao động – bệnh nghề nghiệp"
@@ -57,7 +57,7 @@
    },
    {
     "label": "Mở rộng",
-    "icon": "➕",
+    "icon": "calc",
     "children": [
      "Hợp đồng từ đủ 01 tháng"
     ]

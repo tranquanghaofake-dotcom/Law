@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Không cần định giá",
-    "icon": "🆓",
+    "icon": "unlock",
     "children": [
      "Đồng Việt Nam",
      "Ngoại tệ tự do chuyển đổi",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Ai định giá",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Thành viên, cổ đông sáng lập (đồng thuận)",
      "Tổ chức thẩm định giá"
@@ -47,7 +47,7 @@
    },
    {
     "label": "Định giá cao hơn thực tế",
-    "icon": "⚠️",
+    "icon": "warn",
     "children": [
      "Liên đới góp thêm phần chênh"
     ]

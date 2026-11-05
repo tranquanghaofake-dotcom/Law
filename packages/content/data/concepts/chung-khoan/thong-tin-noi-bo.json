@@ -27,7 +27,7 @@
   "tree": [
    {
     "label": "Dấu hiệu",
-    "icon": "🤫",
+    "icon": "lock",
     "children": [
      "Chưa được công bố",
      "Ảnh hưởng lớn đến giá"
@@ -35,7 +35,7 @@
    },
    {
     "label": "Ví dụ",
-    "icon": "📰",
+    "icon": "announce",
     "children": [
      "Kết quả kinh doanh đột biến",
      "Sắp sáp nhập"
@@ -43,14 +43,14 @@
    },
    {
     "label": "Hết là nội bộ",
-    "icon": "📢",
+    "icon": "announce",
     "children": [
      "Khi đã công bố"
     ]
    },
    {
     "label": "Phân biệt",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Người nội bộ"
     ]

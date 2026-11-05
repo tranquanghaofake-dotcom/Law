@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Ba bên",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Doanh nghiệp cho thuê: ký hợp đồng, trả lương",
      "Bên thuê lại: điều hành công việc",
@@ -38,7 +38,7 @@
    },
    {
     "label": "Điều kiện",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Ngành nghề kinh doanh có điều kiện",
      "Ký quỹ, có giấy phép"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Giới hạn",
-    "icon": "⏳",
+    "icon": "clock",
     "children": [
      "Tối đa 12 tháng",
      "Chỉ công việc theo danh mục"

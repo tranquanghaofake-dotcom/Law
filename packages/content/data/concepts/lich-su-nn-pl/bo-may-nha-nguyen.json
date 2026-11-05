@@ -32,14 +32,14 @@
   "tree": [
    {
     "label": "Vua",
-    "icon": "👑",
+    "icon": "crown",
     "children": [
      "Nắm mọi quyền lực"
     ]
    },
    {
     "label": "Trung ương",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Lục bộ",
      "Nội các",
@@ -49,7 +49,7 @@
    },
    {
     "label": "Đặc điểm",
-    "icon": "⚠️",
+    "icon": "warn",
     "children": [
      "Không đặt tể tướng"
     ]

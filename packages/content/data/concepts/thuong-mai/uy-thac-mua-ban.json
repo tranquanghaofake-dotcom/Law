@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Dấu hiệu",
-    "icon": "🏷️",
+    "icon": "doc",
     "children": [
      "Nhân danh chính mình",
      "Theo điều kiện đã thỏa thuận",
@@ -37,7 +37,7 @@
    },
    {
     "label": "Chủ thể",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Bên nhận là thương nhân",
      "Bên ủy thác có thể không"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Hình thức",
-    "icon": "📝",
+    "icon": "pen",
     "children": [
      "Văn bản"
     ]

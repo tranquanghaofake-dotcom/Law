@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Căn cứ",
-    "icon": "📋",
+    "icon": "list",
     "children": [
      "Thường xuyên không hoàn thành việc",
      "Ốm đau điều trị lâu chưa hồi phục",
@@ -39,14 +39,14 @@
    },
    {
     "label": "Thủ tục",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "Báo trước"
     ]
    },
    {
     "label": "Khác người lao động",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Người lao động không cần lý do"
     ]

@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Căn cứ",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Quy định của Bộ luật Hình sự",
      "Tính chất, mức độ nguy hiểm",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Phạt tiền",
-    "icon": "💰",
+    "icon": "money",
     "children": [
      "Thêm tình hình tài sản"
     ]

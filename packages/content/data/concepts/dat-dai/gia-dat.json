@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "💎",
+    "icon": "money",
     "children": [
      "Giá trị quyền sử dụng đất",
      "Trên một đơn vị diện tích"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Nhà nước quyết",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Bảng giá đất (từ 2026, hằng năm)",
      "Giá đất cụ thể"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Tiền sử dụng đất",
-    "icon": "💵",
+    "icon": "money",
     "children": [
      "Giao đất có thu tiền",
      "Chuyển mục đích"

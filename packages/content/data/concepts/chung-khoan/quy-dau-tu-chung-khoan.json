@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Dấu hiệu",
-    "icon": "🔎",
+    "icon": "search",
     "children": [
      "Vốn góp của nhiều nhà đầu tư",
      "Mục đích lợi nhuận",
@@ -38,7 +38,7 @@
    },
    {
     "label": "Loại",
-    "icon": "🗂️",
+    "icon": "list",
     "children": [
      "Quỹ đại chúng",
      "Quỹ thành viên"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Điều hành",
-    "icon": "🧭",
+    "icon": "arrow",
     "children": [
      "Công ty quản lý quỹ"
     ]

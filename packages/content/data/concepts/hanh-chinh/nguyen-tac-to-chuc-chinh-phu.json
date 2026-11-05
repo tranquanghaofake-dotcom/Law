@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Chính phủ",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Hành chính cao nhất",
      "Quyền hành pháp",
@@ -40,7 +40,7 @@
    },
    {
     "label": "Hệ thống",
-    "icon": "🪜",
+    "icon": "stairs",
     "children": [
      "Bộ, cơ quan ngang bộ",
      "Ủy ban nhân dân tỉnh, xã",

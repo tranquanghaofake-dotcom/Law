@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Đại diện",
-    "icon": "🗳️",
+    "icon": "vote",
     "children": [
      "Nhân dân ở đơn vị bầu cử",
      "Nhân dân cả nước"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Nghĩa vụ",
-    "icon": "📋",
+    "icon": "list",
     "children": [
      "Liên hệ, chịu giám sát của cử tri",
      "Tiếp xúc, báo cáo cử tri"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Quyền",
-    "icon": "🔑",
+    "icon": "key",
     "children": [
      "Chất vấn",
      "Trình dự án luật",

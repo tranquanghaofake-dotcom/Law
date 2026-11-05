@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Vi phạm",
-    "icon": "⚠️",
+    "icon": "warn",
     "children": [
      "Không đúng thời hạn",
      "Không đầy đủ",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Miễn",
-    "icon": "🛡️",
+    "icon": "shield",
     "children": [
      "Bất khả kháng",
      "Hoàn toàn do lỗi bên có quyền"
@@ -47,7 +47,7 @@
    },
    {
     "label": "Trách nhiệm",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Buộc thực hiện",
      "Bồi thường, phạt vi phạm"

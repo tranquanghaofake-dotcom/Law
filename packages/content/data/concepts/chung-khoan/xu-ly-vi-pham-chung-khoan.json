@@ -29,14 +29,14 @@
   "tree": [
    {
     "label": "Hành chính",
-    "icon": "📋",
+    "icon": "list",
     "children": [
      "Ủy ban, Thanh tra xử phạt"
     ]
    },
    {
     "label": "Hình sự",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Tòa án",
      "Tội công bố thông tin sai lệch",
@@ -45,7 +45,7 @@
    },
    {
     "label": "Dân sự",
-    "icon": "💸",
+    "icon": "money",
     "children": [
      "Bồi thường thiệt hại"
     ]

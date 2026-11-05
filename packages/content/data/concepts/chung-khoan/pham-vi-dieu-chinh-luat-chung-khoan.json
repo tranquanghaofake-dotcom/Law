@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Hoạt động",
-    "icon": "📈",
+    "icon": "chart",
     "children": [
      "Chào bán, niêm yết",
      "Giao dịch"
@@ -36,14 +36,14 @@
    },
    {
     "label": "Chủ thể",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Quyền, nghĩa vụ"
     ]
    },
    {
     "label": "Nhà nước",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Tổ chức thị trường",
      "Quản lý nhà nước"

@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Theo Tòa án",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Bị tước quyền ứng cử",
      "Đang chấp hành án tù"
@@ -38,14 +38,14 @@
    },
    {
     "label": "Năng lực",
-    "icon": "🧠",
+    "icon": "idea",
     "children": [
      "Bị hạn chế hoặc mất năng lực hành vi"
     ]
    },
    {
     "label": "Hình sự",
-    "icon": "🚔",
+    "icon": "shield",
     "children": [
      "Đang bị khởi tố bị can",
      "Đang chấp hành bản án",
@@ -54,7 +54,7 @@
    },
    {
     "label": "Hành chính",
-    "icon": "📋",
+    "icon": "list",
     "children": [
      "Đang chấp hành biện pháp xử lý hành chính"
     ]

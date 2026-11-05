@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Cam kết",
-    "icon": "🛡️",
+    "icon": "shield",
     "children": [
      "Không quốc hữu hóa",
      "Không tịch thu bằng biện pháp hành chính"
@@ -39,7 +39,7 @@
    },
    {
     "label": "Ngoại lệ",
-    "icon": "⚠️",
+    "icon": "warn",
     "children": [
      "Trưng mua",
      "Trưng dụng"
@@ -47,7 +47,7 @@
    },
    {
     "label": "Khi ngoại lệ",
-    "icon": "💵",
+    "icon": "money",
     "children": [
      "Thanh toán, bồi thường"
     ]

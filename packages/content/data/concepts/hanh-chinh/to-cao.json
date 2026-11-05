@@ -30,14 +30,14 @@
   "tree": [
    {
     "label": "Chủ thể",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Chỉ cá nhân"
     ]
    },
    {
     "label": "Đối tượng",
-    "icon": "🎯",
+    "icon": "target",
     "children": [
      "Vi phạm của bất kỳ ai",
      "Không cần liên quan quyền mình"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Hai loại",
-    "icon": "2️⃣",
+    "icon": "n2",
     "children": [
      "Trong nhiệm vụ, công vụ",
      "Trong quản lý nhà nước các lĩnh vực"

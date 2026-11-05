@@ -31,14 +31,14 @@
   "tree": [
    {
     "label": "Thông qua",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "18/12/1980"
     ]
    },
    {
     "label": "Bối cảnh",
-    "icon": "🇻🇳",
+    "icon": "flag",
     "children": [
      "Cả nước thống nhất",
      "Kế hoạch hóa tập trung"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Điểm mới",
-    "icon": "🆕",
+    "icon": "new",
     "children": [
      "Đảng lãnh đạo (Điều 4)",
      "Chuyên chính vô sản"
@@ -54,7 +54,7 @@
    },
    {
     "label": "Bộ máy",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Hội đồng Nhà nước: Chủ tịch tập thể",
      "Hội đồng Bộ trưởng"

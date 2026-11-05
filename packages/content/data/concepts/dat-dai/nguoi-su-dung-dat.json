@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Căn cứ",
-    "icon": "🚪",
+    "icon": "door",
     "children": [
      "Giao, cho thuê, công nhận",
      "Sử dụng ổn định đủ điều kiện",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Các nhóm",
-    "icon": "👥",
+    "icon": "people",
     "children": [
      "Tổ chức, cá nhân trong nước",
      "Cộng đồng dân cư, tôn giáo",

@@ -31,14 +31,14 @@
   "tree": [
    {
     "label": "Mốc",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "1831–1832"
     ]
    },
    {
     "label": "Bỏ",
-    "icon": "🚫",
+    "icon": "ban",
     "children": [
      "Bắc thành",
      "Gia Định thành"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Chia",
-    "icon": "🗺️",
+    "icon": "map",
     "children": [
      "Khoảng 30 tỉnh",
      "Phủ Thừa Thiên"
@@ -54,7 +54,7 @@
    },
    {
     "label": "Quan tỉnh",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Tổng đốc, Tuần phủ",
      "Bố chánh, Án sát"

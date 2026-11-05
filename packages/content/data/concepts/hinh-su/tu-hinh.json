@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Áp dụng",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Tội đặc biệt nghiêm trọng",
      "An ninh, tính mạng, ma túy, tham nhũng"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Không áp dụng",
-    "icon": "🛡️",
+    "icon": "shield",
     "children": [
      "Người dưới 18 tuổi khi phạm tội",
      "Phụ nữ có thai, nuôi con dưới 36 tháng",

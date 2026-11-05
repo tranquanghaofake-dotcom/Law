@@ -28,21 +28,21 @@
   "tree": [
    {
     "label": "Thành lập",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Quốc hội"
     ]
    },
    {
     "label": "Chính quyền",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Quốc hội quy định khi thành lập"
     ]
    },
    {
     "label": "Phân biệt",
-    "icon": "↔️",
+    "icon": "compare",
     "children": [
      "Đặc khu hải đảo cùng cấp xã"
     ]

@@ -31,7 +31,7 @@
   "tree": [
    {
     "label": "Mốc",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "Thông qua 28 tháng 10 năm 1995",
      "Hiệu lực 1 tháng 7 năm 1996"
@@ -39,14 +39,14 @@
    },
    {
     "label": "Vị trí",
-    "icon": "🥇",
+    "icon": "star",
     "children": [
      "Bộ luật dân sự đầu tiên"
     ]
    },
    {
     "label": "Nhiệm vụ",
-    "icon": "🎯",
+    "icon": "target",
     "children": [
      "Bình đẳng, an toàn pháp lý",
      "Thể chế hóa kinh tế thị trường"

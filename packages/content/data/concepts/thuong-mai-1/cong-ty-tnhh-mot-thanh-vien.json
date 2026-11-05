@@ -29,28 +29,28 @@
   "tree": [
    {
     "label": "Chủ sở hữu",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Một tổ chức hoặc một cá nhân"
     ]
    },
    {
     "label": "Trách nhiệm",
-    "icon": "🛡️",
+    "icon": "shield",
     "children": [
      "Trong phạm vi vốn điều lệ"
     ]
    },
    {
     "label": "Tư cách",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Có pháp nhân"
     ]
    },
    {
     "label": "Phát hành",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Không cổ phần",
      "Được trái phiếu"

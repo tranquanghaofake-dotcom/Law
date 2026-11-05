@@ -29,7 +29,7 @@
   "tree": [
    {
     "label": "Trần",
-    "icon": "📏",
+    "icon": "measure",
     "children": [
      "20% một năm",
      "Trừ luật khác (tổ chức tín dụng)"
@@ -37,7 +37,7 @@
    },
    {
     "label": "Vượt trần",
-    "icon": "✂️",
+    "icon": "cut",
     "children": [
      "Phần vượt không có hiệu lực",
      "Hợp đồng vẫn còn"
@@ -45,7 +45,7 @@
    },
    {
     "label": "Có lãi nhưng không rõ mức",
-    "icon": "❓",
+    "icon": "question",
     "children": [
      "Một nửa trần: 10% một năm"
     ]

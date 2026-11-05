@@ -29,14 +29,14 @@
   "tree": [
    {
     "label": "Bản chất",
-    "icon": "💰",
+    "icon": "money",
     "children": [
      "Mục đích sinh lợi"
     ]
    },
    {
     "label": "Gồm",
-    "icon": "🛒",
+    "icon": "cart",
     "children": [
      "Mua bán hàng hóa",
      "Cung ứng dịch vụ",
@@ -45,7 +45,7 @@
    },
    {
     "label": "Hàng hóa",
-    "icon": "📦",
+    "icon": "box",
     "children": [
      "Động sản, kể cả hình thành tương lai",
      "Vật gắn liền với đất"
@@ -53,7 +53,7 @@
    },
    {
     "label": "Chủ thể",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Thương nhân"
     ]

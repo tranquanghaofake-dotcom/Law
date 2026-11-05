@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Điều kiện",
-    "icon": "✅",
+    "icon": "check",
     "children": [
      "Lấy ý kiến Nhân dân địa phương",
      "Trình tự do Quốc hội quy định"
@@ -38,7 +38,7 @@
    },
    {
     "label": "Thẩm quyền",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Quốc hội: cấp tỉnh",
      "Ủy ban thường vụ: dưới tỉnh"
@@ -46,7 +46,7 @@
    },
    {
     "label": "Áp dụng",
-    "icon": "🗺️",
+    "icon": "map",
     "children": [
      "Thành lập, giải thể",
      "Nhập, chia",

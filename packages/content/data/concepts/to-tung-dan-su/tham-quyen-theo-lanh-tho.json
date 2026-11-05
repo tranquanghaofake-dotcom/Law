@@ -28,7 +28,7 @@
   "tree": [
    {
     "label": "Nguyên tắc",
-    "icon": "📍",
+    "icon": "pin",
     "children": [
      "Nơi bị đơn cư trú, làm việc",
      "Nơi bị đơn có trụ sở"
@@ -36,21 +36,21 @@
    },
    {
     "label": "Thỏa thuận",
-    "icon": "🤝",
+    "icon": "handshake",
     "children": [
      "Bằng văn bản chọn nơi nguyên đơn"
     ]
    },
    {
     "label": "Bắt buộc",
-    "icon": "🏠",
+    "icon": "home",
     "children": [
      "Bất động sản: nơi có bất động sản"
     ]
    },
    {
     "label": "Nguyên đơn chọn",
-    "icon": "🙋",
+    "icon": "person",
     "children": [
      "Một số trường hợp Điều 40"
     ]
