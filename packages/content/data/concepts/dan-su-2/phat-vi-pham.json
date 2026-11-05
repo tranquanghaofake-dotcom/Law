@@ -24,16 +24,20 @@
   "vừa phạt vừa bồi thường"
  ],
  "memo": {
-  "hook": "Phạt chỉ khi THỎA THUẬN; BLDS không giới hạn mức (thương mại tối đa 8%).",
+  "gist": "Bên vi phạm hợp đồng trả tiền phạt nếu các bên đã thỏa thuận; luật dân sự không giới hạn mức phạt.",
+  "kind": "tree",
+  "hook": "Như luật chơi tự đặt trước trận: chưa ghi thì trọng tài không thổi.",
   "tree": [
    {
     "label": "Điều kiện",
+    "icon": "📝",
     "children": [
      "Các bên thỏa thuận"
     ]
    },
    {
     "label": "Mức",
+    "icon": "💵",
     "children": [
      "Do các bên thỏa thuận",
      "Luật Thương mại: tối đa 8%"
@@ -41,9 +45,20 @@
    },
    {
     "label": "Với bồi thường",
+    "icon": "↔️",
     "children": [
-     "Không thỏa thuận cả hai → chỉ chịu phạt"
+     "Không thỏa thuận cả hai thì chỉ chịu phạt"
     ]
+   }
+  ],
+  "case": {
+   "q": "Hợp đồng ghi chậm giao phạt 20 triệu, không nói bồi thường. Thiệt hại thực tế lớn hơn. Bên chậm chịu gì?",
+   "a": "Chỉ chịu phạt 20 triệu."
+  },
+  "contrast": [
+   {
+    "with": "dat-coc",
+    "text": "Phạt vi phạm trả khi vi phạm; đặt cọc là tiền giao trước khi ký."
    }
   ]
  },

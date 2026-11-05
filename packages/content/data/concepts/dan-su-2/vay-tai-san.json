@@ -23,10 +23,13 @@
   "bên vay là chủ sở hữu"
  ],
  "memo": {
-  "hook": "Bên vay thành CHỦ SỞ HỮU; trả tài sản CÙNG LOẠI (không phải chính tài sản đó).",
+  "gist": "Bên vay nhận tài sản thành của mình, đến hạn trả tài sản cùng loại, đúng số lượng và chất lượng.",
+  "kind": "tree",
+  "hook": "Mượn gạo trả gạo, không phải trả đúng hạt cũ.",
   "tree": [
    {
     "label": "Đặc điểm",
+    "icon": "📦",
     "children": [
      "Bên vay là chủ sở hữu khi nhận",
      "Trả tài sản cùng loại",
@@ -35,15 +38,27 @@
    },
    {
     "label": "Lãi",
+    "icon": "💵",
     "children": [
      "Chỉ khi thỏa thuận hoặc luật định"
     ]
    },
    {
     "label": "Phân biệt",
+    "icon": "↔️",
     "children": [
      "Mượn: trả chính tài sản"
     ]
+   }
+  ],
+  "case": {
+   "q": "Vay 1 chỉ vàng. Đến hạn có phải trả chính chiếc nhẫn đã nhận không?",
+   "a": "Không. Trả 1 chỉ vàng cùng loại, cùng tuổi vàng."
+  },
+  "contrast": [
+   {
+    "with": "thue-tai-san",
+    "text": "Vay trả tài sản cùng loại; thuê trả lại chính tài sản."
    }
   ]
  },

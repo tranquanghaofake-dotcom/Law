@@ -22,26 +22,41 @@
   "thời hạn 01 năm nếu không thỏa thuận"
  ],
  "memo": {
-  "hook": "Ủy quyền: làm NHÂN DANH người ủy quyền; không thỏa thuận thời hạn thì 01 NĂM.",
+  "gist": "Bên được ủy quyền nhân danh bên ủy quyền làm việc; không ghi thời hạn thì hiệu lực 1 năm.",
+  "kind": "tree",
+  "hook": "Như cầm giấy ủy quyền đi rút tiền hộ: làm dưới tên người khác.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "🖋️",
     "children": [
      "Nhân danh bên ủy quyền"
     ]
    },
    {
     "label": "Thù lao",
+    "icon": "💵",
     "children": [
      "Chỉ khi thỏa thuận hoặc luật quy định"
     ]
    },
    {
     "label": "Thời hạn",
+    "icon": "📅",
     "children": [
      "Theo thỏa thuận",
      "Không có: 01 năm"
     ]
+   }
+  ],
+  "case": {
+   "q": "Hợp đồng ủy quyền không ghi thời hạn. Hiệu lực bao lâu?",
+   "a": "1 năm kể từ ngày xác lập."
+  },
+  "contrast": [
+   {
+    "with": "dich-vu",
+    "text": "Ủy quyền là làm nhân danh người khác; dịch vụ là làm một việc cho người khác."
    }
   ]
  },

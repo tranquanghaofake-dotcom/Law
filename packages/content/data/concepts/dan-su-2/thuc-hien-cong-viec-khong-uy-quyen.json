@@ -23,10 +23,13 @@
   "không biết hoặc biết mà không phản đối"
  ],
  "memo": {
-  "hook": "TỰ NGUYỆN làm giúp, KHÔNG có nghĩa vụ, VÌ LỢI ÍCH người kia, họ KHÔNG PHẢN ĐỐI.",
+  "gist": "Tự nguyện làm giúp việc của người khác vì lợi ích họ, khi không có nghĩa vụ và họ không phản đối.",
+  "kind": "checklist",
+  "hook": "Giúp hàng xóm che mái nhà khi bão: được trả lại tiền vật liệu.",
   "tree": [
    {
     "label": "Điều kiện",
+    "icon": "✅",
     "children": [
      "Không có nghĩa vụ",
      "Tự nguyện",
@@ -36,10 +39,21 @@
    },
    {
     "label": "Hậu quả",
+    "icon": "💵",
     "children": [
      "Được thanh toán chi phí hợp lý",
      "Có thể được thù lao"
     ]
+   }
+  ],
+  "case": {
+   "q": "Anh A tự bỏ tiền che mái nhà hàng xóm bị bão tốc khi họ đi vắng. A được gì?",
+   "a": "Được hàng xóm thanh toán chi phí hợp lý."
+  },
+  "contrast": [
+   {
+    "with": "nghia-vu-hoan-tra",
+    "text": "Làm giúp không ủy quyền là làm việc thay; hoàn trả là trả tài sản không phải của mình."
    }
   ]
  },

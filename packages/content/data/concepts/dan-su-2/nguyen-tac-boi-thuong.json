@@ -23,10 +23,13 @@
   "lỗi vô ý, thiệt hại quá lớn"
  ],
  "memo": {
-  "hook": "Bồi thường TOÀN BỘ, KỊP THỜI; có thể GIẢM nếu lỗi vô ý và thiệt hại quá lớn.",
+  "gist": "Thiệt hại phải đền toàn bộ và kịp thời; có thể giảm nếu lỗi vô ý và thiệt hại quá lớn so với khả năng.",
+  "kind": "tree",
+  "hook": "Đền đủ là chính, nhưng không bắt người nghèo bán cả đời mình.",
   "tree": [
    {
     "label": "Nguyên tắc",
+    "icon": "⚖️",
     "children": [
      "Toàn bộ và kịp thời",
      "Tự do thỏa thuận mức, hình thức"
@@ -34,6 +37,7 @@
    },
    {
     "label": "Giảm mức",
+    "icon": "📉",
     "children": [
      "Không lỗi hoặc lỗi vô ý",
      "Thiệt hại quá lớn so với khả năng"
@@ -41,10 +45,21 @@
    },
    {
     "label": "Khác",
+    "icon": "🔄",
     "children": [
      "Thay đổi mức khi không phù hợp",
      "Bên bị hại có lỗi thì tự chịu phần đó"
     ]
+   }
+  ],
+  "case": {
+   "q": "Sinh viên vô ý làm cháy nhà hàng xóm thiệt hại 2 tỷ, thu nhập rất thấp. Tòa có thể làm gì?",
+   "a": "Giảm mức bồi thường."
+  },
+  "contrast": [
+   {
+    "with": "can-cu-boi-thuong-thiet-hai",
+    "text": "Nguyên tắc là đền thế nào; căn cứ là khi nào phải đền."
    }
   ]
  },

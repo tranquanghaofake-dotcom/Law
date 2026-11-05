@@ -25,10 +25,13 @@
   "hiệu lực đối kháng"
  ],
  "memo": {
-  "hook": "Chín biện pháp: ĐỐI VẬT (7, bằng tài sản) và ĐỐI NHÂN (2: bảo lãnh, tín chấp).",
+  "gist": "Có chín cách bảo đảm nợ được trả: bảy cách dùng tài sản và hai cách dùng uy tín của người khác.",
+  "kind": "compare",
+  "hook": "Lấy đồ làm tin, hoặc lấy người làm tin.",
   "tree": [
    {
     "label": "Đối vật",
+    "icon": "📦",
     "children": [
      "Cầm cố, thế chấp",
      "Đặt cọc, ký cược, ký quỹ",
@@ -38,6 +41,7 @@
    },
    {
     "label": "Đối nhân",
+    "icon": "👤",
     "children": [
      "Bảo lãnh",
      "Tín chấp"
@@ -45,9 +49,20 @@
    },
    {
     "label": "Đối kháng",
+    "icon": "🛡️",
     "children": [
      "Từ khi đăng ký hoặc nắm giữ"
     ]
+   }
+  ],
+  "case": {
+   "q": "Mua xe trả góp, bên bán giữ quyền sở hữu đến khi trả đủ. Đây là biện pháp gì?",
+   "a": "Bảo lưu quyền sở hữu."
+  },
+  "contrast": [
+   {
+    "with": "cam-co",
+    "text": "Biện pháp bảo đảm là nhóm chín cách; cầm cố chỉ là một cách."
    }
   ]
  },

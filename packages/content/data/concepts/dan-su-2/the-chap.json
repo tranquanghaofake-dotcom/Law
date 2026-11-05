@@ -23,10 +23,13 @@
   "đăng ký"
  ],
  "memo": {
-  "hook": "Thế chấp KHÔNG GIAO tài sản; đối kháng thường từ khi ĐĂNG KÝ.",
+  "gist": "Thế chấp là dùng tài sản để bảo đảm trả nợ nhưng vẫn giữ và dùng tài sản đó.",
+  "kind": "tree",
+  "hook": "Như cắm sổ đỏ ở ngân hàng: nhà vẫn ở, giấy nằm ở ngân hàng.",
   "tree": [
    {
     "label": "Đặc trưng",
+    "icon": "🏠",
     "children": [
      "Không giao tài sản",
      "Bên thế chấp giữ, khai thác"
@@ -34,15 +37,27 @@
    },
    {
     "label": "Tài sản",
+    "icon": "🔮",
     "children": [
      "Có thể hình thành trong tương lai"
     ]
    },
    {
     "label": "Đối kháng",
+    "icon": "📋",
     "children": [
      "Từ khi đăng ký"
     ]
+   }
+  ],
+  "case": {
+   "q": "Chủ cửa hàng thế chấp quyền sử dụng đất để vay. Họ có được tiếp tục kinh doanh trên đất không?",
+   "a": "Có, vì thế chấp không phải giao tài sản."
+  },
+  "contrast": [
+   {
+    "with": "cam-co",
+    "text": "Thế chấp không giao tài sản; cầm cố phải giao."
    }
   ]
  },

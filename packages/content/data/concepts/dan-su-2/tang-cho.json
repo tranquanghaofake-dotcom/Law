@@ -22,10 +22,13 @@
   "chuyển quyền sở hữu"
  ],
  "memo": {
-  "hook": "Tặng cho KHÔNG ĐỀN BÙ nhưng là HỢP ĐỒNG: người nhận phải ĐỒNG Ý.",
+  "gist": "Một bên cho tài sản không đòi đền bù, bên kia đồng ý nhận; là hợp đồng nên cần cả hai đồng ý.",
+  "kind": "tree",
+  "hook": "Quà phải có người nhận mới thành quà.",
   "tree": [
    {
     "label": "Đặc điểm",
+    "icon": "🎁",
     "children": [
      "Không yêu cầu đền bù",
      "Bên được tặng đồng ý nhận"
@@ -33,6 +36,7 @@
    },
    {
     "label": "Hiệu lực",
+    "icon": "📅",
     "children": [
      "Động sản: khi nhận",
      "Tài sản phải đăng ký: khi đăng ký"
@@ -40,9 +44,20 @@
    },
    {
     "label": "Phân biệt",
+    "icon": "↔️",
     "children": [
      "Di chúc: đơn phương"
     ]
+   }
+  ],
+  "case": {
+   "q": "Mẹ tặng con căn nhà. Hợp đồng có hiệu lực khi nào?",
+   "a": "Khi đăng ký, sau khi lập văn bản công chứng."
+  },
+  "contrast": [
+   {
+    "with": "mua-ban-tai-san",
+    "text": "Tặng cho không đòi tiền; mua bán phải trả tiền."
    }
   ]
  },

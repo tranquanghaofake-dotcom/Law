@@ -22,10 +22,13 @@
   "thực hiện hoặc không thực hiện công việc"
  ],
  "memo": {
-  "hook": "Năm dạng: GIAO VẬT – GIAO QUYỀN – TRẢ TIỀN – LÀM – KHÔNG LÀM.",
+  "gist": "Nghĩa vụ là việc một bên phải làm hoặc không làm vì bên kia: giao vật, trả tiền, làm hay không làm việc.",
+  "kind": "tree",
+  "hook": "Như món nợ có hai đầu: một đầu phải trả, một đầu được đòi.",
   "tree": [
    {
     "label": "Hai bên",
+    "icon": "👥",
     "children": [
      "Bên có nghĩa vụ",
      "Bên có quyền"
@@ -33,6 +36,7 @@
    },
    {
     "label": "Hành vi",
+    "icon": "📋",
     "children": [
      "Chuyển giao vật, quyền",
      "Trả tiền, giấy tờ có giá",
@@ -42,9 +46,20 @@
    },
    {
     "label": "Đối tượng",
+    "icon": "🎯",
     "children": [
      "Phải xác định được"
     ]
+   }
+  ],
+  "case": {
+   "q": "Cam kết không tiết lộ bí mật kinh doanh là loại nghĩa vụ gì?",
+   "a": "Nghĩa vụ không được thực hiện công việc nhất định."
+  },
+  "contrast": [
+   {
+    "with": "can-cu-phat-sinh-nghia-vu",
+    "text": "Nghĩa vụ là việc phải làm; căn cứ là nơi nó sinh ra."
    }
   ]
  },
