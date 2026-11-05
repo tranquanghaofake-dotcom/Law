@@ -77,7 +77,7 @@ Cổng: người dùng chọn 1 phương án; đã ghi ≥ 3 công trình gần 
 ### Pha 2 — Tổng quan tình hình nghiên cứu
 Làm: lập chiến lược tìm (từ khóa Việt và Anh, nguồn: `references/nguon-tra-cuu.md`). Đọc 3 lượt (lướt → đọc lập luận → đọc phê phán). Ghi **ma trận tài liệu**: tác giả, năm, loại, câu hỏi, phương pháp, kết luận, hạn chế, liên quan tới mục nào của đề cương.
 Viết tổng quan **theo chủ đề**, không theo danh sách tác giả: nhóm A đã làm rõ…, nhóm B tranh luận…, **chưa ai** làm… → khoảng trống mà đề tài lấp.
-Cổng: ma trận ≥ 15 nguồn cho khóa luận hoặc NCKH (≥ 8 cho tiểu luận), **trong đó ≥ 5 nguồn học thuật** (bài tạp chí, sách chuyên khảo, luận án; ≥ 3 cho tiểu luận), có cột ngày đăng, có cả trong và ngoài nước nếu đề tài có so sánh; khoảng trống nghiên cứu nêu được trong 2–3 câu **và đã kiểm trùng với cột "Kiến nghị đã đưa ra"**; mọi nguồn trong ma trận đều đã mở được hoặc ghi rõ "chỉ có tóm tắt".
+Cổng: ma trận ≥ 15 nguồn cho khóa luận hoặc NCKH (≥ 8 cho tiểu luận), **trong đó ≥ 5 nguồn học thuật** (bài tạp chí, sách chuyên khảo, luận án; ≥ 3 cho tiểu luận), có cột ngày đăng, có cả trong và ngoài nước nếu đề tài có so sánh; khoảng trống nghiên cứu nêu được trong 2–3 câu **và đã kiểm trùng với cột "Kiến nghị đã đưa ra"**; mỗi kiến nghị cũ đã đối chiếu với văn bản ban hành sau **ngày nhận bài** (cột "Đã được luật hóa?"), không gọi một kiến nghị đã thành luật là khoảng trống; mọi nguồn trong ma trận đều đã mở được hoặc ghi rõ "chỉ có tóm tắt".
 
 ### Pha 3 — Câu hỏi, khung lý thuyết, phương pháp
 Làm: 1 câu hỏi chính + 2–4 câu hỏi phụ (mỗi câu ứng với ≥ 1 mục đề cương). Giả thuyết nghiên cứu nếu có. Khung lý thuyết: học thuyết hoặc nguyên tắc làm thước đo đánh giá (ví dụ: tự do hợp đồng, bảo vệ bên yếu thế, tương xứng, chi phí giao dịch). Phương pháp chọn theo `references/phuong-phap-luat-hoc.md`, **mỗi phương pháp gắn với câu hỏi và chương cụ thể**; cấm viết chung chung "phân tích, tổng hợp, so sánh…" mà không nói dùng ở đâu, để làm gì.
@@ -121,7 +121,7 @@ Cổng: `kiem_tra_ban_thao.py` chạy trên bản cuối báo 0 lỗi; checklist
 | Lỗi hội đồng hay bắt, câu hỏi bảo vệ | `references/phan-bien-hoi-dong.md` |
 | Nhật ký AI, quy tắc diễn đạt lại, đạo văn | `references/liem-chinh-ai.md` |
 | Kiểm bản nháp tự động | `python3 scripts/kiem_tra_ban_thao.py <file.md>` |
-| Ví dụ đã chạy, kèm phiếu tự chấm và bài học: luật doanh nghiệp (3 vòng, 55 → 71) và luật lao động + dữ liệu (2 vòng, 58 → 71) | `vi-du/giao-dich-nguoi-co-lien-quan/`, `vi-du/giam-sat-nguoi-lao-dong/` |
+| Ví dụ đã chạy, kèm phiếu tự chấm và bài học: luật doanh nghiệp (3 vòng, 55 → 71) và luật lao động + dữ liệu (2 vòng, 58 → 71); hình sự khi văn bản nền đang sửa (đề cương, 46); thi hành án và luật vừa có hiệu lực (57) | `vi-du/giao-dich-nguoi-co-lien-quan/`, `vi-du/giam-sat-nguoi-lao-dong/`, `vi-du/an-treo/`, `vi-du/tai-san-so-thi-hanh-an/` |
 
 ## Công cụ, nếu phiên có
 
@@ -154,3 +154,5 @@ Không có công cụ tìm kiếm thì nói rõ: mọi nguồn ở pha 2 và pha
 | So sánh với nước "quen" chứ không phải nước có cơ chế tương đương | Chọn hệ thống theo câu hỏi (`phuong-phap-luat-hoc.md`) |
 | Điểm thấp do thiếu dữ liệu hoặc chưa công bố mà cố bù bằng văn | Pha 7 ghi rõ phần nào chỉ người làm đề tài mới làm được (thu dữ liệu, công bố) |
 | Footnote không có trang, danh mục lẫn VBQPPL với sách | `trinh-bay-trich-dan.md` |
+| Viết "lần đầu", "duy nhất", "chưa từng" mà chưa đọc văn bản cũ | Script báo `khang-dinh-so-sanh-khong-nguon`; đọc văn bản cũ hoặc dẫn nguồn đã đối chiếu |
+| Đề tài lỗi thời vì văn bản nền đang được sửa | Kiểm đường ống lập pháp ở pha 1, kế hoạch A/B |

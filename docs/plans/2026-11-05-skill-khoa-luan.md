@@ -88,3 +88,8 @@ Task 8: bắt đầu — base a48c2ba — (1) script kiểm phản chứng ở m
 Task 8: xong — (commit này) — script kiểm `han-che-chua-phan-chung`; đề mẫu 3 `vi-du/an-treo/` (pha 0–2, 5, 7: 46/100 ở mức đề cương sơ bộ); thêm "kiểm đường ống lập pháp" + kế hoạch A/B (SKILL.md pha 1), "khoảng trống chuyển tiếp" (tim-ngach.md).
 Quyết định: dừng đề 3 trước pha 4 — vì BLHS sửa đổi chưa rõ kết quả biểu quyết — sai thì tốn viết lại toàn bộ chương 2.
 Rút kinh nghiệm: đề thô thuộc mảng hình sự bão hòa; rủi ro chính là văn bản nền đang sửa, không phải trùng đề. Khi soạn bảng văn bản từ trí nhớ suýt ghi số hiệu luật sửa đổi năm 2024 không kiểm được → đã đổi thành CẦN KIỂM.
+
+Task 9: bắt đầu — base 38fd710 — (1) đề 3: kiểm kết quả biểu quyết BLHS, bổ sung nguồn học thuật; (2) đề mẫu 4 mảng khác
+Task 9: xong — (commit này) — đề 3: BLHS vẫn là dự thảo (05/11/2026, bế mạc 21/11) → giữ kế hoạch B, thêm 2 nguồn học thuật (8/15); đề mẫu 4 `vi-du/tai-san-so-thi-hanh-an/` (pha 0–2, 5, 1 tiểu mục, 7: 57/100); script thêm `khang-dinh-so-sanh-khong-nguon`; ma trận thêm cột "Đã được luật hóa?" + ngày nhận bài.
+Quyết định: đề 4 thu hẹp "tài sản mã hóa" về ví tự lưu ký trong THADS — vì E1, E2 đã có người viết — sai thì tốn đổi đề ở pha 1.
+Rút kinh nghiệm: tự gõ "lần đầu…" khi chưa đọc luật cũ, script cũ không bắt → thêm kiểm tra (test đỏ trước). Kiểm tra mới bắt nhầm mục tổng kết có "(xem x.y.z)" → nới cho dòng có tham chiếu mục. Parallel Search hết hạn mức giữa chừng → chuyển Firecrawl.

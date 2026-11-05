@@ -21,3 +21,7 @@ Phép thử D3: câu hỏi hẹp ✔; bằng chứng vướng: dự thảo ✔, 
 - A (Quốc hội thông qua): lấy văn bản thông qua và nghị quyết thi hành làm đối tượng; câu hỏi: nghị quyết thi hành đã xử lý quy định lai thế nào, có đúng khoản 3 Điều 7 không.
 - B (chưa thông qua, hoặc bỏ cơ chế nộp tiền): đổi khung thành nghiên cứu lý luận "tiêu chí xác định quy định có lợi đối với quy định lai", lấy dự thảo làm tình huống; ghi rõ "dự thảo ngày …".
 Cổng pha 1: chờ người dùng chọn; **không viết pha 4 trước khi biết kết quả biểu quyết**, trừ phần lý luận chung dùng được cho cả A và B.
+
+## Cập nhật 05/11/2026 (lần 2)
+- Đến 05/11/2026 BLHS (sửa đổi) **vẫn là dự thảo**; có thêm các bản ngày 09/10/2026 và 26/10/2026 (quochoi.vn). Kỳ họp thứ 2 kết thúc đợt 1 ngày 13/11/2026, bế mạc 21/11/2026 (quochoi.vn, tin ngày 04/11/2026) → **kiểm lại sau 21/11/2026**; tạm theo kế hoạch B.
+- Luật 59/2024/QH15 là **Luật Tư pháp người chưa thành niên** (danh mục tại khoản 3 Điều 115 Luật 106/2025/QH15, luatvietnam). Luật này có sửa BLHS không: [CẦN KIỂM].

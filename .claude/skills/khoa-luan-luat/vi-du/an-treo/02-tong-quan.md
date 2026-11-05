@@ -1,11 +1,13 @@
 # Pha 2 — Ma trận sơ bộ (đề 3) — chưa đủ cổng (cần ≥ 15, ≥ 5 học thuật)
-| # | Tác giả (năm) | Loại | Trọng tâm | Kiến nghị đã đưa ra | Ngày đăng | Đã đọc |
-|---|---|---|---|---|---|---|
-| 1 | [CẦN KIỂM: tác giả] "Góp ý quy định về án treo trong dự thảo BLHS (sửa đổi)", lsvn.vn | bài chuyên ngành | Điều 65 dự thảo | quy định mức tối thiểu/tối đa tiền nộp; nâng thời gian thử thách; giữ giao giám sát | 06/10/2026 | trích đoạn |
-| 2 | [CẦN KIỂM: tác giả] "Điều kiện nộp tiền khi áp dụng án treo trong dự thảo…: công bằng, bình đẳng và kinh nghiệm quốc tế", lsvn.vn | bài chuyên ngành | bản chất pháp lý của cơ chế nộp tiền; Pháp, Đức, Bắc Âu | 2 phương án hoàn thiện | 23/07/2026 | trích đoạn |
-| 3 | [CẦN KIỂM: tác giả] "Bàn về quy định hồi tố cho phạm nhân khi có thay đổi về pháp luật", lsvn.vn | bài chuyên ngành | hồi tố có lợi với phạm nhân; Tây Ban Nha, Đức, Mỹ (Dorsey v. United States) | cơ chế xem xét lại bản án khi luật có lợi | 27/10/2025 | trích đoạn |
-| 4 | [CẦN KIỂM: tác giả] "Một số bất cập trong việc áp dụng, thi hành án treo và kiến nghị hoàn thiện", tapchitoaan.vn | bài tạp chí | Điều 65 hiện hành, NQ 02/2018 | TANDTC tổng kết, ban hành án lệ | ? | trích đoạn |
-| 5 | Lê Tường Vy, "Thi hành án treo trong mô hình chính quyền địa phương hai cấp…", tapchitoaan.vn | bài tạp chí | NQ 02/2018 so với Luật THAHS 2025 | sửa NQ 02/2018 theo chủ thể mới | ? (sau 01/7/2026) | trích đoạn |
-| 6 | Tạp chí Tòa án, "Sửa đổi BLHS và Luật Tổ chức CQĐTHS: những vấn đề trọng tâm" | tin, bài | dự thảo chỉnh lý 416 điều | — | 17/10/2026 | trích đoạn |
-| VB | VBHN 135/VBHN-VPQH (BLHS); NQ 02/2018, 01/2022, 02/2025/NQ-HĐTP; Luật 127/2025/QH15; dự thảo BLHS (luatvietnam, "Chưa thông qua") | văn bản | — | — | — | trích |
-Nguồn học thuật đọc được: 2/5 → **cổng pha 2 CHƯA QUA**. Tạp chí Kiểm sát, Luật học, Nghiên cứu lập pháp chưa tìm.
+| # | Tác giả (năm) | Loại | Trọng tâm | Kiến nghị đã đưa ra | Đã được luật hóa? | Ngày đăng | Đã đọc |
+|---|---|---|---|---|---|---|---|
+| 1 | [CẦN KIỂM: tác giả] "Góp ý quy định về án treo trong dự thảo BLHS (sửa đổi)", lsvn.vn | bài chuyên ngành | Điều 65 dự thảo | quy định mức tối thiểu/tối đa tiền nộp; nâng thời gian thử thách; giữ giao giám sát | — | 06/10/2026 | trích đoạn |
+| 2 | [CẦN KIỂM: tác giả] "Điều kiện nộp tiền khi áp dụng án treo trong dự thảo…: công bằng, bình đẳng và kinh nghiệm quốc tế", lsvn.vn | bài chuyên ngành | bản chất pháp lý của cơ chế nộp tiền; Pháp, Đức, Bắc Âu | 2 phương án hoàn thiện | — | 23/07/2026 | trích đoạn |
+| 3 | [CẦN KIỂM: tác giả] "Bàn về quy định hồi tố cho phạm nhân khi có thay đổi về pháp luật", lsvn.vn | bài chuyên ngành | hồi tố có lợi với phạm nhân; Tây Ban Nha, Đức, Mỹ (Dorsey v. United States) | cơ chế xem xét lại bản án khi luật có lợi | — | 27/10/2025 | trích đoạn |
+| 4 | [CẦN KIỂM: tác giả] "Một số bất cập trong việc áp dụng, thi hành án treo và kiến nghị hoàn thiện", tapchitoaan.vn | bài tạp chí | Điều 65 hiện hành, NQ 02/2018 | TANDTC tổng kết, ban hành án lệ | — | ? | trích đoạn |
+| 5 | Lê Tường Vy, "Thi hành án treo trong mô hình chính quyền địa phương hai cấp…", tapchitoaan.vn | bài tạp chí | NQ 02/2018 so với Luật THAHS 2025 | sửa NQ 02/2018 theo chủ thể mới | — | ? (sau 01/7/2026) | trích đoạn |
+| 6 | Tạp chí Tòa án, "Sửa đổi BLHS và Luật Tổ chức CQĐTHS: những vấn đề trọng tâm" | tin, bài | dự thảo chỉnh lý 416 điều | — | — | 17/10/2026 | trích đoạn |
+| 7 | Nguyễn Ngọc Kiện, Hoàng Thị Hoa, Trương Thị Thu Hằng, "Một số vấn đề lý luận, pháp luật và thực tiễn áp dụng pháp luật về thi hành án treo", Tạp chí Khoa học ĐH Huế: KHXH&NV, tập 132, số 6C, tr. 05–17, DOI 10.26459/hueunijssh.v132i6C.7053 | học thuật | mục đích hình phạt và án treo; Luật THAHS 2019 | sửa Luật THAHS 2019 (vắng mặt nơi cư trú, giám sát) | **một phần thay đổi**: Luật THAHS 2019 đã hết hiệu lực 01/7/2026 | nhận 14/12/2022 / 2023 | trích đoạn |
+| 8 | Nguyễn Ngọc Kiện, Trương Thị Thu Hằng, Hồ Minh Tùng, "Một số bất cập của Luật THAHS năm 2019 về án treo và giải pháp hoàn thiện", kiemsat.vn | bài tạp chí ngành | như #7 | như #7 | như #7 | 15/5/2023 | trích đoạn |
+| VB | VBHN 135/VBHN-VPQH (BLHS); NQ 02/2018, 01/2022, 02/2025/NQ-HĐTP; Luật 127/2025/QH15; dự thảo BLHS (luatvietnam, "Chưa thông qua") | văn bản | — | — | — | — | trích |
+Nguồn học thuật đọc được: 3/5 (bổ sung #7, #8 ngày 05/11/2026); tổng 8/15 → **cổng pha 2 CHƯA QUA**. Bài #3 (LSVN 27/10/2025) xác nhận khoản 3 Điều 7 bao gồm "mở rộng các chế định có lợi (án treo…)" nhưng không bàn quy định lai → D3 vẫn qua điều kiện 3.

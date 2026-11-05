@@ -147,6 +147,15 @@ def kiem_tra(van, nop=False, an_danh=None, tieu_de_khac=None, nguyen_van=None):
                 them("han-che-chua-phan-chung", "NẶNG", _dong(van, vt_muc + m.start()),
                      f"hạn chế ({m.group(1)}) chưa có footnote, '(xem x.y.z)', 'chưa tìm thấy …' hoặc [CẦN KIỂM: phản chứng]")
 
+    # 5c. Khẳng định so sánh với quá khứ ("lần đầu", "chưa từng"…) phải có footnote ngay trong câu:
+    #     muốn nói "lần đầu" thì phải đã đọc cả văn bản cũ, không suy từ văn bản mới
+    than = re.sub(r"(?m)^\[\^[^\]]+\]:.*$", "", van)
+    for m in re.finditer(r"[^.!?\n]*\b(lần đầu|đầu tiên|chưa từng|duy nhất)\b[^.!?\n]*[.!?]?(\[\^[^\]]+\])?", than, re.I):
+        dong_chua = than[than.rfind("\n", 0, m.start()) + 1: (than.find("\n", m.end()) + 1 or len(than) + 1) - 1]
+        if not m.group(2) and "[^" not in m.group(0) and not re.search(r"\(xem (mục )?\d+(\.\d+)+", dong_chua):
+            them("khang-dinh-so-sanh-khong-nguon", "NẶNG", _dong(van, m.start()),
+                 f"câu có '{m.group(1)}' nhưng không có footnote dẫn nguồn so sánh với văn bản cũ")
+
     # 6. Trích dẫn phải có trong file nguyên văn (chống trích theo trí nhớ, sửa chữ)
     if nguyen_van is not None:
         kho = _chuan_hoa(nguyen_van)

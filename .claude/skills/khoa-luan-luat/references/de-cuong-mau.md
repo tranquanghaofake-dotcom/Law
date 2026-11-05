@@ -41,11 +41,12 @@ Biến thể so sánh: Ch.1 lý luận → Ch.2 pháp luật [nước A, B] → 
 
 ## C. Ma trận tài liệu (02-tong-quan.md)
 
-| # | Tác giả (năm) | Loại (học thuật / thực hành / văn bản / quốc tế) | Câu hỏi hoặc trọng tâm | Phương pháp | Kết luận chính | **Kiến nghị đã đưa ra** | Hạn chế, khoảng trống | **Ngày đăng** | Dùng ở mục | Đã đọc |
-|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | … | học thuật | … | phân tích luật viết | … | bổ sung định nghĩa X | chưa xét luật mới 2024 | 03/2025 | 2.1 | toàn văn |
+| # | Tác giả (năm) | Loại (học thuật / thực hành / văn bản / quốc tế) | Câu hỏi hoặc trọng tâm | Phương pháp | Kết luận chính | **Kiến nghị đã đưa ra** | **Đã được luật hóa?** | Hạn chế, khoảng trống | **Ngày nhận / ngày đăng** | Dùng ở mục | Đã đọc |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | … | học thuật | … | phân tích luật viết | … | bổ sung định nghĩa X | có: khoản 3 Điều 5 Luật … 2025 | chưa xét luật mới 2024 | 10/2024 / 03/2025 | 2.1 | toàn văn |
 
 **Kiểm trùng kiến nghị** (trước khi chốt "tính mới" ở pha 2 và trước Chương 3): so từng kiến nghị dự định với cột "Kiến nghị đã đưa ra". Trùng thì tính mới phải dời sang chỗ khác: chứng minh mới, điều kiện cụ thể hơn, dữ liệu mới, hoặc so sánh mới. Ghi rõ "khác công trình #n ở …".
+**Kiểm luật hóa**: với mỗi kiến nghị cũ, tìm xem văn bản ban hành sau ngày nhận bài của công trình đó đã tiếp thu chưa. Bài viết theo luật cũ mà luật mới đã thay thì khoảng trống thường là "đánh giá luật mới đã giải quyết được đến đâu". Ví dụ chạy thử: bài nhận 09/10/2025 kiến nghị cho phong tỏa tài sản số; Luật THADS 106/2025/QH15 (thông qua 05/12/2025) đã quy định tại Điều 67.
 
 ## D. Sổ nguồn (05-nguon/so-nguon.md)
 
