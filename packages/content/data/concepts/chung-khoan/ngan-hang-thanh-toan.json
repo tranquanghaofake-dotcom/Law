@@ -21,6 +21,31 @@
   "vốn điều lệ trên 10.000 tỷ",
   "tách biệt"
  ],
+ "memo": {
+  "hook": "Phần TIỀN của giao dịch chạy qua NGÂN HÀNG THANH TOÁN; ngân hàng thương mại phải vốn trên 10.000 TỶ.",
+  "tree": [
+   {
+    "label": "Là",
+    "children": [
+     "Ngân hàng Nhà nước",
+     "Hoặc ngân hàng thương mại"
+    ]
+   },
+   {
+    "label": "Điều kiện (thương mại)",
+    "children": [
+     "Vốn điều lệ trên 10.000 tỷ",
+     "Có lãi 02 năm gần nhất"
+    ]
+   },
+   {
+    "label": "Nhiệm vụ",
+    "children": [
+     "Thanh toán tiền giao dịch"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

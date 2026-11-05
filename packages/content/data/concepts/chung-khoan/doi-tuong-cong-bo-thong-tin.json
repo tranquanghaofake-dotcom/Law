@@ -23,6 +23,32 @@
   "người nội bộ",
   "Sở giao dịch, Tổng công ty lưu ký"
  ],
+ "memo": {
+  "hook": "Phải công bố: CÔNG TY ĐẠI CHÚNG, HẠ TẦNG thị trường, CỔ ĐÔNG LỚN 5%, NGƯỜI NỘI BỘ.",
+  "tree": [
+   {
+    "label": "Doanh nghiệp",
+    "children": [
+     "Công ty đại chúng",
+     "Tổ chức phát hành, niêm yết trái phiếu"
+    ]
+   },
+   {
+    "label": "Hạ tầng",
+    "children": [
+     "Sở giao dịch",
+     "Tổng công ty lưu ký"
+    ]
+   },
+   {
+    "label": "Cá nhân, nhóm",
+    "children": [
+     "Cổ đông lớn từ 5%",
+     "Người nội bộ"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -22,6 +22,32 @@
   "khách hàng tự quyết định",
   "nghiệp vụ chung"
  ],
+ "memo": {
+  "hook": "Tư vấn = PHÂN TÍCH + KHUYẾN NGHỊ; KHÁCH tự quyết định.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Phân tích, báo cáo",
+     "Khuyến nghị mua, bán, nắm giữ"
+    ]
+   },
+   {
+    "label": "Quyết định",
+    "children": [
+     "Khách hàng"
+    ]
+   },
+   {
+    "label": "Ai được làm",
+    "children": [
+     "Công ty chứng khoán",
+     "Công ty quản lý quỹ",
+     "Chi nhánh nước ngoài"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

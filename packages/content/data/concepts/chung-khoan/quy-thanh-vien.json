@@ -23,6 +23,37 @@
   "50 tỷ",
   "hợp đồng góp vốn"
  ],
+ "memo": {
+  "hook": "Quỹ thành viên: 2–99 nhà đầu tư CHUYÊN NGHIỆP, vốn tối thiểu 50 TỶ, không chào bán công chúng.",
+  "tree": [
+   {
+    "label": "Thành viên",
+    "children": [
+     "02 đến 99",
+     "Chỉ nhà đầu tư chuyên nghiệp"
+    ]
+   },
+   {
+    "label": "Vốn",
+    "children": [
+     "Tối thiểu 50 tỷ"
+    ]
+   },
+   {
+    "label": "Thành lập",
+    "children": [
+     "Hợp đồng góp vốn"
+    ]
+   },
+   {
+    "label": "Quản lý",
+    "children": [
+     "01 công ty quản lý quỹ",
+     "01 ngân hàng lưu ký"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

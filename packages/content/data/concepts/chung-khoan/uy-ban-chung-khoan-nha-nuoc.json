@@ -23,6 +23,26 @@
   "thanh tra, xử phạt"
  ],
  "note": "Luật 56/2024/QH15 (hiệu lực 01/01/2025) sửa điểm d khoản 1 Điều 9: Ủy ban quản lý, thanh tra, kiểm tra, giám sát cả công ty con của Sở giao dịch chứng khoán Việt Nam và của Tổng công ty lưu ký và bù trừ. Giáo trình 2021 chưa nêu công ty con.",
+ "memo": {
+  "hook": "Ủy ban = TRỌNG TÀI trực tiếp của thị trường, thuộc BỘ TÀI CHÍNH.",
+  "tree": [
+   {
+    "label": "Vị trí",
+    "children": [
+     "Thuộc Bộ Tài chính",
+     "Tham mưu Bộ trưởng"
+    ]
+   },
+   {
+    "label": "Quyền",
+    "children": [
+     "Cấp, thu hồi giấy phép",
+     "Giám sát Sở giao dịch, Tổng công ty",
+     "Thanh tra, xử phạt"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

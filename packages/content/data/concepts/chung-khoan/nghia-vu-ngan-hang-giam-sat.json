@@ -23,6 +23,32 @@
   "thu chi theo yêu cầu hợp pháp",
   "báo cáo Ủy ban"
  ],
+ "memo": {
+  "hook": "Ngân hàng giám sát: GIỮ – CHI – CANH.",
+  "tree": [
+   {
+    "label": "Giữ",
+    "children": [
+     "Lưu ký tài sản quỹ",
+     "Tách biệt với tài sản ngân hàng"
+    ]
+   },
+   {
+    "label": "Chi",
+    "children": [
+     "Thu, chi theo yêu cầu hợp pháp"
+    ]
+   },
+   {
+    "label": "Canh",
+    "children": [
+     "Giám sát tuân thủ",
+     "Đối chiếu sổ sách",
+     "Báo cáo Ủy ban"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

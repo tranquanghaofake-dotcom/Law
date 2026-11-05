@@ -22,6 +22,27 @@
   "Tòa án Việt Nam",
   "Bộ luật Dân sự"
  ],
+ "memo": {
+  "hook": "Bốn cách: THƯƠNG LƯỢNG – HÒA GIẢI – TRỌNG TÀI – TÒA ÁN; bồi thường theo BLDS.",
+  "tree": [
+   {
+    "label": "Phương thức",
+    "children": [
+     "Thương lượng",
+     "Hòa giải",
+     "Trọng tài",
+     "Tòa án Việt Nam"
+    ]
+   },
+   {
+    "label": "Bồi thường",
+    "children": [
+     "Theo thỏa thuận",
+     "Bộ luật Dân sự"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

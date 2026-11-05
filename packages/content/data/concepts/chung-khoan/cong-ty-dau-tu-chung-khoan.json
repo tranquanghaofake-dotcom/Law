@@ -22,6 +22,39 @@
   "riêng lẻ và đại chúng",
   "vốn tối thiểu 50 tỷ"
  ],
+ "memo": {
+  "hook": "Bản chất là QUỸ khoác ÁO công ty cổ phần; vốn tối thiểu 50 TỶ.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Quỹ dạng công ty cổ phần",
+     "Nhà đầu tư là cổ đông"
+    ]
+   },
+   {
+    "label": "Hình thức",
+    "children": [
+     "Riêng lẻ",
+     "Đại chúng"
+    ]
+   },
+   {
+    "label": "Điều kiện",
+    "children": [
+     "Giấy phép của Ủy ban",
+     "Vốn tối thiểu 50 tỷ"
+    ]
+   },
+   {
+    "label": "Phân biệt",
+    "children": [
+     "Công ty chứng khoán",
+     "Công ty quản lý quỹ"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

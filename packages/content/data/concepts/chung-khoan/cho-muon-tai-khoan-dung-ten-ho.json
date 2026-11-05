@@ -21,6 +21,30 @@
   "đứng tên hộ",
   "dẫn đến thao túng"
  ],
+ "memo": {
+  "hook": "Cho mượn tài khoản, đứng tên hộ bị cấm khi DẪN ĐẾN THAO TÚNG giá.",
+  "tree": [
+   {
+    "label": "Hành vi",
+    "children": [
+     "Cho mượn tài khoản",
+     "Đứng tên sở hữu hộ"
+    ]
+   },
+   {
+    "label": "Bị cấm khi",
+    "children": [
+     "Dẫn đến thao túng giá"
+    ]
+   },
+   {
+    "label": "Vai trò",
+    "children": [
+     "Che giấu chủ thể thật"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

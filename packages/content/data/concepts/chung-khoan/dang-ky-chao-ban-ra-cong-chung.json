@@ -23,6 +23,31 @@
   "30 ngày"
  ],
  "note": "Luật 56/2024/QH15 (hiệu lực 01/01/2025) bổ sung Điều 11a: cơ quan tiếp nhận chỉ xem xét tính hợp lệ của hồ sơ; tổ chức, cá nhân lập, xác nhận, tư vấn hồ sơ (kể cả kiểm toán) chịu trách nhiệm trước pháp luật về tính chính xác của hồ sơ. Giáo trình 2021 chưa có điều này.",
+ "memo": {
+  "hook": "Giấy chứng nhận đăng ký chào bán chỉ xác nhận HỒ SƠ ĐỦ, KHÔNG bảo đảm chất lượng cổ phiếu.",
+  "tree": [
+   {
+    "label": "Ai đăng ký",
+    "children": [
+     "Tổ chức phát hành",
+     "Cổ đông công ty đại chúng"
+    ]
+   },
+   {
+    "label": "Nơi đăng ký",
+    "children": [
+     "Ủy ban Chứng khoán Nhà nước"
+    ]
+   },
+   {
+    "label": "Kết quả",
+    "children": [
+     "Giấy chứng nhận đăng ký",
+     "Không bảo đảm chất lượng"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

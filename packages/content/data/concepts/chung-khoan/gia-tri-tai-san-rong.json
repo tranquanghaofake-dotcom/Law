@@ -23,6 +23,31 @@
   "giá đóng cửa",
   "dưới 10 tỷ trong 06 tháng"
  ],
+ "memo": {
+  "hook": "NAV = (tài sản − nợ) ÷ số đơn vị; công ty quản lý quỹ TÍNH, ngân hàng giám sát XÁC NHẬN.",
+  "tree": [
+   {
+    "label": "Công thức",
+    "children": [
+     "Tài sản trừ nợ",
+     "Chia số đơn vị quỹ"
+    ]
+   },
+   {
+    "label": "Kiểm soát",
+    "children": [
+     "Công ty quản lý quỹ tính",
+     "Ngân hàng giám sát xác nhận"
+    ]
+   },
+   {
+    "label": "Định giá",
+    "children": [
+     "Giá đóng cửa gần nhất"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

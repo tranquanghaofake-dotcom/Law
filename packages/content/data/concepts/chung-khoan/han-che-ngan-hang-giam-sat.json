@@ -22,6 +22,25 @@
   "không sở hữu, vay, cho vay",
   "không làm đối tác mua bán"
  ],
+ "memo": {
+  "hook": "Người GIÁM SÁT phải ĐỘC LẬP với người BỊ GIÁM SÁT.",
+  "tree": [
+   {
+    "label": "Nguyên tắc",
+    "children": [
+     "Độc lập"
+    ]
+   },
+   {
+    "label": "Không được",
+    "children": [
+     "Là người có liên quan",
+     "Sở hữu, vay, cho vay với công ty quản lý quỹ",
+     "Làm đối tác mua bán tài sản quỹ"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -21,6 +21,31 @@
   "chủ sở hữu",
   "tổ chức phát hành"
  ],
+ "memo": {
+  "hook": "Cổ phiếu = làm CHỦ một phần công ty; khác trái phiếu (làm CHỦ NỢ).",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Phần vốn cổ phần",
+     "Người sở hữu là cổ đông"
+    ]
+   },
+   {
+    "label": "Quyền",
+    "children": [
+     "Theo phần vốn",
+     "Cổ tức khi có lãi"
+    ]
+   },
+   {
+    "label": "Khác chủ nợ",
+    "children": [
+     "Không được trả lại vốn theo hạn"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

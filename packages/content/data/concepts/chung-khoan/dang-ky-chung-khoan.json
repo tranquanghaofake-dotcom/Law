@@ -23,6 +23,32 @@
   "người sở hữu",
   "đăng ký tập trung"
  ],
+ "memo": {
+  "hook": "ĐĂNG KÝ chứng khoán = ghi AI SỞ HỮU GÌ; khác ĐĂNG KÝ GIAO DỊCH (đưa lên UPCoM).",
+  "tree": [
+   {
+    "label": "Ghi nhận",
+    "children": [
+     "Tổ chức phát hành",
+     "Chứng khoán",
+     "Người sở hữu"
+    ]
+   },
+   {
+    "label": "Bắt buộc tập trung",
+    "children": [
+     "Công ty đại chúng",
+     "Tổ chức niêm yết, đăng ký giao dịch"
+    ]
+   },
+   {
+    "label": "Nơi đăng ký",
+    "children": [
+     "Tổng công ty lưu ký và bù trừ"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

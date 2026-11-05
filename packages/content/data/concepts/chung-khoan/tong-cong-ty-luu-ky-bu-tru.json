@@ -23,6 +23,27 @@
   "đăng ký, lưu ký, bù trừ, thanh toán"
  ],
  "note": "Luật 56/2024/QH15 (hiệu lực 01/01/2025) bổ sung khoản 4 Điều 55: Tổng công ty được thành lập công ty con và giao cho công ty con thực hiện một số quyền, nghĩa vụ sau khi Bộ Tài chính chấp thuận. Luật cũng thêm cụm \"và công ty con\" vào các quy định về quản lý, giám sát, tạm ngừng hoạt động (Điều 52, 68). Giáo trình 2021 chưa có.",
+ "memo": {
+  "hook": "Sở giao dịch KHỚP LỆNH; Tổng công ty lưu ký (VSDC) GHI SỔ và GIAO NHẬN.",
+  "tree": [
+   {
+    "label": "Địa vị",
+    "children": [
+     "Doanh nghiệp",
+     "Nhà nước nắm trên 50%"
+    ]
+   },
+   {
+    "label": "Việc làm",
+    "children": [
+     "Đăng ký người sở hữu",
+     "Lưu ký",
+     "Bù trừ",
+     "Thanh toán"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -24,6 +24,30 @@
   "đồng thời"
  ],
  "note": "Luật 56/2024/QH15 (hiệu lực 01/01/2025) sửa khoản 1 Điều 63: bù trừ được thực hiện qua Tổng công ty lưu ký và bù trừ HOẶC công ty con của Tổng công ty. Giáo trình 2021 chỉ nói Tổng công ty.",
+ "memo": {
+  "hook": "Khớp lệnh → BÙ TRỪ → THANH TOÁN: giao chứng khoán và trả tiền ĐỒNG THỜI.",
+  "tree": [
+   {
+    "label": "Bù trừ",
+    "children": [
+     "Xác định phải giao bao nhiêu"
+    ]
+   },
+   {
+    "label": "Thanh toán",
+    "children": [
+     "Chứng khoán: tài khoản lưu ký",
+     "Tiền: ngân hàng thanh toán"
+    ]
+   },
+   {
+    "label": "Nguyên tắc",
+    "children": [
+     "Giao và trả đồng thời"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

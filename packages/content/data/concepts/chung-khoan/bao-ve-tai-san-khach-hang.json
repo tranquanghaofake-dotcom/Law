@@ -21,6 +21,25 @@
   "không dùng trả nợ",
   "tách biệt"
  ],
+ "memo": {
+  "hook": "TÁCH BIỆT tài sản: chứng khoán lưu ký vẫn là của KHÁCH, không dùng trả nợ công ty.",
+  "tree": [
+   {
+    "label": "Nguyên tắc",
+    "children": [
+     "Tài sản của chủ sở hữu",
+     "Tách biệt"
+    ]
+   },
+   {
+    "label": "Hệ quả",
+    "children": [
+     "Không dùng trả nợ công ty",
+     "Kể cả khi phá sản"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

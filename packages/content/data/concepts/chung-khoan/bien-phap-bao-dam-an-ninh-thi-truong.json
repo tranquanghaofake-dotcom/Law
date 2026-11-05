@@ -22,6 +22,37 @@
   "cấm đảm nhiệm chức vụ",
   "phong tỏa tài khoản"
  ],
+ "memo": {
+  "hook": "Công cụ khẩn cấp: GIÁM SÁT – TẠM NGỪNG – CẤM – PHONG TỎA.",
+  "tree": [
+   {
+    "label": "Giám sát",
+    "children": [
+     "An ninh, an toàn thị trường"
+    ]
+   },
+   {
+    "label": "Xử lý sự cố",
+    "children": [
+     "Ứng phó, khắc phục"
+    ]
+   },
+   {
+    "label": "Tạm ngừng",
+    "children": [
+     "Giao dịch một mã",
+     "Sở giao dịch, Tổng công ty lưu ký"
+    ]
+   },
+   {
+    "label": "Chế tài",
+    "children": [
+     "Cấm đảm nhiệm chức vụ",
+     "Phong tỏa tài khoản"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

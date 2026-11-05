@@ -22,6 +22,26 @@
   "tạm ngừng giao dịch một chứng khoán",
   "công khai, công bằng, trật tự"
  ],
+ "memo": {
+  "hook": "Sở giao dịch vừa CHẠY CHỢ vừa GIỮ TRẬT TỰ chợ.",
+  "tree": [
+   {
+    "label": "Quyền",
+    "children": [
+     "Ban hành quy chế (Ủy ban chấp thuận)",
+     "Cảnh báo, kiểm soát, hạn chế mã",
+     "Tạm ngừng giao dịch một mã",
+     "Chấp thuận, hủy niêm yết"
+    ]
+   },
+   {
+    "label": "Nghĩa vụ",
+    "children": [
+     "Công khai, công bằng, trật tự"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

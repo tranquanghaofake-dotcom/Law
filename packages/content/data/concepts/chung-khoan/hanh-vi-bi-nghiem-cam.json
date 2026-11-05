@@ -22,6 +22,38 @@
   "thông tin sai lệch",
   "7 nhóm hành vi bị cấm"
  ],
+ "memo": {
+  "hook": "Bảy nhóm cấm: GIAN LẬN, NỘI GIÁN, THAO TÚNG, KHÔNG PHÉP, DÙNG TÀI SẢN KHÁCH, CHO MƯỢN TÀI KHOẢN…",
+  "tree": [
+   {
+    "label": "Thông tin",
+    "children": [
+     "Gian lận, lừa đảo",
+     "Thông tin sai lệch"
+    ]
+   },
+   {
+    "label": "Giao dịch",
+    "children": [
+     "Nội gián",
+     "Thao túng thị trường"
+    ]
+   },
+   {
+    "label": "Hoạt động",
+    "children": [
+     "Kinh doanh không phép",
+     "Dùng trái phép tài sản khách"
+    ]
+   },
+   {
+    "label": "Khác",
+    "children": [
+     "Cho mượn tài khoản dẫn đến thao túng"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

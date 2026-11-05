@@ -22,6 +22,30 @@
   "thành viên giao dịch đặc biệt",
   "ngân hàng thương mại"
  ],
+ "memo": {
+  "hook": "Nhà đầu tư không đặt lệnh thẳng vào Sở mà qua THÀNH VIÊN GIAO DỊCH (công ty chứng khoán).",
+  "tree": [
+   {
+    "label": "Thành viên giao dịch",
+    "children": [
+     "Công ty chứng khoán"
+    ]
+   },
+   {
+    "label": "Thành viên đặc biệt",
+    "children": [
+     "Ngân hàng thương mại…",
+     "Thường mảng trái phiếu Chính phủ"
+    ]
+   },
+   {
+    "label": "Nhà đầu tư",
+    "children": [
+     "Đặt lệnh qua thành viên"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

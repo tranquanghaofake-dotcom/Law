@@ -22,6 +22,31 @@
   "truy cứu trách nhiệm hình sự",
   "bồi thường thiệt hại"
  ],
+ "memo": {
+  "hook": "Ba trách nhiệm: HÀNH CHÍNH – HÌNH SỰ – BỒI THƯỜNG.",
+  "tree": [
+   {
+    "label": "Hành chính",
+    "children": [
+     "Ủy ban, Thanh tra xử phạt"
+    ]
+   },
+   {
+    "label": "Hình sự",
+    "children": [
+     "Tòa án",
+     "Tội công bố thông tin sai lệch",
+     "Tội sử dụng thông tin nội bộ"
+    ]
+   },
+   {
+    "label": "Dân sự",
+    "children": [
+     "Bồi thường thiệt hại"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

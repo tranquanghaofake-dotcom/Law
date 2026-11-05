@@ -21,6 +21,31 @@
   "không tiết lộ thông tin khách hàng",
   "cổ đông sáng lập 03 năm"
  ],
+ "memo": {
+  "hook": "Môi giới hứa 'LÃI 2%/tháng, KHÔNG LỖ' là TRÁI LUẬT.",
+  "tree": [
+   {
+    "label": "Không được",
+    "children": [
+     "Bảo đảm lợi nhuận, không lỗ",
+     "Tiết lộ thông tin khách hàng",
+     "Làm khách hiểu nhầm giá"
+    ]
+   },
+   {
+    "label": "Ngoại lệ",
+    "children": [
+     "Chứng khoán thu nhập cố định"
+    ]
+   },
+   {
+    "label": "Cổ đông sáng lập",
+    "children": [
+     "Hạn chế 03 năm"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

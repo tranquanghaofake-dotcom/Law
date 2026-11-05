@@ -23,6 +23,32 @@
   "bầu Ban đại diện quỹ",
   "hằng năm hoặc bất thường"
  ],
+ "memo": {
+  "hook": "Đại hội nhà đầu tư = 'ĐHĐCĐ' của quỹ: được THAY công ty quản lý quỹ và ngân hàng giám sát.",
+  "tree": [
+   {
+    "label": "Vị trí",
+    "children": [
+     "Gồm tất cả nhà đầu tư",
+     "Quyết định cao nhất"
+    ]
+   },
+   {
+    "label": "Quyền",
+    "children": [
+     "Thay công ty quản lý quỹ",
+     "Thay ngân hàng giám sát",
+     "Bầu Ban đại diện quỹ"
+    ]
+   },
+   {
+    "label": "Họp",
+    "children": [
+     "Hằng năm hoặc bất thường"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

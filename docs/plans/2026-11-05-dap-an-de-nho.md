@@ -36,9 +36,12 @@ Rút kinh nghiệm: (4) chạy vitest của một package phải đứng trong t
 | A | Thẻ đáp án gọn thêm: sơ đồ một dòng/nhánh + mẹo nhớ; còn lại gộp "Xem thêm" | xong — 94f8a98 |
 | B | Thẻ khái niệm đầu dùng sơ đồ + mẹo nhớ | xong — commit sau 94f8a98 |
 | C | Danh sách câu giọng đọc gồm đề, phương án, mẹo nhớ; chữ cái phương án thành câu riêng | xong — 9e4c603 (+11.916 câu; 20 câu cũ đổi dạng) |
-| D | memo cho 22 môn còn lại (nhiều phiên) | dở — 10/22 môn (271/690 khái niệm có memo) |
+| D | memo cho 22 môn còn lại (nhiều phiên) | xong — 690/690 khái niệm có memo |
 
 Đợt 3 — kiểm tra: `npm run ci` xanh (155 + 694); `npm run e2e` 29/29; ảnh thẻ đáp án và thẻ khái niệm 390/1280 đã xem.
 Còn memo (419 khái niệm): ngan-hang 21, thuong-mai 22, so-huu-tri-tue 23, dan-su 24, lao-dong 25, thuong-mai-1 25, dan-su-2 26, hanh-chinh 30, ly-luan-nn-pl 30, hinh-su 34, lich-su-nn-pl 59, chung-khoan 100.
 Cách làm tiếp: `python3 dump.py <môn…>` (xuất definition/plain/keywords gọn) → soạn dict → `apply.py` (kiểm ràng buộc schema, giữ thụt lề 1) → `npm run content` → commit theo môn. Hai script nằm trong scratchpad, cần chép lại nếu phiên mới (logic ở trên).
 Rút kinh nghiệm: (5) đổi chuỗi đọc của thẻ làm mất khoá mp3 cũ — luôn so danh sách câu trước/sau (`tts:texts`) khi sửa speech.ts. (6) Python: tuple một phần tử phải có dấu phẩy, `("Chưa sử dụng")` là chuỗi — hàm dựng dữ liệu nên nhận cả chuỗi. (7) Bộ chọn `.plain` trùng class của nút — test nên chọn theo thẻ (`p.plain`).
+
+Đợt 3 (tiếp, Hào: "làm tiếp"): soạn memo nốt 12 môn (Ngân hàng, Thương mại, SHTT, Dân sự, Lao động, Thương mại 1, Dân sự 2, Hành chính, Lý luận NN&PL, Hình sự, Lịch sử NN&PL, Chứng khoán) → 690/690. Diff dữ liệu chỉ thêm dòng; `npm run content` 0 lỗi.
+Rút kinh nghiệm: (8) soạn từ bản tóm tắt bị cắt (dump giới hạn ký tự) dễ thêm ý "nhớ ra" không có trong dữ liệu — đã bắt một ca (giải thể: "tại Tòa") và một ca đúng (nội gián: hình sự); lần sau với ý nằm ngoài phần đã đọc phải mở dữ liệu đầy đủ kiểm trước khi ghi.

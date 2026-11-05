@@ -22,6 +22,32 @@
   "cho khách hàng",
   "nghiệp vụ gốc"
  ],
+ "memo": {
+  "hook": "MÔI GIỚI là nghiệp vụ GỐC: làm trung gian, ăn phí, không chịu lãi lỗ thay khách.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Trung gian mua bán cho khách",
+     "Hưởng phí"
+    ]
+   },
+   {
+    "label": "Không",
+    "children": [
+     "Chịu lãi lỗ thay khách"
+    ]
+   },
+   {
+    "label": "Là điều kiện cho",
+    "children": [
+     "Tự doanh",
+     "Lưu ký",
+     "Dịch vụ trực tuyến"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

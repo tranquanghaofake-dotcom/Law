@@ -22,6 +22,32 @@
   "khoản 1 Điều 48"
  ],
  "note": "Luật 56/2024/QH15 (hiệu lực 01/01/2025) bãi bỏ khoản 3 Điều 48 Luật Chứng khoán 2019 (theo chú thích của VBHN 102/VBHN-VPQH). Đọc giáo trình 2021 phần niêm yết cần đối chiếu với Điều 48 hiện hành.",
+ "memo": {
+  "hook": "Niêm yết = LÊN SÀN CHÍNH (HOSE, HNX) khi đủ điều kiện.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Đưa chứng khoán đủ điều kiện vào giao dịch",
+     "Hệ thống cho chứng khoán niêm yết"
+    ]
+   },
+   {
+    "label": "Phải niêm yết",
+    "children": [
+     "Chứng chỉ quỹ đóng, ETF",
+     "Chứng quyền có bảo đảm",
+     "Phái sinh"
+    ]
+   },
+   {
+    "label": "Điều kiện",
+    "children": [
+     "Chính phủ quy định"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

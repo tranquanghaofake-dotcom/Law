@@ -21,6 +21,25 @@
   "không mở tài khoản ở công ty khác",
   "không vượt phạm vi ủy quyền"
  ],
+ "memo": {
+  "hook": "Người hành nghề: KHÔNG làm 2 công ty, KHÔNG mở tài khoản ở công ty KHÁC, KHÔNG vượt ỦY QUYỀN.",
+  "tree": [
+   {
+    "label": "Cấm",
+    "children": [
+     "Làm cùng lúc 02 công ty",
+     "Mở tài khoản ở công ty khác",
+     "Vượt phạm vi ủy quyền"
+    ]
+   },
+   {
+    "label": "Mục đích",
+    "children": [
+     "Chống xung đột lợi ích"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

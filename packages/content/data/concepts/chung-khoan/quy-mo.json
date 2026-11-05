@@ -22,6 +22,30 @@
   "phát hành thêm",
   "không đầu tư bất động sản"
  ],
+ "memo": {
+  "hook": "Quỹ MỞ: phải MUA LẠI theo yêu cầu (rút tiền được) theo NAV; KHÔNG đầu tư bất động sản.",
+  "tree": [
+   {
+    "label": "Đặc trưng",
+    "children": [
+     "Mua lại theo yêu cầu",
+     "Liên tục phát hành thêm"
+    ]
+   },
+   {
+    "label": "Giá",
+    "children": [
+     "Theo giá trị tài sản ròng"
+    ]
+   },
+   {
+    "label": "Hạn chế",
+    "children": [
+     "Không đầu tư bất động sản"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

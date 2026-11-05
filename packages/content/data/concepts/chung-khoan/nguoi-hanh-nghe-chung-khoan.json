@@ -21,6 +21,30 @@
   "làm việc tại tổ chức kinh doanh chứng khoán",
   "nhân danh công ty"
  ],
+ "memo": {
+  "hook": "Người hành nghề cần CẢ HAI: có CHỨNG CHỈ và đang LÀM tại tổ chức kinh doanh chứng khoán.",
+  "tree": [
+   {
+    "label": "Điều kiện",
+    "children": [
+     "Chứng chỉ do Ủy ban cấp",
+     "Làm việc tại tổ chức kinh doanh chứng khoán"
+    ]
+   },
+   {
+    "label": "Hành nghề",
+    "children": [
+     "Nhân danh công ty"
+    ]
+   },
+   {
+    "label": "Chưa phải",
+    "children": [
+     "Có chứng chỉ mà không làm đâu"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

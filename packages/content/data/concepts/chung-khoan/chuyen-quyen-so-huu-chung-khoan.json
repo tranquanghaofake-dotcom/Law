@@ -21,6 +21,30 @@
   "tài khoản lưu ký",
   "Sổ đăng ký người sở hữu"
  ],
+ "memo": {
+  "hook": "KHỚP LỆNH chưa phải thành chủ; quyền sở hữu chuyển khi GHI SỔ.",
+  "tree": [
+   {
+    "label": "Đã lưu ký",
+    "children": [
+     "Khi có bút toán ghi sổ",
+     "Trên tài khoản lưu ký"
+    ]
+   },
+   {
+    "label": "Chưa lưu ký",
+    "children": [
+     "Khi ghi Sổ đăng ký người sở hữu"
+    ]
+   },
+   {
+    "label": "Lưu ý",
+    "children": [
+     "Khớp lệnh chưa chuyển quyền"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

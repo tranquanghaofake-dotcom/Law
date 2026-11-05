@@ -22,6 +22,31 @@
   "hoàn trả khi giải thể, phá sản",
   "trừ nợ của khách hàng"
  ],
+ "memo": {
+  "hook": "Tiền, chứng khoán của bạn ở công ty chứng khoán vẫn là của BẠN; công ty phá sản thì TRẢ LẠI bạn.",
+  "tree": [
+   {
+    "label": "Gồm",
+    "children": [
+     "Tiền gửi giao dịch",
+     "Chứng khoán lưu ký"
+    ]
+   },
+   {
+    "label": "Thuộc",
+    "children": [
+     "Khách hàng"
+    ]
+   },
+   {
+    "label": "Khi phá sản",
+    "children": [
+     "Hoàn trả khách",
+     "Chỉ trừ khoản khách nợ công ty"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

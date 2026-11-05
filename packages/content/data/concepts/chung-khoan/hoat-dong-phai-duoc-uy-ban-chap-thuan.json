@@ -21,6 +21,26 @@
   "tạm ngừng trừ bất khả kháng",
   "chi nhánh, phòng giao dịch"
  ],
+ "memo": {
+  "hook": "Một số thay đổi phải xin Ủy ban CHẤP THUẬN BẰNG VĂN BẢN TRƯỚC.",
+  "tree": [
+   {
+    "label": "Phải xin trước",
+    "children": [
+     "Tạm ngừng (trừ bất khả kháng)",
+     "Chào bán, niêm yết ở nước ngoài",
+     "Đầu tư gián tiếp ra nước ngoài",
+     "Mở, đóng chi nhánh, phòng giao dịch"
+    ]
+   },
+   {
+    "label": "Hình thức",
+    "children": [
+     "Chấp thuận bằng văn bản"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

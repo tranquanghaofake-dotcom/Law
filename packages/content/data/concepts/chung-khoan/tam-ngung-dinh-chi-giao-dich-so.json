@@ -22,6 +22,31 @@
   "biến động bất thường",
   "khôi phục"
  ],
+ "memo": {
+  "hook": "ĐÓNG CỬA SÀN là quyền của ỦY BAN, không phải của Sở.",
+  "tree": [
+   {
+    "label": "Ai quyết định",
+    "children": [
+     "Ủy ban Chứng khoán Nhà nước"
+    ]
+   },
+   {
+    "label": "Căn cứ",
+    "children": [
+     "Bất khả kháng",
+     "Thị trường biến động bất thường",
+     "Bảo vệ nhà đầu tư"
+    ]
+   },
+   {
+    "label": "Sau đó",
+    "children": [
+     "Khôi phục khi khắc phục xong"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

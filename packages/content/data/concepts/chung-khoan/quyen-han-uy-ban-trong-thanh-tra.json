@@ -23,6 +23,26 @@
   "dấu hiệu vi phạm Điều 12",
   "Chủ tịch Ủy ban phê duyệt bằng văn bản"
  ],
+ "memo": {
+  "hook": "Ủy ban được xem DÒNG TIỀN ngân hàng và DỮ LIỆU CUỘC GỌI, nhưng chỉ khi có DẤU HIỆU vi phạm và Chủ tịch DUYỆT.",
+  "tree": [
+   {
+    "label": "Được yêu cầu",
+    "children": [
+     "Ngân hàng: giao dịch tài khoản",
+     "Nhà mạng: dữ liệu cuộc gọi"
+    ]
+   },
+   {
+    "label": "Điều kiện",
+    "children": [
+     "Có dấu hiệu vi phạm Điều 12",
+     "Chủ tịch Ủy ban phê duyệt",
+     "Bằng văn bản nêu rõ mục đích"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

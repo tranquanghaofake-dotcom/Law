@@ -21,6 +21,31 @@
   "cổ phiếu phổ thông",
   "giá xác định trước"
  ],
+ "memo": {
+  "hook": "Chứng quyền = QUÀ KÈM trái phiếu/cổ phiếu ưu đãi: quyền MUA cổ phiếu phổ thông GIÁ CHỐT TRƯỚC.",
+  "tree": [
+   {
+    "label": "Phát hành cùng",
+    "children": [
+     "Trái phiếu",
+     "Cổ phiếu ưu đãi"
+    ]
+   },
+   {
+    "label": "Quyền",
+    "children": [
+     "Mua cổ phiếu phổ thông",
+     "Giá xác định trước"
+    ]
+   },
+   {
+    "label": "Phân biệt",
+    "children": [
+     "Chứng quyền có bảo đảm: công ty chứng khoán phát hành"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

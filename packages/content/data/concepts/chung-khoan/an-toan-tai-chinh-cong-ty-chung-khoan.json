@@ -21,6 +21,33 @@
   "cảnh báo, kiểm soát, kiểm soát đặc biệt",
   "Bộ trưởng Bộ Tài chính quy định"
  ],
+ "memo": {
+  "hook": "Giữ tiền nhà đầu tư nên phải KHỎE tài chính; không đạt → CẢNH BÁO → KIỂM SOÁT → KIỂM SOÁT ĐẶC BIỆT.",
+  "tree": [
+   {
+    "label": "Áp dụng",
+    "children": [
+     "Công ty chứng khoán",
+     "Công ty quản lý quỹ"
+    ]
+   },
+   {
+    "label": "Chỉ tiêu",
+    "children": [
+     "Bộ trưởng Bộ Tài chính quy định",
+     "Ví dụ tỷ lệ vốn khả dụng"
+    ]
+   },
+   {
+    "label": "Không đạt",
+    "children": [
+     "Cảnh báo",
+     "Kiểm soát",
+     "Kiểm soát đặc biệt"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

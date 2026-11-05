@@ -21,6 +21,36 @@
   "niêm yết",
   "tăng vốn cần Ủy ban chấp thuận"
  ],
+ "memo": {
+  "hook": "Quỹ ĐÓNG: KHÔNG mua lại theo yêu cầu; muốn rút thì BÁN TRÊN SÀN.",
+  "tree": [
+   {
+    "label": "Đặc trưng",
+    "children": [
+     "Không mua lại theo yêu cầu"
+    ]
+   },
+   {
+    "label": "Thoát vốn",
+    "children": [
+     "Bán trên sàn",
+     "Phải niêm yết"
+    ]
+   },
+   {
+    "label": "Đầu tư",
+    "children": [
+     "Tối đa 10% vào bất động sản"
+    ]
+   },
+   {
+    "label": "Tăng vốn",
+    "children": [
+     "Cần Ủy ban chấp thuận"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

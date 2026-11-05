@@ -23,6 +23,26 @@
   "30% nhóm công ty",
   "không cho vay, bảo lãnh"
  ],
+ "memo": {
+  "hook": "Quỹ đại chúng phải ĐA DẠNG: ≤ 10% chứng khoán một tổ chức, ≤ 20% tài sản vào một tổ chức, ≤ 30% một nhóm.",
+  "tree": [
+   {
+    "label": "Giới hạn",
+    "children": [
+     "≤ 10% chứng khoán của 01 tổ chức",
+     "≤ 20% tài sản quỹ vào 01 tổ chức",
+     "≤ 30% vào một nhóm công ty"
+    ]
+   },
+   {
+    "label": "Cấm",
+    "children": [
+     "Mua chứng chỉ quỹ của chính mình",
+     "Cho vay, bảo lãnh"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

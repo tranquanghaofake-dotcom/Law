@@ -23,6 +23,32 @@
   "cố gắng tối đa",
   "không là người có liên quan"
  ],
+ "memo": {
+  "hook": "Ba mức cam kết: MUA CHẮC – MUA PHẦN THỪA – CỐ GẮNG TỐI ĐA.",
+  "tree": [
+   {
+    "label": "Mức cam kết",
+    "children": [
+     "Nhận mua để bán lại",
+     "Mua phần chưa phân phối hết",
+     "Cố gắng tối đa"
+    ]
+   },
+   {
+    "label": "Ai được làm",
+    "children": [
+     "Công ty chứng khoán được cấp phép",
+     "Đủ an toàn tài chính"
+    ]
+   },
+   {
+    "label": "Hạn chế",
+    "children": [
+     "Không là người có liên quan"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

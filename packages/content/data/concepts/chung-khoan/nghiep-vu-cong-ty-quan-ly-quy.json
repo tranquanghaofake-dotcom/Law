@@ -23,6 +23,32 @@
   "tư vấn đầu tư",
   "cấp chung"
  ],
+ "memo": {
+  "hook": "Công ty quản lý quỹ: 3 nghiệp vụ cấp CHUNG; KHÔNG được môi giới, tự doanh, bảo lãnh.",
+  "tree": [
+   {
+    "label": "Nghiệp vụ",
+    "children": [
+     "Quản lý quỹ",
+     "Quản lý danh mục",
+     "Tư vấn đầu tư"
+    ]
+   },
+   {
+    "label": "Cấp phép",
+    "children": [
+     "Chung một lần"
+    ]
+   },
+   {
+    "label": "Không được",
+    "children": [
+     "Môi giới, tự doanh",
+     "Bảo lãnh phát hành"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

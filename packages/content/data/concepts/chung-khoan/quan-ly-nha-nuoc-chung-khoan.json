@@ -21,6 +21,30 @@
   "Bộ Tài chính chịu trách nhiệm",
   "Ủy ban Chứng khoán Nhà nước"
  ],
+ "memo": {
+  "hook": "Ba tầng: CHÍNH PHỦ → BỘ TÀI CHÍNH → ỦY BAN CHỨNG KHOÁN.",
+  "tree": [
+   {
+    "label": "Chính phủ",
+    "children": [
+     "Thống nhất quản lý"
+    ]
+   },
+   {
+    "label": "Bộ Tài chính",
+    "children": [
+     "Chịu trách nhiệm trước Chính phủ"
+    ]
+   },
+   {
+    "label": "Ủy ban Chứng khoán",
+    "children": [
+     "Thuộc Bộ Tài chính",
+     "Trực tiếp quản lý, giám sát"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

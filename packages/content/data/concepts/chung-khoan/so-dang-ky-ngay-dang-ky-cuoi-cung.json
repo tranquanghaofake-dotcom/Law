@@ -21,6 +21,30 @@
   "ngày đăng ký cuối cùng",
   "quyền phát sinh"
  ],
+ "memo": {
+  "hook": "Muốn nhận cổ tức, quyền phải có tên tại NGÀY ĐĂNG KÝ CUỐI CÙNG.",
+  "tree": [
+   {
+    "label": "Sổ",
+    "children": [
+     "Tổng công ty lập, lưu giữ",
+     "Ghi người sở hữu"
+    ]
+   },
+   {
+    "label": "Ngày đăng ký cuối cùng",
+    "children": [
+     "Chốt danh sách hưởng quyền"
+    ]
+   },
+   {
+    "label": "Hệ quả",
+    "children": [
+     "Mua sau ngày không hưởng quyền: người bán hưởng"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

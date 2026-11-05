@@ -21,6 +21,30 @@
   "chủ nợ",
   "tổ chức phát hành"
  ],
+ "memo": {
+  "hook": "Trái phiếu = CHO VAY: người giữ là CHỦ NỢ, nhận lãi và gốc.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Phần nợ của tổ chức phát hành"
+    ]
+   },
+   {
+    "label": "Người giữ",
+    "children": [
+     "Chủ nợ",
+     "Nhận lãi và gốc"
+    ]
+   },
+   {
+    "label": "Không phải",
+    "children": [
+     "Đồng chủ sở hữu"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

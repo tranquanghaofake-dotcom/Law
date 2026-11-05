@@ -22,6 +22,36 @@
   "Ban đại diện quỹ",
   "thứ tự thanh toán khi giải thể"
  ],
+ "memo": {
+  "hook": "Mất một trong HAI CHÌA KHÓA mà không thay được trong 2 THÁNG thì quỹ GIẢI THỂ.",
+  "tree": [
+   {
+    "label": "Mất",
+    "children": [
+     "Công ty quản lý quỹ",
+     "Hoặc ngân hàng giám sát"
+    ]
+   },
+   {
+    "label": "Thời hạn thay thế",
+    "children": [
+     "02 tháng"
+    ]
+   },
+   {
+    "label": "Ai tìm",
+    "children": [
+     "Ban đại diện quỹ"
+    ]
+   },
+   {
+    "label": "Không thay được",
+    "children": [
+     "Giải thể quỹ"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

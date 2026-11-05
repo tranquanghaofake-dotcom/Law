@@ -21,6 +21,30 @@
   "room ngoại",
   "Chính phủ quy định chi tiết"
  ],
+ "memo": {
+  "hook": "Nhà đầu tư nước ngoài bị giới hạn ROOM sở hữu; room đầy thì không mua thêm.",
+  "tree": [
+   {
+    "label": "Giới hạn",
+    "children": [
+     "Tỷ lệ sở hữu nước ngoài",
+     "Theo công ty, ngành nghề"
+    ]
+   },
+   {
+    "label": "Quy định chi tiết",
+    "children": [
+     "Chính phủ"
+    ]
+   },
+   {
+    "label": "Hệ quả",
+    "children": [
+     "Room đầy: không mua thêm"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

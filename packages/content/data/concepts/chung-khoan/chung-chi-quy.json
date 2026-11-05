@@ -21,6 +21,25 @@
   "quỹ đầu tư chứng khoán",
   "quyền sở hữu"
  ],
+ "memo": {
+  "hook": "Chứng chỉ quỹ = phần của bạn trong RỔ TIỀN CHUNG, không phải cổ phần công ty quản lý quỹ.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Chứng khoán",
+     "Sở hữu một phần vốn góp của quỹ"
+    ]
+   },
+   {
+    "label": "Quỹ",
+    "children": [
+     "Nhiều nhà đầu tư góp",
+     "Công ty quản lý quỹ đầu tư hộ"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",
