@@ -5,7 +5,7 @@
  "term": "Mua lại doanh nghiệp",
  "definition": "Mua lại doanh nghiệp là việc một doanh nghiệp trực tiếp hoặc gián tiếp mua toàn bộ hoặc một phần vốn góp, tài sản của doanh nghiệp khác đủ để kiểm soát, chi phối doanh nghiệp hoặc một ngành, nghề của doanh nghiệp bị mua lại.",
  "plain": "Dấu hiệu: mua TRỰC TIẾP hoặc GIÁN TIẾP toàn bộ hoặc MỘT PHẦN vốn góp, tài sản — miễn là ĐỦ ĐỂ KIỂM SOÁT, CHI PHỐI doanh nghiệp hoặc một ngành, nghề của doanh nghiệp đó. Khác sáp nhập: doanh nghiệp bị mua lại VẪN TỒN TẠI. Đây là hình thức TẬP TRUNG KINH TẾ: nếu đạt ngưỡng thì phải thông báo cho Ủy ban Cạnh tranh Quốc gia trước khi thực hiện (Điều 33). Trong M&A, vấn đề tài chính: định giá doanh nghiệp, thuế chuyển nhượng vốn, kế thừa rủi ro tài chính.",
- "example": "Công ty S mua 65% vốn điều lệ của Công ty T: S kiểm soát T, T vẫn tồn tại độc lập về pháp lý — đây là mua lại doanh nghiệp.",
+ "example": "Công ty S mua 65% vốn điều lệ của Công ty T: S kiểm soát T, còn T vẫn tồn tại độc lập về pháp lý. Đây là mua lại doanh nghiệp.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 4 Điều 29 Luật Cạnh tranh 2018",
@@ -25,10 +25,13 @@
  ],
  "note": "Luật Cạnh tranh 23/2018/QH14 có hiệu lực từ 01/7/2019, thay thế Luật Cạnh tranh 2004 mà đề cương còn dẫn; chưa có văn bản sửa đổi có hiệu lực.",
  "memo": {
-  "hook": "Mua lại: ĐỦ ĐỂ KIỂM SOÁT; bên bị mua VẪN TỒN TẠI.",
+  "gist": "Một doanh nghiệp mua đủ vốn hoặc tài sản của doanh nghiệp khác để nắm quyền điều khiển; bên bị mua vẫn tồn tại.",
+  "kind": "tree",
+  "hook": "Như mua đa số cổ phần câu lạc bộ: đổi ông chủ, giữ nguyên tên đội.",
   "tree": [
    {
     "label": "Cách mua",
+    "icon": "🛒",
     "children": [
      "Trực tiếp hoặc gián tiếp",
      "Toàn bộ hoặc một phần vốn, tài sản"
@@ -36,21 +39,34 @@
    },
    {
     "label": "Ngưỡng",
+    "icon": "🎯",
     "children": [
      "Đủ kiểm soát, chi phối"
     ]
    },
    {
     "label": "Khác sáp nhập",
+    "icon": "↔️",
     "children": [
      "Bên bị mua vẫn tồn tại"
     ]
    },
    {
     "label": "Cạnh tranh",
+    "icon": "📣",
     "children": [
      "Đạt ngưỡng thì thông báo trước"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty S mua 65% vốn điều lệ của công ty T. Công ty T còn tồn tại không?",
+   "a": "Còn. T vẫn độc lập về pháp lý, chỉ bị S kiểm soát."
+  },
+  "contrast": [
+   {
+    "with": "tcdn-sap-nhap",
+    "text": "Mua lại thì bên bị mua vẫn còn; sáp nhập thì bên bị sáp nhập chấm dứt."
    }
   ]
  },

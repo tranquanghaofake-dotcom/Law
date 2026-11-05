@@ -25,10 +25,13 @@
  ],
  "note": "Luật Doanh nghiệp 59/2020/QH14 có hiệu lực từ 01/01/2021, thay thế Luật Doanh nghiệp 2014 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 03/2022/QH15 và Luật 76/2025/QH15 (hiệu lực 01/7/2025) — văn bản hợp nhất 67/VBHN-VPQH 2025.",
  "memo": {
-  "hook": "Cổ tức lấy từ LỢI NHUẬN SAU THUẾ; ba điều kiện: THUẾ – QUỸ, BÙ LỖ – TRẢ ĐỦ NỢ.",
+  "gist": "Cổ tức là lời sau thuế chia cho mỗi cổ phần; chỉ trả khi đã nộp thuế, bù lỗ và trả xong vẫn đủ nợ.",
+  "kind": "checklist",
+  "hook": "Ăn cơm phải chừa phần trả nợ: no rồi, còn dư mới chia.",
   "tree": [
    {
     "label": "Nguồn",
+    "icon": "💰",
     "children": [
      "Lợi nhuận sau thuế",
      "Không từ vốn"
@@ -36,6 +39,7 @@
    },
    {
     "label": "Điều kiện (phổ thông)",
+    "icon": "✅",
     "children": [
      "Xong nghĩa vụ thuế",
      "Đã trích quỹ, bù lỗ",
@@ -44,11 +48,22 @@
    },
    {
     "label": "Hình thức",
+    "icon": "🎁",
     "children": [
      "Tiền",
      "Cổ phần",
      "Tài sản khác"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty cổ phần có lời năm nay nhưng còn lỗ của 2 năm trước chưa bù. Có được trả cổ tức cổ phần phổ thông không?",
+   "a": "Chưa. Phải bù lỗ trước."
+  },
+  "contrast": [
+   {
+    "with": "tcdn-chia-loi-nhuan-tnhh",
+    "text": "Cổ tức dùng cho công ty cổ phần; chia lợi nhuận theo phần vốn góp dùng cho công ty trách nhiệm hữu hạn."
    }
   ]
  },

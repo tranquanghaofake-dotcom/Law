@@ -25,10 +25,13 @@
  ],
  "note": "Luật Doanh nghiệp 59/2020/QH14 có hiệu lực từ 01/01/2021, thay thế Luật Doanh nghiệp 2014 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 03/2022/QH15 và Luật 76/2025/QH15 (hiệu lực 01/7/2025) — văn bản hợp nhất 67/VBHN-VPQH 2025.",
  "memo": {
-  "hook": "Sáp nhập: bên BỊ SÁP NHẬP chấm dứt; bên NHẬN kế thừa TOÀN BỘ.",
+  "gist": "Một công ty chuyển toàn bộ tài sản, nợ, quyền vào công ty khác rồi chấm dứt; công ty nhận vẫn còn và gánh hết.",
+  "kind": "compare",
+  "hook": "Như con sông nhỏ đổ vào sông lớn: sông nhỏ mất tên, sông lớn vẫn chảy.",
   "tree": [
    {
     "label": "Bị sáp nhập",
+    "icon": "➡️",
     "children": [
      "Chuyển toàn bộ tài sản, quyền, nghĩa vụ",
      "Chấm dứt tồn tại"
@@ -36,6 +39,7 @@
    },
    {
     "label": "Nhận sáp nhập",
+    "icon": "🏢",
     "children": [
      "Vẫn tồn tại",
      "Kế thừa toàn bộ"
@@ -43,10 +47,25 @@
    },
    {
     "label": "Phân biệt",
+    "icon": "↔️",
     "children": [
      "Hợp nhất: tạo công ty mới",
      "Mua lại: bên bị mua còn tồn tại"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty N sáp nhập vào công ty P. Người lao động và khoản nợ của N đi đâu?",
+   "a": "P kế thừa toàn bộ."
+  },
+  "contrast": [
+   {
+    "with": "tcdn-hop-nhat",
+    "text": "Sáp nhập thì bên nhận vẫn còn; hợp nhất thì tạo công ty mới, các bên cũ đều mất."
+   },
+   {
+    "with": "tcdn-mua-lai-doanh-nghiep",
+    "text": "Sáp nhập thì bên bị sáp nhập chấm dứt; mua lại thì bên bị mua vẫn còn."
    }
   ]
  },

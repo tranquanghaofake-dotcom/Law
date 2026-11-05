@@ -5,7 +5,7 @@
  "term": "Hợp nhất công ty",
  "definition": "Hai hoặc một số công ty (sau đây gọi là công ty bị hợp nhất) có thể hợp nhất thành một công ty mới (sau đây gọi là công ty hợp nhất), đồng thời chấm dứt tồn tại của các công ty bị hợp nhất.",
  "plain": "Hợp nhất (consolidation): HAI hoặc MỘT SỐ công ty → MỘT công ty MỚI; TẤT CẢ công ty bị hợp nhất chấm dứt. Hợp đồng hợp nhất phải có: thủ tục, điều kiện; phương án sử dụng lao động; thời hạn, thủ tục, điều kiện chuyển đổi tài sản, phần vốn góp, cổ phần, trái phiếu (điểm a khoản 2). Công ty hợp nhất hưởng quyền, nghĩa vụ và chịu trách nhiệm về các khoản nợ của công ty bị hợp nhất.",
- "example": "Công ty Q và Công ty R hợp nhất thành Công ty QR mới: Q và R chấm dứt tồn tại, cổ phần của cổ đông Q, R được chuyển đổi thành cổ phần QR theo hợp đồng hợp nhất.",
+ "example": "Công ty Q và Công ty R hợp nhất thành một công ty mới: Q và R chấm dứt tồn tại, cổ phần của cổ đông hai bên được chuyển đổi thành cổ phần công ty mới theo hợp đồng hợp nhất.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1 Điều 200 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)",
@@ -24,10 +24,13 @@
  ],
  "note": "Luật Doanh nghiệp 59/2020/QH14 có hiệu lực từ 01/01/2021, thay thế Luật Doanh nghiệp 2014 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 03/2022/QH15 và Luật 76/2025/QH15 (hiệu lực 01/7/2025) — văn bản hợp nhất 67/VBHN-VPQH 2025.",
  "memo": {
-  "hook": "Hợp nhất: NHIỀU công ty → MỘT công ty MỚI; tất cả bên cũ chấm dứt.",
+  "gist": "Hai hay nhiều công ty gộp lại thành một công ty mới; các công ty cũ đều chấm dứt.",
+  "kind": "compare",
+  "hook": "Như hai dòng sông đổ vào hồ mới: sông cũ mất tên, hồ mới nhận hết nước.",
   "tree": [
    {
     "label": "Cơ chế",
+    "icon": "🔀",
     "children": [
      "Hai hoặc một số công ty",
      "Thành một công ty mới"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Hệ quả",
+    "icon": "📌",
     "children": [
      "Các công ty bị hợp nhất chấm dứt",
      "Công ty mới chịu mọi nợ cũ"
@@ -42,9 +46,20 @@
    },
    {
     "label": "Phân biệt",
+    "icon": "↔️",
     "children": [
      "Sáp nhập: bên nhận vẫn tồn tại"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty Q và R hợp nhất. Ai chịu các khoản nợ cũ của Q và R?",
+   "a": "Công ty mới lập ra từ hợp nhất."
+  },
+  "contrast": [
+   {
+    "with": "tcdn-sap-nhap",
+    "text": "Hợp nhất tạo công ty mới, các bên cũ đều mất; sáp nhập thì bên nhận vẫn còn."
    }
   ]
  },

@@ -24,10 +24,13 @@
  ],
  "note": "Luật Thuế TNDN 67/2025/QH15 có hiệu lực từ 01/10/2025, áp dụng từ kỳ tính thuế năm 2025, thay thế Luật 14/2008/QH12 mà đề cương còn dẫn; Điều 8, 9 không bị Luật 09/2026/QH16 sửa (đã so với văn bản hợp nhất 113/VBHN-VPQH 2026).",
  "memo": {
-  "hook": "Ghi doanh thu khi ĐƯỢC HƯỞNG, KHÔNG phân biệt đã thu tiền hay chưa.",
+  "gist": "Doanh thu tính thuế là mọi tiền bán hàng, dịch vụ mà doanh nghiệp được hưởng, dù đã thu tiền hay chưa.",
+  "kind": "tree",
+  "hook": "Giao hàng xong là ghi sổ, không chờ tiền về.",
   "tree": [
    {
     "label": "Gồm",
+    "icon": "💵",
     "children": [
      "Tiền bán hàng, gia công, dịch vụ",
      "Trợ giá, phụ thu, phụ trội"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Thời điểm",
+    "icon": "⏱️",
     "children": [
      "Khi được hưởng",
      "Không phân biệt đã thu tiền"
@@ -42,10 +46,21 @@
    },
    {
     "label": "Thu nhập chịu thuế",
+    "icon": "🧮",
     "children": [
      "Doanh thu − chi phí được trừ",
      "Cộng thu nhập khác"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty giao hàng 200 triệu tháng 12, khách hẹn trả tháng 2 năm sau. Tính vào doanh thu năm nào?",
+   "a": "Năm nay, vì đã được hưởng dù chưa thu tiền."
+  },
+  "contrast": [
+   {
+    "with": "tcdn-chi-phi-duoc-tru",
+    "text": "Doanh thu là phần cộng vào; chi phí được trừ là phần bớt đi khi tính thu nhập chịu thuế."
    }
   ]
  },

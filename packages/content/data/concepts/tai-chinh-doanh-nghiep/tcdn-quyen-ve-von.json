@@ -26,10 +26,13 @@
  ],
  "note": "Luật Doanh nghiệp 59/2020/QH14 có hiệu lực từ 01/01/2021, thay thế Luật Doanh nghiệp 2014 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 03/2022/QH15 và Luật 76/2025/QH15 (hiệu lực 01/7/2025) — văn bản hợp nhất 67/VBHN-VPQH 2025.",
  "memo": {
-  "hook": "Doanh nghiệp TỰ CHỦ: tự huy động, tự dùng vốn, được TỪ CHỐI đóng góp trái luật.",
+  "gist": "Doanh nghiệp tự chọn cách huy động và dùng vốn, tự quyết tài sản, và được từ chối đóng góp trái luật.",
+  "kind": "tree",
+  "hook": "Ví của mình thì mình cầm: ai đòi góp sai luật thì được lắc đầu.",
   "tree": [
    {
     "label": "Vốn",
+    "icon": "💵",
     "children": [
      "Chọn cách huy động",
      "Phân bổ, sử dụng"
@@ -37,21 +40,34 @@
    },
    {
     "label": "Tài sản",
+    "icon": "🏠",
     "children": [
      "Chiếm hữu, sử dụng, định đoạt"
     ]
    },
    {
     "label": "Được từ chối",
+    "icon": "✋",
     "children": [
      "Yêu cầu nguồn lực trái pháp luật"
     ]
    },
    {
     "label": "Giới hạn",
+    "icon": "🏛️",
     "children": [
      "Doanh nghiệp có vốn nhà nước"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty cổ phần chọn phát hành trái phiếu riêng lẻ thay vì vay ngân hàng. Đây là quyền gì?",
+   "a": "Quyền tự chọn cách huy động vốn."
+  },
+  "contrast": [
+   {
+    "with": "tcdn-doanh-nghiep",
+    "text": "Quyền tự chủ là doanh nghiệp được làm gì; bài doanh nghiệp nói nó là ai."
    }
   ]
  },
