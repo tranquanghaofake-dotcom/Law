@@ -23,16 +23,20 @@
   "bồi thường thiệt hại"
  ],
  "memo": {
-  "hook": "Ba trách nhiệm: HÀNH CHÍNH – HÌNH SỰ – BỒI THƯỜNG.",
+  "gist": "Vi phạm chứng khoán có thể bị xử phạt hành chính, truy cứu hình sự và phải bồi thường thiệt hại.",
+  "kind": "compare",
+  "hook": "Ba tầng trách nhiệm có thể chồng lên nhau.",
   "tree": [
    {
     "label": "Hành chính",
+    "icon": "list",
     "children": [
      "Ủy ban, Thanh tra xử phạt"
     ]
    },
    {
     "label": "Hình sự",
+    "icon": "scales",
     "children": [
      "Tòa án",
      "Tội công bố thông tin sai lệch",
@@ -41,9 +45,20 @@
    },
    {
     "label": "Dân sự",
+    "icon": "money",
     "children": [
      "Bồi thường thiệt hại"
     ]
+   }
+  ],
+  "case": {
+   "q": "Nhóm thao túng giá gây thiệt hại cho nhà đầu tư. Có thể chịu những trách nhiệm nào?",
+   "a": "Trách nhiệm hình sự và đồng thời bồi thường thiệt hại."
+  },
+  "contrast": [
+   {
+    "with": "muc-phat-tien-chung-khoan",
+    "text": "Xử lý vi phạm là các hình thức; mức phạt là con số cụ thể."
    }
   ]
  },

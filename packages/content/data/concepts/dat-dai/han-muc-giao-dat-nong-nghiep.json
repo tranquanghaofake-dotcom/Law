@@ -5,7 +5,7 @@
  "term": "Hạn mức giao đất nông nghiệp",
  "definition": "Hạn mức giao đất trồng cây hằng năm, đất nuôi trồng thủy sản, đất làm muối cho cá nhân trực tiếp sản xuất nông nghiệp được quy định như sau: a) Không quá 03 ha cho mỗi loại đất đối với tỉnh, thành phố trực thuộc trung ương thuộc khu vực Đông Nam Bộ và khu vực đồng bằng sông Cửu Long; b) Không quá 02 ha cho mỗi loại đất đối với tỉnh, thành phố trực thuộc trung ương khác.",
  "plain": "Mức: cây hằng năm, thủy sản, muối: 03 ha (Đông Nam Bộ, ĐBSCL) / 02 ha (nơi khác) MỖI LOẠI; cây lâu năm 10 ha (đồng bằng) / 30 ha (trung du, miền núi); rừng phòng hộ, rừng sản xuất là rừng trồng 30 ha mỗi loại; tổng nhiều loại cây hằng năm, thủy sản, muối không quá 05 ha. Phân biệt HẠN MỨC GIAO (Nhà nước giao không thu tiền) với HẠN MỨC NHẬN CHUYỂN QUYỀN (Điều 177: không quá 15 lần hạn mức giao).",
- "example": "Nông dân ở Đồng Tháp (ĐBSCL) được giao tối đa 03 ha đất trồng lúa (cây hằng năm) không thu tiền.",
+ "example": "Nông dân ở Đồng Tháp (đồng bằng sông Cửu Long) được giao tối đa 3 héc-ta đất trồng lúa không thu tiền.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1 Điều 176 Luật Đất đai 2024 (sửa đổi, bổ sung năm 2024, 2025)",
@@ -23,18 +23,22 @@
   "cá nhân trực tiếp sản xuất nông nghiệp"
  ],
  "memo": {
-  "hook": "Cây hằng năm, thủy sản, muối: 3 ha (Nam Bộ) / 2 ha (nơi khác) MỖI LOẠI.",
+  "gist": "Nông dân được giao đất trồng cây hằng năm, nuôi thủy sản, làm muối tối đa 3 hoặc 2 héc-ta mỗi loại, tùy vùng.",
+  "kind": "compare",
+  "hook": "Mẹo vùng: miền Nam đất rộng được ba, nơi khác được hai.",
   "tree": [
    {
     "label": "Hằng năm, thủy sản, muối",
+    "icon": "plant",
     "children": [
-     "03 ha: Đông Nam Bộ, ĐBSCL",
+     "03 ha: Đông Nam Bộ, đồng bằng sông Cửu Long",
      "02 ha: nơi khác",
      "Tổng không quá 05 ha"
     ]
    },
    {
     "label": "Cây lâu năm",
+    "icon": "plant",
     "children": [
      "10 ha đồng bằng",
      "30 ha trung du, miền núi"
@@ -42,9 +46,20 @@
    },
    {
     "label": "Phân biệt",
+    "icon": "compare",
     "children": [
      "Hạn mức nhận chuyển quyền khác"
     ]
+   }
+  ],
+  "case": {
+   "q": "Nông dân ở Đồng Tháp được giao tối đa bao nhiêu đất trồng lúa không thu tiền?",
+   "a": "3 héc-ta, vì thuộc đồng bằng sông Cửu Long."
+  },
+  "contrast": [
+   {
+    "with": "dat-su-dung-on-dinh-lau-dai",
+    "text": "Hạn mức là được giao bao nhiêu; thời hạn là được dùng bao lâu."
    }
   ]
  },

@@ -5,7 +5,7 @@
  "term": "Khởi nghĩa Hai Bà Trưng và chính quyền Trưng Vương",
  "definition": "Mùa xuân, tháng 2, vua khổ vì Thái thú Tô Định dùng pháp luật trói buộc, lại thù Định giết chồng mình, mới cùng với em gái là Nhị nổi binh đánh hãm trị sở ở châu. Định chạy về nước. Các quận Nam Hải, Cửu Chân, Nhật Nam, Hợp Phố đều hưởng ứng, lấy được 65 thành ở Lĩnh Nam, tự lập làm vua, mới xưng là họ Trưng.",
  "plain": "Năm 40, Trưng Trắc (con gái Lạc tướng Mê Linh) cùng em là Trưng Nhị khởi nghĩa, đánh đuổi Thái thú Tô Định, tự lập làm vua, đóng đô ở Mê Linh. Chính quyền tồn tại đến năm 43 thì bị Mã Viện đánh bại. Ý nghĩa pháp sử: Toàn thư nêu một nguyên nhân là Tô Định \"dùng pháp luật trói buộc\", tức pháp luật đô hộ đè nén người Việt. Sau khởi nghĩa, Mã Viện điều chỉnh việc áp dụng luật (Hậu Hán thư: luật Việt khác luật Hán hơn mười điều).",
- "example": "Khi ôn thi, nối chuỗi: Tô Định dùng pháp luật trói buộc (năm 40) → Trưng Vương xưng vương ở Mê Linh → Mã Viện đàn áp (43) → \"tâu luật Việt khác luật Hán hơn mười điều\".",
+ "example": "Khi ôn thi, nối chuỗi: Tô Định dùng pháp luật trói buộc (năm 40), Trưng Vương xưng vương ở Mê Linh, Mã Viện đàn áp (năm 43) rồi tâu luật Việt khác luật Hán hơn mười điều.",
  "source": {
   "kind": "primary",
   "cite": "Đại Việt sử ký toàn thư, Ngoại kỷ, quyển III (bản dịch Viện KHXH Việt Nam, NXB KHXH 1993), Kỷ Trưng Nữ Vương, tờ 2a–2b",
@@ -25,10 +25,13 @@
   "65 thành"
  ],
  "memo": {
-  "hook": "Năm 40: Hai Bà Trưng đuổi Tô Định — một nguyên nhân là 'dùng pháp luật TRÓI BUỘC'.",
+  "gist": "Năm 40 Hai Bà Trưng khởi nghĩa đuổi Tô Định, một phần vì chính quyền đô hộ dùng pháp luật trói buộc dân Việt.",
+  "kind": "steps",
+  "hook": "Dây trói siết quá thì đứt.",
   "tree": [
    {
     "label": "Mốc",
+    "icon": "calendar",
     "children": [
      "Năm 40",
      "Tồn tại đến năm 43"
@@ -36,6 +39,7 @@
    },
    {
     "label": "Nguyên nhân",
+    "icon": "warn",
     "children": [
      "Tô Định dùng pháp luật trói buộc",
      "Thù giết chồng"
@@ -43,10 +47,21 @@
    },
    {
     "label": "Kết quả",
+    "icon": "crown",
     "children": [
      "Đóng đô Mê Linh",
      "65 thành theo về"
     ]
+   }
+  ],
+  "case": {
+   "q": "Một nguyên nhân của khởi nghĩa Hai Bà Trưng liên quan pháp luật là gì?",
+   "a": "Tô Định dùng pháp luật trói buộc người Việt."
+  },
+  "contrast": [
+   {
+    "with": "chinh-quyen-do-ho-quan-huyen",
+    "text": "Khởi nghĩa là chống lại; châu quận là bộ máy bị chống."
    }
   ]
  },

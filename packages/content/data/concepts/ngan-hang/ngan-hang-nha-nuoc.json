@@ -26,10 +26,13 @@
  ],
  "note": "Luật Ngân hàng Nhà nước Việt Nam 46/2010/QH12 có hiệu lực từ 01/01/2011; Luật 23/2026/QH16 sửa đổi nhiều điều (Điều 4, 27, 34, 42, 44, 45, 57, 58, 62…), có hiệu lực từ 01/12/2026 — điều được trích không bị sửa.",
  "memo": {
-  "hook": "HAI vị trí: CƠ QUAN NGANG BỘ và NGÂN HÀNG TRUNG ƯƠNG.",
+  "gist": "Ngân hàng Nhà nước vừa là cơ quan ngang bộ quản lý tiền tệ, vừa là ngân hàng trung ương phát hành tiền.",
+  "kind": "compare",
+  "hook": "Một người hai vai: vừa là trọng tài, vừa là ngân hàng của các ngân hàng.",
   "tree": [
    {
     "label": "Cơ quan ngang bộ",
+    "icon": "state",
     "children": [
      "Quản lý nhà nước về tiền tệ",
      "Ngân hàng, ngoại hối"
@@ -37,11 +40,22 @@
    },
    {
     "label": "Ngân hàng trung ương",
+    "icon": "bank",
     "children": [
      "Phát hành tiền",
      "Ngân hàng của các tổ chức tín dụng",
      "Dịch vụ tiền tệ cho Chính phủ"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ngân hàng Nhà nước cho ngân hàng thương mại vay tái cấp vốn. Đây là vai trò nào?",
+   "a": "Ngân hàng trung ương, làm ngân hàng của các tổ chức tín dụng."
+  },
+  "contrast": [
+   {
+    "with": "chinh-sach-tien-te-quoc-gia",
+    "text": "Ngân hàng Nhà nước là cơ quan; chính sách tiền tệ là việc nó thực hiện."
    }
   ]
  },

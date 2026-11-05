@@ -22,10 +22,13 @@
   "thù lao ủy thác"
  ],
  "memo": {
-  "hook": "ỦY THÁC: NHÂN DANH MÌNH, theo điều kiện bên ủy thác, từng vụ việc.",
+  "gist": "Bên nhận ủy thác đứng tên mình mua bán hàng theo điều kiện bên ủy thác đặt, thường theo từng vụ việc.",
+  "kind": "tree",
+  "hook": "Như nhờ người quen mua hộ ở nước ngoài: họ đứng tên mua, mình trả công.",
   "tree": [
    {
     "label": "Dấu hiệu",
+    "icon": "doc",
     "children": [
      "Nhân danh chính mình",
      "Theo điều kiện đã thỏa thuận",
@@ -34,6 +37,7 @@
    },
    {
     "label": "Chủ thể",
+    "icon": "company",
     "children": [
      "Bên nhận là thương nhân",
      "Bên ủy thác có thể không"
@@ -41,9 +45,20 @@
    },
    {
     "label": "Hình thức",
+    "icon": "pen",
     "children": [
      "Văn bản"
     ]
+   }
+  ],
+  "case": {
+   "q": "Doanh nghiệp nhỏ ủy thác công ty X nhập máy móc. Ai đứng tên ký với nhà cung cấp nước ngoài?",
+   "a": "Công ty X, bên nhận ủy thác."
+  },
+  "contrast": [
+   {
+    "with": "dai-ly-thuong-mai",
+    "text": "Ủy thác thường theo từng vụ; đại lý làm lâu dài, thường xuyên."
    }
   ]
  },

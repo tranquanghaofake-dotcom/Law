@@ -23,10 +23,13 @@
   "thuê lại"
  ],
  "memo": {
-  "hook": "Thành người sử dụng đất khi được GIAO, THUÊ, CÔNG NHẬN, NHẬN QUYỀN hoặc THUÊ LẠI.",
+  "gist": "Người sử dụng đất là người được Nhà nước giao, cho thuê, công nhận, hoặc nhận lại quyền dùng đất từ người khác.",
+  "kind": "tree",
+  "hook": "Như vào ở một căn hộ: chủ nhà trao chìa, cho mướn, xác nhận, hay sang tay từ người trước.",
   "tree": [
    {
     "label": "Căn cứ",
+    "icon": "door",
     "children": [
      "Giao, cho thuê, công nhận",
      "Sử dụng ổn định đủ điều kiện",
@@ -36,12 +39,23 @@
    },
    {
     "label": "Các nhóm",
+    "icon": "people",
     "children": [
      "Tổ chức, cá nhân trong nước",
      "Cộng đồng dân cư, tôn giáo",
      "Người gốc Việt ở nước ngoài",
      "Tổ chức có vốn nước ngoài"
     ]
+   }
+  ],
+  "case": {
+   "q": "Anh mua lại mảnh đất của hàng xóm qua hợp đồng hợp pháp. Anh có phải người sử dụng đất không?",
+   "a": "Có, do nhận chuyển nhượng quyền sử dụng đất."
+  },
+  "contrast": [
+   {
+    "with": "so-huu-toan-dan-dat-dai",
+    "text": "Người sử dụng đất chỉ có quyền dùng; chủ sở hữu đất là toàn dân, do Nhà nước đại diện."
    }
   ]
  },

@@ -5,7 +5,7 @@
  "term": "Điều kiện và mức hưởng trợ cấp thất nghiệp",
  "definition": "Đã đóng bảo hiểm thất nghiệp từ đủ 12 tháng trở lên trong thời gian 24 tháng trước khi chấm dứt hợp đồng lao động, hợp đồng làm việc hoặc chấm dứt làm việc theo quy định của pháp luật. (…) Đã nộp đủ hồ sơ hưởng trợ cấp thất nghiệp trong thời hạn 03 tháng kể từ ngày chấm dứt hợp đồng lao động, hợp đồng làm việc hoặc chấm dứt làm việc. (…) Mức hưởng trợ cấp thất nghiệp hằng tháng bằng 60% mức bình quân tiền lương tháng đóng bảo hiểm thất nghiệp của 06 tháng đã đóng bảo hiểm thất nghiệp gần nhất trước khi chấm dứt hợp đồng lao động, hợp đồng làm việc hoặc chấm dứt làm việc nhưng tối đa không quá 05 lần mức lương tối thiểu tháng theo vùng do Chính phủ công bố được áp dụng tại tháng cuối cùng đóng bảo hiểm thất nghiệp.",
  "plain": "Bốn điều kiện (Điều 38): (a) chấm dứt HĐLĐ hợp pháp — KHÔNG được hưởng nếu người lao động đơn phương chấm dứt TRÁI PHÁP LUẬT hoặc nghỉ khi đủ điều kiện hưởng lương hưu; (b) đóng đủ 12 tháng trong 24 tháng (hợp đồng 1–12 tháng: 12 tháng trong 36 tháng); (c) nộp hồ sơ trong 03 tháng; (d) sau 10 ngày làm việc chưa có việc làm. Mức: 60% bình quân lương 6 tháng gần nhất, tối đa 5 lần lương tối thiểu vùng. Thời gian: đóng 12–36 tháng hưởng 03 tháng, thêm mỗi 12 tháng thêm 01 tháng, tối đa 12 tháng (khoản 2 Điều 39). Hưởng từ ngày làm việc thứ 11.",
- "example": "Anh G bị công ty cho thôi việc đúng luật, đã đóng 30 tháng BHTN, lương bình quân 6 tháng cuối 10 triệu: nộp hồ sơ trong 3 tháng thì được hưởng 6 triệu/tháng trong 3 tháng (nếu không vượt trần 5 lần lương tối thiểu vùng).",
+ "example": "Anh G bị cho thôi việc đúng luật, đã đóng 30 tháng bảo hiểm thất nghiệp, lương bình quân 6 tháng cuối 10 triệu: nộp hồ sơ trong 3 tháng thì được 6 triệu mỗi tháng (không vượt mức trần).",
  "source": {
   "kind": "statute",
   "cite": "Điểm b, c khoản 1 Điều 38; khoản 1 Điều 39 Luật Việc làm 2025 (74/2025/QH15)",
@@ -24,10 +24,13 @@
  ],
  "note": "Luật Việc làm 74/2025/QH15 có hiệu lực từ 01/01/2026, thay thế Luật Việc làm 38/2013/QH13 (đề cương HLU còn dẫn luật 2013).",
  "memo": {
-  "hook": "12 trong 24 tháng; nộp hồ sơ trong 3 tháng; hưởng 60%.",
+  "gist": "Mất việc đúng luật, đã đóng đủ 12 tháng trong 24 tháng, nộp hồ sơ trong 3 tháng thì nhận 60% lương bình quân.",
+  "kind": "checklist",
+  "hook": "Mẹo số: 12 trên 24, nộp trong 3, nhận 6 phần 10.",
   "tree": [
    {
     "label": "Chấm dứt hợp đồng",
+    "icon": "doc",
     "children": [
      "Hợp pháp",
      "Không: tự ý nghỉ trái luật, đủ lương hưu"
@@ -35,22 +38,35 @@
    },
    {
     "label": "Đã đóng",
+    "icon": "calendar",
     "children": [
      "Đủ 12 tháng trong 24 tháng"
     ]
    },
    {
     "label": "Hồ sơ",
+    "icon": "clock",
     "children": [
      "Nộp trong 03 tháng"
     ]
    },
    {
     "label": "Mức hưởng",
+    "icon": "money",
     "children": [
      "60% bình quân 06 tháng",
      "Tối đa 05 lần lương tối thiểu vùng"
     ]
+   }
+  ],
+  "case": {
+   "q": "Anh G tự ý bỏ việc trái luật, đã đóng 30 tháng bảo hiểm thất nghiệp. Có được trợ cấp thất nghiệp không?",
+   "a": "Không. Tự ý nghỉ việc trái luật là trường hợp bị loại, dù đã đóng đủ thời gian."
+  },
+  "contrast": [
+   {
+    "with": "bao-hiem-that-nghiep",
+    "text": "Trợ cấp thất nghiệp là khoản tiền khi mất việc; bảo hiểm thất nghiệp còn gồm cả học nghề, tìm việc, giữ việc."
    }
   ]
  },

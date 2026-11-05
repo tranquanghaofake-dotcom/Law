@@ -22,10 +22,13 @@
   "quyền sử dụng đất hợp pháp"
  ],
  "memo": {
-  "hook": "Sổ đỏ XÁC NHẬN quyền, KHÔNG TẠO RA quyền.",
+  "gist": "Giấy chứng nhận, quen gọi sổ đỏ, là giấy Nhà nước xác nhận quyền dùng đất và sở hữu nhà, công trình hợp pháp.",
+  "kind": "tree",
+  "hook": "Như giấy khai sinh: ghi nhận đứa trẻ đã có, chứ không đẻ ra đứa trẻ.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "scroll",
     "children": [
      "Chứng thư pháp lý",
      "Nhà nước xác nhận quyền hợp pháp"
@@ -33,16 +36,28 @@
    },
    {
     "label": "Vai trò",
+    "icon": "key",
     "children": [
      "Điều kiện chuyển nhượng, thế chấp"
     ]
    },
    {
     "label": "Cấp cho",
+    "icon": "people",
     "children": [
      "Người có giấy tờ",
      "Không giấy tờ nhưng dùng ổn định"
     ]
+   }
+  ],
+  "case": {
+   "q": "Gia đình có giấy giao đất trước năm 1993, dùng ổn định. Có được cấp giấy chứng nhận và phải nộp tiền không?",
+   "a": "Được cấp và không phải nộp tiền sử dụng đất."
+  },
+  "contrast": [
+   {
+    "with": "dang-ky-dat-dai",
+    "text": "Giấy chứng nhận là kết quả; đăng ký đất đai là thủ tục khai báo dẫn tới kết quả đó."
    }
   ]
  },

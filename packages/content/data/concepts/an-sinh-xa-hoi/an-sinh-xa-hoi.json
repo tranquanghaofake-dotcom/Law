@@ -5,7 +5,7 @@
  "term": "An sinh xã hội và hệ thống an sinh xã hội",
  "definition": "An sinh xã hội là sự bảo vệ của Nhà nước và xã hội đối với các thành viên của mình thông qua một hệ thống các biện pháp công cộng, nhằm giúp họ chống lại những khó khăn về kinh tế và xã hội do bị ngừng hoặc giảm thu nhập gây ra bởi ốm đau, thai sản, tai nạn lao động, thất nghiệp, tuổi già, chết, đồng thời bảo đảm chăm sóc y tế và trợ cấp cho các gia đình có con nhỏ.",
  "plain": "Định nghĩa này dựa trên cách tiếp cận của Tổ chức Lao động quốc tế (ILO), được giáo trình HLU sử dụng phổ biến. Hệ thống an sinh xã hội Việt Nam theo giáo trình gồm ba bộ phận chính: BẢO HIỂM XÃ HỘI (theo nghĩa rộng, gồm BHXH, bảo hiểm thất nghiệp, bảo hiểm y tế — có đóng góp), ƯU ĐÃI XÃ HỘI (đối với người có công) và TRỢ GIÚP XÃ HỘI (đối với người yếu thế, không cần đóng góp). Nguyên tắc thường nêu: Nhà nước bảo đảm, xã hội tham gia; công bằng, đoàn kết, chia sẻ rủi ro; mức an sinh phù hợp điều kiện kinh tế - xã hội. Hiến pháp 2013 ghi nhận quyền được bảo đảm an sinh xã hội của công dân (Điều 34).",
- "example": "Một người lao động bị tai nạn được hưởng BHXH (vì đã đóng); một thương binh hưởng trợ cấp ưu đãi (vì có công); một người khuyết tật nặng không nơi nương tựa hưởng trợ cấp xã hội (trợ giúp xã hội).",
+ "example": "Một người lao động bị tai nạn được hưởng bảo hiểm xã hội (vì đã đóng); một thương binh hưởng trợ cấp ưu đãi (vì có công); một người khuyết tật nặng không nơi nương tựa hưởng trợ cấp xã hội (trợ giúp xã hội).",
  "source": {
   "kind": "textbook",
   "cite": "Giáo trình Luật An sinh xã hội, Trường Đại học Luật Hà Nội; đề cương Luật An sinh xã hội vấn đề 1 — tóm lược quan điểm học thuật phổ biến, chưa đối chiếu nguyên văn"
@@ -23,10 +23,13 @@
   "quyền an sinh Điều 34 Hiến pháp"
  ],
  "memo": {
-  "hook": "Ba trụ: BẢO HIỂM (có đóng) – ƯU ĐÃI (người có công) – TRỢ GIÚP (không đóng).",
+  "gist": "An sinh xã hội là tấm lưới Nhà nước giăng ra đỡ người dân khi mất thu nhập vì ốm, già, tai nạn, thất nghiệp.",
+  "kind": "tree",
+  "hook": "Như cái kiềng ba chân: bảo hiểm cho người có đóng, ưu đãi cho người có công, trợ giúp cho người khó khăn.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "shield",
     "children": [
      "Bảo vệ của Nhà nước và xã hội",
      "Khi ngừng hoặc giảm thu nhập"
@@ -34,6 +37,7 @@
    },
    {
     "label": "Rủi ro",
+    "icon": "warn",
     "children": [
      "Ốm đau, thai sản, tai nạn",
      "Thất nghiệp, tuổi già, chết"
@@ -41,11 +45,22 @@
    },
    {
     "label": "Ba bộ phận",
+    "icon": "puzzle",
     "children": [
      "Bảo hiểm xã hội (có đóng góp)",
      "Ưu đãi xã hội (người có công)",
      "Trợ giúp xã hội (không đóng góp)"
     ]
+   }
+  ],
+  "case": {
+   "q": "Một người khuyết tật nặng chưa từng đi làm, không nơi nương tựa, được nhận tiền hằng tháng. Thuộc bộ phận nào của an sinh xã hội?",
+   "a": "Trợ giúp xã hội: không cần đóng góp, dành cho người yếu thế."
+  },
+  "contrast": [
+   {
+    "with": "bao-hiem-xa-hoi",
+    "text": "An sinh xã hội là cả tấm lưới; bảo hiểm xã hội chỉ là một sợi trong đó, dành cho người có đóng tiền vào quỹ."
    }
   ]
  },

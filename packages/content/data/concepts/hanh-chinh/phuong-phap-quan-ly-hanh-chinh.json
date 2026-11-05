@@ -23,10 +23,13 @@
   "phương pháp kinh tế tác động gián tiếp"
  ],
  "memo": {
-  "hook": "HÌNH THỨC = làm gì; PHƯƠNG PHÁP = tác động bằng cách nào (THUYẾT PHỤC là cơ bản).",
+  "gist": "Hình thức là cơ quan làm gì; phương pháp là tác động bằng cách nào: thuyết phục, cưỡng chế, hay đòn bẩy kinh tế.",
+  "kind": "compare",
+  "hook": "Củ cà rốt, cây gậy và lời khuyên; lời khuyên dùng trước.",
   "tree": [
    {
     "label": "Hình thức",
+    "icon": "list",
     "children": [
      "Ban hành văn bản quy phạm",
      "Ban hành văn bản áp dụng",
@@ -35,11 +38,22 @@
    },
    {
     "label": "Phương pháp",
+    "icon": "target",
     "children": [
      "Thuyết phục (cơ bản)",
      "Cưỡng chế (hỗ trợ)",
      "Kinh tế (gián tiếp)"
     ]
+   }
+  ],
+  "case": {
+   "q": "Thành phố giảm phí gửi xe ở ngoại vi để giảm ùn tắc. Đây là phương pháp gì?",
+   "a": "Phương pháp kinh tế."
+  },
+  "contrast": [
+   {
+    "with": "nguyen-tac-quan-ly-hanh-chinh",
+    "text": "Phương pháp là cách tác động; nguyên tắc là định hướng chung."
    }
   ]
  },

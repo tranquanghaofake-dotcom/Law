@@ -23,10 +23,13 @@
   "tập thể, đa số"
  ],
  "memo": {
-  "hook": "THỨ TRƯỞNG không phải thành viên Chính phủ.",
+  "gist": "Chính phủ gồm Thủ tướng, Phó Thủ tướng, Bộ trưởng và Thủ trưởng cơ quan ngang bộ; Quốc hội quyết định cơ cấu.",
+  "kind": "tree",
+  "hook": "Thứ trưởng làm trong bộ, nhưng không ngồi bàn Chính phủ.",
   "tree": [
    {
     "label": "Thành viên",
+    "icon": "people",
     "children": [
      "Thủ tướng",
      "Phó Thủ tướng",
@@ -36,16 +39,28 @@
    },
    {
     "label": "Cơ cấu, số lượng",
+    "icon": "state",
     "children": [
      "Quốc hội quyết định"
     ]
    },
    {
     "label": "Chế độ làm việc",
+    "icon": "tool",
     "children": [
      "Tập thể, quyết định theo đa số",
      "Trách nhiệm cá nhân"
     ]
+   }
+  ],
+  "case": {
+   "q": "Thứ trưởng có phải thành viên Chính phủ không?",
+   "a": "Không."
+  },
+  "contrast": [
+   {
+    "with": "chinh-phu-vi-tri",
+    "text": "Cơ cấu là ai trong Chính phủ; vị trí là Chính phủ đứng ở đâu trong bộ máy."
    }
   ]
  },

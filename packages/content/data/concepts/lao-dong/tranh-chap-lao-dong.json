@@ -23,10 +23,13 @@
   "tổ chức đại diện với nhau"
  ],
  "memo": {
-  "hook": "Tập thể chia hai: VỀ QUYỀN (hiểu luật khác nhau) và VỀ LỢI ÍCH (đòi điều kiện mới).",
+  "gist": "Mâu thuẫn về quyền, lợi ích trong quan hệ lao động; có loại cá nhân và tập thể, tập thể chia hai nhánh.",
+  "kind": "tree",
+  "hook": "Về quyền là cãi nhau về luật đã có; về lợi ích là đòi luật chơi mới.",
   "tree": [
    {
     "label": "Phạm vi",
+    "icon": "people",
     "children": [
      "Giữa các bên quan hệ lao động",
      "Giữa các tổ chức đại diện",
@@ -34,14 +37,26 @@
     ]
    },
    {
-    "label": "Cá nhân"
+    "label": "Cá nhân",
+    "icon": "person"
    },
    {
     "label": "Tập thể",
+    "icon": "scales",
     "children": [
      "Về quyền",
      "Về lợi ích"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công đoàn yêu cầu tăng lương 10% cao hơn luật. Đây là tranh chấp loại gì?",
+   "a": "Tranh chấp tập thể về lợi ích."
+  },
+  "contrast": [
+   {
+    "with": "thoi-hieu-tranh-chap-lao-dong",
+    "text": "Tranh chấp là mâu thuẫn; thời hiệu là hạn yêu cầu giải quyết."
    }
   ]
  },

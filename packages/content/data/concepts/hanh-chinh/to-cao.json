@@ -24,16 +24,20 @@
  ],
  "note": "Luật 136/2025/QH15 sửa đổi Luật Tiếp công dân, Luật Khiếu nại, Luật Tố cáo có hiệu lực từ 01/7/2026; văn bản hợp nhất đã cập nhật.",
  "memo": {
-  "hook": "TỐ CÁO: chỉ CÁ NHÂN, báo vi phạm của BẤT KỲ AI; KHIẾU NẠI: đòi quyền của MÌNH.",
+  "gist": "Cá nhân báo cho cơ quan có thẩm quyền về vi phạm pháp luật của bất kỳ ai, dù không liên quan quyền lợi mình.",
+  "kind": "tree",
+  "hook": "Tố cáo là thổi còi thay cho cả xã hội.",
   "tree": [
    {
     "label": "Chủ thể",
+    "icon": "person",
     "children": [
      "Chỉ cá nhân"
     ]
    },
    {
     "label": "Đối tượng",
+    "icon": "target",
     "children": [
      "Vi phạm của bất kỳ ai",
      "Không cần liên quan quyền mình"
@@ -41,10 +45,21 @@
    },
    {
     "label": "Hai loại",
+    "icon": "n2",
     "children": [
      "Trong nhiệm vụ, công vụ",
      "Trong quản lý nhà nước các lĩnh vực"
     ]
+   }
+  ],
+  "case": {
+   "q": "Anh C biết công chức địa chính nhận tiền làm nhanh hồ sơ cho người khác. Anh không bị thiệt hại. Có quyền tố cáo không?",
+   "a": "Có."
+  },
+  "contrast": [
+   {
+    "with": "khieu-nai",
+    "text": "Tố cáo báo vi phạm của bất kỳ ai; khiếu nại đòi quyền của mình."
    }
   ]
  },

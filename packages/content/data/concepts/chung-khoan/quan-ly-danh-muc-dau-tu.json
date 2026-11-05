@@ -22,16 +22,20 @@
   "tài sản của nhà đầu tư"
  ],
  "memo": {
-  "hook": "Quản lý danh mục = đầu tư hộ tài sản RIÊNG của TỪNG nhà đầu tư theo ỦY THÁC.",
+  "gist": "Công ty quản lý quỹ đầu tư hộ tài sản riêng của từng khách theo hợp đồng ủy thác; tài sản vẫn đứng tên khách.",
+  "kind": "compare",
+  "hook": "Một người quản gia riêng cho một gia đình.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "pen",
     "children": [
      "Ủy thác của từng nhà đầu tư"
     ]
    },
    {
     "label": "Tài sản",
+    "icon": "lock",
     "children": [
      "Vẫn của nhà đầu tư",
      "Lưu ký toàn bộ",
@@ -40,9 +44,20 @@
    },
    {
     "label": "Phân biệt",
+    "icon": "compare",
     "children": [
      "Quản lý quỹ: tiền chung"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty bảo hiểm ủy thác 1.000 tỷ cho công ty quản lý quỹ đầu tư trái phiếu. Đây là gì?",
+   "a": "Quản lý danh mục đầu tư."
+  },
+  "contrast": [
+   {
+    "with": "quan-ly-quy-dau-tu-chung-khoan",
+    "text": "Danh mục là tiền riêng từng người; quỹ là tiền chung nhiều người."
    }
   ]
  },

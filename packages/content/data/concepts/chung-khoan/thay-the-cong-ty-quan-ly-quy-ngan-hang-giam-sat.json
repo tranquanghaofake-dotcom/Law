@@ -5,7 +5,7 @@
  "term": "Mất công ty quản lý quỹ hoặc ngân hàng giám sát: thay thế hay giải thể quỹ",
  "definition": "Công ty quản lý quỹ đầu tư chứng khoán bị thu hồi Giấy phép thành lập và hoạt động kinh doanh chứng khoán hoặc bị giải thể, phá sản mà Ban đại diện quỹ đầu tư chứng khoán không xác lập được công ty quản lý quỹ đầu tư chứng khoán thay thế trong thời hạn 02 tháng kể từ ngày phát sinh sự kiện;",
  "plain": "Quỹ cần đủ \"hai chìa khóa\". Nếu mất công ty quản lý quỹ (thu hồi giấy phép, giải thể, phá sản) hoặc mất ngân hàng giám sát (thu hồi giấy chứng nhận, giải thể, phá sản, chấm dứt hợp đồng) mà không tìm được người thay thế trong 02 tháng thì quỹ phải giải thể. Khi giải thể, tiền thanh lý trả theo thứ tự: nghĩa vụ với Nhà nước, khoản phải trả cho công ty quản lý quỹ, ngân hàng giám sát và khoản khác, cuối cùng chia cho nhà đầu tư theo tỷ lệ góp.",
- "example": "Công ty quản lý quỹ L bị thu hồi giấy phép ngày 01/3. Đến 01/5 Ban đại diện quỹ vẫn chưa chọn được công ty thay thế: quỹ thuộc trường hợp giải thể; trong 30 ngày phải triệu tập Đại hội nhà đầu tư thông qua phương án giải thể.",
+ "example": "Công ty quản lý quỹ L bị thu hồi giấy phép ngày 1 tháng 3. Đến 1 tháng 5 Ban đại diện quỹ vẫn chưa chọn được công ty thay: quỹ thuộc trường hợp giải thể.",
  "source": {
   "kind": "statute",
   "cite": "Điểm c khoản 1 Điều 104 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)",
@@ -23,10 +23,13 @@
   "thứ tự thanh toán khi giải thể"
  ],
  "memo": {
-  "hook": "Mất một trong HAI CHÌA KHÓA mà không thay được trong 2 THÁNG thì quỹ GIẢI THỂ.",
+  "gist": "Mất công ty quản lý quỹ hoặc ngân hàng giám sát mà 2 tháng không tìm được người thay thì quỹ phải giải thể.",
+  "kind": "steps",
+  "hook": "Mất một trong hai chìa khóa, hai tháng không làm lại được thì đóng két.",
   "tree": [
    {
     "label": "Mất",
+    "icon": "ban",
     "children": [
      "Công ty quản lý quỹ",
      "Hoặc ngân hàng giám sát"
@@ -34,21 +37,34 @@
    },
    {
     "label": "Thời hạn thay thế",
+    "icon": "clock",
     "children": [
      "02 tháng"
     ]
    },
    {
     "label": "Ai tìm",
+    "icon": "people",
     "children": [
      "Ban đại diện quỹ"
     ]
    },
    {
     "label": "Không thay được",
+    "icon": "door",
     "children": [
      "Giải thể quỹ"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty quản lý quỹ bị thu hồi giấy phép ngày 1 tháng 3; đến 1 tháng 5 chưa chọn được công ty thay. Quỹ ra sao?",
+   "a": "Quỹ thuộc trường hợp giải thể."
+  },
+  "contrast": [
+   {
+    "with": "ngan-hang-giam-sat",
+    "text": "Bài này nói khi mất một chìa; ngân hàng giám sát là một trong hai chìa."
    }
   ]
  },

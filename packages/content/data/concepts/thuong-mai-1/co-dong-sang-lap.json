@@ -23,26 +23,41 @@
   "Đại hội đồng cổ đông chấp thuận"
  ],
  "memo": {
-  "hook": "Ít nhất 3 cổ đông sáng lập, mua ít nhất 20%, hạn chế chuyển nhượng 3 NĂM.",
+  "gist": "Công ty cổ phần mới phải có ít nhất 3 cổ đông sáng lập, cùng mua ít nhất 20% cổ phần phổ thông.",
+  "kind": "checklist",
+  "hook": "Ba người dựng nhà phải ở lại ba năm; muốn bán chỗ cho người lạ phải hỏi cả nhà.",
   "tree": [
    {
     "label": "Số lượng",
+    "icon": "people",
     "children": [
      "Ít nhất 03 (công ty mới)"
     ]
    },
    {
     "label": "Mua",
+    "icon": "cart",
     "children": [
      "Ít nhất 20% cổ phần phổ thông"
     ]
    },
    {
     "label": "Hạn chế 03 năm",
+    "icon": "lock",
     "children": [
      "Giữa sáng lập: tự do",
-     "Cho người ngoài: ĐHĐCĐ chấp thuận"
+     "Cho người ngoài: Đại hội đồng cổ đông chấp thuận"
     ]
+   }
+  ],
+  "case": {
+   "q": "Cổ đông sáng lập muốn bán cổ phần cho người ngoài sau 1 năm thành lập. Cần gì?",
+   "a": "Đại hội đồng cổ đông chấp thuận, vì còn trong 3 năm hạn chế."
+  },
+  "contrast": [
+   {
+    "with": "co-phan",
+    "text": "Cổ đông sáng lập là người lập công ty; cổ phần là các loại phần vốn."
    }
   ]
  },

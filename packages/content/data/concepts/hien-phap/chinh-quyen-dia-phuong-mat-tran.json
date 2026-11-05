@@ -24,32 +24,48 @@
   "mời dự kỳ họp"
  ],
  "memo": {
-  "hook": "Ba cơ chế: THÔNG BÁO, LẮNG NGHE, PHỐI HỢP.",
+  "gist": "Chính quyền địa phương thông báo tình hình, lắng nghe kiến nghị và phối hợp với Mặt trận Tổ quốc cùng cấp.",
+  "kind": "tree",
+  "hook": "Ba việc: kể, nghe, cùng làm.",
   "tree": [
    {
     "label": "Thông báo",
+    "icon": "announce",
     "children": [
      "Tình hình địa phương cho Mặt trận"
     ]
    },
    {
     "label": "Lắng nghe",
+    "icon": "eye",
     "children": [
      "Ý kiến, kiến nghị"
     ]
    },
    {
     "label": "Phối hợp",
+    "icon": "handshake",
     "children": [
      "Động viên Nhân dân"
     ]
    },
    {
     "label": "Mời dự",
+    "icon": "people",
     "children": [
      "Kỳ họp Hội đồng nhân dân",
      "Hội nghị Ủy ban nhân dân"
     ]
+   }
+  ],
+  "case": {
+   "q": "Kỳ họp Hội đồng nhân dân xã có mời ai phát biểu kiến nghị của cử tri?",
+   "a": "Chủ tịch Ủy ban Mặt trận Tổ quốc xã."
+  },
+  "contrast": [
+   {
+    "with": "chinh-phu-mat-tran",
+    "text": "Bài này ở cấp địa phương; bài kia ở cấp Chính phủ."
    }
   ]
  },

@@ -24,10 +24,13 @@
   "khác Bộ luật Dân sự"
  ],
  "memo": {
-  "hook": "Ba yếu tố: VI PHẠM + THIỆT HẠI THỰC + NHÂN QUẢ TRỰC TIẾP; được áp dụng CẢ phạt lẫn bồi thường.",
+  "gist": "Bên vi phạm hợp đồng phải đền thiệt hại thực tế mà vi phạm trực tiếp gây ra; có thể đòi cùng tiền phạt.",
+  "kind": "checklist",
+  "hook": "Ba mắt xích: có lỗi hẹn, có mất mát, và cái này dẫn thẳng tới cái kia.",
   "tree": [
    {
     "label": "Điều kiện",
+    "icon": "link",
     "children": [
      "Vi phạm hợp đồng",
      "Thiệt hại thực tế",
@@ -36,6 +39,7 @@
    },
    {
     "label": "Giá trị",
+    "icon": "money",
     "children": [
      "Tổn thất thực tế",
      "Khoản lợi trực tiếp bị mất"
@@ -43,6 +47,7 @@
    },
    {
     "label": "Bên yêu cầu",
+    "icon": "list",
     "children": [
      "Chứng minh tổn thất",
      "Hạn chế tổn thất"
@@ -50,9 +55,20 @@
    },
    {
     "label": "Với phạt",
+    "icon": "calc",
     "children": [
      "Áp dụng cả hai"
     ]
+   }
+  ],
+  "case": {
+   "q": "Hợp đồng có phạt 8%; hàng lỗi khiến bên mua mất đơn xuất khẩu. Bên mua đòi được những gì?",
+   "a": "Cả tiền phạt lẫn bồi thường khoản lợi bị mất, nếu chứng minh được."
+  },
+  "contrast": [
+   {
+    "with": "phat-vi-pham-ltm",
+    "text": "Bồi thường đền đúng thiệt hại thực tế; phạt vi phạm là tiền phạt đã thỏa thuận, không cần chứng minh thiệt hại."
    }
   ]
  },

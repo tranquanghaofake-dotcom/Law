@@ -24,10 +24,13 @@
   "cá nhân bằng một nửa"
  ],
  "memo": {
-  "hook": "Mức tối đa: 10% – 5% – 2 TỶ – 200 TRIỆU; cá nhân bằng MỘT NỬA.",
+  "gist": "Vi phạm cạnh tranh bị cảnh cáo hoặc phạt tiền; nặng nhất là 10% doanh thu trên thị trường liên quan.",
+  "kind": "ladder",
+  "hook": "Mẹo bậc: mười phần trăm, năm phần trăm, hai tỷ, hai trăm triệu; cá nhân chia đôi.",
   "tree": [
    {
     "label": "Hình thức chính",
+    "icon": "announce",
     "children": [
      "Cảnh cáo",
      "Phạt tiền"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Tối đa (tổ chức)",
+    "icon": "money",
     "children": [
      "Hạn chế cạnh tranh: 10% doanh thu",
      "Tập trung kinh tế: 05%",
@@ -44,9 +48,20 @@
    },
    {
     "label": "Cá nhân",
+    "icon": "person",
     "children": [
      "Bằng một nửa tổ chức"
     ]
+   }
+  ],
+  "case": {
+   "q": "Doanh nghiệp tham gia thỏa thuận ấn định giá, doanh thu năm trước 100 tỷ. Mức phạt tối đa là bao nhiêu?",
+   "a": "10 tỷ đồng, tức 10% doanh thu trên thị trường liên quan."
+  },
+  "contrast": [
+   {
+    "with": "uy-ban-canh-tranh-quoc-gia",
+    "text": "Xử lý vi phạm nói phạt gì, bao nhiêu; Ủy ban là cơ quan ra quyết định xử lý."
    }
   ]
  },

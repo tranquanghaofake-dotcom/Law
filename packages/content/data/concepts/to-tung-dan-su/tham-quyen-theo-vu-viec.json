@@ -23,10 +23,13 @@
   "bồi thường ngoài hợp đồng"
  ],
  "memo": {
-  "hook": "Thẩm quyền xét theo BA bình diện: VỤ VIỆC – CẤP – LÃNH THỔ.",
+  "gist": "Xem tranh chấp thuộc loại dân sự, hôn nhân, kinh doanh hay lao động để biết Tòa có xử và xử theo thủ tục nào.",
+  "kind": "tree",
+  "hook": "Như phân loại thư ở bưu điện: đúng ngăn thì mới tới đúng người.",
   "tree": [
    {
     "label": "Theo vụ việc",
+    "icon": "list",
     "children": [
      "Dân sự",
      "Hôn nhân gia đình",
@@ -36,6 +39,7 @@
    },
    {
     "label": "Tranh chấp dân sự",
+    "icon": "scroll",
     "children": [
      "Giao dịch, hợp đồng",
      "Thừa kế",
@@ -44,9 +48,20 @@
    },
    {
     "label": "Lưu ý",
+    "icon": "idea",
     "children": [
      "Sở hữu trí tuệ vì lợi nhuận: thương mại"
     ]
+   }
+  ],
+  "case": {
+   "q": "Các anh em tranh chấp chia di sản thừa kế. Đây là loại tranh chấp gì?",
+   "a": "Tranh chấp dân sự về thừa kế tài sản."
+  },
+  "contrast": [
+   {
+    "with": "tham-quyen-theo-cap",
+    "text": "Theo vụ việc là loại tranh chấp gì; theo cấp là tòa trên hay tòa dưới xử."
    }
   ]
  },

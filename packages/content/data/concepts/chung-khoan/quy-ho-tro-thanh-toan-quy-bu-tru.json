@@ -22,10 +22,13 @@
   "tách biệt với tài sản của Tổng công ty"
  ],
  "memo": {
-  "hook": "Hai TÚI DỰ PHÒNG để một thành viên vỡ nợ không kéo sập hệ thống.",
+  "gist": "Các thành viên góp hai quỹ dự phòng để thanh toán thay khi một thành viên tạm thiếu tiền, giữ giao dịch đúng hạn.",
+  "kind": "compare",
+  "hook": "Túi dự phòng chung để một người vấp không kéo cả đoàn ngã.",
   "tree": [
    {
     "label": "Quỹ hỗ trợ thanh toán",
+    "icon": "shield",
     "children": [
      "Thành viên lưu ký góp",
      "Thanh toán thay khi tạm mất khả năng"
@@ -33,15 +36,27 @@
    },
    {
     "label": "Quỹ bù trừ",
+    "icon": "calc",
     "children": [
      "Thành viên bù trừ góp"
     ]
    },
    {
     "label": "Tài sản",
+    "icon": "lock",
     "children": [
      "Tách biệt với Tổng công ty"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty chứng khoán tạm thiếu tiền thanh toán các lệnh mua đã khớp. Ai ứng tiền thay?",
+   "a": "Quỹ hỗ trợ thanh toán."
+  },
+  "contrast": [
+   {
+    "with": "bu-tru-thanh-toan-giao-dich",
+    "text": "Hai quỹ là lưới an toàn; bù trừ, thanh toán là quy trình được bảo vệ."
    }
   ]
  },

@@ -23,10 +23,13 @@
   "tái phạm nguy hiểm"
  ],
  "memo": {
-  "hook": "Tái phạm: CHƯA XÓA ÁN TÍCH mà lại phạm tội CỐ Ý (hoặc rất nghiêm trọng do vô ý).",
+  "gist": "Đã bị kết án, chưa được xóa án tích mà lại phạm tội cố ý, hoặc tội rất nghiêm trọng do vô ý.",
+  "kind": "compare",
+  "hook": "Vết mực cũ chưa khô mà lại làm đổ mực.",
   "tree": [
    {
     "label": "Tái phạm",
+    "icon": "cycle",
     "children": [
      "Đã bị kết án, chưa xóa án tích",
      "Lại phạm tội do cố ý",
@@ -35,10 +38,21 @@
    },
    {
     "label": "Tái phạm nguy hiểm",
+    "icon": "ban",
     "children": [
      "Án cũ và mới đều rất nghiêm trọng cố ý",
      "Đã tái phạm lại phạm tội cố ý"
     ]
+   }
+  ],
+  "case": {
+   "q": "A bị kết án trộm cắp năm 2023, chưa xóa án tích, năm 2026 cố ý gây thương tích. A thuộc trường hợp gì?",
+   "a": "Tái phạm."
+  },
+  "contrast": [
+   {
+    "with": "xoa-an-tich",
+    "text": "Tái phạm là phạm lại khi án tích chưa xóa; xóa án tích là coi như chưa bị kết án."
    }
   ]
  },

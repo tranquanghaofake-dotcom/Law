@@ -24,10 +24,13 @@
   "quản lý nền hành chính quốc gia"
  ],
  "memo": {
-  "hook": "Việc đầu tiên của Chính phủ là TỔ CHỨC THI HÀNH Hiến pháp, luật.",
+  "gist": "Chính phủ tổ chức thi hành Hiến pháp, luật; đề xuất chính sách, trình dự án luật; quản lý thống nhất mọi lĩnh vực.",
+  "kind": "tree",
+  "hook": "Việc đầu tiên của người thi hành là biến luật thành việc làm.",
   "tree": [
    {
     "label": "Thi hành",
+    "icon": "tool",
     "children": [
      "Hiến pháp, luật, nghị quyết Quốc hội",
      "Pháp lệnh, lệnh của Chủ tịch nước"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Đề xuất",
+    "icon": "idea",
     "children": [
      "Chính sách",
      "Dự án luật, ngân sách"
@@ -42,6 +46,7 @@
    },
    {
     "label": "Quản lý thống nhất",
+    "icon": "state",
     "children": [
      "Kinh tế, văn hóa, xã hội",
      "Quốc phòng, an ninh, đối ngoại",
@@ -50,10 +55,21 @@
    },
    {
     "label": "Khác",
+    "icon": "calc",
     "children": [
      "Bảo vệ quyền con người",
      "Ký điều ước nhân danh Chính phủ"
     ]
+   }
+  ],
+  "case": {
+   "q": "Quốc hội thông qua luật mới, Chính phủ ra nghị định và chỉ đạo triển khai. Đây là nhiệm vụ gì?",
+   "a": "Tổ chức thi hành luật."
+  },
+  "contrast": [
+   {
+    "with": "chinh-phu-vi-tri",
+    "text": "Nhiệm vụ là Chính phủ làm gì; vị trí là Chính phủ đứng đâu."
    }
   ]
  },

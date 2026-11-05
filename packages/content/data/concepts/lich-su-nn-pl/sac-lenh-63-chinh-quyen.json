@@ -25,32 +25,48 @@
  ],
  "note": "Văn bản đã hết hiệu lực; học để hiểu lịch sử pháp luật.",
  "memo": {
-  "hook": "Sắc lệnh 63 (22/11/1945): XÃ, TỈNH có HĐND + UBHC; HUYỆN, KỲ chỉ có UBHC.",
+  "gist": "Năm 1945, xã và tỉnh có Hội đồng nhân dân và Ủy ban hành chính; huyện và kỳ chỉ có Ủy ban.",
+  "kind": "compare",
+  "hook": "Tầng đáy và tầng trên có nghị trường; tầng giữa chỉ có người làm.",
   "tree": [
    {
     "label": "Mốc",
+    "icon": "calendar",
     "children": [
-     "22/11/1945"
+     "22 tháng 11 năm 1945"
     ]
    },
    {
     "label": "Cơ quan",
+    "icon": "state",
     "children": [
      "Hội đồng nhân dân: dân bầu",
-     "Ủy ban hành chính: HĐND bầu"
+     "Ủy ban hành chính: Hội đồng nhân dân bầu"
     ]
    },
    {
     "label": "Xã, tỉnh",
+    "icon": "village",
     "children": [
      "Có cả hai"
     ]
    },
    {
     "label": "Huyện, kỳ",
+    "icon": "company",
     "children": [
      "Chỉ có Ủy ban hành chính"
     ]
+   }
+  ],
+  "case": {
+   "q": "Năm 1946, cấp huyện có Hội đồng nhân dân không?",
+   "a": "Không, chỉ có Ủy ban hành chính."
+  },
+  "contrast": [
+   {
+    "with": "sac-lenh-13-toa-an",
+    "text": "Sắc lệnh 63 tổ chức chính quyền; Sắc lệnh 13 tổ chức tòa án."
    }
   ]
  },

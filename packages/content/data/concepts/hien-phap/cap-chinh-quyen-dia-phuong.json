@@ -24,10 +24,13 @@
  ],
  "note": "Nghị quyết 203/2025/QH15 (hiệu lực 16/6/2025) sửa khoản 2 Điều 111: bỏ cụm \"đơn vị hành chính - kinh tế đặc biệt\" (tách thành khoản 3); việc tổ chức chính quyền \"do Quốc hội quy định\" (bản 2013: \"do luật định\").",
  "memo": {
-  "hook": "Đơn vị hành chính là LÃNH THỔ; cấp chính quyền là HAI cơ quan.",
+  "gist": "Mỗi cấp chính quyền địa phương có Hội đồng nhân dân và Ủy ban nhân dân, hợp với nông thôn, đô thị, hải đảo.",
+  "kind": "tree",
+  "hook": "Đơn vị là mảnh đất; cấp chính quyền là hai người trông mảnh đất đó.",
   "tree": [
    {
     "label": "Gồm hai cơ quan",
+    "icon": "state",
     "children": [
      "Hội đồng nhân dân",
      "Ủy ban nhân dân"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Tổ chức phù hợp",
+    "icon": "village",
     "children": [
      "Nông thôn",
      "Đô thị",
@@ -43,9 +47,20 @@
    },
    {
     "label": "Ai quy định",
+    "icon": "scroll",
     "children": [
      "Quốc hội"
     ]
+   }
+  ],
+  "case": {
+   "q": "Chính quyền ở một phường gồm những cơ quan nào?",
+   "a": "Hội đồng nhân dân phường và Ủy ban nhân dân phường."
+  },
+  "contrast": [
+   {
+    "with": "don-vi-hanh-chinh-hai-cap",
+    "text": "Cấp chính quyền là hai cơ quan; đơn vị hành chính là lãnh thổ."
    }
   ]
  },

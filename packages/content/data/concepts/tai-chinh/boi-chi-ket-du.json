@@ -25,10 +25,13 @@
  ],
  "note": "Luật Ngân sách nhà nước 89/2025/QH15 có hiệu lực từ năm ngân sách 2026 (một số nội dung từ 01/7/2025), thay thế Luật Ngân sách nhà nước 83/2015/QH13 mà đề cương HLU còn dẫn (Điều 77).",
  "memo": {
-  "hook": "BỘI CHI: chi > thu (chỉ trung ương, tỉnh). KẾT DƯ: thu > chi.",
+  "gist": "Bội chi là chi nhiều hơn thu; kết dư là thu nhiều hơn chi khi hết năm; quyết toán là chốt sổ cuối năm.",
+  "kind": "compare",
+  "hook": "Như ví tiền cuối tháng: âm là thiếu, dư là còn, kiểm lại ví là chốt sổ.",
   "tree": [
    {
     "label": "Bội chi",
+    "icon": "chart",
     "children": [
      "Chi lớn hơn thu",
      "Chỉ trung ương và cấp tỉnh",
@@ -37,6 +40,7 @@
    },
    {
     "label": "Kết dư",
+    "icon": "chart",
     "children": [
      "Thu lớn hơn chi sau năm ngân sách",
      "50% quỹ dự trữ, 50% thu năm sau"
@@ -44,10 +48,21 @@
    },
    {
     "label": "Quyết toán",
+    "icon": "doc",
     "children": [
      "Khâu cuối",
-     "Quốc hội, HĐND phê chuẩn"
+     "Quốc hội, Hội đồng nhân dân phê chuẩn"
     ]
+   }
+  ],
+  "case": {
+   "q": "Năm 2026 ngân sách tỉnh A dư 100 tỷ sau khi trả nợ. Số dư dùng thế nào?",
+   "a": "Một nửa vào quỹ dự trữ tài chính tỉnh, một nửa vào thu ngân sách năm sau."
+  },
+  "contrast": [
+   {
+    "with": "du-phong-ngan-sach",
+    "text": "Kết dư là tiền còn lại sau năm; dự phòng là khoản để sẵn từ đầu năm cho việc bất ngờ."
    }
   ]
  },

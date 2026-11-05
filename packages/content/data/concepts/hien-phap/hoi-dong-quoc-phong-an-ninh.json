@@ -22,10 +22,13 @@
   "tình trạng chiến tranh"
  ],
  "memo": {
-  "hook": "Chủ tịch nước làm Chủ tịch; làm việc TẬP THỂ.",
+  "gist": "Do Chủ tịch nước đứng đầu, làm việc tập thể, trình quyết định tình trạng chiến tranh khi Quốc hội không họp được.",
+  "kind": "tree",
+  "hook": "Bàn tròn quốc phòng có Chủ tịch nước ngồi ghế đầu.",
   "tree": [
    {
     "label": "Thành phần",
+    "icon": "people",
     "children": [
      "Chủ tịch, Phó Chủ tịch, Ủy viên",
      "Quốc hội phê chuẩn theo đề nghị Chủ tịch nước"
@@ -33,16 +36,28 @@
    },
    {
     "label": "Làm việc",
+    "icon": "vote",
     "children": [
      "Tập thể, quyết định theo đa số"
     ]
    },
    {
     "label": "Nhiệm vụ",
+    "icon": "conflict",
     "children": [
      "Trình quyết định tình trạng chiến tranh",
      "Động viên lực lượng bảo vệ Tổ quốc"
     ]
+   }
+  ],
+  "case": {
+   "q": "Đất nước bị xâm lược, Quốc hội không thể họp. Hội đồng quốc phòng và an ninh làm gì?",
+   "a": "Trình Ủy ban thường vụ Quốc hội quyết định tình trạng chiến tranh."
+  },
+  "contrast": [
+   {
+    "with": "chu-tich-nuoc-quoc-phong",
+    "text": "Hội đồng là cơ quan tập thể; Chủ tịch nước là người đứng đầu."
    }
   ]
  },

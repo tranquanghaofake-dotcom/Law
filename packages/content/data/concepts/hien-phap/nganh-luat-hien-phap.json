@@ -23,27 +23,42 @@
  ],
  "note": "Thẻ dạng tóm lược quan điểm học thuật, chưa đối chiếu nguyên văn giáo trình; cần Hào đối chiếu trang 1–9 của sách.",
  "memo": {
-  "hook": "Phân biệt NGÀNH LUẬT – KHOA HỌC – MÔN HỌC.",
+  "gist": "Ngành luật Hiến pháp là ngành luật chủ đạo, gồm các quy phạm về chế độ chính trị, quyền con người, bộ máy nhà nước.",
+  "kind": "tree",
+  "hook": "Ngành luật rộng hơn cuốn Hiến pháp: nhiều luật tổ chức cũng thuộc ngành này.",
   "tree": [
    {
     "label": "Vị trí",
+    "icon": "top",
     "children": [
      "Ngành luật chủ đạo"
     ]
    },
    {
     "label": "Điều chỉnh",
+    "icon": "book",
     "children": [
      "Quan hệ xã hội cơ bản, quan trọng nhất"
     ]
    },
    {
     "label": "Phân biệt",
+    "icon": "compare",
     "children": [
      "Ngành luật: hệ thống quy phạm",
      "Khoa học: hệ thống tri thức",
      "Môn học: chương trình đào tạo"
     ]
+   }
+  ],
+  "case": {
+   "q": "Luật Tổ chức Quốc hội có chứa quy phạm luật Hiến pháp không?",
+   "a": "Có, dù không phải văn bản Hiến pháp."
+  },
+  "contrast": [
+   {
+    "with": "hien-phap",
+    "text": "Ngành luật là cả nhóm quy phạm; Hiến pháp chỉ là một văn bản trong đó."
    }
   ]
  },

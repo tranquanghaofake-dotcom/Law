@@ -24,10 +24,13 @@
  ],
  "note": "Luật Quản lý thuế 108/2025/QH15 có hiệu lực từ 01/7/2026 (Điều 13 và hóa đơn điện tử hộ kinh doanh từ 01/01/2026), thay thế Luật Quản lý thuế 38/2019/QH14.",
  "memo": {
-  "hook": "TỰ KHAI – TỰ TÍNH – TỰ NỘP; bản chất giao dịch quyết định thuế.",
+  "gist": "Người nộp thuế tự khai, tự tính, tự nộp; cơ quan thuế xét theo bản chất giao dịch, không theo tên gọi.",
+  "kind": "tree",
+  "hook": "Như đề thi tự luận: tự làm bài, nhưng giám khảo chấm theo nội dung chứ không theo tiêu đề.",
   "tree": [
    {
     "label": "Nguyên tắc",
+    "icon": "scales",
     "children": [
      "Công khai, minh bạch, bình đẳng",
      "Người nộp thuế là trung tâm"
@@ -35,22 +38,35 @@
    },
    {
     "label": "Người nộp thuế",
+    "icon": "person",
     "children": [
      "Tự khai, tự tính, tự nộp"
     ]
    },
    {
     "label": "Xác định nghĩa vụ",
+    "icon": "search",
     "children": [
      "Theo bản chất giao dịch"
     ]
    },
    {
     "label": "Luật 2025",
+    "icon": "new",
     "children": [
      "Phân nhóm người nộp thuế",
      "Quản lý theo rủi ro"
     ]
+   }
+  ],
+  "case": {
+   "q": "Một công ty ký hợp đồng gọi là \"tư vấn\" nhưng thực chất là chuyển giá. Cơ quan thuế tính thuế theo gì?",
+   "a": "Theo bản chất giao dịch, không theo tên gọi hợp đồng."
+  },
+  "contrast": [
+   {
+    "with": "thue",
+    "text": "Nguyên tắc quản lý thuế là cách thu thuế; thuế là chính khoản phải nộp."
    }
   ]
  },

@@ -23,10 +23,13 @@
   "vốn tối thiểu 50 tỷ"
  ],
  "memo": {
-  "hook": "Bản chất là QUỸ khoác ÁO công ty cổ phần; vốn tối thiểu 50 TỶ.",
+  "gist": "Quỹ được tổ chức như công ty cổ phần, nhà đầu tư là cổ đông, phải có giấy phép và vốn tối thiểu 50 tỷ.",
+  "kind": "tree",
+  "hook": "Như rổ tiền chung được khoác thêm bộ áo pháp nhân.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "company",
     "children": [
      "Quỹ dạng công ty cổ phần",
      "Nhà đầu tư là cổ đông"
@@ -34,6 +37,7 @@
    },
    {
     "label": "Hình thức",
+    "icon": "compare",
     "children": [
      "Riêng lẻ",
      "Đại chúng"
@@ -41,17 +45,29 @@
    },
    {
     "label": "Điều kiện",
+    "icon": "scroll",
     "children": [
      "Giấy phép của Ủy ban",
-     "Vốn tối thiểu 50 tỷ"
+     "Vốn thực góp tối thiểu 50 tỷ (Nghị định 155/2020)"
     ]
    },
    {
     "label": "Phân biệt",
+    "icon": "compare",
     "children": [
      "Công ty chứng khoán",
      "Công ty quản lý quỹ"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty cổ phần được cấp phép, huy động 80 tỷ chỉ để đầu tư cổ phiếu. Đây là gì?",
+   "a": "Công ty đầu tư chứng khoán."
+  },
+  "contrast": [
+   {
+    "with": "quy-dau-tu-chung-khoan",
+    "text": "Công ty đầu tư là quỹ có pháp nhân dạng công ty; quỹ thông thường không có pháp nhân, do công ty quản lý quỹ điều hành."
    }
   ]
  },

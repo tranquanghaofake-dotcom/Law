@@ -25,10 +25,13 @@
  ],
  "note": "Luật Đầu tư 143/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Đầu tư 61/2020/QH14 mà đề cương HLU 2021 còn dẫn (khoản 4 Điều 51). Luật 24/2026/QH16 sửa đổi có hiệu lực từ 01/3/2027 (riêng một phần Điều 6 từ 01/01/2027), chỉ sửa Điều 6 và Phụ lục IV, không sửa điều được trích — văn bản hợp nhất 142/2026/VBHN-LQ-VPQH.",
  "memo": {
-  "hook": "Ba loại: TRONG NƯỚC – NƯỚC NGOÀI – TỔ CHỨC CÓ VỐN NƯỚC NGOÀI.",
+  "gist": "Nhà đầu tư là người hoặc tổ chức bỏ vốn làm ăn, gồm ba nhóm: trong nước, nước ngoài, tổ chức có vốn nước ngoài.",
+  "kind": "tree",
+  "hook": "Ba màu thẻ: xanh cho người trong nước, đỏ cho người ngoài, vàng cho nhà có khách góp vốn.",
   "tree": [
    {
     "label": "Trong nước",
+    "icon": "flag",
     "children": [
      "Cá nhân quốc tịch Việt Nam",
      "Tổ chức không có thành viên nước ngoài"
@@ -36,21 +39,34 @@
    },
    {
     "label": "Nước ngoài",
+    "icon": "globe",
     "children": [
      "Cá nhân, tổ chức nước ngoài"
     ]
    },
    {
     "label": "Tổ chức có vốn nước ngoài",
+    "icon": "puzzle",
     "children": [
      "Có thành viên, cổ đông nước ngoài"
     ]
    },
    {
     "label": "Ý nghĩa",
+    "icon": "pin",
     "children": [
      "Quyết định thủ tục"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty lập tại Singapore mua cổ phần công ty Việt Nam. Nó là loại nhà đầu tư nào?",
+   "a": "Nhà đầu tư nước ngoài."
+  },
+  "contrast": [
+   {
+    "with": "ldt-nha-dau-tu-nuoc-ngoai",
+    "text": "Nhà đầu tư là cả ba nhóm; nhà đầu tư nước ngoài chỉ là một nhóm."
    }
   ]
  },

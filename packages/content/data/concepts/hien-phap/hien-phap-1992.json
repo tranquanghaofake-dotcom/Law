@@ -25,16 +25,20 @@
  ],
  "note": "Hiến pháp đã hết hiệu lực; học để hiểu lịch sử lập hiến, không áp dụng như luật hiện hành. Nghị quyết 51/2001/QH10 sửa đổi, bổ sung một số điều; câu chữ trích ở đây là bản gốc năm 1992.",
  "memo": {
-  "hook": "Hiến pháp ĐỔI MỚI: kinh tế hàng hóa nhiều thành phần.",
+  "gist": "Hiến pháp 1992 của thời Đổi mới: kinh tế nhiều thành phần, lần đầu dùng cụm quyền con người, khôi phục Chủ tịch nước.",
+  "kind": "tree",
+  "hook": "Bản hiến pháp mở cửa cho kinh tế tư nhân.",
   "tree": [
    {
     "label": "Thông qua",
+    "icon": "calendar",
     "children": [
      "15/4/1992"
     ]
    },
    {
     "label": "Điểm mới",
+    "icon": "new",
     "children": [
      "Kinh tế hàng hóa nhiều thành phần",
      "Lần đầu dùng quyền con người",
@@ -43,15 +47,27 @@
    },
    {
     "label": "Sửa đổi 2001",
+    "icon": "pen",
     "children": [
      "Nhà nước pháp quyền xã hội chủ nghĩa"
     ]
    },
    {
     "label": "Hết hiệu lực",
+    "icon": "pause",
     "children": [
      "01/01/2014"
     ]
+   }
+  ],
+  "case": {
+   "q": "Doanh nghiệp tư nhân được phát triển hợp hiến từ bản Hiến pháp nào?",
+   "a": "Hiến pháp 1992."
+  },
+  "contrast": [
+   {
+    "with": "hien-phap-1980",
+    "text": "1992 mở ra kinh tế nhiều thành phần; 1980 theo kế hoạch hóa tập trung."
    }
   ]
  },

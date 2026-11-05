@@ -5,7 +5,7 @@
  "term": "Chuẩn bị phạm tội",
  "definition": "Chuẩn bị phạm tội là tìm kiếm, sửa soạn công cụ, phương tiện hoặc tạo ra những điều kiện khác để thực hiện tội phạm hoặc thành lập, tham gia nhóm tội phạm, trừ trường hợp thành lập hoặc tham gia nhóm tội phạm quy định tại Điều 109, điểm a khoản 2 Điều 113 hoặc điểm a khoản 2 Điều 299 của Bộ luật này.",
  "plain": "Hành vi chuẩn bị: TÌM KIẾM, SỬA SOẠN công cụ, phương tiện, TẠO ĐIỀU KIỆN khác, hoặc THÀNH LẬP, THAM GIA NHÓM TỘI PHẠM. Không phải mọi chuẩn bị đều bị xử lý: người từ đủ 16 tuổi chỉ chịu TNHS khi chuẩn bị các tội liệt kê ở khoản 2 (như giết người 123, cố ý gây thương tích 134, cướp 168, bắt cóc nhằm chiếm đoạt tài sản 169…); người từ đủ 14 đến dưới 16 chỉ khi chuẩn bị tội giết người (123), cướp tài sản (168) (khoản 3).",
- "example": "A mua dao, theo dõi giờ đi làm của B để giết B nhưng bị phát hiện trước khi ra tay: A chuẩn bị phạm tội giết người, phải chịu TNHS.",
+ "example": "A mua dao, theo dõi giờ đi làm của B để giết B nhưng bị phát hiện trước khi ra tay: A chuẩn bị phạm tội giết người, phải chịu trách nhiệm hình sự.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1 Điều 14 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)",
@@ -24,10 +24,13 @@
  ],
  "note": "Điều 14 được sửa đổi, bổ sung bởi Luật 12/2017/QH14 (hiệu lực 01/01/2018); câu chữ trên theo VBHN 135/VBHN-VPQH 2025.",
  "memo": {
-  "hook": "Chuẩn bị: TÌM, SỬA SOẠN công cụ; chỉ bị xử với các tội LIỆT KÊ.",
+  "gist": "Tìm kiếm, sửa soạn công cụ hay tạo điều kiện để phạm tội; chỉ bị xử với các tội luật liệt kê.",
+  "kind": "tree",
+  "hook": "Mài dao chưa đâm vẫn có thể có tội, nếu là tội nặng luật gọi tên.",
   "tree": [
    {
     "label": "Hành vi",
+    "icon": "conflict",
     "children": [
      "Tìm kiếm, sửa soạn công cụ",
      "Tạo điều kiện khác",
@@ -36,10 +39,21 @@
    },
    {
     "label": "Chịu trách nhiệm",
+    "icon": "scales",
     "children": [
      "Chỉ tội được liệt kê",
      "Theo độ tuổi"
     ]
+   }
+  ],
+  "case": {
+   "q": "A mua dao, theo dõi giờ đi làm của B để giết B, bị phát hiện trước khi ra tay. A có phải chịu trách nhiệm không?",
+   "a": "Có, chuẩn bị phạm tội giết người."
+  },
+  "contrast": [
+   {
+    "with": "pham-toi-chua-dat",
+    "text": "Chuẩn bị là chưa bắt đầu thực hiện; chưa đạt là đã bắt đầu nhưng không làm xong."
    }
   ]
  },

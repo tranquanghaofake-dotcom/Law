@@ -5,7 +5,7 @@
  "term": "Điều kiện chia lợi nhuận của công ty TNHH hai thành viên trở lên",
  "definition": "Công ty chỉ được chia lợi nhuận cho các thành viên sau khi đã hoàn thành nghĩa vụ thuế và các nghĩa vụ tài chính khác theo quy định của pháp luật, bảo đảm thanh toán đủ các khoản nợ và nghĩa vụ tài sản khác đến hạn trả sau khi chia lợi nhuận.",
  "plain": "Hai điều kiện: (1) xong NGHĨA VỤ THUẾ và nghĩa vụ tài chính khác; (2) SAU KHI CHIA vẫn TRẢ ĐỦ nợ, nghĩa vụ tài sản đến hạn. Lợi nhuận chia theo TỶ LỆ PHẦN VỐN GÓP. So sánh công ty cổ phần (Điều 135): thêm điều kiện trích lập quỹ, bù lỗ trước đó. Vi phạm: thành viên phải hoàn trả số đã nhận (Điều 70 — thu hồi phần vốn góp đã hoàn trả hoặc lợi nhuận đã chia).",
- "example": "Công ty TNHH K chia 2 tỷ đồng lợi nhuận cho thành viên, sau đó không trả được khoản nợ nhà cung cấp đến hạn: việc chia lợi nhuận vi phạm Điều 69.",
+ "example": "Công ty trách nhiệm hữu hạn K chia 2 tỷ đồng lợi nhuận cho thành viên, sau đó không trả được nợ nhà cung cấp đến hạn: việc chia lợi nhuận vi phạm Điều 69.",
  "source": {
   "kind": "statute",
   "cite": "Điều 69 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)",
@@ -24,10 +24,13 @@
  ],
  "note": "Luật Doanh nghiệp 59/2020/QH14 có hiệu lực từ 01/01/2021, thay thế Luật Doanh nghiệp 2014 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 03/2022/QH15 và Luật 76/2025/QH15 (hiệu lực 01/7/2025) — văn bản hợp nhất 67/VBHN-VPQH 2025.",
  "memo": {
-  "hook": "Chia lợi nhuận SAU KHI xong THUẾ và vẫn TRẢ ĐỦ NỢ.",
+  "gist": "Công ty chỉ được chia lời cho thành viên sau khi nộp đủ thuế và chia xong vẫn trả đủ nợ đến hạn.",
+  "kind": "checklist",
+  "hook": "Như ăn cỗ: dọn mâm cho khách xong, nhà mới được ngồi.",
   "tree": [
    {
     "label": "Điều kiện",
+    "icon": "check",
     "children": [
      "Xong nghĩa vụ thuế, tài chính",
      "Sau khi chia vẫn trả đủ nợ đến hạn"
@@ -35,15 +38,27 @@
    },
    {
     "label": "Cách chia",
+    "icon": "calc",
     "children": [
      "Theo tỷ lệ phần vốn góp"
     ]
    },
    {
     "label": "Vi phạm",
+    "icon": "cycle",
     "children": [
      "Thành viên hoàn trả số đã nhận"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty chia 2 tỷ lợi nhuận, sau đó không trả được nợ nhà cung cấp đến hạn. Việc chia có hợp pháp không?",
+   "a": "Không. Thành viên phải hoàn trả số đã nhận."
+  },
+  "contrast": [
+   {
+    "with": "tcdn-co-tuc",
+    "text": "Chia lợi nhuận dùng cho công ty trách nhiệm hữu hạn; cổ tức dùng cho công ty cổ phần."
    }
   ]
  },

@@ -23,16 +23,20 @@
   "trao quyền sử dụng đất"
  ],
  "memo": {
-  "hook": "Ba tầng: TOÀN DÂN sở hữu – NHÀ NƯỚC đại diện – NGƯỜI DÂN có QUYỀN SỬ DỤNG.",
+  "gist": "Đất thuộc về toàn dân, Nhà nước đứng ra quản lý thay, người dân chỉ có quyền dùng đất.",
+  "kind": "ladder",
+  "hook": "Như nhà thờ họ: cả họ là chủ, trưởng họ giữ chìa khóa, các nhà được ở.",
   "tree": [
    {
     "label": "Chủ sở hữu",
+    "icon": "globe",
     "children": [
      "Toàn dân"
     ]
    },
    {
     "label": "Nhà nước",
+    "icon": "state",
     "children": [
      "Đại diện chủ sở hữu",
      "Thống nhất quản lý"
@@ -40,6 +44,7 @@
    },
    {
     "label": "Người sử dụng",
+    "icon": "home",
     "children": [
      "Có quyền sử dụng đất",
      "Quyền tài sản"
@@ -47,9 +52,20 @@
    },
    {
     "label": "Hệ quả",
+    "icon": "ban",
     "children": [
      "Không có sở hữu tư nhân về đất"
     ]
+   }
+  ],
+  "case": {
+   "q": "Người dân nói \"mua đất\". Về pháp lý, họ thực sự mua cái gì?",
+   "a": "Nhận chuyển nhượng quyền sử dụng đất; đất vẫn thuộc sở hữu toàn dân."
+  },
+  "contrast": [
+   {
+    "with": "quyen-nha-nuoc-dai-dien-chu-so-huu",
+    "text": "Sở hữu toàn dân nói đất thuộc về ai; quyền đại diện chủ sở hữu nói Nhà nước làm được gì với đất."
    }
   ]
  },

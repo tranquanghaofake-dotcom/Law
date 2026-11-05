@@ -22,25 +22,40 @@
  ],
  "note": "Nghị quyết 203/2025/QH15 (hiệu lực 16/6/2025) bổ sung khoản 3 Điều 111: chính quyền địa phương ở đơn vị hành chính - kinh tế đặc biệt do Quốc hội quy định khi thành lập. Bản 2013 gộp đơn vị này vào khoản 2 Điều 111 (\"tổ chức phù hợp với đặc điểm… đơn vị hành chính - kinh tế đặc biệt do luật định\").",
  "memo": {
-  "hook": "Đặc khu KINH TẾ do Quốc hội lập; khác đặc khu hải đảo cấp xã.",
+  "gist": "Đơn vị hành chính, kinh tế đặc biệt do Quốc hội lập; cách tổ chức chính quyền do chính Quốc hội quy định khi lập.",
+  "kind": "tree",
+  "hook": "Vùng thử nghiệm có luật chơi riêng, do Quốc hội viết.",
   "tree": [
    {
     "label": "Thành lập",
+    "icon": "state",
     "children": [
      "Quốc hội"
     ]
    },
    {
     "label": "Chính quyền",
+    "icon": "scroll",
     "children": [
      "Quốc hội quy định khi thành lập"
     ]
    },
    {
     "label": "Phân biệt",
+    "icon": "compare",
     "children": [
      "Đặc khu hải đảo cùng cấp xã"
     ]
+   }
+  ],
+  "case": {
+   "q": "Đặc khu hải đảo cấp xã có phải đơn vị hành chính, kinh tế đặc biệt không?",
+   "a": "Không. Đơn vị kinh tế đặc biệt do Quốc hội lập riêng."
+  },
+  "contrast": [
+   {
+    "with": "don-vi-hanh-chinh-hai-cap",
+    "text": "Đơn vị đặc biệt là ngoại lệ; hai cấp là mô hình chung."
    }
   ]
  },

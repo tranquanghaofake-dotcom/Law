@@ -5,7 +5,7 @@
  "term": "Thuế thu nhập cá nhân: người nộp thuế và cá nhân cư trú",
  "definition": "Người nộp thuế thu nhập cá nhân là cá nhân cư trú có thu nhập chịu thuế quy định tại Điều 3 của Luật này phát sinh trong và ngoài lãnh thổ Việt Nam và cá nhân không cư trú có thu nhập chịu thuế quy định tại Điều 3 của Luật này phát sinh trong lãnh thổ Việt Nam. Cá nhân cư trú là người đáp ứng một trong các điều kiện sau đây: a) Có mặt tại Việt Nam từ 183 ngày trở lên tính trong 01 năm dương lịch hoặc tính theo 12 tháng liên tục kể từ ngày đầu tiên có mặt tại Việt Nam; b) Có nơi ở thường xuyên tại Việt Nam, bao gồm có nơi ở đăng ký thường trú hoặc có nhà thuê để ở tại Việt Nam theo hợp đồng thuê có thời hạn.",
  "plain": "Phạm vi đánh thuế khác nhau: CƯ TRÚ — thu nhập phát sinh TRONG VÀ NGOÀI Việt Nam; KHÔNG CƯ TRÚ — chỉ thu nhập phát sinh TRONG lãnh thổ Việt Nam. Tiêu chí cư trú: có mặt từ 183 NGÀY (năm dương lịch hoặc 12 tháng liên tục) HOẶC có nơi ở thường xuyên. Thu nhập từ tiền lương, tiền công của cá nhân cư trú áp dụng BIỂU LŨY TIẾN 5 BẬC (5%, 10%, 20%, 30%, 35% — Điều 9) sau khi GIẢM TRỪ GIA CẢNH 15,5 triệu đồng/tháng cho bản thân và 6,2 triệu đồng/tháng cho mỗi người phụ thuộc (Điều 10).",
- "example": "Kỹ sư Nhật Bản làm việc tại Hà Nội 200 ngày năm 2026: là cá nhân cư trú nên phải nộp thuế TNCN cả với khoản lương nhận ở Nhật trong thời gian đó.",
+ "example": "Kỹ sư Nhật Bản làm việc tại Hà Nội 200 ngày năm 2026: là cá nhân cư trú nên phải nộp thuế thu nhập cá nhân cả với khoản lương nhận ở Nhật trong thời gian đó.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1, 2 Điều 2 Luật Thuế thu nhập cá nhân 2025 (109/2025/QH15)",
@@ -24,10 +24,13 @@
  ],
  "note": "Luật Thuế TNCN 109/2025/QH15 có hiệu lực từ 01/7/2026; quy định về thu nhập từ kinh doanh, tiền lương, tiền công của cá nhân cư trú áp dụng từ kỳ tính thuế năm 2026; thay thế Luật 04/2007/QH12. Luật 09/2026/QH16 sửa khoản 1 Điều 7 (bỏ ngưỡng cố định 500 triệu đồng; mức doanh thu không phải nộp thuế của cá nhân kinh doanh do Chính phủ quy định, từ 01/01/2026); văn bản hợp nhất 112/VBHN-VPQH 2026 — Điều 2, 9, 10 không đổi.",
  "memo": {
-  "hook": "CƯ TRÚ: đánh thu nhập TRONG + NGOÀI nước; không cư trú: chỉ TRONG nước.",
+  "gist": "Người cư trú nộp thuế trên thu nhập cả trong và ngoài nước; người không cư trú chỉ nộp phần có ở Việt Nam.",
+  "kind": "compare",
+  "hook": "Mẹo 183: ở quá nửa năm thì tính như người nhà.",
   "tree": [
    {
     "label": "Cư trú",
+    "icon": "home",
     "children": [
      "Có mặt từ 183 ngày",
      "Hoặc có nơi ở thường xuyên",
@@ -36,16 +39,28 @@
    },
    {
     "label": "Không cư trú",
+    "icon": "globe",
     "children": [
      "Chỉ thu nhập trong Việt Nam"
     ]
    },
    {
     "label": "Tiền lương",
+    "icon": "money",
     "children": [
      "Lũy tiến 5 bậc",
      "Sau giảm trừ gia cảnh"
     ]
+   }
+  ],
+  "case": {
+   "q": "Kỹ sư Nhật làm việc ở Hà Nội 200 ngày trong năm. Lương nhận ở Nhật có bị tính thuế ở Việt Nam không?",
+   "a": "Có. Anh là cá nhân cư trú nên thu nhập ngoài nước cũng chịu thuế."
+  },
+  "contrast": [
+   {
+    "with": "thue-thu-nhap-doanh-nghiep",
+    "text": "Thuế thu nhập cá nhân đánh vào người; thuế thu nhập doanh nghiệp đánh vào lợi nhuận công ty."
    }
   ]
  },

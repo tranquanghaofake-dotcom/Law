@@ -22,10 +22,13 @@
   "không bị phân biệt đối xử"
  ],
  "memo": {
-  "hook": "Chủ thể là MỌI NGƯỜI, không chỉ công dân.",
+  "gist": "Mọi người, kể cả người nước ngoài, đều bình đẳng trước pháp luật và không bị phân biệt đối xử.",
+  "kind": "tree",
+  "hook": "Luật như cân: không biết người đứng lên là ai.",
   "tree": [
    {
     "label": "Ai",
+    "icon": "people",
     "children": [
      "Mọi người",
      "Cả người nước ngoài, không quốc tịch"
@@ -33,16 +36,28 @@
    },
    {
     "label": "Vế 1",
+    "icon": "scales",
     "children": [
      "Bình đẳng trước pháp luật"
     ]
    },
    {
     "label": "Vế 2",
+    "icon": "ban",
     "children": [
      "Không bị phân biệt đối xử",
      "chính trị, dân sự, kinh tế, văn hóa, xã hội"
     ]
+   }
+  ],
+  "case": {
+   "q": "Một cán bộ và một nông dân cùng vi phạm giao thông như nhau. Xử lý thế nào?",
+   "a": "Như nhau theo pháp luật."
+  },
+  "contrast": [
+   {
+    "with": "quyen-con-nguoi-quyen-cong-dan",
+    "text": "Bình đẳng là một quyền cụ thể; quyền con người, công dân là cả nhóm quyền."
    }
   ]
  },

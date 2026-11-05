@@ -5,7 +5,7 @@
  "term": "Góp vốn bằng quyền sở hữu trí tuệ",
  "definition": "Tài sản góp vốn là Đồng Việt Nam, ngoại tệ tự do chuyển đổi, vàng, quyền sử dụng đất, quyền sở hữu trí tuệ, công nghệ, bí quyết kỹ thuật, tài sản khác có thể định giá được bằng Đồng Việt Nam.",
  "plain": "Luật Doanh nghiệp cho phép góp vốn bằng QUYỀN SỞ HỮU TRÍ TUỆ, công nghệ, bí quyết kỹ thuật. Chỉ CHỦ SỞ HỮU HỢP PHÁP hoặc người có quyền sử dụng hợp pháp mới được góp (khoản 2 Điều 34). Tài sản không phải tiền, vàng, ngoại tệ phải được ĐỊNH GIÁ và thể hiện bằng Đồng Việt Nam (Điều 36) — định giá sai cao hơn thực tế thì người góp và người định giá liên đới chịu trách nhiệm. Với quyền SHCN đã đăng ký, việc góp vốn làm chuyển quyền sở hữu nên phải lập hợp đồng và đăng ký tại Cục Sở hữu trí tuệ (Điều 138, 148 Luật SHTT).",
- "example": "Ông H góp sáng chế đã được cấp bằng vào công ty mới với giá trị thỏa thuận 2 tỷ đồng: phải lập hợp đồng chuyển nhượng quyền sở hữu công nghiệp và đăng ký tại Cục SHTT; nếu định giá cao hơn thực tế, ông H và các thành viên sáng lập liên đới góp thêm phần chênh lệch.",
+ "example": "Ông H góp sáng chế đã được cấp bằng vào công ty mới, giá thỏa thuận 2 tỷ: phải lập hợp đồng chuyển nhượng và đăng ký tại Cục Sở hữu trí tuệ; định giá cao hơn thực tế thì liên đới góp thêm phần chênh.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1 Điều 34 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)",
@@ -24,10 +24,13 @@
  ],
  "note": "Luật Doanh nghiệp 59/2020/QH14 có hiệu lực từ 01/01/2021, sửa đổi bởi Luật 03/2022/QH15 và Luật 76/2025/QH15 (hiệu lực 01/7/2025) — văn bản hợp nhất 67/VBHN-VPQH 2025.",
  "memo": {
-  "hook": "Góp vốn bằng quyền SHTT được, nhưng phải là CHỦ HỢP PHÁP và phải ĐỊNH GIÁ.",
+  "gist": "Được góp vốn bằng quyền sở hữu trí tuệ nếu là chủ hợp pháp và định giá thành tiền đồng.",
+  "kind": "checklist",
+  "hook": "Mang ý tưởng có giấy chứng nhận vào làm vốn, nhưng phải cân đong cho đúng.",
   "tree": [
    {
     "label": "Được góp",
+    "icon": "gift",
     "children": [
      "Quyền sở hữu trí tuệ",
      "Công nghệ, bí quyết kỹ thuật"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Điều kiện",
+    "icon": "check",
     "children": [
      "Chủ sở hữu hoặc người có quyền hợp pháp",
      "Định giá bằng Đồng Việt Nam"
@@ -42,9 +46,20 @@
    },
    {
     "label": "Định giá sai",
+    "icon": "warn",
     "children": [
      "Liên đới chịu trách nhiệm"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ông H góp sáng chế được định giá cao hơn thực tế. Hậu quả là gì?",
+   "a": "Ông H và các thành viên sáng lập liên đới góp thêm phần chênh lệch."
+  },
+  "contrast": [
+   {
+    "with": "tstt-dinh-gia-tstt",
+    "text": "Góp vốn là đưa quyền vào công ty; định giá là bước tính quyền đó đáng bao nhiêu."
    }
   ]
  },

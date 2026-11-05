@@ -22,10 +22,13 @@
   "tách biệt"
  ],
  "memo": {
-  "hook": "Phần TIỀN của giao dịch chạy qua NGÂN HÀNG THANH TOÁN; ngân hàng thương mại phải vốn trên 10.000 TỶ.",
+  "gist": "Ngân hàng lo phần tiền của giao dịch chứng khoán; nếu là ngân hàng thương mại thì vốn phải trên 10.000 tỷ.",
+  "kind": "tree",
+  "hook": "Chứng khoán đi đường lưu ký, tiền đi đường ngân hàng.",
   "tree": [
    {
     "label": "Là",
+    "icon": "bank",
     "children": [
      "Ngân hàng Nhà nước",
      "Hoặc ngân hàng thương mại"
@@ -33,6 +36,7 @@
    },
    {
     "label": "Điều kiện (thương mại)",
+    "icon": "measure",
     "children": [
      "Vốn điều lệ trên 10.000 tỷ",
      "Có lãi 02 năm gần nhất"
@@ -40,9 +44,20 @@
    },
    {
     "label": "Nhiệm vụ",
+    "icon": "money",
     "children": [
      "Thanh toán tiền giao dịch"
     ]
+   }
+  ],
+  "case": {
+   "q": "Tiền mua cổ phiếu được chuyển qua đâu và có lẫn với tiền gửi thường không?",
+   "a": "Qua ngân hàng thanh toán, hạch toán tách biệt với tiền gửi thông thường."
+  },
+  "contrast": [
+   {
+    "with": "bu-tru-thanh-toan-giao-dich",
+    "text": "Ngân hàng thanh toán lo phần tiền; bù trừ, thanh toán là cả quy trình."
    }
   ]
  },

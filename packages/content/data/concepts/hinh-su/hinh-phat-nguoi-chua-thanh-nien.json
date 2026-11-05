@@ -25,10 +25,13 @@
  ],
  "note": "Từ 01/01/2026, Luật Tư pháp người chưa thành niên 59/2024/QH15 có hiệu lực và bãi bỏ Chương XII Bộ luật Hình sự (Điều 90–107) về người dưới 18 tuổi phạm tội (điểm a khoản 1 Điều 177). Giáo trình, đề cương cũ dẫn Điều 90–107 BLHS là đã hết hiệu lực. Luật 59/2024/QH15 được sửa đổi bởi Luật 85/2025/QH15 (hiệu lực 01/7/2025) và Luật 05/2026/QH16 (hiệu lực 01/01/2027); văn bản hợp nhất 105/VBHN-VPQH 2026.",
  "memo": {
-  "hook": "Người chưa thành niên chỉ 4 hình phạt, MỖI tội MỘT; tù tối đa 15 NĂM (16–18 tuổi).",
+  "gist": "Người chưa thành niên chỉ có bốn hình phạt, mỗi tội một; người 16 đến dưới 18 tuổi thường bị tù tối đa 15 năm.",
+  "kind": "tree",
+  "hook": "Tù cho trẻ luôn ngắn hơn hẳn người lớn.",
   "tree": [
    {
     "label": "Hình phạt",
+    "icon": "n4",
     "children": [
      "Cảnh cáo",
      "Phạt tiền",
@@ -38,15 +41,27 @@
    },
    {
     "label": "16 đến dưới 18",
+    "icon": "person",
     "children": [
      "Tối đa 15 năm hoặc 3/5"
     ]
    },
    {
     "label": "Nguyên tắc",
+    "icon": "n1",
     "children": [
      "Một hình phạt mỗi tội"
     ]
+   }
+  ],
+  "case": {
+   "q": "C 17 tuổi phạm tội cướp tài sản, khung có tù chung thân. Mức cao nhất áp dụng là bao nhiêu?",
+   "a": "15 năm tù; nếu là tội giết người thì 18 năm."
+  },
+  "contrast": [
+   {
+    "with": "nguoi-chua-thanh-nien-pham-toi",
+    "text": "Bài này nói hình phạt cụ thể; bài kia nói nguyên tắc xử lý chung."
    }
   ]
  },

@@ -5,7 +5,7 @@
  "term": "Trọng tài thương mại và thỏa thuận trọng tài",
  "definition": "Trọng tài thương mại là phương thức giải quyết tranh chấp do các bên thỏa thuận và được tiến hành theo quy định của Luật này. Thỏa thuận trọng tài là thỏa thuận giữa các bên về việc giải quyết bằng Trọng tài tranh chấp có thể phát sinh hoặc đã phát sinh. (…) Tranh chấp được giải quyết bằng Trọng tài nếu các bên có thỏa thuận trọng tài. Thỏa thuận trọng tài có thể được lập trước hoặc sau khi xảy ra tranh chấp.",
  "plain": "Điều kiện tiên quyết: CÓ THỎA THUẬN TRỌNG TÀI (điều khoản trong hợp đồng hoặc thỏa thuận riêng, lập TRƯỚC hoặc SAU tranh chấp, phải bằng văn bản — Điều 16). Thẩm quyền (Điều 2): tranh chấp từ hoạt động thương mại; ít nhất một bên có hoạt động thương mại; tranh chấp khác luật cho phép. Hai hình thức: trọng tài QUY CHẾ (tại Trung tâm trọng tài, như VIAC) và trọng tài VỤ VIỆC. Có thỏa thuận trọng tài mà một bên kiện ra Tòa thì Tòa án phải TỪ CHỐI THỤ LÝ, trừ thỏa thuận vô hiệu hoặc không thể thực hiện được (Điều 6).",
- "example": "Hợp đồng mua bán ghi \"mọi tranh chấp giải quyết tại Trung tâm Trọng tài Quốc tế Việt Nam (VIAC)\": nếu một bên kiện ra Tòa án, Tòa án phải từ chối thụ lý.",
+ "example": "Hợp đồng mua bán ghi \"mọi tranh chấp giải quyết tại Trung tâm Trọng tài Quốc tế Việt Nam\": nếu một bên kiện ra Tòa án, Tòa án phải từ chối thụ lý.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1, 2 Điều 3; khoản 1 Điều 5 Luật Trọng tài thương mại 2010 (sửa đổi, bổ sung năm 2025)",
@@ -24,10 +24,13 @@
   "Tòa án từ chối thụ lý"
  ],
  "memo": {
-  "hook": "Không có THỎA THUẬN TRỌNG TÀI thì không có trọng tài.",
+  "gist": "Trọng tài thương mại là cách giải quyết tranh chấp do các bên tự chọn, cần có thỏa thuận trọng tài bằng văn bản.",
+  "kind": "tree",
+  "hook": "Không có vé thì không vào cửa trọng tài.",
   "tree": [
    {
     "label": "Điều kiện",
+    "icon": "pen",
     "children": [
      "Có thỏa thuận trọng tài",
      "Lập trước hoặc sau tranh chấp",
@@ -36,6 +39,7 @@
    },
    {
     "label": "Thẩm quyền",
+    "icon": "scales",
     "children": [
      "Tranh chấp thương mại",
      "Một bên có hoạt động thương mại"
@@ -43,10 +47,21 @@
    },
    {
     "label": "Hình thức",
+    "icon": "state",
     "children": [
      "Trọng tài quy chế",
      "Trọng tài vụ việc"
     ]
+   }
+  ],
+  "case": {
+   "q": "Hợp đồng ghi mọi tranh chấp giải quyết tại một trung tâm trọng tài. Một bên kiện ra Tòa. Tòa làm gì?",
+   "a": "Từ chối thụ lý, vì đã có thỏa thuận trọng tài."
+  },
+  "contrast": [
+   {
+    "with": "nguyen-tac-trong-tai",
+    "text": "Trọng tài thương mại là phương thức và điều kiện dùng; nguyên tắc là cách trọng tài làm việc."
    }
   ]
  },

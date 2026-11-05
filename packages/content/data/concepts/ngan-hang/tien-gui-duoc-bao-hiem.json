@@ -5,7 +5,7 @@
  "term": "Tiền gửi được bảo hiểm",
  "definition": "Tiền gửi được bảo hiểm là tiền gửi bằng đồng Việt Nam của cá nhân gửi tại tổ chức tham gia bảo hiểm tiền gửi dưới hình thức tiền gửi có kỳ hạn, tiền gửi không kỳ hạn, tiền gửi tiết kiệm, chứng chỉ tiền gửi và các hình thức tiền gửi khác theo quy định của pháp luật về các tổ chức tín dụng, trừ các loại tiền gửi quy định tại Điều 18 của Luật này.",
  "plain": "Ba điều kiện: (1) bằng ĐỒNG VIỆT NAM — tiền gửi ngoại tệ không được bảo hiểm; (2) của CÁ NHÂN — tiền gửi của doanh nghiệp, tổ chức không được bảo hiểm; (3) gửi tại TỔ CHỨC THAM GIA bảo hiểm tiền gửi. Hình thức: có kỳ hạn, không kỳ hạn, tiết kiệm, CHỨNG CHỈ TIỀN GỬI… Loại trừ các khoản tại Điều 18 (ví dụ tiền gửi của người quản lý, người điều hành tại chính tổ chức đó).",
- "example": "Anh C gửi 50.000 USD và 300 triệu đồng tại cùng một ngân hàng: chỉ 300 triệu đồng là tiền gửi được bảo hiểm; khoản USD không được bảo hiểm.",
+ "example": "Anh C gửi 50.000 đô la Mỹ và 300 triệu đồng tại cùng một ngân hàng: chỉ 300 triệu đồng là tiền gửi được bảo hiểm; khoản đô la Mỹ không được bảo hiểm.",
  "source": {
   "kind": "statute",
   "cite": "Điều 17 Luật Bảo hiểm tiền gửi 2025 (111/2025/QH15)",
@@ -25,10 +25,13 @@
  ],
  "note": "Luật Bảo hiểm tiền gửi 111/2025/QH15 có hiệu lực từ 01/5/2026, thay thế Luật Bảo hiểm tiền gửi 06/2012/QH13 mà đề cương HLU 2021 còn dẫn.",
  "memo": {
-  "hook": "Ba điều kiện: ĐỒNG VIỆT NAM – của CÁ NHÂN – tại tổ chức THAM GIA.",
+  "gist": "Chỉ tiền gửi bằng tiền đồng, của cá nhân, tại tổ chức có tham gia bảo hiểm mới được bảo hiểm.",
+  "kind": "checklist",
+  "hook": "Ba ổ khóa: đúng tiền Việt, đúng người thường, đúng nơi có mua bảo hiểm.",
   "tree": [
    {
     "label": "Điều kiện",
+    "icon": "check",
     "children": [
      "Bằng Đồng Việt Nam",
      "Của cá nhân",
@@ -37,11 +40,22 @@
    },
    {
     "label": "Không được bảo hiểm",
+    "icon": "ban",
     "children": [
      "Tiền gửi ngoại tệ",
      "Tiền gửi của doanh nghiệp",
      "Các khoản ở Điều 18"
     ]
+   }
+  ],
+  "case": {
+   "q": "Anh C gửi 50.000 đô la Mỹ và 300 triệu đồng cùng một ngân hàng. Khoản nào được bảo hiểm?",
+   "a": "Chỉ 300 triệu đồng."
+  },
+  "contrast": [
+   {
+    "with": "bao-hiem-tien-gui",
+    "text": "Tiền gửi được bảo hiểm là loại tiền được che chắn; bảo hiểm tiền gửi là cả cơ chế, có hạn mức."
    }
   ]
  },

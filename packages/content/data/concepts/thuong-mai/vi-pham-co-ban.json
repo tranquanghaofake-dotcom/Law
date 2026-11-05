@@ -5,7 +5,7 @@
  "term": "Vi phạm cơ bản và chế tài hủy bỏ hợp đồng",
  "definition": "Vi phạm cơ bản là sự vi phạm hợp đồng của một bên gây thiệt hại cho bên kia đến mức làm cho bên kia không đạt được mục đích của việc giao kết hợp đồng. (…) Trừ các trường hợp miễn trách nhiệm quy định tại Điều 294 của Luật này, chế tài hủy bỏ hợp đồng được áp dụng trong các trường hợp sau đây: a) Xảy ra hành vi vi phạm mà các bên đã thỏa thuận là điều kiện để hủy bỏ hợp đồng; b) Một bên vi phạm cơ bản nghĩa vụ hợp đồng.",
  "plain": "VI PHẠM CƠ BẢN: thiệt hại đến mức bên kia KHÔNG ĐẠT ĐƯỢC MỤC ĐÍCH giao kết hợp đồng. Là điều kiện áp dụng ba chế tài mạnh: TẠM NGỪNG (Điều 308), ĐÌNH CHỈ (Điều 310), HỦY BỎ (Điều 312) — hoặc khi vi phạm là điều kiện đã thỏa thuận. Hủy bỏ: TOÀN BỘ hoặc MỘT PHẦN. Hậu quả hủy bỏ (Điều 314): không phải thực hiện nghĩa vụ, hoàn trả những gì đã nhận, vẫn có quyền đòi bồi thường.",
- "example": "Đặt may 1.000 bộ đồng phục cho lễ khai giảng 5/9; bên may giao ngày 20/9: bên đặt không đạt được mục đích hợp đồng → vi phạm cơ bản, có thể hủy bỏ hợp đồng.",
+ "example": "Đặt may 1.000 bộ đồng phục cho lễ khai giảng ngày 5 tháng 9; bên may giao ngày 20 tháng 9: bên đặt không đạt mục đích hợp đồng, nên là vi phạm cơ bản và có thể hủy bỏ hợp đồng.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 13 Điều 3, khoản 4 Điều 312 Luật Thương mại 2005 (sửa đổi, bổ sung năm 2017, 2019, 2025)",
@@ -22,16 +22,20 @@
   "hủy toàn bộ hoặc một phần"
  ],
  "memo": {
-  "hook": "Vi phạm CƠ BẢN: bên kia KHÔNG ĐẠT MỤC ĐÍCH giao kết; mở đường cho tạm ngừng, đình chỉ, hủy.",
+  "gist": "Vi phạm làm bên kia mất hẳn mục đích ký hợp đồng; là điều kiện để tạm ngừng, đình chỉ, hủy bỏ.",
+  "kind": "tree",
+  "hook": "Như đặt bánh sinh nhật mà giao sau tiệc: bánh còn nhưng chẳng để làm gì.",
   "tree": [
    {
     "label": "Định nghĩa",
+    "icon": "heart",
     "children": [
      "Thiệt hại đến mức mất mục đích hợp đồng"
     ]
    },
    {
     "label": "Là điều kiện cho",
+    "icon": "key",
     "children": [
      "Tạm ngừng",
      "Đình chỉ",
@@ -40,9 +44,20 @@
    },
    {
     "label": "Hủy bỏ",
+    "icon": "cut",
     "children": [
      "Toàn bộ hoặc một phần"
     ]
+   }
+  ],
+  "case": {
+   "q": "Đặt may đồng phục cho lễ khai giảng ngày 5 tháng 9, bên may giao ngày 20 tháng 9. Có phải vi phạm cơ bản không?",
+   "a": "Có. Bên đặt mất mục đích hợp đồng nên có thể hủy bỏ."
+  },
+  "contrast": [
+   {
+    "with": "che-tai-thuong-mai",
+    "text": "Vi phạm cơ bản là điều kiện; chế tài là các cách xử lý, ba cách nặng nhất cần điều kiện này."
    }
   ]
  },

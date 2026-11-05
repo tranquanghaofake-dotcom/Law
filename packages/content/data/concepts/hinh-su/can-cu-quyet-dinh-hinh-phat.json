@@ -23,12 +23,15 @@
   "tình tiết giảm nhẹ, tăng nặng"
  ],
  "memo": {
-  "hook": "Bốn căn cứ: LUẬT – MỨC NGUY HIỂM – NHÂN THÂN – GIẢM NHẸ/TĂNG NẶNG.",
+  "gist": "Tòa quyết định mức phạt dựa vào luật, mức nguy hiểm của hành vi, nhân thân và các tình tiết giảm nhẹ, tăng nặng.",
+  "kind": "checklist",
+  "hook": "Cùng một tội nhưng mỗi người một bản án.",
   "tree": [
    {
     "label": "Căn cứ",
+    "icon": "scales",
     "children": [
-     "Quy định của BLHS",
+     "Quy định của Bộ luật Hình sự",
      "Tính chất, mức độ nguy hiểm",
      "Nhân thân người phạm tội",
      "Tình tiết giảm nhẹ, tăng nặng"
@@ -36,9 +39,20 @@
    },
    {
     "label": "Phạt tiền",
+    "icon": "money",
     "children": [
      "Thêm tình hình tài sản"
     ]
+   }
+  ],
+  "case": {
+   "q": "Hai người cùng trộm tài sản cùng giá trị; một người tái phạm, một người lần đầu đã bồi thường. Mức phạt có giống nhau không?",
+   "a": "Có thể khác nhau, do nhân thân và tình tiết khác nhau."
+  },
+  "contrast": [
+   {
+    "with": "tai-pham",
+    "text": "Căn cứ quyết định hình phạt là cả danh sách; tái phạm chỉ là một tình tiết tăng nặng."
    }
   ]
  },

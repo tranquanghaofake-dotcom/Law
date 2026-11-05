@@ -5,7 +5,7 @@
  "term": "Niêm yết chứng khoán",
  "definition": "Niêm yết chứng khoán là việc đưa chứng khoán có đủ điều kiện niêm yết vào giao dịch trên hệ thống giao dịch cho chứng khoán niêm yết.",
  "plain": "Niêm yết là \"lên sàn chính\" (HOSE, HNX) khi đáp ứng điều kiện do Chính phủ quy định. Chứng khoán đã chào bán ra công chúng, cổ phiếu công ty đại chúng, chứng chỉ quỹ đóng, chứng chỉ quỹ ETF, chứng quyền có bảo đảm, hợp đồng tương lai, quyền chọn phải được niêm yết hoặc đăng ký giao dịch (khoản 1 Điều 48).",
- "example": "Công ty T chào bán cổ phiếu ra công chúng thành công: trong 30 ngày phải hoàn thiện hồ sơ niêm yết hoặc đăng ký giao dịch (khoản 2 Điều 29). Nếu đủ điều kiện niêm yết thì lên HOSE/HNX; chưa đủ thì đăng ký giao dịch trên UPCoM.",
+ "example": "Công ty T chào bán ra công chúng thành công: trong 30 ngày phải hoàn thiện hồ sơ niêm yết hoặc đăng ký giao dịch. Đủ điều kiện niêm yết thì lên sàn chính; chưa đủ thì đăng ký giao dịch.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 24 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)",
@@ -23,10 +23,13 @@
  ],
  "note": "Luật 56/2024/QH15 (hiệu lực 01/01/2025) bãi bỏ khoản 3 Điều 48 Luật Chứng khoán 2019 (theo chú thích của VBHN 102/VBHN-VPQH). Đọc giáo trình 2021 phần niêm yết cần đối chiếu với Điều 48 hiện hành.",
  "memo": {
-  "hook": "Niêm yết = LÊN SÀN CHÍNH (HOSE, HNX) khi đủ điều kiện.",
+  "gist": "Niêm yết là đưa chứng khoán đủ điều kiện vào giao dịch trên sàn chính.",
+  "kind": "tree",
+  "hook": "Được lên kệ chính của siêu thị.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "state",
     "children": [
      "Đưa chứng khoán đủ điều kiện vào giao dịch",
      "Hệ thống cho chứng khoán niêm yết"
@@ -34,17 +37,29 @@
    },
    {
     "label": "Phải niêm yết",
+    "icon": "list",
     "children": [
-     "Chứng chỉ quỹ đóng, ETF",
+     "Chứng chỉ quỹ đóng, quỹ hoán đổi danh mục",
      "Chứng quyền có bảo đảm",
      "Phái sinh"
     ]
    },
    {
     "label": "Điều kiện",
+    "icon": "check",
     "children": [
      "Chính phủ quy định"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty chào bán ra công chúng thành công nhưng chưa đủ điều kiện niêm yết. Phải làm gì?",
+   "a": "Đăng ký giao dịch trên sàn chưa niêm yết."
+  },
+  "contrast": [
+   {
+    "with": "dang-ky-giao-dich-chung-khoan",
+    "text": "Niêm yết là lên sàn chính; đăng ký giao dịch là sàn cho chứng khoán chưa niêm yết."
    }
   ]
  },

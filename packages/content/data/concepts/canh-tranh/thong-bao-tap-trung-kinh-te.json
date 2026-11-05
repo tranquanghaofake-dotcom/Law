@@ -23,10 +23,13 @@
   "thẩm định sơ bộ 30 ngày"
  ],
  "memo": {
-  "hook": "Thông báo TRƯỚC khi làm nếu chạm NGƯỠNG; thẩm định sơ bộ 30 NGÀY.",
+  "gist": "Doanh nghiệp định gom lại, nếu đủ lớn tới ngưỡng, phải báo Ủy ban Cạnh tranh Quốc gia trước khi làm.",
+  "kind": "steps",
+  "hook": "Như xin phép trước khi xây nhà lớn: nhà nhỏ thì khỏi, nhà to phải nộp hồ sơ.",
   "tree": [
    {
     "label": "Khi nào",
+    "icon": "clock",
     "children": [
      "Trước khi tiến hành",
      "Nếu thuộc ngưỡng thông báo"
@@ -34,6 +37,7 @@
    },
    {
     "label": "Ngưỡng (một trong)",
+    "icon": "measure",
     "children": [
      "Tổng tài sản",
      "Tổng doanh thu",
@@ -42,11 +46,22 @@
     ]
    },
    {
-    "label": "Thẩm định sơ bộ",
+    "label": "Thẩm định sơ bộ (Điều 36)",
+    "icon": "search",
     "children": [
      "30 ngày từ khi đủ hồ sơ",
      "Quá hạn không báo: được thực hiện"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty A định mua 60% vốn công ty B, doanh thu vượt ngưỡng. Khi nào phải nộp hồ sơ thông báo?",
+   "a": "Trước khi hoàn tất giao dịch, nộp cho Ủy ban Cạnh tranh Quốc gia."
+  },
+  "contrast": [
+   {
+    "with": "tap-trung-kinh-te",
+    "text": "Thông báo là thủ tục; tập trung kinh tế là chính việc gom doanh nghiệp."
    }
   ]
  },

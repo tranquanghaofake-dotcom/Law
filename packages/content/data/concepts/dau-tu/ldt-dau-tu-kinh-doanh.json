@@ -24,10 +24,13 @@
  ],
  "note": "Luật Đầu tư 143/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Đầu tư 61/2020/QH14 mà đề cương HLU 2021 còn dẫn (khoản 4 Điều 51). Luật 24/2026/QH16 sửa đổi có hiệu lực từ 01/3/2027 (riêng một phần Điều 6 từ 01/01/2027), chỉ sửa Điều 6 và Phụ lục IV, không sửa điều được trích — văn bản hợp nhất 142/2026/VBHN-LQ-VPQH.",
  "memo": {
-  "hook": "BỎ VỐN để KINH DOANH.",
+  "gist": "Đầu tư kinh doanh là bỏ vốn ra để làm ăn kiếm lời.",
+  "kind": "tree",
+  "hook": "Gieo hạt để thu hoạch, không phải để làm đẹp vườn công.",
   "tree": [
    {
     "label": "Yếu tố",
+    "icon": "money",
     "children": [
      "Bỏ vốn đầu tư",
      "Thực hiện hoạt động kinh doanh"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Phạm vi",
+    "icon": "globe",
     "children": [
      "Tại Việt Nam",
      "Từ Việt Nam ra nước ngoài"
@@ -42,9 +46,20 @@
    },
    {
     "label": "Không gồm",
+    "icon": "ban",
     "children": [
      "Đầu tư công"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ủy ban nhân dân xây trường học bằng ngân sách. Có phải đầu tư kinh doanh không?",
+   "a": "Không. Đó là đầu tư công, không theo Luật Đầu tư."
+  },
+  "contrast": [
+   {
+    "with": "ldt-von-dau-tu",
+    "text": "Đầu tư kinh doanh là hành động bỏ vốn; vốn đầu tư là thứ được bỏ ra."
    }
   ]
  },

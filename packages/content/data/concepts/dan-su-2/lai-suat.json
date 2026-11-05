@@ -5,7 +5,7 @@
  "term": "Lãi suất trong hợp đồng vay",
  "definition": "Lãi suất vay do các bên thỏa thuận. Trường hợp các bên có thỏa thuận về lãi suất thì lãi suất theo thỏa thuận không được vượt quá 20%/năm của khoản tiền vay, trừ trường hợp luật khác có liên quan quy định khác. (…) Trường hợp lãi suất theo thỏa thuận vượt quá lãi suất giới hạn được quy định tại khoản này thì mức lãi suất vượt quá không có hiệu lực. Trường hợp các bên có thỏa thuận về việc trả lãi, nhưng không xác định rõ lãi suất và có tranh chấp về lãi suất thì lãi suất được xác định bằng 50% mức lãi suất giới hạn quy định tại khoản 1 Điều này tại thời điểm trả nợ.",
  "plain": "Trần lãi suất: 20%/NĂM (trừ luật khác, như Luật Các tổ chức tín dụng cho vay của tổ chức tín dụng). Vượt trần → PHẦN VƯỢT không có hiệu lực (không vô hiệu cả hợp đồng). Có thỏa thuận trả lãi nhưng không rõ mức → 50% trần = 10%/năm tại thời điểm trả nợ. Cho vay lãi nặng có thể bị truy cứu tội cho vay lãi nặng trong giao dịch dân sự (Điều 201 BLHS) khi lãi gấp 05 lần mức cao nhất trong BLDS trở lên và thu lợi bất chính đáng kể.",
- "example": "Cho vay 100 triệu lãi 5%/tháng (60%/năm): phần lãi vượt 20%/năm không có hiệu lực; người vay chỉ phải trả tối đa 20%/năm.",
+ "example": "Cho vay 100 triệu lãi 5% mỗi tháng (60% một năm): phần lãi vượt 20% một năm không có hiệu lực; người vay chỉ phải trả tối đa 20% một năm.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1, khoản 2 Điều 468 Bộ luật Dân sự 2015",
@@ -23,17 +23,21 @@
   "trừ luật khác"
  ],
  "memo": {
-  "hook": "Trần 20%/NĂM; vượt thì CHỈ PHẦN VƯỢT vô hiệu; không rõ mức thì 10%/năm.",
+  "gist": "Lãi suất cho vay tối đa 20% một năm; vượt thì chỉ phần vượt mất hiệu lực, hợp đồng vẫn còn.",
+  "kind": "tree",
+  "hook": "Mẹo hai mươi và mười: trần hai mươi, quên ghi mức thì lấy nửa.",
   "tree": [
    {
     "label": "Trần",
+    "icon": "measure",
     "children": [
-     "20%/năm",
+     "20% một năm",
      "Trừ luật khác (tổ chức tín dụng)"
     ]
    },
    {
     "label": "Vượt trần",
+    "icon": "cut",
     "children": [
      "Phần vượt không có hiệu lực",
      "Hợp đồng vẫn còn"
@@ -41,9 +45,20 @@
    },
    {
     "label": "Có lãi nhưng không rõ mức",
+    "icon": "question",
     "children": [
-     "50% trần = 10%/năm"
+     "Một nửa trần: 10% một năm"
     ]
+   }
+  ],
+  "case": {
+   "q": "Cho vay 100 triệu lãi 5% một tháng. Người vay phải trả lãi tối đa bao nhiêu một năm?",
+   "a": "20% một năm; phần vượt không có hiệu lực."
+  },
+  "contrast": [
+   {
+    "with": "vay-tai-san",
+    "text": "Lãi suất là giá của khoản vay; vay tài sản là cả hợp đồng."
    }
   ]
  },

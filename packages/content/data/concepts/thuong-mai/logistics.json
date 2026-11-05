@@ -23,10 +23,13 @@
   "hưởng thù lao"
  ],
  "memo": {
-  "hook": "Chuỗi dịch vụ quanh HÀNG HÓA; được CẦM GIỮ hàng khi khách không trả.",
+  "gist": "Dịch vụ logistics là lo trọn các việc quanh hàng hóa: nhận, chở, lưu kho, làm hải quan, đóng gói, giao hàng.",
+  "kind": "tree",
+  "hook": "Như người quản gia cho món hàng: đón, cất, làm giấy tờ, đưa tới tận nơi.",
   "tree": [
    {
     "label": "Công việc",
+    "icon": "vehicle",
     "children": [
      "Nhận hàng, vận chuyển",
      "Lưu kho, lưu bãi",
@@ -36,15 +39,27 @@
    },
    {
     "label": "Quyền",
+    "icon": "lock",
     "children": [
      "Cầm giữ hàng, chứng từ"
     ]
    },
    {
     "label": "Giới hạn trách nhiệm",
+    "icon": "scales",
     "children": [
      "Không quá giá trị hàng hóa"
     ]
+   }
+  ],
+  "case": {
+   "q": "Khách không trả phí dịch vụ. Công ty logistics có được giữ lại hàng không?",
+   "a": "Có. Được cầm giữ hàng hóa, chứng từ."
+  },
+  "contrast": [
+   {
+    "with": "nhuong-quyen-thuong-mai",
+    "text": "Logistics là dịch vụ quanh hàng hóa; nhượng quyền là cho người khác kinh doanh theo thương hiệu mình."
    }
   ]
  },

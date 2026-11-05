@@ -23,10 +23,13 @@
   "lợi dụng chức vụ"
  ],
  "memo": {
-  "hook": "Tăng nặng: CÓ TỔ CHỨC, TÁI PHẠM, dùng NGƯỜI CHƯA THÀNH NIÊN, LỢI DỤNG chức vụ, dịch bệnh…",
+  "gist": "Vi phạm bị phạt nặng hơn khi có tổ chức, tái phạm, lợi dụng chức vụ, thiên tai, dịch bệnh, hoặc cố tình tiếp tục.",
+  "kind": "tree",
+  "hook": "Bị nhắc mà vẫn làm tiếp thì phạt thêm.",
   "tree": [
    {
     "label": "Cách thực hiện",
+    "icon": "people",
     "children": [
      "Có tổ chức",
      "Nhiều lần, tái phạm",
@@ -35,6 +38,7 @@
    },
    {
     "label": "Lợi dụng",
+    "icon": "mask",
     "children": [
      "Chức vụ",
      "Chiến tranh, thiên tai, dịch bệnh",
@@ -43,10 +47,21 @@
    },
    {
     "label": "Sau vi phạm",
+    "icon": "person",
     "children": [
      "Tiếp tục vi phạm",
      "Trốn tránh, che giấu"
     ]
+   }
+  ],
+  "case": {
+   "q": "Người bị yêu cầu dừng vẫn tiếp tục bán hàng lấn vỉa hè. Có tình tiết gì?",
+   "a": "Tình tiết tăng nặng: tiếp tục vi phạm dù đã bị yêu cầu dừng."
+  },
+  "contrast": [
+   {
+    "with": "tinh-tiet-giam-nhe",
+    "text": "Tăng nặng làm phạt nặng lên; giảm nhẹ làm phạt nhẹ đi."
    }
   ]
  },

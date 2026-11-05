@@ -24,22 +24,27 @@
   "hình thức khi luật quy định"
  ],
  "memo": {
-  "hook": "Ba điều kiện bắt buộc: NĂNG LỰC – TỰ NGUYỆN – MỤC ĐÍCH hợp pháp; HÌNH THỨC chỉ khi luật đòi.",
+  "gist": "Giao dịch có hiệu lực khi người làm đủ năng lực, hoàn toàn tự nguyện, mục đích hợp pháp; hình thức chỉ khi luật đòi.",
+  "kind": "checklist",
+  "hook": "Ba chân kiềng bắt buộc, chân thứ tư chỉ khi luật dặn.",
   "tree": [
    {
     "label": "Chủ thể",
+    "icon": "person",
     "children": [
      "Năng lực phù hợp"
     ]
    },
    {
     "label": "Ý chí",
+    "icon": "idea",
     "children": [
      "Hoàn toàn tự nguyện"
     ]
    },
    {
     "label": "Nội dung",
+    "icon": "scroll",
     "children": [
      "Không vi phạm điều cấm",
      "Không trái đạo đức"
@@ -47,9 +52,20 @@
    },
    {
     "label": "Hình thức",
+    "icon": "doc",
     "children": [
      "Chỉ khi luật quy định"
     ]
+   }
+  ],
+  "case": {
+   "q": "Hai người tự nguyện, đủ năng lực ký hợp đồng mua bán ma túy. Hợp đồng có hiệu lực không?",
+   "a": "Không, vì nội dung vi phạm điều cấm của luật."
+  },
+  "contrast": [
+   {
+    "with": "giao-dich-vo-hieu-gia-tao",
+    "text": "Điều kiện hiệu lực là những gì phải có; vô hiệu là hậu quả khi thiếu."
    }
   ]
  },

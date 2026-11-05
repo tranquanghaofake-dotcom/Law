@@ -32,7 +32,7 @@
   "tree": [
    {
     "label": "Bố cục",
-    "icon": "📑",
+    "icon": "doc",
     "children": [
      "Phần, chương, mục",
      "Điều, khoản, điểm",
@@ -41,7 +41,7 @@
    },
    {
     "label": "Số hiệu gồm",
-    "icon": "🔢",
+    "icon": "calc",
     "children": [
      "Số thứ tự",
      "Năm ban hành",

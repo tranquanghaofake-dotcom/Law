@@ -24,10 +24,13 @@
   "thời kỳ xác định"
  ],
  "memo": {
-  "hook": "Quy hoạch là CĂN CỨ để giao, thuê, thu hồi, chuyển mục đích.",
+  "gist": "Quy hoạch là bản đồ Nhà nước chia đất cho từng việc ở từng địa phương, làm căn cứ giao, thuê, lấy lại đất.",
+  "kind": "tree",
+  "hook": "Như sơ đồ chỗ ngồi trong lớp: muốn đổi chỗ phải xem sơ đồ trước.",
   "tree": [
    {
     "label": "Nội dung",
+    "icon": "map",
     "children": [
      "Phân bổ chỉ tiêu",
      "Khoanh vùng đất đai"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Phạm vi",
+    "icon": "pin",
     "children": [
      "Từng đơn vị hành chính",
      "Thời kỳ xác định"
@@ -42,10 +46,21 @@
    },
    {
     "label": "Vai trò",
+    "icon": "measure",
     "children": [
      "Căn cứ giao, cho thuê",
      "Căn cứ thu hồi, chuyển mục đích"
     ]
+   }
+  ],
+  "case": {
+   "q": "Khu đất nông nghiệp được quy hoạch thành khu dân cư. Chủ đất có căn cứ xin chuyển sang đất ở không?",
+   "a": "Có, nếu phù hợp với kế hoạch sử dụng đất hằng năm."
+  },
+  "contrast": [
+   {
+    "with": "thu-hoi-dat",
+    "text": "Quy hoạch là bản đồ dự kiến; thu hồi là quyết định lấy đất thật, dựa trên bản đồ đó."
    }
   ]
  },

@@ -5,7 +5,7 @@
  "term": "Điều kiện chào bán cổ phiếu lần đầu ra công chúng (IPO)",
  "definition": "Điều kiện chào bán cổ phiếu lần đầu ra công chúng của công ty cổ phần bao gồm: a) Mức vốn điều lệ đã góp tại thời điểm đăng ký chào bán từ 30 tỷ đồng trở lên tính theo giá trị ghi trên sổ kế toán; b) Hoạt động kinh doanh của 02 năm liên tục liền trước năm đăng ký chào bán phải có lãi, đồng thời không có lỗ lũy kế tính đến năm đăng ký chào bán; (…) d) Tối thiểu là 15% số cổ phiếu có quyền biểu quyết của tổ chức phát hành phải được bán cho ít nhất 100 nhà đầu tư không phải là cổ đông lớn; (…)",
  "plain": "IPO có 9 điều kiện (điểm a–i). Ba điều kiện hay thi nhất: vốn điều lệ đã góp từ 30 tỷ; 2 năm liền trước có lãi, không lỗ lũy kế; tối thiểu 15% cổ phiếu có quyền biểu quyết bán cho ít nhất 100 nhà đầu tư không phải cổ đông lớn (10% nếu vốn điều lệ từ 1.000 tỷ). Ngoài ra: cổ đông lớn cam kết cùng nắm giữ ít nhất 20% vốn điều lệ tối thiểu 01 năm, có công ty chứng khoán tư vấn, cam kết niêm yết hoặc đăng ký giao dịch, mở tài khoản phong tỏa.",
- "example": "Công ty F có vốn điều lệ đã góp 25 tỷ, lãi 3 năm liền: chưa đủ điều kiện IPO vì vốn điều lệ dưới 30 tỷ (điểm a khoản 1 Điều 15).",
+ "example": "Công ty F có vốn điều lệ đã góp 25 tỷ, lãi 3 năm liền: chưa đủ điều kiện chào bán lần đầu ra công chúng vì vốn điều lệ dưới 30 tỷ (điểm a khoản 1 Điều 15).",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1 Điều 15 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)",
@@ -24,16 +24,20 @@
  ],
  "note": "Luật 56/2024/QH15 (hiệu lực 01/01/2025) bổ sung điểm k khoản 1 Điều 18: hồ sơ IPO phải có báo cáo về vốn điều lệ đã góp được kiểm toán bởi tổ chức kiểm toán độc lập. Giáo trình 2021 chưa có yêu cầu này. Các điểm a–i khoản 1 Điều 15 không đổi.",
  "memo": {
-  "hook": "IPO: VỐN 30 TỶ – 2 NĂM CÓ LÃI – 15% bán cho 100 NHÀ ĐẦU TƯ.",
+  "gist": "Lần đầu bán cổ phiếu ra công chúng cần vốn góp từ 30 tỷ, hai năm liền có lãi, từ 100 người mua.",
+  "kind": "checklist",
+  "hook": "Ba cửa ải: đủ vốn, đủ lãi, đủ người mua.",
   "tree": [
    {
     "label": "Vốn",
+    "icon": "money",
     "children": [
      "Vốn điều lệ đã góp từ 30 tỷ"
     ]
    },
    {
     "label": "Kinh doanh",
+    "icon": "chart",
     "children": [
      "02 năm liền có lãi",
      "Không lỗ lũy kế"
@@ -41,6 +45,7 @@
    },
    {
     "label": "Phân phối",
+    "icon": "people",
     "children": [
      "15% cho ít nhất 100 nhà đầu tư",
      "10% nếu vốn từ 1.000 tỷ"
@@ -48,9 +53,20 @@
    },
    {
     "label": "Khác",
+    "icon": "calc",
     "children": [
      "Tổng 9 điều kiện"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty F có vốn góp 25 tỷ, lãi 3 năm liền. Có đủ điều kiện chào bán lần đầu ra công chúng không?",
+   "a": "Không, vì vốn điều lệ dưới 30 tỷ."
+  },
+  "contrast": [
+   {
+    "with": "cong-ty-dai-chung",
+    "text": "Điều kiện chào bán lần đầu là cửa vào; công ty đại chúng là trạng thái sau khi vào."
    }
   ]
  },

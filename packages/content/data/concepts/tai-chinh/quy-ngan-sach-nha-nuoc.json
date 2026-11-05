@@ -5,7 +5,7 @@
  "term": "Quỹ ngân sách nhà nước và ngân quỹ nhà nước",
  "definition": "Quỹ ngân sách nhà nước là toàn bộ các khoản tiền của Nhà nước, kể cả tiền vay có trên tài khoản của ngân sách nhà nước các cấp tại một thời điểm. (…) Ngân quỹ nhà nước là toàn bộ các khoản tiền bằng đồng Việt Nam và bằng ngoại tệ của Nhà nước có trên các tài khoản của Kho bạc Nhà nước mở tại Ngân hàng Nhà nước Việt Nam và các ngân hàng thương mại, tiền mặt tại các đơn vị Kho bạc Nhà nước.",
  "plain": "Phân biệt: QUỸ NSNN (tiền trên tài khoản ngân sách các cấp tại một thời điểm) ⊂ NGÂN QUỸ NHÀ NƯỚC (rộng hơn: còn gồm tiền gửi của quỹ dự trữ tài chính, quỹ tài chính ngoài ngân sách, đơn vị, tổ chức kinh tế tại Kho bạc). KHO BẠC NHÀ NƯỚC quản lý tập trung, thống nhất ngân quỹ (khoản 2 Điều 64), thực hiện kiểm soát chi. Thiếu hụt tạm thời quỹ NSNN được xử lý bằng tạm ứng ngân quỹ, vay… (Điều 60).",
- "example": "Tiền thuế vừa nộp vào tài khoản ngân sách tỉnh tại Kho bạc là một phần quỹ NSNN; tiền gửi của một đơn vị sự nghiệp tại Kho bạc là ngân quỹ nhà nước nhưng không phải quỹ NSNN.",
+ "example": "Tiền thuế vừa nộp vào tài khoản ngân sách tỉnh tại Kho bạc là một phần quỹ ngân sách nhà nước; tiền gửi của một đơn vị sự nghiệp tại Kho bạc là ngân quỹ nhà nước nhưng không phải quỹ ngân sách.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 22 Điều 4; khoản 1 Điều 64 Luật Ngân sách nhà nước 2025 (89/2025/QH15)",
@@ -24,10 +24,13 @@
  ],
  "note": "Luật Ngân sách nhà nước 89/2025/QH15 có hiệu lực từ năm ngân sách 2026 (một số nội dung từ 01/7/2025), thay thế Luật Ngân sách nhà nước 83/2015/QH13 mà đề cương HLU còn dẫn (Điều 77).",
  "memo": {
-  "hook": "Quỹ ngân sách NẰM TRONG ngân quỹ nhà nước; Kho bạc quản lý.",
+  "gist": "Quỹ ngân sách là tiền trên tài khoản ngân sách tại một lúc; ngân quỹ nhà nước rộng hơn, gồm cả tiền gửi Kho bạc.",
+  "kind": "compare",
+  "hook": "Như ví riêng nằm trong két sắt chung: ví là quỹ ngân sách, két là ngân quỹ.",
   "tree": [
    {
     "label": "Quỹ ngân sách",
+    "icon": "money",
     "children": [
      "Tiền trên tài khoản ngân sách",
      "Tại một thời điểm"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Ngân quỹ nhà nước",
+    "icon": "list",
     "children": [
      "Rộng hơn",
      "Gồm cả tiền gửi tại Kho bạc"
@@ -42,10 +46,21 @@
    },
    {
     "label": "Quản lý",
+    "icon": "bank",
     "children": [
      "Kho bạc Nhà nước",
      "Tập trung, thống nhất"
     ]
+   }
+  ],
+  "case": {
+   "q": "Tiền gửi của một đơn vị sự nghiệp tại Kho bạc có phải quỹ ngân sách không?",
+   "a": "Không. Đó là ngân quỹ nhà nước, không phải quỹ ngân sách."
+  },
+  "contrast": [
+   {
+    "with": "boi-chi-ket-du",
+    "text": "Quỹ ngân sách là tiền đang có tại một lúc; kết dư là phần thừa khi chốt năm."
    }
   ]
  },

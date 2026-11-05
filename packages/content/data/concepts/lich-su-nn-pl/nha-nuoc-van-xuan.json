@@ -25,16 +25,20 @@
   "trăm quan"
  ],
  "memo": {
-  "hook": "544: Lý Bí lần đầu XƯNG ĐẾ, đặt NIÊN HIỆU, QUỐC HIỆU Vạn Xuân.",
+  "gist": "Năm 544 Lý Bí lần đầu xưng đế, đặt niên hiệu Thiên Đức và quốc hiệu Vạn Xuân.",
+  "kind": "tree",
+  "hook": "Lần đầu tự đặt tên cho mình, cho năm tháng và cho đất nước.",
   "tree": [
    {
     "label": "Mốc",
+    "icon": "calendar",
     "children": [
      "544, Lý Bí"
     ]
    },
    {
     "label": "Lần đầu",
+    "icon": "star",
     "children": [
      "Xưng đế: Nam Việt Đế",
      "Niên hiệu Thiên Đức",
@@ -43,10 +47,21 @@
    },
    {
     "label": "Triều đình",
+    "icon": "state",
     "children": [
      "Lập trăm quan",
      "Điện Vạn Thọ"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ai là người đầu tiên đặt niên hiệu ở nước ta?",
+   "a": "Lý Nam Đế, niên hiệu Thiên Đức."
+  },
+  "contrast": [
+   {
+    "with": "dinh-dai-co-viet",
+    "text": "Vạn Xuân xưng đế trước nhưng không bền; nhà Đinh là triều chính thống đầu tiên."
    }
   ]
  },

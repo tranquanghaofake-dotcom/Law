@@ -24,10 +24,13 @@
  ],
  "note": "Luật Cán bộ, công chức 80/2025/QH15 có hiệu lực từ 01/7/2025, thay thế Luật Cán bộ, công chức 22/2008/QH12; bỏ cấp huyện, chỉ còn trung ương, cấp tỉnh, cấp xã.",
  "memo": {
-  "hook": "Thi hành công vụ: TUÂN LUẬT – CÔNG KHAI – ĐÚNG THẨM QUYỀN – THỨ BẬC.",
+  "gist": "Người làm công vụ phải tuân luật, bảo vệ quyền con người, công khai, đúng thẩm quyền và theo thứ bậc.",
+  "kind": "checklist",
+  "hook": "Làm việc công như đi trên đường kẻ vạch: không lấn làn người khác.",
   "tree": [
    {
     "label": "Nguyên tắc",
+    "icon": "check",
     "children": [
      "Tuân thủ Hiến pháp, pháp luật",
      "Bảo vệ quyền con người",
@@ -37,9 +40,20 @@
    },
    {
     "label": "Phân biệt",
+    "icon": "compare",
     "children": [
      "Nguyên tắc quản lý cán bộ, công chức"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công chức địa chính tự ý ký giấy xác nhận vượt thẩm quyền. Vi phạm nguyên tắc nào?",
+   "a": "Nguyên tắc đúng thẩm quyền."
+  },
+  "contrast": [
+   {
+    "with": "can-bo-cong-chuc",
+    "text": "Nguyên tắc là cách làm công vụ; cán bộ, công chức là người làm."
    }
   ]
  },

@@ -5,7 +5,7 @@
  "term": "Công ty trách nhiệm hữu hạn hai thành viên trở lên",
  "definition": "Công ty trách nhiệm hữu hạn hai thành viên trở lên là doanh nghiệp có từ 02 đến 50 thành viên là tổ chức, cá nhân. Thành viên chịu trách nhiệm về các khoản nợ và nghĩa vụ tài sản khác của doanh nghiệp trong phạm vi số vốn đã góp vào doanh nghiệp, trừ trường hợp quy định tại khoản 4 Điều 47 của Luật này. Phần vốn góp của thành viên chỉ được chuyển nhượng theo quy định tại các điều 51, 52 và 53 của Luật này. Công ty trách nhiệm hữu hạn hai thành viên trở lên có tư cách pháp nhân kể từ ngày được cấp Giấy chứng nhận đăng ký doanh nghiệp.",
  "plain": "Đặc điểm: 02–50 THÀNH VIÊN; trách nhiệm HỮU HẠN trong VỐN ĐÃ GÓP; chuyển nhượng phần vốn góp bị HẠN CHẾ (phải chào bán cho thành viên còn lại trước — Điều 52); có tư cách pháp nhân; KHÔNG phát hành cổ phần (trừ để chuyển đổi thành công ty cổ phần). Góp vốn (Điều 47): trong 90 NGÀY từ khi được cấp Giấy chứng nhận; hết hạn chưa góp đủ phải điều chỉnh vốn điều lệ. Loại hình \"đối nhân – đối vốn\".",
- "example": "Ba người bạn lập công ty TNHH, mỗi người góp 1 tỷ; công ty nợ 5 tỷ: mỗi thành viên chỉ chịu trách nhiệm trong phạm vi 1 tỷ đã góp.",
+ "example": "Ba người bạn lập công ty trách nhiệm hữu hạn, mỗi người góp 1 tỷ; công ty nợ 5 tỷ: mỗi thành viên chỉ chịu trách nhiệm trong phạm vi 1 tỷ đã góp.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1, khoản 2 Điều 46 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)",
@@ -23,10 +23,13 @@
   "tư cách pháp nhân"
  ],
  "memo": {
-  "hook": "2–50 THÀNH VIÊN; hữu hạn; muốn bán vốn phải CHÀO thành viên cũ trước.",
+  "gist": "Công ty có 2 đến 50 thành viên, chịu trách nhiệm trong phần đã góp; muốn bán vốn phải mời thành viên cũ trước.",
+  "kind": "tree",
+  "hook": "Như hội bạn góp vốn: người ngoài muốn vào phải chờ người trong từ chối.",
   "tree": [
    {
     "label": "Thành viên",
+    "icon": "people",
     "children": [
      "02 đến 50",
      "Tổ chức, cá nhân"
@@ -34,27 +37,41 @@
    },
    {
     "label": "Trách nhiệm",
+    "icon": "shield",
     "children": [
      "Trong phạm vi vốn đã góp"
     ]
    },
    {
     "label": "Chuyển nhượng",
+    "icon": "cycle",
     "children": [
      "Chào bán thành viên còn lại trước"
     ]
    },
    {
-    "label": "Góp vốn",
+    "label": "Góp vốn (Điều 47)",
+    "icon": "clock",
     "children": [
      "Trong 90 ngày"
     ]
    },
    {
     "label": "Không được",
+    "icon": "ban",
     "children": [
      "Phát hành cổ phần"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ba người bạn góp mỗi người 1 tỷ; công ty nợ 5 tỷ. Mỗi người chịu tối đa bao nhiêu?",
+   "a": "1 tỷ, đúng phần đã góp."
+  },
+  "contrast": [
+   {
+    "with": "cong-ty-co-phan",
+    "text": "Trách nhiệm hữu hạn tối đa 50 thành viên, không phát hành cổ phần; cổ phần không giới hạn, bán vốn tự do."
    }
   ]
  },

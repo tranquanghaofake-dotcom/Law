@@ -26,10 +26,13 @@
  ],
  "note": "Luật Ngân hàng Nhà nước Việt Nam 46/2010/QH12 có hiệu lực từ 01/01/2011; Luật 23/2026/QH16 sửa đổi nhiều điều (Điều 4, 27, 34, 42, 44, 45, 57, 58, 62…), có hiệu lực từ 01/12/2026 — điều được trích không bị sửa.",
  "memo": {
-  "hook": "Năm công cụ: TÁI CẤP VỐN – LÃI SUẤT – TỶ GIÁ – DỰ TRỮ BẮT BUỘC – THỊ TRƯỜNG MỞ.",
+  "gist": "Ngân hàng Nhà nước dùng năm công cụ: tái cấp vốn, lãi suất, tỷ giá, dự trữ bắt buộc và thị trường mở.",
+  "kind": "tree",
+  "hook": "Như bộ nút vặn vòi nước: vặn chặt để hút tiền về, nới ra để bơm tiền đi.",
   "tree": [
    {
     "label": "Công cụ",
+    "icon": "tool",
     "children": [
      "Tái cấp vốn",
      "Lãi suất, tỷ giá",
@@ -39,6 +42,7 @@
    },
    {
     "label": "Hút tiền",
+    "icon": "tool",
     "children": [
      "Tăng lãi suất, dự trữ",
      "Bán giấy tờ có giá"
@@ -46,9 +50,20 @@
    },
    {
     "label": "Ai quyết định",
+    "icon": "person",
     "children": [
      "Thống đốc"
     ]
+   }
+  ],
+  "case": {
+   "q": "Lạm phát tăng nhanh, Ngân hàng Nhà nước bán tín phiếu. Mục đích là gì?",
+   "a": "Hút bớt tiền đồng từ các ngân hàng thương mại."
+  },
+  "contrast": [
+   {
+    "with": "chinh-sach-tien-te-quoc-gia",
+    "text": "Công cụ là nút vặn; chính sách tiền tệ là mục tiêu cần đạt."
    }
   ]
  },

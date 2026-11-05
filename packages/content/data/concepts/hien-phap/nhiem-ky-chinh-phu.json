@@ -23,16 +23,20 @@
   "Quốc hội khóa mới thành lập Chính phủ"
  ],
  "memo": {
-  "hook": "Theo nhiệm kỳ Quốc hội; hết nhiệm kỳ vẫn làm tới khi có Chính phủ MỚI.",
+  "gist": "Nhiệm kỳ Chính phủ theo nhiệm kỳ Quốc hội; hết nhiệm kỳ vẫn làm việc đến khi Quốc hội khóa mới lập Chính phủ mới.",
+  "kind": "tree",
+  "hook": "Ca trực cũ chưa về khi ca mới chưa tới.",
   "tree": [
    {
     "label": "Nhiệm kỳ",
+    "icon": "calendar",
     "children": [
      "Theo nhiệm kỳ Quốc hội"
     ]
    },
    {
     "label": "Khi hết nhiệm kỳ",
+    "icon": "clock",
     "children": [
      "Tiếp tục làm nhiệm vụ",
      "Đến khi Quốc hội khóa mới thành lập Chính phủ"
@@ -40,9 +44,20 @@
    },
    {
     "label": "Mục đích",
+    "icon": "target",
     "children": [
      "Tránh khoảng trống hành pháp"
     ]
+   }
+  ],
+  "case": {
+   "q": "Từ khi Quốc hội khóa cũ hết nhiệm kỳ đến kỳ họp đầu khóa mới, ai điều hành đất nước?",
+   "a": "Chính phủ nhiệm kỳ cũ."
+  },
+  "contrast": [
+   {
+    "with": "nhiem-ky-quoc-hoi",
+    "text": "Nhiệm kỳ Chính phủ đi theo nhiệm kỳ Quốc hội."
    }
   ]
  },

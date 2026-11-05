@@ -24,10 +24,13 @@
  ],
  "note": "Luật 79/2025/QH15 (hiệu lực 01/7/2025) sửa khoản 2 Điều 16 (trường hợp trẻ em có cha hoặc mẹ là công dân Việt Nam, người kia là công dân nước ngoài: thỏa thuận lựa chọn quốc tịch khi làm thủ tục khai sinh). Giáo trình in trước 2025 trình bày theo khoản 2 Điều 16 cũ, cần đối chiếu câu chữ.",
  "memo": {
-  "hook": "Việt Nam theo HUYẾT THỐNG; NƠI SINH chỉ bổ trợ.",
+  "gist": "Con có quốc tịch Việt Nam chủ yếu theo cha mẹ, dù sinh ở đâu; nơi sinh chỉ bổ trợ.",
+  "kind": "tree",
+  "hook": "Quốc tịch chảy theo dòng máu, không theo nơi chào đời.",
   "tree": [
    {
     "label": "Cha mẹ đều là công dân",
+    "icon": "family",
     "children": [
      "Con có quốc tịch Việt Nam",
      "Dù sinh trong hay ngoài lãnh thổ"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Một bên là công dân",
+    "icon": "person",
     "children": [
      "Bên kia không quốc tịch: con có quốc tịch Việt Nam",
      "Bên kia nước ngoài: cha mẹ thỏa thuận"
@@ -42,9 +46,20 @@
    },
    {
     "label": "Nơi sinh",
+    "icon": "pin",
     "children": [
      "Chỉ bổ trợ, tránh không quốc tịch"
     ]
+   }
+  ],
+  "case": {
+   "q": "Hai vợ chồng người Việt sinh con tại Nhật. Con có quốc tịch Việt Nam không?",
+   "a": "Có."
+  },
+  "contrast": [
+   {
+    "with": "nhap-quoc-tich-viet-nam",
+    "text": "Huyết thống là có từ lúc sinh; nhập quốc tịch là xin sau."
    }
   ]
  },

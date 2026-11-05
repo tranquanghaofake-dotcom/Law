@@ -23,10 +23,13 @@
   "cấm phạt tiền, cắt lương"
  ],
  "memo": {
-  "hook": "Bốn hình thức: KHIỂN TRÁCH → KÉO DÀI NÂNG LƯƠNG → CÁCH CHỨC → SA THẢI; CẤM phạt tiền.",
+  "gist": "Người vi phạm nội quy bị khiển trách, kéo dài nâng lương, cách chức hoặc sa thải; cấm phạt tiền, cắt lương.",
+  "kind": "ladder",
+  "hook": "Bốn nấc thang kỷ luật, không có nấc nào là móc ví.",
   "tree": [
    {
     "label": "Nội dung",
+    "icon": "measure",
     "children": [
      "Tuân theo thời gian, công nghệ",
      "Điều hành sản xuất"
@@ -34,6 +37,7 @@
    },
    {
     "label": "Nằm trong",
+    "icon": "book",
     "children": [
      "Nội quy lao động",
      "Pháp luật"
@@ -41,18 +45,30 @@
    },
    {
     "label": "Hình thức",
+    "icon": "stairs",
     "children": [
      "Khiển trách",
-     "Kéo dài nâng lương ≤ 06 tháng",
+     "Kéo dài nâng lương tối đa 06 tháng",
      "Cách chức",
      "Sa thải"
     ]
    },
    {
     "label": "Cấm",
+    "icon": "ban",
     "children": [
      "Phạt tiền, cắt lương"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty trừ 500 nghìn lương nhân viên đi muộn thay vì xử lý kỷ luật. Có đúng không?",
+   "a": "Không. Phạt tiền, cắt lương thay kỷ luật bị cấm."
+  },
+  "contrast": [
+   {
+    "with": "boi-thuong-thiet-hai-lao-dong",
+    "text": "Kỷ luật xử lý vi phạm nội quy; bồi thường là đền thiệt hại tài sản."
    }
   ]
  },

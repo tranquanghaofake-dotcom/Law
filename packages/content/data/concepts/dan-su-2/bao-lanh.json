@@ -23,10 +23,13 @@
   "không có khả năng thực hiện"
  ],
  "memo": {
-  "hook": "Bảo lãnh: NGƯỜI THỨ BA hứa trả THAY khi đến hạn bên nợ không trả.",
+  "gist": "Người thứ ba hứa với bên có quyền rằng sẽ trả thay nếu đến hạn bên nợ không trả hoặc trả không đúng.",
+  "kind": "tree",
+  "hook": "Như người ký tên đỡ đầu: con nợ không trả thì người đỡ đầu trả.",
   "tree": [
    {
     "label": "Ba bên",
+    "icon": "people",
     "children": [
      "Bên bảo lãnh (người thứ ba)",
      "Bên nhận bảo lãnh (có quyền)",
@@ -35,16 +38,28 @@
    },
    {
     "label": "Loại",
+    "icon": "person",
     "children": [
      "Biện pháp đối nhân"
     ]
    },
    {
     "label": "Phát sinh khi",
+    "icon": "clock",
     "children": [
      "Đến hạn không thực hiện",
      "Hoặc thực hiện không đúng"
     ]
+   }
+  ],
+  "case": {
+   "q": "Bố cam kết với ngân hàng sẽ trả thay nếu con không trả nợ đúng hạn. Bố là ai trong quan hệ này?",
+   "a": "Bên bảo lãnh."
+  },
+  "contrast": [
+   {
+    "with": "the-chap",
+    "text": "Bảo lãnh là người khác hứa trả thay; thế chấp là dùng tài sản để bảo đảm."
    }
   ]
  },

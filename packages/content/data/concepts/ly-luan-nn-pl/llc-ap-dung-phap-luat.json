@@ -5,7 +5,7 @@
  "term": "Áp dụng pháp luật",
  "definition": "Áp dụng pháp luật là hoạt động của các chủ thể có thẩm quyền căn cứ vào các quy định pháp luật hiện hành để đưa ra quyết định có tính cá biệt nhằm điều chỉnh quan hệ xã hội theo mục tiêu cụ thể.",
  "plain": "Đặc điểm: mang TÍNH QUYỀN LỰC NHÀ NƯỚC; chỉ do CHỦ THỂ CÓ THẨM QUYỀN; theo TRÌNH TỰ, THỦ TỤC chặt chẽ; là hoạt động ĐIỀU CHỈNH CÁ BIỆT (chuyển quy định chung thành quy tắc cụ thể cho chủ thể xác định); đòi hỏi SÁNG TẠO trong khuôn khổ. Các trường hợp cần áp dụng: quyền, nghĩa vụ không mặc nhiên phát sinh; có tranh chấp; cần truy cứu trách nhiệm pháp lý; cần cưỡng chế bảo đảm an toàn; khen thưởng; xác nhận tính hợp pháp. Bốn giai đoạn: phân tích sự kiện → lựa chọn quy phạm (nếu xung đột: ưu tiên văn bản có giá trị pháp lý cao hơn, ban hành sau; nếu thiếu: áp dụng tương tự) → ra QUYẾT ĐỊNH ÁP DỤNG (văn bản cá biệt, thực hiện một lần) → tổ chức thực hiện. Áp dụng tương tự pháp luật chỉ dùng khi không có quy phạm trực tiếp.",
- "example": "UBND cấp Giấy chứng nhận quyền sử dụng đất cho ông C: quyền không mặc nhiên phát sinh, cần quyết định cá biệt của cơ quan có thẩm quyền.",
+ "example": "Ủy ban nhân dân cấp Giấy chứng nhận quyền sử dụng đất cho ông C: quyền không mặc nhiên phát sinh, cần quyết định cá biệt của cơ quan có thẩm quyền.",
  "source": {
   "kind": "textbook",
   "cite": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (Drive HLU/KÌ I NĂM I/LLCNN&PL/TÀI LIỆU ÔN THI LLC: VD8, VD9, VD11, VD12, VD13) và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình"
@@ -24,10 +24,13 @@
   "áp dụng tương tự"
  ],
  "memo": {
-  "hook": "Áp dụng pháp luật: chủ thể CÓ THẨM QUYỀN ra quyết định CÁ BIỆT.",
+  "gist": "Cơ quan có thẩm quyền ra quyết định riêng cho từng việc, khi quyền không tự phát sinh, có tranh chấp hay vi phạm.",
+  "kind": "tree",
+  "hook": "Như trọng tài thổi còi cho từng tình huống cụ thể trên sân.",
   "tree": [
    {
     "label": "Đặc điểm",
+    "icon": "state",
     "children": [
      "Quyền lực nhà nước",
      "Chủ thể có thẩm quyền",
@@ -37,6 +40,7 @@
    },
    {
     "label": "Khi cần",
+    "icon": "pin",
     "children": [
      "Quyền không mặc nhiên phát sinh",
      "Có tranh chấp",
@@ -45,9 +49,20 @@
    },
    {
     "label": "Thiếu luật",
+    "icon": "puzzle",
     "children": [
      "Áp dụng tương tự"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ông C muốn có quyền sử dụng đất được Nhà nước công nhận. Có cần áp dụng pháp luật không?",
+   "a": "Có. Cần quyết định cấp giấy chứng nhận của cơ quan có thẩm quyền."
+  },
+  "contrast": [
+   {
+    "with": "llc-thuc-hien-phap-luat",
+    "text": "Áp dụng là một hình thức thực hiện pháp luật, chỉ do chủ thể có thẩm quyền làm."
    }
   ]
  },

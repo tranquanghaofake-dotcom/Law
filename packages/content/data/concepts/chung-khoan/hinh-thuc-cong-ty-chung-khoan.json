@@ -5,7 +5,7 @@
  "term": "Công ty chứng khoán: hình thức pháp lý và thẩm quyền cấp phép",
  "definition": "Ủy ban Chứng khoán Nhà nước có thẩm quyền cấp, cấp lại, điều chỉnh, thu hồi Giấy phép thành lập và hoạt động kinh doanh chứng khoán cho công ty chứng khoán, công ty quản lý quỹ đầu tư chứng khoán, chi nhánh công ty chứng khoán và công ty quản lý quỹ nước ngoài tại Việt Nam. (…) Công ty chứng khoán, công ty quản lý quỹ đầu tư chứng khoán được tổ chức dưới hình thức công ty trách nhiệm hữu hạn hoặc công ty cổ phần theo quy định của Luật Doanh nghiệp.",
  "plain": "Công ty chứng khoán là doanh nghiệp kinh doanh có điều kiện. Thứ tự là \"giấy phép trước, đăng ký doanh nghiệp sau\": phải có Giấy phép thành lập và hoạt động kinh doanh chứng khoán của Ủy ban, rồi mới đăng ký doanh nghiệp theo Luật Doanh nghiệp (khoản 1 Điều 71). Chỉ được tổ chức dưới dạng công ty TNHH hoặc công ty cổ phần, không được là doanh nghiệp tư nhân hay công ty hợp danh.",
- "example": "Một nhóm nhà đầu tư muốn mở \"công ty hợp danh chứng khoán\": không được, vì khoản 2 Điều 71 chỉ cho phép công ty TNHH hoặc công ty cổ phần.",
+ "example": "Một nhóm nhà đầu tư muốn mở \"công ty hợp danh chứng khoán\": không được, vì khoản 2 Điều 71 chỉ cho phép công ty trách nhiệm hữu hạn hoặc công ty cổ phần.",
  "source": {
   "kind": "statute",
   "cite": "Điều 70, khoản 2 Điều 71 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)",
@@ -22,27 +22,42 @@
   "giấy phép trước, đăng ký doanh nghiệp sau"
  ],
  "memo": {
-  "hook": "Công ty chứng khoán: GIẤY PHÉP TRƯỚC, ĐĂNG KÝ DOANH NGHIỆP SAU.",
+  "gist": "Chỉ được là công ty trách nhiệm hữu hạn hoặc cổ phần; xin giấy phép Ủy ban trước, đăng ký doanh nghiệp sau.",
+  "kind": "steps",
+  "hook": "Có giấy phép hành nghề trước, rồi mới treo biển.",
   "tree": [
    {
     "label": "Cấp phép",
+    "icon": "state",
     "children": [
      "Ủy ban Chứng khoán Nhà nước"
     ]
    },
    {
     "label": "Loại hình",
+    "icon": "company",
     "children": [
-     "Công ty TNHH",
+     "Công ty trách nhiệm hữu hạn",
      "Công ty cổ phần"
     ]
    },
    {
     "label": "Thứ tự",
+    "icon": "calc",
     "children": [
      "Giấy phép trước",
      "Đăng ký doanh nghiệp sau"
     ]
+   }
+  ],
+  "case": {
+   "q": "Nhóm nhà đầu tư muốn lập công ty hợp danh chứng khoán. Có được không?",
+   "a": "Không. Chỉ được là công ty trách nhiệm hữu hạn hoặc cổ phần."
+  },
+  "contrast": [
+   {
+    "with": "nghiep-vu-cong-ty-chung-khoan",
+    "text": "Hình thức là dạng pháp lý; nghiệp vụ là công ty được làm gì."
    }
   ]
  },

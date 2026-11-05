@@ -24,10 +24,13 @@
  ],
  "note": "Khoản 3 Điều 40 được sửa đổi, bổ sung bởi Luật 86/2025/QH15 (hiệu lực 01/7/2025); câu chữ khoản 3 trong ghi chú theo VBHN 135/VBHN-VPQH 2025.",
  "memo": {
-  "hook": "Tử hình KHÔNG áp dụng: DƯỚI 18 tuổi, phụ nữ CÓ THAI hoặc nuôi con dưới 36 tháng, người từ 75 TUỔI.",
+  "gist": "Chỉ cho tội đặc biệt nghiêm trọng; không áp cho người dưới 18 tuổi, phụ nữ có thai, nuôi con nhỏ, người từ 75 tuổi.",
+  "kind": "compare",
+  "hook": "Ba nhóm được che chắn: trẻ, mẹ, già.",
   "tree": [
    {
     "label": "Áp dụng",
+    "icon": "scales",
     "children": [
      "Tội đặc biệt nghiêm trọng",
      "An ninh, tính mạng, ma túy, tham nhũng"
@@ -35,11 +38,22 @@
    },
    {
     "label": "Không áp dụng",
+    "icon": "shield",
     "children": [
      "Người dưới 18 tuổi khi phạm tội",
      "Phụ nữ có thai, nuôi con dưới 36 tháng",
      "Người đủ 75 tuổi trở lên"
     ]
+   }
+  ],
+  "case": {
+   "q": "Người phạm tội giết người, khi xét xử đã 76 tuổi. Tòa có được tuyên tử hình không?",
+   "a": "Không."
+  },
+  "contrast": [
+   {
+    "with": "he-thong-hinh-phat",
+    "text": "Tử hình là hình phạt nặng nhất trong hệ thống bảy hình phạt chính."
    }
   ]
  },

@@ -34,39 +34,39 @@
   "tree": [
    {
     "label": "Hiến pháp",
-    "icon": "📜"
+    "icon": "scroll"
    },
    {
     "label": "Luật",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Quốc hội"
     ]
    },
    {
     "label": "Pháp lệnh",
-    "icon": "📘",
+    "icon": "book",
     "children": [
      "Ủy ban thường vụ Quốc hội"
     ]
    },
    {
     "label": "Nghị định",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Chính phủ, rồi quyết định của Thủ tướng"
     ]
    },
    {
     "label": "Thông tư",
-    "icon": "📄",
+    "icon": "doc",
     "children": [
      "Các bộ"
     ]
    },
    {
     "label": "Văn bản địa phương",
-    "icon": "🏘️",
+    "icon": "village",
     "children": [
      "Tỉnh",
      "Xã"

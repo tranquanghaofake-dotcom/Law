@@ -5,7 +5,7 @@
  "term": "Tự ý nửa chừng chấm dứt việc phạm tội",
  "definition": "Tự ý nửa chừng chấm dứt việc phạm tội là tự mình không thực hiện tội phạm đến cùng, tuy không có gì ngăn cản. Người tự ý nửa chừng chấm dứt việc phạm tội được miễn trách nhiệm hình sự về tội định phạm; nếu hành vi thực tế đã thực hiện có đủ yếu tố cấu thành của một tội khác, thì người đó phải chịu trách nhiệm hình sự về tội này.",
  "plain": "Điều kiện: (1) TỰ MÌNH dừng lại (tự nguyện); (2) KHÔNG CÓ GÌ NGĂN CẢN; (3) dừng lại khi tội phạm CHƯA HOÀN THÀNH (ở giai đoạn chuẩn bị hoặc chưa đạt chưa hoàn thành). Hậu quả: được MIỄN TNHS về TỘI ĐỊNH PHẠM; nhưng nếu hành vi đã làm cấu thành tội khác thì chịu TNHS tội đó. Đây là chính sách khuyến khích người phạm tội dừng lại.",
- "example": "A mang súng (không có giấy phép) đến nhà B định giết B, đến nơi tự thấy hối hận và bỏ về dù không ai ngăn: A được miễn TNHS tội giết người, nhưng vẫn có thể chịu TNHS tội tàng trữ trái phép vũ khí quân dụng.",
+ "example": "A mang súng không có giấy phép đến nhà B định giết B, đến nơi tự thấy hối hận và bỏ về dù không ai ngăn: A được miễn trách nhiệm tội giết người, nhưng vẫn có thể chịu tội tàng trữ trái phép vũ khí quân dụng.",
  "source": {
   "kind": "statute",
   "cite": "Điều 16 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)",
@@ -24,10 +24,13 @@
   "tội khác"
  ],
  "memo": {
-  "hook": "TỰ MÌNH dừng khi KHÔNG AI NGĂN → miễn tội ĐỊNH PHẠM (vẫn chịu tội khác đã đủ cấu thành).",
+  "gist": "Tự mình dừng phạm tội khi không ai ngăn thì được miễn tội định làm, nhưng vẫn chịu tội khác đã đủ dấu hiệu.",
+  "kind": "checklist",
+  "hook": "Quay đầu là bờ, nhưng con dao trong túi vẫn phải giải trình.",
   "tree": [
    {
     "label": "Điều kiện",
+    "icon": "check",
     "children": [
      "Tự mình dừng lại",
      "Không có gì ngăn cản",
@@ -36,10 +39,21 @@
    },
    {
     "label": "Hệ quả",
+    "icon": "scales",
     "children": [
      "Miễn trách nhiệm về tội định phạm",
      "Vẫn chịu tội khác đã cấu thành"
     ]
+   }
+  ],
+  "case": {
+   "q": "A mang súng không giấy phép tới nhà B định giết, đến nơi tự hối hận bỏ về. A chịu tội gì?",
+   "a": "Được miễn tội giết người, nhưng vẫn có thể chịu tội tàng trữ trái phép vũ khí quân dụng."
+  },
+  "contrast": [
+   {
+    "with": "pham-toi-chua-dat",
+    "text": "Tự ý nửa chừng là tự dừng, được miễn; chưa đạt là bị ngăn, vẫn chịu."
    }
   ]
  },

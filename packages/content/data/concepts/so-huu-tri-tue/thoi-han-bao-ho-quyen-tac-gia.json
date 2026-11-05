@@ -5,7 +5,7 @@
  "term": "Thời hạn bảo hộ quyền tác giả",
  "definition": "Quyền nhân thân quy định tại các khoản 1, 2 và 4 Điều 19 của Luật này được bảo hộ vô thời hạn. (…) Tác phẩm không thuộc loại hình quy định tại điểm a khoản này có thời hạn bảo hộ là suốt cuộc đời tác giả và năm mươi năm tiếp theo năm tác giả chết; trường hợp tác phẩm có đồng tác giả thì thời hạn bảo hộ chấm dứt vào năm thứ năm mươi sau năm đồng tác giả cuối cùng chết;",
  "plain": "VÔ THỜI HẠN: đặt tên, đứng tên, toàn vẹn. CÓ THỜI HẠN (công bố + quyền tài sản): (a) điện ảnh, nhiếp ảnh, mỹ thuật ứng dụng, khuyết danh: 75 NĂM từ khi công bố lần đầu (chưa công bố trong 25 năm từ khi định hình: 100 NĂM từ khi định hình); (b) tác phẩm khác: SUỐT ĐỜI TÁC GIẢ + 50 NĂM sau năm tác giả chết (đồng tác giả: tính theo người chết sau cùng). Chấm dứt lúc 24 giờ ngày 31/12 của năm hết hạn.",
- "example": "Nhà thơ mất năm 2000: quyền tài sản với tập thơ được bảo hộ đến hết 24 giờ ngày 31/12/2050.",
+ "example": "Nhà thơ mất năm 2000: quyền tài sản với tập thơ được bảo hộ đến hết 24 giờ ngày 31 tháng 12 năm 2050.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1, điểm b khoản 2 Điều 27 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)",
@@ -24,10 +24,13 @@
  ],
  "note": "Điều 27 có nội dung được sửa đổi, bổ sung bởi Luật 36/2009/QH12 (hiệu lực 01/01/2010) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
  "memo": {
-  "hook": "Thường: SUỐT ĐỜI + 50 NĂM; điện ảnh, nhiếp ảnh: 75 NĂM.",
+  "gist": "Quyền tài sản thường kéo dài suốt đời tác giả cộng 50 năm; phim, ảnh là 75 năm; quyền đứng tên thì mãi mãi.",
+  "kind": "tree",
+  "hook": "Đời người cộng nửa thế kỷ; phim ảnh ba phần tư thế kỷ.",
   "tree": [
    {
     "label": "Vô thời hạn",
+    "icon": "infinity",
     "children": [
      "Đặt tên, đứng tên",
      "Toàn vẹn tác phẩm"
@@ -35,21 +38,34 @@
    },
    {
     "label": "Tác phẩm thông thường",
+    "icon": "person",
     "children": [
      "Suốt đời tác giả + 50 năm"
     ]
    },
    {
     "label": "Điện ảnh, nhiếp ảnh, khuyết danh",
+    "icon": "bolt",
     "children": [
      "75 năm từ khi công bố"
     ]
    },
    {
     "label": "Mốc kết thúc",
+    "icon": "calendar",
     "children": [
      "31 tháng 12"
     ]
+   }
+  ],
+  "case": {
+   "q": "Nhà thơ mất năm 2000. Quyền tài sản với tập thơ hết khi nào?",
+   "a": "Hết ngày 31 tháng 12 năm 2050."
+  },
+  "contrast": [
+   {
+    "with": "quyen-nhan-than-tac-gia",
+    "text": "Thời hạn nói quyền tài sản bao lâu; quyền nhân thân như đứng tên là mãi mãi."
    }
   ]
  },

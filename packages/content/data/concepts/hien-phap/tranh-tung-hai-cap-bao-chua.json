@@ -23,10 +23,13 @@
   "quyền bào chữa"
  ],
  "memo": {
-  "hook": "Ba bảo đảm: TRANH TỤNG – HAI CẤP – BÀO CHỮA.",
+  "gist": "Tòa án bảo đảm tranh tụng, xét xử hai cấp sơ thẩm và phúc thẩm, và quyền bào chữa của bị can, bị cáo.",
+  "kind": "tree",
+  "hook": "Được nói, được kháng, được có luật sư.",
   "tree": [
    {
     "label": "Tranh tụng",
+    "icon": "announce",
     "children": [
      "Các bên bình đẳng đưa chứng cứ",
      "Lần đầu hiến định năm 2013"
@@ -34,6 +37,7 @@
    },
    {
     "label": "Hai cấp xét xử",
+    "icon": "n2",
     "children": [
      "Sơ thẩm",
      "Phúc thẩm"
@@ -41,10 +45,21 @@
    },
    {
     "label": "Bào chữa",
+    "icon": "shield",
     "children": [
      "Bị can, bị cáo",
      "Bảo vệ lợi ích đương sự"
     ]
+   }
+  ],
+  "case": {
+   "q": "Bị cáo không đồng ý bản án sơ thẩm có quyền gì?",
+   "a": "Kháng cáo để Tòa cấp trên xử phúc thẩm, và nhờ luật sư bào chữa."
+  },
+  "contrast": [
+   {
+    "with": "xet-xu-cong-khai-tap-the",
+    "text": "Bài này nói tranh luận, hai cấp, bào chữa; bài kia nói công khai, tập thể."
    }
   ]
  },

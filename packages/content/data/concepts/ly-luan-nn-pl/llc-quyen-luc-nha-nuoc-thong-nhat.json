@@ -25,16 +25,20 @@
  ],
  "note": "Hiến pháp 2013 (hiệu lực 01/01/2014) được sửa đổi, bổ sung bởi Nghị quyết 203/2025/QH15 (hiệu lực 16/6/2025) — các điều được trích (Điều 2, 4, 6) không thuộc phạm vi sửa đổi.",
  "memo": {
-  "hook": "THỐNG NHẤT + PHÂN CÔNG + PHỐI HỢP + KIỂM SOÁT; không tam quyền phân lập.",
+  "gist": "Quyền lực nhà nước thống nhất thuộc về Nhân dân, chia cho Quốc hội, Chính phủ, Tòa án làm, có phối hợp và kiểm soát.",
+  "kind": "tree",
+  "hook": "Một bàn tay năm ngón: cùng một bàn tay, mỗi ngón một việc.",
   "tree": [
    {
     "label": "Thống nhất",
+    "icon": "fist",
     "children": [
      "Thuộc về Nhân dân"
     ]
    },
    {
     "label": "Phân công",
+    "icon": "list",
     "children": [
      "Quốc hội: lập pháp",
      "Chính phủ: hành pháp",
@@ -43,10 +47,21 @@
    },
    {
     "label": "Giữa các cơ quan",
+    "icon": "cycle",
     "children": [
      "Phối hợp",
      "Kiểm soát"
     ]
+   }
+  ],
+  "case": {
+   "q": "Quốc hội bỏ phiếu tín nhiệm thành viên Chính phủ thể hiện yếu tố nào?",
+   "a": "Kiểm soát quyền lực giữa các cơ quan."
+  },
+  "contrast": [
+   {
+    "with": "llc-nha-nuoc-phap-quyen",
+    "text": "Quyền lực thống nhất nói cách chia việc; pháp quyền nói pháp luật đứng trên tất cả."
    }
   ]
  },

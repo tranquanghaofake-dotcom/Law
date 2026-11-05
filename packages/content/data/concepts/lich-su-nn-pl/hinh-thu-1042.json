@@ -26,10 +26,13 @@
   "không còn lưu lại"
  ],
  "memo": {
-  "hook": "HÌNH THƯ 1042: bộ luật THÀNH VĂN ĐẦU TIÊN được chính sử ghi nhận, nay KHÔNG CÒN.",
+  "gist": "Hình thư năm 1042 thời Lý là bộ luật thành văn đầu tiên được chính sử ghi nhận, nay không còn.",
+  "kind": "tree",
+  "hook": "Như ngôi nhà chỉ còn trong bức ảnh cũ: biết có, nhưng không vào được.",
   "tree": [
    {
     "label": "Mốc",
+    "icon": "calendar",
     "children": [
      "1042, Lý Thái Tông",
      "Niên hiệu Minh Đạo"
@@ -37,6 +40,7 @@
    },
    {
     "label": "Lý do",
+    "icon": "question",
     "children": [
      "Kiện tụng phiền nhiễu",
      "Quan lại xử khắc nghiệt"
@@ -44,6 +48,7 @@
    },
    {
     "label": "Kỹ thuật",
+    "icon": "pen",
     "children": [
      "Chia môn loại",
      "Biên thành điều khoản"
@@ -51,9 +56,20 @@
    },
    {
     "label": "Hiện trạng",
+    "icon": "end",
     "children": [
      "Không còn lưu lại"
     ]
+   }
+  ],
+  "case": {
+   "q": "Vì sao Lý Thái Tông ban Hình thư?",
+   "a": "Vì kiện tụng phiền nhiễu, quan lại xử khắc nghiệt."
+  },
+  "contrast": [
+   {
+    "with": "hinh-thu-thoi-tran",
+    "text": "Hình thư 1042 của nhà Lý; nhà Trần cũng có Hình thư năm 1341."
    }
   ]
  },

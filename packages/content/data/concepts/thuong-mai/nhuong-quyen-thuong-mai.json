@@ -23,10 +23,13 @@
   "kiểm soát và trợ giúp"
  ],
  "memo": {
-  "hook": "Bên nhận TỰ BỎ VỐN kinh doanh theo CÁCH THỨC của bên nhượng.",
+  "gist": "Bên nhận quyền tự bỏ vốn kinh doanh dưới thương hiệu và theo cách làm do bên nhượng quyền đặt ra.",
+  "kind": "tree",
+  "hook": "Như mở quán trà sữa mang tên hãng lớn: vốn của mình, công thức của hãng.",
   "tree": [
    {
     "label": "Bên nhận quyền",
+    "icon": "cart",
     "children": [
      "Tự mình kinh doanh",
      "Theo cách thức bên nhượng"
@@ -34,6 +37,7 @@
    },
    {
     "label": "Gắn với",
+    "icon": "doc",
     "children": [
      "Nhãn hiệu, tên thương mại",
      "Bí quyết kinh doanh"
@@ -41,6 +45,7 @@
    },
    {
     "label": "Bên nhượng quyền",
+    "icon": "search",
     "children": [
      "Kiểm soát",
      "Trợ giúp"
@@ -48,9 +53,20 @@
    },
    {
     "label": "Hình thức",
+    "icon": "pen",
     "children": [
      "Văn bản"
     ]
+   }
+  ],
+  "case": {
+   "q": "Một người mở quán trà sữa mang thương hiệu nổi tiếng, theo công thức hãng và chịu kiểm tra. Đây là gì?",
+   "a": "Nhượng quyền thương mại."
+  },
+  "contrast": [
+   {
+    "with": "dai-ly-thuong-mai",
+    "text": "Nhượng quyền là tự kinh doanh bằng vốn mình; đại lý là bán hộ hàng của bên giao."
    }
   ]
  },

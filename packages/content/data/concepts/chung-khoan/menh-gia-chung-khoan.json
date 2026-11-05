@@ -22,16 +22,20 @@
   "Đồng Việt Nam"
  ],
  "memo": {
-  "hook": "Mệnh giá cổ phiếu 10 NGHÌN, trái phiếu 100 NGHÌN; khác GIÁ THỊ TRƯỜNG.",
+  "gist": "Mệnh giá cổ phiếu, chứng chỉ quỹ là 10.000 đồng, trái phiếu 100.000 đồng; khác với giá thị trường.",
+  "kind": "tree",
+  "hook": "Giá in trên vé và giá phe vé ngoài cổng là hai chuyện.",
   "tree": [
    {
     "label": "Đơn vị",
+    "icon": "flag",
     "children": [
      "Đồng Việt Nam"
     ]
    },
    {
     "label": "Mức",
+    "icon": "money",
     "children": [
      "Cổ phiếu, chứng chỉ quỹ: 10.000 đồng",
      "Trái phiếu: 100.000 đồng"
@@ -39,9 +43,20 @@
    },
    {
     "label": "Phân biệt",
+    "icon": "compare",
     "children": [
      "Giá thị trường khác mệnh giá"
     ]
+   }
+  ],
+  "case": {
+   "q": "Cổ phiếu đang giao dịch 7.000 đồng, dưới mệnh giá. Công ty có được chào bán thêm dưới mệnh giá không?",
+   "a": "Được, theo trường hợp luật cho phép."
+  },
+  "contrast": [
+   {
+    "with": "dieu-kien-chao-ban-co-phieu-lan-dau",
+    "text": "Mệnh giá là giá ghi; điều kiện chào bán là những gì phải đủ để phát hành."
    }
   ]
  },

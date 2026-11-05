@@ -24,10 +24,13 @@
   "hoàn toàn do lỗi bên bị thiệt hại"
  ],
  "memo": {
-  "hook": "Bồi thường ngoài hợp đồng: HÀNH VI XÂM PHẠM + THIỆT HẠI + NHÂN QUẢ; không cần chứng minh LỖI.",
+  "gist": "Ai có hành vi xâm phạm gây thiệt hại cho người khác thì phải đền, không cần chứng minh lỗi.",
+  "kind": "checklist",
+  "hook": "Ba mắt xích: có việc làm sai, có thiệt hại, cái này gây ra cái kia.",
   "tree": [
    {
     "label": "Yếu tố",
+    "icon": "link",
     "children": [
      "Hành vi xâm phạm",
      "Thiệt hại thực tế",
@@ -36,6 +39,7 @@
    },
    {
     "label": "Miễn",
+    "icon": "shield",
     "children": [
      "Bất khả kháng",
      "Hoàn toàn do lỗi bên bị hại"
@@ -43,9 +47,20 @@
    },
    {
     "label": "Tài sản gây hại",
+    "icon": "plant",
     "children": [
      "Chủ sở hữu, người chiếm hữu bồi thường"
     ]
+   }
+  ],
+  "case": {
+   "q": "Cây mục gốc trong vườn nhà A đổ làm hỏng ô tô của B. Ai phải bồi thường?",
+   "a": "A, chủ sở hữu cây."
+  },
+  "contrast": [
+   {
+    "with": "trach-nhiem-do-vi-pham-nghia-vu",
+    "text": "Bồi thường ngoài hợp đồng không cần có hợp đồng; vi phạm nghĩa vụ là làm sai điều đã cam kết."
    }
   ]
  },

@@ -5,7 +5,7 @@
  "term": "Cho thuê lại lao động",
  "definition": "Cho thuê lại lao động là việc người lao động giao kết hợp đồng lao động với một người sử dụng lao động là doanh nghiệp cho thuê lại lao động, sau đó người lao động được chuyển sang làm việc và chịu sự điều hành của người sử dụng lao động khác mà vẫn duy trì quan hệ lao động với người sử dụng lao động đã giao kết hợp đồng lao động. Hoạt động cho thuê lại lao động là ngành, nghề kinh doanh có điều kiện, chỉ được thực hiện bởi các doanh nghiệp có Giấy phép hoạt động cho thuê lại lao động và áp dụng đối với một số công việc nhất định. Thời hạn cho thuê lại lao động đối với người lao động tối đa là 12 tháng.",
  "plain": "Quan hệ BA BÊN: doanh nghiệp cho thuê lại (ký HĐLĐ, trả lương, là người sử dụng lao động) — người lao động thuê lại — bên thuê lại (điều hành công việc hằng ngày). Điều kiện: ngành nghề kinh doanh CÓ ĐIỀU KIỆN, phải KÝ QUỸ và có GIẤY PHÉP (Điều 54); chỉ cho một số công việc theo danh mục; tối đa 12 THÁNG. Bên thuê lại chỉ được dùng khi: tăng đột ngột nhu cầu tạm thời; thay người nghỉ thai sản, tai nạn, nghĩa vụ công dân; cần lao động trình độ cao (khoản 2 Điều 53); KHÔNG được dùng để thay người đang đình công, giải quyết tranh chấp lao động, thay người bị cho thôi việc do thay đổi cơ cấu, lý do kinh tế (khoản 3 Điều 53); không được chuyển tiếp người lao động thuê lại cho bên khác (khoản 4).",
- "example": "Công ty X (có giấy phép) ký HĐLĐ với anh H rồi cho Nhà máy Y thuê lại anh H 10 tháng để thay một kỹ sư nghỉ thai sản; X vẫn trả lương, Y điều hành công việc.",
+ "example": "Công ty X có giấy phép ký hợp đồng lao động với anh H rồi cho Nhà máy Y thuê lại anh H 10 tháng để thay kỹ sư nghỉ thai sản; X vẫn trả lương, Y điều hành công việc.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1, 2 Điều 52; khoản 1 Điều 53 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)",
@@ -23,10 +23,13 @@
   "tối đa 12 tháng"
  ],
  "memo": {
-  "hook": "Quan hệ BA BÊN: ký với bên cho thuê, làm cho bên thuê.",
+  "gist": "Người lao động ký hợp đồng với công ty cho thuê, nhưng sang làm và nghe điều hành ở một công ty khác.",
+  "kind": "tree",
+  "hook": "Như cầu thủ cho mượn: hợp đồng ở câu lạc bộ cũ, ra sân cho câu lạc bộ mới.",
   "tree": [
    {
     "label": "Ba bên",
+    "icon": "people",
     "children": [
      "Doanh nghiệp cho thuê: ký hợp đồng, trả lương",
      "Bên thuê lại: điều hành công việc",
@@ -35,6 +38,7 @@
    },
    {
     "label": "Điều kiện",
+    "icon": "scroll",
     "children": [
      "Ngành nghề kinh doanh có điều kiện",
      "Ký quỹ, có giấy phép"
@@ -42,10 +46,21 @@
    },
    {
     "label": "Giới hạn",
+    "icon": "clock",
     "children": [
      "Tối đa 12 tháng",
      "Chỉ công việc theo danh mục"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty X cho Nhà máy Y thuê lại anh H trong 18 tháng. Có hợp pháp không?",
+   "a": "Không. Thời hạn cho thuê lại tối đa là 12 tháng."
+  },
+  "contrast": [
+   {
+    "with": "hop-dong-cho-thue-lai",
+    "text": "Cho thuê lại lao động là cả quan hệ ba bên; hợp đồng cho thuê lại chỉ là giấy ký giữa công ty cho thuê và bên thuê."
    }
   ]
  },

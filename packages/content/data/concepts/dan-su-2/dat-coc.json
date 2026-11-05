@@ -23,10 +23,13 @@
   "trừ thỏa thuận khác"
  ],
  "memo": {
-  "hook": "Bên ĐẶT từ chối → MẤT CỌC; bên NHẬN từ chối → trả cọc + PHẠT TƯƠNG ĐƯƠNG.",
+  "gist": "Giao trước một khoản để bảo đảm ký hoặc làm hợp đồng; bên đặt bỏ thì mất cọc, bên nhận bỏ thì trả gấp đôi.",
+  "kind": "compare",
+  "hook": "Ai bỏ cuộc thì người đó mất bằng số tiền cọc.",
   "tree": [
    {
     "label": "Mục đích",
+    "icon": "target",
     "children": [
      "Bảo đảm giao kết",
      "Hoặc thực hiện hợp đồng"
@@ -34,21 +37,34 @@
    },
    {
     "label": "Thực hiện xong",
+    "icon": "check",
     "children": [
      "Trả lại hoặc trừ vào tiền"
     ]
    },
    {
     "label": "Bên đặt cọc từ chối",
+    "icon": "ban",
     "children": [
      "Mất cọc"
     ]
    },
    {
     "label": "Bên nhận cọc từ chối",
+    "icon": "money",
     "children": [
      "Trả cọc + khoản tương đương"
     ]
+   }
+  ],
+  "case": {
+   "q": "Đặt cọc 20 triệu mua nhà, chủ nhà bán cho người khác. Chủ nhà phải trả bao nhiêu?",
+   "a": "40 triệu: trả lại 20 triệu cọc và thêm 20 triệu."
+  },
+  "contrast": [
+   {
+    "with": "phat-vi-pham",
+    "text": "Đặt cọc là tiền giao trước; phạt vi phạm là tiền phải trả khi vi phạm, đã thỏa thuận trong hợp đồng."
    }
   ]
  },

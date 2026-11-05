@@ -24,10 +24,13 @@
  ],
  "note": "Điều 22 có nội dung được sửa đổi, bổ sung bởi Luật 07/2022/QH15 (hiệu lực 01/01/2023) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
  "memo": {
-  "hook": "Phần mềm được bảo hộ như TÁC PHẨM VĂN HỌC, KHÔNG phải sáng chế.",
+  "gist": "Phần mềm được bảo hộ quyền tác giả như tác phẩm văn học, không phải như sáng chế.",
+  "kind": "tree",
+  "hook": "Mã nguồn là bài văn viết cho máy đọc.",
   "tree": [
    {
     "label": "Định nghĩa",
+    "icon": "device",
     "children": [
      "Tập hợp chỉ dẫn",
      "Mã nguồn hoặc mã máy"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Bảo hộ",
+    "icon": "book",
     "children": [
      "Quyền tác giả",
      "Như tác phẩm văn học"
@@ -42,15 +46,27 @@
    },
    {
     "label": "Người dùng hợp pháp",
+    "icon": "device",
     "children": [
      "Một bản sao dự phòng"
     ]
    },
    {
     "label": "Không bảo hộ",
+    "icon": "ban",
     "children": [
      "Dưới dạng sáng chế tự thân"
     ]
+   }
+  ],
+  "case": {
+   "q": "Bạn viết ứng dụng web học luật. Người khác sao chép nguyên mã để bán. Có xâm phạm không?",
+   "a": "Có. Mã nguồn được bảo hộ ngay khi viết ra."
+  },
+  "contrast": [
+   {
+    "with": "sang-che",
+    "text": "Phần mềm bảo hộ bằng quyền tác giả; sáng chế là giải pháp kỹ thuật, phải đăng ký."
    }
   ]
  },

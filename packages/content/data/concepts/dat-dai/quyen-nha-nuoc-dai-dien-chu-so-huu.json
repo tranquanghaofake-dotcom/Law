@@ -5,7 +5,7 @@
  "term": "Quyền của Nhà nước là đại diện chủ sở hữu về đất đai",
  "definition": "1. Quyết định quy hoạch sử dụng đất. 2. Quyết định mục đích sử dụng đất thông qua quy hoạch sử dụng đất, kế hoạch sử dụng đất, giao đất, cho thuê đất, công nhận quyền sử dụng đất và cho phép chuyển mục đích sử dụng đất. 3. Quy định hạn mức sử dụng đất gồm hạn mức giao đất nông nghiệp, hạn mức giao đất ở, hạn mức công nhận đất ở và hạn mức nhận chuyển quyền sử dụng đất nông nghiệp. 4. Quyết định thời hạn sử dụng đất. 5. Quyết định thu hồi đất. 6. Quyết định trưng dụng đất.",
  "plain": "Nhà nước thực hiện quyền chủ sở hữu bằng: QUY HOẠCH; quyết định MỤC ĐÍCH sử dụng; HẠN MỨC; THỜI HẠN; THU HỒI, TRƯNG DỤNG; GIAO ĐẤT, CHO THUÊ (có/không thu tiền); CÔNG NHẬN quyền; GIÁ ĐẤT (nguyên tắc, bảng giá, giá cụ thể); CHÍNH SÁCH TÀI CHÍNH, điều tiết giá trị tăng thêm. Phân biệt THU HỒI (chấm dứt quyền sử dụng) với TRƯNG DỤNG (sử dụng có thời hạn trong tình trạng khẩn cấp, quốc phòng…).",
- "example": "Ủy ban nhân dân cấp tỉnh quyết định hạn mức giao đất ở tại địa phương theo khung của luật — đây là thực hiện quyền \"quy định hạn mức sử dụng đất\" của Nhà nước.",
+ "example": "Ủy ban nhân dân cấp tỉnh quyết định hạn mức giao đất ở tại địa phương theo khung của luật: đây là thực hiện quyền quy định hạn mức sử dụng đất của Nhà nước.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1–6 Điều 13 Luật Đất đai 2024 (sửa đổi, bổ sung năm 2024, 2025)",
@@ -24,10 +24,13 @@
   "thu hồi, trưng dụng"
  ],
  "memo": {
-  "hook": "THU HỒI là chấm dứt quyền; TRƯNG DỤNG là dùng có thời hạn.",
+  "gist": "Nhà nước thay mặt toàn dân quyết định quy hoạch, mục đích, hạn mức, giá đất, và trao hoặc lấy lại đất.",
+  "kind": "tree",
+  "hook": "Như người quản gia của dòng họ: giữ sổ sách, chia đất, khi cần thì thu về.",
   "tree": [
    {
     "label": "Quyết định",
+    "icon": "arrow",
     "children": [
      "Quy hoạch",
      "Mục đích sử dụng",
@@ -36,6 +39,7 @@
    },
    {
     "label": "Trao quyền",
+    "icon": "handshake",
     "children": [
      "Giao đất, cho thuê",
      "Công nhận quyền"
@@ -43,6 +47,7 @@
    },
    {
     "label": "Lấy lại",
+    "icon": "cycle",
     "children": [
      "Thu hồi",
      "Trưng dụng"
@@ -50,10 +55,21 @@
    },
    {
     "label": "Tài chính",
+    "icon": "money",
     "children": [
      "Giá đất",
      "Điều tiết giá trị tăng thêm"
     ]
+   }
+  ],
+  "case": {
+   "q": "Nhà nước lấy đất hẳn và mượn đất dùng có thời hạn khác nhau thế nào?",
+   "a": "Lấy hẳn là thu hồi, chấm dứt quyền; mượn có thời hạn là trưng dụng."
+  },
+  "contrast": [
+   {
+    "with": "so-huu-toan-dan-dat-dai",
+    "text": "Bài này nói Nhà nước làm được gì; sở hữu toàn dân nói đất thuộc về ai."
    }
   ]
  },

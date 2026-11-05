@@ -24,10 +24,13 @@
   "cấp chung"
  ],
  "memo": {
-  "hook": "Công ty quản lý quỹ: 3 nghiệp vụ cấp CHUNG; KHÔNG được môi giới, tự doanh, bảo lãnh.",
+  "gist": "Được quản lý quỹ, quản lý danh mục và tư vấn đầu tư; không được môi giới, tự doanh, bảo lãnh.",
+  "kind": "tree",
+  "hook": "Người quản gia tiền bạc, không đứng quầy giao dịch.",
   "tree": [
    {
     "label": "Nghiệp vụ",
+    "icon": "box",
     "children": [
      "Quản lý quỹ",
      "Quản lý danh mục",
@@ -36,16 +39,28 @@
    },
    {
     "label": "Cấp phép",
+    "icon": "scroll",
     "children": [
      "Chung một lần"
     ]
    },
    {
     "label": "Không được",
+    "icon": "ban",
     "children": [
      "Môi giới, tự doanh",
      "Bảo lãnh phát hành"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty quản lý quỹ muốn làm môi giới cho nhà đầu tư cá nhân. Có được không?",
+   "a": "Không."
+  },
+  "contrast": [
+   {
+    "with": "nghiep-vu-cong-ty-chung-khoan",
+    "text": "Quản lý quỹ không được môi giới, tự doanh; công ty chứng khoán thì được."
    }
   ]
  },

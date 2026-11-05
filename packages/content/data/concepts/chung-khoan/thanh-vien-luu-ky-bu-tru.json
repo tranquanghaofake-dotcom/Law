@@ -23,10 +23,13 @@
  ],
  "note": "Luật 56/2024/QH15 (hiệu lực 01/01/2025) sửa điểm a khoản 4 Điều 56: khi bù trừ, thanh toán giao dịch chứng khoán phái sinh, thành viên bù trừ là ngân hàng thương mại, chi nhánh ngân hàng nước ngoài chỉ được bù trừ, thanh toán giao dịch cho chính mình (không làm cho khách hàng). Giáo trình 2021 chưa có giới hạn này.",
  "memo": {
-  "hook": "Hai cửa vào Tổng công ty: thành viên LƯU KÝ và thành viên BÙ TRỪ; cần HAI lớp chấp thuận.",
+  "gist": "Công ty chứng khoán, ngân hàng muốn giữ chứng khoán, bù trừ cho khách phải là thành viên của Tổng công ty lưu ký.",
+  "kind": "compare",
+  "hook": "Hai cánh cửa vào kho chung, mỗi cửa một chìa riêng.",
   "tree": [
    {
     "label": "Thành viên lưu ký",
+    "icon": "bank",
     "children": [
      "Giữ chứng khoán",
      "Thanh toán cho khách"
@@ -34,6 +37,7 @@
    },
    {
     "label": "Thành viên bù trừ",
+    "icon": "calc",
     "children": [
      "Bù trừ, thanh toán",
      "Nhất là phái sinh"
@@ -41,6 +45,7 @@
    },
    {
     "label": "Là",
+    "icon": "company",
     "children": [
      "Công ty chứng khoán",
      "Ngân hàng"
@@ -48,10 +53,21 @@
    },
    {
     "label": "Chấp thuận",
+    "icon": "check",
     "children": [
      "Ủy ban cấp giấy",
      "Tổng công ty chấp thuận"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ngân hàng muốn làm lưu ký chứng khoán cần gì?",
+   "a": "Giấy phép có hoạt động lưu ký, đủ an toàn vốn, có lãi, rồi được Ủy ban và Tổng công ty chấp thuận."
+  },
+  "contrast": [
+   {
+    "with": "tong-cong-ty-luu-ky-bu-tru",
+    "text": "Thành viên là cửa vào; Tổng công ty là kho chung."
    }
   ]
  },

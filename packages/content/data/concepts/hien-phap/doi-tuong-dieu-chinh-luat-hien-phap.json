@@ -24,22 +24,36 @@
  ],
  "note": "Thẻ dạng tóm lược quan điểm học thuật, chưa đối chiếu nguyên văn giáo trình; cần Hào đối chiếu trang 1–9 của sách.",
  "memo": {
-  "hook": "Điều chỉnh các quan hệ NỀN TẢNG; ngành luật khác cụ thể hóa tiếp.",
+  "gist": "Luật Hiến pháp điều chỉnh quan hệ nền tảng nhất: chế độ chính trị, Nhà nước với công dân, bộ máy nhà nước.",
+  "kind": "tree",
+  "hook": "Móng nhà; các ngành luật khác xây tường lên trên.",
   "tree": [
    {
     "label": "Tính chất",
+    "icon": "stairs",
     "children": [
      "Quan hệ xã hội cơ bản, quan trọng nhất"
     ]
    },
    {
     "label": "Nhóm quan hệ",
+    "icon": "list",
     "children": [
      "Chế độ chính trị",
      "Nhà nước – công dân",
      "Kinh tế, xã hội, văn hóa",
      "Tổ chức bộ máy nhà nước"
     ]
+   }
+  ],
+  "case": {
+   "q": "Quan hệ Chính phủ báo cáo công tác trước Quốc hội có thuộc luật Hiến pháp không?",
+   "a": "Có."
+  },
+  "contrast": [
+   {
+    "with": "phuong-phap-dieu-chinh-luat-hien-phap",
+    "text": "Đối tượng là quan hệ nào; phương pháp là điều chỉnh bằng cách nào."
    }
   ]
  },

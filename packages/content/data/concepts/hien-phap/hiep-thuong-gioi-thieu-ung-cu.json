@@ -23,16 +23,20 @@
   "giám sát"
  ],
  "memo": {
-  "hook": "Người ứng cử, kể cả TỰ ỨNG CỬ, đều qua HIỆP THƯƠNG.",
+  "gist": "Mặt trận Tổ quốc chủ trì hiệp thương chọn, giới thiệu người ứng cử, kể cả người tự ứng cử, và giám sát bầu cử.",
+  "kind": "steps",
+  "hook": "Mọi ứng viên đều phải qua cửa hiệp thương.",
   "tree": [
    {
     "label": "Chủ trì",
+    "icon": "handshake",
     "children": [
      "Mặt trận Tổ quốc"
     ]
    },
    {
     "label": "Hiệp thương",
+    "icon": "announce",
     "children": [
      "Lựa chọn, giới thiệu người ứng cử",
      "Lấy ý kiến cử tri"
@@ -40,9 +44,20 @@
    },
    {
     "label": "Giám sát",
+    "icon": "eye",
     "children": [
      "Việc bầu cử"
     ]
+   }
+  ],
+  "case": {
+   "q": "Người tự ứng cử không được hội nghị hiệp thương lần ba chọn vào danh sách. Có được ứng cử không?",
+   "a": "Không, vì không có tên trong danh sách chính thức."
+  },
+  "contrast": [
+   {
+    "with": "hoi-dong-bau-cu-quoc-gia",
+    "text": "Hiệp thương do Mặt trận làm, chọn người; Hội đồng bầu cử tổ chức cuộc bầu."
    }
   ]
  },

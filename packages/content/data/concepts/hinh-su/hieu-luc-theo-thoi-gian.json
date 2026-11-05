@@ -5,7 +5,7 @@
  "term": "Hiệu lực về thời gian và hiệu lực hồi tố",
  "definition": "Điều luật được áp dụng đối với một hành vi phạm tội là điều luật đang có hiệu lực thi hành tại thời điểm mà hành vi phạm tội được thực hiện. (…) Điều luật xóa bỏ một tội phạm, một hình phạt, một tình tiết tăng nặng, quy định một hình phạt nhẹ hơn, một tình tiết giảm nhẹ mới hoặc mở rộng phạm vi áp dụng án treo, miễn trách nhiệm hình sự, loại trừ trách nhiệm hình sự, miễn hình phạt, giảm hình phạt, tha tù trước thời hạn có điều kiện, xóa án tích và quy định khác có lợi cho người phạm tội, thì được áp dụng đối với hành vi phạm tội đã thực hiện trước khi điều luật đó có hiệu lực thi hành.",
  "plain": "Nguyên tắc chung: áp dụng điều luật CÓ HIỆU LỰC TẠI THỜI ĐIỂM THỰC HIỆN HÀNH VI. KHÔNG HỒI TỐ điều luật bất lợi (tội mới, hình phạt nặng hơn, tình tiết tăng nặng mới… — khoản 2). CÓ HỒI TỐ điều luật CÓ LỢI cho người phạm tội (khoản 3). Ví dụ thực tế: Luật 86/2025/QH15 bỏ hình phạt tử hình ở một số tội (hiệu lực 01/7/2025) được áp dụng có lợi cho người phạm tội trước đó.",
- "example": "Một người phạm tội năm 2024 với tội mà khi đó có hình phạt tử hình; từ 01/7/2025 luật bỏ hình phạt tử hình ở tội đó: khi xét xử, Tòa án áp dụng quy định mới có lợi.",
+ "example": "Một người phạm tội năm 2024 khi tội đó còn hình phạt tử hình; từ ngày 1 tháng 7 năm 2025 luật bỏ tử hình ở tội này: khi xét xử, Tòa án áp dụng quy định mới có lợi.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1, khoản 3 Điều 7 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)",
@@ -22,16 +22,20 @@
   "hồi tố điều luật có lợi"
  ],
  "memo": {
-  "hook": "Áp luật lúc THỰC HIỆN hành vi; luật BẤT LỢI không hồi tố, luật CÓ LỢI được hồi tố.",
+  "gist": "Áp luật có hiệu lực lúc thực hiện hành vi; luật mới bất lợi không áp lại, luật mới có lợi thì được áp lại.",
+  "kind": "compare",
+  "hook": "Luật mới chỉ được quay lại để giúp, không quay lại để hại.",
   "tree": [
    {
     "label": "Nguyên tắc",
+    "icon": "calendar",
     "children": [
      "Luật có hiệu lực khi thực hiện hành vi"
     ]
    },
    {
     "label": "Không hồi tố",
+    "icon": "ban",
     "children": [
      "Tội mới",
      "Hình phạt nặng hơn",
@@ -40,9 +44,20 @@
    },
    {
     "label": "Hồi tố",
+    "icon": "check",
     "children": [
      "Điều luật có lợi"
     ]
+   }
+  ],
+  "case": {
+   "q": "Người phạm tội năm 2024 khi tội đó còn tử hình; từ ngày 1 tháng 7 năm 2025 luật bỏ tử hình tội đó. Khi xử áp quy định nào?",
+   "a": "Quy định mới có lợi."
+  },
+  "contrast": [
+   {
+    "with": "hieu-luc-theo-lanh-tho",
+    "text": "Hiệu lực thời gian là luật nào áp theo lúc; hiệu lực lãnh thổ là áp ở đâu."
    }
   ]
  },

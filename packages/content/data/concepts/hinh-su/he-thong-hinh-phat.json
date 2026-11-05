@@ -24,10 +24,13 @@
   "phạt tiền, trục xuất"
  ],
  "memo": {
-  "hook": "7 hình phạt CHÍNH (cảnh cáo → tử hình); mỗi tội MỘT hình phạt chính.",
+  "gist": "Có bảy hình phạt chính từ cảnh cáo tới tử hình, và các hình phạt bổ sung; mỗi tội chỉ một hình phạt chính.",
+  "kind": "ladder",
+  "hook": "Mỗi tội một món chính, kèm thêm vài món phụ.",
   "tree": [
    {
     "label": "Hình phạt chính",
+    "icon": "stairs",
     "children": [
      "Cảnh cáo, phạt tiền",
      "Cải tạo không giam giữ, trục xuất",
@@ -37,6 +40,7 @@
    },
    {
     "label": "Hình phạt bổ sung",
+    "icon": "calc",
     "children": [
      "Cấm đảm nhiệm chức vụ, hành nghề",
      "Cấm cư trú, quản chế",
@@ -45,9 +49,20 @@
    },
    {
     "label": "Nguyên tắc",
+    "icon": "n1",
     "children": [
      "Một hình phạt chính"
     ]
+   }
+  ],
+  "case": {
+   "q": "Một người phạm tội tham ô có thể vừa bị tù có thời hạn vừa bị cảnh cáo cho cùng tội không?",
+   "a": "Không. Mỗi tội chỉ một hình phạt chính."
+  },
+  "contrast": [
+   {
+    "with": "hinh-phat",
+    "text": "Hệ thống là danh sách các hình phạt; hình phạt là khái niệm chung."
    }
   ]
  },

@@ -21,20 +21,34 @@
   "không tổ chức, cá nhân nào khác"
  ],
  "memo": {
-  "hook": "Chỉ SỞ GIAO DỊCH Việt Nam và công ty con (HOSE, HNX) được tổ chức thị trường.",
+  "gist": "Chỉ Sở Giao dịch Chứng khoán Việt Nam và công ty con được tổ chức thị trường giao dịch chứng khoán; người khác bị cấm.",
+  "kind": "compare",
+  "hook": "Chỉ một nhà được mở chợ chứng khoán.",
   "tree": [
    {
     "label": "Được phép",
+    "icon": "state",
     "children": [
      "Sở giao dịch chứng khoán Việt Nam",
-     "Công ty con: HOSE, HNX"
+     "Công ty con: sàn Thành phố Hồ Chí Minh, sàn Hà Nội"
     ]
    },
    {
     "label": "Cấm",
+    "icon": "ban",
     "children": [
      "Mọi tổ chức, cá nhân khác"
     ]
+   }
+  ],
+  "case": {
+   "q": "Một công ty lập website cho người dùng đặt lệnh mua bán cổ phần chưa niêm yết, tự khớp lệnh và thu phí. Có hợp pháp không?",
+   "a": "Không. Đó là tự tổ chức thị trường trái phép."
+  },
+  "contrast": [
+   {
+    "with": "so-giao-dich-chung-khoan-viet-nam",
+    "text": "Độc quyền tổ chức thị trường là nguyên tắc; Sở giao dịch là chủ thể được giao."
    }
   ]
  },

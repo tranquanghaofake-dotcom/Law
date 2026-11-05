@@ -32,14 +32,14 @@
   "tree": [
    {
     "label": "Đối chiếu",
-    "icon": "🔍",
+    "icon": "search",
     "children": [
      "Với luật mới, thực tế mới"
     ]
    },
    {
     "label": "Phát hiện",
-    "icon": "⚠️",
+    "icon": "warn",
     "children": [
      "Mâu thuẫn, chồng chéo",
      "Hết hiệu lực, không còn phù hợp"
@@ -47,14 +47,14 @@
    },
    {
     "label": "Xử lý",
-    "icon": "🛠️",
+    "icon": "tool",
     "children": [
      "Sửa đổi, bãi bỏ hoặc kiến nghị"
     ]
    },
    {
     "label": "Đi kèm",
-    "icon": "🗂️",
+    "icon": "list",
     "children": [
      "Hệ thống hóa văn bản"
     ]

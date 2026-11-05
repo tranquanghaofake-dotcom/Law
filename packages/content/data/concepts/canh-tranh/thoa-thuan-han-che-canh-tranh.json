@@ -24,10 +24,13 @@
   "thông đồng đấu thầu"
  ],
  "memo": {
-  "hook": "DƯỚI MỌI HÌNH THỨC: văn bản, miệng, ngầm định.",
+  "gist": "Các bên ngầm hay công khai thống nhất với nhau, gây hoặc có thể gây hại cho cạnh tranh, bằng bất kỳ hình thức nào.",
+  "kind": "tree",
+  "hook": "Không cần chữ ký: một cái gật đầu qua điện thoại cũng đủ.",
   "tree": [
    {
     "label": "Hình thức",
+    "icon": "announce",
     "children": [
      "Văn bản, miệng, ngầm",
      "Quyết định của hiệp hội"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Loại chính",
+    "icon": "list",
     "children": [
      "Ấn định giá",
      "Phân chia thị trường",
@@ -44,10 +48,21 @@
    },
    {
     "label": "Phân loại",
+    "icon": "compare",
     "children": [
      "Ngang: cùng thị trường",
      "Dọc: các công đoạn"
     ]
+   }
+  ],
+  "case": {
+   "q": "Các công ty xi măng gọi điện chia nhau mỗi công ty bán một tỉnh, không ký giấy. Có phải thỏa thuận hạn chế cạnh tranh không?",
+   "a": "Có. Thỏa thuận phân chia thị trường, dù không có văn bản."
+  },
+  "contrast": [
+   {
+    "with": "thoa-thuan-han-che-canh-tranh-bi-cam",
+    "text": "Bài này định nghĩa thỏa thuận; bài kia nói loại nào bị cấm ngay, loại nào cấm khi gây hại đáng kể."
    }
   ]
  },

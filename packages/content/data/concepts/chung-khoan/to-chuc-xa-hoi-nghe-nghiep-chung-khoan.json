@@ -22,16 +22,20 @@
   "Ủy ban giám sát"
  ],
  "memo": {
-  "hook": "Kênh TỰ QUẢN của giới nghề: theo luật về hội; quy tắc đạo đức cần Ủy ban CHẤP THUẬN.",
+  "gist": "Hội nghề nghiệp chứng khoán lập theo luật về hội, soạn quy tắc đạo đức nghề; quy tắc phải được Ủy ban chấp thuận.",
+  "kind": "tree",
+  "hook": "Giới nghề tự đặt nội quy, trọng tài duyệt.",
   "tree": [
    {
     "label": "Thành lập",
+    "icon": "handshake",
     "children": [
      "Theo pháp luật về hội"
     ]
    },
    {
     "label": "Việc làm",
+    "icon": "scroll",
     "children": [
      "Bộ quy tắc đạo đức nghề nghiệp",
      "Phổ biến pháp luật"
@@ -39,15 +43,27 @@
    },
    {
     "label": "Kiểm soát",
+    "icon": "eye",
     "children": [
      "Ủy ban chấp thuận, giám sát"
     ]
    },
    {
     "label": "Không phải",
+    "icon": "ban",
     "children": [
      "Cơ quan nhà nước"
     ]
+   }
+  ],
+  "case": {
+   "q": "Hiệp hội các công ty chứng khoán soạn bộ quy tắc đạo đức. Có được ban hành ngay không?",
+   "a": "Không, phải được Ủy ban chấp thuận."
+  },
+  "contrast": [
+   {
+    "with": "uy-ban-chung-khoan-nha-nuoc",
+    "text": "Hội là tổ chức tự quản; Ủy ban là cơ quan nhà nước."
    }
   ]
  },

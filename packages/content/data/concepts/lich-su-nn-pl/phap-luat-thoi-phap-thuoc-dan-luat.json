@@ -26,10 +26,13 @@
  ],
  "note": "Các bộ luật nêu ở đây đã hết hiệu lực; Sắc lệnh 47 chỉ tạm giữ chúng sau năm 1945.",
  "memo": {
-  "hook": "Dân luật Pháp thuộc chia BA KHỐI: Bắc Kỳ 1931, Trung Kỳ 1936–1939, Nam Kỳ giữ cũ.",
+  "gist": "Thời Pháp thuộc có ba khối dân luật: Bắc Kỳ năm 1931, Trung Kỳ 1936 đến 1939, Nam Kỳ giữ luật cũ.",
+  "kind": "compare",
+  "hook": "Ba miền ba bộ áo khác nhau.",
   "tree": [
    {
     "label": "Bắc Kỳ",
+    "icon": "map",
     "children": [
      "Dân luật Bắc kỳ 1931",
      "Nghị định Thống sứ, Toàn quyền"
@@ -37,6 +40,7 @@
    },
    {
     "label": "Trung Kỳ",
+    "icon": "state",
     "children": [
      "Dân luật Trung kỳ 1936–1939",
      "Dụ của vua"
@@ -44,9 +48,20 @@
    },
    {
     "label": "Nam Kỳ",
+    "icon": "map",
     "children": [
      "Luật hộ giữ như cũ"
     ]
+   }
+  ],
+  "case": {
+   "q": "Dân luật Trung Kỳ được ban bằng văn bản gì?",
+   "a": "Dụ của vua Nguyễn."
+  },
+  "contrast": [
+   {
+    "with": "phap-luat-thoi-phap-thuoc-hinh-luat",
+    "text": "Bài này là dân luật; bài kia là hình luật thời Pháp thuộc."
    }
   ]
  },

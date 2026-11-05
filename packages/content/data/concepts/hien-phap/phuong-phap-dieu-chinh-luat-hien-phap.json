@@ -24,37 +24,54 @@
  ],
  "note": "Thẻ dạng tóm lược quan điểm học thuật, chưa đối chiếu nguyên văn giáo trình; cần Hào đối chiếu trang 1–9 của sách.",
  "memo": {
-  "hook": "Chủ yếu XÁC LẬP NGUYÊN TẮC CHUNG; thường THIẾU chế tài.",
+  "gist": "Luật Hiến pháp chủ yếu đặt nguyên tắc chung, kèm cho phép, bắt buộc, nghiêm cấm; thường không có chế tài riêng.",
+  "kind": "tree",
+  "hook": "Vẽ khung nhà, còn gạch vữa để luật khác lo.",
   "tree": [
    {
     "label": "Xác lập nguyên tắc chung",
+    "icon": "arrow",
     "children": [
      "Định hướng, ngành khác cụ thể hóa"
     ]
    },
    {
     "label": "Cho phép",
+    "icon": "check",
     "children": [
      "Trao quyền, ví dụ quyền bầu cử"
     ]
    },
    {
     "label": "Bắt buộc",
+    "icon": "warn",
     "children": [
      "Đặt nghĩa vụ, ví dụ nộp thuế"
     ]
    },
    {
     "label": "Nghiêm cấm",
+    "icon": "ban",
     "children": [
      "Ví dụ không bắt người trái luật"
     ]
    },
    {
     "label": "Đặc điểm",
+    "icon": "idea",
     "children": [
      "Thường thiếu chế tài"
     ]
+   }
+  ],
+  "case": {
+   "q": "\"Mọi người có nghĩa vụ nộp thuế theo luật định\" là phương pháp gì?",
+   "a": "Phương pháp bắt buộc; mức thuế và chế tài do luật khác quy định."
+  },
+  "contrast": [
+   {
+    "with": "doi-tuong-dieu-chinh-luat-hien-phap",
+    "text": "Phương pháp là điều chỉnh bằng cách nào; đối tượng là điều chỉnh quan hệ nào."
    }
   ]
  },

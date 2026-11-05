@@ -5,7 +5,7 @@
  "term": "Luật Doanh nghiệp 1999: từ \"xin phép\" sang \"đăng ký\"",
  "definition": "Theo quy định của pháp luật, doanh nghiệp được tự chủ đăng ký và thực hiện kinh doanh các ngành, nghề không thuộc đối tượng quy định tại các khoản 2, 3 và 4 Điều này. (…) Cơ quan đăng ký kinh doanh không có quyền yêu cầu người thành lập doanh nghiệp nộp thêm các giấy tờ, hồ sơ khác ngoài hồ sơ quy định tại Luật này đối với từng loại hình doanh nghiệp.",
  "plain": "Luật Doanh nghiệp 1999 (hiệu lực 01/01/2000) thay thế Luật Công ty và Luật Doanh nghiệp tư nhân 1990. Bước ngoặt: BỎ thủ tục XIN PHÉP thành lập (Luật Công ty 1990 bắt buộc xin phép UBND tỉnh), chuyển sang ĐĂNG KÝ KINH DOANH tại cơ quan đăng ký kinh doanh; doanh nghiệp TỰ CHỦ đăng ký ngành, nghề không bị cấm; cơ quan đăng ký không được đòi thêm giấy tờ ngoài luật. Thường được đánh giá là hiện thực hóa quyền tự do kinh doanh \"được làm những gì pháp luật không cấm\" (về sau ghi vào Điều 33 Hiến pháp 2013). Sau luật này, Chính phủ bãi bỏ hàng loạt giấy phép trái luật (Quyết định 19/2000/QĐ-TTg). Luật còn quy định công ty cổ phần với cổ đông chịu trách nhiệm hữu hạn và có quyền phát hành chứng khoán.",
- "example": "Năm 1992 (Luật Công ty 1990): muốn lập công ty phải xin giấy phép thành lập của UBND tỉnh rồi mới đăng ký. Năm 2000 (Luật Doanh nghiệp 1999): chỉ cần nộp đủ hồ sơ đăng ký kinh doanh; cơ quan đăng ký không được đòi thêm giấy tờ ngoài luật.",
+ "example": "Năm 1992 (Luật Công ty 1990): muốn lập công ty phải xin giấy phép của Ủy ban nhân dân tỉnh rồi mới đăng ký. Năm 2000 (Luật Doanh nghiệp 1999): chỉ cần nộp đủ hồ sơ đăng ký kinh doanh.",
  "source": {
   "kind": "primary",
   "cite": "Luật Doanh nghiệp 1999 (13/1999/QH10), khoản 1 Điều 6 và khoản 2 Điều 12",
@@ -25,10 +25,13 @@
  ],
  "note": "Luật Doanh nghiệp 1999 có hiệu lực từ 01/01/2000, đã hết hiệu lực (thay bằng Luật Doanh nghiệp 2005); hiện hành là Luật Doanh nghiệp 59/2020/QH14 (đã được sửa đổi). Học để hiểu lịch sử.",
  "memo": {
-  "hook": "Luật DN 1999: bỏ XIN PHÉP, chuyển sang ĐĂNG KÝ; tự do kinh doanh ngành không cấm.",
+  "gist": "Luật Doanh nghiệp 1999 bỏ thủ tục xin phép thành lập, chuyển sang đăng ký; được kinh doanh mọi ngành luật không cấm.",
+  "kind": "compare",
+  "hook": "Từ gõ cửa xin, sang nộp đơn báo.",
   "tree": [
    {
     "label": "Mốc",
+    "icon": "calendar",
     "children": [
      "12/6/1999",
      "Hiệu lực 01/01/2000"
@@ -36,6 +39,7 @@
    },
    {
     "label": "Bước ngoặt",
+    "icon": "unlock",
     "children": [
      "Bỏ xin phép thành lập",
      "Đăng ký kinh doanh"
@@ -43,15 +47,27 @@
    },
    {
     "label": "Doanh nghiệp",
+    "icon": "company",
     "children": [
      "Tự chủ đăng ký ngành nghề"
     ]
    },
    {
     "label": "Cơ quan đăng ký",
+    "icon": "ban",
     "children": [
      "Không đòi thêm giấy tờ"
     ]
+   }
+  ],
+  "case": {
+   "q": "Năm 2000 muốn lập công ty, có phải xin giấy phép thành lập của tỉnh không?",
+   "a": "Không. Chỉ cần nộp đủ hồ sơ đăng ký kinh doanh."
+  },
+  "contrast": [
+   {
+    "with": "luat-cong-ty-1990",
+    "text": "Luật 1999 chuyển sang đăng ký; Luật Công ty 1990 phải xin phép."
    }
   ]
  },

@@ -24,10 +24,13 @@
   "đồng hóa"
  ],
  "memo": {
-  "hook": "Tích Quang, Nhâm Diên 'dạy lễ nghĩa' — thực chất là ĐỒNG HÓA.",
+  "gist": "Quan đô hộ như Tích Quang, Nhâm Diên dạy lễ nghĩa phương Bắc; sử cũ ca ngợi, giáo trình nay coi là đồng hóa.",
+  "kind": "compare",
+  "hook": "Như cho người khác mặc áo của mình rồi khen họ đẹp lên.",
   "tree": [
    {
     "label": "Nhân vật",
+    "icon": "person",
     "children": [
      "Tích Quang (Giao Chỉ)",
      "Nhâm Diên (Cửu Chân)"
@@ -35,15 +38,27 @@
    },
    {
     "label": "Sử cũ",
+    "icon": "scroll",
     "children": [
      "Ca ngợi dạy lễ nghĩa"
     ]
    },
    {
     "label": "Giáo trình hiện đại",
+    "icon": "search",
     "children": [
      "Chính sách đồng hóa"
     ]
+   }
+  ],
+  "case": {
+   "q": "Câu \"phong tục văn minh Lĩnh Nam bắt đầu từ hai thái thú ấy\" là nhận xét theo quan điểm nào?",
+   "a": "Quan điểm Nho giáo của sử quan, không phải kết luận khách quan."
+  },
+  "contrast": [
+   {
+    "with": "chinh-quyen-do-ho-quan-huyen",
+    "text": "Đồng hóa là chính sách văn hóa; châu quận là cách tổ chức cai trị."
    }
   ]
  },

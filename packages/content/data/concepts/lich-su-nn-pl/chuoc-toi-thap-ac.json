@@ -24,10 +24,13 @@
   "1071 định tiền chuộc"
  ],
  "memo": {
-  "hook": "CHUỘC tội = nộp tiền thay hình phạt; THẬP ÁC không được chuộc.",
+  "gist": "Thời Lý cho người già, trẻ, ốm yếu và thân thuộc vua nộp tiền thay hình phạt, trừ tội thập ác.",
+  "kind": "compare",
+  "hook": "Tiền mua được nhẹ tội, không mua được tội phản nghịch.",
   "tree": [
    {
     "label": "Được chuộc (1042)",
+    "icon": "money",
     "children": [
      "Người già, trẻ, ốm yếu",
      "Thân thuộc nhà vua"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Ý nghĩa",
+    "icon": "scales",
     "children": [
      "Nhân đạo",
      "Đặc quyền đẳng cấp"
@@ -42,9 +46,20 @@
    },
    {
     "label": "Không được chuộc",
+    "icon": "ban",
     "children": [
      "Tội thập ác"
     ]
+   }
+  ],
+  "case": {
+   "q": "Người 75 tuổi thời Lý phạm tội mưu phản. Có được chuộc không?",
+   "a": "Không, vì mưu phản thuộc thập ác."
+  },
+  "contrast": [
+   {
+    "with": "chuoc-toi-gia-tre-qthl",
+    "text": "Chuộc tội thời Lý là gốc; Quốc triều hình luật phát triển thành ba bậc tuổi."
    }
   ]
  },

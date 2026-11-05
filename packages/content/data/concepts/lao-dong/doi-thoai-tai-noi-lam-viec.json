@@ -23,10 +23,13 @@
   "các bên cùng có lợi"
  ],
  "memo": {
-  "hook": "Đối thoại là CHIA SẺ, THẢO LUẬN, không bắt buộc ra thỏa thuận; ít nhất 1 LẦN/NĂM.",
+  "gist": "Hai bên chia sẻ thông tin, trao đổi ý kiến tại nơi làm việc, ít nhất mỗi năm một lần; không bắt buộc thỏa thuận.",
+  "kind": "tree",
+  "hook": "Ngồi uống trà nói chuyện, chưa phải ngồi ký kết.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "announce",
     "children": [
      "Chia sẻ thông tin",
      "Tham khảo, thảo luận"
@@ -34,17 +37,29 @@
    },
    {
     "label": "Bắt buộc khi",
+    "icon": "calendar",
     "children": [
-     "Định kỳ ít nhất 01 năm/lần",
+     "Định kỳ ít nhất mỗi năm một lần",
      "Một bên yêu cầu",
      "Cho thôi việc, sáp nhập, nội quy"
     ]
    },
    {
     "label": "Khác thương lượng",
+    "icon": "compare",
     "children": [
      "Không nhất thiết thỏa thuận"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty chuẩn bị ban hành nội quy lao động mới. Có phải tổ chức đối thoại không?",
+   "a": "Có, phải tham khảo ý kiến tổ chức đại diện người lao động."
+  },
+  "contrast": [
+   {
+    "with": "thuong-luong-tap-the",
+    "text": "Đối thoại là trao đổi, không bắt buộc kết quả; thương lượng nhằm đi tới thỏa ước."
    }
   ]
  },

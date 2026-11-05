@@ -23,10 +23,13 @@
   "kết luận giám định"
  ],
  "memo": {
-  "hook": "Chứng cứ phải KHÁCH QUAN – LIÊN QUAN – HỢP PHÁP.",
+  "gist": "Chứng cứ là những gì có thật, nộp hoặc thu thập đúng thủ tục, được Tòa dùng để xác định sự việc.",
+  "kind": "checklist",
+  "hook": "Ba sàng lọc: thật, đúng chuyện, đúng cách lấy. Lọt cả ba mới thành bằng chứng.",
   "tree": [
    {
     "label": "Thuộc tính",
+    "icon": "check",
     "children": [
      "Có thật",
      "Dùng xác định tình tiết",
@@ -35,6 +38,7 @@
    },
    {
     "label": "Nguồn",
+    "icon": "list",
     "children": [
      "Tài liệu, dữ liệu điện tử",
      "Vật chứng",
@@ -44,9 +48,20 @@
    },
    {
     "label": "Phân biệt",
+    "icon": "compare",
     "children": [
      "Nguồn chứng cứ khác chứng cứ"
     ]
+   }
+  ],
+  "case": {
+   "q": "Tin nhắn Zalo người vay thừa nhận khoản nợ có thể dùng làm chứng cứ không?",
+   "a": "Có thể, nếu xác định là có thật và thu thập hợp pháp; đó là dữ liệu điện tử."
+  },
+  "contrast": [
+   {
+    "with": "nghia-vu-chung-minh",
+    "text": "Chứng cứ là thứ dùng để chứng minh; nghĩa vụ chứng minh là ai phải đi tìm và nộp thứ đó."
    }
   ]
  },

@@ -24,10 +24,13 @@
   "gây thiệt hại trái pháp luật"
  ],
  "memo": {
-  "hook": "Sáu căn cứ, nhiều nhất là HỢP ĐỒNG.",
+  "gist": "Nghĩa vụ sinh ra từ hợp đồng, hành vi đơn phương, làm giúp, được lợi không căn cứ, gây thiệt hại, và căn cứ khác.",
+  "kind": "tree",
+  "hook": "Sáu cánh cửa dẫn tới món nợ, cửa rộng nhất là hợp đồng.",
   "tree": [
    {
     "label": "Thỏa thuận, ý chí",
+    "icon": "handshake",
     "children": [
      "Hợp đồng",
      "Hành vi pháp lý đơn phương"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Ngoài hợp đồng",
+    "icon": "door",
     "children": [
      "Thực hiện công việc không ủy quyền",
      "Được lợi không có căn cứ",
@@ -43,9 +47,20 @@
    },
    {
     "label": "Khác",
+    "icon": "calc",
     "children": [
      "Căn cứ khác do luật định"
     ]
+   }
+  ],
+  "case": {
+   "q": "Chuyển khoản nhầm 5 triệu vào tài khoản người lạ. Người nhận có nghĩa vụ gì, từ căn cứ nào?",
+   "a": "Hoàn trả, vì được lợi về tài sản không có căn cứ pháp luật."
+  },
+  "contrast": [
+   {
+    "with": "nghia-vu",
+    "text": "Căn cứ là nơi nghĩa vụ sinh ra; nghĩa vụ là việc phải làm."
    }
   ]
  },

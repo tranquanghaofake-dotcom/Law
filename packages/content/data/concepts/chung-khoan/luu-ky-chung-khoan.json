@@ -22,10 +22,13 @@
   "trước khi giao dịch"
  ],
  "memo": {
-  "hook": "Lưu ký = GỬI GIỮ chứng khoán (bút toán điện tử); phải lưu ký TẬP TRUNG TRƯỚC khi giao dịch.",
+  "gist": "Lưu ký là gửi giữ chứng khoán dưới dạng bút toán điện tử; phải lưu ký tập trung trước khi giao dịch.",
+  "kind": "tree",
+  "hook": "Như gửi tiền vào ngân hàng mới quẹt thẻ được.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "bank",
     "children": [
      "Ký gửi, bảo quản",
      "Chuyển giao",
@@ -34,6 +37,7 @@
    },
    {
     "label": "Bắt buộc",
+    "icon": "warn",
     "children": [
      "Lưu ký tập trung",
      "Trước khi giao dịch"
@@ -41,9 +45,20 @@
    },
    {
     "label": "Qua",
+    "icon": "link",
     "children": [
      "Thành viên lưu ký"
     ]
+   }
+  ],
+  "case": {
+   "q": "Bạn có sổ cổ đông giấy của công ty vừa lên sàn, muốn bán qua ứng dụng. Phải làm gì trước?",
+   "a": "Làm thủ tục lưu ký cổ phiếu vào tài khoản ở công ty chứng khoán."
+  },
+  "contrast": [
+   {
+    "with": "dang-ky-chung-khoan",
+    "text": "Lưu ký là gửi giữ; đăng ký là ghi ai sở hữu."
    }
   ]
  },

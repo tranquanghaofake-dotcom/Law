@@ -23,10 +23,13 @@
   "ngoại lệ người tiêu dùng, người lao động"
  ],
  "memo": {
-  "hook": "AI YÊU CẦU, NGƯỜI ĐÓ CHỨNG MINH; Tòa án chỉ HỖ TRỢ.",
+  "gist": "Ai đưa ra yêu cầu thì người đó phải tự tìm, nộp chứng cứ để chứng minh; Tòa chỉ hỗ trợ.",
+  "kind": "compare",
+  "hook": "Như đi đòi đồ thất lạc: muốn lấy lại thì phải chỉ ra đó là của mình.",
   "tree": [
    {
     "label": "Đương sự",
+    "icon": "person",
     "children": [
      "Chủ động thu thập, giao nộp",
      "Chứng minh yêu cầu có căn cứ"
@@ -34,6 +37,7 @@
    },
    {
     "label": "Tòa án",
+    "icon": "state",
     "children": [
      "Hỗ trợ",
      "Tự thu thập khi luật định"
@@ -41,10 +45,21 @@
    },
    {
     "label": "Ngoại lệ",
+    "icon": "shield",
     "children": [
      "Người tiêu dùng",
      "Người lao động"
     ]
+   }
+  ],
+  "case": {
+   "q": "Người mua điện thoại bị nổ pin kiện cửa hàng. Ai phải chứng minh lỗi?",
+   "a": "Cửa hàng phải chứng minh mình không có lỗi; người tiêu dùng được miễn."
+  },
+  "contrast": [
+   {
+    "with": "chung-cu",
+    "text": "Nghĩa vụ chứng minh là ai phải tìm bằng chứng; chứng cứ là chính bằng chứng đó."
    }
   ]
  },

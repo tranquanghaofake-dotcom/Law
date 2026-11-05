@@ -25,25 +25,40 @@
  ],
  "note": "Luật Các tổ chức tín dụng 32/2024/QH15 có hiệu lực từ 01/7/2024, thay thế Luật 47/2010/QH12 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 96/2025/QH15 (hiệu lực 15/10/2025) và Luật 23/2026/QH16 (hiệu lực 01/12/2026, chỉ bổ sung một điểm tại Điều 49) — các khoản Điều 4 được trích không bị sửa.",
  "memo": {
-  "hook": "CAN THIỆP SỚM (nhẹ) trước, KIỂM SOÁT ĐẶC BIỆT (Ngân hàng Nhà nước trực tiếp) sau.",
+  "gist": "Ngân hàng Nhà nước trực tiếp kiểm soát một tổ chức tín dụng đang gặp nguy, sau bước can thiệp sớm nhẹ hơn.",
+  "kind": "steps",
+  "hook": "Như bệnh nhân chuyển từ tự uống thuốc sang nằm phòng hồi sức.",
   "tree": [
    {
     "label": "Ai quyết định",
+    "icon": "state",
     "children": [
      "Ngân hàng Nhà nước"
     ]
    },
    {
     "label": "Nội dung",
+    "icon": "search",
     "children": [
      "Kiểm soát trực tiếp tổ chức tín dụng"
     ]
    },
    {
     "label": "Phân biệt",
+    "icon": "compare",
     "children": [
      "Can thiệp sớm: tự khắc phục, nhẹ hơn"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ngân hàng thương mại bị rút tiền hàng loạt, có nguy cơ mất khả năng chi trả. Ngân hàng Nhà nước làm gì?",
+   "a": "Đặt ngân hàng đó dưới kiểm soát đặc biệt."
+  },
+  "contrast": [
+   {
+    "with": "bao-hiem-tien-gui",
+    "text": "Kiểm soát đặc biệt là cứu ngân hàng; bảo hiểm tiền gửi là trả tiền cho người gửi."
    }
   ]
  },

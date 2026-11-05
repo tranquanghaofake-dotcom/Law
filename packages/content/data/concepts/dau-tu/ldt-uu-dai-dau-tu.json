@@ -25,10 +25,13 @@
  ],
  "note": "Luật Đầu tư 143/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Đầu tư 61/2020/QH14 mà đề cương HLU 2021 còn dẫn (khoản 4 Điều 51). Luật 24/2026/QH16 sửa đổi có hiệu lực từ 01/3/2027 (riêng một phần Điều 6 từ 01/01/2027), chỉ sửa Điều 6 và Phụ lục IV, không sửa điều được trích — văn bản hợp nhất 142/2026/VBHN-LQ-VPQH.",
  "memo": {
-  "hook": "Ưu đãi gắn với DỰ ÁN: theo NGÀNH NGHỀ, ĐỊA BÀN, QUY MÔ.",
+  "gist": "Nhà nước ưu đãi cho dự án thuộc ngành khuyến khích, ở vùng khó khăn hoặc vốn lớn, bằng giảm thuế, miễn tiền đất.",
+  "kind": "compare",
+  "hook": "Như thẻ khách hàng thân thiết: mua đúng món, ở đúng chi nhánh, mua nhiều thì được giảm.",
   "tree": [
    {
     "label": "Đối tượng",
+    "icon": "target",
     "children": [
      "Ngành, nghề ưu đãi",
      "Địa bàn ưu đãi",
@@ -37,6 +40,7 @@
    },
    {
     "label": "Hình thức",
+    "icon": "gift",
     "children": [
      "Ưu đãi thuế thu nhập doanh nghiệp",
      "Miễn thuế nhập khẩu",
@@ -45,9 +49,20 @@
    },
    {
     "label": "Phân biệt",
+    "icon": "compare",
     "children": [
      "Hỗ trợ đầu tư"
     ]
+   }
+  ],
+  "case": {
+   "q": "Dự án sản xuất chip bán dẫn ở vùng kinh tế khó khăn được ưu đãi theo những tiêu chí nào?",
+   "a": "Cả theo ngành nghề ưu đãi lẫn theo địa bàn ưu đãi."
+  },
+  "contrast": [
+   {
+    "with": "ldt-bao-dam-khi-thay-doi-phap-luat",
+    "text": "Ưu đãi đầu tư là được ưu đãi gì; bảo đảm khi đổi luật là giữ ưu đãi đó khi luật thay đổi."
    }
   ]
  },

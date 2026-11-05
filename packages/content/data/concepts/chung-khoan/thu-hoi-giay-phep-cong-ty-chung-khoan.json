@@ -5,7 +5,7 @@
  "term": "Thu hồi giấy phép của công ty chứng khoán",
  "definition": "Không chính thức hoạt động trong thời hạn 12 tháng kể từ ngày được cấp giấy phép; không khôi phục được hoạt động sau khi hết thời hạn tạm ngừng hoạt động đã được Ủy ban Chứng khoán Nhà nước chấp thuận; không tiến hành hoạt động nghiệp vụ quản lý quỹ trong thời hạn 02 năm liên tục; b) Có văn bản đề nghị rút Giấy phép thành lập và hoạt động kinh doanh chứng khoán;",
  "plain": "Thu hồi giấy phép là \"án tử\" về hoạt động kinh doanh chứng khoán. Căn cứ: không hoạt động trong 12 tháng sau khi được cấp phép; tự đề nghị rút; bị rút toàn bộ nghiệp vụ hoặc không khắc phục được tình trạng đình chỉ; giải thể, phá sản, hợp nhất, chia, sáp nhập. Khi bị thu hồi: chấm dứt ngay hoạt động, tất toán tài sản khách hàng; Ủy ban có thể chỉ định công ty khác hoàn tất giao dịch dở dang.",
- "example": "Công ty H được cấp phép tháng 2/2025 nhưng đến tháng 3/2026 vẫn chưa chính thức hoạt động: bị thu hồi giấy phép (điểm a khoản 1 Điều 95).",
+ "example": "Công ty H được cấp phép tháng 2 năm 2025 nhưng đến tháng 3 năm 2026 vẫn chưa chính thức hoạt động: bị thu hồi giấy phép (điểm a khoản 1 Điều 95).",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1 Điều 95 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)",
@@ -23,10 +23,13 @@
   "chỉ định công ty thay thế"
  ],
  "memo": {
-  "hook": "Thu hồi giấy phép = 'ÁN TỬ'; ví dụ 12 THÁNG không hoạt động sau cấp phép.",
+  "gist": "Bị thu hồi giấy phép khi 12 tháng không hoạt động, tự rút, không khắc phục đình chỉ, hay giải thể, phá sản.",
+  "kind": "tree",
+  "hook": "Bằng lái bị tước khi để xe nằm im quá lâu hay lái ẩu không sửa.",
   "tree": [
    {
     "label": "Căn cứ",
+    "icon": "list",
     "children": [
      "12 tháng không hoạt động",
      "Tự đề nghị rút",
@@ -36,10 +39,21 @@
    },
    {
     "label": "Hệ quả",
+    "icon": "cycle",
     "children": [
      "Tất toán tài sản khách",
      "Chỉ định công ty thay thế"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty được cấp phép tháng 2 năm 2025, đến tháng 3 năm 2026 vẫn chưa hoạt động. Hậu quả là gì?",
+   "a": "Bị thu hồi giấy phép."
+  },
+  "contrast": [
+   {
+    "with": "an-toan-tai-chinh-cong-ty-chung-khoan",
+    "text": "Thu hồi là bước cuối; an toàn tài chính là theo dõi sức khỏe trước đó."
    }
   ]
  },

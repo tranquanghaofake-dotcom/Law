@@ -24,10 +24,13 @@
   "kiểm tra, xử lý văn bản trái pháp luật"
  ],
  "memo": {
-  "hook": "Chính phủ: NGHỊ ĐỊNH; Thủ tướng: QUYẾT ĐỊNH; Bộ trưởng: THÔNG TƯ.",
+  "gist": "Chính phủ ra nghị định, Thủ tướng ra quyết định, Bộ trưởng ra thông tư; phải đúng thẩm quyền và chịu kiểm soát.",
+  "kind": "tree",
+  "hook": "Ba tầng giấy tờ: tầng trên định khung, tầng giữa ra lệnh, tầng dưới hướng dẫn nghề.",
   "tree": [
    {
     "label": "Hình thức",
+    "icon": "doc",
     "children": [
      "Chính phủ: nghị định",
      "Thủ tướng: quyết định",
@@ -36,6 +39,7 @@
    },
    {
     "label": "Kèm nghĩa vụ",
+    "icon": "pin",
     "children": [
      "Kiểm tra việc thi hành",
      "Xử lý văn bản trái pháp luật"
@@ -43,10 +47,21 @@
    },
    {
     "label": "Bị kiểm soát",
+    "icon": "eye",
     "children": [
      "Ủy ban thường vụ đình chỉ",
      "Quốc hội bãi bỏ"
     ]
+   }
+  ],
+  "case": {
+   "q": "Bộ trưởng ban hành loại văn bản gì để hướng dẫn nghiệp vụ?",
+   "a": "Thông tư."
+  },
+  "contrast": [
+   {
+    "with": "thu-tuong-dinh-chi-van-ban",
+    "text": "Văn bản Chính phủ là loại được ban hành; bài kia là quyền dừng văn bản sai."
    }
   ]
  },

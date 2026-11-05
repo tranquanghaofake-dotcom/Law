@@ -23,16 +23,20 @@
   "phát sinh, thay đổi, chấm dứt"
  ],
  "memo": {
-  "hook": "Giao dịch: HỢP ĐỒNG (nhiều bên) hoặc HÀNH VI ĐƠN PHƯƠNG (một bên).",
+  "gist": "Giao dịch dân sự là hợp đồng giữa các bên hoặc việc làm một mình, làm phát sinh, thay đổi, chấm dứt quyền.",
+  "kind": "compare",
+  "hook": "Có giao dịch cần hai người bắt tay, có giao dịch một người tự quyết.",
   "tree": [
    {
     "label": "Hợp đồng",
+    "icon": "handshake",
     "children": [
      "Thỏa thuận hai hay nhiều bên"
     ]
    },
    {
     "label": "Đơn phương",
+    "icon": "person",
     "children": [
      "Lập di chúc",
      "Hứa thưởng"
@@ -40,9 +44,20 @@
    },
    {
     "label": "Hệ quả",
+    "icon": "cycle",
     "children": [
      "Phát sinh, thay đổi, chấm dứt quyền"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ông A lập di chúc để lại nhà cho con gái. Có cần con gái đồng ý không?",
+   "a": "Không. Di chúc là hành vi pháp lý đơn phương."
+  },
+  "contrast": [
+   {
+    "with": "dieu-kien-hieu-luc-giao-dich",
+    "text": "Giao dịch là việc làm; điều kiện hiệu lực là những gì để việc đó có giá trị."
    }
   ]
  },

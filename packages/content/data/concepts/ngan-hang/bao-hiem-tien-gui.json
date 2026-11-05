@@ -26,10 +26,13 @@
  ],
  "note": "Luật Bảo hiểm tiền gửi 111/2025/QH15 có hiệu lực từ 01/5/2026, thay thế Luật Bảo hiểm tiền gửi 06/2012/QH13 mà đề cương HLU 2021 còn dẫn.",
  "memo": {
-  "hook": "BẮT BUỘC, chỉ trả TRONG HẠN MỨC, chỉ cho CÁ NHÂN.",
+  "gist": "Tổ chức bảo hiểm trả lại tiền gửi cho người gửi cá nhân khi ngân hàng gặp sự cố, nhưng chỉ trong hạn mức.",
+  "kind": "tree",
+  "hook": "Như phao cứu sinh có cỡ: cứu được tới một mức, nặng hơn thì chờ chia tài sản.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "shield",
     "children": [
      "Bảo đảm hoàn trả tiền gửi",
      "Trong hạn mức chi trả"
@@ -37,21 +40,34 @@
    },
    {
     "label": "Người được bảo hiểm",
+    "icon": "person",
     "children": [
      "Cá nhân có tiền gửi được bảo hiểm"
     ]
    },
    {
     "label": "Phải tham gia",
+    "icon": "bank",
     "children": [
      "Tổ chức tín dụng nhận tiền gửi cá nhân"
     ]
    },
    {
     "label": "Không phải tham gia",
+    "icon": "ban",
     "children": [
      "Ngân hàng chính sách"
     ]
+   }
+  ],
+  "case": {
+   "q": "Bà B gửi tiết kiệm vượt hạn mức chi trả bảo hiểm. Phần vượt được giải quyết thế nào?",
+   "a": "Được giải quyết khi xử lý tài sản của ngân hàng, không do bảo hiểm trả."
+  },
+  "contrast": [
+   {
+    "with": "tien-gui-duoc-bao-hiem",
+    "text": "Bảo hiểm tiền gửi là cả cơ chế; tiền gửi được bảo hiểm là loại tiền nào được che chắn."
    }
   ]
  },

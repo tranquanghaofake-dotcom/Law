@@ -23,10 +23,13 @@
   "trừ thỏa thuận khác"
  ],
  "memo": {
-  "hook": "Bán chịu lỗi có TRƯỚC khi chuyển rủi ro; mua ĐÃ BIẾT lỗi thì bán không chịu.",
+  "gist": "Bên bán chịu trách nhiệm về lỗi hàng có từ trước khi rủi ro chuyển sang bên mua, trừ lỗi bên mua đã biết.",
+  "kind": "compare",
+  "hook": "Lỗi đã thấy mà vẫn mua thì không được kêu.",
   "tree": [
    {
     "label": "Bên bán chịu",
+    "icon": "tool",
     "children": [
      "Khiếm khuyết có trước chuyển rủi ro",
      "Kể cả phát hiện sau"
@@ -34,15 +37,27 @@
    },
    {
     "label": "Bên bán không chịu",
+    "icon": "eye",
     "children": [
      "Bên mua đã biết hoặc phải biết"
     ]
    },
    {
     "label": "Giới hạn",
+    "icon": "clock",
     "children": [
      "Trong thời hạn khiếu nại"
     ]
+   }
+  ],
+  "case": {
+   "q": "Bên mua đã xem kỹ lô máy cũ có vết trầy rõ trước khi ký, sau đó khiếu nại vết trầy. Bên bán có chịu không?",
+   "a": "Không, vì bên mua đã biết lỗi đó."
+  },
+  "contrast": [
+   {
+    "with": "chuyen-rui-ro",
+    "text": "Hàng không phù hợp là lỗi từ bên bán; chuyển rủi ro là ai chịu khi hàng mất do sự cố."
    }
   ]
  },

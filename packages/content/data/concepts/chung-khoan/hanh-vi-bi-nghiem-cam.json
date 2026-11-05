@@ -5,7 +5,7 @@
  "term": "Các hành vi bị nghiêm cấm trong hoạt động chứng khoán",
  "definition": "Trực tiếp hoặc gián tiếp thực hiện hành vi gian lận, lừa đảo, làm giả tài liệu, tạo dựng thông tin sai sự thật hoặc công bố thông tin sai lệch hoặc che giấu thông tin hoặc bỏ sót thông tin cần thiết gây hiểu nhầm nghiêm trọng làm ảnh hưởng đến hoạt động chào bán, niêm yết, giao dịch, kinh doanh, đầu tư chứng khoán, cung cấp dịch vụ về chứng khoán.",
  "plain": "Điều 12 có 7 nhóm hành vi bị cấm: (1) gian lận, lừa đảo, thông tin sai lệch; (2) giao dịch nội gián; (3) thao túng thị trường; (4) kinh doanh chứng khoán khi chưa được cấp phép; (5) dùng trái phép tài sản khách hàng, lạm dụng tín nhiệm chiếm đoạt; (6) cho mượn tài khoản, đứng tên hộ dẫn đến thao túng; (7) tổ chức thị trường giao dịch trái luật. Vi phạm có thể bị xử phạt hành chính, truy cứu hình sự, bồi thường.",
- "example": "Công ty X làm giả báo cáo tài chính để hồ sơ IPO trông có lãi: vi phạm khoản 1 Điều 12 (làm giả tài liệu, thông tin sai sự thật ảnh hưởng đến hoạt động chào bán).",
+ "example": "Công ty X làm giả báo cáo tài chính để hồ sơ chào bán lần đầu ra công chúng trông có lãi: vi phạm khoản 1 Điều 12 (làm giả tài liệu, thông tin sai sự thật).",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1 Điều 12 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)",
@@ -23,10 +23,13 @@
   "7 nhóm hành vi bị cấm"
  ],
  "memo": {
-  "hook": "Bảy nhóm cấm: GIAN LẬN, NỘI GIÁN, THAO TÚNG, KHÔNG PHÉP, DÙNG TÀI SẢN KHÁCH, CHO MƯỢN TÀI KHOẢN…",
+  "gist": "Luật cấm gian lận, nội gián, thao túng, kinh doanh không phép, dùng trái phép tài sản khách, cho mượn tài khoản để thao túng.",
+  "kind": "tree",
+  "hook": "Danh sách đen của thị trường: lừa, ăn gian, giật dây.",
   "tree": [
    {
     "label": "Thông tin",
+    "icon": "announce",
     "children": [
      "Gian lận, lừa đảo",
      "Thông tin sai lệch"
@@ -34,6 +37,7 @@
    },
    {
     "label": "Giao dịch",
+    "icon": "chart",
     "children": [
      "Nội gián",
      "Thao túng thị trường"
@@ -41,6 +45,7 @@
    },
    {
     "label": "Hoạt động",
+    "icon": "company",
     "children": [
      "Kinh doanh không phép",
      "Dùng trái phép tài sản khách"
@@ -48,9 +53,20 @@
    },
    {
     "label": "Khác",
+    "icon": "calc",
     "children": [
      "Cho mượn tài khoản dẫn đến thao túng"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty làm giả báo cáo tài chính để hồ sơ phát hành trông có lãi. Vi phạm gì?",
+   "a": "Làm giả tài liệu, thông tin sai sự thật: hành vi bị nghiêm cấm."
+  },
+  "contrast": [
+   {
+    "with": "giao-dich-noi-gian",
+    "text": "Hành vi bị cấm là cả danh sách; nội gián chỉ là một hành vi."
    }
   ]
  },

@@ -22,10 +22,13 @@
   "trước khi giải quyết theo Điều 236"
  ],
  "memo": {
-  "hook": "Tự hòa giải: KHUYẾN KHÍCH. Hòa giải ở UBND XÃ: BẮT BUỘC trước khi giải quyết.",
+  "gist": "Tranh chấp đất phải hòa giải ở Ủy ban nhân dân xã trước khi đưa lên trên; tự hòa giải thì được khuyến khích.",
+  "kind": "steps",
+  "hook": "Như cãi nhau trong xóm: ra trưởng thôn ngồi nói trước, chưa xong mới lên trên.",
   "tree": [
    {
     "label": "Khuyến khích",
+    "icon": "handshake",
     "children": [
      "Tự hòa giải",
      "Hòa giải cơ sở",
@@ -34,6 +37,7 @@
    },
    {
     "label": "Bắt buộc",
+    "icon": "company",
     "children": [
      "Tại Ủy ban nhân dân cấp xã",
      "Trước khi cơ quan giải quyết"
@@ -41,9 +45,20 @@
    },
    {
     "label": "Hệ quả",
+    "icon": "cycle",
     "children": [
      "Chưa hòa giải: Tòa trả đơn"
     ]
+   }
+  ],
+  "case": {
+   "q": "Hai hộ tranh chấp ranh giới đất, chưa hòa giải ở xã, nộp đơn thẳng ra Tòa. Tòa làm gì?",
+   "a": "Trả lại đơn vì chưa đủ điều kiện khởi kiện."
+  },
+  "contrast": [
+   {
+    "with": "tham-quyen-giai-quyet-tranh-chap-dat-dai",
+    "text": "Hòa giải là bước bắt buộc trước; thẩm quyền là ai giải quyết khi hòa giải không thành."
    }
   ]
  },

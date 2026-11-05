@@ -5,7 +5,7 @@
  "term": "Người lao động Việt Nam đi làm việc ở nước ngoài theo hợp đồng",
  "definition": "Người lao động Việt Nam đi làm việc ở nước ngoài theo hợp đồng là công dân Việt Nam từ đủ 18 tuổi trở lên cư trú tại Việt Nam đi làm việc ở nước ngoài theo quy định của Luật này. Người sử dụng lao động ở nước ngoài là doanh nghiệp, tổ chức, cá nhân trực tiếp thuê mướn, sử dụng người lao động Việt Nam làm việc cho mình ở nước ngoài theo hợp đồng lao động.",
  "plain": "Chủ thể: CÔNG DÂN VIỆT NAM, TỪ ĐỦ 18 TUỔI, CƯ TRÚ TẠI VIỆT NAM. Khác người lao động nước ngoài làm việc tại Việt Nam (BLLĐ Điều 151). Quyền chính (Điều 6): được cung cấp thông tin, tư vấn; hưởng lương, BHXH, quyền lợi theo hợp đồng; được bảo hộ; đơn phương chấm dứt hợp đồng khi bị ngược đãi, cưỡng bức lao động, quấy rối tình dục hoặc có nguy cơ rõ ràng đe dọa trực tiếp tính mạng, sức khỏe; hưởng hỗ trợ từ Quỹ Hỗ trợ việc làm ngoài nước; khiếu nại, tố cáo, khởi kiện. Nghĩa vụ: tuân thủ pháp luật Việt Nam và nước tiếp nhận; hoàn thành khóa giáo dục định hướng; nộp tiền dịch vụ, ký quỹ theo luật; làm việc đúng nơi quy định…",
- "example": "Chị S 20 tuổi, thường trú tại Nghệ An, ký hợp đồng với doanh nghiệp dịch vụ để sang Nhật làm việc: chị là người lao động Việt Nam đi làm việc ở nước ngoài theo hợp đồng theo Luật 69/2020/QH14.",
+ "example": "Chị S 20 tuổi, thường trú tại Nghệ An, ký hợp đồng với doanh nghiệp dịch vụ để sang Nhật làm việc: chị là người lao động Việt Nam đi làm việc ở nước ngoài theo hợp đồng.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1, 2 Điều 3 Luật Người lao động Việt Nam đi làm việc ở nước ngoài theo hợp đồng 2020 (69/2020/QH14)",
@@ -24,10 +24,13 @@
  ],
  "note": "Luật 69/2020/QH14 có hiệu lực từ 01/01/2022, thay thế Luật 72/2006/QH11; đã được sửa đổi bởi Luật 22/2026/QH16 (hiệu lực 01/3/2027, VBHN 145/2026/VBHN-LQ-VPQH); điều được trích chưa thay đổi đến 02/11/2026.",
  "memo": {
-  "hook": "CÔNG DÂN Việt Nam, từ đủ 18 TUỔI, CƯ TRÚ tại Việt Nam.",
+  "gist": "Công dân Việt Nam từ đủ 18 tuổi, đang sống ở Việt Nam, sang nước ngoài làm việc theo hợp đồng.",
+  "kind": "checklist",
+  "hook": "Mang hộ chiếu ra đi, nhưng gốc vẫn ở quê nhà.",
   "tree": [
    {
     "label": "Người lao động",
+    "icon": "flag",
     "children": [
      "Công dân Việt Nam",
      "Từ đủ 18 tuổi",
@@ -36,16 +39,28 @@
    },
    {
     "label": "Người sử dụng",
+    "icon": "globe",
     "children": [
      "Doanh nghiệp, tổ chức, cá nhân ở nước ngoài"
     ]
    },
    {
     "label": "Quyền chính",
+    "icon": "shield",
     "children": [
      "Được bảo hộ",
      "Chấm dứt khi bị ngược đãi, cưỡng bức"
     ]
+   }
+  ],
+  "case": {
+   "q": "Em V 17 tuổi muốn ký hợp đồng sang Nhật làm việc qua doanh nghiệp dịch vụ. Có được không?",
+   "a": "Không. Phải từ đủ 18 tuổi trở lên."
+  },
+  "contrast": [
+   {
+    "with": "lao-dong-nuoc-ngoai",
+    "text": "Bài này nói người Việt ra nước ngoài làm; bài kia nói người nước ngoài vào Việt Nam làm."
    }
   ]
  },

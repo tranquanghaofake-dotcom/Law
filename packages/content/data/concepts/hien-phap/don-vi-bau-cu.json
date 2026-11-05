@@ -25,10 +25,13 @@
  ],
  "note": "Luật 83/2025/QH15 (hiệu lực 01/7/2025) sửa khoản 2, khoản 3 Điều 10: bỏ đơn vị bầu cử Hội đồng nhân dân cấp huyện; cấp xã gồm xã, phường, đặc khu. Giáo trình in trước 2025 trình bày theo mô hình 3 cấp.",
  "memo": {
-  "hook": "Tối đa 3 đại biểu QUỐC HỘI, 5 đại biểu HĐND mỗi đơn vị.",
+  "gist": "Mỗi đơn vị bầu cử bầu tối đa 3 đại biểu Quốc hội hoặc 5 đại biểu Hội đồng nhân dân.",
+  "kind": "tree",
+  "hook": "Mẹo ba và năm: ba ghế trung ương, năm ghế địa phương.",
   "tree": [
    {
     "label": "Đơn vị bầu cử",
+    "icon": "map",
     "children": [
      "Không quá 3 đại biểu Quốc hội",
      "Không quá 5 đại biểu Hội đồng nhân dân"
@@ -36,6 +39,7 @@
    },
    {
     "label": "Ai ấn định",
+    "icon": "state",
     "children": [
      "Hội đồng bầu cử quốc gia",
      "Ủy ban bầu cử cấp tương ứng"
@@ -43,15 +47,27 @@
    },
    {
     "label": "Công bố",
+    "icon": "announce",
     "children": [
      "Chậm nhất 80 ngày trước"
     ]
    },
    {
     "label": "Chia nhỏ",
+    "icon": "box",
     "children": [
      "Khu vực bỏ phiếu"
     ]
+   }
+  ],
+  "case": {
+   "q": "Cử tri ở đơn vị bầu cử số 1 có được bầu ứng cử viên của đơn vị số 2 không?",
+   "a": "Không."
+  },
+  "contrast": [
+   {
+    "with": "hoi-dong-bau-cu-quoc-gia",
+    "text": "Đơn vị bầu cử là vùng bầu; Hội đồng bầu cử quốc gia là cơ quan ấn định."
    }
   ]
  },

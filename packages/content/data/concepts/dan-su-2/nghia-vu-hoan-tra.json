@@ -5,7 +5,7 @@
  "term": "Nghĩa vụ hoàn trả do chiếm hữu, được lợi không có căn cứ pháp luật",
  "definition": "Người chiếm hữu, người sử dụng tài sản của người khác mà không có căn cứ pháp luật thì phải hoàn trả cho chủ sở hữu, chủ thể có quyền khác đối với tài sản đó; nếu không tìm được chủ sở hữu, chủ thể có quyền khác đối với tài sản thì phải giao cho cơ quan nhà nước có thẩm quyền, trừ trường hợp quy định tại Điều 236 của Bộ luật này. Người được lợi về tài sản mà không có căn cứ pháp luật làm cho người khác bị thiệt hại thì phải hoàn trả khoản lợi đó cho người bị thiệt hại, trừ trường hợp quy định tại Điều 236 của Bộ luật này.",
  "plain": "Hai trường hợp: CHIẾM HỮU, SỬ DỤNG tài sản không có căn cứ → HOÀN TRẢ tài sản (không tìm được chủ thì giao cơ quan nhà nước); ĐƯỢC LỢI về tài sản không có căn cứ làm người khác thiệt hại → hoàn trả KHOẢN LỢI. Ngoại lệ: Điều 236 (xác lập quyền sở hữu theo thời hiệu). Ngay tình hay không ngay tình ảnh hưởng đến việc hoàn trả hoa lợi, lợi tức (Điều 581). Chiếm giữ tiền chuyển nhầm, cố tình không trả còn có thể bị xử lý hình sự (tội chiếm giữ trái phép tài sản, Điều 176 BLHS).",
- "example": "Ngân hàng chuyển nhầm 20 triệu vào tài khoản của B: B phải hoàn trả 20 triệu (khoản 2 Điều 579). Bộ đề \"Chuyển khoản nhầm\" trong nhóm Luật Hình sự liên quan.",
+ "example": "Ngân hàng chuyển nhầm 20 triệu vào tài khoản của B: B phải hoàn trả 20 triệu (khoản 2 Điều 579).",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1, khoản 2 Điều 579 Bộ luật Dân sự 2015",
@@ -23,10 +23,13 @@
   "giao cơ quan nhà nước"
  ],
  "memo": {
-  "hook": "Chiếm hữu, được lợi KHÔNG CÓ CĂN CỨ → phải HOÀN TRẢ.",
+  "gist": "Ai đang giữ hoặc được lợi từ tài sản người khác mà không có căn cứ pháp luật thì phải trả lại.",
+  "kind": "compare",
+  "hook": "Của rơi vào túi nhầm thì phải trả về đúng chủ.",
   "tree": [
    {
     "label": "Chiếm hữu, sử dụng",
+    "icon": "box",
     "children": [
      "Hoàn trả tài sản",
      "Không tìm được chủ: giao Nhà nước"
@@ -34,15 +37,27 @@
    },
    {
     "label": "Được lợi",
+    "icon": "money",
     "children": [
      "Hoàn trả khoản lợi"
     ]
    },
    {
     "label": "Ngoại lệ",
+    "icon": "clock",
     "children": [
      "Xác lập theo thời hiệu"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ngân hàng chuyển nhầm 20 triệu vào tài khoản của B. B phải làm gì?",
+   "a": "Hoàn trả 20 triệu."
+  },
+  "contrast": [
+   {
+    "with": "thuc-hien-cong-viec-khong-uy-quyen",
+    "text": "Hoàn trả là trả của không phải của mình; làm giúp không ủy quyền là làm việc thay người khác."
    }
   ]
  },

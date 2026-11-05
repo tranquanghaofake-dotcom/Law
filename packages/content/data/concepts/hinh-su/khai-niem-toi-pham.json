@@ -24,22 +24,36 @@
   "không đáng kể"
  ],
  "memo": {
-  "hook": "Bốn dấu hiệu: NGUY HIỂM – CÓ LỖI – TRÁI LUẬT HÌNH SỰ – PHẢI CHỊU HÌNH PHẠT.",
+  "gist": "Tội phạm là hành vi nguy hiểm cho xã hội, có lỗi, được Bộ luật Hình sự quy định và phải chịu hình phạt.",
+  "kind": "checklist",
+  "hook": "Bốn tiêu chí: nguy hiểm, có lỗi, có tên trong luật, đáng bị phạt.",
   "tree": [
    {
     "label": "Dấu hiệu",
+    "icon": "check",
     "children": [
      "Nguy hiểm cho xã hội (cơ bản)",
      "Có lỗi",
-     "Được quy định trong BLHS",
+     "Được quy định trong Bộ luật Hình sự",
      "Phải chịu hình phạt"
     ]
    },
    {
     "label": "Loại trừ",
+    "icon": "ban",
     "children": [
      "Nguy hiểm không đáng kể"
     ]
+   }
+  ],
+  "case": {
+   "q": "Lấy một gói bánh vài nghìn đồng, không có tình tiết đặc biệt. Có phải tội phạm không?",
+   "a": "Không, vì nguy hiểm không đáng kể; thường xử lý hành chính."
+  },
+  "contrast": [
+   {
+    "with": "phan-loai-toi-pham",
+    "text": "Khái niệm nói thế nào là tội; phân loại chia tội theo mức nặng nhẹ."
    }
   ]
  },

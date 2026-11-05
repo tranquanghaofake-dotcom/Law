@@ -24,22 +24,27 @@
   "hành vi hợp pháp"
  ],
  "memo": {
-  "hook": "Bốn hình thức: TUÂN THỦ (không làm điều cấm) – THI HÀNH (làm điều buộc) – SỬ DỤNG (dùng quyền) – ÁP DỤNG.",
+  "gist": "Thực hiện pháp luật có bốn hình thức: tuân thủ, thi hành, sử dụng, và áp dụng do cơ quan có thẩm quyền làm.",
+  "kind": "tree",
+  "hook": "Không làm điều cấm, làm điều bắt buộc, dùng quyền mình có, và người có thẩm quyền quyết.",
   "tree": [
    {
     "label": "Tuân thủ",
+    "icon": "ban",
     "children": [
      "Không làm điều cấm"
     ]
    },
    {
     "label": "Thi hành",
+    "icon": "check",
     "children": [
      "Làm điều bắt buộc"
     ]
    },
    {
     "label": "Sử dụng",
+    "icon": "person",
     "children": [
      "Thực hiện quyền",
      "Có thể không dùng"
@@ -47,9 +52,20 @@
    },
    {
     "label": "Áp dụng",
+    "icon": "state",
     "children": [
      "Chủ thể có thẩm quyền"
     ]
+   }
+  ],
+  "case": {
+   "q": "Doanh nghiệp nộp thuế đúng hạn là hình thức thực hiện pháp luật nào?",
+   "a": "Thi hành pháp luật."
+  },
+  "contrast": [
+   {
+    "with": "llc-ap-dung-phap-luat",
+    "text": "Thực hiện là bốn hình thức; áp dụng chỉ là một, dành cho người có thẩm quyền."
    }
   ]
  },

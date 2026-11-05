@@ -25,10 +25,13 @@
   "Đại Việt (1054)"
  ],
  "memo": {
-  "hook": "1010: Lý Thái Tổ dời đô HOA LƯ → ĐẠI LA, đổi tên THĂNG LONG.",
+  "gist": "Năm 1010 Lý Thái Tổ ban Chiếu dời đô từ Hoa Lư về Đại La, đổi tên là Thăng Long.",
+  "kind": "tree",
+  "hook": "Rồng bay lên từ thành Đại La.",
   "tree": [
    {
     "label": "Mốc",
+    "icon": "calendar",
     "children": [
      "1010",
      "Chiếu dời đô"
@@ -36,6 +39,7 @@
    },
    {
     "label": "Dời",
+    "icon": "arrow",
     "children": [
      "Hoa Lư → Đại La",
      "Đổi tên Thăng Long"
@@ -43,15 +47,27 @@
    },
    {
     "label": "Tư tưởng",
+    "icon": "idea",
     "children": [
      "Kính mệnh trời, theo ý dân"
     ]
    },
    {
     "label": "Quốc hiệu",
+    "icon": "doc",
     "children": [
      "Đại Việt (1054)"
     ]
+   }
+  ],
+  "case": {
+   "q": "Chiếu dời đô thuộc loại văn bản gì trong pháp luật phong kiến?",
+   "a": "Chiếu, một loại văn bản của nhà vua, là nguồn pháp luật."
+  },
+  "contrast": [
+   {
+    "with": "dinh-dai-co-viet",
+    "text": "Nhà Đinh đóng đô Hoa Lư; nhà Lý dời về Thăng Long."
    }
   ]
  },

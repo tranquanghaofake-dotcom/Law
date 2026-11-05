@@ -5,7 +5,7 @@
  "term": "Công ty đại chúng",
  "definition": "Công ty đại chúng là công ty cổ phần thuộc một trong hai trường hợp sau đây: a) Công ty có vốn điều lệ đã góp từ 30 tỷ đồng trở lên, có vốn chủ sở hữu từ 30 tỷ đồng trở lên và có tối thiểu 10% số cổ phiếu có quyền biểu quyết do ít nhất 100 nhà đầu tư không phải cổ đông lớn nắm giữ; b) Công ty đã thực hiện chào bán thành công cổ phiếu lần đầu ra công chúng thông qua đăng ký với Ủy ban Chứng khoán Nhà nước theo quy định tại khoản 1 Điều 16 của Luật này.",
  "plain": "Công ty đại chúng là đối tượng trung tâm của quản lý nhà nước về chứng khoán: phải công bố thông tin, tuân thủ quản trị công ty, phải đăng ký, lưu ký cổ phiếu tập trung và niêm yết hoặc đăng ký giao dịch. Có 2 con đường trở thành công ty đại chúng: tự đáp ứng điều kiện về vốn và cơ cấu cổ đông (phải nộp hồ sơ đăng ký trong 90 ngày), hoặc IPO thành công.",
- "example": "Công ty cổ phần M có vốn điều lệ đã góp 50 tỷ, vốn chủ sở hữu 60 tỷ, 12% cổ phiếu có quyền biểu quyết do 150 nhà đầu tư nhỏ nắm: dù chưa IPO, M đã là công ty đại chúng và phải nộp hồ sơ đăng ký với Ủy ban trong 90 ngày.",
+ "example": "Công ty cổ phần M có vốn điều lệ đã góp 50 tỷ, vốn chủ sở hữu 60 tỷ, 12% cổ phiếu có quyền biểu quyết do 150 nhà đầu tư nhỏ nắm: dù chưa phát hành lần đầu ra công chúng, M đã là công ty đại chúng và phải nộp hồ sơ đăng ký với Ủy ban trong 90 ngày.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1 Điều 32 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)",
@@ -25,16 +25,20 @@
  ],
  "note": "Luật 56/2024/QH15 (hiệu lực 01/01/2025) sửa điểm a khoản 1 Điều 32 (theo chú thích của VBHN 102/VBHN-VPQH). Bản hiện hành đòi cả vốn điều lệ đã góp từ 30 tỷ đồng và vốn chủ sở hữu từ 30 tỷ đồng. Khi đọc giáo trình 2021, đối chiếu xem giáo trình có nêu điều kiện vốn chủ sở hữu hay không.",
  "memo": {
-  "hook": "Công ty đại chúng: VỐN 30 TỶ + 10% cho 100 NHÀ ĐẦU TƯ, hoặc IPO thành công.",
+  "gist": "Công ty cổ phần vốn từ 30 tỷ, 10% cổ phiếu do 100 nhà đầu tư nắm, hoặc đã phát hành ra công chúng.",
+  "kind": "compare",
+  "hook": "Nhiều người nắm cổ phiếu thì phải sống trong nhà kính.",
   "tree": [
    {
     "label": "Loại hình",
+    "icon": "company",
     "children": [
      "Công ty cổ phần"
     ]
    },
    {
     "label": "Con đường 1",
+    "icon": "map",
     "children": [
      "Vốn điều lệ và vốn chủ sở hữu từ 30 tỷ",
      "10% cổ phiếu do 100 nhà đầu tư nắm"
@@ -42,16 +46,28 @@
    },
    {
     "label": "Con đường 2",
+    "icon": "map",
     "children": [
-     "IPO thành công"
+     "Phát hành lần đầu ra công chúng thành công"
     ]
    },
    {
     "label": "Nghĩa vụ",
+    "icon": "announce",
     "children": [
      "Công bố thông tin",
      "Lưu ký tập trung"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty cổ phần có vốn 50 tỷ, 12% cổ phiếu do 150 nhà đầu tư nhỏ nắm, chưa phát hành ra công chúng. Có phải công ty đại chúng không?",
+   "a": "Có, theo con đường thứ nhất."
+  },
+  "contrast": [
+   {
+    "with": "doi-tuong-cong-bo-thong-tin",
+    "text": "Công ty đại chúng là một loại; đối tượng công bố thông tin gồm cả nó và nhiều chủ thể khác."
    }
   ]
  },

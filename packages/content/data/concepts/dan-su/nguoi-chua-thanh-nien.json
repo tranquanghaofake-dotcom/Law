@@ -23,16 +23,20 @@
   "bất động sản, động sản phải đăng ký"
  ],
  "memo": {
-  "hook": "Ba mốc: dưới 6 – người đại diện làm; 6–15 – cần đồng ý; 15–18 – tự làm, trừ tài sản đăng ký.",
+  "gist": "Dưới 6 tuổi người đại diện làm thay; 6 đến 15 cần đồng ý; 15 đến 18 tự làm, trừ tài sản đăng ký.",
+  "kind": "ladder",
+  "hook": "Mẹo sáu – mười lăm – mười tám: ba nấc tự lập.",
   "tree": [
    {
     "label": "Dưới 6 tuổi",
+    "icon": "child",
     "children": [
      "Người đại diện xác lập"
     ]
    },
    {
     "label": "6 đến dưới 15",
+    "icon": "child",
     "children": [
      "Cần người đại diện đồng ý",
      "Trừ giao dịch sinh hoạt hằng ngày"
@@ -40,10 +44,21 @@
    },
    {
     "label": "15 đến dưới 18",
+    "icon": "person",
     "children": [
      "Tự mình xác lập",
      "Trừ bất động sản, động sản phải đăng ký"
     ]
+   }
+  ],
+  "case": {
+   "q": "Bạn 16 tuổi tự bán xe máy của mình. Có cần cha mẹ đồng ý không?",
+   "a": "Có, vì xe máy là động sản phải đăng ký."
+  },
+  "contrast": [
+   {
+    "with": "dai-dien",
+    "text": "Bài này nói khi nào trẻ được tự làm; đại diện là người lớn làm thay."
    }
   ]
  },

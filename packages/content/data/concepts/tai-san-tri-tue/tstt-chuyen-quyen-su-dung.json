@@ -5,7 +5,7 @@
  "term": "Chuyển quyền sử dụng đối tượng sở hữu công nghiệp (li-xăng)",
  "definition": "Chuyển quyền sử dụng đối tượng sở hữu công nghiệp là việc chủ sở hữu đối tượng sở hữu công nghiệp cho phép tổ chức, cá nhân khác sử dụng đối tượng sở hữu công nghiệp thuộc phạm vi quyền sử dụng của mình.",
  "plain": "Li-xăng: chủ sở hữu CHO PHÉP sử dụng, vẫn giữ quyền sở hữu; bên nhận chỉ được dùng trong PHẠM VI (không gian, thời hạn, đối tượng) thỏa thuận. Phải bằng văn bản (khoản 2 Điều 141). Nội dung hợp đồng (Điều 144): tên, địa chỉ; căn cứ; dạng hợp đồng; phạm vi; thời hạn; giá; quyền nghĩa vụ. Trong hợp đồng sử dụng nhãn hiệu, bên nhận phải ghi chỉ dẫn trên hàng hóa rằng đó là hàng sản xuất theo li-xăng (khoản 4 Điều 142); bên giao thường giữ quyền kiểm soát chất lượng. Lợi ích: bên giao thu phí, mở rộng thị trường; bên nhận tiếp cận công nghệ, thương hiệu.",
- "example": "Công ty X cho công ty Y sử dụng nhãn hiệu kẹo cao su trên lãnh thổ Việt Nam đến hết hạn Giấy chứng nhận đăng ký nhãn hiệu, có quyền lấy mẫu kiểm tra chất lượng: hợp đồng sử dụng đối tượng SHCN (li-xăng nhãn hiệu).",
+ "example": "Công ty X cho công ty Y sử dụng nhãn hiệu kẹo cao su trên lãnh thổ Việt Nam đến hết hạn văn bằng, có quyền lấy mẫu kiểm tra chất lượng: hợp đồng sử dụng nhãn hiệu.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1 Điều 141 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)",
@@ -25,10 +25,13 @@
  ],
  "note": "Luật Sở hữu trí tuệ 50/2005/QH11 (hiệu lực 01/7/2006) đã được sửa đổi bởi Luật 36/2009/QH12, 42/2019/QH14, 07/2022/QH15, 93/2025/QH15 và 131/2025/QH15 (hiệu lực 01/4/2026) — văn bản hợp nhất 67/VBHN-VPQH 2026; ghi chép lớp học còn dẫn Nghị định 105/2006/NĐ-CP và Nghị định 99/2013/NĐ-CP, cần tự kiểm tra hiệu lực của các nghị định này trước khi dùng.",
  "memo": {
-  "hook": "Li-xăng = CHO THUÊ: chủ vẫn giữ quyền, bên nhận dùng trong PHẠM VI.",
+  "gist": "Chủ cho người khác dùng đối tượng sở hữu công nghiệp trong phạm vi thỏa thuận, nhưng vẫn giữ quyền sở hữu.",
+  "kind": "tree",
+  "hook": "Như cho thuê nhà: người thuê ở, chủ vẫn giữ sổ đỏ.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "unlock",
     "children": [
      "Cho phép sử dụng",
      "Chủ sở hữu vẫn giữ quyền"
@@ -36,6 +39,7 @@
    },
    {
     "label": "Phạm vi",
+    "icon": "measure",
     "children": [
      "Không gian, thời hạn",
      "Đối tượng thỏa thuận"
@@ -43,9 +47,20 @@
    },
    {
     "label": "Hình thức",
+    "icon": "pen",
     "children": [
      "Văn bản"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty X cho công ty Y dùng nhãn hiệu kẹo trên lãnh thổ Việt Nam. Ai là chủ nhãn hiệu?",
+   "a": "Vẫn là X; Y chỉ được dùng trong phạm vi hợp đồng."
+  },
+  "contrast": [
+   {
+    "with": "tstt-chuyen-nhuong-quyen-shcn",
+    "text": "Chuyển quyền sử dụng là cho thuê; chuyển nhượng là bán đứt."
    }
   ]
  },

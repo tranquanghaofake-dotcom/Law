@@ -23,16 +23,20 @@
   "khôi phục"
  ],
  "memo": {
-  "hook": "ĐÓNG CỬA SÀN là quyền của ỦY BAN, không phải của Sở.",
+  "gist": "Ủy ban được tạm ngừng hay đình chỉ cả hoạt động giao dịch của Sở khi có sự cố, thị trường bất thường.",
+  "kind": "tree",
+  "hook": "Nút đóng cửa chợ nằm trong tay trọng tài, không trong tay chủ chợ.",
   "tree": [
    {
     "label": "Ai quyết định",
+    "icon": "state",
     "children": [
      "Ủy ban Chứng khoán Nhà nước"
     ]
    },
    {
     "label": "Căn cứ",
+    "icon": "warn",
     "children": [
      "Bất khả kháng",
      "Thị trường biến động bất thường",
@@ -41,9 +45,20 @@
    },
    {
     "label": "Sau đó",
+    "icon": "cycle",
     "children": [
      "Khôi phục khi khắc phục xong"
     ]
+   }
+  ],
+  "case": {
+   "q": "Hệ thống nghẽn lệnh nghiêm trọng cả buổi sáng. Ai có quyền tạm ngừng toàn bộ giao dịch của Sở?",
+   "a": "Ủy ban Chứng khoán Nhà nước."
+  },
+  "contrast": [
+   {
+    "with": "quyen-nghia-vu-so-giao-dich",
+    "text": "Ủy ban đóng cả sàn; Sở chỉ dừng được từng mã."
    }
   ]
  },

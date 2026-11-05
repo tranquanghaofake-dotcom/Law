@@ -23,10 +23,13 @@
   "xác định về hình thức"
  ],
  "memo": {
-  "hook": "Pháp luật khác đạo đức ở: QUYỀN LỰC NHÀ NƯỚC – QUY PHẠM PHỔ BIẾN – HỆ THỐNG – XÁC ĐỊNH HÌNH THỨC.",
+  "gist": "Pháp luật khác đạo đức ở chỗ có quyền lực nhà nước, áp dụng phổ biến, có hệ thống và hình thức rõ ràng.",
+  "kind": "tree",
+  "hook": "Có quyền lực đứng sau thì quy tắc mới thành luật.",
   "tree": [
    {
     "label": "Nguồn gốc",
+    "icon": "state",
     "children": [
      "Quyền lực nhà nước",
      "Tính ý chí"
@@ -34,6 +37,7 @@
    },
    {
     "label": "Cấu tạo",
+    "icon": "stairs",
     "children": [
      "Quy phạm phổ biến",
      "Tính hệ thống",
@@ -42,9 +46,20 @@
    },
    {
     "label": "Phân biệt",
+    "icon": "compare",
     "children": [
      "Đạo đức, tập quán, điều lệ"
     ]
+   }
+  ],
+  "case": {
+   "q": "Quy ước thôn \"không được xả rác\" có phải quy phạm pháp luật không?",
+   "a": "Không, chỉ là quy phạm xã hội; khi luật quy định có chế tài mới là pháp luật."
+  },
+  "contrast": [
+   {
+    "with": "llc-ban-chat-phap-luat",
+    "text": "Thuộc tính là dấu hiệu nhận ra; bản chất là pháp luật là gì."
    }
   ]
  },

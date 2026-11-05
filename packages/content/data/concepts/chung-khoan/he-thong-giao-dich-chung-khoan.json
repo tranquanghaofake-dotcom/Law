@@ -5,7 +5,7 @@
  "term": "Hệ thống giao dịch chứng khoán",
  "definition": "Hệ thống giao dịch chứng khoán bao gồm hệ thống giao dịch cho chứng khoán niêm yết và hệ thống giao dịch cho chứng khoán chưa niêm yết, do Sở giao dịch chứng khoán Việt Nam và công ty con của Sở giao dịch chứng khoán Việt Nam (sau đây gọi là Sở giao dịch chứng khoán Việt Nam và công ty con) tổ chức, vận hành.",
  "plain": "Một hệ thống, hai \"nhánh\": nhánh cho chứng khoán niêm yết và nhánh cho chứng khoán chưa niêm yết (đăng ký giao dịch). Cả hai do Sở giao dịch chứng khoán Việt Nam và công ty con vận hành. Đây là \"hạ tầng\"; còn \"thị trường giao dịch chứng khoán\" (khoản 27) là khái niệm rộng hơn về nơi, cách tập hợp lệnh.",
- "example": "Lệnh mua cổ phiếu VNM (niêm yết HOSE) và lệnh mua cổ phiếu trên UPCoM đều đi vào hệ thống giao dịch chứng khoán, nhưng ở hai nhánh khác nhau.",
+ "example": "Lệnh mua cổ phiếu niêm yết trên sàn Thành phố Hồ Chí Minh và lệnh mua cổ phiếu trên sàn chưa niêm yết đều đi vào hệ thống giao dịch chứng khoán, nhưng ở hai nhánh khác nhau.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 26 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)",
@@ -21,10 +21,13 @@
   "Sở giao dịch chứng khoán Việt Nam và công ty con"
  ],
  "memo": {
-  "hook": "MỘT hệ thống, HAI nhánh: NIÊM YẾT và CHƯA NIÊM YẾT.",
+  "gist": "Một hệ thống giao dịch chung, có hai nhánh: cho chứng khoán niêm yết và cho chứng khoán chưa niêm yết.",
+  "kind": "compare",
+  "hook": "Một con đường, hai làn xe.",
   "tree": [
    {
     "label": "Hai nhánh",
+    "icon": "map",
     "children": [
      "Chứng khoán niêm yết",
      "Chứng khoán chưa niêm yết"
@@ -32,16 +35,28 @@
    },
    {
     "label": "Vận hành",
+    "icon": "state",
     "children": [
      "Sở giao dịch Việt Nam và công ty con"
     ]
    },
    {
     "label": "Phân biệt",
+    "icon": "compare",
     "children": [
      "Hệ thống là hạ tầng",
      "Thị trường là không gian giao dịch"
     ]
+   }
+  ],
+  "case": {
+   "q": "Lệnh mua cổ phiếu niêm yết và lệnh mua cổ phiếu trên sàn chưa niêm yết đi vào đâu?",
+   "a": "Cùng hệ thống giao dịch chứng khoán, nhưng hai nhánh khác nhau."
+  },
+  "contrast": [
+   {
+    "with": "niem-yet-chung-khoan",
+    "text": "Hệ thống là hạ tầng; niêm yết là điều kiện để vào nhánh niêm yết."
    }
   ]
  },

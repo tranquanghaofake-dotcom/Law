@@ -23,16 +23,20 @@
   "miễn trừ ngoại giao"
  ],
  "memo": {
-  "hook": "MỌI hành vi phạm tội trên lãnh thổ Việt Nam, kể cả TÀU BAY, TÀU BIỂN Việt Nam.",
+  "gist": "Mọi hành vi phạm tội trên lãnh thổ Việt Nam, kể cả trên tàu bay, tàu biển Việt Nam, đều xử theo luật Việt Nam.",
+  "kind": "tree",
+  "hook": "Bước vào nhà ai thì theo nội quy nhà đó.",
   "tree": [
    {
     "label": "Lãnh thổ",
+    "icon": "flag",
     "children": [
      "Mọi hành vi, kể cả người nước ngoài"
     ]
    },
    {
     "label": "Mở rộng",
+    "icon": "globe",
     "children": [
      "Tàu bay, tàu biển Việt Nam",
      "Vùng đặc quyền kinh tế, thềm lục địa"
@@ -40,9 +44,20 @@
    },
    {
     "label": "Ngoại lệ",
+    "icon": "shield",
     "children": [
      "Quyền miễn trừ ngoại giao, lãnh sự"
     ]
+   }
+  ],
+  "case": {
+   "q": "Du khách nước ngoài trộm tài sản tại Hà Nội. Xử theo luật nước nào?",
+   "a": "Bộ luật Hình sự Việt Nam, trừ người có quyền miễn trừ ngoại giao."
+  },
+  "contrast": [
+   {
+    "with": "hieu-luc-ngoai-lanh-tho",
+    "text": "Trên lãnh thổ áp cho mọi người; ngoài lãnh thổ chỉ khi là công dân Việt Nam hoặc xâm hại lợi ích Việt Nam."
    }
   ]
  },

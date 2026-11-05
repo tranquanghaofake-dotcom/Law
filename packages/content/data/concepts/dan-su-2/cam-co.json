@@ -22,10 +22,13 @@
   "bảo đảm thực hiện nghĩa vụ"
  ],
  "memo": {
-  "hook": "Cầm cố CÓ GIAO tài sản; thế chấp KHÔNG giao.",
+  "gist": "Cầm cố là giao tài sản của mình cho bên kia giữ để bảo đảm trả nợ.",
+  "kind": "compare",
+  "hook": "Như đem xe ra tiệm cầm đồ: đồ nằm ở tiệm, tiền nằm ở mình.",
   "tree": [
    {
     "label": "Đặc trưng",
+    "icon": "handshake",
     "children": [
      "Giao tài sản cho bên nhận",
      "Tài sản thuộc sở hữu bên cầm cố"
@@ -33,21 +36,34 @@
    },
    {
     "label": "Hiệu lực",
+    "icon": "calendar",
     "children": [
      "Từ khi giao kết"
     ]
    },
    {
     "label": "Đối kháng",
+    "icon": "lock",
     "children": [
      "Từ khi bên nhận nắm giữ"
     ]
    },
    {
     "label": "Phân biệt",
+    "icon": "compare",
     "children": [
      "Thế chấp: không giao"
     ]
+   }
+  ],
+  "case": {
+   "q": "Mang xe máy đến tiệm cầm đồ vay 10 triệu, tiệm giữ xe. Đây là biện pháp gì?",
+   "a": "Cầm cố tài sản."
+  },
+  "contrast": [
+   {
+    "with": "the-chap",
+    "text": "Cầm cố phải giao tài sản; thế chấp thì vẫn giữ tài sản."
    }
   ]
  },

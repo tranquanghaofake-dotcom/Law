@@ -23,16 +23,20 @@
   "cha mẹ bù phần thiếu"
  ],
  "memo": {
-  "hook": "Ba mốc: đủ 18 tự đền; dưới 15 CHA MẸ đền; 15–18 CON đền trước, cha mẹ bù.",
+  "gist": "Từ 18 tuổi tự đền; dưới 15 cha mẹ đền; 15 đến dưới 18 thì con đền trước, cha mẹ bù phần thiếu.",
+  "kind": "ladder",
+  "hook": "Ví con trước, ví cha mẹ sau; nhỏ quá thì ví cha mẹ thôi.",
   "tree": [
    {
     "label": "Từ đủ 18",
+    "icon": "person",
     "children": [
      "Tự bồi thường"
     ]
    },
    {
     "label": "Dưới 15",
+    "icon": "child",
     "children": [
      "Cha mẹ bồi thường toàn bộ",
      "Thiếu thì lấy tài sản của con"
@@ -40,6 +44,7 @@
    },
    {
     "label": "15 đến dưới 18",
+    "icon": "child",
     "children": [
      "Con dùng tài sản mình trước",
      "Cha mẹ bù phần thiếu"
@@ -47,9 +52,20 @@
    },
    {
     "label": "Người được giám hộ",
+    "icon": "shield",
     "children": [
      "Người giám hộ"
     ]
+   }
+  ],
+  "case": {
+   "q": "Em A 16 tuổi đi xe đạp điện làm hỏng xe máy người khác. Ai bồi thường?",
+   "a": "A bồi thường bằng tài sản riêng, không đủ thì cha mẹ bù."
+  },
+  "contrast": [
+   {
+    "with": "nguyen-tac-boi-thuong",
+    "text": "Năng lực chịu trách nhiệm là ai phải đền; nguyên tắc là đền như thế nào."
    }
   ]
  },

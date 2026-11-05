@@ -5,7 +5,7 @@
  "term": "Chứng khoán",
  "definition": "Chứng khoán là tài sản, bao gồm các loại sau đây: a) Cổ phiếu, trái phiếu, chứng chỉ quỹ; b) Chứng quyền, chứng quyền có bảo đảm, quyền mua cổ phần, chứng chỉ lưu ký; c) Chứng khoán phái sinh; d) Các loại chứng khoán khác do Chính phủ quy định.",
  "plain": "Luật không định nghĩa chứng khoán bằng đặc điểm mà bằng cách xếp nó vào \"tài sản\" rồi liệt kê từng loại. Vì là tài sản nên chứng khoán chịu cả quy định về quyền sở hữu của Bộ luật Dân sự. Danh sách để ngỏ ở điểm d: Chính phủ có thể bổ sung loại mới.",
- "example": "Cổ phiếu VNM bạn mua trên app, chứng chỉ quỹ mở, hợp đồng tương lai chỉ số VN30 đều là chứng khoán. Sổ tiết kiệm ngân hàng thì không: nó không nằm trong danh sách khoản 1 Điều 4.",
+ "example": "Cổ phiếu bạn mua trên ứng dụng, chứng chỉ quỹ mở, hợp đồng tương lai chỉ số đều là chứng khoán. Sổ tiết kiệm ngân hàng thì không, vì không có trong danh sách luật liệt kê.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)",
@@ -23,16 +23,20 @@
   "Chính phủ quy định loại khác"
  ],
  "memo": {
-  "hook": "Chứng khoán là TÀI SẢN, luật định nghĩa bằng LIỆT KÊ.",
+  "gist": "Chứng khoán là tài sản; luật kể ra từng loại: cổ phiếu, trái phiếu, chứng chỉ quỹ, chứng quyền, phái sinh và loại khác.",
+  "kind": "tree",
+  "hook": "Luật vẽ danh sách khách mời: không có tên thì không phải chứng khoán.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "money",
     "children": [
      "Tài sản"
     ]
    },
    {
     "label": "Loại",
+    "icon": "list",
     "children": [
      "Cổ phiếu, trái phiếu, chứng chỉ quỹ",
      "Chứng quyền, quyền mua cổ phần",
@@ -41,9 +45,20 @@
    },
    {
     "label": "Mở",
+    "icon": "calc",
     "children": [
      "Chính phủ quy định loại khác"
     ]
+   }
+  ],
+  "case": {
+   "q": "Sổ tiết kiệm ngân hàng có phải chứng khoán không?",
+   "a": "Không, vì không có trong danh sách luật liệt kê."
+  },
+  "contrast": [
+   {
+    "with": "co-phieu",
+    "text": "Chứng khoán là nhóm lớn; cổ phiếu chỉ là một loại."
    }
   ]
  },

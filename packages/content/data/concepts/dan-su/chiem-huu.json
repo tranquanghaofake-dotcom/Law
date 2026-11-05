@@ -23,10 +23,13 @@
   "liên tục, công khai"
  ],
  "memo": {
-  "hook": "Chiếm hữu là TÌNH TRẠNG thực tế nắm giữ, được pháp luật bảo vệ.",
+  "gist": "Chiếm hữu là việc thực tế nắm giữ, chi phối một tài sản, dù có phải chủ hay không, và được luật bảo vệ.",
+  "kind": "tree",
+  "hook": "Đang cầm trong tay chưa chắc là của mình.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "ban",
     "children": [
      "Nắm giữ, chi phối tài sản",
      "Trực tiếp hoặc gián tiếp"
@@ -34,6 +37,7 @@
    },
    {
     "label": "Chủ thể",
+    "icon": "people",
     "children": [
      "Chủ sở hữu",
      "Người không phải chủ sở hữu"
@@ -41,11 +45,22 @@
    },
    {
     "label": "Phân loại",
+    "icon": "list",
     "children": [
      "Ngay tình / không ngay tình",
      "Liên tục",
      "Công khai"
     ]
+   }
+  ],
+  "case": {
+   "q": "Người mua điện thoại cũ có hóa đơn, không biết đó là đồ trộm. Họ là người chiếm hữu loại gì?",
+   "a": "Người chiếm hữu ngay tình."
+  },
+  "contrast": [
+   {
+    "with": "quyen-so-huu",
+    "text": "Chiếm hữu là đang nắm giữ thực tế; quyền sở hữu là quyền của chủ, gồm cả chiếm hữu."
    }
   ]
  },

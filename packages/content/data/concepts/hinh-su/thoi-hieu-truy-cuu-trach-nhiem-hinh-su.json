@@ -5,7 +5,7 @@
  "term": "Thời hiệu truy cứu trách nhiệm hình sự",
  "definition": "Thời hiệu truy cứu trách nhiệm hình sự là thời hạn do Bộ luật này quy định mà khi hết thời hạn đó thì người phạm tội không bị truy cứu trách nhiệm hình sự. Thời hiệu truy cứu trách nhiệm hình sự được quy định như sau: a) 05 năm đối với tội phạm ít nghiêm trọng; b) 10 năm đối với tội phạm nghiêm trọng; c) 15 năm đối với tội phạm rất nghiêm trọng; d) 20 năm đối với tội phạm đặc biệt nghiêm trọng.",
  "plain": "Bốn mốc 05 – 10 – 15 – 20 năm theo bốn loại tội (Điều 9). Tính TỪ NGÀY TỘI PHẠM ĐƯỢC THỰC HIỆN. TÍNH LẠI khi: phạm tội mới có mức cao nhất của khung trên 01 năm tù (tính từ ngày phạm tội mới); cố tình trốn tránh và đã có quyết định truy nã (tính từ khi đầu thú hoặc bị bắt) (khoản 3). KHÔNG áp dụng thời hiệu với tội xâm phạm an ninh quốc gia, tội phá hoại hòa bình, tội tham ô, nhận hối lộ ở khung nặng… (Điều 28).",
- "example": "A trộm cắp tài sản (khoản 1 Điều 173, ít nghiêm trọng) năm 2020, không phạm tội mới, không bị truy nã: đến năm 2025 hết thời hiệu 05 năm, A không bị truy cứu TNHS.",
+ "example": "A trộm cắp tài sản (khoản 1 Điều 173, ít nghiêm trọng) năm 2020, không phạm tội mới, không bị truy nã: đến năm 2025 hết thời hiệu 05 năm, A không bị truy cứu trách nhiệm hình sự.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1, khoản 2 Điều 27 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)",
@@ -23,10 +23,13 @@
   "truy nã"
  ],
  "memo": {
-  "hook": "Thời hiệu 5 – 10 – 15 – 20 NĂM theo bốn loại tội, tính từ ngày phạm tội.",
+  "gist": "Quá thời hạn 5, 10, 15 hoặc 20 năm tùy loại tội, tính từ ngày phạm tội, thì không bị truy cứu nữa.",
+  "kind": "ladder",
+  "hook": "Mẹo năm – mười – mười lăm – hai mươi, tăng theo bốn bậc tội.",
   "tree": [
    {
     "label": "Mức",
+    "icon": "clock",
     "children": [
      "Ít nghiêm trọng: 05 năm",
      "Nghiêm trọng: 10 năm",
@@ -36,6 +39,7 @@
    },
    {
     "label": "Tính lại",
+    "icon": "cycle",
     "children": [
      "Phạm tội mới",
      "Trốn tránh, bị truy nã"
@@ -43,9 +47,20 @@
    },
    {
     "label": "Mốc",
+    "icon": "pin",
     "children": [
      "Từ ngày tội phạm thực hiện"
     ]
+   }
+  ],
+  "case": {
+   "q": "A trộm cắp (ít nghiêm trọng) năm 2020, không phạm tội mới, không trốn. Năm 2025 còn bị truy cứu không?",
+   "a": "Không, vì đã hết thời hiệu 5 năm."
+  },
+  "contrast": [
+   {
+    "with": "mien-trach-nhiem-hinh-su",
+    "text": "Thời hiệu là hết thời gian; miễn là có căn cứ được tha dù còn thời gian."
    }
   ]
  },

@@ -26,10 +26,13 @@
  ],
  "note": "Luật Doanh nghiệp 59/2020/QH14 có hiệu lực từ 01/01/2021, thay thế Luật Doanh nghiệp 2014 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 03/2022/QH15 và Luật 76/2025/QH15 (hiệu lực 01/7/2025) — văn bản hợp nhất 67/VBHN-VPQH 2025.",
  "memo": {
-  "hook": "Chào bán cổ phần = VỐN CHỦ SỞ HỮU: tăng vốn điều lệ, không trả nợ, nhưng PHA LOÃNG.",
+  "gist": "Công ty bán thêm cổ phần để tăng vốn điều lệ; không phải trả lại tiền nhưng phần của cổ đông cũ bị chia nhỏ.",
+  "kind": "tree",
+  "hook": "Như cắt thêm miếng bánh mời người mới: bánh to hơn, miếng của mỗi người cũ nhỏ đi.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "stairs",
     "children": [
      "Tăng vốn điều lệ",
      "Không phải trả nợ gốc",
@@ -38,6 +41,7 @@
    },
    {
     "label": "Ba hình thức",
+    "icon": "n3",
     "children": [
      "Cổ đông hiện hữu",
      "Riêng lẻ",
@@ -46,9 +50,20 @@
    },
    {
     "label": "Sau chào bán",
+    "icon": "calendar",
     "children": [
      "Đăng ký vốn điều lệ trong 10 ngày"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty cổ phần bán thêm 1 triệu cổ phần cho cổ đông hiện hữu theo tỷ lệ. Công ty có phải trả lại tiền này sau này không?",
+   "a": "Không. Đây là vốn chủ sở hữu, không phải nợ."
+  },
+  "contrast": [
+   {
+    "with": "tcdn-trai-phieu",
+    "text": "Cổ phần là góp vốn làm chủ, không trả lại; trái phiếu là vay nợ, phải trả gốc và lãi."
    }
   ]
  },

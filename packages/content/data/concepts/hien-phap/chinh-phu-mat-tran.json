@@ -22,10 +22,13 @@
   "báo cáo trước Nhân dân"
  ],
  "memo": {
-  "hook": "Chính phủ không làm việc khép kín: PHỐI HỢP, MỜI DỰ, BÁO CÁO.",
+  "gist": "Chính phủ phối hợp với Mặt trận và đoàn thể, mời họ dự họp khi bàn việc liên quan, báo cáo trước Nhân dân.",
+  "kind": "tree",
+  "hook": "Bàn việc của dân thì mời đại diện của dân ngồi cùng.",
   "tree": [
    {
     "label": "Phối hợp",
+    "icon": "handshake",
     "children": [
      "Mặt trận Tổ quốc",
      "Tổ chức chính trị - xã hội"
@@ -33,6 +36,7 @@
    },
    {
     "label": "Mời dự phiên họp",
+    "icon": "people",
     "children": [
      "Chủ tịch Ủy ban trung ương Mặt trận",
      "Khi bàn vấn đề liên quan"
@@ -40,10 +44,21 @@
    },
    {
     "label": "Báo cáo trước Nhân dân",
+    "icon": "announce",
     "children": [
      "Thủ tướng, Bộ trưởng",
      "Qua thông tin đại chúng"
     ]
+   }
+  ],
+  "case": {
+   "q": "Chính phủ bàn chính sách hỗ trợ người lao động mất việc. Ai được mời dự?",
+   "a": "Chủ tịch Ủy ban trung ương Mặt trận và người đứng đầu Tổng Liên đoàn Lao động."
+  },
+  "contrast": [
+   {
+    "with": "chinh-quyen-dia-phuong-mat-tran",
+    "text": "Bài này ở cấp trung ương; bài kia ở cấp địa phương."
    }
   ]
  },

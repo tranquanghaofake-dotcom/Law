@@ -22,20 +22,34 @@
   "không bị giao nộp"
  ],
  "memo": {
-  "hook": "QUỐC TỊCH là tiêu chí duy nhất xác định công dân.",
+  "gist": "Công dân Việt Nam là người có quốc tịch Việt Nam; không bị trục xuất hay giao nộp cho nhà nước khác.",
+  "kind": "tree",
+  "hook": "Hộ chiếu đỏ là tấm khiên: đi đâu cũng không bị đuổi khỏi nhà.",
   "tree": [
    {
     "label": "Là ai",
+    "icon": "globe",
     "children": [
      "Người có quốc tịch Việt Nam"
     ]
    },
    {
     "label": "Bảo đảm",
+    "icon": "shield",
     "children": [
      "Không bị trục xuất",
      "Không bị giao nộp cho nhà nước khác"
     ]
+   }
+  ],
+  "case": {
+   "q": "Người Việt định cư ở Đức 20 năm, chưa mất quốc tịch. Nước ngoài yêu cầu giao nộp người này. Việt Nam có giao không?",
+   "a": "Không, vì vẫn là công dân Việt Nam."
+  },
+  "contrast": [
+   {
+    "with": "quoc-tich-viet-nam",
+    "text": "Công dân là người có quốc tịch; quốc tịch là mối liên hệ pháp lý với Nhà nước."
    }
   ]
  },

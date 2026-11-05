@@ -24,10 +24,13 @@
   "chịu trách nhiệm trước Quốc hội"
  ],
  "memo": {
-  "hook": "Thủ tướng: ĐỨNG ĐẦU Chính phủ, chịu trách nhiệm trước QUỐC HỘI.",
+  "gist": "Thủ tướng do Quốc hội bầu trong số đại biểu, đứng đầu Chính phủ, chịu trách nhiệm trước Quốc hội.",
+  "kind": "tree",
+  "hook": "Người cầm lái bộ máy hành chính, báo cáo với hội đồng là Quốc hội.",
   "tree": [
    {
     "label": "Bầu",
+    "icon": "vote",
     "children": [
      "Quốc hội bầu trong số đại biểu",
      "Theo đề nghị Chủ tịch nước"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Vị trí",
+    "icon": "person",
     "children": [
      "Đứng đầu Chính phủ",
      "Lãnh đạo hệ thống hành chính"
@@ -42,16 +46,28 @@
    },
    {
     "label": "Trách nhiệm",
+    "icon": "scales",
     "children": [
      "Trước Quốc hội"
     ]
    },
    {
     "label": "Quyền nhân sự",
+    "icon": "people",
     "children": [
      "Trình phê chuẩn Phó Thủ tướng, Bộ trưởng",
      "Bổ nhiệm Thứ trưởng"
     ]
+   }
+  ],
+  "case": {
+   "q": "Thủ tướng có quyền đình chỉ quyết định trái luật của Chủ tịch Ủy ban nhân dân tỉnh không?",
+   "a": "Có."
+  },
+  "contrast": [
+   {
+    "with": "chu-tich-nuoc-vi-tri",
+    "text": "Thủ tướng đứng đầu Chính phủ; Chủ tịch nước đứng đầu Nhà nước."
    }
   ]
  },

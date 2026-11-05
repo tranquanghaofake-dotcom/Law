@@ -24,10 +24,13 @@
  ],
  "note": "Điều 4 có nội dung được sửa đổi, bổ sung bởi Luật 36/2009/QH12 (hiệu lực 01/01/2010); Luật 07/2022/QH15 (hiệu lực 01/01/2023); Luật 131/2025/QH15 (hiệu lực 01/4/2026) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
  "memo": {
-  "hook": "Quyền LIÊN QUAN: của người BIỂU DIỄN, nhà SẢN XUẤT bản ghi, tổ chức PHÁT SÓNG.",
+  "gist": "Quyền liên quan là quyền của ca sĩ, diễn viên, nhà sản xuất bản ghi và đài phát sóng đối với phần việc của họ.",
+  "kind": "tree",
+  "hook": "Bài hát của nhạc sĩ, giọng hát của ca sĩ, đĩa của hãng thu: ba người ba quyền.",
   "tree": [
    {
     "label": "Đối tượng",
+    "icon": "announce",
     "children": [
      "Cuộc biểu diễn",
      "Bản ghi âm, ghi hình",
@@ -37,6 +40,7 @@
    },
    {
     "label": "Chủ thể",
+    "icon": "people",
     "children": [
      "Người biểu diễn",
      "Nhà sản xuất",
@@ -45,9 +49,20 @@
    },
    {
     "label": "Giới hạn",
+    "icon": "warn",
     "children": [
      "Không phương hại quyền tác giả"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ca sĩ hát bài của nhạc sĩ X. Ca sĩ có quyền gì?",
+   "a": "Quyền liên quan với cuộc biểu diễn; nhạc sĩ có quyền tác giả với bài hát."
+  },
+  "contrast": [
+   {
+    "with": "can-cu-phat-sinh-quyen-shtt",
+    "text": "Quyền liên quan là của người truyền tải tác phẩm; căn cứ phát sinh nói quyền có từ lúc nào."
    }
   ]
  },

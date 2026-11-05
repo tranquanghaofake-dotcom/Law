@@ -5,7 +5,7 @@
  "term": "Hành vi xâm phạm quyền đối với nhãn hiệu",
  "definition": "Sử dụng dấu hiệu tương tự với nhãn hiệu được bảo hộ cho hàng hóa, dịch vụ trùng, tương tự hoặc liên quan tới hàng hóa, dịch vụ thuộc danh mục đăng ký kèm theo nhãn hiệu đó, nếu việc sử dụng có khả năng gây nhầm lẫn về nguồn gốc hàng hóa, dịch vụ;",
  "plain": "Bốn dạng tại khoản 1 Điều 129 theo cặp DẤU HIỆU × HÀNG HÓA: (a) trùng – trùng (không cần chứng minh nhầm lẫn); (b) trùng – tương tự/liên quan, có khả năng nhầm lẫn; (c) TƯƠNG TỰ – trùng/tương tự/liên quan, có khả năng nhầm lẫn; (d) nhãn hiệu NỔI TIẾNG — mọi hàng hóa nếu gây nhầm lẫn hoặc ấn tượng sai lệch. Khi tư vấn phải phân tích: cấu tạo, phát âm, cách trình bày của dấu hiệu; tính chất, chức năng, kênh phân phối của hàng hóa; rồi kết luận khả năng nhầm lẫn về nguồn gốc. Chỉ xâm phạm khi việc sử dụng KHÔNG được phép của chủ sở hữu và nằm trong thời hạn, lãnh thổ bảo hộ.",
- "example": "\"Hongda\" cho phụ tùng xe máy so với nhãn hiệu \"Honda\" đăng ký cho xe máy, phụ tùng: trùng 5/6 ký tự, cùng cách phát âm hai âm tiết, hàng hóa trùng/liên quan → khả năng nhầm lẫn về nguồn gốc → điểm c khoản 1 Điều 129.",
+ "example": "\"Hongda\" cho phụ tùng xe máy so với nhãn hiệu \"Honda\" cho xe máy, phụ tùng: trùng 5 trên 6 ký tự, đọc gần giống, hàng liên quan, dễ nhầm nguồn gốc, nên là xâm phạm (điểm c khoản 1 Điều 129).",
  "source": {
   "kind": "statute",
   "cite": "Điểm c khoản 1 Điều 129 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)",
@@ -25,16 +25,20 @@
  ],
  "note": "Luật Sở hữu trí tuệ 50/2005/QH11 (hiệu lực 01/7/2006) đã được sửa đổi bởi Luật 36/2009/QH12, 42/2019/QH14, 07/2022/QH15, 93/2025/QH15 và 131/2025/QH15 (hiệu lực 01/4/2026) — văn bản hợp nhất 67/VBHN-VPQH 2026; ghi chép lớp học còn dẫn Nghị định 105/2006/NĐ-CP và Nghị định 99/2013/NĐ-CP, cần tự kiểm tra hiệu lực của các nghị định này trước khi dùng.",
  "memo": {
-  "hook": "Xét cặp DẤU HIỆU × HÀNG HÓA và KHẢ NĂNG NHẦM LẪN.",
+  "gist": "Dùng dấu hiệu trùng hoặc giống nhãn hiệu cho hàng trùng hoặc liên quan, khiến người mua dễ nhầm, là xâm phạm.",
+  "kind": "tree",
+  "hook": "Như mặc áo gần giống đồng phục đội khác: khán giả nhìn nhầm là phạm luật.",
   "tree": [
    {
     "label": "Trùng – trùng",
+    "icon": "target",
     "children": [
      "Không cần chứng minh nhầm lẫn"
     ]
    },
    {
     "label": "Trùng hoặc tương tự",
+    "icon": "search",
     "children": [
      "Hàng trùng, tương tự, liên quan",
      "Có khả năng nhầm lẫn"
@@ -42,9 +46,20 @@
    },
    {
     "label": "Nhãn hiệu nổi tiếng",
+    "icon": "star",
     "children": [
      "Mọi hàng hóa nếu gây nhầm lẫn"
     ]
+   }
+  ],
+  "case": {
+   "q": "Dấu hiệu \"Hongda\" trên phụ tùng xe máy so với nhãn hiệu \"Honda\". Có xâm phạm không?",
+   "a": "Có. Tương tự về chữ và cách đọc, hàng liên quan, dễ nhầm nguồn gốc."
+  },
+  "contrast": [
+   {
+    "with": "tstt-xu-phat-hanh-chinh",
+    "text": "Xâm phạm là hành vi; xử phạt hành chính là một cách xử lý hành vi đó."
    }
   ]
  },

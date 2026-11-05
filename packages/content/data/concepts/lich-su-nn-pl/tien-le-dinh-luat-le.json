@@ -24,10 +24,13 @@
   "Lê Hoàn"
  ],
  "memo": {
-  "hook": "1002: Lê Hoàn ĐỊNH LUẬT LỆNH (không còn), đổi MƯỜI ĐẠO thành LỘ, PHỦ, CHÂU.",
+  "gist": "Năm 1002 Lê Hoàn định luật lệnh, nay không còn nội dung, và đổi mười đạo thành lộ, phủ, châu.",
+  "kind": "tree",
+  "hook": "Có tên trong sử, mất chữ trong sách.",
   "tree": [
    {
     "label": "Mốc",
+    "icon": "calendar",
     "children": [
      "1002",
      "Lê Hoàn lên ngôi 980"
@@ -35,17 +38,29 @@
    },
    {
     "label": "Việc làm",
+    "icon": "tool",
     "children": [
      "Định luật lệnh",
      "Cải tổ quân đội",
-     "Mười đạo → lộ, phủ, châu"
+     "Mười đạo thành lộ, phủ, châu"
     ]
    },
    {
     "label": "Hiện trạng",
+    "icon": "question",
     "children": [
      "Nội dung luật không còn"
     ]
+   }
+  ],
+  "case": {
+   "q": "Nói \"Lê Hoàn ban hành bộ luật hình sự gồm nhiều điều\" có đúng không?",
+   "a": "Không có căn cứ; sử chỉ ghi năm 1002 định luật lệnh."
+  },
+  "contrast": [
+   {
+    "with": "phap-luat-nha-dinh",
+    "text": "Tiền Lê đã định luật lệnh; nhà Đinh chưa có luật thành văn."
    }
   ]
  },

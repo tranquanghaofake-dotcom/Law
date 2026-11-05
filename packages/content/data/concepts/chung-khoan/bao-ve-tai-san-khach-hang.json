@@ -22,10 +22,13 @@
   "tách biệt"
  ],
  "memo": {
-  "hook": "TÁCH BIỆT tài sản: chứng khoán lưu ký vẫn là của KHÁCH, không dùng trả nợ công ty.",
+  "gist": "Chứng khoán khách gửi ở công ty vẫn là của khách, tách riêng, không dùng trả nợ công ty, kể cả khi phá sản.",
+  "kind": "tree",
+  "hook": "Đồ gửi kho không phải đồ của chủ kho.",
   "tree": [
    {
     "label": "Nguyên tắc",
+    "icon": "lock",
     "children": [
      "Tài sản của chủ sở hữu",
      "Tách biệt"
@@ -33,10 +36,21 @@
    },
    {
     "label": "Hệ quả",
+    "icon": "shield",
     "children": [
      "Không dùng trả nợ công ty",
      "Kể cả khi phá sản"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty chứng khoán mất khả năng thanh toán. Cổ phiếu khách gửi tại đó có bị dùng trả nợ không?",
+   "a": "Không. Khách được chuyển lưu ký sang công ty khác."
+  },
+  "contrast": [
+   {
+    "with": "luu-ky-chung-khoan",
+    "text": "Bảo vệ tài sản là nguyên tắc tách biệt; lưu ký là việc nhận giữ chứng khoán."
    }
   ]
  },

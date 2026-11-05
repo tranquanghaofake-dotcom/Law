@@ -25,37 +25,54 @@
  ],
  "note": "Điều 9 được sửa đổi, bổ sung bởi Luật 12/2017/QH14 (hiệu lực 01/01/2018); câu chữ trên theo VBHN 135/VBHN-VPQH 2025.",
  "memo": {
-  "hook": "Theo mức CAO NHẤT của khung: 3 – 7 – 15 năm chia bốn loại.",
+  "gist": "Tội phạm chia bốn loại theo mức phạt cao nhất của khung: đến 3 năm, đến 7 năm, đến 15 năm, và trên 15 năm.",
+  "kind": "ladder",
+  "hook": "Mẹo ba – bảy – mười lăm: ba vạch chia bốn bậc.",
   "tree": [
    {
     "label": "Ít nghiêm trọng",
+    "icon": "check",
     "children": [
      "Đến 03 năm"
     ]
    },
    {
     "label": "Nghiêm trọng",
+    "icon": "warn",
     "children": [
      "Trên 03 đến 07 năm"
     ]
    },
    {
     "label": "Rất nghiêm trọng",
+    "icon": "warn",
     "children": [
      "Trên 07 đến 15 năm"
     ]
    },
    {
     "label": "Đặc biệt nghiêm trọng",
+    "icon": "ban",
     "children": [
      "Trên 15 năm, chung thân, tử hình"
     ]
    },
    {
     "label": "Căn cứ",
+    "icon": "measure",
     "children": [
      "Mức cao nhất của khung, không phải mức tuyên"
     ]
+   }
+  ],
+  "case": {
+   "q": "Khoản 1 tội trộm cắp có mức cao nhất 3 năm tù. Thuộc loại tội gì?",
+   "a": "Tội ít nghiêm trọng."
+  },
+  "contrast": [
+   {
+    "with": "khai-niem-toi-pham",
+    "text": "Phân loại chia tội theo mức nặng; khái niệm nói thế nào là tội."
    }
   ]
  },

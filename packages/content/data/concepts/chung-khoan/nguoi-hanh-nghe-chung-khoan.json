@@ -22,10 +22,13 @@
   "nhân danh công ty"
  ],
  "memo": {
-  "hook": "Người hành nghề cần CẢ HAI: có CHỨNG CHỈ và đang LÀM tại tổ chức kinh doanh chứng khoán.",
+  "gist": "Người có chứng chỉ hành nghề và đang làm tại một tổ chức kinh doanh chứng khoán, nhân danh tổ chức đó.",
+  "kind": "checklist",
+  "hook": "Có bằng mà chưa vào nghề thì chưa là người hành nghề.",
   "tree": [
    {
     "label": "Điều kiện",
+    "icon": "check",
     "children": [
      "Chứng chỉ do Ủy ban cấp",
      "Làm việc tại tổ chức kinh doanh chứng khoán"
@@ -33,15 +36,27 @@
    },
    {
     "label": "Hành nghề",
+    "icon": "company",
     "children": [
      "Nhân danh công ty"
     ]
    },
    {
     "label": "Chưa phải",
+    "icon": "ban",
     "children": [
      "Có chứng chỉ mà không làm đâu"
     ]
+   }
+  ],
+  "case": {
+   "q": "Chị V có chứng chỉ môi giới nhưng đang làm kế toán công ty may. Có phải người hành nghề chứng khoán không?",
+   "a": "Chưa. Phải đang làm tại tổ chức kinh doanh chứng khoán."
+  },
+  "contrast": [
+   {
+    "with": "chung-chi-hanh-nghe-chung-khoan",
+    "text": "Người hành nghề cần cả chứng chỉ lẫn chỗ làm; chứng chỉ chỉ là giấy tờ."
    }
   ]
  },

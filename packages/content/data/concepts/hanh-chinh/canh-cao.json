@@ -23,22 +23,36 @@
   "bằng văn bản"
  ],
  "memo": {
-  "hook": "Cảnh cáo bằng VĂN BẢN cho vi phạm NHẸ có giảm nhẹ, và MỌI vi phạm của người 14–16 tuổi.",
+  "gist": "Cảnh cáo bằng văn bản cho vi phạm nhẹ có giảm nhẹ, và mọi vi phạm của người 14 đến dưới 16 tuổi.",
+  "kind": "tree",
+  "hook": "Như thẻ vàng: ghi tên, chưa mất tiền.",
   "tree": [
    {
     "label": "Áp dụng",
+    "icon": "warn",
     "children": [
      "Vi phạm không nghiêm trọng",
      "Có tình tiết giảm nhẹ",
-     "Mọi vi phạm của người 14–16 tuổi"
+     "Mọi vi phạm của người 14 đến dưới 16 tuổi"
     ]
    },
    {
     "label": "Hình thức",
+    "icon": "doc",
     "children": [
      "Bằng văn bản",
      "Có thể không lập biên bản"
     ]
+   }
+  ],
+  "case": {
+   "q": "Em học sinh 15 tuổi cố ý vứt rác nơi công cộng. Bị xử phạt thế nào?",
+   "a": "Chỉ bị cảnh cáo, không bị phạt tiền."
+  },
+  "contrast": [
+   {
+    "with": "phat-tien-hanh-chinh",
+    "text": "Cảnh cáo không mất tiền; phạt tiền thì nộp tiền."
    }
   ]
  },

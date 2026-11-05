@@ -25,16 +25,20 @@
  ],
  "note": "Văn bản đã hết hiệu lực; học để hiểu lịch sử pháp luật.",
  "memo": {
-  "hook": "Sắc lệnh 13 (24/01/1946): tòa án đầu tiên, có PHỤ THẨM NHÂN DÂN; KHÔNG bắt người trừ có TRÁT hay QUẢ TANG.",
+  "gist": "Năm 1946 lập hệ thống tòa án đầu tiên, có phụ thẩm nhân dân, cấm bắt người trừ khi có trát hoặc quả tang.",
+  "kind": "tree",
+  "hook": "Có dân ngồi cạnh quan tòa.",
   "tree": [
    {
     "label": "Mốc",
+    "icon": "calendar",
     "children": [
-     "24/01/1946"
+     "24 tháng 1 năm 1946"
     ]
    },
    {
     "label": "Hệ thống",
+    "icon": "state",
     "children": [
      "Ban tư pháp xã",
      "Tòa sơ cấp",
@@ -44,15 +48,27 @@
    },
    {
     "label": "Điểm mới",
+    "icon": "idea",
     "children": [
      "Phụ thẩm nhân dân"
     ]
    },
    {
     "label": "Bảo đảm",
+    "icon": "shield",
     "children": [
      "Không bắt trừ có trát hoặc quả tang"
     ]
+   }
+  ],
+  "case": {
+   "q": "Năm 1946, vụ trộm vặt ở tòa đệ nhị cấp được xử bởi ai?",
+   "a": "Chánh án cùng hai phụ thẩm nhân dân."
+  },
+  "contrast": [
+   {
+    "with": "sac-lenh-63-chinh-quyen",
+    "text": "Sắc lệnh 13 tổ chức tòa án; Sắc lệnh 63 tổ chức chính quyền địa phương."
    }
   ]
  },

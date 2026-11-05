@@ -24,10 +24,13 @@
   "hình phạt hà khắc"
  ],
  "memo": {
-  "hook": "Nhà Đinh: chưa có luật thành văn, dùng MỆNH LỆNH và hình phạt HÀ KHẮC ('vạc dầu, cũi hổ').",
+  "gist": "Nhà Đinh chưa có luật thành văn, dùng mệnh lệnh của vua và hình phạt rất nặng như vạc dầu, cũi hổ để răn đe.",
+  "kind": "tree",
+  "hook": "Mới gom được nhà thì dùng roi cứng để giữ trật tự.",
   "tree": [
    {
     "label": "Nguồn luật",
+    "icon": "announce",
     "children": [
      "Mệnh lệnh nhà vua",
      "Tập quán"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Hình phạt",
+    "icon": "warn",
     "children": [
      "Vạc dầu, cũi hổ",
      "Hà khắc, răn đe"
@@ -42,9 +46,20 @@
    },
    {
     "label": "Lý do",
+    "icon": "question",
     "children": [
      "Mới thống nhất sau 12 sứ quân"
     ]
+   }
+  ],
+  "case": {
+   "q": "Vì sao nhà Đinh dùng hình phạt hà khắc?",
+   "a": "Vì đất nước mới thống nhất sau loạn mười hai sứ quân, cần răn đe."
+  },
+  "contrast": [
+   {
+    "with": "tien-le-dinh-luat-le",
+    "text": "Nhà Đinh chưa có luật thành văn; năm 1002 nhà Tiền Lê định luật lệnh."
    }
   ]
  },

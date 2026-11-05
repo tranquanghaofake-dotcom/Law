@@ -24,10 +24,13 @@
   "tổng thị phần"
  ],
  "memo": {
-  "hook": "Thị phần kết hợp là TỔNG thị phần các bên tham gia.",
+  "gist": "Thị phần là phần của một doanh nghiệp trên cả thị trường; thị phần kết hợp là cộng phần của các doanh nghiệp tham gia.",
+  "kind": "tree",
+  "hook": "Như chia bánh: miếng của mình so với cả cái bánh; gộp miếng của mấy người lại là phần kết hợp.",
   "tree": [
    {
     "label": "Cách tính",
+    "icon": "calc",
     "children": [
      "Doanh thu bán ra",
      "Doanh số mua vào",
@@ -36,15 +39,27 @@
    },
    {
     "label": "So với",
+    "icon": "chart",
     "children": [
      "Tổng của thị trường liên quan"
     ]
    },
    {
     "label": "Thị phần kết hợp",
+    "icon": "calc",
     "children": [
      "Tổng thị phần các doanh nghiệp tham gia"
     ]
+   }
+  ],
+  "case": {
+   "q": "A có 20%, B có 15% thị phần. A sáp nhập B thì thị phần kết hợp là bao nhiêu?",
+   "a": "35%, là tổng thị phần hai bên."
+  },
+  "contrast": [
+   {
+    "with": "thi-truong-lien-quan",
+    "text": "Thị trường liên quan là cái bánh; thị phần là miếng của mỗi doanh nghiệp trên cái bánh đó."
    }
   ]
  },

@@ -23,10 +23,13 @@
   "để mặc"
  ],
  "memo": {
-  "hook": "Cố ý TRỰC TIẾP: MONG MUỐN hậu quả; cố ý GIÁN TIẾP: ĐỂ MẶC.",
+  "gist": "Cố ý là biết rõ hành vi nguy hiểm, thấy trước hậu quả, và mong muốn hoặc để mặc cho hậu quả xảy ra.",
+  "kind": "compare",
+  "hook": "Muốn là trực tiếp; mặc kệ là gián tiếp.",
   "tree": [
    {
     "label": "Chung",
+    "icon": "idea",
     "children": [
      "Nhận thức rõ",
      "Thấy trước hậu quả"
@@ -34,16 +37,28 @@
    },
    {
     "label": "Trực tiếp",
+    "icon": "target",
     "children": [
      "Mong muốn hậu quả xảy ra"
     ]
    },
    {
     "label": "Gián tiếp",
+    "icon": "person",
     "children": [
      "Không mong muốn",
      "Có ý thức để mặc"
     ]
+   }
+  ],
+  "case": {
+   "q": "A đốt rẫy gần nhà dân, biết lửa có thể lan nhưng mặc kệ cho đốt nhanh. Lỗi gì?",
+   "a": "Cố ý gián tiếp."
+  },
+  "contrast": [
+   {
+    "with": "vo-y-pham-toi",
+    "text": "Cố ý là muốn hoặc để mặc; vô ý là tin không xảy ra hoặc không thấy trước dù phải thấy."
    }
   ]
  },

@@ -25,10 +25,13 @@
  ],
  "note": "Luật Chứng khoán 54/2019/QH14 có hiệu lực từ 01/01/2021, sửa đổi bởi Luật 56/2024/QH15 (hiệu lực 01/01/2025) — văn bản hợp nhất 102/VBHN-VPQH 2026.",
  "memo": {
-  "hook": "Phải công bố: CÔNG TY ĐẠI CHÚNG, bên phát hành, CỔ ĐÔNG LỚN 5%, NGƯỜI NỘI BỘ.",
+  "gist": "Trên thị trường chứng khoán, công ty đại chúng, bên phát hành, cổ đông lớn và người nội bộ phải công bố thông tin.",
+  "kind": "tree",
+  "hook": "Ai đứng trên sân khấu thì phải bật đèn: công ty lớn, người cầm nhiều cổ phiếu, người biết chuyện bên trong.",
   "tree": [
    {
     "label": "Tổ chức phát hành",
+    "icon": "company",
     "children": [
      "Công ty đại chúng",
      "Phát hành trái phiếu ra công chúng",
@@ -37,6 +40,7 @@
    },
    {
     "label": "Tổ chức thị trường",
+    "icon": "bank",
     "children": [
      "Công ty chứng khoán, quản lý quỹ",
      "Sở giao dịch, lưu ký"
@@ -44,10 +48,21 @@
    },
    {
     "label": "Cá nhân",
+    "icon": "person",
     "children": [
      "Cổ đông lớn từ 5%",
      "Người nội bộ"
     ]
+   }
+  ],
+  "case": {
+   "q": "Một cổ đông nắm 6% cổ phiếu có quyền biểu quyết của công ty đại chúng. Có phải công bố thông tin không?",
+   "a": "Có, vì là cổ đông lớn từ 5% trở lên."
+  },
+  "contrast": [
+   {
+    "with": "tcdn-cong-bo-thong-tin-dnnn",
+    "text": "Bài này nói ai phải công bố trên thị trường chứng khoán; bài kia nói doanh nghiệp nhà nước công bố gì."
    }
   ]
  },

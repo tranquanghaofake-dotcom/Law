@@ -5,7 +5,7 @@
  "term": "Vị trí thống lĩnh thị trường",
  "definition": "Doanh nghiệp được coi là có vị trí thống lĩnh thị trường nếu có sức mạnh thị trường đáng kể được xác định theo quy định tại Điều 26 của Luật này hoặc có thị phần từ 30% trở lên trên thị trường liên quan. Nhóm doanh nghiệp được coi là có vị trí thống lĩnh thị trường nếu cùng hành động gây tác động hạn chế cạnh tranh và có sức mạnh thị trường đáng kể được xác định theo quy định tại Điều 26 của Luật này hoặc có tổng thị phần thuộc một trong các trường hợp sau đây: a) Hai doanh nghiệp có tổng thị phần từ 50% trở lên trên thị trường liên quan; b) Ba doanh nghiệp có tổng thị phần từ 65% trở lên trên thị trường liên quan; c) Bốn doanh nghiệp có tổng thị phần từ 75% trở lên trên thị trường liên quan; d) Năm doanh nghiệp trở lên có tổng thị phần từ 85% trở lên trên thị trường liên quan.",
  "plain": "Hai tiêu chí: SỨC MẠNH THỊ TRƯỜNG ĐÁNG KỂ (Điều 26 — điểm mới 2018) HOẶC THỊ PHẦN: một doanh nghiệp ≥ 30%; nhóm 2 ≥ 50%, 3 ≥ 65%, 4 ≥ 75%, 5 trở lên ≥ 85% và phải CÙNG HÀNH ĐỘNG gây tác động hạn chế cạnh tranh. Nhóm không bao gồm doanh nghiệp có thị phần DƯỚI 10% (khoản 3). VỊ TRÍ ĐỘC QUYỀN (Điều 25): không có doanh nghiệp nào cạnh tranh. Có vị trí thống lĩnh KHÔNG bị cấm; chỉ LẠM DỤNG mới bị cấm.",
- "example": "Ba hãng hàng không có tổng thị phần 70% trên đường bay nội địa, cùng tăng phụ phí bất hợp lý: có thể bị coi là nhóm doanh nghiệp có vị trí thống lĩnh (ba doanh nghiệp ≥ 65%).",
+ "example": "Ba hãng hàng không có tổng thị phần 70% trên đường bay nội địa, cùng tăng phụ phí bất hợp lý: có thể bị coi là nhóm doanh nghiệp có vị trí thống lĩnh (ba doanh nghiệp từ 65% trở lên).",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1, khoản 2 Điều 24 Luật Cạnh tranh 2018",
@@ -24,10 +24,13 @@
   "dưới 10% không tính"
  ],
  "memo": {
-  "hook": "Thống lĩnh: SỨC MẠNH ĐÁNG KỂ hoặc thị phần 30%; có thống lĩnh KHÔNG bị cấm, LẠM DỤNG mới bị cấm.",
+  "gist": "Doanh nghiệp có sức mạnh đáng kể hoặc chiếm từ 30% thị trường là đang thống lĩnh; nhóm doanh nghiệp tính theo ngưỡng riêng.",
+  "kind": "tree",
+  "hook": "Như người to nhất lớp: to không bị phạt, bắt nạt bạn mới bị phạt.",
   "tree": [
    {
     "label": "Một doanh nghiệp",
+    "icon": "company",
     "children": [
      "Sức mạnh thị trường đáng kể",
      "Hoặc thị phần từ 30%"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Nhóm doanh nghiệp",
+    "icon": "people",
     "children": [
      "2: 50% · 3: 65%",
      "4: 75% · 5+: 85%",
@@ -43,9 +47,20 @@
    },
    {
     "label": "Không tính",
+    "icon": "unlock",
     "children": [
      "Doanh nghiệp dưới 10%"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ba hãng hàng không có tổng thị phần 70%, cùng tăng phụ phí vô lý. Có thể là nhóm thống lĩnh không?",
+   "a": "Có thể, vì ba doanh nghiệp từ 65% trở lên và cùng hành động."
+  },
+  "contrast": [
+   {
+    "with": "lam-dung-vi-tri-thong-linh",
+    "text": "Thống lĩnh là trạng thái, không bị cấm; lạm dụng là hành vi xấu khi đang thống lĩnh, mới bị cấm."
    }
   ]
  },

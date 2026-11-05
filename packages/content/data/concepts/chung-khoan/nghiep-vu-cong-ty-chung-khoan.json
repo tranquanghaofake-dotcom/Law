@@ -5,7 +5,7 @@
  "term": "Nghiệp vụ kinh doanh của công ty chứng khoán",
  "definition": "Công ty chứng khoán được cấp phép thực hiện một, một số hoặc toàn bộ nghiệp vụ kinh doanh sau đây: a) Môi giới chứng khoán; b) Tự doanh chứng khoán; c) Bảo lãnh phát hành chứng khoán; d) Tư vấn đầu tư chứng khoán. Công ty chứng khoán chỉ được cấp phép thực hiện nghiệp vụ tự doanh chứng khoán khi được cấp phép thực hiện nghiệp vụ môi giới chứng khoán. Công ty chứng khoán chỉ được cấp phép thực hiện nghiệp vụ bảo lãnh phát hành chứng khoán khi được cấp phép thực hiện nghiệp vụ tự doanh chứng khoán.",
  "plain": "Bốn nghiệp vụ, trong đó có \"bậc thang\": muốn tự doanh phải có môi giới; muốn bảo lãnh phát hành phải có tự doanh (tức là đủ cả ba). Tư vấn đầu tư đứng độc lập. Quản lý quỹ, quản lý danh mục là nghiệp vụ của công ty quản lý quỹ (Điều 73), không phải của công ty chứng khoán.",
- "example": "Công ty chứng khoán A mới chỉ có nghiệp vụ môi giới và tư vấn, muốn nhận bảo lãnh phát hành cho một đợt IPO: chưa được, phải được cấp phép tự doanh trước.",
+ "example": "Công ty chứng khoán A mới chỉ có môi giới và tư vấn, muốn bảo lãnh phát hành cho một đợt chào bán lần đầu: chưa được, phải được cấp phép tự doanh trước.",
  "source": {
   "kind": "statute",
   "cite": "Điều 72 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)",
@@ -22,10 +22,13 @@
   "một, một số hoặc toàn bộ"
  ],
  "memo": {
-  "hook": "Bậc thang: MÔI GIỚI → TỰ DOANH → BẢO LÃNH; TƯ VẤN đứng riêng.",
+  "gist": "Công ty chứng khoán có bốn nghiệp vụ: môi giới, tự doanh, bảo lãnh phát hành, tư vấn; muốn tự doanh phải có môi giới.",
+  "kind": "ladder",
+  "hook": "Leo thang từng bậc: môi giới, rồi tự doanh, rồi bảo lãnh.",
   "tree": [
    {
     "label": "Nghiệp vụ",
+    "icon": "doc",
     "children": [
      "Môi giới",
      "Tự doanh",
@@ -35,6 +38,7 @@
    },
    {
     "label": "Bậc thang",
+    "icon": "stairs",
     "children": [
      "Tự doanh cần môi giới",
      "Bảo lãnh cần tự doanh"
@@ -42,9 +46,20 @@
    },
    {
     "label": "Không làm",
+    "icon": "ban",
     "children": [
      "Quản lý quỹ, danh mục"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty chỉ có môi giới và tư vấn muốn bảo lãnh phát hành. Có được không?",
+   "a": "Chưa. Phải được cấp phép tự doanh trước."
+  },
+  "contrast": [
+   {
+    "with": "nghiep-vu-cong-ty-quan-ly-quy",
+    "text": "Công ty chứng khoán làm môi giới, tự doanh, bảo lãnh; công ty quản lý quỹ làm quản lý quỹ, danh mục."
    }
   ]
  },

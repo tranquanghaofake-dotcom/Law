@@ -22,10 +22,13 @@
   "Bộ trưởng Bộ Tài chính quy định"
  ],
  "memo": {
-  "hook": "Giữ tiền nhà đầu tư nên phải KHỎE tài chính; không đạt → CẢNH BÁO → KIỂM SOÁT → KIỂM SOÁT ĐẶC BIỆT.",
+  "gist": "Công ty chứng khoán, quản lý quỹ phải giữ chỉ tiêu tài chính an toàn; không đạt thì bị cảnh báo, rồi kiểm soát.",
+  "kind": "ladder",
+  "hook": "Như người giữ két hộ phải có sức khỏe tốt; yếu đi là bị theo dõi sát.",
   "tree": [
    {
     "label": "Áp dụng",
+    "icon": "company",
     "children": [
      "Công ty chứng khoán",
      "Công ty quản lý quỹ"
@@ -33,6 +36,7 @@
    },
    {
     "label": "Chỉ tiêu",
+    "icon": "measure",
     "children": [
      "Bộ trưởng Bộ Tài chính quy định",
      "Ví dụ tỷ lệ vốn khả dụng"
@@ -40,11 +44,22 @@
    },
    {
     "label": "Không đạt",
+    "icon": "warn",
     "children": [
      "Cảnh báo",
      "Kiểm soát",
      "Kiểm soát đặc biệt"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty chứng khoán thua lỗ tự doanh, chỉ tiêu an toàn xuống dưới ngưỡng. Ủy ban làm gì?",
+   "a": "Đưa vào diện kiểm soát và áp dụng biện pháp xử lý."
+  },
+  "contrast": [
+   {
+    "with": "thu-hoi-giay-phep-cong-ty-chung-khoan",
+    "text": "An toàn tài chính là theo dõi sức khỏe; thu hồi giấy phép là bước cuối khi không cứu được."
    }
   ]
  },

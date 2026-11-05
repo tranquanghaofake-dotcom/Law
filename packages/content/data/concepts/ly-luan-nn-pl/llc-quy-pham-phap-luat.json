@@ -25,10 +25,13 @@
  ],
  "note": "Luật Ban hành văn bản quy phạm pháp luật 64/2025/QH15 có hiệu lực từ 01/4/2025, thay thế Luật 80/2015/QH13; sửa đổi bởi Luật 87/2025/QH15 (hiệu lực 01/7/2025) — văn bản hợp nhất 54/VBHN-VPQH 2025.",
  "memo": {
-  "hook": "Quy phạm là TẾ BÀO của pháp luật: CHUNG, BẮT BUỘC, Nhà nước BẢO ĐẢM.",
+  "gist": "Quy phạm pháp luật là quy tắc xử sự chung, bắt buộc mọi người, do Nhà nước ban hành và bảo đảm thực hiện.",
+  "kind": "tree",
+  "hook": "Như biển báo giao thông: ai đi qua cũng phải theo, dùng nhiều lần.",
   "tree": [
    {
     "label": "Đặc điểm",
+    "icon": "measure",
     "children": [
      "Quy tắc xử sự chung",
      "Bắt buộc chung",
@@ -38,11 +41,22 @@
    },
    {
     "label": "Phân loại",
+    "icon": "list",
     "children": [
      "Bắt buộc",
      "Cấm đoán",
      "Cho phép"
     ]
+   }
+  ],
+  "case": {
+   "q": "\"Người lái xe mô tô phải đội mũ bảo hiểm\" có phải quy phạm pháp luật không?",
+   "a": "Có: quy tắc chung, bắt buộc, có chế tài do Nhà nước bảo đảm."
+  },
+  "contrast": [
+   {
+    "with": "llc-co-cau-qppl",
+    "text": "Quy phạm là cả quy tắc; cơ cấu là ba phần bên trong nó."
    }
   ]
  },

@@ -24,10 +24,13 @@
   "phải được Ủy ban chấp thuận"
  ],
  "memo": {
-  "hook": "Dịch vụ RỦI RO CAO (margin, ứng trước) phải được ỦY BAN chấp thuận.",
+  "gist": "Công ty chứng khoán có nghiệp vụ môi giới được cho khách vay mua chứng khoán, ứng trước tiền bán, khi Ủy ban chấp thuận.",
+  "kind": "tree",
+  "hook": "Đòn bẩy nhân lời lẫn lỗ.",
   "tree": [
    {
     "label": "Dịch vụ",
+    "icon": "money",
     "children": [
      "Cho vay mua chứng khoán (margin)",
      "Ứng trước tiền bán",
@@ -36,10 +39,21 @@
    },
    {
     "label": "Điều kiện",
+    "icon": "check",
     "children": [
      "Có nghiệp vụ môi giới",
      "Ủy ban chấp thuận"
     ]
+   }
+  ],
+  "case": {
+   "q": "Bạn vay ký quỹ mua cổ phiếu, giá giảm mạnh làm tài sản không đủ tỷ lệ. Công ty có thể làm gì?",
+   "a": "Bán giải chấp tài sản."
+  },
+  "contrast": [
+   {
+    "with": "moi-gioi-chung-khoan",
+    "text": "Cho vay ký quỹ là dịch vụ kèm theo; môi giới là nghiệp vụ gốc."
    }
   ]
  },

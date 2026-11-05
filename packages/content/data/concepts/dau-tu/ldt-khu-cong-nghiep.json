@@ -23,10 +23,13 @@
  ],
  "note": "Luật Đầu tư 143/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Đầu tư 61/2020/QH14 mà đề cương HLU 2021 còn dẫn (khoản 4 Điều 51). Luật 24/2026/QH16 sửa đổi có hiệu lực từ 01/3/2027 (riêng một phần Điều 6 từ 01/01/2027), chỉ sửa Điều 6 và Phụ lục IV, không sửa điều được trích — văn bản hợp nhất 142/2026/VBHN-LQ-VPQH.",
  "memo": {
-  "hook": "Khu CÔNG NGHIỆP: chuyên sản xuất công nghiệp; khu CHẾ XUẤT: chuyên hàng xuất khẩu.",
+  "gist": "Khu công nghiệp là vùng có ranh giới rõ, chuyên sản xuất hàng công nghiệp và dịch vụ cho sản xuất.",
+  "kind": "compare",
+  "hook": "Như một con phố chỉ toàn xưởng: chỉ làm hàng, không có chợ hay nhà ở.",
   "tree": [
    {
     "label": "Khu công nghiệp",
+    "icon": "company",
     "children": [
      "Ranh giới xác định",
      "Sản xuất hàng công nghiệp",
@@ -35,15 +38,27 @@
    },
    {
     "label": "Khu chế xuất",
+    "icon": "box",
     "children": [
      "Chuyên hàng xuất khẩu"
     ]
    },
    {
     "label": "Ưu đãi",
+    "icon": "gift",
     "children": [
      "Thường là địa bàn ưu đãi"
     ]
+   }
+  ],
+  "case": {
+   "q": "Trong khu công nghiệp có doanh nghiệp vận tải, kho bãi phục vụ nhà máy. Có đúng chức năng khu không?",
+   "a": "Đúng, vì dịch vụ cho sản xuất công nghiệp là chức năng của khu công nghiệp."
+  },
+  "contrast": [
+   {
+    "with": "ldt-khu-kinh-te",
+    "text": "Khu công nghiệp chỉ để sản xuất; khu kinh tế gồm nhiều khu như cảng, du lịch, đô thị."
    }
   ]
  },

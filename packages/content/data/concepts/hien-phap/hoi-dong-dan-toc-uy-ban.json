@@ -23,10 +23,13 @@
   "Ủy ban lâm thời"
  ],
  "memo": {
-  "hook": "Việc chính: THẨM TRA dự án luật và GIÁM SÁT theo lĩnh vực.",
+  "gist": "Hội đồng dân tộc và các Ủy ban của Quốc hội thẩm tra dự án luật và giám sát theo lĩnh vực.",
+  "kind": "tree",
+  "hook": "Các tổ chuyên môn đọc kỹ đề trước khi cả lớp bàn.",
   "tree": [
    {
     "label": "Gồm",
+    "icon": "people",
     "children": [
      "Hội đồng dân tộc",
      "Các Ủy ban",
@@ -35,6 +38,7 @@
    },
    {
     "label": "Nhiệm vụ",
+    "icon": "search",
     "children": [
      "Thẩm tra dự án luật",
      "Giám sát theo lĩnh vực",
@@ -43,9 +47,20 @@
    },
    {
     "label": "Người đứng đầu",
+    "icon": "person",
     "children": [
      "Do Quốc hội bầu"
     ]
+   }
+  ],
+  "case": {
+   "q": "Dự án luật do Chính phủ trình phải được ai thẩm tra trước khi Quốc hội bàn?",
+   "a": "Ủy ban của Quốc hội được phân công theo lĩnh vực."
+  },
+  "contrast": [
+   {
+    "with": "uy-ban-thuong-vu-quoc-hoi",
+    "text": "Hội đồng, Ủy ban làm theo lĩnh vực; Ủy ban thường vụ là cơ quan thường trực."
    }
   ]
  },

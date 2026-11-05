@@ -24,10 +24,13 @@
  ],
  "note": "Điều 28 có nội dung được sửa đổi, bổ sung bởi Luật 07/2022/QH15 (hiệu lực 01/01/2023) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
  "memo": {
-  "hook": "Xâm phạm: quyền NHÂN THÂN, quyền TÀI SẢN, hoặc dùng NGOẠI LỆ sai.",
+  "gist": "Xâm phạm quyền tác giả là đụng tới quyền nhân thân, quyền tài sản, hoặc lợi dụng ngoại lệ sai cách.",
+  "kind": "tree",
+  "hook": "Lấy tác phẩm mà không hỏi, không trả, không ghi tên.",
   "tree": [
    {
     "label": "Xâm phạm",
+    "icon": "warn",
     "children": [
      "Quyền nhân thân",
      "Quyền tài sản"
@@ -35,16 +38,28 @@
    },
    {
     "label": "Dùng ngoại lệ sai",
+    "icon": "pen",
     "children": [
      "Không nêu tên tác giả"
     ]
    },
    {
     "label": "Hành vi khác",
+    "icon": "unlock",
     "children": [
      "Vô hiệu biện pháp công nghệ",
      "Xóa thông tin quản lý quyền"
     ]
+   }
+  ],
+  "case": {
+   "q": "Trang web đăng lại toàn bộ phim đang chiếu rạp không xin phép. Xâm phạm quyền gì?",
+   "a": "Quyền tài sản, cụ thể là quyền truyền đạt tác phẩm đến công chúng."
+  },
+  "contrast": [
+   {
+    "with": "ngoai-le-khong-xam-pham-quyen-tac-gia",
+    "text": "Xâm phạm là dùng trái phép; ngoại lệ là dùng hợp pháp không cần xin."
    }
   ]
  },

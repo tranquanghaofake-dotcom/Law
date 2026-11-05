@@ -1,6 +1,6 @@
 // "Ghi nhớ nhanh" sau câu trả lời: thay đoạn sớ dài bằng lời gọn + sơ đồ nhánh.
 // Chỉ cắt/ghép trường có sẵn (explain, plain, keywords) hoặc sơ đồ do người soạn (`memo`, gắn nhãn diễn giải). Không tự viết khẳng định pháp lý.
-import type { Concept } from '$lib/content/types';
+import type { Concept, MemoIcon } from '$lib/content/types';
 import type { StepItem } from './step';
 import { isCiteOnly } from './why';
 import { clip } from './text';
@@ -42,7 +42,7 @@ export function gistOf(concept: Concept, item: StepItem): { lead: string; full: 
   return { lead, full: explain.length > lead.length + 10 ? explain : null, fromPlain: false };
 }
 
-export type Branch = { label: string; children: string[]; icon?: string };
+export type Branch = { label: string; children: string[]; icon?: MemoIcon };
 
 /** Nhánh sơ đồ: sơ đồ do người soạn (`memo.tree`) nếu có, không thì ≤ 4 dấu hiệu (`keywords`). */
 export function branchesOf(concept: Concept): { authored: boolean; nodes: Branch[] } {

@@ -23,10 +23,13 @@
   "lời nói, văn bản, hành vi cụ thể"
  ],
  "memo": {
-  "hook": "Bán: GIAO + CHUYỂN SỞ HỮU; Mua: TRẢ TIỀN + NHẬN HÀNG.",
+  "gist": "Bên bán giao hàng và chuyển quyền sở hữu; bên mua trả tiền và nhận hàng.",
+  "kind": "compare",
+  "hook": "Một tay trao hàng, một tay trao tiền.",
   "tree": [
    {
     "label": "Bên bán",
+    "icon": "box",
     "children": [
      "Giao hàng",
      "Chuyển quyền sở hữu"
@@ -34,6 +37,7 @@
    },
    {
     "label": "Bên mua",
+    "icon": "money",
     "children": [
      "Thanh toán",
      "Nhận hàng"
@@ -41,10 +45,21 @@
    },
    {
     "label": "Hình thức",
+    "icon": "pen",
     "children": [
      "Lời nói, văn bản, hành vi",
      "Quốc tế: bằng văn bản"
     ]
+   }
+  ],
+  "case": {
+   "q": "Khách gọi điện đặt 100 thùng nước, đại lý giao và nhận tiền. Hợp đồng không có giấy tờ có hiệu lực không?",
+   "a": "Có. Hợp đồng bằng lời nói và hành vi vẫn có hiệu lực."
+  },
+  "contrast": [
+   {
+    "with": "hoat-dong-thuong-mai",
+    "text": "Mua bán hàng hóa là một hoạt động; hoạt động thương mại là nhóm lớn gồm cả dịch vụ, đầu tư."
    }
   ]
  },

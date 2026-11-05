@@ -23,10 +23,13 @@
   "tình tiết mới (tái thẩm)"
  ],
  "memo": {
-  "hook": "GIÁM ĐỐC THẨM vì VI PHẠM; TÁI THẨM vì TÌNH TIẾT MỚI.",
+  "gist": "Xét lại bản án đã có hiệu lực: giám đốc thẩm khi xử sai luật, tái thẩm khi lộ ra tình tiết mới.",
+  "kind": "compare",
+  "hook": "Một bên bắt lỗi trọng tài, một bên mở băng ghi hình mới tìm thấy.",
   "tree": [
    {
     "label": "Chung",
+    "icon": "cycle",
     "children": [
      "Xét lại bản án đã có hiệu lực",
      "Chỉ khởi động bằng kháng nghị",
@@ -35,6 +38,7 @@
    },
    {
     "label": "Giám đốc thẩm",
+    "icon": "scales",
     "children": [
      "Kết luận sai tình tiết",
      "Vi phạm nghiêm trọng thủ tục",
@@ -43,9 +47,20 @@
    },
    {
     "label": "Tái thẩm",
+    "icon": "new",
     "children": [
      "Tình tiết mới không ai biết"
     ]
+   }
+  ],
+  "case": {
+   "q": "Bản án đã có hiệu lực, sau đó phát hiện người làm chứng khai man mà trước đó không ai biết. Đây là căn cứ nào?",
+   "a": "Tái thẩm, vì là tình tiết mới không ai biết khi xử."
+  },
+  "contrast": [
+   {
+    "with": "khang-cao-phuc-tham",
+    "text": "Phúc thẩm xét bản án chưa có hiệu lực, do đương sự kháng cáo; giám đốc thẩm, tái thẩm xét bản án đã có hiệu lực, chỉ do kháng nghị."
    }
   ]
  },

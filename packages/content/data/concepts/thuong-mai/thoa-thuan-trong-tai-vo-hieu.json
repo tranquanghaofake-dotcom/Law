@@ -23,16 +23,20 @@
   "lừa dối, đe dọa, cưỡng ép"
  ],
  "memo": {
-  "hook": "Hợp đồng chính vô hiệu KHÔNG kéo theo thỏa thuận trọng tài.",
+  "gist": "Thỏa thuận trọng tài hỏng khi tranh chấp ngoài thẩm quyền, người ký không có quyền, không bằng văn bản hoặc bị lừa.",
+  "kind": "tree",
+  "hook": "Như vé xem phim: sai rạp, người mua không đủ tuổi, vé không in, hay bị ép mua thì vé hỏng.",
   "tree": [
    {
     "label": "Về tranh chấp",
+    "icon": "ban",
     "children": [
      "Ngoài thẩm quyền trọng tài"
     ]
    },
    {
     "label": "Về người ký",
+    "icon": "pen",
     "children": [
      "Không có thẩm quyền",
      "Không có năng lực hành vi"
@@ -40,6 +44,7 @@
    },
    {
     "label": "Về ý chí, hình thức",
+    "icon": "doc",
     "children": [
      "Không bằng văn bản",
      "Bị lừa dối, đe dọa"
@@ -47,9 +52,20 @@
    },
    {
     "label": "Về nội dung",
+    "icon": "ban",
     "children": [
      "Vi phạm điều cấm"
     ]
+   }
+  ],
+  "case": {
+   "q": "Hợp đồng chính bị vô hiệu. Điều khoản trọng tài trong đó có vô hiệu theo không?",
+   "a": "Không tự động. Thỏa thuận trọng tài đứng độc lập với hợp đồng chính."
+  },
+  "contrast": [
+   {
+    "with": "trong-tai-thuong-mai",
+    "text": "Vô hiệu là khi thỏa thuận hỏng; trọng tài thương mại nói thỏa thuận cần có để dùng trọng tài."
    }
   ]
  },

@@ -24,10 +24,13 @@
  ],
  "note": "Điều 25 có nội dung được sửa đổi, bổ sung bởi Luật 36/2009/QH12 (hiệu lực 01/01/2010) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
  "memo": {
-  "hook": "Dùng tác phẩm ĐÃ CÔNG BỐ không xin phép, không trả tiền, nhưng PHẢI NÊU TÊN.",
+  "gist": "Được dùng tác phẩm đã công bố không xin phép, không trả tiền, như tự học, trích dẫn, nhưng phải nêu tên.",
+  "kind": "checklist",
+  "hook": "Mượn được, nhưng phải ghi nguồn và không làm hại người viết.",
   "tree": [
    {
     "label": "Điều kiện chung",
+    "icon": "check",
     "children": [
      "Tác phẩm đã công bố",
      "Không xin phép, không trả tiền",
@@ -36,6 +39,7 @@
    },
    {
     "label": "Ví dụ",
+    "icon": "book",
     "children": [
      "Tự sao một bản để học",
      "Trích dẫn hợp lý",
@@ -44,9 +48,20 @@
    },
    {
     "label": "Giới hạn",
+    "icon": "warn",
     "children": [
      "Không ảnh hưởng khai thác bình thường"
     ]
+   }
+  ],
+  "case": {
+   "q": "Sinh viên photo cả cuốn giáo trình để bán cho lớp. Có thuộc ngoại lệ không?",
+   "a": "Không. Đó là xâm phạm; chỉ tự sao một phần để học mới thuộc ngoại lệ."
+  },
+  "contrast": [
+   {
+    "with": "xam-pham-quyen-tac-gia",
+    "text": "Ngoại lệ là dùng hợp pháp không cần xin; xâm phạm là dùng trái phép."
    }
   ]
  },

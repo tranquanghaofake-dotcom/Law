@@ -5,7 +5,7 @@
  "term": "Sở giao dịch chứng khoán Việt Nam",
  "definition": "Sở giao dịch chứng khoán Việt Nam là doanh nghiệp được thành lập và hoạt động theo quy định của Luật này và Luật Doanh nghiệp, do Nhà nước nắm giữ trên 50% vốn điều lệ hoặc tổng số cổ phần có quyền biểu quyết.",
  "plain": "Sở giao dịch là DOANH NGHIỆP do Nhà nước nắm giữ trên 50% vốn điều lệ, không phải cơ quan nhà nước. Thủ tướng quyết định thành lập, mô hình, công ty con; Bộ trưởng Bộ Tài chính phê chuẩn Điều lệ và nhân sự chủ chốt; Ủy ban Chứng khoán Nhà nước quản lý, giám sát.",
- "example": "Sở giao dịch chứng khoán Việt Nam được thành lập theo Quyết định 37/2020/QĐ-TTg (hiệu lực 20/02/2021), theo mô hình công ty mẹ là công ty TNHH một thành viên do Nhà nước nắm giữ 100% vốn điều lệ; Sở giao dịch chứng khoán Hà Nội (HNX) và TP. Hồ Chí Minh (HOSE) là công ty con. Khi bạn đặt lệnh mua cổ phiếu niêm yết, lệnh được khớp trên hệ thống do các đơn vị này vận hành.",
+ "example": "Sở Giao dịch Chứng khoán Việt Nam được thành lập theo quyết định của Thủ tướng năm 2020, theo mô hình công ty mẹ là công ty trách nhiệm hữu hạn một thành viên do Nhà nước nắm 100% vốn.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1 Điều 43 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)",
@@ -22,10 +22,13 @@
   "Thủ tướng Chính phủ quyết định thành lập"
  ],
  "memo": {
-  "hook": "Sở giao dịch là DOANH NGHIỆP (Nhà nước > 50%), KHÔNG phải cơ quan nhà nước.",
+  "gist": "Sở Giao dịch Chứng khoán Việt Nam là doanh nghiệp do Nhà nước nắm trên 50% vốn, không phải cơ quan nhà nước.",
+  "kind": "tree",
+  "hook": "Người chủ chợ là một công ty, không phải một ông quan.",
   "tree": [
    {
     "label": "Địa vị",
+    "icon": "company",
     "children": [
      "Doanh nghiệp",
      "Nhà nước nắm trên 50%"
@@ -33,16 +36,28 @@
    },
    {
     "label": "Thành lập",
+    "icon": "scroll",
     "children": [
      "Thủ tướng quyết định"
     ]
    },
    {
     "label": "Quản lý",
+    "icon": "eye",
     "children": [
      "Bộ trưởng Tài chính phê chuẩn Điều lệ",
      "Ủy ban giám sát"
     ]
+   }
+  ],
+  "case": {
+   "q": "Sở giao dịch có phải cơ quan nhà nước không?",
+   "a": "Không, đó là doanh nghiệp do Nhà nước nắm trên 50% vốn."
+  },
+  "contrast": [
+   {
+    "with": "uy-ban-chung-khoan-nha-nuoc",
+    "text": "Sở là doanh nghiệp tổ chức chợ; Ủy ban là cơ quan quản lý giám sát chợ."
    }
   ]
  },

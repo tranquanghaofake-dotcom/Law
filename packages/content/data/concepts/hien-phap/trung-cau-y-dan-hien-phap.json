@@ -23,16 +23,20 @@
   "lấy ý kiến Nhân dân"
  ],
  "memo": {
-  "hook": "Trưng cầu ý dân KHÔNG bắt buộc; lấy ý kiến Nhân dân thì BẮT BUỘC.",
+  "gist": "Lấy ý kiến Nhân dân về Hiến pháp là bắt buộc; còn có trưng cầu ý dân hay không do Quốc hội quyết.",
+  "kind": "compare",
+  "hook": "Như họp tổ dân phố: nghe góp ý thì luôn làm, còn phát phiếu cho cả phố thì tùy việc.",
   "tree": [
    {
     "label": "Thông qua",
+    "icon": "vote",
     "children": [
      "Ít nhất 2/3 tổng số đại biểu"
     ]
    },
    {
     "label": "Trưng cầu ý dân",
+    "icon": "question",
     "children": [
      "Do Quốc hội quyết định",
      "Không bắt buộc"
@@ -40,9 +44,20 @@
    },
    {
     "label": "Phân biệt",
+    "icon": "compare",
     "children": [
      "Lấy ý kiến Nhân dân: bắt buộc khi soạn thảo"
     ]
+   }
+  ],
+  "case": {
+   "q": "Hiến pháp 2013 và bản sửa đổi 2025 có tổ chức trưng cầu ý dân không?",
+   "a": "Không; chỉ lấy ý kiến Nhân dân rộng rãi, Quốc hội trực tiếp thông qua."
+  },
+  "contrast": [
+   {
+    "with": "sua-doi-hien-phap",
+    "text": "Trưng cầu là hỏi toàn dân, không bắt buộc; sửa đổi là thủ tục tại Quốc hội."
    }
   ]
  },

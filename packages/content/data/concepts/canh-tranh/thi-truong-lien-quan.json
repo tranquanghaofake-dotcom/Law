@@ -23,10 +23,13 @@
   "điều kiện cạnh tranh tương tự"
  ],
  "memo": {
-  "hook": "Bước ĐẦU TIÊN: xác định SẢN PHẨM thay thế và ĐỊA LÝ.",
+  "gist": "Thị trường liên quan là nhóm hàng có thể thay nhau, trong khu vực có điều kiện cạnh tranh giống nhau.",
+  "kind": "compare",
+  "hook": "Phải vẽ sân trước rồi mới biết đội nào mạnh: chưa có sân thì không tính được thị phần.",
   "tree": [
    {
     "label": "Sản phẩm",
+    "icon": "cycle",
     "children": [
      "Thay thế về đặc tính",
      "Mục đích sử dụng",
@@ -35,6 +38,7 @@
    },
    {
     "label": "Địa lý",
+    "icon": "map",
     "children": [
      "Điều kiện cạnh tranh tương tự",
      "Khác biệt với khu vực lân cận"
@@ -42,9 +46,20 @@
    },
    {
     "label": "Vai trò",
+    "icon": "measure",
     "children": [
      "Cơ sở tính thị phần, thống lĩnh"
     ]
+   }
+  ],
+  "case": {
+   "q": "Nước khoáng đóng chai và nước ngọt có ga có chắc chắn cùng thị trường sản phẩm không?",
+   "a": "Không chắc; chỉ cùng nếu người mua coi chúng thay được cho nhau về công dụng và giá."
+  },
+  "contrast": [
+   {
+    "with": "thi-phan",
+    "text": "Thị trường liên quan là cái bánh; thị phần là miếng của mỗi doanh nghiệp trên đó."
    }
   ]
  },

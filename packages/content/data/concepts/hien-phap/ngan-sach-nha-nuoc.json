@@ -24,10 +24,13 @@
   "công khai, minh bạch"
  ],
  "memo": {
-  "hook": "Ngân sách TRUNG ƯƠNG chủ đạo; thu chi phải DỰ TOÁN, do LUẬT định.",
+  "gist": "Ngân sách gồm trung ương và địa phương, trung ương chủ đạo; mọi khoản thu, chi phải dự toán và do luật định.",
+  "kind": "tree",
+  "hook": "Không có tên trong luật thì không được thu.",
   "tree": [
    {
     "label": "Gồm",
+    "icon": "puzzle",
     "children": [
      "Ngân sách trung ương (chủ đạo)",
      "Ngân sách địa phương"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Thu, chi",
+    "icon": "money",
     "children": [
      "Phải được dự toán",
      "Do luật định"
@@ -42,16 +46,28 @@
    },
    {
     "label": "Quản lý",
+    "icon": "state",
     "children": [
      "Công khai, minh bạch"
     ]
    },
    {
     "label": "Tiền tệ",
+    "icon": "money",
     "children": [
      "Đồng Việt Nam",
      "Ổn định giá trị"
     ]
+   }
+  ],
+  "case": {
+   "q": "Một khoản phí mới muốn thu thì cần gì?",
+   "a": "Phải có căn cứ luật định."
+  },
+  "contrast": [
+   {
+    "with": "kiem-toan-nha-nuoc",
+    "text": "Ngân sách là tiền công; kiểm toán là cơ quan kiểm tra tiền đó."
    }
   ]
  },

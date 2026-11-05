@@ -24,10 +24,13 @@
  ],
  "note": "Luật Thuế TNDN 67/2025/QH15 có hiệu lực từ 01/10/2025, áp dụng từ kỳ tính thuế năm 2025, thay thế Luật 14/2008/QH12 mà đề cương còn dẫn; Điều 8, 9 không bị Luật 09/2026/QH16 sửa (đã so với văn bản hợp nhất 113/VBHN-VPQH 2026).",
  "memo": {
-  "hook": "Chi phí được trừ: THỰC TẾ, LIÊN QUAN kinh doanh, có HÓA ĐƠN, KHÔNG TIỀN MẶT.",
+  "gist": "Khoản chi được trừ khi tính thuế phải có thật, phục vụ kinh doanh, đủ hóa đơn và trả không bằng tiền mặt.",
+  "kind": "checklist",
+  "hook": "Bốn chìa khóa: có thật, có việc, có giấy, có dấu vết ngân hàng.",
   "tree": [
    {
     "label": "Điều kiện",
+    "icon": "check",
     "children": [
      "Thực tế phát sinh",
      "Liên quan sản xuất, kinh doanh",
@@ -37,9 +40,20 @@
    },
    {
     "label": "Loại trừ",
+    "icon": "ban",
     "children": [
      "Khoản chi không được trừ"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty chi 30 triệu tiếp khách bằng tiền mặt, không có chứng từ qua ngân hàng. Khoản này có được trừ không?",
+   "a": "Có thể không được trừ, vì thiếu điều kiện thanh toán không dùng tiền mặt."
+  },
+  "contrast": [
+   {
+    "with": "tcdn-doanh-thu",
+    "text": "Chi phí được trừ là phần bớt đi; doanh thu là phần cộng vào khi tính thu nhập chịu thuế."
    }
   ]
  },

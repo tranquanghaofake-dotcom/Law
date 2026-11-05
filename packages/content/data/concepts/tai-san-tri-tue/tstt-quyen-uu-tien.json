@@ -5,7 +5,7 @@
  "term": "Nguyên tắc ưu tiên",
  "definition": "Người nộp đơn đăng ký sáng chế, kiểu dáng công nghiệp, nhãn hiệu có quyền yêu cầu hưởng quyền ưu tiên trên cơ sở đơn đầu tiên đăng ký bảo hộ cùng một đối tượng nếu đáp ứng các điều kiện sau đây: a) Đơn đầu tiên đã được nộp tại Việt Nam hoặc tại nước là thành viên của điều ước quốc tế có quy định về quyền ưu tiên mà Cộng hoà xã hội chủ nghĩa Việt Nam cũng là thành viên hoặc có thoả thuận áp dụng quy định như vậy với Việt Nam;",
  "plain": "Công cụ chiến lược khi mở rộng bảo hộ ra nhiều nước: nộp ĐƠN ĐẦU TIÊN ở một nước thành viên Công ước Paris, rồi trong thời hạn ưu tiên (12 tháng với sáng chế, 6 tháng với kiểu dáng, nhãn hiệu — theo Công ước Paris) nộp ở nước khác và được tính ngày ưu tiên là ngày nộp đơn đầu tiên. Ý nghĩa: đánh bại đơn của người khác nộp trong khoảng giữa; không mất tính mới. Nguyên tắc đi kèm \"nộp đơn đầu tiên\" (Điều 90): ai nộp trước được cấp.",
- "example": "Công ty F nộp đơn sáng chế tại Nhật ngày 01/3; ngày 20/12 cùng năm nộp tại Việt Nam có yêu cầu hưởng quyền ưu tiên: đơn Việt Nam được coi như nộp ngày 01/3, nên đơn của công ty G nộp tháng 8 cho cùng giải pháp bị loại.",
+ "example": "Công ty F nộp đơn sáng chế tại Nhật ngày 1 tháng 3; ngày 20 tháng 12 cùng năm nộp tại Việt Nam có yêu cầu hưởng quyền ưu tiên: đơn được coi như nộp ngày 1 tháng 3, nên đơn của công ty G nộp tháng 8 bị loại.",
  "source": {
   "kind": "statute",
   "cite": "Điểm a khoản 1 Điều 91 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)",
@@ -24,17 +24,21 @@
  ],
  "note": "Luật Sở hữu trí tuệ 50/2005/QH11 (hiệu lực 01/7/2006) đã được sửa đổi bởi Luật 36/2009/QH12, 42/2019/QH14, 07/2022/QH15, 93/2025/QH15 và 131/2025/QH15 (hiệu lực 01/4/2026) — văn bản hợp nhất 67/VBHN-VPQH 2026; ghi chép lớp học còn dẫn Nghị định 105/2006/NĐ-CP và Nghị định 99/2013/NĐ-CP, cần tự kiểm tra hiệu lực của các nghị định này trước khi dùng.",
  "memo": {
-  "hook": "Nộp ĐƠN ĐẦU TIÊN ở một nước, rồi nộp nước khác vẫn giữ NGÀY ƯU TIÊN.",
+  "gist": "Nộp đơn đầu tiên ở một nước thành viên, trong thời hạn nộp tiếp ở nước khác thì vẫn được tính ngày nộp đầu.",
+  "kind": "tree",
+  "hook": "Như giữ chỗ xếp hàng: đặt vé ở quầy này, sang quầy khác vẫn giữ số cũ.",
   "tree": [
    {
     "label": "Điều kiện",
+    "icon": "pin",
     "children": [
      "Đơn đầu tiên tại nước thành viên",
      "Cùng một đối tượng"
     ]
    },
    {
-    "label": "Thời hạn ưu tiên",
+    "label": "Thời hạn ưu tiên (Công ước Paris)",
+    "icon": "clock",
     "children": [
      "Sáng chế: 12 tháng",
      "Kiểu dáng, nhãn hiệu: 6 tháng"
@@ -42,10 +46,21 @@
    },
    {
     "label": "Lợi ích",
+    "icon": "star",
     "children": [
      "Thắng đơn nộp xen giữa",
      "Không mất tính mới"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty F nộp đơn sáng chế ở Nhật ngày 1 tháng 3, nộp ở Việt Nam ngày 20 tháng 12 có xin ưu tiên. Đơn ở Việt Nam tính ngày nào?",
+   "a": "Ngày 1 tháng 3, vì còn trong 12 tháng."
+  },
+  "contrast": [
+   {
+    "with": "tstt-quyen-dang-ky-khi-giao-viec",
+    "text": "Quyền ưu tiên là giữ ngày nộp; quyền đăng ký là ai được nộp đơn."
    }
   ]
  },

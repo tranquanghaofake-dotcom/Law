@@ -23,10 +23,13 @@
   "nghiệp vụ gốc"
  ],
  "memo": {
-  "hook": "MÔI GIỚI là nghiệp vụ GỐC: làm trung gian, ăn phí, không chịu lãi lỗ thay khách.",
+  "gist": "Công ty chứng khoán làm trung gian mua bán cho khách và thu phí, không chịu lãi lỗ thay khách.",
+  "kind": "tree",
+  "hook": "Người dắt mối ăn phí, lời lỗ là của khách.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "handshake",
     "children": [
      "Trung gian mua bán cho khách",
      "Hưởng phí"
@@ -34,17 +37,29 @@
    },
    {
     "label": "Không",
+    "icon": "ban",
     "children": [
      "Chịu lãi lỗ thay khách"
     ]
    },
    {
     "label": "Là điều kiện cho",
+    "icon": "key",
     "children": [
      "Tự doanh",
      "Lưu ký",
      "Dịch vụ trực tuyến"
     ]
+   }
+  ],
+  "case": {
+   "q": "Bạn đặt lệnh qua ứng dụng, công ty chuyển lệnh vào sàn và thu phí 0,15%. Công ty đang làm gì?",
+   "a": "Môi giới chứng khoán."
+  },
+  "contrast": [
+   {
+    "with": "tu-doanh-chung-khoan",
+    "text": "Môi giới mua bán cho khách; tự doanh mua bán cho chính công ty."
    }
   ]
  },

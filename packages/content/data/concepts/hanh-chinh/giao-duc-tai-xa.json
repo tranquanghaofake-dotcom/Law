@@ -5,7 +5,7 @@
  "term": "Biện pháp giáo dục tại xã, phường, đặc khu",
  "definition": "Giáo dục tại xã, phường, đặc khu là biện pháp xử lý hành chính áp dụng đối với các đối tượng quy định tại Điều 90 của Luật này để giáo dục, quản lý họ tại nơi cư trú trong trường hợp nhận thấy không cần thiết phải cách ly họ khỏi cộng đồng. Thời hạn áp dụng biện pháp giáo dục tại xã, phường, đặc khu từ 03 tháng đến 06 tháng.",
  "plain": "Đặc điểm: giáo dục, quản lý TẠI NƠI CƯ TRÚ, KHÔNG CÁCH LY khỏi cộng đồng; 03–06 THÁNG; do Chủ tịch UBND cấp xã quyết định (khoản 1 Điều 105). Đối tượng (Điều 90): người 12–14 tuổi có hành vi có dấu hiệu tội phạm RẤT NGHIÊM TRỌNG do cố ý; 14–16 tuổi có dấu hiệu tội NGHIÊM TRỌNG do cố ý; người chưa thành niên, người từ đủ 18 tuổi đã 02 lần bị xử phạt và bị lập biên bản lần thứ ba trong 06 tháng về các hành vi luật liệt kê (trộm cắp, đánh bạc, gây rối…) nhưng không phải tội phạm (khoản 3, 4, 6). Khoản 5 Điều 90 đã được bãi bỏ.",
- "example": "Em A 13 tuổi có hành vi có dấu hiệu tội cướp tài sản thuộc khung rất nghiêm trọng: có thể bị áp dụng giáo dục tại xã, phường nơi cư trú 3–6 tháng.",
+ "example": "Em A 13 tuổi có hành vi có dấu hiệu tội cướp tài sản thuộc khung rất nghiêm trọng: có thể bị giáo dục tại xã, phường nơi cư trú từ 3 đến 6 tháng.",
  "source": {
   "kind": "statute",
   "cite": "Điều 89 Luật Xử lý vi phạm hành chính (sửa đổi, bổ sung đến năm 2025)",
@@ -22,10 +22,13 @@
   "03 tháng đến 06 tháng"
  ],
  "memo": {
-  "hook": "Giáo dục TẠI NƠI CƯ TRÚ, KHÔNG cách ly, 3–6 THÁNG.",
+  "gist": "Người vi phạm được giáo dục ngay tại nơi cư trú từ 3 đến 6 tháng, không bị tách khỏi cộng đồng.",
+  "kind": "tree",
+  "hook": "Dạy tại nhà, không đưa đi xa.",
   "tree": [
    {
     "label": "Đặc điểm",
+    "icon": "village",
     "children": [
      "Tại nơi cư trú",
      "Không cách ly khỏi cộng đồng"
@@ -33,15 +36,27 @@
    },
    {
     "label": "Thời hạn",
+    "icon": "calendar",
     "children": [
      "03 đến 06 tháng"
     ]
    },
    {
     "label": "Ai quyết định",
+    "icon": "person",
     "children": [
      "Chủ tịch Ủy ban nhân dân cấp xã"
     ]
+   }
+  ],
+  "case": {
+   "q": "Em A 13 tuổi có hành vi dấu hiệu tội cướp tài sản rất nghiêm trọng. Có thể áp dụng gì, bao lâu?",
+   "a": "Giáo dục tại xã, phường nơi cư trú từ 3 đến 6 tháng."
+  },
+  "contrast": [
+   {
+    "with": "truong-giao-duong",
+    "text": "Giáo dục tại xã ở ngay nơi cư trú; trường giáo dưỡng tách ra khỏi nhà và do Tòa quyết định."
    }
   ]
  },

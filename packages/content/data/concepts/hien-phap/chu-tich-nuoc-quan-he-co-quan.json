@@ -23,10 +23,13 @@
   "Chính phủ báo cáo công tác trước Chủ tịch nước"
  ],
  "memo": {
-  "hook": "Chủ tịch nước là CẦU NỐI, không chỉ đạo trực tiếp Chính phủ.",
+  "gist": "Chủ tịch nước được dự họp Ủy ban thường vụ, họp Chính phủ, yêu cầu Chính phủ họp bàn; không chỉ đạo trực tiếp.",
+  "kind": "tree",
+  "hook": "Cây cầu nối các cơ quan, không phải người cầm lái.",
   "tree": [
    {
     "label": "Được tham dự",
+    "icon": "people",
     "children": [
      "Phiên họp Ủy ban thường vụ",
      "Phiên họp Chính phủ"
@@ -34,16 +37,28 @@
    },
    {
     "label": "Được yêu cầu",
+    "icon": "announce",
     "children": [
      "Chính phủ họp bàn vấn đề"
     ]
    },
    {
     "label": "Chính phủ",
+    "icon": "list",
     "children": [
      "Báo cáo công tác trước Chủ tịch nước",
      "Chịu trách nhiệm trước Quốc hội"
     ]
+   }
+  ],
+  "case": {
+   "q": "Trước chuyến thăm cấp nhà nước, Chủ tịch nước muốn chuẩn bị thỏa thuận hợp tác. Có thể làm gì?",
+   "a": "Yêu cầu Chính phủ họp bàn."
+  },
+  "contrast": [
+   {
+    "with": "chinh-phu-vi-tri",
+    "text": "Chủ tịch nước là cầu nối; Chính phủ là cơ quan hành pháp tự điều hành."
    }
   ]
  },

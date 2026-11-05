@@ -25,10 +25,13 @@
  ],
  "note": "Điều 6 có nội dung được sửa đổi, bổ sung bởi Luật 42/2019/QH14 (hiệu lực 01/11/2019); Luật 131/2025/QH15 (hiệu lực 01/4/2026) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
  "memo": {
-  "hook": "Ba cơ chế: ĐĂNG KÝ – SỬ DỤNG – BẢO MẬT.",
+  "gist": "Quyền sở hữu công nghiệp có nhờ đăng ký, nhờ sử dụng, hoặc nhờ giữ bí mật hợp pháp, tùy đối tượng.",
+  "kind": "compare",
+  "hook": "Ai nộp đơn trước thì xếp hàng trước.",
   "tree": [
    {
     "label": "Đăng ký, cấp văn bằng",
+    "icon": "list",
     "children": [
      "Sáng chế, kiểu dáng",
      "Nhãn hiệu thông thường",
@@ -37,6 +40,7 @@
    },
    {
     "label": "Do sử dụng",
+    "icon": "cart",
     "children": [
      "Nhãn hiệu nổi tiếng",
      "Tên thương mại"
@@ -44,15 +48,27 @@
    },
    {
     "label": "Có được hợp pháp, bảo mật",
+    "icon": "lock",
     "children": [
      "Bí mật kinh doanh"
     ]
    },
    {
     "label": "Nguyên tắc",
+    "icon": "star",
     "children": [
      "Nộp đơn đầu tiên"
     ]
+   }
+  ],
+  "case": {
+   "q": "Hai công ty có logo giống nhau, B nộp đơn trước A một ngày, A dùng trước nhưng chưa nổi tiếng. Ai thường được cấp văn bằng?",
+   "a": "B, theo nguyên tắc nộp đơn đầu tiên."
+  },
+  "contrast": [
+   {
+    "with": "can-cu-phat-sinh-quyen-shtt",
+    "text": "Xác lập quyền sở hữu công nghiệp thường cần đăng ký; quyền tác giả tự có khi sáng tạo."
    }
   ]
  },

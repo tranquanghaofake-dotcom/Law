@@ -23,16 +23,20 @@
   "theo pháp luật"
  ],
  "memo": {
-  "hook": "Cháu ĐỨNG VÀO chỗ cha/mẹ đã chết TRƯỚC hoặc CÙNG lúc người để lại di sản.",
+  "gist": "Con chết trước hoặc cùng lúc với cha mẹ thì cháu đứng vào chỗ đó, hưởng phần lẽ ra cha mẹ cháu được.",
+  "kind": "tree",
+  "hook": "Ghế trống trong gia đình được con của người vắng ngồi thay.",
   "tree": [
    {
     "label": "Điều kiện",
+    "icon": "clock",
     "children": [
      "Con chết trước hoặc cùng thời điểm"
     ]
    },
    {
     "label": "Ai thế vị",
+    "icon": "child",
     "children": [
      "Cháu",
      "Chắt nếu cháu cũng chết"
@@ -40,15 +44,27 @@
    },
    {
     "label": "Phạm vi",
+    "icon": "scroll",
     "children": [
      "Chỉ thừa kế theo pháp luật"
     ]
    },
    {
     "label": "Phần hưởng",
+    "icon": "gift",
     "children": [
      "Phần cha mẹ đáng được"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ông A có con B, C; B chết trước, để lại con D. Ông A chết không di chúc. Di sản chia cho ai?",
+   "a": "Cho C và D; D thế vị hưởng phần của B."
+  },
+  "contrast": [
+   {
+    "with": "thua-ke-theo-phap-luat",
+    "text": "Thế vị là cháu thay chỗ cha mẹ; thừa kế theo pháp luật là cách chia theo hàng."
    }
   ]
  },

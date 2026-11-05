@@ -24,10 +24,13 @@
  ],
  "note": "Luật Đầu tư 143/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Đầu tư 61/2020/QH14 mà đề cương HLU 2021 còn dẫn (khoản 4 Điều 51). Luật 24/2026/QH16 sửa đổi có hiệu lực từ 01/3/2027 (riêng một phần Điều 6 từ 01/01/2027), chỉ sửa Điều 6 và Phụ lục IV, không sửa điều được trích — văn bản hợp nhất 142/2026/VBHN-LQ-VPQH.",
  "memo": {
-  "hook": "Khu KINH TẾ có NHIỀU khu chức năng, rộng hơn khu công nghiệp.",
+  "gist": "Khu kinh tế là vùng có ranh giới rõ, gồm nhiều khu chức năng, lập ra để hút đầu tư và giữ an ninh.",
+  "kind": "tree",
+  "hook": "Như một thành phố thu nhỏ; khu công nghiệp chỉ là một khu phố trong đó.",
   "tree": [
    {
     "label": "Dấu hiệu",
+    "icon": "map",
     "children": [
      "Ranh giới xác định",
      "Nhiều khu chức năng"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Mục tiêu",
+    "icon": "target",
     "children": [
      "Thu hút đầu tư",
      "Phát triển kinh tế - xã hội",
@@ -43,10 +47,21 @@
    },
    {
     "label": "Phân biệt",
+    "icon": "compare",
     "children": [
      "Khu công nghiệp",
      "Khu chế xuất"
     ]
+   }
+  ],
+  "case": {
+   "q": "Khu Vân Phong gồm cảng, khu công nghiệp, khu du lịch, khu đô thị. Đây là khu gì?",
+   "a": "Khu kinh tế, vì gồm nhiều khu chức năng."
+  },
+  "contrast": [
+   {
+    "with": "ldt-khu-cong-nghiep",
+    "text": "Khu kinh tế có nhiều chức năng; khu công nghiệp chỉ chuyên sản xuất."
    }
   ]
  },

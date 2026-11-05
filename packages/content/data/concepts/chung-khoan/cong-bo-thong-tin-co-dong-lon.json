@@ -24,10 +24,13 @@
   "ngoại lệ mua lại, phát hành thêm"
  ],
  "memo": {
-  "hook": "Cổ đông lớn TỪ 5%; công bố khi vượt/rơi 5% và mỗi lần qua NGƯỠNG 1%.",
+  "gist": "Người nắm từ 5% cổ phiếu biểu quyết phải công bố khi thành, khi thôi là cổ đông lớn, và mỗi lần qua ngưỡng 1%.",
+  "kind": "tree",
+  "hook": "Đứng lên bục thì phải báo mỗi khi bước lên hay bước xuống một bậc.",
   "tree": [
    {
     "label": "Cổ đông lớn",
+    "icon": "person",
     "children": [
      "Từ 5% cổ phiếu biểu quyết",
      "Tính cả nhóm liên quan"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Phải công bố",
+    "icon": "announce",
     "children": [
      "Trở thành, không còn là cổ đông lớn",
      "Mỗi lần qua ngưỡng 1%"
@@ -42,9 +46,20 @@
    },
    {
     "label": "Mục đích",
+    "icon": "target",
     "children": [
      "Biết ai đang gom, thoái"
     ]
+   }
+  ],
+  "case": {
+   "q": "Quỹ Q đang nắm 5,8%, mua thêm lên 6,3% cổ phiếu công ty R. Có phải công bố không?",
+   "a": "Có, vì vượt ngưỡng 6%."
+  },
+  "contrast": [
+   {
+    "with": "nguoi-noi-bo",
+    "text": "Cổ đông lớn xét theo tỷ lệ nắm giữ; người nội bộ xét theo chức vụ trong công ty."
    }
   ]
  },

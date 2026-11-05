@@ -22,10 +22,13 @@
   "liên minh công nhân, nông dân, trí thức"
  ],
  "memo": {
-  "hook": "Mọi quyền lực nhà nước có nguồn gốc từ NHÂN DÂN.",
+  "gist": "Mọi quyền lực nhà nước thuộc về Nhân dân; Nhân dân thực hiện trực tiếp hoặc qua Quốc hội, Hội đồng nhân dân.",
+  "kind": "tree",
+  "hook": "Dòng sông quyền lực bắt nguồn từ lá phiếu.",
   "tree": [
    {
     "label": "Nguyên tắc",
+    "icon": "crown",
     "children": [
      "Nhân dân làm chủ",
      "Quyền lực thuộc về Nhân dân"
@@ -33,6 +36,7 @@
    },
    {
     "label": "Nền tảng",
+    "icon": "handshake",
     "children": [
      "Công nhân",
      "Nông dân",
@@ -41,10 +45,21 @@
    },
    {
     "label": "Cách thực hiện",
+    "icon": "vote",
     "children": [
      "Trực tiếp: bầu cử, trưng cầu ý dân",
      "Gián tiếp: Quốc hội, Hội đồng nhân dân"
     ]
+   }
+  ],
+  "case": {
+   "q": "Vì sao Quốc hội có quyền làm luật?",
+   "a": "Vì Quốc hội do Nhân dân bầu ra, nhận quyền từ Nhân dân."
+  },
+  "contrast": [
+   {
+    "with": "quyen-luc-nha-nuoc-thong-nhat",
+    "text": "Chủ quyền Nhân dân nói quyền lực từ đâu; quyền lực thống nhất nói chia việc thế nào."
    }
   ]
  },

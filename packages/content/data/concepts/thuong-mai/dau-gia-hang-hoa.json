@@ -23,10 +23,13 @@
   "đặt giá xuống"
  ],
  "memo": {
-  "hook": "Bán CÔNG KHAI, chọn người trả giá CAO NHẤT.",
+  "gist": "Người bán bán hàng công khai, chọn người trả giá cao nhất.",
+  "kind": "compare",
+  "hook": "Như chợ phiên trả giá: ai giơ tay cao nhất thì mang hàng về.",
   "tree": [
    {
     "label": "Mục đích",
+    "icon": "target",
     "children": [
      "Bán công khai",
      "Chọn giá cao nhất"
@@ -34,6 +37,7 @@
    },
    {
     "label": "Phương thức",
+    "icon": "scales",
     "children": [
      "Trả giá lên",
      "Đặt giá xuống"
@@ -41,9 +45,20 @@
    },
    {
     "label": "Phân biệt",
+    "icon": "compare",
     "children": [
      "Đấu giá tài sản: luật riêng"
     ]
+   }
+  ],
+  "case": {
+   "q": "Doanh nghiệp bán lô hàng tồn, giá khởi điểm 100 triệu, người trả 150 triệu cao nhất được mua. Đây là phương thức nào?",
+   "a": "Đấu giá theo phương thức trả giá lên."
+  },
+  "contrast": [
+   {
+    "with": "dau-thau-hang-hoa",
+    "text": "Đấu giá là bên bán chọn giá cao nhất; đấu thầu là bên mua chọn người đáp ứng tốt nhất."
    }
   ]
  },

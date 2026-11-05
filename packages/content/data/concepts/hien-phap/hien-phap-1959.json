@@ -25,10 +25,13 @@
  ],
  "note": "Hiến pháp đã hết hiệu lực; học để hiểu lịch sử lập hiến, không áp dụng như luật hiện hành.",
  "memo": {
-  "hook": "Lần đầu hiến định TẬP TRUNG DÂN CHỦ; bỏ phúc quyết.",
+  "gist": "Hiến pháp 1959 sửa Hiến pháp 1946 để đưa miền Bắc lên chủ nghĩa xã hội, lần đầu ghi nguyên tắc tập trung dân chủ.",
+  "kind": "tree",
+  "hook": "Bản thứ hai mở đường cho mô hình xã hội chủ nghĩa.",
   "tree": [
    {
     "label": "Thông qua",
+    "icon": "calendar",
     "children": [
      "31/12/1959",
      "Danh nghĩa sửa đổi Hiến pháp 1946"
@@ -36,12 +39,14 @@
    },
    {
     "label": "Mục tiêu",
+    "icon": "target",
     "children": [
      "Đưa miền Bắc lên chủ nghĩa xã hội"
     ]
    },
    {
     "label": "Điểm mới",
+    "icon": "new",
     "children": [
      "Tập trung dân chủ",
      "Quốc hội",
@@ -50,9 +55,20 @@
    },
    {
     "label": "Sửa đổi",
+    "icon": "pen",
     "children": [
      "Chỉ Quốc hội"
     ]
+   }
+  ],
+  "case": {
+   "q": "Hiến pháp nào lần đầu hiến định nguyên tắc tập trung dân chủ?",
+   "a": "Hiến pháp 1959."
+  },
+  "contrast": [
+   {
+    "with": "hien-phap-1946",
+    "text": "1959 bỏ phúc quyết và đưa vào tập trung dân chủ; 1946 dựa trên đoàn kết toàn dân."
    }
   ]
  },

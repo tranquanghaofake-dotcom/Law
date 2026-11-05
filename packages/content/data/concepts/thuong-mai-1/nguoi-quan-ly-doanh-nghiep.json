@@ -23,22 +23,27 @@
   "chức danh khác theo Điều lệ"
  ],
  "memo": {
-  "hook": "Người quản lý theo loại hình; KIỂM SOÁT VIÊN không phải người quản lý.",
+  "gist": "Người quản lý là người giữ chức điều hành theo từng loại công ty như chủ, giám đốc, hội đồng quản trị.",
+  "kind": "tree",
+  "hook": "Ai cầm vô lăng thì là người lái; người ngồi kiểm tra bản đồ thì không.",
   "tree": [
    {
-    "label": "DNTN",
+    "label": "Doanh nghiệp tư nhân",
+    "icon": "person",
     "children": [
      "Chủ doanh nghiệp"
     ]
    },
    {
     "label": "Hợp danh",
+    "icon": "handshake",
     "children": [
      "Thành viên hợp danh"
     ]
    },
    {
-    "label": "TNHH",
+    "label": "Trách nhiệm hữu hạn",
+    "icon": "company",
     "children": [
      "Hội đồng thành viên, Chủ tịch công ty",
      "Giám đốc"
@@ -46,10 +51,21 @@
    },
    {
     "label": "Cổ phần",
+    "icon": "state",
     "children": [
      "Hội đồng quản trị",
      "Giám đốc, Tổng giám đốc"
     ]
+   }
+  ],
+  "case": {
+   "q": "Trưởng ban kiểm soát công ty cổ phần có phải người quản lý doanh nghiệp không?",
+   "a": "Không. Kiểm soát viên không thuộc định nghĩa người quản lý."
+  },
+  "contrast": [
+   {
+    "with": "chu-so-huu-huong-loi",
+    "text": "Người quản lý giữ chức danh điều hành; chủ sở hữu hưởng lợi là người nắm thật phía sau."
    }
   ]
  },

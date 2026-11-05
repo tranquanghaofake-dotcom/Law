@@ -22,32 +22,48 @@
   "257 TCN"
  ],
  "memo": {
-  "hook": "Âu Lạc: AN DƯƠNG VƯƠNG kế tục Văn Lang, xây CỔ LOA; trung ương MẠNH hơn.",
+  "gist": "An Dương Vương lập năm 257 trước Công nguyên, kế tục Văn Lang, xây thành Cổ Loa, trung ương mạnh hơn.",
+  "kind": "tree",
+  "hook": "Vòng thành xoáy ốc là bằng chứng của một nhà nước biết huy động sức người.",
   "tree": [
    {
     "label": "Người lập",
+    "icon": "person",
     "children": [
      "Thục Phán – An Dương Vương"
     ]
    },
    {
     "label": "Mốc",
+    "icon": "calendar",
     "children": [
-     "257 TCN"
+     "257 trước Công nguyên"
     ]
    },
    {
     "label": "Kinh đô",
+    "icon": "state",
     "children": [
      "Phong Khê (Cổ Loa)"
     ]
    },
    {
     "label": "Đặc điểm",
+    "icon": "fist",
     "children": [
      "Giữ mô hình Văn Lang",
      "Quyền lực trung ương mạnh hơn"
     ]
+   }
+  ],
+  "case": {
+   "q": "Thành Cổ Loa chứng minh điều gì về nhà nước Âu Lạc?",
+   "a": "Nhà nước đủ sức huy động nhiều lao động, trung ương mạnh hơn Văn Lang."
+  },
+  "contrast": [
+   {
+    "with": "nha-nuoc-van-lang",
+    "text": "Âu Lạc kế tục và mạnh hơn Văn Lang."
    }
   ]
  },

@@ -23,16 +23,20 @@
   "hòm phiếu phụ"
  ],
  "memo": {
-  "hook": "Nhờ VIẾT hộ được, nhưng phải TỰ BỎ phiếu.",
+  "gist": "Mỗi cử tri có một phiếu, tự đi bầu; nhờ người viết hộ được nhưng phải tự bỏ phiếu, giữ bí mật.",
+  "kind": "tree",
+  "hook": "Cây bút có thể mượn tay khác, lá phiếu thì không.",
   "tree": [
    {
     "label": "Số phiếu",
+    "icon": "n1",
     "children": [
      "Một phiếu cho mỗi cấp"
     ]
    },
    {
     "label": "Tự đi bầu",
+    "icon": "person",
     "children": [
      "Xuất trình thẻ cử tri",
      "Không nhờ bầu thay"
@@ -40,6 +44,7 @@
    },
    {
     "label": "Ngoại lệ",
+    "icon": "pen",
     "children": [
      "Không tự viết được: nhờ viết hộ",
      "Ốm đau, già yếu: hòm phiếu phụ"
@@ -47,9 +52,20 @@
    },
    {
     "label": "Bí mật",
+    "icon": "lock",
     "children": [
      "Không ai được xem khi viết phiếu"
     ]
+   }
+  ],
+  "case": {
+   "q": "Người con cầm thẻ cử tri của cả nhà đi bầu thay bố mẹ. Có đúng không?",
+   "a": "Không. Mỗi người phải tự đi bầu."
+  },
+  "contrast": [
+   {
+    "with": "nguyen-tac-bau-cu",
+    "text": "Nguyên tắc bỏ phiếu là cách làm cụ thể; nguyên tắc bầu cử là bốn trụ chung."
    }
   ]
  },

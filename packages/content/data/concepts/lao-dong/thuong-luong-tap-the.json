@@ -24,10 +24,13 @@
   "tiến bộ, hài hòa, ổn định"
  ],
  "memo": {
-  "hook": "Thương lượng do TỔ CHỨC ĐẠI DIỆN làm, không phải từng người; kết quả là THỎA ƯỚC.",
+  "gist": "Tổ chức đại diện người lao động đàm phán với người sử dụng về điều kiện làm việc; thành công thì ký thỏa ước.",
+  "kind": "steps",
+  "hook": "Đàm phán tập thể thay vì từng người lẻ.",
   "tree": [
    {
     "label": "Chủ thể",
+    "icon": "people",
     "children": [
      "Tổ chức đại diện người lao động",
      "Người sử dụng hoặc đại diện"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Mục đích",
+    "icon": "target",
     "children": [
      "Xác lập điều kiện lao động",
      "Quan hệ hài hòa, ổn định"
@@ -42,10 +46,21 @@
    },
    {
     "label": "Kết quả",
+    "icon": "scroll",
     "children": [
      "Thành: thỏa ước",
      "Không thành: tranh chấp"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công đoàn cơ sở đàm phán với ban giám đốc về tăng lương 8%. Đây là gì?",
+   "a": "Thương lượng tập thể."
+  },
+  "contrast": [
+   {
+    "with": "doi-thoai-tai-noi-lam-viec",
+    "text": "Thương lượng nhằm ra thỏa ước; đối thoại chỉ trao đổi, không bắt buộc kết quả."
    }
   ]
  },

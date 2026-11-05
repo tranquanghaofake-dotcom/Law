@@ -5,7 +5,7 @@
  "term": "Tổng công ty lưu ký và bù trừ chứng khoán Việt Nam",
  "definition": "Tổng công ty lưu ký và bù trừ chứng khoán Việt Nam là doanh nghiệp được thành lập và hoạt động theo quy định của Luật này và Luật Doanh nghiệp, do Nhà nước nắm giữ trên 50% vốn điều lệ hoặc tổng số cổ phần có quyền biểu quyết.",
  "plain": "Nếu Sở giao dịch là nơi \"khớp lệnh\" thì Tổng công ty lưu ký và bù trừ (VSDC) là nơi \"ghi sổ và giao nhận\": đăng ký người sở hữu, giữ chứng khoán, bù trừ và thanh toán sau khi khớp lệnh. Địa vị pháp lý giống Sở giao dịch: doanh nghiệp, Nhà nước nắm trên 50% vốn, Thủ tướng quyết định thành lập, chịu quản lý, giám sát của Ủy ban Chứng khoán Nhà nước. Trước đây là Trung tâm lưu ký chứng khoán (khoản 6 Điều 135 Luật Chứng khoán).",
- "example": "Bạn mua 1.000 cổ phiếu trên app: Sở giao dịch khớp lệnh; sau đó VSDC bù trừ, chuyển cổ phiếu vào tài khoản lưu ký của bạn và ghi nhận bạn là người sở hữu.",
+ "example": "Bạn mua 1.000 cổ phiếu trên ứng dụng: Sở giao dịch khớp lệnh; sau đó Tổng công ty lưu ký bù trừ, chuyển cổ phiếu vào tài khoản lưu ký của bạn và ghi nhận bạn là người sở hữu.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1 Điều 52 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)",
@@ -24,10 +24,13 @@
  ],
  "note": "Luật 56/2024/QH15 (hiệu lực 01/01/2025) bổ sung khoản 4 Điều 55: Tổng công ty được thành lập công ty con và giao cho công ty con thực hiện một số quyền, nghĩa vụ sau khi Bộ Tài chính chấp thuận. Luật cũng thêm cụm \"và công ty con\" vào các quy định về quản lý, giám sát, tạm ngừng hoạt động (Điều 52, 68). Giáo trình 2021 chưa có.",
  "memo": {
-  "hook": "Sở giao dịch KHỚP LỆNH; Tổng công ty lưu ký (VSDC) GHI SỔ và GIAO NHẬN.",
+  "gist": "Tổng công ty lưu ký ghi sổ người sở hữu, giữ, bù trừ và thanh toán chứng khoán; Sở giao dịch chỉ khớp lệnh.",
+  "kind": "compare",
+  "hook": "Sở bắt tay hai bên, Tổng công ty làm sổ sang tên.",
   "tree": [
    {
     "label": "Địa vị",
+    "icon": "company",
     "children": [
      "Doanh nghiệp",
      "Nhà nước nắm trên 50%"
@@ -35,12 +38,23 @@
    },
    {
     "label": "Việc làm",
+    "icon": "book",
     "children": [
      "Đăng ký người sở hữu",
      "Lưu ký",
      "Bù trừ",
      "Thanh toán"
     ]
+   }
+  ],
+  "case": {
+   "q": "Bạn mua 1.000 cổ phiếu trên ứng dụng. Ai chuyển cổ phiếu vào tài khoản lưu ký và ghi bạn là chủ?",
+   "a": "Tổng công ty lưu ký và bù trừ chứng khoán."
+  },
+  "contrast": [
+   {
+    "with": "so-giao-dich-chung-khoan-viet-nam",
+    "text": "Tổng công ty ghi sổ, giao nhận; Sở giao dịch khớp lệnh."
    }
   ]
  },

@@ -33,28 +33,28 @@
   "tree": [
    {
     "label": "Trung ương",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Sớm nhất sau 45 ngày"
     ]
    },
    {
     "label": "Địa phương",
-    "icon": "🏘️",
+    "icon": "village",
     "children": [
      "Sớm nhất sau 10 ngày"
     ]
    },
    {
     "label": "Ngoại lệ",
-    "icon": "⚡",
+    "icon": "bolt",
     "children": [
      "Thủ tục rút gọn có thể hiệu lực ngay"
     ]
    },
    {
     "label": "Mốc tính",
-    "icon": "📅",
+    "icon": "calendar",
     "children": [
      "Ngày thông qua hoặc ngày ký"
     ]

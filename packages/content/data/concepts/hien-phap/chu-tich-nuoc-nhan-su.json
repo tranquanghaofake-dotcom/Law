@@ -23,10 +23,13 @@
   "Chánh án, Viện trưởng"
  ],
  "memo": {
-  "hook": "Mô hình ĐỀ NGHỊ → Quốc hội quyết → CĂN CỨ đó BỔ NHIỆM.",
+  "gist": "Chủ tịch nước đề nghị Quốc hội bầu người, rồi căn cứ nghị quyết của Quốc hội mà bổ nhiệm.",
+  "kind": "steps",
+  "hook": "Như ký hợp đồng sau khi hội đồng đã duyệt: chữ ký đến sau cái gật đầu.",
   "tree": [
    {
     "label": "Đề nghị Quốc hội bầu",
+    "icon": "vote",
     "children": [
      "Phó Chủ tịch nước",
      "Thủ tướng",
@@ -35,11 +38,22 @@
    },
    {
     "label": "Bổ nhiệm theo nghị quyết",
+    "icon": "pen",
     "children": [
      "Phó Thủ tướng",
      "Bộ trưởng, thành viên Chính phủ",
      "Thẩm phán Tòa án nhân dân tối cao"
     ]
+   }
+  ],
+  "case": {
+   "q": "Chủ tịch nước có được tự bổ nhiệm Bộ trưởng khi chưa có nghị quyết phê chuẩn của Quốc hội không?",
+   "a": "Không."
+  },
+  "contrast": [
+   {
+    "with": "thu-tuong-chinh-phu",
+    "text": "Chủ tịch nước ký bổ nhiệm; Thủ tướng đề nghị và quản lý Bộ trưởng."
    }
   ]
  },

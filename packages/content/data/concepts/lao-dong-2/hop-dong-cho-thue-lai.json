@@ -22,10 +22,13 @@
   "trách nhiệm bồi thường tai nạn lao động"
  ],
  "memo": {
-  "hook": "HAI hợp đồng khác nhau: hợp đồng lao động và hợp đồng cho thuê lại.",
+  "gist": "Công ty cho thuê phải ký quỹ, có giấy phép, và ký văn bản riêng với bên thuê, ngoài hợp đồng lao động.",
+  "kind": "compare",
+  "hook": "Một người làm, hai tờ giấy song song.",
   "tree": [
    {
     "label": "Điều kiện doanh nghiệp",
+    "icon": "key",
     "children": [
      "Ký quỹ",
      "Giấy phép cho thuê lại"
@@ -33,17 +36,29 @@
    },
    {
     "label": "Hợp đồng lao động",
+    "icon": "doc",
     "children": [
      "Doanh nghiệp cho thuê – người lao động"
     ]
    },
    {
     "label": "Hợp đồng cho thuê lại",
+    "icon": "handshake",
     "children": [
      "Doanh nghiệp cho thuê – bên thuê lại",
      "Văn bản, 02 bản",
      "Có trách nhiệm bồi thường tai nạn"
     ]
+   }
+  ],
+  "case": {
+   "q": "Hợp đồng giữa Công ty X và Nhà máy Y có phải ghi ai bồi thường khi anh H bị tai nạn lao động không?",
+   "a": "Có. Hợp đồng cho thuê lại phải ghi rõ trách nhiệm bồi thường tai nạn lao động."
+  },
+  "contrast": [
+   {
+    "with": "cho-thue-lai-lao-dong",
+    "text": "Hợp đồng cho thuê lại là giấy giữa hai công ty; cho thuê lại lao động là cả quan hệ ba bên có người lao động."
    }
   ]
  },

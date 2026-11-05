@@ -23,10 +23,13 @@
   "chung thẩm"
  ],
  "memo": {
-  "hook": "Trọng tài KHÔNG CÔNG KHAI và CHUNG THẨM.",
+  "gist": "Trọng tài tôn trọng thỏa thuận các bên, độc lập, không xử công khai, và phán quyết là chốt luôn.",
+  "kind": "tree",
+  "hook": "Như phòng họp kín: chuyện trong phòng không lộ ra, bước ra là xong.",
   "tree": [
    {
     "label": "Nguyên tắc",
+    "icon": "scales",
     "children": [
      "Tôn trọng thỏa thuận",
      "Trọng tài viên độc lập, vô tư",
@@ -36,10 +39,21 @@
    },
    {
     "label": "Phán quyết",
+    "icon": "end",
     "children": [
      "Chung thẩm",
      "Chỉ có thể yêu cầu Tòa hủy"
     ]
+   }
+  ],
+  "case": {
+   "q": "Hai doanh nghiệp muốn giữ kín tranh chấp về công thức sản phẩm. Vì sao nên chọn trọng tài?",
+   "a": "Vì trọng tài không xử công khai và phán quyết có hiệu lực ngay."
+  },
+  "contrast": [
+   {
+    "with": "trong-tai-thuong-mai",
+    "text": "Nguyên tắc là cách trọng tài làm việc; trọng tài thương mại là cả phương thức và điều kiện dùng nó."
    }
   ]
  },

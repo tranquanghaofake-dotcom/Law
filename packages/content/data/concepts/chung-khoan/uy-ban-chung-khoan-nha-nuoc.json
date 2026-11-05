@@ -24,10 +24,13 @@
  ],
  "note": "Luật 56/2024/QH15 (hiệu lực 01/01/2025) sửa điểm d khoản 1 Điều 9: Ủy ban quản lý, thanh tra, kiểm tra, giám sát cả công ty con của Sở giao dịch chứng khoán Việt Nam và của Tổng công ty lưu ký và bù trừ. Giáo trình 2021 chưa nêu công ty con.",
  "memo": {
-  "hook": "Ủy ban = TRỌNG TÀI trực tiếp của thị trường, thuộc BỘ TÀI CHÍNH.",
+  "gist": "Ủy ban Chứng khoán Nhà nước thuộc Bộ Tài chính, cấp và thu hồi giấy phép, giám sát Sở giao dịch, thanh tra, xử phạt.",
+  "kind": "tree",
+  "hook": "Trọng tài trực tiếp trên sân chứng khoán.",
   "tree": [
    {
     "label": "Vị trí",
+    "icon": "state",
     "children": [
      "Thuộc Bộ Tài chính",
      "Tham mưu Bộ trưởng"
@@ -35,11 +38,22 @@
    },
    {
     "label": "Quyền",
+    "icon": "key",
     "children": [
      "Cấp, thu hồi giấy phép",
      "Giám sát Sở giao dịch, Tổng công ty",
      "Thanh tra, xử phạt"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ai cấp Giấy chứng nhận đăng ký chào bán và chứng chỉ hành nghề chứng khoán?",
+   "a": "Ủy ban Chứng khoán Nhà nước."
+  },
+  "contrast": [
+   {
+    "with": "so-giao-dich-chung-khoan-viet-nam",
+    "text": "Ủy ban là cơ quan quản lý; Sở giao dịch là doanh nghiệp tổ chức chợ."
    }
   ]
  },

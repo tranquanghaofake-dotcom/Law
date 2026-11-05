@@ -24,16 +24,20 @@
   "chấm dứt, thay đổi, thỏa thuận"
  ],
  "memo": {
-  "hook": "Tòa KHÔNG TỰ khởi xướng; chỉ xử khi CÓ ĐƠN và TRONG PHẠM VI đơn.",
+  "gist": "Đương sự tự quyết có kiện hay không, kiện gì; Tòa chỉ xử khi có đơn và trong phạm vi đơn.",
+  "kind": "tree",
+  "hook": "Như gọi món ở quán: khách gọi gì bếp nấu nấy, không tự dọn thêm món.",
   "tree": [
    {
     "label": "Khởi kiện",
+    "icon": "pen",
     "children": [
      "Đương sự quyết định"
     ]
    },
    {
     "label": "Tòa án",
+    "icon": "state",
     "children": [
      "Chỉ thụ lý khi có đơn",
      "Chỉ giải quyết trong phạm vi đơn"
@@ -41,6 +45,7 @@
    },
    {
     "label": "Đương sự được",
+    "icon": "cycle",
     "children": [
      "Rút, thay đổi yêu cầu",
      "Thỏa thuận"
@@ -48,9 +53,20 @@
    },
    {
     "label": "Giới hạn",
+    "icon": "ban",
     "children": [
      "Điều cấm, đạo đức xã hội"
     ]
+   }
+  ],
+  "case": {
+   "q": "Nguyên đơn chỉ đòi tiền gốc 100 triệu, không đòi lãi. Tòa có được tự buộc trả thêm lãi không?",
+   "a": "Không. Tòa chỉ giải quyết trong phạm vi đơn khởi kiện."
+  },
+  "contrast": [
+   {
+    "with": "quyen-yeu-cau-toa-an-bao-ve",
+    "text": "Tự định đoạt là đương sự quyết kiện gì, rút hay không; quyền yêu cầu là quyền được đưa việc ra Tòa."
    }
   ]
  },

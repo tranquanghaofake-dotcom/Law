@@ -25,16 +25,20 @@
  ],
  "note": "Các bộ luật nêu ở đây đã hết hiệu lực; Sắc lệnh 47 chỉ tạm giữ chúng sau năm 1945.",
  "memo": {
-  "hook": "Hình luật Pháp thuộc BA KHỐI: Bắc 1921, Trung 1933, Nam 1912 (khác Luật Gia Long 1815).",
+  "gist": "Thời Pháp thuộc có ba khối hình luật: Bắc Kỳ năm 1921, Trung Kỳ 1933, Nam Kỳ 1912.",
+  "kind": "compare",
+  "hook": "Cẩn thận hai cái tên sinh đôi: một năm 1815, một năm 1933.",
   "tree": [
    {
     "label": "Bắc Kỳ",
+    "icon": "map",
     "children": [
      "Luật hình An Nam 1921"
     ]
    },
    {
     "label": "Trung Kỳ",
+    "icon": "state",
     "children": [
      "Hoàng Việt hình luật 1933",
      "Khác Hoàng Việt luật lệ 1815"
@@ -42,9 +46,20 @@
    },
    {
     "label": "Nam Kỳ",
+    "icon": "map",
     "children": [
      "Hình luật Pháp tu chỉnh 1912"
     ]
+   }
+  ],
+  "case": {
+   "q": "Hoàng Việt hình luật và Hoàng Việt luật lệ có phải một bộ luật không?",
+   "a": "Không. Hoàng Việt hình luật là của Trung Kỳ năm 1933; Hoàng Việt luật lệ là Luật Gia Long 1815."
+  },
+  "contrast": [
+   {
+    "with": "hoang-viet-luat-le",
+    "text": "Hoàng Việt hình luật năm 1933 khác Hoàng Việt luật lệ năm 1815."
    }
   ]
  },

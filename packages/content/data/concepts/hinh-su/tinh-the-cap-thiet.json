@@ -23,10 +23,13 @@
   "vượt quá yêu cầu"
  ],
  "memo": {
-  "hook": "Gây thiệt hại NHỎ HƠN để tránh thiệt hại LỚN HƠN, khi KHÔNG CÒN CÁCH KHÁC.",
+  "gist": "Gây một thiệt hại nhỏ hơn để tránh thiệt hại lớn hơn đang đe dọa, khi không còn cách nào khác.",
+  "kind": "checklist",
+  "hook": "Bỏ con săn sắt, cứu con cá rô.",
   "tree": [
    {
     "label": "Điều kiện",
+    "icon": "check",
     "children": [
      "Nguy cơ thiệt hại thực tế",
      "Không còn cách nào khác",
@@ -35,15 +38,27 @@
    },
    {
     "label": "Hệ quả",
+    "icon": "unlock",
     "children": [
      "Không phải tội phạm"
     ]
    },
    {
     "label": "Khác phòng vệ",
+    "icon": "compare",
     "children": [
      "Thiệt hại thường gây cho người thứ ba"
     ]
+   }
+  ],
+  "case": {
+   "q": "Xe tải mất phanh, tài xế đánh lái vào hàng rào nhà dân để tránh đám đông. Đây là gì?",
+   "a": "Tình thế cấp thiết."
+  },
+  "contrast": [
+   {
+    "with": "phong-ve-chinh-dang",
+    "text": "Cấp thiết gây hại cho người thứ ba; phòng vệ đánh vào chính người tấn công."
    }
   ]
  },

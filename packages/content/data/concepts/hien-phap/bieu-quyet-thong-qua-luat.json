@@ -5,7 +5,7 @@
  "term": "Biểu quyết thông qua luật, nghị quyết của Quốc hội",
  "definition": "Luật, nghị quyết của Quốc hội phải được quá nửa tổng số đại biểu Quốc hội biểu quyết tán thành; trường hợp làm Hiến pháp, sửa đổi Hiến pháp, quyết định rút ngắn hoặc kéo dài nhiệm kỳ của Quốc hội, bãi nhiệm đại biểu Quốc hội phải được ít nhất hai phần ba tổng số đại biểu Quốc hội biểu quyết tán thành.",
  "plain": "Hai ngưỡng tính trên TỔNG SỐ đại biểu (không phải số có mặt): quá 1/2 cho luật, nghị quyết thông thường; ít nhất 2/3 cho 4 việc hệ trọng: làm, sửa Hiến pháp; rút ngắn, kéo dài nhiệm kỳ; bãi nhiệm đại biểu. Luật, pháp lệnh phải công bố chậm nhất 15 ngày kể từ khi thông qua (khoản 2), trừ khi Chủ tịch nước đề nghị xem xét lại pháp lệnh.",
- "example": "Quốc hội có 500 đại biểu, 450 có mặt. Một luật được 240 phiếu tán thành: chưa thông qua, vì chưa quá nửa TỔNG SỐ đại biểu (phải từ 251 trở lên).",
+ "example": "Quốc hội có 500 đại biểu, 450 có mặt. Một luật được 240 phiếu tán thành: chưa thông qua, vì chưa quá nửa tổng số đại biểu (phải từ 251 phiếu trở lên).",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1 Điều 85 Hiến pháp 2013",
@@ -23,17 +23,21 @@
   "công bố chậm nhất 15 ngày"
  ],
  "memo": {
-  "hook": "Tính trên TỔNG SỐ đại biểu: quá 1/2 việc thường, 2/3 việc hệ trọng.",
+  "gist": "Luật, nghị quyết cần quá nửa tổng số đại biểu tán thành; sửa Hiến pháp, bãi nhiệm đại biểu cần ít nhất hai phần ba.",
+  "kind": "compare",
+  "hook": "Đếm trên cả lớp, không đếm trên số người có mặt.",
   "tree": [
    {
     "label": "Quá nửa tổng số",
+    "icon": "ban",
     "children": [
      "Luật",
      "Nghị quyết"
     ]
    },
    {
-    "label": "Ít nhất 2/3 tổng số",
+    "label": "Ít nhất hai phần ba tổng số",
+    "icon": "n2",
     "children": [
      "Làm, sửa Hiến pháp",
      "Rút ngắn, kéo dài nhiệm kỳ",
@@ -42,9 +46,20 @@
    },
    {
     "label": "Công bố",
+    "icon": "announce",
     "children": [
      "Chậm nhất 15 ngày"
     ]
+   }
+  ],
+  "case": {
+   "q": "Quốc hội 500 đại biểu, 450 có mặt, luật được 240 phiếu. Đã thông qua chưa?",
+   "a": "Chưa, vì phải quá nửa tổng số, tức từ 251 phiếu."
+  },
+  "contrast": [
+   {
+    "with": "sua-doi-hien-phap",
+    "text": "Biểu quyết luật cần quá nửa; sửa Hiến pháp cần hai phần ba."
    }
   ]
  },

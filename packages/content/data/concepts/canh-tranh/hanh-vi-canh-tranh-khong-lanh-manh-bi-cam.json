@@ -23,10 +23,13 @@
   "lôi kéo khách hàng bất chính"
  ],
  "memo": {
-  "hook": "Nhớ 6 hành vi: BÍ MẬT – ÉP BUỘC – GIÈM PHA – GÂY RỐI – LÔI KÉO – BÁN PHÁ GIÁ.",
+  "gist": "Luật cấm sáu kiểu: lấy bí mật, ép đối tác, nói sai về đối thủ, gây rối, lôi kéo khách, bán dưới giá vốn.",
+  "kind": "tree",
+  "hook": "Mẹo chữ đầu: Bí – Ép – Gièm – Rối – Lôi – Phá.",
   "tree": [
    {
     "label": "Thông tin",
+    "icon": "lock",
     "children": [
      "Xâm phạm bí mật kinh doanh",
      "Thông tin không trung thực"
@@ -34,6 +37,7 @@
    },
    {
     "label": "Gây sức ép",
+    "icon": "fist",
     "children": [
      "Ép buộc khách hàng, đối tác",
      "Gây rối hoạt động kinh doanh"
@@ -41,10 +45,21 @@
    },
    {
     "label": "Giành khách",
+    "icon": "target",
     "children": [
      "Lôi kéo khách hàng bất chính",
      "Bán dưới giá thành toàn bộ"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty A cho người đe dọa đại lý của công ty B để họ ngừng nhập hàng của B. Đây là hành vi nào?",
+   "a": "Ép buộc khách hàng, đối tác của doanh nghiệp khác."
+  },
+  "contrast": [
+   {
+    "with": "canh-tranh-khong-lanh-manh",
+    "text": "Bài này liệt kê sáu hành vi cụ thể; bài kia nêu định nghĩa chung để nhận ra chúng."
    }
   ]
  },

@@ -22,16 +22,20 @@
   "không giao dịch ngoài hệ thống"
  ],
  "memo": {
-  "hook": "KHỚP LỆNH tập trung hoặc THỎA THUẬN; KHÔNG giao dịch ngoài hệ thống.",
+  "gist": "Chứng khoán niêm yết, đăng ký giao dịch chỉ được mua bán qua hệ thống: khớp lệnh tập trung hoặc thỏa thuận.",
+  "kind": "compare",
+  "hook": "Mua bán phải qua quầy, không trao tay ngoài cổng.",
   "tree": [
    {
     "label": "Khớp lệnh tập trung",
+    "icon": "device",
     "children": [
      "Hệ thống tự ghép lệnh"
     ]
    },
    {
     "label": "Thỏa thuận",
+    "icon": "handshake",
     "children": [
      "Hai bên tự chốt giá, khối lượng",
      "Thường lô lớn"
@@ -39,9 +43,20 @@
    },
    {
     "label": "Cấm",
+    "icon": "ban",
     "children": [
      "Giao dịch ngoài hệ thống"
     ]
+   }
+  ],
+  "case": {
+   "q": "Hai người bạn mua bán 10.000 cổ phiếu niêm yết bằng hợp đồng viết tay, trả tiền mặt. Có hợp lệ không?",
+   "a": "Không; phải giao dịch thỏa thuận qua hệ thống."
+  },
+  "contrast": [
+   {
+    "with": "he-thong-giao-dich-chung-khoan",
+    "text": "Phương thức là cách mua bán; hệ thống là hạ tầng."
    }
   ]
  },

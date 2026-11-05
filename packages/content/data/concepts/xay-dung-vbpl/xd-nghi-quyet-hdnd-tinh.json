@@ -30,7 +30,7 @@
   "tree": [
    {
     "label": "Hội đồng nhân dân tỉnh",
-    "icon": "🗳️",
+    "icon": "vote",
     "children": [
      "Ra nghị quyết",
      "Chi tiết nội dung được giao",
@@ -39,7 +39,7 @@
    },
    {
     "label": "Ủy ban nhân dân tỉnh",
-    "icon": "🏢",
+    "icon": "company",
     "children": [
      "Ra quyết định",
      "Chi tiết, biện pháp thi hành"
@@ -47,7 +47,7 @@
    },
    {
     "label": "Chủ tịch Ủy ban nhân dân tỉnh",
-    "icon": "👤",
+    "icon": "person",
     "children": [
      "Quyết định chỉ đạo, phân cấp"
     ]

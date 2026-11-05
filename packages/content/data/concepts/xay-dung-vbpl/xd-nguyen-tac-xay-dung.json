@@ -31,14 +31,14 @@
   "tree": [
    {
     "label": "Hợp hiến",
-    "icon": "📜",
+    "icon": "scroll",
     "children": [
      "Không trái Hiến pháp"
     ]
    },
    {
     "label": "Hợp pháp",
-    "icon": "📏",
+    "icon": "measure",
     "children": [
      "Không trái văn bản cấp trên",
      "Đúng thẩm quyền, thủ tục"
@@ -46,14 +46,14 @@
    },
    {
     "label": "Thống nhất",
-    "icon": "🧩",
+    "icon": "puzzle",
     "children": [
      "Không mâu thuẫn, chồng chéo"
     ]
    },
    {
     "label": "Hợp điều ước",
-    "icon": "🌐",
+    "icon": "globe",
     "children": [
      "Không trái điều ước quốc tế"
     ]

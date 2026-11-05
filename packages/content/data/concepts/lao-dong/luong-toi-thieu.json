@@ -23,10 +23,13 @@
   "theo tháng, giờ"
  ],
  "memo": {
-  "hook": "Lương tối thiểu là MỨC SÀN, theo VÙNG, theo THÁNG và GIỜ.",
+  "gist": "Mức lương thấp nhất được trả cho công việc giản đơn nhất, chia theo vùng, theo tháng và giờ, do Chính phủ quyết.",
+  "kind": "tree",
+  "hook": "Như vạch đáy hồ bơi: không ai được trả dưới vạch đó.",
   "tree": [
    {
     "label": "Áp dụng",
+    "icon": "trash",
     "children": [
      "Công việc giản đơn nhất",
      "Điều kiện bình thường"
@@ -34,12 +37,14 @@
    },
    {
     "label": "Mục tiêu",
+    "icon": "home",
     "children": [
      "Mức sống tối thiểu của người lao động và gia đình"
     ]
    },
    {
     "label": "Cách xác lập",
+    "icon": "map",
     "children": [
      "Theo vùng",
      "Theo tháng, theo giờ"
@@ -47,9 +52,20 @@
    },
    {
     "label": "Ai quyết định",
+    "icon": "state",
     "children": [
      "Chính phủ, theo Hội đồng tiền lương"
     ]
+   }
+  ],
+  "case": {
+   "q": "Doanh nghiệp ở Hà Nội trả lương cho nhân viên tạp vụ. Mức thấp nhất là bao nhiêu?",
+   "a": "Không thấp hơn lương tối thiểu tháng của vùng I do Chính phủ công bố."
+  },
+  "contrast": [
+   {
+    "with": "tien-luong",
+    "text": "Lương tối thiểu là mức sàn; tiền lương là toàn bộ khoản được trả."
    }
   ]
  },

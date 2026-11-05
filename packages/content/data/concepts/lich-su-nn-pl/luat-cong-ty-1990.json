@@ -5,7 +5,7 @@
  "term": "Luật Công ty 1990: khái niệm công ty và tự do kinh doanh",
  "definition": "Công ty trách nhiệm hữu hạn và công ty cổ phần, gọi chung là công ty, là doanh nghiệp trong đó các thành viên cùng góp vốn, cùng chia nhau lợi nhuận, cùng chịu lỗ tương ứng với phần vốn góp và chỉ chịu trách nhiệm về các khoản nợ của công ty trong phạm vi phần vốn của mình góp vào công ty. (…) Nhà nước công nhận sự tồn tại lâu dài và phát triển của công ty, thừa nhận sự bình đẳng trước pháp luật của công ty với các doanh nghiệp khác và tính sinh lợi hợp pháp của việc kinh doanh.",
  "plain": "Luật Công ty (thông qua 21/12/1990, hiệu lực 15/4/1991) cùng Luật Doanh nghiệp tư nhân 1990 là những đạo luật đầu tiên thời ĐỔI MỚI về doanh nghiệp ngoài quốc doanh, thể chế hóa đường lối \"kinh tế hàng hóa nhiều thành phần\". Điểm cốt lõi: TRÁCH NHIỆM HỮU HẠN (thành viên chỉ chịu trách nhiệm trong phạm vi vốn góp); Nhà nước CÔNG NHẬN sự tồn tại lâu dài, BÌNH ĐẲNG với doanh nghiệp khác và TÍNH SINH LỢI HỢP PHÁP của kinh doanh; công ty có quyền TỰ DO KINH DOANH trong khuôn khổ pháp luật. Khi đó thành lập công ty vẫn phải XIN PHÉP Ủy ban nhân dân tỉnh rồi mới đăng ký kinh doanh (cơ chế \"xin – cho\", về sau Luật Doanh nghiệp 1999 bỏ).",
- "example": "Năm 1991, ba người góp vốn lập công ty TNHH: nếu công ty nợ quá khả năng trả, mỗi người chỉ mất phần vốn đã góp, không phải lấy tài sản riêng ra trả nợ thay công ty (Điều 2).",
+ "example": "Năm 1991, ba người góp vốn lập công ty trách nhiệm hữu hạn: nếu công ty nợ quá khả năng trả, mỗi người chỉ mất phần vốn đã góp, không phải lấy tài sản riêng trả nợ thay công ty (Điều 2).",
  "source": {
   "kind": "primary",
   "cite": "Luật Công ty 1990, Điều 2 và Điều 4",
@@ -25,10 +25,13 @@
  ],
  "note": "Luật Công ty 1990 đã hết hiệu lực (được thay bằng Luật Doanh nghiệp 1999); hiện hành là Luật Doanh nghiệp 59/2020/QH14 (đã được sửa đổi). Học để hiểu lịch sử.",
  "memo": {
-  "hook": "Luật Công ty 1990: TRÁCH NHIỆM HỮU HẠN lần đầu, nhưng vẫn phải XIN PHÉP thành lập.",
+  "gist": "Luật Công ty 1990 lần đầu cho thành viên chỉ chịu trách nhiệm trong phần vốn góp, nhưng vẫn phải xin phép thành lập.",
+  "kind": "tree",
+  "hook": "Mở cửa cho tư nhân làm ăn, nhưng cửa còn cài then xin phép.",
   "tree": [
    {
     "label": "Mốc",
+    "icon": "calendar",
     "children": [
      "21/12/1990",
      "Hiệu lực 15/4/1991"
@@ -36,6 +39,7 @@
    },
    {
     "label": "Điểm cốt lõi",
+    "icon": "shield",
     "children": [
      "Trách nhiệm hữu hạn",
      "Tính sinh lợi hợp pháp"
@@ -43,15 +47,27 @@
    },
    {
     "label": "Hạn chế",
+    "icon": "lock",
     "children": [
      "Phải xin phép thành lập"
     ]
    },
    {
     "label": "Ý nghĩa",
+    "icon": "plant",
     "children": [
      "Thời Đổi mới, nhiều thành phần"
     ]
+   }
+  ],
+  "case": {
+   "q": "Năm 1991, ba người góp vốn lập công ty trách nhiệm hữu hạn, công ty nợ quá khả năng trả. Họ mất gì?",
+   "a": "Chỉ mất phần vốn đã góp, không phải trả bằng tài sản riêng."
+  },
+  "contrast": [
+   {
+    "with": "ldn-1999",
+    "text": "Luật 1990 phải xin phép thành lập; Luật Doanh nghiệp 1999 chuyển sang đăng ký."
    }
   ]
  },

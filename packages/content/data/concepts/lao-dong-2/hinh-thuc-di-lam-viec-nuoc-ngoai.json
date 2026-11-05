@@ -5,7 +5,7 @@
  "term": "Các hình thức đi làm việc ở nước ngoài theo hợp đồng",
  "definition": "Hợp đồng đưa người lao động Việt Nam đi làm việc ở nước ngoài ký với đơn vị sự nghiệp để thực hiện thỏa thuận quốc tế. Hợp đồng hoặc thỏa thuận bằng văn bản về việc đưa người lao động Việt Nam đi làm việc ở nước ngoài ký với doanh nghiệp, tổ chức, cá nhân sau đây: a) Doanh nghiệp Việt Nam hoạt động dịch vụ đưa người lao động Việt Nam đi làm việc ở nước ngoài theo hợp đồng; b) Doanh nghiệp Việt Nam trúng thầu, nhận thầu công trình, dự án ở nước ngoài; (…) Hợp đồng lao động do người lao động Việt Nam trực tiếp giao kết với người sử dụng lao động ở nước ngoài.",
  "plain": "Ba hình thức: (1) qua ĐƠN VỊ SỰ NGHIỆP CÔNG LẬP thực hiện THỎA THUẬN QUỐC TẾ (ví dụ chương trình EPS với Hàn Quốc); (2) qua DOANH NGHIỆP, TỔ CHỨC, CÁ NHÂN Việt Nam: doanh nghiệp DỊCH VỤ (cần giấy phép, ký quỹ), doanh nghiệp trúng thầu, nhận thầu công trình ở nước ngoài, doanh nghiệp đưa đi đào tạo nâng cao tay nghề, tổ chức, cá nhân đầu tư ra nước ngoài; (3) người lao động TRỰC TIẾP giao kết HĐLĐ với người sử dụng lao động ở nước ngoài (phải đăng ký với cơ quan có thẩm quyền).",
- "example": "Anh T tự tìm việc và ký HĐLĐ trực tiếp với một công ty ở Đức: đây là hình thức thứ ba (khoản 3 Điều 5), không qua doanh nghiệp dịch vụ.",
+ "example": "Anh T tự tìm việc và ký hợp đồng lao động trực tiếp với một công ty ở Đức: đây là hình thức thứ ba (khoản 3 Điều 5), không qua doanh nghiệp dịch vụ.",
  "source": {
   "kind": "statute",
   "cite": "Điều 5 Luật Người lao động Việt Nam đi làm việc ở nước ngoài theo hợp đồng 2020 (69/2020/QH14)",
@@ -23,16 +23,20 @@
  ],
  "note": "Luật 69/2020/QH14 có hiệu lực từ 01/01/2022, thay thế Luật 72/2006/QH11; đã được sửa đổi bởi Luật 22/2026/QH16 (hiệu lực 01/3/2027, VBHN 145/2026/VBHN-LQ-VPQH); điều được trích chưa thay đổi đến 02/11/2026.",
  "memo": {
-  "hook": "Ba đường: qua NHÀ NƯỚC, qua DOANH NGHIỆP, hoặc TỰ ký.",
+  "gist": "Người Việt đi làm ở nước ngoài theo một trong ba đường: qua đơn vị nhà nước, qua doanh nghiệp, hoặc tự ký hợp đồng.",
+  "kind": "compare",
+  "hook": "Như đi du học: theo học bổng nhà nước, qua công ty tư vấn, hoặc tự nộp hồ sơ.",
   "tree": [
    {
     "label": "Đơn vị sự nghiệp",
+    "icon": "state",
     "children": [
      "Thực hiện thỏa thuận quốc tế"
     ]
    },
    {
     "label": "Doanh nghiệp, tổ chức",
+    "icon": "company",
     "children": [
      "Doanh nghiệp dịch vụ (giấy phép, ký quỹ)",
      "Trúng thầu công trình ở nước ngoài",
@@ -41,10 +45,21 @@
    },
    {
     "label": "Trực tiếp",
+    "icon": "pen",
     "children": [
      "Tự giao kết với chủ nước ngoài",
      "Phải đăng ký"
     ]
+   }
+  ],
+  "case": {
+   "q": "Anh T tự tìm việc và ký hợp đồng thẳng với một công ty ở Đức. Đây là hình thức nào?",
+   "a": "Tự giao kết trực tiếp với chủ nước ngoài; anh vẫn phải đăng ký."
+  },
+  "contrast": [
+   {
+    "with": "nld-di-lam-viec-nuoc-ngoai",
+    "text": "Bài này nói đi bằng đường nào; bài kia nói ai được coi là người lao động đi làm ở nước ngoài."
    }
   ]
  },

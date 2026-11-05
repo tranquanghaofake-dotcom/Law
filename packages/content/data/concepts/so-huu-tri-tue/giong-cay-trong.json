@@ -23,10 +23,13 @@
  ],
  "note": "Điều 158 có nội dung được sửa đổi, bổ sung bởi Luật 07/2022/QH15 (hiệu lực 01/01/2023) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
  "memo": {
-  "hook": "Năm điều kiện: MỚI – KHÁC BIỆT – ĐỒNG NHẤT – ỔN ĐỊNH – TÊN PHÙ HỢP.",
+  "gist": "Giống cây mới, khác biệt, đồng nhất, ổn định và có tên phù hợp thì được cấp bằng bảo hộ.",
+  "kind": "checklist",
+  "hook": "Năm phẩm chất của hạt giống quý: mới, lạ, đều, bền, có tên.",
   "tree": [
    {
     "label": "Nguồn gốc",
+    "icon": "plant",
     "children": [
      "Chọn tạo",
      "Phát hiện và phát triển"
@@ -34,6 +37,7 @@
    },
    {
     "label": "Điều kiện",
+    "icon": "check",
     "children": [
      "Tính mới, khác biệt",
      "Đồng nhất, ổn định",
@@ -42,9 +46,20 @@
    },
    {
     "label": "Văn bằng",
+    "icon": "scroll",
     "children": [
      "Bằng bảo hộ giống cây trồng"
     ]
+   }
+  ],
+  "case": {
+   "q": "Viện lúa tạo giống lúa mới năng suất cao, đồng đều, ổn định nhiều vụ, đặt tên riêng. Có được bảo hộ không?",
+   "a": "Có thể, nếu còn tính mới; được cấp Bằng bảo hộ giống cây trồng."
+  },
+  "contrast": [
+   {
+    "with": "sang-che",
+    "text": "Giống cây trồng là một nhánh riêng; sáng chế là giải pháp kỹ thuật."
    }
   ]
  },

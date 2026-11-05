@@ -24,10 +24,13 @@
  ],
  "note": "Luật Đất đai 1987 đã hết hiệu lực (thay bằng Luật Đất đai 1993); hiện hành là Luật Đất đai 31/2024/QH15. Học để hiểu lịch sử.",
  "memo": {
-  "hook": "Luật Đất đai 1987 CẤM mua bán đất; chỉ bán THÀNH QUẢ trên đất.",
+  "gist": "Luật Đất đai 1987 cấm mua bán đất; người dùng đất chỉ được bán nhà, cây trồng trên đất.",
+  "kind": "compare",
+  "hook": "Như thuê ruộng nhà nước: được bán lúa, không được bán ruộng.",
   "tree": [
    {
     "label": "Cấm",
+    "icon": "ban",
     "children": [
      "Mua bán đất",
      "Phát canh thu tô"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Được",
+    "icon": "check",
     "children": [
      "Bán thành quả lao động",
      "Kết quả đầu tư trên đất"
@@ -42,9 +46,20 @@
    },
    {
     "label": "Chuyển biến",
+    "icon": "cycle",
     "children": [
      "Luật 1993 cho chuyển nhượng quyền sử dụng"
     ]
+   }
+  ],
+  "case": {
+   "q": "Năm 1989 một người muốn bán mảnh đất được giao. Họ được bán gì?",
+   "a": "Chỉ bán nhà, cây trồng trên đất; đất phải để Nhà nước giao cho người khác."
+  },
+  "contrast": [
+   {
+    "with": "luat-dat-dai-1987",
+    "text": "Bài này nói lệnh cấm mua bán; bài kia nói cả đạo luật 1987."
    }
   ]
  },

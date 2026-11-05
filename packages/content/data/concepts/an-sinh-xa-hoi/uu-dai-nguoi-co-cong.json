@@ -5,7 +5,7 @@
  "term": "Người có công với cách mạng và thân nhân",
  "definition": "Người có công với cách mạng bao gồm: a) Người hoạt động cách mạng trước ngày 01 tháng 01 năm 1945; b) Người hoạt động cách mạng từ ngày 01 tháng 01 năm 1945 đến ngày khởi nghĩa tháng Tám năm 1945; c) Liệt sỹ; d) Bà mẹ Việt Nam anh hùng; (…) Thân nhân của người có công với cách mạng bao gồm cha đẻ, mẹ đẻ, vợ hoặc chồng, con (con đẻ, con nuôi), người có công nuôi liệt sỹ.",
  "plain": "12 nhóm người có công (khoản 1 Điều 3): hoạt động cách mạng trước 01/01/1945 (\"lão thành cách mạng\"); từ 01/01/1945 đến Cách mạng tháng Tám (\"tiền khởi nghĩa\"); liệt sỹ; Bà mẹ Việt Nam anh hùng; Anh hùng Lực lượng vũ trang nhân dân; Anh hùng Lao động trong kháng chiến; thương binh (cả thương binh loại B trước 31/12/1993) và người hưởng chính sách như thương binh; bệnh binh; người hoạt động kháng chiến nhiễm chất độc hóa học; người bị địch bắt tù, đày; người hoạt động kháng chiến; người có công giúp đỡ cách mạng. Ưu đãi xã hội là sự ĐỀN ĐÁP, không dựa trên đóng góp tài chính.",
- "example": "Mẹ của một liệt sỹ là thân nhân người có công (cha đẻ, mẹ đẻ của liệt sỹ) nên được hưởng chế độ ưu đãi như trợ cấp tuất, BHYT.",
+ "example": "Mẹ của một liệt sỹ là thân nhân người có công nên được hưởng chế độ ưu đãi như trợ cấp tuất, bảo hiểm y tế.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1, 2 Điều 3 Pháp lệnh Ưu đãi người có công với cách mạng 2020 (02/2020/UBTVQH14)",
@@ -25,10 +25,13 @@
  ],
  "note": "Pháp lệnh 02/2020/UBTVQH14 có hiệu lực từ 01/7/2021. Pháp lệnh sửa đổi 05/2026/UBTVQH16 (ban hành 08/7/2026) có hiệu lực từ 01/01/2027 — CHƯA áp dụng tại thời điểm đối chiếu; khi có hiệu lực, Điều 3 được viết lại (thêm định nghĩa người có công tại khoản 1, danh sách đối tượng chuyển sang khoản 2).",
  "memo": {
-  "hook": "ĐỀN ĐÁP, không cần đóng góp; 12 NHÓM người có công.",
+  "gist": "Người có công với cách mạng và người thân của họ được Nhà nước đền đáp, không cần đóng góp.",
+  "kind": "tree",
+  "hook": "Uống nước nhớ nguồn: người trồng cây được nhớ, cả gia đình họ cũng được nhớ.",
   "tree": [
    {
     "label": "Người có công",
+    "icon": "star",
     "children": [
      "12 nhóm",
      "Liệt sỹ, Bà mẹ Việt Nam anh hùng",
@@ -37,6 +40,7 @@
    },
    {
     "label": "Thân nhân",
+    "icon": "family",
     "children": [
      "Cha mẹ đẻ",
      "Vợ hoặc chồng",
@@ -46,9 +50,24 @@
    },
    {
     "label": "Bản chất",
+    "icon": "handshake",
     "children": [
      "Đền đáp, không cần đóng góp"
     ]
+   }
+  ],
+  "case": {
+   "q": "Mẹ đẻ của một liệt sỹ có được hưởng chế độ ưu đãi không?",
+   "a": "Có. Cha mẹ đẻ của liệt sỹ là thân nhân người có công."
+  },
+  "contrast": [
+   {
+    "with": "che-do-uu-dai-nguoi-co-cong",
+    "text": "Bài này nói ai được hưởng; bài chế độ ưu đãi nói được hưởng những gì."
+   },
+   {
+    "with": "tro-giup-xa-hoi",
+    "text": "Ưu đãi người có công vì công lao; trợ giúp xã hội vì hoàn cảnh khó khăn."
    }
   ]
  },

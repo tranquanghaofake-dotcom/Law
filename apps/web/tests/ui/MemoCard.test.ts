@@ -93,7 +93,7 @@ describe('MemoCard: Hiểu nhanh + hình theo loại khái niệm', () => {
 });
 
 describe('MemoCard: hình vẽ', () => {
-  const tree = [{ label: 'Hiến pháp', icon: '📜' }, { label: 'Luật', icon: '🏛️', children: ['Quốc hội'] }, { label: 'Nghị định', children: ['Chính phủ'] }];
+  const tree = [{ label: 'Hiến pháp', icon: 'scroll' as const }, { label: 'Luật', icon: 'state' as const, children: ['Quốc hội'] }, { label: 'Nghị định', children: ['Chính phủ'] }];
   it('bậc thang: mỗi bậc có một lát kim tự tháp SVG, rộng dần xuống dưới', () => {
     const { container } = render(MemoCard, { props: { concept: c({ memo: { gist: 'g', kind: 'ladder', hook: 'h', tree } }) } });
     const polys = [...container.querySelectorAll('.memo-ladder svg.memo-tier polygon')];
@@ -107,8 +107,19 @@ describe('MemoCard: hình vẽ', () => {
   });
   it('biểu tượng nhánh hiện trước nhãn, ẩn với trình đọc màn hình', () => {
     const { container } = render(MemoCard, { props: { concept: c({ memo: { gist: 'g', kind: 'tree', hook: 'h', tree } }) } });
-    const icons = [...container.querySelectorAll('.memo-icon')];
-    expect(icons.map((i) => i.textContent)).toEqual(['📜', '🏛️']);
+    const icons = [...container.querySelectorAll('.memo-rows .memo-icon')];
+    expect(icons.map((i) => i.tagName.toLowerCase())).toEqual(['svg', 'svg']);
+    expect(icons.map((i) => i.getAttribute('data-icon'))).toEqual(['scroll', 'state']);
+    expect(container.textContent).not.toMatch(/\p{Extended_Pictographic}/u);
     expect(icons[0].getAttribute('aria-hidden')).toBe('true');
+  });
+});
+
+describe('Bộ icon thẻ', () => {
+  it('mọi tên icon trong schema đều có hình vẽ (ít nhất một nét)', async () => {
+    const { MEMO_ICONS } = await import('@luyen-luat/content');
+    const { MEMO_ICON_ART } = await import('$lib/art/memoIcons');
+    for (const n of MEMO_ICONS) expect(MEMO_ICON_ART[n]?.length, n).toBeGreaterThan(0);
+    expect(Object.keys(MEMO_ICON_ART).sort()).toEqual([...MEMO_ICONS].sort());
   });
 });

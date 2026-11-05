@@ -22,10 +22,13 @@
   "vụ án và việc dân sự"
  ],
  "memo": {
-  "hook": "Tòa KHÔNG được từ chối vì CHƯA CÓ ĐIỀU LUẬT.",
+  "gist": "Ai bị xâm phạm quyền lợi đều được đưa việc ra Tòa; Tòa không được từ chối chỉ vì chưa có điều luật.",
+  "kind": "tree",
+  "hook": "Như bác sĩ trực cấp cứu: bệnh lạ chưa có trong sách vẫn phải chữa.",
   "tree": [
    {
     "label": "Quyền",
+    "icon": "person",
     "children": [
      "Khởi kiện vụ án",
      "Yêu cầu giải quyết việc dân sự"
@@ -33,6 +36,7 @@
    },
    {
     "label": "Chưa có luật thì áp dụng",
+    "icon": "book",
     "children": [
      "Tập quán",
      "Tương tự pháp luật",
@@ -42,10 +46,21 @@
    },
    {
     "label": "Phân biệt",
+    "icon": "compare",
     "children": [
      "Vụ án: có tranh chấp",
      "Việc: không tranh chấp"
     ]
+   }
+  ],
+  "case": {
+   "q": "Tranh chấp về một loại tài sản số mới chưa có điều luật riêng. Tòa có được trả đơn vì chưa có luật không?",
+   "a": "Không. Tòa phải giải quyết bằng tập quán, tương tự pháp luật, nguyên tắc chung hoặc lẽ công bằng."
+  },
+  "contrast": [
+   {
+    "with": "quyen-quyet-dinh-tu-dinh-doat",
+    "text": "Quyền yêu cầu là được đưa việc ra Tòa; tự định đoạt là quyết kiện gì, rút hay thỏa thuận."
    }
   ]
  },

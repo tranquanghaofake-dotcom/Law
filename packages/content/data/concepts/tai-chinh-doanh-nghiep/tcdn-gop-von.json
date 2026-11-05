@@ -25,10 +25,13 @@
  ],
  "note": "Luật Doanh nghiệp 59/2020/QH14 có hiệu lực từ 01/01/2021, thay thế Luật Doanh nghiệp 2014 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 03/2022/QH15 và Luật 76/2025/QH15 (hiệu lực 01/7/2025) — văn bản hợp nhất 67/VBHN-VPQH 2025.",
  "memo": {
-  "hook": "Góp vốn: khi THÀNH LẬP hoặc GÓP THÊM; tài sản phải ĐỊNH GIÁ ĐƯỢC.",
+  "gist": "Góp vốn là đưa tài sản vào để tạo vốn điều lệ, khi lập công ty hoặc góp thêm sau đó.",
+  "kind": "tree",
+  "hook": "Như góp gạo nấu nồi chung: gạo, thịt hay củi đều được, miễn quy ra tiền được.",
   "tree": [
    {
     "label": "Khi nào",
+    "icon": "clock",
     "children": [
      "Thành lập công ty",
      "Góp thêm vốn điều lệ"
@@ -36,6 +39,7 @@
    },
    {
     "label": "Tài sản góp",
+    "icon": "box",
     "children": [
      "Tiền đồng, ngoại tệ, vàng",
      "Quyền sử dụng đất",
@@ -45,9 +49,20 @@
    },
    {
     "label": "Ai được góp",
+    "icon": "person",
     "children": [
      "Chủ sở hữu hoặc người có quyền hợp pháp"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ông C góp vốn bằng quyền sử dụng đất và một bằng sáng chế. Có hợp lệ không?",
+   "a": "Hợp lệ, nhưng phải định giá thành tiền đồng."
+  },
+  "contrast": [
+   {
+    "with": "tcdn-von-dieu-le",
+    "text": "Góp vốn là hành động đưa tài sản vào; vốn điều lệ là tổng số đã góp hoặc cam kết góp."
    }
   ]
  },

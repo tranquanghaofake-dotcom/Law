@@ -24,10 +24,13 @@
   "Chủ tịch Ủy ban phê duyệt bằng văn bản"
  ],
  "memo": {
-  "hook": "Ủy ban được xem DÒNG TIỀN ngân hàng và DỮ LIỆU CUỘC GỌI, nhưng chỉ khi có DẤU HIỆU vi phạm và Chủ tịch DUYỆT.",
+  "gist": "Khi có dấu hiệu vi phạm và Chủ tịch duyệt, Ủy ban được đòi sao kê ngân hàng và dữ liệu cuộc gọi.",
+  "kind": "checklist",
+  "hook": "Được mở sổ ngân hàng và nhật ký điện thoại, nhưng phải có chữ ký người đứng đầu.",
   "tree": [
    {
     "label": "Được yêu cầu",
+    "icon": "bank",
     "children": [
      "Ngân hàng: giao dịch tài khoản",
      "Nhà mạng: dữ liệu cuộc gọi"
@@ -35,11 +38,22 @@
    },
    {
     "label": "Điều kiện",
+    "icon": "pen",
     "children": [
      "Có dấu hiệu vi phạm Điều 12",
      "Chủ tịch Ủy ban phê duyệt",
      "Bằng văn bản nêu rõ mục đích"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ngân hàng nhận công văn của Ủy ban yêu cầu sao kê của 5 khách nghi thao túng, có Chủ tịch duyệt. Ngân hàng phải làm gì?",
+   "a": "Phải cung cấp."
+  },
+  "contrast": [
+   {
+    "with": "thanh-tra-chung-khoan",
+    "text": "Bài này nói quyền xin thông tin; thanh tra chứng khoán là cả hoạt động thanh tra."
    }
   ]
  },

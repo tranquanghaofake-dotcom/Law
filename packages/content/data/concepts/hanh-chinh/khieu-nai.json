@@ -5,7 +5,7 @@
  "term": "Khiếu nại và thời hiệu khiếu nại",
  "definition": "Khiếu nại là việc cơ quan, tổ chức, cá nhân theo thủ tục do Luật này quy định đề nghị cơ quan, tổ chức, cá nhân có thẩm quyền xem xét lại quyết định hành chính, hành vi hành chính của cơ quan hành chính nhà nước, của người có thẩm quyền trong cơ quan hành chính nhà nước hoặc quyết định kỷ luật cán bộ, công chức khi có căn cứ cho rằng quyết định hoặc hành vi đó là trái pháp luật, xâm phạm quyền, lợi ích hợp pháp của mình. (…) Thời hiệu khiếu nại là 90 ngày, kể từ ngày nhận được quyết định hành chính hoặc biết được quyết định hành chính, hành vi hành chính.",
  "plain": "Khiếu nại bảo vệ QUYỀN, LỢI ÍCH CỦA CHÍNH MÌNH (khác tố cáo). Đối tượng: quyết định hành chính, hành vi hành chính, quyết định kỷ luật cán bộ, công chức. Trình tự (Điều 7): khiếu nại LẦN ĐẦU đến người ra quyết định/cơ quan có người có hành vi → LẦN HAI đến thủ trưởng cấp trên trực tiếp → khởi kiện vụ án hành chính; ở mỗi bước có thể chọn khởi kiện ra Tòa án. Thời hiệu 90 ngày; thời gian trở ngại khách quan (ốm đau, thiên tai…) không tính.",
- "example": "Bà B nhận quyết định thu hồi đất ngày 01/3 và cho rằng mức bồi thường sai luật: bà có 90 ngày để khiếu nại lần đầu đến Chủ tịch UBND đã ra quyết định, hoặc khởi kiện tại Tòa án.",
+ "example": "Bà B nhận quyết định thu hồi đất ngày 1 tháng 3 và cho rằng mức bồi thường sai luật: bà có 90 ngày để khiếu nại lần đầu đến Chủ tịch Ủy ban nhân dân đã ra quyết định, hoặc khởi kiện tại Tòa.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1 Điều 2; Điều 9 Luật Khiếu nại 2011 (sửa đổi, bổ sung đến năm 2025)",
@@ -24,10 +24,13 @@
  ],
  "note": "Luật 136/2025/QH15 sửa đổi Luật Tiếp công dân, Luật Khiếu nại, Luật Tố cáo có hiệu lực từ 01/7/2026; văn bản hợp nhất đã cập nhật.",
  "memo": {
-  "hook": "KHIẾU NẠI bảo vệ quyền của MÌNH: lần đầu → lần hai → khởi kiện.",
+  "gist": "Người bị ảnh hưởng đề nghị cơ quan xem lại quyết định, hành vi hành chính xâm phạm quyền của mình, trong 90 ngày.",
+  "kind": "steps",
+  "hook": "Khiếu nại là kêu oan cho chính mình.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "person",
     "children": [
      "Đề nghị xem xét lại",
      "Bảo vệ quyền lợi của mình"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Đối tượng",
+    "icon": "doc",
     "children": [
      "Quyết định hành chính",
      "Hành vi hành chính",
@@ -43,6 +47,7 @@
    },
    {
     "label": "Trình tự",
+    "icon": "cycle",
     "children": [
      "Lần đầu",
      "Lần hai",
@@ -51,9 +56,20 @@
    },
    {
     "label": "Thời hiệu",
+    "icon": "clock",
     "children": [
      "90 ngày"
     ]
+   }
+  ],
+  "case": {
+   "q": "Bà B nhận quyết định thu hồi đất, cho rằng bồi thường sai. Bà có bao lâu để khiếu nại?",
+   "a": "90 ngày, gửi người đã ra quyết định; hoặc khởi kiện tại Tòa."
+  },
+  "contrast": [
+   {
+    "with": "to-cao",
+    "text": "Khiếu nại đòi quyền của mình; tố cáo báo vi phạm của bất kỳ ai."
    }
   ]
  },

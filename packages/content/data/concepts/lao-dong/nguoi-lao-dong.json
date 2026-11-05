@@ -23,10 +23,13 @@
   "đủ 15 tuổi"
  ],
  "memo": {
-  "hook": "Ba dấu hiệu: THỎA THUẬN – TRẢ LƯƠNG – chịu QUẢN LÝ; tuổi tối thiểu 15.",
+  "gist": "Người lao động là người từ đủ 15 tuổi làm việc theo thỏa thuận, được trả lương và chịu quản lý.",
+  "kind": "checklist",
+  "hook": "Ba dấu: có thỏa thuận, có lương, có sếp.",
   "tree": [
    {
     "label": "Dấu hiệu",
+    "icon": "check",
     "children": [
      "Làm việc theo thỏa thuận",
      "Được trả lương",
@@ -35,6 +38,7 @@
    },
    {
     "label": "Độ tuổi",
+    "icon": "calendar",
     "children": [
      "Đủ 15 tuổi",
      "Trừ lao động chưa thành niên"
@@ -42,10 +46,21 @@
    },
    {
     "label": "Người sử dụng",
+    "icon": "company",
     "children": [
      "Doanh nghiệp, tổ chức",
      "Hộ gia đình, cá nhân"
     ]
+   }
+  ],
+  "case": {
+   "q": "Hộ gia đình thuê người giúp việc, trả lương hằng tháng. Hộ gia đình là gì trong quan hệ này?",
+   "a": "Người sử dụng lao động."
+  },
+  "contrast": [
+   {
+    "with": "quan-he-lao-dong",
+    "text": "Người lao động là một bên; quan hệ lao động là mối quan hệ giữa hai bên."
    }
   ]
  },

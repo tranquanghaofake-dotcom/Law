@@ -22,10 +22,13 @@
   "đơn vị hành chính lãnh thổ"
  ],
  "memo": {
-  "hook": "ĐƠN NHẤT: một chủ quyền, một hệ thống; LIÊN BANG: hai hệ thống.",
+  "gist": "Đơn nhất là một chủ quyền, một hệ thống luật; liên bang có hai tầng: hệ thống liên bang và hệ thống từng bang.",
+  "kind": "compare",
+  "hook": "Một nhà một bếp, hay nhiều căn hộ mỗi căn một bếp riêng.",
   "tree": [
    {
     "label": "Đơn nhất",
+    "icon": "home",
     "children": [
      "Một chủ quyền, một hiến pháp",
      "Địa phương không có chủ quyền",
@@ -34,10 +37,21 @@
    },
    {
     "label": "Liên bang",
+    "icon": "village",
     "children": [
      "Bang có chủ quyền nhất định",
      "Hai hệ thống cơ quan, pháp luật"
     ]
+   }
+  ],
+  "case": {
+   "q": "Tỉnh Nghệ An không có hiến pháp riêng. Việt Nam có cấu trúc gì?",
+   "a": "Nhà nước đơn nhất."
+  },
+  "contrast": [
+   {
+    "with": "llc-chinh-the",
+    "text": "Cấu trúc nói nhà nước chia lãnh thổ thế nào; chính thể nói quyền lực cao nhất trao cho ai."
    }
   ]
  },

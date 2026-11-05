@@ -22,10 +22,13 @@
   "không có Tòa án Hiến pháp"
  ],
  "memo": {
-  "hook": "Bảo vệ Hiến pháp là việc của TẤT CẢ, cách làm do LUẬT định.",
+  "gist": "Quốc hội, Chủ tịch nước, Chính phủ, Tòa án, Viện kiểm sát và toàn dân đều có trách nhiệm bảo vệ Hiến pháp.",
+  "kind": "tree",
+  "hook": "Ngôi nhà chung, ai sống trong đó cũng phải giữ.",
   "tree": [
    {
     "label": "Ai bảo vệ",
+    "icon": "people",
     "children": [
      "Quốc hội và cơ quan của Quốc hội",
      "Chủ tịch nước, Chính phủ",
@@ -35,15 +38,27 @@
    },
    {
     "label": "Cơ chế",
+    "icon": "scroll",
     "children": [
      "Do luật định"
     ]
    },
    {
     "label": "Đặc thù Việt Nam",
+    "icon": "flag",
     "children": [
      "Không có Tòa án Hiến pháp riêng"
     ]
+   }
+  ],
+  "case": {
+   "q": "Văn bản của Chính phủ trái Hiến pháp. Ủy ban thường vụ Quốc hội làm gì?",
+   "a": "Đình chỉ thi hành và trình Quốc hội bãi bỏ."
+  },
+  "contrast": [
+   {
+    "with": "hieu-luc-phap-ly-toi-cao",
+    "text": "Bảo vệ là hành động giữ Hiến pháp; hiệu lực tối cao là vị trí cao nhất của nó."
    }
   ]
  },

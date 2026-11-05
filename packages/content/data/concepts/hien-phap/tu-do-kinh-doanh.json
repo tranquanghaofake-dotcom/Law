@@ -23,33 +23,49 @@
   "ngành nghề pháp luật không cấm"
  ],
  "memo": {
-  "hook": "MỌI NGƯỜI được kinh doanh ngành nghề pháp luật KHÔNG CẤM.",
+  "gist": "Mọi người được tự do kinh doanh trong những ngành nghề pháp luật không cấm.",
+  "kind": "tree",
+  "hook": "Đường nào không có biển cấm thì cứ đi.",
   "tree": [
    {
     "label": "Chủ thể",
+    "icon": "people",
     "children": [
      "Mọi người"
     ]
    },
    {
     "label": "Phạm vi",
+    "icon": "map",
     "children": [
      "Ngành nghề pháp luật không cấm"
     ]
    },
    {
     "label": "Hạn chế",
+    "icon": "ban",
     "children": [
      "Chỉ bằng luật"
     ]
    },
    {
     "label": "Lịch sử",
+    "icon": "calendar",
     "children": [
      "Luật Công ty 1990: xin phép",
      "Luật Doanh nghiệp 1999: đăng ký",
      "Hiến pháp 2013: Điều 33"
     ]
+   }
+  ],
+  "case": {
+   "q": "Một người muốn mở dịch vụ mới chưa có trong danh mục ngành nghề nào. Có được kinh doanh không?",
+   "a": "Có, nếu pháp luật không cấm."
+  },
+  "contrast": [
+   {
+    "with": "kinh-te-thi-truong-dinh-huong-xhcn",
+    "text": "Tự do kinh doanh là quyền cá nhân; kinh tế thị trường là mô hình chung."
    }
   ]
  },

@@ -25,10 +25,13 @@
  ],
  "note": "Luật Các tổ chức tín dụng 32/2024/QH15 có hiệu lực từ 01/7/2024, thay thế Luật 47/2010/QH12 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 96/2025/QH15 (hiệu lực 15/10/2025) và Luật 23/2026/QH16 (hiệu lực 01/12/2026, chỉ bổ sung một điểm tại Điều 49) — các khoản Điều 4 được trích không bị sửa.",
  "memo": {
-  "hook": "Cho vay: tiền có MỤC ĐÍCH XÁC ĐỊNH, THỜI HẠN, trả ĐỦ GỐC + LÃI.",
+  "gist": "Ngân hàng giao tiền cho khách dùng vào mục đích đã thỏa thuận, trong thời hạn nhất định, rồi trả đủ gốc và lãi.",
+  "kind": "checklist",
+  "hook": "Tiền đi vay có nhãn dán: mượn để mua nhà thì không được đem đi chơi.",
   "tree": [
    {
     "label": "Dấu hiệu",
+    "icon": "check",
     "children": [
      "Giao hoặc cam kết giao tiền",
      "Mục đích xác định",
@@ -38,9 +41,20 @@
    },
    {
     "label": "Vi phạm",
+    "icon": "warn",
     "children": [
      "Dùng vốn sai mục đích"
     ]
+   }
+  ],
+  "case": {
+   "q": "Anh E vay 1 tỷ để mua nhà nhưng đem đầu tư tiền mã hóa. Có vi phạm không?",
+   "a": "Có. Dùng vốn sai mục đích vay đã thỏa thuận."
+  },
+  "contrast": [
+   {
+    "with": "cap-tin-dung",
+    "text": "Cho vay là một nghiệp vụ; cấp tín dụng là nhóm lớn gồm cả bảo lãnh, chiết khấu."
    }
   ]
  },

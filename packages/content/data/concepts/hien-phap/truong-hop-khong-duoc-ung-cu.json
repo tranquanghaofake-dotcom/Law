@@ -24,10 +24,13 @@
  ],
  "note": "Luật 83/2025/QH15 (hiệu lực 01/7/2025) thay từ \"thị trấn\" bằng \"đặc khu\" tại khoản 5 Điều 37, phù hợp với mô hình chính quyền địa phương 2 cấp (tỉnh, xã). Giáo trình in trước 2025 còn ghi \"giáo dục tại xã, phường, thị trấn\".",
  "memo": {
-  "hook": "Bị KHỞI TỐ vẫn có thể được BẦU cử nhưng KHÔNG được ỨNG cử.",
+  "gist": "Người bị tước quyền ứng cử, đang chấp hành án, bị khởi tố, hay mất năng lực hành vi thì không được ứng cử.",
+  "kind": "tree",
+  "hook": "Vẫn được đi bầu, nhưng không được đứng lên cho người khác bầu.",
   "tree": [
    {
     "label": "Theo Tòa án",
+    "icon": "scales",
     "children": [
      "Bị tước quyền ứng cử",
      "Đang chấp hành án tù"
@@ -35,12 +38,14 @@
    },
    {
     "label": "Năng lực",
+    "icon": "idea",
     "children": [
      "Bị hạn chế hoặc mất năng lực hành vi"
     ]
    },
    {
     "label": "Hình sự",
+    "icon": "shield",
     "children": [
      "Đang bị khởi tố bị can",
      "Đang chấp hành bản án",
@@ -49,9 +54,20 @@
    },
    {
     "label": "Hành chính",
+    "icon": "list",
     "children": [
      "Đang chấp hành biện pháp xử lý hành chính"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ông B bị khởi tố bị can trước hạn nộp hồ sơ, chưa có bản án. Có được ứng cử không?",
+   "a": "Không, vì luật không chờ kết tội."
+  },
+  "contrast": [
+   {
+    "with": "quyen-bau-cu-ung-cu",
+    "text": "Bài này là ngoại lệ không được ứng cử; bài kia là điều kiện tuổi để bầu, ứng cử."
    }
   ]
  },

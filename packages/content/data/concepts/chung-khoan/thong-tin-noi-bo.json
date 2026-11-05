@@ -21,10 +21,13 @@
   "ảnh hưởng lớn đến giá"
  ],
  "memo": {
-  "hook": "Thông tin nội bộ: CHƯA CÔNG BỐ + có thể ẢNH HƯỞNG LỚN đến giá.",
+  "gist": "Thông tin chưa công bố, có thể ảnh hưởng lớn đến giá chứng khoán; công bố rồi thì không còn là nội bộ.",
+  "kind": "tree",
+  "hook": "Bí mật nóng sốt chưa lên báo.",
   "tree": [
    {
     "label": "Dấu hiệu",
+    "icon": "lock",
     "children": [
      "Chưa được công bố",
      "Ảnh hưởng lớn đến giá"
@@ -32,6 +35,7 @@
    },
    {
     "label": "Ví dụ",
+    "icon": "announce",
     "children": [
      "Kết quả kinh doanh đột biến",
      "Sắp sáp nhập"
@@ -39,15 +43,27 @@
    },
    {
     "label": "Hết là nội bộ",
+    "icon": "announce",
     "children": [
      "Khi đã công bố"
     ]
    },
    {
     "label": "Phân biệt",
+    "icon": "compare",
     "children": [
      "Người nội bộ"
     ]
+   }
+  ],
+  "case": {
+   "q": "Kiểm toán viên biết công ty sắp báo lỗ lớn, chưa công bố. Đây có phải thông tin nội bộ không?",
+   "a": "Có."
+  },
+  "contrast": [
+   {
+    "with": "giao-dich-noi-gian",
+    "text": "Thông tin nội bộ là tin; nội gián là việc dùng tin đó để giao dịch."
    }
   ]
  },

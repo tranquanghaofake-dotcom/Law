@@ -26,17 +26,21 @@
  ],
  "note": "Luật Hôn nhân và gia đình 1959 đã hết hiệu lực; hiện hành là Luật Hôn nhân và gia đình 52/2014/QH13. Học để hiểu lịch sử.",
  "memo": {
-  "hook": "Bốn nguyên tắc: TỰ DO TIẾN BỘ – MỘT VỢ MỘT CHỒNG – NAM NỮ BÌNH ĐẲNG – BẢO VỆ phụ nữ, con.",
+  "gist": "Đạo luật hôn nhân đầu tiên có bốn nguyên tắc: tự do, một vợ một chồng, nam nữ bình đẳng, bảo vệ mẹ con.",
+  "kind": "tree",
+  "hook": "Xóa vợ lẽ, xóa ép duyên, xóa thách cưới.",
   "tree": [
    {
     "label": "Mốc",
+    "icon": "calendar",
     "children": [
-     "29/12/1959",
+     "29 tháng 12 năm 1959",
      "Đạo luật hôn nhân gia đình đầu tiên"
     ]
    },
    {
     "label": "Nguyên tắc",
+    "icon": "scroll",
     "children": [
      "Tự do, tiến bộ",
      "Một vợ một chồng",
@@ -46,9 +50,20 @@
    },
    {
     "label": "Xóa bỏ",
+    "icon": "ban",
     "children": [
      "Đa thê, vợ lẽ"
     ]
+   }
+  ],
+  "case": {
+   "q": "Năm 1960, gia đình ép con gái 16 tuổi lấy chồng và đòi nhiều sính lễ. Vi phạm gì?",
+   "a": "Vi phạm cấm tảo hôn, cưỡng ép kết hôn và yêu sách của cải."
+  },
+  "contrast": [
+   {
+    "with": "hngd-1959-ket-hon-ly-hon",
+    "text": "Nguyên tắc là định hướng chung; kết hôn, ly hôn là quy định cụ thể."
    }
   ]
  },

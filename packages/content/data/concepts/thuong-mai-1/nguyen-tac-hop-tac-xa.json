@@ -5,7 +5,7 @@
  "term": "Nguyên tắc tổ chức, quản lý và hoạt động của hợp tác xã",
  "definition": "Tự nguyện tham gia và mở rộng kết nạp thành viên. Cá nhân, tổ chức tự nguyện thành lập, gia nhập, ra khỏi tổ hợp tác, hợp tác xã, liên hiệp hợp tác xã. (…) Dân chủ, bình đẳng trong tổ chức, quản lý. (…) Thành viên chính thức của hợp tác xã, liên hiệp hợp tác xã được tham gia vào công việc tổ chức, quản lý và hoạt động của hợp tác xã, liên hiệp hợp tác xã một cách dân chủ, bình đẳng, không phụ thuộc vào phần vốn góp. Trách nhiệm tham gia hoạt động kinh tế của thành viên hợp tác xã, liên hiệp hợp tác xã. Thành viên chính thức góp vốn khi gia nhập và được cùng kiểm soát vốn, quỹ và tài sản của hợp tác xã, liên hiệp hợp tác xã; được phân phối thu nhập chủ yếu theo mức độ sử dụng sản phẩm, dịch vụ hoặc mức độ đóng góp sức lao động. Tự chủ và tự chịu trách nhiệm.",
  "plain": "Bảy nguyên tắc (Điều 8): tự nguyện, mở rộng kết nạp; DÂN CHỦ, BÌNH ĐẲNG không phụ thuộc vốn góp; trách nhiệm tham gia hoạt động kinh tế; tự chủ, tự chịu trách nhiệm; giáo dục, đào tạo, thông tin; hợp tác, liên kết; quan tâm phát triển cộng đồng. Điểm khác căn bản với công ty: phân phối thu nhập CHỦ YẾU theo MỨC ĐỘ SỬ DỤNG sản phẩm, dịch vụ hoặc sức lao động, không theo tỷ lệ vốn.",
- "example": "Thành viên góp nhiều vốn nhất của hợp tác xã đòi chia lãi theo tỷ lệ vốn góp như cổ đông: trái nguyên tắc vì thu nhập chủ yếu phân phối theo mức độ sử dụng dịch vụ của HTX.",
+ "example": "Thành viên góp nhiều vốn nhất của hợp tác xã đòi chia lãi theo tỷ lệ vốn như cổ đông: trái nguyên tắc vì thu nhập chủ yếu chia theo mức độ sử dụng dịch vụ của hợp tác xã.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1, 2, 3, 4 Điều 8 Luật Hợp tác xã 2023 (sửa đổi, bổ sung năm 2025)",
@@ -23,10 +23,13 @@
   "theo mức độ sử dụng sản phẩm, dịch vụ"
  ],
  "memo": {
-  "hook": "HTX: MỖI người MỘT phiếu; chia lợi theo MỨC ĐỘ SỬ DỤNG dịch vụ, không theo vốn.",
+  "gist": "Hợp tác xã tự nguyện, dân chủ, mỗi người một phiếu, chia lời theo mức dùng dịch vụ chứ không theo vốn.",
+  "kind": "compare",
+  "hook": "Như bếp ăn chung: ăn nhiều thì góp nhiều, ai cũng một tiếng nói.",
   "tree": [
    {
     "label": "Nguyên tắc",
+    "icon": "handshake",
     "children": [
      "Tự nguyện, mở rộng kết nạp",
      "Dân chủ, bình đẳng",
@@ -35,10 +38,21 @@
    },
    {
     "label": "Khác công ty",
+    "icon": "compare",
     "children": [
      "Biểu quyết không theo vốn",
      "Chia theo mức độ sử dụng dịch vụ"
     ]
+   }
+  ],
+  "case": {
+   "q": "Thành viên góp nhiều vốn nhất đòi chia lãi theo tỷ lệ vốn như cổ đông. Có đúng không?",
+   "a": "Không. Lợi nhuận chủ yếu chia theo mức độ sử dụng dịch vụ."
+  },
+  "contrast": [
+   {
+    "with": "von-gop-bieu-quyet-htx",
+    "text": "Nguyên tắc là cách vận hành chung; vốn góp, biểu quyết là con số cụ thể: trần 30%, mỗi người một phiếu."
    }
   ]
  },

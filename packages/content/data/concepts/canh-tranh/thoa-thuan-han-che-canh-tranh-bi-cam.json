@@ -23,10 +23,13 @@
   "tác động đáng kể"
  ],
  "memo": {
-  "hook": "CẤM TUYỆT ĐỐI (không cần tác động) và CẤM CÓ ĐIỀU KIỆN (tác động đáng kể).",
+  "gist": "Có thỏa thuận bị cấm ngay, không cần chứng minh hại; có thỏa thuận chỉ bị cấm khi gây hại đáng kể.",
+  "kind": "compare",
+  "hook": "Như biển cấm và biển hạn chế: biển đỏ là cấm hẳn, biển vàng tùy tình hình.",
   "tree": [
    {
     "label": "Cấm tuyệt đối",
+    "icon": "ban",
     "children": [
      "Ấn định giá, chia thị trường (cùng thị trường)",
      "Thông đồng đấu thầu",
@@ -35,15 +38,27 @@
    },
    {
     "label": "Cấm có điều kiện",
+    "icon": "warn",
     "children": [
      "Khi tác động hạn chế đáng kể"
     ]
    },
    {
     "label": "Luật 2018",
+    "icon": "calendar",
     "children": [
      "Bỏ ngưỡng thị phần 30%"
     ]
+   }
+  ],
+  "case": {
+   "q": "Hai công ty xây dựng hẹn để A thắng thầu, B nộp giá cao làm nền. Có cần chứng minh tác động đáng kể không?",
+   "a": "Không. Thông đồng đấu thầu bị cấm tuyệt đối."
+  },
+  "contrast": [
+   {
+    "with": "mien-tru-thoa-thuan",
+    "text": "Bài này nói thỏa thuận nào bị cấm; miễn trừ là ngoại lệ cho phép một số thỏa thuận bị cấm."
    }
   ]
  },

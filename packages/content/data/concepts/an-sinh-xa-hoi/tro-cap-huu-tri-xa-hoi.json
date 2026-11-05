@@ -5,7 +5,7 @@
  "term": "Trợ cấp hưu trí xã hội",
  "definition": "Trợ cấp hưu trí xã hội là loại hình bảo hiểm xã hội do ngân sách nhà nước bảo đảm cho người cao tuổi đủ điều kiện theo quy định của Luật này. (…) Công dân Việt Nam được hưởng trợ cấp hưu trí xã hội khi có đủ các điều kiện sau đây: a) Từ đủ 75 tuổi trở lên; b) Không hưởng lương hưu hoặc trợ cấp bảo hiểm xã hội hằng tháng, trừ trường hợp khác theo quy định của Chính phủ; c) Có văn bản đề nghị hưởng trợ cấp hưu trí xã hội.",
  "plain": "Loại hình MỚI của Luật 2024, là \"tầng\" thấp nhất của hệ thống BHXH đa tầng: KHÔNG ĐÓNG, do NGÂN SÁCH bảo đảm. Đủ 75 tuổi trở lên; người từ đủ 70 đến dưới 75 tuổi thuộc HỘ NGHÈO, CẬN NGHÈO cũng được hưởng (khoản 2 Điều 21). Chế độ: trợ cấp hằng tháng, hỗ trợ mai táng, BHYT do ngân sách đóng (khoản 1 Điều 4). Ủy ban Thường vụ Quốc hội có thể giảm dần độ tuổi hưởng.",
- "example": "Cụ ông 76 tuổi, làm nông cả đời, không có lương hưu: có văn bản đề nghị thì được hưởng trợ cấp hưu trí xã hội hằng tháng và thẻ BHYT do ngân sách đóng.",
+ "example": "Cụ ông 76 tuổi, làm nông cả đời, không có lương hưu: có văn bản đề nghị thì được hưởng trợ cấp hưu trí xã hội hằng tháng và thẻ bảo hiểm y tế do ngân sách đóng.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 2 Điều 3; khoản 1 Điều 21 Luật Bảo hiểm xã hội 2024 (sửa đổi, bổ sung năm 2025)",
@@ -25,10 +25,13 @@
  ],
  "note": "Luật Bảo hiểm xã hội 41/2024/QH15 có hiệu lực từ 01/7/2025, thay thế Luật Bảo hiểm xã hội 58/2014/QH13 (đề cương HLU còn dẫn luật 2014).",
  "memo": {
-  "hook": "KHÔNG ĐÓNG, NGÂN SÁCH bảo đảm; từ đủ 75 tuổi.",
+  "gist": "Người từ 75 tuổi không có lương hưu được ngân sách trả tiền hằng tháng, dù chưa từng đóng bảo hiểm.",
+  "kind": "checklist",
+  "hook": "Không đóng mà vẫn có: như món quà Nhà nước dành cho tuổi già.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "new",
     "children": [
      "Loại hình mới của Luật 2024",
      "Ngân sách nhà nước bảo đảm"
@@ -36,6 +39,7 @@
    },
    {
     "label": "Điều kiện",
+    "icon": "check",
     "children": [
      "Từ đủ 75 tuổi",
      "70–75 tuổi thuộc hộ nghèo, cận nghèo",
@@ -44,11 +48,26 @@
    },
    {
     "label": "Chế độ",
+    "icon": "gift",
     "children": [
      "Trợ cấp hằng tháng",
      "Hỗ trợ mai táng",
      "Bảo hiểm y tế"
     ]
+   }
+  ],
+  "case": {
+   "q": "Cụ ông 76 tuổi làm nông cả đời, không có lương hưu. Có được hưởng trợ cấp hưu trí xã hội không?",
+   "a": "Có, nếu có văn bản đề nghị; được tiền hằng tháng và thẻ bảo hiểm y tế do ngân sách đóng."
+  },
+  "contrast": [
+   {
+    "with": "dieu-kien-huong-luong-huu",
+    "text": "Trợ cấp hưu trí xã hội không cần đóng, chỉ cần tuổi; lương hưu đòi đủ tuổi và đã đóng ít nhất 15 năm."
+   },
+   {
+    "with": "tro-giup-xa-hoi",
+    "text": "Trợ cấp hưu trí xã hội dựa vào tuổi; trợ giúp xã hội dựa vào hoàn cảnh khó khăn."
    }
   ]
  },

@@ -1873,7 +1873,7 @@ select.qz-sort { min-height: var(--ctl-h); padding: 0 var(--sp-3); border: 1px s
 /* hình vẽ đợt 2: mũi tên nối bước, biểu tượng nhánh, tình huống hỏi–đáp, câu phân biệt */
 .memo-steps { gap: 14px; }
 .memo-arrow { position: absolute; top: calc(100% + 0px); left: 50%; transform: translateX(-50%); color: var(--seal); font-size: 12px; line-height: 14px; font-weight: 800; }
-.memo-icon { display: inline-block; margin-right: .3em; font-size: 1.05em; line-height: 1; }
+.memo-icon { display: inline-block; flex: none; width: 1.25em; height: 1.25em; margin-right: .35em; vertical-align: -.2em; color: var(--seal); }
 .intro-case { margin: var(--sp-2) 0; padding: var(--sp-2); border: 1px dashed color-mix(in srgb, var(--seal) 45%, var(--line)); border-radius: var(--r-sm); background: color-mix(in srgb, var(--seal) 5%, var(--card)); }
 .intro-case-q, .intro-case-a { margin: 0; line-height: 1.5; }
 .intro-case-a { margin-top: var(--sp-1); color: var(--ink); animation: memo-in .32s var(--ease-out) both; }

@@ -5,7 +5,7 @@
  "term": "Mức hưởng bảo hiểm y tế",
  "definition": "Người tham gia bảo hiểm y tế khi khám bệnh, chữa bệnh theo quy định tại Điều 26 và Điều 27 của Luật này được quỹ bảo hiểm y tế thanh toán chi phí khám bệnh, chữa bệnh trong phạm vi được hưởng với mức hưởng như sau: (…) đ) 95% chi phí khám bệnh, chữa bệnh đối với các đối tượng quy định tại điểm a khoản 2, điểm k khoản 3, điểm a và điểm g khoản 4 Điều 12 của Luật này; e) 80% chi phí khám bệnh, chữa bệnh đối với đối tượng khác. Người thuộc nhiều đối tượng tham gia bảo hiểm y tế thì được hưởng quyền lợi bảo hiểm y tế theo đối tượng có quyền lợi cao nhất.",
  "plain": "Ba mức: 100% (theo điểm a: người có công, trẻ em dưới 6 tuổi, người thuộc hộ nghèo, người hưởng trợ cấp xã hội hằng tháng…; chi phí một lần dưới mức Chính phủ quy định; khám ở cơ sở cấp ban đầu; tham gia 5 năm liên tục và cùng chi trả trong năm vượt 6 lần mức tham chiếu), 95% (theo điểm đ: người hưởng lương hưu, trợ cấp mất sức lao động hằng tháng; thân nhân người có công theo điểm k khoản 3 Điều 12; người thuộc hộ cận nghèo; người dân tộc thiểu số theo điểm g khoản 4 Điều 12), 80% (đối tượng khác — phần lớn người lao động, sinh viên). Khám sai cơ sở đăng ký, không đúng quy định chuyển người bệnh thì được thanh toán theo tỷ lệ giảm (khoản 4). Thuộc nhiều đối tượng thì hưởng theo QUYỀN LỢI CAO NHẤT.",
- "example": "Một người vừa là thương binh vừa là người lao động có thẻ BHYT: được hưởng theo đối tượng có quyền lợi cao nhất (100% của người có công), không cộng dồn hai thẻ.",
+ "example": "Một người vừa là thương binh vừa là người lao động có thẻ bảo hiểm y tế: được hưởng theo nhóm có quyền lợi cao nhất (100% của người có công), không cộng dồn hai thẻ.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1, 2 Điều 22 Luật Bảo hiểm y tế (sửa đổi, bổ sung đến năm 2025)",
@@ -24,10 +24,13 @@
  ],
  "note": "Luật Bảo hiểm y tế 25/2008/QH12 được sửa đổi nhiều lần, gần nhất bởi Luật 51/2024/QH15 (hiệu lực 01/7/2025) và Luật Phòng bệnh 114/2025/QH15 (hiệu lực 01/7/2026); văn bản hợp nhất 40/VBHN-VPQH 2026.",
  "memo": {
-  "hook": "Ba mức: 100% – 95% – 80%, trong PHẠM VI được hưởng.",
+  "gist": "Quỹ bảo hiểm y tế trả 100%, 95% hoặc 80% chi phí khám chữa bệnh, tùy người bệnh thuộc nhóm nào.",
+  "kind": "ladder",
+  "hook": "Ba nấc giảm dần: người có công và trẻ nhỏ cao nhất, người hưu trí ở giữa, còn lại thấp nhất.",
   "tree": [
    {
     "label": "100%",
+    "icon": "star",
     "children": [
      "Người có công, trẻ dưới 6 tuổi",
      "Hộ nghèo",
@@ -36,6 +39,7 @@
    },
    {
     "label": "95%",
+    "icon": "star",
     "children": [
      "Người hưởng lương hưu",
      "Hộ cận nghèo"
@@ -43,15 +47,27 @@
    },
    {
     "label": "80%",
+    "icon": "star",
     "children": [
      "Các đối tượng còn lại"
     ]
    },
    {
     "label": "Điều kiện",
+    "icon": "health",
     "children": [
      "Đúng quy định chuyển người bệnh"
     ]
+   }
+  ],
+  "case": {
+   "q": "Một người vừa là thương binh vừa đi làm, có hai loại thẻ. Được hưởng mức nào?",
+   "a": "Mức của nhóm có quyền lợi cao nhất, tức 100% của người có công; không cộng dồn hai thẻ."
+  },
+  "contrast": [
+   {
+    "with": "bao-hiem-y-te",
+    "text": "Mức hưởng là tỉ lệ quỹ trả; bảo hiểm y tế là cả chế độ gồm ai tham gia, đóng bao nhiêu, hưởng gì."
    }
   ]
  },

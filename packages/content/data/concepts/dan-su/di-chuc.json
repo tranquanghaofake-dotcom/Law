@@ -24,10 +24,13 @@
   "không bị lừa dối, đe dọa, cưỡng ép"
  ],
  "memo": {
-  "hook": "Di chúc hợp pháp: MINH MẪN – TỰ NGUYỆN – NỘI DUNG hợp pháp – HÌNH THỨC đúng.",
+  "gist": "Di chúc là ý muốn để lại tài sản sau khi chết; hợp pháp khi minh mẫn, tự nguyện, nội dung và hình thức đúng.",
+  "kind": "checklist",
+  "hook": "Bốn chữ đúng: đúng đầu óc, đúng ý mình, đúng luật, đúng mẫu.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "scroll",
     "children": [
      "Hành vi pháp lý đơn phương",
      "Hiệu lực khi mở thừa kế"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Điều kiện",
+    "icon": "check",
     "children": [
      "Minh mẫn, sáng suốt",
      "Tự nguyện",
@@ -44,9 +48,20 @@
    },
    {
     "label": "15 đến dưới 18 tuổi",
+    "icon": "child",
     "children": [
      "Văn bản, cha mẹ đồng ý"
     ]
+   }
+  ],
+  "case": {
+   "q": "Học sinh 16 tuổi lập di chúc miệng để lại xe đạp cho bạn. Có hợp pháp không?",
+   "a": "Không. Người từ 15 đến dưới 18 tuổi phải lập bằng văn bản và có cha mẹ đồng ý."
+  },
+  "contrast": [
+   {
+    "with": "thua-ke-theo-phap-luat",
+    "text": "Di chúc là người chết tự chia; thừa kế theo pháp luật là luật chia khi không có di chúc hợp lệ."
    }
   ]
  },

@@ -5,7 +5,7 @@
  "term": "Thuế tiêu thụ đặc biệt",
  "definition": "Hàng hóa bao gồm: a) Thuốc lá theo quy định của Luật Phòng, chống tác hại của thuốc lá; b) Rượu theo quy định của Luật Phòng, chống tác hại của rượu, bia; c) Bia theo quy định của Luật Phòng, chống tác hại của rượu, bia; (…) Người nộp thuế tiêu thụ đặc biệt là tổ chức, cá nhân sản xuất, gia công, nhập khẩu hàng hóa và kinh doanh dịch vụ thuộc đối tượng chịu thuế tiêu thụ đặc biệt.",
  "plain": "Mục đích: ĐIỀU TIẾT TIÊU DÙNG hàng hóa, dịch vụ không khuyến khích (thuốc lá, rượu bia, xe dưới 24 chỗ, xe mô tô trên 125 cm3, máy bay, du thuyền, xăng, điều hòa 24.000–90.000 BTU, bài lá, vàng mã, NƯỚC GIẢI KHÁT có hàm lượng đường trên 5g/100mL — MỚI) và dịch vụ (vũ trường, mát-xa, karaoke, casino, kinh doanh đặt cược, golf, xổ số…). Chỉ thu MỘT LẦN ở khâu sản xuất, gia công, nhập khẩu hoặc cung ứng dịch vụ (không thu ở khâu bán buôn, bán lẻ). Thuế gián thu, có phương pháp tính theo tỷ lệ % và tuyệt đối (Điều 5).",
- "example": "Nhà máy bia sản xuất và bán cho đại lý: nhà máy nộp thuế TTĐB một lần; đại lý bán lẻ không nộp TTĐB nữa (chỉ nộp GTGT).",
+ "example": "Nhà máy bia sản xuất và bán cho đại lý: nhà máy nộp thuế tiêu thụ đặc biệt một lần; đại lý bán lẻ không nộp loại thuế này nữa, chỉ nộp thuế giá trị gia tăng.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1 Điều 2; khoản 1 Điều 4 Luật Thuế tiêu thụ đặc biệt 2025 (66/2025/QH15)",
@@ -25,16 +25,20 @@
  ],
  "note": "Luật Thuế TTĐB 66/2025/QH15 có hiệu lực từ 01/01/2026, thay thế Luật 27/2008/QH12; Luật 09/2026/QH16 sửa thuế suất xe ô tô chạy bằng pin tại Biểu thuế (Điều 8); Điều 2, 4 không đổi.",
  "memo": {
-  "hook": "ĐIỀU TIẾT tiêu dùng hàng không khuyến khích; thu MỘT LẦN.",
+  "gist": "Thuế đánh thêm vào hàng, dịch vụ Nhà nước muốn hạn chế như thuốc lá, rượu bia, ô tô, karaoke; thu một lần.",
+  "kind": "tree",
+  "hook": "Như phí phạt nhẹ cho thói quen xấu: muốn dùng thì trả thêm.",
   "tree": [
    {
     "label": "Mục đích",
+    "icon": "target",
     "children": [
      "Điều tiết tiêu dùng"
     ]
    },
    {
     "label": "Hàng hóa",
+    "icon": "warn",
     "children": [
      "Thuốc lá, rượu, bia",
      "Ô tô dưới 24 chỗ",
@@ -43,6 +47,7 @@
    },
    {
     "label": "Dịch vụ",
+    "icon": "announce",
     "children": [
      "Karaoke, casino",
      "Đặt cược, golf"
@@ -50,9 +55,20 @@
    },
    {
     "label": "Thu",
+    "icon": "n1",
     "children": [
      "Một lần khi sản xuất, nhập khẩu"
     ]
+   }
+  ],
+  "case": {
+   "q": "Nhà máy bia bán bia cho đại lý. Đại lý bán lẻ có phải nộp thuế tiêu thụ đặc biệt nữa không?",
+   "a": "Không. Nhà máy đã nộp một lần; đại lý chỉ nộp thuế giá trị gia tăng."
+  },
+  "contrast": [
+   {
+    "with": "thue-gia-tri-gia-tang",
+    "text": "Thuế tiêu thụ đặc biệt thu một lần ở khâu sản xuất, nhập khẩu; thuế giá trị gia tăng thu ở mọi khâu."
    }
   ]
  },

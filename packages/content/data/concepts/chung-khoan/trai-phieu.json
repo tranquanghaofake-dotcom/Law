@@ -5,7 +5,7 @@
  "term": "Trái phiếu",
  "definition": "Trái phiếu là loại chứng khoán xác nhận quyền và lợi ích hợp pháp của người sở hữu đối với một phần nợ của tổ chức phát hành.",
  "plain": "Mua trái phiếu là cho tổ chức phát hành vay tiền. Người giữ trái phiếu là chủ nợ: được trả lãi và gốc theo điều kiện phát hành, không phải đồng chủ sở hữu.",
- "example": "Một công ty bất động sản phát hành trái phiếu kỳ hạn 3 năm, lãi 10%/năm. Người mua là chủ nợ; đến hạn công ty phải trả gốc dù làm ăn lãi hay lỗ.",
+ "example": "Một công ty bất động sản phát hành trái phiếu 3 năm, lãi 10% mỗi năm. Người mua là chủ nợ; đến hạn công ty phải trả gốc dù làm ăn lãi hay lỗ.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 3 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)",
@@ -22,16 +22,20 @@
   "tổ chức phát hành"
  ],
  "memo": {
-  "hook": "Trái phiếu = CHO VAY: người giữ là CHỦ NỢ, nhận lãi và gốc.",
+  "gist": "Trái phiếu xác nhận người mua cho vay; người giữ là chủ nợ, nhận lãi và gốc dù công ty lời hay lỗ.",
+  "kind": "tree",
+  "hook": "Giấy biên nhận cho vay, không phải vé làm chủ.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "doc",
     "children": [
      "Phần nợ của tổ chức phát hành"
     ]
    },
    {
     "label": "Người giữ",
+    "icon": "person",
     "children": [
      "Chủ nợ",
      "Nhận lãi và gốc"
@@ -39,9 +43,20 @@
    },
    {
     "label": "Không phải",
+    "icon": "ban",
     "children": [
      "Đồng chủ sở hữu"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty phát hành trái phiếu 3 năm lãi 10% làm ăn thua lỗ. Đến hạn có phải trả gốc không?",
+   "a": "Có, vì người mua là chủ nợ."
+  },
+  "contrast": [
+   {
+    "with": "co-phieu",
+    "text": "Trái phiếu là cho vay; cổ phiếu là làm chủ."
    }
   ]
  },

@@ -23,10 +23,13 @@
   "hài hòa lợi ích"
  ],
  "memo": {
-  "hook": "Định giá theo THỊ TRƯỜNG; Luật 2024 BỎ khung giá đất.",
+  "gist": "Định giá đất phải theo giá thị trường, đúng phương pháp, công khai, và người định giá phải độc lập với người thẩm định.",
+  "kind": "tree",
+  "hook": "Không ai vừa đá bóng vừa thổi còi: người tính giá và người duyệt giá phải tách nhau.",
   "tree": [
    {
     "label": "Nguyên tắc",
+    "icon": "measure",
     "children": [
      "Theo thị trường",
      "Đúng phương pháp, trình tự",
@@ -36,12 +39,23 @@
    },
    {
     "label": "Phương pháp",
+    "icon": "calc",
     "children": [
      "So sánh",
      "Thu nhập",
      "Thặng dư",
      "Hệ số điều chỉnh"
     ]
+   }
+  ],
+  "case": {
+   "q": "Đơn vị tư vấn vừa xác định giá đất, có được ngồi luôn trong Hội đồng thẩm định giá đó không?",
+   "a": "Không. Phải bảo đảm độc lập giữa tổ chức tư vấn và Hội đồng thẩm định."
+  },
+  "contrast": [
+   {
+    "with": "gia-dat",
+    "text": "Nguyên tắc định giá là cách tính; giá đất là con số tính ra."
    }
   ]
  },

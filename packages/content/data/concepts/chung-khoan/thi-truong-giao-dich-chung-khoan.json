@@ -5,7 +5,7 @@
  "term": "Thị trường giao dịch chứng khoán",
  "definition": "Thị trường giao dịch chứng khoán là địa điểm hoặc hình thức trao đổi thông tin để tập hợp lệnh mua, bán và giao dịch chứng khoán.",
  "plain": "Thị trường không nhất thiết là một \"cái sàn\" vật lý: chỉ cần có nơi hoặc cách thức tập hợp lệnh mua, bán. Về lý luận, thị trường chứng khoán thường được chia thành thị trường sơ cấp (phát hành, chào bán lần đầu) và thứ cấp (mua bán lại); khoản 27 nói về nơi giao dịch, tức thị trường thứ cấp.",
- "example": "Hệ thống giao dịch của Sở giao dịch chứng khoán Việt Nam và công ty con (HOSE, HNX) là thị trường giao dịch chứng khoán; app của công ty chứng khoán chỉ là kênh chuyển lệnh vào đó.",
+ "example": "Hệ thống giao dịch của Sở giao dịch chứng khoán Việt Nam và các công ty con là thị trường giao dịch chứng khoán; ứng dụng của công ty chứng khoán chỉ là kênh chuyển lệnh vào đó.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 27 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)",
@@ -22,10 +22,13 @@
   "thị trường thứ cấp"
  ],
  "memo": {
-  "hook": "Thị trường không nhất thiết là SÀN VẬT LÝ: chỉ cần nơi/cách TẬP HỢP LỆNH.",
+  "gist": "Thị trường giao dịch chứng khoán là nơi hoặc cách thức tập hợp lệnh mua bán, không nhất thiết là sàn vật lý.",
+  "kind": "compare",
+  "hook": "Chợ có thể không có mái, chỉ cần có người mua gặp người bán.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "state",
     "children": [
      "Địa điểm hoặc hình thức",
      "Tập hợp lệnh mua, bán"
@@ -33,10 +36,21 @@
    },
    {
     "label": "Lý luận",
+    "icon": "book",
     "children": [
      "Sơ cấp: phát hành",
      "Thứ cấp: mua bán lại"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ứng dụng của công ty chứng khoán có phải là thị trường giao dịch không?",
+   "a": "Không, chỉ là kênh chuyển lệnh vào hệ thống của Sở."
+  },
+  "contrast": [
+   {
+    "with": "nguyen-tac-hoat-dong-chung-khoan",
+    "text": "Thị trường là nơi giao dịch; nguyên tắc là luật chơi trong đó."
    }
   ]
  },

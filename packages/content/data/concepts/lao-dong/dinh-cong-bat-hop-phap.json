@@ -23,32 +23,48 @@
   "nơi không được đình công"
  ],
  "memo": {
-  "hook": "Bất hợp pháp nếu SAI LOẠI tranh chấp, SAI NGƯỜI tổ chức, SAI THỦ TỤC hoặc ĐANG giải quyết.",
+  "gist": "Đình công là trái luật nếu sai loại tranh chấp, sai người tổ chức, sai thủ tục, hoặc khi tranh chấp đang được giải quyết.",
+  "kind": "checklist",
+  "hook": "Bốn chữ sai: sai lý do, sai người, sai cách, sai lúc.",
   "tree": [
    {
     "label": "Sai căn cứ",
+    "icon": "ban",
     "children": [
      "Không thuộc trường hợp được đình công"
     ]
    },
    {
     "label": "Sai chủ thể",
+    "icon": "people",
     "children": [
      "Không do tổ chức đại diện có quyền"
     ]
    },
    {
     "label": "Sai thủ tục",
+    "icon": "list",
     "children": [
      "Không lấy ý kiến, thông báo trước 05 ngày"
     ]
    },
    {
     "label": "Sai thời điểm, nơi",
+    "icon": "clock",
     "children": [
      "Tranh chấp đang được giải quyết",
      "Nơi không được đình công"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công đoàn tổ chức đình công khi Hội đồng trọng tài đang giải quyết tranh chấp. Có hợp pháp không?",
+   "a": "Không. Đình công khi tranh chấp đang được giải quyết là bất hợp pháp."
+  },
+  "contrast": [
+   {
+    "with": "dinh-cong",
+    "text": "Bài này liệt kê khi nào đình công trái luật; bài đình công nói nó là gì."
    }
   ]
  },

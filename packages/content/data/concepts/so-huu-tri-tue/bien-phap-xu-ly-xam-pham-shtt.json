@@ -23,10 +23,13 @@
   "tự bảo vệ"
  ],
  "memo": {
-  "hook": "Ba biện pháp: DÂN SỰ (bồi thường) – HÀNH CHÍNH (phạt) – HÌNH SỰ (tội phạm).",
+  "gist": "Xâm phạm sở hữu trí tuệ có thể bị xử lý dân sự đòi bồi thường, phạt hành chính, hoặc truy cứu hình sự.",
+  "kind": "compare",
+  "hook": "Ba cánh cửa: Tòa dân sự đòi tiền, cơ quan quản lý phạt, công an bắt tội.",
   "tree": [
    {
     "label": "Dân sự",
+    "icon": "scales",
     "children": [
      "Tòa án buộc chấm dứt",
      "Xin lỗi, bồi thường, tiêu hủy"
@@ -34,6 +37,7 @@
    },
    {
     "label": "Hành chính",
+    "icon": "state",
     "children": [
      "Xử phạt hành vi gây thiệt hại",
      "Hàng giả mạo"
@@ -41,6 +45,7 @@
    },
    {
     "label": "Hình sự",
+    "icon": "shield",
     "children": [
      "Tội xâm phạm quyền tác giả",
      "Tội xâm phạm sở hữu công nghiệp"
@@ -48,10 +53,21 @@
    },
    {
     "label": "Bổ trợ",
+    "icon": "tool",
     "children": [
      "Biện pháp khẩn cấp tạm thời",
      "Kiểm soát biên giới"
     ]
+   }
+  ],
+  "case": {
+   "q": "Chủ nhãn hiệu muốn được bồi thường vì cửa hàng bán túi giả. Phải chọn biện pháp nào?",
+   "a": "Biện pháp dân sự: khởi kiện ra Tòa."
+  },
+  "contrast": [
+   {
+    "with": "xam-pham-quyen-tac-gia",
+    "text": "Biện pháp xử lý là cách đối phó; xâm phạm quyền tác giả là hành vi cần đối phó."
    }
   ]
  },

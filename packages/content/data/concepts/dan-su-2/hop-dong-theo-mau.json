@@ -23,10 +23,13 @@
   "điều khoản miễn trách nhiệm không có hiệu lực"
  ],
  "memo": {
-  "hook": "Do MỘT BÊN soạn; điều khoản mơ hồ giải thích BẤT LỢI cho bên soạn.",
+  "gist": "Hợp đồng một bên soạn sẵn, bên kia nhận hoặc không; điều khoản mơ hồ hiểu theo hướng có lợi cho bên kia.",
+  "kind": "tree",
+  "hook": "Ai cầm bút soạn thì người đó chịu thiệt khi câu chữ không rõ.",
   "tree": [
    {
     "label": "Đặc điểm",
+    "icon": "doc",
     "children": [
      "Một bên soạn sẵn",
      "Bên kia chấp nhận toàn bộ"
@@ -34,6 +37,7 @@
    },
    {
     "label": "Bảo vệ bên yếu",
+    "icon": "shield",
     "children": [
      "Phải công khai",
      "Giải thích bất lợi cho bên soạn",
@@ -42,9 +46,20 @@
    },
    {
     "label": "Ví dụ",
+    "icon": "idea",
     "children": [
      "Điện, nước, viễn thông"
     ]
+   }
+  ],
+  "case": {
+   "q": "Hợp đồng gửi xe in sẵn ghi \"bãi xe không chịu trách nhiệm nếu mất xe\". Điều khoản này có hiệu lực không?",
+   "a": "Không. Điều khoản miễn trách nhiệm của bên soạn mẫu không có hiệu lực."
+  },
+  "contrast": [
+   {
+    "with": "hop-dong",
+    "text": "Hợp đồng theo mẫu là một kiểu hợp đồng; hợp đồng là sự thỏa thuận nói chung."
    }
   ]
  },

@@ -5,7 +5,7 @@
  "term": "Tư vấn đầu tư chứng khoán",
  "definition": "Tư vấn đầu tư chứng khoán là việc cung cấp cho khách hàng kết quả phân tích, báo cáo phân tích và đưa ra khuyến nghị liên quan đến việc mua, bán, nắm giữ chứng khoán.",
  "plain": "Tư vấn = phân tích + khuyến nghị; KHÁCH HÀNG tự quyết định. Đây là nghiệp vụ chung của cả công ty chứng khoán và công ty quản lý quỹ, và là nghiệp vụ duy nhất chi nhánh công ty chứng khoán nước ngoài tại Việt Nam được làm (khoản 7 Điều 86). Khuyến nghị phải phù hợp khả năng chịu rủi ro của khách (khoản 6 Điều 89); không được bảo đảm lợi nhuận (khoản 1 Điều 91).",
- "example": "Công ty chứng khoán gửi khách báo cáo phân tích ngành ngân hàng kèm khuyến nghị \"MUA\" một mã cổ phiếu: đó là tư vấn đầu tư. Khách tự quyết định có mua hay không.",
+ "example": "Công ty chứng khoán gửi khách báo cáo phân tích ngành ngân hàng kèm khuyến nghị mua một mã cổ phiếu: đó là tư vấn đầu tư. Khách tự quyết định có mua hay không.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 32 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)",
@@ -23,10 +23,13 @@
   "nghiệp vụ chung"
  ],
  "memo": {
-  "hook": "Tư vấn = PHÂN TÍCH + KHUYẾN NGHỊ; KHÁCH tự quyết định.",
+  "gist": "Phân tích, đưa ra báo cáo và khuyến nghị mua, bán, giữ chứng khoán; quyết định cuối cùng là của khách.",
+  "kind": "tree",
+  "hook": "Bác sĩ kê đơn, bệnh nhân quyết uống hay không.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "chart",
     "children": [
      "Phân tích, báo cáo",
      "Khuyến nghị mua, bán, nắm giữ"
@@ -34,17 +37,29 @@
    },
    {
     "label": "Quyết định",
+    "icon": "person",
     "children": [
      "Khách hàng"
     ]
    },
    {
     "label": "Ai được làm",
+    "icon": "company",
     "children": [
      "Công ty chứng khoán",
      "Công ty quản lý quỹ",
      "Chi nhánh nước ngoài"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty chứng khoán gửi báo cáo khuyến nghị mua một mã. Ai quyết định có mua không?",
+   "a": "Khách hàng."
+  },
+  "contrast": [
+   {
+    "with": "quan-ly-danh-muc-dau-tu",
+    "text": "Tư vấn chỉ khuyến nghị; quản lý danh mục thì quyết định thay khách theo ủy thác."
    }
   ]
  },

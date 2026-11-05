@@ -24,16 +24,20 @@
   "lập pháp, hành pháp, tư pháp"
  ],
  "memo": {
-  "hook": "THỐNG NHẤT nhưng PHÂN CÔNG, PHỐI HỢP, KIỂM SOÁT; không tam quyền phân lập.",
+  "gist": "Quyền lực nhà nước thống nhất, được phân công cho Quốc hội, Chính phủ, Tòa án, phối hợp và kiểm soát lẫn nhau.",
+  "kind": "tree",
+  "hook": "Một bàn tay, mỗi ngón một việc, ngón này giữ ngón kia.",
   "tree": [
    {
     "label": "Quyền lực",
+    "icon": "fist",
     "children": [
      "Thống nhất, thuộc về Nhân dân"
     ]
    },
    {
     "label": "Phân công",
+    "icon": "list",
     "children": [
      "Lập pháp: Quốc hội",
      "Hành pháp: Chính phủ",
@@ -42,10 +46,21 @@
    },
    {
     "label": "Giữa các cơ quan",
+    "icon": "cycle",
     "children": [
      "Phối hợp",
      "Kiểm soát"
     ]
+   }
+  ],
+  "case": {
+   "q": "Quốc hội giám sát tối cao Chính phủ thể hiện yếu tố nào?",
+   "a": "Kiểm soát quyền lực."
+  },
+  "contrast": [
+   {
+    "with": "chu-quyen-nhan-dan",
+    "text": "Quyền lực thống nhất nói chia việc; chủ quyền Nhân dân nói quyền lực từ đâu."
    }
   ]
  },

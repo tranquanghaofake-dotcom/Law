@@ -22,10 +22,13 @@
   "bảo vệ pháp luật"
  ],
  "memo": {
-  "hook": "Viện kiểm sát: CÔNG TỐ + KIỂM SÁT; bảo vệ PHÁP LUẬT, không xét xử.",
+  "gist": "Viện kiểm sát thực hành quyền công tố và kiểm sát hoạt động tư pháp, bảo vệ pháp luật; không xét xử.",
+  "kind": "tree",
+  "hook": "Người buộc tội và người giám sát cuộc chơi tư pháp.",
   "tree": [
    {
     "label": "Chức năng 1",
+    "icon": "announce",
     "children": [
      "Thực hành quyền công tố",
      "Buộc tội nhân danh Nhà nước"
@@ -33,6 +36,7 @@
    },
    {
     "label": "Chức năng 2",
+    "icon": "eye",
     "children": [
      "Kiểm sát hoạt động tư pháp",
      "Điều tra, xét xử, thi hành án"
@@ -40,15 +44,27 @@
    },
    {
     "label": "Nhiệm vụ trung tâm",
+    "icon": "target",
     "children": [
      "Bảo vệ pháp luật"
     ]
    },
    {
     "label": "Phân biệt",
+    "icon": "compare",
     "children": [
      "Tòa án bảo vệ công lý"
     ]
+   }
+  ],
+  "case": {
+   "q": "Kiểm sát viên đọc cáo trạng tại phiên tòa hình sự là thực hiện chức năng gì?",
+   "a": "Thực hành quyền công tố."
+  },
+  "contrast": [
+   {
+    "with": "toa-an-vi-tri",
+    "text": "Viện kiểm sát công tố, kiểm sát; Tòa án xét xử."
    }
   ]
  },

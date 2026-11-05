@@ -5,7 +5,7 @@
  "term": "Quyền thừa kế và thời điểm, địa điểm mở thừa kế",
  "definition": "Cá nhân có quyền lập di chúc để định đoạt tài sản của mình; để lại tài sản của mình cho người thừa kế theo pháp luật; hưởng di sản theo di chúc hoặc theo pháp luật. (…) Thời điểm mở thừa kế là thời điểm người có tài sản chết. (…) Địa điểm mở thừa kế là nơi cư trú cuối cùng của người để lại di sản; nếu không xác định được nơi cư trú cuối cùng thì địa điểm mở thừa kế là nơi có toàn bộ di sản hoặc nơi có phần lớn di sản.",
  "plain": "THỜI ĐIỂM mở thừa kế (người có tài sản chết; nếu Tòa án tuyên bố chết thì là ngày được xác định trong quyết định) rất quan trọng: xác định người thừa kế (phải còn sống vào thời điểm đó, Điều 613), di sản, thời hiệu. ĐỊA ĐIỂM: nơi cư trú cuối cùng; không xác định được thì nơi có toàn bộ hoặc phần lớn di sản. Mọi cá nhân bình đẳng về quyền thừa kế (Điều 610).",
- "example": "Ông A chết ngày 1/3/2026 tại nhà ở Hà Nội: thời điểm mở thừa kế là 1/3/2026, địa điểm là nơi cư trú cuối cùng của ông ở Hà Nội; thời hiệu chia di sản tính từ ngày này.",
+ "example": "Ông A chết ngày 1 tháng 3 năm 2026 tại nhà ở Hà Nội: thời điểm mở thừa kế là ngày đó, địa điểm là nơi cư trú cuối cùng ở Hà Nội; thời hiệu chia di sản tính từ ngày này.",
  "source": {
   "kind": "statute",
   "cite": "Điều 609, khoản 1, khoản 2 Điều 611 Bộ luật Dân sự 2015",
@@ -24,10 +24,13 @@
   "bình đẳng"
  ],
  "memo": {
-  "hook": "Mở thừa kế: lúc người có tài sản CHẾT, tại nơi CƯ TRÚ CUỐI CÙNG.",
+  "gist": "Ai cũng có quyền để lại và hưởng di sản; thừa kế mở lúc người có tài sản chết, tại nơi cư trú cuối cùng.",
+  "kind": "tree",
+  "hook": "Đồng hồ thừa kế bấm giờ đúng lúc người mất.",
   "tree": [
    {
     "label": "Quyền",
+    "icon": "scroll",
     "children": [
      "Lập di chúc",
      "Để lại theo pháp luật",
@@ -36,16 +39,28 @@
    },
    {
     "label": "Thời điểm",
+    "icon": "clock",
     "children": [
      "Khi người có tài sản chết"
     ]
    },
    {
     "label": "Địa điểm",
+    "icon": "pin",
     "children": [
      "Nơi cư trú cuối cùng",
      "Không rõ: nơi có phần lớn di sản"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ông A chết ngày 1 tháng 3 năm 2026 ở nhà tại Hà Nội. Thời điểm và địa điểm mở thừa kế là gì?",
+   "a": "Ngày 1 tháng 3 năm 2026, tại nơi cư trú cuối cùng ở Hà Nội."
+  },
+  "contrast": [
+   {
+    "with": "thoi-hieu-thua-ke",
+    "text": "Mở thừa kế là mốc bắt đầu; thời hiệu là thời hạn tính từ mốc đó."
    }
   ]
  },

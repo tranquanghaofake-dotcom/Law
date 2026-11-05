@@ -5,7 +5,7 @@
  "term": "Các yếu tố của tội phạm và cấu thành tội phạm",
  "definition": "Cấu thành tội phạm là tổng hợp những dấu hiệu chung có tính đặc trưng cho một loại tội phạm cụ thể được quy định trong luật hình sự. Mọi tội phạm đều được hợp thành từ bốn yếu tố: khách thể, mặt khách quan, chủ thể và mặt chủ quan.",
  "plain": "Phân biệt: TỘI PHẠM là hành vi cụ thể ngoài thực tế; CẤU THÀNH TỘI PHẠM là mô hình pháp lý trong luật (điều luật phần các tội phạm + quy định phần chung). Dấu hiệu trong CTTP có tính đặc trưng, bắt buộc, được luật quy định. Hai cách phân loại: theo MỨC ĐỘ NGUY HIỂM (CTTP cơ bản, tăng nặng, giảm nhẹ — tương ứng khoản 1 và các khoản khác của điều luật); theo CẤU TRÚC mặt khách quan (CTTP VẬT CHẤT — có hậu quả là dấu hiệu bắt buộc; CTTP HÌNH THỨC — chỉ cần hành vi). Ý nghĩa: cơ sở pháp lý của TNHS (Điều 2 BLHS: chỉ người phạm một tội đã được BLHS quy định mới phải chịu TNHS), căn cứ ĐỊNH TỘI và ĐỊNH KHUNG hình phạt. Đây là quan điểm học thuật, BLHS không định nghĩa \"cấu thành tội phạm\".",
- "example": "Tội trộm cắp tài sản (Điều 173 BLHS) có CTTP vật chất: phải chiếm đoạt được tài sản trị giá từ 2 triệu đồng (hoặc dưới 2 triệu kèm tình tiết luật định); khoản 1 là CTTP cơ bản, khoản 2–4 là CTTP tăng nặng.",
+ "example": "Tội trộm cắp tài sản (Điều 173 Bộ luật Hình sự) có cấu thành vật chất: phải chiếm đoạt được tài sản từ 2 triệu đồng; khoản 1 là cấu thành cơ bản, khoản 2 đến 4 là cấu thành tăng nặng.",
  "source": {
   "kind": "textbook",
   "cite": "Giáo trình Luật Hình sự Việt Nam (Phần chung), Trường Đại học Luật Hà Nội; đề cương Luật Hình sự 1 vấn đề 4 — tóm lược quan điểm học thuật phổ biến, chưa đối chiếu nguyên văn"
@@ -24,10 +24,13 @@
   "vật chất – hình thức"
  ],
  "memo": {
-  "hook": "TỘI PHẠM là việc thật; CẤU THÀNH là MÔ HÌNH trong luật; bốn yếu tố.",
+  "gist": "Cấu thành tội phạm là mô hình trong luật gồm bốn yếu tố: khách thể, mặt khách quan, chủ thể và mặt chủ quan.",
+  "kind": "tree",
+  "hook": "Tội phạm là bức ảnh thật; cấu thành là khung ảnh trong luật để đặt vào so.",
   "tree": [
    {
     "label": "Bốn yếu tố",
+    "icon": "n4",
     "children": [
      "Khách thể",
      "Mặt khách quan",
@@ -37,6 +40,7 @@
    },
    {
     "label": "Theo mức nguy hiểm",
+    "icon": "chart",
     "children": [
      "Cơ bản",
      "Tăng nặng",
@@ -45,10 +49,21 @@
    },
    {
     "label": "Theo cấu trúc",
+    "icon": "company",
     "children": [
      "Vật chất (cần hậu quả)",
      "Hình thức"
     ]
+   }
+  ],
+  "case": {
+   "q": "Tội trộm cắp đòi phải chiếm đoạt được tài sản từ 2 triệu. Đây là cấu thành vật chất hay hình thức?",
+   "a": "Cấu thành vật chất, vì cần có hậu quả."
+  },
+  "contrast": [
+   {
+    "with": "khai-niem-toi-pham",
+    "text": "Cấu thành là khuôn mẫu trong luật; tội phạm là hành vi thật ngoài đời."
    }
   ]
  },

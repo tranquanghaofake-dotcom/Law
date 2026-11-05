@@ -21,32 +21,48 @@
   "15 bộ"
  ],
  "memo": {
-  "hook": "Văn Lang: nhà nước ĐẦU TIÊN, HÙNG VƯƠNG đứng đầu, 15 BỘ, đô PHONG CHÂU.",
+  "gist": "Văn Lang là nhà nước đầu tiên của người Việt, do Hùng Vương đứng đầu, chia 15 bộ, đóng đô Phong Châu.",
+  "kind": "tree",
+  "hook": "Như mái nhà tranh đầu tiên: đơn sơ nhưng là khởi đầu.",
   "tree": [
    {
     "label": "Đứng đầu",
+    "icon": "crown",
     "children": [
      "Hùng Vương"
     ]
    },
    {
     "label": "Kinh đô",
+    "icon": "state",
     "children": [
      "Phong Châu"
     ]
    },
    {
     "label": "Lãnh thổ",
+    "icon": "map",
     "children": [
      "15 bộ"
     ]
    },
    {
     "label": "Đặc điểm",
+    "icon": "plant",
     "children": [
      "Sơ khai",
      "Cha truyền con nối"
     ]
+   }
+  ],
+  "case": {
+   "q": "Toàn thư ghi Văn Lang có bao nhiêu bộ, và cần chú ý gì?",
+   "a": "15 bộ, nhưng chỉ kể tên 14; cần chú ý chỗ sử liệu không khớp."
+  },
+  "contrast": [
+   {
+    "with": "nha-nuoc-au-lac",
+    "text": "Văn Lang là nhà nước đầu tiên; Âu Lạc kế tục."
    }
   ]
  },

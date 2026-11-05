@@ -24,10 +24,13 @@
   "trước khi sơ thẩm ra bản án"
  ],
  "memo": {
-  "hook": "Tòa KHÔNG tự áp dụng thời hiệu; chỉ khi có YÊU CẦU trước khi xử sơ thẩm.",
+  "gist": "Thời hiệu là khoảng thời gian luật định mà hết thì mất hoặc được quyền; Tòa chỉ áp dụng khi có bên yêu cầu.",
+  "kind": "tree",
+  "hook": "Như đồng hồ cát chỉ được lật khi có người nhờ.",
   "tree": [
    {
     "label": "Bốn loại",
+    "icon": "n4",
     "children": [
      "Hưởng quyền",
      "Miễn trừ nghĩa vụ",
@@ -37,10 +40,21 @@
    },
    {
     "label": "Áp dụng",
+    "icon": "ban",
     "children": [
      "Chỉ theo yêu cầu",
      "Trước khi sơ thẩm ra bản án"
     ]
+   }
+  ],
+  "case": {
+   "q": "Hết thời hiệu khởi kiện nhưng bị đơn không yêu cầu áp dụng. Tòa có tự bác đơn không?",
+   "a": "Không. Tòa vẫn giải quyết nội dung vụ án."
+  },
+  "contrast": [
+   {
+    "with": "thoi-hieu-thua-ke",
+    "text": "Thời hiệu là khái niệm chung; thời hiệu thừa kế là mốc riêng cho việc chia di sản."
    }
   ]
  },

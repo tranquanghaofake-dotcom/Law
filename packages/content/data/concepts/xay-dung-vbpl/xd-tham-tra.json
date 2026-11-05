@@ -31,15 +31,15 @@
   "tree": [
    {
     "label": "Ai làm",
-    "icon": "🏛️",
+    "icon": "state",
     "children": [
      "Hội đồng Dân tộc",
      "Các ủy ban của Quốc hội"
     ]
    },
    {
-    "label": "Hạn hồ sơ",
-    "icon": "⏰",
+    "label": "Hạn hồ sơ (khoản 1 Điều 37)",
+    "icon": "clock",
     "children": [
      "45 ngày trước kỳ họp Quốc hội",
      "20 ngày trước phiên Ủy ban thường vụ"
@@ -47,7 +47,7 @@
    },
    {
     "label": "Luôn tham gia",
-    "icon": "⚖️",
+    "icon": "scales",
     "children": [
      "Ủy ban Pháp luật và Tư pháp"
     ]

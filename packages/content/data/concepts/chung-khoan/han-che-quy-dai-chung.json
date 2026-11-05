@@ -24,22 +24,35 @@
   "không cho vay, bảo lãnh"
  ],
  "memo": {
-  "hook": "Quỹ đại chúng phải ĐA DẠNG: ≤ 10% chứng khoán một tổ chức, ≤ 20% tài sản vào một tổ chức, ≤ 30% một nhóm.",
+  "gist": "Quỹ đại chúng phải chia rủi ro: không quá 20% tài sản vào một tổ chức, không quá 10% chứng khoán của một tổ chức.",
+  "kind": "tree",
+  "hook": "Không bỏ hết trứng vào một giỏ.",
   "tree": [
    {
     "label": "Giới hạn",
+    "icon": "measure",
     "children": [
-     "≤ 10% chứng khoán của 01 tổ chức",
-     "≤ 20% tài sản quỹ vào 01 tổ chức",
-     "≤ 30% vào một nhóm công ty"
+     "Tối đa 10% chứng khoán của 01 tổ chức",
+     "Tối đa 20% tài sản quỹ vào 01 tổ chức",
+     "Tối đa 30% vào một nhóm công ty"
     ]
    },
    {
     "label": "Cấm",
+    "icon": "ban",
     "children": [
-     "Mua chứng chỉ quỹ của chính mình",
-     "Cho vay, bảo lãnh"
+     "Mua chứng chỉ quỹ của chính quỹ"
     ]
+   }
+  ],
+  "case": {
+   "q": "Quỹ tài sản 1.000 tỷ muốn mua 250 tỷ cổ phiếu một ngân hàng. Có được không?",
+   "a": "Không, vì vượt mức 20% tài sản, tức 200 tỷ."
+  },
+  "contrast": [
+   {
+    "with": "quy-dai-chung",
+    "text": "Hạn chế là giới hạn đầu tư; quỹ đại chúng là loại quỹ bị giới hạn."
    }
   ]
  },

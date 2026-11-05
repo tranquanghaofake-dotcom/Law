@@ -23,18 +23,22 @@
   "khấu trừ hằng tháng"
  ],
  "memo": {
-  "hook": "Sơ suất, thiệt hại ≤ 10 THÁNG lương tối thiểu → bồi thường tối đa 3 THÁNG lương.",
+  "gist": "Người lao động làm hư tài sản phải bồi thường; sơ suất nhẹ thì tối đa 3 tháng lương, trừ dần vào lương.",
+  "kind": "tree",
+  "hook": "Lỡ tay làm vỡ thì đền, nhưng không đến mức trắng tay.",
   "tree": [
    {
     "label": "Thiệt hại nhẹ",
+    "icon": "tool",
     "children": [
      "Do sơ suất, không nghiêm trọng",
-     "≤ 10 tháng lương tối thiểu vùng",
+     "Không quá 10 tháng lương tối thiểu vùng",
      "Bồi thường tối đa 03 tháng lương"
     ]
    },
    {
     "label": "Cách trả",
+    "icon": "money",
     "children": [
      "Khấu trừ hằng tháng",
      "Không quá 30% lương thực trả"
@@ -42,9 +46,20 @@
    },
    {
     "label": "Căn cứ",
+    "icon": "book",
     "children": [
      "Pháp luật hoặc nội quy"
     ]
+   }
+  ],
+  "case": {
+   "q": "Nhân viên sơ ý làm vỡ máy chiếu 15 triệu. Bồi thường tối đa bao nhiêu và trả thế nào?",
+   "a": "Tối đa 3 tháng lương, khấu trừ dần, mỗi tháng không quá 30% lương thực trả."
+  },
+  "contrast": [
+   {
+    "with": "ky-luat-lao-dong",
+    "text": "Bồi thường là đền thiệt hại tài sản; kỷ luật là xử lý vi phạm nội quy, không được phạt tiền."
    }
   ]
  },

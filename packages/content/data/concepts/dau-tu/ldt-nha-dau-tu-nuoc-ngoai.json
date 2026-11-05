@@ -24,26 +24,41 @@
  ],
  "note": "Luật Đầu tư 143/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Đầu tư 61/2020/QH14 mà đề cương HLU 2021 còn dẫn (khoản 4 Điều 51). Luật 24/2026/QH16 sửa đổi có hiệu lực từ 01/3/2027 (riêng một phần Điều 6 từ 01/01/2027), chỉ sửa Điều 6 và Phụ lục IV, không sửa điều được trích — văn bản hợp nhất 142/2026/VBHN-LQ-VPQH.",
  "memo": {
-  "hook": "Cá nhân xét QUỐC TỊCH; tổ chức xét NƠI THÀNH LẬP.",
+  "gist": "Nhà đầu tư nước ngoài là người mang quốc tịch nước ngoài, hoặc tổ chức lập theo luật nước ngoài, đầu tư vào Việt Nam.",
+  "kind": "compare",
+  "hook": "Người thì xem hộ chiếu, công ty thì xem giấy khai sinh của nó ở đâu.",
   "tree": [
    {
     "label": "Cá nhân",
+    "icon": "person",
     "children": [
      "Quốc tịch nước ngoài"
     ]
    },
    {
     "label": "Tổ chức",
+    "icon": "company",
     "children": [
      "Thành lập theo pháp luật nước ngoài"
     ]
    },
    {
     "label": "Hệ quả",
+    "icon": "list",
     "children": [
      "Điều kiện tiếp cận thị trường",
      "Thường phải xin Giấy chứng nhận"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty do người Việt sở hữu toàn bộ nhưng lập ở Hồng Kông. Có phải nhà đầu tư nước ngoài không?",
+   "a": "Có, vì thành lập theo pháp luật nước ngoài."
+  },
+  "contrast": [
+   {
+    "with": "ldt-to-chuc-kinh-te-co-von-dtnn",
+    "text": "Nhà đầu tư nước ngoài lập ở nước ngoài; tổ chức có vốn nước ngoài lập ở Việt Nam, chỉ có thành viên nước ngoài."
    }
   ]
  },

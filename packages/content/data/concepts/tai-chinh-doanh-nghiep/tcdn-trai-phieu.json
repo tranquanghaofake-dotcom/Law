@@ -25,10 +25,13 @@
  ],
  "note": "Luật Chứng khoán 54/2019/QH14 có hiệu lực từ 01/01/2021, sửa đổi bởi Luật 56/2024/QH15 (hiệu lực 01/01/2025) — văn bản hợp nhất 102/VBHN-VPQH 2026.",
  "memo": {
-  "hook": "Trái phiếu = VỐN VAY (người mua là CHỦ NỢ); cổ phiếu = VỐN CHỦ SỞ HỮU.",
+  "gist": "Trái phiếu là giấy chứng nhận người mua cho công ty vay tiền; người mua là chủ nợ, nhận gốc và lãi.",
+  "kind": "compare",
+  "hook": "Như cầm giấy biên nhận ở tiệm cầm đồ: đến hạn đòi lại, không được quyền quản lý tiệm.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "scroll",
     "children": [
      "Chứng khoán",
      "Xác nhận một phần nợ"
@@ -36,6 +39,7 @@
    },
    {
     "label": "Người mua",
+    "icon": "doc",
     "children": [
      "Chủ nợ",
      "Nhận gốc và lãi"
@@ -43,15 +47,27 @@
    },
    {
     "label": "Khác cổ phiếu",
+    "icon": "compare",
     "children": [
      "Không đổi quyền sở hữu"
     ]
    },
    {
     "label": "Ai phát hành",
+    "icon": "company",
     "children": [
-     "Công ty cổ phần, TNHH"
+     "Công ty cổ phần, trách nhiệm hữu hạn"
     ]
+   }
+  ],
+  "case": {
+   "q": "Người mua trái phiếu kỳ hạn 3 năm lãi 9% của công ty E có phải cổ đông của E không?",
+   "a": "Không. Họ là chủ nợ."
+  },
+  "contrast": [
+   {
+    "with": "tcdn-chao-ban-co-phan",
+    "text": "Trái phiếu là vay, phải trả; cổ phần là góp vốn làm chủ, không trả lại."
    }
   ]
  },

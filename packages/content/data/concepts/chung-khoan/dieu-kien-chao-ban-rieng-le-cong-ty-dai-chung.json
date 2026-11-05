@@ -5,7 +5,7 @@
  "term": "Điều kiện chào bán cổ phiếu riêng lẻ của công ty đại chúng",
  "definition": "(…) b) Đối tượng tham gia đợt chào bán chỉ bao gồm nhà đầu tư chiến lược, nhà đầu tư chứng khoán chuyên nghiệp theo quy định tại khoản 1 Điều 11 của Luật này đối với đợt chào bán cổ phiếu, trái phiếu chuyển đổi hoặc nhà đầu tư chiến lược, nhà đầu tư chứng khoán chuyên nghiệp theo quy định tại khoản 1a và khoản 1b Điều 11 của Luật này đối với đợt chào bán trái phiếu kèm chứng quyền; (…) d) Các đợt chào bán cổ phiếu riêng lẻ, trái phiếu chuyển đổi riêng lẻ, trái phiếu kèm chứng quyền riêng lẻ phải cách nhau ít nhất 06 tháng kể từ ngày kết thúc đợt chào bán gần nhất; (…)",
  "plain": "Công ty đại chúng chào bán riêng lẻ phải: có quyết định của Đại hội đồng cổ đông; chỉ bán cho nhà đầu tư chiến lược hoặc nhà đầu tư chuyên nghiệp; cổ phiếu bị hạn chế chuyển nhượng tối thiểu 03 năm (chiến lược) hoặc 01 năm (chuyên nghiệp); các đợt cách nhau ít nhất 06 tháng; tuân thủ tỷ lệ sở hữu nước ngoài. Mục đích là ngăn \"lách\" chào bán ra công chúng.",
- "example": "Công ty đại chúng P phát hành riêng lẻ cho nhà đầu tư chiến lược Q vào tháng 3/2026. Q không được bán lại số cổ phiếu này trước tháng 3/2029 (trừ theo bản án, quyết định của Tòa án, Trọng tài hoặc thừa kế); P không được mở đợt riêng lẻ tiếp theo trước tháng 9/2026.",
+ "example": "Công ty đại chúng P phát hành riêng lẻ cho nhà đầu tư chiến lược Q vào tháng 3 năm 2026: Q không được bán lại số cổ phiếu này trước tháng 3 năm 2029, trừ trường hợp luật cho phép.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1 Điều 31 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)",
@@ -24,16 +24,20 @@
  ],
  "note": "Luật 56/2024/QH15 (hiệu lực 01/01/2025) sửa điểm a, b, c khoản 1 và khoản 2 Điều 31 (đối tượng mua, hạn chế chuyển nhượng, trái phiếu doanh nghiệp riêng lẻ chỉ giao dịch giữa nhà đầu tư chuyên nghiệp), đồng thời bổ sung Điều 31a (Ủy ban được đình chỉ đợt chào bán riêng lẻ tối đa 60 ngày) và Điều 31b (hủy bỏ đợt chào bán riêng lẻ). Phần liên quan đến nhà đầu tư chuyên nghiệp mua trái phiếu doanh nghiệp riêng lẻ có hiệu lực từ 01/01/2026. Đọc giáo trình 2021 phần này phải đối chiếu luật hiện hành.",
  "memo": {
-  "hook": "Riêng lẻ của công ty đại chúng: chỉ CHIẾN LƯỢC/CHUYÊN NGHIỆP; khóa 3 NĂM/1 NĂM; cách đợt 6 THÁNG.",
+  "gist": "Công ty đại chúng chỉ bán riêng lẻ cho nhà đầu tư chiến lược, chuyên nghiệp; cổ phiếu bị khóa 3 năm hoặc 1 năm.",
+  "kind": "checklist",
+  "hook": "Bán riêng cho khách quen, khách quen phải giữ lâu.",
   "tree": [
    {
     "label": "Quyết định",
+    "icon": "vote",
     "children": [
      "Đại hội đồng cổ đông"
     ]
    },
    {
     "label": "Người mua",
+    "icon": "person",
     "children": [
      "Nhà đầu tư chiến lược",
      "Nhà đầu tư chuyên nghiệp"
@@ -41,6 +45,7 @@
    },
    {
     "label": "Hạn chế chuyển nhượng",
+    "icon": "lock",
     "children": [
      "Chiến lược: 03 năm",
      "Chuyên nghiệp: 01 năm"
@@ -48,9 +53,20 @@
    },
    {
     "label": "Giữa các đợt",
+    "icon": "calendar",
     "children": [
      "Ít nhất 06 tháng"
     ]
+   }
+  ],
+  "case": {
+   "q": "Nhà đầu tư chiến lược mua riêng lẻ tháng 3 năm 2026. Khi nào được bán lại?",
+   "a": "Không trước tháng 3 năm 2029, trừ trường hợp luật cho phép."
+  },
+  "contrast": [
+   {
+    "with": "chao-ban-rieng-le",
+    "text": "Bài này là điều kiện riêng cho công ty đại chúng; chào bán riêng lẻ là khái niệm chung."
    }
   ]
  },

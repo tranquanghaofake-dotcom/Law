@@ -25,16 +25,20 @@
   "không còn"
  ],
  "memo": {
-  "hook": "1341: Trương Hán Siêu, Nguyễn Trung Ngạn soạn HOÀNG TRIỀU ĐẠI ĐIỂN và HÌNH THƯ.",
+  "gist": "Năm 1341 nhà Trần cho soạn Hoàng triều đại điển về điển chế và Hình thư về luật hình; nay đều không còn.",
+  "kind": "tree",
+  "hook": "Hai cuốn sách song sinh: một sách phép nước, một sách hình phạt.",
   "tree": [
    {
     "label": "Mốc",
+    "icon": "calendar",
     "children": [
      "1341"
     ]
    },
    {
     "label": "Người soạn",
+    "icon": "pen",
     "children": [
      "Trương Hán Siêu",
      "Nguyễn Trung Ngạn"
@@ -42,6 +46,7 @@
    },
    {
     "label": "Bộ luật",
+    "icon": "book",
     "children": [
      "Hoàng triều đại điển: điển chế",
      "Hình thư: luật hình"
@@ -49,9 +54,20 @@
    },
    {
     "label": "Hiện trạng",
+    "icon": "end",
     "children": [
      "Không còn"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ai soạn Hoàng triều đại điển và Hình thư thời Trần?",
+   "a": "Trương Hán Siêu và Nguyễn Trung Ngạn."
+  },
+  "contrast": [
+   {
+    "with": "hinh-thu-1042",
+    "text": "Hình thư 1341 của nhà Trần; Hình thư 1042 của nhà Lý."
    }
   ]
  },

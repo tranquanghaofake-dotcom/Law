@@ -23,10 +23,13 @@
   "trật tự chung"
  ],
  "memo": {
-  "hook": "Pháp luật: Ý CHÍ giai cấp thống trị (giai cấp) + công cụ giữ TRẬT TỰ chung (xã hội).",
+  "gist": "Pháp luật vừa thể hiện ý chí của giai cấp cầm quyền, vừa là công cụ giữ trật tự chung cho mọi người.",
+  "kind": "compare",
+  "hook": "Luật như hàng rào: rào đất của chủ, nhưng cũng giữ cho đường làng không loạn.",
   "tree": [
    {
     "label": "Tính giai cấp",
+    "icon": "crown",
     "children": [
      "Ý chí giai cấp thống trị",
      "Do điều kiện kinh tế quyết định"
@@ -34,10 +37,21 @@
    },
    {
     "label": "Tính xã hội",
+    "icon": "handshake",
     "children": [
      "Ghi nhận chuẩn mực chung",
      "Giữ trật tự chung"
     ]
+   }
+  ],
+  "case": {
+   "q": "Quy định về phòng cháy chữa cháy thể hiện mặt nào của pháp luật?",
+   "a": "Tính xã hội, vì vì lợi ích chung của mọi người."
+  },
+  "contrast": [
+   {
+    "with": "llc-thuoc-tinh-phap-luat",
+    "text": "Bản chất trả lời pháp luật là gì; thuộc tính trả lời nhận ra pháp luật bằng dấu hiệu nào."
    }
   ]
  },

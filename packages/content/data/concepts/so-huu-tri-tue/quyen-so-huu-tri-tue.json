@@ -24,16 +24,20 @@
  ],
  "note": "Điều 4 có nội dung được sửa đổi, bổ sung bởi Luật 36/2009/QH12 (hiệu lực 01/01/2010); Luật 07/2022/QH15 (hiệu lực 01/01/2023); Luật 131/2025/QH15 (hiệu lực 01/4/2026) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
  "memo": {
-  "hook": "Ba bộ phận: TÁC GIẢ & LIÊN QUAN – SỞ HỮU CÔNG NGHIỆP – GIỐNG CÂY TRỒNG.",
+  "gist": "Quyền sở hữu trí tuệ gồm ba phần: quyền tác giả và liên quan, sở hữu công nghiệp, giống cây trồng.",
+  "kind": "tree",
+  "hook": "Một ngôi nhà ba phòng: phòng nghệ thuật, phòng kinh doanh, phòng ruộng vườn.",
   "tree": [
    {
     "label": "Quyền tác giả",
+    "icon": "pen",
     "children": [
      "Quyền liên quan"
     ]
    },
    {
     "label": "Sở hữu công nghiệp",
+    "icon": "company",
     "children": [
      "Sáng chế, kiểu dáng",
      "Nhãn hiệu, tên thương mại",
@@ -41,13 +45,25 @@
     ]
    },
    {
-    "label": "Giống cây trồng"
+    "label": "Giống cây trồng",
+    "icon": "plant"
    },
    {
     "label": "Đặc điểm",
+    "icon": "idea",
     "children": [
      "Tài sản vô hình"
     ]
+   }
+  ],
+  "case": {
+   "q": "Logo của quán cà phê thuộc phần nào của quyền sở hữu trí tuệ?",
+   "a": "Sở hữu công nghiệp, cụ thể là nhãn hiệu."
+  },
+  "contrast": [
+   {
+    "with": "quyen-lien-quan",
+    "text": "Sở hữu trí tuệ là nhóm lớn; quyền liên quan chỉ là một phần đi kèm quyền tác giả."
    }
   ]
  },

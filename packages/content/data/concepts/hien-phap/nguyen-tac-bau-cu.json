@@ -23,31 +23,47 @@
   "bỏ phiếu kín"
  ],
  "memo": {
-  "hook": "Bốn nguyên tắc: PHỔ THÔNG – BÌNH ĐẲNG – TRỰC TIẾP – BỎ PHIẾU KÍN.",
+  "gist": "Bầu cử theo bốn nguyên tắc: phổ thông, bình đẳng, trực tiếp và bỏ phiếu kín.",
+  "kind": "checklist",
+  "hook": "Ai cũng bầu, phiếu ai cũng ngang, tự tay bỏ, không ai thấy.",
   "tree": [
    {
     "label": "Phổ thông",
+    "icon": "people",
     "children": [
      "Mọi công dân đủ tuổi"
     ]
    },
    {
     "label": "Bình đẳng",
+    "icon": "scales",
     "children": [
      "Mỗi cử tri một phiếu mỗi cấp"
     ]
    },
    {
     "label": "Trực tiếp",
+    "icon": "ban",
     "children": [
      "Tự mình bầu, không bầu thay"
     ]
    },
    {
     "label": "Bỏ phiếu kín",
+    "icon": "lock",
     "children": [
      "Không ai được xem phiếu"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ông A nhờ con trai đi bầu thay vì bận việc. Có vi phạm không?",
+   "a": "Có, vi phạm nguyên tắc trực tiếp."
+  },
+  "contrast": [
+   {
+    "with": "nguyen-tac-bo-phieu",
+    "text": "Nguyên tắc bầu cử là bốn trụ chung; nguyên tắc bỏ phiếu là cách bỏ phiếu cụ thể."
    }
   ]
  },

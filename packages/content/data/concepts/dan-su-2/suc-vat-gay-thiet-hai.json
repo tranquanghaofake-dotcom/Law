@@ -23,10 +23,13 @@
   "liên đới"
  ],
  "memo": {
-  "hook": "Chủ sở hữu súc vật đền; người đang chiếm hữu đền trong thời gian giữ.",
+  "gist": "Súc vật gây thiệt hại thì chủ đền; người đang giữ thì đền trong lúc giữ; người khác gây ra thì người đó đền.",
+  "kind": "tree",
+  "hook": "Dây xích ở tay ai, trách nhiệm ở tay người đó.",
   "tree": [
    {
     "label": "Ai bồi thường",
+    "icon": "animal",
     "children": [
      "Chủ sở hữu",
      "Người chiếm hữu, sử dụng",
@@ -35,15 +38,27 @@
    },
    {
     "label": "Cùng có lỗi",
+    "icon": "handshake",
     "children": [
      "Liên đới"
     ]
    },
    {
     "label": "Thả rông",
+    "icon": "animal",
     "children": [
      "Theo tập quán, không trái luật"
     ]
+   }
+  ],
+  "case": {
+   "q": "B trêu chó nhà A làm chó cắn C; A cũng không xích chó. Ai đền?",
+   "a": "B và A liên đới bồi thường."
+  },
+  "contrast": [
+   {
+    "with": "nguon-nguy-hiem-cao-do",
+    "text": "Súc vật thường xét người giữ và lỗi; thú dữ là nguồn nguy hiểm cao độ, đền cả khi không lỗi."
    }
   ]
  },

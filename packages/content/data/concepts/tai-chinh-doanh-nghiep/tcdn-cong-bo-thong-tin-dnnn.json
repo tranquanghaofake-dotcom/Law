@@ -24,10 +24,13 @@
  ],
  "note": "Luật Doanh nghiệp 59/2020/QH14 có hiệu lực từ 01/01/2021, thay thế Luật Doanh nghiệp 2014 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 03/2022/QH15 và Luật 76/2025/QH15 (hiệu lực 01/7/2025) — văn bản hợp nhất 67/VBHN-VPQH 2025.",
  "memo": {
-  "hook": "Doanh nghiệp nhà nước công bố trên web CÔNG TY và CƠ QUAN CHỦ SỞ HỮU; báo cáo kiểm toán trong 150 ngày.",
+  "gist": "Doanh nghiệp nhà nước phải đăng định kỳ thông tin, báo cáo tài chính lên trang web của mình và cơ quan chủ quản.",
+  "kind": "tree",
+  "hook": "Như nhà kính: tiền của dân thì phải để dân nhìn thấy.",
   "tree": [
    {
     "label": "Nơi công bố",
+    "icon": "globe",
     "children": [
      "Trang web của công ty",
      "Trang web cơ quan đại diện chủ sở hữu"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Nội dung",
+    "icon": "doc",
     "children": [
      "Thông tin cơ bản, Điều lệ",
      "Kế hoạch kinh doanh",
@@ -43,10 +47,21 @@
    },
    {
     "label": "Hạn",
+    "icon": "clock",
     "children": [
      "Báo cáo năm đã kiểm toán: 150 ngày",
      "Báo cáo giữa năm: trước 31/7"
     ]
+   }
+  ],
+  "case": {
+   "q": "Tổng công ty nhà nước kết thúc năm tài chính ngày 31 tháng 12. Hạn công bố báo cáo tài chính năm đã kiểm toán là khi nào?",
+   "a": "Chậm nhất 150 ngày, tức khoảng ngày 30 tháng 5 năm sau."
+  },
+  "contrast": [
+   {
+    "with": "tcdn-doi-tuong-cong-bo-thong-tin",
+    "text": "Bài này nói doanh nghiệp nhà nước công bố gì; bài kia nói ai phải công bố trên thị trường chứng khoán."
    }
   ]
  },

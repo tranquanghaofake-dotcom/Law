@@ -5,7 +5,7 @@
  "term": "Pháp nhân — chủ thể là tổ chức",
  "definition": "Một tổ chức được công nhận là pháp nhân khi có đủ các điều kiện sau đây: a) Được thành lập theo quy định của Bộ luật này, luật khác có liên quan; b) Có cơ cấu tổ chức theo quy định tại Điều 83 của Bộ luật này; c) Có tài sản độc lập với cá nhân, pháp nhân khác và tự chịu trách nhiệm bằng tài sản của mình; d) Nhân danh mình tham gia quan hệ pháp luật một cách độc lập.",
  "plain": "Chủ thể quan hệ pháp luật gồm CÁ NHÂN (công dân, người nước ngoài, người không quốc tịch), TỔ CHỨC (pháp nhân và tổ chức không có tư cách pháp nhân) và NHÀ NƯỚC (chủ thể đặc biệt). Bốn điều kiện pháp nhân: thành lập hợp pháp; có cơ cấu tổ chức (cơ quan điều hành); TÀI SẢN ĐỘC LẬP và tự chịu trách nhiệm bằng tài sản đó (trách nhiệm hữu hạn); NHÂN DANH MÌNH tham gia quan hệ pháp luật. Năng lực pháp luật của pháp nhân phát sinh từ khi được thành lập (Điều 86). Doanh nghiệp tư nhân, hộ kinh doanh không phải pháp nhân vì tài sản không tách bạch với chủ.",
- "example": "Công ty TNHH một thành viên có tài sản riêng, tự chịu trách nhiệm trong phạm vi vốn điều lệ, nhân danh mình ký hợp đồng: pháp nhân. Doanh nghiệp tư nhân: chủ chịu trách nhiệm vô hạn, không phải pháp nhân.",
+ "example": "Công ty trách nhiệm hữu hạn một thành viên có tài sản riêng, tự chịu trách nhiệm trong vốn điều lệ, tự đứng tên ký hợp đồng: pháp nhân. Doanh nghiệp tư nhân: chủ chịu vô hạn, không phải pháp nhân.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1 Điều 74 Bộ luật Dân sự 2015",
@@ -24,10 +24,13 @@
  ],
  "note": "Bộ luật Dân sự 91/2015/QH13 có hiệu lực từ 01/01/2017; chưa có văn bản sửa đổi có hiệu lực.",
  "memo": {
-  "hook": "Ba loại chủ thể: CÁ NHÂN – TỔ CHỨC – NHÀ NƯỚC; pháp nhân cần 4 điều kiện.",
+  "gist": "Pháp nhân là tổ chức lập hợp pháp, có bộ máy, có tài sản riêng và tự đứng tên mình khi tham gia quan hệ.",
+  "kind": "checklist",
+  "hook": "Một người làm từ giấy tờ: có tên, có thân, có ví riêng.",
   "tree": [
    {
     "label": "Chủ thể",
+    "icon": "people",
     "children": [
      "Cá nhân",
      "Tổ chức",
@@ -36,12 +39,23 @@
    },
    {
     "label": "Pháp nhân",
+    "icon": "check",
     "children": [
      "Thành lập hợp pháp",
      "Cơ cấu tổ chức",
      "Tài sản độc lập",
      "Nhân danh mình"
     ]
+   }
+  ],
+  "case": {
+   "q": "Doanh nghiệp tư nhân có phải pháp nhân không?",
+   "a": "Không, vì chủ chịu trách nhiệm vô hạn, không có tài sản độc lập."
+  },
+  "contrast": [
+   {
+    "with": "llc-nang-luc-phap-luat",
+    "text": "Pháp nhân là chủ thể tổ chức; năng lực pháp luật là khả năng có quyền của chủ thể."
    }
   ]
  },

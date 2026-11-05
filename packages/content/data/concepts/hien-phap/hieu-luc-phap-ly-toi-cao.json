@@ -21,25 +21,40 @@
   "vi phạm Hiến pháp bị xử lý"
  ],
  "memo": {
-  "hook": "Hiến pháp ở ĐỈNH THÁP văn bản pháp luật.",
+  "gist": "Hiến pháp có hiệu lực cao nhất; mọi văn bản khác phải phù hợp, vi phạm Hiến pháp đều bị xử lý.",
+  "kind": "ladder",
+  "hook": "Đỉnh tháp; mọi viên gạch phía dưới phải theo.",
   "tree": [
    {
     "label": "Hiệu lực",
+    "icon": "top",
     "children": [
      "Cao nhất"
     ]
    },
    {
     "label": "Văn bản khác",
+    "icon": "book",
     "children": [
      "Phải phù hợp với Hiến pháp"
     ]
    },
    {
     "label": "Vi phạm",
+    "icon": "scales",
     "children": [
      "Đều bị xử lý"
     ]
+   }
+  ],
+  "case": {
+   "q": "Một nghị định về cư trú có quy định trái Hiến pháp. Xử lý thế nào?",
+   "a": "Quy định đó phải bị sửa hoặc bãi bỏ."
+  },
+  "contrast": [
+   {
+    "with": "hien-phap",
+    "text": "Hiệu lực tối cao là vị trí; Hiến pháp là văn bản."
    }
   ]
  },

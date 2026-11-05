@@ -23,10 +23,13 @@
   "trưng dụng"
  ],
  "memo": {
-  "hook": "THU HỒI là lấy hẳn, có bồi thường; TRƯNG DỤNG là dùng có thời hạn.",
+  "gist": "Nhà nước giao quyền dùng đất cho người dân; chỉ lấy lại đất khi luật cho phép, công khai và có bồi thường.",
+  "kind": "compare",
+  "hook": "Lấy hẳn phải đền, mượn tạm phải trả.",
   "tree": [
    {
     "label": "Xác lập quyền",
+    "icon": "scroll",
     "children": [
      "Giao đất",
      "Cho thuê đất",
@@ -35,6 +38,7 @@
    },
    {
     "label": "Người sử dụng",
+    "icon": "person",
     "children": [
      "Được chuyển quyền",
      "Được pháp luật bảo hộ"
@@ -42,6 +46,7 @@
    },
    {
     "label": "Thu hồi",
+    "icon": "cycle",
     "children": [
      "Thật cần thiết, do luật định",
      "Quốc phòng, an ninh, lợi ích quốc gia",
@@ -50,9 +55,20 @@
    },
    {
     "label": "Trưng dụng",
+    "icon": "clock",
     "children": [
      "Có thời hạn, khẩn cấp"
     ]
+   }
+  ],
+  "case": {
+   "q": "Lũ lụt, chính quyền tạm dùng đất của dân làm nơi sơ tán. Đây là thu hồi hay trưng dụng?",
+   "a": "Trưng dụng, vì dùng có thời hạn."
+  },
+  "contrast": [
+   {
+    "with": "so-huu-toan-dan",
+    "text": "Quyền sử dụng là quyền dùng đất; sở hữu toàn dân là đất thuộc về ai."
    }
   ]
  },

@@ -23,10 +23,13 @@
   "dân tộc bình đẳng"
  ],
  "memo": {
-  "hook": "Ai cũng có quyền có quốc tịch; công dân KHÔNG bị tước, trừ Điều 31.",
+  "gist": "Ai cũng có quyền có quốc tịch; công dân Việt Nam không bị tước quốc tịch, trừ trường hợp luật quy định.",
+  "kind": "tree",
+  "hook": "Như mọi đứa trẻ đều cần một mái nhà trên bản đồ.",
   "tree": [
    {
     "label": "Quyền",
+    "icon": "person",
     "children": [
      "Mỗi cá nhân có quyền có quốc tịch",
      "Các dân tộc bình đẳng"
@@ -34,15 +37,27 @@
    },
    {
     "label": "Bảo đảm",
+    "icon": "shield",
     "children": [
      "Không bị tước quốc tịch"
     ]
    },
    {
     "label": "Ngoại lệ",
+    "icon": "warn",
     "children": [
      "Trường hợp Điều 31"
     ]
+   }
+  ],
+  "case": {
+   "q": "Trẻ sơ sinh bị bỏ rơi ở Việt Nam, không rõ cha mẹ. Có quốc tịch Việt Nam không?",
+   "a": "Có."
+  },
+  "contrast": [
+   {
+    "with": "tuoc-quoc-tich-viet-nam",
+    "text": "Quyền có quốc tịch là nguyên tắc; tước quốc tịch là ngoại lệ hẹp."
    }
   ]
  },

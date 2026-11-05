@@ -24,10 +24,13 @@
   "ngăn cản gia nhập"
  ],
  "memo": {
-  "hook": "Có thống lĩnh thì CẤM: bán phá giá, áp đặt giá, bán kèm, ngăn gia nhập.",
+  "gist": "Doanh nghiệp đang thống lĩnh mà bán dưới giá vốn, áp giá vô lý, ngăn đối thủ vào thị trường thì bị cấm.",
+  "kind": "tree",
+  "hook": "Như người khổng lồ: to không có tội, giẫm lên người khác mới có tội.",
   "tree": [
    {
     "label": "Về giá",
+    "icon": "money",
     "children": [
      "Bán dưới giá thành toàn bộ",
      "Áp đặt giá bất hợp lý",
@@ -36,6 +39,7 @@
    },
    {
     "label": "Về thị trường",
+    "icon": "door",
     "children": [
      "Hạn chế sản xuất, phân phối",
      "Ngăn cản gia nhập"
@@ -43,10 +47,21 @@
    },
    {
     "label": "Về điều kiện",
+    "icon": "list",
     "children": [
      "Phân biệt đối xử",
      "Áp đặt nghĩa vụ không liên quan"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty có 40% thị phần bán dưới giá thành trong 6 tháng khiến đối thủ nhỏ phải rời thị trường. Có vi phạm không?",
+   "a": "Có. Đó là lạm dụng vị trí thống lĩnh bằng bán dưới giá thành toàn bộ."
+  },
+  "contrast": [
+   {
+    "with": "vi-tri-thong-linh-thi-truong",
+    "text": "Thống lĩnh là trạng thái, không bị cấm; lạm dụng là hành vi xấu khi đang thống lĩnh, mới bị cấm."
    }
   ]
  },

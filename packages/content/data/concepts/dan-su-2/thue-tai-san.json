@@ -5,7 +5,7 @@
  "term": "Hợp đồng thuê tài sản",
  "definition": "Hợp đồng thuê tài sản là sự thỏa thuận giữa các bên, theo đó bên cho thuê giao tài sản cho bên thuê để sử dụng trong một thời hạn, bên thuê phải trả tiền thuê.",
  "plain": "Hợp đồng CHUYỂN QUYỀN SỬ DỤNG tài sản (không chuyển quyền sở hữu), có ĐỀN BÙ (tiền thuê), có THỜI HẠN. Hết hạn bên thuê trả lại CHÍNH tài sản thuê. Thuê nhà ở còn theo Luật Nhà ở. Phân biệt: MƯỢN tài sản (Điều 494 BLDS 2015) — không phải trả tiền; THUÊ KHOÁN (Điều 483 BLDS 2015) — khai thác công dụng, hưởng hoa lợi, lợi tức.",
- "example": "Sinh viên thuê phòng trọ 2 triệu/tháng: chủ trọ vẫn là chủ sở hữu, sinh viên chỉ có quyền sử dụng trong thời hạn thuê.",
+ "example": "Sinh viên thuê phòng trọ 2 triệu mỗi tháng: chủ trọ vẫn là chủ sở hữu, sinh viên chỉ có quyền sử dụng trong thời hạn thuê.",
  "source": {
   "kind": "statute",
   "cite": "Đoạn 1 Điều 472 Bộ luật Dân sự 2015",
@@ -23,10 +23,13 @@
   "không chuyển quyền sở hữu"
  ],
  "memo": {
-  "hook": "Thuê: CHỈ chuyển QUYỀN SỬ DỤNG, có THỜI HẠN, phải TRẢ TIỀN; hết hạn trả CHÍNH tài sản.",
+  "gist": "Bên thuê được dùng tài sản có thời hạn và trả tiền; chủ vẫn giữ quyền sở hữu.",
+  "kind": "tree",
+  "hook": "Ở nhờ có trả tiền, hết hạn trả đúng căn phòng đó.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "key",
     "children": [
      "Chuyển quyền sử dụng",
      "Không chuyển quyền sở hữu"
@@ -34,6 +37,7 @@
    },
    {
     "label": "Đặc điểm",
+    "icon": "calendar",
     "children": [
      "Có thời hạn",
      "Trả tiền thuê"
@@ -41,10 +45,21 @@
    },
    {
     "label": "Phân biệt",
+    "icon": "compare",
     "children": [
      "Mượn: không trả tiền",
      "Thuê khoán: hưởng hoa lợi"
     ]
+   }
+  ],
+  "case": {
+   "q": "Sinh viên thuê phòng trọ 2 triệu một tháng. Sinh viên có quyền gì với căn phòng?",
+   "a": "Chỉ quyền sử dụng trong thời hạn thuê."
+  },
+  "contrast": [
+   {
+    "with": "vay-tai-san",
+    "text": "Thuê thì trả lại chính tài sản; vay thì trả tài sản cùng loại."
    }
   ]
  },

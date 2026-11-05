@@ -5,7 +5,7 @@
  "term": "Trả lại đơn khởi kiện",
  "definition": "Thẩm phán trả lại đơn khởi kiện trong các trường hợp sau đây: a) Người khởi kiện không có quyền khởi kiện theo quy định tại Điều 186 và Điều 187 của Bộ luật này hoặc không có đủ năng lực hành vi tố tụng dân sự; b) Chưa có đủ điều kiện khởi kiện theo quy định của pháp luật. Chưa có đủ điều kiện khởi kiện là trường hợp pháp luật có quy định về các điều kiện khởi kiện nhưng người khởi kiện đã khởi kiện đến Tòa án khi còn thiếu một trong các điều kiện đó;",
  "plain": "Căn cứ chính: KHÔNG CÓ QUYỀN KHỞI KIỆN hoặc thiếu năng lực hành vi tố tụng; CHƯA ĐỦ ĐIỀU KIỆN KHỞI KIỆN (ví dụ tranh chấp ai có quyền sử dụng đất chưa hòa giải tại UBND cấp xã); sự việc ĐÃ ĐƯỢC GIẢI QUYẾT bằng bản án, quyết định có hiệu lực (trừ một số vụ ly hôn, nuôi con, cấp dưỡng…); hết thời hạn mà không nộp TẠM ỨNG ÁN PHÍ; KHÔNG THUỘC THẨM QUYỀN Tòa án; không sửa đổi, bổ sung đơn theo yêu cầu… Đương sự có quyền KHIẾU NẠI, Viện kiểm sát KIẾN NGHỊ quyết định trả lại đơn (Điều 194).",
- "example": "Hai hộ tranh chấp ranh giới đất nộp đơn thẳng ra Tòa mà chưa hòa giải tại UBND xã: Thẩm phán có thể trả lại đơn vì chưa đủ điều kiện khởi kiện (khoản 2 Điều 235 Luật Đất đai 2024).",
+ "example": "Hai hộ tranh chấp ranh giới đất nộp đơn thẳng ra Tòa mà chưa hòa giải tại Ủy ban nhân dân xã: Thẩm phán có thể trả lại đơn vì chưa đủ điều kiện khởi kiện (khoản 2 Điều 235 Luật Đất đai 2024).",
  "source": {
   "kind": "statute",
   "cite": "Điểm a, b khoản 1 Điều 192 Bộ luật Tố tụng dân sự 2015 (sửa đổi, bổ sung năm 2019, 2020, 2022, 2023, 2024, 2025)",
@@ -23,10 +23,13 @@
   "khiếu nại, kiến nghị"
  ],
  "memo": {
-  "hook": "Trả đơn khi KHÔNG CÓ QUYỀN, CHƯA ĐỦ ĐIỀU KIỆN, ĐÃ GIẢI QUYẾT, SAI THẨM QUYỀN.",
+  "gist": "Thẩm phán trả đơn khi người kiện không có quyền, chưa đủ điều kiện, việc đã xử rồi hoặc không thuộc Tòa đó.",
+  "kind": "tree",
+  "hook": "Như bưu điện trả thư: sai người gửi, thiếu tem, gửi lần hai, sai địa chỉ.",
   "tree": [
    {
     "label": "Người kiện",
+    "icon": "person",
     "children": [
      "Không có quyền khởi kiện",
      "Thiếu năng lực hành vi tố tụng"
@@ -34,6 +37,7 @@
    },
    {
     "label": "Vụ việc",
+    "icon": "list",
     "children": [
      "Chưa đủ điều kiện khởi kiện",
      "Đã giải quyết bằng bản án",
@@ -42,6 +46,7 @@
    },
    {
     "label": "Thủ tục",
+    "icon": "money",
     "children": [
      "Không nộp tạm ứng án phí",
      "Không sửa đơn"
@@ -49,9 +54,20 @@
    },
    {
     "label": "Phản đối",
+    "icon": "announce",
     "children": [
      "Khiếu nại, kiến nghị"
     ]
+   }
+  ],
+  "case": {
+   "q": "Hai hộ tranh chấp ranh giới đất nộp đơn thẳng ra Tòa, chưa hòa giải ở xã. Tòa xử lý thế nào?",
+   "a": "Có thể trả lại đơn vì chưa đủ điều kiện khởi kiện."
+  },
+  "contrast": [
+   {
+    "with": "quyen-yeu-cau-toa-an-bao-ve",
+    "text": "Trả đơn là khi đơn không đủ điều kiện; quyền yêu cầu là quyền chung được đưa việc ra Tòa."
    }
   ]
  },

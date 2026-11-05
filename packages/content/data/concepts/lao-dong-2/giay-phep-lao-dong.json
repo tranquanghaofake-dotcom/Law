@@ -22,16 +22,20 @@
   "hết hiệu lực theo Điều 156"
  ],
  "memo": {
-  "hook": "Tối đa 02 NĂM, gia hạn MỘT LẦN thêm tối đa 02 năm.",
+  "gist": "Giấy phép lao động có hạn tối đa 2 năm và chỉ được gia hạn một lần, thêm tối đa 2 năm.",
+  "kind": "steps",
+  "hook": "Mẹo: hai cộng hai, rồi thôi; muốn ở tiếp phải xin tờ mới.",
   "tree": [
    {
     "label": "Thời hạn",
+    "icon": "calendar",
     "children": [
      "Tối đa 02 năm"
     ]
    },
    {
     "label": "Gia hạn",
+    "icon": "cycle",
     "children": [
      "Chỉ một lần",
      "Tối đa 02 năm"
@@ -39,12 +43,23 @@
    },
    {
     "label": "Hết hiệu lực",
+    "icon": "ban",
     "children": [
      "Hết hạn",
      "Chấm dứt hợp đồng lao động",
      "Làm sai nội dung giấy phép",
      "Bị thu hồi"
     ]
+   }
+  ],
+  "case": {
+   "q": "Giấy phép của anh R đã gia hạn một lần đến năm 2029. Hết hạn, anh có được gia hạn lần hai không?",
+   "a": "Không. Phải xin cấp giấy phép mới."
+  },
+  "contrast": [
+   {
+    "with": "lao-dong-nuoc-ngoai",
+    "text": "Giấy phép lao động là một trong các điều kiện; điều kiện lao động nước ngoài còn gồm tuổi, trình độ, sức khỏe, lý lịch."
    }
   ]
  },

@@ -5,7 +5,7 @@
  "term": "Phân phối chứng khoán chào bán ra công chúng",
  "definition": "Tổ chức phát hành, tổ chức bảo lãnh phát hành hoặc tổ chức đại lý phải phân phối chứng khoán công bằng, công khai và bảo đảm thời hạn đăng ký mua chứng khoán cho nhà đầu tư tối thiểu là 20 ngày; trừ trường hợp chứng khoán chào bán là chứng quyền có bảo đảm, thời hạn này phải được ghi trong Bản thông báo phát hành.",
  "plain": "Sau khi có Giấy chứng nhận và đã công bố, đợt chào bán bước vào phân phối. Các mốc cần nhớ: đăng ký mua tối thiểu 20 ngày; hoàn thành phân phối trong 90 ngày (gia hạn tối đa 30 ngày); tiền mua để trong tài khoản phong tỏa; báo cáo kết quả trong 10 ngày; giao chứng khoán cho người mua trong 30 ngày. Nếu đăng ký mua vượt số được phép thì phân bổ theo tỷ lệ đăng ký.",
- "example": "Đợt IPO 10 triệu cổ phiếu có nhà đầu tư đăng ký mua 20 triệu: mỗi người chỉ được phân bổ 50% số đăng ký, không được ưu tiên người quen của ban lãnh đạo.",
+ "example": "Đợt phát hành lần đầu 10 triệu cổ phiếu có nhà đầu tư đăng ký mua 20 triệu: mỗi người chỉ được phân bổ 50% số đăng ký, không được ưu tiên người quen của ban lãnh đạo.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 2 Điều 26 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)",
@@ -23,16 +23,20 @@
   "phân bổ theo tỷ lệ"
  ],
  "memo": {
-  "hook": "Mốc phân phối: đăng ký mua ≥ 20 NGÀY, xong trong 90 NGÀY, tiền vào TÀI KHOẢN PHONG TỎA.",
+  "gist": "Chứng khoán chào bán ra công chúng phải phân phối công bằng, cho đăng ký mua ít nhất 20 ngày, xong trong 90 ngày.",
+  "kind": "steps",
+  "hook": "Chia bánh công bằng, không dành phần cho người quen.",
   "tree": [
    {
     "label": "Nguyên tắc",
+    "icon": "scales",
     "children": [
      "Công bằng, công khai"
     ]
    },
    {
     "label": "Mốc",
+    "icon": "calendar",
     "children": [
      "Đăng ký mua tối thiểu 20 ngày",
      "Hoàn thành trong 90 ngày",
@@ -41,15 +45,27 @@
    },
    {
     "label": "Tiền mua",
+    "icon": "lock",
     "children": [
      "Tài khoản phong tỏa"
     ]
    },
    {
     "label": "Vượt cung",
+    "icon": "calc",
     "children": [
      "Phân bổ theo tỷ lệ"
     ]
+   }
+  ],
+  "case": {
+   "q": "Đợt phát hành 10 triệu cổ phiếu có người đăng ký mua 20 triệu. Phân bổ thế nào?",
+   "a": "Mỗi người được 50% số đăng ký, không ưu tiên người quen."
+  },
+  "contrast": [
+   {
+    "with": "dinh-chi-huy-bo-chao-ban",
+    "text": "Phân phối là bán ra; đình chỉ, hủy bỏ là chặn đợt bán."
    }
   ]
  },

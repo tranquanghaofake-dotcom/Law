@@ -22,10 +22,13 @@
   "khả năng sinh lời"
  ],
  "memo": {
-  "hook": "Ba lớp: TÀI SẢN VÔ HÌNH ⊃ TÀI SẢN TRÍ TUỆ → QUYỀN SỞ HỮU TRÍ TUỆ (học thuyết).",
+  "gist": "Tài sản trí tuệ là thành quả sáng tạo vô hình mà doanh nghiệp xác định được và có thể sinh lời.",
+  "kind": "tree",
+  "hook": "Như kho báu không thấy được: dùng mãi không mòn.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "idea",
     "children": [
      "Kết quả sáng tạo trí tuệ",
      "Tài sản vô hình"
@@ -33,6 +36,7 @@
    },
    {
     "label": "Đặc điểm",
+    "icon": "star",
     "children": [
      "Xác định được",
      "Không hao mòn, cạn kiệt",
@@ -41,9 +45,20 @@
    },
    {
     "label": "Phân biệt",
+    "icon": "compare",
     "children": [
-     "Quyền SHTT: được pháp luật bảo hộ"
+     "Quyền sở hữu trí tuệ: được luật bảo hộ"
     ]
+   }
+  ],
+  "case": {
+   "q": "Một hộp sữa có thể chứa những tài sản trí tuệ nào?",
+   "a": "Công thức, tên và logo, hình dáng hộp, hình vẽ trên bao bì."
+  },
+  "contrast": [
+   {
+    "with": "tstt-doi-tuong-quyen-shtt",
+    "text": "Tài sản trí tuệ là khái niệm học thuật rộng; đối tượng quyền sở hữu trí tuệ là thứ luật bảo hộ."
    }
   ]
  },

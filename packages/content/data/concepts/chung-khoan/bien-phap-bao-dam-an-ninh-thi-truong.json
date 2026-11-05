@@ -23,22 +23,27 @@
   "phong tỏa tài khoản"
  ],
  "memo": {
-  "hook": "Công cụ khẩn cấp: GIÁM SÁT – TẠM NGỪNG – CẤM – PHONG TỎA.",
+  "gist": "Cơ quan có thẩm quyền được giám sát, tạm ngừng giao dịch, cấm, phong tỏa tài khoản để giữ an toàn thị trường.",
+  "kind": "tree",
+  "hook": "Như còi báo động và nút dừng khẩn cấp của sàn.",
   "tree": [
    {
     "label": "Giám sát",
+    "icon": "eye",
     "children": [
      "An ninh, an toàn thị trường"
     ]
    },
    {
     "label": "Xử lý sự cố",
+    "icon": "shield",
     "children": [
      "Ứng phó, khắc phục"
     ]
    },
    {
     "label": "Tạm ngừng",
+    "icon": "pause",
     "children": [
      "Giao dịch một mã",
      "Sở giao dịch, Tổng công ty lưu ký"
@@ -46,10 +51,21 @@
    },
    {
     "label": "Chế tài",
+    "icon": "ban",
     "children": [
      "Cấm đảm nhiệm chức vụ",
      "Phong tỏa tài khoản"
     ]
+   }
+  ],
+  "case": {
+   "q": "Phát hiện nhóm tài khoản thao túng giá cổ phiếu. Cơ quan có thể làm gì ngay?",
+   "a": "Phong tỏa tài khoản chứng khoán và yêu cầu phong tỏa tài khoản tiền liên quan."
+  },
+  "contrast": [
+   {
+    "with": "uy-ban-chung-khoan-nha-nuoc",
+    "text": "Biện pháp an ninh là công cụ khẩn cấp; Ủy ban là cơ quan dùng công cụ đó."
    }
   ]
  },

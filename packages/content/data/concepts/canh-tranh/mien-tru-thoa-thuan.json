@@ -23,16 +23,20 @@
   "không liên quan đến giá"
  ],
  "memo": {
-  "hook": "Miễn trừ: CÓ LỢI cho người tiêu dùng + MỘT điều kiện; có THỜI HẠN.",
+  "gist": "Thỏa thuận bị cấm vẫn được cho làm có thời hạn nếu có lợi cho người tiêu dùng và đạt thêm một điều kiện.",
+  "kind": "checklist",
+  "hook": "Như giấy phép đặc cách: có lợi cho khách và có lý do chính đáng, nhưng chỉ cho mượn có hạn.",
   "tree": [
    {
     "label": "Bắt buộc",
+    "icon": "cart",
     "children": [
      "Có lợi cho người tiêu dùng"
     ]
    },
    {
     "label": "Cộng một trong",
+    "icon": "calc",
     "children": [
      "Tiến bộ kỹ thuật, chất lượng",
      "Sức cạnh tranh doanh nghiệp Việt Nam",
@@ -41,10 +45,21 @@
    },
    {
     "label": "Không được miễn",
+    "icon": "ban",
     "children": [
      "Thông đồng đấu thầu",
      "Ngăn cản gia nhập, loại bỏ"
     ]
+   }
+  ],
+  "case": {
+   "q": "Các hãng điện thoại thỏa thuận dùng chung một chuẩn sạc, có lợi cho người dùng. Có thể xin miễn trừ không?",
+   "a": "Có thể, theo điều kiện thúc đẩy tiến bộ kỹ thuật, và chỉ được miễn trừ có thời hạn."
+  },
+  "contrast": [
+   {
+    "with": "thoa-thuan-han-che-canh-tranh-bi-cam",
+    "text": "Bài kia nói thỏa thuận nào bị cấm; miễn trừ là ngoại lệ cho phép một số thỏa thuận đó."
    }
   ]
  },

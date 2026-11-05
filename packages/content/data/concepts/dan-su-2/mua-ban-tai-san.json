@@ -22,10 +22,13 @@
   "thuộc sở hữu người bán hoặc có quyền bán"
  ],
  "memo": {
-  "hook": "Bán: CHUYỂN QUYỀN SỞ HỮU; mua: TRẢ TIỀN; tài sản phải của người bán hoặc người có QUYỀN BÁN.",
+  "gist": "Bên bán chuyển quyền sở hữu tài sản, bên mua trả tiền; người bán phải là chủ hoặc có quyền bán.",
+  "kind": "tree",
+  "hook": "Không bán được thứ không phải của mình.",
   "tree": [
    {
     "label": "Nghĩa vụ",
+    "icon": "cycle",
     "children": [
      "Bên bán chuyển quyền sở hữu",
      "Bên mua trả tiền"
@@ -33,16 +36,28 @@
    },
    {
     "label": "Tính chất",
+    "icon": "scales",
     "children": [
      "Song vụ, có đền bù"
     ]
    },
    {
     "label": "Tài sản",
+    "icon": "key",
     "children": [
      "Thuộc sở hữu người bán",
      "Hoặc người có quyền bán"
     ]
+   }
+  ],
+  "case": {
+   "q": "A bán chiếc xe máy mượn của B cho C, B không cho phép. A có quyền bán không?",
+   "a": "Không. A không phải chủ và không có quyền bán."
+  },
+  "contrast": [
+   {
+    "with": "tang-cho",
+    "text": "Mua bán có trả tiền; tặng cho không đòi đền bù."
    }
   ]
  },

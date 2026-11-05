@@ -23,28 +23,43 @@
   "trừ Điều 22, 23, 24"
  ],
  "memo": {
-  "hook": "Năng lực HÀNH VI = TỰ MÌNH làm; đủ 18 TUỔI là đầy đủ.",
+  "gist": "Năng lực hành vi là khả năng tự mình làm giao dịch; đủ 18 tuổi là đầy đủ, trừ khi Tòa tuyên khác.",
+  "kind": "tree",
+  "hook": "Như bằng lái: có tuổi mới tự cầm lái, chưa đủ thì người lớn lái thay.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "person",
     "children": [
      "Tự mình xác lập quyền, nghĩa vụ"
     ]
    },
    {
     "label": "Đầy đủ",
+    "icon": "child",
     "children": [
      "Từ đủ 18 tuổi"
     ]
    },
    {
     "label": "Không đầy đủ",
+    "icon": "warn",
     "children": [
      "Chưa thành niên",
      "Mất năng lực",
      "Khó khăn nhận thức",
      "Hạn chế năng lực"
     ]
+   }
+  ],
+  "case": {
+   "q": "Người 20 tuổi bị Tòa tuyên mất năng lực hành vi vì bệnh tâm thần. Ai làm giao dịch thay?",
+   "a": "Người đại diện theo pháp luật."
+  },
+  "contrast": [
+   {
+    "with": "nang-luc-phap-luat-dan-su",
+    "text": "Năng lực hành vi là tự mình làm; năng lực pháp luật là có quyền, ai cũng như nhau."
    }
   ]
  },

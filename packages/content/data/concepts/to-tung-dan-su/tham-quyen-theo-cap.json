@@ -5,7 +5,7 @@
  "term": "Thẩm quyền theo cấp: Tòa án nhân dân khu vực",
  "definition": "Tòa án nhân dân khu vực có thẩm quyền giải quyết theo thủ tục sơ thẩm những tranh chấp quy định tại các điều 26, 28, 30 và 32 của Bộ luật này; giải quyết những yêu cầu quy định tại các điều 27, 29, 31 và 33 của Bộ luật này, trừ yêu cầu hủy phán quyết trọng tài, đăng ký phán quyết trọng tài vụ việc thuộc thẩm quyền giải quyết của một số Tòa án nhân dân cấp tỉnh theo quy định tại khoản 2 Điều 37 của Bộ luật này.",
  "plain": "Từ 01/7/2025 (Luật 85/2025/QH15, Luật Tổ chức TAND sửa đổi): bỏ Tòa án cấp huyện và Tòa án cấp cao; thành lập TÒA ÁN NHÂN DÂN KHU VỰC. TAND KHU VỰC: SƠ THẨM hầu hết vụ việc dân sự, HNGĐ, kinh doanh thương mại, lao động (kể cả có yếu tố nước ngoài). TAND CẤP TỈNH: PHÚC THẨM bản án của TAND khu vực; giám đốc thẩm, tái thẩm; hủy, đăng ký phán quyết trọng tài (Điều 37). Đây là thay đổi lớn so với giáo trình cũ (TAND huyện / tỉnh / cấp cao).",
- "example": "Tranh chấp hợp đồng mua bán giữa hai cá nhân ở Hà Nội năm 2026: TAND khu vực có thẩm quyền sơ thẩm; kháng cáo thì TAND thành phố Hà Nội xét xử phúc thẩm.",
+ "example": "Tranh chấp hợp đồng mua bán giữa hai cá nhân ở Hà Nội năm 2026: Tòa án nhân dân khu vực xử sơ thẩm; nếu kháng cáo thì Tòa án nhân dân thành phố Hà Nội xử phúc thẩm.",
  "source": {
   "kind": "statute",
   "cite": "Điều 35 Bộ luật Tố tụng dân sự 2015 (sửa đổi, bổ sung năm 2019, 2020, 2022, 2023, 2024, 2025)",
@@ -25,10 +25,13 @@
  ],
  "note": "Luật 85/2025/QH15 (hiệu lực 01/7/2025) sửa đổi các điều về thẩm quyền theo mô hình Tòa án nhân dân khu vực; câu chữ trên theo VBHN 21/VBHN-VPQH 2026.",
  "memo": {
-  "hook": "Từ 01/7/2025: TAND KHU VỰC xử SƠ THẨM; TAND TỈNH xử PHÚC THẨM.",
+  "gist": "Từ ngày 1 tháng 7 năm 2025, Tòa khu vực xử sơ thẩm hầu hết vụ việc, Tòa cấp tỉnh xử phúc thẩm.",
+  "kind": "ladder",
+  "hook": "Như hai tầng lầu: tầng dưới xử lần đầu, tầng trên xem lại.",
   "tree": [
    {
     "label": "Thay đổi",
+    "icon": "cycle",
     "children": [
      "Bỏ Tòa án cấp huyện",
      "Bỏ Tòa án cấp cao"
@@ -36,6 +39,7 @@
    },
    {
     "label": "Tòa khu vực",
+    "icon": "home",
     "children": [
      "Sơ thẩm hầu hết vụ việc",
      "Kể cả có yếu tố nước ngoài"
@@ -43,11 +47,22 @@
    },
    {
     "label": "Tòa cấp tỉnh",
+    "icon": "state",
     "children": [
      "Phúc thẩm",
      "Giám đốc thẩm, tái thẩm",
      "Việc liên quan phán quyết trọng tài"
     ]
+   }
+  ],
+  "case": {
+   "q": "Tranh chấp hợp đồng mua bán giữa hai cá nhân ở Hà Nội năm 2026. Tòa nào xử sơ thẩm, Tòa nào phúc thẩm?",
+   "a": "Tòa khu vực xử sơ thẩm; Tòa thành phố Hà Nội xử phúc thẩm."
+  },
+  "contrast": [
+   {
+    "with": "tham-quyen-theo-lanh-tho",
+    "text": "Theo cấp là tòa trên hay tòa dưới; theo lãnh thổ là tòa ở nơi nào."
    }
   ]
  },

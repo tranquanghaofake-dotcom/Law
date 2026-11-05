@@ -24,16 +24,20 @@
   "xã quan"
  ],
  "memo": {
-  "hook": "1242: nhà Trần chia 12 LỘ và lần đầu đặt XÃ QUAN do triều đình cử.",
+  "gist": "Năm 1242 nhà Trần chia 12 lộ và lần đầu cử xã quan, đưa tay triều đình xuống tận cấp xã.",
+  "kind": "tree",
+  "hook": "Cánh tay dài của kinh thành vươn tới tận cổng làng.",
   "tree": [
    {
     "label": "Mốc",
+    "icon": "calendar",
     "children": [
      "1242"
     ]
    },
    {
     "label": "Lộ",
+    "icon": "map",
     "children": [
      "12 lộ",
      "An phủ sứ, trấn phủ sứ"
@@ -41,6 +45,7 @@
    },
    {
     "label": "Xã",
+    "icon": "village",
     "children": [
      "Đại tư xã",
      "Tiểu tư xã"
@@ -48,9 +53,20 @@
    },
    {
     "label": "Ý nghĩa",
+    "icon": "idea",
     "children": [
      "Trung ương với xuống tận xã"
     ]
+   }
+  ],
+  "case": {
+   "q": "Điểm mới về hành chính cấp xã năm 1242 là gì?",
+   "a": "Đặt xã quan do triều đình cử."
+  },
+  "contrast": [
+   {
+    "with": "hai-muoi-bon-lo",
+    "text": "Nhà Trần chia 12 lộ; nhà Lý chia 24 lộ."
    }
   ]
  },

@@ -24,10 +24,13 @@
   "khách thể"
  ],
  "memo": {
-  "hook": "Bốn yếu tố: KHÁCH QUAN – CHỦ QUAN – CHỦ THỂ – KHÁCH THỂ.",
+  "gist": "Một vi phạm pháp luật được xét qua bốn mặt: hành vi và hậu quả, lỗi, người vi phạm, và quan hệ bị xâm hại.",
+  "kind": "tree",
+  "hook": "Bốn câu hỏi: làm gì, nghĩ gì, ai làm, hại cái gì.",
   "tree": [
    {
     "label": "Mặt khách quan",
+    "icon": "bolt",
     "children": [
      "Hành vi trái pháp luật",
      "Hậu quả, quan hệ nhân quả"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Mặt chủ quan",
+    "icon": "idea",
     "children": [
      "Lỗi cố ý trực tiếp, gián tiếp",
      "Lỗi vô ý: quá tự tin, cẩu thả",
@@ -43,15 +47,27 @@
    },
    {
     "label": "Chủ thể",
+    "icon": "person",
     "children": [
      "Có năng lực trách nhiệm"
     ]
    },
    {
     "label": "Khách thể",
+    "icon": "target",
     "children": [
      "Quan hệ xã hội bị xâm hại"
     ]
+   }
+  ],
+  "case": {
+   "q": "D vượt đèn đỏ gây tai nạn vì quá tự tin là kịp. Lỗi của D thuộc loại nào?",
+   "a": "Lỗi vô ý do quá tự tin."
+  },
+  "contrast": [
+   {
+    "with": "llc-vi-pham-phap-luat",
+    "text": "Cấu thành là bốn yếu tố để phân tích; vi phạm pháp luật là chính hành vi được phân tích."
    }
   ]
  },

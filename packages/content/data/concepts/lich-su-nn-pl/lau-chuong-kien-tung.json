@@ -23,27 +23,42 @@
   "vua xét xử tối cao"
  ],
  "memo": {
-  "hook": "1029: đặt LẦU CHUÔNG để dân kêu oan thẳng lên VUA.",
+  "gist": "Năm 1029 nhà Lý đặt lầu chuông ở sân rồng để dân bị oan đánh chuông, đưa việc kiện thẳng lên vua.",
+  "kind": "tree",
+  "hook": "Tiếng chuông kêu oan vượt qua mọi tầng quan.",
   "tree": [
    {
     "label": "Mốc",
+    "icon": "calendar",
     "children": [
      "1029, Lý Thái Tông"
     ]
    },
    {
     "label": "Thiết chế",
+    "icon": "announce",
     "children": [
      "Lầu chuông hai bên thềm rồng"
     ]
    },
    {
     "label": "Ý nghĩa",
+    "icon": "idea",
     "children": [
      "Quyền kêu oan trực tiếp",
      "Vua xét xử tối cao",
      "Tư tưởng thân dân"
     ]
+   }
+  ],
+  "case": {
+   "q": "Người dân bị quan địa phương xử oan thời Lý có thể làm gì?",
+   "a": "Lên kinh đánh chuông để việc kiện được tâu lên vua."
+  },
+  "contrast": [
+   {
+    "with": "hinh-thu-1042",
+    "text": "Lầu chuông là cách kêu oan; Hình thư 1042 là bộ luật."
    }
   ]
  },

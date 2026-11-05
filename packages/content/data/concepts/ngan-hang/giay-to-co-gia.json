@@ -26,10 +26,13 @@
  ],
  "note": "Luật Ngân hàng Nhà nước Việt Nam 46/2010/QH12 có hiệu lực từ 01/01/2011; Luật 23/2026/QH16 sửa đổi nhiều điều (Điều 4, 27, 34, 42, 44, 45, 57, 58, 62…), có hiệu lực từ 01/12/2026 — điều được trích không bị sửa.",
  "memo": {
-  "hook": "Giấy tờ có giá = bằng chứng NỢ của bên PHÁT HÀNH với người CẦM.",
+  "gist": "Giấy tờ có giá là giấy chứng nhận bên phát hành nợ người cầm giấy một khoản tiền, có hạn và điều kiện trả lãi.",
+  "kind": "tree",
+  "hook": "Như giấy biên nhận nợ có thể đem bán lại cho người khác.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "scroll",
     "children": [
      "Nghĩa vụ trả nợ",
      "Có thời hạn, điều kiện trả lãi"
@@ -37,6 +40,7 @@
    },
    {
     "label": "Ví dụ",
+    "icon": "doc",
     "children": [
      "Trái phiếu, kỳ phiếu",
      "Tín phiếu, chứng chỉ tiền gửi"
@@ -44,10 +48,21 @@
    },
    {
     "label": "Dùng để",
+    "icon": "target",
     "children": [
      "Huy động vốn",
      "Chiết khấu"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ngân hàng phát hành kỳ phiếu kỳ hạn 12 tháng. Người cầm kỳ phiếu là ai với ngân hàng?",
+   "a": "Là chủ nợ; kỳ phiếu xác nhận ngân hàng nợ họ."
+  },
+  "contrast": [
+   {
+    "with": "nhan-tien-gui",
+    "text": "Giấy tờ có giá là giấy nợ có thể mua bán; tiền gửi là khoản khách gửi vào tài khoản."
    }
   ]
  },

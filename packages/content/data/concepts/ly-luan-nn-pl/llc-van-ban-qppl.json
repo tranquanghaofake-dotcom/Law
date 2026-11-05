@@ -5,7 +5,7 @@
  "term": "Văn bản quy phạm pháp luật",
  "definition": "Văn bản quy phạm pháp luật là văn bản có chứa quy phạm pháp luật, được ban hành đúng thẩm quyền, hình thức, trình tự, thủ tục theo quy định của Luật này.",
  "plain": "Hai dấu hiệu luật định: NỘI DUNG chứa quy phạm pháp luật (quy tắc xử sự chung, bắt buộc chung, áp dụng nhiều lần); HÌNH THỨC ban hành đúng thẩm quyền, hình thức, trình tự, thủ tục. Phân biệt với VĂN BẢN ÁP DỤNG PHÁP LUẬT (quyết định cá biệt, áp dụng một lần cho chủ thể xác định — bản án, quyết định xử phạt) và VĂN BẢN HÀNH CHÍNH (công văn, thông báo). Hệ thống VBQPPL (Điều 4): Hiến pháp; luật, nghị quyết của Quốc hội; pháp lệnh; lệnh, quyết định của Chủ tịch nước; nghị định; quyết định của Thủ tướng; thông tư; nghị quyết HĐND, quyết định UBND cấp tỉnh, cấp xã… Từ 01/7/2025 cấp huyện không còn.",
- "example": "Nghị định của Chính phủ quy định mức xử phạt vi phạm giao thông: VBQPPL. Quyết định của Chủ tịch UBND xã xử phạt ông A 500.000 đồng: văn bản áp dụng pháp luật.",
+ "example": "Nghị định của Chính phủ quy định mức phạt vi phạm giao thông: văn bản quy phạm. Quyết định của Chủ tịch Ủy ban nhân dân xã phạt ông A 500 nghìn: văn bản áp dụng pháp luật.",
  "source": {
   "kind": "statute",
   "cite": "Điều 2 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)",
@@ -25,16 +25,20 @@
  ],
  "note": "Luật Ban hành văn bản quy phạm pháp luật 64/2025/QH15 có hiệu lực từ 01/4/2025, thay thế Luật 80/2015/QH13; sửa đổi bởi Luật 87/2025/QH15 (hiệu lực 01/7/2025) — văn bản hợp nhất 54/VBHN-VPQH 2025.",
  "memo": {
-  "hook": "VBQPPL: NỘI DUNG có quy phạm + HÌNH THỨC đúng thủ tục; khác văn bản ÁP DỤNG (cá biệt).",
+  "gist": "Văn bản chứa quy tắc chung, ban hành đúng thẩm quyền và thủ tục; khác văn bản áp dụng chỉ dùng cho một việc.",
+  "kind": "tree",
+  "hook": "Văn bản quy phạm là khuôn bánh; quyết định cá biệt là từng chiếc bánh.",
   "tree": [
    {
     "label": "Nội dung",
+    "icon": "measure",
     "children": [
      "Chứa quy phạm pháp luật"
     ]
    },
    {
     "label": "Hình thức",
+    "icon": "scroll",
     "children": [
      "Đúng thẩm quyền",
      "Đúng trình tự, thủ tục"
@@ -42,9 +46,20 @@
    },
    {
     "label": "Phân biệt",
+    "icon": "compare",
     "children": [
      "Văn bản áp dụng: bản án, quyết định xử phạt"
     ]
+   }
+  ],
+  "case": {
+   "q": "Quyết định của Chủ tịch xã phạt ông A 500 nghìn có phải văn bản quy phạm không?",
+   "a": "Không. Đó là văn bản áp dụng pháp luật."
+  },
+  "contrast": [
+   {
+    "with": "llc-quy-pham-phap-luat",
+    "text": "Văn bản quy phạm là tờ văn bản; quy phạm là quy tắc bên trong nó."
    }
   ]
  },

@@ -5,7 +5,7 @@
  "term": "Quyền bầu cử và quyền ứng cử",
  "definition": "Công dân đủ mười tám tuổi trở lên có quyền bầu cử và đủ hai mươi mốt tuổi trở lên có quyền ứng cử vào Quốc hội, Hội đồng nhân dân. Việc thực hiện các quyền này do luật định.",
  "plain": "Tuổi bầu cử 18, tuổi ứng cử 21, tính đến ngày bầu cử được công bố (Điều 2 Luật Bầu cử). Đây là quyền chính trị của CÔNG DÂN (người nước ngoài không có). Đủ tuổi chưa đủ: người ứng cử còn phải đáp ứng tiêu chuẩn đại biểu theo Luật Tổ chức Quốc hội, Luật Tổ chức chính quyền địa phương (Điều 3) và không thuộc trường hợp không được ứng cử (Điều 37).",
- "example": "Bạn sinh ngày 20/5/2008, ngày bầu cử là 15/3/2026: chưa đủ 18 tuổi tính đến ngày bầu cử nên chưa có quyền bầu cử lần này.",
+ "example": "Bạn sinh ngày 20 tháng 5 năm 2008, ngày bầu cử là 15 tháng 3 năm 2026: chưa đủ 18 tuổi tính đến ngày bầu cử nên chưa có quyền bầu cử lần này.",
  "source": {
   "kind": "statute",
   "cite": "Điều 27 Hiến pháp 2013",
@@ -23,16 +23,20 @@
   "tính đến ngày bầu cử được công bố"
  ],
  "memo": {
-  "hook": "18 tuổi BẦU, 21 tuổi ỨNG CỬ.",
+  "gist": "Công dân đủ 18 tuổi được bầu cử, đủ 21 tuổi được ứng cử, tính đến ngày bầu cử.",
+  "kind": "tree",
+  "hook": "Mẹo mười tám bầu, hai mốt ra.",
   "tree": [
    {
     "label": "Bầu cử",
+    "icon": "vote",
     "children": [
      "Đủ 18 tuổi"
     ]
    },
    {
     "label": "Ứng cử",
+    "icon": "person",
     "children": [
      "Đủ 21 tuổi",
      "Đạt tiêu chuẩn đại biểu"
@@ -40,15 +44,27 @@
    },
    {
     "label": "Mốc tính tuổi",
+    "icon": "calendar",
     "children": [
      "Ngày bầu cử được công bố"
     ]
    },
    {
     "label": "Chủ thể",
+    "icon": "flag",
     "children": [
      "Chỉ công dân"
     ]
+   }
+  ],
+  "case": {
+   "q": "Bạn sinh ngày 20 tháng 5 năm 2008, ngày bầu cử là 15 tháng 3 năm 2026. Bạn có quyền bầu cử không?",
+   "a": "Chưa, vì chưa đủ 18 tuổi tính đến ngày bầu cử."
+  },
+  "contrast": [
+   {
+    "with": "nguyen-tac-bau-cu",
+    "text": "Quyền bầu cử là ai được bầu; nguyên tắc bầu cử là bầu thế nào."
    }
   ]
  },

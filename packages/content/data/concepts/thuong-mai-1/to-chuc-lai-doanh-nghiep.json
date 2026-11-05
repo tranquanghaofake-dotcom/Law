@@ -5,7 +5,7 @@
  "term": "Tổ chức lại doanh nghiệp: chia, tách, hợp nhất, sáp nhập",
  "definition": "Công ty trách nhiệm hữu hạn, công ty cổ phần có thể chia các tài sản, quyền và nghĩa vụ, thành viên, cổ đông của công ty hiện có (sau đây gọi là công ty bị chia) để thành lập hai hoặc nhiều công ty mới. (…) Hai hoặc một số công ty (sau đây gọi là công ty bị hợp nhất) có thể hợp nhất thành một công ty mới (sau đây gọi là công ty hợp nhất), đồng thời chấm dứt tồn tại của các công ty bị hợp nhất. (…) Một hoặc một số công ty (sau đây gọi là công ty bị sáp nhập) có thể sáp nhập vào một công ty khác (sau đây gọi là công ty nhận sáp nhập) bằng cách chuyển toàn bộ tài sản, quyền, nghĩa vụ và lợi ích hợp pháp sang công ty nhận sáp nhập, đồng thời chấm dứt sự tồn tại của công ty bị sáp nhập.",
  "plain": "Bốn hình thức + chuyển đổi loại hình: CHIA (công ty bị chia CHẤM DỨT, lập 2+ công ty mới); TÁCH (công ty bị tách VẪN TỒN TẠI, lập thêm công ty mới — Điều 199); HỢP NHẤT (các công ty CHẤM DỨT, lập MỘT công ty MỚI); SÁP NHẬP (công ty bị sáp nhập CHẤM DỨT, nhập vào công ty nhận sáp nhập CÒN TỒN TẠI). Chia, tách chỉ áp dụng cho TNHH, cổ phần. Nếu thuộc ngưỡng phải tuân thủ thủ tục thông báo tập trung kinh tế theo Luật Cạnh tranh.",
- "example": "Công ty A tách bộ phận logistics thành công ty B mới, A vẫn tiếp tục hoạt động: đây là TÁCH công ty, không phải CHIA.",
+ "example": "Công ty A tách bộ phận vận tải thành công ty B mới, A vẫn tiếp tục hoạt động: đây là tách công ty, không phải chia.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1 Điều 198, khoản 1 Điều 200, khoản 1 Điều 201 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)",
@@ -23,10 +23,13 @@
   "sáp nhập: nhập vào công ty khác"
  ],
  "memo": {
-  "hook": "CHIA: cũ mất; TÁCH: cũ còn; HỢP NHẤT: lập mới, cũ mất; SÁP NHẬP: nhập vào bên còn.",
+  "gist": "Bốn cách tổ chức lại: chia và hợp nhất thì công ty cũ mất; tách và sáp nhập thì vẫn còn một bên cũ.",
+  "kind": "compare",
+  "hook": "Đập vỡ bình lấy mảnh thì bình mất; mẻ một góc thì bình vẫn đứng.",
   "tree": [
    {
     "label": "Chia",
+    "icon": "cut",
     "children": [
      "Công ty bị chia chấm dứt",
      "Lập 2+ công ty mới"
@@ -34,6 +37,7 @@
    },
    {
     "label": "Tách",
+    "icon": "conflict",
     "children": [
      "Công ty bị tách còn",
      "Lập thêm công ty mới"
@@ -41,6 +45,7 @@
    },
    {
     "label": "Hợp nhất",
+    "icon": "compare",
     "children": [
      "Các công ty chấm dứt",
      "Lập một công ty mới"
@@ -48,10 +53,21 @@
    },
    {
     "label": "Sáp nhập",
+    "icon": "arrow",
     "children": [
      "Bị sáp nhập chấm dứt",
      "Bên nhận còn tồn tại"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty A tách bộ phận vận tải thành công ty B mới, A vẫn hoạt động. Đây là chia hay tách?",
+   "a": "Tách công ty, vì công ty cũ vẫn còn."
+  },
+  "contrast": [
+   {
+    "with": "giai-the-doanh-nghiep",
+    "text": "Tổ chức lại là thay hình dạng công ty; giải thể là đóng cửa hẳn."
    }
   ]
  },

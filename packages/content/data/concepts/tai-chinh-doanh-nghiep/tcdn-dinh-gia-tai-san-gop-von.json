@@ -24,10 +24,13 @@
  ],
  "note": "Luật Doanh nghiệp 59/2020/QH14 có hiệu lực từ 01/01/2021, thay thế Luật Doanh nghiệp 2014 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 03/2022/QH15 và Luật 76/2025/QH15 (hiệu lực 01/7/2025) — văn bản hợp nhất 67/VBHN-VPQH 2025.",
  "memo": {
-  "hook": "Trừ TIỀN ĐỒNG, NGOẠI TỆ, VÀNG, tài sản góp phải ĐỊNH GIÁ.",
+  "gist": "Góp bằng thứ không phải tiền đồng, ngoại tệ hay vàng thì phải định giá ra tiền đồng; định giá cao quá thì phải bù.",
+  "kind": "tree",
+  "hook": "Khai giá món đồ góp quá tay thì cả nhóm phải móc túi bù.",
   "tree": [
    {
     "label": "Không cần định giá",
+    "icon": "unlock",
     "children": [
      "Đồng Việt Nam",
      "Ngoại tệ tự do chuyển đổi",
@@ -36,6 +39,7 @@
    },
    {
     "label": "Ai định giá",
+    "icon": "people",
     "children": [
      "Thành viên, cổ đông sáng lập (đồng thuận)",
      "Tổ chức thẩm định giá"
@@ -43,9 +47,20 @@
    },
    {
     "label": "Định giá cao hơn thực tế",
+    "icon": "warn",
     "children": [
      "Liên đới góp thêm phần chênh"
     ]
+   }
+  ],
+  "case": {
+   "q": "Máy in trị giá thực 500 triệu, các thành viên định giá 800 triệu. Hậu quả là gì?",
+   "a": "Các thành viên liên đới góp thêm 300 triệu chênh lệch."
+  },
+  "contrast": [
+   {
+    "with": "tcdn-gop-von",
+    "text": "Định giá là đổi tài sản ra tiền; góp vốn là chính việc đưa tài sản vào công ty."
    }
   ]
  },

@@ -5,7 +5,7 @@
  "term": "Bảo hiểm y tế và nguyên tắc bảo hiểm y tế",
  "definition": "Bảo hiểm y tế là hình thức bảo hiểm bắt buộc được áp dụng đối với các đối tượng theo quy định của Luật này để chăm sóc sức khỏe, không vì mục đích lợi nhuận do Nhà nước tổ chức thực hiện. Bảo hiểm y tế toàn dân là việc các đối tượng quy định trong Luật này đều tham gia bảo hiểm y tế. (…) Bảo đảm chia sẻ rủi ro giữa những người tham gia bảo hiểm y tế. (…) Chi phí khám bệnh, chữa bệnh bảo hiểm y tế do quỹ bảo hiểm y tế và người tham gia bảo hiểm y tế cùng chi trả.",
  "plain": "Đặc điểm: BẮT BUỘC, KHÔNG VÌ LỢI NHUẬN, Nhà nước tổ chức; mục tiêu BẢO HIỂM Y TẾ TOÀN DÂN. Năm nhóm đối tượng (Điều 12): do người sử dụng lao động và người lao động đóng; do cơ quan BHXH đóng; do ngân sách nhà nước đóng; được ngân sách hỗ trợ mức đóng; tự đóng. Mức hưởng theo mức độ bệnh tật, nhóm đối tượng, thời gian tham gia (khoản 3 Điều 3), có CÙNG CHI TRẢ (khoản 4) — khác bảo hiểm sức khỏe thương mại (tự nguyện, vì lợi nhuận, theo Luật Kinh doanh bảo hiểm).",
- "example": "Sinh viên tham gia BHYT học sinh, sinh viên: khám đúng tuyến được quỹ trả 80% chi phí trong phạm vi hưởng, phần còn lại tự trả (cùng chi trả).",
+ "example": "Sinh viên có thẻ bảo hiểm y tế đi khám đúng nơi đăng ký: quỹ trả 80% chi phí trong phạm vi được hưởng, sinh viên tự trả phần còn lại.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1, 2 Điều 2; khoản 1, 4 Điều 3 Luật Bảo hiểm y tế (sửa đổi, bổ sung đến năm 2025)",
@@ -25,10 +25,13 @@
  ],
  "note": "Luật Bảo hiểm y tế 25/2008/QH12 được sửa đổi nhiều lần, gần nhất bởi Luật 51/2024/QH15 (hiệu lực 01/7/2025) và Luật Phòng bệnh 114/2025/QH15 (hiệu lực 01/7/2026); văn bản hợp nhất 40/VBHN-VPQH 2026.",
  "memo": {
-  "hook": "BẮT BUỘC, KHÔNG VÌ LỢI NHUẬN, hướng tới TOÀN DÂN; có CÙNG CHI TRẢ.",
+  "gist": "Bảo hiểm y tế là bảo hiểm bắt buộc, Nhà nước tổ chức không vì lời, giúp trả bớt tiền khám chữa bệnh.",
+  "kind": "compare",
+  "hook": "Như quỹ chung của làng: ai cũng góp ít, người ốm được đỡ nhiều.",
   "tree": [
    {
     "label": "Đặc điểm",
+    "icon": "list",
     "children": [
      "Bắt buộc",
      "Không vì lợi nhuận",
@@ -37,22 +40,35 @@
    },
    {
     "label": "Mục tiêu",
+    "icon": "target",
     "children": [
-     "Bảo hiểm y tế toàn dân"
+     "Ai cũng tham gia"
     ]
    },
    {
     "label": "Mức hưởng",
+    "icon": "health",
     "children": [
-     "Theo bệnh tật, đối tượng, thời gian",
-     "Có cùng chi trả"
+     "Theo bệnh, đối tượng, thời gian",
+     "Người bệnh trả thêm một phần"
     ]
    },
    {
-    "label": "Phân biệt",
+    "label": "Khác bảo hiểm sức khỏe tư",
+    "icon": "compare",
     "children": [
-     "Bảo hiểm sức khỏe thương mại: tự nguyện, vì lợi nhuận"
+     "Bảo hiểm tư: tự nguyện, vì lợi nhuận"
     ]
+   }
+  ],
+  "case": {
+   "q": "Bảo hiểm sức khỏe do công ty bảo hiểm tư nhân bán có phải bảo hiểm y tế theo luật không?",
+   "a": "Không. Đó là bảo hiểm thương mại: tự nguyện và có mục đích kiếm lời."
+  },
+  "contrast": [
+   {
+    "with": "muc-huong-bao-hiem-y-te",
+    "text": "Bảo hiểm y tế là cả chế độ; mức hưởng chỉ là tỉ lệ phần trăm chi phí mà quỹ trả cho từng nhóm người."
    }
   ]
  },

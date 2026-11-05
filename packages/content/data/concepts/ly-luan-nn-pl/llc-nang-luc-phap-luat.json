@@ -26,10 +26,13 @@
  ],
  "note": "Bộ luật Dân sự 91/2015/QH13 có hiệu lực từ 01/01/2017; chưa có văn bản sửa đổi có hiệu lực.",
  "memo": {
-  "hook": "Năng lực PHÁP LUẬT: CÓ quyền; tiền đề của năng lực hành vi.",
+  "gist": "Năng lực pháp luật là khả năng được hưởng quyền và gánh nghĩa vụ; ai cũng như nhau, từ khi sinh tới khi chết.",
+  "kind": "tree",
+  "hook": "Như tấm vé vào cửa phát cho mọi em bé lúc chào đời.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "doc",
     "children": [
      "Được hưởng quyền",
      "Gánh vác nghĩa vụ"
@@ -37,6 +40,7 @@
    },
    {
     "label": "Đặc điểm (cá nhân)",
+    "icon": "scales",
     "children": [
      "Mọi người như nhau",
      "Từ khi sinh đến khi chết"
@@ -44,9 +48,20 @@
    },
    {
     "label": "Quan hệ",
+    "icon": "calc",
     "children": [
      "Pháp luật + hành vi = năng lực chủ thể"
     ]
+   }
+  ],
+  "case": {
+   "q": "Trẻ sơ sinh có quyền thừa kế không?",
+   "a": "Có, vì đã có năng lực pháp luật, dù chưa tự làm được."
+  },
+  "contrast": [
+   {
+    "with": "llc-nang-luc-hanh-vi",
+    "text": "Năng lực pháp luật là có quyền; năng lực hành vi là tự thực hiện quyền."
    }
   ]
  },

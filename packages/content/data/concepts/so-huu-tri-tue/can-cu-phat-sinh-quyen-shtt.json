@@ -23,10 +23,13 @@
  ],
  "note": "Điều 6 có nội dung được sửa đổi, bổ sung bởi Luật 42/2019/QH14 (hiệu lực 01/11/2019); Luật 131/2025/QH15 (hiệu lực 01/4/2026) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
  "memo": {
-  "hook": "Quyền TÁC GIẢ: TỰ ĐỘNG khi sáng tạo; SÁNG CHẾ, NHÃN HIỆU: phải ĐĂNG KÝ.",
+  "gist": "Quyền tác giả tự có ngay khi tác phẩm được sáng tạo và định hình; sáng chế, nhãn hiệu thì phải đăng ký.",
+  "kind": "compare",
+  "hook": "Viết xong là của mình; phát minh xong phải ra phòng công chứng.",
   "tree": [
    {
     "label": "Quyền tác giả",
+    "icon": "pen",
     "children": [
      "Phát sinh khi sáng tạo và định hình",
      "Không cần đăng ký"
@@ -34,21 +37,34 @@
    },
    {
     "label": "Đăng ký",
+    "icon": "list",
     "children": [
      "Chỉ là chứng cứ"
     ]
    },
    {
     "label": "Sở hữu công nghiệp",
+    "icon": "company",
     "children": [
      "Sáng chế, kiểu dáng, nhãn hiệu: văn bằng"
     ]
    },
    {
     "label": "Ngoại lệ",
+    "icon": "star",
     "children": [
      "Nhãn hiệu nổi tiếng: do sử dụng"
     ]
+   }
+  ],
+  "case": {
+   "q": "Sinh viên viết truyện ngắn đăng blog, chưa đăng ký bản quyền. Đã có quyền tác giả chưa?",
+   "a": "Có, quyền tác giả phát sinh ngay khi sáng tạo."
+  },
+  "contrast": [
+   {
+    "with": "xac-lap-quyen-shcn",
+    "text": "Quyền tác giả tự có; quyền sở hữu công nghiệp phần lớn phải đăng ký mới có."
    }
   ]
  },

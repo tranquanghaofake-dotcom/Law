@@ -23,10 +23,13 @@
   "quyền và nghĩa vụ người sử dụng đất"
  ],
  "memo": {
-  "hook": "Ba quan hệ: SỞ HỮU – QUẢN LÝ – SỬ DỤNG đất.",
+  "gist": "Luật Đất đai lo ba việc: đất của ai, Nhà nước quản lý thế nào, người dân dùng đất ra sao.",
+  "kind": "tree",
+  "hook": "Như nội quy chung cư: chủ là ai, ban quản lý làm gì, cư dân được gì.",
   "tree": [
    {
     "label": "Điều chỉnh",
+    "icon": "book",
     "children": [
      "Chế độ sở hữu",
      "Quản lý đất đai",
@@ -35,6 +38,7 @@
    },
    {
     "label": "Phương pháp",
+    "icon": "tool",
     "children": [
      "Mệnh lệnh – hành chính",
      "Bình đẳng – thỏa thuận"
@@ -42,10 +46,21 @@
    },
    {
     "label": "Văn bản",
+    "icon": "scroll",
     "children": [
      "Luật Đất đai 2024",
      "Hiệu lực 01/8/2024"
     ]
+   }
+  ],
+  "case": {
+   "q": "Tranh chấp ranh giới đất giữa hai hộ có thuộc phạm vi Luật Đất đai không?",
+   "a": "Có. Nó thuộc nhóm quan hệ sử dụng đất."
+  },
+  "contrast": [
+   {
+    "with": "so-huu-toan-dan-dat-dai",
+    "text": "Phạm vi là toàn bộ việc luật lo; sở hữu toàn dân chỉ là phần đất của ai."
    }
   ]
  },

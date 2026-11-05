@@ -22,16 +22,20 @@
   "khác luật dân sự"
  ],
  "memo": {
-  "hook": "Phương pháp đặc trưng: MỆNH LỆNH – PHỤC TÙNG (bất bình đẳng).",
+  "gist": "Luật hành chính điều chỉnh quan hệ trong quản lý nhà nước, bằng cách một bên ra lệnh, bên kia phải theo.",
+  "kind": "compare",
+  "hook": "Không có mặc cả: người cầm còi ra hiệu thì dừng.",
   "tree": [
    {
     "label": "Đối tượng",
+    "icon": "state",
     "children": [
      "Quan hệ trong quản lý hành chính"
     ]
    },
    {
     "label": "Phương pháp",
+    "icon": "announce",
     "children": [
      "Mệnh lệnh – phục tùng",
      "Bất bình đẳng"
@@ -39,9 +43,20 @@
    },
    {
     "label": "Khác dân sự",
+    "icon": "compare",
     "children": [
      "Dân sự: bình đẳng, thỏa thuận"
     ]
+   }
+  ],
+  "case": {
+   "q": "Cảnh sát giao thông yêu cầu dừng xe kiểm tra. Người lái xe có quyền thương lượng không?",
+   "a": "Không. Quan hệ theo phương pháp mệnh lệnh, phục tùng."
+  },
+  "contrast": [
+   {
+    "with": "quan-ly-hanh-chinh-nha-nuoc",
+    "text": "Ngành luật là bộ quy tắc; quản lý hành chính là hoạt động được bộ quy tắc đó điều chỉnh."
    }
   ]
  },

@@ -24,10 +24,13 @@
   "trong thời hạn sử dụng đất"
  ],
  "memo": {
-  "hook": "Chuyển nhượng, thế chấp cần: SỔ – KHÔNG TRANH CHẤP – KHÔNG KÊ BIÊN – CÒN HẠN.",
+  "gist": "Muốn bán, cho thuê, thế chấp đất phải có giấy chứng nhận, không tranh chấp, không bị kê biên và đất còn hạn.",
+  "kind": "checklist",
+  "hook": "Như bán xe: phải có giấy tờ, không ai đang giành, không bị niêm phong, đăng kiểm còn hạn.",
   "tree": [
    {
     "label": "Điều kiện",
+    "icon": "check",
     "children": [
      "Có Giấy chứng nhận",
      "Không tranh chấp",
@@ -37,16 +40,28 @@
    },
    {
     "label": "Thêm",
+    "icon": "calc",
     "children": [
      "Không bị biện pháp khẩn cấp tạm thời"
     ]
    },
    {
     "label": "Ngoại lệ sổ",
+    "icon": "unlock",
     "children": [
      "Thừa kế",
      "Tặng cho Nhà nước"
     ]
+   }
+  ],
+  "case": {
+   "q": "Mảnh đất có sổ đỏ nhưng đang bị Tòa cấm chuyển dịch. Chủ đất có bán được không?",
+   "a": "Không. Đất đang bị biện pháp khẩn cấp tạm thời thì không được chuyển nhượng."
+  },
+  "contrast": [
+   {
+    "with": "quyen-chung-nguoi-su-dung-dat",
+    "text": "Quyền chung ai cũng có; điều kiện ở đây là những gì phải đủ mới được bán, thế chấp."
    }
   ]
  },

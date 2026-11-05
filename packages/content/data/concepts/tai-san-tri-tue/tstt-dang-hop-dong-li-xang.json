@@ -24,10 +24,13 @@
  ],
  "note": "Luật Sở hữu trí tuệ 50/2005/QH11 (hiệu lực 01/7/2006) đã được sửa đổi bởi Luật 36/2009/QH12, 42/2019/QH14, 07/2022/QH15, 93/2025/QH15 và 131/2025/QH15 (hiệu lực 01/4/2026) — văn bản hợp nhất 67/VBHN-VPQH 2026; ghi chép lớp học còn dẫn Nghị định 105/2006/NĐ-CP và Nghị định 99/2013/NĐ-CP, cần tự kiểm tra hiệu lực của các nghị định này trước khi dùng.",
  "memo": {
-  "hook": "Ba dạng: ĐỘC QUYỀN – KHÔNG ĐỘC QUYỀN – THỨ CẤP.",
+  "gist": "Hợp đồng cho dùng có ba dạng: độc quyền, không độc quyền, và thứ cấp do người đã nhận quyền cấp tiếp.",
+  "kind": "compare",
+  "hook": "Như thuê xe: thuê bao trọn, đi chung, hay người thuê cho thuê lại.",
   "tree": [
    {
     "label": "Độc quyền",
+    "icon": "star",
     "children": [
      "Bên nhận dùng độc quyền",
      "Bên giao không cấp cho ai khác"
@@ -35,15 +38,27 @@
    },
    {
     "label": "Không độc quyền",
+    "icon": "handshake",
     "children": [
      "Bên giao vẫn dùng và cấp tiếp"
     ]
    },
    {
     "label": "Thứ cấp",
+    "icon": "cycle",
     "children": [
      "Bên giao là người đã nhận li-xăng"
     ]
+   }
+  ],
+  "case": {
+   "q": "X cấp quyền độc quyền nhãn hiệu cho Y. X có tự bán hàng mang nhãn hiệu đó được không?",
+   "a": "Chỉ khi Y đồng ý."
+  },
+  "contrast": [
+   {
+    "with": "tstt-chuyen-quyen-su-dung",
+    "text": "Ba dạng là các kiểu hợp đồng cho dùng; chuyển quyền sử dụng là chính việc cho dùng."
    }
   ]
  },

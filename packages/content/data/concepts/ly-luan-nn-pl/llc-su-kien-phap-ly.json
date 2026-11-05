@@ -23,16 +23,20 @@
   "chấm dứt"
  ],
  "memo": {
-  "hook": "SỰ BIẾN (ngoài ý chí) và HÀNH VI (có ý chí) làm quan hệ PHÁT SINH, THAY ĐỔI, CHẤM DỨT.",
+  "gist": "Sự kiện pháp lý là sự việc luật dự liệu, làm quan hệ pháp luật phát sinh, thay đổi hoặc chấm dứt.",
+  "kind": "compare",
+  "hook": "Cú hích làm quan hệ chuyển động: do trời hoặc do người.",
   "tree": [
    {
     "label": "Điều kiện",
+    "icon": "book",
     "children": [
      "Pháp luật dự liệu"
     ]
    },
    {
     "label": "Theo ý chí",
+    "icon": "warn",
     "children": [
      "Sự biến: bão, chết tự nhiên",
      "Hành vi: ký hợp đồng, trộm cắp"
@@ -40,11 +44,22 @@
    },
    {
     "label": "Theo hậu quả",
+    "icon": "cycle",
     "children": [
      "Phát sinh",
      "Thay đổi",
      "Chấm dứt"
     ]
+   }
+  ],
+  "case": {
+   "q": "Hai người đăng ký kết hôn. Đây là sự biến hay hành vi pháp lý?",
+   "a": "Hành vi pháp lý, vì có ý chí con người."
+  },
+  "contrast": [
+   {
+    "with": "llc-quan-he-phap-luat",
+    "text": "Sự kiện là cú hích; quan hệ pháp luật là mối quan hệ được tạo ra."
    }
   ]
  },

@@ -25,17 +25,21 @@
  ],
  "note": "Luật Đất đai 1987 đã hết hiệu lực (thay bằng Luật Đất đai 1993); hiện hành là Luật Đất đai 31/2024/QH15. Học để hiểu lịch sử.",
  "memo": {
-  "hook": "Luật Đất đai ĐẦU TIÊN (29/12/1987): SỞ HỮU TOÀN DÂN, Nhà nước GIAO ĐẤT.",
+  "gist": "Luật đất đai đầu tiên, năm 1987: đất thuộc sở hữu toàn dân, Nhà nước giao cho người dân dùng lâu dài.",
+  "kind": "tree",
+  "hook": "Đất là của chung cả nước, người dân được cầm chìa khóa dùng.",
   "tree": [
    {
     "label": "Mốc",
+    "icon": "calendar",
     "children": [
-     "29/12/1987",
+     "29 tháng 12 năm 1987",
      "Luật đất đai đầu tiên"
     ]
    },
    {
     "label": "Chế độ",
+    "icon": "state",
     "children": [
      "Sở hữu toàn dân",
      "Nhà nước thống nhất quản lý"
@@ -43,10 +47,21 @@
    },
    {
     "label": "Người sử dụng",
+    "icon": "plant",
     "children": [
      "Được giao đất ổn định, lâu dài",
      "Chỉ có quyền sử dụng"
     ]
+   }
+  ],
+  "case": {
+   "q": "Năm 1988, hộ nông dân được giao đất trồng lúa. Họ có phải chủ sở hữu mảnh đất không?",
+   "a": "Không, chỉ có quyền sử dụng."
+  },
+  "contrast": [
+   {
+    "with": "cam-mua-ban-dat-1987",
+    "text": "Bài này nói cả đạo luật; bài kia nói lệnh cấm mua bán đất trong luật đó."
    }
   ]
  },

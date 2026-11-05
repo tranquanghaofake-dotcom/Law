@@ -24,10 +24,13 @@
   "1010"
  ],
  "memo": {
-  "hook": "Nhà Lý (1010) chia 24 LỘ; vùng xa (Hoan, Ái) gọi là TRẠI.",
+  "gist": "Nhà Lý chia cả nước thành 24 lộ; vùng xa kinh đô như Hoan, Ái gọi là trại.",
+  "kind": "ladder",
+  "hook": "Hai mươi tư con đường dẫn về kinh, xa nhất gọi là trại.",
   "tree": [
    {
     "label": "Đơn vị",
+    "icon": "map",
     "children": [
      "24 lộ",
      "Trại: châu Hoan, châu Ái"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Dưới lộ",
+    "icon": "village",
     "children": [
      "Phủ, huyện",
      "Hương, giáp"
@@ -42,9 +46,20 @@
    },
    {
     "label": "Mốc",
+    "icon": "calendar",
     "children": [
      "1010"
     ]
+   }
+  ],
+  "case": {
+   "q": "Thời Lý, châu Hoan và châu Ái được gọi là gì?",
+   "a": "Trại, chỉ vùng xa kinh đô."
+  },
+  "contrast": [
+   {
+    "with": "dinh-do-thang-long",
+    "text": "Hai mươi tư lộ là hành chính địa phương; dời đô là việc chọn trung tâm."
    }
   ]
  },

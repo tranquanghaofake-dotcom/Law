@@ -23,10 +23,13 @@
   "ưu tiên lệnh khách hàng"
  ],
  "memo": {
-  "hook": "Tự doanh = công ty dùng TIỀN MÌNH đầu tư, TỰ CHỊU lãi lỗ; lệnh khách phải đi TRƯỚC.",
+  "gist": "Công ty chứng khoán dùng tiền của mình mua bán chứng khoán, tự chịu lời lỗ; phải ưu tiên lệnh khách.",
+  "kind": "tree",
+  "hook": "Tự đánh bạc bằng tiền nhà, nhưng phải nhường lượt cho khách.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "money",
     "children": [
      "Mua bán cho chính mình",
      "Tài khoản tự doanh"
@@ -34,16 +37,28 @@
    },
    {
     "label": "Rủi ro",
+    "icon": "warn",
     "children": [
      "Xung đột lợi ích với khách"
     ]
    },
    {
     "label": "Bắt buộc",
+    "icon": "star",
     "children": [
      "Ưu tiên lệnh khách hàng",
      "Phải có môi giới trước"
     ]
+   }
+  ],
+  "case": {
+   "q": "Bộ phận tự doanh mua 2 triệu cổ phiếu, giá giảm. Ai chịu lỗ?",
+   "a": "Công ty chứng khoán, khách hàng không liên quan."
+  },
+  "contrast": [
+   {
+    "with": "moi-gioi-chung-khoan",
+    "text": "Tự doanh mua bán cho công ty; môi giới mua bán cho khách."
    }
   ]
  },

@@ -25,10 +25,13 @@
  ],
  "note": "Điều 19 có nội dung được sửa đổi, bổ sung bởi Luật 07/2022/QH15 (hiệu lực 01/01/2023) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
  "memo": {
-  "hook": "Bốn quyền nhân thân; ĐẶT TÊN, ĐỨNG TÊN, TOÀN VẸN là VÔ THỜI HẠN.",
+  "gist": "Tác giả có quyền đặt tên, đứng tên, giữ tác phẩm nguyên vẹn mãi mãi; quyền công bố thì có hạn.",
+  "kind": "compare",
+  "hook": "Tên mình trên tác phẩm như tên trong gia phả: không ai xóa được.",
   "tree": [
    {
     "label": "Vô thời hạn",
+    "icon": "infinity",
     "children": [
      "Đặt tên",
      "Đứng tên, được nêu tên",
@@ -37,10 +40,21 @@
    },
    {
     "label": "Có thời hạn",
+    "icon": "calendar",
     "children": [
      "Công bố tác phẩm",
      "Chuyển nhượng được"
     ]
+   }
+  ],
+  "case": {
+   "q": "Nhà xuất bản tự ý cắt một chương làm sai ý cuốn sách. Xâm phạm quyền gì?",
+   "a": "Quyền bảo vệ sự toàn vẹn của tác phẩm."
+  },
+  "contrast": [
+   {
+    "with": "chu-so-huu-quyen-tac-gia",
+    "text": "Quyền nhân thân ở mãi với tác giả; quyền tài sản thuộc chủ sở hữu, có thể bán."
    }
   ]
  },

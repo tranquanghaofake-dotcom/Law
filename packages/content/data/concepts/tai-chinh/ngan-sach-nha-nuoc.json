@@ -5,7 +5,7 @@
  "term": "Ngân sách nhà nước và phạm vi thu, chi",
  "definition": "Ngân sách nhà nước là toàn bộ các khoản thu, chi của Nhà nước được dự toán và thực hiện trong một khoảng thời gian nhất định do cơ quan nhà nước có thẩm quyền quyết định để bảo đảm thực hiện các chức năng, nhiệm vụ của Nhà nước. (…) Chi ngân sách nhà nước bao gồm: a) Chi đầu tư phát triển; b) Chi dự trữ quốc gia; c) Chi thường xuyên; d) Chi trả nợ lãi; đ) Chi viện trợ; e) Các khoản chi khác theo quy định của pháp luật.",
  "plain": "Đặc điểm: là KẾ HOẠCH TÀI CHÍNH CƠ BẢN của Nhà nước; phải được DỰ TOÁN và do CƠ QUAN CÓ THẨM QUYỀN (Quốc hội, HĐND) quyết định; gắn với một khoảng thời gian (NĂM NGÂN SÁCH từ 01/01 đến 31/12 — Điều 14). Thu NSNN gồm thuế, lệ phí, phí từ dịch vụ do cơ quan nhà nước thực hiện, viện trợ không hoàn lại, thu khác (khoản 1 Điều 5). Phạm vi NSNN còn gồm bội chi, tổng mức vay (khoản 3, 4 Điều 5). Trả nợ gốc KHÔNG phải khoản chi NSNN theo nghĩa phân loại khoản 2 Điều 5 (được xử lý riêng).",
- "example": "Khoản tiền xây trường học công (chi đầu tư phát triển) và lương giáo viên công lập (chi thường xuyên) đều là chi ngân sách nhà nước, được Quốc hội, HĐND quyết định trong dự toán năm.",
+ "example": "Tiền xây trường học công (chi đầu tư phát triển) và lương giáo viên công lập (chi thường xuyên) đều là chi ngân sách, do Quốc hội, Hội đồng nhân dân quyết định trong dự toán năm.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 17 Điều 4; khoản 2 Điều 5 Luật Ngân sách nhà nước 2025 (89/2025/QH15)",
@@ -25,10 +25,13 @@
  ],
  "note": "Luật Ngân sách nhà nước 89/2025/QH15 có hiệu lực từ năm ngân sách 2026 (một số nội dung từ 01/7/2025), thay thế Luật Ngân sách nhà nước 83/2015/QH13 mà đề cương HLU còn dẫn (Điều 77).",
  "memo": {
-  "hook": "Kế hoạch tài chính cơ bản: phải DỰ TOÁN, do Quốc hội/HĐND QUYẾT, theo NĂM.",
+  "gist": "Ngân sách nhà nước là toàn bộ thu chi của Nhà nước trong một năm, lập trước và do cơ quan có quyền quyết định.",
+  "kind": "tree",
+  "hook": "Như sổ chi tiêu cả năm của một gia đình lớn: lên kế hoạch, cả nhà duyệt, rồi mới tiêu.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "book",
     "children": [
      "Toàn bộ thu, chi của Nhà nước",
      "Được dự toán",
@@ -37,12 +40,14 @@
    },
    {
     "label": "Năm ngân sách",
+    "icon": "calendar",
     "children": [
      "01/01 đến 31/12"
     ]
    },
    {
     "label": "Thu",
+    "icon": "arrow",
     "children": [
      "Thuế, phí, lệ phí",
      "Viện trợ không hoàn lại"
@@ -50,10 +55,21 @@
    },
    {
     "label": "Chi",
+    "icon": "top",
     "children": [
      "Đầu tư phát triển",
      "Chi thường xuyên"
     ]
+   }
+  ],
+  "case": {
+   "q": "Lương giáo viên công lập là loại chi gì của ngân sách?",
+   "a": "Chi thường xuyên; còn tiền xây trường là chi đầu tư phát triển."
+  },
+  "contrast": [
+   {
+    "with": "he-thong-nsnn",
+    "text": "Ngân sách nhà nước là toàn bộ thu chi; hệ thống ngân sách là cách chia các cấp."
    }
   ]
  },

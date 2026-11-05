@@ -24,10 +24,13 @@
   "nhiệm kỳ theo Quốc hội"
  ],
  "memo": {
-  "hook": "Quốc hội bầu trong số ĐẠI BIỂU, báo cáo QUỐC HỘI, nhiệm kỳ theo QUỐC HỘI.",
+  "gist": "Quốc hội bầu Chủ tịch nước trong số đại biểu Quốc hội; Chủ tịch nước báo cáo trước Quốc hội, nhiệm kỳ theo Quốc hội.",
+  "kind": "tree",
+  "hook": "Ngồi ghế nguyên thủ phải có vé đại biểu.",
   "tree": [
    {
     "label": "Bầu",
+    "icon": "vote",
     "children": [
      "Do Quốc hội bầu",
      "Trong số đại biểu Quốc hội"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Trách nhiệm",
+    "icon": "announce",
     "children": [
      "Chịu trách nhiệm trước Quốc hội",
      "Báo cáo công tác trước Quốc hội"
@@ -42,15 +46,27 @@
    },
    {
     "label": "Nhiệm kỳ",
+    "icon": "calendar",
     "children": [
      "Theo nhiệm kỳ Quốc hội"
     ]
    },
    {
     "label": "Sau khi bầu",
+    "icon": "person",
     "children": [
      "Tuyên thệ"
     ]
+   }
+  ],
+  "case": {
+   "q": "Người không phải đại biểu Quốc hội có được bầu làm Chủ tịch nước không?",
+   "a": "Không."
+  },
+  "contrast": [
+   {
+    "with": "chu-tich-nuoc-vi-tri",
+    "text": "Bài này nói ai bầu, nhiệm kỳ; bài kia nói vị trí, vai trò."
    }
   ]
  },

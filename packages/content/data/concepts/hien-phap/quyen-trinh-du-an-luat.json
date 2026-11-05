@@ -25,10 +25,13 @@
  ],
  "note": "Nghị quyết 203/2025/QH15 (hiệu lực 16/6/2025) sửa khoản 1 Điều 84. Bản 2013 ghi \"Ủy ban trung ương Mặt trận Tổ quốc Việt Nam và cơ quan trung ương của tổ chức thành viên của Mặt trận\"; bản hiện hành ghi \"… và cơ quan trung ương của tổ chức chính trị - xã hội\". Thay đổi này gắn với việc đưa các tổ chức chính trị - xã hội trực thuộc Mặt trận (Điều 9 mới). Giáo trình in trước 2025 trích câu chữ cũ.",
  "memo": {
-  "hook": "Dự án LUẬT trình Quốc hội; dự án PHÁP LỆNH trình Ủy ban thường vụ.",
+  "gist": "Các cơ quan nhà nước, Mặt trận và đại biểu Quốc hội có quyền trình dự án luật ra Quốc hội.",
+  "kind": "tree",
+  "hook": "Nhiều cửa đưa đề nghị vào, một nơi quyết là Quốc hội.",
   "tree": [
    {
     "label": "Cơ quan nhà nước",
+    "icon": "state",
     "children": [
      "Chủ tịch nước, Ủy ban thường vụ",
      "Hội đồng dân tộc, Ủy ban của Quốc hội",
@@ -38,6 +41,7 @@
    },
    {
     "label": "Tổ chức",
+    "icon": "handshake",
     "children": [
      "Ủy ban trung ương Mặt trận",
      "Tổ chức chính trị - xã hội"
@@ -45,10 +49,21 @@
    },
    {
     "label": "Đại biểu Quốc hội",
+    "icon": "person",
     "children": [
      "Kiến nghị về luật",
      "Dự án luật"
     ]
+   }
+  ],
+  "case": {
+   "q": "Tòa án nhân dân tối cao có quyền trình dự án luật trước Quốc hội không?",
+   "a": "Có."
+  },
+  "contrast": [
+   {
+    "with": "bieu-quyet-thong-qua-luat",
+    "text": "Quyền trình là đưa dự án vào; biểu quyết là Quốc hội quyết."
    }
   ]
  },

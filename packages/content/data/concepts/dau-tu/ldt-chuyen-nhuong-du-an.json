@@ -23,10 +23,13 @@
  ],
  "note": "Luật Đầu tư 143/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Đầu tư 61/2020/QH14 mà đề cương HLU 2021 còn dẫn (khoản 4 Điều 51). Luật 24/2026/QH16 sửa đổi có hiệu lực từ 01/3/2027 (riêng một phần Điều 6 từ 01/01/2027), chỉ sửa Điều 6 và Phụ lục IV, không sửa điều được trích — văn bản hợp nhất 142/2026/VBHN-LQ-VPQH.",
  "memo": {
-  "hook": "Chuyển nhượng TOÀN BỘ hoặc MỘT PHẦN dự án, nếu dự án KHÔNG bị chấm dứt.",
+  "gist": "Nhà đầu tư được bán lại toàn bộ hay một phần dự án cho người khác, nếu dự án chưa bị chấm dứt hoạt động.",
+  "kind": "checklist",
+  "hook": "Như sang nhượng quán ăn: được sang cả hay một nửa, nhưng quán đang bị đóng cửa thì không sang được.",
   "tree": [
    {
     "label": "Phạm vi",
+    "icon": "puzzle",
     "children": [
      "Toàn bộ dự án",
      "Một phần dự án"
@@ -34,11 +37,22 @@
    },
    {
     "label": "Điều kiện",
+    "icon": "check",
     "children": [
      "Dự án không bị chấm dứt",
      "Bên nước ngoài đủ điều kiện",
      "Đúng luật đất đai, nhà ở"
     ]
+   }
+  ],
+  "case": {
+   "q": "Dự án đang bị chấm dứt hoạt động vì chậm tiến độ quá 24 tháng. Công ty M có được chuyển nhượng không?",
+   "a": "Không. Dự án bị chấm dứt hoạt động thì không được chuyển nhượng."
+  },
+  "contrast": [
+   {
+    "with": "ldt-du-an-dau-tu",
+    "text": "Chuyển nhượng là bán lại dự án; dự án đầu tư là chính đề xuất bỏ vốn đó."
    }
   ]
  },

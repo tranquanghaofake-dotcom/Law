@@ -5,7 +5,7 @@
  "term": "Cổ phiếu",
  "definition": "Cổ phiếu là loại chứng khoán xác nhận quyền và lợi ích hợp pháp của người sở hữu đối với một phần vốn cổ phần của tổ chức phát hành.",
  "plain": "Mua cổ phiếu là trở thành đồng chủ sở hữu (cổ đông) một phần công ty: có quyền theo phần vốn cổ phần, được chia cổ tức khi công ty có lãi và quyết định chia, nhưng không được công ty \"trả lại vốn\" theo hạn như chủ nợ.",
- "example": "Bạn mua 100 cổ phiếu FPT: bạn là cổ đông FPT, có thể dự Đại hội đồng cổ đông và nhận cổ tức; nếu FPT thua lỗ, bạn không đòi FPT hoàn tiền gốc.",
+ "example": "Bạn mua 100 cổ phiếu của một công ty công nghệ: bạn là cổ đông, có thể dự Đại hội đồng cổ đông và nhận cổ tức; nếu công ty thua lỗ, bạn không đòi hoàn tiền gốc được.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 2 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)",
@@ -22,10 +22,13 @@
   "tổ chức phát hành"
  ],
  "memo": {
-  "hook": "Cổ phiếu = làm CHỦ một phần công ty; khác trái phiếu (làm CHỦ NỢ).",
+  "gist": "Cổ phiếu xác nhận bạn sở hữu một phần vốn công ty cổ phần, là cổ đông, nhận cổ tức khi có lãi.",
+  "kind": "tree",
+  "hook": "Làm chủ một mẩu công ty, lời ăn lỗ chịu.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "puzzle",
     "children": [
      "Phần vốn cổ phần",
      "Người sở hữu là cổ đông"
@@ -33,6 +36,7 @@
    },
    {
     "label": "Quyền",
+    "icon": "vote",
     "children": [
      "Theo phần vốn",
      "Cổ tức khi có lãi"
@@ -40,9 +44,20 @@
    },
    {
     "label": "Khác chủ nợ",
+    "icon": "compare",
     "children": [
      "Không được trả lại vốn theo hạn"
     ]
+   }
+  ],
+  "case": {
+   "q": "Bạn mua 100 cổ phiếu, công ty thua lỗ. Bạn có đòi công ty trả lại tiền gốc được không?",
+   "a": "Không. Cổ đông không được hoàn vốn theo hạn như chủ nợ."
+  },
+  "contrast": [
+   {
+    "with": "trai-phieu",
+    "text": "Cổ phiếu là làm chủ; trái phiếu là cho vay."
    }
   ]
  },

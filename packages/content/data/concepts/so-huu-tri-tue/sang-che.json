@@ -25,10 +25,13 @@
  ],
  "note": "Điều 4, 58 có nội dung được sửa đổi, bổ sung bởi Luật 36/2009/QH12 (hiệu lực 01/01/2010); Luật 07/2022/QH15 (hiệu lực 01/01/2023); Luật 131/2025/QH15 (hiệu lực 01/4/2026) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
  "memo": {
-  "hook": "Sáng chế: MỚI + SÁNG TẠO + ÁP DỤNG CÔNG NGHIỆP → bằng 20 NĂM.",
+  "gist": "Sáng chế là giải pháp kỹ thuật mới, có sáng tạo, áp dụng được trong sản xuất; được cấp bằng 20 năm.",
+  "kind": "compare",
+  "hook": "Ba câu hỏi: chưa ai làm? người trong nghề nghĩ ra dễ không? làm hàng loạt được không?",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "tool",
     "children": [
      "Giải pháp kỹ thuật",
      "Sản phẩm hoặc quy trình"
@@ -36,6 +39,7 @@
    },
    {
     "label": "Bằng sáng chế",
+    "icon": "star",
     "children": [
      "Tính mới",
      "Trình độ sáng tạo",
@@ -45,10 +49,21 @@
    },
    {
     "label": "Giải pháp hữu ích",
+    "icon": "star",
     "children": [
      "Không cần trình độ sáng tạo",
      "10 năm"
     ]
+   }
+  ],
+  "case": {
+   "q": "Quy trình xử lý nước thải mới, chưa ai công bố, không hiển nhiên với kỹ sư. Có thể được cấp bằng sáng chế không?",
+   "a": "Có thể, nếu áp dụng được trong công nghiệp."
+  },
+  "contrast": [
+   {
+    "with": "chuong-trinh-may-tinh",
+    "text": "Sáng chế là giải pháp kỹ thuật phải đăng ký; phần mềm bảo hộ bằng quyền tác giả."
    }
   ]
  },

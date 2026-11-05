@@ -23,10 +23,13 @@
   "trách nhiệm xã hội"
  ],
  "memo": {
-  "hook": "Bảo vệ NGƯỜI LAO ĐỘNG nhưng cũng bảo vệ NGƯỜI SỬ DỤNG; khuyến khích thỏa thuận CÓ LỢI HƠN.",
+  "gist": "Nhà nước bảo vệ cả người lao động lẫn người sử dụng, và khuyến khích thỏa thuận có lợi hơn luật cho người lao động.",
+  "kind": "tree",
+  "hook": "Luật là mức sàn, không phải trần nhà.",
   "tree": [
    {
     "label": "Nguyên tắc (học thuyết)",
+    "icon": "scales",
     "children": [
      "Bảo vệ người lao động",
      "Bảo vệ người sử dụng lao động",
@@ -36,9 +39,20 @@
    },
    {
     "label": "Khuyến khích",
+    "icon": "check",
     "children": [
      "Thỏa thuận có lợi hơn luật"
     ]
+   }
+  ],
+  "case": {
+   "q": "Thỏa ước cho nghỉ hằng năm 15 ngày, cao hơn mức luật. Có được không?",
+   "a": "Được và còn được khuyến khích, vì có lợi hơn cho người lao động."
+  },
+  "contrast": [
+   {
+    "with": "pham-vi-dieu-chinh-luat-lao-dong",
+    "text": "Chính sách là định hướng của Nhà nước; phạm vi là luật lao động lo những quan hệ nào."
    }
   ]
  },

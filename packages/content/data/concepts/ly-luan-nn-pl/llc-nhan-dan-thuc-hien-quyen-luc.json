@@ -25,10 +25,13 @@
  ],
  "note": "Hiến pháp 2013 (hiệu lực 01/01/2014) được sửa đổi, bổ sung bởi Nghị quyết 203/2025/QH15 (hiệu lực 16/6/2025) — các điều được trích (Điều 2, 4, 6) không thuộc phạm vi sửa đổi.",
  "memo": {
-  "hook": "Hai đường: DÂN CHỦ TRỰC TIẾP và DÂN CHỦ ĐẠI DIỆN.",
+  "gist": "Nhân dân dùng quyền lực bằng dân chủ trực tiếp như bầu cử, trưng cầu, và đại diện qua Quốc hội, Hội đồng nhân dân.",
+  "kind": "compare",
+  "hook": "Tự đi bỏ phiếu, hoặc nhờ người mình bầu nói thay.",
   "tree": [
    {
     "label": "Trực tiếp",
+    "icon": "vote",
     "children": [
      "Trưng cầu ý dân",
      "Bầu cử",
@@ -37,11 +40,22 @@
    },
    {
     "label": "Đại diện",
+    "icon": "state",
     "children": [
      "Quốc hội",
      "Hội đồng nhân dân",
      "Cơ quan nhà nước khác"
     ]
+   }
+  ],
+  "case": {
+   "q": "Quốc hội thay mặt cử tri quyết định ngân sách. Đây là dân chủ gì?",
+   "a": "Dân chủ đại diện."
+  },
+  "contrast": [
+   {
+    "with": "llc-nha-nuoc-phap-quyen",
+    "text": "Bài này nói dân dùng quyền lực bằng cách nào; pháp quyền nói pháp luật đứng trên tất cả."
    }
   ]
  },

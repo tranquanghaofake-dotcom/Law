@@ -23,10 +23,13 @@
   "giao cho người khác chiếm hữu, sử dụng"
  ],
  "memo": {
-  "hook": "Nguồn nguy hiểm cao độ: đền CẢ KHI KHÔNG CÓ LỖI.",
+  "gist": "Xe cơ giới, điện, chất nổ, thú dữ gây thiệt hại thì chủ phải đền, kể cả khi không có lỗi.",
+  "kind": "tree",
+  "hook": "Nuôi hổ trong nhà thì hổ cắn ai mình chịu, dù đã khóa chuồng.",
   "tree": [
    {
     "label": "Ví dụ",
+    "icon": "bolt",
     "children": [
      "Xe cơ giới",
      "Điện, nhà máy",
@@ -36,6 +39,7 @@
    },
    {
     "label": "Trách nhiệm",
+    "icon": "warn",
     "children": [
      "Chủ sở hữu, người sử dụng",
      "Không cần lỗi"
@@ -43,10 +47,21 @@
    },
    {
     "label": "Miễn",
+    "icon": "shield",
     "children": [
      "Lỗi cố ý của người bị hại",
      "Bất khả kháng, tình thế cấp thiết"
     ]
+   }
+  ],
+  "case": {
+   "q": "Xe máy đi đúng luật nhưng nổ lốp, va vào người đi bộ. Người lái có phải bồi thường không?",
+   "a": "Có, dù không có lỗi."
+  },
+  "contrast": [
+   {
+    "with": "suc-vat-gay-thiet-hai",
+    "text": "Nguồn nguy hiểm cao độ đền cả khi không lỗi; súc vật thường thì xét người giữ và lỗi."
    }
   ]
  },

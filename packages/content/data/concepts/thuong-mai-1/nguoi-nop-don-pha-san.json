@@ -25,10 +25,13 @@
  ],
  "note": "Luật Phục hồi, phá sản 142/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Phá sản 51/2014/QH13 (khoản 2 Điều 87); riêng khoản 3 Điều 38 (cơ quan quản lý thuế nộp đơn) có hiệu lực từ 01/7/2026.",
  "memo": {
-  "hook": "CÓ QUYỀN: chủ nợ, người lao động, cổ đông lớn; CÓ NGHĨA VỤ: người quản lý doanh nghiệp.",
+  "gist": "Chủ nợ, người lao động, cổ đông lớn có quyền nộp đơn phá sản; người quản lý doanh nghiệp có nghĩa vụ phải nộp.",
+  "kind": "compare",
+  "hook": "Người ngoài được bấm chuông báo cháy; người trong nhà bắt buộc phải bấm.",
   "tree": [
    {
     "label": "Có quyền",
+    "icon": "person",
     "children": [
      "Chủ nợ không bảo đảm",
      "Người lao động, công đoàn",
@@ -38,10 +41,21 @@
    },
    {
     "label": "Có nghĩa vụ",
+    "icon": "pin",
     "children": [
      "Người đại diện theo pháp luật",
-     "Chủ DNTN, HĐQT, HĐTV"
+     "Chủ doanh nghiệp tư nhân, hội đồng quản lý"
     ]
+   }
+  ],
+  "case": {
+   "q": "Người lao động bị nợ lương 7 tháng. Họ có được nộp đơn yêu cầu phá sản không?",
+   "a": "Có. Người lao động và công đoàn có quyền nộp đơn."
+  },
+  "contrast": [
+   {
+    "with": "thu-tuc-phuc-hoi",
+    "text": "Phá sản thì chủ nợ được nộp đơn; phục hồi chỉ người trong doanh nghiệp được nộp."
    }
   ]
  },

@@ -24,10 +24,13 @@
   "chịu sự giám sát của cử tri"
  ],
  "memo": {
-  "hook": "Đại diện HAI tầng: đơn vị bầu ra mình VÀ Nhân dân cả nước.",
+  "gist": "Đại biểu Quốc hội đại diện cho cử tri nơi bầu ra mình và Nhân dân cả nước, chịu cử tri giám sát.",
+  "kind": "tree",
+  "hook": "Đứng ở quê nhưng nhìn cả nước.",
   "tree": [
    {
     "label": "Đại diện",
+    "icon": "vote",
     "children": [
      "Nhân dân ở đơn vị bầu cử",
      "Nhân dân cả nước"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Nghĩa vụ",
+    "icon": "list",
     "children": [
      "Liên hệ, chịu giám sát của cử tri",
      "Tiếp xúc, báo cáo cử tri"
@@ -42,11 +46,22 @@
    },
    {
     "label": "Quyền",
+    "icon": "key",
     "children": [
      "Chất vấn",
      "Trình dự án luật",
      "Quyền miễn trừ"
     ]
+   }
+  ],
+  "case": {
+   "q": "Đại biểu bầu ở tỉnh A biểu quyết luật thuế. Phải cân nhắc lợi ích của ai?",
+   "a": "Của cả nước, không chỉ tỉnh A."
+  },
+  "contrast": [
+   {
+    "with": "dai-bieu-hoi-dong-nhan-dan",
+    "text": "Đại biểu Quốc hội đại diện cả nước; đại biểu Hội đồng nhân dân đại diện địa phương."
    }
   ]
  },

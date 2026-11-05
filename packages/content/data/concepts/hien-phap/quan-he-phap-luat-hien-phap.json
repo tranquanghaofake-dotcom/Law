@@ -24,10 +24,13 @@
  ],
  "note": "Thẻ dạng tóm lược quan điểm học thuật, chưa đối chiếu nguyên văn giáo trình; cần Hào đối chiếu trang 1–9 của sách.",
  "memo": {
-  "hook": "Nhớ 3 ý: CHỦ THỂ đặc biệt, hai loại QUAN HỆ, phát sinh từ QUY PHẠM và SỰ KIỆN.",
+  "gist": "Quan hệ có chủ thể đặc biệt như cử tri, Quốc hội, phát sinh từ quy phạm Hiến pháp và sự kiện pháp lý.",
+  "kind": "tree",
+  "hook": "Diễn viên của sân khấu Hiến pháp không có mặt ở chợ dân sự.",
   "tree": [
    {
     "label": "Chủ thể đặc biệt",
+    "icon": "people",
     "children": [
      "Nhân dân",
      "Quốc hội",
@@ -37,6 +40,7 @@
    },
    {
     "label": "Hai loại quan hệ",
+    "icon": "n2",
     "children": [
      "Chung: không cần sự kiện pháp lý",
      "Cụ thể: cử tri – tổ bầu cử"
@@ -44,10 +48,21 @@
    },
    {
     "label": "Cơ sở phát sinh",
+    "icon": "pin",
     "children": [
      "Quy phạm luật Hiến pháp",
      "Sự kiện pháp lý"
     ]
+   }
+  ],
+  "case": {
+   "q": "Cử tri đi bỏ phiếu ở khu vực bỏ phiếu là quan hệ pháp luật gì?",
+   "a": "Quan hệ pháp luật Hiến pháp giữa cử tri và tổ bầu cử."
+  },
+  "contrast": [
+   {
+    "with": "doi-tuong-dieu-chinh-luat-hien-phap",
+    "text": "Quan hệ là từng mối cụ thể; đối tượng điều chỉnh là cả nhóm quan hệ."
    }
   ]
  },

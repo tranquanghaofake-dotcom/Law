@@ -24,10 +24,13 @@
   "không được bát nghị, chuộc tội"
  ],
  "memo": {
-  "hook": "THẬP ÁC: mười tội nặng nhất, KHÔNG được bát nghị, KHÔNG được chuộc.",
+  "gist": "Mười tội nặng nhất xâm phạm vua, nhà nước và luân thường; không được xét giảm theo bát nghị, không được chuộc.",
+  "kind": "compare",
+  "hook": "Mười cánh cửa đóng chặt, không chìa nào mở được.",
   "tree": [
    {
     "label": "Xâm phạm vua, nhà nước",
+    "icon": "crown",
     "children": [
      "Mưu phản",
      "Mưu đại nghịch",
@@ -37,6 +40,7 @@
    },
    {
     "label": "Xâm phạm luân thường",
+    "icon": "family",
     "children": [
      "Ác nghịch, bất hiếu",
      "Bất mục, bất nghĩa",
@@ -45,9 +49,20 @@
    },
    {
     "label": "Hệ quả",
+    "icon": "ban",
     "children": [
      "Không bát nghị, không chuộc"
     ]
+   }
+  ],
+  "case": {
+   "q": "Người con 75 tuổi đánh cha. Có được chuộc tội không?",
+   "a": "Không, vì là tội ác nghịch thuộc thập ác."
+  },
+  "contrast": [
+   {
+    "with": "bat-nghi-qthl",
+    "text": "Thập ác là tội không được giảm; bát nghị là diện được giảm."
    }
   ]
  },

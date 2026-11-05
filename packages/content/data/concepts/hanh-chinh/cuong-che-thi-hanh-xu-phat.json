@@ -23,22 +23,36 @@
   "không tự nguyện chấp hành"
  ],
  "memo": {
-  "hook": "Cưỡng chế khi KHÔNG TỰ NGUYỆN chấp hành quyết định xử phạt.",
+  "gist": "Người bị phạt không tự nguyện chấp hành thì bị cưỡng chế: trừ lương, trừ tài khoản, kê biên tài sản.",
+  "kind": "tree",
+  "hook": "Không tự trả thì bị rút thẳng từ ví.",
   "tree": [
    {
     "label": "Khi nào",
+    "icon": "clock",
     "children": [
      "Không tự nguyện chấp hành"
     ]
    },
    {
     "label": "Biện pháp",
+    "icon": "lock",
     "children": [
      "Khấu trừ lương, tài khoản",
      "Kê biên để bán đấu giá",
      "Thu tài sản bị tẩu tán",
      "Buộc khắc phục hậu quả"
     ]
+   }
+  ],
+  "case": {
+   "q": "Doanh nghiệp bị phạt 50 triệu nhưng quá hạn không nộp. Cơ quan có thể làm gì?",
+   "a": "Khấu trừ tiền từ tài khoản ngân hàng của doanh nghiệp."
+  },
+  "contrast": [
+   {
+    "with": "bien-phap-khac-phuc-hau-qua",
+    "text": "Cưỡng chế là buộc thi hành quyết định; khắc phục hậu quả là nội dung buộc sửa sai."
    }
   ]
  },

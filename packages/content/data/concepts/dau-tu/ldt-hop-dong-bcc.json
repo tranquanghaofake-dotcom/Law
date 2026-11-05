@@ -5,7 +5,7 @@
  "term": "Hợp đồng hợp tác kinh doanh (BCC)",
  "definition": "Hợp đồng hợp tác kinh doanh (sau đây gọi là hợp đồng BCC) là hợp đồng được ký giữa các nhà đầu tư nhằm hợp tác kinh doanh, phân chia lợi nhuận, phân chia sản phẩm theo quy định của pháp luật mà không thành lập tổ chức kinh tế.",
  "plain": "Đặc trưng: ký giữa các NHÀ ĐẦU TƯ; hợp tác kinh doanh, PHÂN CHIA LỢI NHUẬN hoặc SẢN PHẨM; KHÔNG THÀNH LẬP tổ chức kinh tế (không có pháp nhân mới). BCC giữa nhà đầu tư trong nước theo pháp luật dân sự; BCC có nhà đầu tư nước ngoài phải làm thủ tục cấp Giấy chứng nhận đăng ký đầu tư (Điều 22). Các bên thành lập BAN ĐIỀU PHỐI. Phân biệt hợp đồng PPP (đối tác công tư — Luật PPP riêng, chưa có trong kho văn bản của ứng dụng).",
- "example": "Công ty viễn thông Việt Nam R và công ty Pháp S ký hợp đồng cùng khai thác dịch vụ, chia lợi nhuận theo tỷ lệ 60/40, không lập công ty mới: hợp đồng BCC, phải xin Giấy chứng nhận đăng ký đầu tư.",
+ "example": "Công ty viễn thông Việt Nam R và công ty Pháp S ký hợp đồng cùng khai thác dịch vụ, chia lợi nhuận 60 và 40, không lập công ty mới: đây là hợp đồng hợp tác kinh doanh, phải xin giấy chứng nhận đăng ký đầu tư.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 14 Điều 3 Luật Đầu tư 2025",
@@ -24,10 +24,13 @@
  ],
  "note": "Luật Đầu tư 143/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Đầu tư 61/2020/QH14 mà đề cương HLU 2021 còn dẫn (khoản 4 Điều 51). Luật 24/2026/QH16 sửa đổi có hiệu lực từ 01/3/2027 (riêng một phần Điều 6 từ 01/01/2027), chỉ sửa Điều 6 và Phụ lục IV, không sửa điều được trích — văn bản hợp nhất 142/2026/VBHN-LQ-VPQH.",
  "memo": {
-  "hook": "BCC: hợp tác chia LỢI NHUẬN/SẢN PHẨM, KHÔNG lập pháp nhân mới.",
+  "gist": "Các nhà đầu tư ký hợp đồng cùng làm ăn, chia lời hoặc chia sản phẩm, mà không lập công ty mới.",
+  "kind": "tree",
+  "hook": "Như góp gạo nấu chung nồi mà không cần xây bếp mới.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "handshake",
     "children": [
      "Ký giữa các nhà đầu tư",
      "Chia lợi nhuận hoặc sản phẩm",
@@ -36,15 +39,27 @@
    },
    {
     "label": "Có bên nước ngoài",
+    "icon": "globe",
     "children": [
      "Cấp Giấy chứng nhận đăng ký đầu tư"
     ]
    },
    {
     "label": "Điều hành",
+    "icon": "arrow",
     "children": [
      "Ban điều phối"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty Việt Nam và công ty Pháp ký cùng khai thác dịch vụ, chia lời 60 và 40, không lập công ty mới. Có phải xin giấy chứng nhận đăng ký đầu tư không?",
+   "a": "Có, vì hợp đồng có bên nước ngoài."
+  },
+  "contrast": [
+   {
+    "with": "ldt-to-chuc-kinh-te",
+    "text": "Hợp tác kinh doanh không lập pháp nhân mới; tổ chức kinh tế là một pháp nhân được thành lập."
    }
   ]
  },

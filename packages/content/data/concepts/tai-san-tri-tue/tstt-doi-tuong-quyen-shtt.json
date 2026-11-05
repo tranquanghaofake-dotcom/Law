@@ -26,10 +26,13 @@
  ],
  "note": "Luật Sở hữu trí tuệ 50/2005/QH11 (hiệu lực 01/7/2006) đã được sửa đổi bởi Luật 36/2009/QH12, 42/2019/QH14, 07/2022/QH15, 93/2025/QH15 và 131/2025/QH15 (hiệu lực 01/4/2026) — văn bản hợp nhất 67/VBHN-VPQH 2026; ghi chép lớp học còn dẫn Nghị định 105/2006/NĐ-CP và Nghị định 99/2013/NĐ-CP, cần tự kiểm tra hiệu lực của các nghị định này trước khi dùng.",
  "memo": {
-  "hook": "Ba nhánh: TÁC GIẢ – SỞ HỮU CÔNG NGHIỆP (7 đối tượng) – GIỐNG CÂY TRỒNG.",
+  "gist": "Sở hữu trí tuệ có ba nhánh: quyền tác giả, sở hữu công nghiệp và giống cây trồng.",
+  "kind": "tree",
+  "hook": "Ba ngăn tủ: ngăn sáng tác, ngăn kinh doanh, ngăn nông nghiệp.",
   "tree": [
    {
     "label": "Quyền tác giả",
+    "icon": "pen",
     "children": [
      "Tác phẩm",
      "Quyền liên quan"
@@ -37,6 +40,7 @@
    },
    {
     "label": "Sở hữu công nghiệp",
+    "icon": "company",
     "children": [
      "Sáng chế, kiểu dáng, mạch tích hợp",
      "Bí mật kinh doanh",
@@ -45,7 +49,18 @@
     ]
    },
    {
-    "label": "Giống cây trồng"
+    "label": "Giống cây trồng",
+    "icon": "plant"
+   }
+  ],
+  "case": {
+   "q": "Thuật toán chưa công bố của công ty phần mềm có cần đăng ký mới được bảo hộ không?",
+   "a": "Không. Nó có thể là bí mật kinh doanh, bảo hộ khi đủ điều kiện."
+  },
+  "contrast": [
+   {
+    "with": "tstt-tai-san-tri-tue",
+    "text": "Đối tượng là thứ luật bảo hộ; tài sản trí tuệ là khái niệm rộng hơn, theo học thuyết."
    }
   ]
  },

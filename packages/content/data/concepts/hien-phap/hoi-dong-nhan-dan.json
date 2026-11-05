@@ -24,22 +24,27 @@
   "quyết định, giám sát"
  ],
  "memo": {
-  "hook": "Quốc hội thu nhỏ ở địa phương, chịu trách nhiệm HAI CHIỀU.",
+  "gist": "Hội đồng nhân dân là cơ quan quyền lực ở địa phương do dân bầu, chịu trách nhiệm trước dân và cơ quan cấp trên.",
+  "kind": "tree",
+  "hook": "Như Quốc hội thu nhỏ của địa phương.",
   "tree": [
    {
     "label": "Vị trí",
+    "icon": "state",
     "children": [
      "Cơ quan quyền lực nhà nước ở địa phương"
     ]
    },
    {
     "label": "Hình thành",
+    "icon": "vote",
     "children": [
      "Nhân dân địa phương bầu"
     ]
    },
    {
     "label": "Chịu trách nhiệm",
+    "icon": "compare",
     "children": [
      "Trước Nhân dân địa phương",
      "Trước cơ quan nhà nước cấp trên"
@@ -47,10 +52,21 @@
    },
    {
     "label": "Chức năng",
+    "icon": "tool",
     "children": [
      "Quyết định vấn đề địa phương",
      "Giám sát"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ai thông qua dự toán ngân sách tỉnh?",
+   "a": "Hội đồng nhân dân tỉnh."
+  },
+  "contrast": [
+   {
+    "with": "uy-ban-nhan-dan",
+    "text": "Hội đồng nhân dân quyết; Ủy ban nhân dân thi hành."
    }
   ]
  },

@@ -23,10 +23,13 @@
   "trừ vụ án không được hòa giải"
  ],
  "memo": {
-  "hook": "Hòa giải là BẮT BUỘC trước xét xử sơ thẩm, trừ việc KHÔNG ĐƯỢC hòa giải.",
+  "gist": "Trước khi xử sơ thẩm, Tòa phải cho các bên ngồi lại tự thỏa thuận, trừ việc luật không cho hòa giải.",
+  "kind": "steps",
+  "hook": "Như trọng tài cho hai đội bắt tay trước giờ đá: bắt tay được thì khỏi phải đá.",
   "tree": [
    {
     "label": "Vị trí",
+    "icon": "pin",
     "children": [
      "Nguyên tắc",
      "Thủ tục bắt buộc khi chuẩn bị xét xử"
@@ -34,6 +37,7 @@
    },
    {
     "label": "Nguyên tắc",
+    "icon": "unlock",
     "children": [
      "Tự nguyện",
      "Không vi phạm điều cấm"
@@ -41,6 +45,7 @@
    },
    {
     "label": "Ngoại lệ",
+    "icon": "ban",
     "children": [
      "Vụ án không được hòa giải",
      "Không tiến hành được",
@@ -49,9 +54,20 @@
    },
    {
     "label": "Hòa giải thành",
+    "icon": "check",
     "children": [
      "Quyết định công nhận sau 07 ngày"
     ]
+   }
+  ],
+  "case": {
+   "q": "Hai bên hòa giải thành, sau 07 ngày không ai đổi ý. Tòa làm gì tiếp?",
+   "a": "Ra quyết định công nhận sự thỏa thuận của các đương sự."
+  },
+  "contrast": [
+   {
+    "with": "quyen-quyet-dinh-tu-dinh-doat",
+    "text": "Hòa giải là thủ tục Tòa tổ chức; quyền tự định đoạt là quyền đương sự tự quyết kiện, rút, thỏa thuận."
    }
   ]
  },

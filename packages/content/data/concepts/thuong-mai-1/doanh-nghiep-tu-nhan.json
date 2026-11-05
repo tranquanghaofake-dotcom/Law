@@ -23,33 +23,49 @@
   "mỗi cá nhân một DNTN"
  ],
  "memo": {
-  "hook": "Một CÁ NHÂN, VÔ HẠN, KHÔNG pháp nhân, KHÔNG phát hành chứng khoán, MỖI người một cái.",
+  "gist": "Doanh nghiệp do một cá nhân làm chủ, chịu trách nhiệm bằng mọi tài sản, không có pháp nhân.",
+  "kind": "tree",
+  "hook": "Như quán ăn mang tên chủ: quán nợ thì nhà của chủ cũng phải trả.",
   "tree": [
    {
     "label": "Chủ",
+    "icon": "person",
     "children": [
      "Một cá nhân"
     ]
    },
    {
     "label": "Trách nhiệm",
+    "icon": "infinity",
     "children": [
      "Vô hạn, toàn bộ tài sản"
     ]
    },
    {
     "label": "Tư cách",
+    "icon": "ban",
     "children": [
      "Không có pháp nhân"
     ]
    },
    {
     "label": "Hạn chế",
+    "icon": "ban",
     "children": [
      "Không phát hành chứng khoán",
-     "Mỗi người chỉ một DNTN",
+     "Mỗi người chỉ một doanh nghiệp tư nhân",
      "Không góp vốn vào công ty khác"
     ]
+   }
+  ],
+  "case": {
+   "q": "Doanh nghiệp tư nhân nợ 5 tỷ, tài sản chỉ còn 2 tỷ. Ai trả 3 tỷ còn lại?",
+   "a": "Chủ doanh nghiệp, bằng tài sản riêng kể cả nhà ở."
+  },
+  "contrast": [
+   {
+    "with": "ho-kinh-doanh",
+    "text": "Doanh nghiệp tư nhân là doanh nghiệp; hộ kinh doanh không phải doanh nghiệp. Cả hai đều chịu vô hạn."
    }
   ]
  },

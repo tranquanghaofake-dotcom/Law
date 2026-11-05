@@ -24,10 +24,13 @@
   "bất khả kháng"
  ],
  "memo": {
-  "hook": "Ba dạng vi phạm: SAI HẠN – THIẾU – SAI NỘI DUNG.",
+  "gist": "Làm không đúng hạn, không đủ hoặc không đúng nội dung đã cam kết thì phải chịu trách nhiệm, trừ khi bất khả kháng.",
+  "kind": "tree",
+  "hook": "Ba kiểu lỗi hẹn: trễ giờ, thiếu món, sai món.",
   "tree": [
    {
     "label": "Vi phạm",
+    "icon": "warn",
     "children": [
      "Không đúng thời hạn",
      "Không đầy đủ",
@@ -36,6 +39,7 @@
    },
    {
     "label": "Miễn",
+    "icon": "shield",
     "children": [
      "Bất khả kháng",
      "Hoàn toàn do lỗi bên có quyền"
@@ -43,10 +47,21 @@
    },
    {
     "label": "Trách nhiệm",
+    "icon": "scales",
     "children": [
      "Buộc thực hiện",
      "Bồi thường, phạt vi phạm"
     ]
+   }
+  ],
+  "case": {
+   "q": "Bên bán giao hàng chậm 10 ngày vì lũ bất ngờ phá tuyến đường duy nhất. Có được miễn trách nhiệm không?",
+   "a": "Có thể được miễn, do sự kiện bất khả kháng."
+  },
+  "contrast": [
+   {
+    "with": "can-cu-boi-thuong-thiet-hai",
+    "text": "Vi phạm nghĩa vụ là làm sai điều đã cam kết; bồi thường ngoài hợp đồng không cần có cam kết trước."
    }
   ]
  },

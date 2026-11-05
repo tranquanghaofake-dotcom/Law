@@ -5,7 +5,7 @@
  "term": "Điều kiện hưởng lương hưu",
  "definition": "Đối tượng quy định tại các điểm a, b, c, g, h, i, k, l, m và n khoản 1 và khoản 2 Điều 2 của Luật này khi nghỉ việc có thời gian đóng bảo hiểm xã hội bắt buộc từ đủ 15 năm trở lên thì được hưởng lương hưu nếu thuộc một trong các trường hợp sau đây: a) Đủ tuổi nghỉ hưu theo quy định tại khoản 2 Điều 169 của Bộ luật Lao động;",
  "plain": "Điểm mới quan trọng: thời gian đóng tối thiểu GIẢM từ 20 năm (Luật 2014) xuống 15 NĂM. Hai điều kiện cộng dồn: (1) đủ TUỔI NGHỈ HƯU theo Điều 169 BLLĐ (lộ trình tăng dần đến 62 tuổi với nam, 60 tuổi với nữ); (2) đóng BHXH bắt buộc từ đủ 15 năm. Có các trường hợp nghỉ hưu sớm (nghề nặng nhọc, độc hại, hầm lò, suy giảm khả năng lao động — Điều 65). Người không đủ điều kiện có thể bảo lưu, đóng tiếp hoặc hưởng BHXH một lần trong trường hợp luật cho phép (Điều 70).",
- "example": "Bà E đủ tuổi nghỉ hưu năm 2026, đã đóng BHXH bắt buộc 16 năm: đủ điều kiện hưởng lương hưu theo Luật 2024 (theo Luật 2014 thì chưa đủ vì cần 20 năm).",
+ "example": "Bà E đủ tuổi nghỉ hưu năm 2026, đã đóng bảo hiểm xã hội bắt buộc 16 năm: đủ điều kiện hưởng lương hưu theo Luật 2024 (luật năm 2014 thì chưa đủ vì cần 20 năm).",
  "source": {
   "kind": "statute",
   "cite": "Điểm a khoản 1 Điều 64 Luật Bảo hiểm xã hội 2024 (sửa đổi, bổ sung năm 2025)",
@@ -25,10 +25,13 @@
  ],
  "note": "Luật Bảo hiểm xã hội 41/2024/QH15 có hiệu lực từ 01/7/2025, thay thế Luật Bảo hiểm xã hội 58/2014/QH13 (đề cương HLU còn dẫn luật 2014).",
  "memo": {
-  "hook": "Hai điều kiện CỘNG DỒN: đủ TUỔI + đóng đủ 15 NĂM (trước là 20).",
+  "gist": "Muốn có lương hưu phải đủ hai điều: đủ tuổi nghỉ hưu và đã đóng bảo hiểm xã hội bắt buộc ít nhất 15 năm.",
+  "kind": "checklist",
+  "hook": "Như mở két hai chìa: chìa tuổi và chìa số năm đóng, thiếu chìa nào cũng không mở.",
   "tree": [
    {
     "label": "Điều kiện 1",
+    "icon": "calendar",
     "children": [
      "Đủ tuổi nghỉ hưu",
      "Khoản 2 Điều 169 Bộ luật Lao động"
@@ -36,6 +39,7 @@
    },
    {
     "label": "Điều kiện 2",
+    "icon": "calendar",
     "children": [
      "Đóng bảo hiểm xã hội bắt buộc từ đủ 15 năm",
      "Luật 2014: 20 năm"
@@ -43,15 +47,27 @@
    },
    {
     "label": "Ngoại lệ",
+    "icon": "bolt",
     "children": [
      "Nghỉ hưu sớm: nghề nặng nhọc, suy giảm khả năng"
     ]
    },
    {
     "label": "Chưa đủ",
+    "icon": "clock",
     "children": [
      "Bảo lưu, đóng tiếp hoặc hưởng một lần"
     ]
+   }
+  ],
+  "case": {
+   "q": "Bà E đủ tuổi nghỉ hưu năm 2026, đã đóng bảo hiểm xã hội bắt buộc 16 năm. Có được lương hưu không?",
+   "a": "Có, theo Luật 2024 chỉ cần đủ 15 năm; theo luật cũ năm 2014 thì chưa đủ vì cần 20 năm."
+  },
+  "contrast": [
+   {
+    "with": "tro-cap-huu-tri-xa-hoi",
+    "text": "Lương hưu dựa vào số năm đã đóng; trợ cấp hưu trí xã hội cho người từ 75 tuổi không có lương hưu, do ngân sách trả."
    }
   ]
  },

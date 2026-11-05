@@ -23,10 +23,13 @@
   "tội phạm và hình phạt"
  ],
  "memo": {
-  "hook": "Ba nhiệm vụ: BẢO VỆ – GIÁO DỤC – PHÒNG NGỪA, ĐẤU TRANH.",
+  "gist": "Bộ luật Hình sự có ba nhiệm vụ: bảo vệ, giáo dục ý thức tuân luật, và phòng ngừa, đấu tranh chống tội phạm.",
+  "kind": "tree",
+  "hook": "Khiên che, sách dạy, và rào ngăn.",
   "tree": [
    {
     "label": "Bảo vệ",
+    "icon": "shield",
     "children": [
      "Chủ quyền, an ninh",
      "Quyền con người, quyền công dân"
@@ -34,21 +37,34 @@
    },
    {
     "label": "Giáo dục",
+    "icon": "book",
     "children": [
      "Ý thức tuân theo pháp luật"
     ]
    },
    {
     "label": "Phòng ngừa",
+    "icon": "ban",
     "children": [
      "Đấu tranh chống tội phạm"
     ]
    },
    {
     "label": "Phương pháp",
+    "icon": "scales",
     "children": [
      "Quyền uy"
     ]
+   }
+  ],
+  "case": {
+   "q": "Quy định tội trộm cắp vừa bảo vệ quyền sở hữu vừa răn đe người khác. Thể hiện những nhiệm vụ nào?",
+   "a": "Bảo vệ, giáo dục và phòng ngừa."
+  },
+  "contrast": [
+   {
+    "with": "co-so-trach-nhiem-hinh-su",
+    "text": "Nhiệm vụ là luật làm để làm gì; cơ sở trách nhiệm là khi nào ai bị xử."
    }
   ]
  },

@@ -24,10 +24,13 @@
  ],
  "note": "Điều 60 có nội dung được sửa đổi, bổ sung bởi Luật 42/2019/QH14 (hiệu lực 01/11/2019); Luật 07/2022/QH15 (hiệu lực 01/01/2023) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
  "memo": {
-  "hook": "Tính mới tính TOÀN CẦU; bị BỘC LỘ CÔNG KHAI trước ngày nộp đơn là mất.",
+  "gist": "Sáng chế mất tính mới nếu đã bị công khai ở bất kỳ đâu trên thế giới trước ngày nộp đơn.",
+  "kind": "tree",
+  "hook": "Bí mật đã kể ra là hết bí mật, dù kể ở nước nào.",
   "tree": [
    {
     "label": "Mất tính mới khi",
+    "icon": "announce",
     "children": [
      "Bộc lộ công khai",
      "Trong hoặc ngoài nước",
@@ -36,15 +39,27 @@
    },
    {
     "label": "Chưa bộc lộ",
+    "icon": "lock",
     "children": [
      "Ít người biết, có nghĩa vụ giữ bí mật"
     ]
    },
    {
     "label": "Ân hạn",
+    "icon": "clock",
     "children": [
      "Trường hợp khoản 3"
     ]
+   }
+  ],
+  "case": {
+   "q": "Nhà nghiên cứu đăng bài báo mô tả đầy đủ giải pháp, 18 tháng sau mới nộp đơn. Còn tính mới không?",
+   "a": "Không, vì đã quá thời gian ân hạn 12 tháng."
+  },
+  "contrast": [
+   {
+    "with": "sang-che",
+    "text": "Tính mới chỉ là một điều kiện; sáng chế còn cần sáng tạo và áp dụng được."
    }
   ]
  },

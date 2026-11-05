@@ -5,7 +5,7 @@
  "term": "Vi phạm hành chính",
  "definition": "Vi phạm hành chính là hành vi có lỗi do cá nhân, tổ chức thực hiện, vi phạm quy định của pháp luật về quản lý nhà nước mà không phải là tội phạm và theo quy định của pháp luật phải bị xử phạt vi phạm hành chính.",
  "plain": "Dấu hiệu: có LỖI; do cá nhân, TỔ CHỨC thực hiện (tổ chức là chủ thể phổ biến, khác hình sự chỉ pháp nhân thương mại); vi phạm quy định về QUẢN LÝ NHÀ NƯỚC; KHÔNG PHẢI TỘI PHẠM (tính nguy hiểm thấp hơn); pháp luật quy định PHẢI BỊ XỬ PHẠT. Tính nguy hiểm thấp hơn tội phạm — ranh giới thường ở định lượng, hậu quả, tái phạm. Xử phạt do người có thẩm quyền hành chính (không phải tòa) theo thủ tục Luật XLVPHC; trách nhiệm hành chính gồm hình thức xử phạt (cảnh cáo, phạt tiền…) và biện pháp khắc phục hậu quả.",
- "example": "Xây nhà không phép, bán hàng không niêm yết giá, vượt đèn đỏ: vi phạm hành chính, bị Chủ tịch UBND, cảnh sát giao thông xử phạt.",
+ "example": "Xây nhà không phép, bán hàng không niêm yết giá, vượt đèn đỏ: vi phạm hành chính, bị Chủ tịch Ủy ban nhân dân hoặc cảnh sát giao thông xử phạt.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1 Điều 2 Luật Xử lý vi phạm hành chính (sửa đổi, bổ sung đến năm 2025)",
@@ -25,10 +25,13 @@
  ],
  "note": "Luật Xử lý vi phạm hành chính 15/2012/QH13 (hiệu lực 01/7/2013) được sửa đổi nhiều lần, gần nhất bởi Luật 88/2025/QH15 (hiệu lực 01/7/2025) — văn bản hợp nhất 90/VBHN-VPQH 2026; khoản 1 Điều 2 giữ nguyên câu chữ.",
  "memo": {
-  "hook": "Vi phạm hành chính: CÓ LỖI, về QUẢN LÝ NHÀ NƯỚC, CHƯA phải tội phạm.",
+  "gist": "Hành vi có lỗi, xâm phạm trật tự quản lý nhà nước, chưa đến mức tội phạm, phải bị xử phạt hành chính.",
+  "kind": "checklist",
+  "hook": "Như lỗi việt vị: bị thổi còi nhưng chưa bị đuổi khỏi sân.",
   "tree": [
    {
     "label": "Dấu hiệu",
+    "icon": "check",
     "children": [
      "Có lỗi",
      "Vi phạm quản lý nhà nước",
@@ -38,10 +41,21 @@
    },
    {
     "label": "Chủ thể",
+    "icon": "people",
     "children": [
      "Cá nhân",
      "Tổ chức (phổ biến)"
     ]
+   }
+  ],
+  "case": {
+   "q": "Bán hàng không niêm yết giá là loại vi phạm gì?",
+   "a": "Vi phạm hành chính."
+  },
+  "contrast": [
+   {
+    "with": "llc-toi-pham",
+    "text": "Vi phạm hành chính nhẹ hơn, xử phạt hành chính; tội phạm nguy hiểm nhất, chịu hình phạt."
    }
   ]
  },

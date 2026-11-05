@@ -23,10 +23,13 @@
   "thương lượng tập thể"
  ],
  "memo": {
-  "hook": "Ngoài CÔNG ĐOÀN, nay có thể lập TỔ CHỨC CỦA NGƯỜI LAO ĐỘNG tại doanh nghiệp.",
+  "gist": "Tổ chức tự nguyện lập tại đơn vị để bảo vệ người lao động: công đoàn cơ sở hoặc tổ chức của người lao động.",
+  "kind": "tree",
+  "hook": "Không chỉ một nhà, giờ có hai nhà để người lao động gửi tiếng nói.",
   "tree": [
    {
     "label": "Đặc điểm",
+    "icon": "shield",
     "children": [
      "Thành lập tự nguyện",
      "Tại một đơn vị",
@@ -35,6 +38,7 @@
    },
    {
     "label": "Hai loại",
+    "icon": "n2",
     "children": [
      "Công đoàn cơ sở",
      "Tổ chức của người lao động tại doanh nghiệp"
@@ -42,10 +46,21 @@
    },
    {
     "label": "Nhiệm vụ",
+    "icon": "announce",
     "children": [
      "Thương lượng tập thể",
      "Đối thoại"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty đã có công đoàn cơ sở. Nhóm công nhân có được lập thêm tổ chức của người lao động không?",
+   "a": "Có, nếu đáp ứng điều kiện và thủ tục đăng ký."
+  },
+  "contrast": [
+   {
+    "with": "thuong-luong-tap-the",
+    "text": "Tổ chức đại diện là chủ thể; thương lượng là việc chủ thể đó làm."
    }
   ]
  },

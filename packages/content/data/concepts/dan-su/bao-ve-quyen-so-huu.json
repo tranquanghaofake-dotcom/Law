@@ -23,16 +23,20 @@
   "trưng mua, trưng dụng có bồi thường"
  ],
  "memo": {
-  "hook": "Không ai bị TƯỚC quyền trái luật; được TỰ BẢO VỆ và KIỆN ĐÒI.",
+  "gist": "Không ai bị tước tài sản trái luật; chủ được tự bảo vệ, đòi lại tài sản, buộc dừng cản trở, đòi bồi thường.",
+  "kind": "tree",
+  "hook": "Nhà mình có hàng rào luật: ai lấn thì được kêu Tòa dỡ ra.",
   "tree": [
    {
     "label": "Nguyên tắc",
+    "icon": "shield",
     "children": [
      "Không bị tước đoạt trái luật"
     ]
    },
    {
     "label": "Biện pháp",
+    "icon": "tool",
     "children": [
      "Tự bảo vệ",
      "Kiện đòi tài sản",
@@ -42,9 +46,20 @@
    },
    {
     "label": "Nhà nước",
+    "icon": "state",
     "children": [
      "Trưng mua, trưng dụng có bồi thường"
     ]
+   }
+  ],
+  "case": {
+   "q": "Hàng xóm xây tường lấn sang đất nhà mình. Chủ đất có thể yêu cầu gì?",
+   "a": "Yêu cầu Tòa buộc tháo dỡ phần lấn chiếm và bồi thường thiệt hại."
+  },
+  "contrast": [
+   {
+    "with": "quyen-so-huu",
+    "text": "Bảo vệ là cách giữ quyền khi bị xâm phạm; quyền sở hữu là chính các quyền chiếm hữu, sử dụng, định đoạt."
    }
   ]
  },

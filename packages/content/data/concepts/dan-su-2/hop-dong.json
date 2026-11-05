@@ -23,28 +23,43 @@
   "song vụ, đơn vụ"
  ],
  "memo": {
-  "hook": "Hợp đồng là SỰ THỎA THUẬN; giao kết qua ĐỀ NGHỊ và CHẤP NHẬN.",
+  "gist": "Hợp đồng là sự thỏa thuận giữa các bên để tạo ra, thay đổi hay chấm dứt quyền và nghĩa vụ.",
+  "kind": "tree",
+  "hook": "Một bên đưa lời mời, bên kia gật đầu: thế là thành.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "handshake",
     "children": [
      "Thỏa thuận giữa các bên"
     ]
    },
    {
     "label": "Hệ quả",
+    "icon": "cycle",
     "children": [
      "Xác lập, thay đổi, chấm dứt quyền"
     ]
    },
    {
     "label": "Phân loại",
+    "icon": "list",
     "children": [
      "Song vụ – đơn vụ",
      "Chính – phụ",
      "Vì lợi ích người thứ ba",
      "Có điều kiện"
     ]
+   }
+  ],
+  "case": {
+   "q": "Hợp đồng tặng cho không điều kiện là song vụ hay đơn vụ?",
+   "a": "Đơn vụ, vì chỉ một bên có nghĩa vụ."
+  },
+  "contrast": [
+   {
+    "with": "hop-dong-theo-mau",
+    "text": "Hợp đồng là khái niệm chung; theo mẫu là kiểu do một bên soạn sẵn."
    }
   ]
  },

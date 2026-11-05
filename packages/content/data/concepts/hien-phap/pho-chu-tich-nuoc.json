@@ -23,16 +23,20 @@
   "khuyết Chủ tịch nước"
  ],
  "memo": {
-  "hook": "Phó Chủ tịch nước GIỮ QUYỀN Chủ tịch nước trong 2 trường hợp.",
+  "gist": "Quốc hội bầu Phó Chủ tịch nước giúp Chủ tịch nước; giữ quyền Chủ tịch nước khi người này thôi chức hay vắng lâu.",
+  "kind": "tree",
+  "hook": "Người cầm lái dự phòng của nguyên thủ.",
   "tree": [
    {
     "label": "Bầu",
+    "icon": "vote",
     "children": [
      "Quốc hội bầu trong số đại biểu"
     ]
    },
    {
     "label": "Nhiệm vụ",
+    "icon": "handshake",
     "children": [
      "Giúp Chủ tịch nước",
      "Được ủy nhiệm một số việc"
@@ -40,10 +44,21 @@
    },
    {
     "label": "Giữ quyền Chủ tịch nước",
+    "icon": "key",
     "children": [
      "Chủ tịch nước không làm việc được thời gian dài",
      "Khuyết Chủ tịch nước"
     ]
+   }
+  ],
+  "case": {
+   "q": "Chủ tịch nước thôi chức giữa nhiệm kỳ. Ai giữ quyền?",
+   "a": "Phó Chủ tịch nước, đến khi Quốc hội bầu Chủ tịch nước mới."
+  },
+  "contrast": [
+   {
+    "with": "pho-thu-tuong",
+    "text": "Phó Chủ tịch nước thay nguyên thủ; Phó Thủ tướng giúp người đứng đầu Chính phủ."
    }
   ]
  },

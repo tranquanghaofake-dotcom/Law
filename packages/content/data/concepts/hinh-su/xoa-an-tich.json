@@ -23,10 +23,13 @@
   "01, 02, 03, 05 năm"
  ],
  "memo": {
-  "hook": "Xóa án tích = coi như CHƯA bị kết án; ba cách: ĐƯƠNG NHIÊN – TÒA QUYẾT ĐỊNH – ĐẶC BIỆT.",
+  "gist": "Xóa án tích là coi như chưa từng bị kết án; có thể đương nhiên, do Tòa quyết định, hoặc trường hợp đặc biệt.",
+  "kind": "tree",
+  "hook": "Như tẩy vết bẩn trên lý lịch sau một thời gian sống tốt.",
   "tree": [
    {
     "label": "Hình thức",
+    "icon": "trash",
     "children": [
      "Đương nhiên",
      "Theo quyết định của Tòa án",
@@ -35,6 +38,7 @@
    },
    {
     "label": "Đương nhiên khi",
+    "icon": "check",
     "children": [
      "Xong hình phạt chính, bổ sung",
      "Không phạm tội mới trong thời hạn"
@@ -42,9 +46,20 @@
    },
    {
     "label": "Thời hạn",
+    "icon": "clock",
     "children": [
      "01, 02, 03, 05 năm"
     ]
+   }
+  ],
+  "case": {
+   "q": "A bị phạt 2 năm tù, chấp hành xong năm 2023, nộp đủ án phí, không phạm tội mới. Khi nào đương nhiên được xóa án tích?",
+   "a": "Năm 2025."
+  },
+  "contrast": [
+   {
+    "with": "tai-pham",
+    "text": "Xóa án tích là lý lịch sạch lại; tái phạm là phạm lại khi chưa sạch."
    }
   ]
  },
