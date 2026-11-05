@@ -24,10 +24,13 @@
   "cưỡng chế"
  ],
  "memo": {
-  "hook": "Chức năng: ĐỐI NỘI và ĐỐI NGOẠI, thực hiện bằng thuyết phục và cưỡng chế.",
+  "gist": "Nhà nước làm việc bên trong như kinh tế, an ninh, và bên ngoài như bảo vệ Tổ quốc, hợp tác quốc tế.",
+  "kind": "compare",
+  "hook": "Lo việc trong nhà và lo quan hệ với hàng xóm.",
   "tree": [
    {
     "label": "Đối nội",
+    "icon": "🏠",
     "children": [
      "Kinh tế, xã hội",
      "An ninh, trật tự",
@@ -36,6 +39,7 @@
    },
    {
     "label": "Đối ngoại",
+    "icon": "🌍",
     "children": [
      "Bảo vệ Tổ quốc",
      "Hợp tác quốc tế"
@@ -43,16 +47,28 @@
    },
    {
     "label": "Hình thức",
+    "icon": "📜",
     "children": [
      "Xây dựng, thực hiện, bảo vệ pháp luật"
     ]
    },
    {
     "label": "Phương pháp",
+    "icon": "⚖️",
     "children": [
      "Thuyết phục",
      "Cưỡng chế"
     ]
+   }
+  ],
+  "case": {
+   "q": "Nhà nước ký hiệp định thương mại tự do. Đây là chức năng gì?",
+   "a": "Chức năng đối ngoại."
+  },
+  "contrast": [
+   {
+    "with": "llc-ban-chat-nha-nuoc",
+    "text": "Chức năng là nhà nước làm gì; bản chất là nhà nước là gì."
    }
   ]
  },

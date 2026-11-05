@@ -23,10 +23,13 @@
   "cộng hòa đại nghị"
  ],
  "memo": {
-  "hook": "QUÂN CHỦ: quyền lực theo THỪA KẾ; CỘNG HÒA: cơ quan được BẦU.",
+  "gist": "Quân chủ là quyền lực cao nhất truyền theo dòng họ; cộng hòa là cơ quan cao nhất do bầu ra có nhiệm kỳ.",
+  "kind": "compare",
+  "hook": "Ngai vàng truyền con, hay ghế ngồi do dân bầu.",
   "tree": [
    {
     "label": "Quân chủ",
+    "icon": "👑",
     "children": [
      "Tuyệt đối",
      "Hạn chế, lập hiến"
@@ -34,6 +37,7 @@
    },
    {
     "label": "Cộng hòa",
+    "icon": "🗳️",
     "children": [
      "Quý tộc",
      "Dân chủ"
@@ -41,11 +45,22 @@
    },
    {
     "label": "Cộng hòa dân chủ hiện đại",
+    "icon": "🏛️",
     "children": [
      "Tổng thống",
      "Đại nghị",
      "Hỗn hợp"
     ]
+   }
+  ],
+  "case": {
+   "q": "Vương quốc Anh có vua nhưng Thủ tướng và Nghị viện nắm quyền thực tế. Đây là chính thể gì?",
+   "a": "Quân chủ lập hiến đại nghị."
+  },
+  "contrast": [
+   {
+    "with": "llc-cau-truc-nha-nuoc",
+    "text": "Chính thể là cách tổ chức quyền lực cao nhất; cấu trúc là cách chia lãnh thổ."
    }
   ]
  },

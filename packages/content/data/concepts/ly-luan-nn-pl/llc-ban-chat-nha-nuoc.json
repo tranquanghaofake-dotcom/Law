@@ -23,10 +23,13 @@
   "công việc chung"
  ],
  "memo": {
-  "hook": "Nhà nước có HAI mặt: TÍNH GIAI CẤP và TÍNH XÃ HỘI.",
+  "gist": "Nhà nước có hai mặt: công cụ của giai cấp cầm quyền và tổ chức lo việc chung của xã hội.",
+  "kind": "compare",
+  "hook": "Một đồng xu hai mặt: một mặt bảo vệ người cầm quyền, một mặt đắp đê cho cả làng.",
   "tree": [
    {
     "label": "Tính giai cấp",
+    "icon": "👑",
     "children": [
      "Bộ máy cưỡng chế của giai cấp cầm quyền",
      "Bảo vệ lợi ích giai cấp thống trị"
@@ -34,10 +37,21 @@
    },
    {
     "label": "Tính xã hội",
+    "icon": "🤝",
     "children": [
      "Giải quyết công việc chung",
      "Trị thủy, hạ tầng, trật tự"
     ]
+   }
+  ],
+  "case": {
+   "q": "Nhà nước xây đê chống lũ thể hiện mặt nào của bản chất nhà nước?",
+   "a": "Tính xã hội."
+  },
+  "contrast": [
+   {
+    "with": "llc-ban-chat-phap-luat",
+    "text": "Bản chất nhà nước nói về bộ máy; bản chất pháp luật nói về quy tắc bộ máy đó đặt ra."
    }
   ]
  },

@@ -27,10 +27,13 @@
   "truy cứu"
  ],
  "memo": {
-  "hook": "Trách nhiệm pháp lý: hậu quả BẤT LỢI do VI PHẠM; bốn loại.",
+  "gist": "Trách nhiệm pháp lý là hậu quả bất lợi người vi phạm phải gánh; có bốn loại: hình sự, hành chính, dân sự, kỷ luật.",
+  "kind": "tree",
+  "hook": "Gieo gió gặt bão: làm sai thì gánh hậu quả, có khi gánh nhiều loại cùng lúc.",
   "tree": [
    {
     "label": "Cơ sở",
+    "icon": "⚠️",
     "children": [
      "Vi phạm pháp luật",
      "Thiệt hại luật định"
@@ -38,6 +41,7 @@
    },
    {
     "label": "Đặc điểm",
+    "icon": "📌",
     "children": [
      "Nhà nước lên án",
      "Luôn bất lợi"
@@ -45,12 +49,23 @@
    },
    {
     "label": "Bốn loại",
+    "icon": "4️⃣",
     "children": [
      "Hình sự (chỉ Tòa án)",
      "Hành chính",
      "Dân sự",
      "Kỷ luật"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công chức lái xe công say rượu gây tai nạn. Có thể chịu những trách nhiệm nào cùng lúc?",
+   "a": "Hình sự, kỷ luật và dân sự."
+  },
+  "contrast": [
+   {
+    "with": "llc-vi-pham-phap-luat",
+    "text": "Trách nhiệm là hậu quả; vi phạm là nguyên nhân."
    }
   ]
  },

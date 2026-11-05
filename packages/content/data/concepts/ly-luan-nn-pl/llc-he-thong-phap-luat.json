@@ -23,10 +23,13 @@
   "phương pháp điều chỉnh"
  ],
  "memo": {
-  "hook": "QUY PHẠM → CHẾ ĐỊNH → NGÀNH LUẬT → HỆ THỐNG; chia ngành theo ĐỐI TƯỢNG và PHƯƠNG PHÁP.",
+  "gist": "Quy phạm gộp thành chế định, chế định thành ngành luật, các ngành thành hệ thống; chia ngành theo đối tượng, phương pháp.",
+  "kind": "ladder",
+  "hook": "Như viên gạch, bức tường, căn phòng, ngôi nhà.",
   "tree": [
    {
     "label": "Cấu trúc",
+    "icon": "🧱",
     "children": [
      "Quy phạm",
      "Chế định",
@@ -36,10 +39,21 @@
    },
    {
     "label": "Căn cứ chia ngành",
+    "icon": "🧭",
     "children": [
      "Đối tượng điều chỉnh",
      "Phương pháp điều chỉnh"
     ]
+   }
+  ],
+  "case": {
+   "q": "Chế định hợp đồng và chế định thừa kế cùng thuộc ngành luật nào?",
+   "a": "Luật Dân sự."
+  },
+  "contrast": [
+   {
+    "with": "llc-hinh-thuc-phap-luat",
+    "text": "Hệ thống là cấu trúc bên trong; hình thức là luật nằm ở đâu, như văn bản, án lệ."
    }
   ]
  },

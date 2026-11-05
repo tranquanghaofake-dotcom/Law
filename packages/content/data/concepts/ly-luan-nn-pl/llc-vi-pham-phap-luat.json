@@ -24,10 +24,13 @@
   "năng lực trách nhiệm pháp lý"
  ],
  "memo": {
-  "hook": "Bốn dấu hiệu, thiếu một là KHÔNG vi phạm: HÀNH VI – TRÁI LUẬT – NĂNG LỰC – LỖI.",
+  "gist": "Vi phạm pháp luật phải đủ bốn dấu hiệu: có hành vi, trái luật, người làm có năng lực, và có lỗi.",
+  "kind": "checklist",
+  "hook": "Thiếu một chân, bàn bốn chân sẽ đổ.",
   "tree": [
    {
     "label": "Dấu hiệu",
+    "icon": "✅",
     "children": [
      "Hành vi xác định",
      "Trái pháp luật",
@@ -37,10 +40,25 @@
    },
    {
     "label": "Không phải vi phạm",
+    "icon": "🚫",
     "children": [
      "Chỉ là ý nghĩ",
      "Hiện tượng tự nhiên"
     ]
+   }
+  ],
+  "case": {
+   "q": "Người tâm thần đốt nhà. Có phải vi phạm pháp luật không?",
+   "a": "Không, vì không có năng lực trách nhiệm pháp lý."
+  },
+  "contrast": [
+   {
+    "with": "llc-trach-nhiem-phap-ly",
+    "text": "Vi phạm là nguyên nhân; trách nhiệm là hậu quả."
+   },
+   {
+    "with": "llc-cau-thanh-vppl",
+    "text": "Bài này nói có vi phạm hay không; cấu thành phân tích vi phạm qua bốn mặt."
    }
   ]
  },

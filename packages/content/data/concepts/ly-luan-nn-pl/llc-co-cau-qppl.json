@@ -5,7 +5,7 @@
  "term": "Cơ cấu của quy phạm pháp luật",
  "definition": "Quy phạm pháp luật gồm ba bộ phận: giả định — nêu hoàn cảnh, điều kiện, chủ thể mà quy phạm tác động; quy định — nêu cách xử sự chủ thể phải, được hoặc không được làm; chế tài — nêu biện pháp tác động nhà nước dự kiến áp dụng với chủ thể không thực hiện đúng quy định.",
  "plain": "GIẢ ĐỊNH trả lời \"ai, khi nào, trong điều kiện nào\"; QUY ĐỊNH trả lời \"phải làm gì, được làm gì, không được làm gì\" — bộ phận trung tâm; CHẾ TÀI trả lời \"hậu quả bất lợi nào nếu vi phạm\" (hình sự, hành chính, dân sự, kỷ luật). Trong thực tế một điều luật có thể không chứa đủ ba bộ phận (chế tài nằm ở văn bản khác) và một điều luật có thể chứa nhiều quy phạm; cần phân biệt QUY PHẠM với ĐIỀU LUẬT. Cách xác định: tìm chủ thể và hoàn cảnh (giả định), tìm mệnh lệnh (quy định), tìm hậu quả (chế tài).",
- "example": "\"Người nào (giả định: chủ thể) trộm cắp tài sản trị giá từ 2.000.000 đồng (giả định: hoàn cảnh)... thì bị phạt cải tạo không giam giữ đến 03 năm hoặc phạt tù từ 06 tháng đến 03 năm (chế tài)\" — quy định (cấm trộm cắp) được hiểu ngầm.",
+ "example": "\"Người nào trộm cắp tài sản trị giá từ 2 triệu đồng thì bị phạt cải tạo không giam giữ đến 3 năm hoặc phạt tù từ 6 tháng đến 3 năm\": phần đầu là giả định, phần phạt là chế tài, quy định cấm trộm cắp được hiểu ngầm.",
  "source": {
   "kind": "textbook",
   "cite": "Ghi chép ôn thi Lý luận chung về Nhà nước và Pháp luật (Drive HLU/KÌ I NĂM I/LLCNN&PL/TÀI LIỆU ÔN THI LLC: VD8, VD9, VD11, VD12, VD13) và Tài liệu hướng dẫn môn học Lý luận về nhà nước, ThS. Lê Việt Tuấn (Bài 1, 2, 6, 9) — chưa đối chiếu nguyên văn giáo trình"
@@ -23,16 +23,20 @@
   "điều luật"
  ],
  "memo": {
-  "hook": "Ba bộ phận: GIẢ ĐỊNH (ai, khi nào) – QUY ĐỊNH (làm gì) – CHẾ TÀI (hậu quả).",
+  "gist": "Quy phạm gồm ba phần: giả định nêu ai, khi nào; quy định nêu phải làm gì; chế tài nêu hậu quả khi vi phạm.",
+  "kind": "steps",
+  "hook": "Nếu… thì phải… nếu không thì…",
   "tree": [
    {
     "label": "Giả định",
+    "icon": "❓",
     "children": [
      "Ai, khi nào, điều kiện nào"
     ]
    },
    {
     "label": "Quy định",
+    "icon": "📏",
     "children": [
      "Phải làm, được làm, không được làm",
      "Bộ phận trung tâm"
@@ -40,15 +44,27 @@
    },
    {
     "label": "Chế tài",
+    "icon": "⚖️",
     "children": [
      "Hậu quả bất lợi khi vi phạm"
     ]
    },
    {
     "label": "Thực tế",
+    "icon": "📌",
     "children": [
      "Điều luật có thể thiếu bộ phận"
     ]
+   }
+  ],
+  "case": {
+   "q": "Trong điều luật về tội trộm cắp, phần \"bị phạt tù từ 6 tháng đến 3 năm\" là bộ phận nào?",
+   "a": "Chế tài."
+  },
+  "contrast": [
+   {
+    "with": "llc-quy-pham-phap-luat",
+    "text": "Cơ cấu là ba bộ phận bên trong; quy phạm là cả quy tắc."
    }
   ]
  },

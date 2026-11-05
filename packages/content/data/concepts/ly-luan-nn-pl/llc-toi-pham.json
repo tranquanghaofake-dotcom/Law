@@ -5,7 +5,7 @@
  "term": "Tội phạm — vi phạm hình sự",
  "definition": "Tội phạm là hành vi nguy hiểm cho xã hội được quy định trong Bộ luật Hình sự, do người có năng lực trách nhiệm hình sự hoặc pháp nhân thương mại thực hiện một cách cố ý hoặc vô ý, xâm phạm độc lập, chủ quyền, thống nhất, toàn vẹn lãnh thổ Tổ quốc, xâm phạm chế độ chính trị, chế độ kinh tế, nền văn hoá, quốc phòng, an ninh, trật tự, an toàn xã hội, quyền, lợi ích hợp pháp của tổ chức, xâm phạm quyền con người, quyền, lợi ích hợp pháp của công dân, xâm phạm những lĩnh vực khác của trật tự pháp luật xã hội chủ nghĩa mà theo quy định của Bộ luật này phải bị xử lý hình sự.",
  "plain": "Tội phạm là loại vi phạm pháp luật có tính nguy hiểm cho xã hội CAO NHẤT, xâm phạm quan hệ xã hội quan trọng nhất. Định nghĩa luật định chứa đủ bốn dấu hiệu lý luận: hành vi NGUY HIỂM CHO XÃ HỘI; TRÁI PHÁP LUẬT HÌNH SỰ (được quy định trong BLHS — không có tội nếu luật không quy định); chủ thể có NĂNG LỰC TRÁCH NHIỆM HÌNH SỰ hoặc pháp nhân thương mại; có LỖI cố ý hoặc vô ý. Khoản 2 Điều 8: hành vi có dấu hiệu tội phạm nhưng tính nguy hiểm không đáng kể thì không phải tội phạm — ranh giới với vi phạm hành chính. Trách nhiệm hình sự là loại trách nhiệm pháp lý nghiêm khắc nhất, chỉ do Tòa án áp dụng.",
- "example": "Trộm cắp tài sản 1,5 triệu đồng lần đầu: chưa đủ định lượng BLHS → vi phạm hành chính; trộm 3 triệu đồng → tội phạm (Điều 173).",
+ "example": "Trộm cắp tài sản 1,5 triệu đồng lần đầu: chưa đủ định lượng của Bộ luật Hình sự nên là vi phạm hành chính; trộm 3 triệu đồng thì là tội phạm (Điều 173).",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1 Điều 8 Bộ luật Hình sự 2015 (sửa đổi, bổ sung năm 2017, 2025)",
@@ -26,23 +26,37 @@
  ],
  "note": "Bộ luật Hình sự 100/2015/QH13 (hiệu lực 01/01/2018) được sửa đổi bởi Luật 12/2017/QH14 và Luật 86/2025/QH15 (hiệu lực 01/7/2025) — văn bản hợp nhất 135/VBHN-VPQH 2025.",
  "memo": {
-  "hook": "Tội phạm có tính nguy hiểm CAO NHẤT; không có tội nếu BLHS không quy định.",
+  "gist": "Hành vi nguy hiểm nhất cho xã hội, được Bộ luật Hình sự quy định, do người có năng lực thực hiện có lỗi.",
+  "kind": "checklist",
+  "hook": "Như danh sách đen in sẵn: không có tên trong sổ thì không bị gọi tội.",
   "tree": [
    {
     "label": "Dấu hiệu",
+    "icon": "✅",
     "children": [
      "Nguy hiểm cho xã hội",
-     "Được quy định trong BLHS",
+     "Được quy định trong Bộ luật Hình sự",
      "Có năng lực trách nhiệm hình sự",
      "Có lỗi"
     ]
    },
    {
     "label": "Chủ thể",
+    "icon": "👥",
     "children": [
      "Cá nhân",
      "Pháp nhân thương mại"
     ]
+   }
+  ],
+  "case": {
+   "q": "Trộm 1,5 triệu đồng lần đầu là tội phạm hay vi phạm hành chính?",
+   "a": "Vi phạm hành chính, vì chưa đủ định lượng 2 triệu của tội trộm cắp."
+  },
+  "contrast": [
+   {
+    "with": "llc-vi-pham-hanh-chinh",
+    "text": "Tội phạm nguy hiểm nhất, bị xử bằng hình phạt; vi phạm hành chính nhẹ hơn, bị xử phạt hành chính."
    }
   ]
  },

@@ -25,10 +25,13 @@
   "nghĩa vụ pháp lý"
  ],
  "memo": {
-  "hook": "Ba yếu tố: CHỦ THỂ – KHÁCH THỂ – NỘI DUNG (quyền, nghĩa vụ).",
+  "gist": "Quan hệ xã hội được pháp luật điều chỉnh, gồm chủ thể, khách thể và nội dung là quyền, nghĩa vụ.",
+  "kind": "tree",
+  "hook": "Ai với ai, vì cái gì, được và phải làm gì.",
   "tree": [
    {
     "label": "Đặc điểm",
+    "icon": "📏",
     "children": [
      "Dựa trên quy phạm",
      "Mang tính ý chí",
@@ -37,6 +40,7 @@
    },
    {
     "label": "Cơ cấu",
+    "icon": "🧩",
     "children": [
      "Chủ thể",
      "Khách thể",
@@ -45,9 +49,20 @@
    },
    {
     "label": "Phát sinh do",
+    "icon": "⚡",
     "children": [
      "Sự kiện pháp lý"
     ]
+   }
+  ],
+  "case": {
+   "q": "A ký hợp đồng mua xe của B. Khách thể của quan hệ là gì?",
+   "a": "Quyền sở hữu chiếc xe và khoản tiền."
+  },
+  "contrast": [
+   {
+    "with": "llc-su-kien-phap-ly",
+    "text": "Quan hệ pháp luật là mối quan hệ; sự kiện pháp lý là thứ làm nó phát sinh, thay đổi, chấm dứt."
    }
   ]
  },

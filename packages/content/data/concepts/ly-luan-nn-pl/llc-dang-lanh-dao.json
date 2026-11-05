@@ -25,10 +25,13 @@
  ],
  "note": "Hiến pháp 2013 (hiệu lực 01/01/2014) được sửa đổi, bổ sung bởi Nghị quyết 203/2025/QH15 (hiệu lực 16/6/2025) — các điều được trích (Điều 2, 4, 6) không thuộc phạm vi sửa đổi.",
  "memo": {
-  "hook": "Đảng LÃNH ĐẠO, Nhà nước QUẢN LÝ, Mặt trận và đoàn thể THAM GIA.",
+  "gist": "Đảng lãnh đạo bằng đường lối và công tác cán bộ, Nhà nước quản lý bằng pháp luật, Mặt trận và đoàn thể tham gia.",
+  "kind": "tree",
+  "hook": "Đảng chỉ hướng, Nhà nước cầm lái, Mặt trận cùng chèo.",
   "tree": [
    {
     "label": "Hệ thống chính trị",
+    "icon": "🧭",
     "children": [
      "Đảng lãnh đạo",
      "Nhà nước trung tâm",
@@ -37,6 +40,7 @@
    },
    {
     "label": "Cách lãnh đạo",
+    "icon": "📋",
     "children": [
      "Cương lĩnh, đường lối",
      "Công tác cán bộ",
@@ -45,9 +49,20 @@
    },
    {
     "label": "Ràng buộc",
+    "icon": "📜",
     "children": [
      "Trong khuôn khổ Hiến pháp"
     ]
+   }
+  ],
+  "case": {
+   "q": "Nghị quyết của Đảng định hướng tinh gọn bộ máy. Ai biến nó thành luật?",
+   "a": "Quốc hội, bằng việc sửa luật để thể chế hóa."
+  },
+  "contrast": [
+   {
+    "with": "llc-nha-nuoc-phap-quyen",
+    "text": "Đảng lãnh đạo hệ thống chính trị; nhà nước pháp quyền nói pháp luật ràng buộc cả bộ máy."
    }
   ]
  },

@@ -25,10 +25,13 @@
  ],
  "note": "Bộ luật Dân sự 91/2015/QH13 có hiệu lực từ 01/01/2017; chưa có văn bản sửa đổi có hiệu lực.",
  "memo": {
-  "hook": "Năng lực HÀNH VI: TỰ MÌNH làm; phụ thuộc TUỔI và NHẬN THỨC.",
+  "gist": "Năng lực hành vi là khả năng tự mình làm để có quyền và nghĩa vụ; phụ thuộc tuổi và khả năng nhận thức.",
+  "kind": "tree",
+  "hook": "Có vé rồi, giờ là tự cầm vé đi.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "🙋",
     "children": [
      "Bằng hành vi của chính mình",
      "Xác lập, thực hiện quyền"
@@ -36,6 +39,7 @@
    },
    {
     "label": "Phụ thuộc",
+    "icon": "🧠",
     "children": [
      "Độ tuổi",
      "Khả năng nhận thức, điều khiển"
@@ -43,9 +47,20 @@
    },
    {
     "label": "Dân sự",
+    "icon": "🔞",
     "children": [
      "Từ đủ 18: đầy đủ"
     ]
+   }
+  ],
+  "case": {
+   "q": "Học sinh 14 tuổi bán xe máy của mình. Có cần cha mẹ đồng ý không?",
+   "a": "Có."
+  },
+  "contrast": [
+   {
+    "with": "llc-nang-luc-phap-luat",
+    "text": "Năng lực hành vi là tự làm; năng lực pháp luật là được có quyền."
    }
   ]
  },

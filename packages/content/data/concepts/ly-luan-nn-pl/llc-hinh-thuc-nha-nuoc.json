@@ -23,25 +23,40 @@
   "tổ chức quyền lực"
  ],
  "memo": {
-  "hook": "Ba yếu tố: CHÍNH THỂ – CẤU TRÚC – CHẾ ĐỘ CHÍNH TRỊ.",
+  "gist": "Hình thức nhà nước gồm ba yếu tố: chính thể, cấu trúc lãnh thổ và chế độ chính trị.",
+  "kind": "tree",
+  "hook": "Ba câu hỏi: ai nắm quyền cao nhất, chia đất ra sao, cai trị bằng cách nào.",
   "tree": [
    {
     "label": "Chính thể",
+    "icon": "👑",
     "children": [
      "Quân chủ / cộng hòa"
     ]
    },
    {
     "label": "Cấu trúc",
+    "icon": "🗺️",
     "children": [
      "Đơn nhất / liên bang"
     ]
    },
    {
     "label": "Chế độ chính trị",
+    "icon": "🗳️",
     "children": [
      "Dân chủ / phản dân chủ"
     ]
+   }
+  ],
+  "case": {
+   "q": "Việt Nam là cộng hòa, đơn nhất, dân chủ. Ba yếu tố đó gọi chung là gì?",
+   "a": "Hình thức nhà nước."
+  },
+  "contrast": [
+   {
+    "with": "llc-chinh-the",
+    "text": "Hình thức là ba yếu tố; chính thể chỉ là một yếu tố."
    }
   ]
  },

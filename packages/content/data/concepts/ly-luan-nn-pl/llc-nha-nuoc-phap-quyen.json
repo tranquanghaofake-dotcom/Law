@@ -26,22 +26,36 @@
  ],
  "note": "Hiến pháp 2013 (hiệu lực 01/01/2014) được sửa đổi, bổ sung bởi Nghị quyết 203/2025/QH15 (hiệu lực 16/6/2025) — các điều được trích (Điều 2, 4, 6) không thuộc phạm vi sửa đổi.",
  "memo": {
-  "hook": "Pháp quyền: PHÁP LUẬT ngự trị, NHÂN DÂN là chủ thể quyền lực.",
+  "gist": "Nhà nước của Nhân dân, pháp luật đứng trên tất cả, bảo đảm quyền con người và kiểm soát quyền lực.",
+  "kind": "tree",
+  "hook": "Luật là trọng tài, kể cả với chính người viết luật.",
   "tree": [
    {
     "label": "Hiến định",
+    "icon": "📜",
     "children": [
      "Của Nhân dân, do Nhân dân, vì Nhân dân"
     ]
    },
    {
     "label": "Dấu hiệu (lý luận)",
+    "icon": "🔎",
     "children": [
      "Nhân dân là chủ thể quyền lực",
      "Pháp luật tối cao",
      "Bảo đảm quyền con người",
      "Phân công, kiểm soát quyền lực"
     ]
+   }
+  ],
+  "case": {
+   "q": "Tòa hủy quyết định trái luật của Ủy ban nhân dân. Thể hiện dấu hiệu gì?",
+   "a": "Pháp luật ràng buộc chính nhà nước, dấu hiệu của nhà nước pháp quyền."
+  },
+  "contrast": [
+   {
+    "with": "llc-quyen-luc-nha-nuoc-thong-nhat",
+    "text": "Pháp quyền là pháp luật đứng trên; quyền lực thống nhất nói cách chia việc giữa các cơ quan."
    }
   ]
  },

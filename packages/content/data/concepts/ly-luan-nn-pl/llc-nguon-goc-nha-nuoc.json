@@ -23,10 +23,13 @@
   "thần quyền"
  ],
  "memo": {
-  "hook": "Nhà nước ra đời khi có TƯ HỮU và GIAI CẤP đối kháng (quan điểm Mác – Lênin).",
+  "gist": "Theo quan điểm Mác – Lênin, nhà nước ra đời khi có tư hữu và giai cấp mâu thuẫn không điều hòa được.",
+  "kind": "tree",
+  "hook": "Có của riêng thì sinh tranh giành, tranh giành thì cần người cầm trịch.",
   "tree": [
    {
     "label": "Tiền đề kinh tế",
+    "icon": "💰",
     "children": [
      "Tư hữu",
      "Ba lần phân công lao động"
@@ -34,6 +37,7 @@
    },
    {
     "label": "Tiền đề xã hội",
+    "icon": "⚔️",
     "children": [
      "Phân hóa giai cấp",
      "Mâu thuẫn không điều hòa được"
@@ -41,10 +45,21 @@
    },
    {
     "label": "Học thuyết khác",
+    "icon": "📚",
     "children": [
      "Thần quyền",
      "Khế ước xã hội"
     ]
+   }
+  ],
+  "case": {
+   "q": "Nhà nước Văn Lang ra đời khi phân hóa giai cấp còn yếu. Yếu tố nào thúc đẩy?",
+   "a": "Nhu cầu trị thủy sông Hồng và chống xâm lược, theo con đường phương Đông."
+  },
+  "contrast": [
+   {
+    "with": "llc-ban-chat-nha-nuoc",
+    "text": "Nguồn gốc trả lời vì sao nhà nước ra đời; bản chất trả lời nhà nước là gì."
    }
   ]
  },

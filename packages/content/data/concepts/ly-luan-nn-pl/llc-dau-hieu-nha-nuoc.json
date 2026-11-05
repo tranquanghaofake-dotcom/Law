@@ -24,10 +24,13 @@
   "thuế"
  ],
  "memo": {
-  "hook": "Năm dấu hiệu: QUYỀN LỰC CÔNG – LÃNH THỔ – CHỦ QUYỀN – BAN HÀNH LUẬT – THU THUẾ.",
+  "gist": "Nhà nước có năm dấu hiệu: quyền lực công, quản lý theo lãnh thổ, chủ quyền, làm luật và thu thuế.",
+  "kind": "tree",
+  "hook": "Như một ngôi nhà thật: có chủ, có tường rào, có nội quy, có quỹ chung.",
   "tree": [
    {
     "label": "Tổ chức quyền lực",
+    "icon": "🏛️",
     "children": [
      "Quyền lực công cộng đặc biệt",
      "Quản lý dân cư theo lãnh thổ",
@@ -36,6 +39,7 @@
    },
    {
     "label": "Độc quyền",
+    "icon": "🔑",
     "children": [
      "Ban hành pháp luật",
      "Thu thuế"
@@ -43,10 +47,21 @@
    },
    {
     "label": "Phân biệt",
+    "icon": "↔️",
     "children": [
      "Thị tộc",
      "Tổ chức chính trị - xã hội"
     ]
+   }
+  ],
+  "case": {
+   "q": "Một tập đoàn đa quốc gia có nội quy riêng, nhân viên nhiều nước. Có phải nhà nước không?",
+   "a": "Không. Nó không có chủ quyền, không làm luật, không thu thuế bắt buộc."
+  },
+  "contrast": [
+   {
+    "with": "llc-ban-chat-nha-nuoc",
+    "text": "Dấu hiệu giúp nhận ra nhà nước; bản chất nói nhà nước là gì."
    }
   ]
  },
