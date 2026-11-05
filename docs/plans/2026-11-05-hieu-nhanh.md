@@ -26,3 +26,18 @@ Rút kinh nghiệm: (1) dòng trong danh sách flex phải bọc nội dung tron
 | 9 | Hình vẽ thật: kim tự tháp SVG cho bậc thang, mũi tên nối các bước, biểu tượng nhánh | xong |
 
 Rút kinh nghiệm đợt 2: (1) `git checkout <file>` để bỏ một sửa nhỏ sẽ xoá luôn mọi sửa chưa commit của file đó — muốn bỏ một chỗ thì sửa ngược, hoặc commit trước. (2) Biểu tượng ✓ của danh sách điều kiện không hợp với nhánh "thiếu một điều" — nhánh phủ định nên đưa vào mẹo nhớ, không đặt trong danh sách ✓. (3) SVG trong hàng flex lấy chiều cao theo tỉ lệ khung nhìn; muốn kéo theo chiều cao chữ thì đặt tuyệt đối trong `li` có `position: relative`.
+
+## Đợt 3: mở rộng ra các môn còn lại (Hào: "làm")
+Cách làm: mỗi môn một tệp dữ liệu (gist, kind, hook, icon, case, contrast; viết lại ví dụ/nhánh có viết tắt), áp bằng script, `npm run content` 0 lỗi mới commit, mỗi môn một commit.
+
+| Môn | Khái niệm | Trạng thái |
+|---|---|---|
+| Xây dựng VBPL (thí điểm) | 20 | xong |
+| An sinh xã hội | 12 | xong |
+| Luật Lao động 2 | 12 | xong |
+| Luật Cạnh tranh | 16 | xong |
+| Tố tụng dân sự | 16 | xong |
+| Luật Đất đai | 19 | xong |
+| 17 môn còn lại | 595 | chưa |
+
+Rút kinh nghiệm đợt 3: (1) kiểm số chữ và độ trùng mẹo ngay trong script trước khi chạy `npm run content` đỡ nhiều vòng; (2) commit chỉ khi grep thấy " 0 lỗi" — một lần lỡ commit dữ liệu lỗi vì chuỗi `&&` dựa vào grep thành công chứ không dựa vào số lỗi; (3) nhánh đã squash vào main: không force push được thì `git merge -s ours` nhánh cũ (cây giống hệt main) rồi push thường.
