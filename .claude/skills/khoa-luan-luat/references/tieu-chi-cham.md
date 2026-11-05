@@ -13,18 +13,21 @@
 
 ## 2. Giải thưởng KHCN sinh viên — Bộ GD&ĐT (TT 45/2020)
 
-**Điều kiện đề tài** (Điều 4, khoản 2, theo bản dẫn trên thuvienphapluat.vn):
+Đối chiếu nguyên văn Quy chế trên thuvienphapluat.vn ngày 05/11/2026. ⚠ Trang này liệt kê một "văn bản liên quan" ban hành ngày 12/08/2026 nhưng không xem được nội dung. Trước khi dùng cho mùa giải mới, phải kiểm trên vbpl.vn xem TT 45 có bị sửa đổi hoặc thay thế không.
+
+**Điều kiện đề tài** (Điều 4, khoản 2):
 - a) 01 sinh viên chịu trách nhiệm chính; tối đa 05 sinh viên; tối đa 02 người hướng dẫn, trong đó 01 người hướng dẫn chính.
-- b) Sản phẩm của đề tài được công bố hoặc ứng dụng trong thực tiễn, với điều kiện về thời gian tính đến ngày nộp hồ sơ. Câu chữ trích dẫn trong các thông báo không thống nhất, **phải đọc nguyên văn** trước khi kết luận.
+- b) Sản phẩm của đề tài được công bố hoặc ứng dụng trong thực tiễn **ít nhất 01 năm** tính đến thời điểm nộp hồ sơ. Hình thức công bố (theo baochinhphu.vn, 20/02/2025): sách chuyên khảo, sách tham khảo có giấy phép xuất bản; bài báo trên tạp chí khoa học; báo cáo hoặc bài trong kỷ yếu hội nghị, hội thảo trong nước và quốc tế; báo cáo, trưng bày tại hội nghị, hội thảo, seminar **từ cấp khoa trở lên**; ứng dụng có xác nhận của đơn vị sử dụng. → Hệ quả: phải **trình bày ở seminar cấp khoa hoặc đăng bài sớm**, ít nhất 1 năm trước hạn nộp (30/6).
 - c) Đề tài được cơ sở giáo dục đại học đánh giá và lựa chọn gửi đi.
 - d) Chưa nhận hoặc chưa gửi tham gia giải thưởng cấp Bộ hoặc tương đương trở lên.
 - đ) **Khóa luận, đồ án tốt nghiệp không được gửi tham gia.**
 
-Hồ sơ: Mẫu 01b (đăng ký), Mẫu 04 (báo cáo tổng kết), minh chứng công bố hoặc ứng dụng. **Không hiển thị** tên sinh viên, người hướng dẫn, cơ sở đào tạo trong báo cáo tổng kết (theo Công văn hướng dẫn hằng năm của Bộ).
+Hồ sơ: Mẫu 01b (đăng ký), Mẫu 04 (báo cáo tổng kết), minh chứng công bố hoặc ứng dụng. Nộp trước 30/6 của năm tổ chức (Điều 8, khoản 2).
+**Tính hợp lệ** (Điều 10), đủ 4 điều kiện: (1) đủ hồ sơ theo Điều 7; (2) **không hiển thị** tên sinh viên, người hướng dẫn, tên cơ sở đào tạo trong báo cáo tổng kết và tài liệu kèm theo, **trừ danh mục tài liệu tham khảo**; ngoại lệ: tên trường là một phần tên đề tài hoặc nội dung nghiên cứu; (3) nộp đúng hạn; (4) điều kiện còn lại của Điều 10 (chưa đọc được trọn câu chữ). Hồ sơ không hợp lệ thì không được xét giải (Điều 13, khoản 3, điểm d).
 
 Lĩnh vực: luật thuộc nhóm **Khoa học xã hội** (Điều 3). Năm 2025 có 60/125 đề tài vào chung khảo thuộc khoa học xã hội (moet.gov.vn).
 
-**Thang điểm 100** mà nhiều trường áp dụng theo TT 45 (quy định của ĐH Sư phạm TP.HCM; thông báo của ĐH CMC năm 2026). Phải đối chiếu nguyên văn Điều 10 TT 45 trước khi dùng làm chuẩn cuối:
+**Thang điểm 100 cho đề tài sinh viên: Điều 13, khoản 2** (đã đối chiếu nguyên văn). Chung khảo dùng lại tiêu chí này (Điều 16, khoản 2) và cộng phần trình bày trước hội đồng.
 
 | Tiêu chí | Điểm tối đa | Gợi ý chi tiết (theo phiếu Phụ lục, ĐH Huế) |
 |---|---|---|
@@ -34,6 +37,8 @@ Lĩnh vực: luật thuộc nhóm **Khoa học xã hội** (Điều 3). Năm 202
 | Kết quả nghiên cứu | 40 | |
 | Hình thức báo cáo | 5 | |
 | Công bố khoa học từ kết quả | 10 | tạp chí trong nước được Hội đồng Giáo sư nhà nước tính điểm, hoặc kỷ yếu có phản biện: ≤ 5 · tạp chí quốc tế uy tín: ≤ 10 |
+
+**Khung xét giải sơ khảo** (Điều 13, khoản 3): điểm trung bình của hội đồng **≥ 85: vào chung khảo** · 80 đến < 85: xét giải ba · 70 đến < 80: xét khuyến khích · < 70 hoặc hồ sơ không hợp lệ: không xét giải. Chung khảo: giải nhất cần ≥ 70% phiếu đồng ý của hội đồng (Điều 16, khoản 3, điểm a). → Ở pha 7, mục tiêu tự chấm là **≥ 85**, không phải ≥ 70.
 
 Hệ quả thực hành: **Kết quả (40) + Nội dung (20) = 60%**. Bài thắng giải không thắng nhờ chương lý luận dài, mà nhờ phát hiện cụ thể có bằng chứng. Có bài báo đăng trước khi nộp là cộng điểm thật.
 

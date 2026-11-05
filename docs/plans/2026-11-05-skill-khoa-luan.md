@@ -56,3 +56,9 @@ Quyết định: không đưa "bài mẫu đạt giải" vào skill — vì khô
 
 Rút kinh nghiệm: chạy thử phát hiện trang thứ cấp (mylaw.vn) ghi sai ngày hiệu lực Luật 76/2025/QH15 → đã bổ sung quy tắc "ngày hiệu lực lấy từ chính văn bản" và "kiểm văn bản hợp nhất" vào references/nguon-tra-cuu.md. Không có task phải làm lại.
 Rút kinh nghiệm: nguyên văn Điều 10 TT 45/2020 chưa đọc được (thuvienphapluat link 404) → thang điểm Bộ đang ghi "theo bản dẫn của các trường", lần sau thử vbpl.vn hoặc moet.gov.vn PDF.
+
+## Phiên tiếp (Hào: "làm")
+Task 5: bắt đầu — base 371af63
+- Đối chiếu nguyên văn TT 45/2020 (thuvienphapluat.vn …-458259.aspx): thang điểm đề tài SV ở **Điều 13 khoản 2** (không phải Điều 10 — Điều 10 là tính hợp lệ hồ sơ). Khung xét giải Điều 13 k3 (≥ 85 vào chung khảo). Điều 4 k2 điểm b: "ít nhất 01 năm" + các hình thức công bố (baochinhphu.vn 20/02/2025).
+- Cờ: thuvienphapluat liệt kê "văn bản liên quan" ban hành 12/08/2026, chưa xem được → ghi cảnh báo trong tieu-chi-cham.md.
+Rút kinh nghiệm: vòng 2 lần trước gán nhầm thang điểm cho "Điều 10" vì dựa câu chữ Công văn ("đáp ứng quy định tại Điều 10") — phải đọc mục lục văn bản gốc trước khi gán số điều.

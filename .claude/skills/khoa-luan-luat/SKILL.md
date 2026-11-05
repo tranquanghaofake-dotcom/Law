@@ -96,7 +96,7 @@ Cổng mỗi chương: chạy `python3 scripts/kiem_tra_ban_thao.py <file>`, kh�
 
 ### Pha 7 — Phản biện giả lập hội đồng
 Làm: đóng 3 vai **độc lập**, mỗi vai đọc toàn bài: (1) phản biện khắt khe về học thuật; (2) người làm thực tiễn (thẩm phán, luật sư, pháp chế); (3) thư ký chấm theo phiếu điểm đúng cuộc thi hoặc trường (`references/tieu-chi-cham.md`). Dùng checklist `references/phan-bien-hoi-dong.md`. Kết quả: điểm từng tiêu chí kèm lý do, danh sách sửa xếp theo mức tác động lên điểm.
-Cổng: mọi lỗi mức "chặn" đã sửa; điểm giả lập ở mỗi tiêu chí ≥ 70% điểm tối đa, hoặc người dùng chấp nhận rủi ro bằng văn bản.
+Cổng: mọi lỗi mức "chặn" đã sửa; điểm giả lập ở mỗi tiêu chí ≥ 70% điểm tối đa; bài dự giải Bộ GD&ĐT có tổng giả lập **≥ 85** (ngưỡng vào chung khảo, TT 45/2020, Điều 13, khoản 3). Không đạt thì người dùng phải xác nhận chấp nhận rủi ro bằng văn bản.
 
 ### Pha 8 — Hoàn thiện, nộp, bảo vệ
 Làm: chuẩn hóa footnote và danh mục tài liệu tham khảo (`references/trinh-bay-trich-dan.md`); kiểm hình thức theo quy định trường hoặc thể lệ (ẩn danh nếu dự giải); viết tóm tắt (và tóm tắt tiếng Anh nếu yêu cầu); 15–20 câu hỏi bảo vệ dự kiến kèm ý trả lời; khung slide 10–12 trang (nếu có skill `slide-chuan` thì dùng).
