@@ -114,6 +114,7 @@ Cổng: `kiem_tra_ban_thao.py` chạy trên bản cuối báo 0 lỗi; checklist
 | Lỗi hội đồng hay bắt, câu hỏi bảo vệ | `references/phan-bien-hoi-dong.md` |
 | Nhật ký AI, quy tắc diễn đạt lại, đạo văn | `references/liem-chinh-ai.md` |
 | Kiểm bản nháp tự động | `python3 scripts/kiem_tra_ban_thao.py <file.md>` |
+| Ví dụ pha 0–4 đã chạy (cổng pha 2 chưa qua — xem đúng cách để mở `[CẦN KIỂM]`) | `vi-du/giao-dich-nguoi-co-lien-quan/` |
 
 ## Công cụ, nếu phiên có
 

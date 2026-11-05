@@ -13,6 +13,10 @@ Thứ bậc tin cậy: **nguồn chính thức > tạp chí có phản biện > 
 
 Kiểm hiệu lực: mở mục "Thuộc tính" hoặc "Lược đồ" → ghi tình trạng, văn bản thay thế, ngày kiểm vào `05-nguon/van-ban.md`.
 
+- **Ngày ban hành và ngày hiệu lực lấy từ chính văn bản** (điều khoản "Hiệu lực thi hành", dòng thông qua hoặc ký), không lấy từ trang tổng hợp. Ví dụ khi chạy thử: một trang tra cứu ghi Luật số 76/2025/QH15 "hiệu lực 14-10-2025", trong khi bản chính thức ghi thông qua ngày 17/6/2025, hiệu lực từ 01/7/2025.
+- **Văn bản hợp nhất (VBHN)** cho biết điều, khoản nào đã bị sửa, và bởi văn bản nào (xem footnote của VBHN). VBHN không phải VBQPPL mới. Khi trích, ghi văn bản gốc kèm văn bản sửa đổi, ví dụ "Điều … Luật Doanh nghiệp số 59/2020/QH14 (được sửa đổi, bổ sung bởi Luật số 76/2025/QH15)". Chỉ dẫn VBHN khi trường cho phép.
+- Trước khi viết về một điều luật, phải kiểm điều đó **có bị sửa sau năm của các công trình đã đọc không**. Bài viết năm 2024 có thể bàn về câu chữ đã bị thay.
+
 ## Án lệ và bản án
 
 | Nguồn | Dùng để |
