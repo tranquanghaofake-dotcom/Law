@@ -23,6 +23,29 @@
   "mục đích kinh doanh"
  ],
  "note": "Luật Doanh nghiệp 59/2020/QH14 có hiệu lực từ 01/01/2021, thay thế Luật Doanh nghiệp 2014 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 03/2022/QH15 và Luật 76/2025/QH15 (hiệu lực 01/7/2025) — văn bản hợp nhất 67/VBHN-VPQH 2025.",
+ "memo": {
+  "hook": "Bốn dấu hiệu: TÊN RIÊNG – TÀI SẢN – TRỤ SỞ – MỤC ĐÍCH KINH DOANH.",
+  "tree": [
+   {
+    "label": "Dấu hiệu",
+    "children": [
+     "Tên riêng",
+     "Tài sản",
+     "Trụ sở giao dịch",
+     "Mục đích kinh doanh"
+    ]
+   },
+   {
+    "label": "Quan hệ tài chính với",
+    "children": [
+     "Chủ sở hữu",
+     "Nhà nước",
+     "Chủ nợ, nhà đầu tư",
+     "Nội bộ"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

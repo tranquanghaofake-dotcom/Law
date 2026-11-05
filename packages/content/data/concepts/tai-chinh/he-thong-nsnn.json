@@ -23,6 +23,33 @@
   "bổ sung cân đối, có mục tiêu"
  ],
  "note": "Luật Ngân sách nhà nước 89/2025/QH15 có hiệu lực từ năm ngân sách 2026 (một số nội dung từ 01/7/2025), thay thế Luật Ngân sách nhà nước 83/2015/QH13 mà đề cương HLU còn dẫn (Điều 77).",
+ "memo": {
+  "hook": "Trung ương CHỦ ĐẠO; địa phương nay chỉ còn TỈNH và XÃ.",
+  "tree": [
+   {
+    "label": "Gồm",
+    "children": [
+     "Ngân sách trung ương (chủ đạo)",
+     "Ngân sách địa phương"
+    ]
+   },
+   {
+    "label": "Địa phương",
+    "children": [
+     "Cấp tỉnh",
+     "Cấp xã"
+    ]
+   },
+   {
+    "label": "Quan hệ giữa các cấp",
+    "children": [
+     "Thu hưởng 100%",
+     "Thu phân chia theo tỷ lệ",
+     "Bổ sung cân đối, có mục tiêu"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -23,6 +23,37 @@
   "bản chất giao dịch quyết định nghĩa vụ thuế"
  ],
  "note": "Luật Quản lý thuế 108/2025/QH15 có hiệu lực từ 01/7/2026 (Điều 13 và hóa đơn điện tử hộ kinh doanh từ 01/01/2026), thay thế Luật Quản lý thuế 38/2019/QH14.",
+ "memo": {
+  "hook": "TỰ KHAI – TỰ TÍNH – TỰ NỘP; bản chất giao dịch quyết định thuế.",
+  "tree": [
+   {
+    "label": "Nguyên tắc",
+    "children": [
+     "Công khai, minh bạch, bình đẳng",
+     "Người nộp thuế là trung tâm"
+    ]
+   },
+   {
+    "label": "Người nộp thuế",
+    "children": [
+     "Tự khai, tự tính, tự nộp"
+    ]
+   },
+   {
+    "label": "Xác định nghĩa vụ",
+    "children": [
+     "Theo bản chất giao dịch"
+    ]
+   },
+   {
+    "label": "Luật 2025",
+    "children": [
+     "Phân nhóm người nộp thuế",
+     "Quản lý theo rủi ro"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

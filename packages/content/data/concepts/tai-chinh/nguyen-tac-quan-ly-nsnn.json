@@ -24,6 +24,38 @@
   "đúng chế độ, tiêu chuẩn, định mức"
  ],
  "note": "Luật Ngân sách nhà nước 89/2025/QH15 có hiệu lực từ năm ngân sách 2026 (một số nội dung từ 01/7/2025), thay thế Luật Ngân sách nhà nước 83/2015/QH13 mà đề cương HLU còn dẫn (Điều 77).",
+ "memo": {
+  "hook": "Mọi thu chi phải DỰ TOÁN; CHI KHI CÓ dự toán được giao.",
+  "tree": [
+   {
+    "label": "Quản lý",
+    "children": [
+     "Thống nhất, tập trung dân chủ",
+     "Công khai, minh bạch"
+    ]
+   },
+   {
+    "label": "Toàn diện",
+    "children": [
+     "Mọi khoản thu, chi vào dự toán"
+    ]
+   },
+   {
+    "label": "Cân đối",
+    "children": [
+     "Thu thuế, phí lớn hơn chi thường xuyên",
+     "Vay bù bội chi chỉ cho đầu tư"
+    ]
+   },
+   {
+    "label": "Chi",
+    "children": [
+     "Có dự toán",
+     "Đúng chế độ, định mức"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -23,6 +23,33 @@
   "lũy tiến 0,03% – 0,07% – 0,15%"
  ],
  "note": "Luật Thuế sử dụng đất phi nông nghiệp 48/2010/QH12 có hiệu lực từ 01/01/2012, sửa đổi bởi Luật Đất đai 31/2024/QH15 (hiệu lực 01/8/2024); văn bản hợp nhất 05/VBHN-VPQH 2024.",
+ "memo": {
+  "hook": "Đất ở tính LŨY TIẾN: 0,03% – 0,07% – 0,15%.",
+  "tree": [
+   {
+    "label": "Đối tượng",
+    "children": [
+     "Đất ở nông thôn, đô thị",
+     "Đất sản xuất, kinh doanh phi nông nghiệp"
+    ]
+   },
+   {
+    "label": "Người nộp",
+    "children": [
+     "Người có quyền sử dụng đất",
+     "Chưa có giấy: người đang sử dụng"
+    ]
+   },
+   {
+    "label": "Thuế suất đất ở",
+    "children": [
+     "Trong hạn mức: 0,03%",
+     "Vượt đến 3 lần: 0,07%",
+     "Trên 3 lần: 0,15%"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

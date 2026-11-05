@@ -23,6 +23,32 @@
   "ngân quỹ rộng hơn quỹ ngân sách"
  ],
  "note": "Luật Ngân sách nhà nước 89/2025/QH15 có hiệu lực từ năm ngân sách 2026 (một số nội dung từ 01/7/2025), thay thế Luật Ngân sách nhà nước 83/2015/QH13 mà đề cương HLU còn dẫn (Điều 77).",
+ "memo": {
+  "hook": "Quỹ ngân sách NẰM TRONG ngân quỹ nhà nước; Kho bạc quản lý.",
+  "tree": [
+   {
+    "label": "Quỹ ngân sách",
+    "children": [
+     "Tiền trên tài khoản ngân sách",
+     "Tại một thời điểm"
+    ]
+   },
+   {
+    "label": "Ngân quỹ nhà nước",
+    "children": [
+     "Rộng hơn",
+     "Gồm cả tiền gửi tại Kho bạc"
+    ]
+   },
+   {
+    "label": "Quản lý",
+    "children": [
+     "Kho bạc Nhà nước",
+     "Tập trung, thống nhất"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

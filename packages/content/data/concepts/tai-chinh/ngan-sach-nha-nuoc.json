@@ -24,6 +24,39 @@
   "năm ngân sách 01/01–31/12"
  ],
  "note": "Luật Ngân sách nhà nước 89/2025/QH15 có hiệu lực từ năm ngân sách 2026 (một số nội dung từ 01/7/2025), thay thế Luật Ngân sách nhà nước 83/2015/QH13 mà đề cương HLU còn dẫn (Điều 77).",
+ "memo": {
+  "hook": "Kế hoạch tài chính cơ bản: phải DỰ TOÁN, do Quốc hội/HĐND QUYẾT, theo NĂM.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Toàn bộ thu, chi của Nhà nước",
+     "Được dự toán",
+     "Cơ quan có thẩm quyền quyết định"
+    ]
+   },
+   {
+    "label": "Năm ngân sách",
+    "children": [
+     "01/01 đến 31/12"
+    ]
+   },
+   {
+    "label": "Thu",
+    "children": [
+     "Thuế, phí, lệ phí",
+     "Viện trợ không hoàn lại"
+    ]
+   },
+   {
+    "label": "Chi",
+    "children": [
+     "Đầu tư phát triển",
+     "Chi thường xuyên"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

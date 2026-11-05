@@ -24,6 +24,34 @@
   "ưu đãi – ưu đãi đặc biệt – thông thường"
  ],
  "note": "Luật Thuế XK, NK 107/2016/QH13 được sửa đổi bởi Luật 90/2025/QH15 (hiệu lực 01/7/2025) và Luật Công nghệ cao 133/2025/QH15 (hiệu lực 01/7/2026); văn bản hợp nhất 96/VBHN-VPQH 2026.",
+ "memo": {
+  "hook": "Đánh vào hàng QUA CỬA KHẨU và qua KHU PHI THUẾ QUAN.",
+  "tree": [
+   {
+    "label": "Chịu thuế",
+    "children": [
+     "Hàng qua cửa khẩu, biên giới",
+     "Nội địa ↔ khu phi thuế quan",
+     "Xuất nhập khẩu tại chỗ"
+    ]
+   },
+   {
+    "label": "Không áp dụng",
+    "children": [
+     "Quá cảnh, chuyển khẩu",
+     "Viện trợ nhân đạo"
+    ]
+   },
+   {
+    "label": "Thuế suất",
+    "children": [
+     "Ưu đãi",
+     "Ưu đãi đặc biệt",
+     "Thông thường"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

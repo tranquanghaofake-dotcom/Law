@@ -23,6 +23,33 @@
   "150 ngày"
  ],
  "note": "Luật Doanh nghiệp 59/2020/QH14 có hiệu lực từ 01/01/2021, thay thế Luật Doanh nghiệp 2014 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 03/2022/QH15 và Luật 76/2025/QH15 (hiệu lực 01/7/2025) — văn bản hợp nhất 67/VBHN-VPQH 2025.",
+ "memo": {
+  "hook": "Doanh nghiệp nhà nước công bố trên web CÔNG TY và CƠ QUAN CHỦ SỞ HỮU; báo cáo kiểm toán trong 150 ngày.",
+  "tree": [
+   {
+    "label": "Nơi công bố",
+    "children": [
+     "Trang web của công ty",
+     "Trang web cơ quan đại diện chủ sở hữu"
+    ]
+   },
+   {
+    "label": "Nội dung",
+    "children": [
+     "Thông tin cơ bản, Điều lệ",
+     "Kế hoạch kinh doanh",
+     "Báo cáo tài chính"
+    ]
+   },
+   {
+    "label": "Hạn",
+    "children": [
+     "Báo cáo năm đã kiểm toán: 150 ngày",
+     "Báo cáo giữa năm: trước 31/7"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

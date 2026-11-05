@@ -23,6 +23,32 @@
   "liên đới góp thêm"
  ],
  "note": "Luật Doanh nghiệp 59/2020/QH14 có hiệu lực từ 01/01/2021, thay thế Luật Doanh nghiệp 2014 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 03/2022/QH15 và Luật 76/2025/QH15 (hiệu lực 01/7/2025) — văn bản hợp nhất 67/VBHN-VPQH 2025.",
+ "memo": {
+  "hook": "Trừ TIỀN ĐỒNG, NGOẠI TỆ, VÀNG, tài sản góp phải ĐỊNH GIÁ.",
+  "tree": [
+   {
+    "label": "Không cần định giá",
+    "children": [
+     "Đồng Việt Nam",
+     "Ngoại tệ tự do chuyển đổi",
+     "Vàng"
+    ]
+   },
+   {
+    "label": "Ai định giá",
+    "children": [
+     "Thành viên, cổ đông sáng lập (đồng thuận)",
+     "Tổ chức thẩm định giá"
+    ]
+   },
+   {
+    "label": "Định giá cao hơn thực tế",
+    "children": [
+     "Liên đới góp thêm phần chênh"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

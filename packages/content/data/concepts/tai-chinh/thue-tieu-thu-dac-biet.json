@@ -24,6 +24,38 @@
   "tổ chức, cá nhân sản xuất, gia công, nhập khẩu"
  ],
  "note": "Luật Thuế TTĐB 66/2025/QH15 có hiệu lực từ 01/01/2026, thay thế Luật 27/2008/QH12; Luật 09/2026/QH16 sửa thuế suất xe ô tô chạy bằng pin tại Biểu thuế (Điều 8); Điều 2, 4 không đổi.",
+ "memo": {
+  "hook": "ĐIỀU TIẾT tiêu dùng hàng không khuyến khích; thu MỘT LẦN.",
+  "tree": [
+   {
+    "label": "Mục đích",
+    "children": [
+     "Điều tiết tiêu dùng"
+    ]
+   },
+   {
+    "label": "Hàng hóa",
+    "children": [
+     "Thuốc lá, rượu, bia",
+     "Ô tô dưới 24 chỗ",
+     "Nước ngọt trên 5g đường/100mL"
+    ]
+   },
+   {
+    "label": "Dịch vụ",
+    "children": [
+     "Karaoke, casino",
+     "Đặt cược, golf"
+    ]
+   },
+   {
+    "label": "Thu",
+    "children": [
+     "Một lần khi sản xuất, nhập khẩu"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -24,6 +24,30 @@
   "nộp thuế theo pháp luật quản lý thuế"
  ],
  "note": "Nghị quyết 198/2025/QH15 của Quốc hội (ban hành 17/5/2025) có hiệu lực từ ngày thông qua; khoản 6, 7 Điều 10 áp dụng từ 01/01/2026.",
+ "memo": {
+  "hook": "Từ 01/01/2026: BỎ lệ phí môn bài và BỎ thuế khoán.",
+  "tree": [
+   {
+    "label": "Lệ phí môn bài",
+    "children": [
+     "Chấm dứt thu từ 01/01/2026"
+    ]
+   },
+   {
+    "label": "Thuế khoán",
+    "children": [
+     "Bỏ với hộ, cá nhân kinh doanh",
+     "Chuyển sang tự kê khai"
+    ]
+   },
+   {
+    "label": "Căn cứ",
+    "children": [
+     "Nghị quyết 198/2025/QH15"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

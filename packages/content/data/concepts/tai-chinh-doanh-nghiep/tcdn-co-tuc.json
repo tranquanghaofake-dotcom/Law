@@ -24,6 +24,34 @@
   "thanh toán đủ nợ đến hạn"
  ],
  "note": "Luật Doanh nghiệp 59/2020/QH14 có hiệu lực từ 01/01/2021, thay thế Luật Doanh nghiệp 2014 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 03/2022/QH15 và Luật 76/2025/QH15 (hiệu lực 01/7/2025) — văn bản hợp nhất 67/VBHN-VPQH 2025.",
+ "memo": {
+  "hook": "Cổ tức lấy từ LỢI NHUẬN SAU THUẾ; ba điều kiện: THUẾ – QUỸ, BÙ LỖ – TRẢ ĐỦ NỢ.",
+  "tree": [
+   {
+    "label": "Nguồn",
+    "children": [
+     "Lợi nhuận sau thuế",
+     "Không từ vốn"
+    ]
+   },
+   {
+    "label": "Điều kiện (phổ thông)",
+    "children": [
+     "Xong nghĩa vụ thuế",
+     "Đã trích quỹ, bù lỗ",
+     "Sau khi trả vẫn đủ trả nợ"
+    ]
+   },
+   {
+    "label": "Hình thức",
+    "children": [
+     "Tiền",
+     "Cổ phần",
+     "Tài sản khác"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

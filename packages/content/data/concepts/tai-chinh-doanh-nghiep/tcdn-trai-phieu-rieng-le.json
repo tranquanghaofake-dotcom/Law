@@ -23,6 +23,31 @@
   "nhà đầu tư chiến lược"
  ],
  "note": "Luật Doanh nghiệp 59/2020/QH14 có hiệu lực từ 01/01/2021, thay thế Luật Doanh nghiệp 2014 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 03/2022/QH15 và Luật 76/2025/QH15 (hiệu lực 01/7/2025) — văn bản hợp nhất 67/VBHN-VPQH 2025.",
+ "memo": {
+  "hook": "Riêng lẻ: KHÔNG qua truyền thông, DƯỚI 100 nhà đầu tư.",
+  "tree": [
+   {
+    "label": "Dấu hiệu",
+    "children": [
+     "Không qua phương tiện thông tin đại chúng",
+     "Dưới 100 nhà đầu tư"
+    ]
+   },
+   {
+    "label": "Người mua",
+    "children": [
+     "Nhà đầu tư chiến lược",
+     "Nhà đầu tư chứng khoán chuyên nghiệp"
+    ]
+   },
+   {
+    "label": "Áp dụng",
+    "children": [
+     "Công ty cổ phần không đại chúng"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",
