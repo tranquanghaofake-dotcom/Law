@@ -22,6 +22,32 @@
   "theo pháp luật, theo ủy quyền",
   "phạm vi đại diện"
  ],
+ "memo": {
+  "hook": "Đại diện: NHÂN DANH và VÌ LỢI ÍCH người khác, trong PHẠM VI đại diện.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Nhân danh người được đại diện",
+     "Vì lợi ích của họ"
+    ]
+   },
+   {
+    "label": "Hai loại",
+    "children": [
+     "Theo pháp luật",
+     "Theo ủy quyền"
+    ]
+   },
+   {
+    "label": "Giới hạn",
+    "children": [
+     "Trong phạm vi đại diện",
+     "Không giao dịch với chính mình"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

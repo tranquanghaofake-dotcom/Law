@@ -22,6 +22,26 @@
   "không khác biệt đáng kể",
   "quyền tạm thời"
  ],
+ "memo": {
+  "hook": "Bốn yếu tố: ĐANG BẢO HỘ – có SỬ DỤNG – KHÔNG ĐƯỢC PHÉP – không thuộc giới hạn.",
+  "tree": [
+   {
+    "label": "Yếu tố",
+    "children": [
+     "Đối tượng đang được bảo hộ",
+     "Có hành vi sử dụng",
+     "Không được phép",
+     "Không thuộc giới hạn quyền"
+    ]
+   },
+   {
+    "label": "Kiểu dáng",
+    "children": [
+     "Cả loại không khác biệt đáng kể"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

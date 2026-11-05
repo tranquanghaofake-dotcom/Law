@@ -23,6 +23,31 @@
   "biện pháp công nghệ"
  ],
  "note": "Điều 28 có nội dung được sửa đổi, bổ sung bởi Luật 07/2022/QH15 (hiệu lực 01/01/2023) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
+ "memo": {
+  "hook": "Xâm phạm: quyền NHÂN THÂN, quyền TÀI SẢN, hoặc dùng NGOẠI LỆ sai.",
+  "tree": [
+   {
+    "label": "Xâm phạm",
+    "children": [
+     "Quyền nhân thân",
+     "Quyền tài sản"
+    ]
+   },
+   {
+    "label": "Dùng ngoại lệ sai",
+    "children": [
+     "Không nêu tên tác giả"
+    ]
+   },
+   {
+    "label": "Hành vi khác",
+    "children": [
+     "Vô hiệu biện pháp công nghệ",
+     "Xóa thông tin quản lý quyền"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

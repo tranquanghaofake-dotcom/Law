@@ -22,6 +22,32 @@
   "tên phù hợp"
  ],
  "note": "Điều 158 có nội dung được sửa đổi, bổ sung bởi Luật 07/2022/QH15 (hiệu lực 01/01/2023) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
+ "memo": {
+  "hook": "Năm điều kiện: MỚI – KHÁC BIỆT – ĐỒNG NHẤT – ỔN ĐỊNH – TÊN PHÙ HỢP.",
+  "tree": [
+   {
+    "label": "Nguồn gốc",
+    "children": [
+     "Chọn tạo",
+     "Phát hiện và phát triển"
+    ]
+   },
+   {
+    "label": "Điều kiện",
+    "children": [
+     "Tính mới, khác biệt",
+     "Đồng nhất, ổn định",
+     "Tên phù hợp"
+    ]
+   },
+   {
+    "label": "Văn bằng",
+    "children": [
+     "Bằng bảo hộ giống cây trồng"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

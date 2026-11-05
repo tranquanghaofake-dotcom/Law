@@ -22,6 +22,32 @@
   "liệt kê",
   "loại trừ"
  ],
+ "memo": {
+  "hook": "BẤT ĐỘNG SẢN: LIỆT KÊ (gắn với đất); ĐỘNG SẢN: còn lại.",
+  "tree": [
+   {
+    "label": "Bất động sản",
+    "children": [
+     "Đất đai",
+     "Nhà, công trình gắn với đất",
+     "Tài sản khác gắn với đất"
+    ]
+   },
+   {
+    "label": "Động sản",
+    "children": [
+     "Không phải bất động sản"
+    ]
+   },
+   {
+    "label": "Ý nghĩa",
+    "children": [
+     "Thời hiệu 10 hay 30 năm",
+     "Thẩm quyền Tòa án"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -21,6 +21,33 @@
   "con chưa thành niên, cha, mẹ, vợ, chồng",
   "con thành niên không có khả năng lao động"
  ],
+ "memo": {
+  "hook": "Dù di chúc gạt ra, người thân phụ thuộc vẫn được 2/3 SUẤT.",
+  "tree": [
+   {
+    "label": "Ai",
+    "children": [
+     "Con chưa thành niên",
+     "Cha, mẹ",
+     "Vợ, chồng",
+     "Con thành niên mất khả năng lao động"
+    ]
+   },
+   {
+    "label": "Được hưởng",
+    "children": [
+     "Hai phần ba một suất theo pháp luật"
+    ]
+   },
+   {
+    "label": "Không áp dụng",
+    "children": [
+     "Từ chối nhận",
+     "Không có quyền hưởng"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

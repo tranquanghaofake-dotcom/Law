@@ -23,6 +23,33 @@
   "minh mẫn, sáng suốt",
   "không bị lừa dối, đe dọa, cưỡng ép"
  ],
+ "memo": {
+  "hook": "Di chúc hợp pháp: MINH MẪN – TỰ NGUYỆN – NỘI DUNG hợp pháp – HÌNH THỨC đúng.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Hành vi pháp lý đơn phương",
+     "Hiệu lực khi mở thừa kế"
+    ]
+   },
+   {
+    "label": "Điều kiện",
+    "children": [
+     "Minh mẫn, sáng suốt",
+     "Tự nguyện",
+     "Nội dung hợp pháp",
+     "Hình thức đúng luật"
+    ]
+   },
+   {
+    "label": "15 đến dưới 18 tuổi",
+    "children": [
+     "Văn bản, cha mẹ đồng ý"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

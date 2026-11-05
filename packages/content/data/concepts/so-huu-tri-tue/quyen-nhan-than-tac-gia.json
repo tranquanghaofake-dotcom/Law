@@ -24,6 +24,26 @@
   "bảo vệ sự toàn vẹn"
  ],
  "note": "Điều 19 có nội dung được sửa đổi, bổ sung bởi Luật 07/2022/QH15 (hiệu lực 01/01/2023) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
+ "memo": {
+  "hook": "Bốn quyền nhân thân; ĐẶT TÊN, ĐỨNG TÊN, TOÀN VẸN là VÔ THỜI HẠN.",
+  "tree": [
+   {
+    "label": "Vô thời hạn",
+    "children": [
+     "Đặt tên",
+     "Đứng tên, được nêu tên",
+     "Bảo vệ sự toàn vẹn"
+    ]
+   },
+   {
+    "label": "Có thời hạn",
+    "children": [
+     "Công bố tác phẩm",
+     "Chuyển nhượng được"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

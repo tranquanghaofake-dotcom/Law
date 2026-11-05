@@ -24,6 +24,31 @@
   "chương trình máy tính"
  ],
  "note": "Điều 14 có nội dung được sửa đổi, bổ sung bởi Luật 36/2009/QH12 (hiệu lực 01/01/2010); Luật 07/2022/QH15 (hiệu lực 01/01/2023) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
+ "memo": {
+  "hook": "Tác phẩm phải TỰ SÁNG TẠO; tác phẩm PHÁI SINH không được hại tác phẩm gốc.",
+  "tree": [
+   {
+    "label": "Loại",
+    "children": [
+     "Văn học, khoa học, giáo trình",
+     "Âm nhạc, điện ảnh, mỹ thuật",
+     "Chương trình máy tính, sưu tập dữ liệu"
+    ]
+   },
+   {
+    "label": "Điều kiện",
+    "children": [
+     "Tác giả trực tiếp sáng tạo"
+    ]
+   },
+   {
+    "label": "Phái sinh",
+    "children": [
+     "Không phương hại tác phẩm gốc"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

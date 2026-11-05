@@ -22,6 +22,32 @@
   "theo nhiệm vụ, hợp đồng"
  ],
  "note": "Điều 36 có nội dung được sửa đổi, bổ sung bởi Luật 07/2022/QH15 (hiệu lực 01/01/2023) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
+ "memo": {
+  "hook": "TÁC GIẢ giữ quyền NHÂN THÂN; CHỦ SỞ HỮU nắm quyền TÀI SẢN, có thể là người khác.",
+  "tree": [
+   {
+    "label": "Tác giả",
+    "children": [
+     "Người trực tiếp sáng tạo",
+     "Giữ quyền nhân thân"
+    ]
+   },
+   {
+    "label": "Chủ sở hữu",
+    "children": [
+     "Quyền công bố",
+     "Quyền tài sản"
+    ]
+   },
+   {
+    "label": "Khác nhau khi",
+    "children": [
+     "Tác phẩm theo nhiệm vụ, hợp đồng",
+     "Thừa kế, chuyển giao"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -23,6 +23,27 @@
   "giới hạn quyền"
  ],
  "note": "Điều 123 có nội dung được sửa đổi, bổ sung bởi Luật 07/2022/QH15 (hiệu lực 01/01/2023); Luật 131/2025/QH15 (hiệu lực 01/4/2026) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
+ "memo": {
+  "hook": "Ba quyền: SỬ DỤNG, NGĂN CẤM, ĐỊNH ĐOẠT — có GIỚI HẠN.",
+  "tree": [
+   {
+    "label": "Quyền",
+    "children": [
+     "Sử dụng, cho phép sử dụng",
+     "Ngăn cấm người khác",
+     "Định đoạt"
+    ]
+   },
+   {
+    "label": "Giới hạn",
+    "children": [
+     "Dùng cá nhân, phi thương mại",
+     "Nghiên cứu, giảng dạy",
+     "Nhập khẩu song song"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

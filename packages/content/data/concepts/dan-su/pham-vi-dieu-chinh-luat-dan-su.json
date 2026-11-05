@@ -22,6 +22,34 @@
   "bình đẳng, tự do ý chí",
   "độc lập về tài sản"
  ],
+ "memo": {
+  "hook": "Quan hệ TÀI SẢN và NHÂN THÂN, dựa trên BÌNH ĐẲNG, TỰ DO Ý CHÍ.",
+  "tree": [
+   {
+    "label": "Điều chỉnh",
+    "children": [
+     "Quan hệ tài sản",
+     "Quan hệ nhân thân"
+    ]
+   },
+   {
+    "label": "Dấu hiệu",
+    "children": [
+     "Bình đẳng",
+     "Tự do ý chí",
+     "Độc lập tài sản",
+     "Tự chịu trách nhiệm"
+    ]
+   },
+   {
+    "label": "Chủ thể",
+    "children": [
+     "Cá nhân",
+     "Pháp nhân"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -23,6 +23,34 @@
   "không gây phương hại quyền tác giả"
  ],
  "note": "Điều 4 có nội dung được sửa đổi, bổ sung bởi Luật 36/2009/QH12 (hiệu lực 01/01/2010); Luật 07/2022/QH15 (hiệu lực 01/01/2023); Luật 131/2025/QH15 (hiệu lực 01/4/2026) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
+ "memo": {
+  "hook": "Quyền LIÊN QUAN: của người BIỂU DIỄN, nhà SẢN XUẤT bản ghi, tổ chức PHÁT SÓNG.",
+  "tree": [
+   {
+    "label": "Đối tượng",
+    "children": [
+     "Cuộc biểu diễn",
+     "Bản ghi âm, ghi hình",
+     "Chương trình phát sóng",
+     "Tín hiệu vệ tinh, cáp"
+    ]
+   },
+   {
+    "label": "Chủ thể",
+    "children": [
+     "Người biểu diễn",
+     "Nhà sản xuất",
+     "Tổ chức phát sóng"
+    ]
+   },
+   {
+    "label": "Giới hạn",
+    "children": [
+     "Không phương hại quyền tác giả"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

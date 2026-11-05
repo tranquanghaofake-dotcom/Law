@@ -21,6 +21,31 @@
   "như nhau",
   "từ khi sinh ra đến khi chết"
  ],
+ "memo": {
+  "hook": "Năng lực PHÁP LUẬT = CÓ quyền; NHƯ NHAU, từ SINH RA đến CHẾT.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Khả năng có quyền, nghĩa vụ"
+    ]
+   },
+   {
+    "label": "Đặc điểm",
+    "children": [
+     "Mọi người như nhau",
+     "Từ khi sinh ra đến khi chết",
+     "Không bị hạn chế trái luật"
+    ]
+   },
+   {
+    "label": "Phân biệt",
+    "children": [
+     "Năng lực hành vi: tự mình làm"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

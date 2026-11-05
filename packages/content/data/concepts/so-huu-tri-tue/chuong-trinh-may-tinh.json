@@ -23,6 +23,37 @@
   "bản sao dự phòng"
  ],
  "note": "Điều 22 có nội dung được sửa đổi, bổ sung bởi Luật 07/2022/QH15 (hiệu lực 01/01/2023) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
+ "memo": {
+  "hook": "Phần mềm được bảo hộ như TÁC PHẨM VĂN HỌC, KHÔNG phải sáng chế.",
+  "tree": [
+   {
+    "label": "Định nghĩa",
+    "children": [
+     "Tập hợp chỉ dẫn",
+     "Mã nguồn hoặc mã máy"
+    ]
+   },
+   {
+    "label": "Bảo hộ",
+    "children": [
+     "Quyền tác giả",
+     "Như tác phẩm văn học"
+    ]
+   },
+   {
+    "label": "Người dùng hợp pháp",
+    "children": [
+     "Một bản sao dự phòng"
+    ]
+   },
+   {
+    "label": "Không bảo hộ",
+    "children": [
+     "Dưới dạng sáng chế tự thân"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

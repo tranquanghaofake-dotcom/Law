@@ -22,6 +22,30 @@
   "hành vi pháp lý đơn phương",
   "phát sinh, thay đổi, chấm dứt"
  ],
+ "memo": {
+  "hook": "Giao dịch: HỢP ĐỒNG (nhiều bên) hoặc HÀNH VI ĐƠN PHƯƠNG (một bên).",
+  "tree": [
+   {
+    "label": "Hợp đồng",
+    "children": [
+     "Thỏa thuận hai hay nhiều bên"
+    ]
+   },
+   {
+    "label": "Đơn phương",
+    "children": [
+     "Lập di chúc",
+     "Hứa thưởng"
+    ]
+   },
+   {
+    "label": "Hệ quả",
+    "children": [
+     "Phát sinh, thay đổi, chấm dứt quyền"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

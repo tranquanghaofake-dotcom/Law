@@ -22,6 +22,26 @@
   "tài sản độc lập",
   "nhân danh mình"
  ],
+ "memo": {
+  "hook": "Bốn điều kiện: THÀNH LẬP hợp pháp – CƠ CẤU – TÀI SẢN ĐỘC LẬP – NHÂN DANH MÌNH.",
+  "tree": [
+   {
+    "label": "Điều kiện",
+    "children": [
+     "Thành lập hợp pháp",
+     "Cơ cấu tổ chức",
+     "Tài sản độc lập",
+     "Nhân danh mình"
+    ]
+   },
+   {
+    "label": "Hệ quả",
+    "children": [
+     "Thành viên không chịu thay"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -22,6 +22,32 @@
   "kiện đòi tài sản",
   "trưng mua, trưng dụng có bồi thường"
  ],
+ "memo": {
+  "hook": "Không ai bị TƯỚC quyền trái luật; được TỰ BẢO VỆ và KIỆN ĐÒI.",
+  "tree": [
+   {
+    "label": "Nguyên tắc",
+    "children": [
+     "Không bị tước đoạt trái luật"
+    ]
+   },
+   {
+    "label": "Biện pháp",
+    "children": [
+     "Tự bảo vệ",
+     "Kiện đòi tài sản",
+     "Chấm dứt cản trở",
+     "Bồi thường"
+    ]
+   },
+   {
+    "label": "Nhà nước",
+    "children": [
+     "Trưng mua, trưng dụng có bồi thường"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

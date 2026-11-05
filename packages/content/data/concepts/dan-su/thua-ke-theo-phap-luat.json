@@ -23,6 +23,40 @@
   "phần bằng nhau",
   "hàng sau khi không còn hàng trước"
  ],
+ "memo": {
+  "hook": "Ba hàng; hàng TRƯỚC còn thì hàng SAU không hưởng; cùng hàng chia ĐỀU.",
+  "tree": [
+   {
+    "label": "Hàng 1",
+    "children": [
+     "Vợ, chồng",
+     "Cha mẹ đẻ, nuôi",
+     "Con đẻ, con nuôi"
+    ]
+   },
+   {
+    "label": "Hàng 2",
+    "children": [
+     "Ông bà",
+     "Anh chị em ruột",
+     "Cháu ruột"
+    ]
+   },
+   {
+    "label": "Hàng 3",
+    "children": [
+     "Cụ",
+     "Bác, chú, cậu, cô, dì"
+    ]
+   },
+   {
+    "label": "Chia",
+    "children": [
+     "Cùng hàng: bằng nhau"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

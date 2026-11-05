@@ -22,6 +22,37 @@
   "sử dụng",
   "định đoạt"
  ],
+ "memo": {
+  "hook": "Ba quyền năng: CHIẾM HỮU – SỬ DỤNG – ĐỊNH ĐOẠT.",
+  "tree": [
+   {
+    "label": "Chiếm hữu",
+    "children": [
+     "Nắm giữ, chi phối"
+    ]
+   },
+   {
+    "label": "Sử dụng",
+    "children": [
+     "Khai thác công dụng",
+     "Hưởng hoa lợi, lợi tức"
+    ]
+   },
+   {
+    "label": "Định đoạt",
+    "children": [
+     "Chuyển giao",
+     "Từ bỏ, tiêu hủy"
+    ]
+   },
+   {
+    "label": "Giới hạn",
+    "children": [
+     "Không trái luật, không hại người khác"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -22,6 +22,39 @@
   "kiểm soát hàng hóa xuất nhập khẩu",
   "tự bảo vệ"
  ],
+ "memo": {
+  "hook": "Ba biện pháp: DÂN SỰ (bồi thường) – HÀNH CHÍNH (phạt) – HÌNH SỰ (tội phạm).",
+  "tree": [
+   {
+    "label": "Dân sự",
+    "children": [
+     "Tòa án buộc chấm dứt",
+     "Xin lỗi, bồi thường, tiêu hủy"
+    ]
+   },
+   {
+    "label": "Hành chính",
+    "children": [
+     "Xử phạt hành vi gây thiệt hại",
+     "Hàng giả mạo"
+    ]
+   },
+   {
+    "label": "Hình sự",
+    "children": [
+     "Tội xâm phạm quyền tác giả",
+     "Tội xâm phạm sở hữu công nghiệp"
+    ]
+   },
+   {
+    "label": "Bổ trợ",
+    "children": [
+     "Biện pháp khẩn cấp tạm thời",
+     "Kiểm soát biên giới"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

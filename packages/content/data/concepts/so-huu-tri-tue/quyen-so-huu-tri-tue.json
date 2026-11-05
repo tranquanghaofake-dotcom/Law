@@ -23,6 +23,34 @@
   "quyền đối với giống cây trồng"
  ],
  "note": "Điều 4 có nội dung được sửa đổi, bổ sung bởi Luật 36/2009/QH12 (hiệu lực 01/01/2010); Luật 07/2022/QH15 (hiệu lực 01/01/2023); Luật 131/2025/QH15 (hiệu lực 01/4/2026) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
+ "memo": {
+  "hook": "Ba bộ phận: TÁC GIẢ & LIÊN QUAN – SỞ HỮU CÔNG NGHIỆP – GIỐNG CÂY TRỒNG.",
+  "tree": [
+   {
+    "label": "Quyền tác giả",
+    "children": [
+     "Quyền liên quan"
+    ]
+   },
+   {
+    "label": "Sở hữu công nghiệp",
+    "children": [
+     "Sáng chế, kiểu dáng",
+     "Nhãn hiệu, tên thương mại",
+     "Chỉ dẫn địa lý, bí mật kinh doanh"
+    ]
+   },
+   {
+    "label": "Giống cây trồng"
+   },
+   {
+    "label": "Đặc điểm",
+    "children": [
+     "Tài sản vô hình"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

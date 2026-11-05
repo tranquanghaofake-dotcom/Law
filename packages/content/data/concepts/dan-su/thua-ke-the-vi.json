@@ -22,6 +22,36 @@
   "chắt",
   "theo pháp luật"
  ],
+ "memo": {
+  "hook": "Cháu ĐỨNG VÀO chỗ cha/mẹ đã chết TRƯỚC hoặc CÙNG lúc người để lại di sản.",
+  "tree": [
+   {
+    "label": "Điều kiện",
+    "children": [
+     "Con chết trước hoặc cùng thời điểm"
+    ]
+   },
+   {
+    "label": "Ai thế vị",
+    "children": [
+     "Cháu",
+     "Chắt nếu cháu cũng chết"
+    ]
+   },
+   {
+    "label": "Phạm vi",
+    "children": [
+     "Chỉ thừa kế theo pháp luật"
+    ]
+   },
+   {
+    "label": "Phần hưởng",
+    "children": [
+     "Phần cha mẹ đáng được"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",
