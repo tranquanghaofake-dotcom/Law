@@ -21,7 +21,7 @@ STEP = BEAT / 4  # nốt móc kép
 BAR = BEAT * 4
 BARS = int(sys.argv[3]) if len(sys.argv) > 3 else 20
 KEY = int(sys.argv[4]) if len(sys.argv) > 4 else 0
-DROP = 2  # ô nhịp vào trống
+DROP = int(sys.argv[5]) if len(sys.argv) > 5 else 2  # ô nhịp vào trống (0 = đủ trống ngay từ đầu, như bài thật)
 N = int(SR * BAR * BARS)
 rng = np.random.default_rng(7)
 
@@ -155,7 +155,7 @@ for bar in range(BARS):
         if outro and bar == BARS - 1 and step > 8:
             continue
         sig = cowbell(semi)
-        if bar < 2:
+        if bar < DROP:
             sig = onepole_lp(sig, 900 + 900 * bar)
         g = 0.85 if full else 0.6
         at = b0 + step * STEP
@@ -180,15 +180,18 @@ for bar in range(BARS):
             if bar % 2 == 1:
                 for k3 in range(6):
                     add(drums, hat(), b0 + 12 * STEP + k3 * (BEAT / 6), 0.55 + 0.08 * k3, 0.2)
-        # khoảng lặng trước mỗi đoạn: bỏ trống nửa ô 9 và 13 (giật nhịp)
+    # Cuối mỗi cụm 8 ô: tắt bass + trống 1,5 phách cuối (giống "Aura Farming" đo từ bản nghe thử), riser hút vào phách đầu cụm sau
     if bar % 8 == 7 and full:
-        i0, i1 = int((b0 + 12 * STEP) * SR), int((b0 + BAR) * SR)
-        drums[:, i0:i1] *= 0.15
+        i0, i1 = int((b0 + 10 * STEP) * SR), int((b0 + BAR) * SR)
+        drums[:, i0:i1] *= 0.04
+        add(music, riser(6 * STEP), b0 + 10 * STEP, 0.7)
+        add(music, impact(), b0 + BAR, 0.6)
 
 # intro: pad tối + riser vào drop, cú "impact" đúng drop và ở CTA
-add(music, pad([0, 3, 7, -12], BAR * 2 + 0.3), 0, 1.0)
-add(music, riser(BAR * 1.5), BAR * 0.5, 0.8)
-add(music, impact(), BAR * 2, 1.0)
+if DROP > 0:
+    add(music, pad([0, 3, 7, -12], BAR * DROP + 0.3), 0, 1.0)
+    add(music, riser(BAR * (DROP - 0.5)), BAR * 0.5, 0.8)
+add(music, impact(), BAR * DROP, 1.0)
 add(music, impact(), BAR * (BARS - 3), 0.7)
 add(music, pad([0, 3, 7, 10], BAR * 3), BAR * (BARS - 3), 0.8)
 

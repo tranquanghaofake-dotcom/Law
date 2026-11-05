@@ -1,51 +1,54 @@
 import React from "react";
 import { AbsoluteFill, Easing, Img, interpolate, OffthreadVideo, Sequence, staticFile, useCurrentFrame } from "remotion";
 import stats from "./stats.json";
-import { b, C, DISPLAY, rand, UI } from "./theme";
+import { b, C, DISPLAY, UI } from "./theme";
 import { Chip, clamp, ease, fadeIn, GlitchText, H1, Kicker, MemoIcon, Phone, rise, SAFE, Seal, usePop } from "./parts";
+import { Embers, MovingBg, Rays, Shockwave, Slam } from "./fx";
 
 const cap = (f: string) => staticFile(`cap/${f}`);
 const count = (frame: number, at: number, to: number, len = b(2)) => Math.round(interpolate(frame, [at, at + len], [0, to], { ...clamp, easing: ease }));
 
-/* 1 — Hook (intro của bài, chưa vào trống) */
+/* 1 — Hook: chữ nện theo phách (bài đã đủ trống từ đầu) */
 export const Hook: React.FC = () => {
   const frame = useCurrentFrame();
-  const lines: [string, number, string][] = [
-    ["Học luật", 0, C.paper],
-    ["đọc ba lần…", b(2), C.paper],
-    ["vẫn quên?", b(4), "#ff4d3d"],
-  ];
+  const quen = b(5);
   return (
-    <AbsoluteFill style={{ background: `radial-gradient(circle at 50% 40%, #1d2b52, ${C.inkDeep} 70%)`, ...SAFE, justifyContent: "center", scale: interpolate(frame, [b(7.4), b(8)], [1, 1.4], { ...clamp, easing: Easing.in(Easing.cubic) }) }}>
-      {lines.map(([txt, at, color], i) => (
-        <GlitchText key={txt} seed={i * 31} amount={frame >= at ? interpolate(frame, [at, at + 10], [1, 0], clamp) + (i === 2 ? interpolate(frame, [b(6.5), b(8)], [0, 1.2], clamp) : 0) : 0}
-          style={{ ...H1, fontSize: i === 2 ? 190 : 150, color, opacity: frame >= at ? 1 : 0, scale: interpolate(frame, [at, at + 14], [1.4, 1], { ...clamp, easing: ease }), transformOrigin: "left center", marginBottom: 10 }}>
-          {txt}
-        </GlitchText>
-      ))}
-      <div style={{ fontFamily: UI, fontWeight: 500, fontSize: 46, color: "rgba(247,244,238,.65)", marginTop: 40, opacity: fadeIn(frame, b(5.5)) }}>
+    <AbsoluteFill style={{ ...SAFE, justifyContent: "center" }}>
+      <MovingBg a="#16244a" b2={C.inkDeep} glow="rgba(255,77,61,.18)" />
+      <Slam text="Học luật" at={0} step={b(1)} style={{ ...H1, fontSize: 160, color: C.paper }} />
+      <Slam text="đọc ba lần…" at={b(2)} step={b(0.5)} style={{ ...H1, fontSize: 150, color: C.paper }} />
+      <Slam text="vẫn" at={b(4)} style={{ ...H1, fontSize: 150, color: C.paper }} />
+      <GlitchText seed={7} amount={frame >= quen ? interpolate(frame, [quen, quen + 14], [1.4, 0.15], clamp) + interpolate(frame, [b(7), b(8)], [0, 1.4], clamp) : 0}
+        style={{ ...H1, fontSize: 250, color: "#ff3b30", opacity: frame >= quen ? 1 : 0, scale: interpolate(frame, [quen, quen + 10], [2.2, 1], { ...clamp, easing: Easing.out(Easing.exp) }), transformOrigin: "left center", textShadow: "0 0 60px rgba(255,59,48,.6)" }}>
+        QUÊN?
+      </GlitchText>
+      <Shockwave at={quen} x={300} y={1100} color="#ff3b30" />
+      <div style={{ fontFamily: UI, fontWeight: 600, fontSize: 46, color: "rgba(247,244,238,.75)", marginTop: 40, opacity: fadeIn(frame, b(6)), translate: rise(frame, b(6), 30) }}>
         Vấn đề không phải ở bạn — mà ở cách ôn.
       </div>
     </AbsoluteFill>
   );
 };
 
-/* 2 — Drop: Khuê Văn Các + con dấu */
+/* 2 — Drop: Khuê Văn Các + con dấu đóng xuống */
 export const Logo: React.FC = () => {
   const frame = useCurrentFrame();
   const pop = usePop();
   const s = pop(0, 11);
   return (
-    <AbsoluteFill style={{ background: C.paper, alignItems: "center" }}>
-      <div style={{ position: "absolute", width: 1500, height: 1500, left: -210, top: 760, borderRadius: "50%", background: `repeating-conic-gradient(from ${frame * 0.25}deg, rgba(217,122,30,.13) 0deg 6deg, transparent 6deg 15deg)` }} />
-      <Img src={cap("art-khue-van-cac.png")} style={{ position: "absolute", width: 1500, left: -210, top: 900, scale: interpolate(frame, [0, b(8)], [1.15, 1.02], { ...clamp, easing: ease }), translate: `0px ${interpolate(frame, [0, b(8)], [80, 0], clamp)}px` }} />
-      <div style={{ marginTop: 250, scale: interpolate(s, [0, 1], [3.2, 1]), rotate: `${interpolate(s, [0, 1], [-18, -6])}deg`, opacity: Math.min(1, s * 3) }}>
-        <Seal size={260} />
+    <AbsoluteFill style={{ alignItems: "center" }}>
+      <MovingBg a="#fbf6ea" b2="#efe2c6" glow="rgba(242,193,78,.55)" />
+      <Rays x={540} y={1250} size={2600} color="rgba(217,122,30,.16)" speed={0.35} />
+      <Img src={cap("art-khue-van-cac.png")} style={{ position: "absolute", width: 1500, left: -210, top: 880, scale: interpolate(frame, [0, b(8)], [1.18, 1.03], { ...clamp, easing: ease }), translate: `0px ${interpolate(frame, [0, b(8)], [90, 0], clamp)}px`, filter: "drop-shadow(0 30px 40px rgba(75,46,24,.25))" }} />
+      <div style={{ marginTop: 250, scale: interpolate(s, [0, 1], [3.4, 1]), rotate: `${interpolate(s, [0, 1], [-22, -6])}deg`, opacity: Math.min(1, s * 3), filter: "drop-shadow(0 20px 30px rgba(179,38,30,.45))" }}>
+        <Seal size={270} />
       </div>
-      <div style={{ ...H1, fontSize: 160, color: C.ink, marginTop: 60, opacity: fadeIn(frame, b(1)), translate: rise(frame, b(1), 60) }}>Luyện Luật</div>
-      <div style={{ fontFamily: UI, fontWeight: 700, fontSize: 52, color: C.muted, marginTop: 20, opacity: fadeIn(frame, b(2)) }}>
+      <Shockwave at={4} x={540} y={385} color={C.seal} />
+      <Slam text="Luyện Luật" at={b(1)} step={b(0.5)} style={{ ...H1, fontSize: 170, color: C.ink, marginTop: 50, justifyContent: "center" }} />
+      <div style={{ fontFamily: UI, fontWeight: 700, fontSize: 54, color: C.muted, marginTop: 16, opacity: fadeIn(frame, b(2.5)), translate: rise(frame, b(2.5), 30) }}>
         Học khái niệm luật kiểu <span style={{ color: C.accent }}>nhớ lâu</span>
       </div>
+      <Embers n={26} color={C.accent} speed={1.1} size={6} />
     </AbsoluteFill>
   );
 };
@@ -54,7 +57,7 @@ export const Logo: React.FC = () => {
 export const ThuVien: React.FC = () => {
   const frame = useCurrentFrame();
   const list = stats.subjectList;
-  const rot = interpolate(frame, [0, b(12)], [40, -150]);
+  const rot = interpolate(frame, [0, b(16)], [60, -200]);
   const R = 560;
   const nums: [number, string, number][] = [
     [stats.subjects, "môn", 0],
@@ -63,7 +66,10 @@ export const ThuVien: React.FC = () => {
     [stats.laws, "văn bản luật gốc", b(3)],
   ];
   return (
-    <AbsoluteFill style={{ background: `linear-gradient(180deg, ${C.ink}, ${C.inkDeep})`, ...SAFE }}>
+    <AbsoluteFill style={{ ...SAFE }}>
+      <MovingBg a={C.ink} b2={C.inkDeep} glow="rgba(242,193,78,.2)" />
+      <Rays x={540} y={1400} size={2000} speed={-0.2} />
+      <Embers n={30} />
       <Kicker color={C.gold}>Thư viện giáo trình điện tử</Kicker>
       <div style={{ marginTop: 18 }}>
         {nums.map(([n, label, at]) => (
@@ -112,7 +118,7 @@ export const HieuNhanh: React.FC = () => {
       </div>
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 22, marginTop: 20 }}>
         {tree.map((n, i) => {
-          const at = b(4.5 + i);
+          const at = b(4 + i);
           const p = pop(at);
           return (
             <div key={n.label} style={{ background: C.card, border: `3px solid ${i >= 2 ? (i === 2 ? C.seal : C.ok) : C.line}`, borderRadius: 26, padding: "22px 24px", scale: p, opacity: frame >= at ? 1 : 0, boxShadow: "0 16px 40px rgba(20,33,61,.12)" }}>
@@ -127,14 +133,14 @@ export const HieuNhanh: React.FC = () => {
           );
         })}
       </div>
-      <div style={{ marginTop: 30, fontFamily: UI, fontWeight: 800, fontSize: 40, color: C.ink, opacity: fadeIn(frame, b(9)), position: "relative", alignSelf: "flex-start" }}>
-        <span style={{ position: "absolute", left: -10, right: -10, top: 18, height: 34, background: C.gold, opacity: 0.7, transformOrigin: "left", scale: `${interpolate(frame, [b(9.5), b(10.5)], [0, 1], { ...clamp, easing: ease })} 1`, zIndex: 0 }} />
+      <div style={{ marginTop: 30, fontFamily: UI, fontWeight: 800, fontSize: 40, color: C.ink, opacity: fadeIn(frame, b(8.5)), position: "relative", alignSelf: "flex-start" }}>
+        <span style={{ position: "absolute", left: -10, right: -10, top: 18, height: 34, background: C.gold, opacity: 0.7, transformOrigin: "left", scale: `${interpolate(frame, [b(9), b(10)], [0, 1], { ...clamp, easing: ease })} 1`, zIndex: 0 }} />
         <span style={{ position: "relative" }}>💡 Mẹo nhớ: {f.memo.hook}</span>
       </div>
       {caseQ && (
-        <div style={{ position: "absolute", left: 90, right: 150, top: 1360, background: C.ink, color: C.paper, borderRadius: 30, padding: "30px 34px", scale: pop(b(11.5)), opacity: frame >= b(11.5) ? 1 : 0 }}>
+        <div style={{ position: "absolute", left: 90, right: 150, top: 1360, background: C.ink, color: C.paper, borderRadius: 30, padding: "30px 34px", scale: pop(b(11)), opacity: frame >= b(11) ? 1 : 0 }}>
           <div style={{ fontFamily: UI, fontWeight: 700, fontSize: 34, lineHeight: 1.35 }}>❓ {caseQ.q}</div>
-          <div style={{ fontFamily: UI, fontWeight: 800, fontSize: 40, color: C.gold, marginTop: 14, opacity: fadeIn(frame, b(13.5)) }}>→ {caseQ.a}</div>
+          <div style={{ fontFamily: UI, fontWeight: 800, fontSize: 40, color: C.gold, marginTop: 14, opacity: fadeIn(frame, b(13)), scale: interpolate(frame, [b(13), b(13) + 10], [1.3, 1], clamp), transformOrigin: "left center" }}>→ {caseQ.a}</div>
           <div style={{ fontFamily: UI, fontWeight: 600, fontSize: 28, color: "rgba(247,244,238,.6)", marginTop: 12, opacity: fadeIn(frame, b(14)) }}>Căn cứ: {f.cite}</div>
         </div>
       )}
@@ -161,7 +167,7 @@ export const Bac: React.FC = () => {
       <div style={{ ...H1, fontSize: 124, color: C.ink, marginTop: 8 }}>6 bậc <span style={{ color: C.accent }}>ghi nhớ</span></div>
       <div style={{ marginTop: 34 }}>
         {STEPS.map(([name, icon, sub], i) => {
-          const at = b(1 + i * 1.5);
+          const at = b(1 + i * 2);
           const on = frame >= at;
           const p = pop(at);
           return (
@@ -177,7 +183,7 @@ export const Bac: React.FC = () => {
           );
         })}
       </div>
-      <div style={{ fontFamily: UI, fontWeight: 700, fontSize: 34, color: C.seal, marginTop: 10, opacity: fadeIn(frame, b(10)) }}>
+      <div style={{ fontFamily: UI, fontWeight: 700, fontSize: 34, color: C.seal, marginTop: 10, opacity: fadeIn(frame, b(13)) }}>
         Bậc 4 trở lên phải qua giãn cách — không học dồn một tối được.
       </div>
     </AbsoluteFill>
@@ -188,12 +194,18 @@ export const Bac: React.FC = () => {
 export const DapAn: React.FC = () => {
   const pop = usePop();
   return (
-    <AbsoluteFill style={{ background: C.ink, ...SAFE }}>
+    <AbsoluteFill style={{ ...SAFE }}>
+      <MovingBg a={C.ink} b2="#08101f" glow="rgba(95,211,154,.22)" />
+      <Rays x={510} y={1050} size={2000} color="rgba(95,211,154,.14)" />
       <Kicker color={C.gold}>Trả lời đúng là biết ngay vì sao</Kicker>
       <div style={{ ...H1, fontSize: 104, color: C.paper, marginTop: 8 }}>Đóng mộc <span style={{ color: "#5fd39a" }}>ĐÚNG</span></div>
       <Phone width={560} style={{ position: "absolute", left: 230, top: 520, rotate: `${interpolate(pop(0), [0, 1], [8, -2])}deg`, translate: `0px ${interpolate(pop(0), [0, 1], [900, 0])}px` }}>
-        <OffthreadVideo src={cap("quiz-dung.mp4")} muted style={{ width: "100%" }} />
+        <Img src={cap("quiz-dung-0.png")} style={{ width: "100%", position: "absolute", inset: 0 }} />
+        <Sequence from={b(2) - 36} layout="none">
+          <OffthreadVideo src={cap("quiz-dung.mp4")} muted style={{ width: "100%", position: "absolute", inset: 0 }} />
+        </Sequence>
       </Phone>
+      <Shockwave at={b(2)} x={520} y={900} color="#5fd39a" />
       <Chip at={b(3)} bg={C.seal} fg="#fff" style={{ position: "absolute", left: 60, top: 1080, rotate: "-6deg" }}>🔨 Tiếng đóng mộc</Chip>
       <Chip at={b(5)} bg={C.gold} fg={C.ink} style={{ position: "absolute", left: 520, top: 1250, rotate: "4deg" }}>§ Căn cứ điều luật</Chip>
       <Chip at={b(7)} bg={C.paper} fg={C.ink} style={{ position: "absolute", left: 80, top: 1400, rotate: "-3deg" }}>🔊 Đọc đề tự động</Chip>
@@ -215,9 +227,11 @@ export const Fsrs: React.FC = () => {
     const y = Math.exp(-(x - last) / (0.05 * Math.pow(2.6, k)));
     pts.push(`${(x * W).toFixed(1)},${((1 - y * 0.92) * Hh).toFixed(1)}`);
   }
-  const draw = interpolate(frame, [b(0.5), b(6)], [0, 1], { ...clamp, easing: Easing.inOut(Easing.cubic) });
+  const draw = interpolate(frame, [b(0.5), b(7)], [0, 1], { ...clamp, easing: Easing.inOut(Easing.cubic) });
   return (
-    <AbsoluteFill style={{ background: C.inkDeep, ...SAFE }}>
+    <AbsoluteFill style={{ ...SAFE }}>
+      <MovingBg a="#0e1730" b2="#04070f" glow="rgba(255,107,74,.18)" />
+      <Embers n={22} color="#ff8a5c" speed={0.8} size={5} />
       <Kicker color={C.gold}>Lịch ôn FSRS</Kicker>
       <div style={{ ...H1, fontSize: 120, color: C.paper, marginTop: 8 }}>Ôn đúng lúc<br /><span style={{ color: "#ff6b4a" }}>sắp quên</span></div>
       <svg width={W + 40} height={Hh + 140} style={{ position: "absolute", left: 90, top: 820, overflow: "visible" }}>
@@ -242,7 +256,8 @@ export const TienIch: React.FC = () => {
   const frame = useCurrentFrame();
   const pop = usePop();
   return (
-    <AbsoluteFill style={{ background: C.paper, ...SAFE }}>
+    <AbsoluteFill style={{ ...SAFE }}>
+      <MovingBg a="#fbf6ea" b2="#ece3d0" glow="rgba(31,122,77,.18)" />
       <Kicker color={C.ok}>Gõ không dấu vẫn ra</Kicker>
       <div style={{ ...H1, fontSize: 104, color: C.ink, marginTop: 8 }}>“dat coc” → <span style={{ color: C.accent }}>Đặt cọc</span></div>
       <Phone width={520} style={{ position: "absolute", left: 90, top: 560, rotate: "-3deg", scale: interpolate(pop(0), [0, 1], [0.7, 1]) }}>
@@ -261,16 +276,27 @@ export const TienIch: React.FC = () => {
   );
 };
 
-/* 9 — Thắp chuỗi: quay thật màn thắp của web */
+/* 9 — Thắp chuỗi: quay thật màn thắp của web; số chuỗi đổi đúng phách 8 (cú nện) */
+const ARRIVE = 232; // IGNITE_TIMING.arrive = 3865 ms ở 60 fps
 export const ThapChuoi: React.FC = () => {
   const frame = useCurrentFrame();
+  const start = b(8) - ARRIVE;
+  const zoom = interpolate(frame, [b(8) - 10, b(8), b(8) + 40], [1, 1.16, 1.06], { ...clamp, easing: Easing.out(Easing.cubic) });
   return (
     <AbsoluteFill style={{ background: "#000" }}>
-      <OffthreadVideo src={cap("ignite-75.mp4")} muted style={{ width: 1080, height: 1920 }} />
+      <AbsoluteFill style={{ scale: zoom, transformOrigin: "50% 44%" }}>
+        <Img src={cap("ignite-75-0.png")} style={{ width: 1080, height: 1920, position: "absolute" }} />
+        <Sequence from={start} layout="none">
+          <OffthreadVideo src={cap("ignite-75.mp4")} muted style={{ width: 1080, height: 1920, position: "absolute" }} />
+        </Sequence>
+      </AbsoluteFill>
+      <Shockwave at={b(8)} x={540} y={836} color="#c48bff" len={34} />
+      {frame >= b(8) && <Embers n={50} color="#c48bff" speed={2.2} size={8} />}
       <AbsoluteFill style={{ ...SAFE, paddingTop: 230, pointerEvents: "none" }}>
         <Kicker color={C.gold}>Thẻ chuyên cần</Kicker>
-        <div style={{ ...H1, fontSize: 92, color: C.paper, marginTop: 6, opacity: interpolate(frame, [0, 12, b(10), b(11)], [0, 1, 1, 0], clamp), textShadow: "0 6px 30px rgba(0,0,0,.6)" }}>
-          Học mỗi ngày,<br />thắp một ký hoạ
+        <div style={{ opacity: interpolate(frame, [b(6), b(7.5)], [1, 0], clamp) }}>
+          <Slam text="Học mỗi ngày," at={b(0)} step={b(1)} style={{ ...H1, fontSize: 96, color: C.paper, textShadow: "0 6px 30px rgba(0,0,0,.7)" }} />
+          <Slam text="thắp một ký hoạ" at={b(2)} step={b(1)} style={{ ...H1, fontSize: 96, color: "#d8b4ff", textShadow: "0 0 30px rgba(196,139,255,.7)" }} />
         </div>
       </AbsoluteFill>
     </AbsoluteFill>
@@ -291,11 +317,19 @@ export const ChuKy: React.FC = () => {
   const flip = interpolate(local, [0, 14], [90, 0], { ...clamp, easing: ease });
   const [n, name, color] = CYCLES[idx];
   return (
-    <AbsoluteFill style={{ background: `radial-gradient(circle at 50% 50%, #1b1b22, #050507 70%)`, ...SAFE, alignItems: "center" }}>
+    <AbsoluteFill style={{ background: `radial-gradient(circle at 50% 50%, ${color}33, #050507 70%)`, ...SAFE, alignItems: "center" }}>
+      <Rays x={540} y={900} size={2200} color={`${color}22`} speed={0.4} />
+      <Embers n={34} color={color} speed={1.2} size={6} />
+      <Shockwave at={idx * b(2)} x={540} y={900} color={color} />
       <Kicker color={C.gold}>30 ngày một chu kỳ · 27 ký hoạ pháp luật</Kicker>
       <div style={{ ...H1, fontSize: 112, color, marginTop: 20, textShadow: `0 0 40px ${color}` }}>{name}</div>
       <div style={{ perspective: 1800, marginTop: 120 }}>
-        <Img src={cap(`card-${n}.png`)} style={{ width: 860, transform: `rotateY(${flip}deg) rotateX(${Math.sin(frame / 20) * 3}deg)`, filter: `drop-shadow(0 30px 60px rgba(0,0,0,.8)) drop-shadow(0 0 40px ${color}55)` }} />
+        <div style={{ position: "relative", width: 860, transform: `rotateY(${flip + Math.sin(frame / 25) * 6}deg) rotateX(${Math.sin(frame / 20) * 4}deg)`, filter: `drop-shadow(0 30px 60px rgba(0,0,0,.8)) drop-shadow(0 0 50px ${color}66)` }}>
+          <Img src={cap(`card-${n}.png`)} style={{ width: 860, display: "block" }} />
+          <div style={{ position: "absolute", inset: 0, borderRadius: 40, overflow: "hidden", mixBlendMode: "screen" }}>
+            <div style={{ position: "absolute", top: -200, bottom: -200, width: 220, left: interpolate(local, [6, 40], [-300, 1100], clamp), rotate: "20deg", background: "linear-gradient(90deg, transparent, rgba(255,255,255,.45), transparent)" }} />
+          </div>
+        </div>
       </div>
       <div style={{ display: "flex", gap: 24, marginTop: 90 }}>
         {CYCLES.map(([, nm, cl], i) => (
@@ -311,7 +345,9 @@ export const TuSach: React.FC = () => {
   const frame = useCurrentFrame();
   const pop = usePop();
   return (
-    <AbsoluteFill style={{ background: `linear-gradient(180deg, #2b1a0e, #120a05)`, ...SAFE }}>
+    <AbsoluteFill style={{ ...SAFE }}>
+      <MovingBg a="#2b1a0e" b2="#0c0703" glow="rgba(242,193,78,.25)" />
+      <Embers n={26} />
       <Kicker color={C.gold}>Tủ sách theo chương</Kicker>
       <div style={{ ...H1, fontSize: 96, color: C.gold50, marginTop: 8 }}>Học xong chương,<br />nhận một cuốn sách</div>
       <div style={{ display: "flex", gap: 30, marginTop: 50 }}>
@@ -358,6 +394,8 @@ export const SuNghiep: React.FC = () => {
   const celebrate = frame >= b(12);
   return (
     <AbsoluteFill style={{ background: `radial-gradient(circle at 50% 55%, #3a2a12, #0e0905 75%)`, ...SAFE }}>
+      <Rays x={540} y={1000} size={2400} speed={celebrate ? 0.6 : 0.25} opacity={celebrate ? 1 : 0.6} />
+      <Embers n={celebrate ? 60 : 28} speed={celebrate ? 2 : 1} />
       <Kicker color={C.gold}>Sự nghiệp · 4 nhánh bộ máy nhà nước</Kicker>
       <div style={{ ...H1, fontSize: 96, color: C.gold50, marginTop: 8 }}>
         {celebrate ? <>…lên tới <span style={{ color: C.gold }}>Chủ tịch nước</span></> : fan ? "Hay Lập pháp, Xét xử, Kiểm sát" : "Đủ sách thì thăng chức"}
@@ -405,9 +443,8 @@ export const Cta: React.FC = () => {
   const tags = ["Miễn phí", "Không cần tài khoản", "Học trên điện thoại"];
   return (
     <AbsoluteFill style={{ background: `radial-gradient(circle at 50% 35%, #22325e, ${C.inkDeep} 75%)`, alignItems: "center", paddingTop: 280 }}>
-      {Array.from({ length: 26 }, (_, i) => (
-        <div key={i} style={{ position: "absolute", left: rand(i) * 1080, top: ((rand(i + 50) * 1920 - frame * (1 + rand(i + 9) * 2)) % 1920 + 1920) % 1920, width: 6, height: 6, borderRadius: 9, background: C.gold, opacity: 0.5, boxShadow: `0 0 12px ${C.gold}` }} />
-      ))}
+      <Rays x={540} y={420} size={2000} speed={0.3} />
+      <Embers n={40} />
       <div style={{ scale: interpolate(s, [0, 1], [2.6, 1]), rotate: `${interpolate(s, [0, 1], [14, -6])}deg` }}><Seal size={220} /></div>
       <div style={{ ...H1, fontSize: 150, color: C.paper, marginTop: 60 }}>Luyện Luật</div>
       <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 18, padding: "0 110px", marginTop: 40 }}>

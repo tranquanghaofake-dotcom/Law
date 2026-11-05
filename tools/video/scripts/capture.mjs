@@ -75,13 +75,14 @@ async function record(page, name, sec, { clip, alpha = false, act } = {}) {
   if (alpha) args.push('-c:v', 'libvpx-vp9', '-pix_fmt', 'yuva420p', '-b:v', '6M', '-auto-alt-ref', '0', out);
   else args.push('-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-crf', '14', '-preset', 'slow', out);
   execFileSync('ffmpeg', args);
+  if (!alpha) fs.copyFileSync(path.join(dir, '00000.png'), path.join(OUT, `${name}-0.png`)); // khung đầu để giữ hình trước khi video chạy
   if (!process.env.KEEP) fs.rmSync(dir, { recursive: true, force: true });
   console.log(`  ✓ ${path.basename(out)} (${n} khung)`);
 }
 async function shot(page, name, el = '#app') {
   await page.locator(el).first().screenshot({ path: path.join(OUT, `${name}.png`), omitBackground: true });
 }
-async function openHarness(browser, name, props, viewport = { width: 1000, height: 1000 }, scale = 2, clock = false) {
+async function openHarness(browser, name, props, viewport = { width: 1000, height: 1000 }, scale = 3, clock = false) {
   const page = await browser.newPage({ viewport, deviceScaleFactor: scale });
   if (clock) await fakeClock(page);
   await page.goto(H(name, props));

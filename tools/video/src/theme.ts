@@ -28,22 +28,17 @@ export const BPM = 111;
 export const FPB = (FPS * 60) / BPM;
 export const b = (beats: number) => Math.round(beats * FPB);
 
+// Cấu trúc bài (đo từ bản nghe thử chính thức 30 giây): đủ trống từ đầu, cụm 8 ô nhịp; cuối mỗi cụm bass tắt 1,5 phách
+// rồi nện lại ở phách đầu cụm sau. Video chia đúng 5 cụm × 8 ô: chuyển phần lớn rơi vào đầu cụm.
 // Cảnh theo ô nhịp (1 ô = 4 phách ≈ 2,16 giây). Thứ tự = thứ tự trong video.
 export const SCENE_BARS = [
-  ["hook", 2],
-  ["logo", 2],
-  ["thuVien", 3],
-  ["hieuNhanh", 4],
-  ["bac", 3],
-  ["dapAn", 3],
-  ["fsrs", 2],
-  ["tienIch", 2],
-  ["thapChuoi", 4],
-  ["chuKy", 2],
-  ["tuSach", 2],
-  ["suNghiep", 5],
-  ["cta", 3],
+  ["hook", 2], ["logo", 2], ["thuVien", 4], // cụm 1
+  ["hieuNhanh", 4], ["bac", 4], // cụm 2
+  ["dapAn", 3], ["fsrs", 2], ["tienIch", 3], // cụm 3
+  ["thapChuoi", 4], ["chuKy", 2], ["tuSach", 2], // cụm 4
+  ["suNghiep", 5], ["cta", 3], // cụm 5
 ] as const;
+export const PHRASE_BARS = 8;
 export type SceneKey = (typeof SCENE_BARS)[number][0];
 
 export const SCENES = (() => {
@@ -57,12 +52,16 @@ export const SCENES = (() => {
 })();
 export const TOTAL_BARS = SCENE_BARS.reduce((s, [, n]) => s + n, 0);
 export const TOTAL = b(TOTAL_BARS * 4);
-/** Ô nhịp vào trống (drop) — cảnh logo. */
-export const DROP = SCENES.logo.from;
+/** Phách đầu mỗi cụm 8 ô (trừ cụm đầu) — chỗ nện mạnh nhất. */
+export const PHRASES = Array.from({ length: TOTAL_BARS / PHRASE_BARS - 1 }, (_, i) => b((i + 1) * PHRASE_BARS * 4));
+/** Khoảng bass tắt: 1,5 phách cuối mỗi cụm (bắt đầu ở phách 2,5 của ô thứ 8). */
+export const GAPS = PHRASES.map((p) => [p - b(1.5), p] as const);
+export const DROP = 0;
 
 /** Độ "đập" theo phách: 1 lúc đánh, tắt dần; phách đầu ô mạnh hơn. */
 export const beatPulse = (frame: number) => {
-  if (frame < DROP || frame >= SCENES.cta.from + b(8)) return 0;
+  if (frame >= TOTAL - b(2)) return 0;
+  if (GAPS.some(([a, z]) => frame >= a && frame < z)) return 0;
   const x = frame / FPB;
   const i = Math.floor(x);
   const since = (x - i) * FPB;

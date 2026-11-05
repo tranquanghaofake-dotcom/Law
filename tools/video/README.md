@@ -2,8 +2,9 @@
 
 Dựng bằng [Remotion](https://www.remotion.dev) (React → MP4). Thư mục độc lập, **không** nằm trong npm workspaces nên không ảnh hưởng `apps/web` hay CI.
 
-- 1080×1920 (Full HD dọc), **60 fps**, 37 ô nhịp ≈ 80 giây.
-- Nhịp theo bài **"Aura Farming" — Mustafa Saboori: 111 BPM, A♯ thứ** (số liệu Tunebat). Mọi điểm cắt cảnh tính bằng `b(n)` = phách thứ n (`src/theme.ts`); đổi bài thì sửa `BPM` và `SCENE_BARS`.
+- 1080×1920 (Full HD dọc), **60 fps**, 40 ô nhịp = 5 cụm × 8 ô ≈ 86,5 giây.
+- Nhịp theo bài **"Aura Farming" — Mustafa Saboori (bản gốc, không phải Sped Up/Slowed)**: 111 BPM, A♯ thứ. Đã đo lại trên bản nghe thử 30 giây chính thức của Apple (chỉ để phân tích, không lưu vào repo): bài đủ trống từ đầu, chia **cụm 8 ô nhịp**, cuối mỗi cụm **bass tắt 1,5 phách** rồi nện lại ở phách đầu cụm sau.
+- Video bám đúng cấu trúc đó: lúc bass tắt thì hình bị "hút vào" (phóng, nhoè, nhạt màu, tối viền), phách đầu cụm thì nện (loé, tách màu RGB, sóng xung kích, light leak, rung). Mọi mốc tính bằng `b(n)` = phách thứ n (`src/theme.ts`); đổi bài thì sửa `BPM`, `SCENE_BARS`.
 - 13 cảnh: hook → logo (drop) → thư viện 23 bìa sách → Hiểu nhanh (thẻ Đặt cọc, dữ liệu thật) → 6 bậc → trả lời thật trên web (dấu ĐÚNG) → FSRS → tìm không dấu & tiện ích → **màn thắp chuỗi thật** → 4 màu chu kỳ thẻ → tủ sách theo chương → sự nghiệp 4 nhánh → kêu gọi.
 
 ## Asset lấy từ chính web
@@ -23,7 +24,7 @@ npm run render:nhap   # bản NHÁP: trộn nhạc mẫu 111 BPM vào bản đă
 
 ## Đăng TikTok
 1. Tải `out/gioi-thieu-dang-tiktok.mp4` lên, chọn **Âm thanh → "Aura Farming" (Mustafa Saboori)** trong thư viện TikTok (đã có giấy phép dùng trên TikTok).
-2. Kéo đoạn nhạc sao cho **phách mạnh đầu tiên của bài rơi đúng 0:00**; cú "drop" của video ở 0:04,3 (ô nhịp 2), cảnh thắp chuỗi ở 0:45,4.
+2. Kéo đoạn nhạc sao cho video bắt đầu **đúng phách đầu một cụm**: chỗ bass vừa trở lại sau khoảng lặng ngắn (~0,8 giây). Kiểm tra: các cú nện của video ở **0:17,3 · 0:34,6 · 0:51,9 · 1:09,2** phải trùng chỗ bass trở lại; số chuỗi đổi 74 → 75 ở 0:56,2.
 3. Âm lượng: âm thanh gốc (hiệu ứng) ~30–40 %, nhạc 100 %.
 
 Không nhúng file nhạc thương mại vào repo hay vào video: tác phẩm có chủ quyền (phát hành qua All Ways Global).
