@@ -24,10 +24,13 @@
   "không phải là tội phạm"
  ],
  "memo": {
-  "hook": "Bốn dấu hiệu: HÀNH VI – TRÁI LUẬT – CÓ LỖI – CHƯA phải tội phạm.",
+  "gist": "Hành vi có lỗi, trái quy định quản lý nhà nước, nhưng chưa đến mức tội phạm.",
+  "kind": "checklist",
+  "hook": "Như lỗi việt vị: bị thổi còi nhưng chưa đến mức đuổi khỏi sân.",
   "tree": [
    {
     "label": "Dấu hiệu",
+    "icon": "✅",
     "children": [
      "Hành vi",
      "Trái pháp luật về quản lý nhà nước",
@@ -37,10 +40,21 @@
    },
    {
     "label": "Chủ thể",
+    "icon": "👥",
     "children": [
      "Cá nhân",
      "Tổ chức"
     ]
+   }
+  ],
+  "case": {
+   "q": "Đi xe máy vượt đèn đỏ là vi phạm hành chính hay tội phạm?",
+   "a": "Vi phạm hành chính."
+  },
+  "contrast": [
+   {
+    "with": "xu-phat-vi-pham-hanh-chinh",
+    "text": "Vi phạm là hành vi; xử phạt là cách Nhà nước đáp lại hành vi đó."
    }
   ]
  },

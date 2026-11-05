@@ -5,7 +5,7 @@
  "term": "Biện pháp xử lý hành chính",
  "definition": "Biện pháp xử lý hành chính là biện pháp được áp dụng đối với cá nhân vi phạm pháp luật về an ninh, trật tự, an toàn xã hội mà không phải là tội phạm, bao gồm biện pháp giáo dục tại xã, phường, đặc khu; đưa vào trường giáo dưỡng; đưa vào cơ sở giáo dục bắt buộc và đưa đi cai nghiện bắt buộc.",
  "plain": "Bốn biện pháp chỉ áp dụng với CÁ NHÂN vi phạm AN NINH, TRẬT TỰ, AN TOÀN XÃ HỘI (không phải tội phạm): GIÁO DỤC TẠI XÃ, PHƯỜNG, ĐẶC KHU (3–6 tháng, tại nơi cư trú — Điều 89); ĐƯA VÀO TRƯỜNG GIÁO DƯỠNG (người chưa thành niên); ĐƯA VÀO CƠ SỞ GIÁO DỤC BẮT BUỘC (từ đủ 18 tuổi); ĐƯA ĐI CAI NGHIỆN BẮT BUỘC (theo Luật Phòng, chống ma túy). Từ 2025 đổi \"xã, phường, thị trấn\" thành \"xã, phường, đặc khu\" theo mô hình chính quyền hai cấp. Biện pháp đưa vào trường giáo dưỡng, cơ sở giáo dục bắt buộc, cai nghiện bắt buộc do TÒA ÁN nhân dân xem xét, quyết định.",
- "example": "Người 15 tuổi có hành vi có dấu hiệu tội phạm nghiêm trọng do cố ý nhưng chưa đủ tuổi chịu TNHS: có thể bị áp dụng biện pháp giáo dục tại xã, phường, đặc khu (khoản 2 Điều 90).",
+ "example": "Người 15 tuổi có hành vi có dấu hiệu tội phạm nghiêm trọng do cố ý nhưng chưa đủ tuổi chịu trách nhiệm hình sự: có thể bị áp dụng biện pháp giáo dục tại xã, phường, đặc khu (khoản 2 Điều 90).",
  "source": {
   "kind": "statute",
   "cite": "Khoản 3 Điều 2 Luật Xử lý vi phạm hành chính (sửa đổi, bổ sung đến năm 2025)",
@@ -23,10 +23,13 @@
   "cai nghiện bắt buộc"
  ],
  "memo": {
-  "hook": "Bốn biện pháp cho CÁ NHÂN vi phạm AN NINH, TRẬT TỰ mà chưa phải tội phạm.",
+  "gist": "Bốn biện pháp cho người vi phạm trật tự chưa tới mức tội: giáo dục tại xã, giáo dưỡng, giáo dục bắt buộc, cai nghiện.",
+  "kind": "tree",
+  "hook": "Không phạt tiền mà uốn nắn người: giữ ở nhà, đưa đi trường, hay đi cai.",
   "tree": [
    {
     "label": "Biện pháp",
+    "icon": "🏫",
     "children": [
      "Giáo dục tại xã, phường, đặc khu",
      "Trường giáo dưỡng (chưa thành niên)",
@@ -36,10 +39,21 @@
    },
    {
     "label": "Đối tượng",
+    "icon": "👤",
     "children": [
      "Cá nhân",
      "Vi phạm an ninh, trật tự"
     ]
+   }
+  ],
+  "case": {
+   "q": "Người 15 tuổi có hành vi có dấu hiệu tội nghiêm trọng do cố ý nhưng chưa đủ tuổi chịu trách nhiệm hình sự. Có thể bị áp dụng gì?",
+   "a": "Biện pháp giáo dục tại xã, phường, đặc khu."
+  },
+  "contrast": [
+   {
+    "with": "xu-phat-vi-pham-hanh-chinh",
+    "text": "Biện pháp xử lý nhằm giáo dục con người; xử phạt là trừng phạt hành vi bằng tiền, cảnh cáo."
    }
   ]
  },

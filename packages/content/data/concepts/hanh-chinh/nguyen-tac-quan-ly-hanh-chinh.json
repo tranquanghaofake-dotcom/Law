@@ -5,7 +5,7 @@
  "term": "Các nguyên tắc cơ bản trong quản lý hành chính nhà nước",
  "definition": "NT trong QLHC nhà nước là những tư tưởng chủ đạo bắt nguồn từ cơ sở khoa học của hoạt động quản lý, từ bản chất của chế độ, được quy định trong pháp luật, làm nền tảng cho tổ chức và hoạt động QLHC nhà nước.",
  "plain": "Nhóm CHÍNH TRỊ – XÃ HỘI: Đảng lãnh đạo; nhân dân tham gia quản lý; tập trung dân chủ (Điều 8 Hiến pháp 2013); bình đẳng giữa các dân tộc; pháp chế xã hội chủ nghĩa. Nhóm TỔ CHỨC – KỸ THUẬT: quản lý theo ngành kết hợp với theo địa giới hành chính (lãnh thổ); phân biệt quản lý nhà nước về kinh tế với quản lý sản xuất kinh doanh của doanh nghiệp; quản lý theo ngành kết hợp với theo chức năng. Nhiều nguyên tắc đã được luật hóa, ví dụ Điều 5 Luật Tổ chức Chính phủ 2025 (tập trung dân chủ, cấp dưới phục tùng cấp trên, phân quyền, phân cấp).",
- "example": "Bộ Y tế quản lý thống nhất ngành y tế (theo ngành) đồng thời Sở Y tế chịu sự chỉ đạo của UBND cấp tỉnh (theo lãnh thổ): nguyên tắc kết hợp quản lý theo ngành với theo lãnh thổ.",
+ "example": "Bộ Y tế quản lý thống nhất ngành y tế, đồng thời Sở Y tế chịu chỉ đạo của Ủy ban nhân dân cấp tỉnh: nguyên tắc kết hợp quản lý theo ngành với theo lãnh thổ.",
  "source": {
   "kind": "textbook",
   "cite": "Slide bài giảng Luật Hành chính Việt Nam, Trường Đại học Luật Hà Nội, vấn đề 4 (\"VĐ 04 -HCPC\") — đã khớp nguyên văn slide (laws/hc-slide-trich.txt); slide không phải giáo trình, giáo trình chưa đối chiếu"
@@ -23,10 +23,13 @@
   "ngành kết hợp lãnh thổ"
  ],
  "memo": {
-  "hook": "Hai nhóm: CHÍNH TRỊ – XÃ HỘI và TỔ CHỨC – KỸ THUẬT.",
+  "gist": "Quản lý hành chính theo hai nhóm nguyên tắc: chính trị, xã hội và tổ chức, kỹ thuật, như kết hợp ngành với lãnh thổ.",
+  "kind": "compare",
+  "hook": "Như chiếc lưới có sợi dọc là ngành, sợi ngang là địa phương.",
   "tree": [
    {
     "label": "Chính trị – xã hội",
+    "icon": "🏛️",
     "children": [
      "Đảng lãnh đạo",
      "Nhân dân tham gia",
@@ -36,10 +39,21 @@
    },
    {
     "label": "Tổ chức – kỹ thuật",
+    "icon": "⚙️",
     "children": [
      "Ngành kết hợp lãnh thổ",
      "Tách quản lý nhà nước với sản xuất kinh doanh"
     ]
+   }
+  ],
+  "case": {
+   "q": "Bộ Y tế quản lý cả ngành, Sở Y tế lại chịu chỉ đạo của Ủy ban nhân dân tỉnh. Đây là nguyên tắc gì?",
+   "a": "Kết hợp quản lý theo ngành với quản lý theo lãnh thổ."
+  },
+  "contrast": [
+   {
+    "with": "phuong-phap-quan-ly-hanh-chinh",
+    "text": "Nguyên tắc là định hướng chung; phương pháp là cách tác động cụ thể."
    }
   ]
  },

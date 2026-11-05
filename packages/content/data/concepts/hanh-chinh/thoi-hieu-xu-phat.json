@@ -23,22 +23,36 @@
   "đã kết thúc, đang thực hiện"
  ],
  "memo": {
-  "hook": "Thường 1 NĂM, một số lĩnh vực 2 NĂM; đã kết thúc tính từ lúc DỪNG, đang diễn ra tính từ lúc PHÁT HIỆN.",
+  "gist": "Thường hết 1 năm thì không xử phạt nữa, một số lĩnh vực 2 năm; vi phạm đang diễn ra tính từ lúc phát hiện.",
+  "kind": "tree",
+  "hook": "Đồng hồ cát bắt đầu chảy khi vi phạm dừng, hoặc khi bị phát hiện.",
   "tree": [
    {
     "label": "Thời hiệu",
+    "icon": "⏳",
     "children": [
      "01 năm",
-     "02 năm: kế toán, xây dựng, đất đai…",
+     "02 năm: kế toán, xây dựng, đất đai",
      "Thuế: theo luật quản lý thuế"
     ]
    },
    {
     "label": "Mốc tính",
+    "icon": "📍",
     "children": [
      "Đã kết thúc: từ khi chấm dứt",
      "Đang thực hiện: từ khi phát hiện"
     ]
+   }
+  ],
+  "case": {
+   "q": "Xây nhà không phép xong năm 2023, đến 2026 mới phát hiện. Còn bị phạt không?",
+   "a": "Không, vì quá thời hiệu 2 năm; nhưng vẫn có thể bị buộc phá dỡ."
+  },
+  "contrast": [
+   {
+    "with": "bien-phap-khac-phuc-hau-qua",
+    "text": "Hết thời hiệu thì hết phạt; khắc phục hậu quả vẫn có thể áp dụng."
    }
   ]
  },

@@ -24,18 +24,22 @@
   "07 ngày làm việc"
  ],
  "memo": {
-  "hook": "Không lập biên bản: CẢNH CÁO hoặc phạt ≤ 500 NGHÌN (cá nhân) / 1 TRIỆU (tổ chức).",
+  "gist": "Cảnh cáo hoặc phạt cá nhân đến 500 nghìn, tổ chức đến 1 triệu thì được phạt tại chỗ, không lập biên bản.",
+  "kind": "compare",
+  "hook": "Lỗi nhỏ thì ghi vé ngay; lỗi lớn hay qua camera thì phải lập biên bản.",
   "tree": [
    {
     "label": "Không lập biên bản",
+    "icon": "⚡",
     "children": [
      "Cảnh cáo",
-     "Cá nhân ≤ 500.000 đồng",
-     "Tổ chức ≤ 1.000.000 đồng"
+     "Cá nhân: đến 500.000 đồng",
+     "Tổ chức: đến 1.000.000 đồng"
     ]
    },
    {
     "label": "Phải lập biên bản",
+    "icon": "📝",
     "children": [
      "Trường hợp còn lại",
      "Phát hiện bằng camera"
@@ -43,9 +47,20 @@
    },
    {
     "label": "Ra quyết định",
+    "icon": "📅",
     "children": [
      "07 ngày làm việc"
     ]
+   }
+  ],
+  "case": {
+   "q": "Cảnh sát phạt 300 nghìn người không đội mũ bảo hiểm. Có phải lập biên bản không?",
+   "a": "Không, có thể ra quyết định tại chỗ."
+  },
+  "contrast": [
+   {
+    "with": "cuong-che-thi-hanh-xu-phat",
+    "text": "Không lập biên bản là thủ tục ra quyết định; cưỡng chế là buộc thi hành quyết định."
    }
   ]
  },

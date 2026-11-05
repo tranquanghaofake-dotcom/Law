@@ -5,7 +5,7 @@
  "term": "Đưa vào trường giáo dưỡng",
  "definition": "Người từ đủ 12 tuổi đến dưới 14 tuổi thực hiện hành vi có dấu hiệu của một tội phạm đặc biệt nghiêm trọng quy định tại Bộ luật Hình sự. Người từ đủ 14 tuổi đến dưới 16 tuổi thực hiện hành vi có dấu hiệu của một tội phạm rất nghiêm trọng hoặc một tội phạm đặc biệt nghiêm trọng quy định tại Bộ luật Hình sự, trừ những tội phạm quy định tại khoản 2 Điều 12 của Bộ luật Hình sự.",
  "plain": "Đối tượng là NGƯỜI CHƯA THÀNH NIÊN có hành vi nguy hiểm nhưng CHƯA ĐỦ TUỔI hoặc KHÔNG THUỘC diện chịu TNHS: 12–14 tuổi có dấu hiệu tội ĐẶC BIỆT NGHIÊM TRỌNG; 14–16 tuổi có dấu hiệu tội rất nghiêm trọng, đặc biệt nghiêm trọng NGOÀI danh sách khoản 2 Điều 12 BLHS (vì nếu thuộc danh sách thì đã phải chịu TNHS); người đã bị giáo dục tại xã mà tái phạm… KHÔNG áp dụng (khoản 5): người không có năng lực trách nhiệm hành chính, người đang MANG THAI… Thời hạn 06–24 tháng (Điều 91 Luật Xử lý vi phạm hành chính); do TÒA ÁN NHÂN DÂN KHU VỰC quyết định (khoản 2 Điều 105 Luật Xử lý vi phạm hành chính). Liên hệ BLHS: Điều 12 tuổi chịu TNHS.",
- "example": "Em B 13 tuổi có hành vi có dấu hiệu tội giết người (đặc biệt nghiêm trọng) nhưng chưa đủ 14 tuổi nên không chịu TNHS: có thể bị Tòa án quyết định đưa vào trường giáo dưỡng.",
+ "example": "Em B 13 tuổi có hành vi có dấu hiệu tội giết người nhưng chưa đủ 14 tuổi nên không chịu trách nhiệm hình sự: có thể bị Tòa án quyết định đưa vào trường giáo dưỡng.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1, khoản 2 Điều 92 Luật Xử lý vi phạm hành chính (sửa đổi, bổ sung đến năm 2025)",
@@ -23,26 +23,41 @@
   "Tòa án quyết định"
  ],
  "memo": {
-  "hook": "Trường giáo dưỡng: NGƯỜI CHƯA THÀNH NIÊN nguy hiểm nhưng CHƯA phải chịu hình sự; TÒA quyết định.",
+  "gist": "Người chưa thành niên có hành vi nguy hiểm nhưng chưa phải chịu hình sự có thể bị Tòa đưa vào trường giáo dưỡng.",
+  "kind": "tree",
+  "hook": "Ngôi trường thay nhà tù cho trẻ chưa đủ tuổi chịu tội.",
   "tree": [
    {
     "label": "12 đến dưới 14",
+    "icon": "🧒",
     "children": [
      "Dấu hiệu tội đặc biệt nghiêm trọng"
     ]
    },
    {
     "label": "14 đến dưới 16",
+    "icon": "👦",
     "children": [
      "Tội rất, đặc biệt nghiêm trọng",
-     "Ngoài khoản 2 Điều 12 BLHS"
+     "Ngoài khoản 2 Điều 12 Bộ luật Hình sự"
     ]
    },
    {
     "label": "Ai quyết định",
+    "icon": "🏛️",
     "children": [
      "Tòa án"
     ]
+   }
+  ],
+  "case": {
+   "q": "Em B 13 tuổi có hành vi dấu hiệu tội giết người. Ai quyết định đưa vào trường giáo dưỡng?",
+   "a": "Tòa án."
+  },
+  "contrast": [
+   {
+    "with": "giao-duc-tai-xa",
+    "text": "Trường giáo dưỡng tách khỏi nhà, do Tòa quyết; giáo dục tại xã ở ngay nơi cư trú."
    }
   ]
  },

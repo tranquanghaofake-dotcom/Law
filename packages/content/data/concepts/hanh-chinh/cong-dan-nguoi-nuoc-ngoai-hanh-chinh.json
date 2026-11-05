@@ -23,10 +23,13 @@
   "hạn chế quyền chính trị của người nước ngoài"
  ],
  "memo": {
-  "hook": "Năng lực PHÁP LUẬT từ khi sinh; năng lực HÀNH VI theo độ tuổi, sức khỏe.",
+  "gist": "Công dân có quyền từ khi sinh ra, tự thực hiện theo tuổi và sức khỏe; người nước ngoài bị hạn chế quyền chính trị.",
+  "kind": "compare",
+  "hook": "Vé vào cửa phát lúc chào đời, nhưng chìa khóa tự đi lớn dần theo tuổi.",
   "tree": [
    {
     "label": "Năng lực pháp luật",
+    "icon": "👶",
     "children": [
      "Có từ khi sinh ra",
      "Mở rộng theo độ tuổi"
@@ -34,6 +37,7 @@
    },
    {
     "label": "Năng lực hành vi",
+    "icon": "🧑",
     "children": [
      "Phụ thuộc tuổi, trình độ, sức khỏe",
      "Từ đủ 14 có thể bị xử phạt khi cố ý"
@@ -41,9 +45,20 @@
    },
    {
     "label": "Người nước ngoài",
+    "icon": "🌍",
     "children": [
      "Hạn chế quyền chính trị"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công dân 16 tuổi có bị xử phạt hành chính không, có quyền bầu cử không?",
+   "a": "Có thể bị xử phạt khi vi phạm, nhưng chưa có quyền bầu cử."
+  },
+  "contrast": [
+   {
+    "with": "to-chuc-xa-hoi",
+    "text": "Bài này nói về cá nhân; bài tổ chức xã hội nói về hội, đoàn thể."
    }
   ]
  },

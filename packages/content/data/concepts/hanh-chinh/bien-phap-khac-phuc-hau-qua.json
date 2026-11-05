@@ -24,16 +24,20 @@
   "nộp lại số lợi bất hợp pháp"
  ],
  "memo": {
-  "hook": "Khắc phục hậu quả để SỬA LẠI, không phải để TRỪNG PHẠT.",
+  "gist": "Người vi phạm bị buộc sửa hậu quả đã gây ra: dỡ công trình trái phép, khắc phục ô nhiễm, cải chính tin sai.",
+  "kind": "tree",
+  "hook": "Phạt là để răn, khắc phục là để dọn.",
   "tree": [
    {
     "label": "Mục đích",
+    "icon": "🔧",
     "children": [
      "Khắc phục hậu quả vi phạm"
     ]
    },
    {
     "label": "Biện pháp",
+    "icon": "🧹",
     "children": [
      "Khôi phục tình trạng ban đầu",
      "Phá dỡ công trình không phép",
@@ -43,10 +47,21 @@
    },
    {
     "label": "Khác",
+    "icon": "📢",
     "children": [
      "Tiêu hủy hàng gây hại",
      "Cải chính thông tin sai"
     ]
+   }
+  ],
+  "case": {
+   "q": "Doanh nghiệp đăng quảng cáo sai sự thật. Ngoài bị phạt tiền, còn có thể bị buộc làm gì?",
+   "a": "Buộc cải chính thông tin."
+  },
+  "contrast": [
+   {
+    "with": "hinh-thuc-xu-phat",
+    "text": "Khắc phục hậu quả là sửa lại cái đã hỏng; hình thức xử phạt là trừng phạt người vi phạm."
    }
   ]
  },

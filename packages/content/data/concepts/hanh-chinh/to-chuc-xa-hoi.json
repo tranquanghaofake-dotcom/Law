@@ -22,10 +22,13 @@
   "quyền lập hội"
  ],
  "memo": {
-  "hook": "Tổ chức xã hội: TỰ NGUYỆN, TỰ QUẢN, KHÔNG VỤ LỢI.",
+  "gist": "Tổ chức xã hội là hội, đoàn thể do người dân tự nguyện lập, tự quản, không vì lợi nhuận.",
+  "kind": "tree",
+  "hook": "Như câu lạc bộ: tự vào, tự lo, không kiếm lời.",
   "tree": [
    {
     "label": "Nguyên tắc",
+    "icon": "🤝",
     "children": [
      "Tự nguyện, tự quản",
      "Tự trang trải",
@@ -34,11 +37,22 @@
    },
    {
     "label": "Loại",
+    "icon": "🗂️",
     "children": [
      "Chính trị – xã hội",
      "Xã hội – nghề nghiệp",
      "Hội, quỹ khác"
     ]
+   }
+  ],
+  "case": {
+   "q": "Nhóm cựu sinh viên muốn lập hội. Có cần cơ quan nhà nước cho phép không?",
+   "a": "Có, phải được cho phép thành lập và duyệt điều lệ."
+  },
+  "contrast": [
+   {
+    "with": "cong-dan-nguoi-nuoc-ngoai-hanh-chinh",
+    "text": "Tổ chức xã hội là tập thể; bài kia nói về cá nhân."
    }
   ]
  },

@@ -5,7 +5,7 @@
  "term": "Thủ tục hành chính",
  "definition": "Thủ tục hành chính là trình tự, cách thức thực hiện, hồ sơ và yêu cầu, điều kiện do cơ quan nhà nước, người có thẩm quyền quy định để giải quyết một công việc cụ thể liên quan đến cá nhân, tổ chức.",
  "plain": "Định nghĩa này là định nghĩa pháp lý tại khoản 1 Điều 3 Nghị định 63/2010/NĐ-CP về kiểm soát thủ tục hành chính — khớp nguyên văn bản hợp nhất 10272/VBHN-VPCP năm 2017; Nghị định đã có Văn bản hợp nhất 2/VBHN-VPCP năm 2025 và đang có dự thảo nghị định thay thế, chưa đối chiếu với bản 2025. Nguyên tắc quy định thủ tục hành chính: câu chữ cũ ở khoản 1–5 Điều 7 Nghị định 63/2010/NĐ-CP; từ 2025 được thay bằng khoản 1–3 Điều 5 Nghị định 78/2025/NĐ-CP (nội dung mới chưa đối chiếu nguyên văn nên không liệt kê ở đây). Bộ phận tạo thành: tên thủ tục, trình tự, cách thức, hồ sơ, thời hạn, đối tượng, cơ quan thực hiện, kết quả, phí/lệ phí, mẫu đơn, yêu cầu điều kiện. Yêu cầu: đơn giản, dễ hiểu, công khai, minh bạch; thực hiện qua bộ phận một cửa, dịch vụ công trực tuyến.",
- "example": "Thủ tục đăng ký khai sinh: hồ sơ (tờ khai, giấy chứng sinh), cơ quan (UBND cấp xã), thời hạn (Luật Hộ tịch quy định giải quyết ngay khi nhận đủ giấy tờ hợp lệ), kết quả (giấy khai sinh).",
+ "example": "Thủ tục đăng ký khai sinh: hồ sơ gồm tờ khai và giấy chứng sinh, nộp tại Ủy ban nhân dân cấp xã, giải quyết ngay khi nhận đủ giấy tờ hợp lệ, kết quả là giấy khai sinh.",
  "source": {
   "kind": "textbook",
   "cite": "Nghị định 63/2010/NĐ-CP về kiểm soát thủ tục hành chính, khoản 1 Điều 3 — đã khớp nguyên văn Văn bản hợp nhất 10272/VBHN-VPCP ngày 27/9/2017 (tài liệu seminar tuần 6, Drive HLU); chưa đối chiếu nguyên văn Văn bản hợp nhất 2/VBHN-VPCP năm 2025"
@@ -22,10 +22,13 @@
   "cá nhân, tổ chức"
  ],
  "memo": {
-  "hook": "Thủ tục hành chính: TRÌNH TỰ + HỒ SƠ + ĐIỀU KIỆN để giải quyết MỘT việc cụ thể.",
+  "gist": "Thủ tục hành chính là trình tự, hồ sơ và điều kiện người dân phải theo để được giải quyết một việc cụ thể.",
+  "kind": "steps",
+  "hook": "Như công thức nấu: đủ nguyên liệu, đúng các bước, ra món.",
   "tree": [
    {
     "label": "Gồm",
+    "icon": "📋",
     "children": [
      "Trình tự, cách thức",
      "Hồ sơ",
@@ -34,15 +37,27 @@
    },
    {
     "label": "Mục đích",
+    "icon": "🎯",
     "children": [
      "Giải quyết công việc cụ thể"
     ]
    },
    {
     "label": "Đối tượng",
+    "icon": "👥",
     "children": [
      "Cá nhân, tổ chức"
     ]
+   }
+  ],
+  "case": {
+   "q": "Đăng ký khai sinh: nộp ở đâu, giải quyết khi nào?",
+   "a": "Ủy ban nhân dân cấp xã; giải quyết ngay khi nhận đủ giấy tờ hợp lệ."
+  },
+  "contrast": [
+   {
+    "with": "quyet-dinh-hanh-chinh",
+    "text": "Thủ tục là đường đi; quyết định là kết quả cuối đường."
    }
   ]
  },

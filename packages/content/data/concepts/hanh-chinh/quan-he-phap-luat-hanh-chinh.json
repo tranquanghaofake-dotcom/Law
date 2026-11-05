@@ -23,10 +23,13 @@
   "chịu trách nhiệm trước Nhà nước"
  ],
  "memo": {
-  "hook": "Ít nhất MỘT bên mang QUYỀN LỰC nhà nước; KHÔNG cần bên kia đồng ý.",
+  "gist": "Quan hệ có ít nhất một bên mang quyền lực nhà nước; phát sinh theo yêu cầu một bên, không cần bên kia đồng ý.",
+  "kind": "tree",
+  "hook": "Một bên cầm con dấu, bên kia xin hoặc chấp hành.",
   "tree": [
    {
     "label": "Đặc điểm",
+    "icon": "🏛️",
     "children": [
      "Một bên mang quyền lực nhà nước",
      "Phát sinh theo yêu cầu của bất kỳ bên nào",
@@ -35,9 +38,20 @@
    },
    {
     "label": "Vi phạm",
+    "icon": "⚖️",
     "children": [
      "Chịu trách nhiệm trước Nhà nước"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công dân nộp hồ sơ hợp lệ xin cấp hộ chiếu. Cơ quan có được từ chối không?",
+   "a": "Không. Quan hệ phát sinh theo yêu cầu của công dân."
+  },
+  "contrast": [
+   {
+    "with": "nganh-luat-hanh-chinh",
+    "text": "Quan hệ pháp luật là từng mối quan hệ cụ thể; ngành luật là bộ quy tắc chung."
    }
   ]
  },

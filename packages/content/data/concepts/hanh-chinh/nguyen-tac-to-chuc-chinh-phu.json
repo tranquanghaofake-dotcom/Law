@@ -5,7 +5,7 @@
  "term": "Chính phủ – cơ quan hành chính nhà nước cao nhất",
  "definition": "Chính phủ là cơ quan hành chính nhà nước cao nhất của nước Cộng hòa xã hội chủ nghĩa Việt Nam, thực hiện quyền hành pháp, là cơ quan chấp hành của Quốc hội. Chính phủ chịu trách nhiệm trước Quốc hội và báo cáo công tác trước Quốc hội, Ủy ban Thường vụ Quốc hội, Chủ tịch nước. (…) Tuân thủ Hiến pháp và pháp luật, quản lý xã hội bằng Hiến pháp và pháp luật, thực hiện nguyên tắc tập trung dân chủ; bảo đảm bình đẳng giới.",
  "plain": "Hệ thống cơ quan hành chính nhà nước: CHÍNH PHỦ (thẩm quyền chung, cao nhất) → BỘ, CƠ QUAN NGANG BỘ (thẩm quyền chuyên môn) → UBND cấp tỉnh, cấp xã (thẩm quyền chung ở địa phương; từ 01/7/2025 chính quyền địa phương hai cấp theo Luật Tổ chức chính quyền địa phương 72/2025/QH15) → cơ quan chuyên môn thuộc UBND. Đặc điểm cơ quan hành chính: thực hiện hoạt động CHẤP HÀNH – ĐIỀU HÀNH, hệ thống thống nhất từ trung ương tới cơ sở, cấp dưới phục tùng cấp trên (khoản 2 Điều 5).",
- "example": "Chính phủ ban hành nghị định hướng dẫn luật (chấp hành) và chỉ đạo các Bộ, UBND cấp tỉnh triển khai (điều hành); Chính phủ báo cáo công tác trước Quốc hội.",
+ "example": "Chính phủ ban hành nghị định hướng dẫn luật (chấp hành) và chỉ đạo các Bộ, Ủy ban nhân dân cấp tỉnh triển khai (điều hành); Chính phủ báo cáo công tác trước Quốc hội.",
  "source": {
   "kind": "statute",
   "cite": "Điều 1; khoản 1 Điều 5 Luật Tổ chức Chính phủ 2025 (63/2025/QH15)",
@@ -25,10 +25,13 @@
  ],
  "note": "Luật Tổ chức Chính phủ 63/2025/QH15 có hiệu lực từ 01/3/2025; được sửa đổi bởi Luật 137/2025/QH15 (hiệu lực 01/01/2026), Văn bản hợp nhất 27/VBHN-VPQH 2026 — Điều 1, 2, 5 không thay đổi.",
  "memo": {
-  "hook": "Hệ thống hành chính: CHÍNH PHỦ → BỘ → UBND tỉnh, xã → cơ quan chuyên môn.",
+  "gist": "Chính phủ là cơ quan hành chính cao nhất, thực hiện quyền hành pháp, chấp hành Quốc hội và đứng đầu hệ thống hành chính.",
+  "kind": "ladder",
+  "hook": "Như ban giám đốc của bộ máy hành chính, báo cáo với hội đồng là Quốc hội.",
   "tree": [
    {
     "label": "Chính phủ",
+    "icon": "🏛️",
     "children": [
      "Hành chính cao nhất",
      "Quyền hành pháp",
@@ -37,11 +40,22 @@
    },
    {
     "label": "Hệ thống",
+    "icon": "🪜",
     "children": [
      "Bộ, cơ quan ngang bộ",
      "Ủy ban nhân dân tỉnh, xã",
      "Cơ quan chuyên môn"
     ]
+   }
+  ],
+  "case": {
+   "q": "Chính phủ báo cáo công tác trước cơ quan nào?",
+   "a": "Quốc hội."
+  },
+  "contrast": [
+   {
+    "with": "quan-ly-hanh-chinh-nha-nuoc",
+    "text": "Chính phủ là cơ quan đứng đầu; quản lý hành chính là hoạt động của cả hệ thống."
    }
   ]
  },

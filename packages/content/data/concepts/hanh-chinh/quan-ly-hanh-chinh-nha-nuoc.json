@@ -5,7 +5,7 @@
  "term": "Quản lý hành chính nhà nước",
  "definition": "Quản lí hành chính nhà nước là hoạt động quản lí của nhà nước trong lĩnh vực hành pháp. Tính chất: Chấp hành – điều hành; Chủ động sáng tạo.",
  "plain": "Hai mặt: CHẤP HÀNH (thực hiện luật, nghị quyết của cơ quan quyền lực) và ĐIỀU HÀNH (tổ chức, chỉ đạo trực tiếp đối tượng quản lý). Đặc điểm thường nêu: tính quyền lực nhà nước (mệnh lệnh đơn phương, bảo đảm bằng cưỡng chế); tính dưới luật; tính chủ động, sáng tạo; tính liên tục, ổn định; chủ thể chủ yếu là cơ quan hành chính nhà nước, cán bộ, công chức, ngoài ra còn tổ chức, cá nhân được trao quyền. Phân biệt quản lý nhà nước (nghĩa rộng — cả lập pháp, tư pháp) với quản lý hành chính nhà nước (hoạt động hành pháp).",
- "example": "UBND cấp tỉnh ban hành kế hoạch triển khai Luật Đất đai (chấp hành) và chỉ đạo Sở Nông nghiệp và Môi trường kiểm tra việc sử dụng đất (điều hành).",
+ "example": "Ủy ban nhân dân cấp tỉnh ban hành kế hoạch triển khai Luật Đất đai (chấp hành) và chỉ đạo Sở Nông nghiệp và Môi trường kiểm tra việc sử dụng đất (điều hành).",
  "source": {
   "kind": "textbook",
   "cite": "Slide bài giảng Luật Hành chính Việt Nam, Trường Đại học Luật Hà Nội, vấn đề 1 (\"LMS Vấn đề 1\", ThS. Nguyễn Thu Trang) — đã khớp nguyên văn slide (laws/hc-slide-trich.txt); slide không phải giáo trình, giáo trình chưa đối chiếu"
@@ -23,10 +23,13 @@
   "cơ quan hành chính nhà nước"
  ],
  "memo": {
-  "hook": "Hai mặt: CHẤP HÀNH (thi hành luật) và ĐIỀU HÀNH (chỉ đạo trực tiếp).",
+  "gist": "Cơ quan hành chính thi hành luật và trực tiếp chỉ đạo các lĩnh vực đời sống bằng quyền lực nhà nước.",
+  "kind": "tree",
+  "hook": "Hai tay: một tay cầm luật để làm, một tay chỉ đạo việc hằng ngày.",
   "tree": [
    {
     "label": "Tính chất",
+    "icon": "🔁",
     "children": [
      "Chấp hành",
      "Điều hành",
@@ -35,6 +38,7 @@
    },
    {
     "label": "Đặc điểm",
+    "icon": "📌",
     "children": [
      "Quyền lực nhà nước",
      "Dưới luật"
@@ -42,9 +46,20 @@
    },
    {
     "label": "Chủ thể",
+    "icon": "🏛️",
     "children": [
      "Cơ quan hành chính nhà nước"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ủy ban nhân dân tỉnh chỉ đạo Sở kiểm tra việc sử dụng đất. Đây là mặt chấp hành hay điều hành?",
+   "a": "Điều hành."
+  },
+  "contrast": [
+   {
+    "with": "nganh-luat-hanh-chinh",
+    "text": "Quản lý hành chính là hoạt động; ngành luật hành chính là quy tắc điều chỉnh hoạt động đó."
    }
   ]
  },

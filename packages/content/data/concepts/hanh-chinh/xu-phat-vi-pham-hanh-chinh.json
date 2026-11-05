@@ -24,10 +24,13 @@
   "mỗi người đều bị xử phạt"
  ],
  "memo": {
-  "hook": "MỘT hành vi chỉ phạt MỘT LẦN; nhiều người cùng làm thì MỖI NGƯỜI đều bị phạt.",
+  "gist": "Người có thẩm quyền áp hình thức phạt lên người vi phạm; mỗi hành vi phạt một lần, ai cùng làm đều bị phạt.",
+  "kind": "tree",
+  "hook": "Như soát vé tàu: mỗi lỗi tính một lần, đi nhóm thì ai cũng phải có vé.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "🏛️",
     "children": [
      "Người có thẩm quyền áp dụng",
      "Hình thức xử phạt",
@@ -36,11 +39,22 @@
    },
    {
     "label": "Nguyên tắc",
+    "icon": "📏",
     "children": [
      "Pháp chế",
      "Một hành vi một lần",
      "Mỗi người đều bị xử phạt"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ba người cùng đổ rác trái phép xuống sông. Phạt thế nào?",
+   "a": "Mỗi người đều bị xử phạt về hành vi đó."
+  },
+  "contrast": [
+   {
+    "with": "vi-pham-hanh-chinh",
+    "text": "Xử phạt là cách đáp lại; vi phạm là hành vi bị đáp lại."
    }
   ]
  },

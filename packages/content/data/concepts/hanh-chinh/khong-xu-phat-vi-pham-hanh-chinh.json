@@ -24,10 +24,13 @@
   "không có năng lực trách nhiệm hành chính"
  ],
  "memo": {
-  "hook": "Năm trường hợp: CẤP THIẾT – PHÒNG VỆ – BẤT NGỜ – BẤT KHẢ KHÁNG – KHÔNG NĂNG LỰC.",
+  "gist": "Không xử phạt khi tình thế cấp thiết, phòng vệ chính đáng, sự kiện bất ngờ, bất khả kháng, hoặc người không đủ năng lực.",
+  "kind": "tree",
+  "hook": "Năm tấm khiên: cứu người, tự vệ, bất ngờ, trời gây ra, không tự chủ.",
   "tree": [
    {
     "label": "Không xử phạt",
+    "icon": "🛡️",
     "children": [
      "Tình thế cấp thiết",
      "Phòng vệ chính đáng",
@@ -37,9 +40,20 @@
    },
    {
     "label": "Lưu ý",
+    "icon": "⚠️",
     "children": [
      "Vượt quá giới hạn vẫn bị xử phạt"
     ]
+   }
+  ],
+  "case": {
+   "q": "Lái xe đi ngược chiều chở người bị nạn nguy kịch khi không còn cách nào khác. Có bị phạt không?",
+   "a": "Có thể không bị phạt, do tình thế cấp thiết."
+  },
+  "contrast": [
+   {
+    "with": "tinh-tiet-giam-nhe",
+    "text": "Không xử phạt là miễn hẳn; giảm nhẹ là vẫn phạt nhưng nhẹ hơn."
    }
   ]
  },

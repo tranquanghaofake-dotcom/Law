@@ -5,7 +5,7 @@
  "term": "Đối tượng bị xử phạt vi phạm hành chính",
  "definition": "Người từ đủ 14 tuổi đến dưới 16 tuổi bị xử phạt vi phạm hành chính về vi phạm hành chính do cố ý; người từ đủ 16 tuổi trở lên bị xử phạt vi phạm hành chính về mọi vi phạm hành chính. (…) Tổ chức bị xử phạt vi phạm hành chính về mọi vi phạm hành chính do mình gây ra;",
  "plain": "Tuổi: TỪ ĐỦ 14 ĐẾN DƯỚI 16 — chỉ vi phạm do CỐ Ý; TỪ ĐỦ 16 — MỌI vi phạm. TỔ CHỨC — mọi vi phạm do mình gây ra. Cá nhân, tổ chức NƯỚC NGOÀI vi phạm trên lãnh thổ, vùng tiếp giáp lãnh hải, vùng đặc quyền kinh tế, thềm lục địa, tàu bay, tàu biển Việt Nam → xử phạt theo pháp luật Việt Nam (điểm c). Quân nhân, công an vi phạm hành chính bị xử lý như công dân khác. Người chưa thành niên: hình thức nhẹ hơn (cảnh cáo với người 14–16; phạt tiền không quá 1/2 mức của người thành niên).",
- "example": "Học sinh 15 tuổi vô ý làm vỡ biển báo giao thông: không bị xử phạt vi phạm hành chính (chỉ xử phạt người 14–16 tuổi khi cố ý).",
+ "example": "Học sinh 15 tuổi vô ý làm vỡ biển báo giao thông: không bị xử phạt, vì người từ 14 đến dưới 16 tuổi chỉ bị phạt khi cố ý.",
  "source": {
   "kind": "statute",
   "cite": "Đoạn 1 điểm a, điểm b khoản 1 Điều 5 Luật Xử lý vi phạm hành chính (sửa đổi, bổ sung đến năm 2025)",
@@ -24,31 +24,47 @@
   "người nước ngoài"
  ],
  "memo": {
-  "hook": "14–16 tuổi: chỉ vi phạm CỐ Ý; từ 16 và tổ chức: MỌI vi phạm.",
+  "gist": "Người từ 14 đến dưới 16 tuổi chỉ bị phạt khi cố ý; người từ 16 tuổi và tổ chức bị phạt mọi vi phạm.",
+  "kind": "ladder",
+  "hook": "Mười bốn tuổi chỉ chịu lỗi cố tình; mười sáu tuổi chịu mọi lỗi.",
   "tree": [
    {
     "label": "14 đến dưới 16",
+    "icon": "🧒",
     "children": [
      "Chỉ vi phạm do cố ý"
     ]
    },
    {
     "label": "Từ đủ 16",
+    "icon": "🧑",
     "children": [
      "Mọi vi phạm"
     ]
    },
    {
     "label": "Tổ chức",
+    "icon": "🏢",
     "children": [
      "Mọi vi phạm"
     ]
    },
    {
     "label": "Người nước ngoài",
+    "icon": "🌍",
     "children": [
      "Vi phạm trên lãnh thổ, vùng biển Việt Nam"
     ]
+   }
+  ],
+  "case": {
+   "q": "Học sinh 15 tuổi vô ý làm vỡ biển báo giao thông. Có bị xử phạt hành chính không?",
+   "a": "Không, vì người 14 đến dưới 16 tuổi chỉ bị phạt khi cố ý."
+  },
+  "contrast": [
+   {
+    "with": "canh-cao",
+    "text": "Đối tượng là ai bị phạt; cảnh cáo là hình thức phạt nhẹ nhất."
    }
   ]
  },

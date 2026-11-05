@@ -22,16 +22,20 @@
   "nội thành tối đa 02 lần"
  ],
  "memo": {
-  "hook": "Cá nhân 50 NGHÌN – 1 TỶ; tổ chức gấp ĐÔI (đến 2 tỷ).",
+  "gist": "Phạt tiền cá nhân từ 50 nghìn đến 1 tỷ đồng; tổ chức gấp đôi, đến 2 tỷ đồng.",
+  "kind": "compare",
+  "hook": "Cùng một lỗi, công ty trả gấp đôi người thường.",
   "tree": [
    {
     "label": "Cá nhân",
+    "icon": "👤",
     "children": [
      "50.000 đồng đến 1 tỷ"
     ]
    },
    {
     "label": "Tổ chức",
+    "icon": "🏢",
     "children": [
      "100.000 đồng đến 2 tỷ",
      "Gấp 2 lần cá nhân"
@@ -39,9 +43,20 @@
    },
    {
     "label": "Nội thành",
+    "icon": "🏙️",
     "children": [
      "Có thể cao hơn, tối đa 02 lần"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty và một cá nhân cùng xả thải vượt chuẩn. Mức phạt của công ty so với cá nhân thế nào?",
+   "a": "Gấp đôi."
+  },
+  "contrast": [
+   {
+    "with": "canh-cao",
+    "text": "Phạt tiền thì nộp tiền; cảnh cáo chỉ nhắc bằng văn bản."
    }
   ]
  },

@@ -5,7 +5,7 @@
  "term": "Cán bộ và công chức",
  "definition": "Cán bộ là công dân Việt Nam, được bầu cử, phê chuẩn, bổ nhiệm hoặc chỉ định giữ chức vụ, chức danh theo nhiệm kỳ trong cơ quan của Đảng Cộng sản Việt Nam, Nhà nước, Mặt trận Tổ quốc Việt Nam, các tổ chức chính trị - xã hội ở trung ương, ở cấp tỉnh, ở cấp xã, trong biên chế và hưởng lương từ ngân sách nhà nước. Công chức là công dân Việt Nam, được tuyển dụng vào vị trí việc làm trong cơ quan của Đảng Cộng sản Việt Nam, Nhà nước, Mặt trận Tổ quốc Việt Nam, các tổ chức chính trị - xã hội ở trung ương, ở cấp tỉnh, ở cấp xã;",
  "plain": "Phân biệt theo CÁCH HÌNH THÀNH: CÁN BỘ — bầu cử, phê chuẩn, bổ nhiệm, chỉ định, giữ chức vụ THEO NHIỆM KỲ; CÔNG CHỨC — TUYỂN DỤNG vào VỊ TRÍ VIỆC LÀM; Luật 2025 lấy vị trí việc làm làm trung tâm, ngạch công chức xếp tương ứng với vị trí việc làm. Cả hai: công dân Việt Nam, trong biên chế, hưởng lương ngân sách. Luật 2025 bỏ \"cán bộ, công chức cấp xã\" riêng (thống nhất ở trung ương, cấp tỉnh, cấp xã). VIÊN CHỨC (làm việc ở đơn vị sự nghiệp công lập theo hợp đồng làm việc, lương từ quỹ lương của đơn vị) do Luật Viên chức điều chỉnh, không phải công chức.",
- "example": "Chủ tịch UBND tỉnh do HĐND bầu, giữ chức theo nhiệm kỳ: cán bộ. Chuyên viên Sở Tư pháp trúng tuyển kỳ thi tuyển vào vị trí việc làm: công chức. Giáo viên trường THPT công lập: viên chức.",
+ "example": "Chủ tịch Ủy ban nhân dân tỉnh do Hội đồng nhân dân bầu, theo nhiệm kỳ: cán bộ. Chuyên viên Sở Tư pháp trúng tuyển vào vị trí việc làm: công chức. Giáo viên trường công lập: viên chức.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1, 2 Điều 1 Luật Cán bộ, công chức 2025 (80/2025/QH15)",
@@ -24,10 +24,13 @@
  ],
  "note": "Luật Cán bộ, công chức 80/2025/QH15 có hiệu lực từ 01/7/2025, thay thế Luật Cán bộ, công chức 22/2008/QH12; bỏ cấp huyện, chỉ còn trung ương, cấp tỉnh, cấp xã.",
  "memo": {
-  "hook": "CÁN BỘ: BẦU, theo NHIỆM KỲ; CÔNG CHỨC: TUYỂN DỤNG vào VỊ TRÍ VIỆC LÀM.",
+  "gist": "Cán bộ được bầu, giữ chức theo nhiệm kỳ; công chức được tuyển dụng vào vị trí việc làm; cả hai hưởng lương ngân sách.",
+  "kind": "compare",
+  "hook": "Cán bộ đi bằng lá phiếu, công chức đi bằng kỳ thi.",
   "tree": [
    {
     "label": "Cán bộ",
+    "icon": "🗳️",
     "children": [
      "Bầu cử, phê chuẩn, bổ nhiệm",
      "Theo nhiệm kỳ"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Công chức",
+    "icon": "📝",
     "children": [
      "Tuyển dụng",
      "Vào vị trí việc làm"
@@ -42,10 +46,21 @@
    },
    {
     "label": "Chung",
+    "icon": "🇻🇳",
     "children": [
      "Công dân Việt Nam",
      "Trong biên chế, lương ngân sách"
     ]
+   }
+  ],
+  "case": {
+   "q": "Chuyên viên Sở Tư pháp trúng tuyển kỳ thi vào vị trí việc làm là cán bộ hay công chức?",
+   "a": "Công chức."
+  },
+  "contrast": [
+   {
+    "with": "nguyen-tac-thi-hanh-cong-vu",
+    "text": "Cán bộ, công chức là người làm công vụ; nguyên tắc thi hành công vụ là cách họ phải làm."
    }
   ]
  },
