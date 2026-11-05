@@ -5,7 +5,7 @@
  "term": "Bộ luật Dân sự 1995: bộ luật dân sự đầu tiên",
  "definition": "Bộ luật dân sự có nhiệm vụ bảo vệ quyền, lợi ích hợp pháp của cá nhân, tổ chức, lợi ích của Nhà nước, lợi ích công cộng, bảo đảm sự bình đẳng và an toàn pháp lý trong quan hệ dân sự, góp phần tạo điều kiện đáp ứng các nhu cầu vật chất và tinh thần của nhân dân, thúc đẩy sự phát triển kinh tế- xã hội.",
  "plain": "Bộ luật Dân sự 1995 (thông qua 28/10/1995, hiệu lực 01/7/1996) là BỘ LUẬT DÂN SỰ ĐẦU TIÊN của nước CHXHCN Việt Nam, pháp điển hóa pháp luật dân sự sau gần 50 năm kể từ khi tạm dùng dân luật cũ (Sắc lệnh 47) và sửa đổi (Sắc lệnh 97/SL). Bộ luật thể chế hóa kinh tế thị trường thời Đổi mới: ghi nhận các nguyên tắc tự do thỏa thuận, bình đẳng, thiện chí, trung thực; quy định chuyển quyền sử dụng đất (thừa nhận theo Luật Đất đai 1993); có phần về quyền tác giả, quyền sở hữu công nghiệp. Bị thay thế bởi Bộ luật Dân sự 2005, rồi Bộ luật Dân sự 2015 hiện hành.",
- "example": "Chuỗi ôn tập dân luật: Sắc lệnh 47 (1945) tạm giữ dân luật cũ → Sắc lệnh 97/SL (1950) sửa dân luật → Bộ luật Dân sự 1995 → 2005 → 2015.",
+ "example": "Chuỗi ôn tập dân luật: Sắc lệnh 47 (1945) tạm giữ dân luật cũ, Sắc lệnh số 97 (1950) sửa dân luật, rồi Bộ luật Dân sự 1995, 2005, 2015.",
  "source": {
   "kind": "primary",
   "cite": "Bộ luật Dân sự 1995, Điều 1",
@@ -25,27 +25,42 @@
  ],
  "note": "Bộ luật Dân sự 1995 có hiệu lực từ 01/7/1996, đã hết hiệu lực (thay bằng Bộ luật Dân sự 2005); hiện hành là Bộ luật Dân sự 91/2015/QH13. Học để hiểu lịch sử.",
  "memo": {
-  "hook": "BLDS ĐẦU TIÊN: thông qua 28/10/1995, hiệu lực 01/7/1996.",
+  "gist": "Bộ luật dân sự đầu tiên của Việt Nam, thông qua năm 1995, có hiệu lực từ tháng 7 năm 1996.",
+  "kind": "tree",
+  "hook": "Ba thế hệ bộ luật dân sự: chín lăm, linh năm, mười lăm.",
   "tree": [
    {
     "label": "Mốc",
+    "icon": "📅",
     "children": [
-     "Thông qua 28/10/1995",
-     "Hiệu lực 01/7/1996"
+     "Thông qua 28 tháng 10 năm 1995",
+     "Hiệu lực 1 tháng 7 năm 1996"
     ]
    },
    {
     "label": "Vị trí",
+    "icon": "🥇",
     "children": [
      "Bộ luật dân sự đầu tiên"
     ]
    },
    {
     "label": "Nhiệm vụ",
+    "icon": "🎯",
     "children": [
      "Bình đẳng, an toàn pháp lý",
      "Thể chế hóa kinh tế thị trường"
     ]
+   }
+  ],
+  "case": {
+   "q": "Bộ luật Dân sự đầu tiên của Việt Nam có hiệu lực từ khi nào?",
+   "a": "Ngày 1 tháng 7 năm 1996."
+  },
+  "contrast": [
+   {
+    "with": "sac-lenh-97-dan-luat",
+    "text": "Bộ luật Dân sự 1995 là bộ luật đầu tiên; Sắc lệnh 97 năm 1950 chỉ sửa đổi dân luật cũ."
    }
   ]
  },

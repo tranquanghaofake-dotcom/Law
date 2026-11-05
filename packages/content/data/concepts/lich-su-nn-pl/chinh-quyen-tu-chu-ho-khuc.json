@@ -24,10 +24,13 @@
   "Dương Đình Nghệ"
  ],
  "memo": {
-  "hook": "Họ Khúc: thực quyền của người VIỆT nhưng vẫn mang danh TIẾT ĐỘ SỨ phương Bắc.",
+  "gist": "Họ Khúc và Dương Đình Nghệ nắm thực quyền cho người Việt, nhưng vẫn mang danh Tiết độ sứ của phương Bắc.",
+  "kind": "tree",
+  "hook": "Nhà mình tự lo, nhưng cửa vẫn treo biển tên chủ cũ.",
   "tree": [
    {
     "label": "Nhân vật",
+    "icon": "👥",
     "children": [
      "Khúc Hạo",
      "Khúc Thừa Mỹ",
@@ -36,15 +39,27 @@
    },
    {
     "label": "Danh nghĩa",
+    "icon": "🏷️",
     "children": [
      "Tiết độ sứ"
     ]
    },
    {
     "label": "Bản chất",
+    "icon": "🧩",
     "children": [
      "Tự chủ trong khung đô hộ"
     ]
+   }
+  ],
+  "case": {
+   "q": "Khúc Hạo xưng là gì, Ngô Quyền năm 939 xưng là gì?",
+   "a": "Khúc Hạo xưng Tiết độ sứ; Ngô Quyền xưng vương."
+  },
+  "contrast": [
+   {
+    "with": "ngo-quyen-xung-vuong",
+    "text": "Họ Khúc tự chủ trong danh nghĩa phương Bắc; Ngô Quyền lập nhà nước độc lập."
    }
   ]
  },

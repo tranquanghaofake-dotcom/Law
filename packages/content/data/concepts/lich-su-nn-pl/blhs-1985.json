@@ -25,17 +25,21 @@
  ],
  "note": "Bộ luật Hình sự 1985 có hiệu lực từ 01/01/1986, đã hết hiệu lực (thay bằng Bộ luật Hình sự 1999); hiện hành là Bộ luật Hình sự 100/2015/QH13 (đã được sửa đổi). Học để hiểu lịch sử.",
  "memo": {
-  "hook": "BLHS ĐẦU TIÊN của Việt Nam thống nhất: 27/6/1985, hiệu lực 01/01/1986.",
+  "gist": "Bộ luật Hình sự 1985 là bộ luật hình sự đầu tiên của nước Việt Nam thống nhất, có hiệu lực từ năm 1986.",
+  "kind": "tree",
+  "hook": "Từ chỗ quan xử tùy nghi sang chỗ không có luật thì không có tội.",
   "tree": [
    {
     "label": "Mốc",
+    "icon": "📅",
     "children": [
-     "Thông qua 27/6/1985",
-     "Hiệu lực 01/01/1986"
+     "Thông qua 27 tháng 6 năm 1985",
+     "Hiệu lực 1 tháng 1 năm 1986"
     ]
    },
    {
     "label": "Nguyên tắc",
+    "icon": "⚖️",
     "children": [
      "Chỉ phạm tội luật quy định",
      "Tòa án quyết định hình phạt"
@@ -43,9 +47,20 @@
    },
    {
     "label": "Ý nghĩa",
+    "icon": "📚",
     "children": [
      "Pháp điển hóa sắc lệnh rời rạc"
     ]
+   }
+  ],
+  "case": {
+   "q": "Bộ luật Hình sự 1985 khác Quốc triều hình luật ở điểm nào khi không có điều luật?",
+   "a": "Năm 1985 chỉ hành vi luật quy định mới là tội; luật xưa cho quan xử tùy tình tiết."
+  },
+  "contrast": [
+   {
+    "with": "toi-pham-1985",
+    "text": "Bài này nói về cả bộ luật; bài kia nói khái niệm tội phạm trong bộ luật đó."
    }
   ]
  },

@@ -26,16 +26,20 @@
  ],
  "note": "Thẻ dạng tóm lược giáo trình, chưa có trích nguyên văn Hoàng Việt luật lệ hay Đại Nam thực lục; cần đối chiếu sách in trước khi dùng làm tài liệu chính.",
  "memo": {
-  "hook": "Nhà Nguyễn: chuyên chế TẬP QUYỀN CAO ĐỘ, KHÔNG đặt tể tướng.",
+  "gist": "Nhà Nguyễn tập trung quyền lực cao độ vào vua, không đặt tể tướng, có Lục bộ, Nội các, Cơ mật viện, Đô sát viện.",
+  "kind": "ladder",
+  "hook": "Vua cầm hết dây cương, không ai đứng giữa vua và các bộ.",
   "tree": [
    {
     "label": "Vua",
+    "icon": "👑",
     "children": [
      "Nắm mọi quyền lực"
     ]
    },
    {
     "label": "Trung ương",
+    "icon": "🏛️",
     "children": [
      "Lục bộ",
      "Nội các",
@@ -45,9 +49,20 @@
    },
    {
     "label": "Đặc điểm",
+    "icon": "⚠️",
     "children": [
      "Không đặt tể tướng"
     ]
+   }
+  ],
+  "case": {
+   "q": "Thời Nguyễn có đặt tể tướng không?",
+   "a": "Không. Vua trực tiếp nắm mọi quyền."
+  },
+  "contrast": [
+   {
+    "with": "luc-bo-1466",
+    "text": "Bài này nói cả bộ máy nhà Nguyễn; Lục bộ là sáu bộ có từ thời Lê."
    }
   ]
  },

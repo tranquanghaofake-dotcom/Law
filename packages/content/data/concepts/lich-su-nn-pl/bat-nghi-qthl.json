@@ -24,10 +24,13 @@
   "trừ thập ác"
  ],
  "memo": {
-  "hook": "BÁT NGHỊ: 8 diện được XÉT GIẢM tội, trừ tội THẬP ÁC.",
+  "gist": "Tám nhóm người như thân thích vua, người có công, quan lớn được xét giảm tội, trừ khi phạm thập ác.",
+  "kind": "tree",
+  "hook": "Tám tấm thẻ ưu tiên, nhưng mất hiệu lực trước mười tội ác nặng nhất.",
   "tree": [
    {
     "label": "Thân thế",
+    "icon": "👪",
     "children": [
      "Nghị thân",
      "Nghị cố",
@@ -36,6 +39,7 @@
    },
    {
     "label": "Phẩm chất",
+    "icon": "🌟",
     "children": [
      "Nghị hiền",
      "Nghị năng",
@@ -44,6 +48,7 @@
    },
    {
     "label": "Địa vị, công lao",
+    "icon": "🏅",
     "children": [
      "Nghị công",
      "Nghị quý"
@@ -51,10 +56,21 @@
    },
    {
     "label": "Xử lý",
+    "icon": "📜",
     "children": [
      "Tâu vua xét định",
      "Trừ thập ác"
     ]
+   }
+  ],
+  "case": {
+   "q": "Quan tam phẩm phạm tội mưu phản. Có được xét giảm theo bát nghị không?",
+   "a": "Không, vì mưu phản thuộc thập ác."
+  },
+  "contrast": [
+   {
+    "with": "thap-ac-qthl",
+    "text": "Bát nghị là diện được giảm; thập ác là mười tội không được giảm."
    }
   ]
  },

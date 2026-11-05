@@ -25,10 +25,13 @@
   "in tay"
  ],
  "memo": {
-  "hook": "Chiếu 1237: chúc thư, văn khế phải có NGƯỜI LÀM CHỨNG và IN TAY.",
+  "gist": "Năm 1237 nhà Trần quy định chúc thư, văn khế phải lập giấy, có người làm chứng và điểm chỉ đúng chỗ.",
+  "kind": "checklist",
+  "hook": "Giấy trắng mực đen, có người chứng, có dấu tay.",
   "tree": [
    {
     "label": "Áp dụng",
+    "icon": "📜",
     "children": [
      "Chúc thư",
      "Văn khế ruộng đất",
@@ -37,6 +40,7 @@
    },
    {
     "label": "Hình thức",
+    "icon": "✍️",
     "children": [
      "Lập thành giấy tờ",
      "Người làm chứng",
@@ -45,9 +49,20 @@
    },
    {
     "label": "Ý nghĩa",
+    "icon": "💡",
     "children": [
      "Bằng chứng sớm về hình thức giao dịch"
     ]
+   }
+  ],
+  "case": {
+   "q": "Văn khế bán ruộng thời Trần thiếu dấu tay người làm chứng. Hậu quả là gì?",
+   "a": "Khó được công nhận khi có tranh chấp."
+  },
+  "contrast": [
+   {
+    "with": "quoc-trieu-thong-che",
+    "text": "Chiếu 1237 nói hình thức giấy tờ; Quốc triều thông chế là bộ luật năm 1230."
    }
   ]
  },

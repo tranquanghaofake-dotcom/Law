@@ -25,10 +25,13 @@
   "ràng buộc lẫn nhau"
  ],
  "memo": {
-  "hook": "1471: Lê Thánh Tông THÂN HÀNH nắm quyền chế tác; cơ quan RÀNG BUỘC lẫn nhau.",
+  "gist": "Năm 1471 Lê Thánh Tông ban Hoàng triều quan chế, tự mình nắm quyền đặt chức quan, các cơ quan kiềm chế lẫn nhau.",
+  "kind": "tree",
+  "hook": "Vua tự tay xếp bàn cờ quan lại, quân nào cũng bị quân khác canh.",
   "tree": [
    {
     "label": "Mốc",
+    "icon": "📅",
     "children": [
      "1471 (Hồng Đức)",
      "Lê Thánh Tông"
@@ -36,12 +39,14 @@
    },
    {
     "label": "Tư tưởng",
+    "icon": "💭",
     "children": [
      "Vua thân hành nắm quyền chế tác"
     ]
    },
    {
     "label": "Trung ương",
+    "icon": "🏛️",
     "children": [
      "Năm phủ, sáu bộ",
      "Sáu khoa, sáu tự"
@@ -49,9 +54,20 @@
    },
    {
     "label": "Nguyên tắc",
+    "icon": "🔗",
     "children": [
      "Ràng buộc lẫn nhau"
     ]
+   }
+  ],
+  "case": {
+   "q": "Nguyên tắc tổ chức nổi bật trong Hoàng triều quan chế là gì?",
+   "a": "Các cơ quan ràng buộc, kiềm chế lẫn nhau."
+  },
+  "contrast": [
+   {
+    "with": "luc-bo-1466",
+    "text": "Hoàng triều quan chế là cả hệ thống năm 1471; Lục bộ là sáu bộ lập năm 1466."
    }
   ]
  },

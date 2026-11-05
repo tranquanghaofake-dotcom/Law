@@ -26,10 +26,13 @@
   "tự thú được tha"
  ],
  "memo": {
-  "hook": "Già, trẻ, tàn tật được CHUỘC tội theo ba bậc tuổi; TỰ THÚ được tha.",
+  "gist": "Người già, trẻ nhỏ, tàn tật phạm tội được chuộc hoặc xét giảm theo ba bậc tuổi; ai tự thú thì được tha.",
+  "kind": "ladder",
+  "hook": "Càng già hoặc càng nhỏ, luật càng nương tay.",
   "tree": [
    {
     "label": "Bậc 1",
+    "icon": "1️⃣",
     "children": [
      "70 tuổi trở lên, 15 trở xuống",
      "Tội lưu trở xuống được chuộc"
@@ -37,6 +40,7 @@
    },
    {
     "label": "Bậc 2",
+    "icon": "2️⃣",
     "children": [
      "80 tuổi trở lên, 10 trở xuống",
      "Tội chết tâu vua"
@@ -44,6 +48,7 @@
    },
    {
     "label": "Bậc 3",
+    "icon": "3️⃣",
     "children": [
      "90 tuổi trở lên, 7 trở xuống",
      "Bắt tội kẻ xui xiểm"
@@ -51,9 +56,20 @@
    },
    {
     "label": "Ngoại lệ",
+    "icon": "⛔",
     "children": [
      "Thập ác"
     ]
+   }
+  ],
+  "case": {
+   "q": "Kẻ xúi trẻ 6 tuổi đi ăn trộm. Ai bị bắt tội?",
+   "a": "Kẻ xui xiểm; đứa trẻ không bị hành hình."
+  },
+  "contrast": [
+   {
+    "with": "chuoc-toi-thap-ac",
+    "text": "Bài này là chuộc tội trong Quốc triều hình luật; bài kia là chế định chuộc tội có từ thời Lý."
    }
   ]
  },

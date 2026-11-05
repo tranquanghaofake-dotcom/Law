@@ -22,10 +22,13 @@
   "chống ngoại xâm"
  ],
  "memo": {
-  "hook": "Văn Lang ra đời SỚM vì TRỊ THỦY và CHỐNG NGOẠI XÂM, khi phân hóa còn SƠ KHAI.",
+  "gist": "Văn Lang ra đời sớm khi phân hóa xã hội còn sơ khai, nhờ nhu cầu trị thủy và chống ngoại xâm thúc đẩy.",
+  "kind": "tree",
+  "hook": "Nước lũ và giặc ngoài gõ cửa thì làng phải hợp lại thành nước.",
   "tree": [
    {
     "label": "Kinh tế",
+    "icon": "🌾",
     "children": [
      "Nông nghiệp lúa nước",
      "Kỹ thuật đồng thau"
@@ -33,16 +36,28 @@
    },
    {
     "label": "Xã hội",
+    "icon": "👥",
     "children": [
      "Phân hóa sơ khai"
     ]
    },
    {
     "label": "Thúc đẩy",
+    "icon": "🌊",
     "children": [
      "Trị thủy",
      "Chống ngoại xâm"
     ]
+   }
+  ],
+  "case": {
+   "q": "Vì sao nhà nước Việt cổ ra đời sớm dù phân hóa giai cấp chưa sâu?",
+   "a": "Nhờ yếu tố thúc đẩy là trị thủy và chống ngoại xâm."
+  },
+  "contrast": [
+   {
+    "with": "nha-nuoc-van-lang",
+    "text": "Bài này nói vì sao ra đời; bài kia nói nhà nước Văn Lang ra sao."
    }
   ]
  },

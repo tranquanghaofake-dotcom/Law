@@ -24,10 +24,13 @@
   "Thái thú – quận"
  ],
  "memo": {
-  "hook": "Nhà Hán chia QUẬN: Thứ sử coi CHÂU, Thái thú coi QUẬN.",
+  "gist": "Thời Bắc thuộc, đất Việt bị chia thành châu, quận như đơn vị hành chính của phương Bắc, do Thứ sử, Thái thú cai trị.",
+  "kind": "tree",
+  "hook": "Không làm nhà riêng cho người Việt, chỉ coi là phòng thêm của nhà mình.",
   "tree": [
    {
     "label": "Chia đất",
+    "icon": "🗺️",
     "children": [
      "9 quận",
      "Ba quận đất Việt: Giao Chỉ, Cửu Chân, Nhật Nam"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Quan lại",
+    "icon": "👤",
     "children": [
      "Thứ sử: châu",
      "Thái thú: quận"
@@ -42,9 +46,20 @@
    },
    {
     "label": "Mục đích",
+    "icon": "💰",
     "children": [
      "Cai trị, thu cống phú"
     ]
+   }
+  ],
+  "case": {
+   "q": "Thời Hán, ai coi một quận?",
+   "a": "Thái thú; còn Thứ sử coi châu."
+  },
+  "contrast": [
+   {
+    "with": "chinh-sach-dong-hoa",
+    "text": "Châu quận là cách tổ chức cai trị; đồng hóa là chính sách văn hóa đi kèm."
    }
   ]
  },

@@ -24,22 +24,36 @@
   "con gái được thừa kế"
  ],
  "memo": {
-  "hook": "HƯƠNG HỎA = 1/20 ruộng đất để thờ cúng, giao CON TRƯỞNG; CON GÁI cũng được chia.",
+  "gist": "Không có chúc thư thì một phần hai mươi ruộng làm hương hỏa giao con trưởng; con gái cũng được chia phần còn lại.",
+  "kind": "tree",
+  "hook": "Chừa một miếng cho bàn thờ, phần lớn chia cho người sống.",
   "tree": [
    {
     "label": "Hương hỏa",
+    "icon": "🕯️",
     "children": [
-     "1/20 ruộng đất",
+     "Một phần hai mươi ruộng đất",
      "Giao con trai trưởng",
      "Không có con trai: con gái trưởng"
     ]
    },
    {
     "label": "Phần còn lại",
+    "icon": "👫",
     "children": [
      "Anh em chị em chia nhau",
      "Con gái được thừa kế"
     ]
+   }
+  ],
+  "case": {
+   "q": "Cha mẹ chết không chúc thư, để 20 mẫu ruộng, có một con trai trưởng và hai con gái. Chia thế nào?",
+   "a": "1 mẫu làm hương hỏa giao con trai trưởng; 19 mẫu ba anh chị em chia nhau."
+  },
+  "contrast": [
+   {
+    "with": "bao-ve-nguoi-yeu-the-qthl",
+    "text": "Hương hỏa là chia ruộng thờ cúng; bài kia nói bảo vệ người yếu thế."
    }
   ]
  },

@@ -25,10 +25,13 @@
   "Đại Thắng Minh Hoàng Đế"
  ],
  "memo": {
-  "hook": "968: Đinh Bộ Lĩnh xưng ĐẾ, quốc hiệu ĐẠI CỒ VIỆT, đô HOA LƯ.",
+  "gist": "Năm 968 Đinh Bộ Lĩnh dẹp mười hai sứ quân, xưng hoàng đế, đặt quốc hiệu Đại Cồ Việt, đóng đô ở Hoa Lư.",
+  "kind": "tree",
+  "hook": "Mẹo số: chín – sáu – tám, mười hai sứ quân về một mối.",
   "tree": [
    {
     "label": "Mốc",
+    "icon": "📅",
     "children": [
      "968",
      "Dẹp 12 sứ quân"
@@ -36,22 +39,35 @@
    },
    {
     "label": "Quốc hiệu",
+    "icon": "🏷️",
     "children": [
      "Đại Cồ Việt"
     ]
    },
    {
     "label": "Kinh đô",
+    "icon": "🏯",
     "children": [
      "Hoa Lư"
     ]
    },
    {
     "label": "Ý nghĩa",
+    "icon": "⭐",
     "children": [
      "Xưng đế ngang phương Bắc",
      "Triều đại chính thống đầu tiên"
     ]
+   }
+  ],
+  "case": {
+   "q": "Nhà Đinh đóng đô ở đâu?",
+   "a": "Hoa Lư."
+  },
+  "contrast": [
+   {
+    "with": "ngo-quyen-xung-vuong",
+    "text": "Ngô Quyền xưng vương; Đinh Bộ Lĩnh xưng đế, ngang hàng phương Bắc."
    }
   ]
  },

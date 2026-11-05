@@ -22,10 +22,13 @@
   "cha truyền con nối"
  ],
  "memo": {
-  "hook": "Văn Lang ba cấp: HÙNG VƯƠNG (Lạc hầu giúp) – LẠC TƯỚNG (bộ) – BỒ CHÍNH (chiềng chạ).",
+  "gist": "Văn Lang có ba cấp: Hùng Vương có Lạc hầu giúp ở trung ương, Lạc tướng đứng đầu bộ, Bồ chính coi chiềng chạ.",
+  "kind": "ladder",
+  "hook": "Mẹo: văn bên vua, võ ở vùng, người già giữ làng.",
   "tree": [
    {
     "label": "Trung ương",
+    "icon": "👑",
     "children": [
      "Hùng Vương",
      "Lạc hầu: tướng văn"
@@ -33,22 +36,35 @@
    },
    {
     "label": "Bộ",
+    "icon": "⚔️",
     "children": [
      "Lạc tướng: tướng võ"
     ]
    },
    {
     "label": "Chiềng chạ",
+    "icon": "🏘️",
     "children": [
      "Bồ chính"
     ]
    },
    {
     "label": "Đặc điểm",
+    "icon": "🧬",
     "children": [
      "Cha truyền con nối",
      "Dấu ấn thị tộc"
     ]
+   }
+  ],
+  "case": {
+   "q": "Quan Lang, Mị Nương có phải chức quan cai trị không?",
+   "a": "Không, đó là danh xưng con vua."
+  },
+  "contrast": [
+   {
+    "with": "nha-nuoc-van-lang",
+    "text": "Bài này nói bộ máy; bài kia nói chung về nhà nước Văn Lang."
    }
   ]
  },

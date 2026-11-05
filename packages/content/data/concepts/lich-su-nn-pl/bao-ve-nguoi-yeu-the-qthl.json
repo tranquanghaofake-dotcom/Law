@@ -23,10 +23,13 @@
   "mất vợ"
  ],
  "memo": {
-  "hook": "Quốc triều hình luật NHÂN VĂN: buộc quan THU NUÔI người cô quả; chồng bỏ vợ 5 THÁNG thì MẤT VỢ.",
+  "gist": "Quốc triều hình luật buộc quan địa phương nuôi người góa, mồ côi, tàn tật, và bảo vệ người vợ bị chồng bỏ rơi.",
+  "kind": "tree",
+  "hook": "Luật xưa mà có tấm lòng: không bỏ ai bên lề.",
   "tree": [
    {
     "label": "Người yếu thế",
+    "icon": "🤲",
     "children": [
      "Quan sở tại phải thu nuôi",
      "Góa, mồ côi, tàn tật"
@@ -34,6 +37,7 @@
    },
    {
     "label": "Phụ nữ",
+    "icon": "👩",
     "children": [
      "Chồng bỏ lửng vợ 5 tháng",
      "Thì mất vợ"
@@ -41,9 +45,20 @@
    },
    {
     "label": "Đánh giá",
+    "icon": "⭐",
     "children": [
      "Giá trị nhân văn nổi bật"
     ]
+   }
+  ],
+  "case": {
+   "q": "Người vợ có chồng bỏ đi biệt tăm 5 tháng, chưa có con, trình quan có xã quan làm chứng. Chị có được lấy chồng khác không?",
+   "a": "Được. Theo Điều 308, người chồng mất vợ; ai ngăn cản thì bị phạt."
+  },
+  "contrast": [
+   {
+    "with": "huong-hoa-qthl",
+    "text": "Bài này nói bảo vệ người yếu thế; hương hỏa nói chia ruộng thờ cúng khi thừa kế."
    }
   ]
  },

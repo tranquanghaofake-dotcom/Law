@@ -5,7 +5,7 @@
  "term": "Liên bang Đông Dương và bộ máy cai trị của Pháp",
  "definition": "Năm 1887, Pháp thành lập Liên bang Đông Dương, đứng đầu là Toàn quyền Đông Dương; ở Việt Nam, Nam Kỳ do Thống đốc, Bắc Kỳ do Thống sứ, Trung Kỳ do Khâm sứ người Pháp đứng đầu.",
  "plain": "LIÊN BANG ĐÔNG DƯƠNG (thành lập năm 1887; Lào sáp nhập sau) gồm ba kỳ của Việt Nam và Campuchia, Lào. TOÀN QUYỀN ĐÔNG DƯƠNG là người đứng đầu, nắm quyền hành pháp và lập quy, chịu trách nhiệm trước chính phủ Pháp. Ở từng kỳ: THỐNG ĐỐC Nam Kỳ (thuộc địa), THỐNG SỨ Bắc Kỳ, KHÂM SỨ Trung Kỳ (giám sát triều Nguyễn). Dưới là bộ máy cấp tỉnh do Công sứ (ở xứ bảo hộ) hoặc Chủ tỉnh (ở Nam Kỳ) người Pháp đứng đầu, kết hợp với quan lại người Việt. Bộ máy kết hợp cai trị trực tiếp và gián tiếp, mọi quyền lực thực tế thuộc người Pháp. Sắc lệnh 47 năm 1945 còn nhắc \"nghị định của nguyên Toàn quyền Đông Dương\", \"nguyên Thống sứ Bắc kỳ\": đây là các nguồn luật của thời kỳ này.",
- "example": "Bộ Dân luật Bắc kỳ được ban bố bằng nghị định của Thống sứ Bắc kỳ (30/3/1931) và nghị định của Toàn quyền Đông Dương (1/4/1931): cho thấy Toàn quyền, Thống sứ có quyền ban hành văn bản có giá trị luật.",
+ "example": "Bộ Dân luật Bắc kỳ được ban bằng nghị định của Thống sứ Bắc kỳ ngày 30 tháng 3 năm 1931 và của Toàn quyền Đông Dương ngày 1 tháng 4 năm 1931: hai chức này có quyền ban văn bản có giá trị luật.",
  "source": {
   "kind": "textbook",
   "cite": "Giáo trình Lịch sử nhà nước và pháp luật Việt Nam, Trường ĐH Luật Hà Nội 2025, Chương 7 — tóm lược quan điểm phổ biến, chưa đối chiếu nguyên văn"
@@ -24,27 +24,42 @@
  ],
  "note": "Thẻ dạng tóm lược giáo trình, chưa có trích nguyên văn Hiệp ước 1884 hay sắc lệnh của chính quyền Pháp; cần đối chiếu sách in.",
  "memo": {
-  "hook": "1887: Liên bang Đông Dương — TOÀN QUYỀN đứng đầu; THỐNG ĐỐC Nam, THỐNG SỨ Bắc, KHÂM SỨ Trung.",
+  "gist": "Năm 1887 Pháp lập Liên bang Đông Dương do Toàn quyền đứng đầu; Nam Kỳ Thống đốc, Bắc Kỳ Thống sứ, Trung Kỳ Khâm sứ.",
+  "kind": "ladder",
+  "hook": "Như một tập đoàn: tổng giám đốc chung, mỗi chi nhánh một quản lý mang chức danh khác.",
   "tree": [
    {
     "label": "Mốc",
+    "icon": "📅",
     "children": [
      "1887"
     ]
    },
    {
     "label": "Đứng đầu",
+    "icon": "👤",
     "children": [
      "Toàn quyền Đông Dương"
     ]
    },
    {
     "label": "Từng kỳ",
+    "icon": "🗺️",
     "children": [
      "Nam Kỳ: Thống đốc",
      "Bắc Kỳ: Thống sứ",
      "Trung Kỳ: Khâm sứ"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ai đứng đầu bộ máy cai trị của Pháp ở Bắc Kỳ?",
+   "a": "Thống sứ."
+  },
+  "contrast": [
+   {
+    "with": "che-do-bao-ho-ba-ky",
+    "text": "Liên bang Đông Dương là bộ máy chung; chế độ ba kỳ là cách chia Việt Nam."
    }
   ]
  },

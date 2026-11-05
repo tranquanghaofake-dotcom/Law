@@ -25,10 +25,13 @@
  ],
  "note": "Thẻ dạng tóm lược giáo trình, chưa có trích nguyên văn Hiệp ước 1884 hay sắc lệnh của chính quyền Pháp; cần đối chiếu sách in.",
  "memo": {
-  "hook": "Hiệp ước 1884 → CHIA ĐỂ TRỊ: Nam Kỳ THUỘC ĐỊA, Bắc và Trung Kỳ BẢO HỘ.",
+  "gist": "Hiệp ước 1884 chia nước ta làm ba: Nam Kỳ là thuộc địa, Bắc Kỳ và Trung Kỳ là xứ bảo hộ.",
+  "kind": "compare",
+  "hook": "Một nhà chia ba phòng, mỗi phòng một ổ khóa khác nhau.",
   "tree": [
    {
     "label": "Mốc",
+    "icon": "📅",
     "children": [
      "6/6/1884",
      "Nhà Nguyễn mất độc lập"
@@ -36,6 +39,7 @@
    },
    {
     "label": "Nam Kỳ",
+    "icon": "🌴",
     "children": [
      "Thuộc địa",
      "Cai trị trực tiếp"
@@ -43,6 +47,7 @@
    },
    {
     "label": "Bắc Kỳ",
+    "icon": "🏔️",
     "children": [
      "Bảo hộ",
      "Quyền thực tế ở người Pháp"
@@ -50,10 +55,21 @@
    },
    {
     "label": "Trung Kỳ",
+    "icon": "🏯",
     "children": [
      "Bảo hộ",
      "Triều Nguyễn danh nghĩa"
     ]
+   }
+  ],
+  "case": {
+   "q": "Người sinh ở Huế năm 1930 sống dưới chế độ nào?",
+   "a": "Chế độ bảo hộ, với triều Nguyễn danh nghĩa dưới sự kiểm soát của Pháp."
+  },
+  "contrast": [
+   {
+    "with": "lien-bang-dong-duong",
+    "text": "Chế độ ba kỳ là cách chia Việt Nam; Liên bang Đông Dương là bộ máy chung của Pháp gồm cả Lào, Campuchia."
    }
   ]
  },

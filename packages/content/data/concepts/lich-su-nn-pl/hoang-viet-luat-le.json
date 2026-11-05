@@ -25,37 +25,54 @@
  ],
  "note": "Thẻ dạng tóm lược giáo trình, chưa có trích nguyên văn Hoàng Việt luật lệ hay Đại Nam thực lục; cần đối chiếu sách in trước khi dùng làm tài liệu chính.",
  "memo": {
-  "hook": "Luật Gia Long 1815: 398 ĐIỀU, chép chủ yếu ĐẠI THANH LUẬT LỆ.",
+  "gist": "Hoàng Việt luật lệ, tức Luật Gia Long năm 1815, có 398 điều, chép phần lớn từ luật nhà Thanh.",
+  "kind": "tree",
+  "hook": "Bộ luật mặc áo nhà Thanh.",
   "tree": [
    {
     "label": "Mốc",
+    "icon": "📅",
     "children": [
      "1815, Gia Long"
     ]
    },
    {
     "label": "Quy mô",
+    "icon": "🔢",
     "children": [
      "398 điều"
     ]
    },
    {
     "label": "Nguồn",
+    "icon": "📚",
     "children": [
      "Đại Thanh luật lệ"
     ]
    },
    {
     "label": "Người phụ trách",
+    "icon": "👤",
     "children": [
      "Nguyễn Văn Thành"
     ]
    },
    {
     "label": "Chế định",
+    "icon": "⚖️",
     "children": [
      "Ngũ hình, thập ác, bát nghị"
     ]
+   }
+  ],
+  "case": {
+   "q": "Hoàng Việt luật lệ chịu ảnh hưởng chủ yếu từ bộ luật nào?",
+   "a": "Đại Thanh luật lệ."
+  },
+  "contrast": [
+   {
+    "with": "quoc-trieu-hinh-luat-vs-hoang-viet",
+    "text": "Bài này giới thiệu Luật Gia Long; bài kia so nó với Quốc triều hình luật."
    }
   ]
  },
