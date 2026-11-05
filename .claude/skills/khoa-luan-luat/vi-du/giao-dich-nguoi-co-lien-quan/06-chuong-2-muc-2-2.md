@@ -24,9 +24,9 @@ Thực thi các quy định này chủ yếu diễn ra qua thanh tra và xử ph
 
 ### 2.2.4. Những hạn chế rút ra
 
-(i) Chấp thuận theo hạn mức đang được thừa nhận trong thực tiễn quản lý, nhưng căn cứ duy nhất là hỏi đáp của cơ quan quản lý. Luật Doanh nghiệp không có quy định tương ứng, và câu chữ khoản 2, khoản 4 Điều 167 hướng tới từng giao dịch xác định. Hệ quả: giao dịch tuân thủ hướng dẫn của cơ quan quản lý vẫn có thể bị Tòa án tuyên vô hiệu. Ngoài ra, chưa có tiêu chuẩn tối thiểu cho nội dung một nghị quyết hạn mức (phạm vi loại giao dịch, thời hạn, phương pháp định giá, kiểm soát độc lập).
-(ii) Mẫu số "tổng giá trị tài sản" của ngưỡng 35% tại Điều 293 chưa được xác định đối với công ty mẹ. Quy định mới tại điểm d khoản 14 Điều 3 không áp dụng cho Điều 293, còn cơ quan quản lý chỉ trả lời rằng các văn bản "không có xung đột".
-(iii) Cơ chế thực thi tách rời: Ủy ban Chứng khoán Nhà nước xử phạt, còn hiệu lực giao dịch chỉ do tòa án quyết định. Trong khi đó, chưa có bản án công bố nào để định hướng.
+(i) Chấp thuận theo hạn mức đang được thừa nhận trong thực tiễn quản lý, nhưng căn cứ duy nhất là hỏi đáp của cơ quan quản lý. Luật Doanh nghiệp không có quy định tương ứng, và câu chữ khoản 2, khoản 4 Điều 167 hướng tới từng giao dịch xác định. Hệ quả: giao dịch tuân thủ hướng dẫn của cơ quan quản lý vẫn có thể bị Tòa án tuyên vô hiệu. Ngoài ra, chưa có tiêu chuẩn tối thiểu cho nội dung một nghị quyết hạn mức (phạm vi loại giao dịch, thời hạn, phương pháp định giá, kiểm soát độc lập) (xem 2.2.2).
+(ii) Mẫu số "tổng giá trị tài sản" của ngưỡng 35% tại Điều 293 chưa được xác định đối với công ty mẹ. Quy định mới tại điểm d khoản 14 Điều 3 không áp dụng cho Điều 293, còn cơ quan quản lý chỉ trả lời rằng các văn bản "không có xung đột" (xem 2.2.2).
+(iii) Cơ chế thực thi tách rời: Ủy ban Chứng khoán Nhà nước xử phạt, còn hiệu lực giao dịch chỉ do tòa án quyết định. Trong khi đó, chưa có bản án công bố nào để định hướng (xem 2.2.3).
 
 [^1]: Công ty Cổ phần Vận tải Đa phương thức Vietranstimex (2024), *Tờ trình số 09/VTX/TTr-HĐQT về việc thông qua các hợp đồng, giao dịch với người có liên quan*, tài liệu Đại hội đồng cổ đông thường niên năm 2024, https://file.fpts.com.vn/FileStore2/File/2024/06/13/VTX_2024-6-13_fdeb5bc_20240611__VTX__Cap_nhat_tai_lieu_DHDCD_2024_signed.pdf, truy cập ngày 05/11/2026.
 [^2]: Khoản 4, khoản 5 Điều 167 Luật Doanh nghiệp số 59/2020/QH14 (được sửa đổi, bổ sung bởi Luật số 03/2022/QH15 và Luật số 76/2025/QH15), theo Văn bản hợp nhất số 67/VBHN-VPQH ngày 15/8/2025.

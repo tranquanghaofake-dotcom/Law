@@ -84,3 +84,7 @@ Task 7: xong — (commit tiếp theo)
 
 ## Phiên đề 3 (Hào: "làm")
 Task 8: bắt đầu — base a48c2ba — (1) script kiểm phản chứng ở mục 'hạn chế'; (2) đề mẫu 3 mảng hình sự, thử phân tích bản án
+
+Task 8: xong — (commit này) — script kiểm `han-che-chua-phan-chung`; đề mẫu 3 `vi-du/an-treo/` (pha 0–2, 5, 7: 46/100 ở mức đề cương sơ bộ); thêm "kiểm đường ống lập pháp" + kế hoạch A/B (SKILL.md pha 1), "khoảng trống chuyển tiếp" (tim-ngach.md).
+Quyết định: dừng đề 3 trước pha 4 — vì BLHS sửa đổi chưa rõ kết quả biểu quyết — sai thì tốn viết lại toàn bộ chương 2.
+Rút kinh nghiệm: đề thô thuộc mảng hình sự bão hòa; rủi ro chính là văn bản nền đang sửa, không phải trùng đề. Khi soạn bảng văn bản từ trí nhớ suýt ghi số hiệu luật sửa đổi năm 2024 không kiểm được → đã đổi thành CẦN KIỂM.

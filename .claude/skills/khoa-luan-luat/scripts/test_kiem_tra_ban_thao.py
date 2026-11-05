@@ -104,6 +104,21 @@ class KiemTraBanThao(unittest.TestCase):
         kq = kiem_tra(van, nop=True)
         self.assertEqual(len(muc(kq, "ghi-chu-ngoac-vuong")), 0)
 
+    def test_han_che_khong_co_phan_chung(self):
+        van = ("### 2.2.4. Những hạn chế rút ra\n\n"
+               "(i) Luật chưa quy định X, nên doanh nghiệp lúng túng.\n"
+               "(ii) Thiếu tiêu chí Y; theo trả lời của Bộ Z thì…[^3]\n"
+               "(iii) Chưa có hướng dẫn W (chưa tìm thấy hướng dẫn chính thức, tìm ngày 05/11/2026).\n"
+               "(iv) Mâu thuẫn V (xem 2.2.2).\n\n"
+               "[^3]: Nguồn.")
+        v = muc(kiem_tra(van), "han-che-chua-phan-chung")
+        self.assertEqual(len(v), 1)
+        self.assertIn("(i)", v[0]["noi_dung"])
+
+    def test_ngoai_muc_han_che_khong_kiem(self):
+        van = "### 2.2.1. Bối cảnh\n\n(i) Một ý không có chú thích.\n"
+        self.assertEqual(len(muc(kiem_tra(van), "han-che-chua-phan-chung")), 0)
+
     def test_ban_sach_khong_loi_chan(self):
         van = (
             "Khoản 1 Điều 4 Luật Doanh nghiệp (Luật số 59/2020/QH14) quy định…[^1]\n\n"

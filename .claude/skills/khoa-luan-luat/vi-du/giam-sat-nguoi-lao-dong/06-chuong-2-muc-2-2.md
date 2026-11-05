@@ -18,8 +18,8 @@ Trong vụ Bărbulescu kiện Romania (Đại Hội đồng, 2017), Tòa án Nh�
 
 ### 2.2.4. Những hạn chế rút ra
 
-(i) "Biết rõ" chưa có nội dung tối thiểu. Yêu cầu ghi biện pháp giám sát vào hồ sơ đánh giá tác động trong dự thảo đã bị bỏ. Vì vậy, thực tiễn xử phạt có nguy cơ thu hẹp chuẩn này thành "đã thông báo", trong khi người lao động có thể được thông báo mà vẫn không biết dữ liệu nào bị thu, dùng vào việc gì, lưu bao lâu.
-(ii) Không có tiêu chí cần thiết và tương xứng cho yêu cầu "bảo đảm quyền, lợi ích". Hệ quả là điều khoản xử phạt tương ứng khó áp dụng thống nhất.
+(i) "Biết rõ" chưa có nội dung tối thiểu. Yêu cầu ghi biện pháp giám sát vào hồ sơ đánh giá tác động trong dự thảo đã bị bỏ. Vì vậy, thực tiễn xử phạt có nguy cơ thu hẹp chuẩn này thành "đã thông báo", trong khi người lao động có thể được thông báo mà vẫn không biết dữ liệu nào bị thu, dùng vào việc gì, lưu bao lâu (xem 2.2.1, 2.2.2).
+(ii) Không có tiêu chí cần thiết và tương xứng cho yêu cầu "bảo đảm quyền, lợi ích". Hệ quả là điều khoản xử phạt tương ứng khó áp dụng thống nhất (xem 2.2.2, 2.2.3).
 (iii) Quan hệ giữa Điều 9, điểm d khoản 1 Điều 19 và khoản 3 Điều 25 chưa được hướng dẫn. Người sử dụng lao động không rõ nên dựa vào cơ sở nào. [CẦN KIỂM: giả thuyết. Doanh nghiệp vẫn đưa điều khoản "đồng ý giám sát" vào hợp đồng lao động hoặc nội quy cho an toàn; cần khảo sát trước khi viết thành kết luận.]
 
 [^1]: Điều 9 khoản 1; Điều 19 khoản 1 điểm d; Điều 25 khoản 1 điểm b, khoản 3 điểm a Luật Bảo vệ dữ liệu cá nhân số 91/2025/QH15 ngày 26/6/2025.

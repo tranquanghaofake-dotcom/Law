@@ -137,6 +137,16 @@ def kiem_tra(van, nop=False, an_danh=None, tieu_de_khac=None, nguyen_van=None):
                  f"nhắc 'Phụ lục {so}' nhưng không có tiêu đề '# Phụ lục {so}' trong dự án")
             da_bao.add(so)
 
+    # 5b. Mỗi hạn chế (i), (ii)… trong mục "hạn chế" phải có dấu vết kiểm phản chứng:
+    #     một footnote, hoặc câu "chưa tìm thấy …", hoặc nhãn [CẦN KIỂM: phản chứng]
+    for m_muc in re.finditer(r"^#+[^\n]*h[ạa]n ch[ếe][^\n]*\n(.*?)(?=^#|\Z)", van, re.I | re.M | re.S):
+        vt_muc = m_muc.start(1)
+        for m in re.finditer(r"^\(([ivx]+)\)(.*)$", m_muc.group(1), re.M):
+            dong_hc = m.group(2)
+            if not re.search(r"\[\^[^\]]+\]|chưa tìm thấy|CẦN KIỂM|xem (mục )?\d+(\.\d+)+", dong_hc, re.I):
+                them("han-che-chua-phan-chung", "NẶNG", _dong(van, vt_muc + m.start()),
+                     f"hạn chế ({m.group(1)}) chưa có footnote, '(xem x.y.z)', 'chưa tìm thấy …' hoặc [CẦN KIỂM: phản chứng]")
+
     # 6. Trích dẫn phải có trong file nguyên văn (chống trích theo trí nhớ, sửa chữ)
     if nguyen_van is not None:
         kho = _chuan_hoa(nguyen_van)

@@ -19,6 +19,9 @@ Rút ra từ lần chạy thử: ngách tốt **ít khi** xuất hiện khi ngh�
 ## Khoảng trống thời gian (làm ngay khi lập ma trận)
 Ghi **ngày đăng** của mọi bài trong ma trận. So ngày văn bản mới nhất (luật, nghị định hướng dẫn, nghị định xử phạt) với ngày bài học thuật mới nhất. Nếu văn bản mới hơn thì phần văn bản đó thay đổi là ngách gần như chắc chắn chưa ai viết. Ví dụ chạy thử: NĐ 330/2026 ban hành 19/8/2026, bài học thuật mới nhất đăng 01/7/2026.
 
+## Khoảng trống chuyển tiếp (khi văn bản nền đang được sửa)
+Đề tài "góp ý dự thảo" mất giá trị ngay khi luật được thông qua, và giới thực hành thường viết trước. Câu hỏi **chuyển tiếp** thì ngược lại: chỉ thành cấp thiết khi luật thông qua. Hỏi: quy định mới có lợi hay bất lợi cho ai; áp dụng cho vụ đang giải quyết, bản án đã có hiệu lực ra sao; nghị quyết thi hành đã xử lý chưa; tiền lệ lần sửa trước (vd NQ 41/2017/QH14 khi sửa BLHS 2015). Ví dụ chạy thử: cơ chế "nộp tiền để hưởng án treo" trong dự thảo BLHS 2026 vừa có lợi (mở rộng án treo) vừa thêm nghĩa vụ tài sản, nên khó xếp vào khoản 3 Điều 7 BLHS.
+
 ## Phép thử một ngách (đủ 4 thì nhận)
 1. **Câu hỏi pháp lý hẹp, trả lời được trong 1 câu "có / không / có, với điều kiện…".** Ví dụ: "Đại hội đồng cổ đông chấp thuận theo hạn mức có đáp ứng khoản 4 Điều 167 không?"
 2. **Có bằng chứng vướng mắc thật** từ ≥ 1 nguồn tín hiệu ở bảng trên.
