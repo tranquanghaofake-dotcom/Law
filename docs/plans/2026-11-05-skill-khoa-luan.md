@@ -73,3 +73,4 @@ Task 6: bắt đầu — base e693567
 Nguồn mới đã kiểm: Luật 76/2025/QH15 (không sửa Điều 167, k23 Điều 4); NĐ 245/2025/NĐ-CP (k84 Điều 1 sửa k3–5 Điều 293); VBHN 67/VBHN-VPQH; SGX Rule 920; HKEX 14A.53; Directive 2017/828 Điều 9c(4)(5)(8) (EUR-Lex).
 Quyết định: dừng ở vòng 3 — vì điểm còn thiếu (dữ liệu N ≥ 20, công bố) không cải thiện được bằng viết; vòng 4 sẽ phải bịa dữ liệu — sai thì tốn: không.
 Rút kinh nghiệm: tự chấm có thiên lệch (người viết tự chấm); vòng 1 đáng lẽ phát hiện được trả lời của Bộ nếu đọc hết trang nguồn đã dẫn ngay từ đầu → skill nay bắt đọc phần "Trả lời" trước khi dẫn.
+Task 6: xong — 87b5e5a
