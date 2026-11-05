@@ -112,8 +112,22 @@ describe('promptSpeech — đọc đề/khái niệm ngay khi thẻ hiện, KHÔ
   });
   it('có Hiểu nhanh: đọc tên + Hiểu nhanh + mẹo nhớ, KHÔNG đọc nguyên văn định nghĩa', () => {
     const t = promptSpeech({ type: 'intro' }, { ...concept, memo: { gist: 'Mọi thứ có giá trị mà luật cho sở hữu.', hook: 'Nhớ vật và tiền' } } as Concept);
-    expect(t).toBe('Tài sản. Mọi thứ có giá trị mà luật cho sở hữu. Mẹo nhớ: Nhớ vật và tiền.');
+    expect(t).toBe('Tài sản. Mọi thứ có giá trị mà luật cho sở hữu. Mẹo nhớ: Nhớ vật và tiền.'); // không có tree thì không đọc hình
     expect(t).not.toContain('Tài sản là vật, tiền');
+  });
+  it('đọc cả hình theo kiểu: bậc thang, các bước, điều kiện, hai cột, cây', async () => {
+    const { diagramSpeech } = await import('$lib/ui/session/speech');
+    const tree = [{ label: 'Hiến pháp' }, { label: 'Luật', children: ['Quốc hội'] }, { label: 'Nghị định', children: ['Chính phủ', 'Thủ tướng'] }];
+    expect(diagramSpeech({ kind: 'ladder', tree })).toBe('Từ cao xuống thấp: Hiến pháp; rồi Luật, của Quốc hội; rồi Nghị định, của Chính phủ, Thủ tướng.');
+    expect(diagramSpeech({ kind: 'steps', tree })).toBe('Có ba bước. Một, Hiến pháp. Hai, Luật: Quốc hội. Ba, Nghị định: Chính phủ, Thủ tướng.');
+    expect(diagramSpeech({ kind: 'checklist', tree })).toBe('Cần đủ ba điều. Một, Hiến pháp. Hai, Luật: Quốc hội. Ba, Nghị định: Chính phủ, Thủ tướng.');
+    expect(diagramSpeech({ kind: 'compare', tree: tree.slice(1) })).toBe('So sánh. Luật: Quốc hội. Còn Nghị định: Chính phủ, Thủ tướng.');
+    expect(diagramSpeech({ kind: 'tree', tree })).toBe('Gồm ba ý. Một, Hiến pháp. Hai, Luật: Quốc hội. Ba, Nghị định: Chính phủ, Thủ tướng.');
+    expect(diagramSpeech({ hook: 'x' })).toBe('');
+  });
+  it('thẻ có Hiểu nhanh: đọc tên, Hiểu nhanh, hình, mẹo nhớ theo thứ tự', () => {
+    const t = promptSpeech({ type: 'intro' }, { ...concept, memo: { gist: 'Câu gọn.', kind: 'steps', hook: 'Mẹo', tree: [{ label: 'A' }, { label: 'B' }] } } as Concept);
+    expect(t).toBe('Tài sản. Câu gọn. Có hai bước. Một, A. Hai, B. Mẹo nhớ: Mẹo.');
   });
   it('chữ cái phương án là câu riêng "Phương án A." để giọng dựng sẵn dùng lại được cho mọi câu', async () => {
     const { sentences } = await import('$lib/fx/prosody');
