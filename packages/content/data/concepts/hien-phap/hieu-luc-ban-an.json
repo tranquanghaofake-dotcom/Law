@@ -22,25 +22,40 @@
   "nghiêm chỉnh chấp hành"
  ],
  "memo": {
-  "hook": "MỌI người TÔN TRỌNG; người HỮU QUAN CHẤP HÀNH.",
+  "gist": "Bản án đã có hiệu lực phải được mọi người tôn trọng; người liên quan phải nghiêm chỉnh chấp hành.",
+  "kind": "tree",
+  "hook": "Tiếng búa đã gõ thì mọi người phải nghe.",
   "tree": [
    {
     "label": "Áp dụng",
+    "icon": "📜",
     "children": [
      "Bản án, quyết định đã có hiệu lực pháp luật"
     ]
    },
    {
     "label": "Mọi cơ quan, tổ chức, cá nhân",
+    "icon": "🙇",
     "children": [
      "Tôn trọng"
     ]
    },
    {
     "label": "Người hữu quan",
+    "icon": "✅",
     "children": [
      "Nghiêm chỉnh chấp hành"
     ]
+   }
+  ],
+  "case": {
+   "q": "Bản án buộc công ty A trả nợ đã có hiệu lực, A không trả. Ai cưỡng chế?",
+   "a": "Cơ quan thi hành án dân sự."
+  },
+  "contrast": [
+   {
+    "with": "toa-an-vi-tri",
+    "text": "Hiệu lực bản án là kết quả; vị trí Tòa án là Tòa đứng đâu trong bộ máy."
    }
   ]
  },

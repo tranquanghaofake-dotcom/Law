@@ -21,25 +21,40 @@
   "Điều 119"
  ],
  "memo": {
-  "hook": "Hiến pháp là LUẬT MẸ: luật CƠ BẢN, hiệu lực CAO NHẤT.",
+  "gist": "Hiến pháp là luật cơ bản của nhà nước, có hiệu lực pháp lý cao nhất.",
+  "kind": "tree",
+  "hook": "Như luật mẹ: con cái không được cãi mẹ.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "📜",
     "children": [
      "Luật cơ bản"
     ]
    },
    {
     "label": "Hiệu lực",
+    "icon": "🔝",
     "children": [
      "Cao nhất"
     ]
    },
    {
     "label": "Căn cứ",
+    "icon": "📌",
     "children": [
      "Khoản 1 Điều 119"
     ]
+   }
+  ],
+  "case": {
+   "q": "Quốc hội làm một luật hạn chế quyền tự do đi lại trái Hiến pháp. Luật đó ra sao?",
+   "a": "Phải bị sửa hoặc bãi bỏ."
+  },
+  "contrast": [
+   {
+    "with": "hieu-luc-phap-ly-toi-cao",
+    "text": "Hiến pháp là văn bản; hiệu lực tối cao là vị trí của nó so với văn bản khác."
    }
   ]
  },

@@ -24,16 +24,20 @@
   "Tổng Kiểm toán do Quốc hội bầu"
  ],
  "memo": {
-  "hook": "Kiểm tiền công, ĐỘC LẬP, báo cáo QUỐC HỘI.",
+  "gist": "Kiểm toán nhà nước do Quốc hội lập, độc lập kiểm tra tài chính, tài sản công và báo cáo Quốc hội.",
+  "kind": "tree",
+  "hook": "Người kiểm tra sổ sách tiền công, báo thẳng lên Quốc hội.",
   "tree": [
    {
     "label": "Thành lập",
+    "icon": "🏛️",
     "children": [
      "Quốc hội"
     ]
    },
    {
     "label": "Hoạt động",
+    "icon": "📏",
     "children": [
      "Độc lập",
      "Chỉ tuân theo pháp luật"
@@ -41,6 +45,7 @@
    },
    {
     "label": "Kiểm toán",
+    "icon": "💰",
     "children": [
      "Tài chính công",
      "Tài sản công"
@@ -48,10 +53,21 @@
    },
    {
     "label": "Tổng Kiểm toán",
+    "icon": "👤",
     "children": [
      "Quốc hội bầu",
      "Báo cáo trước Quốc hội"
     ]
+   }
+  ],
+  "case": {
+   "q": "Kiểm toán phát hiện một bộ chi sai vốn đầu tư công. Tổng Kiểm toán báo cáo trước ai?",
+   "a": "Quốc hội."
+  },
+  "contrast": [
+   {
+    "with": "vi-tri-quoc-hoi",
+    "text": "Kiểm toán là cơ quan giúp Quốc hội giám sát tiền công."
    }
   ]
  },

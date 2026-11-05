@@ -5,7 +5,7 @@
  "term": "Vai trò lãnh đạo của Đảng Cộng sản Việt Nam",
  "definition": "Đảng Cộng sản Việt Nam - Đội tiên phong của giai cấp công nhân, đồng thời là đội tiên phong của nhân dân lao động và của dân tộc Việt Nam, đại biểu trung thành lợi ích của giai cấp công nhân, nhân dân lao động và của cả dân tộc, lấy chủ nghĩa Mác - Lê nin và tư tưởng Hồ Chí Minh làm nền tảng tư tưởng, là lực lượng lãnh đạo Nhà nước và xã hội.",
  "plain": "Điều 4 xác lập vị trí lãnh đạo của Đảng, nhưng đồng thời ràng buộc Đảng: gắn bó với Nhân dân, chịu sự giám sát của Nhân dân, chịu trách nhiệm trước Nhân dân, và tổ chức Đảng, đảng viên phải hoạt động trong khuôn khổ Hiến pháp và pháp luật.",
- "example": "Đảng đề ra chủ trương bỏ cấp huyện (Nghị quyết 60-NQ/TW 2025), nhưng để thành quy định bắt buộc thì Quốc hội phải sửa Hiến pháp (Nghị quyết 203/2025/QH15) và ban hành luật. Đảng lãnh đạo bằng đường lối; Nhà nước thể chế hóa bằng pháp luật.",
+ "example": "Đảng đề ra chủ trương bỏ cấp huyện năm 2025, nhưng để thành quy định bắt buộc thì Quốc hội phải sửa Hiến pháp (Nghị quyết 203/2025 của Quốc hội khóa 15) và ban hành luật.",
  "source": {
   "kind": "statute",
   "cite": "Điều 4 Hiến pháp 2013",
@@ -22,16 +22,20 @@
   "hoạt động trong khuôn khổ Hiến pháp và pháp luật"
  ],
  "memo": {
-  "hook": "Đảng LÃNH ĐẠO nhưng phải hoạt động TRONG KHUÔN KHỔ Hiến pháp, pháp luật.",
+  "gist": "Đảng Cộng sản Việt Nam lãnh đạo Nhà nước và xã hội, nhưng phải hoạt động trong khuôn khổ Hiến pháp và pháp luật.",
+  "kind": "tree",
+  "hook": "Người chỉ hướng cũng phải đi trên đường của luật.",
   "tree": [
    {
     "label": "Vị trí",
+    "icon": "🧭",
     "children": [
      "Lực lượng lãnh đạo Nhà nước và xã hội"
     ]
    },
    {
     "label": "Nền tảng tư tưởng",
+    "icon": "📚",
     "children": [
      "Chủ nghĩa Mác - Lênin",
      "Tư tưởng Hồ Chí Minh"
@@ -39,11 +43,22 @@
    },
    {
     "label": "Ràng buộc",
+    "icon": "📜",
     "children": [
      "Chịu giám sát của Nhân dân",
      "Chịu trách nhiệm trước Nhân dân",
      "Trong khuôn khổ Hiến pháp, pháp luật"
     ]
+   }
+  ],
+  "case": {
+   "q": "Đảng đề ra chủ trương bỏ cấp huyện. Để thành quy định bắt buộc cần gì?",
+   "a": "Quốc hội sửa Hiến pháp và ban hành luật."
+  },
+  "contrast": [
+   {
+    "with": "chu-quyen-nhan-dan",
+    "text": "Đảng lãnh đạo; quyền lực nhà nước vẫn thuộc về Nhân dân."
    }
   ]
  },

@@ -23,16 +23,20 @@
   "đôn đốc giải quyết khiếu nại, tố cáo"
  ],
  "memo": {
-  "hook": "Đại biểu HĐND đại diện Nhân dân ĐỊA PHƯƠNG.",
+  "gist": "Đại biểu Hội đồng nhân dân đại diện cho Nhân dân địa phương, tiếp xúc cử tri và đôn đốc giải quyết khiếu nại.",
+  "kind": "tree",
+  "hook": "Người đưa thư hai chiều giữa dân làng và chính quyền.",
   "tree": [
    {
     "label": "Đại diện",
+    "icon": "🗣️",
     "children": [
      "Ý chí, nguyện vọng Nhân dân địa phương"
     ]
    },
    {
     "label": "Nghĩa vụ",
+    "icon": "📋",
     "children": [
      "Tiếp xúc, báo cáo cử tri",
      "Trả lời kiến nghị",
@@ -41,10 +45,21 @@
    },
    {
     "label": "Quyền",
+    "icon": "🔑",
     "children": [
      "Chất vấn cùng cấp",
      "Kiến nghị với cơ quan địa phương"
     ]
+   }
+  ],
+  "case": {
+   "q": "Đại biểu Hội đồng nhân dân xã nhận đơn khiếu nại về chậm cấp sổ đỏ. Đại biểu phải làm gì?",
+   "a": "Xem xét, đôn đốc cơ quan có thẩm quyền giải quyết."
+  },
+  "contrast": [
+   {
+    "with": "dai-bieu-quoc-hoi",
+    "text": "Đại biểu Hội đồng nhân dân đại diện địa phương; đại biểu Quốc hội đại diện cả đơn vị bầu và cả nước."
    }
   ]
  },

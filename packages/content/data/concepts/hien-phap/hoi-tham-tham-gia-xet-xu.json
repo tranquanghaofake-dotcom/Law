@@ -23,10 +23,13 @@
   "trừ thủ tục rút gọn"
  ],
  "memo": {
-  "hook": "Có Hội thẩm ở SƠ THẨM, trừ thủ tục RÚT GỌN.",
+  "gist": "Hội thẩm đại diện Nhân dân cùng Thẩm phán xử sơ thẩm, ngang quyền khi xử; thủ tục rút gọn thì không có.",
+  "kind": "tree",
+  "hook": "Người dân ngồi cạnh quan tòa ở phiên đầu.",
   "tree": [
    {
     "label": "Hội thẩm",
+    "icon": "👥",
     "children": [
      "Đại diện Nhân dân",
      "Ngang quyền Thẩm phán khi xét xử"
@@ -34,15 +37,27 @@
    },
    {
     "label": "Áp dụng",
+    "icon": "⚖️",
     "children": [
      "Xét xử sơ thẩm"
     ]
    },
    {
     "label": "Ngoại lệ",
+    "icon": "⚡",
     "children": [
      "Thủ tục rút gọn"
     ]
+   }
+  ],
+  "case": {
+   "q": "Phiên sơ thẩm vụ án hình sự thông thường có bao nhiêu Thẩm phán và Hội thẩm?",
+   "a": "Một Thẩm phán và hai Hội thẩm nhân dân."
+  },
+  "contrast": [
+   {
+    "with": "doc-lap-xet-xu",
+    "text": "Hội thẩm là ai cùng xử; độc lập là cách xử."
    }
   ]
  },

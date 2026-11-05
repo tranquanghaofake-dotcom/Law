@@ -5,7 +5,7 @@
  "term": "Danh sách cử tri",
  "definition": "Mọi công dân có quyền bầu cử đều được ghi tên vào danh sách cử tri và được phát thẻ cử tri, trừ các trường hợp quy định tại khoản 1 Điều 30 của Luật này. Mỗi công dân chỉ được ghi tên vào một danh sách cử tri ở nơi mình thường trú hoặc tạm trú.",
  "plain": "Danh sách cử tri là \"cửa vào\" của quyền bầu cử. Nguyên tắc: ai có quyền bầu cử đều được ghi tên và phát thẻ; mỗi người chỉ ở MỘT danh sách (nơi thường trú hoặc tạm trú) để bảo đảm bình đẳng một người một phiếu. Không ghi tên: người bị Tòa án tước quyền bầu cử, người bị kết án tử hình đang chờ thi hành, người đang chấp hành án tù không được hưởng án treo, người mất năng lực hành vi dân sự (khoản 1 Điều 30). Người đang bị tạm giam, tạm giữ VẪN được bầu (khoản 5 Điều 29).",
- "example": "Sinh viên tạm trú ở Hà Nội 6 tháng, thường trú ở Nghệ An: được ghi tên ở MỘT nơi; nếu ghi ở nơi tạm trú (chưa đủ 12 tháng) thì bầu đại biểu Quốc hội và Hội đồng nhân dân cấp tỉnh (khoản 3 Điều 29).",
+ "example": "Sinh viên tạm trú ở Hà Nội 6 tháng, thường trú ở Nghệ An: chỉ được ghi tên ở một nơi; nếu ghi ở nơi tạm trú chưa đủ 12 tháng thì chỉ bầu đại biểu Quốc hội và Hội đồng nhân dân cấp tỉnh.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1, khoản 2 Điều 29 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (sửa đổi, bổ sung năm 2025)",
@@ -25,10 +25,13 @@
  ],
  "note": "Luật 83/2025/QH15 (hiệu lực 01/7/2025) bỏ cấp huyện khỏi các quy định về danh sách cử tri (Điều 29, 30), theo mô hình chính quyền địa phương 2 cấp. Giáo trình in trước 2025 còn nhắc Hội đồng nhân dân cấp huyện.",
  "memo": {
-  "hook": "Mỗi người chỉ ở MỘT danh sách cử tri.",
+  "gist": "Ai có quyền bầu cử đều được ghi tên vào một danh sách cử tri duy nhất, ở nơi thường trú hoặc tạm trú.",
+  "kind": "tree",
+  "hook": "Một người một tên trong sổ, không ghi đôi.",
   "tree": [
    {
     "label": "Nguyên tắc",
+    "icon": "📋",
     "children": [
      "Ai có quyền bầu cử đều được ghi tên",
      "Được phát thẻ cử tri"
@@ -36,6 +39,7 @@
    },
    {
     "label": "Ở đâu",
+    "icon": "📍",
     "children": [
      "Một danh sách",
      "Nơi thường trú hoặc tạm trú"
@@ -43,6 +47,7 @@
    },
    {
     "label": "Không ghi tên",
+    "icon": "🚫",
     "children": [
      "Bị Tòa án tước quyền bầu cử",
      "Đang chấp hành án tù",
@@ -51,9 +56,20 @@
    },
    {
     "label": "Vẫn được bầu",
+    "icon": "✅",
     "children": [
      "Người đang bị tạm giam, tạm giữ"
     ]
+   }
+  ],
+  "case": {
+   "q": "Sinh viên tạm trú ở Hà Nội 6 tháng, thường trú ở Nghệ An. Được ghi tên ở mấy danh sách cử tri?",
+   "a": "Chỉ một nơi."
+  },
+  "contrast": [
+   {
+    "with": "quyen-bau-cu-ung-cu",
+    "text": "Danh sách cử tri là sổ ghi tên; quyền bầu cử là ai được bầu."
    }
   ]
  },

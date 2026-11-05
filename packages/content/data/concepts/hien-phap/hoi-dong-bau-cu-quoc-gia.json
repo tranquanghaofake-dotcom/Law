@@ -24,10 +24,13 @@
   "15 đến 21 thành viên"
  ],
  "memo": {
-  "hook": "TỔ CHỨC bầu cử Quốc hội; CHỈ ĐẠO bầu cử HĐND.",
+  "gist": "Cơ quan do Quốc hội lập, tổ chức bầu cử đại biểu Quốc hội và chỉ đạo bầu cử Hội đồng nhân dân các cấp.",
+  "kind": "tree",
+  "hook": "Ban tổ chức cuộc thi lớn nhất cả nước.",
   "tree": [
    {
     "label": "Thành lập",
+    "icon": "🏛️",
     "children": [
      "Quốc hội",
      "Lần đầu hiến định năm 2013"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Nhiệm vụ",
+    "icon": "📋",
     "children": [
      "Tổ chức bầu cử đại biểu Quốc hội",
      "Chỉ đạo, hướng dẫn bầu cử Hội đồng nhân dân"
@@ -42,10 +46,21 @@
    },
    {
     "label": "Tổ chức",
+    "icon": "👥",
     "children": [
      "15–21 thành viên",
      "Tập thể, đa số"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ai xác nhận tư cách người trúng cử đại biểu Quốc hội?",
+   "a": "Hội đồng bầu cử quốc gia."
+  },
+  "contrast": [
+   {
+    "with": "hiep-thuong-gioi-thieu-ung-cu",
+    "text": "Hội đồng tổ chức cuộc bầu; Mặt trận hiệp thương chọn người ứng cử."
    }
   ]
  },

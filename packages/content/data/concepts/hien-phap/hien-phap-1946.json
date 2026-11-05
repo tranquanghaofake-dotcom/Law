@@ -26,10 +26,13 @@
  ],
  "note": "Hiến pháp đã hết hiệu lực; học để hiểu lịch sử lập hiến, không áp dụng như luật hiện hành.",
  "memo": {
-  "hook": "Bản ĐẦU TIÊN, sửa phải đưa toàn dân PHÚC QUYẾT.",
+  "gist": "Hiến pháp đầu tiên, thông qua năm 1946, dựa trên đoàn kết toàn dân; sửa đổi phải đưa toàn dân phúc quyết.",
+  "kind": "tree",
+  "hook": "Bản hiến pháp khai sinh, cần cả dân gật đầu mới sửa.",
   "tree": [
    {
     "label": "Thông qua",
+    "icon": "📅",
     "children": [
      "9/11/1946",
      "Quốc hội khóa I"
@@ -37,6 +40,7 @@
    },
    {
     "label": "Ba nguyên tắc",
+    "icon": "🤝",
     "children": [
      "Đoàn kết toàn dân",
      "Quyền tự do dân chủ",
@@ -45,6 +49,7 @@
    },
    {
     "label": "Bộ máy",
+    "icon": "🏛️",
     "children": [
      "Nghị viện nhân dân",
      "Chính phủ",
@@ -53,9 +58,20 @@
    },
    {
     "label": "Sửa đổi",
+    "icon": "🗳️",
     "children": [
      "Toàn dân phúc quyết"
     ]
+   }
+  ],
+  "case": {
+   "q": "Theo Hiến pháp 1946, muốn sửa Hiến pháp cần gì?",
+   "a": "Đưa toàn dân phúc quyết."
+  },
+  "contrast": [
+   {
+    "with": "hien-phap-1959",
+    "text": "1946 đoàn kết toàn dân, có phúc quyết; 1959 hiến định tập trung dân chủ, bỏ phúc quyết."
    }
   ]
  },

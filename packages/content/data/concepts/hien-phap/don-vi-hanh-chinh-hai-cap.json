@@ -5,7 +5,7 @@
  "term": "Đơn vị hành chính hai cấp",
  "definition": "Các đơn vị hành chính của nước Cộng hòa xã hội chủ nghĩa Việt Nam được tổ chức thành hai cấp, gồm tỉnh, thành phố trực thuộc trung ương và các đơn vị hành chính dưới tỉnh, thành phố trực thuộc trung ương do luật định.",
  "plain": "Từ năm 2025, đơn vị hành chính nước ta tổ chức thành HAI CẤP: cấp tỉnh (tỉnh, thành phố trực thuộc trung ương) và cấp dưới tỉnh (xã, phường, đặc khu theo Luật Tổ chức chính quyền địa phương 2025). Cấp HUYỆN kết thúc hoạt động từ 01/7/2025 (khoản 2 Điều 2 Nghị quyết 203/2025/QH15). Hiến pháp không liệt kê cụ thể tên đơn vị cấp dưới mà giao \"do luật định\".",
- "example": "Trước 2025: tỉnh → huyện → xã (3 cấp). Từ 01/7/2025: tỉnh → xã/phường/đặc khu (2 cấp). Một người dân ở xã nay làm thủ tục trực tiếp với chính quyền xã hoặc tỉnh, không còn Ủy ban nhân dân huyện.",
+ "example": "Trước năm 2025: tỉnh, huyện, xã. Từ ngày 1 tháng 7 năm 2025: tỉnh và xã, phường, đặc khu. Người dân ở xã nay làm thủ tục với chính quyền xã hoặc tỉnh, không qua huyện.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1 Điều 110 Hiến pháp 2013 (sửa đổi bởi NQ 203/2025/QH15)",
@@ -25,10 +25,13 @@
  ],
  "note": "Nghị quyết 203/2025/QH15 (hiệu lực 16/6/2025) sửa toàn bộ Điều 110: chuyển từ 3 cấp (tỉnh – huyện – xã) sang 2 cấp; khoản 2 Điều 2 Nghị quyết kết thúc hoạt động đơn vị hành chính cấp huyện từ 01/7/2025. Giáo trình in trước 2025 mô tả mô hình 3 cấp và phân định huyện, quận, thị xã, thị trấn. Phần này đã thay đổi căn bản.",
  "memo": {
-  "hook": "Từ 01/7/2025 chỉ còn TỈNH và dưới tỉnh; cấp HUYỆN kết thúc.",
+  "gist": "Từ ngày 1 tháng 7 năm 2025 chỉ còn hai cấp: tỉnh và xã, phường, đặc khu; cấp huyện kết thúc.",
+  "kind": "ladder",
+  "hook": "Bỏ tầng giữa, cầu thang chỉ còn hai bậc.",
   "tree": [
    {
     "label": "Cấp tỉnh",
+    "icon": "🏛️",
     "children": [
      "Tỉnh",
      "Thành phố trực thuộc trung ương"
@@ -36,15 +39,27 @@
    },
    {
     "label": "Dưới tỉnh",
+    "icon": "🏘️",
     "children": [
      "Do luật định: xã, phường, đặc khu"
     ]
    },
    {
     "label": "Mốc thay đổi",
+    "icon": "📅",
     "children": [
      "Cấp huyện kết thúc từ 01/7/2025"
     ]
+   }
+  ],
+  "case": {
+   "q": "Từ tháng 7 năm 2025, người dân ở xã làm thủ tục với những cấp nào?",
+   "a": "Chính quyền xã hoặc tỉnh; không còn cấp huyện."
+  },
+  "contrast": [
+   {
+    "with": "cap-chinh-quyen-dia-phuong",
+    "text": "Đơn vị hành chính là lãnh thổ; cấp chính quyền là cơ quan."
    }
   ]
  },

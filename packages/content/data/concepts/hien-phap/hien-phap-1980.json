@@ -25,16 +25,20 @@
  ],
  "note": "Hiến pháp đã hết hiệu lực; học để hiểu lịch sử lập hiến, không áp dụng như luật hiện hành.",
  "memo": {
-  "hook": "Lần đầu hiến định ĐẢNG LÃNH ĐẠO; có HỘI ĐỒNG NHÀ NƯỚC.",
+  "gist": "Hiến pháp của nước thống nhất năm 1980, lần đầu ghi vai trò lãnh đạo của Đảng, có Hội đồng Nhà nước tập thể.",
+  "kind": "tree",
+  "hook": "Nguyên thủ tập thể thay một người.",
   "tree": [
    {
     "label": "Thông qua",
+    "icon": "📅",
     "children": [
      "18/12/1980"
     ]
    },
    {
     "label": "Bối cảnh",
+    "icon": "🇻🇳",
     "children": [
      "Cả nước thống nhất",
      "Kế hoạch hóa tập trung"
@@ -42,6 +46,7 @@
    },
    {
     "label": "Điểm mới",
+    "icon": "🆕",
     "children": [
      "Đảng lãnh đạo (Điều 4)",
      "Chuyên chính vô sản"
@@ -49,10 +54,21 @@
    },
    {
     "label": "Bộ máy",
+    "icon": "🏛️",
     "children": [
      "Hội đồng Nhà nước: Chủ tịch tập thể",
      "Hội đồng Bộ trưởng"
     ]
+   }
+  ],
+  "case": {
+   "q": "Năm 1980 có chức danh Chủ tịch nước cá nhân không?",
+   "a": "Không. Hội đồng Nhà nước tập thể đảm nhận."
+  },
+  "contrast": [
+   {
+    "with": "hien-phap-1992",
+    "text": "1980 có Hội đồng Nhà nước; 1992 khôi phục Chủ tịch nước cá nhân."
    }
   ]
  },
