@@ -5,7 +5,7 @@
  "term": "Lao động là người giúp việc gia đình",
  "definition": "Lao động là người giúp việc gia đình là người lao động làm thường xuyên các công việc trong gia đình của một hoặc nhiều hộ gia đình. Các công việc trong gia đình bao gồm công việc nội trợ, quản gia, chăm sóc trẻ em, chăm sóc người bệnh, chăm sóc người già, lái xe, làm vườn và các công việc khác cho hộ gia đình nhưng không liên quan đến hoạt động thương mại. (…) Người sử dụng lao động phải giao kết hợp đồng lao động bằng văn bản với lao động là người giúp việc gia đình. Thời hạn của hợp đồng lao động đối với lao động là người giúp việc gia đình do hai bên thỏa thuận. Một bên có quyền đơn phương chấm dứt hợp đồng lao động bất kỳ khi nào nhưng phải báo trước ít nhất 15 ngày.",
  "plain": "Dấu hiệu: làm THƯỜNG XUYÊN; công việc TRONG GIA ĐÌNH (nội trợ, quản gia, chăm trẻ, chăm người bệnh, người già, lái xe, làm vườn); KHÔNG LIÊN QUAN HOẠT ĐỘNG THƯƠNG MẠI (người phụ bán hàng tại cửa hàng của gia đình không phải người giúp việc gia đình). Hợp đồng: BẮT BUỘC văn bản; thời hạn do thỏa thuận; mỗi bên được đơn phương chấm dứt BẤT KỲ KHI NÀO, chỉ cần báo trước ít nhất 15 NGÀY (khác HĐLĐ thông thường cần căn cứ). Thỏa thuận về trả lương, giờ làm, chỗ ở (khoản 3).",
- "example": "Gia đình bà P thuê chị Q chăm cụ ông và nấu ăn hằng ngày: phải ký HĐLĐ bằng văn bản; nếu muốn chấm dứt, bà P chỉ cần báo trước 15 ngày, không cần lý do.",
+ "example": "Gia đình bà P thuê chị Q chăm cụ ông và nấu ăn hằng ngày: phải ký hợp đồng lao động bằng văn bản; nếu muốn chấm dứt, bà P chỉ cần báo trước 15 ngày, không cần lý do.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1 Điều 161; khoản 1, 2 Điều 162 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)",
@@ -23,10 +23,13 @@
   "báo trước ít nhất 15 ngày"
  ],
  "memo": {
-  "hook": "Việc TRONG NHÀ, THƯỜNG XUYÊN, KHÔNG thương mại; báo trước 15 ngày là chấm dứt được.",
+  "gist": "Người giúp việc gia đình làm thường xuyên việc nhà cho hộ gia đình như nấu ăn, trông trẻ, chăm người già, lái xe.",
+  "kind": "tree",
+  "hook": "Nhà là nơi làm việc, chủ nhà là người sử dụng lao động: vẫn phải có hợp đồng như ai.",
   "tree": [
    {
     "label": "Dấu hiệu",
+    "icon": "🏠",
     "children": [
      "Làm thường xuyên",
      "Công việc trong gia đình",
@@ -35,6 +38,7 @@
    },
    {
     "label": "Công việc",
+    "icon": "🧹",
     "children": [
      "Nội trợ, quản gia",
      "Chăm trẻ, người bệnh, người già",
@@ -43,10 +47,21 @@
    },
    {
     "label": "Hợp đồng",
+    "icon": "📝",
     "children": [
      "Bắt buộc bằng văn bản",
      "Chấm dứt bất kỳ lúc nào, báo trước 15 ngày"
     ]
+   }
+  ],
+  "case": {
+   "q": "Bà P thuê chị Q chăm cụ ông hằng ngày. Bà muốn chấm dứt hợp đồng thì cần gì?",
+   "a": "Báo trước 15 ngày, không cần nêu lý do."
+  },
+  "contrast": [
+   {
+    "with": "nghiem-cam-voi-giup-viec",
+    "text": "Bài này nói ai là người giúp việc; bài kia nói chủ nhà không được làm gì với họ."
    }
   ]
  },

@@ -22,10 +22,13 @@
   "giữ giấy tờ tùy thân"
  ],
  "memo": {
-  "hook": "Ba điều cấm: NGƯỢC ĐÃI, GIAO VIỆC NGOÀI HỢP ĐỒNG, GIỮ GIẤY TỜ.",
+  "gist": "Chủ nhà không được ngược đãi, quấy rối, ép làm việc, giao việc ngoài hợp đồng hay giữ giấy tờ của người giúp việc.",
+  "kind": "checklist",
+  "hook": "Ba lằn ranh đỏ: thân thể, phạm vi công việc, căn cước.",
   "tree": [
    {
     "label": "Bạo lực, xâm hại",
+    "icon": "✋",
     "children": [
      "Ngược đãi",
      "Quấy rối tình dục",
@@ -34,15 +37,27 @@
    },
    {
     "label": "Ngoài hợp đồng",
+    "icon": "📄",
     "children": [
      "Giao việc không theo hợp đồng"
     ]
    },
    {
     "label": "Giấy tờ",
+    "icon": "🪪",
     "children": [
      "Giữ giấy tờ tùy thân"
     ]
+   }
+  ],
+  "case": {
+   "q": "Chủ nhà giữ căn cước của người giúp việc \"để tránh bỏ trốn\". Có vi phạm không?",
+   "a": "Có. Giữ giấy tờ tùy thân của người giúp việc là hành vi bị cấm."
+  },
+  "contrast": [
+   {
+    "with": "giup-viec-gia-dinh",
+    "text": "Bài này nói chủ nhà không được làm gì; bài kia nói ai là người giúp việc và hợp đồng ra sao."
    }
   ]
  },

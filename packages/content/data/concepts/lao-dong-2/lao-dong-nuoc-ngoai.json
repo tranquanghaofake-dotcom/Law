@@ -5,7 +5,7 @@
  "term": "Điều kiện người lao động nước ngoài làm việc tại Việt Nam",
  "definition": "Người lao động nước ngoài làm việc tại Việt Nam là người có quốc tịch nước ngoài và phải đáp ứng các điều kiện sau đây: a) Đủ 18 tuổi trở lên và có năng lực hành vi dân sự đầy đủ; b) Có trình độ chuyên môn, kỹ thuật, tay nghề, kinh nghiệm làm việc; có đủ sức khỏe theo quy định của Bộ trưởng Bộ Y tế; c) Không phải là người đang trong thời gian chấp hành hình phạt hoặc chưa được xóa án tích hoặc đang trong thời gian bị truy cứu trách nhiệm hình sự theo quy định của pháp luật nước ngoài hoặc pháp luật Việt Nam; d) Có giấy phép lao động do cơ quan nhà nước có thẩm quyền của Việt Nam cấp, trừ trường hợp quy định tại Điều 154 của Bộ luật này.",
  "plain": "Bốn điều kiện: đủ 18 tuổi, năng lực hành vi dân sự đầy đủ; có trình độ, tay nghề, kinh nghiệm, sức khỏe; không đang chấp hành hình phạt, chưa xóa án tích hoặc bị truy cứu TNHS; có GIẤY PHÉP LAO ĐỘNG (trừ trường hợp miễn tại Điều 154, ví dụ chủ sở hữu, thành viên góp vốn có giá trị theo quy định của Chính phủ; người nước ngoài kết hôn với người Việt Nam và sinh sống tại Việt Nam…). Thời hạn HĐLĐ không vượt quá thời hạn giấy phép lao động (khoản 2). Người sử dụng lao động chỉ được tuyển người nước ngoài làm vị trí quản lý, điều hành, chuyên gia, lao động kỹ thuật mà lao động Việt Nam chưa đáp ứng (Điều 152).",
- "example": "Công ty Việt Nam tuyển một kỹ sư Hàn Quốc 30 tuổi: kỹ sư phải có giấy phép lao động; HĐLĐ không được dài hơn thời hạn giấy phép (tối đa 02 năm).",
+ "example": "Công ty Việt Nam tuyển một kỹ sư Hàn Quốc 30 tuổi: kỹ sư phải có giấy phép lao động; hợp đồng không được dài hơn thời hạn giấy phép (tối đa 2 năm).",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1 Điều 151 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)",
@@ -24,10 +24,13 @@
   "có giấy phép lao động"
  ],
  "memo": {
-  "hook": "Bốn điều kiện, quan trọng nhất là GIẤY PHÉP LAO ĐỘNG.",
+  "gist": "Người nước ngoài làm việc ở Việt Nam phải đủ 18 tuổi, có tay nghề, sức khỏe, lý lịch sạch và giấy phép lao động.",
+  "kind": "checklist",
+  "hook": "Như xin visa du học: thiếu một món là bị trả hồ sơ.",
   "tree": [
    {
     "label": "Điều kiện",
+    "icon": "✅",
     "children": [
      "Đủ 18 tuổi, năng lực hành vi đầy đủ",
      "Trình độ, tay nghề, sức khỏe",
@@ -37,15 +40,31 @@
    },
    {
     "label": "Ngoại lệ",
+    "icon": "🆓",
     "children": [
      "Trường hợp miễn giấy phép"
     ]
    },
    {
     "label": "Hợp đồng",
+    "icon": "📝",
     "children": [
      "Không quá thời hạn giấy phép"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty tuyển kỹ sư Hàn Quốc, giấy phép lao động hạn 2 năm. Có được ký hợp đồng 3 năm không?",
+   "a": "Không. Hợp đồng không được dài hơn thời hạn giấy phép lao động."
+  },
+  "contrast": [
+   {
+    "with": "giay-phep-lao-dong",
+    "text": "Điều kiện lao động nước ngoài là cả danh sách; giấy phép lao động chỉ là một mục trong đó."
+   },
+   {
+    "with": "nld-di-lam-viec-nuoc-ngoai",
+    "text": "Bài này nói người nước ngoài vào Việt Nam làm; bài kia nói người Việt ra nước ngoài làm."
    }
   ]
  },

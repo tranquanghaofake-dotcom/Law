@@ -5,7 +5,7 @@
  "term": "Lao động chưa thành niên",
  "definition": "Lao động chưa thành niên là người lao động chưa đủ 18 tuổi. Người từ đủ 15 tuổi đến chưa đủ 18 tuổi không được làm công việc hoặc làm việc ở nơi làm việc quy định tại Điều 147 của Bộ luật này. Người từ đủ 13 tuổi đến chưa đủ 15 tuổi chỉ được làm công việc nhẹ theo danh mục do Bộ trưởng Bộ Lao động – Thương binh và Xã hội ban hành. Người chưa đủ 13 tuổi chỉ được làm các công việc theo quy định tại khoản 3 Điều 145 của Bộ luật này.",
  "plain": "Ba nhóm tuổi: 15–dưới 18 (làm việc nhưng cấm công việc, nơi làm việc ở Điều 147); 13–dưới 15 (chỉ CÔNG VIỆC NHẸ theo danh mục); dưới 13 (chỉ nghệ thuật, thể dục thể thao… không tổn hại phát triển — khoản 3 Điều 145). Với người chưa đủ 15 tuổi: HĐLĐ BẰNG VĂN BẢN ký với cả người đó và người đại diện theo pháp luật; giờ làm không ảnh hưởng học tập; khám sức khỏe 06 tháng/lần (Điều 145). Thời giờ làm việc: dưới 15 tuổi không quá 04 giờ/ngày, 20 giờ/tuần; 15–18 tuổi không quá 08 giờ/ngày, 40 giờ/tuần (Điều 146). Tên Bộ Lao động – Thương binh và Xã hội giữ nguyên theo văn bản (chức năng nay thuộc Bộ Nội vụ).",
- "example": "Một quán cà phê nhận em M 14 tuổi rửa ly trong dịp hè: chỉ hợp pháp nếu công việc thuộc danh mục công việc nhẹ, có HĐLĐ bằng văn bản ký với cả em M và cha mẹ, không quá 04 giờ/ngày.",
+ "example": "Một quán cà phê nhận em M 14 tuổi rửa ly dịp hè: chỉ hợp pháp nếu là việc nhẹ trong danh mục, có hợp đồng bằng văn bản ký với cả em M và cha mẹ, không quá 4 giờ mỗi ngày.",
  "source": {
   "kind": "statute",
   "cite": "Điều 143 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)",
@@ -23,37 +23,54 @@
   "HĐLĐ văn bản với người đại diện"
  ],
  "memo": {
-  "hook": "Ba mốc tuổi: 15–18 làm được (trừ việc cấm), 13–15 chỉ VIỆC NHẸ, dưới 13 rất hạn chế.",
+  "gist": "Người lao động dưới 18 tuổi; càng nhỏ tuổi càng bị giới hạn việc được làm.",
+  "kind": "ladder",
+  "hook": "Như bậc cầu thang tuổi: lên càng cao càng được làm nhiều, dưới 13 gần như đứng yên.",
   "tree": [
    {
     "label": "Định nghĩa",
+    "icon": "👦",
     "children": [
      "Chưa đủ 18 tuổi"
     ]
    },
    {
     "label": "15 đến dưới 18",
+    "icon": "🧑",
     "children": [
      "Được làm, trừ việc ở Điều 147"
     ]
    },
    {
     "label": "13 đến dưới 15",
+    "icon": "🧒",
     "children": [
      "Chỉ công việc nhẹ theo danh mục"
     ]
    },
    {
     "label": "Dưới 13",
+    "icon": "👶",
     "children": [
      "Theo khoản 3 Điều 145"
     ]
    },
    {
     "label": "Dưới 15",
+    "icon": "📝",
     "children": [
      "Hợp đồng văn bản, có người đại diện"
     ]
+   }
+  ],
+  "case": {
+   "q": "Quán cà phê nhận em M 14 tuổi rửa ly dịp hè, làm 6 giờ mỗi ngày. Có hợp pháp không?",
+   "a": "Không. Người dưới 15 tuổi chỉ làm việc nhẹ, không quá 4 giờ mỗi ngày."
+  },
+  "contrast": [
+   {
+    "with": "nguoi-lao-dong-cao-tuoi",
+    "text": "Lao động chưa thành niên là dưới 18 tuổi; người lao động cao tuổi là đã quá tuổi nghỉ hưu mà vẫn làm."
    }
   ]
  },

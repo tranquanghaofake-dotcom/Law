@@ -5,7 +5,7 @@
  "term": "Người lao động cao tuổi",
  "definition": "Người lao động cao tuổi là người tiếp tục lao động sau độ tuổi theo quy định tại khoản 2 Điều 169 của Bộ luật này. Người lao động cao tuổi có quyền thỏa thuận với người sử dụng lao động về việc rút ngắn thời giờ làm việc hằng ngày hoặc áp dụng chế độ làm việc không trọn thời gian.",
  "plain": "Mốc xác định: ĐỦ TUỔI NGHỈ HƯU theo khoản 2 Điều 169 (lộ trình đến 62 tuổi với nam năm 2028, 60 tuổi với nữ năm 2035) mà vẫn làm việc. Sử dụng (Điều 149): có thể thỏa thuận giao kết NHIỀU LẦN HĐLĐ XÁC ĐỊNH THỜI HẠN; người đang hưởng lương hưu vẫn được trả lương theo HĐLĐ ngoài lương hưu; không được làm công việc nặng nhọc, độc hại ảnh hưởng xấu tới sức khỏe, trừ trường hợp bảo đảm an toàn. Khác với người lao động là người khuyết tật (Điều 158–160) và lao động chưa thành niên.",
- "example": "Ông N 63 tuổi đã nghỉ hưu, được công ty ký tiếp HĐLĐ 12 tháng làm cố vấn: ông vừa nhận lương hưu vừa nhận lương theo hợp đồng, có thể thỏa thuận làm 4 giờ/ngày.",
+ "example": "Ông N 63 tuổi đã nghỉ hưu, được công ty ký tiếp hợp đồng 12 tháng làm cố vấn: ông vừa nhận lương hưu vừa nhận lương theo hợp đồng, có thể thỏa thuận làm 4 giờ mỗi ngày.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1, 2 Điều 148 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)",
@@ -23,10 +23,13 @@
   "không trọn thời gian"
  ],
  "memo": {
-  "hook": "Quá TUỔI NGHỈ HƯU mà vẫn làm việc.",
+  "gist": "Người lao động cao tuổi là người đã qua tuổi nghỉ hưu mà vẫn tiếp tục đi làm.",
+  "kind": "tree",
+  "hook": "Như cây cổ thụ vẫn ra quả: hưởng lương hưu mà vẫn nhận lương làm việc.",
   "tree": [
    {
     "label": "Định nghĩa",
+    "icon": "👴",
     "children": [
      "Tiếp tục lao động sau tuổi nghỉ hưu",
      "Khoản 2 Điều 169"
@@ -34,6 +37,7 @@
    },
    {
     "label": "Quyền",
+    "icon": "🕐",
     "children": [
      "Rút ngắn thời giờ làm việc",
      "Làm không trọn thời gian"
@@ -41,10 +45,21 @@
    },
    {
     "label": "Sử dụng",
+    "icon": "💼",
     "children": [
      "Nhiều lần hợp đồng xác định thời hạn",
      "Vẫn nhận lương ngoài lương hưu"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ông N 63 tuổi đã nghỉ hưu, ký tiếp hợp đồng làm cố vấn. Ông có được nhận cả lương hưu lẫn lương không?",
+   "a": "Có. Ông vẫn nhận lương hưu và lương theo hợp đồng, có thể thỏa thuận làm ít giờ hơn."
+  },
+  "contrast": [
+   {
+    "with": "lao-dong-chua-thanh-nien",
+    "text": "Cao tuổi là đã qua tuổi nghỉ hưu; chưa thành niên là dưới 18 tuổi."
    }
   ]
  },

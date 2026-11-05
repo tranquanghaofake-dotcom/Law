@@ -5,7 +5,7 @@
  "term": "Bảo vệ thai sản đối với lao động nữ",
  "definition": "Người sử dụng lao động không được sử dụng người lao động làm việc ban đêm, làm thêm giờ và đi công tác xa trong trường hợp sau đây: a) Mang thai từ tháng thứ 07 hoặc từ tháng thứ 06 nếu làm việc ở vùng cao, vùng sâu, vùng xa, biên giới, hải đảo; b) Đang nuôi con dưới 12 tháng tuổi, trừ trường hợp được người lao động đồng ý.",
  "plain": "Các bảo vệ chính (Điều 137): cấm làm đêm, thêm giờ, đi công tác xa khi mang thai từ tháng 7 (tháng 6 ở vùng khó khăn) hoặc nuôi con dưới 12 tháng (trừ khi người lao động đồng ý); chuyển việc nhẹ hơn hoặc giảm 01 giờ/ngày khi làm nghề nặng nhọc, độc hại; KHÔNG được SA THẢI, đơn phương chấm dứt HĐLĐ vì lý do kết hôn, mang thai, nghỉ thai sản, nuôi con dưới 12 tháng (khoản 3); HĐLĐ hết hạn khi đang mang thai, nuôi con dưới 12 tháng thì được ưu tiên giao kết mới; được nghỉ 60 phút/ngày khi nuôi con dưới 12 tháng (khoản 4). Lưu ý: khoản 1 dùng từ \"người lao động\", không chỉ \"lao động nữ\"; lao động nữ hành kinh được nghỉ 30 phút/ngày (khoản 4).",
- "example": "Chị K mang thai tháng thứ 7, công ty yêu cầu làm ca đêm: trái khoản 1 Điều 137 (không phụ thuộc chị có đồng ý hay không, vì ngoại lệ \"được người lao động đồng ý\" chỉ áp dụng cho trường hợp nuôi con dưới 12 tháng).",
+ "example": "Chị K mang thai tháng thứ 7, công ty yêu cầu làm ca đêm: trái khoản 1 Điều 137, dù chị có đồng ý, vì ngoại lệ \"được người lao động đồng ý\" chỉ dành cho người nuôi con dưới 12 tháng.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1 Điều 137 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)",
@@ -23,10 +23,13 @@
   "không làm đêm, thêm giờ, công tác xa"
  ],
  "memo": {
-  "hook": "Mang thai từ THÁNG 7 (vùng khó: tháng 6) hoặc con dưới 12 THÁNG: không đêm, không thêm giờ, không đi xa.",
+  "gist": "Lao động nữ mang thai từ tháng 7 hoặc nuôi con dưới 12 tháng không bị giao làm đêm, làm thêm, đi xa.",
+  "kind": "checklist",
+  "hook": "Ba chữ không cho bà bầu: không thức khuya, không làm quá giờ, không đi xa nhà.",
   "tree": [
    {
     "label": "Khi nào",
+    "icon": "🤰",
     "children": [
      "Mang thai từ tháng thứ 07",
      "Tháng thứ 06 nếu vùng khó khăn",
@@ -35,6 +38,7 @@
    },
    {
     "label": "Không được giao",
+    "icon": "🚫",
     "children": [
      "Làm đêm",
      "Làm thêm giờ",
@@ -43,10 +47,21 @@
    },
    {
     "label": "Không được sa thải vì",
+    "icon": "🛡️",
     "children": [
      "Kết hôn, mang thai",
      "Nghỉ thai sản, nuôi con nhỏ"
     ]
+   }
+  ],
+  "case": {
+   "q": "Chị K mang thai tháng thứ 7 và đồng ý làm ca đêm. Công ty có được xếp ca đêm cho chị không?",
+   "a": "Không. Ngoại lệ \"người lao động đồng ý\" chỉ áp dụng khi nuôi con dưới 12 tháng, không áp dụng khi mang thai."
+  },
+  "contrast": [
+   {
+    "with": "nghi-thai-san",
+    "text": "Bảo vệ thai sản cấm giao một số việc khi đang đi làm; nghỉ thai sản là thời gian được nghỉ hẳn khi sinh con."
    }
   ]
  },
