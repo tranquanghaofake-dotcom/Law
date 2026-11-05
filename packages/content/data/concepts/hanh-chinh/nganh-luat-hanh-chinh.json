@@ -21,6 +21,30 @@
   "bất bình đẳng",
   "khác luật dân sự"
  ],
+ "memo": {
+  "hook": "Phương pháp đặc trưng: MỆNH LỆNH – PHỤC TÙNG (bất bình đẳng).",
+  "tree": [
+   {
+    "label": "Đối tượng",
+    "children": [
+     "Quan hệ trong quản lý hành chính"
+    ]
+   },
+   {
+    "label": "Phương pháp",
+    "children": [
+     "Mệnh lệnh – phục tùng",
+     "Bất bình đẳng"
+    ]
+   },
+   {
+    "label": "Khác dân sự",
+    "children": [
+     "Dân sự: bình đẳng, thỏa thuận"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

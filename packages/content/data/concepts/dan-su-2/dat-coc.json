@@ -22,6 +22,36 @@
   "tương đương giá trị tài sản đặt cọc",
   "trừ thỏa thuận khác"
  ],
+ "memo": {
+  "hook": "Bên ĐẶT từ chối → MẤT CỌC; bên NHẬN từ chối → trả cọc + PHẠT TƯƠNG ĐƯƠNG.",
+  "tree": [
+   {
+    "label": "Mục đích",
+    "children": [
+     "Bảo đảm giao kết",
+     "Hoặc thực hiện hợp đồng"
+    ]
+   },
+   {
+    "label": "Thực hiện xong",
+    "children": [
+     "Trả lại hoặc trừ vào tiền"
+    ]
+   },
+   {
+    "label": "Bên đặt cọc từ chối",
+    "children": [
+     "Mất cọc"
+    ]
+   },
+   {
+    "label": "Bên nhận cọc từ chối",
+    "children": [
+     "Trả cọc + khoản tương đương"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

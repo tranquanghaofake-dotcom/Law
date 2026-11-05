@@ -22,6 +22,31 @@
   "50% mức giới hạn",
   "trừ luật khác"
  ],
+ "memo": {
+  "hook": "Trần 20%/NĂM; vượt thì CHỈ PHẦN VƯỢT vô hiệu; không rõ mức thì 10%/năm.",
+  "tree": [
+   {
+    "label": "Trần",
+    "children": [
+     "20%/năm",
+     "Trừ luật khác (tổ chức tín dụng)"
+    ]
+   },
+   {
+    "label": "Vượt trần",
+    "children": [
+     "Phần vượt không có hiệu lực",
+     "Hợp đồng vẫn còn"
+    ]
+   },
+   {
+    "label": "Có lãi nhưng không rõ mức",
+    "children": [
+     "50% trần = 10%/năm"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

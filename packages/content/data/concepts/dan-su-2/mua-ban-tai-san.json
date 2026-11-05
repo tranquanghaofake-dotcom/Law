@@ -21,6 +21,31 @@
   "trả tiền",
   "thuộc sở hữu người bán hoặc có quyền bán"
  ],
+ "memo": {
+  "hook": "Bán: CHUYỂN QUYỀN SỞ HỮU; mua: TRẢ TIỀN; tài sản phải của người bán hoặc người có QUYỀN BÁN.",
+  "tree": [
+   {
+    "label": "Nghĩa vụ",
+    "children": [
+     "Bên bán chuyển quyền sở hữu",
+     "Bên mua trả tiền"
+    ]
+   },
+   {
+    "label": "Tính chất",
+    "children": [
+     "Song vụ, có đền bù"
+    ]
+   },
+   {
+    "label": "Tài sản",
+    "children": [
+     "Thuộc sở hữu người bán",
+     "Hoặc người có quyền bán"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -21,6 +21,36 @@
   "thuộc quyền sở hữu",
   "bảo đảm thực hiện nghĩa vụ"
  ],
+ "memo": {
+  "hook": "Cầm cố CÓ GIAO tài sản; thế chấp KHÔNG giao.",
+  "tree": [
+   {
+    "label": "Đặc trưng",
+    "children": [
+     "Giao tài sản cho bên nhận",
+     "Tài sản thuộc sở hữu bên cầm cố"
+    ]
+   },
+   {
+    "label": "Hiệu lực",
+    "children": [
+     "Từ khi giao kết"
+    ]
+   },
+   {
+    "label": "Đối kháng",
+    "children": [
+     "Từ khi bên nhận nắm giữ"
+    ]
+   },
+   {
+    "label": "Phân biệt",
+    "children": [
+     "Thế chấp: không giao"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

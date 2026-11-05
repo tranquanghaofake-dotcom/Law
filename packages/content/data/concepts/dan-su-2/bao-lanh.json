@@ -22,6 +22,32 @@
   "đến thời hạn",
   "không có khả năng thực hiện"
  ],
+ "memo": {
+  "hook": "Bảo lãnh: NGƯỜI THỨ BA hứa trả THAY khi đến hạn bên nợ không trả.",
+  "tree": [
+   {
+    "label": "Ba bên",
+    "children": [
+     "Bên bảo lãnh (người thứ ba)",
+     "Bên nhận bảo lãnh (có quyền)",
+     "Bên được bảo lãnh (có nghĩa vụ)"
+    ]
+   },
+   {
+    "label": "Loại",
+    "children": [
+     "Biện pháp đối nhân"
+    ]
+   },
+   {
+    "label": "Phát sinh khi",
+    "children": [
+     "Đến hạn không thực hiện",
+     "Hoặc thực hiện không đúng"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -22,6 +22,30 @@
   "được lợi không có căn cứ",
   "giao cơ quan nhà nước"
  ],
+ "memo": {
+  "hook": "Chiếm hữu, được lợi KHÔNG CÓ CĂN CỨ → phải HOÀN TRẢ.",
+  "tree": [
+   {
+    "label": "Chiếm hữu, sử dụng",
+    "children": [
+     "Hoàn trả tài sản",
+     "Không tìm được chủ: giao Nhà nước"
+    ]
+   },
+   {
+    "label": "Được lợi",
+    "children": [
+     "Hoàn trả khoản lợi"
+    ]
+   },
+   {
+    "label": "Ngoại lệ",
+    "children": [
+     "Xác lập theo thời hiệu"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

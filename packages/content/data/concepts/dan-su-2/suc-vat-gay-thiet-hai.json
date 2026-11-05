@@ -22,6 +22,31 @@
   "người thứ ba hoàn toàn có lỗi",
   "liên đới"
  ],
+ "memo": {
+  "hook": "Chủ sở hữu súc vật đền; người đang chiếm hữu đền trong thời gian giữ.",
+  "tree": [
+   {
+    "label": "Ai bồi thường",
+    "children": [
+     "Chủ sở hữu",
+     "Người chiếm hữu, sử dụng",
+     "Người thứ ba hoàn toàn có lỗi"
+    ]
+   },
+   {
+    "label": "Cùng có lỗi",
+    "children": [
+     "Liên đới"
+    ]
+   },
+   {
+    "label": "Thả rông",
+    "children": [
+     "Theo tập quán, không trái luật"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

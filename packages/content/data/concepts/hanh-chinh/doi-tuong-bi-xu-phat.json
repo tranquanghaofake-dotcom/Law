@@ -23,6 +23,35 @@
   "tổ chức mọi vi phạm",
   "người nước ngoài"
  ],
+ "memo": {
+  "hook": "14–16 tuổi: chỉ vi phạm CỐ Ý; từ 16 và tổ chức: MỌI vi phạm.",
+  "tree": [
+   {
+    "label": "14 đến dưới 16",
+    "children": [
+     "Chỉ vi phạm do cố ý"
+    ]
+   },
+   {
+    "label": "Từ đủ 16",
+    "children": [
+     "Mọi vi phạm"
+    ]
+   },
+   {
+    "label": "Tổ chức",
+    "children": [
+     "Mọi vi phạm"
+    ]
+   },
+   {
+    "label": "Người nước ngoài",
+    "children": [
+     "Vi phạm trên lãnh thổ, vùng biển Việt Nam"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

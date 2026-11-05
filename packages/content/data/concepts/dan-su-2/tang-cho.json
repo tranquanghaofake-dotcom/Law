@@ -21,6 +21,31 @@
   "bên được tặng cho đồng ý nhận",
   "chuyển quyền sở hữu"
  ],
+ "memo": {
+  "hook": "Tặng cho KHÔNG ĐỀN BÙ nhưng là HỢP ĐỒNG: người nhận phải ĐỒNG Ý.",
+  "tree": [
+   {
+    "label": "Đặc điểm",
+    "children": [
+     "Không yêu cầu đền bù",
+     "Bên được tặng đồng ý nhận"
+    ]
+   },
+   {
+    "label": "Hiệu lực",
+    "children": [
+     "Động sản: khi nhận",
+     "Tài sản phải đăng ký: khi đăng ký"
+    ]
+   },
+   {
+    "label": "Phân biệt",
+    "children": [
+     "Di chúc: đơn phương"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

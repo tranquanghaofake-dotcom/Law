@@ -22,6 +22,27 @@
   "vì lợi ích người có công việc",
   "không biết hoặc biết mà không phản đối"
  ],
+ "memo": {
+  "hook": "TỰ NGUYỆN làm giúp, KHÔNG có nghĩa vụ, VÌ LỢI ÍCH người kia, họ KHÔNG PHẢN ĐỐI.",
+  "tree": [
+   {
+    "label": "Điều kiện",
+    "children": [
+     "Không có nghĩa vụ",
+     "Tự nguyện",
+     "Vì lợi ích người có công việc",
+     "Không biết hoặc không phản đối"
+    ]
+   },
+   {
+    "label": "Hậu quả",
+    "children": [
+     "Được thanh toán chi phí hợp lý",
+     "Có thể được thù lao"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

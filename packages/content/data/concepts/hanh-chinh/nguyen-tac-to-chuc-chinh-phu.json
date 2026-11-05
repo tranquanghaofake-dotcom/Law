@@ -24,6 +24,27 @@
   "tập trung dân chủ"
  ],
  "note": "Luật Tổ chức Chính phủ 63/2025/QH15 có hiệu lực từ 01/3/2025; được sửa đổi bởi Luật 137/2025/QH15 (hiệu lực 01/01/2026), Văn bản hợp nhất 27/VBHN-VPQH 2026 — Điều 1, 2, 5 không thay đổi.",
+ "memo": {
+  "hook": "Hệ thống hành chính: CHÍNH PHỦ → BỘ → UBND tỉnh, xã → cơ quan chuyên môn.",
+  "tree": [
+   {
+    "label": "Chính phủ",
+    "children": [
+     "Hành chính cao nhất",
+     "Quyền hành pháp",
+     "Chấp hành của Quốc hội"
+    ]
+   },
+   {
+    "label": "Hệ thống",
+    "children": [
+     "Bộ, cơ quan ngang bộ",
+     "Ủy ban nhân dân tỉnh, xã",
+     "Cơ quan chuyên môn"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

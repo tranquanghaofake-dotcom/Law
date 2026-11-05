@@ -21,6 +21,30 @@
   "100.000 đồng đến 2 tỷ đối với tổ chức",
   "nội thành tối đa 02 lần"
  ],
+ "memo": {
+  "hook": "Cá nhân 50 NGHÌN – 1 TỶ; tổ chức gấp ĐÔI (đến 2 tỷ).",
+  "tree": [
+   {
+    "label": "Cá nhân",
+    "children": [
+     "50.000 đồng đến 1 tỷ"
+    ]
+   },
+   {
+    "label": "Tổ chức",
+    "children": [
+     "100.000 đồng đến 2 tỷ",
+     "Gấp 2 lần cá nhân"
+    ]
+   },
+   {
+    "label": "Nội thành",
+    "children": [
+     "Có thể cao hơn, tối đa 02 lần"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

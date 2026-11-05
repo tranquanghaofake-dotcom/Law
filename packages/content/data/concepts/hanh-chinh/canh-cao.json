@@ -22,6 +22,26 @@
   "mọi vi phạm của người 14–16 tuổi",
   "bằng văn bản"
  ],
+ "memo": {
+  "hook": "Cảnh cáo bằng VĂN BẢN cho vi phạm NHẸ có giảm nhẹ, và MỌI vi phạm của người 14–16 tuổi.",
+  "tree": [
+   {
+    "label": "Áp dụng",
+    "children": [
+     "Vi phạm không nghiêm trọng",
+     "Có tình tiết giảm nhẹ",
+     "Mọi vi phạm của người 14–16 tuổi"
+    ]
+   },
+   {
+    "label": "Hình thức",
+    "children": [
+     "Bằng văn bản",
+     "Có thể không lập biên bản"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

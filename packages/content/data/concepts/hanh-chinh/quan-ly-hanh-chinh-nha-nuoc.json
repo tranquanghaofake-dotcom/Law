@@ -22,6 +22,32 @@
   "tính quyền lực nhà nước",
   "cơ quan hành chính nhà nước"
  ],
+ "memo": {
+  "hook": "Hai mặt: CHẤP HÀNH (thi hành luật) và ĐIỀU HÀNH (chỉ đạo trực tiếp).",
+  "tree": [
+   {
+    "label": "Tính chất",
+    "children": [
+     "Chấp hành",
+     "Điều hành",
+     "Chủ động sáng tạo"
+    ]
+   },
+   {
+    "label": "Đặc điểm",
+    "children": [
+     "Quyền lực nhà nước",
+     "Dưới luật"
+    ]
+   },
+   {
+    "label": "Chủ thể",
+    "children": [
+     "Cơ quan hành chính nhà nước"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -23,6 +23,31 @@
   "quản lý nhà nước trong các lĩnh vực"
  ],
  "note": "Luật 136/2025/QH15 sửa đổi Luật Tiếp công dân, Luật Khiếu nại, Luật Tố cáo có hiệu lực từ 01/7/2026; văn bản hợp nhất đã cập nhật.",
+ "memo": {
+  "hook": "TỐ CÁO: chỉ CÁ NHÂN, báo vi phạm của BẤT KỲ AI; KHIẾU NẠI: đòi quyền của MÌNH.",
+  "tree": [
+   {
+    "label": "Chủ thể",
+    "children": [
+     "Chỉ cá nhân"
+    ]
+   },
+   {
+    "label": "Đối tượng",
+    "children": [
+     "Vi phạm của bất kỳ ai",
+     "Không cần liên quan quyền mình"
+    ]
+   },
+   {
+    "label": "Hai loại",
+    "children": [
+     "Trong nhiệm vụ, công vụ",
+     "Trong quản lý nhà nước các lĩnh vực"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -22,6 +22,32 @@
   "vượt quá giới hạn phòng vệ chính đáng",
   "phụ nữ mang thai"
  ],
+ "memo": {
+  "hook": "Giảm nhẹ: KHẮC PHỤC, HỐI LỖI, VƯỢT QUÁ phòng vệ, MANG THAI, hoàn cảnh KHÓ KHĂN…",
+  "tree": [
+   {
+    "label": "Thái độ",
+    "children": [
+     "Ngăn chặn, khắc phục hậu quả",
+     "Tự khai báo, hối lỗi"
+    ]
+   },
+   {
+    "label": "Hoàn cảnh",
+    "children": [
+     "Bị kích động, bị ép buộc",
+     "Vượt quá phòng vệ, cấp thiết"
+    ]
+   },
+   {
+    "label": "Người vi phạm",
+    "children": [
+     "Phụ nữ mang thai, người già yếu",
+     "Hoàn cảnh đặc biệt khó khăn"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

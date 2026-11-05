@@ -22,6 +22,27 @@
   "cưỡng chế hỗ trợ",
   "phương pháp kinh tế tác động gián tiếp"
  ],
+ "memo": {
+  "hook": "HÌNH THỨC = làm gì; PHƯƠNG PHÁP = tác động bằng cách nào (THUYẾT PHỤC là cơ bản).",
+  "tree": [
+   {
+    "label": "Hình thức",
+    "children": [
+     "Ban hành văn bản quy phạm",
+     "Ban hành văn bản áp dụng",
+     "Hoạt động pháp lý khác"
+    ]
+   },
+   {
+    "label": "Phương pháp",
+    "children": [
+     "Thuyết phục (cơ bản)",
+     "Cưỡng chế (hỗ trợ)",
+     "Kinh tế (gián tiếp)"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -22,6 +22,32 @@
   "trả tiền thuê",
   "không chuyển quyền sở hữu"
  ],
+ "memo": {
+  "hook": "Thuê: CHỈ chuyển QUYỀN SỬ DỤNG, có THỜI HẠN, phải TRẢ TIỀN; hết hạn trả CHÍNH tài sản.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Chuyển quyền sử dụng",
+     "Không chuyển quyền sở hữu"
+    ]
+   },
+   {
+    "label": "Đặc điểm",
+    "children": [
+     "Có thời hạn",
+     "Trả tiền thuê"
+    ]
+   },
+   {
+    "label": "Phân biệt",
+    "children": [
+     "Mượn: không trả tiền",
+     "Thuê khoán: hưởng hoa lợi"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

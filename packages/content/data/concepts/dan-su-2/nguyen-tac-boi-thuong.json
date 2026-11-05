@@ -22,6 +22,32 @@
   "giảm mức bồi thường",
   "lỗi vô ý, thiệt hại quá lớn"
  ],
+ "memo": {
+  "hook": "Bồi thường TOÀN BỘ, KỊP THỜI; có thể GIẢM nếu lỗi vô ý và thiệt hại quá lớn.",
+  "tree": [
+   {
+    "label": "Nguyên tắc",
+    "children": [
+     "Toàn bộ và kịp thời",
+     "Tự do thỏa thuận mức, hình thức"
+    ]
+   },
+   {
+    "label": "Giảm mức",
+    "children": [
+     "Không lỗi hoặc lỗi vô ý",
+     "Thiệt hại quá lớn so với khả năng"
+    ]
+   },
+   {
+    "label": "Khác",
+    "children": [
+     "Thay đổi mức khi không phù hợp",
+     "Bên bị hại có lỗi thì tự chịu phần đó"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

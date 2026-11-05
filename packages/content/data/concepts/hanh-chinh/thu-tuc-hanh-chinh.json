@@ -21,6 +21,31 @@
   "công việc cụ thể",
   "cá nhân, tổ chức"
  ],
+ "memo": {
+  "hook": "Thủ tục hành chính: TRÌNH TỰ + HỒ SƠ + ĐIỀU KIỆN để giải quyết MỘT việc cụ thể.",
+  "tree": [
+   {
+    "label": "Gồm",
+    "children": [
+     "Trình tự, cách thức",
+     "Hồ sơ",
+     "Yêu cầu, điều kiện"
+    ]
+   },
+   {
+    "label": "Mục đích",
+    "children": [
+     "Giải quyết công việc cụ thể"
+    ]
+   },
+   {
+    "label": "Đối tượng",
+    "children": [
+     "Cá nhân, tổ chức"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

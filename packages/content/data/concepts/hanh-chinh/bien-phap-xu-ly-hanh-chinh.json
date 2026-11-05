@@ -22,6 +22,27 @@
   "trường giáo dưỡng, cơ sở giáo dục bắt buộc",
   "cai nghiện bắt buộc"
  ],
+ "memo": {
+  "hook": "Bốn biện pháp cho CÁ NHÂN vi phạm AN NINH, TRẬT TỰ mà chưa phải tội phạm.",
+  "tree": [
+   {
+    "label": "Biện pháp",
+    "children": [
+     "Giáo dục tại xã, phường, đặc khu",
+     "Trường giáo dưỡng (chưa thành niên)",
+     "Cơ sở giáo dục bắt buộc (từ 18)",
+     "Cai nghiện bắt buộc"
+    ]
+   },
+   {
+    "label": "Đối tượng",
+    "children": [
+     "Cá nhân",
+     "Vi phạm an ninh, trật tự"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -23,6 +23,32 @@
   "biên chế, lương ngân sách"
  ],
  "note": "Luật Cán bộ, công chức 80/2025/QH15 có hiệu lực từ 01/7/2025, thay thế Luật Cán bộ, công chức 22/2008/QH12; bỏ cấp huyện, chỉ còn trung ương, cấp tỉnh, cấp xã.",
+ "memo": {
+  "hook": "CÁN BỘ: BẦU, theo NHIỆM KỲ; CÔNG CHỨC: TUYỂN DỤNG vào VỊ TRÍ VIỆC LÀM.",
+  "tree": [
+   {
+    "label": "Cán bộ",
+    "children": [
+     "Bầu cử, phê chuẩn, bổ nhiệm",
+     "Theo nhiệm kỳ"
+    ]
+   },
+   {
+    "label": "Công chức",
+    "children": [
+     "Tuyển dụng",
+     "Vào vị trí việc làm"
+    ]
+   },
+   {
+    "label": "Chung",
+    "children": [
+     "Công dân Việt Nam",
+     "Trong biên chế, lương ngân sách"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

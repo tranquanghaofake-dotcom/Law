@@ -23,6 +23,33 @@
   "khắc phục ô nhiễm",
   "nộp lại số lợi bất hợp pháp"
  ],
+ "memo": {
+  "hook": "Khắc phục hậu quả để SỬA LẠI, không phải để TRỪNG PHẠT.",
+  "tree": [
+   {
+    "label": "Mục đích",
+    "children": [
+     "Khắc phục hậu quả vi phạm"
+    ]
+   },
+   {
+    "label": "Biện pháp",
+    "children": [
+     "Khôi phục tình trạng ban đầu",
+     "Phá dỡ công trình không phép",
+     "Khắc phục ô nhiễm",
+     "Nộp lại số lợi bất hợp pháp"
+    ]
+   },
+   {
+    "label": "Khác",
+    "children": [
+     "Tiêu hủy hàng gây hại",
+     "Cải chính thông tin sai"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

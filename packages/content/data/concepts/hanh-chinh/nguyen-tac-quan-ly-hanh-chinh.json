@@ -22,6 +22,27 @@
   "tập trung dân chủ",
   "ngành kết hợp lãnh thổ"
  ],
+ "memo": {
+  "hook": "Hai nhóm: CHÍNH TRỊ – XÃ HỘI và TỔ CHỨC – KỸ THUẬT.",
+  "tree": [
+   {
+    "label": "Chính trị – xã hội",
+    "children": [
+     "Đảng lãnh đạo",
+     "Nhân dân tham gia",
+     "Tập trung dân chủ",
+     "Pháp chế"
+    ]
+   },
+   {
+    "label": "Tổ chức – kỹ thuật",
+    "children": [
+     "Ngành kết hợp lãnh thổ",
+     "Tách quản lý nhà nước với sản xuất kinh doanh"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",
