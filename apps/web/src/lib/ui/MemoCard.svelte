@@ -26,7 +26,7 @@
       </ol>
     {:else if kind === 'checklist'}
       <ul class="memo-check" aria-label="Điều kiện">
-        {#each map.nodes as n, i (i)}<li style="--i:{i}"><span class="memo-tick" aria-hidden="true">✓</span>{@render line(n)}</li>{/each}
+        {#each map.nodes as n, i (i)}<li style="--i:{i}"><span class="memo-tick" aria-hidden="true">✓</span><span>{@render line(n)}</span></li>{/each}
       </ul>
     {:else if kind === 'steps'}
       <ol class="memo-steps" aria-label="Các bước">

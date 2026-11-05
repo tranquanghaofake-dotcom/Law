@@ -5,7 +5,7 @@
  "term": "Thời điểm có hiệu lực của văn bản quy phạm pháp luật",
  "definition": "Thời điểm có hiệu lực toàn bộ hoặc một phần văn bản quy phạm pháp luật được quy định tại văn bản đó nhưng không sớm hơn 45 ngày kể từ ngày thông qua hoặc ký ban hành đối với văn bản quy phạm pháp luật của cơ quan nhà nước ở trung ương; không sớm hơn 10 ngày kể từ ngày thông qua hoặc ký ban hành đối với văn bản quy phạm pháp luật của chính quyền địa phương.",
  "plain": "Hai mốc tối thiểu: 45 ngày (trung ương), 10 ngày (địa phương) kể từ ngày thông qua/ký ban hành — để công bố, phổ biến. Ngoại lệ: văn bản theo thủ tục rút gọn và trường hợp đặc biệt có thể có hiệu lực ngay từ ngày thông qua/ký nhưng phải đăng tải ngay (đoạn 2 khoản 1). Văn bản quy định chi tiết phải có hiệu lực cùng thời điểm văn bản được quy định chi tiết (khoản 2). Đây là điều khoản phải có trong phần hiệu lực của nghị quyết, quyết định khi soạn thảo.",
- "example": "Nghị định ký ban hành ngày 01/3 ghi \"có hiệu lực từ 15/3\": sai vì chưa đủ 45 ngày; sớm nhất là 15/4. Nghị quyết HĐND tỉnh thông qua 10/7, hiệu lực từ 20/7: hợp lệ (đủ 10 ngày).",
+ "example": "Nghị định ký ngày 1 tháng 3 mà ghi có hiệu lực từ 15 tháng 3 là sai, vì chưa đủ 45 ngày. Nghị quyết của Hội đồng nhân dân tỉnh thông qua ngày 10 tháng 7, hiệu lực từ 20 tháng 7 là hợp lệ.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1 Điều 53 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)",
@@ -27,30 +27,32 @@
  ],
  "note": "Luật Ban hành văn bản quy phạm pháp luật 64/2025/QH15 có hiệu lực từ 01/4/2025, thay thế Luật 80/2015/QH13 (sửa đổi bởi Luật 63/2020/QH14) mà đề cương HLU 2019 còn dẫn; được sửa đổi bởi Luật 87/2025/QH15 có hiệu lực từ 01/7/2025 — văn bản hợp nhất 54/VBHN-VPQH ngày 11/8/2025. Luật mới bỏ quy trình \"lập đề nghị xây dựng luật\" theo chương trình hằng năm kiểu cũ, tách \"quy trình xây dựng chính sách\" và bỏ thẩm quyền ban hành VBQPPL của cấp huyện (từ 01/7/2025). Dự án Luật Văn bản quy phạm pháp luật (thay thế) đang được Quốc hội khóa XVI xem xét, chưa có hiệu lực.",
  "memo": {
-  "hook": "Hiệu lực sớm nhất: TRUNG ƯƠNG 45 ngày, ĐỊA PHƯƠNG 10 ngày.",
+  "gist": "Văn bản luật phải chờ một thời gian mới có hiệu lực: trung ương ít nhất 45 ngày, địa phương ít nhất 10 ngày.",
+  "kind": "compare",
+  "hook": "Nhớ 45 và 10.",
   "tree": [
    {
     "label": "Trung ương",
     "children": [
-     "Không sớm hơn 45 ngày"
+     "Sớm nhất sau 45 ngày"
     ]
    },
    {
     "label": "Địa phương",
     "children": [
-     "Không sớm hơn 10 ngày"
-    ]
-   },
-   {
-    "label": "Mốc tính",
-    "children": [
-     "Ngày thông qua hoặc ký ban hành"
+     "Sớm nhất sau 10 ngày"
     ]
    },
    {
     "label": "Ngoại lệ",
     "children": [
-     "Thủ tục rút gọn: có thể ngay"
+     "Thủ tục rút gọn có thể hiệu lực ngay"
+    ]
+   },
+   {
+    "label": "Mốc tính",
+    "children": [
+     "Ngày thông qua hoặc ngày ký"
     ]
    }
   ]

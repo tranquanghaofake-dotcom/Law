@@ -5,7 +5,7 @@
  "term": "Nghị quyết của Hội đồng nhân dân cấp tỉnh",
  "definition": "Hội đồng nhân dân cấp tỉnh ban hành nghị quyết để quy định: (…) Chi tiết điều, khoản, điểm và các nội dung khác được giao trong văn bản quy phạm pháp luật của cơ quan nhà nước cấp trên; (…) Chính sách, biện pháp nhằm bảo đảm thi hành Hiến pháp, luật, văn bản quy phạm pháp luật của cơ quan nhà nước cấp trên;",
  "plain": "Ở địa phương: HĐND cấp tỉnh ban hành NGHỊ QUYẾT; UBND cấp tỉnh ban hành QUYẾT ĐỊNH (quy định chi tiết, biện pháp thi hành, biện pháp quản lý — khoản 2 Điều 21); Chủ tịch UBND cấp tỉnh ban hành QUYẾT ĐỊNH về chỉ đạo, điều hành, phân cấp (khoản 3 Điều 21 — thẩm quyền mới từ Luật 2025). Nghị quyết HĐND tỉnh còn quy định chính sách phát triển kinh tế - xã hội, ngân sách, quốc phòng, an ninh địa phương, biện pháp đặc thù, phân cấp, thí điểm (điểm c, d). Cấp huyện không còn ban hành VBQPPL; cấp xã có nghị quyết HĐND và quyết định UBND (Điều 22). Chỉ thị không còn là VBQPPL ở bất kỳ cấp nào.",
- "example": "HĐND tỉnh ban hành nghị quyết quy định mức học phí (được Luật Giáo dục giao): điểm a khoản 1 Điều 21. UBND tỉnh ban hành quyết định quy định hệ số điều chỉnh giá đất: khoản 2 Điều 21.",
+ "example": "Hội đồng nhân dân tỉnh ra nghị quyết quy định mức học phí vì Luật Giáo dục giao việc này. Ủy ban nhân dân tỉnh ra quyết định quy định hệ số điều chỉnh giá đất.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1 Điều 21 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)",
@@ -24,24 +24,27 @@
  ],
  "note": "Luật Ban hành văn bản quy phạm pháp luật 64/2025/QH15 có hiệu lực từ 01/4/2025, thay thế Luật 80/2015/QH13 (sửa đổi bởi Luật 63/2020/QH14) mà đề cương HLU 2019 còn dẫn; được sửa đổi bởi Luật 87/2025/QH15 có hiệu lực từ 01/7/2025 — văn bản hợp nhất 54/VBHN-VPQH ngày 11/8/2025. Luật mới bỏ quy trình \"lập đề nghị xây dựng luật\" theo chương trình hằng năm kiểu cũ, tách \"quy trình xây dựng chính sách\" và bỏ thẩm quyền ban hành VBQPPL của cấp huyện (từ 01/7/2025). Dự án Luật Văn bản quy phạm pháp luật (thay thế) đang được Quốc hội khóa XVI xem xét, chưa có hiệu lực.",
  "memo": {
-  "hook": "Địa phương: HĐND ra NGHỊ QUYẾT; UBND ra QUYẾT ĐỊNH.",
+  "gist": "Ở tỉnh, Hội đồng nhân dân ra nghị quyết, Ủy ban nhân dân ra quyết định, để cụ thể hóa luật tại địa phương.",
+  "kind": "compare",
+  "hook": "Hội đồng là nghị quyết, Ủy ban là quyết định.",
   "tree": [
    {
-    "label": "HĐND tỉnh: nghị quyết",
+    "label": "Hội đồng nhân dân tỉnh",
     "children": [
+     "Ra nghị quyết",
      "Chi tiết nội dung được giao",
-     "Biện pháp thi hành",
-     "Chính sách địa phương"
+     "Chính sách của địa phương"
     ]
    },
    {
-    "label": "UBND tỉnh: quyết định",
+    "label": "Ủy ban nhân dân tỉnh",
     "children": [
-     "Chi tiết, biện pháp quản lý"
+     "Ra quyết định",
+     "Chi tiết, biện pháp thi hành"
     ]
    },
    {
-    "label": "Chủ tịch UBND tỉnh",
+    "label": "Chủ tịch Ủy ban nhân dân tỉnh",
     "children": [
      "Quyết định chỉ đạo, phân cấp"
     ]

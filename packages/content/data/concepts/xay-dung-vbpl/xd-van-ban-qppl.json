@@ -5,7 +5,7 @@
  "term": "Văn bản quy phạm pháp luật",
  "definition": "Văn bản quy phạm pháp luật là văn bản có chứa quy phạm pháp luật, được ban hành đúng thẩm quyền, hình thức, trình tự, thủ tục theo quy định của Luật này.",
  "plain": "Hai nhóm dấu hiệu: NỘI DUNG có chứa quy phạm pháp luật (quy tắc xử sự chung) và HÌNH THỨC ban hành đúng thẩm quyền, hình thức, trình tự, thủ tục của Luật. Thiếu một trong hai thì không phải VBQPPL: văn bản có chứa quy phạm nhưng ban hành sai thẩm quyền, hình thức là văn bản trái pháp luật, bị kiểm tra, xử lý (khoản 4 Điều 63). Môn học dùng khái niệm \"văn bản pháp luật\" rộng hơn, gồm cả văn bản áp dụng pháp luật (quyết định xử phạt, quyết định bổ nhiệm) — loại này không do Luật này điều chỉnh.",
- "example": "Nghị định của Chính phủ quy định mức phạt vi phạm giao thông: VBQPPL. Quyết định của Chủ tịch UBND tỉnh xử phạt ông A 5 triệu đồng: văn bản áp dụng pháp luật, không phải VBQPPL dù cùng tên \"quyết định\".",
+ "example": "Nghị định quy định mức phạt vi phạm giao thông là văn bản quy phạm. Quyết định của Chủ tịch Ủy ban nhân dân tỉnh phạt ông A 5 triệu đồng là văn bản áp dụng pháp luật.",
  "source": {
   "kind": "statute",
   "cite": "Điều 2 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)",
@@ -24,27 +24,28 @@
  ],
  "note": "Luật Ban hành văn bản quy phạm pháp luật 64/2025/QH15 có hiệu lực từ 01/4/2025, thay thế Luật 80/2015/QH13 (sửa đổi bởi Luật 63/2020/QH14) mà đề cương HLU 2019 còn dẫn; được sửa đổi bởi Luật 87/2025/QH15 có hiệu lực từ 01/7/2025 — văn bản hợp nhất 54/VBHN-VPQH ngày 11/8/2025. Luật mới bỏ quy trình \"lập đề nghị xây dựng luật\" theo chương trình hằng năm kiểu cũ, tách \"quy trình xây dựng chính sách\" và bỏ thẩm quyền ban hành VBQPPL của cấp huyện (từ 01/7/2025). Dự án Luật Văn bản quy phạm pháp luật (thay thế) đang được Quốc hội khóa XVI xem xét, chưa có hiệu lực.",
  "memo": {
-  "hook": "VBQPPL cần cả NỘI DUNG (có quy phạm) lẫn HÌNH THỨC (đúng thẩm quyền, thủ tục).",
+  "gist": "Văn bản quy phạm pháp luật vừa chứa quy tắc chung, vừa được ban hành đúng thẩm quyền, hình thức và thủ tục.",
+  "kind": "checklist",
+  "hook": "Cùng tên quyết định, nhưng phạt một người là văn bản áp dụng, không phải quy phạm.",
   "tree": [
    {
     "label": "Nội dung",
     "children": [
-     "Có chứa quy phạm pháp luật"
+     "Có quy tắc chung cho nhiều người"
     ]
    },
    {
     "label": "Hình thức",
     "children": [
      "Đúng thẩm quyền",
-     "Đúng hình thức",
+     "Đúng tên loại văn bản",
      "Đúng trình tự, thủ tục"
     ]
    },
    {
-    "label": "Thiếu một",
+    "label": "Thiếu một điều",
     "children": [
-     "Không phải VBQPPL",
-     "Bị kiểm tra, xử lý"
+     "Không phải văn bản quy phạm"
     ]
    }
   ]

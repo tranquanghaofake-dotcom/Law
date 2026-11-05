@@ -5,7 +5,7 @@
  "term": "Nghị quyết quy phạm pháp luật của Quốc hội",
  "definition": "Quốc hội ban hành nghị quyết để quy định: (…) Thực hiện thí điểm một số chính sách mới thuộc thẩm quyền quyết định của Quốc hội khác với quy định của luật hiện hành; (…) Tạm ngưng, điều chỉnh hiệu lực hoặc kéo dài thời hạn áp dụng toàn bộ hoặc một phần luật, nghị quyết của Quốc hội đáp ứng yêu cầu cấp bách về phát triển kinh tế - xã hội, bảo đảm quyền con người, quyền công dân; (…) Vấn đề khác do Quốc hội quyết định.",
  "plain": "Cùng một tên \"nghị quyết\" nhưng có hai loại: nghị quyết QUY PHẠM (Điều 4: của Quốc hội, UBTVQH, Chính phủ, HĐTP TANDTC, HĐND) và nghị quyết CÁ BIỆT (phê chuẩn nhân sự, thông qua kế hoạch). Nghị quyết QPPL của Quốc hội dùng cho: thí điểm chính sách mới khác luật; tạm ngưng, điều chỉnh hiệu lực, kéo dài thời hạn áp dụng luật; vấn đề khác. Luật dùng cho nội dung ở khoản 1 Điều 10 (tổ chức bộ máy, quyền con người, chính sách cơ bản, thuế...). Khi soạn thảo: căn cứ pháp lý (Hiến pháp, Luật Tổ chức Quốc hội), các điều nội dung, điều hiệu lực và tổ chức thực hiện.",
- "example": "Nghị quyết thí điểm cơ chế đặc thù cho một thành phố (cho phép khác luật về đất đai, ngân sách): nghị quyết QPPL theo điểm a khoản 2 Điều 10. Nghị quyết bầu Chủ tịch nước: nghị quyết cá biệt.",
+ "example": "Nghị quyết cho một thành phố thí điểm cơ chế riêng khác luật đất đai, ngân sách là nghị quyết quy phạm. Nghị quyết bầu Chủ tịch nước là nghị quyết cá biệt.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 2 Điều 10 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)",
@@ -25,21 +25,22 @@
  ],
  "note": "Luật Ban hành văn bản quy phạm pháp luật 64/2025/QH15 có hiệu lực từ 01/4/2025, thay thế Luật 80/2015/QH13 (sửa đổi bởi Luật 63/2020/QH14) mà đề cương HLU 2019 còn dẫn; được sửa đổi bởi Luật 87/2025/QH15 có hiệu lực từ 01/7/2025 — văn bản hợp nhất 54/VBHN-VPQH ngày 11/8/2025. Luật mới bỏ quy trình \"lập đề nghị xây dựng luật\" theo chương trình hằng năm kiểu cũ, tách \"quy trình xây dựng chính sách\" và bỏ thẩm quyền ban hành VBQPPL của cấp huyện (từ 01/7/2025). Dự án Luật Văn bản quy phạm pháp luật (thay thế) đang được Quốc hội khóa XVI xem xét, chưa có hiệu lực.",
  "memo": {
-  "hook": "Nghị quyết QPPL của Quốc hội dùng để THÍ ĐIỂM, TẠM NGƯNG, KÉO DÀI áp dụng luật.",
+  "gist": "Quốc hội dùng nghị quyết quy phạm để thí điểm chính sách mới khác luật, hoặc để tạm ngưng, kéo dài việc áp dụng luật.",
+  "kind": "compare",
+  "hook": "Cùng tên nghị quyết: loại quy phạm áp dụng chung, loại cá biệt chỉ cho một việc.",
   "tree": [
    {
-    "label": "Dùng cho",
+    "label": "Nghị quyết quy phạm",
     "children": [
      "Thí điểm chính sách khác luật",
-     "Tạm ngưng, điều chỉnh hiệu lực",
-     "Kéo dài thời hạn áp dụng"
+     "Tạm ngưng, kéo dài áp dụng luật"
     ]
    },
    {
-    "label": "Phân biệt",
+    "label": "Nghị quyết cá biệt",
     "children": [
-     "Nghị quyết quy phạm",
-     "Nghị quyết cá biệt: nhân sự, kế hoạch"
+     "Bầu, phê chuẩn nhân sự",
+     "Thông qua kế hoạch"
     ]
    }
   ]

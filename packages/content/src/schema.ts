@@ -121,6 +121,10 @@ export const conceptSchema = z.object({
   items: z.array(itemSchema).refine((items) => items.some((i) => i.level === 1), { message: 'thiếu item bậc 1 (mcq)' })
     .refine((items) => items.some((i) => i.level === 3), { message: 'thiếu item bậc 3 (cloze)' })
     .refine((items) => items.some((i) => i.level === 4), { message: 'thiếu item bậc 4 (case hoặc truefalse)' }),
+}).superRefine((c, ctx) => {
+  // khái niệm đã có Hiểu nhanh: ví dụ hiện mặc định trên thẻ cũng phải là lời thường
+  const issue = c.memo?.gist ? plainIssue(c.example) : null;
+  if (issue) ctx.addIssue({ code: z.ZodIssueCode.custom, path: ['example'], message: `ví dụ phải là lời thường — ${issue}` });
 });
 
 export const lessonSchema = z.object({ id: slug, title: z.string().min(1), concepts: z.array(slug).min(1) });

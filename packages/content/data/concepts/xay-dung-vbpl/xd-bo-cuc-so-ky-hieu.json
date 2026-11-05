@@ -5,7 +5,7 @@
  "term": "Bố cục, số và ký hiệu văn bản quy phạm pháp luật",
  "definition": "Văn bản quy phạm pháp luật có thể được bố cục theo phần, chương, mục, tiểu mục, điều, khoản, điểm; phần, chương, mục, tiểu mục, điều phải có tên. (…) Văn bản quy phạm pháp luật phải đánh số, ký hiệu bảo đảm thể hiện rõ số thứ tự liên tục, năm ban hành, loại văn bản, cơ quan, người có thẩm quyền ban hành văn bản.",
  "plain": "Thứ bậc bố cục: phần → chương → mục → tiểu mục → điều → khoản → điểm; từ điều trở lên phải có tên, khoản và điểm không có tên. Số, ký hiệu phải thể hiện 4 yếu tố: SỐ THỨ TỰ liên tục, NĂM ban hành, LOẠI văn bản, CƠ QUAN/NGƯỜI ban hành — ví dụ 64/2025/QH15, 34/2016/NĐ-CP, 01/2025/TT-BTP. Văn bản áp dụng pháp luật không có năm trong ký hiệu (ví dụ 123/QĐ-UBND) — dấu hiệu nhận diện nhanh. Thể thức chi tiết do UBTVQH (nghị quyết) và Chính phủ quy định; văn bản hành chính theo Nghị định 30/2020/NĐ-CP.",
- "example": "Ký hiệu \"15/2024/NQ-HĐND\": số 15, năm 2024, loại nghị quyết, của HĐND → VBQPPL. Ký hiệu \"15/NQ-HĐND\" không có năm → nghị quyết cá biệt.",
+ "example": "Nghị quyết số 15 năm 2024 của Hội đồng nhân dân tỉnh có ghi năm trong số hiệu, nên là văn bản quy phạm. Nghị quyết số 15 không ghi năm là nghị quyết cá biệt.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 2 và 3 Điều 7 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)",
@@ -26,29 +26,25 @@
  ],
  "note": "Luật Ban hành văn bản quy phạm pháp luật 64/2025/QH15 có hiệu lực từ 01/4/2025, thay thế Luật 80/2015/QH13 (sửa đổi bởi Luật 63/2020/QH14) mà đề cương HLU 2019 còn dẫn; được sửa đổi bởi Luật 87/2025/QH15 có hiệu lực từ 01/7/2025 — văn bản hợp nhất 54/VBHN-VPQH ngày 11/8/2025. Luật mới bỏ quy trình \"lập đề nghị xây dựng luật\" theo chương trình hằng năm kiểu cũ, tách \"quy trình xây dựng chính sách\" và bỏ thẩm quyền ban hành VBQPPL của cấp huyện (từ 01/7/2025). Dự án Luật Văn bản quy phạm pháp luật (thay thế) đang được Quốc hội khóa XVI xem xét, chưa có hiệu lực.",
  "memo": {
-  "hook": "Số hiệu có 4 yếu tố: SỐ – NĂM – LOẠI – CƠ QUAN (vd 64/2025/QH15).",
+  "gist": "Văn bản luật chia thành phần, chương, điều, khoản, điểm; số hiệu cho biết số, năm, loại và nơi ban hành.",
+  "kind": "tree",
+  "hook": "Số hiệu có năm là văn bản quy phạm; không có năm thường là văn bản áp dụng một lần.",
   "tree": [
    {
     "label": "Bố cục",
     "children": [
-     "Phần → chương → mục → tiểu mục",
-     "Điều → khoản → điểm",
+     "Phần, chương, mục",
+     "Điều, khoản, điểm",
      "Từ điều trở lên phải có tên"
     ]
    },
    {
-    "label": "Số, ký hiệu",
+    "label": "Số hiệu gồm",
     "children": [
      "Số thứ tự",
      "Năm ban hành",
      "Loại văn bản",
      "Cơ quan ban hành"
-    ]
-   },
-   {
-    "label": "Nhận diện",
-    "children": [
-     "Văn bản áp dụng: không có năm"
     ]
    }
   ]

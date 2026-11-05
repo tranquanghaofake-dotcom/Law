@@ -46,3 +46,11 @@ describe('CompareTable', () => {
     expect(container.querySelector('.cmp')).toBeNull();
   });
 });
+
+describe('WhyPanel với khái niệm đã có Hiểu nhanh', () => {
+  it('trả lời sai: không đặt đoạn nguyên văn lên trước (không còn khối Vì sao nếu không có dễ nhầm)', () => {
+    const { container } = render(WhyPanel, { props: { concept: c('a', { memo: { gist: 'Câu ngắn.', hook: 'm' } }), item, correct: false, explain: 'x' } });
+    expect(container.querySelector('.why-quote')).toBeNull();
+    expect(container.querySelector('.why')).toBeNull();
+  });
+});

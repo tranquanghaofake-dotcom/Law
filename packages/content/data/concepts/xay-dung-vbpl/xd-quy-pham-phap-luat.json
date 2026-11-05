@@ -23,22 +23,25 @@
  ],
  "note": "Luật Ban hành văn bản quy phạm pháp luật 64/2025/QH15 có hiệu lực từ 01/4/2025, thay thế Luật 80/2015/QH13 (sửa đổi bởi Luật 63/2020/QH14) mà đề cương HLU 2019 còn dẫn; được sửa đổi bởi Luật 87/2025/QH15 có hiệu lực từ 01/7/2025 — văn bản hợp nhất 54/VBHN-VPQH ngày 11/8/2025. Luật mới bỏ quy trình \"lập đề nghị xây dựng luật\" theo chương trình hằng năm kiểu cũ, tách \"quy trình xây dựng chính sách\" và bỏ thẩm quyền ban hành VBQPPL của cấp huyện (từ 01/7/2025). Dự án Luật Văn bản quy phạm pháp luật (thay thế) đang được Quốc hội khóa XVI xem xét, chưa có hiệu lực.",
  "memo": {
-  "hook": "Quy phạm: quy tắc CHUNG, bắt buộc CHUNG, Nhà nước BẢO ĐẢM.",
+  "gist": "Quy phạm pháp luật là quy tắc chung: ai ở trong hoàn cảnh đó cũng phải theo, và Nhà nước bảo đảm thực hiện.",
+  "kind": "checklist",
+  "hook": "Phạt một người cụ thể là áp dụng luật, không phải quy phạm.",
   "tree": [
    {
-    "label": "Dấu hiệu",
+    "label": "Áp dụng chung",
     "children": [
-     "Quy tắc xử sự chung",
-     "Hiệu lực bắt buộc chung",
-     "Do chủ thể có thẩm quyền ban hành",
-     "Nhà nước bảo đảm thực hiện"
+     "Cho mọi người trong hoàn cảnh đó",
+     "Dùng nhiều lần"
     ]
    },
    {
-    "label": "Phân biệt",
-    "children": [
-     "Văn bản áp dụng: một lần, đối tượng xác định"
-    ]
+    "label": "Bắt buộc"
+   },
+   {
+    "label": "Do cơ quan có thẩm quyền ban hành"
+   },
+   {
+    "label": "Nhà nước bảo đảm thực hiện"
    }
   ]
  },

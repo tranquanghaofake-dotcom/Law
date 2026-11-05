@@ -25,20 +25,22 @@
  ],
  "note": "Luật Ban hành văn bản quy phạm pháp luật 64/2025/QH15 có hiệu lực từ 01/4/2025, thay thế Luật 80/2015/QH13 (sửa đổi bởi Luật 63/2020/QH14) mà đề cương HLU 2019 còn dẫn; được sửa đổi bởi Luật 87/2025/QH15 có hiệu lực từ 01/7/2025 — văn bản hợp nhất 54/VBHN-VPQH ngày 11/8/2025. Luật mới bỏ quy trình \"lập đề nghị xây dựng luật\" theo chương trình hằng năm kiểu cũ, tách \"quy trình xây dựng chính sách\" và bỏ thẩm quyền ban hành VBQPPL của cấp huyện (từ 01/7/2025). Dự án Luật Văn bản quy phạm pháp luật (thay thế) đang được Quốc hội khóa XVI xem xét, chưa có hiệu lực.",
  "memo": {
-  "hook": "THẨM TRA do cơ quan của QUỐC HỘI làm; hồ sơ gửi trước 45 NGÀY.",
+  "gist": "Trước khi Quốc hội bàn, một ủy ban của Quốc hội xem xét kỹ dự án luật; hồ sơ phải gửi trước 45 ngày.",
+  "kind": "tree",
+  "hook": "Thẩm tra do phía Quốc hội làm; thẩm định do phía Chính phủ làm.",
   "tree": [
    {
-    "label": "Ai",
+    "label": "Ai làm",
     "children": [
      "Hội đồng Dân tộc",
-     "Các Ủy ban của Quốc hội"
+     "Các ủy ban của Quốc hội"
     ]
    },
    {
     "label": "Hạn hồ sơ",
     "children": [
      "45 ngày trước kỳ họp Quốc hội",
-     "20 ngày trước phiên UBTVQH"
+     "20 ngày trước phiên Ủy ban thường vụ"
     ]
    },
    {

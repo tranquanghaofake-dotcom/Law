@@ -94,3 +94,15 @@ describe('memo.gist + kind — luật viết lời thường (thí điểm 05/11
     expect(conceptSchema.safeParse({ ...base, memo: { hook: 'Nhớ HIẾN PHÁP.', tree } }).success).toBe(true);
   });
 });
+
+describe('ví dụ của khái niệm đã có Hiểu nhanh cũng phải là lời thường', () => {
+  const memo = { gist: 'Câu ngắn.', hook: 'Mẹo.' };
+  it('từ chối ví dụ có viết tắt', () => {
+    const r = conceptSchema.safeParse({ ...base, memo, example: 'Nghị quyết của HĐND tỉnh.' });
+    expect(r.success).toBe(false);
+    expect(JSON.stringify(r.error?.issues)).toMatch(/ví dụ phải là lời thường/);
+  });
+  it('chấp nhận ví dụ lời thường', () => {
+    expect(conceptSchema.safeParse({ ...base, memo, example: 'Nghị quyết của Hội đồng nhân dân tỉnh.' }).success).toBe(true);
+  });
+});

@@ -25,27 +25,33 @@
  ],
  "note": "Luật Ban hành văn bản quy phạm pháp luật 64/2025/QH15 có hiệu lực từ 01/4/2025, thay thế Luật 80/2015/QH13 (sửa đổi bởi Luật 63/2020/QH14) mà đề cương HLU 2019 còn dẫn; được sửa đổi bởi Luật 87/2025/QH15 có hiệu lực từ 01/7/2025 — văn bản hợp nhất 54/VBHN-VPQH ngày 11/8/2025. Luật mới bỏ quy trình \"lập đề nghị xây dựng luật\" theo chương trình hằng năm kiểu cũ, tách \"quy trình xây dựng chính sách\" và bỏ thẩm quyền ban hành VBQPPL của cấp huyện (từ 01/7/2025). Dự án Luật Văn bản quy phạm pháp luật (thay thế) đang được Quốc hội khóa XVI xem xét, chưa có hiệu lực.",
  "memo": {
-  "hook": "Cơ quan trình TỰ SOẠN hoặc PHÂN CÔNG; Luật 2025 bỏ ban soạn thảo bắt buộc.",
+  "gist": "Cơ quan trình dự án tự soạn hoặc giao một cơ quan khác chủ trì soạn, lấy ý kiến rồi chỉnh sửa.",
+  "kind": "steps",
+  "hook": "Luật mới bỏ quy định phải lập ban soạn thảo ít nhất 9 người.",
   "tree": [
    {
-    "label": "Ai soạn",
+    "label": "Nhận việc",
     "children": [
-     "Cơ quan trình tự soạn",
-     "Hoặc phân công cơ quan chủ trì"
+     "Cơ quan trình tự soạn hoặc giao"
     ]
    },
    {
-    "label": "Nhiệm vụ",
+    "label": "Lấy ý kiến",
     "children": [
-     "Lấy ý kiến đối tượng chịu tác động",
-     "Lấy phản biện xã hội",
-     "Tiếp thu, chỉnh lý"
+     "Người chịu tác động",
+     "Các bộ, ngành liên quan"
     ]
    },
    {
-    "label": "Luật 2025",
+    "label": "Phản biện",
     "children": [
-     "Bỏ ban soạn thảo tối thiểu 9 người"
+     "Mặt trận Tổ quốc"
+    ]
+   },
+   {
+    "label": "Chỉnh sửa",
+    "children": [
+     "Tiếp thu ý kiến"
     ]
    }
   ]

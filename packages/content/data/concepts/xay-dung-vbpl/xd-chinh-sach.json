@@ -25,27 +25,32 @@
  ],
  "note": "Luật Ban hành văn bản quy phạm pháp luật 64/2025/QH15 có hiệu lực từ 01/4/2025, thay thế Luật 80/2015/QH13 (sửa đổi bởi Luật 63/2020/QH14) mà đề cương HLU 2019 còn dẫn; được sửa đổi bởi Luật 87/2025/QH15 có hiệu lực từ 01/7/2025 — văn bản hợp nhất 54/VBHN-VPQH ngày 11/8/2025. Luật mới bỏ quy trình \"lập đề nghị xây dựng luật\" theo chương trình hằng năm kiểu cũ, tách \"quy trình xây dựng chính sách\" và bỏ thẩm quyền ban hành VBQPPL của cấp huyện (từ 01/7/2025). Dự án Luật Văn bản quy phạm pháp luật (thay thế) đang được Quốc hội khóa XVI xem xét, chưa có hiệu lực.",
  "memo": {
-  "hook": "Chính sách có TRƯỚC quy phạm: VẤN ĐỀ → MỤC TIÊU → GIẢI PHÁP.",
+  "gist": "Chính sách là cách Nhà nước giải quyết một vấn đề thực tế; có chính sách trước rồi mới viết thành điều luật.",
+  "kind": "steps",
+  "hook": "Nhớ ba bước: vấn đề, mục tiêu, giải pháp.",
   "tree": [
    {
-    "label": "Bản chất",
+    "label": "Vấn đề",
     "children": [
-     "Giải pháp cụ thể của Nhà nước"
+     "Điều gì đang bất cập"
     ]
    },
    {
-    "label": "Cấu trúc",
+    "label": "Mục tiêu",
     "children": [
-     "Vấn đề thực tiễn",
-     "Mục tiêu",
-     "Giải pháp",
-     "Đối tượng tác động"
+     "Muốn đạt được điều gì"
     ]
    },
    {
-    "label": "Phù hợp",
+    "label": "Giải pháp",
     "children": [
-     "Chủ trương, đường lối của Đảng"
+     "Nhà nước sẽ làm gì"
+    ]
+   },
+   {
+    "label": "Viết thành luật",
+    "children": [
+     "Biến giải pháp thành quy định"
     ]
    }
   ]

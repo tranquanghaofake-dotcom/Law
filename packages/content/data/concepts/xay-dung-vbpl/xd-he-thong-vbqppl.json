@@ -5,7 +5,7 @@
  "term": "Hệ thống văn bản quy phạm pháp luật",
  "definition": "Hiến pháp. (…) Bộ luật, luật (sau đây gọi chung là luật), nghị quyết của Quốc hội. (…) Pháp lệnh, nghị quyết của Ủy ban Thường vụ Quốc hội; (…) Lệnh, quyết định của Chủ tịch nước. (…) Nghị định, nghị quyết của Chính phủ; (…) Quyết định của Thủ tướng Chính phủ. (…) Nghị quyết của Hội đồng Thẩm phán Tòa án nhân dân tối cao.",
  "plain": "Điều 4 liệt kê 15 nhóm theo thứ bậc hiệu lực giảm dần: Hiến pháp → luật, nghị quyết QH → pháp lệnh, nghị quyết UBTVQH → lệnh, quyết định Chủ tịch nước → nghị định, nghị quyết Chính phủ → quyết định Thủ tướng → nghị quyết HĐTP TANDTC → thông tư (Chánh án, Viện trưởng VKSNDTC, Bộ trưởng, Tổng Kiểm toán) → thông tư liên tịch → nghị quyết HĐND cấp tỉnh, quyết định UBND cấp tỉnh, quyết định Chủ tịch UBND cấp tỉnh → VBQPPL của đơn vị hành chính - kinh tế đặc biệt → nghị quyết HĐND cấp xã, quyết định UBND cấp xã. Điểm mới so với Luật 2015: thêm nghị quyết của Chính phủ, quyết định của Chủ tịch UBND cấp tỉnh; bỏ cấp huyện; chỉ thị không còn là VBQPPL.",
- "example": "Sở Tư pháp muốn biết một \"chỉ thị của Chủ tịch UBND tỉnh\" có phải VBQPPL không: không, Điều 4 không liệt kê chỉ thị; chỉ thị chỉ là văn bản hành chính dùng để đôn đốc, chỉ đạo.",
+ "example": "Chỉ thị của Chủ tịch Ủy ban nhân dân tỉnh không phải văn bản quy phạm, vì luật không đưa chỉ thị vào danh sách này. Chỉ thị chỉ dùng để đôn đốc, chỉ đạo.",
  "source": {
   "kind": "statute",
   "cite": "Điều 4 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)",
@@ -28,29 +28,42 @@
  ],
  "note": "Luật Ban hành văn bản quy phạm pháp luật 64/2025/QH15 có hiệu lực từ 01/4/2025, thay thế Luật 80/2015/QH13 (sửa đổi bởi Luật 63/2020/QH14) mà đề cương HLU 2019 còn dẫn; được sửa đổi bởi Luật 87/2025/QH15 có hiệu lực từ 01/7/2025 — văn bản hợp nhất 54/VBHN-VPQH ngày 11/8/2025. Luật mới bỏ quy trình \"lập đề nghị xây dựng luật\" theo chương trình hằng năm kiểu cũ, tách \"quy trình xây dựng chính sách\" và bỏ thẩm quyền ban hành VBQPPL của cấp huyện (từ 01/7/2025). Dự án Luật Văn bản quy phạm pháp luật (thay thế) đang được Quốc hội khóa XVI xem xét, chưa có hiệu lực.",
  "memo": {
-  "hook": "Hiệu lực giảm dần: HIẾN PHÁP → LUẬT → PHÁP LỆNH → NGHỊ ĐỊNH → THÔNG TƯ → ĐỊA PHƯƠNG.",
+  "gist": "Văn bản luật có thứ bậc: văn bản cấp dưới không được trái văn bản cấp trên, cao nhất là Hiến pháp.",
+  "kind": "ladder",
+  "hook": "Thứ tự nhớ: Hiến pháp, luật, pháp lệnh, nghị định, thông tư, rồi đến địa phương.",
   "tree": [
    {
-    "label": "Trung ương",
+    "label": "Hiến pháp"
+   },
+   {
+    "label": "Luật",
     "children": [
-     "Hiến pháp",
-     "Luật, nghị quyết Quốc hội",
-     "Pháp lệnh, nghị quyết UBTVQH",
-     "Nghị định, thông tư"
+     "Quốc hội"
     ]
    },
    {
-    "label": "Tư pháp",
+    "label": "Pháp lệnh",
     "children": [
-     "Nghị quyết Hội đồng Thẩm phán",
-     "Thông tư Chánh án, Viện trưởng"
+     "Ủy ban thường vụ Quốc hội"
     ]
    },
    {
-    "label": "Địa phương",
+    "label": "Nghị định",
     "children": [
-     "Cấp tỉnh",
-     "Cấp xã"
+     "Chính phủ, rồi quyết định của Thủ tướng"
+    ]
+   },
+   {
+    "label": "Thông tư",
+    "children": [
+     "Các bộ"
+    ]
+   },
+   {
+    "label": "Văn bản địa phương",
+    "children": [
+     "Tỉnh",
+     "Xã"
     ]
    }
   ]

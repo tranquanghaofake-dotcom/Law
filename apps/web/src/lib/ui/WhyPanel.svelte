@@ -7,12 +7,14 @@
     concept: Concept; item: StepItem; correct: boolean; explain?: string; chosen?: string; confusables?: Concept[];
   } = $props();
   const why = $derived(whyOf(concept, item, { correct, explain, chosen, confusables }));
+  // khái niệm đã có Hiểu nhanh (lời thường): không đặt đoạn nguyên văn dày đặc lên trước — nguyên văn ở "Xem thêm"
+  const plainFirst = $derived(!!concept.memo?.gist);
 </script>
 
-{#if why && !correct}
+{#if why && !correct && !(plainFirst && !why.mixup)}
   <section class="why" aria-label="Vì sao">
       <p class="why-title">Vì sao?</p>
-      {#if why.excerpt}
+      {#if why.excerpt && !plainFirst}
         <blockquote class="why-quote">{#each segments(why.excerpt.text, why.excerpt.marks) as s, k (k)}{#if s.b}<mark>{s.t}</mark>{:else}{s.t}{/if}{/each}</blockquote>
       {/if}
       {#if why.mixup}

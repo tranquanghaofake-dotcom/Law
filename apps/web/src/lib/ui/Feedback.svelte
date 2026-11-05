@@ -50,6 +50,7 @@
   {#if compareWith && !result.correct}<details class="cmp-wrap" open><summary>So sánh «{concept.term}» và «{compareWith.term}»</summary><CompareTable a={concept} b={compareWith} /></details>{/if}
   {#if retry}<p class="muted small">Vòng sửa sai: không ghi vào tiến độ nhớ.</p>{/if}
   <details class="fb-more small"><summary>Xem thêm</summary>
+    {#if concept.memo?.gist}<blockquote class="quote small">{concept.definition}</blockquote>{/if}
     {#if explain}<p>{explain}</p>{/if}
     {#if concept.example}<p><b>Ví dụ:</b> {concept.example}</p>{/if}
     {#if compareWith && result.correct}<p class="muted">So sánh «{concept.term}» và «{compareWith.term}»:</p><CompareTable a={concept} b={compareWith} />{/if}
