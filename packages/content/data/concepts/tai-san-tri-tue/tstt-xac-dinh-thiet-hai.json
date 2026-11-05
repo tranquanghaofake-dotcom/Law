@@ -26,10 +26,13 @@
  ],
  "note": "Luật Sở hữu trí tuệ 50/2005/QH11 (hiệu lực 01/7/2006) đã được sửa đổi bởi Luật 36/2009/QH12, 42/2019/QH14, 07/2022/QH15, 93/2025/QH15 và 131/2025/QH15 (hiệu lực 01/4/2026) — văn bản hợp nhất 67/VBHN-VPQH 2026; ghi chép lớp học còn dẫn Nghị định 105/2006/NĐ-CP và Nghị định 99/2013/NĐ-CP, cần tự kiểm tra hiệu lực của các nghị định này trước khi dùng.",
  "memo": {
-  "hook": "Thiệt hại TINH THẦN chỉ cho TÁC GIẢ, NGƯỜI BIỂU DIỄN; doanh nghiệp chỉ có VẬT CHẤT.",
+  "gist": "Thiệt hại do xâm phạm gồm vật chất và tinh thần; tinh thần chỉ cho tác giả, người biểu diễn.",
+  "kind": "compare",
+  "hook": "Công ty không biết buồn, chỉ biết mất tiền.",
   "tree": [
    {
     "label": "Vật chất",
+    "icon": "💸",
     "children": [
      "Tổn thất tài sản",
      "Giảm thu nhập, lợi nhuận",
@@ -39,10 +42,21 @@
    },
    {
     "label": "Tinh thần",
+    "icon": "💔",
     "children": [
      "Danh dự, nhân phẩm",
      "Chỉ tác giả, người biểu diễn"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty I bị làm giả nhãn hiệu. Có được đòi bồi thường tổn thất tinh thần không?",
+   "a": "Không. Pháp nhân chỉ đòi được thiệt hại vật chất."
+  },
+  "contrast": [
+   {
+    "with": "tstt-dinh-gia-tstt",
+    "text": "Xác định thiệt hại là tính phần mất; định giá là tính toàn bộ giá trị tài sản."
    }
   ]
  },

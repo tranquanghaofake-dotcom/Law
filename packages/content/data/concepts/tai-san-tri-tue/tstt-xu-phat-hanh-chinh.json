@@ -5,7 +5,7 @@
  "term": "Hành vi xâm phạm bị xử phạt vi phạm hành chính",
  "definition": "Tổ chức, cá nhân thực hiện một trong các hành vi xâm phạm quyền sở hữu trí tuệ sau đây bị xử phạt vi phạm hành chính: a) Xâm phạm quyền sở hữu trí tuệ gây thiệt hại cho tác giả, chủ sở hữu, người tiêu dùng hoặc cho xã hội; b) Sản xuất, nhập khẩu, tàng trữ, vận chuyển, buôn bán hàng hóa giả mạo về sở hữu trí tuệ quy định tại Điều 213 của Luật này hoặc giao cho người khác thực hiện hành vi này; c) Sản xuất, nhập khẩu, vận chuyển, buôn bán, tàng trữ tem, nhãn hoặc vật phẩm khác mang nhãn hiệu hoặc chỉ dẫn địa lý giả mạo hoặc giao cho người khác thực hiện hành vi này.",
  "plain": "Biện pháp HÀNH CHÍNH — nhanh, chi phí thấp, do thanh tra, quản lý thị trường, hải quan, công an, UBND xử lý; phù hợp khi muốn chấm dứt nhanh hành vi, tịch thu, tiêu hủy hàng giả, nhưng tiền phạt nộp ngân sách — chủ thể quyền muốn BỒI THƯỜNG vẫn phải kiện dân sự. Hồ sơ yêu cầu xử lý: đơn yêu cầu, chứng cứ quyền (văn bằng), chứng cứ xâm phạm (mẫu, ảnh, hóa đơn), kết luận giám định nếu có, giấy ủy quyền. Mức phạt, hình thức xử phạt, thẩm quyền do Chính phủ quy định (khoản 2, 3 Điều 211) — ghi chép bài giảng dẫn Nghị định 99/2013/NĐ-CP, cần kiểm tra văn bản thay thế hiện hành. Phân biệt với VI PHẠM pháp luật về SHTT (vi phạm quy định quản lý nhà nước).",
- "example": "Cửa hàng B không trả lời thư khuyến cáo; Honda nộp đơn yêu cầu Thanh tra xử lý: hành vi bán phụ tùng gắn \"Hongda\" gây thiệt hại cho chủ sở hữu → điểm a khoản 1 Điều 211; hàng bị tịch thu, tiêu hủy; muốn đòi bồi thường Honda phải kiện dân sự.",
+ "example": "Cửa hàng B không trả lời thư khuyến cáo; chủ nhãn hiệu yêu cầu Thanh tra xử lý: hàng bị tịch thu, tiêu hủy; muốn đòi bồi thường thì chủ nhãn hiệu phải kiện dân sự.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1 Điều 211 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)",
@@ -25,10 +25,13 @@
  ],
  "note": "Luật Sở hữu trí tuệ 50/2005/QH11 (hiệu lực 01/7/2006) đã được sửa đổi bởi Luật 36/2009/QH12, 42/2019/QH14, 07/2022/QH15, 93/2025/QH15 và 131/2025/QH15 (hiệu lực 01/4/2026) — văn bản hợp nhất 67/VBHN-VPQH 2026; ghi chép lớp học còn dẫn Nghị định 105/2006/NĐ-CP và Nghị định 99/2013/NĐ-CP, cần tự kiểm tra hiệu lực của các nghị định này trước khi dùng.",
  "memo": {
-  "hook": "Xử phạt hành chính NHANH, nhưng tiền phạt vào NGÂN SÁCH; muốn BỒI THƯỜNG phải kiện dân sự.",
+  "gist": "Cơ quan nhà nước phạt hành chính hành vi xâm phạm gây thiệt hại, hàng giả; nhanh nhưng không có bồi thường.",
+  "kind": "tree",
+  "hook": "Phạt tiền vào ngân sách, còn túi chủ quyền vẫn trống.",
   "tree": [
    {
     "label": "Hành vi",
+    "icon": "⚠️",
     "children": [
      "Xâm phạm gây thiệt hại",
      "Hàng giả mạo",
@@ -37,6 +40,7 @@
    },
    {
     "label": "Cơ quan",
+    "icon": "🏛️",
     "children": [
      "Thanh tra, quản lý thị trường",
      "Hải quan, công an"
@@ -44,9 +48,20 @@
    },
    {
     "label": "Hạn chế",
+    "icon": "🚫",
     "children": [
      "Không có bồi thường"
     ]
+   }
+  ],
+  "case": {
+   "q": "Cửa hàng bị phạt hành chính vì bán hàng xâm phạm. Chủ nhãn hiệu muốn được bồi thường thì làm gì?",
+   "a": "Phải khởi kiện dân sự."
+  },
+  "contrast": [
+   {
+    "with": "tstt-tu-bao-ve",
+    "text": "Xử phạt hành chính do cơ quan nhà nước làm; tự bảo vệ là chủ quyền tự làm."
    }
   ]
  },

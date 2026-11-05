@@ -24,22 +24,27 @@
   "danh mục tài sản trí tuệ"
  ],
  "memo": {
-  "hook": "Bốn khâu: TẠO LẬP → XÁC LẬP QUYỀN → KHAI THÁC → BẢO VỆ.",
+  "gist": "Doanh nghiệp quản lý tài sản trí tuệ qua bốn khâu: tạo ra, đăng ký giữ quyền, khai thác kiếm tiền, và bảo vệ.",
+  "kind": "steps",
+  "hook": "Như trồng cây: gieo, rào vườn, hái quả, đuổi kẻ trộm.",
   "tree": [
    {
     "label": "Tạo lập",
+    "icon": "🌱",
     "children": [
      "Nhận dạng, phân loại"
     ]
    },
    {
     "label": "Xác lập quyền",
+    "icon": "📋",
     "children": [
      "Đăng ký sớm, đồng bộ"
     ]
    },
    {
     "label": "Khai thác",
+    "icon": "💰",
     "children": [
      "Tự dùng",
      "Chuyển nhượng, li-xăng, góp vốn"
@@ -47,10 +52,21 @@
    },
    {
     "label": "Bảo vệ",
+    "icon": "🛡️",
     "children": [
      "Phòng ngừa",
      "Giám sát, xử lý xâm phạm"
     ]
+   }
+  ],
+  "case": {
+   "q": "Phòng pháp chế theo dõi hạn gia hạn nhãn hiệu và đăng ký giám sát hải quan. Đây thuộc khâu nào?",
+   "a": "Xác lập quyền và bảo vệ."
+  },
+  "contrast": [
+   {
+    "with": "tstt-tai-san-tri-tue",
+    "text": "Quản trị là việc làm với tài sản; tài sản trí tuệ là chính thứ được quản trị."
    }
   ]
  },

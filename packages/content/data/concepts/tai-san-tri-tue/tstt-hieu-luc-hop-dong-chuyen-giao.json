@@ -5,7 +5,7 @@
  "term": "Hiệu lực của hợp đồng chuyển giao quyền sở hữu công nghiệp",
  "definition": "Đối với các loại quyền sở hữu công nghiệp được xác lập trên cơ sở đăng ký theo quy định tại điểm a khoản 3 Điều 6 của Luật này, hợp đồng chuyển nhượng quyền sở hữu công nghiệp chỉ có hiệu lực khi đã được đăng ký tại cơ quan quản lý nhà nước về quyền sở hữu công nghiệp. (…) hợp đồng sử dụng đối tượng sở hữu công nghiệp có hiệu lực theo thỏa thuận giữa các bên.",
  "plain": "Quy tắc kép: hợp đồng CHUYỂN NHƯỢNG sáng chế, kiểu dáng, thiết kế bố trí, nhãn hiệu (quyền xác lập bằng đăng ký) chỉ có hiệu lực khi ĐĂNG KÝ tại Cục SHTT; hợp đồng SỬ DỤNG (li-xăng) có hiệu lực theo THỎA THUẬN, nhưng (trừ li-xăng nhãn hiệu) phải đăng ký mới có giá trị pháp lý với BÊN THỨ BA (khoản 3). Li-xăng mặc nhiên chấm dứt nếu quyền SHCN của bên giao chấm dứt (khoản 4). Bí mật kinh doanh, tên thương mại không xác lập bằng đăng ký nên hợp đồng không phải đăng ký.",
- "example": "Hợp đồng li-xăng nhãn hiệu giữa X và Y có hiệu lực từ ngày ký theo thỏa thuận, không bắt buộc đăng ký; hợp đồng chuyển nhượng chính nhãn hiệu đó cho Y chỉ có hiệu lực khi Cục SHTT ghi nhận.",
+ "example": "Hợp đồng cho dùng nhãn hiệu giữa X và Y có hiệu lực từ ngày ký theo thỏa thuận, không bắt buộc đăng ký; hợp đồng bán chính nhãn hiệu đó cho Y chỉ có hiệu lực khi Cục Sở hữu trí tuệ ghi nhận.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1, 2 Điều 148 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)",
@@ -25,10 +25,13 @@
  ],
  "note": "Luật Sở hữu trí tuệ 50/2005/QH11 (hiệu lực 01/7/2006) đã được sửa đổi bởi Luật 36/2009/QH12, 42/2019/QH14, 07/2022/QH15, 93/2025/QH15 và 131/2025/QH15 (hiệu lực 01/4/2026) — văn bản hợp nhất 67/VBHN-VPQH 2026; ghi chép lớp học còn dẫn Nghị định 105/2006/NĐ-CP và Nghị định 99/2013/NĐ-CP, cần tự kiểm tra hiệu lực của các nghị định này trước khi dùng.",
  "memo": {
-  "hook": "Chuyển NHƯỢNG: hiệu lực khi ĐĂNG KÝ. Li-XĂNG: theo THỎA THUẬN, đăng ký để chống bên thứ ba.",
+  "gist": "Bán quyền sáng chế, nhãn hiệu chỉ có hiệu lực khi đăng ký; cho dùng có hiệu lực theo thỏa thuận.",
+  "kind": "compare",
+  "hook": "Bán nhà phải sang tên; cho thuê nhà thì ký là ở được.",
   "tree": [
    {
     "label": "Chuyển nhượng",
+    "icon": "📋",
     "children": [
      "Sáng chế, kiểu dáng, nhãn hiệu",
      "Có hiệu lực khi đăng ký"
@@ -36,6 +39,7 @@
    },
    {
     "label": "Li-xăng",
+    "icon": "🤝",
     "children": [
      "Hiệu lực theo thỏa thuận",
      "Đăng ký để có giá trị với bên thứ ba"
@@ -43,9 +47,20 @@
    },
    {
     "label": "Chấm dứt",
+    "icon": "🔚",
     "children": [
      "Quyền của bên giao chấm dứt"
     ]
+   }
+  ],
+  "case": {
+   "q": "Hợp đồng cho dùng nhãn hiệu giữa X và Y chưa đăng ký. Có hiệu lực giữa hai bên không?",
+   "a": "Có, theo thỏa thuận; đăng ký chỉ để có giá trị với bên thứ ba."
+  },
+  "contrast": [
+   {
+    "with": "tstt-chuyen-nhuong-quyen-shcn",
+    "text": "Hiệu lực là lúc hợp đồng bắt đầu có giá trị; chuyển nhượng là nội dung hợp đồng."
    }
   ]
  },

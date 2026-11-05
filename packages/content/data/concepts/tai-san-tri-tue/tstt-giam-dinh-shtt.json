@@ -5,7 +5,7 @@
  "term": "Giám định về sở hữu trí tuệ",
  "definition": "Giám định về sở hữu trí tuệ là việc tổ chức, cá nhân quy định tại khoản 2 và khoản 3 Điều này sử dụng kiến thức, nghiệp vụ chuyên môn để đánh giá, kết luận về những vấn đề có liên quan đến quyền sở hữu trí tuệ.",
  "plain": "Công cụ chứng cứ trong tư vấn tranh chấp: kết luận giám định (ví dụ của Viện Khoa học Sở hữu trí tuệ) đánh giá yếu tố xâm phạm, kèm theo thư khuyến cáo, đơn yêu cầu xử lý hành chính hoặc đơn khởi kiện. Ba lĩnh vực (khoản 1a): quyền tác giả, quyền liên quan; quyền SHCN; giống cây trồng. Tổ chức giám định: doanh nghiệp, hợp tác xã, đơn vị sự nghiệp công lập, tổ chức hành nghề luật sư có ít nhất một giám định viên (khoản 2); tổ chức hành nghề luật sư nước ngoài không được kinh doanh dịch vụ này (khoản 2a). Kết luận giám định là nguồn chứng cứ, không thay thế quyết định của cơ quan có thẩm quyền. Giám định tư pháp về SHTT theo pháp luật giám định tư pháp.",
- "example": "Trước khi gửi thư khuyến cáo cho cửa hàng bán hàng \"Hongda\", Honda yêu cầu Viện Khoa học SHTT giám định và đính kèm bản sao kết luận: dấu hiệu \"Hongda\" là yếu tố xâm phạm quyền đối với nhãn hiệu \"Honda\".",
+ "example": "Trước khi gửi thư khuyến cáo cho cửa hàng bán hàng \"Hongda\", chủ nhãn hiệu \"Honda\" yêu cầu Viện Khoa học sở hữu trí tuệ giám định: dấu hiệu \"Hongda\" là yếu tố xâm phạm.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1 Điều 201 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)",
@@ -25,16 +25,20 @@
  ],
  "note": "Luật Sở hữu trí tuệ 50/2005/QH11 (hiệu lực 01/7/2006) đã được sửa đổi bởi Luật 36/2009/QH12, 42/2019/QH14, 07/2022/QH15, 93/2025/QH15 và 131/2025/QH15 (hiệu lực 01/4/2026) — văn bản hợp nhất 67/VBHN-VPQH 2026; ghi chép lớp học còn dẫn Nghị định 105/2006/NĐ-CP và Nghị định 99/2013/NĐ-CP, cần tự kiểm tra hiệu lực của các nghị định này trước khi dùng.",
  "memo": {
-  "hook": "Giám định = kết luận CHUYÊN MÔN làm CHỨNG CỨ xâm phạm.",
+  "gist": "Giám định là chuyên gia dùng chuyên môn kết luận có xâm phạm hay không, làm chứng cứ khi tranh chấp.",
+  "kind": "tree",
+  "hook": "Như bác sĩ pháp y của sở hữu trí tuệ: kết luận để Tòa có căn cứ.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "🔬",
     "children": [
      "Dùng chuyên môn đánh giá, kết luận"
     ]
    },
    {
     "label": "Lĩnh vực",
+    "icon": "📚",
     "children": [
      "Quyền tác giả, liên quan",
      "Sở hữu công nghiệp",
@@ -43,9 +47,20 @@
    },
    {
     "label": "Vai trò",
+    "icon": "⚖️",
     "children": [
      "Chứng cứ khi tranh chấp"
     ]
+   }
+  ],
+  "case": {
+   "q": "Trước khi gửi thư khuyến cáo, chủ nhãn hiệu xe máy đem dấu hiệu \"Hongda\" đi giám định. Để làm gì?",
+   "a": "Có kết luận chuyên môn rằng đó là yếu tố xâm phạm, làm chứng cứ."
+  },
+  "contrast": [
+   {
+    "with": "tstt-tu-bao-ve",
+    "text": "Giám định là lấy kết luận chuyên môn; tự bảo vệ là các bước chủ quyền tự làm."
    }
   ]
  },

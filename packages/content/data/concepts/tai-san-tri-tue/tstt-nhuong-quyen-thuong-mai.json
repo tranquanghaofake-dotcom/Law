@@ -24,10 +24,13 @@
  ],
  "note": "Luật Thương mại 36/2005/QH11 có hiệu lực từ 01/01/2006, sửa đổi bởi Luật 05/2017/QH14 và Luật 44/2019/QH14 (hiệu lực 01/01/2021) — văn bản hợp nhất 113/VBHN-VPQH 2025.",
  "memo": {
-  "hook": "Nhượng quyền = chuyển CẢ MÔ HÌNH kinh doanh, kèm KIỂM SOÁT và TRỢ GIÚP.",
+  "gist": "Bên nhượng cho người khác kinh doanh theo cả mô hình của mình: thương hiệu, cách làm, có kiểm soát và hỗ trợ.",
+  "kind": "tree",
+  "hook": "Không chỉ cho mượn biển hiệu, mà trao cả cuốn sổ tay vận hành.",
   "tree": [
    {
     "label": "Bên nhận được dùng",
+    "icon": "🏷️",
     "children": [
      "Nhãn hiệu, tên thương mại",
      "Bí quyết, khẩu hiệu"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Bên nhượng",
+    "icon": "🧭",
     "children": [
      "Kiểm soát",
      "Trợ giúp"
@@ -42,9 +46,20 @@
    },
    {
     "label": "Khác li-xăng",
+    "icon": "↔️",
     "children": [
      "Chuyển cả cách tổ chức kinh doanh"
     ]
+   }
+  ],
+  "case": {
+   "q": "Chuỗi cà phê cho ông N mở quán theo thiết kế, công thức, quy trình và kiểm tra định kỳ. Đây là cho dùng nhãn hiệu hay nhượng quyền?",
+   "a": "Nhượng quyền thương mại, vì chuyển cả mô hình kinh doanh."
+  },
+  "contrast": [
+   {
+    "with": "tstt-chuyen-quyen-su-dung",
+    "text": "Nhượng quyền chuyển cả mô hình kinh doanh; cho dùng nhãn hiệu chỉ cho dùng cái tên."
    }
   ]
  },

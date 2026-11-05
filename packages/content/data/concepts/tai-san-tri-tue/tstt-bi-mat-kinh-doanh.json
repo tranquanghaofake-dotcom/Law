@@ -5,7 +5,7 @@
  "term": "Bí mật kinh doanh và điều kiện bảo hộ",
  "definition": "Bí mật kinh doanh được bảo hộ nếu đáp ứng các điều kiện sau đây: 1. Không phải là hiểu biết thông thường và không dễ dàng có được; 2. Khi được sử dụng trong kinh doanh sẽ tạo cho người nắm giữ bí mật kinh doanh lợi thế so với người không nắm giữ hoặc không sử dụng bí mật kinh doanh đó; 3. Được chủ sở hữu bảo mật bằng các biện pháp cần thiết để bí mật kinh doanh đó không bị bộc lộ và không dễ dàng tiếp cận được.",
  "plain": "Bí mật kinh doanh là \"thông tin thu được từ hoạt động đầu tư tài chính, trí tuệ, chưa được bộc lộ và có khả năng sử dụng trong kinh doanh\" (khoản 23 Điều 4). Ba điều kiện: KHÔNG PHỔ THÔNG; tạo LỢI THẾ kinh doanh; được chủ sở hữu BẢO MẬT bằng biện pháp cần thiết. Điều kiện 3 là việc của quản trị doanh nghiệp: quy chế bảo mật, hợp đồng bảo mật (NDA) với người lao động, đối tác, phân quyền truy cập. Không có biện pháp bảo mật → mất bảo hộ dù thông tin có giá trị. Bảo hộ tự động, không đăng ký; không giới hạn thời hạn nếu còn bí mật.",
- "example": "Công ty B lưu công thức nước chấm trong máy chủ có phân quyền, nhân viên ký cam kết bảo mật: đủ điều kiện 3. Nếu công thức đăng trên website nội bộ ai cũng xem được, bí mật kinh doanh không còn được bảo hộ.",
+ "example": "Công ty B lưu công thức nước chấm trong máy chủ có phân quyền, nhân viên ký cam kết bảo mật: đủ điều kiện. Nếu công thức đăng trên trang nội bộ ai cũng xem được thì không còn được bảo hộ.",
  "source": {
   "kind": "statute",
   "cite": "Điều 84 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)",
@@ -25,10 +25,13 @@
  ],
  "note": "Luật Sở hữu trí tuệ 50/2005/QH11 (hiệu lực 01/7/2006) đã được sửa đổi bởi Luật 36/2009/QH12, 42/2019/QH14, 07/2022/QH15, 93/2025/QH15 và 131/2025/QH15 (hiệu lực 01/4/2026) — văn bản hợp nhất 67/VBHN-VPQH 2026; ghi chép lớp học còn dẫn Nghị định 105/2006/NĐ-CP và Nghị định 99/2013/NĐ-CP, cần tự kiểm tra hiệu lực của các nghị định này trước khi dùng.",
  "memo": {
-  "hook": "Ba điều kiện: KHÔNG PHỔ THÔNG – tạo LỢI THẾ – được BẢO MẬT.",
+  "gist": "Thông tin không phổ biến, đem lại lợi thế kinh doanh, và được chủ giữ kín bằng biện pháp cần thiết.",
+  "kind": "checklist",
+  "hook": "Như công thức món gia truyền: lộ ra ngoài là mất bảo vệ.",
   "tree": [
    {
     "label": "Điều kiện",
+    "icon": "🔐",
     "children": [
      "Không phải hiểu biết thông thường",
      "Tạo lợi thế kinh doanh",
@@ -37,10 +40,21 @@
    },
    {
     "label": "Quản trị",
+    "icon": "📋",
     "children": [
      "Quy chế bảo mật",
-     "Hợp đồng bảo mật (NDA)"
+     "Hợp đồng giữ bí mật"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công thức nước chấm đăng trên trang nội bộ ai cũng xem được. Còn được bảo hộ là bí mật kinh doanh không?",
+   "a": "Không, vì không còn được giữ bí mật."
+  },
+  "contrast": [
+   {
+    "with": "tstt-doi-tuong-quyen-shtt",
+    "text": "Bí mật kinh doanh là một đối tượng; đối tượng quyền sở hữu trí tuệ là cả danh sách."
    }
   ]
  },

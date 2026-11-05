@@ -5,7 +5,7 @@
  "term": "Định giá tài sản trí tuệ và mục đích",
  "definition": "Định giá tài sản trí tuệ là việc ước tính giá trị bằng tiền của tài sản trí tuệ nhằm phục vụ quản trị và phát triển tài sản trí tuệ; thương mại hóa (chuyển nhượng, chuyển quyền sử dụng, góp vốn, thế chấp); tranh tụng, xác định thiệt hại và bồi thường; cổ phần hóa, mua bán, sáp nhập doanh nghiệp.",
  "plain": "Khái niệm và mục đích theo GHI CHÉP BÀI GIẢNG (học thuyết). Bốn mục đích: (1) quản trị nội bộ; (2) thương mại hóa — bán, cấp phép, GÓP VỐN (Luật Doanh nghiệp cho góp vốn bằng quyền SHTT), thế chấp; (3) TRANH TỤNG — xác định thiệt hại, bồi thường (Điều 204, 205 Luật SHTT); (4) cổ phần hóa, M&A. Ba cách tiếp cận: CHI PHÍ, THU NHẬP, THỊ TRƯỜNG. Lưu ý: xác định loại tài sản, phục vụ ai, mục đích gì, thời điểm nào, phương pháp nào phù hợp.",
- "example": "Năm 1995 nhãn hiệu P/S được định giá để góp vốn liên doanh (bài giảng dẫn con số 7,5 triệu USD): định giá phục vụ thương mại hóa — góp vốn.",
+ "example": "Năm 1995 một nhãn hiệu kem đánh răng được định giá để góp vốn liên doanh (bài giảng dẫn con số 7,5 triệu đô la Mỹ): định giá phục vụ thương mại hóa, cụ thể là góp vốn.",
  "source": {
   "kind": "textbook",
   "cite": "Ghi chép bài giảng học phần Quản trị tài sản trí tuệ (SHTTTT), ĐH Luật Hà Nội (Drive HLU/Kỳ II năm II/SHTTTT) — chưa đối chiếu nguyên văn giáo trình"
@@ -24,30 +24,45 @@
   "cổ phần hóa"
  ],
  "memo": {
-  "hook": "Định giá để QUẢN TRỊ, THƯƠNG MẠI HÓA, TRANH TỤNG, M&A (học thuyết).",
+  "gist": "Định giá tài sản trí tuệ là ước tính nó đáng bao nhiêu tiền, để quản trị, bán, góp vốn, hay tính thiệt hại.",
+  "kind": "tree",
+  "hook": "Như đi cầm đồ: phải biết món đồ đáng bao nhiêu mới làm gì tiếp được.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "💰",
     "children": [
      "Ước tính giá trị bằng tiền"
     ]
    },
    {
     "label": "Mục đích",
+    "icon": "🎯",
     "children": [
      "Quản trị nội bộ",
      "Bán, cấp phép, góp vốn, thế chấp",
      "Xác định thiệt hại",
-     "Cổ phần hóa, M&A"
+     "Cổ phần hóa, mua bán sáp nhập"
     ]
    },
    {
     "label": "Cách tiếp cận",
+    "icon": "🧮",
     "children": [
      "Chi phí",
      "Thu nhập",
      "Thị trường"
     ]
+   }
+  ],
+  "case": {
+   "q": "Năm 1995 một nhãn hiệu kem đánh răng được định giá để góp vốn liên doanh. Mục đích định giá này là gì?",
+   "a": "Thương mại hóa, cụ thể là góp vốn."
+  },
+  "contrast": [
+   {
+    "with": "tstt-phuong-phap-dinh-gia",
+    "text": "Định giá là việc làm và mục đích; phương pháp là ba cách tính."
    }
   ]
  },

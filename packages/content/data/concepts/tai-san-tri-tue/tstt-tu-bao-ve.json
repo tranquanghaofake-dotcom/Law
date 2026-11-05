@@ -27,10 +27,13 @@
  ],
  "note": "Luật Sở hữu trí tuệ 50/2005/QH11 (hiệu lực 01/7/2006) đã được sửa đổi bởi Luật 36/2009/QH12, 42/2019/QH14, 07/2022/QH15, 93/2025/QH15 và 131/2025/QH15 (hiệu lực 01/4/2026) — văn bản hợp nhất 67/VBHN-VPQH 2026; ghi chép lớp học còn dẫn Nghị định 105/2006/NĐ-CP và Nghị định 99/2013/NĐ-CP, cần tự kiểm tra hiệu lực của các nghị định này trước khi dùng.",
  "memo": {
-  "hook": "Thứ tự: PHÒNG NGỪA → THƯ KHUYẾN CÁO → nhờ CƠ QUAN NHÀ NƯỚC → KHỞI KIỆN.",
+  "gist": "Chủ quyền tự bảo vệ theo thứ tự: phòng ngừa, gửi thư yêu cầu dừng, nhờ cơ quan nhà nước, rồi khởi kiện.",
+  "kind": "steps",
+  "hook": "Khóa cửa, nhắc nhở, gọi công an, rồi ra Tòa.",
   "tree": [
    {
     "label": "Phòng ngừa",
+    "icon": "🔒",
     "children": [
      "Biện pháp công nghệ",
      "Thông tin quản lý quyền"
@@ -38,6 +41,7 @@
    },
    {
     "label": "Yêu cầu bên vi phạm",
+    "icon": "✉️",
     "children": [
      "Chấm dứt",
      "Xin lỗi, cải chính, bồi thường"
@@ -45,15 +49,27 @@
    },
    {
     "label": "Cơ quan nhà nước",
+    "icon": "🏛️",
     "children": [
      "Xử lý hành chính, hình sự"
     ]
    },
    {
     "label": "Khởi kiện",
+    "icon": "⚖️",
     "children": [
      "Tòa án, trọng tài"
     ]
+   }
+  ],
+  "case": {
+   "q": "Chủ nhãn hiệu phát hiện cửa hàng bán hàng gắn dấu hiệu gần giống. Bước đầu thường làm gì?",
+   "a": "Gửi thư khuyến cáo yêu cầu chấm dứt, tiêu hủy hàng, bồi thường."
+  },
+  "contrast": [
+   {
+    "with": "tstt-xu-phat-hanh-chinh",
+    "text": "Tự bảo vệ là chủ quyền tự làm; xử phạt hành chính là cơ quan nhà nước làm."
    }
   ]
  },
