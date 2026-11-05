@@ -23,22 +23,27 @@
   "tố tụng, miễn trừ, khiếu nại"
  ],
  "memo": {
-  "hook": "MỘT cơ quan thuộc BỘ CÔNG THƯƠNG (gộp hai cơ quan cũ).",
+  "gist": "Ủy ban Cạnh tranh Quốc gia thuộc Bộ Công Thương, điều tra và xử lý các vụ việc cạnh tranh.",
+  "kind": "tree",
+  "hook": "Như trọng tài của thị trường: thổi còi, xem lại tình huống, quyết định phạt.",
   "tree": [
    {
     "label": "Vị trí",
+    "icon": "🏛️",
     "children": [
      "Thuộc Bộ Công Thương"
     ]
    },
    {
     "label": "Thành phần",
+    "icon": "👥",
     "children": [
      "Chủ tịch, Phó Chủ tịch, thành viên"
     ]
    },
    {
     "label": "Nhiệm vụ",
+    "icon": "📋",
     "children": [
      "Tố tụng cạnh tranh",
      "Kiểm soát tập trung kinh tế",
@@ -48,9 +53,20 @@
    },
    {
     "label": "Giúp việc",
+    "icon": "🔎",
     "children": [
      "Cơ quan điều tra vụ việc cạnh tranh"
     ]
+   }
+  ],
+  "case": {
+   "q": "Doanh nghiệp muốn xin miễn trừ thỏa thuận hạn chế cạnh tranh thì nộp hồ sơ ở đâu?",
+   "a": "Ủy ban Cạnh tranh Quốc gia, không phải Tòa án."
+  },
+  "contrast": [
+   {
+    "with": "xu-ly-vi-pham-canh-tranh",
+    "text": "Ủy ban là cơ quan xử lý; xử lý vi phạm nói các hình thức và mức phạt."
    }
   ]
  },

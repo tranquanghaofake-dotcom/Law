@@ -23,10 +23,13 @@
   "trừ độc quyền nhà nước, khẩn cấp"
  ],
  "memo": {
-  "hook": "Cơ quan nhà nước không được ÉP, KHUYẾN NGHỊ mua của doanh nghiệp CỤ THỂ.",
+  "gist": "Cơ quan nhà nước không được ép hay gợi ý mua bán với doanh nghiệp cụ thể, cũng không được phân biệt đối xử.",
+  "kind": "tree",
+  "hook": "Trọng tài không được đá bóng: nhà nước giữ luật, không chọn đội thắng.",
   "tree": [
    {
     "label": "Cấm",
+    "icon": "🚫",
     "children": [
      "Ép buộc, yêu cầu, khuyến nghị giao dịch",
      "Phân biệt đối xử doanh nghiệp",
@@ -36,10 +39,21 @@
    },
    {
     "label": "Ngoại lệ",
+    "icon": "🆗",
     "children": [
      "Độc quyền nhà nước",
      "Trường hợp khẩn cấp"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ủy ban nhân dân xã ra văn bản \"đề nghị\" các trường chỉ mua đồng phục của công ty X. Có vi phạm không?",
+   "a": "Có. Khuyến nghị mua hàng của một doanh nghiệp cụ thể là hành vi bị cấm."
+  },
+  "contrast": [
+   {
+    "with": "pham-vi-dieu-chinh-luat-canh-tranh",
+    "text": "Bài này nói điều cơ quan nhà nước bị cấm; phạm vi điều chỉnh nói luật cạnh tranh áp dụng cho việc gì, ai."
    }
   ]
  },

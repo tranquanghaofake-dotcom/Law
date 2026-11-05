@@ -23,16 +23,20 @@
   "doanh nghiệp khác"
  ],
  "memo": {
-  "hook": "TRÁI THIỆN CHÍ + GÂY (hoặc có thể gây) THIỆT HẠI cho doanh nghiệp khác.",
+  "gist": "Doanh nghiệp làm ăn gian dối, trái đạo đức kinh doanh, gây hoặc có thể gây thiệt hại cho doanh nghiệp khác.",
+  "kind": "checklist",
+  "hook": "Như đá bóng chơi xấu: không cần là đội mạnh, cứ phạm luật là bị thổi còi.",
   "tree": [
    {
     "label": "Chủ thể",
+    "icon": "🏢",
     "children": [
      "Doanh nghiệp"
     ]
    },
    {
     "label": "Trái với",
+    "icon": "⚖️",
     "children": [
      "Thiện chí, trung thực",
      "Tập quán thương mại",
@@ -41,6 +45,7 @@
    },
    {
     "label": "Hậu quả",
+    "icon": "💥",
     "children": [
      "Gây hoặc có thể gây thiệt hại",
      "Cho doanh nghiệp khác"
@@ -48,9 +53,20 @@
    },
    {
     "label": "Không cần",
+    "icon": "🆓",
     "children": [
      "Vị trí thống lĩnh, thị phần lớn"
     ]
+   }
+  ],
+  "case": {
+   "q": "Một cửa hàng nhỏ tung tin sai rằng hàng của đối thủ chứa chất độc. Có cần thị phần lớn mới bị xử lý không?",
+   "a": "Không. Cạnh tranh không lành mạnh không đòi vị trí thống lĩnh hay thị phần lớn."
+  },
+  "contrast": [
+   {
+    "with": "hanh-vi-han-che-canh-tranh",
+    "text": "Không lành mạnh là chơi xấu với đối thủ cụ thể; hạn chế cạnh tranh là làm méo cả thị trường, như bắt tay ấn định giá."
    }
   ]
  },

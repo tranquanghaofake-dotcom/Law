@@ -23,10 +23,13 @@
   "thị trường Việt Nam"
  ],
  "memo": {
-  "hook": "Hai mảng: chống HẠN CHẾ cạnh tranh và chống KHÔNG LÀNH MẠNH; áp dụng theo TÁC ĐỘNG.",
+  "gist": "Luật Cạnh tranh xử lý việc làm méo thị trường và chơi xấu, kể cả hành vi ở nước ngoài ảnh hưởng tới Việt Nam.",
+  "kind": "compare",
+  "hook": "Như camera an ninh nhìn kết quả: xảy ra ở đâu không quan trọng, ảnh hưởng tới đâu mới quan trọng.",
   "tree": [
    {
     "label": "Hạn chế cạnh tranh",
+    "icon": "🏗️",
     "children": [
      "Thỏa thuận, lạm dụng",
      "Tập trung kinh tế",
@@ -35,16 +38,28 @@
    },
    {
     "label": "Không lành mạnh",
+    "icon": "🤝",
     "children": [
      "Bảo vệ đạo đức kinh doanh"
     ]
    },
    {
     "label": "Phạm vi",
+    "icon": "🌏",
     "children": [
      "Cả hành vi ở nước ngoài",
      "Gây tác động tới thị trường Việt Nam"
     ]
+   }
+  ],
+  "case": {
+   "q": "Hai tập đoàn nước ngoài sáp nhập ở nước ngoài, cả hai có thị phần lớn tại Việt Nam. Luật Cạnh tranh Việt Nam có áp dụng không?",
+   "a": "Có thể, vì giao dịch có thể gây tác động tới thị trường Việt Nam."
+  },
+  "contrast": [
+   {
+    "with": "hanh-vi-han-che-canh-tranh",
+    "text": "Phạm vi điều chỉnh là toàn bộ việc luật lo; hạn chế cạnh tranh chỉ là một mảng trong đó."
    }
   ]
  },

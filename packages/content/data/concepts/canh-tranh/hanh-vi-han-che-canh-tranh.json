@@ -24,10 +24,13 @@
   "có khả năng gây tác động"
  ],
  "memo": {
-  "hook": "Ba hành vi: THỎA THUẬN, LẠM DỤNG THỐNG LĨNH, LẠM DỤNG ĐỘC QUYỀN.",
+  "gist": "Hành vi làm giảm, méo hoặc cản trở cạnh tranh trên thị trường: bắt tay thỏa thuận, lạm dụng thế mạnh hoặc độc quyền.",
+  "kind": "tree",
+  "hook": "Như mấy nhà hàng trong phố hẹn nhau cùng tăng giá: khách không còn nơi nào rẻ hơn.",
   "tree": [
    {
     "label": "Gồm",
+    "icon": "🧩",
     "children": [
      "Thỏa thuận hạn chế cạnh tranh",
      "Lạm dụng vị trí thống lĩnh",
@@ -36,6 +39,7 @@
    },
    {
     "label": "Tác động",
+    "icon": "📉",
     "children": [
      "Loại trừ, làm giảm",
      "Sai lệch, cản trở"
@@ -43,15 +47,31 @@
    },
    {
     "label": "Ngưỡng",
+    "icon": "⚠️",
     "children": [
      "Chỉ cần có khả năng gây tác động"
     ]
    },
    {
     "label": "Không gồm",
+    "icon": "🚫",
     "children": [
      "Tập trung kinh tế (kiểm soát riêng)"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ba hãng taxi lớn thống nhất cùng tăng giá cước 20%. Có phải hành vi hạn chế cạnh tranh không?",
+   "a": "Có. Đó là thỏa thuận ấn định giá, một loại hành vi hạn chế cạnh tranh."
+  },
+  "contrast": [
+   {
+    "with": "canh-tranh-khong-lanh-manh",
+    "text": "Hạn chế cạnh tranh làm méo cả thị trường; không lành mạnh là chơi xấu với một đối thủ."
+   },
+   {
+    "with": "thoa-thuan-han-che-canh-tranh",
+    "text": "Hạn chế cạnh tranh là nhóm lớn; thỏa thuận chỉ là một trong ba loại của nhóm đó."
    }
   ]
  },
