@@ -93,3 +93,8 @@ Task 9: bắt đầu — base 38fd710 — (1) đề 3: kiểm kết quả biểu
 Task 9: xong — (commit này) — đề 3: BLHS vẫn là dự thảo (05/11/2026, bế mạc 21/11) → giữ kế hoạch B, thêm 2 nguồn học thuật (8/15); đề mẫu 4 `vi-du/tai-san-so-thi-hanh-an/` (pha 0–2, 5, 1 tiểu mục, 7: 57/100); script thêm `khang-dinh-so-sanh-khong-nguon`; ma trận thêm cột "Đã được luật hóa?" + ngày nhận bài.
 Quyết định: đề 4 thu hẹp "tài sản mã hóa" về ví tự lưu ký trong THADS — vì E1, E2 đã có người viết — sai thì tốn đổi đề ở pha 1.
 Rút kinh nghiệm: tự gõ "lần đầu…" khi chưa đọc luật cũ, script cũ không bắt → thêm kiểm tra (test đỏ trước). Kiểm tra mới bắt nhầm mục tổng kết có "(xem x.y.z)" → nới cho dòng có tham chiếu mục. Parallel Search hết hạn mức giữa chừng → chuyển Firecrawl.
+
+Task 10: bắt đầu — base d31b9ce — giải các CẦN KIỂM đề 3, 4; NQ 05/2025 về phong tỏa; bổ sung nguồn học thuật cho cổng pha 2
+Task 10: xong — (commit này) — đề 4: giải 5 CẦN KIỂM (nơi đăng bài #1, khoản/điểm Điều 37, 80, 83, số hiệu Luật 71/2025/QH15), thêm phản chứng, NQ 05/2025 định nghĩa lưu ký; 61/100. Đề 3: Luật 59/2024/QH15 xác định là Luật Tư pháp người chưa thành niên. Skill: mục "Bản gốc hay bản đang có hiệu lực" trong nguon-tra-cuu.md.
+Quyết định: không tính 3 bài ResearchGate chỉ có tiêu đề vào cổng pha 2 — vì chưa biết tác giả, nơi đăng — sai thì tốn chỉ là cổng mở chậm hơn.
+Rút kinh nghiệm: cổng pha 2 của cả hai đề không qua được chỉ bằng tìm kiếm web (tài liệu học thuật cần đăng nhập/thư viện) → đây là việc của người dùng, skill nên nói rõ sớm. Tra Luật 59/2024 hai lần không ra điều sửa BLHS → dừng theo luật 2 lần.

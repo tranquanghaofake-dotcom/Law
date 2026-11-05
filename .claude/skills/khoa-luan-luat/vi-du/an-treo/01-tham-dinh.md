@@ -24,4 +24,4 @@ Cổng pha 1: chờ người dùng chọn; **không viết pha 4 trước khi bi
 
 ## Cập nhật 05/11/2026 (lần 2)
 - Đến 05/11/2026 BLHS (sửa đổi) **vẫn là dự thảo**; có thêm các bản ngày 09/10/2026 và 26/10/2026 (quochoi.vn). Kỳ họp thứ 2 kết thúc đợt 1 ngày 13/11/2026, bế mạc 21/11/2026 (quochoi.vn, tin ngày 04/11/2026) → **kiểm lại sau 21/11/2026**; tạm theo kế hoạch B.
-- Luật 59/2024/QH15 là **Luật Tư pháp người chưa thành niên** (danh mục tại khoản 3 Điều 115 Luật 106/2025/QH15, luatvietnam). Luật này có sửa BLHS không: [CẦN KIỂM].
+- Luật 59/2024/QH15 là **Luật Tư pháp người chưa thành niên** (danh mục tại khoản 3 Điều 115 Luật 106/2025/QH15, luatvietnam). Ban hành 30/11/2024, hiệu lực 01/01/2026 (vanban.chinhphu.vn). Ngày hiệu lực này trùng với dòng tôi đã ghi theo trí nhớ trước đó → lỗi là **gán nhầm một luật có thật sang việc sửa BLHS**. Luật này có điều sửa BLHS không: trang luatvietnam chỉ hiện một phần, tra 2 lần không ra → [CẦN KIỂM: đọc phần "điều khoản sửa đổi luật khác" của Luật 59/2024/QH15].

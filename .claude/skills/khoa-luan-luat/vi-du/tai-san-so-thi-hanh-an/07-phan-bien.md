@@ -24,3 +24,15 @@
 22. Thêm cột "Đã được luật hóa?" vào ma trận; so **ngày nhận bài** với ngày văn bản mới.
 23. Khẳng định "lần đầu / duy nhất / chưa từng" là khẳng định về văn bản cũ: phải đọc văn bản cũ hoặc dẫn nguồn đã đối chiếu.
 24. Phụ đề: tình cờ phát hiện Luật 59/2024/QH15 là Luật Tư pháp người chưa thành niên (danh mục tại khoản 3 Điều 115 Luật 106/2025) → đúng là không được ghi số hiệu theo trí nhớ (xem đề 3).
+
+## Vòng 2 (05/11/2026, sau khi giải CẦN KIỂM)
+| Tiêu chí | Vòng 1 | Vòng 2 | Vì sao đổi |
+|---|---|---|---|
+| Tổng quan (10) | 4 | 5 | xác định đúng nơi đăng bài #1 (Tạp chí Pháp luật và Thực tiễn số 66/2026); 3 bài mới chỉ có tiêu đề, không tính |
+| Tính mới (15) | 11 | 10 | kiến nghị "giao nộp khóa riêng" đã có ở bài #1 → tính mới chỉ còn ở việc chứng minh luật mới chưa tiếp thu |
+| Kết quả (40) | 20 | 24 | thêm phản chứng từ điểm c khoản 4 Điều 37; hạn chế (iii) có căn cứ định nghĩa "lưu ký" trong NQ 05/2025 |
+| Các tiêu chí khác | 22 | 22 | |
+| **Tổng** | **57** | **61** | |
+
+25. Trang văn bản của Chính phủ là **bản gốc**: Luật THADS 2008 bản gốc khác bản sửa 2014 (thời hạn 05 ngày làm việc so với 10 ngày). So luật cũ phải dùng VBHN cuối cùng → thêm vào `nguon-tra-cuu.md`.
+26. Lỗi "Luật 59/2024/QH15" của đề 3 là **gán nhầm một luật có thật** (Luật Tư pháp người chưa thành niên, hiệu lực 01/01/2026) sang việc sửa BLHS; ngày hiệu lực khớp nên rất khó tự phát hiện → khi xác minh phải ghi cả tên luật.

@@ -66,3 +66,7 @@ Thư viện số các trường luật (ĐH Luật Hà Nội, ĐH Luật TP.HCM,
 3. Lần ngược (danh mục tài liệu tham khảo của bài tốt nhất) và lần xuôi (ai trích bài đó, xem "Cited by").
 4. Dừng khi 3 nguồn mới liên tiếp không thêm luận điểm mới (bão hòa).
 5. Truy cập bị chặn (trả phí, cần đăng nhập): ghi "chưa đọc được", đề nghị người dùng lấy qua thư viện. **Không đoán nội dung.**
+
+## Bản gốc hay bản đang có hiệu lực
+Trang văn bản của vanban.chinhphu.vn, chinhphu.vn hiển thị **bản gốc** lúc ban hành. Bài viết dẫn "Luật … 2008" thường đang nói bản đã sửa. Ví dụ chạy thử: bản gốc khoản 3 Điều 67 Luật THADS 2008 ghi thời hạn 05 ngày làm việc, bài của cơ quan thi hành án dẫn 10 ngày (bản sau Luật 64/2014/QH13). Muốn so luật cũ với luật mới thì so với **VBHN cuối cùng** của luật cũ, không so với bản gốc.
+Khi tra một luật để xác minh, ghi cả trích yếu (tên luật), không chỉ số hiệu: một số hiệu có thật nhưng gán nhầm tên còn khó phát hiện hơn số hiệu bịa.
