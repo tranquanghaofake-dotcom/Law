@@ -24,6 +24,32 @@
   "ổn định, lâu dài"
  ],
  "note": "Luật Đất đai 1987 đã hết hiệu lực (thay bằng Luật Đất đai 1993); hiện hành là Luật Đất đai 31/2024/QH15. Học để hiểu lịch sử.",
+ "memo": {
+  "hook": "Luật Đất đai ĐẦU TIÊN (29/12/1987): SỞ HỮU TOÀN DÂN, Nhà nước GIAO ĐẤT.",
+  "tree": [
+   {
+    "label": "Mốc",
+    "children": [
+     "29/12/1987",
+     "Luật đất đai đầu tiên"
+    ]
+   },
+   {
+    "label": "Chế độ",
+    "children": [
+     "Sở hữu toàn dân",
+     "Nhà nước thống nhất quản lý"
+    ]
+   },
+   {
+    "label": "Người sử dụng",
+    "children": [
+     "Được giao đất ổn định, lâu dài",
+     "Chỉ có quyền sử dụng"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

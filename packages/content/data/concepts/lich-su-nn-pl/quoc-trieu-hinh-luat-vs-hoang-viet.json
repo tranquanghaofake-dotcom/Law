@@ -23,6 +23,32 @@
   "giống nhau: ngũ hình, thập ác, bát nghị"
  ],
  "note": "Thẻ dạng tóm lược giáo trình, chưa có trích nguyên văn Hoàng Việt luật lệ hay Đại Nam thực lục; cần đối chiếu sách in trước khi dùng làm tài liệu chính.",
+ "memo": {
+  "hook": "Quốc triều hình luật: từ ĐƯỜNG LUẬT, SÁNG TẠO, bảo vệ PHỤ NỮ; Luật Gia Long: chép THANH LUẬT.",
+  "tree": [
+   {
+    "label": "Giống",
+    "children": [
+     "Bộ luật tổng hợp",
+     "Ngũ hình, thập ác, bát nghị",
+     "Bảo vệ vương quyền"
+    ]
+   },
+   {
+    "label": "Quốc triều hình luật",
+    "children": [
+     "Từ Đường luật, có sáng tạo",
+     "Bảo vệ quyền phụ nữ"
+    ]
+   },
+   {
+    "label": "Hoàng Việt luật lệ",
+    "children": [
+     "Sao chép Thanh luật"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

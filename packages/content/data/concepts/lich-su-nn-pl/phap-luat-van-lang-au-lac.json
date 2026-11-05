@@ -22,6 +22,36 @@
   "Hậu Hán thư",
   "hơn mười điều"
  ],
+ "memo": {
+  "hook": "'VIỆT LUẬT' khác luật Hán hơn 10 điều — chủ yếu là TẬP QUÁN PHÁP.",
+  "tree": [
+   {
+    "label": "Sử liệu",
+    "children": [
+     "Mã Viện tâu năm 43",
+     "Hậu Hán thư"
+    ]
+   },
+   {
+    "label": "Nội dung",
+    "children": [
+     "Khác luật Hán hơn mười điều"
+    ]
+   },
+   {
+    "label": "Bản chất",
+    "children": [
+     "Chủ yếu tập quán pháp"
+    ]
+   },
+   {
+    "label": "Tranh luận",
+    "children": [
+     "Có luật thành văn hay không"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

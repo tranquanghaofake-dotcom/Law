@@ -24,6 +24,31 @@
   "bóc lột, chênh lệch kinh tế"
  ],
  "note": "Văn bản đã hết hiệu lực; học để hiểu lịch sử pháp luật.",
+ "memo": {
+  "hook": "Sắc lệnh 97 GIỚI HẠN sở hữu và cho khế ước VÔ HIỆU nếu BÓC LỘT.",
+  "tree": [
+   {
+    "label": "Sở hữu",
+    "children": [
+     "Không còn tuyệt đối",
+     "Không hại quyền lợi nhân dân"
+    ]
+   },
+   {
+    "label": "Khế ước",
+    "children": [
+     "Có thể vô hiệu",
+     "Khi một bên bị bóc lột"
+    ]
+   },
+   {
+    "label": "Khác",
+    "children": [
+     "Dân luật cũ theo luật Pháp"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

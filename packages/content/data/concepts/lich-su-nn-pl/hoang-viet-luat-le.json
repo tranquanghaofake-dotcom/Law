@@ -24,6 +24,41 @@
   "Nguyễn Văn Thành"
  ],
  "note": "Thẻ dạng tóm lược giáo trình, chưa có trích nguyên văn Hoàng Việt luật lệ hay Đại Nam thực lục; cần đối chiếu sách in trước khi dùng làm tài liệu chính.",
+ "memo": {
+  "hook": "Luật Gia Long 1815: 398 ĐIỀU, chép chủ yếu ĐẠI THANH LUẬT LỆ.",
+  "tree": [
+   {
+    "label": "Mốc",
+    "children": [
+     "1815, Gia Long"
+    ]
+   },
+   {
+    "label": "Quy mô",
+    "children": [
+     "398 điều"
+    ]
+   },
+   {
+    "label": "Nguồn",
+    "children": [
+     "Đại Thanh luật lệ"
+    ]
+   },
+   {
+    "label": "Người phụ trách",
+    "children": [
+     "Nguyễn Văn Thành"
+    ]
+   },
+   {
+    "label": "Chế định",
+    "children": [
+     "Ngũ hình, thập ác, bát nghị"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -24,6 +24,32 @@
   "Mê Linh",
   "65 thành"
  ],
+ "memo": {
+  "hook": "Năm 40: Hai Bà Trưng đuổi Tô Định — một nguyên nhân là 'dùng pháp luật TRÓI BUỘC'.",
+  "tree": [
+   {
+    "label": "Mốc",
+    "children": [
+     "Năm 40",
+     "Tồn tại đến năm 43"
+    ]
+   },
+   {
+    "label": "Nguyên nhân",
+    "children": [
+     "Tô Định dùng pháp luật trói buộc",
+     "Thù giết chồng"
+    ]
+   },
+   {
+    "label": "Kết quả",
+    "children": [
+     "Đóng đô Mê Linh",
+     "65 thành theo về"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

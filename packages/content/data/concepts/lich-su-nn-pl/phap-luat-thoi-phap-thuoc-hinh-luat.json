@@ -24,6 +24,30 @@
   "khác Hoàng Việt luật lệ 1815"
  ],
  "note": "Các bộ luật nêu ở đây đã hết hiệu lực; Sắc lệnh 47 chỉ tạm giữ chúng sau năm 1945.",
+ "memo": {
+  "hook": "Hình luật Pháp thuộc BA KHỐI: Bắc 1921, Trung 1933, Nam 1912 (khác Luật Gia Long 1815).",
+  "tree": [
+   {
+    "label": "Bắc Kỳ",
+    "children": [
+     "Luật hình An Nam 1921"
+    ]
+   },
+   {
+    "label": "Trung Kỳ",
+    "children": [
+     "Hoàng Việt hình luật 1933",
+     "Khác Hoàng Việt luật lệ 1815"
+    ]
+   },
+   {
+    "label": "Nam Kỳ",
+    "children": [
+     "Hình luật Pháp tu chỉnh 1912"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

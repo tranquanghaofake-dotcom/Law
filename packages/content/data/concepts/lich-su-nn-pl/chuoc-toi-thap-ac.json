@@ -23,6 +23,31 @@
   "thập ác không được chuộc",
   "1071 định tiền chuộc"
  ],
+ "memo": {
+  "hook": "CHUỘC tội = nộp tiền thay hình phạt; THẬP ÁC không được chuộc.",
+  "tree": [
+   {
+    "label": "Được chuộc (1042)",
+    "children": [
+     "Người già, trẻ, ốm yếu",
+     "Thân thuộc nhà vua"
+    ]
+   },
+   {
+    "label": "Ý nghĩa",
+    "children": [
+     "Nhân đạo",
+     "Đặc quyền đẳng cấp"
+    ]
+   },
+   {
+    "label": "Không được chuộc",
+    "children": [
+     "Tội thập ác"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

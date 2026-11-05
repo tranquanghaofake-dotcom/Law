@@ -23,6 +23,32 @@
   "mười đạo → lộ, phủ, châu",
   "Lê Hoàn"
  ],
+ "memo": {
+  "hook": "1002: Lê Hoàn ĐỊNH LUẬT LỆNH (không còn), đổi MƯỜI ĐẠO thành LỘ, PHỦ, CHÂU.",
+  "tree": [
+   {
+    "label": "Mốc",
+    "children": [
+     "1002",
+     "Lê Hoàn lên ngôi 980"
+    ]
+   },
+   {
+    "label": "Việc làm",
+    "children": [
+     "Định luật lệnh",
+     "Cải tổ quân đội",
+     "Mười đạo → lộ, phủ, châu"
+    ]
+   },
+   {
+    "label": "Hiện trạng",
+    "children": [
+     "Nội dung luật không còn"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

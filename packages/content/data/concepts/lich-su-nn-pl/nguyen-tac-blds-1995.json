@@ -24,6 +24,32 @@
   "áp dụng tập quán, tương tự pháp luật"
  ],
  "note": "Bộ luật Dân sự 1995 có hiệu lực từ 01/7/1996, đã hết hiệu lực (thay bằng Bộ luật Dân sự 2005); hiện hành là Bộ luật Dân sự 91/2015/QH13. Học để hiểu lịch sử.",
+ "memo": {
+  "hook": "BLDS 1995 có cả chương NGUYÊN TẮC: tự do thỏa thuận, bình đẳng, thiện chí.",
+  "tree": [
+   {
+    "label": "Nguyên tắc",
+    "children": [
+     "Tự do, tự nguyện thỏa thuận",
+     "Bình đẳng",
+     "Thiện chí, trung thực"
+    ]
+   },
+   {
+    "label": "Tôn trọng",
+    "children": [
+     "Lợi ích Nhà nước, công cộng",
+     "Đạo đức, truyền thống"
+    ]
+   },
+   {
+    "label": "Thiếu luật",
+    "children": [
+     "Áp dụng tập quán, tương tự"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -23,6 +23,31 @@
   "châu Hoan, châu Ái",
   "1010"
  ],
+ "memo": {
+  "hook": "Nhà Lý (1010) chia 24 LỘ; vùng xa (Hoan, Ái) gọi là TRẠI.",
+  "tree": [
+   {
+    "label": "Đơn vị",
+    "children": [
+     "24 lộ",
+     "Trại: châu Hoan, châu Ái"
+    ]
+   },
+   {
+    "label": "Dưới lộ",
+    "children": [
+     "Phủ, huyện",
+     "Hương, giáp"
+    ]
+   },
+   {
+    "label": "Mốc",
+    "children": [
+     "1010"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

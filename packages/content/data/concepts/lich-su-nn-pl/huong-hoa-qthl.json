@@ -23,6 +23,26 @@
   "con gái trưởng (Điều 391)",
   "con gái được thừa kế"
  ],
+ "memo": {
+  "hook": "HƯƠNG HỎA = 1/20 ruộng đất để thờ cúng, giao CON TRƯỞNG; CON GÁI cũng được chia.",
+  "tree": [
+   {
+    "label": "Hương hỏa",
+    "children": [
+     "1/20 ruộng đất",
+     "Giao con trai trưởng",
+     "Không có con trai: con gái trưởng"
+    ]
+   },
+   {
+    "label": "Phần còn lại",
+    "children": [
+     "Anh em chị em chia nhau",
+     "Con gái được thừa kế"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

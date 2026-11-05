@@ -24,6 +24,28 @@
   "trên năm năm tù"
  ],
  "note": "Bộ luật Hình sự 1985 có hiệu lực từ 01/01/1986, đã hết hiệu lực (thay bằng Bộ luật Hình sự 1999); hiện hành là Bộ luật Hình sự 100/2015/QH13 (đã được sửa đổi). Học để hiểu lịch sử.",
+ "memo": {
+  "hook": "BLHS 1985 chia HAI loại tội: NGHIÊM TRỌNG (khung trên 5 năm) và ít nghiêm trọng.",
+  "tree": [
+   {
+    "label": "Bốn dấu hiệu",
+    "children": [
+     "Nguy hiểm cho xã hội",
+     "Được BLHS quy định",
+     "Năng lực trách nhiệm hình sự",
+     "Có lỗi"
+    ]
+   },
+   {
+    "label": "Phân loại",
+    "children": [
+     "Hai loại",
+     "Nghiêm trọng: trên 5 năm, chung thân, tử hình",
+     "Ít nghiêm trọng"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -24,6 +24,33 @@
   "người làm chứng",
   "in tay"
  ],
+ "memo": {
+  "hook": "Chiếu 1237: chúc thư, văn khế phải có NGƯỜI LÀM CHỨNG và IN TAY.",
+  "tree": [
+   {
+    "label": "Áp dụng",
+    "children": [
+     "Chúc thư",
+     "Văn khế ruộng đất",
+     "Vay mượn tiền bạc"
+    ]
+   },
+   {
+    "label": "Hình thức",
+    "children": [
+     "Lập thành giấy tờ",
+     "Người làm chứng",
+     "Điểm chỉ theo vị trí"
+    ]
+   },
+   {
+    "label": "Ý nghĩa",
+    "children": [
+     "Bằng chứng sớm về hình thức giao dịch"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

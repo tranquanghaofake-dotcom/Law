@@ -21,6 +21,36 @@
   "Cổ Loa",
   "257 TCN"
  ],
+ "memo": {
+  "hook": "Âu Lạc: AN DƯƠNG VƯƠNG kế tục Văn Lang, xây CỔ LOA; trung ương MẠNH hơn.",
+  "tree": [
+   {
+    "label": "Người lập",
+    "children": [
+     "Thục Phán – An Dương Vương"
+    ]
+   },
+   {
+    "label": "Mốc",
+    "children": [
+     "257 TCN"
+    ]
+   },
+   {
+    "label": "Kinh đô",
+    "children": [
+     "Phong Khê (Cổ Loa)"
+    ]
+   },
+   {
+    "label": "Đặc điểm",
+    "children": [
+     "Giữ mô hình Văn Lang",
+     "Quyền lực trung ương mạnh hơn"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

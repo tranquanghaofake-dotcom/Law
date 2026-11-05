@@ -24,6 +24,31 @@
   "làm chủ tập thể"
  ],
  "note": "Bộ luật Hình sự 1985 có hiệu lực từ 01/01/1986, đã hết hiệu lực (thay bằng Bộ luật Hình sự 1999); hiện hành là Bộ luật Hình sự 100/2015/QH13 (đã được sửa đổi). Học để hiểu lịch sử.",
+ "memo": {
+  "hook": "BLHS ĐẦU TIÊN của Việt Nam thống nhất: 27/6/1985, hiệu lực 01/01/1986.",
+  "tree": [
+   {
+    "label": "Mốc",
+    "children": [
+     "Thông qua 27/6/1985",
+     "Hiệu lực 01/01/1986"
+    ]
+   },
+   {
+    "label": "Nguyên tắc",
+    "children": [
+     "Chỉ phạm tội luật quy định",
+     "Tòa án quyết định hình phạt"
+    ]
+   },
+   {
+    "label": "Ý nghĩa",
+    "children": [
+     "Pháp điển hóa sắc lệnh rời rạc"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

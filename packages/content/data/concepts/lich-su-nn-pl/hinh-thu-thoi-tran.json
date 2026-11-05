@@ -24,6 +24,37 @@
   "Hình thư",
   "không còn"
  ],
+ "memo": {
+  "hook": "1341: Trương Hán Siêu, Nguyễn Trung Ngạn soạn HOÀNG TRIỀU ĐẠI ĐIỂN và HÌNH THƯ.",
+  "tree": [
+   {
+    "label": "Mốc",
+    "children": [
+     "1341"
+    ]
+   },
+   {
+    "label": "Người soạn",
+    "children": [
+     "Trương Hán Siêu",
+     "Nguyễn Trung Ngạn"
+    ]
+   },
+   {
+    "label": "Bộ luật",
+    "children": [
+     "Hoàng triều đại điển: điển chế",
+     "Hình thư: luật hình"
+    ]
+   },
+   {
+    "label": "Hiện trạng",
+    "children": [
+     "Không còn"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

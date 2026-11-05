@@ -23,6 +23,31 @@
   "Thứ sử – châu",
   "Thái thú – quận"
  ],
+ "memo": {
+  "hook": "Nhà Hán chia QUẬN: Thứ sử coi CHÂU, Thái thú coi QUẬN.",
+  "tree": [
+   {
+    "label": "Chia đất",
+    "children": [
+     "9 quận",
+     "Ba quận đất Việt: Giao Chỉ, Cửu Chân, Nhật Nam"
+    ]
+   },
+   {
+    "label": "Quan lại",
+    "children": [
+     "Thứ sử: châu",
+     "Thái thú: quận"
+    ]
+   },
+   {
+    "label": "Mục đích",
+    "children": [
+     "Cai trị, thu cống phú"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

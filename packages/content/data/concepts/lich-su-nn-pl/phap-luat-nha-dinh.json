@@ -23,6 +23,31 @@
   "mệnh lệnh nhà vua",
   "hình phạt hà khắc"
  ],
+ "memo": {
+  "hook": "Nhà Đinh: chưa có luật thành văn, dùng MỆNH LỆNH và hình phạt HÀ KHẮC ('vạc dầu, cũi hổ').",
+  "tree": [
+   {
+    "label": "Nguồn luật",
+    "children": [
+     "Mệnh lệnh nhà vua",
+     "Tập quán"
+    ]
+   },
+   {
+    "label": "Hình phạt",
+    "children": [
+     "Vạc dầu, cũi hổ",
+     "Hà khắc, răn đe"
+    ]
+   },
+   {
+    "label": "Lý do",
+    "children": [
+     "Mới thống nhất sau 12 sứ quân"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",
