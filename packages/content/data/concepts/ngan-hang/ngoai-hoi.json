@@ -24,6 +24,27 @@
   "đồng Việt Nam chuyển vào, ra lãnh thổ"
  ],
  "note": "Pháp lệnh Ngoại hối 28/2005/PL-UBTVQH11 có hiệu lực từ 01/6/2006, sửa đổi bởi Pháp lệnh 06/2013/UBTVQH13; Luật 23/2026/QH16 (hiệu lực 01/12/2026) bãi bỏ Điều 22 và khoản 2 Điều 34, không sửa Điều 4.",
+ "memo": {
+  "hook": "Vàng miếng mua bán TRONG NƯỚC KHÔNG phải ngoại hối.",
+  "tree": [
+   {
+    "label": "Gồm",
+    "children": [
+     "Ngoại tệ",
+     "Phương tiện thanh toán bằng ngoại tệ",
+     "Giấy tờ có giá bằng ngoại tệ",
+     "Vàng (một số trường hợp)"
+    ]
+   },
+   {
+    "label": "Đồng Việt Nam",
+    "children": [
+     "Khi chuyển vào, ra lãnh thổ",
+     "Khi dùng thanh toán quốc tế"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

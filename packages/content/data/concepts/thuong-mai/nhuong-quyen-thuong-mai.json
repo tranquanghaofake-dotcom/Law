@@ -22,6 +22,38 @@
   "nhãn hiệu, bí quyết kinh doanh",
   "kiểm soát và trợ giúp"
  ],
+ "memo": {
+  "hook": "Bên nhận TỰ BỎ VỐN kinh doanh theo CÁCH THỨC của bên nhượng.",
+  "tree": [
+   {
+    "label": "Bên nhận quyền",
+    "children": [
+     "Tự mình kinh doanh",
+     "Theo cách thức bên nhượng"
+    ]
+   },
+   {
+    "label": "Gắn với",
+    "children": [
+     "Nhãn hiệu, tên thương mại",
+     "Bí quyết kinh doanh"
+    ]
+   },
+   {
+    "label": "Bên nhượng quyền",
+    "children": [
+     "Kiểm soát",
+     "Trợ giúp"
+    ]
+   },
+   {
+    "label": "Hình thức",
+    "children": [
+     "Văn bản"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

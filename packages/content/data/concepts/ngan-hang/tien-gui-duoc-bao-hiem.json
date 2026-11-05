@@ -24,6 +24,27 @@
   "trừ Điều 18"
  ],
  "note": "Luật Bảo hiểm tiền gửi 111/2025/QH15 có hiệu lực từ 01/5/2026, thay thế Luật Bảo hiểm tiền gửi 06/2012/QH13 mà đề cương HLU 2021 còn dẫn.",
+ "memo": {
+  "hook": "Ba điều kiện: ĐỒNG VIỆT NAM – của CÁ NHÂN – tại tổ chức THAM GIA.",
+  "tree": [
+   {
+    "label": "Điều kiện",
+    "children": [
+     "Bằng Đồng Việt Nam",
+     "Của cá nhân",
+     "Tại tổ chức tham gia bảo hiểm"
+    ]
+   },
+   {
+    "label": "Không được bảo hiểm",
+    "children": [
+     "Tiền gửi ngoại tệ",
+     "Tiền gửi của doanh nghiệp",
+     "Các khoản ở Điều 18"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

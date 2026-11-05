@@ -22,6 +22,27 @@
   "không công khai",
   "chung thẩm"
  ],
+ "memo": {
+  "hook": "Trọng tài KHÔNG CÔNG KHAI và CHUNG THẨM.",
+  "tree": [
+   {
+    "label": "Nguyên tắc",
+    "children": [
+     "Tôn trọng thỏa thuận",
+     "Trọng tài viên độc lập, vô tư",
+     "Các bên bình đẳng",
+     "Không công khai"
+    ]
+   },
+   {
+    "label": "Phán quyết",
+    "children": [
+     "Chung thẩm",
+     "Chỉ có thể yêu cầu Tòa hủy"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

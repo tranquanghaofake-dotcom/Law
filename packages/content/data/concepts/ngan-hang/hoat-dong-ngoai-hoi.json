@@ -24,6 +24,32 @@
   "cung ứng dịch vụ ngoại hối"
  ],
  "note": "Pháp lệnh Ngoại hối 28/2005/PL-UBTVQH11 có hiệu lực từ 01/6/2006, sửa đổi bởi Pháp lệnh 06/2013/UBTVQH13; Luật 23/2026/QH16 (hiệu lực 01/12/2026) bãi bỏ Điều 22 và khoản 2 Điều 34, không sửa Điều 4.",
+ "memo": {
+  "hook": "Chủ thể: CƯ TRÚ và KHÔNG CƯ TRÚ; giao dịch: VÃNG LAI và VỐN.",
+  "tree": [
+   {
+    "label": "Chủ thể",
+    "children": [
+     "Người cư trú",
+     "Người không cư trú"
+    ]
+   },
+   {
+    "label": "Giao dịch",
+    "children": [
+     "Vãng lai: không chuyển vốn",
+     "Vốn: đầu tư, vay trả nợ"
+    ]
+   },
+   {
+    "label": "Khác",
+    "children": [
+     "Sử dụng ngoại hối trong nước",
+     "Cung ứng dịch vụ ngoại hối"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

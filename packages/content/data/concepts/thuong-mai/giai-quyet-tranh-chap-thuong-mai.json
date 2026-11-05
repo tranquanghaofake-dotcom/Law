@@ -22,6 +22,27 @@
   "thời hiệu hai năm",
   "kể từ khi quyền lợi bị xâm phạm"
  ],
+ "memo": {
+  "hook": "Bốn cách: THƯƠNG LƯỢNG – HÒA GIẢI – TRỌNG TÀI – TÒA ÁN; thời hiệu 02 NĂM.",
+  "tree": [
+   {
+    "label": "Phương thức",
+    "children": [
+     "Thương lượng",
+     "Hòa giải",
+     "Trọng tài (cần thỏa thuận)",
+     "Tòa án"
+    ]
+   },
+   {
+    "label": "Thời hiệu",
+    "children": [
+     "02 năm từ khi bị xâm phạm",
+     "Logistics: 9 tháng"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -22,6 +22,30 @@
   "đã giao cho bên mua",
   "kể cả giữ chứng từ"
  ],
+ "memo": {
+  "hook": "Có địa điểm giao → rủi ro chuyển khi ĐÃ GIAO tại đó.",
+  "tree": [
+   {
+    "label": "Có địa điểm",
+    "children": [
+     "Khi đã giao cho bên mua",
+     "Kể cả bên bán giữ chứng từ"
+    ]
+   },
+   {
+    "label": "Có vận chuyển",
+    "children": [
+     "Khi giao người vận chuyển đầu tiên"
+    ]
+   },
+   {
+    "label": "Ý nghĩa",
+    "children": [
+     "Ai chịu thiệt khi hàng hỏng"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

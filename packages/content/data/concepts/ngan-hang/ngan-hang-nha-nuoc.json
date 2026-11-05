@@ -25,6 +25,26 @@
   "quản lý nhà nước về tiền tệ"
  ],
  "note": "Luật Ngân hàng Nhà nước Việt Nam 46/2010/QH12 có hiệu lực từ 01/01/2011; Luật 23/2026/QH16 sửa đổi nhiều điều (Điều 4, 27, 34, 42, 44, 45, 57, 58, 62…), có hiệu lực từ 01/12/2026 — điều được trích không bị sửa.",
+ "memo": {
+  "hook": "HAI vị trí: CƠ QUAN NGANG BỘ và NGÂN HÀNG TRUNG ƯƠNG.",
+  "tree": [
+   {
+    "label": "Cơ quan ngang bộ",
+    "children": [
+     "Quản lý nhà nước về tiền tệ",
+     "Ngân hàng, ngoại hối"
+    ]
+   },
+   {
+    "label": "Ngân hàng trung ương",
+    "children": [
+     "Phát hành tiền",
+     "Ngân hàng của các tổ chức tín dụng",
+     "Dịch vụ tiền tệ cho Chính phủ"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

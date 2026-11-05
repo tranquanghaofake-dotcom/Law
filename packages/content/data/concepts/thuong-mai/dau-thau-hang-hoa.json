@@ -21,6 +21,38 @@
   "đáp ứng tốt nhất các yêu cầu",
   "không áp dụng mua sắm công"
  ],
+ "memo": {
+  "hook": "Bên MUA mời thầu, chọn người ĐÁP ỨNG TỐT NHẤT (không nhất thiết rẻ nhất).",
+  "tree": [
+   {
+    "label": "Các bên",
+    "children": [
+     "Bên mời thầu (bên mua)",
+     "Bên dự thầu",
+     "Bên trúng thầu"
+    ]
+   },
+   {
+    "label": "Tiêu chí",
+    "children": [
+     "Đáp ứng tốt nhất yêu cầu"
+    ]
+   },
+   {
+    "label": "Hình thức",
+    "children": [
+     "Rộng rãi",
+     "Hạn chế"
+    ]
+   },
+   {
+    "label": "Không áp dụng",
+    "children": [
+     "Mua sắm công"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

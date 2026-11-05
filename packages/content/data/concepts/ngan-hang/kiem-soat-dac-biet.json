@@ -24,6 +24,29 @@
   "tổ chức tín dụng hỗ trợ"
  ],
  "note": "Luật Các tổ chức tín dụng 32/2024/QH15 có hiệu lực từ 01/7/2024, thay thế Luật 47/2010/QH12 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 96/2025/QH15 (hiệu lực 15/10/2025) và Luật 23/2026/QH16 (hiệu lực 01/12/2026, chỉ bổ sung một điểm tại Điều 49) — các khoản Điều 4 được trích không bị sửa.",
+ "memo": {
+  "hook": "CAN THIỆP SỚM (nhẹ) trước, KIỂM SOÁT ĐẶC BIỆT (Ngân hàng Nhà nước trực tiếp) sau.",
+  "tree": [
+   {
+    "label": "Ai quyết định",
+    "children": [
+     "Ngân hàng Nhà nước"
+    ]
+   },
+   {
+    "label": "Nội dung",
+    "children": [
+     "Kiểm soát trực tiếp tổ chức tín dụng"
+    ]
+   },
+   {
+    "label": "Phân biệt",
+    "children": [
+     "Can thiệp sớm: tự khắc phục, nhẹ hơn"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

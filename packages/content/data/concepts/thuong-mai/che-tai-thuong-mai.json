@@ -24,6 +24,38 @@
   "tạm ngừng, đình chỉ, hủy bỏ",
   "biện pháp khác do thỏa thuận"
  ],
+ "memo": {
+  "hook": "Sáu chế tài; TẠM NGỪNG, ĐÌNH CHỈ, HỦY BỎ cần VI PHẠM CƠ BẢN.",
+  "tree": [
+   {
+    "label": "Buộc thực hiện",
+    "children": [
+     "Buộc thực hiện đúng hợp đồng"
+    ]
+   },
+   {
+    "label": "Bằng tiền",
+    "children": [
+     "Phạt vi phạm",
+     "Bồi thường thiệt hại"
+    ]
+   },
+   {
+    "label": "Dừng hợp đồng",
+    "children": [
+     "Tạm ngừng",
+     "Đình chỉ",
+     "Hủy bỏ"
+    ]
+   },
+   {
+    "label": "Khác",
+    "children": [
+     "Do các bên thỏa thuận"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

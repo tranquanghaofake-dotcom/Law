@@ -21,6 +21,31 @@
   "điều kiện tạm ngừng, đình chỉ, hủy bỏ",
   "hủy toàn bộ hoặc một phần"
  ],
+ "memo": {
+  "hook": "Vi phạm CƠ BẢN: bên kia KHÔNG ĐẠT MỤC ĐÍCH giao kết; mở đường cho tạm ngừng, đình chỉ, hủy.",
+  "tree": [
+   {
+    "label": "Định nghĩa",
+    "children": [
+     "Thiệt hại đến mức mất mục đích hợp đồng"
+    ]
+   },
+   {
+    "label": "Là điều kiện cho",
+    "children": [
+     "Tạm ngừng",
+     "Đình chỉ",
+     "Hủy bỏ"
+    ]
+   },
+   {
+    "label": "Hủy bỏ",
+    "children": [
+     "Toàn bộ hoặc một phần"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

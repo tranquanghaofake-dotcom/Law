@@ -22,6 +22,37 @@
   "hình thức không phù hợp",
   "lừa dối, đe dọa, cưỡng ép"
  ],
+ "memo": {
+  "hook": "Hợp đồng chính vô hiệu KHÔNG kéo theo thỏa thuận trọng tài.",
+  "tree": [
+   {
+    "label": "Về tranh chấp",
+    "children": [
+     "Ngoài thẩm quyền trọng tài"
+    ]
+   },
+   {
+    "label": "Về người ký",
+    "children": [
+     "Không có thẩm quyền",
+     "Không có năng lực hành vi"
+    ]
+   },
+   {
+    "label": "Về ý chí, hình thức",
+    "children": [
+     "Không bằng văn bản",
+     "Bị lừa dối, đe dọa"
+    ]
+   },
+   {
+    "label": "Về nội dung",
+    "children": [
+     "Vi phạm điều cấm"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

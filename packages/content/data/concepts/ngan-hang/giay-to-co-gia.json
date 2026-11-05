@@ -25,6 +25,32 @@
   "điều kiện trả lãi"
  ],
  "note": "Luật Ngân hàng Nhà nước Việt Nam 46/2010/QH12 có hiệu lực từ 01/01/2011; Luật 23/2026/QH16 sửa đổi nhiều điều (Điều 4, 27, 34, 42, 44, 45, 57, 58, 62…), có hiệu lực từ 01/12/2026 — điều được trích không bị sửa.",
+ "memo": {
+  "hook": "Giấy tờ có giá = bằng chứng NỢ của bên PHÁT HÀNH với người CẦM.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Nghĩa vụ trả nợ",
+     "Có thời hạn, điều kiện trả lãi"
+    ]
+   },
+   {
+    "label": "Ví dụ",
+    "children": [
+     "Trái phiếu, kỳ phiếu",
+     "Tín phiếu, chứng chỉ tiền gửi"
+    ]
+   },
+   {
+    "label": "Dùng để",
+    "children": [
+     "Huy động vốn",
+     "Chiết khấu"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

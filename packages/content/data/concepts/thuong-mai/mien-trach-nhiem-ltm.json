@@ -22,6 +22,32 @@
   "hoàn toàn do lỗi bên kia",
   "quyết định cơ quan nhà nước"
  ],
+ "memo": {
+  "hook": "Bốn căn cứ miễn: THỎA THUẬN – BẤT KHẢ KHÁNG – LỖI BÊN KIA – QUYẾT ĐỊNH NHÀ NƯỚC.",
+  "tree": [
+   {
+    "label": "Căn cứ",
+    "children": [
+     "Thỏa thuận miễn trách",
+     "Bất khả kháng",
+     "Hoàn toàn do lỗi bên kia",
+     "Quyết định cơ quan nhà nước"
+    ]
+   },
+   {
+    "label": "Chứng minh",
+    "children": [
+     "Bên vi phạm"
+    ]
+   },
+   {
+    "label": "Khác BLDS",
+    "children": [
+     "Có thêm quyết định nhà nước"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

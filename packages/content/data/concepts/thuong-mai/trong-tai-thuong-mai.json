@@ -23,6 +23,33 @@
   "lập trước hoặc sau tranh chấp",
   "Tòa án từ chối thụ lý"
  ],
+ "memo": {
+  "hook": "Không có THỎA THUẬN TRỌNG TÀI thì không có trọng tài.",
+  "tree": [
+   {
+    "label": "Điều kiện",
+    "children": [
+     "Có thỏa thuận trọng tài",
+     "Lập trước hoặc sau tranh chấp",
+     "Bằng văn bản"
+    ]
+   },
+   {
+    "label": "Thẩm quyền",
+    "children": [
+     "Tranh chấp thương mại",
+     "Một bên có hoạt động thương mại"
+    ]
+   },
+   {
+    "label": "Hình thức",
+    "children": [
+     "Trọng tài quy chế",
+     "Trọng tài vụ việc"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

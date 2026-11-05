@@ -26,6 +26,37 @@
   "trước khi đến hạn"
  ],
  "note": "Luật Các tổ chức tín dụng 32/2024/QH15 có hiệu lực từ 01/7/2024, thay thế Luật 47/2010/QH12 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 96/2025/QH15 (hiệu lực 15/10/2025) và Luật 23/2026/QH16 (hiệu lực 01/12/2026, chỉ bổ sung một điểm tại Điều 49) — các khoản Điều 4 được trích không bị sửa.",
+ "memo": {
+  "hook": "MUA giấy tờ TRƯỚC HẠN, có quyền TRUY ĐÒI người bán.",
+  "tree": [
+   {
+    "label": "Đối tượng",
+    "children": [
+     "Công cụ chuyển nhượng",
+     "Giấy tờ có giá khác"
+    ]
+   },
+   {
+    "label": "Thời điểm",
+    "children": [
+     "Trước khi đến hạn"
+    ]
+   },
+   {
+    "label": "Cách mua",
+    "children": [
+     "Mua có kỳ hạn",
+     "Mua có bảo lưu quyền truy đòi"
+    ]
+   },
+   {
+    "label": "Người được cấp tín dụng",
+    "children": [
+     "Bên thụ hưởng"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

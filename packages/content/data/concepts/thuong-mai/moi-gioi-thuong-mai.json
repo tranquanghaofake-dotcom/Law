@@ -22,6 +22,30 @@
   "đàm phán, giao kết hợp đồng",
   "hưởng thù lao theo hợp đồng môi giới"
  ],
+ "memo": {
+  "hook": "MÔI GIỚI chỉ KẾT NỐI, không ký thay; thù lao khi các bên ĐÃ KÝ hợp đồng.",
+  "tree": [
+   {
+    "label": "Vai trò",
+    "children": [
+     "Trung gian kết nối",
+     "Không là bên của hợp đồng"
+    ]
+   },
+   {
+    "label": "Chủ thể",
+    "children": [
+     "Bên môi giới là thương nhân"
+    ]
+   },
+   {
+    "label": "Thù lao",
+    "children": [
+     "Khi các bên đã ký hợp đồng"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",
