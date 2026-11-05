@@ -32,12 +32,6 @@ Cách làm: mỗi môn một tệp dữ liệu (gist, kind, hook, icon, case, co
 
 | Môn | Khái niệm | Trạng thái |
 |---|---|---|
-| Xây dựng VBPL (thí điểm) | 20 | xong |
-| An sinh xã hội | 12 | xong |
-| Luật Lao động 2 | 12 | xong |
-| Luật Cạnh tranh | 16 | xong |
-| Tố tụng dân sự | 16 | xong |
-| Luật Đất đai | 19 | xong |
-| 17 môn còn lại | 595 | chưa |
+| Cả 23 môn | 690 | xong (gist, kind, hook, case, contrast, icon đủ 690/690) |
 
-Rút kinh nghiệm đợt 3: (1) kiểm số chữ và độ trùng mẹo ngay trong script trước khi chạy `npm run content` đỡ nhiều vòng; (2) commit chỉ khi grep thấy " 0 lỗi" — một lần lỡ commit dữ liệu lỗi vì chuỗi `&&` dựa vào grep thành công chứ không dựa vào số lỗi; (3) nhánh đã squash vào main: không force push được thì `git merge -s ours` nhánh cũ (cây giống hệt main) rồi push thường.
+Rút kinh nghiệm đợt 3: (1) kiểm số chữ và độ trùng mẹo ngay trong script trước khi chạy `npm run content` đỡ nhiều vòng; (2) commit chỉ khi grep thấy " 0 lỗi" — một lần lỡ commit dữ liệu lỗi vì chuỗi `&&` dựa vào grep thành công chứ không dựa vào số lỗi; (3) nhánh đã squash vào main: không force push được thì `git merge -s ours` nhánh cũ (cây giống hệt main) rồi push thường. (4) Viết Hiểu nhanh nên nhắm ≤ 22 chữ ngay từ đầu; giới hạn 25 hay bị vượt. (5) Kiểm trước khi ghi: số biểu tượng khớp số nhánh, chữ IN HOA còn sót trong ví dụ (vd "HỢP PHÁP", "KOL", "khóa XV"), biểu tượng ghép nhiều ký tự (👨‍⚖️) vượt giới hạn 4. (6) Không tự "sửa" con số luật theo trí nhớ: mức tù người chưa thành niên trong dữ liệu theo Luật Tư pháp người chưa thành niên 2024 (15 năm, ba phần năm), khác Bộ luật Hình sự cũ.
