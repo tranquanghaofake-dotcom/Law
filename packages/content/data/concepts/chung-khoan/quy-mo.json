@@ -5,7 +5,7 @@
  "term": "Quỹ mở",
  "definition": "Quỹ mở là quỹ đại chúng mà chứng chỉ quỹ đã chào bán ra công chúng phải được mua lại theo yêu cầu của nhà đầu tư.",
  "plain": "Đặc trưng của quỹ mở là \"rút tiền được\": nhà đầu tư bán lại chứng chỉ quỹ cho chính quỹ (qua công ty quản lý quỹ) theo giá trị tài sản ròng, với tần suất ghi trong Điều lệ. Quỹ cũng liên tục phát hành thêm. Vì phải sẵn sàng trả tiền, quỹ mở không được đầu tư vào bất động sản (điểm d khoản 1 Điều 110) và chứng chỉ quỹ mở không bắt buộc niêm yết.",
- "example": "Bạn mua chứng chỉ quỹ mở cổ phiếu qua app, 6 tháng sau cần tiền: đặt lệnh bán lại cho quỹ vào kỳ giao dịch kế tiếp và nhận tiền theo NAV/đơn vị của ngày đó.",
+ "example": "Bạn mua chứng chỉ quỹ mở cổ phiếu qua ứng dụng, 6 tháng sau cần tiền: đặt lệnh bán lại cho quỹ vào kỳ giao dịch kế tiếp và nhận tiền theo giá trị tài sản ròng mỗi đơn vị của ngày đó.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 39 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)",
@@ -23,10 +23,13 @@
   "không đầu tư bất động sản"
  ],
  "memo": {
-  "hook": "Quỹ MỞ: phải MUA LẠI theo yêu cầu (rút tiền được) theo NAV; KHÔNG đầu tư bất động sản.",
+  "gist": "Quỹ mở phải mua lại chứng chỉ khi nhà đầu tư yêu cầu, theo giá trị tài sản ròng; không đầu tư bất động sản.",
+  "kind": "tree",
+  "hook": "Cửa hai chiều: vào lúc nào, ra lúc nấy.",
   "tree": [
    {
     "label": "Đặc trưng",
+    "icon": "🔄",
     "children": [
      "Mua lại theo yêu cầu",
      "Liên tục phát hành thêm"
@@ -34,15 +37,27 @@
    },
    {
     "label": "Giá",
+    "icon": "💲",
     "children": [
      "Theo giá trị tài sản ròng"
     ]
    },
    {
     "label": "Hạn chế",
+    "icon": "🚫",
     "children": [
      "Không đầu tư bất động sản"
     ]
+   }
+  ],
+  "case": {
+   "q": "Sáu tháng sau khi mua chứng chỉ quỹ mở, bạn cần tiền. Làm thế nào?",
+   "a": "Đặt lệnh bán lại cho quỹ vào kỳ giao dịch kế tiếp, nhận tiền theo giá trị tài sản ròng."
+  },
+  "contrast": [
+   {
+    "with": "quy-dong",
+    "text": "Quỹ mở mua lại theo yêu cầu; quỹ đóng thì phải bán trên sàn."
    }
   ]
  },

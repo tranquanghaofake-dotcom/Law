@@ -22,10 +22,13 @@
   "không vượt phạm vi ủy quyền"
  ],
  "memo": {
-  "hook": "Người hành nghề: KHÔNG làm 2 công ty, KHÔNG mở tài khoản ở công ty KHÁC, KHÔNG vượt ỦY QUYỀN.",
+  "gist": "Người hành nghề không được làm cùng lúc hai công ty, không mở tài khoản ở công ty khác, không vượt phạm vi ủy quyền.",
+  "kind": "tree",
+  "hook": "Một người một áo đồng phục.",
   "tree": [
    {
     "label": "Cấm",
+    "icon": "🚫",
     "children": [
      "Làm cùng lúc 02 công ty",
      "Mở tài khoản ở công ty khác",
@@ -34,9 +37,20 @@
    },
    {
     "label": "Mục đích",
+    "icon": "🎯",
     "children": [
      "Chống xung đột lợi ích"
     ]
+   }
+  ],
+  "case": {
+   "q": "Môi giới ở công ty A mở tài khoản cá nhân ở công ty B để giao dịch kín. Có vi phạm không?",
+   "a": "Có, trừ khi công ty A không có nghiệp vụ môi giới."
+  },
+  "contrast": [
+   {
+    "with": "nguoi-hanh-nghe-chung-khoan",
+    "text": "Bài này là điều cấm; bài kia nói ai là người hành nghề."
    }
   ]
  },

@@ -5,7 +5,7 @@
  "term": "Sổ đăng ký người sở hữu chứng khoán và ngày đăng ký cuối cùng",
  "definition": "Tổng công ty lưu ký và bù trừ chứng khoán Việt Nam phải lập và lưu giữ Sổ đăng ký người sở hữu chứng khoán đối với các chứng khoán đã đăng ký tập trung tại Tổng công ty lưu ký và bù trừ chứng khoán Việt Nam. (…) Chỉ những người có tên trên Sổ đăng ký người sở hữu chứng khoán lập tại ngày đăng ký cuối cùng theo thông báo của công ty đại chúng, tổ chức phát hành mới được nhận các quyền phát sinh liên quan đến chứng khoán mà mình sở hữu.",
  "plain": "Muốn nhận cổ tức, quyền mua cổ phần, quyền dự họp thì phải có tên trên danh sách người sở hữu \"chốt\" tại ngày đăng ký cuối cùng. Vì thanh toán mất vài ngày làm việc, nhà đầu tư phải mua trước ngày giao dịch không hưởng quyền; mua sau đó thì người bán vẫn hưởng.",
- "example": "Công ty W thông báo ngày đăng ký cuối cùng để trả cổ tức là 15/6. Bạn mua cổ phiếu nhưng đến 15/6 chưa có tên trên Sổ đăng ký: cổ tức đợt này thuộc về người bán.",
+ "example": "Công ty W thông báo ngày đăng ký cuối cùng để trả cổ tức là 15 tháng 6. Bạn mua cổ phiếu nhưng đến ngày đó chưa có tên trong sổ: cổ tức đợt này thuộc về người bán.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 4, khoản 5 Điều 61 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)",
@@ -22,10 +22,13 @@
   "quyền phát sinh"
  ],
  "memo": {
-  "hook": "Muốn nhận cổ tức, quyền phải có tên tại NGÀY ĐĂNG KÝ CUỐI CÙNG.",
+  "gist": "Sổ ghi ai sở hữu chứng khoán; muốn nhận cổ tức hay quyền khác phải có tên trong sổ vào ngày đăng ký cuối cùng.",
+  "kind": "tree",
+  "hook": "Điểm danh trước giờ phát quà: vắng tên thì không có quà.",
   "tree": [
    {
     "label": "Sổ",
+    "icon": "📒",
     "children": [
      "Tổng công ty lập, lưu giữ",
      "Ghi người sở hữu"
@@ -33,15 +36,27 @@
    },
    {
     "label": "Ngày đăng ký cuối cùng",
+    "icon": "📅",
     "children": [
      "Chốt danh sách hưởng quyền"
     ]
    },
    {
     "label": "Hệ quả",
+    "icon": "⚖️",
     "children": [
      "Mua sau ngày không hưởng quyền: người bán hưởng"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ngày đăng ký cuối cùng nhận cổ tức là 15 tháng 6, đến ngày đó bạn chưa có tên trong sổ. Cổ tức thuộc về ai?",
+   "a": "Người bán."
+  },
+  "contrast": [
+   {
+    "with": "chuyen-quyen-so-huu-chung-khoan",
+    "text": "Ngày đăng ký cuối cùng chốt người hưởng quyền; chuyển quyền sở hữu là lúc thành chủ."
    }
   ]
  },

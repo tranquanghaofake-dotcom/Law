@@ -22,10 +22,13 @@
   "Đại hội nhà đầu tư"
  ],
  "memo": {
-  "hook": "Nhà đầu tư quỹ: HƯỞNG LỢI theo tỷ lệ, được KHỞI KIỆN, BIỂU QUYẾT ở Đại hội.",
+  "gist": "Được chia lời theo tỷ lệ góp, đòi quỹ mở mua lại, kiện người quản lý và biểu quyết ở đại hội.",
+  "kind": "tree",
+  "hook": "Góp tiền thì có quyền đòi, quyền kiện, quyền giơ tay.",
   "tree": [
    {
     "label": "Hưởng",
+    "icon": "💰",
     "children": [
      "Lợi nhuận theo tỷ lệ vốn góp",
      "Tài sản khi thanh lý"
@@ -33,21 +36,34 @@
    },
    {
     "label": "Đòi",
+    "icon": "🔄",
     "children": [
      "Mua lại (quỹ mở)"
     ]
    },
    {
     "label": "Bảo vệ",
+    "icon": "⚖️",
     "children": [
      "Khởi kiện công ty quản lý quỹ, ngân hàng giám sát"
     ]
    },
    {
     "label": "Quản trị",
+    "icon": "🗳️",
     "children": [
      "Biểu quyết tại Đại hội nhà đầu tư"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty quản lý quỹ dùng tiền quỹ mua cổ phiếu công ty sân sau gây thiệt hại. Nhà đầu tư làm gì?",
+   "a": "Khởi kiện công ty quản lý quỹ."
+  },
+  "contrast": [
+   {
+    "with": "dai-hoi-nha-dau-tu",
+    "text": "Quyền nhà đầu tư là quyền từng người; đại hội là nơi họp chung."
    }
   ]
  },
