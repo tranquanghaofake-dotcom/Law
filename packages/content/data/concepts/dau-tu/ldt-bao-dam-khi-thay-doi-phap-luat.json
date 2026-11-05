@@ -24,10 +24,13 @@
  ],
  "note": "Luật Đầu tư 143/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Đầu tư 61/2020/QH14 mà đề cương HLU 2021 còn dẫn (khoản 4 Điều 51). Luật 24/2026/QH16 sửa đổi có hiệu lực từ 01/3/2027 (riêng một phần Điều 6 từ 01/01/2027), chỉ sửa Điều 6 và Phụ lục IV, không sửa điều được trích — văn bản hợp nhất 142/2026/VBHN-LQ-VPQH.",
  "memo": {
-  "hook": "Luật mới có lợi hơn → theo MỚI; bất lợi hơn → giữ CŨ.",
+  "gist": "Luật mới cho ưu đãi cao hơn thì hưởng theo luật mới; luật mới bớt ưu đãi thì vẫn giữ mức cũ.",
+  "kind": "compare",
+  "hook": "Như vé máy bay giảm giá sau khi mua: rẻ hơn thì được hoàn chênh lệch, đắt hơn thì giữ giá cũ.",
   "tree": [
    {
     "label": "Ưu đãi cao hơn",
+    "icon": "📈",
     "children": [
      "Theo luật mới",
      "Cho thời gian còn lại"
@@ -35,15 +38,27 @@
    },
    {
     "label": "Ưu đãi thấp hơn",
+    "icon": "📉",
     "children": [
      "Tiếp tục theo quy định cũ"
     ]
    },
    {
     "label": "Ngoại lệ",
+    "icon": "⭐",
     "children": [
      "Ưu đãi đầu tư đặc biệt"
     ]
+   }
+  ],
+  "case": {
+   "q": "Dự án F được miễn thuế 4 năm; sau 2 năm luật mới chỉ cho miễn 2 năm. F còn được miễn thêm bao lâu?",
+   "a": "Thêm 2 năm còn lại theo quy định cũ."
+  },
+  "contrast": [
+   {
+    "with": "ldt-uu-dai-dau-tu",
+    "text": "Bảo đảm khi đổi luật là giữ ưu đãi cũ; ưu đãi đầu tư là ai được ưu đãi và ưu đãi gì."
    }
   ]
  },

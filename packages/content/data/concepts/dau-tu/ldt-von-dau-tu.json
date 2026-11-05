@@ -24,10 +24,13 @@
  ],
  "note": "Luật Đầu tư 143/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Đầu tư 61/2020/QH14 mà đề cương HLU 2021 còn dẫn (khoản 4 Điều 51). Luật 24/2026/QH16 sửa đổi có hiệu lực từ 01/3/2027 (riêng một phần Điều 6 từ 01/01/2027), chỉ sửa Điều 6 và Phụ lục IV, không sửa điều được trích — văn bản hợp nhất 142/2026/VBHN-LQ-VPQH.",
  "memo": {
-  "hook": "Vốn đầu tư: TIỀN và TÀI SẢN KHÁC.",
+  "gist": "Vốn đầu tư là tiền và các tài sản khác như đất, bằng sáng chế, giấy tờ có giá, dùng để làm ăn.",
+  "kind": "tree",
+  "hook": "Không chỉ tiền trong ví: chìa khóa mảnh đất hay bằng phát minh cũng là vốn.",
   "tree": [
    {
     "label": "Gồm",
+    "icon": "💵",
     "children": [
      "Tiền",
      "Tài sản khác theo luật dân sự"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Tài sản khác",
+    "icon": "🧾",
     "children": [
      "Giấy tờ có giá",
      "Quyền sở hữu trí tuệ",
@@ -43,9 +47,20 @@
    },
    {
     "label": "Mục đích",
+    "icon": "🎯",
     "children": [
      "Đầu tư kinh doanh"
     ]
+   }
+  ],
+  "case": {
+   "q": "Nhà đầu tư góp quyền sử dụng đất và bằng sáng chế để lập công ty. Có phải vốn đầu tư không?",
+   "a": "Có. Cả hai là tài sản khác theo pháp luật dân sự."
+  },
+  "contrast": [
+   {
+    "with": "ldt-dau-tu-kinh-doanh",
+    "text": "Vốn là thứ bỏ ra; đầu tư kinh doanh là hành động bỏ vốn."
    }
   ]
  },

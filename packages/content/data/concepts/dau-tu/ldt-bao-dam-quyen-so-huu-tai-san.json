@@ -25,10 +25,13 @@
  ],
  "note": "Luật Đầu tư 143/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Đầu tư 61/2020/QH14 mà đề cương HLU 2021 còn dẫn (khoản 4 Điều 51). Luật 24/2026/QH16 sửa đổi có hiệu lực từ 01/3/2027 (riêng một phần Điều 6 từ 01/01/2027), chỉ sửa Điều 6 và Phụ lục IV, không sửa điều được trích — văn bản hợp nhất 142/2026/VBHN-LQ-VPQH.",
  "memo": {
-  "hook": "KHÔNG quốc hữu hóa, KHÔNG tịch thu hành chính; trưng mua, trưng dụng thì BỒI THƯỜNG.",
+  "gist": "Tài sản hợp pháp của nhà đầu tư không bị Nhà nước quốc hữu hóa hay tịch thu bằng quyết định hành chính.",
+  "kind": "tree",
+  "hook": "Như cam kết của chủ nhà với người thuê: không đuổi, không lấy đồ; mượn tạm thì phải đền.",
   "tree": [
    {
     "label": "Cam kết",
+    "icon": "🛡️",
     "children": [
      "Không quốc hữu hóa",
      "Không tịch thu bằng biện pháp hành chính"
@@ -36,6 +39,7 @@
    },
    {
     "label": "Ngoại lệ",
+    "icon": "⚠️",
     "children": [
      "Trưng mua",
      "Trưng dụng"
@@ -43,9 +47,20 @@
    },
    {
     "label": "Khi ngoại lệ",
+    "icon": "💵",
     "children": [
      "Thanh toán, bồi thường"
     ]
+   }
+  ],
+  "case": {
+   "q": "Tỉnh cần kho của công ty E làm điểm cứu hộ lũ lụt, trưng dụng kho. Công ty E được gì?",
+   "a": "Được bồi thường theo pháp luật về trưng mua, trưng dụng."
+  },
+  "contrast": [
+   {
+    "with": "ldt-bao-dam-khi-thay-doi-phap-luat",
+    "text": "Bảo đảm sở hữu giữ tài sản; bảo đảm khi đổi luật giữ ưu đãi."
    }
   ]
  },

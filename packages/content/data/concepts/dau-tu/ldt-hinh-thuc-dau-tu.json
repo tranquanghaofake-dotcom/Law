@@ -5,7 +5,7 @@
  "term": "Hình thức đầu tư",
  "definition": "Đầu tư thành lập tổ chức kinh tế. Đầu tư góp vốn, mua cổ phần, mua phần vốn góp. Thực hiện dự án đầu tư. Đầu tư theo hình thức hợp đồng BCC. Các hình thức đầu tư, loại hình tổ chức kinh tế mới theo quy định của Chính phủ.",
  "plain": "Năm hình thức: (1) thành lập TỔ CHỨC KINH TẾ; (2) GÓP VỐN, MUA CỔ PHẦN, MUA PHẦN VỐN GÓP; (3) THỰC HIỆN DỰ ÁN đầu tư; (4) HỢP ĐỒNG BCC; (5) hình thức mới theo quy định của Chính phủ. Hình thức (2) không phải xin Giấy chứng nhận đăng ký đầu tư (điểm c khoản 2 Điều 26) nhưng nhà đầu tư nước ngoài phải đăng ký góp vốn trong các trường hợp ở khoản 3 Điều 21.",
- "example": "Nhà đầu tư Úc mua 30% phần vốn góp của công ty TNHH Việt Nam: hình thức góp vốn, mua phần vốn góp (khoản 2 Điều 18).",
+ "example": "Nhà đầu tư Úc mua 30% phần vốn góp của một công ty trách nhiệm hữu hạn Việt Nam: hình thức góp vốn, mua phần vốn góp (khoản 2 Điều 18).",
  "source": {
   "kind": "statute",
   "cite": "Điều 18 Luật Đầu tư 2025",
@@ -25,37 +25,54 @@
  ],
  "note": "Luật Đầu tư 143/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Đầu tư 61/2020/QH14 mà đề cương HLU 2021 còn dẫn (khoản 4 Điều 51). Luật 24/2026/QH16 sửa đổi có hiệu lực từ 01/3/2027 (riêng một phần Điều 6 từ 01/01/2027), chỉ sửa Điều 6 và Phụ lục IV, không sửa điều được trích — văn bản hợp nhất 142/2026/VBHN-LQ-VPQH.",
  "memo": {
-  "hook": "Năm hình thức: LẬP tổ chức – GÓP VỐN – DỰ ÁN – BCC – hình thức mới.",
+  "gist": "Năm cách đầu tư: lập công ty, góp vốn mua cổ phần, làm dự án, ký hợp đồng hợp tác, và cách mới.",
+  "kind": "tree",
+  "hook": "Như vào làm ăn: mở cửa hàng riêng, góp cổ với người khác, nhận một công trình, hay bắt tay chia lời.",
   "tree": [
    {
     "label": "Thành lập",
+    "icon": "🏢",
     "children": [
      "Tổ chức kinh tế"
     ]
    },
    {
     "label": "Góp vốn",
+    "icon": "💵",
     "children": [
      "Mua cổ phần, phần vốn góp"
     ]
    },
    {
     "label": "Dự án",
+    "icon": "🏗️",
     "children": [
      "Thực hiện dự án đầu tư"
     ]
    },
    {
     "label": "Hợp đồng",
+    "icon": "🤝",
     "children": [
-     "Hợp đồng BCC"
+     "Hợp đồng hợp tác kinh doanh"
     ]
    },
    {
     "label": "Khác",
+    "icon": "➕",
     "children": [
      "Theo quy định của Chính phủ"
     ]
+   }
+  ],
+  "case": {
+   "q": "Nhà đầu tư Úc mua 30% phần vốn góp của một công ty ở Việt Nam. Đây là hình thức nào?",
+   "a": "Góp vốn, mua phần vốn góp."
+  },
+  "contrast": [
+   {
+    "with": "ldt-hop-dong-bcc",
+    "text": "Hình thức đầu tư là cả năm cách; hợp đồng hợp tác kinh doanh chỉ là một cách, không lập công ty mới."
    }
   ]
  },
