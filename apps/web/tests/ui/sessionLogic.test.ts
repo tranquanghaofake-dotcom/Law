@@ -1,5 +1,6 @@
 import { beforeEach, describe, expect, it } from 'vitest';
-import { feedbackSpeech } from '$lib/ui/session/speech';
+import { feedbackSpeech, promptSpeech } from '$lib/ui/session/speech';
+import type { Concept } from '$lib/content/types';
 import { comboTier } from '$lib/ui/session/combo';
 import { createMatch, firstTry, isComplete, matchCorrect, tap } from '$lib/ui/session/matchGame';
 import { place, sideAt, sortCorrect, sortWrongs, type Placed } from '$lib/ui/session/sortGame';
@@ -8,8 +9,8 @@ import type { StepItem } from '$lib/engine/session';
 
 describe('feedbackSpeech', () => {
   const mcq: StepItem = { type: 'mcq', level: 1, q: 'q', options: ['Một', 'Hai'], answer: 1, explain: 'Vì Hai đúng' };
-  it('đúng → "Chính xác." + giải thích', () => {
-    expect(feedbackSpeech(mcq, { correct: true })).toBe('Chính xác. Vì Hai đúng.');
+  it('đúng → "Chính xác." + đọc đáp án + giải thích (đáp án chỉ đọc sau khi trả lời)', () => {
+    expect(feedbackSpeech(mcq, { correct: true })).toBe('Chính xác. Đáp án: Hai. Vì Hai đúng.');
   });
   it('sai → đọc đáp án rồi giải thích', () => {
     expect(feedbackSpeech(mcq, { correct: false })).toBe('Chưa đúng. Đáp án: Hai. Vì Hai đúng.');
@@ -96,5 +97,28 @@ describe('record', () => {
     Object.defineProperty(window, 'localStorage', { get() { throw new Error('blocked'); }, configurable: true });
     try { expect(readRecord().bestCombo).toBe(0); expect(() => submitRecord({ bestCombo: 5, correct: 5, total: 5 })).not.toThrow(); }
     finally { Object.defineProperty(window, 'localStorage', orig); }
+  });
+});
+
+describe('promptSpeech — đọc đề/khái niệm ngay khi thẻ hiện, KHÔNG lộ đáp án', () => {
+  const concept = { term: 'Tài sản', definition: 'Tài sản là vật, tiền.' } as Concept;
+  it('thẻ giới thiệu: đọc tên và định nghĩa khái niệm', () => {
+    expect(promptSpeech({ type: 'intro' }, concept)).toBe('Tài sản. Tài sản là vật, tiền.');
+  });
+  it('trắc nghiệm/tình huống: đọc câu hỏi và các phương án, không nói phương án nào đúng', () => {
+    const t = promptSpeech({ type: 'mcq', level: 1, q: 'Tài sản gồm gì?', options: ['Vật', 'Ý tưởng'], answer: 0, explain: 'Vì vật.' }, concept);
+    expect(t).toBe('Tài sản gồm gì? A: Vật. B: Ý tưởng.');
+    expect(t).not.toContain('Vì vật');
+  });
+  it('đúng/sai: đọc nhận định; điền chỗ trống: đọc "chỗ trống" thay cho đáp án; che […] cũng đọc "chỗ trống"', () => {
+    expect(promptSpeech({ type: 'truefalse', level: 4, statement: 'Tiền là tài sản', answer: true, explain: 'x' }, concept)).toBe('Đúng hay sai? Tiền là tài sản.');
+    const cz = promptSpeech({ type: 'cloze', level: 3, text: 'Tài sản là {{vật}}, tiền.' }, concept);
+    expect(cz).toBe('Điền vào chỗ trống: Tài sản là chỗ trống, tiền.');
+    expect(cz).not.toContain('vật');
+    expect(promptSpeech({ type: 'mcq', level: 1, q: '«[…] là vật, tiền» là gì?', options: ['Tài sản'], answer: 0, explain: '' }, concept)).toContain('«chỗ trống là vật, tiền»');
+  });
+  it('xếp cột/ghép cặp: đọc yêu cầu ngắn, không đọc danh sách', () => {
+    expect(promptSpeech({ type: 'sort', level: 2, left: 'A', right: 'B', cases: [{ text: 'dài', answer: 'left' }], explain: '' }, concept)).toBe('Phân biệt: A hay B.');
+    expect(promptSpeech({ type: 'match', level: 2, pairs: [{ conceptId: 'a', term: 'T', text: 'x' }], explain: '' }, concept)).toBe('Ghép thuật ngữ với mô tả.');
   });
 });
