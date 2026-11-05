@@ -71,7 +71,7 @@ Làm: từ đề tài thô, đưa ra **3 phương án** (hẹp / vừa / tham v�
 Tên đề tài phải nêu đối tượng + phạm vi + góc tiếp cận. Ví dụ khuôn: "Pháp luật về X — thực trạng và kiến nghị hoàn thiện"; "X theo pháp luật [nước A] và kinh nghiệm cho Việt Nam"; "Thực tiễn áp dụng X tại Tòa án…".
 Sai lầm cần chặn: đề tài rộng như giáo trình ("Pháp luật về hợp đồng"); trùng hoàn toàn khóa luận hoặc luận văn trước; văn bản nền sắp bị thay thế mà không xử lý.
 **Kiểm đường ống lập pháp** (trước khi chấm phương án): văn bản nền có dự thảo sửa đổi đang lấy ý kiến hoặc đang trình Quốc hội không (chương trình xây dựng luật, cổng góp ý dự thảo, tin kỳ họp)? Ghi trạng thái và ngày kiểm vào `01-tham-dinh.md`. Nếu có: chấm thêm tiêu chí **"bền trước thay đổi luật"**, ưu tiên câu hỏi còn giá trị dù dự thảo được thông qua hay không (ví dụ câu hỏi chuyển tiếp, hồi tố, áp dụng luật), và viết sẵn **kế hoạch A (thông qua) / B (không thông qua)**. Không viết phần phân tích quy định trước khi biết kết quả biểu quyết; phần lý luận chung dùng cho cả A và B thì viết được. Dự thảo luôn ghi "dự thảo ngày …", không gọi là "luật mới".
-**Tìm ngách**: quét 9 nguồn tín hiệu, xét khoảng trống thời gian, rồi áp phép thử 4 điều kiện trong `references/tim-ngach.md`. Nếu ở pha 2 hoặc pha 5 lộ ra ngách tốt hơn, **quay lại pha 1**.
+**Tìm ngách**: quét 10 nguồn tín hiệu, xét khoảng trống thời gian, rồi áp phép thử 4 điều kiện trong `references/tim-ngach.md`. Nếu ở pha 2 hoặc pha 5 lộ ra ngách tốt hơn, **quay lại pha 1**.
 Cổng: người dùng chọn 1 phương án; đã ghi ≥ 3 công trình gần nhất (đã kiểm có thật) và 1 câu "đề tài này khác các công trình đó ở …".
 
 ### Pha 2 — Tổng quan tình hình nghiên cứu
@@ -113,7 +113,7 @@ Cổng: `kiem_tra_ban_thao.py` chạy trên bản cuối báo 0 lỗi; checklist
 | Cần | Đọc |
 |---|---|
 | Thang điểm Euréka, Bộ GD&ĐT, cấp trường; ẩn danh | `references/tieu-chi-cham.md` |
-| Tìm ngách: 9 nguồn tín hiệu, khoảng trống thời gian, phép thử 4 điều kiện | `references/tim-ngach.md` |
+| Tìm ngách: 10 nguồn tín hiệu, khoảng trống thời gian, phép thử 4 điều kiện | `references/tim-ngach.md` |
 | Chọn và viết phương pháp nghiên cứu luật học | `references/phuong-phap-luat-hoc.md` |
 | Tìm văn bản, bản án, án lệ, tạp chí, tài liệu nước ngoài | `references/nguon-tra-cuu.md` |
 | Khung phần mở đầu, đề cương, ma trận tài liệu | `references/de-cuong-mau.md` |
@@ -121,7 +121,7 @@ Cổng: `kiem_tra_ban_thao.py` chạy trên bản cuối báo 0 lỗi; checklist
 | Lỗi hội đồng hay bắt, câu hỏi bảo vệ | `references/phan-bien-hoi-dong.md` |
 | Nhật ký AI, quy tắc diễn đạt lại, đạo văn | `references/liem-chinh-ai.md` |
 | Kiểm bản nháp tự động | `python3 scripts/kiem_tra_ban_thao.py <file.md>` |
-| Ví dụ đã chạy, kèm phiếu tự chấm và bài học: luật doanh nghiệp (3 vòng, 55 → 71) và luật lao động + dữ liệu (2 vòng, 58 → 71); hình sự khi văn bản nền đang sửa (đề cương, 46); thi hành án và luật vừa có hiệu lực (57) | `vi-du/giao-dich-nguoi-co-lien-quan/`, `vi-du/giam-sat-nguoi-lao-dong/`, `vi-du/an-treo/`, `vi-du/tai-san-so-thi-hanh-an/` |
+| Ví dụ đã chạy, kèm phiếu tự chấm và bài học: luật doanh nghiệp (3 vòng, 55 → 71) và luật lao động + dữ liệu (2 vòng, 58 → 71); hình sự khi văn bản nền đang sửa (đề cương, 46); thi hành án và luật vừa có hiệu lực (63); dữ liệu cá nhân + thực nghiệm chưa có dữ liệu (55) | `vi-du/giao-dich-nguoi-co-lien-quan/`, `vi-du/giam-sat-nguoi-lao-dong/`, `vi-du/an-treo/`, `vi-du/tai-san-so-thi-hanh-an/`, `vi-du/tin-nhan-quang-cao/` |
 
 ## Công cụ, nếu phiên có
 

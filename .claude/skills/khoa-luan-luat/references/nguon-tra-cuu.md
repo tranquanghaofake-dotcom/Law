@@ -70,3 +70,6 @@ Thư viện số các trường luật (ĐH Luật Hà Nội, ĐH Luật TP.HCM,
 ## Bản gốc hay bản đang có hiệu lực
 Trang văn bản của vanban.chinhphu.vn, chinhphu.vn hiển thị **bản gốc** lúc ban hành. Bài viết dẫn "Luật … 2008" thường đang nói bản đã sửa. Ví dụ chạy thử: bản gốc khoản 3 Điều 67 Luật THADS 2008 ghi thời hạn 05 ngày làm việc, bài của cơ quan thi hành án dẫn 10 ngày (bản sau Luật 64/2014/QH13). Muốn so luật cũ với luật mới thì so với **VBHN cuối cùng** của luật cũ, không so với bản gốc.
 Khi tra một luật để xác minh, ghi cả trích yếu (tên luật), không chỉ số hiệu. Một bộ luật có thể bị sửa bởi luật chuyên ngành (ví dụ chạy thử: Luật Tư pháp người chưa thành niên 59/2024/QH15 bãi bỏ Chương XII BLHS từ 01/01/2026), nên tìm "được sửa đổi, bổ sung bởi" trong VBHN mới nhất, không chỉ tìm "Luật sửa đổi Bộ luật …". Một lần tra không thấy chưa đủ để kết luận "không có".
+
+## Chế tài có thể chuyển văn bản
+Điều khoản xử phạt hay bị chuyển từ nghị định này sang nghị định khác khi đổi cơ quan quản lý. Ví dụ chạy thử: xử phạt tin nhắn rác từng được bổ sung vào Điều 94 NĐ 15/2020/NĐ-CP (bởi Điều 32 NĐ 91/2020/NĐ-CP), nay có chương riêng trong NĐ 330/2026/NĐ-CP. Trước khi viết "bị phạt theo …", tra xem điều khoản cũ đã bị bãi bỏ hay thay thế chưa.

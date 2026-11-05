@@ -38,6 +38,10 @@ Cảnh báo: 3–5 bản án minh họa chưa chứng minh được "thực ti�
 Dùng khi: câu hỏi về nhận thức, hành vi, hiệu quả thực thi.
 Yêu cầu tối thiểu: mục tiêu khảo sát gắn câu hỏi nghiên cứu; cách chọn mẫu và cỡ mẫu (nói rõ giới hạn đại diện); bảng hỏi đính kèm phụ lục; đồng ý tham gia, ẩn danh; phân tích mô tả bằng tần suất, tỷ lệ là đủ cho sinh viên. **Chỉ viết kết quả từ dữ liệu người dùng đã thật sự thu.**
 
+### 5b. Thực nghiệm kiểm chứng (audit test)
+Dùng khi: muốn biết một nghĩa vụ có được tuân thủ trên thực tế không (ví dụ: người quảng cáo có ngừng gửi sau yêu cầu từ chối không) mà không có số liệu công khai.
+Yêu cầu: chỉ dùng tài khoản, số điện thoại của chính người nghiên cứu; không tạo phản ánh giả, không đóng vai người khác; ghi nhật ký có ảnh chụp; mã hóa tên doanh nghiệp; viết kết quả ở dạng "trong N trường hợp đã thử", không khái quát. Claude chỉ thiết kế bảng nhật ký và phân tích **sau khi** người dùng có dữ liệu.
+
 ### 6. Phân tích – tổng hợp, quy nạp – diễn dịch
 Là thao tác tư duy nền, không đủ để làm "phương pháp" riêng. Nêu kèm 1 trong các phương pháp trên.
 

@@ -127,6 +127,16 @@ class KiemTraBanThao(unittest.TestCase):
         van = "Luật số 106/2025/QH15 lần đầu đưa tài sản số vào biện pháp phong tỏa.[^1]\n\n[^1]: Nguồn."
         self.assertEqual(len(muc(kiem_tra(van), "khang-dinh-so-sanh-khong-nguon")), 0)
 
+    def test_dau_tien_trong_thuat_ngu_va_tieu_de_khong_bao(self):
+        van = ("### 2.1. Tin nhắn đăng ký quảng cáo đầu tiên\n\n"
+               "Người quảng cáo gửi tin nhắn đăng ký quảng cáo đầu tiên khi chưa có đồng ý. "
+               "Nghị định cho gửi \"tin nhắn đăng ký quảng cáo đầu tiên và duy nhất\".")
+        self.assertEqual(len(muc(kiem_tra(van), "khang-dinh-so-sanh-khong-nguon")), 0)
+
+    def test_la_van_ban_dau_tien_van_bao(self):
+        van = "Luật số 91/2025/QH15 là văn bản đầu tiên quy định về quảng cáo dựa trên dữ liệu."
+        self.assertEqual(len(muc(kiem_tra(van), "khang-dinh-so-sanh-khong-nguon")), 1)
+
     def test_ban_sach_khong_loi_chan(self):
         van = (
             "Khoản 1 Điều 4 Luật Doanh nghiệp (Luật số 59/2020/QH14) quy định…[^1]\n\n"

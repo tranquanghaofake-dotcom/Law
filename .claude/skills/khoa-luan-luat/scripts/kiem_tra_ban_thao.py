@@ -149,8 +149,16 @@ def kiem_tra(van, nop=False, an_danh=None, tieu_de_khac=None, nguyen_van=None):
 
     # 5c. Khẳng định so sánh với quá khứ ("lần đầu", "chưa từng"…) phải có footnote ngay trong câu:
     #     muốn nói "lần đầu" thì phải đã đọc cả văn bản cũ, không suy từ văn bản mới
-    than = re.sub(r"(?m)^\[\^[^\]]+\]:.*$", "", van)
-    for m in re.finditer(r"[^.!?\n]*\b(lần đầu|đầu tiên|chưa từng|duy nhất)\b[^.!?\n]*[.!?]?(\[\^[^\]]+\])?", than, re.I):
+    #     Bỏ qua footnote, tiêu đề, đoạn trong ngoặc kép (thường là nguyên văn hoặc tên thuật ngữ);
+    #     "đầu tiên" chỉ tính khi đi sau "là / trở thành …" ("là văn bản đầu tiên"), không tính khi là
+    #     một phần thuật ngữ ("tin nhắn đăng ký quảng cáo đầu tiên").
+    def _xoa(mau, chuoi):
+        return re.sub(mau, lambda x: " " * len(x.group(0)), chuoi)
+    than = _xoa(r"(?m)^\[\^[^\]]+\]:.*$", van)
+    than = _xoa(r"(?m)^#.*$", than)
+    than = _xoa(r"\"[^\"\n]*\"|“[^”\n]*”", than)
+    tu_khoa = r"lần đầu|chưa từng|duy nhất|(?:là|trở thành)\s+[^.,;\n]{0,40}?đầu tiên"
+    for m in re.finditer(rf"[^.!?\n]*\b({tu_khoa})\b[^.!?\n]*[.!?]?(\[\^[^\]]+\])?", than, re.I):
         dong_chua = than[than.rfind("\n", 0, m.start()) + 1: (than.find("\n", m.end()) + 1 or len(than) + 1) - 1]
         if not m.group(2) and "[^" not in m.group(0) and not re.search(r"\(xem (mục )?\d+(\.\d+)+", dong_chua):
             them("khang-dinh-so-sanh-khong-nguon", "NẶNG", _dong(van, m.start()),
