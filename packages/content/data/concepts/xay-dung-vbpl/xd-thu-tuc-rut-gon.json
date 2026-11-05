@@ -27,28 +27,42 @@
  "memo": {
   "gist": "Khi có việc gấp như thiên tai, dịch bệnh, Nhà nước được ban hành văn bản luật nhanh hơn, có thể hiệu lực ngay.",
   "kind": "checklist",
-  "hook": "Làm theo thủ tục rút gọn thì không phải làm bước chính sách.",
+  "hook": "Như xe cứu thương được vượt đèn đỏ: bỏ qua bước làm chính sách.",
   "tree": [
    {
     "label": "Khẩn cấp",
+    "icon": "🚨",
     "children": [
      "Thiên tai, dịch bệnh, quốc phòng"
     ]
    },
    {
     "label": "Cấp bách",
+    "icon": "⚡",
     "children": [
      "Vấn đề thực tế cần xử lý ngay"
     ]
    },
    {
-    "label": "Cần tạm ngưng hiệu lực"
+    "label": "Cần tạm ngưng hiệu lực",
+    "icon": "⏸️"
    },
    {
     "label": "Cần sửa ngay",
+    "icon": "🛠️",
     "children": [
      "Cho phù hợp văn bản mới, điều ước"
     ]
+   }
+  ],
+  "case": {
+   "q": "Dịch bệnh bùng phát, Chính phủ cần nghị định hỗ trợ người lao động ngay. Làm theo thủ tục nào?",
+   "a": "Thủ tục rút gọn: không phải làm bước chính sách và có thể có hiệu lực từ ngày ký."
+  },
+  "contrast": [
+   {
+    "with": "xd-quy-trinh-xay-dung-chinh-sach",
+    "text": "Quy trình xây dựng chính sách là đường đầy đủ; thủ tục rút gọn là đường tắt khi gấp, bỏ qua bước chính sách."
    }
   ]
  },

@@ -29,31 +29,45 @@
  "memo": {
   "gist": "Trước khi chọn chính sách, phải dự báo mỗi giải pháp sẽ tác động thế nào để chọn cách tốt nhất.",
   "kind": "checklist",
-  "hook": "Bốn câu hỏi: có hợp luật không, tốn bao nhiêu, ảnh hưởng nam nữ ra sao, thêm thủ tục gì.",
+  "hook": "Như đi khám trước khi uống thuốc: chữa được gì, tốn bao nhiêu, có tác dụng phụ không.",
   "tree": [
    {
     "label": "Tác động tới hệ thống pháp luật",
+    "icon": "⚖️",
     "children": [
      "Có trái Hiến pháp, luật khác không"
     ]
    },
    {
     "label": "Tác động kinh tế, xã hội",
+    "icon": "📊",
     "children": [
      "Chi phí và lợi ích"
     ]
    },
    {
     "label": "Tác động về giới",
+    "icon": "👫",
     "children": [
      "Nếu có"
     ]
    },
    {
     "label": "Tác động của thủ tục hành chính",
+    "icon": "📝",
     "children": [
      "Nếu có"
     ]
+   }
+  ],
+  "case": {
+   "q": "Đề xuất cấm xe máy xăng trong nội đô: trước khi chọn phương án phải làm gì?",
+   "a": "Dự báo chi phí cho người dân, lợi ích môi trường, sự phù hợp với luật và thủ tục phát sinh, rồi mới chọn."
+  },
+  "contrast": [
+   {
+    "with": "xd-chinh-sach",
+    "text": "Chính sách là giải pháp; đánh giá tác động là bước cân nhắc từng giải pháp đó tốt xấu ra sao."
    }
   ]
  },

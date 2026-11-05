@@ -25,23 +25,41 @@
  "memo": {
   "gist": "Quy phạm pháp luật là quy tắc chung: ai ở trong hoàn cảnh đó cũng phải theo, và Nhà nước bảo đảm thực hiện.",
   "kind": "checklist",
-  "hook": "Phạt một người cụ thể là áp dụng luật, không phải quy phạm.",
+  "hook": "Quy phạm như biển báo giao thông: ai đi qua cũng phải theo, dùng mãi chứ không dùng một lần.",
   "tree": [
    {
     "label": "Áp dụng chung",
+    "icon": "👥",
     "children": [
      "Cho mọi người trong hoàn cảnh đó",
      "Dùng nhiều lần"
     ]
    },
    {
-    "label": "Bắt buộc"
+    "label": "Bắt buộc",
+    "icon": "❗"
    },
    {
-    "label": "Do cơ quan có thẩm quyền ban hành"
+    "label": "Do cơ quan có thẩm quyền ban hành",
+    "icon": "🏛️"
    },
    {
-    "label": "Nhà nước bảo đảm thực hiện"
+    "label": "Nhà nước bảo đảm thực hiện",
+    "icon": "🛡️"
+   }
+  ],
+  "case": {
+   "q": "Quyết định phạt anh C 400 nghìn đồng vì không đội mũ bảo hiểm có phải quy phạm không?",
+   "a": "Không. Nó chỉ áp dụng một lần cho anh C; quy định bắt đội mũ bảo hiểm mới là quy phạm."
+  },
+  "contrast": [
+   {
+    "with": "xd-van-ban-qppl",
+    "text": "Quy phạm là một quy tắc; văn bản quy phạm là tờ văn bản chứa quy tắc đó, ban hành đúng thủ tục."
+   },
+   {
+    "with": "xd-chinh-sach",
+    "text": "Chính sách là ý tưởng giải quyết vấn đề; quy phạm là câu chữ bắt buộc được viết ra từ ý tưởng đó."
    }
   ]
  },

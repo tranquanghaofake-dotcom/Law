@@ -27,10 +27,11 @@
  "memo": {
   "gist": "Trước khi Quốc hội bàn, một ủy ban của Quốc hội xem xét kỹ dự án luật; hồ sơ phải gửi trước 45 ngày.",
   "kind": "tree",
-  "hook": "Thẩm tra do phía Quốc hội làm; thẩm định do phía Chính phủ làm.",
+  "hook": "Tra – Quốc hội, Định – Chính phủ: thẩm tra là cửa cuối trước hội trường Quốc hội.",
   "tree": [
    {
     "label": "Ai làm",
+    "icon": "🏛️",
     "children": [
      "Hội đồng Dân tộc",
      "Các ủy ban của Quốc hội"
@@ -38,6 +39,7 @@
    },
    {
     "label": "Hạn hồ sơ",
+    "icon": "⏰",
     "children": [
      "45 ngày trước kỳ họp Quốc hội",
      "20 ngày trước phiên Ủy ban thường vụ"
@@ -45,9 +47,20 @@
    },
    {
     "label": "Luôn tham gia",
+    "icon": "⚖️",
     "children": [
      "Ủy ban Pháp luật và Tư pháp"
     ]
+   }
+  ],
+  "case": {
+   "q": "Dự án Luật Điện lực do Chính phủ trình. Ủy ban nào luôn tham gia về tính hợp hiến, hợp pháp?",
+   "a": "Ủy ban Pháp luật và Tư pháp của Quốc hội."
+  },
+  "contrast": [
+   {
+    "with": "xd-tham-dinh",
+    "text": "Thẩm tra do ủy ban của Quốc hội làm trước khi Quốc hội bàn; thẩm định do Bộ Tư pháp làm trước khi Chính phủ trình."
    }
   ]
  },

@@ -28,10 +28,11 @@
  "memo": {
   "gist": "Văn bản luật chia thành phần, chương, điều, khoản, điểm; số hiệu cho biết số, năm, loại và nơi ban hành.",
   "kind": "tree",
-  "hook": "Số hiệu có năm là văn bản quy phạm; không có năm thường là văn bản áp dụng một lần.",
+  "hook": "Số hiệu như thẻ căn cước: số mấy, năm nào, loại gì, của ai. Không có năm là giấy dùng một lần.",
   "tree": [
    {
     "label": "Bố cục",
+    "icon": "📑",
     "children": [
      "Phần, chương, mục",
      "Điều, khoản, điểm",
@@ -40,12 +41,23 @@
    },
    {
     "label": "Số hiệu gồm",
+    "icon": "🔢",
     "children": [
      "Số thứ tự",
      "Năm ban hành",
      "Loại văn bản",
      "Cơ quan ban hành"
     ]
+   }
+  ],
+  "case": {
+   "q": "Nghị quyết số 15 của Hội đồng nhân dân tỉnh, số hiệu không ghi năm, là loại văn bản gì?",
+   "a": "Văn bản áp dụng một lần (cá biệt), vì văn bản quy phạm luôn ghi năm trong số hiệu."
+  },
+  "contrast": [
+   {
+    "with": "xd-van-ban-qppl",
+    "text": "Bố cục và số hiệu là cách trình bày; còn văn bản quy phạm là loại văn bản chứa quy tắc chung, ban hành đúng thủ tục."
    }
   ]
  },

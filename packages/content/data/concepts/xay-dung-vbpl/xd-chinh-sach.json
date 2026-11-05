@@ -27,31 +27,45 @@
  "memo": {
   "gist": "Chính sách là cách Nhà nước giải quyết một vấn đề thực tế; có chính sách trước rồi mới viết thành điều luật.",
   "kind": "steps",
-  "hook": "Nhớ ba bước: vấn đề, mục tiêu, giải pháp.",
+  "hook": "Như xây nhà: vẽ bản thiết kế xong mới đổ móng.",
   "tree": [
    {
     "label": "Vấn đề",
+    "icon": "❗",
     "children": [
      "Điều gì đang bất cập"
     ]
    },
    {
     "label": "Mục tiêu",
+    "icon": "🎯",
     "children": [
      "Muốn đạt được điều gì"
     ]
    },
    {
     "label": "Giải pháp",
+    "icon": "🛠️",
     "children": [
      "Nhà nước sẽ làm gì"
     ]
    },
    {
     "label": "Viết thành luật",
+    "icon": "📜",
     "children": [
      "Biến giải pháp thành quy định"
     ]
+   }
+  ],
+  "case": {
+   "q": "Điều khoản 'xe ô tô vào khu vực X phải nộp phí' là chính sách hay quy phạm?",
+   "a": "Là quy phạm: nó viết giải pháp thu phí thành quy tắc bắt buộc. Chính sách là ý tưởng giải pháp đằng sau."
+  },
+  "contrast": [
+   {
+    "with": "xd-quy-pham-phap-luat",
+    "text": "Chính sách là ý tưởng giải quyết vấn đề; quy phạm là câu chữ bắt buộc được viết ra từ ý tưởng đó."
    }
   ]
  },

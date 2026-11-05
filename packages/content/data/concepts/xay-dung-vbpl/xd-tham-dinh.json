@@ -27,10 +27,11 @@
  "memo": {
   "gist": "Trước khi Chính phủ trình một dự án luật, Bộ Tư pháp đọc và đánh giá dự thảo trong 30 ngày.",
   "kind": "tree",
-  "hook": "Thẩm định do phía Chính phủ làm; thẩm tra do phía Quốc hội làm.",
+  "hook": "Định – Chính phủ, Tra – Quốc hội: thẩm định ở nhà mình, thẩm tra ở nhà Quốc hội.",
   "tree": [
    {
     "label": "Ai làm",
+    "icon": "👤",
     "children": [
      "Bộ Tư pháp chủ trì",
      "Các bộ liên quan phối hợp"
@@ -38,6 +39,7 @@
    },
    {
     "label": "Khi nào",
+    "icon": "⏰",
     "children": [
      "Trước khi trình Chính phủ",
      "Trong 30 ngày từ khi đủ hồ sơ"
@@ -45,10 +47,21 @@
    },
    {
     "label": "Xem gì",
+    "icon": "🔍",
     "children": [
      "Hợp chính sách đã thông qua",
      "Hợp Hiến pháp, hợp luật, thống nhất"
     ]
+   }
+  ],
+  "case": {
+   "q": "Bộ Y tế soạn xong dự thảo Luật Dược sửa đổi. Trước khi trình Chính phủ, ai đọc và đánh giá?",
+   "a": "Bộ Tư pháp thẩm định, kết luận dự thảo đủ hay chưa đủ điều kiện trình."
+  },
+  "contrast": [
+   {
+    "with": "xd-tham-tra",
+    "text": "Thẩm định do Bộ Tư pháp làm trước khi Chính phủ trình; thẩm tra do ủy ban của Quốc hội làm trước khi Quốc hội bàn."
    }
   ]
  },

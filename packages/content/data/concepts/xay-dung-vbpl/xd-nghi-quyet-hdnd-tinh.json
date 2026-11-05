@@ -26,10 +26,11 @@
  "memo": {
   "gist": "Ở tỉnh, Hội đồng nhân dân ra nghị quyết, Ủy ban nhân dân ra quyết định, để cụ thể hóa luật tại địa phương.",
   "kind": "compare",
-  "hook": "Hội đồng là nghị quyết, Ủy ban là quyết định.",
+  "hook": "Mẹo chữ: 'nghị' là bàn bạc nên thuộc nơi họp bàn; 'định' là ra lệnh làm nên thuộc nơi điều hành.",
   "tree": [
    {
     "label": "Hội đồng nhân dân tỉnh",
+    "icon": "🗳️",
     "children": [
      "Ra nghị quyết",
      "Chi tiết nội dung được giao",
@@ -38,6 +39,7 @@
    },
    {
     "label": "Ủy ban nhân dân tỉnh",
+    "icon": "🏢",
     "children": [
      "Ra quyết định",
      "Chi tiết, biện pháp thi hành"
@@ -45,9 +47,20 @@
    },
    {
     "label": "Chủ tịch Ủy ban nhân dân tỉnh",
+    "icon": "👤",
     "children": [
      "Quyết định chỉ đạo, phân cấp"
     ]
+   }
+  ],
+  "case": {
+   "q": "Mức học phí ở tỉnh do Luật Giáo dục giao cho địa phương. Ai ban hành, bằng văn bản gì?",
+   "a": "Hội đồng nhân dân tỉnh, bằng nghị quyết."
+  },
+  "contrast": [
+   {
+    "with": "xd-nghi-quyet-quoc-hoi",
+    "text": "Nghị quyết của Hội đồng nhân dân tỉnh chỉ áp dụng trong tỉnh; nghị quyết của Quốc hội áp dụng cả nước."
    }
   ]
  },

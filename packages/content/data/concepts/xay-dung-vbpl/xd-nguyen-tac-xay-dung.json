@@ -27,16 +27,18 @@
  "memo": {
   "gist": "Văn bản luật mới không được trái Hiến pháp, không trái văn bản cấp trên và không mâu thuẫn với văn bản khác.",
   "kind": "checklist",
-  "hook": "Ba chữ: hợp hiến, hợp pháp, thống nhất.",
+  "hook": "Ba ổ khóa: hợp hiến, hợp pháp, thống nhất. Thiếu một ổ là văn bản không qua được.",
   "tree": [
    {
     "label": "Hợp hiến",
+    "icon": "📜",
     "children": [
      "Không trái Hiến pháp"
     ]
    },
    {
     "label": "Hợp pháp",
+    "icon": "📏",
     "children": [
      "Không trái văn bản cấp trên",
      "Đúng thẩm quyền, thủ tục"
@@ -44,15 +46,27 @@
    },
    {
     "label": "Thống nhất",
+    "icon": "🧩",
     "children": [
      "Không mâu thuẫn, chồng chéo"
     ]
    },
    {
     "label": "Hợp điều ước",
+    "icon": "🌐",
     "children": [
      "Không trái điều ước quốc tế"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ủy ban nhân dân tỉnh đặt thêm điều kiện kinh doanh mà luật không giao. Vi phạm nguyên tắc nào?",
+   "a": "Nguyên tắc hợp pháp: làm quá thẩm quyền và nội dung được giao, dù mục đích hợp lý."
+  },
+  "contrast": [
+   {
+    "with": "xd-kiem-tra-vbqppl",
+    "text": "Nguyên tắc là yêu cầu khi viết văn bản; kiểm tra là soi lại sau khi ban hành xem có giữ đúng nguyên tắc không."
    }
   ]
  },

@@ -27,16 +27,18 @@
  "memo": {
   "gist": "Cơ quan trình dự án tự soạn hoặc giao một cơ quan khác chủ trì soạn, lấy ý kiến rồi chỉnh sửa.",
   "kind": "steps",
-  "hook": "Luật mới bỏ quy định phải lập ban soạn thảo ít nhất 9 người.",
+  "hook": "Như đội trưởng dự án: nhận việc, hỏi ý mọi người, sửa bản nháp rồi nộp.",
   "tree": [
    {
     "label": "Nhận việc",
+    "icon": "📥",
     "children": [
      "Cơ quan trình tự soạn hoặc giao"
     ]
    },
    {
     "label": "Lấy ý kiến",
+    "icon": "🗣️",
     "children": [
      "Người chịu tác động",
      "Các bộ, ngành liên quan"
@@ -44,15 +46,27 @@
    },
    {
     "label": "Phản biện",
+    "icon": "⚖️",
     "children": [
      "Mặt trận Tổ quốc"
     ]
    },
    {
     "label": "Chỉnh sửa",
+    "icon": "✏️",
     "children": [
      "Tiếp thu ý kiến"
     ]
+   }
+  ],
+  "case": {
+   "q": "Chính phủ trình dự án luật nhưng giao Bộ Tài chính soạn. Ai là cơ quan chủ trì soạn thảo?",
+   "a": "Bộ Tài chính, vì được cơ quan trình giao chủ trì soạn."
+  },
+  "contrast": [
+   {
+    "with": "xd-tham-dinh",
+    "text": "Chủ trì soạn thảo là người viết dự thảo; thẩm định là Bộ Tư pháp đọc và đánh giá dự thảo đó trước khi trình."
    }
   ]
  },

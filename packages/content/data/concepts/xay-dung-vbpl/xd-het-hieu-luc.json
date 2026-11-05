@@ -27,29 +27,43 @@
  "memo": {
   "gist": "Văn bản luật hết hiệu lực khi hết hạn, bị thay thế hoặc bị bãi bỏ; văn bản hướng dẫn hết theo.",
   "kind": "checklist",
-  "hook": "Khác tạm ngưng: tạm ngưng chỉ dừng một thời gian.",
+  "hook": "Như thẻ hội viên: hết hạn, đổi thẻ mới hoặc bị hủy thì thẻ cũ thôi dùng, thẻ phụ cũng hết.",
   "tree": [
    {
     "label": "Hết thời hạn",
+    "icon": "⏰",
     "children": [
      "Ghi sẵn trong văn bản"
     ]
    },
    {
     "label": "Bị thay thế, sửa đổi",
+    "icon": "🔄",
     "children": [
      "Bởi chính cơ quan đã ban hành"
     ]
    },
    {
-    "label": "Bị bãi bỏ"
+    "label": "Bị bãi bỏ",
+    "icon": "🗑️"
    },
    {
     "label": "Kéo theo",
+    "icon": "🔗",
     "children": [
      "Văn bản hướng dẫn cũng hết",
      "Trừ phần được giữ lại"
     ]
+   }
+  ],
+  "case": {
+   "q": "Luật Đầu tư 2020 bị thay bằng Luật Đầu tư 2025. Nghị định hướng dẫn Luật 2020 còn hiệu lực không?",
+   "a": "Không, cũng hết hiệu lực theo, trừ phần được công bố tiếp tục áp dụng."
+  },
+  "contrast": [
+   {
+    "with": "xd-sua-doi-bai-bo",
+    "text": "Hết hiệu lực là kết quả; sửa đổi, thay thế, bãi bỏ là việc cơ quan làm dẫn tới kết quả đó."
    }
   ]
  },

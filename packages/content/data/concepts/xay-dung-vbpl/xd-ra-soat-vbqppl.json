@@ -28,16 +28,18 @@
  "memo": {
   "gist": "Rà soát là đối chiếu văn bản cũ với tình hình mới để tìm chỗ mâu thuẫn, hết hiệu lực hay không còn phù hợp.",
   "kind": "steps",
-  "hook": "Kiểm tra tìm văn bản trái luật; rà soát tìm văn bản lỗi thời.",
+  "hook": "Rà soát như dọn tủ quần áo khi đổi mùa: đồ nào lỗi thời, trùng nhau thì sửa hoặc bỏ.",
   "tree": [
    {
     "label": "Đối chiếu",
+    "icon": "🔍",
     "children": [
      "Với luật mới, thực tế mới"
     ]
    },
    {
     "label": "Phát hiện",
+    "icon": "⚠️",
     "children": [
      "Mâu thuẫn, chồng chéo",
      "Hết hiệu lực, không còn phù hợp"
@@ -45,15 +47,27 @@
    },
    {
     "label": "Xử lý",
+    "icon": "🛠️",
     "children": [
      "Sửa đổi, bãi bỏ hoặc kiến nghị"
     ]
    },
    {
     "label": "Đi kèm",
+    "icon": "🗂️",
     "children": [
      "Hệ thống hóa văn bản"
     ]
+   }
+  ],
+  "case": {
+   "q": "Luật Đất đai mới có hiệu lực, Bộ phát hiện 5 thông tư cũ mâu thuẫn với luật mới. Đây là việc gì?",
+   "a": "Rà soát: đối chiếu văn bản cũ với luật mới rồi đề xuất sửa đổi, bãi bỏ."
+  },
+  "contrast": [
+   {
+    "with": "xd-kiem-tra-vbqppl",
+    "text": "Rà soát tìm văn bản cũ đã lỗi thời vì tình hình thay đổi; kiểm tra tìm văn bản sai ngay từ lúc ban hành."
    }
   ]
  },

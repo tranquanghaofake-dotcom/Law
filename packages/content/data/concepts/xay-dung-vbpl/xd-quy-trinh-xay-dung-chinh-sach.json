@@ -27,19 +27,33 @@
  "memo": {
   "gist": "Với luật mới hoặc luật hạn chế quyền con người, phải làm chính sách trước rồi mới soạn điều luật.",
   "kind": "steps",
-  "hook": "Bắt buộc với luật mới hoặc thay thế, luật hạn chế quyền con người, nghị quyết thí điểm.",
+  "hook": "Như món ăn mới: phải thử công thức trước khi nấu đại trà; sửa vài chỗ nhỏ thì khỏi.",
   "tree": [
    {
-    "label": "Xác định chính sách"
+    "label": "Xác định chính sách",
+    "icon": "🔎"
    },
    {
-    "label": "Đánh giá tác động"
+    "label": "Đánh giá tác động",
+    "icon": "⚖️"
    },
    {
-    "label": "Lấy ý kiến, thẩm định"
+    "label": "Lấy ý kiến, thẩm định",
+    "icon": "🗣️"
    },
    {
-    "label": "Thông qua chính sách"
+    "label": "Thông qua chính sách",
+    "icon": "✅"
+   }
+  ],
+  "case": {
+   "q": "Dự án luật sửa vài điều của Luật Kế toán, không hạn chế quyền con người, có phải làm quy trình chính sách không?",
+   "a": "Không bắt buộc; chỉ cần thuyết minh tác động trong hồ sơ."
+  },
+  "contrast": [
+   {
+    "with": "xd-chinh-sach",
+    "text": "Chính sách là nội dung giải pháp; quy trình xây dựng chính sách là các bước làm ra và thông qua giải pháp đó."
    }
   ]
  },

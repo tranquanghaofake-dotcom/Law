@@ -26,16 +26,18 @@
  "memo": {
   "gist": "Văn bản quy phạm pháp luật vừa chứa quy tắc chung, vừa được ban hành đúng thẩm quyền, hình thức và thủ tục.",
   "kind": "checklist",
-  "hook": "Cùng tên quyết định, nhưng phạt một người là văn bản áp dụng, không phải quy phạm.",
+  "hook": "Như quả trứng cần cả ruột lẫn vỏ: thiếu một là hỏng.",
   "tree": [
    {
     "label": "Nội dung",
+    "icon": "🟡",
     "children": [
      "Có quy tắc chung cho nhiều người"
     ]
    },
    {
     "label": "Hình thức",
+    "icon": "🥚",
     "children": [
      "Đúng thẩm quyền",
      "Đúng tên loại văn bản",
@@ -44,9 +46,24 @@
    },
    {
     "label": "Thiếu một điều",
+    "icon": "❌",
     "children": [
      "Không phải văn bản quy phạm"
     ]
+   }
+  ],
+  "case": {
+   "q": "Quyết định của Chủ tịch tỉnh phạt ông A 5 triệu đồng có phải văn bản quy phạm không?",
+   "a": "Không, đó là văn bản áp dụng pháp luật vì chỉ dùng một lần cho ông A, dù cùng tên quyết định."
+  },
+  "contrast": [
+   {
+    "with": "xd-quy-pham-phap-luat",
+    "text": "Văn bản quy phạm là tờ văn bản chứa quy tắc; quy phạm là chính quy tắc nằm bên trong."
+   },
+   {
+    "with": "xd-he-thong-vbqppl",
+    "text": "Văn bản quy phạm là từng tờ; hệ thống là cách xếp các tờ đó theo thứ bậc."
    }
   ]
  },

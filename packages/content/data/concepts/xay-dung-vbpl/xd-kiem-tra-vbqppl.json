@@ -28,23 +28,37 @@
  "memo": {
   "gist": "Kiểm tra là xem lại văn bản đã ban hành có trái Hiến pháp, trái luật hay mâu thuẫn với văn bản khác không.",
   "kind": "checklist",
-  "hook": "Kiểm tra làm sau khi ban hành; thẩm định, thẩm tra làm trước.",
+  "hook": "Kiểm tra như chấm bài đã nộp; thẩm định, thẩm tra như sửa bài trước khi nộp.",
   "tree": [
    {
-    "label": "Có hợp Hiến pháp không"
+    "label": "Có hợp Hiến pháp không",
+    "icon": "📜"
    },
    {
-    "label": "Có hợp luật cấp trên không"
+    "label": "Có hợp luật cấp trên không",
+    "icon": "⚖️"
    },
    {
-    "label": "Có thống nhất với văn bản khác không"
+    "label": "Có thống nhất với văn bản khác không",
+    "icon": "🧩"
    },
    {
     "label": "Ai kiểm tra",
+    "icon": "🔍",
     "children": [
      "Cơ quan tự kiểm tra",
      "Cấp trên kiểm tra cấp dưới"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ủy ban nhân dân tỉnh tự đặt khoản thu ngoài luật. Bộ Tư pháp phát hiện thì làm gì?",
+   "a": "Kết luận quyết định đó trái luật và đề nghị Thủ tướng đình chỉ thi hành."
+  },
+  "contrast": [
+   {
+    "with": "xd-ra-soat-vbqppl",
+    "text": "Kiểm tra tìm văn bản sai ngay từ lúc ban hành; rà soát tìm văn bản cũ đã lỗi thời vì tình hình thay đổi."
    }
   ]
  },

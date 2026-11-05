@@ -30,41 +30,57 @@
  "memo": {
   "gist": "Văn bản luật có thứ bậc: văn bản cấp dưới không được trái văn bản cấp trên, cao nhất là Hiến pháp.",
   "kind": "ladder",
-  "hook": "Thứ tự nhớ: Hiến pháp, luật, pháp lệnh, nghị định, thông tư, rồi đến địa phương.",
+  "hook": "Hiến pháp như cụ tổ trong gia phả: đời sau không được làm trái đời trước.",
   "tree": [
    {
-    "label": "Hiến pháp"
+    "label": "Hiến pháp",
+    "icon": "📜"
    },
    {
     "label": "Luật",
+    "icon": "🏛️",
     "children": [
      "Quốc hội"
     ]
    },
    {
     "label": "Pháp lệnh",
+    "icon": "📘",
     "children": [
      "Ủy ban thường vụ Quốc hội"
     ]
    },
    {
     "label": "Nghị định",
+    "icon": "🏢",
     "children": [
      "Chính phủ, rồi quyết định của Thủ tướng"
     ]
    },
    {
     "label": "Thông tư",
+    "icon": "📄",
     "children": [
      "Các bộ"
     ]
    },
    {
     "label": "Văn bản địa phương",
+    "icon": "🏘️",
     "children": [
      "Tỉnh",
      "Xã"
     ]
+   }
+  ],
+  "case": {
+   "q": "Chỉ thị của Chủ tịch Ủy ban nhân dân tỉnh có nằm trong hệ thống văn bản quy phạm không?",
+   "a": "Không. Luật không đưa chỉ thị vào danh sách; chỉ thị chỉ dùng để đôn đốc, chỉ đạo."
+  },
+  "contrast": [
+   {
+    "with": "xd-van-ban-qppl",
+    "text": "Văn bản quy phạm là từng tờ văn bản; hệ thống là cách xếp tất cả các tờ đó theo thứ bậc."
    }
   ]
  },

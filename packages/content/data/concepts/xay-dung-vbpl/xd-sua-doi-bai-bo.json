@@ -27,16 +27,18 @@
  "memo": {
   "gist": "Văn bản sai thì chính cơ quan ban hành sửa hoặc thay; cấp có thẩm quyền có thể đình chỉ hoặc bãi bỏ.",
   "kind": "tree",
-  "hook": "Ai ban hành thì người đó sửa.",
+  "hook": "Ai viết sai thì người đó sửa; cấp trên chỉ được bấm dừng hoặc gạch bỏ.",
   "tree": [
    {
     "label": "Sửa đổi, bổ sung, thay thế",
+    "icon": "✏️",
     "children": [
      "Chỉ chính cơ quan đã ban hành"
     ]
    },
    {
     "label": "Đình chỉ thi hành",
+    "icon": "⏸️",
     "children": [
      "Cơ quan có thẩm quyền",
      "Văn bản tạm ngưng hiệu lực"
@@ -44,10 +46,21 @@
    },
    {
     "label": "Bãi bỏ",
+    "icon": "🗑️",
     "children": [
      "Cơ quan ban hành",
      "Hoặc cơ quan có thẩm quyền"
     ]
+   }
+  ],
+  "case": {
+   "q": "Thông tư của Bộ X trái nghị định. Thủ tướng làm gì, Bộ X làm gì?",
+   "a": "Thủ tướng đình chỉ thi hành, thông tư tạm ngưng hiệu lực; Bộ X ban hành thông tư mới sửa hoặc bãi bỏ."
+  },
+  "contrast": [
+   {
+    "with": "xd-het-hieu-luc",
+    "text": "Sửa đổi, thay thế, bãi bỏ là việc cơ quan làm; hết hiệu lực là kết quả của những việc đó."
    }
   ]
  },

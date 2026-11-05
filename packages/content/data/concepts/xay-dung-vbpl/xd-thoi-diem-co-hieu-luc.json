@@ -29,31 +29,45 @@
  "memo": {
   "gist": "Văn bản luật phải chờ một thời gian mới có hiệu lực: trung ương ít nhất 45 ngày, địa phương ít nhất 10 ngày.",
   "kind": "compare",
-  "hook": "Nhớ 45 và 10.",
+  "hook": "Mẹo: trung ương 'xa' nên chờ lâu, địa phương 'gần' nên chờ ngắn.",
   "tree": [
    {
     "label": "Trung ương",
+    "icon": "🏛️",
     "children": [
      "Sớm nhất sau 45 ngày"
     ]
    },
    {
     "label": "Địa phương",
+    "icon": "🏘️",
     "children": [
      "Sớm nhất sau 10 ngày"
     ]
    },
    {
     "label": "Ngoại lệ",
+    "icon": "⚡",
     "children": [
      "Thủ tục rút gọn có thể hiệu lực ngay"
     ]
    },
    {
     "label": "Mốc tính",
+    "icon": "📅",
     "children": [
      "Ngày thông qua hoặc ngày ký"
     ]
+   }
+  ],
+  "case": {
+   "q": "Nghị định ký ngày 1 tháng 3, ghi có hiệu lực từ 15 tháng 3. Đúng hay sai?",
+   "a": "Sai: văn bản trung ương phải sau ít nhất 45 ngày, nên sớm nhất là 15 tháng 4."
+  },
+  "contrast": [
+   {
+    "with": "xd-het-hieu-luc",
+    "text": "Thời điểm có hiệu lực là lúc văn bản bắt đầu áp dụng; hết hiệu lực là lúc văn bản thôi áp dụng."
    }
   ]
  },

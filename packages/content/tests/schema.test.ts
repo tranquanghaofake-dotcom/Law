@@ -106,3 +106,34 @@ describe('ví dụ của khái niệm đã có Hiểu nhanh cũng phải là l�
     expect(conceptSchema.safeParse({ ...base, memo, example: 'Nghị quyết của Hội đồng nhân dân tỉnh.' }).success).toBe(true);
   });
 });
+
+describe('mẹo nhớ phải thêm cách nhớ mới, không nhắc lại Hiểu nhanh', () => {
+  const tree = [{ label: 'A' }, { label: 'B' }];
+  it('từ chối mẹo trùng quá nửa số chữ với Hiểu nhanh', () => {
+    const r = conceptSchema.safeParse({ ...base, memo: { gist: 'Trung ương ít nhất 45 ngày, địa phương ít nhất 10 ngày.', hook: 'Trung ương 45 ngày, địa phương 10 ngày.', tree } });
+    expect(r.success).toBe(false);
+    expect(JSON.stringify(r.error?.issues)).toMatch(/mẹo nhớ nhắc lại/);
+  });
+  it('chấp nhận mẹo là hình ảnh so sánh', () => {
+    expect(conceptSchema.safeParse({ ...base, memo: { gist: 'Văn bản cấp dưới không được trái cấp trên.', hook: 'Hiến pháp là luật mẹ, con không được cãi mẹ.', tree } }).success).toBe(true);
+  });
+});
+
+describe('memo.case (hỏi – đáp), memo.contrast (câu phân biệt), icon nhánh', () => {
+  const tree = [{ label: 'A', icon: '🏛️' }, { label: 'B' }];
+  const memo = { gist: 'Câu ngắn.', hook: 'Mẹo khác hẳn.', tree };
+  it('chấp nhận hỏi – đáp đúng dạng và câu phân biệt', () => {
+    const ok = { ...memo, case: { q: 'Chỉ thị có phải văn bản quy phạm không?', a: 'Không, vì luật không đưa chỉ thị vào danh sách.' }, contrast: [{ with: 'quyen-tai-san', text: 'Tài sản là cái có giá trị; quyền tài sản là quyền đòi được cái đó.' }] };
+    expect(conceptSchema.safeParse({ ...base, memo: ok }).success).toBe(true);
+  });
+  it('câu hỏi phải kết thúc bằng dấu hỏi; đáp tối đa 30 chữ', () => {
+    expect(conceptSchema.safeParse({ ...base, memo: { ...memo, case: { q: 'Không có dấu hỏi.', a: 'Ừ.' } } }).success).toBe(false);
+    expect(conceptSchema.safeParse({ ...base, memo: { ...memo, case: { q: 'Hỏi?', a: 'chữ '.repeat(31) } } }).success).toBe(false);
+  });
+  it('câu phân biệt phải là lời thường', () => {
+    expect(conceptSchema.safeParse({ ...base, memo: { ...memo, contrast: [{ with: 'x', text: 'VBQPPL khác QPPL.' }] } }).success).toBe(false);
+  });
+  it('icon nhánh tối đa một biểu tượng ngắn', () => {
+    expect(conceptSchema.safeParse({ ...base, memo: { ...memo, tree: [{ label: 'A', icon: 'quá dài' }, { label: 'B' }] } }).success).toBe(false);
+  });
+});

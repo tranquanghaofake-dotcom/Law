@@ -27,31 +27,46 @@
  "memo": {
   "gist": "Văn bản luật phải viết bằng tiếng Việt chính xác, dễ hiểu, mỗi khái niệm chỉ dùng một từ.",
   "kind": "checklist",
-  "hook": "Bản dịch sang tiếng khác chỉ để tham khảo.",
+  "hook": "Viết luật như viết công thức nấu ăn: ai đọc cũng phải nấu ra cùng một món.",
   "tree": [
    {
-    "label": "Tiếng Việt"
+    "label": "Tiếng Việt",
+    "icon": "🗣️"
    },
    {
     "label": "Chính xác",
+    "icon": "🎯",
     "children": [
      "Một nghĩa, đúng thuật ngữ"
     ]
    },
    {
     "label": "Phổ thông",
+    "icon": "👥",
     "children": [
      "Không tiếng địa phương, tiếng lóng"
     ]
    },
    {
     "label": "Thống nhất",
+    "icon": "🔁",
     "children": [
      "Một khái niệm một từ"
     ]
    },
    {
-    "label": "Rõ ràng, dễ hiểu"
+    "label": "Rõ ràng, dễ hiểu",
+    "icon": "💡"
+   }
+  ],
+  "case": {
+   "q": "Dự thảo viết 'vi phạm sẽ bị xử lý thật nghiêm khắc'. Sai ở đâu?",
+   "a": "Không chính xác vì không nói mức nào; nên viết rõ, ví dụ phạt tiền từ 1 triệu đến 3 triệu đồng."
+  },
+  "contrast": [
+   {
+    "with": "xd-bo-cuc-so-ky-hieu",
+    "text": "Ngôn ngữ là cách dùng chữ; bố cục là cách chia văn bản thành chương, điều, khoản."
    }
   ]
  },

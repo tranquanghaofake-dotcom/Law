@@ -27,10 +27,11 @@
  "memo": {
   "gist": "Quốc hội dùng nghị quyết quy phạm để thí điểm chính sách mới khác luật, hoặc để tạm ngưng, kéo dài việc áp dụng luật.",
   "kind": "compare",
-  "hook": "Cùng tên nghị quyết: loại quy phạm áp dụng chung, loại cá biệt chỉ cho một việc.",
+  "hook": "Nghị quyết thí điểm như chạy thử bản mới: cho làm khác luật hiện hành trong một phạm vi.",
   "tree": [
    {
     "label": "Nghị quyết quy phạm",
+    "icon": "📘",
     "children": [
      "Thí điểm chính sách khác luật",
      "Tạm ngưng, kéo dài áp dụng luật"
@@ -38,10 +39,21 @@
    },
    {
     "label": "Nghị quyết cá biệt",
+    "icon": "👤",
     "children": [
      "Bầu, phê chuẩn nhân sự",
      "Thông qua kế hoạch"
     ]
+   }
+  ],
+  "case": {
+   "q": "Nghị quyết của Quốc hội bầu Chủ tịch nước có phải văn bản quy phạm không?",
+   "a": "Không, đó là nghị quyết cá biệt vì chỉ dùng cho một việc nhân sự."
+  },
+  "contrast": [
+   {
+    "with": "xd-nghi-quyet-hdnd-tinh",
+    "text": "Nghị quyết của Quốc hội áp dụng cả nước; nghị quyết của Hội đồng nhân dân tỉnh chỉ áp dụng trong tỉnh."
    }
   ]
  },
