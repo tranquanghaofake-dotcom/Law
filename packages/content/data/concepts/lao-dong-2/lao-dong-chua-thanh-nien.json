@@ -22,6 +22,41 @@
   "dưới 13 tuổi theo khoản 3 Điều 145",
   "HĐLĐ văn bản với người đại diện"
  ],
+ "memo": {
+  "hook": "Ba mốc tuổi: 15–18 làm được (trừ việc cấm), 13–15 chỉ VIỆC NHẸ, dưới 13 rất hạn chế.",
+  "tree": [
+   {
+    "label": "Định nghĩa",
+    "children": [
+     "Chưa đủ 18 tuổi"
+    ]
+   },
+   {
+    "label": "15 đến dưới 18",
+    "children": [
+     "Được làm, trừ việc ở Điều 147"
+    ]
+   },
+   {
+    "label": "13 đến dưới 15",
+    "children": [
+     "Chỉ công việc nhẹ theo danh mục"
+    ]
+   },
+   {
+    "label": "Dưới 13",
+    "children": [
+     "Theo khoản 3 Điều 145"
+    ]
+   },
+   {
+    "label": "Dưới 15",
+    "children": [
+     "Hợp đồng văn bản, có người đại diện"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

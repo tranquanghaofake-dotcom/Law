@@ -21,6 +21,31 @@
   "giao việc không theo hợp đồng",
   "giữ giấy tờ tùy thân"
  ],
+ "memo": {
+  "hook": "Ba điều cấm: NGƯỢC ĐÃI, GIAO VIỆC NGOÀI HỢP ĐỒNG, GIỮ GIẤY TỜ.",
+  "tree": [
+   {
+    "label": "Bạo lực, xâm hại",
+    "children": [
+     "Ngược đãi",
+     "Quấy rối tình dục",
+     "Cưỡng bức lao động, dùng vũ lực"
+    ]
+   },
+   {
+    "label": "Ngoài hợp đồng",
+    "children": [
+     "Giao việc không theo hợp đồng"
+    ]
+   },
+   {
+    "label": "Giấy tờ",
+    "children": [
+     "Giữ giấy tờ tùy thân"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

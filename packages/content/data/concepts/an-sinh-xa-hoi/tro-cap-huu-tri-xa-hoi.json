@@ -24,6 +24,34 @@
   "không hưởng lương hưu"
  ],
  "note": "Luật Bảo hiểm xã hội 41/2024/QH15 có hiệu lực từ 01/7/2025, thay thế Luật Bảo hiểm xã hội 58/2014/QH13 (đề cương HLU còn dẫn luật 2014).",
+ "memo": {
+  "hook": "KHÔNG ĐÓNG, NGÂN SÁCH bảo đảm; từ đủ 75 tuổi.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Loại hình mới của Luật 2024",
+     "Ngân sách nhà nước bảo đảm"
+    ]
+   },
+   {
+    "label": "Điều kiện",
+    "children": [
+     "Từ đủ 75 tuổi",
+     "70–75 tuổi thuộc hộ nghèo, cận nghèo",
+     "Không hưởng lương hưu"
+    ]
+   },
+   {
+    "label": "Chế độ",
+    "children": [
+     "Trợ cấp hằng tháng",
+     "Hỗ trợ mai táng",
+     "Bảo hiểm y tế"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -22,6 +22,32 @@
   "rút ngắn thời giờ làm việc",
   "không trọn thời gian"
  ],
+ "memo": {
+  "hook": "Quá TUỔI NGHỈ HƯU mà vẫn làm việc.",
+  "tree": [
+   {
+    "label": "Định nghĩa",
+    "children": [
+     "Tiếp tục lao động sau tuổi nghỉ hưu",
+     "Khoản 2 Điều 169"
+    ]
+   },
+   {
+    "label": "Quyền",
+    "children": [
+     "Rút ngắn thời giờ làm việc",
+     "Làm không trọn thời gian"
+    ]
+   },
+   {
+    "label": "Sử dụng",
+    "children": [
+     "Nhiều lần hợp đồng xác định thời hạn",
+     "Vẫn nhận lương ngoài lương hưu"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -21,6 +21,33 @@
   "người yêu cầu",
   "khởi kiện khi cho rằng quyền lợi bị xâm phạm"
  ],
+ "memo": {
+  "hook": "VỤ ÁN có nguyên đơn – bị đơn; VIỆC dân sự có người YÊU CẦU.",
+  "tree": [
+   {
+    "label": "Vụ án",
+    "children": [
+     "Nguyên đơn",
+     "Bị đơn",
+     "Người có quyền lợi, nghĩa vụ liên quan"
+    ]
+   },
+   {
+    "label": "Việc dân sự",
+    "children": [
+     "Người yêu cầu",
+     "Người có quyền lợi, nghĩa vụ liên quan"
+    ]
+   },
+   {
+    "label": "Không phải đương sự",
+    "children": [
+     "Người làm chứng, giám định",
+     "Người phiên dịch, đại diện"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

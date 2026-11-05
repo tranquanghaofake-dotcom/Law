@@ -21,6 +21,33 @@
   "tối đa 02 năm khi gia hạn",
   "hết hiệu lực theo Điều 156"
  ],
+ "memo": {
+  "hook": "Tối đa 02 NĂM, gia hạn MỘT LẦN thêm tối đa 02 năm.",
+  "tree": [
+   {
+    "label": "Thời hạn",
+    "children": [
+     "Tối đa 02 năm"
+    ]
+   },
+   {
+    "label": "Gia hạn",
+    "children": [
+     "Chỉ một lần",
+     "Tối đa 02 năm"
+    ]
+   },
+   {
+    "label": "Hết hiệu lực",
+    "children": [
+     "Hết hạn",
+     "Chấm dứt hợp đồng lao động",
+     "Làm sai nội dung giấy phép",
+     "Bị thu hồi"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

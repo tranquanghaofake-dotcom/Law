@@ -22,6 +22,41 @@
   "mua lại đủ để kiểm soát, chi phối",
   "liên doanh"
  ],
+ "memo": {
+  "hook": "Bốn hình thức: SÁP NHẬP – HỢP NHẤT – MUA LẠI – LIÊN DOANH.",
+  "tree": [
+   {
+    "label": "Sáp nhập",
+    "children": [
+     "Bên bị sáp nhập chấm dứt"
+    ]
+   },
+   {
+    "label": "Hợp nhất",
+    "children": [
+     "Lập doanh nghiệp mới, các bên chấm dứt"
+    ]
+   },
+   {
+    "label": "Mua lại",
+    "children": [
+     "Đủ để kiểm soát, chi phối"
+    ]
+   },
+   {
+    "label": "Liên doanh",
+    "children": [
+     "Lập doanh nghiệp mới, các bên vẫn còn"
+    ]
+   },
+   {
+    "label": "Bị cấm khi",
+    "children": [
+     "Hạn chế cạnh tranh đáng kể"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

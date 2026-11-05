@@ -23,6 +23,31 @@
   "số đơn vị",
   "tổng thị phần"
  ],
+ "memo": {
+  "hook": "Thị phần kết hợp là TỔNG thị phần các bên tham gia.",
+  "tree": [
+   {
+    "label": "Cách tính",
+    "children": [
+     "Doanh thu bán ra",
+     "Doanh số mua vào",
+     "Số đơn vị bán, mua"
+    ]
+   },
+   {
+    "label": "So với",
+    "children": [
+     "Tổng của thị trường liên quan"
+    ]
+   },
+   {
+    "label": "Thị phần kết hợp",
+    "children": [
+     "Tổng thị phần các doanh nghiệp tham gia"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

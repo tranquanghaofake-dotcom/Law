@@ -24,6 +24,34 @@
   "đền đáp, không cần đóng góp"
  ],
  "note": "Pháp lệnh 02/2020/UBTVQH14 có hiệu lực từ 01/7/2021. Pháp lệnh sửa đổi 05/2026/UBTVQH16 (ban hành 08/7/2026) có hiệu lực từ 01/01/2027 — CHƯA áp dụng tại thời điểm đối chiếu; khi có hiệu lực, Điều 3 được viết lại (thêm định nghĩa người có công tại khoản 1, danh sách đối tượng chuyển sang khoản 2).",
+ "memo": {
+  "hook": "ĐỀN ĐÁP, không cần đóng góp; 12 NHÓM người có công.",
+  "tree": [
+   {
+    "label": "Người có công",
+    "children": [
+     "12 nhóm",
+     "Liệt sỹ, Bà mẹ Việt Nam anh hùng",
+     "Thương binh, bệnh binh"
+    ]
+   },
+   {
+    "label": "Thân nhân",
+    "children": [
+     "Cha mẹ đẻ",
+     "Vợ hoặc chồng",
+     "Con",
+     "Người có công nuôi liệt sỹ"
+    ]
+   },
+   {
+    "label": "Bản chất",
+    "children": [
+     "Đền đáp, không cần đóng góp"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

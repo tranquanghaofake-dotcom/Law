@@ -22,6 +22,32 @@
   "Tòa án hỗ trợ",
   "ngoại lệ người tiêu dùng, người lao động"
  ],
+ "memo": {
+  "hook": "AI YÊU CẦU, NGƯỜI ĐÓ CHỨNG MINH; Tòa án chỉ HỖ TRỢ.",
+  "tree": [
+   {
+    "label": "Đương sự",
+    "children": [
+     "Chủ động thu thập, giao nộp",
+     "Chứng minh yêu cầu có căn cứ"
+    ]
+   },
+   {
+    "label": "Tòa án",
+    "children": [
+     "Hỗ trợ",
+     "Tự thu thập khi luật định"
+    ]
+   },
+   {
+    "label": "Ngoại lệ",
+    "children": [
+     "Người tiêu dùng",
+     "Người lao động"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

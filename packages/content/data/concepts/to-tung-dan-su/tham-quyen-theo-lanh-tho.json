@@ -21,6 +21,36 @@
   "thỏa thuận bằng văn bản chọn nơi nguyên đơn",
   "nơi có bất động sản"
  ],
+ "memo": {
+  "hook": "Mặc định NƠI BỊ ĐƠN; BẤT ĐỘNG SẢN thì nơi có bất động sản.",
+  "tree": [
+   {
+    "label": "Nguyên tắc",
+    "children": [
+     "Nơi bị đơn cư trú, làm việc",
+     "Nơi bị đơn có trụ sở"
+    ]
+   },
+   {
+    "label": "Thỏa thuận",
+    "children": [
+     "Bằng văn bản chọn nơi nguyên đơn"
+    ]
+   },
+   {
+    "label": "Bắt buộc",
+    "children": [
+     "Bất động sản: nơi có bất động sản"
+    ]
+   },
+   {
+    "label": "Nguyên đơn chọn",
+    "children": [
+     "Một số trường hợp Điều 40"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -22,6 +22,34 @@
   "dữ liệu điện tử",
   "kết luận giám định"
  ],
+ "memo": {
+  "hook": "Chứng cứ phải KHÁCH QUAN – LIÊN QUAN – HỢP PHÁP.",
+  "tree": [
+   {
+    "label": "Thuộc tính",
+    "children": [
+     "Có thật",
+     "Dùng xác định tình tiết",
+     "Thu thập đúng thủ tục"
+    ]
+   },
+   {
+    "label": "Nguồn",
+    "children": [
+     "Tài liệu, dữ liệu điện tử",
+     "Vật chứng",
+     "Lời khai",
+     "Kết luận giám định"
+    ]
+   },
+   {
+    "label": "Phân biệt",
+    "children": [
+     "Nguồn chứng cứ khác chứng cứ"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

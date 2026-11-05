@@ -23,6 +23,32 @@
   "không có án tích, không bị truy cứu",
   "có giấy phép lao động"
  ],
+ "memo": {
+  "hook": "Bốn điều kiện, quan trọng nhất là GIẤY PHÉP LAO ĐỘNG.",
+  "tree": [
+   {
+    "label": "Điều kiện",
+    "children": [
+     "Đủ 18 tuổi, năng lực hành vi đầy đủ",
+     "Trình độ, tay nghề, sức khỏe",
+     "Không có án, không bị truy cứu",
+     "Có giấy phép lao động"
+    ]
+   },
+   {
+    "label": "Ngoại lệ",
+    "children": [
+     "Trường hợp miễn giấy phép"
+    ]
+   },
+   {
+    "label": "Hợp đồng",
+    "children": [
+     "Không quá thời hạn giấy phép"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

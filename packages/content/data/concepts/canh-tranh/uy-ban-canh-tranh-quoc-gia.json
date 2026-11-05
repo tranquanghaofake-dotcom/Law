@@ -22,6 +22,38 @@
   "cơ quan điều tra vụ việc cạnh tranh",
   "tố tụng, miễn trừ, khiếu nại"
  ],
+ "memo": {
+  "hook": "MỘT cơ quan thuộc BỘ CÔNG THƯƠNG (gộp hai cơ quan cũ).",
+  "tree": [
+   {
+    "label": "Vị trí",
+    "children": [
+     "Thuộc Bộ Công Thương"
+    ]
+   },
+   {
+    "label": "Thành phần",
+    "children": [
+     "Chủ tịch, Phó Chủ tịch, thành viên"
+    ]
+   },
+   {
+    "label": "Nhiệm vụ",
+    "children": [
+     "Tố tụng cạnh tranh",
+     "Kiểm soát tập trung kinh tế",
+     "Quyết định miễn trừ",
+     "Giải quyết khiếu nại"
+    ]
+   },
+   {
+    "label": "Giúp việc",
+    "children": [
+     "Cơ quan điều tra vụ việc cạnh tranh"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

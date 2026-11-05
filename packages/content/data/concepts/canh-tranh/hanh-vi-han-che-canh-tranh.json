@@ -23,6 +23,38 @@
   "loại trừ, làm giảm, sai lệch, cản trở",
   "có khả năng gây tác động"
  ],
+ "memo": {
+  "hook": "Ba hành vi: THỎA THUẬN, LẠM DỤNG THỐNG LĨNH, LẠM DỤNG ĐỘC QUYỀN.",
+  "tree": [
+   {
+    "label": "Gồm",
+    "children": [
+     "Thỏa thuận hạn chế cạnh tranh",
+     "Lạm dụng vị trí thống lĩnh",
+     "Lạm dụng vị trí độc quyền"
+    ]
+   },
+   {
+    "label": "Tác động",
+    "children": [
+     "Loại trừ, làm giảm",
+     "Sai lệch, cản trở"
+    ]
+   },
+   {
+    "label": "Ngưỡng",
+    "children": [
+     "Chỉ cần có khả năng gây tác động"
+    ]
+   },
+   {
+    "label": "Không gồm",
+    "children": [
+     "Tập trung kinh tế (kiểm soát riêng)"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

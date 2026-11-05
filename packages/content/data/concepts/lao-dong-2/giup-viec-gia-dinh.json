@@ -22,6 +22,34 @@
   "không liên quan hoạt động thương mại",
   "báo trước ít nhất 15 ngày"
  ],
+ "memo": {
+  "hook": "Việc TRONG NHÀ, THƯỜNG XUYÊN, KHÔNG thương mại; báo trước 15 ngày là chấm dứt được.",
+  "tree": [
+   {
+    "label": "Dấu hiệu",
+    "children": [
+     "Làm thường xuyên",
+     "Công việc trong gia đình",
+     "Không liên quan thương mại"
+    ]
+   },
+   {
+    "label": "Công việc",
+    "children": [
+     "Nội trợ, quản gia",
+     "Chăm trẻ, người bệnh, người già",
+     "Lái xe, làm vườn"
+    ]
+   },
+   {
+    "label": "Hợp đồng",
+    "children": [
+     "Bắt buộc bằng văn bản",
+     "Chấm dứt bất kỳ lúc nào, báo trước 15 ngày"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

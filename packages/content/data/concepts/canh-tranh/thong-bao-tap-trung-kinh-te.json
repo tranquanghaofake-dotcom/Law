@@ -22,6 +22,34 @@
   "tổng tài sản, doanh thu, giá trị giao dịch, thị phần kết hợp",
   "thẩm định sơ bộ 30 ngày"
  ],
+ "memo": {
+  "hook": "Thông báo TRƯỚC khi làm nếu chạm NGƯỠNG; thẩm định sơ bộ 30 NGÀY.",
+  "tree": [
+   {
+    "label": "Khi nào",
+    "children": [
+     "Trước khi tiến hành",
+     "Nếu thuộc ngưỡng thông báo"
+    ]
+   },
+   {
+    "label": "Ngưỡng (một trong)",
+    "children": [
+     "Tổng tài sản",
+     "Tổng doanh thu",
+     "Giá trị giao dịch",
+     "Thị phần kết hợp"
+    ]
+   },
+   {
+    "label": "Thẩm định sơ bộ",
+    "children": [
+     "30 ngày từ khi đủ hồ sơ",
+     "Quá hạn không báo: được thực hiện"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

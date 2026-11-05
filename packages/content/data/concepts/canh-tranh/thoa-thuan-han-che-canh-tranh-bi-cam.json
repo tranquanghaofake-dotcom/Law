@@ -22,6 +22,31 @@
   "thông đồng đấu thầu",
   "tác động đáng kể"
  ],
+ "memo": {
+  "hook": "CẤM TUYỆT ĐỐI (không cần tác động) và CẤM CÓ ĐIỀU KIỆN (tác động đáng kể).",
+  "tree": [
+   {
+    "label": "Cấm tuyệt đối",
+    "children": [
+     "Ấn định giá, chia thị trường (cùng thị trường)",
+     "Thông đồng đấu thầu",
+     "Ngăn cản gia nhập, loại bỏ"
+    ]
+   },
+   {
+    "label": "Cấm có điều kiện",
+    "children": [
+     "Khi tác động hạn chế đáng kể"
+    ]
+   },
+   {
+    "label": "Luật 2018",
+    "children": [
+     "Bỏ ngưỡng thị phần 30%"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

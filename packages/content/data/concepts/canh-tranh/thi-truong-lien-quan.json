@@ -22,6 +22,32 @@
   "thay thế cho nhau",
   "điều kiện cạnh tranh tương tự"
  ],
+ "memo": {
+  "hook": "Bước ĐẦU TIÊN: xác định SẢN PHẨM thay thế và ĐỊA LÝ.",
+  "tree": [
+   {
+    "label": "Sản phẩm",
+    "children": [
+     "Thay thế về đặc tính",
+     "Mục đích sử dụng",
+     "Giá cả"
+    ]
+   },
+   {
+    "label": "Địa lý",
+    "children": [
+     "Điều kiện cạnh tranh tương tự",
+     "Khác biệt với khu vực lân cận"
+    ]
+   },
+   {
+    "label": "Vai trò",
+    "children": [
+     "Cơ sở tính thị phần, thống lĩnh"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -23,6 +23,37 @@
   "tối đa 05 lần lương tối thiểu vùng"
  ],
  "note": "Luật Việc làm 74/2025/QH15 có hiệu lực từ 01/01/2026, thay thế Luật Việc làm 38/2013/QH13 (đề cương HLU còn dẫn luật 2013).",
+ "memo": {
+  "hook": "12 trong 24 tháng; nộp hồ sơ trong 3 tháng; hưởng 60%.",
+  "tree": [
+   {
+    "label": "Chấm dứt hợp đồng",
+    "children": [
+     "Hợp pháp",
+     "Không: tự ý nghỉ trái luật, đủ lương hưu"
+    ]
+   },
+   {
+    "label": "Đã đóng",
+    "children": [
+     "Đủ 12 tháng trong 24 tháng"
+    ]
+   },
+   {
+    "label": "Hồ sơ",
+    "children": [
+     "Nộp trong 03 tháng"
+    ]
+   },
+   {
+    "label": "Mức hưởng",
+    "children": [
+     "60% bình quân 06 tháng",
+     "Tối đa 05 lần lương tối thiểu vùng"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

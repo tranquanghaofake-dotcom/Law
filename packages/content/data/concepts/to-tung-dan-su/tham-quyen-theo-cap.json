@@ -24,6 +24,33 @@
   "từ 01/7/2025"
  ],
  "note": "Luật 85/2025/QH15 (hiệu lực 01/7/2025) sửa đổi các điều về thẩm quyền theo mô hình Tòa án nhân dân khu vực; câu chữ trên theo VBHN 21/VBHN-VPQH 2026.",
+ "memo": {
+  "hook": "Từ 01/7/2025: TAND KHU VỰC xử SƠ THẨM; TAND TỈNH xử PHÚC THẨM.",
+  "tree": [
+   {
+    "label": "Thay đổi",
+    "children": [
+     "Bỏ Tòa án cấp huyện",
+     "Bỏ Tòa án cấp cao"
+    ]
+   },
+   {
+    "label": "Tòa khu vực",
+    "children": [
+     "Sơ thẩm hầu hết vụ việc",
+     "Kể cả có yếu tố nước ngoài"
+    ]
+   },
+   {
+    "label": "Tòa cấp tỉnh",
+    "children": [
+     "Phúc thẩm",
+     "Giám đốc thẩm, tái thẩm",
+     "Việc liên quan phán quyết trọng tài"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

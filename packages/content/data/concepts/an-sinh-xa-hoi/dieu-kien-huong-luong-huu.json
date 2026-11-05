@@ -24,6 +24,37 @@
   "giảm từ 20 năm"
  ],
  "note": "Luật Bảo hiểm xã hội 41/2024/QH15 có hiệu lực từ 01/7/2025, thay thế Luật Bảo hiểm xã hội 58/2014/QH13 (đề cương HLU còn dẫn luật 2014).",
+ "memo": {
+  "hook": "Hai điều kiện CỘNG DỒN: đủ TUỔI + đóng đủ 15 NĂM (trước là 20).",
+  "tree": [
+   {
+    "label": "Điều kiện 1",
+    "children": [
+     "Đủ tuổi nghỉ hưu",
+     "Khoản 2 Điều 169 Bộ luật Lao động"
+    ]
+   },
+   {
+    "label": "Điều kiện 2",
+    "children": [
+     "Đóng bảo hiểm xã hội bắt buộc từ đủ 15 năm",
+     "Luật 2014: 20 năm"
+    ]
+   },
+   {
+    "label": "Ngoại lệ",
+    "children": [
+     "Nghỉ hưu sớm: nghề nặng nhọc, suy giảm khả năng"
+    ]
+   },
+   {
+    "label": "Chưa đủ",
+    "children": [
+     "Bảo lưu, đóng tiếp hoặc hưởng một lần"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

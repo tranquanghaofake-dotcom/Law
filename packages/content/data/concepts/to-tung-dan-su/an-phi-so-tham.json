@@ -22,6 +22,36 @@
   "ly hôn nguyên đơn chịu",
   "thuận tình mỗi bên một nửa"
  ],
+ "memo": {
+  "hook": "BÊN THUA chịu; hòa giải thành chịu 50%; LY HÔN nguyên đơn chịu.",
+  "tree": [
+   {
+    "label": "Nguyên tắc",
+    "children": [
+     "Yêu cầu không được chấp nhận thì chịu"
+    ]
+   },
+   {
+    "label": "Hòa giải thành",
+    "children": [
+     "Chịu 50%"
+    ]
+   },
+   {
+    "label": "Ly hôn",
+    "children": [
+     "Nguyên đơn chịu",
+     "Thuận tình: mỗi bên một nửa"
+    ]
+   },
+   {
+    "label": "Phân biệt",
+    "children": [
+     "Tạm ứng án phí nộp trước"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

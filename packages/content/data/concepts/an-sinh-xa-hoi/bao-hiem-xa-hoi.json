@@ -25,6 +25,39 @@
   "năm loại hình"
  ],
  "note": "Luật Bảo hiểm xã hội 41/2024/QH15 có hiệu lực từ 01/7/2025, thay thế Luật Bảo hiểm xã hội 58/2014/QH13 (đề cương HLU còn dẫn luật 2014).",
+ "memo": {
+  "hook": "Luật 2024 có NĂM loại hình; bắt buộc từ hợp đồng đủ 01 THÁNG.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Thay thế hoặc bù đắp một phần thu nhập"
+    ]
+   },
+   {
+    "label": "Năm loại hình",
+    "children": [
+     "Trợ cấp hưu trí xã hội (mới)",
+     "Bắt buộc",
+     "Tự nguyện",
+     "Thất nghiệp; hưu trí bổ sung"
+    ]
+   },
+   {
+    "label": "Bắt buộc",
+    "children": [
+     "Ốm đau, thai sản, hưu trí, tử tuất",
+     "Tai nạn lao động – bệnh nghề nghiệp"
+    ]
+   },
+   {
+    "label": "Mở rộng",
+    "children": [
+     "Hợp đồng từ đủ 01 tháng"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -23,6 +23,38 @@
   "thu nhập do người tham gia lựa chọn"
  ],
  "note": "Luật Bảo hiểm xã hội 41/2024/QH15 có hiệu lực từ 01/7/2025, thay thế Luật Bảo hiểm xã hội 58/2014/QH13 (đề cương HLU còn dẫn luật 2014).",
+ "memo": {
+  "hook": "CÓ ĐÓNG – CÓ HƯỞNG, kết hợp CHIA SẺ.",
+  "tree": [
+   {
+    "label": "Mức hưởng",
+    "children": [
+     "Theo mức đóng",
+     "Theo thời gian đóng",
+     "Có chia sẻ giữa người tham gia"
+    ]
+   },
+   {
+    "label": "Mức đóng",
+    "children": [
+     "Bắt buộc: theo tiền lương",
+     "Tự nguyện: theo thu nhập tự chọn"
+    ]
+   },
+   {
+    "label": "Quỹ",
+    "children": [
+     "Tập trung, thống nhất, công khai"
+    ]
+   },
+   {
+    "label": "Đã hưởng một lần",
+    "children": [
+     "Không tính lại"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

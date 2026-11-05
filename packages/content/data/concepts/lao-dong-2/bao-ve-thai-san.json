@@ -22,6 +22,34 @@
   "nuôi con dưới 12 tháng",
   "không làm đêm, thêm giờ, công tác xa"
  ],
+ "memo": {
+  "hook": "Mang thai từ THÁNG 7 (vùng khó: tháng 6) hoặc con dưới 12 THÁNG: không đêm, không thêm giờ, không đi xa.",
+  "tree": [
+   {
+    "label": "Khi nào",
+    "children": [
+     "Mang thai từ tháng thứ 07",
+     "Tháng thứ 06 nếu vùng khó khăn",
+     "Nuôi con dưới 12 tháng"
+    ]
+   },
+   {
+    "label": "Không được giao",
+    "children": [
+     "Làm đêm",
+     "Làm thêm giờ",
+     "Công tác xa"
+    ]
+   },
+   {
+    "label": "Không được sa thải vì",
+    "children": [
+     "Kết hôn, mang thai",
+     "Nghỉ thai sản, nuôi con nhỏ"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

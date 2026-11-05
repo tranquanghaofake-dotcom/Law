@@ -22,6 +22,32 @@
   "thông tin không trung thực",
   "lôi kéo khách hàng bất chính"
  ],
+ "memo": {
+  "hook": "Nhớ 6 hành vi: BÍ MẬT – ÉP BUỘC – GIÈM PHA – GÂY RỐI – LÔI KÉO – BÁN PHÁ GIÁ.",
+  "tree": [
+   {
+    "label": "Thông tin",
+    "children": [
+     "Xâm phạm bí mật kinh doanh",
+     "Thông tin không trung thực"
+    ]
+   },
+   {
+    "label": "Gây sức ép",
+    "children": [
+     "Ép buộc khách hàng, đối tác",
+     "Gây rối hoạt động kinh doanh"
+    ]
+   },
+   {
+    "label": "Giành khách",
+    "children": [
+     "Lôi kéo khách hàng bất chính",
+     "Bán dưới giá thành toàn bộ"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

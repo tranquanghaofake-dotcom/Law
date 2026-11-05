@@ -23,6 +23,33 @@
   "nhà ở, đất đai, thuế"
  ],
  "note": "Pháp lệnh 02/2020/UBTVQH14 có hiệu lực từ 01/7/2021. Pháp lệnh sửa đổi 05/2026/UBTVQH16 (ban hành 08/7/2026) có hiệu lực từ 01/01/2027 — CHƯA áp dụng tại thời điểm đối chiếu; khi có hiệu lực, Điều 3 được viết lại (thêm định nghĩa người có công tại khoản 1, danh sách đối tượng chuyển sang khoản 2).",
+ "memo": {
+  "hook": "Hai nhóm: TIỀN (trợ cấp, phụ cấp) và ƯU ĐÃI KHÁC.",
+  "tree": [
+   {
+    "label": "Bằng tiền",
+    "children": [
+     "Trợ cấp, phụ cấp hằng tháng",
+     "Trợ cấp một lần"
+    ]
+   },
+   {
+    "label": "Ưu đãi khác",
+    "children": [
+     "Bảo hiểm y tế, điều dưỡng",
+     "Ưu tiên tuyển sinh, việc làm",
+     "Nhà ở, đất đai, thuế",
+     "Vay vốn ưu đãi"
+    ]
+   },
+   {
+    "label": "Nguyên tắc",
+    "children": [
+     "Điều chỉnh theo kinh tế - xã hội"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

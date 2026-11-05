@@ -23,6 +23,37 @@
   "trong phạm vi đơn",
   "chấm dứt, thay đổi, thỏa thuận"
  ],
+ "memo": {
+  "hook": "Tòa KHÔNG TỰ khởi xướng; chỉ xử khi CÓ ĐƠN và TRONG PHẠM VI đơn.",
+  "tree": [
+   {
+    "label": "Khởi kiện",
+    "children": [
+     "Đương sự quyết định"
+    ]
+   },
+   {
+    "label": "Tòa án",
+    "children": [
+     "Chỉ thụ lý khi có đơn",
+     "Chỉ giải quyết trong phạm vi đơn"
+    ]
+   },
+   {
+    "label": "Đương sự được",
+    "children": [
+     "Rút, thay đổi yêu cầu",
+     "Thỏa thuận"
+    ]
+   },
+   {
+    "label": "Giới hạn",
+    "children": [
+     "Điều cấm, đạo đức xã hội"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

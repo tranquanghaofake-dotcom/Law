@@ -22,6 +22,33 @@
   "ngành nghề kinh doanh có điều kiện",
   "tối đa 12 tháng"
  ],
+ "memo": {
+  "hook": "Quan hệ BA BÊN: ký với bên cho thuê, làm cho bên thuê.",
+  "tree": [
+   {
+    "label": "Ba bên",
+    "children": [
+     "Doanh nghiệp cho thuê: ký hợp đồng, trả lương",
+     "Bên thuê lại: điều hành công việc",
+     "Người lao động"
+    ]
+   },
+   {
+    "label": "Điều kiện",
+    "children": [
+     "Ngành nghề kinh doanh có điều kiện",
+     "Ký quỹ, có giấy phép"
+    ]
+   },
+   {
+    "label": "Giới hạn",
+    "children": [
+     "Tối đa 12 tháng",
+     "Chỉ công việc theo danh mục"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

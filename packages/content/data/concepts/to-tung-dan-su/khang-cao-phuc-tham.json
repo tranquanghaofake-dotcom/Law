@@ -21,6 +21,32 @@
   "vắng mặt có lý do chính đáng",
   "chỉ xem xét phần có kháng cáo, kháng nghị"
  ],
+ "memo": {
+  "hook": "Kháng cáo BẢN ÁN 15 ngày, QUYẾT ĐỊNH 7 ngày; phúc thẩm chỉ xét PHẦN bị kháng.",
+  "tree": [
+   {
+    "label": "Thời hạn",
+    "children": [
+     "Bản án: 15 ngày từ tuyên án",
+     "Quyết định: 07 ngày",
+     "Vắng mặt chính đáng: tính từ khi nhận"
+    ]
+   },
+   {
+    "label": "Phạm vi",
+    "children": [
+     "Phần bị kháng cáo, kháng nghị",
+     "Phần liên quan"
+    ]
+   },
+   {
+    "label": "Từ 01/7/2025",
+    "children": [
+     "Tòa án cấp tỉnh phúc thẩm"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

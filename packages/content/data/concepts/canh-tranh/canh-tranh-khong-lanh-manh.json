@@ -22,6 +22,38 @@
   "gây thiệt hại hoặc có thể gây thiệt hại",
   "doanh nghiệp khác"
  ],
+ "memo": {
+  "hook": "TRÁI THIỆN CHÍ + GÂY (hoặc có thể gây) THIỆT HẠI cho doanh nghiệp khác.",
+  "tree": [
+   {
+    "label": "Chủ thể",
+    "children": [
+     "Doanh nghiệp"
+    ]
+   },
+   {
+    "label": "Trái với",
+    "children": [
+     "Thiện chí, trung thực",
+     "Tập quán thương mại",
+     "Chuẩn mực kinh doanh"
+    ]
+   },
+   {
+    "label": "Hậu quả",
+    "children": [
+     "Gây hoặc có thể gây thiệt hại",
+     "Cho doanh nghiệp khác"
+    ]
+   },
+   {
+    "label": "Không cần",
+    "children": [
+     "Vị trí thống lĩnh, thị phần lớn"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

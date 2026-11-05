@@ -21,6 +21,33 @@
   "công khai, trừ trường hợp đặc biệt xử kín",
   "bảo đảm tranh tụng ở mọi cấp"
  ],
+ "memo": {
+  "hook": "CÔNG KHAI là nguyên tắc (xử kín vẫn tuyên công khai); TRANH TỤNG ở MỌI cấp.",
+  "tree": [
+   {
+    "label": "Kịp thời",
+    "children": [
+     "Trong thời hạn luật định",
+     "Công bằng"
+    ]
+   },
+   {
+    "label": "Công khai",
+    "children": [
+     "Nguyên tắc",
+     "Xử kín khi đặc biệt",
+     "Tuyên án công khai"
+    ]
+   },
+   {
+    "label": "Tranh tụng",
+    "children": [
+     "Mọi cấp xét xử",
+     "Chứng cứ xem xét công khai"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

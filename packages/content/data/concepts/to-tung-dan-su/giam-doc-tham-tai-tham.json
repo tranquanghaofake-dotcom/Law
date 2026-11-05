@@ -22,6 +22,33 @@
   "vi phạm pháp luật (giám đốc thẩm)",
   "tình tiết mới (tái thẩm)"
  ],
+ "memo": {
+  "hook": "GIÁM ĐỐC THẨM vì VI PHẠM; TÁI THẨM vì TÌNH TIẾT MỚI.",
+  "tree": [
+   {
+    "label": "Chung",
+    "children": [
+     "Xét lại bản án đã có hiệu lực",
+     "Chỉ khởi động bằng kháng nghị",
+     "Đương sự chỉ được đề nghị"
+    ]
+   },
+   {
+    "label": "Giám đốc thẩm",
+    "children": [
+     "Kết luận sai tình tiết",
+     "Vi phạm nghiêm trọng thủ tục",
+     "Sai áp dụng pháp luật"
+    ]
+   },
+   {
+    "label": "Tái thẩm",
+    "children": [
+     "Tình tiết mới không ai biết"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

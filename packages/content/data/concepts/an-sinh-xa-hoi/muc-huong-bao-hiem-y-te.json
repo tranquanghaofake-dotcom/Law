@@ -23,6 +23,38 @@
   "đúng quy định chuyển người bệnh"
  ],
  "note": "Luật Bảo hiểm y tế 25/2008/QH12 được sửa đổi nhiều lần, gần nhất bởi Luật 51/2024/QH15 (hiệu lực 01/7/2025) và Luật Phòng bệnh 114/2025/QH15 (hiệu lực 01/7/2026); văn bản hợp nhất 40/VBHN-VPQH 2026.",
+ "memo": {
+  "hook": "Ba mức: 100% – 95% – 80%, trong PHẠM VI được hưởng.",
+  "tree": [
+   {
+    "label": "100%",
+    "children": [
+     "Người có công, trẻ dưới 6 tuổi",
+     "Hộ nghèo",
+     "Khám ở cơ sở ban đầu"
+    ]
+   },
+   {
+    "label": "95%",
+    "children": [
+     "Người hưởng lương hưu",
+     "Hộ cận nghèo"
+    ]
+   },
+   {
+    "label": "80%",
+    "children": [
+     "Các đối tượng còn lại"
+    ]
+   },
+   {
+    "label": "Điều kiện",
+    "children": [
+     "Đúng quy định chuyển người bệnh"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",
