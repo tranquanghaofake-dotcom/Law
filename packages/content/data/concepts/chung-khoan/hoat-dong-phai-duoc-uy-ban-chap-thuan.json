@@ -22,10 +22,13 @@
   "chi nhánh, phòng giao dịch"
  ],
  "memo": {
-  "hook": "Một số thay đổi phải xin Ủy ban CHẤP THUẬN BẰNG VĂN BẢN TRƯỚC.",
+  "gist": "Tạm ngừng hoạt động, mở chi nhánh, chào bán ở nước ngoài phải được Ủy ban chấp thuận bằng văn bản trước.",
+  "kind": "tree",
+  "hook": "Muốn sửa nhà phải xin phép trước, không làm rồi mới báo.",
   "tree": [
    {
     "label": "Phải xin trước",
+    "icon": "📝",
     "children": [
      "Tạm ngừng (trừ bất khả kháng)",
      "Chào bán, niêm yết ở nước ngoài",
@@ -35,9 +38,20 @@
    },
    {
     "label": "Hình thức",
+    "icon": "📄",
     "children": [
      "Chấp thuận bằng văn bản"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty chứng khoán muốn mở 3 phòng giao dịch ở Đà Nẵng. Có cần xin phép không?",
+   "a": "Có, phải được Ủy ban chấp thuận bằng văn bản trước."
+  },
+  "contrast": [
+   {
+    "with": "dich-vu-cho-vay-ky-quy",
+    "text": "Bài này là danh sách việc cần xin phép; cho vay ký quỹ là một dịch vụ cần chấp thuận."
    }
   ]
  },

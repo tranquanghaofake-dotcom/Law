@@ -23,10 +23,13 @@
   "tư vấn dựa trên thông tin nội bộ"
  ],
  "memo": {
-  "hook": "Nội gián: DÙNG, TIẾT LỘ hoặc MÁCH NƯỚC dựa trên thông tin nội bộ — áp dụng với BẤT KỲ AI.",
+  "gist": "Dùng, tiết lộ hay mách người khác giao dịch dựa trên thông tin nội bộ chưa công bố; áp dụng với bất kỳ ai.",
+  "kind": "tree",
+  "hook": "Biết trước đề thi rồi đi mua đáp án.",
   "tree": [
    {
     "label": "Ba dạng",
+    "icon": "🕵️",
     "children": [
      "Tự dùng để giao dịch",
      "Tiết lộ, cung cấp",
@@ -35,16 +38,28 @@
    },
    {
     "label": "Chủ thể",
+    "icon": "👤",
     "children": [
      "Bất kỳ ai nắm thông tin nội bộ"
     ]
    },
    {
     "label": "Chế tài",
+    "icon": "⚖️",
     "children": [
      "Hành chính",
      "Có thể hình sự"
     ]
+   }
+  ],
+  "case": {
+   "q": "Giám đốc tài chính biết công ty sắp trúng hợp đồng lớn, nhắn em trai mua ngay. Giám đốc không tự mua. Có vi phạm không?",
+   "a": "Có. Tiết lộ và mách người khác giao dịch cũng là nội gián."
+  },
+  "contrast": [
+   {
+    "with": "thao-tung-thi-truong",
+    "text": "Nội gián là lợi dụng tin mật; thao túng là làm méo giá bằng giao dịch."
    }
   ]
  },

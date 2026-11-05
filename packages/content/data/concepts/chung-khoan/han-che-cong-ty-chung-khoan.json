@@ -22,10 +22,13 @@
   "cổ đông sáng lập 03 năm"
  ],
  "memo": {
-  "hook": "Môi giới hứa 'LÃI 2%/tháng, KHÔNG LỖ' là TRÁI LUẬT.",
+  "gist": "Công ty chứng khoán không được hứa lãi, hứa không lỗ, tiết lộ thông tin khách, hay làm khách hiểu nhầm giá.",
+  "kind": "tree",
+  "hook": "Ai hứa chắc lãi trên thị trường là đang hứa điều luật cấm.",
   "tree": [
    {
     "label": "Không được",
+    "icon": "🚫",
     "children": [
      "Bảo đảm lợi nhuận, không lỗ",
      "Tiết lộ thông tin khách hàng",
@@ -34,15 +37,27 @@
    },
    {
     "label": "Ngoại lệ",
+    "icon": "🔓",
     "children": [
      "Chứng khoán thu nhập cố định"
     ]
    },
    {
     "label": "Cổ đông sáng lập",
+    "icon": "👥",
     "children": [
      "Hạn chế 03 năm"
     ]
+   }
+  ],
+  "case": {
+   "q": "Môi giới nhắn khách: \"Vào mã này đảm bảo lãi 30% trong 3 tháng, lỗ em chịu.\" Có hợp pháp không?",
+   "a": "Không. Bảo đảm lợi nhuận, cam kết không lỗ là hành vi bị cấm."
+  },
+  "contrast": [
+   {
+    "with": "nghia-vu-cong-ty-chung-khoan",
+    "text": "Hạn chế là điều không được làm; nghĩa vụ là điều phải làm."
    }
   ]
  },

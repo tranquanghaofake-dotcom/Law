@@ -24,10 +24,13 @@
   "Sở giao dịch, Tổng công ty lưu ký"
  ],
  "memo": {
-  "hook": "Phải công bố: CÔNG TY ĐẠI CHÚNG, HẠ TẦNG thị trường, CỔ ĐÔNG LỚN 5%, NGƯỜI NỘI BỘ.",
+  "gist": "Công ty đại chúng, tổ chức hạ tầng thị trường, cổ đông lớn và người nội bộ phải công bố thông tin.",
+  "kind": "tree",
+  "hook": "Ai đứng dưới đèn sân khấu thì không được tắt đèn.",
   "tree": [
    {
     "label": "Doanh nghiệp",
+    "icon": "🏢",
     "children": [
      "Công ty đại chúng",
      "Tổ chức phát hành, niêm yết trái phiếu"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Hạ tầng",
+    "icon": "🏛️",
     "children": [
      "Sở giao dịch",
      "Tổng công ty lưu ký"
@@ -42,10 +46,21 @@
    },
    {
     "label": "Cá nhân, nhóm",
+    "icon": "👤",
     "children": [
      "Cổ đông lớn từ 5%",
      "Người nội bộ"
     ]
+   }
+  ],
+  "case": {
+   "q": "Thành viên Hội đồng quản trị công ty niêm yết muốn bán 100.000 cổ phiếu. Phải làm gì?",
+   "a": "Công bố thông tin trước và sau giao dịch."
+  },
+  "contrast": [
+   {
+    "with": "nguyen-tac-cong-bo-thong-tin",
+    "text": "Đối tượng là ai phải công bố; nguyên tắc là công bố thế nào."
    }
   ]
  },

@@ -5,7 +5,7 @@
  "term": "Giá trị tài sản ròng (NAV) của quỹ",
  "definition": "Việc xác định giá trị tài sản ròng trên một đơn vị quỹ đầu tư chứng khoán do công ty quản lý quỹ đầu tư chứng khoán thực hiện và được ngân hàng giám sát xác nhận; việc xác nhận giá trị tài sản ròng đối với quỹ thành viên do ngân hàng giám sát hoặc ngân hàng lưu ký thực hiện.",
  "plain": "NAV là \"giá trị thật\" của một đơn vị quỹ: tổng tài sản trừ nợ, chia cho số đơn vị. Công ty quản lý quỹ tính, ngân hàng giám sát xác nhận (hai lớp kiểm soát). Chứng khoán niêm yết định giá theo giá đóng cửa hoặc giá trung bình ngày giao dịch gần nhất; NAV phải công bố định kỳ. NAV xuống dưới 10 tỷ liên tục 06 tháng là một căn cứ giải thể quỹ (điểm đ khoản 1 Điều 104).",
- "example": "Quỹ mở có tài sản ròng 120 tỷ, 10 triệu đơn vị quỹ: NAV/đơn vị = 12.000 đồng. Nhà đầu tư bán lại quỹ mở theo mức NAV này (trừ phí).",
+ "example": "Quỹ mở có tài sản ròng 120 tỷ, 10 triệu đơn vị quỹ: giá trị tài sản ròng mỗi đơn vị là 12.000 đồng. Nhà đầu tư bán lại cho quỹ theo mức này, trừ phí.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1 Điều 106 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)",
@@ -24,10 +24,13 @@
   "dưới 10 tỷ trong 06 tháng"
  ],
  "memo": {
-  "hook": "NAV = (tài sản − nợ) ÷ số đơn vị; công ty quản lý quỹ TÍNH, ngân hàng giám sát XÁC NHẬN.",
+  "gist": "Giá trị tài sản ròng của quỹ là tài sản trừ nợ; chia cho số đơn vị quỹ ra giá mỗi đơn vị.",
+  "kind": "steps",
+  "hook": "Cái rổ trừ phần nợ, chia đều cho từng suất.",
   "tree": [
    {
     "label": "Công thức",
+    "icon": "🧮",
     "children": [
      "Tài sản trừ nợ",
      "Chia số đơn vị quỹ"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Kiểm soát",
+    "icon": "👁️",
     "children": [
      "Công ty quản lý quỹ tính",
      "Ngân hàng giám sát xác nhận"
@@ -42,9 +46,20 @@
    },
    {
     "label": "Định giá",
+    "icon": "📏",
     "children": [
      "Giá đóng cửa gần nhất"
     ]
+   }
+  ],
+  "case": {
+   "q": "Quỹ mở có tài sản ròng 120 tỷ, 10 triệu đơn vị quỹ. Giá mỗi đơn vị là bao nhiêu?",
+   "a": "12.000 đồng."
+  },
+  "contrast": [
+   {
+    "with": "quy-mo",
+    "text": "Giá trị tài sản ròng là cách tính giá; quỹ mở là loại quỹ mua bán lại theo giá đó."
    }
   ]
  },

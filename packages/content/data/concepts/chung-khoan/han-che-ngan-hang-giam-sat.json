@@ -23,21 +23,35 @@
   "không làm đối tác mua bán"
  ],
  "memo": {
-  "hook": "Người GIÁM SÁT phải ĐỘC LẬP với người BỊ GIÁM SÁT.",
+  "gist": "Ngân hàng giám sát phải độc lập, không là người liên quan hay có quan hệ vốn với công ty quản lý quỹ.",
+  "kind": "tree",
+  "hook": "Trọng tài không được là cổ đông của đội bóng.",
   "tree": [
    {
     "label": "Nguyên tắc",
+    "icon": "⚖️",
     "children": [
      "Độc lập"
     ]
    },
    {
     "label": "Không được",
+    "icon": "🚫",
     "children": [
      "Là người có liên quan",
      "Sở hữu, vay, cho vay với công ty quản lý quỹ",
      "Làm đối tác mua bán tài sản quỹ"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ngân hàng H sở hữu 40% vốn công ty quản lý quỹ K. H có được giám sát quỹ do K quản lý không?",
+   "a": "Không, vì mất độc lập."
+  },
+  "contrast": [
+   {
+    "with": "ngan-hang-giam-sat",
+    "text": "Hạn chế là điều cấm; ngân hàng giám sát là chức năng."
    }
   ]
  },

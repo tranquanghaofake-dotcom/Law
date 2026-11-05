@@ -23,10 +23,13 @@
   "khác đầu tư chứng khoán"
  ],
  "memo": {
-  "hook": "Sáu nghiệp vụ: 4 của CÔNG TY CHỨNG KHOÁN + 2 của CÔNG TY QUẢN LÝ QUỸ.",
+  "gist": "Kinh doanh chứng khoán gồm sáu nghiệp vụ: bốn của công ty chứng khoán và hai của công ty quản lý quỹ.",
+  "kind": "compare",
+  "hook": "Tự đầu tư cho mình thì không cần phép; làm hộ người khác lấy phí thì phải có phép.",
   "tree": [
    {
     "label": "Công ty chứng khoán",
+    "icon": "🏢",
     "children": [
      "Môi giới",
      "Tự doanh",
@@ -36,6 +39,7 @@
    },
    {
     "label": "Công ty quản lý quỹ",
+    "icon": "🧺",
     "children": [
      "Quản lý quỹ",
      "Quản lý danh mục"
@@ -43,9 +47,20 @@
    },
    {
     "label": "Tính chất",
+    "icon": "💡",
     "children": [
      "Kinh doanh có điều kiện"
     ]
+   }
+  ],
+  "case": {
+   "q": "Bạn nhận tiền người quen để \"chơi hộ\" lấy phí. Có phải kinh doanh chứng khoán không?",
+   "a": "Có, đó là quản lý danh mục, phải có giấy phép."
+  },
+  "contrast": [
+   {
+    "with": "moi-gioi-chung-khoan",
+    "text": "Kinh doanh là cả sáu nghiệp vụ; môi giới chỉ là một."
    }
   ]
  },

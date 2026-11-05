@@ -23,10 +23,13 @@
  ],
  "note": "Luật Phục hồi, phá sản 142/2025/QH15 (hiệu lực 01/3/2026) thay cụm \"pháp luật về phá sản\" bằng \"pháp luật về phục hồi, phá sản\" tại khoản 3 Điều 96. Giáo trình 2021 dẫn Luật Phá sản 2014.",
  "memo": {
-  "hook": "Giải thể, phá sản công ty chứng khoán: tài sản KHÁCH HÀNG được TẤT TOÁN riêng.",
+  "gist": "Công ty chứng khoán giải thể hay phá sản thì tiền, chứng khoán của khách được tất toán riêng, không lẫn tài sản công ty.",
+  "kind": "tree",
+  "hook": "Nhà sập thì đồ gửi của khách được dọn ra trước.",
   "tree": [
    {
     "label": "Giải thể",
+    "icon": "🚪",
     "children": [
      "Luật Chứng khoán",
      "Luật Doanh nghiệp"
@@ -34,15 +37,27 @@
    },
    {
     "label": "Phá sản",
+    "icon": "⚖️",
     "children": [
      "Luật Phục hồi, phá sản"
     ]
    },
    {
     "label": "Tài sản khách hàng",
+    "icon": "🛡️",
     "children": [
      "Tất toán riêng"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty chứng khoán bị mở thủ tục phá sản. Chứng khoán của khách xử lý thế nào?",
+   "a": "Được tất toán riêng, chuyển cho khách hoặc sang công ty khác."
+  },
+  "contrast": [
+   {
+    "with": "thu-hoi-giay-phep-cong-ty-chung-khoan",
+    "text": "Giải thể, phá sản là đóng cửa hẳn; thu hồi giấy phép là mất quyền kinh doanh chứng khoán."
    }
   ]
  },

@@ -22,26 +22,41 @@
   "Tổng giám đốc 02 năm kinh nghiệm"
  ],
  "memo": {
-  "hook": "Mỗi nghiệp vụ ≥ 3 người có CHỨNG CHỈ + 1 KIỂM SOÁT TUÂN THỦ; Tổng giám đốc 2 NĂM kinh nghiệm.",
+  "gist": "Mỗi nghiệp vụ cần 3 người có chứng chỉ, thêm 1 người kiểm soát tuân thủ; Tổng giám đốc có 2 năm kinh nghiệm.",
+  "kind": "checklist",
+  "hook": "Mỗi quầy ba người có bằng, cả nhà một người canh luật.",
   "tree": [
    {
     "label": "Mỗi nghiệp vụ",
+    "icon": "👥",
     "children": [
      "Ít nhất 03 người có chứng chỉ"
     ]
    },
    {
     "label": "Tuân thủ",
+    "icon": "👮",
     "children": [
      "Ít nhất 01 nhân viên"
     ]
    },
    {
     "label": "Tổng giám đốc",
+    "icon": "👤",
     "children": [
      "02 năm kinh nghiệm tài chính",
      "Chứng chỉ phân tích hoặc quản lý quỹ"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty xin cả môi giới và tự doanh cần tối thiểu bao nhiêu người có chứng chỉ?",
+   "a": "6 người, mỗi nghiệp vụ 3 người, cộng 1 nhân viên kiểm soát tuân thủ."
+  },
+  "contrast": [
+   {
+    "with": "dieu-kien-co-dong-cong-ty-chung-khoan",
+    "text": "Bài này về người làm việc; bài kia về người góp vốn."
    }
   ]
  },

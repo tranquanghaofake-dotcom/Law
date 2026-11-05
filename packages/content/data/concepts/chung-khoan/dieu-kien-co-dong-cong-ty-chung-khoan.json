@@ -24,16 +24,20 @@
   "10% – 5%"
  ],
  "memo": {
-  "hook": "Công ty chứng khoán: ≥ 2 sáng lập là TỔ CHỨC; tổ chức nắm 65%, trong đó BẢO HIỂM/NGÂN HÀNG 30%.",
+  "gist": "Cần ít nhất 2 cổ đông sáng lập là tổ chức; tổ chức nắm từ 65%, riêng ngân hàng, bảo hiểm từ 30%.",
+  "kind": "checklist",
+  "hook": "Chủ chính phải là tổ chức có gốc rễ vững, không chỉ vài người giàu.",
   "tree": [
    {
     "label": "Sáng lập",
+    "icon": "🏢",
     "children": [
      "Ít nhất 02 là tổ chức"
     ]
    },
    {
     "label": "Tỷ lệ",
+    "icon": "📊",
     "children": [
      "Tổ chức nắm tối thiểu 65%",
      "Bảo hiểm, ngân hàng tối thiểu 30%"
@@ -41,9 +45,20 @@
    },
    {
     "label": "Chống sở hữu chéo",
+    "icon": "🔗",
     "children": [
      "Quy tắc 10% – 5%"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ba cá nhân giàu có muốn góp toàn bộ vốn lập công ty chứng khoán. Có được không?",
+   "a": "Không. Phải có ít nhất 2 cổ đông sáng lập là tổ chức."
+  },
+  "contrast": [
+   {
+    "with": "dieu-kien-nhan-su-cong-ty-chung-khoan",
+    "text": "Bài này về người góp vốn; bài kia về người làm việc."
    }
   ]
  },

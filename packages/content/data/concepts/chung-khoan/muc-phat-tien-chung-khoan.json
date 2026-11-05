@@ -5,7 +5,7 @@
  "term": "Mức phạt tiền tối đa trong lĩnh vực chứng khoán",
  "definition": "Mức phạt tiền tối đa trong xử phạt vi phạm hành chính đối với các hành vi vi phạm khác trong lĩnh vực chứng khoán là 03 tỷ đồng. Mức phạt tiền tối đa quy định tại khoản 3 và khoản 4 Điều này được áp dụng đối với tổ chức; cá nhân thực hiện cùng hành vi vi phạm thì mức phạt tiền tối đa bằng một phần hai mức phạt tiền tối đa đối với tổ chức.",
  "plain": "Hai mức: (1) với giao dịch nội gián, thao túng (khoản 2, 3 Điều 12): tối đa 10 LẦN khoản thu trái pháp luật; nếu không có khoản thu hoặc 10 lần vẫn thấp hơn 03 tỷ thì áp dụng mức 03 tỷ; (2) các vi phạm khác: tối đa 03 TỶ. Đây là mức với TỔ CHỨC; cá nhân tối đa bằng 1/2. Mức cụ thể cho từng hành vi do Chính phủ quy định.",
- "example": "Cá nhân A thao túng giá, thu lợi bất chính 2 tỷ: mức tối đa với tổ chức là 10 × 2 tỷ = 20 tỷ; với cá nhân A tối đa là 10 tỷ (1/2).",
+ "example": "Cá nhân A thao túng giá, thu lợi bất chính 2 tỷ: mức tối đa với tổ chức là 10 lần, tức 20 tỷ; với cá nhân A tối đa là một nửa, tức 10 tỷ.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 4, khoản 5 Điều 132 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)",
@@ -23,10 +23,13 @@
   "cá nhân bằng 1/2 tổ chức"
  ],
  "memo": {
-  "hook": "Nội gián, thao túng: tối đa 10 LẦN khoản thu trái phép; vi phạm khác: 3 TỶ; cá nhân bằng MỘT NỬA.",
+  "gist": "Nội gián, thao túng phạt tối đa 10 lần khoản thu trái phép; vi phạm khác tối đa 3 tỷ; cá nhân bằng một nửa.",
+  "kind": "ladder",
+  "hook": "Ăn gian bao nhiêu, nộp gấp mười.",
   "tree": [
    {
     "label": "Nội gián, thao túng",
+    "icon": "🔟",
     "children": [
      "Tối đa 10 lần khoản thu trái phép",
      "Không thấp hơn mức 03 tỷ"
@@ -34,15 +37,27 @@
    },
    {
     "label": "Vi phạm khác",
+    "icon": "3️⃣",
     "children": [
      "Tối đa 03 tỷ"
     ]
    },
    {
     "label": "Cá nhân",
+    "icon": "👤",
     "children": [
-     "Bằng 1/2 tổ chức"
+     "Bằng một nửa tổ chức"
     ]
+   }
+  ],
+  "case": {
+   "q": "Cá nhân thao túng giá thu lợi 2 tỷ. Mức phạt tối đa là bao nhiêu?",
+   "a": "10 tỷ, bằng một nửa mức 20 tỷ của tổ chức."
+  },
+  "contrast": [
+   {
+    "with": "xu-ly-vi-pham-chung-khoan",
+    "text": "Mức phạt là con số; xử lý vi phạm là các hình thức xử lý."
    }
   ]
  },

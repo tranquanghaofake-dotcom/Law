@@ -23,10 +23,13 @@
   "Bộ luật Dân sự"
  ],
  "memo": {
-  "hook": "Bốn cách: THƯƠNG LƯỢNG – HÒA GIẢI – TRỌNG TÀI – TÒA ÁN; bồi thường theo BLDS.",
+  "gist": "Tranh chấp chứng khoán giải quyết bằng thương lượng, hòa giải, trọng tài hoặc Tòa án; bồi thường theo thỏa thuận hoặc luật dân sự.",
+  "kind": "steps",
+  "hook": "Bốn nấc từ nhẹ đến nặng: nói chuyện, nhờ người hòa, trọng tài, ra Tòa.",
   "tree": [
    {
     "label": "Phương thức",
+    "icon": "🗣️",
     "children": [
      "Thương lượng",
      "Hòa giải",
@@ -36,10 +39,21 @@
    },
    {
     "label": "Bồi thường",
+    "icon": "💵",
     "children": [
      "Theo thỏa thuận",
      "Bộ luật Dân sự"
     ]
+   }
+  ],
+  "case": {
+   "q": "Nhà đầu tư kiện công ty chứng khoán tự ý bán cổ phiếu, hợp đồng có điều khoản trọng tài. Kiện ở đâu?",
+   "a": "Trọng tài, theo điều khoản đã thỏa thuận."
+  },
+  "contrast": [
+   {
+    "with": "xu-ly-vi-pham-chung-khoan",
+    "text": "Tranh chấp là hai bên đòi nhau; xử lý vi phạm là Nhà nước phạt."
    }
   ]
  },

@@ -5,7 +5,7 @@
  "term": "Đình chỉ và hủy bỏ chào bán chứng khoán ra công chúng",
  "definition": "Ủy ban Chứng khoán Nhà nước có quyền đình chỉ chào bán chứng khoán ra công chúng tối đa là 60 ngày trong các trường hợp sau đây: a) Hồ sơ đăng ký chào bán chứng khoán ra công chúng có thông tin sai lệch, bỏ sót nội dung quan trọng có thể ảnh hưởng tới quyết định đầu tư và gây thiệt hại cho nhà đầu tư; b) Việc phân phối chứng khoán không thực hiện đúng quy định tại Điều 26 của Luật này.",
  "plain": "Đình chỉ là \"tạm dừng\" để sửa sai (tối đa 60 ngày). Hủy bỏ là \"chấm dứt\" đợt chào bán: khi hết hạn đình chỉ mà không khắc phục, khi IPO không bán đủ 15% (10%) cho 100 nhà đầu tư, khi chào bán thêm không huy động đủ vốn cho dự án… Khi hủy bỏ, tổ chức phát hành phải thu hồi chứng khoán và hoàn tiền trong 15 ngày, quá hạn phải bồi thường.",
- "example": "Đợt IPO của công ty S chỉ bán được 8% cổ phiếu có quyền biểu quyết cho nhà đầu tư không phải cổ đông lớn (vốn điều lệ 200 tỷ): Ủy ban hủy bỏ đợt chào bán (điểm b khoản 1 Điều 28); S phải hoàn tiền cho người mua trong 15 ngày.",
+ "example": "Đợt phát hành lần đầu của công ty S chỉ bán được 8% cổ phiếu có quyền biểu quyết cho nhà đầu tư nhỏ: Ủy ban hủy bỏ đợt chào bán, tổ chức phát hành phải hoàn tiền.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1 Điều 27 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)",
@@ -23,10 +23,13 @@
  ],
  "note": "Luật 56/2024/QH15 (hiệu lực 01/01/2025) bổ sung điểm d, đ khoản 1 Điều 28 (hủy bỏ khi phát hiện vi phạm sau khi kết thúc đợt chào bán) và khoản 2a (không hủy bỏ khi cổ phiếu đã niêm yết, đăng ký giao dịch). Giáo trình 2021 chưa có.",
  "memo": {
-  "hook": "ĐÌNH CHỈ = tạm dừng tối đa 60 NGÀY; HỦY BỎ = chấm dứt, hoàn tiền trong 15 NGÀY.",
+  "gist": "Đình chỉ là tạm dừng đợt chào bán tối đa 60 ngày để sửa; hủy bỏ là chấm dứt, hoàn tiền trong 15 ngày.",
+  "kind": "compare",
+  "hook": "Đèn vàng thì dừng sửa, đèn đỏ thì trả tiền ra về.",
   "tree": [
    {
     "label": "Đình chỉ",
+    "icon": "⏸️",
     "children": [
      "Tối đa 60 ngày",
      "Để sửa sai hồ sơ"
@@ -34,16 +37,28 @@
    },
    {
     "label": "Hủy bỏ",
+    "icon": "❌",
     "children": [
      "Hết đình chỉ không khắc phục",
-     "IPO không đủ 100 nhà đầu tư"
+     "Phát hành lần đầu ra công chúng không đủ 100 nhà đầu tư"
     ]
    },
    {
     "label": "Hệ quả hủy",
+    "icon": "💸",
     "children": [
      "Hoàn tiền trong 15 ngày"
     ]
+   }
+  ],
+  "case": {
+   "q": "Đợt phát hành lần đầu không đủ 100 nhà đầu tư. Ủy ban làm gì?",
+   "a": "Hủy bỏ đợt chào bán; tổ chức phát hành hoàn tiền cho nhà đầu tư."
+  },
+  "contrast": [
+   {
+    "with": "phan-phoi-chung-khoan",
+    "text": "Đình chỉ, hủy bỏ là chặn đợt chào bán; phân phối là bán chứng khoán ra."
    }
   ]
  },
