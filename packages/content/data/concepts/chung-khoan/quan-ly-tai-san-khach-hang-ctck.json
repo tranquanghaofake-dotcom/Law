@@ -23,10 +23,13 @@
   "trừ nợ của khách hàng"
  ],
  "memo": {
-  "hook": "Tiền, chứng khoán của bạn ở công ty chứng khoán vẫn là của BẠN; công ty phá sản thì TRẢ LẠI bạn.",
+  "gist": "Tiền, chứng khoán của khách ở công ty vẫn là của khách; công ty phá sản thì trả lại, trừ khoản khách nợ.",
+  "kind": "tree",
+  "hook": "Đồ gửi vẫn là đồ của mình, trừ khoản mình còn nợ chủ kho.",
   "tree": [
    {
     "label": "Gồm",
+    "icon": "💼",
     "children": [
      "Tiền gửi giao dịch",
      "Chứng khoán lưu ký"
@@ -34,16 +37,28 @@
    },
    {
     "label": "Thuộc",
+    "icon": "👤",
     "children": [
      "Khách hàng"
     ]
    },
    {
     "label": "Khi phá sản",
+    "icon": "⚖️",
     "children": [
      "Hoàn trả khách",
      "Chỉ trừ khoản khách nợ công ty"
     ]
+   }
+  ],
+  "case": {
+   "q": "Bạn có 200 triệu tài sản, nợ ký quỹ 50 triệu; công ty chứng khoán phá sản. Bạn nhận lại bao nhiêu?",
+   "a": "150 triệu, sau khi trừ nợ ký quỹ."
+  },
+  "contrast": [
+   {
+    "with": "bao-ve-tai-san-khach-hang",
+    "text": "Bài này nói tài sản gồm gì, xử lý khi phá sản; bài kia nói nguyên tắc tách biệt."
    }
   ]
  },

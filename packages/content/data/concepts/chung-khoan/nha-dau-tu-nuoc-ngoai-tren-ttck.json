@@ -22,10 +22,13 @@
   "Chính phủ quy định chi tiết"
  ],
  "memo": {
-  "hook": "Nhà đầu tư nước ngoài bị giới hạn ROOM sở hữu; room đầy thì không mua thêm.",
+  "gist": "Nhà đầu tư nước ngoài chỉ được nắm tới tỷ lệ tối đa theo công ty, ngành nghề; đầy rồi thì không mua thêm.",
+  "kind": "tree",
+  "hook": "Như phòng có số ghế: hết ghế thì người mới phải chờ.",
   "tree": [
    {
     "label": "Giới hạn",
+    "icon": "📏",
     "children": [
      "Tỷ lệ sở hữu nước ngoài",
      "Theo công ty, ngành nghề"
@@ -33,15 +36,27 @@
    },
    {
     "label": "Quy định chi tiết",
+    "icon": "🏛️",
     "children": [
      "Chính phủ"
     ]
    },
    {
     "label": "Hệ quả",
+    "icon": "🚫",
     "children": [
-     "Room đầy: không mua thêm"
+     "Đã đầy tỷ lệ: không mua thêm"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ngân hàng niêm yết đã chạm tỷ lệ sở hữu nước ngoài tối đa. Quỹ ngoại muốn mua thêm thì sao?",
+   "a": "Phải chờ nhà đầu tư nước ngoài khác bán ra."
+  },
+  "contrast": [
+   {
+    "with": "nguyen-tac-hoat-dong-chung-khoan",
+    "text": "Giới hạn sở hữu nước ngoài là ngoại lệ cụ thể; nguyên tắc chung là tự do giao dịch."
    }
   ]
  },

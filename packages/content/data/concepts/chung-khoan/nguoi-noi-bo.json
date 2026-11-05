@@ -22,28 +22,43 @@
   "công bố trước và sau giao dịch"
  ],
  "memo": {
-  "hook": "Người nội bộ (HĐQT, Tổng giám đốc, kế toán trưởng…) và người liên quan phải công bố TRƯỚC và SAU giao dịch.",
+  "gist": "Thành viên hội đồng quản trị, giám đốc, kế toán trưởng và người thân phải công bố trước và sau khi giao dịch.",
+  "kind": "tree",
+  "hook": "Người trong bếp biết món trước, nên phải báo trước khi ăn.",
   "tree": [
    {
     "label": "Là",
+    "icon": "👤",
     "children": [
-     "Thành viên HĐQT, Tổng giám đốc",
+     "Thành viên Hội đồng quản trị, Tổng giám đốc",
      "Kế toán trưởng",
      "Người công bố thông tin"
     ]
    },
    {
     "label": "Người có liên quan",
+    "icon": "👪",
     "children": [
      "Vợ, chồng, cha mẹ, con, anh chị em"
     ]
    },
    {
     "label": "Nghĩa vụ",
+    "icon": "📢",
     "children": [
      "Công bố trước giao dịch",
      "Công bố sau giao dịch"
     ]
+   }
+  ],
+  "case": {
+   "q": "Vợ của kế toán trưởng mua cổ phiếu công ty mà không công bố trước. Có vi phạm không?",
+   "a": "Có, vi phạm nghĩa vụ của người có liên quan."
+  },
+  "contrast": [
+   {
+    "with": "cong-bo-thong-tin-co-dong-lon",
+    "text": "Người nội bộ xét theo chức vụ; cổ đông lớn xét theo tỷ lệ nắm giữ."
    }
   ]
  },

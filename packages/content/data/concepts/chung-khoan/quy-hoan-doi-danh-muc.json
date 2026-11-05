@@ -5,7 +5,7 @@
  "term": "Quỹ hoán đổi danh mục (ETF)",
  "definition": "Quỹ hoán đổi danh mục là quỹ mở hình thành từ việc tiếp nhận, hoán đổi danh mục chứng khoán cơ cấu lấy chứng chỉ quỹ. Chứng chỉ quỹ hoán đổi danh mục được niêm yết và giao dịch trên hệ thống giao dịch cho chứng khoán niêm yết.",
  "plain": "ETF lai giữa quỹ mở và cổ phiếu: về bản chất là quỹ mở, nhưng nhà đầu tư lớn đổi một \"rổ\" chứng khoán cơ cấu lấy lô chứng chỉ quỹ (và ngược lại); nhà đầu tư nhỏ mua bán chứng chỉ ETF trên sàn như cổ phiếu. Thường mô phỏng một chỉ số như VN30. ETF được miễn điều kiện \"ít nhất 100 nhà đầu tư\" khi thành lập (điểm a khoản 1 Điều 108).",
- "example": "Bạn mua 100 chứng chỉ quỹ ETF mô phỏng VN30 trên app như mua cổ phiếu; một tổ chức lớn có thể nộp rổ 30 cổ phiếu VN30 theo tỷ lệ để đổi lấy lô chứng chỉ quỹ.",
+ "example": "Bạn mua 100 chứng chỉ quỹ hoán đổi danh mục mô phỏng chỉ số 30 cổ phiếu lớn trên ứng dụng như mua cổ phiếu; một tổ chức lớn có thể nộp rổ 30 cổ phiếu để đổi lấy lô chứng chỉ quỹ.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 42 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)",
@@ -23,31 +23,47 @@
   "niêm yết"
  ],
  "memo": {
-  "hook": "ETF: bản chất là QUỸ MỞ nhưng mua bán TRÊN SÀN như cổ phiếu; hoán đổi RỔ chứng khoán.",
+  "gist": "Quỹ mở được mua bán trên sàn như cổ phiếu; nhà đầu tư lớn đổi rổ chứng khoán lấy chứng chỉ quỹ.",
+  "kind": "compare",
+  "hook": "Mua cả giỏ trái cây chỉ bằng một tấm vé.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "🔄",
     "children": [
      "Quỹ mở"
     ]
    },
    {
     "label": "Nhà đầu tư lớn",
+    "icon": "🏢",
     "children": [
      "Đổi rổ chứng khoán lấy chứng chỉ quỹ"
     ]
    },
    {
     "label": "Nhà đầu tư nhỏ",
+    "icon": "👤",
     "children": [
      "Mua bán trên sàn"
     ]
    },
    {
     "label": "Thường mô phỏng",
+    "icon": "📊",
     "children": [
-     "Chỉ số, ví dụ VN30"
+     "Chỉ số, ví dụ chỉ số 30 cổ phiếu lớn"
     ]
+   }
+  ],
+  "case": {
+   "q": "Một tổ chức lớn nộp rổ 30 cổ phiếu theo tỷ lệ để lấy lô chứng chỉ quỹ. Đây là loại quỹ gì?",
+   "a": "Quỹ hoán đổi danh mục."
+  },
+  "contrast": [
+   {
+    "with": "quy-mo",
+    "text": "Quỹ hoán đổi mua bán trên sàn; quỹ mở thường bán lại cho công ty quản lý quỹ."
    }
   ]
  },

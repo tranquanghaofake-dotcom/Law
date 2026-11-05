@@ -22,26 +22,41 @@
   "Ủy ban Chứng khoán Nhà nước"
  ],
  "memo": {
-  "hook": "Ba tầng: CHÍNH PHỦ → BỘ TÀI CHÍNH → ỦY BAN CHỨNG KHOÁN.",
+  "gist": "Chính phủ thống nhất quản lý; Bộ Tài chính chịu trách nhiệm; Ủy ban Chứng khoán trực tiếp quản lý, giám sát thị trường.",
+  "kind": "ladder",
+  "hook": "Ba tầng: tổng chỉ huy, bộ chủ quản, trọng tài trên sân.",
   "tree": [
    {
     "label": "Chính phủ",
+    "icon": "🏛️",
     "children": [
      "Thống nhất quản lý"
     ]
    },
    {
     "label": "Bộ Tài chính",
+    "icon": "🏢",
     "children": [
      "Chịu trách nhiệm trước Chính phủ"
     ]
    },
    {
     "label": "Ủy ban Chứng khoán",
+    "icon": "👁️",
     "children": [
      "Thuộc Bộ Tài chính",
      "Trực tiếp quản lý, giám sát"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ai cấp giấy phép cho một công ty chứng khoán cụ thể?",
+   "a": "Ủy ban Chứng khoán Nhà nước."
+  },
+  "contrast": [
+   {
+    "with": "uy-ban-chung-khoan-nha-nuoc",
+    "text": "Quản lý nhà nước là cả ba tầng; Ủy ban là tầng trực tiếp."
    }
   ]
  },

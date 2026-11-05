@@ -23,10 +23,13 @@
   "không kiểm soát hằng ngày"
  ],
  "memo": {
-  "hook": "Quỹ: tiền GÓP CHUNG để SINH LỜI; nhà đầu tư KHÔNG kiểm soát hằng ngày.",
+  "gist": "Tiền góp chung của nhiều người để kiếm lời, do công ty quản lý quỹ điều hành; người góp không quyết hằng ngày.",
+  "kind": "tree",
+  "hook": "Góp gạo cho người khác nấu.",
   "tree": [
    {
     "label": "Dấu hiệu",
+    "icon": "🔎",
     "children": [
      "Vốn góp của nhiều nhà đầu tư",
      "Mục đích lợi nhuận",
@@ -35,6 +38,7 @@
    },
    {
     "label": "Loại",
+    "icon": "🗂️",
     "children": [
      "Quỹ đại chúng",
      "Quỹ thành viên"
@@ -42,9 +46,20 @@
    },
    {
     "label": "Điều hành",
+    "icon": "🧭",
     "children": [
      "Công ty quản lý quỹ"
     ]
+   }
+  ],
+  "case": {
+   "q": "Năm người bạn góp tiền, họp hằng tuần tự chọn cổ phiếu. Có phải quỹ đầu tư chứng khoán không?",
+   "a": "Không, vì họ tự kiểm soát hằng ngày và không có công ty quản lý quỹ."
+  },
+  "contrast": [
+   {
+    "with": "quy-dai-chung",
+    "text": "Quỹ đầu tư là khái niệm chung; quỹ đại chúng là một loại."
    }
   ]
  },

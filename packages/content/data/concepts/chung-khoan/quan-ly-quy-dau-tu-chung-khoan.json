@@ -22,22 +22,27 @@
   "mua, bán, nắm giữ"
  ],
  "memo": {
-  "hook": "Quản lý quỹ = quản lý TIỀN CHUNG của quỹ; nhà đầu tư KHÔNG can thiệp hằng ngày.",
+  "gist": "Công ty quản lý quỹ mua bán, nắm giữ tài sản của quỹ theo Điều lệ; nhà đầu tư không can thiệp hằng ngày.",
+  "kind": "tree",
+  "hook": "Người lái xe buýt: khách đã lên xe thì không giành tay lái.",
   "tree": [
    {
     "label": "Đối tượng",
+    "icon": "🧺",
     "children": [
      "Tài sản của quỹ"
     ]
    },
    {
     "label": "Hoạt động",
+    "icon": "🔄",
     "children": [
      "Mua, bán, nắm giữ"
     ]
    },
    {
     "label": "Căn cứ",
+    "icon": "📜",
     "children": [
      "Điều lệ quỹ",
      "Hợp đồng với ngân hàng giám sát"
@@ -45,9 +50,20 @@
    },
    {
     "label": "Phân biệt",
+    "icon": "↔️",
     "children": [
      "Danh mục: tiền từng người"
     ]
+   }
+  ],
+  "case": {
+   "q": "Quản lý riêng 300 tỷ cho một quỹ hưu trí theo hợp đồng ủy thác là quản lý quỹ hay quản lý danh mục?",
+   "a": "Quản lý danh mục."
+  },
+  "contrast": [
+   {
+    "with": "quan-ly-danh-muc-dau-tu",
+    "text": "Quỹ là tiền chung; danh mục là tiền riêng từng khách."
    }
   ]
  },

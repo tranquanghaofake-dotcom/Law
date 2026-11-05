@@ -24,10 +24,13 @@
   "tách biệt"
  ],
  "memo": {
-  "hook": "Gánh nghĩa vụ như công ty chứng khoán + quản lý ĐÚNG ĐIỀU LỆ, tính NAV, LƯU KÝ toàn bộ tài sản ủy thác.",
+  "gist": "Phải đầu tư đúng Điều lệ quỹ, tính giá trị tài sản ròng, lưu ký và tách biệt tài sản ủy thác.",
+  "kind": "tree",
+  "hook": "Cầm tiền của người khác thì đi đúng đường đã hứa.",
   "tree": [
    {
     "label": "Như công ty chứng khoán",
+    "icon": "🏢",
     "children": [
      "Kiểm soát nội bộ",
      "Ưu tiên lệnh khách"
@@ -35,17 +38,29 @@
    },
    {
     "label": "Thêm",
+    "icon": "➕",
     "children": [
      "Đúng Điều lệ quỹ, hợp đồng",
-     "Xác định NAV",
+     "Xác định giá trị tài sản ròng",
      "Lưu ký toàn bộ tài sản ủy thác"
     ]
    },
    {
     "label": "Tài sản",
+    "icon": "🔒",
     "children": [
      "Tách biệt"
     ]
+   }
+  ],
+  "case": {
+   "q": "Điều lệ quỹ trái phiếu chỉ cho mua trái phiếu tốt, công ty lại dồn tiền vào cổ phiếu đầu cơ. Ai phải báo Ủy ban?",
+   "a": "Ngân hàng giám sát."
+  },
+  "contrast": [
+   {
+    "with": "nghia-vu-ngan-hang-giam-sat",
+    "text": "Công ty quản lý quỹ quyết định đầu tư; ngân hàng giám sát giữ tài sản và canh."
    }
   ]
  },

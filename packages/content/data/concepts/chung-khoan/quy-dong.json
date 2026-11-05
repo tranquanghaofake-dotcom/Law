@@ -5,7 +5,7 @@
  "term": "Quỹ đóng",
  "definition": "Quỹ đóng là quỹ đại chúng mà chứng chỉ quỹ đã chào bán ra công chúng không được mua lại theo yêu cầu của nhà đầu tư.",
  "plain": "Nhà đầu tư quỹ đóng muốn thoát vốn thì bán chứng chỉ quỹ cho người khác trên sàn (chứng chỉ quỹ đóng phải niêm yết). Vì vốn ổn định, quỹ đóng được đầu tư tối đa 10% tài sản vào bất động sản (quỹ đầu tư bất động sản thì khác). Tăng vốn, đổi thời hạn hoạt động của quỹ đóng phải được Ủy ban chấp thuận; chứng chỉ quỹ đóng phát hành thêm ưu tiên nhà đầu tư hiện hữu qua quyền mua (Điều 112).",
- "example": "Bạn nắm chứng chỉ của một quỹ đóng đang niêm yết trên HOSE và muốn rút vốn: bạn đặt lệnh bán chứng chỉ quỹ trên sàn như bán cổ phiếu cho nhà đầu tư khác; quỹ không mua lại theo yêu cầu của bạn.",
+ "example": "Bạn nắm chứng chỉ của một quỹ đóng niêm yết trên sàn Thành phố Hồ Chí Minh, muốn rút vốn: đặt lệnh bán trên sàn như bán cổ phiếu; quỹ không mua lại theo yêu cầu của bạn.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 40 Điều 4 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)",
@@ -22,16 +22,20 @@
   "tăng vốn cần Ủy ban chấp thuận"
  ],
  "memo": {
-  "hook": "Quỹ ĐÓNG: KHÔNG mua lại theo yêu cầu; muốn rút thì BÁN TRÊN SÀN.",
+  "gist": "Quỹ đóng không mua lại chứng chỉ theo yêu cầu; muốn rút vốn thì bán chứng chỉ trên sàn cho người khác.",
+  "kind": "tree",
+  "hook": "Cửa vào một chiều: ra bằng cách nhường vé cho người khác.",
   "tree": [
    {
     "label": "Đặc trưng",
+    "icon": "🔒",
     "children": [
      "Không mua lại theo yêu cầu"
     ]
    },
    {
     "label": "Thoát vốn",
+    "icon": "🚪",
     "children": [
      "Bán trên sàn",
      "Phải niêm yết"
@@ -39,15 +43,27 @@
    },
    {
     "label": "Đầu tư",
+    "icon": "🏠",
     "children": [
      "Tối đa 10% vào bất động sản"
     ]
    },
    {
     "label": "Tăng vốn",
+    "icon": "📈",
     "children": [
      "Cần Ủy ban chấp thuận"
     ]
+   }
+  ],
+  "case": {
+   "q": "Bạn nắm chứng chỉ quỹ đóng niêm yết và muốn rút vốn. Làm thế nào?",
+   "a": "Bán chứng chỉ trên sàn cho nhà đầu tư khác."
+  },
+  "contrast": [
+   {
+    "with": "quy-mo",
+    "text": "Quỹ đóng không mua lại; quỹ mở mua lại theo yêu cầu."
    }
   ]
  },

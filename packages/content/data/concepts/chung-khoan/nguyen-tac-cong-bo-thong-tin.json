@@ -5,7 +5,7 @@
  "term": "Nguyên tắc công bố thông tin",
  "definition": "Việc công bố thông tin phải đầy đủ, chính xác, kịp thời. Đối tượng công bố thông tin phải chịu trách nhiệm trước pháp luật về nội dung thông tin công bố. Trường hợp có thay đổi nội dung thông tin đã công bố, đối tượng công bố thông tin phải công bố kịp thời, đầy đủ nội dung thay đổi và lý do thay đổi so với thông tin đã công bố trước đó.",
  "plain": "Ba chữ vàng: ĐẦY ĐỦ – CHÍNH XÁC – KỊP THỜI. Người công bố chịu trách nhiệm về nội dung; sửa thông tin thì phải công bố cả lý do thay đổi; khi công bố phải đồng thời báo cáo Ủy ban và nơi chứng khoán niêm yết, đăng ký giao dịch; tổ chức công bố qua người đại diện theo pháp luật hoặc người được ủy quyền công bố thông tin.",
- "example": "Công ty P công bố lợi nhuận quý 1.000 tỷ, một tuần sau sửa còn 300 tỷ: phải công bố kịp thời nội dung thay đổi VÀ lý do thay đổi (khoản 2 Điều 119); nếu sai lệch có chủ ý còn có thể bị xử lý vì công bố thông tin sai sự thật.",
+ "example": "Công ty P công bố lợi nhuận quý 1.000 tỷ, một tuần sau sửa còn 300 tỷ: phải công bố kịp thời nội dung thay đổi và lý do thay đổi; nếu cố ý sai lệch còn bị xử lý.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1, khoản 2 Điều 119 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)",
@@ -23,10 +23,13 @@
   "đồng thời báo cáo Ủy ban"
  ],
  "memo": {
-  "hook": "Ba chữ vàng: ĐẦY ĐỦ – CHÍNH XÁC – KỊP THỜI.",
+  "gist": "Thông tin công bố phải đầy đủ, chính xác, kịp thời; sửa thì phải nói lý do; người công bố chịu trách nhiệm.",
+  "kind": "checklist",
+  "hook": "Ba chữ: đủ, đúng, kịp.",
   "tree": [
    {
     "label": "Yêu cầu",
+    "icon": "✅",
     "children": [
      "Đầy đủ",
      "Chính xác",
@@ -35,21 +38,34 @@
    },
    {
     "label": "Trách nhiệm",
+    "icon": "👤",
     "children": [
      "Người công bố chịu về nội dung"
     ]
    },
    {
     "label": "Khi sửa",
+    "icon": "✏️",
     "children": [
      "Công bố lý do thay đổi"
     ]
    },
    {
     "label": "Đồng thời",
+    "icon": "📤",
     "children": [
      "Báo cáo Ủy ban, nơi niêm yết"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty công bố lợi nhuận 1.000 tỷ, một tuần sau sửa còn 300 tỷ. Phải làm gì?",
+   "a": "Công bố kịp thời nội dung thay đổi và lý do thay đổi."
+  },
+  "contrast": [
+   {
+    "with": "doi-tuong-cong-bo-thong-tin",
+    "text": "Nguyên tắc là công bố thế nào; đối tượng là ai phải công bố."
    }
   ]
  },

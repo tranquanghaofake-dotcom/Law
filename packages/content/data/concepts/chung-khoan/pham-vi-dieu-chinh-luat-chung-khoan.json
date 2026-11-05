@@ -22,10 +22,13 @@
   "quản lý nhà nước"
  ],
  "memo": {
-  "hook": "Luật Chứng khoán phủ bốn nhóm: HOẠT ĐỘNG – QUYỀN NGHĨA VỤ – TỔ CHỨC THỊ TRƯỜNG – QUẢN LÝ NHÀ NƯỚC.",
+  "gist": "Luật Chứng khoán lo bốn việc: hoạt động chứng khoán, quyền và nghĩa vụ các bên, tổ chức thị trường, quản lý nhà nước.",
+  "kind": "tree",
+  "hook": "Bốn góc sân: người chơi, luật chơi, sân bãi, trọng tài.",
   "tree": [
    {
     "label": "Hoạt động",
+    "icon": "📈",
     "children": [
      "Chào bán, niêm yết",
      "Giao dịch"
@@ -33,16 +36,28 @@
    },
    {
     "label": "Chủ thể",
+    "icon": "👥",
     "children": [
      "Quyền, nghĩa vụ"
     ]
    },
    {
     "label": "Nhà nước",
+    "icon": "🏛️",
     "children": [
      "Tổ chức thị trường",
      "Quản lý nhà nước"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ủy ban xử phạt công ty chậm công bố thông tin thuộc nhóm nào?",
+   "a": "Quản lý nhà nước."
+  },
+  "contrast": [
+   {
+    "with": "nguyen-tac-hoat-dong-chung-khoan",
+    "text": "Phạm vi là luật lo việc gì; nguyên tắc là làm theo cách nào."
    }
   ]
  },

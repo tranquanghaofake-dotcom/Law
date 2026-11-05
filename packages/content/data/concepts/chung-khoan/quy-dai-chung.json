@@ -25,16 +25,20 @@
   "90 ngày"
  ],
  "memo": {
-  "hook": "Quỹ đại chúng thành lập khi có ≥ 100 NHÀ ĐẦU TƯ và ≥ 50 TỶ, huy động trong 90 NGÀY.",
+  "gist": "Quỹ bán chứng chỉ ra công chúng; thành lập khi có từ 100 nhà đầu tư và 50 tỷ, huy động trong 90 ngày.",
+  "kind": "checklist",
+  "hook": "Mẹo trăm người, năm mươi tỷ, chín mươi ngày.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "📢",
     "children": [
      "Chào bán chứng chỉ quỹ ra công chúng"
     ]
    },
    {
     "label": "Điều kiện",
+    "icon": "✅",
     "children": [
      "Ít nhất 100 nhà đầu tư",
      "Ít nhất 50 tỷ"
@@ -42,6 +46,7 @@
    },
    {
     "label": "Huy động",
+    "icon": "⏳",
     "children": [
      "Trong 90 ngày",
      "Tiền bị phong tỏa"
@@ -49,10 +54,21 @@
    },
    {
     "label": "Loại",
+    "icon": "🔀",
     "children": [
      "Quỹ mở",
      "Quỹ đóng"
     ]
+   }
+  ],
+  "case": {
+   "q": "Quỹ mở huy động được 45 tỷ từ 300 nhà đầu tư. Có được thành lập không?",
+   "a": "Không, vì chưa đủ 50 tỷ; phải hoàn tiền trong 15 ngày."
+  },
+  "contrast": [
+   {
+    "with": "quy-thanh-vien",
+    "text": "Quỹ đại chúng chào bán ra công chúng; quỹ thành viên chỉ có ít thành viên góp vốn."
    }
   ]
  },

@@ -5,7 +5,7 @@
  "term": "Nghĩa vụ của ngân hàng giám sát",
  "definition": "Thực hiện lưu ký tài sản của quỹ đại chúng, công ty đầu tư chứng khoán; quản lý tách biệt tài sản của quỹ đại chúng, công ty đầu tư chứng khoán và các tài sản khác của ngân hàng giám sát; c) Giám sát để bảo đảm công ty quản lý quỹ đầu tư chứng khoán quản lý quỹ đại chúng, Tổng giám đốc (Giám đốc) công ty đầu tư chứng khoán quản lý tài sản của công ty đầu tư chứng khoán tuân thủ quy định của Luật này và Điều lệ quỹ đầu tư chứng khoán, Điều lệ công ty đầu tư chứng khoán;",
  "plain": "Các nghĩa vụ xoay quanh 3 chữ: GIỮ (lưu ký, tách biệt tài sản quỹ với tài sản ngân hàng), CHI (thu, chi, chuyển giao tài sản theo yêu cầu hợp pháp của công ty quản lý quỹ), CANH (giám sát tuân thủ, xác nhận báo cáo, đối chiếu sổ sách định kỳ, báo cáo Ủy ban khi phát hiện vi phạm).",
- "example": "Khi đối chiếu sổ sách định kỳ, ngân hàng giám sát phát hiện công ty quản lý quỹ ghi khống giá một tài sản để nâng NAV: ngân hàng không xác nhận báo cáo và phải báo cáo Ủy ban Chứng khoán Nhà nước.",
+ "example": "Khi đối chiếu sổ sách định kỳ, ngân hàng giám sát phát hiện công ty quản lý quỹ ghi khống giá một tài sản để nâng giá trị tài sản ròng: ngân hàng không xác nhận báo cáo và phải báo Ủy ban.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 2 Điều 116 Luật Chứng khoán 2019 (sửa đổi, bổ sung năm 2024, 2025)",
@@ -24,10 +24,13 @@
   "báo cáo Ủy ban"
  ],
  "memo": {
-  "hook": "Ngân hàng giám sát: GIỮ – CHI – CANH.",
+  "gist": "Giữ tài sản quỹ, chỉ thu chi theo lệnh hợp pháp, đối chiếu sổ sách và báo Ủy ban khi có sai.",
+  "kind": "tree",
+  "hook": "Giữ két, đếm tiền, thổi còi.",
   "tree": [
    {
     "label": "Giữ",
+    "icon": "🔐",
     "children": [
      "Lưu ký tài sản quỹ",
      "Tách biệt với tài sản ngân hàng"
@@ -35,17 +38,29 @@
    },
    {
     "label": "Chi",
+    "icon": "💳",
     "children": [
      "Thu, chi theo yêu cầu hợp pháp"
     ]
    },
    {
     "label": "Canh",
+    "icon": "👁️",
     "children": [
      "Giám sát tuân thủ",
      "Đối chiếu sổ sách",
      "Báo cáo Ủy ban"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ngân hàng giám sát phát hiện công ty ghi khống giá tài sản để nâng giá trị quỹ. Phải làm gì?",
+   "a": "Không xác nhận báo cáo và báo cáo Ủy ban Chứng khoán."
+  },
+  "contrast": [
+   {
+    "with": "ngan-hang-giam-sat",
+    "text": "Nghĩa vụ là việc phải làm; ngân hàng giám sát là chức năng."
    }
   ]
  },

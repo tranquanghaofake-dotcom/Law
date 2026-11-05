@@ -22,10 +22,13 @@
   "tự chịu trách nhiệm về rủi ro"
  ],
  "memo": {
-  "hook": "Bốn nguyên tắc: TÔN TRỌNG SỞ HỮU – CÔNG BẰNG, MINH BẠCH – BẢO VỆ NHÀ ĐẦU TƯ – TỰ CHỊU RỦI RO.",
+  "gist": "Tôn trọng quyền sở hữu, công bằng, minh bạch, bảo vệ nhà đầu tư, và ai đầu tư tự chịu rủi ro.",
+  "kind": "tree",
+  "hook": "Sân chơi phải sạch, nhưng thắng thua là của người chơi.",
   "tree": [
    {
     "label": "Tôn trọng",
+    "icon": "🤝",
     "children": [
      "Quyền sở hữu",
      "Tự do giao dịch"
@@ -33,21 +36,34 @@
    },
    {
     "label": "Thị trường",
+    "icon": "👁️",
     "children": [
      "Công bằng, công khai, minh bạch"
     ]
    },
    {
     "label": "Bảo vệ",
+    "icon": "🛡️",
     "children": [
      "Quyền lợi nhà đầu tư"
     ]
    },
    {
     "label": "Rủi ro",
+    "icon": "🎲",
     "children": [
      "Tự chịu trách nhiệm"
     ]
+   }
+  ],
+  "case": {
+   "q": "Bạn mua cổ phiếu theo tin đồn rồi thua lỗ. Có đòi Nhà nước bồi thường được không?",
+   "a": "Không, vì tự chịu rủi ro; trừ khi tin đồn do người khác tung ra để thao túng thì đòi người đó."
+  },
+  "contrast": [
+   {
+    "with": "pham-vi-dieu-chinh-luat-chung-khoan",
+    "text": "Nguyên tắc là luật chơi; phạm vi là luật lo những việc gì."
    }
   ]
  },

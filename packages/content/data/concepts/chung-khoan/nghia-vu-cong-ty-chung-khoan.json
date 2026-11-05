@@ -23,10 +23,13 @@
   "tư vấn phù hợp"
  ],
  "memo": {
-  "hook": "Ba nghĩa vụ nghề: TÁCH BIỆT tài sản – HỢP ĐỒNG văn bản – lệnh KHÁCH đi TRƯỚC lệnh tự doanh.",
+  "gist": "Công ty chứng khoán phải tách tài sản khách, ký hợp đồng bằng văn bản, ưu tiên lệnh khách trước lệnh của chính mình.",
+  "kind": "tree",
+  "hook": "Khách xếp hàng trước, nhà mình xếp sau.",
   "tree": [
    {
     "label": "Tài sản",
+    "icon": "🔒",
     "children": [
      "Tách biệt từng khách",
      "Tách với tài sản công ty"
@@ -34,6 +37,7 @@
    },
    {
     "label": "Hợp đồng",
+    "icon": "📝",
     "children": [
      "Bằng văn bản",
      "Thông tin trung thực"
@@ -41,6 +45,7 @@
    },
    {
     "label": "Lệnh",
+    "icon": "🥇",
     "children": [
      "Ưu tiên lệnh khách hàng",
      "Chống chạy trước lệnh"
@@ -48,9 +53,20 @@
    },
    {
     "label": "Tư vấn",
+    "icon": "🎯",
     "children": [
      "Phù hợp khả năng chịu rủi ro"
     ]
+   }
+  ],
+  "case": {
+   "q": "Khách đặt mua 500.000 cổ phiếu X; bộ phận tự doanh cũng muốn mua X cùng giá. Lệnh nào đi trước?",
+   "a": "Lệnh của khách."
+  },
+  "contrast": [
+   {
+    "with": "han-che-cong-ty-chung-khoan",
+    "text": "Nghĩa vụ là điều phải làm; hạn chế là điều không được làm."
    }
   ]
  },
