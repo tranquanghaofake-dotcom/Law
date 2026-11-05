@@ -70,13 +70,13 @@ Cổng: `00-ho-so.md` có đủ 6 mục trên (mục chưa biết ghi "mặc đ�
 Làm: từ đề tài thô, đưa ra **3 phương án** (hẹp / vừa / tham vọng). Chấm mỗi phương án 1–5 theo: tính cấp thiết (văn bản mới, bất cập có bằng chứng, vụ việc nổi bật); **tính mới** (đã tìm các công trình gần nhất chưa? khác ở đâu?); khả thi về nguồn (có bản án, số liệu, tài liệu nước ngoài đọc được không?); vừa độ dài; hợp với định hướng nghề.
 Tên đề tài phải nêu đối tượng + phạm vi + góc tiếp cận. Ví dụ khuôn: "Pháp luật về X — thực trạng và kiến nghị hoàn thiện"; "X theo pháp luật [nước A] và kinh nghiệm cho Việt Nam"; "Thực tiễn áp dụng X tại Tòa án…".
 Sai lầm cần chặn: đề tài rộng như giáo trình ("Pháp luật về hợp đồng"); trùng hoàn toàn khóa luận hoặc luận văn trước; văn bản nền sắp bị thay thế mà không xử lý.
-**Tìm ngách**: quét 7 nguồn tín hiệu và áp phép thử 4 điều kiện trong `references/tim-ngach.md`. Nếu ở pha 2 hoặc pha 5 lộ ra ngách tốt hơn, **quay lại pha 1**.
+**Tìm ngách**: quét 9 nguồn tín hiệu, xét khoảng trống thời gian, rồi áp phép thử 4 điều kiện trong `references/tim-ngach.md`. Nếu ở pha 2 hoặc pha 5 lộ ra ngách tốt hơn, **quay lại pha 1**.
 Cổng: người dùng chọn 1 phương án; đã ghi ≥ 3 công trình gần nhất (đã kiểm có thật) và 1 câu "đề tài này khác các công trình đó ở …".
 
 ### Pha 2 — Tổng quan tình hình nghiên cứu
 Làm: lập chiến lược tìm (từ khóa Việt và Anh, nguồn: `references/nguon-tra-cuu.md`). Đọc 3 lượt (lướt → đọc lập luận → đọc phê phán). Ghi **ma trận tài liệu**: tác giả, năm, loại, câu hỏi, phương pháp, kết luận, hạn chế, liên quan tới mục nào của đề cương.
 Viết tổng quan **theo chủ đề**, không theo danh sách tác giả: nhóm A đã làm rõ…, nhóm B tranh luận…, **chưa ai** làm… → khoảng trống mà đề tài lấp.
-Cổng: ma trận ≥ 15 nguồn cho khóa luận hoặc NCKH (≥ 8 cho tiểu luận), có cả trong và ngoài nước nếu đề tài có so sánh; khoảng trống nghiên cứu nêu được trong 2–3 câu **và đã kiểm trùng với cột "Kiến nghị đã đưa ra"**; mọi nguồn trong ma trận đều đã mở được hoặc ghi rõ "chỉ có tóm tắt".
+Cổng: ma trận ≥ 15 nguồn cho khóa luận hoặc NCKH (≥ 8 cho tiểu luận), **trong đó ≥ 5 nguồn học thuật** (bài tạp chí, sách chuyên khảo, luận án; ≥ 3 cho tiểu luận), có cột ngày đăng, có cả trong và ngoài nước nếu đề tài có so sánh; khoảng trống nghiên cứu nêu được trong 2–3 câu **và đã kiểm trùng với cột "Kiến nghị đã đưa ra"**; mọi nguồn trong ma trận đều đã mở được hoặc ghi rõ "chỉ có tóm tắt".
 
 ### Pha 3 — Câu hỏi, khung lý thuyết, phương pháp
 Làm: 1 câu hỏi chính + 2–4 câu hỏi phụ (mỗi câu ứng với ≥ 1 mục đề cương). Giả thuyết nghiên cứu nếu có. Khung lý thuyết: học thuyết hoặc nguyên tắc làm thước đo đánh giá (ví dụ: tự do hợp đồng, bảo vệ bên yếu thế, tương xứng, chi phí giao dịch). Phương pháp chọn theo `references/phuong-phap-luat-hoc.md`, **mỗi phương pháp gắn với câu hỏi và chương cụ thể**; cấm viết chung chung "phân tích, tổng hợp, so sánh…" mà không nói dùng ở đâu, để làm gì.
@@ -96,7 +96,7 @@ Cổng: mọi VBQPPL được nhắc trong đề cương có dòng trong bảng 
 Làm: viết **một chương một lần**, theo đề cương; sau mỗi chương dừng cho người dùng xem. Mỗi luận điểm theo chuỗi:
 **Vấn đề → Quy định hiện hành (nguyên văn, điều/khoản) → Quan điểm khoa học (đồng thuận và tranh luận) → Thực tiễn (bản án, số liệu) → Đánh giá của tác giả theo khung lý thuyết → (nếu có) Kiến nghị.**
 Chương lý luận: định nghĩa có nguồn, so sánh các định nghĩa rồi đưa định nghĩa của tác giả; đặc điểm; phân loại; nội dung điều chỉnh. Không chép giáo trình. Chương thực trạng: chia **ưu điểm / hạn chế / nguyên nhân** (nguyên nhân từ pháp luật, từ thực thi, từ nhận thức); hội đồng hay bắt lỗi thiếu phân tích nguyên nhân cốt lõi. Chương kiến nghị: mỗi kiến nghị phải **(a) gắn với 1 hạn chế đã chứng minh, (b) nói sửa điều/khoản nào của văn bản nào, (c) đề xuất câu chữ cụ thể nếu được, (d) lường tác động hoặc phản biện**. Kiến nghị chung chung ("tăng cường tuyên truyền") chỉ đặt cuối, không làm trọng tâm.
-**Kiểm phản chứng (bắt buộc trước khi chốt mỗi hạn chế):** tìm câu trả lời chính thức cho **đúng câu hỏi pháp lý** đó: hỏi đáp, công văn của cơ quan quản lý, án lệ, giải đáp của TANDTC, quan điểm học giả trái chiều. Có thì phải viết vào bài: nêu quan điểm đó, đánh giá giá trị pháp lý, rồi mới kết luận. Hạn chế nào chưa qua bước này thì giữ nhãn `[CẦN KIỂM: phản chứng]`.
+**Kiểm phản chứng (bắt buộc trước khi chốt mỗi hạn chế):** tìm câu trả lời chính thức cho **đúng câu hỏi pháp lý** đó: hỏi đáp, công văn của cơ quan quản lý, án lệ, giải đáp của TANDTC, quan điểm học giả trái chiều, và **bản dự thảo của chính điều luật đó** (chữ bị bỏ hoặc thêm). Không tìm thấy gì thì ghi "chưa tìm thấy hướng dẫn … (tìm ngày …)" vào bài. Có thì phải viết vào bài: nêu quan điểm đó, đánh giá giá trị pháp lý, rồi mới kết luận. Hạn chế nào chưa qua bước này thì giữ nhãn `[CẦN KIỂM: phản chứng]`.
 Cổng mỗi chương: chạy `python3 scripts/kiem_tra_ban_thao.py <file chương> <các file phụ lục> --nguyen-van 05-nguon/nguyen-van.md`. Truyền nhiều file để kiểm tham chiếu "Phụ lục N"; mọi đoạn trích ≥ 25 ký tự phải có trong file nguyên văn. Không còn lỗi CHẶN hoặc NẶNG; người dùng duyệt.
 
 ### Pha 7 — Phản biện giả lập hội đồng
@@ -112,7 +112,7 @@ Cổng: `kiem_tra_ban_thao.py` chạy trên bản cuối báo 0 lỗi; checklist
 | Cần | Đọc |
 |---|---|
 | Thang điểm Euréka, Bộ GD&ĐT, cấp trường; ẩn danh | `references/tieu-chi-cham.md` |
-| Tìm ngách: 7 nguồn tín hiệu, phép thử 4 điều kiện | `references/tim-ngach.md` |
+| Tìm ngách: 9 nguồn tín hiệu, khoảng trống thời gian, phép thử 4 điều kiện | `references/tim-ngach.md` |
 | Chọn và viết phương pháp nghiên cứu luật học | `references/phuong-phap-luat-hoc.md` |
 | Tìm văn bản, bản án, án lệ, tạp chí, tài liệu nước ngoài | `references/nguon-tra-cuu.md` |
 | Khung phần mở đầu, đề cương, ma trận tài liệu | `references/de-cuong-mau.md` |
@@ -120,7 +120,7 @@ Cổng: `kiem_tra_ban_thao.py` chạy trên bản cuối báo 0 lỗi; checklist
 | Lỗi hội đồng hay bắt, câu hỏi bảo vệ | `references/phan-bien-hoi-dong.md` |
 | Nhật ký AI, quy tắc diễn đạt lại, đạo văn | `references/liem-chinh-ai.md` |
 | Kiểm bản nháp tự động | `python3 scripts/kiem_tra_ban_thao.py <file.md>` |
-| Ví dụ pha 0–4 đã chạy (cổng pha 2 chưa qua — xem đúng cách để mở `[CẦN KIỂM]`) | `vi-du/giao-dich-nguoi-co-lien-quan/` |
+| Ví dụ đã chạy, kèm phiếu tự chấm và bài học: luật doanh nghiệp (3 vòng, 55 → 71) và luật lao động + dữ liệu (2 vòng, 58 → 71) | `vi-du/giao-dich-nguoi-co-lien-quan/`, `vi-du/giam-sat-nguoi-lao-dong/` |
 
 ## Công cụ, nếu phiên có
 
@@ -145,6 +145,8 @@ Không có công cụ tìm kiếm thì nói rõ: mọi nguồn ở pha 2 và pha
 | Kết luận "luật chưa quy định" trong khi cơ quan quản lý đã trả lời | Bước kiểm phản chứng ở pha 6 |
 | Dẫn sai khoản, trích sai chữ, trích vế chưa đọc | `05-nguon/nguyen-van.md` + script `--nguyen-van` (lỗi `trich-ngoai-nguyen-van`) |
 | Coi hỏi đáp, công văn như luật | Cột giá trị pháp lý trong sổ nguồn |
+| Chép lại dẫn chiếu sai của nguồn khác (vd "BLDS năm 2025") | Tự mở văn bản được dẫn, đối chiếu điều khoản rồi mới dùng |
+| Ghi chú nháp tự đặt "[…]" lọt vào bản nộp | Chỉ dùng bộ nhãn chuẩn; script bắt `ghi-chu-ngoac-vuong` |
 | Tham chiếu "Phụ lục 1" nhưng không có phụ lục | Script kiểm `tham-chieu-hong` |
 | Nhận tính mới cho kiến nghị người khác đã nêu | Cột "Kiến nghị đã đưa ra" + kiểm trùng (`de-cuong-mau.md`) |
 | Gán lời người hỏi thành lời cơ quan trả lời | Quy tắc hỏi đáp trong bảng giá trị pháp lý |

@@ -86,6 +86,13 @@ def kiem_tra(van, nop=False, an_danh=None, tieu_de_khac=None, nguyen_van=None):
         muc = "CHẶN" if nop else ("NẶNG" if m.group(1) == "CẦN KIỂM" else "NHẸ")
         them("nhan-con-sot", muc, _dong(van, m.start()), m.group(0))
 
+    # 1b. Ghi chú tự đặt trong ngoặc vuông (không theo bộ nhãn chuẩn) — dễ lọt vào bản nộp
+    for m in re.finditer(r"\[(?!\^)([^\[\]\n]{8,})\](?!\()", van):
+        if RE_NHAN.match(m.group(0)):
+            continue
+        them("ghi-chu-ngoac-vuong", "CHẶN" if nop else "NHẸ", _dong(van, m.start()),
+             f"ghi chú '{m.group(0)[:50]}…' — dùng nhãn chuẩn hoặc xóa trước khi nộp")
+
     # 2. Footnote dùng mà không định nghĩa, hoặc ngược lại
     dung = {}
     for m in RE_FN_DUNG.finditer(van):

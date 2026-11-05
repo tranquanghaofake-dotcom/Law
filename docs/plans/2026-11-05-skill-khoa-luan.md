@@ -77,3 +77,7 @@ Task 6: xong — 87b5e5a
 
 ## Phiên đề thứ hai (Hào: "tiếp tục làm thêm đề, kiểm, tìm ngách rồi cải thiện")
 Task 7: bắt đầu — base 16c5980 — đề mẫu 2: bảo vệ dữ liệu cá nhân của người lao động (ngành luật lao động + dữ liệu, kiểm skill ngoài luật doanh nghiệp)
+- Đề 2 "bảo vệ dữ liệu cá nhân của người lao động": pha 0–7, 2 vòng, tự chấm 58 → 71. Ngách N1' (chuẩn "biết rõ" khi giám sát bằng công nghệ, sau NĐ 330/2026). Nguồn đã kiểm: Luật 91/2025/QH15 (26/6/2025, hiệu lực 01/01/2026); NĐ 356/2025/NĐ-CP (thay NĐ 13/2023 từ 01/01/2026); NĐ 330/2026/NĐ-CP (19/8/2026); dự thảo Luật 2024 Điều 26 k6 ("biết rõ và đồng ý" → bị bỏ); WP29 Opinion 2/2017; Bărbulescu [GC] 2017.
+- Sửa skill (bài học 12–18): tim-ngach.md lên 9 nguồn tín hiệu (bất đối xứng câu chữ; dự thảo so với bản thông qua) + khoảng trống thời gian; phép thử tính mới tính cả bài thực hành; cổng pha 2 cần ≥ 5 nguồn học thuật + cột ngày đăng; kiểm phản chứng gồm dự thảo; không chép dẫn chiếu sai của nguồn; script lỗi `ghi-chu-ngoac-vuong` (24 test).
+Rút kinh nghiệm: ở đề 2 chính tôi bỏ bước kiểm phản chứng dù skill đã bắt buộc → luật viết ra chưa đủ, cần cổng có thứ kiểm được. Lần sau nên cân nhắc thêm vào script: hạn chế chưa có nguồn "phản chứng" thì báo.
+Task 7: xong — (commit tiếp theo)

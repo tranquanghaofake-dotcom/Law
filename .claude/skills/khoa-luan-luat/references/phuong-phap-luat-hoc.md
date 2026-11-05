@@ -15,7 +15,7 @@ Nguồn: Lê Huỳnh Tấn Duy, Tạp chí Khoa học pháp lý Việt Nam số 
 
 ### 1. Phân tích luật viết (doctrinal, "black-letter")
 Dùng khi: câu hỏi là "pháp luật quy định thế nào, có nhất quán, đủ, rõ không?".
-Quy trình: (1) xác định toàn bộ quy phạm liên quan, kể cả văn bản hướng dẫn và văn bản chuyên ngành; (2) giải thích: câu chữ → hệ thống (đặt trong luật chung và luật chuyên ngành, nguyên tắc ưu tiên áp dụng) → mục đích (tờ trình, báo cáo thẩm tra) → lịch sử (văn bản trước); (3) đánh giá theo tiêu chí: thống nhất, đồng bộ, khả thi, minh bạch, phù hợp điều ước; (4) tổng hợp nhận xét. (Đoàn Đức Lương, Đào Mộng Điệp, Tạp chí Pháp luật và Thực tiễn số 57/2023.)
+Quy trình: (1) xác định toàn bộ quy phạm liên quan, kể cả văn bản hướng dẫn và văn bản chuyên ngành; (2) giải thích: câu chữ → hệ thống (đặt trong luật chung và luật chuyên ngành, nguyên tắc ưu tiên áp dụng; so các khoản trong cùng điều) → mục đích (tờ trình, báo cáo thẩm tra) → lịch sử (văn bản trước; **so bản dự thảo với bản thông qua**: chữ bị bỏ thường là bằng chứng mạnh nhất về ý đồ nhà làm luật); (3) đánh giá theo tiêu chí: thống nhất, đồng bộ, khả thi, minh bạch, phù hợp điều ước; (4) tổng hợp nhận xét. (Đoàn Đức Lương, Đào Mộng Điệp, Tạp chí Pháp luật và Thực tiễn số 57/2023.)
 Viết đúng: "Phương pháp phân tích luật viết được sử dụng ở mục 2.1 để đánh giá tính thống nhất giữa Điều … Luật … và Điều … Nghị định …".
 
 ### 2. So sánh luật

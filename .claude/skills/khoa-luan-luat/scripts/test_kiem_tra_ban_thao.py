@@ -95,6 +95,15 @@ class KiemTraBanThao(unittest.TestCase):
         kq = kiem_tra("Luật dùng chữ \"hoặc\".", nguyen_van="")
         self.assertEqual(len(muc(kq, "trich-ngoai-nguyen-van")), 0)
 
+    def test_ghi_chu_ngoac_vuong_tu_dat_bi_chan_khi_nop(self):
+        kq = kiem_tra("Hạn chế (iii). [Giả thuyết cần khảo sát: doanh nghiệp vẫn làm X.]", nop=True)
+        self.assertTrue(any(v["muc"] == "CHẶN" for v in muc(kq, "ghi-chu-ngoac-vuong")))
+
+    def test_ngoac_vuong_ngan_va_link_khong_bao(self):
+        van = "Bărbulescu c. Roumanie [GC], xem [trang này](https://x.vn).[^1]\n\n[^1]: Nguồn."
+        kq = kiem_tra(van, nop=True)
+        self.assertEqual(len(muc(kq, "ghi-chu-ngoac-vuong")), 0)
+
     def test_ban_sach_khong_loi_chan(self):
         van = (
             "Khoản 1 Điều 4 Luật Doanh nghiệp (Luật số 59/2020/QH14) quy định…[^1]\n\n"
