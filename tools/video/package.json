@@ -1,17 +1,17 @@
 {
   "name": "luyen-luat-video",
   "version": "1.0.0",
-  "description": "Video giới thiệu Luyện Luật (TikTok 9:16) dựng bằng Remotion",
+  "description": "Video giới thiệu Luyện Luật (TikTok 9:16, 60 fps) dựng bằng Remotion",
   "private": true,
   "license": "UNLICENSED",
   "type": "module",
   "scripts": {
     "studio": "remotion studio",
-    "shots": "node scripts/shoot.cjs",
     "stats": "node scripts/stats.mjs",
-    "music": "python3 scripts/phonk.py public/music/phonk.wav",
-    "render": "npm run stats && npm run music && remotion render GioiThieu out/gioi-thieu.mp4 --codec=h264 --crf=18",
-    "still": "remotion still GioiThieu out/still.png --frame=300",
+    "capture": "node scripts/capture.mjs",
+    "music": "python3 scripts/phonk.py public/music/nhac-nhap.wav 111 37 3",
+    "render": "npm run stats && remotion render GioiThieu out/gioi-thieu-dang-tiktok.mp4 --codec=h264 --crf=16",
+    "render:nhap": "npm run stats && npm run music && remotion render GioiThieu out/gioi-thieu-nhac-nhap.mp4 --codec=h264 --crf=20 --props={\"music\":true}",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

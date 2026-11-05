@@ -12,6 +12,13 @@ const laws = fs.readdirSync(path.join(DATA, 'laws')).filter((f) => f.endsWith('.
 // Lấy mẫu thuật ngữ ngắn, rải đều để làm dải chữ chạy.
 const short = terms.filter((t) => t.length <= 26).sort((a, b) => a.localeCompare(b, 'vi'));
 const sample = Array.from({ length: 36 }, (_, i) => short[Math.floor((i * short.length) / 36)]);
-const out = { subjects: subjects.length, subjectNames: subjects.map((s) => s.short ?? s.title), concepts: terms.length, sets, laws, sample };
+const out = { subjects: subjects.length, subjectNames: subjects.map((s) => s.short ?? s.title),
+  subjectList: subjects.map((s) => ({ id: s.id, title: s.title, short: s.short ?? s.title })),
+  chapters: subjects.reduce((n, s) => n + (s.chapters?.length ?? 0), 0), concepts: terms.length, sets, laws, sample };
+// Khái niệm mẫu cho cảnh "Hiểu nhanh" + bộ icon nét mảnh của web (import thẳng file TS, Node ≥ 22.18 tự bỏ kiểu).
+const feat = json(path.join(conceptDir, fs.readdirSync(conceptDir).find((d) => fs.existsSync(path.join(conceptDir, d, 'dat-coc.json'))), 'dat-coc.json'));
+out.featured = { term: feat.term, cite: feat.source.cite, memo: feat.memo };
+const { MEMO_ICON_ART } = await import(path.join(import.meta.dirname, '..', '..', '..', 'apps', 'web', 'src', 'lib', 'art', 'memoIcons.ts'));
+fs.writeFileSync(path.join(import.meta.dirname, '..', 'src', 'memo-icons.json'), JSON.stringify(MEMO_ICON_ART) + '\n');
 fs.writeFileSync(path.join(import.meta.dirname, '..', 'src', 'stats.json'), JSON.stringify(out, null, 1) + '\n');
 console.log(`stats: ${out.subjects} môn · ${out.concepts} khái niệm · ${out.sets} bộ đề · ${out.laws} văn bản`);

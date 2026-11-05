@@ -8,3 +8,7 @@ out
 
 # Nhạc sinh lại bằng: npm run music
 public/music/*.wav
+
+# Asset quay từ web (npm run capture)
+public/cap/
+.cap-tmp/

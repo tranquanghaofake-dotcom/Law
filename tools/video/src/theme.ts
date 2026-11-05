@@ -18,41 +18,55 @@ export const C = {
   wood: "#4b2e18",
 };
 
-export const UI = loadUi("normal", {
-  weights: ["500", "700", "800"],
-  subsets: ["vietnamese", "latin"],
-}).fontFamily;
+export const UI = loadUi("normal", { weights: ["500", "700", "800"], subsets: ["vietnamese", "latin"] }).fontFamily;
+export const DISPLAY = loadDisplay("normal", { weights: ["700", "800"], subsets: ["vietnamese", "latin"] }).fontFamily;
 
-export const DISPLAY = loadDisplay("normal", {
-  weights: ["700", "800"],
-  subsets: ["vietnamese", "latin"],
-}).fontFamily;
+// Nhịp theo bài "Aura Farming" (Mustafa Saboori): 111 BPM (Tunebat), dựng ở 60 fps.
+// 1 phách = 32,43 khung (không chẵn) → mọi mốc tính bằng b(n) rồi làm tròn, không cộng dồn sai số.
+export const FPS = 60;
+export const BPM = 111;
+export const FPB = (FPS * 60) / BPM;
+export const b = (beats: number) => Math.round(beats * FPB);
 
-// Nhịp nhạc: 150 BPM ở 30 fps → 1 phách = 12 khung, 1 ô nhịp = 48 khung, 1 bước 16tel = 3 khung.
-export const FPS = 30;
-export const BEAT = 12;
-export const BAR = 48;
-export const TOTAL = 20 * BAR; // 960 khung = 32 giây
+// Cảnh theo ô nhịp (1 ô = 4 phách ≈ 2,16 giây). Thứ tự = thứ tự trong video.
+export const SCENE_BARS = [
+  ["hook", 2],
+  ["logo", 2],
+  ["thuVien", 3],
+  ["hieuNhanh", 4],
+  ["bac", 3],
+  ["dapAn", 3],
+  ["fsrs", 2],
+  ["tienIch", 2],
+  ["thapChuoi", 4],
+  ["chuKy", 2],
+  ["tuSach", 2],
+  ["suNghiep", 5],
+  ["cta", 3],
+] as const;
+export type SceneKey = (typeof SCENE_BARS)[number][0];
 
-// Khung cảnh (khung bắt đầu, độ dài) — mọi điểm cắt rơi đúng phách.
-export const SCENES = {
-  hook: [0, 2 * BAR],
-  logo: [2 * BAR, 2 * BAR],
-  mon: [4 * BAR, 3 * BAR],
-  bac: [7 * BAR, 4 * BAR],
-  fsrs: [11 * BAR, 2 * BAR],
-  de: [13 * BAR, 2 * BAR],
-  chuc: [15 * BAR, 2 * BAR],
-  cta: [17 * BAR, 3 * BAR],
-} as const;
+export const SCENES = (() => {
+  const out = {} as Record<SceneKey, { from: number; dur: number; bar: number }>;
+  let bar = 0;
+  for (const [k, n] of SCENE_BARS) {
+    out[k] = { from: b(bar * 4), dur: b((bar + n) * 4) - b(bar * 4), bar };
+    bar += n;
+  }
+  return out;
+})();
+export const TOTAL_BARS = SCENE_BARS.reduce((s, [, n]) => s + n, 0);
+export const TOTAL = b(TOTAL_BARS * 4);
+/** Ô nhịp vào trống (drop) — cảnh logo. */
+export const DROP = SCENES.logo.from;
 
-/** Độ "đập" theo trống kick (bước 0, 6, 10 của mỗi ô) — 1 lúc đánh, tắt dần về 0. */
-export const kickPulse = (frame: number) => {
-  if (frame < 2 * BAR || frame >= 19 * BAR) return 0;
-  const inBar = frame % BAR;
-  let p = 0;
-  for (const k of [0, 18, 30]) if (inBar >= k) p = Math.max(p, Math.exp(-(inBar - k) / 3.5));
-  return p;
+/** Độ "đập" theo phách: 1 lúc đánh, tắt dần; phách đầu ô mạnh hơn. */
+export const beatPulse = (frame: number) => {
+  if (frame < DROP || frame >= SCENES.cta.from + b(8)) return 0;
+  const x = frame / FPB;
+  const i = Math.floor(x);
+  const since = (x - i) * FPB;
+  return Math.exp(-since / 6) * (i % 4 === 0 ? 1 : 0.55);
 };
 
 /** Số giả ngẫu nhiên ổn định theo khung (để render lại ra y hệt). */

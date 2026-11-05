@@ -1,9 +1,10 @@
 """Tổng hợp nhạc nền phong cách phonk cho video giới thiệu — tự tạo 100% bằng code, không dùng sample của ai.
 
-  python3 scripts/phonk.py public/music/phonk.wav
+  python3 scripts/phonk.py out.wav [BPM] [số ô nhịp] [bán cung so với G]
 
-150 BPM, nhịp half-time, 20 ô nhịp = 32 giây (khớp 960 khung hình ở 30 fps: 1 phách = 12 khung, 1 ô = 48 khung).
-Bố cục: ô 0–1 intro (cowbell lọc + riser) → ô 2 "drop" → ô 2–17 đủ trống → ô 18–19 outro.
+Dùng làm NHẠC NHÁP để duyệt nhịp cắt cảnh: 111 BPM, A♯ thứ (G + 3) — cùng tempo/giọng với "Aura Farming" (Mustafa Saboori)
+theo Tunebat; bản đăng TikTok không nhúng nhạc này mà ghép bài thật trong thư viện nhạc TikTok.
+Bố cục: ô 0–1 intro (cowbell lọc + riser) → ô 2 "drop" → đủ trống → 2 ô cuối outro.
 Âm sắc học theo kiểu máy trống TR-808 (cowbell = 2 sóng vuông ~1:1,48; 808 = sine trượt cao độ + méo tanh).
 Chỉ cần numpy.
 """
@@ -13,11 +14,14 @@ import wave
 import numpy as np
 
 SR = 44100
-BPM = 150
+# Tham số: python3 phonk.py out.wav [BPM] [số ô nhịp] [bán cung so với G]
+BPM = float(sys.argv[2]) if len(sys.argv) > 2 else 150
 BEAT = 60 / BPM
 STEP = BEAT / 4  # nốt móc kép
 BAR = BEAT * 4
-BARS = 20
+BARS = int(sys.argv[3]) if len(sys.argv) > 3 else 20
+KEY = int(sys.argv[4]) if len(sys.argv) > 4 else 0
+DROP = 2  # ô nhịp vào trống
 N = int(SR * BAR * BARS)
 rng = np.random.default_rng(7)
 
@@ -59,7 +63,7 @@ _cow_cache = {}
 def cowbell(semi):
     if semi in _cow_cache:
         return _cow_cache[semi]
-    f = 588 * 2 ** (semi / 12)
+    f = 588 * 2 ** ((semi + KEY) / 12)
     tt = t(0.42)
     sq = np.sign(np.sin(2 * np.pi * f * tt)) + np.sign(np.sin(2 * np.pi * f * 1.48 * tt))
     sq = hp(onepole_lp(sq, 2600), 420)
@@ -69,7 +73,7 @@ def cowbell(semi):
 
 
 def bass808(semi, dur):
-    f = 49 * 2 ** (semi / 12)  # G1
+    f = 49 * 2 ** ((semi + KEY) / 12)  # G1 + KEY
     tt = t(dur)
     freq = f * (1 + 1.4 * np.exp(-tt / 0.03))
     ph = 2 * np.pi * np.cumsum(freq) / SR
@@ -114,7 +118,7 @@ def pad(semis, sec):
     tt = t(sec)
     s = np.zeros_like(tt)
     for sm in semis:
-        f = 196 * 2 ** (sm / 12)
+        f = 196 * 2 ** ((sm + KEY) / 12)
         for det in (-0.35, 0.35):
             s += np.sin(2 * np.pi * (f + det) * tt + rng.uniform(0, 6))
     env = np.minimum(1, tt / 0.6) * np.minimum(1, (sec - tt) / 0.6)
@@ -144,11 +148,11 @@ duck = np.ones(N)
 
 for bar in range(BARS):
     b0 = bar * BAR
-    full = 2 <= bar <= 17
-    outro = bar >= 18
+    full = DROP <= bar <= BARS - 3
+    outro = bar >= BARS - 2
     # cowbell: intro lọc tối, sau drop sáng; vang bằng delay chấm 3/16 sang phải
     for step, semi in COW[bar % 2].items():
-        if outro and bar == 19 and step > 8:
+        if outro and bar == BARS - 1 and step > 8:
             continue
         sig = cowbell(semi)
         if bar < 2:
@@ -158,7 +162,7 @@ for bar in range(BARS):
         add(music, sig, at, g, -0.15)
         add(music, sig, at + 3 * STEP, g * 0.32, 0.6)
         add(music, sig, at + 6 * STEP, g * 0.12, -0.6)
-    if full or bar == 18:
+    if full or bar == BARS - 2:
         for step, semi, ln in BASS[bar % 2]:
             at = b0 + step * STEP
             add(drums, bass808(semi, ln * STEP), at, 1.0)
@@ -166,7 +170,7 @@ for bar in range(BARS):
             i = int(at * SR)
             k = np.linspace(0.45, 1, int(0.18 * SR)) ** 1.5
             duck[i : i + len(k)] = np.minimum(duck[i : i + len(k)], k[: N - i])
-        if bar != 18:
+        if bar != BARS - 2:
             add(drums, clap(), b0 + 8 * STEP, 1.0)
             # hi-hat 16tel, cuối mỗi 2 ô có cuộn chùm ba
             for s in range(16):
@@ -177,7 +181,7 @@ for bar in range(BARS):
                 for k3 in range(6):
                     add(drums, hat(), b0 + 12 * STEP + k3 * (BEAT / 6), 0.55 + 0.08 * k3, 0.2)
         # khoảng lặng trước mỗi đoạn: bỏ trống nửa ô 9 và 13 (giật nhịp)
-    if bar in (9, 13):
+    if bar % 8 == 7 and full:
         i0, i1 = int((b0 + 12 * STEP) * SR), int((b0 + BAR) * SR)
         drums[:, i0:i1] *= 0.15
 
@@ -185,8 +189,8 @@ for bar in range(BARS):
 add(music, pad([0, 3, 7, -12], BAR * 2 + 0.3), 0, 1.0)
 add(music, riser(BAR * 1.5), BAR * 0.5, 0.8)
 add(music, impact(), BAR * 2, 1.0)
-add(music, impact(), BAR * 17, 0.7)
-add(music, pad([0, 3, 7, 10], BAR * 3), BAR * 17, 0.8)
+add(music, impact(), BAR * (BARS - 3), 0.7)
+add(music, pad([0, 3, 7, 10], BAR * 3), BAR * (BARS - 3), 0.8)
 
 mix = drums + music * duck
 mix = np.tanh(mix * 0.7)

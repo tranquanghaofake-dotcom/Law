@@ -25,6 +25,124 @@
   "TTDS",
   "XD VBPL"
  ],
+ "subjectList": [
+  {
+   "id": "an-sinh-xa-hoi",
+   "title": "Luật An sinh xã hội",
+   "short": "An sinh xã hội"
+  },
+  {
+   "id": "canh-tranh",
+   "title": "Luật Cạnh tranh",
+   "short": "Cạnh tranh"
+  },
+  {
+   "id": "chung-khoan",
+   "title": "Luật Chứng khoán",
+   "short": "Chứng khoán"
+  },
+  {
+   "id": "dan-su-2",
+   "title": "Luật Dân sự 2",
+   "short": "Dân sự 2"
+  },
+  {
+   "id": "dan-su",
+   "title": "Luật Dân sự 1",
+   "short": "Dân sự 1"
+  },
+  {
+   "id": "dat-dai",
+   "title": "Luật Đất đai",
+   "short": "Đất đai"
+  },
+  {
+   "id": "dau-tu",
+   "title": "Luật Đầu tư",
+   "short": "Đầu tư"
+  },
+  {
+   "id": "hanh-chinh",
+   "title": "Luật Hành chính",
+   "short": "Hành chính"
+  },
+  {
+   "id": "hien-phap",
+   "title": "Luật Hiến pháp",
+   "short": "Hiến pháp"
+  },
+  {
+   "id": "hinh-su",
+   "title": "Luật Hình sự 1",
+   "short": "Hình sự 1"
+  },
+  {
+   "id": "lao-dong-2",
+   "title": "Luật Lao động 2 (lao động đặc thù)",
+   "short": "Lao động 2"
+  },
+  {
+   "id": "lao-dong",
+   "title": "Luật Lao động",
+   "short": "Lao động"
+  },
+  {
+   "id": "lich-su-nn-pl",
+   "title": "Lịch sử Nhà nước và Pháp luật Việt Nam",
+   "short": "LSNN&PL"
+  },
+  {
+   "id": "ly-luan-nn-pl",
+   "title": "Lý luận chung về Nhà nước và Pháp luật",
+   "short": "Lý luận NN&PL"
+  },
+  {
+   "id": "ngan-hang",
+   "title": "Luật Ngân hàng",
+   "short": "Ngân hàng"
+  },
+  {
+   "id": "so-huu-tri-tue",
+   "title": "Luật Sở hữu trí tuệ",
+   "short": "SHTT"
+  },
+  {
+   "id": "tai-chinh-doanh-nghiep",
+   "title": "Pháp luật tài chính doanh nghiệp",
+   "short": "Tài chính DN"
+  },
+  {
+   "id": "tai-chinh",
+   "title": "Luật Tài chính (ngân sách nhà nước và thuế)",
+   "short": "Tài chính"
+  },
+  {
+   "id": "tai-san-tri-tue",
+   "title": "Quản trị tài sản trí tuệ",
+   "short": "Tài sản trí tuệ"
+  },
+  {
+   "id": "thuong-mai-1",
+   "title": "Luật Thương mại 1 (doanh nghiệp, hợp tác xã, phá sản)",
+   "short": "Thương mại 1"
+  },
+  {
+   "id": "thuong-mai",
+   "title": "Luật Thương mại 2",
+   "short": "Thương mại 2"
+  },
+  {
+   "id": "to-tung-dan-su",
+   "title": "Luật Tố tụng dân sự",
+   "short": "TTDS"
+  },
+  {
+   "id": "xay-dung-vbpl",
+   "title": "Xây dựng văn bản pháp luật",
+   "short": "XD VBPL"
+  }
+ ],
+ "chapters": 212,
  "concepts": 690,
  "sets": 47,
  "laws": 48,
@@ -65,5 +183,55 @@
   "Trợ giúp xã hội",
   "Ủy ban Cạnh tranh Quốc gia",
   "Vi phạm hành chính"
- ]
+ ],
+ "featured": {
+  "term": "Đặt cọc",
+  "cite": "Điều 328 Bộ luật Dân sự 2015",
+  "memo": {
+   "gist": "Giao trước một khoản để bảo đảm ký hoặc làm hợp đồng; bên đặt bỏ thì mất cọc, bên nhận bỏ thì trả gấp đôi.",
+   "kind": "compare",
+   "hook": "Ai bỏ cuộc thì người đó mất bằng số tiền cọc.",
+   "tree": [
+    {
+     "label": "Mục đích",
+     "icon": "target",
+     "children": [
+      "Bảo đảm giao kết",
+      "Hoặc thực hiện hợp đồng"
+     ]
+    },
+    {
+     "label": "Thực hiện xong",
+     "icon": "check",
+     "children": [
+      "Trả lại hoặc trừ vào tiền"
+     ]
+    },
+    {
+     "label": "Bên đặt cọc từ chối",
+     "icon": "ban",
+     "children": [
+      "Mất cọc"
+     ]
+    },
+    {
+     "label": "Bên nhận cọc từ chối",
+     "icon": "money",
+     "children": [
+      "Trả cọc + khoản tương đương"
+     ]
+    }
+   ],
+   "case": {
+    "q": "Đặt cọc 20 triệu mua nhà, chủ nhà bán cho người khác. Chủ nhà phải trả bao nhiêu?",
+    "a": "40 triệu: trả lại 20 triệu cọc và thêm 20 triệu."
+   },
+   "contrast": [
+    {
+     "with": "phat-vi-pham",
+     "text": "Đặt cọc là tiền giao trước; phạt vi phạm là tiền phải trả khi vi phạm, đã thỏa thuận trong hợp đồng."
+    }
+   ]
+  }
+ }
 }
