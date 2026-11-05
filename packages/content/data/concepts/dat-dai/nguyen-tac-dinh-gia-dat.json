@@ -22,6 +22,29 @@
   "tính độc lập",
   "hài hòa lợi ích"
  ],
+ "memo": {
+  "hook": "Định giá theo THỊ TRƯỜNG; Luật 2024 BỎ khung giá đất.",
+  "tree": [
+   {
+    "label": "Nguyên tắc",
+    "children": [
+     "Theo thị trường",
+     "Đúng phương pháp, trình tự",
+     "Trung thực, công khai",
+     "Độc lập, hài hòa lợi ích"
+    ]
+   },
+   {
+    "label": "Phương pháp",
+    "children": [
+     "So sánh",
+     "Thu nhập",
+     "Thặng dư",
+     "Hệ số điều chỉnh"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

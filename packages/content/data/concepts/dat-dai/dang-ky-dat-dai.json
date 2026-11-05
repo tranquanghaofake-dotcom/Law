@@ -22,6 +22,37 @@
   "lần đầu và biến động",
   "giấy hoặc điện tử như nhau"
  ],
+ "memo": {
+  "hook": "ĐẤT: đăng ký BẮT BUỘC; NHÀ, công trình: theo YÊU CẦU.",
+  "tree": [
+   {
+    "label": "Bắt buộc",
+    "children": [
+     "Người sử dụng đất",
+     "Người được giao đất để quản lý"
+    ]
+   },
+   {
+    "label": "Theo yêu cầu",
+    "children": [
+     "Nhà ở, công trình trên đất"
+    ]
+   },
+   {
+    "label": "Hai loại",
+    "children": [
+     "Lần đầu",
+     "Biến động"
+    ]
+   },
+   {
+    "label": "Hình thức",
+    "children": [
+     "Giấy hoặc điện tử, giá trị như nhau"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

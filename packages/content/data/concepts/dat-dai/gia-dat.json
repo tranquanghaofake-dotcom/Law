@@ -22,6 +22,32 @@
   "tiền sử dụng đất",
   "chuyển mục đích"
  ],
+ "memo": {
+  "hook": "Giá đất là giá QUYỀN SỬ DỤNG; hai loại: BẢNG GIÁ và GIÁ CỤ THỂ.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Giá trị quyền sử dụng đất",
+     "Trên một đơn vị diện tích"
+    ]
+   },
+   {
+    "label": "Nhà nước quyết",
+    "children": [
+     "Bảng giá đất (từ 2026, hằng năm)",
+     "Giá đất cụ thể"
+    ]
+   },
+   {
+    "label": "Tiền sử dụng đất",
+    "children": [
+     "Giao đất có thu tiền",
+     "Chuyển mục đích"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

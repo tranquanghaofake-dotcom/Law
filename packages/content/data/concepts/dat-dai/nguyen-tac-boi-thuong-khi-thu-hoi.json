@@ -22,6 +22,38 @@
   "bằng tiền theo giá đất cụ thể",
   "thời điểm phê duyệt phương án"
  ],
+ "memo": {
+  "hook": "Bồi thường ưu tiên BẰNG ĐẤT; không có thì BẰNG TIỀN theo giá lúc PHÊ DUYỆT phương án.",
+  "tree": [
+   {
+    "label": "Nguyên tắc",
+    "children": [
+     "Dân chủ, khách quan, công bằng",
+     "Công khai, minh bạch, kịp thời"
+    ]
+   },
+   {
+    "label": "Bằng đất",
+    "children": [
+     "Cùng mục đích sử dụng"
+    ]
+   },
+   {
+    "label": "Bằng tiền",
+    "children": [
+     "Giá đất cụ thể",
+     "Tại thời điểm phê duyệt phương án"
+    ]
+   },
+   {
+    "label": "Ngoài bồi thường",
+    "children": [
+     "Hỗ trợ",
+     "Tái định cư"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

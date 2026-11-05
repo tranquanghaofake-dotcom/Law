@@ -102,12 +102,22 @@ describe('record', () => {
 
 describe('promptSpeech — đọc đề/khái niệm ngay khi thẻ hiện, KHÔNG lộ đáp án', () => {
   const concept = { term: 'Tài sản', definition: 'Tài sản là vật, tiền.' } as Concept;
-  it('thẻ giới thiệu: đọc tên và định nghĩa khái niệm', () => {
+  it('thẻ giới thiệu: đọc tên và định nghĩa khái niệm; có mẹo nhớ thì đọc thêm', async () => {
     expect(promptSpeech({ type: 'intro' }, concept)).toBe('Tài sản. Tài sản là vật, tiền.');
+    expect(promptSpeech({ type: 'intro' }, { ...concept, memo: { hook: 'Nhớ VẬT và TIỀN' } } as Concept)).toBe('Tài sản. Tài sản là vật, tiền. Mẹo nhớ: Nhớ VẬT và TIỀN.');
+    // định nghĩa kết thúc bằng ";" vẫn tách mẹo nhớ thành câu riêng
+    const { sentences } = await import('$lib/fx/prosody');
+    const t = promptSpeech({ type: 'intro' }, { term: 'X', definition: 'X là a;', memo: { hook: 'Nhớ a' } } as Concept);
+    expect(sentences(t).at(-1)).toBe('Mẹo nhớ: Nhớ a.');
+  });
+  it('chữ cái phương án là câu riêng "Phương án A." để giọng dựng sẵn dùng lại được cho mọi câu', async () => {
+    const { sentences } = await import('$lib/fx/prosody');
+    const t = promptSpeech({ type: 'mcq', level: 1, q: 'Hỏi?', options: ['Vật', 'Ý tưởng'], answer: 0, explain: '' }, concept);
+    expect(sentences(t)).toEqual(['Hỏi?', 'Phương án A.', 'Vật.', 'Phương án B.', 'Ý tưởng.']);
   });
   it('trắc nghiệm/tình huống: đọc câu hỏi và các phương án, không nói phương án nào đúng', () => {
     const t = promptSpeech({ type: 'mcq', level: 1, q: 'Tài sản gồm gì?', options: ['Vật', 'Ý tưởng'], answer: 0, explain: 'Vì vật.' }, concept);
-    expect(t).toBe('Tài sản gồm gì? A: Vật. B: Ý tưởng.');
+    expect(t).toBe('Tài sản gồm gì? Phương án A. Vật. Phương án B. Ý tưởng.');
     expect(t).not.toContain('Vì vật');
   });
   it('đúng/sai: đọc nhận định; điền chỗ trống: đọc "chỗ trống" thay cho đáp án; che […] cũng đọc "chỗ trống"', () => {

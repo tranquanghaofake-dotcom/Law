@@ -23,6 +23,37 @@
   "bảo vệ",
   "danh mục tài sản trí tuệ"
  ],
+ "memo": {
+  "hook": "Bốn khâu: TẠO LẬP → XÁC LẬP QUYỀN → KHAI THÁC → BẢO VỆ.",
+  "tree": [
+   {
+    "label": "Tạo lập",
+    "children": [
+     "Nhận dạng, phân loại"
+    ]
+   },
+   {
+    "label": "Xác lập quyền",
+    "children": [
+     "Đăng ký sớm, đồng bộ"
+    ]
+   },
+   {
+    "label": "Khai thác",
+    "children": [
+     "Tự dùng",
+     "Chuyển nhượng, li-xăng, góp vốn"
+    ]
+   },
+   {
+    "label": "Bảo vệ",
+    "children": [
+     "Phòng ngừa",
+     "Giám sát, xử lý xâm phạm"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

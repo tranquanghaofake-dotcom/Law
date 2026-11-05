@@ -49,11 +49,18 @@ const unmask = (s: string) => s.split(MASK).join('chỗ trống');
  * Lời đọc đề/khái niệm khi thẻ vừa hiện. Không bao giờ chứa đáp án hay giải thích.
  * `shown`: thứ tự phương án đang hiện trên thẻ (thẻ trắc nghiệm xáo phương án); thiếu thì theo dữ liệu.
  */
-export function promptSpeech(item: StepItem, concept: Pick<Concept, 'term' | 'definition'>, shown?: string[]): string {
+export function promptSpeech(item: StepItem, concept: Pick<Concept, 'term' | 'definition' | 'memo'>, shown?: string[]): string {
   switch (item.type) {
-    case 'intro': return `${sentence(concept.term)} ${sentence(concept.definition)}`;
+    case 'intro': {
+      const hook = concept.memo?.hook;
+      // giữ đúng dạng cũ "tên. định nghĩa" (trùng nút Nghe của thẻ) để dùng lại mp3 đã sinh
+      const base = `${concept.term}. ${concept.definition}`;
+      // định nghĩa kết thúc bằng ; hoặc : thì chốt câu để mẹo nhớ thành câu riêng (tệp riêng)
+      return hook ? `${sentence(base.replace(/[;:,]\s*$/, ''))} Mẹo nhớ: ${sentence(hook)}` : base;
+    }
     case 'mcq': case 'case': {
-      const opts = (shown ?? item.options).map((o, i) => `${KEYS[i] ?? i + 1}: ${sentence(unmask(o))}`);
+      // chữ cái là câu riêng → mp3 "Phương án A." dùng lại cho mọi câu hỏi
+      const opts = (shown ?? item.options).map((o, i) => `Phương án ${KEYS[i] ?? i + 1}. ${sentence(unmask(o))}`);
       return [sentence(unmask(item.q)), ...opts].join(' ');
     }
     case 'recall': return sentence(unmask(item.q));

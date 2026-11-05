@@ -22,6 +22,31 @@
   "dịch vụ cho sản xuất công nghiệp"
  ],
  "note": "Luật Đầu tư 143/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Đầu tư 61/2020/QH14 mà đề cương HLU 2021 còn dẫn (khoản 4 Điều 51). Luật 24/2026/QH16 sửa đổi có hiệu lực từ 01/3/2027 (riêng một phần Điều 6 từ 01/01/2027), chỉ sửa Điều 6 và Phụ lục IV, không sửa điều được trích — văn bản hợp nhất 142/2026/VBHN-LQ-VPQH.",
+ "memo": {
+  "hook": "Khu CÔNG NGHIỆP: chuyên sản xuất công nghiệp; khu CHẾ XUẤT: chuyên hàng xuất khẩu.",
+  "tree": [
+   {
+    "label": "Khu công nghiệp",
+    "children": [
+     "Ranh giới xác định",
+     "Sản xuất hàng công nghiệp",
+     "Dịch vụ cho sản xuất"
+    ]
+   },
+   {
+    "label": "Khu chế xuất",
+    "children": [
+     "Chuyên hàng xuất khẩu"
+    ]
+   },
+   {
+    "label": "Ưu đãi",
+    "children": [
+     "Thường là địa bàn ưu đãi"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

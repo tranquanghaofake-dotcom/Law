@@ -22,6 +22,37 @@
   "thống nhất quản lý",
   "trao quyền sử dụng đất"
  ],
+ "memo": {
+  "hook": "Ba tầng: TOÀN DÂN sở hữu – NHÀ NƯỚC đại diện – NGƯỜI DÂN có QUYỀN SỬ DỤNG.",
+  "tree": [
+   {
+    "label": "Chủ sở hữu",
+    "children": [
+     "Toàn dân"
+    ]
+   },
+   {
+    "label": "Nhà nước",
+    "children": [
+     "Đại diện chủ sở hữu",
+     "Thống nhất quản lý"
+    ]
+   },
+   {
+    "label": "Người sử dụng",
+    "children": [
+     "Có quyền sử dụng đất",
+     "Quyền tài sản"
+    ]
+   },
+   {
+    "label": "Hệ quả",
+    "children": [
+     "Không có sở hữu tư nhân về đất"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

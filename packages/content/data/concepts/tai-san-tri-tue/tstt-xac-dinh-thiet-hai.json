@@ -25,6 +25,27 @@
   "tổn thất thực tế"
  ],
  "note": "Luật Sở hữu trí tuệ 50/2005/QH11 (hiệu lực 01/7/2006) đã được sửa đổi bởi Luật 36/2009/QH12, 42/2019/QH14, 07/2022/QH15, 93/2025/QH15 và 131/2025/QH15 (hiệu lực 01/4/2026) — văn bản hợp nhất 67/VBHN-VPQH 2026; ghi chép lớp học còn dẫn Nghị định 105/2006/NĐ-CP và Nghị định 99/2013/NĐ-CP, cần tự kiểm tra hiệu lực của các nghị định này trước khi dùng.",
+ "memo": {
+  "hook": "Thiệt hại TINH THẦN chỉ cho TÁC GIẢ, NGƯỜI BIỂU DIỄN; doanh nghiệp chỉ có VẬT CHẤT.",
+  "tree": [
+   {
+    "label": "Vật chất",
+    "children": [
+     "Tổn thất tài sản",
+     "Giảm thu nhập, lợi nhuận",
+     "Mất cơ hội kinh doanh",
+     "Chi phí ngăn chặn"
+    ]
+   },
+   {
+    "label": "Tinh thần",
+    "children": [
+     "Danh dự, nhân phẩm",
+     "Chỉ tác giả, người biểu diễn"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

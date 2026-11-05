@@ -24,6 +24,31 @@
   "bồi thường"
  ],
  "note": "Luật Đầu tư 143/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Đầu tư 61/2020/QH14 mà đề cương HLU 2021 còn dẫn (khoản 4 Điều 51). Luật 24/2026/QH16 sửa đổi có hiệu lực từ 01/3/2027 (riêng một phần Điều 6 từ 01/01/2027), chỉ sửa Điều 6 và Phụ lục IV, không sửa điều được trích — văn bản hợp nhất 142/2026/VBHN-LQ-VPQH.",
+ "memo": {
+  "hook": "KHÔNG quốc hữu hóa, KHÔNG tịch thu hành chính; trưng mua, trưng dụng thì BỒI THƯỜNG.",
+  "tree": [
+   {
+    "label": "Cam kết",
+    "children": [
+     "Không quốc hữu hóa",
+     "Không tịch thu bằng biện pháp hành chính"
+    ]
+   },
+   {
+    "label": "Ngoại lệ",
+    "children": [
+     "Trưng mua",
+     "Trưng dụng"
+    ]
+   },
+   {
+    "label": "Khi ngoại lệ",
+    "children": [
+     "Thanh toán, bồi thường"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

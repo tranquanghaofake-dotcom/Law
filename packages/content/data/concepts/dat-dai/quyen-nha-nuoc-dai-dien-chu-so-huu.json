@@ -23,6 +23,40 @@
   "hạn mức, thời hạn",
   "thu hồi, trưng dụng"
  ],
+ "memo": {
+  "hook": "THU HỒI là chấm dứt quyền; TRƯNG DỤNG là dùng có thời hạn.",
+  "tree": [
+   {
+    "label": "Quyết định",
+    "children": [
+     "Quy hoạch",
+     "Mục đích sử dụng",
+     "Hạn mức, thời hạn"
+    ]
+   },
+   {
+    "label": "Trao quyền",
+    "children": [
+     "Giao đất, cho thuê",
+     "Công nhận quyền"
+    ]
+   },
+   {
+    "label": "Lấy lại",
+    "children": [
+     "Thu hồi",
+     "Trưng dụng"
+    ]
+   },
+   {
+    "label": "Tài chính",
+    "children": [
+     "Giá đất",
+     "Điều tiết giá trị tăng thêm"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -24,6 +24,31 @@
   "khoản bảo đảm"
  ],
  "note": "Luật Sở hữu trí tuệ 50/2005/QH11 (hiệu lực 01/7/2006) đã được sửa đổi bởi Luật 36/2009/QH12, 42/2019/QH14, 07/2022/QH15, 93/2025/QH15 và 131/2025/QH15 (hiệu lực 01/4/2026) — văn bản hợp nhất 67/VBHN-VPQH 2026; ghi chép lớp học còn dẫn Nghị định 105/2006/NĐ-CP và Nghị định 99/2013/NĐ-CP, cần tự kiểm tra hiệu lực của các nghị định này trước khi dùng.",
+ "memo": {
+  "hook": "Chặn hàng xâm phạm ngay tại CỬA KHẨU qua HẢI QUAN.",
+  "tree": [
+   {
+    "label": "Biện pháp",
+    "children": [
+     "Tạm dừng thủ tục hải quan",
+     "Kiểm tra, giám sát"
+    ]
+   },
+   {
+    "label": "Ai yêu cầu",
+    "children": [
+     "Chủ thể quyền",
+     "Hải quan chủ động với hàng giả"
+    ]
+   },
+   {
+    "label": "Điều kiện",
+    "children": [
+     "Nộp khoản bảo đảm"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -22,6 +22,34 @@
   "được bồi thường khi thu hồi",
   "khiếu nại, tố cáo, khởi kiện"
  ],
+ "memo": {
+  "hook": "Quyền CHUNG ai cũng có; quyền RIÊNG (chuyển nhượng, thế chấp…) tùy loại chủ thể.",
+  "tree": [
+   {
+    "label": "Quyền chung",
+    "children": [
+     "Được cấp Giấy chứng nhận",
+     "Hưởng thành quả",
+     "Được bảo hộ, bồi thường",
+     "Khiếu nại, khởi kiện"
+    ]
+   },
+   {
+    "label": "Quyền riêng",
+    "children": [
+     "Chuyển nhượng, cho thuê",
+     "Thừa kế, tặng cho",
+     "Thế chấp, góp vốn"
+    ]
+   },
+   {
+    "label": "Phụ thuộc",
+    "children": [
+     "Chủ thể, hình thức giao đất"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

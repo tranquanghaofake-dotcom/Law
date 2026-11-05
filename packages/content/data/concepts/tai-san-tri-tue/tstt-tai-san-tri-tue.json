@@ -21,6 +21,32 @@
   "không hao mòn",
   "khả năng sinh lời"
  ],
+ "memo": {
+  "hook": "Ba lớp: TÀI SẢN VÔ HÌNH ⊃ TÀI SẢN TRÍ TUỆ → QUYỀN SỞ HỮU TRÍ TUỆ (học thuyết).",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Kết quả sáng tạo trí tuệ",
+     "Tài sản vô hình"
+    ]
+   },
+   {
+    "label": "Đặc điểm",
+    "children": [
+     "Xác định được",
+     "Không hao mòn, cạn kiệt",
+     "Có khả năng sinh lời"
+    ]
+   },
+   {
+    "label": "Phân biệt",
+    "children": [
+     "Quyền SHTT: được pháp luật bảo hộ"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

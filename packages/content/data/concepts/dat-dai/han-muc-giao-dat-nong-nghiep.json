@@ -22,6 +22,32 @@
   "mỗi loại đất",
   "cá nhân trực tiếp sản xuất nông nghiệp"
  ],
+ "memo": {
+  "hook": "Cây hằng năm, thủy sản, muối: 3 ha (Nam Bộ) / 2 ha (nơi khác) MỖI LOẠI.",
+  "tree": [
+   {
+    "label": "Hằng năm, thủy sản, muối",
+    "children": [
+     "03 ha: Đông Nam Bộ, ĐBSCL",
+     "02 ha: nơi khác",
+     "Tổng không quá 05 ha"
+    ]
+   },
+   {
+    "label": "Cây lâu năm",
+    "children": [
+     "10 ha đồng bằng",
+     "30 ha trung du, miền núi"
+    ]
+   },
+   {
+    "label": "Phân biệt",
+    "children": [
+     "Hạn mức nhận chuyển quyền khác"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -23,6 +23,24 @@
   "khoản 1 Điều 20"
  ],
  "note": "Luật Đầu tư 143/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Đầu tư 61/2020/QH14 mà đề cương HLU 2021 còn dẫn (khoản 4 Điều 51). Luật 24/2026/QH16 sửa đổi có hiệu lực từ 01/3/2027 (riêng một phần Điều 6 từ 01/01/2027), chỉ sửa Điều 6 và Phụ lục IV, không sửa điều được trích — văn bản hợp nhất 142/2026/VBHN-LQ-VPQH.",
+ "memo": {
+  "hook": "CÓ nhà đầu tư nước ngoài là đủ; TRÊN 50% thì làm thủ tục như nhà đầu tư nước ngoài.",
+  "tree": [
+   {
+    "label": "Định nghĩa",
+    "children": [
+     "Có thành viên hoặc cổ đông nước ngoài"
+    ]
+   },
+   {
+    "label": "Trên 50% vốn",
+    "children": [
+     "Thủ tục như nhà đầu tư nước ngoài",
+     "Khoản 1 Điều 20"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

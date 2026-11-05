@@ -21,6 +21,32 @@
   "bắt buộc hòa giải tại UBND cấp xã",
   "trước khi giải quyết theo Điều 236"
  ],
+ "memo": {
+  "hook": "Tự hòa giải: KHUYẾN KHÍCH. Hòa giải ở UBND XÃ: BẮT BUỘC trước khi giải quyết.",
+  "tree": [
+   {
+    "label": "Khuyến khích",
+    "children": [
+     "Tự hòa giải",
+     "Hòa giải cơ sở",
+     "Hòa giải thương mại"
+    ]
+   },
+   {
+    "label": "Bắt buộc",
+    "children": [
+     "Tại Ủy ban nhân dân cấp xã",
+     "Trước khi cơ quan giải quyết"
+    ]
+   },
+   {
+    "label": "Hệ quả",
+    "children": [
+     "Chưa hòa giải: Tòa trả đơn"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

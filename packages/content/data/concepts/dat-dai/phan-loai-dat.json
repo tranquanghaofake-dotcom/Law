@@ -22,6 +22,30 @@
   "phi nông nghiệp",
   "chưa sử dụng"
  ],
+ "memo": {
+  "hook": "Ba nhóm theo MỤC ĐÍCH: NÔNG NGHIỆP – PHI NÔNG NGHIỆP – CHƯA SỬ DỤNG.",
+  "tree": [
+   {
+    "label": "Nông nghiệp",
+    "children": [
+     "Trồng cây, lâm nghiệp",
+     "Thủy sản, làm muối",
+     "Chăn nuôi tập trung (mới)"
+    ]
+   },
+   {
+    "label": "Phi nông nghiệp",
+    "children": [
+     "Đất ở",
+     "Trụ sở, quốc phòng",
+     "Sản xuất, kinh doanh"
+    ]
+   },
+   {
+    "label": "Chưa sử dụng"
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

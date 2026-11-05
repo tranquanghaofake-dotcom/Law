@@ -39,7 +39,7 @@ describe('SessionView: giọng đọc đề khi thẻ hiện, đáp án sau khi 
   it('thẻ trắc nghiệm hiện → đọc câu hỏi và phương án theo đúng thứ tự trên màn hình, chưa đọc giải thích', async () => {
     const { container } = render(SessionView, { props: props() });
     await vi.waitFor(() => expect(speak).toHaveBeenCalled());
-    const shown = [...container.querySelectorAll('.opt')].map((o, i) => `${'ABCD'[i]}: ${o.getAttribute('aria-label')!.slice(3)}.`);
+    const shown = [...container.querySelectorAll('.opt')].map((o, i) => `Phương án ${'ABCD'[i]}. ${o.getAttribute('aria-label')!.slice(3)}.`);
     expect(speak.mock.calls[0][0]).toBe(`Câu hỏi? ${shown.join(' ')}`);
     expect(speak.mock.calls[0][0]).not.toContain('Giải thích');
   });
@@ -50,7 +50,7 @@ describe('SessionView: giọng đọc đề khi thẻ hiện, đáp án sau khi 
     await fireEvent.click(opts.find((o) => (o.textContent ?? '').includes('Đúng') && !(o.textContent ?? '').includes('Sai'))!);
     await vi.waitFor(() => expect(speak).toHaveBeenLastCalledWith('Chính xác. Đáp án: Đúng. Giải thích.'));
     await fireEvent.click(container.querySelector('.feedback [data-next]')!);
-    await vi.waitFor(() => expect(speak.mock.lastCall?.[0]).toMatch(/^Câu hỏi\? A: /));
+    await vi.waitFor(() => expect(speak.mock.lastCall?.[0]).toMatch(/^Câu hỏi\? Phương án A\. /));
   });
   it('thẻ giới thiệu khái niệm → đọc tên và định nghĩa', async () => {
     render(SessionView, { props: props({ type: 'intro' } as Step['item']) });

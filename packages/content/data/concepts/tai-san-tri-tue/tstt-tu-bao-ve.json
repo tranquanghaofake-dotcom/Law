@@ -26,6 +26,37 @@
   "ủy quyền"
  ],
  "note": "Luật Sở hữu trí tuệ 50/2005/QH11 (hiệu lực 01/7/2006) đã được sửa đổi bởi Luật 36/2009/QH12, 42/2019/QH14, 07/2022/QH15, 93/2025/QH15 và 131/2025/QH15 (hiệu lực 01/4/2026) — văn bản hợp nhất 67/VBHN-VPQH 2026; ghi chép lớp học còn dẫn Nghị định 105/2006/NĐ-CP và Nghị định 99/2013/NĐ-CP, cần tự kiểm tra hiệu lực của các nghị định này trước khi dùng.",
+ "memo": {
+  "hook": "Thứ tự: PHÒNG NGỪA → THƯ KHUYẾN CÁO → nhờ CƠ QUAN NHÀ NƯỚC → KHỞI KIỆN.",
+  "tree": [
+   {
+    "label": "Phòng ngừa",
+    "children": [
+     "Biện pháp công nghệ",
+     "Thông tin quản lý quyền"
+    ]
+   },
+   {
+    "label": "Yêu cầu bên vi phạm",
+    "children": [
+     "Chấm dứt",
+     "Xin lỗi, cải chính, bồi thường"
+    ]
+   },
+   {
+    "label": "Cơ quan nhà nước",
+    "children": [
+     "Xử lý hành chính, hình sự"
+    ]
+   },
+   {
+    "label": "Khởi kiện",
+    "children": [
+     "Tòa án, trọng tài"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

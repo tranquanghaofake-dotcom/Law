@@ -22,6 +22,29 @@
   "nhận quyền sử dụng đất",
   "thuê lại"
  ],
+ "memo": {
+  "hook": "Thành người sử dụng đất khi được GIAO, THUÊ, CÔNG NHẬN, NHẬN QUYỀN hoặc THUÊ LẠI.",
+  "tree": [
+   {
+    "label": "Căn cứ",
+    "children": [
+     "Giao, cho thuê, công nhận",
+     "Sử dụng ổn định đủ điều kiện",
+     "Nhận quyền sử dụng đất",
+     "Thuê lại"
+    ]
+   },
+   {
+    "label": "Các nhóm",
+    "children": [
+     "Tổ chức, cá nhân trong nước",
+     "Cộng đồng dân cư, tôn giáo",
+     "Người gốc Việt ở nước ngoài",
+     "Tổ chức có vốn nước ngoài"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -23,6 +23,32 @@
   "ngày ưu tiên"
  ],
  "note": "Luật Sở hữu trí tuệ 50/2005/QH11 (hiệu lực 01/7/2006) đã được sửa đổi bởi Luật 36/2009/QH12, 42/2019/QH14, 07/2022/QH15, 93/2025/QH15 và 131/2025/QH15 (hiệu lực 01/4/2026) — văn bản hợp nhất 67/VBHN-VPQH 2026; ghi chép lớp học còn dẫn Nghị định 105/2006/NĐ-CP và Nghị định 99/2013/NĐ-CP, cần tự kiểm tra hiệu lực của các nghị định này trước khi dùng.",
+ "memo": {
+  "hook": "Nộp ĐƠN ĐẦU TIÊN ở một nước, rồi nộp nước khác vẫn giữ NGÀY ƯU TIÊN.",
+  "tree": [
+   {
+    "label": "Điều kiện",
+    "children": [
+     "Đơn đầu tiên tại nước thành viên",
+     "Cùng một đối tượng"
+    ]
+   },
+   {
+    "label": "Thời hạn ưu tiên",
+    "children": [
+     "Sáng chế: 12 tháng",
+     "Kiểu dáng, nhãn hiệu: 6 tháng"
+    ]
+   },
+   {
+    "label": "Lợi ích",
+    "children": [
+     "Thắng đơn nộp xen giữa",
+     "Không mất tính mới"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -24,6 +24,31 @@
   "hình thức lựa chọn nhà đầu tư"
  ],
  "note": "Luật Đầu tư 143/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Đầu tư 61/2020/QH14 mà đề cương HLU 2021 còn dẫn (khoản 4 Điều 51). Luật 24/2026/QH16 sửa đổi có hiệu lực từ 01/3/2027 (riêng một phần Điều 6 từ 01/01/2027), chỉ sửa Điều 6 và Phụ lục IV, không sửa điều được trích — văn bản hợp nhất 142/2026/VBHN-LQ-VPQH.",
+ "memo": {
+  "hook": "Chấp thuận chủ trương là TIỀN KIỂM, chỉ cho dự án thuộc Điều 24.",
+  "tree": [
+   {
+    "label": "Nội dung",
+    "children": [
+     "Mục tiêu, địa điểm, quy mô",
+     "Tiến độ, thời hạn",
+     "Nhà đầu tư hoặc cách chọn"
+    ]
+   },
+   {
+    "label": "Áp dụng",
+    "children": [
+     "Dự án thuộc Điều 24"
+    ]
+   },
+   {
+    "label": "Phân biệt",
+    "children": [
+     "Giấy chứng nhận đăng ký: chỉ ghi nhận"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",
