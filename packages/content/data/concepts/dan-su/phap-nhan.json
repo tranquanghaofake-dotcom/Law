@@ -23,10 +23,13 @@
   "nhân danh mình"
  ],
  "memo": {
-  "hook": "Bốn điều kiện: THÀNH LẬP hợp pháp – CƠ CẤU – TÀI SẢN ĐỘC LẬP – NHÂN DANH MÌNH.",
+  "gist": "Pháp nhân là tổ chức lập hợp pháp, có bộ máy, có tài sản riêng và tự đứng tên mình khi giao dịch.",
+  "kind": "checklist",
+  "hook": "Như một người được làm từ giấy tờ: có tên, có thân, có ví riêng.",
   "tree": [
    {
     "label": "Điều kiện",
+    "icon": "✅",
     "children": [
      "Thành lập hợp pháp",
      "Cơ cấu tổ chức",
@@ -36,9 +39,20 @@
    },
    {
     "label": "Hệ quả",
+    "icon": "🛡️",
     "children": [
      "Thành viên không chịu thay"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty cổ phần nợ, chủ nợ có đòi cổ đông trả bằng tài sản riêng được không?",
+   "a": "Không. Pháp nhân tự chịu bằng tài sản của mình."
+  },
+  "contrast": [
+   {
+    "with": "nang-luc-phap-luat-dan-su",
+    "text": "Pháp nhân là tổ chức có tư cách; năng lực pháp luật là khả năng có quyền của cá nhân."
    }
   ]
  },

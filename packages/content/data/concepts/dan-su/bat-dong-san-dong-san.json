@@ -23,10 +23,13 @@
   "loại trừ"
  ],
  "memo": {
-  "hook": "BẤT ĐỘNG SẢN: LIỆT KÊ (gắn với đất); ĐỘNG SẢN: còn lại.",
+  "gist": "Bất động sản là đất, nhà, công trình và thứ gắn liền với đất; mọi tài sản khác là động sản.",
+  "kind": "compare",
+  "hook": "Câu hỏi thử: có bê đi được mà không phá hỏng không?",
   "tree": [
    {
     "label": "Bất động sản",
+    "icon": "🏠",
     "children": [
      "Đất đai",
      "Nhà, công trình gắn với đất",
@@ -35,16 +38,28 @@
    },
    {
     "label": "Động sản",
+    "icon": "🚲",
     "children": [
      "Không phải bất động sản"
     ]
    },
    {
     "label": "Ý nghĩa",
+    "icon": "📌",
     "children": [
      "Thời hiệu 10 hay 30 năm",
      "Thẩm quyền Tòa án"
     ]
+   }
+  ],
+  "case": {
+   "q": "Cây lâu năm trồng trên đất, sau đó bị chặt thành gỗ. Trước và sau là loại tài sản gì?",
+   "a": "Trước là bất động sản; chặt thành gỗ thì là động sản."
+  },
+  "contrast": [
+   {
+    "with": "tai-san",
+    "text": "Bất động sản, động sản là cách chia tài sản; tài sản là nhóm lớn gồm vật, tiền, giấy tờ có giá, quyền tài sản."
    }
   ]
  },

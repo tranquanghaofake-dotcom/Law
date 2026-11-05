@@ -22,16 +22,20 @@
   "từ khi sinh ra đến khi chết"
  ],
  "memo": {
-  "hook": "Năng lực PHÁP LUẬT = CÓ quyền; NHƯ NHAU, từ SINH RA đến CHẾT.",
+  "gist": "Năng lực pháp luật dân sự là khả năng có quyền và nghĩa vụ; ai cũng như nhau, từ lúc sinh ra tới lúc chết.",
+  "kind": "tree",
+  "hook": "Như tấm vé vào cửa phát cho mọi em bé lúc chào đời.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "🎫",
     "children": [
      "Khả năng có quyền, nghĩa vụ"
     ]
    },
    {
     "label": "Đặc điểm",
+    "icon": "⚖️",
     "children": [
      "Mọi người như nhau",
      "Từ khi sinh ra đến khi chết",
@@ -40,9 +44,20 @@
    },
    {
     "label": "Phân biệt",
+    "icon": "↔️",
     "children": [
      "Năng lực hành vi: tự mình làm"
     ]
+   }
+  ],
+  "case": {
+   "q": "Em bé mới sinh có thể là chủ một căn nhà được tặng không?",
+   "a": "Có, vì đã có năng lực pháp luật; nhưng cha mẹ làm giao dịch thay."
+  },
+  "contrast": [
+   {
+    "with": "nang-luc-hanh-vi-dan-su",
+    "text": "Năng lực pháp luật là có quyền; năng lực hành vi là tự mình thực hiện quyền đó."
    }
   ]
  },

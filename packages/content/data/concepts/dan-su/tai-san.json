@@ -22,10 +22,13 @@
   "hiện có, hình thành trong tương lai"
  ],
  "memo": {
-  "hook": "Bốn loại: VẬT – TIỀN – GIẤY TỜ CÓ GIÁ – QUYỀN TÀI SẢN.",
+  "gist": "Tài sản gồm vật, tiền, giấy tờ có giá và quyền tài sản; có thể đang có hoặc sẽ hình thành.",
+  "kind": "tree",
+  "hook": "Mọi thứ quy được ra tiền đều nằm trong rổ của cải.",
   "tree": [
    {
     "label": "Gồm",
+    "icon": "🎒",
     "children": [
      "Vật",
      "Tiền",
@@ -35,10 +38,21 @@
    },
    {
     "label": "Phân loại",
+    "icon": "🗂️",
     "children": [
      "Bất động sản, động sản",
      "Hiện có, hình thành trong tương lai"
     ]
+   }
+  ],
+  "case": {
+   "q": "Quyền sử dụng đất là loại tài sản gì?",
+   "a": "Quyền tài sản."
+  },
+  "contrast": [
+   {
+    "with": "bat-dong-san-dong-san",
+    "text": "Tài sản là nhóm lớn; bất động sản, động sản là một cách chia tài sản."
    }
   ]
  },

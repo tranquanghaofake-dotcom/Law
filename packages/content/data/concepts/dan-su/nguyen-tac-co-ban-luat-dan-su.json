@@ -23,10 +23,13 @@
   "điều cấm của luật"
  ],
  "memo": {
-  "hook": "Năm nguyên tắc: BÌNH ĐẲNG – TỰ DO THỎA THUẬN – THIỆN CHÍ – không xâm phạm – TỰ CHỊU TRÁCH NHIỆM.",
+  "gist": "Luật dân sự dựa trên bình đẳng, tự do thỏa thuận, thiện chí, trung thực và tự chịu trách nhiệm.",
+  "kind": "tree",
+  "hook": "Chơi công bằng, tự nguyện, thật thà, và ai làm nấy chịu.",
   "tree": [
    {
     "label": "Nguyên tắc",
+    "icon": "⚖️",
     "children": [
      "Bình đẳng",
      "Tự do, tự nguyện",
@@ -36,10 +39,21 @@
    },
    {
     "label": "Giới hạn thỏa thuận",
+    "icon": "🚧",
     "children": [
      "Điều cấm của luật",
      "Đạo đức xã hội"
     ]
+   }
+  ],
+  "case": {
+   "q": "Hai bên tự thỏa thuận lãi suất trong hợp đồng. Có được tôn trọng không?",
+   "a": "Có, nếu không vi phạm điều cấm của luật và không trái đạo đức xã hội."
+  },
+  "contrast": [
+   {
+    "with": "pham-vi-dieu-chinh-luat-dan-su",
+    "text": "Nguyên tắc là luật chơi; phạm vi là những quan hệ nào luật dân sự lo."
    }
   ]
  },

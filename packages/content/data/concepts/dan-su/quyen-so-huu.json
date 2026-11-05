@@ -23,16 +23,20 @@
   "định đoạt"
  ],
  "memo": {
-  "hook": "Ba quyền năng: CHIẾM HỮU – SỬ DỤNG – ĐỊNH ĐOẠT.",
+  "gist": "Chủ sở hữu có ba quyền: nắm giữ, sử dụng và định đoạt tài sản của mình, trong giới hạn luật.",
+  "kind": "tree",
+  "hook": "Như chiếc xe của mình: giữ chìa, lái đi, hay bán đi.",
   "tree": [
    {
     "label": "Chiếm hữu",
+    "icon": "✋",
     "children": [
      "Nắm giữ, chi phối"
     ]
    },
    {
     "label": "Sử dụng",
+    "icon": "🚗",
     "children": [
      "Khai thác công dụng",
      "Hưởng hoa lợi, lợi tức"
@@ -40,6 +44,7 @@
    },
    {
     "label": "Định đoạt",
+    "icon": "🔑",
     "children": [
      "Chuyển giao",
      "Từ bỏ, tiêu hủy"
@@ -47,9 +52,20 @@
    },
    {
     "label": "Giới hạn",
+    "icon": "🚧",
     "children": [
      "Không trái luật, không hại người khác"
     ]
+   }
+  ],
+  "case": {
+   "q": "Người cho thuê nhà giao nhà cho người thuê ở. Họ còn giữ quyền nào?",
+   "a": "Quyền định đoạt, như bán nhà."
+  },
+  "contrast": [
+   {
+    "with": "chiem-huu",
+    "text": "Quyền sở hữu gồm ba quyền; chiếm hữu chỉ là đang nắm giữ thực tế."
    }
   ]
  },

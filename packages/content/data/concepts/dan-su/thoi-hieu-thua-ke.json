@@ -24,10 +24,13 @@
   "03 năm nghĩa vụ tài sản"
  ],
  "memo": {
-  "hook": "Chia di sản: 30 NĂM bất động sản, 10 NĂM động sản; nghĩa vụ người chết: 3 NĂM.",
+  "gist": "Yêu cầu chia di sản trong 30 năm với nhà đất, 10 năm với động sản, tính từ lúc mở thừa kế.",
+  "kind": "tree",
+  "hook": "Mẹo ba – mười – ba mươi: nợ người chết ba năm, động sản mười, nhà đất ba mươi.",
   "tree": [
    {
     "label": "Chia di sản",
+    "icon": "⏳",
     "children": [
      "Bất động sản: 30 năm",
      "Động sản: 10 năm"
@@ -35,21 +38,34 @@
    },
    {
     "label": "Xác nhận, bác bỏ quyền",
+    "icon": "✅",
     "children": [
      "10 năm"
     ]
    },
    {
     "label": "Nghĩa vụ tài sản người chết",
+    "icon": "💳",
     "children": [
      "03 năm"
     ]
    },
    {
     "label": "Mốc tính",
+    "icon": "📍",
     "children": [
      "Thời điểm mở thừa kế"
     ]
+   }
+  ],
+  "case": {
+   "q": "Cha mất năm 2000 để lại căn nhà chưa chia. Năm 2026 các con còn yêu cầu chia được không?",
+   "a": "Được, vì còn trong thời hiệu 30 năm."
+  },
+  "contrast": [
+   {
+    "with": "quyen-thua-ke",
+    "text": "Thời hiệu là thời hạn đòi chia; mở thừa kế là mốc bắt đầu đếm."
    }
   ]
  },

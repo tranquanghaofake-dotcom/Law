@@ -23,10 +23,13 @@
   "giao dịch bị che giấu"
  ],
  "memo": {
-  "hook": "GIẢ TẠO vô hiệu, giao dịch BỊ CHE GIẤU vẫn có hiệu lực nếu hợp pháp.",
+  "gist": "Giao dịch bị cấm hoặc trái đạo đức thì vô hiệu; giao dịch giả để che giấu giao dịch khác cũng vô hiệu.",
+  "kind": "compare",
+  "hook": "Mặt nạ bị gỡ thì vô giá trị, khuôn mặt thật phía sau được xét riêng.",
   "tree": [
    {
     "label": "Vi phạm điều cấm",
+    "icon": "⛔",
     "children": [
      "Mục đích, nội dung bị cấm",
      "Trái đạo đức xã hội"
@@ -34,10 +37,21 @@
    },
    {
     "label": "Giả tạo",
+    "icon": "🎭",
     "children": [
      "Giao dịch giả tạo vô hiệu",
      "Giao dịch bị che giấu xét riêng"
     ]
+   }
+  ],
+  "case": {
+   "q": "Hai bên ký hợp đồng tặng cho nhà để che việc mua bán nhằm tránh thuế. Hợp đồng nào có hiệu lực?",
+   "a": "Tặng cho giả tạo vô hiệu; mua bán bị che giấu có hiệu lực nếu đủ điều kiện."
+  },
+  "contrast": [
+   {
+    "with": "dieu-kien-hieu-luc-giao-dich",
+    "text": "Vô hiệu là hậu quả; điều kiện hiệu lực là những gì phải đủ."
    }
   ]
  },

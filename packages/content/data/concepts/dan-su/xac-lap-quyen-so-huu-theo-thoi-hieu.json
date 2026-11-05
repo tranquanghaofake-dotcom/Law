@@ -24,10 +24,13 @@
   "từ thời điểm bắt đầu chiếm hữu"
  ],
  "memo": {
-  "hook": "NGAY TÌNH, LIÊN TỤC, CÔNG KHAI đủ 10 năm (động sản) / 30 năm (bất động sản) thì thành chủ.",
+  "gist": "Người giữ tài sản ngay tình, liên tục, công khai đủ 10 năm với động sản, 30 năm với bất động sản thì thành chủ.",
+  "kind": "checklist",
+  "hook": "Giữ thật thà, không gián đoạn, không giấu giếm đủ lâu thì thành của mình.",
   "tree": [
    {
     "label": "Điều kiện",
+    "icon": "✅",
     "children": [
      "Không có căn cứ pháp luật",
      "Ngay tình",
@@ -37,6 +40,7 @@
    },
    {
     "label": "Thời hạn",
+    "icon": "⏳",
     "children": [
      "Động sản: 10 năm",
      "Bất động sản: 30 năm"
@@ -44,9 +48,20 @@
    },
    {
     "label": "Tính từ",
+    "icon": "📅",
     "children": [
      "Khi bắt đầu chiếm hữu"
     ]
+   }
+  ],
+  "case": {
+   "q": "Bà A chiếm hữu ngay tình, liên tục, công khai một mảnh đất 30 năm, không ai tranh chấp. Bà có thể thành chủ không?",
+   "a": "Có thể, trừ khi luật đất đai quy định khác."
+  },
+  "contrast": [
+   {
+    "with": "chiem-huu",
+    "text": "Xác lập theo thời hiệu là kết quả; chiếm hữu là tình trạng nắm giữ dẫn tới kết quả đó."
    }
   ]
  },

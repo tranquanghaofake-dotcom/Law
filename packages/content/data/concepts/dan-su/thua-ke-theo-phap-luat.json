@@ -24,10 +24,13 @@
   "hàng sau khi không còn hàng trước"
  ],
  "memo": {
-  "hook": "Ba hàng; hàng TRƯỚC còn thì hàng SAU không hưởng; cùng hàng chia ĐỀU.",
+  "gist": "Không có di chúc hợp lệ thì chia theo ba hàng; hàng trước còn người thì hàng sau không hưởng, cùng hàng chia đều.",
+  "kind": "ladder",
+  "hook": "Như xếp ghế trong đám giỗ: người thân nhất ngồi mâm trên, mâm trên đủ người thì mâm dưới chờ.",
   "tree": [
    {
     "label": "Hàng 1",
+    "icon": "🥇",
     "children": [
      "Vợ, chồng",
      "Cha mẹ đẻ, nuôi",
@@ -36,6 +39,7 @@
    },
    {
     "label": "Hàng 2",
+    "icon": "🥈",
     "children": [
      "Ông bà",
      "Anh chị em ruột",
@@ -44,6 +48,7 @@
    },
    {
     "label": "Hàng 3",
+    "icon": "🥉",
     "children": [
      "Cụ",
      "Bác, chú, cậu, cô, dì"
@@ -51,9 +56,20 @@
    },
    {
     "label": "Chia",
+    "icon": "➗",
     "children": [
      "Cùng hàng: bằng nhau"
     ]
+   }
+  ],
+  "case": {
+   "q": "Bà A chết không di chúc, còn chồng, mẹ đẻ, hai con và anh trai. Anh trai có được hưởng không?",
+   "a": "Không. Hàng thứ nhất còn người nên hàng hai không hưởng."
+  },
+  "contrast": [
+   {
+    "with": "thua-ke-the-vi",
+    "text": "Theo pháp luật là chia theo hàng; thế vị là cháu thay chỗ cha mẹ đã chết."
    }
   ]
  },

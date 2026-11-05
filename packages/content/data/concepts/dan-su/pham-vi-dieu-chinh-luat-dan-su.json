@@ -23,10 +23,13 @@
   "độc lập về tài sản"
  ],
  "memo": {
-  "hook": "Quan hệ TÀI SẢN và NHÂN THÂN, dựa trên BÌNH ĐẲNG, TỰ DO Ý CHÍ.",
+  "gist": "Luật dân sự điều chỉnh quan hệ tài sản và nhân thân giữa các bên bình đẳng, tự do ý chí.",
+  "kind": "tree",
+  "hook": "Ngồi ngang hàng thì là dân sự; một bên ra lệnh thì là hành chính.",
   "tree": [
    {
     "label": "Điều chỉnh",
+    "icon": "📚",
     "children": [
      "Quan hệ tài sản",
      "Quan hệ nhân thân"
@@ -34,6 +37,7 @@
    },
    {
     "label": "Dấu hiệu",
+    "icon": "🔎",
     "children": [
      "Bình đẳng",
      "Tự do ý chí",
@@ -43,10 +47,21 @@
    },
    {
     "label": "Chủ thể",
+    "icon": "👥",
     "children": [
      "Cá nhân",
      "Pháp nhân"
     ]
+   }
+  ],
+  "case": {
+   "q": "Người dân nộp phạt vi phạm giao thông cho công an có phải quan hệ dân sự không?",
+   "a": "Không. Đó là quan hệ hành chính, quyền lực và phục tùng."
+  },
+  "contrast": [
+   {
+    "with": "nguyen-tac-co-ban-luat-dan-su",
+    "text": "Phạm vi là luật lo việc gì; nguyên tắc là cách xử các việc đó."
    }
   ]
  },

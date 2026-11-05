@@ -23,10 +23,13 @@
   "phạm vi đại diện"
  ],
  "memo": {
-  "hook": "Đại diện: NHÂN DANH và VÌ LỢI ÍCH người khác, trong PHẠM VI đại diện.",
+  "gist": "Người đại diện nhân danh và vì lợi ích người khác để làm giao dịch, chỉ trong phạm vi được giao.",
+  "kind": "tree",
+  "hook": "Như người được nhờ đi chợ: mua đúng danh sách thì người nhờ trả tiền, mua thêm thì tự chịu.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "🤝",
     "children": [
      "Nhân danh người được đại diện",
      "Vì lợi ích của họ"
@@ -34,6 +37,7 @@
    },
    {
     "label": "Hai loại",
+    "icon": "2️⃣",
     "children": [
      "Theo pháp luật",
      "Theo ủy quyền"
@@ -41,10 +45,21 @@
    },
    {
     "label": "Giới hạn",
+    "icon": "🚧",
     "children": [
      "Trong phạm vi đại diện",
      "Không giao dịch với chính mình"
     ]
+   }
+  ],
+  "case": {
+   "q": "A ủy quyền B bán xe máy; B bán luôn cả ô tô của A. Việc bán ô tô có ràng buộc A không?",
+   "a": "Không, vì vượt phạm vi đại diện, trừ khi A đồng ý hoặc biết mà không phản đối."
+  },
+  "contrast": [
+   {
+    "with": "nguoi-chua-thanh-nien",
+    "text": "Đại diện là làm thay người khác; bài người chưa thành niên nói khi nào trẻ được tự làm."
    }
   ]
  },

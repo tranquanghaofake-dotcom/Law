@@ -5,7 +5,7 @@
  "term": "Người thừa kế không phụ thuộc vào nội dung di chúc",
  "definition": "Những người sau đây vẫn được hưởng phần di sản bằng hai phần ba suất của một người thừa kế theo pháp luật nếu di sản được chia theo pháp luật, trong trường hợp họ không được người lập di chúc cho hưởng di sản hoặc chỉ cho hưởng phần di sản ít hơn hai phần ba suất đó: a) Con chưa thành niên, cha, mẹ, vợ, chồng; b) Con thành niên mà không có khả năng lao động.",
  "plain": "Đây là GIỚI HẠN quyền định đoạt bằng di chúc để bảo vệ người thân phụ thuộc: CON CHƯA THÀNH NIÊN, CHA, MẸ, VỢ, CHỒNG, CON THÀNH NIÊN KHÔNG CÓ KHẢ NĂNG LAO ĐỘNG được hưởng ít nhất 2/3 suất thừa kế theo pháp luật. Không áp dụng với người từ chối nhận di sản hoặc không có quyền hưởng di sản (khoản 2). Con thành niên có khả năng lao động KHÔNG thuộc diện này.",
- "example": "Ông A có vợ và hai con (một con 10 tuổi, một con 25 tuổi khỏe mạnh), lập di chúc để lại toàn bộ 900 triệu cho người cháu. Chia theo pháp luật, mỗi người hàng thứ nhất được 300 triệu; vợ và con 10 tuổi mỗi người vẫn được hưởng 2/3 × 300 = 200 triệu; con 25 tuổi khỏe mạnh không được.",
+ "example": "Ông A có vợ và hai con (10 tuổi và 25 tuổi khỏe mạnh), để cả 900 triệu cho cháu. Chia theo luật mỗi người được 300 triệu; vợ và con 10 tuổi mỗi người vẫn được 200 triệu; con 25 tuổi khỏe mạnh không được.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1 Điều 644 Bộ luật Dân sự 2015",
@@ -22,10 +22,13 @@
   "con thành niên không có khả năng lao động"
  ],
  "memo": {
-  "hook": "Dù di chúc gạt ra, người thân phụ thuộc vẫn được 2/3 SUẤT.",
+  "gist": "Dù di chúc không cho, con chưa thành niên, cha mẹ, vợ chồng, con không tự lao động được vẫn hưởng hai phần ba suất.",
+  "kind": "tree",
+  "hook": "Di chúc không gạt được người cần nuôi.",
   "tree": [
    {
     "label": "Ai",
+    "icon": "👪",
     "children": [
      "Con chưa thành niên",
      "Cha, mẹ",
@@ -35,16 +38,28 @@
    },
    {
     "label": "Được hưởng",
+    "icon": "➗",
     "children": [
      "Hai phần ba một suất theo pháp luật"
     ]
    },
    {
     "label": "Không áp dụng",
+    "icon": "🚫",
     "children": [
      "Từ chối nhận",
      "Không có quyền hưởng"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ông A để hết di sản cho cháu. Con 25 tuổi khỏe mạnh của ông có được hưởng phần bắt buộc không?",
+   "a": "Không. Chỉ con chưa thành niên hoặc con thành niên mất khả năng lao động mới được."
+  },
+  "contrast": [
+   {
+    "with": "di-chuc",
+    "text": "Người thừa kế bắt buộc là ngoại lệ; di chúc là ý muốn tự do của người chết."
    }
   ]
  },
