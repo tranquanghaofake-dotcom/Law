@@ -22,10 +22,13 @@
   "sự phụ thuộc pháp lý"
  ],
  "memo": {
-  "hook": "Đặc điểm cốt lõi: người lao động PHỤ THUỘC PHÁP LÝ vào người sử dụng.",
+  "gist": "Quan hệ thuê mướn, trả lương giữa người lao động và người sử dụng; người lao động phụ thuộc vào sự quản lý.",
+  "kind": "compare",
+  "hook": "Một người làm, một người trả và chỉ huy.",
   "tree": [
    {
     "label": "Phát sinh",
+    "icon": "🤝",
     "children": [
      "Thuê mướn, sử dụng lao động",
      "Trả lương"
@@ -33,6 +36,7 @@
    },
    {
     "label": "Cá nhân",
+    "icon": "👤",
     "children": [
      "Người lao động – người sử dụng",
      "Căn cứ hợp đồng lao động"
@@ -40,10 +44,21 @@
    },
    {
     "label": "Tập thể",
+    "icon": "👥",
     "children": [
      "Tổ chức đại diện – người sử dụng",
      "Đối thoại, thương lượng, đình công"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công đoàn cơ sở thương lượng với công ty về tăng lương chung. Đây là quan hệ lao động gì?",
+   "a": "Quan hệ lao động tập thể."
+  },
+  "contrast": [
+   {
+    "with": "nguoi-lao-dong",
+    "text": "Quan hệ lao động là mối quan hệ; người lao động là một bên của nó."
    }
   ]
  },

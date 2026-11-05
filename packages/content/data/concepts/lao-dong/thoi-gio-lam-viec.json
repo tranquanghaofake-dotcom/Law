@@ -5,7 +5,7 @@
  "term": "Thời giờ làm việc bình thường và làm thêm giờ",
  "definition": "Thời giờ làm việc bình thường không quá 08 giờ trong 01 ngày và không quá 48 giờ trong 01 tuần. (…) Thời gian làm thêm giờ là khoảng thời gian làm việc ngoài thời giờ làm việc bình thường theo quy định của pháp luật, thỏa ước lao động tập thể hoặc nội quy lao động.",
  "plain": "Bình thường: tối đa 08 GIỜ/NGÀY, 48 GIỜ/TUẦN (theo tuần: tối đa 10 giờ/ngày); khuyến khích tuần 40 giờ. Làm thêm giờ (khoản 2 Điều 107): phải được NGƯỜI LAO ĐỘNG ĐỒNG Ý; không quá 50% giờ bình thường/ngày (hoặc tổng 12 giờ/ngày nếu theo tuần); không quá 40 GIỜ/THÁNG; không quá 200 GIỜ/NĂM, một số ngành nghề tối đa 300 GIỜ/NĂM (khoản 3). Lưu ý: mức 40 giờ/tháng theo điểm b khoản 2 Điều 107 Bộ luật Lao động 2019; các quy định tạm thời nới trần làm thêm giờ trong giai đoạn phục hồi sau dịch đã hết thời hạn, cần tra văn bản hiện hành nếu có quy định mới.",
- "example": "Công nhân dệt may làm 8 giờ/ngày, được bố trí làm thêm 3 giờ/ngày suốt 20 ngày (60 giờ/tháng): vượt giới hạn 40 giờ/tháng.",
+ "example": "Công nhân dệt may làm 8 giờ mỗi ngày, bị bố trí làm thêm 3 giờ mỗi ngày suốt 20 ngày (60 giờ trong tháng): vượt giới hạn 40 giờ một tháng.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1 Điều 105, khoản 1 Điều 107 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)",
@@ -23,22 +23,36 @@
   "200 hoặc 300 giờ/năm"
  ],
  "memo": {
-  "hook": "Bình thường 8 GIỜ/NGÀY, 48/TUẦN; thêm giờ cần ĐỒNG Ý, tối đa 40/THÁNG, 200 hoặc 300/NĂM.",
+  "gist": "Làm bình thường tối đa 8 giờ một ngày, 48 giờ một tuần; làm thêm cần đồng ý, tối đa 40 giờ một tháng.",
+  "kind": "compare",
+  "hook": "Mẹo tám – bốn tám – bốn mươi: ngày, tuần, tháng.",
   "tree": [
    {
     "label": "Bình thường",
+    "icon": "🕗",
     "children": [
-     "≤ 08 giờ/ngày",
-     "≤ 48 giờ/tuần"
+     "Tối đa 08 giờ mỗi ngày",
+     "Tối đa 48 giờ mỗi tuần"
     ]
    },
    {
     "label": "Làm thêm giờ",
+    "icon": "⏰",
     "children": [
      "Người lao động đồng ý",
-     "≤ 40 giờ/tháng",
-     "≤ 200 giờ/năm (một số ngành 300)"
+     "Tối đa 40 giờ mỗi tháng",
+     "Tối đa 200 giờ mỗi năm (một số ngành 300)"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công nhân làm thêm 3 giờ mỗi ngày suốt 20 ngày. Có vượt giới hạn không?",
+   "a": "Có. 60 giờ vượt mức 40 giờ một tháng."
+  },
+  "contrast": [
+   {
+    "with": "nghi-hang-nam",
+    "text": "Thời giờ làm việc là số giờ làm; nghỉ hằng năm là số ngày nghỉ."
    }
   ]
  },

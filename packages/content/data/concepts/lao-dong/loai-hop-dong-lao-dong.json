@@ -23,17 +23,21 @@
   "chỉ ký thêm 01 lần"
  ],
  "memo": {
-  "hook": "Chỉ còn HAI loại; xác định thời hạn tối đa 36 THÁNG, ký thêm MỘT LẦN.",
+  "gist": "Chỉ còn hai loại hợp đồng: không xác định thời hạn và xác định thời hạn tối đa 36 tháng, ký tiếp được một lần.",
+  "kind": "compare",
+  "hook": "Hai lần hẹn hò có hạn, lần ba là về chung nhà.",
   "tree": [
    {
     "label": "Hai loại",
+    "icon": "2️⃣",
     "children": [
      "Không xác định thời hạn",
-     "Xác định thời hạn (≤ 36 tháng)"
+     "Xác định thời hạn (tối đa 36 tháng)"
     ]
    },
    {
     "label": "Hết hạn vẫn làm",
+    "icon": "⏰",
     "children": [
      "Trong 30 ngày ký mới",
      "Quá 30 ngày: thành không thời hạn"
@@ -41,9 +45,20 @@
    },
    {
     "label": "Ký tiếp",
+    "icon": "🔁",
     "children": [
      "Chỉ thêm 01 lần xác định thời hạn"
     ]
+   }
+  ],
+  "case": {
+   "q": "A ký 12 tháng, rồi 24 tháng; hết hợp đồng thứ hai vẫn làm. Công ty phải ký loại gì?",
+   "a": "Hợp đồng không xác định thời hạn."
+  },
+  "contrast": [
+   {
+    "with": "hop-dong-lao-dong",
+    "text": "Loại hợp đồng là có hạn hay không; hợp đồng lao động là khái niệm chung."
    }
   ]
  },

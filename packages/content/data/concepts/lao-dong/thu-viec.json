@@ -23,10 +23,13 @@
   "06 ngày làm việc"
  ],
  "memo": {
-  "hook": "Thử việc MỘT LẦN: 180 – 60 – 30 ngày – 6 ngày làm việc; lương ít nhất 85%.",
+  "gist": "Thử việc chỉ một lần cho một công việc, tối đa 180, 60, 30 hoặc 6 ngày tùy việc; lương ít nhất 85%.",
+  "kind": "tree",
+  "hook": "Như mặc thử áo một lần: thử xong là chọn.",
   "tree": [
    {
     "label": "Thời gian",
+    "icon": "⏳",
     "children": [
      "Quản lý doanh nghiệp: 180 ngày",
      "Cao đẳng trở lên: 60 ngày",
@@ -36,15 +39,27 @@
    },
    {
     "label": "Lương",
+    "icon": "💵",
     "children": [
      "Ít nhất 85%"
     ]
    },
    {
     "label": "Số lần",
+    "icon": "1️⃣",
     "children": [
      "Một lần cho một công việc"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty tuyển kỹ sư tốt nghiệp đại học, thử việc 90 ngày. Có đúng luật không?",
+   "a": "Không. Trình độ cao đẳng trở lên thử việc tối đa 60 ngày."
+  },
+  "contrast": [
+   {
+    "with": "hop-dong-lao-dong",
+    "text": "Thử việc là giai đoạn trước; hợp đồng lao động là quan hệ chính thức."
    }
   ]
  },

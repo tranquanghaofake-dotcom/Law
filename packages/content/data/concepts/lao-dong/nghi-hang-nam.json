@@ -23,10 +23,13 @@
   "gộp tối đa 03 năm"
  ],
  "memo": {
-  "hook": "12 – 14 – 16 ngày, NGUYÊN LƯƠNG; cứ 5 NĂM thêm 1 ngày.",
+  "gist": "Người lao động được nghỉ hằng năm hưởng nguyên lương 12, 14 hoặc 16 ngày, cứ 5 năm thêm một ngày.",
+  "kind": "tree",
+  "hook": "Mẹo mười hai – mười bốn – mười sáu: việc càng nặng, nghỉ càng nhiều.",
   "tree": [
    {
     "label": "Mức",
+    "icon": "🏖️",
     "children": [
      "Bình thường: 12 ngày",
      "Nặng nhọc: 14 ngày",
@@ -35,21 +38,34 @@
    },
    {
     "label": "Thâm niên",
+    "icon": "⭐",
     "children": [
      "Đủ 05 năm thêm 01 ngày"
     ]
    },
    {
     "label": "Chưa nghỉ hết",
+    "icon": "💵",
     "children": [
      "Được thanh toán khi thôi việc"
     ]
    },
    {
     "label": "Gộp",
+    "icon": "📦",
     "children": [
      "Tối đa 03 năm"
     ]
+   }
+  ],
+  "case": {
+   "q": "Anh A nghỉ việc khi còn 5 ngày phép năm chưa nghỉ. Công ty phải làm gì?",
+   "a": "Trả tiền lương cho 5 ngày đó."
+  },
+  "contrast": [
+   {
+    "with": "thoi-gio-lam-viec",
+    "text": "Nghỉ hằng năm là ngày nghỉ; thời giờ làm việc là số giờ làm mỗi ngày, tuần."
    }
   ]
  },

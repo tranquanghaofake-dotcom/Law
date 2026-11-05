@@ -24,10 +24,13 @@
   "tên gọi khác"
  ],
  "memo": {
-  "hook": "TRỌNG NỘI DUNG hơn tên gọi: có việc làm trả lương + chịu QUẢN LÝ là hợp đồng lao động.",
+  "gist": "Có làm việc được trả lương và chịu quản lý, điều hành thì là hợp đồng lao động, dù gọi bằng tên gì.",
+  "kind": "tree",
+  "hook": "Nhìn ruột chứ không nhìn vỏ: tên gọi không quyết định.",
   "tree": [
    {
     "label": "Nội dung",
+    "icon": "📝",
     "children": [
      "Việc làm có trả công",
      "Điều kiện lao động",
@@ -36,6 +39,7 @@
    },
    {
     "label": "Đặc trưng",
+    "icon": "🔗",
     "children": [
      "Phụ thuộc pháp lý",
      "Tự mình thực hiện"
@@ -43,9 +47,20 @@
    },
    {
     "label": "Tên gọi khác",
+    "icon": "🏷️",
     "children": [
-     "Có trả lương và quản lý → vẫn là hợp đồng lao động"
+     "Có trả lương và quản lý thì vẫn là hợp đồng lao động"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty ký \"hợp đồng cộng tác viên\" với A, nhưng A làm toàn thời gian, chấm công, nhận lương tháng. Đây là hợp đồng gì?",
+   "a": "Hợp đồng lao động."
+  },
+  "contrast": [
+   {
+    "with": "loai-hop-dong-lao-dong",
+    "text": "Hợp đồng lao động là khái niệm; loại hợp đồng là có thời hạn hay không."
    }
   ]
  },

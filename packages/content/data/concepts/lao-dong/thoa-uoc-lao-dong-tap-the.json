@@ -24,10 +24,13 @@
   "có lợi hơn"
  ],
  "memo": {
-  "hook": "Thỏa ước là LUẬT CỦA DOANH NGHIỆP: vừa hợp đồng vừa quy phạm.",
+  "gist": "Văn bản thỏa thuận chung giữa tập thể lao động và người sử dụng; hợp đồng lao động không được thấp hơn thỏa ước.",
+  "kind": "tree",
+  "hook": "Như nội quy riêng của nhà được cả nhà ký: áp cho cả người mới đến.",
   "tree": [
    {
     "label": "Hình thành",
+    "icon": "🤝",
     "children": [
      "Qua thương lượng tập thể",
      "Bằng văn bản"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Loại",
+    "icon": "🗂️",
     "children": [
      "Doanh nghiệp",
      "Ngành",
@@ -43,15 +47,27 @@
    },
    {
     "label": "Hiệu lực",
+    "icon": "📏",
     "children": [
      "Hợp đồng lao động không thấp hơn"
     ]
    },
    {
     "label": "Nội dung",
+    "icon": "👍",
     "children": [
      "Khuyến khích có lợi hơn luật"
     ]
+   }
+  ],
+  "case": {
+   "q": "Thỏa ước quy định thưởng Tết ít nhất 1 tháng lương. Người vào làm sau khi ký có được hưởng không?",
+   "a": "Có. Thỏa ước áp dụng cho mọi người lao động trong doanh nghiệp."
+  },
+  "contrast": [
+   {
+    "with": "thuong-luong-tap-the",
+    "text": "Thỏa ước là kết quả; thương lượng tập thể là quá trình đi tới kết quả đó."
    }
   ]
  },

@@ -24,10 +24,13 @@
   "03 ngày làm việc"
  ],
  "memo": {
-  "hook": "Người lao động nghỉ KHÔNG CẦN LÝ DO, chỉ cần BÁO TRƯỚC 45 – 30 – 3 ngày.",
+  "gist": "Người lao động được nghỉ việc không cần lý do, chỉ cần báo trước; bị nợ lương, ngược đãi thì nghỉ ngay.",
+  "kind": "tree",
+  "hook": "Mẹo bốn lăm – ba mươi – ba: hợp đồng càng dài, báo càng sớm.",
   "tree": [
    {
     "label": "Báo trước",
+    "icon": "📅",
     "children": [
      "Không xác định thời hạn: 45 ngày",
      "12–36 tháng: 30 ngày",
@@ -36,11 +39,22 @@
    },
    {
     "label": "Không cần báo trước",
+    "icon": "🚪",
     "children": [
      "Không trả đủ lương",
      "Bị ngược đãi, quấy rối",
      "Bố trí sai công việc"
     ]
+   }
+  ],
+  "case": {
+   "q": "Chị A làm hợp đồng không xác định thời hạn, muốn chuyển công ty. Phải báo trước bao lâu?",
+   "a": "Ít nhất 45 ngày; không cần nêu lý do."
+  },
+  "contrast": [
+   {
+    "with": "don-phuong-cham-dut-nguoi-su-dung",
+    "text": "Người lao động nghỉ không cần lý do; người sử dụng cho nghỉ phải có căn cứ luật."
    }
   ]
  },

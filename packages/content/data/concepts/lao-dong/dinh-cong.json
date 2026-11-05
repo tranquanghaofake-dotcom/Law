@@ -24,10 +24,13 @@
  ],
  "note": "Câu chữ VBHN 18/VBHN-VPQH 2026 của Bộ luật Lao động vẫn ghi \"Ủy ban nhân dân cấp huyện\" (khoản 3 Điều 202, khoản 3 Điều 205) và \"Chủ tịch Ủy ban nhân dân cấp huyện\" (Điều 211); từ 01/7/2025 cấp huyện kết thúc hoạt động theo khoản 3 Điều 51 Luật Tổ chức chính quyền địa phương 72/2025/QH15 (hiệu lực 16/6/2025). Cơ quan nhận thông báo, xử lý thay cấp huyện chưa được đối chiếu.",
  "memo": {
-  "hook": "Ngừng việc TẠM THỜI, TỰ NGUYỆN, CÓ TỔ CHỨC; chỉ cho tranh chấp tập thể VỀ LỢI ÍCH.",
+  "gist": "Người lao động tạm thời, tự nguyện, có tổ chức cùng ngừng việc khi tranh chấp tập thể về lợi ích không giải quyết được.",
+  "kind": "tree",
+  "hook": "Như cả đội đặt bút xuống cùng lúc, có người dẫn đầu, để đòi điều kiện mới.",
   "tree": [
    {
     "label": "Dấu hiệu",
+    "icon": "✋",
     "children": [
      "Tạm thời, tự nguyện, có tổ chức",
      "Trong giải quyết tranh chấp"
@@ -35,16 +38,32 @@
    },
    {
     "label": "Ai tổ chức",
+    "icon": "👥",
     "children": [
      "Tổ chức đại diện có quyền thương lượng"
     ]
    },
    {
     "label": "Chỉ được khi",
+    "icon": "🔑",
     "children": [
      "Tranh chấp tập thể về lợi ích",
      "Hòa giải, trọng tài không thành"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công nhân tự phát nghỉ việc đồng loạt, không có tổ chức đại diện lãnh đạo. Có phải đình công đúng luật không?",
+   "a": "Không, vì đình công phải do tổ chức đại diện có quyền thương lượng lãnh đạo."
+  },
+  "contrast": [
+   {
+    "with": "dinh-cong-bat-hop-phap",
+    "text": "Đình công là định nghĩa; bất hợp pháp là các trường hợp đình công sai."
+   },
+   {
+    "with": "thuong-luong-tap-the",
+    "text": "Đình công là bước cuối khi thương lượng, hòa giải thất bại."
    }
   ]
  },

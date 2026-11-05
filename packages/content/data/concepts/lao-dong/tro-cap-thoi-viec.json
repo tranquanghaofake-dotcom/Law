@@ -5,7 +5,7 @@
  "term": "Trợ cấp thôi việc",
  "definition": "Khi hợp đồng lao động chấm dứt theo quy định tại các khoản 1, 2, 3, 4, 6, 7, 9 và 10 Điều 34 của Bộ luật này thì người sử dụng lao động có trách nhiệm trả trợ cấp thôi việc cho người lao động đã làm việc thường xuyên cho mình từ đủ 12 tháng trở lên, mỗi năm làm việc được trợ cấp một nửa tháng tiền lương, trừ trường hợp đủ điều kiện hưởng lương hưu theo quy định của pháp luật về bảo hiểm xã hội và trường hợp quy định tại điểm e khoản 1 Điều 36 của Bộ luật này.",
  "plain": "Điều kiện: làm việc thường xuyên TỪ ĐỦ 12 THÁNG; mức: MỖI NĂM = NỬA THÁNG LƯƠNG. Không được hưởng khi: đủ điều kiện hưởng lương hưu; TỰ Ý BỎ VIỆC 05 ngày liên tục (điểm e khoản 1 Điều 36). Thời gian tính = thời gian làm thực tế TRỪ thời gian đã đóng BẢO HIỂM THẤT NGHIỆP và thời gian đã được chi trả (khoản 2). Tiền lương tính = bình quân 06 THÁNG liền kề trước khi thôi việc (khoản 3). Phân biệt TRỢ CẤP MẤT VIỆC LÀM (Điều 47: mỗi năm 01 tháng lương, ít nhất 02 tháng).",
- "example": "Chị C làm 5 năm, nhưng 4 năm đã đóng bảo hiểm thất nghiệp; nghỉ việc đúng luật: chị chỉ được trợ cấp thôi việc cho 1 năm còn lại = nửa tháng lương bình quân 6 tháng cuối.",
+ "example": "Chị C làm 5 năm, 4 năm đã đóng bảo hiểm thất nghiệp; nghỉ việc đúng luật: chị chỉ được trợ cấp thôi việc cho 1 năm còn lại, bằng nửa tháng lương bình quân 6 tháng cuối.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1 Điều 46 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)",
@@ -23,16 +23,20 @@
   "bình quân 06 tháng"
  ],
  "memo": {
-  "hook": "Đủ 12 THÁNG; mỗi năm NỬA THÁNG lương; TRỪ thời gian đã đóng bảo hiểm thất nghiệp.",
+  "gist": "Làm đủ 12 tháng, nghỉ đúng luật thì mỗi năm được nửa tháng lương, trừ thời gian đã đóng bảo hiểm thất nghiệp.",
+  "kind": "tree",
+  "hook": "Năm nào chưa có bảo hiểm thất nghiệp lo thì công ty lo.",
   "tree": [
    {
     "label": "Điều kiện",
+    "icon": "📅",
     "children": [
      "Làm thường xuyên từ đủ 12 tháng"
     ]
    },
    {
     "label": "Mức",
+    "icon": "💵",
     "children": [
      "Mỗi năm nửa tháng lương",
      "Lương bình quân 06 tháng"
@@ -40,16 +44,28 @@
    },
    {
     "label": "Thời gian tính",
+    "icon": "➖",
     "children": [
      "Trừ thời gian đóng thất nghiệp"
     ]
    },
    {
     "label": "Không hưởng",
+    "icon": "🚫",
     "children": [
      "Đủ điều kiện lương hưu",
      "Tự ý bỏ việc 05 ngày"
     ]
+   }
+  ],
+  "case": {
+   "q": "Chị C làm 5 năm, 4 năm đã đóng bảo hiểm thất nghiệp. Trợ cấp thôi việc tính cho mấy năm?",
+   "a": "Chỉ 1 năm còn lại, bằng nửa tháng lương bình quân."
+  },
+  "contrast": [
+   {
+    "with": "don-phuong-cham-dut-nguoi-lao-dong",
+    "text": "Trợ cấp thôi việc là tiền khi nghỉ; đơn phương chấm dứt là cách nghỉ."
    }
   ]
  },

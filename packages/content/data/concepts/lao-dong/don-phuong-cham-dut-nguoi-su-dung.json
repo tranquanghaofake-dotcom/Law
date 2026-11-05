@@ -23,10 +23,13 @@
   "báo trước"
  ],
  "memo": {
-  "hook": "Người sử dụng CHỈ được chấm dứt khi có CĂN CỨ LUẬT ĐỊNH.",
+  "gist": "Người sử dụng chỉ được tự chấm dứt hợp đồng khi có căn cứ luật, như không hoàn thành việc, ốm lâu, bỏ việc.",
+  "kind": "tree",
+  "hook": "Ông chủ muốn cho nghỉ phải chỉ ra điều luật nào.",
   "tree": [
    {
     "label": "Căn cứ",
+    "icon": "📋",
     "children": [
      "Thường xuyên không hoàn thành việc",
      "Ốm đau điều trị lâu chưa hồi phục",
@@ -36,15 +39,27 @@
    },
    {
     "label": "Thủ tục",
+    "icon": "📅",
     "children": [
      "Báo trước"
     ]
    },
    {
     "label": "Khác người lao động",
+    "icon": "↔️",
     "children": [
      "Người lao động không cần lý do"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty cho anh B nghỉ chỉ vì \"không hợp văn hóa công ty\". Hậu quả là gì?",
+   "a": "Chấm dứt trái luật; phải nhận B trở lại và bồi thường."
+  },
+  "contrast": [
+   {
+    "with": "sa-thai",
+    "text": "Đơn phương chấm dứt cần căn cứ ở Điều 36; sa thải là hình thức kỷ luật, cần lỗi nặng."
    }
   ]
  },

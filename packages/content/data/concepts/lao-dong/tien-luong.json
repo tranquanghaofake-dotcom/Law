@@ -24,10 +24,13 @@
   "bình đẳng giới"
  ],
  "memo": {
-  "hook": "Lương = MỨC LƯƠNG + PHỤ CẤP + BỔ SUNG; không dưới TỐI THIỂU; nam nữ BÌNH ĐẲNG.",
+  "gist": "Tiền lương gồm mức lương, phụ cấp và khoản bổ sung; không thấp hơn lương tối thiểu, nam nữ như nhau.",
+  "kind": "tree",
+  "hook": "Lương như chiếc bánh ba tầng: lương chính, phụ cấp, thêm khác.",
   "tree": [
    {
     "label": "Gồm",
+    "icon": "💵",
     "children": [
      "Mức lương theo công việc",
      "Phụ cấp lương",
@@ -36,6 +39,7 @@
    },
    {
     "label": "Nguyên tắc",
+    "icon": "⚖️",
     "children": [
      "Theo thỏa thuận",
      "Không thấp hơn lương tối thiểu",
@@ -44,10 +48,21 @@
    },
    {
     "label": "Làm thêm",
+    "icon": "⏰",
     "children": [
-     "Ngày thường ≥ 150%",
-     "Ngày nghỉ ≥ 200%"
+     "Ngày thường: ít nhất 150%",
+     "Ngày nghỉ: ít nhất 200%"
     ]
+   }
+  ],
+  "case": {
+   "q": "Phụ cấp xăng xe 500 nghìn theo thỏa thuận có thuộc tiền lương không?",
+   "a": "Có, trừ khi thuộc khoản luật loại trừ."
+  },
+  "contrast": [
+   {
+    "with": "luong-toi-thieu",
+    "text": "Tiền lương là toàn bộ khoản trả; lương tối thiểu là mức sàn."
    }
   ]
  },

@@ -23,10 +23,13 @@
   "quản lý nhà nước về lao động"
  ],
  "memo": {
-  "hook": "Điều chỉnh QUAN HỆ LAO ĐỘNG và quan hệ LIÊN QUAN TRỰC TIẾP.",
+  "gist": "Bộ luật Lao động điều chỉnh quan hệ thuê mướn lao động và quan hệ liên quan như việc làm, bảo hiểm, tranh chấp.",
+  "kind": "tree",
+  "hook": "Cái ô che quan hệ làm công ăn lương, không che công chức.",
   "tree": [
    {
     "label": "Quan hệ lao động",
+    "icon": "👥",
     "children": [
      "Cá nhân",
      "Tập thể"
@@ -34,6 +37,7 @@
    },
    {
     "label": "Liên quan trực tiếp",
+    "icon": "🔗",
     "children": [
      "Việc làm, học nghề",
      "Bảo hiểm, tranh chấp"
@@ -41,11 +45,22 @@
    },
    {
     "label": "Phương pháp",
+    "icon": "⚙️",
     "children": [
      "Thỏa thuận (chủ yếu)",
      "Mệnh lệnh",
      "Sự tham gia của công đoàn"
     ]
+   }
+  ],
+  "case": {
+   "q": "Quan hệ công tác của một công chức Ủy ban nhân dân do luật nào điều chỉnh chủ yếu?",
+   "a": "Luật Cán bộ, công chức, không phải Bộ luật Lao động."
+  },
+  "contrast": [
+   {
+    "with": "quan-he-lao-dong",
+    "text": "Phạm vi là toàn bộ việc luật lo; quan hệ lao động là phần chính trong đó."
    }
   ]
  },
