@@ -5,7 +5,7 @@
  "term": "Kiểm tra văn bản quy phạm pháp luật",
  "definition": "Kiểm tra văn bản quy phạm pháp luật là việc xem xét, đánh giá, kết luận về tính hợp hiến, tính hợp pháp, tính thống nhất với hệ thống pháp luật của văn bản được kiểm tra.",
  "plain": "Kiểm tra diễn ra SAU KHI văn bản đã ban hành (khác thẩm định, thẩm tra là trước khi ban hành). Hai phương thức: TỰ KIỂM TRA văn bản do mình ban hành (điểm a–d khoản 1 Điều 63) và KIỂM TRA THEO THẨM QUYỀN văn bản của cấp dưới (Chính phủ kiểm tra thông tư, văn bản cấp tỉnh; Bộ trưởng kiểm tra văn bản liên quan ngành; chính quyền cấp trên kiểm tra cấp dưới). Căn cứ kiểm tra: kế hoạch, phát hiện dấu hiệu trái pháp luật, kiến nghị phản ánh, yêu cầu của cấp trên (khoản 2, 3). Kết quả: xử lý văn bản trái pháp luật (đình chỉ, bãi bỏ...) theo khoản 5 Điều 63 và Điều 8.",
- "example": "Bộ Tư pháp (giúp Chính phủ) kiểm tra quyết định của UBND tỉnh T đặt ra khoản thu ngoài luật, kết luận trái pháp luật và kiến nghị Thủ tướng đình chỉ thi hành.",
+ "example": "Bộ Tư pháp kiểm tra quyết định của Ủy ban nhân dân tỉnh đặt ra khoản thu ngoài luật, kết luận là trái luật và đề nghị Thủ tướng đình chỉ thi hành.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 6 Điều 3 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)",
@@ -26,28 +26,39 @@
  ],
  "note": "Luật Ban hành văn bản quy phạm pháp luật 64/2025/QH15 có hiệu lực từ 01/4/2025, thay thế Luật 80/2015/QH13 (sửa đổi bởi Luật 63/2020/QH14) mà đề cương HLU 2019 còn dẫn; được sửa đổi bởi Luật 87/2025/QH15 có hiệu lực từ 01/7/2025 — văn bản hợp nhất 54/VBHN-VPQH ngày 11/8/2025. Luật mới bỏ quy trình \"lập đề nghị xây dựng luật\" theo chương trình hằng năm kiểu cũ, tách \"quy trình xây dựng chính sách\" và bỏ thẩm quyền ban hành VBQPPL của cấp huyện (từ 01/7/2025). Dự án Luật Văn bản quy phạm pháp luật (thay thế) đang được Quốc hội khóa XVI xem xét, chưa có hiệu lực.",
  "memo": {
-  "hook": "KIỂM TRA là SAU khi ban hành; THẨM ĐỊNH, THẨM TRA là TRƯỚC.",
+  "gist": "Kiểm tra là xem lại văn bản đã ban hành có trái Hiến pháp, trái luật hay mâu thuẫn với văn bản khác không.",
+  "kind": "checklist",
+  "hook": "Kiểm tra như chấm bài đã nộp; thẩm định, thẩm tra như sửa bài trước khi nộp.",
   "tree": [
    {
-    "label": "Xét",
-    "children": [
-     "Hợp hiến",
-     "Hợp pháp",
-     "Thống nhất"
-    ]
+    "label": "Có hợp Hiến pháp không",
+    "icon": "📜"
    },
    {
-    "label": "Phương thức",
-    "children": [
-     "Tự kiểm tra",
-     "Kiểm tra theo thẩm quyền"
-    ]
+    "label": "Có hợp luật cấp trên không",
+    "icon": "⚖️"
    },
    {
-    "label": "Thời điểm",
+    "label": "Có thống nhất với văn bản khác không",
+    "icon": "🧩"
+   },
+   {
+    "label": "Ai kiểm tra",
+    "icon": "🔍",
     "children": [
-     "Sau khi ban hành"
+     "Cơ quan tự kiểm tra",
+     "Cấp trên kiểm tra cấp dưới"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ủy ban nhân dân tỉnh tự đặt khoản thu ngoài luật. Bộ Tư pháp phát hiện thì làm gì?",
+   "a": "Kết luận quyết định đó trái luật và đề nghị Thủ tướng đình chỉ thi hành."
+  },
+  "contrast": [
+   {
+    "with": "xd-ra-soat-vbqppl",
+    "text": "Kiểm tra tìm văn bản sai ngay từ lúc ban hành; rà soát tìm văn bản cũ đã lỗi thời vì tình hình thay đổi."
    }
   ]
  },

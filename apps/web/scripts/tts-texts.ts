@@ -23,6 +23,8 @@ it('gom câu cho giọng đọc dựng sẵn', () => {
     try { terms = JSON.parse(readFileSync(`${root}/terms/${sub}.json`, 'utf8')); } catch { /* môn chưa có bảng tên */ }
     // thẻ khái niệm đầu: tên + định nghĩa + mẹo nhớ (đọc ngay khi thẻ hiện)
     for (const c of all) add(promptSpeech({ type: 'intro' }, c));
+    // đáp của tình huống hỏi–đáp (đọc khi bấm "Xem đáp")
+    for (const c of all) if (c.memo?.case) add(`Đáp: ${c.memo.case.a}`);
     const steps = [];
     for (const seed of SEEDS) {
       for (let lv = 1; lv <= 6; lv++) {

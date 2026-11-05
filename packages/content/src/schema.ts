@@ -76,10 +76,46 @@ export const itemSchema = z.discriminatedUnion('type', [
 const slug = z.string().regex(/^[a-z0-9-]+$/, 'id chỉ gồm chữ thường, số, gạch nối');
 
 const memoLabel = z.string().min(1).max(60, 'nhãn sơ đồ tối đa 60 ký tự');
+/** Lời thường (thẻ hiện mặc định, giọng đọc): không viết tắt / IN HOA (≥ 2 chữ hoa liền nhau), không "(…)". */
+export function plainIssue(s: string): string | null {
+  if (/\p{Lu}{2,}/u.test(s)) return `"${s}": có viết tắt hoặc IN HOA`;
+  if (/\(…\)|\.\.\./.test(s)) return `"${s}": có dấu (…)`;
+  return null;
+}
+const tokens = (s: string) => s.toLowerCase().normalize('NFC').split(/[^\p{L}\p{N}]+/u).filter((w) => w.length >= 2);
+/** Tỉ lệ chữ của `a` có mặt trong `b`. */
+export function overlap(a: string, b: string): number {
+  const ta = tokens(a), tb = new Set(tokens(b));
+  return ta.length ? ta.filter((w) => tb.has(w)).length / ta.length : 0;
+}
+export const MEMO_KINDS = ['ladder', 'checklist', 'steps', 'compare', 'tree'] as const;
+
 export const memoSchema = z.object({
+  /** Hiểu nhanh: câu lời thường ≤ 25 chữ nói khái niệm là gì, để làm gì. */
+  gist: z.string().min(1).refine((g) => g.trim().split(/\s+/).length <= 25, 'Hiểu nhanh tối đa 25 chữ').optional(),
+  /** Kiểu hình: bậc thang, danh sách điều kiện, các bước, hai cột, cây. */
+  kind: z.enum(MEMO_KINDS).optional(),
   hook: z.string().min(1).max(160, 'mẹo nhớ tối đa 160 ký tự').optional(),
-  tree: z.array(z.object({ label: memoLabel, children: z.array(memoLabel).max(4, 'mỗi nhánh tối đa 4 ý').optional() })).min(2, 'sơ đồ cần 2–6 nhánh').max(6, 'sơ đồ cần 2–6 nhánh').optional(),
-}).refine((m) => !!m.hook || !!m.tree, { message: 'memo cần hook hoặc tree' });
+  tree: z.array(z.object({ label: memoLabel, icon: z.string().max(4, 'biểu tượng nhánh tối đa 1 ký hiệu').optional(), children: z.array(memoLabel).max(4, 'mỗi nhánh tối đa 4 ý').optional() })).min(2, 'sơ đồ cần 2–6 nhánh').max(6, 'sơ đồ cần 2–6 nhánh').optional(),
+  /** Tình huống hỏi – đáp: tự trả lời trong đầu trước khi xem đáp. */
+  case: z.object({
+    q: z.string().min(1).refine((q) => q.trim().endsWith('?'), 'câu hỏi tình huống phải kết thúc bằng dấu hỏi'),
+    a: z.string().min(1).refine((a) => a.trim().split(/\s+/).length <= 30, 'đáp tình huống tối đa 30 chữ'),
+  }).optional(),
+  /** Câu phân biệt với khái niệm hay nhầm (id), dùng thay hai cột cụm từ khi trả lời sai. */
+  contrast: z.array(z.object({ with: slug, text: z.string().min(1).refine((t) => t.trim().split(/\s+/).length <= 40, 'câu phân biệt tối đa 40 chữ') })).optional(),
+}).refine((m) => !!m.hook || !!m.tree, { message: 'memo cần hook hoặc tree' })
+  // có gist = khái niệm đã chuyển sang "lời thường": mọi chữ hiện mặc định phải đạt luật viết
+  .superRefine((m, ctx) => {
+    if (!m.gist) return;
+    const texts = [m.gist, m.hook ?? '', ...(m.tree ?? []).flatMap((n) => [n.label, ...(n.children ?? [])]), m.case?.q ?? '', m.case?.a ?? '', ...(m.contrast ?? []).map((c) => c.text)].filter(Boolean);
+    for (const t of texts) {
+      const issue = plainIssue(t);
+      if (issue) ctx.addIssue({ code: z.ZodIssueCode.custom, message: `phải là lời thường — ${issue}` });
+    }
+    // mẹo nhớ phải là cách nhớ mới (so sánh, vần, chữ tắt), không nhắc lại Hiểu nhanh
+    if (m.hook && overlap(m.hook, m.gist) > 0.5) ctx.addIssue({ code: z.ZodIssueCode.custom, message: `mẹo nhớ nhắc lại Hiểu nhanh — "${m.hook}"` });
+  });
 
 export const conceptSchema = z.object({
   id: slug,
@@ -100,6 +136,10 @@ export const conceptSchema = z.object({
   items: z.array(itemSchema).refine((items) => items.some((i) => i.level === 1), { message: 'thiếu item bậc 1 (mcq)' })
     .refine((items) => items.some((i) => i.level === 3), { message: 'thiếu item bậc 3 (cloze)' })
     .refine((items) => items.some((i) => i.level === 4), { message: 'thiếu item bậc 4 (case hoặc truefalse)' }),
+}).superRefine((c, ctx) => {
+  // khái niệm đã có Hiểu nhanh: ví dụ hiện mặc định trên thẻ cũng phải là lời thường
+  const issue = c.memo?.gist ? plainIssue(c.example) : null;
+  if (issue) ctx.addIssue({ code: z.ZodIssueCode.custom, path: ['example'], message: `ví dụ phải là lời thường — ${issue}` });
 });
 
 export const lessonSchema = z.object({ id: slug, title: z.string().min(1), concepts: z.array(slug).min(1) });

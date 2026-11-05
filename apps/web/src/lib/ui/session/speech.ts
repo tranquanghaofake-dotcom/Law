@@ -42,6 +42,28 @@ export function feedbackSpeech(item: StepItem, result: Pick<AnswerResult, 'corre
   return parts.join(' ');
 }
 
+const SO = ['không', 'một', 'hai', 'ba', 'bốn', 'năm', 'sáu'];
+type Node = { label: string; children?: string[] };
+const item = (n: Node) => (n.children?.length ? `${n.label}: ${n.children.join(', ')}` : n.label);
+
+/**
+ * Đọc hình của thẻ (memo.kind + tree) để người NGHE cũng nắm được khung: bậc thang đọc "từ cao xuống thấp",
+ * các bước / điều kiện / cây đọc "một, hai, ba", hai cột đọc "so sánh … còn …". Mỗi ý là một câu (dùng lại mp3).
+ */
+export function diagramSpeech(memo: { kind?: string; tree?: Node[] }): string {
+  const tree = memo.tree ?? [];
+  if (!tree.length) return '';
+  const list = tree.map((n, i) => `${SO[i + 1] ? SO[i + 1][0].toUpperCase() + SO[i + 1].slice(1) : i + 1}, ${item(n)}.`).join(' ');
+  const n = SO[tree.length] ?? String(tree.length);
+  switch (memo.kind) {
+    case 'ladder': return `Từ cao xuống thấp: ${tree.map((x, i) => (i ? 'rồi ' : '') + (x.children?.length ? `${x.label}, của ${x.children.join(', ')}` : x.label)).join('; ')}.`;
+    case 'steps': return `Có ${n} bước. ${list}`;
+    case 'checklist': return `Cần đủ ${n} điều. ${list}`;
+    case 'compare': return `So sánh. ${item(tree[0])}.${tree[1] ? ` Còn ${item(tree[1])}.` : ''}`;
+    default: return `Gồm ${n} ý. ${list}`;
+  }
+}
+
 /** "[…]" (che tên khái niệm) đọc thành "chỗ trống". */
 const unmask = (s: string) => s.split(MASK).join('chỗ trống');
 
@@ -53,6 +75,9 @@ export function promptSpeech(item: StepItem, concept: Pick<Concept, 'term' | 'de
   switch (item.type) {
     case 'intro': {
       const hook = concept.memo?.hook;
+      // có Hiểu nhanh (lời thường): đọc nó thay cho nguyên văn — nghe dễ hiểu, không có "(…)" hay viết tắt
+      const gist = concept.memo?.gist;
+      if (gist) return [sentence(concept.term), sentence(gist), diagramSpeech(concept.memo ?? {}), hook ? `Mẹo nhớ: ${sentence(hook)}` : '', concept.memo?.case ? `Thử nghĩ: ${sentence(concept.memo.case.q)}` : ''].filter(Boolean).join(' ');
       // giữ đúng dạng cũ "tên. định nghĩa" (trùng nút Nghe của thẻ) để dùng lại mp3 đã sinh
       const base = `${concept.term}. ${concept.definition}`;
       // định nghĩa kết thúc bằng ; hoặc : thì chốt câu để mẹo nhớ thành câu riêng (tệp riêng)

@@ -46,3 +46,26 @@ describe('CompareTable', () => {
     expect(container.querySelector('.cmp')).toBeNull();
   });
 });
+
+describe('WhyPanel với khái niệm đã có Hiểu nhanh', () => {
+  it('trả lời sai: không đặt đoạn nguyên văn lên trước (không còn khối Vì sao nếu không có dễ nhầm)', () => {
+    const { container } = render(WhyPanel, { props: { concept: c('a', { memo: { gist: 'Câu ngắn.', hook: 'm' } }), item, correct: false, explain: 'x' } });
+    expect(container.querySelector('.why-quote')).toBeNull();
+    expect(container.querySelector('.why')).toBeNull();
+  });
+});
+
+describe('WhyPanel: câu phân biệt theo cặp (memo.contrast)', () => {
+  it('chọn nhầm khái niệm có câu phân biệt: hiện một câu thay hai cột cụm từ', () => {
+    const a = c('a', { memo: { gist: 'Câu ngắn.', hook: 'm', contrast: [{ with: 'b', text: 'A là cái này; còn B là cái kia.' }] } });
+    const { container } = render(WhyPanel, { props: { concept: a, item, correct: false, explain: 'x', chosen: 'KN b', confusables: [c('b')] } });
+    expect(container.querySelector('.why-contrast')?.textContent).toContain('A là cái này; còn B là cái kia.');
+    expect(container.querySelector('.why-mixup')).toBeNull();
+  });
+  it('nhầm với khái niệm khác không có câu phân biệt: vẫn hai cột', () => {
+    const a = c('a', { memo: { gist: 'Câu ngắn.', hook: 'm', contrast: [{ with: 'z', text: 'khác' }] } });
+    const { container } = render(WhyPanel, { props: { concept: a, item, correct: false, explain: 'x', chosen: 'KN b', confusables: [c('b')] } });
+    expect(container.querySelector('.why-contrast')).toBeNull();
+    expect(container.querySelector('.why-mixup')).not.toBeNull();
+  });
+});

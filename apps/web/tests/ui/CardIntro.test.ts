@@ -37,10 +37,13 @@ describe('CardIntro ba lớp', () => {
     expect(container.querySelector('.memo-hook')?.textContent).toContain('Cọc để GIỮ hợp đồng.');
     expect(container.querySelector('p.plain')).toBeNull();
   });
-  it('khái niệm có ghi chú cập nhật luật thì mở sẵn nguyên văn và ghi chú', () => {
+  it('khái niệm có ghi chú luật mới: chỉ hiện nhãn "⚠ Luật đã thay đổi", bấm mới mở nguyên văn và ghi chú', async () => {
     const { container } = render(CardIntro, { props: { concept: { ...concept, note: 'Có thay đổi từ 01/07/2025.' }, item, rng, onanswer: vi.fn() } });
+    expect(container.querySelector('blockquote')).toBeNull();
+    expect(container.textContent).not.toContain('Có thay đổi từ 01/07/2025.');
+    await fireEvent.click(screen.getByRole('button', { name: /Luật đã thay đổi/ }));
     expect(container.querySelector('blockquote')).not.toBeNull();
-    expect(container.textContent).toContain('Cập nhật luật');
+    expect(container.textContent).toContain('Có thay đổi từ 01/07/2025.');
   });
   it('"Đã hiểu" và Enter gửi correct: true đúng một lần', async () => {
     const onanswer = vi.fn();
@@ -49,5 +52,20 @@ describe('CardIntro ba lớp', () => {
     await fireEvent.keyDown(window, { key: 'Enter' });
     expect(onanswer).toHaveBeenCalledTimes(1);
     expect(onanswer.mock.calls[0][0]).toMatchObject({ correct: true });
+  });
+});
+
+describe('CardIntro: tình huống hỏi–đáp (memo.case)', () => {
+  const withCase: Concept = { ...concept, memo: { gist: 'Giao tiền trước để giữ chắc việc ký.', hook: 'Như giữ chỗ.', tree: [{ label: 'a' }, { label: 'b' }], case: { q: 'An đưa 5 triệu trước khi ký, đó là gì?', a: 'Là đặt cọc.' } } };
+  it('hiện câu hỏi, đáp ẩn tới khi bấm "Xem đáp"; thay đoạn ví dụ; bấm thì đọc đáp', async () => {
+    const onspeak = vi.fn();
+    const { container } = render(CardIntro, { props: { concept: withCase, item, rng, onanswer: vi.fn(), onspeak } });
+    expect(container.querySelector('.intro-example')).toBeNull();
+    expect(container.querySelector('.intro-case-q')?.textContent).toContain('An đưa 5 triệu');
+    expect(container.querySelector('.intro-case-a')).toBeNull();
+    await fireEvent.click(screen.getByRole('button', { name: 'Xem đáp' }));
+    expect(container.querySelector('.intro-case-a')?.textContent).toContain('Là đặt cọc.');
+    expect(onspeak).toHaveBeenLastCalledWith('Đáp: Là đặt cọc.');
+    expect(screen.queryByRole('button', { name: 'Xem đáp' })).toBeNull();
   });
 });

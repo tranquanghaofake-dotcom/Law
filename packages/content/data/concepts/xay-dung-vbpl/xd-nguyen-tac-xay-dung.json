@@ -5,7 +5,7 @@
  "term": "Nguyên tắc bảo đảm tính hợp hiến, hợp pháp, thống nhất",
  "definition": "Bảo đảm tính hợp hiến, tính hợp pháp, tính thống nhất của văn bản quy phạm pháp luật trong hệ thống pháp luật và không trái với điều ước quốc tế mà nước Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên; tuân thủ đúng thẩm quyền, nội dung, hình thức và trình tự, thủ tục xây dựng, ban hành văn bản quy phạm pháp luật.",
  "plain": "Điều 5 có 7 nguyên tắc; khoản 2 là trục \"tiêu chí hợp hiến, hợp pháp\" của đề cương: HỢP HIẾN (không trái Hiến pháp), HỢP PHÁP (không trái văn bản cấp trên, đúng thẩm quyền, nội dung, hình thức, trình tự, thủ tục), THỐNG NHẤT (không mâu thuẫn, chồng chéo trong hệ thống), không trái điều ước quốc tế. Các nguyên tắc khác: lãnh đạo của Đảng (k1); chủ quyền, kiểm soát quyền lực, chống lợi ích nhóm (k3); quyền con người, dân chủ, công khai, minh bạch, khả thi (k4 — tiêu chí hợp lý); phân quyền, phân cấp (k5); thí điểm phải có thời hạn (k6); bí mật nhà nước (k7).",
- "example": "UBND tỉnh ban hành quyết định đặt thêm điều kiện kinh doanh mà luật không giao: vi phạm nguyên tắc hợp pháp về thẩm quyền và nội dung, dù mục đích quản lý là hợp lý.",
+ "example": "Ủy ban nhân dân tỉnh tự đặt thêm điều kiện kinh doanh mà luật không giao: trái nguyên tắc hợp pháp, dù mục đích quản lý là hợp lý.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 2 Điều 5 Luật Ban hành văn bản quy phạm pháp luật 2025 (sửa đổi, bổ sung năm 2025)",
@@ -25,32 +25,48 @@
  ],
  "note": "Luật Ban hành văn bản quy phạm pháp luật 64/2025/QH15 có hiệu lực từ 01/4/2025, thay thế Luật 80/2015/QH13 (sửa đổi bởi Luật 63/2020/QH14) mà đề cương HLU 2019 còn dẫn; được sửa đổi bởi Luật 87/2025/QH15 có hiệu lực từ 01/7/2025 — văn bản hợp nhất 54/VBHN-VPQH ngày 11/8/2025. Luật mới bỏ quy trình \"lập đề nghị xây dựng luật\" theo chương trình hằng năm kiểu cũ, tách \"quy trình xây dựng chính sách\" và bỏ thẩm quyền ban hành VBQPPL của cấp huyện (từ 01/7/2025). Dự án Luật Văn bản quy phạm pháp luật (thay thế) đang được Quốc hội khóa XVI xem xét, chưa có hiệu lực.",
  "memo": {
-  "hook": "Ba tiêu chí: HỢP HIẾN – HỢP PHÁP – THỐNG NHẤT, không trái điều ước.",
+  "gist": "Văn bản luật mới không được trái Hiến pháp, không trái văn bản cấp trên và không mâu thuẫn với văn bản khác.",
+  "kind": "checklist",
+  "hook": "Ba ổ khóa: hợp hiến, hợp pháp, thống nhất. Thiếu một ổ là văn bản không qua được.",
   "tree": [
    {
     "label": "Hợp hiến",
+    "icon": "📜",
     "children": [
      "Không trái Hiến pháp"
     ]
    },
    {
     "label": "Hợp pháp",
+    "icon": "📏",
     "children": [
      "Không trái văn bản cấp trên",
-     "Đúng thẩm quyền, hình thức, thủ tục"
+     "Đúng thẩm quyền, thủ tục"
     ]
    },
    {
     "label": "Thống nhất",
+    "icon": "🧩",
     "children": [
      "Không mâu thuẫn, chồng chéo"
     ]
    },
    {
-    "label": "Điều ước quốc tế",
+    "label": "Hợp điều ước",
+    "icon": "🌐",
     "children": [
-     "Không trái"
+     "Không trái điều ước quốc tế"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ủy ban nhân dân tỉnh đặt thêm điều kiện kinh doanh mà luật không giao. Vi phạm nguyên tắc nào?",
+   "a": "Nguyên tắc hợp pháp: làm quá thẩm quyền và nội dung được giao, dù mục đích hợp lý."
+  },
+  "contrast": [
+   {
+    "with": "xd-kiem-tra-vbqppl",
+    "text": "Nguyên tắc là yêu cầu khi viết văn bản; kiểm tra là soi lại sau khi ban hành xem có giữ đúng nguyên tắc không."
    }
   ]
  },

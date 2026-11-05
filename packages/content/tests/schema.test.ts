@@ -65,3 +65,75 @@ describe('conceptSchema: memo (sơ đồ/mẹo nhớ do người soạn — di�
     expect(conceptSchema.safeParse({ ...base, memo: {} }).success).toBe(false);
   });
 });
+
+describe('memo.gist + kind — luật viết lời thường (thí điểm 05/11/2026)', () => {
+  const tree = [{ label: 'Cao nhất', children: ['Hiến pháp'] }, { label: 'Dưới', children: ['Luật'] }];
+  const ok = { gist: 'Văn bản luật có thứ bậc: cấp dưới không được trái cấp trên.', kind: 'ladder', hook: 'Cao nhất là Hiến pháp.', tree };
+  it('chấp nhận gist ngắn, lời thường, kind hợp lệ', () => {
+    expect(conceptSchema.safeParse({ ...base, memo: ok }).success).toBe(true);
+  });
+  it('từ chối gist quá 25 chữ', () => {
+    const r = conceptSchema.safeParse({ ...base, memo: { ...ok, gist: 'chữ '.repeat(26).trim() + '.' } });
+    expect(r.success).toBe(false);
+    expect(JSON.stringify(r.error?.issues)).toMatch(/25 chữ/);
+  });
+  it.each([
+    ['viết tắt trong gist', { gist: 'Do UBTVQH ban hành.' }],
+    ['IN HOA trong mẹo nhớ', { hook: 'Nhớ HIẾN PHÁP cao nhất.' }],
+    ['dấu (…) trong gist', { gist: 'Hiến pháp (…) cao nhất.' }],
+    ['viết tắt trong nhánh', { tree: [{ label: 'Trung ương', children: ['VBQPPL'] }, tree[1]] }],
+  ])('có gist thì từ chối %s', (_n, patch) => {
+    const r = conceptSchema.safeParse({ ...base, memo: { ...ok, ...patch } });
+    expect(r.success).toBe(false);
+    expect(JSON.stringify(r.error?.issues)).toMatch(/lời thường/);
+  });
+  it('từ chối kind lạ', () => {
+    expect(conceptSchema.safeParse({ ...base, memo: { ...ok, kind: 'pie' } }).success).toBe(false);
+  });
+  it('memo cũ chưa có gist vẫn hợp lệ (chưa áp luật viết)', () => {
+    expect(conceptSchema.safeParse({ ...base, memo: { hook: 'Nhớ HIẾN PHÁP.', tree } }).success).toBe(true);
+  });
+});
+
+describe('ví dụ của khái niệm đã có Hiểu nhanh cũng phải là lời thường', () => {
+  const memo = { gist: 'Câu ngắn.', hook: 'Mẹo.' };
+  it('từ chối ví dụ có viết tắt', () => {
+    const r = conceptSchema.safeParse({ ...base, memo, example: 'Nghị quyết của HĐND tỉnh.' });
+    expect(r.success).toBe(false);
+    expect(JSON.stringify(r.error?.issues)).toMatch(/ví dụ phải là lời thường/);
+  });
+  it('chấp nhận ví dụ lời thường', () => {
+    expect(conceptSchema.safeParse({ ...base, memo, example: 'Nghị quyết của Hội đồng nhân dân tỉnh.' }).success).toBe(true);
+  });
+});
+
+describe('mẹo nhớ phải thêm cách nhớ mới, không nhắc lại Hiểu nhanh', () => {
+  const tree = [{ label: 'A' }, { label: 'B' }];
+  it('từ chối mẹo trùng quá nửa số chữ với Hiểu nhanh', () => {
+    const r = conceptSchema.safeParse({ ...base, memo: { gist: 'Trung ương ít nhất 45 ngày, địa phương ít nhất 10 ngày.', hook: 'Trung ương 45 ngày, địa phương 10 ngày.', tree } });
+    expect(r.success).toBe(false);
+    expect(JSON.stringify(r.error?.issues)).toMatch(/mẹo nhớ nhắc lại/);
+  });
+  it('chấp nhận mẹo là hình ảnh so sánh', () => {
+    expect(conceptSchema.safeParse({ ...base, memo: { gist: 'Văn bản cấp dưới không được trái cấp trên.', hook: 'Hiến pháp là luật mẹ, con không được cãi mẹ.', tree } }).success).toBe(true);
+  });
+});
+
+describe('memo.case (hỏi – đáp), memo.contrast (câu phân biệt), icon nhánh', () => {
+  const tree = [{ label: 'A', icon: '🏛️' }, { label: 'B' }];
+  const memo = { gist: 'Câu ngắn.', hook: 'Mẹo khác hẳn.', tree };
+  it('chấp nhận hỏi – đáp đúng dạng và câu phân biệt', () => {
+    const ok = { ...memo, case: { q: 'Chỉ thị có phải văn bản quy phạm không?', a: 'Không, vì luật không đưa chỉ thị vào danh sách.' }, contrast: [{ with: 'quyen-tai-san', text: 'Tài sản là cái có giá trị; quyền tài sản là quyền đòi được cái đó.' }] };
+    expect(conceptSchema.safeParse({ ...base, memo: ok }).success).toBe(true);
+  });
+  it('câu hỏi phải kết thúc bằng dấu hỏi; đáp tối đa 30 chữ', () => {
+    expect(conceptSchema.safeParse({ ...base, memo: { ...memo, case: { q: 'Không có dấu hỏi.', a: 'Ừ.' } } }).success).toBe(false);
+    expect(conceptSchema.safeParse({ ...base, memo: { ...memo, case: { q: 'Hỏi?', a: 'chữ '.repeat(31) } } }).success).toBe(false);
+  });
+  it('câu phân biệt phải là lời thường', () => {
+    expect(conceptSchema.safeParse({ ...base, memo: { ...memo, contrast: [{ with: 'x', text: 'VBQPPL khác QPPL.' }] } }).success).toBe(false);
+  });
+  it('icon nhánh tối đa một biểu tượng ngắn', () => {
+    expect(conceptSchema.safeParse({ ...base, memo: { ...memo, tree: [{ label: 'A', icon: 'quá dài' }, { label: 'B' }] } }).success).toBe(false);
+  });
+});

@@ -25,24 +25,35 @@
  ],
  "note": "Luật Ban hành văn bản quy phạm pháp luật 64/2025/QH15 có hiệu lực từ 01/4/2025, thay thế Luật 80/2015/QH13 (sửa đổi bởi Luật 63/2020/QH14) mà đề cương HLU 2019 còn dẫn; được sửa đổi bởi Luật 87/2025/QH15 có hiệu lực từ 01/7/2025 — văn bản hợp nhất 54/VBHN-VPQH ngày 11/8/2025. Luật mới bỏ quy trình \"lập đề nghị xây dựng luật\" theo chương trình hằng năm kiểu cũ, tách \"quy trình xây dựng chính sách\" và bỏ thẩm quyền ban hành VBQPPL của cấp huyện (từ 01/7/2025). Dự án Luật Văn bản quy phạm pháp luật (thay thế) đang được Quốc hội khóa XVI xem xét, chưa có hiệu lực.",
  "memo": {
-  "hook": "Năm bước: XÁC ĐỊNH → ĐÁNH GIÁ TÁC ĐỘNG → LẤY Ý KIẾN → THẨM ĐỊNH → THÔNG QUA.",
+  "gist": "Với luật mới hoặc luật hạn chế quyền con người, phải làm chính sách trước rồi mới soạn điều luật.",
+  "kind": "steps",
+  "hook": "Như món ăn mới: phải thử công thức trước khi nấu đại trà; sửa vài chỗ nhỏ thì khỏi.",
   "tree": [
    {
-    "label": "Bắt buộc với",
-    "children": [
-     "Luật, pháp lệnh mới hoặc thay thế",
-     "Luật hạn chế quyền con người",
-     "Nghị quyết thí điểm"
-    ]
+    "label": "Xác định chính sách",
+    "icon": "🔎"
    },
    {
-    "label": "Các bước",
-    "children": [
-     "Xác định chính sách",
-     "Đánh giá tác động",
-     "Lấy ý kiến, thẩm định",
-     "Thông qua chính sách"
-    ]
+    "label": "Đánh giá tác động",
+    "icon": "⚖️"
+   },
+   {
+    "label": "Lấy ý kiến, thẩm định",
+    "icon": "🗣️"
+   },
+   {
+    "label": "Thông qua chính sách",
+    "icon": "✅"
+   }
+  ],
+  "case": {
+   "q": "Dự án luật sửa vài điều của Luật Kế toán, không hạn chế quyền con người, có phải làm quy trình chính sách không?",
+   "a": "Không bắt buộc; chỉ cần thuyết minh tác động trong hồ sơ."
+  },
+  "contrast": [
+   {
+    "with": "xd-chinh-sach",
+    "text": "Chính sách là nội dung giải pháp; quy trình xây dựng chính sách là các bước làm ra và thông qua giải pháp đó."
    }
   ]
  },

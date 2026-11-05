@@ -16,7 +16,7 @@ export type Why = {
   /** Dấu hiệu quyết định (`keywords`). */
   signs: string[];
   /** Khái niệm dễ nhầm với dấu hiệu của nó; chỉ khi cả hai bên có đủ dữ liệu. `picked`: bạn đã chọn đúng khái niệm này. */
-  mixup: { term: string; theirs: string[]; ours: string[]; picked: boolean } | null;
+  mixup: { id: string; term: string; theirs: string[]; ours: string[]; picked: boolean } | null;
 };
 
 const CITE_PARTS = /(điểm\s+[a-zđ]\b|khoản\s+\d+|điều\s+\d+[a-z]?|chương\s+[ivx\d]+|mục\s+\d+|phần\s+[ivx\d]+|bài\s+\d+|vd\s*\d+|các|và|,|;|\.|\(|\)|-|–|\d+)/giu;
@@ -136,7 +136,7 @@ export function whyOf(concept: Concept, item: StepItem, opts: { correct: boolean
   const cands = (opts.confusables ?? []).filter((c) => c.keywords.filter((k) => k.trim()).length >= 2 && (chosenTerm(opts.chosen, c) || mentioned(item, c)));
   const pick = cands.find((c) => chosenTerm(opts.chosen, c)) ?? cands[0];
   const mixup = pick && signs.length >= 2
-    ? { term: pick.term, theirs: pick.keywords.slice(0, 3), ours: signs.slice(0, 3), picked: chosenTerm(opts.chosen, pick) }
+    ? { id: pick.id, term: pick.term, theirs: pick.keywords.slice(0, 3), ours: signs.slice(0, 3), picked: chosenTerm(opts.chosen, pick) }
     : null;
   const needPlain = citeOnly || text.length < 60;
   return { citeOnly, excerpt: { text, marks }, plain: needPlain ? firstSentence(concept.plain) : null, signs, mixup };

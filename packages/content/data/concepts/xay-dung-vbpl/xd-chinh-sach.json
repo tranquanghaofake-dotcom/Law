@@ -25,28 +25,47 @@
  ],
  "note": "Luật Ban hành văn bản quy phạm pháp luật 64/2025/QH15 có hiệu lực từ 01/4/2025, thay thế Luật 80/2015/QH13 (sửa đổi bởi Luật 63/2020/QH14) mà đề cương HLU 2019 còn dẫn; được sửa đổi bởi Luật 87/2025/QH15 có hiệu lực từ 01/7/2025 — văn bản hợp nhất 54/VBHN-VPQH ngày 11/8/2025. Luật mới bỏ quy trình \"lập đề nghị xây dựng luật\" theo chương trình hằng năm kiểu cũ, tách \"quy trình xây dựng chính sách\" và bỏ thẩm quyền ban hành VBQPPL của cấp huyện (từ 01/7/2025). Dự án Luật Văn bản quy phạm pháp luật (thay thế) đang được Quốc hội khóa XVI xem xét, chưa có hiệu lực.",
  "memo": {
-  "hook": "Chính sách có TRƯỚC quy phạm: VẤN ĐỀ → MỤC TIÊU → GIẢI PHÁP.",
+  "gist": "Chính sách là cách Nhà nước giải quyết một vấn đề thực tế; có chính sách trước rồi mới viết thành điều luật.",
+  "kind": "steps",
+  "hook": "Như xây nhà: vẽ bản thiết kế xong mới đổ móng.",
   "tree": [
    {
-    "label": "Bản chất",
+    "label": "Vấn đề",
+    "icon": "❗",
     "children": [
-     "Giải pháp cụ thể của Nhà nước"
+     "Điều gì đang bất cập"
     ]
    },
    {
-    "label": "Cấu trúc",
+    "label": "Mục tiêu",
+    "icon": "🎯",
     "children": [
-     "Vấn đề thực tiễn",
-     "Mục tiêu",
-     "Giải pháp",
-     "Đối tượng tác động"
+     "Muốn đạt được điều gì"
     ]
    },
    {
-    "label": "Phù hợp",
+    "label": "Giải pháp",
+    "icon": "🛠️",
     "children": [
-     "Chủ trương, đường lối của Đảng"
+     "Nhà nước sẽ làm gì"
     ]
+   },
+   {
+    "label": "Viết thành luật",
+    "icon": "📜",
+    "children": [
+     "Biến giải pháp thành quy định"
+    ]
+   }
+  ],
+  "case": {
+   "q": "Điều khoản 'xe ô tô vào khu vực X phải nộp phí' là chính sách hay quy phạm?",
+   "a": "Là quy phạm: nó viết giải pháp thu phí thành quy tắc bắt buộc. Chính sách là ý tưởng giải pháp đằng sau."
+  },
+  "contrast": [
+   {
+    "with": "xd-quy-pham-phap-luat",
+    "text": "Chính sách là ý tưởng giải quyết vấn đề; quy phạm là câu chữ bắt buộc được viết ra từ ý tưởng đó."
    }
   ]
  },

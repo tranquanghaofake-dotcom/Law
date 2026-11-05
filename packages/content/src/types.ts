@@ -40,7 +40,13 @@ export type ItemTrueFalse = {
 };
 export type Item = ItemMcq | ItemPair | ItemCloze | ItemRecall | ItemTrueFalse;
 
-export type Memo = { hook?: string; tree?: { label: string; children?: string[] }[] };
+export type MemoKind = 'ladder' | 'checklist' | 'steps' | 'compare' | 'tree';
+export type Memo = {
+  gist?: string; kind?: MemoKind; hook?: string;
+  tree?: { label: string; icon?: string; children?: string[] }[];
+  /** Tình huống hỏi – đáp. */ case?: { q: string; a: string };
+  /** Câu phân biệt với khái niệm hay nhầm. */ contrast?: { with: string; text: string }[];
+};
 
 export type Concept = {
   id: string;

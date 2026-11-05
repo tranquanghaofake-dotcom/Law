@@ -25,22 +25,48 @@
  ],
  "note": "Luật Ban hành văn bản quy phạm pháp luật 64/2025/QH15 có hiệu lực từ 01/4/2025, thay thế Luật 80/2015/QH13 (sửa đổi bởi Luật 63/2020/QH14) mà đề cương HLU 2019 còn dẫn; được sửa đổi bởi Luật 87/2025/QH15 có hiệu lực từ 01/7/2025 — văn bản hợp nhất 54/VBHN-VPQH ngày 11/8/2025. Luật mới bỏ quy trình \"lập đề nghị xây dựng luật\" theo chương trình hằng năm kiểu cũ, tách \"quy trình xây dựng chính sách\" và bỏ thẩm quyền ban hành VBQPPL của cấp huyện (từ 01/7/2025). Dự án Luật Văn bản quy phạm pháp luật (thay thế) đang được Quốc hội khóa XVI xem xét, chưa có hiệu lực.",
  "memo": {
-  "hook": "Năm yêu cầu: TIẾNG VIỆT – CHÍNH XÁC – PHỔ THÔNG – THỐNG NHẤT – RÕ RÀNG.",
+  "gist": "Văn bản luật phải viết bằng tiếng Việt chính xác, dễ hiểu, mỗi khái niệm chỉ dùng một từ.",
+  "kind": "checklist",
+  "hook": "Viết luật như viết công thức nấu ăn: ai đọc cũng phải nấu ra cùng một món.",
   "tree": [
    {
-    "label": "Yêu cầu",
+    "label": "Tiếng Việt",
+    "icon": "🗣️"
+   },
+   {
+    "label": "Chính xác",
+    "icon": "🎯",
     "children": [
-     "Tiếng Việt",
-     "Chính xác, một nghĩa",
-     "Phổ thông, không tiếng địa phương",
-     "Thống nhất thuật ngữ"
+     "Một nghĩa, đúng thuật ngữ"
     ]
    },
    {
-    "label": "Bản dịch",
+    "label": "Phổ thông",
+    "icon": "👥",
     "children": [
-     "Chỉ có giá trị tham khảo"
+     "Không tiếng địa phương, tiếng lóng"
     ]
+   },
+   {
+    "label": "Thống nhất",
+    "icon": "🔁",
+    "children": [
+     "Một khái niệm một từ"
+    ]
+   },
+   {
+    "label": "Rõ ràng, dễ hiểu",
+    "icon": "💡"
+   }
+  ],
+  "case": {
+   "q": "Dự thảo viết 'vi phạm sẽ bị xử lý thật nghiêm khắc'. Sai ở đâu?",
+   "a": "Không chính xác vì không nói mức nào; nên viết rõ, ví dụ phạt tiền từ 1 triệu đến 3 triệu đồng."
+  },
+  "contrast": [
+   {
+    "with": "xd-bo-cuc-so-ky-hieu",
+    "text": "Ngôn ngữ là cách dùng chữ; bố cục là cách chia văn bản thành chương, điều, khoản."
    }
   ]
  },
