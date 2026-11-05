@@ -25,10 +25,13 @@
  ],
  "note": "Luật 79/2025/QH15 (hiệu lực 01/7/2025) sửa toàn bộ Điều 19 (điều kiện, các trường hợp được miễn điều kiện, tên gọi, việc giữ quốc tịch nước ngoài). Giáo trình in trước 2025 trình bày theo Điều 19 cũ, cần đối chiếu từng điểm.",
  "memo": {
-  "hook": "Mốc dễ hỏi: thường trú 05 NĂM; CHỦ TỊCH NƯỚC quyết định.",
+  "gist": "Người nước ngoài thường trú 5 năm, biết tiếng Việt, tự lo được cuộc sống có thể xin nhập; Chủ tịch nước quyết.",
+  "kind": "checklist",
+  "hook": "Năm năm sống ở nhà mới thì được ghi tên vào hộ khẩu.",
   "tree": [
    {
     "label": "Ai xin",
+    "icon": "🙋",
     "children": [
      "Công dân nước ngoài",
      "Người không quốc tịch"
@@ -36,6 +39,7 @@
    },
    {
     "label": "Điều kiện chung",
+    "icon": "✅",
     "children": [
      "Năng lực hành vi đầy đủ",
      "Biết tiếng Việt",
@@ -45,15 +49,27 @@
    },
    {
     "label": "Được miễn 3 điều kiện",
+    "icon": "🆓",
     "children": [
      "Có vợ, chồng, con đẻ là công dân"
     ]
    },
    {
     "label": "Quyết định",
+    "icon": "👤",
     "children": [
      "Chủ tịch nước"
     ]
+   }
+  ],
+  "case": {
+   "q": "Anh M người Pháp lấy vợ Việt Nam, sống ở Việt Nam 2 năm, chưa thạo tiếng Việt. Có thể nhập quốc tịch không?",
+   "a": "Có thể, vì có vợ là công dân Việt Nam nên được miễn một số điều kiện."
+  },
+  "contrast": [
+   {
+    "with": "tro-lai-quoc-tich",
+    "text": "Nhập là lần đầu có quốc tịch; trở lại là người từng có rồi mất."
    }
   ]
  },

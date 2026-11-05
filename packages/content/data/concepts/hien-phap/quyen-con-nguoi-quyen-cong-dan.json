@@ -23,10 +23,13 @@
   "sáu lý do"
  ],
  "memo": {
-  "hook": "Hạn chế quyền: phải bằng LUẬT, khi CẦN THIẾT, vì SÁU lý do.",
+  "gist": "Quyền con người được công nhận, bảo vệ; chỉ hạn chế bằng luật khi cần thiết vì sáu lý do như quốc phòng, sức khỏe.",
+  "kind": "tree",
+  "hook": "Khóa quyền phải bằng chìa khóa luật, không bằng công văn.",
   "tree": [
    {
     "label": "Nhà nước phải",
+    "icon": "🛡️",
     "children": [
      "Công nhận",
      "Tôn trọng",
@@ -36,6 +39,7 @@
    },
    {
     "label": "Hạn chế quyền",
+    "icon": "🔒",
     "children": [
      "Chỉ bằng luật",
      "Trường hợp cần thiết"
@@ -43,12 +47,23 @@
    },
    {
     "label": "Sáu lý do",
+    "icon": "6️⃣",
     "children": [
      "Quốc phòng, an ninh quốc gia",
      "Trật tự, an toàn xã hội",
      "Đạo đức xã hội",
      "Sức khỏe cộng đồng"
     ]
+   }
+  ],
+  "case": {
+   "q": "Trong dịch bệnh, một sở ra công văn hạn chế đi lại. Có đủ căn cứ không?",
+   "a": "Không. Hạn chế quyền phải dựa trên luật."
+  },
+  "contrast": [
+   {
+    "with": "binh-dang-truoc-phap-luat",
+    "text": "Quyền con người là cả nhóm quyền; bình đẳng là một quyền cụ thể."
    }
   ]
  },

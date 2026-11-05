@@ -23,10 +23,13 @@
   "Kiểm sát viên chịu sự chỉ đạo"
  ],
  "memo": {
-  "hook": "Viện kiểm sát: cấp dưới THEO cấp trên. Tòa án: xét xử ĐỘC LẬP.",
+  "gist": "Viện kiểm sát cấp dưới chịu sự chỉ đạo của cấp trên; khác Tòa án, nơi Thẩm phán xử độc lập.",
+  "kind": "compare",
+  "hook": "Kiểm sát như đội hình có chỉ huy; xét xử như mỗi người tự cầm cân.",
   "tree": [
    {
     "label": "Trong một Viện",
+    "icon": "👤",
     "children": [
      "Viện trưởng lãnh đạo",
      "Kiểm sát viên chịu sự chỉ đạo"
@@ -34,6 +37,7 @@
    },
    {
     "label": "Giữa các cấp",
+    "icon": "🪜",
     "children": [
      "Cấp dưới chịu lãnh đạo cấp trên",
      "Lãnh đạo thống nhất của Viện trưởng tối cao"
@@ -41,9 +45,20 @@
    },
    {
     "label": "Đối lập",
+    "icon": "↔️",
     "children": [
      "Thẩm phán xét xử độc lập"
     ]
+   }
+  ],
+  "case": {
+   "q": "Viện trưởng cấp trên có được chỉ đạo Viện kiểm sát cấp dưới về quan điểm truy tố một vụ án không?",
+   "a": "Được; còn Chánh án cấp trên thì không được chỉ đạo Thẩm phán xử vụ cụ thể."
+  },
+  "contrast": [
+   {
+    "with": "doc-lap-xet-xu",
+    "text": "Viện kiểm sát theo chỉ đạo cấp trên; Tòa án xét xử độc lập."
    }
   ]
  },

@@ -22,10 +22,13 @@
   "phạm tội quả tang"
  ],
  "memo": {
-  "hook": "Miễn trừ KHÔNG phải miễn trách nhiệm: cần Quốc hội ĐỒNG Ý.",
+  "gist": "Không được bắt, khởi tố đại biểu Quốc hội khi chưa được Quốc hội hay Ủy ban thường vụ đồng ý, trừ quả tang.",
+  "kind": "tree",
+  "hook": "Không phải miễn tội, mà là phải hỏi Quốc hội trước khi bắt.",
   "tree": [
    {
     "label": "Không được",
+    "icon": "🚫",
     "children": [
      "Bắt, giam, giữ",
      "Khởi tố"
@@ -33,6 +36,7 @@
    },
    {
     "label": "Trừ khi",
+    "icon": "✅",
     "children": [
      "Quốc hội đồng ý",
      "Ủy ban thường vụ đồng ý khi Quốc hội không họp"
@@ -40,10 +44,21 @@
    },
    {
     "label": "Quả tang",
+    "icon": "⚡",
     "children": [
      "Tạm giữ ngay",
      "Lập tức báo cáo"
     ]
+   }
+  ],
+  "case": {
+   "q": "Cơ quan điều tra muốn khởi tố một đại biểu Quốc hội khi Quốc hội không họp. Cần gì?",
+   "a": "Được Ủy ban thường vụ Quốc hội đồng ý trước."
+  },
+  "contrast": [
+   {
+    "with": "dai-bieu-quoc-hoi",
+    "text": "Miễn trừ là bảo đảm riêng; đại biểu Quốc hội là người được bảo đảm."
    }
   ]
  },

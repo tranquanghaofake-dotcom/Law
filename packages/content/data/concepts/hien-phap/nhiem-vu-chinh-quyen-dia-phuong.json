@@ -24,32 +24,48 @@
   "kiểm tra, giám sát của cấp trên"
  ],
  "memo": {
-  "hook": "Ba vai trò: THI HÀNH, QUYẾT ĐỊNH, chịu GIÁM SÁT.",
+  "gist": "Chính quyền địa phương thi hành luật ở địa phương, quyết định việc địa phương do luật giao, và chịu giám sát của cấp trên.",
+  "kind": "tree",
+  "hook": "Ba vai: làm theo, tự quyết, bị kiểm tra.",
   "tree": [
    {
     "label": "Thi hành",
+    "icon": "⚙️",
     "children": [
      "Hiến pháp, pháp luật ở địa phương"
     ]
    },
    {
     "label": "Quyết định",
+    "icon": "🗳️",
     "children": [
      "Vấn đề địa phương do luật định"
     ]
    },
    {
     "label": "Chịu",
+    "icon": "👁️",
     "children": [
      "Kiểm tra, giám sát của cấp trên"
     ]
    },
    {
     "label": "Nguyên tắc",
+    "icon": "📏",
     "children": [
      "Phân định thẩm quyền trung ương – địa phương",
      "Cấp trên có thể ủy quyền kèm bảo đảm"
     ]
+   }
+  ],
+  "case": {
+   "q": "Luật giao tỉnh quyết định chính sách hỗ trợ đặc thù cho dân. Đây là vai trò nào?",
+   "a": "Quyết định các vấn đề của địa phương do luật định."
+  },
+  "contrast": [
+   {
+    "with": "cap-chinh-quyen-dia-phuong",
+    "text": "Nhiệm vụ là làm gì; cấp chính quyền là gồm cơ quan nào."
    }
   ]
  },

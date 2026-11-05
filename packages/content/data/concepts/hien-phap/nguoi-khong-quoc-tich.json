@@ -22,10 +22,13 @@
   "không có quốc tịch nước ngoài"
  ],
  "memo": {
-  "hook": "KHÔNG quốc tịch Việt Nam và KHÔNG quốc tịch nước ngoài.",
+  "gist": "Người không có quốc tịch Việt Nam và cũng không có quốc tịch nước nào; luật tìm cách hạn chế tình trạng này.",
+  "kind": "tree",
+  "hook": "Người không có nhà để về trên bản đồ thế giới.",
   "tree": [
    {
     "label": "Định nghĩa",
+    "icon": "🚫",
     "children": [
      "Không có quốc tịch Việt Nam",
      "Không có quốc tịch nước ngoài"
@@ -33,16 +36,28 @@
    },
    {
     "label": "Hệ quả",
+    "icon": "⚠️",
     "children": [
      "Không nhà nước nào bảo hộ"
     ]
    },
    {
     "label": "Luật hạn chế",
+    "icon": "🛡️",
     "children": [
      "Con sinh ở Việt Nam, cha mẹ thường trú: có quốc tịch",
      "Được xin nhập quốc tịch"
     ]
+   }
+  ],
+  "case": {
+   "q": "Vợ chồng không quốc tịch thường trú ở Việt Nam sinh con ở Việt Nam. Con có quốc tịch Việt Nam không?",
+   "a": "Có."
+  },
+  "contrast": [
+   {
+    "with": "quyen-co-quoc-tich",
+    "text": "Người không quốc tịch là tình trạng; quyền có quốc tịch là quyền để thoát tình trạng đó."
    }
   ]
  },

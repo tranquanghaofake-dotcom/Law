@@ -5,7 +5,7 @@
  "term": "Nhiệm kỳ Quốc hội",
  "definition": "Nhiệm kỳ của mỗi khoá Quốc hội là năm năm. Sáu mươi ngày trước khi Quốc hội hết nhiệm kỳ, Quốc hội khoá mới phải được bầu xong.",
  "plain": "Nhiệm kỳ 5 năm; khóa mới phải bầu xong 60 ngày trước khi khóa cũ hết nhiệm kỳ (để không có \"khoảng trống quyền lực\"). Trường hợp đặc biệt, Quốc hội có thể rút ngắn hoặc kéo dài nhiệm kỳ nếu ít nhất 2/3 tổng số đại biểu tán thành, theo đề nghị của Ủy ban thường vụ Quốc hội; kéo dài không quá 12 tháng, trừ trường hợp chiến tranh. Nhiệm kỳ Chủ tịch nước, Chính phủ theo nhiệm kỳ Quốc hội.",
- "example": "Nếu cần tổ chức bầu cử khóa mới sớm hơn vì một yêu cầu đặc biệt (ví dụ sắp xếp lại bộ máy), Ủy ban thường vụ Quốc hội đề nghị và Quốc hội quyết định rút ngắn nhiệm kỳ khi có ít nhất 2/3 tổng số đại biểu tán thành (khoản 3 Điều 71).",
+ "example": "Nếu cần bầu khóa mới sớm vì yêu cầu đặc biệt như sắp xếp lại bộ máy, Ủy ban thường vụ đề nghị và Quốc hội quyết định rút ngắn nhiệm kỳ khi có ít nhất hai phần ba tổng số đại biểu tán thành.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1, khoản 2 Điều 71 Hiến pháp 2013",
@@ -24,27 +24,42 @@
   "không quá 12 tháng"
  ],
  "memo": {
-  "hook": "5 NĂM; khóa mới bầu xong trước 60 NGÀY; kéo dài tối đa 12 THÁNG.",
+  "gist": "Nhiệm kỳ Quốc hội 5 năm; có thể rút ngắn hoặc kéo dài tối đa 12 tháng nếu hai phần ba đại biểu tán thành.",
+  "kind": "tree",
+  "hook": "Mẹo năm – sáu mươi – mười hai.",
   "tree": [
    {
     "label": "Nhiệm kỳ",
+    "icon": "📅",
     "children": [
      "Năm năm"
     ]
    },
    {
     "label": "Bầu khóa mới",
+    "icon": "🗳️",
     "children": [
      "Xong 60 ngày trước khi hết nhiệm kỳ"
     ]
    },
    {
     "label": "Rút ngắn, kéo dài",
+    "icon": "↔️",
     "children": [
      "Ít nhất 2/3 tổng số đại biểu",
      "Theo đề nghị Ủy ban thường vụ",
      "Kéo dài không quá 12 tháng, trừ chiến tranh"
     ]
+   }
+  ],
+  "case": {
+   "q": "Muốn rút ngắn nhiệm kỳ Quốc hội cần bao nhiêu phiếu?",
+   "a": "Ít nhất hai phần ba tổng số đại biểu."
+  },
+  "contrast": [
+   {
+    "with": "nhiem-ky-chinh-phu",
+    "text": "Nhiệm kỳ Quốc hội quyết định nhiệm kỳ Chính phủ."
    }
   ]
  },

@@ -24,10 +24,13 @@
   "được ủy nhiệm khi Thủ tướng vắng mặt"
  ],
  "memo": {
-  "hook": "Phó Thủ tướng thay Thủ tướng khi được ỦY NHIỆM, không tự động.",
+  "gist": "Phó Thủ tướng giúp Thủ tướng theo phân công, và chỉ thay Thủ tướng lãnh đạo khi được ủy nhiệm.",
+  "kind": "tree",
+  "hook": "Thay mặt khi được trao gậy, không tự cầm.",
   "tree": [
    {
     "label": "Vị trí",
+    "icon": "👤",
     "children": [
      "Thành viên Chính phủ",
      "Quốc hội phê chuẩn, Chủ tịch nước bổ nhiệm"
@@ -35,21 +38,34 @@
    },
    {
     "label": "Nhiệm vụ",
+    "icon": "📋",
     "children": [
      "Giúp Thủ tướng theo phân công"
     ]
    },
    {
     "label": "Trách nhiệm",
+    "icon": "⚖️",
     "children": [
      "Trước Thủ tướng"
     ]
    },
    {
     "label": "Khi Thủ tướng vắng",
+    "icon": "✋",
     "children": [
      "Một Phó Thủ tướng được ủy nhiệm"
     ]
+   }
+  ],
+  "case": {
+   "q": "Thủ tướng đi công tác nước ngoài. Phó Thủ tướng có tự động chủ trì họp Chính phủ không?",
+   "a": "Không; chỉ khi được Thủ tướng ủy nhiệm."
+  },
+  "contrast": [
+   {
+    "with": "pho-chu-tich-nuoc",
+    "text": "Phó Thủ tướng thay khi được ủy nhiệm; Phó Chủ tịch nước giữ quyền theo Hiến pháp."
    }
   ]
  },

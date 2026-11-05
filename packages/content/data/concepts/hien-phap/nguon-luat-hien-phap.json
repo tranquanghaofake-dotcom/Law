@@ -24,16 +24,20 @@
  ],
  "note": "Thẻ dạng tóm lược quan điểm học thuật, chưa đối chiếu nguyên văn giáo trình; cần Hào đối chiếu trang 1–9 của sách.",
  "memo": {
-  "hook": "Tiêu chí là CÓ CHỨA quy phạm luật Hiến pháp, không phụ thuộc tên gọi.",
+  "gist": "Văn bản nào chứa quy phạm luật Hiến pháp đều là nguồn của ngành, dù tên gọi là gì: Hiến pháp, luật, nghị quyết.",
+  "kind": "tree",
+  "hook": "Xem ruột, không xem nhãn.",
   "tree": [
    {
     "label": "Nguồn chủ yếu",
+    "icon": "📜",
     "children": [
      "Hiến pháp"
     ]
    },
    {
     "label": "Luật",
+    "icon": "📘",
     "children": [
      "Tổ chức bộ máy nhà nước",
      "Bầu cử, Quốc tịch, Trưng cầu ý dân"
@@ -41,15 +45,27 @@
    },
    {
     "label": "Nghị quyết",
+    "icon": "📄",
     "children": [
      "Của Quốc hội"
     ]
    },
    {
     "label": "Văn bản khác",
+    "icon": "➕",
     "children": [
      "Pháp lệnh, nghị quyết Ủy ban thường vụ"
     ]
+   }
+  ],
+  "case": {
+   "q": "Luật Quốc tịch có phải nguồn của ngành luật Hiến pháp không?",
+   "a": "Có."
+  },
+  "contrast": [
+   {
+    "with": "nganh-luat-hien-phap",
+    "text": "Nguồn là văn bản chứa quy phạm; ngành luật là chính các quy phạm."
    }
   ]
  },

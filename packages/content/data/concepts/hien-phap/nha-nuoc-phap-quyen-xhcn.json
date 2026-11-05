@@ -22,21 +22,35 @@
   "thượng tôn pháp luật"
  ],
  "memo": {
-  "hook": "Nhà nước pháp quyền: CHÍNH NHÀ NƯỚC cũng phải theo pháp luật.",
+  "gist": "Nhà nước của Nhân dân, do Nhân dân, vì Nhân dân, và chính Nhà nước cũng phải theo pháp luật.",
+  "kind": "tree",
+  "hook": "Người đặt luật cũng phải đứng dưới luật.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "🇻🇳",
     "children": [
      "Của Nhân dân, do Nhân dân, vì Nhân dân"
     ]
    },
    {
     "label": "Pháp quyền",
+    "icon": "📜",
     "children": [
      "Hoạt động trên cơ sở Hiến pháp và luật",
      "Hiến pháp tối thượng",
      "Bảo đảm quyền con người"
     ]
+   }
+  ],
+  "case": {
+   "q": "Cơ quan thuế muốn thu loại thuế mới bằng công văn. Có được không?",
+   "a": "Không. Phải có luật của Quốc hội."
+  },
+  "contrast": [
+   {
+    "with": "chu-quyen-nhan-dan",
+    "text": "Pháp quyền là pháp luật đứng trên; chủ quyền Nhân dân là quyền lực từ dân."
    }
   ]
  },

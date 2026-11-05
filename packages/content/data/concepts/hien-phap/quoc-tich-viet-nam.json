@@ -21,16 +21,20 @@
   "quyền, nghĩa vụ hai chiều"
  ],
  "memo": {
-  "hook": "Quốc tịch là SỢI DÂY pháp lý HAI CHIỀU.",
+  "gist": "Quốc tịch là sợi dây pháp lý hai chiều: Nhà nước bảo hộ công dân, công dân làm nghĩa vụ với Nhà nước.",
+  "kind": "compare",
+  "hook": "Sợi dây buộc hai đầu: một đầu che chở, một đầu gánh vác.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "🔗",
     "children": [
      "Quan hệ gắn bó cá nhân – Nhà nước"
     ]
    },
    {
     "label": "Công dân",
+    "icon": "👤",
     "children": [
      "Quyền với Nhà nước",
      "Nghĩa vụ với Nhà nước"
@@ -38,10 +42,21 @@
    },
    {
     "label": "Nhà nước",
+    "icon": "🏛️",
     "children": [
      "Quyền với công dân",
      "Trách nhiệm, ví dụ bảo hộ"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công dân Việt Nam bị bắt giữ trái phép ở nước ngoài. Nhà nước có trách nhiệm gì?",
+   "a": "Bảo hộ qua cơ quan đại diện."
+  },
+  "contrast": [
+   {
+    "with": "cong-dan-viet-nam",
+    "text": "Quốc tịch là sợi dây; công dân là người cầm sợi dây đó."
    }
   ]
  },
