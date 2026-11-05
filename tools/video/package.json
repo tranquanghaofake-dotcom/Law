@@ -11,7 +11,7 @@
     "capture": "node scripts/capture.mjs",
     "music": "python3 scripts/phonk.py public/music/nhac-nhap.wav 111 37 3",
     "render": "npm run stats && remotion render GioiThieu out/gioi-thieu-dang-tiktok.mp4 --codec=h264 --crf=16",
-    "render:nhap": "npm run stats && npm run music && remotion render GioiThieu out/gioi-thieu-nhac-nhap.mp4 --codec=h264 --crf=20 --props={\"music\":true}",
+    "render:nhap": "npm run music && ffmpeg -y -loglevel error -i out/gioi-thieu-dang-tiktok.mp4 -i public/music/nhac-nhap.wav -filter_complex \"[1:a]volume=0.8[m];[0:a][m]amix=inputs=2:normalize=0[a]\" -map 0:v -map \"[a]\" -c:v copy -c:a aac -b:a 256k -shortest out/gioi-thieu-nhac-nhap.mp4",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

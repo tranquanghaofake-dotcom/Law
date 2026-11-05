@@ -18,7 +18,7 @@ npm install
 npm run capture       # quay/chụp asset từ web → public/cap/
 npm run studio        # xem trước
 npm run render        # bản ĐĂNG: không nhạc, chỉ hiệu ứng âm thanh → out/gioi-thieu-dang-tiktok.mp4
-npm run render:nhap   # bản NHÁP: kèm nhạc mẫu 111 BPM để duyệt nhịp → out/gioi-thieu-nhac-nhap.mp4
+npm run render:nhap   # bản NHÁP: trộn nhạc mẫu 111 BPM vào bản đăng → out/gioi-thieu-nhac-nhap.mp4 (chạy sau render)
 ```
 
 ## Đăng TikTok
