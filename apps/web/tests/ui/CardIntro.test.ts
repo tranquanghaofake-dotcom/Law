@@ -37,10 +37,13 @@ describe('CardIntro ba lớp', () => {
     expect(container.querySelector('.memo-hook')?.textContent).toContain('Cọc để GIỮ hợp đồng.');
     expect(container.querySelector('p.plain')).toBeNull();
   });
-  it('khái niệm có ghi chú cập nhật luật thì mở sẵn nguyên văn và ghi chú', () => {
+  it('khái niệm có ghi chú luật mới: chỉ hiện nhãn "⚠ Luật đã thay đổi", bấm mới mở nguyên văn và ghi chú', async () => {
     const { container } = render(CardIntro, { props: { concept: { ...concept, note: 'Có thay đổi từ 01/07/2025.' }, item, rng, onanswer: vi.fn() } });
+    expect(container.querySelector('blockquote')).toBeNull();
+    expect(container.textContent).not.toContain('Có thay đổi từ 01/07/2025.');
+    await fireEvent.click(screen.getByRole('button', { name: /Luật đã thay đổi/ }));
     expect(container.querySelector('blockquote')).not.toBeNull();
-    expect(container.textContent).toContain('Cập nhật luật');
+    expect(container.textContent).toContain('Có thay đổi từ 01/07/2025.');
   });
   it('"Đã hiểu" và Enter gửi correct: true đúng một lần', async () => {
     const onanswer = vi.fn();

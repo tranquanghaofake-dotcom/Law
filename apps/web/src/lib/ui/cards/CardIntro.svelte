@@ -13,8 +13,8 @@
   // Khái niệm có ghi chú cập nhật luật thì mở sẵn lớp 3 để không bỏ sót.
   // svelte-ignore state_referenced_locally
   const layers = introLayers(concept);
-  // svelte-ignore state_referenced_locally
-  let open = $state(!!concept.note);
+  // Ghi chú luật mới không còn tự mở (khối khó đọc nhất): chỉ hiện nhãn "⚠ Luật đã thay đổi", bấm mới mở.
+  let open = $state(false);
   function ok() { if (done) return; done = true; onanswer({ correct: true, elapsedMs: Date.now() - start }); }
   function onkey(e: KeyboardEvent) {
     if (isTypingTarget(e)) return;
@@ -33,6 +33,7 @@
   <MemoCard {concept} />
   {#if !concept.memo}<p class="plain">{layers.plain}</p>{/if}
   <p class="intro-example"><b>Ví dụ:</b> {layers.example}</p>
+  {#if concept.note && !open}<button class="intro-changed" type="button" aria-controls="intro-verbatim" onclick={() => (open = true)}><span aria-hidden="true">⚠</span> Luật đã thay đổi</button>{/if}
   <button class="btn ghost plain intro-toggle" type="button" aria-expanded={open} aria-controls="intro-verbatim" onclick={() => (open = !open)}>
     {open ? 'Ẩn nguyên văn điều luật' : 'Xem nguyên văn điều luật'}
   </button>
