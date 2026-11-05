@@ -5,7 +5,7 @@
  "term": "Thôi quốc tịch Việt Nam",
  "definition": "Công dân Việt Nam có đơn xin thôi quốc tịch Việt Nam để nhập quốc tịch nước ngoài thì có thể được thôi quốc tịch Việt Nam. (…) Cán bộ, công chức và những người đang phục vụ trong lực lượng vũ trang nhân dân Việt Nam không được thôi quốc tịch Việt Nam.",
  "plain": "Thôi quốc tịch là việc TỰ NGUYỆN xin chấm dứt quốc tịch (thường để nhập quốc tịch nước khác), khác TƯỚC quốc tịch (chế tài). Có 3 mức: được thôi; CHƯA được thôi (đang nợ thuế hoặc nghĩa vụ tài sản, đang bị truy cứu hình sự, đang chấp hành bản án, đang bị tạm giam, đang bị áp dụng biện pháp xử lý hành chính); KHÔNG được thôi (phương hại lợi ích quốc gia; cán bộ, công chức, lực lượng vũ trang).",
- "example": "Anh T đang bị truy cứu trách nhiệm hình sự ở Việt Nam, xin thôi quốc tịch để nhập quốc tịch Canada: CHƯA được thôi (điểm b khoản 2 Điều 27) cho đến khi hết tình trạng đó.",
+ "example": "Anh T đang bị truy cứu trách nhiệm hình sự ở Việt Nam, xin thôi quốc tịch để nhập quốc tịch Canada: chưa được thôi cho đến khi hết tình trạng đó (điểm b khoản 2 Điều 27).",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1, khoản 4 Điều 27 Luật Quốc tịch Việt Nam 2008 (sửa đổi, bổ sung năm 2014, 2025)",
@@ -23,16 +23,20 @@
   "cán bộ, công chức, lực lượng vũ trang"
  ],
  "memo": {
-  "hook": "THÔI là tự nguyện, TƯỚC là chế tài; ba mức: được, chưa được, không được.",
+  "gist": "Thôi quốc tịch là tự nguyện xin bỏ; người đang bị truy cứu hay nợ thuế thì chưa được thôi.",
+  "kind": "tree",
+  "hook": "Muốn rời nhà phải trả hết nợ trong nhà.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "🙋",
     "children": [
      "Tự nguyện xin chấm dứt"
     ]
    },
    {
     "label": "Chưa được thôi",
+    "icon": "⏸️",
     "children": [
      "Nợ thuế, nghĩa vụ tài sản",
      "Đang bị truy cứu hình sự",
@@ -41,11 +45,22 @@
    },
    {
     "label": "Không được thôi",
+    "icon": "⛔",
     "children": [
      "Phương hại lợi ích quốc gia",
      "Cán bộ, công chức",
      "Lực lượng vũ trang"
     ]
+   }
+  ],
+  "case": {
+   "q": "Anh T đang bị truy cứu trách nhiệm hình sự, xin thôi quốc tịch để nhập quốc tịch Canada. Có được không?",
+   "a": "Chưa được cho đến khi hết tình trạng đó."
+  },
+  "contrast": [
+   {
+    "with": "tuoc-quoc-tich-viet-nam",
+    "text": "Thôi là tự nguyện xin; tước là bị Nhà nước lấy đi."
    }
   ]
  },

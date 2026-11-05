@@ -23,10 +23,13 @@
   "nghị quyết Hội đồng nhân dân tỉnh chỉ đình chỉ"
  ],
  "memo": {
-  "hook": "Văn bản hành chính: đình chỉ HOẶC bãi bỏ. Nghị quyết HĐND tỉnh: CHỈ đình chỉ.",
+  "gist": "Thủ tướng được đình chỉ hoặc bãi bỏ văn bản hành chính trái luật; nghị quyết Hội đồng nhân dân tỉnh thì chỉ đình chỉ.",
+  "kind": "compare",
+  "hook": "Văn bản của cấp dưới mình thì xé được; của cơ quan dân cử thì chỉ giữ lại.",
   "tree": [
    {
     "label": "Đình chỉ hoặc bãi bỏ",
+    "icon": "✂️",
     "children": [
      "Văn bản Bộ trưởng",
      "Văn bản Ủy ban nhân dân tỉnh",
@@ -35,6 +38,7 @@
    },
    {
     "label": "Chỉ đình chỉ",
+    "icon": "⏸️",
     "children": [
      "Nghị quyết Hội đồng nhân dân tỉnh",
      "Đề nghị Ủy ban thường vụ bãi bỏ"
@@ -42,9 +46,20 @@
    },
    {
     "label": "Điều kiện",
+    "icon": "📏",
     "children": [
      "Trái Hiến pháp, luật, văn bản cấp trên"
     ]
+   }
+  ],
+  "case": {
+   "q": "Hội đồng nhân dân tỉnh ra nghị quyết thu phí trái luật. Thủ tướng có tự bãi bỏ được không?",
+   "a": "Không; chỉ đình chỉ và đề nghị Ủy ban thường vụ bãi bỏ."
+  },
+  "contrast": [
+   {
+    "with": "van-ban-chinh-phu",
+    "text": "Bài này nói Thủ tướng kiểm soát văn bản khác; bài kia nói văn bản Chính phủ ban hành."
    }
   ]
  },

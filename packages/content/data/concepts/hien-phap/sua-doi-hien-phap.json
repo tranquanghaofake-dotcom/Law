@@ -5,7 +5,7 @@
  "term": "Thủ tục làm, sửa đổi Hiến pháp",
  "definition": "Chủ tịch nước, Ủy ban thường vụ Quốc hội, Chính phủ hoặc ít nhất một phần ba tổng số đại biểu Quốc hội có quyền đề nghị làm Hiến pháp, sửa đổi Hiến pháp. Quốc hội quyết định việc làm Hiến pháp, sửa đổi Hiến pháp khi có ít nhất hai phần ba tổng số đại biểu Quốc hội biểu quyết tán thành.",
  "plain": "Sửa Hiến pháp khó hơn sửa luật: chỉ bốn chủ thể được đề nghị; Quốc hội phải đạt 2/3 tổng số đại biểu để quyết định sửa và cũng 2/3 để thông qua; có Ủy ban dự thảo và lấy ý kiến Nhân dân.",
- "example": "Năm 2025, Quốc hội thông qua Nghị quyết 203/2025/QH15 sửa đổi 5 điều, khoản của Hiến pháp 2013 với 470/470 đại biểu có mặt tán thành, sau khi lấy ý kiến Nhân dân từ 6/5 đến 5/6/2025.",
+ "example": "Năm 2025, Quốc hội thông qua Nghị quyết 203/2025 của Quốc hội khóa 15 sửa đổi 5 điều, khoản của Hiến pháp 2013 với 470/470 đại biểu có mặt tán thành, sau khi lấy ý kiến Nhân dân từ 6/5 đến 5/6/2025.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1 Điều 120 Hiến pháp 2013",
@@ -23,10 +23,13 @@
   "lấy ý kiến Nhân dân"
  ],
  "memo": {
-  "hook": "1/3 đại biểu được ĐỀ NGHỊ; cần 2/3 để QUYẾT ĐỊNH.",
+  "gist": "Từ một phần ba đại biểu được đề nghị sửa Hiến pháp; phải có từ hai phần ba tán thành mới thông qua.",
+  "kind": "steps",
+  "hook": "Như sửa nội quy chung cư: ít người được nêu ý, nhưng đông người mới được đổi.",
   "tree": [
    {
     "label": "Ai đề nghị",
+    "icon": "🙋",
     "children": [
      "Chủ tịch nước",
      "Ủy ban thường vụ Quốc hội",
@@ -36,16 +39,28 @@
    },
    {
     "label": "Quyết định",
+    "icon": "🗳️",
     "children": [
      "Ít nhất 2/3 tổng số đại biểu"
     ]
    },
    {
     "label": "Quy trình",
+    "icon": "🔁",
     "children": [
      "Ủy ban dự thảo",
      "Lấy ý kiến Nhân dân"
     ]
+   }
+  ],
+  "case": {
+   "q": "Muốn Quốc hội làm Hiến pháp mới, cần bao nhiêu đại biểu đề nghị?",
+   "a": "Ít nhất một phần ba tổng số đại biểu."
+  },
+  "contrast": [
+   {
+    "with": "trung-cau-y-dan-hien-phap",
+    "text": "Sửa đổi là thủ tục ở Quốc hội; trưng cầu ý dân là hỏi toàn dân, không bắt buộc."
    }
   ]
  },

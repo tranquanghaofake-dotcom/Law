@@ -23,10 +23,13 @@
   "không bóc mở, thu giữ trái luật"
  ],
  "memo": {
-  "hook": "Riêng tư, bí mật, thư tín: không ai được bóc mở, thu giữ TRÁI LUẬT.",
+  "gist": "Đời sống riêng, bí mật cá nhân, thư tín, tin nhắn được bảo vệ; không ai được bóc mở, thu giữ trái luật.",
+  "kind": "tree",
+  "hook": "Cửa phòng riêng chỉ mở bằng chìa của luật.",
   "tree": [
    {
     "label": "Bảo vệ",
+    "icon": "🔒",
     "children": [
      "Đời sống riêng tư",
      "Bí mật cá nhân, gia đình",
@@ -35,16 +38,28 @@
    },
    {
     "label": "Thông tin",
+    "icon": "🤫",
     "children": [
      "Được bảo đảm an toàn"
     ]
    },
    {
     "label": "Liên lạc",
+    "icon": "✉️",
     "children": [
      "Thư tín, điện thoại, điện tín",
      "Các hình thức trao đổi riêng tư khác"
     ]
+   }
+  ],
+  "case": {
+   "q": "Một người tự ý đọc và đăng tin nhắn riêng của người khác lên mạng. Có vi phạm không?",
+   "a": "Có, xâm phạm bí mật trao đổi thông tin riêng tư."
+  },
+  "contrast": [
+   {
+    "with": "bat-kha-xam-pham-than-the",
+    "text": "Riêng tư bảo vệ đời sống, thư tín; bất khả xâm phạm thân thể bảo vệ cơ thể."
    }
   ]
  },

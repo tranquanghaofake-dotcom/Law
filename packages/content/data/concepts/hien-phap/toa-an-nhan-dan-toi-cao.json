@@ -23,22 +23,27 @@
   "án lệ"
  ],
  "memo": {
-  "hook": "Ba vai trò: XÉT XỬ cao nhất, GIÁM ĐỐC xét xử, THỐNG NHẤT áp dụng pháp luật.",
+  "gist": "Cơ quan xét xử cao nhất, giám đốc việc xét xử của các Tòa và bảo đảm áp dụng pháp luật thống nhất.",
+  "kind": "tree",
+  "hook": "Đỉnh tháp tư pháp, người giữ thước đo chung.",
   "tree": [
    {
     "label": "Xét xử",
+    "icon": "⚖️",
     "children": [
      "Cơ quan xét xử cao nhất"
     ]
    },
    {
     "label": "Giám đốc",
+    "icon": "👁️",
     "children": [
      "Việc xét xử của Tòa án khác"
     ]
    },
    {
     "label": "Thống nhất pháp luật",
+    "icon": "📏",
     "children": [
      "Tổng kết thực tiễn",
      "Án lệ"
@@ -46,10 +51,21 @@
    },
    {
     "label": "Chánh án",
+    "icon": "👤",
     "children": [
      "Quốc hội bầu",
      "Nhiệm kỳ theo Quốc hội"
     ]
+   }
+  ],
+  "case": {
+   "q": "Hội đồng Thẩm phán công bố án lệ để các Tòa áp dụng thống nhất. Đây là vai trò gì?",
+   "a": "Bảo đảm áp dụng thống nhất pháp luật."
+  },
+  "contrast": [
+   {
+    "with": "toa-an-vi-tri",
+    "text": "Tòa tối cao là cấp cao nhất; vị trí Tòa án nói chung cả hệ thống."
    }
   ]
  },

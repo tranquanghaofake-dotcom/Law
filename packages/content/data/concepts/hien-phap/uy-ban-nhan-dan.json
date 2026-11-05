@@ -24,32 +24,48 @@
   "hai chiều trách nhiệm"
  ],
  "memo": {
-  "hook": "Ủy ban nhân dân có HAI TƯ CÁCH, chịu trách nhiệm HAI CHIỀU.",
+  "gist": "Do Hội đồng nhân dân bầu, vừa là cơ quan chấp hành của Hội đồng, vừa là cơ quan hành chính địa phương.",
+  "kind": "tree",
+  "hook": "Một người hai áo: áo của Hội đồng địa phương và áo của bộ máy hành chính.",
   "tree": [
    {
     "label": "Hình thành",
+    "icon": "🗳️",
     "children": [
      "Hội đồng nhân dân cùng cấp bầu"
     ]
    },
    {
     "label": "Tư cách 1",
+    "icon": "1️⃣",
     "children": [
      "Cơ quan chấp hành của Hội đồng nhân dân"
     ]
    },
    {
     "label": "Tư cách 2",
+    "icon": "2️⃣",
     "children": [
      "Cơ quan hành chính nhà nước ở địa phương"
     ]
    },
    {
     "label": "Chịu trách nhiệm",
+    "icon": "↕️",
     "children": [
      "Trước Hội đồng nhân dân",
      "Trước hành chính cấp trên"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ủy ban nhân dân xã vừa làm theo nghị quyết Hội đồng xã, vừa theo chỉ đạo của tỉnh. Vì sao?",
+   "a": "Vì Ủy ban có hai tư cách và chịu trách nhiệm hai chiều."
+  },
+  "contrast": [
+   {
+    "with": "hoi-dong-nhan-dan",
+    "text": "Ủy ban thi hành; Hội đồng nhân dân quyết định."
    }
   ]
  },

@@ -5,7 +5,7 @@
  "term": "Tước quốc tịch Việt Nam",
  "definition": "Công dân Việt Nam cư trú ở nước ngoài có thể bị tước quốc tịch Việt Nam, nếu có hành vi gây phương hại nghiêm trọng đến nền độc lập dân tộc, đến sự nghiệp xây dựng và bảo vệ Tổ quốc Việt Nam hoặc đến uy tín của nước Cộng hòa xã hội chủ nghĩa Việt Nam.",
  "plain": "Tước quốc tịch là CHẾ TÀI, ngoại lệ của nguyên tắc \"công dân không bị tước quốc tịch\" (Điều 2). Chỉ áp dụng với: (1) công dân CƯ TRÚ Ở NƯỚC NGOÀI; hoặc (2) người đã NHẬP quốc tịch Việt Nam dù ở trong hay ngoài nước; khi có hành vi gây phương hại NGHIÊM TRỌNG đến độc lập dân tộc, xây dựng và bảo vệ Tổ quốc, uy tín Nhà nước. Công dân Việt Nam gốc đang cư trú trong nước không bị tước quốc tịch.",
- "example": "Một công dân Việt Nam gốc đang sống ở Hà Nội phạm tội nghiêm trọng: bị xử lý hình sự, KHÔNG bị tước quốc tịch, vì khoản 1 Điều 31 chỉ áp dụng với công dân cư trú ở nước ngoài (hoặc người đã nhập quốc tịch).",
+ "example": "Một công dân Việt Nam gốc đang sống ở Hà Nội phạm tội nghiêm trọng: bị xử lý hình sự, không bị tước quốc tịch, vì tước chỉ áp dụng với công dân cư trú ở nước ngoài hoặc người đã nhập quốc tịch.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1 Điều 31 Luật Quốc tịch Việt Nam 2008 (sửa đổi, bổ sung năm 2014, 2025)",
@@ -24,10 +24,13 @@
   "chế tài"
  ],
  "memo": {
-  "hook": "Tước là CHẾ TÀI; công dân gốc đang ở TRONG NƯỚC không bị tước.",
+  "gist": "Chế tài với công dân ở nước ngoài gây hại nghiêm trọng cho Nhà nước; người đang ở trong nước không bị tước.",
+  "kind": "tree",
+  "hook": "Thẻ căn cước chỉ bị thu khi phản bội từ xa.",
   "tree": [
    {
     "label": "Đối tượng",
+    "icon": "👤",
     "children": [
      "Công dân cư trú ở nước ngoài",
      "Người đã nhập quốc tịch Việt Nam"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Hành vi",
+    "icon": "⚠️",
     "children": [
      "Phương hại nghiêm trọng độc lập dân tộc",
      "Hại xây dựng, bảo vệ Tổ quốc",
@@ -43,9 +47,20 @@
    },
    {
     "label": "Phân biệt",
+    "icon": "↔️",
     "children": [
      "Khác thôi quốc tịch tự nguyện"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công dân Việt Nam gốc ở Hà Nội phạm tội nghiêm trọng. Có bị tước quốc tịch không?",
+   "a": "Không; chỉ bị xử lý hình sự."
+  },
+  "contrast": [
+   {
+    "with": "thoi-quoc-tich-viet-nam",
+    "text": "Tước là Nhà nước lấy đi; thôi là tự xin bỏ."
    }
   ]
  },

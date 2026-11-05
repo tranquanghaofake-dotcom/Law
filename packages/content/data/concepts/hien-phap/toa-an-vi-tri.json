@@ -23,10 +23,13 @@
   "bảo vệ công lý"
  ],
  "memo": {
-  "hook": "CHỈ Tòa án mới xét xử; nhiệm vụ là BẢO VỆ CÔNG LÝ.",
+  "gist": "Tòa án là cơ quan xét xử, thực hiện quyền tư pháp, có nhiệm vụ bảo vệ công lý, quyền con người.",
+  "kind": "tree",
+  "hook": "Chỉ một nơi được gõ búa phân xử.",
   "tree": [
    {
     "label": "Vị trí",
+    "icon": "🏛️",
     "children": [
      "Cơ quan xét xử",
      "Thực hiện quyền tư pháp"
@@ -34,6 +37,7 @@
    },
    {
     "label": "Nhiệm vụ",
+    "icon": "⚖️",
     "children": [
      "Bảo vệ công lý",
      "Bảo vệ quyền con người, quyền công dân",
@@ -42,10 +46,21 @@
    },
    {
     "label": "Hệ thống",
+    "icon": "🪜",
     "children": [
      "Tòa án nhân dân tối cao",
      "Các Tòa án khác do luật định"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ủy ban nhân dân có được xử tranh chấp hợp đồng giữa hai công ty không?",
+   "a": "Không. Chỉ Tòa án xét xử."
+  },
+  "contrast": [
+   {
+    "with": "vien-kiem-sat-chuc-nang",
+    "text": "Tòa án xét xử; Viện kiểm sát công tố và kiểm sát."
    }
   ]
  },

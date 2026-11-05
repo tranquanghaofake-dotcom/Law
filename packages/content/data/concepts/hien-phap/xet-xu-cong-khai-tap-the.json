@@ -22,16 +22,20 @@
   "tập thể, đa số"
  ],
  "memo": {
-  "hook": "CÔNG KHAI là nguyên tắc, xử KÍN là ngoại lệ; TẬP THỂ, quyết theo ĐA SỐ.",
+  "gist": "Tòa xét xử công khai, trừ trường hợp đặc biệt được xử kín; xử tập thể và quyết định theo đa số.",
+  "kind": "compare",
+  "hook": "Cửa mở là thường lệ, cửa đóng là ngoại lệ.",
   "tree": [
    {
     "label": "Công khai",
+    "icon": "👀",
     "children": [
      "Nguyên tắc"
     ]
    },
    {
     "label": "Xét xử kín",
+    "icon": "🔒",
     "children": [
      "Bí mật nhà nước",
      "Thuần phong mỹ tục",
@@ -41,10 +45,21 @@
    },
    {
     "label": "Tập thể",
+    "icon": "👥",
     "children": [
      "Quyết định theo đa số",
      "Trừ thủ tục rút gọn"
     ]
+   }
+  ],
+  "case": {
+   "q": "Vụ xâm hại tình dục người dưới 18 tuổi có thể xử kín không?",
+   "a": "Có thể, để bảo vệ người chưa thành niên."
+  },
+  "contrast": [
+   {
+    "with": "hoi-tham-tham-gia-xet-xu",
+    "text": "Công khai, tập thể là cách xử; Hội thẩm là ai tham gia xử."
    }
   ]
  },

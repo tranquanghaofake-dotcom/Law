@@ -24,10 +24,13 @@
   "giám sát tối cao"
  ],
  "memo": {
-  "hook": "Hai CAO NHẤT, ba chức năng; cao nhất không phải làm thay.",
+  "gist": "Cơ quan đại biểu cao nhất của Nhân dân, quyền lực cao nhất: làm luật, quyết việc lớn, giám sát tối cao.",
+  "kind": "tree",
+  "hook": "Ba việc: làm luật, quyết việc lớn, canh chừng cả bộ máy.",
   "tree": [
    {
     "label": "Tính chất",
+    "icon": "🏛️",
     "children": [
      "Cơ quan đại biểu cao nhất",
      "Cơ quan quyền lực nhà nước cao nhất"
@@ -35,11 +38,22 @@
    },
    {
     "label": "Chức năng",
+    "icon": "⚙️",
     "children": [
      "Lập hiến, lập pháp",
      "Quyết định vấn đề quan trọng",
      "Giám sát tối cao"
     ]
+   }
+  ],
+  "case": {
+   "q": "Quốc hội có trực tiếp xử một vụ tranh chấp đất đai không?",
+   "a": "Không; xét xử là việc của Tòa án."
+  },
+  "contrast": [
+   {
+    "with": "chinh-phu-vi-tri",
+    "text": "Quốc hội làm luật, giám sát; Chính phủ thi hành."
    }
   ]
  },

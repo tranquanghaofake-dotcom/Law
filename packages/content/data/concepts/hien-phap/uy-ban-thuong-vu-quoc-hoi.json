@@ -24,16 +24,20 @@
   "không đồng thời là thành viên Chính phủ"
  ],
  "memo": {
-  "hook": "Cơ quan THƯỜNG TRỰC; thành viên KHÔNG kiêm thành viên Chính phủ.",
+  "gist": "Cơ quan thường trực của Quốc hội, ra pháp lệnh, giải thích luật; thành viên không kiêm thành viên Chính phủ.",
+  "kind": "tree",
+  "hook": "Như ban trực của một hội lớn khi hội viên đã về nhà.",
   "tree": [
    {
     "label": "Vị trí",
+    "icon": "🏛️",
     "children": [
      "Cơ quan thường trực của Quốc hội"
     ]
    },
    {
     "label": "Thành phần",
+    "icon": "👥",
     "children": [
      "Chủ tịch Quốc hội",
      "Các Phó Chủ tịch",
@@ -42,6 +46,7 @@
    },
    {
     "label": "Việc chính",
+    "icon": "📋",
     "children": [
      "Ra pháp lệnh",
      "Giải thích Hiến pháp, luật",
@@ -50,9 +55,20 @@
    },
    {
     "label": "Hạn chế",
+    "icon": "🚫",
     "children": [
      "Không đồng thời là thành viên Chính phủ"
     ]
+   }
+  ],
+  "case": {
+   "q": "Có cách hiểu khác nhau về một điều luật. Ai giải thích luật?",
+   "a": "Ủy ban thường vụ Quốc hội."
+  },
+  "contrast": [
+   {
+    "with": "vi-tri-quoc-hoi",
+    "text": "Ủy ban thường vụ là cơ quan thường trực; Quốc hội là cơ quan quyền lực cao nhất."
    }
   ]
  },

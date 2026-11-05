@@ -5,7 +5,7 @@
  "term": "Nguyên tắc xác định người trúng cử",
  "definition": "Kết quả bầu cử được tính trên số phiếu bầu hợp lệ và chỉ được công nhận khi đã có quá một nửa tổng số cử tri trong danh sách cử tri tại đơn vị bầu cử tham gia bầu cử, trừ trường hợp quy định tại khoản 4 Điều 80 của Luật này. Người trúng cử phải là người ứng cử đạt số phiếu bầu quá một nửa tổng số phiếu bầu hợp lệ.",
  "plain": "Hai ngưỡng \"quá một nửa\": (1) SỐ CỬ TRI đi bầu phải quá 1/2 tổng số cử tri trong danh sách thì kết quả mới được công nhận (không đạt thì bầu cử lại); (2) NGƯỜI TRÚNG CỬ phải được quá 1/2 số phiếu hợp lệ. Nhiều người cùng quá 1/2 hơn số ghế thì lấy người nhiều phiếu hơn; bằng phiếu ở cuối danh sách thì người NHIỀU TUỔI hơn trúng. Chưa đủ số đại biểu: bầu cử thêm trong 07 ngày, chỉ chọn trong số người không trúng cử lần đầu.",
- "example": "Đơn vị có 10.000 cử tri, 9.000 người đi bầu, 8.800 phiếu hợp lệ, bầu 2 đại biểu. A được 6.000, B 5.000, C 4.500 phiếu: A và B đều quá 4.400 (1/2 phiếu hợp lệ) nên trúng cử; C dù quá nửa nhưng ít phiếu hơn.",
+ "example": "Đơn vị có 10.000 cử tri, 9.000 người đi bầu, 8.800 phiếu hợp lệ, bầu 2 đại biểu. A được 6.000, B 5.000, C 4.500: A và B đều quá nửa nên trúng; C quá nửa nhưng ít phiếu hơn.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1, khoản 2 Điều 78 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (sửa đổi, bổ sung năm 2025)",
@@ -24,10 +24,13 @@
  ],
  "note": "Luật 83/2025/QH15 (hiệu lực 01/7/2025) rút thời hạn tổ chức bầu cử thêm, bầu cử lại từ \"15 ngày\" xuống \"07 ngày\" sau ngày bầu cử đầu tiên (Điều 79, 80, 81). Giáo trình in trước 2025 còn ghi 15 ngày.",
  "memo": {
-  "hook": "Hai lần QUÁ MỘT NỬA: cử tri đi bầu và phiếu hợp lệ.",
+  "gist": "Cuộc bầu hợp lệ khi quá nửa cử tri đi bầu; người trúng cử phải được quá nửa phiếu hợp lệ và nhiều phiếu hơn.",
+  "kind": "steps",
+  "hook": "Như cuộc thi hai vòng: đủ khán giả mới tính, đủ điểm mới vào chung kết.",
   "tree": [
    {
     "label": "Cử tri đi bầu",
+    "icon": "👥",
     "children": [
      "Quá 1/2 tổng số cử tri",
      "Không đạt: bầu cử lại"
@@ -35,21 +38,34 @@
    },
    {
     "label": "Người trúng cử",
+    "icon": "🏆",
     "children": [
      "Quá 1/2 số phiếu hợp lệ"
     ]
    },
    {
     "label": "Bằng phiếu",
+    "icon": "⚖️",
     "children": [
      "Người nhiều tuổi hơn trúng"
     ]
    },
    {
     "label": "Chưa đủ đại biểu",
+    "icon": "➕",
     "children": [
      "Bầu cử thêm trong 07 ngày"
     ]
+   }
+  ],
+  "case": {
+   "q": "Bầu 2 đại biểu; 8.800 phiếu hợp lệ. A 6.000, B 5.000, C 4.500 phiếu. Ai trúng?",
+   "a": "A và B; C quá nửa nhưng ít phiếu hơn."
+  },
+  "contrast": [
+   {
+    "with": "don-vi-bau-cu",
+    "text": "Xác định trúng cử là đếm phiếu; đơn vị bầu cử là vùng bầu."
    }
   ]
  },

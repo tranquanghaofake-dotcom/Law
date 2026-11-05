@@ -24,10 +24,13 @@
  ],
  "note": "Nghị quyết 203/2025/QH15 (hiệu lực 16/6/2025) sửa câu chữ: trình tự, thủ tục nay \"do Quốc hội quy định\" (bản 2013: \"do luật định\"); quy định chuyển từ khoản 2 sang khoản 3 Điều 110.",
  "memo": {
-  "hook": "Phải LẤY Ý KIẾN Nhân dân địa phương.",
+  "gist": "Lập, giải thể, nhập, chia đơn vị hành chính phải lấy ý kiến Nhân dân địa phương, rồi cơ quan có quyền quyết.",
+  "kind": "steps",
+  "hook": "Vẽ lại bản đồ quê thì phải hỏi người ở quê.",
   "tree": [
    {
     "label": "Điều kiện",
+    "icon": "✅",
     "children": [
      "Lấy ý kiến Nhân dân địa phương",
      "Trình tự do Quốc hội quy định"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Thẩm quyền",
+    "icon": "🏛️",
     "children": [
      "Quốc hội: cấp tỉnh",
      "Ủy ban thường vụ: dưới tỉnh"
@@ -42,11 +46,22 @@
    },
    {
     "label": "Áp dụng",
+    "icon": "🗺️",
     "children": [
      "Thành lập, giải thể",
      "Nhập, chia",
      "Điều chỉnh địa giới"
     ]
+   }
+  ],
+  "case": {
+   "q": "Trước khi sáp nhập hai tỉnh cần làm gì?",
+   "a": "Lấy ý kiến Nhân dân địa phương, rồi Quốc hội quyết định."
+  },
+  "contrast": [
+   {
+    "with": "don-vi-hanh-chinh-hai-cap",
+    "text": "Thành lập, giải thể là thủ tục thay đổi; hai cấp là mô hình hiện hành."
    }
   ]
  },

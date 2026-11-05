@@ -25,16 +25,20 @@
  ],
  "note": "Luật 79/2025/QH15 (hiệu lực 01/7/2025) sửa tên Điều 23 và các khoản 1, 3, 4, 5. Theo khoản 1 hiện hành, người đã mất quốc tịch Việt Nam có đơn thì \"được xem xét giải quyết\" trở lại. Giáo trình in trước 2025 trình bày theo khoản 1 cũ, cần đối chiếu.",
  "memo": {
-  "hook": "Dành cho người ĐÃ TỪNG có quốc tịch Việt Nam.",
+  "gist": "Người từng có quốc tịch Việt Nam đã mất có thể xin trở lại, có thể giữ quốc tịch nước ngoài nếu đủ điều kiện.",
+  "kind": "tree",
+  "hook": "Cửa về nhà luôn mở cho người từng sống ở đó.",
   "tree": [
    {
     "label": "Ai",
+    "icon": "🙋",
     "children": [
      "Người đã mất quốc tịch Việt Nam"
     ]
    },
    {
     "label": "Không được",
+    "icon": "🚫",
     "children": [
      "Phương hại lợi ích quốc gia",
      "Bị tước: phải sau 05 năm"
@@ -42,15 +46,27 @@
    },
    {
     "label": "Hệ quả",
+    "icon": "🔁",
     "children": [
      "Lấy lại tên Việt Nam"
     ]
    },
    {
     "label": "Giữ quốc tịch nước ngoài",
+    "icon": "🔀",
     "children": [
      "Chủ tịch nước cho phép"
     ]
+   }
+  ],
+  "case": {
+   "q": "Bà H thôi quốc tịch năm 2010 để nhập quốc tịch Đức, nay muốn về Việt Nam. Có thể làm gì?",
+   "a": "Xin trở lại quốc tịch Việt Nam, có thể xin giữ quốc tịch Đức."
+  },
+  "contrast": [
+   {
+    "with": "nhap-quoc-tich-viet-nam",
+    "text": "Trở lại là người từng có; nhập là người chưa từng có."
    }
   ]
  },

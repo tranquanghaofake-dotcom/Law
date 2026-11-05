@@ -24,16 +24,20 @@
   "tài sản công"
  ],
  "memo": {
-  "hook": "TOÀN DÂN là chủ sở hữu; NHÀ NƯỚC là ĐẠI DIỆN.",
+  "gist": "Đất đai, tài nguyên, nước, khoáng sản thuộc sở hữu toàn dân, do Nhà nước đại diện chủ sở hữu và thống nhất quản lý.",
+  "kind": "ladder",
+  "hook": "Của chung cả nhà, trưởng họ giữ chìa.",
   "tree": [
    {
     "label": "Chủ sở hữu",
+    "icon": "👥",
     "children": [
      "Toàn dân"
     ]
    },
    {
     "label": "Nhà nước",
+    "icon": "🏛️",
     "children": [
      "Đại diện chủ sở hữu",
      "Thống nhất quản lý"
@@ -41,12 +45,23 @@
    },
    {
     "label": "Đối tượng",
+    "icon": "⛰️",
     "children": [
      "Đất đai",
      "Nước, khoáng sản",
      "Biển, vùng trời",
      "Tài sản do Nhà nước đầu tư"
     ]
+   }
+  ],
+  "case": {
+   "q": "Một người tìm thấy mỏ khoáng sản trên đất mình đang dùng. Mỏ thuộc về ai?",
+   "a": "Thuộc sở hữu toàn dân, do Nhà nước đại diện."
+  },
+  "contrast": [
+   {
+    "with": "quyen-su-dung-dat-thu-hoi",
+    "text": "Sở hữu toàn dân là của ai; quyền sử dụng là người dân được dùng."
    }
   ]
  },
