@@ -22,10 +22,13 @@
   "bằng văn bản khi cần thiết"
  ],
  "memo": {
-  "hook": "Chất vấn là buộc GIẢI TRÌNH, không phải hỏi thông tin.",
+  "gist": "Đại biểu Quốc hội được hỏi buộc Chủ tịch nước, Thủ tướng, Bộ trưởng, Chánh án, Viện trưởng phải giải trình trách nhiệm.",
+  "kind": "tree",
+  "hook": "Ghế nóng: không phải hỏi để biết, mà hỏi để bắt giải trình.",
   "tree": [
    {
     "label": "Bị chất vấn",
+    "icon": "🎯",
     "children": [
      "Chủ tịch nước, Chủ tịch Quốc hội",
      "Thủ tướng, thành viên Chính phủ",
@@ -35,6 +38,7 @@
    },
    {
     "label": "Trả lời ở đâu",
+    "icon": "📍",
     "children": [
      "Tại kỳ họp Quốc hội",
      "Phiên họp Ủy ban thường vụ giữa hai kỳ họp"
@@ -42,9 +46,20 @@
    },
    {
     "label": "Ngoại lệ",
+    "icon": "⚠️",
     "children": [
      "Bằng văn bản khi cần thiết"
     ]
+   }
+  ],
+  "case": {
+   "q": "Đại biểu hỏi Bộ trưởng Giáo dục về thiếu giáo viên. Bộ trưởng trả lời ở đâu?",
+   "a": "Trực tiếp tại kỳ họp Quốc hội."
+  },
+  "contrast": [
+   {
+    "with": "bo-phieu-tin-nhiem",
+    "text": "Chất vấn buộc giải trình; bỏ phiếu tín nhiệm đánh giá có còn tin hay không."
    }
   ]
  },

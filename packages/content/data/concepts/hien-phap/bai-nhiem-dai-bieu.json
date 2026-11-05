@@ -22,10 +22,13 @@
   "tín nhiệm của Nhân dân"
  ],
  "memo": {
-  "hook": "Bầu cử là trao quyền; BÃI NHIỆM là rút lại khi không còn xứng đáng.",
+  "gist": "Cử tri hoặc Quốc hội, Hội đồng nhân dân rút lại tư cách đại biểu khi người đó không còn xứng đáng.",
+  "kind": "tree",
+  "hook": "Trao được thì lấy lại được.",
   "tree": [
    {
     "label": "Ai bị bãi nhiệm",
+    "icon": "👤",
     "children": [
      "Đại biểu Quốc hội",
      "Đại biểu Hội đồng nhân dân"
@@ -33,6 +36,7 @@
    },
    {
     "label": "Ai bãi nhiệm",
+    "icon": "🗳️",
     "children": [
      "Cử tri",
      "Quốc hội, Hội đồng nhân dân"
@@ -40,9 +44,20 @@
    },
    {
     "label": "Khi nào",
+    "icon": "⚠️",
     "children": [
      "Không còn xứng đáng với sự tín nhiệm của Nhân dân"
     ]
+   }
+  ],
+  "case": {
+   "q": "Đại biểu Quốc hội vi phạm pháp luật nghiêm trọng, mất uy tín. Ai có thể bãi nhiệm?",
+   "a": "Quốc hội, hoặc cử tri nơi bầu ra đại biểu đó."
+  },
+  "contrast": [
+   {
+    "with": "nguyen-tac-bau-cu",
+    "text": "Bầu cử là trao quyền; bãi nhiệm là rút lại."
    }
   ]
  },

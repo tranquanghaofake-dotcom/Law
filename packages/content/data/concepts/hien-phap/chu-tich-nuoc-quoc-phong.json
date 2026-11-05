@@ -23,10 +23,13 @@
   "công bố tình trạng khẩn cấp"
  ],
  "memo": {
-  "hook": "THỐNG LĨNH lực lượng vũ trang; tình trạng khẩn cấp thường CÔNG BỐ theo nghị quyết.",
+  "gist": "Chủ tịch nước thống lĩnh lực lượng vũ trang, đứng đầu Hội đồng quốc phòng và an ninh, công bố tình trạng khẩn cấp.",
+  "kind": "tree",
+  "hook": "Tổng tư lệnh trên danh nghĩa nhà nước.",
   "tree": [
    {
     "label": "Vị trí",
+    "icon": "🎖️",
     "children": [
      "Thống lĩnh lực lượng vũ trang",
      "Chủ tịch Hội đồng quốc phòng và an ninh"
@@ -34,6 +37,7 @@
    },
    {
     "label": "Nhân sự quân đội",
+    "icon": "⭐",
     "children": [
      "Quân hàm cấp tướng, đô đốc",
      "Tổng tham mưu trưởng"
@@ -41,10 +45,21 @@
    },
    {
     "label": "Chiến tranh, khẩn cấp",
+    "icon": "⚔️",
     "children": [
      "Công bố theo nghị quyết Quốc hội/Ủy ban thường vụ",
      "Tự công bố khẩn cấp khi Ủy ban thường vụ không họp được"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ủy ban thường vụ đã ra nghị quyết ban bố tình trạng khẩn cấp vì thiên tai. Ai công bố?",
+   "a": "Chủ tịch nước, bằng lệnh công bố."
+  },
+  "contrast": [
+   {
+    "with": "uy-ban-thuong-vu-quoc-hoi",
+    "text": "Ủy ban thường vụ quyết định; Chủ tịch nước công bố."
    }
   ]
  },

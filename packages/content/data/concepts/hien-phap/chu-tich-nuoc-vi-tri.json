@@ -23,10 +23,13 @@
   "nguyên thủ quốc gia"
  ],
  "memo": {
-  "hook": "Đứng đầu NHÀ NƯỚC, không phải đứng đầu Chính phủ.",
+  "gist": "Chủ tịch nước là người đứng đầu Nhà nước, thay mặt Nhà nước về đối nội và đối ngoại.",
+  "kind": "tree",
+  "hook": "Gương mặt của quốc gia, khác với người điều hành công việc hằng ngày.",
   "tree": [
    {
     "label": "Vị trí",
+    "icon": "👤",
     "children": [
      "Người đứng đầu Nhà nước",
      "Nguyên thủ quốc gia"
@@ -34,6 +37,7 @@
    },
    {
     "label": "Thay mặt",
+    "icon": "🤝",
     "children": [
      "Đối nội",
      "Đối ngoại"
@@ -41,12 +45,23 @@
    },
    {
     "label": "Quyền hạn trải rộng",
+    "icon": "🧩",
     "children": [
      "Lập pháp",
      "Hành pháp",
      "Tư pháp",
      "Quốc phòng"
     ]
+   }
+  ],
+  "case": {
+   "q": "Nguyên thủ nước ngoài thăm Việt Nam. Ai đón tiếp với tư cách thay mặt Nhà nước?",
+   "a": "Chủ tịch nước."
+  },
+  "contrast": [
+   {
+    "with": "thu-tuong-chinh-phu",
+    "text": "Chủ tịch nước đứng đầu Nhà nước; Thủ tướng đứng đầu Chính phủ."
    }
   ]
  },

@@ -24,10 +24,13 @@
   "trừ quả tang"
  ],
  "memo": {
-  "hook": "Bắt người cần quyết định TÒA ÁN hoặc VIỆN KIỂM SÁT, trừ QUẢ TANG.",
+  "gist": "Mọi người có quyền sống, không bị bắt giam trái luật; bắt người cần quyết định của Tòa án, Viện kiểm sát, trừ quả tang.",
+  "kind": "tree",
+  "hook": "Thân thể là ranh giới, chỉ mở bằng giấy của Tòa hoặc Viện.",
   "tree": [
    {
     "label": "Điều 19",
+    "icon": "❤️",
     "children": [
      "Quyền sống",
      "Không bị tước tính mạng trái luật"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Điều 20",
+    "icon": "🛡️",
     "children": [
      "Bất khả xâm phạm thân thể",
      "Không bị tra tấn, nhục hình"
@@ -42,6 +46,7 @@
    },
    {
     "label": "Điều kiện bắt",
+    "icon": "📄",
     "children": [
      "Quyết định của Tòa án",
      "Quyết định/phê chuẩn của Viện kiểm sát",
@@ -50,9 +55,20 @@
    },
    {
     "label": "Bắt, giam, giữ",
+    "icon": "🔒",
     "children": [
      "Do luật định"
     ]
+   }
+  ],
+  "case": {
+   "q": "Cán bộ xã giữ một người qua đêm tại trụ sở để làm việc, không có quyết định, không quả tang. Có vi phạm không?",
+   "a": "Có, vi phạm quyền bất khả xâm phạm về thân thể."
+  },
+  "contrast": [
+   {
+    "with": "quyen-rieng-tu",
+    "text": "Bất khả xâm phạm thân thể bảo vệ cơ thể; quyền riêng tư bảo vệ đời sống, thư tín, nhà ở."
    }
   ]
  },

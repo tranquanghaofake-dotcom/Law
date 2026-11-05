@@ -24,10 +24,13 @@
   "trả lời trước Hội đồng nhân dân"
  ],
  "memo": {
-  "hook": "Đại biểu HĐND chất vấn người cùng cấp; người bị chất vấn PHẢI trả lời.",
+  "gist": "Đại biểu Hội đồng nhân dân được chất vấn lãnh đạo Ủy ban, Chánh án, Viện trưởng cùng cấp; người bị hỏi phải trả lời.",
+  "kind": "tree",
+  "hook": "Ở địa phương cũng có ghế nóng.",
   "tree": [
    {
     "label": "Bị chất vấn",
+    "icon": "🎯",
     "children": [
      "Chủ tịch, thành viên Ủy ban nhân dân",
      "Chánh án, Viện trưởng",
@@ -36,15 +39,27 @@
    },
    {
     "label": "Nghĩa vụ",
+    "icon": "🗣️",
     "children": [
      "Trả lời trước Hội đồng nhân dân"
     ]
    },
    {
     "label": "Quyền đi kèm",
+    "icon": "📜",
     "children": [
      "Kiến nghị với cơ quan, tổ chức địa phương"
     ]
+   }
+  ],
+  "case": {
+   "q": "Đại biểu Hội đồng nhân dân tỉnh chất vấn Giám đốc Sở Y tế về thiếu thuốc. Giám đốc Sở có phải trả lời không?",
+   "a": "Có, trước Hội đồng nhân dân."
+  },
+  "contrast": [
+   {
+    "with": "chat-van",
+    "text": "Chất vấn ở Hội đồng nhân dân là cấp địa phương; chất vấn ở Quốc hội là cấp trung ương."
    }
   ]
  },

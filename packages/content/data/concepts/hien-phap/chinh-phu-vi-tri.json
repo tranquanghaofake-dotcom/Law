@@ -23,31 +23,47 @@
   "cơ quan chấp hành của Quốc hội"
  ],
  "memo": {
-  "hook": "Ba tính chất: HÀNH CHÍNH cao nhất, HÀNH PHÁP, CHẤP HÀNH của Quốc hội.",
+  "gist": "Chính phủ là cơ quan hành chính cao nhất, thực hiện quyền hành pháp, là cơ quan chấp hành của Quốc hội.",
+  "kind": "tree",
+  "hook": "Quốc hội vẽ bản đồ, Chính phủ dẫn đường.",
   "tree": [
    {
     "label": "Hành chính cao nhất",
+    "icon": "🏛️",
     "children": [
      "Đứng đầu hệ thống hành chính"
     ]
    },
    {
     "label": "Quyền hành pháp",
+    "icon": "⚙️",
     "children": [
      "Hiến pháp 2013 ghi nhận rõ"
     ]
    },
    {
     "label": "Chấp hành của Quốc hội",
+    "icon": "📜",
     "children": [
      "Tổ chức thi hành luật, nghị quyết"
     ]
    },
    {
     "label": "Trách nhiệm",
+    "icon": "📋",
     "children": [
      "Trước Quốc hội"
     ]
+   }
+  ],
+  "case": {
+   "q": "Quốc hội thông qua luật; Chính phủ ra nghị định hướng dẫn. Đây là vai trò gì?",
+   "a": "Chấp hành và hành pháp."
+  },
+  "contrast": [
+   {
+    "with": "vi-tri-quoc-hoi",
+    "text": "Chính phủ thi hành; Quốc hội làm luật và quyết việc lớn."
    }
   ]
  },

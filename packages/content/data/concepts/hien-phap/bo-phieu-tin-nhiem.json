@@ -23,10 +23,13 @@
   "khác lấy phiếu tín nhiệm"
  ],
  "memo": {
-  "hook": "BỎ phiếu tín nhiệm có thể dẫn tới miễn nhiệm; LẤY phiếu là định kỳ.",
+  "gist": "Quốc hội bỏ phiếu tín nhiệm với người do mình bầu, phê chuẩn; không đạt có thể dẫn tới miễn nhiệm.",
+  "kind": "compare",
+  "hook": "Lấy phiếu là khám định kỳ; bỏ phiếu là hội chẩn khi có bệnh.",
   "tree": [
    {
     "label": "Áp dụng với",
+    "icon": "🗳️",
     "children": [
      "Người do Quốc hội bầu",
      "Người do Quốc hội phê chuẩn"
@@ -34,16 +37,28 @@
    },
    {
     "label": "Bản chất",
+    "icon": "💪",
     "children": [
      "Công cụ giám sát mạnh nhất"
     ]
    },
    {
     "label": "Khác lấy phiếu tín nhiệm",
+    "icon": "↔️",
     "children": [
      "Lấy phiếu: định kỳ, ba mức",
      "Bỏ phiếu: có thể dẫn tới miễn nhiệm"
     ]
+   }
+  ],
+  "case": {
+   "q": "Lấy phiếu tín nhiệm và bỏ phiếu tín nhiệm khác nhau thế nào?",
+   "a": "Lấy phiếu là định kỳ ba mức; bỏ phiếu là khi cần, có thể dẫn tới miễn nhiệm."
+  },
+  "contrast": [
+   {
+    "with": "chat-van",
+    "text": "Chất vấn là hỏi buộc giải trình; bỏ phiếu tín nhiệm là đánh giá có còn tin hay không."
    }
   ]
  },

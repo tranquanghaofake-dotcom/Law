@@ -22,16 +22,20 @@
   "điều ước quốc tế nhân danh Nhà nước"
  ],
  "memo": {
-  "hook": "Chủ tịch nước thay mặt Nhà nước về ĐỐI NGOẠI.",
+  "gist": "Chủ tịch nước thay mặt Nhà nước về đối ngoại: tiếp nhận, bổ nhiệm đại sứ, ký điều ước nhân danh Nhà nước.",
+  "kind": "tree",
+  "hook": "Người mở cửa đón khách quốc tế.",
   "tree": [
    {
     "label": "Đại sứ nước ngoài",
+    "icon": "🤝",
     "children": [
      "Tiếp nhận"
     ]
    },
    {
     "label": "Đại sứ Việt Nam",
+    "icon": "🇻🇳",
     "children": [
      "Bổ nhiệm, miễn nhiệm",
      "Căn cứ nghị quyết Ủy ban thường vụ"
@@ -39,10 +43,21 @@
    },
    {
     "label": "Điều ước quốc tế",
+    "icon": "📜",
     "children": [
      "Đàm phán, ký nhân danh Nhà nước",
      "Chính phủ ký theo ủy quyền"
     ]
+   }
+  ],
+  "case": {
+   "q": "Đại sứ mới của một nước trình quốc thư lên ai?",
+   "a": "Chủ tịch nước."
+  },
+  "contrast": [
+   {
+    "with": "nhiem-vu-chinh-phu",
+    "text": "Chủ tịch nước đại diện Nhà nước đối ngoại; Chính phủ điều hành công việc đối ngoại hằng ngày."
    }
   ]
  },

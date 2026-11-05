@@ -24,16 +24,20 @@
   "khác đại xá"
  ],
  "memo": {
-  "hook": "ĐẶC XÁ: Chủ tịch nước, từng người. ĐẠI XÁ: Quốc hội, cả loại tội.",
+  "gist": "Chủ tịch nước quyết định nhập, thôi, tước quốc tịch, tặng huân chương, và đặc xá từng người.",
+  "kind": "tree",
+  "hook": "Đặc xá tha từng người; đại xá tha cả loại tội.",
   "tree": [
    {
     "label": "Quốc tịch",
+    "icon": "🛂",
     "children": [
      "Nhập, thôi, trở lại, tước"
     ]
    },
    {
     "label": "Khen thưởng",
+    "icon": "🏅",
     "children": [
      "Huân chương, huy chương",
      "Giải thưởng, danh hiệu nhà nước"
@@ -41,10 +45,21 @@
    },
    {
     "label": "Đặc xá",
+    "icon": "🕊️",
     "children": [
      "Chủ tịch nước quyết định",
      "Khác đại xá do Quốc hội"
     ]
+   }
+  ],
+  "case": {
+   "q": "Cầu thủ nước ngoài xin nhập quốc tịch Việt Nam. Ai quyết định cuối cùng?",
+   "a": "Chủ tịch nước."
+  },
+  "contrast": [
+   {
+    "with": "nhap-quoc-tich-viet-nam",
+    "text": "Bài này nói ai quyết; bài kia nói điều kiện nhập quốc tịch."
    }
   ]
  },

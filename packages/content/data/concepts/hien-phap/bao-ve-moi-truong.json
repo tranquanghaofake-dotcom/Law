@@ -23,10 +23,13 @@
   "gây ô nhiễm phải khắc phục, bồi thường"
  ],
  "memo": {
-  "hook": "NGƯỜI GÂY Ô NHIỄM PHẢI TRẢ TIỀN.",
+  "gist": "Nhà nước có chính sách bảo vệ môi trường; ai gây ô nhiễm phải bị xử lý, khắc phục và bồi thường.",
+  "kind": "tree",
+  "hook": "Ai làm bẩn thì người đó dọn và đền.",
   "tree": [
    {
     "label": "Nhà nước",
+    "icon": "🌱",
     "children": [
      "Chính sách bảo vệ môi trường",
      "Ứng phó biến đổi khí hậu",
@@ -35,6 +38,7 @@
    },
    {
     "label": "Người gây ô nhiễm",
+    "icon": "🏭",
     "children": [
      "Bị xử lý nghiêm",
      "Khắc phục, bồi thường"
@@ -42,10 +46,21 @@
    },
    {
     "label": "Điều 43",
+    "icon": "📜",
     "children": [
      "Quyền sống trong môi trường trong lành",
      "Nghĩa vụ bảo vệ môi trường"
     ]
+   }
+  ],
+  "case": {
+   "q": "Nhà máy xả thải làm cá chết hàng loạt trên sông. Theo Hiến pháp, nhà máy phải làm gì?",
+   "a": "Bị xử lý nghiêm, khắc phục ô nhiễm và bồi thường cho người dân."
+  },
+  "contrast": [
+   {
+    "with": "so-huu-toan-dan",
+    "text": "Bảo vệ môi trường là trách nhiệm giữ gìn; sở hữu toàn dân là đất, nước thuộc về ai."
    }
   ]
  },

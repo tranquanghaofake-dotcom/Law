@@ -24,10 +24,13 @@
   "quản lý ngành, lĩnh vực"
  ],
  "memo": {
-  "hook": "Bộ trưởng gánh HAI trách nhiệm: CÁ NHÂN và TẬP THỂ.",
+  "gist": "Bộ trưởng chịu trách nhiệm cá nhân về ngành mình trước Thủ tướng, Chính phủ, Quốc hội, và trách nhiệm tập thể cùng Chính phủ.",
+  "kind": "compare",
+  "hook": "Một mình gánh việc nhà mình, cùng cả nhà gánh việc chung.",
   "tree": [
    {
     "label": "Cá nhân",
+    "icon": "👤",
     "children": [
      "Trước Thủ tướng",
      "Trước Chính phủ",
@@ -37,6 +40,7 @@
    },
    {
     "label": "Tập thể",
+    "icon": "👥",
     "children": [
      "Cùng thành viên Chính phủ",
      "Về hoạt động của Chính phủ"
@@ -44,10 +48,21 @@
    },
    {
     "label": "Vai trò",
+    "icon": "🎯",
     "children": [
      "Thành viên Chính phủ",
      "Người đứng đầu bộ"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ngành y tế có sai phạm lớn trong mua sắm. Bộ trưởng Y tế có thể bị gì trước Quốc hội?",
+   "a": "Bị chất vấn và bỏ phiếu tín nhiệm."
+  },
+  "contrast": [
+   {
+    "with": "co-cau-chinh-phu",
+    "text": "Bộ trưởng là một thành viên; cơ cấu Chính phủ là cả bộ máy."
    }
   ]
  },
