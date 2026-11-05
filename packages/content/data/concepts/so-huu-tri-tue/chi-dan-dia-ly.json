@@ -24,10 +24,13 @@
  ],
  "note": "Điều 4, 79 có nội dung được sửa đổi, bổ sung bởi Luật 36/2009/QH12 (hiệu lực 01/01/2010); Luật 07/2022/QH15 (hiệu lực 01/01/2023); Luật 131/2025/QH15 (hiệu lực 01/4/2026) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
  "memo": {
-  "hook": "Chất lượng DO ĐỊA LÝ quyết định; chủ sở hữu là NHÀ NƯỚC.",
+  "gist": "Chỉ dẫn địa lý là tên nơi chốn gắn với sản phẩm có chất lượng do vùng đất đó quyết định; Nhà nước là chủ.",
+  "kind": "tree",
+  "hook": "Như giấy khai sinh của đặc sản: nói rõ quê quán.",
   "tree": [
    {
     "label": "Điều kiện",
+    "icon": "📍",
     "children": [
      "Nguồn gốc địa lý tương ứng",
      "Chất lượng do điều kiện địa lý quyết định"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Yếu tố địa lý",
+    "icon": "🌾",
     "children": [
      "Tự nhiên: khí hậu, thổ nhưỡng",
      "Con người: kỹ năng truyền thống"
@@ -42,15 +46,27 @@
    },
    {
     "label": "Chủ sở hữu",
+    "icon": "🏛️",
     "children": [
      "Nhà nước"
     ]
    },
    {
     "label": "Thời hạn",
+    "icon": "♾️",
     "children": [
      "Vô thời hạn"
     ]
+   }
+  ],
+  "case": {
+   "q": "Nước mắm sản xuất ở tỉnh khác ghi \"Phú Quốc\" để bán. Có vi phạm không?",
+   "a": "Có. Dùng chỉ dẫn địa lý cho sản phẩm không có nguồn gốc từ vùng đó là xâm phạm."
+  },
+  "contrast": [
+   {
+    "with": "nhan-hieu",
+    "text": "Chỉ dẫn địa lý gắn với vùng đất, chủ là Nhà nước; nhãn hiệu gắn với doanh nghiệp."
    }
   ]
  },

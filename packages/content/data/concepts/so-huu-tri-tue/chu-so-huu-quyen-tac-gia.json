@@ -23,10 +23,13 @@
  ],
  "note": "Điều 36 có nội dung được sửa đổi, bổ sung bởi Luật 07/2022/QH15 (hiệu lực 01/01/2023) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
  "memo": {
-  "hook": "TÁC GIẢ giữ quyền NHÂN THÂN; CHỦ SỞ HỮU nắm quyền TÀI SẢN, có thể là người khác.",
+  "gist": "Tác giả là người sáng tạo, giữ quyền đứng tên; chủ sở hữu nắm quyền khai thác tiền, có thể là người khác.",
+  "kind": "compare",
+  "hook": "Người vẽ tranh luôn ký tên, nhưng người treo tranh và bán tranh có thể là chủ khác.",
   "tree": [
    {
     "label": "Tác giả",
+    "icon": "🎨",
     "children": [
      "Người trực tiếp sáng tạo",
      "Giữ quyền nhân thân"
@@ -34,6 +37,7 @@
    },
    {
     "label": "Chủ sở hữu",
+    "icon": "💼",
     "children": [
      "Quyền công bố",
      "Quyền tài sản"
@@ -41,10 +45,21 @@
    },
    {
     "label": "Khác nhau khi",
+    "icon": "🔀",
     "children": [
      "Tác phẩm theo nhiệm vụ, hợp đồng",
      "Thừa kế, chuyển giao"
     ]
+   }
+  ],
+  "case": {
+   "q": "Nhân viên thiết kế logo theo nhiệm vụ công ty giao. Ai là chủ sở hữu quyền tác giả?",
+   "a": "Công ty; nhân viên là tác giả được đứng tên."
+  },
+  "contrast": [
+   {
+    "with": "quyen-nhan-than-tac-gia",
+    "text": "Chủ sở hữu nắm quyền tài sản; quyền nhân thân như đứng tên luôn ở lại với tác giả."
    }
   ]
  },

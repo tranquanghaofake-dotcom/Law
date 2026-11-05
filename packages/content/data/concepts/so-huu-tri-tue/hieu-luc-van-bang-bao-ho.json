@@ -5,7 +5,7 @@
  "term": "Hiệu lực của văn bằng bảo hộ",
  "definition": "Văn bằng bảo hộ có hiệu lực trên toàn lãnh thổ Việt Nam. Bằng độc quyền sáng chế có hiệu lực từ ngày cấp và kéo dài đến hết hai mươi năm kể từ ngày nộp đơn. Bằng độc quyền giải pháp hữu ích có hiệu lực từ ngày cấp và kéo dài đến hết mười năm kể từ ngày nộp đơn. Bằng độc quyền kiểu dáng công nghiệp có hiệu lực từ ngày cấp và kéo dài đến hết năm năm kể từ ngày nộp đơn, có thể gia hạn hai lần liên tiếp, mỗi lần năm năm.",
  "plain": "Hiệu lực TOÀN LÃNH THỔ VIỆT NAM (nguyên tắc lãnh thổ). Bắt đầu TỪ NGÀY CẤP, thời hạn tính TỪ NGÀY NỘP ĐƠN. Sáng chế 20 NĂM (không gia hạn); giải pháp hữu ích 10 NĂM; kiểu dáng 5 NĂM, gia hạn 2 lần × 5 năm (tối đa 15 năm); nhãn hiệu 10 NĂM, gia hạn NHIỀU LẦN × 10 năm; chỉ dẫn địa lý VÔ THỜI HẠN; thiết kế bố trí tối đa 10–15 năm (khoản 5).",
- "example": "Bằng độc quyền sáng chế nộp đơn 01/3/2020, cấp 01/3/2024: hiệu lực từ 01/3/2024 đến hết 01/3/2040.",
+ "example": "Bằng độc quyền sáng chế nộp đơn ngày 1 tháng 3 năm 2020, cấp ngày 1 tháng 3 năm 2024: hiệu lực từ ngày cấp đến hết ngày 1 tháng 3 năm 2040.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1–4 Điều 93 Luật Sở hữu trí tuệ (sửa đổi, bổ sung năm 2009, 2019, 2022, 2025)",
@@ -25,16 +25,20 @@
  ],
  "note": "Điều 93 có nội dung được sửa đổi, bổ sung bởi Luật 07/2022/QH15 (hiệu lực 01/01/2023) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
  "memo": {
-  "hook": "Sáng chế 20 NĂM, giải pháp hữu ích 10, kiểu dáng 5 (+2 lần), nhãn hiệu 10 (gia hạn mãi).",
+  "gist": "Văn bằng có hiệu lực từ ngày cấp trên toàn Việt Nam; thời hạn đếm từ ngày nộp đơn, khác nhau theo loại.",
+  "kind": "tree",
+  "hook": "Mẹo số: sáng chế hai mươi, giải pháp mười, kiểu dáng năm, nhãn hiệu mười gia hạn mãi.",
   "tree": [
    {
     "label": "Phạm vi",
+    "icon": "🇻🇳",
     "children": [
      "Toàn lãnh thổ Việt Nam"
     ]
    },
    {
     "label": "Tính thời hạn",
+    "icon": "📅",
     "children": [
      "Hiệu lực từ ngày cấp",
      "Đếm từ ngày nộp đơn"
@@ -42,6 +46,7 @@
    },
    {
     "label": "Thời hạn",
+    "icon": "⏳",
     "children": [
      "Sáng chế: 20 năm",
      "Giải pháp hữu ích: 10 năm",
@@ -51,9 +56,20 @@
    },
    {
     "label": "Chỉ dẫn địa lý",
+    "icon": "♾️",
     "children": [
      "Vô thời hạn"
     ]
+   }
+  ],
+  "case": {
+   "q": "Bằng sáng chế nộp đơn ngày 1 tháng 3 năm 2020, cấp ngày 1 tháng 3 năm 2024. Hết hạn khi nào?",
+   "a": "Hết ngày 1 tháng 3 năm 2040, tức 20 năm tính từ ngày nộp đơn."
+  },
+  "contrast": [
+   {
+    "with": "xac-lap-quyen-shcn",
+    "text": "Hiệu lực là văn bằng có giá trị bao lâu; xác lập là cách có được quyền."
    }
   ]
  },

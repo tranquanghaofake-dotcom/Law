@@ -23,10 +23,13 @@
   "đồng chủ sở hữu thỏa thuận"
  ],
  "memo": {
-  "hook": "CHUYỂN NHƯỢNG = bán quyền; CHUYỂN QUYỀN SỬ DỤNG = cho dùng có thời hạn.",
+  "gist": "Chuyển nhượng là bán đứt quyền tài sản; chuyển quyền sử dụng là cho dùng có thời hạn, chủ vẫn giữ quyền.",
+  "kind": "compare",
+  "hook": "Bán nhà và cho thuê nhà.",
   "tree": [
    {
     "label": "Chuyển nhượng",
+    "icon": "🔑",
     "children": [
      "Chuyển quyền sở hữu",
      "Bên nhận thành chủ mới"
@@ -34,6 +37,7 @@
    },
    {
     "label": "Chuyển quyền sử dụng",
+    "icon": "📅",
     "children": [
      "Có thời hạn",
      "Chủ vẫn giữ quyền"
@@ -41,9 +45,20 @@
    },
    {
     "label": "Không chuyển được",
+    "icon": "🚫",
     "children": [
      "Quyền nhân thân (trừ công bố)"
     ]
+   }
+  ],
+  "case": {
+   "q": "Nhà văn cho hãng phim quyền chuyển thể tiểu thuyết trong 5 năm. Đây là chuyển nhượng hay chuyển quyền sử dụng?",
+   "a": "Chuyển quyền sử dụng."
+  },
+  "contrast": [
+   {
+    "with": "chu-so-huu-quyen-tac-gia",
+    "text": "Chuyển giao là cách đổi chủ hoặc cho dùng; chủ sở hữu là người đang nắm quyền."
    }
   ]
  },

@@ -24,10 +24,13 @@
  ],
  "note": "Điều 4, 6 có nội dung được sửa đổi, bổ sung bởi Luật 36/2009/QH12 (hiệu lực 01/01/2010); Luật 07/2022/QH15 (hiệu lực 01/01/2023); Luật 131/2025/QH15 (hiệu lực 01/4/2026); Luật 42/2019/QH14 (hiệu lực 01/11/2019) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
  "memo": {
-  "hook": "Nổi tiếng: được biết RỘNG RÃI, bảo hộ do SỬ DỤNG, cấm cả hàng KHÁC LOẠI.",
+  "gist": "Nhãn hiệu được công chúng biết rộng rãi ở Việt Nam; được bảo hộ do dùng, kể cả với hàng khác loại.",
+  "kind": "tree",
+  "hook": "Tên quá quen thì ai dùng cho món gì cũng bị nghi là ăn theo.",
   "tree": [
    {
     "label": "Tiêu chí",
+    "icon": "🌟",
     "children": [
      "Công chúng liên quan biết rộng rãi",
      "Trên lãnh thổ Việt Nam"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Xác lập",
+    "icon": "📢",
     "children": [
      "Do sử dụng",
      "Không cần đăng ký"
@@ -42,9 +46,20 @@
    },
    {
     "label": "Bảo hộ mạnh hơn",
+    "icon": "🛡️",
     "children": [
      "Cả hàng hóa không cùng loại"
     ]
+   }
+  ],
+  "case": {
+   "q": "Một tiệm bánh ngọt đặt tên \"Honda\". Có thể xâm phạm không?",
+   "a": "Có thể, vì nhãn hiệu nổi tiếng được bảo hộ cả với hàng khác loại."
+  },
+  "contrast": [
+   {
+    "with": "nhan-hieu",
+    "text": "Nhãn hiệu thường phải đăng ký và chỉ bảo hộ cho hàng cùng loại; nổi tiếng thì do sử dụng và bảo hộ rộng hơn."
    }
   ]
  },

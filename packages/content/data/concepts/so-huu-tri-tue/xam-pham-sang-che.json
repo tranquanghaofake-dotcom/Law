@@ -23,10 +23,13 @@
   "quyền tạm thời"
  ],
  "memo": {
-  "hook": "Bốn yếu tố: ĐANG BẢO HỘ – có SỬ DỤNG – KHÔNG ĐƯỢC PHÉP – không thuộc giới hạn.",
+  "gist": "Dùng sáng chế, kiểu dáng đang được bảo hộ mà không được phép và không thuộc ngoại lệ là xâm phạm.",
+  "kind": "checklist",
+  "hook": "Đổi màu nắp chai không biến hàng nhái thành hàng mới.",
   "tree": [
    {
     "label": "Yếu tố",
+    "icon": "✅",
     "children": [
      "Đối tượng đang được bảo hộ",
      "Có hành vi sử dụng",
@@ -36,9 +39,20 @@
    },
    {
     "label": "Kiểu dáng",
+    "icon": "🎨",
     "children": [
      "Cả loại không khác biệt đáng kể"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty A làm chai nước gần như y hệt kiểu dáng đã đăng ký của B, chỉ đổi màu nắp. Có xâm phạm không?",
+   "a": "Có thể, vì kiểu dáng không khác biệt đáng kể."
+  },
+  "contrast": [
+   {
+    "with": "quyen-chu-so-huu-shcn",
+    "text": "Xâm phạm là người khác dùng trái phép; quyền của chủ là những gì chủ được làm."
    }
   ]
  },

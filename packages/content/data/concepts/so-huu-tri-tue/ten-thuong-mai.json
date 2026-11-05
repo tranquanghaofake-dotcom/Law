@@ -23,16 +23,20 @@
  ],
  "note": "Điều 4 có nội dung được sửa đổi, bổ sung bởi Luật 36/2009/QH12 (hiệu lực 01/01/2010); Luật 07/2022/QH15 (hiệu lực 01/01/2023); Luật 131/2025/QH15 (hiệu lực 01/4/2026) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
  "memo": {
-  "hook": "Tên thương mại phân biệt CHỦ THỂ; nhãn hiệu phân biệt HÀNG HÓA.",
+  "gist": "Tên thương mại là tên doanh nghiệp dùng khi kinh doanh, giúp phân biệt doanh nghiệp này với doanh nghiệp khác.",
+  "kind": "tree",
+  "hook": "Như biển hiệu treo trước cửa tiệm: cho khách biết đây là nhà nào.",
   "tree": [
    {
     "label": "Chức năng",
+    "icon": "🏢",
     "children": [
      "Phân biệt chủ thể kinh doanh"
     ]
    },
    {
     "label": "Phạm vi",
+    "icon": "📍",
     "children": [
      "Cùng lĩnh vực",
      "Cùng khu vực kinh doanh"
@@ -40,10 +44,21 @@
    },
    {
     "label": "Xác lập",
+    "icon": "✍️",
     "children": [
      "Sử dụng hợp pháp",
      "Không cần đăng ký"
     ]
+   }
+  ],
+  "case": {
+   "q": "Hai quán phở cùng tên ở hai tỉnh xa nhau, khách không trùng. Có chắc bị coi là xâm phạm không?",
+   "a": "Không chắc; có thể không cùng khu vực kinh doanh."
+  },
+  "contrast": [
+   {
+    "with": "nhan-hieu",
+    "text": "Tên thương mại phân biệt doanh nghiệp; nhãn hiệu phân biệt hàng hóa."
    }
   ]
  },

@@ -24,10 +24,13 @@
  ],
  "note": "Điều 123 có nội dung được sửa đổi, bổ sung bởi Luật 07/2022/QH15 (hiệu lực 01/01/2023); Luật 131/2025/QH15 (hiệu lực 01/4/2026) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
  "memo": {
-  "hook": "Ba quyền: SỬ DỤNG, NGĂN CẤM, ĐỊNH ĐOẠT — có GIỚI HẠN.",
+  "gist": "Chủ sở hữu công nghiệp được tự dùng, cho người khác dùng, ngăn người khác dùng, và bán hay để lại quyền.",
+  "kind": "tree",
+  "hook": "Như chủ vườn: tự hái, cho người hái, đuổi kẻ trộm, hoặc bán vườn.",
   "tree": [
    {
     "label": "Quyền",
+    "icon": "🔑",
     "children": [
      "Sử dụng, cho phép sử dụng",
      "Ngăn cấm người khác",
@@ -36,11 +39,22 @@
    },
    {
     "label": "Giới hạn",
+    "icon": "🚧",
     "children": [
      "Dùng cá nhân, phi thương mại",
      "Nghiên cứu, giảng dạy",
      "Nhập khẩu song song"
     ]
+   }
+  ],
+  "case": {
+   "q": "Chủ bằng sáng chế cho doanh nghiệp khác sản xuất và thu phí. Đây là quyền gì?",
+   "a": "Quyền cho phép người khác sử dụng."
+  },
+  "contrast": [
+   {
+    "with": "xam-pham-sang-che",
+    "text": "Quyền của chủ là việc được làm; xâm phạm là người khác dùng khi không được phép."
    }
   ]
  },

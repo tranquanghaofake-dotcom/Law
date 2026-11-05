@@ -25,10 +25,13 @@
  ],
  "note": "Điều 14 có nội dung được sửa đổi, bổ sung bởi Luật 36/2009/QH12 (hiệu lực 01/01/2010); Luật 07/2022/QH15 (hiệu lực 01/01/2023) — theo chú thích của VBHN 67/VBHN-VPQH 2026; câu chữ trên là bản hợp nhất. Chưa đối chiếu từng khoản bị sửa.",
  "memo": {
-  "hook": "Tác phẩm phải TỰ SÁNG TẠO; tác phẩm PHÁI SINH không được hại tác phẩm gốc.",
+  "gist": "Tác phẩm văn học, nghệ thuật, khoa học do tác giả tự sáng tạo được bảo hộ; bản phái sinh không được hại bản gốc.",
+  "kind": "tree",
+  "hook": "Tự tay làm ra thì của mình; dựa trên bài của người khác thì phải xin.",
   "tree": [
    {
     "label": "Loại",
+    "icon": "📚",
     "children": [
      "Văn học, khoa học, giáo trình",
      "Âm nhạc, điện ảnh, mỹ thuật",
@@ -37,15 +40,27 @@
    },
    {
     "label": "Điều kiện",
+    "icon": "✍️",
     "children": [
      "Tác giả trực tiếp sáng tạo"
     ]
    },
    {
     "label": "Phái sinh",
+    "icon": "🔁",
     "children": [
      "Không phương hại tác phẩm gốc"
     ]
+   }
+  ],
+  "case": {
+   "q": "Bản dịch tiếng Việt một cuốn tiểu thuyết nước ngoài, dịch không xin phép. Có được bảo hộ không?",
+   "a": "Không. Tác phẩm phái sinh chỉ được bảo hộ khi có phép của chủ bản gốc."
+  },
+  "contrast": [
+   {
+    "with": "chuong-trinh-may-tinh",
+    "text": "Tác phẩm là cả nhóm; chương trình máy tính là một loại tác phẩm."
    }
   ]
  },
