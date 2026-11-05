@@ -22,10 +22,13 @@
   "bảo đảm tranh tụng ở mọi cấp"
  ],
  "memo": {
-  "hook": "CÔNG KHAI là nguyên tắc (xử kín vẫn tuyên công khai); TRANH TỤNG ở MỌI cấp.",
+  "gist": "Tòa phải xử đúng hạn, công khai, và cho các bên tranh luận bình đẳng ở mọi cấp xét xử.",
+  "kind": "tree",
+  "hook": "Như trận đấu có truyền hình: ai cũng xem được, hai đội được tranh bóng ngang nhau.",
   "tree": [
    {
     "label": "Kịp thời",
+    "icon": "⏱️",
     "children": [
      "Trong thời hạn luật định",
      "Công bằng"
@@ -33,6 +36,7 @@
    },
    {
     "label": "Công khai",
+    "icon": "👀",
     "children": [
      "Nguyên tắc",
      "Xử kín khi đặc biệt",
@@ -41,10 +45,21 @@
    },
    {
     "label": "Tranh tụng",
+    "icon": "🗣️",
     "children": [
      "Mọi cấp xét xử",
      "Chứng cứ xem xét công khai"
     ]
+   }
+  ],
+  "case": {
+   "q": "Vụ ly hôn có bí mật đời tư, đương sự xin xử kín. Bản án có được tuyên kín không?",
+   "a": "Không. Có thể xử kín, nhưng bản án vẫn tuyên công khai."
+  },
+  "contrast": [
+   {
+    "with": "quyen-quyet-dinh-tu-dinh-doat",
+    "text": "Công khai, tranh tụng là cách Tòa xử; tự định đoạt là quyền đương sự quyết kiện gì."
    }
   ]
  },

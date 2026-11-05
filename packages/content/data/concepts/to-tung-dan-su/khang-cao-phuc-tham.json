@@ -5,7 +5,7 @@
  "term": "Thời hạn kháng cáo và phạm vi xét xử phúc thẩm",
  "definition": "Thời hạn kháng cáo đối với bản án của Tòa án cấp sơ thẩm là 15 ngày, kể từ ngày tuyên án; đối với đương sự, đại diện cơ quan, tổ chức hoặc cá nhân khởi kiện không có mặt tại phiên tòa hoặc không có mặt khi tuyên án mà có lý do chính đáng thì thời hạn kháng cáo được tính từ ngày họ nhận được bản án hoặc bản án được niêm yết. (…) Tòa án cấp phúc thẩm chỉ xem xét lại phần của bản án sơ thẩm, quyết định của Tòa án cấp sơ thẩm có kháng cáo, kháng nghị hoặc có liên quan đến việc xem xét nội dung kháng cáo, kháng nghị.",
  "plain": "Thời hạn kháng cáo: BẢN ÁN 15 NGÀY từ ngày tuyên án (vắng mặt có lý do chính đáng: từ ngày nhận hoặc niêm yết); QUYẾT ĐỊNH tạm đình chỉ, đình chỉ: 07 NGÀY. Phúc thẩm là XÉT XỬ LẠI VỤ ÁN (cả nội dung) nhưng chỉ trong PHẠM VI phần bị KHÁNG CÁO, KHÁNG NGHỊ và phần liên quan. Từ 01/7/2025, phúc thẩm bản án của TAND khu vực do TAND CẤP TỈNH thực hiện.",
- "example": "Tòa sơ thẩm tuyên ngày 01/6; bị đơn có mặt: phải kháng cáo chậm nhất trong 15 ngày tính từ 01/6. Nếu chỉ kháng cáo phần tiền lãi thì phúc thẩm chỉ xem xét phần tiền lãi (và phần liên quan).",
+ "example": "Tòa sơ thẩm tuyên ngày 1 tháng 6, bị đơn có mặt: phải kháng cáo trong 15 ngày tính từ ngày đó. Nếu chỉ kháng cáo phần tiền lãi thì phúc thẩm chỉ xem xét phần tiền lãi và phần liên quan.",
  "source": {
   "kind": "statute",
   "cite": "Đoạn 1 khoản 1 Điều 273, Điều 293 Bộ luật Tố tụng dân sự 2015 (sửa đổi, bổ sung năm 2019, 2020, 2022, 2023, 2024, 2025)",
@@ -22,10 +22,13 @@
   "chỉ xem xét phần có kháng cáo, kháng nghị"
  ],
  "memo": {
-  "hook": "Kháng cáo BẢN ÁN 15 ngày, QUYẾT ĐỊNH 7 ngày; phúc thẩm chỉ xét PHẦN bị kháng.",
+  "gist": "Không đồng ý bản án sơ thẩm thì kháng cáo trong 15 ngày; Tòa phúc thẩm chỉ xét phần bị kháng cáo.",
+  "kind": "steps",
+  "hook": "Mẹo số: bản án mười lăm, quyết định bảy; kêu phần nào xét phần đó.",
   "tree": [
    {
     "label": "Thời hạn",
+    "icon": "⏰",
     "children": [
      "Bản án: 15 ngày từ tuyên án",
      "Quyết định: 07 ngày",
@@ -34,6 +37,7 @@
    },
    {
     "label": "Phạm vi",
+    "icon": "🎯",
     "children": [
      "Phần bị kháng cáo, kháng nghị",
      "Phần liên quan"
@@ -41,9 +45,20 @@
    },
    {
     "label": "Từ 01/7/2025",
+    "icon": "🏛️",
     "children": [
      "Tòa án cấp tỉnh phúc thẩm"
     ]
+   }
+  ],
+  "case": {
+   "q": "Bị đơn chỉ kháng cáo phần tiền lãi. Tòa phúc thẩm xét những gì?",
+   "a": "Chỉ phần tiền lãi và phần liên quan tới nó."
+  },
+  "contrast": [
+   {
+    "with": "giam-doc-tham-tai-tham",
+    "text": "Phúc thẩm xét bản án chưa có hiệu lực theo kháng cáo; giám đốc thẩm, tái thẩm xét bản án đã có hiệu lực theo kháng nghị."
    }
   ]
  },

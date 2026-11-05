@@ -23,10 +23,13 @@
   "bồi thường nếu yêu cầu không đúng"
  ],
  "memo": {
-  "hook": "Giải quyết TẠM yêu cầu CẤP BÁCH; yêu cầu sai phải BỒI THƯỜNG.",
+  "gist": "Biện pháp Tòa áp dụng ngay, tạm thời, để giữ người, giữ tài sản, giữ chứng cứ khi việc gấp chưa kịp xử xong.",
+  "kind": "compare",
+  "hook": "Như phanh tay khi xe đang trôi dốc: kéo ngay cho xe đứng lại, sửa xe tính sau.",
   "tree": [
    {
     "label": "Mục đích",
+    "icon": "🚨",
     "children": [
      "Yêu cầu cấp bách",
      "Bảo vệ chứng cứ, tài sản",
@@ -35,6 +38,7 @@
    },
    {
     "label": "Về người",
+    "icon": "👶",
     "children": [
      "Giao người cần chăm sóc",
      "Buộc trước một phần cấp dưỡng, bồi thường"
@@ -42,11 +46,22 @@
    },
    {
     "label": "Về tài sản",
+    "icon": "🔒",
     "children": [
      "Kê biên",
      "Cấm chuyển dịch",
      "Phong tỏa tài khoản"
     ]
+   }
+  ],
+  "case": {
+   "q": "Người vợ đang ly hôn lo chồng bán căn nhà chung. Chị có thể xin Tòa làm gì ngay?",
+   "a": "Xin áp dụng biện pháp cấm chuyển dịch quyền về tài sản đối với căn nhà."
+  },
+  "contrast": [
+   {
+    "with": "thoi-hieu-khoi-kien-ttds",
+    "text": "Biện pháp khẩn cấp là việc làm gấp trong lúc kiện; thời hiệu là thời hạn được phép đi kiện."
    }
   ]
  },

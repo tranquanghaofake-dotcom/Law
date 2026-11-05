@@ -22,10 +22,13 @@
   "khởi kiện khi cho rằng quyền lợi bị xâm phạm"
  ],
  "memo": {
-  "hook": "VỤ ÁN có nguyên đơn – bị đơn; VIỆC dân sự có người YÊU CẦU.",
+  "gist": "Đương sự là các bên có quyền lợi trong vụ việc: người kiện, người bị kiện và người có quyền lợi liên quan.",
+  "kind": "compare",
+  "hook": "Như trận đấu: hai đội trên sân là đương sự; trọng tài, khán giả, bình luận viên thì không.",
   "tree": [
    {
     "label": "Vụ án",
+    "icon": "⚔️",
     "children": [
      "Nguyên đơn",
      "Bị đơn",
@@ -34,6 +37,7 @@
    },
    {
     "label": "Việc dân sự",
+    "icon": "📝",
     "children": [
      "Người yêu cầu",
      "Người có quyền lợi, nghĩa vụ liên quan"
@@ -41,10 +45,21 @@
    },
    {
     "label": "Không phải đương sự",
+    "icon": "🚫",
     "children": [
      "Người làm chứng, giám định",
      "Người phiên dịch, đại diện"
     ]
+   }
+  ],
+  "case": {
+   "q": "A kiện B đòi tiền vay; C bảo lãnh cho B. C có phải đương sự không?",
+   "a": "Có thể, với tư cách người có quyền lợi, nghĩa vụ liên quan."
+  },
+  "contrast": [
+   {
+    "with": "quyen-yeu-cau-toa-an-bao-ve",
+    "text": "Đương sự là ai tham gia vụ việc; quyền yêu cầu Tòa bảo vệ là quyền được đi kiện."
    }
   ]
  },

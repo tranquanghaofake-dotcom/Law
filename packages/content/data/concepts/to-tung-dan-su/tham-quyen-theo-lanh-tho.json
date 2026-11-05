@@ -22,10 +22,13 @@
   "nơi có bất động sản"
  ],
  "memo": {
-  "hook": "Mặc định NƠI BỊ ĐƠN; BẤT ĐỘNG SẢN thì nơi có bất động sản.",
+  "gist": "Thường kiện ở Tòa nơi bị đơn sống hoặc có trụ sở; tranh chấp nhà đất thì kiện nơi có nhà đất.",
+  "kind": "tree",
+  "hook": "Đến nhà người bị kiện mà gõ cửa; riêng nhà đất thì ra tận mảnh đất.",
   "tree": [
    {
     "label": "Nguyên tắc",
+    "icon": "📍",
     "children": [
      "Nơi bị đơn cư trú, làm việc",
      "Nơi bị đơn có trụ sở"
@@ -33,21 +36,34 @@
    },
    {
     "label": "Thỏa thuận",
+    "icon": "🤝",
     "children": [
      "Bằng văn bản chọn nơi nguyên đơn"
     ]
    },
    {
     "label": "Bắt buộc",
+    "icon": "🏠",
     "children": [
      "Bất động sản: nơi có bất động sản"
     ]
    },
    {
     "label": "Nguyên đơn chọn",
+    "icon": "🙋",
     "children": [
      "Một số trường hợp Điều 40"
     ]
+   }
+  ],
+  "case": {
+   "q": "Bị đơn ở Đà Nẵng, nguyên đơn ở Hà Nội tranh chấp hợp đồng vay, không có thỏa thuận. Kiện ở đâu?",
+   "a": "Tòa khu vực nơi bị đơn cư trú ở Đà Nẵng."
+  },
+  "contrast": [
+   {
+    "with": "tham-quyen-theo-cap",
+    "text": "Theo lãnh thổ là tòa ở nơi nào; theo cấp là tòa trên hay tòa dưới."
    }
   ]
  },

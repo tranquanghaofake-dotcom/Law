@@ -23,10 +23,13 @@
   "quyền từ chối áp dụng thời hiệu"
  ],
  "memo": {
-  "hook": "Tòa chỉ áp dụng thời hiệu khi CÓ YÊU CẦU, trước khi xử SƠ THẨM.",
+  "gist": "Tòa chỉ xét chuyện hết hạn đi kiện khi có bên yêu cầu, và phải yêu cầu trước khi xử sơ thẩm xong.",
+  "kind": "checklist",
+  "hook": "Như vé tàu quá hạn: soát vé chỉ khi có người đòi soát, và phải đòi trước khi tàu chạy.",
   "tree": [
    {
     "label": "Căn cứ",
+    "icon": "📚",
     "children": [
      "Theo Bộ luật Dân sự",
      "Luật chuyên ngành"
@@ -34,6 +37,7 @@
    },
    {
     "label": "Điều kiện áp dụng",
+    "icon": "✋",
     "children": [
      "Có yêu cầu của đương sự",
      "Trước khi sơ thẩm ra bản án"
@@ -41,6 +45,7 @@
    },
    {
     "label": "Người hưởng lợi",
+    "icon": "🙅",
     "children": [
      "Được từ chối áp dụng",
      "Trừ để trốn nghĩa vụ"
@@ -48,9 +53,20 @@
    },
    {
     "label": "Hết thời hiệu",
+    "icon": "⛔",
     "children": [
      "Đình chỉ giải quyết"
     ]
+   }
+  ],
+  "case": {
+   "q": "Bị đơn lần đầu xin áp dụng thời hiệu ở phiên phúc thẩm. Tòa có chấp nhận không?",
+   "a": "Không. Phải yêu cầu trước khi Tòa sơ thẩm ra bản án, quyết định."
+  },
+  "contrast": [
+   {
+    "with": "bien-phap-khan-cap-tam-thoi",
+    "text": "Thời hiệu là thời hạn được đi kiện; biện pháp khẩn cấp là việc gấp Tòa làm trong lúc kiện."
    }
   ]
  },
