@@ -24,6 +24,30 @@
   "kết thúc cấp huyện từ 01/7/2025"
  ],
  "note": "Nghị quyết 203/2025/QH15 (hiệu lực 16/6/2025) sửa toàn bộ Điều 110: chuyển từ 3 cấp (tỉnh – huyện – xã) sang 2 cấp; khoản 2 Điều 2 Nghị quyết kết thúc hoạt động đơn vị hành chính cấp huyện từ 01/7/2025. Giáo trình in trước 2025 mô tả mô hình 3 cấp và phân định huyện, quận, thị xã, thị trấn. Phần này đã thay đổi căn bản.",
+ "memo": {
+  "hook": "Từ 01/7/2025 chỉ còn TỈNH và dưới tỉnh; cấp HUYỆN kết thúc.",
+  "tree": [
+   {
+    "label": "Cấp tỉnh",
+    "children": [
+     "Tỉnh",
+     "Thành phố trực thuộc trung ương"
+    ]
+   },
+   {
+    "label": "Dưới tỉnh",
+    "children": [
+     "Do luật định: xã, phường, đặc khu"
+    ]
+   },
+   {
+    "label": "Mốc thay đổi",
+    "children": [
+     "Cấp huyện kết thúc từ 01/7/2025"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

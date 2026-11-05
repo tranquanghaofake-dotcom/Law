@@ -40,6 +40,8 @@ export type ItemTrueFalse = {
 };
 export type Item = ItemMcq | ItemPair | ItemCloze | ItemRecall | ItemTrueFalse;
 
+export type Memo = { hook?: string; tree?: { label: string; children?: string[] }[] };
+
 export type Concept = {
   id: string;
   subject: string;
@@ -54,6 +56,8 @@ export type Concept = {
   keywords: string[];
   /** Ghi chú khi luật hiện hành đã khác giáo trình. */
   note?: string;
+  /** Sơ đồ/mẹo nhớ do người soạn — diễn giải để học, không phải nguyên văn. */
+  memo?: Memo;
   items: Item[];
 };
 

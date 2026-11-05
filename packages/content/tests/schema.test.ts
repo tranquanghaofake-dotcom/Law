@@ -51,3 +51,17 @@ describe('mở rộng cho bộ đề theo giáo trình', () => {
     expect(chapterSchema.safeParse({ ...ch, advanced: 'có' }).success).toBe(false);
   });
 });
+
+describe('conceptSchema: memo (sơ đồ/mẹo nhớ do người soạn — diễn giải để học)', () => {
+  const tree = [{ label: 'Chủ thể', children: ['Nhân dân', 'Quốc hội'] }, { label: 'Phân loại', children: ['chung', 'cụ thể'] }];
+  it('chấp nhận memo có mẹo nhớ và cây 2–6 nhánh', () => {
+    expect(conceptSchema.safeParse({ ...base, memo: { hook: 'Nhớ: chủ thể đặc biệt.', tree } }).success).toBe(true);
+  });
+  it('từ chối cây chỉ 1 nhánh hoặc nhãn quá 60 ký tự', () => {
+    expect(conceptSchema.safeParse({ ...base, memo: { tree: [tree[0]] } }).success).toBe(false);
+    expect(conceptSchema.safeParse({ ...base, memo: { tree: [tree[0], { label: 'x'.repeat(61) }] } }).success).toBe(false);
+  });
+  it('từ chối memo rỗng (không hook, không cây)', () => {
+    expect(conceptSchema.safeParse({ ...base, memo: {} }).success).toBe(false);
+  });
+});

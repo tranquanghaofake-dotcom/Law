@@ -23,6 +23,32 @@
   "do Quốc hội quy định"
  ],
  "note": "Nghị quyết 203/2025/QH15 (hiệu lực 16/6/2025) sửa khoản 2 Điều 111: bỏ cụm \"đơn vị hành chính - kinh tế đặc biệt\" (tách thành khoản 3); việc tổ chức chính quyền \"do Quốc hội quy định\" (bản 2013: \"do luật định\").",
+ "memo": {
+  "hook": "Đơn vị hành chính là LÃNH THỔ; cấp chính quyền là HAI cơ quan.",
+  "tree": [
+   {
+    "label": "Gồm hai cơ quan",
+    "children": [
+     "Hội đồng nhân dân",
+     "Ủy ban nhân dân"
+    ]
+   },
+   {
+    "label": "Tổ chức phù hợp",
+    "children": [
+     "Nông thôn",
+     "Đô thị",
+     "Hải đảo"
+    ]
+   },
+   {
+    "label": "Ai quy định",
+    "children": [
+     "Quốc hội"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

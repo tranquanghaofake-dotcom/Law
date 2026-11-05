@@ -9,22 +9,19 @@
   const why = $derived(whyOf(concept, item, { correct, explain, chosen, confusables }));
 </script>
 
-{#if why}
-  {#if correct}
-    <p class="why-sign small"><b>Dấu hiệu quyết định:</b> {why.signs.join(' · ')}</p>
-  {:else}
-    <section class="why" aria-label="Vì sao">
+{#if why && !correct}
+  <section class="why" aria-label="Vì sao">
       <p class="why-title">Vì sao?</p>
       {#if why.excerpt}
         <blockquote class="why-quote">{#each segments(why.excerpt.text, why.excerpt.marks) as s, k (k)}{#if s.b}<mark>{s.t}</mark>{:else}{s.t}{/if}{/each}</blockquote>
       {/if}
-      {#if why.plain}<p class="why-plain small">Nói gọn: {why.plain}</p>{/if}
-      {#if why.signs.length}<p class="why-signs small"><b>Dấu hiệu:</b> {#each why.signs as k (k)}<span class="chip">{k}</span>{/each}</p>{/if}
       {#if why.mixup}
-        <p class="why-mixup small">{why.mixup.picked ? 'Bạn chọn' : 'Dễ nhầm với'} <b>«{why.mixup.term}»</b>: dấu hiệu bên kia là {why.mixup.theirs.join('; ')}; còn «{concept.term}» là {why.mixup.ours.join('; ')}.</p>
+        <div class="why-mixup small" role="group" aria-label="{why.mixup.picked ? 'Bạn chọn' : 'Dễ nhầm với'} «{why.mixup.term}»">
+          <div class="mix-col theirs"><p class="mix-h">{why.mixup.picked ? 'Bạn chọn' : 'Dễ nhầm'}: «{why.mixup.term}»</p><ul>{#each why.mixup.theirs as k (k)}<li>{k}</li>{/each}</ul></div>
+          <div class="mix-col ours"><p class="mix-h">Đúng: «{concept.term}»</p><ul>{#each why.mixup.ours as k (k)}<li>{k}</li>{/each}</ul></div>
+        </div>
       {:else if confusables.length}
         <p class="why-names small">Dễ nhầm với: <b>{confusables.map((c) => c.term).join(', ')}</b></p>
       {/if}
-    </section>
-  {/if}
+  </section>
 {/if}
