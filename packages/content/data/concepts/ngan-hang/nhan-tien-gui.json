@@ -27,10 +27,13 @@
  ],
  "note": "Luật Các tổ chức tín dụng 32/2024/QH15 có hiệu lực từ 01/7/2024, thay thế Luật 47/2010/QH12 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 96/2025/QH15 (hiệu lực 15/10/2025) và Luật 23/2026/QH16 (hiệu lực 01/12/2026, chỉ bổ sung một điểm tại Điều 49) — các khoản Điều 4 được trích không bị sửa.",
  "memo": {
-  "hook": "Chứng chỉ tiền gửi là NHẬN TIỀN GỬI; trái phiếu thì KHÔNG.",
+  "gist": "Ngân hàng nhận tiền của khách dưới dạng tiết kiệm, có kỳ hạn, chứng chỉ tiền gửi, và phải trả đủ gốc lãi.",
+  "kind": "tree",
+  "hook": "Như gửi xe có vé: lấy lại đúng chiếc xe, cộng thêm tiền công giữ hộ.",
   "tree": [
    {
     "label": "Hình thức",
+    "icon": "💰",
     "children": [
      "Không kỳ hạn, có kỳ hạn",
      "Tiết kiệm",
@@ -39,15 +42,27 @@
    },
    {
     "label": "Nguyên tắc",
+    "icon": "🔁",
     "children": [
      "Hoàn trả đủ gốc, lãi"
     ]
    },
    {
     "label": "Phân biệt",
+    "icon": "↔️",
     "children": [
      "Phát hành trái phiếu: vay vốn"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ngân hàng phát hành chứng chỉ tiền gửi kỳ hạn 24 tháng. Có phải nhận tiền gửi không?",
+   "a": "Có; còn phát hành trái phiếu là đi vay, không phải nhận tiền gửi."
+  },
+  "contrast": [
+   {
+    "with": "giay-to-co-gia",
+    "text": "Tiền gửi là khoản khách gửi vào; giấy tờ có giá là giấy nợ có thể mua bán lại."
    }
   ]
  },

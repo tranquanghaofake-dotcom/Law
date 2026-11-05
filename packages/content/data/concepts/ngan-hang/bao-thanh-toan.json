@@ -25,31 +25,47 @@
  ],
  "note": "Luật Các tổ chức tín dụng 32/2024/QH15 có hiệu lực từ 01/7/2024, thay thế Luật 47/2010/QH12 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 96/2025/QH15 (hiệu lực 15/10/2025) và Luật 23/2026/QH16 (hiệu lực 01/12/2026, chỉ bổ sung một điểm tại Điều 49) — các khoản Điều 4 được trích không bị sửa.",
  "memo": {
-  "hook": "MUA khoản phải thu của bên BÁN hoặc ỨNG TRƯỚC tiền thay bên MUA.",
+  "gist": "Ngân hàng mua lại khoản tiền người mua còn nợ bên bán, hoặc ứng trước tiền thay bên mua, để bên bán có tiền ngay.",
+  "kind": "compare",
+  "hook": "Như bán lại tờ giấy hẹn trả tiền để lấy tiền mặt ngay hôm nay.",
   "tree": [
    {
     "label": "Cách 1",
+    "icon": "🧾",
     "children": [
      "Mua lại khoản phải thu của bên bán"
     ]
    },
    {
     "label": "Cách 2",
+    "icon": "💸",
     "children": [
      "Ứng trước tiền thay bên mua"
     ]
    },
    {
     "label": "Cơ sở",
+    "icon": "📝",
     "children": [
      "Hợp đồng mua bán hàng, dịch vụ"
     ]
    },
    {
     "label": "Lợi ích",
+    "icon": "⚡",
     "children": [
      "Bên bán có tiền ngay"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty bán hàng cho siêu thị trả chậm 90 ngày, bán khoản phải thu đó cho ngân hàng. Đây là nghiệp vụ gì?",
+   "a": "Bao thanh toán."
+  },
+  "contrast": [
+   {
+    "with": "chiet-khau",
+    "text": "Bao thanh toán mua khoản phải thu từ hợp đồng mua bán; chiết khấu mua giấy tờ có giá chưa đến hạn."
    }
   ]
  },

@@ -26,10 +26,13 @@
  ],
  "note": "Luật Các tổ chức tín dụng 32/2024/QH15 có hiệu lực từ 01/7/2024, thay thế Luật 47/2010/QH12 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 96/2025/QH15 (hiệu lực 15/10/2025) và Luật 23/2026/QH16 (hiệu lực 01/12/2026, chỉ bổ sung một điểm tại Điều 49) — các khoản Điều 4 được trích không bị sửa.",
  "memo": {
-  "hook": "Một trong ba nghiệp vụ LÕI; phải qua TÀI KHOẢN thanh toán.",
+  "gist": "Ngân hàng chuyển tiền qua tài khoản thanh toán bằng séc, lệnh chi, nhờ thu, thẻ; công ty tài chính không được làm.",
+  "kind": "tree",
+  "hook": "Như đường ống nước của tiền: phải có tài khoản làm vòi.",
   "tree": [
    {
     "label": "Dịch vụ",
+    "icon": "💳",
     "children": [
      "Cung ứng phương tiện thanh toán",
      "Séc, lệnh chi, ủy nhiệm chi",
@@ -39,15 +42,27 @@
    },
    {
     "label": "Điều kiện",
+    "icon": "🏦",
     "children": [
      "Qua tài khoản thanh toán"
     ]
    },
    {
     "label": "Không được làm",
+    "icon": "🚫",
     "children": [
      "Tổ chức tín dụng phi ngân hàng"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty tài chính tiêu dùng có được mở tài khoản thanh toán cho khách không?",
+   "a": "Không. Tổ chức tín dụng phi ngân hàng không được làm dịch vụ này."
+  },
+  "contrast": [
+   {
+    "with": "dich-vu-trung-gian-thanh-toan",
+    "text": "Thanh toán qua tài khoản do ngân hàng làm; trung gian thanh toán chỉ truyền dữ liệu, không giữ tài khoản."
    }
   ]
  },

@@ -25,10 +25,13 @@
  ],
  "note": "Pháp lệnh Ngoại hối 28/2005/PL-UBTVQH11 có hiệu lực từ 01/6/2006, sửa đổi bởi Pháp lệnh 06/2013/UBTVQH13; Luật 23/2026/QH16 (hiệu lực 01/12/2026) bãi bỏ Điều 22 và khoản 2 Điều 34, không sửa Điều 4.",
  "memo": {
-  "hook": "Chủ thể: CƯ TRÚ và KHÔNG CƯ TRÚ; giao dịch: VÃNG LAI và VỐN.",
+  "gist": "Giao dịch bằng ngoại hối giữa người cư trú và không cư trú, gồm giao dịch thường ngày và giao dịch vốn.",
+  "kind": "compare",
+  "hook": "Hai cặp đôi: trong nước với ngoài nước, mua bán thường ngày với chuyển vốn.",
   "tree": [
    {
     "label": "Chủ thể",
+    "icon": "👥",
     "children": [
      "Người cư trú",
      "Người không cư trú"
@@ -36,6 +39,7 @@
    },
    {
     "label": "Giao dịch",
+    "icon": "🔁",
     "children": [
      "Vãng lai: không chuyển vốn",
      "Vốn: đầu tư, vay trả nợ"
@@ -43,10 +47,21 @@
    },
    {
     "label": "Khác",
+    "icon": "💱",
     "children": [
      "Sử dụng ngoại hối trong nước",
      "Cung ứng dịch vụ ngoại hối"
     ]
+   }
+  ],
+  "case": {
+   "q": "Doanh nghiệp vay vốn ngân hàng Nhật và trả tiền nhập máy cho đối tác Đức. Hai việc này thuộc loại giao dịch nào?",
+   "a": "Vay là giao dịch vốn; trả tiền nhập máy là giao dịch vãng lai."
+  },
+  "contrast": [
+   {
+    "with": "ngoai-hoi",
+    "text": "Hoạt động ngoại hối là giao dịch; ngoại hối là chính đồng tiền, giấy tờ, vàng được giao dịch."
    }
   ]
  },

@@ -24,10 +24,13 @@
  ],
  "note": "Luật Các tổ chức tín dụng 32/2024/QH15 có hiệu lực từ 01/7/2024, thay thế Luật 47/2010/QH12 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 96/2025/QH15 (hiệu lực 15/10/2025) và Luật 23/2026/QH16 (hiệu lực 01/12/2026, chỉ bổ sung một điểm tại Điều 49) — các khoản Điều 4 được trích không bị sửa.",
  "memo": {
-  "hook": "Ba bên: ngân hàng TRẢ THAY khi khách không trả; khách phải NHẬN NỢ BẮT BUỘC.",
+  "gist": "Ngân hàng cam kết trả thay khách hàng nếu khách không làm đúng nghĩa vụ; trả xong thì khách nợ lại ngân hàng.",
+  "kind": "tree",
+  "hook": "Như người đỡ đầu: con không trả được thì cha trả trước, về nhà con trả lại cha.",
   "tree": [
    {
     "label": "Ba bên",
+    "icon": "👥",
     "children": [
      "Bên bảo lãnh: ngân hàng",
      "Bên được bảo lãnh: khách hàng",
@@ -36,6 +39,7 @@
    },
    {
     "label": "Khi nào trả thay",
+    "icon": "⚠️",
     "children": [
      "Khách không thực hiện",
      "Thực hiện không đầy đủ"
@@ -43,9 +47,20 @@
    },
    {
     "label": "Sau khi trả",
+    "icon": "🧾",
     "children": [
      "Khách nhận nợ bắt buộc"
     ]
+   }
+  ],
+  "case": {
+   "q": "Nhà thầu bỏ dở công trình, ngân hàng đã trả tiền bảo lãnh cho chủ đầu tư. Nhà thầu phải làm gì?",
+   "a": "Nhận nợ bắt buộc với ngân hàng."
+  },
+  "contrast": [
+   {
+    "with": "cho-vay",
+    "text": "Bảo lãnh chỉ là cam kết trả thay khi có sự cố; cho vay là đưa tiền ngay cho khách."
    }
   ]
  },

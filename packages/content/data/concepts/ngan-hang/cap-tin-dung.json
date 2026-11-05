@@ -27,10 +27,13 @@
  ],
  "note": "Luật Các tổ chức tín dụng 32/2024/QH15 có hiệu lực từ 01/7/2024, thay thế Luật 47/2010/QH12 mà đề cương HLU 2021 còn dẫn; sửa đổi bởi Luật 96/2025/QH15 (hiệu lực 15/10/2025) và Luật 23/2026/QH16 (hiệu lực 01/12/2026, chỉ bổ sung một điểm tại Điều 49) — các khoản Điều 4 được trích không bị sửa.",
  "memo": {
-  "hook": "Cho dùng tiền (hoặc CAM KẾT cho dùng) theo nguyên tắc CÓ HOÀN TRẢ.",
+  "gist": "Cấp tín dụng là cho dùng tiền, hoặc hứa cho dùng tiền, với điều kiện phải trả lại.",
+  "kind": "tree",
+  "hook": "Không chỉ đưa tiền: ký một lời hứa trả thay cũng là cho vay niềm tin.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "🤝",
     "children": [
      "Thỏa thuận cho sử dụng tiền",
      "Hoặc cam kết cho phép sử dụng",
@@ -39,11 +42,22 @@
    },
    {
     "label": "Nghiệp vụ",
+    "icon": "🧩",
     "children": [
      "Cho vay, chiết khấu",
      "Cho thuê tài chính, bao thanh toán",
      "Bảo lãnh, thư tín dụng"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ngân hàng phát hành thư bảo lãnh dự thầu, chưa đưa tiền cho ai. Có phải cấp tín dụng không?",
+   "a": "Có, vì đã cam kết cho sử dụng tiền."
+  },
+  "contrast": [
+   {
+    "with": "cho-vay",
+    "text": "Cấp tín dụng là nhóm lớn; cho vay chỉ là một nghiệp vụ trong đó."
    }
   ]
  },

@@ -25,10 +25,13 @@
  ],
  "note": "Pháp lệnh Ngoại hối 28/2005/PL-UBTVQH11 có hiệu lực từ 01/6/2006, sửa đổi bởi Pháp lệnh 06/2013/UBTVQH13; Luật 23/2026/QH16 (hiệu lực 01/12/2026) bãi bỏ Điều 22 và khoản 2 Điều 34, không sửa Điều 4.",
  "memo": {
-  "hook": "Vàng miếng mua bán TRONG NƯỚC KHÔNG phải ngoại hối.",
+  "gist": "Ngoại hối gồm ngoại tệ, giấy tờ bằng ngoại tệ, vàng trong một số trường hợp, và tiền đồng khi qua biên giới.",
+  "kind": "tree",
+  "hook": "Tiền của nước khác và vàng khi bước qua cửa khẩu.",
   "tree": [
    {
     "label": "Gồm",
+    "icon": "💱",
     "children": [
      "Ngoại tệ",
      "Phương tiện thanh toán bằng ngoại tệ",
@@ -38,10 +41,21 @@
    },
    {
     "label": "Đồng Việt Nam",
+    "icon": "🇻🇳",
     "children": [
      "Khi chuyển vào, ra lãnh thổ",
      "Khi dùng thanh toán quốc tế"
     ]
+   }
+  ],
+  "case": {
+   "q": "Du khách mang 2 ký vàng thỏi qua cửa khẩu sân bay. Vàng này có phải ngoại hối không?",
+   "a": "Có; còn nhẫn vàng mua ở tiệm trong nước thì không."
+  },
+  "contrast": [
+   {
+    "with": "hoat-dong-ngoai-hoi",
+    "text": "Ngoại hối là đồng tiền, vàng; hoạt động ngoại hối là việc giao dịch bằng chúng."
    }
   ]
  },
