@@ -14,7 +14,8 @@ test('đoán trước (bật trong Cài đặt): câu đoán → Bỏ qua → th
   for (let k = 0; k < 2 && (await page.locator('.pretest-bar').count()); k++) await page.getByRole('button', { name: 'Bỏ qua' }).click();
   const card = page.getByRole('article', { name: 'Thẻ giới thiệu khái niệm' });
   await expect(card).toBeVisible();
-  await expect(card.locator('.intro-example')).toBeVisible();
+  // có tình huống hỏi–đáp (memo.case) thì thay đoạn ví dụ; đáp ẩn tới khi bấm "Xem đáp"
+  await expect(card.locator('.intro-case-q, .intro-example').first()).toBeVisible();
   await expect(card.locator('blockquote')).toHaveCount(0);
   await card.getByRole('button', { name: 'Xem nguyên văn điều luật' }).click();
   await expect(card.locator('blockquote')).toBeVisible();
