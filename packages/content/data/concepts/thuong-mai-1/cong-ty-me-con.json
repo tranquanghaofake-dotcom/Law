@@ -23,22 +23,36 @@
   "cấm sở hữu chéo"
  ],
  "memo": {
-  "hook": "Công ty mẹ: >50% vốn HOẶC bổ nhiệm đa số HOẶC sửa Điều lệ; CẤM sở hữu chéo.",
+  "gist": "Công ty mẹ nắm trên một nửa vốn, hoặc bổ nhiệm đa số người quản lý, hoặc quyết sửa Điều lệ của công ty con.",
+  "kind": "tree",
+  "hook": "Như cây với cành: cành không được mọc ngược ôm lấy gốc.",
   "tree": [
    {
     "label": "Tiêu chí (một trong)",
+    "icon": "🌳",
     "children": [
      "Sở hữu trên 50%",
-     "Bổ nhiệm đa số HĐQT, Giám đốc",
+     "Bổ nhiệm đa số Hội đồng quản trị, Giám đốc",
      "Quyết định sửa Điều lệ"
     ]
    },
    {
     "label": "Cấm",
+    "icon": "🚫",
     "children": [
      "Con góp vốn vào mẹ",
      "Các con sở hữu chéo"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty A sở hữu 60% vốn công ty B. B có được mua cổ phần của A không?",
+   "a": "Không. Công ty con không được góp vốn vào công ty mẹ."
+  },
+  "contrast": [
+   {
+    "with": "to-chuc-lai-doanh-nghiep",
+    "text": "Mẹ con là quan hệ kiểm soát giữa các công ty còn tồn tại; tổ chức lại là chia, tách, gộp công ty."
    }
   ]
  },

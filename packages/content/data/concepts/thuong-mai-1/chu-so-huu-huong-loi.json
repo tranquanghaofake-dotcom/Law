@@ -24,10 +24,13 @@
  ],
  "note": "Khoản 35 Điều 4 được bổ sung bởi Luật 76/2025/QH15 (hiệu lực 01/7/2025); câu chữ theo VBHN 67/VBHN-VPQH 2025.",
  "memo": {
-  "hook": "Người SỞ HỮU THẬT hoặc CHI PHỐI thật, không phải người đứng tên; để chống RỬA TIỀN.",
+  "gist": "Người thật sự sở hữu hoặc điều khiển công ty, dù người khác đứng tên; luật bắt công khai để chống rửa tiền.",
+  "kind": "tree",
+  "hook": "Như người giật dây con rối: khán giả thấy con rối, luật muốn thấy bàn tay.",
   "tree": [
    {
     "label": "Là",
+    "icon": "👤",
     "children": [
      "Cá nhân",
      "Sở hữu thực tế vốn điều lệ",
@@ -36,6 +39,7 @@
    },
    {
     "label": "Mục đích",
+    "icon": "🔍",
     "children": [
      "Minh bạch",
      "Phòng chống rửa tiền"
@@ -43,15 +47,27 @@
    },
    {
     "label": "Doanh nghiệp phải",
+    "icon": "📋",
     "children": [
      "Thu thập, lưu giữ, cung cấp thông tin"
     ]
    },
    {
     "label": "Hiệu lực",
+    "icon": "📅",
     "children": [
      "Từ 01/7/2025"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ông A nhờ người thân đứng tên 90% vốn, nhưng ông bỏ tiền và quyết mọi việc. Ai là chủ sở hữu hưởng lợi?",
+   "a": "Ông A."
+  },
+  "contrast": [
+   {
+    "with": "nguoi-quan-ly-doanh-nghiep",
+    "text": "Chủ sở hữu hưởng lợi là người nắm thật phía sau; người quản lý là người giữ chức danh điều hành."
    }
   ]
  },

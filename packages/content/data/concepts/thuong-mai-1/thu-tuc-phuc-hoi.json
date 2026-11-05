@@ -5,7 +5,7 @@
  "term": "Thủ tục phục hồi và phương án phục hồi",
  "definition": "Người có quyền nộp đơn yêu cầu áp dụng thủ tục phục hồi khi doanh nghiệp, hợp tác xã có nguy cơ mất hoặc mất khả năng thanh toán bao gồm: a) Người đại diện theo pháp luật của doanh nghiệp, hợp tác xã; (…) c) Đại hội thành viên của hợp tác xã; d) Chủ doanh nghiệp tư nhân, chủ sở hữu công ty trách nhiệm hữu hạn một thành viên. (…) Phương án phục hồi hoạt động kinh doanh của doanh nghiệp, hợp tác xã phải nêu rõ biện pháp để phục hồi hoạt động kinh doanh không trái quy định của pháp luật; điều kiện, thời hạn và kế hoạch thanh toán khoản nợ.",
  "plain": "Chỉ \"NỘI BỘ\" doanh nghiệp mới được yêu cầu PHỤC HỒI (người đại diện theo pháp luật, HĐQT, HĐTV, Đại hội thành viên HTX, chủ DNTN, chủ sở hữu công ty TNHH một thành viên) — chủ nợ không có quyền này. Áp dụng cả khi mới có NGUY CƠ mất khả năng thanh toán. Phương án phục hồi trình HỘI NGHỊ CHỦ NỢ (Điều 33) và kế hoạch trả nợ ưu tiên: chi phí phục hồi → nợ lương, bảo hiểm, quyền lợi người lao động → nợ phát sinh để phục hồi → nợ có bảo đảm → nợ khác (khoản 2 Điều 28).",
- "example": "Công ty TNHH một thành viên khó khăn vì đơn hàng sụt giảm, nợ sắp đến hạn: chủ sở hữu công ty nộp đơn yêu cầu thủ tục phục hồi kèm phương án giãn nợ, bán bớt tài sản không cần thiết.",
+ "example": "Công ty trách nhiệm hữu hạn một thành viên khó khăn vì đơn hàng sụt giảm, nợ sắp đến hạn: chủ sở hữu nộp đơn yêu cầu phục hồi kèm phương án giãn nợ, bán bớt tài sản không cần thiết.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1 Điều 24; khoản 1 Điều 28 Luật Phục hồi, phá sản 2025 (142/2025/QH15)",
@@ -25,28 +25,43 @@
  ],
  "note": "Luật Phục hồi, phá sản 142/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Phá sản 51/2014/QH13 (khoản 2 Điều 87); riêng khoản 3 Điều 38 (cơ quan quản lý thuế nộp đơn) có hiệu lực từ 01/7/2026.",
  "memo": {
-  "hook": "Chỉ NỘI BỘ doanh nghiệp được xin PHỤC HỒI; chủ nợ thì không.",
+  "gist": "Chỉ người trong doanh nghiệp được xin phục hồi khi khó khăn trả nợ, kèm phương án trình hội nghị chủ nợ.",
+  "kind": "steps",
+  "hook": "Người bệnh tự xin chữa; hàng xóm chỉ được gọi xe tang.",
   "tree": [
    {
     "label": "Ai nộp",
+    "icon": "🙋",
     "children": [
      "Người đại diện theo pháp luật",
-     "HĐQT, HĐTV, chủ sở hữu",
-     "Đại hội thành viên HTX"
+     "Hội đồng quản lý, chủ sở hữu",
+     "Đại hội thành viên hợp tác xã"
     ]
    },
    {
     "label": "Khi nào",
+    "icon": "⏰",
     "children": [
      "Nguy cơ mất hoặc mất khả năng thanh toán"
     ]
    },
    {
     "label": "Phương án",
+    "icon": "📋",
     "children": [
      "Trình Hội nghị chủ nợ",
      "Kế hoạch trả nợ"
     ]
+   }
+  ],
+  "case": {
+   "q": "Chủ nợ muốn yêu cầu mở thủ tục phục hồi cho doanh nghiệp đang nợ mình. Có được không?",
+   "a": "Không. Chỉ người đại diện, chủ sở hữu, hội đồng quản lý mới được nộp."
+  },
+  "contrast": [
+   {
+    "with": "nguoi-nop-don-pha-san",
+    "text": "Phục hồi chỉ người trong doanh nghiệp được nộp; phá sản thì chủ nợ, người lao động cũng được nộp."
    }
   ]
  },

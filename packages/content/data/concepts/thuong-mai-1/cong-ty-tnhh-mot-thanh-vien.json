@@ -5,7 +5,7 @@
  "term": "Công ty trách nhiệm hữu hạn một thành viên",
  "definition": "Công ty trách nhiệm hữu hạn một thành viên là doanh nghiệp do một tổ chức hoặc một cá nhân làm chủ sở hữu (sau đây gọi là chủ sở hữu công ty). Chủ sở hữu công ty chịu trách nhiệm về các khoản nợ và nghĩa vụ tài sản khác của công ty trong phạm vi số vốn điều lệ của công ty. Công ty trách nhiệm hữu hạn một thành viên có tư cách pháp nhân kể từ ngày được cấp Giấy chứng nhận đăng ký doanh nghiệp. Công ty trách nhiệm hữu hạn một thành viên không được phát hành cổ phần, trừ trường hợp để chuyển đổi thành công ty cổ phần.",
  "plain": "MỘT chủ sở hữu (tổ chức HOẶC cá nhân); trách nhiệm HỮU HẠN trong VỐN ĐIỀU LỆ; CÓ tư cách pháp nhân; không phát hành cổ phần (trừ để chuyển đổi), được phát hành TRÁI PHIẾU. So với DNTN: cùng một chủ nhưng TNHH một thành viên chỉ chịu trách nhiệm hữu hạn và có tài sản tách bạch. Chủ sở hữu phải TÁCH BIỆT tài sản cá nhân với tài sản công ty (Điều 77).",
- "example": "Chị A lập công ty TNHH một thành viên vốn điều lệ 2 tỷ: nếu công ty phá sản, chị chỉ mất 2 tỷ vốn đã góp, tài sản riêng không bị dùng trả nợ công ty (nếu đã tách bạch).",
+ "example": "Chị A lập công ty trách nhiệm hữu hạn một thành viên vốn 2 tỷ: nếu công ty phá sản, chị chỉ mất 2 tỷ đã góp, tài sản riêng không bị dùng trả nợ công ty nếu đã tách bạch.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1–3 Điều 74 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)",
@@ -23,32 +23,48 @@
   "không phát hành cổ phần"
  ],
  "memo": {
-  "hook": "MỘT chủ; HỮU HẠN; có PHÁP NHÂN — khác doanh nghiệp tư nhân.",
+  "gist": "Công ty do một người hay một tổ chức làm chủ, có pháp nhân, chủ chỉ chịu trong số vốn điều lệ.",
+  "kind": "tree",
+  "hook": "Một mình làm chủ mà vẫn có áo giáp; khác hẳn chủ doanh nghiệp tư nhân cởi trần.",
   "tree": [
    {
     "label": "Chủ sở hữu",
+    "icon": "👤",
     "children": [
      "Một tổ chức hoặc một cá nhân"
     ]
    },
    {
     "label": "Trách nhiệm",
+    "icon": "🛡️",
     "children": [
      "Trong phạm vi vốn điều lệ"
     ]
    },
    {
     "label": "Tư cách",
+    "icon": "🏛️",
     "children": [
      "Có pháp nhân"
     ]
    },
    {
     "label": "Phát hành",
+    "icon": "📜",
     "children": [
      "Không cổ phần",
      "Được trái phiếu"
     ]
+   }
+  ],
+  "case": {
+   "q": "Chị A lập công ty một thành viên vốn 2 tỷ, công ty phá sản. Nhà riêng của chị có bị dùng trả nợ không?",
+   "a": "Không, nếu tài sản đã tách bạch; chị chỉ mất 2 tỷ đã góp."
+  },
+  "contrast": [
+   {
+    "with": "doanh-nghiep-tu-nhan",
+    "text": "Một thành viên có pháp nhân, chịu hữu hạn; doanh nghiệp tư nhân không pháp nhân, chịu vô hạn."
    }
   ]
  },

@@ -5,7 +5,7 @@
  "term": "Vốn góp tối đa và biểu quyết trong hợp tác xã",
  "definition": "Phần vốn góp của thành viên chính thức được thực hiện theo thỏa thuận và theo quy định của Luật này và Điều lệ về vốn góp tối thiểu và vốn góp tối đa. Vốn góp tối đa không quá 30% vốn điều lệ đối với hợp tác xã và không quá 40% vốn điều lệ đối với liên hiệp hợp tác xã. (…) Đối với Đại hội thành viên của hợp tác xã, mỗi thành viên chính thức tham dự đại hội toàn thể có một phiếu biểu quyết có giá trị ngang nhau, không phụ thuộc vào phần vốn góp hay chức vụ thành viên.",
  "plain": "Hai cơ chế bảo đảm HTX không bị một người chi phối: TRẦN VỐN GÓP (≤ 30% vốn điều lệ HTX, ≤ 40% với liên hiệp) và MỖI THÀNH VIÊN MỘT PHIẾU tại Đại hội thành viên toàn thể. Vượt vốn góp tối đa liên tục 12 tháng có thể bị thu hồi Giấy chứng nhận đăng ký (điểm đ khoản 1 Điều 103). Nội dung quan trọng (sửa Điều lệ, đổi tổ chức quản trị…) cần ít nhất 65% tổng số phiếu biểu quyết tán thành (khoản 2 Điều 61).",
- "example": "HTX có vốn điều lệ 2 tỷ đồng: một thành viên chính thức chỉ được góp tối đa 600 triệu đồng và dù góp bao nhiêu vẫn chỉ có một phiếu tại đại hội toàn thể.",
+ "example": "Hợp tác xã có vốn điều lệ 2 tỷ đồng: một thành viên chính thức chỉ được góp tối đa 600 triệu và dù góp bao nhiêu vẫn chỉ có một phiếu tại đại hội.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1 Điều 74; khoản 4 Điều 61 Luật Hợp tác xã 2023 (sửa đổi, bổ sung năm 2025)",
@@ -24,17 +24,21 @@
   "không phụ thuộc vào phần vốn góp"
  ],
  "memo": {
-  "hook": "Trần vốn 30% (liên hiệp 40%) + MỖI thành viên MỘT phiếu.",
+  "gist": "Một thành viên góp tối đa 30% vốn điều lệ hợp tác xã, và dù góp bao nhiêu cũng chỉ có một phiếu.",
+  "kind": "tree",
+  "hook": "Góp nhiều không mua được nhiều phiếu: mỗi người một bàn tay giơ lên.",
   "tree": [
    {
     "label": "Vốn góp tối đa",
+    "icon": "💰",
     "children": [
-     "HTX: ≤ 30% vốn điều lệ",
-     "Liên hiệp: ≤ 40%"
+     "Hợp tác xã: không quá 30% vốn điều lệ",
+     "Liên hiệp: không quá 40%"
     ]
    },
    {
     "label": "Biểu quyết",
+    "icon": "🗳️",
     "children": [
      "Mỗi thành viên một phiếu",
      "Không phụ thuộc vốn"
@@ -42,9 +46,20 @@
    },
    {
     "label": "Vượt trần 12 tháng",
+    "icon": "⚠️",
     "children": [
      "Có thể bị thu hồi giấy"
     ]
+   }
+  ],
+  "case": {
+   "q": "Hợp tác xã có vốn điều lệ 2 tỷ. Một thành viên góp tối đa bao nhiêu và có mấy phiếu?",
+   "a": "Tối đa 600 triệu, và chỉ một phiếu."
+  },
+  "contrast": [
+   {
+    "with": "co-phan",
+    "text": "Hợp tác xã mỗi người một phiếu; công ty cổ phần biểu quyết theo số cổ phần."
    }
   ]
  },

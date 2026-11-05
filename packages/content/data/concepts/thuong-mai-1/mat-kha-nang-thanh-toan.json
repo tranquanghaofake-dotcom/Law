@@ -5,7 +5,7 @@
  "term": "Mất khả năng thanh toán và phá sản",
  "definition": "Doanh nghiệp, hợp tác xã có nguy cơ mất khả năng thanh toán là doanh nghiệp, hợp tác xã không thanh toán được khoản nợ sẽ đến hạn trong 06 tháng hoặc khoản nợ đã đến hạn nhưng chưa quá 06 tháng. Doanh nghiệp, hợp tác xã mất khả năng thanh toán là doanh nghiệp, hợp tác xã không thực hiện nghĩa vụ thanh toán khoản nợ sau thời hạn 06 tháng kể từ ngày đến hạn thanh toán. (…) Phá sản là tình trạng của doanh nghiệp, hợp tác xã mất khả năng thanh toán và đã có quyết định tuyên bố phá sản của Tòa án.",
  "plain": "Hai ngưỡng: NGUY CƠ mất khả năng thanh toán (nợ sẽ đến hạn trong 06 tháng hoặc quá hạn chưa đến 06 tháng) → mở đường cho THỦ TỤC PHỤC HỒI; MẤT khả năng thanh toán (không trả nợ sau 06 tháng kể từ ngày đến hạn) → có thể yêu cầu thủ tục phá sản. Luật Phá sản 2014 (hết hiệu lực từ 01/3/2026) dùng mốc 03 tháng. PHÁ SẢN chỉ là tình trạng pháp lý khi đã có QUYẾT ĐỊNH TUYÊN BỐ PHÁ SẢN của Tòa án — mất khả năng thanh toán chưa phải là phá sản.",
- "example": "Công ty X nợ ngân hàng khoản vay đến hạn 01/3; đến 15/9 vẫn chưa trả: đã quá 06 tháng nên X mất khả năng thanh toán, nhưng X chỉ \"phá sản\" khi Tòa án ra quyết định tuyên bố phá sản.",
+ "example": "Công ty X nợ ngân hàng khoản vay đến hạn ngày 1 tháng 3; đến 15 tháng 9 vẫn chưa trả: đã quá 6 tháng nên X mất khả năng thanh toán, nhưng chỉ phá sản khi Tòa án tuyên bố.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1, 2, 4 Điều 5 Luật Phục hồi, phá sản 2025 (142/2025/QH15)",
@@ -25,28 +25,43 @@
  ],
  "note": "Luật Phục hồi, phá sản 142/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Phá sản 51/2014/QH13 (khoản 2 Điều 87); riêng khoản 3 Điều 38 (cơ quan quản lý thuế nộp đơn) có hiệu lực từ 01/7/2026.",
  "memo": {
-  "hook": "NGUY CƠ (sắp nợ) → PHỤC HỒI; MẤT khả năng (quá 6 THÁNG) → PHÁ SẢN.",
+  "gist": "Nợ đến hạn quá 6 tháng không trả được là mất khả năng thanh toán; sắp không trả được là có nguy cơ.",
+  "kind": "steps",
+  "hook": "Đèn vàng thì sửa xe, đèn đỏ thì gọi Tòa.",
   "tree": [
    {
     "label": "Nguy cơ mất khả năng",
+    "icon": "🟡",
     "children": [
      "Nợ sẽ đến hạn trong 06 tháng",
      "Quá hạn chưa đến 06 tháng",
-     "→ thủ tục phục hồi"
+     "Dẫn tới thủ tục phục hồi"
     ]
    },
    {
     "label": "Mất khả năng",
+    "icon": "🔴",
     "children": [
      "Không trả nợ sau 06 tháng",
-     "→ yêu cầu phá sản"
+     "Dẫn tới yêu cầu phá sản"
     ]
    },
    {
     "label": "Phá sản",
+    "icon": "⚖️",
     "children": [
      "Chỉ khi Tòa án tuyên bố"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty nợ khoản đến hạn ngày 1 tháng 3, đến 15 tháng 9 chưa trả. Công ty đã phá sản chưa?",
+   "a": "Chưa. Mới mất khả năng thanh toán; chỉ phá sản khi Tòa tuyên."
+  },
+  "contrast": [
+   {
+    "with": "giai-the-doanh-nghiep",
+    "text": "Mất khả năng thanh toán dẫn tới phá sản; giải thể là tự đóng cửa khi vẫn trả được nợ."
    }
   ]
  },

@@ -5,7 +5,7 @@
  "term": "Doanh nghiệp",
  "definition": "Doanh nghiệp là tổ chức có tên riêng, có tài sản, có trụ sở giao dịch, được thành lập hoặc đăng ký thành lập theo quy định của pháp luật nhằm mục đích kinh doanh.",
  "plain": "Bốn dấu hiệu: TÊN RIÊNG, TÀI SẢN, TRỤ SỞ GIAO DỊCH, THÀNH LẬP/ĐĂNG KÝ hợp pháp — và MỤC ĐÍCH KINH DOANH. Năm loại hình: TNHH một thành viên, TNHH hai thành viên trở lên, CỔ PHẦN, HỢP DANH (có tư cách pháp nhân) và DOANH NGHIỆP TƯ NHÂN (không có tư cách pháp nhân). Doanh nghiệp là một loại THƯƠNG NHÂN (Điều 6 Luật Thương mại). Hộ kinh doanh KHÔNG phải doanh nghiệp.",
- "example": "Một quán cà phê đăng ký hộ kinh doanh không phải doanh nghiệp; nếu đăng ký thành công ty TNHH thì trở thành doanh nghiệp có tư cách pháp nhân.",
+ "example": "Một quán cà phê đăng ký hộ kinh doanh không phải doanh nghiệp; nếu đăng ký thành công ty trách nhiệm hữu hạn thì trở thành doanh nghiệp có tư cách pháp nhân.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 10 Điều 4 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)",
@@ -23,10 +23,13 @@
   "mục đích kinh doanh"
  ],
  "memo": {
-  "hook": "Bốn dấu hiệu: TÊN – TÀI SẢN – TRỤ SỞ – ĐĂNG KÝ; năm loại hình.",
+  "gist": "Doanh nghiệp là tổ chức có tên, tài sản, trụ sở, đăng ký thành lập để kinh doanh.",
+  "kind": "tree",
+  "hook": "Bốn giấy tờ của một cửa hàng thật: biển tên, vốn, địa chỉ, giấy phép.",
   "tree": [
    {
     "label": "Dấu hiệu",
+    "icon": "🔎",
     "children": [
      "Tên riêng",
      "Tài sản",
@@ -36,22 +39,35 @@
    },
    {
     "label": "Mục đích",
+    "icon": "🎯",
     "children": [
      "Kinh doanh"
     ]
    },
    {
     "label": "Có pháp nhân",
+    "icon": "🏛️",
     "children": [
-     "TNHH một, hai thành viên",
+     "Trách nhiệm hữu hạn một, hai thành viên",
      "Cổ phần, hợp danh"
     ]
    },
    {
     "label": "Không pháp nhân",
+    "icon": "🚫",
     "children": [
      "Doanh nghiệp tư nhân"
     ]
+   }
+  ],
+  "case": {
+   "q": "Quán cà phê đăng ký hộ kinh doanh có phải doanh nghiệp không?",
+   "a": "Không. Chỉ khi đăng ký thành công ty mới là doanh nghiệp."
+  },
+  "contrast": [
+   {
+    "with": "ho-kinh-doanh",
+    "text": "Doanh nghiệp có năm loại hình theo Luật Doanh nghiệp; hộ kinh doanh không phải doanh nghiệp."
    }
   ]
  },

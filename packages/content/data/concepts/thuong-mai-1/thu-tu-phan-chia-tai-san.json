@@ -25,10 +25,13 @@
  ],
  "note": "Luật Phục hồi, phá sản 142/2025/QH15 có hiệu lực từ 01/3/2026, thay thế Luật Phá sản 51/2014/QH13 (khoản 2 Điều 87); riêng khoản 3 Điều 38 (cơ quan quản lý thuế nộp đơn) có hiệu lực từ 01/7/2026.",
  "memo": {
-  "hook": "Thứ tự: CHI PHÍ PHÁ SẢN → LƯƠNG → BẢO HIỂM → … → NHÀ NƯỚC → nợ không bảo đảm.",
+  "gist": "Phá sản thì trả theo thứ tự: chi phí phá sản, lương, bảo hiểm, rồi Nhà nước, cuối cùng chủ nợ không bảo đảm.",
+  "kind": "ladder",
+  "hook": "Như xếp hàng nhận cứu trợ: người làm việc cho công ty đứng trước, chủ nợ thường đứng cuối.",
   "tree": [
    {
     "label": "Trước",
+    "icon": "1️⃣",
     "children": [
      "Chi phí phá sản",
      "Nợ lương",
@@ -37,6 +40,7 @@
    },
    {
     "label": "Tiếp",
+    "icon": "2️⃣",
     "children": [
      "Quyền lợi người lao động",
      "Nợ phát sinh để phục hồi"
@@ -44,6 +48,7 @@
    },
    {
     "label": "Sau",
+    "icon": "3️⃣",
     "children": [
      "Nghĩa vụ với Nhà nước",
      "Nợ không có bảo đảm"
@@ -51,9 +56,20 @@
    },
    {
     "label": "Không đủ",
+    "icon": "➗",
     "children": [
      "Chia theo tỷ lệ cùng hàng"
     ]
+   }
+  ],
+  "case": {
+   "q": "Sau chi phí và nợ lương, còn 1 tỷ nhưng nợ bảo hiểm của người lao động là 2 tỷ. Chủ nợ không bảo đảm nhận được gì?",
+   "a": "Không nhận được gì; khoản bảo hiểm cũng chỉ được trả 50%."
+  },
+  "contrast": [
+   {
+    "with": "hoi-nghi-chu-no",
+    "text": "Thứ tự phân chia là ai được trả trước; hội nghị chủ nợ là nơi chủ nợ biểu quyết."
    }
   ]
  },

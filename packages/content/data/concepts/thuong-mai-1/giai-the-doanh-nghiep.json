@@ -5,7 +5,7 @@
  "term": "Các trường hợp giải thể doanh nghiệp",
  "definition": "Doanh nghiệp bị giải thể trong trường hợp sau đây: a) Kết thúc thời hạn hoạt động đã ghi trong Điều lệ công ty mà không có quyết định gia hạn; b) Theo nghị quyết, quyết định của chủ doanh nghiệp đối với doanh nghiệp tư nhân, của Hội đồng thành viên đối với công ty hợp danh, của Hội đồng thành viên, chủ sở hữu công ty đối với công ty trách nhiệm hữu hạn, của Đại hội đồng cổ đông đối với công ty cổ phần; c) Công ty không còn đủ số lượng thành viên, cổ đông tối thiểu theo quy định của Luật này trong thời hạn 06 tháng liên tục mà không làm thủ tục chuyển đổi loại hình doanh nghiệp;",
  "plain": "Các trường hợp: HẾT THỜI HẠN hoạt động không gia hạn; TỰ NGUYỆN theo quyết định của chủ sở hữu, Hội đồng thành viên, ĐHĐCĐ; KHÔNG ĐỦ SỐ THÀNH VIÊN TỐI THIỂU trong 06 THÁNG liên tục mà không chuyển đổi; BỊ THU HỒI Giấy chứng nhận đăng ký doanh nghiệp (trừ trường hợp Luật Quản lý thuế có quy định khác). ĐIỀU KIỆN giải thể (khoản 2): bảo đảm THANH TOÁN HẾT các khoản nợ, nghĩa vụ tài sản và không trong quá trình giải quyết tranh chấp. Không thanh toán được nợ → PHÁ SẢN (Luật Phục hồi, phá sản), không phải giải thể.",
- "example": "Công ty cổ phần chỉ còn 2 cổ đông trong 7 tháng liên tục mà không chuyển đổi sang công ty TNHH: thuộc trường hợp giải thể (điểm c khoản 1 Điều 207).",
+ "example": "Công ty cổ phần chỉ còn 2 cổ đông trong 7 tháng liên tục mà không chuyển đổi sang công ty trách nhiệm hữu hạn: thuộc trường hợp giải thể (điểm c khoản 1 Điều 207).",
  "source": {
   "kind": "statute",
   "cite": "Điểm a–c khoản 1 Điều 207 Luật Doanh nghiệp 2020 (sửa đổi, bổ sung năm 2022, 2025)",
@@ -23,10 +23,13 @@
   "bị thu hồi Giấy chứng nhận"
  ],
  "memo": {
-  "hook": "Giải thể khi HẾT HẠN, TỰ NGUYỆN, THIẾU THÀNH VIÊN 6 tháng, bị THU HỒI giấy; phải TRẢ HẾT NỢ.",
+  "gist": "Doanh nghiệp tự đóng cửa khi hết hạn, tự quyết, thiếu thành viên 6 tháng hoặc bị thu hồi giấy; phải trả hết nợ.",
+  "kind": "tree",
+  "hook": "Đóng cửa êm thấm thì phải trả hết nợ; không trả nổi thì là phá sản.",
   "tree": [
    {
     "label": "Trường hợp",
+    "icon": "🚪",
     "children": [
      "Hết thời hạn hoạt động",
      "Tự nguyện theo quyết định",
@@ -36,10 +39,21 @@
    },
    {
     "label": "Điều kiện",
+    "icon": "✅",
     "children": [
      "Thanh toán hết nợ",
      "Không đang giải quyết tranh chấp"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty cổ phần chỉ còn 2 cổ đông trong 7 tháng liên tục, không chuyển đổi. Hậu quả là gì?",
+   "a": "Thuộc trường hợp phải giải thể."
+  },
+  "contrast": [
+   {
+    "with": "nguyen-tac-phuc-hoi-pha-san",
+    "text": "Giải thể là doanh nghiệp tự đóng cửa khi trả được nợ; phá sản do Tòa tuyên khi mất khả năng trả nợ."
    }
   ]
  },

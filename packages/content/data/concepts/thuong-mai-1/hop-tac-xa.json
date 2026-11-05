@@ -24,10 +24,13 @@
   "tổ hợp tác ít nhất 02 thành viên"
  ],
  "memo": {
-  "hook": "Ba mức: TỔ HỢP TÁC (≥2, không pháp nhân) → HỢP TÁC XÃ (≥5) → LIÊN HIỆP (≥3 HTX).",
+  "gist": "Ít nhất 5 thành viên tự nguyện lập tổ chức có pháp nhân để giúp nhau làm ăn, đáp ứng nhu cầu chung.",
+  "kind": "ladder",
+  "hook": "Ba nấc góp gạo: nhóm nhỏ, cả xóm, rồi các xóm liên kết.",
   "tree": [
    {
     "label": "Tổ hợp tác",
+    "icon": "🤝",
     "children": [
      "Ít nhất 02 thành viên",
      "Không có pháp nhân"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Hợp tác xã",
+    "icon": "🏘️",
     "children": [
      "Ít nhất 05 thành viên chính thức",
      "Có pháp nhân"
@@ -42,15 +46,27 @@
    },
    {
     "label": "Liên hiệp",
+    "icon": "🔗",
     "children": [
      "Ít nhất 03 hợp tác xã"
     ]
    },
    {
     "label": "Mục đích",
+    "icon": "🎯",
     "children": [
      "Nhu cầu chung của thành viên"
     ]
+   }
+  ],
+  "case": {
+   "q": "Bảy hộ trồng thanh long góp vốn lập tổ chức có pháp nhân để mua phân và tiêu thụ chung. Đây là gì?",
+   "a": "Hợp tác xã."
+  },
+  "contrast": [
+   {
+    "with": "nguyen-tac-hop-tac-xa",
+    "text": "Hợp tác xã là tổ chức; nguyên tắc là cách nó vận hành, như mỗi người một phiếu."
    }
   ]
  },

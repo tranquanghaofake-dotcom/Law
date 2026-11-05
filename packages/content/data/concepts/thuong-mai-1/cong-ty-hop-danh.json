@@ -23,10 +23,13 @@
   "có tư cách pháp nhân"
  ],
  "memo": {
-  "hook": "Thành viên HỢP DANH: cá nhân, VÔ HẠN, LIÊN ĐỚI; thành viên GÓP VỐN: hữu hạn.",
+  "gist": "Ít nhất 2 thành viên hợp danh là cá nhân, chịu trách nhiệm bằng mọi tài sản; có thể thêm thành viên góp vốn.",
+  "kind": "compare",
+  "hook": "Như cùng ký bảo lãnh: nợ của nhóm thì ai cũng phải trả hết.",
   "tree": [
    {
     "label": "Thành viên hợp danh",
+    "icon": "🤝",
     "children": [
      "Ít nhất 02",
      "Phải là cá nhân",
@@ -35,6 +38,7 @@
    },
    {
     "label": "Thành viên góp vốn",
+    "icon": "💼",
     "children": [
      "Không bắt buộc",
      "Trách nhiệm hữu hạn",
@@ -43,9 +47,20 @@
    },
    {
     "label": "Đặc biệt",
+    "icon": "⭐",
     "children": [
      "Có tư cách pháp nhân"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ba luật sư lập công ty luật hợp danh. Công ty nợ quá tài sản. Các luật sư có phải trả bằng tài sản riêng không?",
+   "a": "Có. Thành viên hợp danh chịu trách nhiệm vô hạn và liên đới."
+  },
+  "contrast": [
+   {
+    "with": "doanh-nghiep-tu-nhan",
+    "text": "Hợp danh có ít nhất hai người và có pháp nhân; doanh nghiệp tư nhân một người, không có pháp nhân."
    }
   ]
  },

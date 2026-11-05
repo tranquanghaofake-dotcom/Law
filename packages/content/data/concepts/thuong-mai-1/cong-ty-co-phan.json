@@ -24,16 +24,20 @@
   "tự do chuyển nhượng cổ phần"
  ],
  "memo": {
-  "hook": "Đối vốn điển hình: ≥ 3 CỔ ĐÔNG, HỮU HẠN, TỰ DO chuyển nhượng, được PHÁT HÀNH cổ phần.",
+  "gist": "Vốn chia thành cổ phần bằng nhau, ít nhất 3 cổ đông, chịu trách nhiệm trong phần đã góp, bán cổ phần tự do.",
+  "kind": "tree",
+  "hook": "Như chiếc bánh chia đều miếng: ai mua miếng nào chỉ mất miếng đó.",
   "tree": [
    {
     "label": "Vốn",
+    "icon": "🍰",
     "children": [
      "Chia thành cổ phần bằng nhau"
     ]
    },
    {
     "label": "Cổ đông",
+    "icon": "👥",
     "children": [
      "Tối thiểu 03",
      "Không giới hạn tối đa"
@@ -41,16 +45,28 @@
    },
    {
     "label": "Trách nhiệm",
+    "icon": "🛡️",
     "children": [
      "Trong phạm vi vốn đã góp"
     ]
    },
    {
     "label": "Đặc quyền",
+    "icon": "⭐",
     "children": [
      "Tự do chuyển nhượng",
      "Phát hành cổ phần, trái phiếu"
     ]
+   }
+  ],
+  "case": {
+   "q": "Cổ đông công ty niêm yết có phải trả nợ công ty bằng tài sản riêng không?",
+   "a": "Không. Chỉ chịu trong phạm vi số vốn đã góp."
+  },
+  "contrast": [
+   {
+    "with": "cong-ty-tnhh-hai-thanh-vien",
+    "text": "Cổ phần không giới hạn số cổ đông, bán vốn tự do; trách nhiệm hữu hạn tối đa 50 thành viên, bán vốn phải chào người trong trước."
    }
   ]
  },

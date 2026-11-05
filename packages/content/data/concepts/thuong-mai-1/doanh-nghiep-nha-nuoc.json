@@ -23,10 +23,13 @@
   "100% vốn nhà nước"
  ],
  "memo": {
-  "hook": "Nhà nước nắm TRÊN 50% vốn (Luật 2014: 100%).",
+  "gist": "Doanh nghiệp nhà nước là doanh nghiệp Nhà nước nắm trên 50% vốn điều lệ hoặc cổ phần có quyền biểu quyết.",
+  "kind": "tree",
+  "hook": "Ai cầm quá nửa phiếu thì người đó làm chủ nhà.",
   "tree": [
    {
     "label": "Tiêu chí",
+    "icon": "📊",
     "children": [
      "Trên 50% vốn điều lệ",
      "Hoặc trên 50% cổ phần biểu quyết"
@@ -34,13 +37,15 @@
    },
    {
     "label": "Hình thức",
+    "icon": "🏢",
     "children": [
-     "Công ty TNHH",
+     "Công ty trách nhiệm hữu hạn",
      "Công ty cổ phần"
     ]
    },
    {
     "label": "Hai nhóm",
+    "icon": "➗",
     "children": [
      "100% vốn nhà nước",
      "Trên 50%"
@@ -48,9 +53,20 @@
    },
    {
     "label": "Nghĩa vụ",
+    "icon": "📢",
     "children": [
      "Công bố thông tin"
     ]
+   }
+  ],
+  "case": {
+   "q": "Nhà nước sở hữu 65% cổ phần có quyền biểu quyết của một công ty cổ phần. Có phải doanh nghiệp nhà nước không?",
+   "a": "Có, theo Luật Doanh nghiệp 2020."
+  },
+  "contrast": [
+   {
+    "with": "cong-ty-me-con",
+    "text": "Doanh nghiệp nhà nước xét Nhà nước nắm bao nhiêu; mẹ con xét công ty này nắm công ty kia."
    }
   ]
  },

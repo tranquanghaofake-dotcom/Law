@@ -5,7 +5,7 @@
  "term": "Hộ kinh doanh",
  "definition": "Hộ kinh doanh do một cá nhân hoặc các thành viên hộ gia đình đăng ký thành lập và chịu trách nhiệm bằng toàn bộ tài sản của mình đối với hoạt động kinh doanh của hộ. (…) Cá nhân, thành viên hộ gia đình là công dân Việt Nam có năng lực hành vi dân sự đầy đủ theo quy định của Bộ luật Dân sự có quyền thành lập hộ kinh doanh theo quy định tại Nghị định này, trừ các trường hợp sau đây: (…) Chủ hộ kinh doanh, thành viên hộ gia đình đăng ký hộ kinh doanh không được đồng thời là chủ doanh nghiệp tư nhân.",
  "plain": "Hộ kinh doanh KHÔNG phải doanh nghiệp, KHÔNG có tư cách pháp nhân; chủ thể: MỘT CÁ NHÂN hoặc CÁC THÀNH VIÊN HỘ GIA ĐÌNH (công dân Việt Nam, năng lực hành vi dân sự đầy đủ); trách nhiệm VÔ HẠN bằng toàn bộ tài sản; các thành viên chịu trách nhiệm LIÊN ĐỚI (khoản 1 Điều 84). Mỗi người chỉ đăng ký MỘT hộ kinh doanh trên toàn quốc (khoản 1 Điều 83). Đăng ký tại Cơ quan đăng ký kinh doanh CẤP XÃ (Điều 85). So với doanh nghiệp tư nhân: giống ở trách nhiệm vô hạn, khác ở chỗ hộ kinh doanh có thể do nhiều thành viên hộ gia đình lập và không chịu Luật Doanh nghiệp điều chỉnh trực tiếp. Hộ sản xuất nông, lâm, ngư nghiệp, bán hàng rong, kinh doanh thời vụ… thu nhập thấp không phải đăng ký (khoản 3 Điều 82).",
- "example": "Chị D mở tiệm tạp hóa, đăng ký hộ kinh doanh tại UBND phường: khi tiệm nợ nhà cung cấp, chị phải trả bằng toàn bộ tài sản của mình, kể cả tài sản không dùng để kinh doanh.",
+ "example": "Chị D mở tiệm tạp hóa, đăng ký hộ kinh doanh tại Ủy ban nhân dân phường: khi tiệm nợ nhà cung cấp, chị phải trả bằng toàn bộ tài sản của mình, kể cả tài sản không dùng để kinh doanh.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1, 2 Điều 82; khoản 5 Điều 84 Nghị định 168/2025/NĐ-CP về đăng ký doanh nghiệp",
@@ -24,10 +24,13 @@
  ],
  "note": "Nghị định 168/2025/NĐ-CP có hiệu lực từ 01/7/2025, thay thế Nghị định 01/2021/NĐ-CP; được sửa đổi bởi Nghị định 296/2026/NĐ-CP (hiệu lực 23/7/2026) — theo tóm tắt, không sửa Điều 82, 84; chưa đối chiếu toàn văn Nghị định 296. Nghị định hướng dẫn Luật Doanh nghiệp 59/2020/QH14.",
  "memo": {
-  "hook": "Hộ kinh doanh KHÔNG phải doanh nghiệp, KHÔNG pháp nhân, VÔ HẠN.",
+  "gist": "Hộ kinh doanh do một người hoặc cả hộ gia đình đăng ký, không phải doanh nghiệp, chịu trách nhiệm bằng mọi tài sản.",
+  "kind": "tree",
+  "hook": "Như sạp hàng ngoài chợ: nhỏ gọn, nhưng nợ sạp là nợ cả nhà.",
   "tree": [
    {
     "label": "Chủ thể",
+    "icon": "👪",
     "children": [
      "Một cá nhân",
      "Hoặc thành viên hộ gia đình"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Trách nhiệm",
+    "icon": "♾️",
     "children": [
      "Vô hạn",
      "Thành viên liên đới"
@@ -42,6 +46,7 @@
    },
    {
     "label": "Tư cách",
+    "icon": "🚫",
     "children": [
      "Không phải doanh nghiệp",
      "Không có pháp nhân"
@@ -49,9 +54,20 @@
    },
    {
     "label": "Giới hạn",
+    "icon": "1️⃣",
     "children": [
      "Mỗi người một hộ"
     ]
+   }
+  ],
+  "case": {
+   "q": "Tiệm tạp hóa đăng ký hộ kinh doanh nợ nhà cung cấp. Chủ có phải trả bằng tài sản không dùng để kinh doanh không?",
+   "a": "Có. Hộ kinh doanh chịu trách nhiệm bằng toàn bộ tài sản."
+  },
+  "contrast": [
+   {
+    "with": "doanh-nghiep-tu-nhan",
+    "text": "Hộ kinh doanh không phải doanh nghiệp, có thể cả hộ cùng làm; doanh nghiệp tư nhân là doanh nghiệp của một người."
    }
   ]
  },

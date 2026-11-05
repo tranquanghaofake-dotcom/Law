@@ -22,16 +22,20 @@
   "cổ đông ưu đãi"
  ],
  "memo": {
-  "hook": "BẮT BUỘC có cổ phần PHỔ THÔNG; CÓ THỂ có cổ phần ƯU ĐÃI.",
+  "gist": "Công ty cổ phần bắt buộc có cổ phần phổ thông, có thể thêm cổ phần ưu đãi cổ tức, hoàn lại, biểu quyết.",
+  "kind": "tree",
+  "hook": "Như vé xem bóng đá: vé thường ai cũng có, vé hạng sang thì tùy chọn.",
   "tree": [
    {
     "label": "Bắt buộc",
+    "icon": "🎫",
     "children": [
      "Cổ phần phổ thông"
     ]
    },
    {
     "label": "Ưu đãi (tùy chọn)",
+    "icon": "⭐",
     "children": [
      "Ưu đãi cổ tức",
      "Ưu đãi hoàn lại",
@@ -41,9 +45,20 @@
    },
    {
     "label": "Biểu quyết",
+    "icon": "🗳️",
     "children": [
      "Chỉ cổ đông sáng lập, tổ chức được ủy quyền"
     ]
+   }
+  ],
+  "case": {
+   "q": "Nhà đầu tư chỉ muốn nhận cổ tức cố định cao, không quan tâm biểu quyết. Nên mua loại cổ phần nào?",
+   "a": "Cổ phần ưu đãi cổ tức."
+  },
+  "contrast": [
+   {
+    "with": "co-dong-sang-lap",
+    "text": "Cổ phần là loại phần vốn; cổ đông sáng lập là người lập công ty."
    }
   ]
  },
