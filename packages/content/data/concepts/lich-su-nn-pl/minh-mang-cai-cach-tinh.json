@@ -25,16 +25,20 @@
  ],
  "note": "Thẻ dạng tóm lược giáo trình, chưa có trích nguyên văn Hoàng Việt luật lệ hay Đại Nam thực lục; cần đối chiếu sách in trước khi dùng làm tài liệu chính.",
  "memo": {
-  "hook": "1831–1832: Minh Mạng bỏ Bắc thành, Gia Định thành, CHIA TỈNH để tập quyền.",
+  "gist": "Năm 1831 đến 1832 Minh Mạng bỏ Bắc thành, Gia Định thành, chia cả nước thành khoảng 30 tỉnh để tập trung quyền.",
+  "kind": "tree",
+  "hook": "Bỏ hai ông trấn lớn, chia nhỏ cho dễ cầm.",
   "tree": [
    {
     "label": "Mốc",
+    "icon": "📅",
     "children": [
      "1831–1832"
     ]
    },
    {
     "label": "Bỏ",
+    "icon": "🚫",
     "children": [
      "Bắc thành",
      "Gia Định thành"
@@ -42,6 +46,7 @@
    },
    {
     "label": "Chia",
+    "icon": "🗺️",
     "children": [
      "Khoảng 30 tỉnh",
      "Phủ Thừa Thiên"
@@ -49,10 +54,21 @@
    },
    {
     "label": "Quan tỉnh",
+    "icon": "👤",
     "children": [
      "Tổng đốc, Tuần phủ",
      "Bố chánh, Án sát"
     ]
+   }
+  ],
+  "case": {
+   "q": "Mục đích chính của cải cách chia tỉnh thời Minh Mạng là gì?",
+   "a": "Tập trung quyền lực về triều đình."
+  },
+  "contrast": [
+   {
+    "with": "thua-tuyen-1466",
+    "text": "Chia tỉnh thời Nguyễn năm 1831; mười ba đạo thừa tuyên thời Lê năm 1466."
    }
   ]
  },

@@ -25,16 +25,20 @@
   "Quảng Nam (1471)"
  ],
  "memo": {
-  "hook": "1466: chia 13 ĐẠO THỪA TUYÊN; lộ → PHỦ, trấn → CHÂU, xã quan → XÃ TRƯỞNG.",
+  "gist": "Năm 1466 Lê Thánh Tông chia cả nước thành 13 đạo thừa tuyên; đổi lộ thành phủ, trấn thành châu, xã quan thành xã trưởng.",
+  "kind": "tree",
+  "hook": "Đổi tên, kẻ lại bản đồ, mỗi vùng ba cơ quan kiềm nhau.",
   "tree": [
    {
     "label": "Mốc",
+    "icon": "📅",
     "children": [
      "1466; thêm Quảng Nam 1471"
     ]
    },
    {
     "label": "Chia",
+    "icon": "🗺️",
     "children": [
      "12 đạo",
      "Phủ Trung Đô"
@@ -42,17 +46,29 @@
    },
    {
     "label": "Đổi tên",
+    "icon": "🔄",
     "children": [
-     "Lộ → phủ",
-     "Trấn → châu",
-     "Xã quan → xã trưởng"
+     "Lộ thành phủ",
+     "Trấn thành châu",
+     "Xã quan thành xã trưởng"
     ]
    },
    {
     "label": "Mỗi thừa tuyên",
+    "icon": "3️⃣",
     "children": [
      "Ba ty"
     ]
+   }
+  ],
+  "case": {
+   "q": "Mỗi thừa tuyên thời Lê có mấy ty?",
+   "a": "Ba ty."
+  },
+  "contrast": [
+   {
+    "with": "luc-bo-1466",
+    "text": "Thừa tuyên là hành chính địa phương; Lục bộ là trung ương."
    }
   ]
  },

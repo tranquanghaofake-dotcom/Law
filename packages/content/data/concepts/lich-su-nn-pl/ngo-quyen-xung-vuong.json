@@ -5,7 +5,7 @@
  "term": "Nhà Ngô: Ngô Quyền xưng vương",
  "definition": "Kỷ Hợi, năm thứ 1 [939], (Tấn Thiên Phúc năm thứ 4). Mùa xuân, vua bắt đầu xưng vương, lập Dương thị làm hoàng hậu, đặt trăm quan, chế định triều nghi phẩm phục.",
  "plain": "Sau chiến thắng Bạch Đằng (938), năm 939 Ngô Quyền xưng VƯƠNG, đóng đô ở Cổ Loa, bỏ chức Tiết độ sứ, đặt trăm quan, chế định triều nghi, phẩm phục. Giáo trình coi đây là mốc mở đầu nhà nước phong kiến độc lập, tự chủ (mở đầu thời kỳ trung đại). Hạn chế: chỉ xưng vương, chưa đặt niên hiệu (Lê Văn Hưu nhận xét \"chưa lên ngôi đế, đổi niên hiệu\"); bộ máy còn đơn giản, sau khi Ngô Quyền mất (944) dẫn đến loạn 12 sứ quân.",
- "example": "Phân biệt: Khúc Hạo xưng TIẾT ĐỘ SỨ (chức quan phương Bắc), Ngô Quyền xưng VƯƠNG, Đinh Bộ Lĩnh xưng HOÀNG ĐẾ.",
+ "example": "Phân biệt: Khúc Hạo xưng Tiết độ sứ (chức quan phương Bắc), Ngô Quyền xưng vương, Đinh Bộ Lĩnh xưng hoàng đế.",
  "source": {
   "kind": "primary",
   "cite": "Đại Việt sử ký toàn thư, Ngoại kỷ, quyển V (bản dịch Viện KHXH Việt Nam, NXB KHXH 1993), Kỷ nhà Ngô, Tiền Ngô Vương, tờ 20b–21a",
@@ -25,16 +25,20 @@
   "triều nghi phẩm phục"
  ],
  "memo": {
-  "hook": "939: Ngô Quyền xưng VƯƠNG, đô CỔ LOA — mở đầu nhà nước độc lập.",
+  "gist": "Năm 939 sau chiến thắng Bạch Đằng, Ngô Quyền xưng vương, đóng đô Cổ Loa, mở đầu thời độc lập.",
+  "kind": "tree",
+  "hook": "Bước đầu tiên: bỏ chức quan của người ngoài, tự đội mũ vua.",
   "tree": [
    {
     "label": "Mốc",
+    "icon": "📅",
     "children": [
      "939, sau Bạch Đằng 938"
     ]
    },
    {
     "label": "Làm gì",
+    "icon": "👑",
     "children": [
      "Xưng vương",
      "Bỏ chức Tiết độ sứ",
@@ -43,15 +47,27 @@
    },
    {
     "label": "Kinh đô",
+    "icon": "🏯",
     "children": [
      "Cổ Loa"
     ]
    },
    {
     "label": "Hạn chế",
+    "icon": "⚠️",
     "children": [
      "Chưa xưng đế, đặt niên hiệu"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ngô Quyền xưng vương hay xưng đế?",
+   "a": "Xưng vương; chưa xưng đế, chưa đặt niên hiệu."
+  },
+  "contrast": [
+   {
+    "with": "dinh-dai-co-viet",
+    "text": "Ngô Quyền xưng vương; Đinh Bộ Lĩnh xưng đế."
    }
   ]
  },

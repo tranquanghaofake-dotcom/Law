@@ -24,10 +24,13 @@
  ],
  "note": "Thẻ dạng tóm lược giáo trình, chưa có trích nguyên văn Hoàng Việt luật lệ hay Đại Nam thực lục; cần đối chiếu sách in trước khi dùng làm tài liệu chính.",
  "memo": {
-  "hook": "Quốc triều hình luật: từ ĐƯỜNG LUẬT, SÁNG TẠO, bảo vệ PHỤ NỮ; Luật Gia Long: chép THANH LUẬT.",
+  "gist": "Quốc triều hình luật học Đường luật nhưng có sáng tạo, bảo vệ phụ nữ; Luật Gia Long chép phần lớn luật nhà Thanh.",
+  "kind": "compare",
+  "hook": "Một bên may đo theo dáng mình, một bên mặc áo may sẵn.",
   "tree": [
    {
     "label": "Giống",
+    "icon": "🤝",
     "children": [
      "Bộ luật tổng hợp",
      "Ngũ hình, thập ác, bát nghị",
@@ -36,6 +39,7 @@
    },
    {
     "label": "Quốc triều hình luật",
+    "icon": "🌸",
     "children": [
      "Từ Đường luật, có sáng tạo",
      "Bảo vệ quyền phụ nữ"
@@ -43,9 +47,20 @@
    },
    {
     "label": "Hoàng Việt luật lệ",
+    "icon": "📚",
     "children": [
      "Sao chép Thanh luật"
     ]
+   }
+  ],
+  "case": {
+   "q": "Muốn minh họa quyền của con gái trong Quốc triều hình luật nên dẫn điều nào?",
+   "a": "Điều 388 và 391."
+  },
+  "contrast": [
+   {
+    "with": "hoang-viet-luat-le",
+    "text": "Bài này so hai bộ luật; bài kia giới thiệu riêng Luật Gia Long."
    }
   ]
  },

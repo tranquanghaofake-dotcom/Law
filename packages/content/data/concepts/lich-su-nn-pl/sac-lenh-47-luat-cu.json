@@ -25,26 +25,41 @@
  ],
  "note": "Văn bản đã hết hiệu lực; học để hiểu lịch sử pháp luật.",
  "memo": {
-  "hook": "Sắc lệnh 47 (10/10/1945): TẠM GIỮ luật cũ nếu KHÔNG TRÁI độc lập, dân chủ.",
+  "gist": "Năm 1945 cho tạm dùng luật cũ thời Pháp, trừ điều trái độc lập dân tộc và chính thể dân chủ cộng hòa.",
+  "kind": "tree",
+  "hook": "Tạm mặc áo cũ, cắt bỏ những chỗ không vừa.",
   "tree": [
    {
     "label": "Mốc",
+    "icon": "📅",
     "children": [
-     "10/10/1945"
+     "10 tháng 10 năm 1945"
     ]
    },
    {
     "label": "Nội dung",
+    "icon": "⏸️",
     "children": [
      "Tạm giữ luật lệ cũ"
     ]
    },
    {
     "label": "Điều kiện",
+    "icon": "🚫",
     "children": [
      "Không trái nền độc lập",
      "Không trái chính thể dân chủ cộng hòa"
     ]
+   }
+  ],
+  "case": {
+   "q": "Năm 1946, thẩm phán ở Hà Nội xử vụ dân sự có dùng Bộ Dân luật Bắc kỳ 1931 không?",
+   "a": "Có, trừ những điều trái nền độc lập và chính thể dân chủ cộng hòa."
+  },
+  "contrast": [
+   {
+    "with": "sac-lenh-97-dan-luat",
+    "text": "Sắc lệnh 47 tạm giữ luật cũ; Sắc lệnh 97 năm 1950 sửa đổi dân luật."
    }
   ]
  },

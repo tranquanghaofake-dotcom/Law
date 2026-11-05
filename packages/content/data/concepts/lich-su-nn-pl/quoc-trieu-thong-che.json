@@ -25,16 +25,20 @@
   "đồ: Cảo điền hoành, Lao thành binh"
  ],
  "memo": {
-  "hook": "1230: nhà Trần soạn QUỐC TRIỀU THÔNG CHẾ (20 quyển), KẾ THỪA luật nhà Lý.",
+  "gist": "Năm 1230 nhà Trần soạn Quốc triều thông chế 20 quyển, kế thừa luật nhà Lý, có hình phạt đồ bắt lao động.",
+  "kind": "tree",
+  "hook": "Phạt mà vẫn có lợi: bắt người có tội đi cày ruộng công.",
   "tree": [
    {
     "label": "Mốc",
+    "icon": "📅",
     "children": [
      "1230, Trần Thái Tông"
     ]
    },
    {
     "label": "Bộ luật",
+    "icon": "📚",
     "children": [
      "Quốc triều thông chế",
      "20 quyển"
@@ -42,16 +46,28 @@
    },
    {
     "label": "Tính chất",
+    "icon": "🔁",
     "children": [
      "Kế thừa luật triều trước"
     ]
    },
    {
     "label": "Hình phạt đồ",
+    "icon": "🚜",
     "children": [
      "Cảo điền hoành",
      "Lao thành binh"
     ]
+   }
+  ],
+  "case": {
+   "q": "Hình phạt đồ thời Trần có đặc điểm gì?",
+   "a": "Vừa trừng trị vừa tận dụng sức lao động, như cày ruộng công."
+  },
+  "contrast": [
+   {
+    "with": "hinh-thu-thoi-tran",
+    "text": "Quốc triều thông chế năm 1230; Hình thư nhà Trần năm 1341."
    }
   ]
  },

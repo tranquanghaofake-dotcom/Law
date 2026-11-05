@@ -23,10 +23,13 @@
   "hơn mười điều"
  ],
  "memo": {
-  "hook": "'VIỆT LUẬT' khác luật Hán hơn 10 điều — chủ yếu là TẬP QUÁN PHÁP.",
+  "gist": "Thời Văn Lang, Âu Lạc có \"Việt luật\" khác luật Hán hơn mười điều, chủ yếu là tập quán.",
+  "kind": "tree",
+  "hook": "Luật trong lệ làng, chưa ghi lên giấy.",
   "tree": [
    {
     "label": "Sử liệu",
+    "icon": "📜",
     "children": [
      "Mã Viện tâu năm 43",
      "Hậu Hán thư"
@@ -34,21 +37,34 @@
    },
    {
     "label": "Nội dung",
+    "icon": "🔢",
     "children": [
      "Khác luật Hán hơn mười điều"
     ]
    },
    {
     "label": "Bản chất",
+    "icon": "🏘️",
     "children": [
      "Chủ yếu tập quán pháp"
     ]
    },
    {
     "label": "Tranh luận",
+    "icon": "❓",
     "children": [
      "Có luật thành văn hay không"
     ]
+   }
+  ],
+  "case": {
+   "q": "Nguồn nào ghi \"luật Việt khác luật Hán hơn mười điều\"?",
+   "a": "Hậu Hán thư, ghi lời Mã Viện tâu năm 43."
+  },
+  "contrast": [
+   {
+    "with": "dieu-kien-ra-doi-nha-nuoc-van-lang",
+    "text": "Bài này nói pháp luật; bài kia nói vì sao nhà nước ra đời."
    }
   ]
  },

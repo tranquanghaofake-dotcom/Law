@@ -26,10 +26,13 @@
   "quân mười đạo"
  ],
  "memo": {
-  "hook": "971: nhà Đinh lần đầu định CẤP BẬC văn võ, tăng đạo; 974 lập quân MƯỜI ĐẠO.",
+  "gist": "Năm 971 nhà Đinh định cấp bậc quan văn, võ, tăng đạo; năm 974 lập quân mười đạo.",
+  "kind": "tree",
+  "hook": "Xếp ghế cho triều đình rồi mới chia quân.",
   "tree": [
    {
     "label": "Mốc",
+    "icon": "📅",
     "children": [
      "971: cấp bậc văn võ",
      "974: quân mười đạo"
@@ -37,11 +40,22 @@
    },
    {
     "label": "Chức danh",
+    "icon": "👥",
     "children": [
      "Định quốc công: Nguyễn Bặc",
      "Đô hộ phủ sĩ sư: Lưu Cơ",
      "Thập đạo tướng quân: Lê Hoàn"
     ]
+   }
+  ],
+  "case": {
+   "q": "Lê Hoàn giữ chức gì thời Đinh?",
+   "a": "Thập đạo tướng quân, nắm quân đội."
+  },
+  "contrast": [
+   {
+    "with": "dinh-dai-co-viet",
+    "text": "Quan chế là tổ chức bộ máy; bài kia nói nhà nước Đại Cồ Việt."
    }
   ]
  },

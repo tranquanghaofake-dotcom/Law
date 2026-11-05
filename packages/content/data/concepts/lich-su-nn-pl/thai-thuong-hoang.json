@@ -23,10 +23,13 @@
   "gia pháp họ Trần"
  ],
  "memo": {
-  "hook": "Nhà Trần: vua cha NHƯỜNG NGÔI khi còn sống, làm THƯỢNG HOÀNG cùng trông coi chính sự.",
+  "gist": "Vua Trần nhường ngôi cho con khi còn sống, lên làm Thượng hoàng cùng trông coi việc nước.",
+  "kind": "tree",
+  "hook": "Cha dạy con lái xe: ngồi ghế bên, tay vẫn gần phanh.",
   "tree": [
    {
     "label": "Cơ chế",
+    "icon": "🔄",
     "children": [
      "Nhường ngôi khi còn sống",
      "Thượng hoàng cùng trông coi"
@@ -34,6 +37,7 @@
    },
    {
     "label": "Mục đích",
+    "icon": "🎯",
     "children": [
      "Chuyển giao êm thấm",
      "Tránh tranh ngôi",
@@ -42,9 +46,20 @@
    },
    {
     "label": "Đặc điểm",
+    "icon": "🏠",
     "children": [
      "Gia pháp họ Trần"
     ]
+   }
+  ],
+  "case": {
+   "q": "Mục đích của chế độ Thái thượng hoàng là gì?",
+   "a": "Chuyển giao quyền lực êm thấm, tránh tranh ngôi, đào tạo vua mới."
+  },
+  "contrast": [
+   {
+    "with": "hinh-thu-thoi-tran",
+    "text": "Thái thượng hoàng là cách truyền ngôi; Hình thư là bộ luật cùng thời Trần."
    }
   ]
  },

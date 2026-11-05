@@ -26,10 +26,13 @@
   "722 điều"
  ],
  "memo": {
-  "hook": "NGŨ HÌNH từ nhẹ đến nặng: XUY – TRƯỢNG – ĐỒ – LƯU – TỬ.",
+  "gist": "Năm hình phạt chính trong Quốc triều hình luật từ nhẹ đến nặng: xuy, trượng, đồ, lưu, tử.",
+  "kind": "ladder",
+  "hook": "Roi, gậy, khổ sai, đày xa, chết.",
   "tree": [
    {
     "label": "Đánh",
+    "icon": "🪶",
     "children": [
      "Xuy: đánh roi",
      "Trượng: đánh trượng"
@@ -37,6 +40,7 @@
    },
    {
     "label": "Lao dịch, đày",
+    "icon": "⚔️",
     "children": [
      "Đồ: lao dịch",
      "Lưu: đày xa"
@@ -44,15 +48,27 @@
    },
    {
     "label": "Nặng nhất",
+    "icon": "💀",
     "children": [
      "Tử"
     ]
    },
    {
     "label": "Bộ luật",
+    "icon": "📚",
     "children": [
      "Quốc triều hình luật, 722 điều"
     ]
+   }
+  ],
+  "case": {
+   "q": "Trong ngũ hình, hình phạt đồ là gì?",
+   "a": "Lao dịch, khổ sai."
+  },
+  "contrast": [
+   {
+    "with": "thap-ac-qthl",
+    "text": "Ngũ hình là các hình phạt; thập ác là mười tội nặng nhất."
    }
   ]
  },

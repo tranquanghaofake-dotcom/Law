@@ -5,7 +5,7 @@
  "term": "Sắc lệnh 97/SL (1950): những nguyên tắc dân luật mới",
  "definition": "Những quyền dân sự đều được luật bảo vệ khi người ta hành sự nó đúng với quyền lợi của nhân dân. (…) Chồng và vợ có địa vị bình đẳng trong gia đình. (…) Người đàn bà có chồng có toàn năng lực về mặt hộ.",
  "plain": "Sắc lệnh 97/SL sửa đổi các bộ dân luật cũ (được tạm giữ theo Sắc lệnh 47) theo hướng DÂN CHỦ, TIẾN BỘ: quyền dân sự được bảo vệ khi thực hiện phù hợp với quyền lợi nhân dân (Điều 1); con đã thành niên kết hôn không cần cha mẹ đồng ý (Điều 2); VỢ CHỒNG BÌNH ĐẲNG (Điều 5); người phụ nữ có chồng có TOÀN NĂNG LỰC về mặt hộ, tức dân sự (Điều 6), xóa bỏ chế độ người vợ phải lệ thuộc chồng trong dân luật cũ; tuổi thành niên 18 (Điều 7). Đây là bước chuẩn bị cho Luật Hôn nhân và gia đình 1959.",
- "example": "Theo dân luật cũ thời Pháp thuộc, người vợ ký hợp đồng thường cần sự cho phép của chồng. Từ Sắc lệnh 97/SL (Điều 6), người vợ có toàn năng lực, tự mình xác lập giao dịch.",
+ "example": "Theo dân luật cũ thời Pháp thuộc, người vợ ký hợp đồng thường cần chồng cho phép. Từ Sắc lệnh số 97 (Điều 6), người vợ có toàn năng lực, tự mình xác lập giao dịch.",
  "source": {
   "kind": "primary",
   "cite": "Sắc lệnh số 97/SL ngày 22/5/1950 sửa đổi một số quy lệ và chế định trong dân luật, Điều 1, 5, 6",
@@ -25,16 +25,20 @@
  ],
  "note": "Văn bản đã hết hiệu lực; học để hiểu lịch sử pháp luật.",
  "memo": {
-  "hook": "Sắc lệnh 97 (22/5/1950): dân luật DÂN CHỦ: VỢ CHỒNG BÌNH ĐẲNG, phụ nữ TOÀN NĂNG LỰC.",
+  "gist": "Năm 1950 đặt nguyên tắc dân luật mới: vợ chồng bình đẳng, phụ nữ có chồng có đủ năng lực tự giao dịch.",
+  "kind": "tree",
+  "hook": "Người vợ không còn phải xin chữ ký chồng.",
   "tree": [
    {
     "label": "Mốc",
+    "icon": "📅",
     "children": [
-     "22/5/1950"
+     "22 tháng 5 năm 1950"
     ]
    },
    {
     "label": "Nguyên tắc",
+    "icon": "⚖️",
     "children": [
      "Quyền dân sự hợp quyền lợi nhân dân",
      "Vợ chồng bình đẳng",
@@ -43,15 +47,20 @@
    },
    {
     "label": "Hôn nhân",
+    "icon": "💍",
     "children": [
      "Thành niên lấy vợ chồng không cần cha mẹ đồng ý"
     ]
-   },
+   }
+  ],
+  "case": {
+   "q": "Từ năm 1950, người vợ ký hợp đồng có cần chồng cho phép không?",
+   "a": "Không. Người vợ có toàn năng lực."
+  },
+  "contrast": [
    {
-    "label": "Thành niên",
-    "children": [
-     "18 tuổi"
-    ]
+    "with": "sac-lenh-97-khe-uoc",
+    "text": "Cùng Sắc lệnh 97: bài này nói bình đẳng vợ chồng; bài kia nói giới hạn sở hữu và khế ước bóc lột."
    }
   ]
  },

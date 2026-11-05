@@ -24,16 +24,20 @@
   "năm phủ, sáu tự"
  ],
  "memo": {
-  "hook": "1466: SÁU BỘ Lại – Hộ – Lễ – Binh – Hình – Công, mỗi bộ có THƯỢNG THƯ.",
+  "gist": "Năm 1466 Lê Thánh Tông lập sáu bộ: Lại, Hộ, Lễ, Binh, Hình, Công, mỗi bộ do một Thượng thư đứng đầu.",
+  "kind": "tree",
+  "hook": "Như sáu phòng ban của một công ty: nhân sự, tài chính, lễ tân, bảo vệ, pháp chế, xây dựng.",
   "tree": [
    {
     "label": "Mốc",
+    "icon": "📅",
     "children": [
      "1466, Lê Thánh Tông"
     ]
    },
    {
     "label": "Sáu bộ",
+    "icon": "🏛️",
     "children": [
      "Lại: quan lại",
      "Hộ: ruộng đất, thuế",
@@ -43,15 +47,27 @@
    },
    {
     "label": "Đứng đầu",
+    "icon": "👤",
     "children": [
      "Thượng thư"
     ]
    },
    {
     "label": "Kèm theo",
+    "icon": "➕",
     "children": [
      "Năm phủ, sáu tự"
     ]
+   }
+  ],
+  "case": {
+   "q": "Thời Lê, bộ nào lo việc ruộng đất và thuế?",
+   "a": "Bộ Hộ."
+  },
+  "contrast": [
+   {
+    "with": "luc-khoa-giam-sat",
+    "text": "Lục bộ là sáu bộ làm việc; Lục khoa là sáu khoa giám sát sáu bộ."
    }
   ]
  },

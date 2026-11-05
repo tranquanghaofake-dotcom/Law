@@ -5,7 +5,7 @@
  "term": "Các nguyên tắc cơ bản của Bộ luật Dân sự 1995",
  "definition": "Quyền tự do cam kết, thoả thuận phù hợp với quy định của pháp luật trong việc xác lập quyền, nghĩa vụ dân sự được pháp luật bảo đảm. (…) Mọi cam kết, thoả thuận hợp pháp có hiệu lực bắt buộc thực hiện đối với các bên. (…) Trong trường hợp pháp luật không quy định và các bên không có thoả thuận, thì có thể áp dụng tập quán hoặc quy định tương tự của pháp luật, nhưng không được trái với những nguyên tắc quy định trong Bộ luật này.",
  "plain": "BLDS 1995 dành Chương I cho các NGUYÊN TẮC CƠ BẢN (Điều 2–14): tôn trọng lợi ích Nhà nước, công cộng; tuân thủ pháp luật; tôn trọng đạo đức, truyền thống; bảo vệ quyền nhân thân, quyền sở hữu; TỰ DO, TỰ NGUYỆN cam kết, thỏa thuận (Điều 7); BÌNH ĐẲNG (Điều 8); THIỆN CHÍ, TRUNG THỰC (Điều 9); chịu trách nhiệm dân sự; HÒA GIẢI; và ÁP DỤNG TẬP QUÁN, ÁP DỤNG TƯƠNG TỰ PHÁP LUẬT (Điều 14) khi luật không quy định. So với Sắc lệnh 97/SL (1950), tự do khế ước được đề cao hơn, phù hợp kinh tế thị trường.",
- "example": "Khác biệt cần nhớ: luật dân sự cho áp dụng tương tự pháp luật khi luật không quy định (Điều 14 BLDS 1995), còn luật hình sự cấm (chỉ hành vi luật quy định mới là tội, Điều 2 BLHS 1985).",
+ "example": "Khác biệt cần nhớ: luật dân sự cho áp dụng tương tự khi luật không quy định (Điều 14 Bộ luật Dân sự 1995), còn luật hình sự cấm (chỉ hành vi luật quy định mới là tội, Điều 2 Bộ luật Hình sự 1985).",
  "source": {
   "kind": "primary",
   "cite": "Bộ luật Dân sự 1995, Điều 7 và Điều 14",
@@ -25,10 +25,13 @@
  ],
  "note": "Bộ luật Dân sự 1995 có hiệu lực từ 01/7/1996, đã hết hiệu lực (thay bằng Bộ luật Dân sự 2005); hiện hành là Bộ luật Dân sự 91/2015/QH13. Học để hiểu lịch sử.",
  "memo": {
-  "hook": "BLDS 1995 có cả chương NGUYÊN TẮC: tự do thỏa thuận, bình đẳng, thiện chí.",
+  "gist": "Bộ luật Dân sự 1995 có chương nguyên tắc: tự do thỏa thuận, bình đẳng, thiện chí, tôn trọng lợi ích chung.",
+  "kind": "tree",
+  "hook": "Luật dân sự cho phép đi đường vòng khi chưa có biển chỉ dẫn; luật hình sự thì không.",
   "tree": [
    {
     "label": "Nguyên tắc",
+    "icon": "🤝",
     "children": [
      "Tự do, tự nguyện thỏa thuận",
      "Bình đẳng",
@@ -37,6 +40,7 @@
    },
    {
     "label": "Tôn trọng",
+    "icon": "🏛️",
     "children": [
      "Lợi ích Nhà nước, công cộng",
      "Đạo đức, truyền thống"
@@ -44,9 +48,20 @@
    },
    {
     "label": "Thiếu luật",
+    "icon": "❓",
     "children": [
      "Áp dụng tập quán, tương tự"
     ]
+   }
+  ],
+  "case": {
+   "q": "Khi luật không có quy định, luật dân sự 1995 có cho áp dụng tương tự không?",
+   "a": "Có; còn luật hình sự thì cấm."
+  },
+  "contrast": [
+   {
+    "with": "blds-1995",
+    "text": "Nguyên tắc là chương định hướng bên trong; bài kia nói cả bộ luật."
    }
   ]
  },

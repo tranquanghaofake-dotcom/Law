@@ -5,7 +5,7 @@
  "term": "Khái niệm và phân loại tội phạm trong Bộ luật Hình sự 1985",
  "definition": "1- Tội phạm là hành vi nguy hiểm cho xã hội được quy định trong Bộ luật hình sự, do người có năng lực trách nhiệm hình sự thực hiện một cách cố ý hoặc vô ý (…). 2- Tội phạm nghiêm trọng là tội phạm gây nguy hại lớn cho xã hội mà mức cao nhất của khung hình phạt đối với tội ấy là trên năm năm tù, tù chung thân hoặc tử hình. Những tội phạm khác là tội phạm ít nghiêm trọng.",
  "plain": "Điều 8 nêu 4 dấu hiệu của tội phạm: (1) hành vi NGUY HIỂM cho xã hội; (2) được QUY ĐỊNH trong Bộ luật hình sự; (3) do người có NĂNG LỰC trách nhiệm hình sự thực hiện; (4) có LỖI (cố ý hoặc vô ý). Phân loại thành HAI loại: tội NGHIÊM TRỌNG (khung cao nhất trên 5 năm tù, chung thân hoặc tử hình) và tội ÍT NGHIÊM TRỌNG. Pháp luật hiện hành (Điều 9 Bộ luật Hình sự 2015) chia BỐN loại: ít nghiêm trọng, nghiêm trọng, rất nghiêm trọng, đặc biệt nghiêm trọng.",
- "example": "Một tội có khung hình phạt cao nhất là 3 năm tù: theo BLHS 1985 là tội ít nghiêm trọng; theo BLHS 2015 cũng là tội ít nghiêm trọng (khung cao nhất đến 3 năm tù).",
+ "example": "Một tội có khung cao nhất 3 năm tù: theo Bộ luật Hình sự 1985 là tội ít nghiêm trọng; theo Bộ luật Hình sự 2015 cũng là tội ít nghiêm trọng.",
  "source": {
   "kind": "primary",
   "cite": "Bộ luật Hình sự 1985, Điều 8",
@@ -25,24 +25,38 @@
  ],
  "note": "Bộ luật Hình sự 1985 có hiệu lực từ 01/01/1986, đã hết hiệu lực (thay bằng Bộ luật Hình sự 1999); hiện hành là Bộ luật Hình sự 100/2015/QH13 (đã được sửa đổi). Học để hiểu lịch sử.",
  "memo": {
-  "hook": "BLHS 1985 chia HAI loại tội: NGHIÊM TRỌNG (khung trên 5 năm) và ít nghiêm trọng.",
+  "gist": "Bộ luật Hình sự 1985 nêu bốn dấu hiệu tội phạm và chia tội thành hai loại: nghiêm trọng và ít nghiêm trọng.",
+  "kind": "compare",
+  "hook": "Năm 1985 chỉ có hai ngăn kéo; luật nay có bốn.",
   "tree": [
    {
     "label": "Bốn dấu hiệu",
+    "icon": "✅",
     "children": [
      "Nguy hiểm cho xã hội",
-     "Được BLHS quy định",
+     "Được Bộ luật Hình sự quy định",
      "Năng lực trách nhiệm hình sự",
      "Có lỗi"
     ]
    },
    {
     "label": "Phân loại",
+    "icon": "2️⃣",
     "children": [
      "Hai loại",
      "Nghiêm trọng: trên 5 năm, chung thân, tử hình",
      "Ít nghiêm trọng"
     ]
+   }
+  ],
+  "case": {
+   "q": "Theo Bộ luật Hình sự 1985, tội có khung cao nhất trên 5 năm tù là loại gì?",
+   "a": "Tội nghiêm trọng."
+  },
+  "contrast": [
+   {
+    "with": "blhs-1985",
+    "text": "Bài này nói khái niệm và phân loại tội; bài kia nói cả bộ luật."
    }
   ]
  },
