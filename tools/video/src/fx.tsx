@@ -27,7 +27,7 @@ export const LightLeak: React.FC<{ at: number; len?: number; seed?: number; hue?
         const sx = rand(seed * 7 + i) * 1080, sy = rand(seed * 13 + i + 3) * 1920;
         const dx = (rand(seed + i * 5) - 0.5) * 900, dy = (rand(seed + i * 9) - 0.5) * 900;
         return (
-          <div key={i} style={{ position: "absolute", left: sx + dx * t - bl.w / 2, top: sy + dy * t - bl.w / 2, width: bl.w, height: bl.w, borderRadius: "50%", background: `radial-gradient(circle, ${bl.c}, transparent 65%)`, filter: "blur(40px)" }} />
+          <div key={i} style={{ position: "absolute", left: sx + dx * t - bl.w / 2, top: sy + dy * t - bl.w / 2, width: bl.w, height: bl.w, borderRadius: "50%", background: `radial-gradient(circle, ${bl.c}, transparent 68%)` }} />
         );
       })}
     </AbsoluteFill>
@@ -55,7 +55,7 @@ export const Embers: React.FC<{ n?: number; color?: string; speed?: number; size
         const y = (((rand(i + 50) * 2100 - frame * sp) % 2100) + 2100) % 2100 - 90;
         const x = rand(i) * 1080 + Math.sin(frame / 30 + i) * 30;
         const s = size * (0.4 + rand(i + 21));
-        return <div key={i} style={{ position: "absolute", left: x, top: y, width: s, height: s, borderRadius: 99, background: color, opacity: 0.25 + 0.6 * rand(i + 3), boxShadow: `0 0 ${s * 3}px ${color}` }} />;
+        return <div key={i} style={{ position: "absolute", left: x - s, top: y - s, width: s * 3, height: s * 3, borderRadius: 99, background: `radial-gradient(circle, ${color} 0 22%, ${color}55 34%, transparent 70%)`, opacity: 0.3 + 0.6 * rand(i + 3) }} />;
       })}
     </AbsoluteFill>
   );
@@ -78,7 +78,7 @@ export const Slam: React.FC<{ text: string; at: number; step?: number; style?: R
         const s = at + i * step;
         const p = interpolate(frame, [s, s + 9], [0, 1], { ...clamp, easing: Easing.out(Easing.exp) });
         return (
-          <span key={i} style={{ display: "inline-block", opacity: frame >= s ? 1 : 0, scale: interpolate(p, [0, 1], [1.9, 1]), filter: `blur(${interpolate(p, [0, 1], [14, 0])}px)`, color: accent[i] }}>
+          <span key={i} style={{ display: "inline-block", opacity: frame >= s ? 1 : 0, scale: interpolate(p, [0, 1], [1.9, 1]), filter: p < 0.98 ? `blur(${interpolate(p, [0, 1], [14, 0]).toFixed(1)}px)` : undefined, color: accent[i] }}>
             {w}
           </span>
         );
@@ -111,7 +111,7 @@ export const SceneShell: React.FC<{ dur: number; whipIn: boolean; whipOut: boole
     scale *= 1 + (1 - p) * 0.25; blur += (1 - p) * 10;
   }
   return (
-    <AbsoluteFill style={{ translate: `${tx}px 0px`, scale, rotate: `${rot}deg`, filter: `blur(${blur.toFixed(2)}px) saturate(${sat})` }}>{children}</AbsoluteFill>
+    <AbsoluteFill style={{ translate: `${tx}px 0px`, scale, rotate: `${rot}deg`, filter: blur > 0.3 || sat < 0.99 ? `blur(${blur.toFixed(1)}px) saturate(${sat.toFixed(2)})` : undefined }}>{children}</AbsoluteFill>
   );
 };
 

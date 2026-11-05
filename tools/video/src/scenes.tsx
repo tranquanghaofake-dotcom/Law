@@ -290,6 +290,8 @@ export const ThapChuoi: React.FC = () => {
           <OffthreadVideo src={cap("ignite-75.mp4")} muted style={{ width: 1080, height: 1920, position: "absolute" }} />
         </Sequence>
       </AbsoluteFill>
+      {/* 0,7 s đầu bản quay: lớp tối của web đang mờ dần vào trên nền giấy → che bằng đen để khỏi bạc màu */}
+      <AbsoluteFill style={{ background: "#05050a", opacity: interpolate(frame, [0, start + 42, start + 70], [0.9, 0.75, 0], clamp) }} />
       <Shockwave at={b(8)} x={540} y={836} color="#c48bff" len={34} />
       {frame >= b(8) && <Embers n={50} color="#c48bff" speed={2.2} size={8} />}
       <AbsoluteFill style={{ ...SAFE, paddingTop: 230, pointerEvents: "none" }}>

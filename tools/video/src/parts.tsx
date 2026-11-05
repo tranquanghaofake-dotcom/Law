@@ -5,7 +5,8 @@ import { C, DISPLAY, rand, UI } from "./theme";
 
 export const clamp = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 export const ease = Easing.bezier(0.16, 1, 0.3, 1);
-export const H1: React.CSSProperties = { fontFamily: DISPLAY, fontWeight: 800, lineHeight: 1.05, letterSpacing: -1 };
+export const RGB_SHADOW = "calc(var(--rgb, 0) * 1px) 0 0 rgba(255,30,70,.75), calc(var(--rgb, 0) * -1px) 0 0 rgba(30,220,255,.75)";
+export const H1: React.CSSProperties = { fontFamily: DISPLAY, fontWeight: 800, lineHeight: 1.05, letterSpacing: -1, textShadow: RGB_SHADOW };
 /** Vùng an toàn TikTok: chừa trên ~200, phải ~150 (cột nút), dưới ~380 (chú thích). */
 export const SAFE: React.CSSProperties = { paddingLeft: 90, paddingRight: 150, paddingTop: 210 };
 
@@ -71,7 +72,7 @@ export const Seal: React.FC<{ size: number }> = ({ size }) => (
 export const Kicker: React.FC<{ children: React.ReactNode; color?: string; at?: number }> = ({ children, color = C.accent, at = 0 }) => {
   const frame = useCurrentFrame();
   return (
-    <div style={{ fontFamily: UI, fontWeight: 800, fontSize: 38, letterSpacing: 5, textTransform: "uppercase", color, opacity: fadeIn(frame, at, 10), translate: rise(frame, at, 30) }}>
+    <div style={{ fontFamily: UI, fontWeight: 800, fontSize: 38, letterSpacing: 5, textTransform: "uppercase", color, textShadow: RGB_SHADOW, opacity: fadeIn(frame, at, 10), translate: rise(frame, at, 30) }}>
       {children}
     </div>
   );
