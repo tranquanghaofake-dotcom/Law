@@ -25,16 +25,20 @@
   "biện pháp khác do thỏa thuận"
  ],
  "memo": {
-  "hook": "Sáu chế tài; TẠM NGỪNG, ĐÌNH CHỈ, HỦY BỎ cần VI PHẠM CƠ BẢN.",
+  "gist": "Bên bị vi phạm hợp đồng có sáu cách xử lý: buộc làm đúng, phạt, đòi bồi thường, tạm ngừng, đình chỉ, hủy bỏ.",
+  "kind": "tree",
+  "hook": "Như thẻ phạt bóng đá: nhắc nhở, phạt tiền, rồi mới tới thẻ đỏ đuổi khỏi sân.",
   "tree": [
    {
     "label": "Buộc thực hiện",
+    "icon": "👉",
     "children": [
      "Buộc thực hiện đúng hợp đồng"
     ]
    },
    {
     "label": "Bằng tiền",
+    "icon": "💵",
     "children": [
      "Phạt vi phạm",
      "Bồi thường thiệt hại"
@@ -42,6 +46,7 @@
    },
    {
     "label": "Dừng hợp đồng",
+    "icon": "⏹️",
     "children": [
      "Tạm ngừng",
      "Đình chỉ",
@@ -50,9 +55,20 @@
    },
    {
     "label": "Khác",
+    "icon": "➕",
     "children": [
      "Do các bên thỏa thuận"
     ]
+   }
+  ],
+  "case": {
+   "q": "Bên mua chậm trả tiền nhưng chưa vi phạm cơ bản. Bên bán có được hủy hợp đồng ngay không?",
+   "a": "Không. Tạm ngừng, đình chỉ, hủy bỏ chỉ dùng khi có vi phạm cơ bản, trừ khi hai bên thỏa thuận khác."
+  },
+  "contrast": [
+   {
+    "with": "vi-pham-co-ban",
+    "text": "Chế tài là các cách xử lý; vi phạm cơ bản là điều kiện để dùng ba cách nặng nhất."
    }
   ]
  },

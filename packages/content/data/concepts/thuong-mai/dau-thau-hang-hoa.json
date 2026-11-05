@@ -22,10 +22,13 @@
   "không áp dụng mua sắm công"
  ],
  "memo": {
-  "hook": "Bên MUA mời thầu, chọn người ĐÁP ỨNG TỐT NHẤT (không nhất thiết rẻ nhất).",
+  "gist": "Bên mua mời nhiều nhà cung cấp nộp hồ sơ, rồi chọn người đáp ứng yêu cầu tốt nhất, không nhất thiết rẻ nhất.",
+  "kind": "tree",
+  "hook": "Như tuyển người: không chọn người đòi lương thấp nhất, mà chọn người hợp việc nhất.",
   "tree": [
    {
     "label": "Các bên",
+    "icon": "👥",
     "children": [
      "Bên mời thầu (bên mua)",
      "Bên dự thầu",
@@ -34,12 +37,14 @@
    },
    {
     "label": "Tiêu chí",
+    "icon": "🏆",
     "children": [
      "Đáp ứng tốt nhất yêu cầu"
     ]
    },
    {
     "label": "Hình thức",
+    "icon": "📢",
     "children": [
      "Rộng rãi",
      "Hạn chế"
@@ -47,9 +52,20 @@
    },
    {
     "label": "Không áp dụng",
+    "icon": "🚫",
     "children": [
      "Mua sắm công"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty tư nhân mời chào giá máy phát điện và chọn hồ sơ tốt nhất về giá và kỹ thuật. Áp dụng luật nào?",
+   "a": "Luật Thương mại, vì không phải mua sắm công."
+  },
+  "contrast": [
+   {
+    "with": "dau-gia-hang-hoa",
+    "text": "Đấu thầu là bên mua chọn; đấu giá là bên bán chọn giá cao nhất."
    }
   ]
  },

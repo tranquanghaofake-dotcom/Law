@@ -23,10 +23,13 @@
   "quyết định cơ quan nhà nước"
  ],
  "memo": {
-  "hook": "Bốn căn cứ miễn: THỎA THUẬN – BẤT KHẢ KHÁNG – LỖI BÊN KIA – QUYẾT ĐỊNH NHÀ NƯỚC.",
+  "gist": "Bên vi phạm được miễn trách nhiệm khi có thỏa thuận miễn, bất khả kháng, lỗi bên kia hoặc quyết định nhà nước.",
+  "kind": "tree",
+  "hook": "Bốn tấm khiên: đã hẹn trước, trời gây ra, người kia làm, Nhà nước cấm.",
   "tree": [
    {
     "label": "Căn cứ",
+    "icon": "🛡️",
     "children": [
      "Thỏa thuận miễn trách",
      "Bất khả kháng",
@@ -36,15 +39,27 @@
    },
    {
     "label": "Chứng minh",
+    "icon": "🙋",
     "children": [
      "Bên vi phạm"
     ]
    },
    {
-    "label": "Khác BLDS",
+    "label": "Khác luật dân sự",
+    "icon": "↔️",
     "children": [
      "Có thêm quyết định nhà nước"
     ]
+   }
+  ],
+  "case": {
+   "q": "Sau khi ký, Nhà nước cấm xuất khẩu tạm thời mặt hàng đó nên bên bán không giao được. Có được miễn không?",
+   "a": "Có thể được miễn, nhưng bên bán phải tự chứng minh."
+  },
+  "contrast": [
+   {
+    "with": "che-tai-thuong-mai",
+    "text": "Miễn trách nhiệm là lý do khỏi bị xử lý; chế tài là các cách xử lý."
    }
   ]
  },

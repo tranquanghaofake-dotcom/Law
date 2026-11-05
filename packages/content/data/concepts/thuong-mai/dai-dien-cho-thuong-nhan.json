@@ -24,10 +24,13 @@
   "hưởng thù lao"
  ],
  "memo": {
-  "hook": "ĐẠI DIỆN: hành động NHÂN DANH bên giao, cả hai đều là THƯƠNG NHÂN.",
+  "gist": "Một thương nhân nhận làm việc thay thương nhân khác, đứng tên người kia, theo chỉ dẫn và nhận thù lao.",
+  "kind": "tree",
+  "hook": "Như ca sĩ có người quản lý ký hợp đồng diễn: người ký là quản lý, người đứng tên là ca sĩ.",
   "tree": [
    {
     "label": "Dấu hiệu",
+    "icon": "🔎",
     "children": [
      "Nhận ủy nhiệm",
      "Nhân danh bên giao đại diện",
@@ -36,16 +39,32 @@
    },
    {
     "label": "Chủ thể",
+    "icon": "🏢",
     "children": [
      "Cả hai là thương nhân"
     ]
    },
    {
     "label": "Bốn trung gian",
+    "icon": "🧩",
     "children": [
      "Đại diện, môi giới",
      "Ủy thác, đại lý"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty Việt Nam nhân danh hãng Nhật ký hợp đồng với khách và nhận hoa hồng. Đây là hoạt động gì?",
+   "a": "Đại diện cho thương nhân."
+  },
+  "contrast": [
+   {
+    "with": "dai-ly-thuong-mai",
+    "text": "Đại diện đứng tên bên giao; đại lý đứng tên chính mình."
+   },
+   {
+    "with": "moi-gioi-thuong-mai",
+    "text": "Đại diện ký thay; môi giới chỉ kết nối, hai bên tự ký."
    }
   ]
  },

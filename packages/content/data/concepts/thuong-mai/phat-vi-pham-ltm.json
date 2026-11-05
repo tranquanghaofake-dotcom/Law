@@ -5,7 +5,7 @@
  "term": "Phạt vi phạm trong thương mại",
  "definition": "Phạt vi phạm là việc bên bị vi phạm yêu cầu bên vi phạm trả một khoản tiền phạt do vi phạm hợp đồng nếu trong hợp đồng có thỏa thuận, trừ các trường hợp miễn trách nhiệm quy định tại Điều 294 của Luật này. Mức phạt đối với vi phạm nghĩa vụ hợp đồng hoặc tổng mức phạt đối với nhiều vi phạm do các bên thỏa thuận trong hợp đồng, nhưng không quá 8% giá trị phần nghĩa vụ hợp đồng bị vi phạm, trừ trường hợp quy định tại Điều 266 của Luật này.",
  "plain": "Chỉ phạt khi HỢP ĐỒNG CÓ THỎA THUẬN. Mức trần: 8% GIÁ TRỊ PHẦN NGHĨA VỤ BỊ VI PHẠM (không phải 8% giá trị cả hợp đồng); tổng nhiều vi phạm cũng không quá 8%. Ngoại lệ Điều 266 (dịch vụ giám định sai). So sánh BLDS 2015: không giới hạn mức phạt (Điều 418).",
- "example": "Hợp đồng giá trị 1 tỷ, bên bán giao thiếu lô hàng trị giá 200 triệu: mức phạt tối đa 8% × 200 triệu = 16 triệu, dù hợp đồng ghi phạt 20%.",
+ "example": "Hợp đồng giá trị 1 tỷ, bên bán giao thiếu lô hàng 200 triệu: mức phạt tối đa là 8% của 200 triệu, tức 16 triệu, dù hợp đồng ghi phạt 20%.",
  "source": {
   "kind": "statute",
   "cite": "Điều 300, Điều 301 Luật Thương mại 2005 (sửa đổi, bổ sung năm 2017, 2019, 2025)",
@@ -24,26 +24,41 @@
   "trừ Điều 266"
  ],
  "memo": {
-  "hook": "Phải CÓ THỎA THUẬN; tối đa 8% PHẦN NGHĨA VỤ bị vi phạm.",
+  "gist": "Bên vi phạm phải trả tiền phạt nếu hợp đồng có thỏa thuận; mức phạt tối đa 8% phần nghĩa vụ bị vi phạm.",
+  "kind": "tree",
+  "hook": "Mẹo số tám: tính trên phần làm sai, không tính cả hợp đồng.",
   "tree": [
    {
     "label": "Điều kiện",
+    "icon": "📝",
     "children": [
      "Hợp đồng có thỏa thuận phạt"
     ]
    },
    {
     "label": "Mức trần",
+    "icon": "🔝",
     "children": [
      "8% giá trị phần nghĩa vụ vi phạm",
      "Không phải 8% cả hợp đồng"
     ]
    },
    {
-    "label": "So với BLDS",
+    "label": "So với luật dân sự",
+    "icon": "↔️",
     "children": [
-     "BLDS không giới hạn mức phạt"
+     "Luật dân sự không giới hạn mức phạt"
     ]
+   }
+  ],
+  "case": {
+   "q": "Hợp đồng 1 tỷ ghi phạt 20%; bên bán giao thiếu lô 200 triệu. Phạt tối đa bao nhiêu?",
+   "a": "16 triệu, tức 8% của 200 triệu."
+  },
+  "contrast": [
+   {
+    "with": "boi-thuong-thiet-hai-ltm",
+    "text": "Phạt vi phạm là tiền đã thỏa thuận, có trần 8%; bồi thường đền đúng thiệt hại thực tế, không có trần."
    }
   ]
  },

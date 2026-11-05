@@ -23,10 +23,13 @@
   "kể cả giữ chứng từ"
  ],
  "memo": {
-  "hook": "Có địa điểm giao → rủi ro chuyển khi ĐÃ GIAO tại đó.",
+  "gist": "Nếu hợp đồng định nơi giao hàng, hàng hỏng mất trước khi giao tới đó thì bên bán chịu, sau đó bên mua chịu.",
+  "kind": "compare",
+  "hook": "Như chuyền bóng: bóng còn trong tay ai thì người đó chịu nếu rơi.",
   "tree": [
    {
     "label": "Có địa điểm",
+    "icon": "📍",
     "children": [
      "Khi đã giao cho bên mua",
      "Kể cả bên bán giữ chứng từ"
@@ -34,15 +37,27 @@
    },
    {
     "label": "Có vận chuyển",
+    "icon": "🚚",
     "children": [
      "Khi giao người vận chuyển đầu tiên"
     ]
    },
    {
     "label": "Ý nghĩa",
+    "icon": "⚖️",
     "children": [
      "Ai chịu thiệt khi hàng hỏng"
     ]
+   }
+  ],
+  "case": {
+   "q": "Hợp đồng ghi giao tại kho bên mua. Hàng bị lũ cuốn trên đường đi. Ai chịu thiệt?",
+   "a": "Bên bán, vì hàng chưa giao tới kho bên mua."
+  },
+  "contrast": [
+   {
+    "with": "trach-nhiem-hang-khong-phu-hop",
+    "text": "Chuyển rủi ro là ai chịu khi hàng mất do sự cố; hàng không phù hợp là hàng có lỗi từ phía bên bán."
    }
   ]
  },

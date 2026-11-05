@@ -23,16 +23,20 @@
   "vật gắn liền với đất đai"
  ],
  "memo": {
-  "hook": "Dấu hiệu cốt lõi: MỤC ĐÍCH SINH LỢI.",
+  "gist": "Hoạt động thương mại là mua bán, dịch vụ, đầu tư, xúc tiến nhằm kiếm lời.",
+  "kind": "tree",
+  "hook": "Câu hỏi thử: làm việc này để kiếm lời không?",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "💰",
     "children": [
      "Mục đích sinh lợi"
     ]
    },
    {
     "label": "Gồm",
+    "icon": "🛒",
     "children": [
      "Mua bán hàng hóa",
      "Cung ứng dịch vụ",
@@ -41,6 +45,7 @@
    },
    {
     "label": "Hàng hóa",
+    "icon": "📦",
     "children": [
      "Động sản, kể cả hình thành tương lai",
      "Vật gắn liền với đất"
@@ -48,9 +53,20 @@
    },
    {
     "label": "Chủ thể",
+    "icon": "🏢",
     "children": [
      "Thương nhân"
     ]
+   }
+  ],
+  "case": {
+   "q": "Hai người bạn bán cho nhau chiếc xe cũ để dùng. Có phải hoạt động thương mại không?",
+   "a": "Không. Đó là giao dịch dân sự vì không nhằm sinh lợi."
+  },
+  "contrast": [
+   {
+    "with": "mua-ban-hang-hoa",
+    "text": "Hoạt động thương mại là nhóm lớn; mua bán hàng hóa chỉ là một hoạt động trong đó."
    }
   ]
  },

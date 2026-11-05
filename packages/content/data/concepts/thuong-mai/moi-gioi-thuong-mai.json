@@ -23,10 +23,13 @@
   "hưởng thù lao theo hợp đồng môi giới"
  ],
  "memo": {
-  "hook": "MÔI GIỚI chỉ KẾT NỐI, không ký thay; thù lao khi các bên ĐÃ KÝ hợp đồng.",
+  "gist": "Bên môi giới chỉ làm cầu nối cho hai bên gặp nhau; hai bên tự ký hợp đồng, môi giới nhận phí.",
+  "kind": "tree",
+  "hook": "Như bà mối: giới thiệu xong là xong, cưới hay không là chuyện đôi bên.",
   "tree": [
    {
     "label": "Vai trò",
+    "icon": "🌉",
     "children": [
      "Trung gian kết nối",
      "Không là bên của hợp đồng"
@@ -34,15 +37,27 @@
    },
    {
     "label": "Chủ thể",
+    "icon": "🏢",
     "children": [
      "Bên môi giới là thương nhân"
     ]
    },
    {
     "label": "Thù lao",
+    "icon": "💵",
     "children": [
      "Khi các bên đã ký hợp đồng"
     ]
+   }
+  ],
+  "case": {
+   "q": "Công ty môi giới giới thiệu nhà nhập khẩu Hàn Quốc gặp nhà sản xuất cà phê. Ai ký hợp đồng mua bán?",
+   "a": "Hai bên mua bán tự ký; môi giới chỉ nhận phí."
+  },
+  "contrast": [
+   {
+    "with": "dai-dien-cho-thuong-nhan",
+    "text": "Môi giới chỉ kết nối; đại diện thì ký thay, đứng tên bên giao."
    }
   ]
  },

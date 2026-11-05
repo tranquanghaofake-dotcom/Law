@@ -24,10 +24,13 @@
   "hưởng thù lao"
  ],
  "memo": {
-  "hook": "ĐẠI LÝ: NHÂN DANH MÌNH, LÂU DÀI; hàng vẫn của bên GIAO đại lý.",
+  "gist": "Bên đại lý đứng tên mình mua bán hàng cho bên giao đại lý, lâu dài, nhận thù lao; hàng vẫn là của bên giao.",
+  "kind": "tree",
+  "hook": "Như cửa hàng bán giúp sữa của hãng: tên cửa hàng trên hóa đơn, sữa chưa bán vẫn là của hãng.",
   "tree": [
    {
     "label": "Dấu hiệu",
+    "icon": "🏷️",
     "children": [
      "Nhân danh chính mình",
      "Hưởng thù lao"
@@ -35,21 +38,34 @@
    },
    {
     "label": "Chủ thể",
+    "icon": "🏢",
     "children": [
      "Cả hai là thương nhân"
     ]
    },
    {
     "label": "Hàng hóa",
+    "icon": "📦",
     "children": [
      "Thuộc sở hữu bên giao"
     ]
    },
    {
     "label": "Khác ủy thác",
+    "icon": "↔️",
     "children": [
      "Lâu dài, thường xuyên"
     ]
+   }
+  ],
+  "case": {
+   "q": "Cửa hàng làm đại lý sữa cho hãng X. Sữa chưa bán thuộc sở hữu của ai?",
+   "a": "Của hãng X, bên giao đại lý."
+  },
+  "contrast": [
+   {
+    "with": "uy-thac-mua-ban",
+    "text": "Đại lý làm lâu dài, thường xuyên; ủy thác thường làm theo từng vụ việc."
    }
   ]
  },

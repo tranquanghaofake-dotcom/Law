@@ -23,10 +23,13 @@
  ],
  "note": "Điều 102–116 (quảng cáo thương mại) không còn trong VBHN 113/VBHN-VPQH 2025: nội dung được điều chỉnh bởi Luật Quảng cáo theo Luật 75/2025/QH15 (hiệu lực 01/01/2026). Chưa đối chiếu nguyên văn Luật 75/2025.",
  "memo": {
-  "hook": "Khuyến mại = dành LỢI ÍCH cho khách để bán được hàng.",
+  "gist": "Thương nhân dành lợi ích như quà, giảm giá, phiếu mua hàng cho khách để bán được nhiều hàng hơn.",
+  "kind": "tree",
+  "hook": "Như mồi câu: thả món quà nhỏ để kéo con cá lớn.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "🎁",
     "children": [
      "Xúc tiến thương mại",
      "Dành lợi ích cho khách"
@@ -34,6 +37,7 @@
    },
    {
     "label": "Hình thức",
+    "icon": "🏷️",
     "children": [
      "Hàng mẫu, tặng hàng",
      "Giảm giá",
@@ -42,9 +46,20 @@
    },
    {
     "label": "Hạn mức",
+    "icon": "📏",
     "children": [
      "Do nghị định quy định"
     ]
+   }
+  ],
+  "case": {
+   "q": "Siêu thị tặng một gói bánh khi mua hộp sữa. Đây là hình thức khuyến mại nào?",
+   "a": "Tặng hàng hóa."
+  },
+  "contrast": [
+   {
+    "with": "hoat-dong-thuong-mai",
+    "text": "Khuyến mại là một cách xúc tiến; hoạt động thương mại là mọi việc kinh doanh kiếm lời."
    }
   ]
  },
