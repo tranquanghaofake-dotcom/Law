@@ -22,6 +22,33 @@
   "quan hệ liên quan trực tiếp",
   "quản lý nhà nước về lao động"
  ],
+ "memo": {
+  "hook": "Điều chỉnh QUAN HỆ LAO ĐỘNG và quan hệ LIÊN QUAN TRỰC TIẾP.",
+  "tree": [
+   {
+    "label": "Quan hệ lao động",
+    "children": [
+     "Cá nhân",
+     "Tập thể"
+    ]
+   },
+   {
+    "label": "Liên quan trực tiếp",
+    "children": [
+     "Việc làm, học nghề",
+     "Bảo hiểm, tranh chấp"
+    ]
+   },
+   {
+    "label": "Phương pháp",
+    "children": [
+     "Thỏa thuận (chủ yếu)",
+     "Mệnh lệnh",
+     "Sự tham gia của công đoàn"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

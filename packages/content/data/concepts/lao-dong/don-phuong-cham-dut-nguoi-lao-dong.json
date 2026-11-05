@@ -23,6 +23,27 @@
   "30 ngày",
   "03 ngày làm việc"
  ],
+ "memo": {
+  "hook": "Người lao động nghỉ KHÔNG CẦN LÝ DO, chỉ cần BÁO TRƯỚC 45 – 30 – 3 ngày.",
+  "tree": [
+   {
+    "label": "Báo trước",
+    "children": [
+     "Không xác định thời hạn: 45 ngày",
+     "12–36 tháng: 30 ngày",
+     "Dưới 12 tháng: 03 ngày làm việc"
+    ]
+   },
+   {
+    "label": "Không cần báo trước",
+    "children": [
+     "Không trả đủ lương",
+     "Bị ngược đãi, quấy rối",
+     "Bố trí sai công việc"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -22,6 +22,36 @@
   "tư cách pháp nhân",
   "không phát hành cổ phần"
  ],
+ "memo": {
+  "hook": "MỘT chủ; HỮU HẠN; có PHÁP NHÂN — khác doanh nghiệp tư nhân.",
+  "tree": [
+   {
+    "label": "Chủ sở hữu",
+    "children": [
+     "Một tổ chức hoặc một cá nhân"
+    ]
+   },
+   {
+    "label": "Trách nhiệm",
+    "children": [
+     "Trong phạm vi vốn điều lệ"
+    ]
+   },
+   {
+    "label": "Tư cách",
+    "children": [
+     "Có pháp nhân"
+    ]
+   },
+   {
+    "label": "Phát hành",
+    "children": [
+     "Không cổ phần",
+     "Được trái phiếu"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

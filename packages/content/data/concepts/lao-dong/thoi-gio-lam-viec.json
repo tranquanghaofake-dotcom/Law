@@ -22,6 +22,26 @@
   "40 giờ/tháng",
   "200 hoặc 300 giờ/năm"
  ],
+ "memo": {
+  "hook": "Bình thường 8 GIỜ/NGÀY, 48/TUẦN; thêm giờ cần ĐỒNG Ý, tối đa 40/THÁNG, 200 hoặc 300/NĂM.",
+  "tree": [
+   {
+    "label": "Bình thường",
+    "children": [
+     "≤ 08 giờ/ngày",
+     "≤ 48 giờ/tuần"
+    ]
+   },
+   {
+    "label": "Làm thêm giờ",
+    "children": [
+     "Người lao động đồng ý",
+     "≤ 40 giờ/tháng",
+     "≤ 200 giờ/năm (một số ngành 300)"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

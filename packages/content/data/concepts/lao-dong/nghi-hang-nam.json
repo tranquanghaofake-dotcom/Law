@@ -22,6 +22,37 @@
   "thanh toán ngày chưa nghỉ",
   "gộp tối đa 03 năm"
  ],
+ "memo": {
+  "hook": "12 – 14 – 16 ngày, NGUYÊN LƯƠNG; cứ 5 NĂM thêm 1 ngày.",
+  "tree": [
+   {
+    "label": "Mức",
+    "children": [
+     "Bình thường: 12 ngày",
+     "Nặng nhọc: 14 ngày",
+     "Đặc biệt nặng nhọc: 16 ngày"
+    ]
+   },
+   {
+    "label": "Thâm niên",
+    "children": [
+     "Đủ 05 năm thêm 01 ngày"
+    ]
+   },
+   {
+    "label": "Chưa nghỉ hết",
+    "children": [
+     "Được thanh toán khi thôi việc"
+    ]
+   },
+   {
+    "label": "Gộp",
+    "children": [
+     "Tối đa 03 năm"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

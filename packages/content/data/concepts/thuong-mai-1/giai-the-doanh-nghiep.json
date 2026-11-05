@@ -22,6 +22,27 @@
   "không đủ số thành viên tối thiểu 06 tháng",
   "bị thu hồi Giấy chứng nhận"
  ],
+ "memo": {
+  "hook": "Giải thể khi HẾT HẠN, TỰ NGUYỆN, THIẾU THÀNH VIÊN 6 tháng, bị THU HỒI giấy; phải TRẢ HẾT NỢ.",
+  "tree": [
+   {
+    "label": "Trường hợp",
+    "children": [
+     "Hết thời hạn hoạt động",
+     "Tự nguyện theo quyết định",
+     "Thiếu thành viên tối thiểu 06 tháng",
+     "Bị thu hồi Giấy chứng nhận"
+    ]
+   },
+   {
+    "label": "Điều kiện",
+    "children": [
+     "Thanh toán hết nợ",
+     "Không đang tranh chấp tại Tòa"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

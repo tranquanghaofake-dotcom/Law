@@ -22,6 +22,26 @@
   "không phụ thuộc vào phần vốn góp",
   "theo mức độ sử dụng sản phẩm, dịch vụ"
  ],
+ "memo": {
+  "hook": "HTX: MỖI người MỘT phiếu; chia lợi theo MỨC ĐỘ SỬ DỤNG dịch vụ, không theo vốn.",
+  "tree": [
+   {
+    "label": "Nguyên tắc",
+    "children": [
+     "Tự nguyện, mở rộng kết nạp",
+     "Dân chủ, bình đẳng",
+     "Tự chủ, tự chịu trách nhiệm"
+    ]
+   },
+   {
+    "label": "Khác công ty",
+    "children": [
+     "Biểu quyết không theo vốn",
+     "Chia theo mức độ sử dụng dịch vụ"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

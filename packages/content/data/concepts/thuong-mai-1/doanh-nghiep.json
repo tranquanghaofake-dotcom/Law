@@ -22,6 +22,39 @@
   "thành lập hoặc đăng ký theo pháp luật",
   "mục đích kinh doanh"
  ],
+ "memo": {
+  "hook": "Bốn dấu hiệu: TÊN – TÀI SẢN – TRỤ SỞ – ĐĂNG KÝ; năm loại hình.",
+  "tree": [
+   {
+    "label": "Dấu hiệu",
+    "children": [
+     "Tên riêng",
+     "Tài sản",
+     "Trụ sở giao dịch",
+     "Thành lập hợp pháp"
+    ]
+   },
+   {
+    "label": "Mục đích",
+    "children": [
+     "Kinh doanh"
+    ]
+   },
+   {
+    "label": "Có pháp nhân",
+    "children": [
+     "TNHH một, hai thành viên",
+     "Cổ phần, hợp danh"
+    ]
+   },
+   {
+    "label": "Không pháp nhân",
+    "children": [
+     "Doanh nghiệp tư nhân"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

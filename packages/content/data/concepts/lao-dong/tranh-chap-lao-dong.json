@@ -22,6 +22,29 @@
   "về quyền, về lợi ích",
   "tổ chức đại diện với nhau"
  ],
+ "memo": {
+  "hook": "Tập thể chia hai: VỀ QUYỀN (hiểu luật khác nhau) và VỀ LỢI ÍCH (đòi điều kiện mới).",
+  "tree": [
+   {
+    "label": "Phạm vi",
+    "children": [
+     "Giữa các bên quan hệ lao động",
+     "Giữa các tổ chức đại diện",
+     "Quan hệ liên quan trực tiếp"
+    ]
+   },
+   {
+    "label": "Cá nhân"
+   },
+   {
+    "label": "Tập thể",
+    "children": [
+     "Về quyền",
+     "Về lợi ích"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

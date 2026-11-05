@@ -22,6 +22,32 @@
   "tự ý bỏ việc 05 ngày liên tục",
   "báo trước"
  ],
+ "memo": {
+  "hook": "Người sử dụng CHỈ được chấm dứt khi có CĂN CỨ LUẬT ĐỊNH.",
+  "tree": [
+   {
+    "label": "Căn cứ",
+    "children": [
+     "Thường xuyên không hoàn thành việc",
+     "Ốm đau điều trị lâu chưa hồi phục",
+     "Thiên tai, dịch bệnh buộc giảm",
+     "Tự ý bỏ việc 05 ngày liên tục"
+    ]
+   },
+   {
+    "label": "Thủ tục",
+    "children": [
+     "Báo trước"
+    ]
+   },
+   {
+    "label": "Khác người lao động",
+    "children": [
+     "Người lao động không cần lý do"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

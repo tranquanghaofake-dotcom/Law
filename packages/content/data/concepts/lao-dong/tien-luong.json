@@ -23,6 +23,34 @@
   "không thấp hơn lương tối thiểu",
   "bình đẳng giới"
  ],
+ "memo": {
+  "hook": "Lương = MỨC LƯƠNG + PHỤ CẤP + BỔ SUNG; không dưới TỐI THIỂU; nam nữ BÌNH ĐẲNG.",
+  "tree": [
+   {
+    "label": "Gồm",
+    "children": [
+     "Mức lương theo công việc",
+     "Phụ cấp lương",
+     "Khoản bổ sung khác"
+    ]
+   },
+   {
+    "label": "Nguyên tắc",
+    "children": [
+     "Theo thỏa thuận",
+     "Không thấp hơn lương tối thiểu",
+     "Bình đẳng nam nữ"
+    ]
+   },
+   {
+    "label": "Làm thêm",
+    "children": [
+     "Ngày thường ≥ 150%",
+     "Ngày nghỉ ≥ 200%"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -22,6 +22,39 @@
   "hợp nhất: lập công ty mới",
   "sáp nhập: nhập vào công ty khác"
  ],
+ "memo": {
+  "hook": "CHIA: cũ mất; TÁCH: cũ còn; HỢP NHẤT: lập mới, cũ mất; SÁP NHẬP: nhập vào bên còn.",
+  "tree": [
+   {
+    "label": "Chia",
+    "children": [
+     "Công ty bị chia chấm dứt",
+     "Lập 2+ công ty mới"
+    ]
+   },
+   {
+    "label": "Tách",
+    "children": [
+     "Công ty bị tách còn",
+     "Lập thêm công ty mới"
+    ]
+   },
+   {
+    "label": "Hợp nhất",
+    "children": [
+     "Các công ty chấm dứt",
+     "Lập một công ty mới"
+    ]
+   },
+   {
+    "label": "Sáp nhập",
+    "children": [
+     "Bị sáp nhập chấm dứt",
+     "Bên nhận còn tồn tại"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

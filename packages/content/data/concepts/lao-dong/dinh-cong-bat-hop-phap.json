@@ -22,6 +22,36 @@
   "đang được giải quyết",
   "nơi không được đình công"
  ],
+ "memo": {
+  "hook": "Bất hợp pháp nếu SAI LOẠI tranh chấp, SAI NGƯỜI tổ chức, SAI THỦ TỤC hoặc ĐANG giải quyết.",
+  "tree": [
+   {
+    "label": "Sai căn cứ",
+    "children": [
+     "Không thuộc trường hợp được đình công"
+    ]
+   },
+   {
+    "label": "Sai chủ thể",
+    "children": [
+     "Không do tổ chức đại diện có quyền"
+    ]
+   },
+   {
+    "label": "Sai thủ tục",
+    "children": [
+     "Không lấy ý kiến, thông báo trước 05 ngày"
+    ]
+   },
+   {
+    "label": "Sai thời điểm, nơi",
+    "children": [
+     "Tranh chấp đang được giải quyết",
+     "Nơi không được đình công"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

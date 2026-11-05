@@ -22,6 +22,30 @@
   "hạn chế chuyển nhượng 03 năm",
   "Đại hội đồng cổ đông chấp thuận"
  ],
+ "memo": {
+  "hook": "Ít nhất 3 cổ đông sáng lập, mua ít nhất 20%, hạn chế chuyển nhượng 3 NĂM.",
+  "tree": [
+   {
+    "label": "Số lượng",
+    "children": [
+     "Ít nhất 03 (công ty mới)"
+    ]
+   },
+   {
+    "label": "Mua",
+    "children": [
+     "Ít nhất 20% cổ phần phổ thông"
+    ]
+   },
+   {
+    "label": "Hạn chế 03 năm",
+    "children": [
+     "Giữa sáng lập: tự do",
+     "Cho người ngoài: ĐHĐCĐ chấp thuận"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

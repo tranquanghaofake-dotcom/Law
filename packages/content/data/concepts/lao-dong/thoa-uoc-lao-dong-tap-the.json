@@ -23,6 +23,38 @@
   "doanh nghiệp, ngành, nhiều doanh nghiệp",
   "có lợi hơn"
  ],
+ "memo": {
+  "hook": "Thỏa ước là LUẬT CỦA DOANH NGHIỆP: vừa hợp đồng vừa quy phạm.",
+  "tree": [
+   {
+    "label": "Hình thành",
+    "children": [
+     "Qua thương lượng tập thể",
+     "Bằng văn bản"
+    ]
+   },
+   {
+    "label": "Loại",
+    "children": [
+     "Doanh nghiệp",
+     "Ngành",
+     "Nhiều doanh nghiệp"
+    ]
+   },
+   {
+    "label": "Hiệu lực",
+    "children": [
+     "Hợp đồng lao động không thấp hơn"
+    ]
+   },
+   {
+    "label": "Nội dung",
+    "children": [
+     "Khuyến khích có lợi hơn luật"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -22,6 +22,41 @@
   "01 năm Tòa án",
   "từ ngày phát hiện hành vi vi phạm"
  ],
+ "memo": {
+  "hook": "Hòa giải 6 THÁNG – Trọng tài 9 THÁNG – Tòa 1 NĂM, từ ngày PHÁT HIỆN vi phạm.",
+  "tree": [
+   {
+    "label": "Hòa giải viên",
+    "children": [
+     "06 tháng"
+    ]
+   },
+   {
+    "label": "Hội đồng trọng tài",
+    "children": [
+     "09 tháng"
+    ]
+   },
+   {
+    "label": "Tòa án",
+    "children": [
+     "01 năm"
+    ]
+   },
+   {
+    "label": "Mốc tính",
+    "children": [
+     "Ngày phát hiện vi phạm"
+    ]
+   },
+   {
+    "label": "Không tính",
+    "children": [
+     "Bất khả kháng, trở ngại khách quan"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

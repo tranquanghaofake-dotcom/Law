@@ -22,6 +22,33 @@
   "thành viên góp vốn trách nhiệm hữu hạn",
   "có tư cách pháp nhân"
  ],
+ "memo": {
+  "hook": "Thành viên HỢP DANH: cá nhân, VÔ HẠN, LIÊN ĐỚI; thành viên GÓP VỐN: hữu hạn.",
+  "tree": [
+   {
+    "label": "Thành viên hợp danh",
+    "children": [
+     "Ít nhất 02",
+     "Phải là cá nhân",
+     "Trách nhiệm vô hạn, liên đới"
+    ]
+   },
+   {
+    "label": "Thành viên góp vốn",
+    "children": [
+     "Không bắt buộc",
+     "Trách nhiệm hữu hạn",
+     "Không quản lý"
+    ]
+   },
+   {
+    "label": "Đặc biệt",
+    "children": [
+     "Có tư cách pháp nhân"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

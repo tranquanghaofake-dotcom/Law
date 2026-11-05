@@ -22,6 +22,26 @@
   "quyền sửa đổi Điều lệ",
   "cấm sở hữu chéo"
  ],
+ "memo": {
+  "hook": "Công ty mẹ: >50% vốn HOẶC bổ nhiệm đa số HOẶC sửa Điều lệ; CẤM sở hữu chéo.",
+  "tree": [
+   {
+    "label": "Tiêu chí (một trong)",
+    "children": [
+     "Sở hữu trên 50%",
+     "Bổ nhiệm đa số HĐQT, Giám đốc",
+     "Quyết định sửa Điều lệ"
+    ]
+   },
+   {
+    "label": "Cấm",
+    "children": [
+     "Con góp vốn vào mẹ",
+     "Các con sở hữu chéo"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",
