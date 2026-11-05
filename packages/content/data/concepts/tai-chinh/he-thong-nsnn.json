@@ -24,10 +24,13 @@
  ],
  "note": "Luật Ngân sách nhà nước 89/2025/QH15 có hiệu lực từ năm ngân sách 2026 (một số nội dung từ 01/7/2025), thay thế Luật Ngân sách nhà nước 83/2015/QH13 mà đề cương HLU còn dẫn (Điều 77).",
  "memo": {
-  "hook": "Trung ương CHỦ ĐẠO; địa phương nay chỉ còn TỈNH và XÃ.",
+  "gist": "Ngân sách gồm trung ương và địa phương; địa phương nay chỉ còn hai cấp là tỉnh và xã.",
+  "kind": "ladder",
+  "hook": "Như ngân quỹ của một dòng họ: quỹ chung giữ phần lớn, các nhánh có quỹ riêng, thiếu thì quỹ chung bù.",
   "tree": [
    {
     "label": "Gồm",
+    "icon": "🏛️",
     "children": [
      "Ngân sách trung ương (chủ đạo)",
      "Ngân sách địa phương"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Địa phương",
+    "icon": "🏘️",
     "children": [
      "Cấp tỉnh",
      "Cấp xã"
@@ -42,11 +46,22 @@
    },
    {
     "label": "Quan hệ giữa các cấp",
+    "icon": "🔁",
     "children": [
      "Thu hưởng 100%",
      "Thu phân chia theo tỷ lệ",
      "Bổ sung cân đối, có mục tiêu"
     ]
+   }
+  ],
+  "case": {
+   "q": "Tỉnh nghèo thu không đủ chi. Tỉnh nhận tiền từ đâu?",
+   "a": "Bổ sung cân đối từ ngân sách trung ương."
+  },
+  "contrast": [
+   {
+    "with": "ngan-sach-nha-nuoc",
+    "text": "Hệ thống ngân sách là các cấp ngân sách; ngân sách nhà nước là toàn bộ thu chi."
    }
   ]
  },

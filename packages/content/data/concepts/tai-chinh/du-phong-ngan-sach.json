@@ -25,16 +25,20 @@
  ],
  "note": "Luật Ngân sách nhà nước 89/2025/QH15 có hiệu lực từ năm ngân sách 2026 (một số nội dung từ 01/7/2025), thay thế Luật Ngân sách nhà nước 83/2015/QH13 mà đề cương HLU còn dẫn (Điều 77).",
  "memo": {
-  "hook": "Dự phòng 2–5% tổng chi, để dành cho THIÊN TAI, DỊCH BỆNH, việc CẤP BÁCH.",
+  "gist": "Dự phòng là khoản để dành sẵn trong dự toán, từ 2% đến 5% tổng chi, cho thiên tai, dịch bệnh, việc gấp.",
+  "kind": "tree",
+  "hook": "Như tiền để trong hộp thuốc gia đình: không tiêu thường ngày, chỉ mở khi có chuyện.",
   "tree": [
    {
     "label": "Chu trình",
+    "icon": "🔄",
     "children": [
      "Lập dự toán → chấp hành → quyết toán"
     ]
    },
    {
     "label": "Dự phòng",
+    "icon": "🧰",
     "children": [
      "Khoản chưa phân bổ trong dự toán chi",
      "Từ 2% đến 5% tổng chi"
@@ -42,6 +46,7 @@
    },
    {
     "label": "Dùng cho",
+    "icon": "🌪️",
     "children": [
      "Thiên tai, dịch bệnh",
      "Nhiệm vụ cấp bách"
@@ -49,9 +54,20 @@
    },
    {
     "label": "Quyết định dự toán",
+    "icon": "🏛️",
     "children": [
-     "Quốc hội, HĐND"
+     "Quốc hội, Hội đồng nhân dân"
     ]
+   }
+  ],
+  "case": {
+   "q": "Tỉnh có tổng chi 20.000 tỷ. Phải để dự phòng trong khoảng nào?",
+   "a": "Từ 400 đến 1.000 tỷ đồng, tức 2% đến 5% tổng chi."
+  },
+  "contrast": [
+   {
+    "with": "boi-chi-ket-du",
+    "text": "Dự phòng để sẵn từ đầu năm; kết dư là tiền còn thừa khi hết năm."
    }
   ]
  },

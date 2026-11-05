@@ -25,10 +25,13 @@
  ],
  "note": "Luật Ngân sách nhà nước 89/2025/QH15 có hiệu lực từ năm ngân sách 2026 (một số nội dung từ 01/7/2025), thay thế Luật Ngân sách nhà nước 83/2015/QH13 mà đề cương HLU còn dẫn (Điều 77).",
  "memo": {
-  "hook": "Mọi thu chi phải DỰ TOÁN; CHI KHI CÓ dự toán được giao.",
+  "gist": "Mọi khoản thu, chi phải đưa vào dự toán; chỉ được chi khi có dự toán và đúng định mức.",
+  "kind": "checklist",
+  "hook": "Không có tên trong danh sách đi chợ thì không được bỏ vào giỏ.",
   "tree": [
    {
     "label": "Quản lý",
+    "icon": "🏛️",
     "children": [
      "Thống nhất, tập trung dân chủ",
      "Công khai, minh bạch"
@@ -36,12 +39,14 @@
    },
    {
     "label": "Toàn diện",
+    "icon": "📋",
     "children": [
      "Mọi khoản thu, chi vào dự toán"
     ]
    },
    {
     "label": "Cân đối",
+    "icon": "⚖️",
     "children": [
      "Thu thuế, phí lớn hơn chi thường xuyên",
      "Vay bù bội chi chỉ cho đầu tư"
@@ -49,10 +54,21 @@
    },
    {
     "label": "Chi",
+    "icon": "💳",
     "children": [
      "Có dự toán",
      "Đúng chế độ, định mức"
     ]
+   }
+  ],
+  "case": {
+   "q": "Một Sở muốn chi mua xe công nhưng khoản này chưa có trong dự toán. Kho bạc có được thanh toán không?",
+   "a": "Không. Chỉ chi khi có dự toán được giao."
+  },
+  "contrast": [
+   {
+    "with": "ngan-sach-nha-nuoc",
+    "text": "Nguyên tắc là luật chơi khi thu chi; ngân sách là chính các khoản thu chi."
    }
   ]
  },

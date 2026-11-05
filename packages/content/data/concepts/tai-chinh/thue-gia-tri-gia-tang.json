@@ -25,10 +25,13 @@
  ],
  "note": "Luật Thuế GTGT 48/2024/QH15 có hiệu lực từ 01/7/2025, thay thế Luật 13/2008/QH12; được sửa đổi bởi Luật 90/2025/QH15, Luật 149/2025/QH15, Luật 09/2026/QH16 (văn bản hợp nhất 114/VBHN-VPQH 2026); Nghị quyết 204/2025/QH15 giảm 2% thuế suất 10% xuống 8% cho nhiều nhóm hàng hóa, dịch vụ, từ 01/7/2025 đến hết 31/12/2026.",
  "memo": {
-  "hook": "Thu trên phần TĂNG THÊM ở MỌI KHÂU; người tiêu dùng cuối chịu.",
+  "gist": "Thuế tính trên phần giá trị tăng thêm qua từng khâu, từ sản xuất tới tiêu dùng; người mua cuối cùng gánh thuế.",
+  "kind": "tree",
+  "hook": "Như chuyền bóng: mỗi người chỉ trả phần mình làm bóng to thêm.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "🔗",
     "children": [
      "Giá trị tăng thêm",
      "Mọi khâu: sản xuất đến tiêu dùng",
@@ -37,6 +40,7 @@
    },
    {
     "label": "Phạm vi",
+    "icon": "🎯",
     "children": [
      "Hàng, dịch vụ tiêu dùng ở Việt Nam",
      "Trừ danh mục không chịu thuế"
@@ -44,10 +48,21 @@
    },
    {
     "label": "Phương pháp",
+    "icon": "🧮",
     "children": [
      "Khấu trừ",
      "Trực tiếp"
     ]
+   }
+  ],
+  "case": {
+   "q": "Nhà máy mua vải 100 (thuế 10), bán áo 150 (thuế 15). Nhà máy nộp bao nhiêu thuế?",
+   "a": "5, tức 15 trừ 10, đúng bằng thuế trên phần tăng thêm 50."
+  },
+  "contrast": [
+   {
+    "with": "thue-suat-gtgt",
+    "text": "Thuế giá trị gia tăng là loại thuế; thuế suất là các mức phần trăm của nó."
    }
   ]
  },

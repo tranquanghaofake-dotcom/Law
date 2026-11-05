@@ -5,7 +5,7 @@
  "term": "Khái niệm và đặc điểm của thuế",
  "definition": "Thuế là một khoản nộp bằng tiền cho Nhà nước, mang tính bắt buộc, không hoàn trả trực tiếp, do các tổ chức, cá nhân thực hiện theo quy định của pháp luật nhằm đáp ứng nhu cầu chi tiêu công của Nhà nước.",
  "plain": "Ba đặc điểm thường nêu: (1) TÍNH BẮT BUỘC (cưỡng chế bằng quyền lực nhà nước); (2) TÍNH KHÔNG HOÀN TRẢ TRỰC TIẾP (khác phí: có đối giá cụ thể); (3) GẮN VỚI QUYỀN LỰC NHÀ NƯỚC — chỉ QUỐC HỘI có quyền đặt ra, sửa đổi, bãi bỏ thuế bằng luật (khoản 2 Điều 70 Hiến pháp 2013; Điều 47 Hiến pháp: công dân có nghĩa vụ nộp thuế theo luật định). Phân loại: thuế TRỰC THU (TNDN, TNCN — người nộp đồng thời là người chịu thuế) và thuế GIÁN THU (GTGT, TTĐB, XNK — được cộng vào giá, người tiêu dùng chịu). Nguyên tắc đánh thuế: công bằng, hiệu quả, rõ ràng, thuận tiện.",
- "example": "Khi mua chai nước ngọt, người tiêu dùng trả cả thuế GTGT trong giá nhưng doanh nghiệp bán là người nộp thuế: thuế gián thu. Lương của nhân viên bị khấu trừ thuế TNCN: thuế trực thu.",
+ "example": "Khi mua chai nước ngọt, người tiêu dùng trả cả thuế giá trị gia tăng trong giá nhưng doanh nghiệp bán là người nộp: thuế gián thu. Lương nhân viên bị khấu trừ thuế thu nhập cá nhân: thuế trực thu.",
  "source": {
   "kind": "textbook",
   "cite": "Giáo trình Luật Tài chính / Luật Ngân sách nhà nước, Trường Đại học Luật Hà Nội; đề cương Luật Tài chính vấn đề 6 — tóm lược quan điểm học thuật phổ biến, chưa đối chiếu nguyên văn"
@@ -23,10 +23,13 @@
   "trực thu – gián thu"
  ],
  "memo": {
-  "hook": "Thuế: BẮT BUỘC, KHÔNG HOÀN TRẢ trực tiếp, chỉ QUỐC HỘI đặt ra.",
+  "gist": "Thuế là tiền bắt buộc nộp cho Nhà nước, không được trả lại trực tiếp, để Nhà nước chi cho việc chung.",
+  "kind": "tree",
+  "hook": "Như góp quỹ lớp: ai cũng phải góp, không lấy lại riêng, nhưng cả lớp cùng dùng.",
   "tree": [
    {
     "label": "Đặc điểm",
+    "icon": "🔒",
     "children": [
      "Bắt buộc",
      "Không hoàn trả trực tiếp",
@@ -35,12 +38,14 @@
    },
    {
     "label": "Ai đặt ra",
+    "icon": "🏛️",
     "children": [
      "Chỉ Quốc hội, bằng luật"
     ]
    },
    {
     "label": "Phân loại",
+    "icon": "🔀",
     "children": [
      "Trực thu: người nộp là người chịu",
      "Gián thu: người tiêu dùng chịu"
@@ -48,9 +53,20 @@
    },
    {
     "label": "Khác phí",
+    "icon": "↔️",
     "children": [
      "Phí có đối giá cụ thể"
     ]
+   }
+  ],
+  "case": {
+   "q": "Mua chai nước ngọt, người mua trả cả thuế trong giá nhưng người bán nộp. Đây là thuế trực thu hay gián thu?",
+   "a": "Gián thu, vì người nộp và người chịu thuế khác nhau."
+  },
+  "contrast": [
+   {
+    "with": "nguyen-tac-quan-ly-thue",
+    "text": "Thuế là khoản phải nộp; nguyên tắc quản lý thuế là cách thu khoản đó."
    }
   ]
  },

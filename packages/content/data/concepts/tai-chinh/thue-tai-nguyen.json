@@ -25,10 +25,13 @@
  ],
  "note": "Luật Thuế tài nguyên 45/2009/QH12 có hiệu lực từ 01/7/2010, sửa đổi bởi Luật 71/2014/QH13 và Luật Dầu khí 12/2022/QH15; văn bản hợp nhất 23/VBHN-VPQH 2022 — chưa kiểm tra sửa đổi sau năm 2022.",
  "memo": {
-  "hook": "Ai KHAI THÁC tài nguyên thiên nhiên thì nộp.",
+  "gist": "Ai khai thác tài nguyên thiên nhiên như khoáng sản, dầu, nước, hải sản tự nhiên thì phải nộp thuế tài nguyên.",
+  "kind": "tree",
+  "hook": "Lấy của đất trời thì trả lại cho cộng đồng.",
   "tree": [
    {
     "label": "Đối tượng",
+    "icon": "⛏️",
     "children": [
      "Khoáng sản, dầu thô, khí",
      "Sản phẩm rừng tự nhiên",
@@ -38,15 +41,27 @@
    },
    {
     "label": "Người nộp",
+    "icon": "👷",
     "children": [
      "Tổ chức, cá nhân khai thác"
     ]
    },
    {
     "label": "Loại trừ",
+    "icon": "🌾",
     "children": [
      "Nước cho nông, lâm, ngư, diêm nghiệp"
     ]
+   }
+  ],
+  "case": {
+   "q": "Hợp tác xã lấy nước sông tưới lúa. Có phải nộp thuế tài nguyên không?",
+   "a": "Không. Nước dùng cho nông nghiệp được loại trừ."
+  },
+  "contrast": [
+   {
+    "with": "thue-khac",
+    "text": "Thuế tài nguyên đánh vào việc khai thác; thuế môi trường đánh vào hàng gây hại."
    }
   ]
  },

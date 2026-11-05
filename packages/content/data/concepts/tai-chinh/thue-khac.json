@@ -23,10 +23,13 @@
   "xăng dầu, than, túi ni lông"
  ],
  "memo": {
-  "hook": "Thuế GIÁN THU, thu MỘT LẦN vào hàng gây hại môi trường.",
+  "gist": "Thuế bảo vệ môi trường thu một lần vào hàng gây hại môi trường như xăng dầu, than, túi ni lông.",
+  "kind": "tree",
+  "hook": "Ai làm bẩn nhà chung thì góp tiền dọn.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "🌱",
     "children": [
      "Thuế gián thu",
      "Thuế tuyệt đối"
@@ -34,6 +37,7 @@
    },
    {
     "label": "Đánh vào",
+    "icon": "⛽",
     "children": [
      "Xăng dầu, mỡ nhờn",
      "Than đá",
@@ -43,9 +47,20 @@
    },
    {
     "label": "Thu",
+    "icon": "1️⃣",
     "children": [
      "Một lần khi sản xuất, nhập khẩu"
     ]
+   }
+  ],
+  "case": {
+   "q": "Doanh nghiệp nhập khẩu xăng nộp thuế bảo vệ môi trường. Ai thực sự gánh khoản này?",
+   "a": "Người tiêu dùng, qua giá bán lẻ, vì đây là thuế gián thu."
+  },
+  "contrast": [
+   {
+    "with": "thue-tai-nguyen",
+    "text": "Thuế môi trường đánh vào hàng gây hại; thuế tài nguyên đánh vào việc khai thác tài nguyên."
    }
   ]
  },

@@ -5,7 +5,7 @@
  "term": "Thuế sử dụng đất phi nông nghiệp",
  "definition": "Đất ở tại nông thôn, đất ở tại đô thị. Đất sản xuất, kinh doanh phi nông nghiệp bao gồm: đất xây dựng khu công nghiệp; đất làm mặt bằng xây dựng cơ sở sản xuất, kinh doanh; đất khai thác, chế biến khóang sản; đất sản xuất vật liệu xây dựng, làm đồ gốm. (…) Người nộp thuế là tổ chức, hộ gia đình, cá nhân có quyền sử dụng đất thuộc đối tượng chịu thuế quy định tại Điều 2 của Luật này.",
  "plain": "Đối tượng: ĐẤT Ở (nông thôn, đô thị), ĐẤT SẢN XUẤT, KINH DOANH phi nông nghiệp, đất phi nông nghiệp khác sử dụng vào mục đích kinh doanh. Người nộp: người CÓ QUYỀN SỬ DỤNG ĐẤT; chưa có Giấy chứng nhận thì NGƯỜI ĐANG SỬ DỤNG đất nộp (khoản 2 Điều 4). Thuế suất đất ở theo BIỂU LŨY TIẾN TỪNG PHẦN: trong hạn mức 0,03%; vượt không quá 3 lần hạn mức 0,07%; vượt trên 3 lần 0,15% (khoản 1 Điều 7); chung cư, nhà nhiều tầng 0,03%. Lưu ý: văn bản giữ nguyên chữ \"khóang sản\" theo bản hợp nhất.",
- "example": "Ông U có 400 m² đất ở tại thành phố, hạn mức giao đất ở là 100 m²: 100 m² chịu 0,03%, 200 m² tiếp theo (vượt đến 3 lần) chịu 0,07%, 100 m² còn lại chịu 0,15%.",
+ "example": "Ông U có 400 mét vuông đất ở tại thành phố, hạn mức 100: 100 mét vuông chịu 0,03%, 200 mét vuông tiếp theo chịu 0,07%, 100 mét vuông còn lại chịu 0,15%.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1, 2 Điều 2; khoản 1 Điều 4 Luật Thuế sử dụng đất phi nông nghiệp 2010 (sửa đổi, bổ sung năm 2024)",
@@ -24,10 +24,13 @@
  ],
  "note": "Luật Thuế sử dụng đất phi nông nghiệp 48/2010/QH12 có hiệu lực từ 01/01/2012, sửa đổi bởi Luật Đất đai 31/2024/QH15 (hiệu lực 01/8/2024); văn bản hợp nhất 05/VBHN-VPQH 2024.",
  "memo": {
-  "hook": "Đất ở tính LŨY TIẾN: 0,03% – 0,07% – 0,15%.",
+  "gist": "Ai có đất ở hoặc đất kinh doanh phi nông nghiệp phải nộp thuế; đất ở vượt hạn mức chịu mức cao hơn.",
+  "kind": "ladder",
+  "hook": "Như bậc giá điện: dùng càng nhiều, bậc càng đắt.",
   "tree": [
    {
     "label": "Đối tượng",
+    "icon": "🏠",
     "children": [
      "Đất ở nông thôn, đô thị",
      "Đất sản xuất, kinh doanh phi nông nghiệp"
@@ -35,6 +38,7 @@
    },
    {
     "label": "Người nộp",
+    "icon": "👤",
     "children": [
      "Người có quyền sử dụng đất",
      "Chưa có giấy: người đang sử dụng"
@@ -42,11 +46,22 @@
    },
    {
     "label": "Thuế suất đất ở",
+    "icon": "📈",
     "children": [
      "Trong hạn mức: 0,03%",
      "Vượt đến 3 lần: 0,07%",
      "Trên 3 lần: 0,15%"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ông U có 400 mét vuông đất ở, hạn mức 100. Phần 100 mét vuông cuối chịu thuế suất nào?",
+   "a": "0,15%, vì vượt quá 3 lần hạn mức."
+  },
+  "contrast": [
+   {
+    "with": "thue-tai-nguyen",
+    "text": "Thuế đất là có đất thì nộp; thuế tài nguyên là khai thác tài nguyên thì nộp."
    }
   ]
  },
