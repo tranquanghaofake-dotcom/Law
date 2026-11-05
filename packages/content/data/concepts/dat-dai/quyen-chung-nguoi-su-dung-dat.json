@@ -23,10 +23,13 @@
   "khiếu nại, tố cáo, khởi kiện"
  ],
  "memo": {
-  "hook": "Quyền CHUNG ai cũng có; quyền RIÊNG (chuyển nhượng, thế chấp…) tùy loại chủ thể.",
+  "gist": "Ai dùng đất hợp pháp cũng có quyền chung: được cấp giấy, hưởng thành quả, được bảo vệ và được khiếu nại, khởi kiện.",
+  "kind": "compare",
+  "hook": "Như quyền của mọi hành khách trên xe; còn chỗ ngồi hạng nhất thì tùy vé.",
   "tree": [
    {
     "label": "Quyền chung",
+    "icon": "👥",
     "children": [
      "Được cấp Giấy chứng nhận",
      "Hưởng thành quả",
@@ -36,6 +39,7 @@
    },
    {
     "label": "Quyền riêng",
+    "icon": "🔄",
     "children": [
      "Chuyển nhượng, cho thuê",
      "Thừa kế, tặng cho",
@@ -44,9 +48,20 @@
    },
    {
     "label": "Phụ thuộc",
+    "icon": "🧩",
     "children": [
      "Chủ thể, hình thức giao đất"
     ]
+   }
+  ],
+  "case": {
+   "q": "Người được giao đất nông nghiệp bị hàng xóm lấn ranh. Họ có quyền gì?",
+   "a": "Yêu cầu Nhà nước bảo vệ và khởi kiện."
+  },
+  "contrast": [
+   {
+    "with": "dieu-kien-thuc-hien-quyen",
+    "text": "Quyền chung ai cũng có; muốn bán, thế chấp thì còn phải đủ điều kiện riêng."
    }
   ]
  },

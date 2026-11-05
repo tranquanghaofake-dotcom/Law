@@ -23,10 +23,13 @@
   "UBND hoặc Tòa án"
  ],
  "memo": {
-  "hook": "CÓ sổ (một bên là đủ) → TÒA ÁN; KHÔNG có → chọn UBND hoặc Tòa.",
+  "gist": "Hòa giải không thành, nếu một bên có giấy chứng nhận thì Tòa giải quyết; không có giấy thì chọn Ủy ban hoặc Tòa.",
+  "kind": "compare",
+  "hook": "Có vé thì vào cổng chính; không vé thì được chọn cổng.",
   "tree": [
    {
     "label": "Có Giấy chứng nhận",
+    "icon": "📜",
     "children": [
      "Một bên có là đủ",
      "Tòa án giải quyết"
@@ -34,16 +37,28 @@
    },
    {
     "label": "Tranh chấp tài sản trên đất",
+    "icon": "🏚️",
     "children": [
      "Tòa án"
     ]
    },
    {
     "label": "Không có giấy tờ",
+    "icon": "❓",
     "children": [
      "Chọn Ủy ban nhân dân",
      "Hoặc khởi kiện tại Tòa"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ông A có sổ đỏ, bà B không có giấy tờ, hòa giải ở xã không thành. Ai giải quyết?",
+   "a": "Tòa án, vì chỉ cần một bên có giấy chứng nhận."
+  },
+  "contrast": [
+   {
+    "with": "hoa-giai-tranh-chap-dat-dai",
+    "text": "Thẩm quyền là ai giải quyết sau cùng; hòa giải ở xã là bước bắt buộc phải qua trước."
    }
   ]
  },

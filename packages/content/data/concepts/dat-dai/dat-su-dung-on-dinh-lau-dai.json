@@ -22,10 +22,13 @@
   "không phải gia hạn"
  ],
  "memo": {
-  "hook": "ĐẤT Ở dùng lâu dài; đất nông nghiệp trong hạn mức 50 NĂM, tự động tiếp tục.",
+  "gist": "Đất ở được dùng mãi; đất nông nghiệp trong hạn mức dùng 50 năm, hết hạn tự động được dùng tiếp.",
+  "kind": "compare",
+  "hook": "Như thuê bao điện thoại: có gói vĩnh viễn, có gói 50 năm tự gia hạn.",
   "tree": [
    {
     "label": "Ổn định lâu dài",
+    "icon": "♾️",
     "children": [
      "Đất ở",
      "Quốc phòng, an ninh",
@@ -34,6 +37,7 @@
    },
    {
     "label": "Có thời hạn",
+    "icon": "⏳",
     "children": [
      "Nông nghiệp trong hạn mức: 50 năm",
      "Hết hạn tự động tiếp tục"
@@ -41,9 +45,20 @@
    },
    {
     "label": "Dự án",
+    "icon": "🏗️",
     "children": [
      "Theo thời hạn dự án"
     ]
+   }
+  ],
+  "case": {
+   "q": "Ông A được giao 1 ha đất lúa năm 1993, nay hết hạn. Ông có phải làm thủ tục gia hạn không?",
+   "a": "Không. Đất nông nghiệp trong hạn mức hết hạn được tự động dùng tiếp 50 năm."
+  },
+  "contrast": [
+   {
+    "with": "han-muc-giao-dat-nong-nghiep",
+    "text": "Thời hạn là dùng bao lâu; hạn mức là được giao bao nhiêu héc-ta."
    }
   ]
  },

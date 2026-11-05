@@ -23,10 +23,13 @@
   "cho thuê trả một lần hoặc hằng năm"
  ],
  "memo": {
-  "hook": "Ba cách trao đất: GIAO KHÔNG THU TIỀN, GIAO CÓ THU TIỀN, CHO THUÊ.",
+  "gist": "Nhà nước trao đất theo ba cách: giao không lấy tiền, giao có lấy tiền, hoặc cho thuê trả tiền một lần hay hằng năm.",
+  "kind": "compare",
+  "hook": "Như nhà trọ: phòng miễn phí cho người được ưu tiên, phòng mua đứt, hoặc phòng thuê theo tháng.",
   "tree": [
    {
     "label": "Giao không thu tiền",
+    "icon": "🎁",
     "children": [
      "Nông dân trong hạn mức",
      "Trụ sở, quốc phòng, công cộng"
@@ -34,6 +37,7 @@
    },
    {
     "label": "Giao có thu tiền",
+    "icon": "💰",
     "children": [
      "Đất ở cho cá nhân",
      "Dự án nhà ở"
@@ -41,10 +45,21 @@
    },
    {
     "label": "Cho thuê",
+    "icon": "🔑",
     "children": [
      "Trường hợp còn lại",
      "Trả một lần hoặc hằng năm"
     ]
+   }
+  ],
+  "case": {
+   "q": "Doanh nghiệp xin đất làm nhà máy. Thường được giao hay thuê?",
+   "a": "Thuê đất, trả tiền một lần hoặc hằng năm."
+  },
+  "contrast": [
+   {
+    "with": "han-muc-giao-dat-nong-nghiep",
+    "text": "Giao, thuê là cách trao đất; hạn mức là được giao nhiều nhất bao nhiêu."
    }
   ]
  },

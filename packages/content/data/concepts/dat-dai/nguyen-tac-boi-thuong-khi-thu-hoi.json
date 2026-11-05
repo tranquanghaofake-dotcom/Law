@@ -5,7 +5,7 @@
  "term": "Nguyên tắc bồi thường, hỗ trợ, tái định cư khi Nhà nước thu hồi đất",
  "definition": "Việc bồi thường, hỗ trợ, tái định cư khi Nhà nước thu hồi đất phải bảo đảm dân chủ, khách quan, công bằng, công khai, minh bạch, kịp thời và đúng quy định của pháp luật; vì lợi ích chung, sự phát triển bền vững, văn minh và hiện đại của cộng đồng, của địa phương; quan tâm đến đối tượng chính sách xã hội, đối tượng trực tiếp sản xuất nông nghiệp. Việc bồi thường về đất được thực hiện bằng việc giao đất có cùng mục đích sử dụng với loại đất thu hồi, trường hợp không có đất để bồi thường thì được bồi thường bằng tiền theo giá đất cụ thể của loại đất thu hồi do Ủy ban nhân dân cấp có thẩm quyền quyết định tại thời điểm phê duyệt phương án bồi thường, hỗ trợ, tái định cư.",
  "plain": "Nguyên tắc: DÂN CHỦ, KHÁCH QUAN, CÔNG BẰNG, CÔNG KHAI, MINH BẠCH, KỊP THỜI. Bồi thường ưu tiên BẰNG ĐẤT CÙNG MỤC ĐÍCH; không có đất thì BẰNG TIỀN theo GIÁ ĐẤT CỤ THỂ tại thời điểm PHÊ DUYỆT PHƯƠNG ÁN (Luật 2024 bỏ cách tính theo thời điểm quyết định thu hồi). Người được bồi thường bằng đất, nhà ở mà muốn nhận tiền thì được bồi thường bằng tiền theo nguyện vọng. Ngoài bồi thường còn có HỖ TRỢ và TÁI ĐỊNH CƯ.",
- "example": "Hộ dân bị thu hồi 200 m² đất ở: được bố trí đất ở tái định cư hoặc, nếu không có đất, được trả tiền theo giá đất cụ thể do UBND cấp có thẩm quyền quyết định khi phê duyệt phương án.",
+ "example": "Hộ dân bị thu hồi 200 mét vuông đất ở: được bố trí đất ở tái định cư; nếu không có đất thì được trả tiền theo giá đất cụ thể do Ủy ban nhân dân có thẩm quyền quyết định khi phê duyệt phương án.",
  "source": {
   "kind": "statute",
   "cite": "Khoản 1, đoạn 1 khoản 2 Điều 91 Luật Đất đai 2024 (sửa đổi, bổ sung năm 2024, 2025)",
@@ -23,10 +23,13 @@
   "thời điểm phê duyệt phương án"
  ],
  "memo": {
-  "hook": "Bồi thường ưu tiên BẰNG ĐẤT; không có thì BẰNG TIỀN theo giá lúc PHÊ DUYỆT phương án.",
+  "gist": "Khi Nhà nước lấy đất, người dân được đền bằng đất cùng loại; không có đất thì đền tiền theo giá lúc duyệt phương án.",
+  "kind": "tree",
+  "hook": "Như đổi nhà: ưu tiên đổi nhà, hết nhà mới trả tiền theo giá ngày chốt.",
   "tree": [
    {
     "label": "Nguyên tắc",
+    "icon": "⚖️",
     "children": [
      "Dân chủ, khách quan, công bằng",
      "Công khai, minh bạch, kịp thời"
@@ -34,12 +37,14 @@
    },
    {
     "label": "Bằng đất",
+    "icon": "🏠",
     "children": [
      "Cùng mục đích sử dụng"
     ]
    },
    {
     "label": "Bằng tiền",
+    "icon": "💵",
     "children": [
      "Giá đất cụ thể",
      "Tại thời điểm phê duyệt phương án"
@@ -47,10 +52,21 @@
    },
    {
     "label": "Ngoài bồi thường",
+    "icon": "🤲",
     "children": [
      "Hỗ trợ",
      "Tái định cư"
     ]
+   }
+  ],
+  "case": {
+   "q": "Hộ dân bị lấy 200 mét vuông đất ở, địa phương không còn đất tái định cư. Được đền thế nào?",
+   "a": "Đền bằng tiền theo giá đất cụ thể tại thời điểm phê duyệt phương án."
+  },
+  "contrast": [
+   {
+    "with": "thu-hoi-dat",
+    "text": "Bồi thường là phần được đền; thu hồi đất là việc Nhà nước lấy đất và các trường hợp được lấy."
    }
   ]
  },

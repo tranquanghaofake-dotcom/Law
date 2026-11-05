@@ -23,10 +23,13 @@
   "chưa sử dụng"
  ],
  "memo": {
-  "hook": "Ba nhóm theo MỤC ĐÍCH: NÔNG NGHIỆP – PHI NÔNG NGHIỆP – CHƯA SỬ DỤNG.",
+  "gist": "Đất chia ba nhóm theo mục đích: đất nông nghiệp, đất phi nông nghiệp và đất chưa sử dụng.",
+  "kind": "tree",
+  "hook": "Như phân loại phòng trong nhà: phòng trồng, phòng ở và phòng còn trống.",
   "tree": [
    {
     "label": "Nông nghiệp",
+    "icon": "🌾",
     "children": [
      "Trồng cây, lâm nghiệp",
      "Thủy sản, làm muối",
@@ -35,6 +38,7 @@
    },
    {
     "label": "Phi nông nghiệp",
+    "icon": "🏙️",
     "children": [
      "Đất ở",
      "Trụ sở, quốc phòng",
@@ -42,7 +46,18 @@
     ]
    },
    {
-    "label": "Chưa sử dụng"
+    "label": "Chưa sử dụng",
+    "icon": "🌫️"
+   }
+  ],
+  "case": {
+   "q": "Thửa đất ghi \"đất trồng cây lâu năm\", chủ muốn xây nhà ở. Phải làm gì?",
+   "a": "Xin chuyển mục đích sử dụng đất sang đất ở."
+  },
+  "contrast": [
+   {
+    "with": "dat-su-dung-on-dinh-lau-dai",
+    "text": "Phân loại là đất dùng vào việc gì; thời hạn là dùng được bao lâu."
    }
   ]
  },

@@ -23,13 +23,17 @@
   "các trường hợp liệt kê"
  ],
  "memo": {
-  "hook": "Bốn căn cứ: QUỐC PHÒNG – LỢI ÍCH CÔNG CỘNG – VI PHẠM – CHẤM DỨT sử dụng.",
+  "gist": "Nhà nước lấy lại đất khi cần cho quốc phòng, dự án công cộng, khi người dùng vi phạm hoặc hết quyền dùng.",
+  "kind": "tree",
+  "hook": "Bốn lý do lấy lại chìa khóa: giữ nước, làm việc chung, người ở phá luật, hết hợp đồng.",
   "tree": [
    {
-    "label": "Quốc phòng, an ninh"
+    "label": "Quốc phòng, an ninh",
+    "icon": "🛡️"
    },
    {
     "label": "Phát triển kinh tế - xã hội",
+    "icon": "🛣️",
     "children": [
      "Lợi ích quốc gia, công cộng",
      "Thật cần thiết, liệt kê cụ thể"
@@ -37,17 +41,29 @@
    },
    {
     "label": "Vi phạm",
+    "icon": "⚠️",
     "children": [
      "Pháp luật đất đai"
     ]
    },
    {
     "label": "Chấm dứt",
+    "icon": "🔚",
     "children": [
      "Theo pháp luật",
      "Tự nguyện trả lại",
      "Nguy hiểm tính mạng"
     ]
+   }
+  ],
+  "case": {
+   "q": "Nhà nước lấy đất các hộ dân để làm đường cao tốc. Người mất đất được gì?",
+   "a": "Được bồi thường, hỗ trợ và tái định cư."
+  },
+  "contrast": [
+   {
+    "with": "nguyen-tac-boi-thuong-khi-thu-hoi",
+    "text": "Thu hồi là việc lấy đất; bồi thường là phần người mất đất được đền."
    }
   ]
  },

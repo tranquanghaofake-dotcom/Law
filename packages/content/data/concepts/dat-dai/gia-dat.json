@@ -23,10 +23,13 @@
   "chuyển mục đích"
  ],
  "memo": {
-  "hook": "Giá đất là giá QUYỀN SỬ DỤNG; hai loại: BẢNG GIÁ và GIÁ CỤ THỂ.",
+  "gist": "Giá đất là giá quyền dùng mỗi mét vuông đất; tiền sử dụng đất là khoản nộp khi được giao đất hay đổi mục đích.",
+  "kind": "tree",
+  "hook": "Như giá vé và phí đổi vé: một cái là giá trị, một cái là tiền phải nộp khi đổi.",
   "tree": [
    {
     "label": "Bản chất",
+    "icon": "💎",
     "children": [
      "Giá trị quyền sử dụng đất",
      "Trên một đơn vị diện tích"
@@ -34,6 +37,7 @@
    },
    {
     "label": "Nhà nước quyết",
+    "icon": "🏛️",
     "children": [
      "Bảng giá đất (từ 2026, hằng năm)",
      "Giá đất cụ thể"
@@ -41,10 +45,21 @@
    },
    {
     "label": "Tiền sử dụng đất",
+    "icon": "💵",
     "children": [
      "Giao đất có thu tiền",
      "Chuyển mục đích"
     ]
+   }
+  ],
+  "case": {
+   "q": "Chuyển 100 mét vuông đất vườn sang đất ở. Người dùng đất phải nộp khoản gì?",
+   "a": "Tiền sử dụng đất cho Nhà nước."
+  },
+  "contrast": [
+   {
+    "with": "nguyen-tac-dinh-gia-dat",
+    "text": "Giá đất là con số; nguyên tắc định giá là cách tính ra con số đó."
    }
   ]
  },
