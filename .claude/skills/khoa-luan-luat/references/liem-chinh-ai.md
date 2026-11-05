@@ -34,4 +34,4 @@ Cuối bài, nếu trường hoặc cuộc thi yêu cầu khai báo, soạn đo�
 
 ## Dấu hiệu "văn AI" cần sửa trước khi nộp
 
-Mở đoạn bằng câu sáo ("Trong bối cảnh hội nhập sâu rộng hiện nay…"); liệt kê bộ ba đều đặn; tính từ mạnh không kèm bằng chứng ("vô cùng quan trọng", "hết sức cấp thiết"); kết đoạn bằng câu tổng kết lặp lại ý; câu dài đều nhau. Sửa bằng cách thay mỗi khẳng định bằng một căn cứ cụ thể.
+Mở đoạn bằng câu sáo ("Trong bối cảnh hội nhập sâu rộng hiện nay…"); liệt kê bộ ba đều đặn; tính từ mạnh không kèm bằng chứng ("vô cùng quan trọng", "hết sức cấp thiết"); kết đoạn bằng câu tổng kết lặp lại ý; câu dài đều nhau. Sửa bằng cách thay mỗi khẳng định bằng một căn cứ cụ thể. Script báo 3 dấu hiệu đo được (`van-phong-ai`); các dấu hiệu khác phải đọc bằng mắt. Không có công cụ nào chứng minh được một đoạn "do AI viết" hay "không do AI viết"; mục tiêu là văn có căn cứ, không phải lách công cụ phát hiện.

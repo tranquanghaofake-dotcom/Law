@@ -30,6 +30,23 @@ SAO_RONG = [
     "không thể phủ nhận", "có thể thấy rằng",
 ]
 
+MO_SAO = re.compile(r"^(Trong bối cảnh|Hiện nay,|Có thể nói|Nhìn chung|Ngày nay,|Trong thời đại)", re.I)
+KET_LAP = re.compile(r"^(Tóm lại|Như vậy|Nhìn chung|Có thể thấy|Từ những phân tích trên)", re.I)
+CHU_MOI_TRANG = 430  # Times New Roman 13, dòng 1,3, A4, lề mặc định: khoảng 430 chữ tiếng Việt
+
+
+def _than_bai(van):
+    """Bỏ footnote, tiêu đề, bảng; giữ các đoạn văn xuôi."""
+    van = re.sub(r"(?m)^\[\^[^\]]+\]:.*$", "", van)
+    van = re.sub(r"(?m)^(#.*|\|.*)$", "", van)
+    return van
+
+
+def uoc_trang(van):
+    """Ước số trang thân bài (không tính footnote, tiêu đề, bảng)."""
+    return len(re.findall(r"\w+", _than_bai(van))) / CHU_MOI_TRANG
+
+
 RE_FN_DUNG = re.compile(r"\[\^([^\]]+)\](?!:)")
 RE_FN_DN = re.compile(r"^\[\^([^\]]+)\]:", re.M)
 
@@ -186,6 +203,29 @@ def kiem_tra(van, nop=False, an_danh=None, tieu_de_khac=None, nguyen_van=None, b
             them("van-sao-rong", "NHẸ", _dong(van, vt), f"'{cum}' — thay bằng căn cứ cụ thể")
             vt = thap.find(cum, vt + 1)
 
+    # 6b. Dấu hiệu văn phong AI (chỉ NHẸ — gợi ý soát, không phải lỗi): mở đoạn bằng câu sáo,
+    #     kết đoạn bằng câu tổng kết lặp ý, đoạn ≥ 4 câu có độ dài câu đều nhau
+    vt_doan = 0
+    for doan in re.split(r"\n\s*\n", _than_bai(van)):
+        d = doan.strip()
+        vt = van.find(d[:40], vt_doan) if d else -1
+        if vt >= 0:
+            vt_doan = vt
+        if not d or d.startswith(("(", "-", "*", ">")):
+            continue
+        cau = [c.strip() for c in re.split(r"(?<=[.!?])\s+", re.sub(r"\[\^[^\]]+\]", "", d)) if len(c.strip()) > 3]
+        dong = _dong(van, max(vt, 0))
+        if MO_SAO.match(d):
+            them("van-phong-ai", "NHẸ", dong, "đoạn mở bằng câu sáo — mở bằng vấn đề pháp lý cụ thể")
+        if len(cau) >= 2 and KET_LAP.match(cau[-1]):
+            them("van-phong-ai", "NHẸ", dong, "đoạn kết bằng câu tổng kết lặp ý — bỏ hoặc thay bằng hệ quả mới")
+        if len(cau) >= 4:
+            do_dai = [len(c.split()) for c in cau]
+            tb = sum(do_dai) / len(do_dai)
+            lech = (sum((x - tb) ** 2 for x in do_dai) / len(do_dai)) ** 0.5
+            if tb > 8 and lech / tb < 0.15:
+                them("van-phong-ai", "NHẸ", dong, f"{len(cau)} câu dài đều nhau (~{tb:.0f} chữ) — xen câu ngắn, tách ý")
+
     # 7. Mọi số hiệu VBQPPL trong bài phải có dòng trong bảng hiệu lực (05-nguon/van-ban.md)
     if bang_van_ban is not None:
         da_bao_sh = set()
@@ -207,6 +247,7 @@ def main():
     ap.add_argument("--nop", action="store_true", help="bản nộp: còn nhãn nghiên cứu là lỗi CHẶN")
     ap.add_argument("--an-danh", default=None, help="các chuỗi không được xuất hiện, cách nhau dấu phẩy")
     ap.add_argument("--nguyen-van", default=None, help="file trích nguyên văn; đoạn trích ≥ 25 ký tự phải có trong đó")
+    ap.add_argument("--trang", type=float, default=None, help="số trang dự kiến của phần này (theo đề cương); lệch quá 20%% thì cảnh báo")
     ap.add_argument("--van-ban", default=None, help="bảng hiệu lực 05-nguon/van-ban.md; mọi số hiệu trong bài phải có trong đó")
     a = ap.parse_args()
     nv = None
@@ -228,7 +269,14 @@ def main():
         khac = [t for t2, v2 in van_ban.items() if t2 != tep for t in tieu_de(v2)]
         kq = kiem_tra(van, nop=a.nop, an_danh=an_danh, tieu_de_khac=khac, nguyen_van=nv, bang_van_ban=bvb)
         dem = {m: sum(1 for v in kq if v["muc"] == m) for m in ("CHẶN", "NẶNG", "NHẸ")}
-        print(f"== {tep}: CHẶN {dem['CHẶN']} · NẶNG {dem['NẶNG']} · NHẸ {dem['NHẸ']}")
+        tr = uoc_trang(van)
+        if a.trang:
+            lech = (tr - a.trang) / a.trang
+            if abs(lech) > 0.2:
+                kq.append({"ma": "ngan-sach-trang", "muc": "NHẸ", "dong": 1,
+                           "noi_dung": f"ước {tr:.1f} trang, đề cương dự kiến {a.trang:g} trang ({lech:+.0%})"})
+                dem = {m: sum(1 for v in kq if v["muc"] == m) for m in ("CHẶN", "NẶNG", "NHẸ")}
+        print(f"== {tep}: CHẶN {dem['CHẶN']} · NẶNG {dem['NẶNG']} · NHẸ {dem['NHẸ']} · ước {tr:.1f} trang")
         for v in sorted(kq, key=lambda v: (("CHẶN", "NẶNG", "NHẸ").index(v["muc"]), v["dong"])):
             print(f"  [{v['muc']}] dòng {v['dong']}: {v['ma']} — {v['noi_dung']}")
         co_chan = co_chan or dem["CHẶN"] > 0

@@ -4,7 +4,7 @@ import sys
 import unittest
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from kiem_tra_ban_thao import kiem_tra  # noqa: E402
+from kiem_tra_ban_thao import kiem_tra, uoc_trang  # noqa: E402
 
 
 def muc(ket_qua, ma):
@@ -155,6 +155,29 @@ class KiemTraBanThao(unittest.TestCase):
     def test_khong_truyen_bang_thi_khong_kiem(self):
         van = "Nghị định số 152/2026/NĐ-CP quy định…"
         self.assertEqual(len(muc(kiem_tra(van), "van-ban-chua-kiem-hieu-luc")), 0)
+
+    def test_mo_doan_cau_sao(self):
+        van = "Trong bối cảnh chuyển đổi số hiện nay, dữ liệu ngày càng quan trọng. Câu hai.\n\nĐoạn khác bình thường."
+        self.assertEqual(len(muc(kiem_tra(van), "van-phong-ai")), 1)
+
+    def test_ket_doan_tong_ket_lap(self):
+        van = "Khoản 2 quy định A. Khoản 4 quy định B. Như vậy, có thể thấy pháp luật còn bất cập."
+        self.assertGreaterEqual(len(muc(kiem_tra(van), "van-phong-ai")), 1)
+
+    def test_cau_dai_deu_nhau(self):
+        cau = "Quy định này đặt ra nghĩa vụ công bố thông tin cho doanh nghiệp niêm yết trên thị trường."
+        van = " ".join([cau] * 5)
+        self.assertGreaterEqual(len([v for v in muc(kiem_tra(van), "van-phong-ai") if "dài đều" in v["noi_dung"]]), 1)
+
+    def test_doan_tu_nhien_khong_bao(self):
+        van = ("Khoản 4 Điều 167 yêu cầu trình dự thảo hợp đồng. Ngắn. "
+               "Trong khi đó, Bộ Tài chính trả lời rằng hạn mức được chấp nhận nếu nghị quyết nêu rõ phạm vi, thời hạn và giá trị tối đa. "
+               "Hai cách hiểu này không khớp.")
+        self.assertEqual(len(muc(kiem_tra(van), "van-phong-ai")), 0)
+
+    def test_uoc_trang_bo_footnote(self):
+        van = ("chữ " * 860) + "\n\n[^1]: " + ("nguồn " * 500)
+        self.assertAlmostEqual(uoc_trang(van), 2.0, delta=0.1)
 
     def test_ban_sach_khong_loi_chan(self):
         van = (
