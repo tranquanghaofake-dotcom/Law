@@ -24,6 +24,39 @@
   "thẻ cử tri"
  ],
  "note": "Luật 83/2025/QH15 (hiệu lực 01/7/2025) bỏ cấp huyện khỏi các quy định về danh sách cử tri (Điều 29, 30), theo mô hình chính quyền địa phương 2 cấp. Giáo trình in trước 2025 còn nhắc Hội đồng nhân dân cấp huyện.",
+ "memo": {
+  "hook": "Mỗi người chỉ ở MỘT danh sách cử tri.",
+  "tree": [
+   {
+    "label": "Nguyên tắc",
+    "children": [
+     "Ai có quyền bầu cử đều được ghi tên",
+     "Được phát thẻ cử tri"
+    ]
+   },
+   {
+    "label": "Ở đâu",
+    "children": [
+     "Một danh sách",
+     "Nơi thường trú hoặc tạm trú"
+    ]
+   },
+   {
+    "label": "Không ghi tên",
+    "children": [
+     "Bị Tòa án tước quyền bầu cử",
+     "Đang chấp hành án tù",
+     "Mất năng lực hành vi dân sự"
+    ]
+   },
+   {
+    "label": "Vẫn được bầu",
+    "children": [
+     "Người đang bị tạm giam, tạm giữ"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -23,6 +23,39 @@
   "giải thích Hiến pháp, luật",
   "không đồng thời là thành viên Chính phủ"
  ],
+ "memo": {
+  "hook": "Cơ quan THƯỜNG TRỰC; thành viên KHÔNG kiêm thành viên Chính phủ.",
+  "tree": [
+   {
+    "label": "Vị trí",
+    "children": [
+     "Cơ quan thường trực của Quốc hội"
+    ]
+   },
+   {
+    "label": "Thành phần",
+    "children": [
+     "Chủ tịch Quốc hội",
+     "Các Phó Chủ tịch",
+     "Các Ủy viên"
+    ]
+   },
+   {
+    "label": "Việc chính",
+    "children": [
+     "Ra pháp lệnh",
+     "Giải thích Hiến pháp, luật",
+     "Giám sát"
+    ]
+   },
+   {
+    "label": "Hạn chế",
+    "children": [
+     "Không đồng thời là thành viên Chính phủ"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

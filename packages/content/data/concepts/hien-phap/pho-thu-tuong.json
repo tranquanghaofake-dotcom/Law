@@ -23,6 +23,36 @@
   "chịu trách nhiệm trước Thủ tướng",
   "được ủy nhiệm khi Thủ tướng vắng mặt"
  ],
+ "memo": {
+  "hook": "Phó Thủ tướng thay Thủ tướng khi được ỦY NHIỆM, không tự động.",
+  "tree": [
+   {
+    "label": "Vị trí",
+    "children": [
+     "Thành viên Chính phủ",
+     "Quốc hội phê chuẩn, Chủ tịch nước bổ nhiệm"
+    ]
+   },
+   {
+    "label": "Nhiệm vụ",
+    "children": [
+     "Giúp Thủ tướng theo phân công"
+    ]
+   },
+   {
+    "label": "Trách nhiệm",
+    "children": [
+     "Trước Thủ tướng"
+    ]
+   },
+   {
+    "label": "Khi Thủ tướng vắng",
+    "children": [
+     "Một Phó Thủ tướng được ủy nhiệm"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -23,6 +23,32 @@
   "chỉ đạo, hướng dẫn bầu cử Hội đồng nhân dân",
   "15 đến 21 thành viên"
  ],
+ "memo": {
+  "hook": "TỔ CHỨC bầu cử Quốc hội; CHỈ ĐẠO bầu cử HĐND.",
+  "tree": [
+   {
+    "label": "Thành lập",
+    "children": [
+     "Quốc hội",
+     "Lần đầu hiến định năm 2013"
+    ]
+   },
+   {
+    "label": "Nhiệm vụ",
+    "children": [
+     "Tổ chức bầu cử đại biểu Quốc hội",
+     "Chỉ đạo, hướng dẫn bầu cử Hội đồng nhân dân"
+    ]
+   },
+   {
+    "label": "Tổ chức",
+    "children": [
+     "15–21 thành viên",
+     "Tập thể, đa số"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

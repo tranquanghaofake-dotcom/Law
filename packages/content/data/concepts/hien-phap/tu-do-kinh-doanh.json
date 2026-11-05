@@ -22,6 +22,37 @@
   "tự do kinh doanh",
   "ngành nghề pháp luật không cấm"
  ],
+ "memo": {
+  "hook": "MỌI NGƯỜI được kinh doanh ngành nghề pháp luật KHÔNG CẤM.",
+  "tree": [
+   {
+    "label": "Chủ thể",
+    "children": [
+     "Mọi người"
+    ]
+   },
+   {
+    "label": "Phạm vi",
+    "children": [
+     "Ngành nghề pháp luật không cấm"
+    ]
+   },
+   {
+    "label": "Hạn chế",
+    "children": [
+     "Chỉ bằng luật"
+    ]
+   },
+   {
+    "label": "Lịch sử",
+    "children": [
+     "Luật Công ty 1990: xin phép",
+     "Luật Doanh nghiệp 1999: đăng ký",
+     "Hiến pháp 2013: Điều 33"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

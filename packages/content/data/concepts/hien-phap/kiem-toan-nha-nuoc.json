@@ -23,6 +23,38 @@
   "tài chính, tài sản công",
   "Tổng Kiểm toán do Quốc hội bầu"
  ],
+ "memo": {
+  "hook": "Kiểm tiền công, ĐỘC LẬP, báo cáo QUỐC HỘI.",
+  "tree": [
+   {
+    "label": "Thành lập",
+    "children": [
+     "Quốc hội"
+    ]
+   },
+   {
+    "label": "Hoạt động",
+    "children": [
+     "Độc lập",
+     "Chỉ tuân theo pháp luật"
+    ]
+   },
+   {
+    "label": "Kiểm toán",
+    "children": [
+     "Tài chính công",
+     "Tài sản công"
+    ]
+   },
+   {
+    "label": "Tổng Kiểm toán",
+    "children": [
+     "Quốc hội bầu",
+     "Báo cáo trước Quốc hội"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

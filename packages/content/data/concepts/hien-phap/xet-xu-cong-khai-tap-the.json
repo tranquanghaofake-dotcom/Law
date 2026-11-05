@@ -21,6 +21,33 @@
   "xét xử kín ngoại lệ",
   "tập thể, đa số"
  ],
+ "memo": {
+  "hook": "CÔNG KHAI là nguyên tắc, xử KÍN là ngoại lệ; TẬP THỂ, quyết theo ĐA SỐ.",
+  "tree": [
+   {
+    "label": "Công khai",
+    "children": [
+     "Nguyên tắc"
+    ]
+   },
+   {
+    "label": "Xét xử kín",
+    "children": [
+     "Bí mật nhà nước",
+     "Thuần phong mỹ tục",
+     "Bảo vệ người chưa thành niên",
+     "Bí mật đời tư"
+    ]
+   },
+   {
+    "label": "Tập thể",
+    "children": [
+     "Quyết định theo đa số",
+     "Trừ thủ tục rút gọn"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

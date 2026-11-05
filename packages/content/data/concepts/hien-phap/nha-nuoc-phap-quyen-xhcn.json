@@ -21,6 +21,25 @@
   "của Nhân dân, do Nhân dân, vì Nhân dân",
   "thượng tôn pháp luật"
  ],
+ "memo": {
+  "hook": "Nhà nước pháp quyền: CHÍNH NHÀ NƯỚC cũng phải theo pháp luật.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Của Nhân dân, do Nhân dân, vì Nhân dân"
+    ]
+   },
+   {
+    "label": "Pháp quyền",
+    "children": [
+     "Hoạt động trên cơ sở Hiến pháp và luật",
+     "Hiến pháp tối thượng",
+     "Bảo đảm quyền con người"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

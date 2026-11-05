@@ -24,6 +24,38 @@
   "Hội đồng Bộ trưởng"
  ],
  "note": "Hiến pháp đã hết hiệu lực; học để hiểu lịch sử lập hiến, không áp dụng như luật hiện hành.",
+ "memo": {
+  "hook": "Lần đầu hiến định ĐẢNG LÃNH ĐẠO; có HỘI ĐỒNG NHÀ NƯỚC.",
+  "tree": [
+   {
+    "label": "Thông qua",
+    "children": [
+     "18/12/1980"
+    ]
+   },
+   {
+    "label": "Bối cảnh",
+    "children": [
+     "Cả nước thống nhất",
+     "Kế hoạch hóa tập trung"
+    ]
+   },
+   {
+    "label": "Điểm mới",
+    "children": [
+     "Đảng lãnh đạo (Điều 4)",
+     "Chuyên chính vô sản"
+    ]
+   },
+   {
+    "label": "Bộ máy",
+    "children": [
+     "Hội đồng Nhà nước: Chủ tịch tập thể",
+     "Hội đồng Bộ trưởng"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

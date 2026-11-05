@@ -23,6 +23,36 @@
   "bầu cử thêm, bầu cử lại"
  ],
  "note": "Luật 83/2025/QH15 (hiệu lực 01/7/2025) rút thời hạn tổ chức bầu cử thêm, bầu cử lại từ \"15 ngày\" xuống \"07 ngày\" sau ngày bầu cử đầu tiên (Điều 79, 80, 81). Giáo trình in trước 2025 còn ghi 15 ngày.",
+ "memo": {
+  "hook": "Hai lần QUÁ MỘT NỬA: cử tri đi bầu và phiếu hợp lệ.",
+  "tree": [
+   {
+    "label": "Cử tri đi bầu",
+    "children": [
+     "Quá 1/2 tổng số cử tri",
+     "Không đạt: bầu cử lại"
+    ]
+   },
+   {
+    "label": "Người trúng cử",
+    "children": [
+     "Quá 1/2 số phiếu hợp lệ"
+    ]
+   },
+   {
+    "label": "Bằng phiếu",
+    "children": [
+     "Người nhiều tuổi hơn trúng"
+    ]
+   },
+   {
+    "label": "Chưa đủ đại biểu",
+    "children": [
+     "Bầu cử thêm trong 07 ngày"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

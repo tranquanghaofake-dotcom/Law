@@ -21,6 +21,29 @@
   "chính quyền do Quốc hội quy định khi thành lập"
  ],
  "note": "Nghị quyết 203/2025/QH15 (hiệu lực 16/6/2025) bổ sung khoản 3 Điều 111: chính quyền địa phương ở đơn vị hành chính - kinh tế đặc biệt do Quốc hội quy định khi thành lập. Bản 2013 gộp đơn vị này vào khoản 2 Điều 111 (\"tổ chức phù hợp với đặc điểm… đơn vị hành chính - kinh tế đặc biệt do luật định\").",
+ "memo": {
+  "hook": "Đặc khu KINH TẾ do Quốc hội lập; khác đặc khu hải đảo cấp xã.",
+  "tree": [
+   {
+    "label": "Thành lập",
+    "children": [
+     "Quốc hội"
+    ]
+   },
+   {
+    "label": "Chính quyền",
+    "children": [
+     "Quốc hội quy định khi thành lập"
+    ]
+   },
+   {
+    "label": "Phân biệt",
+    "children": [
+     "Đặc khu hải đảo cùng cấp xã"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

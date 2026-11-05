@@ -23,6 +23,26 @@
   "lập hiến, lập pháp",
   "giám sát tối cao"
  ],
+ "memo": {
+  "hook": "Hai CAO NHẤT, ba chức năng; cao nhất không phải làm thay.",
+  "tree": [
+   {
+    "label": "Tính chất",
+    "children": [
+     "Cơ quan đại biểu cao nhất",
+     "Cơ quan quyền lực nhà nước cao nhất"
+    ]
+   },
+   {
+    "label": "Chức năng",
+    "children": [
+     "Lập hiến, lập pháp",
+     "Quyết định vấn đề quan trọng",
+     "Giám sát tối cao"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

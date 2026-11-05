@@ -22,6 +22,32 @@
   "quân hàm cấp tướng",
   "công bố tình trạng khẩn cấp"
  ],
+ "memo": {
+  "hook": "THỐNG LĨNH lực lượng vũ trang; tình trạng khẩn cấp thường CÔNG BỐ theo nghị quyết.",
+  "tree": [
+   {
+    "label": "Vị trí",
+    "children": [
+     "Thống lĩnh lực lượng vũ trang",
+     "Chủ tịch Hội đồng quốc phòng và an ninh"
+    ]
+   },
+   {
+    "label": "Nhân sự quân đội",
+    "children": [
+     "Quân hàm cấp tướng, đô đốc",
+     "Tổng tham mưu trưởng"
+    ]
+   },
+   {
+    "label": "Chiến tranh, khẩn cấp",
+    "children": [
+     "Công bố theo nghị quyết Quốc hội/Ủy ban thường vụ",
+     "Tự công bố khẩn cấp khi Ủy ban thường vụ không họp được"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -23,6 +23,31 @@
   "Thủ trưởng cơ quan thuộc Ủy ban nhân dân",
   "trả lời trước Hội đồng nhân dân"
  ],
+ "memo": {
+  "hook": "Đại biểu HĐND chất vấn người cùng cấp; người bị chất vấn PHẢI trả lời.",
+  "tree": [
+   {
+    "label": "Bị chất vấn",
+    "children": [
+     "Chủ tịch, thành viên Ủy ban nhân dân",
+     "Chánh án, Viện trưởng",
+     "Thủ trưởng cơ quan thuộc Ủy ban nhân dân"
+    ]
+   },
+   {
+    "label": "Nghĩa vụ",
+    "children": [
+     "Trả lời trước Hội đồng nhân dân"
+    ]
+   },
+   {
+    "label": "Quyền đi kèm",
+    "children": [
+     "Kiến nghị với cơ quan, tổ chức địa phương"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

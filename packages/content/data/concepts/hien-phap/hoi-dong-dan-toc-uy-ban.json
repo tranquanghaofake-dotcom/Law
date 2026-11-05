@@ -22,6 +22,33 @@
   "Hội đồng dân tộc",
   "Ủy ban lâm thời"
  ],
+ "memo": {
+  "hook": "Việc chính: THẨM TRA dự án luật và GIÁM SÁT theo lĩnh vực.",
+  "tree": [
+   {
+    "label": "Gồm",
+    "children": [
+     "Hội đồng dân tộc",
+     "Các Ủy ban",
+     "Ủy ban lâm thời khi cần"
+    ]
+   },
+   {
+    "label": "Nhiệm vụ",
+    "children": [
+     "Thẩm tra dự án luật",
+     "Giám sát theo lĩnh vực",
+     "Kiến nghị"
+    ]
+   },
+   {
+    "label": "Người đứng đầu",
+    "children": [
+     "Do Quốc hội bầu"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

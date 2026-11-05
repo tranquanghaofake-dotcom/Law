@@ -22,6 +22,40 @@
   "thu hồi: thật cần thiết, luật định, bồi thường",
   "trưng dụng"
  ],
+ "memo": {
+  "hook": "THU HỒI là lấy hẳn, có bồi thường; TRƯNG DỤNG là dùng có thời hạn.",
+  "tree": [
+   {
+    "label": "Xác lập quyền",
+    "children": [
+     "Giao đất",
+     "Cho thuê đất",
+     "Công nhận"
+    ]
+   },
+   {
+    "label": "Người sử dụng",
+    "children": [
+     "Được chuyển quyền",
+     "Được pháp luật bảo hộ"
+    ]
+   },
+   {
+    "label": "Thu hồi",
+    "children": [
+     "Thật cần thiết, do luật định",
+     "Quốc phòng, an ninh, lợi ích quốc gia",
+     "Công khai, bồi thường"
+    ]
+   },
+   {
+    "label": "Trưng dụng",
+    "children": [
+     "Có thời hạn, khẩn cấp"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

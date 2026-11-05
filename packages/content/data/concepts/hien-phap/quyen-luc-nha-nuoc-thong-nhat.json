@@ -23,6 +23,32 @@
   "kiểm soát",
   "lập pháp, hành pháp, tư pháp"
  ],
+ "memo": {
+  "hook": "THỐNG NHẤT nhưng PHÂN CÔNG, PHỐI HỢP, KIỂM SOÁT; không tam quyền phân lập.",
+  "tree": [
+   {
+    "label": "Quyền lực",
+    "children": [
+     "Thống nhất, thuộc về Nhân dân"
+    ]
+   },
+   {
+    "label": "Phân công",
+    "children": [
+     "Lập pháp: Quốc hội",
+     "Hành pháp: Chính phủ",
+     "Tư pháp: Tòa án"
+    ]
+   },
+   {
+    "label": "Giữa các cơ quan",
+    "children": [
+     "Phối hợp",
+     "Kiểm soát"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -23,6 +23,31 @@
   "đặc xá",
   "khác đại xá"
  ],
+ "memo": {
+  "hook": "ĐẶC XÁ: Chủ tịch nước, từng người. ĐẠI XÁ: Quốc hội, cả loại tội.",
+  "tree": [
+   {
+    "label": "Quốc tịch",
+    "children": [
+     "Nhập, thôi, trở lại, tước"
+    ]
+   },
+   {
+    "label": "Khen thưởng",
+    "children": [
+     "Huân chương, huy chương",
+     "Giải thưởng, danh hiệu nhà nước"
+    ]
+   },
+   {
+    "label": "Đặc xá",
+    "children": [
+     "Chủ tịch nước quyết định",
+     "Khác đại xá do Quốc hội"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

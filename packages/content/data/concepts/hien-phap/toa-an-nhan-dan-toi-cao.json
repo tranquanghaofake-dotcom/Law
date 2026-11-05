@@ -22,6 +22,37 @@
   "áp dụng thống nhất pháp luật",
   "án lệ"
  ],
+ "memo": {
+  "hook": "Ba vai trò: XÉT XỬ cao nhất, GIÁM ĐỐC xét xử, THỐNG NHẤT áp dụng pháp luật.",
+  "tree": [
+   {
+    "label": "Xét xử",
+    "children": [
+     "Cơ quan xét xử cao nhất"
+    ]
+   },
+   {
+    "label": "Giám đốc",
+    "children": [
+     "Việc xét xử của Tòa án khác"
+    ]
+   },
+   {
+    "label": "Thống nhất pháp luật",
+    "children": [
+     "Tổng kết thực tiễn",
+     "Án lệ"
+    ]
+   },
+   {
+    "label": "Chánh án",
+    "children": [
+     "Quốc hội bầu",
+     "Nhiệm kỳ theo Quốc hội"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

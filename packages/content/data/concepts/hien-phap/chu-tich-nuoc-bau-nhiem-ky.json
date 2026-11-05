@@ -23,6 +23,37 @@
   "báo cáo trước Quốc hội",
   "nhiệm kỳ theo Quốc hội"
  ],
+ "memo": {
+  "hook": "Quốc hội bầu trong số ĐẠI BIỂU, báo cáo QUỐC HỘI, nhiệm kỳ theo QUỐC HỘI.",
+  "tree": [
+   {
+    "label": "Bầu",
+    "children": [
+     "Do Quốc hội bầu",
+     "Trong số đại biểu Quốc hội"
+    ]
+   },
+   {
+    "label": "Trách nhiệm",
+    "children": [
+     "Chịu trách nhiệm trước Quốc hội",
+     "Báo cáo công tác trước Quốc hội"
+    ]
+   },
+   {
+    "label": "Nhiệm kỳ",
+    "children": [
+     "Theo nhiệm kỳ Quốc hội"
+    ]
+   },
+   {
+    "label": "Sau khi bầu",
+    "children": [
+     "Tuyên thệ"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

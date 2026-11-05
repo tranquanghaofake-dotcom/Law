@@ -22,6 +22,30 @@
   "không bị tước trừ Điều 31",
   "dân tộc bình đẳng"
  ],
+ "memo": {
+  "hook": "Ai cũng có quyền có quốc tịch; công dân KHÔNG bị tước, trừ Điều 31.",
+  "tree": [
+   {
+    "label": "Quyền",
+    "children": [
+     "Mỗi cá nhân có quyền có quốc tịch",
+     "Các dân tộc bình đẳng"
+    ]
+   },
+   {
+    "label": "Bảo đảm",
+    "children": [
+     "Không bị tước quốc tịch"
+    ]
+   },
+   {
+    "label": "Ngoại lệ",
+    "children": [
+     "Trường hợp Điều 31"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

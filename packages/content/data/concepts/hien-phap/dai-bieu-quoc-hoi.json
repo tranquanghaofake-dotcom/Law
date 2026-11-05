@@ -23,6 +23,33 @@
   "tiếp xúc cử tri",
   "chịu sự giám sát của cử tri"
  ],
+ "memo": {
+  "hook": "Đại diện HAI tầng: đơn vị bầu ra mình VÀ Nhân dân cả nước.",
+  "tree": [
+   {
+    "label": "Đại diện",
+    "children": [
+     "Nhân dân ở đơn vị bầu cử",
+     "Nhân dân cả nước"
+    ]
+   },
+   {
+    "label": "Nghĩa vụ",
+    "children": [
+     "Liên hệ, chịu giám sát của cử tri",
+     "Tiếp xúc, báo cáo cử tri"
+    ]
+   },
+   {
+    "label": "Quyền",
+    "children": [
+     "Chất vấn",
+     "Trình dự án luật",
+     "Quyền miễn trừ"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

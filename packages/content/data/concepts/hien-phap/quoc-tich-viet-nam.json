@@ -20,6 +20,31 @@
   "mối quan hệ gắn bó",
   "quyền, nghĩa vụ hai chiều"
  ],
+ "memo": {
+  "hook": "Quốc tịch là SỢI DÂY pháp lý HAI CHIỀU.",
+  "tree": [
+   {
+    "label": "Bản chất",
+    "children": [
+     "Quan hệ gắn bó cá nhân – Nhà nước"
+    ]
+   },
+   {
+    "label": "Công dân",
+    "children": [
+     "Quyền với Nhà nước",
+     "Nghĩa vụ với Nhà nước"
+    ]
+   },
+   {
+    "label": "Nhà nước",
+    "children": [
+     "Quyền với công dân",
+     "Trách nhiệm, ví dụ bảo hộ"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

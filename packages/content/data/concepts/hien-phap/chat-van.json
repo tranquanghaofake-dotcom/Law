@@ -21,6 +21,33 @@
   "tại kỳ họp hoặc phiên họp Ủy ban thường vụ",
   "bằng văn bản khi cần thiết"
  ],
+ "memo": {
+  "hook": "Chất vấn là buộc GIẢI TRÌNH, không phải hỏi thông tin.",
+  "tree": [
+   {
+    "label": "Bị chất vấn",
+    "children": [
+     "Chủ tịch nước, Chủ tịch Quốc hội",
+     "Thủ tướng, thành viên Chính phủ",
+     "Chánh án, Viện trưởng tối cao",
+     "Tổng Kiểm toán nhà nước"
+    ]
+   },
+   {
+    "label": "Trả lời ở đâu",
+    "children": [
+     "Tại kỳ họp Quốc hội",
+     "Phiên họp Ủy ban thường vụ giữa hai kỳ họp"
+    ]
+   },
+   {
+    "label": "Ngoại lệ",
+    "children": [
+     "Bằng văn bản khi cần thiết"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

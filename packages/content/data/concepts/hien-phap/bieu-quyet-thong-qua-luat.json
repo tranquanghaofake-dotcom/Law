@@ -22,6 +22,32 @@
   "hai phần ba tổng số đại biểu",
   "công bố chậm nhất 15 ngày"
  ],
+ "memo": {
+  "hook": "Tính trên TỔNG SỐ đại biểu: quá 1/2 việc thường, 2/3 việc hệ trọng.",
+  "tree": [
+   {
+    "label": "Quá nửa tổng số",
+    "children": [
+     "Luật",
+     "Nghị quyết"
+    ]
+   },
+   {
+    "label": "Ít nhất 2/3 tổng số",
+    "children": [
+     "Làm, sửa Hiến pháp",
+     "Rút ngắn, kéo dài nhiệm kỳ",
+     "Bãi nhiệm đại biểu Quốc hội"
+    ]
+   },
+   {
+    "label": "Công bố",
+    "children": [
+     "Chậm nhất 15 ngày"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

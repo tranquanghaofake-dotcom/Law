@@ -22,6 +22,36 @@
   "bình đẳng, hợp tác, cạnh tranh",
   "không bị quốc hữu hóa"
  ],
+ "memo": {
+  "hook": "NHIỀU sở hữu, nhà nước CHỦ ĐẠO, các thành phần BÌNH ĐẲNG.",
+  "tree": [
+   {
+    "label": "Cơ cấu",
+    "children": [
+     "Nhiều hình thức sở hữu",
+     "Nhiều thành phần kinh tế"
+    ]
+   },
+   {
+    "label": "Vai trò",
+    "children": [
+     "Kinh tế nhà nước chủ đạo"
+    ]
+   },
+   {
+    "label": "Quan hệ",
+    "children": [
+     "Bình đẳng, hợp tác, cạnh tranh"
+    ]
+   },
+   {
+    "label": "Bảo hộ",
+    "children": [
+     "Không bị quốc hữu hóa"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

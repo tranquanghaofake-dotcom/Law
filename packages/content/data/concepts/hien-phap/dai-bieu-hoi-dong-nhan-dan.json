@@ -22,6 +22,32 @@
   "tiếp xúc, báo cáo cử tri",
   "đôn đốc giải quyết khiếu nại, tố cáo"
  ],
+ "memo": {
+  "hook": "Đại biểu HĐND đại diện Nhân dân ĐỊA PHƯƠNG.",
+  "tree": [
+   {
+    "label": "Đại diện",
+    "children": [
+     "Ý chí, nguyện vọng Nhân dân địa phương"
+    ]
+   },
+   {
+    "label": "Nghĩa vụ",
+    "children": [
+     "Tiếp xúc, báo cáo cử tri",
+     "Trả lời kiến nghị",
+     "Đôn đốc giải quyết khiếu nại, tố cáo"
+    ]
+   },
+   {
+    "label": "Quyền",
+    "children": [
+     "Chất vấn cùng cấp",
+     "Kiến nghị với cơ quan địa phương"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

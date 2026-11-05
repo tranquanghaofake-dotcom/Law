@@ -23,6 +23,41 @@
   "thường thiếu chế tài"
  ],
  "note": "Thẻ dạng tóm lược quan điểm học thuật, chưa đối chiếu nguyên văn giáo trình; cần Hào đối chiếu trang 1–9 của sách.",
+ "memo": {
+  "hook": "Chủ yếu XÁC LẬP NGUYÊN TẮC CHUNG; thường THIẾU chế tài.",
+  "tree": [
+   {
+    "label": "Xác lập nguyên tắc chung",
+    "children": [
+     "Định hướng, ngành khác cụ thể hóa"
+    ]
+   },
+   {
+    "label": "Cho phép",
+    "children": [
+     "Trao quyền, ví dụ quyền bầu cử"
+    ]
+   },
+   {
+    "label": "Bắt buộc",
+    "children": [
+     "Đặt nghĩa vụ, ví dụ nộp thuế"
+    ]
+   },
+   {
+    "label": "Nghiêm cấm",
+    "children": [
+     "Ví dụ không bắt người trái luật"
+    ]
+   },
+   {
+    "label": "Đặc điểm",
+    "children": [
+     "Thường thiếu chế tài"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

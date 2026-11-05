@@ -22,6 +22,36 @@
   "trường hợp cần thiết",
   "sáu lý do"
  ],
+ "memo": {
+  "hook": "Hạn chế quyền: phải bằng LUẬT, khi CẦN THIẾT, vì SÁU lý do.",
+  "tree": [
+   {
+    "label": "Nhà nước phải",
+    "children": [
+     "Công nhận",
+     "Tôn trọng",
+     "Bảo vệ",
+     "Bảo đảm"
+    ]
+   },
+   {
+    "label": "Hạn chế quyền",
+    "children": [
+     "Chỉ bằng luật",
+     "Trường hợp cần thiết"
+    ]
+   },
+   {
+    "label": "Sáu lý do",
+    "children": [
+     "Quốc phòng, an ninh quốc gia",
+     "Trật tự, an toàn xã hội",
+     "Đạo đức xã hội",
+     "Sức khỏe cộng đồng"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

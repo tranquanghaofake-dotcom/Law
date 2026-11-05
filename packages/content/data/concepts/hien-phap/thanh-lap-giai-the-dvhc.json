@@ -23,6 +23,33 @@
   "Quốc hội: cấp tỉnh; Ủy ban thường vụ: dưới tỉnh"
  ],
  "note": "Nghị quyết 203/2025/QH15 (hiệu lực 16/6/2025) sửa câu chữ: trình tự, thủ tục nay \"do Quốc hội quy định\" (bản 2013: \"do luật định\"); quy định chuyển từ khoản 2 sang khoản 3 Điều 110.",
+ "memo": {
+  "hook": "Phải LẤY Ý KIẾN Nhân dân địa phương.",
+  "tree": [
+   {
+    "label": "Điều kiện",
+    "children": [
+     "Lấy ý kiến Nhân dân địa phương",
+     "Trình tự do Quốc hội quy định"
+    ]
+   },
+   {
+    "label": "Thẩm quyền",
+    "children": [
+     "Quốc hội: cấp tỉnh",
+     "Ủy ban thường vụ: dưới tỉnh"
+    ]
+   },
+   {
+    "label": "Áp dụng",
+    "children": [
+     "Thành lập, giải thể",
+     "Nhập, chia",
+     "Điều chỉnh địa giới"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

@@ -22,6 +22,33 @@
   "quyền tư pháp",
   "bảo vệ công lý"
  ],
+ "memo": {
+  "hook": "CHỈ Tòa án mới xét xử; nhiệm vụ là BẢO VỆ CÔNG LÝ.",
+  "tree": [
+   {
+    "label": "Vị trí",
+    "children": [
+     "Cơ quan xét xử",
+     "Thực hiện quyền tư pháp"
+    ]
+   },
+   {
+    "label": "Nhiệm vụ",
+    "children": [
+     "Bảo vệ công lý",
+     "Bảo vệ quyền con người, quyền công dân",
+     "Bảo vệ lợi ích Nhà nước, tổ chức, cá nhân"
+    ]
+   },
+   {
+    "label": "Hệ thống",
+    "children": [
+     "Tòa án nhân dân tối cao",
+     "Các Tòa án khác do luật định"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

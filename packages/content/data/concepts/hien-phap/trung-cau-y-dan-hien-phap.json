@@ -22,6 +22,30 @@
   "không bắt buộc",
   "lấy ý kiến Nhân dân"
  ],
+ "memo": {
+  "hook": "Trưng cầu ý dân KHÔNG bắt buộc; lấy ý kiến Nhân dân thì BẮT BUỘC.",
+  "tree": [
+   {
+    "label": "Thông qua",
+    "children": [
+     "Ít nhất 2/3 tổng số đại biểu"
+    ]
+   },
+   {
+    "label": "Trưng cầu ý dân",
+    "children": [
+     "Do Quốc hội quyết định",
+     "Không bắt buộc"
+    ]
+   },
+   {
+    "label": "Phân biệt",
+    "children": [
+     "Lấy ý kiến Nhân dân: bắt buộc khi soạn thảo"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

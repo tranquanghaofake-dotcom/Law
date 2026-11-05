@@ -22,6 +22,37 @@
   "giữa hai kỳ họp: Ủy ban thường vụ, Chủ tịch nước",
   "nhiệm kỳ theo Quốc hội"
  ],
+ "memo": {
+  "hook": "Báo cáo QUỐC HỘI; giữa hai kỳ họp: Ủy ban thường vụ, Chủ tịch nước.",
+  "tree": [
+   {
+    "label": "Áp dụng",
+    "children": [
+     "Chánh án Tòa án nhân dân tối cao",
+     "Viện trưởng Viện kiểm sát nhân dân tối cao"
+    ]
+   },
+   {
+    "label": "Bầu",
+    "children": [
+     "Quốc hội, theo đề nghị Chủ tịch nước"
+    ]
+   },
+   {
+    "label": "Trách nhiệm",
+    "children": [
+     "Trước Quốc hội",
+     "Giữa hai kỳ họp: Ủy ban thường vụ, Chủ tịch nước"
+    ]
+   },
+   {
+    "label": "Nhiệm kỳ",
+    "children": [
+     "Theo Quốc hội"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

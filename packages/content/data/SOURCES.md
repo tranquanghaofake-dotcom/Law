@@ -102,4 +102,4 @@ Bản text toàn văn Hiến pháp dùng khi soạn thẻ và kiểm tra tự đ
 Khái niệm `kind: textbook` là **tóm lược quan điểm phổ biến**, ghi rõ "chưa đối chiếu nguyên văn giáo trình" cho tới khi Hào đối chiếu với sách in.
 
 ## Trường `memo` (sơ đồ/mẹo nhớ) — 05/11/2026
-Diễn giải để học do người soạn, **không phải nguyên văn**; giao diện gắn nhãn "Diễn giải để học, không phải nguyên văn". Chỉ rút từ `definition`/`plain` đã kiểm của chính khái niệm, không thêm khẳng định pháp lý mới. Thí điểm Hiến pháp: quan-he-phap-luat-hien-phap, bai-nhiem-dai-bieu, don-vi-hanh-chinh-hai-cap, cong-dan-viet-nam, cap-chinh-quyen-dia-phuong.
+Diễn giải để học do người soạn, **không phải nguyên văn**; giao diện gắn nhãn "Diễn giải để học, không phải nguyên văn". Chỉ rút từ `definition`/`plain` đã kiểm của chính khái niệm, không thêm khẳng định pháp lý mới. Đã soạn: toàn bộ 101 khái niệm môn Hiến pháp; các môn khác chưa có (dùng sơ đồ tự động từ `keywords`).

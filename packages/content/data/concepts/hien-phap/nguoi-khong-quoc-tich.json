@@ -21,6 +21,31 @@
   "không có quốc tịch Việt Nam",
   "không có quốc tịch nước ngoài"
  ],
+ "memo": {
+  "hook": "KHÔNG quốc tịch Việt Nam và KHÔNG quốc tịch nước ngoài.",
+  "tree": [
+   {
+    "label": "Định nghĩa",
+    "children": [
+     "Không có quốc tịch Việt Nam",
+     "Không có quốc tịch nước ngoài"
+    ]
+   },
+   {
+    "label": "Hệ quả",
+    "children": [
+     "Không nhà nước nào bảo hộ"
+    ]
+   },
+   {
+    "label": "Luật hạn chế",
+    "children": [
+     "Con sinh ở Việt Nam, cha mẹ thường trú: có quốc tịch",
+     "Được xin nhập quốc tịch"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

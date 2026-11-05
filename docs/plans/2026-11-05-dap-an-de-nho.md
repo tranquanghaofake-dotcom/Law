@@ -24,3 +24,8 @@ Quyết định: đọc đề gồm cả các phương án A/B/C/D (theo thứ t
 Kiểm tra: `npm run ci` xanh (155 + 694 test); `npm run e2e` 29/29; ảnh hộp đáp án 390/1280 và màn thắp chuỗi tự chụp, đã xem.
 Ngoài phạm vi (ghi lại, không sửa): `npm run shots` báo 18 dòng tương phản < AA ở gáy sách/kệ (Dân sự 1, TTDS, nhóm môn…) — có từ trước, không thuộc đợt này. Mới 5/690 khái niệm có `memo`; các môn khác cần soạn dần.
 Rút kinh nghiệm: (1) Svelte 5 — effect đọc `run.i` vẫn chạy lại mỗi lần gán lại cả `run`; muốn "chỉ khi chỉ số đổi" phải qua `$derived` (test tích hợp bắt được, test hàm thuần không). (2) Thẻ trắc nghiệm xáo phương án → mọi thứ đọc/hiện phương án ngoài thẻ phải lấy thứ tự từ thẻ. (3) Sửa JSON dữ liệu bằng script phải giữ đúng thụt lề gốc (indent=1, không xuống dòng cuối) — lần đầu đổi định dạng làm diff phình 700 dòng.
+
+## Đợt 2 (Hào: "làm")
+- Tương phản kệ sách: làm đậm nền chữ bảng tên kệ (.74) và nhãn gáy (.58) — 3bd41df. Ảnh thật đọc rõ; `contrast.txt` vẫn báo 14 dòng do công cụ lấy phân vị 10 % điểm ảnh xấu nhất trúng viền sáng 1 px của nhãn nhỏ (đo sai, không phải lỗi giao diện).
+- `memo` cho cả 101 khái niệm Hiến pháp (96 mới), chỉ rút từ definition/plain; diff chỉ thêm dòng (2649+, 0−); `npm run content` 0 lỗi.
+Rút kinh nghiệm: (4) chạy vitest của một package phải đứng trong thư mục package — `--root` từ gốc làm alias `$lib` hỏng, báo đỏ giả.

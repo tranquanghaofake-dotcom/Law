@@ -22,6 +22,30 @@
   "sơ thẩm",
   "trừ thủ tục rút gọn"
  ],
+ "memo": {
+  "hook": "Có Hội thẩm ở SƠ THẨM, trừ thủ tục RÚT GỌN.",
+  "tree": [
+   {
+    "label": "Hội thẩm",
+    "children": [
+     "Đại diện Nhân dân",
+     "Ngang quyền Thẩm phán khi xét xử"
+    ]
+   },
+   {
+    "label": "Áp dụng",
+    "children": [
+     "Xét xử sơ thẩm"
+    ]
+   },
+   {
+    "label": "Ngoại lệ",
+    "children": [
+     "Thủ tục rút gọn"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

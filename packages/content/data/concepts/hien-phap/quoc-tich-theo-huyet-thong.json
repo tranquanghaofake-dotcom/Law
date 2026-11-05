@@ -23,6 +23,31 @@
   "cha mẹ thỏa thuận chọn quốc tịch"
  ],
  "note": "Luật 79/2025/QH15 (hiệu lực 01/7/2025) sửa khoản 2 Điều 16 (trường hợp trẻ em có cha hoặc mẹ là công dân Việt Nam, người kia là công dân nước ngoài: thỏa thuận lựa chọn quốc tịch khi làm thủ tục khai sinh). Giáo trình in trước 2025 trình bày theo khoản 2 Điều 16 cũ, cần đối chiếu câu chữ.",
+ "memo": {
+  "hook": "Việt Nam theo HUYẾT THỐNG; NƠI SINH chỉ bổ trợ.",
+  "tree": [
+   {
+    "label": "Cha mẹ đều là công dân",
+    "children": [
+     "Con có quốc tịch Việt Nam",
+     "Dù sinh trong hay ngoài lãnh thổ"
+    ]
+   },
+   {
+    "label": "Một bên là công dân",
+    "children": [
+     "Bên kia không quốc tịch: con có quốc tịch Việt Nam",
+     "Bên kia nước ngoài: cha mẹ thỏa thuận"
+    ]
+   },
+   {
+    "label": "Nơi sinh",
+    "children": [
+     "Chỉ bổ trợ, tránh không quốc tịch"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

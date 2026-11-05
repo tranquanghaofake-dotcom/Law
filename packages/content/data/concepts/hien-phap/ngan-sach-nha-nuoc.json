@@ -23,6 +23,38 @@
   "Đồng Việt Nam",
   "công khai, minh bạch"
  ],
+ "memo": {
+  "hook": "Ngân sách TRUNG ƯƠNG chủ đạo; thu chi phải DỰ TOÁN, do LUẬT định.",
+  "tree": [
+   {
+    "label": "Gồm",
+    "children": [
+     "Ngân sách trung ương (chủ đạo)",
+     "Ngân sách địa phương"
+    ]
+   },
+   {
+    "label": "Thu, chi",
+    "children": [
+     "Phải được dự toán",
+     "Do luật định"
+    ]
+   },
+   {
+    "label": "Quản lý",
+    "children": [
+     "Công khai, minh bạch"
+    ]
+   },
+   {
+    "label": "Tiền tệ",
+    "children": [
+     "Đồng Việt Nam",
+     "Ổn định giá trị"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

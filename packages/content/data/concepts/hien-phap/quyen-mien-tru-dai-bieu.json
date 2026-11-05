@@ -21,6 +21,32 @@
   "đồng ý của Quốc hội hoặc Ủy ban thường vụ",
   "phạm tội quả tang"
  ],
+ "memo": {
+  "hook": "Miễn trừ KHÔNG phải miễn trách nhiệm: cần Quốc hội ĐỒNG Ý.",
+  "tree": [
+   {
+    "label": "Không được",
+    "children": [
+     "Bắt, giam, giữ",
+     "Khởi tố"
+    ]
+   },
+   {
+    "label": "Trừ khi",
+    "children": [
+     "Quốc hội đồng ý",
+     "Ủy ban thường vụ đồng ý khi Quốc hội không họp"
+    ]
+   },
+   {
+    "label": "Quả tang",
+    "children": [
+     "Tạm giữ ngay",
+     "Lập tức báo cáo"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",

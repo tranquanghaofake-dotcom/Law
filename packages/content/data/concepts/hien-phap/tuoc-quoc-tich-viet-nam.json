@@ -23,6 +23,32 @@
   "phương hại nghiêm trọng",
   "chế tài"
  ],
+ "memo": {
+  "hook": "Tước là CHẾ TÀI; công dân gốc đang ở TRONG NƯỚC không bị tước.",
+  "tree": [
+   {
+    "label": "Đối tượng",
+    "children": [
+     "Công dân cư trú ở nước ngoài",
+     "Người đã nhập quốc tịch Việt Nam"
+    ]
+   },
+   {
+    "label": "Hành vi",
+    "children": [
+     "Phương hại nghiêm trọng độc lập dân tộc",
+     "Hại xây dựng, bảo vệ Tổ quốc",
+     "Hại uy tín Nhà nước"
+    ]
+   },
+   {
+    "label": "Phân biệt",
+    "children": [
+     "Khác thôi quốc tịch tự nguyện"
+    ]
+   }
+  ]
+ },
  "items": [
   {
    "type": "mcq",
