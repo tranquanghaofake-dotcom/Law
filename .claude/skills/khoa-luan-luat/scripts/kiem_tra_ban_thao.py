@@ -69,8 +69,11 @@ def _chuan_hoa(s):
     return re.sub(r"[\s*_]+", " ", s.replace("“", '"').replace("”", '"')).strip().lower()
 
 
-def kiem_tra(van, nop=False, an_danh=None, tieu_de_khac=None, nguyen_van=None):
+def kiem_tra(van, nop=False, an_danh=None, tieu_de_khac=None, nguyen_van=None, bang_van_ban=None):
     """Trả về danh sách vi phạm: {ma, muc, dong, noi_dung}.
+
+    bang_van_ban: nội dung 05-nguon/van-ban.md. Có thì mọi số hiệu VBQPPL dạng N/YYYY/... trong bài
+    (trừ số bản án) phải có dòng trong bảng hiệu lực.
 
     tieu_de_khac: tiêu đề của các file khác trong cùng dự án (để kiểm "Phụ lục N" có tồn tại).
     nguyen_van: nội dung file trích nguyên văn (05-nguon/nguyen-van.md). Có thì mọi đoạn trích
@@ -183,6 +186,18 @@ def kiem_tra(van, nop=False, an_danh=None, tieu_de_khac=None, nguyen_van=None):
             them("van-sao-rong", "NHẸ", _dong(van, vt), f"'{cum}' — thay bằng căn cứ cụ thể")
             vt = thap.find(cum, vt + 1)
 
+    # 7. Mọi số hiệu VBQPPL trong bài phải có dòng trong bảng hiệu lực (05-nguon/van-ban.md)
+    if bang_van_ban is not None:
+        da_bao_sh = set()
+        for m in re.finditer(r"\b\d+/\d{4}/[A-ZĐ][A-ZĐ0-9\-]*", van):
+            sh = m.group(0).rstrip("-")
+            if re.search(r"/(HS|DS|KDTM|HC|LĐ|HNGĐ|KT|PS|DSST|HSST)-|ĐHĐCĐ|HĐQT|HĐTV", sh) or sh in da_bao_sh:
+                continue  # số bản án, văn bản nội bộ doanh nghiệp, hoặc đã báo
+            if sh not in bang_van_ban:
+                da_bao_sh.add(sh)
+                them("van-ban-chua-kiem-hieu-luc", "NẶNG", _dong(van, m.start()),
+                     f"'{sh}' chưa có dòng trong bảng hiệu lực (05-nguon/van-ban.md)")
+
     return kq
 
 
@@ -192,12 +207,17 @@ def main():
     ap.add_argument("--nop", action="store_true", help="bản nộp: còn nhãn nghiên cứu là lỗi CHẶN")
     ap.add_argument("--an-danh", default=None, help="các chuỗi không được xuất hiện, cách nhau dấu phẩy")
     ap.add_argument("--nguyen-van", default=None, help="file trích nguyên văn; đoạn trích ≥ 25 ký tự phải có trong đó")
+    ap.add_argument("--van-ban", default=None, help="bảng hiệu lực 05-nguon/van-ban.md; mọi số hiệu trong bài phải có trong đó")
     a = ap.parse_args()
     nv = None
     if a.nguyen_van:
         with open(a.nguyen_van, encoding="utf-8") as f:
             nv = f.read()
     an_danh = a.an_danh.split(",") if a.an_danh is not None else None
+    bvb = None
+    if a.van_ban:
+        with open(a.van_ban, encoding="utf-8") as f:
+            bvb = f.read()
 
     van_ban = {}
     for tep in a.tep:
@@ -206,7 +226,7 @@ def main():
     co_chan = False
     for tep, van in van_ban.items():
         khac = [t for t2, v2 in van_ban.items() if t2 != tep for t in tieu_de(v2)]
-        kq = kiem_tra(van, nop=a.nop, an_danh=an_danh, tieu_de_khac=khac, nguyen_van=nv)
+        kq = kiem_tra(van, nop=a.nop, an_danh=an_danh, tieu_de_khac=khac, nguyen_van=nv, bang_van_ban=bvb)
         dem = {m: sum(1 for v in kq if v["muc"] == m) for m in ("CHẶN", "NẶNG", "NHẸ")}
         print(f"== {tep}: CHẶN {dem['CHẶN']} · NẶNG {dem['NẶNG']} · NHẸ {dem['NHẸ']}")
         for v in sorted(kq, key=lambda v: (("CHẶN", "NẶNG", "NHẸ").index(v["muc"]), v["dong"])):

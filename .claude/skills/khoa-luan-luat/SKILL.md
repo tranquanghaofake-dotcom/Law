@@ -57,6 +57,9 @@ nhat-ky-ai.md
 
 Mở lại phiên: đọc `00-ho-so.md` (phần NHẬT KÝ PHIÊN) trước, làm tiếp từ pha chưa qua cổng.
 
+## Người dùng đã có bản nháp
+Không viết lại ngay. (1) Đọc toàn bộ (file .docx thì đọc bằng skill docx nếu có, giữ nguyên bản gốc). (2) Dựng lại `00-ho-so.md`, `05-nguon/van-ban.md`, `05-nguon/nguyen-van.md` từ chính bản nháp. (3) Chạy `kiem_tra_ban_thao.py` và lập **bảng luận điểm → bằng chứng** (pha 7). (4) Xác định bản nháp đã qua cổng pha nào, cổng nào còn hở; báo người dùng theo thứ tự ảnh hưởng lên điểm. (5) Người dùng chọn phạm vi sửa rồi mới sửa, sửa tại chỗ.
+
 ## Quy trình 9 pha
 
 Mỗi pha có: **Làm** → **Sản phẩm** → **Cổng** (điều kiện cụ thể để qua). Không qua cổng thì không sang pha sau. Mọi cổng đều cần người dùng duyệt, trừ khi người dùng đã nói rõ "tự chạy hết".
@@ -64,7 +67,7 @@ Mỗi pha có: **Làm** → **Sản phẩm** → **Cổng** (điều kiện cụ
 ### Pha 0 — Tiếp nhận
 Làm: hỏi gom **một lượt**: loại sản phẩm; trường, khoa (có file quy định trình bày không); hạn nộp; GVHD và định hướng của GVHD; cuộc thi và năm (thể lệ đổi theo năm); người dùng đã có gì (đọc gì, dữ liệu, nghề định hướng). Thiếu thông tin thì dùng mặc định trong `references/trinh-bay-trich-dan.md` và ghi rõ là mặc định.
 Nếu dự giải Bộ GD&ĐT: lập mốc thời gian ngược từ hạn 30/6. Kết quả phải được công bố hoặc ứng dụng **ít nhất 01 năm** trước ngày nộp (seminar cấp khoa trở lên cũng được tính). Công bố khoa học được tối đa 10 điểm.
-Cổng: `00-ho-so.md` có đủ 6 mục trên (mục chưa biết ghi "mặc định: …").
+Cổng: `00-ho-so.md` có đủ 6 mục trên (mục chưa biết ghi "mặc định: …"). Suốt dự án, `00-ho-so.md` giữ mục **ĐANG CHẶN** (khuôn trong `de-cuong-mau.md` mục F). Gặp việc không làm tiếp được thì ghi vào đó ngay, không chỉ nói trong chat.
 
 ### Pha 1 — Thẩm định và mài đề tài
 Làm: từ đề tài thô, đưa ra **3 phương án** (hẹp / vừa / tham vọng). Chấm mỗi phương án 1–5 theo: tính cấp thiết (văn bản mới, bất cập có bằng chứng, vụ việc nổi bật); **tính mới** (đã tìm các công trình gần nhất chưa? khác ở đâu?); khả thi về nguồn (có bản án, số liệu, tài liệu nước ngoài đọc được không?); vừa độ dài; hợp với định hướng nghề.
@@ -94,18 +97,20 @@ Không tìm được bản án đúng vấn đề: đổi sang nguồn thực ti
 Cổng: mọi VBQPPL được nhắc trong đề cương có dòng trong bảng hiệu lực; mỗi bất cập dự định nêu có ≥ 1 bằng chứng (điều luật mâu thuẫn, bản án, số liệu, bài phân tích).
 
 ### Pha 6 — Viết từng chương
-Làm: viết **một chương một lần**, theo đề cương; sau mỗi chương dừng cho người dùng xem. Mỗi luận điểm theo chuỗi:
+Làm: viết **một chương một lần**, theo đề cương, qua 2 bước: (a) **dàn ý luận điểm** — mỗi mục 3–6 câu luận điểm, mỗi câu ghi bằng chứng sẽ dùng (điều khoản, nguồn, mã trong `nguyen-van.md`); người dùng duyệt; (b) viết văn từ dàn ý đã duyệt. "Tiếp tục" ở bước (a) chỉ là duyệt dàn ý, không phải duyệt cả chương. Sau mỗi chương dừng cho người dùng xem. Mỗi luận điểm theo chuỗi:
 **Vấn đề → Quy định hiện hành (nguyên văn, điều/khoản) → Quan điểm khoa học (đồng thuận và tranh luận) → Thực tiễn (bản án, số liệu) → Đánh giá của tác giả theo khung lý thuyết → (nếu có) Kiến nghị.**
 Chương lý luận: định nghĩa có nguồn, so sánh các định nghĩa rồi đưa định nghĩa của tác giả; đặc điểm; phân loại; nội dung điều chỉnh. Không chép giáo trình. Chương thực trạng: chia **ưu điểm / hạn chế / nguyên nhân** (nguyên nhân từ pháp luật, từ thực thi, từ nhận thức); hội đồng hay bắt lỗi thiếu phân tích nguyên nhân cốt lõi. Chương kiến nghị: mỗi kiến nghị phải **(a) gắn với 1 hạn chế đã chứng minh, (b) nói sửa điều/khoản nào của văn bản nào, (c) đề xuất câu chữ cụ thể nếu được, (d) lường tác động hoặc phản biện**. Kiến nghị chung chung ("tăng cường tuyên truyền") chỉ đặt cuối, không làm trọng tâm.
 **Kiểm phản chứng (bắt buộc trước khi chốt mỗi hạn chế):** tìm câu trả lời chính thức cho **đúng câu hỏi pháp lý** đó: hỏi đáp, công văn của cơ quan quản lý, án lệ, giải đáp của TANDTC, quan điểm học giả trái chiều, và **bản dự thảo của chính điều luật đó** (chữ bị bỏ hoặc thêm). Không tìm thấy gì thì ghi "chưa tìm thấy hướng dẫn … (tìm ngày …)" vào bài. Có thì phải viết vào bài: nêu quan điểm đó, đánh giá giá trị pháp lý, rồi mới kết luận. Hạn chế nào chưa qua bước này thì giữ nhãn `[CẦN KIỂM: phản chứng]`. Trong mục tổng kết hạn chế, mỗi ý (i), (ii)… phải có footnote, tham chiếu "(xem x.y.z)" tới đoạn đã phân tích phản chứng, hoặc câu "chưa tìm thấy …". Script báo lỗi `han-che-chua-phan-chung` nếu thiếu.
-Cổng mỗi chương: chạy `python3 scripts/kiem_tra_ban_thao.py <file chương> <các file phụ lục> --nguyen-van 05-nguon/nguyen-van.md`. Truyền nhiều file để kiểm tham chiếu "Phụ lục N"; mọi đoạn trích ≥ 25 ký tự phải có trong file nguyên văn. Không còn lỗi CHẶN hoặc NẶNG; người dùng duyệt.
+Cổng mỗi chương: chạy `python3 scripts/kiem_tra_ban_thao.py <file chương> <các file phụ lục> --nguyen-van 05-nguon/nguyen-van.md --van-ban 05-nguon/van-ban.md`. Mọi số hiệu văn bản trong bài phải có dòng trong bảng hiệu lực. Truyền nhiều file để kiểm tham chiếu "Phụ lục N"; mọi đoạn trích ≥ 25 ký tự phải có trong file nguyên văn. Không còn lỗi CHẶN hoặc NẶNG; người dùng duyệt.
 
 ### Pha 7 — Phản biện giả lập hội đồng
-Làm: đóng 3 vai **độc lập**, mỗi vai đọc toàn bài: (1) phản biện khắt khe về học thuật; (2) người làm thực tiễn (thẩm phán, luật sư, pháp chế); (3) thư ký chấm theo phiếu điểm đúng cuộc thi hoặc trường (`references/tieu-chi-cham.md`). Dùng checklist `references/phan-bien-hoi-dong.md`. Kết quả: điểm từng tiêu chí kèm lý do, danh sách sửa xếp theo mức tác động lên điểm.
+Làm: đóng 3 vai **độc lập**, mỗi vai đọc toàn bài: (1) phản biện khắt khe về học thuật; (2) người làm thực tiễn (thẩm phán, luật sư, pháp chế); (3) thư ký chấm theo phiếu điểm đúng cuộc thi hoặc trường (`references/tieu-chi-cham.md`). Dùng checklist `references/phan-bien-hoi-dong.md`. Trước khi chấm, lập **bảng luận điểm → bằng chứng** cho mọi kết luận chính (hạn chế, kiến nghị, tính mới). Kết quả: điểm từng tiêu chí kèm lý do, danh sách sửa xếp theo mức tác động lên điểm; mỗi góp ý có đủ 5 phần và một **tiêu chí đóng** (khuôn trong `phan-bien-hoi-dong.md`). Ba vai do cùng một phiên đóng thì không thật sự độc lập; muốn độc lập thật thì dùng subagent riêng cho từng vai, **chỉ khi người dùng đồng ý**.
 Cổng: mọi lỗi mức "chặn" đã sửa; điểm giả lập ở mỗi tiêu chí ≥ 70% điểm tối đa; bài dự giải Bộ GD&ĐT có tổng giả lập **≥ 85** (ngưỡng vào chung khảo, TT 45/2020, Điều 13, khoản 3). Không đạt thì người dùng phải xác nhận chấp nhận rủi ro bằng văn bản.
 
 ### Pha 8 — Hoàn thiện, nộp, bảo vệ
 Làm: chuẩn hóa footnote và danh mục tài liệu tham khảo (`references/trinh-bay-trich-dan.md`); kiểm hình thức theo quy định trường hoặc thể lệ (ẩn danh nếu dự giải); viết tóm tắt (và tóm tắt tiếng Anh nếu yêu cầu); 15–20 câu hỏi bảo vệ dự kiến kèm ý trả lời; khung slide 10–12 trang (nếu có skill `slide-chuan` thì dùng).
+Xuất Word: dùng skill docx nếu có, theo thể thức ở `trinh-bay-trich-dan.md` hoặc file mẫu của trường; mở lại file đã xuất để kiểm footnote, mục lục, đánh số trang.
+**Góp ý của GVHD, phản biện, hội đồng** (trước hoặc sau bảo vệ): lập bảng giải trình trong `09-giai-trinh.md` (khuôn trong `phan-bien-hoi-dong.md`). Mỗi góp ý: tiếp thu (ghi vị trí đã sửa) hoặc giữ nguyên (giải trình có căn cứ). Không sửa mà không ghi lại, và không bỏ qua góp ý nào.
 Cổng: `kiem_tra_ban_thao.py` chạy trên bản cuối báo 0 lỗi; checklist nộp trong `08-hoan-thien.md` tick đủ; `nhat-ky-ai.md` cập nhật.
 
 ## Tra nhanh

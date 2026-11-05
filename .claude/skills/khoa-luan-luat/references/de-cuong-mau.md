@@ -58,7 +58,16 @@ Biến thể so sánh: Ch.1 lý luận → Ch.2 pháp luật [nước A, B] → 
 | Số hiệu | Tên | Ban hành | Hiệu lực | Tình trạng | Sửa đổi, thay thế bởi | Link vbpl.vn | Kiểm ngày |
 |---|---|---|---|---|---|---|---|
 
-## F. Hồ sơ dự án (00-ho-so.md) — cuối file luôn có
+## F. Hồ sơ dự án (00-ho-so.md) — luôn có mục ĐANG CHẶN và NHẬT KÝ PHIÊN
+
+```
+## ĐANG CHẶN
+| Việc | Loại | Ảnh hưởng | Lựa chọn | Đề xuất |
+|---|---|---|---|---|
+| Cổng pha 2 thiếu 3 bài học thuật (cần thư viện) | chờ người dùng | tổng quan ≤ 4/10 | (a) người dùng lấy toàn văn; (b) viết tiếp, ghi giới hạn | (a) |
+```
+Loại: **chặn cứng** (không được làm tiếp, ví dụ chưa biết kết quả biểu quyết mà đã viết phân tích quy định); **làm tiếp có giới hạn** (làm phần không phụ thuộc, ghi giới hạn); **chờ người dùng** (cần quyết định hoặc tài liệu của người dùng). Gỡ xong thì chuyển dòng xuống nhật ký, ghi ngày.
+
 
 ```
 ## NHẬT KÝ PHIÊN

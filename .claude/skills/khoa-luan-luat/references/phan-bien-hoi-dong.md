@@ -56,3 +56,17 @@ Trả lời theo khuôn: **kết luận 1 câu → căn cứ (điều luật, ng
 ## Khung slide bảo vệ (10–12 trang, 10–15 phút)
 
 Tên đề tài → Lý do và khoảng trống → Câu hỏi, phương pháp → (mỗi chương 1–2 trang: phát hiện chính, không chép chữ) → Bảng hạn chế ↔ kiến nghị → Điểm mới → Hạn chế, hướng tiếp → Cảm ơn (bỏ nếu bài dự giải ẩn danh ở vòng chấm).
+
+## Bảng luận điểm → bằng chứng (lập trước khi chấm)
+| Mã | Vị trí | Luận điểm (1 câu) | Bằng chứng (điều khoản, nguồn, mã nguyên văn) | Phản chứng đã xét | Mức khẳng định có vượt bằng chứng không |
+|---|---|---|---|---|---|
+| L1 | 2.2.4 (i) | Luật không cho chấp thuận theo hạn mức | k2, k4 Điều 167; trả lời Bộ Tài chính | hỏi đáp MOF chấp nhận hạn mức | có: "không cho" → sửa thành "không quy định" |
+Luận điểm nào cột bằng chứng trống, hoặc cột cuối là "có", thì phải sửa trước khi chấm điểm.
+
+## Khuôn một góp ý
+**Vị trí** (mục, dòng) · **Quan sát** (bài đang viết gì) · **Căn cứ** (tiêu chí chấm, điều luật, nguồn) · **Vì sao quan trọng** (ảnh hưởng tiêu chí nào, bao nhiêu điểm) · **Yêu cầu sửa** (việc cụ thể, vừa sức, không đòi làm đề tài khác) · **Tiêu chí đóng** (một câu kiểm được, ví dụ "đoạn 2.2.2 nêu và đánh giá trả lời số 154897 của Bộ Tài chính").
+
+## Bảng giải trình góp ý (09-giai-trinh.md) — dùng cho GVHD, phản biện, hội đồng
+| # | Người góp ý | Nội dung góp ý (ghi đúng ý) | Tiếp thu / giữ nguyên | Đã sửa ở đâu, hoặc căn cứ giải trình | Ngày |
+|---|---|---|---|---|---|
+Mọi góp ý đều có dòng. Giữ nguyên thì giải trình bằng căn cứ (điều luật, nguồn, phạm vi đề tài), không viết "em xin tiếp thu" chung chung khi thật ra không sửa. Góp ý mâu thuẫn nhau giữa GVHD và phản biện thì hỏi người dùng, không tự chọn.

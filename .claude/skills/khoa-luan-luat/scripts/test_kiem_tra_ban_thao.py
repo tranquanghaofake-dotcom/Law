@@ -137,6 +137,25 @@ class KiemTraBanThao(unittest.TestCase):
         van = "Luật số 91/2025/QH15 là văn bản đầu tiên quy định về quảng cáo dựa trên dữ liệu."
         self.assertEqual(len(muc(kiem_tra(van), "khang-dinh-so-sanh-khong-nguon")), 1)
 
+    def test_so_hieu_khong_co_trong_bang_hieu_luc(self):
+        bang = "| Luật THADS 106/2025/QH15 | 05/12/2025 | 01/7/2026 | hiện hành |"
+        van = "Điều 67 Luật số 106/2025/QH15 và Nghị định số 152/2026/NĐ-CP quy định…"
+        v = muc(kiem_tra(van, bang_van_ban=bang), "van-ban-chua-kiem-hieu-luc")
+        self.assertEqual(len(v), 1)
+        self.assertIn("152/2026/NĐ-CP", v[0]["noi_dung"])
+
+    def test_so_hieu_lap_lai_chi_bao_mot_lan(self):
+        van = "Nghị định 91/2020/NĐ-CP… khoản 2 Điều 13 Nghị định số 91/2020/NĐ-CP…"
+        self.assertEqual(len(muc(kiem_tra(van, bang_van_ban=""), "van-ban-chua-kiem-hieu-luc")), 1)
+
+    def test_van_ban_doanh_nghiep_va_ban_an_khong_kiem(self):
+        van = "Nghị quyết số 18/2015/NQ-ĐHĐCĐ và Bản án số 841/2023/HS-PT."
+        self.assertEqual(len(muc(kiem_tra(van, bang_van_ban=""), "van-ban-chua-kiem-hieu-luc")), 0)
+
+    def test_khong_truyen_bang_thi_khong_kiem(self):
+        van = "Nghị định số 152/2026/NĐ-CP quy định…"
+        self.assertEqual(len(muc(kiem_tra(van), "van-ban-chua-kiem-hieu-luc")), 0)
+
     def test_ban_sach_khong_loi_chan(self):
         van = (
             "Khoản 1 Điều 4 Luật Doanh nghiệp (Luật số 59/2020/QH14) quy định…[^1]\n\n"

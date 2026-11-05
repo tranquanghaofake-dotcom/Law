@@ -24,3 +24,12 @@
 ## Rút kinh nghiệm (đánh số tiếp)
 28. Khi một luật dẫn chiếu "phải phù hợp với pháp luật về X", đọc ngay văn bản X xem nó có dẫn ngược lại không.
 29. Phần thực nghiệm chưa có dữ liệu thì chấm 0 cho phần đó, ghi rõ trần điểm nếu có dữ liệu; không viết "dự kiến kết quả cho thấy…".
+
+## Bảng luận điểm → bằng chứng (lập theo khuôn mới, 05/11/2026)
+| Mã | Vị trí | Luận điểm | Bằng chứng | Phản chứng đã xét | Vượt bằng chứng? |
+|---|---|---|---|---|---|
+| L1 | 2.1.1 | Gửi tin nhắn đăng ký đầu tiên là xử lý dữ liệu khi chưa có đồng ý | k2 Đ13 NĐ 91/2020; k1 Đ9 Luật 91/2025 | chưa xét định nghĩa "xử lý dữ liệu cá nhân" trong Luật 91/2025 | **có** — cần dẫn định nghĩa "xử lý" trước khi khẳng định |
+| L2 | 2.1.1 | Câu dẫn chiếu của dự thảo không trả lời căn cứ của tin nhắn đầu tiên | nguyên văn dự thảo | — | không |
+| L3 | 2.1.2 | Điều 28 có thể không áp dụng cho doanh nghiệp tự quảng cáo | k1 Đ28; k4 Đ2 NĐ 91/2020 | chưa xét định nghĩa "kinh doanh dịch vụ quảng cáo" (Luật Quảng cáo) | **có** — cần đọc Luật Quảng cáo |
+| L4 | 2.1.3 (iii) | Chưa có số liệu công khai về tuân thủ yêu cầu từ chối | tìm 05/11/2026 | báo cáo tổng kết Bộ Công an có số liệu phản ánh? (chưa đọc hết) | không (đã nói "chưa tìm thấy") |
+Bảng này lộ 2 luận điểm vượt bằng chứng (L1, L3) mà script không bắt được → điểm Kết quả giữ 18, thêm 2 việc sửa vào danh sách.
