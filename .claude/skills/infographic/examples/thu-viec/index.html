@@ -14,14 +14,14 @@
     --rule: #dbe9df;       /* kẻ sổ kế toán */
     --rule-main: #b9d5c2;
     --ledger: #2f7d5b;     /* xanh sổ: hợp pháp, quyền lợi */
-    --ledger-soft: #e3f1e8;
+    --ledger-soft: #d6ebdd;
     --ink: #1d2b4f;        /* mực xanh đen */
     --muted: #4d5872;
     --red: #b42318;        /* sai luật */
     --red-soft: #fde7e4;
     --amber: #f5c044;      /* hành động */
     --amber-ink: #3d2e00;
-    --day: 11.2px;         /* 1 ngày trên lịch (60 ngày = 672 px = hết rãnh) */
+    --day: 10.6px;         /* 1 ngày trên lịch (60 ngày = 636 px = hết rãnh) */
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { background: #cfd6d1; font-family: 'Be Vietnam Pro', Inter, sans-serif; color: var(--ink); }
@@ -40,7 +40,7 @@
   .ico { display: inline-flex; width: 1em; height: 1em; flex: none; }
   .ico svg { width: 100%; height: 100%; }
   section { position: relative; }
-  .muc { position: absolute; left: -96px; top: 0; width: 70px; text-align: right; color: var(--ledger); font-size: 30px; font-weight: 800; line-height: 1; }
+  .muc { position: absolute; left: -104px; top: 0; width: 60px; text-align: right; color: var(--ledger); font-size: 30px; font-weight: 800; line-height: 1; }
   h2 { font-size: 24px; font-weight: 700; color: var(--ink); line-height: 1.25; margin-bottom: 10px; }
   h2 small { font-size: 15px; font-weight: 500; color: var(--muted); margin-left: 8px; background: var(--paper); padding: 0 4px; }
 
@@ -59,37 +59,40 @@
 
   /* Mục 1 — lịch thử việc (hình chính) */
   .cal { background: #fff; border: 1.5px solid var(--rule-main); border-radius: 14px; padding: 16px 18px 14px; }
-  .row { display: grid; grid-template-columns: 186px 1fr; gap: 14px; align-items: center; }
-  .row + .row { margin-top: 12px; }
+  .row { display: grid; grid-template-columns: 220px 1fr; gap: 14px; align-items: center; }
+  .row + .row { margin-top: 16px; }
   .who { display: flex; gap: 10px; align-items: center; font-size: 15.5px; font-weight: 700; line-height: 1.2; }
   .who .ico { font-size: 26px; color: var(--ledger); }
-  .who small { display: block; font-weight: 500; font-size: 13px; color: var(--muted); margin-top: 2px; }
-  .track { position: relative; height: 40px; }
-  .days { position: absolute; left: 0; top: 4px; height: 32px; border-radius: 5px; background-color: var(--ledger-soft); border: 2px solid var(--ledger);
+  .who small { display: block; font-weight: 500; font-size: 14px; color: var(--muted); margin-top: 2px; }
+  .track { position: relative; height: 44px; }
+  .days { position: absolute; left: 0; top: 4px; height: 36px; border-radius: 5px; background-color: var(--ledger-soft); border: 2px solid var(--ledger);
           background-image: repeating-linear-gradient(90deg, transparent 0 calc(var(--day) - 1.5px), #a9cdb6 calc(var(--day) - 1.5px) var(--day)); }
   .days.long { border-right: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; clip-path: polygon(0 0, 100% 0, calc(100% - 10px) 25%, 100% 50%, calc(100% - 10px) 75%, 100% 100%, 0 100%); }
   .num { position: absolute; top: 2px; font-size: 26px; font-weight: 800; color: var(--ink); white-space: nowrap; line-height: 36px; }
   .num small { font-size: 15px; font-weight: 600; color: var(--muted); }
-  .row.hot { background: #fff4d1; margin: 12px -10px 0; padding: 10px 10px; border-radius: 10px; border: 2px solid var(--amber); }
-  .row.hot .days { background-color: #fff; border-color: var(--red); background-image: repeating-linear-gradient(90deg, #fbd3cd 0 calc(var(--day) - 1.5px), var(--red) calc(var(--day) - 1.5px) var(--day)); }
-  .row.hot .who .ico { color: var(--red); }
-  .scale { display: grid; grid-template-columns: 186px 1fr; gap: 14px; margin-top: 8px; }
+  .row.hot { background: var(--ledger-soft); margin: 0 -10px 4px; padding: 10px; border-radius: 10px; border: 3px solid var(--ink); }
+  .row.hot .days { background-color: var(--ink); border-color: var(--ink); background-image: repeating-linear-gradient(90deg, transparent 0 calc(var(--day) - 1.5px), #8fa0c4 calc(var(--day) - 1.5px) var(--day)); }
+  .row.hot .who { font-size: 17px; } .row.hot .who .ico { color: var(--ink); font-size: 30px; }
+  .rails { position: absolute; left: 0; right: 0; top: 0; display: grid; gap: 3px; }
+  .rails .days { position: static; height: 12px; border-width: 1.5px; }
+  .scale { display: grid; grid-template-columns: 220px 1fr; gap: 14px; margin-top: 8px; }
   .scale div { position: relative; height: 18px; border-top: 1.5px solid var(--rule-main); }
   .scale i { position: absolute; top: -5px; height: 8px; border-left: 1.5px solid var(--muted); }
-  .scale em { position: absolute; top: 3px; transform: translateX(-50%); font-style: normal; font-size: 12.5px; color: var(--muted); }
+  .scale em { position: absolute; top: 3px; transform: translateX(-50%); font-style: normal; font-size: 15px; font-weight: 700; color: var(--muted); }
   .rules { display: flex; gap: 10px; margin-top: 14px; }
   .chip { display: flex; gap: 8px; align-items: center; background: var(--ledger-soft); border: 1.5px solid var(--rule-main); border-radius: 999px; padding: 6px 14px 6px 8px; font-size: 15px; font-weight: 600; }
   .chip .ico { font-size: 20px; color: var(--ledger); }
 
   /* Mục 2 + 3 */
-  .pair { display: grid; grid-template-columns: 1.15fr 1fr; gap: 14px; }
+  .pair { display: grid; grid-template-columns: 1.15fr 1fr; gap: 14px; align-items: stretch; }
+  .pair > div { display: flex; flex-direction: column; } .pair .box { flex: 1; }
   .box { background: #fff; border: 1.5px solid var(--rule-main); border-radius: 14px; padding: 14px 16px; }
   .pay { position: relative; height: 54px; margin: 30px 0 22px; }
   .pay .full { position: absolute; inset: 0; border: 2px dashed var(--muted); border-radius: 8px; }
   .pay .min { position: absolute; left: 0; top: 0; bottom: 0; width: 85%; background: var(--ledger-soft); border: 2px solid var(--ledger); border-radius: 8px; display: flex; align-items: center; gap: 8px; padding-left: 12px; font-weight: 800; font-size: 22px; color: var(--ledger); }
   .pay .min .ico { font-size: 26px; }
   .pay em { position: absolute; top: -24px; font-style: normal; font-size: 14px; font-weight: 700; color: var(--muted); }
-  .pay .gap { position: absolute; right: 0; top: 0; bottom: 0; width: 15%; display: flex; align-items: center; justify-content: center; font-size: 13px; color: var(--muted); font-weight: 600; text-align: center; line-height: 1.15; }
+  .pay .gap { position: absolute; right: 0; top: 0; bottom: 0; width: 15%; display: flex; align-items: center; justify-content: center; font-size: 14px; color: var(--muted); font-weight: 600; text-align: center; line-height: 1.15; }
   .eg { font-size: 15.5px; line-height: 1.4; }
   .eg b { font-size: 17px; }
   .flow3 { display: grid; grid-template-columns: 1fr; gap: 8px; }
@@ -98,15 +101,17 @@
   .step b { display: block; font-size: 16px; }
 
   /* Mục 4 — 4 câu nhà tuyển dụng hay nói */
-  .says { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 14px; }
-  .say { position: relative; display: grid; grid-template-columns: 60px 1fr; gap: 10px; align-items: start; }
-  .say img { width: 60px; height: 60px; border-radius: 50%; background: var(--ledger-soft); border: 2px solid var(--rule-main); }
+  .says { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 14px; }
+  .owner { display: flex; gap: 12px; align-items: center; margin-bottom: 14px; }
+  .owner img { width: 64px; height: 64px; border-radius: 50%; background: var(--ledger-soft); border: 2px solid var(--rule-main); }
+  .owner h2 { margin: 0; }
+  .say { position: relative; }
   .bubble { position: relative; background: #fff; border: 1.5px solid var(--rule-main); border-radius: 14px; padding: 10px 12px 10px; }
-  .bubble::before { content: ""; position: absolute; left: -9px; top: 20px; width: 14px; height: 14px; background: #fff; border-left: 1.5px solid var(--rule-main); border-bottom: 1.5px solid var(--rule-main); transform: rotate(45deg); }
+  
   .bubble q { display: block; font-size: 17px; font-weight: 600; line-height: 1.3; quotes: "“" "”"; }
   .verdict { display: flex; gap: 10px; align-items: center; margin-top: 8px; }
   .stamp { flex: none; color: var(--red); border: 2.5px solid var(--red); border-radius: 6px; padding: 2px 8px; font-weight: 800; font-size: 14px; transform: rotate(-4deg); }
-  .why { font-size: 14px; line-height: 1.3; color: var(--muted); }
+  .why { font-size: 14.5px; line-height: 1.3; color: var(--muted); }
   .why b { color: var(--ink); }
 
   /* Mục 5 */
@@ -115,7 +120,9 @@
   .act .pic { width: 50px; height: 50px; border-radius: 14px; background: var(--amber); color: var(--amber-ink); display: flex; align-items: center; justify-content: center; font-size: 26px; flex: none; }
   .act b { display: block; font-size: 16.5px; margin-bottom: 1px; }
 
-  .sign { margin-top: auto; text-align: right; font-size: 13.5px; color: var(--muted); }
+  .act.note { background: #fff7c2; border: 0; border-radius: 3px; transform: rotate(-1.2deg); box-shadow: 0 6px 10px -6px rgba(60,40,0,.35); }
+  .act.note .pic { background: var(--ink); color: #fff; }
+  .sign { margin-top: auto; text-align: right; font-size: 14px; color: var(--muted); }
   .sign span { background: var(--paper); padding: 0 4px; }
 </style>
 </head>
@@ -128,40 +135,39 @@
       <h1>Đi làm thêm: thử việc thế nào mới đúng luật?</h1>
       <div class="fields">
         <span>Dành cho: <b>sinh viên đi làm thêm</b></span>
-        <span>Căn cứ: <b>Bộ luật Lao động 2019</b></span>
+        <span>Căn cứ: <b>Bộ luật Lao động 2019 (hợp nhất 2025)</b></span>
       </div>
     </div>
     <div class="photo" aria-hidden="true">
       <div class="hole"></div>
-      <img src="../../assets/avatars/notionists-Linh.svg" alt="">
+      <img src="../../assets/avatars/notionists-Vy.svg" alt="">
       <div class="tag">NHÂN VIÊN THỬ VIỆC</div>
     </div>
   </header>
 
   <section>
     <div class="muc" data-margin>1</div>
-    <h2>Được thử việc tối đa bao lâu? <small>mỗi ô = 1 ngày · Điều 25</small></h2>
+    <h2>Được thử việc tối đa bao lâu? <small>mỗi ô một ngày (Điều 25)</small></h2>
     <div class="cal">
-      <div class="row">
-        <div class="who"><span class="ico" data-icon="briefcase"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" /> <rect width="20" height="14" x="2" y="6" rx="2" /> </svg></span><div>Quản lý doanh nghiệp<small>giám đốc, thành viên HĐQT…</small></div></div>
-        <div class="track"><div class="days long" style="width:100%"></div><span class="num" style="right:22px; background:var(--ledger-soft); padding:0 8px; top:4px; line-height:32px;">180 <small>ngày (gấp 3 rãnh)</small></span></div>
+      <div class="row hot">
+        <div class="who"><span class="ico" data-icon="coffee"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M10 2v2" /> <path d="M14 2v2" /> <path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1" /> <path d="M6 2v2" /> </svg></span><div>Việc phổ thông, không cần bằng cấp<small>thường gặp: phục vụ quán, bán hàng</small></div></div>
+        <div class="track"><div class="days" style="width:calc(var(--day)*6)"></div><span class="num" style="left:calc(var(--day)*6 + 12px)">6 <small>ngày làm việc</small></span></div>
       </div>
       <div class="row">
-        <div class="who"><span class="ico" data-icon="graduation-cap"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" /> <path d="M22 10v6" /> <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" /> </svg></span><div>Cần trình độ<br>cao đẳng trở lên</div></div>
-        <div class="track"><div class="days" style="width:calc(var(--day)*60)"></div><span class="num" style="right:10px; background:var(--ledger-soft); padding:0 8px; top:4px; line-height:32px;">60 <small>ngày</small></span></div>
-      </div>
-      <div class="row">
-        <div class="who"><span class="ico" data-icon="wrench"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" /> </svg></span><div>Trung cấp, công nhân kỹ thuật, nhân viên nghiệp vụ</div></div>
+        <div class="who"><span class="ico" data-icon="wrench"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" /> </svg></span><div>Trung cấp, công nhân kỹ thuật, nhân&nbsp;viên&nbsp;nghiệp&nbsp;vụ</div></div>
         <div class="track"><div class="days" style="width:calc(var(--day)*30)"></div><span class="num" style="left:calc(var(--day)*30 + 12px)">30 <small>ngày</small></span></div>
       </div>
-      <div class="row hot">
-        <div class="who"><span class="ico" data-icon="coffee"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M10 2v2" /> <path d="M14 2v2" /> <path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1" /> <path d="M6 2v2" /> </svg></span><div>Công việc khác<small>thường gặp: phục vụ quán, bán hàng</small></div></div>
-        <div class="track"><div class="days" style="width:calc(var(--day)*6)"></div><span class="num" style="left:calc(var(--day)*6 + 12px)">6 <small>ngày làm việc — chưa tới 1 tuần rưỡi</small></span></div>
+      <div class="row">
+        <div class="who"><span class="ico" data-icon="graduation-cap"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" /> <path d="M22 10v6" /> <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" /> </svg></span><div>Cần trình độ cao&nbsp;đẳng&nbsp;trở&nbsp;lên</div></div>
+        <div class="track"><div class="days" style="width:calc(var(--day)*60)"></div><span class="num" style="right:10px; background:var(--ledger-soft); padding:0 8px; top:6px; line-height:32px;">60 <small>ngày</small></span></div>
       </div>
-      <div class="scale" aria-hidden="true" data-free><span></span><div><i style="left:0"></i><em style="left:0">0</em><i style="left:calc(var(--day)*6)"></i><em style="left:calc(var(--day)*6)">6</em><i style="left:calc(var(--day)*30)"></i><em style="left:calc(var(--day)*30)">30</em><i style="left:calc(var(--day)*60)"></i><em style="left:calc(var(--day)*60 - 10px)">60 ngày</em></div></div>
+      <div class="row">
+        <div class="who"><span class="ico" data-icon="briefcase"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" /> <rect width="20" height="14" x="2" y="6" rx="2" /> </svg></span><div>Quản lý doanh&nbsp;nghiệp<small>giám đốc, thành viên hội đồng quản trị</small></div></div>
+        <div class="track"><div class="rails"><div class="days"></div><div class="days"></div><div class="days"></div></div><span class="num" style="right:10px; background:#fff; padding:0 8px; top:4px; line-height:36px; border-radius:6px;">60 + 60 + 60 = 180 <small>ngày</small></span></div>
+      </div>
+      <div class="scale" aria-hidden="true" data-free><span></span><div><i style="left:0"></i><em style="left:0">0</em><i style="left:calc(var(--day)*6)"></i><em style="left:calc(var(--day)*6)">6</em><i style="left:calc(var(--day)*30)"></i><em style="left:calc(var(--day)*30)">30</em><i style="left:calc(var(--day)*60)"></i><em style="left:calc(var(--day)*60)">60</em></div></div>
       <div class="rules">
-        <span class="chip"><span class="ico" data-icon="repeat"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="m17 2 4 4-4 4" /> <path d="M3 11v-1a4 4 0 0 1 4-4h14" /> <path d="m7 22-4-4 4-4" /> <path d="M21 13v1a4 4 0 0 1-4 4H3" /> </svg></span>Chỉ thử việc 1 lần cho 1 công việc</span>
-        <span class="chip"><span class="ico" data-icon="calendar-days"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M8 2v4" /> <path d="M16 2v4" /> <rect width="18" height="18" x="3" y="4" rx="2" /> <path d="M3 10h18" /> <path d="M8 14h.01" /> <path d="M12 14h.01" /> <path d="M16 14h.01" /> <path d="M8 18h.01" /> <path d="M12 18h.01" /> <path d="M16 18h.01" /> </svg></span>Hợp đồng dưới 1 tháng: không thử việc (Điều 24)</span>
+        <span class="chip"><span class="ico" data-icon="calendar-days"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M8 2v4" /> <path d="M16 2v4" /> <rect width="18" height="18" x="3" y="4" rx="2" /> <path d="M3 10h18" /> <path d="M8 14h.01" /> <path d="M12 14h.01" /> <path d="M16 14h.01" /> <path d="M8 18h.01" /> <path d="M12 18h.01" /> <path d="M16 18h.01" /> </svg></span>Hợp đồng dưới 1 tháng thì không được thử việc (Điều 24)</span>
       </div>
     </div>
   </section>
@@ -175,17 +181,17 @@
           <div class="pay" data-free>
             <div class="full"></div>
             <div class="min"><span class="ico" data-icon="banknote"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <rect width="20" height="12" x="2" y="6" rx="2" /> <circle cx="12" cy="12" r="2" /> <path d="M6 12h.01M18 12h.01" /> </svg></span>ít nhất 85%</div>
-            <div class="gap">≤ 15%</div>
+            <div class="gap">thiếu tối đa 15%</div>
             <em style="left:0">0</em><em style="right:0">100% lương công việc đó</em>
           </div>
-          <p class="eg">Lương chính thức <b>5 triệu</b> → thử việc ít nhất <b>4,25 triệu</b>. Không lương là sai luật.</p>
+          <p class="eg">Lương chính thức <b>5 triệu</b> → thử việc ít nhất <b>4,25 triệu</b>. Thử việc không lương là sai luật.</p>
         </div>
       </div>
       <div>
         <h2>Trong và sau thử việc <small>Điều 27</small></h2>
         <div class="box flow3">
-          <div class="step"><span class="pic"><span class="ico" data-icon="door-open"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M13 4h3a2 2 0 0 1 2 2v14" /> <path d="M2 20h3" /> <path d="M13 20h9" /> <path d="M10 12v.01" /> <path d="M13 4.562v16.157a1 1 0 0 1-1.242.97L5 20V5.562a2 2 0 0 1 1.515-1.94l4-1A2 2 0 0 1 13 4.561Z" /> </svg></span></span><div><b>Mỗi bên được nghỉ ngay</b>không cần báo trước, không phải bồi thường</div></div>
-          <div class="step"><span class="pic"><span class="ico" data-icon="bell-ring"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" /> <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" /> <path d="M4 2C2.8 3.7 2 5.7 2 8" /> <path d="M22 8c0-2.3-.8-4.3-2-6" /> </svg></span></span><div><b>Hết hạn: chủ phải báo kết quả</b>đạt thì làm tiếp theo hợp đồng lao động</div></div>
+          <div class="step"><span class="pic"><span class="ico" data-icon="door-open"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M13 4h3a2 2 0 0 1 2 2v14" /> <path d="M2 20h3" /> <path d="M13 20h9" /> <path d="M10 12v.01" /> <path d="M13 4.562v16.157a1 1 0 0 1-1.242.97L5 20V5.562a2 2 0 0 1 1.515-1.94l4-1A2 2 0 0 1 13 4.561Z" /> </svg></span></span><div><b>Hai bên đều được hủy ngay</b>không báo trước, không bồi thường; ngày đã làm vẫn được trả lương</div></div>
+          <div class="step"><span class="pic"><span class="ico" data-icon="bell-ring"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" /> <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" /> <path d="M4 2C2.8 3.7 2 5.7 2 8" /> <path d="M22 8c0-2.3-.8-4.3-2-6" /> </svg></span></span><div><b>Hết hạn: chủ phải báo kết quả</b>đạt thì làm tiếp hoặc ký hợp đồng lao động; không đạt thì chấm dứt</div></div>
         </div>
       </div>
     </div>
@@ -193,12 +199,12 @@
 
   <section>
     <div class="muc" data-margin>3</div>
-    <h2>Chủ quán nói vậy, có đúng không?</h2>
+    <div class="owner"><img src="../../assets/avatars/notionists-Khang.svg" alt=""><h2>Chủ quán nói vậy, có đúng không?</h2></div>
     <div class="says">
-      <div class="say"><img src="../../assets/avatars/notionists-Chu.svg" alt=""><div class="bubble"><q>Thử việc 1 tháng, không lương nhé.</q><div class="verdict"><span class="stamp">SAI LUẬT</span><span class="why">Phục vụ quán: <b>tối đa 6 ngày</b>, lương <b>≥ 85%</b></span></div></div></div>
-      <div class="say"><img src="../../assets/avatars/notionists-Chu.svg" alt=""><div class="bubble"><q>Để lại căn cước gốc cho quán giữ.</q><div class="verdict"><span class="stamp">SAI LUẬT</span><span class="why">Không được giữ <b>bản chính</b> giấy tờ tùy thân, văn bằng (Điều 17)</span></div></div></div>
-      <div class="say"><img src="../../assets/avatars/notionists-Chu.svg" alt=""><div class="bubble"><q>Cọc 1 triệu, nghỉ ngang là mất.</q><div class="verdict"><span class="stamp">SAI LUẬT</span><span class="why">Không được bắt <b>đặt tiền, tài sản</b> để bảo đảm làm việc (Điều 17)</span></div></div></div>
-      <div class="say"><img src="../../assets/avatars/notionists-Chu.svg" alt=""><div class="bubble"><q>Chưa ổn, thử việc thêm tháng nữa.</q><div class="verdict"><span class="stamp">SAI LUẬT</span><span class="why">Mỗi công việc <b>chỉ thử 1 lần</b> (Điều 25)</span></div></div></div>
+      <div class="say"><div class="bubble"><q>Thử việc 1 tháng, không lương nhé.</q><div class="verdict"><span class="stamp">SAI LUẬT</span><span class="why">Không lương là sai: phải <b>≥&nbsp;85%</b>. Việc phổ thông: <b>tối đa 6 ngày làm việc</b></span></div></div></div>
+      <div class="say"><div class="bubble"><q>Để lại căn cước gốc cho quán giữ.</q><div class="verdict"><span class="stamp">SAI LUẬT</span><span class="why">Không được giữ <b>bản chính</b> giấy tờ tùy thân, văn bằng (Điều 17)</span></div></div></div>
+      <div class="say"><div class="bubble"><q>Cọc 1 triệu, nghỉ ngang là mất.</q><div class="verdict"><span class="stamp">SAI LUẬT</span><span class="why">Cấm bắt <b>đặt cọc</b> (Điều 17). Đang thử việc thì nghỉ ngay vẫn <b>đúng luật</b></span></div></div></div>
+      <div class="say"><div class="bubble"><q>Chưa ổn, thử việc thêm tháng nữa.</q><div class="verdict"><span class="stamp">SAI LUẬT</span><span class="why">Mỗi công việc <b>chỉ thử 1 lần</b> (Điều 25)</span></div></div></div>
     </div>
   </section>
 
@@ -208,7 +214,7 @@
     <div class="acts">
       <div class="act"><span class="pic"><span class="ico" data-icon="file-text"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" /> <path d="M14 2v4a2 2 0 0 0 2 2h4" /> <path d="M10 9H8" /> <path d="M16 13H8" /> <path d="M16 17H8" /> </svg></span></span><div><b>Hỏi rõ bằng tin nhắn</b>thời gian thử việc, mức lương</div></div>
       <div class="act"><span class="pic"><span class="ico" data-icon="id-card"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M16 10h2" /> <path d="M16 14h2" /> <path d="M6.17 15a3 3 0 0 1 5.66 0" /> <circle cx="9" cy="11" r="2" /> <rect x="2" y="5" width="20" height="14" rx="2" /> </svg></span></span><div><b>Chỉ đưa bản sao</b>không giao giấy tờ gốc, không nộp cọc</div></div>
-      <div class="act"><span class="pic"><span class="ico" data-icon="clipboard-list"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <rect width="8" height="4" x="8" y="2" rx="1" ry="1" /> <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" /> <path d="M12 11h4" /> <path d="M12 16h4" /> <path d="M8 11h.01" /> <path d="M8 16h.01" /> </svg></span></span><div><b>Tự ghi ngày công</b>chụp lịch làm, lưu tin nhắn</div></div>
+      <div class="act note"><span class="pic"><span class="ico" data-icon="calendar-check"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M8 2v4" /> <path d="M16 2v4" /> <rect width="18" height="18" x="3" y="4" rx="2" /> <path d="M3 10h18" /> <path d="m9 16 2 2 4-4" /> </svg></span></span><div><b>Tự ghi ngày công</b>bị cho nghỉ vẫn đòi đủ lương ngày đã làm; cấm phạt tiền, cắt lương (Điều 127)</div></div>
     </div>
   </section>
 

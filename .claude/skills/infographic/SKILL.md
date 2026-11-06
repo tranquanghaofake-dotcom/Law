@@ -167,6 +167,9 @@ Ra `infographic.png` (xem) và `infographic.pdf` (**A4 đúng khổ, đem in**).
    - [ ] Thứ tự đọc khớp số mục; khoảng trắng giữa khối > trong khối.
    - [ ] Mỗi khối ≤ 25 từ; không chữ xuống dòng xấu (1 chữ mồ côi, nhãn bị bẻ đôi).
    - [ ] Mọi con số/ngưỡng có nhãn giải thích (không có "61%" trơ trọi).
+   - [ ] Hình có tỉ lệ thì tỉ lệ phải đúng (dải 180 ngày không được dài bằng dải 60); hai đơn vị khác nhau ("ngày" và "ngày làm việc") phải ghi rõ, không ngầm so sánh.
+   - [ ] Nhóm của người đọc đặt **đầu tiên** trong hình chính; màu nhấn của nhóm đó không trùng màu "sai luật".
+   - [ ] Nhân vật hợp vai (sinh viên trẻ, chủ quán lớn tuổi hơn); không lặp một nhân vật nhiều lần vô ích.
    - [ ] Có khối hành động cụ thể; mọi dấu `*` có chú thích.
    - [ ] Không chữ đè vật trang trí (lề, lỗ gáy, nét kẻ).
 3. **Phản biện độc lập** (khi được yêu cầu hoặc với bài quan trọng): giao 2 người/agent đọc **chỉ PNG + nguon.md**, không kèm kết luận của mình — một người soát luật (đối chiếu nguyên văn), một người soát thiết kế. Tìm "ngách": chỗ người đọc điển hình hiểu sai, ngoại lệ bị bỏ, nhóm mặc định sai.
