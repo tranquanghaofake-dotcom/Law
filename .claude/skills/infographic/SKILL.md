@@ -77,7 +77,7 @@ Chạy chen giữa pha 1 và pha 4. Ghi mọi quyết định vào `ke-hoach.md`
 **Bài học từ lần chạy thử đầu (Incoterms, 11/2026)**
 - Đề tài quá rộng ("thương mại quốc tế") → bước đầu tiên là **thu hẹp** về 1 câu hỏi có dữ liệu hình dạng rõ; ghi lý do thu hẹp vào brief.
 - Font "lạ" phải render thử dấu tiếng Việt trước khi chọn (đã loại Stardos/Saira vì không hợp, chọn Big Shoulders Stencil).
-- Không nối lệnh render với `| head`: cắt pipe làm script dừng trước khi ghi PDF.
+- Nối lệnh render với `| head` từng làm script dừng trước khi ghi PDF — đã vá trong `render.mjs` (bỏ qua lỗi pipe), nhưng vẫn nên đọc toàn bộ đầu ra.
 - Chữ nhạt trên nền màu đậm của style mới hay trượt tương phản → chạy `contrast.mjs` ngay lần render đầu.
 
 **Bài học từ phản biện thiết kế (2 agent, Incoterms)**

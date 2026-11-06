@@ -5,6 +5,9 @@ import { existsSync } from 'node:fs';
 import { resolve, dirname, join } from 'node:path';
 import { pathToFileURL } from 'node:url';
 
+// Không chết khi đầu ra bị cắt (vd. `| head`): vẫn ghi đủ PNG và PDF.
+process.stdout.on('error', () => {});
+process.stderr.on('error', () => {});
 const require = createRequire(import.meta.url);
 const { chromium } = require('playwright');
 
