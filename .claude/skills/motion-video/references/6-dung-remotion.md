@@ -52,6 +52,8 @@ Các trường:
   - `"auto"`: cảnh đầu cắt thẳng; đầu cụm nhạc thì nện (`zoom`); còn lại `whip`;
   - đặt tay: `cut` / `whip` / `zoom` / `flood` / `iris`.
 - **`props.hits`:** mảng phách trong cảnh để thêm cú nện (loé, sóng, rung, tách màu chữ). Ví dụ: số chuỗi đổi, nhận chức.
+- **`theme.cutMark`** `{ text, color, ink }`: "mắt cắt" ở đầu mỗi cụm nhạc bằng dấu thương hiệu (vd. § son), phủ khung rồi mở ra cảnh mới. Đây là chuyển cảnh có chữ ký riêng, thay cho light leak/glow. Không đặt thì đầu cụm chỉ có nện.
+- **Mốc âm:** `at` âm (vd. `-2.2`) làm chữ đã đáp xong trước khung 0. Dùng cho dòng hook, để ảnh bìa không bao giờ trống.
 - **Font** (đều có bộ chữ tiếng Việt): `be-vietnam-pro`, `noto-serif-display`, `inter`, `montserrat`, `lexend`, `playfair-display`.
 
 Ví dụ đầy đủ một storyboard thật (16:9, 7 cảnh): `examples/giai-thich-dat-coc-16x9/storyboard.json`.
@@ -62,14 +64,14 @@ Ví dụ đầy đủ một storyboard thật (16:9, 7 cảnh): `examples/giai-t
 |---|---|---|
 | `TitleSlam` | hook, chuyển chương | `lines[{text, at, size:"hero"\|"title", color, glitch}]`, `sub{text,at}`, `align` |
 | `LogoReveal` | lộ diện tên | `mark{text\|image}`, `markColor`, `name`, `tagline`, `art` (Media: tranh/ảnh thật) |
-| `StatCount` | con số thật đếm lên | `kicker`, `stats[{value,label,at}]`, `ring[Media ảnh]` (vòng 3D) |
+| `StatCount` | con số thật đếm lên; **một số duy nhất** thì chữ số khổng lồ, căn giữa ("một con số đáp xuống") | `kicker`, `stats[{value,from,label,at}]`, `sub{text,at}`, `ring[Media ảnh]` (vòng 3D) |
 | `KnowledgeCard` | một khái niệm/ví dụ cụ thể | `kicker`, `term`, `gist`, `branches[{label,icon,children,tone}]`, `hook`, `qa{q,a}`, `cite`, `at{gist,branches,hook,qa,answer}` |
 | `FeatureSteps` | các bước/bậc | `kicker`, `title`, `accentWords`, `steps[{label,sub,icon}]`, `start`, `every`, `note{text,at}` |
-| `DeviceDemo` | UI thật trong máy | `device`, `media`, `poster`, `syncSec`, `syncBeat`, `chips[{text,at,x,y,tone}]`, `title`, `kicker` |
-| `MediaHero` | cú chốt toàn khung (animation thật) | `media`, `poster`, `syncSec`, `hitBeat`, `focus{x,y}`, `lines[{text,at,color}]`, `linesOut`, `darkIntroSec` |
+| `DeviceDemo` | UI thật trong máy | `device`, `media`, `poster`, `syncSec`, `syncBeat`, `chips[{text,at,x,y,tone}]`, `title`, `kicker`, `zoomAt`/`zoom`/`zoomFocus` (phóng máy; kiểm không che tiêu đề) |
+| `MediaHero` | cú chốt toàn khung (animation thật) | `media`, `poster`, `syncSec`, `hitBeat`, `focus{x,y}`, `pushIn` (đẩy máy vào tiêu điểm 2 phách trước cú nện rồi lùi ra, vd. 2,3), `cutBottom` (px cắt đáy, vd. nút của app ngoài vùng an toàn), `lines[{text,at,color}]`, `linesOut`, `darkIntroSec` |
 | `CardCycle` | vài trạng thái/biến thể lật theo phách | `kicker`, `items[{image,label,color}]`, `every` |
-| `Ladder` | thăng tiến → toả nhánh → chốt | `titles{climb,fan,finale}`, `climb[{image,label}]`, `fan[{image,label,sub}]`, `fanAt`, `finale{media,at}`, `note` |
-| `LineReveal` | đường số liệu vẽ dần | `title`, `points[[x,y]]`, `marks[{x,label}]`, `captions[]`, `drawBeats` |
+| `Ladder` | thăng tiến → toả nhánh → chốt | `titles{climb,fan,finale}`, `climb[{image,label}]`, `fan[{image,label,sub}]`, `fanAt`, `finale{media,at}`, `finaleLabel` (nện dưới vật chốt), `aspect` (cao/rộng ảnh), `note` |
+| `LineReveal` | đường số liệu vẽ dần | `title`, `points[[x,y]]`, `marks[{x,label}]`, `captions[]`, `drawBeats`, `axisX`/`axisY` (nhãn trục: người lạ cần biết đang xem gì) |
 | `EndCard` | dấu thương hiệu + kêu gọi | `mark`, `name`, `tags[]`, `cta`, `url`, `disclaimer` |
 
 `Media` = `{ "kind": "image"|"video", "src": "cap/x.mp4", "alpha": false }`. `src` tính từ `public/`.

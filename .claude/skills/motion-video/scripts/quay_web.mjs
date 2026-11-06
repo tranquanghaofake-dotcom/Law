@@ -9,6 +9,7 @@
 //     "alpha": false, "fullPage": false, "reducedMotion": false,
 //     "waitFor": "text=Câu 1",                           // bộ chọn Playwright phải xuất hiện trước khi quay
 //     "init": [{ "type": "eval", "js": "..." }],         // chạy trước khi quay (vd. nạp dữ liệu demo vào IndexedDB rồi reload)
+//     "pre": [{ "type": "click", "target": "text=…", "wait": 0.8 }],   // thao tác trước khi quay (đi tới đúng màn), không ghi hình
 //     "actions": [{ "at": 0.6, "type": "click", "target": "text=Bảo đảm" },
 //                 { "at": 0.4, "type": "type", "target": "input", "text": "dat coc", "every": 0.12 }] }
 //
@@ -83,6 +84,14 @@ for (const j of jobs) {
   for (let i = 0; i < 80; i++) {
     if (j.sec) await page.clock.runFor(100); else await page.waitForTimeout(100);
     if (!j.waitFor || (await page.locator(j.waitFor).count())) break;
+  }
+  // "pre": thao tác TRƯỚC khi quay (vd. trả lời các câu trước để tới câu cần quay); mỗi bước chạy rồi cho đồng hồ tiến `wait` giây
+  for (const a of j.pre ?? []) {
+    if (a.type === 'click') await page.locator(a.target).first().click();
+    if (a.type === 'press') await page.keyboard.press(a.key);
+    if (a.type === 'eval') await page.evaluate(a.js);
+    const ms = (a.wait ?? 0.8) * 1000;
+    if (j.sec) await page.clock.runFor(ms); else await page.waitForTimeout(ms);
   }
   await page.evaluate(() => document.fonts.ready);
   const target = j.element ? page.locator(j.element).first() : page;

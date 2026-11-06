@@ -38,6 +38,9 @@ Bước 3: lướt các tờ một lượt cho mỗi câu hỏi:
 | Nhịp | cú nện có trùng đầu cụm, sự kiện trong bản quay có trúng phách? (xem `cat.png` + mốc giây) |
 | Sự thật | mọi chữ/số trên hình có dòng tương ứng trong `FACTS.md` |
 
+### Phản biện độc lập (khi người dùng cho dùng subagent)
+Giao cho **một** subagent chỉ `SPEC.md`, `STORYLINES.md` và các tờ ảnh, **không** đưa nhận xét của mình (tránh dẫn dắt). Yêu cầu trả lỗi dạng `khung · chỗ · lỗi → sửa`, xếp P0/P1/P2, cộng 3 đề xuất "ngách". Mình ghi nhận xét tự soát **trước** khi đọc kết quả, rồi gộp. Nhận xét nào không làm được (vd. phóng bản quay quá độ phân giải) thì nói lý do và làm cách thay thế. Sau khi sửa, tự soát lại: sửa một chỗ hay làm vỡ chỗ khác (phóng máy che tiêu đề, nhãn mới đè chữ cũ).
+
 ## 3. Ghi lỗi và sửa
 
 Mỗi lỗi một dòng: `t=4,2 s · ở đâu · lỗi → sửa chính xác · giữ nguyên gì`.

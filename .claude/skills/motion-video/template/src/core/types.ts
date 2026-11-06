@@ -14,6 +14,9 @@ export type Theme = {
   ui: FontKey; // font chữ thường
   /** Trang trí bị CẤM mặc định (dấu hiệu video do máy tạo); chỉ bật khi chất liệu thương hiệu có thật. */
   decor?: { particles?: boolean; rays?: boolean; glow?: boolean };
+  /** "Mắt cắt" ở đầu mỗi cụm nhạc bằng dấu thương hiệu (vd. { text: "§", color: "#b3261e" }): phủ khung rồi mở ra cảnh mới.
+   *  Không đặt → đầu cụm chỉ có nện (zoom) + rung + tách màu chữ. */
+  cutMark?: { text: string; color: string; ink?: string };
 };
 
 export type Music = {

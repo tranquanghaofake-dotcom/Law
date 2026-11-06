@@ -60,7 +60,14 @@ def main():
             continue
         dur = s["bars"] * 4 * spb
         # thời gian đọc: 0,5 s + 0,3 s/từ cho chữ cần đọc
-        words = sum(len(t.split()) for t in texts(s["props"]))
+        # cảnh hiện LẦN LƯỢT từng mục (mỗi phách một thẻ/ảnh): chỉ tính mục dài nhất + phần chữ cố định, không cộng dồn
+        seq = {"CardCycle": "items", "Ladder": "climb"}.get(s["type"])
+        if seq and isinstance(s["props"].get(seq), list):
+            fixed = {k: v for k, v in s["props"].items() if k not in (seq, "fan")}
+            longest = max((sum(len(t.split()) for t in texts(it)) for it in s["props"][seq]), default=0)
+            words = sum(len(t.split()) for t in texts(fixed)) + longest
+        else:
+            words = sum(len(t.split()) for t in texts(s["props"]))
         need = 0.5 + 0.3 * words
         if need > dur * 1.15:
             canh.append(f"{tag}: {words} chữ cần ~{need:.1f} s để đọc nhưng cảnh dài {dur:.1f} s → bớt chữ hoặc thêm ô nhịp")

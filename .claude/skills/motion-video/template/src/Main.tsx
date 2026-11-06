@@ -1,10 +1,10 @@
 // Ghép video từ storyboard.json: nền + cảnh + lớp hiệu ứng theo nhạc + âm thanh.
 import React from "react";
-import { AbsoluteFill, interpolate, Sequence, staticFile, useCurrentFrame } from "remotion";
+import { AbsoluteFill, Easing, interpolate, Sequence, staticFile, useCurrentFrame } from "remotion";
 import { Audio } from "@remotion/media";
-import { clamp, invert, SceneCtx, T, ThemeCtx } from "./core/look";
-import { Grain, Ground, LightLeak, SceneShell, Shockwave, WHIP_FRAMES } from "./core/fx";
-import { b, beatPulse, FPB, GAPS, PHRASES, PLACED, rand, SB, TOTAL } from "./core/timeline";
+import { clamp, DISPLAY, invert, SceneCtx, T, ThemeCtx } from "./core/look";
+import { Grain, Ground, SceneShell, Shockwave, WHIP_FRAMES } from "./core/fx";
+import { b, beatPulse, FPB, GAPS, H, PHRASES, PLACED, rand, SB, TOTAL, W } from "./core/timeline";
 import { SCENE_VIEWS } from "./scenes";
 
 const isDark = (bg?: string) => bg === "dark" || (!!bg && /^#/.test(bg) && lum(bg) < 0.35) || (!bg && lum(T.ground) < 0.35);
@@ -19,6 +19,23 @@ const darkAt = (frame: number) => {
   return p ? isDark(SB.scenes[p.index].bg) : false;
 };
 
+/** "Mắt cắt" bằng dấu thương hiệu (theme.cutMark): phủ khung 8 khung trước đầu cụm, mở ra cảnh mới trong 16 khung (thay light leak/glow). */
+const SealCut: React.FC<{ at: number }> = ({ at }) => {
+  const frame = useCurrentFrame();
+  const mark = T.cutMark;
+  const t = frame - at;
+  if (!mark || t < -8 || t > 16) return null;
+  const R = Math.hypot(W, H) * 0.6;
+  const r = t < 0 ? interpolate(t, [-8, 0], [0, R], { easing: Easing.in(Easing.cubic) }) : interpolate(t, [0, 16], [R, 0], { easing: Easing.out(Easing.cubic) });
+  const glyph = interpolate(t, [-8, -2, 4, 12], [0.4, 1, 1, 0], clamp);
+  return (
+    <AbsoluteFill style={{ pointerEvents: "none", alignItems: "center", justifyContent: "center" }}>
+      <div style={{ position: "absolute", left: W / 2 - r, top: H * 0.42 - r, width: r * 2, height: r * 2, borderRadius: "50%", background: mark.color }} />
+      <div style={{ position: "absolute", top: H * 0.42 - Math.min(W, H) * 0.155, fontFamily: DISPLAY, fontWeight: 800, fontSize: Math.min(W, H) * 0.31, color: mark.ink ?? T.ground, opacity: glyph, scale: interpolate(t, [-8, 0, 16], [1.6, 1, 0.6], clamp), lineHeight: 1 }}>{mark.text}</div>
+    </AbsoluteFill>
+  );
+};
+
 const BeatFx: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const frame = useCurrentFrame();
   const pulse = beatPulse(frame);
@@ -27,21 +44,15 @@ const BeatFx: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const gapP = gap ? (frame - gap[0]) / (gap[1] - gap[0]) : 0;
   const shake = hit * 26 + gapP * 9;
   const f = Math.floor(frame / 2);
-  const downbeat = Math.floor(frame / FPB) % 4 === 0 ? pulse : 0;
-  const rgb = hit * 14 + downbeat * 4 + gapP * 8;
+  const rgb = hit * 10 + gapP * 6; // tách màu chỉ ở cú nện/bass tắt (không đập theo mọi phách)
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: "#000" }}>
       <AbsoluteFill style={{ scale: 1 + pulse * 0.025 + hit * 0.05, translate: `${(rand(f) - 0.5) * shake}px ${(rand(f + 99) - 0.5) * shake}px`, filter: pulse + hit > 0.03 ? `contrast(${(1 + pulse * 0.06 + hit * 0.1).toFixed(3)})` : undefined, ["--rgb" as string]: rgb.toFixed(1) }}>
         {children}
       </AbsoluteFill>
-      <AbsoluteFill style={{ background: darkAt(frame) ? "#fff" : T.accent, mixBlendMode: "screen", opacity: hit * (darkAt(frame) ? 0.45 : 0.25), pointerEvents: "none" }} />
+      {PHRASES.map((p) => <SealCut key={p} at={p} />)}
       <AbsoluteFill style={{ background: "radial-gradient(circle, transparent 30%, #000 85%)", opacity: gapP * 0.8, pointerEvents: "none" }} />
-      {HITS.map((h, i) => (
-        <React.Fragment key={h}>
-          <Shockwave at={h} c={darkAt(h) ? "#ffffff" : T.accent} />
-          {darkAt(h) && <LightLeak at={h - 6} seed={i + 2} hue={i * 25} />}
-        </React.Fragment>
-      ))}
+      {HITS.filter((h) => !PHRASES.includes(h)).map((h) => <Shockwave key={h} at={h} c={darkAt(h) ? "#ffffff" : T.accent} />)}
       <Grain />
     </AbsoluteFill>
   );

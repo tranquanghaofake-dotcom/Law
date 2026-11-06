@@ -100,6 +100,9 @@ Mỗi video dùng 3–5 kiểu chuyển cảnh, và mỗi kiểu phải có nguy
 | Video giả định có intro mà bài đủ trống từ đầu | Đoán cấu trúc bài → đo bằng `do_nhip.py` trên bản nghe thử chính thức |
 | `--props='{"x":true}'` lỗi JSON khi chạy qua `npm run` | npm làm mất dấu nháy → truyền file JSON hoặc trộn tiếng bằng ffmpeg sau render |
 | Thông tin trên video đã lỗi thời | Đọc README/file cũ → kiểm code đang chạy và spec mới nhất (luật 1) |
+| Khung 0 (ảnh bìa TikTok) trống | Chữ hook vào từ phách 0 nên khung 0 chưa có gì → dòng hook đặt `at` âm để đã đáp ở khung 0 |
+| Phóng thiết bị che tiêu đề; nhãn/miễn trừ đè ảnh | Phóng quanh điểm giữa đẩy mép trên lên → soát khung sau mỗi thay đổi bố cục; ưu tiên chip chữ to thay vì phóng UI chữ nhỏ |
+| Cú chốt bằng bản quay mà chữ số/chi tiết quá nhỏ | Đẩy máy vào tiêu điểm (`pushIn`) 2 phách trước cú nện rồi lùi ra; không phóng quá ~2,5× bản quay 2,5× (vỡ hạt) |
 | "Chưa đủ wow" dù nhiều hiệu ứng | Mắc dấu hiệu video máy tạo (nền xanh đen trống, glow, hạt bay, ba thẻ một hàng, mọi thứ trượt lên) → đọc danh sách CẤM trong `references/3-phong-cach.md`, tăng câu chuyện và UI thật |
 
 ## Công cụ

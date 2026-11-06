@@ -73,22 +73,25 @@ const StatCount: React.FC<P> = ({ props }) => {
   const T = useT();
   const f = useCurrentFrame();
   const bt = useBeats();
-  const stats = arr<{ value: number; label: string; at: number }>(props.stats);
+  const stats = arr<{ value: number; from?: number; label: string; at: number }>(props.stats);
+  const sub = props.sub as { text: string; at: number } | undefined;
+  const solo = stats.length === 1;
   const ring = arr<Media>(props.ring);
   const rot = interpolate(f, [0, bt(16)], [60, -200]);
   const R = Math.min(W, H) * (VERTICAL ? 0.52 : 0.42), cw = Math.min(W, H) * (VERTICAL ? 0.27 : 0.3);
   return (
-    <AbsoluteFill style={{ ...SAFE_PAD }}>
+    <AbsoluteFill style={{ ...SAFE_PAD, justifyContent: solo ? "center" : undefined, paddingBottom: solo && VERTICAL ? H - 1330 : undefined }}>
       <Kicker text={str(props.kicker)} />
       {stats.map((s, i) => {
         const at = bt(s.at);
-        const v = Math.round(interpolate(f, [at, at + bt(2) - bt(0)], [0, s.value], { ...clamp, easing: easeOut }));
+        const v = Math.round(interpolate(f, [at, at + bt(2) - bt(0)], [s.from ?? 0, s.value], { ...clamp, easing: easeOut }));
         return (
-          <div key={i} style={{ ...H1, fontSize: i === 0 ? SIZE.title * 1.15 : SIZE.title * 0.9, color: T.ink, ...blurIn(f, at) }}>
-            <span style={{ color: T.accent }}>{v.toLocaleString("vi-VN")}</span> {s.label}
+          <div key={i} style={{ ...H1, fontSize: solo ? SIZE.hero * 2.6 : i === 0 ? SIZE.title * 1.15 : SIZE.title * 0.9, lineHeight: solo ? 0.95 : 1.04, color: T.ink, marginTop: solo ? SIZE.title * 0.4 : 0, ...blurIn(f, at) }}>
+            <span style={{ color: T.accent }}>{v.toLocaleString("vi-VN")}</span>{solo ? <div style={{ fontSize: SIZE.title }}>{s.label}</div> : ` ${s.label}`}
           </div>
         );
       })}
+      {sub && <div style={{ fontFamily: UI, fontWeight: 700, fontSize: SIZE.sub, color: T.inkSoft, marginTop: SIZE.min, ...blurIn(f, bt(sub.at)) }}>{sub.text}</div>}
       {ring.length > 0 && (
         <div style={{ position: "absolute", left: 0, right: 0, top: VERTICAL ? H * 0.55 : H * 0.22, height: H * 0.4, perspective: 1800 }}>
           <div style={{ position: "absolute", left: VERTICAL ? W / 2 : W * 0.7, top: 40, transformStyle: "preserve-3d", transform: `translateZ(-260px) rotateY(${rot}deg)` }}>
@@ -111,7 +114,8 @@ const KnowledgeCard: React.FC<P> = ({ props }) => {
   const pop = usePop();
   const at = { gist: 1, branches: 4, hook: 9, qa: 11, answer: 13, ...(props.at as object) } as Record<string, number>;
   const gist = str(props.gist);
-  const typed = gist.slice(0, Math.floor(interpolate(f, [bt(at.gist), bt(at.branches - 0.5)], [0, gist.length], clamp)));
+  const typeEnd = Math.max(bt(at.gist) + 1, bt(at.branches - 0.5)); // không có gist hoặc nhánh vào sớm: tránh khoảng nội suy đảo
+  const typed = gist ? gist.slice(0, Math.floor(interpolate(f, [bt(at.gist), typeEnd], [0, gist.length], clamp))) : "";
   const branches = arr<{ label: string; icon?: string; children?: string[]; tone?: string }>(props.branches);
   const qa = props.qa as { q: string; a: string } | undefined;
   const hookEl = str(props.hook) ? (
@@ -126,20 +130,20 @@ const KnowledgeCard: React.FC<P> = ({ props }) => {
       <div style={{ display: "flex", flexDirection: "column" }}>
       <Kicker text={str(props.kicker)} />
       <div style={{ ...H1, fontSize: SIZE.hero, color: T.ink, scale: interpolate(pop(0), [0, 1], [1.3, 1]), transformOrigin: "left center" }}>{str(props.term)}</div>
-      <div style={{ fontFamily: UI, fontWeight: 600, fontSize: SIZE.body * 1.25, lineHeight: 1.4, color: T.ink, marginTop: SIZE.min * 0.6, minHeight: SIZE.body * 5.5 }}>
+      {gist && <div style={{ fontFamily: UI, fontWeight: 600, fontSize: SIZE.body * 1.25, lineHeight: 1.4, color: T.ink, marginTop: SIZE.min * 0.6, minHeight: SIZE.body * 5.5 }}>
         {typed}<span style={{ opacity: f < bt(at.branches) && Math.floor(f / 15) % 2 === 0 ? 1 : 0, color: T.accent }}>▍</span>
-      </div>
+      </div>}
       {VERTICAL ? null : hookEl}
       </div>
       <div style={{ display: "flex", flexDirection: "column" }}>
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: SIZE.min * 0.8, marginTop: VERTICAL ? SIZE.min * 0.6 : SIZE.title * 0.5 }}>
+      <div style={{ display: "grid", gridTemplateColumns: VERTICAL && !gist ? "1fr" : "1fr 1fr", gap: SIZE.min * 0.8, marginTop: VERTICAL ? SIZE.min * 0.9 : SIZE.title * 0.5 }}>
         {branches.map((n, i) => {
           const a = bt(at.branches + i);
           return (
-            <div key={i} style={{ background: T.ground2, border: `3px solid ${toneC(n.tone)}`, borderRadius: 24, padding: VERTICAL ? "20px 22px" : "30px 30px", minHeight: VERTICAL ? undefined : H * 0.26, scale: pop(a), opacity: f >= a ? 1 : 0 }}>
+            <div key={i} style={{ background: T.ground2, border: `3px solid ${toneC(n.tone)}`, borderRadius: 24, padding: VERTICAL ? (gist ? "20px 22px" : "30px 34px") : "30px 30px", minHeight: VERTICAL ? undefined : H * 0.26, scale: pop(a), opacity: f >= a ? 1 : 0 }}>
               <div style={{ display: "flex", alignItems: "center", gap: 12, color: toneC(n.tone) }}>
-                {n.icon && <Icon name={n.icon} size={SIZE.body * (VERTICAL ? 1.6 : 2)} width={2} draw={interpolate(f, [a, a + 22], [0, 1], clamp)} />}
-                <div style={{ fontFamily: UI, fontWeight: 800, fontSize: SIZE.body * (VERTICAL ? 1 : 1.15), color: T.ink, lineHeight: 1.2 }}>{n.label}</div>
+                {n.icon && <Icon name={n.icon} size={SIZE.body * (VERTICAL ? (gist ? 1.6 : 2.4) : 2)} width={2} draw={interpolate(f, [a, a + 22], [0, 1], clamp)} />}
+                <div style={{ fontFamily: UI, fontWeight: 800, fontSize: SIZE.body * (VERTICAL ? (gist ? 1 : 1.45) : 1.15), color: T.ink, lineHeight: 1.2 }}>{n.label}</div>
               </div>
               {(n.children ?? []).map((c) => <div key={c} style={{ fontFamily: UI, fontWeight: 600, fontSize: SIZE.min * 1.1, color: T.inkSoft, marginTop: 6 }}>· {c}</div>)}
             </div>
@@ -176,12 +180,12 @@ const FeatureSteps: React.FC<P> = ({ props }) => {
         {steps.map((s, i) => {
           const a = bt(start + i * every), on = f >= a, last = i === steps.length - 1;
           return (
-            <div key={i} style={{ display: "flex", alignItems: "center", gap: 22, padding: "16px 22px", marginBottom: 14, borderRadius: 24, background: on ? (last ? T.accent2 : T.ground2) : "transparent", opacity: on ? 1 : 0.12, translate: `${interpolate(pop(a), [0, 1], [W * 0.15, 0])}px 0px`, marginLeft: VERTICAL ? i * 16 : 0 }}>
-              <div style={{ width: SIZE.body * 2.2, height: SIZE.body * 2.2, borderRadius: 20, background: last ? "rgba(255,255,255,.18)" : T.ink, color: last ? "#fff" : T.accent, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, fontFamily: DISPLAY, fontWeight: 800, fontSize: SIZE.body * 1.1 }}>
+            <div key={i} style={{ display: "flex", alignItems: "center", gap: 22, padding: VERTICAL ? "22px 26px" : "16px 22px", marginBottom: VERTICAL ? 20 : 14, borderRadius: 24, background: on ? (last ? T.accent2 : T.ground2) : "transparent", opacity: on ? 1 : 0.12, translate: `${interpolate(pop(a), [0, 1], [W * 0.15, 0])}px 0px`, marginLeft: VERTICAL ? i * 16 : 0 }}>
+              <div style={{ width: SIZE.body * 2.6, height: SIZE.body * 2.6, borderRadius: 20, background: last ? "rgba(255,255,255,.18)" : T.ink, color: last ? "#fff" : T.accent, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, fontFamily: DISPLAY, fontWeight: 800, fontSize: SIZE.body * 1.1 }}>
                 {s.icon ? <Icon name={s.icon} size={SIZE.body * 1.4} width={2} draw={interpolate(f, [a, a + 20], [0, 1], clamp)} /> : i + 1}
               </div>
               <div>
-                <div style={{ fontFamily: UI, fontWeight: 800, fontSize: SIZE.body * 1.15, color: last ? "#fff" : T.ink }}>{s.label}</div>
+                <div style={{ fontFamily: UI, fontWeight: 800, fontSize: SIZE.body * (VERTICAL ? 1.45 : 1.15), color: last ? "#fff" : T.ink }}>{s.label}</div>
                 {s.sub && <div style={{ fontFamily: UI, fontWeight: 600, fontSize: SIZE.min * 1.1, color: last ? "rgba(255,255,255,.85)" : T.inkSoft }}>{s.sub}</div>}
               </div>
             </div>
@@ -214,7 +218,7 @@ const DeviceDemo: React.FC<P> = ({ props }) => {
     <AbsoluteFill style={{ ...SAFE_PAD }}>
       <Kicker text={str(props.kicker)} />
       <Words text={str(props.title)} at={0} step={4} style={{ ...H1, fontSize: SIZE.title * 0.9, color: T.ink, maxWidth: VERTICAL ? undefined : W * 0.42 }} accentWords={arr<number>(props.accentWords)} />
-      <Device kind={phone ? "phone" : "browser"} width={dw} style={{ position: "absolute", left: dx, top: dy, rotate: `${interpolate(pop(0), [0, 1], [8, -2])}deg`, translate: `0px ${interpolate(pop(0), [0, 1], [H * 0.5, 0])}px` }}>
+      <Device kind={phone ? "phone" : "browser"} width={dw} style={{ position: "absolute", left: dx, top: dy, transformOrigin: `50% ${num(props.zoomFocus, 0.5) * 100}%`, scale: props.zoomAt == null ? 1 : interpolate(f, [bt(num(props.zoomAt)) - 6, bt(num(props.zoomAt)) + 14], [1, num(props.zoom, 1.35)], { ...clamp, easing: easeOut }), rotate: `${interpolate(pop(0), [0, 1], [8, -2])}deg`, translate: `0px ${interpolate(pop(0), [0, 1], [H * 0.5, 0])}px` }}>
         {str(props.poster) && <Img src={asset(str(props.poster))} style={{ width: "100%", position: "absolute", inset: 0 }} />}
         {m && <Sequence from={Math.max(0, startAt)} layout="none"><div style={{ position: "absolute", inset: 0 }}><MediaView m={m} /></div></Sequence>}
       </Device>
@@ -238,17 +242,19 @@ const MediaHero: React.FC<P> = ({ props }) => {
   const hit = bt(num(props.hitBeat, 8));
   const start = hit - Math.round(num(props.syncSec, 0) * FPS);
   const focus = (props.focus as { x: number; y: number }) ?? { x: 0.5, y: 0.45 };
-  const zoom = interpolate(f, [hit - 10, hit, hit + 40], [1, 1.14, 1.05], { ...clamp, easing: Easing.out(Easing.cubic) });
+  const push = num(props.pushIn, 1.14);
+  // đẩy máy dần vào tiêu điểm 2 phách trước cú nện, giữ, rồi lùi ra để lộ toàn bộ (cận cảnh → toàn cảnh)
+  const zoom = interpolate(f, [hit - bt(2) + bt(0), hit, hit + bt(1.5) - bt(0), hit + bt(3) - bt(0)], [1, push, push, 1.06], { ...clamp, easing: Easing.inOut(Easing.cubic) });
+  const cutBottom = num(props.cutBottom, 0);
   const lines = arr<{ text: string; at: number; color?: string }>(props.lines);
   const dark = num(props.darkIntroSec, 0) * FPS;
   return (
     <AbsoluteFill style={{ background: "#000" }}>
-      <AbsoluteFill style={{ scale: zoom, transformOrigin: `${focus.x * 100}% ${focus.y * 100}%` }}>
+      <AbsoluteFill style={{ clipPath: cutBottom ? `inset(0 0 ${cutBottom}px 0)` : undefined }}><AbsoluteFill style={{ scale: zoom, transformOrigin: `${focus.x * 100}% ${focus.y * 100}%` }}>
         {str(props.poster) && <Img src={asset(str(props.poster))} style={{ width: W, height: H, position: "absolute", objectFit: "cover" }} />}
         {m && <Sequence from={Math.max(0, start)} layout="none"><div style={{ position: "absolute", inset: 0 }}><MediaView m={m} style={{ width: W, height: H, objectFit: "cover" }} /></div></Sequence>}
-      </AbsoluteFill>
+      </AbsoluteFill></AbsoluteFill>
       {dark > 0 && <AbsoluteFill style={{ background: "#05050a", opacity: interpolate(f, [0, Math.max(1, start) + dark * 0.6, Math.max(1, start) + dark], [0.9, 0.75, 0], clamp) }} />}
-      <Shockwave at={hit} x={focus.x * W} y={focus.y * H} c={T.accent} len={32} />
       <Particles n={40} c={T.accent} speed={2} />
       <AbsoluteFill style={{ ...SAFE_PAD, pointerEvents: "none", opacity: interpolate(f, [bt(num(props.linesOut, 6)), bt(num(props.linesOut, 6) + 1.5)], [1, 0], clamp) }}>
         <Kicker text={str(props.kicker)} />
@@ -273,7 +279,7 @@ const CardCycle: React.FC<P> = ({ props }) => {
   const c = col(it.color, T.accent);
   const cw = Math.min(W * 0.82, 1100);
   return (
-    <AbsoluteFill style={{ ...SAFE_PAD, alignItems: "center", background: `radial-gradient(circle at 50% 50%, ${c}30, transparent 70%)` }}>
+    <AbsoluteFill style={{ ...SAFE_PAD, alignItems: "center" }}>
       <Kicker text={str(props.kicker)} c={T.accent} />
       <div style={{ ...H1, fontSize: SIZE.title, color: c, marginTop: SIZE.min * 0.5, ...blurIn(f, bt(idx * every), 6) }}>{it.label}</div>
       <div style={{ perspective: 1800, marginTop: H * 0.06 }}>
@@ -307,7 +313,8 @@ const Ladder: React.FC<P> = ({ props }) => {
   const phase = fin && f >= bt(fin.at) ? "finale" : fan.length && f >= bt(fanAt) ? "fan" : "climb";
   const step = Math.min(climb.length - 1, Math.floor(f / Math.max(1, bt(1))));
   const local = f - bt(step);
-  const iw = Math.min(W * 0.55, 620);
+  const iw = VERTICAL ? W * 0.42 : Math.min(W * 0.55, 620);
+  const ASPECT = num(props.aspect, 1.526); // cao/rộng của ảnh tủ trưng bày
   return (
     <AbsoluteFill style={{ ...SAFE_PAD }}>
       <Rays x={W / 2} y={H * 0.52} />
@@ -317,7 +324,7 @@ const Ladder: React.FC<P> = ({ props }) => {
       {phase === "climb" && climb[step] && (
         <>
           <Img src={asset(climb[step].image)} style={{ position: "absolute", left: (W - iw) / 2, top: H * 0.27, width: iw, scale: interpolate(local, [0, 10], [1.08, 1], { ...clamp, easing: easeOut }), filter: `brightness(${interpolate(local, [0, 8], [1.7, 1], clamp)}) drop-shadow(0 30px 60px rgba(0,0,0,.6))` }} />
-          <div style={{ position: "absolute", left: SAFE.left, right: SAFE.right, top: H * 0.27 + iw * 1.55, textAlign: "center", fontFamily: UI, fontWeight: 800, fontSize: SIZE.body * 1.3, color: T.accent }}>{climb[step].label}</div>
+          <div style={{ position: "absolute", left: SAFE.left, right: SAFE.right, top: H * 0.27 + iw * ASPECT + 14, textAlign: "center", fontFamily: UI, fontWeight: 800, fontSize: SIZE.body * 1.3, color: T.accent }}>{climb[step].label}</div>
         </>
       )}
       {phase === "fan" && fan.map((x, i) => {
@@ -330,8 +337,9 @@ const Ladder: React.FC<P> = ({ props }) => {
           </div>
         );
       })}
-      {phase === "finale" && fin && <Sequence from={bt(fin.at)} layout="none"><div style={{ position: "absolute", left: (W - iw * 1.05) / 2, top: H * 0.26, width: iw * 1.05 }}><MediaView m={fin.media} /></div></Sequence>}
-      {str(props.note) && <div style={{ position: "absolute", left: SAFE.left, right: SAFE.right, top: VERTICAL ? 1280 : H * 0.9, textAlign: "center", fontFamily: UI, fontWeight: 500, fontSize: SIZE.min, color: T.inkSoft }}>{str(props.note)}</div>}
+      {phase === "finale" && fin && <Sequence from={bt(fin.at)} layout="none"><div style={{ position: "absolute", left: (W - iw * 0.95) / 2, top: H * 0.26, width: iw * 0.95 }}><MediaView m={fin.media} /></div></Sequence>}
+      {phase === "finale" && fin && str(props.finaleLabel) && <Words text={str(props.finaleLabel)} at={bt(fin.at) + 6} step={5} slam style={{ position: "absolute", left: SAFE.left, right: SAFE.right, top: H * 0.26 + iw * 0.95 * ASPECT + 8, justifyContent: "center", ...H1, fontSize: SIZE.title * 0.8, color: T.accent }} />}
+      {str(props.note) && <div style={{ position: "absolute", left: SAFE.left, right: SAFE.right, top: VERTICAL ? 1290 : H * 0.9, textAlign: "center", fontFamily: UI, fontWeight: 500, fontSize: SIZE.min, color: T.inkSoft }}>{str(props.note)}</div>}
     </AbsoluteFill>
   );
 };
@@ -343,21 +351,24 @@ const LineReveal: React.FC<P> = ({ props }) => {
   const bt = useBeats();
   const pts = arr<[number, number]>(props.points);
   const marks = arr<{ x: number; label: string }>(props.marks);
-  const gw = W - SAFE.left - SAFE.right, gh = H * (VERTICAL ? 0.28 : 0.4);
+  const gw = W - SAFE.left - SAFE.right, gh = H * (VERTICAL ? 0.4 : 0.4);
   const draw = interpolate(f, [bt(0.5), bt(num(props.drawBeats, 6))], [0, 1], { ...clamp, easing: Easing.inOut(Easing.cubic) });
   return (
     <AbsoluteFill style={{ ...SAFE_PAD }}>
       <Kicker text={str(props.kicker)} />
       <Words text={str(props.title)} at={0} step={4} style={{ ...H1, fontSize: SIZE.title, color: T.ink }} accentWords={arr<number>(props.accentWords)} />
-      <svg width={gw} height={gh + 140} style={{ position: "absolute", left: SAFE.left, top: VERTICAL ? H * 0.42 : H * 0.42, overflow: "visible" }}>
+      <svg width={gw} height={gh + 140} style={{ position: "absolute", left: SAFE.left, top: VERTICAL ? H * 0.3 : H * 0.42, overflow: "visible" }}>
         <line x1={0} y1={gh} x2={gw} y2={gh} stroke={T.inkSoft} strokeOpacity={0.4} strokeWidth={4} />
-        <polyline points={pts.map(([x, y]) => `${(x * gw).toFixed(1)},${((1 - y) * gh).toFixed(1)}`).join(" ")} fill="none" stroke={T.accent} strokeWidth={10} strokeLinejoin="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - draw} />
+        <line x1={0} y1={0} x2={0} y2={gh} stroke={T.inkSoft} strokeOpacity={0.4} strokeWidth={4} />
+        <polyline points={pts.map(([x, y]) => `${(x * gw).toFixed(1)},${((1 - y) * gh).toFixed(1)}`).join(" ")} fill="none" stroke={T.accent} strokeWidth={VERTICAL ? 14 : 10} strokeLinejoin="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - draw} />
         {marks.map((m) => (
           <g key={m.label} opacity={draw >= m.x ? 1 : 0}>
             <circle cx={m.x * gw} cy={gh * 0.08} r={18} fill={T.accent2} />
             <text x={m.x * gw} y={-20} fill={T.ink} fontFamily={UI} fontWeight={800} fontSize={SIZE.min * 1.2} textAnchor="middle">{m.label}</text>
           </g>
         ))}
+        {str(props.axisY) && <text x={-6} y={-8} fill={T.inkSoft} fontFamily={UI} fontWeight={700} fontSize={SIZE.min * 1.1}>{str(props.axisY)} ↑</text>}
+        {str(props.axisX) && <text x={gw} y={gh + SIZE.min * 1.6} fill={T.inkSoft} fontFamily={UI} fontWeight={700} fontSize={SIZE.min * 1.1} textAnchor="end">{str(props.axisX)} →</text>}
         {arr<string>(props.captions).map((c, i) => <text key={c} x={0} y={gh + 60 + i * SIZE.min * 1.7} fill={T.inkSoft} fontFamily={UI} fontWeight={700} fontSize={SIZE.min * 1.2}>{c}</text>)}
       </svg>
     </AbsoluteFill>
@@ -387,7 +398,7 @@ const EndCard: React.FC<P> = ({ props }) => {
       </div>
       {str(props.cta) && <div style={{ marginTop: SIZE.title * 0.6, padding: "28px 52px", borderRadius: 24, background: T.accent, color: T.ground, fontFamily: UI, fontWeight: 800, fontSize: SIZE.sub * 1.2, scale: pop(bt(3)) }}>{str(props.cta)}</div>}
       {str(props.url) && <div style={{ fontFamily: UI, fontWeight: 700, fontSize: SIZE.min * 1.2, color: T.inkSoft, marginTop: 26, ...blurIn(f, bt(4)) }}>{str(props.url)}</div>}
-      {str(props.disclaimer) && <div style={{ position: "absolute", top: VERTICAL ? 1240 : H * 0.88, padding: `0 ${SAFE.right}px`, textAlign: "center", fontFamily: UI, fontWeight: 500, fontSize: SIZE.min, color: T.inkSoft, opacity: fadeIn(f, bt(4)) }}>{str(props.disclaimer)}</div>}
+      {str(props.disclaimer) && <div style={{ position: "absolute", top: VERTICAL ? 1240 : H * 0.88, padding: `0 ${SAFE.right}px`, textAlign: "center", fontFamily: UI, fontWeight: 600, fontSize: SIZE.min * 1.15, color: T.ink, opacity: 0.7 * fadeIn(f, bt(4)) }}>{str(props.disclaimer)}</div>}
     </AbsoluteFill>
   );
 };
