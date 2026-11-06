@@ -96,7 +96,9 @@ Ra 2 file cạnh HTML: `infographic.png` (xem màn hình), `infographic.pdf` (**
 
 ## Bước 7 — Tự soát (không bỏ qua)
 
-1. `node .claude/skills/infographic/scripts/contrast.mjs <index.html>` → mọi phần tử chữ phải PASS.
+1. `render.mjs` tự kiểm và in danh sách: chữ sát mép (< 52 px), chữ đè chữ, chữ tràn khung (tính tới mép trong của viền). Sửa đến khi in ra "bố cục ổn". Ngoại lệ có chủ đích: gắn `data-margin` (nhãn ở lề vở, ngưỡng 26 px) hoặc `data-free` (nhãn cố ý nằm ngoài khung, vd. số trên thanh đo).
+   `node .claude/skills/infographic/scripts/contrast.mjs <index.html>` → mọi phần tử chữ phải PASS.
+   Script không thay mắt người: vẫn mở PNG xem — nó không bắt được chữ xuống dòng xấu, nhãn mơ hồ hay sai luật.
 2. Mở PNG, đọc như người đọc lần đầu, đi qua `references/review-checklist.md`.
 3. Thu nhỏ ảnh còn 25%: tiêu đề + hình chính vẫn nhận ra được không? Không → tăng tương phản/kích thước hình chính.
 4. Nếu sẽ photo đen trắng: chạy `--gray`, kiểm tra các nhóm màu còn phân biệt được bằng icon, hoa văn, kiểu viền.

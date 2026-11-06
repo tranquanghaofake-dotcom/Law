@@ -20,6 +20,10 @@ Soát từng dòng trước khi dựng hình. Mỗi mục kèm **lỗi thật** 
 - [ ] Không trộn mốc dân sự (15, 18 — Điều 586 BLDS) với mốc hình sự (14, 16 — Điều 12 BLHS). Nếu đặt chung một hình thì tách 2 hàng rõ ràng.
 - [ ] Phạm vi TNHS của người từ đủ 14 đến dưới 16 tuổi: **chỉ** tội rất nghiêm trọng/đặc biệt nghiêm trọng tại các điều liệt kê ở khoản 2 Điều 12. Với Điều 134 là khoản 3, 4, 5 — không phải "mọi trường hợp cố ý gây thương tích".
 - [ ] Từ đủ 16 tuổi: "mọi tội phạm, **trừ những tội phạm mà Bộ luật này có quy định khác**".
+- [ ] **Tình tiết định khung đẩy khung lên**: ngưỡng không chỉ là con số. Vd. Điều 134: tổn thương 31–60% mà có tình tiết ở khoản 1 (bị hại **dưới 16 tuổi**, dùng hung khí nguy hiểm, có tính chất côn đồ…) thì thuộc khoản 3 (điểm c) — tội rất nghiêm trọng, người 14–dưới 16 tuổi vẫn bị truy cứu. Trong trường học bị hại thường dưới 16 tuổi, nên mốc thực tế là 31%, không phải 61%.
+  - Lỗi đã gặp (bản demo của chính skill): thanh đo chỉ vạch mốc 61%.
+- [ ] Ghi "28 tội luật liệt kê" khi nói về tuổi 14–dưới 16 — "tội rất nghiêm trọng" trơn dễ hiểu thành mọi tội rất nghiêm trọng.
+- [ ] Tuổi tính theo **tuổi tròn theo ngày sinh** tại thời điểm thực hiện hành vi; người đọc Việt Nam hay nhầm với tuổi mụ.
 
 ## C. Chủ thể và cơ chế trách nhiệm
 
