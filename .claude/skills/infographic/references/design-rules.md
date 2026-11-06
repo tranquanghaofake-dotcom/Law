@@ -1,0 +1,52 @@
+# Quy tắc thiết kế
+
+## 1. Thứ bậc thị giác (3 tầng)
+
+| Tầng | Gồm | Cỡ chữ (khổ 1080 px rộng) |
+|---|---|---|
+| 1 — thấy đầu tiên | Tiêu đề, hình chính, con số then chốt | Tiêu đề 56–72 px; số then chốt 40–64 px |
+| 2 — thấy thứ hai | Tiêu đề mục, nhãn trên hình | 26–32 px |
+| 3 — đọc khi cần | Thân bài, chú thích, nguồn | Thân 20–24 px; nguồn ≥ 15 px |
+
+Tiêu đề lớn gấp 2,5–3 lần thân bài. Không quá 4 cỡ chữ trên một trang.
+
+## 2. Lưới và khoảng trắng
+
+- Lưới 12 cột, lề ngoài ≥ 56 px (khổ 1080), khoảng cách cột 24 px.
+- Khoảng cách theo bội số 8 px (8/16/24/32/48/64).
+- Khoảng trắng giữa các khối lớn hơn khoảng trắng trong khối → mắt tự nhóm.
+- Thứ tự đánh số = thứ tự mắt đọc. Nếu có 2 cột, đánh số **theo hàng** (1|2, 3|4) hoặc chỉ dùng 1 cột cho phần có số.
+
+## 3. Chữ tiếng Việt
+
+- Font có thiết kế dấu tiếng Việt chuẩn: **Be Vietnam Pro** (Google Fonts, OFL). Dự phòng: Inter, Noto Sans.
+- **Không** đặt `letter-spacing` dương cho chữ có dấu; không viết HOA toàn bộ đoạn dài (dấu chồng lên nhau, khó đọc). HOA chỉ cho nhãn ≤ 3 từ.
+- Line-height thân bài 1.45–1.6 (dấu cần chỗ).
+- Chuẩn chính tả: không có dấu cách trước `! ? : ;`; viết hoa tên văn bản đúng ("Bộ luật Dân sự", không "Luật Dân Sự").
+
+## 4. Màu
+
+- Tối đa **3 màu chức năng** + 1 dải trung tính (nền, chữ, đường kẻ). Mỗi màu = một nghĩa cố định, ví dụ: đỏ = hình sự, xanh = dân sự, vàng nghệ = hành động.
+- Định nghĩa màu bằng biến CSS (`--ink`, `--paper`, `--crim`…), không gõ mã màu rải rác.
+- Tương phản (WCAG 2.1): chữ thường ≥ **4.5:1**; chữ ≥ 24 px hoặc ≥ 19 px đậm ≥ **3:1**; đường/biểu tượng mang nghĩa ≥ 3:1.
+- Không bao giờ: chữ vàng/hồng nhạt trên nền nhạt; chữ trắng trên vàng.
+- Không dùng màu là kênh **duy nhất** để phân biệt (thêm nhãn chữ/biểu tượng) — người mù màu vẫn đọc được.
+
+## 5. Nhấn mạnh
+
+- Chọn **một** cách: in đậm **hoặc** nền tô nhạt (highlight). Dùng ≤ 1 lần mỗi câu.
+- Không gạch chân (giống link). Không dùng đồng thời đậm + màu + gạch chân + hoa.
+- Dấu "!" trong tiêu đề làm giảm độ tin cậy với nội dung pháp lý — tránh.
+
+## 6. Hình & biểu tượng
+
+- Hình chính phải **mang dữ liệu** (thước, cây, bảng), không chỉ trang trí.
+- Minh họa người: tránh khắc họa nạn nhân theo khuôn mẫu; ưu tiên biểu tượng trung tính.
+- SVG tự vẽ hoặc bộ icon mã nguồn mở (Lucide — ISC, Tabler — MIT). Ghi giấy phép trong phần nguồn nếu dùng.
+
+## 7. Khối bắt buộc
+
+- **Nguồn**: tên văn bản + số hiệu + điều/khoản; "Đối chiếu ngày dd/mm/yyyy tại vbpl.vn".
+- **Miễn trừ**: "Thông tin pháp luật phổ thông, không thay thế tư vấn pháp lý."
+- **Tác giả / đơn vị**.
+- Dấu `*` nào cũng phải có chú thích tương ứng.
