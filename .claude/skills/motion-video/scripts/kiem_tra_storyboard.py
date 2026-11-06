@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Kiểm storyboard.json TRƯỚC khi render: khớp nhịp, đủ thời gian đọc, vùng an toàn, dấu hiệu "video do máy tạo".
+"""Kiểm storyboard.json TRƯỚC khi render: khớp nhịp (hoặc khớp lời), đủ thời gian đọc, nhãn ngắn, dấu hiệu "video do máy tạo".
 
   python3 scripts/kiem_tra_storyboard.py <dự án>/src/storyboard.json
 
@@ -9,6 +9,9 @@ import json
 import os
 import re
 import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from thoi_gian import load_giong, place, say_sec  # noqa: E402
 
 TYPES = {"TitleSlam", "LogoReveal", "StatCount", "KnowledgeCard", "FeatureSteps", "DeviceDemo", "MediaHero", "CardCycle", "CardMontage", "Ladder", "LineReveal", "EndCard"}
 # Từ sáo của video quảng cáo do máy viết (spec HyperFrames, mở rộng tiếng Việt)
@@ -21,7 +24,7 @@ def texts(obj):
         yield obj
     elif isinstance(obj, dict):
         for k, v in obj.items():
-            if k not in ("src", "image", "poster", "url", "icon", "file", "tone", "color", "kind", "size", "device"):
+            if k not in ("src", "image", "poster", "url", "icon", "file", "tone", "color", "kind", "size", "device", "say"):
                 yield from texts(v)
     elif isinstance(obj, list):
         for v in obj:
@@ -41,11 +44,40 @@ def main():
         loi.append(f"fps = {fmt.get('fps')} (yêu cầu 60)")
     if sorted([fmt["width"], fmt["height"]]) != [1080, 1920]:
         loi.append(f"khổ {fmt['width']}×{fmt['height']} (Full HD là 1080×1920 hoặc 1920×1080)")
+    voice = sb.get("clock") == "voice"
     spb = 60 / mu["bpm"]
-    bars = sum(s["bars"] for s in sb["scenes"])
-    secs = bars * 4 * spb
-    if bars % mu["phraseBars"]:
+    placed, total, ploi = place(sb, root)
+    loi += ploi
+    secs = total / fmt["fps"]
+    bars = sum(s.get("bars", 0) for s in sb["scenes"])
+    if voice:
+        g = load_giong(root)
+        sents = g["sentences"]
+        if not sents:
+            loi.append("chế độ voice nhưng src/giong.json trống — chạy scripts/canh_giong.py trước")
+        if g.get("engine") == "uoc-luong":
+            canh.append("giong.json là ƯỚC LƯỢNG (không có nhận dạng giọng) — mốc từ lệch vài trăm ms; chỉ dùng dựng nháp, báo người dùng")
+        for c in sents:
+            if g.get("engine") != "uoc-luong" and c.get("match", 1) < 0.5:
+                loi.append(f"câu {c['id']} chỉ khớp {int(c['match'] * 100)} % — giọng đọc khác kịch bản, hỏi lại người dùng")
+        said = [i for s in sb["scenes"] for i in (s.get("say") or [])]
+        for c in sents:
+            if c["id"] not in said:
+                canh.append(f"câu {c['id']} không thuộc cảnh nào (\"say\") — lời đó sẽ nói trên hình của cảnh trước")
+        if not (sb.get("voice") or {}).get("file") or not os.path.exists(os.path.join(root, "public", (sb.get("voice") or {}).get("file", "_"))):
+            loi.append("thiếu voice.file trong public/ (canh_giong.py ghi public/voice/voice.wav)")
+        # mọi mốc { say } phải tìm thấy trong lời
+        for s in sb["scenes"]:
+            for ref in re.findall(r'"say":\s*"([^"]+)"', json.dumps(s["props"], ensure_ascii=False)):
+                if say_sec(ref, sents, s.get("say") or []) is None:
+                    loi.append(f"cảnh '{s['id']}': không thấy mốc lời \"{ref}\" — từ phải có thật trong kịch bản")
+        for c in sb.get("cues") or []:
+            if isinstance(c.get("at"), dict) and say_sec(c["at"]["say"], sents) is None:
+                loi.append(f"cue {c.get('sfx')}: không thấy mốc lời \"{c['at']['say']}\"")
+    elif bars % mu["phraseBars"]:
         canh.append(f"tổng {bars} ô không chia hết cụm {mu['phraseBars']} ô → video kết giữa cụm nhạc")
+    if secs > 60:
+        canh.append(f"video dài {secs:.0f} s > 60 s — dựng MẪU 20–30 s đầu cho người dùng duyệt phong cách trước khi làm cả bài")
     if mu.get("file") and not os.path.exists(os.path.join(root, "public", mu["file"])):
         loi.append(f"thiếu file nhạc public/{mu['file']}")
     deco = th.get("decor") or {}
@@ -58,7 +90,9 @@ def main():
         if s["type"] not in TYPES:
             loi.append(f"{tag}: loại '{s['type']}' không có")
             continue
-        dur = s["bars"] * 4 * spb
+        dur = (placed[i][2] - placed[i][1]) / fmt["fps"]
+        if voice and dur < 1.2:
+            canh.append(f"{tag}: chỉ {dur:.1f} s — cảnh quá ngắn để đọc, gộp vào cảnh bên cạnh")
         # thời gian đọc: 0,5 s + 0,3 s/từ cho chữ cần đọc
         # cảnh hiện LẦN LƯỢT từng mục (mỗi phách một thẻ/ảnh): chỉ tính mục dài nhất + phần chữ cố định, không cộng dồn
         seq = {"CardCycle": "items", "CardMontage": "cards", "Ladder": "climb"}.get(s["type"])
@@ -76,6 +110,10 @@ def main():
             for w in SAO:
                 if w in low:
                     canh.append(f"{tag}: từ sáo '{w.strip()}' trong \"{t[:50]}\"")
+        # nhãn (kicker) = 1–3 từ IN HOA rút từ lời, không chép nguyên cụm lời
+        kk = s["props"].get("kicker")
+        if isinstance(kk, str) and len(kk.split()) > 3:
+            canh.append(f"{tag}: nhãn \"{kk}\" dài {len(kk.split())} từ — nhãn nên 1–3 từ (vd. \"CĂN CỨ\", \"HẬU QUẢ\")")
         for ln in s["props"].get("lines", []) if isinstance(s["props"].get("lines"), list) else []:
             if len(ln.get("text", "").split()) > 6:
                 canh.append(f"{tag}: dòng tiêu đề > 6 chữ: \"{ln['text']}\"")
@@ -93,7 +131,8 @@ def main():
             canh.append(f"loại cảnh {t} dùng {seen_types.count(t)} lần — các cảnh giống nhau vào giống nhau là dấu hiệu máy tạo")
     if not sb.get("cues"):
         canh.append("không có hiệu ứng âm thanh (cues) — mỗi hành động thấy được nên có tiếng, ít mà đúng")
-    print(f"{sb.get('title', '')}: {len(sb['scenes'])} cảnh · {bars} ô · {secs:.1f} s · {mu['bpm']} BPM · {fmt['width']}×{fmt['height']}@{fmt['fps']}")
+    nhip = "đồng hồ = giọng đọc" if voice else f"{bars} ô · {mu['bpm']} BPM"
+    print(f"{sb.get('title', '')}: {len(sb['scenes'])} cảnh · {nhip} · {secs:.1f} s · {fmt['width']}×{fmt['height']}@{fmt['fps']}")
     for x in loi:
         print("  LỖI:", x)
     for x in canh:

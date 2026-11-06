@@ -108,7 +108,7 @@ export const Glitch: React.FC<{ children: React.ReactNode; amount: number; style
   const dx = (rand(f) - 0.5) * 2 * amount * 18, dy = (rand(f * 3) - 0.5) * amount * 8;
   return (
     <div style={{ ...style, position: "relative" }}>
-      {amount > 0.01 && (["#ff2a4a", "#28e0ff"] as const).map((c, i) => <div key={c} style={{ position: "absolute", inset: 0, color: c, mixBlendMode: "screen", translate: `${i ? -dx : dx}px ${i ? -dy : dy}px`, opacity: 0.85 }}>{children}</div>)}
+      {amount > 0.01 && (["#ff2a4a", "#28e0ff"] as const).map((c, i) => <div key={c} aria-hidden data-probe="skip" style={{ position: "absolute", inset: 0, color: c, mixBlendMode: "screen", translate: `${i ? -dx : dx}px ${i ? -dy : dy}px`, opacity: 0.85 }}>{children}</div>)}
       <div style={{ position: "relative" }}>{children}</div>
     </div>
   );

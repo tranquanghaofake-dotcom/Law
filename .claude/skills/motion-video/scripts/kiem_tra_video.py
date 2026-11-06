@@ -15,6 +15,9 @@ import re
 import subprocess
 import sys
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from thoi_gian import place  # noqa: E402
+
 
 def probe(f):
     out = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "stream=codec_type,width,height,r_frame_rate:format=duration", "-of", "json", f], capture_output=True, text=True, check=True).stdout
@@ -33,14 +36,7 @@ def main():
     video = sys.argv[2] if len(sys.argv) > 2 else os.path.join(proj, "out", "video.mp4")
     sb = json.load(open(os.path.join(proj, "src", "storyboard.json"), encoding="utf-8"))
     fps = sb["format"]["fps"]
-    fpb = fps * 60 / sb["music"]["bpm"]
-    off = round(sb["music"]["offsetSec"] * fps)
-    bt = lambda n: off + round(n * fpb)
-    starts, bar = [], 0
-    for i, s in enumerate(sb["scenes"]):
-        starts.append((s["id"], 0 if i == 0 else bt(bar * 4), bt((bar + s["bars"]) * 4)))
-        bar += s["bars"]
-    total = bt(bar * 4)
+    starts, total, _ = place(sb, proj)
 
     p = probe(video)
     v = next(s for s in p["streams"] if s["codec_type"] == "video")

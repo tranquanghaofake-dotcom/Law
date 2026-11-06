@@ -34,7 +34,9 @@ export const SIZE = VERTICAL
 export const SAFE = VERTICAL
   ? { top: 200, bottom: H - 1330, left: 80, right: 150 }
   : { top: Math.round(H * 0.08), bottom: Math.round(H * 0.08), left: Math.round(W * 0.06), right: Math.round(W * 0.06) };
-export const SAFE_PAD: React.CSSProperties = { paddingTop: SAFE.top, paddingLeft: SAFE.left, paddingRight: SAFE.right };
+// có cả paddingBottom: cảnh canh giữa (justifyContent center) phải canh giữa TRONG dải an toàn, không phải giữa cả khung
+// — thiếu dòng này thì chữ dưới cùng của cảnh dọc rơi xuống dưới 1330 px (kiem_tra_bo_cuc.mjs bắt được, 11/2026).
+export const SAFE_PAD: React.CSSProperties = { paddingTop: SAFE.top, paddingBottom: SAFE.bottom, paddingLeft: SAFE.left, paddingRight: SAFE.right };
 
 /** Đổi tên màu ("ink", "accent"…) hoặc mã màu sang màu thật theo bảng màu `pal` (bảng của cảnh). */
 export const color = (k: unknown, fallback?: string, pal: Theme = T): string => {
@@ -51,7 +53,9 @@ export const easeIn = Easing.bezier(0.4, 0, 1, 1); // rời / lao qua
 
 /** Tách màu RGB trên chữ — Main đặt biến --rgb theo cú nện (rẻ hơn nhiều so với lọc SVG cả khung). */
 export const RGB_SHADOW = "calc(var(--rgb, 0) * 1px) 0 0 rgba(255,30,70,.7), calc(var(--rgb, 0) * -1px) 0 0 rgba(30,220,255,.7)";
-export const H1: React.CSSProperties = { fontFamily: DISPLAY, fontWeight: 800, lineHeight: 1.04, letterSpacing: "-0.02em", textShadow: RGB_SHADOW };
+// lineHeight 1,3: chữ IN HOA tiếng Việt có dấu trên + dấu dưới (LỢI / ỨNG) xuống dòng — 1,04 làm dấu nặng dòng trên
+// dính dấu sắc dòng dưới; 1,25 còn gần chạm (đo bằng ảnh, 11/2026). Đừng hạ xuống dưới 1,3.
+export const H1: React.CSSProperties = { fontFamily: DISPLAY, fontWeight: 800, lineHeight: 1.3, letterSpacing: "-0.02em", textShadow: RGB_SHADOW };
 
 /** Bảng màu theo cảnh: cảnh nền "dark" đảo ink ↔ ground để chữ luôn đủ tương phản. */
 export type Palette = typeof SB.theme;

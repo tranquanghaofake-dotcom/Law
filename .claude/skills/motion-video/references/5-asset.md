@@ -8,6 +8,17 @@
 4. Tranh, icon, logo SVG có sẵn trong repo.
 5. Thiếu thì để khung giữ chỗ có nhãn ("Ảnh: màn Cài đặt"), nói rõ trong phần trả lời. **Không bao giờ vẽ giả một giao diện.**
 
+## Ảnh bằng chứng từ trang web (văn bản luật, trang chính thức)
+
+Khi lời nhắc một sản phẩm, trang web, văn bản hay dữ liệu thật, thì trên hình phải có **ảnh chụp thật** của nó. Với video luật: chụp đúng điều luật trên vbpl.vn (hoặc congbao.chinhphu.vn), kèm số hiệu văn bản.
+
+1. Chụp: `quay_web.mjs` với `"element"` trỏ vào khối nội dung (vd. đoạn Điều 328), `scale` 3. Trang tiếng Việt: thêm `"locale": "vi-VN"` nếu job hỗ trợ, URL Google thêm `?hl=vi`.
+2. **Cắt sát nội dung chính** (tiêu đề + đoạn được nhắc), không thu nguyên trang. Ảnh 1280 px thu vào thẻ 470 px thì chữ không đọc được. Kiểm bằng con số: chữ trong ảnh **cao ≥ 16 px trên khung 1080/1920** sau khi đặt vào cảnh. Cắt bằng `ffmpeg -i a.png -vf crop=w:h:x:y a_cat.png`.
+3. **Đọc từng ảnh** rồi cắt bỏ chữ nhạy cảm: nút Tải về/Download/Get App, mã QR, số điện thoại, "liên hệ", banner cookie, giá khuyến mãi. Mỗi lần dời vùng cắt thì xem lại, vì có thể làm lộ nút khác.
+4. Chữ trong ảnh **mâu thuẫn với lời** (ảnh ghi bản cũ, tên sản phẩm đã đổi): cắt phần đó, hoặc ghi rõ trên thanh nguồn rằng đây là trang hiện tại. Báo người dùng.
+5. Trang chặn bot hoặc bắt CAPTCHA: **không vượt CAPTCHA**. Lấy trang Wikipedia (vi trước, en sau) hoặc trang khác của chính chủ. Không có nguồn nào thì dùng thẻ chữ trung tính, **không** dùng ảnh "na ná" hay ảnh tự vẽ giả làm ảnh chụp.
+6. Mỗi ảnh có dòng nguồn trên hình ("vbpl.vn · Bộ luật Dân sự 2015", "Wikipedia"). Ghi vào `FACTS.md`: ảnh → URL → ngày chụp → 1–2 câu chữ đọc được trong ảnh. Câu chữ này là "dấu vân tay" để người chấm ở pha 7 chứng minh đã thật sự xem (xem `7-kiem-tra.md`).
+
 ## Quay giao diện thật — `quay_web.mjs`
 
 Chạy trong thư mục dự án video. Phải có server đang phục vụ sản phẩm: dev server, `vite preview`, hoặc `python3 -m http.server` trỏ vào thư mục build. Với bản build có `base` (vd. `/Law/`), tạo symlink thư mục build thành `<thư mục>/Law`.

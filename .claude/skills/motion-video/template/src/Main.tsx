@@ -1,11 +1,14 @@
 // Ghép video từ storyboard.json: nền + cảnh + lớp hiệu ứng theo nhạc + âm thanh.
 import React from "react";
-import { AbsoluteFill, Easing, interpolate, Sequence, staticFile, useCurrentFrame } from "remotion";
+import { AbsoluteFill, Easing, getInputProps, interpolate, Sequence, staticFile, useCurrentFrame } from "remotion";
 import { Audio } from "@remotion/media";
 import { clamp, DISPLAY, invert, SceneCtx, T, ThemeCtx } from "./core/look";
 import { FlashFrame, Grain, Ground, SceneShell } from "./core/fx";
-import { b, beatPulse, FPB, GAPS, H, PHRASES, PLACED, rand, SB, TOTAL, W } from "./core/timeline";
+import { b, beatPulse, cueFrame, FPB, GAPS, H, LEAD, PHRASES, PLACED, PROPS, rand, SB, TOTAL, VOICE, W } from "./core/timeline";
 import { Overlay, SCENE_VIEWS } from "./scenes";
+import { Probe } from "./core/probe";
+
+const PROBE = !!(getInputProps() as { probe?: boolean }).probe;
 
 const isDark = (bg?: string) => bg === "dark" || (!!bg && /^#/.test(bg) && lum(bg) < 0.35) || (!bg && lum(T.ground) < 0.35);
 function lum(hex: string) {
@@ -13,7 +16,7 @@ function lum(hex: string) {
   return 0.2126 * r + 0.7152 * g + 0.0722 * bl;
 }
 // Cú nện: đầu mỗi cụm nhạc + các phách người dựng đánh dấu "hit" trong cảnh (props.hits: phách trong cảnh).
-const HITS = [...PHRASES, ...PLACED.flatMap((p) => ((SB.scenes[p.index].props.hits as number[] | undefined) ?? []).map((h) => b(p.startBeat + h)))];
+const HITS = [...PHRASES, ...PLACED.flatMap((p) => ((PROPS[p.index].hits as number[] | undefined) ?? []).map((h) => b(p.startBeat + h)))];
 const darkAt = (frame: number) => {
   const p = [...PLACED].reverse().find((x) => frame >= x.from);
   return p ? isDark(SB.scenes[p.index].bg) : false;
@@ -83,8 +86,8 @@ export const Main: React.FC = () => {
                 <SceneCtx.Provider value={{ startBeat: p.startBeat, from: p.from, dur: p.dur }}>
                   <SceneShell dur={p.dur} enter={enter} exit={p.phraseEnd && end < TOTAL ? "push" : ENTERS[p.index + 1] === "curve" ? "curve" : "none"} gap={gap}>
                     <Ground bg={s.bg === "dark" ? pal.ground : s.bg} />
-                    <V props={s.props} />
-                    <Overlay props={s.props} />
+                    <V props={PROPS[p.index]} />
+                    <Overlay props={PROPS[p.index]} />
                   </SceneShell>
                 </SceneCtx.Provider>
               </ThemeCtx.Provider>
@@ -92,12 +95,18 @@ export const Main: React.FC = () => {
           );
         })}
       </BeatFx>
+      {VOICE && SB.voice && (
+        <Sequence from={LEAD} layout="none">
+          <Audio src={staticFile(SB.voice.file)} volume={SB.voice.volume ?? 1} />
+        </Sequence>
+      )}
       {SB.music.file && <Audio src={staticFile(SB.music.file)} volume={(fr) => interpolate(fr, [0, 6], [0, SB.music.volume ?? 0.8], clamp)} />}
       {(SB.cues ?? []).map((c, i) => (
-        <Sequence key={i} from={b(c.beat)} durationInFrames={b(c.beat + 6) - b(c.beat)} layout="none">
+        <Sequence key={i} from={cueFrame(c)} durationInFrames={Math.round(6 * FPB)} layout="none">
           <Audio src={staticFile(`sfx/${c.sfx}.ogg`)} volume={c.volume ?? 0.35} />
         </Sequence>
       ))}
+      {PROBE && <Probe />}
     </AbsoluteFill>
   );
 };

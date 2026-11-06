@@ -17,7 +17,9 @@ Remotion miễn phí cho cá nhân và nhóm ≤ 3 người, công ty lớn hơn
 
 ```text
 src/storyboard.json   ← chỉ sửa file này cho phần lớn video
-src/core/timeline.ts  lưới nhịp b(n), vị trí cảnh, cụm, khoảng bass tắt, beatPulse
+src/core/timeline.ts  lưới nhịp b(n), vị trí cảnh, cụm, khoảng bass tắt, beatPulse; chế độ voice: sayFrame, PROPS (mốc lời → phách)
+src/core/probe.tsx    đo hộp chữ/ảnh từng khung cho kiem_tra_bo_cuc.mjs (chỉ bật khi inputProps {probe:true})
+src/giong.json        mốc từng câu/từng từ của giọng đọc (canh_giong.py sinh; mẫu để trống)
 src/core/look.tsx     theme → font Google có tiếng Việt, cỡ chữ theo khung, vùng an toàn, easing, useBeats/useT/useCol
 src/core/fx.tsx       SceneShell (vào/ra), Words, Glitch, Shockwave, LightLeak, Device, MediaView, Icon, decor (tắt mặc định)
 src/scenes/index.tsx  11 cảnh mẫu
@@ -41,7 +43,8 @@ src/icons.json        bộ icon nét mảnh (lưới 24, path/circle/text)
 ```
 
 Các trường:
-- `bars`: độ dài cảnh, tính bằng ô nhịp.
+- `bars`: độ dài cảnh, tính bằng ô nhịp (chế độ nhạc).
+- `clock: "voice"` + `voice` + `say` thay cho `bars`, mốc `{ "say": "a2:từ khoá" }`: video có giọng đọc, xem `9-giong-doc.md`.
 - **Mốc trong `props`:** tính bằng **phách kể từ đầu cảnh**.
 - `cues.beat`: phách tuyệt đối tính từ đầu video.
 - `bg`:
@@ -81,6 +84,8 @@ Ví dụ đầy đủ một storyboard thật (16:9, 7 cảnh): `examples/giai-t
 ## Thêm loại cảnh mới
 
 Viết component trong `src/scenes/` theo mẫu có sẵn, đăng ký vào `SCENE_VIEWS` và `SceneType` (`core/types.ts`), thêm tên vào `TYPES` của `kiem_tra_storyboard.py`. Quy ước bắt buộc:
+- chữ trang trí nhân bản (bóng màu, lớp glitch) gắn `data-probe="skip"`, để `kiem_tra_bo_cuc.mjs` không coi là chữ đè chữ;
+- chữ IN HOA có dấu chồng (Ố, Ễ, Ự…) xuống dòng thì `lineHeight ≥ 1,15` cho tiêu đề và `≥ 1,35` cho chữ thường, nếu không dấu dòng dưới chạm chân dòng trên;
 - `const T = useT(); const col = useCol();` cho màu (đúng bảng của cảnh);
 - `const bt = useBeats();` cho mọi mốc thời gian (khớp lưới tuyệt đối);
 - `SAFE_PAD`/`SAFE` cho vùng an toàn; `SIZE` cho cỡ chữ;
@@ -88,7 +93,26 @@ Viết component trong `src/scenes/` theo mẫu có sẵn, đăng ký vào `SCEN
 
 ## Soát trước khi render
 
-Render khung tĩnh ở: giữa mỗi cảnh, 2 khung sau mỗi cú nện, giữa mỗi khoảng bass tắt, khung 0. Mỗi khung khoảng 10 giây.
+**Máy kiểm trước, mắt soát sau:**
+
+```bash
+node <skill>/scripts/kiem_tra_bo_cuc.mjs .            # mỗi 0,25 s; ~1 phút cho 30 s video (CPU 4 nhân)
+node <skill>/scripts/kiem_tra_bo_cuc.mjs . --from 20 --to 35   # chỉ đoạn vừa sửa
+```
+
+Script đo **hộp chữ/ảnh thật trong trình duyệt** ở từng khung lấy mẫu, nên bắt được lỗi mà tờ xem nhanh bỏ sót.
+- **LỖI** (phải về XANH):
+  - chữ đè chữ > 15 % (tính theo hộp dòng);
+  - chữ tràn khỏi khung;
+  - khung TRỐNG (không chữ, không ảnh) quá 0,8 s.
+- **CẢNH BÁO**:
+  - chữ ngoài vùng an toàn của nền tảng (dọc: trên 168 px, dưới 1330 px, cột nút phải 120 px);
+  - chữ nhỏ hơn 2,4 % cạnh ngắn (thu về điện thoại không đọc được);
+  - khung THƯA (phủ < 4 %) quá 2 s.
+
+Một lỗi chỉ được tính khi **có ở 2 mẫu liên tiếp**: khung đang nện chữ (scale 2→1) hay đang whip chồng nhau vài khung là bình thường. Số đo từng khung ghi ở `out/review/bo_cuc.json`. Cảnh báo giữ lại có chủ đích thì ghi lý do vào `REVIEW.md`.
+
+Sau đó render khung tĩnh ở: giữa mỗi cảnh, 2 khung sau mỗi cú nện, giữa mỗi khoảng bass tắt, khung 0. Mỗi khung khoảng 10 giây.
 
 ```bash
 for f in 0 120 520 1030 1045 …; do npx remotion still Main out/f$f.png --frame=$f --scale=0.35; done

@@ -1,5 +1,6 @@
 // Kiểu của storyboard.json — một file duy nhất mô tả cả video: khổ, nhạc, giao diện, danh sách cảnh.
 // Mọi mốc thời gian TRONG cảnh tính bằng PHÁCH (beat) kể từ đầu cảnh; cảnh dài theo Ô NHỊP (bar = 4 phách).
+// Chế độ "clock": "voice": cảnh dài theo CÂU nói (`say`), mốc có thể là { "say": "a2:từ khoá", "add": phách } — xem giong.json.
 
 export type FontKey = "be-vietnam-pro" | "noto-serif-display" | "inter" | "montserrat" | "lexend" | "playfair-display";
 
@@ -35,10 +36,26 @@ export type Enter = "auto" | "cut" | "curve" | "whip" | "flood" | "iris" | "zoom
 
 export type Media = { kind: "image" | "video"; src: string; alpha?: boolean };
 
+/** Mốc theo lời (chế độ voice): "a2" = đầu câu a2 · "a2:đặt cọc" = lúc từ đó được nói · "đặt cọc" = tìm trong câu của cảnh. `add` = phách cộng thêm. */
+export type Say = { say: string; add?: number };
+
+export type Voice = {
+  /** File giọng trong public/ (do scripts/canh_giong.py ghi: voice/voice.wav). */
+  file: string;
+  /** Giây giữ hình sau câu cuối (mặc định 1,5). */
+  tailSec?: number;
+  /** Giây im trước khi giọng bắt đầu (mặc định 0). */
+  leadSec?: number;
+  volume?: number;
+};
+
 export type Scene = {
   id: string;
   type: SceneType;
-  bars: number;
+  /** Chế độ nhạc: độ dài cảnh (ô nhịp). */
+  bars?: number;
+  /** Chế độ voice: các id câu cảnh này nói (theo thứ tự); cảnh bắt đầu ở đầu câu đầu tiên, kéo tới cảnh sau. */
+  say?: string[];
   /** Cách vào cảnh; "auto": đầu cụm nhạc → nện (zoom), còn lại → whip. */
   enter?: Enter;
   /** "ground" | "ground2" | "dark" | "accent" | mã màu */
@@ -48,10 +65,13 @@ export type Scene = {
 
 export type SceneType = "TitleSlam" | "LogoReveal" | "StatCount" | "KnowledgeCard" | "FeatureSteps" | "DeviceDemo" | "MediaHero" | "CardCycle" | "CardMontage" | "Ladder" | "LineReveal" | "EndCard";
 
-export type Cue = { sfx: string; beat: number; volume?: number };
+export type Cue = { sfx: string; beat?: number; at?: Say; volume?: number };
 
 export type Storyboard = {
   title: string;
+  /** "music" (mặc định): nhạc là đồng hồ, cảnh dài theo ô nhịp. "voice": giọng đọc là đồng hồ, cảnh dài theo câu nói. */
+  clock?: "music" | "voice";
+  voice?: Voice;
   format: { width: number; height: number; fps: number };
   music: Music;
   theme: Theme;

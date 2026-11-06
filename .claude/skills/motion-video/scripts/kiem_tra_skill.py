@@ -11,6 +11,7 @@ GOC = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CAN = ["template/package.json", "template/remotion.config.ts", "template/tsconfig.json", "template/src/index.ts", "template/src/Root.tsx",
        "template/src/Main.tsx", "template/src/storyboard.json", "template/src/icons.json", "template/src/core/timeline.ts",
        "template/src/core/look.tsx", "template/src/core/fx.tsx", "template/src/core/types.ts", "template/src/scenes/index.tsx",
+       "template/src/core/probe.tsx", "template/src/giong.json",
        "template/public/sfx/LICENSE.txt", "NOTICE.md"]
 
 
