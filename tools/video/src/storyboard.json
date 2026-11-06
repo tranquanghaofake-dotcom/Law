@@ -172,6 +172,44 @@
      "frames": 24
     },
     "exitPush": true,
+    "cursor": [
+     {
+      "beat": 0.3,
+      "x": 760,
+      "y": 2150
+     },
+     {
+      "beat": 1.8,
+      "x": 445,
+      "y": 889
+     },
+     {
+      "beat": 2,
+      "x": 445,
+      "y": 889,
+      "click": true
+     },
+     {
+      "beat": 3.2,
+      "x": 470,
+      "y": 900
+     },
+     {
+      "beat": 4.2,
+      "x": 1250,
+      "y": 2200
+     }
+    ],
+    "notes": [
+     {
+      "kind": "circle",
+      "x": 300,
+      "y": 842,
+      "w": 500,
+      "h": 92,
+      "beat": 2.7
+     }
+    ],
     "chips": [
      {
       "text": "3 triệu + 3 triệu = 6 triệu",
@@ -247,6 +285,7 @@
     "drawBeats": 6,
     "axisX": "ngày",
     "axisY": "nhớ",
+    "rider": "Đặt cọc",
     "points": [
      [
       0,
@@ -775,6 +814,17 @@
     "cutBottom": 380,
     "freezeFrames": 14,
     "skipFrames": 45,
+    "notes": [
+     {
+      "kind": "circle",
+      "x": 360,
+      "y": 650,
+      "w": 360,
+      "h": 370,
+      "beat": 8.6,
+      "color": "#ffd27a"
+     }
+    ],
     "lines": [
      {
       "text": "Học mỗi ngày,",
@@ -880,7 +930,38 @@
     ],
     "cta": "Link ở bio",
     "url": "tranquanghaofake-dotcom.github.io/Law",
-    "disclaimer": "Thông tin pháp luật chung, không phải tư vấn."
+    "disclaimer": "Thông tin pháp luật chung, không phải tư vấn.",
+    "cursor": [
+     {
+      "beat": 3.2,
+      "x": 820,
+      "y": 2150
+     },
+     {
+      "beat": 4.3,
+      "x": 600,
+      "y": 930
+     },
+     {
+      "beat": 4.5,
+      "x": 600,
+      "y": 930,
+      "click": true
+     },
+     {
+      "beat": 6,
+      "x": 640,
+      "y": 960
+     },
+     {
+      "beat": 7.5,
+      "x": 1300,
+      "y": 2200
+     }
+    ],
+    "hits": [
+     4.5
+    ]
    }
   }
  ],

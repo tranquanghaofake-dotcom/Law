@@ -5,7 +5,7 @@ import { Audio } from "@remotion/media";
 import { clamp, DISPLAY, invert, SceneCtx, T, ThemeCtx } from "./core/look";
 import { FlashFrame, Grain, Ground, SceneShell } from "./core/fx";
 import { b, beatPulse, FPB, GAPS, H, PHRASES, PLACED, rand, SB, TOTAL, W } from "./core/timeline";
-import { SCENE_VIEWS } from "./scenes";
+import { Overlay, SCENE_VIEWS } from "./scenes";
 
 const isDark = (bg?: string) => bg === "dark" || (!!bg && /^#/.test(bg) && lum(bg) < 0.35) || (!bg && lum(T.ground) < 0.35);
 function lum(hex: string) {
@@ -84,6 +84,7 @@ export const Main: React.FC = () => {
                   <SceneShell dur={p.dur} enter={enter} exit={p.phraseEnd && end < TOTAL ? "push" : ENTERS[p.index + 1] === "curve" ? "curve" : "none"} gap={gap}>
                     <Ground bg={s.bg === "dark" ? pal.ground : s.bg} />
                     <V props={s.props} />
+                    <Overlay props={s.props} />
                   </SceneShell>
                 </SceneCtx.Provider>
               </ThemeCtx.Provider>
