@@ -170,9 +170,11 @@
     "poster": "cap/quiz-6tr-0.png",
     "syncSec": 0.6,
     "syncBeat": 2,
-    "hits": [
-     2
-    ],
+    "freeze": {
+     "after": 0.25,
+     "frames": 24
+    },
+    "exitPush": true,
     "chips": [
      {
       "text": "3 triệu + 3 triệu = 6 triệu",
@@ -193,41 +195,42 @@
   },
   {
    "id": "bac",
-   "type": "FeatureSteps",
+   "type": "CardMontage",
    "bars": 3,
+   "enter": "zoom",
    "props": {
-    "kicker": "Mỗi khái niệm đi qua",
-    "title": "6 bậc ghi nhớ",
+    "kicker": "Một khái niệm",
+    "title": "Sáu dạng bài",
     "accentWords": [
-     2,
-     3
+     1,
+     2
     ],
     "start": 1,
-    "every": 1.5,
-    "steps": [
+    "every": 1.75,
+    "cards": [
      {
-      "label": "Gặp",
-      "icon": "eye"
+      "image": "cap/ex-1-intro.png",
+      "label": "Gặp: hiểu nhanh"
      },
      {
-      "label": "Nhận biết",
-      "icon": "search"
+      "image": "cap/ex-2-mcq.png",
+      "label": "Nhận biết"
      },
      {
-      "label": "Phân biệt",
-      "icon": "compare"
+      "image": "cap/ex-3-pair.png",
+      "label": "Phân biệt"
      },
      {
-      "label": "Điền",
-      "icon": "pen"
+      "image": "cap/ex-4-cloze.png",
+      "label": "Điền chỗ trống"
      },
      {
-      "label": "Tình huống",
-      "icon": "puzzle"
+      "image": "cap/ex-5-tf.png",
+      "label": "Nhận định đúng sai"
      },
      {
-      "label": "Tự trả lời",
-      "icon": "idea"
+      "image": "cap/ex-6-recall.png",
+      "label": "Tự trả lời"
      }
     ]
    }
@@ -773,6 +776,7 @@
     ],
     "pushIn": 2.3,
     "cutBottom": 600,
+    "freezeFrames": 14,
     "lines": [
      {
       "text": "Học mỗi ngày,",
@@ -925,27 +929,27 @@
   },
   {
    "sfx": "select_001",
-   "beat": 54.5,
+   "beat": 54.75,
    "volume": 0.2
   },
   {
    "sfx": "select_001",
-   "beat": 56,
+   "beat": 56.5,
    "volume": 0.2
   },
   {
    "sfx": "select_001",
-   "beat": 57.5,
+   "beat": 58.25,
    "volume": 0.2
   },
   {
    "sfx": "select_001",
-   "beat": 59,
+   "beat": 60,
    "volume": 0.2
   },
   {
    "sfx": "select_001",
-   "beat": 60.5,
+   "beat": 61.75,
    "volume": 0.2
   },
   {

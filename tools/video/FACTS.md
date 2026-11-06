@@ -6,6 +6,7 @@ Mọi chữ/số trên hình phải có dòng ở đây. Nguồn theo luật: co
 - [NGUỒN] Đặt cọc: 4 nhánh sơ đồ, mẹo nhớ "Ai bỏ cuộc thì người đó mất…", tình huống 20 triệu → 40 triệu — `packages/content/data/concepts/dan-su-2/dat-coc.json` (memo)
 - [NGUỒN] Bộ đề Đặt cọc câu 3: chủ trọ nhận cọc 3 triệu rồi cho người khác thuê → bạn nhận 6 triệu (3 + 3), căn cứ Khoản 2 Điều 328 BLDS 2015 — bản quay `public/cap/quiz-6tr.mp4`
 - [NGUỒN] Căn cứ: Điều 328 Bộ luật Dân sự 2015 (Luật số 91/2015/QH13, hiệu lực 01/01/2017, đang có hiệu lực); đáp án bộ đề ghi "Khoản 1 Điều 328 BLDS 2015" — bản quay `public/cap/quiz-dung.mp4`
+- [NGUỒN] 6 thẻ bài tập của khái niệm Đặt cọc (thẻ giới thiệu, trắc nghiệm, phân biệt, điền chỗ trống, nhận định đúng/sai, tự trả lời) — component `apps/web/src/lib/ui/cards/*` + `items` của `dat-coc.json`, chụp bằng harness
 - [NGUỒN] 6 bậc: gặp → nhận biết → phân biệt → điền → tình huống → tự trả lời — trang Hôm nay của web; bậc ≥ 4 phải qua giãn cách — commit `feat(engine)`
 - [NGUỒN] Lịch ôn FSRS (ts-fsrs), Ôn hôm nay ưu tiên khái niệm sắp quên — `apps/web/README.md`, commit `feat(engine)`
 - [NGUỒN] Thẻ chuyên cần: 30 ngày một chu kỳ, 27 ký hoạ, màu Đỏ → Xanh lam → Tím → Trắng – đen giao thoa — `apps/web/src/lib/game/card.ts`

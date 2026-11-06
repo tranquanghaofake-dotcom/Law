@@ -1,9 +1,9 @@
 // Lớp hiệu ứng "edit theo nhạc" — toàn CSS/SVG điều khiển bằng frame (máy render không có GPU: WebGL/WebGPU hỏng).
 import React from "react";
-import { AbsoluteFill, Easing, Img, interpolate, OffthreadVideo, staticFile, useCurrentFrame } from "remotion";
+import { AbsoluteFill, Easing, Freeze, Img, interpolate, OffthreadVideo, staticFile, useCurrentFrame } from "remotion";
 import icons from "../icons.json";
-import { clamp, color, easeIn, easeInOut, easeOut, T } from "./look";
-import { FPB, H, rand, W } from "./timeline";
+import { clamp, color, easeInOut, easeOut, T } from "./look";
+import { FPB, FPS, H, rand, W } from "./timeline";
 import type { Enter, Media } from "./types";
 
 export const asset = (src: string) => (/^https?:/.test(src) ? src : staticFile(src));
@@ -149,26 +149,57 @@ export const MediaView: React.FC<{ m: Media; style?: React.CSSProperties }> = ({
   m.kind === "image" ? <Img src={asset(m.src)} style={{ width: "100%", display: "block", ...style }} /> : <VideoView m={m} style={style} />;
 const VideoView: React.FC<{ m: Media; style?: React.CSSProperties }> = ({ m, style }) => <OffthreadVideo src={asset(m.src)} muted transparent={!!m.alpha} style={{ width: "100%", display: "block", ...style }} />;
 
-/** Độ dài whip: ~0,28 phách (~0,15 s ở 111 BPM). */
-export const WHIP_FRAMES = Math.round(FPB * 0.28);
+/** Cut-the-curve (HyperFrames, Apache-2.0 — viết lại): mọi điểm cắt thường đi theo MỘT hướng chủ đạo (sang trái), di chuyển một phần
+ *  quãng (12 % khung), đường cong đối xứng power4 (ra tăng tốc, vào giảm tốc — vận tốc khớp ở điểm cắt), nhoè 18 px cả khung,
+ *  cảnh cũ mờ hết ở ~70 % quãng ra, cảnh mới bừng ở 35 % độ đậm giữa đường. Không bao giờ lật hướng (ping-pong). */
+export const CURVE_OUT = Math.round(FPB * 0.55);
+export const CURVE_IN = Math.round(FPB * 0.7);
+/** Giữ tên cũ cho tương thích. */
+export const WHIP_FRAMES = CURVE_OUT;
+const p4in = (x: number) => x ** 4;
+const p4out = (x: number) => 1 - (1 - x) ** 4;
 
-/** Bao một cảnh: cách vào (whip / zoom sau cú nện / flood / iris / cut), hút vào lúc bass tắt cuối cụm. */
-export const SceneShell: React.FC<{ dur: number; enter: Enter; whipOut: boolean; suck: boolean; gap: number; dir: number; children: React.ReactNode }> = ({ dur, enter, whipOut, suck, gap, dir, children }) => {
+export type Exit = "curve" | "push" | "none";
+
+/** Bao một cảnh. Vào: curve (mặc định) / zoom (đầu cụm: TIẾP TỤC lao tới, 0,8 → 1 — cùng dấu Z với lúc hút vào) / flood / iris / cut.
+ *  Ra: curve (sang trái) hoặc push (cuối cụm, theo khoảng bass tắt: phóng 1 → 1,2, nhoè, nhạt màu). */
+export const SceneShell: React.FC<{ dur: number; enter: Enter; exit: Exit; gap: number; children: React.ReactNode }> = ({ dur, enter, exit, gap, children }) => {
   const frame = useCurrentFrame();
-  const Wn = WHIP_FRAMES;
-  let tx = 0, blur = 0, scale = 1, sat = 1, rot = 0, clip: string | undefined, flood = 0;
-  if (enter === "whip" && frame < Wn) { const p = easeOut(frame / Wn); tx = (1 - p) * W * 0.65 * dir; blur += (1 - p) * 24; }
-  if (enter === "zoom" && frame < 18) { const p = Easing.out(Easing.exp)(frame / 18); scale *= 1 + (1 - p) * 0.25; blur += (1 - p) * 10; }
-  if (enter === "iris" && frame < 12) { const p = easeOut(frame / 12); clip = `circle(${(p * 120).toFixed(1)}% at 50% 50%)`; }
+  const travel = W * 0.12;
+  let tx = 0, blur = 0, scale = 1, sat = 1, op = 1, clip: string | undefined, flood = 0;
+  if ((enter === "curve" || enter === "whip") && frame < CURVE_IN) {
+    const e = p4out(frame / CURVE_IN);
+    tx = travel * (1 - e); blur += 18 * (1 - e); op = 0.6 + 0.4 * Math.min(1, frame / (CURVE_IN * 0.35));
+  }
+  if (enter === "zoom" && frame < 22) { const e = Easing.out(Easing.exp)(frame / 22); scale *= 0.8 + 0.2 * e; blur += 18 * (1 - e); }
+  if (enter === "iris" && frame < 12) { const e = easeOut(frame / 12); clip = `circle(${(e * 120).toFixed(1)}% at 50% 50%)`; }
   if (enter === "flood" && frame < 18) flood = 1 - easeInOut(frame / 18);
-  // whip ra diễn ra SAU điểm cắt, trong lúc cảnh sau (nằm trên) whip vào — Sequence của cảnh này được kéo dài thêm Wn khung,
-  // nên không bao giờ lộ nền đen giữa hai cảnh (lỗi của bản cũ: cảnh cũ trượt đi trước khi cảnh mới tới).
-  if (whipOut && frame >= dur) { const p = easeIn(Math.min(1, (frame - dur) / Wn)); tx = -p * W * 0.65 * dir; blur += p * 24; }
-  if (suck && frame > dur - gap) { const p = Easing.in(Easing.quad)((frame - (dur - gap)) / gap); scale *= 1 + p * 0.2; blur += p * 7; sat = 1 - p * 0.75; rot = p * 2.2 * dir; }
+  if (exit === "curve" && frame > dur - CURVE_OUT) {
+    const t = (frame - (dur - CURVE_OUT)) / CURVE_OUT, e = p4in(t);
+    tx = -travel * e; blur += 18 * e; op = 1 - 0.55 * t * t; // giữ đậm tới sát điểm cắt: không lộ nền giữa hai cảnh (dip ≤ 1 khung)
+  }
+  if (exit === "push" && frame > dur - gap) { const e = Easing.in(Easing.quad)((frame - (dur - gap)) / gap); scale *= 1 + e * 0.2; blur += e * 7; sat = 1 - e * 0.75; }
   return (
     <AbsoluteFill style={{ clipPath: clip }}>
-      <AbsoluteFill style={{ translate: `${tx}px 0px`, scale, rotate: `${rot}deg`, filter: blur > 0.3 || sat < 0.99 ? `blur(${blur.toFixed(1)}px) saturate(${sat.toFixed(2)})` : undefined }}>{children}</AbsoluteFill>
+      <AbsoluteFill style={{ translate: `${tx.toFixed(1)}px 0px`, scale, opacity: op, filter: blur > 0.3 || sat < 0.99 ? `blur(${blur.toFixed(1)}px) saturate(${sat.toFixed(2)})` : undefined }}>{children}</AbsoluteFill>
       {flood > 0 && <AbsoluteFill style={{ background: T.accent, opacity: flood }} />}
     </AbsoluteFill>
   );
+};
+
+/** Flash frame kiểu báo chí (ấm, trung tính): loé 2 khung rồi tắt trong ~6 khung — thay vòng sóng ở cú nện trong cảnh. */
+export const FlashFrame: React.FC<{ at: number; strength?: number }> = ({ at, strength = 0.8 }) => {
+  const frame = useCurrentFrame();
+  const t = frame - at;
+  if (t < 0 || t > 8) return null;
+  return <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 45%, #fffaf0, #ffe9c8 70%)", mixBlendMode: "screen", opacity: strength * (t < 2 ? 1 : 1 - (t - 2) / 6), pointerEvents: "none" }} />;
+};
+
+/** Video có "impact freeze" (DJordanMedia: hãm/đứng 3–5 khung… ở đây đứng `hold` khung) tại giây `atSec` của bản quay; sau đó chạy tiếp.
+ *  Dùng Freeze của Remotion: khung media = f trước điểm chạm, = điểm chạm trong lúc đứng, = f − hold sau đó. */
+export const FreezeVideo: React.FC<{ m: Media; atSec: number; hold: number; style?: React.CSSProperties }> = ({ m, atSec, hold, style }) => {
+  const f = useCurrentFrame();
+  const F0 = Math.round(atSec * FPS);
+  const mf = f < F0 ? f : f < F0 + hold ? F0 : f - hold;
+  return <Freeze frame={mf}><MediaView m={m} style={style} /></Freeze>;
 };

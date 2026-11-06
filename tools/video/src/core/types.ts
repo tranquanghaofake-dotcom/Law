@@ -31,7 +31,7 @@ export type Music = {
   volume?: number;
 };
 
-export type Enter = "auto" | "cut" | "whip" | "flood" | "iris" | "zoom";
+export type Enter = "auto" | "cut" | "curve" | "whip" | "flood" | "iris" | "zoom";
 
 export type Media = { kind: "image" | "video"; src: string; alpha?: boolean };
 
@@ -46,7 +46,7 @@ export type Scene = {
   props: Record<string, unknown>;
 };
 
-export type SceneType = "TitleSlam" | "LogoReveal" | "StatCount" | "KnowledgeCard" | "FeatureSteps" | "DeviceDemo" | "MediaHero" | "CardCycle" | "Ladder" | "LineReveal" | "EndCard";
+export type SceneType = "TitleSlam" | "LogoReveal" | "StatCount" | "KnowledgeCard" | "FeatureSteps" | "DeviceDemo" | "MediaHero" | "CardCycle" | "CardMontage" | "Ladder" | "LineReveal" | "EndCard";
 
 export type Cue = { sfx: string; beat: number; volume?: number };
 

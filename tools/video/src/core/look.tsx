@@ -70,7 +70,9 @@ function mix(a: string, b2: string, k: number) {
 }
 
 /** Ngữ cảnh cảnh: phách đầu cảnh, để quy đổi "phách trong cảnh" → khung trong cảnh, khớp lưới tuyệt đối. */
-export const SceneCtx = createContext({ startBeat: 0, from: 0 });
+export const SceneCtx = createContext({ startBeat: 0, from: 0, dur: 0 });
+/** Độ dài cảnh (khung) — cho cảnh tự làm chuyển động ra (vd. thiết bị lao tới lấp khung). */
+export const useSceneDur = () => useContext(SceneCtx).dur;
 export const useBeats = () => {
   const { startBeat, from } = useContext(SceneCtx);
   return (beat: number) => b(startBeat + beat) - from;

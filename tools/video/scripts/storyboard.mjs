@@ -40,13 +40,17 @@ const sb = {
       sub: { text: 'Trả cọc + khoản tương đương', at: 4 } } },
     { id: 'de', type: 'DeviceDemo', bars: 3, props: {
       kicker: 'Luyện ngay trên web', title: 'Cùng luật, tình huống khác', accentWords: [0, 1], device: 'phone',
-      media: { kind: 'video', src: 'cap/quiz-6tr.mp4' }, poster: 'cap/quiz-6tr-0.png', syncSec: 0.6, syncBeat: 2, hits: [2],
+      media: { kind: 'video', src: 'cap/quiz-6tr.mp4' }, poster: 'cap/quiz-6tr-0.png', syncSec: 0.6, syncBeat: 2,
+      // impact freeze: 0,25 s sau cú bấm (lúc ô đúng hiện xanh) đứng 24 khung + flash; cuối cảnh điện thoại lao tới lấp khung (vật thành thế giới)
+      freeze: { after: 0.25, frames: 24 }, exitPush: true,
       chips: [{ text: '3 triệu + 3 triệu = 6 triệu', at: 3, x: 70, y: 980, tone: 'accent2' }, { text: 'Căn cứ Khoản 2 Điều 328', at: 5, x: 300, y: 1130, tone: 'accent' }] } },
-    { id: 'bac', type: 'FeatureSteps', bars: 3, props: {
-      kicker: 'Mỗi khái niệm đi qua', title: '6 bậc ghi nhớ', accentWords: [2, 3], start: 1, every: 1.5,
-      steps: [
-        { label: 'Gặp', icon: 'eye' }, { label: 'Nhận biết', icon: 'search' }, { label: 'Phân biệt', icon: 'compare' },
-        { label: 'Điền', icon: 'pen' }, { label: 'Tình huống', icon: 'puzzle' }, { label: 'Tự trả lời', icon: 'idea' },
+    { id: 'bac', type: 'CardMontage', bars: 3, enter: 'zoom', props: {
+      // 6 thẻ bài tập THẬT của web cho khái niệm Đặt cọc (harness mount component, 3 thẻ ở trạng thái đã trả lời đúng)
+      kicker: 'Một khái niệm', title: 'Sáu dạng bài', accentWords: [1, 2], start: 1, every: 1.75,
+      cards: [
+        { image: 'cap/ex-1-intro.png', label: 'Gặp: hiểu nhanh' }, { image: 'cap/ex-2-mcq.png', label: 'Nhận biết' },
+        { image: 'cap/ex-3-pair.png', label: 'Phân biệt' }, { image: 'cap/ex-4-cloze.png', label: 'Điền chỗ trống' },
+        { image: 'cap/ex-5-tf.png', label: 'Nhận định đúng sai' }, { image: 'cap/ex-6-recall.png', label: 'Tự trả lời' },
       ] } },
     // ── cụm 3 ──
     { id: 'fsrs', type: 'LineReveal', bars: 2, bg: 'dark', props: {
@@ -54,7 +58,7 @@ const sb = {
       points: forgetting(), marks: [{ x: 0.16, label: 'ôn 1' }, { x: 0.38, label: 'ôn 2' }, { x: 0.7, label: 'ôn 3' }] } },
     { id: 'chuoi', type: 'MediaHero', bars: 4, bg: 'dark', props: {
       kicker: 'Thẻ chuyên cần', media: { kind: 'video', src: 'cap/ignite-75.mp4' }, poster: 'cap/ignite-75-0.png',
-      syncSec: 3.865, hitBeat: 8, focus: { x: 0.5, y: 0.435 }, darkIntroSec: 1.2, hits: [8], pushIn: 2.3, cutBottom: 600,
+      syncSec: 3.865, hitBeat: 8, focus: { x: 0.5, y: 0.435 }, darkIntroSec: 1.2, hits: [8], pushIn: 2.3, cutBottom: 600, freezeFrames: 14,
       lines: [{ text: 'Học mỗi ngày,', at: 0 }, { text: 'thắp một ký hoạ', at: 2, color: '#d8b4ff' }], linesOut: 6 } },
     { id: 'chuky', type: 'CardCycle', bars: 2, bg: '#08080c', props: {
       kicker: 'Hết chu kỳ, thẻ đổi màu', every: 2,
@@ -79,7 +83,7 @@ const sb = {
     ...[0, 1, 2, 3].map((i) => ({ sfx: 'select_001', beat: 17 + i, volume: 0.22 })),
     { sfx: 'maximize_006', beat: 30.5, volume: 0.3 },
     { sfx: 'confirmation_001', beat: 42, volume: 0.45 },
-    ...[0, 1, 2, 3, 4, 5].map((i) => ({ sfx: 'select_001', beat: 53 + i * 1.5, volume: 0.2 })),
+    ...[0, 1, 2, 3, 4, 5].map((i) => ({ sfx: 'select_001', beat: 53 + i * 1.75, volume: 0.2 })),
     { sfx: 'maximize_006', beat: 62.5, volume: 0.3 },
     { sfx: 'bong_001', beat: 80, volume: 0.45 },
     ...[0, 1, 2, 3].map((i) => ({ sfx: 'drop_002', beat: 88 + i * 2, volume: 0.3 })),
