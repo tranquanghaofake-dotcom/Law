@@ -21,3 +21,13 @@
 
 ## Bài học cho skill
 - Bỏ sót văn bản **có ngay trong bảng hiệu lực của chính mình** (NĐ 356/2025) → thêm vào kiểm phản chứng: trước khi viết "chưa có hướng dẫn", đọc mọi nghị định, thông tư quy định chi tiết có trong `van-ban.md`.
+
+## Đã sửa (vòng 2, 06/11/2026)
+| Góp ý | Trạng thái |
+|---|---|
+| Cả 3 vai — bỏ qua NĐ 356/2025 | **đạt**: rà toàn văn, không có điều về người lao động; ghi vào hạn chế (i) và chú thích 8 |
+| Học thuật G1 / thực tiễn G4 — Điều 61 dẫn qua cổng tỉnh | **đạt một phần**: đã đọc toàn văn trên trang thứ cấp, câu chữ khớp; còn đối chiếu vbpl.vn |
+| (mới, tự phát hiện khi đọc toàn văn) khoản 2 Điều 9 Luật có nội dung "biết rõ" | **đã đưa vào** hạn chế (i) như phản chứng; đây là phản chứng mạnh nhất mà cả 3 vai cùng bỏ sót |
+| Thực tiễn G1 — điểm b khoản 3 Điều 25, hệ quả ở khâu dùng dữ liệu | **đạt một phần**: thêm đoạn nối với khoản 3 Điều 61; phần kỷ luật, chứng cứ chưa viết |
+| Học thuật G6 — tiêu đề 2.2.2 mạnh hơn nội dung | **đạt** |
+Bài học: phản biện độc lập cũng có điểm mù (không ai đọc khoản 2 Điều 9); đọc toàn văn văn bản nền vẫn là bước không thay được.

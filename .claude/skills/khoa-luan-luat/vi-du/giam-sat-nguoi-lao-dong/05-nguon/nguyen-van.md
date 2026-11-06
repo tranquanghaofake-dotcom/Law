@@ -14,3 +14,18 @@
 ## Dự thảo Luật BVDLCN 2024, Điều 26 khoản 6 (dẫn theo thuvienphapluat.vn 24/9/2024 — là DỰ THẢO, không phải luật)
 - "Áp dụng các biện pháp quản lý phù hợp với quy định của pháp luật và bảo đảm quyền và lợi ích của chủ thể dữ liệu, trên cơ sở nhân viên công ty biết rõ và đồng ý với việc giám sát;"
 - "Nêu rõ thông tin về biện pháp, công nghệ, nội dung giám sát người lao động trong hồ sơ đánh giá tác động xử lý dữ liệu cá nhân;"
+
+## Bổ sung 06/11/2026
+### Luật 91/2025/QH15 (luatvietnam.vn qua Firecrawl; nguồn thứ cấp) [CẦN KIỂM: vbpl.vn]
+Đ9 k2: "Sự đồng ý của chủ thể dữ liệu cá nhân chỉ có hiệu lực khi dựa trên sự tự nguyện và biết rõ các thông tin sau đây: a) Loại dữ liệu cá nhân được xử lý, mục đích xử lý dữ liệu cá nhân; b) Bên kiểm soát dữ liệu cá nhân hoặc bên kiểm soát và xử lý dữ liệu cá nhân; c) Các quyền, nghĩa vụ của chủ thể dữ liệu cá nhân."
+Đ25 k3 b: "Không được xử lý, sử dụng dữ liệu cá nhân thu thập từ các biện pháp công nghệ, kỹ thuật trái quy định của pháp luật."
+### NĐ 330/2026/NĐ-CP Điều 61 (toàn văn hethongphapluat.com, đọc 06/11/2026)
+Tiêu đề: "Vi phạm quy định về bảo vệ dữ liệu cá nhân trong tuyển dụng, quản lý, sử dụng lao động"
+k2 (mở đầu): "Phạt tiền từ 50.000.000 đồng đến 70.000.000 đồng đối với một trong các hành vi sau:"
+k2 c: "Áp dụng biện pháp công nghệ, kỹ thuật để thu thập dữ liệu cá nhân của người lao động mà không bảo đảm người lao động biết rõ về biện pháp đó, bao gồm hành vi lắp đặt phần mềm theo dõi thiết bị, camera giám sát hoặc thiết bị thu thập dữ liệu khác tại môi trường làm việc mà không thông báo cho người lao động;"
+k2 d: "Áp dụng biện pháp công nghệ, kỹ thuật để thu thập dữ liệu cá nhân của người lao động không phù hợp với quy định của pháp luật hoặc không bảo đảm quyền, lợi ích hợp pháp của người lao động."
+k3: "Phạt tiền từ 70.000.000 đồng đến 100.000.000 đồng đối với hành vi xử lý, sử dụng dữ liệu cá nhân của người lao động thu thập từ biện pháp công nghệ, kỹ thuật trái quy định của pháp luật."
+(Mức phạt áp dụng cho tổ chức hay cá nhân: [CẦN KIỂM: điều về mức phạt tiền của NĐ 330].)
+### NĐ 356/2025/NĐ-CP (toàn văn ketoananpha.vn, đọc 06/11/2026)
+"Số: 356/2025/NĐ-CP Hà Nội, ngày 31 tháng 12 năm 2025". Mục lục 42 điều; Điều 8–12: tài chính, ngân hàng; dữ liệu lớn; trí tuệ nhân tạo, vũ trụ ảo; chuỗi khối; điện toán đám mây. Không có điều về người lao động; cụm "biết rõ" không xuất hiện trong toàn văn.
+Đ10 k1 (đoạn đầu): "Chủ thể dữ liệu cá nhân có quyền yêu cầu rút lại sự đồng ý cho phép xử lý dữ liệu cá nhân, yêu cầu hạn chế xử lý dữ liệu cá nhân của mình"
