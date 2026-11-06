@@ -1,113 +1,187 @@
 ---
 name: infographic
-description: Tạo infographic từ con số 0 đến bản xuất PNG/PDF — đặc biệt infographic pháp luật tiếng Việt. Dùng khi người dùng muốn làm infographic, poster tuyên truyền, áp phích phổ biến pháp luật, "một trang tóm tắt" bằng hình, hoặc nhờ chấm/chữa một infographic có sẵn. Quy trình 7 bước: brief → kiểm chứng nội dung → chọn dạng hình → bố cục lưới → dựng HTML/SVG → xuất ảnh → tự soát bằng checklist và script đo tương phản.
+description: Tạo infographic pháp luật tiếng Việt khổ A4 để in, từ con số 0 đến PDF — hoặc chấm/chữa một infographic có sẵn. Dùng khi người dùng muốn làm infographic, poster/áp phích phổ biến pháp luật, tờ rơi tuyên truyền, "một trang tóm tắt" bằng hình. Quy trình 7 bước: brief → kiểm chứng luật → chọn dạng hình → bố cục → dựng HTML/SVG với ý tưởng hình ảnh + icon + nhân vật → xuất PDF A4 → tự kiểm bằng script và checklist.
 ---
 
-# Infographic từ A đến Z
+# Infographic pháp luật A4 — từ A đến Z
 
-Infographic tốt = **một thông điệp** + **một hình chính chở thông điệp đó** + **nội dung đúng có nguồn**.
-Poster nhiều chữ chia ô màu **không phải** infographic.
+Infographic tốt = **một thông điệp** + **một hình chính chở thông điệp đó** + **nội dung đúng luật**.
+Poster nhiều chữ chia ô màu **không phải** infographic. Lỗi nội dung không sửa được bằng màu đẹp — làm đúng thứ tự 7 bước.
 
-Làm theo đúng thứ tự 7 bước. Không nhảy sang dựng hình khi bước 1–2 chưa xong: lỗi nội dung không sửa được bằng màu đẹp.
-
-## Bước 1 — Brief (5 câu, viết ra trước khi làm)
-
-1. **Người đọc là ai, bao nhiêu tuổi, đọc ở đâu?** (học sinh THCS xem trên bảng tin; sinh viên lướt Facebook; in A4 phát tay…)
-2. **Đọc xong họ phải nhớ đúng một câu gì?** → đây là tiêu đề hoặc câu dẫn.
-3. **Đọc xong họ làm gì?** (gọi 111, báo giáo viên, tra điều luật…) → lời kêu gọi hành động (CTA).
-4. **Khổ: luôn A4 dọc** (in và phát tay). `.sheet` = 1080×1528 px = 210×297 mm (1 mm ≈ 5,14 px). Nội dung cách mép ≥ 52 px (~10 mm) vì máy in không in sát mép. Mặc định **in màu trên bìa cứng**; chỉ khi người dùng nói sẽ photo đen trắng mới áp quy tắc bản xám.
-5. **Giọng:** nghiêm túc/thân thiện; được phép dùng minh họa không.
-
-Nếu người dùng không trả lời, tự chọn mặc định hợp lý và ghi rõ giả định ở đầu câu trả lời.
-
-## Bước 2 — Kiểm chứng nội dung (bắt buộc với chủ đề pháp luật)
-
-- Mỗi khẳng định pháp lý = **văn bản + số hiệu + điều/khoản/điểm + tình trạng hiệu lực**. Tra trên vbpl.vn hoặc congbao.chinhphu.vn; ưu tiên **văn bản hợp nhất** mới nhất.
-- Ghi bảng nguồn `nguon.md` cạnh file HTML: khẳng định → căn cứ → link → ngày đối chiếu. **Bảng nguồn ở ngoài trang in**; trên hình chỉ giữ số điều cạnh khối liên quan (vd. "Điều 12 BLHS") — không in khối nguồn, con dấu đối chiếu.
-- Đọc `references/legal-checklist.md` và soát **từng mục** trước khi dựng hình. File này gom các lỗi thật đã gặp (mốc tuổi, "cùng chịu", gán nhầm điều, thuật ngữ sai…).
-- Không chắc → không đưa lên hình, hoặc ghi "cần kiểm tra". Không bịa số hiệu.
-
-## Bước 3 — Chọn dạng hình theo **hình dạng của nội dung**
-
-Đọc `references/layouts.md`. Hỏi: nội dung của tôi có hình gì?
-- Có mốc số/ngưỡng (tuổi, mức phạt, thời hạn) → **thước/trục**.
-- Có các bước → **quy trình**. Có 2–4 phương án → **so sánh/ma trận**.
-- Có điều kiện "nếu… thì…" → **cây quyết định**.
-- Chỉ là liệt kê khái niệm → **bento grid** (dạng yếu nhất, dùng khi không có gì tốt hơn).
-
-Mỗi infographic có **đúng một hình chính** chiếm 35–50% diện tích; các khối khác phục vụ nó.
-
-## Bước 4 — Phác bố cục (wireframe bằng chữ)
-
-Viết dàn ý theo thứ tự mắt đọc (trên → dưới, trái → phải):
+File này là **nguồn duy nhất** của skill. Thư mục đi kèm:
 ```
-[Tiêu đề + câu dẫn]           ~12%
-[Định nghĩa / bối cảnh]       ~12%
-[HÌNH CHÍNH]                  ~40%
-[Bảng phụ / ví dụ]            ~16%
-[CTA: làm gì ngay]            ~12%
-[Ký tên + miễn trừ 1 dòng]    ~2%
+scripts/icons.mjs     chèn icon SVG vào HTML (data-icon="tên")
+scripts/render.mjs    xuất PNG + PDF A4, tự kiểm bố cục
+scripts/contrast.mjs  đo tương phản WCAG cho mọi chữ
+assets/icons/         icon Lucide (ISC)        assets/avatars/  nhân vật Notionists (CC0)
+assets/LICENSES.md    giấy phép + cách tải thêm
+templates/base.html   khung A4 "trang vở" hoàn chỉnh
+examples/<slug>/      bài mẫu: index.html, nguon.md, infographic.png/.pdf
 ```
-Quy tắc: số thứ tự mục **trùng với thứ tự mắt đọc**; tối đa 5–6 khối; **mỗi khối ≤ 25 từ**.
 
-**Hình thay chữ** — trước khi viết một câu, hỏi "vẽ được không?":
-- Danh sách khái niệm → ô hình (icon tròn + nhãn ≤ 6 từ).
-- Ngưỡng/mốc → thước, thanh đo (vd. thanh tỉ lệ thương tật có vạch 61%).
-- Kết luận có/không → **con dấu** (CÓ THỂ / KHÔNG / TỰ TRẢ) kèm icon.
-- Quy trình → các ô nối bằng mũi tên. Chuỗi sự việc → icon → icon → icon.
-- Tình huống → nhân vật + nhãn tuổi + hành động 1 dòng.
-- Chữ còn lại chỉ để: tiêu đề, nhãn, số điều, ghi chú "dễ nhầm".
+---
 
-## Bước 5 — Dựng bằng HTML/CSS/SVG
+## Bước 1 — Brief (viết ra trước khi làm)
 
-- Sao chép `templates/base.html` → `examples/<slug>/index.html`. Template = bản "trang vở" A4 hoàn chỉnh (nhãn vở, ô hình, thước, con dấu, dòng hành động) — thay nội dung, giữ cấu trúc.
-- Quy tắc thiết kế chi tiết: `references/design-rules.md`. Tóm tắt:
-  - **1 font** hỗ trợ tiếng Việt tốt (Be Vietnam Pro), tối đa 2 độ đậm cho thân bài; **không giãn chữ** (letter-spacing) với chữ có dấu.
-  - **3 màu chức năng** + màu trung tính; mỗi màu một nghĩa và giữ nghĩa đó toàn trang.
-  - **1 cách nhấn mạnh** duy nhất (đậm hoặc nền nhạt). Không gạch chân (trông như link).
-  - Tương phản chữ ≥ 4.5:1 (chữ lớn ≥ 3:1).
-- Không dùng ảnh/biểu tượng có bản quyền; dùng SVG tự vẽ hoặc icon mã nguồn mở có ghi giấy phép.
+1. **Người đọc** là ai, bao nhiêu tuổi, đọc ở đâu?
+2. **Một câu** đọc xong phải nhớ → tiêu đề.
+3. **Một hành động** đọc xong phải làm → khối cuối (số điện thoại, bước làm).
+4. **Khổ: luôn A4 dọc.** `.sheet` = 1080×1528 px = 210×297 mm (1 mm ≈ 5,14 px). Nội dung cách mép ≥ 52 px (~10 mm). Mặc định **in màu trên bìa cứng**; chỉ khi người dùng nói sẽ photo đen trắng mới áp quy tắc bản xám (Bước 7).
+5. **Giọng** và có dùng nhân vật minh họa không.
 
-### 5b. Lớp hình ảnh: ý tưởng → asset → trang trí
+Người dùng không trả lời → tự chọn mặc định hợp lý, ghi giả định ở đầu câu trả lời.
 
-Infographic chỉ có chữ trong khung màu sẽ trông "thiếu". Trước khi code, chọn **một ý tưởng hình ảnh lấy từ chính thế giới của chủ đề** (không phải từ mẫu SaaS):
+## Bước 2 — Kiểm chứng luật (bắt buộc)
 
-| Chủ đề | Ý tưởng hình ảnh | Vật thể trang trí |
+- Mỗi khẳng định = **văn bản + số hiệu + điều/khoản/điểm + tình trạng hiệu lực**. Tra vbpl.vn, congbao.chinhphu.vn; ưu tiên **văn bản hợp nhất** mới nhất. Đọc **nguyên văn cả điều**, không chỉ khoản mình cần — ngoại lệ và tình tiết định khung thường nằm ở khoản bên cạnh.
+- Ghi `nguon.md` cạnh HTML: khẳng định → căn cứ → link → ngày đối chiếu → giả định. **Không in** bảng này; trên trang chỉ giữ số điều cạnh khối liên quan.
+- Không chắc → không đưa lên hình. Không bịa số hiệu.
+- Soát **từng mục** của checklist dưới đây trước khi dựng hình.
+
+### Checklist pháp lý (mỗi mục kèm lỗi thật đã gặp)
+
+**A. Trích dẫn**
+- [ ] Đúng loại văn bản: **Bộ luật** Dân sự / Hình sự / Lao động (lỗi đã gặp: "Luật Dân Sự 2015").
+- [ ] Có số hiệu: BLDS 91/2015/QH13; BLHS 100/2015/QH13 (hợp nhất 135/VBHN-VPQH 2025); BLLĐ 45/2019/QH14 (hợp nhất 125/VBHN-VPQH 2025); Luật Trẻ em 102/2016/QH13.
+- [ ] Mỗi ý gắn **đúng** điều của nó (lỗi đã gặp: mức phạt của Điều 155 đặt dưới căn cứ Điều 134).
+- [ ] Nguyên văn thì ngoặc kép, chép đúng; tóm tắt thì không giả làm nguyên văn; không thu hẹp phạm vi ("người học" ≠ "học sinh").
+- [ ] Phạm vi văn bản khớp đối tượng (lỗi đã gặp: Thông tư 38/2019/TT-BLĐTBXH — chỉ cho giáo dục nghề nghiệp — dẫn như quy định chung).
+- [ ] Cơ quan ban hành còn tồn tại/đổi tên chưa (vd. Bộ LĐTBXH hợp nhất vào Bộ Nội vụ năm 2025).
+
+**B. Mốc, ngưỡng số**
+- [ ] Viết theo ngôn ngữ luật: "chưa đủ 15", "từ đủ 15 đến chưa đủ 18", "từ đủ 18"; không dùng `<15`, `15<X<18` (bỏ sót đúng mốc).
+- [ ] Không trộn hai bộ mốc khác hệ (dân sự 15/18 — Điều 586 BLDS; hình sự 14/16 — Điều 12 BLHS); đặt chung thì tách 2 hàng.
+- [ ] Phạm vi hẹp phải nói rõ: 14–dưới 16 tuổi chỉ chịu TNHS tội rất nghiêm trọng trở lên **trong 28 điều liệt kê**; từ đủ 16 "mọi tội phạm, trừ tội mà Bộ luật có quy định khác".
+- [ ] **Tình tiết định khung đẩy khung lên**: ngưỡng không chỉ là con số. Điều 134: 31–60% + tình tiết khoản 1 (bị hại dưới 16 tuổi, hung khí, côn đồ…) → khoản 3 điểm c, tội rất nghiêm trọng. Trong trường học mốc thực tế là 31%, không phải 61% (lỗi đã gặp: thanh đo chỉ vạch 61%).
+- [ ] Nhóm mặc định của người đọc: kiểm xem người đọc điển hình rơi vào nhóm nào của điều luật (vd. việc làm thêm của sinh viên thường là "công việc khác" → thử việc tối đa 6 ngày làm việc, không phải 30/60 ngày).
+- [ ] Cách tính: tuổi tròn theo ngày sinh (không phải tuổi mụ); "ngày làm việc" khác "ngày".
+
+**C. Chủ thể, cơ chế trách nhiệm**
+- [ ] Phân biệt **liên đới / bổ sung phần còn thiếu / thay thế**; không viết "cùng chịu" khi luật chỉ cho bù phần thiếu (lỗi đã gặp ở Điều 586).
+- [ ] Không đánh đồng cha mẹ với người giám hộ (khoản 3 Điều 586).
+- [ ] Nêu ngoại lệ, miễn trừ (vd. khoản 3 Điều 599: trường không có lỗi thì không bồi thường).
+- [ ] Điều kiện thủ tục đặc biệt (vd. khoản 1 Điều 155 BLHS chỉ khởi tố khi bị hại yêu cầu).
+- [ ] Tuổi chủ thể của từng tội.
+
+**D. Thuật ngữ**
+- [ ] Tên hình phạt đúng Điều 32 BLHS (lỗi đã gặp: "cải tạo giam giữ" — không tồn tại).
+- [ ] Liệt kê đủ lựa chọn trong khung (vd. khoản 1 Điều 155 có "cảnh cáo").
+- [ ] Tên tội đúng nguyên văn.
+
+**E. Bức tranh tổng thể**
+- [ ] Không bỏ tầng phổ biến nhất (kỷ luật nội bộ, xử phạt hành chính); không trình bày thì ghi phạm vi.
+- [ ] Nói rõ điều gì áp dụng cho chính người đọc; không dọa sai, không trấn an sai.
+- [ ] Văn bản mới có thể đổi cách xử lý (vd. Luật Tư pháp người chưa thành niên 59/2024/QH15, hiệu lực 01/01/2026).
+- [ ] Dòng miễn trừ: "thông tin pháp luật phổ thông, không thay thế tư vấn pháp lý".
+
+## Bước 3 — Chọn dạng hình theo hình dạng của nội dung
+
+Bố cục quyết định cấu trúc, phong cách chỉ là lớp áo (ý tưởng layout × style của baoyu-infographic). Mỗi trang có **đúng một hình chính** chiếm 35–50% diện tích.
+
+| Nội dung có dạng… | Hình chính | Ví dụ |
 |---|---|---|
-| Học đường | Trang vở ô li | nhãn vở, lề đỏ, lỗ gáy, thước kẻ, bút đỏ cô giáo, giấy nhớ |
-| Hợp đồng, doanh nghiệp | Hồ sơ giấy tờ | kẹp giấy, tab hồ sơ, chữ ký nháy, dấu "đã đối chiếu" |
-| Tố tụng, thời hạn | Lịch / đồng hồ | tờ lịch xé, mốc ngày khoanh tròn |
+| Ngưỡng, mốc (tuổi, tiền, ngày) | **Thước / trục mốc** | tuổi chịu trách nhiệm; thời hạn thử việc |
+| Tỉ lệ so với ngưỡng | **Thanh đo** có vạch ngưỡng | tỉ lệ thương tật 31%/61%; lương 85% |
+| Diễn biến thời gian | **Dòng thời gian / lịch** | tiến trình tố tụng |
+| Các bước tuần tự | **Ô nối mũi tên** (≤ 5 bước) | gặp sự việc thì làm gì |
+| Điều kiện "nếu… thì…" | **Cây quyết định** | có phải chịu TNHS không |
+| 2–4 phương án | **So sánh / ma trận** | TNHH vs cổ phần |
+| Thứ bậc | **Kim tự tháp** | hiệu lực văn bản QPPL |
+| Khái niệm + yếu tố | **Hub–spoke** | 4 yếu tố cấu thành tội phạm |
+| Liệt kê thuần | **Ô hình** (yếu nhất) | các dạng hành vi |
+
+Gợi ý kết hợp: thước + 3 tình huống áp vào thước; cây quyết định + khối hành động.
+
+## Bước 4 — Bố cục và "hình thay chữ"
+
+Dàn ý theo thứ tự mắt đọc (trên → dưới, trái → phải); số thứ tự mục = thứ tự đọc:
+```
+[Nhãn tiêu đề + nhân vật]        ~14%
+[Bài 1: khái niệm bằng ô hình]   ~12%
+[Bài 2: HÌNH CHÍNH + 2 ghi chú]  ~38%
+[Bài 3: 3 tình huống]            ~24%
+[Bài 4: hành động]               ~10%
+[Ký tên + miễn trừ 1 dòng]       ~2%
+```
+**Mỗi khối ≤ 25 từ.** Trước khi viết một câu, hỏi "vẽ được không?":
+- Danh sách → ô hình (icon tròn + nhãn ≤ 6 từ).
+- Mốc, ngưỡng → thước, thanh đo có vạch.
+- Kết luận có/không → **con dấu** (CÓ THỂ / KHÔNG / TỰ TRẢ / SAI LUẬT) kèm icon.
+- Quy trình → ô nối mũi tên; chuỗi sự việc → icon → icon → icon.
+- Tình huống → nhân vật + nhãn tuổi/vai + hành động 1 dòng + con dấu + số điều nhỏ.
+- Chữ còn lại chỉ cho: tiêu đề, nhãn, số điều, ghi chú "dễ nhầm".
+
+## Bước 5 — Dựng HTML/CSS/SVG
+
+Sao chép `templates/base.html` → `examples/<slug>/index.html`, thay nội dung, giữ cấu trúc.
+
+**5a. Ý tưởng hình ảnh lấy từ thế giới của chủ đề** (không lấy từ mẫu SaaS):
+
+| Chủ đề | Ý tưởng | Vật trang trí |
+|---|---|---|
+| Học đường | Trang vở ô li | nhãn vở, lề đỏ, lỗ gáy, thước kẻ, bút đỏ, giấy nhớ |
+| Lao động, việc làm | Bảng chấm công / phiếu lương | ô ngày, thẻ nhân viên, phong bì lương |
+| Hợp đồng, doanh nghiệp | Hồ sơ giấy tờ | kẹp giấy, tab hồ sơ, chữ ký |
+| Tố tụng, thời hạn | Lịch / đồng hồ | tờ lịch xé, ngày khoanh tròn |
 | Đất đai | Bản đồ địa chính | lưới tọa độ, thửa đất, la bàn |
-| Lao động | Bảng chấm công / phiếu lương | ô giờ, cột tiền |
 
-Quy tắc: (1) **hình chính được "vật thể hóa"** — thước tuổi vẽ thành cây thước thật, quy trình vẽ thành con đường; (2) mỗi khối có **1 icon** đúng nghĩa (Lucide, `assets/icons/`); (3) tình huống có **nhân vật** (`assets/avatars/`, CC0) để người đọc tự đặt mình vào; (4) tối đa **2 vật trang trí "tay làm"** (giấy nhớ, con dấu, nét bút) — chỉ đặt nơi có thông tin cần nhấn; (5) nền có kết cấu nhẹ (ô li, lưới) nhưng chữ luôn nằm trên nền trơn.
+Quy tắc: (1) hình chính được **vật thể hóa** (thước tuổi = cây thước thật; thời hạn = tờ lịch); (2) mỗi khối 1 icon đúng nghĩa; (3) tình huống có nhân vật để người đọc tự đặt mình vào; (4) tối đa 2 vật "tay làm" (giấy nhớ, con dấu) đặt ở chỗ cần nhấn; (5) nền có kết cấu nhẹ nhưng chữ luôn trên nền trơn; (6) dồn sự táo bạo vào **một** chỗ — hình chính.
 
-Chèn icon: viết `<span class="ico" data-icon="gavel"></span>` rồi chạy
-`node .claude/skills/infographic/scripts/icons.mjs <index.html>` (sửa tại chỗ, chạy lại được). Thiếu icon → tải theo `assets/LICENSES.md`.
-Ví dụ đầy đủ: `examples/bao-luc-hoc-duong/` (ý tưởng "trang vở").
+**5b. Chữ**
+- 1 họ font hỗ trợ tiếng Việt chuẩn: **Be Vietnam Pro** (OFL); chữ viết tay cho ghi chú: **Patrick Hand** (OFL).
+- Thứ bậc: tiêu đề 40–48 px; tiêu đề mục 24 px; nhãn 15–18 px; nhãn phụ ≥ 12,5 px (≈ 7 pt in). Tối đa 4 cỡ.
+- Không `letter-spacing` dương với chữ có dấu; không đoạn VIẾT HOA dài (chỉ nhãn ≤ 3 từ như con dấu); không dấu cách trước `! ? : ;`; line-height thân ≥ 1.3.
 
-## Bước 6 — Xuất ảnh
+**5c. Màu**
+- Biến CSS trên `:root`; ≤ 3 màu chức năng, mỗi màu một nghĩa cố định (vd. đỏ = hình sự/sai luật, xanh = dân sự/quyền lợi, vàng = hành động).
+- Tương phản chữ ≥ 4.5:1 (chữ ≥ 24 px hoặc ≥ 18,66 px đậm: ≥ 3:1). Không chữ vàng/hồng nhạt trên nền nhạt.
+- Màu không là kênh duy nhất: mỗi nhóm có icon riêng (giúp cả người mù màu).
+- Màu nền quá nhạt có thể mất khi in → chỉ dùng cho trang trí.
+
+**5d. Tránh dáng "máy làm"**
+- Không tô màu riêng một chữ trong tiêu đề; không nhãn VIẾT HOA giãn chữ trên mỗi mục; không chuỗi "A · B · C".
+- Không bộ thẻ bo góc giống hệt nhau cho mọi thứ — thanh, con dấu, giấy nhớ, ô hình mỗi loại một hình dạng theo vai trò.
+- Không gạch chân để nhấn (giống link); một kiểu nhấn mạnh duy nhất.
+- Đánh số (Bài 1…) chỉ khi nội dung là trình tự đọc thật.
+
+**5e. Asset**
+- Icon: viết `<span class="ico" data-icon="gavel"></span>` rồi chạy `scripts/icons.mjs` (sửa tại chỗ, chạy lại được). Tra tên ở lucide.dev/icons; tải thêm theo `assets/LICENSES.md`.
+- Nhân vật: `assets/avatars/notionists-<seed>.svg`; tải seed mới từ DiceBear, lưu về máy (không nhúng link API).
+- Không ảnh không rõ giấy phép, logo cơ quan, quốc huy, con dấu thật.
+
+## Bước 6 — Xuất
 
 ```bash
-node .claude/skills/infographic/scripts/icons.mjs  <index.html>   # chèn icon
-node .claude/skills/infographic/scripts/render.mjs <index.html>   # xuất
+node .claude/skills/infographic/scripts/icons.mjs  <index.html>
+node .claude/skills/infographic/scripts/render.mjs <index.html>          # thêm --gray nếu sẽ photo đen trắng
+node .claude/skills/infographic/scripts/contrast.mjs <index.html>
 ```
-Ra 2 file cạnh HTML: `infographic.png` (xem màn hình), `infographic.pdf` (**đúng khổ A4, đem in**). Thêm `--gray` để có `infographic-xam.png` khi định photo đen trắng. Script cảnh báo khi tràn khổ hoặc sai tỉ lệ A4.
+Ra `infographic.png` (xem) và `infographic.pdf` (**A4 đúng khổ, đem in**). Chromium: dùng `PW_CHROMIUM` nếu có, không thì tự thử `/opt/pw-browsers/chromium`.
 
-## Bước 7 — Tự soát (không bỏ qua)
+## Bước 7 — Tự kiểm (không bỏ qua)
 
-1. `render.mjs` tự kiểm và in danh sách: chữ sát mép (< 52 px), chữ đè chữ, chữ tràn khung (tính tới mép trong của viền). Sửa đến khi in ra "bố cục ổn". Ngoại lệ có chủ đích: gắn `data-margin` (nhãn ở lề vở, ngưỡng 26 px) hoặc `data-free` (nhãn cố ý nằm ngoài khung, vd. số trên thanh đo).
-   `node .claude/skills/infographic/scripts/contrast.mjs <index.html>` → mọi phần tử chữ phải PASS.
-   Script không thay mắt người: vẫn mở PNG xem — nó không bắt được chữ xuống dòng xấu, nhãn mơ hồ hay sai luật.
-2. Mở PNG, đọc như người đọc lần đầu, đi qua `references/review-checklist.md`.
-3. Thu nhỏ ảnh còn 25%: tiêu đề + hình chính vẫn nhận ra được không? Không → tăng tương phản/kích thước hình chính.
-4. Nếu sẽ photo đen trắng: chạy `--gray`, kiểm tra các nhóm màu còn phân biệt được bằng icon, hoa văn, kiểu viền.
-5. Báo cáo cho người dùng: ảnh, bảng nguồn, các giả định, điểm còn "cần kiểm tra".
+1. **Script**: `render.mjs` phải in "bố cục ổn" — nó bắt: tràn khổ A4, sai tỉ lệ, chữ cách mép < 52 px, chữ đè chữ, chữ tràn/chạm viền khung. Ngoại lệ có chủ đích: `data-margin` (nhãn ở lề, ngưỡng 26 px), `data-free` (nhãn cố ý nằm ngoài khung). `contrast.mjs` phải 0 FAIL.
+2. **Mắt người** (script không bắt được): mở PNG, đọc như người lần đầu thấy:
+   - [ ] 5 giây: nói lại được thông điệp chính.
+   - [ ] Hình chính mang dữ liệu, chiếm 35–50%; thu nhỏ 25% vẫn nhận ra.
+   - [ ] Thứ tự đọc khớp số mục; khoảng trắng giữa khối > trong khối.
+   - [ ] Mỗi khối ≤ 25 từ; không chữ xuống dòng xấu (1 chữ mồ côi, nhãn bị bẻ đôi).
+   - [ ] Mọi con số/ngưỡng có nhãn giải thích (không có "61%" trơ trọi).
+   - [ ] Có khối hành động cụ thể; mọi dấu `*` có chú thích.
+   - [ ] Không chữ đè vật trang trí (lề, lỗ gáy, nét kẻ).
+3. **Phản biện độc lập** (khi được yêu cầu hoặc với bài quan trọng): giao 2 người/agent đọc **chỉ PNG + nguon.md**, không kèm kết luận của mình — một người soát luật (đối chiếu nguyên văn), một người soát thiết kế. Tìm "ngách": chỗ người đọc điển hình hiểu sai, ngoại lệ bị bỏ, nhóm mặc định sai.
+4. **In thử 1 tờ** trước khi in số lượng: màu trên giấy tối và đục hơn màn hình.
+5. Báo cáo: ảnh/PDF, các giả định, điểm còn "cần kiểm tra".
 
-## Khi được nhờ **chấm** infographic có sẵn
+## Khi được nhờ chấm infographic có sẵn
 
-Trả lời theo thứ tự: (1) lỗi pháp lý — bảng "bạn viết / đúng là / mức độ"; (2) lỗi thiết kế theo `review-checklist.md`; (3) đề xuất dạng hình chính tốt hơn. Kết luận trước, chi tiết sau.
+Kết luận trước. Rồi: (1) lỗi pháp lý — bảng "bạn viết / đúng là / mức độ"; (2) lỗi thiết kế theo Bước 5 và 7; (3) đề xuất hình chính tốt hơn.
 
-## Nguồn tham khảo của skill
+## Nguồn tham khảo của skill (đọc 06/11/2026)
 
-Xem `references/SOURCES.md` (baoyu-infographic, k-dense scientific infographics, AntV Infographic, WCAG 2.1, Tufte).
+- jimliu/baoyu-skills — `baoyu-infographic` (MIT): tách layout × style, danh mục bố cục.
+- k-dense-ai/scientific-agent-skills — `infographics` (MIT): thứ bậc 3 tầng, vòng tự chấm.
+- antvis/infographic (MIT): infographic khai báo dữ liệu → template → SVG.
+- Skill `frontend-design`, `dataviz` (Anthropic): tránh bố cục rập khuôn, token màu.
+- WCAG 2.1 SC 1.4.3, 1.4.11: ngưỡng tương phản. Tufte: mọi nét vẽ phải mang thông tin.
+- Lucide (ISC), DiceBear Notionists của Zoish (CC0), Be Vietnam Pro và Patrick Hand (OFL).
