@@ -33,7 +33,7 @@ const sb = {
     { id: 'the', type: 'KnowledgeCard', bars: 4, props: {
       kicker: 'Hiểu nhanh · Điều 328 BLDS', term: st.featured.term,
       branches: memo.tree.map((t, i) => ({ label: t.label, icon: icons[i], children: i >= 2 ? (t.children ?? []).slice(0, 1) : [], tone: ['accent', 'accent2', 'warn', 'accent'][i] })),
-      hook: memo.hook.replace(' bằng số tiền cọc', ''), at: { branches: 1, hook: 6 } } },
+      hook: memo.hook.replace(' bằng số tiền cọc', ''), at: { branches: -1, hook: 6 } } },
     // ── cụm 2 ──
     { id: 'dap', type: 'StatCount', bars: 2, bg: 'dark', props: {
       kicker: 'Chủ nhà bỏ cuộc phải trả', stats: [{ value: 40, from: 20, label: 'triệu', at: 0 }],
@@ -42,11 +42,11 @@ const sb = {
       kicker: 'Luyện ngay trên web', title: 'Cùng luật, tình huống khác', accentWords: [0, 1], device: 'phone',
       media: { kind: 'video', src: 'cap/quiz-6tr.mp4' }, poster: 'cap/quiz-6tr-0.png', syncSec: 0.6, syncBeat: 2,
       // impact freeze: 0,25 s sau cú bấm (lúc ô đúng hiện xanh) đứng 24 khung + flash; cuối cảnh điện thoại lao tới lấp khung (vật thành thế giới)
-      freeze: { after: 0.25, frames: 24 }, exitPush: true,
+      freeze: { after: 0.25, frames: 24 }, exitPush: true, flash: false,
       // con trỏ lớn vào từ dưới, đầu mũi tên chạm "6 triệu" và BẤM đúng phách 2 → gây ra đứng hình; khoanh vẽ tay ô đáp án
       cursor: [{ beat: 0.3, x: 760, y: 2150 }, { beat: 1.8, x: 445, y: 889 }, { beat: 2, x: 445, y: 889, click: true }, { beat: 3.2, x: 470, y: 900 }, { beat: 4.2, x: 1250, y: 2200 }],
       notes: [{ kind: 'circle', x: 300, y: 842, w: 500, h: 92, beat: 2.7, out: 11.2 }],
-      chips: [{ text: '3 triệu + 3 triệu = 6 triệu', at: 3, x: 70, y: 980, tone: 'accent2' }, { text: 'Căn cứ Khoản 2 Điều 328', at: 5, x: 300, y: 1130, tone: 'accent' }] } },
+      chips: [{ text: '3 triệu + 3 triệu = 6 triệu', at: 3.4, x: 70, y: 1030, tone: 'accent2' }, { text: 'Căn cứ Khoản 2 Điều 328', at: 5, x: 330, y: 575, tone: 'accent' }] } },
     { id: 'bac', type: 'CardMontage', bars: 3, enter: 'zoom', props: {
       // 6 thẻ bài tập THẬT của web cho khái niệm Đặt cọc (harness mount component, 3 thẻ ở trạng thái đã trả lời đúng)
       kicker: 'Một khái niệm', title: 'Sáu dạng bài', accentWords: [1, 2], start: 0, every: 2,
@@ -61,7 +61,7 @@ const sb = {
       rider: 'Đặt cọc', points: forgetting(), marks: [{ x: 0.16, label: 'ôn 1' }, { x: 0.38, label: 'ôn 2' }, { x: 0.7, label: 'ôn 3' }] } },
     { id: 'chuoi', type: 'MediaHero', bars: 3, bg: 'dark', props: {
       kicker: 'Thẻ chuyên cần', media: { kind: 'video', src: 'cap/ignite-75.mp4' }, poster: 'cap/ignite-75-45.png',
-      syncSec: 3.865, hitBeat: 8, focus: { x: 0.5, y: 0.435 }, hits: [8], baseScale: 1.35, pushIn: 1.7, cutBottom: 380, freezeFrames: 14, skipFrames: 45,
+      syncSec: 3.865, hitBeat: 8, focus: { x: 0.5, y: 0.435 }, hits: [8], baseScale: 1.55, pushIn: 1.6, cutBottom: 380, freezeFrames: 14, skipFrames: 45,
       notes: [{ kind: 'circle', x: 360, y: 650, w: 360, h: 370, beat: 8.6, color: '#ffd27a' }],
       lines: [{ text: 'Học mỗi ngày,', at: 0 }, { text: 'thắp một ký hoạ', at: 2, color: '#d8b4ff' }], linesOut: 6 } },
     { id: 'chuky', type: 'CardCycle', bars: 3, bg: '#08080c', props: {
@@ -79,10 +79,10 @@ const sb = {
       finale: { media: { kind: 'video', src: 'cap/post-celebrate.webm', alpha: true }, at: 4 }, finaleLabel: 'CHỦ TỊCH NƯỚC', hits: [5.5],
       note: 'Chức danh mô phỏng trong trò chơi học tập, không phải chức vụ thật.' } },
     { id: 'ket', type: 'EndCard', bars: 2, props: {
-      mark: { text: '§' }, name: 'Luyện Luật', tags: ['Miễn phí', 'Không cần tài khoản'], cta: 'Link ở bio',
+      mark: { text: '§' }, name: 'Luyện Luật', tags: ['Miễn phí', 'Không cần tài khoản'], cta: 'Link ở bio', typeAt: 4.5,
       url: 'tranquanghaofake-dotcom.github.io/Law', disclaimer: 'Thông tin pháp luật chung, không phải tư vấn.',
       // con trỏ bấm nút kêu gọi → nút nảy (cú nện), rồi rời khung
-      cursor: [{ beat: 3.2, x: 820, y: 2150 }, { beat: 4.3, x: 600, y: 930 }, { beat: 4.5, x: 600, y: 930, click: true }, { beat: 6, x: 640, y: 960 }, { beat: 7.5, x: 1300, y: 2200 }], hits: [4.5] } },
+      cursor: [{ beat: 3.2, x: 820, y: 2150 }, { beat: 4.3, x: 600, y: 930 }, { beat: 4.5, x: 600, y: 930, click: true }, { beat: 4.8, x: 780, y: 900 }, { beat: 5.5, x: 1350, y: 760 }], hits: [4.5] } },
   ],
   cues: [
     { sfx: 'drop_002', beat: 8, volume: 0.35 },

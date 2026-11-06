@@ -80,7 +80,7 @@ export const Rays: React.FC<{ x?: number; y?: number; size?: number; c?: string;
 };
 
 /** Chữ vào từng từ: nhoè → nét, không trượt; mỗi từ cách `step` khung. `accentWords`: chỉ số từ tô màu nhấn. */
-export const Words: React.FC<{ text: string; at: number; step?: number; style?: React.CSSProperties; accentWords?: number[]; slam?: boolean }> = ({ text, at, step = 5, style, accentWords = [], slam = false }) => {
+export const Words: React.FC<{ text: string; at: number; step?: number; style?: React.CSSProperties; accentWords?: number[]; slam?: boolean; echo?: boolean }> = ({ text, at, step = 5, style, accentWords = [], slam = false, echo = false }) => {
   const frame = useCurrentFrame();
   return (
     <div style={{ display: "flex", flexWrap: "wrap", columnGap: "0.26em", ...style }}>
@@ -88,8 +88,13 @@ export const Words: React.FC<{ text: string; at: number; step?: number; style?: 
         const s = at + i * step;
         const p = interpolate(frame, [s, s + (slam ? 10 : 8)], [0, 1], { ...clamp, easing: Easing.out(Easing.exp) });
         return (
-          <span key={i} style={{ display: "inline-block", opacity: frame >= s ? Math.min(1, p * 1.5) : 0, scale: slam ? interpolate(p, [0, 1], [1.8, 1]) : 1, filter: p < 0.98 ? `blur(${((1 - p) * (slam ? 14 : 8)).toFixed(1)}px)` : undefined, color: accentWords.includes(i) ? T.accent : undefined }}>
+          <span key={i} style={{ display: "inline-block", position: echo ? "relative" : undefined, opacity: frame >= s ? Math.min(1, p * 1.5) : 0, scale: slam ? interpolate(p, [0, 1], [1.8, 1]) : 1, filter: p < 0.98 ? `blur(${((1 - p) * (slam ? 14 : 8)).toFixed(1)}px)` : undefined, color: accentWords.includes(i) ? T.accent : undefined }}>
             {w}
+            {/* echo trail (kinetic type): 3 bản viền rỗng nở ra sau khi chữ đáp rồi tắt — không blur, không glow */}
+            {echo && frame >= s + 6 && frame < s + 30 && [0, 1, 2].map((k) => {
+              const q = interpolate(frame, [s + 6 + k * 3, s + 26 + k * 3], [0, 1], { ...clamp, easing: Easing.out(Easing.cubic) });
+              return q > 0 && q < 1 ? <span key={k} aria-hidden style={{ position: "absolute", left: 0, top: 0, color: "transparent", WebkitTextStroke: "2px currentColor", scale: 1 + q * (0.18 + k * 0.1), opacity: (1 - q) * 0.55, pointerEvents: "none" }}>{w}</span> : null;
+            })}
           </span>
         );
       })}
@@ -234,14 +239,16 @@ export const Cursor: React.FC<{ path: { f: number; x: number; y: number; click?:
 };
 
 /** Chú thích vẽ tay (khoanh/gạch chân) lên UI thật — nét SVG hơi lệch như bút dạ, vẽ dần theo khung. kind: circle | underline. */
-export const Annotate: React.FC<{ kind: "circle" | "underline"; x: number; y: number; w: number; h: number; at: number; out?: number; len?: number; color?: string; width?: number }> = ({ kind, x, y, w, h, at, out, len = 14, color = T.accent, width = 7 }) => {
+export const Annotate: React.FC<{ kind: "circle" | "underline" | "strike"; x: number; y: number; w: number; h: number; at: number; out?: number; len?: number; color?: string; width?: number }> = ({ kind, x, y, w, h, at, out, len = 14, color = T.accent, width = 7 }) => {
   const frame = useCurrentFrame();
   if (frame < at || (out != null && frame >= out + 6)) return null;
   const fade = out == null ? 1 : interpolate(frame, [out, out + 6], [1, 0], clamp);
   const p = interpolate(frame, [at, at + len], [0, 1], { ...clamp, easing: easeOut });
   const d = kind === "circle"
     ? `M ${w * 0.55} ${h * 0.02} C ${w * 1.02} ${h * 0.0}, ${w * 1.04} ${h * 0.95}, ${w * 0.5} ${h * 0.98} C ${-w * 0.04} ${h * 1.0}, ${-w * 0.03} ${h * 0.06}, ${w * 0.48} ${h * 0.04} L ${w * 0.62} ${h * 0.1}`
-    : `M 0 ${h * 0.6} C ${w * 0.3} ${h * 0.4}, ${w * 0.7} ${h * 0.75}, ${w} ${h * 0.5}`;
+    : kind === "strike"
+      ? `M ${-w * 0.02} ${h * 0.58} C ${w * 0.3} ${h * 0.48}, ${w * 0.65} ${h * 0.56}, ${w * 1.02} ${h * 0.44}`
+      : `M 0 ${h * 0.6} C ${w * 0.3} ${h * 0.4}, ${w * 0.7} ${h * 0.75}, ${w} ${h * 0.5}`;
   return (
     <svg width={w + 20} height={h + 20} style={{ position: "absolute", left: x - 10, top: y - 10, overflow: "visible", pointerEvents: "none", zIndex: 25, opacity: fade }}>
       <path d={d} transform="translate(10 10)" fill="none" stroke={color} strokeWidth={width} strokeLinecap="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - p} />
