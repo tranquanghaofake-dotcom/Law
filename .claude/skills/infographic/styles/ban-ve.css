@@ -1,0 +1,37 @@
+/* ban-ve: bản vẽ kỹ thuật — giấy kẻ ô kỹ thuật, khung bản vẽ có tọa độ, đường kích thước, khung tên. Hợp: nhà ở, thuê trọ, xây dựng, đất đai, quy trình có thời hạn. Font Barlow (có tiếng Việt). */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700;800&display=swap');
+:root {
+  --paper: #fbfdff; --ink: #14213d; --muted: #4a5675; --line: #b9cbe6; --soft: #e6eefb;
+  --info: #1f4e8c; --info-soft: #dce8f8;
+  --bad: #c2410c; --bad-soft: #fde6d8;        /* cam an toàn: cảnh báo, thời hạn */
+  --good: #0f766e; --good-soft: #d5efec;
+  --accent: #fbbf24; --accent-ink: #3a2a00;
+  --font: 'Barlow', 'Be Vietnam Pro', sans-serif; --font-display: 'Barlow Condensed', 'Barlow', sans-serif;
+  --radius: 4px; --pad-left: 96px;
+}
+.sheet {
+  background-color: var(--paper);
+  background-image:
+    linear-gradient(#d7e3f4 1px, transparent 1px), linear-gradient(90deg, #d7e3f4 1px, transparent 1px),
+    linear-gradient(#edf3fb 1px, transparent 1px), linear-gradient(90deg, #edf3fb 1px, transparent 1px);
+  background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+  background-position: 26px 26px;
+}
+/* khung bản vẽ 2 nét + vạch tọa độ */
+.sheet::before { content: ""; position: absolute; inset: 26px; border: 2px solid var(--info); pointer-events: none; }
+.sheet::after { content: ""; position: absolute; inset: 32px; border: 0.75px solid var(--info); pointer-events: none; }
+.frame-marks { position: absolute; inset: 0; pointer-events: none; font: 600 12px var(--font); color: var(--info); }
+.frame-marks span { position: absolute; }
+.secno { color: var(--bad); font-family: var(--font-display); }
+.secno::after { content: ""; display: block; margin: 4px 0 0 auto; width: 26px; border-top: 2px solid var(--bad); }
+h2 { text-transform: none; letter-spacing: 0.01em; font-size: 27px; }
+.card, .tile, .case, .bubble, .go, .side, .tree .br { border-color: var(--line); box-shadow: 3px 3px 0 var(--soft); }
+.head h1 { font-size: 54px; font-weight: 800; line-height: 1.02; }
+/* khung tên (title block) */
+.titleblock { display: grid; grid-template-columns: auto auto; border: 2px solid var(--info); background: #fff; font-size: 13.5px; }
+.titleblock div { padding: 4px 10px; border: 0.75px solid var(--line); }
+.titleblock div:nth-child(odd) { color: var(--muted); font-weight: 600; }
+.titleblock div:nth-child(even) { font-weight: 700; }
+.timeline .node { border-radius: 4px; border-width: 2px; }
+.timeline::before { background: repeating-linear-gradient(var(--info) 0 8px, transparent 8px 14px); width: 2px; left: 25px; }
+.stamp { border-radius: 3px; }

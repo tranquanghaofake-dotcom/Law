@@ -1,0 +1,11 @@
+/* so-cham-cong: sổ chấm công / thẻ nhân viên — giấy kẻ dòng kế toán, lề đỏ đôi, dải ô ngày. Hợp: lao động, tiền lương, thuế, bảo hiểm. */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Patrick+Hand&display=swap');
+:root { --paper: #fbfcfa; --ink: #1d2b4f; --muted: #4d5872; --line: #b9d5c2; --soft: #d6ebdd;
+  --info: #2f7d5b; --info-soft: #d6ebdd; --bad: #b42318; --bad-soft: #fde7e4; --good: #2f7d5b; --good-soft: #d6ebdd;
+  --accent: #f5c044; --accent-ink: #3d2e00; --pad-left: 120px; }
+.sheet { background-image: linear-gradient(#dbe9df 1px, transparent 1px),
+  linear-gradient(90deg, transparent 87px, #e7a39b 87px 89px, transparent 89px 93px, #e7a39b 93px 95px, transparent 95px);
+  background-size: 100% 32px, 100% 100%; }
+.secno { left: -104px; width: 60px; }
+.head { background: #fff; border: 2px solid var(--ink); border-radius: 18px; padding: 20px 24px; }
+.bar-row .fill { background-image: repeating-linear-gradient(90deg, transparent 0 calc(var(--day, 10px) - 1.5px), #a9cdb6 calc(var(--day, 10px) - 1.5px) var(--day, 10px)); }

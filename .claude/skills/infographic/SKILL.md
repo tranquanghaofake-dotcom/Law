@@ -10,14 +10,37 @@ Poster nhiều chữ chia ô màu **không phải** infographic. Lỗi nội dun
 
 File này là **nguồn duy nhất** của skill. Thư mục đi kèm:
 ```
-scripts/icons.mjs     chèn icon SVG vào HTML (data-icon="tên")
+styles/_base.css      khung A4 + CSS mọi khối (dùng chung)
+styles/<ten>.css      MỘT STYLE = token màu, font, trang trí (dòng đầu = mô tả + chủ đề hợp)
+blocks/<ten>.html     MỘT KHỐI BỐ CỤC = đoạn HTML mẫu (dòng đầu = mô tả + khi nào dùng)
+scripts/new.mjs       ráp bài mới: style + danh sách khối → index.html, ke-hoach.md, nguon.md
+scripts/assets.mjs    tải icon Lucide / nhân vật Notionists; avatar-sheet để chọn đúng vai
+scripts/icons.mjs     chèn icon (data-icon) và minh họa tự vẽ (data-illus) vào HTML
 scripts/render.mjs    xuất PNG + PDF A4, tự kiểm bố cục
-scripts/contrast.mjs  đo tương phản WCAG cho mọi chữ
-assets/icons/         icon Lucide (ISC)        assets/avatars/  nhân vật Notionists (CC0)
-assets/LICENSES.md    giấy phép + cách tải thêm
-templates/base.html   khung A4 "trang vở" hoàn chỉnh
-examples/<slug>/      bài mẫu: index.html, nguon.md, infographic.png/.pdf
+scripts/contrast.mjs  đo tương phản WCAG
+assets/icons|avatars|illustrations   asset đã tải/tự vẽ (+ LICENSES.md)
+examples/<slug>/      bài đã làm (mỗi bài: index.html, ke-hoach.md, nguon.md, infographic.png/.pdf)
 ```
+
+## Quy trình đầy đủ (8 pha) — dùng cho mọi chủ đề, mọi style
+
+| Pha | Việc | Ra gì |
+|---|---|---|
+| 0. Kế hoạch | `node scripts/new.mjs --list` xem style/khối; chọn hoặc quyết định tạo mới; `new.mjs <slug> --style … --blocks …` | thư mục bài + `ke-hoach.md` |
+| 1. Tìm hiểu | Đọc nguyên văn luật (Bước 2); tìm nhóm mặc định của người đọc và các ngách; liệt kê **thế giới hình ảnh** của chủ đề (đồ vật, giấy tờ, nơi chốn) | `ke-hoach.md` mục 2, `nguon.md` |
+| 2. Chọn hình | Hình dạng nội dung → khối (Bước 3); chọn **một** khối làm hình chính; sắp thứ tự đọc | `ke-hoach.md` mục 3 |
+| 3. Style | Dùng style có sẵn nếu hợp; nếu không → tạo style mới (mục "Thêm nhanh" dưới) từ thế giới hình ảnh ở pha 1 | `styles/<ten>.css` |
+| 4. Asset | `assets.mjs icon …`; `assets.mjs avatar-sheet …` rồi chọn seed hợp vai; vẽ 1 minh họa SVG riêng cho chủ đề nếu cần (`assets/illustrations/`, dùng `currentColor`) | file trong `assets/` |
+| 5. Dựng | Điền `index.html` từ khung đã ráp; chữ theo Bước 4–5; CSS riêng của bài giữ ngắn | `index.html` |
+| 6. Kiểm | `icons.mjs` → `render.mjs` ("bố cục ổn") → `contrast.mjs` → soát mắt người (Bước 7) → phản biện độc lập nếu bài quan trọng | PNG, PDF |
+| 7. Thu hoạch | Thứ gì dùng lại được (khối mới, style mới, quy tắc mới, lỗi mới) → đưa vào thư viện / checklist trong file này | thư viện lớn dần |
+
+## Thêm nhanh style, khối, chủ đề
+
+- **Style mới** (≈ 15 phút): tạo `styles/<ten>.css`. Dòng 1: `/* ten: mô tả — vật liệu, trang trí. Hợp: chủ đề… */`. Bên trong chỉ: `@import` font (có tiếng Việt), ghi đè token `:root` (`--paper --ink --muted --line --soft --info --good --bad --accent --font --font-display --radius --pad-left`), nền `.sheet`, trang trí (`::before/::after`), cách vẽ `.secno`, `.head`. Không đụng bố cục khối. `new.mjs --list` tự thấy.
+- **Khối mới**: tạo `blocks/<ten>.html` (dòng 1: `<!-- ten: mô tả | khi nào dùng -->`, dùng `<div class="secno" data-margin>`), thêm CSS của khối vào `styles/_base.css` với tiền tố riêng, dùng token chứ không dùng mã màu. **Không** đặt tên lớp trùng biến thể có sẵn (`.ok/.no/.yes/.maybe/.hot` là biến thể, không phải khối).
+- **Chủ đề mới**: thêm 1 dòng vào bảng "Ý tưởng hình ảnh" (Bước 5a) và, nếu có lỗi luật mới gặp, 1 dòng vào checklist pháp lý (Bước 2).
+- Thư viện hiện có — style: `vo-o-li` (học đường), `so-cham-cong` (lao động), `ban-ve` (nhà ở, thủ tục có thời hạn). Khối: `head, tiles, bars, meter, cases, says, flow, timeline, compare, tree, notes, sign`.
 
 ---
 
@@ -113,7 +136,7 @@ Dàn ý theo thứ tự mắt đọc (trên → dưới, trái → phải); số
 
 ## Bước 5 — Dựng HTML/CSS/SVG
 
-Sao chép `templates/base.html` → `examples/<slug>/index.html`, thay nội dung, giữ cấu trúc.
+Ráp khung bằng `scripts/new.mjs` (pha 0), rồi thay nội dung. `templates/base.html` và hai bài đầu (`bao-luc-hoc-duong`, `thu-viec`) là bản tự đứng, viết trước khi có thư viện — xem để học, không cần sao chép.
 
 **5a. Ý tưởng hình ảnh lấy từ thế giới của chủ đề** (không lấy từ mẫu SaaS):
 
@@ -124,6 +147,9 @@ Sao chép `templates/base.html` → `examples/<slug>/index.html`, thay nội dun
 | Hợp đồng, doanh nghiệp | Hồ sơ giấy tờ | kẹp giấy, tab hồ sơ, chữ ký |
 | Tố tụng, thời hạn | Lịch / đồng hồ | tờ lịch xé, ngày khoanh tròn |
 | Đất đai | Bản đồ địa chính | lưới tọa độ, thửa đất, la bàn |
+| Nhà ở, thuê trọ, xây dựng | Bản vẽ kỹ thuật (style `ban-ve`) | khung bản vẽ, khung tên, đường kích thước, mặt bằng phòng |
+| Tiêu dùng, mua bán | Hóa đơn, biên lai | mép răng cưa, mã vạch, dòng tổng tiền |
+| Giao thông | Biển báo, bản đồ đường | biển tròn/tam giác, vạch kẻ đường |
 
 Quy tắc: (1) hình chính được **vật thể hóa** (thước tuổi = cây thước thật; thời hạn = tờ lịch); (2) mỗi khối 1 icon đúng nghĩa; (3) tình huống có nhân vật để người đọc tự đặt mình vào; (4) tối đa 2 vật "tay làm" (giấy nhớ, con dấu) đặt ở chỗ cần nhấn; (5) nền có kết cấu nhẹ nhưng chữ luôn trên nền trơn; (6) dồn sự táo bạo vào **một** chỗ — hình chính.
 
@@ -144,7 +170,7 @@ Quy tắc: (1) hình chính được **vật thể hóa** (thước tuổi = câ
 - Không gạch chân để nhấn (giống link); một kiểu nhấn mạnh duy nhất.
 - Đánh số (Bài 1…) chỉ khi nội dung là trình tự đọc thật.
 
-**5e. Asset**
+**5e. Asset** (tải bằng `scripts/assets.mjs`)
 - Icon: viết `<span class="ico" data-icon="gavel"></span>` rồi chạy `scripts/icons.mjs` (sửa tại chỗ, chạy lại được). Tra tên ở lucide.dev/icons; tải thêm theo `assets/LICENSES.md`.
 - Nhân vật: `assets/avatars/notionists-<seed>.svg`; tải seed mới từ DiceBear, lưu về máy (không nhúng link API).
 - Không ảnh không rõ giấy phép, logo cơ quan, quốc huy, con dấu thật.

@@ -1,0 +1,14 @@
+/* vo-o-li: trang vở ô li học trò — lưới ô li, lề đỏ, lỗ gáy, chữ viết tay. Hợp: học đường, trẻ em, gia đình, giáo dục. */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Patrick+Hand&display=swap');
+:root { --paper: #fefefc; --ink: #1f2333; --muted: #4c5266; --line: #c7d6ec; --soft: #e6edf6;
+  --info: #3d2c8d; --info-soft: #ece8f8; --bad: #b3261e; --bad-soft: #fbe4e1; --good: #1857a4; --good-soft: #e2edfb;
+  --accent: #f7d046; --accent-ink: #3b3100; --pad-left: 128px; }
+.sheet { background-image: linear-gradient(#cbd8ec 1px, transparent 1px), linear-gradient(90deg, #cbd8ec 1px, transparent 1px),
+  linear-gradient(#e6edf6 1px, transparent 1px), linear-gradient(90deg, #e6edf6 1px, transparent 1px);
+  background-size: 48px 48px, 48px 48px, 12px 12px, 12px 12px; }
+.sheet::before { content: ""; position: absolute; top: 0; bottom: 0; left: 104px; width: 2px; background: #e57373; }
+.secno { font-family: var(--font-hand); font-weight: 400; font-size: 26px; }
+.secno::before { content: "Bài "; }
+h2 { color: var(--info); }
+.head { background: #fff; border: 3px solid var(--info); border-radius: 26px; padding: 18px 24px; box-shadow: 0 0 0 6px #fff, 0 0 0 8px var(--line); }
+.head h1 { color: var(--info); font-size: 40px; }
