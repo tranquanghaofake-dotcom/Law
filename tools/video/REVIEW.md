@@ -6,7 +6,8 @@
   - khoanh vẽ tay quanh đáp án và huy chương 75;
   - chip "Đặt cọc" chạy theo đường quên;
   - tủ chức danh chồng chiều sâu;
-  - echo viền chữ ở "20 TRIỆU" và "CHỦ TỊCH NƯỚC".
+  - echo viền chữ ở "20 TRIỆU" và "CHỦ TỊCH NƯỚC";
+  - **match cut** (Ben Marriott): chấm "Đặt cọc" ở cuối đường quên trượt và nở thành vòng xanh đúng chỗ, đúng cỡ huy chương 74, rồi cắt thẳng sang cảnh chuỗi (toạ độ đo bằng `remotion still`).
 - **Phản biện lần 3 (1 subagent, xem 28 khung + tự trích 18 khung):**
 
 | Lỗi | Xử lý |
