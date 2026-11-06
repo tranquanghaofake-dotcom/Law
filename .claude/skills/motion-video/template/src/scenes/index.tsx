@@ -82,6 +82,23 @@ const LogoReveal: React.FC<P> = ({ props }) => {
 };
 
 /* StatCount — số đếm lên theo phách + (tuỳ chọn) vòng ảnh 3D. props: kicker, stats[{value,label,at}], ring[Media ảnh] */
+/* Odometer — số cuộn như đồng hồ công-tơ-mét: hàng đơn vị cuộn liên tục, hàng trên chỉ nhích khi hàng dưới qua 9 → 0 (có nhớ). */
+const Odometer: React.FC<{ value: number; digits: number; color: string }> = ({ value, digits, color }) => (
+  <span style={{ display: "inline-flex", color, height: "1em", lineHeight: 1, overflow: "hidden", verticalAlign: "top", fontVariantNumeric: "tabular-nums" }}>
+    {Array.from({ length: digits }, (_, i) => {
+      const place = 10 ** (digits - 1 - i);
+      const below = value % place; // phần của các hàng thấp hơn
+      const carry = place === 1 ? 0 : Math.max(0, below - (place - 1)); // 0→1 khi hàng dưới đi từ ...9 lên ...0
+      const pos = (Math.floor(value / place) % 10) + (place === 1 ? value % 1 : carry);
+      return (
+        <span key={i} style={{ display: "flex", flexDirection: "column", translate: `0 ${(-pos).toFixed(3)}em` }}>
+          {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0].map((d, k) => <span key={k} style={{ height: "1em", lineHeight: 1 }}>{d}</span>)}
+        </span>
+      );
+    })}
+  </span>
+);
+
 const StatCount: React.FC<P> = ({ props }) => {
   const T = useT();
   const f = useCurrentFrame();
@@ -100,7 +117,7 @@ const StatCount: React.FC<P> = ({ props }) => {
         const v = Math.round(interpolate(f, [at, at + bt(2) - bt(0)], [s.from ?? 0, s.value], { ...clamp, easing: easeOut }));
         return (
           <div key={i} style={{ ...H1, fontSize: solo ? SIZE.hero * 2.6 : i === 0 ? SIZE.title * 1.15 : SIZE.title * 0.9, lineHeight: solo ? 0.95 : 1.04, color: T.ink, marginTop: solo ? SIZE.title * 0.4 : 0, ...blurIn(f, at) }}>
-            <span style={{ color: T.accent }}>{v.toLocaleString("vi-VN")}</span>{solo ? <div style={{ fontSize: SIZE.title }}>{s.label}</div> : ` ${s.label}`}
+            {props.roll ? <Odometer value={interpolate(f, [at, at + bt(2) - bt(0)], [s.from ?? 0, s.value], { ...clamp, easing: Easing.inOut(Easing.poly(4)) })} digits={String(s.value).length} color={T.accent} /> : <span style={{ color: T.accent }}>{v.toLocaleString("vi-VN")}</span>}{solo ? <div style={{ fontSize: SIZE.title }}>{s.label}</div> : ` ${s.label}`}
           </div>
         );
       })}
