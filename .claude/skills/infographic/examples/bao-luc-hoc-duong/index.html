@@ -6,147 +6,255 @@
 <title>Bạo lực học đường — tuổi và trách nhiệm</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Patrick+Hand&display=swap" rel="stylesheet">
 <style>
+  /* Ý tưởng: một trang vở ô li của học trò — nhãn vở, lề đỏ, thước kẻ, bút đỏ của cô giáo. */
   :root {
-    --paper: #f7f3ea;
-    --card: #fffdf8;
-    --ink: #1c2430;
-    --muted: #4f5866;
-    --line: #d9d1c0;
-    --crim: #9e2a2b;      /* hình sự */
-    --crim-soft: #f6e3e1;
-    --blue: #1f4e79;      /* dân sự */
-    --blue-soft: #e2ecf5;
-    --gold: #f2c14e;      /* hành động */
-    --gold-soft: #fbefcf;
-    --none: #e9e5dc;      /* không chịu trách nhiệm */
-    --r: 14px;
+    --paper: #fefefc;
+    --grid: #e3ebf5;      /* ô li nhỏ */
+    --grid-main: #c7d6ec; /* dòng kẻ đậm */
+    --margin: #e57373;    /* lề đỏ */
+    --violet: #3d2c8d;    /* mực tím: tiêu đề */
+    --ink: #1f2333;
+    --muted: #4c5266;
+    --red: #b3261e;       /* hình sự + bút đỏ */
+    --red-soft: #fbe7e5;
+    --blue: #1857a4;      /* dân sự */
+    --blue-soft: #e4eefb;
+    --ruler: #f7d046;     /* thước nhựa vàng */
+    --ruler-ink: #3b3100;
+    --u: 108px;           /* 1 tuổi trên thước */
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { background: #cfc8b8; font-family: 'Be Vietnam Pro', Inter, 'Noto Sans', sans-serif; color: var(--ink); }
+  body { background: #c9cfd8; font-family: 'Be Vietnam Pro', Inter, sans-serif; color: var(--ink); }
+
   .sheet {
-    width: 1080px; height: 1528px; margin: 0 auto; background: var(--paper);
-    padding: 40px 56px 22px; display: flex; flex-direction: column; gap: 16px; overflow: hidden;
+    position: relative; width: 1080px; height: 1528px; margin: 0 auto; overflow: hidden;
+    background-color: var(--paper);
+    background-image:
+      linear-gradient(var(--grid-main) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid-main) 1px, transparent 1px),
+      linear-gradient(var(--grid) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+    background-size: 48px 48px, 48px 48px, 12px 12px, 12px 12px;
+    padding: 30px 48px 20px 128px;
+    display: flex; flex-direction: column; gap: 18px;
   }
   .sheet[data-size="social"] { height: 1350px; }
   .sheet[data-size="story"] { height: 1920px; }
+  /* lề đỏ + lỗ đóng gáy */
+  .sheet::before { content: ""; position: absolute; top: 0; bottom: 0; left: 104px; width: 2px; background: var(--margin); }
+  .holes { position: absolute; left: 10px; top: 0; bottom: 0; display: flex; flex-direction: column; justify-content: space-around; }
+  .holes i { width: 22px; height: 22px; border-radius: 50%; background: #c9cfd8; box-shadow: inset 0 2px 3px rgba(0,0,0,.25); }
 
-  /* Tầng 1 */
-  header .kicker { font-size: 17px; font-weight: 600; color: var(--crim); text-transform: uppercase; }
-  header h1 { font-size: 50px; line-height: 1.12; font-weight: 800; margin-top: 8px; }
-  header h1 em { font-style: normal; color: var(--crim); }
-  header .lede { font-size: 21px; line-height: 1.5; color: var(--muted); margin-top: 10px; }
+  .hand { font-family: 'Patrick Hand', 'Be Vietnam Pro', cursive; }
+  .ico { display: inline-flex; width: 1em; height: 1em; flex: none; }
+  .ico svg { width: 100%; height: 100%; }
 
-  .num { display: inline-flex; width: 36px; height: 36px; border-radius: 50%; background: var(--ink); color: var(--paper);
-         font-weight: 700; font-size: 19px; align-items: center; justify-content: center; flex: none; }
-  h2 { display: flex; gap: 12px; align-items: center; font-size: 26px; font-weight: 700; line-height: 1.25; }
+  /* Bài n ở lề */
+  section { position: relative; }
+  .bai { position: absolute; left: -102px; top: 3px; width: 72px; text-align: right; color: var(--violet); font-size: 23px; line-height: 1; }
+  h2 { font-size: 25px; font-weight: 700; color: var(--violet); line-height: 1.25; margin-bottom: 10px; }
+  h2 .sub { font-size: 16px; font-weight: 500; color: var(--muted); margin-left: 10px; background: #fff; padding: 0 4px; }
 
-  /* 1. Định nghĩa */
-  .def { background: var(--card); border-left: 6px solid var(--ink); border-radius: 0 var(--r) var(--r) 0; padding: 16px 22px; }
-  .def p { font-size: 18.5px; line-height: 1.45; margin-top: 8px; }
-  .def cite { display: block; font-style: normal; font-size: 16px; color: var(--muted); margin-top: 6px; }
+  /* Nhãn vở */
+  .label {
+    position: relative; background: #fff; border: 3px solid var(--violet); border-radius: 26px;
+    padding: 20px 190px 18px 30px; box-shadow: 0 0 0 6px #fff, 0 0 0 8px var(--grid-main);
+  }
+  .label::before, .label::after { content: ""; position: absolute; width: 16px; height: 16px; border: 3px solid var(--violet); border-radius: 50%; background: var(--ruler); top: 50%; transform: translateY(-50%); }
+  .label::before { left: -12px; } .label::after { right: -12px; }
+  .label h1 { font-size: 45px; line-height: 1.12; font-weight: 800; color: var(--violet); letter-spacing: -0.01em; }
+  .fields { display: flex; gap: 26px; margin-top: 12px; font-size: 17px; color: var(--muted); }
+  .fields span { border-bottom: 2px dotted var(--grid-main); padding-bottom: 2px; }
+  .fields b { color: var(--ink); font-weight: 600; }
+  .trio { position: absolute; right: 14px; bottom: -4px; display: flex; }
+  .trio img { width: 74px; height: 74px; margin-left: -18px; }
 
-  /* 2. Thước tuổi — hình chính */
-  .ruler-wrap { background: var(--card); border-radius: var(--r); padding: 16px 22px 16px; border: 1px solid var(--line); }
-  .ruler { display: grid; grid-template-columns: 128px 1fr 1.15fr 1.15fr 1.25fr 1fr; column-gap: 6px; row-gap: 8px; margin-top: 12px; }
-  .axis { grid-column: 2 / 7; display: grid; grid-template-columns: 1fr 1.15fr 1.15fr 1.25fr 1fr; column-gap: 6px; border-bottom: 3px solid var(--ink); padding-bottom: 6px; }
-  .axis span { font-size: 16px; font-weight: 600; color: var(--muted); text-align: left; padding-left: 4px; border-left: 3px solid var(--ink); }
-  .axis span b { color: var(--ink); font-size: 22px; font-weight: 800; }
-  .rowlab { font-size: 19px; font-weight: 700; align-self: center; line-height: 1.3; }
-  .rowlab small { display: block; font-size: 15px; font-weight: 400; color: var(--muted); }
-  .seg { border-radius: 10px; padding: 10px 12px; font-size: 17px; line-height: 1.38; }
-  .seg strong { display: block; font-size: 18.5px; margin-bottom: 3px; }
-  .seg.no { background: var(--none); color: var(--ink); }
-  .seg.crim { background: var(--crim-soft); border-top: 5px solid var(--crim); }
-  .seg.blue { background: var(--blue-soft); border-top: 5px solid var(--blue); }
-  .rowlab.crim { color: var(--crim); }
-  .rowlab.blue { color: var(--blue); }
-  .key { margin-top: 12px; background: var(--gold-soft); border-radius: 10px; padding: 10px 14px; font-size: 17px; line-height: 1.45; }
+  .lede { font-size: 20px; line-height: 1.45; color: var(--ink); background: #fff; display: inline; }
 
-  /* 3. Ví dụ */
-  table { width: 100%; border-collapse: collapse; background: var(--card); border-radius: var(--r); overflow: hidden; border: 1px solid var(--line); }
-  th, td { text-align: left; padding: 8px 12px; font-size: 17px; line-height: 1.38; vertical-align: top; border-bottom: 1px solid var(--line); }
-  th { background: var(--ink); color: var(--paper); font-size: 16px; font-weight: 600; }
-  tr:last-child td { border-bottom: 0; }
-  td.yes { color: var(--crim); font-weight: 700; }
-  td.no  { color: var(--muted); font-weight: 600; }
+  /* Bài 1 */
+  .quote { background: #fff; border: 1.5px solid var(--grid-main); border-radius: 12px; padding: 14px 18px; }
+  .quote p { font-size: 18.5px; line-height: 1.5; }
+  .quote mark { background: linear-gradient(transparent 55%, #fde68a 55%); color: inherit; }
+  .quote cite { display: block; font-style: normal; font-size: 15.5px; color: var(--muted); margin-top: 6px; }
 
-  /* 4. CTA */
-  .cta { display: grid; grid-template-columns: 1fr 1fr 1.3fr; gap: 14px; }
-  .step { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); padding: 12px 14px; font-size: 17px; line-height: 1.42; }
-  .step b { display: block; font-size: 19px; margin-bottom: 3px; }
-  .step.hot { background: var(--gold); border-color: var(--gold); }
-  .step.hot .big { font-size: 40px; font-weight: 800; line-height: 1; vertical-align: -4px; }
+  /* Bài 2 — thước kẻ */
+  .board { background: #fff; border: 1.5px solid var(--grid-main); border-radius: 12px; padding: 14px 18px 16px; }
+  .track { position: relative; width: calc(var(--u) * 8); margin-left: 0; }
+  .ruler {
+    position: relative; height: 66px; border-radius: 6px; background: var(--ruler);
+    box-shadow: 0 3px 0 #d9b21f, inset 0 1px 0 rgba(255,255,255,.6);
+    background-image:
+      repeating-linear-gradient(90deg, var(--ruler-ink) 0 2px, transparent 2px var(--u)),
+      repeating-linear-gradient(90deg, var(--ruler-ink) 0 1.5px, transparent 1.5px calc(var(--u) / 2)),
+      repeating-linear-gradient(90deg, var(--ruler-ink) 0 1px, transparent 1px calc(var(--u) / 10));
+    background-size: 100% 26px, 100% 18px, 100% 11px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+  .ruler .n { position: absolute; top: 28px; transform: translateX(-50%); font-weight: 700; font-size: 18px; color: var(--ruler-ink); }
+  .ruler .n.key { top: 26px; width: 34px; height: 34px; border-radius: 50%; background: var(--violet); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 18px; }
+  .ruler .brand { position: absolute; right: 10px; bottom: 6px; font-size: 13px; font-weight: 600; color: var(--ruler-ink); }
+  .guides { position: absolute; top: 66px; bottom: 0; left: 0; right: 0; pointer-events: none; }
+  .guides i { position: absolute; top: 0; bottom: 0; border-left: 2px dashed #9aa8c4; }
 
-  footer { margin-top: auto; border-top: 1px solid var(--line); padding-top: 10px; font-size: 15px; line-height: 1.45; color: var(--muted); }
+  .lane { position: relative; height: 84px; margin-top: 30px; }
+  .lane + .lane { margin-top: 30px; }
+  .lane-name { position: absolute; top: -25px; left: 0; display: flex; gap: 6px; align-items: center; font-size: 16px; font-weight: 700; background: #fff; padding-right: 6px; }
+  .lane-name small { font-weight: 500; color: var(--muted); font-size: 15px; }
+  .lane-name .ico { font-size: 19px; }
+  .bar { position: absolute; top: 0; height: 100%; border-radius: 8px; padding: 8px 10px; font-size: 15.5px; line-height: 1.33; }
+  .bar b { display: block; font-size: 16.5px; line-height: 1.25; margin-bottom: 2px; }
+  .bar.none { background: repeating-linear-gradient(135deg, #f1f2f5 0 8px, #e6e8ee 8px 16px); background-color: #eceef2; color: var(--ink); border: 1.5px solid #c9ced8; }
+  .bar.crim { background: var(--red-soft); border: 1.5px solid #e7b3ae; border-top: 5px solid var(--red); }
+  .bar.civ { background: var(--blue-soft); border: 1.5px solid #b5cbea; border-top: 5px solid var(--blue); }
+  .bar.cut { border-top-left-radius: 0; border-bottom-left-radius: 0; clip-path: polygon(8px 0, 100% 0, 100% 100%, 8px 100%, 0 85%, 8px 70%, 0 55%, 8px 40%, 0 25%, 8px 10%); padding-left: 16px; }
+  .crim-t { color: var(--red); } .civ-t { color: var(--blue); }
+
+  .note {
+    position: relative; margin-top: 14px; margin-left: 24px; width: 760px; transform: rotate(-1deg);
+    background: #fff7c2; padding: 10px 16px 10px 46px; border-radius: 3px;
+    box-shadow: 0 6px 10px -6px rgba(60,40,0,.35);
+    color: var(--red); font-size: 20px; line-height: 1.2;
+  }
+  .note::before { content: ""; position: absolute; top: -9px; left: 50%; width: 90px; height: 20px; transform: translateX(-50%) rotate(2deg); background: rgba(199,214,236,.75); }
+  .note .ico { position: absolute; left: 14px; top: 12px; font-size: 22px; }
+  .note u { text-decoration: none; border-bottom: 2px solid var(--red); }
+
+  /* Bài 3 */
+  .cases { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .case { background: #fff; border: 1.5px solid var(--grid-main); border-radius: 12px; padding: 12px 14px 12px; }
+  .who { display: flex; gap: 10px; align-items: center; margin-bottom: 6px; }
+  .who img { width: 62px; height: 62px; border-radius: 50%; background: #eef2f8; border: 2px solid var(--grid-main); }
+  .who b { font-size: 19px; color: var(--violet); line-height: 1.1; }
+  .who small { display: block; font-size: 14.5px; color: var(--muted); font-weight: 500; margin-top: 2px; }
+  .case p { font-size: 15.5px; line-height: 1.38; min-height: 43px; }
+  .verdict { display: flex; gap: 7px; align-items: flex-start; font-size: 14.5px; line-height: 1.35; margin-top: 7px; padding-top: 7px; border-top: 1px dashed var(--grid-main); }
+  .verdict .ico { font-size: 18px; margin-top: 1px; }
+  .yes { color: var(--red); font-weight: 700; } .no { color: var(--muted); font-weight: 700; }
+
+  /* Bài 4 */
+  .steps { display: grid; grid-template-columns: 1fr 1fr 1.25fr; gap: 12px; }
+  .step { background: #fff; border: 1.5px solid var(--grid-main); border-radius: 12px; padding: 12px 14px; display: flex; gap: 12px; font-size: 15.5px; line-height: 1.4; }
+  .step .badge { width: 44px; height: 44px; border-radius: 12px; background: var(--violet); color: #fff; display: flex; align-items: center; justify-content: center; flex: none; font-size: 22px; }
+  .step b { display: block; font-size: 17.5px; margin-bottom: 2px; }
+  .step.hot { background: var(--ruler); border-color: #d9b21f; }
+  .step.hot .badge { background: var(--ink); }
+  .step.hot .big { font-size: 44px; font-weight: 800; line-height: 1; float: right; margin-left: 8px; }
+
+  footer { margin-top: auto; display: flex; gap: 18px; align-items: center; background: #fff; border-top: 2px solid var(--grid-main); padding: 10px 0 0; font-size: 13.5px; line-height: 1.45; color: var(--muted); }
   footer b { color: var(--ink); font-weight: 600; }
+  .stamp { flex: none; width: 112px; height: 112px; border-radius: 50%; border: 3px double var(--violet); color: var(--violet); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; transform: rotate(-8deg); font-size: 12px; font-weight: 700; line-height: 1.2; }
+  .stamp .ico { font-size: 24px; margin-bottom: 2px; }
 </style>
 </head>
 <body>
 <main class="sheet" data-size="a4">
+  <div class="holes" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
 
-  <header>
-    <div class="kicker">Phổ biến pháp luật · Học sinh và phụ huynh</div>
-    <h1>Bạo lực học đường:<br><em>bao nhiêu tuổi</em> chịu trách nhiệm gì?</h1>
-    <p class="lede">Dân sự và hình sự dùng <b>hai bộ mốc tuổi khác nhau</b> — nhầm mốc là hiểu sai trách nhiệm.</p>
+  <header class="label">
+    <h1>Bạo lực học đường: bao nhiêu tuổi thì chịu trách nhiệm gì?</h1>
+    <div class="fields">
+      <span>Môn: <b>Pháp luật phổ thông</b></span>
+      <span>Dành cho: <b>học sinh, phụ huynh</b></span>
+      <span>Soạn: <b>Luyện Luật</b></span>
+    </div>
+    <div class="trio" aria-hidden="true">
+      <img src="../../assets/avatars/notionists-An.svg" alt="">
+      <img src="../../assets/avatars/notionists-Binh.svg" alt="">
+      <img src="../../assets/avatars/notionists-Chi.svg" alt="">
+    </div>
   </header>
 
-  <section class="def">
-    <h2><span class="num">1</span>Thế nào là bạo lực học đường?</h2>
-    <p>“…hành vi hành hạ, ngược đãi, đánh đập; xâm hại thân thể, sức khỏe; lăng mạ, xúc phạm danh dự, nhân phẩm; cô lập, xua đuổi và các hành vi cố ý khác gây tổn hại về thể chất, tinh thần của người học xảy ra trong cơ sở giáo dục hoặc lớp độc lập.”</p>
-    <cite>Khoản 5 Điều 2 Nghị định 80/2017/NĐ-CP (trích nguyên văn)</cite>
+  <section>
+    <div class="bai hand">Bài 1.</div>
+    <h2>Thế nào là bạo lực học đường?</h2>
+    <div class="quote">
+      <p>“…hành vi <mark>hành hạ, ngược đãi, đánh đập</mark>; xâm hại thân thể, sức khỏe; <mark>lăng mạ, xúc phạm</mark> danh dự, nhân phẩm; <mark>cô lập, xua đuổi</mark> và các hành vi cố ý khác gây tổn hại về thể chất, tinh thần của người học xảy ra trong cơ sở giáo dục hoặc lớp độc lập.”</p>
+      <cite>Khoản 5 Điều 2 Nghị định 80/2017/NĐ-CP (trích nguyên văn)</cite>
+    </div>
   </section>
 
-  <section class="ruler-wrap">
-    <h2><span class="num">2</span>Thước tuổi trách nhiệm</h2>
-    <div class="ruler">
-      <div></div>
-      <div class="axis">
-        <span>dưới <b>14</b></span>
-        <span>từ đủ <b>14</b></span>
-        <span>từ đủ <b>15</b></span>
-        <span>từ đủ <b>16</b></span>
-        <span>từ đủ <b>18</b></span>
+  <section>
+    <div class="bai hand">Bài 2.</div>
+    <h2>Đặt thước vào tuổi của em <small class="sub">Dân sự và hình sự dùng hai bộ mốc khác nhau</small></h2>
+    <div class="board">
+      <div class="track">
+        <div class="ruler">
+          <span class="n" style="left:calc(var(--u)*0 + 14px)">12</span>
+          <span class="n" style="left:calc(var(--u)*1)">13</span>
+          <span class="n key" style="left:calc(var(--u)*2)">14</span>
+          <span class="n key" style="left:calc(var(--u)*3)">15</span>
+          <span class="n key" style="left:calc(var(--u)*4)">16</span>
+          <span class="n" style="left:calc(var(--u)*5)">17</span>
+          <span class="n key" style="left:calc(var(--u)*6)">18</span>
+          <span class="n" style="left:calc(var(--u)*7)">19</span>
+        </div>
+        <div class="guides" aria-hidden="true">
+          <i style="left:calc(var(--u)*2)"></i><i style="left:calc(var(--u)*3)"></i><i style="left:calc(var(--u)*4)"></i><i style="left:calc(var(--u)*6)"></i>
+        </div>
+
+        <div class="lane">
+          <div class="lane-name crim-t"><span class="ico" data-icon="gavel"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="m14.5 12.5-8 8a2.119 2.119 0 1 1-3-3l8-8" /> <path d="m16 16 6-6" /> <path d="m8 8 6-6" /> <path d="m9 7 8 8" /> <path d="m21 11-8-8" /> </svg></span>Hình sự <small>Điều 12 Bộ luật Hình sự</small></div>
+          <div class="bar none cut" style="left:0; width:calc(var(--u)*2 - 4px)"><b>Không</b>chịu trách nhiệm hình sự</div>
+          <div class="bar crim" style="left:calc(var(--u)*2 + 4px); width:calc(var(--u)*2 - 8px)"><b>Chỉ tội rất nghiêm trọng trở lên</b>28 điều, vd. Đ134 k3–5</div>
+          <div class="bar crim" style="left:calc(var(--u)*4 + 4px); width:calc(var(--u)*4 - 4px)"><b>Mọi tội phạm</b>trừ tội mà Bộ luật Hình sự có quy định khác</div>
+        </div>
+
+        <div class="lane">
+          <div class="lane-name civ-t"><span class="ico" data-icon="hand-coins"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17" /> <path d="m7 21 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9" /> <path d="m2 16 6 6" /> <circle cx="16" cy="9" r="2.9" /> <circle cx="6" cy="5" r="3" /> </svg></span>Bồi thường dân sự <small>Điều 586 Bộ luật Dân sự</small></div>
+          <div class="bar civ cut" style="left:0; width:calc(var(--u)*3 - 4px)"><b>Cha mẹ bồi thường toàn bộ</b>thiếu thì lấy tài sản riêng của con</div>
+          <div class="bar civ" style="left:calc(var(--u)*3 + 4px); width:calc(var(--u)*3 - 8px)"><b>Tự bồi thường</b>bằng tài sản của mình; thiếu thì cha mẹ bù phần còn thiếu</div>
+          <div class="bar civ" style="left:calc(var(--u)*6 + 4px); width:calc(var(--u)*2 - 4px)"><b>Tự bồi thường</b>toàn bộ</div>
+        </div>
       </div>
 
-      <div class="rowlab crim">Hình sự<small>Điều 12 BLHS</small></div>
-      <div class="seg no"><strong>Không</strong>chịu TNHS</div>
-      <div class="seg crim" style="grid-column: span 2"><strong>Chỉ tội rất nghiêm trọng trở lên</strong>thuộc 28 điều liệt kê, vd. gây thương tích khoản 3–5 Điều 134</div>
-      <div class="seg crim" style="grid-column: span 2"><strong>Mọi tội phạm</strong>trừ tội mà BLHS có quy định khác</div>
-
-      <div class="rowlab blue">Dân sự<small>Điều 586 BLDS</small></div>
-      <div class="seg blue" style="grid-column: span 2"><strong>Cha mẹ bồi thường toàn bộ</strong>thiếu thì lấy tài sản riêng của con bù</div>
-      <div class="seg blue" style="grid-column: span 2"><strong>Tự bồi thường</strong>bằng tài sản của mình; thiếu thì cha mẹ bù phần còn thiếu</div>
-      <div class="seg blue"><strong>Tự bồi thường</strong></div>
+      <div class="note hand"><span class="ico" data-icon="pencil-line"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M12 20h9" /> <path d="M16.376 3.622a1 1 0 0 1 3.002 3.002L7.368 18.635a2 2 0 0 1-.855.506l-2.872.838a.5.5 0 0 1-.62-.62l.838-2.872a2 2 0 0 1 .506-.854z" /> <path d="m15 5 3 3" /> </svg></span>Chú ý mốc 15: đã tự bồi thường, nhưng hình sự vẫn chỉ tính tội rất nghiêm trọng. Chưa đủ 15 mà gây chuyện trong giờ trường quản lý thì <u>trường bồi thường</u>, trừ khi trường không có lỗi (Điều 599 BLDS).</div>
     </div>
-    <p class="key"><b>Dễ nhầm:</b> 15 tuổi đã tự bồi thường về dân sự, nhưng về hình sự vẫn chỉ bị truy cứu với tội rất nghiêm trọng trở lên. Chưa đủ 15 tuổi gây thiệt hại khi trường đang trực tiếp quản lý → <b>trường bồi thường</b>, trừ khi chứng minh không có lỗi (k1, k3 Điều 599 BLDS).</p>
   </section>
 
   <section>
-    <h2 style="margin-bottom:12px"><span class="num">3</span>Áp vào tình huống</h2>
-    <table>
-      <thead><tr><th style="width:47%">Tình huống</th><th style="width:25%">Truy cứu hình sự?</th><th>Bồi thường dân sự</th></tr></thead>
-      <tbody>
-        <tr><td><b>A, 15 tuổi</b> đánh bạn, tổn thương cơ thể 12% — khoản 1 Điều 134</td><td class="no">Không — ít nghiêm trọng</td><td>A tự bồi thường; thiếu thì cha mẹ bù</td></tr>
-        <tr><td><b>B, 15 tuổi</b> đánh bạn, tổn thương 61% trở lên — khoản 3 Điều 134</td><td class="yes">Có thể — rất nghiêm trọng</td><td>Như A</td></tr>
-        <tr><td><b>C, 16 tuổi</b> quay clip lăng mạ bạn, đăng lên mạng — Điều 155, Tội làm nhục người khác</td><td class="yes">Có thể — đã đủ 16 tuổi</td><td>Như A, kể cả tổn thất tinh thần</td></tr>
-      </tbody>
-    </table>
+    <div class="bai hand">Bài 3.</div>
+    <h2>Áp thước vào ba tình huống</h2>
+    <div class="cases">
+      <article class="case">
+        <div class="who"><img src="../../assets/avatars/notionists-An.svg" alt=""><div><b>An, 15 tuổi</b><small>Điều 134 khoản 1</small></div></div>
+        <p>Đánh bạn cùng lớp, tổn thương cơ thể 12%.</p>
+        <div class="verdict"><span class="ico no" data-icon="x"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M18 6 6 18" /> <path d="m6 6 12 12" /> </svg></span><span><span class="no">Không truy cứu:</span> ít nghiêm trọng</span></div>
+        <div class="verdict civ-t"><span class="ico" data-icon="hand-coins"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17" /> <path d="m7 21 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9" /> <path d="m2 16 6 6" /> <circle cx="16" cy="9" r="2.9" /> <circle cx="6" cy="5" r="3" /> </svg></span><span>Tự bồi thường; cha mẹ bù phần thiếu</span></div>
+      </article>
+      <article class="case">
+        <div class="who"><img src="../../assets/avatars/notionists-Binh.svg" alt=""><div><b>Bình, 15 tuổi</b><small>Điều 134 khoản 3</small></div></div>
+        <p>Đánh bạn, tổn thương cơ thể từ 61% trở lên.</p>
+        <div class="verdict"><span class="ico yes" data-icon="triangle-alert"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" /> <path d="M12 9v4" /> <path d="M12 17h.01" /> </svg></span><span><span class="yes">Có thể bị truy cứu:</span> rất nghiêm trọng</span></div>
+        <div class="verdict civ-t"><span class="ico" data-icon="hand-coins"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17" /> <path d="m7 21 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9" /> <path d="m2 16 6 6" /> <circle cx="16" cy="9" r="2.9" /> <circle cx="6" cy="5" r="3" /> </svg></span><span>Tự bồi thường; cha mẹ bù phần thiếu</span></div>
+      </article>
+      <article class="case">
+        <div class="who"><img src="../../assets/avatars/notionists-Chi.svg" alt=""><div><b>Chi, 16 tuổi</b><small>Điều 155 (làm nhục)</small></div></div>
+        <p>Quay clip lăng mạ bạn rồi đăng lên mạng xã hội.</p>
+        <div class="verdict"><span class="ico yes" data-icon="triangle-alert"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" /> <path d="M12 9v4" /> <path d="M12 17h.01" /> </svg></span><span><span class="yes">Có thể bị truy cứu:</span> đã đủ 16 tuổi</span></div>
+        <div class="verdict civ-t"><span class="ico" data-icon="hand-coins"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17" /> <path d="m7 21 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9" /> <path d="m2 16 6 6" /> <circle cx="16" cy="9" r="2.9" /> <circle cx="6" cy="5" r="3" /> </svg></span><span>Bồi thường cả tổn thất tinh thần</span></div>
+      </article>
+    </div>
   </section>
 
   <section>
-    <h2 style="margin-bottom:12px"><span class="num">4</span>Gặp hoặc chứng kiến bạo lực: làm ngay</h2>
-    <div class="cta">
-      <div class="step"><b>Báo ngay</b>giáo viên hoặc phụ huynh. Trường phải công khai kênh tiếp nhận tố giác.</div>
-      <div class="step"><b>Giữ bằng chứng</b>Chụp vết thương, lưu tin nhắn, clip. Không đăng lại lên mạng.</div>
-      <div class="step hot"><b>Gọi <span class="big">111</span></b>Tổng đài quốc gia bảo vệ trẻ em — miễn phí, 24/7. Khẩn cấp: 113.</div>
+    <div class="bai hand">Bài 4.</div>
+    <h2>Gặp hoặc chứng kiến bạo lực, làm ngay</h2>
+    <div class="steps">
+      <div class="step"><span class="badge"><span class="ico" data-icon="megaphone"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="m3 11 18-5v12L3 14v-3z" /> <path d="M11.6 16.8a3 3 0 1 1-5.8-1.6" /> </svg></span></span><div><b>Báo thầy cô, bố mẹ</b>Trường phải công khai kênh tiếp nhận tố giác.</div></div>
+      <div class="step"><span class="badge"><span class="ico" data-icon="camera"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z" /> <circle cx="12" cy="13" r="3" /> </svg></span></span><div><b>Giữ bằng chứng</b>Chụp vết thương, lưu tin nhắn; không đăng lại.</div></div>
+      <div class="step hot"><span class="badge"><span class="ico" data-icon="phone-call"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /> <path d="M14.05 2a9 9 0 0 1 8 7.94" /> <path d="M14.05 6A5 5 0 0 1 18 10" /> </svg></span></span><div><span class="big">111</span><b>Tổng đài bảo vệ trẻ em</b>Miễn phí, 24/7. Khẩn cấp: 113.</div></div>
     </div>
   </section>
 
   <footer>
-    <b>Căn cứ:</b> Nghị định 80/2017/NĐ-CP (k5 Đ2; điểm c k1 Đ6) · Bộ luật Hình sự 100/2015/QH13, hợp nhất 135/VBHN-VPQH năm 2025 (Đ12, Đ134, Đ155) · Bộ luật Dân sự 91/2015/QH13 (Đ586, Đ599). Người dưới 18 tuổi phạm tội còn áp dụng Luật Tư pháp người chưa thành niên 59/2024/QH15 (hiệu lực 01/01/2026). Đối chiếu 06/11/2026 trên vbpl.vn.<br>
-    Chỉ nói về trách nhiệm dân sự, hình sự; không gồm kỷ luật trong trường và xử phạt hành chính. Thông tin pháp luật phổ thông, không thay thế tư vấn pháp lý. · <b>Luyện Luật</b> — Trần Quang Hào
+    <div class="stamp"><span class="ico" data-icon="clipboard-check"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <rect width="8" height="4" x="8" y="2" rx="1" ry="1" /> <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" /> <path d="m9 14 2 2 4-4" /> </svg></span>ĐÃ ĐỐI CHIẾU<br>vbpl.vn<br>06/11/2026</div>
+    <div>
+      <b>Căn cứ:</b> Nghị định 80/2017/NĐ-CP (k5 Đ2; điểm c k1 Đ6); Bộ luật Hình sự 100/2015/QH13, hợp nhất 135/VBHN-VPQH năm 2025 (Đ12, Đ134, Đ155); Bộ luật Dân sự 91/2015/QH13 (Đ586, Đ592, Đ599). Người dưới 18 tuổi phạm tội còn áp dụng Luật Tư pháp người chưa thành niên 59/2024/QH15.<br>
+      Chỉ nói về trách nhiệm dân sự và hình sự, chưa gồm kỷ luật trong trường, xử phạt hành chính. Thông tin pháp luật phổ thông, không thay thế tư vấn pháp lý. Minh họa: Notionists (CC0), icon Lucide (ISC). <b>Luyện Luật — Trần Quang Hào</b>
+    </div>
   </footer>
 </main>
 </body>

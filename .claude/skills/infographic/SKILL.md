@@ -60,6 +60,24 @@ Quy tắc: số thứ tự mục **trùng với thứ tự mắt đọc**; tối
   - Tương phản chữ ≥ 4.5:1 (chữ lớn ≥ 3:1).
 - Không dùng ảnh/biểu tượng có bản quyền; dùng SVG tự vẽ hoặc icon mã nguồn mở có ghi giấy phép.
 
+### 5b. Lớp hình ảnh: ý tưởng → asset → trang trí
+
+Infographic chỉ có chữ trong khung màu sẽ trông "thiếu". Trước khi code, chọn **một ý tưởng hình ảnh lấy từ chính thế giới của chủ đề** (không phải từ mẫu SaaS):
+
+| Chủ đề | Ý tưởng hình ảnh | Vật thể trang trí |
+|---|---|---|
+| Học đường | Trang vở ô li | nhãn vở, lề đỏ, lỗ gáy, thước kẻ, bút đỏ cô giáo, giấy nhớ |
+| Hợp đồng, doanh nghiệp | Hồ sơ giấy tờ | kẹp giấy, tab hồ sơ, chữ ký nháy, dấu "đã đối chiếu" |
+| Tố tụng, thời hạn | Lịch / đồng hồ | tờ lịch xé, mốc ngày khoanh tròn |
+| Đất đai | Bản đồ địa chính | lưới tọa độ, thửa đất, la bàn |
+| Lao động | Bảng chấm công / phiếu lương | ô giờ, cột tiền |
+
+Quy tắc: (1) **hình chính được "vật thể hóa"** — thước tuổi vẽ thành cây thước thật, quy trình vẽ thành con đường; (2) mỗi khối có **1 icon** đúng nghĩa (Lucide, `assets/icons/`); (3) tình huống có **nhân vật** (`assets/avatars/`, CC0) để người đọc tự đặt mình vào; (4) tối đa **2 vật trang trí "tay làm"** (giấy nhớ, con dấu, nét bút) — chỉ đặt nơi có thông tin cần nhấn; (5) nền có kết cấu nhẹ (ô li, lưới) nhưng chữ luôn nằm trên nền trơn.
+
+Chèn icon: viết `<span class="ico" data-icon="gavel"></span>` rồi chạy
+`node .claude/skills/infographic/scripts/icons.mjs <index.html>` (sửa tại chỗ, chạy lại được). Thiếu icon → tải theo `assets/LICENSES.md`.
+Ví dụ đầy đủ: `examples/bao-luc-hoc-duong/` (ý tưởng "trang vở").
+
 ## Bước 6 — Xuất ảnh
 
 ```bash

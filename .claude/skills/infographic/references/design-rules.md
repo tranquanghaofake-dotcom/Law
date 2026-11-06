@@ -44,6 +44,13 @@ Tiêu đề lớn gấp 2,5–3 lần thân bài. Không quá 4 cỡ chữ trên
 - Minh họa người: tránh khắc họa nạn nhân theo khuôn mẫu; ưu tiên biểu tượng trung tính.
 - SVG tự vẽ hoặc bộ icon mã nguồn mở (Lucide — ISC, Tabler — MIT). Ghi giấy phép trong phần nguồn nếu dùng.
 
+## 6b. Tránh dáng "máy làm" (rút từ skill frontend-design)
+
+- Nền kem + chữ serif + màu đất nung; nền đen + 1 màu neon; bộ thẻ bo góc giống hệt nhau đổ cùng một bóng — đều là mặc định, chỉ dùng khi chủ đề đòi.
+- Không tô màu riêng **một chữ** trong tiêu đề; không nhãn VIẾT HOA giãn chữ trên mỗi mục; không chuỗi "A · B · C".
+- Đánh số (Bài 1, Bài 2…) chỉ khi nội dung thật sự là trình tự đọc/làm.
+- Dồn sự táo bạo vào **một** chỗ (thường là hình chính); phần còn lại yên tĩnh. Soi gương, bỏ bớt một món trang sức.
+
 ## 7. Khối bắt buộc
 
 - **Nguồn**: tên văn bản + số hiệu + điều/khoản; "Đối chiếu ngày dd/mm/yyyy tại vbpl.vn".

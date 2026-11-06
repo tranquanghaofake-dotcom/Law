@@ -25,6 +25,12 @@
 - [ ] Khối nguồn có số hiệu + ngày đối chiếu; mọi dấu `*` có chú thích.
 - [ ] Có dòng miễn trừ và tác giả.
 
+## Hình ảnh
+- [ ] Có ý tưởng hình ảnh lấy từ thế giới của chủ đề; hình chính được vật thể hóa.
+- [ ] Mỗi khối có icon đúng nghĩa; tình huống có nhân vật.
+- [ ] Không chữ nào đè lên vật trang trí (lề, lỗ gáy, nét kẻ) hay bị cắt mép.
+- [ ] Mọi asset có giấy phép rõ và được ghi công ở chân trang.
+
 ## Kỹ thuật
 - [ ] PNG ở deviceScaleFactor 2; PDF (nếu in) đúng khổ, không bị cắt.
 - [ ] Font đã tải xong trước khi chụp (không rơi về font hệ thống làm vỡ dấu).
