@@ -58,8 +58,8 @@ const sb = {
     // ── cụm 3 ──
     { id: 'fsrs', type: 'LineReveal', bars: 2, bg: 'dark', props: {
       kicker: 'Lịch ôn tự động', title: 'Ôn đúng lúc sắp quên', accentWords: [3, 4], drawBeats: 6, axisX: 'ngày', axisY: 'nhớ',
-      rider: 'Đặt cọc', points: forgetting(), marks: [{ x: 0.16, label: 'ôn 1' }, { x: 0.38, label: 'ôn 2' }, { x: 0.7, label: 'ôn 3' }] } },
-    { id: 'chuoi', type: 'MediaHero', bars: 3, bg: 'dark', props: {
+      rider: 'Đặt cọc', matchTo: { x: 540, y: 812, r: 138, color: '#3d86ff', beats: 1.2 }, points: forgetting(), marks: [{ x: 0.16, label: 'ôn 1' }, { x: 0.38, label: 'ôn 2' }, { x: 0.7, label: 'ôn 3' }] } },
+    { id: 'chuoi', type: 'MediaHero', bars: 3, bg: 'dark', enter: 'cut', props: {
       kicker: 'Thẻ chuyên cần', media: { kind: 'video', src: 'cap/ignite-75.mp4' }, poster: 'cap/ignite-75-45.png',
       syncSec: 3.865, hitBeat: 8, focus: { x: 0.5, y: 0.435 }, hits: [8], baseScale: 1.55, pushIn: 1.6, cutBottom: 380, freezeFrames: 14, skipFrames: 45,
       notes: [{ kind: 'circle', x: 360, y: 650, w: 360, h: 370, beat: 8.6, color: '#ffd27a' }],

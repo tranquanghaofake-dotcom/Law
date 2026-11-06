@@ -288,6 +288,13 @@
     "axisX": "ngày",
     "axisY": "nhớ",
     "rider": "Đặt cọc",
+    "matchTo": {
+     "x": 540,
+     "y": 812,
+     "r": 138,
+     "color": "#3d86ff",
+     "beats": 1.2
+    },
     "points": [
      [
       0,
@@ -795,6 +802,7 @@
    "type": "MediaHero",
    "bars": 3,
    "bg": "dark",
+   "enter": "cut",
    "props": {
     "kicker": "Thẻ chuyên cần",
     "media": {

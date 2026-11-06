@@ -374,11 +374,25 @@ const LineReveal: React.FC<P> = ({ props }) => {
   const marks = arr<{ x: number; label: string }>(props.marks);
   const gw = W - SAFE.left - SAFE.right, gh = H * (VERTICAL ? 0.4 : 0.4);
   const draw = interpolate(f, [0, bt(num(props.drawBeats, 6))], [0.04, 1], { ...clamp, easing: Easing.inOut(Easing.cubic) });
+  const dur = useSceneDur();
+  const gTop = VERTICAL ? H * 0.3 : H * 0.42;
+  // vị trí vật dẫn mắt theo ĐỘ DÀI CUNG (polyline vẽ bằng pathLength), không theo chỉ số điểm — nếu không chip lệch khỏi đầu nét ở đoạn dốc
+  const P = pts.map(([x, y]) => [x * gw, (1 - y) * gh] as const);
+  const acc = [0];
+  for (let i = 1; i < P.length; i++) acc.push(acc[i - 1] + Math.hypot(P[i][0] - P[i - 1][0], P[i][1] - P[i - 1][1]));
+  const target = draw * (acc[acc.length - 1] || 1);
+  let kk = 1;
+  while (kk < P.length - 1 && acc[kk] < target) kk++;
+  const tseg = (target - acc[kk - 1]) / Math.max(1e-6, acc[kk] - acc[kk - 1]);
+  const rx = (P[kk - 1]?.[0] ?? 0) + ((P[kk]?.[0] ?? 0) - (P[kk - 1]?.[0] ?? 0)) * tseg, ryPx = (P[kk - 1]?.[1] ?? 0) + ((P[kk]?.[1] ?? 0) - (P[kk - 1]?.[1] ?? 0)) * tseg;
+  // match cut (Ben Marriott): chấm dẫn mắt trượt tới đúng chỗ + cỡ của vật đầu cảnh sau rồi CẮT THẲNG (cảnh sau enter:"cut")
+  const mt = props.matchTo as { x: number; y: number; r: number; color?: string; beats?: number } | undefined;
+  const mp = mt ? interpolate(f, [dur - bt(num(mt.beats, 1)), dur - 2], [0, 1], { ...clamp, easing: Easing.inOut(Easing.poly(4)) }) : 0;
   return (
     <AbsoluteFill style={{ ...SAFE_PAD }}>
       <Kicker text={str(props.kicker)} />
       <Words text={str(props.title)} at={0} step={4} style={{ ...H1, fontSize: SIZE.title, color: T.ink }} accentWords={arr<number>(props.accentWords)} />
-      <svg width={gw} height={gh + 140} style={{ position: "absolute", left: SAFE.left, top: VERTICAL ? H * 0.3 : H * 0.42, overflow: "visible" }}>
+      <svg width={gw} height={gh + 140} style={{ position: "absolute", left: SAFE.left, top: gTop, overflow: "visible", opacity: 1 - mp * 0.75 }}>
         <line x1={0} y1={gh} x2={gw} y2={gh} stroke={T.inkSoft} strokeOpacity={0.4} strokeWidth={4} />
         <line x1={0} y1={0} x2={0} y2={gh} stroke={T.inkSoft} strokeOpacity={0.4} strokeWidth={4} />
         <polyline points={pts.map(([x, y]) => `${(x * gw).toFixed(1)},${((1 - y) * gh).toFixed(1)}`).join(" ")} fill="none" stroke={T.accent} strokeWidth={VERTICAL ? 14 : 10} strokeLinejoin="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - draw} />
@@ -391,19 +405,10 @@ const LineReveal: React.FC<P> = ({ props }) => {
         {str(props.axisY) && <text x={-6} y={-8} fill={T.inkSoft} fontFamily={UI} fontWeight={700} fontSize={SIZE.min * 1.1}>{str(props.axisY)} ↑</text>}
         {str(props.axisX) && <text x={gw} y={gh + SIZE.min * 1.6} fill={T.inkSoft} fontFamily={UI} fontWeight={700} fontSize={SIZE.min * 1.1} textAnchor="end">{str(props.axisX)} →</text>}
         {str(props.rider) && (() => {
-          // vị trí theo ĐỘ DÀI CUNG (polyline vẽ bằng pathLength), không theo chỉ số điểm — nếu không chip sẽ lệch khỏi đầu nét ở đoạn dốc
-          const P = pts.map(([x, y]) => [x * gw, (1 - y) * gh] as const);
-          const acc = [0];
-          for (let i = 1; i < P.length; i++) acc.push(acc[i - 1] + Math.hypot(P[i][0] - P[i - 1][0], P[i][1] - P[i - 1][1]));
-          const target = draw * (acc[acc.length - 1] || 1);
-          let k = 1;
-          while (k < P.length - 1 && acc[k] < target) k++;
-          const tseg = (target - acc[k - 1]) / Math.max(1e-6, acc[k] - acc[k - 1]);
-          const rx = (P[k - 1]?.[0] ?? 0) + ((P[k]?.[0] ?? 0) - (P[k - 1]?.[0] ?? 0)) * tseg, ryPx = (P[k - 1]?.[1] ?? 0) + ((P[k]?.[1] ?? 0) - (P[k - 1]?.[1] ?? 0)) * tseg;
           const xAt = rx / gw;
           const bump = Math.max(0, ...marks.map((m) => { const d = xAt - m.x; return d >= 0 && d < 0.05 ? 1 - d / 0.05 : 0; }));
           return (
-            <g transform={`translate(${rx.toFixed(1)} ${ryPx.toFixed(1)}) scale(${1 + bump * 0.35})`}>
+            <g transform={`translate(${rx.toFixed(1)} ${ryPx.toFixed(1)}) scale(${1 + bump * 0.35})`} opacity={mp > 0 ? 0 : 1}>
               <rect x={-110} y={-96} width={220} height={66} rx={18} fill={T.ground} stroke={T.accent} strokeWidth={4} />
               <text x={0} y={-52} textAnchor="middle" fill={T.ink} fontFamily={UI} fontWeight={800} fontSize={SIZE.min * 1.3}>{str(props.rider)}</text>
               <circle r={14} fill={T.accent} />
@@ -412,6 +417,11 @@ const LineReveal: React.FC<P> = ({ props }) => {
         })()}
         {arr<string>(props.captions).map((c, i) => <text key={c} x={0} y={gh + 60 + i * SIZE.min * 1.7} fill={T.inkSoft} fontFamily={UI} fontWeight={700} fontSize={SIZE.min * 1.2}>{c}</text>)}
       </svg>
+      {mt && mp > 0 && (() => {
+        const sx = SAFE.left + rx, sy = gTop + ryPx;
+        const cx = sx + (mt.x - sx) * mp, cy = sy + (mt.y - sy) * mp, r = 14 + (mt.r - 14) * mp;
+        return <div style={{ position: "absolute", left: cx - r, top: cy - r, width: r * 2, height: r * 2, borderRadius: "50%", boxSizing: "border-box", border: `${(14 + 8 * mp).toFixed(1)}px solid ${mp > 0.5 ? mt.color ?? T.accent : T.accent}`, background: mp < 0.5 ? T.accent : "transparent" }} />;
+      })()}
     </AbsoluteFill>
   );
 };
