@@ -35,6 +35,7 @@ Template đã làm sẵn:
 | **Chữ từng từ nhoè → nét** | tiêu đề | 8–10 khung/từ, các từ cách 60–120 ms, không trượt | `Words` |
 | **Nện chữ** | một chữ chốt | phóng 1,8 → 1 + nhoè 14 px trong 10 khung | `Words slam` |
 | **Một con số đáp xuống** | số liệu quan trọng | số khổng lồ (~2,6× chữ chốt) đếm `from → value` trong 2 phách | `StatCount` một số |
+| **Mắt cắt lao qua máy** | đầu cụm | đĩa dấu thương hiệu phóng 0 → phủ khung trong 8 khung (ease-in), rồi TIẾP TỤC phóng 1 → 1,7 và tan trong 10 khung — không thu về (thu về = lật dấu Z, để lại chấm thừa) | `theme.cutMark` |
 | **Montage thẻ thật** | nhiều dạng/màn của sản phẩm | 1,5–1,75 phách mỗi thẻ, một thẻ mỗi lúc, cut-the-curve sang trái, số thứ tự to + thanh tiến độ | `CardMontage` |
 | **Khoảng lặng trước cú chốt** | trước kết quả lớn | 0,3–0,75 s gần như đứng yên | đặt `hitBeat` sau một nhịp giữ |
 
@@ -44,6 +45,10 @@ Template đã làm sẵn:
 - **Hoà mờ giữa hai cảnh (crossfade):** không có vật dẫn mắt. Dùng cut-the-curve hoặc mắt cắt.
 - **Đổi hướng không có nguyên nhân.**
 - **Phản ứng đến sau nguyên nhân vài khung:** flash/âm thanh/rung phải đúng khung gây ra.
+- **Flash ở mọi lần lật/đổi thẻ:** trên nền tối thành lớp sương xám phủ khung. Lật thẻ bằng `rotateY` 180 → 360° trong 12 khung, không flash.
+- **Cảnh vào trống:** sau mắt cắt, vật chính phải có mặt ngay khung đầu (số đã hiện, nét đồ thị đang vẽ, thẻ đầu tiên đã ở đó), không để 0,4 s nền + kicker.
+- **Flash trước nguyên nhân:** đặt cú nện đúng lúc kết quả hiện (vd. cửa tủ mở ~1,5 phách sau khi màn nhận chức bắt đầu), không phải lúc cảnh bắt đầu.
+- **Bản quay không phủ khung:** dùng `baseScale` để phủ kín; giấu nút app bằng mặt nạ mờ đáy (`cutBottom`), không cắt cứng thành dải đen; bỏ đoạn đầu bản quay còn bạc màu bằng `skipFrames`.
 - **Flash trên mọi phách:** "một đoạn ramp sạch không cần flash ở mỗi phách" (CapCut guide). Flash chỉ ở cú nện.
 
 ## 4. Soát riêng phần edit (thêm vào pha 7)
