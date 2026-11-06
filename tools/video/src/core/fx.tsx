@@ -234,15 +234,16 @@ export const Cursor: React.FC<{ path: { f: number; x: number; y: number; click?:
 };
 
 /** Chú thích vẽ tay (khoanh/gạch chân) lên UI thật — nét SVG hơi lệch như bút dạ, vẽ dần theo khung. kind: circle | underline. */
-export const Annotate: React.FC<{ kind: "circle" | "underline"; x: number; y: number; w: number; h: number; at: number; len?: number; color?: string; width?: number }> = ({ kind, x, y, w, h, at, len = 14, color = T.accent, width = 7 }) => {
+export const Annotate: React.FC<{ kind: "circle" | "underline"; x: number; y: number; w: number; h: number; at: number; out?: number; len?: number; color?: string; width?: number }> = ({ kind, x, y, w, h, at, out, len = 14, color = T.accent, width = 7 }) => {
   const frame = useCurrentFrame();
-  if (frame < at) return null;
+  if (frame < at || (out != null && frame >= out + 6)) return null;
+  const fade = out == null ? 1 : interpolate(frame, [out, out + 6], [1, 0], clamp);
   const p = interpolate(frame, [at, at + len], [0, 1], { ...clamp, easing: easeOut });
   const d = kind === "circle"
     ? `M ${w * 0.55} ${h * 0.02} C ${w * 1.02} ${h * 0.0}, ${w * 1.04} ${h * 0.95}, ${w * 0.5} ${h * 0.98} C ${-w * 0.04} ${h * 1.0}, ${-w * 0.03} ${h * 0.06}, ${w * 0.48} ${h * 0.04} L ${w * 0.62} ${h * 0.1}`
     : `M 0 ${h * 0.6} C ${w * 0.3} ${h * 0.4}, ${w * 0.7} ${h * 0.75}, ${w} ${h * 0.5}`;
   return (
-    <svg width={w + 20} height={h + 20} style={{ position: "absolute", left: x - 10, top: y - 10, overflow: "visible", pointerEvents: "none", zIndex: 25 }}>
+    <svg width={w + 20} height={h + 20} style={{ position: "absolute", left: x - 10, top: y - 10, overflow: "visible", pointerEvents: "none", zIndex: 25, opacity: fade }}>
       <path d={d} transform="translate(10 10)" fill="none" stroke={color} strokeWidth={width} strokeLinecap="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - p} />
     </svg>
   );

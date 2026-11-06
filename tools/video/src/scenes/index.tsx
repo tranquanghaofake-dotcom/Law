@@ -22,7 +22,7 @@ export const Overlay: React.FC<P> = ({ props }) => {
   const cur = arr<{ beat: number; x: number; y: number; click?: boolean }>(props.cursor).map((c) => ({ f: bt(c.beat), x: c.x, y: c.y, click: c.click }));
   return (
     <>
-      {arr<{ kind: "circle" | "underline"; x: number; y: number; w: number; h: number; beat: number; color?: string }>(props.notes).map((n, i) => <Annotate key={i} kind={n.kind} x={n.x} y={n.y} w={n.w} h={n.h} at={bt(n.beat)} color={n.color} />)}
+      {arr<{ kind: "circle" | "underline"; x: number; y: number; w: number; h: number; beat: number; out?: number; color?: string }>(props.notes).map((n, i) => <Annotate key={i} kind={n.kind} x={n.x} y={n.y} w={n.w} h={n.h} at={bt(n.beat)} out={n.out == null ? undefined : bt(n.out)} color={n.color} />)}
       {cur.length > 0 && <Cursor path={cur} />}
     </>
   );
@@ -242,7 +242,7 @@ const DeviceDemo: React.FC<P> = ({ props }) => {
       <FlashFrame at={bt(num(props.syncBeat, 2)) + (props.freeze ? Math.round(num((props.freeze as { after?: number }).after, 0.25) * 60) : 0)} strength={0.55} />
       {chips.map((c, i) => {
         const a = bt(c.at);
-        return <div key={i} style={{ position: "absolute", left: c.x, top: c.y, padding: "14px 26px", borderRadius: 16, background: col(c.tone, T.ink), color: c.tone ? "#fff" : T.ground, fontFamily: UI, fontWeight: 800, fontSize: SIZE.min * 1.3, scale: pop(a), opacity: f >= a ? 1 : 0, rotate: `${i % 2 ? 3 : -4}deg`, boxShadow: "0 16px 34px rgba(0,0,0,.3)" }}>{c.text}</div>;
+        return <div key={i} style={{ position: "absolute", left: c.x, top: c.y, padding: "14px 26px", borderRadius: 16, background: col(c.tone, T.ink), color: c.tone ? "#fff" : T.ground, fontFamily: UI, fontWeight: 800, fontSize: SIZE.min * 1.3, scale: pop(a), opacity: f >= a ? (props.exitPush ? interpolate(f, [dur - bt(0.75), dur - bt(0.75) + 6], [1, 0], clamp) : 1) : 0, rotate: `${i % 2 ? 3 : -4}deg`, boxShadow: "0 16px 34px rgba(0,0,0,.3)" }}>{c.text}</div>;
       })}
     </AbsoluteFill>
   );
@@ -329,7 +329,7 @@ const Ladder: React.FC<P> = ({ props }) => {
   const phase = fin && f >= bt(fin.at) ? "finale" : fan.length && f >= bt(fanAt) ? "fan" : "climb";
   const step = Math.min(climb.length - 1, Math.floor(f / Math.max(1, bt(1))));
   const local = f - bt(step);
-  const iw = VERTICAL ? W * 0.42 : Math.min(W * 0.55, 620);
+  const iw = VERTICAL ? W * 0.38 : Math.min(W * 0.55, 620);
   const ASPECT = num(props.aspect, 1.526); // cao/rộng của ảnh tủ trưng bày
   return (
     <AbsoluteFill style={{ ...SAFE_PAD }}>
@@ -344,7 +344,7 @@ const Ladder: React.FC<P> = ({ props }) => {
             const depth = a.length - j + interpolate(local, [0, 12], [-1, 0], { ...clamp, easing: easeOut });
             return <Img key={c.image} src={asset(c.image)} style={{ position: "absolute", left: (W - iw) / 2, top: H * 0.27, width: iw, scale: 0.9 ** depth, translate: `${(90 * depth).toFixed(1)}px ${(-70 * depth).toFixed(1)}px`, opacity: Math.max(0, 0.75 - 0.18 * depth), filter: `blur(${(1.5 + 1.5 * depth).toFixed(1)}px) brightness(${(0.8 - 0.1 * depth).toFixed(2)})` }} />;
           })}
-          <Img src={asset(climb[step].image)} style={{ position: "absolute", left: (W - iw) / 2, top: H * 0.27, width: iw, scale: interpolate(local, [0, 12], [1.25, 1], { ...clamp, easing: easeOut }), translate: `0px ${interpolate(local, [0, 12], [60, 0], { ...clamp, easing: easeOut }).toFixed(1)}px`, filter: `brightness(${interpolate(local, [0, 8], [1.5, 1], clamp)}) drop-shadow(0 30px 60px rgba(0,0,0,.6))` }} />
+          <Img src={asset(climb[step].image)} style={{ position: "absolute", left: (W - iw) / 2, top: H * 0.27, width: iw, scale: interpolate(local, [0, 12], [1.25, 1], { ...clamp, easing: easeOut }), transformOrigin: "50% 85%", filter: `brightness(${interpolate(local, [0, 8], [1.5, 1], clamp)}) drop-shadow(0 30px 60px rgba(0,0,0,.6))` }} />
           <div style={{ position: "absolute", left: SAFE.left, right: SAFE.right, top: H * 0.27 + iw * ASPECT + 14, textAlign: "center", fontFamily: UI, fontWeight: 800, fontSize: SIZE.body * 1.3, color: T.accent }}>{climb[step].label}</div>
         </>
       )}
