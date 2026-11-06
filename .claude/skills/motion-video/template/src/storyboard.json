@@ -1,0 +1,171 @@
+{
+ "title": "Mẫu tối thiểu — chỉ chữ và đồ hoạ, không cần asset",
+ "format": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 60
+ },
+ "music": {
+  "bpm": 120,
+  "offsetSec": 0,
+  "phraseBars": 8,
+  "gapBeats": 1,
+  "file": null
+ },
+ "theme": {
+  "ground": "#f4efe6",
+  "ground2": "#ffffff",
+  "ink": "#16213d",
+  "inkSoft": "#5b6475",
+  "accent": "#d9531e",
+  "accent2": "#1f7a4d",
+  "display": "be-vietnam-pro",
+  "ui": "be-vietnam-pro"
+ },
+ "scenes": [
+  {
+   "id": "hook",
+   "type": "TitleSlam",
+   "bars": 2,
+   "bg": "dark",
+   "props": {
+    "lines": [
+     {
+      "text": "Một câu hỏi",
+      "at": 0
+     },
+     {
+      "text": "người xem gặp",
+      "at": 2
+     },
+     {
+      "text": "MỖI NGÀY?",
+      "at": 5,
+      "size": "hero",
+      "color": "accent",
+      "glitch": true
+     }
+    ],
+    "sub": {
+     "text": "Trả lời trong 15 giây.",
+     "at": 6
+    }
+   }
+  },
+  {
+   "id": "buoc",
+   "type": "FeatureSteps",
+   "bars": 6,
+   "props": {
+    "kicker": "Cách làm",
+    "title": "Ba bước",
+    "accentWords": [
+     1
+    ],
+    "steps": [
+     {
+      "label": "Bước một",
+      "sub": "việc cụ thể",
+      "icon": "search"
+     },
+     {
+      "label": "Bước hai",
+      "sub": "việc cụ thể",
+      "icon": "compare"
+     },
+     {
+      "label": "Bước ba",
+      "sub": "kết quả",
+      "icon": "check"
+     }
+    ],
+    "start": 1,
+    "every": 3,
+    "note": {
+     "text": "Một câu chốt có nguồn.",
+     "at": 11
+    }
+   }
+  },
+  {
+   "id": "so-lieu",
+   "type": "LineReveal",
+   "bars": 4,
+   "bg": "dark",
+   "props": {
+    "kicker": "Số liệu",
+    "title": "Một đường kể chuyện",
+    "accentWords": [
+     3
+    ],
+    "points": [
+     [
+      0,
+      0.1
+     ],
+     [
+      0.3,
+      0.35
+     ],
+     [
+      0.6,
+      0.55
+     ],
+     [
+      1,
+      0.95
+     ]
+    ],
+    "marks": [
+     {
+      "x": 0.3,
+      "label": "mốc 1"
+     },
+     {
+      "x": 0.6,
+      "label": "mốc 2"
+     }
+    ],
+    "captions": [
+     "Chú thích bằng lời thường."
+    ],
+    "drawBeats": 6
+   }
+  },
+  {
+   "id": "ket",
+   "type": "EndCard",
+   "bars": 4,
+   "props": {
+    "mark": {
+     "text": "M"
+    },
+    "name": "Tên sản phẩm",
+    "tags": [
+     "Ý một",
+     "Ý hai"
+    ],
+    "cta": "Kêu gọi →",
+    "url": "ten-mien.vn"
+   }
+  }
+ ],
+ "cues": [
+  {
+   "sfx": "select_001",
+   "beat": 9
+  },
+  {
+   "sfx": "select_001",
+   "beat": 12
+  },
+  {
+   "sfx": "select_001",
+   "beat": 15
+  },
+  {
+   "sfx": "bong_001",
+   "beat": 48
+  }
+ ]
+}
