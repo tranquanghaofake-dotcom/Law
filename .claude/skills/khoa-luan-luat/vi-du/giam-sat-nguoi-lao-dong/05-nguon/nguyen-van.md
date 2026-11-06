@@ -29,3 +29,12 @@ k3: "Phạt tiền từ 70.000.000 đồng đến 100.000.000 đồng đối v�
 ### NĐ 356/2025/NĐ-CP (toàn văn ketoananpha.vn, đọc 06/11/2026)
 "Số: 356/2025/NĐ-CP Hà Nội, ngày 31 tháng 12 năm 2025". Mục lục 42 điều; Điều 8–12: tài chính, ngân hàng; dữ liệu lớn; trí tuệ nhân tạo, vũ trụ ảo; chuỗi khối; điện toán đám mây. Không có điều về người lao động; cụm "biết rõ" không xuất hiện trong toàn văn.
 Đ10 k1 (đoạn đầu): "Chủ thể dữ liệu cá nhân có quyền yêu cầu rút lại sự đồng ý cho phép xử lý dữ liệu cá nhân, yêu cầu hạn chế xử lý dữ liệu cá nhân của mình"
+
+## Bộ luật Lao động 45/2019/QH14 (hethongphapluat.com, đọc 06/11/2026; nguồn thứ cấp, có thể là bản gốc) [CẦN KIỂM: sửa đổi sau 2019]
+Đ118 k1: "Người sử dụng lao động phải ban hành nội quy lao động, nếu sử dụng từ 10 người lao động trở lên thì nội quy lao động phải bằng văn bản."
+Đ118 k2 đ: "Việc bảo vệ tài sản và bí mật kinh doanh, bí mật công nghệ, sở hữu trí tuệ của người sử dụng lao động;"
+Đ118 k3: "Trước khi ban hành nội quy lao động hoặc sửa đổi, bổ sung nội quy lao động, người sử dụng lao động phải tham khảo ý kiến của tổ chức đại diện người lao động tại cơ sở đối với nơi có tổ chức đại diện người lao động tại cơ sở."
+Đ118 k4: "Nội quy lao động phải được thông báo đến người lao động và những nội dung chính phải được niêm yết ở những nơi cần thiết tại nơi làm việc."
+Đ122 k1 a: "Người sử dụng lao động phải chứng minh được lỗi của người lao động;"
+## Bộ luật Tố tụng dân sự 92/2015/QH13 (hethongphapluat.com, đọc 06/11/2026) [CẦN KIỂM: sửa đổi]
+Đ95 k2: "Tài liệu nghe được, nhìn được được coi là chứng cứ nếu được xuất trình kèm theo văn bản trình bày của người có tài liệu đó về xuất xứ của tài liệu nếu họ tự thu âm, thu hình hoặc văn bản có xác nhận của người đã cung cấp cho người xuất trình về xuất xứ của tài liệu đó hoặc văn bản về sự việc liên quan tới việc thu âm, thu hình đó."

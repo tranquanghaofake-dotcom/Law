@@ -190,6 +190,9 @@ def kiem_tra(van, nop=False, an_danh=None, tieu_de_khac=None, nguyen_van=None, b
         for vt, noi_dung in _doan_trich(van):
             if van.rfind("[^", 0, vt) > van.rfind("\n", 0, vt):
                 continue  # bỏ qua tên bài trong footnote
+            dong_vt = van[van.rfind("\n", 0, vt) + 1: (van.find("\n", vt) + 1 or len(van) + 1) - 1]
+            if "[ĐỀ XUẤT]" in dong_vt:
+                continue  # câu chữ người viết đề xuất, không phải lời trích
             manh = [p for p in re.split(r"…|\.\.\.", noi_dung) if len(p.strip()) >= 10]
             if any(_chuan_hoa(p) not in kho for p in manh):
                 them("trich-ngoai-nguyen-van", "NẶNG", _dong(van, vt),

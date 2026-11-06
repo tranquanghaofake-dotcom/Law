@@ -126,3 +126,5 @@ Rút kinh nghiệm: tự chấm cao hơn điểm độc lập 15–30 điểm �
 Task 16: bắt đầu — base 318cf05 — đề 2: NĐ 356/2025 và nguyên văn Điều 61 NĐ 330/2026; thử đối chiếu nguồn chính thức (vbpl.vn, congbao)
 Task 16: xong — (commit này) — đề 2: đọc toàn văn Điều 61 NĐ 330/2026 (k2 c, d; k3 phạt 70–100 triệu khi dùng dữ liệu thu trái quy định) và NĐ 356/2025 (42 điều, không có điều về người lao động, không có "biết rõ") trên trang thứ cấp; phát hiện khoản 2 Điều 9 Luật 91/2025 định nghĩa nội dung "biết rõ" → viết lại hạn chế (i) với phản chứng, hạ (iii) thành giả thuyết, thêm ĐANG CHẶN. Skill: tìm thuật ngữ then chốt trong toàn văn luật nền.
 Rút kinh nghiệm: congbao.chinhphu.vn và vbpl.vn vẫn không vào được từ container (reset kết nối, trang rỗng) — đối chiếu nguồn chính thức phải để người dùng làm. Phản biện độc lập không thay được việc đọc toàn văn: cả 3 vai bỏ sót khoản 2 Điều 9.
+
+Task 17: bắt đầu — base 1e81f42 — vòng lặp: kiến nghị đề 2, đề 4 → phản biện độc lập → cải thiện skill → đề 6 (sở hữu trí tuệ)

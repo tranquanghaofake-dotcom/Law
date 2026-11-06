@@ -179,6 +179,14 @@ class KiemTraBanThao(unittest.TestCase):
         van = ("chữ " * 860) + "\n\n[^1]: " + ("nguồn " * 500)
         self.assertAlmostEqual(uoc_trang(van), 2.0, delta=0.1)
 
+    def test_cau_chu_de_xuat_khong_doi_chieu_nguyen_van(self):
+        van = '> [ĐỀ XUẤT] "Người lao động được coi là biết rõ biện pháp khi đã được thông báo bằng văn bản."'
+        self.assertEqual(len(muc(kiem_tra(van, nguyen_van=""), "trich-ngoai-nguyen-van")), 0)
+
+    def test_trich_that_canh_de_xuat_van_kiem(self):
+        van = 'Luật viết "phải được sự đồng ý của người dự tuyển theo quy định".\n\n> [ĐỀ XUẤT] "Câu chữ mới đề xuất cho điều khoản này."'
+        self.assertEqual(len(muc(kiem_tra(van, nguyen_van=""), "trich-ngoai-nguyen-van")), 1)
+
     def test_ban_sach_khong_loi_chan(self):
         van = (
             "Khoản 1 Điều 4 Luật Doanh nghiệp (Luật số 59/2020/QH14) quy định…[^1]\n\n"
