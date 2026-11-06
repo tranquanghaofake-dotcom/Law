@@ -11,7 +11,7 @@ Dựng bằng [Remotion](https://www.remotion.dev) (React → MP4). Thư mục �
 `npm run capture` (cần build web trước: ở gốc `BASE_PATH=/Law/ npm run build`) sinh `public/cap/` (không commit):
 - `harness/` là một trang Vite riêng mount thẳng component Svelte của `apps/web` (không sửa web): thẻ chuyên cần, màn thắp chuỗi, tủ trưng bày chức danh + màn nhận chức, bìa sách 23 môn, tranh kiến trúc.
 - Bản build web cho luồng thật: trả lời đúng bộ đề Đặt cọc, tìm "dat coc", Hồ sơ đã nạp sẵn tiến độ giả (212/212 sách, 29/29 chức) để chụp tủ sách và sơ đồ chức vụ.
-- Quay theo **thời gian ảo** để đủ 60 khung/giây đều đặn (ý tưởng từ [tungs/timesnap](https://github.com/tungs/timesnap), MIT — tự viết lại): Playwright clock dừng hẳn và chỉ tiến từng khung; Web Animations/CSS animation bị dừng rồi đặt `currentTime`; SMIL dùng `setCurrentTime`.
+- Quay theo **thời gian ảo** để đủ 60 khung/giây đều đặn (ý tưởng từ [tungs/timesnap](https://github.com/tungs/timesnap), BSD-3-Clause — tự viết lại): Playwright clock dừng hẳn và chỉ tiến từng khung; Web Animations/CSS animation bị dừng rồi đặt `currentTime`; SMIL dùng `setCurrentTime`.
 
 ## Lệnh (chạy trong `tools/video`)
 ```bash

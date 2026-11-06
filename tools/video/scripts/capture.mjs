@@ -1,7 +1,7 @@
 // Quay/chụp asset THẬT của web cho video → public/cap/ (không commit, sinh lại bằng `npm run capture`).
 //  - Harness (harness/, Vite riêng) mount thẳng component Svelte: thẻ chuyên cần, màn thắp chuỗi, tủ trưng bày chức danh, bìa sách, tranh.
 //  - Bản build web (apps/web/dist) cho luồng thật: trả lời đúng (dấu ĐÚNG), tìm không dấu, Hồ sơ đã nạp sẵn tiến độ.
-// Quay theo "thời gian ảo" để mỗi khung 60 fps đều đặn (ý tưởng từ tungs/timesnap — MIT, tự viết lại):
+// Quay theo "thời gian ảo" để mỗi khung 60 fps đều đặn (ý tưởng từ tungs/timesnap — BSD-3-Clause, tự viết lại):
 // Playwright clock điều khiển setTimeout/rAF/Date; Web Animations + CSS animation bị dừng và đặt currentTime theo đồng hồ ảo; SMIL dùng setCurrentTime.
 // Cần: build web trước (ở gốc: BASE_PATH=/Law/ npm run build).
 import { chromium } from 'playwright';
