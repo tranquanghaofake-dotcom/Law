@@ -68,6 +68,12 @@ Chạy chen giữa pha 1 và pha 4. Ghi mọi quyết định vào `ke-hoach.md`
 - Đặt cạnh 3 bài cũ: nếu khác nhau chỉ ở màu → chưa đạt, quay lại B.
 - Hình chính có phải là vật chủ đạo đang chở dữ liệu không, hay chỉ là trang trí?
 
+**Bài học từ lần chạy thử đầu (Incoterms, 11/2026)**
+- Đề tài quá rộng ("thương mại quốc tế") → bước đầu tiên là **thu hẹp** về 1 câu hỏi có dữ liệu hình dạng rõ; ghi lý do thu hẹp vào brief.
+- Font "lạ" phải render thử dấu tiếng Việt trước khi chọn (đã loại Stardos/Saira vì không hợp, chọn Big Shoulders Stencil).
+- Không nối lệnh render với `| head`: cắt pipe làm script dừng trước khi ghi PDF.
+- Chữ nhạt trên nền màu đậm của style mới hay trượt tương phản → chạy `contrast.mjs` ngay lần render đầu.
+
 **G. Thu hoạch**: style/khối/minh họa mới vào thư viện; thêm 1 dòng vào bảng "Ý tưởng hình ảnh" (Bước 5a) và mục "Thư viện hiện có".
 
 ## Thêm nhanh style, khối, chủ đề
@@ -75,7 +81,7 @@ Chạy chen giữa pha 1 và pha 4. Ghi mọi quyết định vào `ke-hoach.md`
 - **Style mới** (≈ 15 phút): tạo `styles/<ten>.css`. Dòng 1: `/* ten: mô tả — vật liệu, trang trí. Hợp: chủ đề… */`. Bên trong chỉ: `@import` font (có tiếng Việt), ghi đè token `:root` (`--paper --ink --muted --line --soft --info --good --bad --accent --font --font-display --radius --pad-left`), nền `.sheet`, trang trí (`::before/::after`), cách vẽ `.secno`, `.head`. Không đụng bố cục khối. `new.mjs --list` tự thấy.
 - **Khối mới**: tạo `blocks/<ten>.html` (dòng 1: `<!-- ten: mô tả | khi nào dùng -->`, dùng `<div class="secno" data-margin>`), thêm CSS của khối vào `styles/_base.css` với tiền tố riêng, dùng token chứ không dùng mã màu. **Không** đặt tên lớp trùng biến thể có sẵn (`.ok/.no/.yes/.maybe/.hot` là biến thể, không phải khối).
 - **Chủ đề mới**: thêm 1 dòng vào bảng "Ý tưởng hình ảnh" (Bước 5a) và, nếu có lỗi luật mới gặp, 1 dòng vào checklist pháp lý (Bước 2).
-- Thư viện hiện có — style: `vo-o-li` (học đường), `so-cham-cong` (lao động), `ban-ve` (nhà ở, thủ tục có thời hạn). Khối: `head, tiles, bars, meter, cases, says, flow, timeline, compare, tree, notes, sign`.
+- Thư viện hiện có — style: `vo-o-li` (học đường), `so-cham-cong` (lao động), `ban-ve` (nhà ở, thủ tục có thời hạn), `container` (thương mại quốc tế, logistics, hải quan). Khối: `head, tiles, bars, meter, cases, says, flow, timeline, compare, tree, notes, route, anatomy, sign`.
 
 ---
 
@@ -183,6 +189,7 @@ Ráp khung bằng `scripts/new.mjs` (pha 0), rồi thay nội dung. `templates/b
 | Tố tụng, thời hạn | Lịch / đồng hồ | tờ lịch xé, ngày khoanh tròn |
 | Đất đai | Bản đồ địa chính | lưới tọa độ, thửa đất, la bàn |
 | Nhà ở, thuê trọ, xây dựng | Bản vẽ kỹ thuật (style `ban-ve`) | khung bản vẽ, khung tên, đường kích thước, mặt bằng phòng |
+| Thương mại quốc tế, logistics | Bến cảng, container (style `container`) | cửa container tôn gợn, chữ stencil, mã container, băng vạch cảnh báo, tuyến kho–xe–tàu |
 | Tiêu dùng, mua bán | Hóa đơn, biên lai | mép răng cưa, mã vạch, dòng tổng tiền |
 | Giao thông | Biển báo, bản đồ đường | biển tròn/tam giác, vạch kẻ đường |
 
