@@ -60,7 +60,7 @@ def uoc_trang(van):
     return len(re.findall(r"\w+", _than_bai(van))) / CHU_MOI_TRANG
 
 
-RE_FN_DUNG = re.compile(r"\[\^([^\]]+)\](?!:)")
+RE_FN_DUNG = re.compile(r"\[\^([^\]]+)\](:?)")
 RE_FN_DN = re.compile(r"^\[\^([^\]]+)\]:", re.M)
 
 
@@ -130,6 +130,9 @@ def kiem_tra(van, nop=False, an_danh=None, tieu_de_khac=None, nguyen_van=None, b
     # 2. Footnote dùng mà không định nghĩa, hoặc ngược lại
     dung = {}
     for m in RE_FN_DUNG.finditer(van):
+        dau_dong = m.start() == 0 or van[m.start() - 1] == "\n"
+        if dau_dong and m.group(2):
+            continue  # dòng định nghĩa "[^n]: …"
         dung.setdefault(m.group(1), m.start())
     dinh_nghia = {m.group(1): m.start() for m in RE_FN_DN.finditer(van)}
     for ma, vt in dung.items():

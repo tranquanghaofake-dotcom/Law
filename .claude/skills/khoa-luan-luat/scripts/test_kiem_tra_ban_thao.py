@@ -208,6 +208,12 @@ class KiemTraBanThao(unittest.TestCase):
     def test_file_khong_phai_kien_nghi_khong_kiem(self):
         self.assertEqual(len(muc(kiem_tra("### 2.1. Thực trạng\nVăn bản.", han_che_khac=["i"]), "kien-nghi-thieu-han-che")), 0)
 
+    def test_footnote_truoc_dau_hai_cham_giua_cau(self):
+        van = "Khác với kiến nghị của tác giả A[^3]: một là, hai là.\n\n[^3]: Nguồn."
+        kq = kiem_tra(van)
+        self.assertEqual(len(muc(kq, "footnote-thua")), 0)
+        self.assertEqual(len(muc(kq, "footnote-thieu")), 0)
+
     def test_ban_sach_khong_loi_chan(self):
         van = (
             "Khoản 1 Điều 4 Luật Doanh nghiệp (Luật số 59/2020/QH14) quy định…[^1]\n\n"

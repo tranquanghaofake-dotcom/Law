@@ -30,3 +30,8 @@ Chưa tìm thấy điều nào về phong tỏa theo yêu cầu cơ quan thi hà
 
 # NQ 05/2025/NQ-CP Điều 15 (ketoananpha.vn, agent R2)
 Đ15 k2 o: "Báo cáo theo yêu cầu của cơ quan quản lý;"
+
+# NĐ 152/2026/NĐ-CP (toàn văn luatvietnam.vn qua Firecrawl, đọc 06/11/2026; nguồn thứ cấp)
+Đ43 k1: "Cơ quan, tổ chức, cá nhân đang quản lý tài khoản, tài sản đang gửi giữ quy định tại Điều 67 của Luật Thi hành án dân sự bao gồm Kho bạc Nhà nước, tổ chức tín dụng, chi nhánh ngân hàng nước ngoài, thành viên lưu ký, doanh nghiệp công nghệ số và cơ quan, tổ chức, cá nhân khác đang quản lý tài khoản, tiền gửi và tài sản số, tài sản khác trong tài khoản của người phải thi hành án."
+Đ61 k4: "Trường hợp pháp luật chuyên ngành có quy định thì việc định giá, thẩm định giá, xác định giá, bán tài sản là tài sản số, tài sản đặc thù khác thực hiện theo quy định của pháp luật chuyên ngành."
+Đ114 k1: "Nghị định này có hiệu lực thi hành từ ngày 01 tháng 7 năm 2026."
