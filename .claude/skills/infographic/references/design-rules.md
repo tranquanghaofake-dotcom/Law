@@ -54,8 +54,9 @@ Tiêu đề lớn gấp 2,5–3 lần thân bài. Không quá 4 cỡ chữ trên
 ## 7. In và photo
 
 - Luôn A4 dọc, `.sheet` 1080×1528 px; vùng an toàn ≥ 52 px mỗi cạnh. Trang trí (lề, lỗ gáy) được phép ra sát mép.
-- Màu không bao giờ là kênh duy nhất: thêm icon riêng, hoa văn (chấm bi, gạch chéo), kiểu viền (liền/đứt). Kiểm bằng `infographic-xam.png`.
-- Tránh mảng màu đậm lớn (tốn mực, photo bị bết); nền nhạt + viền đậm.
+- Mặc định in màu 100% trên bìa cứng. Màu nền quá nhạt (dưới ~5% mực, vd. lưới ô li) có thể mất khi in — chỉ dùng cho trang trí, không cho thông tin.
+- Màu không là kênh duy nhất: mỗi nhóm vẫn có icon riêng (cũng giúp người mù màu). Nếu sẽ photo đen trắng: thêm hoa văn/kiểu viền và kiểm bằng `render.mjs --gray`.
+- In thử 1 tờ trước khi in số lượng: màu trên giấy thường tối và đục hơn màn hình.
 - Chữ nhỏ nhất 12,5 px trên khổ 1080 (≈ 7 pt khi in) — chỉ cho nhãn phụ; thân bài ≥ 15 px.
 
 ## 8. Khối bắt buộc trên trang

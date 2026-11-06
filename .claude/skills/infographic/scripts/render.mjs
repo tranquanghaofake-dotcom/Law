@@ -1,5 +1,5 @@
-// Xuất infographic HTML (khổ A4 dọc, .sheet 1080×1528 px) → PNG + PDF A4 để in, kèm bản xám để thử photo đen trắng.
-// Dùng: node render.mjs <index.html> [--no-gray]
+// Xuất infographic HTML (khổ A4 dọc, .sheet 1080×1528 px) → PNG + PDF A4 để in.
+// Dùng: node render.mjs <index.html> [--gray]   (--gray: thêm bản xám khi định photo đen trắng)
 import { createRequire } from 'node:module';
 import { existsSync } from 'node:fs';
 import { resolve, dirname, join } from 'node:path';
@@ -14,7 +14,7 @@ if (!file) {
   console.error('Thiếu đường dẫn file HTML.');
   process.exit(1);
 }
-const wantGray = !args.includes('--no-gray');
+const wantGray = args.includes('--gray');
 const htmlPath = resolve(file);
 const outDir = dirname(htmlPath);
 

@@ -33,5 +33,5 @@
 
 ## Kỹ thuật
 - [ ] PDF đúng khổ A4, không tràn; nội dung cách mép ≥ 10 mm.
-- [ ] Bản xám: các nhóm vẫn phân biệt được không cần màu.
+- [ ] Đã in thử 1 tờ: màu, chữ nhỏ nhất, mép giấy ổn. (Chỉ khi photo đen trắng: kiểm `--gray`.)
 - [ ] Font đã tải xong trước khi chụp (không rơi về font hệ thống làm vỡ dấu).

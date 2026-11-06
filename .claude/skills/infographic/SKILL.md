@@ -15,7 +15,7 @@ Làm theo đúng thứ tự 7 bước. Không nhảy sang dựng hình khi bư�
 1. **Người đọc là ai, bao nhiêu tuổi, đọc ở đâu?** (học sinh THCS xem trên bảng tin; sinh viên lướt Facebook; in A4 phát tay…)
 2. **Đọc xong họ phải nhớ đúng một câu gì?** → đây là tiêu đề hoặc câu dẫn.
 3. **Đọc xong họ làm gì?** (gọi 111, báo giáo viên, tra điều luật…) → lời kêu gọi hành động (CTA).
-4. **Khổ: luôn A4 dọc** (in và phát tay). `.sheet` = 1080×1528 px = 210×297 mm (1 mm ≈ 5,14 px). Nội dung cách mép ≥ 52 px (~10 mm) vì máy in văn phòng không in sát mép. Thiết kế để **photo đen trắng vẫn đọc được**.
+4. **Khổ: luôn A4 dọc** (in và phát tay). `.sheet` = 1080×1528 px = 210×297 mm (1 mm ≈ 5,14 px). Nội dung cách mép ≥ 52 px (~10 mm) vì máy in không in sát mép. Mặc định **in màu trên bìa cứng**; chỉ khi người dùng nói sẽ photo đen trắng mới áp quy tắc bản xám.
 5. **Giọng:** nghiêm túc/thân thiện; được phép dùng minh họa không.
 
 Nếu người dùng không trả lời, tự chọn mặc định hợp lý và ghi rõ giả định ở đầu câu trả lời.
@@ -92,14 +92,14 @@ Ví dụ đầy đủ: `examples/bao-luc-hoc-duong/` (ý tưởng "trang vở").
 node .claude/skills/infographic/scripts/icons.mjs  <index.html>   # chèn icon
 node .claude/skills/infographic/scripts/render.mjs <index.html>   # xuất
 ```
-Ra 3 file cạnh HTML: `infographic.png` (xem màn hình), `infographic.pdf` (**đúng khổ A4, đem in**), `infographic-xam.png` (thử photo đen trắng). Script cảnh báo khi tràn khổ hoặc sai tỉ lệ A4.
+Ra 2 file cạnh HTML: `infographic.png` (xem màn hình), `infographic.pdf` (**đúng khổ A4, đem in**). Thêm `--gray` để có `infographic-xam.png` khi định photo đen trắng. Script cảnh báo khi tràn khổ hoặc sai tỉ lệ A4.
 
 ## Bước 7 — Tự soát (không bỏ qua)
 
 1. `node .claude/skills/infographic/scripts/contrast.mjs <index.html>` → mọi phần tử chữ phải PASS.
 2. Mở PNG, đọc như người đọc lần đầu, đi qua `references/review-checklist.md`.
 3. Thu nhỏ ảnh còn 25%: tiêu đề + hình chính vẫn nhận ra được không? Không → tăng tương phản/kích thước hình chính.
-4. Mở `infographic-xam.png`: các nhóm màu (vd. hình sự/dân sự) còn phân biệt được bằng icon, hoa văn (chấm bi, gạch), kiểu viền không?
+4. Nếu sẽ photo đen trắng: chạy `--gray`, kiểm tra các nhóm màu còn phân biệt được bằng icon, hoa văn, kiểu viền.
 5. Báo cáo cho người dùng: ảnh, bảng nguồn, các giả định, điểm còn "cần kiểm tra".
 
 ## Khi được nhờ **chấm** infographic có sẵn
