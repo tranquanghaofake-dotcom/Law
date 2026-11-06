@@ -46,7 +46,7 @@ const sb = {
       // con trỏ lớn vào từ dưới, đầu mũi tên chạm "6 triệu" và BẤM đúng phách 2 → gây ra đứng hình; khoanh vẽ tay ô đáp án
       cursor: [{ beat: 0.3, x: 760, y: 2150 }, { beat: 1.8, x: 445, y: 889 }, { beat: 2, x: 445, y: 889, click: true }, { beat: 3.2, x: 470, y: 900 }, { beat: 4.2, x: 1250, y: 2200 }],
       notes: [{ kind: 'circle', x: 300, y: 842, w: 500, h: 92, beat: 2.7, out: 11.2 }],
-      chips: [{ text: '3 triệu + 3 triệu = 6 triệu', at: 3.4, x: 70, y: 1030, tone: 'accent2' }, { text: 'Căn cứ Khoản 2 Điều 328', at: 5, x: 330, y: 575, tone: 'accent' }] } },
+      chips: [{ text: '3 triệu + 3 triệu = 6 triệu', at: 3.4, x: 70, y: 1030, tone: 'accent2', from: { x: 420, y: 866, beat: 2.5, text: '6 triệu' } }, { text: 'Căn cứ Khoản 2 Điều 328', at: 5, x: 330, y: 575, tone: 'accent' }] } },
     { id: 'bac', type: 'CardMontage', bars: 3, enter: 'zoom', props: {
       // 6 thẻ bài tập THẬT của web cho khái niệm Đặt cọc (harness mount component, 3 thẻ ở trạng thái đã trả lời đúng)
       kicker: 'Một khái niệm', title: 'Sáu dạng bài', accentWords: [1, 2], start: 0, every: 2,

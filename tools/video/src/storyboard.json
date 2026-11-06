@@ -218,7 +218,13 @@
       "at": 3.4,
       "x": 70,
       "y": 1030,
-      "tone": "accent2"
+      "tone": "accent2",
+      "from": {
+       "x": 420,
+       "y": 866,
+       "beat": 2.5,
+       "text": "6 triệu"
+      }
      },
      {
       "text": "Căn cứ Khoản 2 Điều 328",
