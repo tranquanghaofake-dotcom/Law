@@ -1,4 +1,28 @@
-# REVIEW — video giới thiệu Luyện Luật, bản 6 (06/11/2026)
+# REVIEW — video giới thiệu Luyện Luật, bản 8 (06/11/2026)
+
+## Bản 7–8: dẫn mắt và chữ động (học từ HyperFrames oversized-cursor, Remotion Elements "Circle Marker / Crossed Off", hiệu ứng Echo của After Effects)
+- **Kỹ thuật mới:**
+  - con trỏ lớn vào từ ngoài khung, bấm "6 triệu" đúng phách 2 (gây ra đứng hình) và bấm "Link ở bio" (gây ra thanh địa chỉ gõ URL);
+  - khoanh vẽ tay quanh đáp án và huy chương 75;
+  - chip "Đặt cọc" chạy theo đường quên;
+  - tủ chức danh chồng chiều sâu;
+  - echo viền chữ ở "20 TRIỆU" và "CHỦ TỊCH NƯỚC".
+- **Phản biện lần 3 (1 subagent, xem 28 khung + tự trích 18 khung):**
+
+| Lỗi | Xử lý |
+|---|---|
+| P0 vòng khoanh đứng yên khi máy lao tới, đè "9 triệu" | chú thích có thời điểm `out`, tắt trước khi máy lao; chip cũng tắt |
+| P0 chip "Đặt cọc" tách khỏi đầu nét | tính vị trí theo độ dài cung thay vì chỉ số điểm |
+| P1 chớp loá bạc trên nền giấy (23 s) | bỏ flash ở cảnh này, chỉ giữ đứng hình |
+| P1 chip "Căn cứ" che lời giải | dời lên vùng câu hỏi (đã trả lời xong) |
+| P1 tủ cũ chìm, chữ "CHỦ TỊCH NƯỚC" bị đè | tủ cũ đậm 0,75–0,9, lệch phải 150 px/bậc; chữ xuống 26 px; tủ nhỏ lại 0,38 W, phóng từ đáy |
+| P1 con trỏ che URL, còn trong khung ở giây cuối | bấm xong rời ngang sang phải trong 1 phách |
+| P1 thẻ Hiểu nhanh trống 70 % ở khung vào | 2 nhánh có ngay khung đầu |
+| P1 dải đen đáy cảnh chuỗi, 74/75 chồng mờ | phóng nền 1,55; dải còn lại nằm dưới vùng an toàn 1330 px (chú thích TikTok che). **74/75 chồng mờ là animation thật của web, giữ nguyên** |
+| P2 thẻ màu nhỏ | rộng 94 % khung |
+| P2 thanh tô mẹo nhớ chỉ ở dòng 2 | chưa sửa |
+| Ngách "đáp án bay thành chip" (FLIP) | chưa làm |
+| Ngách "gõ URL trong thanh địa chỉ" | làm |
 
 ## Quyết định sáng tạo
 - **Mạch A (Hào chọn):** một câu hỏi tiền bạc đời thường đi xuyên suốt. Đặt cọc 20 triệu → thẻ Hiểu nhanh → **20 đếm lên 40 triệu** → luyện **tình huống khác cùng luật** trên web thật (cọc 3 triệu → 6 triệu, Khoản 2 Điều 328) → 6 bậc + lịch ôn → cú chốt **thắp chuỗi 74 → 75** → 4 màu thẻ → thăng chức tới Chủ tịch nước → thẻ kết. Hai mạch không dựng (B "trước và sau", C "kết quả trước") nằm trong `STORYLINES.md`.
@@ -64,4 +88,4 @@ Sau khi sửa, tự soát lại phát hiện 2 lỗi do bản sửa gây ra (má
 - `kiem_tra_storyboard`: video kết giữa cụm (độ dài 1 phút do Hào chọn); thẻ Hiểu nhanh 38 chữ / 8,6 s (đã giảm từ 116; giữ hệ quả 2 nhánh chính vì là lời giải câu hỏi); cảnh chức danh và thẻ kết dư chữ vì câu miễn trừ pháp lý bắt buộc.
 
 ## Cảnh yếu nhất
-Cảnh FSRS (đường quên): chỉ là đồ thị vẽ dần, chưa gắn với ví dụ Đặt cọc. Có thêm thời gian: cho chính thẻ Đặt cọc hiện ở các mốc ôn trên đường cong. Chồng tủ chức danh theo chiều sâu Z cũng chưa làm.
+Cảnh chuỗi (39–44 s): bản quay thật có dải tối ở đáy và số 74/75 hoà mờ do animation gốc của web. Muốn đẹp hơn phải quay lại asset ở khung dọc khác, không sửa được bằng edit.
