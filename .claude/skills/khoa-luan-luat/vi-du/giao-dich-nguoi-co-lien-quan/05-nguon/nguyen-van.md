@@ -1,0 +1,37 @@
+# Trích nguyên văn điều khoản sẽ viện dẫn (chỉ dẫn số điều khoản từ file này)
+
+## Luật Doanh nghiệp số 59/2020/QH14, Điều 167 (không bị Luật 76/2025/QH15 sửa đổi)
+Nguồn: VBHN 67/VBHN-VPQH ngày 15/8/2025 (đoạn khoản 1–2 đọc trực tiếp); khoản 3–6 đọc qua hethongphapluat.com, đã đối chiếu thống nhất với thanhlapdoanhnghiep.pro.vn. [Ghi chú: đối chiếu khoản 3–6 với VBHN bản đầy đủ trước khi nộp.]
+- K2: "Hội đồng quản trị chấp thuận các hợp đồng, giao dịch theo quy định khoản 1 Điều này và có giá trị nhỏ hơn 35% tổng giá trị tài sản của doanh nghiệp ghi trong báo cáo tài chính gần nhất hoặc một tỷ lệ hoặc giá trị khác nhỏ hơn theo quy định tại Điều lệ công ty. Trường hợp này, người đại diện công ty ký hợp đồng, giao dịch phải thông báo cho thành viên Hội đồng quản trị, Kiểm soát viên về các đối tượng có liên quan đối với hợp đồng, giao dịch đó và gửi kèm theo dự thảo hợp đồng hoặc nội dung chủ yếu của giao dịch. …"
+- K3 điểm b: "Hợp đồng, giao dịch vay, cho vay, bán tài sản có giá trị lớn hơn 10% tổng giá trị tài sản của doanh nghiệp ghi trong báo cáo tài chính gần nhất giữa công ty và cổ đông sở hữu từ 51% tổng số cổ phần có quyền biểu quyết trở lên hoặc người có liên quan của cổ đông đó."
+- K4: "… Hội đồng quản trị trình dự thảo hợp đồng, giao dịch hoặc giải trình về nội dung chủ yếu của hợp đồng, giao dịch tại cuộc họp Đại hội đồng cổ đông hoặc lấy ý kiến cổ đông bằng văn bản. Trường hợp này, cổ đông có lợi ích liên quan đến các bên trong hợp đồng, giao dịch không có quyền biểu quyết; …"
+- K5: "Hợp đồng, giao dịch bị vô hiệu theo quyết định của Tòa án và xử lý theo quy định của pháp luật khi được ký kết không đúng với quy định tại Điều này; …"
+
+## Nghị định 155/2020/NĐ-CP, Điều 293 khoản 4 điểm b và khoản 5 (sửa đổi bởi khoản 84 Điều 1 NĐ 245/2025/NĐ-CP)
+- K4b: "Giao dịch có giá trị từ 35% trở lên hoặc giao dịch dẫn đến tổng giá trị giao dịch phát sinh trong vòng 12 tháng kể từ ngày thực hiện giao dịch đầu tiên có giá trị từ 35% trở lên tổng giá trị tài sản ghi trên báo cáo tài chính gần nhất hoặc một tỷ lệ, giá trị khác nhỏ hơn theo quy định tại Điều lệ công ty …"
+- NĐ 245/2025, khoản 1 Điều 1, điểm b (bổ sung điểm d khoản 14 Điều 3 NĐ 155): "Chỉ tiêu 'tổng giá trị tài sản' quy định tại các điểm a, b, c khoản này được căn cứ trên báo cáo tài chính năm gần nhất được kiểm toán; … trường hợp doanh nghiệp là công ty mẹ, căn cứ trên chỉ tiêu 'tổng giá trị tài sản' có giá trị thấp hơn trên báo cáo tài chính riêng của công ty mẹ [hoặc báo cáo tài chính hợp nhất — CẦN KIỂM phần cuối câu bị cắt trong trích đoạn]"
+
+## Quan điểm cơ quan quản lý (KHÔNG phải VBQPPL)
+- Bộ Tài chính, Hỏi đáp CSTC (isa.mof.gov.vn/hoidapcstc/home/cthoidap/163251), trả lời câu 3: "trường hợp Đại hội đồng cổ đông đã ban hành nghị quyết chấp thuận giao dịch hoặc chấp thuận hạn mức giao dịch tối đa với người có liên quan, việc thực hiện các giao dịch cụ thể trong hạn mức đã được Đại hội đồng cổ đông phê duyệt được thực hiện theo nghị quyết của Đại hội đồng cổ đông."
+- Bộ Tài chính, Hỏi đáp CSTC 154897 (câu hỏi 23/7/2025), phần TRẢ LỜI: NĐ 155 và TT 96/2020 "không có xung đột về mặt pháp lý do quy định về các nội dung khác nhau"; TT 96: công ty mẹ căn cứ BCTC hợp nhất để xác định tổng tài sản **cho nghĩa vụ công bố thông tin**. (Câu "sẽ trình Chính phủ sửa đổi" là lời **người hỏi** thuật lại, không phải phần trả lời.)
+- Cùng nguồn 163251, câu 1: "việc cộng dồn được áp dụng cho tất cả các giao dịch phát sinh giữa công ty và cùng một người có liên quan, không phân biệt loại hợp đồng"; câu 2: căn cứ "trên tổng giá trị của các giao dịch đã phát sinh và dự kiến phát sinh trong 12 tháng".
+
+## Nước ngoài (nguyên văn tiếng Anh, người viết dịch khi đưa vào bài)
+- SGX Mainboard Rule 920(1): "An issuer may seek a general mandate from shareholders for recurrent transactions of a revenue or trading nature or those necessary for its day-to-day operations …, but not in respect of the purchase or sale of assets, undertakings or businesses. A general mandate is subject to annual renewal." 920(1)(b): tài liệu giải trình gửi cổ đông ("circular") phải có tên người có liên quan, bản chất giao dịch, lý do và lợi ích, phương pháp xác định giá, ý kiến của cố vấn tài chính độc lập.
+- HKEX Main Board Rule 14A.53: "The listed issuer must set an annual cap … The cap must be: (1) expressed in monetary terms; (2) determined by reference to previous transactions and figures in the published information …"
+- Directive 2007/36/EC Điều 9c (bổ sung bởi Directive (EU) 2017/828, EUR-Lex, OJ L 132, 20.5.2017):
+  - 9c(4): giao dịch trọng yếu được đại hội đồng hoặc hội đồng quản trị/giám sát phê duyệt "according to procedures which prevent the related party from taking advantage of its position …".
+  - 9c(5): "Paragraphs 2, 3 and 4 shall not apply to transactions entered into in the ordinary course of business and concluded on normal market terms. For such transactions the administrative or supervisory body of the company shall establish an internal procedure to periodically assess whether these conditions are fulfilled. The related parties shall not take part in that assessment."
+  - 9c(8): giao dịch với cùng một bên liên quan "concluded in any 12-month period or in the same financial year" được cộng dồn.
+
+## Tài liệu thực tiễn (trích đúng chữ trong nguồn, kể cả lỗi chính tả của nguồn)
+- Tờ trình 09/VTX/TTr-HĐQT ngày 29/5/2024 (file.fpts.com.vn): "Thông qua việc ký kết và thực hiện các hợp đồng/giao dịch giữa Công ty Cổ phần Vận Tải Đa Phương Thức Vietranstimex ("Vietranstimex") với bên có liên quan (theo phụ lục đính kèm) theo quy định tại …"; "ĐHĐCĐ ủy quyền cho HĐQT phê duyệt việc triển khai thực hiện các hợp đồng, giao dịch nêu trên giữa Công ty Cổ phần Vận Tải Đa Phương Thức Vietranstimex với các đối tác theo như mục 2.1 trong tờ trình này, đảm bảo những hợp đồng/giao dịch này được thực hiện trên cơ sở công bằng và dựa trên những điều khoản cạnh tranh, tuân thủ đúng qui định của pháp luật"
+- Kết luận thanh tra 50/KL-TT ngày 18/8/2025 (ssc.gov.vn): "Như vậy, Công ty cung cấp khoản vay cho người có liên quan của cổ đông là tổ chức, vi phạm quy định tại khoản 3 Điều 293 Nghị định số 155/2020/ND-CP." [nguồn ghi "ND-CP"; trong bài chỉ trích đến "Điều 293"]
+- Bản án 29/2017/KDTM-PT (qua FDVN): "Việc thực hiện hợp đồng thuê văn phòng số 2415-HĐTVP/2015/PVM SG-SGTTC và tạm thời thay đổi địa chỉ của Công ty STT đã được sự đồng ý của HĐQT, ông Kakazu S thực hiện đúng Nghị quyết số 18/2015/NQ-ĐHĐCĐ của ĐHĐCĐ …"
+
+## Luật Doanh nghiệp 59/2020/QH14 — Điều 138, 151 (hethongphapluat.com, đọc 05/11/2026; nguồn thứ cấp) [CẦN KIỂM: đối chiếu VBHN 67/VBHN-VPQH]
+Đ138 k1: "Đại hội đồng cổ đông gồm tất cả cổ đông có quyền biểu quyết, là cơ quan quyết định cao nhất của công ty cổ phần."
+Đ138 k2 n: "Quyền và nghĩa vụ khác theo quy định của Luật này và Điều lệ công ty."
+(Điều 138 không có khoản nào về việc Đại hội đồng cổ đông ủy quyền thẩm quyền của mình cho Hội đồng quản trị.)
+Đ151: "Trong thời hạn 90 ngày kể từ ngày nhận được nghị quyết hoặc biên bản họp Đại hội đồng cổ đông hoặc biên bản kết quả kiểm phiếu lấy ý kiến Đại hội đồng cổ đông, cổ đông, nhóm cổ đông quy định tại khoản 2 Điều 115 của Luật này có quyền yêu cầu Tòa án hoặc Trọng tài xem xét, hủy bỏ nghị quyết hoặc một phần nội dung nghị quyết Đại hội đồng cổ đông trong các trường hợp sau đây:"
+Đ151 k2: "Nội dung nghị quyết vi phạm pháp luật hoặc Điều lệ công ty."
