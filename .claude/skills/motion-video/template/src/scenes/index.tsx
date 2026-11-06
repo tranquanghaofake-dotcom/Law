@@ -133,8 +133,8 @@ const KnowledgeCard: React.FC<P> = ({ props }) => {
   const qa = props.qa as { q: string; a: string } | undefined;
   const hookEl = str(props.hook) ? (
     <div style={{ marginTop: SIZE.min * 1.2, fontFamily: DISPLAY, fontWeight: 800, fontSize: SIZE.body * 1.6, lineHeight: 1.15, color: T.ink, position: "relative", alignSelf: "flex-start", opacity: fadeIn(f, bt(at.hook - 0.5), 6), scale: interpolate(f, [bt(at.hook - 0.5), bt(at.hook - 0.5) + 10], [1.6, 1], { ...clamp, easing: Easing.out(Easing.exp) }), transformOrigin: "left center" }}>
-      <span style={{ position: "absolute", left: -8, right: -8, top: "45%", height: "45%", background: T.accent, opacity: 0.35, transformOrigin: "left", scale: `${interpolate(f, [bt(at.hook), bt(at.hook + 1)], [0, 1], { ...clamp, easing: easeOut })} 1` }} />
-      <span style={{ position: "relative" }}>{str(props.hook)}</span>
+      {/* bút dạ quang tô TỪNG DÒNG (box-decoration-break: clone), quét trái → phải */}
+      <span style={{ backgroundImage: `linear-gradient(${T.accent}59, ${T.accent}59)`, backgroundRepeat: "no-repeat", backgroundPosition: "0 85%", backgroundSize: `${(interpolate(f, [bt(at.hook), bt(at.hook + 1)], [0, 1], { ...clamp, easing: easeOut }) * 100).toFixed(1)}% 45%`, boxDecorationBreak: "clone", WebkitBoxDecorationBreak: "clone", padding: "0 6px" }}>{str(props.hook)}</span>
     </div>
   ) : null;
   const shown = branches.filter((_, i) => f >= bt(at.branches + i)).length;
@@ -242,7 +242,15 @@ const DeviceDemo: React.FC<P> = ({ props }) => {
       {props.flash !== false && <FlashFrame at={bt(num(props.syncBeat, 2)) + (props.freeze ? Math.round(num((props.freeze as { after?: number }).after, 0.25) * 60) : 0)} strength={0.55} />}
       {chips.map((c, i) => {
         const a = bt(c.at);
-        return <div key={i} style={{ position: "absolute", left: c.x, top: c.y, padding: "14px 26px", borderRadius: 16, background: col(c.tone, T.ink), color: c.tone ? "#fff" : T.ground, fontFamily: UI, fontWeight: 800, fontSize: SIZE.min * 1.3, scale: pop(a), opacity: f >= a ? (props.exitPush ? interpolate(f, [dur - bt(0.75), dur - bt(0.75) + 6], [1, 0], clamp) : 1) : 0, rotate: `${i % 2 ? 3 : -4}deg`, boxShadow: "0 16px 34px rgba(0,0,0,.3)" }}>{c.text}</div>;
+        const fr = (c as { from?: { x: number; y: number; beat: number; text: string } }).from;
+        if (fr && f >= bt(fr.beat) && f < a) {
+          // FLIP: nhãn tách khỏi ô đáp án, bay theo cung (đỉnh cung lệch trái 160 px), phóng 0,7 → 1 rồi thành chip đúng khung `at`
+          const q = interpolate(f, [bt(fr.beat), a], [0, 1], { ...clamp, easing: Easing.inOut(Easing.poly(4)) });
+          const mx = Math.min(fr.x, c.x) - 160, my = (fr.y + c.y) / 2;
+          const x = (1 - q) ** 2 * fr.x + 2 * (1 - q) * q * mx + q * q * c.x, y = (1 - q) ** 2 * fr.y + 2 * (1 - q) * q * my + q * q * c.y;
+          return <div key={i} style={{ position: "absolute", left: x, top: y, padding: "10px 22px", borderRadius: 14, background: col(c.tone, T.ink), color: "#fff", fontFamily: UI, fontWeight: 800, fontSize: SIZE.min * 1.3, scale: 0.7 + 0.3 * q, rotate: `${(-4 * q).toFixed(1)}deg`, boxShadow: "0 16px 34px rgba(0,0,0,.3)" }}>{fr.text}</div>;
+        }
+        return <div key={i} style={{ position: "absolute", left: c.x, top: c.y, padding: "14px 26px", borderRadius: 16, background: col(c.tone, T.ink), color: c.tone ? "#fff" : T.ground, fontFamily: UI, fontWeight: 800, fontSize: SIZE.min * 1.3, scale: fr ? interpolate(f, [a, a + 6, a + 12], [0.92, 1.08, 1], clamp) : pop(a), opacity: f >= a ? (props.exitPush ? interpolate(f, [dur - bt(0.75), dur - bt(0.75) + 6], [1, 0], clamp) : 1) : 0, rotate: `${i % 2 ? 3 : -4}deg`, boxShadow: "0 16px 34px rgba(0,0,0,.3)" }}>{c.text}</div>;
       })}
     </AbsoluteFill>
   );
