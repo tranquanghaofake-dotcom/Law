@@ -22,6 +22,12 @@ assets/icons|avatars|illustrations   asset đã tải/tự vẽ (+ LICENSES.md)
 examples/<slug>/      bài đã làm (mỗi bài: index.html, ke-hoach.md, nguon.md, infographic.png/.pdf)
 ```
 
+## Môi trường chạy
+
+- Cần: Node 18+, gói `playwright` có Chromium (script tự thử `PW_CHROMIUM`, rồi `/opt/pw-browsers/chromium`), mạng tới Google Fonts. Tải asset mới cần mạng tới unpkg.com và api.dicebear.com; asset đã có trong `assets/` dùng offline.
+- Thiếu Playwright (vd. môi trường chat không cài được): vẫn làm đủ pha 0–5 và tự kiểm bằng mắt; giao file `index.html` (đã chạy `icons.mjs` hoặc chèn SVG tay) để người dùng mở bằng Chrome → In → khổ A4, lề "Không", bật "Đồ họa nền" → Lưu PDF. Nói rõ bước tự kiểm bằng script chưa chạy.
+- Đường dẫn trong lệnh dưới đây viết theo vị trí `.claude/skills/infographic/`; nếu skill nằm chỗ khác, thay bằng thư mục chứa file này.
+
 ## Quy trình đầy đủ (8 pha) — dùng cho mọi chủ đề, mọi style
 
 | Pha | Việc | Ra gì |
