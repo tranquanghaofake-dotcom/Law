@@ -57,8 +57,9 @@ Hạn chế nào không có kiến nghị thì ghi một dòng "chưa có kiến
 
 ## D. Sổ nguồn (05-nguon/so-nguon.md)
 
-| Mã | Trích dẫn đầy đủ theo chuẩn | Link | Ngày truy cập | Đã mở | Trích nguyên văn quan trọng (trang) |
+| Mã | Trích dẫn đầy đủ theo chuẩn | Link | Ngày truy cập | Đã mở (bản chính thức / trang thứ cấp / chỉ tóm tắt) | **Giá trị pháp lý** (`nguon-tra-cuu.md`) |
 |---|---|---|---|---|---|
+Nguyên văn ghi riêng ở `05-nguon/nguyen-van.md` (khuôn trong `viet-chuong.md` mục 1).
 
 ## E. Bảng hiệu lực văn bản (05-nguon/van-ban.md)
 

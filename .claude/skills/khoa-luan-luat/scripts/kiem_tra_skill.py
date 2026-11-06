@@ -34,6 +34,10 @@ def main():
     if so_dong >= 500:
         loi.append(f"SKILL.md có {so_dong} dòng (phải < 500)")
 
+    so_chu = len(re.findall(r"\w+", van[m.end():] if m else van))
+    if so_chu > 3000:
+        loi.append(f"SKILL.md có {so_chu} chữ (phải ≤ 3000; chuyển chi tiết sang references/)")
+
     tham_chieu = set(re.findall(r"`((?:references|scripts)/[\w\-./]+\.(?:md|py))", van))
     for tc in sorted(tham_chieu):
         if not os.path.isfile(os.path.join(GOC, tc)):
@@ -42,7 +46,7 @@ def main():
         if f"references/{ten_tep}" not in tham_chieu:
             loi.append(f"references/{ten_tep} không được SKILL.md trỏ tới")
 
-    print(f"SKILL.md: {so_dong} dòng · {len(tham_chieu)} tham chiếu")
+    print(f"SKILL.md: {so_dong} dòng · {so_chu} chữ · {len(tham_chieu)} tham chiếu")
     for l in loi:
         print("  LỖI:", l)
     print("XANH" if not loi else f"ĐỎ ({len(loi)} lỗi)")

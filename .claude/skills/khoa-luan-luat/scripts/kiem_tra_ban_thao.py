@@ -153,7 +153,10 @@ def kiem_tra(van, nop=False, an_danh=None, tieu_de_khac=None, nguyen_van=None, b
 
     # 4. Lộ danh tính (bài dự giải)
     if an_danh is not None:
-        thap = van.lower()
+        # Điều 10 TT 45/2020 cho phép tên trong danh mục tài liệu tham khảo → bỏ qua mục đó
+        than_an = re.sub(r"(?ims)^#+[^\n]*t[àa]i li[ệe]u tham kh[ảa]o[^\n]*\n.*?(?=^#|\Z)",
+                         lambda x: " " * len(x.group(0)), van)
+        thap = than_an.lower()
         for chuoi in an_danh:
             chuoi = chuoi.strip()
             if chuoi and chuoi.lower() in thap:
@@ -217,7 +220,7 @@ def kiem_tra(van, nop=False, an_danh=None, tieu_de_khac=None, nguyen_van=None, b
             if van.rfind("[^", 0, vt) > van.rfind("\n", 0, vt):
                 continue  # bỏ qua tên bài trong footnote
             dong_vt = van[van.rfind("\n", 0, vt) + 1: (van.find("\n", vt) + 1 or len(van) + 1) - 1]
-            if "[ĐỀ XUẤT]" in dong_vt:
+            if "[ĐỀ XUẤT]" in dong_vt or re.match(r"\s*>\s*Đề xuất\s*:", dong_vt):
                 continue  # câu chữ người viết đề xuất, không phải lời trích
             manh = [p for p in re.split(r"…|\.\.\.", noi_dung) if len(p.strip()) >= 10]
             if any(_chuan_hoa(p) not in kho for p in manh):
@@ -317,7 +320,8 @@ def main():
         print(f"== {tep}: CHẶN {dem['CHẶN']} · NẶNG {dem['NẶNG']} · NHẸ {dem['NHẸ']} · ước {tr:.1f} trang")
         for v in sorted(kq, key=lambda v: (("CHẶN", "NẶNG", "NHẸ").index(v["muc"]), v["dong"])):
             print(f"  [{v['muc']}] dòng {v['dong']}: {v['ma']} — {v['noi_dung']}")
-        co_chan = co_chan or dem["CHẶN"] > 0
+        co_chan = co_chan or dem["CHẶN"] > 0 or dem["NẶNG"] > 0
+    # mã thoát: 1 nếu còn CHẶN hoặc NẶNG (cổng pha 6, pha 8), 0 nếu chỉ còn NHẸ
     sys.exit(1 if co_chan else 0)
 
 

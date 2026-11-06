@@ -38,7 +38,7 @@ Lĩnh vực: luật thuộc nhóm **Khoa học xã hội** (Điều 3). Năm 202
 | Hình thức báo cáo | 5 | |
 | Công bố khoa học từ kết quả | 10 | tạp chí trong nước được Hội đồng Giáo sư nhà nước tính điểm, hoặc kỷ yếu có phản biện: ≤ 5 · tạp chí quốc tế uy tín: ≤ 10 |
 
-**Khung xét giải sơ khảo** (Điều 13, khoản 3): điểm trung bình của hội đồng **≥ 85: vào chung khảo** · 80 đến < 85: xét giải ba · 70 đến < 80: xét khuyến khích · < 70 hoặc hồ sơ không hợp lệ: không xét giải. Chung khảo: giải nhất cần ≥ 70% phiếu đồng ý của hội đồng (Điều 16, khoản 3, điểm a). → Ở pha 7, mục tiêu tự chấm là **≥ 85**, không phải ≥ 70.
+**Khung xét giải sơ khảo** (Điều 13, khoản 3): điểm trung bình của hội đồng **≥ 85: vào chung khảo** · 80 đến < 85: xét giải ba · 70 đến < 80: xét khuyến khích · < 70 hoặc hồ sơ không hợp lệ: không xét giải. Chung khảo: giải nhất cần ≥ 70% phiếu đồng ý của hội đồng (Điều 16, khoản 3, điểm a). → Ở pha 7, mục tiêu là **≥ 85 theo điểm phản biện độc lập** (tự chấm thường cao hơn 15–30 điểm), không phải ≥ 70.
 
 Hệ quả thực hành: **Kết quả (40) + Nội dung (20) = 60%**. Bài thắng giải không thắng nhờ chương lý luận dài, mà nhờ phát hiện cụ thể có bằng chứng. Có bài báo đăng trước khi nộp là cộng điểm thật.
 

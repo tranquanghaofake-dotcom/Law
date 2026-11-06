@@ -30,6 +30,9 @@ Kiểm hiệu lực: mở mục "Thuộc tính" hoặc "Lược đồ" → ghi t
 - **Văn bản hợp nhất (VBHN)** cho biết điều, khoản nào đã bị sửa, và bởi văn bản nào (xem footnote của VBHN). VBHN không phải VBQPPL mới. Khi trích, ghi văn bản gốc kèm văn bản sửa đổi, ví dụ "Điều … Luật Doanh nghiệp số 59/2020/QH14 (được sửa đổi, bổ sung bởi Luật số 76/2025/QH15)". Chỉ dẫn VBHN khi trường cho phép.
 - Trước khi viết về một điều luật, phải kiểm điều đó **có bị sửa sau năm của các công trình đã đọc không**. Bài viết năm 2024 có thể bàn về câu chữ đã bị thay.
 
+## Đường ống lập pháp (pha 1)
+Tra theo giai đoạn: **đề xuất xây dựng** (công văn xin ý kiến của bộ chủ trì, hồ sơ đề nghị trên cổng của bộ); **có trong chương trình** (nghị quyết của Quốc hội, Ủy ban Thường vụ Quốc hội về chương trình xây dựng luật, pháp lệnh năm đó); **đã trình** (quochoi.vn: tin kỳ họp, tờ trình, báo cáo thẩm tra; duthaoonline.quochoi.vn). Dự thảo nghị định, thông tư: mục lấy ý kiến dự thảo trên cổng của bộ chủ trì (chạy thử: hồ sơ dự thảo thay NĐ 91/2020 trên cổng Bộ Công an). Ghi giai đoạn và ngày tra; tra một lần không thấy chưa phải "không có".
+
 ## Án lệ và bản án
 
 | Nguồn | Dùng để |

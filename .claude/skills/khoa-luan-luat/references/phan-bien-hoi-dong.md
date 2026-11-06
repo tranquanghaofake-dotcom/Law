@@ -76,11 +76,11 @@ Mọi góp ý đều có dòng. Giữ nguyên thì giải trình bằng căn c�
 Chạy 3 agent riêng, mỗi agent một vai, song song. Khuôn brief:
 ```
 Bạn là [PHẢN BIỆN HỌC THUẬT | NGƯỜI LÀM THỰC TIỄN (nghề cụ thể) | THƯ KÝ CHẤM theo phiếu điểm].
-CÁCH LY: chỉ đọc đúng các file sau, không mở file khác (đặc biệt không đọc 07-phan-bien.md, nhật ký, sổ việc):
+CÁCH LY: chỉ đọc đúng các file sau, không mở file khác (đặc biệt không đọc 07-phan-bien.md, nhật ký):
 - <file chương>, <phụ lục>
 - 05-nguon/nguyen-van.md, 05-nguon/van-ban.md   (để kiểm trích đúng, có vượt bằng chứng không)
 - references/phan-bien-hoi-dong.md               (khuôn góp ý)  [thư ký: thêm references/tieu-chi-cham.md và hồ sơ, đề cương]
-Việc: [học thuật: bảng luận điểm → bằng chứng + ≤ 8 góp ý] [thực tiễn: ≤ 8 góp ý về vận hành thật, ghi "[kinh nghiệm thực tiễn, cần kiểm]" khi không có nguồn] [thư ký: điểm từng tiêu chí, phần chưa viết không có điểm, 3 việc lợi điểm nhất].
+Việc: [học thuật: bảng luận điểm → bằng chứng + ≤ 8 góp ý] [thực tiễn: ≤ 8 góp ý về vận hành thật, ghi "[CẦN KIỂM: kinh nghiệm thực tiễn]" khi không có nguồn] [thư ký: điểm từng tiêu chí, phần chưa viết không có điểm, 3 việc lợi điểm nhất].
 Mỗi góp ý đủ: Vị trí · Quan sát · Căn cứ · Vì sao quan trọng · Yêu cầu sửa · Tiêu chí đóng · Mức.
 Không sửa file. Không khen chung chung.
 ```

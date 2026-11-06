@@ -220,6 +220,20 @@ class KiemTraBanThao(unittest.TestCase):
         self.assertEqual(len(v), 1)
         self.assertIn("(i)", v[0]["noi_dung"])
 
+    def test_an_danh_bo_qua_danh_muc_tai_lieu(self):
+        van = "Thân bài không lộ tên.\n\n## Danh mục tài liệu tham khảo\n1. Nguyễn Văn A (2026), bài đã công bố.\n"
+        self.assertEqual(len(muc(kiem_tra(van, an_danh=["Nguyễn Văn A"]), "lo-danh-tinh")), 0)
+
+    def test_an_danh_van_bat_trong_than_bai(self):
+        van = "Nhóm Nguyễn Văn A thực hiện.\n\n## Danh mục tài liệu tham khảo\n1. Nguyễn Văn A (2026).\n"
+        self.assertEqual(len(muc(kiem_tra(van, an_danh=["Nguyễn Văn A"]), "lo-danh-tinh")), 1)
+
+    def test_dong_de_xuat_khong_nhan_ban_nop(self):
+        van = '> Đề xuất: "Người lao động chỉ được coi là đã biết rõ khi được thông báo trước bằng văn bản."'
+        kq = kiem_tra(van, nop=True, nguyen_van="")
+        self.assertEqual(len(muc(kq, "trich-ngoai-nguyen-van")), 0)
+        self.assertFalse(any(v["muc"] == "CHẶN" for v in kq))
+
     def test_ban_sach_khong_loi_chan(self):
         van = (
             "Khoản 1 Điều 4 Luật Doanh nghiệp (Luật số 59/2020/QH14) quy định…[^1]\n\n"

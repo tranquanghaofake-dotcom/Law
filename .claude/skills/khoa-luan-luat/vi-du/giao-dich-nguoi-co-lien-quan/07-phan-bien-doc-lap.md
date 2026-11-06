@@ -5,7 +5,7 @@ Mỗi agent chỉ được đọc bài, phụ lục, file nguồn và khuôn ph�
 ## Điểm
 | Vai | Kết quả |
 |---|---|
-| Thư ký chấm (khung Điều 13 k2 TT 45/2020) | **52/100** (tổng quan 7, mục tiêu–phương pháp 14, tính mới 9, kết quả 17, ứng dụng 2, hình thức–công bố 3); không đạt ngưỡng 85 |
+| Thư ký chấm | **52/100** theo khung brief (sai: có nhóm "tính mới", "ứng dụng"); quy đổi sang **khung đúng** Điều 13 k2 TT 45/2020 do chính thư ký ước: tổng quan 7 · nội dung ~13 · phương pháp ~10 · kết quả 17 · hình thức 3 · công bố 0 = **~50/100**; không đạt ngưỡng 85 |
 | Phản biện học thuật | Kết quả 16–20/40; 2 lỗi CHẶN, 6 NẶNG; kết luận CẦN_SỬA |
 | Người làm thực tiễn | Ứng dụng 3/5; 1 CHẶN có điều kiện, 5 NẶNG |
 | Tự chấm trước đó (`07-phan-bien.md`) | 71/100 → **cao hơn khoảng 19 điểm**, chủ yếu vì tính cả phần chưa viết (Chương 3, khảo sát N ≥ 20) |
