@@ -36,7 +36,7 @@ const sb = {
       hook: memo.hook.replace(' bằng số tiền cọc', ''), at: { branches: -1, hook: 6 } } },
     // ── cụm 2 ──
     { id: 'dap', type: 'StatCount', bars: 2, bg: 'dark', props: {
-      kicker: 'Chủ nhà bỏ cuộc phải trả', stats: [{ value: 40, from: 20, label: 'triệu', at: 0 }],
+      kicker: 'Chủ nhà bỏ cuộc phải trả', stats: [{ value: 40, from: 20, label: 'triệu', at: 0 }], roll: true,
       sub: { text: 'Trả cọc + khoản tương đương', at: 4 } } },
     { id: 'de', type: 'DeviceDemo', bars: 3, props: {
       kicker: 'Luyện ngay trên web', title: 'Cùng luật, tình huống khác', accentWords: [0, 1], device: 'phone',
