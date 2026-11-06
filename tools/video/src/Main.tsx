@@ -24,14 +24,16 @@ const SealCut: React.FC<{ at: number }> = ({ at }) => {
   const frame = useCurrentFrame();
   const mark = T.cutMark;
   const t = frame - at;
-  if (!mark || t < -8 || t > 16) return null;
+  if (!mark || t < -8 || t > 10) return null;
+  // Z luôn TỚI: đĩa dấu phóng lên phủ khung trước điểm cắt, rồi tiếp tục phóng qua máy (1 → 1,7) và tan — không thu về (lật dấu)
   const R = Math.hypot(W, H) * 0.6;
-  const r = t < 0 ? interpolate(t, [-8, 0], [0, R], { easing: Easing.in(Easing.cubic) }) : interpolate(t, [0, 16], [R, 0], { easing: Easing.out(Easing.cubic) });
-  const glyph = interpolate(t, [-8, -2, 4, 12], [0.4, 1, 1, 0], clamp);
+  const r = t < 0 ? interpolate(t, [-8, 0], [0, R], { easing: Easing.in(Easing.cubic) }) : R * interpolate(t, [0, 10], [1, 1.7], clamp);
+  const op = t < 0 ? 1 : interpolate(t, [0, 10], [1, 0], { ...clamp, easing: Easing.in(Easing.quad) });
+  const glyph = interpolate(t, [-8, -2, 2, 8], [0.4, 1, 1, 0], clamp);
   return (
-    <AbsoluteFill style={{ pointerEvents: "none", alignItems: "center", justifyContent: "center" }}>
+    <AbsoluteFill style={{ pointerEvents: "none", alignItems: "center", justifyContent: "center", opacity: op }}>
       <div style={{ position: "absolute", left: W / 2 - r, top: H * 0.42 - r, width: r * 2, height: r * 2, borderRadius: "50%", background: mark.color }} />
-      <div style={{ position: "absolute", top: H * 0.42 - Math.min(W, H) * 0.155, fontFamily: DISPLAY, fontWeight: 800, fontSize: Math.min(W, H) * 0.31, color: mark.ink ?? T.ground, opacity: glyph, scale: interpolate(t, [-8, 0, 16], [1.6, 1, 0.6], clamp), lineHeight: 1 }}>{mark.text}</div>
+      <div style={{ position: "absolute", top: H * 0.42 - Math.min(W, H) * 0.155, fontFamily: DISPLAY, fontWeight: 800, fontSize: Math.min(W, H) * 0.31, color: mark.ink ?? T.ground, opacity: glyph, scale: interpolate(t, [-8, 0, 10], [0.7, 1, 2.2], clamp), lineHeight: 1 }}>{mark.text}</div>
     </AbsoluteFill>
   );
 };

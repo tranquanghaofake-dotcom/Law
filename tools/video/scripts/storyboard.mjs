@@ -36,7 +36,7 @@ const sb = {
       hook: memo.hook.replace(' bằng số tiền cọc', ''), at: { branches: 1, hook: 6 } } },
     // ── cụm 2 ──
     { id: 'dap', type: 'StatCount', bars: 2, bg: 'dark', props: {
-      kicker: 'Chủ nhà bỏ cuộc phải trả', stats: [{ value: 40, from: 20, label: 'triệu', at: 1 }], hits: [1],
+      kicker: 'Chủ nhà bỏ cuộc phải trả', stats: [{ value: 40, from: 20, label: 'triệu', at: 0 }],
       sub: { text: 'Trả cọc + khoản tương đương', at: 4 } } },
     { id: 'de', type: 'DeviceDemo', bars: 3, props: {
       kicker: 'Luyện ngay trên web', title: 'Cùng luật, tình huống khác', accentWords: [0, 1], device: 'phone',
@@ -46,7 +46,7 @@ const sb = {
       chips: [{ text: '3 triệu + 3 triệu = 6 triệu', at: 3, x: 70, y: 980, tone: 'accent2' }, { text: 'Căn cứ Khoản 2 Điều 328', at: 5, x: 300, y: 1130, tone: 'accent' }] } },
     { id: 'bac', type: 'CardMontage', bars: 3, enter: 'zoom', props: {
       // 6 thẻ bài tập THẬT của web cho khái niệm Đặt cọc (harness mount component, 3 thẻ ở trạng thái đã trả lời đúng)
-      kicker: 'Một khái niệm', title: 'Sáu dạng bài', accentWords: [1, 2], start: 1, every: 1.75,
+      kicker: 'Một khái niệm', title: 'Sáu dạng bài', accentWords: [1, 2], start: 0, every: 2,
       cards: [
         { image: 'cap/ex-1-intro.png', label: 'Gặp: hiểu nhanh' }, { image: 'cap/ex-2-mcq.png', label: 'Nhận biết' },
         { image: 'cap/ex-3-pair.png', label: 'Phân biệt' }, { image: 'cap/ex-4-cloze.png', label: 'Điền chỗ trống' },
@@ -56,12 +56,12 @@ const sb = {
     { id: 'fsrs', type: 'LineReveal', bars: 2, bg: 'dark', props: {
       kicker: 'Lịch ôn tự động', title: 'Ôn đúng lúc sắp quên', accentWords: [3, 4], drawBeats: 6, axisX: 'ngày', axisY: 'nhớ',
       points: forgetting(), marks: [{ x: 0.16, label: 'ôn 1' }, { x: 0.38, label: 'ôn 2' }, { x: 0.7, label: 'ôn 3' }] } },
-    { id: 'chuoi', type: 'MediaHero', bars: 4, bg: 'dark', props: {
-      kicker: 'Thẻ chuyên cần', media: { kind: 'video', src: 'cap/ignite-75.mp4' }, poster: 'cap/ignite-75-0.png',
-      syncSec: 3.865, hitBeat: 8, focus: { x: 0.5, y: 0.435 }, darkIntroSec: 1.2, hits: [8], pushIn: 2.3, cutBottom: 600, freezeFrames: 14,
+    { id: 'chuoi', type: 'MediaHero', bars: 3, bg: 'dark', props: {
+      kicker: 'Thẻ chuyên cần', media: { kind: 'video', src: 'cap/ignite-75.mp4' }, poster: 'cap/ignite-75-45.png',
+      syncSec: 3.865, hitBeat: 8, focus: { x: 0.5, y: 0.435 }, hits: [8], baseScale: 1.35, pushIn: 1.7, cutBottom: 380, freezeFrames: 14, skipFrames: 45,
       lines: [{ text: 'Học mỗi ngày,', at: 0 }, { text: 'thắp một ký hoạ', at: 2, color: '#d8b4ff' }], linesOut: 6 } },
-    { id: 'chuky', type: 'CardCycle', bars: 2, bg: '#08080c', props: {
-      kicker: 'Hết chu kỳ, thẻ đổi màu', every: 2,
+    { id: 'chuky', type: 'CardCycle', bars: 3, bg: '#08080c', props: {
+      kicker: 'Hết chu kỳ, thẻ đổi màu', every: 3,
       items: [
         { image: 'cap/card-25.png', label: 'Chuỗi 25 · Đỏ', color: '#ff6a3d' }, { image: 'cap/card-50.png', label: 'Chuỗi 50 · Xanh lam', color: '#4aa3ff' },
         { image: 'cap/card-75.png', label: 'Chuỗi 75 · Tím', color: '#b77bff' }, { image: 'cap/card-100.png', label: 'Chuỗi 100 · Trắng – đen', color: '#e8e8e8' },
@@ -72,7 +72,7 @@ const sb = {
       titles: { climb: 'Đủ sách thì thăng chức', finale: 'Lên tới đỉnh' },
       climb: [['cong-dan', 'Công dân'], ['chu-tich-tinh', 'Chủ tịch UBND tỉnh'], ['bo-truong', 'Bộ trưởng'], ['thu-tuong', 'Thủ tướng']]
         .map(([id, label]) => ({ image: `cap/post-${id}.png`, label })),
-      finale: { media: { kind: 'video', src: 'cap/post-celebrate.webm', alpha: true }, at: 4 }, finaleLabel: 'CHỦ TỊCH NƯỚC', hits: [4],
+      finale: { media: { kind: 'video', src: 'cap/post-celebrate.webm', alpha: true }, at: 4 }, finaleLabel: 'CHỦ TỊCH NƯỚC', hits: [5.5],
       note: 'Chức danh mô phỏng trong trò chơi học tập, không phải chức vụ thật.' } },
     { id: 'ket', type: 'EndCard', bars: 2, props: {
       mark: { text: '§' }, name: 'Luyện Luật', tags: ['Miễn phí', 'Không cần tài khoản'], cta: 'Link ở bio',
@@ -83,13 +83,13 @@ const sb = {
     ...[0, 1, 2, 3].map((i) => ({ sfx: 'select_001', beat: 17 + i, volume: 0.22 })),
     { sfx: 'maximize_006', beat: 30.5, volume: 0.3 },
     { sfx: 'confirmation_001', beat: 42, volume: 0.45 },
-    ...[0, 1, 2, 3, 4, 5].map((i) => ({ sfx: 'select_001', beat: 53 + i * 1.75, volume: 0.2 })),
+    ...[0, 1, 2, 3, 4, 5].map((i) => ({ sfx: 'select_001', beat: 52 + i * 2, volume: 0.2 })),
     { sfx: 'maximize_006', beat: 62.5, volume: 0.3 },
     { sfx: 'bong_001', beat: 80, volume: 0.45 },
-    ...[0, 1, 2, 3].map((i) => ({ sfx: 'drop_002', beat: 88 + i * 2, volume: 0.3 })),
+    ...[0, 1, 2, 3].map((i) => ({ sfx: 'drop_002', beat: 84 + i * 3, volume: 0.3 })),
     { sfx: 'maximize_006', beat: 94.5, volume: 0.3 },
     ...[1, 2, 3].map((i) => ({ sfx: 'select_001', beat: 96 + i, volume: 0.2 })),
-    { sfx: 'bong_001', beat: 100, volume: 0.45 },
+    { sfx: 'bong_001', beat: 101.5, volume: 0.45 },
   ],
 };
 

@@ -1,11 +1,38 @@
-# REVIEW — video giới thiệu Luyện Luật, bản 4 (06/11/2026)
+# REVIEW — video giới thiệu Luyện Luật, bản 6 (06/11/2026)
 
 ## Quyết định sáng tạo
 - **Mạch A (Hào chọn):** một câu hỏi tiền bạc đời thường đi xuyên suốt. Đặt cọc 20 triệu → thẻ Hiểu nhanh → **20 đếm lên 40 triệu** → luyện **tình huống khác cùng luật** trên web thật (cọc 3 triệu → 6 triệu, Khoản 2 Điều 328) → 6 bậc + lịch ôn → cú chốt **thắp chuỗi 74 → 75** → 4 màu thẻ → thăng chức tới Chủ tịch nước → thẻ kết. Hai mạch không dựng (B "trước và sau", C "kết quả trước") nằm trong `STORYLINES.md`.
 - **Chất liệu "Văn Miếu" của web:** mảng màu phẳng (cam, mực, giấy), Noto Serif Display + Be Vietnam Pro. **Bỏ light leak, glow, hạt bay, tia sáng.** Chuyển cảnh có chữ ký riêng là dấu § son phủ khung ở đầu mỗi cụm nhạc.
 - **Độ dài:** 28 ô = 60,5 s. Hào chọn 1 phút. Video kết ở giữa cụm thứ 4, nhưng vẫn đúng đầu một ô nhịp.
 
-## Phản biện độc lập (1 subagent, chỉ nhận SPEC + STORYLINES + ảnh)
+## Bản 5–6: nâng cấp edit (học từ HyperFrames motion-doctrine/cut-the-curve, hướng dẫn speed ramp)
+- **Luật vector:**
+  - mọi điểm cắt thường là cut-the-curve sang trái (trước đó whip đổi hướng luân phiên — ping-pong);
+  - đầu cụm hút vào → zoom tiếp tục lao tới (trước đó lật dấu Z);
+  - mắt cắt § lao qua máy rồi tan (trước đó thu về thành chấm đỏ).
+- **Kỹ thuật mới:**
+  - impact freeze 24 khung + flash khi chọn đúng đáp án;
+  - điện thoại lao tới lấp khung mở sang cảnh 6 dạng bài (vật thành thế giới);
+  - montage 6 thẻ bài tập THẬT của khái niệm Đặt cọc (thay danh sách chữ — cảnh yếu nhất bản 4);
+  - kicker lộ qua mặt nạ;
+  - đứng hình 14 khung ở số 74 → 75.
+- **Phản biện lần 2 (1 subagent, nhận SPEC + tài liệu kỹ thuật + tờ review):**
+
+| Lỗi | Xử lý |
+|---|---|
+| P0 bản quay chuỗi chừa 32 % đáy đen + 4 s chết sau cú chốt | Phủ kín khung (×1,35), mặt nạ mờ đáy thay cắt cứng, rút cảnh còn 3 ô, đẩy máy ×1,7 |
+| P0 đầu cụm lật dấu Z, khe 0,45 s trống | § lao qua máy; số "40" và nét đồ thị có mặt ngay khung đầu |
+| P0 flash nhận chức trước khi tủ hiện | cú nện dời sang phách 101,5 (lúc cửa tủ mở) |
+| P0 flash mỗi lần lật thẻ màu | bỏ flash, lật 180° |
+| P1 khung cắt đục | cảnh ra giữ đậm ≥ 0,9, cảnh vào bắt đầu 0,8 |
+| P1 logo đứng yên, thẻ Hiểu nhanh máy đứng | tranh trôi + đẩy chậm; máy trượt theo nhánh; mẹo nhớ thành chữ nện |
+| P1 thẻ montage vào muộn, chữ nhỏ | thẻ đầu có ngay khung vào, thẻ rộng 90 % |
+| P1 fsrs→chuỗi như crossfade | bỏ 45 khung đầu bản quay (khung giữ là khung 45 đã tối) |
+| P1 "lệch mạch 20 triệu → 3 triệu" | KHÔNG đổi video: chủ ý "Cùng luật, tình huống khác"; sửa SPEC ghi đúng Khoản 2 |
+| P2 chip viên thuốc ở thẻ kết | đổi thành một dòng chữ |
+| Đề xuất chồng tủ theo chiều sâu Z | chưa làm (để lần sau) |
+
+## Phản biện độc lập lần 1 (bản 4)
 
 | Lỗi subagent nêu | Xử lý |
 |---|---|
@@ -37,4 +64,4 @@ Sau khi sửa, tự soát lại phát hiện 2 lỗi do bản sửa gây ra (má
 - `kiem_tra_storyboard`: video kết giữa cụm (độ dài 1 phút do Hào chọn); thẻ Hiểu nhanh 38 chữ / 8,6 s (đã giảm từ 116; giữ hệ quả 2 nhánh chính vì là lời giải câu hỏi); cảnh chức danh và thẻ kết dư chữ vì câu miễn trừ pháp lý bắt buộc.
 
 ## Cảnh yếu nhất
-Cảnh 6 bậc vẫn là một danh sách, chưa có ví dụ "Đặt cọc" đi qua từng bậc. Nếu có thêm thời gian: quay 6 dạng bài thật của khái niệm Đặt cọc, mỗi bậc nửa phách.
+Cảnh FSRS (đường quên): chỉ là đồ thị vẽ dần, chưa gắn với ví dụ Đặt cọc. Có thêm thời gian: cho chính thẻ Đặt cọc hiện ở các mốc ôn trên đường cong. Chồng tủ chức danh theo chiều sâu Z cũng chưa làm.

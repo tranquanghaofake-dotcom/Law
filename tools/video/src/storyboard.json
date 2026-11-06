@@ -139,11 +139,8 @@
       "value": 40,
       "from": 20,
       "label": "triệu",
-      "at": 1
+      "at": 0
      }
-    ],
-    "hits": [
-     1
     ],
     "sub": {
      "text": "Trả cọc + khoản tương đương",
@@ -205,8 +202,8 @@
      1,
      2
     ],
-    "start": 1,
-    "every": 1.75,
+    "start": 0,
+    "every": 2,
     "cards": [
      {
       "image": "cap/ex-1-intro.png",
@@ -755,7 +752,7 @@
   {
    "id": "chuoi",
    "type": "MediaHero",
-   "bars": 4,
+   "bars": 3,
    "bg": "dark",
    "props": {
     "kicker": "Thẻ chuyên cần",
@@ -763,20 +760,21 @@
      "kind": "video",
      "src": "cap/ignite-75.mp4"
     },
-    "poster": "cap/ignite-75-0.png",
+    "poster": "cap/ignite-75-45.png",
     "syncSec": 3.865,
     "hitBeat": 8,
     "focus": {
      "x": 0.5,
      "y": 0.435
     },
-    "darkIntroSec": 1.2,
     "hits": [
      8
     ],
-    "pushIn": 2.3,
-    "cutBottom": 600,
+    "baseScale": 1.35,
+    "pushIn": 1.7,
+    "cutBottom": 380,
     "freezeFrames": 14,
+    "skipFrames": 45,
     "lines": [
      {
       "text": "Học mỗi ngày,",
@@ -794,11 +792,11 @@
   {
    "id": "chuky",
    "type": "CardCycle",
-   "bars": 2,
+   "bars": 3,
    "bg": "#08080c",
    "props": {
     "kicker": "Hết chu kỳ, thẻ đổi màu",
-    "every": 2,
+    "every": 3,
     "items": [
      {
       "image": "cap/card-25.png",
@@ -862,7 +860,7 @@
     },
     "finaleLabel": "CHỦ TỊCH NƯỚC",
     "hits": [
-     4
+     5.5
     ],
     "note": "Chức danh mô phỏng trong trò chơi học tập, không phải chức vụ thật."
    }
@@ -924,22 +922,22 @@
   },
   {
    "sfx": "select_001",
-   "beat": 53,
+   "beat": 52,
    "volume": 0.2
   },
   {
    "sfx": "select_001",
-   "beat": 54.75,
+   "beat": 54,
    "volume": 0.2
   },
   {
    "sfx": "select_001",
-   "beat": 56.5,
+   "beat": 56,
    "volume": 0.2
   },
   {
    "sfx": "select_001",
-   "beat": 58.25,
+   "beat": 58,
    "volume": 0.2
   },
   {
@@ -949,7 +947,7 @@
   },
   {
    "sfx": "select_001",
-   "beat": 61.75,
+   "beat": 62,
    "volume": 0.2
   },
   {
@@ -964,7 +962,12 @@
   },
   {
    "sfx": "drop_002",
-   "beat": 88,
+   "beat": 84,
+   "volume": 0.3
+  },
+  {
+   "sfx": "drop_002",
+   "beat": 87,
    "volume": 0.3
   },
   {
@@ -974,12 +977,7 @@
   },
   {
    "sfx": "drop_002",
-   "beat": 92,
-   "volume": 0.3
-  },
-  {
-   "sfx": "drop_002",
-   "beat": 94,
+   "beat": 93,
    "volume": 0.3
   },
   {
@@ -1004,7 +1002,7 @@
   },
   {
    "sfx": "bong_001",
-   "beat": 100,
+   "beat": 101.5,
    "volume": 0.45
   }
  ]

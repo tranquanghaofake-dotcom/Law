@@ -2,7 +2,7 @@
 // Quy ước chung: một vật chính/cảnh chiếm ≥ 40 % khung; tiêu đề đã đáp thì đứng yên; màu nhấn chỉ cho 1 chữ/1 vật.
 import React from "react";
 import { AbsoluteFill, Easing, Img, interpolate, Sequence, useCurrentFrame } from "remotion";
-import { arr, blurIn, clamp, DISPLAY, easeOut, fadeIn, H1, num, SAFE, SAFE_PAD, SIZE, str, UI, useBeats, usePop, useCol, useSceneDur, useT } from "../core/look";
+import { arr, blurIn, clamp, DISPLAY, easeInOut, easeOut, fadeIn, H1, num, SAFE, SAFE_PAD, SIZE, str, UI, useBeats, usePop, useCol, useSceneDur, useT } from "../core/look";
 import { asset, Device, FlashFrame, FreezeVideo, Glitch, Icon, MediaView, Particles, Rays, Shockwave, Words } from "../core/fx";
 import { FPS, H, VERTICAL, W } from "../core/timeline";
 import type { Media, SceneType } from "../core/types";
@@ -56,7 +56,7 @@ const LogoReveal: React.FC<P> = ({ props }) => {
   return (
     <AbsoluteFill style={{ alignItems: "center" }}>
       <Rays x={W / 2} y={H * 0.65} />
-      {art && <div style={{ position: "absolute", left: -W * 0.2, width: W * 1.4, bottom: 0, scale: interpolate(f, [0, bt(8)], [1.15, 1.02], { ...clamp, easing: easeOut }) }}><MediaView m={art} /></div>}
+      {art && <div style={{ position: "absolute", left: -W * 0.2, width: W * 1.4, bottom: 0, scale: interpolate(f, [0, bt(8)], [1.3, 1.0], { ...clamp, easing: easeInOut }), translate: `0px ${interpolate(f, [0, bt(8)], [160, -30], { ...clamp, easing: easeInOut }).toFixed(1)}px` }}><MediaView m={art} /></div>}
       <div style={{ marginTop: VERTICAL ? H * 0.16 : H * 0.12, scale: interpolate(s, [0, 1], [3.2, 1]), rotate: `${interpolate(s, [0, 1], [-20, -5])}deg`, opacity: Math.min(1, s * 3) }}>
         {mark?.image ? <Img src={asset(mark.image)} style={{ width: size }} /> : (
           <div style={{ width: size, height: size, borderRadius: size * 0.22, background: col(props.markColor, T.accent), color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: DISPLAY, fontWeight: 800, fontSize: size * 0.62 }}>{mark?.text ?? "★"}</div>
@@ -120,14 +120,17 @@ const KnowledgeCard: React.FC<P> = ({ props }) => {
   const branches = arr<{ label: string; icon?: string; children?: string[]; tone?: string }>(props.branches);
   const qa = props.qa as { q: string; a: string } | undefined;
   const hookEl = str(props.hook) ? (
-    <div style={{ marginTop: SIZE.min, fontFamily: UI, fontWeight: 800, fontSize: SIZE.body * 1.1, color: T.ink, position: "relative", alignSelf: "flex-start", opacity: fadeIn(f, bt(at.hook - 0.5)) }}>
+    <div style={{ marginTop: SIZE.min * 1.2, fontFamily: DISPLAY, fontWeight: 800, fontSize: SIZE.body * 1.6, lineHeight: 1.15, color: T.ink, position: "relative", alignSelf: "flex-start", opacity: fadeIn(f, bt(at.hook - 0.5), 6), scale: interpolate(f, [bt(at.hook - 0.5), bt(at.hook - 0.5) + 10], [1.6, 1], { ...clamp, easing: Easing.out(Easing.exp) }), transformOrigin: "left center" }}>
       <span style={{ position: "absolute", left: -8, right: -8, top: "45%", height: "45%", background: T.accent, opacity: 0.35, transformOrigin: "left", scale: `${interpolate(f, [bt(at.hook), bt(at.hook + 1)], [0, 1], { ...clamp, easing: easeOut })} 1` }} />
       <span style={{ position: "relative" }}>{str(props.hook)}</span>
     </div>
   ) : null;
+  const shown = branches.filter((_, i) => f >= bt(at.branches + i)).length;
+  const drift = interpolate(f, [bt(at.branches), bt(at.branches + branches.length)], [0, -60 * Math.max(0, branches.length - 1)], { ...clamp, easing: easeInOut });
+  void shown;
   const toneC = (t?: string) => (t === "warn" ? "#c0392b" : t === "accent2" ? T.accent2 : T.accent);
   return (
-    <AbsoluteFill style={{ ...SAFE_PAD, ...(VERTICAL ? {} : { display: "grid", gridTemplateColumns: "1fr 1.1fr", columnGap: SIZE.title * 0.6, alignContent: "start" }) }}>
+    <AbsoluteFill style={{ ...SAFE_PAD, translate: VERTICAL ? `0px ${(drift * 0.5).toFixed(1)}px` : undefined, ...(VERTICAL ? {} : { display: "grid", gridTemplateColumns: "1fr 1.1fr", columnGap: SIZE.title * 0.6, alignContent: "start" }) }}>
       <div style={{ display: "flex", flexDirection: "column" }}>
       <Kicker text={str(props.kicker)} />
       <div style={{ ...H1, fontSize: SIZE.hero, color: T.ink, scale: interpolate(pop(0), [0, 1], [1.3, 1]), transformOrigin: "left center" }}>{str(props.term)}</div>
@@ -252,9 +255,9 @@ const MediaHero: React.FC<P> = ({ props }) => {
   const dark = num(props.darkIntroSec, 0) * FPS;
   return (
     <AbsoluteFill style={{ background: "#000" }}>
-      <AbsoluteFill style={{ clipPath: cutBottom ? `inset(0 0 ${cutBottom}px 0)` : undefined }}><AbsoluteFill style={{ scale: zoom, transformOrigin: `${focus.x * 100}% ${focus.y * 100}%` }}>
+      <AbsoluteFill style={{ maskImage: cutBottom ? `linear-gradient(#000 ${H - cutBottom - 120}px, transparent ${H - cutBottom}px)` : undefined, WebkitMaskImage: cutBottom ? `linear-gradient(#000 ${H - cutBottom - 120}px, transparent ${H - cutBottom}px)` : undefined }}><AbsoluteFill style={{ scale: zoom * num(props.baseScale, 1), transformOrigin: `${focus.x * 100}% ${focus.y * 100}%` }}>
         {str(props.poster) && <Img src={asset(str(props.poster))} style={{ width: W, height: H, position: "absolute", objectFit: "cover" }} />}
-        {m && <Sequence from={Math.max(0, start)} layout="none"><div style={{ position: "absolute", inset: 0 }}>{props.freezeFrames ? <FreezeVideo m={m} atSec={num(props.syncSec)} hold={num(props.freezeFrames)} style={{ width: W, height: H, objectFit: "cover" }} /> : <MediaView m={m} style={{ width: W, height: H, objectFit: "cover" }} />}</div></Sequence>}
+        {m && <Sequence from={Math.max(0, start)} layout="none"><div style={{ position: "absolute", inset: 0 }}>{props.freezeFrames || props.skipFrames ? <FreezeVideo m={m} atSec={num(props.syncSec)} hold={num(props.freezeFrames)} skip={num(props.skipFrames)} style={{ width: W, height: H, objectFit: "cover" }} /> : <MediaView m={m} style={{ width: W, height: H, objectFit: "cover" }} />}</div></Sequence>}
       </AbsoluteFill></AbsoluteFill>
       {dark > 0 && <AbsoluteFill style={{ background: "#05050a", opacity: interpolate(f, [0, Math.max(1, start) + dark * 0.6, Math.max(1, start) + dark], [0.9, 0.75, 0], clamp) }} />}
       <Particles n={40} c={T.accent} speed={2} />
@@ -285,14 +288,13 @@ const CardCycle: React.FC<P> = ({ props }) => {
       <Kicker text={str(props.kicker)} c={T.accent} />
       <div style={{ ...H1, fontSize: SIZE.title, color: c, marginTop: SIZE.min * 0.5, ...blurIn(f, bt(idx * every), 6) }}>{it.label}</div>
       <div style={{ perspective: 1800, marginTop: H * 0.06 }}>
-        <div style={{ position: "relative", width: cw, transform: `rotateY(${interpolate(local, [0, 14], [90, 0], { ...clamp, easing: easeOut })}deg)`, filter: `drop-shadow(0 30px 60px rgba(0,0,0,.6))` }}>
+        <div style={{ position: "relative", width: cw, transform: `rotateY(${interpolate(local, [0, 12], [180, 360], { ...clamp, easing: easeOut })}deg)`, backfaceVisibility: "hidden", filter: `drop-shadow(0 30px 60px rgba(0,0,0,.6))` }}>
           <Img src={asset(it.image)} style={{ width: cw, display: "block" }} />
           <div style={{ position: "absolute", inset: 0, overflow: "hidden", mixBlendMode: "screen", borderRadius: 32 }}>
             <div style={{ position: "absolute", top: -200, bottom: -200, width: cw * 0.25, left: interpolate(local, [6, 40], [-cw * 0.35, cw * 1.2], clamp), rotate: "20deg", background: "linear-gradient(90deg, transparent, rgba(255,255,255,.45), transparent)" }} />
           </div>
         </div>
       </div>
-      <FlashFrame at={bt(idx * every)} strength={0.5} />
       <div style={{ display: "flex", gap: 22, marginTop: H * 0.05 }}>
         {items.map((x, i) => <div key={i} style={{ width: 40, height: 40, borderRadius: 99, background: i <= idx ? col(x.color, T.accent) : "transparent", border: `4px solid ${col(x.color, T.accent)}` }} />)}
       </div>
@@ -341,7 +343,7 @@ const Ladder: React.FC<P> = ({ props }) => {
       })}
       {phase === "finale" && fin && <Sequence from={bt(fin.at)} layout="none"><div style={{ position: "absolute", left: (W - iw * 0.95) / 2, top: H * 0.26, width: iw * 0.95 }}><MediaView m={fin.media} /></div></Sequence>}
       {phase === "finale" && fin && str(props.finaleLabel) && <Words text={str(props.finaleLabel)} at={bt(fin.at) + 6} step={5} slam style={{ position: "absolute", left: SAFE.left, right: SAFE.right, top: H * 0.26 + iw * 0.95 * ASPECT + 8, justifyContent: "center", ...H1, fontSize: SIZE.title * 0.8, color: T.accent }} />}
-      {str(props.note) && <div style={{ position: "absolute", left: SAFE.left, right: SAFE.right, top: VERTICAL ? 1290 : H * 0.9, textAlign: "center", fontFamily: UI, fontWeight: 500, fontSize: SIZE.min, color: T.inkSoft }}>{str(props.note)}</div>}
+      {str(props.note) && <div style={{ position: "absolute", left: SAFE.left, right: SAFE.right, top: VERTICAL ? 1290 : H * 0.9, textAlign: "center", fontFamily: UI, fontWeight: 600, fontSize: SIZE.min * 1.1, color: T.inkSoft }}>{str(props.note)}</div>}
     </AbsoluteFill>
   );
 };
@@ -354,7 +356,7 @@ const LineReveal: React.FC<P> = ({ props }) => {
   const pts = arr<[number, number]>(props.points);
   const marks = arr<{ x: number; label: string }>(props.marks);
   const gw = W - SAFE.left - SAFE.right, gh = H * (VERTICAL ? 0.4 : 0.4);
-  const draw = interpolate(f, [bt(0.5), bt(num(props.drawBeats, 6))], [0, 1], { ...clamp, easing: Easing.inOut(Easing.cubic) });
+  const draw = interpolate(f, [0, bt(num(props.drawBeats, 6))], [0.04, 1], { ...clamp, easing: Easing.inOut(Easing.cubic) });
   return (
     <AbsoluteFill style={{ ...SAFE_PAD }}>
       <Kicker text={str(props.kicker)} />
@@ -396,11 +398,11 @@ const EndCard: React.FC<P> = ({ props }) => {
       </div>
       <div style={{ ...H1, fontSize: SIZE.hero * 0.9, color: T.ink, marginTop: SIZE.sub }}>{str(props.name)}</div>
       <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 16, padding: `0 ${SAFE.right}px`, marginTop: SIZE.min }}>
-        {arr<string>(props.tags).map((t, i) => <div key={t} style={{ padding: "12px 24px", borderRadius: 14, border: `3px solid ${T.accent}`, color: T.accent, fontFamily: UI, fontWeight: 800, fontSize: SIZE.min * 1.35, scale: pop(bt(1 + i * 0.5)) }}>{t}</div>)}
+        <Words text={arr<string>(props.tags).join(" · ")} at={bt(1)} step={4} style={{ fontFamily: UI, fontWeight: 800, fontSize: SIZE.body * 1.15, color: T.accent, justifyContent: "center" }} />
       </div>
       {str(props.cta) && <div style={{ marginTop: SIZE.title * 0.6, padding: "28px 52px", borderRadius: 24, background: T.accent, color: T.ground, fontFamily: UI, fontWeight: 800, fontSize: SIZE.sub * 1.2, scale: pop(bt(3)) }}>{str(props.cta)}</div>}
       {str(props.url) && <div style={{ fontFamily: UI, fontWeight: 700, fontSize: SIZE.min * 1.2, color: T.inkSoft, marginTop: 26, ...blurIn(f, bt(4)) }}>{str(props.url)}</div>}
-      {str(props.disclaimer) && <div style={{ position: "absolute", top: VERTICAL ? 1240 : H * 0.88, padding: `0 ${SAFE.right}px`, textAlign: "center", fontFamily: UI, fontWeight: 600, fontSize: SIZE.min * 1.15, color: T.ink, opacity: 0.7 * fadeIn(f, bt(4)) }}>{str(props.disclaimer)}</div>}
+      {str(props.disclaimer) && <div style={{ position: "absolute", top: VERTICAL ? 1240 : H * 0.88, padding: `0 ${SAFE.right}px`, textAlign: "center", fontFamily: UI, fontWeight: 600, fontSize: SIZE.min * 1.15, color: T.ink, opacity: 0.75 * fadeIn(f, bt(2)) }}>{str(props.disclaimer)}</div>}
     </AbsoluteFill>
   );
 };
@@ -415,7 +417,7 @@ const CardMontage: React.FC<P> = ({ props }) => {
   const start = num(props.start, 1), every = num(props.every, 1.5);
   let idx = -1;
   cards.forEach((_, i) => { if (f >= bt(start + i * every)) idx = i; });
-  const cw = VERTICAL ? W * 0.8 : H * 0.62;
+  const cw = VERTICAL ? W * 0.9 : H * 0.62;
   const travel = W * 0.12;
   return (
     <AbsoluteFill style={{ ...SAFE_PAD }}>
@@ -428,7 +430,7 @@ const CardMontage: React.FC<P> = ({ props }) => {
         const tout = f >= z - 8 ? Math.min(1, (f - (z - 8)) / 8) : 0, eOut = tout ** 4;
         const x = travel * (1 - eIn) - travel * eOut, blur = 18 * (1 - eIn) + 18 * eOut;
         return (
-          <div key={i} style={{ position: "absolute", left: (W - cw) / 2, top: VERTICAL ? H * 0.25 : H * 0.28, width: cw, translate: `${x.toFixed(1)}px 0px`, opacity: f >= z ? 0 : Math.min(1, 0.35 + tin * 1.6) * (1 - tout * 1.3), filter: blur > 0.3 ? `blur(${blur.toFixed(1)}px)` : undefined, rotate: `${(i % 2 ? 1 : -1) * 1.5}deg` }}>
+          <div key={i} style={{ position: "absolute", left: (W - cw) / 2 - (VERTICAL ? 15 : 0), top: VERTICAL ? H * 0.24 : H * 0.28, width: cw, translate: `${x.toFixed(1)}px 0px`, opacity: f >= z ? 0 : Math.min(1, 0.35 + tin * 1.6) * (1 - tout * 1.3), filter: blur > 0.3 ? `blur(${blur.toFixed(1)}px)` : undefined, rotate: `${(i % 2 ? 1 : -1) * 1.5}deg` }}>
             <div style={{ maxHeight: VERTICAL ? 1060 - H * 0.25 : H * 0.55, overflow: "hidden", borderRadius: 28, boxShadow: "0 30px 70px rgba(20,33,61,.28)", WebkitMaskImage: "linear-gradient(#000 88%, transparent)", maskImage: "linear-gradient(#000 88%, transparent)" }}><Img src={asset(c.image)} style={{ width: cw, display: "block" }} /></div>
           </div>
         );

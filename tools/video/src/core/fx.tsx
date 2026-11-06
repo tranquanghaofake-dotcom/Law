@@ -169,14 +169,14 @@ export const SceneShell: React.FC<{ dur: number; enter: Enter; exit: Exit; gap: 
   let tx = 0, blur = 0, scale = 1, sat = 1, op = 1, clip: string | undefined, flood = 0;
   if ((enter === "curve" || enter === "whip") && frame < CURVE_IN) {
     const e = p4out(frame / CURVE_IN);
-    tx = travel * (1 - e); blur += 18 * (1 - e); op = 0.6 + 0.4 * Math.min(1, frame / (CURVE_IN * 0.35));
+    tx = travel * (1 - e); blur += 18 * (1 - e); op = 0.8 + 0.2 * Math.min(1, frame / (CURVE_IN * 0.3));
   }
   if (enter === "zoom" && frame < 22) { const e = Easing.out(Easing.exp)(frame / 22); scale *= 0.8 + 0.2 * e; blur += 18 * (1 - e); }
   if (enter === "iris" && frame < 12) { const e = easeOut(frame / 12); clip = `circle(${(e * 120).toFixed(1)}% at 50% 50%)`; }
   if (enter === "flood" && frame < 18) flood = 1 - easeInOut(frame / 18);
   if (exit === "curve" && frame > dur - CURVE_OUT) {
     const t = (frame - (dur - CURVE_OUT)) / CURVE_OUT, e = p4in(t);
-    tx = -travel * e; blur += 18 * e; op = 1 - 0.55 * t * t; // giữ đậm tới sát điểm cắt: không lộ nền giữa hai cảnh (dip ≤ 1 khung)
+    tx = -travel * e; blur += 18 * e; op = 1 - 0.1 * t * t; // giữ đậm tới sát điểm cắt: không lộ nền giữa hai cảnh (dip ≤ 1 khung)
   }
   if (exit === "push" && frame > dur - gap) { const e = Easing.in(Easing.quad)((frame - (dur - gap)) / gap); scale *= 1 + e * 0.2; blur += e * 7; sat = 1 - e * 0.75; }
   return (
@@ -197,9 +197,10 @@ export const FlashFrame: React.FC<{ at: number; strength?: number }> = ({ at, st
 
 /** Video có "impact freeze" (DJordanMedia: hãm/đứng 3–5 khung… ở đây đứng `hold` khung) tại giây `atSec` của bản quay; sau đó chạy tiếp.
  *  Dùng Freeze của Remotion: khung media = f trước điểm chạm, = điểm chạm trong lúc đứng, = f − hold sau đó. */
-export const FreezeVideo: React.FC<{ m: Media; atSec: number; hold: number; style?: React.CSSProperties }> = ({ m, atSec, hold, style }) => {
+export const FreezeVideo: React.FC<{ m: Media; atSec: number; hold: number; skip?: number; style?: React.CSSProperties }> = ({ m, atSec, hold, skip = 0, style }) => {
   const f = useCurrentFrame();
   const F0 = Math.round(atSec * FPS);
-  const mf = f < F0 ? f : f < F0 + hold ? F0 : f - hold;
+  // skip: giữ khung `skip` cho tới khi thời gian thật đuổi kịp (che đoạn đầu bản quay còn bạc màu/đang mờ vào)
+  const mf = Math.max(skip, f < F0 ? f : f < F0 + hold ? F0 : f - hold);
   return <Freeze frame={mf}><MediaView m={m} style={style} /></Freeze>;
 };
