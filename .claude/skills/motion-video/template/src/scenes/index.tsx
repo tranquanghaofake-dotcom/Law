@@ -22,7 +22,7 @@ export const Overlay: React.FC<P> = ({ props }) => {
   const cur = arr<{ beat: number; x: number; y: number; click?: boolean }>(props.cursor).map((c) => ({ f: bt(c.beat), x: c.x, y: c.y, click: c.click }));
   return (
     <>
-      {arr<{ kind: "circle" | "underline"; x: number; y: number; w: number; h: number; beat: number; color?: string }>(props.notes).map((n, i) => <Annotate key={i} kind={n.kind} x={n.x} y={n.y} w={n.w} h={n.h} at={bt(n.beat)} color={n.color} />)}
+      {arr<{ kind: "circle" | "underline" | "strike"; x: number; y: number; w: number; h: number; beat: number; out?: number; color?: string }>(props.notes).map((n, i) => <Annotate key={i} kind={n.kind} x={n.x} y={n.y} w={n.w} h={n.h} at={bt(n.beat)} out={n.out == null ? undefined : bt(n.out)} color={n.color} />)}
       {cur.length > 0 && <Cursor path={cur} />}
     </>
   );
@@ -45,7 +45,7 @@ const TitleSlam: React.FC<P> = ({ props }) => {
         return l.glitch ? (
           <Glitch key={i} amount={f >= at ? interpolate(f, [at, at + 14], [1.4, 0.1], clamp) : 0} style={{ ...H1, fontSize: fs, color: col(l.color), opacity: f >= at ? 1 : 0, scale: interpolate(f, [at, at + 10], [2, 1], { ...clamp, easing: Easing.out(Easing.exp) }), transformOrigin: center ? "center" : "left center" }}>{l.text}</Glitch>
         ) : (
-          <Words key={i} text={l.text} at={at} step={Math.round(bt(1) / 2)} slam style={{ ...H1, fontSize: fs, color: col(l.color), justifyContent: center ? "center" : "flex-start" }} />
+          <Words key={i} text={l.text} at={at} step={Math.round(bt(1) / 2)} slam echo={l.size === "hero"} style={{ ...H1, fontSize: fs, color: col(l.color), justifyContent: center ? "center" : "flex-start" }} />
         );
       })}
       {sub && <div style={{ fontFamily: UI, fontWeight: 600, fontSize: SIZE.sub, color: T.inkSoft, marginTop: SIZE.sub, ...blurIn(f, bt(sub.at)) }}>{sub.text}</div>}
@@ -239,10 +239,10 @@ const DeviceDemo: React.FC<P> = ({ props }) => {
         {str(props.poster) && <Img src={asset(str(props.poster))} style={{ width: "100%", position: "absolute", inset: 0 }} />}
         {m && <Sequence from={Math.max(0, startAt)} layout="none"><div style={{ position: "absolute", inset: 0 }}>{props.freeze ? <FreezeVideo m={m} atSec={num(props.syncSec) + num((props.freeze as { after?: number }).after, 0.25)} hold={num((props.freeze as { frames?: number }).frames, 24)} /> : <MediaView m={m} />}</div></Sequence>}
       </Device>
-      <FlashFrame at={bt(num(props.syncBeat, 2)) + (props.freeze ? Math.round(num((props.freeze as { after?: number }).after, 0.25) * 60) : 0)} strength={0.55} />
+      {props.flash !== false && <FlashFrame at={bt(num(props.syncBeat, 2)) + (props.freeze ? Math.round(num((props.freeze as { after?: number }).after, 0.25) * 60) : 0)} strength={0.55} />}
       {chips.map((c, i) => {
         const a = bt(c.at);
-        return <div key={i} style={{ position: "absolute", left: c.x, top: c.y, padding: "14px 26px", borderRadius: 16, background: col(c.tone, T.ink), color: c.tone ? "#fff" : T.ground, fontFamily: UI, fontWeight: 800, fontSize: SIZE.min * 1.3, scale: pop(a), opacity: f >= a ? 1 : 0, rotate: `${i % 2 ? 3 : -4}deg`, boxShadow: "0 16px 34px rgba(0,0,0,.3)" }}>{c.text}</div>;
+        return <div key={i} style={{ position: "absolute", left: c.x, top: c.y, padding: "14px 26px", borderRadius: 16, background: col(c.tone, T.ink), color: c.tone ? "#fff" : T.ground, fontFamily: UI, fontWeight: 800, fontSize: SIZE.min * 1.3, scale: pop(a), opacity: f >= a ? (props.exitPush ? interpolate(f, [dur - bt(0.75), dur - bt(0.75) + 6], [1, 0], clamp) : 1) : 0, rotate: `${i % 2 ? 3 : -4}deg`, boxShadow: "0 16px 34px rgba(0,0,0,.3)" }}>{c.text}</div>;
       })}
     </AbsoluteFill>
   );
@@ -294,7 +294,7 @@ const CardCycle: React.FC<P> = ({ props }) => {
   const it = items[idx];
   if (!it) return null;
   const c = col(it.color, T.accent);
-  const cw = Math.min(W * 0.82, 1100);
+  const cw = Math.min(W * (VERTICAL ? 0.94 : 0.82), 1100);
   return (
     <AbsoluteFill style={{ ...SAFE_PAD, alignItems: "center" }}>
       <Kicker text={str(props.kicker)} c={T.accent} />
@@ -329,7 +329,7 @@ const Ladder: React.FC<P> = ({ props }) => {
   const phase = fin && f >= bt(fin.at) ? "finale" : fan.length && f >= bt(fanAt) ? "fan" : "climb";
   const step = Math.min(climb.length - 1, Math.floor(f / Math.max(1, bt(1))));
   const local = f - bt(step);
-  const iw = VERTICAL ? W * 0.42 : Math.min(W * 0.55, 620);
+  const iw = VERTICAL ? W * 0.38 : Math.min(W * 0.55, 620);
   const ASPECT = num(props.aspect, 1.526); // cao/rộng của ảnh tủ trưng bày
   return (
     <AbsoluteFill style={{ ...SAFE_PAD }}>
@@ -342,9 +342,9 @@ const Ladder: React.FC<P> = ({ props }) => {
           {/* tủ trước lùi ra sau (chồng theo chiều sâu Z): mỗi bậc ×0,86, lên 46 px, mờ dần — tủ mới lao lên phía trước */}
           {climb.slice(Math.max(0, step - 3), step).map((c, j, a) => {
             const depth = a.length - j + interpolate(local, [0, 12], [-1, 0], { ...clamp, easing: easeOut });
-            return <Img key={c.image} src={asset(c.image)} style={{ position: "absolute", left: (W - iw) / 2, top: H * 0.27, width: iw, scale: 0.9 ** depth, translate: `${(90 * depth).toFixed(1)}px ${(-70 * depth).toFixed(1)}px`, opacity: Math.max(0, 0.75 - 0.18 * depth), filter: `blur(${(1.5 + 1.5 * depth).toFixed(1)}px) brightness(${(0.8 - 0.1 * depth).toFixed(2)})` }} />;
+            return <Img key={c.image} src={asset(c.image)} style={{ position: "absolute", left: (W - iw) / 2, top: H * 0.27, width: iw, scale: 0.9 ** depth, translate: `${(150 * depth).toFixed(1)}px ${(-60 * depth).toFixed(1)}px`, opacity: Math.max(0, 0.9 - 0.15 * depth), filter: `blur(${(1 + 1 * depth).toFixed(1)}px) brightness(${(0.85 - 0.1 * depth).toFixed(2)})` }} />;
           })}
-          <Img src={asset(climb[step].image)} style={{ position: "absolute", left: (W - iw) / 2, top: H * 0.27, width: iw, scale: interpolate(local, [0, 12], [1.25, 1], { ...clamp, easing: easeOut }), translate: `0px ${interpolate(local, [0, 12], [60, 0], { ...clamp, easing: easeOut }).toFixed(1)}px`, filter: `brightness(${interpolate(local, [0, 8], [1.5, 1], clamp)}) drop-shadow(0 30px 60px rgba(0,0,0,.6))` }} />
+          <Img src={asset(climb[step].image)} style={{ position: "absolute", left: (W - iw) / 2, top: H * 0.27, width: iw, scale: interpolate(local, [0, 12], [1.25, 1], { ...clamp, easing: easeOut }), transformOrigin: "50% 85%", filter: `brightness(${interpolate(local, [0, 8], [1.5, 1], clamp)}) drop-shadow(0 30px 60px rgba(0,0,0,.6))` }} />
           <div style={{ position: "absolute", left: SAFE.left, right: SAFE.right, top: H * 0.27 + iw * ASPECT + 14, textAlign: "center", fontFamily: UI, fontWeight: 800, fontSize: SIZE.body * 1.3, color: T.accent }}>{climb[step].label}</div>
         </>
       )}
@@ -359,7 +359,7 @@ const Ladder: React.FC<P> = ({ props }) => {
         );
       })}
       {phase === "finale" && fin && <Sequence from={bt(fin.at)} layout="none"><div style={{ position: "absolute", left: (W - iw * 0.95) / 2, top: H * 0.26, width: iw * 0.95 }}><MediaView m={fin.media} /></div></Sequence>}
-      {phase === "finale" && fin && str(props.finaleLabel) && <Words text={str(props.finaleLabel)} at={bt(fin.at) + 6} step={5} slam style={{ position: "absolute", left: SAFE.left, right: SAFE.right, top: H * 0.26 + iw * 0.95 * ASPECT + 8, justifyContent: "center", ...H1, fontSize: SIZE.title * 0.8, color: T.accent }} />}
+      {phase === "finale" && fin && str(props.finaleLabel) && <Words text={str(props.finaleLabel)} at={bt(fin.at) + 6} step={5} slam echo style={{ position: "absolute", left: SAFE.left, right: SAFE.right, top: H * 0.26 + iw * 0.95 * ASPECT + 34, justifyContent: "center", ...H1, fontSize: SIZE.title * 0.8, color: T.accent }} />}
       {str(props.note) && <div style={{ position: "absolute", left: SAFE.left, right: SAFE.right, top: VERTICAL ? 1290 : H * 0.9, textAlign: "center", fontFamily: UI, fontWeight: 600, fontSize: SIZE.min * 1.1, color: T.inkSoft }}>{str(props.note)}</div>}
     </AbsoluteFill>
   );
@@ -391,11 +391,19 @@ const LineReveal: React.FC<P> = ({ props }) => {
         {str(props.axisY) && <text x={-6} y={-8} fill={T.inkSoft} fontFamily={UI} fontWeight={700} fontSize={SIZE.min * 1.1}>{str(props.axisY)} ↑</text>}
         {str(props.axisX) && <text x={gw} y={gh + SIZE.min * 1.6} fill={T.inkSoft} fontFamily={UI} fontWeight={700} fontSize={SIZE.min * 1.1} textAnchor="end">{str(props.axisX)} →</text>}
         {str(props.rider) && (() => {
-          const k = Math.min(pts.length - 1, Math.floor(draw * (pts.length - 1)));
-          const [rx, ry] = pts[k] ?? [0, 0];
-          const bump = Math.max(0, ...marks.map((m) => { const d = draw - m.x; return d >= 0 && d < 0.05 ? 1 - d / 0.05 : 0; }));
+          // vị trí theo ĐỘ DÀI CUNG (polyline vẽ bằng pathLength), không theo chỉ số điểm — nếu không chip sẽ lệch khỏi đầu nét ở đoạn dốc
+          const P = pts.map(([x, y]) => [x * gw, (1 - y) * gh] as const);
+          const acc = [0];
+          for (let i = 1; i < P.length; i++) acc.push(acc[i - 1] + Math.hypot(P[i][0] - P[i - 1][0], P[i][1] - P[i - 1][1]));
+          const target = draw * (acc[acc.length - 1] || 1);
+          let k = 1;
+          while (k < P.length - 1 && acc[k] < target) k++;
+          const tseg = (target - acc[k - 1]) / Math.max(1e-6, acc[k] - acc[k - 1]);
+          const rx = (P[k - 1]?.[0] ?? 0) + ((P[k]?.[0] ?? 0) - (P[k - 1]?.[0] ?? 0)) * tseg, ryPx = (P[k - 1]?.[1] ?? 0) + ((P[k]?.[1] ?? 0) - (P[k - 1]?.[1] ?? 0)) * tseg;
+          const xAt = rx / gw;
+          const bump = Math.max(0, ...marks.map((m) => { const d = xAt - m.x; return d >= 0 && d < 0.05 ? 1 - d / 0.05 : 0; }));
           return (
-            <g transform={`translate(${(rx * gw).toFixed(1)} ${((1 - ry) * gh).toFixed(1)}) scale(${1 + bump * 0.35})`}>
+            <g transform={`translate(${rx.toFixed(1)} ${ryPx.toFixed(1)}) scale(${1 + bump * 0.35})`}>
               <rect x={-110} y={-96} width={220} height={66} rx={18} fill={T.ground} stroke={T.accent} strokeWidth={4} />
               <text x={0} y={-52} textAnchor="middle" fill={T.ink} fontFamily={UI} fontWeight={800} fontSize={SIZE.min * 1.3}>{str(props.rider)}</text>
               <circle r={14} fill={T.accent} />
@@ -430,7 +438,16 @@ const EndCard: React.FC<P> = ({ props }) => {
         <Words text={arr<string>(props.tags).join(" · ")} at={bt(1)} step={4} style={{ fontFamily: UI, fontWeight: 800, fontSize: SIZE.body * 1.15, color: T.accent, justifyContent: "center" }} />
       </div>
       {str(props.cta) && <div style={{ marginTop: SIZE.title * 0.6, padding: "28px 52px", borderRadius: 24, background: T.accent, color: T.ground, fontFamily: UI, fontWeight: 800, fontSize: SIZE.sub * 1.2, scale: pop(bt(3)) }}>{str(props.cta)}</div>}
-      {str(props.url) && <div style={{ fontFamily: UI, fontWeight: 700, fontSize: SIZE.min * 1.2, color: T.inkSoft, marginTop: 26, ...blurIn(f, bt(4)) }}>{str(props.url)}</div>}
+      {str(props.url) && (() => {
+        // thanh địa chỉ: cú bấm nút kêu gọi (props.typeAt) gõ URL từng ký tự — "cú bấm gây ra nhịp tiếp"
+        const u = str(props.url), t0 = bt(num(props.typeAt, 4)), n = Math.round(interpolate(f, [t0, t0 + bt(1.2)], [0, u.length], clamp));
+        return (
+          <div style={{ marginTop: 30, display: "flex", alignItems: "center", gap: 14, padding: "16px 28px", borderRadius: 999, background: T.ground2, border: `3px solid ${T.ink}22`, fontFamily: UI, fontWeight: 700, fontSize: SIZE.min * 1.15, color: T.ink, opacity: f >= t0 - 8 ? 1 : 0, scale: pop(t0 - 8) }}>
+            <svg width={26} height={30} viewBox="0 0 26 30"><rect x={3} y={13} width={20} height={15} rx={4} fill={T.accent2} /><path d="M7 13 V9 a6 6 0 0 1 12 0 V13" fill="none" stroke={T.accent2} strokeWidth={3.5} /></svg>
+            <span>{u.slice(0, n)}<span style={{ opacity: Math.floor(f / 15) % 2 || n < u.length ? 1 : 0, color: T.accent }}>|</span></span>
+          </div>
+        );
+      })()}
       {str(props.disclaimer) && <div style={{ position: "absolute", top: VERTICAL ? 1240 : H * 0.88, padding: `0 ${SAFE.right}px`, textAlign: "center", fontFamily: UI, fontWeight: 600, fontSize: SIZE.min * 1.15, color: T.ink, opacity: 0.75 * fadeIn(f, bt(2)) }}>{str(props.disclaimer)}</div>}
     </AbsoluteFill>
   );

@@ -37,8 +37,10 @@ Template đã làm sẵn:
 | **Một con số đáp xuống** | số liệu quan trọng | số khổng lồ (~2,6× chữ chốt) đếm `from → value` trong 2 phách | `StatCount` một số |
 | **Mắt cắt lao qua máy** | đầu cụm | đĩa dấu thương hiệu phóng 0 → phủ khung trong 8 khung (ease-in), rồi TIẾP TỤC phóng 1 → 1,7 và tan trong 10 khung — không thu về (thu về = lật dấu Z, để lại chấm thừa) | `theme.cutMark` |
 | **Con trỏ lớn dẫn mắt** (HyperFrames `oversized-cursor`) | cảnh UI tĩnh cần nguyên nhân; kêu gọi bấm | cỡ ~13 % cạnh ngắn; luôn vào từ NGOÀI khung (dưới) trượt giảm tốc (power3.out); đầu mũi tên chạm mục tiêu; bấm = nén 0,84 trong 0,1 s, bật lại 0,22 s quanh đầu mũi tên; **cú bấm gây ra nhịp tiếp** (đứng hình, nút nảy); rời khung tăng tốc. Không bao giờ hiện/tắt bằng mờ dần tại chỗ | `props.cursor [{beat,x,y,click}]` (mọi cảnh) |
-| **Chú thích vẽ tay** (Remotion text-highlights, rough-notation) | chỉ vào chi tiết nhỏ trên UI thật: đáp án đúng, con số | khoanh/gạch chân nét bút dạ 7 px, vẽ trong 14 khung, ngay sau kết quả hiện | `props.notes [{kind,x,y,w,h,beat,color}]` |
-| **Vật dẫn mắt trên đồ thị** | đồ thị trừu tượng cần gắn với ví dụ | nhãn ví dụ (vd. "Đặt cọc") chạy theo đầu nét đang vẽ, nảy ×1,35 ở mỗi mốc | `LineReveal.rider` |
+| **Chú thích vẽ tay** (Remotion text-highlights, rough-notation) | chỉ vào chi tiết nhỏ trên UI thật: đáp án đúng, con số | khoanh/gạch chân nét bút dạ 7 px, vẽ trong 14 khung, ngay sau kết quả hiện | `props.notes [{kind:"circle"\|"underline"\|"strike",x,y,w,h,beat,out,color}]`. **Chú thích nằm trên khung, không trên vật:** khi vật dưới nó di chuyển/phóng (vd. điện thoại lao tới) phải đặt `out` để tắt trước, nếu không vòng khoanh trôi sang chỗ sai |
+| **Vật dẫn mắt trên đồ thị** | đồ thị trừu tượng cần gắn với ví dụ | nhãn ví dụ (vd. "Đặt cọc") chạy theo đầu nét đang vẽ, nảy ×1,35 ở mỗi mốc | `LineReveal.rider` — vị trí tính theo **độ dài cung** (khớp `pathLength` của nét), không theo chỉ số điểm, nếu không nhãn tụt khỏi đầu nét ở đoạn dốc |
+| **Echo viền chữ** (kinetic type, AE "Echo") | chữ nện chốt (số tiền, chức danh) | sau khi chữ đáp 6 khung: 3 bản viền rỗng 2 px nở ×1,18–1,38 và tắt trong 20 khung, lệch nhau 3 khung; không blur, không glow | `Words echo` (TitleSlam tự bật cho dòng `size:"hero"`) |
+| **Thanh địa chỉ gõ URL** | thẻ kết có đường dẫn | cú bấm CTA gây ra: thanh nảy lên, URL gõ từng ký tự trong 1,2 phách, con trỏ nhấp nháy; con trỏ chuột rời khung sang NGANG, không lướt qua URL | `EndCard.typeAt` |
 | **Chồng chiều sâu Z** | chuỗi thăng tiến | vật cũ lùi sau mỗi bậc ×0,9, lệch (90, −70) px, mờ dần, nhoè 1,5–6 px; vật mới lao lên 1,25 → 1 — lệch về phía KHÔNG có chữ | `Ladder` climb |
 | **Montage thẻ thật** | nhiều dạng/màn của sản phẩm | 1,5–1,75 phách mỗi thẻ, một thẻ mỗi lúc, cut-the-curve sang trái, số thứ tự to + thanh tiến độ | `CardMontage` |
 | **Khoảng lặng trước cú chốt** | trước kết quả lớn | 0,3–0,75 s gần như đứng yên | đặt `hitBeat` sau một nhịp giữ |
@@ -46,6 +48,7 @@ Template đã làm sẵn:
 ## 3. Cấm (bổ sung danh sách CẤM của `3-phong-cach.md`)
 
 - **Rung lắc vô cớ:** thở, lơ lửng, lắc lư hình sin để lấp thời gian. Mỗi giây phải có một việc đang diễn ra: lộ dần thông tin, máy quay có ý đồ, UI tự chạy, vật diễn hành động.
+- **Chớp trắng trên nền sáng** (giấy, trắng): khung loá bạc, mất tương phản. Trên nền sáng chỉ đứng hình (`DeviceDemo.flash:false`); flash chỉ dùng trên nền tối.
 - **Hoà mờ giữa hai cảnh (crossfade):** không có vật dẫn mắt. Dùng cut-the-curve hoặc mắt cắt.
 - **Đổi hướng không có nguyên nhân.**
 - **Phản ứng đến sau nguyên nhân vài khung:** flash/âm thanh/rung phải đúng khung gây ra.
