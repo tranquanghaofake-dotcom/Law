@@ -8,22 +8,14 @@
 <link rel="stylesheet" href="../../styles/container.css">
 <style>
   /* chỉnh riêng cho bài này */
+  .sheet { padding-bottom: 54px; gap: 11px; }
+  .head { padding-top: 18px; padding-bottom: 16px; }
+  .route .rt-head { margin-bottom: -4px; }
+  .note { padding-top: 8px; padding-bottom: 8px; }
+  .head h1 { font-size: 50px; }
   .head .art svg { height: 150px; width: auto; }
-  .who-legend { display: flex; gap: 10px; margin-bottom: 10px; font-size: 15px; font-weight: 700; }
-  .who-legend span { padding: 3px 10px; color: #fff; border-radius: 2px; }
   .an-cite { margin-top: 12px; font-size: 14.5px; color: var(--muted); }
   .an-cite b { color: var(--ink); }
-  .head h1 { font-size: 52px; }
-  .route .rt-row { padding: 2px 0; }
-  .route .rt-code { font-size: 20px; }
-  .route .rt-code small { font-size: 12.5px; }
-  .route .rt-track { height: 18px; }
-  .route .rt-group { margin: 8px 0 4px; }
-  .route .rt-legend { margin-top: 8px; }
-  .note { font-size: 18.5px; }
-  .anatomy .an-line { font-size: 26px; padding-bottom: 12px; }
-  .tiles .tile { display: flex; gap: 10px; align-items: center; text-align: left; padding: 10px 12px; font-size: 15px; }
-  .tiles .tile .pic { width: 40px; height: 40px; font-size: 22px; margin: 0; flex: none; }
 </style>
 </head>
 <body>
@@ -31,7 +23,7 @@
   <header class="head">
     <div>
       <span class="code">INCO 2020 / 11 ĐIỀU KIỆN</span>
-      <h1>Incoterms 2020: rủi ro sang người mua ở đâu?</h1>
+      <h1>Incoterms 2020:<br>rủi ro sang người&nbsp;mua ở&nbsp;đâu?</h1>
       <div class="fields"><span>Dành cho: <b>sinh viên Luật Kinh tế, người mới làm xuất nhập khẩu</b></span></div>
     </div>
     <div class="art" data-illus="container"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 200" fill="none" stroke="currentColor" stroke-linejoin="round" aria-hidden="true">
@@ -57,44 +49,45 @@
 
   <section>
     <div class="secno" data-margin>1</div>
-    <h2>Đi dọc tuyến hàng: thanh đỏ là người bán chịu rủi ro, vạch đen là điểm chuyển</h2>
+    <h2>Rủi ro sang người mua ở chặng nào? <small>thanh đỏ: người bán chịu; vạch đen: điểm chuyển</small></h2>
     <div class="card route" style="--stops:6">
       <div class="rt-head">
-        <span class="who-legend"><span style="background:var(--seller)">Người bán</span><span style="background:var(--buyer)">Người mua</span></span>
+        <span></span>
         <div class="rt-stops">
           <span><span class="ico" data-icon="warehouse"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M22 8.35V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8.35A2 2 0 0 1 3.26 6.5l8-3.2a2 2 0 0 1 1.48 0l8 3.2A2 2 0 0 1 22 8.35Z" /> <path d="M6 18h12" /> <path d="M6 14h12" /> <rect width="12" height="12" x="6" y="10" /> </svg></span>Kho người bán</span>
-          <span><span class="ico" data-icon="truck"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2" /> <path d="M15 18H9" /> <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14" /> <circle cx="17" cy="18" r="2" /> <circle cx="7" cy="18" r="2" /> </svg></span>Giao người chở đầu tiên</span>
-          <span><span class="ico" data-icon="container"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M22 7.7c0-.6-.4-1.2-.8-1.5l-6.3-3.9a1.72 1.72 0 0 0-1.7 0l-10.3 6c-.5.2-.9.8-.9 1.4v6.6c0 .5.4 1.2.8 1.5l6.3 3.9a1.72 1.72 0 0 0 1.7 0l10.3-6c.5-.3.9-1 .9-1.5Z" /> <path d="M10 21.9V14L2.1 9.1" /> <path d="m10 14 11.9-6.9" /> <path d="M14 19.8v-8.1" /> <path d="M18 17.5V9.4" /> </svg></span>Dọc mạn tàu, cảng đi</span>
+          <span><span class="ico" data-icon="truck"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2" /> <path d="M15 18H9" /> <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14" /> <circle cx="17" cy="18" r="2" /> <circle cx="7" cy="18" r="2" /> </svg></span>Người chở đầu tiên</span>
+          <span><span class="ico" data-icon="container"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M22 7.7c0-.6-.4-1.2-.8-1.5l-6.3-3.9a1.72 1.72 0 0 0-1.7 0l-10.3 6c-.5.2-.9.8-.9 1.4v6.6c0 .5.4 1.2.8 1.5l6.3 3.9a1.72 1.72 0 0 0 1.7 0l10.3-6c.5-.3.9-1 .9-1.5Z" /> <path d="M10 21.9V14L2.1 9.1" /> <path d="m10 14 11.9-6.9" /> <path d="M14 19.8v-8.1" /> <path d="M18 17.5V9.4" /> </svg></span>Dọc mạn tàu</span>
           <span><span class="ico" data-icon="ship"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1 .6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1" /> <path d="M19.38 20A11.6 11.6 0 0 0 21 14l-9-4-9 4c0 2.9.94 5.34 2.81 7.76" /> <path d="M19 13V7a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v6" /> <path d="M12 10v4" /> <path d="M12 2v3" /> </svg></span>Trên tàu, cảng đi</span>
-          <span><span class="ico" data-icon="flag"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" /> <line x1="4" x2="4" y1="22" y2="15" /> </svg></span>Tới nơi đến, chưa dỡ</span>
-          <span><span class="ico" data-icon="package-open"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M12 22v-9" /> <path d="M15.17 2.21a1.67 1.67 0 0 1 1.63 0L21 4.57a1.93 1.93 0 0 1 0 3.36L8.82 14.79a1.655 1.655 0 0 1-1.64 0L3 12.43a1.93 1.93 0 0 1 0-3.36z" /> <path d="M20 13v3.87a2.06 2.06 0 0 1-1.11 1.83l-6 3.08a1.93 1.93 0 0 1-1.78 0l-6-3.08A2.06 2.06 0 0 1 4 16.87V13" /> <path d="M21 12.43a1.93 1.93 0 0 0 0-3.36L8.83 2.2a1.64 1.64 0 0 0-1.63 0L3 4.57a1.93 1.93 0 0 0 0 3.36l12.18 6.86a1.636 1.636 0 0 0 1.63 0z" /> </svg></span>Đã dỡ ở nơi đến</span>
+          <span><span class="ico" data-icon="flag"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z" /> <line x1="4" x2="4" y1="22" y2="15" /> </svg></span>Nơi đến, chưa&nbsp;dỡ</span>
+          <span><span class="ico" data-icon="package-open"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M12 22v-9" /> <path d="M15.17 2.21a1.67 1.67 0 0 1 1.63 0L21 4.57a1.93 1.93 0 0 1 0 3.36L8.82 14.79a1.655 1.655 0 0 1-1.64 0L3 12.43a1.93 1.93 0 0 1 0-3.36z" /> <path d="M20 13v3.87a2.06 2.06 0 0 1-1.11 1.83l-6 3.08a1.93 1.93 0 0 1-1.78 0l-6-3.08A2.06 2.06 0 0 1 4 16.87V13" /> <path d="M21 12.43a1.93 1.93 0 0 0 0-3.36L8.83 2.2a1.64 1.64 0 0 0-1.63 0L3 4.57a1.93 1.93 0 0 0 0 3.36l12.18 6.86a1.636 1.636 0 0 0 1.63 0z" /> </svg></span>Nơi đến, đã&nbsp;dỡ</span>
         </div>
-        <span class="rt-badge-h">Ai làm thủ tục hải quan</span>
+        <span class="rt-badge-h">Thông quan XK&nbsp;/&nbsp;NK</span>
       </div>
 
       <div class="rt-group">Dùng cho mọi phương thức vận tải</div>
-      <div class="rt-row"><b class="rt-code">EXW<small>Giao tại xưởng</small></b><div class="rt-track" style="--at:0"></div><span class="rt-badge"><i class="b">XK</i><i class="b">NK</i></span></div>
-      <div class="rt-row"><b class="rt-code">FCA<small>Giao cho người chở</small></b><div class="rt-track" style="--at:1"></div><span class="rt-badge"><i class="a">XK</i><i class="b">NK</i></span></div>
-      <div class="rt-row"><b class="rt-code">CPT<small>Cước trả tới</small></b><div class="rt-track" style="--at:1; --cost:4"><i class="rt-cost"></i></div><span class="rt-badge"><i class="a">XK</i><i class="b">NK</i></span></div>
-      <div class="rt-row"><b class="rt-code">CIP<small>Cước, bảo hiểm trả tới</small></b><div class="rt-track" style="--at:1; --cost:4"><i class="rt-cost"></i><span class="rt-flag" style="left:66%">BẢO HIỂM A</span></div><span class="rt-badge"><i class="a">XK</i><i class="b">NK</i></span></div>
-      <div class="rt-row"><b class="rt-code">DAP<small>Giao tại nơi đến</small></b><div class="rt-track" style="--at:4"></div><span class="rt-badge"><i class="a">XK</i><i class="b">NK</i></span></div>
-      <div class="rt-row"><b class="rt-code">DPU<small>Giao, đã dỡ hàng</small></b><div class="rt-track" style="--at:5"></div><span class="rt-badge"><i class="a">XK</i><i class="b">NK</i></span></div>
-      <div class="rt-row"><b class="rt-code">DDP<small>Giao, đã nộp thuế</small></b><div class="rt-track" style="--at:4"></div><span class="rt-badge"><i class="a">XK</i><i class="a">NK</i></span></div>
+      <div class="rt-row"><b class="rt-code">EXW<small>Giao tại xưởng</small></b><div class="rt-track" style="--at:0"></div><span class="rt-badge"><i class="b">XK</i><i>NK</i></span></div>
+      <div class="rt-row"><b class="rt-code">FCA<small>Giao cho người chở</small></b><div class="rt-track" style="--at:1"></div><span class="rt-badge"><i>XK</i><i>NK</i></span></div>
+      <div class="rt-row"><b class="rt-code">CPT<small>Cước trả tới</small></b><div class="rt-track" style="--at:1; --cost:4"><i class="rt-cost"></i></div><span class="rt-badge"><i>XK</i><i>NK</i></span></div>
+      <div class="rt-row"><b class="rt-code">CIP<small>Cước, bảo hiểm trả tới</small></b><div class="rt-track" style="--at:1; --cost:4"><i class="rt-cost"></i><i class="rt-ins"><b>BH A</b></i></div><span class="rt-badge"><i>XK</i><i>NK</i></span></div>
+      <div class="rt-row"><b class="rt-code">DAP<small>Giao tại nơi đến</small></b><div class="rt-track" style="--at:4"></div><span class="rt-badge"><i>XK</i><i>NK</i></span></div>
+      <div class="rt-row"><b class="rt-code">DPU<small>Giao, đã dỡ hàng</small></b><div class="rt-track" style="--at:5"></div><span class="rt-badge"><i>XK</i><i>NK</i></span></div>
+      <div class="rt-row"><b class="rt-code">DDP<small>Giao, đã nộp thuế</small></b><div class="rt-track" style="--at:4"></div><span class="rt-badge"><i>XK</i><i class="a">NK</i></span></div>
 
       <div class="rt-group">Chỉ dùng cho đường biển, thủy nội địa</div>
-      <div class="rt-row"><b class="rt-code">FAS<small>Giao dọc mạn tàu</small></b><div class="rt-track" style="--at:2"></div><span class="rt-badge"><i class="a">XK</i><i class="b">NK</i></span></div>
-      <div class="rt-row"><b class="rt-code">FOB<small>Giao lên tàu</small></b><div class="rt-track" style="--at:3"></div><span class="rt-badge"><i class="a">XK</i><i class="b">NK</i></span></div>
-      <div class="rt-row"><b class="rt-code">CFR<small>Tiền hàng và cước</small></b><div class="rt-track" style="--at:3; --cost:4"><i class="rt-cost"></i></div><span class="rt-badge"><i class="a">XK</i><i class="b">NK</i></span></div>
-      <div class="rt-row"><b class="rt-code">CIF<small>Tiền hàng, bảo hiểm, cước</small></b><div class="rt-track" style="--at:3; --cost:4"><i class="rt-cost"></i><span class="rt-flag" style="left:83%">BẢO HIỂM C</span></div><span class="rt-badge"><i class="a">XK</i><i class="b">NK</i></span></div>
+      <div class="rt-row"><b class="rt-code">FAS<small>Giao dọc mạn tàu</small></b><div class="rt-track" style="--at:2"></div><span class="rt-badge"><i>XK</i><i>NK</i></span></div>
+      <div class="rt-row"><b class="rt-code">FOB<small>Giao lên tàu</small></b><div class="rt-track" style="--at:3"></div><span class="rt-badge"><i>XK</i><i>NK</i></span></div>
+      <div class="rt-row"><b class="rt-code">CFR<small>Tiền hàng và cước</small></b><div class="rt-track" style="--at:3; --cost:4"><i class="rt-cost"></i></div><span class="rt-badge"><i>XK</i><i>NK</i></span></div>
+      <div class="rt-row"><b class="rt-code">CIF<small>Tiền hàng, BH, cước</small></b><div class="rt-track" style="--at:3; --cost:4"><i class="rt-cost"></i><i class="rt-ins"><b>BH C</b></i></div><span class="rt-badge"><i>XK</i><i>NK</i></span></div>
 
       <div class="rt-legend">
         <span><i style="background:var(--seller)"></i>người bán chịu rủi ro</span>
         <span><i style="background:var(--buyer-soft); border:1.5px solid var(--buyer)"></i>người mua chịu rủi ro</span>
-        <span><i style="border-top:3px dashed var(--seller); height:0"></i>$ người bán trả cước, rủi ro đã là của người mua</span>
-        <span><i style="background:var(--accent)"></i>bảo hiểm người bán phải mua: A rộng, C tối thiểu</span>
+        <span><i style="border-top:4px dashed var(--seller); height:0"></i>$ người bán trả cước</span>
+        <span><i style="background:var(--accent)"></i>bảo hiểm bắt buộc: A rộng, C tối thiểu</span>
+        <span><i style="background:var(--seller); width:14px"></i><i style="background:var(--buyer); width:14px; margin-left:-4px"></i>ô tô màu: ngoại lệ thủ tục</span>
       </div>
     </div>
-    <div class="notes" style="--cols:2; margin-top:14px">
+    <div class="notes" style="--cols:2; margin-top:12px">
       <div class="note"><span class="ico" data-icon="badge-dollar-sign"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /> <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8" /> <path d="M12 18V6" /> </svg></span>Nhóm C có 2 điểm: rủi ro sang người mua ở nơi đi, nhưng người bán vẫn trả cước tới nơi đến.</div>
       <div class="note"><span class="ico" data-icon="container"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M22 7.7c0-.6-.4-1.2-.8-1.5l-6.3-3.9a1.72 1.72 0 0 0-1.7 0l-10.3 6c-.5.2-.9.8-.9 1.4v6.6c0 .5.4 1.2.8 1.5l6.3 3.9a1.72 1.72 0 0 0 1.7 0l10.3-6c.5-.3.9-1 .9-1.5Z" /> <path d="M10 21.9V14L2.1 9.1" /> <path d="m10 14 11.9-6.9" /> <path d="M14 19.8v-8.1" /> <path d="M18 17.5V9.4" /> </svg></span>Hàng đóng container: dùng FCA, CPT, CIP thay cho FOB, CFR, CIF (ICC khuyến nghị).</div>
     </div>
@@ -104,24 +97,25 @@
     <div class="secno" data-margin>2</div>
     <h2>Ghi vào hợp đồng thế nào cho đúng</h2>
     <div class="card anatomy">
-      <div class="an-line"><span class="an-part" style="--c:var(--seller)">CIF</span> <span class="an-part" style="--c:var(--buyer)">Hải Phòng, Việt Nam</span> <span class="an-part" style="--c:var(--good)">Incoterms® 2020</span></div>
+      <div class="an-line"><span class="an-part" data-n="1">CIF</span> <span class="an-part" data-n="2">Hải Phòng, Việt Nam</span> <span class="an-part" data-n="3">Incoterms® 2020</span></div>
+      <div class="an-line"><span class="an-part">FCA</span> <span class="an-part">Kho Bình Dương, Việt Nam</span> <span class="an-part">Incoterms® 2020</span></div>
       <div class="an-notes">
-        <div style="--c:var(--seller)"><b>Điều kiện</b>3 chữ cái, chọn theo bảng trên</div>
-        <div style="--c:var(--buyer)"><b>Địa điểm cụ thể</b>nhóm F: nơi đi; nhóm C, D: nơi đến</div>
-        <div style="--c:var(--good)"><b>Phiên bản</b>phải ghi; bản 2010 vẫn dùng được nếu các bên chọn</div>
+        <div><b data-n="1">Điều kiện</b>3 chữ cái, chọn theo bảng trên</div>
+        <div><b data-n="2">Địa điểm cụ thể</b>nhóm C, D: nơi đến (Hải Phòng); nhóm F: nơi giao (kho Bình Dương)</div>
+        <div><b data-n="3">Phiên bản</b>phải ghi; bản 2010 vẫn dùng được nếu các bên chọn</div>
       </div>
-      <p class="an-cite"><b>Incoterms là tập quán thương mại, không phải luật:</b> chỉ ràng buộc khi hợp đồng dẫn chiếu, và không được trái nguyên tắc cơ bản của pháp luật Việt Nam (khoản 2 Điều 5 Luật Thương mại 2005).</p>
+      <p class="an-cite"><b>Tập quán, không phải luật:</b> chỉ ràng buộc khi hợp đồng dẫn chiếu, không trái nguyên tắc cơ bản pháp luật Việt Nam (k2 Đ5 LTM 2005)./p>
     </div>
   </section>
 
   <section>
     <div class="secno" data-margin>3</div>
-    <h2>Incoterms không nói gì về những việc này, hợp đồng phải tự ghi</h2>
-    <div class="tiles" style="--cols:4">
-      <div class="tile"><div class="pic"><span class="ico" data-icon="scroll-text"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M15 12h-5" /> <path d="M15 8h-5" /> <path d="M19 17V5a2 2 0 0 0-2-2H4" /> <path d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3" /> </svg></span></div>Chuyển quyền sở hữu</div>
-      <div class="tile"><div class="pic"><span class="ico" data-icon="badge-dollar-sign"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /> <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8" /> <path d="M12 18V6" /> </svg></span></div>Giá và thanh toán</div>
-      <div class="tile"><div class="pic"><span class="ico" data-icon="scale"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" /> <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" /> <path d="M7 21h10" /> <path d="M12 3v18" /> <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2" /> </svg></span></div>Vi phạm và bồi thường</div>
-      <div class="tile"><div class="pic"><span class="ico" data-icon="landmark"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <line x1="3" x2="21" y1="22" y2="22" /> <line x1="6" x2="6" y1="18" y2="11" /> <line x1="10" x2="10" y1="18" y2="11" /> <line x1="14" x2="14" y1="18" y2="11" /> <line x1="18" x2="18" y1="18" y2="11" /> <polygon points="12 2 20 7 4 7" /> </svg></span></div>Luật áp dụng, giải quyết tranh chấp</div>
+    <h2>Incoterms không nói tới, hợp đồng đã ghi chưa?</h2>
+    <div class="stack" style="--cols:4">
+      <div class="box" style="--c:var(--seller)"><span class="chk"></span>Chuyển quyền sở&nbsp;hữu</div>
+      <div class="box" style="--c:var(--buyer)"><span class="chk"></span>Giá và thanh toán</div>
+      <div class="box" style="--c:#3c4a5c"><span class="chk"></span>Vi phạm và bồi&nbsp;thường</div>
+      <div class="box" style="--c:#2f6b3c"><span class="chk"></span>Luật áp dụng, giải quyết tranh&nbsp;chấp</div>
     </div>
   </section>
 

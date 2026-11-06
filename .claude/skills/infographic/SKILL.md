@@ -80,6 +80,13 @@ Chạy chen giữa pha 1 và pha 4. Ghi mọi quyết định vào `ke-hoach.md`
 - Không nối lệnh render với `| head`: cắt pipe làm script dừng trước khi ghi PDF.
 - Chữ nhạt trên nền màu đậm của style mới hay trượt tương phản → chạy `contrast.mjs` ngay lần render đầu.
 
+**Bài học từ phản biện thiết kế (2 agent, Incoterms)**
+- Bản sắc phải phủ **cả trang**, không chỉ tiêu đề: ghi chú, thẻ, khung cuối trang cũng phải lấy từ thế giới đề tài (giấy nhớ là của "vở học", ở bến cảng thì là thẻ hàng; ô thường thì là container xếp chồng).
+- Màu đã mang nghĩa (bán/mua, đúng/sai) **không dùng lại** cho thứ khác (lỗi đã gặp: tô "Hải Phòng" màu xanh = như thể "của người mua").
+- Chỉ tô đậm **ngoại lệ**; giá trị mặc định để xám (lỗi đã gặp: 22 ô XK/NK cùng màu đậm, chỉ 2 ô mang thông tin).
+- Chữ tra cứu (mã, ký hiệu) dùng font thân đậm, không dùng font trang trí (stencil làm "EXW" thành "EXlll").
+- Hình chính dạng ma trận cần lưới cột dóng với nhãn cột và một dấu điểm chuyển đủ dày (≥ 6 px).
+
 **G. Thu hoạch**: style/khối/minh họa mới vào thư viện; thêm 1 dòng vào bảng "Ý tưởng hình ảnh" (Bước 5a) và mục "Thư viện hiện có".
 
 ## Thêm nhanh style, khối, chủ đề

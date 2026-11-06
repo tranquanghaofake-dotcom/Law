@@ -116,33 +116,42 @@ h2 small { font: 500 15px var(--font); color: var(--muted); margin-left: 8px; }
 
 /* route — ma trận điều kiện × chặng (dùng --seller/--buyer nếu style có, không thì --bad/--info) */
 .route { --a: var(--seller, var(--bad)); --a-soft: var(--seller-soft, var(--bad-soft)); --b: var(--buyer, var(--info)); --b-soft: var(--buyer-soft, var(--info-soft)); }
-.route .rt-head, .route .rt-row { display: grid; grid-template-columns: 150px 1fr 96px; gap: 12px; align-items: center; }
+.route .rt-head, .route .rt-row { display: grid; grid-template-columns: 170px 1fr 92px; gap: 12px; align-items: center; }
 .route .rt-stops { display: grid; grid-template-columns: repeat(var(--stops), 1fr); }
-.route .rt-stops > span { display: flex; flex-direction: column; align-items: center; gap: 4px; font-size: 13px; font-weight: 600; line-height: 1.15; text-align: center; color: var(--muted); }
-.route .rt-stops .ico { font-size: 26px; color: var(--ink); }
-.route .rt-badge-h { font-size: 13px; font-weight: 700; color: var(--muted); text-align: center; line-height: 1.15; }
-.route .rt-group { margin: 12px 0 6px; padding: 3px 10px; background: var(--ink); color: #fff; font-weight: 700; font-size: 14px; display: inline-block; }
-.route .rt-row { padding: 5px 0; border-bottom: 1px dashed var(--line); }
-.route .rt-code { font: 800 22px/1 var(--font-display); }
-.route .rt-code small { display: block; font: 600 13px/1.2 var(--font); color: var(--muted); margin-top: 2px; }
-/* thanh: điểm chuyển nằm ở GIỮA ô chặng --at */
-.route .rt-track { position: relative; height: 22px; border-radius: 3px; overflow: visible;
+.route .rt-stops > span { display: flex; flex-direction: column; align-items: center; gap: 4px; font-size: 14px; font-weight: 600; line-height: 1.15; text-align: center; color: var(--ink); }
+.route .rt-stops .ico { font-size: 28px; }
+.route .rt-badge-h { font-size: 14px; font-weight: 700; color: var(--ink); text-align: center; line-height: 1.15; }
+.route .rt-group { margin: 10px 0 4px; padding: 3px 10px; background: var(--ink); color: #fff; font-weight: 700; font-size: 14px; display: inline-block; }
+.route .rt-row { padding: 1px 0; border-bottom: 1px dashed var(--line); }
+.route .rt-code { font: 800 20px/1 var(--font); letter-spacing: .02em; }
+.route .rt-code small { display: block; font: 600 14px/1.2 var(--font); color: var(--muted); letter-spacing: 0; margin-top: 2px; }
+/* thanh: điểm chuyển ở GIỮA ô chặng --at; lưới cột mảnh để dóng với icon chặng */
+.route .rt-track { position: relative; height: 20px; border-radius: 3px;
   --x: calc((var(--at) + 0.5) / var(--stops) * 100%);
-  background: linear-gradient(90deg, var(--a) 0 var(--x), var(--b-soft) var(--x) 100%); border: 1.5px solid var(--b); }
-.route .rt-track::after { content: ""; position: absolute; left: var(--x); top: -6px; bottom: -6px; width: 4px; margin-left: -2px; background: var(--ink); border-radius: 2px; }
-.route .rt-cost { position: absolute; top: 50%; height: 0; left: var(--x); border-top: 3px dashed var(--a); width: calc((var(--cost) - var(--at)) / var(--stops) * 100%); }
-.route .rt-cost::after { content: "$"; position: absolute; right: -10px; top: -12px; font: 800 15px var(--font); color: var(--a); background: var(--b-soft); padding: 0 2px; }
-.route .rt-flag { position: absolute; top: -9px; padding: 0 5px; font: 800 12px/18px var(--font); background: var(--accent); color: var(--accent-ink); border-radius: 2px; transform: translateX(-50%); }
-.route .rt-badge { display: flex; gap: 6px; justify-content: center; font-size: 12.5px; font-weight: 800; }
-.route .rt-badge i { font-style: normal; padding: 1px 6px; border-radius: 2px; color: #fff; }
-.route .rt-badge .a { background: var(--a); } .route .rt-badge .b { background: var(--b); }
-.route .rt-legend { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 12px; font-size: 14px; color: var(--ink); }
+  background:
+    repeating-linear-gradient(90deg, transparent 0 calc(100% / var(--stops) - 1px), rgba(0,0,0,.16) calc(100% / var(--stops) - 1px) calc(100% / var(--stops))),
+    linear-gradient(90deg, var(--a) 0 var(--x), var(--b-soft) var(--x) 100%);
+  border: 1.5px solid var(--b); }
+.route .rt-track::after { content: ""; position: absolute; left: var(--x); top: -8px; bottom: -8px; width: 6px; margin-left: -3px; background: var(--ink); border-radius: 1px; box-shadow: 0 -3px 0 var(--accent); }
+.route .rt-cost { position: absolute; top: 50%; height: 0; margin-top: -2px; left: calc(var(--x) + 3px); border-top: 4px dashed var(--a); width: calc((var(--cost) - var(--at)) / var(--stops) * 100% - 3px); }
+.route .rt-cost::after { content: "$"; position: absolute; right: -11px; top: -13px; width: 20px; height: 20px; border-radius: 50%; background: var(--a); color: #fff; font: 800 13px/20px var(--font); text-align: center; }
+/* dải bảo hiểm: vàng, sát mép dưới đoạn nét đứt; chữ hạng bảo hiểm ngay sau ký hiệu $ */
+.route .rt-ins { position: absolute; bottom: -1px; height: 5px; left: var(--x); width: calc((var(--cost) - var(--at)) / var(--stops) * 100%); background: var(--accent); }
+.route .rt-ins b { position: absolute; right: -40px; top: -16px; font: 800 14px/18px var(--font); background: var(--accent); color: var(--accent-ink); padding: 0 5px; border-radius: 2px; white-space: nowrap; }
+.route .rt-badge { display: flex; gap: 6px; justify-content: center; font-size: 14px; font-weight: 800; }
+.route .rt-badge i { font-style: normal; padding: 1px 6px; border-radius: 2px; color: var(--muted); background: var(--soft); }
+.route .rt-badge .a { background: var(--a); color: #fff; } .route .rt-badge .b { background: var(--b); color: #fff; }
+.route .rt-legend { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 10px; font-size: 14px; color: var(--ink); }
 .route .rt-legend span { display: inline-flex; gap: 6px; align-items: center; }
 .route .rt-legend i { display: inline-block; width: 26px; height: 12px; border-radius: 2px; }
 
-/* anatomy — mổ xẻ một dòng chữ */
-.anatomy .an-line { font: 700 30px/1.3 'Courier New', monospace; text-align: center; padding: 6px 0 16px; }
-.anatomy .an-part { border-bottom: 5px solid var(--c); padding: 0 4px; }
-.anatomy .an-notes { display: grid; grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); gap: 12px; }
-.anatomy .an-notes > div { border-top: 5px solid var(--c); padding-top: 6px; font-size: 15px; line-height: 1.3; }
-.anatomy .an-notes b { display: block; font-size: 16px; color: var(--c); }
+/* anatomy — mổ xẻ một dòng chữ: các phần đánh số ①②③ nối với ghi chú (màu mực, không mã màu theo bên) */
+.anatomy .an-line { font: 800 28px/1.3 var(--font); text-align: center; padding: 22px 0 2px; letter-spacing: .01em; }
+.anatomy .an-line + .an-line { font-size: 21px; color: var(--muted); padding: 4px 0 12px; }
+.anatomy .an-part { border-bottom: 3px solid var(--ink); padding: 0 4px; position: relative; }
+.anatomy .an-part::before { content: attr(data-n); position: absolute; left: 50%; top: -26px; transform: translateX(-50%); width: 22px; height: 22px; border-radius: 50%; background: var(--ink); color: #fff; font: 800 13px/22px var(--font); text-align: center; }
+.anatomy .an-line + .an-line .an-part { border-bottom-style: dashed; } .anatomy .an-line + .an-line .an-part::before { display: none; }
+.anatomy .an-notes { display: grid; grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); gap: 14px; }
+.anatomy .an-notes > div { font-size: 15px; line-height: 1.3; }
+.anatomy .an-notes b { display: flex; gap: 8px; align-items: center; font-size: 16px; }
+.anatomy .an-notes b::before { content: attr(data-n); width: 22px; height: 22px; flex: none; border-radius: 50%; background: var(--ink); color: #fff; font: 800 13px/22px var(--font); text-align: center; }
