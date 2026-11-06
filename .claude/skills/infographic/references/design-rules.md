@@ -6,7 +6,7 @@
 |---|---|---|
 | 1 — thấy đầu tiên | Tiêu đề, hình chính, con số then chốt | Tiêu đề 56–72 px; số then chốt 40–64 px |
 | 2 — thấy thứ hai | Tiêu đề mục, nhãn trên hình | 26–32 px |
-| 3 — đọc khi cần | Thân bài, chú thích, nguồn | Thân 20–24 px; nguồn ≥ 15 px |
+| 3 — đọc khi cần | Nhãn trên hình, ghi chú, số điều | Nhãn 15–18 px; phụ ≥ 12,5 px (≈ 7 pt in) |
 
 Tiêu đề lớn gấp 2,5–3 lần thân bài. Không quá 4 cỡ chữ trên một trang.
 
@@ -51,9 +51,16 @@ Tiêu đề lớn gấp 2,5–3 lần thân bài. Không quá 4 cỡ chữ trên
 - Đánh số (Bài 1, Bài 2…) chỉ khi nội dung thật sự là trình tự đọc/làm.
 - Dồn sự táo bạo vào **một** chỗ (thường là hình chính); phần còn lại yên tĩnh. Soi gương, bỏ bớt một món trang sức.
 
-## 7. Khối bắt buộc
+## 7. In và photo
 
-- **Nguồn**: tên văn bản + số hiệu + điều/khoản; "Đối chiếu ngày dd/mm/yyyy tại vbpl.vn".
-- **Miễn trừ**: "Thông tin pháp luật phổ thông, không thay thế tư vấn pháp lý."
-- **Tác giả / đơn vị**.
+- Luôn A4 dọc, `.sheet` 1080×1528 px; vùng an toàn ≥ 52 px mỗi cạnh. Trang trí (lề, lỗ gáy) được phép ra sát mép.
+- Màu không bao giờ là kênh duy nhất: thêm icon riêng, hoa văn (chấm bi, gạch chéo), kiểu viền (liền/đứt). Kiểm bằng `infographic-xam.png`.
+- Tránh mảng màu đậm lớn (tốn mực, photo bị bết); nền nhạt + viền đậm.
+- Chữ nhỏ nhất 12,5 px trên khổ 1080 (≈ 7 pt khi in) — chỉ cho nhãn phụ; thân bài ≥ 15 px.
+
+## 8. Khối bắt buộc trên trang
+
+- **Số điều cạnh khối liên quan** (vd. "Điều 586 Bộ luật Dân sự" cạnh hàng dân sự) — đủ để người đọc tra lại.
+- **Một dòng ký tên + miễn trừ**: "<Tác giả> — thông tin pháp luật phổ thông, không thay thế tư vấn pháp lý".
+- Không in khối nguồn đầy đủ, ngày đối chiếu hay con dấu "đã đối chiếu": để ở `nguon.md` (ngoài trang in).
 - Dấu `*` nào cũng phải có chú thích tương ứng.

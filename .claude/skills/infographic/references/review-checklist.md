@@ -11,9 +11,9 @@
 - [ ] Thu nhỏ 25%: tiêu đề + hình chính vẫn nhận ra.
 
 ## Chữ
-- [ ] ≤ 4 cỡ chữ; tiêu đề ≈ 2,5–3× thân bài; thân ≥ 20 px (khổ 1080).
+- [ ] ≤ 4 cỡ chữ; tiêu đề ≈ 2,5–3× thân bài; nhãn chính ≥ 16 px, nhãn phụ ≥ 12,5 px (khổ 1080).
 - [ ] Không giãn chữ có dấu; không đoạn HOA dài; không dấu cách trước `! ? : ;`.
-- [ ] Mỗi khối ≤ 40 từ (trừ trích nguyên văn).
+- [ ] Mỗi khối ≤ 25 từ; chỗ nào vẽ được thì đã thay bằng hình (ô icon, thước, thanh đo, con dấu, mũi tên).
 
 ## Màu & nhấn mạnh
 - [ ] `contrast.mjs` PASS toàn bộ.
@@ -22,15 +22,16 @@
 
 ## Nguồn & pháp lý
 - [ ] `legal-checklist.md` đã soát hết.
-- [ ] Khối nguồn có số hiệu + ngày đối chiếu; mọi dấu `*` có chú thích.
-- [ ] Có dòng miễn trừ và tác giả.
+- [ ] Số điều đặt cạnh khối liên quan; bảng nguồn đầy đủ nằm ở `nguon.md` (không in).
+- [ ] Có 1 dòng ký tên + miễn trừ; mọi dấu `*` có chú thích.
 
 ## Hình ảnh
 - [ ] Có ý tưởng hình ảnh lấy từ thế giới của chủ đề; hình chính được vật thể hóa.
 - [ ] Mỗi khối có icon đúng nghĩa; tình huống có nhân vật.
 - [ ] Không chữ nào đè lên vật trang trí (lề, lỗ gáy, nét kẻ) hay bị cắt mép.
-- [ ] Mọi asset có giấy phép rõ và được ghi công ở chân trang.
+- [ ] Mọi asset có giấy phép rõ (CC0/ISC không bắt buộc ghi công trên trang in; ghi trong `nguon.md`).
 
 ## Kỹ thuật
-- [ ] PNG ở deviceScaleFactor 2; PDF (nếu in) đúng khổ, không bị cắt.
+- [ ] PDF đúng khổ A4, không tràn; nội dung cách mép ≥ 10 mm.
+- [ ] Bản xám: các nhóm vẫn phân biệt được không cần màu.
 - [ ] Font đã tải xong trước khi chụp (không rơi về font hệ thống làm vỡ dấu).

@@ -15,7 +15,7 @@ Làm theo đúng thứ tự 7 bước. Không nhảy sang dựng hình khi bư�
 1. **Người đọc là ai, bao nhiêu tuổi, đọc ở đâu?** (học sinh THCS xem trên bảng tin; sinh viên lướt Facebook; in A4 phát tay…)
 2. **Đọc xong họ phải nhớ đúng một câu gì?** → đây là tiêu đề hoặc câu dẫn.
 3. **Đọc xong họ làm gì?** (gọi 111, báo giáo viên, tra điều luật…) → lời kêu gọi hành động (CTA).
-4. **Kênh & khổ:** A4 dọc in (794×1123 CSS px ≈ 2480×3508 ở 300 dpi), mạng xã hội dọc 1080×1350, story 1080×1920.
+4. **Khổ: luôn A4 dọc** (in và phát tay). `.sheet` = 1080×1528 px = 210×297 mm (1 mm ≈ 5,14 px). Nội dung cách mép ≥ 52 px (~10 mm) vì máy in văn phòng không in sát mép. Thiết kế để **photo đen trắng vẫn đọc được**.
 5. **Giọng:** nghiêm túc/thân thiện; được phép dùng minh họa không.
 
 Nếu người dùng không trả lời, tự chọn mặc định hợp lý và ghi rõ giả định ở đầu câu trả lời.
@@ -23,7 +23,7 @@ Nếu người dùng không trả lời, tự chọn mặc định hợp lý và
 ## Bước 2 — Kiểm chứng nội dung (bắt buộc với chủ đề pháp luật)
 
 - Mỗi khẳng định pháp lý = **văn bản + số hiệu + điều/khoản/điểm + tình trạng hiệu lực**. Tra trên vbpl.vn hoặc congbao.chinhphu.vn; ưu tiên **văn bản hợp nhất** mới nhất.
-- Ghi bảng nguồn `nguon.md` cạnh file HTML: khẳng định → căn cứ → link → ngày đối chiếu.
+- Ghi bảng nguồn `nguon.md` cạnh file HTML: khẳng định → căn cứ → link → ngày đối chiếu. **Bảng nguồn ở ngoài trang in**; trên hình chỉ giữ số điều cạnh khối liên quan (vd. "Điều 12 BLHS") — không in khối nguồn, con dấu đối chiếu.
 - Đọc `references/legal-checklist.md` và soát **từng mục** trước khi dựng hình. File này gom các lỗi thật đã gặp (mốc tuổi, "cùng chịu", gán nhầm điều, thuật ngữ sai…).
 - Không chắc → không đưa lên hình, hoặc ghi "cần kiểm tra". Không bịa số hiệu.
 
@@ -46,13 +46,21 @@ Viết dàn ý theo thứ tự mắt đọc (trên → dưới, trái → phải
 [HÌNH CHÍNH]                  ~40%
 [Bảng phụ / ví dụ]            ~16%
 [CTA: làm gì ngay]            ~12%
-[Nguồn · ngày · tác giả]      ~8%
+[Ký tên + miễn trừ 1 dòng]    ~2%
 ```
-Quy tắc: số thứ tự mục **trùng với thứ tự mắt đọc**; tối đa 5–6 khối; mỗi khối ≤ 40 từ (trừ trích dẫn nguyên văn).
+Quy tắc: số thứ tự mục **trùng với thứ tự mắt đọc**; tối đa 5–6 khối; **mỗi khối ≤ 25 từ**.
+
+**Hình thay chữ** — trước khi viết một câu, hỏi "vẽ được không?":
+- Danh sách khái niệm → ô hình (icon tròn + nhãn ≤ 6 từ).
+- Ngưỡng/mốc → thước, thanh đo (vd. thanh tỉ lệ thương tật có vạch 61%).
+- Kết luận có/không → **con dấu** (CÓ THỂ / KHÔNG / TỰ TRẢ) kèm icon.
+- Quy trình → các ô nối bằng mũi tên. Chuỗi sự việc → icon → icon → icon.
+- Tình huống → nhân vật + nhãn tuổi + hành động 1 dòng.
+- Chữ còn lại chỉ để: tiêu đề, nhãn, số điều, ghi chú "dễ nhầm".
 
 ## Bước 5 — Dựng bằng HTML/CSS/SVG
 
-- Sao chép `templates/base.html` → `examples/<slug>/index.html`. Template có sẵn: khổ trang, token màu, thang chữ, lưới 12 cột, thước tuổi, khối nguồn.
+- Sao chép `templates/base.html` → `examples/<slug>/index.html`. Template = bản "trang vở" A4 hoàn chỉnh (nhãn vở, ô hình, thước, con dấu, dòng hành động) — thay nội dung, giữ cấu trúc.
 - Quy tắc thiết kế chi tiết: `references/design-rules.md`. Tóm tắt:
   - **1 font** hỗ trợ tiếng Việt tốt (Be Vietnam Pro), tối đa 2 độ đậm cho thân bài; **không giãn chữ** (letter-spacing) với chữ có dấu.
   - **3 màu chức năng** + màu trung tính; mỗi màu một nghĩa và giữ nghĩa đó toàn trang.
@@ -81,16 +89,18 @@ Ví dụ đầy đủ: `examples/bao-luc-hoc-duong/` (ý tưởng "trang vở").
 ## Bước 6 — Xuất ảnh
 
 ```bash
-node .claude/skills/infographic/scripts/render.mjs <đường-dẫn-index.html> [--size a4|social|story] [--pdf]
+node .claude/skills/infographic/scripts/icons.mjs  <index.html>   # chèn icon
+node .claude/skills/infographic/scripts/render.mjs <index.html>   # xuất
 ```
-Xuất `infographic.png` (deviceScaleFactor 2) và tuỳ chọn `infographic.pdf`, cùng thư mục với HTML.
+Ra 3 file cạnh HTML: `infographic.png` (xem màn hình), `infographic.pdf` (**đúng khổ A4, đem in**), `infographic-xam.png` (thử photo đen trắng). Script cảnh báo khi tràn khổ hoặc sai tỉ lệ A4.
 
 ## Bước 7 — Tự soát (không bỏ qua)
 
 1. `node .claude/skills/infographic/scripts/contrast.mjs <index.html>` → mọi phần tử chữ phải PASS.
 2. Mở PNG, đọc như người đọc lần đầu, đi qua `references/review-checklist.md`.
 3. Thu nhỏ ảnh còn 25%: tiêu đề + hình chính vẫn nhận ra được không? Không → tăng tương phản/kích thước hình chính.
-4. Báo cáo cho người dùng: ảnh, bảng nguồn, các giả định, điểm còn "cần kiểm tra".
+4. Mở `infographic-xam.png`: các nhóm màu (vd. hình sự/dân sự) còn phân biệt được bằng icon, hoa văn (chấm bi, gạch), kiểu viền không?
+5. Báo cáo cho người dùng: ảnh, bảng nguồn, các giả định, điểm còn "cần kiểm tra".
 
 ## Khi được nhờ **chấm** infographic có sẵn
 
