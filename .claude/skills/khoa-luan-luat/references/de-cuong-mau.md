@@ -48,6 +48,13 @@ Biến thể so sánh: Ch.1 lý luận → Ch.2 pháp luật [nước A, B] → 
 **Kiểm trùng kiến nghị** (trước khi chốt "tính mới" ở pha 2 và trước Chương 3): so từng kiến nghị dự định với cột "Kiến nghị đã đưa ra". Trùng thì tính mới phải dời sang chỗ khác: chứng minh mới, điều kiện cụ thể hơn, dữ liệu mới, hoặc so sánh mới. Ghi rõ "khác công trình #n ở …".
 **Kiểm luật hóa**: với mỗi kiến nghị cũ, tìm xem văn bản ban hành sau ngày nhận bài của công trình đó đã tiếp thu chưa. Bài viết theo luật cũ mà luật mới đã thay thì khoảng trống thường là "đánh giá luật mới đã giải quyết được đến đâu". Ví dụ chạy thử: bài nhận 09/10/2025 kiến nghị cho phong tỏa tài sản số; Luật THADS 106/2025/QH15 (thông qua 05/12/2025) đã quy định tại Điều 67.
 
+## C2. Bảng phủ kiến nghị (đặt đầu chương kiến nghị hoặc phụ lục)
+
+| Hạn chế (mục) | Kiến nghị | Văn bản, điều khoản tiếp nhận | Chủ thể ban hành, thẩm quyền | Đã đọc toàn văn văn bản đó? | Điều kiện thi hành, phương án dự phòng |
+|---|---|---|---|---|---|
+| (i) 2.2.4 | 3.2.1 | điều mới trong NĐ … hướng dẫn khoản 3 Điều 25 Luật … | Chính phủ; Luật giao "Chính phủ quy định chi tiết" tại … | có, ngày … | nội quy lao động; doanh nghiệp < 10 người: thông báo riêng có ký nhận |
+Hạn chế nào không có kiến nghị thì ghi một dòng "chưa có kiến nghị vì …" (ngoài phạm vi, chưa đủ dữ liệu). Không để trống.
+
 ## D. Sổ nguồn (05-nguon/so-nguon.md)
 
 | Mã | Trích dẫn đầy đủ theo chuẩn | Link | Ngày truy cập | Đã mở | Trích nguyên văn quan trọng (trang) |

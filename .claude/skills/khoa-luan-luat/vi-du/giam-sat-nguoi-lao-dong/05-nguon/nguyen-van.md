@@ -38,3 +38,7 @@ k3: "Phạt tiền từ 70.000.000 đồng đến 100.000.000 đồng đối v�
 Đ122 k1 a: "Người sử dụng lao động phải chứng minh được lỗi của người lao động;"
 ## Bộ luật Tố tụng dân sự 92/2015/QH13 (hethongphapluat.com, đọc 06/11/2026) [CẦN KIỂM: sửa đổi]
 Đ95 k2: "Tài liệu nghe được, nhìn được được coi là chứng cứ nếu được xuất trình kèm theo văn bản trình bày của người có tài liệu đó về xuất xứ của tài liệu nếu họ tự thu âm, thu hình hoặc văn bản có xác nhận của người đã cung cấp cho người xuất trình về xuất xứ của tài liệu đó hoặc văn bản về sự việc liên quan tới việc thu âm, thu hình đó."
+
+### Luật 91/2025/QH15 — ủy quyền quy định chi tiết (luatvietnam.vn qua Firecrawl, đọc 06/11/2026)
+Đ9 k5: "Chính phủ quy định chi tiết khoản 3 Điều này."
+Điều 25 (đọc trọn k1–k3): **không có** câu "Chính phủ quy định chi tiết".

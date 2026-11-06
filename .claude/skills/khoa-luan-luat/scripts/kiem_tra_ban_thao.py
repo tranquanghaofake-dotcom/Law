@@ -42,6 +42,19 @@ def _than_bai(van):
     return van
 
 
+RE_MUC_HAN_CHE = re.compile(r"^#+[^\n]*h[ạa]n ch[ếe][^\n]*\n(.*?)(?=^#|\Z)", re.I | re.M | re.S)
+
+
+def nhan_han_che(van):
+    """Các nhãn (i), (ii)… trong những mục có tiêu đề chứa "hạn chế"."""
+    nhan = []
+    for m_muc in RE_MUC_HAN_CHE.finditer(van):
+        for m in re.finditer(r"^\(([ivx]+)\)", m_muc.group(1), re.M):
+            if m.group(1) not in nhan:
+                nhan.append(m.group(1))
+    return nhan
+
+
 def uoc_trang(van):
     """Ước số trang thân bài (không tính footnote, tiêu đề, bảng)."""
     return len(re.findall(r"\w+", _than_bai(van))) / CHU_MOI_TRANG
@@ -86,7 +99,8 @@ def _chuan_hoa(s):
     return re.sub(r"[\s*_]+", " ", s.replace("“", '"').replace("”", '"')).strip().lower()
 
 
-def kiem_tra(van, nop=False, an_danh=None, tieu_de_khac=None, nguyen_van=None, bang_van_ban=None):
+def kiem_tra(van, nop=False, an_danh=None, tieu_de_khac=None, nguyen_van=None, bang_van_ban=None,
+             han_che_khac=None):
     """Trả về danh sách vi phạm: {ma, muc, dong, noi_dung}.
 
     bang_van_ban: nội dung 05-nguon/van-ban.md. Có thì mọi số hiệu VBQPPL dạng N/YYYY/... trong bài
@@ -229,6 +243,13 @@ def kiem_tra(van, nop=False, an_danh=None, tieu_de_khac=None, nguyen_van=None, b
             if tb > 8 and lech / tb < 0.15:
                 them("van-phong-ai", "NHẸ", dong, f"{len(cau)} câu dài đều nhau (~{tb:.0f} chữ) — xen câu ngắn, tách ý")
 
+    # 8. Chương kiến nghị phải phủ mọi hạn chế đã nêu ở các file khác (hoặc ghi rõ vì sao không)
+    if han_che_khac and re.search(r"(?m)^#+[^\n]*[Kk]iến nghị", van):
+        for nh in han_che_khac:
+            if not re.search(rf"hạn chế[^\n()]{{0,20}}(\([ivx]+\)[,\s]*(và\s+)?)*\({nh}\)", van, re.I):
+                them("kien-nghi-thieu-han-che", "NẶNG", 1,
+                     f"hạn chế ({nh}) chưa có kiến nghị; thêm kiến nghị hoặc câu 'Hạn chế ({nh}) chưa có kiến nghị vì …'")
+
     # 7. Mọi số hiệu VBQPPL trong bài phải có dòng trong bảng hiệu lực (05-nguon/van-ban.md)
     if bang_van_ban is not None:
         da_bao_sh = set()
@@ -270,7 +291,9 @@ def main():
     co_chan = False
     for tep, van in van_ban.items():
         khac = [t for t2, v2 in van_ban.items() if t2 != tep for t in tieu_de(v2)]
-        kq = kiem_tra(van, nop=a.nop, an_danh=an_danh, tieu_de_khac=khac, nguyen_van=nv, bang_van_ban=bvb)
+        hc_khac = [n for t2, v2 in van_ban.items() if t2 != tep for n in nhan_han_che(v2)]
+        kq = kiem_tra(van, nop=a.nop, an_danh=an_danh, tieu_de_khac=khac, nguyen_van=nv, bang_van_ban=bvb,
+                      han_che_khac=sorted(set(hc_khac), key=hc_khac.index))
         dem = {m: sum(1 for v in kq if v["muc"] == m) for m in ("CHẶN", "NẶNG", "NHẸ")}
         tr = uoc_trang(van)
         if a.trang:

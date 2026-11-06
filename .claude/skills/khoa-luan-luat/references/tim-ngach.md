@@ -2,7 +2,7 @@
 
 Rút ra từ lần chạy thử: ngách tốt **ít khi** xuất hiện khi nghĩ đề tài lúc đầu. Nó thường lộ ra khi kiểm nguồn, ở chỗ doanh nghiệp, cơ quan nhà nước đang **hỏi, vướng, bị phạt** mà giới học thuật chưa viết tới.
 
-## Mười nguồn tín hiệu ngách
+## Mười một nguồn tín hiệu ngách
 
 | # | Nguồn | Tìm gì | Ví dụ truy vấn |
 |---|---|---|---|
@@ -16,6 +16,7 @@ Rút ra từ lần chạy thử: ngách tốt **ít khi** xuất hiện khi ngh�
 | 8 | **Bất đối xứng câu chữ** trong cùng văn bản hoặc cùng điều: hai tình huống giống nhau dùng hai chuẩn khác nhau | ví dụ chạy thử: tuyển dụng cần "đồng ý" (k1 Điều 25 Luật 91/2025) nhưng giám sát chỉ cần "biết rõ" (k3) | đọc liền các khoản của một điều, gạch dưới động từ chuẩn ("đồng ý", "thông báo", "chấp thuận") |
 | 9 | **Dự thảo so với luật thông qua** | chữ bị bỏ hoặc thêm cho thấy ý đồ nhà làm luật, và cho biết sự bảo vệ nào đã mất | "dự thảo Luật [x] Điều [y]" trên cổng góp ý dự thảo, báo cáo giải trình, tiếp thu |
 | 10 | **Vòng dẫn chiếu** giữa hai văn bản | luật viết "phải phù hợp với quy định của pháp luật về X", văn bản X viết "theo quy định của pháp luật về [luật kia]", không bên nào tự trả lời câu hỏi | ví dụ chạy thử: khoản 4 Điều 28 Luật 91/2025/QH15 dẫn sang pháp luật chống tin nhắn rác; NĐ 91/2020 và dự thảo thay thế cho gửi tin nhắn đầu tiên khi chưa đồng ý, chỉ dẫn ngược lại cho phần "quản lý sự đồng ý" |
+| 11 | **Khoảng trống ủy quyền**: điều luật dùng khái niệm mở ("biết rõ", "phù hợp") nhưng không có câu "Chính phủ quy định chi tiết …", trong khi các điều khác của cùng luật có | nghị định hướng dẫn không có nội dung cho điều đó; kiến nghị phải bắt đầu từ sửa luật | ví dụ chạy thử: Điều 25 Luật 91/2025/QH15 không giao, khoản 5 Điều 9 có giao; NĐ 356/2025 không có điều về người lao động | tìm "quy định chi tiết" trong toàn văn luật, lập danh sách điều được giao và không được giao |
 
 ## Khoảng trống thời gian (làm ngay khi lập ma trận)
 Ghi **ngày đăng** của mọi bài trong ma trận. So ngày văn bản mới nhất (luật, nghị định hướng dẫn, nghị định xử phạt) với ngày bài học thuật mới nhất. Nếu văn bản mới hơn thì phần văn bản đó thay đổi là ngách gần như chắc chắn chưa ai viết. Ví dụ chạy thử: NĐ 330/2026 ban hành 19/8/2026, bài học thuật mới nhất đăng 01/7/2026.

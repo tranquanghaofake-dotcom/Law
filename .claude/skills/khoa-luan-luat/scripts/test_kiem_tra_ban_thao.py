@@ -4,7 +4,7 @@ import sys
 import unittest
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from kiem_tra_ban_thao import kiem_tra, uoc_trang  # noqa: E402
+from kiem_tra_ban_thao import kiem_tra, uoc_trang, nhan_han_che  # noqa: E402
 
 
 def muc(ket_qua, ma):
@@ -186,6 +186,27 @@ class KiemTraBanThao(unittest.TestCase):
     def test_trich_that_canh_de_xuat_van_kiem(self):
         van = 'Luật viết "phải được sự đồng ý của người dự tuyển theo quy định".\n\n> [ĐỀ XUẤT] "Câu chữ mới đề xuất cho điều khoản này."'
         self.assertEqual(len(muc(kiem_tra(van, nguyen_van=""), "trich-ngoai-nguyen-van")), 1)
+
+    def test_nhan_han_che_lay_tu_muc_han_che(self):
+        van = "### 2.2.4. Những hạn chế rút ra\n\n(i) A.[^1]\n(ii) B (xem 2.2.1).\n(iii) C (xem 2.2.2).\n\n### 2.3. Khác\n(iv) không tính.\n"
+        self.assertEqual(nhan_han_che(van), ["i", "ii", "iii"])
+
+    def test_kien_nghi_thieu_han_che(self):
+        kn = "## 3.2. Kiến nghị\n### 3.2.1. X (gắn hạn chế (i))\n### 3.2.2. Y (gắn hạn chế (iii))\n"
+        v = muc(kiem_tra(kn, han_che_khac=["i", "ii", "iii"]), "kien-nghi-thieu-han-che")
+        self.assertEqual(len(v), 1)
+        self.assertIn("(ii)", v[0]["noi_dung"])
+
+    def test_kien_nghi_gan_nhieu_han_che_mot_luc(self):
+        kn = "## 3.2. Kiến nghị\n### 3.2.1. X (gắn hạn chế (i), (ii) và (iii))\n"
+        self.assertEqual(len(muc(kiem_tra(kn, han_che_khac=["i", "ii", "iii"]), "kien-nghi-thieu-han-che")), 0)
+
+    def test_kien_nghi_ghi_ro_khong_de_xuat(self):
+        kn = "## 3.2. Kiến nghị\n### 3.2.1. X (gắn hạn chế (i))\nHạn chế (ii) chưa có kiến nghị vì ngoài phạm vi.\n"
+        self.assertEqual(len(muc(kiem_tra(kn, han_che_khac=["i", "ii"]), "kien-nghi-thieu-han-che")), 0)
+
+    def test_file_khong_phai_kien_nghi_khong_kiem(self):
+        self.assertEqual(len(muc(kiem_tra("### 2.1. Thực trạng\nVăn bản.", han_che_khac=["i"]), "kien-nghi-thieu-han-che")), 0)
 
     def test_ban_sach_khong_loi_chan(self):
         van = (
