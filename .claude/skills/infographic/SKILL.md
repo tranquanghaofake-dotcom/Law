@@ -35,6 +35,41 @@ examples/<slug>/      bài đã làm (mỗi bài: index.html, ke-hoach.md, nguon
 | 6. Kiểm | `icons.mjs` → `render.mjs` ("bố cục ổn") → `contrast.mjs` → soát mắt người (Bước 7) → phản biện độc lập nếu bài quan trọng | PNG, PDF |
 | 7. Thu hoạch | Thứ gì dùng lại được (khối mới, style mới, quy tắc mới, lỗi mới) → đưa vào thư viện / checklist trong file này | thư viện lớn dần |
 
+## Khi đề tài lạ, thư viện không có bản hợp — tự nghiên cứu và tạo mới
+
+Chạy chen giữa pha 1 và pha 4. Ghi mọi quyết định vào `ke-hoach.md` (mục "Tạo mới").
+
+**A. Kiểm độ hợp (5 phút) — quyết định dùng lại hay tạo mới**
+- Style hợp khi **≥ 2/3 vật trang trí** của nó có thật trong thế giới đề tài (vd. `ban-ve` hợp thuê trọ: mặt bằng, kích thước, khung tên đều thuộc nhà ở). Dưới 2/3 → tạo style mới. Chỉ "màu hợp" không đủ.
+- Khối hợp khi **hình dạng dữ liệu** khớp bảng Bước 3. Dữ liệu có hình dạng chưa có (bản đồ, sơ đồ quan hệ nhiều bên, lịch tháng, ma trận rủi ro…) → tạo khối mới.
+
+**B. Nghiên cứu thế giới hình ảnh (15–20 phút)**
+1. Liệt kê 10 thứ người đọc **thấy tận mắt** khi gặp vấn đề này: giấy tờ, đồ vật, nơi chốn, màn hình app, biển hiệu. (Thuế → tờ khai, hóa đơn, app eTax; giao thông → biển báo, vạch kẻ, giấy phép lái xe.)
+2. Tra ảnh thật của 3–4 thứ tiêu biểu (web search) và ghi đặc điểm thị giác: màu chủ, chất liệu giấy, kiểu chữ, khung viền, ký hiệu lặp lại.
+3. Chọn **1 vật chủ đạo** (thành khung trang + hình chính) và **2 vật phụ** (trang trí, ghi chú). Vật chủ đạo phải **chở được dữ liệu**: lịch chở ngày, hóa đơn chở tiền, biển báo chở cấm/được, bản đồ chở nơi chốn.
+4. Không mô phỏng giấy tờ thật đến mức giả được: không quốc huy, không con dấu cơ quan, không logo thương hiệu, không số hiệu biểu mẫu thật.
+
+**C. Dựng style từ vật chủ đạo**
+- 4–6 màu lấy từ vật thật → gán vào token theo nghĩa (`--info --good --bad --accent`); chạy `contrast.mjs` sớm.
+- Font có tiếng Việt, hợp chất liệu: Be Vietnam Pro (trung tính), Barlow / Barlow Condensed (kỹ thuật), Lexend (dễ đọc, thân thiện), Roboto Slab (giấy tờ, văn bản), Nunito (trẻ em), Patrick Hand / Pangolin (viết tay). Kiểm dấu tiếng Việt bằng ảnh render, không tin tên font.
+- Trang trí: tối đa 2 chi tiết đặc trưng của vật chủ đạo (vd. hóa đơn: mép răng cưa + đường chấm cắt).
+
+**D. Tạo khối mới nếu cần**
+- Phác ASCII trong `ke-hoach.md` trước khi code; khối mới phải đọc đúng khi in đen trắng thu nhỏ.
+- Code theo quy tắc "Thêm nhanh" dưới; thử bằng chính bài đang làm.
+
+**E. Asset theo vật chủ đạo**
+- Icon: lập danh sách theo từng khối rồi `assets.mjs icon …`.
+- Nhân vật: chỉ khi đề tài có người; `assets.mjs avatar-sheet` rồi chọn đúng vai (tuổi, nghề).
+- **1 minh họa SVG tự vẽ** của vật chủ đạo (`assets/illustrations/`, nét `currentColor`, ≤ 40 dòng) — làm cho trang có chất riêng mà không tốn ảnh có bản quyền.
+
+**F. Kiểm "mới thật hay chỉ đổi màu"**
+- Che chữ, chỉ nhìn hình: người lạ có đoán ra đề tài không?
+- Đặt cạnh 3 bài cũ: nếu khác nhau chỉ ở màu → chưa đạt, quay lại B.
+- Hình chính có phải là vật chủ đạo đang chở dữ liệu không, hay chỉ là trang trí?
+
+**G. Thu hoạch**: style/khối/minh họa mới vào thư viện; thêm 1 dòng vào bảng "Ý tưởng hình ảnh" (Bước 5a) và mục "Thư viện hiện có".
+
 ## Thêm nhanh style, khối, chủ đề
 
 - **Style mới** (≈ 15 phút): tạo `styles/<ten>.css`. Dòng 1: `/* ten: mô tả — vật liệu, trang trí. Hợp: chủ đề… */`. Bên trong chỉ: `@import` font (có tiếng Việt), ghi đè token `:root` (`--paper --ink --muted --line --soft --info --good --bad --accent --font --font-display --radius --pad-left`), nền `.sheet`, trang trí (`::before/::after`), cách vẽ `.secno`, `.head`. Không đụng bố cục khối. `new.mjs --list` tự thấy.

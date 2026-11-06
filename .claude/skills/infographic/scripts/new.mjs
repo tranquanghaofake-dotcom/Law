@@ -74,6 +74,14 @@ writeFileSync(join(dir, 'ke-hoach.md'), `# Kế hoạch — ${title}
 ## 3. Bố cục (thứ tự đọc)
 ${blocks.map((b, i) => `${i + 1}. ${b}: `).join('\n')}
 
+## 3b. Tạo mới (chỉ khi thư viện không hợp — SKILL.md mục "Khi đề tài lạ")
+- Kiểm độ hợp: style có ≥ 2/3 vật trang trí thuộc thế giới đề tài? khối có khớp hình dạng dữ liệu?
+- 10 thứ người đọc thấy tận mắt:
+- Vật chủ đạo (chở dữ liệu gì):        Vật phụ:
+- Màu lấy từ vật thật:                 Font:
+- Khối mới (phác ASCII):
+- Kiểm "mới thật": che chữ có đoán ra đề tài không?
+
 ## 4. Asset cần
 - Icon (Lucide):
 - Nhân vật:
