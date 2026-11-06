@@ -51,6 +51,7 @@ Các trường:
 - `enter`:
   - `"auto"`: cảnh đầu cắt thẳng; đầu cụm nhạc thì nện (`zoom`); còn lại `whip`;
   - đặt tay: `cut` / `curve` (= `whip`) / `zoom` / `flood` / `iris`. Mặc định giữa các cảnh là **cut-the-curve sang trái**; đầu cụm là `zoom` (tiếp tục lao tới).
+- **`props.cursor`** (mọi cảnh): `[{ beat, x, y, click }]` toạ độ tuyệt đối; điểm đầu và cuối nên nằm ngoài khung (y > H). **`props.notes`**: `[{ kind: "circle"|"underline", x, y, w, h, beat, color }]`. Toạ độ mục tiêu trong `DeviceDemo` dọc: màn hình bắt đầu ở (W−dw)/2+14, H·0,27+14 với dw = min(0,52W, 600), cao dw·16/9.
 - **`props.hits`:** mảng phách trong cảnh để thêm cú nện (loé, sóng, rung, tách màu chữ). Ví dụ: số chuỗi đổi, nhận chức.
 - **`theme.cutMark`** `{ text, color, ink }`: "mắt cắt" ở đầu mỗi cụm nhạc bằng dấu thương hiệu (vd. § son), phủ khung rồi mở ra cảnh mới. Đây là chuyển cảnh có chữ ký riêng, thay cho light leak/glow. Không đặt thì đầu cụm chỉ có nện.
 - **Mốc âm:** `at` âm (vd. `-2.2`) làm chữ đã đáp xong trước khung 0. Dùng cho dòng hook, để ảnh bìa không bao giờ trống.
@@ -72,7 +73,7 @@ Ví dụ đầy đủ một storyboard thật (16:9, 7 cảnh): `examples/giai-t
 | `MediaHero` | cú chốt toàn khung (animation thật) | `media`, `poster`, `syncSec`, `hitBeat`, `focus{x,y}`, `pushIn` (đẩy máy vào tiêu điểm 2 phách trước cú nện rồi lùi ra, vd. 2,3), `cutBottom` (px cắt đáy, vd. nút của app ngoài vùng an toàn), `lines[{text,at,color}]`, `linesOut`, `darkIntroSec`, `freezeFrames` (đứng hình đúng lúc sự kiện), `baseScale` (phủ kín khung), `skipFrames` (giữ khung N cho tới khi thời gian đuổi kịp — bỏ đoạn đầu bản quay), `cutBottom` giờ là mặt nạ mờ đáy |
 | `CardCycle` | vài trạng thái/biến thể lật theo phách | `kicker`, `items[{image,label,color}]`, `every` |
 | `Ladder` | thăng tiến → toả nhánh → chốt | `titles{climb,fan,finale}`, `climb[{image,label}]`, `fan[{image,label,sub}]`, `fanAt`, `finale{media,at}`, `finaleLabel` (nện dưới vật chốt), `aspect` (cao/rộng ảnh), `note` |
-| `LineReveal` | đường số liệu vẽ dần | `title`, `points[[x,y]]`, `marks[{x,label}]`, `captions[]`, `drawBeats`, `axisX`/`axisY` (nhãn trục: người lạ cần biết đang xem gì) |
+| `LineReveal` | đường số liệu vẽ dần (`rider`: nhãn ví dụ chạy theo nét) | `title`, `points[[x,y]]`, `marks[{x,label}]`, `captions[]`, `drawBeats`, `axisX`/`axisY` (nhãn trục: người lạ cần biết đang xem gì) |
 | `EndCard` | dấu thương hiệu + kêu gọi | `mark`, `name`, `tags[]`, `cta`, `url`, `disclaimer` |
 
 `Media` = `{ "kind": "image"|"video", "src": "cap/x.mp4", "alpha": false }`. `src` tính từ `public/`.

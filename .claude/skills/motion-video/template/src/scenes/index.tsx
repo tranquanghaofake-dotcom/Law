@@ -3,7 +3,7 @@
 import React from "react";
 import { AbsoluteFill, Easing, Img, interpolate, Sequence, useCurrentFrame } from "remotion";
 import { arr, blurIn, clamp, DISPLAY, easeInOut, easeOut, fadeIn, H1, num, SAFE, SAFE_PAD, SIZE, str, UI, useBeats, usePop, useCol, useSceneDur, useT } from "../core/look";
-import { asset, Device, FlashFrame, FreezeVideo, Glitch, Icon, MediaView, Particles, Rays, Shockwave, Words } from "../core/fx";
+import { Annotate, asset, Cursor, Device, FlashFrame, FreezeVideo, Glitch, Icon, MediaView, Particles, Rays, Shockwave, Words } from "../core/fx";
 import { FPS, H, VERTICAL, W } from "../core/timeline";
 import type { Media, SceneType } from "../core/types";
 
@@ -15,6 +15,18 @@ const Kicker: React.FC<{ text: string; at?: number; c?: string }> = ({ text, at 
   return <div style={{ fontFamily: UI, fontWeight: 800, fontSize: SIZE.min * 1.35, letterSpacing: "0.12em", textTransform: "uppercase", color: c ?? T.accent, clipPath: `inset(0 ${w.toFixed(1)}% 0 0)`, translate: `${(w * 0.4).toFixed(1)}px 0px` }}>{text}</div>;
 };
 const media = (v: unknown): Media | null => (v && typeof v === "object" && "src" in (v as object) ? (v as Media) : null);
+
+/** Lớp phủ dùng cho mọi cảnh: props.cursor [{beat,x,y,click}] và props.notes [{kind,x,y,w,h,beat,color}]. */
+export const Overlay: React.FC<P> = ({ props }) => {
+  const bt = useBeats();
+  const cur = arr<{ beat: number; x: number; y: number; click?: boolean }>(props.cursor).map((c) => ({ f: bt(c.beat), x: c.x, y: c.y, click: c.click }));
+  return (
+    <>
+      {arr<{ kind: "circle" | "underline"; x: number; y: number; w: number; h: number; beat: number; color?: string }>(props.notes).map((n, i) => <Annotate key={i} kind={n.kind} x={n.x} y={n.y} w={n.w} h={n.h} at={bt(n.beat)} color={n.color} />)}
+      {cur.length > 0 && <Cursor path={cur} />}
+    </>
+  );
+};
 
 /* TitleSlam — chữ nện theo phách. props: lines[{text, at, size:"hero"|"title", color, glitch}], sub{text, at}, align */
 const TitleSlam: React.FC<P> = ({ props }) => {
@@ -327,7 +339,12 @@ const Ladder: React.FC<P> = ({ props }) => {
       <div style={{ ...H1, fontSize: SIZE.title * 0.9, color: T.ink }}>{phase === "climb" ? titles.climb : phase === "fan" ? titles.fan : titles.finale}</div>
       {phase === "climb" && climb[step] && (
         <>
-          <Img src={asset(climb[step].image)} style={{ position: "absolute", left: (W - iw) / 2, top: H * 0.27, width: iw, scale: interpolate(local, [0, 10], [1.08, 1], { ...clamp, easing: easeOut }), filter: `brightness(${interpolate(local, [0, 8], [1.7, 1], clamp)}) drop-shadow(0 30px 60px rgba(0,0,0,.6))` }} />
+          {/* tủ trước lùi ra sau (chồng theo chiều sâu Z): mỗi bậc ×0,86, lên 46 px, mờ dần — tủ mới lao lên phía trước */}
+          {climb.slice(Math.max(0, step - 3), step).map((c, j, a) => {
+            const depth = a.length - j + interpolate(local, [0, 12], [-1, 0], { ...clamp, easing: easeOut });
+            return <Img key={c.image} src={asset(c.image)} style={{ position: "absolute", left: (W - iw) / 2, top: H * 0.27, width: iw, scale: 0.9 ** depth, translate: `${(90 * depth).toFixed(1)}px ${(-70 * depth).toFixed(1)}px`, opacity: Math.max(0, 0.75 - 0.18 * depth), filter: `blur(${(1.5 + 1.5 * depth).toFixed(1)}px) brightness(${(0.8 - 0.1 * depth).toFixed(2)})` }} />;
+          })}
+          <Img src={asset(climb[step].image)} style={{ position: "absolute", left: (W - iw) / 2, top: H * 0.27, width: iw, scale: interpolate(local, [0, 12], [1.25, 1], { ...clamp, easing: easeOut }), translate: `0px ${interpolate(local, [0, 12], [60, 0], { ...clamp, easing: easeOut }).toFixed(1)}px`, filter: `brightness(${interpolate(local, [0, 8], [1.5, 1], clamp)}) drop-shadow(0 30px 60px rgba(0,0,0,.6))` }} />
           <div style={{ position: "absolute", left: SAFE.left, right: SAFE.right, top: H * 0.27 + iw * ASPECT + 14, textAlign: "center", fontFamily: UI, fontWeight: 800, fontSize: SIZE.body * 1.3, color: T.accent }}>{climb[step].label}</div>
         </>
       )}
@@ -373,6 +390,18 @@ const LineReveal: React.FC<P> = ({ props }) => {
         ))}
         {str(props.axisY) && <text x={-6} y={-8} fill={T.inkSoft} fontFamily={UI} fontWeight={700} fontSize={SIZE.min * 1.1}>{str(props.axisY)} ↑</text>}
         {str(props.axisX) && <text x={gw} y={gh + SIZE.min * 1.6} fill={T.inkSoft} fontFamily={UI} fontWeight={700} fontSize={SIZE.min * 1.1} textAnchor="end">{str(props.axisX)} →</text>}
+        {str(props.rider) && (() => {
+          const k = Math.min(pts.length - 1, Math.floor(draw * (pts.length - 1)));
+          const [rx, ry] = pts[k] ?? [0, 0];
+          const bump = Math.max(0, ...marks.map((m) => { const d = draw - m.x; return d >= 0 && d < 0.05 ? 1 - d / 0.05 : 0; }));
+          return (
+            <g transform={`translate(${(rx * gw).toFixed(1)} ${((1 - ry) * gh).toFixed(1)}) scale(${1 + bump * 0.35})`}>
+              <rect x={-110} y={-96} width={220} height={66} rx={18} fill={T.ground} stroke={T.accent} strokeWidth={4} />
+              <text x={0} y={-52} textAnchor="middle" fill={T.ink} fontFamily={UI} fontWeight={800} fontSize={SIZE.min * 1.3}>{str(props.rider)}</text>
+              <circle r={14} fill={T.accent} />
+            </g>
+          );
+        })()}
         {arr<string>(props.captions).map((c, i) => <text key={c} x={0} y={gh + 60 + i * SIZE.min * 1.7} fill={T.inkSoft} fontFamily={UI} fontWeight={700} fontSize={SIZE.min * 1.2}>{c}</text>)}
       </svg>
     </AbsoluteFill>

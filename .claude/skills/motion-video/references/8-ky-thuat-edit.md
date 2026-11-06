@@ -36,6 +36,10 @@ Template đã làm sẵn:
 | **Nện chữ** | một chữ chốt | phóng 1,8 → 1 + nhoè 14 px trong 10 khung | `Words slam` |
 | **Một con số đáp xuống** | số liệu quan trọng | số khổng lồ (~2,6× chữ chốt) đếm `from → value` trong 2 phách | `StatCount` một số |
 | **Mắt cắt lao qua máy** | đầu cụm | đĩa dấu thương hiệu phóng 0 → phủ khung trong 8 khung (ease-in), rồi TIẾP TỤC phóng 1 → 1,7 và tan trong 10 khung — không thu về (thu về = lật dấu Z, để lại chấm thừa) | `theme.cutMark` |
+| **Con trỏ lớn dẫn mắt** (HyperFrames `oversized-cursor`) | cảnh UI tĩnh cần nguyên nhân; kêu gọi bấm | cỡ ~13 % cạnh ngắn; luôn vào từ NGOÀI khung (dưới) trượt giảm tốc (power3.out); đầu mũi tên chạm mục tiêu; bấm = nén 0,84 trong 0,1 s, bật lại 0,22 s quanh đầu mũi tên; **cú bấm gây ra nhịp tiếp** (đứng hình, nút nảy); rời khung tăng tốc. Không bao giờ hiện/tắt bằng mờ dần tại chỗ | `props.cursor [{beat,x,y,click}]` (mọi cảnh) |
+| **Chú thích vẽ tay** (Remotion text-highlights, rough-notation) | chỉ vào chi tiết nhỏ trên UI thật: đáp án đúng, con số | khoanh/gạch chân nét bút dạ 7 px, vẽ trong 14 khung, ngay sau kết quả hiện | `props.notes [{kind,x,y,w,h,beat,color}]` |
+| **Vật dẫn mắt trên đồ thị** | đồ thị trừu tượng cần gắn với ví dụ | nhãn ví dụ (vd. "Đặt cọc") chạy theo đầu nét đang vẽ, nảy ×1,35 ở mỗi mốc | `LineReveal.rider` |
+| **Chồng chiều sâu Z** | chuỗi thăng tiến | vật cũ lùi sau mỗi bậc ×0,9, lệch (90, −70) px, mờ dần, nhoè 1,5–6 px; vật mới lao lên 1,25 → 1 — lệch về phía KHÔNG có chữ | `Ladder` climb |
 | **Montage thẻ thật** | nhiều dạng/màn của sản phẩm | 1,5–1,75 phách mỗi thẻ, một thẻ mỗi lúc, cut-the-curve sang trái, số thứ tự to + thanh tiến độ | `CardMontage` |
 | **Khoảng lặng trước cú chốt** | trước kết quả lớn | 0,3–0,75 s gần như đứng yên | đặt `hitBeat` sau một nhịp giữ |
 

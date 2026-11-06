@@ -204,3 +204,46 @@ export const FreezeVideo: React.FC<{ m: Media; atSec: number; hold: number; skip
   const mf = Math.max(skip, f < F0 ? f : f < F0 + hold ? F0 : f - hold);
   return <Freeze frame={mf}><MediaView m={m} style={style} /></Freeze>;
 };
+
+/** Con trỏ lớn dẫn mắt (HyperFrames `oversized-cursor`, Apache-2.0 — viết lại): luôn vào từ NGOÀI khung (dưới), trượt giảm tốc tới
+ *  mục tiêu bằng ĐẦU mũi tên, bấm = nén 0,84 trong 0,1 s rồi bật lại trong 0,22 s (xoay quanh đầu mũi tên), rời khung bằng tăng tốc.
+ *  path: [{ f (khung trong cảnh), x, y, click? }] — điểm đầu nên nằm ngoài khung (y > H). Cú bấm phải GÂY RA nhịp tiếp theo. */
+export const Cursor: React.FC<{ path: { f: number; x: number; y: number; click?: boolean }[]; size?: number }> = ({ path, size = Math.min(W, H) * 0.13 }) => {
+  const frame = useCurrentFrame();
+  if (!path.length || frame < path[0].f) return null;
+  let x = path[path.length - 1].x, y = path[path.length - 1].y;
+  for (let i = 0; i < path.length - 1; i++) {
+    const a = path[i], z = path[i + 1];
+    if (frame >= a.f && frame < z.f) {
+      const t = (frame - a.f) / (z.f - a.f);
+      const e = z.y > H ? t * t * t : 1 - (1 - t) ** 3; // rời khung: tăng tốc; tới mục tiêu: giảm tốc (power3)
+      x = a.x + (z.x - a.x) * e; y = a.y + (z.y - a.y) * e;
+    }
+  }
+  let sc = 1;
+  for (const p of path) if (p.click) {
+    const d = frame - p.f;
+    if (d >= 0 && d < 6) sc = 1 - 0.16 * (d / 6);
+    else if (d >= 6 && d < 19) sc = 0.84 + 0.16 * ((d - 6) / 13);
+  }
+  return (
+    <svg viewBox="0 0 24 24" width={size} height={size} style={{ position: "absolute", left: x - size * 0.21, top: y - size * 0.14, scale: sc, transformOrigin: "21% 14%", filter: "drop-shadow(0 6px 8px rgba(0,0,0,.35))", pointerEvents: "none", zIndex: 30 }}>
+      <path d="M5 3 L5 19.5 L9.3 15.6 L12.2 21.6 L14.9 20.4 L12.1 14.5 L18 14.5 Z" fill="#1c1c1c" stroke="#ffffff" strokeWidth={1.4} strokeLinejoin="round" />
+    </svg>
+  );
+};
+
+/** Chú thích vẽ tay (khoanh/gạch chân) lên UI thật — nét SVG hơi lệch như bút dạ, vẽ dần theo khung. kind: circle | underline. */
+export const Annotate: React.FC<{ kind: "circle" | "underline"; x: number; y: number; w: number; h: number; at: number; len?: number; color?: string; width?: number }> = ({ kind, x, y, w, h, at, len = 14, color = T.accent, width = 7 }) => {
+  const frame = useCurrentFrame();
+  if (frame < at) return null;
+  const p = interpolate(frame, [at, at + len], [0, 1], { ...clamp, easing: easeOut });
+  const d = kind === "circle"
+    ? `M ${w * 0.55} ${h * 0.02} C ${w * 1.02} ${h * 0.0}, ${w * 1.04} ${h * 0.95}, ${w * 0.5} ${h * 0.98} C ${-w * 0.04} ${h * 1.0}, ${-w * 0.03} ${h * 0.06}, ${w * 0.48} ${h * 0.04} L ${w * 0.62} ${h * 0.1}`
+    : `M 0 ${h * 0.6} C ${w * 0.3} ${h * 0.4}, ${w * 0.7} ${h * 0.75}, ${w} ${h * 0.5}`;
+  return (
+    <svg width={w + 20} height={h + 20} style={{ position: "absolute", left: x - 10, top: y - 10, overflow: "visible", pointerEvents: "none", zIndex: 25 }}>
+      <path d={d} transform="translate(10 10)" fill="none" stroke={color} strokeWidth={width} strokeLinecap="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - p} />
+    </svg>
+  );
+};
