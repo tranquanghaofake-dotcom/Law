@@ -126,7 +126,7 @@ Cổng: `kiem_tra_ban_thao.py` chạy trên bản cuối báo 0 lỗi; checklist
 | Lỗi hội đồng hay bắt, câu hỏi bảo vệ | `references/phan-bien-hoi-dong.md` |
 | Nhật ký AI, quy tắc diễn đạt lại, đạo văn | `references/liem-chinh-ai.md` |
 | Kiểm bản nháp tự động | `python3 scripts/kiem_tra_ban_thao.py <file.md>` |
-| Ví dụ đã chạy, kèm phiếu tự chấm và bài học: luật doanh nghiệp (3 vòng tự chấm 55 → 71; phản biện độc lập 52) và luật lao động + dữ liệu (2 vòng tự chấm 58 → 71; phản biện độc lập 47); hình sự khi văn bản nền đang sửa (đề cương, 46); thi hành án và luật vừa có hiệu lực (63); dữ liệu cá nhân + thực nghiệm chưa có dữ liệu (55) | `vi-du/giao-dich-nguoi-co-lien-quan/`, `vi-du/giam-sat-nguoi-lao-dong/`, `vi-du/an-treo/`, `vi-du/tai-san-so-thi-hanh-an/`, `vi-du/tin-nhan-quang-cao/` |
+| Ví dụ đã chạy, kèm phiếu tự chấm và bài học: luật doanh nghiệp (3 vòng tự chấm 55 → 71; phản biện độc lập 52) và luật lao động + dữ liệu (2 vòng tự chấm 58 → 71; phản biện độc lập 47); hình sự khi văn bản nền đang sửa (đề cương, 46); thi hành án và luật vừa có hiệu lực (63); dữ liệu cá nhân + thực nghiệm chưa có dữ liệu (55); sở hữu trí tuệ × AI, khoảng trống chờ nghị định | `vi-du/giao-dich-nguoi-co-lien-quan/`, `vi-du/giam-sat-nguoi-lao-dong/`, `vi-du/an-treo/`, `vi-du/tai-san-so-thi-hanh-an/`, `vi-du/tin-nhan-quang-cao/`, `vi-du/ai-huan-luyen-quyen-tac-gia/` |
 
 ## Công cụ, nếu phiên có
 
