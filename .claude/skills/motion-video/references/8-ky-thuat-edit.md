@@ -1,0 +1,53 @@
+# Kỹ thuật edit động (TikTok/Reels) — luật, thông số, cách làm trong template
+
+Nguồn:
+- HeyGen HyperFrames `.claude/skills/motion-doctrine` và `cut-the-curve`, registry `beat-freeze-cut`, `editorial-flash-overlay` (Apache-2.0, viết lại);
+- hướng dẫn speed ramp của DJordanMedia, CapCut velocity guide, ClipCreator "video editing effects 2026" (chỉ đọc);
+- khái niệm flash frame / posterize / stutter trong Yanndotai/brutalist-video-editing-skill (README, chưa rõ giấy phép, không chép mã).
+
+## 1. Luật vector — điều làm video "liền một hơi" thay vì xếp slide
+
+| Luật | Nghĩa | Lỗi hay gặp |
+|---|---|---|
+| **Một hướng chủ đạo** | mọi điểm cắt thường đi cùng một hướng (template: sang trái) | đổi hướng trái/phải luân phiên ("ping-pong") — đọc như lỗi |
+| **Cắt giữa chuyển động** | cảnh cũ còn đang tăng tốc ở khung cắt, cảnh mới vào giữa đường (≥ 50 % quãng) | cảnh cũ dừng hẳn rồi mới cắt; cảnh mới bắt đầu từ đứng yên |
+| **Vận tốc khớp** | ra `power4.in`, vào `power4.out`, cùng quãng → vận tốc bằng nhau ở điểm cắt | ra chậm vào nhanh |
+| **Dấu Z** | ra phóng to (lao tới) ⇒ vào cũng phóng to (0,8 → 1); ra thu nhỏ ⇒ vào thu nhỏ (1,25 → 1) | hút vào (phóng to) rồi cảnh mới thu từ 1,25 về 1 — lật dấu |
+| **Hướng dành riêng** | lên = kết luận; Z tới = đào sâu; Z lùi = cú chốt đáp xuống | dùng hướng đặc biệt cho vui |
+
+Template đã làm sẵn:
+- **Điểm cắt thường:** `enter: "curve"` (mặc định). Cảnh ra di chuyển 12 % khung sang trái, `power4.in`, nhoè 0 → 18 px, giữ đậm tới sát điểm cắt. Cảnh vào bắt đầu ở +12 %, độ đậm 0,6, `power4.out`. Nền sân khấu là màu mực nên khe giao chỉ là một "dip" ≤ 1 khung.
+- **Đầu cụm nhạc:** hút vào (phóng 1 → 1,2) → `enter: "zoom"` tiếp tục lao tới (0,8 → 1), mắt cắt `theme.cutMark` che khe.
+- **Nhoè theo kích thước:** chữ tối đa ~10 px; cả khung 18–20 px.
+
+## 2. Bảng kỹ thuật
+
+| Kỹ thuật | Khi dùng | Thông số | Trong template |
+|---|---|---|---|
+| **Cut-the-curve** | ranh giới cảnh mặc định | quãng 12 %, 0,3–0,4 s, power4 đối xứng, nhoè 18 px | `enter: "curve"` (tự động) |
+| **Zoom-through (Z tới)** | đầu chương, đào sâu | ra 1 → 1,2, vào 0,8 → 1, nhoè 18 px | `exit: push` + `enter: "zoom"` |
+| **Vật thành thế giới** | từ một màn hình vào chi tiết bên trong | vật phóng 1 → 3,2 trong 0,75 phách `ease-in` cubic, cảnh sau vào `zoom` | `DeviceDemo.exitPush` + cảnh sau `enter: "zoom"` |
+| **Impact freeze** | khoảnh khắc chạm: bấm đáp án, số đổi | đứng 14–24 khung (0,25–0,4 s) đúng lúc kết quả hiện; kèm flash + đẩy máy | `DeviceDemo.freeze{after,frames}`, `MediaHero.freezeFrames` |
+| **Speed ramp** | đoạn lặp đi lặp lại → nhanh; khoảnh khắc chứng minh → chậm | chậm 30–35 % trong 12–15 khung, giữ 10–20 khung, ra cùng nhịp; *impact*: hãm 6–8 khung về 10–15 %, đứng 3–5 khung | `FreezeVideo` (mở rộng bảng tốc độ nếu cần) |
+| **Flash frame ấm** | cú nện trong cảnh | loé 2 khung, tắt trong 6 khung; nền sáng ≤ 0,45 | `FlashFrame` (tự động ở `props.hits`) |
+| **Đẩy máy vào tiêu điểm** | cú chốt bằng bản quay có chi tiết nhỏ | vào 2 phách trước cú nện, giữ 1,5 phách, lùi trong 1,5 phách; ≤ 2,5× độ phân giải bản quay | `MediaHero.pushIn` |
+| **Mặt nạ lộ chữ** | kicker, nhãn — để các cảnh vào khác nhau | `clip-path: inset(0 X% 0 0)` 100 → 0 trong 12 khung, x lệch 40 px | `Kicker` |
+| **Chữ từng từ nhoè → nét** | tiêu đề | 8–10 khung/từ, các từ cách 60–120 ms, không trượt | `Words` |
+| **Nện chữ** | một chữ chốt | phóng 1,8 → 1 + nhoè 14 px trong 10 khung | `Words slam` |
+| **Một con số đáp xuống** | số liệu quan trọng | số khổng lồ (~2,6× chữ chốt) đếm `from → value` trong 2 phách | `StatCount` một số |
+| **Montage thẻ thật** | nhiều dạng/màn của sản phẩm | 1,5–1,75 phách mỗi thẻ, một thẻ mỗi lúc, cut-the-curve sang trái, số thứ tự to + thanh tiến độ | `CardMontage` |
+| **Khoảng lặng trước cú chốt** | trước kết quả lớn | 0,3–0,75 s gần như đứng yên | đặt `hitBeat` sau một nhịp giữ |
+
+## 3. Cấm (bổ sung danh sách CẤM của `3-phong-cach.md`)
+
+- **Rung lắc vô cớ:** thở, lơ lửng, lắc lư hình sin để lấp thời gian. Mỗi giây phải có một việc đang diễn ra: lộ dần thông tin, máy quay có ý đồ, UI tự chạy, vật diễn hành động.
+- **Hoà mờ giữa hai cảnh (crossfade):** không có vật dẫn mắt. Dùng cut-the-curve hoặc mắt cắt.
+- **Đổi hướng không có nguyên nhân.**
+- **Phản ứng đến sau nguyên nhân vài khung:** flash/âm thanh/rung phải đúng khung gây ra.
+- **Flash trên mọi phách:** "một đoạn ramp sạch không cần flash ở mỗi phách" (CapCut guide). Flash chỉ ở cú nện.
+
+## 4. Soát riêng phần edit (thêm vào pha 7)
+
+- Tờ `cat.png` (−0,2 / 0 / +0,2 s): khung trước cắt phải đang lệch trái và nhoè; khung sau phải bắt đầu lệch phải và nhoè. Không có khung nào toàn màu nền.
+- Liệt kê hướng của từng điểm cắt: tất cả sang trái, trừ chỗ có lý do (mắt cắt, vật thành thế giới).
+- Đầu mỗi cụm: khung ngay sau mắt cắt phải nhỏ hơn 1 và đang phóng lên (dấu Z giữ nguyên).

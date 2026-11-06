@@ -74,7 +74,7 @@ Ba trường hợp chạy rút gọn:
 | Số liệu/kết quả | một con số được "kiếm" bằng một cảnh, rồi hiện thân | StatCount · LineReveal · CardCycle | 15–40 s |
 | Clip dọc mạng xã hội | khung 0 đã là hook; đổi nhịp 2–4 s; chữ ≥ 28 px trong dải an toàn | như trên, mỗi cảnh 1–2 ô nhịp | 15–60 s |
 
-Mỗi video dùng 3–5 kiểu chuyển cảnh, và mỗi kiểu phải có nguyên nhân trên hình: whip, nện ở đầu cụm, tràn màu, mở iris từ điểm bấm, hút vào lúc bass tắt. Không để cảnh nào cũng vào giống nhau.
+Mỗi video dùng 3–5 kiểu chuyển cảnh, và mỗi kiểu phải có nguyên nhân trên hình: cut-the-curve (mặc định), zoom-through ở đầu cụm, vật thành thế giới, mắt cắt bằng dấu thương hiệu, tràn màu, iris. **Mọi điểm cắt thường đi một hướng** (không ping-pong). **Dấu Z giữ nguyên qua điểm cắt.** Thông số đầy đủ ở `references/8-ky-thuat-edit.md`.
 
 ## Hiệu năng render (máy không GPU)
 
@@ -103,6 +103,7 @@ Mỗi video dùng 3–5 kiểu chuyển cảnh, và mỗi kiểu phải có nguy
 | Khung 0 (ảnh bìa TikTok) trống | Chữ hook vào từ phách 0 nên khung 0 chưa có gì → dòng hook đặt `at` âm để đã đáp ở khung 0 |
 | Phóng thiết bị che tiêu đề; nhãn/miễn trừ đè ảnh | Phóng quanh điểm giữa đẩy mép trên lên → soát khung sau mỗi thay đổi bố cục; ưu tiên chip chữ to thay vì phóng UI chữ nhỏ |
 | Cú chốt bằng bản quay mà chữ số/chi tiết quá nhỏ | Đẩy máy vào tiêu điểm (`pushIn`) 2 phách trước cú nện rồi lùi ra; không phóng quá ~2,5× bản quay 2,5× (vỡ hạt) |
+| Edit "xấu, đơn giản" dù nhiều hiệu ứng | Cảnh đổi hướng trái/phải luân phiên, Z lật dấu ở đầu cụm, lắc lư vô cớ, không có khoảnh khắc đứng hình/đẩy máy ở cú chốt → áp luật vector + impact freeze + vật thành thế giới (`8-ky-thuat-edit.md`) |
 | "Chưa đủ wow" dù nhiều hiệu ứng | Mắc dấu hiệu video máy tạo (nền xanh đen trống, glow, hạt bay, ba thẻ một hàng, mọi thứ trượt lên) → đọc danh sách CẤM trong `references/3-phong-cach.md`, tăng câu chuyện và UI thật |
 
 ## Công cụ
@@ -122,5 +123,6 @@ Tài liệu tham chiếu:
 - `references/5-asset.md`
 - `references/6-dung-remotion.md`
 - `references/7-kiem-tra.md`
+- `references/8-ky-thuat-edit.md` — luật vector, cut-the-curve, impact freeze, speed ramp, flash, vật thành thế giới, montage (thông số + chỗ có sẵn trong template)
 
 Ví dụ chạy trọn quy trình (FACTS → jobs → storyboard): `examples/giai-thich-dat-coc-16x9/`. Nguồn tham khảo và giấy phép: `NOTICE.md`.

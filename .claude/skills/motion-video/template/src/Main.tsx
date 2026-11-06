@@ -3,7 +3,7 @@ import React from "react";
 import { AbsoluteFill, Easing, interpolate, Sequence, staticFile, useCurrentFrame } from "remotion";
 import { Audio } from "@remotion/media";
 import { clamp, DISPLAY, invert, SceneCtx, T, ThemeCtx } from "./core/look";
-import { Grain, Ground, SceneShell, Shockwave, WHIP_FRAMES } from "./core/fx";
+import { FlashFrame, Grain, Ground, SceneShell } from "./core/fx";
 import { b, beatPulse, FPB, GAPS, H, PHRASES, PLACED, rand, SB, TOTAL, W } from "./core/timeline";
 import { SCENE_VIEWS } from "./scenes";
 
@@ -46,13 +46,13 @@ const BeatFx: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const f = Math.floor(frame / 2);
   const rgb = hit * 10 + gapP * 6; // tách màu chỉ ở cú nện/bass tắt (không đập theo mọi phách)
   return (
-    <AbsoluteFill style={{ overflow: "hidden", background: "#000" }}>
+    <AbsoluteFill style={{ overflow: "hidden", background: T.ink }}>{/* nền sân khấu: lộ ra ở khoảng giao cut-the-curve = dip cut màu mực */}
       <AbsoluteFill style={{ scale: 1 + pulse * 0.025 + hit * 0.05, translate: `${(rand(f) - 0.5) * shake}px ${(rand(f + 99) - 0.5) * shake}px`, filter: pulse + hit > 0.03 ? `contrast(${(1 + pulse * 0.06 + hit * 0.1).toFixed(3)})` : undefined, ["--rgb" as string]: rgb.toFixed(1) }}>
         {children}
       </AbsoluteFill>
       {PHRASES.map((p) => <SealCut key={p} at={p} />)}
       <AbsoluteFill style={{ background: "radial-gradient(circle, transparent 30%, #000 85%)", opacity: gapP * 0.8, pointerEvents: "none" }} />
-      {HITS.filter((h) => !PHRASES.includes(h)).map((h) => <Shockwave key={h} at={h} c={darkAt(h) ? "#ffffff" : T.accent} />)}
+      {HITS.filter((h) => !PHRASES.includes(h)).map((h) => <FlashFrame key={h} at={h} strength={darkAt(h) ? 0.8 : 0.45} />)}
       <Grain />
     </AbsoluteFill>
   );
@@ -60,7 +60,8 @@ const BeatFx: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 
 const ENTERS = PLACED.map((p) => {
   const e = SB.scenes[p.index].enter;
-  return e && e !== "auto" ? e : p.index === 0 ? "cut" : p.phraseStart ? "zoom" : "whip";
+  if (e === "whip") return "curve";
+  return e && e !== "auto" ? e : p.index === 0 ? "cut" : p.phraseStart ? "zoom" : "curve";
 });
 
 export const Main: React.FC = () => {
@@ -75,10 +76,10 @@ export const Main: React.FC = () => {
           const enter = ENTERS[p.index];
           const pal = isDark(s.bg) && !isDark(undefined) ? invert(T) : T;
           return (
-            <Sequence key={s.id} name={s.id} from={p.from} durationInFrames={p.dur + (ENTERS[p.index + 1] === "whip" ? WHIP_FRAMES : 0)} premountFor={30}>
+            <Sequence key={s.id} name={s.id} from={p.from} durationInFrames={p.dur} premountFor={30}>
               <ThemeCtx.Provider value={pal}>
-                <SceneCtx.Provider value={{ startBeat: p.startBeat, from: p.from }}>
-                  <SceneShell dur={p.dur} enter={enter} whipOut={ENTERS[p.index + 1] === "whip"} suck={p.phraseEnd && end < TOTAL} gap={gap} dir={p.index % 2 ? -1 : 1}>
+                <SceneCtx.Provider value={{ startBeat: p.startBeat, from: p.from, dur: p.dur }}>
+                  <SceneShell dur={p.dur} enter={enter} exit={p.phraseEnd && end < TOTAL ? "push" : ENTERS[p.index + 1] === "curve" ? "curve" : "none"} gap={gap}>
                     <Ground bg={s.bg === "dark" ? pal.ground : s.bg} />
                     <V props={s.props} />
                   </SceneShell>

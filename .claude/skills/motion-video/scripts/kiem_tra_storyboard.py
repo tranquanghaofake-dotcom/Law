@@ -10,7 +10,7 @@ import os
 import re
 import sys
 
-TYPES = {"TitleSlam", "LogoReveal", "StatCount", "KnowledgeCard", "FeatureSteps", "DeviceDemo", "MediaHero", "CardCycle", "Ladder", "LineReveal", "EndCard"}
+TYPES = {"TitleSlam", "LogoReveal", "StatCount", "KnowledgeCard", "FeatureSteps", "DeviceDemo", "MediaHero", "CardCycle", "CardMontage", "Ladder", "LineReveal", "EndCard"}
 # Từ sáo của video quảng cáo do máy viết (spec HyperFrames, mở rộng tiếng Việt)
 SAO = ["introducing", "meet ", "unlock", "seamless", "supercharge", "game-changer", "revolutioniz", "effortless", "in seconds",
        "đột phá", "cách mạng", "vượt trội", "tối ưu hóa trải nghiệm", "liền mạch", "chỉ trong vài giây", "giới thiệu"]
@@ -61,7 +61,7 @@ def main():
         dur = s["bars"] * 4 * spb
         # thời gian đọc: 0,5 s + 0,3 s/từ cho chữ cần đọc
         # cảnh hiện LẦN LƯỢT từng mục (mỗi phách một thẻ/ảnh): chỉ tính mục dài nhất + phần chữ cố định, không cộng dồn
-        seq = {"CardCycle": "items", "Ladder": "climb"}.get(s["type"])
+        seq = {"CardCycle": "items", "CardMontage": "cards", "Ladder": "climb"}.get(s["type"])
         if seq and isinstance(s["props"].get(seq), list):
             fixed = {k: v for k, v in s["props"].items() if k not in (seq, "fan")}
             longest = max((sum(len(t.split()) for t in texts(it)) for it in s["props"][seq]), default=0)

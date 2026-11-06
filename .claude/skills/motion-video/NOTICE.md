@@ -5,6 +5,9 @@ Skill này tự viết. Các nguồn dưới đây được **tham khảo ý tư
 | Nguồn | Giấy phép | Học gì |
 |---|---|---|
 | HeyGen HyperFrames — `skills/hyperframes` (story.md, spec.md, motion.md, review.md, sound.md, types/*) · github.com/heygen-com/hyperframes | Apache-2.0 | quy trình câu chuyện → spec bằng số → soát; danh sách dấu hiệu video do máy tạo; easing theo vai trò, chuyển cảnh có nguyên nhân; vùng an toàn dọc; mức âm thanh. Các đoạn phỏng theo có ghi rõ ở đầu file tham chiếu tương ứng; lời văn viết lại bằng tiếng Việt, rút gọn và điều chỉnh. |
+| HeyGen HyperFrames — `.claude/skills/motion-doctrine`, `cut-the-curve`, `seam-craft`; registry `beat-freeze-cut`, `editorial-flash-overlay` | Apache-2.0 | luật vector, cut-the-curve (thông số), dấu Z, cấm rung lắc vô cớ, impact freeze, flash ấm — viết lại trong `references/8-ky-thuat-edit.md` và `template/src/core/fx.tsx` |
+| Bài hướng dẫn speed ramp/velocity edit (DJordanMedia 2026, CapCut guide 2026, ClipCreator 2026) | bài viết công khai | chỉ đọc thông số (tỉ lệ tốc độ, số khung) |
+| Yanndotai/brutalist-video-editing-skill (README) | chưa rõ giấy phép | chỉ tham khảo khái niệm phổ biến (flash frame, posterize, stutter), không chép mã |
 | tungs/timesnap · github.com/tungs/timesnap | BSD-3-Clause | quay trang web theo thời gian ảo. `scripts/quay_web.mjs` tự viết lại bằng Playwright clock, bổ sung phần dừng CSS/Web Animations và SMIL. |
 | Remotion · remotion.dev | Remotion License (miễn phí cho cá nhân và nhóm ≤ 3 người) | khung dựng video bằng React; template dùng `remotion`, `@remotion/media`, `@remotion/google-fonts`. |
 | Kenney — Interface Sounds · kenney.nl | CC0 | 5 tiếng hiệu ứng trong `template/public/sfx/` (xem LICENSE.txt). |
