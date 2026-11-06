@@ -7,6 +7,8 @@
   - chip "Đặt cọc" chạy theo đường quên;
   - tủ chức danh chồng chiều sâu;
   - echo viền chữ ở "20 TRIỆU" và "CHỦ TỊCH NƯỚC";
+  - số 20 → 40 triệu cuộn kiểu **odometer** (hàng chục nhích khi hàng đơn vị qua 9 → 0);
+  - đáp án "6 triệu" bay theo cung thành chip phép tính (FLIP);
   - **match cut** (Ben Marriott): chấm "Đặt cọc" ở cuối đường quên trượt và nở thành vòng xanh đúng chỗ, đúng cỡ huy chương 74, rồi cắt thẳng sang cảnh chuỗi (toạ độ đo bằng `remotion still`).
 - **Phản biện lần 3 (1 subagent, xem 28 khung + tự trích 18 khung):**
 
