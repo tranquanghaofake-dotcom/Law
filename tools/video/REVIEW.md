@@ -21,8 +21,8 @@
 | P1 thẻ Hiểu nhanh trống 70 % ở khung vào | 2 nhánh có ngay khung đầu |
 | P1 dải đen đáy cảnh chuỗi, 74/75 chồng mờ | phóng nền 1,55; dải còn lại nằm dưới vùng an toàn 1330 px (chú thích TikTok che). **74/75 chồng mờ là animation thật của web, giữ nguyên** |
 | P2 thẻ màu nhỏ | rộng 94 % khung |
-| P2 thanh tô mẹo nhớ chỉ ở dòng 2 | chưa sửa |
-| Ngách "đáp án bay thành chip" (FLIP) | chưa làm |
+| P2 thanh tô mẹo nhớ chỉ ở dòng 2 | tô từng dòng (`box-decoration-break: clone`) |
+| Ngách "đáp án bay thành chip" (FLIP) | làm: nhãn "6 triệu" bay theo cung thành chip "3 triệu + 3 triệu = 6 triệu" |
 | Ngách "gõ URL trong thanh địa chỉ" | làm |
 
 ## Quyết định sáng tạo
