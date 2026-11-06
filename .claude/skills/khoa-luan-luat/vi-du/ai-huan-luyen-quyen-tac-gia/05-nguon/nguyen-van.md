@@ -5,5 +5,6 @@
 Đ2 Luật 131: "Luật này có hiệu lực thi hành từ ngày 01 tháng 4 năm 2026."
 Đ12a k1 (VBHN 160): "Tác giả là người trực tiếp sáng tạo tác phẩm."
 # Luật Trí tuệ nhân tạo 134/2025/QH15 (luatvietnam.vn docx, đọc 06/11/2026)
+Đ7 (tiêu đề): "Các hành vi bị nghiêm cấm"
 Đ7 k3: "Thu thập, xử lý hoặc sử dụng dữ liệu để phát triển, huấn luyện, kiểm thử hoặc vận hành hệ thống trí tuệ nhân tạo trái với quy định của pháp luật về dữ liệu, bảo vệ dữ liệu cá nhân, sở hữu trí tuệ và an ninh mạng."
 Đ33: "Bãi bỏ khoản 9 Điều 3, khoản 7 Điều 4, khoản 6 Điều 12, điểm đ khoản 2 Điều 34 và Chương IV của Luật Công nghiệp công nghệ số."

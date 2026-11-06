@@ -184,6 +184,15 @@ def kiem_tra(van, nop=False, an_danh=None, tieu_de_khac=None, nguyen_van=None, b
                 them("han-che-chua-phan-chung", "NẶNG", _dong(van, vt_muc + m.start()),
                      f"hạn chế ({m.group(1)}) chưa có footnote, '(xem x.y.z)', 'chưa tìm thấy …' hoặc [CẦN KIỂM: phản chứng]")
 
+    # 5d. Hạn chế chỉ là chẩn đoán ("chưa xác định", "chưa rõ") mà không có kết luận hay nguyên nhân
+    for m_muc in RE_MUC_HAN_CHE.finditer(van):
+        for m in re.finditer(r"^\(([ivx]+)\)(.*)$", m_muc.group(1), re.M):
+            dong_hc = m.group(2)
+            if re.search(r"chưa xác định|chưa rõ", dong_hc, re.I) and not re.search(
+                    r"\bvì\b|\bdo\b|nguyên nhân|nghiêng về|người viết cho rằng|hệ quả", dong_hc, re.I):
+                them("han-che-chi-chan-doan", "NHẸ", _dong(van, m_muc.start(1) + m.start()),
+                     f"hạn chế ({m.group(1)}) mới là chẩn đoán 'chưa xác định' — nêu cách đọc người viết chọn, nguyên nhân hoặc hệ quả")
+
     # 5c. Khẳng định so sánh với quá khứ ("lần đầu", "chưa từng"…) phải có footnote ngay trong câu:
     #     muốn nói "lần đầu" thì phải đã đọc cả văn bản cũ, không suy từ văn bản mới
     #     Bỏ qua footnote, tiêu đề, đoạn trong ngoặc kép (thường là nguyên văn hoặc tên thuật ngữ);

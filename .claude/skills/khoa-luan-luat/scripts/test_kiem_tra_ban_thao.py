@@ -214,6 +214,12 @@ class KiemTraBanThao(unittest.TestCase):
         self.assertEqual(len(muc(kq, "footnote-thua")), 0)
         self.assertEqual(len(muc(kq, "footnote-thieu")), 0)
 
+    def test_han_che_chi_chan_doan(self):
+        van = "### 2.1.3. Những hạn chế rút ra\n\n(i) Chưa xác định được ngoại lệ có áp dụng không (xem 2.1.1).\n(ii) Chưa rõ phạm vi điều cấm; người viết nghiêng về cách đọc hẹp vì thiếu căn cứ (xem 2.1.2).\n"
+        v = muc(kiem_tra(van), "han-che-chi-chan-doan")
+        self.assertEqual(len(v), 1)
+        self.assertIn("(i)", v[0]["noi_dung"])
+
     def test_ban_sach_khong_loi_chan(self):
         van = (
             "Khoản 1 Điều 4 Luật Doanh nghiệp (Luật số 59/2020/QH14) quy định…[^1]\n\n"
