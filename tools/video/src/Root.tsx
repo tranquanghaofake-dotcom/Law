@@ -1,9 +1,8 @@
 import { Composition } from "remotion";
-import { GioiThieu, type Props } from "./GioiThieu";
-import { FPS, TOTAL } from "./theme";
+import { Main } from "./Main";
+import { FPS, H, TOTAL, W } from "./core/timeline";
 
 export const RemotionRoot: React.FC = () => (
-  <>
-  <Composition id="GioiThieu" component={GioiThieu} durationInFrames={TOTAL} fps={FPS} width={1080} height={1920} defaultProps={{ music: false } satisfies Props} />
-  </>
+  <Composition id="Main" component={Main} durationInFrames={TOTAL} fps={FPS} width={W} height={H} defaultProps={{}} />
 );
+

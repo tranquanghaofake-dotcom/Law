@@ -19,6 +19,6 @@ const out = { subjects: subjects.length, subjectNames: subjects.map((s) => s.sho
 const feat = json(path.join(conceptDir, fs.readdirSync(conceptDir).find((d) => fs.existsSync(path.join(conceptDir, d, 'dat-coc.json'))), 'dat-coc.json'));
 out.featured = { term: feat.term, cite: feat.source.cite, memo: feat.memo };
 const { MEMO_ICON_ART } = await import(path.join(import.meta.dirname, '..', '..', '..', 'apps', 'web', 'src', 'lib', 'art', 'memoIcons.ts'));
-fs.writeFileSync(path.join(import.meta.dirname, '..', 'src', 'memo-icons.json'), JSON.stringify(MEMO_ICON_ART) + '\n');
+fs.writeFileSync(path.join(import.meta.dirname, '..', 'src', 'icons.json'), JSON.stringify(MEMO_ICON_ART) + '\n');
 fs.writeFileSync(path.join(import.meta.dirname, '..', 'src', 'stats.json'), JSON.stringify(out, null, 1) + '\n');
 console.log(`stats: ${out.subjects} môn · ${out.concepts} khái niệm · ${out.sets} bộ đề · ${out.laws} văn bản`);
