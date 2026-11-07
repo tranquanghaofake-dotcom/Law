@@ -88,7 +88,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 98 Hiến pháp 1980"
-   }
+   },
+   "why": [
+    "Đúng: Điều 98 Hiến pháp 1980 — Hội đồng Nhà nước là cơ quan cao nhất hoạt động thường xuyên của Quốc hội, là Chủ tịch tập thể.",
+    "Sai: cơ quan hành chính cao nhất là Hội đồng Bộ trưởng.",
+    "Sai: cơ quan xét xử cao nhất là Tòa án nhân dân tối cao.",
+    "Sai: Hội đồng Nhà nước là cơ quan nhà nước, không phải cơ quan của Đảng."
+   ]
   },
   {
    "type": "mcq",
@@ -105,7 +111,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 4 Hiến pháp 1980"
-   }
+   },
+   "why": [
+    "Đúng: Điều 4 Hiến pháp 1980 lần đầu dành một điều riêng.",
+    "Sai: Hiến pháp 1946 không có điều về Đảng.",
+    "Sai: Hiến pháp 1959 chỉ nhắc ở Lời nói đầu.",
+    "Sai: Luật Tổ chức Quốc hội không phải Hiến pháp."
+   ]
   },
   {
    "type": "pair",

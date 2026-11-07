@@ -75,7 +75,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 106 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: Điều 106 — bản án đã có hiệu lực pháp luật phải được tôn trọng.",
+    "Sai: bản án sơ thẩm còn có thể bị kháng cáo, kháng nghị.",
+    "Sai: không cần Viện kiểm sát đồng ý.",
+    "Sai: hiệu lực không phụ thuộc báo chí."
+   ]
   },
   {
    "type": "mcq",
@@ -92,7 +98,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 106 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: Điều 106 — cơ quan, tổ chức, cá nhân hữu quan phải nghiêm chỉnh chấp hành.",
+    "Sai: cơ quan hữu quan cũng phải chấp hành.",
+    "Sai: cá nhân hữu quan cũng phải chấp hành.",
+    "Sai: tổ chức hữu quan cũng phải chấp hành."
+   ]
   },
   {
    "type": "pair",

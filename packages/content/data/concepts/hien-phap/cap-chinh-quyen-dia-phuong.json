@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 111 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 111 — cấp chính quyền địa phương gồm Hội đồng nhân dân và Ủy ban nhân dân.",
+    "Sai: còn Hội đồng nhân dân.",
+    "Sai: Tòa án không thuộc cấp chính quyền địa phương.",
+    "Sai: Mặt trận Tổ quốc không thuộc cấp chính quyền."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 111 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 111 — phù hợp đặc điểm nông thôn, đô thị, hải đảo.",
+    "Sai: dân tộc, tôn giáo không phải tiêu chí ở khoản 2.",
+    "Sai: kinh tế, văn hóa không phải tiêu chí ở khoản 2.",
+    "Sai: diện tích, khí hậu không phải tiêu chí."
+   ]
   },
   {
    "type": "pair",

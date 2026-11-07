@@ -84,7 +84,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 107 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 107 — thực hành quyền công tố, kiểm sát hoạt động tư pháp.",
+    "Sai: xét xử thuộc Tòa án.",
+    "Sai: điều tra thuộc cơ quan điều tra.",
+    "Sai: thi hành án thuộc cơ quan thi hành án."
+   ]
   },
   {
    "type": "mcq",
@@ -101,7 +107,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 107 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 107 — bảo vệ pháp luật.",
+    "Sai: bảo vệ công lý là nhiệm vụ của Tòa án.",
+    "Sai: không phải nhiệm vụ đầu tiên ở khoản 3.",
+    "Sai: không phải nhiệm vụ đầu tiên ở khoản 3."
+   ]
   },
   {
    "type": "pair",

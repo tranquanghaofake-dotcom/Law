@@ -75,7 +75,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 110 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 110 — đơn vị hành chính – kinh tế đặc biệt do Quốc hội thành lập.",
+    "Sai: Chính phủ không thành lập đơn vị này.",
+    "Sai: Ủy ban thường vụ không thành lập đơn vị này.",
+    "Sai: Hội đồng nhân dân tỉnh không có thẩm quyền."
+   ]
   },
   {
    "type": "mcq",
@@ -92,7 +98,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 111 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 111 — Quốc hội quy định khi thành lập đơn vị đó.",
+    "Sai: Thủ tướng không quy định.",
+    "Sai: Chủ tịch nước không quy định.",
+    "Sai: Hội đồng nhân dân tỉnh không quy định."
+   ]
   },
   {
    "type": "pair",

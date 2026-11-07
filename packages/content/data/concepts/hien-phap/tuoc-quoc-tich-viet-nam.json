@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 31 Luật Quốc tịch Việt Nam 2008 (sửa đổi, bổ sung năm 2014, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1, khoản 2 Điều 31 — công dân cư trú ở nước ngoài và người đã nhập quốc tịch có hành vi phương hại nghiêm trọng.",
+    "Sai: phạm tội nhỏ không phải căn cứ.",
+    "Sai: nợ thuế là căn cứ chưa cho thôi quốc tịch, không phải tước.",
+    "Sai: vi phạm kỷ luật không phải căn cứ."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 31 Luật Quốc tịch Việt Nam 2008 (sửa đổi, bổ sung năm 2014, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 31 — nền độc lập dân tộc, sự nghiệp xây dựng và bảo vệ Tổ quốc hoặc uy tín Nhà nước.",
+    "Sai: lợi ích doanh nghiệp không phải căn cứ.",
+    "Sai: trật tự giao thông không phải căn cứ.",
+    "Sai: quyền lợi cá nhân không phải căn cứ."
+   ]
   },
   {
    "type": "pair",
@@ -163,7 +175,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 31 Luật Quốc tịch Việt Nam 2008 (sửa đổi, bổ sung năm 2014, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 31 — người đã nhập quốc tịch có thể bị tước dù cư trú trong nước.",
+    "Sai: người đã nhập quốc tịch không cần cư trú ở nước ngoài.",
+    "Sai: Điều 31 có quy định tước quốc tịch.",
+    "Sai: không cần đợi ra nước ngoài."
+   ]
   },
   {
    "type": "recall",

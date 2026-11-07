@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 110 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 110 sửa đổi bởi Nghị quyết 203/2025/QH15 — tỉnh và cấp dưới tỉnh.",
+    "Sai: ba cấp là mô hình trước sửa đổi 2025.",
+    "Sai: không có mô hình bốn cấp.",
+    "Sai: không phải một cấp."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 2 Nghị quyết 203/2025/QH15"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 2 Nghị quyết 203/2025/QH15 — cấp huyện kết thúc hoạt động từ 01/7/2025.",
+    "Sai: 16/6/2025 là ngày thông qua Nghị quyết 203.",
+    "Sai: không phải 01/01/2025.",
+    "Sai: không phải 01/01/2026."
+   ]
   },
   {
    "type": "pair",

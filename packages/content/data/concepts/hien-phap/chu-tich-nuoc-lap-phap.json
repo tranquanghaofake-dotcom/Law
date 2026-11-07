@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 88 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 88 — đề nghị Ủy ban thường vụ Quốc hội xem xét lại pháp lệnh.",
+    "Sai: không áp dụng với luật.",
+    "Sai: không áp dụng với Hiến pháp.",
+    "Sai: không áp dụng với nghị quyết của Quốc hội."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 88 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 88 — trong mười ngày kể từ ngày pháp lệnh được thông qua.",
+    "Sai: không phải mười lăm ngày.",
+    "Sai: không phải ba mươi ngày.",
+    "Sai: không phải bảy ngày làm việc."
+   ]
   },
   {
    "type": "pair",

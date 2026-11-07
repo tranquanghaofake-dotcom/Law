@@ -85,7 +85,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 114 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 114 — Hội đồng nhân dân cùng cấp bầu.",
+    "Sai: Nhân dân bầu Hội đồng nhân dân, không bầu Ủy ban.",
+    "Sai: cấp trên không bầu.",
+    "Sai: Thủ tướng không chỉ định."
+   ]
   },
   {
    "type": "mcq",
@@ -102,7 +108,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 114 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 114 — trước Hội đồng nhân dân và cơ quan hành chính nhà nước cấp trên.",
+    "Sai: không chịu trách nhiệm trước Ủy ban thường vụ.",
+    "Sai: không chịu trách nhiệm trước Chủ tịch nước, Tòa án.",
+    "Sai: không chịu trách nhiệm trước Mặt trận Tổ quốc."
+   ]
   },
   {
    "type": "pair",

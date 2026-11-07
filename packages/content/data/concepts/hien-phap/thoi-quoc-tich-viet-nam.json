@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 4 Điều 27 Luật Quốc tịch Việt Nam 2008 (sửa đổi, bổ sung năm 2014, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 27 — cán bộ, công chức và người trong lực lượng vũ trang không được thôi quốc tịch.",
+    "Sai: du học sinh không bị cấm.",
+    "Sai: người kinh doanh, lao động ở nước ngoài không bị cấm.",
+    "Sai: người đã nghỉ hưu không bị cấm."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 27 Luật Quốc tịch Việt Nam 2008 (sửa đổi, bổ sung năm 2014, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: điểm a khoản 2 Điều 27 — đang nợ thuế thì chưa được thôi.",
+    "Sai: làm cho công ty nước ngoài không phải căn cứ.",
+    "Sai: kết hôn với người nước ngoài không phải căn cứ.",
+    "Sai: sống ở nước ngoài không phải căn cứ."
+   ]
   },
   {
    "type": "pair",

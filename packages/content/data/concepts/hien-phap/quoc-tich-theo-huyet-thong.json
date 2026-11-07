@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 15 Luật Quốc tịch Việt Nam 2008 (sửa đổi, bổ sung năm 2014, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 15 — có quốc tịch Việt Nam dù sinh trong hay ngoài lãnh thổ.",
+    "Sai: nơi sinh không làm mất quốc tịch.",
+    "Sai: không cần nhập quốc tịch.",
+    "Sai: Điều 15 không cho cha mẹ chọn."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 16 Luật Quốc tịch Việt Nam 2008 (sửa đổi, bổ sung năm 2014, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 16 (sửa đổi 2025) — theo thỏa thuận; sinh ở Việt Nam mà không thỏa thuận được thì có quốc tịch Việt Nam.",
+    "Sai: không mặc nhiên theo quốc tịch mẹ.",
+    "Sai: luật không mặc nhiên trao hai quốc tịch.",
+    "Sai: không có quy định chờ đến 18 tuổi."
+   ]
   },
   {
    "type": "pair",
@@ -162,7 +174,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 16 Luật Quốc tịch Việt Nam 2008 (sửa đổi, bổ sung năm 2014, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: sinh trên lãnh thổ Việt Nam mà cha mẹ không thỏa thuận được thì có quốc tịch Việt Nam.",
+    "Sai: cha là người nước ngoài không loại trừ quốc tịch Việt Nam.",
+    "Sai: luật không bắt chờ đến 18 tuổi.",
+    "Sai: luật Việt Nam không quyết định quốc tịch Hàn Quốc của trẻ."
+   ]
   },
   {
    "type": "recall",

@@ -88,7 +88,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 4 Hiến pháp 1959"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 4 Hiến pháp 1959 — nguyên tắc tập trung dân chủ.",
+    "Sai: Việt Nam không theo tam quyền phân lập.",
+    "Sai: \"nhà nước pháp quyền\" xuất hiện từ sửa đổi 2001 Hiến pháp 1992.",
+    "Sai: Hiến pháp 1959 không ghi nhận phân quyền địa phương."
+   ]
   },
   {
    "type": "mcq",
@@ -105,7 +111,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 71 Hiến pháp 1959"
-   }
+   },
+   "why": [
+    "Đúng: Điều 71 Hiến pháp 1959 — Hội đồng Chính phủ.",
+    "Sai: Hội đồng Bộ trưởng là tên theo Hiến pháp 1980.",
+    "Sai: Nội các theo Hiến pháp 1946.",
+    "Sai: tên \"Chính phủ\" dùng từ Hiến pháp 1992."
+   ]
   },
   {
    "type": "pair",

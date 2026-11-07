@@ -87,7 +87,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 37 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 37 Luật Bầu cử — người đang bị khởi tố bị can không được ứng cử.",
+    "Sai: đã xóa án tích thì được ứng cử.",
+    "Sai: tạm trú nơi khác không phải căn cứ.",
+    "Sai: đảng viên được ứng cử."
+   ]
   },
   {
    "type": "mcq",
@@ -104,7 +110,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 4 Điều 37 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 37 — chưa được xóa án tích thì không được ứng cử.",
+    "Sai: ra tù chưa đủ, phải được xóa án tích.",
+    "Sai: không tính theo thời gian một năm.",
+    "Sai: vẫn được ứng cử khi đã xóa án tích."
+   ]
   },
   {
    "type": "pair",
@@ -165,7 +177,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 37 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 37 không nêu xử phạt vi phạm hành chính thông thường.",
+    "Sai: xử phạt hành chính không thuộc Điều 37.",
+    "Sai: việc chưa nộp phạt không làm mất quyền ứng cử.",
+    "Sai: Điều 37 không đặt điều kiện \"xóa vi phạm hành chính\"."
+   ]
   },
   {
    "type": "recall",

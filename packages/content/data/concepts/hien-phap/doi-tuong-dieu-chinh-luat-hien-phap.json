@@ -73,7 +73,13 @@
    "source": {
     "kind": "textbook",
     "cite": "Giáo trình Luật Hiến pháp (mục lục 11 chương do Hào cung cấp), Chương 1 \"Những vấn đề chung về Hiến pháp\" — tóm lược quan điểm học thuật phổ biến, chưa đối chiếu nguyên văn"
-   }
+   },
+   "why": [
+    "Đúng: quan hệ tổ chức bộ máy nhà nước thuộc đối tượng điều chỉnh của luật Hiến pháp.",
+    "Sai: mua bán nhà thuộc luật dân sự.",
+    "Sai: quan hệ lao động thuộc luật lao động.",
+    "Sai: cho vay thuộc luật dân sự, ngân hàng."
+   ]
   },
   {
    "type": "mcq",
@@ -90,7 +96,13 @@
    "source": {
     "kind": "textbook",
     "cite": "Giáo trình Luật Hiến pháp (mục lục 11 chương do Hào cung cấp), Chương 1 \"Những vấn đề chung về Hiến pháp\" — tóm lược quan điểm học thuật phổ biến, chưa đối chiếu nguyên văn"
-   }
+   },
+   "why": [
+    "Đúng: luật Hiến pháp điều chỉnh các quan hệ cơ bản, quan trọng nhất, mang tính nền tảng.",
+    "Sai: quan hệ tài sản thông thường thuộc luật dân sự, thương mại.",
+    "Sai: quan hệ tố tụng thuộc luật tố tụng.",
+    "Sai: quan hệ giữa cá nhân thường thuộc luật dân sự."
+   ]
   },
   {
    "type": "pair",

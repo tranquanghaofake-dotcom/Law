@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 115 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 115 — đại biểu Hội đồng nhân dân đại diện ý chí, nguyện vọng của Nhân dân địa phương.",
+    "Sai: đại diện Nhân dân cả nước là đại biểu Quốc hội.",
+    "Sai: đại biểu không đại diện Ủy ban nhân dân.",
+    "Sai: đại biểu không đại diện Mặt trận Tổ quốc."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 115 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 115 — xem xét, đôn đốc việc giải quyết khiếu nại, tố cáo.",
+    "Sai: đại biểu không trực tiếp ra quyết định giải quyết.",
+    "Sai: xét xử thuộc Tòa án.",
+    "Sai: khoản 1 Điều 115 có quy định nghĩa vụ này."
+   ]
   },
   {
    "type": "pair",

@@ -78,7 +78,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 81 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: Điều 81 — khi Quốc hội không họp, cần Ủy ban thường vụ Quốc hội đồng ý.",
+    "Sai: Chủ tịch nước không có thẩm quyền này.",
+    "Sai: Viện trưởng không tự quyết định.",
+    "Sai: Thủ tướng không có thẩm quyền này."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 81 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: Điều 81 — phạm tội quả tang thì có thể bị tạm giữ, phải báo cáo ngay.",
+    "Sai: tố giác qua điện thoại không đủ căn cứ.",
+    "Sai: báo chí phản ánh không đủ căn cứ.",
+    "Sai: có ngoại lệ phạm tội quả tang."
+   ]
   },
   {
    "type": "pair",

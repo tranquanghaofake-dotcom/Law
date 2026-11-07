@@ -84,7 +84,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 4 Luật Quốc tịch Việt Nam 2008 (sửa đổi, bổ sung năm 2014, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 4 Luật Quốc tịch — một quốc tịch, trừ trường hợp luật quy định khác.",
+    "Sai: luật có ngoại lệ, không cấm tuyệt đối.",
+    "Sai: công dân không tự do có nhiều quốc tịch.",
+    "Sai: Điều 4 không xác định theo nơi sinh, thường trú."
+   ]
   },
   {
    "type": "mcq",
@@ -101,7 +107,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 5 Điều 5 Luật Quốc tịch Việt Nam 2008 (sửa đổi, bổ sung năm 2014, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 5 Điều 5 Luật Quốc tịch (bổ sung 2025) — chỉ một quốc tịch Việt Nam và thường trú tại Việt Nam.",
+    "Sai: phải chỉ có quốc tịch Việt Nam và thường trú tại Việt Nam.",
+    "Sai: luật có yêu cầu về quốc tịch.",
+    "Sai: không đòi quốc tịch từ khi sinh; đòi thường trú tại Việt Nam."
+   ]
   },
   {
    "type": "pair",
@@ -167,7 +179,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 5 Điều 5 Luật Quốc tịch Việt Nam 2008 (sửa đổi, bổ sung năm 2014, 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 5 Điều 5 — phải chỉ có quốc tịch Việt Nam và thường trú tại Việt Nam.",
+    "Sai: còn quốc tịch Mỹ thì chưa đủ điều kiện.",
+    "Sai: thôi quốc tịch Việt Nam thì mất quyền ứng cử.",
+    "Sai: giấy tờ cư trú không thay điều kiện một quốc tịch."
+   ]
   },
   {
    "type": "recall",

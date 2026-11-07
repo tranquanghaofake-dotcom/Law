@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 2 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 2 — thống nhất, có phân công, phối hợp, kiểm soát.",
+    "Sai: Việt Nam không theo tam quyền phân lập.",
+    "Sai: quyền lực được phân công, không tập trung vào hai cơ quan.",
+    "Sai: Hiến pháp 2013 bổ sung \"kiểm soát\"."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 2 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 2 — lập pháp, hành pháp, tư pháp.",
+    "Sai: hành chính, kiểm sát không phải ba quyền ở khoản 3.",
+    "Sai: đây là nhiệm vụ, không phải ba quyền.",
+    "Sai: lập hiến, giám sát tối cao là chức năng của Quốc hội."
+   ]
   },
   {
    "type": "pair",
@@ -162,7 +174,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 2; khoản 2, 10 Điều 70 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2, khoản 10 Điều 70 — Quốc hội giám sát và bãi bỏ văn bản trái luật.",
+    "Sai: Chính phủ chịu sự giám sát của Quốc hội.",
+    "Sai: Tòa án không có quyền giải thể Chính phủ.",
+    "Sai: trưng cầu ý dân không dùng để bãi bỏ nghị định."
+   ]
   },
   {
    "type": "truefalse",

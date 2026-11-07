@@ -86,7 +86,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 113 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 113 — cơ quan quyền lực nhà nước ở địa phương.",
+    "Sai: cơ quan hành chính ở địa phương là Ủy ban nhân dân.",
+    "Sai: Ủy ban nhân dân là cơ quan chấp hành của Hội đồng nhân dân, không ngược lại.",
+    "Sai: Hội đồng nhân dân là cơ quan nhà nước."
+   ]
   },
   {
    "type": "mcq",
@@ -103,7 +109,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 113 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 113 — chịu trách nhiệm trước Nhân dân địa phương và cơ quan nhà nước cấp trên.",
+    "Sai: Ủy ban nhân dân chịu trách nhiệm trước Hội đồng nhân dân, không ngược lại.",
+    "Sai: không nêu Chính phủ và các bộ.",
+    "Sai: không chịu trách nhiệm trước Mặt trận Tổ quốc."
+   ]
   },
   {
    "type": "pair",

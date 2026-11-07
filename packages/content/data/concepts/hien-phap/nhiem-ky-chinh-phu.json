@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 97 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: Điều 97 — nhiệm kỳ Chính phủ theo nhiệm kỳ Quốc hội.",
+    "Sai: không cố định bốn năm.",
+    "Sai: không theo nhiệm kỳ Chủ tịch nước.",
+    "Sai: có giới hạn theo nhiệm kỳ Quốc hội."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 97 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: Điều 97 — tiếp tục làm nhiệm vụ đến khi Quốc hội khóa mới thành lập Chính phủ.",
+    "Sai: Chính phủ không giải tán ngay.",
+    "Sai: không giao quyền cho Chủ tịch nước, Chủ tịch Quốc hội.",
+    "Sai: không giao quyền cho Ủy ban thường vụ."
+   ]
   },
   {
    "type": "pair",

@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 5 Điều 4 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 5 Điều 4 Luật Bầu cử — Mặt trận Tổ quốc tổ chức hiệp thương.",
+    "Sai: Hội đồng bầu cử quốc gia tổ chức bầu cử, không hiệp thương.",
+    "Sai: Ủy ban thường vụ xác định cơ cấu, không tổ chức hiệp thương.",
+    "Sai: Chính phủ không tổ chức hiệp thương."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 4 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 4 Luật Bầu cử — Ủy ban thường vụ Quốc hội xác định cơ cấu, thành phần.",
+    "Sai: Mặt trận Tổ quốc hiệp thương, không xác định cơ cấu.",
+    "Sai: Chính phủ không xác định cơ cấu.",
+    "Sai: Tòa án không có thẩm quyền này."
+   ]
   },
   {
    "type": "pair",

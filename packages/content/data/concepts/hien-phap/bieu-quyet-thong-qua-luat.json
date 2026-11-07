@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 85 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 85 — luật được thông qua khi quá nửa tổng số đại biểu Quốc hội tán thành.",
+    "Sai: tính trên tổng số đại biểu, không phải số có mặt.",
+    "Sai: hai phần ba chỉ dành cho trường hợp đặc biệt.",
+    "Sai: không có mốc ba phần tư."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 85 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 85 — bãi nhiệm đại biểu Quốc hội cần ít nhất hai phần ba tổng số đại biểu.",
+    "Sai: luật thuế chỉ cần quá nửa.",
+    "Sai: dự toán ngân sách chỉ cần quá nửa.",
+    "Sai: chương trình kỳ họp chỉ cần quá nửa."
+   ]
   },
   {
    "type": "pair",
@@ -162,7 +174,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 85 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: cần ít nhất 2/3 × 480 = 320 phiếu; 300 chưa đủ.",
+    "Sai: bãi nhiệm cần hai phần ba tổng số, không phải quá nửa.",
+    "Sai: tính trên tổng số đại biểu, không phải số có mặt.",
+    "Sai: không cần trưng cầu ý dân để bãi nhiệm."
+   ]
   },
   {
    "type": "recall",

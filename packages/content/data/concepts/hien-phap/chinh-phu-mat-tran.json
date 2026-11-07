@@ -78,7 +78,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 101 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: Điều 101 — Chủ tịch Ủy ban trung ương Mặt trận Tổ quốc và người đứng đầu cơ quan trung ương của tổ chức chính trị – xã hội.",
+    "Sai: doanh nghiệp không được mời theo Điều 101.",
+    "Sai: đại diện nước ngoài không thuộc Điều 101.",
+    "Sai: lãnh đạo địa phương không thuộc Điều 101."
+   ]
   },
   {
    "type": "mcq",
@@ -95,7 +101,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 6 Điều 98 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 6 Điều 98 — báo cáo Nhân dân thông qua phương tiện thông tin đại chúng.",
+    "Sai: không qua thư riêng.",
+    "Sai: không qua Tòa án.",
+    "Sai: Thủ tướng có chế độ báo cáo trước Nhân dân."
+   ]
   },
   {
    "type": "pair",

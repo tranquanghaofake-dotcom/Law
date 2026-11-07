@@ -19,7 +19,7 @@
 | 7 | Dân sự 2, Hành chính | 52 + 60 | xong |
 | 8 | Lý luận NN&PL, Hình sự | 60 + 68 | xong |
 | 9–10 | Lịch sử NN&PL | 131 | xong |
-| 11–12 | Hiến pháp | 221 | |
+| 11–12 | Hiến pháp | 221 | xong |
 | 13–14 | Chứng khoán | 235 | |
 | 15 | Bộ đề (470 câu) | cần thêm `why` vào `quizQuestionSchema` và hiển thị ở `Quiz10` trước | |
 

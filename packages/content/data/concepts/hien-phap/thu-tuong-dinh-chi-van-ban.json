@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 4 Điều 98 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 98 — đình chỉ thi hành hoặc bãi bỏ.",
+    "Sai: kiến nghị Ủy ban thường vụ dành cho nghị quyết Hội đồng nhân dân tỉnh.",
+    "Sai: Thủ tướng tự xử lý, không cần Quốc hội.",
+    "Sai: Thủ tướng có quyền này."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 4 Điều 98 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 98 — đình chỉ thi hành, đề nghị Ủy ban thường vụ bãi bỏ.",
+    "Sai: Thủ tướng không tự bãi bỏ nghị quyết Hội đồng nhân dân tỉnh.",
+    "Sai: Thủ tướng có quyền đình chỉ.",
+    "Sai: Tòa án không xét xử văn bản quy phạm."
+   ]
   },
   {
    "type": "pair",

@@ -82,7 +82,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 4 Điều 95 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 95 — Bộ trưởng chịu trách nhiệm cá nhân trước Thủ tướng, Chính phủ và Quốc hội.",
+    "Sai: Bộ trưởng không chịu trách nhiệm trước Chủ tịch nước theo khoản 4 Điều 95.",
+    "Sai: không chịu trách nhiệm trước Mặt trận Tổ quốc.",
+    "Sai: không chịu trách nhiệm trước Ủy ban, Hội đồng của Quốc hội."
+   ]
   },
   {
    "type": "mcq",
@@ -99,7 +105,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 99 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 99 — báo cáo công tác trước Chính phủ, Thủ tướng; báo cáo Nhân dân về vấn đề quan trọng.",
+    "Sai: không báo cáo trước Chủ tịch nước, Chủ tịch Quốc hội theo khoản 2 Điều 99.",
+    "Sai: không báo cáo trước Tòa án, Viện kiểm sát.",
+    "Sai: không báo cáo trước Mặt trận Tổ quốc."
+   ]
   },
   {
    "type": "pair",

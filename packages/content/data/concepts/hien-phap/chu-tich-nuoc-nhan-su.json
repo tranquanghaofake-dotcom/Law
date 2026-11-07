@@ -73,7 +73,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 88 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 88 — Chủ tịch nước đề nghị Quốc hội bầu Thủ tướng.",
+    "Sai: Ủy ban thường vụ Quốc hội không đề nghị bầu Thủ tướng.",
+    "Sai: Mặt trận Tổ quốc không đề nghị.",
+    "Sai: Chính phủ nhiệm kỳ trước không đề nghị."
+   ]
   },
   {
    "type": "mcq",
@@ -90,7 +96,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 88 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 98, khoản 2 Điều 88 — Thủ tướng trình Quốc hội phê chuẩn, Chủ tịch nước bổ nhiệm.",
+    "Sai: Chủ tịch nước không tự bổ nhiệm.",
+    "Sai: Thủ tướng không tự bổ nhiệm.",
+    "Sai: Quốc hội phê chuẩn, không bầu trực tiếp."
+   ]
   },
   {
    "type": "pair",

@@ -84,7 +84,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 51 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 51 — kinh tế nhà nước giữ vai trò chủ đạo.",
+    "Sai: kinh tế tư nhân là một động lực, không phải chủ đạo.",
+    "Sai: kinh tế tập thể không giữ vai trò chủ đạo.",
+    "Sai: kinh tế có vốn nước ngoài không giữ vai trò chủ đạo."
+   ]
   },
   {
    "type": "mcq",
@@ -101,7 +107,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 51 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 51 — bình đẳng, hợp tác và cạnh tranh theo pháp luật.",
+    "Sai: các thành phần bình đẳng, không phụ thuộc.",
+    "Sai: có cạnh tranh theo pháp luật.",
+    "Sai: cạnh tranh phải theo pháp luật."
+   ]
   },
   {
    "type": "pair",

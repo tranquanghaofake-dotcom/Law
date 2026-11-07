@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 89 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 89 — làm việc tập thể, quyết định theo đa số.",
+    "Sai: không theo chế độ thủ trưởng.",
+    "Sai: không do một người quyết định.",
+    "Sai: không cần đồng thuận tuyệt đối."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 89 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 89 — trình Ủy ban thường vụ Quốc hội quyết định.",
+    "Sai: Chính phủ không quyết định tình trạng chiến tranh.",
+    "Sai: Chủ tịch nước công bố, không quyết định ở đây.",
+    "Sai: các bộ không có thẩm quyền."
+   ]
   },
   {
    "type": "pair",

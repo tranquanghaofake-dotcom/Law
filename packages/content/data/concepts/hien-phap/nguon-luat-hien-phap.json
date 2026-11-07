@@ -85,7 +85,13 @@
    "source": {
     "kind": "textbook",
     "cite": "Giáo trình Luật Hiến pháp (mục lục 11 chương do Hào cung cấp), Chương 1 \"Những vấn đề chung về Hiến pháp\" — tóm lược quan điểm học thuật phổ biến, chưa đối chiếu nguyên văn"
-   }
+   },
+   "why": [
+    "Đúng: Hiến pháp là nguồn quan trọng nhất của ngành luật Hiến pháp.",
+    "Sai: Bộ luật Dân sự là nguồn của luật dân sự.",
+    "Sai: án lệ không phải nguồn chủ yếu của luật Hiến pháp.",
+    "Sai: tập quán không phải nguồn chủ yếu của luật Hiến pháp."
+   ]
   },
   {
    "type": "mcq",
@@ -102,7 +108,13 @@
    "source": {
     "kind": "textbook",
     "cite": "Giáo trình Luật Hiến pháp (mục lục 11 chương do Hào cung cấp), Chương 1 \"Những vấn đề chung về Hiến pháp\" — tóm lược quan điểm học thuật phổ biến, chưa đối chiếu nguyên văn"
-   }
+   },
+   "why": [
+    "Đúng: Luật Quốc tịch điều chỉnh quan hệ cơ bản giữa Nhà nước và công dân.",
+    "Sai: Bộ luật Lao động là nguồn của luật lao động.",
+    "Sai: Luật Thương mại là nguồn của luật thương mại.",
+    "Sai: Bộ luật Dân sự là nguồn của luật dân sự."
+   ]
   },
   {
    "type": "pair",

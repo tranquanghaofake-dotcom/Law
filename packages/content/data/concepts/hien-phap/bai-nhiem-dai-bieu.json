@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 7 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 7 Hiến pháp 2013 — đại biểu có thể bị cử tri hoặc Quốc hội bãi nhiệm.",
+    "Sai: Chủ tịch nước không có quyền bãi nhiệm đại biểu.",
+    "Sai: Mặt trận Tổ quốc không có quyền bãi nhiệm.",
+    "Sai: Hội đồng bầu cử tổ chức bầu cử, không bãi nhiệm."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 7 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 7 — khi không còn xứng đáng với sự tín nhiệm của Nhân dân.",
+    "Sai: hết nhiệm kỳ không phải bãi nhiệm.",
+    "Sai: nghỉ hưu không phải căn cứ bãi nhiệm.",
+    "Sai: chuyển nơi cư trú không phải căn cứ bãi nhiệm."
+   ]
   },
   {
    "type": "pair",

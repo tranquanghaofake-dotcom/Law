@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 4 Điều 88 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 88 — Chủ tịch nước quyết định cho nhập, thôi, trở lại, tước quốc tịch Việt Nam.",
+    "Sai: Bộ Tư pháp chỉ thụ lý hồ sơ, không quyết định.",
+    "Sai: Thủ tướng không có thẩm quyền này.",
+    "Sai: Ủy ban nhân dân tỉnh chỉ tiếp nhận, xác minh hồ sơ."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 11 Điều 70 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 11 Điều 70 — Quốc hội quyết định đại xá.",
+    "Sai: Chủ tịch nước quyết định đặc xá, không phải đại xá.",
+    "Sai: Tòa án không quyết định đại xá.",
+    "Sai: Chính phủ không quyết định đại xá."
+   ]
   },
   {
    "type": "pair",

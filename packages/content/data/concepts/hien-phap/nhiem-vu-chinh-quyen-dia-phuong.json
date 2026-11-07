@@ -85,7 +85,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 112 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 112 — trên cơ sở phân định thẩm quyền giữa trung ương và địa phương, giữa các cấp.",
+    "Sai: đây là phân định trong nội bộ trung ương.",
+    "Sai: không do thỏa thuận giữa các địa phương.",
+    "Sai: không do Mặt trận Tổ quốc quyết định."
+   ]
   },
   {
    "type": "mcq",
@@ -102,7 +108,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 112 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 112 — được bảo đảm các điều kiện thực hiện nhiệm vụ.",
+    "Sai: vẫn chịu kiểm tra, báo cáo.",
+    "Sai: không tự quyết ngân sách trung ương.",
+    "Sai: Hiến pháp có bảo đảm điều kiện."
+   ]
   },
   {
    "type": "pair",

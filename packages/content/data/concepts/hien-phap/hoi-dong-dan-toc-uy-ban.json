@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 76 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 76 — thẩm tra dự án luật, kiến nghị về luật, báo cáo được giao; giám sát theo luật.",
+    "Sai: ban hành nghị định, thông tư thuộc Chính phủ, bộ.",
+    "Sai: xét xử thuộc Tòa án.",
+    "Sai: bổ nhiệm Bộ trưởng thuộc Chủ tịch nước sau phê chuẩn của Quốc hội."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 75 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 75 — Quốc hội bầu Chủ tịch Hội đồng dân tộc.",
+    "Sai: Ủy ban thường vụ phê chuẩn Phó Chủ tịch, Ủy viên.",
+    "Sai: Chính phủ không bầu.",
+    "Sai: Mặt trận Tổ quốc không bầu."
+   ]
   },
   {
    "type": "pair",

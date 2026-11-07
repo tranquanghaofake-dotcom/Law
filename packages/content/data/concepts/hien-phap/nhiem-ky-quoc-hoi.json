@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 71 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 71 — nhiệm kỳ mỗi khóa là năm năm.",
+    "Sai: không phải bốn năm.",
+    "Sai: không phải sáu năm.",
+    "Sai: không phải bảy năm."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 71 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 71 — không quá mười hai tháng, trừ chiến tranh.",
+    "Sai: không phải sáu tháng.",
+    "Sai: không phải hai năm.",
+    "Sai: có giới hạn mười hai tháng."
+   ]
   },
   {
    "type": "pair",

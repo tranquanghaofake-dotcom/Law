@@ -88,7 +88,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 54 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 54 — công khai, minh bạch và được bồi thường theo pháp luật.",
+    "Sai: Chủ tịch Ủy ban nhân dân xã không đủ thẩm quyền, thiếu bồi thường.",
+    "Sai: thu hồi đất vẫn phải bồi thường.",
+    "Sai: không đòi hỏi mọi hộ dân đồng ý."
+   ]
   },
   {
    "type": "mcq",
@@ -105,7 +111,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 54 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 54 — Nhà nước giao, cho thuê, công nhận quyền sử dụng đất.",
+    "Sai: đất thuộc sở hữu toàn dân, không mua của Nhà nước.",
+    "Sai: không xác lập quyền qua chiếm hữu 30 năm.",
+    "Sai: cá nhân không có quyền sở hữu đất."
+   ]
   },
   {
    "type": "pair",

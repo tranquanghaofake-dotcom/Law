@@ -85,7 +85,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 116 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 116 — thông báo tình hình địa phương, lắng nghe ý kiến, kiến nghị của Mặt trận.",
+    "Sai: chính quyền không chỉ đạo Mặt trận.",
+    "Sai: không phê duyệt nhân sự Mặt trận.",
+    "Sai: không cấp phép hoạt động cho Mặt trận."
+   ]
   },
   {
    "type": "mcq",
@@ -102,7 +108,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 116 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 116 — Chủ tịch Ủy ban Mặt trận Tổ quốc và người đứng đầu tổ chức chính trị – xã hội ở địa phương.",
+    "Sai: đại sứ nước ngoài không được nêu.",
+    "Sai: giám đốc doanh nghiệp không được nêu.",
+    "Sai: đại biểu tỉnh khác không được nêu."
+   ]
   },
   {
    "type": "pair",

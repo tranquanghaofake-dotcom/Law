@@ -85,7 +85,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 105 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 105 — báo cáo trước Ủy ban thường vụ Quốc hội, Chủ tịch nước.",
+    "Sai: Tòa án độc lập với Chính phủ.",
+    "Sai: không báo cáo trước Thủ tướng.",
+    "Sai: không báo cáo trước các bộ."
+   ]
   },
   {
    "type": "mcq",
@@ -102,7 +108,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 108 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 108 — theo nhiệm kỳ của Quốc hội.",
+    "Sai: không độc lập với nhiệm kỳ Quốc hội.",
+    "Sai: không phải mười năm.",
+    "Sai: Quốc hội bầu, không do Chủ tịch nước quyết định."
+   ]
   },
   {
    "type": "pair",

@@ -73,7 +73,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 69 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: Điều 69 — cơ quan đại biểu cao nhất, cơ quan quyền lực nhà nước cao nhất.",
+    "Sai: hành chính cao nhất là Chính phủ.",
+    "Sai: xét xử là Tòa án.",
+    "Sai: đứng đầu Nhà nước là Chủ tịch nước."
+   ]
   },
   {
    "type": "mcq",
@@ -90,7 +96,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 69 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: quyền hành pháp do Chính phủ thực hiện (Điều 94).",
+    "Sai: lập hiến, lập pháp thuộc Quốc hội.",
+    "Sai: quyết định vấn đề quan trọng thuộc Quốc hội.",
+    "Sai: giám sát tối cao thuộc Quốc hội."
+   ]
   },
   {
    "type": "pair",

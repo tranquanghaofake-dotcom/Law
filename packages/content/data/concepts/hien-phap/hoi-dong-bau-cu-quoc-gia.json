@@ -80,7 +80,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 117 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 117 — Hội đồng bầu cử quốc gia do Quốc hội thành lập.",
+    "Sai: Chính phủ không thành lập.",
+    "Sai: Ủy ban thường vụ không thành lập.",
+    "Sai: Mặt trận Tổ quốc không thành lập."
+   ]
   },
   {
    "type": "mcq",
@@ -97,7 +103,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 12 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 12 Luật Bầu cử — từ mười lăm đến hai mươi mốt thành viên.",
+    "Sai: số này quá ít so với luật.",
+    "Sai: luật quy định khoảng, không cố định mười một.",
+    "Sai: luật có giới hạn số lượng."
+   ]
   },
   {
    "type": "pair",

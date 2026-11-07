@@ -85,7 +85,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 104 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 104 — giám đốc việc xét xử, trừ trường hợp luật định.",
+    "Sai: không chỉ đạo từng phán quyết.",
+    "Sai: có quan hệ giám đốc xét xử.",
+    "Sai: Chủ tịch nước bổ nhiệm Thẩm phán."
+   ]
   },
   {
    "type": "mcq",
@@ -102,7 +108,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 104 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 104 — bảo đảm áp dụng thống nhất pháp luật.",
+    "Sai: Tòa án không ban hành luật.",
+    "Sai: giải thích Hiến pháp, luật thuộc Ủy ban thường vụ.",
+    "Sai: xử phạt hành chính không thuộc Tòa án tối cao."
+   ]
   },
   {
    "type": "pair",

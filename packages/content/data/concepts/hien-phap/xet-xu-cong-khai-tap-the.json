@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3 Điều 103 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 3 Điều 103 — xét xử kín để bảo vệ người chưa thành niên.",
+    "Sai: chức vụ bị cáo không phải căn cứ.",
+    "Sai: có nhà báo theo dõi không phải căn cứ.",
+    "Sai: uy tín bị cáo không phải căn cứ."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 4 Điều 103 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 103 — xét xử tập thể, quyết định theo đa số.",
+    "Sai: Chủ tọa không quyết định một mình.",
+    "Sai: Kiểm sát viên không quyết định.",
+    "Sai: không cần đồng thuận tuyệt đối."
+   ]
   },
   {
    "type": "pair",

@@ -83,7 +83,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 7 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 1 Điều 7 — phổ thông, bình đẳng, trực tiếp và bỏ phiếu kín.",
+    "Sai: bầu cử trực tiếp, kín; không phải gián tiếp, công khai.",
+    "Sai: bỏ phiếu kín, không công khai.",
+    "Sai: đây là các nguyên tắc tổ chức, không phải nguyên tắc bầu cử."
+   ]
   },
   {
    "type": "mcq",
@@ -100,7 +106,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 1 Điều 69 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: mỗi cử tri một phiếu, giá trị như nhau — nguyên tắc bình đẳng.",
+    "Sai: phổ thông là mọi công dân đủ tuổi đều được bầu.",
+    "Sai: bỏ phiếu kín là giữ bí mật lá phiếu.",
+    "Sai: trực tiếp là tự mình đi bầu."
+   ]
   },
   {
    "type": "pair",
@@ -166,7 +178,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 4 Điều 69 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 69 Luật Bầu cử cho phép hòm phiếu phụ; cử tri vẫn tự bầu.",
+    "Sai: luật cho phép mang hòm phiếu phụ.",
+    "Sai: Tổ bầu cử chỉ hỗ trợ, không can thiệp vào lá phiếu.",
+    "Sai: cử tri ốm không được miễn; họ vẫn bầu qua hòm phiếu phụ."
+   ]
   },
   {
    "type": "recall",

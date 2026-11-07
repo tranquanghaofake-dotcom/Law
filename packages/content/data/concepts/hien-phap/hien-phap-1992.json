@@ -87,7 +87,13 @@
    "source": {
     "kind": "statute",
     "cite": "Hiến pháp 1992"
-   }
+   },
+   "why": [
+    "Đúng: Hiến pháp 1992 thông qua ngày 15/4/1992.",
+    "Sai: 18/12/1980 là ngày thông qua Hiến pháp 1980.",
+    "Sai: 28/11/2013 là ngày thông qua Hiến pháp 2013.",
+    "Sai: 25/12/2001 là ngày thông qua Nghị quyết 51/2001/QH10 sửa đổi."
+   ]
   },
   {
    "type": "mcq",
@@ -104,7 +110,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 50 Hiến pháp 1992"
-   }
+   },
+   "why": [
+    "Đúng: Điều 50 Hiến pháp 1992 lần đầu dùng thuật ngữ \"quyền con người\".",
+    "Sai: Hiến pháp 1946 chưa dùng thuật ngữ này.",
+    "Sai: Hiến pháp 1959 chưa dùng thuật ngữ này.",
+    "Sai: Hiến pháp 1980 chưa dùng thuật ngữ này."
+   ]
   },
   {
    "type": "pair",

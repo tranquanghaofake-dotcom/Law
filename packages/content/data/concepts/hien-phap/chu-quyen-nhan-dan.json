@@ -79,7 +79,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 2 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 2 — tất cả quyền lực nhà nước thuộc về Nhân dân.",
+    "Sai: Quốc hội là cơ quan đại biểu cao nhất thực hiện quyền lực, không phải chủ của quyền lực.",
+    "Sai: Đảng lãnh đạo Nhà nước và xã hội nhưng quyền lực thuộc về Nhân dân.",
+    "Sai: Chính phủ thực hiện quyền hành pháp."
+   ]
   },
   {
    "type": "mcq",
@@ -96,7 +102,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 2 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 2 Điều 2 — nền tảng là liên minh giai cấp công nhân với giai cấp nông dân và đội ngũ trí thức.",
+    "Sai: Hiến pháp không nêu liên minh với doanh nghiệp.",
+    "Sai: hệ thống cơ quan là bộ máy, không phải nền tảng.",
+    "Sai: khối đại đoàn kết là nội dung của Điều 9, không phải nền tảng nêu ở khoản 2 Điều 2."
+   ]
   },
   {
    "type": "pair",
@@ -157,7 +169,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 2 Điều 2 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: mọi quyền lực nhà nước do Nhân dân trao; lập luận trên trái nguyên tắc Nhân dân là chủ của quyền lực.",
+    "Sai: hiệu lực cao nhất của Hiến pháp là nguyên tắc khác.",
+    "Sai: nguyên tắc Đảng lãnh đạo không liên quan lập luận này.",
+    "Sai: bảo vệ Hiến pháp là nghĩa vụ, không phải nguyên tắc bị vi phạm trực tiếp ở đây."
+   ]
   },
   {
    "type": "truefalse",

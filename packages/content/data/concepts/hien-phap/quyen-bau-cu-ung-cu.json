@@ -84,7 +84,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 27 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: Điều 27 — đủ hai mươi mốt tuổi có quyền ứng cử.",
+    "Sai: mười tám tuổi là tuổi bầu cử.",
+    "Sai: không phải 25 tuổi.",
+    "Sai: không phải 20 tuổi."
+   ]
   },
   {
    "type": "mcq",
@@ -101,7 +107,13 @@
    "source": {
     "kind": "statute",
     "cite": "Điều 2 Luật Bầu cử ĐBQH và ĐB HĐND 2015 (sửa đổi, bổ sung năm 2025)"
-   }
+   },
+   "why": [
+    "Đúng: Điều 2 Luật Bầu cử — tính đến ngày bầu cử được công bố.",
+    "Sai: không tính đến ngày lập danh sách.",
+    "Sai: không tính đến ngày nộp hồ sơ.",
+    "Sai: không tính đến ngày 01/01."
+   ]
   },
   {
    "type": "pair",

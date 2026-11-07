@@ -77,7 +77,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 4 Điều 120 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: khoản 4 Điều 120 — trưng cầu ý dân về Hiến pháp do Quốc hội quyết định.",
+    "Sai: Chủ tịch nước không quyết định.",
+    "Sai: Ủy ban dự thảo không quyết định.",
+    "Sai: Mặt trận Tổ quốc không quyết định."
+   ]
   },
   {
    "type": "mcq",
@@ -94,7 +100,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 4 Điều 120 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Đúng: không bắt buộc; Quốc hội quyết định có tổ chức hay không.",
+    "Sai: Hiến pháp không bắt buộc trưng cầu.",
+    "Sai: Hiến pháp thông qua bằng biểu quyết của Quốc hội.",
+    "Sai: không phụ thuộc yêu cầu của Chủ tịch nước."
+   ]
   },
   {
    "type": "pair",
@@ -171,7 +183,13 @@
    "source": {
     "kind": "statute",
     "cite": "Khoản 3, 4 Điều 120 Hiến pháp 2013"
-   }
+   },
+   "why": [
+    "Sai: Hiến pháp không bắt buộc trưng cầu ý dân.",
+    "Đúng: khoản 3 bắt buộc lấy ý kiến Nhân dân; khoản 4 giao Quốc hội quyết định trưng cầu.",
+    "Sai: số lượng cử tri không tạo nghĩa vụ trưng cầu.",
+    "Sai: Hiến pháp không cấm; Quốc hội có thể quyết định trưng cầu."
+   ]
   },
   {
    "type": "recall",

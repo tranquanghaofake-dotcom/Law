@@ -82,7 +82,13 @@
    "source": {
     "kind": "textbook",
     "cite": "Giáo trình Luật Hiến pháp (mục lục 11 chương do Hào cung cấp), Chương 1 \"Những vấn đề chung về Hiến pháp\" — tóm lược quan điểm học thuật phổ biến, chưa đối chiếu nguyên văn"
-   }
+   },
+   "why": [
+    "Đúng: Nhân dân, Quốc hội, cử tri, đơn vị bầu cử là chủ thể đặc trưng.",
+    "Sai: người mua, bán, thuê là chủ thể quan hệ dân sự.",
+    "Sai: đây là chủ thể quan hệ lao động.",
+    "Sai: đây là chủ thể quan hệ tố tụng hình sự."
+   ]
   },
   {
    "type": "mcq",
@@ -99,7 +105,13 @@
    "source": {
     "kind": "textbook",
     "cite": "Giáo trình Luật Hiến pháp (mục lục 11 chương do Hào cung cấp), Chương 1 \"Những vấn đề chung về Hiến pháp\" — tóm lược quan điểm học thuật phổ biến, chưa đối chiếu nguyên văn"
-   }
+   },
+   "why": [
+    "Đúng: phát sinh từ sự kiện pháp lý cụ thể nên là quan hệ cụ thể.",
+    "Sai: quan hệ chung không gắn với sự kiện pháp lý cụ thể.",
+    "Sai: đây là quan hệ pháp luật.",
+    "Sai: không phải quan hệ dân sự."
+   ]
   },
   {
    "type": "pair",
