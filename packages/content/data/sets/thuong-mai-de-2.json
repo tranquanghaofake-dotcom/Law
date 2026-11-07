@@ -16,7 +16,13 @@
       "answer": 1,
       "explain": "Điều 301: không quá 8% giá trị phần nghĩa vụ bị vi phạm.",
       "basis": "Điều 301 Luật Thương mại (sửa đổi, bổ sung năm 2017, 2019, 2025)",
-      "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+      "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx",
+      "why": [
+        "Sai: 20% vượt mức trần.",
+        "Đúng: Điều 301 — tối đa 8% của 100 triệu: 8 triệu.",
+        "Sai: 10% vượt mức trần.",
+        "Sai: có giới hạn 8%."
+      ]
     },
     {
       "q": "Hợp đồng thương mại không có điều khoản phạt vi phạm. Bên bị vi phạm có quyền gì về tiền?",
@@ -29,7 +35,13 @@
       "answer": 1,
       "explain": "Khoản 1 Điều 307.",
       "basis": "Điều 307 Luật Thương mại (sửa đổi, bổ sung năm 2017, 2019, 2025)",
-      "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+      "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx",
+      "why": [
+        "Sai: không có thỏa thuận phạt thì không phạt.",
+        "Đúng: khoản 1 Điều 307 — chỉ yêu cầu bồi thường thiệt hại.",
+        "Sai: vẫn có quyền đòi bồi thường.",
+        "Sai: không có thỏa thuận phạt."
+      ]
     },
     {
       "q": "Hợp đồng thương mại có điều khoản phạt vi phạm. Bên bị vi phạm có được đòi cả bồi thường không?",
@@ -42,7 +54,13 @@
       "answer": 0,
       "explain": "Khoản 2 Điều 307.",
       "basis": "Điều 307 Luật Thương mại (sửa đổi, bổ sung năm 2017, 2019, 2025)",
-      "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+      "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx",
+      "why": [
+        "Đúng: khoản 2 Điều 307 — được áp dụng cả phạt và bồi thường.",
+        "Sai: Luật Thương mại cho áp dụng cả hai.",
+        "Sai: không cần thỏa thuận riêng về bồi thường.",
+        "Sai: không phụ thuộc mức thiệt hại."
+      ]
     },
     {
       "q": "Yếu tố nào KHÔNG cần để phát sinh trách nhiệm bồi thường theo Điều 303?",
@@ -55,7 +73,13 @@
       "answer": 0,
       "explain": "Điều 303.",
       "basis": "Điều 303 Luật Thương mại (sửa đổi, bổ sung năm 2017, 2019, 2025)",
-      "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+      "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx",
+      "why": [
+        "Đúng: Điều 303 không đòi lỗi cố ý.",
+        "Sai: hành vi vi phạm là yếu tố bắt buộc.",
+        "Sai: thiệt hại thực tế là yếu tố bắt buộc.",
+        "Sai: quan hệ nhân quả là yếu tố bắt buộc."
+      ]
     },
     {
       "q": "Ai phải chứng minh căn cứ miễn trách nhiệm?",
@@ -68,7 +92,13 @@
       "answer": 1,
       "explain": "Khoản 2 Điều 294.",
       "basis": "Điều 294 Luật Thương mại (sửa đổi, bổ sung năm 2017, 2019, 2025)",
-      "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+      "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx",
+      "why": [
+        "Sai: bên bị vi phạm không chứng minh căn cứ miễn trách.",
+        "Đúng: khoản 2 Điều 294 — bên vi phạm chứng minh.",
+        "Sai: trọng tài không chứng minh.",
+        "Sai: cơ quan nhà nước không chứng minh."
+      ]
     },
     {
       "q": "Vi phạm cơ bản là gì?",
@@ -81,7 +111,13 @@
       "answer": 1,
       "explain": "Khoản 13 Điều 3.",
       "basis": "Điều 3 Luật Thương mại (sửa đổi, bổ sung năm 2017, 2019, 2025)",
-      "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+      "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx",
+      "why": [
+        "Sai: vi phạm không đáng kể không phải vi phạm cơ bản.",
+        "Đúng: khoản 13 Điều 3 — bên kia không đạt được mục đích giao kết.",
+        "Sai: tiêu chí là mục đích hợp đồng, không phải số lần.",
+        "Sai: chậm vài ngày thường không phải vi phạm cơ bản."
+      ]
     },
     {
       "q": "Bên bị vi phạm có thể hủy bỏ hợp đồng khi nào (trừ trường hợp miễn trách nhiệm)?",
@@ -94,7 +130,13 @@
       "answer": 1,
       "explain": "Khoản 4 Điều 312.",
       "basis": "Điều 312 Luật Thương mại (sửa đổi, bổ sung năm 2017, 2019, 2025)",
-      "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+      "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx",
+      "why": [
+        "Sai: không phải mọi vi phạm.",
+        "Đúng: khoản 4 Điều 312 — vi phạm là điều kiện hủy bỏ đã thỏa thuận hoặc vi phạm cơ bản.",
+        "Sai: không cần Tòa án cho phép.",
+        "Sai: chậm một ngày chưa đủ."
+      ]
     },
     {
       "q": "Chế tài nào KHÔNG thuộc Điều 292?",
@@ -107,7 +149,13 @@
       "answer": 2,
       "explain": "Điều 292.",
       "basis": "Điều 292 Luật Thương mại (sửa đổi, bổ sung năm 2017, 2019, 2025)",
-      "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+      "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx",
+      "why": [
+        "Sai: buộc thực hiện hợp đồng thuộc Điều 292.",
+        "Sai: đình chỉ thực hiện thuộc Điều 292.",
+        "Đúng: phạt tiền hành chính là chế tài hành chính, không thuộc Điều 292.",
+        "Sai: tạm ngừng thực hiện thuộc Điều 292."
+      ]
     },
     {
       "q": "Thời hiệu khởi kiện tranh chấp thương mại (trừ logistics) là bao lâu?",
@@ -120,7 +168,13 @@
       "answer": 1,
       "explain": "Điều 319.",
       "basis": "Điều 319 Luật Thương mại (sửa đổi, bổ sung năm 2017, 2019, 2025)",
-      "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+      "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx",
+      "why": [
+        "Sai: không phải 01 năm.",
+        "Đúng: Điều 319 — 02 năm.",
+        "Sai: 03 năm là thời hiệu chung của BLDS.",
+        "Sai: không phải 05 năm."
+      ]
     },
     {
       "q": "Thời hạn khiếu nại về chất lượng hàng hóa (không có bảo hành, không có thỏa thuận) là bao lâu?",
@@ -133,7 +187,13 @@
       "answer": 1,
       "explain": "Khoản 2 Điều 318.",
       "basis": "Điều 318 Luật Thương mại (sửa đổi, bổ sung năm 2017, 2019, 2025)",
-      "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx"
+      "url": "https://thuvienphapluat.vn/van-ban/Thuong-mai/Van-ban-hop-nhat-113-VBHN-VPQH-2025-Luat-Thuong-mai-672488.aspx",
+      "why": [
+        "Sai: 03 tháng là thời hạn khiếu nại về số lượng.",
+        "Đúng: khoản 2 Điều 318 — 06 tháng về chất lượng.",
+        "Sai: không phải 09 tháng.",
+        "Sai: không phải 12 tháng."
+      ]
     }
   ]
 }

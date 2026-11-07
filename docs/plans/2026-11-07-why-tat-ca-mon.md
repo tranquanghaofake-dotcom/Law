@@ -21,7 +21,7 @@
 | 9–10 | Lịch sử NN&PL | 131 | xong |
 | 11–12 | Hiến pháp | 221 | xong |
 | 13–14 | Chứng khoán | 235 | xong |
-| 15 | Bộ đề (470 câu) | schema + Quiz10 đã hỗ trợ `why` (SETS_DONE trong `why.test.ts`); còn viết lời giải thích | đang làm |
+| 15 | Bộ đề (470 câu) | schema + Quiz10 hỗ trợ `why`; 47/47 bộ có trong SETS_DONE | xong |
 
 ## Việc kèm theo (mỗi việc một nhánh `feat/`, cần spec trước)
 - Nhận định chấm 3 phần (Đúng/Sai 0,25 · căn cứ 0,25 · lập luận 0,5).
