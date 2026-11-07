@@ -1,0 +1,120 @@
+{
+ "id": "dinh-chi-giai-quyet-vu-an",
+ "subject": "to-tung-hanh-chinh",
+ "chapter": "c5-khoi-kien",
+ "term": "Đình chỉ giải quyết vụ án hành chính",
+ "definition": "Tòa án quyết định đình chỉ giải quyết vụ án trong các trường hợp sau đây: a) Người khởi kiện là cá nhân đã chết mà quyền, nghĩa vụ của họ không được thừa kế; cơ quan, tổ chức đã giải thể hoặc tuyên bố phá sản mà không có cơ quan, tổ chức, cá nhân kế thừa quyền, nghĩa vụ tố tụng; c) Người khởi kiện rút đơn khởi kiện, người có quyền lợi, nghĩa vụ liên quan rút đơn yêu cầu độc lập;",
+ "plain": "Đình chỉ là CHẤM DỨT việc giải quyết vụ án SAU khi đã thụ lý. Các căn cứ thường gặp: người khởi kiện chết mà quyền, nghĩa vụ không được thừa kế; tổ chức giải thể, phá sản không có người kế thừa; người khởi kiện rút đơn; không nộp tạm ứng chi phí định giá, chi phí tố tụng khác.",
+ "example": "Người khởi kiện là cá nhân chết khi vụ án đang giải quyết, quyền, nghĩa vụ không được thừa kế; Tòa án đình chỉ giải quyết vụ án.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 143 Luật Tố tụng hành chính 2015",
+  "url": "https://luatvietnam.vn/vi-pham-hanh-chinh/van-ban-hop-nhat-13-vbhn-vpqh-2026-luat-to-tung-hanh-chinh-427850-d5.html"
+ },
+ "checked": "2026-11-07",
+ "confusables": [
+  "tra-lai-don-khoi-kien-hanh-chinh",
+  "quyen-tu-dinh-doat"
+ ],
+ "keywords": [
+  "đình chỉ giải quyết vụ án",
+  "không được thừa kế",
+  "rút đơn khởi kiện"
+ ],
+ "memo": {
+  "gist": "Đình chỉ là chấm dứt vụ án đã thụ lý khi có căn cứ luật định, như người khởi kiện chết hoặc rút đơn.",
+  "kind": "checklist",
+  "hook": "Vụ án đang chạy mà người cầm lái rời xe thì xe dừng hẳn.",
+  "tree": [
+   {
+    "label": "Người khởi kiện chết, không được thừa kế",
+    "icon": "end"
+   },
+   {
+    "label": "Tổ chức giải thể, phá sản, không có kế thừa",
+    "icon": "company"
+   },
+   {
+    "label": "Rút đơn khởi kiện",
+    "icon": "cut"
+   },
+   {
+    "label": "Không nộp tạm ứng chi phí",
+    "icon": "money"
+   }
+  ],
+  "case": {
+   "q": "Người khởi kiện là cá nhân chết nhưng quyền, nghĩa vụ được thừa kế thì có đình chỉ không?",
+   "a": "Không. Chỉ đình chỉ khi quyền, nghĩa vụ không được thừa kế (điểm a khoản 1 Điều 143)."
+  }
+ },
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Trường hợp nào Tòa án đình chỉ giải quyết vụ án theo khoản 1 Điều 143?",
+   "options": [
+    "Người khởi kiện là cá nhân đã chết và có người thừa kế quyền, nghĩa vụ",
+    "Người khởi kiện là cá nhân đã chết mà quyền, nghĩa vụ không được thừa kế",
+    "Người bị kiện đề nghị Tòa án ngừng giải quyết vụ án",
+    "Người khởi kiện chưa đến Tòa án nhận thông báo thụ lý"
+   ],
+   "answer": 1,
+   "explain": "Điểm a khoản 1 Điều 143: người khởi kiện là cá nhân đã chết mà quyền, nghĩa vụ của họ không được thừa kế.",
+   "why": [
+    "Sai: có người kế thừa thì vụ án tiếp tục.",
+    "Đúng: điểm a khoản 1 Điều 143.",
+    "Sai: đề nghị của người bị kiện không phải căn cứ đình chỉ.",
+    "Sai: đây không phải căn cứ đình chỉ ở Điều 143."
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tòa án quyết định đình chỉ giải quyết vụ án trong các trường hợp sau đây: a) Người khởi kiện là cá nhân đã chết mà quyền, nghĩa vụ của họ không được {{thừa kế}};"
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tòa án quyết định đình chỉ giải quyết vụ án trong các trường hợp sau đây: c) Người khởi kiện {{rút đơn khởi kiện}}, người có quyền lợi, nghĩa vụ liên quan rút đơn yêu cầu độc lập;"
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Công ty N khởi kiện quyết định xử phạt; trong khi Tòa án đang giải quyết, công ty bị tuyên bố phá sản và không có tổ chức, cá nhân nào kế thừa quyền, nghĩa vụ tố tụng. Tòa án xử lý thế nào?",
+   "options": [
+    "Tạm đình chỉ giải quyết vụ án để chờ người kế thừa",
+    "Trả lại đơn khởi kiện cho người quản lý tài sản",
+    "Đình chỉ giải quyết vụ án",
+    "Tiếp tục xét xử vắng mặt người khởi kiện"
+   ],
+   "answer": 2,
+   "explain": "Tổ chức bị tuyên bố phá sản mà không có người kế thừa quyền, nghĩa vụ tố tụng thì Tòa án đình chỉ (điểm a khoản 1 Điều 143).",
+   "why": [
+    "Sai: không có người kế thừa thì đình chỉ, không tạm đình chỉ.",
+    "Sai: vụ án đã thụ lý thì không trả lại đơn.",
+    "Đúng: điểm a khoản 1 Điều 143.",
+    "Sai: người khởi kiện không còn tồn tại, không có ai kế thừa."
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Khi người khởi kiện là cá nhân chết, Tòa án luôn phải đình chỉ giải quyết vụ án.",
+   "answer": false,
+   "explain": "Sai. Điểm a khoản 1 Điều 143: chỉ đình chỉ khi quyền, nghĩa vụ của họ không được thừa kế."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu một số căn cứ đình chỉ giải quyết vụ án hành chính theo khoản 1 Điều 143.",
+   "model": "Người khởi kiện là cá nhân chết mà quyền, nghĩa vụ không được thừa kế; cơ quan, tổ chức giải thể, phá sản không có người kế thừa; người khởi kiện rút đơn khởi kiện; không nộp tạm ứng chi phí định giá, chi phí tố tụng khác.",
+   "keywords": [
+    "chết",
+    "không được thừa kế",
+    "rút đơn",
+    "phá sản"
+   ]
+  }
+ ]
+}

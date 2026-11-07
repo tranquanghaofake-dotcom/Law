@@ -1,0 +1,121 @@
+{
+ "id": "quyet-dinh-ky-luat-buoc-thoi-viec",
+ "subject": "to-tung-hanh-chinh",
+ "chapter": "c1-doi-tuong",
+ "term": "Quyết định kỷ luật buộc thôi việc",
+ "definition": "Quyết định kỷ luật buộc thôi việc là quyết định bằng văn bản của người đứng đầu cơ quan, tổ chức để áp dụng hình thức kỷ luật buộc thôi việc đối với công chức thuộc quyền quản lý của mình.",
+ "plain": "Chỉ hình thức kỷ luật NẶNG NHẤT với công chức (buộc thôi việc) mới kiện được ra Tòa hành chính. Các hình thức nhẹ hơn như khiển trách, cảnh cáo không thuộc thẩm quyền Tòa án. Khoản 2 Điều 30 giới hạn thêm: công chức giữ chức vụ dưới Thứ trưởng và tương đương.",
+ "example": "Giám đốc Sở ra quyết định buộc thôi việc một chuyên viên của Sở vì vi phạm kỷ luật nghiêm trọng.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 5 Điều 3 Luật Tố tụng hành chính 2015",
+  "url": "https://luatvietnam.vn/vi-pham-hanh-chinh/van-ban-hop-nhat-13-vbhn-vpqh-2026-luat-to-tung-hanh-chinh-427850-d5.html"
+ },
+ "checked": "2026-11-07",
+ "confusables": [
+  "quyet-dinh-hanh-chinh-tthc",
+  "khieu-kien-loai-tru"
+ ],
+ "keywords": [
+  "bằng văn bản",
+  "người đứng đầu",
+  "buộc thôi việc",
+  "công chức"
+ ],
+ "memo": {
+  "gist": "Quyết định kỷ luật buộc thôi việc là văn bản người đứng đầu cho công chức thôi việc vì vi phạm.",
+  "kind": "checklist",
+  "hook": "Chỉ \"án nặng nhất\" của công chức mới được mang ra Tòa hành chính.",
+  "tree": [
+   {
+    "label": "Văn bản",
+    "icon": "doc"
+   },
+   {
+    "label": "Người đứng đầu ban hành",
+    "icon": "person"
+   },
+   {
+    "label": "Hình thức buộc thôi việc",
+    "icon": "door"
+   },
+   {
+    "label": "Đối tượng là công chức",
+    "icon": "people"
+   }
+  ],
+  "case": {
+   "q": "Công chức bị kỷ luật cảnh cáo có kiện ra Tòa hành chính được không?",
+   "a": "Không. Chỉ quyết định kỷ luật buộc thôi việc mới thuộc thẩm quyền Tòa án (khoản 5 Điều 3, khoản 2 Điều 30)."
+  }
+ },
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Ai ban hành quyết định kỷ luật buộc thôi việc theo khoản 5 Điều 3?",
+   "options": [
+    "Hội đồng kỷ luật của cơ quan nơi công chức làm việc",
+    "Tòa án nhân dân nơi công chức làm việc thường xuyên",
+    "Tổ chức công đoàn cơ sở của cơ quan nơi công chức làm",
+    "Người đứng đầu cơ quan, tổ chức quản lý công chức"
+   ],
+   "answer": 3,
+   "explain": "Khoản 5 Điều 3: quyết định bằng văn bản của người đứng đầu cơ quan, tổ chức.",
+   "why": [
+    "Sai: hội đồng kỷ luật đề xuất, người đứng đầu quyết định.",
+    "Sai: Tòa án xét xử khi có khiếu kiện, không ra quyết định kỷ luật.",
+    "Sai: công đoàn không có thẩm quyền kỷ luật công chức.",
+    "Đúng: khoản 5 Điều 3."
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quyết định kỷ luật buộc thôi việc là quyết định bằng văn bản của {{người đứng đầu}} cơ quan, tổ chức để áp dụng hình thức kỷ luật buộc thôi việc đối với công chức thuộc quyền quản lý của mình."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Quyết định kỷ luật buộc thôi việc là quyết định bằng văn bản của người đứng đầu cơ quan, tổ chức để áp dụng hình thức kỷ luật {{buộc thôi việc}} đối với {{công chức}} thuộc quyền quản lý của mình."
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Công chức K bị Giám đốc Sở ra quyết định kỷ luật cảnh cáo. K muốn khởi kiện vụ án hành chính. Nhận định nào đúng?",
+   "options": [
+    "Không kiện được, vì chỉ quyết định kỷ luật buộc thôi việc mới thuộc thẩm quyền Tòa án",
+    "Kiện được, vì mọi quyết định kỷ luật công chức đều là quyết định hành chính bị kiện",
+    "Kiện được, nếu K đã khiếu nại lần hai mà không đồng ý với kết quả",
+    "Kiện được, nếu Giám đốc Sở là người đứng đầu cơ quan cấp tỉnh"
+   ],
+   "answer": 0,
+   "explain": "Khoản 2 Điều 30 chỉ cho kiện quyết định kỷ luật buộc thôi việc; cảnh cáo không thuộc thẩm quyền Tòa án.",
+   "why": [
+    "Đúng: khoản 2 Điều 30 chỉ nêu buộc thôi việc.",
+    "Sai: quyết định kỷ luật mang tính nội bộ; luật chỉ cho kiện buộc thôi việc.",
+    "Sai: khiếu nại không mở rộng thẩm quyền Tòa án.",
+    "Sai: cấp của người ra quyết định không thay đổi đối tượng khởi kiện."
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Công chức bị kỷ luật khiển trách có quyền khởi kiện vụ án hành chính.",
+   "answer": false,
+   "explain": "Sai. Khoản 2 Điều 30 chỉ cho khởi kiện quyết định kỷ luật buộc thôi việc công chức giữ chức vụ dưới Thứ trưởng và tương đương."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Quyết định kỷ luật buộc thôi việc là gì theo khoản 5 Điều 3?",
+   "model": "Là quyết định bằng văn bản của người đứng đầu cơ quan, tổ chức để áp dụng hình thức kỷ luật buộc thôi việc đối với công chức thuộc quyền quản lý của mình.",
+   "keywords": [
+    "văn bản",
+    "người đứng đầu",
+    "buộc thôi việc",
+    "công chức"
+   ]
+  }
+ ]
+}

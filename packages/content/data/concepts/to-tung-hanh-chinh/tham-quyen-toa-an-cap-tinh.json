@@ -1,0 +1,120 @@
+{
+ "id": "tham-quyen-toa-an-cap-tinh",
+ "subject": "to-tung-hanh-chinh",
+ "chapter": "c2-tham-quyen",
+ "term": "Thẩm quyền của Tòa án cấp tỉnh",
+ "definition": "Tòa án cấp tỉnh có thẩm quyền giải quyết theo thủ tục phúc thẩm những vụ án mà bản án, quyết định chưa có hiệu lực pháp luật của Tòa án nhân dân khu vực bị kháng cáo, kháng nghị; giám đốc thẩm, tái thẩm bản án, quyết định đã có hiệu lực pháp luật của Tòa án nhân dân khu vực nhưng bị kháng nghị theo quy định của Luật này.",
+ "plain": "Sau sửa đổi năm 2025, Tòa án cấp tỉnh KHÔNG còn xử sơ thẩm vụ án hành chính. Tòa án cấp tỉnh làm hai việc: xử phúc thẩm bản án, quyết định chưa có hiệu lực của Tòa án nhân dân khu vực bị kháng cáo, kháng nghị; và giám đốc thẩm, tái thẩm bản án, quyết định đã có hiệu lực của Tòa án nhân dân khu vực bị kháng nghị.",
+ "example": "Bản án sơ thẩm của Tòa án nhân dân khu vực bị người bị kiện kháng cáo đúng hạn; Tòa án cấp tỉnh xét xử phúc thẩm.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 32 Luật Tố tụng hành chính 2015",
+  "url": "https://luatvietnam.vn/vi-pham-hanh-chinh/van-ban-hop-nhat-13-vbhn-vpqh-2026-luat-to-tung-hanh-chinh-427850-d5.html"
+ },
+ "checked": "2026-11-07",
+ "confusables": [
+  "tham-quyen-toa-an-khu-vuc",
+  "phuc-tham",
+  "giam-doc-tham"
+ ],
+ "keywords": [
+  "phúc thẩm",
+  "chưa có hiệu lực pháp luật",
+  "giám đốc thẩm, tái thẩm",
+  "Tòa án nhân dân khu vực"
+ ],
+ "memo": {
+  "gist": "Tòa án cấp tỉnh xét lại bản án, quyết định của Tòa án nhân dân khu vực, không xử sơ thẩm.",
+  "kind": "compare",
+  "hook": "Tỉnh là tầng trên: chỉ nhìn lại việc tầng dưới đã xử.",
+  "tree": [
+   {
+    "label": "Phúc thẩm",
+    "icon": "cycle",
+    "children": [
+     "Bản án chưa có hiệu lực bị kháng cáo, kháng nghị"
+    ]
+   },
+   {
+    "label": "Giám đốc thẩm, tái thẩm",
+    "icon": "search",
+    "children": [
+     "Bản án đã có hiệu lực bị kháng nghị"
+    ]
+   }
+  ],
+  "case": {
+   "q": "Tòa án cấp tỉnh có thụ lý sơ thẩm vụ kiện quyết định của Ủy ban nhân dân tỉnh không?",
+   "a": "Không. Sơ thẩm thuộc Tòa án nhân dân khu vực (Điều 31); Tòa án cấp tỉnh xét lại (Điều 32)."
+  }
+ },
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo Điều 32 (sửa đổi 2025), Tòa án cấp tỉnh có thẩm quyền nào trong tố tụng hành chính?",
+   "options": [
+    "Sơ thẩm mọi khiếu kiện quyết định hành chính của Ủy ban nhân dân tỉnh",
+    "Chỉ giải quyết khiếu kiện danh sách cử tri trong tỉnh",
+    "Phúc thẩm, giám đốc thẩm, tái thẩm bản án của Tòa án nhân dân khu vực",
+    "Sơ thẩm khiếu kiện quyết định của các bộ, cơ quan ngang bộ"
+   ],
+   "answer": 2,
+   "explain": "Điều 32 (sửa đổi bởi Luật 85/2025/QH15): Tòa án cấp tỉnh phúc thẩm, giám đốc thẩm, tái thẩm bản án, quyết định của Tòa án nhân dân khu vực.",
+   "why": [
+    "Sai: sơ thẩm thuộc Tòa án nhân dân khu vực (Điều 31).",
+    "Sai: khiếu kiện danh sách cử tri không phải thẩm quyền riêng của cấp tỉnh.",
+    "Đúng: Điều 32.",
+    "Sai: Điều 32 không còn giao thẩm quyền sơ thẩm cho cấp tỉnh."
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tòa án cấp tỉnh có thẩm quyền giải quyết theo thủ tục {{phúc thẩm}} những vụ án mà bản án, quyết định chưa có hiệu lực pháp luật của Tòa án nhân dân khu vực bị kháng cáo, kháng nghị; giám đốc thẩm, tái thẩm bản án, quyết định đã có hiệu lực pháp luật của Tòa án nhân dân khu vực nhưng bị kháng nghị theo quy định của Luật này."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tòa án cấp tỉnh có thẩm quyền giải quyết theo thủ tục phúc thẩm những vụ án mà bản án, quyết định chưa có hiệu lực pháp luật của Tòa án nhân dân khu vực bị kháng cáo, kháng nghị; {{giám đốc thẩm}}, {{tái thẩm}} bản án, quyết định đã có hiệu lực pháp luật của Tòa án nhân dân khu vực nhưng bị kháng nghị theo quy định của Luật này."
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Một tài liệu ôn thi viết: \"Tòa án cấp tỉnh xử sơ thẩm khiếu kiện quyết định hành chính của Chủ tịch Ủy ban nhân dân tỉnh.\" Theo luật hiện hành, nhận định này thế nào?",
+   "options": [
+    "Không còn đúng: sơ thẩm thuộc Tòa án nhân dân khu vực từ 01/7/2025",
+    "Vẫn đúng vì người bị kiện là cơ quan hành chính nhà nước cấp tỉnh",
+    "Đúng nếu người khởi kiện cư trú ở tỉnh khác",
+    "Đúng nếu vụ án có yếu tố nước ngoài"
+   ],
+   "answer": 0,
+   "explain": "Luật 85/2025/QH15 chuyển toàn bộ thẩm quyền sơ thẩm vụ án hành chính sang Tòa án nhân dân khu vực; tài liệu cũ phải đọc lại.",
+   "why": [
+    "Đúng: Điều 31, Điều 32 sửa đổi bởi Luật 85/2025/QH15.",
+    "Sai: cấp của người bị kiện không còn đưa vụ án lên Tòa án cấp tỉnh.",
+    "Sai: khi đó thẩm quyền vẫn thuộc Tòa án nhân dân khu vực (điểm b khoản 2 Điều 31).",
+    "Sai: Điều 32 không giữ lại thẩm quyền sơ thẩm nào cho cấp tỉnh."
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Tòa án cấp tỉnh có thẩm quyền giám đốc thẩm bản án đã có hiệu lực pháp luật của Tòa án nhân dân khu vực bị kháng nghị.",
+   "answer": true,
+   "explain": "Đúng. Điều 32: Tòa án cấp tỉnh giám đốc thẩm, tái thẩm bản án, quyết định đã có hiệu lực của Tòa án nhân dân khu vực bị kháng nghị."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Tòa án cấp tỉnh có thẩm quyền gì trong tố tụng hành chính theo Điều 32?",
+   "model": "Xét xử phúc thẩm bản án, quyết định chưa có hiệu lực của Tòa án nhân dân khu vực bị kháng cáo, kháng nghị; giám đốc thẩm, tái thẩm bản án, quyết định đã có hiệu lực của Tòa án nhân dân khu vực bị kháng nghị.",
+   "keywords": [
+    "phúc thẩm",
+    "giám đốc thẩm",
+    "tái thẩm",
+    "Tòa án nhân dân khu vực"
+   ]
+  }
+ ]
+}

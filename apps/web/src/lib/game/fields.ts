@@ -39,7 +39,7 @@ const TC: Field = 'tai-chinh';
 const SUBJECT_FIELD: Record<string, Field> = {
   'hien-phap': 'hien-phap', 'ly-luan-nn-pl': 'ly-luan', 'lich-su-nn-pl': 'lich-su', 'xay-dung-vbpl': 'lap-phap',
   'hanh-chinh': 'hanh-chinh', 'dan-su': 'dan-su', 'dan-su-2': 'dan-su', 'so-huu-tri-tue': 'dan-su', 'tai-san-tri-tue': 'dan-su', 'hon-nhan-gia-dinh': 'dan-su',
-  'hinh-su': 'hinh-su', 'to-tung-dan-su': 'to-tung', 'lao-dong': 'lao-dong', 'lao-dong-2': 'lao-dong', 'an-sinh-xa-hoi': 'lao-dong', 'dat-dai': 'dat-dai',
+  'hinh-su': 'hinh-su', 'to-tung-dan-su': 'to-tung', 'to-tung-hanh-chinh': 'to-tung', 'lao-dong': 'lao-dong', 'lao-dong-2': 'lao-dong', 'an-sinh-xa-hoi': 'lao-dong', 'dat-dai': 'dat-dai',
   'thuong-mai-1': TM, 'thuong-mai': TM, 'canh-tranh': TM, 'dau-tu': TM, 'ngan-hang': TC, 'tai-chinh': TC, 'tai-chinh-doanh-nghiep': TC, 'chung-khoan': TC,
 };
 

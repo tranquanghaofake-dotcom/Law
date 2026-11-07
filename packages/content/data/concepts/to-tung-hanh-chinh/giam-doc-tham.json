@@ -1,0 +1,129 @@
+{
+ "id": "giam-doc-tham",
+ "subject": "to-tung-hanh-chinh",
+ "chapter": "c7-xem-xet-lai",
+ "term": "Giám đốc thẩm",
+ "definition": "Giám đốc thẩm là xét lại bản án, quyết định của Tòa án đã có hiệu lực pháp luật nhưng bị kháng nghị giám đốc thẩm khi có căn cứ quy định tại Điều 255 của Luật này.",
+ "plain": "Giám đốc thẩm KHÔNG phải một cấp xét xử: đây là thủ tục đặc biệt để xét lại bản án ĐÃ có hiệu lực khi có VI PHẠM như kết luận không phù hợp tình tiết khách quan, vi phạm nghiêm trọng thủ tục tố tụng, sai lầm áp dụng pháp luật (Điều 255). Đương sự không \"kháng cáo giám đốc thẩm\" được, mà chỉ đề nghị người có thẩm quyền kháng nghị.",
+ "example": "Bản án phúc thẩm đã có hiệu lực áp dụng sai luật đất đai; Chánh án có thẩm quyền kháng nghị giám đốc thẩm.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 254 Luật Tố tụng hành chính 2015",
+  "url": "https://luatvietnam.vn/vi-pham-hanh-chinh/van-ban-hop-nhat-13-vbhn-vpqh-2026-luat-to-tung-hanh-chinh-427850-d5.html"
+ },
+ "checked": "2026-11-07",
+ "confusables": [
+  "phuc-tham",
+  "can-cu-tai-tham",
+  "tham-quyen-toa-an-cap-tinh"
+ ],
+ "keywords": [
+  "xét lại",
+  "đã có hiệu lực pháp luật",
+  "kháng nghị giám đốc thẩm",
+  "Điều 255"
+ ],
+ "memo": {
+  "gist": "Giám đốc thẩm là xét lại bản án đã có hiệu lực bị kháng nghị vì có vi phạm theo Điều 255.",
+  "kind": "compare",
+  "hook": "Giám đốc thẩm sửa \"lỗi xử\", tái thẩm sửa \"lỗi không biết\".",
+  "tree": [
+   {
+    "label": "Đã có hiệu lực",
+    "icon": "stamp"
+   },
+   {
+    "label": "Bị kháng nghị",
+    "icon": "announce"
+   },
+   {
+    "label": "Có vi phạm theo Điều 255",
+    "icon": "warn",
+    "children": [
+     "Không phù hợp tình tiết khách quan",
+     "Vi phạm nghiêm trọng thủ tục",
+     "Sai lầm áp dụng pháp luật"
+    ]
+   }
+  ],
+  "case": {
+   "q": "Đương sự có tự kháng cáo giám đốc thẩm được không?",
+   "a": "Không. Phải có kháng nghị giám đốc thẩm của người có thẩm quyền; đương sự chỉ có quyền đề nghị (Điều 254)."
+  },
+  "contrast": [
+   {
+    "with": "can-cu-tai-tham",
+    "text": "Tái thẩm áp dụng khi phát hiện tình tiết mới mà Tòa án, đương sự không thể biết khi giải quyết vụ án."
+   }
+  ]
+ },
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Giám đốc thẩm xét lại bản án, quyết định nào?",
+   "options": [
+    "Chưa có hiệu lực pháp luật bị đương sự kháng cáo",
+    "Mọi bản án sơ thẩm có Hội thẩm nhân dân tham gia xét xử",
+    "Đã có hiệu lực khi đương sự gửi đơn kháng cáo muộn",
+    "Đã có hiệu lực pháp luật nhưng bị kháng nghị giám đốc thẩm"
+   ],
+   "answer": 3,
+   "explain": "Điều 254: xét lại bản án, quyết định đã có hiệu lực nhưng bị kháng nghị giám đốc thẩm khi có căn cứ ở Điều 255.",
+   "why": [
+    "Sai: đó là phúc thẩm.",
+    "Sai: giám đốc thẩm cần bản án đã có hiệu lực bị kháng nghị.",
+    "Sai: đơn của đương sự không thay kháng nghị giám đốc thẩm.",
+    "Đúng: Điều 254."
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Giám đốc thẩm là {{xét lại}} bản án, quyết định của Tòa án đã có hiệu lực pháp luật nhưng bị kháng nghị giám đốc thẩm khi có căn cứ quy định tại Điều 255 của Luật này."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Giám đốc thẩm là xét lại bản án, quyết định của Tòa án {{đã có hiệu lực pháp luật}} nhưng bị {{kháng nghị giám đốc thẩm}} khi có căn cứ quy định tại Điều 255 của Luật này."
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Bản án đã có hiệu lực của Tòa án nhân dân khu vực áp dụng sai điều luật, gây thiệt hại cho người khởi kiện. Thủ tục nào phù hợp để xem xét lại?",
+   "options": [
+    "Phúc thẩm theo kháng cáo mới của người khởi kiện",
+    "Tái thẩm vì người khởi kiện mới phát hiện điều luật đúng",
+    "Giám đốc thẩm, khi có kháng nghị của người có thẩm quyền",
+    "Khởi kiện lại vụ án mới với cùng yêu cầu"
+   ],
+   "answer": 2,
+   "explain": "Sai lầm trong áp dụng pháp luật là căn cứ kháng nghị giám đốc thẩm (Điều 255); thủ tục là giám đốc thẩm (Điều 254).",
+   "why": [
+    "Sai: bản án đã có hiệu lực thì không phúc thẩm.",
+    "Sai: tái thẩm dành cho tình tiết mới của vụ án, không phải lỗi áp dụng luật.",
+    "Đúng: sai lầm áp dụng pháp luật là căn cứ giám đốc thẩm (Điều 254, Điều 255).",
+    "Sai: sự việc đã có bản án hiệu lực thì đơn mới bị trả lại."
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Đương sự có quyền kháng cáo theo thủ tục giám đốc thẩm.",
+   "answer": false,
+   "explain": "Sai. Điều 254: giám đốc thẩm phát sinh từ kháng nghị giám đốc thẩm của người có thẩm quyền; đương sự chỉ có quyền đề nghị xem xét kháng nghị."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Giám đốc thẩm là gì?",
+   "model": "Là xét lại bản án, quyết định của Tòa án đã có hiệu lực pháp luật nhưng bị kháng nghị giám đốc thẩm khi có căn cứ quy định tại Điều 255.",
+   "keywords": [
+    "xét lại",
+    "đã có hiệu lực",
+    "kháng nghị",
+    "Điều 255"
+   ]
+  }
+ ]
+}

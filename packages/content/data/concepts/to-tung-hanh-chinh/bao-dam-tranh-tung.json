@@ -1,0 +1,120 @@
+{
+ "id": "bao-dam-tranh-tung",
+ "subject": "to-tung-hanh-chinh",
+ "chapter": "c1-doi-tuong",
+ "term": "Bảo đảm tranh tụng trong xét xử",
+ "definition": "Tòa án có trách nhiệm bảo đảm cho đương sự, người bảo vệ quyền và lợi ích hợp pháp của đương sự thực hiện quyền tranh tụng trong xét xử sơ thẩm, phúc thẩm, giám đốc thẩm, tái thẩm theo quy định của Luật này.",
+ "plain": "Tranh tụng là các bên được đưa chứng cứ, trình bày, đối đáp, lập luận để bảo vệ mình và bác bỏ yêu cầu của bên kia. Tòa án phải bảo đảm quyền này ở MỌI thủ tục xét xử, không chỉ sơ thẩm, và ra phán quyết căn cứ vào kết quả tranh tụng (khoản 3 Điều 18).",
+ "example": "Tại phiên tòa, luật sư của người khởi kiện đối đáp với đại diện Ủy ban nhân dân về tính hợp pháp của quyết định thu hồi đất.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 18 Luật Tố tụng hành chính 2015",
+  "url": "https://luatvietnam.vn/vi-pham-hanh-chinh/van-ban-hop-nhat-13-vbhn-vpqh-2026-luat-to-tung-hanh-chinh-427850-d5.html"
+ },
+ "checked": "2026-11-07",
+ "confusables": [
+  "duong-su-hanh-chinh",
+  "nghia-vu-chung-minh-hanh-chinh"
+ ],
+ "keywords": [
+  "tranh tụng",
+  "sơ thẩm, phúc thẩm, giám đốc thẩm, tái thẩm",
+  "người bảo vệ quyền và lợi ích hợp pháp"
+ ],
+ "memo": {
+  "gist": "Tòa án phải để các bên được đưa chứng cứ, đối đáp, lập luận ở mọi thủ tục xét xử.",
+  "kind": "ladder",
+  "hook": "Phiên tòa là sân đấu lý lẽ: trọng tài là Tòa án, hai đội là các đương sự.",
+  "tree": [
+   {
+    "label": "Sơ thẩm",
+    "icon": "n1"
+   },
+   {
+    "label": "Phúc thẩm",
+    "icon": "n2"
+   },
+   {
+    "label": "Giám đốc thẩm",
+    "icon": "n3"
+   },
+   {
+    "label": "Tái thẩm",
+    "icon": "n4"
+   }
+  ],
+  "case": {
+   "q": "Tranh tụng có được bảo đảm ở phiên giám đốc thẩm không?",
+   "a": "Có. Khoản 1 Điều 18 nêu cả sơ thẩm, phúc thẩm, giám đốc thẩm, tái thẩm."
+  }
+ },
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 1 Điều 18, quyền tranh tụng được bảo đảm ở những thủ tục nào?",
+   "options": [
+    "Sơ thẩm, phúc thẩm, giám đốc thẩm, tái thẩm",
+    "Chỉ ở phiên tòa sơ thẩm và phiên tòa phúc thẩm",
+    "Chỉ ở phiên tòa sơ thẩm có Hội thẩm tham gia",
+    "Chỉ khi đương sự có luật sư bảo vệ quyền lợi"
+   ],
+   "answer": 0,
+   "explain": "Khoản 1 Điều 18: tranh tụng trong xét xử sơ thẩm, phúc thẩm, giám đốc thẩm, tái thẩm.",
+   "why": [
+    "Đúng: khoản 1 Điều 18.",
+    "Sai: còn giám đốc thẩm, tái thẩm.",
+    "Sai: không giới hạn ở sơ thẩm.",
+    "Sai: đương sự tự mình cũng có quyền tranh tụng."
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tòa án có trách nhiệm bảo đảm cho đương sự, người bảo vệ quyền và lợi ích hợp pháp của đương sự thực hiện quyền {{tranh tụng}} trong xét xử sơ thẩm, phúc thẩm, giám đốc thẩm, tái thẩm theo quy định của Luật này."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tòa án có trách nhiệm bảo đảm cho {{đương sự}}, người bảo vệ quyền và lợi ích hợp pháp của đương sự thực hiện quyền tranh tụng trong xét xử sơ thẩm, {{phúc thẩm}}, giám đốc thẩm, tái thẩm theo quy định của Luật này."
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Tại phiên tòa, Hội đồng xét xử không cho người bị kiện trình bày ý kiến về chứng cứ mà người khởi kiện vừa đưa ra. Việc này vi phạm nguyên tắc nào rõ nhất?",
+   "options": [
+    "Hội thẩm nhân dân tham gia xét xử",
+    "Xét xử công khai tại trụ sở Tòa án",
+    "Bảo đảm tranh tụng trong xét xử",
+    "Quyền quyết định việc khởi kiện"
+   ],
+   "answer": 2,
+   "explain": "Đương sự có quyền trình bày, đối đáp, phát biểu quan điểm về đánh giá chứng cứ (khoản 2 Điều 18).",
+   "why": [
+    "Sai: không liên quan đến việc có Hội thẩm.",
+    "Sai: việc công khai không bị ảnh hưởng ở đây.",
+    "Đúng: Điều 18 bảo đảm quyền trình bày, đối đáp về chứng cứ.",
+    "Sai: nguyên tắc này nói về việc khởi kiện, rút yêu cầu."
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Quyền tranh tụng chỉ được bảo đảm ở phiên tòa sơ thẩm.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 18: tranh tụng được bảo đảm trong xét xử sơ thẩm, phúc thẩm, giám đốc thẩm, tái thẩm."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nguyên tắc bảo đảm tranh tụng ở khoản 1 Điều 18 nói gì?",
+   "model": "Tòa án có trách nhiệm bảo đảm cho đương sự và người bảo vệ quyền, lợi ích hợp pháp của họ thực hiện quyền tranh tụng trong xét xử sơ thẩm, phúc thẩm, giám đốc thẩm, tái thẩm.",
+   "keywords": [
+    "tranh tụng",
+    "sơ thẩm",
+    "phúc thẩm",
+    "giám đốc thẩm"
+   ]
+  }
+ ]
+}

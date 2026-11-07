@@ -1,0 +1,120 @@
+{
+ "id": "vua-khieu-nai-vua-khoi-kien",
+ "subject": "to-tung-hanh-chinh",
+ "chapter": "c2-tham-quyen",
+ "term": "Vừa khiếu nại vừa khởi kiện",
+ "definition": "Trường hợp người khởi kiện có đơn khởi kiện vụ án hành chính tại Tòa án có thẩm quyền, đồng thời có đơn khiếu nại đến người có thẩm quyền giải quyết khiếu nại thì Tòa án phải yêu cầu người khởi kiện lựa chọn cơ quan giải quyết và có văn bản thông báo cho Tòa án.",
+ "plain": "Không được \"đi hai đường cùng lúc\". Khi vừa nộp đơn khởi kiện vừa nộp đơn khiếu nại, Tòa án yêu cầu người đó CHỌN một nơi giải quyết. Chọn Tòa án thì Tòa thụ lý; chọn người giải quyết khiếu nại thì Tòa trả lại đơn khởi kiện (điểm e khoản 1 Điều 123).",
+ "example": "Ông S vừa kiện quyết định xử phạt ra Tòa, vừa khiếu nại lên Chủ tịch Ủy ban nhân dân; Tòa án yêu cầu ông chọn một nơi.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 33 Luật Tố tụng hành chính 2015",
+  "url": "https://luatvietnam.vn/vi-pham-hanh-chinh/van-ban-hop-nhat-13-vbhn-vpqh-2026-luat-to-tung-hanh-chinh-427850-d5.html"
+ },
+ "checked": "2026-11-07",
+ "confusables": [
+  "quyen-khoi-kien",
+  "tra-lai-don-khoi-kien-hanh-chinh",
+  "tham-quyen-toa-an-khu-vuc"
+ ],
+ "keywords": [
+  "đồng thời",
+  "đơn khiếu nại",
+  "lựa chọn cơ quan giải quyết",
+  "văn bản thông báo"
+ ],
+ "memo": {
+  "gist": "Vừa khiếu nại vừa khởi kiện thì phải chọn một nơi; chọn khiếu nại thì Tòa án trả lại đơn.",
+  "kind": "tree",
+  "hook": "Ngã ba đường: chỉ được bước vào một nhánh, Tòa hoặc khiếu nại.",
+  "tree": [
+   {
+    "label": "Chọn Tòa án",
+    "icon": "scales",
+    "children": [
+     "Thụ lý theo thủ tục chung"
+    ]
+   },
+   {
+    "label": "Chọn khiếu nại",
+    "icon": "doc",
+    "children": [
+     "Tòa trả lại đơn khởi kiện"
+    ]
+   }
+  ],
+  "case": {
+   "q": "Người khởi kiện chọn tiếp tục khiếu nại thì Tòa án làm gì với đơn khởi kiện?",
+   "a": "Trả lại đơn khởi kiện và tài liệu kèm theo (điểm b khoản 1 Điều 33, điểm e khoản 1 Điều 123)."
+  }
+ },
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Khi người khởi kiện vừa có đơn khởi kiện vừa có đơn khiếu nại, Tòa án phải làm gì?",
+   "options": [
+    "Thụ lý ngay và đình chỉ việc giải quyết khiếu nại",
+    "Trả lại đơn khởi kiện để chờ kết quả khiếu nại",
+    "Tạm đình chỉ vụ án đến khi có quyết định khiếu nại",
+    "Yêu cầu người khởi kiện lựa chọn cơ quan giải quyết"
+   ],
+   "answer": 3,
+   "explain": "Khoản 1 Điều 33: Tòa án yêu cầu người khởi kiện lựa chọn cơ quan giải quyết và có văn bản thông báo cho Tòa án.",
+   "why": [
+    "Sai: Tòa án phải để người khởi kiện lựa chọn.",
+    "Sai: chỉ trả lại khi người khởi kiện chọn khiếu nại.",
+    "Sai: luật không quy định tạm đình chỉ trong trường hợp này.",
+    "Đúng: khoản 1 Điều 33."
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Trường hợp người khởi kiện có đơn khởi kiện vụ án hành chính tại Tòa án có thẩm quyền, {{đồng thời}} có đơn khiếu nại đến người có thẩm quyền giải quyết khiếu nại thì Tòa án phải yêu cầu người khởi kiện lựa chọn cơ quan giải quyết và có văn bản thông báo cho Tòa án."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Trường hợp người khởi kiện có đơn khởi kiện vụ án hành chính tại Tòa án có thẩm quyền, đồng thời có đơn khiếu nại đến người có thẩm quyền giải quyết khiếu nại thì Tòa án phải yêu cầu người khởi kiện {{lựa chọn}} cơ quan giải quyết và có {{văn bản thông báo}} cho Tòa án."
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Bà T vừa khởi kiện vừa khiếu nại cùng một quyết định. Được Tòa án yêu cầu, bà chọn để người có thẩm quyền giải quyết khiếu nại giải quyết. Tòa án xử lý đơn khởi kiện thế nào?",
+   "options": [
+    "Thụ lý và giải quyết song song với việc khiếu nại",
+    "Trả lại đơn khởi kiện và tài liệu kèm theo",
+    "Đình chỉ giải quyết vụ án vì bà T đã rút yêu cầu",
+    "Chuyển đơn khởi kiện cho người giải quyết khiếu nại"
+   ],
+   "answer": 1,
+   "explain": "Người khởi kiện chọn khiếu nại thì Tòa án trả lại đơn khởi kiện (điểm b khoản 1 Điều 33); sau đó vẫn có thể khởi kiện lại theo quy định.",
+   "why": [
+    "Sai: luật không cho giải quyết song song.",
+    "Đúng: điểm b khoản 1 Điều 33, điểm e khoản 1 Điều 123.",
+    "Sai: chưa thụ lý thì không đình chỉ; Tòa trả lại đơn.",
+    "Sai: Tòa án trả lại đơn cho người khởi kiện."
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người dân được đồng thời yêu cầu Tòa án và người có thẩm quyền giải quyết khiếu nại cùng giải quyết một quyết định hành chính.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 33: Tòa án yêu cầu người khởi kiện lựa chọn một cơ quan giải quyết."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Tòa án xử lý thế nào khi người khởi kiện vừa khởi kiện vừa khiếu nại?",
+   "model": "Tòa án yêu cầu người khởi kiện lựa chọn cơ quan giải quyết và thông báo bằng văn bản; chọn Tòa án thì Tòa thụ lý, chọn người giải quyết khiếu nại thì Tòa trả lại đơn khởi kiện.",
+   "keywords": [
+    "lựa chọn",
+    "văn bản thông báo",
+    "thụ lý",
+    "trả lại đơn"
+   ]
+  }
+ ]
+}

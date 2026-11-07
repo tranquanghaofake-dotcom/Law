@@ -1,0 +1,118 @@
+{
+ "id": "quyen-khoi-kien",
+ "subject": "to-tung-hanh-chinh",
+ "chapter": "c5-khoi-kien",
+ "term": "Quyền khởi kiện vụ án hành chính",
+ "definition": "Cơ quan, tổ chức, cá nhân có quyền khởi kiện vụ án đối với quyết định hành chính, hành vi hành chính, quyết định kỷ luật buộc thôi việc trong trường hợp không đồng ý với quyết định, hành vi đó hoặc đã khiếu nại với người có thẩm quyền giải quyết, nhưng hết thời hạn giải quyết theo quy định của pháp luật mà khiếu nại không được giải quyết hoặc đã được giải quyết nhưng không đồng ý với việc giải quyết khiếu nại về quyết định, hành vi đó.",
+ "plain": "Với quyết định, hành vi hành chính và quyết định kỷ luật buộc thôi việc, KHÔNG bắt buộc phải khiếu nại trước. Có ba cửa để khởi kiện: (1) không đồng ý thì kiện ngay; (2) đã khiếu nại nhưng hết hạn mà không được giải quyết; (3) đã được giải quyết khiếu nại nhưng không đồng ý.",
+ "example": "Bà F nhận quyết định xử phạt, không đồng ý và khởi kiện ngay ra Tòa án mà không khiếu nại.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 1 Điều 115 Luật Tố tụng hành chính 2015",
+  "url": "https://luatvietnam.vn/vi-pham-hanh-chinh/van-ban-hop-nhat-13-vbhn-vpqh-2026-luat-to-tung-hanh-chinh-427850-d5.html"
+ },
+ "checked": "2026-11-07",
+ "confusables": [
+  "nguoi-khoi-kien",
+  "thoi-hieu-khoi-kien",
+  "vua-khieu-nai-vua-khoi-kien"
+ ],
+ "keywords": [
+  "không đồng ý",
+  "đã khiếu nại",
+  "hết thời hạn giải quyết",
+  "không đồng ý với việc giải quyết khiếu nại"
+ ],
+ "memo": {
+  "gist": "Không đồng ý với quyết định, hành vi hành chính thì được kiện ngay, không bắt buộc khiếu nại trước.",
+  "kind": "tree",
+  "hook": "Ba cửa vào Tòa: kiện thẳng, khiếu nại quá hạn, khiếu nại xong vẫn không ưng.",
+  "tree": [
+   {
+    "label": "Kiện ngay khi không đồng ý",
+    "icon": "n1"
+   },
+   {
+    "label": "Khiếu nại quá hạn chưa giải quyết",
+    "icon": "n2"
+   },
+   {
+    "label": "Không đồng ý kết quả khiếu nại",
+    "icon": "n3"
+   }
+  ],
+  "case": {
+   "q": "Có bắt buộc khiếu nại trước khi kiện quyết định hành chính không?",
+   "a": "Không. Khoản 1 Điều 115 cho kiện ngay khi không đồng ý với quyết định, hành vi đó."
+  }
+ },
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 1 Điều 115, để khởi kiện quyết định hành chính, người dân có bắt buộc khiếu nại trước không?",
+   "options": [
+    "Bắt buộc khiếu nại lần đầu trước khi khởi kiện",
+    "Bắt buộc khiếu nại đủ hai lần trước khi khởi kiện",
+    "Không bắt buộc, có thể khởi kiện khi không đồng ý",
+    "Chỉ phải khiếu nại nếu quyết định do cấp tỉnh ban hành"
+   ],
+   "answer": 2,
+   "explain": "Khoản 1 Điều 115: khởi kiện khi không đồng ý với quyết định, hành vi, hoặc sau khi khiếu nại không được giải quyết, giải quyết không đồng ý.",
+   "why": [
+    "Sai: luật cho khởi kiện ngay khi không đồng ý.",
+    "Sai: không có yêu cầu khiếu nại hai lần.",
+    "Đúng: khoản 1 Điều 115.",
+    "Sai: cấp ban hành không làm phát sinh nghĩa vụ khiếu nại trước."
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Cơ quan, tổ chức, cá nhân có quyền khởi kiện vụ án đối với quyết định hành chính, hành vi hành chính, quyết định kỷ luật buộc thôi việc trong trường hợp {{không đồng ý}} với quyết định, hành vi đó hoặc đã khiếu nại với người có thẩm quyền giải quyết, nhưng hết thời hạn giải quyết theo quy định của pháp luật mà khiếu nại không được giải quyết hoặc đã được giải quyết nhưng không đồng ý với việc giải quyết khiếu nại về quyết định, hành vi đó."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Cơ quan, tổ chức, cá nhân có quyền khởi kiện vụ án đối với quyết định hành chính, hành vi hành chính, quyết định kỷ luật buộc thôi việc trong trường hợp không đồng ý với quyết định, hành vi đó hoặc đã {{khiếu nại}} với người có thẩm quyền giải quyết, nhưng hết {{thời hạn giải quyết}} theo quy định của pháp luật mà khiếu nại không được giải quyết hoặc đã được giải quyết nhưng không đồng ý với việc giải quyết khiếu nại về quyết định, hành vi đó."
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Ông G khiếu nại quyết định thu hồi đất; hết thời hạn giải quyết khiếu nại theo luật mà vẫn chưa có kết quả. Ông G có quyền gì?",
+   "options": [
+    "Khởi kiện vụ án hành chính đối với quyết định thu hồi đất",
+    "Chỉ được tiếp tục chờ đến khi có quyết định giải quyết khiếu nại",
+    "Chỉ được khiếu nại lên Thủ tướng Chính phủ",
+    "Khởi kiện người giải quyết khiếu nại về tội thiếu trách nhiệm"
+   ],
+   "answer": 0,
+   "explain": "Đã khiếu nại nhưng hết thời hạn mà không được giải quyết thì có quyền khởi kiện (khoản 1 Điều 115).",
+   "why": [
+    "Đúng: khoản 1 Điều 115 — khiếu nại quá hạn không được giải quyết.",
+    "Sai: luật cho khởi kiện khi hết thời hạn mà không được giải quyết.",
+    "Sai: luật mở quyền khởi kiện, không buộc khiếu nại vượt cấp.",
+    "Sai: đây là vụ án hành chính về quyết định thu hồi đất, không phải hình sự."
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Muốn khởi kiện quyết định hành chính, người dân bắt buộc phải khiếu nại trước.",
+   "answer": false,
+   "explain": "Sai. Khoản 1 Điều 115 cho khởi kiện khi không đồng ý với quyết định, hành vi đó; khiếu nại trước không bắt buộc."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các trường hợp được khởi kiện quyết định, hành vi hành chính theo khoản 1 Điều 115.",
+   "model": "Không đồng ý với quyết định, hành vi đó; hoặc đã khiếu nại nhưng hết thời hạn mà không được giải quyết; hoặc đã được giải quyết khiếu nại nhưng không đồng ý với việc giải quyết.",
+   "keywords": [
+    "không đồng ý",
+    "đã khiếu nại",
+    "hết thời hạn",
+    "không được giải quyết"
+   ]
+  }
+ ]
+}

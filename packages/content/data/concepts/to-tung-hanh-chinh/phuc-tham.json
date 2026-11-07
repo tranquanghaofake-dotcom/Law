@@ -1,0 +1,125 @@
+{
+ "id": "phuc-tham",
+ "subject": "to-tung-hanh-chinh",
+ "chapter": "c6-xet-xu",
+ "term": "Xét xử phúc thẩm",
+ "definition": "Xét xử phúc thẩm là việc Tòa án cấp phúc thẩm xét xử lại vụ án mà bản án, quyết định của Tòa án cấp sơ thẩm chưa có hiệu lực pháp luật bị kháng cáo hoặc kháng nghị.",
+ "plain": "Phúc thẩm là cấp xét xử thứ hai, xét lại bản án, quyết định sơ thẩm CHƯA có hiệu lực vì bị kháng cáo (đương sự) hoặc kháng nghị (Viện kiểm sát). Khác giám đốc thẩm, tái thẩm là xem xét lại bản án ĐÃ có hiệu lực.",
+ "example": "Người bị kiện không đồng ý bản án sơ thẩm, kháng cáo trong 15 ngày; Tòa án cấp tỉnh xét xử phúc thẩm.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 203 Luật Tố tụng hành chính 2015",
+  "url": "https://luatvietnam.vn/vi-pham-hanh-chinh/van-ban-hop-nhat-13-vbhn-vpqh-2026-luat-to-tung-hanh-chinh-427850-d5.html"
+ },
+ "checked": "2026-11-07",
+ "confusables": [
+  "giam-doc-tham",
+  "thoi-han-khang-cao",
+  "tham-quyen-toa-an-cap-tinh"
+ ],
+ "keywords": [
+  "xét xử lại",
+  "chưa có hiệu lực pháp luật",
+  "kháng cáo hoặc kháng nghị"
+ ],
+ "memo": {
+  "gist": "Phúc thẩm là xét xử lại bản án sơ thẩm chưa có hiệu lực bị kháng cáo, kháng nghị.",
+  "kind": "compare",
+  "hook": "Chưa \"đóng dấu hiệu lực\" thì còn phúc thẩm; đã đóng dấu thì chỉ còn giám đốc thẩm, tái thẩm.",
+  "tree": [
+   {
+    "label": "Phúc thẩm",
+    "icon": "cycle",
+    "children": [
+     "Bản án chưa có hiệu lực"
+    ]
+   },
+   {
+    "label": "Giám đốc thẩm, tái thẩm",
+    "icon": "search",
+    "children": [
+     "Bản án đã có hiệu lực"
+    ]
+   }
+  ],
+  "case": {
+   "q": "Bản án sơ thẩm đã có hiệu lực thì còn phúc thẩm được không?",
+   "a": "Không. Phúc thẩm chỉ với bản án, quyết định chưa có hiệu lực bị kháng cáo, kháng nghị (Điều 203)."
+  },
+  "contrast": [
+   {
+    "with": "giam-doc-tham",
+    "text": "Giám đốc thẩm xét lại bản án đã có hiệu lực khi bị kháng nghị vì có căn cứ ở Điều 255."
+   }
+  ]
+ },
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Phúc thẩm xét xử lại bản án, quyết định nào theo Điều 203?",
+   "options": [
+    "Bản án, quyết định đã có hiệu lực pháp luật nhưng bị kháng nghị",
+    "Mọi bản án sơ thẩm, không cần kháng cáo, kháng nghị",
+    "Bản án, quyết định sơ thẩm chưa có hiệu lực bị kháng cáo, kháng nghị",
+    "Quyết định hành chính đã bị khiếu nại nhiều lần"
+   ],
+   "answer": 2,
+   "explain": "Điều 203: phúc thẩm xét xử lại vụ án mà bản án, quyết định sơ thẩm chưa có hiệu lực bị kháng cáo hoặc kháng nghị.",
+   "why": [
+    "Sai: đó là giám đốc thẩm, tái thẩm.",
+    "Sai: phải có kháng cáo hoặc kháng nghị.",
+    "Đúng: Điều 203.",
+    "Sai: phúc thẩm xét lại bản án của Tòa án, không phải quyết định hành chính."
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Xét xử phúc thẩm là việc Tòa án cấp phúc thẩm {{xét xử lại}} vụ án mà bản án, quyết định của Tòa án cấp sơ thẩm chưa có hiệu lực pháp luật bị kháng cáo hoặc kháng nghị."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Xét xử phúc thẩm là việc Tòa án cấp phúc thẩm xét xử lại vụ án mà bản án, quyết định của Tòa án cấp sơ thẩm {{chưa có hiệu lực pháp luật}} bị {{kháng cáo}} hoặc kháng nghị."
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Bản án sơ thẩm tuyên ngày 01/4; không ai kháng cáo, kháng nghị trong thời hạn luật định. Tháng 6, người khởi kiện muốn \"kháng cáo phúc thẩm\". Nhận định nào đúng?",
+   "options": [
+    "Vẫn kháng cáo được vì chưa quá 01 năm kể từ ngày tuyên án",
+    "Vẫn kháng cáo được nếu Viện kiểm sát đồng ý",
+    "Kháng cáo được nhưng phải nộp gấp đôi án phí phúc thẩm",
+    "Không còn phúc thẩm được vì bản án đã có hiệu lực pháp luật"
+   ],
+   "answer": 3,
+   "explain": "Hết thời hạn kháng cáo, kháng nghị thì bản án sơ thẩm có hiệu lực; chỉ còn thủ tục giám đốc thẩm, tái thẩm nếu có căn cứ.",
+   "why": [
+    "Sai: thời hạn kháng cáo bản án là 15 ngày (khoản 1 Điều 206).",
+    "Sai: Viện kiểm sát không thể mở lại thời hạn kháng cáo của đương sự.",
+    "Sai: luật không có quy định như vậy.",
+    "Đúng: Điều 203 chỉ với bản án chưa có hiệu lực."
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Phúc thẩm là việc xem xét lại bản án đã có hiệu lực pháp luật.",
+   "answer": false,
+   "explain": "Sai. Điều 203: phúc thẩm xét lại bản án, quyết định sơ thẩm chưa có hiệu lực bị kháng cáo, kháng nghị; bản án đã có hiệu lực thuộc giám đốc thẩm, tái thẩm."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Xét xử phúc thẩm là gì?",
+   "model": "Là việc Tòa án cấp phúc thẩm xét xử lại vụ án mà bản án, quyết định sơ thẩm chưa có hiệu lực pháp luật bị kháng cáo hoặc kháng nghị (Điều 203).",
+   "keywords": [
+    "xét xử lại",
+    "chưa có hiệu lực",
+    "kháng cáo",
+    "kháng nghị"
+   ]
+  }
+ ]
+}

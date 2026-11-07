@@ -1,0 +1,115 @@
+{
+ "id": "xet-xu-vang-mat",
+ "subject": "to-tung-hanh-chinh",
+ "chapter": "c6-xet-xu",
+ "term": "Xét xử khi đương sự vắng mặt",
+ "definition": "Tòa án vẫn tiến hành xét xử vụ án trong các trường hợp sau đây: 1. Người khởi kiện, người bị kiện, người có quyền lợi, nghĩa vụ liên quan và người đại diện của họ vắng mặt tại phiên tòa có đơn đề nghị Tòa án xét xử vắng mặt; 2. Người khởi kiện, người bị kiện hoặc người có quyền lợi, nghĩa vụ liên quan vắng mặt tại phiên tòa nhưng có người đại diện tham gia phiên tòa;",
+ "plain": "Vắng mặt không phải lúc nào cũng làm hoãn phiên tòa. Tòa án vẫn xử khi: đương sự và người đại diện vắng mặt nhưng có đơn đề nghị xét xử vắng mặt; hoặc đương sự vắng mặt nhưng có người đại diện tham gia; hoặc các trường hợp ở điểm b, điểm d khoản 2 Điều 157.",
+ "example": "Chủ tịch Ủy ban nhân dân xã (người bị kiện) có đơn đề nghị xét xử vắng mặt; Tòa án vẫn mở phiên tòa xét xử.",
+ "source": {
+  "kind": "statute",
+  "cite": "Điều 158 Luật Tố tụng hành chính 2015",
+  "url": "https://luatvietnam.vn/vi-pham-hanh-chinh/van-ban-hop-nhat-13-vbhn-vpqh-2026-luat-to-tung-hanh-chinh-427850-d5.html"
+ },
+ "checked": "2026-11-07",
+ "confusables": [
+  "duong-su-hanh-chinh",
+  "bao-dam-tranh-tung"
+ ],
+ "keywords": [
+  "vẫn tiến hành xét xử",
+  "đơn đề nghị Tòa án xét xử vắng mặt",
+  "có người đại diện tham gia"
+ ],
+ "memo": {
+  "gist": "Đương sự vắng mặt nhưng có đơn xin xử vắng mặt hoặc có người đại diện dự thì Tòa vẫn xét xử.",
+  "kind": "checklist",
+  "hook": "Ghế trống mà đã gửi lời nhắn hoặc nhờ người ngồi thay, phiên tòa cứ chạy.",
+  "tree": [
+   {
+    "label": "Có đơn xin xử vắng mặt",
+    "icon": "doc"
+   },
+   {
+    "label": "Có người đại diện tham gia",
+    "icon": "person"
+   },
+   {
+    "label": "Trường hợp điểm b, d khoản 2 Điều 157",
+    "icon": "list"
+   }
+  ],
+  "case": {
+   "q": "Người khởi kiện vắng mặt nhưng luật sư (người đại diện theo ủy quyền) có mặt thì có xử được không?",
+   "a": "Được. Khoản 2 Điều 158: đương sự vắng mặt nhưng có người đại diện tham gia phiên tòa."
+  }
+ },
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 1 Điều 158, khi nào Tòa án vẫn xét xử dù đương sự và người đại diện vắng mặt?",
+   "options": [
+    "Khi Thẩm phán thấy vụ án đơn giản, chứng cứ rõ ràng",
+    "Khi Viện kiểm sát đồng ý cho xét xử vắng mặt",
+    "Khi phiên tòa đã bị hoãn một lần trước đó",
+    "Khi họ có đơn đề nghị Tòa án xét xử vắng mặt"
+   ],
+   "answer": 3,
+   "explain": "Khoản 1 Điều 158: đương sự và người đại diện vắng mặt có đơn đề nghị xét xử vắng mặt thì Tòa án vẫn xét xử.",
+   "why": [
+    "Sai: luật không cho xét xử vắng mặt vì lý do này.",
+    "Sai: sự đồng ý của Viện kiểm sát không phải căn cứ.",
+    "Sai: việc đã hoãn không tự động cho phép xét xử vắng mặt ở khoản 1.",
+    "Đúng: khoản 1 Điều 158."
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tòa án vẫn tiến hành xét xử vụ án trong các trường hợp sau đây: 1. Người khởi kiện, người bị kiện, người có quyền lợi, nghĩa vụ liên quan và người đại diện của họ vắng mặt tại phiên tòa có {{đơn đề nghị}} Tòa án xét xử vắng mặt;"
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Tòa án vẫn tiến hành xét xử vụ án trong các trường hợp sau đây: 2. Người khởi kiện, người bị kiện hoặc người có quyền lợi, nghĩa vụ liên quan vắng mặt tại phiên tòa nhưng có {{người đại diện}} tham gia phiên tòa;"
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Người bị kiện (Chủ tịch Ủy ban nhân dân xã) vắng mặt tại phiên tòa sơ thẩm nhưng đã gửi đơn đề nghị xét xử vắng mặt. Hội đồng xét xử xử lý thế nào?",
+   "options": [
+    "Vẫn tiến hành xét xử",
+    "Hoãn phiên tòa và triệu tập lại người bị kiện",
+    "Đình chỉ giải quyết vụ án vì người bị kiện vắng mặt",
+    "Tạm đình chỉ vụ án để chờ người bị kiện có mặt"
+   ],
+   "answer": 0,
+   "explain": "Đương sự vắng mặt có đơn đề nghị xét xử vắng mặt thì Tòa án vẫn tiến hành xét xử (khoản 1 Điều 158).",
+   "why": [
+    "Đúng: khoản 1 Điều 158.",
+    "Sai: đã có đơn đề nghị xét xử vắng mặt thì không phải hoãn.",
+    "Sai: vắng mặt của người bị kiện không phải căn cứ đình chỉ.",
+    "Sai: không phải căn cứ tạm đình chỉ."
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Đương sự vắng mặt tại phiên tòa thì Tòa án luôn phải hoãn phiên tòa.",
+   "answer": false,
+   "explain": "Sai. Điều 158: Tòa án vẫn xét xử nếu đương sự có đơn đề nghị xét xử vắng mặt hoặc có người đại diện tham gia, và trong các trường hợp ở điểm b, d khoản 2 Điều 157."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Nêu các trường hợp Tòa án vẫn xét xử khi đương sự vắng mặt theo Điều 158.",
+   "model": "Đương sự và người đại diện vắng mặt có đơn đề nghị xét xử vắng mặt; đương sự vắng mặt nhưng có người đại diện tham gia phiên tòa; các trường hợp ở điểm b, điểm d khoản 2 Điều 157.",
+   "keywords": [
+    "đơn đề nghị",
+    "xét xử vắng mặt",
+    "người đại diện"
+   ]
+  }
+ ]
+}

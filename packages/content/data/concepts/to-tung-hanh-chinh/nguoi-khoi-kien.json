@@ -1,0 +1,122 @@
+{
+ "id": "nguoi-khoi-kien",
+ "subject": "to-tung-hanh-chinh",
+ "chapter": "c3-nguoi-tham-gia",
+ "term": "Người khởi kiện",
+ "definition": "Người khởi kiện là cơ quan, tổ chức, cá nhân khởi kiện vụ án hành chính đối với quyết định hành chính, hành vi hành chính, quyết định kỷ luật buộc thôi việc, quyết định giải quyết khiếu nại về quyết định xử lý vụ việc cạnh tranh, quyết định giải quyết khiếu nại trong hoạt động kiểm toán nhà nước; danh sách cử tri bầu cử đại biểu Quốc hội, danh sách cử tri bầu cử đại biểu Hội đồng nhân dân, danh sách cử tri trưng cầu ý dân (sau đây gọi chung là danh sách cử tri).",
+ "plain": "Người khởi kiện có thể là cơ quan, tổ chức hoặc cá nhân. Điểm nhận diện là ĐỐI TƯỢNG họ kiện: quyết định, hành vi hành chính; quyết định kỷ luật buộc thôi việc; quyết định giải quyết khiếu nại về xử lý vụ việc cạnh tranh hoặc trong hoạt động kiểm toán nhà nước; danh sách cử tri.",
+ "example": "Công ty V khởi kiện quyết định giải quyết khiếu nại về quyết định xử lý vụ việc cạnh tranh của cơ quan cạnh tranh.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 8 Điều 3 Luật Tố tụng hành chính 2015",
+  "url": "https://luatvietnam.vn/vi-pham-hanh-chinh/van-ban-hop-nhat-13-vbhn-vpqh-2026-luat-to-tung-hanh-chinh-427850-d5.html"
+ },
+ "checked": "2026-11-07",
+ "confusables": [
+  "duong-su-hanh-chinh",
+  "nguoi-bi-kien",
+  "quyen-khoi-kien"
+ ],
+ "keywords": [
+  "cơ quan, tổ chức, cá nhân",
+  "khởi kiện vụ án hành chính",
+  "danh sách cử tri"
+ ],
+ "memo": {
+  "gist": "Người khởi kiện là cơ quan, tổ chức, cá nhân đưa một quyết định, hành vi hoặc danh sách cử tri ra Tòa.",
+  "kind": "tree",
+  "hook": "Ai cầm đơn đến Tòa trước, người đó là người khởi kiện.",
+  "tree": [
+   {
+    "label": "Chủ thể",
+    "icon": "people",
+    "children": [
+     "Cơ quan",
+     "Tổ chức",
+     "Cá nhân"
+    ]
+   },
+   {
+    "label": "Đối tượng bị kiện",
+    "icon": "target",
+    "children": [
+     "Quyết định, hành vi hành chính",
+     "Kỷ luật buộc thôi việc",
+     "Danh sách cử tri"
+    ]
+   }
+  ],
+  "case": {
+   "q": "Một cơ quan nhà nước có thể là người khởi kiện vụ án hành chính không?",
+   "a": "Có. Khoản 8 Điều 3 nêu cơ quan, tổ chức, cá nhân."
+  }
+ },
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 8 Điều 3, người khởi kiện có thể là chủ thể nào?",
+   "options": [
+    "Chỉ cá nhân có quốc tịch Việt Nam",
+    "Cơ quan, tổ chức, cá nhân",
+    "Chỉ tổ chức có tư cách pháp nhân",
+    "Chỉ Viện kiểm sát thay mặt người dân"
+   ],
+   "answer": 1,
+   "explain": "Khoản 8 Điều 3: người khởi kiện là cơ quan, tổ chức, cá nhân khởi kiện vụ án hành chính.",
+   "why": [
+    "Sai: cơ quan, tổ chức cũng có thể khởi kiện.",
+    "Đúng: khoản 8 Điều 3.",
+    "Sai: cá nhân cũng có thể khởi kiện.",
+    "Sai: Viện kiểm sát không khởi kiện thay trong vụ án hành chính."
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người khởi kiện là cơ quan, tổ chức, cá nhân {{khởi kiện vụ án hành chính}} đối với quyết định hành chính, hành vi hành chính, quyết định kỷ luật buộc thôi việc, quyết định giải quyết khiếu nại về quyết định xử lý vụ việc cạnh tranh, quyết định giải quyết khiếu nại trong hoạt động kiểm toán nhà nước; danh sách cử tri bầu cử đại biểu Quốc hội, danh sách cử tri bầu cử đại biểu Hội đồng nhân dân, danh sách cử tri trưng cầu ý dân (sau đây gọi chung là danh sách cử tri)."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Người khởi kiện là cơ quan, tổ chức, cá nhân khởi kiện vụ án hành chính đối với quyết định hành chính, hành vi hành chính, quyết định {{kỷ luật buộc thôi việc}}, quyết định giải quyết khiếu nại về quyết định xử lý vụ việc cạnh tranh, quyết định giải quyết khiếu nại trong hoạt động kiểm toán nhà nước; danh sách cử tri bầu cử đại biểu Quốc hội, danh sách cử tri bầu cử đại biểu Hội đồng nhân dân, danh sách cử tri trưng cầu ý dân (sau đây gọi chung là danh sách cử tri)."
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Anh X phát hiện tên mình không có trong danh sách cử tri bầu cử đại biểu Hội đồng nhân dân, đã khiếu nại nhưng không đồng ý với kết quả. Anh X có thể là người khởi kiện không?",
+   "options": [
+    "Không, danh sách cử tri chỉ được khiếu nại, không được kiện",
+    "Không, chỉ ứng cử viên mới được kiện danh sách cử tri",
+    "Có, nhưng phải kiện ra Tòa án nhân dân tối cao",
+    "Có, danh sách cử tri là đối tượng khởi kiện vụ án hành chính"
+   ],
+   "answer": 3,
+   "explain": "Danh sách cử tri là đối tượng khởi kiện (khoản 8 Điều 3); cá nhân đã khiếu nại mà không đồng ý thì có quyền khởi kiện (khoản 3 Điều 115).",
+   "why": [
+    "Sai: luật cho khởi kiện danh sách cử tri sau khi đã khiếu nại.",
+    "Sai: cá nhân có quyền khởi kiện về danh sách cử tri.",
+    "Sai: luật không giao việc này cho Tòa án nhân dân tối cao.",
+    "Đúng: khoản 8 Điều 3, khoản 3 Điều 115."
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Cơ quan nhà nước không bao giờ có thể là người khởi kiện vụ án hành chính.",
+   "answer": false,
+   "explain": "Sai. Khoản 8 Điều 3: người khởi kiện là cơ quan, tổ chức, cá nhân."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Người khởi kiện là ai và họ khởi kiện đối với những gì?",
+   "model": "Là cơ quan, tổ chức, cá nhân khởi kiện vụ án hành chính đối với quyết định, hành vi hành chính, quyết định kỷ luật buộc thôi việc, quyết định giải quyết khiếu nại về xử lý vụ việc cạnh tranh hoặc trong hoạt động kiểm toán nhà nước, danh sách cử tri.",
+   "keywords": [
+    "cơ quan, tổ chức, cá nhân",
+    "quyết định hành chính",
+    "danh sách cử tri"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,116 @@
+{
+ "id": "duong-su-hanh-chinh",
+ "subject": "to-tung-hanh-chinh",
+ "chapter": "c3-nguoi-tham-gia",
+ "term": "Đương sự",
+ "definition": "Đương sự bao gồm người khởi kiện, người bị kiện, người có quyền lợi, nghĩa vụ liên quan.",
+ "plain": "Đương sự là những người có quyền lợi gắn với kết quả vụ án, gồm đúng ba nhóm: người khởi kiện, người bị kiện, người có quyền lợi, nghĩa vụ liên quan. Người làm chứng, người giám định, người phiên dịch tham gia tố tụng nhưng KHÔNG phải đương sự.",
+ "example": "Trong vụ kiện quyết định thu hồi đất: hộ dân là người khởi kiện, Ủy ban nhân dân là người bị kiện, ngân hàng nhận thế chấp đất là người có quyền lợi, nghĩa vụ liên quan.",
+ "source": {
+  "kind": "statute",
+  "cite": "Khoản 7 Điều 3 Luật Tố tụng hành chính 2015",
+  "url": "https://luatvietnam.vn/vi-pham-hanh-chinh/van-ban-hop-nhat-13-vbhn-vpqh-2026-luat-to-tung-hanh-chinh-427850-d5.html"
+ },
+ "checked": "2026-11-07",
+ "confusables": [
+  "nguoi-khoi-kien",
+  "nguoi-bi-kien",
+  "nguoi-co-quyen-loi-nghia-vu-lien-quan"
+ ],
+ "keywords": [
+  "người khởi kiện",
+  "người bị kiện",
+  "người có quyền lợi, nghĩa vụ liên quan"
+ ],
+ "memo": {
+  "gist": "Đương sự gồm ba nhóm: người khởi kiện, người bị kiện và người có quyền lợi, nghĩa vụ liên quan.",
+  "kind": "checklist",
+  "hook": "Ba ghế quanh bàn tranh chấp: bên kiện, bên bị kiện, bên liên quan.",
+  "tree": [
+   {
+    "label": "Người khởi kiện",
+    "icon": "person"
+   },
+   {
+    "label": "Người bị kiện",
+    "icon": "company"
+   },
+   {
+    "label": "Người có quyền lợi, nghĩa vụ liên quan",
+    "icon": "link"
+   }
+  ],
+  "case": {
+   "q": "Người làm chứng có phải đương sự không?",
+   "a": "Không. Khoản 7 Điều 3 chỉ gồm ba nhóm; người làm chứng là người tham gia tố tụng khác."
+  }
+ },
+ "items": [
+  {
+   "type": "mcq",
+   "level": 1,
+   "q": "Theo khoản 7 Điều 3, đương sự gồm những ai?",
+   "options": [
+    "Người khởi kiện, người bị kiện, người có quyền lợi, nghĩa vụ liên quan",
+    "Người khởi kiện, người bị kiện, người làm chứng và luật sư bào chữa",
+    "Người khởi kiện, người bị kiện, Kiểm sát viên và Thẩm phán",
+    "Chỉ người khởi kiện và người bị kiện trong vụ án hành chính"
+   ],
+   "answer": 0,
+   "explain": "Khoản 7 Điều 3: đương sự bao gồm người khởi kiện, người bị kiện, người có quyền lợi, nghĩa vụ liên quan.",
+   "why": [
+    "Đúng: khoản 7 Điều 3.",
+    "Sai: người làm chứng, luật sư không phải đương sự.",
+    "Sai: Kiểm sát viên, Thẩm phán là người tiến hành tố tụng.",
+    "Sai: còn người có quyền lợi, nghĩa vụ liên quan."
+   ]
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đương sự bao gồm {{người khởi kiện}}, người bị kiện, người có quyền lợi, nghĩa vụ liên quan."
+  },
+  {
+   "type": "cloze",
+   "level": 3,
+   "text": "Đương sự bao gồm người khởi kiện, {{người bị kiện}}, người có {{quyền lợi, nghĩa vụ liên quan}}."
+  },
+  {
+   "type": "case",
+   "level": 4,
+   "q": "Trong vụ kiện quyết định cưỡng chế, Tòa án triệu tập ông U (hàng xóm chứng kiến việc cưỡng chế) đến khai báo. Ông U có tư cách gì?",
+   "options": [
+    "Người có quyền lợi, nghĩa vụ liên quan",
+    "Người khởi kiện bổ sung trong vụ án",
+    "Người làm chứng, không phải đương sự",
+    "Người bị kiện cùng cơ quan cưỡng chế"
+   ],
+   "answer": 2,
+   "explain": "Đương sự chỉ gồm ba nhóm ở khoản 7 Điều 3; người chứng kiến được triệu tập để khai báo là người làm chứng.",
+   "why": [
+    "Sai: ông U không có quyền lợi, nghĩa vụ bị ảnh hưởng bởi phán quyết.",
+    "Sai: ông U không khởi kiện.",
+    "Đúng: ông U không có quyền lợi gắn với kết quả vụ án, chỉ khai báo điều biết.",
+    "Sai: ông U không ra quyết định hay thực hiện hành vi bị kiện."
+   ]
+  },
+  {
+   "type": "truefalse",
+   "level": 4,
+   "statement": "Người làm chứng là một loại đương sự trong vụ án hành chính.",
+   "answer": false,
+   "explain": "Sai. Khoản 7 Điều 3: đương sự gồm người khởi kiện, người bị kiện, người có quyền lợi, nghĩa vụ liên quan."
+  },
+  {
+   "type": "recall",
+   "level": 5,
+   "q": "Đương sự trong vụ án hành chính gồm những ai?",
+   "model": "Người khởi kiện, người bị kiện và người có quyền lợi, nghĩa vụ liên quan (khoản 7 Điều 3).",
+   "keywords": [
+    "người khởi kiện",
+    "người bị kiện",
+    "quyền lợi, nghĩa vụ liên quan"
+   ]
+  }
+ ]
+}

@@ -24,7 +24,7 @@ export const VIGNETTE_NAMES: readonly VignetteName[] = [...VIGNETTE_CORE, ...VIG
 /** Cảnh đầu trang của từng môn (24 môn); mỗi cảnh ≤ 2 môn. */
 export const SUBJECT_ART: Record<string, ArtName> = {
   'hien-phap': 'quoc-hoi', 'lich-su-nn-pl': 'bia-tien-si', 'chung-khoan': 'san-giao-dich',
-  'ly-luan-nn-pl': 'tam-quan', 'hanh-chinh': 'ngo-mon', 'to-tung-dan-su': 'toa-an',
+  'ly-luan-nn-pl': 'tam-quan', 'hanh-chinh': 'ngo-mon', 'to-tung-dan-su': 'toa-an', 'to-tung-hanh-chinh': 'toa-an',
   'dan-su': 'nha-lang', 'hon-nhan-gia-dinh': 'nha-lang', 'dan-su-2': 'hop-dong', 'thuong-mai': 'cang-bien', 'thuong-mai-1': 'pho-hang', 'canh-tranh': 'pho-hang',
   'lao-dong': 'nha-may', 'dau-tu': 'nha-may', 'lao-dong-2': 'san-bay', 'dat-dai': 'ruong-lua',
   'ngan-hang': 'toa-ngan-hang', 'tai-chinh-doanh-nghiep': 'toa-ngan-hang', 'tai-chinh': 'ngan-sach',
@@ -107,6 +107,9 @@ const CHAPTER_EMBLEM: Record<string, Record<string, EmblemName>> = {
   'chung-khoan': {
     'c1-khai-niem': 'nen', 'c2-chao-ban': 'co-phieu', 'c3-thi-truong-giao-dich': 'bang-dien', 'c4-dang-ky-luu-ky': 'luu-ky', 'c5-cong-ty-chung-khoan': 'van-phong',
     'c6-quy-dau-tu': 'quy', 'c7-quan-ly-quy-giam-sat': 'kinh-lup', 'c8-kinh-doanh-chung-khoan': 'bat-tay', 'c9-quan-ly-nha-nuoc': 'tru-so', 'c10-xu-ly-vi-pham': 'can-can',
+  },
+  'to-tung-hanh-chinh': {
+    'c1-doi-tuong': 'ho-so', 'c2-tham-quyen': 'tru-so', 'c3-nguoi-tham-gia': 'nhom-nguoi', 'c4-chung-cu': 'kinh-lup', 'c5-khoi-kien': 'thu-tuc', 'c6-xet-xu': 'can-can', 'c7-xem-xet-lai': 'bien-ban',
   },
   'hon-nhan-gia-dinh': {
     'c1-khai-quat': 'gia-pha', 'c2-ket-hon': 'trai-tim', 'c3-tai-san-vo-chong': 'dong-xu', 'c4-ly-hon': 'can-can', 'c5-cha-me-con': 'tre-em', 'c6-cap-duong': 'tui-do',
