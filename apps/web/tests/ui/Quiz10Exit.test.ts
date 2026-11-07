@@ -1,7 +1,7 @@
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import { cleanup, fireEvent, render, waitFor } from '@testing-library/svelte';
 
-const mkQ = (n: number) => ({ q: `Câu hỏi ${n}?`, options: ['A đúng', 'B', 'C', 'D'], answer: 0, explain: 'Giải thích', basis: 'Điều 1' });
+const mkQ = (n: number) => ({ q: `Câu hỏi ${n}?`, options: ['A đúng', 'B', 'C', 'D'], answer: 0, explain: 'Giải thích', basis: 'Điều 1', why: ['Đúng: a.', 'Sai: b.', 'Sai: c.', 'Sai: d.'] });
 const set = { id: 's1', title: 'Đặt cọc', group: 'dan-su', subtitle: '', questions: [mkQ(1), mkQ(2)] };
 vi.mock('$lib/content/loader', () => ({ loadSet: async () => set, loadIndex: async () => ({ sets: [{ id: 's1', group: 'dan-su' }, { id: 's2', group: 'dan-su' }], subjects: [] }) }));
 vi.mock('$lib/store/stats', () => ({ stats: { best: async () => null, setBest: async () => {} } }));
@@ -49,5 +49,18 @@ describe('Quiz — thoát giữa bài và màn kết quả (đợt 3)', () => {
     const more = container.querySelector('.qr-more')!;
     expect(more.querySelector('a[href="#/luyen-de"]')?.textContent).toBe('Về Luyện đề');
     expect(more.querySelector('button')?.textContent).toMatch(/Chia sẻ/);
+  });
+  it('why: chọn sai thì hiện "Bạn chọn «…»" đúng phương án dù đã xáo; chọn đúng thì không; màn kết quả cũng hiện', async () => {
+    const { container } = render(Quiz10);
+    await ready(container);
+    const opt = (t: string) => [...container.querySelectorAll<HTMLButtonElement>('.opt')].find((b) => b.textContent!.endsWith(t))!;
+    await fireEvent.click(opt('B'));
+    expect(container.querySelector('.feedback .why-wrong')?.textContent).toBe('Bạn chọn «B»: Sai: b.');
+    await fireEvent.click(container.querySelector('[data-next]')!);
+    await fireEvent.click(opt('A đúng'));
+    expect(container.querySelector('.feedback .why-wrong')).toBeNull();
+    await fireEvent.click(container.querySelector('[data-next]')!);
+    await waitFor(() => expect(container.querySelector('.review')).not.toBeNull());
+    expect(container.querySelector('.review .why-wrong')?.textContent).toBe('Bạn chọn «B»: Sai: b.');
   });
 });

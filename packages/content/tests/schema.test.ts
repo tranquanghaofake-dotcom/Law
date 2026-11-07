@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { chapterSchema, conceptSchema } from '../src/schema';
+import { chapterSchema, conceptSchema, quizQuestionSchema } from '../src/schema';
 
 const base = {
   id: 'tai-san', subject: 'dan-su', chapter: 'tai-san', term: 'Tài sản',
@@ -147,5 +147,15 @@ describe('memo.case (hỏi – đáp), memo.contrast (câu phân biệt), icon n
     expect(conceptSchema.safeParse({ ...base, memo: { ...memo, tree: [{ label: 'A', icon: '🏛️' }, { label: 'B' }] } }).success).toBe(false);
     expect(conceptSchema.safeParse({ ...base, memo: { ...memo, tree: [{ label: 'A', icon: 'khong-co' }, { label: 'B' }] } }).success).toBe(false);
     expect(conceptSchema.safeParse({ ...base, memo: { ...memo, tree: [{ label: 'A', icon: 'scales' }, { label: 'B' }] } }).success).toBe(true);
+  });
+});
+
+describe('quizQuestionSchema: why (tuỳ chọn) cho câu trong bộ đề', () => {
+  const qq = { q: 'Đặt cọc nhằm gì?', options: ['A', 'B', 'C', 'D'], answer: 0, explain: 'Điều 328.', basis: 'Khoản 1 Điều 328 BLDS 2015' };
+  it('không có why vẫn hợp lệ; có why thì đúng 4 câu, không rỗng', () => {
+    expect(quizQuestionSchema.safeParse(qq).success).toBe(true);
+    expect(quizQuestionSchema.safeParse({ ...qq, why: ['Đúng.', 'Sai.', 'Sai.', 'Sai.'] }).success).toBe(true);
+    expect(quizQuestionSchema.safeParse({ ...qq, why: ['Đúng.', 'Sai.'] }).success).toBe(false);
+    expect(quizQuestionSchema.safeParse({ ...qq, why: ['Đúng.', '', 'Sai.', 'Sai.'] }).success).toBe(false);
   });
 });

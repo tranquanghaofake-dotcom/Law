@@ -146,8 +146,14 @@ export function whyOf(concept: Concept, item: StepItem, opts: { correct: boolean
 
 /** Câu `why` của phương án đã chọn (khác đáp án). Không có dữ liệu thì null. */
 export function wrongWhy(item: StepItem, chosen: string | undefined): { option: string; text: string } | null {
-  if ((item.type !== 'mcq' && item.type !== 'case') || !item.why || chosen === undefined) return null;
-  const i = item.options.indexOf(chosen);
-  if (i < 0 || i === item.answer || !item.why[i]) return null;
-  return { option: chosen, text: item.why[i] };
+  if (item.type !== 'mcq' && item.type !== 'case') return null;
+  return pickedWhy(item, chosen);
+}
+
+/** Như wrongWhy nhưng cho mọi câu có options/answer/why (bộ đề 10 câu). Tìm theo chữ của phương án nên không phụ thuộc thứ tự xáo. */
+export function pickedWhy(q: { options: string[]; answer: number; why?: string[] }, chosen: string | undefined): { option: string; text: string } | null {
+  if (!q.why || chosen === undefined) return null;
+  const i = q.options.indexOf(chosen);
+  if (i < 0 || i === q.answer || !q.why[i]) return null;
+  return { option: chosen, text: q.why[i] };
 }

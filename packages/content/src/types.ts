@@ -83,6 +83,8 @@ export type QuizQuestion = {
   basis: string;
   url?: string;
   concept?: string;
+  /** Lời giải thích từng phương án, cùng thứ tự với options. */
+  why?: string[];
 };
 export type QuizSet = {
   id: string;

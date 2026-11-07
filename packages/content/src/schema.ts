@@ -159,6 +159,7 @@ export const quizQuestionSchema = z.object({
   basis: z.string().min(1),
   url: z.string().optional(),
   concept: slug.optional(),
+  why: z.array(z.string().min(1, 'why không được để trống')).length(4, 'why cần 4 lời giải thích, mỗi phương án một câu').optional(),
 });
 export const quizSetSchema = z.object({
   id: slug,

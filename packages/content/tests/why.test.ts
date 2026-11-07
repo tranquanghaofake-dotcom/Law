@@ -25,3 +25,22 @@ describe('why: giải thích từng phương án ở các môn đã làm', () =>
     });
   }
 });
+
+// Bộ đề 10 câu: bộ đã làm xong thì thêm id vào SETS_DONE (cùng quy tắc như trên).
+const SETS_DONE: string[] = [];
+
+describe('why: bộ đề đã làm', () => {
+  it('danh sách SETS_DONE trỏ tới bộ đề có thật', () => {
+    const ids = readdirSync(join(DATA_DIR, 'sets')).map((f) => f.replace(/\.json$/, ''));
+    for (const id of SETS_DONE) expect(ids, id).toContain(id);
+  });
+  for (const id of SETS_DONE) {
+    it(id, () => {
+      const s = JSON.parse(readFileSync(join(DATA_DIR, 'sets', `${id}.json`), 'utf8')) as { questions: Item[] };
+      for (const q of s.questions) {
+        expect(q.why?.length, `${id}: ${q.q}`).toBe(4);
+        q.why!.forEach((w, k) => expect(w.startsWith('Đúng'), `${id}: ${q.q} #${k}`).toBe(k === q.answer));
+      }
+    });
+  }
+});
