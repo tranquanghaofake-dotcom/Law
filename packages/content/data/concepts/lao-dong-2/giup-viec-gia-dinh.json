@@ -69,12 +69,12 @@
   {
    "type": "mcq",
    "level": 1,
-   "q": "Công việc nào KHÔNG phải công việc của lao động là người giúp việc gia đình?",
+   "q": "Công việc nào sau đây là công việc trong gia đình của lao động là người giúp việc gia đình?",
    "options": [
+    "Làm vườn, chăm cây cảnh và trồng rau trong nhà",
     "Bán hàng tại cửa hàng kinh doanh của gia đình",
-    "Chăm sóc trẻ em và người già trong gia đình",
-    "Lái xe đưa đón các thành viên trong gia đình",
-    "Làm vườn, chăm cây cảnh và trồng rau trong nhà"
+    "Phụ bếp cho nhà hàng do gia đình mở",
+    "Giao hàng cho cửa hàng buôn bán của gia đình"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 161: không liên quan đến hoạt động thương mại.",
@@ -83,10 +83,10 @@
     "cite": "Điều 161 Bộ luật Lao động 2019 (sửa đổi, bổ sung đến năm 2025)"
    },
    "why": [
-    "Đúng: khoản 1 Điều 161 loại trừ công việc liên quan đến hoạt động thương mại, như bán hàng ở cửa hàng.",
-    "Sai: chăm sóc trẻ em, người già là công việc trong gia đình theo khoản 1 Điều 161.",
-    "Sai: lái xe được khoản 1 Điều 161 liệt kê là công việc trong gia đình.",
-    "Sai: làm vườn được khoản 1 Điều 161 liệt kê là công việc trong gia đình."
+    "Đúng: khoản 1 Điều 161 liệt kê làm vườn là công việc trong gia đình.",
+    "Sai: bán hàng ở cửa hàng là hoạt động thương mại; khoản 1 Điều 161 chỉ tính công việc không liên quan đến hoạt động thương mại.",
+    "Sai: phụ bếp cho nhà hàng kinh doanh là hoạt động thương mại, nằm ngoài khoản 1 Điều 161.",
+    "Sai: giao hàng cho cửa hàng buôn bán là hoạt động thương mại, nằm ngoài khoản 1 Điều 161."
    ]
   },
   {

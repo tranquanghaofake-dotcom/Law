@@ -72,7 +72,7 @@
   {
    "type": "mcq",
    "level": 1,
-   "q": "Điều kiện nào là điều kiện để người lao động nước ngoài làm việc tại Việt Nam?",
+   "q": "Người nước ngoài phải đáp ứng điều kiện nào để làm việc tại Việt Nam?",
    "options": [
     "Có giấy phép lao động do cơ quan có thẩm quyền của Việt Nam cấp, trừ trường hợp miễn",
     "Có quốc tịch Việt Nam và thường trú tại Việt Nam trên ba năm liên tục trước đó",
@@ -163,9 +163,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Mọi người lao động nước ngoài làm việc tại Việt Nam đều phải có giấy phép lao động.",
+   "statement": "Người lao động nước ngoài vào Việt Nam dưới 03 tháng để chào bán dịch vụ vẫn phải xin giấy phép lao động.",
    "answer": false,
-   "explain": "Sai. Điểm d khoản 1 Điều 151 trừ trường hợp không thuộc diện cấp giấy phép tại Điều 154."
+   "explain": "Sai. Khoản 4 Điều 154: vào Việt Nam dưới 03 tháng để chào bán dịch vụ thì không thuộc diện cấp giấy phép lao động."
   },
   {
    "type": "recall",

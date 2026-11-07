@@ -2,7 +2,7 @@
 
 Tổng khái niệm: 740. Chỉ liệt kê, không tự sửa. Ngưỡng chặn tăng nằm ở `packages/content/tests/quality.test.ts`.
 
-## Stem phủ định (cái nào KHÔNG/SAI…): đổi sang hỏi khẳng định — 116 câu
+## Stem phủ định (cái nào KHÔNG/SAI…): đổi sang hỏi khẳng định — 115 câu
 
 ### chung-khoan (20)
 - `bao-lanh-phat-hanh-chung-khoan` #1: Tổ chức bảo lãnh phát hành chứng khoán ra công chúng KHÔNG được có quan hệ nào với tổ chức phát hành?
@@ -167,10 +167,7 @@ Tổng khái niệm: 740. Chỉ liệt kê, không tự sửa. Ngưỡng chặn 
 - `giam-doc-tham` #3: Bản án đã có hiệu lực của Tòa án nhân dân khu vực áp dụng sai điều luật, gây thiệt hại cho người khởi kiện. Thủ tục nào phù hợp để xem xét lại?
 - `khieu-kien-loai-tru` #0: Nhóm nào KHÔNG thuộc các trường hợp loại trừ ở khoản 1 Điều 30?
 
-### lao-dong-2 (1)
-- `giup-viec-gia-dinh` #0: Công việc nào KHÔNG phải công việc của lao động là người giúp việc gia đình?
-
-## Đáp án đúng trùng chữ với stem nhiều nhất: viết lại nhiễu cho trùng chữ tương đương — 220 câu
+## Đáp án đúng trùng chữ với stem nhiều nhất: viết lại nhiễu cho trùng chữ tương đương — 215 câu
 
 ### hien-phap (41)
 - `bai-nhiem-dai-bieu` #0: Theo khoản 2 Điều 7 Hiến pháp 2013, chủ thể nào có thể bãi nhiệm đại biểu Quốc hội?
@@ -369,14 +366,6 @@ Tổng khái niệm: 740. Chỉ liệt kê, không tự sửa. Ngưỡng chặn 
 - `to-chuc-dai-dien-nguoi-lao-dong` #0: Tổ chức đại diện người lao động tại cơ sở gồm những tổ chức nào?
 - `tro-cap-thoi-viec` #1: Tiền lương để tính trợ cấp thôi việc là gì?
 
-### lao-dong-2 (6)
-- `bao-ve-thai-san` #1: Người lao động đang nuôi con dưới 12 tháng tuổi có thể làm thêm giờ khi nào?
-- `hop-dong-cho-thue-lai` #1: Doanh nghiệp cho thuê lại lao động phải đáp ứng điều kiện nào?
-- `lao-dong-nuoc-ngoai` #0: Điều kiện nào là điều kiện để người lao động nước ngoài làm việc tại Việt Nam?
-- `nghiem-cam-voi-giup-viec` #0: Hành vi nào bị nghiêm cấm đối với người sử dụng lao động là người giúp việc gia đình?
-- `nguoi-lao-dong-cao-tuoi` #0: Người lao động cao tuổi được xác định thế nào?
-- `nld-di-lam-viec-nuoc-ngoai` #1: Ai là "người sử dụng lao động ở nước ngoài" theo Luật 69/2020/QH14?
-
 ### dan-su-2 (5)
 - `bao-lanh` #1: Khi nào bên bảo lãnh phải thực hiện nghĩa vụ thay?
 - `bien-phap-bao-dam` #1: Biện pháp bảo đảm phát sinh hiệu lực đối kháng với người thứ ba từ khi nào?
@@ -442,7 +431,10 @@ Tổng khái niệm: 740. Chỉ liệt kê, không tự sửa. Ngưỡng chặn 
 ### an-sinh-xa-hoi (1)
 - `nguyen-tac-bao-hiem-xa-hoi` #0: Mức hưởng bảo hiểm xã hội được tính trên cơ sở nào?
 
-## Nhận định Sai chứa từ tuyệt đối (mọi/chỉ/luôn/đều…): thêm nhận định Sai không có mẹo này — 237 câu
+### lao-dong-2 (1)
+- `nld-di-lam-viec-nuoc-ngoai` #1: Ai là "người sử dụng lao động ở nước ngoài" theo Luật 69/2020/QH14?
+
+## Nhận định Sai chứa từ tuyệt đối (mọi/chỉ/luôn/đều…): thêm nhận định Sai không có mẹo này — 236 câu
 
 ### hien-phap (37)
 - `bai-nhiem-dai-bieu` #5: Theo Hiến pháp 2013, chỉ Quốc hội mới có quyền bãi nhiệm đại biểu Quốc hội; cử tri không có quyền này.
@@ -727,6 +719,3 @@ Tổng khái niệm: 740. Chỉ liệt kê, không tự sửa. Ngưỡng chặn 
 - `cong-ty-co-phan-1990` #5: Theo Luật Công ty 1990, công ty cổ phần chỉ cần tối thiểu ba cổ đông.
 - `hngd-1959-ket-hon-ly-hon` #5: Theo Luật HNGĐ 1959, khi người vợ có thai, cả vợ và chồng đều không được xin ly hôn.
 - `sac-lenh-97-dan-luat` #5: Theo Sắc lệnh 97/SL, con đã thành niên vẫn bắt buộc phải có cha mẹ đồng ý mới được kết hôn.
-
-### lao-dong-2 (1)
-- `lao-dong-nuoc-ngoai` #5: Mọi người lao động nước ngoài làm việc tại Việt Nam đều phải có giấy phép lao động.

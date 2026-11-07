@@ -70,9 +70,9 @@
    "q": "Người lao động cao tuổi được xác định thế nào?",
    "options": [
     "Người tiếp tục lao động sau độ tuổi theo khoản 2 Điều 169 BLLĐ",
-    "Người từ đủ 45 tuổi trở lên đang làm việc hợp pháp ở nơi làm",
-    "Người từ đủ 60 tuổi không phân biệt giới tính và việc làm",
-    "Người từ đủ 75 tuổi trở lên đang làm việc tại nơi làm việc"
+    "Người lao động từ đủ 45 tuổi trở lên đang làm việc hợp pháp ở nơi làm",
+    "Người lao động từ đủ 60 tuổi không phân biệt giới tính và việc làm",
+    "Người lao động từ đủ 75 tuổi trở lên đang làm việc tại nơi làm việc"
    ],
    "answer": 0,
    "explain": "Khoản 1 Điều 148.",
