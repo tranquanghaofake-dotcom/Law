@@ -90,7 +90,7 @@
   {
    "type": "mcq",
    "level": 1,
-   "q": "Đưa thông tin không trung thực về doanh nghiệp khác gây ảnh hưởng xấu đến uy tín của họ là hành vi nào?",
+   "q": "Doanh nghiệp A tung tin sai sự thật về chất lượng sản phẩm của đối thủ B khiến B mất uy tín trên thị trường. Hành vi của A thuộc loại nào?",
    "options": [
     "Cung cấp thông tin không trung thực về doanh nghiệp khác",
     "Thỏa thuận hạn chế cạnh tranh giữa các doanh nghiệp cùng ngành",
@@ -158,9 +158,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "So sánh sản phẩm của mình với đối thủ luôn bị cấm.",
+   "statement": "So sánh hàng hóa, dịch vụ của mình với hàng hóa, dịch vụ cùng loại của doanh nghiệp khác bị cấm ngay cả khi doanh nghiệp chứng minh được nội dung so sánh.",
    "answer": false,
-   "explain": "Sai. Chỉ bị cấm khi không chứng minh được nội dung so sánh (điểm b khoản 5 Điều 45)."
+   "explain": "Sai. Điểm b khoản 5 Điều 45 chỉ cấm việc so sánh mà không chứng minh được nội dung; so sánh chứng minh được thì không thuộc hành vi bị cấm này."
   },
   {
    "type": "recall",

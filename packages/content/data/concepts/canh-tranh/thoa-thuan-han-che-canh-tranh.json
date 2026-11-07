@@ -95,7 +95,7 @@
    "level": 1,
    "q": "Thỏa thuận để một bên thắng thầu khi các bên cùng tham gia đấu thầu thuộc loại nào trong Điều 11?",
    "options": [
-    "Khoản 4 Điều 11 (thông đồng đấu thầu)",
+    "Khoản 4 Điều 11 (thông đồng)",
     "Khoản 1 Điều 11 (ấn định giá)",
     "Không phải thỏa thuận hạn chế",
     "Hành vi cạnh tranh không lành mạnh"
@@ -161,9 +161,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Thỏa thuận miệng giữa các doanh nghiệp không thể bị coi là thỏa thuận hạn chế cạnh tranh.",
+   "statement": "Thỏa thuận hạn chế cạnh tranh được các bên giao kết bằng lời nói hoặc ngầm hiểu, không lập thành văn bản, thì không bị coi là thỏa thuận hạn chế cạnh tranh.",
    "answer": false,
-   "explain": "Sai. Khoản 4 Điều 3: \"dưới mọi hình thức\"."
+   "explain": "Sai. Khoản 4 Điều 3: thỏa thuận hạn chế cạnh tranh là thỏa thuận giữa các bên \"dưới mọi hình thức\" gây hoặc có khả năng gây tác động hạn chế cạnh tranh."
   },
   {
    "type": "recall",

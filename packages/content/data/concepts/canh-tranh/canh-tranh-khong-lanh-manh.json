@@ -165,9 +165,9 @@
   {
    "type": "truefalse",
    "level": 4,
-   "statement": "Chỉ khi thiệt hại thực tế đã xảy ra mới có hành vi cạnh tranh không lành mạnh.",
+   "statement": "Hành vi cạnh tranh không lành mạnh đòi hỏi phải có thiệt hại thực tế đã xảy ra đối với quyền và lợi ích hợp pháp của doanh nghiệp khác.",
    "answer": false,
-   "explain": "Sai. Khoản 6 Điều 3: \"gây thiệt hại hoặc có thể gây thiệt hại\"."
+   "explain": "Sai. Khoản 6 Điều 3 Luật Cạnh tranh 2018: hành vi \"gây thiệt hại hoặc có thể gây thiệt hại\" — khả năng gây thiệt hại là đủ, không cần thiệt hại thực tế."
   },
   {
    "type": "recall",
