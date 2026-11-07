@@ -160,7 +160,27 @@
    "level": 4,
    "statement": "Giao dịch do người đại diện vượt quá phạm vi đại diện luôn ràng buộc người được đại diện.",
    "answer": false,
-   "explain": "Sai. Điều 143: không làm phát sinh quyền, nghĩa vụ với phần vượt quá, trừ khi người được đại diện đồng ý, biết mà không phản đối hoặc có lỗi."
+   "explain": "Sai. Điều 143: không làm phát sinh quyền, nghĩa vụ với phần vượt quá, trừ khi người được đại diện đồng ý, biết mà không phản đối hoặc có lỗi.",
+   "parts": {
+    "basis": {
+     "options": [
+      "Khoản 1 Điều 134 Bộ luật Dân sự 2015",
+      "Điều 141 Bộ luật Dân sự 2015",
+      "Khoản 1 Điều 143 Bộ luật Dân sự 2015",
+      "Khoản 2 Điều 117 Bộ luật Dân sự 2015"
+     ],
+     "answer": 2
+    },
+    "reason": {
+     "options": [
+      "Người được đại diện luôn chịu mọi giao dịch do người đại diện xác lập.",
+      "Giao dịch vượt quá phạm vi đại diện vô hiệu toàn bộ trong mọi trường hợp.",
+      "Chỉ người đại diện chịu trách nhiệm, người được đại diện không bao giờ bị ràng buộc.",
+      "Phần vượt quá phạm vi không ràng buộc người được đại diện, trừ khi họ đồng ý, biết mà không phản đối hoặc có lỗi."
+     ],
+     "answer": 3
+    }
+   }
   },
   {
    "type": "recall",

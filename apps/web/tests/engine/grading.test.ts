@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { buildBank, gradeCloze, gradeRecall, normalize, parseCloze } from '$lib/engine/grading';
+import { buildBank, gradeCloze, gradeRecall, normalize, parseCloze, scoreNhanDinh } from '$lib/engine/grading';
 
 describe('normalize', () => {
   it('hạ chữ thường, bỏ dấu câu, gộp khoảng trắng', () => {
@@ -42,5 +42,22 @@ describe('gradeRecall', () => {
     expect(r.hits).toEqual(['quyền tài sản', 'trị giá được bằng tiền']);
     expect(r.missing).toEqual(['Điều 115']);
     expect(r.score).toBeCloseTo(2 / 3);
+  });
+});
+
+describe('scoreNhanDinh: chấm nhận định 0,25 · 0,25 · 0,5', () => {
+  const item = { answer: false, parts: { basis: { options: ['a', 'b', 'c', 'd'], answer: 2 }, reason: { options: ['a', 'b', 'c', 'd'], answer: 0 } } };
+  it('đúng cả 3 phần: 1 điểm, tính là đúng', () => {
+    expect(scoreNhanDinh(item, { tf: false, basis: 2, reason: 0 })).toEqual({ score: 1, parts: { tf: true, basis: true, reason: true }, correct: true, grade: 'dung' });
+  });
+  it('sai Đúng/Sai nhưng đúng căn cứ, lập luận: 0,75, gần đúng', () => {
+    expect(scoreNhanDinh(item, { tf: true, basis: 2, reason: 0 })).toMatchObject({ score: 0.75, correct: true, grade: 'gan' });
+  });
+  it('chỉ đúng lập luận: 0,5, gần đúng; chỉ đúng Đúng/Sai và căn cứ: 0,5, gần đúng', () => {
+    expect(scoreNhanDinh(item, { tf: true, basis: 1, reason: 0 })).toMatchObject({ score: 0.5, grade: 'gan' });
+    expect(scoreNhanDinh(item, { tf: false, basis: 2, reason: 3 })).toMatchObject({ score: 0.5, grade: 'gan' });
+  });
+  it('dưới 0,5: tính là sai', () => {
+    expect(scoreNhanDinh(item, { tf: false, basis: 1, reason: 3 })).toMatchObject({ score: 0.25, correct: false, grade: 'sai' });
   });
 });

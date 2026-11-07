@@ -57,6 +57,9 @@ export const itemRecallSchema = z.object({
   keywords: z.array(z.string().min(1)).min(3, 'recall cần 3–5 từ khóa').max(5, 'recall cần 3–5 từ khóa'),
 });
 
+/** Một phần của nhận định 3 phần: 4 phương án, một đáp án. */
+const ndPartSchema = z.object({ options: z.array(z.string().min(1)).length(4), answer: z.number().int().min(0).max(3) });
+
 export const itemTrueFalseSchema = z.object({
   type: z.literal('truefalse'),
   level: z.literal(4),
@@ -64,6 +67,7 @@ export const itemTrueFalseSchema = z.object({
   answer: z.boolean(),
   explain: z.string().min(1),
   source: sourceSchema.optional(),
+  parts: z.object({ basis: ndPartSchema, reason: ndPartSchema }).optional(),
 });
 
 export const itemSchema = z.discriminatedUnion('type', [

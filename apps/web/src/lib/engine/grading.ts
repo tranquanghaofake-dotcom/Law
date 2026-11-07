@@ -57,3 +57,14 @@ export function gradeRecall(text: string, keywords: string[]): { hits: string[];
   const missing = keywords.filter((k) => !hits.includes(k));
   return { hits, missing, score: keywords.length ? hits.length / keywords.length : 0 };
 }
+
+/** Nhận định 3 phần: Đúng/Sai 0,25 · căn cứ 0,25 · lập luận 0,5. 1 điểm = đúng; ≥ 0,5 = gần đúng (FSRS Hard, giữ bậc); < 0,5 = sai. */
+export function scoreNhanDinh(
+  item: { answer: boolean; parts: { basis: { answer: number }; reason: { answer: number } } },
+  pick: { tf: boolean; basis: number; reason: number },
+): { score: number; parts: { tf: boolean; basis: boolean; reason: boolean }; correct: boolean; grade: 'dung' | 'gan' | 'sai' } {
+  const parts = { tf: pick.tf === item.answer, basis: pick.basis === item.parts.basis.answer, reason: pick.reason === item.parts.reason.answer };
+  const score = (parts.tf ? 0.25 : 0) + (parts.basis ? 0.25 : 0) + (parts.reason ? 0.5 : 0);
+  const grade = score === 1 ? 'dung' : score >= 0.5 ? 'gan' : 'sai';
+  return { score, parts, correct: grade !== 'sai', grade };
+}

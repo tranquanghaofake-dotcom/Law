@@ -161,7 +161,27 @@
    "level": 4,
    "statement": "Pháp nhân có thể lập di chúc.",
    "answer": false,
-   "explain": "Sai. Điều 624: di chúc là ý chí của cá nhân; pháp nhân chỉ có thể là người được hưởng theo di chúc (Điều 609)."
+   "explain": "Sai. Điều 624: di chúc là ý chí của cá nhân; pháp nhân chỉ có thể là người được hưởng theo di chúc (Điều 609).",
+   "parts": {
+    "basis": {
+     "options": [
+      "Điều 609 Bộ luật Dân sự 2015",
+      "Điều 116 Bộ luật Dân sự 2015",
+      "Khoản 1 Điều 74 Bộ luật Dân sự 2015",
+      "Điều 624 Bộ luật Dân sự 2015"
+     ],
+     "answer": 3
+    },
+    "reason": {
+     "options": [
+      "Pháp nhân có tư cách chủ thể nên được lập di chúc như cá nhân.",
+      "Pháp nhân lập di chúc nếu được cơ quan chủ quản đồng ý.",
+      "Di chúc là ý chí của cá nhân để chuyển tài sản sau khi chết; pháp nhân không lập di chúc.",
+      "Pháp nhân không được hưởng di sản theo di chúc."
+     ],
+     "answer": 2
+    }
+   }
   },
   {
    "type": "recall",

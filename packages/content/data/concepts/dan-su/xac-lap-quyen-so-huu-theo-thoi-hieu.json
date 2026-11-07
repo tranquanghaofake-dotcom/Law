@@ -162,7 +162,27 @@
    "level": 4,
    "statement": "Người biết rõ tài sản là của người khác nhưng vẫn chiếm hữu công khai đủ 30 năm thì trở thành chủ sở hữu theo Điều 236.",
    "answer": false,
-   "explain": "Sai. Điều 236 đòi hỏi chiếm hữu ngay tình; biết rõ tài sản của người khác là không ngay tình."
+   "explain": "Sai. Điều 236 đòi hỏi chiếm hữu ngay tình; biết rõ tài sản của người khác là không ngay tình.",
+   "parts": {
+    "basis": {
+     "options": [
+      "Khoản 1 Điều 179 Bộ luật Dân sự 2015",
+      "Điều 158 Bộ luật Dân sự 2015",
+      "Điều 236 Bộ luật Dân sự 2015",
+      "Khoản 1 Điều 623 Bộ luật Dân sự 2015"
+     ],
+     "answer": 2
+    },
+    "reason": {
+     "options": [
+      "Chỉ cần chiếm hữu công khai đủ 30 năm là đủ.",
+      "Điều 236 chỉ áp dụng với động sản.",
+      "Thời hạn 30 năm thay thế được điều kiện ngay tình.",
+      "Điều 236 đòi chiếm hữu ngay tình; biết rõ tài sản của người khác là không ngay tình."
+     ],
+     "answer": 3
+    }
+   }
   },
   {
    "type": "recall",

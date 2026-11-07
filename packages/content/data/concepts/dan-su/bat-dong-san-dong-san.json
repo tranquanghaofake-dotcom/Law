@@ -164,7 +164,27 @@
    "level": 4,
    "statement": "Xe ô tô phải đăng ký quyền sở hữu nên là bất động sản.",
    "answer": false,
-   "explain": "Sai. Ô tô là động sản (không thuộc danh mục khoản 1 Điều 107); việc phải đăng ký không làm thay đổi tính chất động sản."
+   "explain": "Sai. Ô tô là động sản (không thuộc danh mục khoản 1 Điều 107); việc phải đăng ký không làm thay đổi tính chất động sản.",
+   "parts": {
+    "basis": {
+     "options": [
+      "Điều 105 Bộ luật Dân sự 2015",
+      "Điều 115 Bộ luật Dân sự 2015",
+      "Điều 107 Bộ luật Dân sự 2015",
+      "Điều 158 Bộ luật Dân sự 2015"
+     ],
+     "answer": 2
+    },
+    "reason": {
+     "options": [
+      "Tài sản phải đăng ký quyền sở hữu đều là bất động sản.",
+      "Ô tô là bất động sản vì có giá trị lớn.",
+      "Ô tô vừa là động sản vừa là bất động sản tùy mục đích dùng.",
+      "Ô tô không thuộc danh mục bất động sản; việc phải đăng ký không làm nó thành bất động sản."
+     ],
+     "answer": 3
+    }
+   }
   },
   {
    "type": "recall",
@@ -188,6 +208,26 @@
     "kind": "statute",
     "cite": "Khoản 2 Điều 107 Bộ luật Dân sự 2015",
     "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+   },
+   "parts": {
+    "basis": {
+     "options": [
+      "Khoản 1 Điều 107 Bộ luật Dân sự 2015",
+      "Điều 105 Bộ luật Dân sự 2015",
+      "Điều 115 Bộ luật Dân sự 2015",
+      "Khoản 2 Điều 107 Bộ luật Dân sự 2015"
+     ],
+     "answer": 3
+    },
+    "reason": {
+     "options": [
+      "Động sản là tài sản có thể di chuyển mà không cần đăng ký.",
+      "Động sản chỉ gồm tiền và giấy tờ có giá.",
+      "Luật định nghĩa động sản bằng cách loại trừ: tài sản không phải bất động sản là động sản.",
+      "Động sản là tài sản có giá trị nhỏ hơn bất động sản."
+     ],
+     "answer": 2
+    }
    }
   }
  ]

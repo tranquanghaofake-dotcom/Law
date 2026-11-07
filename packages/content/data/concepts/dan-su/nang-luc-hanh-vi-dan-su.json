@@ -159,7 +159,27 @@
    "level": 4,
    "statement": "Mọi người từ đủ 18 tuổi đều có năng lực hành vi dân sự đầy đủ, không có ngoại lệ.",
    "answer": false,
-   "explain": "Sai. Khoản 2 Điều 20 trừ các trường hợp tại Điều 22, 23, 24."
+   "explain": "Sai. Khoản 2 Điều 20 trừ các trường hợp tại Điều 22, 23, 24.",
+   "parts": {
+    "basis": {
+     "options": [
+      "Điều 19 Bộ luật Dân sự 2015",
+      "Khoản 2 Điều 20 Bộ luật Dân sự 2015",
+      "Khoản 1 Điều 16 Bộ luật Dân sự 2015",
+      "Điều 21 Bộ luật Dân sự 2015"
+     ],
+     "answer": 1
+    },
+    "reason": {
+     "options": [
+      "Người thành niên có năng lực hành vi đầy đủ, trừ trường hợp mất, hạn chế năng lực hoặc khó khăn trong nhận thức, làm chủ hành vi.",
+      "Năng lực hành vi đầy đủ chỉ phụ thuộc vào tuổi.",
+      "Người từ đủ 18 tuổi không thể bị Tòa án tuyên mất năng lực hành vi.",
+      "Năng lực hành vi đầy đủ có từ khi sinh ra."
+     ],
+     "answer": 0
+    }
+   }
   },
   {
    "type": "recall",

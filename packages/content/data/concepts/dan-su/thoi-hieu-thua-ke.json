@@ -170,7 +170,27 @@
    "level": 4,
    "statement": "Hết thời hiệu chia di sản thì di sản mặc nhiên thuộc về Nhà nước.",
    "answer": false,
-   "explain": "Sai. Khoản 1 Điều 623: di sản thuộc về người thừa kế đang quản lý; không có thì xử lý theo Điều 236; chỉ khi không có người chiếm hữu mới thuộc Nhà nước."
+   "explain": "Sai. Khoản 1 Điều 623: di sản thuộc về người thừa kế đang quản lý; không có thì xử lý theo Điều 236; chỉ khi không có người chiếm hữu mới thuộc Nhà nước.",
+   "parts": {
+    "basis": {
+     "options": [
+      "Khoản 3 Điều 623 Bộ luật Dân sự 2015",
+      "Khoản 1 Điều 623 Bộ luật Dân sự 2015",
+      "Điều 236 Bộ luật Dân sự 2015",
+      "Điều 149 Bộ luật Dân sự 2015"
+     ],
+     "answer": 1
+    },
+    "reason": {
+     "options": [
+      "Hết thời hiệu, di sản thuộc người thừa kế đang quản lý; Nhà nước chỉ nhận khi không có người chiếm hữu.",
+      "Hết thời hiệu thì di sản luôn thuộc Nhà nước.",
+      "Hết thời hiệu thì di sản chia đều cho mọi người thừa kế.",
+      "Hết thời hiệu thì di sản trở thành vô chủ, ai chiếm trước thì được."
+     ],
+     "answer": 0
+    }
+   }
   },
   {
    "type": "recall",
@@ -194,6 +214,26 @@
     "kind": "statute",
     "cite": "Khoản 3 Điều 623 Bộ luật Dân sự 2015",
     "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+   },
+   "parts": {
+    "basis": {
+     "options": [
+      "Khoản 1 Điều 623 Bộ luật Dân sự 2015",
+      "Khoản 2 Điều 623 Bộ luật Dân sự 2015",
+      "Khoản 3 Điều 623 Bộ luật Dân sự 2015",
+      "Điều 149 Bộ luật Dân sự 2015"
+     ],
+     "answer": 2
+    },
+    "reason": {
+     "options": [
+      "Thời hiệu này là 10 năm như yêu cầu xác nhận quyền thừa kế.",
+      "Thời hiệu này là 30 năm như chia di sản là bất động sản.",
+      "Yêu cầu này không bị giới hạn thời hiệu.",
+      "Thời hiệu yêu cầu người thừa kế thực hiện nghĩa vụ tài sản của người chết là 03 năm từ khi mở thừa kế."
+     ],
+     "answer": 3
+    }
    }
   }
  ]

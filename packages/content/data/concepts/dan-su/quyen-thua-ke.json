@@ -161,7 +161,27 @@
    "level": 4,
    "statement": "Người con được thành thai trước khi cha chết, sinh ra và còn sống sau thời điểm mở thừa kế vẫn được hưởng thừa kế.",
    "answer": true,
-   "explain": "Đúng. Điều 613 Bộ luật Dân sự 2015."
+   "explain": "Đúng. Điều 613 Bộ luật Dân sự 2015.",
+   "parts": {
+    "basis": {
+     "options": [
+      "Điều 609 Bộ luật Dân sự 2015",
+      "Khoản 1 Điều 644 Bộ luật Dân sự 2015",
+      "Điều 652 Bộ luật Dân sự 2015",
+      "Điều 613 Bộ luật Dân sự 2015"
+     ],
+     "answer": 3
+    },
+    "reason": {
+     "options": [
+      "Chỉ người còn sống tại thời điểm mở thừa kế mới được hưởng.",
+      "Thai nhi được hưởng dù sinh ra không còn sống.",
+      "Người thừa kế có thể là người đã thành thai trước khi người để lại di sản chết và sinh ra còn sống sau đó.",
+      "Người sinh sau thời điểm mở thừa kế không bao giờ được hưởng."
+     ],
+     "answer": 2
+    }
+   }
   },
   {
    "type": "recall",

@@ -160,7 +160,27 @@
    "level": 4,
    "statement": "Quyền hưởng dụng là quyền sở hữu tài sản.",
    "answer": false,
-   "explain": "Sai. Quyền hưởng dụng là quyền khác đối với tài sản thuộc sở hữu của chủ thể khác (Điều 159)."
+   "explain": "Sai. Quyền hưởng dụng là quyền khác đối với tài sản thuộc sở hữu của chủ thể khác (Điều 159).",
+   "parts": {
+    "basis": {
+     "options": [
+      "Điều 158 Bộ luật Dân sự 2015",
+      "Khoản 1 Điều 179 Bộ luật Dân sự 2015",
+      "Điều 236 Bộ luật Dân sự 2015",
+      "Khoản 2 Điều 159 Bộ luật Dân sự 2015"
+     ],
+     "answer": 3
+    },
+    "reason": {
+     "options": [
+      "Hưởng dụng là một dạng quyền sở hữu có thời hạn.",
+      "Người hưởng dụng có quyền định đoạt tài sản.",
+      "Hưởng dụng là quyền khác đối với tài sản thuộc sở hữu của người khác, không phải quyền sở hữu.",
+      "Hưởng dụng chỉ là chiếm hữu không có căn cứ."
+     ],
+     "answer": 2
+    }
+   }
   },
   {
    "type": "recall",
@@ -184,6 +204,26 @@
     "kind": "statute",
     "cite": "Khoản 1 Điều 159 Bộ luật Dân sự 2015",
     "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+   },
+   "parts": {
+    "basis": {
+     "options": [
+      "Khoản 1 Điều 159 Bộ luật Dân sự 2015",
+      "Điều 158 Bộ luật Dân sự 2015",
+      "Khoản 1 Điều 179 Bộ luật Dân sự 2015",
+      "Khoản 1 Điều 163 Bộ luật Dân sự 2015"
+     ],
+     "answer": 0
+    },
+    "reason": {
+     "options": [
+      "Quyền khác đối với tài sản là quyền đối với tài sản của chính mình.",
+      "Đây là định nghĩa quyền khác đối với tài sản: nắm giữ, chi phối tài sản thuộc sở hữu của người khác.",
+      "Quyền khác đối với tài sản là quyền sở hữu chung.",
+      "Quyền khác đối với tài sản chỉ phát sinh khi chủ sở hữu chết."
+     ],
+     "answer": 1
+    }
    }
   }
  ]

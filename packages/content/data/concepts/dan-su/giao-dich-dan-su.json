@@ -162,7 +162,27 @@
    "level": 4,
    "statement": "Mọi giao dịch dân sự đều cần sự thỏa thuận của ít nhất hai bên.",
    "answer": false,
-   "explain": "Sai. Hành vi pháp lý đơn phương (như lập di chúc) chỉ cần ý chí của một bên (Điều 116)."
+   "explain": "Sai. Hành vi pháp lý đơn phương (như lập di chúc) chỉ cần ý chí của một bên (Điều 116).",
+   "parts": {
+    "basis": {
+     "options": [
+      "Khoản 2 Điều 117 Bộ luật Dân sự 2015",
+      "Điều 123 Bộ luật Dân sự 2015",
+      "Điều 116 Bộ luật Dân sự 2015",
+      "Điều 624 Bộ luật Dân sự 2015"
+     ],
+     "answer": 2
+    },
+    "reason": {
+     "options": [
+      "Giao dịch dân sự chỉ gồm hợp đồng giữa hai bên trở lên.",
+      "Hành vi pháp lý đơn phương không phải giao dịch dân sự.",
+      "Mọi giao dịch phải có ít nhất ba bên tham gia.",
+      "Giao dịch dân sự gồm cả hành vi pháp lý đơn phương, chỉ cần ý chí của một bên."
+     ],
+     "answer": 3
+    }
+   }
   },
   {
    "type": "recall",
@@ -185,6 +205,26 @@
     "kind": "statute",
     "cite": "Điều 116 Bộ luật Dân sự 2015",
     "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+   },
+   "parts": {
+    "basis": {
+     "options": [
+      "Khoản 1 Điều 117 Bộ luật Dân sự 2015",
+      "Điều 123 Bộ luật Dân sự 2015",
+      "Điều 124 Bộ luật Dân sự 2015",
+      "Điều 116 Bộ luật Dân sự 2015"
+     ],
+     "answer": 3
+    },
+    "reason": {
+     "options": [
+      "Giao dịch dân sự chỉ làm phát sinh quyền, không làm chấm dứt nghĩa vụ.",
+      "Giao dịch dân sự là mọi hành vi của cá nhân trong đời sống.",
+      "Đây là định nghĩa giao dịch dân sự: hợp đồng hoặc hành vi pháp lý đơn phương làm phát sinh, thay đổi, chấm dứt quyền, nghĩa vụ.",
+      "Giao dịch dân sự chỉ gồm hợp đồng có giá trị lớn."
+     ],
+     "answer": 2
+    }
    }
   }
  ]

@@ -39,7 +39,10 @@ export type ItemTrueFalse = {
   answer: boolean;
   explain: string;
   source?: Source;
+  /** Nhận định chấm 3 phần (spec 2026-11-07-nhan-dinh-3-phan): chọn căn cứ và lập luận sau khi chọn Đúng/Sai. */
+  parts?: { basis: NdPart; reason: NdPart };
 };
+export type NdPart = { options: string[]; answer: number };
 export type Item = ItemMcq | ItemPair | ItemCloze | ItemRecall | ItemTrueFalse;
 
 export type MemoKind = 'ladder' | 'checklist' | 'steps' | 'compare' | 'tree';

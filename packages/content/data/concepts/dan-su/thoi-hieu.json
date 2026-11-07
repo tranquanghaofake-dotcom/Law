@@ -155,7 +155,27 @@
    "level": 4,
    "statement": "Theo Bộ luật Dân sự 2015, Tòa án phải tự áp dụng thời hiệu dù các bên không yêu cầu.",
    "answer": false,
-   "explain": "Sai. Khoản 2 Điều 149: chỉ áp dụng theo yêu cầu của một bên hoặc các bên."
+   "explain": "Sai. Khoản 2 Điều 149: chỉ áp dụng theo yêu cầu của một bên hoặc các bên.",
+   "parts": {
+    "basis": {
+     "options": [
+      "Khoản 1 Điều 149 Bộ luật Dân sự 2015",
+      "Điều 150 Bộ luật Dân sự 2015",
+      "Khoản 1 Điều 623 Bộ luật Dân sự 2015",
+      "Khoản 2 Điều 149 Bộ luật Dân sự 2015"
+     ],
+     "answer": 3
+    },
+    "reason": {
+     "options": [
+      "Thời hiệu là quy định bắt buộc nên Tòa án phải tự áp dụng.",
+      "Chỉ Viện kiểm sát mới được yêu cầu áp dụng thời hiệu.",
+      "Tòa án chỉ áp dụng thời hiệu theo yêu cầu của một bên hoặc các bên, đưa ra trước khi sơ thẩm ra bản án.",
+      "Thời hiệu chỉ áp dụng trong tố tụng hình sự."
+     ],
+     "answer": 2
+    }
+   }
   },
   {
    "type": "recall",

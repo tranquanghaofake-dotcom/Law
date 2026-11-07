@@ -157,7 +157,27 @@
    "level": 4,
    "statement": "Người chưa thành niên có năng lực pháp luật dân sự hạn chế hơn người thành niên.",
    "answer": false,
-   "explain": "Sai. Mọi cá nhân có năng lực pháp luật dân sự như nhau (khoản 2 Điều 16); thứ khác nhau theo tuổi là năng lực hành vi."
+   "explain": "Sai. Mọi cá nhân có năng lực pháp luật dân sự như nhau (khoản 2 Điều 16); thứ khác nhau theo tuổi là năng lực hành vi.",
+   "parts": {
+    "basis": {
+     "options": [
+      "Điều 19 Bộ luật Dân sự 2015",
+      "Điều 21 Bộ luật Dân sự 2015",
+      "Khoản 2 Điều 16 Bộ luật Dân sự 2015",
+      "Khoản 2 Điều 20 Bộ luật Dân sự 2015"
+     ],
+     "answer": 2
+    },
+    "reason": {
+     "options": [
+      "Năng lực pháp luật tăng dần theo tuổi của cá nhân.",
+      "Người chưa thành niên chưa có năng lực pháp luật dân sự.",
+      "Năng lực pháp luật và năng lực hành vi là một.",
+      "Mọi cá nhân có năng lực pháp luật dân sự như nhau; tuổi chỉ ảnh hưởng năng lực hành vi."
+     ],
+     "answer": 3
+    }
+   }
   },
   {
    "type": "recall",
@@ -181,6 +201,26 @@
     "kind": "statute",
     "cite": "Khoản 1 Điều 16 Bộ luật Dân sự 2015",
     "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+   },
+   "parts": {
+    "basis": {
+     "options": [
+      "Điều 19 Bộ luật Dân sự 2015",
+      "Khoản 2 Điều 20 Bộ luật Dân sự 2015",
+      "Điều 21 Bộ luật Dân sự 2015",
+      "Khoản 1 Điều 16 Bộ luật Dân sự 2015"
+     ],
+     "answer": 3
+    },
+    "reason": {
+     "options": [
+      "Năng lực pháp luật là khả năng tự mình xác lập, thực hiện quyền.",
+      "Năng lực pháp luật chỉ có ở người thành niên.",
+      "Đây là định nghĩa năng lực pháp luật dân sự: khả năng có quyền dân sự và nghĩa vụ dân sự.",
+      "Năng lực pháp luật là quyền được Tòa án bảo vệ."
+     ],
+     "answer": 2
+    }
    }
   }
  ]

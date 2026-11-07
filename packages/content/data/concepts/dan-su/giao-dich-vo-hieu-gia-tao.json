@@ -156,7 +156,27 @@
    "level": 4,
    "statement": "Giao dịch giả tạo nhằm trốn tránh nghĩa vụ với người thứ ba vẫn có hiệu lực.",
    "answer": false,
-   "explain": "Sai. Khoản 2 Điều 124: giao dịch đó vô hiệu."
+   "explain": "Sai. Khoản 2 Điều 124: giao dịch đó vô hiệu.",
+   "parts": {
+    "basis": {
+     "options": [
+      "Khoản 2 Điều 124 Bộ luật Dân sự 2015",
+      "Khoản 1 Điều 124 Bộ luật Dân sự 2015",
+      "Điều 123 Bộ luật Dân sự 2015",
+      "Khoản 2 Điều 117 Bộ luật Dân sự 2015"
+     ],
+     "answer": 0
+    },
+    "reason": {
+     "options": [
+      "Giao dịch giả tạo có hiệu lực nếu các bên tự nguyện.",
+      "Giao dịch xác lập nhằm trốn tránh nghĩa vụ với người thứ ba thì vô hiệu.",
+      "Giao dịch giả tạo chỉ vô hiệu khi có công chứng.",
+      "Người thứ ba không có quyền gì với giao dịch giả tạo."
+     ],
+     "answer": 1
+    }
+   }
   },
   {
    "type": "recall",

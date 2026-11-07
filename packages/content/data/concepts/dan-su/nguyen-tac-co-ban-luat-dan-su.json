@@ -154,7 +154,27 @@
    "level": 4,
    "statement": "Thỏa thuận hợp pháp giữa hai bên chỉ có giá trị với hai bên, người khác không phải tôn trọng.",
    "answer": false,
-   "explain": "Sai. Khoản 2 Điều 3: thỏa thuận hợp pháp có hiệu lực với các bên và phải được chủ thể khác tôn trọng."
+   "explain": "Sai. Khoản 2 Điều 3: thỏa thuận hợp pháp có hiệu lực với các bên và phải được chủ thể khác tôn trọng.",
+   "parts": {
+    "basis": {
+     "options": [
+      "Khoản 3 Điều 3 Bộ luật Dân sự 2015",
+      "Điều 116 Bộ luật Dân sự 2015",
+      "Khoản 2 Điều 117 Bộ luật Dân sự 2015",
+      "Khoản 2 Điều 3 Bộ luật Dân sự 2015"
+     ],
+     "answer": 3
+    },
+    "reason": {
+     "options": [
+      "Thỏa thuận chỉ ràng buộc các bên, người khác có thể bỏ qua.",
+      "Thỏa thuận chỉ được tôn trọng khi có công chứng.",
+      "Cam kết, thỏa thuận hợp pháp có hiệu lực với các bên và phải được chủ thể khác tôn trọng.",
+      "Thỏa thuận chỉ có hiệu lực khi Nhà nước phê duyệt."
+     ],
+     "answer": 2
+    }
+   }
   },
   {
    "type": "recall",
@@ -178,6 +198,26 @@
     "kind": "statute",
     "cite": "Khoản 3 Điều 3 Bộ luật Dân sự 2015",
     "url": "https://thuvienphapluat.vn/van-ban/Quyen-dan-su/Bo-luat-dan-su-2015-296215.aspx"
+   },
+   "parts": {
+    "basis": {
+     "options": [
+      "Khoản 3 Điều 3 Bộ luật Dân sự 2015",
+      "Khoản 2 Điều 3 Bộ luật Dân sự 2015",
+      "Khoản 1 Điều 3 Bộ luật Dân sự 2015",
+      "Điều 116 Bộ luật Dân sự 2015"
+     ],
+     "answer": 0
+    },
+    "reason": {
+     "options": [
+      "Thiện chí chỉ là đạo đức, không phải nguyên tắc pháp luật dân sự.",
+      "Thiện chí, trung thực là nguyên tắc cơ bản khi xác lập, thực hiện, chấm dứt quyền, nghĩa vụ dân sự.",
+      "Nguyên tắc này chỉ áp dụng với pháp nhân.",
+      "Nguyên tắc này chỉ áp dụng khi giao kết, không áp dụng khi chấm dứt."
+     ],
+     "answer": 1
+    }
    }
   }
  ]

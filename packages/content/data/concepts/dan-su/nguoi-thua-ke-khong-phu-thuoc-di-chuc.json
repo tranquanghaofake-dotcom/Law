@@ -159,7 +159,27 @@
    "level": 4,
    "statement": "Người từ chối nhận di sản vẫn được hưởng 2/3 suất theo Điều 644.",
    "answer": false,
-   "explain": "Sai. Khoản 2 Điều 644 loại trừ người từ chối nhận di sản và người không có quyền hưởng di sản."
+   "explain": "Sai. Khoản 2 Điều 644 loại trừ người từ chối nhận di sản và người không có quyền hưởng di sản.",
+   "parts": {
+    "basis": {
+     "options": [
+      "Khoản 1 Điều 644 Bộ luật Dân sự 2015",
+      "Điều 613 Bộ luật Dân sự 2015",
+      "Khoản 2 Điều 644 Bộ luật Dân sự 2015",
+      "Điều 651 Bộ luật Dân sự 2015"
+     ],
+     "answer": 2
+    },
+    "reason": {
+     "options": [
+      "Phần 2/3 suất là bắt buộc nên không ai bị loại trừ.",
+      "Người từ chối vẫn hưởng nếu là con chưa thành niên.",
+      "Người từ chối được hưởng 1/3 suất thay cho 2/3.",
+      "Người từ chối nhận di sản không được hưởng phần di sản bắt buộc 2/3 suất."
+     ],
+     "answer": 3
+    }
+   }
   },
   {
    "type": "recall",
