@@ -19,6 +19,8 @@ export type Why = {
   mixup: { id: string; term: string; theirs: string[]; ours: string[]; picked: boolean } | null;
   /** Vì sao phương án đã chọn sai: lấy nguyên câu `why` người soạn viết cho đúng phương án đó (không tự sinh). */
   wrong?: { option: string; text: string } | null;
+  /** Vì sao đáp án đúng là đúng: câu `why` người soạn viết cho đúng phương án đó (đã bỏ tiền tố "Đúng:"). Hiện cả khi trả lời đúng. */
+  right?: string | null;
 };
 
 const CITE_PARTS = /(điểm\s+[a-zđ]\b|khoản\s+\d+|điều\s+\d+[a-z]?|chương\s+[ivx\d]+|mục\s+\d+|phần\s+[ivx\d]+|bài\s+\d+|vd\s*\d+|các|và|,|;|\.|\(|\)|-|–|\d+)/giu;
@@ -130,7 +132,8 @@ const mentioned = (item: StepItem, c: Concept): boolean => {
 export function whyOf(concept: Concept, item: StepItem, opts: { correct: boolean; explain?: string; chosen?: string; confusables?: Concept[] }): Why | null {
   const signs = concept.keywords.filter((k) => k.trim()).slice(0, 4);
   const citeOnly = isCiteOnly(opts.explain ?? '');
-  if (opts.correct) return signs.length ? { citeOnly, excerpt: null, plain: null, signs: signs.slice(0, 3), mixup: null } : null;
+  const right = rightWhy(item);
+  if (opts.correct) return signs.length || right ? { citeOnly, excerpt: null, plain: null, signs: signs.slice(0, 3), mixup: null, right } : null;
   const text = relevantClause(concept.definition, keyOf(item), 240, concept.term);
   const marks = marksIn(text, signs);
   // chỉ nói "dễ nhầm" khi dữ liệu đủ: khái niệm kia có ≥ 2 dấu hiệu, bản thân cũng có
@@ -141,7 +144,20 @@ export function whyOf(concept: Concept, item: StepItem, opts: { correct: boolean
     ? { id: pick.id, term: pick.term, theirs: pick.keywords.slice(0, 3), ours: signs.slice(0, 3), picked: chosenTerm(opts.chosen, pick) }
     : null;
   const needPlain = citeOnly || text.length < 60;
-  return { citeOnly, excerpt: { text, marks }, plain: needPlain ? firstSentence(concept.plain) : null, signs, mixup, wrong: wrongWhy(item, opts.chosen) };
+  return { citeOnly, excerpt: { text, marks }, plain: needPlain ? firstSentence(concept.plain) : null, signs, mixup, wrong: wrongWhy(item, opts.chosen), right };
+}
+
+/** Tiền tố "Đúng:" / "Sai:" của câu `why` (người soạn viết) bỏ đi khi hiện ra, viết hoa lại chữ đầu. */
+export function stripVerdict(t: string): string {
+  const r = t.replace(/^(đúng|sai)\s*:\s*/iu, '');
+  return r ? r.charAt(0).toLocaleUpperCase('vi') + r.slice(1) : r;
+}
+
+/** Câu `why` của đáp án đúng (mcq/case có `why`); không có thì null. */
+export function rightWhy(item: StepItem): string | null {
+  if (item.type !== 'mcq' && item.type !== 'case') return null;
+  const t = item.why?.[item.answer];
+  return t ? stripVerdict(t) : null;
 }
 
 /** Câu `why` của phương án đã chọn (khác đáp án). Không có dữ liệu thì null. */

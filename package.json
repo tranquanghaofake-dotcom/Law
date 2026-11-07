@@ -16,6 +16,7 @@
     "build": "npm run build -w @luyen-luat/web",
     "preview": "npm run preview -w @luyen-luat/web",
     "content": "npm run build -w @luyen-luat/content",
+    "quality": "npm run quality -w @luyen-luat/content",
     "test": "npm test -ws --if-present",
     "check": "npm run check -ws --if-present",
     "e2e": "npm run test:e2e -w @luyen-luat/web",

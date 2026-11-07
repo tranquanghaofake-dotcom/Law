@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import type { Concept } from '$lib/content/types';
 import type { StepItem } from '$lib/engine/session';
-import { clauses, isCiteOnly, keyOf, marksIn, pickedWhy, relevantClause, segments, whyOf } from '$lib/engine/why';
+import { clauses, isCiteOnly, keyOf, marksIn, pickedWhy, relevantClause, rightWhy, segments, stripVerdict, whyOf } from '$lib/engine/why';
 
 const c = (o: Partial<Concept> = {}): Concept => ({
   id: 'thu-viec', subject: 'lao-dong', chapter: 'c1', term: 'Thời gian thử việc',
@@ -104,5 +104,26 @@ describe('pickedWhy: lời giải thích phương án đã chọn (dùng cho b�
     expect(pickedWhy({ ...q, why: undefined }, 'B')).toBeNull();
     expect(pickedWhy(q, 'X')).toBeNull();
     expect(pickedWhy(q, undefined)).toBeNull();
+  });
+});
+
+describe('right: vì sao đáp án đúng (hiện cả khi trả lời đúng)', () => {
+  const withWhy: StepItem = { type: 'mcq', level: 1, q: 'Q', options: ['A', 'B', 'C'], answer: 1, explain: 'Điều 25.', why: ['Sai: không phải A.', 'Đúng: Điều 25 — chỉ thử việc một lần.', 'Sai: không phải C.'] };
+  it('stripVerdict bỏ tiền tố Đúng:/Sai: và viết hoa chữ đầu', () => {
+    expect(stripVerdict('Đúng: Điều 25 — chỉ thử việc một lần.')).toBe('Điều 25 — chỉ thử việc một lần.');
+    expect(stripVerdict('Sai: người mua không khai thác.')).toBe('Người mua không khai thác.');
+  });
+  it('rightWhy lấy why của đáp án đúng; câu không có why → null', () => {
+    expect(rightWhy(withWhy)).toBe('Điều 25 — chỉ thử việc một lần.');
+    expect(rightWhy(mcq('Q', 'A'))).toBeNull();
+  });
+  it('trả lời đúng: vẫn có right (kể cả khi khái niệm không có dấu hiệu)', () => {
+    expect(whyOf(c(), withWhy, { correct: true })?.right).toBe('Điều 25 — chỉ thử việc một lần.');
+    expect(whyOf(c({ keywords: [] }), withWhy, { correct: true })?.right).toBe('Điều 25 — chỉ thử việc một lần.');
+  });
+  it('trả lời sai: có cả wrong (phương án đã chọn) lẫn right (đáp án đúng)', () => {
+    const w = whyOf(c(), withWhy, { correct: false, chosen: 'A' });
+    expect(w?.wrong?.text).toBe('Sai: không phải A.');
+    expect(w?.right).toBe('Điều 25 — chỉ thử việc một lần.');
   });
 });
